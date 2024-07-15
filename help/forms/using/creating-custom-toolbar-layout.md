@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Ao criar um formulário adaptável, você pode especificar um layout de barra de ferramentas para o formulário. O layout da barra de ferramentas define os comandos e o layout da barra de ferramentas no formulário.
 
-O layout da barra de ferramentas usa muito o processamento do lado do cliente orientado por JavaScript complexo e código CSS. Organizar e otimizar a veiculação desse código pode ser um problema complicado. Para ajudar a lidar com esse problema, o AEM fornece Pastas de bibliotecas do lado do cliente, que permitem armazenar o código do lado do cliente no repositório, organizá-lo em categorias e definir quando e como cada categoria de código deve ser entregue ao cliente. O sistema de biblioteca do lado do cliente cuida de produzir os links corretos na página da Web final para carregar o código correto. Para obter informações detalhadas, consulte [Como as bibliotecas do lado do cliente funcionam no AEM.](/help/sites-developing/clientlibs.md)
+O layout da barra de ferramentas usa muito o processamento do lado do cliente orientado por códigos JavaScript e CSS complexos. Organizar e otimizar a veiculação desse código pode ser um problema complicado. Para ajudar a lidar com esse problema, o AEM fornece Pastas de bibliotecas do lado do cliente, que permitem armazenar o código do lado do cliente no repositório, organizá-lo em categorias e definir quando e como cada categoria de código deve ser entregue ao cliente. O sistema de biblioteca do lado do cliente cuida de produzir os links corretos na página da Web final para carregar o código correto. Para obter informações detalhadas, consulte [Como as bibliotecas do lado do cliente funcionam no AEM.](/help/sites-developing/clientlibs.md)
 
 ![Exemplo de layout da barra de ferramentas](assets/default_toolbar_layout.png)
 
@@ -30,7 +30,7 @@ Exemplo de layout da barra de ferramentas
 
 Os formulários adaptáveis fornecem um conjunto de layouts prontos para uso:
 
-![Layouts de barra de ferramentas disponíveis prontos para uso ](assets/toolbar1.png)
+![Layouts de barra de ferramentas disponíveis prontamente ](assets/toolbar1.png)
 
 Layouts de barra de ferramentas disponíveis prontos para uso
 
@@ -38,7 +38,7 @@ Além disso, você pode criar um layout de barra de ferramentas personalizado.
 
 O procedimento a seguir detalha as etapas para criar uma barra de ferramentas personalizada que exibe três ações na barra de ferramentas e as outras ações em uma lista suspensa na barra de ferramentas.
 
-O pacote de conteúdo anexado contém o código inteiro descrito abaixo. Após instalar o pacote de conteúdo, abra `/content/forms/af/CustomLayoutDemo.html` para ver a demonstração do layout personalizado da barra de ferramentas.
+O pacote de conteúdo anexado contém o código inteiro descrito abaixo. Após instalar o pacote de conteúdo, abra `/content/forms/af/CustomLayoutDemo.html` para ver a demonstração de layout de barra de ferramentas personalizada.
 
 CustomToolbarLayoutDemo.zip
 
@@ -55,25 +55,25 @@ Demonstração do layout personalizado da barra de ferramentas
 
    `/libs/fd/af/layouts/toolbar`
 
-   Por exemplo, copie o `mobileFixedToolbarLayout` do nó `/libs/fd/af/layouts/toolbar` pasta para a `/apps/customlayout/toolbar` pasta.
+   Por exemplo, copie o nó `mobileFixedToolbarLayout` da pasta `/libs/fd/af/layouts/toolbar` para a pasta `/apps/customlayout/toolbar`.
 
-   Além disso, copie toolbarCommon.jsp para o `/apps/customlayout/toolbar` pasta.
+   Além disso, copie toolbarCommon.jsp para a pasta `/apps/customlayout/toolbar`.
 
    >[!NOTE]
    >
-   >A pasta criada para manter os layouts personalizados pode ser criada com o `apps` pasta.
+   >A pasta criada para manter os layouts personalizados pode ser criada com a pasta `apps`.
 
 1. Renomear o nó copiado, `mobileFixedToolbarLayout`, para `customToolbarLayout.`
 
-   Além disso, forneça uma descrição relevante para o nó. Por exemplo, altere o jcr:description do nó para **Layout personalizado para a barra de ferramentas**.
+   Além disso, forneça uma descrição relevante para o nó. Por exemplo, altere o jcr:description do nó para **Layout personalizado da barra de ferramentas**.
 
-   A variável `guideComponentType` a propriedade do nó determina o tipo de layout. Nesse caso, o tipo de layout é barra de ferramentas, portanto, ele aparece na lista suspensa de seleção de layout da barra de ferramentas.
+   A propriedade `guideComponentType` do nó determina o tipo de layout. Nesse caso, o tipo de layout é barra de ferramentas, portanto, ele aparece na lista suspensa de seleção de layout da barra de ferramentas.
 
    ![Um nó com descrição relevante](assets/toolbar3.png)
 
    Um nó com descrição relevante
 
-   O novo layout personalizado da barra de ferramentas é exibido no **Barra de ferramentas do formulário adaptável** configuração da caixa de diálogo.
+   O novo layout personalizado da barra de ferramentas é exibido na configuração da caixa de diálogo **Barra de Ferramentas do Formulário Adaptável**.
 
    ![Lista de layouts disponíveis da barra de ferramentas](assets/toolbar4.png)
 
@@ -85,7 +85,7 @@ Demonstração do layout personalizado da barra de ferramentas
 
 1. Selecione este layout personalizado da barra de ferramentas e clique em OK.
 
-   Adicione clientlib (javascript e css) na `/etc/customlayout` e inclua a referência da clientlib no nó `customToolbarLayout.jsp`.
+   Adicione clientlib (javascript e css) no nó `/etc/customlayout` e inclua a referência a clientlib no `customToolbarLayout.jsp`.
 
    ![Caminho do arquivo customToolbarLayout.css](assets/toolbar_3.png)
 
@@ -230,6 +230,6 @@ Demonstração do layout personalizado da barra de ferramentas
 >
 >A descrição atualizada na etapa anterior é exibida na lista suspensa Layout.
 
-![Exibição de desktop da barra de ferramentas de layout personalizado](assets/toolbar_1.png)
+![Modo de exibição de área de trabalho da barra de ferramentas de layout personalizada](assets/toolbar_1.png)
 
 Exibição de desktop da barra de ferramentas de layout personalizado

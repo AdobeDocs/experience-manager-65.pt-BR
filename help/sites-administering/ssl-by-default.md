@@ -23,23 +23,23 @@ Em um esforço para melhorar continuamente a segurança do AEM, o Adobe introduz
 
 ## Habilitar SSL/TLS por padrão {#enabling-ssl-tls-by-default}
 
-Você pode começar a configurar SSL/TLS por padrão clicando na mensagem relevante da Caixa de entrada na tela inicial do AEM. Para acessar a Caixa de entrada, pressione o ícone de sino no canto superior direito da tela. Em seguida, clique em **Exibir todos**. Isso exibirá uma lista de todos os alertas ordenados em uma exibição de lista.
+Você pode começar a configurar SSL/TLS por padrão clicando na mensagem relevante da Caixa de entrada na tela inicial do AEM. Para acessar a Caixa de entrada, pressione o ícone de sino no canto superior direito da tela. Em seguida, clique em **Exibir tudo**. Isso exibirá uma lista de todos os alertas ordenados em uma exibição de lista.
 
-Na lista, selecione e abra a variável **Configurar HTTPS** alerta:
+Na lista, selecione e abra o alerta **Configurar HTTPS**:
 
 ![chlimage_1-103](assets/chlimage_1-103.png)
 
 >[!NOTE]
 >
->Se a variável **Configurar HTTPS** alerta não estiver presente na Caixa de entrada, você poderá navegar diretamente para o Assistente HTTPS acessando *<http://serveraddress:serverport/libs/granite/security/content/sslConfig.html?item=configuration%2fconfiguressl&_charset_=utf-8>*
+>Se o alerta **Configurar HTTPS** não estiver presente na Caixa de Entrada, você poderá navegar diretamente para o Assistente HTTPS acessando *<http://serveraddress:serverport/libs/granite/security/content/sslConfig.html?item=configuration%2fconfiguressl&_charset_=utf-8>*
 
-Um usuário de serviço chamado **ssl-service** foi criada para este recurso. Depois de abrir o alerta, você será guiado pelo seguinte assistente de configuração:
+Um usuário de serviço chamado **ssl-service** foi criado para este recurso. Depois de abrir o alerta, você será guiado pelo seguinte assistente de configuração:
 
-1. Primeiro, configure as Credenciais de armazenamento. Estas são as credenciais para o **ssl-service** armazenamento de chaves do usuário do sistema que conterá a chave privada e o armazenamento de confiança para o ouvinte de HTTPS.
+1. Primeiro, configure as Credenciais de armazenamento. Estas são as credenciais para o armazenamento de chaves do usuário do sistema **ssl-service** que conterá a chave privada e o armazenamento de confiança para o ouvinte de HTTPS.
 
    ![chlimage_1-104](assets/chlimage_1-104.png)
 
-1. Depois de inserir as credenciais, clique em **Próxima** no canto superior direito da página. Em seguida, faça upload da chave privada e do certificado associados para a conexão SSL/TLS.
+1. Depois de inserir as credenciais, clique em **Avançar** no canto superior direito da página. Em seguida, faça upload da chave privada e do certificado associados para a conexão SSL/TLS.
 
    ![chlimage_1-105](assets/chlimage_1-105.png)
 
@@ -154,7 +154,7 @@ it for any subsequent updating of the private key or certificate.</dd>
 Como alternativa, você pode automatizar a configuração de SSL/TLS carregando um pacote que já contém os seguintes itens necessários:
 
 * O keystore do usuário do serviço ssl. Está localizado em */home/users/system/security/ssl-service/keystore* no repositório.
-* A variável `GraniteSslConnectorFactory` configuração
+* A configuração `GraniteSslConnectorFactory`
 
 ### Geração de um par de chave privada/certificado para uso com o assistente {#generating-a-private-key-certificate-pair-to-use-with-the-wizard}
 
@@ -189,23 +189,23 @@ Abaixo você encontrará um exemplo para criar um certificado autoassinado no fo
    openssl pkcs8 -topk8 -inform PEM -outform DER -in localhostprivate.key -out localhostprivate.der -nocrypt
    ```
 
-1. Por fim, carregue o **localhostprivate.der** como a Chave privada e **localhost.crt** como o Certificado SSL/TLS na etapa 2 do Assistente gráfico SSL/TLS descrito no início desta página.
+1. Por fim, carregue o **localhostprivate.der** como a Chave privada e o **localhost.crt** como o Certificado SSL/TLS na etapa 2 do Assistente gráfico SSL/TLS descrito no início desta página.
 
 ### Atualização da configuração SSL/TLS via cURL {#updating-the-ssl-tls-configuration-via-curl}
 
 >[!NOTE]
 >
->Consulte [Uso do cURL com AEM](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/curl.html) para obter uma lista centralizada de comandos cURL úteis no AEM.
+>Consulte [Usando cURL com AEM](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/curl.html) para obter uma lista centralizada de comandos cURL úteis no AEM.
 
 Você também pode automatizar a configuração de SSL/TLS usando a ferramenta cURL. Você pode fazer isso publicando os parâmetros de configuração neste URL:
 
-*https://&lt;serveraddress>:&lt;serverport>/libs/granite/security/post/sslSetup.html*
+*https://&lt;endereço_servidor>:&lt;porta_servidor>/libs/granite/security/post/sslSetup.html*
 
 Abaixo estão os parâmetros que você pode usar para alterar as várias configurações no assistente de configuração:
 
 * `-F "keystorePassword=password"` - a senha do keystore;
 
-* `-F "keystorePasswordConfirm=password"` - confirme a senha do keystore;
+* `-F "keystorePasswordConfirm=password"` - confirmar a senha do keystore;
 
 * `-F "truststorePassword=password"` - a senha do truststore;
 
@@ -213,16 +213,16 @@ Abaixo estão os parâmetros que você pode usar para alterar as várias configu
 
 * `-F "privatekeyFile=@localhostprivate.der"` - especifique a chave privada;
 
-* `-F "certificateFile=@localhost.crt"` - especificar o certificado;
+* `-F "certificateFile=@localhost.crt"` - especifique o certificado;
 
-* `-F "httpsHostname=host.example.com"`- especificar o nome do host;
-* `-F "httpsPort=8443"` - a porta em que o ouvinte HTTPS funcionará.
+* `-F "httpsHostname=host.example.com"`- especifique o nome do host;
+* `-F "httpsPort=8443"` - a porta em que o ouvinte de HTTPS funcionará.
 
 >[!NOTE]
 >
->A maneira mais rápida de executar o cURL para automatizar a configuração SSL/TLS é a partir da pasta em que os arquivos DER e CRT estão. Como alternativa, você pode especificar o caminho completo na variável `privatekeyFile` e certificateFile.
+>A maneira mais rápida de executar o cURL para automatizar a configuração SSL/TLS é a partir da pasta em que os arquivos DER e CRT estão. Como alternativa, você pode especificar o caminho completo nos argumentos `privatekeyFile` e certificateFile.
 >
->Você também precisa ser autenticado para executar a atualização. Portanto, anexe o comando cURL à `-u user:passeword` parâmetro.
+>Você também precisa ser autenticado para executar a atualização. Portanto, anexe o comando cURL ao parâmetro `-u user:passeword`.
 >
 >Um comando cURL post correto deve ter esta aparência:
 
@@ -236,14 +236,14 @@ Você pode enviar ao servlet uma cadeia de certificados repetindo o parâmetro c
 
 `-F "certificateFile=@root.crt" -F "certificateFile=@localhost.crt"..`
 
-Depois de executar o comando, verifique se todos os certificados chegaram ao keystore. Verifique a **Armazenamento de chaves** entradas de:
+Depois de executar o comando, verifique se todos os certificados chegaram ao keystore. Verifique as entradas de **Keystore** de:
 [http://localhost:4502/libs/granite/security/content/v2/usereditor.html/home/users/system/security/ssl-service](http://localhost:4502/libs/granite/security/content/v2/usereditor.html/home/users/system/security/ssl-service)
 
 ### Habilitação de uma conexão TLS 1.3 {#enabling-tls-connection}
 
 1. Ir para o Console da Web
-1. Em seguida, navegue até **OSGi** - **Configuração** - **Fábrica de conectores SSL do Adobe Granite**
-1. Vá para a **Conjuntos de cifras incluídos** e adicione as seguintes entradas. Você pode confirmar cada adição pressionando o botão &quot;**+**&quot; à esquerda do campo, depois de adicionar cada um em:
+1. Em seguida, navegue até **OSGi** - **Configuração** - **Fábrica de Conectores SSL do Adobe Granite**
+1. Vá para o campo **Conjuntos de cifras incluídos** e adicione as seguintes entradas. Você pode confirmar cada adição pressionando o botão &quot;**+**&quot; à esquerda do campo, depois de adicionar cada uma em:
 
    * `TLS_AES_256_GCM_SHA384`
    * `TLS_AES_128_GCM_SHA256`

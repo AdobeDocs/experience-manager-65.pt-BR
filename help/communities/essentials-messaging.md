@@ -23,7 +23,7 @@ Esta página documenta os detalhes de como trabalhar com o usando o componente M
 
 ## Essentials para o lado do cliente {#essentials-for-client-side}
 
-**Compor mensagem**
+**Compor Mensagem**
 
 <table>
  <tbody>
@@ -45,7 +45,7 @@ Esta página documenta os detalhes de como trabalhar com o usando o componente M
   </tr>
   <tr>
    <td><strong>propriedades</strong></td>
-   <td>Consulte <a href="/help/communities/configure-messaging.md" target="_blank">Configurar mensagens</a></td>
+   <td>Consulte <a href="/help/communities/configure-messaging.md" target="_blank">Configurar Mensagens</a></td>
   </tr>
   <tr>
    <td><strong>configuração do administrador</strong></td>
@@ -54,7 +54,7 @@ Esta página documenta os detalhes de como trabalhar com o usando o componente M
  </tbody>
 </table>
 
-**Lista de mensagens**
+**Lista de Mensagens**
 
 (para Caixa de entrada, Enviado e Lixeira)
 
@@ -78,7 +78,7 @@ Esta página documenta os detalhes de como trabalhar com o usando o componente M
   </tr>
   <tr>
    <td><strong>propriedades</strong></td>
-   <td>Consulte <a href="/help/communities/configure-messaging.md" target="_blank">Configurar mensagens</a></td>
+   <td>Consulte <a href="/help/communities/configure-messaging.md" target="_blank">Configurar Mensagens</a></td>
   </tr>
   <tr>
    <td><strong>configuração do administrador</strong></td>
@@ -92,14 +92,14 @@ Consulte também [Personalizações do lado do cliente](/help/communities/client
 ## Essentials para o lado do servidor {#essentials-for-server-side}
 
 * [Configuração de mensagens](/help/communities/configure-messaging.md)
-* [APIs cliente de mensagens](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/messaging/client/api/package-summary.html) para componentes SCF
+* [APIs de cliente de mensagens](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/messaging/client/api/package-summary.html) para componentes SCF
 * [APIs de mensagens](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/messaging/api/package-summary.html) para o serviço
-* [Endpoints de mensagens](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/messaging/client/endpoints/package-summary.html)
+* [Pontos de Extremidade de Mensagens](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/messaging/client/endpoints/package-summary.html)
 * [Personalizações do lado do servidor](/help/communities/server-customize.md)
 
 >[!CAUTION]
 >
->O parâmetro String deve *não* contém uma barra à direita &quot;/&quot; para os seguintes métodos do MessageBuilder:
+>O parâmetro String deve *não* conter uma barra à direita &quot;/&quot; para os seguintes métodos MessageBuilder:
 >
 >* `setInboxPath`()
 >* `setSentItemsPath`()
@@ -113,34 +113,34 @@ Consulte também [Personalizações do lado do cliente](/help/communities/client
 
 ### Site da comunidade {#community-site}
 
-Uma estrutura de site da comunidade, criada usando o assistente, inclui o recurso de mensagens quando selecionado. Consulte `User Management` configurações de [Console de sites da comunidade](/help/communities/sites-console.md#user-management).
+Uma estrutura de site da comunidade, criada usando o assistente, inclui o recurso de mensagens quando selecionado. Consulte `User Management` configurações do [Console de Sites da Comunidade](/help/communities/sites-console.md#user-management).
 
 ### Código de exemplo: Notificação de mensagem recebida {#sample-code-message-received-notification}
 
 O recurso Social Messaging lança eventos para operações, por exemplo, `send`, `marking read`, `marking delete`. Esses eventos podem ser capturados e as ações tomadas nos dados contidos no evento.
 
-O exemplo a seguir é de um manipulador de eventos que escuta a `message sent` evento e envia um email a todos os recipients de mensagem usando o `Day CQ Mail Service`.
+O exemplo a seguir é de um manipulador de eventos que escuta o evento `message sent` e envia um email para todos os destinatários de mensagem usando o `Day CQ Mail Service`.
 
 Para experimentar o script de amostra do lado do servidor, você precisa de um ambiente de desenvolvimento e da capacidade de criar um pacote OSGi:
 
-1. Efetue login como administrador no ` [CRXDE|Lite](https://localhost:4502/crx/de)`.
-1. Criar um `bundle node`in `/apps/engage/install` com nomes arbitrários, como:
+1. Faça logon como administrador em ` [CRXDE|Lite](https://localhost:4502/crx/de)`.
+1. Crie um `bundle node`em `/apps/engage/install` com nomes arbitrários, como:
 
-   * Nome simbólico: `com.engage.media.social.messaging.MessagingNotification`
+   * Nome Simbólico: `com.engage.media.social.messaging.MessagingNotification`
    * Nome: Notificação de mensagem do tutorial de introdução
    * Descrição: Um exemplo de serviço para enviar uma notificação por email aos usuários quando eles recebem uma mensagem
    * Pacote: `com.engage.media.social.messaging.notification`
 
-1. Navegue até `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/src/main/java/com/engage/media/social/messaging/notification`e depois:
+1. Navegue até `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/src/main/java/com/engage/media/social/messaging/notification` e, em seguida:
 
-   1. Exclua o `Activator.java` classe criada automaticamente.
+   1. Exclua a classe `Activator.java` criada automaticamente.
    1. Criar classe `MessageEventHandler.java`.
    1. Copie e cole o código abaixo em `MessageEventHandler.java`.
 
 1. Clique em **Salvar tudo**.
-1. Navegue até `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/com.engage.media.social.messaging.MessagingNotification.bnd`e adicione todas as declarações de importação conforme redigidas no `MessageEventHandler.java` código.
+1. Navegue até `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/com.engage.media.social.messaging.MessagingNotification.bnd` e adicione todas as instruções de importação conforme escritas no código `MessageEventHandler.java`.
 1. Crie o pacote.
-1. Assegurar `Day CQ Mail Service`O serviço OSGi está configurado.
+1. Verifique se o serviço OSGi `Day CQ Mail Service` está configurado.
 1. Faça logon como um usuário de demonstração e envie email para outro usuário.
 1. O recipient recebe um email sobre uma nova mensagem.
 

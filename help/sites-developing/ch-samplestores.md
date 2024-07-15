@@ -32,7 +32,7 @@ O ContextHub fornece vários exemplos de candidatos a armazenamento que você po
 
 Armazene para segmentos do ContextHub resolvidos e não resolvidos. Recupera automaticamente segmentos do ContextHub SegmentManager.
 
-### Local de origem {#source-location-segmentation}
+### Localização do Source {#source-location-segmentation}
 
 `/libs/settings/cloudsettings/legacy/contexthub/segmentation`
 
@@ -58,13 +58,13 @@ Ao criar um armazenamento aem.segmentation, não é necessário fornecer uma con
 
 O candidato do armazenamento de amostra contexthub.geolocation usa o Google Maps para obter e armazenar informações sobre a localização do cliente.
 
-### Local de origem {#source-location-geolocation}
+### Localização do Source {#source-location-geolocation}
 
 `/libs/settings/cloudsettings/legacy/contexthub/geolocation`
 
 ### Implementação base {#base-implementation-geolocation}
 
-O candidato do armazenamento contexthub.geolocation estende [`ContextHub.Store.PersistedJSONPStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedjsonpstore).
+O candidato do repositório contexthub.geolocation estende [`ContextHub.Store.PersistedJSONPStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedjsonpstore).
 
 ### Configuração {#configuration-geolocation}
 
@@ -116,7 +116,7 @@ O armazenamento usa uma árvore de dados semelhante ao seguinte exemplo:
 
 Armazena informações sobre o ambiente atual do cliente, como o dispositivo, a janela, o navegador, a data e a hora.
 
-### Local de origem {#source-location-surferinfo}
+### Localização do Source {#source-location-surferinfo}
 
 `/libs/settings/cloudsettings/legacy/contexthub/surferinfo`
 
@@ -183,13 +183,13 @@ Os armazenamentos que usam esse candidato a armazenamento têm uma árvore de da
 
 O candidato de armazenamento de amostra do granite.emulators armazena informações sobre dispositivos clientes.
 
-### Local de origem {#source-location-emulators}
+### Localização do Source {#source-location-emulators}
 
 `/libs/settings/cloudsettings/legacy/contexthub/emulators`
 
 ### Implementação base {#base-implementation-emulators}
 
-O candidato do armazenamento contexthub.geolocation estende [`ContextHub.Store.PersistedStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedstore).
+O candidato do repositório contexthub.geolocation estende [`ContextHub.Store.PersistedStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedstore).
 
 ### Configuração {#configuration-emulators}
 
@@ -316,7 +316,7 @@ A árvore de dados do armazenamento é semelhante ao seguinte exemplo:
 
 Armazena informações sobre o usuário atual.
 
-### Local de origem {#source-location-profile}
+### Localização do Source {#source-location-profile}
 
 `/libs/settings/cloudsettings/legacy/contexthub/profile`
 

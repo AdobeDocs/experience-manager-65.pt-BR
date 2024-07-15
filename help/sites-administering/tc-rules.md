@@ -72,7 +72,7 @@ Cada um desses elementos `node` têm as seguintes características:
    * O atributo `resourceType` contém o caminho que é resolvido para o componente que implementa o tipo de recurso.
    * Os elementos `property` secundários identificam a propriedade do nó a ser traduzida. Use este nó da mesma forma que os elementos `property` secundários para regras de nó.
 
-A seguinte regra de exemplo faz com que o conteúdo de todas as propriedades `text` seja traduzido para todas as páginas abaixo do nó `/content`. A regra é válida para qualquer componente que armazene conteúdo em uma `text` propriedade, como o componente de texto de base e o componente de imagem de base.
+A seguinte regra de exemplo faz com que o conteúdo de todas as propriedades `text` seja traduzido para todas as páginas abaixo do nó `/content`. A regra é válida para qualquer componente que armazene conteúdo em uma propriedade `text`, como o componente de texto de base e o componente de imagem de base.
 
 ```xml
 <node path="/content">
@@ -80,7 +80,7 @@ A seguinte regra de exemplo faz com que o conteúdo de todas as propriedades `te
 </node>
 ```
 
-O exemplo a seguir traduz o conteúdo de todos `text` propriedades e também traduz outras propriedades do componente de Imagem de base. Se outros componentes tiverem propriedades com o mesmo nome, a regra não se aplica a eles.
+O exemplo a seguir traduz o conteúdo de todas as propriedades `text` e também traduz outras propriedades do componente de Imagem de base. Se outros componentes tiverem propriedades com o mesmo nome, a regra não se aplica a eles.
 
 ```xml
 <node path="/content">
@@ -103,8 +103,8 @@ Use a sintaxe de regra a seguir para incluir ativos incorporados ou referenciado
 
 Cada elemento `assetNode` tem as seguintes características:
 
-* Um `resourceType` atributo que é igual ao caminho que é resolvido para o componente.
-* Um `assetReferenceAttribute` atributo que é igual ao nome da propriedade que armazena o binário do ativo (para ativos incorporados) ou o caminho para o ativo referenciado.
+* Um atributo `resourceType` que é igual ao caminho que é resolvido para o componente.
+* Um atributo `assetReferenceAttribute` que é igual ao nome da propriedade que armazena o binário do ativo (para ativos incorporados) ou o caminho para o ativo referenciado.
 
 O exemplo a seguir extrai imagens do componente de Imagem básico:
 
@@ -114,7 +114,7 @@ O exemplo a seguir extrai imagens do componente de Imagem básico:
 
 ## Substituição de regras {#overriding-rules}
 
-O arquivo translation_rules.xml consiste em um `nodelist` elemento com vários filhos `node` elementos. O AEM lê a lista de nós de cima para baixo. Quando várias regras têm como alvo o mesmo nó, a regra que está mais abaixo no arquivo é usada. Por exemplo, as seguintes regras fazem com que todo o conteúdo das propriedades `text` seja traduzido, exceto para a ramificação `/content/mysite/en` de páginas:
+O arquivo translation_rules.xml consiste em um elemento `nodelist` com vários elementos `node` filhos. O AEM lê a lista de nós de cima para baixo. Quando várias regras têm como alvo o mesmo nó, a regra que está mais abaixo no arquivo é usada. Por exemplo, as seguintes regras fazem com que todo o conteúdo das propriedades `text` seja traduzido, exceto para a ramificação `/content/mysite/en` de páginas:
 
 ```xml
 <nodelist>
@@ -158,7 +158,7 @@ Para acessá-lo:
 
    ![chlimage_1-56](assets/chlimage_1-56.jpeg)
 
-A partir daqui, você pode **Adicionar contexto**. Isso permite adicionar um caminho.
+Aqui, você pode **Adicionar Contexto**. Isso permite adicionar um caminho.
 
 ![chlimage_1-57](assets/chlimage_1-57.jpeg)
 
@@ -168,15 +168,15 @@ Em seguida, é necessário selecionar o contexto e clicar em **Editar**. Isso ab
 
 Há 4 atributos que você pode alterar por meio da interface: `isDeep`, `inherit`, `translate` e `updateDestinationLanguage`.
 
-**isDeep** Esse atributo é aplicável em filtros de nó e é verdadeiro por padrão. Ele verifica se o nó (ou seus antecessores) contém essa propriedade com o valor da propriedade especificado no filtro. Se for falso, ele só verifica o nó atual.
+**isDeep** Este atributo é aplicável em filtros de nó e é verdadeiro por padrão. Ele verifica se o nó (ou seus antecessores) contém essa propriedade com o valor da propriedade especificado no filtro. Se for falso, ele só verifica o nó atual.
 
-Por exemplo, nós secundários são adicionados a um trabalho de tradução mesmo quando o nó principal tem uma propriedade `draftOnly` defina como true para sinalizar conteúdo de rascunho. Aqui, o atributo `isDeep` entra em ação e verifica se os nós principais têm a propriedade `draftOnly` definida como verdadeira e exclui os nós secundários.
+Por exemplo, nós filhos estão sendo adicionados a um trabalho de tradução mesmo quando o nó pai está com a propriedade `draftOnly` definida como verdadeira para sinalizar conteúdo de rascunho. Aqui, o atributo `isDeep` entra em ação e verifica se os nós principais têm a propriedade `draftOnly` definida como verdadeira e exclui os nós secundários.
 
-No Editor, você pode marcar/desmarcar **É profundo** no **Filtros** guia.
+No Editor, você pode marcar/desmarcar **É profundo** na guia **Filtros**.
 
 ![chlimage_1-59](assets/chlimage_1-59.jpeg)
 
-Este é um exemplo do xml resultante quando **É profundo** O está desmarcado na interface do usuário:
+Este é um exemplo do xml resultante quando **Is Deep** está desmarcado na interface:
 
 ```xml
  <filter>
@@ -184,19 +184,19 @@ Este é um exemplo do xml resultante quando **É profundo** O está desmarcado n
 </filter>
 ```
 
-**herdar** Isso é aplicável em propriedades. Por padrão, todas as propriedades são herdadas, mas se você quiser que alguma propriedade não seja herdada no nó secundário, poderá marcá-la como falsa para que seja aplicada somente nesse nó específico.
+**herdar** Aplicável nas propriedades. Por padrão, todas as propriedades são herdadas, mas se você quiser que alguma propriedade não seja herdada no nó secundário, poderá marcá-la como falsa para que seja aplicada somente nesse nó específico.
 
 Na interface, você pode marcar/desmarcar **Herdar** na guia **Propriedades**.
 
 ![chlimage_1-60](assets/chlimage_1-60.jpeg)
 
-**traduzir** O atributo translate é usado apenas para especificar se uma propriedade deve ser traduzida ou não.
+**translate** O atributo translate é usado apenas para especificar se uma propriedade deve ser traduzida ou não.
 
 Na interface, você pode marcar/desmarcar **Traduzir** na guia **Propriedades**.
 
-**updateDestinationLanguage** Esse atributo é usado para propriedades que não têm texto, e sim códigos de idioma. Por exemplo, jcr:language. O usuário não está traduzindo o texto, e sim convertendo a localidade do idioma da origem para o destino. Essas propriedades não são enviadas para tradução.
+**updateDestinationLanguage** Esse atributo é usado para propriedades que não têm texto, mas códigos de idioma, por exemplo, jcr:language. O usuário não está traduzindo o texto, e sim convertendo a localidade do idioma da origem para o destino. Essas propriedades não são enviadas para tradução.
 
-Na interface, você pode marcar/desmarcar **Traduza** no **Propriedades** , mas para as propriedades específicas que têm códigos de idioma como valor.
+Na interface, você pode marcar/desmarcar **Traduzir** na guia **Propriedades**, mas para as propriedades específicas que têm códigos de idioma como valor.
 
 Para ajudar a esclarecer a diferença entre `updateDestinationLanguage` e `translate`, veja um exemplo simples de um contexto com apenas duas regras:
 

@@ -18,9 +18,9 @@ ht-degree: 0%
 
 # Personalização do lado do servidor {#server-side-customization}
 
-| **[Feature Essentials](essentials.md)** | **[Personalização no lado do cliente ^](client-customize.md)** |
+| **[⇐ Feature Essentials](essentials.md)** | **[Personalização no lado do cliente ^](client-customize.md)** |
 |---|---|
-|   | **[SCF Handlebars Helpers ^](handlebars-helpers.md)** |
+|   | **[Helpers do Handlebars do SCF ^](handlebars-helpers.md)** |
 
 ## APIs Java™ {#java-apis}
 
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 SocialComponents são POJOs que representam um recurso de um recurso do AEM Communities. Idealmente, cada SocialComponent representa um resourceType específico com GETters expostos que fornecem dados ao cliente para que o recurso seja representado com precisão. Toda lógica de negócios e visualização é encapsulada no SocialComponent, incluindo as informações de sessão do visitante do site, se necessário.
 
-A interface define um conjunto básico de GETters necessários para representar um recurso. É importante observar que a interface estipula o Map&lt;string object=&quot;&quot;> Os métodos getAsMap() e String toJSONString() necessários para renderizar modelos Handlebars e expor pontos de extremidade GET JSON para recursos.
+A interface define um conjunto básico de GETters necessários para representar um recurso. É importante observar que a interface estipula os métodos Map&lt;String, Object> getAsMap() e String toJSONString() necessários para renderizar modelos Handlebars e expor pontos de extremidade GET JSON para os recursos.
 
 Todas as classes SocialComponent devem implementar a interface `com.adobe.cq.social.scf.SocialComponent`
 
@@ -66,27 +66,27 @@ Um identificador para o serviço OSGi é obtido chamando `com.adobe.cq.social.sc
 
 #### Classe Pós-Operação {#postoperation-class}
 
-Os endpoints de POST da API HTTP são classes PostOperation definidas pela implementação do `SlingPostOperation` interface (pacote) `org.apache.sling.servlets.post`).
+Os pontos de extremidade de POST da API HTTP são classes PostOperation definidas pela implementação da interface `SlingPostOperation` (pacote `org.apache.sling.servlets.post`).
 
-A variável `PostOperation` conjuntos de implementação de endpoint `sling.post.operation` a um valor ao qual a operação responde. Todas as solicitações POST com um parâmetro:operation definido para esse valor são delegadas a essa classe de implementação.
+A implementação do ponto de extremidade `PostOperation` define `sling.post.operation` como um valor ao qual a operação responde. Todas as solicitações POST com um parâmetro:operation definido para esse valor são delegadas a essa classe de implementação.
 
-A variável `PostOperation` chama a variável `SocialOperation` que executa as ações necessárias para a operação.
+O `PostOperation` chama o `SocialOperation` que executa as ações necessárias para a operação.
 
-A variável `PostOperation` recebe o resultado da variável `SocialOperation` e retorna a resposta apropriada ao cliente.
+O `PostOperation` recebe o resultado de `SocialOperation` e retorna a resposta apropriada ao cliente.
 
 #### Classe SocialOperation {#socialoperation-class}
 
-Each `SocialOperation` endpoint estende a classe AbstractSocialOperation e substitui o método `performOperation()`. Este método executa todas as ações necessárias para concluir a operação e retornar uma `SocialOperationResult` ou então jogue um `OperationException`. Nesse caso, um status de erro HTTP com uma mensagem, se disponível, é retornado no lugar da resposta JSON normal ou do código de status HTTP de sucesso.
+Cada ponto de extremidade `SocialOperation` estende a classe AbstractSocialOperation e substitui o método `performOperation()`. Este método executa todas as ações necessárias para concluir a operação e retornar um `SocialOperationResult`, ou então lança um `OperationException`. Nesse caso, um status de erro HTTP com uma mensagem, se disponível, é retornado no lugar da resposta JSON normal ou do código de status HTTP de sucesso.
 
-Extensão `AbstractSocialOperation` possibilite a reutilização de `SocialComponents` para enviar respostas JSON.
+Estender `AbstractSocialOperation` possibilita a reutilização de `SocialComponents` para enviar respostas JSON.
 
 #### Classe SocialOperationResult {#socialoperationresult-class}
 
-A variável `SocialOperationResult` é retornada como o resultado da variável `SocialOperation` e é composto por um `SocialComponent`, código de status HTTP e mensagem de status HTTP.
+A classe `SocialOperationResult` é retornada como resultado de `SocialOperation` e é composta por `SocialComponent`, código de status HTTP e mensagem de status HTTP.
 
-A variável `SocialComponent` representa o recurso que foi afetado pela operação.
+`SocialComponent` representa o recurso que foi afetado pela operação.
 
-Para uma operação Criar, a variável `SocialComponent` incluído na `SocialOperationResult` representa o recurso criado e, para uma operação Update, representa o recurso que foi alterado pela operação. Não `SocialComponent` é retornado para uma operação Delete.
+Para uma operação Criar, o `SocialComponent` incluído no `SocialOperationResult` representa o recurso criado e, para uma operação Atualizar, ele representa o recurso que foi alterado pela operação. Nenhum `SocialComponent` foi retornado para uma operação Delete.
 
 Os códigos de status HTTP bem-sucedidos usados são:
 
@@ -96,13 +96,13 @@ Os códigos de status HTTP bem-sucedidos usados são:
 
 #### Classe OperationException {#operationexception-class}
 
-Um `OperationExcepton` é lançado ao executar uma operação se a solicitação não for válida ou ocorrer algum outro erro. Por exemplo, erros internos, valores de parâmetro incorretos ou permissões inadequadas. Um `OperationException` é composto de um código de status HTTP e uma mensagem de erro, que são retornados ao cliente como resposta à `PostOperatoin`.
+Um `OperationExcepton` é lançado ao executar uma operação se a solicitação não for válida ou ocorrer algum outro erro. Por exemplo, erros internos, valores de parâmetro incorretos ou permissões inadequadas. Um `OperationException` é composto de um código de status HTTP e uma mensagem de erro, que são retornados ao cliente como resposta ao `PostOperatoin`.
 
 #### Classe OperationService {#operationservice-class}
 
-A estrutura da componente social recomenda que a lógica de negócios responsável pela execução da operação não seja implementada dentro do `SocialOperation` classe, mas delegado a um serviço OSGi. Usar um serviço OSGi para lógica de negócios permite uma `SocialComponent`, atuadas por um `SocialOperation` ponto de extremidade, para ser integrado a outro código e ter uma lógica de negócios diferente aplicada.
+A estrutura do componente social recomenda que a lógica de negócios responsável por executar a operação não seja implementada na classe `SocialOperation`, mas delegada a um serviço OSGi. Usar um serviço OSGi para lógica de negócios permite que um `SocialComponent`, implementado por um ponto de extremidade `SocialOperation`, seja integrado a outro código e tenha uma lógica de negócios diferente aplicada.
 
-Todos `OperationService` extensão de classes `AbstractOperationService`, permitindo extensões adicionais que podem se conectar à operação que está sendo executada. Cada operação no serviço é representada por um `SocialOperation` classe. A variável `OperationExtensions` classe pode ser chamada durante a execução da operação chamando os métodos
+Todas as classes `OperationService` estendem `AbstractOperationService`, permitindo extensões adicionais que podem conectar-se à operação que está sendo executada. Cada operação no serviço é representada por uma classe `SocialOperation`. A classe `OperationExtensions` pode ser invocada durante a execução da operação chamando os métodos
 
 * `performBeforeActions()`
 
@@ -113,18 +113,18 @@ Todos `OperationService` extensão de classes `AbstractOperationService`, permit
 
 #### Classe OperationExtension {#operationextension-class}
 
-A variável `OperationExtension` as classes são partes personalizadas de código que podem ser inseridas em uma operação, permitindo a personalização de operações para atender às necessidades dos negócios. Os consumidores do componente podem adicionar funcionalidade de forma dinâmica e incremental ao componente. O padrão de extensão/gancho permite que os desenvolvedores se concentrem exclusivamente nas próprias extensões e remove a necessidade de copiar e substituir operações e componentes inteiros.
+As classes `OperationExtension` são pedaços de código personalizados que podem ser inseridos em uma operação, permitindo a personalização de operações para atender às necessidades comerciais. Os consumidores do componente podem adicionar funcionalidade de forma dinâmica e incremental ao componente. O padrão de extensão/gancho permite que os desenvolvedores se concentrem exclusivamente nas próprias extensões e remove a necessidade de copiar e substituir operações e componentes inteiros.
 
 ## Código de exemplo {#sample-code}
 
-O código de amostra está disponível no [GitHub da Adobe Experience Cloud](https://github.com/Adobe-Marketing-Cloud) repositório. Procurar projetos com prefixo `aem-communities` ou `aem-scf`.
+O código de exemplo está disponível no repositório [Adobe Experience Cloud GitHub](https://github.com/Adobe-Marketing-Cloud). Procurar projetos com prefixo `aem-communities` ou `aem-scf`.
 
 ## Práticas recomendadas {#best-practices}
 
-Exibir o [Diretrizes de codificação](code-guide.md) para várias diretrizes de codificação e práticas recomendadas para desenvolvedores do AEM Communities.
+Consulte a seção [Diretrizes de codificação](code-guide.md) para obter várias diretrizes de codificação e práticas recomendadas para desenvolvedores do AEM Communities.
 
-Consulte também [Provedor de recurso de armazenamento (SRP) para UGC](srp.md) para saber mais sobre como acessar conteúdo gerado pelo usuário.
+Consulte também [Provedor de Recurso de Armazenamento (SRP) para UGC](srp.md) para saber mais sobre como acessar conteúdo gerado pelo usuário.
 
-| **[Feature Essentials](essentials.md)** | **[Personalização no lado do cliente ^](client-customize.md)** |
+| **[⇐ Feature Essentials](essentials.md)** | **[Personalização no lado do cliente ^](client-customize.md)** |
 |---|---|
-|   | **[SCF Handlebars Helpers ^](handlebars-helpers.md)** |
+|   | **[Helpers do Handlebars do SCF ^](handlebars-helpers.md)** |

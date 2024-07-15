@@ -22,17 +22,17 @@ Este artigo discute como depurar o espaço de trabalho do AEM Forms ativando o r
 
 ## Não é possível instalar o pacote do espaço de trabalho do AEM Forms {#unable-to-install-aem-forms-workspace-package}
 
-Após instalar o patch, abra o espaço de trabalho do AEM Forms. Se você encontrar o erro Nenhum recurso encontrado, abra o Gerenciador de pacotes do CRX e reinstale o `adobe-lc-workspace-pkg-<version>.zip` pacote.
+Após instalar o patch, abra o espaço de trabalho do AEM Forms. Se você encontrar o erro Nenhum recurso encontrado, abra o Gerenciador de pacotes do CRX e reinstale o pacote `adobe-lc-workspace-pkg-<version>.zip`.
 
 Ao instalar o pacote, se você encontrar um erro `javax.jcr.nodetype.ConstraintViolationException: OakConstraint0025: Authorizable property rep:authorizableId may not be removed`, execute as seguintes etapas:
 
-1. Efetue logon no CRXDE Lite. O URL padrão é `https://[localhost]:'port'/lc/crx/de/index.jsp`
+1. Efetue logon no CRXDE Lite. A URL padrão é `https://[localhost]:'port'/lc/crx/de/index.jsp`
 1. Exclua o seguinte nó:
 
    `/home/groups/P/PERM_WORKSPACE_USER`
 
-1. Acesse o Gerenciador de pacotes. O URL padrão é `https://[localhost]:'port'/lc/crx/packmgr/index.jsp.`
-1. Pesquise e instale o `adobe-lc-workspace-pkg-[version].zip` pacote.
+1. Acesse o Gerenciador de pacotes. A URL padrão é `https://[localhost]:'port'/lc/crx/packmgr/index.jsp.`
+1. Pesquisar e instalar o pacote `adobe-lc-workspace-pkg-[version].zip`.
 1. Reinicie o servidor de aplicativos.
 
 >[!NOTE]
@@ -45,9 +45,9 @@ Você pode gerar logs em vários níveis para permitir a solução ideal de prob
 
 No espaço de trabalho do AEM Forms:
 
-* Para obter as informações de registro sobre um arquivo de componente específico, anexe `/log/<ComponentFile>/<LogLevel>` no URL e pressione `Enter`. Todas as informações de registro do arquivo componente no nível de registro especificado são impressas no console.
+* Para obter as informações de log sobre um arquivo de componente específico, anexe `/log/<ComponentFile>/<LogLevel>` no URL e pressione `Enter`. Todas as informações de registro do arquivo componente no nível de registro especificado são impressas no console.
 
-* Para obter informações de registro de todos os arquivos de componentes, anexe `/log/all/trace` no URL e pressione `Enter`.
+* Para obter informações de log de todos os arquivos de componentes, anexe `/log/all/trace` à URL e pressione `Enter`.
 
 * Formato do log: `<Component file> <Date>:<Time>: <Log Level> : <Log Message>`
 
@@ -170,7 +170,7 @@ Scripts e estilos podem ser depurados em navegadores diferentes.
 
    1. Instale o plug-in Adobe® Reader®.
    1. No Chrome, abra chrome://plugins para visualizar os plug-ins disponíveis.
-   1. Desative o plug-in do Visualizador de PDF do Chrome e ative o plug-in do Adobe Reader.
+   1. Desative o plug-in Chrome PDF Viewer e ative o plug-in Adobe Reader.
 
 1. O formulário ou o Guia do SWF não é renderizado no Google Chrome.
 

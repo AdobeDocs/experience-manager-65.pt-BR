@@ -18,27 +18,27 @@ ht-degree: 10%
 
 # Introdução à interface de criação da comunicação interativa{#introduction-to-interactive-communication-authoring-ui}
 
-A interface de usuário para criação [Comunicação interativa](/help/forms/using/interactive-communications-overview.md) O é intuitivo e fornece o seguinte para criação de canais de impressão e da Web da Comunicação interativa:
+A interface de usuário para criação da [Comunicação Interativa](/help/forms/using/interactive-communications-overview.md) é intuitiva e fornece o seguinte para criação de canais de impressão e da Web da Comunicação Interativa:
 
 * Editor de documento de arrastar e soltar WYSIWYG
 * Repositório integrado para ativos - os ativos carregados e criados no servidor estão disponíveis no navegador de ativos da interface de criação da Comunicação interativa
 
-Quando você [criar ou editar uma comunicação interativa existente](../../forms/using/create-interactive-communication.md), você usa os seguintes elementos de interface do usuário:
+Ao [criar ou editar uma Comunicação Interativa existente](../../forms/using/create-interactive-communication.md), use os seguintes elementos de interface do usuário:
 
 * [Barra lateral](#sidebar)
 * [Barra de ferramentas da página](#page-toolbar)
 * [Barra de ferramentas Componente](#component-toolbar)
 * Área de conteúdo
 
-![interface do usuário de criação de comunicação interativa](assets/form-editor.png)
+![interface de usuário de criação de comunicação interativa](assets/form-editor.png)
 
-**A.** Barra lateral **B.** Barra de ferramentas da página **C** Área de conteúdo
+**A.** Barra lateral **B.** Barra de ferramentas de página **C.** Área de conteúdo
 
 ## Barra lateral {#sidebar}
 
 ![Barra lateral](assets/sidebar-comps-2.png)
 
-**A.** Navegador do canal **B.** Navegador de conteúdo **C** Navegador de propriedades **D.** Navegador de ativos **E** Navegador de componentes **F** Navegador de fontes de dados - Modelo de dados **G.** Navegador de Fontes de dados - Conteúdo principal
+**A.** Navegador de canal **B.** Navegador de conteúdo **C.** Navegador de propriedades **D.** Navegador de ativos **E.** Navegador de componentes **F.** Navegador de Fontes de Dados - Modelo de Dados **G.** Navegador de Fontes de Dados - Conteúdo Principal
 
 <!-- Click to enlarge
 
@@ -55,9 +55,10 @@ No navegador de conteúdo, é possível ver a hierarquia de objetos do documento
 
 * **Navegador de propriedades**
 
-  Permite editar as propriedades de um componente. As propriedades mudam de acordo com o componente. Por exemplo, para ver as propriedades do container do documento: selecione um componente e, em seguida, ![nível de campo](assets/field-level.png) > **Contêiner de documentos** e selecione ![cmppr](assets/cmppr.png).
+  Permite editar as propriedades de um componente. As propriedades mudam de acordo com o componente. Por exemplo, para ver as propriedades do contêiner de documento:
+Selecione um componente, selecione ![nível do campo](assets/field-level.png) > **Contêiner de Documentos** e selecione ![cmppr](assets/cmppr.png).
 
-* **Navegador de ativos**
+* **Navegador Assets**
 Segrega diferentes tipos de conteúdo, como fragmentos de layout, imagens, documentos, páginas e vídeos. O autor pode arrastar e soltar ativos na Comunicação interativa.
 
 * **Navegador de componentes**
@@ -77,63 +78,63 @@ Inclui componentes que você pode usar para criar os canais de impressão e da W
 
 &#42;&#42; No canal de impressão, as áreas de destino são predefinidas no modelo XDP/impressão. Não é possível adicionar novas áreas de destino usando a interface de criação da Comunicação interativa.
 
-* **Navegador de fontes de dados**
+* **Navegador de Fontes de Dados**
 O Navegador de fontes de dados exibe as fontes de dados disponíveis no modelo de dados de formulário selecionado ao criar a Comunicação interativa.
 
 ### Pontos principais para trabalhar com componentes {#key-points-for-working-with-components}
 
 Os principais pontos ao trabalhar com componentes de comunicação interativa são os seguintes:
 
-* Cada componente tem propriedades associadas que controlam sua aparência e funcionalidade. Para configurar as propriedades de um componente, selecione o componente e ![cmppr](assets/cmppr.png) para abrir as propriedades do componente no navegador Propriedades.
-* Um componente é identificado com seu nome de elemento. Ao selecionar ![cmppr](assets/cmppr.png), você pode alterar o nome do componente alterando o valor do campo Nome do elemento no navegador de propriedades. O campo Nome do elemento aceita somente letras, números, hifens (-) e sublinhados (_). Outros caracteres especiais não são permitidos e o nome do elemento deve começar com uma letra.
+* Cada componente tem propriedades associadas que controlam sua aparência e funcionalidade. Para configurar as propriedades de um componente, selecione o componente e selecione ![cmppr](assets/cmppr.png) para abrir as propriedades do componente no navegador Propriedades.
+* Um componente é identificado com seu nome de elemento. Ao selecionar ![cmppr](assets/cmppr.png), você pode alterar o nome do componente alterando o valor do campo Nome do Elemento no navegador de propriedades. O campo Nome do elemento aceita somente letras, números, hifens (-) e sublinhados (_). Outros caracteres especiais não são permitidos e o nome do elemento deve começar com uma letra.
 * Você pode modificar a propriedade Title de um componente de Comunicação interativa em linha no editor sem abrir o navegador Propriedades, desde que o título esteja visível na Comunicação interativa. Para fazer isso:
 
    1. Selecione para selecionar um componente que tenha uma propriedade Title e cuja propriedade Hide title esteja desativada.
-   1. Selecionar ![aem_6_3_edit](assets/aem_6_3_edit.png) para tornar o título editável.
+   1. Selecione ![aem_6_3_edit](assets/aem_6_3_edit.png) para tornar o título editável.
 
    1. Modifique o título e selecione a tecla Return ou selecione qualquer lugar fora do componente para salvar as alterações. Selecione a tecla Esc para descartar as alterações.
 
 ## Barra de ferramentas Componente {#component-toolbar}
 
-![Rótulos da barra de ferramentas do componente](do-not-localize/component_toolbar_labels_new.png)
+![Rótulos de componentes da barra de ferramentas](do-not-localize/component_toolbar_labels_new.png)
 
 Ao selecionar um componente, você vê uma barra de ferramentas que permite trabalhar com ele. Há opções para recortar, colar, mover e especificar as propriedades dos componentes. As opções são:
 
-A.**Configurar**: Ao selecionar **Configurar**, as propriedades do componente ficam visíveis na barra lateral.
+A.**Configurar**: ao selecionar **Configurar**, as propriedades do componente ficam visíveis na barra lateral.
 
-B.**Editar regras**: Quando você seleciona Editar regras, o Editor de regras é exibido no qual você pode editar e criar regras para o componente selecionado. No Editor de regras, você também pode selecionar outros objetos de formulário (componentes) e editar/criar regras para esses objetos de formulário.
+B.**Editar Regras**: quando você seleciona Editar Regras, o Editor de Regras é exibido no qual você pode editar e criar regras para o componente selecionado. No Editor de regras, você também pode selecionar outros objetos de formulário (componentes) e editar/criar regras para esses objetos de formulário.
 
-C **Copiar**: você pode usar a opção de cópia para copiar um componente e colá-lo em outros locais na Comunicação interativa.
+C.**Copy**: você pode usar a opção de cópia para copiar um componente e colá-lo em outros locais na Comunicação Interativa.
 
-D.**Recortar**: Você pode usar a opção de recortar para mover um componente de um local para outro na Comunicação interativa.
+D.**Cut**: é possível usar a opção de recortar para mover um componente de um local para outro na Comunicação Interativa.
 
-E **Excluir**: permite excluir o componente da Comunicação interativa.
+E. **Excluir**: permite excluir o componente da Comunicação Interativa.
 
-F **Inserir componente**: permite inserir um componente acima do componente selecionado.
+F. **Inserir componente**: Permite inserir um componente acima do componente selecionado.
 
 G. **Colar**: permite colar o componente recortado ou copiado usando as opções descritas acima.
 
 H. **Grupo**: permite selecionar vários componentes se você deseja cortar, copiar ou colar mais de um componente.
 
-I. **Pai**: permite selecionar o primário de um componente.
+I. **Pai**: permite selecionar o pai de um componente.
 
-J. **Exibir expressão SOM:** Permite exibir o [Expressão SOM](../../forms/using/using-som-expressions-adaptive-forms.md) para o componente.
+J. **Exibir expressão SOM:** Permite exibir a [expressão SOM](../../forms/using/using-som-expressions-adaptive-forms.md) do componente.
 
 K: **Agrupar objetos no Painel:** Permite agrupar os componentes em um painel para poder executar operações nesses componentes simultaneamente. Para obter detalhes, consulte [Agrupar objetos no Painel](create-interactive-communication.md#groupobjectspanel).
 
-L. **Adicionar painel secundário** (somente para painéis): permite adicionar um painel secundário ao painel.
+L. **Adicionar Painel Filho** (somente para painéis): permite adicionar um painel filho ao painel.
 
-M: **Adicionar a barra de ferramentas do painel** (somente para painéis):Permite adicionar a barra de ferramentas para o componente Painel. Em seguida, você poderá executar outras ações na barra de ferramentas.
+M: **Adicionar Barra de Ferramentas do Painel** (somente para painéis):Permite adicionar a Barra de Ferramentas do componente Painel. Em seguida, você poderá executar outras ações na barra de ferramentas.
 
-Além disso, a **Substituir** A opção na barra de ferramentas permite substituir o componente existente por um componente alternativo. A opção não está disponível para o componente Painel.
+Além disso, a opção **Substituir** da barra de ferramentas permite substituir o componente existente por um componente alternativo. A opção não está disponível para o componente Painel.
 
 ## Barra de ferramentas da página {#page-toolbar}
 
 A barra de ferramentas Página na parte superior fornece opções que permitem visualizar a Comunicação interativa e alterar suas propriedades. Você pode visualizar a comunicação interativa ao criá-la e fazer as alterações apropriadas. Na barra de ferramentas da página, você observa:
 
-* Ativar/desativar painel lateral ![ativar/desativar painel lateral](assets/toggle-side-panel.png): permite mostrar ou ocultar a Barra lateral.
-* Informações da página ![pageinformationad](assets/pageinformationad.png): permite a exibição das propriedades da página.
-* Emulador ![régua](assets/ruler.png): permite emular a aparência da sua comunicação interativa para diferentes tamanhos de exibição, como tablets e telefones.
+* Alternar painel lateral ![alternar painel lateral](assets/toggle-side-panel.png): permite mostrar ou ocultar a barra lateral.
+* Informações da página ![pageinformationad](assets/pageinformationad.png): permite exibir as propriedades da página.
+* Emulador ![régua](assets/ruler.png): permite que você emule a aparência da sua Comunicação Interativa para diferentes tamanhos de exibição, como tablets e telefones.
 * Editar: permite selecionar outros modos, como Editar, Estilo, Desenvolvedor e Design.
 
    * Editar: permite editar as propriedades da Comunicação interativa e seus componentes. Por exemplo, adicionar um componente, soltar uma imagem e especificar campos obrigatórios.

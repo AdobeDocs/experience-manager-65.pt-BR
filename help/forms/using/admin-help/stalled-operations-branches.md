@@ -27,17 +27,17 @@ Quando um processo é interrompido, nenhuma outra operação é executada até q
 
 Para cada item paralisado, a lista mostra as seguintes informações:
 
-**Nome da Operação ou Nome da Ramificação:** O nome da operação ou filial.
+**Nome da Operação ou da Ramificação:** O nome da operação ou ramificação.
 
-**Status:** Sempre PARALISADO para itens paralisados.
+**Status:** Sempre PARADO para itens paralisados.
 
 **Erro:** Uma breve descrição do problema.
 
-**ID do processo:** O número inteiro positivo que o workflow de formulários atribui quando o processo é instanciado (ou seja, quando um usuário ou uma etapa automatizada inicia um processo). Você pode usar esse identificador para rastrear a instância do processo por meio de seu ciclo de vida.
+**ID do Processo:** O número inteiro positivo que o fluxo de trabalho de formulários atribui quando o processo é instanciado (ou seja, quando um usuário ou uma etapa automatizada inicia um processo). Você pode usar esse identificador para rastrear a instância do processo por meio de seu ciclo de vida.
 
-**Nome do processo - Versão:** O nome do processo atribuído no Workbench.
+**Nome do Processo - Versão:** O nome do processo atribuído no Workbench.
 
-**Data de paralisação:** A data e a hora em que a operação ou ramificação foi paralisada.
+**Data de Paralisação:** A data e a hora em que a operação ou ramificação foi paralisada.
 
 Você pode executar as seguintes tarefas na página Operações interrompidas ou Ramificações interrompidas:
 
@@ -78,7 +78,7 @@ Erros ocorrem quando a operação Atribuir Tarefa no serviço de Usuário de for
 
 Quando essa situação ocorre, o estado do processo e da tarefa não é alterado no tempo de escalação configurado e o escalonamento não ocorre, mas o processo não é interrompido. A seguinte mensagem é exibida no registro do servidor:
 
-&quot;O principal especificado para escalonamento não é válido para taskID: *número*, fila especificada: *número*.&quot;
+&quot;O principal especificado para escalonamento não é válido, para taskID: *number*, fila especificada: *number*.&quot;
 
 Se o usuário de escalonamento for excluído antes que a tarefa seja gerada (antes que a operação Atribuir Tarefa seja executada), o processo será interrompido ou o evento de exceção InvalidPrincipal será lançado.
 

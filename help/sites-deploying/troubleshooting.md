@@ -34,11 +34,11 @@ A árvore decisória a seguir fornece orientação para restringir o gargalo.
 
 ## Configuração de arquivos de log e logs de auditoria {#configuring-log-files-and-audit-logs}
 
-O AEM registra logs detalhados que você pode querer configurar para solucionar problemas de instalação. Para obter informações, consulte a [Trabalhar com registros de auditoria e arquivos de log](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files) seção.
+O AEM registra logs detalhados que você pode querer configurar para solucionar problemas de instalação. Para obter informações, consulte a seção [Trabalhando com registros de auditoria e arquivos de log](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files).
 
 ## Uso da Opção Detalhada {#using-the-verbose-option}
 
-Ao iniciar o AEM WCM, você pode adicionar a opção -v (verboso) à linha de comando como em: java -jar cq-wcm-quickstart-&lt;version>.jar -v.
+Ao iniciar o WCM do AEM, você pode adicionar a opção -v (verboso) à linha de comando como em: java -jar cq-wcm-quickstart-&lt;version>.jar -v.
 
 A opção detalhada exibe parte da saída de log do Quickstart no console, para que possa ser usada para a solução de problemas.
 
@@ -63,16 +63,16 @@ Para solucionar problemas, faça o seguinte:
 * Às vezes, reinstalar a versão compatível do Java™ ajuda a restaurar a associação correta.
 * Você sempre pode executar o CRX usando a linha de comando ou scripts de iniciar/parar, conforme descrito anteriormente neste documento.
 
-### Meu aplicativo em execução no CRX emite erros de falta de memória {#my-application-running-on-crx-throws-out-of-memory-errors}
+### Meu aplicativo em execução no CRX emite erros de memória insuficiente {#my-application-running-on-crx-throws-out-of-memory-errors}
 
 >[!NOTE]
 >
 >Consulte também [Analisar problemas de memória](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html).
 
 
-O próprio CRX tem pouco espaço de memória. Se o aplicativo em execução no CRX tiver requisitos de memória maiores ou solicitar operações com muita memória (por exemplo, transações grandes), a instância da JVM em que o CRX é executado deverá ser iniciada com configurações de memória apropriadas.
+O próprio CRX tem pouco espaço de memória. Se a aplicação em execução no CRX tiver requisitos de memória maiores ou solicitar operações com muita memória (por exemplo, transações grandes), a instância da JVM em que o CRX é executado deverá ser iniciada com configurações de memória apropriadas.
 
-Use as opções de comando do Java™ para definir as configurações de memória da JVM (por exemplo, java -Xmx512m -jar crx&amp;ast;.jar para definir o tamanho de pilha para 512 MB).
+Use as opções de comando do Java™ para definir as configurações de memória da JVM (por exemplo, java -Xmx512m -jar crx&amp;ast;.jar para definir heapsize como 512 MB).
 
 Especifique a opção de configuração de memória ao iniciar o WCM do AEM a partir da linha de comando. Os scripts de inicialização/parada do WCM do AEM ou os scripts personalizados para gerenciar a inicialização do WCM do AEM também podem ser modificados para definir as configurações de memória necessárias.
 
@@ -82,7 +82,7 @@ Para criar automaticamente um despejo de heap ao ficar sem memória, use o segui
 
 java -Xmx256m -XX:+HeapDumpOnOutOfMemoryError -jar &amp;ast;.jar
 
-Este método gera um arquivo de despejo de heap (**java_...hprof**) sempre que o processo ficar sem memória. O processo pode continuar a ser executado após a geração do despejo de heap.
+Este método gera um arquivo de despejo de heap (**java_...hprof**) sempre que o processo fica sem memória. O processo pode continuar a ser executado após a geração do despejo de heap.
 
 Geralmente, três arquivos de despejo de heap, coletados durante um período, são necessários para analisar o problema:
 
@@ -115,7 +115,7 @@ Há um problema conhecido com o AEM 6.5 em execução no Java™ 11, no qual o s
 
 Se esse problema ocorrer, faça o seguinte:
 
-1. Abra o `sling.properties` arquivo sob o `crx-quickstart/conf/` pasta
+1. Abra o arquivo `sling.properties` na pasta `crx-quickstart/conf/`
 1. Localize a seguinte linha:
 
    `org.osgi.framework.bootdelegation=sun.,com.sun.`
@@ -134,7 +134,7 @@ Se esse problema ocorrer, faça o seguinte:
 
 Quando uma solicitação para a página geometrixx-outdoors/en retorna um erro 404 (Página não encontrada), é possível verificar novamente se você definiu a propriedade sling adicional no arquivo sling.properties necessário para esses Servidores de aplicativos específicos.
 
-Consulte na *Implantar a aplicação Web AEM* etapas para obter detalhes.
+Consulte as etapas *Implantar aplicativo Web AEM* para obter detalhes.
 
 ### O tamanho do cabeçalho de resposta pode ser maior que 4 KB {#response-header-size-can-be-greater-than-kb}
 
@@ -150,11 +150,11 @@ Se o armazenamento persistente estiver incorporado no diretório de instalação
 
 >[!NOTE]
 >
->O Adobe recomenda que você faça backup do seu repositório antes de excluir o AEM. Se você excluir a variável &lt;cq-installation-directory>, você também excluirá o repositório. Para manter os dados do repositório antes de excluir, mova ou copie o &lt;cq-installation-directory>/crx-quickstart/repository pasta em outro lugar antes de excluir as outras pastas.
+>O Adobe recomenda que você faça backup do seu repositório antes de excluir o AEM. Se você excluir todo o &lt;cq-installation-diretory>, também excluirá o repositório. Para manter os dados do repositório antes de excluir, mova ou copie a pasta &lt;cq-installation-diretory>/crx-quickstart/repository em outro lugar antes de excluir as outras pastas.
 
 Se sua instalação do AEM usar armazenamento externo, por exemplo, um servidor de banco de dados, a remoção da pasta não removerá os dados automaticamente, mas removerá a configuração de armazenamento, o que dificultará a restauração do conteúdo JCR.
 
 ### Os arquivos JSP não são compilados no JBoss® {#jsp-files-are-not-compiled-on-jboss}
 
 Se você instalar ou atualizar arquivos JSP para o Experience Manager no JBoss® e os servlets correspondentes não forem compilados, certifique-se de que o compilador JSP do JBoss® esteja configurado corretamente. Para obter informações, consulte a
-[Problemas de compilação JSP no JBoss®](https://helpx.adobe.com/experience-manager/kb/jsps-dont-compile-jboss.html) artigo.
+[Problemas de compilação de JSP no artigo JBoss®](https://helpx.adobe.com/experience-manager/kb/jsps-dont-compile-jboss.html).

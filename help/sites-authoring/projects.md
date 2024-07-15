@@ -29,13 +29,13 @@ Projeta um recurso AEM padrão e não requer nenhuma configuração adicional.
 
 No entanto, para que os usuários em projetos possam ver outros usuários/grupos enquanto usam Projetos, como ao criar projetos, criar tarefas/fluxos de trabalho ou exibir e gerenciar a equipe, eles precisam ter acesso de leitura a `/home/users` e `/home/groups`.
 
-A maneira mais fácil de fazer isso é dar a **projetos-usuários** acesso de leitura do grupo a `/home/users` e `/home/groups`.
+A maneira mais fácil de fazer isso é conceder ao grupo **projetos-usuários** acesso de leitura a `/home/users` e `/home/groups`.
 
 ## Console de projetos {#projects-console}
 
 O console de projetos é onde você acessa e gerencia os projetos no AEM.
 
-![O console de projetos](assets/screen-shot_2019-03-05at125110.png)
+![O Console de Projetos](assets/screen-shot_2019-03-05at125110.png)
 
 O console de Projetos é semelhante a outros consoles no AEM, permite várias ações em projetos individuais e ajusta a visualização dos projetos.
 
@@ -51,9 +51,9 @@ Somente conteúdo é o modo padrão ao abrir o console. Ele mostrará todos os s
 
 #### Linha do tempo {#timeline}
 
-A exibição da linha do tempo permite selecionar um projeto individual e exibir a atividade nele. Usar o seletor do painel ou a tecla de atalho `alt+1` para alterar para esta exibição.
+A exibição da linha do tempo permite selecionar um projeto individual e exibir a atividade nele. Use o seletor de painéis ou a tecla de atalho `alt+1` para alterar para essa exibição.
 
-![Modo Linha do tempo](assets/project-timeline.png)
+![Modo de linha do tempo](assets/project-timeline.png)
 
 ### Alternar a exibição {#views}
 
@@ -79,11 +79,11 @@ Clique em **Criar** para adicionar um novo projeto.
 
 ## Blocos do projeto {#project-tiles}
 
-Os projetos são compostos de diferentes tipos de informações que você deseja gerenciar em conjunto. Essas informações são representadas por diferentes **Ladrilhos**.
+Os projetos são compostos de diferentes tipos de informações que você deseja gerenciar em conjunto. Estas informações são representadas por **Blocos** diferentes.
 
 Você pode ter os seguintes mosaicos associados ao seu projeto.
 
-* [Assets](#assets)
+* [Ativos](#assets)
 * [Coleções de ativos](#asset-collections)
 * [Experiências](#experiences)
 * [Links](#links)
@@ -111,15 +111,15 @@ Você faz upload de ativos diretamente no bloco.
 
 Semelhante aos ativos, você pode adicionar [Coleções de ativos](/help/assets/manage-collections.md) diretamente ao seu projeto. As coleções são definidas em Ativos.
 
-![Mosaico da coleção de ativos](assets/project-tile-asset-collection.png)
+![Bloco de coleção de ativos](assets/project-tile-asset-collection.png)
 
 Adicione uma coleção ao clicar em **Adicionar coleção** e selecionar a coleção apropriada na lista.
 
 ### Experiências {#experiences}
 
-A variável **Experiências** o bloco permite adicionar um aplicativo móvel, site ou publicação ao projeto.
+O bloco **Experiências** permite adicionar um aplicativo móvel, site ou publicação ao projeto.
 
-![Mosaico de experiências](assets/project-tile-experiences.png)
+![Bloco de experiências](assets/project-tile-experiences.png)
 
 Os ícones indicam que tipo de experiência é representada.
 
@@ -128,25 +128,25 @@ Os ícones indicam que tipo de experiência é representada.
 
 ### Links {#links}
 
-A variável **Links** o bloco permite associar links externos ao projeto.
+O bloco **Links** permite associar links externos ao projeto.
 
-![Mosaico de links](assets/project-tile-links.png)
+![Bloco de links](assets/project-tile-links.png)
 
 É possível nomear o link com um nome fácil de reconhecer, além de alterar a miniatura.
 
 ### Informações do projeto {#project-info}
 
-A variável **Informações do Projeto** o bloco fornece informações gerais sobre o projeto, incluindo uma descrição, o status do projeto (inativo ou ativo), uma data de vencimento e os membros. Além disso, você pode adicionar uma miniatura do projeto, exibida na página de Projetos principal.
+O bloco **Informações do Projeto** fornece informações gerais sobre o projeto, incluindo uma descrição, o status do projeto (inativo ou ativo), uma data de vencimento e os membros. Além disso, você pode adicionar uma miniatura do projeto, exibida na página de Projetos principal.
 
-![Mosaico de informações do projeto](assets/project-tile-info.png)
+![Bloco de informações do projeto](assets/project-tile-info.png)
 
 ### Tarefa de tradução {#translation-job}
 
-A variável **Tarefa de tradução** o bloco é onde você inicia uma tradução e também onde você vê o status das suas traduções.
+O bloco **Trabalho de Tradução** é onde você inicia uma tradução e também onde você vê o status das suas traduções.
 
 ![Bloco de trabalho de tradução](assets/project-tile-translation.png)
 
-Para configurar a tradução, consulte o documento [Criação de projetos de tradução.](/help/assets/translation-projects.md)
+Para configurar a tradução, consulte o documento [Criando Projetos de Tradução.](/help/assets/translation-projects.md)
 
 ### Equipe {#team}
 
@@ -158,48 +158,48 @@ Neste bloco, é possível especificar os membros da equipe do projeto. Ao editar
 
 ### Página de destino {#landing-pages}
 
-A variável **Landing Pages** O bloco permite solicitar uma nova página de aterrissagem.
+O bloco **Páginas de Aterrissagem** permite solicitar uma nova página de aterrissagem.
 
-![Mosaico da página de aterrissagem](assets/project-tile-landing.png)
+![Bloco de página de aterrissagem](assets/project-tile-landing.png)
 
-Esse workflow é descrito no documento[Crie um fluxo de trabalho de landing page.](/help/sites-authoring/projects-with-workflows.md#request-landing-page-workflow)
+Este fluxo de trabalho está descrito no documento[Criar um fluxo de trabalho de página de aterrissagem.](/help/sites-authoring/projects-with-workflows.md#request-landing-page-workflow)
 
 ### Emails {#emails}
 
-A variável **Emails** O bloco ajuda a gerenciar solicitações de email. Ele inicia o **Solicitação de email** fluxo de trabalho.
+O bloco **Emails** ajuda a gerenciar solicitações de email. Ele inicia o fluxo de trabalho **Solicitação de email**.
 
-![Mosaico de email](assets/project-tile-email.png)
+![Bloco de email](assets/project-tile-email.png)
 
-Mais informações estão descritas na seção [Solicitar fluxo de trabalho de email.](/help/sites-authoring/projects-with-workflows.md#request-email-workflow)
+Mais informações estão descritas em [Solicitar fluxo de trabalho de email.](/help/sites-authoring/projects-with-workflows.md#request-email-workflow)
 
 ### Fluxos de trabalhos {#workflows}
 
-Você pode iniciar fluxos de trabalho para seu projeto. Se algum workflow estiver em execução, seu status será exibido no **Fluxos de trabalho** bloco.
+Você pode iniciar fluxos de trabalho para seu projeto. Se algum fluxo de trabalho estiver em execução, seu status será exibido no bloco **Fluxos de Trabalho**.
 
-![Mosaico de fluxos de trabalho](assets/project-tile-workflows.png)
+![Bloco de fluxos de trabalho](assets/project-tile-workflows.png)
 
 Dependendo do projeto criado, há fluxos de trabalho diferentes disponíveis.
 
-Elas são descritas em [Trabalhar com fluxos de trabalho de projeto.](/help/sites-authoring/projects-with-workflows.md)
+Eles são descritos em [Trabalhando com Fluxos de Trabalho de Projeto.](/help/sites-authoring/projects-with-workflows.md)
 
 ### Lançamentos {#launches}
 
-A variável **Lançamentos** O bloco mostra todas as inicializações solicitadas com um [Solicitar fluxo de trabalho do Launch.](/help/sites-authoring/projects-with-workflows.md)
+O bloco **Inicializações** mostra todas as inicializações que foram solicitadas com um fluxo de trabalho [Solicitar Inicialização.](/help/sites-authoring/projects-with-workflows.md)
 
-![Lança o bloco](assets/project-tile-launches.png)
+![Iniciar bloco](assets/project-tile-launches.png)
 
 ### Tarefas {#tasks}
 
 O bloco Tarefas permite monitorar o status de qualquer tarefa relacionada ao projeto, incluindo fluxos de trabalho. As tarefas são abordadas em detalhes em [Trabalhar com tarefas](/help/sites-authoring/task-content.md).
 
-![Mosaico de tarefas](assets/project-tile-tasks.png)
+![Bloco de tarefas](assets/project-tile-tasks.png)
 
 ## Modelos de projeto {#project-templates}
 
 Os modelos servem como base para iniciar o projeto. O AEM fornece esses modelos de projeto padrão.
 
-* **Projeto de mídia** - Este é um projeto de amostra de referência para atividades de mídia. Ele inclui várias funções de projeto relacionadas à mídia e também fluxos de trabalho relacionados ao conteúdo de mídia.
-* **[Projeto de sessão de fotos do produto](/help/sites-authoring/managing-product-information.md)** - Esta é uma amostra de referência para o gerenciamento de fotografias de produtos relacionadas a comércio eletrônico.
+* **Projeto de mídia** - Este é um projeto de exemplo de referência para atividades de mídia. Ele inclui várias funções de projeto relacionadas à mídia e também fluxos de trabalho relacionados ao conteúdo de mídia.
+* **[Projeto de sessão fotográfica do produto](/help/sites-authoring/managing-product-information.md)** - Esta é uma amostra de referência para o gerenciamento de fotografias de produtos relacionadas a comércio eletrônico.
 * **[Projeto de tradução](/help/sites-administering/translation.md)** - Esta é uma amostra de referência para o gerenciamento de atividades relacionadas a tradução. Ele inclui funções básicas e fluxos de trabalho para gerenciar a tradução.
 * **Projeto simples** - Esta é uma amostra de referência para qualquer projeto que não se encaixe em outras categorias. Ele inclui três funções básicas e quatro fluxos de trabalho gerais de AEM.
 
@@ -217,8 +217,8 @@ Todos os projetos oferecem suporte às seguintes funções padrão para permitir
 | Função | Descrição | Permissões | Associação de Grupo |
 |---|---|---|---|
 | Observador | Um usuário nesta função pode visualizar detalhes do projeto, incluindo o status. | Permissões somente leitura em um projeto | `workflow-users` grupo |
-| Editor | Um usuário nesta função pode fazer upload e editar o conteúdo de um projeto. | Acesso de leitura e gravação em um projeto, metadados associados e ativos relacionados<br>Privilégios para fazer upload de uma lista de captura, sessão de fotos e revisar e aprovar ativos<br>Permissão de gravação em `/etc/commerce`<br>Modificar permissões em um projeto específico | `workflow-users` grupo |
-| Proprietário | Um usuário com essa função pode criar um projeto, iniciar um trabalho em um projeto e mover ativos aprovados para a pasta de produção. Todas as outras tarefas no projeto também podem ser visualizadas e executadas pelo proprietário. | Permissão de gravação em `/etc/commerce` | `dam-users` grupo para poder criar um projeto<br>`projects-administrators` para poder criar um projeto e mover ativos |
+| Editor | Um usuário nesta função pode fazer upload e editar o conteúdo de um projeto. | Acesso de leitura e gravação em um projeto, metadados associados e ativos relacionados<br>Privilégios para carregar uma lista de captura, sessão fotográfica e revisar e aprovar ativos<br>Permissão de gravação em `/etc/commerce`<br>Modificar permissão em um projeto específico | `workflow-users` grupo |
+| Proprietário | Um usuário com essa função pode criar um projeto, iniciar um trabalho em um projeto e mover ativos aprovados para a pasta de produção. Todas as outras tarefas no projeto também podem ser visualizadas e executadas pelo proprietário. | Permissão de gravação em `/etc/commerce` | O grupo `dam-users` pode criar um grupo <br>`projects-administrators` de projeto e mover ativos |
 
 Para projetos criativos, também são fornecidas funções adicionais, como fotógrafos. Você pode usar essas funções para derivar funções personalizadas para um projeto específico.
 
@@ -226,7 +226,7 @@ Para projetos criativos, também são fornecidas funções adicionais, como fot�
 
 Ao criar o projeto e adicionar usuários às várias funções, os grupos associados ao projeto são criados automaticamente para gerenciar as permissões associadas.
 
-Por exemplo, um projeto chamado Myproject teria três grupos **Proprietários do Myproject**, **Editores do Myproject**, **Observadores do Myproject**.
+Por exemplo, um projeto chamado Myproject teria três grupos: **Proprietários do Myproject**, **Editores do Myproject**, **Observadores do Myproject**.
 
 Se o projeto for excluído, esses grupos só serão excluídos se você selecionar a opção apropriada [ao excluir o projeto.](/help/sites-authoring/touch-ui-managing-projects.md#deleting-a-project) Um administrador também pode excluir manualmente os grupos em **Ferramentas** > **Segurança** > **Grupos**.
 

@@ -35,4 +35,4 @@ A lista de verificação a seguir destaca alguns dos principais problemas: leia 
 
 >[!NOTE]
 >
->Você também pode ver a [Gerenciamento de projetos - Lista de verificação de práticas recomendadas](/help/managing/best-practices.md) para obter mais listas de verificação relacionadas a todo o projeto.
+>Você também pode ver a [Lista de Verificação de Gerenciamento de Projetos - Práticas Recomendadas](/help/managing/best-practices.md) para obter mais listas de verificação relacionadas a todo o projeto.

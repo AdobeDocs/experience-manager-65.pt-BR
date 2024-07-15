@@ -41,29 +41,29 @@ Os componentes de página criados para seu aplicativo são baseados no component
 
 ### ng-page.jsp {#ng-page-jsp}
 
-Determina o nome do aplicativo usando o `applicationName` propriedade e a expõe por meio do pageContext.
+Determina o nome do aplicativo usando a propriedade `applicationName` e o expõe por meio do pageContext.
 
 Inclui head.jsp e body.jsp.
 
 ### head.jsp {#head-jsp}
 
-Escreve o `<head>` elemento da página do aplicativo.
+Grava o elemento `<head>` da página do aplicativo.
 
 Se você quiser substituir a metapropriedade viewport do aplicativo, esse será o arquivo que você substituirá.
 
-Seguindo as práticas recomendadas, o aplicativo inclui a parte css das bibliotecas do cliente no cabeçalho, enquanto o JS está incluído no fechamento &lt; `body>` elemento.
+Seguindo as práticas recomendadas, o aplicativo inclui a parte css das bibliotecas do cliente no cabeçalho, enquanto o JS é incluído no elemento &lt; `body>` de fechamento.
 
 ### body.jsp {#body-jsp}
 
 O corpo de uma página de Angular é renderizado de forma diferente dependendo de o wcmMode ser detectado (!= WCMMode.DISABLED) para determinar se a página está aberta para criação ou como uma página publicada.
 
-**Modo Autor**
+**Modo de Autor**
 
-No modo de criação, cada página individual é renderizada separadamente. O Angular não lida com o roteamento entre páginas, nem uma ng-view é usada para carregar um modelo parcial que contém os componentes da página. Em vez disso, o conteúdo do modelo de página (template.jsp) é incluído no lado do servidor por meio do `cq:include` tag.
+No modo de criação, cada página individual é renderizada separadamente. O Angular não lida com o roteamento entre páginas, nem uma ng-view é usada para carregar um modelo parcial que contém os componentes da página. Em vez disso, o conteúdo do modelo de página (template.jsp) é incluído no lado do servidor por meio da tag `cq:include`.
 
 Essa estratégia permite que os recursos do autor (como adicionar e editar componentes no sistema de parágrafo, Sidekick, modo de design e assim por diante) funcionem sem modificação. As páginas que dependem da renderização do lado do cliente, como aquelas para aplicativos, não têm bom desempenho no modo de autor AEM.
 
-A inclusão template.jsp é encapsulada em um `div` elemento que contém o `ng-controller` diretiva. Essa estrutura permite a vinculação do conteúdo DOM com o controlador. Portanto, embora as páginas que se renderizam no lado do cliente falhem, os componentes individuais que o fazem funcionam bem (consulte a seção Componentes abaixo).
+A inclusão template.jsp é encapsulada em um elemento `div` que contém a diretiva `ng-controller`. Essa estrutura permite a vinculação do conteúdo DOM com o controlador. Portanto, embora as páginas que se renderizam no lado do cliente falhem, os componentes individuais que o fazem funcionam bem (consulte a seção Componentes abaixo).
 
 ```xml
 <div ng-controller="<c:out value="${controllerNameStripped}"/>">
@@ -71,11 +71,11 @@ A inclusão template.jsp é encapsulada em um `div` elemento que contém o `ng-c
 </div>
 ```
 
-**Modo de publicação**
+**Modo Publish**
 
 No modo de publicação (como quando o aplicativo é exportado usando a Sincronização de conteúdo), todas as páginas se tornam um aplicativo de página única (SPA). (Para saber mais sobre o SPA, use o tutorial do Angular, especificamente [https://docs.angularjs.org/tutorial/step_07](https://docs.angularjs.org/tutorial/step_07).)
 
-Há apenas uma página de HTML em um SPA (uma página que contém a variável `<html>` elemento). Essa página é conhecida como &quot;modelo de layout&quot;. Na terminologia do Angular, é &quot;...um modelo comum a todas as exibições no nosso aplicativo&quot;. Considere essa página como a &quot;página do aplicativo de nível superior&quot;. Por convenção, a página do aplicativo de nível superior é a `cq:Page` nó do aplicativo mais próximo à raiz (e não é um redirecionamento).
+Há apenas uma página de HTML em um SPA (uma página que contém o elemento `<html>`). Essa página é conhecida como &quot;modelo de layout&quot;. Na terminologia do Angular, é &quot;...um modelo comum a todas as exibições no nosso aplicativo&quot;. Considere essa página como a &quot;página do aplicativo de nível superior&quot;. Por convenção, a página do aplicativo de nível superior é o nó `cq:Page` do seu aplicativo que está mais próximo da raiz (e não é um redirecionamento).
 
 Como o URI real do seu aplicativo não é alterado no modo de publicação, as referências a ativos externos desta página devem usar caminhos relativos. Portanto, é fornecido um componente de imagem especial que considera essa página de nível superior ao renderizar imagens para exportação.
 
@@ -89,11 +89,11 @@ O serviço de rota de Angular usa esse elemento para exibir o conteúdo de cada 
 
 O arquivo body.jsp inclui header.jsp e footer.jsp que estão vazios. Se você quiser fornecer conteúdo estático em cada página, é possível substituir esses scripts no aplicativo.
 
-Por fim, as clientlibs do javascript estão incluídas na parte inferior do &lt;body> elemento incluindo dois arquivos JS especiais gerados no servidor: *&lt;page name=&quot;&quot;>*.angular-app-module.js e *&lt;page name=&quot;&quot;>*.angular-app-controllers.js
+Finalmente, clientlibs de javascript são incluídas na parte inferior do elemento &lt;body>, incluindo dois arquivos JS especiais gerados no servidor: *&lt;page name>*.angular-app-module.js e *&lt;page name>*.angular-app-controllers.js.
 
 ### angular-app-module.js.jsp {#angular-app-module-js-jsp}
 
-Este script define o módulo Angular do aplicativo. A saída desse script está vinculada à marcação que o restante do componente do modelo gera por meio do `html` elemento em ng-page.jsp, que contém o seguinte atributo:
+Este script define o módulo Angular do aplicativo. A saída desse script está vinculada à marcação que o restante do componente do modelo gera por meio do elemento `html` em ng-page.jsp, que contém o seguinte atributo:
 
 ```xml
 ng-app="<c:out value='${applicationName}'/>"
@@ -101,13 +101,13 @@ ng-app="<c:out value='${applicationName}'/>"
 
 Esse atributo indica ao Angular que o conteúdo desse elemento DOM deve ser vinculado ao seguinte módulo. Esse módulo vincula as visualizações (no AEM, seriam cq:Page resources) com os controladores correspondentes.
 
-Esse módulo também define um controlador de nível superior chamado `AppController` que expõe a `wcmMode` ao escopo e configura o URI do qual buscar cargas de atualização da Sincronização de conteúdo.
+Esse módulo também define um controlador de nível superior chamado `AppController` que expõe a variável `wcmMode` ao escopo e configura o URI do qual buscar cargas de atualização da Sincronização de Conteúdo.
 
 Por fim, esse módulo itera por cada página descendente (incluindo ele mesmo) e renderiza o conteúdo do fragmento de rota de cada página (por meio do seletor e extensão angular-route-fragment.js), incluindo-o como uma entrada de configuração para o $routeProvider do Angular. Em outras palavras, o $routeProvider informa ao aplicativo qual conteúdo deve ser renderizado quando determinado caminho for solicitado.
 
 ### angular-route-fragment.js.jsp {#angular-route-fragment-js-jsp}
 
-Esse script gera um fragmento JavaScript que deve ter o seguinte formato:
+Esse script gera um fragmento do JavaScript que deve ter o seguinte formato:
 
 ```
 .when('/<path>', {
@@ -116,7 +116,7 @@ Esse script gera um fragmento JavaScript que deve ter o seguinte formato:
 })
 ```
 
-Este código indica a $routeProvider (definido em angular-app-module.js.jsp) que &#39;/&lt;path>&#39; deve ser manipulada pelo recurso em `templateUrl`e conectado por `controller` (que chegaremos em seguida).
+Este código indica para $routeProvider (definido em angular-app-module.js.jsp) que &#39;/&lt;path>&#39; deve ser manipulado pelo recurso em `templateUrl`, e ligado por `controller` (que chegaremos em seguida).
 
 Se necessário, é possível substituir esse script para manipular caminhos mais complexos, incluindo aqueles com variáveis. Um exemplo disso pode ser visto no script /apps/geometrixx-outdoors-app/components/angular/ng-template-page/angular-route-fragment.js.jsp que está instalado com AEM:
 
@@ -130,7 +130,7 @@ Se necessário, é possível substituir esse script para manipular caminhos mais
 
 ### angular-app-controllers.js.jsp {#angular-app-controllers-js-jsp}
 
-No Angular, os Controladores ativam variáveis no $scope, expondo-as à visualização. O script angular-app-controllers.js.jsp segue o padrão ilustrado por angular-app-module.js.jsp na medida em que repete cada página descendente (incluindo ela mesma) e gera o fragmento do controlador definido por cada página (via controller.js.jsp). O módulo definido é chamado de `cqAppControllers` e devem ser listados como uma dependência do módulo de aplicativo de nível superior para que os controladores de página sejam disponibilizados.
+No Angular, os Controladores ativam variáveis no $scope, expondo-as à visualização. O script angular-app-controllers.js.jsp segue o padrão ilustrado por angular-app-module.js.jsp na medida em que repete cada página descendente (incluindo ela mesma) e gera o fragmento do controlador definido por cada página (via controller.js.jsp). O módulo que ele define é chamado de `cqAppControllers` e deve ser listado como uma dependência do módulo de aplicativo de nível superior para que os controladores de página sejam disponibilizados.
 
 ### controller.js.jsp {#controller-js-jsp}
 
@@ -146,9 +146,9 @@ O script controller.js.jsp gera o fragmento de controlador para cada página. Es
 ])
 ```
 
-A variável `data` é atribuída à variável a promessa retornada pelo Angular `$http.get` método. Cada componente incluído nesta página pode, se desejado, disponibilizar conteúdo .json (por meio do script angular.json.jsp) e agir de acordo com o conteúdo dessa solicitação quando ela for resolvida. A solicitação é muito rápida em dispositivos móveis porque simplesmente acessa o sistema de arquivos.
+A variável `data` é atribuída à promessa retornada pelo método `$http.get` do Angular. Cada componente incluído nesta página pode, se desejado, disponibilizar conteúdo .json (por meio do script angular.json.jsp) e agir de acordo com o conteúdo dessa solicitação quando ela for resolvida. A solicitação é muito rápida em dispositivos móveis porque simplesmente acessa o sistema de arquivos.
 
-Para que um componente faça parte da controladora dessa maneira, ele deve estender o componente /libs/mobileapps/components/angular/ng-component e incluir o parâmetro `frameworkType: angular` propriedade.
+Para que um componente faça parte do controlador dessa maneira, ele deve estender o componente /libs/mobileapps/components/angular/ng-component e incluir a propriedade `frameworkType: angular`.
 
 ### template.jsp {#template-jsp}
 
@@ -170,7 +170,7 @@ Um script para colocar conteúdo estático na parte inferior do aplicativo. Esse
 
 ### js_clientlibs.jsp {#js-clientlibs-jsp}
 
-Substitua esse script para incluir suas bibliotecas de clientes JavaScript.
+Substitua esse script para incluir as bibliotecas de clientes do JavaScript.
 
 ### css_clientlibs.jsp {#css-clientlibs-jsp}
 
@@ -183,7 +183,7 @@ Os componentes do aplicativo devem funcionar não apenas em uma instância AEM (
 * Todos os ativos, modelos e scripts em um aplicativo PhoneGap devem ser referenciados relativamente.
 * O manuseio de links é diferente se a instância do AEM estiver operando no modo de autor ou publicação.
 
-### Ativos relativos {#relative-assets}
+### Assets relativo {#relative-assets}
 
 O URI de qualquer ativo específico em um aplicativo PhoneGap difere não apenas em uma base por plataforma, mas é exclusivo em cada instalação do aplicativo. Por exemplo, observe o seguinte URI de um aplicativo em execução no iOS Simulator:
 
@@ -193,7 +193,7 @@ Observe o GUID &#39;24BA22ED-7D06-4330-B7EB-F6FC73251CA3&#39; no caminho.
 
 Como desenvolvedor do PhoneGap, o conteúdo com o qual você está preocupado está localizado abaixo do diretório www. Para acessar os ativos do aplicativo, use caminhos relativos.
 
-Para compor o problema, seu aplicativo PhoneGap usa o padrão de aplicativo de página única (SPA), para que o URI base (excluindo o hash) nunca seja alterado. Portanto, cada ativo, modelo ou script que você referencia **deve ser relativo à página de nível superior. **A página de nível superior inicializa o roteamento e os controladores do Angular em virtude do `*<name>*.angular-app-module.js` e `*<name>*.angular-app-controllers.js`. Essa página deve ser a mais próxima da raiz do repositório que *não *estende um sling:redirect.
+Para compor o problema, seu aplicativo PhoneGap usa o padrão de aplicativo de página única (SPA), para que o URI base (excluindo o hash) nunca seja alterado. Portanto, cada ativo, modelo ou script que você referencia **deve ser relativo à página de nível superior. **A página de nível superior inicializa o roteamento e os controladores do Angular em virtude de `*<name>*.angular-app-module.js` e `*<name>*.angular-app-controllers.js`. Essa página deve ser a mais próxima da raiz do repositório que *não *estende um sling:redirect.
 
 Vários métodos auxiliares estão disponíveis para lidar com caminhos relativos:
 
@@ -205,7 +205,7 @@ Para ver exemplos de uso, abra a origem mobileapps localizada em /libs/mobileapp
 
 ### Links {#links}
 
-Os links devem usar o `ng-click="go('/path')"` para suportar todos os modos WCM. Essa função depende do valor de uma variável de escopo para determinar corretamente a ação do link:
+Os links devem usar a função `ng-click="go('/path')"` para dar suporte a todos os modos WCM. Essa função depende do valor de uma variável de escopo para determinar corretamente a ação do link:
 
 ```xml
 <c:choose><c:when test="${wcmMode}">
@@ -217,9 +217,9 @@ Os links devem usar o `ng-click="go('/path')"` para suportar todos os modos WCM.
 </c:otherwise></c:choose>
 ```
 
-Quando `$scope.wcmMode == true` tratamos cada evento de navegação da maneira usual, de modo que o resultado seja uma alteração no caminho e/ou parte da página do URL.
+Quando `$scope.wcmMode == true` lidamos com cada evento de navegação da maneira usual, de forma que o resultado seja uma alteração no caminho e/ou parte da página da URL.
 
-Em alternativa, se `$scope.wcmMode == false`, cada evento de navegação resulta em uma alteração na parte de hash do URL, que é resolvida internamente pelo módulo ngRoute do Angular.
+Como alternativa, se `$scope.wcmMode == false`, cada evento de navegação resulta em uma alteração na parte de hash da URL que é resolvida internamente pelo módulo ngRoute do Angular.
 
 ### Detalhes do script de componente {#component-script-details}
 
@@ -241,11 +241,11 @@ Em componentes orientados por dados JSON (como &quot;ng-text&quot;: /libs/mobile
 
 #### controller.js.jsp {#controller-js-jsp-1}
 
-Conforme descrito em Modelos de página AEM, cada componente pode produzir um fragmento de JavaScript para consumir o conteúdo JSON exposto pelo `data` promessa. Seguindo as convenções de Angular, um controlador só deve ser usado para atribuir variáveis ao escopo.
+Conforme descrito em Modelos de página AEM, cada componente pode produzir um fragmento do JavaScript para consumir o conteúdo JSON exposto pela promessa `data`. Seguindo as convenções de Angular, um controlador só deve ser usado para atribuir variáveis ao escopo.
 
 #### angular.json.jsp {#angular-json-jsp}
 
-Esse script está incluído como um fragmento no campo &quot;&lt;page-name>Arquivo .angular.json&#39; que é exportado para cada página que estende ng-page. Nesse arquivo, o desenvolvedor do componente pode expor qualquer estrutura JSON exigida pelo componente. No exemplo de &quot;ng-text&quot;, essa estrutura simplesmente inclui o conteúdo do texto do componente e um sinalizador que indica se o componente inclui ou não rich text.
+Esse script é incluído como um fragmento no arquivo &#39;&lt;page-name>.angular.json&#39; de toda a página que é exportado para cada página que estende ng-page. Nesse arquivo, o desenvolvedor do componente pode expor qualquer estrutura JSON exigida pelo componente. No exemplo de &quot;ng-text&quot;, essa estrutura simplesmente inclui o conteúdo do texto do componente e um sinalizador que indica se o componente inclui ou não rich text.
 
 O componente de produto do aplicativo Geometrixx outdoors é um exemplo mais complexo (/apps/geometrixx-outdoors-app/components/angular/ng-product):
 
@@ -280,7 +280,7 @@ O componente de produto do aplicativo Geometrixx outdoors é um exemplo mais com
 }
 ```
 
-## Conteúdo do download dos ativos CLI {#contents-of-the-cli-assets-download}
+## Conteúdo de download da CLI Assets {#contents-of-the-cli-assets-download}
 
 Baixe ativos de CLI no console Aplicativos para otimizá-los para uma plataforma específica e, em seguida, crie o aplicativo usando a API de integração de linha de comando (CLI) do PhoneGap. O conteúdo do arquivo ZIP que você salva no sistema de arquivos local tem a seguinte estrutura:
 
@@ -308,21 +308,21 @@ Este é um diretório oculto que talvez você não veja, dependendo das configur
 
 #### .cordova/ganchos/ {#cordova-hooks}
 
-Esse diretório contém o [Ganchos da CLI](https://cordova.apache.org/docs/en/10.x/guide/appdev/hooks/). As pastas no diretório de ganchos contêm scripts node.js que são executados em pontos exatos durante a criação.
+Este diretório contém os [ganchos de CLI](https://cordova.apache.org/docs/en/10.x/guide/appdev/hooks/). As pastas no diretório de ganchos contêm scripts node.js que são executados em pontos exatos durante a criação.
 
 #### .cordova/hooks/after-platform_add/ {#cordova-hooks-after-platform-add}
 
-O diretório after-platform_add contém a variável `copy_AMS_Conifg.js` arquivo. Este script copia um arquivo de configuração para suportar a coleção de análises do Adobe Mobile Services.
+O diretório after-platform_add contém o arquivo `copy_AMS_Conifg.js`. Este script copia um arquivo de configuração para suportar a coleção de análises do Adobe Mobile Services.
 
 #### .cordova/hooks/after-prepare/ {#cordova-hooks-after-prepare}
 
-O diretório após a preparação contém o `copy_resource_files.js` arquivo. Esse script copia vários ícones e imagens da tela de abertura em locais específicos da plataforma.
+O diretório após a preparação contém o arquivo `copy_resource_files.js`. Esse script copia vários ícones e imagens da tela de abertura em locais específicos da plataforma.
 
 #### .cordova/hooks/before_platform_add/ {#cordova-hooks-before-platform-add}
 
-O diretório before_platform_add contém o `install_plugins.js` arquivo. Esse script repete por meio de uma lista de identificadores de plug-in Cordova, instalando aqueles que ele detecta que ainda não estão disponíveis.
+O diretório before_platform_add contém o arquivo `install_plugins.js`. Esse script repete por meio de uma lista de identificadores de plug-in Cordova, instalando aqueles que ele detecta que ainda não estão disponíveis.
 
-Essa estratégia não requer que você empacote e instale os plug-ins no AEM sempre que o Maven `content-package:install` é executado. A estratégia alternativa de verificar os arquivos no sistema SCM requer o agrupamento repetitivo e a instalação de atividades.
+Essa estratégia não requer o agrupamento e a instalação dos plug-ins no AEM toda vez que o comando Maven `content-package:install` for executado. A estratégia alternativa de verificar os arquivos no sistema SCM requer o agrupamento repetitivo e a instalação de atividades.
 
 #### .cordova/ganchos/Outros ganchos {#cordova-hooks-other-hooks}
 
@@ -355,13 +355,13 @@ Inclua outros ganchos conforme necessário. Os seguintes ganchos estão disponí
 
 #### plataformas/ {#platforms}
 
-Esse diretório fica vazio até que você execute o `phonegap run <platform>` no projeto. Atualmente, `<platform>` pode ser `ios` ou `android`.
+Este diretório ficará vazio até que você execute o comando `phonegap run <platform>` no projeto. Atualmente, `<platform>` pode ser `ios` ou `android`.
 
 Depois de criar o aplicativo para uma plataforma específica, o diretório correspondente é criado e contém o código do aplicativo específico da plataforma.
 
 #### plugins/ {#plugins}
 
-O diretório de plug-ins é preenchido por cada plug-in listado no `.cordova/hooks/before_platform_add/install_plugins.js` após executar o `phonegap run <platform>` comando. O diretório está inicialmente vazio.
+O diretório de plug-ins é preenchido por cada plug-in listado no arquivo `.cordova/hooks/before_platform_add/install_plugins.js` depois que você executa o comando `phonegap run <platform>`. O diretório está inicialmente vazio.
 
 #### www/ {#www}
 
@@ -369,7 +369,7 @@ O diretório www contém todo o conteúdo da Web (arquivos HTML, JS e CSS) que i
 
 #### www/config.xml {#www-config-xml}
 
-A documentação do PhoneGap (`https://docs.phonegap.com`) refere-se a esse arquivo como um &quot;arquivo de configuração global&quot;. O config.xml contém muitas propriedades do aplicativo, como o nome do aplicativo, as &quot;preferências&quot; do aplicativo (por exemplo, se uma visualização da Web do iOS permite a rolagem excessiva) e as dependências de plug-in que são *somente* consumido pelo PhoneGap build.
+A documentação do PhoneGap (`https://docs.phonegap.com`) se refere a esse arquivo como um &#39;arquivo de configuração global&#39;. O config.xml contém muitas propriedades de aplicativo, como o nome do aplicativo, as &quot;preferências&quot; do aplicativo (por exemplo, se uma visualização da Web do iOS permite rolagem excessiva) e as dependências de plug-in que são *somente* consumidas pela build do PhoneGap.
 
 O arquivo config.xml é um arquivo estático no AEM e é exportado como está pela Sincronização de conteúdo.
 
@@ -377,17 +377,17 @@ O arquivo config.xml é um arquivo estático no AEM e é exportado como está pe
 
 O arquivo index.html redireciona para a página inicial do aplicativo.
 
-O arquivo config.xml contém o `content` elemento:
+O arquivo config.xml contém o elemento `content`:
 
 `<content src="content/phonegap/geometrixx/apps/ng-geometrixx-outdoors/en.html" />`
 
-Na documentação do PhoneGap (`https://docs.phonegap.com`), esse elemento é descrito como &quot;O &lt;content> O elemento define a página inicial do aplicativo no diretório de ativos da web de nível superior. O valor padrão é index.html, que normalmente aparece em um diretório www de nível superior do projeto.&quot;
+Na documentação do PhoneGap (`https://docs.phonegap.com`), esse elemento é descrito como &quot;O elemento opcional &lt;content> define a página inicial do aplicativo no diretório de ativos da Web de nível superior. O valor padrão é index.html, que normalmente aparece em um diretório www de nível superior do projeto.&quot;
 
 A build do PhoneGap falhará se um arquivo index.html não estiver presente. Portanto, esse arquivo está incluído.
 
 #### www/res {#www-res}
 
-O diretório res contém imagens e ícones da tela inicial. A variável `copy_resource_files.js` O script copia os arquivos para seus locais específicos da plataforma durante o `after_prepare` fase de criação.
+O diretório res contém imagens e ícones da tela inicial. O script `copy_resource_files.js` copia os arquivos para seus locais específicos de plataforma durante a fase de compilação `after_prepare`.
 
 #### www/etc {#www-etc}
 
@@ -403,18 +403,18 @@ O diretório de conteúdo contém o restante do conteúdo da Web do aplicativo. 
 
 * conteúdo da página HTML, que é criado diretamente no AEM
 * Ativos de imagem associados aos componentes do AEM
-* Conteúdo JavaScript gerado pelos scripts do lado do servidor
+* Conteúdo do JavaScript gerado por scripts do lado do servidor
 * Arquivos JSON que descrevem o conteúdo da página ou do componente
 
 #### www/package.json {#www-package-json}
 
-O arquivo package.json é um arquivo de manifesto que lista os arquivos que um **completo** O download da Sincronização de conteúdo inclui. Esse arquivo também contém o carimbo de data e hora em que a carga da sincronização de conteúdo foi gerada ( `lastModified`). Essa propriedade é usada ao solicitar atualizações parciais do aplicativo do AEM.
+O arquivo package.json é um arquivo de manifesto que lista os arquivos incluídos por um download da Sincronização de Conteúdo **completo**. Esse arquivo também contém o carimbo de data e hora em que a carga da sincronização de conteúdo foi gerada ( `lastModified`). Essa propriedade é usada ao solicitar atualizações parciais do aplicativo do AEM.
 
 #### www/package-update.json {#www-package-update-json}
 
-Se essa carga for um download do aplicativo inteiro, esse manifesto conterá a lista exata de arquivos como `package.json`.
+Se esta carga for um download do aplicativo inteiro, este manifesto conterá a listagem exata dos arquivos como `package.json`.
 
-No entanto, se essa carga for uma atualização parcial, `package-update.json` contém somente os arquivos incluídos nessa carga específica.
+No entanto, se essa carga for uma atualização parcial, `package-update.json` conterá apenas os arquivos incluídos nessa carga específica.
 
 ### Próximas etapas {#the-next-steps}
 

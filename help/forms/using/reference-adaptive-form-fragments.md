@@ -17,9 +17,9 @@ ht-degree: 1%
 
 # Referenciar fragmentos de formulário adaptáveis{#reference-adaptive-form-fragments}
 
-[Fragmento de formulário adaptável](../../forms/using/adaptive-form-fragments.md) é um grupo de campos ou um painel que contém um grupo de campos que você pode usar ao criar um formulário. Ele permite criar um formulário de maneira fácil e rápida. Você pode arrastar e soltar um fragmento de formulário adaptável em um formulário usando o navegador de ativos na barra lateral e editá-lo no editor de formulários.
+O [fragmento de formulário adaptável](../../forms/using/adaptive-form-fragments.md) é um grupo de campos ou um painel que contém um grupo de campos que você pode usar ao criar um formulário. Ele permite criar um formulário de maneira fácil e rápida. Você pode arrastar e soltar um fragmento de formulário adaptável em um formulário usando o navegador de ativos na barra lateral e editá-lo no editor de formulários.
 
-Para autores de formulários adaptáveis, os fragmentos de referência são fornecidos na [Pacote complementar do AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en). Inclui os seguintes fragmentos:
+Para autores de formulários adaptáveis, os fragmentos de referência são fornecidos no [pacote complementar do AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en). Inclui os seguintes fragmentos:
 
 * Endereço
 * Informações de contato
@@ -59,7 +59,7 @@ Inclui campos para capturar número de telefone e endereço de email.
 ## Informações de cartão de crédito {#credit-card-information}
 
 Inclui campos para registrar informações de cartão de crédito que podem ser usadas para processar pagamentos.
-[![Fragmento de informações do cartão de crédito](assets/cc-info.png)](assets/cc-info-1.png)
+[![Fragmento de Informações do Cartão de Crédito](assets/cc-info.png)](assets/cc-info-1.png)
 
 ## Emprego Atual {#current-employment}
 
@@ -85,7 +85,7 @@ Inclui campos para especificar informações sobre um ou mais dependentes, como 
 
 Inclui campos para capturar o histórico de emprego. Permite adicionar várias organizações.
 
-![Fragmento do Histórico de Emprego](assets/emp-history.png)
+![Fragmento do histórico de emprego](assets/emp-history.png)
 
 <!--[Click to enlarge
 
@@ -115,7 +115,7 @@ Inclui campos para especificar título, nome, nome do meio e sobrenome.
 
 Especifica os termos e condições que os usuários devem aceitar antes de enviar um formulário.
 
-![Fragmento dos Termos e condições](assets/tnc.png)
+![Fragmento dos Termos e Condições](assets/tnc.png)
 
 <!--[Click to enlarge
 

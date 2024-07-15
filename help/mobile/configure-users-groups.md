@@ -51,13 +51,13 @@ Os membros do grupo de autores do aplicativo são responsáveis pela criação d
 
    Adicionar autores do aplicativo ao grupo Autores
 
-1. Agora que você criou o Grupo de usuários de autores de aplicativos, é possível adicionar membros de equipe individuais a esse novo grupo por meio da [Admin Console do usuário](http://localhost:4502/libs/granite/security/content/useradmin.md).
+1. Agora que você criou o Grupo de usuários de autores de aplicativos, é possível adicionar membros de equipe individuais a este novo grupo por meio do [Admin Console de usuário](http://localhost:4502/libs/granite/security/content/useradmin.md).
 
    ![chlimage_1-19](assets/chlimage_1-19.png)
 
    Editar grupos de usuários
 
-1. Navegue até a [Console de permissões](http://localhost:4502/useradmin) e adicionar permissões para administrar o cloudservices
+1. Navegue até o [console Permissões](http://localhost:4502/useradmin) e adicione permissões para administrar o cloudservices
 
    * (Leitura) em /etc/cloudservices
 
@@ -67,7 +67,7 @@ Os membros do grupo de autores do aplicativo são responsáveis pela criação d
 
 ### Grupo de administradores de aplicativos AEM Mobile (grupo de administradores de aplicativos) {#aem-mobile-application-administrators-group-app-admins-group}
 
-Os membros do grupo de administradores de aplicativos podem criar conteúdo de aplicativos com as mesmas permissões incluídas nos autores de aplicativos **E** além disso, são também responsáveis por:
+Os membros do grupo de administradores de aplicativos podem criar conteúdo de aplicativos com as mesmas permissões incluídas com os autores de aplicativos **E**, além disso, também são responsáveis por:
 
 * Configuração dos serviços em nuvem do PhoneGap Build e do Adobe Mobile Services no AEM
 * Preparando, publicando e limpando atualizações de OTA da sincronização de conteúdo do aplicativo
@@ -88,7 +88,7 @@ Os membros do grupo de administradores de aplicativos podem criar conteúdo de a
 
    ![chlimage_1-20](assets/chlimage_1-20.png)
 
-1. Navegue até a [Console de permissões](http://localhost:4502/useradmin) e adicionar permissões para administrar o cloudservices
+1. Navegue até o [console Permissões](http://localhost:4502/useradmin) e adicione permissões para administrar o cloudservices
 
    * (Ler, modificar, criar, excluir, replicar) em /etc/cloudservices/mobileservices
    * (Ler, Modificar, Criar, Excluir, Replicar) em /etc/cloudservices/phonegap-build
@@ -114,14 +114,14 @@ Os membros do grupo de administradores de aplicativos podem criar conteúdo de a
 
 Os blocos de painéis podem expor ações diferentes com base nas permissões que o usuário tem. As informações a seguir descrevem quais ações estão disponíveis para cada bloco.
 
-Além dessas permissões, uma ação também pode ser exibida/ocultada com base em como o aplicativo atual é configurado. Por exemplo, não há razão para expor a ação &quot;Compilação remota&quot;, se uma configuração de nuvem do PhoneGap não tiver sido atribuída ao aplicativo. Eles estão listados abaixo em &#39;**Condição de configuração**&#39; seções.
+Além dessas permissões, uma ação também pode ser exibida/ocultada com base em como o aplicativo atual é configurado. Por exemplo, não há razão para expor a ação &quot;Compilação remota&quot;, se uma configuração de nuvem do PhoneGap não tiver sido atribuída ao aplicativo. Eles estão listados abaixo nas seções &#39;**Condição de Configuração**&#39;.
 
 ### Gerenciar mosaico do aplicativo {#manage-app-tile}
 
 No momento, o bloco não tem ações que exigem permissões. No entanto, a página de detalhes do aplicativo tem as seguintes ações:
 
-* *Editar* para autor e administrador de aplicativos (Acionador da interface do usuário - jcr:write - on /content/phonegap/{suffix})
-* *Baixar* para autor e administrador do aplicativo (Acionador da interface do usuário - ativado /content/phonegap/{suffix})
+* *Editar* para app-author e app-admin (Gatilho de Interface do Usuário - jcr:write - on /content/phonegap/{suffix})
+* *Baixar* para app-author e app-admin (Gatilho de Interface do Usuário - em /content/phonegap/{suffix})
 
 A imagem abaixo mostra as opções Baixar e Editar de um aplicativo:
 

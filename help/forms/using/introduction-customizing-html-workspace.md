@@ -37,7 +37,7 @@ O espaço de trabalho do AEM Forms oferece suporte a uma grande variedade de per
 
 É possível alterar a aparência, o layout e outras semânticas de apresentação do espaço de trabalho do AEM Forms. Altere o espaço de trabalho personalizando os arquivos CSS, modelos de HTML e JavaScript™. Todos os arquivos padrão são fornecidos na instalação padrão.
 
-As etapas mais comumente aplicáveis são abordadas em [Etapas genéricas para personalização do espaço de trabalho do AEM Forms](../../forms/using/generic-steps-html-workspace-customization.md). Para obter exemplos específicos dessas personalizações, incluindo as etapas detalhadas, consulte os artigos relacionados no final deste artigo.
+As etapas aplicáveis com mais frequência são abordadas em [Etapas genéricas para personalização do espaço de trabalho do AEM Forms](../../forms/using/generic-steps-html-workspace-customization.md). Para obter exemplos específicos dessas personalizações, incluindo as etapas detalhadas, consulte os artigos relacionados no final deste artigo.
 
 #### Como entender a folha de estilos {#understanding-the-style-sheet}
 
@@ -126,22 +126,22 @@ As etapas de nível superior para personalização de CSS são:
 
 * Crie um arquivo CSS.
 * Adicione itens de estilo a este CSS. Consulte Noções básicas sobre estilos CSS para obter mais informações.
-* Atualizar as referências no `html.jsp`.
+* Atualizar suas referências em `html.jsp`.
 
-Para obter as etapas exatas para fazer essas personalizações, consulte [Etapas genéricas para personalização do espaço de trabalho do AEM Forms](../../forms/using/generic-steps-html-workspace-customization.md). O arquivo CSS fornecido com o espaço de trabalho do AEM Forms está em /libs/ws/css/. Para personalizações relacionadas ao CSS, use o [Pacote de envio](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p). Para obter exemplos específicos de personalizações relacionadas a CSS, consulte os tópicos de Ajuda relacionados no final deste artigo.
+Para obter as etapas exatas para fazer essas personalizações, consulte [Etapas genéricas para personalização do espaço de trabalho do AEM Forms](../../forms/using/generic-steps-html-workspace-customization.md). O arquivo CSS fornecido com o espaço de trabalho do AEM Forms está em /libs/ws/css/. Para personalizações relacionadas a CSS, use o [Pacote de Remessa](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p). Para obter exemplos específicos de personalizações relacionadas a CSS, consulte os tópicos de Ajuda relacionados no final deste artigo.
 
 #### Imagem {#image}
 
-É possível personalizar o espaço de trabalho do AEM Forms para adicionar avatares de usuários ou adicionar o logotipo da organização. Para essas personalizações, use [Pacote de envio](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p).
+É possível personalizar o espaço de trabalho do AEM Forms para adicionar avatares de usuários ou adicionar o logotipo da organização. Para essas personalizações, use [Enviar Pacote](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p).
 
 As etapas de nível superior para personalizações das imagens são:
 
 * Instale e configure o WebDAV.
 * Adicione novas imagens.
 * Adicione novos estilos correspondentes às imagens adicionadas.
-* Link para o novo arquivo CSS no `html.jsp` arquivo.
+* Link para o novo arquivo CSS no arquivo `html.jsp`.
 
-Para começar a personalizar as imagens no espaço de trabalho do AEM Forms, siga o [Etapas genéricas para personalização do espaço de trabalho do AEM Forms](../../forms/using/generic-steps-html-workspace-customization.md). Para obter exemplos específicos de personalizações relacionadas a imagens, consulte os tópicos da Ajuda relacionados no final deste artigo.
+Para começar a personalizar as imagens no espaço de trabalho do AEM Forms, siga as [etapas genéricas para personalização do espaço de trabalho do AEM Forms](../../forms/using/generic-steps-html-workspace-customization.md). Para obter exemplos específicos de personalizações relacionadas a imagens, consulte os tópicos da Ajuda relacionados no final deste artigo.
 
 #### modelo HTML {#html-template}
 
@@ -153,7 +153,7 @@ As etapas de nível superior para personalizações no modelo de HTML são:
 * Adicionar novos modelos na pasta definida pelo usuário.
 * Faça atualizações relevantes nos arquivos copiados, como o caminho do novo modelo.
 
-Para obter exemplos específicos dessas personalizações, consulte os tópicos da Ajuda fornecidos no final deste artigo. Escolha entre as opções [Pacote de envio](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p) ou o [Pacote de Desenvolvimento](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p), dependendo do template a ser personalizado.
+Para obter exemplos específicos dessas personalizações, consulte os tópicos da Ajuda fornecidos no final deste artigo. Escolha entre o [Pacote de Remessa](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p) ou o [Pacote de Desenvolvimento](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p), dependendo do modelo a ser personalizado.
 
 ### Alterações semânticas {#semantic-changes}
 
@@ -163,26 +163,26 @@ As etapas de nível superior para fazer alterações semânticas para modificar 
 
 * Em uma pasta criada pelo usuário, faça cópias dos arquivos padrão apropriados.
 * Adicionar novos modelos e visualizações na pasta definida pelo usuário.
-* Faça atualizações relevantes, como a atualização de caminhos de modelos e exibições recém-adicionados nos arquivos JavaScript padrão.
+* Faça atualizações relevantes, como a atualização de caminhos de modelos e exibições recém-adicionados nos arquivos padrão do JavaScript.
 * Reduza o pacote para otimizar o desempenho.
 
-Para obter informações mais conceituais sobre os componentes que fazem parte do código-fonte, consulte [Descrição de componentes reutilizáveis](/help/forms/using/description-reusable-components.md). Para essas personalizações, use o Pacote de Desenvolvimento.
+Para obter mais informações conceituais sobre os componentes que fazem parte do código-fonte, consulte a [Descrição de componentes reutilizáveis](/help/forms/using/description-reusable-components.md). Para essas personalizações, use o Pacote de Desenvolvimento.
 
 ### Componentes reutilizáveis {#reusable-components}
 
 Como o AEM Forms Workspace é um software baseado em componentes, ele pode ser facilmente personalizado e reutilizado. É possível integrar facilmente os componentes do espaço de trabalho às suas aplicações Web.
 
-Para obter mais informações conceituais, consulte [Descrição de componentes reutilizáveis](/help/forms/using/description-reusable-components.md) e para obter instruções sobre como usar os componentes, consulte [Integração de componentes do espaço de trabalho do AEM Forms em aplicativos web](/help/forms/using/description-reusable-components.md).
+Para obter mais informações conceituais, consulte a [Descrição de componentes reutilizáveis](/help/forms/using/description-reusable-components.md) e para instruções sobre como usar os componentes, consulte [Integração de componentes do espaço de trabalho do AEM Forms em aplicativos Web](/help/forms/using/description-reusable-components.md).
 
 ## Criação do código do espaço de trabalho do AEM Forms {#building-html-workspace-code}
 
 ### Pacote do SDK {#sdk-package}
 
-O pacote contém o código-fonte do espaço de trabalho do AEM Forms. O pacote está disponível em `[LC root]\sdk\html-workspace\adobe-lc-workspace-src.zip`.
+O pacote contém o código-fonte do espaço de trabalho do AEM Forms. Pacote disponível em `[LC root]\sdk\html-workspace\adobe-lc-workspace-src.zip`.
 
 Destina-se principalmente a personalizações, pois fornece a capacidade de gerar:
 
-* Pacotes CRX para perfis de envio, depuração e desenvolvimento (mencionados abaixo em [Pacotes CRX](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p)).
+* Pacotes do CRX para perfis de Entrega, Depuração e Desenvolvimento (mencionados abaixo em [pacotes do CRX](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p)).
 * Versão minificada do código personalizado (para alterações semânticas).
 
 #### Conteúdo WS {#ws-content}
@@ -231,23 +231,23 @@ Destina-se principalmente a personalizações, pois fornece a capacidade de gera
       * html.jsp
       * GET.jsp
 
-### Pacote CRX {#crx-package}
+### Pacote do CRX {#crx-package}
 
-O pacote CRX pode ser implantado no repositório CRX™. Está disponível em `[LC root]\crx-repository\install\adobe-lc-workspace-pkg.zip`.
+O pacote do CRX pode ser implantado no repositório do CRX™. Está disponível em `[LC root]\crx-repository\install\adobe-lc-workspace-pkg.zip`.
 
 Esse pacote pode ser criado usando os três perfis descritos abaixo.
 
 | **Perfil** | **Descrição** | **Uso** |
 |---|---|---|
 | Perfil de remessa | Esse perfil cria um pacote CRX do menor tamanho possível usando minificação. Este pacote é o mais eficiente. Todos os arquivos JavaScript™ são combinados e minificados em um único arquivo JS. | Use este perfil quando nenhuma alteração semântica adicional for necessária nos arquivos JS. |
-| Depurar perfil | Este perfil cria um pacote CRX moderadamente eficiente. O tamanho do pacote é ligeiramente maior do que o pacote criado usando o Perfil de envio. Este pacote tem a maioria dos arquivos JavaScript combinados em um único arquivo JS. | Use esse perfil para depuração. |
+| Depurar perfil | Este perfil cria um pacote do CRX moderadamente eficiente. O tamanho do pacote é ligeiramente maior do que o pacote criado usando o Perfil de envio. Esse pacote tem a maioria dos arquivos JavaScript combinados em um único arquivo JS. | Use esse perfil para depuração. |
 | Perfil de desenvolvimento | Este perfil cria um pacote CRX do maior tamanho possível. Todos os arquivos JavaScript estão disponíveis separadamente, pois estão no pacote SDK. | Use este perfil ao incorporar alterações semânticas. |
 
 #### Perfil de envio {#ship-profile}
 
 #### Comando {#command}
 
-* mvn clean -P Entrega a instalação na pasta client-pkg do pacote de Origem entregue ao cliente.
+* mvn clean -P Entrega a instalação na pasta client-pkg do pacote do Source enviado ao cliente.
 * A execução do comando Ship profile funciona somente em uma JVM de 64 bits.
 
 #### Conteúdo WS {#ws-content-1}
@@ -355,7 +355,7 @@ mvn clean -P Dev install no client-pkg
       * rotas - Contém arquivos JavaScript e arquivos HTML que carregam o processo de início, tarefas, rastreamento e preferências no espaço de trabalho do AEM Forms.
       * serviços - Contém service.js usado no espaço de trabalho do AEM Forms.
       * modelos - contém todos os modelos, ou seja, arquivos HTML de todos os componentes no espaço de trabalho do AEM Forms.
-      * util - Contém todos os arquivos de utilitários (JavaScript) usados no espaço de trabalho do AEM Forms.
+      * util - Contém todos os arquivos de utilitário (JavaScript) usados no espaço de trabalho do AEM Forms.
       * exibições - Contém exibições de todos os componentes no espaço de trabalho do AEM Forms.
 
    * main.js

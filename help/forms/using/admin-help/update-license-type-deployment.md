@@ -39,11 +39,11 @@ A página Alterar licença exibe informações sobre sua licença:
 1. Leia o contrato de licença do usuário final dos formulários AEM, selecione Aceito se concordar com os termos do contrato e clique em Avançar.
 1. Na página Alterar licença, selecione um tipo de licença:
 
-   * **AVALIAÇÃO:** Licença de avaliação de 60 dias
-   * **DESENVOLVEDOR:** Licença de desenvolvimento permanente
-   * **NFR:** Licença de avaliação de 2 anos
-   * **IDEV:** Assinatura de um ano do Programa Adobe Developer
-   * **Produção:** Licença permanente
+   * **EVAL:** licença de avaliação de 60 dias
+   * **DEV:** licença de desenvolvimento permanente
+   * **NFR:** licença de avaliação de 2 anos
+   * **IDEV:** assinatura de 1 ano do Programa Adobe Developer
+   * **Produção:** licença perpétua
 
 1. Selecione Sim, a alteração de licença é válida para todos os módulos implantados.
 1. Clique em Confirmar alteração da licença. Será exibida uma mensagem informando que a licença foi atualizada com êxito.

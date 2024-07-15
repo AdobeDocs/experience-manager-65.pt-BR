@@ -26,13 +26,13 @@ Os seletores de produto e categoria são caixas de diálogo da interface modal q
 
 Esse seletor pode oferecer navegação pela estrutura do catálogo ou pesquisa de texto completo para encontrar o produto. Os produtos com variação oferecem um ícone de pasta na coluna &quot;Tipo&quot;. Clicar no ícone de pasta abre as variações do produto selecionado.
 
-![Seletor de produto](/help/commerce/cif/assets/authoring/product-picker.png)
+![Seletor de produtos](/help/commerce/cif/assets/authoring/product-picker.png)
 
 Clicar na categoria principal levará o autor de volta ao nível do produto.
 
-![Seletor de produto](/help/commerce/cif/assets/authoring/product-picker-variation.png)
+![Seletor de produtos](/help/commerce/cif/assets/authoring/product-picker-variation.png)
 
-**Exemplo de teaser do produto**
+**Exemplo de teaser de produto**
 
 ![Componente de teaser sem seleção](/help/commerce/cif/assets/authoring/teaser_component_without_selection.png)
 
@@ -44,11 +44,11 @@ A caixa de diálogo de configuração deste componente requer um produto. O CIF 
 
 Esse seletor pode oferecer navegação pela estrutura do catálogo para localizar a categoria.
 
-![Seletor de categoria](/help/commerce/cif/assets/authoring/category-picker.png)
+![Seletor de categorias](/help/commerce/cif/assets/authoring/category-picker.png)
 
 **Exemplo de carrossel de categorias**
 
-![Componente Carrossel sem seleção](/help/commerce/cif/assets/authoring/carousel_component_without_selection.png)
+![Componente do carrossel sem seleção](/help/commerce/cif/assets/authoring/carousel_component_without_selection.png)
 
 A caixa de diálogo de configuração deste componente requer categorias 1 : n. O CIF usa a UID/ID como o identificador da categoria. Os autores podem inserir o UID manualmente ou clicar no ícone de pasta para abrir o seletor de categorias. Depois de selecionar e fechar o seletor, a caixa de diálogo de componentes mostra o nome da categoria selecionada.
 
@@ -60,7 +60,7 @@ O Universal Editor é estendido com recursos para acessar os dados do produto em
 
 ### Acesso aos dados do produto {#access-product-data}
 
-A guia &quot;Ativos&quot; no painel lateral do editor oferece acesso aos dados do produto selecionando o tipo &quot;Produtos&quot;. Os dados são obtidos em tempo real do endpoint de comércio configurado. O filtro é uma pesquisa de texto completo no endpoint de comércio para encontrar produtos específicos.
+A guia &quot;Assets&quot; no painel lateral do editor oferece acesso aos dados do produto selecionando o tipo &quot;Produtos&quot;. Os dados são obtidos em tempo real do endpoint de comércio configurado. O filtro é uma pesquisa de texto completo no endpoint de comércio para encontrar produtos específicos.
 
 ![Painel lateral de dados do produto](/help/commerce/cif/assets/authoring/products-side-panel.png)
 
@@ -80,7 +80,7 @@ Isso cria um link de espaço reservado que é substituído por um link real quan
 
 ### Acesso ao conteúdo de produto associado {#associated-content}
 
-Se o Editor universal reconhecer produtos 1:n em uma página, o painel lateral mostrará automaticamente a guia &quot;Conteúdo do Commerce associado&quot;. Essa guia permite que os autores acessem rapidamente o conteúdo de AEM que foi marcado com o produto (Consulte [enriquecer os dados do produto com o conteúdo de AEM associado](./enrich-product-associated-content.md) para obter mais informações). Essa guia oferece menus suspensos para filtrar por tipo de conteúdo e produtos específicos se vários produtos estiverem na página. O uso do conteúdo funciona exatamente como o uso do conteúdo da guia &quot;Ativos&quot;.
+Se o Editor universal reconhecer produtos 1:n em uma página, o painel lateral mostrará automaticamente a guia &quot;Conteúdo do Commerce associado&quot;. Essa guia permite que os autores acessem rapidamente o conteúdo de AEM que foi marcado com o produto (Consulte [enriquecer dados do produto com conteúdo de AEM associado](./enrich-product-associated-content.md) para obter mais informações). Essa guia oferece menus suspensos para filtrar por tipo de conteúdo e produtos específicos se vários produtos estiverem na página. Usar o conteúdo funciona exatamente como usar o conteúdo da guia &quot;Assets&quot;.
 
 ![Painel lateral de dados do produto](/help/commerce/cif/assets/authoring/associated-commerce-content-tab.png)
 
@@ -104,4 +104,4 @@ O resultado é agrupado por tipo.
 
     >[!NOTE]
     >
-    >A pesquisa de texto completo no Omnisearch não é compatível com Fragmentos de conteúdo associados. Use SKU ou UID para localizar fragmentos de conteúdo associados.
+    >A pesquisa de texto completo no Omnisearch não oferece suporte aos Fragmentos de Conteúdo associados. Use SKU ou UID para localizar Fragmentos de Conteúdo associados.

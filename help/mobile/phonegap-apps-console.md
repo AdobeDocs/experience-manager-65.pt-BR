@@ -40,7 +40,7 @@ A AEM Mobile fornece o blueprint do aplicativo Phonegap para a criação de apli
 
 A página raiz dos aplicativos móveis criados no AEM é exibida no console Aplicativos.
 
-A página raiz é armazenada abaixo da propriedade Destination Path do aplicativo que foi especificado na criação do aplicativo (o caminho padrão é /content/phonegap/apps). O nome da página é a propriedade Name do aplicativo. Por exemplo, o URL padrão da página raiz do site chamado `myphonegapapp` é `http://localhost:4502/content/phonegap/apps/myphonegapapp.html`.
+A página raiz é armazenada abaixo da propriedade Destination Path do aplicativo que foi especificado na criação do aplicativo (o caminho padrão é /content/phonegap/apps). O nome da página é a propriedade Name do aplicativo. Por exemplo, a URL padrão da página raiz do site chamada `myphonegapapp` é `http://localhost:4502/content/phonegap/apps/myphonegapapp.html`.
 
 ![chlimage_1-146](assets/chlimage_1-146.png)
 
@@ -48,7 +48,7 @@ A página raiz é armazenada abaixo da propriedade Destination Path do aplicativ
 
 As primeiras páginas secundárias da página raiz são as variações de idioma do aplicativo. O nome de cada página é o idioma para o qual o aplicativo é criado. Por exemplo, inglês é o nome da variação em inglês do aplicativo.
 
-**Nota:** O blueprint padrão do PhoneGap cria apenas um aplicativo em inglês. Seu desenvolvedor pode modificar o blueprint para que ele possa criar mais variações de idioma.
+**Observação:** o blueprint padrão do PhoneGap cria apenas um aplicativo em inglês. Seu desenvolvedor pode modificar o blueprint para que ele possa criar mais variações de idioma.
 
 ![chlimage_1-147](assets/chlimage_1-147.png)
 
@@ -68,18 +68,18 @@ A página inicial ou index.html de uma variação de idioma de um aplicativo é 
 Os aplicativos móveis são baseados em um blueprint que define a estrutura e as propriedades da página. Você pode configurar as seguintes propriedades do aplicativo:
 
 * **Título:** O título do aplicativo.
-* **Caminho de destino:** O local no repositório onde o aplicativo está armazenado. Deixe o padrão para criar um caminho com base no nome do aplicativo.
+* **Caminho de Destino:** O local no repositório onde o aplicativo está armazenado. Deixe o padrão para criar um caminho com base no nome do aplicativo.
 
-* **Nome:** O valor padrão é o valor da propriedade Title com caracteres de espaço removidos. O nome é usado no CQ para fazer referência ao aplicativo, por exemplo, para o nó do repositório que representa o aplicativo.
+* **Nome:** o valor padrão é o valor da propriedade Title com caracteres de espaço removidos. O nome é usado no CQ para fazer referência ao aplicativo, por exemplo, para o nó do repositório que representa o aplicativo.
 * **Descrição:** Uma descrição do aplicativo.
-* **URL do servidor:** O URL que fornece atualizações de conteúdo OTA (Over-the-Air) para o aplicativo. O valor padrão é o URL do servidor de publicação da instância usada para criar um aplicativo (retirado do serviço do externalizador). Observe que essa deve ser uma instância do servidor de publicação, em vez de um autor, o que requer autenticação.
+* **URL do Servidor:** A URL que fornece atualizações de conteúdo OTA (Over-the-Air) para o aplicativo. O valor padrão é o URL do servidor de publicação da instância usada para criar um aplicativo (retirado do serviço do externalizador). Observe que essa deve ser uma instância do servidor de publicação, em vez de um autor, o que requer autenticação.
 
 Você também pode fornecer um arquivo de imagem para usar como miniatura do aplicativo, selecionar a configuração de PhoneGap Build a ser usada e selecionar a configuração de análise do aplicativo móvel a ser usada. Essa imagem só é usada como uma miniatura para representar seu aplicativo móvel no console de aplicativos móveis no Experience Manager.
 
 Existem guias adicionais (e opcionais) para o serviço de nuvem de build e para integrar o plug-in SDK do Adobe Mobile Services ao seu aplicativo.
 
 * Build: clique em gerenciar configurações e configure o serviço de build build.phonegap.com aqui. Em seguida, no menu suspenso, é possível selecionar o serviço de nuvem do PhoneGap Build recém-criado.
-* Analytics: clique em gerenciar configurações e configure seu [SDK do Adobe Mobile Services](https://experienceleague.adobe.com/docs/mobile-services/using/home.html) serviços na nuvem. Em seguida, no menu suspenso, é possível selecionar o Mobile Service recém-criado para integrar ao aplicativo móvel.
+* Analytics: clique em gerenciar configurações e configure o serviço de nuvem [SDK do Adobe Mobile Services](https://experienceleague.adobe.com/docs/mobile-services/using/home.html). Em seguida, no menu suspenso, é possível selecionar o Mobile Service recém-criado para integrar ao aplicativo móvel.
 
 >[!NOTE]
 >
@@ -113,11 +113,11 @@ Após criar um aplicativo para dispositivos móveis, você pode alterar as propr
 1. No painel, clique em Aplicativos.
 1. Selecione o aplicativo a ser configurado e clique no ícone Propriedades da página de exibição.
 
-   ![O ícone Exibir propriedades da página indicado pela letra I dentro de um círculo.](do-not-localize/chlimage_1-8.png)
+   ![O ícone Exibir Propriedades da Página indicado pela letra I dentro de um círculo.](do-not-localize/chlimage_1-8.png)
 
 1. Para alterar os valores de propriedade, clique no ícone Editar.
 
-   ![O ícone Edit indicado por um lápis.](do-not-localize/chlimage_1-9.png)
+   ![O ícone Editar indicado por um lápis.](do-not-localize/chlimage_1-9.png)
 
 1. Configure as propriedades Básicas e Avançadas e clique no ícone Concluído.
 
@@ -132,7 +132,7 @@ Após criar um aplicativo para dispositivos móveis, você pode alterar as propr
 
 1. Para alterar os valores de propriedade, clique no ícone Editar.
 
-   ![O ícone Edit indicado por um lápis.](do-not-localize/chlimage_1-12.png)
+   ![O ícone Editar indicado por um lápis.](do-not-localize/chlimage_1-12.png)
 
 1. Configure as propriedades nas guias Básico, Avançado, Criar e Analytics e clique no ícone Concluído.
 
@@ -166,7 +166,7 @@ Execute o procedimento a seguir na instância em que deseja atualizar o cache. P
 1. No painel, clique em Aplicativos e, em seguida, clique em seu aplicativo.
 1. Selecione a página inicial e, em seguida, clique no ícone Atualizar cache.
 
-   ![O ícone Atualizar cache indicado por um barrell listrado com um símbolo de reciclagem sobre ele.](do-not-localize/chlimage_1-14.png)
+   ![O ícone Atualizar Cache indicado por um barrell listrado com um símbolo de reciclagem sobre ele.](do-not-localize/chlimage_1-14.png)
 
 ### Utilização de modelos de aplicativo {#using-app-templates}
 
@@ -290,7 +290,7 @@ Observe que as imagens são exibidas no carrossel para páginas associadas a uma
 
 ![chlimage_1-151](assets/chlimage_1-151.png)
 
-**Guia Propriedades do carrossel**
+**Guia de propriedades do carrossel**
 
 Configure o comportamento do carrossel:
 
@@ -298,7 +298,7 @@ Configure o comportamento do carrossel:
 * Tempo de transição: a duração da animação, em milissegundos, das transições de imagem.
 * Estilo de controles: o tipo de controles que são fornecidos para a movimentação entre imagens.
 
-**Guia Propriedades da lista**
+**Guia de propriedades da lista**
 
 Especifique como a lista de páginas é gerada:
 
@@ -310,7 +310,7 @@ Especifique como a lista de páginas é gerada:
 
 O componente Carrossel de deslizamento fornece os seguintes valores para a propriedade Uso da lista de construção. A caixa de diálogo de edição é alterada de acordo com o valor selecionado:
 
-**Páginas filhas**
+**Páginas Secundárias**
 
 O componente lista todas as páginas secundárias de uma página específica. Após selecionar esse valor, selecione a página na guia Páginas secundárias ou não especifique nenhum valor para listar as secundárias da página atual.
 
@@ -333,7 +333,7 @@ Preencha a lista usando os resultados de uma pesquisa por palavra-chave. A pesqu
 
 **Pesquisa avançada**
 
-Preencha a lista usando um [Querybuilder](/help/sites-developing/querybuilder-api.md) consulta.
+Preencha a lista usando uma consulta [Querybuilder](/help/sites-developing/querybuilder-api.md).
 
 ### Imagem {#image}
 

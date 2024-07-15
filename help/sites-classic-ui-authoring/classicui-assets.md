@@ -18,7 +18,7 @@ ht-degree: 7%
 
 # Trabalhar com ativos{#working-with-assets}
 
-A variável [Ambiente e ferramentas do autor](/help/sites-authoring/author-environment-tools.md) fornece informações sobre o uso de [!UICONTROL Localizador de conteúdo] para localizar e usar ativos ao editar páginas. O AEM Assets fornece outros métodos para trabalhar com ativos:
+A seção [Ferramentas e Ambiente do Autor](/help/sites-authoring/author-environment-tools.md) fornece informações sobre como usar o [!UICONTROL Localizador de Conteúdo] para localizar e usar ativos ao editar páginas. O AEM Assets fornece outros métodos para trabalhar com ativos:
 
 * [Adicionar recursos do Dynamic Media Classic à sua página](/help/sites-classic-ui-authoring/manage-assets-classic-s7.md)
 * [Trabalhar com o Dynamic Media](/help/sites-classic-ui-authoring/dynamic-media-assets.md)

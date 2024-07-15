@@ -20,22 +20,22 @@ ht-degree: 0%
 
 Por padrão, a lista de tarefas pendentes do espaço de trabalho do AEM Forms exibe o nome de exibição e a descrição da tarefa. No entanto, é possível adicionar outras informações, como data de criação e data do prazo final. Você também pode adicionar ícones e alterar o estilo da exibição.
 
-![Uma olhada na guia Tarefas pendentes do HTML Workspace mostrando a configuração padrão](assets/html-todo-list.png)
+![Uma olhada na guia HTML Workspace To-do mostrando a configuração padrão](assets/html-todo-list.png)
 
 Este artigo detalha as etapas para adicionar informações para exibir para cada tarefa na Lista de tarefas pendentes.
 
 ## O que pode ser adicionado {#what-can-be-added}
 
-É possível adicionar as informações disponíveis em `task.json` enviado pelo servidor. As informações podem ser adicionadas como texto simples ou você pode usar estilos para formatar as informações.
+Você pode adicionar as informações disponíveis em `task.json` enviadas pelo servidor. As informações podem ser adicionadas como texto simples ou você pode usar estilos para formatar as informações.
 
-Para obter mais informações sobre a descrição do Objeto JSON, consulte [este](/help/forms/using/html-workspace-json-object-description.md) artigo.
+Para obter mais informações sobre a descrição do Objeto JSON, consulte o artigo [this](/help/forms/using/html-workspace-json-object-description.md).
 
 ## Exibição de informações em uma tarefa {#displaying-information-on-a-task}
 
-1. Siga as [Etapas genéricas para personalização do espaço de trabalho do AEM Forms](../../forms/using/generic-steps-html-workspace-customization.md).
-1. Para exibir informações adicionais de uma tarefa, os pares de valor-chave correspondentes devem ser adicionados dentro do bloco de tarefas de `translation.json`.
+1. Siga as [etapas genéricas para personalização do espaço de trabalho do AEM Forms](../../forms/using/generic-steps-html-workspace-customization.md).
+1. Para exibir informações adicionais para uma tarefa, os pares de valor chave correspondentes devem ser adicionados dentro do bloco de tarefas de `translation.json`.
 
-   Por exemplo, alterar `/apps/ws/locales/en-US/translation.json` Inglês:
+   Por exemplo, altere `/apps/ws/locales/en-US/translation.json` para inglês:
 
    ```json
    "task" : {

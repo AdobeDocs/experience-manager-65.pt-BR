@@ -38,11 +38,11 @@ Os recursos do AEM Communities que podem ser configurados para permitir a marca�
 
 ## Administração de tags {#administering-tags}
 
-Consulte [Administração de tags](../../help/sites-administering/tags.md#tagging-console) para criar e gerenciar namespaces de tags e taxonomias.
+Consulte [Administrando tags](../../help/sites-administering/tags.md#tagging-console) para criar e gerenciar namespaces de tags e taxonomias.
 
-Consulte [Fundamentos de tags](tag.md) para obter informações do desenvolvedor.
+Consulte o [Tag Essentials](tag.md) para obter informações sobre desenvolvedores.
 
-Consulte [Uso da Social Tag Cloud](tagcloud.md) para adicionar um componente do Social Tag Cloud a uma página e facilitar a pesquisa de UGC publicado usando as tags aplicadas.
+Consulte [Usando a Nuvem de Tags Sociais](tagcloud.md) para adicionar um componente da Nuvem de Tags Sociais a uma página para facilitar a pesquisa de UGC publicado usando as tags aplicadas.
 
 ### Permissões de tag {#tag-permissions}
 
@@ -50,7 +50,7 @@ As permissões padrão são definidas para não permitir que os namespaces de ta
 
 Como as tags são aplicadas a UGC no ambiente de publicação, a permissão de leitura precisa ser ativada para os membros da comunidade para que eles possam selecionar as tags a serem aplicadas.
 
-Consulte [Definição de permissões de tag](../../help/sites-administering/tags.md#setting-tag-permissions).
+Consulte [Definindo Permissões de Marca](../../help/sites-administering/tags.md#setting-tag-permissions).
 
 Veja a seguir como ele aparece no CRXDE quando um administrador aplica permissões de leitura a `/etc/tag/discussions` para o grupo `Community Engage Members`.
 

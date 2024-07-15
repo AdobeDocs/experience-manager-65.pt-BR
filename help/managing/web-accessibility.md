@@ -26,7 +26,7 @@ Criar sites e conteúdo acessíveis com impactos do AEM:
 
 * Os desenvolvedores de modelos também devem estar cientes desses problemas ao implementar o design do site.
 
-O Adobe Experience Manager funciona com o [diretrizes](#wcag-accessibility-guidelines) fornecido pelo [World Wide Web Consortium](#world-wide-web-consortium).
+O Adobe Experience Manager funciona com as [diretrizes](#wcag-accessibility-guidelines) fornecidas pelo [World Wide Web Consortium](#world-wide-web-consortium).
 
 >[!NOTE]
 >
@@ -50,10 +50,10 @@ Usando o Adobe Experience Manager, os criadores de conteúdo e/ou proprietários
 
 * A [criação de conteúdo acessível](/help/sites-authoring/creating-accessible-content.md) detalha como está relacionado ao AEM.
 
-* [Configuração do Editor de Rich Text para a Produção de Sites Acessíveis](/help/sites-administering/rte-accessible-content.md)
+* [Configurando o Editor de Rich Text para Produzir Sites Acessíveis](/help/sites-administering/rte-accessible-content.md)
 Diretrizes sobre como os administradores podem configurar o AEM para produzir conteúdo acessível.
 
-* [Criação de Forms adaptável acessível](/help/forms/using/creating-accessible-adaptive-forms.md)
+* [Criando Forms Adaptável Acessível](/help/forms/using/creating-accessible-adaptive-forms.md)
 O Adobe Experience Manager (AEM) inclui vários recursos e funcionalidades que melhoram a usabilidade de formulários adaptáveis para usuários com diferentes habilidades. A solução também auxilia os autores de formulários na criação de formulários adaptáveis acessíveis.
 
 >[!NOTE]
@@ -62,4 +62,4 @@ O Adobe Experience Manager (AEM) inclui vários recursos e funcionalidades que m
 
 ## Acessibilidade na Adobe {#accessibility-at-adobe}
 
-Para obter mais informações, visite o [Centro de recursos de acessibilidade do Adobe](https://www.adobe.com/accessibility/).
+Para obter informações adicionais, visite o [Centro de Recursos de Acessibilidade do Adobe](https://www.adobe.com/accessibility/).

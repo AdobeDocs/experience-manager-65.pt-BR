@@ -22,7 +22,7 @@ ht-degree: 1%
 >
 >A Adobe recomenda o uso do Editor SPA para projetos que exigem renderização no lado do cliente baseada em estrutura de aplicativo de página única (por exemplo, React). [Saiba mais](/help/sites-developing/spa-overview.md).
 
-A variável **Gerenciar aplicativo** O bloco e a página &quot;Gerenciar aplicativo&quot; fornecem um meio de exibir e editar metadados do aplicativo. Os metadados do aplicativo são detalhes necessários para lançar um aplicativo na loja de um fornecedor. Isso pode incluir metadados comuns, metadados do iOS e capturas de tela. Consulte a [Gerenciar mosaico do aplicativo](/help/mobile/phonegap-app-details-tile.md) para obter mais detalhes sobre metadados comuns e iOS.
+O bloco **Gerenciar Aplicativo** e a página &quot;Gerenciar Aplicativo&quot; fornecem um meio de exibir e editar metadados do aplicativo. Os metadados do aplicativo são detalhes necessários para lançar um aplicativo na loja de um fornecedor. Isso pode incluir metadados comuns, metadados do iOS e capturas de tela. Consulte o [Gerenciar bloco do aplicativo](/help/mobile/phonegap-app-details-tile.md) para obter mais detalhes sobre metadados comuns e do iOS.
 
 ## Editar os dados do aplicativo {#editing-the-app-data}
 
@@ -32,7 +32,7 @@ Para editar os metadados do aplicativo:
 
    ![chlimage_1-29](assets/chlimage_1-29.png)
 
-1. Para exibir ou editar detalhes clicando em &quot;...&quot; no canto inferior direito do **Gerenciar aplicativo** bloco.
+1. Para exibir ou editar detalhes, clique em &#39;...&#39; no canto inferior direito do bloco **Gerenciar aplicativo**.
 
 1. Insira ou exiba os detalhes em qualquer uma das cinco guias disponíveis, conforme mostrado na figura abaixo.
 
@@ -42,7 +42,7 @@ Para editar os metadados do aplicativo:
 
 É possível editar os metadados comuns e IOS:
 
-* Selecione o **Avançado** da página de descrição do aplicativo.
+* Selecione a guia **Avançado** na página de descrição do aplicativo.
 * Editar ou exibir os metadados comuns e do IOS. Consulte as figuras abaixo para obter mais detalhes.
 
 ![chlimage_1-31](assets/chlimage_1-31.png) ![chlimage_1-32](assets/chlimage_1-32.png)
@@ -57,7 +57,7 @@ Para editar os metadados do aplicativo:
 
 Para adicionar um ativo como uma captura de tela:
 
-1. Durante o modo de edição do **Gerenciar aplicativo** clique em adicionar (ícone de adição).
+1. No modo de edição da página **Gerenciar aplicativo**, clique em adicionar (ícone de adição).
 1. Selecione o ativo e clique em **Selecionar** para adicionar o ativo.
 
    ![chlimage_1-34](assets/chlimage_1-34.png)

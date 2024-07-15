@@ -31,14 +31,14 @@ Normalmente, os usuários empresariais não exigem conhecimento de representaç�
 
 ### Fluxo de trabalho do Dicionário de dados {#data-dictionary-workflow}
 
-1. Um autor [cria o dicionário de dados](#createdatadictionary) fazendo upload de um esquema ou do zero.
+1. Um Autor [cria o Dicionário de Dados](#createdatadictionary) carregando um esquema ou do zero.
 1. O Autor cria cartas e Comunicações interativas com base no dicionário de dados e associa os elementos do dicionário de dados em cartas e Comunicações interativas sempre que necessário.
 1. Um autor pode baixar um arquivo XML de dados de amostra, que se baseia no esquema de um dicionário de dados. O autor pode modificar o arquivo XML de dados de amostra, que pode ser associado como dados de teste ao dicionário de dados. O mesmo é usado durante a pré-visualização de cartas.
-1. Enquanto [pré-visualização de uma carta](../../forms/using/create-letter.md#p-types-of-linkage-available-for-each-of-the-fields-p), um Autor escolhe visualizar a carta com dados (Visualização personalizada). A carta é aberta pré-preenchida com os dados fornecidos pelo Autor. Isso é aberto na interface criar correspondência. O agente que está visualizando esta carta pode modificar o conteúdo, os dados e os anexos nesta carta e pode enviar a carta final. Para obter mais informações sobre a criação de cartas, consulte [Criar correspondência](../../forms/using/create-letter.md).
+1. Ao [visualizar uma correspondência](../../forms/using/create-letter.md#p-types-of-linkage-available-for-each-of-the-fields-p), um Autor opta por visualizar a correspondência com dados (Visualização personalizada). A carta é aberta pré-preenchida com os dados fornecidos pelo Autor. Isso é aberto na interface criar correspondência. O agente que está visualizando esta carta pode modificar o conteúdo, os dados e os anexos nesta carta e pode enviar a carta final. Para obter mais informações sobre como criar cartas, consulte [Criar correspondência](../../forms/using/create-letter.md).
 
 ## Pré-requisitos {#prerequisite}
 
-Instale o [Pacote de compatibilidade](compatibility-package.md) para exibir o **Dicionários de dados** opção no **Forms** página.
+Instale o [Pacote de Compatibilidade](compatibility-package.md) para exibir a opção **Dicionários de Dados** na página **Forms**.
 
 ## Criar um dicionário de dados {#createdatadictionary}
 
@@ -48,22 +48,22 @@ Você usa o Editor de dicionário de dados para criar um dicionário de dados ou
 >
 >Para várias correspondências que exigem elementos semelhantes, é possível criar um dicionário de dados comum. No entanto, um grande dicionário de dados com um grande número de elementos pode causar problemas de desempenho ao usar o dicionário de dados e carregar os elementos, como em cartas e fragmentos de documentos. Se você tiver problemas de desempenho, tente criar dicionários de dados separados para cartas diferentes.
 
-1. Selecionar **Forms** > **Dicionários de dados**.
-1. Selecionar **Criar dicionário de dados**.
+1. Selecione **Forms** > **Dicionários de Dados**.
+1. Selecione **Criar Dicionário De Dados**.
 1. Na tela Propriedades, adicione o seguinte:
 
-   * **Título:** (Opcional) Insira o título do dicionário de dados. O título não precisa ser exclusivo e pode ter caracteres especiais e caracteres que não estejam em inglês. Cartas e outros fragmentos de documentos são referenciados com seu título (quando disponível), como em miniaturas e propriedades de ativos. Os dicionários de dados são referenciados com seus nomes e não títulos.
+   * **Título:** (opcional) insira o título do dicionário de dados. O título não precisa ser exclusivo e pode ter caracteres especiais e caracteres que não estejam em inglês. Cartas e outros fragmentos de documentos são referenciados com seu título (quando disponível), como em miniaturas e propriedades de ativos. Os dicionários de dados são referenciados com seus nomes e não títulos.
    * **Nome:** O nome exclusivo do dicionário de dados. No campo Nome, você pode inserir apenas caracteres, números e hifens do idioma inglês. O campo Nome é preenchido automaticamente com base no campo Título e os caracteres especiais, espaços, números e caracteres que não estão em inglês inseridos no campo Título são substituídos por hifens. Embora o valor no campo Título seja copiado automaticamente para o Nome, você pode editar o valor.
 
    * **Descrição**: (Opcional) Descrição do dicionário de dados.
-   * **Tags:** (Opcional) Para criar uma tag personalizada, insira o valor no campo de texto e pressione Enter. Você pode ver sua tag abaixo do campo de texto das tags. Quando você salva esse texto, as tags recém-adicionadas também são criadas.
-   * **Propriedades estendidas**: (Opcional) Selecione **Adicionar campo** para especificar atributos de metadados para o seu dicionário de dados. Na coluna Nome da propriedade, digite um nome de propriedade exclusivo. Na coluna Valor, insira um valor para associar à propriedade.
+   * **Marcas:** (opcional) Para criar uma marca personalizada, insira o valor no campo de texto e pressione Enter. Você pode ver sua tag abaixo do campo de texto das tags. Quando você salva esse texto, as tags recém-adicionadas também são criadas.
+   * **Propriedades Estendidas**: (Opcional) Selecione **Adicionar Campo** para especificar atributos de metadados para seu dicionário de dados. Na coluna Nome da propriedade, digite um nome de propriedade exclusivo. Na coluna Valor, insira um valor para associar à propriedade.
 
    ![Propriedades do dicionário de dados especificadas em alemão](do-not-localize/1_ddproperties.png)
 
-1. (Opcional) Para fazer upload de uma definição de esquema XSD para o seu dicionário de dados, no painel Estrutura do dicionário de dados, selecione **Fazer upload do esquema XML**. Navegue até o arquivo XSD, selecione-o e **Abertura**. Um dicionário de dados é criado com base no esquema XML carregado. Você precisa ajustar os nomes de exibição e as descrições dos elementos no dicionário de dados. Para fazer isso, selecione os nomes dos elementos tocando neles e edite suas descrições, nomes de exibição e outros detalhes nos campos no painel direito.
+1. (Opcional) Para carregar uma definição de esquema XSD para o seu dicionário de dados, no painel Estrutura do Dicionário de Dados, selecione **Carregar Esquema XML**. Navegue até o arquivo XSD, selecione-o e selecione **Abrir**. Um dicionário de dados é criado com base no esquema XML carregado. Você precisa ajustar os nomes de exibição e as descrições dos elementos no dicionário de dados. Para fazer isso, selecione os nomes dos elementos tocando neles e edite suas descrições, nomes de exibição e outros detalhes nos campos no painel direito.
 
-   Para obter mais informações sobre Elementos de DD Calculados, consulte [Elementos do dicionário de dados computados](#computedddelements).
+   Para obter mais informações sobre Elementos de DD Computados, consulte [Elementos do Dicionário de Dados Computados](#computedddelements).
 
    >[!NOTE]
    >
@@ -90,17 +90,17 @@ Você usa o Editor de dicionário de dados para criar um dicionário de dados ou
    * Um DDE pai (composto) não pode ter dois filhos com o mesmo nome.
    * Enumerações contêm apenas tipos de String primitivos.
 
-   Para obter mais informações sobre os elementos Composto, Coleção e Primitivo e trabalhar com elementos do dicionário de dados, consulte [Mapeando elementos do dicionário de dados para o esquema XML](#mappingddetoschema).
+   Para obter mais informações sobre elementos Compostos, Coleção e Primitivos e trabalhar com elementos do dicionário de dados, consulte [Mapeamento de Elementos do Dicionário de Dados para o Esquema XML](#mappingddetoschema).
 
-   Para obter informações sobre validações no Dicionário de dados, consulte [Validações do Editor do dicionário de dados](#ddvalidations).
+   Para obter informações sobre validações no Dicionário de Dados, consulte [validações do Editor do Dicionário de Dados](#ddvalidations).
 
    ![2_addddpropertiesbasic](assets/2_addddpropertiesbasic.png)
 
-1. (Opcional) Depois de selecionar um elemento, na guia Avançado você pode adicionar propriedades (atributos). Também é possível selecionar **Adicionar campo** e estenda as propriedades de um elemento DD.
+1. (Opcional) Depois de selecionar um elemento, na guia Avançado você pode adicionar propriedades (atributos). Você também pode selecionar **Adicionar campo** e estender as propriedades de um elemento DD.
 
    ![3_addddpropertiesadvanced](assets/3_addddpropertiesadvanced.png)
 
-1. (Opcional) Você pode remover qualquer elemento tocando nos três pontos no lado direito de um elemento e selecionando **Excluir**.
+1. (Opcional) Para remover qualquer elemento, toque nos três pontos no lado direito de um elemento e selecione **Excluir**.
 
    ![4_deleteelement](assets/4_deleteelement.png)
 
@@ -151,8 +151,8 @@ Ao editar ou exibir um dicionário de dados, você pode ver quais elementos do d
 ## Trabalho com dados de teste {#working-with-test-data}
 
 1. Na página Dicionários de dados, selecione **Selecionar**.
-1. Selecione um dicionário de dados para o qual deseja baixar dados de teste e selecione **Baixar dados de amostra XML**.
-1. Selecionar **OK** na mensagem de alerta. Um arquivo XML é baixado.
+1. Selecione um dicionário de dados para o qual você deseja baixar dados de teste e selecione **Baixar dados de amostra XML**.
+1. Selecione **OK** na mensagem de alerta. Um arquivo XML é baixado.
 1. Abra o arquivo XML com o Bloco de notas ou outro editor XML. O arquivo XML tem a mesma estrutura que o dicionário de dados e as strings de espaço reservado nos elementos. Substitua as cadeias de caracteres de espaço reservado pelos dados com os quais deseja testar uma letra.
 
    ```xml
@@ -198,7 +198,8 @@ Ao editar ou exibir um dicionário de dados, você pode ver quais elementos do d
 
 1. Depois de fazer as entradas de dados, você pode usar esse arquivo XML ao visualizar uma correspondência com dados de teste.
 
-   Você pode adicionar esses dados de teste com DD (selecione DD e selecione Fazer upload de dados de teste e fazer upload deste arquivo xml). Assim, depois disso, quando você visualiza a correspondência normalmente (não personalizada), esses dados XML são usados na correspondência. Você também pode selecionar Personalizado e fazer upload desse XML.
+   Você pode adicionar esses dados de teste com DD (selecione DD e selecione Fazer upload dos dados de teste e fazer upload deste arquivo xml)
+Assim, depois disso, quando você visualiza a carta normalmente (não personalizada), esses dados XML são usados na carta. Você também pode selecionar Personalizado e fazer upload desse XML.
 
 ## Amostras {#samples}
 
@@ -275,7 +276,7 @@ A tabela a seguir detalha os atributos comuns associados a um DDE:
    <td>Obrigatório.<br /> Nome do DDE. Ele deve ser exclusivo.</td>
   </tr>
   <tr>
-   <td>Referência<br /> Nome</td>
+   <td>Nome da Referência<br /></td>
    <td>String</td>
    <td>Obrigatório. Nome de referência exclusivo para o DDE, permitindo referências ao DDE que são independentes de alterações na hierarquia ou na estrutura do dicionário de dados. Os módulos de texto são mapeados usando este nome</td>
   </tr>
@@ -341,7 +342,7 @@ A tabela a seguir detalha os atributos comuns associados a um DDE:
 
 Um dicionário de dados também pode incluir elementos calculados. Um elemento do dicionário de dados calculado é sempre associado a uma expressão. Essa expressão é avaliada para obter o valor de um elemento do dicionário de dados no tempo de execução. Um valor DDE calculado é uma função de outros valores ou literais DDE. Por padrão, as expressões JSP Expression Language (EL) são suportadas. As expressões EL usam os caracteres ${ } e as expressões válidas podem incluir literais, operadores, variáveis (referências a elementos do dicionário de dados) e chamadas de função. Ao fazer referência a um elemento do dicionário de dados na expressão, o nome de referência do DDE é usado. O nome de referência é exclusivo para cada elemento do dicionário de dados em um dicionário de dados.
 
-Um PersonFullName DDE calculado pode ser associado a uma expressão de concatenação EL, como ${PersonFirstName} ${PersonLastName}.
+Um DDE PersonFullName computado pode ser associado a uma expressão de concatenação EL como ${PersonFirstName} ${PersonLastName}.
 
 ## Mapeamento de tipo de dados entre XSD e dicionário de dados {#data-type-mapping-between-xsd-and-data-dictionary-br}
 
@@ -351,17 +352,17 @@ A exportação de um XSD requer um mapeamento de dados específico, que é detal
  <tbody>
   <tr>
    <td>XSD <br /> </td>
-   <td><p>Dicionário de dados <br /> </p> </td>
-   <td>DDI (Tipo de Dados de Valor da Instância)<br /> </p> </td>
+   <td><p>Dicionário de Dados <br /> </p> </td>
+   <td>DDI (Tipo de Dados de Valor de Instância)<br /> </p> </td>
   </tr>
   <tr>
-   <td><p>xs:elemento do tipo - Tipo composto<br /> </p> </td>
-   <td>DDE de tipo - COMPOSITE<br /> </p> </td>
+   <td><p>xs:element do tipo - Tipo Composto<br /> </p> </td>
+   <td>DDE do tipo - COMPOSTO<br /> </p> </td>
    <td>java.util.Map<br /> </td>
   </tr>
   <tr>
    <td><p>xs:element onde maxOccurs &gt; 1<br /> </p> </td>
-   <td>DDE de tipo - COLEÇÃO-<br /> Um nó DDE é criado ao lado do DDE COLEÇÃO que captura informações do nó COLEÇÃO pai. O mesmo é criado para ambas as coleções de tipos de dados simples/composto. Sempre que você tem uma COLEÇÃO do tipo composto, a árvore do Dicionário de dados captura os campos constituintes nos filhos do DDE criado para capturar informações do tipo.<br /> - DDE (COLEÇÃO)<br /> - DDE(COMPOSITE para informações de tipo)<br /> - Campo DDE(STRING)1<br /> - Campo DDE(STRING) 2<br /> <br /> </p> </td>
+   <td>DDE do tipo - COLLECTION-<br /> Um nó DDE é criado ao lado do DDE COLLECTION que captura informações do nó COLLECTION pai. O mesmo é criado para ambas as coleções de tipos de dados simples/composto. Sempre que você tem uma COLEÇÃO do tipo composto, a árvore do Dicionário de dados captura os campos constituintes nos filhos do DDE criado para capturar informações do tipo.<br /> - DDE (COLEÇÃO)<br /> - DDE(COMPOSITE para informações do tipo)<br /> - campo DDE(STRING)1<br /> - campo DDE(STRING)2<br /> <br /> </p> </td>
    <td>java.util.List<br /> </td>
   </tr>
   <tr>
@@ -371,12 +372,12 @@ A exportação de um XSD requer um mapeamento de dados específico, que é detal
   </tr>
   <tr>
    <td>xs:attribute /xs:element of type - xs:string</p> </td>
-   <td>DDE de tipo - STRING<br /> </td>
+   <td>DDE do tipo - CADEIA DE CARACTERES<br /> </td>
    <td>java.lang.String<br /> </td>
   </tr>
   <tr>
-   <td>xs:attribute /xs:element of type - xs: boolean <br /> </td>
-   <td>DDE de tipo - Booleano <br /> </td>
+   <td>xs:attribute /xs:element do tipo - xs: booleano <br /> </td>
+   <td>DDE do tipo - Booleano <br /> </td>
    <td>java.lang.Boolean<br /> </td>
   </tr>
   <tr>
@@ -401,7 +402,7 @@ A exportação de um XSD requer um mapeamento de dados específico, que é detal
   </tr>
   <tr>
    <td>Elemento do tipo enum e baseType - xs:string</td>
-   <td>DDE de<br /> type - STRING<br /> subtipo - ENUM<br /> valueSet - os valores permitidos para ENUM<br /> </td>
+   <td>DDE do tipo <br /> - subtipo STRING<br /> - ENUM<br /> valueSet - os valores permitidos para ENUM<br /> </td>
    <td>java.lang.String</td>
   </tr>
  </tbody>
@@ -412,10 +413,10 @@ A exportação de um XSD requer um mapeamento de dados específico, que é detal
 Depois de criar um dicionário de dados, você pode baixá-lo como um arquivo de dados de amostra XML para fazer entradas de texto nele.
 
 1. Na página Dicionários de dados, selecione **Selecionar** e, em seguida, selecione um dicionário de dados para selecioná-lo.
-1. Selecionar **Baixar dados de amostra XML**.
-1. Selecionar **OK** na mensagem de alerta.
+1. Selecione **Baixar Dados XML de Exemplo**.
+1. Selecione **OK** na mensagem de alerta.
 
-   O Gerenciamento de correspondências cria um arquivo XML com base na estrutura do dicionário de dados selecionado e faz o download desse arquivo para seu computador com o nome &lt;data-dictionary-name>-Dados de amostra. Agora é possível editar esse arquivo em um editor de texto ou XML para fazer entradas de dados enquanto [criação de uma carta](../../forms/using/create-letter.md).
+   O Gerenciamento de correspondências cria um arquivo XML com base na estrutura do dicionário de dados selecionado e o baixa para o computador com o nome &lt;nome-do-dicionário-de-dados>-SampleData. Agora você pode editar este arquivo em um editor de texto ou XML para fazer entradas de dados enquanto [cria uma carta](../../forms/using/create-letter.md).
 
 ## Internacionalização de metadados {#internationalization-of-meta-data}
 
@@ -424,8 +425,8 @@ Quando quiser enviar a mesma carta em idiomas diferentes para os clientes, você
 ### Localizar dicionário de dados {#localize-data-dictionary}
 
 1. Na página Dicionários de dados, selecione **Selecionar** e, em seguida, selecione um dicionário de dados para selecioná-lo.
-1. Selecionar **Baixar dados de localização**.
-1. Selecionar **OK** no alerta. O Gerenciamento de correspondências baixa um arquivo zip para seu computador com o nome DataDictionary-&lt;ddname>.zip.
+1. Selecione **Baixar Dados de Localização**.
+1. Selecione **OK** no alerta. O Gerenciamento de correspondências baixa um arquivo zip para seu computador com o nome DataDictionary-&lt;Nome>.zip.
 1. O arquivo Zip contém um arquivo .properties. Esse arquivo define o dicionário de dados baixado. O conteúdo do arquivo de propriedade é semelhante ao seguinte:
 
    ```ini
@@ -454,7 +455,7 @@ Quando quiser enviar a mesma carta em idiomas diferentes para os clientes, você
 
 1. Arquive o arquivo .properties (ou arquivos para várias localidades) em um único arquivo .zip.
 
-1. Na página Dicionários de dados, selecione **Mais** > **Carregar dados de localização** e selecione o arquivo zip com os arquivos de propriedades localizados.
+1. Na página Dicionários de Dados, selecione **Mais** > **Carregar Dados de Localização** e selecione o arquivo zip com arquivos de propriedades localizados.
 1. Para exibir as alterações de localização, altere o local do navegador.
 
 ## Validações do dicionário de dados {#ddvalidations}
@@ -524,7 +525,7 @@ O exemplo a seguir mostra um schema simples.
 </xs:schema>
 ```
 
-| **Elemento do dicionário de dados** | **Vínculo XML padrão** |
+| **Elemento do dicionário de dados** | **Associação XML Padrão** |
 |---|---|
 | idade | /age |
 | preço | /price |
@@ -556,7 +557,7 @@ O exemplo a seguir mostra o schema para uma observação.
   </tr>
   <tr>
    <td>observação</td>
-   <td>vazio (nulo)<br /> </td>
+   <td>vazio(nulo)<br /> </td>
   </tr>
   <tr>
    <td>para</td>
@@ -644,7 +645,7 @@ O Token.xsd associado a esta amostra seria:
 </xs:complexType>
 ```
 
-| **Elemento do dicionário de dados** | **Vínculo XML padrão** |
+| **Elemento do dicionário de dados** | **Associação XML Padrão** |
 |---|---|
 | Raiz | vazio (nulo) |
 | Tokens | /Root/Tokens |

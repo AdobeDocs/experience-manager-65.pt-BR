@@ -28,8 +28,8 @@ Os detalhes da configuração do recurso estão descritos em
 Esta página contém detalhes técnicos adicionais:
 
 * Como [exibir um selo](#displaying-badges) como imagem ou texto
-* Como ativar extensivo [log de depuração](#debug-log-for-scoring-and-badging)
-* Como [acessar UGC](#ugc-for-scoring-and-badging) relacionado à pontuação e à medalha
+* Como ativar o [log de depuração](#debug-log-for-scoring-and-badging) extensivo
+* Como [acessar o UGC](#ugc-for-scoring-and-badging) relacionado à pontuação e à medalha
 
 >[!CAUTION]
 >
@@ -39,7 +39,7 @@ Esta página contém detalhes técnicos adicionais:
 
 Se um selo é exibido como texto ou imagem é controlado no lado do cliente no modelo HBS.
 
-Por exemplo, pesquisar por `this.isAssigned` in `/libs/social/forum/components/hbs/topic/list-item.hbs`:
+Por exemplo, pesquisar por `this.isAssigned` em `/libs/social/forum/components/hbs/topic/list-item.hbs`:
 
 ```
 {{#each author.badges}}
@@ -67,47 +67,47 @@ Por exemplo, pesquisar por `this.isAssigned` in `/libs/social/forum/components/h
 {{/each}}
 ```
 
-Se verdadeiro, `isAssigned` indica que o selo foi atribuído a uma função e deve ser exibido como texto.
+Se verdadeiro, `isAssigned` indica que o selo foi atribuído a uma função, e o selo deve ser exibido como texto.
 
-Se falso, `isAssigned` indica que a medalha foi concedida por uma pontuação obtida e a medalha deve ser exibida como uma imagem.
+Se false, `isAssigned` indica que o selo foi concedido para uma pontuação recebida e o selo deve ser exibido como uma imagem.
 
-Qualquer alteração nesse comportamento deve ser feita em um script personalizado (substituição ou sobreposição). Consulte [Personalização do lado do cliente](/help/communities/client-customize.md).
+Qualquer alteração nesse comportamento deve ser feita em um script personalizado (substituição ou sobreposição). Consulte [Personalização no lado do cliente](/help/communities/client-customize.md).
 
 ## Log de depuração para pontuação e medalha {#debug-log-for-scoring-and-badging}
 
 Para ajudar a depurar a pontuação e o símbolo, é possível configurar um arquivo de log personalizado. O conteúdo desse arquivo de log poderá ser fornecido ao suporte ao cliente se forem encontrados problemas com o recurso.
 
-Para obter instruções detalhadas, visite [Criar um arquivo de log personalizado](/help/sites-deploying/monitoring-and-maintaining.md#create-a-custom-log-file).
+Para obter instruções detalhadas, visite [Criar um Arquivo de Log Personalizado](/help/sites-deploying/monitoring-and-maintaining.md#create-a-custom-log-file).
 
 Para configurar rapidamente um arquivo de log do Sling:
 
-1. Acesse o **Suporte ao log do console da Web do Adobe Experience Manager**, por exemplo
+1. Acesse o **Suporte ao Log do Console da Web do Adobe Experience Manager**, por exemplo
 
    * https://localhost:4502/system/console/slinglog
 
-1. Selecionar **Adicionar novo agente de log**
+1. Selecione **Adicionar novo agente**
 
-   1. Selecionar `DEBUG` para **Nível de registro**
+   1. Selecionar `DEBUG` para **Nível de Log**
 
    1. Digite um nome para **Arquivo de log**, por exemplo
 
       * logs/scoring-debug.log
 
-   1. Insira dois **Logger** entradas (classe) (usando `+` ícone)
+   1. Insira duas entradas (classe) **Logger** (usando o ícone `+`)
 
       * `com.adobe.cq.social.scoring`
       * `com.adobe.cq.social.badging`
 
-   1. Selecionar **Salvar**
+   1. Selecione **Salvar**
 
-![debug-scoring-log](assets/debug-scoring-log.png)
+![log-pontuação-depuração](assets/debug-scoring-log.png)
 
 Para ver entradas de log:
 
 * No console da Web
 
-   * No **Status** menu
-   * Selecionar **Arquivos de log**
+   * No menu **Status**
+   * Selecionar **Arquivos de Log**
    * Procure pelo seu nome de Arquivo de Log, como `scoring-debug`
 
 * No disco local do servidor
@@ -116,28 +116,28 @@ Para ver entradas de log:
 
    * Por exemplo, `.../crx-quickstart/logs/scoring-debug.log`
 
-![log de pontuação](assets/scoring-log.png)
+![log-pontuação](assets/scoring-log.png)
 
 ## UGC para pontuação e medalha {#ugc-for-scoring-and-badging}
 
-É possível exibir o UGC relacionado à pontuação e ao badging quando o SRP escolhido for JSRP ou MSRP, mas não ASRP. (Se não estiver familiarizado com esses termos, consulte [Armazenamento de conteúdo da comunidade](/help/communities/working-with-srp.md) e [Visão geral do provedor de recursos de armazenamento](/help/communities/srp.md).)
+É possível exibir o UGC relacionado à pontuação e ao badging quando o SRP escolhido for JSRP ou MSRP, mas não ASRP. (Se não estiver familiarizado com esses termos, consulte [Armazenamento do Conteúdo da Comunidade](/help/communities/working-with-srp.md) e [Visão Geral do Provedor de Recursos de Armazenamento](/help/communities/srp.md).)
 
 As descrições para acessar dados de pontuação e badging usam JSRP, pois o UGC é facilmente acessível usando [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
 
 **JSRP no autor**: experimentar no ambiente do autor resulta em uma UGC que só é visível do ambiente do autor.
 
-**JSRP em publicação**: da mesma forma, se estiver testando no ambiente de publicação, será necessário acessar o CRXDE Lite com privilégios administrativos em uma instância de publicação. Se a instância de publicação estiver em execução no [modo de produção](/help/sites-administering/production-ready.md) (modo de execução nosamplecontent), é necessário [ativar o CRXDE Lite](/help/sites-administering/enabling-crxde-lite.md).
+**JSRP em publicar**: da mesma forma, se estiver testando no ambiente de publicação, será necessário acessar o CRXDE Lite com privilégios administrativos em uma instância de publicação. Se a instância de publicação estiver sendo executada no [modo de produção](/help/sites-administering/production-ready.md) (modo de execução nosamplecontent), será necessário [habilitar o CRXDE Lite](/help/sites-administering/enabling-crxde-lite.md).
 
-A localização básica do UGC no JSRP é `/content/usergenerated/asi/jcr/`.
+O local base do UGC no JSRP é `/content/usergenerated/asi/jcr/`.
 
 ### APIs de pontuação e medalha {#scoring-and-badging-apis}
 
 As seguintes APIs estão disponíveis para uso:
 
-* [com.adobe.cq.social.scoring.api no 6.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=pt-BR)
-* [com.adobe.cq.social.badging.api no 6.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=pt-BR)
+* [com.adobe.cq.social.scoring.api na versão 6.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=pt-BR)
+* [com.adobe.cq.social.badging.api na versão 6.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=pt-BR)
 
-Os Javadocs mais recentes para o pacote de recursos instalado estão disponíveis para desenvolvedores no repositório do Adobe. Consulte [Uso do Maven para comunidades : Javadocs](/help/communities/maven.md#javadocs).
+Os Javadocs mais recentes para o pacote de recursos instalado estão disponíveis para desenvolvedores no repositório do Adobe. Consulte [Uso do Maven para comunidades: Javadocs](/help/communities/maven.md#javadocs).
 
 **A localização e o formato do UGC no repositório estão sujeitos a alterações sem aviso**.
 
@@ -145,9 +145,9 @@ Os Javadocs mais recentes para o pacote de recursos instalado estão disponívei
 
 As capturas de tela dos dados do repositório vêm da configuração de pontuação e badging para um fórum em dois sites AEM diferentes:
 
-1. Um site de AEM *com* um identificador exclusivo (site da comunidade criado usando o assistente):
+1. Um site AEM *com* uma ID exclusiva (site da comunidade criado com o assistente):
 
-   * Uso do site Tutorial de introdução (engajamento) criado durante o [tutorial de introdução](/help/communities/getting-started.md)
+   * Usando o site Tutorial da Introdução (engajamento) criado durante o [tutorial da introdução](/help/communities/getting-started.md)
    * Localize o nó da página do fórum
 
      `/content/sites/engage/en/forum/jcr:content`
@@ -175,9 +175,9 @@ As capturas de tela dos dados do repositório vêm da configuração de pontuaç
 
    * Um usuário se conecta, cria um tópico do fórum e recebe um selo bronze
 
-1. Um site de AEM *sem* uma id exclusiva:
+1. Um site AEM *sem* uma ID exclusiva:
 
-   * Usar o [Guia de componentes da comunidade](/help/communities/components-guide.md)
+   * Usando o [guia de Componentes da Comunidade](/help/communities/components-guide.md)
    * Localize o nó da página do fórum
 
      `/content/community-components/en/forum/jcr:content`
@@ -221,7 +221,7 @@ As capturas de tela dos dados do repositório vêm da configuração de pontuaç
 >
 >* Os nomes das regras de pontuação devem ser globalmente exclusivos; eles não devem terminar com o mesmo nome.
 >
->  Um exemplo do que *não* fazer:
+>  Um exemplo do que *não* deve fazer:
 >
 >  /libs/settings/community/scoring/rules/site1/forums-scoring
 >  /libs/settings/community/scoring/rules/site2/forums-scoring
@@ -230,7 +230,7 @@ As capturas de tela dos dados do repositório vêm da configuração de pontuaç
 
 ### UGC de pontuação de acesso {#access-scoring-ugc}
 
-Utilização do [APIs](#scoring-and-badging-apis) é preferível.
+O uso das [APIs](#scoring-and-badging-apis) é preferível.
 
 Para fins investigativos, usando JSRP para o exemplo, a pasta base que contém pontuações é
 
@@ -238,21 +238,21 @@ Para fins investigativos, usando JSRP para o exemplo, a pasta base que contém p
 
 O nó filho de `scoring` é o nome da regra de pontuação. Assim, uma prática recomendada é que os nomes de regras de pontuação em um servidor sejam globalmente exclusivos.
 
-Para o site Geometrixx Engage, o usuário e sua pontuação estão em um caminho construído com o nome da regra de pontuação, a ID do site da comunidade ( `engage-ba81p`), um identificador exclusivo e o identificador do usuário:
+Para o site Geometrixx Engage, o usuário e sua pontuação estão em um caminho construído com o nome da regra de pontuação, a ID do site da comunidade ( `engage-ba81p`), uma ID exclusiva e a ID do usuário:
 
 * `.../scoring/forums-scoring/engage-ba81p/6d179715c0e93cb2b20886aa0434ca9b5a540401/riley`
 
-Para o site de guia dos Componentes da comunidade, o usuário e sua pontuação estão em um caminho construído com o nome da regra de pontuação, uma ID padrão ( `default-site`), um identificador exclusivo e o identificador do usuário:
+Para o site de guia dos Componentes da Comunidade, o usuário e sua pontuação estão em um caminho construído com o nome da regra de pontuação, uma ID padrão ( `default-site`), uma ID exclusiva e a ID do usuário:
 
 * `.../scoring/forums-scoring/default-site/b27a17cb4910a9b69fe81fb1b492ba672d2c086e/riley`
 
-A pontuação é armazenada na propriedade `scoreValue_tl` que só pode conter um valor ou se referir indiretamente a um atomicCounter.
+A pontuação está armazenada na propriedade `scoreValue_tl` que só pode conter um valor ou fazer referência indireta a um atomicCounter.
 
 ![access-scoring-ugc](assets/access-scoring-ugc.png)
 
 ### UGC de acesso a emblemas {#access-badging-ugc}
 
-Utilização do [APIs](#scoring-and-badging-apis) é preferível.
+O uso das [APIs](#scoring-and-badging-apis) é preferível.
 
 Para fins de investigação, usando JSRP como exemplo, a pasta base que contém informações sobre selos atribuídos ou concedidos é
 
@@ -264,15 +264,15 @@ Seguido pelo caminho para o perfil do usuário, terminando em uma pasta de selos
 
 #### Selo concedido {#awarded-badge}
 
-![award-badging-ugc](assets/access-badging-ugc.png)
+![awar-badging-ugc](assets/access-badging-ugc.png)
 
 #### Selo atribuído {#assigned-badge}
 
-![selo atribuído](assets/assigned-badge.png)
+![selo-atribuído](assets/assigned-badge.png)
 
 ## Informações adicionais {#additional-information}
 
 Para exibir uma lista classificada de membros com base em pontos:
 
-* [Função de placar de líderes](/help/communities/functions.md#leaderboard-function) para inclusão em um site da comunidade ou modelo de grupo.
-* [Componente do quadro de classificação](/help/communities/enabling-leaderboard.md), o componente em destaque da função Placar de líderes, para criação de páginas.
+* [Função de quadro de classificação](/help/communities/functions.md#leaderboard-function) para inclusão em um site da comunidade ou modelo de grupo.
+* [Componente de quadro de classificação](/help/communities/enabling-leaderboard.md), o componente em destaque da função de quadro de classificação, para criação de páginas.

@@ -43,15 +43,15 @@ Se o banco de dados estiver sendo executado em um modo de log, conforme descrito
 Coloque o AEM Forms no modo de backup seguro (instantâneo) ou no modo de backup contínuo (cobertura contínua). Antes de configurar o AEM Forms para inserir um dos modos de backup, verifique o seguinte:
 
 * Verifique a versão do sistema e registre os patches ou atualizações que foram aplicados desde a execução do último backup completo de imagem do sistema.
-* Se você estiver usando backups em modo de rolagem ou de snapshot, certifique-se de que seu banco de dados esteja configurado com as definições de log corretas para permitir backups do banco de dados com o sistema em funcionamento. (Consulte [banco de dados do AEM Forms](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database).)
+* Se você estiver usando backups em modo de rolagem ou de snapshot, certifique-se de que seu banco de dados esteja configurado com as definições de log corretas para permitir backups do banco de dados com o sistema em funcionamento. (Consulte [banco de dados AEM Forms](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database).)
 
 Além disso, observe as seguintes diretrizes para o processo de backup/restauração.
 
-* Faça backup do diretório GDS usando um sistema operacional disponível ou um utilitário de backup de terceiros. (Consulte [Localização do GDS](/help/forms/using/admin-help/files-back-recover.md#gds-location).)
+* Faça backup do diretório GDS usando um sistema operacional disponível ou um utilitário de backup de terceiros. (Consulte [Local do GDS](/help/forms/using/admin-help/files-back-recover.md#gds-location).)
 * (Opcional) Faça backup do diretório raiz de armazenamento de conteúdo usando um sistema operacional disponível ou um backup e utilitário de terceiros. (Consulte [Local raiz do armazenamento de conteúdo (ambiente independente)](/help/forms/using/admin-help/files-back-recover.md#content-storage-root-location-stand-alone-environment) ou [Local raiz do armazenamento de conteúdo (ambiente em cluster)](/help/forms/using/admin-help/files-back-recover.md#content-storage-root-location-clustered-environment).)
-* Faça backup das instâncias do autor e de publicação ( crx - backup do repositório).
+* Fazer backup   instâncias de criação e publicação ( crx - backup do repositório).
 
-  Para fazer backup do ambiente da Solução de gerenciamento de correspondência, execute as etapas nas instâncias de criação e publicação, conforme descrito em [Backup e restauração](/help/sites-administering/backup-and-restore.md).
+  Para fazer backup do ambiente da Solução de gerenciamento de correspondência, execute as etapas nas instâncias de criação e publicação conforme descrito em [Backup e restauração](/help/sites-administering/backup-and-restore.md).
 
   Considere os seguintes pontos ao fazer backup das instâncias de autor e publicação:
 
@@ -60,12 +60,12 @@ Além disso, observe as seguintes diretrizes para o processo de backup/restaura�
    * Os desenvolvedores do Workbench podem continuar trabalhando em seus processos localmente. Eles não devem implantar novos processos durante a fase de backup.
    * A decisão sobre a duração de cada sessão de backup (para o modo de backup contínuo) deve ser baseada no tempo total gasto para fazer backup de todos os dados no AEM Forms (BD, GDS, repositório AEM e quaisquer outros dados personalizados adicionais).
 
-Fazer backup do banco de dados do AEM Forms, incluindo todos os logs de transações. Consulte [banco de dados do AEM Forms](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database).
+Fazer backup do banco de dados do AEM Forms, incluindo todos os logs de transações. Consulte [banco de dados AEM Forms](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database).
 
 Para obter mais informações, consulte o artigo apropriado da base de dados de conhecimento para seu banco de dados:
 <!-- The four URLs below are all 404s; checked July 19, 2023 -->
 * [Backup e recuperação do Oracle para AEM Forms](https://www.adobe.com/go/kb403624)
-* [Backup e recuperação MySQL para AEM Forms](https://www.adobe.com/go/kb403625)
+* [Backup e recuperação do MySQL para AEM Forms](https://www.adobe.com/go/kb403625)
 * [Backup e recuperação do Microsoft® SQL Server para AEM Forms](https://www.adobe.com/go/kb403623)
 * [Backup e recuperação do DB2® para AEM Forms](https://www.adobe.com/go/kb403626)
 
@@ -83,7 +83,7 @@ Você pode usar o console de administração, o comando LCBackupMode ou a API di
 >
 >Se você tiver configurado o SSL no Forms Server, não será possível colocar o Forms Server no modo de backup usando o script LCBackupMode.CMD.
 
-**Usar o console de administração para entrar no modo de backup seguro**
+**Usando o console de administração para entrar no modo de backup seguro**
 
 1. Faça logon no console de administração.
 1. Clique em Configurações > Configurações principais do sistema > Utilitários de backup.
@@ -93,15 +93,15 @@ Você pode usar o console de administração, o comando LCBackupMode ou a API di
 
 **Usando a opção de linha de comando para entrar no modo de backup seguro**
 
-Você pode usar a interface de linha de comando `LCBackupMode` scripts para colocar o AEM Forms no modo de backup seguro.
+Você pode usar os scripts da interface de linha de comando `LCBackupMode` para colocar o AEM Forms no modo de backup seguro.
 
 1. Defina ADOBE_LIVECYCLE e inicie o servidor de aplicativos.
-1. Vá para a `*[aem-forms root]*/sdk/misc/Foundation/BackupRestoreCommandline` pasta.
-1. Dependendo do seu sistema operacional, edite a `LCBackupMode.cmd` ou `LCBackupMode.sh` para fornecer os valores padrão apropriados para o seu sistema.
+1. Vá para a pasta `*[aem-forms root]*/sdk/misc/Foundation/BackupRestoreCommandline`.
+1. Dependendo do seu sistema operacional, edite o script `LCBackupMode.cmd` ou `LCBackupMode.sh` para fornecer valores padrão apropriados para o seu sistema.
 1. No prompt de comando, execute o seguinte comando em uma única linha:
 
-   * (Windows) `LCBackupMode.cmd enter [-Host=`*hostname* `] [-port=`*portnumber* `] [-user=`*nome de usuário* `] [-password=`*senha* `] [-label=`*labelname* `] [-timeout=`*segundos* `]`
-   * (Linux®, UNIX®) `LCBackupMode.sh enter [-host=`*hostname* `] [-port=`*portnumber* `] [-user=`*nome de usuário* `] [-password=`*senha* `] [-label=`*labelname* `]`
+   * (Windows) `LCBackupMode.cmd enter [-Host=`*nome do host* `] [-port=`*número da porta* `] [-user=`*nome do usuário* `] [-password=`*senha* `] [-label=`*nome do rótulo* `] [-timeout=`*segundos* `]`
+   * (Linux®, UNIX®) `LCBackupMode.sh enter [-host=`*hostname* `] [-port=`*portnumber* `] [-user=`*username* `] [-password=`*password* `] [-label=`*labelname* `]`
 
    Nos comandos anteriores, os espaços reservados são definidos da seguinte maneira:
 
@@ -113,7 +113,7 @@ Você pode usar a interface de linha de comando `LCBackupMode` scripts para colo
 
    `password` é a senha do administrador do AEM Forms.
 
-   `label` é o rótulo do texto, que pode ser qualquer string, para esse backup.
+   `label` é o rótulo de texto, que pode ser qualquer cadeia de caracteres, para este backup.
 
    `timeout` é o número de segundos após o qual o modo de backup é deixado automaticamente. Pode ser de 0 a 10.080. Se for 0, que é o padrão, o modo de backup nunca expirará.
 
@@ -131,21 +131,21 @@ Para usar o Console de administração para remover o AEM Forms do modo de backu
 1. Clique em Configurações > Configurações principais do sistema > Utilitários de backup.
 1. Desmarque a opção Operar no modo de backup seguro e clique em OK.
 
-**Deixar todos os modos de backup**
+**Sair de todos os modos de backup**
 
 Você pode usar a interface de linha de comando para tirar o AEM Forms do modo de backup seguro (modo de instantâneo) ou para encerrar a sessão do modo de backup atual (modo contínuo). Não é possível usar o console de administração para sair do modo de backup contínuo. No modo de backup contínuo, os controles de Utilitários de Backup do Console de Administração são desativados. Use a chamada de API ou o comando LCBackupMode.
 
-1. Vá para a `*[aem-forms root]*/sdk/misc/Foundation/BackupRestoreCommandline` pasta.
-1. Dependendo do seu sistema operacional, edite a `LCBackupMode.cmd` ou `LCBackupMode.sh` para fornecer os valores padrão apropriados para o seu sistema.
+1. Vá para a pasta `*[aem-forms root]*/sdk/misc/Foundation/BackupRestoreCommandline`.
+1. Dependendo do seu sistema operacional, edite o script `LCBackupMode.cmd` ou `LCBackupMode.sh` para fornecer valores padrão apropriados para o seu sistema.
 
    >[!NOTE]
    >
-   >Defina o diretório JAVA_HOME conforme descrito no capítulo apropriado para seu servidor de aplicativos em [Preparação para instalar o AEM Forms](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63)*.*
+   >Defina o diretório JAVA_HOME conforme descrito no capítulo apropriado para seu servidor de aplicativos em [Preparando-se para Instalar o AEM Forms](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63)*.*
 
 1. Execute o seguinte comando em uma única linha:
 
-   * (Windows) `LCBackupMode.cmd leaveContinuousCoverage [-Host=`*hostname* `] [-port=`*portnumber* `] [-user=`*nome de usuário* `] [-password=`*senha* `]`
-   * (Linux®, UNIX®) `LCBackupMode.sh leaveContinuousCoverage [-Host=`*hostname* `] [-port=`*portnumber* `] [-user=`*nome de usuário* `] [-password=`*senha* `]`
+   * (Windows) `LCBackupMode.cmd leaveContinuousCoverage [-Host=`*nome do host* `] [-port=`*número da porta* `] [-user=`*nome do usuário* `] [-password=`*senha* `]`
+   * (Linux®, UNIX®) `LCBackupMode.sh leaveContinuousCoverage [-Host=`*nome do host* `] [-port=`*número da porta* `] [-user=`*nome do usuário* `] [-password=`*senha* `]`
 
      Nos comandos anteriores, os espaços reservados são definidos da seguinte maneira:
 
@@ -157,7 +157,7 @@ Você pode usar a interface de linha de comando para tirar o AEM Forms do modo d
 
      `password` é a senha do administrador do AEM Forms.
 
-     `leaveContinuousCoverage` Use esta opção para desativar completamente o modo de backup contínuo.
+     `leaveContinuousCoverage` Use esta opção para desabilitar completamente o modo de backup contínuo.
 
    >[!NOTE]
    >

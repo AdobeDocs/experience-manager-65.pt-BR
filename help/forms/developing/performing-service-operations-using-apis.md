@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Execução de operações de serviço usando APIs {#performing-service-operations-using-apis}
 
-**Os exemplos e amostras neste documento são somente para AEM Forms no ambiente JEE.**
+**Exemplos e exemplos neste documento são somente para AEM Forms no ambiente JEE.**
 
 Antes de começar a desenvolver aplicativos clientes usando as APIs do AEM Forms, a Adobe recomenda que você leia primeiro Invocando o AEM Forms, que descreve as diferentes maneiras de chamar serviços. (Consulte [Contêiner de serviço](/help/forms/developing/service-container.md#service-container).)
 

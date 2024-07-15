@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Exibir estatísticas relacionadas ao Gerenciador de Trabalho {#view-statistics-related-to-work-manager}
 
-A guia Gerenciador de trabalho exibe estatísticas relacionadas aos itens do Gerenciador de trabalho. Esses itens de trabalho estão em estados diferentes, dependendo de onde estão em seu processo. (Consulte [Status (somente para as categorias Padrão, Fluxo de trabalho ou Eventos)](view-statistics-related-manager.md#status-for-default-workflow-or-events-categories-only).) É possível filtrar as informações para exibir apenas um subconjunto dos itens usando as várias opções disponíveis (por exemplo, Status ou Categoria). Você pode classificar itens de trabalho ou de trabalho resultantes (em ordem crescente ou decrescente) clicando em um dos cabeçalhos de coluna. Além disso, você pode gerenciar os itens de trabalho usando as ferramentas de operação exibidas acima da lista de itens de trabalho.
+A guia Gerenciador de trabalho exibe estatísticas relacionadas aos itens do Gerenciador de trabalho. Esses itens de trabalho estão em estados diferentes, dependendo de onde estão em seu processo. (Consulte [Status (somente para as categorias Padrão, Fluxo de Trabalho ou Eventos)](view-statistics-related-manager.md#status-for-default-workflow-or-events-categories-only).) É possível filtrar as informações para exibir apenas um subconjunto dos itens usando as várias opções disponíveis (por exemplo, Status ou Categoria). Você pode classificar itens de trabalho ou de trabalho resultantes (em ordem crescente ou decrescente) clicando em um dos cabeçalhos de coluna. Além disso, você pode gerenciar os itens de trabalho usando as ferramentas de operação exibidas acima da lista de itens de trabalho.
 
 ## Filtrar os itens de trabalho {#filter-the-work-items}
 
@@ -27,53 +27,53 @@ A guia Gerenciador de trabalho exibe estatísticas relacionadas aos itens do Ger
 
 ### Categoria {#category}
 
-**Padrão:** Todos os itens de trabalho aos quais o cliente não atribuiu uma categoria quando foram enviados. O Work Manager gerencia esses itens, portanto, os status pertencem ao Work Manager.
+**Padrão:** todos os itens de trabalho aos quais o cliente não atribuiu uma categoria quando foram enviados. O Work Manager gerencia esses itens, portanto, os status pertencem ao Work Manager.
 
-**Gerenciador de Jobs:** Todos os jobs que pertencem ao Gerenciador de Jobs. O Gerenciador de Jobs gerencia seus próprios jobs e tem seus próprios status de job. Consulte os status de tarefa específicos descritos abaixo.
+**Gerenciador de Trabalhos:** todos os trabalhos que pertencem ao Gerenciador de Trabalhos. O Gerenciador de Jobs gerencia seus próprios jobs e tem seus próprios status de job. Consulte os status de tarefa específicos descritos abaixo.
 
-**Fluxo de trabalho:** Todos os itens de trabalho que pertencem à execução do fluxo de trabalho. O workflow não gerencia seus próprios itens de trabalho, mas depende do Work Manager; portanto, os status pertencem ao Work Manager.
+**Fluxo de trabalho:** todos os itens de trabalho que pertencem à execução do Fluxo de Trabalho. O workflow não gerencia seus próprios itens de trabalho, mas depende do Work Manager; portanto, os status pertencem ao Work Manager.
 
-**Eventos:** Todos os itens de trabalho que pertencem ao Gerenciamento de eventos. O Gerenciamento de eventos não gerencia seus próprios itens de trabalho, mas depende do Work Manager; portanto, os status pertencem ao Work Manager.
+**Eventos:** Todos os itens de trabalho que pertencem ao Gerenciamento de Eventos. O Gerenciamento de eventos não gerencia seus próprios itens de trabalho, mas depende do Work Manager; portanto, os status pertencem ao Work Manager.
 
 ### Status (somente para as categorias Padrão, Fluxo de trabalho ou Eventos) {#status-for-default-workflow-or-events-categories-only}
 
-**Mostrar tudo:** Exibe todos os itens de trabalho atuais.
+**Mostrar Tudo:** Exibe todos os itens de trabalho atuais.
 
-**Agendado:** Exibe todos os itens de trabalho prontos para execução pelo servidor de aplicativos, mas que ainda não foram iniciados.
+**Agendado:** exibe todos os itens de trabalho prontos para execução pelo servidor de aplicativos, mas que ainda não foram iniciados.
 
 **Pausado:** Exibe todos os itens de trabalho agendados que o aplicativo cliente pausou. Esses itens podem ser executados ou excluídos. (Consulte Gerenciar itens de trabalho ou processos.)
 
-**Em andamento:** Exibe todos os itens de trabalho que o Gerenciador de Trabalho do servidor de aplicativos selecionou e que serão concluídos ou falharão. Não é possível usar operações nesses itens de trabalho.
+**Em andamento:** exibe todos os itens de trabalho que o Gerenciador de Trabalho do servidor de aplicativos selecionou e que serão concluídos ou reprovados. Não é possível usar operações nesses itens de trabalho.
 
-**Concluído:** Exibe todos os itens de trabalho executados com sucesso. Os itens de trabalho persistentes permanecem nesse estado e os itens não persistentes são excluídos após a conclusão dos retornos de chamada para os manipuladores de retorno de chamada. Você pode excluir esses itens usando a operação Excluir itens. (Consulte Gerenciar itens de trabalho ou processos.)
+**Concluído:** Exibe todos os itens de trabalho executados com êxito. Os itens de trabalho persistentes permanecem nesse estado e os itens não persistentes são excluídos após a conclusão dos retornos de chamada para os manipuladores de retorno de chamada. Você pode excluir esses itens usando a operação Excluir itens. (Consulte Gerenciar itens de trabalho ou processos.)
 
-**Falha:** Exibe todos os itens de trabalho que não foram concluídos com êxito devido a uma condição de erro. Esses itens de trabalho podem ser repetidos algumas vezes usando a operação Repetir itens. (Consulte Gerenciar itens de trabalho ou processos.) Um link Failure (Falha) na coluna Status permite acessar detalhes sobre a falha.
+**Falha:** exibe todos os itens de trabalho que não foram concluídos com êxito devido a uma condição de erro. Esses itens de trabalho podem ser repetidos algumas vezes usando a operação Repetir itens. (Consulte Gerenciar itens de trabalho ou processos.) Um link Failure (Falha) na coluna Status permite acessar detalhes sobre a falha.
 
 **Desconhecido:** Exibe todos os itens de trabalho cujo status é desconhecido.
 
 ### Status (somente para a categoria Gerenciador de Jobs) {#status-for-job-manager-category-only}
 
-**Concluído:** Exibe todos os jobs que foram executados com sucesso. Os itens de trabalho persistentes permanecem nesse estado e os itens não persistentes são excluídos após a conclusão dos retornos de chamada para os manipuladores de retorno de chamada.
+**Concluído:** Exibe todos os trabalhos executados com êxito. Os itens de trabalho persistentes permanecem nesse estado e os itens não persistentes são excluídos após a conclusão dos retornos de chamada para os manipuladores de retorno de chamada.
 
-**Conclusão solicitada:** Exibe os jobs para os quais foi feita uma solicitação completa.
+**Conclusão Solicitada:** Exibe os trabalhos para os quais foi feita uma solicitação de conclusão.
 
-**Falha solicitada:** Exibe os jobs para os quais foi feita uma solicitação de falha.
+**Falha Solicitada:** Exibe os trabalhos para os quais foi feita uma solicitação de falha.
 
-**Falha:** Exibe os jobs que não foram concluídos com êxito devido a uma condição de erro. Um link Failure (Falha) na coluna Status permite acessar detalhes sobre a falha.
+**Falha:** Exibe os trabalhos que não foram concluídos com êxito devido a uma condição de erro. Um link Failure (Falha) na coluna Status permite acessar detalhes sobre a falha.
 
-**Encerramento solicitado:** Exibe os jobs para os quais foi feita uma solicitação de finalização.
+**Encerramento Solicitado:** Exibe os trabalhos para os quais foi feita uma solicitação de encerramento.
 
-**Encerrado:** Exibe jobs que foram encerrados sem conclusão.
+**Encerrado:** Exibe os trabalhos que terminaram sem conclusão.
 
-**Suspensão solicitada:** Exibe os jobs para os quais foi feita uma solicitação de suspensão.
+**Suspensão Solicitada:** Exibe os trabalhos para os quais foi feita uma solicitação de suspensão.
 
-**Suspenso:** Exibe os jobs suspensos.
+**Suspenso:** Exibe os trabalhos suspensos.
 
-**Retomada solicitada:** Exibe os jobs para os quais foi feita uma solicitação de retomada.
+**Retomada Solicitada:** Exibe os trabalhos para os quais foi feita uma solicitação de retomada.
 
-**Na fila:** Exibe os jobs que estão na fila.
+**Em Fila:** Exibe os trabalhos que estão na fila.
 
-**Em execução:** Exibe os jobs que estão em execução.
+**Em Execução:** Exibe os trabalhos que estão em execução.
 
 ### Nome do servidor {#server-name}
 
@@ -107,13 +107,13 @@ Quando você clica em Mais Informações, a caixa de diálogo Detalhes da Opera�
    >
    >As operações estão disponíveis dependendo do status do item.
 
-   **Excluir itens:** Exclui o item de trabalho ou trabalho selecionado.
+   **Excluir Itens:** Exclui o item de trabalho ou o trabalho selecionado.
 
-   **Pausar itens:** Pausa o item de trabalho ou trabalho selecionado.
+   **Pausar Itens:** pausa o item de trabalho ou o trabalho selecionado.
 
-   **Retomar itens:** Retoma o item de trabalho ou a tarefa selecionada do seu estado pausado.
+   **Retomar Itens:** Retoma o item de trabalho ou o trabalho selecionado de seu estado pausado.
 
-   **Tentar novamente os itens:** Tenta executar novamente o item de trabalho ou trabalho selecionado a partir do seu estado atual.
+   **Repetir Itens:** Tenta executar novamente o item de trabalho selecionado ou o trabalho a partir de seu estado atual.
 
    Você pode verificar se uma operação foi bem-sucedida clicando em Mais informações acima da lista. Uma caixa de diálogo que contém os itens de trabalho ou trabalhos selecionados e seus status é exibida.
 

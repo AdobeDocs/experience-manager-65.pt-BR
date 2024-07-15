@@ -43,11 +43,11 @@ O AEM 6.5 é uma ferramenta flexível para o modelo de implementação headless,
 1. Fragmentos de conteúdo
    * Fragmentos de conteúdo são instanciações de modelos de conteúdo.
    * Eles são criados por autores de conteúdo por meio do editor de fragmento de conteúdo AEM.
-   * Eles são armazenados no AEM Assets e gerenciados na interface do usuário de administração de ativos.
+   * Eles são armazenados no AEM Assets e gerenciados na interface do administrador do Assets.
 1. API de conteúdo para entrega
    * A API GraphQL do AEM é compatível com a entrega de fragmentos de conteúdo.
    * A API REST do AEM Assets é compatível com operações CRUD de fragmentos de conteúdo.
-   * A entrega direta de conteúdo também é possível com o [Exportação JSON do componente principal do fragmento de conteúdo.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=pt-BR)
+   * A entrega direta de conteúdo também é possível com a exportação JSON do [Componente principal do fragmento de conteúdo.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=pt-BR)
 
 ## Primeiros passos no AEM Headless {#first-steps}
 
@@ -55,7 +55,7 @@ Há vários recursos disponíveis para o seu para começar a usar os recursos he
 
 | Recurso | Descrição | Tipo | Público | Est. Hora |
 |---|---|---|---|---|
-| [Jornada de desenvolvedores headless](/help/journey-headless/developer/overview.md) | **Para usuários novos no AEM e no headless** tecnologias, comece aqui para obter uma introdução abrangente ao AEM e seus recursos headless, desde a teoria do headless até a inauguração do seu primeiro projeto headless. | Guia | Desenvolvedores **novatos no AEM e no headless** | 1 hora |
-| [Guia de introdução do Headless](/help/sites-developing/headless/getting-started/introduction.md) | **Para usuários experientes do AEM** que precisam de um breve resumo dos principais recursos headless do AEM, confira esta visão geral de início rápido. | Início rápido | Desenvolvedores e administradores **com experiência no AEM** | 20 minutos |
-| [Tutorial prático do AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=pt-BR) | **Se preferir uma abordagem prática e estiver familiarizado com o AEM**, este tutorial aborda diretamente a criação de um simples projeto headless. | Tutorial | Desenvolvedores | 2 horas |
-| [Portal do desenvolvedor de AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=pt-BR) | Essa coleção de recursos é fornecida para **novo** e **experiente** desenvolvedores. | Coleta de recursos | Desenvolvedores | |
+| [Jornada de desenvolvedores headless](/help/journey-headless/developer/overview.md) | **Para usuários novatos nas tecnologias AEM e headless**, comecem aqui para obter uma introdução abrangente ao AEM e seus recursos headless, desde a teoria do headless até a inauguração do seu primeiro projeto headless. | Guia | Desenvolvedores **novatos no AEM e no headless** | 1 hora |
+| [Guia de Introdução Headless](/help/sites-developing/headless/getting-started/introduction.md) | **Para usuários experientes do AEM** que precisam de um breve resumo dos principais recursos headless do AEM, confira esta visão geral de início rápido. | Início rápido | Desenvolvedores e administradores **com experiência no AEM** | 20 minutos |
+| [Tutorial prático sobre AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=pt-BR) | **Se preferir uma abordagem prática e estiver familiarizado com o AEM**, este tutorial aborda diretamente a criação de um projeto headless simples. | Tutorial | Desenvolvedores | 2 horas |
+| [Portal do desenvolvedor do AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=pt-BR) | Esta coleção de recursos é fornecida para desenvolvedores **novos** e **experientes**. | Coleta de recursos | Desenvolvedores | |

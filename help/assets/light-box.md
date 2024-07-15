@@ -17,16 +17,16 @@ ht-degree: 0%
 
 O Lightbox é um tipo especial de coleção que fornece acesso fácil aos ativos. Você pode acessar rapidamente o Lightbox para adicionar ou excluir ativos. Ele serve como sua galeria de imagens pessoal.
 
-Se você é um [!DNL Adobe Experience Manager Assets] usuário, o Lightbox é criado automaticamente quando você faz logon pela primeira vez no aplicativo. É exclusivo para o seu login. Outros usuários não podem acessar o Lightbox.
+Se você for um usuário do [!DNL Adobe Experience Manager Assets], o Lightbox será criado automaticamente ao fazer logon no aplicativo pela primeira vez. É exclusivo para o seu login. Outros usuários não podem acessar o Lightbox.
 
 ## Adicionar ativos ao lightbox {#adding-assets-to-lightbox}
 
-1. No [!DNL Assets] selecione os ativos que deseja adicionar à Lightbox.
-1. Arraste os ativos para a **[!UICONTROL Soltar no Lightbox]** zona. Liberação quando a zona de lançamento se torna ativa e seu rótulo muda para **[!UICONTROL Soltar para adicionar]**.
+1. Na interface do usuário do [!DNL Assets], selecione os ativos que deseja adicionar ao Lightbox.
+1. Arraste os ativos para a área **[!UICONTROL Soltar na Lightbox]**. Liberar quando a zona de destino se tornar ativa e seu rótulo for alterado para **[!UICONTROL Soltar para Adicionar]**.
 
-   ![add_to_lightbox](assets/add_to_lightbox.png)
+   ![adicionar_à_lightbox](assets/add_to_lightbox.png)
 
-1. Na caixa de diálogo, clique em **[!UICONTROL Adicionar]** e feche-o para concluir o processo. Os ativos selecionados são adicionados ao Lightbox.
+1. Na caixa de diálogo, clique em **[!UICONTROL Adicionar]** e feche-a para concluir o processo. Os ativos selecionados são adicionados ao Lightbox.
 1. Para exibir o Lightbox, acesse o console Coleções.
 1. Clique em **[!UICONTROL Lightbox]** para exibir os ativos nela.
 

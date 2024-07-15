@@ -43,7 +43,7 @@ Várias funções podem ser envolvidas em testes e em vários estágios de desen
     <ul>
      <li><p>O cliente recebe experiência do projeto que está sendo desenvolvido.</p> </li>
      <li><p>Fornece feedback antecipado do cliente.</p> </li>
-     <li><p>Os usuários muitas vezes expressam seus requisitos em termos de experiência anterior; envolver os clientes em testes o mais cedo possível aumenta sua experiência com o novo projeto em termos de <i>práticos</i> experiência.</p> </li>
+     <li><p>Os usuários muitas vezes expressam seus requisitos em termos de experiência anterior; envolver os clientes em testes o mais cedo possível aumenta sua experiência com o novo projeto em termos de experiência <i>prática</i>.</p> </li>
     </ul> </td>
    <td><p>Novamente, o envolvimento antecipado é bom, embora qualquer versão que os clientes usem deva ser estável, com funcionalidade razoável.</p> <p>As primeiras impressões são sempre importantes.</p> </td>
   </tr>

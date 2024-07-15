@@ -36,7 +36,7 @@ Ao aplicar o fluxo de trabalho, especifique as seguintes informações:
 
 Os fluxos de trabalho podem ser iniciados no console Sites ou, ao editar uma página, no Sidekick.
 
-A variável **Status** na **Sites** console indica se um fluxo de trabalho foi aplicado a uma página:
+A coluna **Status** no console **Sites** indica se um fluxo de trabalho foi aplicado a uma página:
 
 ![status do fluxo de trabalho](assets/workflowstatus.png)
 
@@ -52,8 +52,8 @@ A variável **Status** na **Sites** console indica se um fluxo de trabalho foi a
 1. Abra o console Sites.
 1. Abra a página desejada.
 1. Selecione a guia Fluxo de trabalho no Sidekick.
-1. Expanda a **Fluxo de trabalho** , permitindo que você selecione a **Fluxo de trabalho** e, opcionalmente, informar **Título do fluxo de trabalho** e **Comentário**.
+1. Expanda a caixa de diálogo **Fluxo de Trabalho**, que permite selecionar o **Fluxo de Trabalho** e, opcionalmente, inserir o **Título do Fluxo de Trabalho** e o **Comentário**.
 
    ![workflowstartsidekick](assets/workflowstartsidekick.png)
 
-1. Clique em **Iniciar fluxo de trabalho** para iniciar uma nova instância de fluxo de trabalho com as propriedades configuradas e a página atual como a carga. Agora, o workflow está em execução.
+1. Clique em **Iniciar Fluxo de Trabalho** para iniciar uma nova instância de fluxo de trabalho com as propriedades que você configurou e a página atual como carga. Agora, o workflow está em execução.

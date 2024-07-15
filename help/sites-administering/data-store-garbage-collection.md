@@ -28,15 +28,15 @@ O AEM usa o repositório como armazenamento para várias atividades internas e d
 * Pacotes criados e baixados
 * Arquivos temporários criados para replicação de publicação
 * Cargas de fluxo de trabalho
-* Ativos criados temporariamente durante a renderização do DAM
+* Assets criado temporariamente durante a renderização do DAM
 
-Quando qualquer um desses objetos temporários é grande o suficiente para exigir armazenamento no armazenamento de dados e quando o objeto eventualmente passa para fora de uso, o próprio registro do armazenamento de dados permanece como &quot;lixo&quot;. Em um aplicativo WCM típico de criação/publicação, a maior fonte de lixo desse tipo é geralmente o processo de ativação de publicação. Quando os dados estiverem sendo replicados para publicação, eles serão coletados primeiro em coleções em um formato de dados eficiente chamado &quot;Durbo&quot; e armazenados no repositório em `/var/replication/data`. Os pacotes de dados geralmente são maiores que o limite de tamanho crítico do armazenamento de dados e, portanto, são armazenados como registros de armazenamento de dados. Quando a replicação é concluída, o nó em `/var/replication/data` é excluído, mas o registro de armazenamento de dados permanece como &quot;lixo&quot;.
+Quando qualquer um desses objetos temporários é grande o suficiente para exigir armazenamento no armazenamento de dados e quando o objeto eventualmente passa para fora de uso, o próprio registro do armazenamento de dados permanece como &quot;lixo&quot;. Em um aplicativo WCM típico de criação/publicação, a maior fonte de lixo desse tipo é geralmente o processo de ativação de publicação. Quando os dados estiverem sendo replicados para o Publish, eles serão coletados pela primeira vez em coleções em um formato de dados eficiente chamado &quot;Durbo&quot; e armazenados no repositório em `/var/replication/data`. Os pacotes de dados geralmente são maiores que o limite de tamanho crítico do armazenamento de dados e, portanto, são armazenados como registros de armazenamento de dados. Quando a replicação é concluída, o nó em `/var/replication/data` é excluído, mas o registro do armazenamento de dados permanece como &quot;lixo&quot;.
 
 Outra fonte de lixo recuperável são os pacotes. Os dados do pacote, como tudo o mais, são armazenados no repositório e, portanto, para pacotes com mais de 4 KB, no armazenamento de dados. Durante um projeto de desenvolvimento ou ao longo do tempo enquanto mantém um sistema, os pacotes podem ser criados e recriados muitas vezes, cada criação resultando em um novo registro de armazenamento de dados, tornando-o órfão do registro da criação anterior.
 
 ## Como funciona a coleta de lixo do armazenamento de dados? {#how-does-data-store-garbage-collection-work}
 
-Se o repositório tiver sido configurado com um armazenamento de dados externo, [a coleta de lixo do armazenamento de dados será executada automaticamente](/help/sites-administering/data-store-garbage-collection.md#automating-data-store-garbage-collection) como parte da Janela de manutenção semanal. O administrador do sistema também pode [executar coleta de lixo do armazenamento de dados manualmente](#running-data-store-garbage-collection) conforme necessário. Em geral, recomenda-se que a coleta de lixo do armazenamento de dados seja executada periodicamente, mas que os seguintes fatores sejam considerados no planejamento das coletas de lixo do armazenamento de dados:
+Se o repositório tiver sido configurado com um repositório de dados externo, a [coleta de lixo do repositório de dados será executada automaticamente](/help/sites-administering/data-store-garbage-collection.md#automating-data-store-garbage-collection) como parte da Janela de Manutenção Semanal. O administrador do sistema também pode [executar a coleta de lixo do armazenamento de dados manualmente](#running-data-store-garbage-collection) conforme necessário. Em geral, recomenda-se que a coleta de lixo do armazenamento de dados seja executada periodicamente, mas que os seguintes fatores sejam considerados no planejamento das coletas de lixo do armazenamento de dados:
 
 * As coletas de lixo do armazenamento de dados levam tempo e podem afetar o desempenho, portanto, devem ser planejadas adequadamente.
 * A remoção de registros de lixo do armazenamento de dados não afeta o desempenho normal, portanto, não é uma otimização de desempenho.
@@ -61,9 +61,9 @@ Essa abordagem funciona bem para um único nó com um armazenamento de dados pri
 
 Há três maneiras de executar a coleta de lixo do armazenamento de dados, dependendo da configuração do armazenamento de dados no qual o AEM está sendo executado:
 
-1. Via [Limpeza de revisão](/help/sites-deploying/revision-cleanup.md) - um mecanismo de coleta de lixo geralmente usado para limpeza de armazenamento de nós.
+1. Via [Limpeza de Revisão](/help/sites-deploying/revision-cleanup.md) - um mecanismo de coleta de lixo geralmente usado para limpeza de armazenamento de nós.
 
-1. Via [Coleta de lixo do armazenamento de dados](/help/sites-administering/data-store-garbage-collection.md#running-data-store-garbage-collection-via-the-operations-dashboard) - um mecanismo de coleta de lixo específico para armazenamentos de dados externos, disponível no Painel de operações.
+1. Por meio da [Coleta de Lixo do Repositório de Dados](/help/sites-administering/data-store-garbage-collection.md#running-data-store-garbage-collection-via-the-operations-dashboard) - um mecanismo de coleta de lixo específico para repositórios de dados externos, disponível no Painel de Operações.
 1. Através do [Console JMX](/help/sites-administering/jmx-console.md).
 
 Se TarMK estiver sendo usado como armazenamento de nó e armazenamento de dados, a Limpeza de revisão poderá ser usada para a coleta de lixo do armazenamento de nó e do armazenamento de dados. No entanto, se um armazenamento de dados externo estiver configurado, como o Armazenamento de dados do sistema de arquivos, a coleta de lixo do armazenamento de dados deverá ser acionada explicitamente, separado da Limpeza de revisão. A coleta de lixo do armazenamento de dados pode ser acionada pelo Painel de operações ou pelo Console JMX.
@@ -102,18 +102,18 @@ A tabela abaixo mostra o tipo de coleta de lixo do armazenamento de dados que pr
 
 ### Execução da coleta de lixo do armazenamento de dados por meio do painel de operações {#running-data-store-garbage-collection-via-the-operations-dashboard}
 
-A Janela de manutenção semanal integrada, disponível por meio da [Painel de operações](/help/sites-administering/operations-dashboard.md), contém uma tarefa interna para acionar a Coleta de lixo do armazenamento de dados às 1:00 aos domingos.
+A Janela de Manutenção Semanal interna, disponível no [Painel de Operações](/help/sites-administering/operations-dashboard.md), contém uma tarefa interna para acionar a Coleta de Lixo do Repositório de Dados às 1:00 aos domingos.
 
 Se você precisar executar a coleta de lixo do armazenamento de dados fora desse período, ela poderá ser acionada manualmente por meio do Painel de operações.
 
 Antes de executar a coleta de lixo do armazenamento de dados, você deve verificar se nenhum backup está em execução no momento.
 
-1. Abra o Painel de operações em **Navegação** > **Ferramentas** > **Operações** > **Manutenção**.
-1. Clique em **Janela de manutenção semanal**.
+1. Abra o Painel de Operações por **Navegação** > **Ferramentas** > **Operações** > **Manutenção**.
+1. Clique na **Janela de manutenção semanal**.
 
    ![chlimage_1-64](assets/chlimage_1-64.png)
 
-1. Selecione o **Coleta de lixo do armazenamento de dados** tarefa e, em seguida, clique na guia **Executar** ícone.
+1. Selecione a tarefa **Coleta de Lixo do Repositório de Dados** e clique no ícone **Executar**.
 
    ![chlimage_1-65](assets/chlimage_1-65.png)
 
@@ -123,7 +123,7 @@ Antes de executar a coleta de lixo do armazenamento de dados, você deve verific
 
 >[!NOTE]
 >
->A tarefa Coleta de Lixo do Armazenamento de Dados só estará visível se você tiver configurado um armazenamento de dados de arquivo externo. Consulte [Configuração de armazenamentos de nós e armazenamentos de dados no AEM 6](/help/sites-deploying/data-store-config.md#file-data-store) para obter informações sobre como configurar um armazenamento de dados de arquivo.
+>A tarefa Coleta de Lixo do Armazenamento de Dados só estará visível se você tiver configurado um armazenamento de dados de arquivo externo. Consulte [Configurando armazenamentos de nó e armazenamentos de dados no AEM 6](/help/sites-deploying/data-store-config.md#file-data-store) para obter informações sobre como configurar um armazenamento de dados de arquivo.
 
 ### Executando a coleta de lixo do armazenamento de dados por meio do console JMX {#running-data-store-garbage-collection-via-the-jmx-console}
 
@@ -135,10 +135,10 @@ Esta seção trata da execução manual da coleta de lixo do armazenamento de da
 
 Para executar a coleta de lixo:
 
-1. No Console de gerenciamento do Apache Felix OSGi, destaque a opção **Principal** e selecione **JMX** no menu a seguir.
-1. Em seguida, pesquise por e clique no link **Gerenciador de repositório** MBean (ou vá para `https://<host>:<port>/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Drepository+manager%2Ctype%3DRepositoryManagement`).
+1. No Console de Gerenciamento do Apache Felix OSGi, destaque a guia **Principal** e selecione **JMX** no menu a seguir.
+1. Em seguida, pesquise por e clique no **Gerenciador de Repositório** MBean (ou vá para `https://<host>:<port>/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Drepository+manager%2Ctype%3DRepositoryManagement`).
 1. Clique em **startDataStoreGC(boolean markOnly)**.
-1. digite &quot;`true`&quot; para o `markOnly` se necessário:
+1. insira &quot;`true`&quot; para o parâmetro `markOnly`, se necessário:
 
    | **Opção** | **Descrição** |
    |---|---|
@@ -152,13 +152,13 @@ Para executar a coleta de lixo:
 
 >[!NOTE]
 >
->A tarefa de coleta de lixo do armazenamento de dados só será iniciada se você tiver configurado um armazenamento de dados de arquivo externo. Se um armazenamento de dados de arquivo externo não tiver sido configurado, a tarefa retornará a mensagem `Cannot perform operation: no service of type BlobGCMBean found` depois de invocar. Consulte [Configuração de armazenamentos de nós e armazenamentos de dados no AEM 6](/help/sites-deploying/data-store-config.md#file-data-store) para obter informações sobre como configurar um armazenamento de dados de arquivo.
+>A tarefa de coleta de lixo do armazenamento de dados só será iniciada se você tiver configurado um armazenamento de dados de arquivo externo. Se um armazenamento de dados de arquivo externo não tiver sido configurado, a tarefa retornará a mensagem `Cannot perform operation: no service of type BlobGCMBean found` após invocar. Consulte [Configurando armazenamentos de nó e armazenamentos de dados no AEM 6](/help/sites-deploying/data-store-config.md#file-data-store) para obter informações sobre como configurar um armazenamento de dados de arquivo.
 
 ## Automatização da coleta de lixo do armazenamento de dados {#automating-data-store-garbage-collection}
 
 Se possível, a coleta de lixo do armazenamento de dados deve ser executada quando houver pouca carga no sistema, por exemplo, de manhã.
 
-A Janela de manutenção semanal integrada, disponível por meio da [Painel de operações](/help/sites-administering/operations-dashboard.md), contém uma tarefa interna para acionar a Coleta de lixo do armazenamento de dados às 1:00 aos domingos. Você também deve verificar se não há backups em execução no momento. O início da janela de manutenção pode ser personalizado por meio do painel, conforme necessário.
+A Janela de Manutenção Semanal interna, disponível no [Painel de Operações](/help/sites-administering/operations-dashboard.md), contém uma tarefa interna para acionar a Coleta de Lixo do Repositório de Dados às 1:00 aos domingos. Você também deve verificar se não há backups em execução no momento. O início da janela de manutenção pode ser personalizado por meio do painel, conforme necessário.
 
 >[!NOTE]
 >
@@ -168,7 +168,7 @@ Se você não quiser executar a coleta de lixo do armazenamento de dados com a J
 
 >[!CAUTION]
 >
->No exemplo a seguir `curl` comandos vários parâmetros podem precisar ser configurados para sua instância; por exemplo, o nome do host ( `localhost`), porta ( `4502`), senha do administrador ( `xyz`) e vários parâmetros para a coleta de lixo do armazenamento de dados real.
+>No exemplo a seguir, comandos `curl`, vários parâmetros podem precisar ser configurados para sua instância; por exemplo, o nome do host ( `localhost`), a porta ( `4502`), a senha de administrador ( `xyz`) e vários parâmetros para a coleta de lixo do armazenamento de dados real.
 
 Este é um exemplo de comando curl para chamar a coleta de lixo do armazenamento de dados pela linha de comando:
 
@@ -183,10 +183,10 @@ O comando curl retorna imediatamente.
 A verificação de consistência do armazenamento de dados relatará todos os binários de armazenamento de dados que estão ausentes, mas ainda são referenciados. Para iniciar uma verificação de consistência, siga estas etapas:
 
 1. Vá para o console JMX. Para obter informações sobre como usar o console JMX, consulte [este artigo](/help/sites-administering/jmx-console.md#using-the-jmx-console).
-1. Procure por **BlobGarbageCollection** Mbean e clique nele.
-1. Clique em `checkConsistency()` link.
+1. Procure o Mbean **BlobGarbageCollection** e clique nele.
+1. Clique no link `checkConsistency()`.
 
-Após a conclusão da verificação de consistência, uma mensagem mostrará o número de binários relatados como ausentes. Se o número for maior que 0, verifique a `error.log` para obter mais detalhes sobre os binários ausentes.
+Após a conclusão da verificação de consistência, uma mensagem mostrará o número de binários relatados como ausentes. Se o número for maior que 0, verifique o `error.log` para obter mais detalhes sobre os binários ausentes.
 
 Abaixo, você encontrará um exemplo de como os binários ausentes são relatados nos logs:
 

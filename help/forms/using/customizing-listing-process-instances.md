@@ -49,7 +49,7 @@ Na lista de instâncias de processos, para cada instância de processo, o espaç
   </tr>
   <tr>
    <td>processInstanceStatus</td>
-   <td>0 = Iniciado<br /> 1 = Em execução<br /> 2 = Concluído<br /> 3 = Concluindo<br /> 4 = Terminado<br /> 5 = Encerrando<br /> 6 = Suspenso<br /> 7 = Suspensão<br /> 8 = Cancelando Suspensão</td>
+   <td>0 = Iniciado<br /> 1 = Em Execução<br /> 2 = Concluído<br /> 3 = Concluindo<br /> 4 = Encerrado<br /> 5 = Encerrando<br /> 6 = Suspenso<br /> 7 = Suspenso<br /> 8 = Cancelando Suspensão</td>
   </tr>
   <tr>
    <td>processName</td>
@@ -61,16 +61,16 @@ Na lista de instâncias de processos, para cada instância de processo, o espaç
   </tr>
   <tr>
    <td>processVariables</td>
-   <td>Matriz de objetos de variáveis de processo. Cada objeto de variável de processo contém <strong>name</strong> (o nome da variável do processo), <strong>value</strong> (valor da variável de processo) e<strong> type</strong> (o tipo de variável de processo).</td>
+   <td>Matriz de objetos de variáveis de processo. Cada objeto de variável de processo contém <strong>nome</strong> (o nome da variável de processo), <strong>valor</strong> (valor da variável de processo) e<strong> tipo</strong> (o tipo de variável de processo).</td>
   </tr>
  </tbody>
 </table>
 
 **Exemplo:**
 
-Para exibir a variável `description` da instância do processo no cartão da instância do processo, execute as etapas a seguir.
+Para exibir a propriedade `description` da instância do processo no cartão da instância do processo, execute as etapas a seguir.
 
-1. Siga as [Etapas genéricas para personalização do espaço de trabalho do AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md).
+1. Siga as [etapas genéricas para personalização do espaço de trabalho do AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md).
 1. Faça o seguinte:
 
    1. Copie /libs/ws/js/runtime/templates/processinstance.html para/apps/ws/js/runtime/templates/, se ele não existir. Clique em **Salvar tudo**.
@@ -83,7 +83,7 @@ Para exibir a variável `description` da instância do processo no cartão da in
 1. Faça o seguinte:
 
    1. Abra /apps/ws/js/registry.js para edição.
-   1. Pesquisar e substituir `text!/lc/libs/ws/js/runtime/templates/processinstance.html`com `text!/lc/`**aplicativos**/ws/js/runtime/templates/processinstance.html.
+   1. Pesquisar e substituir `text!/lc/libs/ws/js/runtime/templates/processinstance.html`por `text!/lc/`**aplicativos**/ws/js/runtime/templates/processinstance.html.
 
 1. As alterações acima podem exigir uma atualização do arquivo CSS adicionando uma entrada na folha de estilos /apps/ws/css/newStyle.css da seguinte maneira:
 

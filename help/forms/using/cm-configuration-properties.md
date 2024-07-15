@@ -17,7 +17,7 @@ ht-degree: 3%
 
 # Propriedades de configuração do gerenciamento de correspondência {#correspondence-management-configuration-properties}
 
-Para configurar essas propriedades, abra o seguinte URL em um navegador: `https://<server>:<port>/<contextPath>/system/console/configMgr` e selecione **Configurações do gerenciamento de correspondência**.
+Para configurar essas propriedades, abra a seguinte URL em um navegador: `https://<server>:<port>/<contextPath>/system/console/configMgr` e selecione **Configurações de Gerenciamento de Correspondência**.
 
 O Gerenciamento de correspondências tem as seguintes propriedades de configuração:
 
@@ -162,8 +162,8 @@ O Gerenciamento de correspondências tem as seguintes propriedades de configura�
    <td>—<p> </p> </td>
   </tr>
   <tr>
-   <td><p>Gerenciar instâncias de carta ao publicar</p> </td>
-   <td><p>Habilitar/desabilitar a funcionalidade Gerenciar carta (aplicável somente para o Servidor de publicação)</p> </td>
+   <td><p>Gerenciar instâncias de cartas no Publish</p> </td>
+   <td><p>Habilitar/desabilitar a funcionalidade Gerenciar carta (aplicável somente para o Publish Server)</p> </td>
    <td><p>falso</p> </td>
    <td><p>verdadeiro / falso</p> </td>
   </tr>
@@ -198,7 +198,7 @@ O Gerenciamento de correspondências tem as seguintes propriedades de configura�
    <td><p>verdadeiro / falso</p> </td>
   </tr>
   <tr>
-   <td><p>Habilitar Publicar Auditoria</p> </td>
+   <td><p>Habilitar a auditoria do Publish</p> </td>
    <td><p>Ativar/desativar a funcionalidade de auditoria para publicação de ativos</p> </td>
    <td><p>falso</p> </td>
    <td><p>verdadeiro / falso</p> </td>
@@ -247,13 +247,13 @@ O Gerenciamento de correspondências tem as seguintes propriedades de configura�
   </tr>
   <tr>
    <td><p>Tamanho do Cache de Carta</p> </td>
-   <td><p>Especifique o Número máximo de letras a serem mantidas no cache.</p> <p>Alterar esse valor resultará na limpeza de <code>in-memory</code> cache.</p> </td>
+   <td><p>Especifique o Número máximo de letras a serem mantidas no cache.</p> <p>A alteração desse valor resultará na limpeza do cache <code>in-memory</code>.</p> </td>
    <td><p>100</p> </td>
    <td><p>Qualquer valor numérico</p> </td>
   </tr>
   <tr>
    <td><p>Ativar cache de cartas</p> </td>
-   <td><p>Ativar/desativar o cache de letras.</p> <p>Alterar esse valor resultará na limpeza de <code>in-memory </code> cache.</p> </td>
+   <td><p>Ativar/desativar o cache de letras.</p> <p>A alteração desse valor resultará na limpeza do cache <code>in-memory </code>.</p> </td>
    <td><p>verdadeiro</p> </td>
    <td><p>verdadeiro / falso</p> </td>
   </tr>

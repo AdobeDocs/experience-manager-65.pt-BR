@@ -18,9 +18,9 @@ ht-degree: 0%
 
 # OWASP 10 melhores{#owasp-top}
 
-A variável [Abrir Projeto de Segurança de Aplicativo Web](https://owasp.org/) (OWASP) mantém uma lista do que consideram ser a [Dez principais riscos à segurança de aplicações web](https://owasp.org/www-project-top-ten/).
+O [Open Web Application Security Project](https://owasp.org/) (OWASP) mantém uma lista do que eles consideram como os [Dez Principais Riscos de Segurança de Aplicativos Web](https://owasp.org/www-project-top-ten/).
 
-Eles estão listados abaixo, junto com uma explicação de como o CRX lida com eles.
+Eles estão listados abaixo, junto com uma explicação de como a CRX lida com eles.
 
 ## 1. Injeção {#injection}
 
@@ -30,13 +30,13 @@ Eles estão listados abaixo, junto com uma explicação de como o CRX lida com e
 
 ## 2. Criação de script entre sites (XSS) {#cross-site-scripting-xss}
 
-A prática geral de mitigação é codificar todas as saídas de conteúdo gerado pelo usuário usando uma biblioteca de proteção XSS do lado do servidor com base em [Codificador OWASP](https://owasp.org/www-project-java-encoder/) e [AntiSamy](https://wiki.owasp.org/index.php/Category:OWASP_AntiSamy_Project).
+A prática de mitigação geral é codificar toda a saída de conteúdo gerado pelo usuário usando uma biblioteca de proteção XSS do lado do servidor com base no [Codificador OWASP](https://owasp.org/www-project-java-encoder/) e no [AntiSamy](https://wiki.owasp.org/index.php/Category:OWASP_AntiSamy_Project).
 
 O XSS é uma prioridade principal durante os testes e o desenvolvimento, e todos os problemas encontrados são (normalmente) resolvidos imediatamente.
 
 ## 3. Autenticação interrompida e gerenciamento de sessão {#broken-authentication-and-session-management}
 
-O AEM usa técnicas de autenticação comprovadas e de som, contando com [Apache Jackrabbit](https://jackrabbit.apache.org/jcr/index.html) e [Apache Sling](https://sling.apache.org/). As sessões de navegador/HTTP não são usadas no AEM.
+O AEM usa técnicas de autenticação comprovadas e de som, dependendo do [Apache Jackrabbit](https://jackrabbit.apache.org/jcr/index.html) e do [Apache Sling](https://sling.apache.org/). As sessões de navegador/HTTP não são usadas no AEM.
 
 ## 4. Referências de objeto direto não seguras {#insecure-direct-object-references}
 
@@ -46,13 +46,13 @@ Todo o acesso a objetos de dados é mediado pelo repositório e, portanto, restr
 
 A CSRF (Falsificação de solicitação entre sites) é atenuada pela injeção automática de um token criptográfico em todos os formulários e solicitações de AJAX e pela verificação desse token no servidor para cada POST.
 
-Além disso, o AEM é enviado com um filtro baseado no cabeçalho do referenciador, que pode ser configurado para *somente* permitir solicitações POST de hosts específicos (definidos em uma lista).
+Além disso, o AEM vem com um filtro baseado em cabeçalho de referenciador, que pode ser configurado para *somente* permitir solicitações POST de hosts específicos (definidos em uma lista).
 
 ## 6. Erro de configuração de segurança {#security-misconfiguration}
 
-É impossível garantir que todo o software esteja sempre configurado corretamente. No entanto, o Adobe se esforça para fornecer o máximo de orientação possível e tornar a configuração o mais simples possível. Além disso, o AEM [verificações de integridade de segurança integradas](/help/sites-administering/operations-dashboard.md) que ajudam a monitorar rapidamente a configuração de segurança.
+É impossível garantir que todo o software esteja sempre configurado corretamente. No entanto, o Adobe se esforça para fornecer o máximo de orientação possível e tornar a configuração o mais simples possível. Além disso, o AEM vem com [verificações de integridade de segurança integradas](/help/sites-administering/operations-dashboard.md) que ajudam você a monitorar rapidamente a configuração de segurança.
 
-Revise o [Lista de verificação de segurança](/help/sites-administering/security-checklist.md) para obter mais informações que fornecem instruções passo a passo sobre como reforçar o.
+Revise a [Lista de Verificação de Segurança](/help/sites-administering/security-checklist.md) para obter mais informações que fornecem instruções passo a passo sobre como reforçar a segurança.
 
 ## 7. Armazenamento criptográfico inseguro {#insecure-cryptographic-storage}
 
@@ -62,7 +62,7 @@ Dados confidenciais, como credenciais de terceiros, são armazenados em formato 
 
 ## 8. Falha ao restringir o acesso ao URL {#failure-to-restrict-url-access}
 
-O repositório permite a configuração de [privilégios refinados (conforme especificado pelo JCR)](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html) para qualquer usuário ou grupo específico em qualquer caminho, por meio de entradas de controle de acesso. As restrições de acesso são aplicadas pelo repositório.
+O repositório permite a configuração de [privilégios refinados (conforme especificado pelo JCR)](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html) para qualquer usuário ou grupo em qualquer caminho, por meio de entradas de controle de acesso. As restrições de acesso são aplicadas pelo repositório.
 
 ## 9. Proteção insuficiente da camada de transporte {#insufficient-transport-layer-protection}
 

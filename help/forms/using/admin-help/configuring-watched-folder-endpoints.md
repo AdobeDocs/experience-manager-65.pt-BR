@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Configurando pontos de extremidade de pasta monitorada {#configuring-watched-folder-endpoints}
 
-Um administrador pode configurar uma pasta de rede, conhecida como *pasta monitorada*, para que, quando um usuário colocar um arquivo (como um arquivo PDF) na pasta monitorada, uma operação de serviço configurada seja chamada e manipule o arquivo. Depois que o serviço executa a operação especificada, ele salva o arquivo modificado em uma pasta de saída especificada.
+Um administrador pode configurar uma pasta de rede, conhecida como *pasta monitorada*, de modo que, quando um usuário colocar um arquivo (como um arquivo de PDF) na pasta monitorada, uma operação de serviço configurada seja invocada e manipule o arquivo. Depois que o serviço executa a operação especificada, ele salva o arquivo modificado em uma pasta de saída especificada.
 
 ## Configurar o serviço Pasta monitorada {#configuring-the-watched-folder-service}
 
@@ -27,7 +27,7 @@ Antes de configurar um endpoint de pasta monitorada, configure o serviço Pasta 
 * Para configurar atributos que são comuns para todos os endpoints de pasta monitorados
 * Para fornecer valores padrão para todos os pontos de extremidade da pasta monitorada
 
-Depois de configurar o serviço Pasta monitorada, você adiciona um terminal Pasta monitorada para o serviço de destino. Ao adicionar o endpoint, você define valores, como o nome do serviço e o nome da operação a serem chamados quando arquivos ou pastas forem colocados na pasta de entrada do serviço Pasta monitorada configurado. Para obter detalhes sobre como configurar o serviço Pasta monitorada, consulte [Configurações do serviço de pasta monitorada](/help/forms/using/admin-help/configure-service-settings.md#watched-folder-service-settings).
+Depois de configurar o serviço Pasta monitorada, você adiciona um terminal Pasta monitorada para o serviço de destino. Ao adicionar o endpoint, você define valores, como o nome do serviço e o nome da operação a serem chamados quando arquivos ou pastas forem colocados na pasta de entrada do serviço Pasta monitorada configurado. Para obter detalhes sobre como configurar o serviço Pasta monitorada, consulte [configurações do serviço Pasta monitorada](/help/forms/using/admin-help/configure-service-settings.md#watched-folder-service-settings).
 
 ## Criação de uma pasta monitorada {#creating-a-watched-folder}
 
@@ -42,12 +42,12 @@ Em um ambiente em cluster, a pasta usada como uma pasta monitorada deve ser aces
 
 No Windows, se o servidor de aplicativos estiver sendo executado como um serviço, ele deverá ser iniciado com acesso apropriado à pasta compartilhada de uma das seguintes maneiras:
 
-* Configurar o serviço do servidor de aplicativos Fazer Logon como **parâmetro** para iniciar como um usuário específico com acesso apropriado à pasta monitorada compartilhada.
+* Configure o serviço do servidor de aplicativos Fazer Logon como **parâmetro** para iniciar como um usuário específico com acesso apropriado à pasta monitorada compartilhada.
 * Configure a opção Iniciar como Sistema Local do serviço do servidor de aplicativos para Permitir que o Serviço interaja com a área de trabalho. Esta opção requer que a pasta monitorada compartilhada seja acessível e gravável para todos.
 
 ## Encadeamento de pastas monitoradas {#chaining-together-watched-folders}
 
-As pastas monitoradas podem ser encadeadas para que um documento de resultado de uma pasta monitorada seja o documento de entrada da próxima pasta monitorada. Cada pasta monitorada pode chamar um serviço diferente. Ao configurar pastas monitoradas dessa maneira, vários serviços podem ser chamados. Por exemplo, uma pasta monitorada poderia converter arquivos PDF para Adobe PostScript® e uma segunda pasta monitorada poderia converter os arquivos PostScript para o formato PDF/A. Para fazer isso, basta definir a variável *resultado* pasta da pasta monitorada definida pelo seu primeiro endpoint para apontar para a *entrada* pasta da pasta monitorada definida pelo segundo ponto de extremidade.
+As pastas monitoradas podem ser encadeadas para que um documento de resultado de uma pasta monitorada seja o documento de entrada da próxima pasta monitorada. Cada pasta monitorada pode chamar um serviço diferente. Ao configurar pastas monitoradas dessa maneira, vários serviços podem ser chamados. Por exemplo, uma pasta monitorada poderia converter arquivos PDF para Adobe PostScript® e uma segunda pasta monitorada poderia converter os arquivos PostScript para o formato PDF/A. Para fazer isso, basta definir a pasta *result* da pasta monitorada definida pelo seu primeiro ponto de extremidade para apontar para a pasta *input* da pasta monitorada definida pelo seu segundo ponto de extremidade.
 
 A saída da primeira conversão iria para \path\result. A entrada para a segunda conversão seria \path\result, e a saída da segunda conversão iria para \path\result\result (ou o diretório definido na caixa Pasta de resultados para a segunda conversão).
 
@@ -99,7 +99,7 @@ O processo de chamar um serviço usando pastas monitoradas é o seguinte:
    * Examina a pasta de entrada em busca de arquivos ou pastas que correspondam ao padrão de inclusão de arquivos e exclui arquivos ou pastas para o padrão de exclusão de arquivos especificado. Os arquivos ou pastas mais antigos são selecionados primeiro. Arquivos e pastas mais antigos que o tempo de espera também são coletados. Em uma varredura, o número de arquivos ou pastas processados se baseia no tamanho do lote. Para obter informações sobre padrões de arquivo, consulte [Sobre padrões de arquivo](configuring-watched-folder-endpoints.md#about-file-patterns). Para obter informações sobre como definir o tamanho do lote, consulte [Configurações do serviço de pasta monitorada](/help/forms/using/admin-help/configure-service-settings.md#watched-folder-service-settings).
    * Seleciona os arquivos ou pastas para processamento. Se os arquivos ou pastas não tiverem sido completamente baixados, eles serão selecionados na próxima verificação. Para garantir que as pastas sejam completamente baixadas, os administradores devem criar uma pasta com um nome usando o padrão de exclusão de arquivo. Depois que a pasta tiver todos os arquivos, ela deverá ser renomeada para o padrão especificado no padrão de arquivo de inclusão. Essa etapa garante que a pasta tenha todos os arquivos necessários para chamar o serviço. Para obter mais informações sobre como garantir que as pastas sejam completamente baixadas, consulte [Dicas e truques para pastas monitoradas](configuring-watched-folder-endpoints.md#tips-and-tricks-for-watched-folders).
    * Move os arquivos ou pastas para a pasta de preparo depois de selecioná-los para processamento.
-   * Converte os arquivos ou pastas na pasta de preparo para a entrada apropriada com base nos mapeamentos do parâmetro de entrada do ponto de extremidade. Para obter exemplos de mapeamentos de parâmetro de entrada, consulte [Dicas e truques para pastas monitoradas](configuring-watched-folder-endpoints.md#tips-and-tricks-for-watched-folders).
+   * Converte os arquivos ou pastas na pasta de preparo para a entrada apropriada com base nos mapeamentos do parâmetro de entrada do ponto de extremidade. Para obter exemplos de mapeamentos de parâmetros de entrada, consulte [Dicas e truques para pastas monitoradas](configuring-watched-folder-endpoints.md#tips-and-tricks-for-watched-folders).
 
 
 1. O serviço de destino configurado para o ponto de extremidade é chamado de forma síncrona ou assíncrona. O serviço de destino é chamado usando o nome de usuário e a senha configurados para o ponto de extremidade.
@@ -116,27 +116,27 @@ O processo de chamar um serviço usando pastas monitoradas é o seguinte:
 
 Use as configurações a seguir para configurar um ponto de extremidade de pasta monitorada.
 
-**Nome:** (Obrigatório) Identifica o endpoint. Não inclua um caractere &lt; porque ele truncará o nome exibido no Workspace. Se você estiver inserindo um URL como o nome do endpoint, verifique se ele está em conformidade com as regras de sintaxe especificadas no RFC1738.
+**Nome:** (Obrigatório) Identifica o ponto de extremidade. Não inclua um caractere &lt; porque ele truncará o nome exibido no Workspace. Se você estiver inserindo um URL como o nome do endpoint, verifique se ele está em conformidade com as regras de sintaxe especificadas no RFC1738.
 
-**Descrição:** Uma descrição do endpoint. Não inclua um caractere &lt; porque ele truncará a descrição exibida no Workspace.
+**Descrição:** Uma descrição do ponto de extremidade. Não inclua um caractere &lt; porque ele truncará a descrição exibida no Workspace.
 
 **Caminho:** (Obrigatório) Especifica o local da pasta monitorada. Em um ambiente clusterizado, essa configuração deve apontar para uma pasta de rede compartilhada que possa ser acessada de todos os computadores no cluster.
 
-**Assíncrono:** Identifica o tipo de invocação como assíncrono ou síncrono. O valor padrão é assíncrono. O assíncrono é recomendado para processos de longa duração, enquanto o síncrono é recomendado para processos transitórios ou de curta duração.
+**Assíncrono:** identifica o tipo de invocação como assíncrono ou síncrono. O valor padrão é assíncrono. O assíncrono é recomendado para processos de longa duração, enquanto o síncrono é recomendado para processos transitórios ou de curta duração.
 
-**Expressão Cron:** Insira uma expressão CRON se a pasta monitorada precisar ser agendada usando uma expressão CRON. Quando esta configuração é definida, o Intervalo de repetição é ignorado.
+**Expressão Cron:** insira uma expressão cron se a pasta monitorada precisar ser agendada usando uma expressão cron. Quando esta configuração é definida, o Intervalo de repetição é ignorado.
 
-**Intervalo de Repetição:** O intervalo em segundos para verificar a entrada da pasta monitorada. A menos que a configuração Acelerador esteja ativada, o Intervalo de Repetição deve ser maior que o tempo médio para processar um trabalho; caso contrário, o sistema pode ficar sobrecarregado. O valor padrão é 5. Consulte a descrição do Tamanho do lote para obter informações adicionais.
+**Intervalo de Repetição:** O intervalo em segundos para verificar a pasta monitorada quanto à entrada. A menos que a configuração Acelerador esteja ativada, o Intervalo de Repetição deve ser maior que o tempo médio para processar um trabalho; caso contrário, o sistema pode ficar sobrecarregado. O valor padrão é 5. Consulte a descrição do Tamanho do lote para obter informações adicionais.
 
-**Contagem de repetição:** Número de vezes que a pasta monitorada verifica a pasta ou o diretório. Um valor de -1 indica varredura indefinida. O valor padrão é -1.
+**Contagem de Repetição:** Número de vezes que a pasta monitorada verifica a pasta ou o diretório. Um valor de -1 indica varredura indefinida. O valor padrão é -1.
 
-**Acelerador:** Quando essa opção é selecionada, ela limita o número de trabalhos de pastas monitoradas que o AEM forma processados a qualquer momento. O número máximo de trabalhos é determinado pelo valor Tamanho do Lote. (Consulte Sobre limitação.)
+**Limitação:** quando esta opção é selecionada, ela limita o número de trabalhos de pastas monitorados que o AEM forma a qualquer momento. O número máximo de trabalhos é determinado pelo valor Tamanho do Lote. (Consulte Sobre limitação.)
 
-**Nome de usuário:** (Obrigatório) O nome de usuário usado ao chamar um serviço de destino da pasta monitorada. O valor padrão é SuperAdmin.
+**Nome de Usuário:** (Obrigatório) O nome de usuário usado ao invocar um serviço de destino da pasta monitorada. O valor padrão é SuperAdmin.
 
-**Nome do domínio:** (Obrigatório) O domínio do usuário. O valor padrão é DefaultDom.
+**Nome do Domínio:** (obrigatório) O domínio do usuário. O valor padrão é DefaultDom.
 
-**Tamanho do lote:** O número de arquivos ou pastas a serem selecionados por varredura. Use para evitar uma sobrecarga no sistema; a verificação de muitos arquivos de uma vez pode causar uma falha. O valor padrão é 2.
+**Tamanho do Lote:** O número de arquivos ou pastas a serem selecionados por verificação. Use para evitar uma sobrecarga no sistema; a verificação de muitos arquivos de uma vez pode causar uma falha. O valor padrão é 2.
 
 As configurações Intervalo de repetição e Tamanho do lote determinam quantos arquivos a Pasta monitorada coleta em cada verificação. A pasta monitorada usa um pool de threads do Quartz para verificar a pasta de entrada. O pool de threads é compartilhado com outros serviços. Se o intervalo de verificação for pequeno, as threads examinarão a pasta de entrada com frequência. Se os arquivos forem colocados com frequência na pasta monitorada, mantenha o intervalo de verificação pequeno. Se os arquivos forem descartados com pouca frequência, use um intervalo de verificação maior para que os outros serviços possam usar as threads.
 
@@ -144,44 +144,44 @@ Se houver um grande volume de arquivos sendo descartados, aumente o tamanho do l
 
 Quando os arquivos são colocados na pasta monitorada, ela lista os arquivos na entrada, o que pode reduzir o desempenho se a varredura estiver ocorrendo a cada segundo. O aumento do intervalo de verificação pode melhorar o desempenho. Se o volume de arquivos que está sendo descartado for pequeno, ajuste o Tamanho do lote e o Intervalo de repetição de acordo. Por exemplo, se 10 arquivos forem descartados a cada segundo, tente definir o Intervalo de repetição como 1 segundo e o Tamanho do lote como 10.
 
-**Tempo de espera:** O tempo, em milissegundos, que deve ser aguardado antes que você verifique uma pasta ou um arquivo após sua criação. Por exemplo, se o tempo de espera for de 3.600.000 milissegundos (uma hora) e o arquivo tiver sido criado há um minuto, esse arquivo será selecionado após 59 minutos ou mais. O valor padrão é 0.
+**Tempo de Espera:** O tempo, em milissegundos, que deve ser aguardado antes que você verifique uma pasta ou um arquivo após sua criação. Por exemplo, se o tempo de espera for de 3.600.000 milissegundos (uma hora) e o arquivo tiver sido criado há um minuto, esse arquivo será selecionado após 59 minutos ou mais. O valor padrão é 0.
 
-Essa configuração é útil para garantir que um arquivo ou pasta seja copiado completamente para a pasta de entrada. Por exemplo, se você tiver um arquivo grande para processar e ele levar dez minutos para ser baixado, defina o tempo de espera como 10&amp;ast;60 &amp;ast;1000 milissegundos. Isso impede que a pasta monitorada verifique o arquivo se ele não tiver dez minutos.
+Essa configuração é útil para garantir que um arquivo ou pasta seja copiado completamente para a pasta de entrada. Por exemplo, se você tiver um arquivo grande para processar e o download demorar dez minutos, defina o tempo de espera como 10&amp;ast;60 &amp;ast;1000 milissegundos. Isso impede que a pasta monitorada verifique o arquivo se ele não tiver dez minutos.
 
-**Excluir Padrão do Arquivo:** Ponto e vírgula **;** lista delimitada de padrões que uma pasta monitorada usa para determinar quais arquivos e pastas serão verificados e selecionados. Qualquer arquivo ou pasta com este padrão não será examinado para processamento.
+**Excluir Padrão de Arquivo:** Uma lista delimitada por ponto-e-vírgula **;** de padrões que uma pasta monitorada usa para determinar quais arquivos e pastas serão verificados e selecionados. Qualquer arquivo ou pasta com este padrão não será examinado para processamento.
 
 Essa configuração é útil quando a entrada é uma pasta com vários arquivos. O conteúdo da pasta pode ser copiado para uma pasta com um nome que será selecionado pela pasta monitorada. Isso impede que a pasta monitorada selecione uma pasta para processamento antes que ela seja completamente copiada para a pasta de entrada.
 
 Você pode usar padrões de arquivo para excluir:
 
 * Arquivos com extensões de nome de arquivo específicas; por exemplo, &amp;ast;.dat, &amp;ast;.xml, &amp;ast;.pdf.
-* Arquivos com nomes específicos; por exemplo, dados.&amp;ast; excluiria arquivos e pastas nomeados *dados1*, *dados2* e assim por diante.
+* Arquivos com nomes específicos; por exemplo, dados.&amp;ast; excluiria arquivos e pastas nomeados como *dados1*, *dados2*, e assim por diante.
 * Arquivos com expressões compostas no nome e na extensão, como nestes exemplos:
 
-   * Dados[0-9][0-9][0-9].[dD][aA]&#39;porta&#39;
-   * &amp;ast;.[dD][Aa]&#39;porta&#39;
+   * Dados[0-9][0-9][0-9].[dD][aA]&#39;port&#39;
+   * &amp;ast;.[dD][Aa]&#39;port&#39;
    * &amp;ast;.[Xx][Mm][Ll]
 
 Para obter mais informações sobre padrões de arquivo, consulte [Sobre padrões de arquivo](configuring-watched-folder-endpoints.md#about-file-patterns).
 
-**Incluir Padrão do Arquivo:** (Obrigatório) Um ponto e vírgula **;** lista delimitada de padrões que a pasta monitorada usa para determinar quais pastas e arquivos serão verificados e coletados. Por exemplo, se o Padrão de arquivo de inclusão for input&amp;ast;, todos os arquivos e pastas que corresponderem a input&amp;ast; serão selecionados. Isso inclui arquivos e pastas chamados input1, input2 e assim por diante.
+**Incluir Padrão de Arquivo:** (Obrigatório) Uma lista delimitada por ponto-e-vírgula **;** de padrões que a pasta monitorada usa para determinar quais pastas e arquivos serão verificados e selecionados. Por exemplo, se o Padrão do arquivo de inclusão for input&amp;ast;, todos os arquivos e pastas que corresponderem a input&amp;ast; serão selecionados. Isso inclui arquivos e pastas chamados input1, input2 e assim por diante.
 
 O valor padrão é &amp;ast; e indica todos os arquivos e pastas.
 
 Você pode usar padrões de arquivo para incluir:
 
 * Arquivos com extensões de nome de arquivo específicas; por exemplo, &amp;ast;.dat, &amp;ast;.xml, &amp;ast;.pdf.
-* Arquivos com nomes específicos; por exemplo, dados.&amp;ast; incluiria arquivos e pastas nomeados *dados1*, *dados2* e assim por diante.
+* Arquivos com nomes específicos; por exemplo, dados.&amp;ast; incluiria arquivos e pastas nomeados como *dados1*, *dados2*, e assim por diante.
 * Arquivos com expressões compostas no nome e na extensão, como nestes exemplos:
 
-   * Dados[0-9][0-9][0-9].[dD][aA]&#39;porta&#39;
-   * &amp;ast;.[dD][Aa]&#39;porta&#39;
+   * Dados[0-9][0-9][0-9].[dD][aA]&#39;port&#39;
+   * &amp;ast;.[dD][Aa]&#39;port&#39;
    * &amp;ast;.[Xx][Mm][Ll]
 
 Para obter mais informações sobre padrões de arquivo, consulte [Sobre padrões de arquivo](configuring-watched-folder-endpoints.md#about-file-patterns).
 
 
-**Pasta de resultado:** A pasta onde os resultados salvos são armazenados. Se os resultados não aparecerem nessa pasta, verifique a pasta de falha. Arquivos somente leitura não são processados e serão salvos na pasta de falha. Esse valor pode ser um caminho absoluto ou relativo com os seguintes padrões de arquivo:
+**Pasta de Resultados:** A pasta onde os resultados salvos são armazenados. Se os resultados não aparecerem nessa pasta, verifique a pasta de falha. Arquivos somente leitura não são processados e serão salvos na pasta de falha. Esse valor pode ser um caminho absoluto ou relativo com os seguintes padrões de arquivo:
 
 * %F = prefixo do nome do arquivo
 * %E = extensão de nome de arquivo
@@ -198,17 +198,17 @@ Para obter mais informações sobre padrões de arquivo, consulte [Sobre padrõe
 * %R = número aleatório (entre 0-9)
 * %P = id do processo ou da tarefa
 
-Por exemplo, se forem 20h em 17 de julho de 2009 e você especificar `C:/Test/WF0/failure/%Y/%M/%D/%H/`, a pasta de resultados é `C:/Test/WF0/failure/2009/07/17/20`.
+Por exemplo, se forem 20h de 17 de julho de 2009 e você especificar `C:/Test/WF0/failure/%Y/%M/%D/%H/`, a pasta de resultados será `C:/Test/WF0/failure/2009/07/17/20`.
 
 Se o caminho não for absoluto, mas relativo, a pasta será criada dentro da pasta monitorada. O valor padrão é result/%Y/%M/%D/, que é a pasta Result dentro da pasta monitorada. Para obter mais informações sobre padrões de arquivo, consulte [Sobre padrões de arquivo](configuring-watched-folder-endpoints.md#about-file-patterns).
 
 >[!NOTE]
 >
->Quanto menor o tamanho das pastas de resultados, melhor será o desempenho das Pastas monitoradas. Por exemplo, se a carga estimada para a pasta monitorada for de 1000 arquivos a cada hora, tente um padrão como `result/%Y%M%D%H` para que uma nova subpasta seja criada a cada hora. Se a carga for menor (por exemplo, 1000 arquivos por dia), você poderá usar um padrão como `result/%Y%M%D`.
+>Quanto menor o tamanho das pastas de resultados, melhor será o desempenho das Pastas monitoradas. Por exemplo, se a carga estimada para a pasta monitorada for de 1000 arquivos a cada hora, tente um padrão como `result/%Y%M%D%H` para que uma nova subpasta seja criada a cada hora. Se a carga for menor (por exemplo, 1000 arquivos por dia), você pode usar um padrão como `result/%Y%M%D`.
 
-**Preservar pasta:** O local onde os arquivos são armazenados após a verificação e coleta bem-sucedidas. O caminho pode ser um caminho de diretório absoluto, relativo ou nulo. Você pode usar padrões de arquivo, conforme descrito em Pasta de resultados. O valor padrão é preserve/%Y/%M/%D/.
+**Preservar Pasta:** O local onde os arquivos são armazenados após verificação e coleta bem-sucedidas. O caminho pode ser um caminho de diretório absoluto, relativo ou nulo. Você pode usar padrões de arquivo, conforme descrito em Pasta de resultados. O valor padrão é preserve/%Y/%M/%D/.
 
-**Pasta com falha:** A pasta onde os arquivos de falha são salvos. Este local é sempre relativo à pasta monitorada. Você pode usar padrões de arquivo, conforme descrito em Pasta de resultados.
+**Pasta com Falha:** A pasta onde os arquivos com falha são salvos. Este local é sempre relativo à pasta monitorada. Você pode usar padrões de arquivo, conforme descrito em Pasta de resultados.
 
 Arquivos somente leitura não são processados e serão salvos na pasta de falha.
 
@@ -216,27 +216,27 @@ O valor padrão é failure/%Y/%M/%D/.
 
 **Preservar na Falha:** Preserva os arquivos de entrada se houver uma falha ao executar a operação em um serviço. O valor padrão é true.
 
-**Substituir nomes de arquivo duplicados:** Quando definido como Verdadeiro, os arquivos na pasta de resultados e na pasta de preservação são substituídos. Quando definido como False, os arquivos e as pastas com um sufixo de índice numérico são usados para o nome. O valor padrão é Falso.
+**Substituir Nomes de Arquivo Duplicados:** Quando definido como Verdadeiro, os arquivos na pasta de resultados e na pasta de preservação serão substituídos. Quando definido como False, os arquivos e as pastas com um sufixo de índice numérico são usados para o nome. O valor padrão é Falso.
 
-**Duração da Remoção:** (Obrigatório) Os arquivos e as pastas na pasta de resultados são removidos quando são mais antigos que esse valor. Esse valor é medido em dias. Essa configuração é útil para garantir que a pasta de resultados não fique cheia.
+**Duração da Limpeza:** (Obrigatório) Arquivos e pastas na pasta de resultados são limpos quando são mais antigos que esse valor. Esse valor é medido em dias. Essa configuração é útil para garantir que a pasta de resultados não fique cheia.
 
 Um valor de -1 dias indica que a pasta de resultados nunca deve ser excluída. O valor padrão é -1.
 
-**Nome da operação:** (Obrigatório) Uma lista de operações que podem ser atribuídas ao endpoint da pasta monitorada.
+**Nome da Operação:** (obrigatório) uma lista de operações que podem ser atribuídas ao ponto de extremidade da pasta monitorada.
 
-**Mapeamentos de parâmetros de entrada:** Usado para configurar a entrada necessária para processar o serviço e a operação. As configurações disponíveis dependem do serviço que está usando o ponto de extremidade da pasta monitorada. Estes são os dois tipos de entradas:
+**Mapeamentos de Parâmetros de Entrada:** Usado para configurar a entrada necessária para processar o serviço e a operação. As configurações disponíveis dependem do serviço que está usando o ponto de extremidade da pasta monitorada. Estes são os dois tipos de entradas:
 
-**Literal:** A pasta monitorada usa o valor inserido no campo como é exibido. Todos os tipos básicos de Java são compatíveis. Por exemplo, se uma API usar entradas como String, long, int e Boolean, a cadeia de caracteres será convertida no tipo adequado e o serviço será chamado.
+**Literal:** A pasta monitorada usa o valor inserido no campo como ele é exibido. Todos os tipos básicos de Java são compatíveis. Por exemplo, se uma API usar entradas como String, long, int e Boolean, a cadeia de caracteres será convertida no tipo adequado e o serviço será chamado.
 
-**Variável:** O valor inserido é um padrão de arquivo que a pasta monitorada usa para escolher a entrada. Por exemplo, se houver o serviço de criptografia de senhas, em que o documento de entrada deve ser um arquivo PDF, o usuário poderá usar &amp;ast;.pdf como padrão de arquivo. A pasta monitorada capturará todos os arquivos na pasta monitorada que correspondam a este padrão e chamará o serviço para cada arquivo. Quando uma variável é usada, todos os arquivos de entrada são convertidos em documentos. Somente APIs que usam Documento como tipo de entrada são compatíveis.
+**Variável:** o valor inserido é um padrão de arquivo que a pasta monitorada usa para escolher a entrada. Por exemplo, se houver o serviço de criptografia de senhas, em que o documento de entrada deve ser um arquivo PDF, o usuário poderá usar &amp;ast;.pdf como padrão de arquivo. A pasta monitorada capturará todos os arquivos na pasta monitorada que correspondam a este padrão e chamará o serviço para cada arquivo. Quando uma variável é usada, todos os arquivos de entrada são convertidos em documentos. Somente APIs que usam Documento como tipo de entrada são compatíveis.
 
-**Mapeamentos de Parâmetros de Saída:** Usado para configurar as saídas do serviço e da operação. As configurações disponíveis dependem do serviço que está usando o ponto de extremidade da pasta monitorada.
+**Mapeamentos de Parâmetros de Saída:** Usados para configurar as saídas do serviço e da operação. As configurações disponíveis dependem do serviço que está usando o ponto de extremidade da pasta monitorada.
 
 A saída da pasta monitorada pode ser um único documento, uma lista de documentos ou um mapa de documentos. Esses documentos de saída são salvos na pasta de resultados, usando o padrão especificado no Mapeamento do parâmetro de saída.
 
 >[!NOTE]
 >
->A especificação de nomes que resultam em nomes de arquivo de saída exclusivos melhora o desempenho. Por exemplo, considere o caso em que o serviço retorna um documento de saída e o Mapeamento de parâmetros de saída o mapeia para `%F.%E` (o nome e a extensão do arquivo de entrada). Nesse caso, se os usuários soltarem arquivos com o mesmo nome a cada minuto e a pasta de resultados estiver configurada como `result/%Y/%M/%D`e se a configuração Substituir nome de arquivo duplicado estiver desativada, a Pasta monitorada tentará resolver os nomes de arquivo duplicados. O processo de resolver nomes de arquivo duplicados pode afetar o desempenho. Nessa situação, alterando o Mapeamento de Parâmetros de Saída para `%F_%h_%m_%s_%l` adicionar horas, minutos, segundos e milissegundos ao nome ou garantir que os arquivos soltos tenham nomes exclusivos pode melhorar o desempenho.
+>A especificação de nomes que resultam em nomes de arquivo de saída exclusivos melhora o desempenho. Por exemplo, considere o caso em que o serviço retorna um documento de saída e o Mapeamento de Parâmetros de Saída o mapeia para `%F.%E` (o nome do arquivo e a extensão do arquivo de entrada). Nesse caso, se os usuários eliminarem arquivos com o mesmo nome a cada minuto, a pasta de resultados estiver definida como `result/%Y/%M/%D` e a configuração Substituir nome de arquivo duplicado estiver desativada, a Pasta monitorada tentará resolver os nomes de arquivos duplicados. O processo de resolver nomes de arquivo duplicados pode afetar o desempenho. Nessa situação, alterar o Mapeamento de Parâmetros de Saída para `%F_%h_%m_%s_%l` para adicionar horas, minutos, segundos e milissegundos ao nome ou garantir que os arquivos descartados tenham nomes exclusivos pode melhorar o desempenho.
 
 ## Sobre padrões de arquivo {#about-file-patterns}
 
@@ -246,8 +246,8 @@ Os administradores podem especificar o tipo de arquivo que pode chamar um servi�
 * Arquivos com nomes específicos. Por exemplo, dados.&amp;ast;
 * Arquivos com expressões compostas no nome e na extensão, como nestes exemplos:
 
-   * Dados[0-9][0-9][0-9].[dD][aA]&#39;porta&#39;
-   * &amp;ast;.[dD][Aa]&#39;porta&#39;
+   * Dados[0-9][0-9][0-9].[dD][aA]&#39;port&#39;
+   * &amp;ast;.[dD][Aa]&#39;port&#39;
    * &amp;ast;.[Xx][Mm][Ll]
 
 O administrador pode definir o padrão de arquivo da pasta de saída na qual os resultados serão armazenados. Para as pastas de saída (resultado, preservação e falha), o administrador pode especificar qualquer um destes padrões de arquivo:
@@ -267,8 +267,8 @@ Por exemplo, o caminho para a pasta de resultados pode ser `C:\Adobe\Adobe_Exper
 
 Os mapeamentos de parâmetros de saída também podem especificar padrões adicionais, como estes:
 
-* %F = Nome de arquivo de origem
-* %E = Extensão De Nome De Arquivo De Origem
+* %F = Nome de arquivo do Source
+* %E = Extensão De Nome De Arquivo Do Source
 
 Se o padrão de mapeamento do parâmetro de saída terminar com &quot;File.separator&quot; (que é o separador de caminhos), uma pasta será criada e o conteúdo será copiado nessa pasta. Se o padrão não terminar com &quot;File.separator&quot;, o conteúdo (arquivo de resultado ou pasta) será criado com esse nome. Para obter mais informações sobre mapeamentos de parâmetros de saída, consulte [Dicas e truques para pastas monitoradas](configuring-watched-folder-endpoints.md#tips-and-tricks-for-watched-folders).
 
@@ -317,7 +317,7 @@ Para invocações síncronas, o balanceador de carga Quartz decide qual nó rece
 
 ![en_synchwatchedfoldercluster](assets/en_synchwatchedfoldercluster.png)
 
-Para invocações síncronas, quando um nó falha, o Quartz scheduler envia novos eventos de polling para outros nós. As chamadas que foram iniciadas no nó com falha serão perdidas. Para obter mais informações sobre como recuperar os arquivos associados ao job com falha, consulte [Pontos de falha e recuperação](configuring-watched-folder-endpoints.md#failure-points-and-recovery).
+Para invocações síncronas, quando um nó falha, o Quartz scheduler envia novos eventos de polling para outros nós. As chamadas que foram iniciadas no nó com falha serão perdidas. Para obter mais informações sobre como recuperar os arquivos associados ao trabalho com falha, consulte [Pontos de falha e recuperação](configuring-watched-folder-endpoints.md#failure-points-and-recovery).
 
 
 ### Pasta monitorada assíncrona em um cluster {#asynchronous-watched-folder-in-a-cluster}
@@ -326,7 +326,7 @@ Para invocações assíncronas, o balanceador de carga Quartz decide qual nó re
 
 ![en_asynchwatchedfoldercluster](assets/en_asynchwatchedfoldercluster.png)
 
-Para invocações assíncronas, quando um nó falha, o Quartz scheduler envia novos eventos de polling para outros nós. As solicitações de chamada criadas no nó com falha estarão na fila de serviços do Gerenciador de trabalhos e serão enviadas para outros nós para processamento. Os arquivos para os quais as solicitações de invocação não forem criadas permanecerão na pasta de preparo. Para obter mais informações sobre como recuperar os arquivos associados ao job com falha, consulte [Pontos de falha e recuperação](configuring-watched-folder-endpoints.md#failure-points-and-recovery).
+Para invocações assíncronas, quando um nó falha, o Quartz scheduler envia novos eventos de polling para outros nós. As solicitações de chamada criadas no nó com falha estarão na fila de serviços do Gerenciador de trabalhos e serão enviadas para outros nós para processamento. Os arquivos para os quais as solicitações de invocação não forem criadas permanecerão na pasta de preparo. Para obter mais informações sobre como recuperar os arquivos associados ao trabalho com falha, consulte [Pontos de falha e recuperação](configuring-watched-folder-endpoints.md#failure-points-and-recovery).
 
 
 ## Pontos de falha e recuperação {#failure-points-and-recovery}
@@ -338,9 +338,9 @@ Depois que os arquivos são movidos para a pasta de preparo, solicitações de i
 * Se o servidor ficar inativo antes que a Pasta monitorada possa criar a solicitação de invocação, os arquivos na pasta de preparo permanecerão na pasta de preparo e não serão recuperados.
 * Se a Pasta monitorada tiver criado com sucesso a solicitação de invocação para cada um dos arquivos na pasta de preparo e o servidor falhar, há dois comportamentos com base no tipo de invocação:
 
-**Síncrono:** Se a Pasta monitorada estiver configurada para chamar o serviço de forma síncrona, todos os arquivos na pasta de preparo permanecerão não processados na pasta de preparo.
+**Síncrono:** se a Pasta monitorada estiver configurada para chamar o serviço de forma síncrona, todos os arquivos na pasta de preparo permanecerão não processados na pasta de preparo.
 
-**Assíncrono:** Nesse caso, a Pasta monitorada depende do serviço Gerenciador de trabalhos. Se o serviço do Gerenciador de trabalhos retornar as chamadas da Pasta monitorada, os arquivos na pasta de preparo serão movidos para a pasta de preservação ou falha com base nos resultados da invocação. Se o serviço Gerenciador de trabalhos não retornar a chamada da Pasta monitorada, os arquivos permanecerão não processados na pasta de preparo. Essa situação ocorre quando a Pasta monitorada não está em execução quando o Gerenciador de trabalhos chama de volta.
+**Assíncrono:** Nesse caso, a Pasta Monitorada depende do serviço Gerenciador de Trabalhos. Se o serviço do Gerenciador de trabalhos retornar as chamadas da Pasta monitorada, os arquivos na pasta de preparo serão movidos para a pasta de preservação ou falha com base nos resultados da invocação. Se o serviço Gerenciador de trabalhos não retornar a chamada da Pasta monitorada, os arquivos permanecerão não processados na pasta de preparo. Essa situação ocorre quando a Pasta monitorada não está em execução quando o Gerenciador de trabalhos chama de volta.
 
 ### Recuperando arquivos de origem não processados na pasta de preparo {#recovering-unprocessed-source-files-in-the-stage-folder}
 
@@ -349,7 +349,7 @@ Quando a Pasta monitorada não puder processar os arquivos de origem na pasta de
 1. Reinicie o servidor de aplicativos ou nó.
 1. (Opcional) Impedir que a Pasta monitorada processe novos arquivos de entrada. Se ignorar esta etapa, será muito mais difícil determinar quais arquivos não serão processados na pasta de preparo. Para impedir que a Pasta monitorada processe novos arquivos de entrada, execute uma das seguintes tarefas:
 
-   * Em Aplicativos e Serviços, altere o parâmetro Incluir Padrão do Arquivo do endpoint da pasta monitorada para algo que não corresponda a nenhum dos novos arquivos de entrada (por exemplo, insira `NOMATCH`).
+   * Em Aplicativos e Serviços, altere o parâmetro Incluir Padrão do Arquivo do ponto de extremidade da pasta monitorada para algo que não corresponda a nenhum dos novos arquivos de entrada (por exemplo, digite `NOMATCH`).
    * Suspenda o processo que está criando novos arquivos de entrada.
 
    Aguarde até que o AEM recupere e e processe todos os arquivos. A maioria dos arquivos deve ser recuperada e os novos arquivos de entrada processados corretamente. O tempo de espera pela Pasta monitorada para recuperar e processar os arquivos dependerá da duração da operação a ser chamada e do número de arquivos a serem recuperados.
@@ -374,22 +374,22 @@ Estas são algumas dicas e truques ao configurar o endpoint da Pasta monitorada:
 * Se você tiver uma pasta monitorada no Windows que esteja processando arquivos de imagem, especifique valores para a opção Incluir padrão do arquivo ou Excluir padrão do arquivo para impedir que o arquivo Thumbs.db gerado automaticamente pelo Windows seja sondado pela pasta monitorada.
 * Se uma expressão CRON for especificada, o intervalo de repetição será ignorado. O uso da expressão cron é baseado no sistema de agendamento de tarefas de código aberto Quartz, versão 1.4.0.
 * O tamanho do lote é o número de arquivos ou pastas que serão selecionados em cada varredura da pasta monitorada. Se o tamanho do lote estiver definido como dois e dez arquivos ou pastas forem descartados na pasta de entrada da pasta monitorada, apenas dois serão coletados em cada verificação. Na próxima verificação, que ocorrerá após o tempo especificado no intervalo de repetição, os próximos dois arquivos serão coletados.
-* Para padrões de arquivo, os administradores podem especificar expressões regulares com suporte adicionado de padrões curinga para especificar padrões de arquivo. A Pasta monitorada modifica a expressão regular para suportar padrões curinga, como o &amp;ast;.&amp;ast; ou &amp;ast;.pdf. Esses padrões curingas não são suportados pelas expressões regulares.
+* Para padrões de arquivo, os administradores podem especificar expressões regulares com suporte adicionado de padrões curinga para especificar padrões de arquivo. A Pasta monitorada modifica a expressão regular para suportar padrões curinga, como &amp;ast;.&amp;ast; ou &amp;ast;.pdf. Esses padrões curingas não são suportados pelas expressões regulares.
 * A Pasta monitorada verifica a pasta de entrada em busca da entrada e não sabe se o arquivo ou a pasta de origem foi completamente copiada para a pasta de entrada antes de iniciar o processamento do arquivo ou da pasta. Para garantir que o arquivo ou pasta de origem seja completamente copiado para a pasta de entrada da pasta monitorada antes que o arquivo ou pasta seja selecionado, execute estas tarefas:
 
    * Use o Tempo de espera, que é o tempo em milissegundos que a Pasta monitorada aguarda desde a última modificação. Use esse recurso se você tiver arquivos grandes para processar. Por exemplo, se o download de um arquivo levar 10 minutos, especifique o tempo de espera como 10&amp;ast;60 &amp;ast;1000 milissegundos. Isso impedirá que a Pasta monitorada selecione o arquivo, se ele não tiver 10 minutos de idade.
-   * Use o padrão de exclusão de arquivo e o padrão de inclusão de arquivo. Por exemplo, se o padrão de exclusão de arquivo for `ex*` e o padrão do arquivo include é `in*`, A Pasta monitorada capturará os arquivos que começam com &quot;in&quot; e não capturará os arquivos que começam com &quot;ex&quot;. Para copiar arquivos ou pastas grandes, primeiro renomeie o arquivo ou pasta de modo que o nome comece com &quot;ex&quot;. Depois que o arquivo ou pasta chamado &quot;ex&quot; for completamente copiado para a pasta monitorada, renomeie-o para &quot;in&amp;ast;&quot;.
+   * Use o padrão de exclusão de arquivo e o padrão de inclusão de arquivo. Por exemplo, se o padrão de exclusão de arquivo for `ex*` e o padrão de inclusão de arquivo for `in*`, a Pasta monitorada selecionará os arquivos que começam com &quot;in&quot; e não selecionará os arquivos que começam com &quot;ex&quot;. Para copiar arquivos ou pastas grandes, primeiro renomeie o arquivo ou pasta de modo que o nome comece com &quot;ex&quot;. Depois que o arquivo ou pasta chamado &quot;ex&quot; for completamente copiado para a pasta monitorada, renomeie-o para &quot;in&amp;ast;&quot;.
 
 * Use a duração da limpeza para manter a pasta de resultados limpa. A Pasta monitorada limpa todos os arquivos mais antigos que a duração mencionada na duração da limpeza. A duração é em dias.
 * Ao adicionar um endpoint de Pasta monitorada, após selecionar o nome da operação, o mapeamento do parâmetro de entrada é preenchido. Para cada entrada da operação, um campo de mapeamento de parâmetro de entrada é gerado. Estes são exemplos de mapeamentos de parâmetro de entrada:
 
-   * Para `com.adobe.idp.Document` input: Se a operação de serviço tiver uma entrada do tipo `Document`, o administrador poderá especificar o tipo de mapeamento como `Variable`. A Pasta monitorada coletará a entrada da pasta de entrada monitorada com base no padrão de arquivo especificado para o parâmetro de entrada. Se o administrador especificar `*.pdf` como parâmetro, cada arquivo com extensão .pdf será selecionado, convertido em `com.adobe.idp.Document`e o serviço chamado.
-   * Para `java.util.Map` input: Se a operação de serviço tiver uma entrada do tipo `Map`, o administrador poderá especificar o tipo de mapeamento como `Variable` e insira um valor de mapeamento com um padrão como `*.pdf`. Por exemplo, um serviço precisa de um mapa de dois `com.adobe.idp.Document` objetos que representam dois arquivos na pasta de entrada, como 1.pdf e 2.pdf. A pasta monitorada criará um mapa com a chave como o nome do arquivo e o valor como `com.adobe.idp.Document`.
-   * Para `java.util.List` input: Se a operação de serviço tiver uma entrada do tipo Lista, o administrador poderá especificar o tipo de mapeamento como `Variable` e insira um valor de mapeamento com um padrão como `*.pdf`. Quando os arquivos PDF forem soltos na pasta de entrada, a Pasta monitorada criará uma lista das `com.adobe.idp.Document` objetos que representam esses arquivos e chamam o serviço de destino.
-   * Para `java.lang.String`: O administrador tem duas opções. Primeiro, o administrador pode especificar o tipo de mapeamento como `Literal` e insira um valor de mapeamento como uma string, como `hello.` A pasta monitorada chamará o serviço com a cadeia de caracteres `hello`. Em segundo lugar, o administrador pode especificar o tipo de mapeamento como `Variable` e insira um valor de mapeamento com um padrão como `*.txt`. Nesse último caso, os arquivos com a extensão .txt serão lidos como um documento forçado como uma sequência de caracteres para invocar o serviço.
-   * Tipo primitivo de Java: o administrador pode especificar o tipo de mapeamento como `Literal` e forneça o valor. A Pasta monitorada chamará o serviço com o valor especificado.
+   * Para entrada `com.adobe.idp.Document`: se a operação de serviço tiver uma entrada do tipo `Document`, o administrador poderá especificar o tipo de mapeamento como `Variable`. A Pasta monitorada coletará a entrada da pasta de entrada monitorada com base no padrão de arquivo especificado para o parâmetro de entrada. Se o administrador especificar `*.pdf` como parâmetro, cada arquivo com extensão .pdf será selecionado, convertido em `com.adobe.idp.Document` e o serviço será chamado.
+   * Para entrada `java.util.Map`: Se a operação de serviço tiver uma entrada do tipo `Map`, o administrador poderá especificar o tipo de mapeamento como `Variable` e inserir um valor de mapeamento com um padrão como `*.pdf`. Por exemplo, um serviço precisa de um mapa de dois objetos `com.adobe.idp.Document` que representam dois arquivos na pasta de entrada, como 1.pdf e 2.pdf. A Pasta monitorada criará um mapa com a chave como o nome do arquivo e o valor como `com.adobe.idp.Document`.
+   * Para entrada `java.util.List`: se a operação de serviço tiver uma entrada do tipo List, o administrador poderá especificar o tipo de mapeamento como `Variable` e inserir um valor de mapeamento com um padrão como `*.pdf`. Quando os arquivos PDF forem soltos na pasta de entrada, a Pasta monitorada criará uma lista dos objetos `com.adobe.idp.Document` que representam esses arquivos e chamarão o serviço de destino.
+   * Para `java.lang.String`: o administrador tem duas opções. Primeiro, o administrador pode especificar o tipo de mapeamento como `Literal` e inserir um valor de mapeamento como uma cadeia de caracteres, como `hello.` A Pasta monitorada chamará o serviço com a cadeia de caracteres `hello`. Segundo, o administrador pode especificar o tipo de mapeamento como `Variable` e inserir um valor de mapeamento com um padrão como `*.txt`. Nesse último caso, os arquivos com a extensão .txt serão lidos como um documento forçado como uma sequência de caracteres para invocar o serviço.
+   * Tipo primitivo de Java: o administrador pode especificar o tipo de mapeamento como `Literal` e fornecer o valor. A Pasta monitorada chamará o serviço com o valor especificado.
 
-* A Pasta monitorada deve funcionar com documentos. As saídas suportadas são `com.adobe.idp.Document`, `org.w3c.Document`, `org.w3c.Node`, e uma lista e um mapa desses tipos. Qualquer outro tipo resultará em uma saída com falha na pasta de falha.
+* A Pasta monitorada deve funcionar com documentos. As saídas com suporte são `com.adobe.idp.Document`, `org.w3c.Document`, `org.w3c.Node` e uma lista e um mapa desses tipos. Qualquer outro tipo resultará em uma saída com falha na pasta de falha.
 * Se os resultados não estiverem na pasta de resultados, verifique a pasta com falha para ver se ocorreu uma falha.
 * A pasta monitorada funciona melhor se usada no modo assíncrono. Nesse modo, a Pasta monitorada coloca a solicitação de chamada na fila e retorna a chamada. A fila é processada de forma assíncrona. Quando a opção Assíncrono não está definida, a Pasta monitorada chama o serviço de destino de forma síncrona e o Mecanismo do processo aguarda até que o serviço seja concluído com a solicitação e os resultados sejam produzidos. Se o serviço de destino levar muito tempo para processar a solicitação, a Pasta monitorada poderá receber erros de tempo limite.
 * A criação de pastas monitoradas para operações de importação e exportação não permite a abstração da extensão do nome de arquivo. Ao chamar o serviço de Integração de Dados de Formulário usando pastas monitoradas, o tipo de extensão do nome de arquivo para o arquivo de saída pode não corresponder ao formato de saída pretendido para o tipo de objeto do documento. Por exemplo, se o arquivo de entrada para uma pasta monitorada que chama a operação de exportação for um formulário XFA que contém dados, a saída deverá ser um arquivo de dados XDP. Para obter um arquivo de saída com a extensão de nome de arquivo correta, você pode especificá-lo no mapeamento do parâmetro de saída. Neste exemplo, você pode usar %F.xdp para o mapeamento do parâmetro de saída.
@@ -416,16 +416,16 @@ Para todos os serviços, você deve ajustar o tamanho do lote e o intervalo de r
 ### Gerar recomendações de serviço do PDF {#generate-pdf-service-recommendations}
 
 * O serviço Gerar PDF pode converter apenas um arquivo por vez para estes tipos de arquivos: Microsoft Word, Microsoft Excel, Microsoft PowerPoint, Microsoft Project, AutoCAD, Adobe Photoshop®, Adobe FrameMaker® e Adobe PageMaker®. Esses são trabalhos de longa duração; portanto, mantenha o tamanho do lote em uma configuração baixa. Além disso, aumente o intervalo de repetição se houver mais nós no cluster.
-* Para PostScript (PS), Encapsulated PostScript (EPS) e tipos de arquivos de imagem, o serviço Gerar PDF pode processar vários arquivos em paralelo. Você deve ajustar cuidadosamente o tamanho do pool do bean de sessão (que controla o número de conversões que serão feitas em paralelo) dependendo da capacidade do servidor e do número de nós no cluster. Em seguida, aumente o tamanho do lote para um número igual ao tamanho do pool de beans de sessão para os tipos de arquivos que você está tentando converter. A frequência de polling deve ser ditada pelo número de nós no cluster; no entanto, como o serviço Gerar PDF processa esses tipos de jobs com bastante rapidez, você pode configurar o intervalo de repetição para um valor baixo, como 5 ou 10.
+* Para PostScript (PS), Encapsulated PostScript (EPS) e tipos de arquivo de imagem, o serviço Gerar PDF pode processar vários arquivos em paralelo. Você deve ajustar cuidadosamente o tamanho do pool do bean de sessão (que controla o número de conversões que serão feitas em paralelo) dependendo da capacidade do servidor e do número de nós no cluster. Em seguida, aumente o tamanho do lote para um número igual ao tamanho do pool de beans de sessão para os tipos de arquivos que você está tentando converter. A frequência de polling deve ser ditada pelo número de nós no cluster; no entanto, como o serviço Gerar PDF processa esses tipos de jobs com bastante rapidez, você pode configurar o intervalo de repetição para um valor baixo, como 5 ou 10.
 * Embora o serviço Gerar PDF possa converter apenas um arquivo OpenOffice de cada vez, a conversão é bastante rápida. A lógica acima para conversões de PS, EPS e imagem também se aplica a conversões OpenOffice.
 * Para permitir uma distribuição de carga uniforme no cluster, mantenha o tamanho do lote baixo e aumente o intervalo de repetição.
 
 ### recomendações do serviço de formulários com código de barras {#barcoded-forms-service-recommendations}
 
-* Para obter o melhor desempenho ao processar formulários com código de barras (arquivos pequenos), insira `10` para Tamanho do Lote e `2` em Intervalo de repetição.
-* Quando muitos arquivos são colocados na pasta de entrada, erros com arquivos ocultos são chamados *thumbs.db* pode ocorrer. Portanto, é recomendável definir o Padrão do arquivo de inclusão para os arquivos de inclusão com o mesmo valor especificado para a variável de entrada (por exemplo, `*.tiff`). Isso impede que a Pasta monitorada processe os arquivos do banco de dados.
-* Um valor de Tamanho de Lote de `5` e intervalo de repetição de `2` O normalmente é suficiente porque o serviço Forms com código de barras geralmente leva cerca de 0,5 segundo para processar um código de barras.
-* A Pasta monitorada não espera que o Mecanismo do processo conclua o trabalho antes que ele selecione novos arquivos ou pastas. Ele continua verificando a pasta monitorada e chamando o serviço de destino. Esse comportamento pode sobrecarregar o mecanismo, causando problemas de recursos e tempos limite. Certifique-se de usar o intervalo de repetição e o tamanho do lote para limitar a entrada da Pasta monitorada. É possível aumentar o intervalo de repetição e reduzir o tamanho do lote se existirem mais pastas monitoradas ou ativar a limitação no endpoint. Para obter informações sobre limitação, consulte [Sobre a limitação](configuring-watched-folder-endpoints.md#about-throttling).
+* Para obter o melhor desempenho ao processar formulários com código de barras (arquivos pequenos), insira `10` para Tamanho de Lote e `2` para Intervalo de Repetição.
+* Quando muitos arquivos são colocados na pasta de entrada, podem ocorrer erros com arquivos ocultos chamados *thumbs.db*. Portanto, é recomendável definir o Padrão do arquivo de inclusão para os arquivos de inclusão com o mesmo valor especificado para a variável de entrada (por exemplo, `*.tiff`). Isso impede que a Pasta monitorada processe os arquivos do banco de dados.
+* Um valor de Tamanho de Lote de `5` e Intervalo de Repetição de `2` normalmente são suficientes, pois o serviço Forms com Código de Barras geralmente leva cerca de 0,5 segundos para processar um código de barras.
+* A Pasta monitorada não espera que o Mecanismo do processo conclua o trabalho antes que ele selecione novos arquivos ou pastas. Ele continua verificando a pasta monitorada e chamando o serviço de destino. Esse comportamento pode sobrecarregar o mecanismo, causando problemas de recursos e tempos limite. Certifique-se de usar o intervalo de repetição e o tamanho do lote para limitar a entrada da Pasta monitorada. É possível aumentar o intervalo de repetição e reduzir o tamanho do lote se existirem mais pastas monitoradas ou ativar a limitação no endpoint. Para obter informações sobre limitação, consulte [Sobre limitação](configuring-watched-folder-endpoints.md#about-throttling).
 * A pasta monitorada representa o usuário especificado no nome do usuário e no nome do domínio. A Pasta monitorada chama o serviço como este usuário se invocada diretamente ou se o processo for de curta duração. Para um processo de longa duração, o processo é chamado com o contexto Sistema. Os administradores podem definir políticas do sistema operacional para a Pasta monitorada para determinar a qual usuário permitir ou negar acesso.
 * Use padrões de arquivo para organizar resultados, falhas e preservar pastas. (Consulte [Sobre padrões de arquivo](configuring-watched-folder-endpoints.md#about-file-patterns).)
 

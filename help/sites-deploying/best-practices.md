@@ -37,7 +37,7 @@ Os documentos específicos são descritos e vinculados nas tabelas seguintes.
 
 ## Oak {#oak}
 
-[Oak](/help/sites-deploying/platform.md) O é um repositório de conteúdo hierárquico dimensionável e eficiente que é a base do AEM.
+[O Oak](/help/sites-deploying/platform.md) é um repositório de conteúdo hierárquico escalável e eficiente que é a base do AEM.
 
 <table>
  <tbody>
@@ -73,9 +73,9 @@ Os documentos específicos são descritos e vinculados nas tabelas seguintes.
 
 O AEM Communities simplifica a criação e o gerenciamento de comunidades no local. As práticas recomendadas para o AEM Communities estão descritas aqui:
 
-[Armazenamento de conteúdo da comunidade](/help/communities/working-with-srp.md) - Discute o novo recurso de armazenamento compartilhado para conteúdo gerado pelo usuário (UGC) e as considerações para a escolha do conteúdo subjacente [topologia](/help/communities/topologies.md).
+[Repositório de Conteúdo da Comunidade](/help/communities/working-with-srp.md) - Discute o novo recurso de armazenamento compartilhado para conteúdo gerado pelo usuário (UGC) e as considerações para escolher a [topologia](/help/communities/topologies.md) subjacente.
 
-[Implantações recomendadas para comunidades](/help/sites-deploying/recommended-deploys.md#considerations-for-aem-communities) - Descreve as implantações recomendadas para as Comunidades. |
+[Implantações recomendadas para comunidades](/help/sites-deploying/recommended-deploys.md#considerations-for-aem-communities) - Descreve as implantações recomendadas para Comunidades. |
 
 ## Interface {#ui}
 
@@ -94,7 +94,7 @@ As práticas recomendadas para o desempenho estão listadas aqui:
   <tr>
    <td>Práticas recomendadas para controle de qualidade</td>
    <td><a href="/help/sites-deploying/configuring-performance.md#best-practices-for-quality-assurance">Práticas recomendadas para controle de qualidade</a></td>
-   <td>Uma visão geral padronizada dos problemas envolvidos na definição de um Conceito de teste especificamente para testes de desempenho no <em>publicar</em> ambiente. Isso é de interesse principalmente para engenheiros de controle de qualidade, gerentes de projeto e administradores de sistema.</td>
+   <td>Uma visão geral padronizada dos problemas envolvidos na definição de um Conceito de Teste especificamente para testes de desempenho no seu ambiente <em>publicar</em>. Isso é de interesse principalmente para engenheiros de controle de qualidade, gerentes de projeto e administradores de sistema.</td>
   </tr>
   <tr>
    <td>Uso do Dispatcher com um CDN</td>
@@ -109,7 +109,7 @@ As práticas recomendadas para o desempenho estão listadas aqui:
   <tr>
    <td>Teste de desempenho</td>
    <td><a href="/help/sites-deploying/best-practices-for-performance-testing.md">Práticas recomendadas para testes de desempenho</a></td>
-   <td>Descreve as práticas recomendadas para executar testes de desempenho em uma implantação do AEM.<br /> </td>
+   <td>Descreve as práticas recomendadas para execução de testes de desempenho em uma implantação do AEM.<br /> </td>
   </tr>
  </tbody>
 </table>

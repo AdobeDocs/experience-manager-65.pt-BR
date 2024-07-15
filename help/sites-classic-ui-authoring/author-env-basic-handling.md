@@ -23,12 +23,12 @@ ht-degree: 4%
 >* Esta página foi projetada para fornecer uma visão geral do manuseio básico ao usar o ambiente de autor do Adobe Experience Manager (AEM). Usa o console **Sites** como base.
 >
 >* Algumas funcionalidades não estão disponíveis em todos os consoles e funcionalidades adicionais estão disponíveis em alguns consoles. Informações específicas sobre os consoles individuais e suas funcionalidades relacionadas são abordadas com mais detalhes em outras páginas.
->* Atalhos de teclado estão disponíveis em todo o AEM. Em especial, quando [uso de consoles](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md) e [editar páginas](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md).
+>* Atalhos de teclado estão disponíveis em todo o AEM. Principalmente ao [usar consoles](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md) e [editar páginas](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md).
 >
 
 ## A tela de boas-vindas {#the-welcome-screen}
 
-A interface clássica fornece uma seleção de consoles, usando mecanismos conhecidos para navegar e iniciar ações, incluindo clique, clique duplo e [menus de contexto](#context-menus).
+A interface clássica fornece uma seleção de consoles, usando mecanismos conhecidos para navegar e iniciar ações, incluindo menus de clique, clique duplo e [menus de contexto](#context-menus).
 
 Após o logon, a tela Bem-vindo é exibida. Ela fornece uma lista de links para consoles e serviços:
 
@@ -49,41 +49,41 @@ Os principais consoles são:
    <td>Fornece uma visão geral e acesso direto (via links) à principal funcionalidade do AEM.</td>
   </tr>
   <tr>
-   <td><strong>Ativos digitais</strong><br /> </td>
+   <td><strong>Assets digital</strong><br /> </td>
    <td>Esses consoles permitem importar e <a href="/help/sites-classic-ui-authoring/classicui-assets.md">gerenciar ativos digitais</a> como imagens, vídeos, documentos e arquivos de áudio. Esses ativos podem ser usados por um site em execução na mesma instância do AEM. </td>
   </tr>
   <tr>
    <td><strong>Lançamentos</strong></td>
-   <td>Isso ajuda a gerenciar o <a href="/help/sites-classic-ui-authoring/classic-launches.md">lançamentos</a>; elas permitem desenvolver o conteúdo de uma versão futura de uma ou mais páginas da Web ativadas.<br /> <i>Observação: na interface habilitada para toque, grande parte da mesma funcionalidade está disponível no console Sites, juntamente com o painel Referências.</i> <i>Se necessário, esse console estará disponível no console Ferramentas; selecione Operações e, em seguida, Inicializações.</i></td>
+   <td>Isso o ajuda a gerenciar suas <a href="/help/sites-classic-ui-authoring/classic-launches.md">inicializações</a>; elas permitem desenvolver o conteúdo para uma versão futura de uma ou mais páginas da Web ativadas.<br /> <i>Observação: na interface habilitada para toque, grande parte da mesma funcionalidade está disponível no console Sites, juntamente com o painel Referências.</i> <i>Se necessário, este console estará disponível no console Ferramentas; selecione Operações e Inicializações.</i></td>
   </tr>
   <tr>
    <td><strong>Caixa de entrada </strong></td>
-   <td>Muitas vezes, várias pessoas estão envolvidas nas subtarefas de um fluxo de trabalho e cada pessoa deve concluir sua etapa antes de entregar o trabalho para a próxima pessoa. A Caixa de entrada permite que você veja notificações relacionadas a essas tarefas. Consulte <a href="/help/sites-administering/workflows.md">Trabalhar com fluxos de trabalho</a>. <br /> </td>
+   <td>Muitas vezes, várias pessoas estão envolvidas nas subtarefas de um fluxo de trabalho e cada pessoa deve concluir sua etapa antes de entregar o trabalho para a próxima pessoa. A Caixa de entrada permite que você veja notificações relacionadas a essas tarefas. Consulte <a href="/help/sites-administering/workflows.md">Trabalhando com Fluxos de Trabalho</a>. <br /> </td>
   </tr>
   <tr>
    <td><strong>Marcação com tags</strong></td>
-   <td>Os consoles Marcação permitem administrar tags. Tags são nomes curtos ou frases que você pode usar para classificar e anotar partes do conteúdo, facilitando sua localização e organização. Para obter mais informações, consulte <a href="/help/sites-classic-ui-authoring/classic-feature-tags.md">Uso e gerenciamento de tags</a>.</td>
+   <td>Os consoles Marcação permitem administrar tags. Tags são nomes curtos ou frases que você pode usar para classificar e anotar partes do conteúdo, facilitando sua localização e organização. Para obter mais informações, consulte <a href="/help/sites-classic-ui-authoring/classic-feature-tags.md">Usando e Gerenciando Tags</a>.</td>
   </tr>
   <tr>
    <td><strong>Ferramentas</strong></td>
-   <td>A variável <a href="/help/sites-administering/tools-consoles.md">Console Ferramentas</a> fornecer acesso a várias ferramentas e consoles especializados que ajudam a administrar seus sites, ativos digitais e outros aspectos do seu repositório de conteúdo.</td>
+   <td>Os <a href="/help/sites-administering/tools-consoles.md">consoles Ferramentas</a> fornecem acesso a várias ferramentas e consoles especializados que ajudam a administrar seus sites, ativos digitais e outros aspectos do seu repositório de conteúdo.</td>
   </tr>
   <tr>
    <td><strong>Usuários</strong></td>
-   <td>Esses consoles permitem gerenciar direitos de acesso para usuários e grupos. Para obter detalhes completos, consulte <a href="/help/sites-administering/security.md">Administração e segurança do usuário</a>.<br /> </td>
+   <td>Esses consoles permitem gerenciar direitos de acesso para usuários e grupos. Para obter detalhes completos, consulte <a href="/help/sites-administering/security.md">Administração e Segurança do Usuário</a>.<br /> </td>
   </tr>
   <tr>
    <td><strong>Sites</strong></td>
-   <td>Os consoles Sites/Sites permitem <a href="/help/sites-classic-ui-authoring/classic-page-author.md">criar, exibir e gerenciar sites</a> em execução na instância do AEM. Por meio desses consoles, você pode criar, copiar, mover e excluir páginas do site, iniciar fluxos de trabalho e ativar (publicar) páginas. Também é possível abrir uma página para edição.<br /> </td>
+   <td>Os consoles Sites/Sites permitem <a href="/help/sites-classic-ui-authoring/classic-page-author.md">criar, exibir e gerenciar sites</a> em execução na sua instância do AEM. Por meio desses consoles, você pode criar, copiar, mover e excluir páginas do site, iniciar fluxos de trabalho e ativar (publicar) páginas. Você também pode abrir uma página para edição.<br /> </td>
   </tr>
   <tr>
    <td><strong>Fluxos de trabalhos</strong></td>
-   <td>Um fluxo de trabalho é uma série definida de etapas que descreve o processo de conclusão de alguma tarefa. Muitas vezes, várias pessoas estão envolvidas em uma tarefa e cada pessoa deve concluir sua etapa antes de entregar o trabalho para a próxima pessoa. O console Fluxo de trabalho permite criar modelos de fluxo de trabalho e gerenciar instâncias de fluxo de trabalho em execução. Consulte <a href="/help/sites-administering/workflows.md">Trabalhar com fluxos de trabalho</a>.<br /> </td>
+   <td>Um fluxo de trabalho é uma série definida de etapas que descreve o processo de conclusão de alguma tarefa. Muitas vezes, várias pessoas estão envolvidas em uma tarefa e cada pessoa deve concluir sua etapa antes de entregar o trabalho para a próxima pessoa. O console Fluxo de trabalho permite criar modelos de fluxo de trabalho e gerenciar instâncias de fluxo de trabalho em execução. Consulte <a href="/help/sites-administering/workflows.md">Trabalhando com fluxos de trabalho</a>.<br /> </td>
   </tr>
  </tbody>
 </table>
 
-A variável **Sites** O console do fornece dois painéis para você navegar e gerenciar suas páginas:
+O console **Sites** fornece dois painéis para você navegar e gerenciar suas páginas:
 
 * Painel esquerdo
 
@@ -95,25 +95,25 @@ A variável **Sites** O console do fornece dois painéis para você navegar e ge
 
   Mostra as páginas (no local selecionado no painel esquerdo) e pode ser usado para realizar ações.
 
-Aqui é possível [gerenciar suas páginas](/help/sites-authoring/managing-pages.md) usando a barra de ferramentas, um menu de contexto ou abrindo uma página para outras ações.
+Aqui você pode [gerenciar suas páginas](/help/sites-authoring/managing-pages.md) usando a barra de ferramentas, um menu de contexto ou abrindo uma página para outras ações.
 
 >[!NOTE]
 >
->O manuseio básico é o mesmo em todos os consoles. A presente seção centra-se na **Sites** console, pois é o console principal usado durante a criação.
+>O manuseio básico é o mesmo em todos os consoles. Esta seção se concentra no console **Sites**, pois ele é o console principal usado durante a criação.
 
 ![chlimage_1-9](assets/chlimage_1-9a.png)
 
 ## Acessar ajuda   {#accessing-help}
 
-Em vários consoles (por exemplo, Sites), um **Ajuda** botão está disponível. Clicando **Ajuda** abre o Package Share ou o site de documentação.
+Em vários consoles (por exemplo, Sites), um botão **Ajuda** está disponível. Clicar na **Ajuda** abre o site de documentação ou o Compartilhamento de Pacotes.
 
 ![chlimage_1-10](assets/chlimage_1-10a.png)
 
-Ao editar uma página, a variável [o sidekick também possui um botão para acessar ajuda](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#accessing-help).
+Ao editar uma página, o [sidekick também tem um botão para acessar a ajuda](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#accessing-help).
 
 ## Navegação com o console Sites {#navigating-with-the-websites-console}
 
-A variável **Sites** o console lista suas páginas de conteúdo em uma estrutura de árvore (painel esquerdo). Para facilitar a navegação, as seções da estrutura da árvore podem ser expandidas (+) ou recolhidas (-), conforme necessário:
+O console **Sites** lista suas páginas de conteúdo em uma estrutura de árvore (painel à esquerda). Para facilitar a navegação, as seções da estrutura da árvore podem ser expandidas (+) ou recolhidas (-), conforme necessário:
 
 * Clicar no nome da página no painel esquerdo faz o seguinte:
 
@@ -126,7 +126,7 @@ A variável **Sites** o console lista suas páginas de conteúdo em uma estrutur
 
 >[!NOTE]
 >
->Este valor padrão ( `30`) pode ser alterada por console nas configurações específicas do aplicativo do widget siteadmin:
+>Este valor padrão ( `30`) pode ser alterado por console nas configurações específicas do aplicativo do widget siteadmin:
 >
 >No nó siteadmin:
 >
@@ -141,13 +141,13 @@ A variável **Sites** o console lista suas páginas de conteúdo em uma estrutur
 >em:
 >`/apps/cq/ui/widgets/themes/default/widgets/wcm/SiteAdmin.js`
 >
->Consulte [SiteAdmin na API do widget CQ](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.SiteAdmin) para obter mais detalhes.
+>Consulte [SiteAdmin na API do Widget do CQ](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.SiteAdmin) para obter mais detalhes.
 
 ## Informações da página no console Sites {#page-information-on-the-websites-console}
 
-O painel direito do **Sites** O console do fornece uma exibição de lista com informações sobre páginas:
+O painel direito do console **Sites** fornece um modo de exibição de lista com informações sobre páginas:
 
-![page-info](assets/page-info.png)
+![informações-página](assets/page-info.png)
 
 Os itens a seguir estão disponíveis; um subconjunto desses campos é mostrado como padrão:
 
@@ -210,18 +210,18 @@ Os itens a seguir estão disponíveis; um subconjunto desses campos é mostrado 
 
 >[!NOTE]
 >
->Para selecionar as colunas visíveis, passe o mouse sobre um título de coluna. Um menu suspenso é exibido e aqui você pode usar o **Colunas** opção.
+>Para selecionar as colunas visíveis, passe o mouse sobre um título de coluna. Um menu suspenso é exibido e aqui você pode usar a opção **Colunas**.
 
-As cores ao lado das páginas no **Publicado** e **Modificado** as colunas indicam o status da publicação:
+As cores ao lado das páginas nas colunas **Publicado** e **Modificado** indicam o status da publicação:
 
 | **Coluna** | **Cor** | **Descrição** |
 |---|---|---|
 | Publicado | Verde | Publicação bem-sucedida. O conteúdo é publicado. |
 | Publicado | Amarelo | A publicação está pendente. A confirmação da publicação ainda não foi recebida pelo sistema. |
 | Publicado | Vermelho | Falha na publicação. Não há conexão com a instância de publicação. Isso também pode significar que o conteúdo foi desativado. |
-| Publicado | *blank* | Esta página nunca foi publicada. |
+| Publicado | *em branco* | Esta página nunca foi publicada. |
 | Modificado | Azul | A página foi modificada desde a última publicação. |
-| Modificado | *blank* | Esta página nunca foi modificada ou não foi modificada desde a última publicação. |
+| Modificado | *em branco* | Esta página nunca foi modificada ou não foi modificada desde a última publicação. |
 
 ## Menus de contexto {#context-menus}
 

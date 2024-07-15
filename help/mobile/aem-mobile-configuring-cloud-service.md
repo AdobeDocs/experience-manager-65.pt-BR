@@ -24,15 +24,15 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Este documento faz parte da [Introdução ao Adobe Experience Manager (AEM) Mobile](/help/mobile/getting-started-aem-mobile.md) Guia do, um ponto de partida recomendado para referência do AEM Mobile.
+>Este documento faz parte do [Guia de Introdução ao Adobe Experience Manager (AEM) Mobile](/help/mobile/getting-started-aem-mobile.md), um ponto de partida recomendado para referência do AEM Mobile.
 
 Há várias etapas que devem ser seguidas antes que os autores de conteúdo possam começar a gerar conteúdo direcionado para aplicativos móveis: é preciso obter o conjunto correto de permissões para usuários e grupos, criar serviços em nuvem, configurar o aplicativo para a atividade e, por fim, gerar o conteúdo.
 
-Pressupõe-se que a [Aplicativo de referência híbrida do AEM Mobile](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference) O foi implantado e pode ser acessado com êxito por meio do Painel do AEM Mobile.
+A premissa a partir de agora é que o [Aplicativo de Referência Híbrida do AEM Mobile](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference) foi implantado e acessível com sucesso por meio do Painel do AEM Mobile.
 
 ## Permissões {#permissions}
 
-Os usuários que precisam de acesso ao console de personalização devem fazer parte da `target-activity-authors` grupo. Sugere-se que, como parte da configuração de usuários e grupos, o grupo de atividades de destino seja adicionado ao grupo de aplicativos-administradores. Ao adicionar o grupo target-activity-author, os usuários poderão ver a entrada do menu de navegação Personalização.
+Os usuários que precisam de acesso ao console de personalização devem fazer parte do grupo `target-activity-authors`. Sugere-se que, como parte da configuração de usuários e grupos, o grupo de atividades de destino seja adicionado ao grupo de aplicativos-administradores. Ao adicionar o grupo target-activity-author, os usuários poderão ver a entrada do menu de navegação do Personalization.
 
 Esquecer de adicionar os usuários ou grupos que deseja ter acesso ao Admin Console de personalização ao grupo target-activity-author impede que os usuários vejam o console de personalização.
 
@@ -64,7 +64,7 @@ Após a conclusão do assistente, o bloco Gerenciar Cloud Service contém o serv
 
 ### Código do cliente {#client-code}
 
-Para fazer logon na visita de serviços do AMS [https://mobilemarketing.adobe.com](https://mobilemarketing.adobe.com/), selecione o aplicativo para dispositivos móveis e clique nas configurações. Localize o campo Opções de destino do SDK, coloque o código de cliente no campo e clique em Salvar.
+Para fazer logon nos serviços AMS, visite [https://mobilemarketing.adobe.com](https://mobilemarketing.adobe.com/), selecione o aplicativo para dispositivos móveis e clique nas configurações. Localize o campo Opções de destino do SDK, coloque o código de cliente no campo e clique em Salvar.
 
 ![chlimage_1-11](assets/chlimage_1-11.png)
 
@@ -80,7 +80,7 @@ Selecione o cartão Adobe Mobile Services e clique em Avançar.
 
 ![chlimage_1-13](assets/chlimage_1-13.png)
 
-Na etapa Criar ou selecionar assistente, selecione o menu suspenso Mobile Service e selecione a entrada Criar configuração. Forneça o título, a empresa, o nome de usuário, a senha e selecione o data center apropriado. Se você não souber esses valores, entre em contato com o administrador do Adobe Mobile Service para obtê-los. Depois que todos os campos forem preenchidos, clique em **Verificar**. O processo de verificação vai para o AMS e verifica as credenciais da conta. Após a validação bem-sucedida, uma lista de Aplicativos móveis será preenchida, onde você selecionará o aplicativo móvel associado na lista suspensa. Clique no botão Enviar para concluir o assistente. O processo pode levar algum tempo para obter os dados de configuração e qualquer análise associada ao aplicativo. Após a conclusão do processo, clique em **Concluído** no modal para retornar ao Painel do Adobe Mobile.
+Na etapa Criar ou selecionar assistente, selecione o menu suspenso Mobile Service e selecione a entrada Criar configuração. Forneça o título, a empresa, o nome de usuário, a senha e selecione o data center apropriado. Se você não souber esses valores, entre em contato com o administrador do Adobe Mobile Service para obtê-los. Depois que todos os campos forem preenchidos, clique em **Verificar**. O processo de verificação vai para o AMS e verifica as credenciais da conta. Após a validação bem-sucedida, uma lista de Aplicativos móveis será preenchida, onde você selecionará o aplicativo móvel associado na lista suspensa. Clique no botão Enviar para concluir o assistente. O processo pode levar algum tempo para obter os dados de configuração e qualquer análise associada ao aplicativo. Após a conclusão do processo, clique em **Concluído** no modal para voltar para o Painel do Adobe Mobile.
 
 Voltando ao Painel de publicação de conteúdo para dispositivos móveis, o bloco Gerenciar Cloud Service contém o serviço de nuvem AMS. Além disso, o bloco Analisar métricas é preenchido com relatórios de ciclo de vida.
 
@@ -88,9 +88,9 @@ Voltando ao Painel de publicação de conteúdo para dispositivos móveis, o blo
 
 ## Manipuladores de sincronização de conteúdo do Target {#target-content-sync-handlers}
 
-Para entregar conteúdo ao dispositivo do usuário, o conteúdo é gerado por meio da renderização das ofertas criadas por autores de conteúdo AEM. Para lidar com a renderização de ofertas de destino, há um novo manipulador de sincronização de conteúdo que processa as ofertas. Usando o aplicativo de referência híbrida como amostra, o pacote de conteúdo en (inglês) contém o ContentSyncConfig com um [mobileapproffers](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference/blob/master/aem-package/content-author/src/main/content/jcr_root/content/mobileapps/hybrid-reference-app/en/_jcr_content/pge-app/app-config-dev/targetOffers/.content.xml) manipulador. A próxima etapa é crucial para renderizar ofertas para o dispositivo. O manipulador mobileapproffers tem uma propriedade path que identifica o caminho para a atividade de personalização usada para o aplicativo.
+Para entregar conteúdo ao dispositivo do usuário, o conteúdo é gerado por meio da renderização das ofertas criadas por autores de conteúdo AEM. Para lidar com a renderização de ofertas de destino, há um novo manipulador de sincronização de conteúdo que processa as ofertas. Usando o Aplicativo de Referência Híbrida como amostra, o pacote de conteúdo en (inglês) contém o ContentSyncConfig com um manipulador [mobileapproffers](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference/blob/master/aem-package/content-author/src/main/content/jcr_root/content/mobileapps/hybrid-reference-app/en/_jcr_content/pge-app/app-config-dev/targetOffers/.content.xml). A próxima etapa é crucial para renderizar ofertas para o dispositivo. O manipulador mobileapproffers tem uma propriedade path que identifica o caminho para a atividade de personalização usada para o aplicativo.
 
-Por exemplo, se houver uma atividade em */content/campaigns/hybridref*, copie esse caminho e cole-o como o valor no campo *caminho* propriedade do manipulador mobileapproffers.
+Por exemplo, se houver uma atividade em */content/campaigns/hybridref*, copie este caminho e cole-o como o valor na propriedade *path* do manipulador mobileapproffers.
 
 Para o Aplicativo de Referência Híbrido, há dois manipuladores mobileapproffers, um para o desenvolvimento e outro para produções.
 
@@ -98,7 +98,7 @@ Depois que o caminho das atividades for definido na propriedade path do manipula
 
 ### Modo de renderização {#render-mode}
 
-O manipulador mobileapproffers é configurado de forma diferente para configurações de publicação e desenvolvimento. Para configurações de publicação, há uma propriedade chamada *renderMode* com um valor de *publicar* definido no nó cq:ContentSyncConfig. O manipulador mobileapproffers faz referência a renderMode e, se definido para publicar, edita a id da mbox que é criada. Por padrão, as mboxes criadas por AEM têm um valor —author anexado à id da mbox. Isso identifica que a atividade não foi publicada e deve usar a campanha não publicada para resoluções de oferta.
+O manipulador mobileapproffers é configurado de forma diferente para configurações de publicação e desenvolvimento. Para configurações de publicação, há uma propriedade chamada *renderMode* com um valor de *publish* definido no nó cq:ContentSyncConfig. O manipulador mobileapproffers faz referência a renderMode e, se definido para publicar, edita a id da mbox que é criada. Por padrão, as mboxes criadas por AEM têm um valor —author anexado à id da mbox. Isso identifica que a atividade não foi publicada e deve usar a campanha não publicada para resoluções de oferta.
 
 Quando o conteúdo é preparado por meio do Painel do Adobe Mobile, o conteúdo preparado é considerado conteúdo pronto para produção e é renderizado por meio da Configuração de sincronização de conteúdo não-desenvolvimento. A renderização desta forma faz com que o — author seja removido de todas as IDs de mbox e espera que uma atividade publicada esteja disponível no servidor Target. Antes de testar o conteúdo por etapa, verifique se a atividade foi publicada.
 

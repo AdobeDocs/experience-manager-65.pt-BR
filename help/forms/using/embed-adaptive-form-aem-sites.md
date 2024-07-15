@@ -17,7 +17,7 @@ ht-degree: 1%
 
 # Incorpore um formulário adaptável ou comunicação interativa na página de sites AEM {#embed-an-adaptive-form-or-interactive-communication-in-aem-sites-page}
 
-<span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) para [criação de um novo Forms adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
+O <span class="preview"> Adobe recomenda o uso de [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adicionar o Forms Adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
@@ -29,21 +29,21 @@ ht-degree: 1%
 
 O AEM Forms permite que desenvolvedores de formulários incorporem formulários adaptáveis e comunicações interativas em uma página do AEM Sites ou página da Web hospedada fora do AEM. O formulário adaptável incorporado e a comunicação interativa são totalmente funcionais e os usuários podem preencher e enviar o formulário sem sair da página. Ele ajuda o usuário a permanecer no contexto de outros elementos na página da Web e interagir simultaneamente com o formulário ou a comunicação interativa.
 
-Para obter informações sobre como incorporar um formulário adaptável em uma página da Web externa, consulte [Incorporar formulário adaptável na página externa da Web](/help/forms/using/embed-adaptive-form-external-web-page.md).
+Para obter informações sobre como incorporar um formulário adaptável em uma página da Web externa, consulte [Incorporar formulário adaptável na página da Web externa](/help/forms/using/embed-adaptive-form-external-web-page.md).
 
 Na página AEM Sites, é possível adicionar um formulário adaptável ou comunicação interativa usando:
 
-* **[Componente de container do AEM Forms](/help/forms/using/embed-adaptive-form-aem-sites.md#af-component)**
+* **[Componente de Contêiner do AEM Forms](/help/forms/using/embed-adaptive-form-aem-sites.md#af-component)**
 O AEM Forms fornece um componente que pode ser adicionado às páginas do site. O componente de Contêiner do AEM Forms permite incorporar um formulário adaptável e a comunicação interativa.
 
 * **[Navegador de ativos](/help/forms/using/embed-adaptive-form-aem-sites.md#asset-browser)**
-Todos os formulários e comunicações interativas criados estão disponíveis em Ativos. Você pode arrastar e soltar o formulário como um ativo na página.
+Todos os formulários e comunicações interativas criados estão disponíveis no Assets. Você pode arrastar e soltar o formulário como um ativo na página.
 
 ## Pré-requisitos {#prerequisites}
 
-Para incorporar um formulário adaptável ou comunicação interativa em uma página de sites AEM que use um modelo editável, verifique se o componente de Formulário AEM está configurado como um componente permitido no modelo associado. Para obter mais informações, consulte **Política e propriedades (contêiner de layout)** seção em [Criação de modelos de página](/help/sites-authoring/templates.md).
+Para incorporar um formulário adaptável ou comunicação interativa em uma página de sites AEM que use um modelo editável, verifique se o componente de Formulário AEM está configurado como um componente permitido no modelo associado. Para obter mais informações, consulte a seção **Política e propriedades (Contêiner de layout)** em [Criando modelos de página](/help/sites-authoring/templates.md).
 
-Se houver uma página do Sites usando um modelo estático, será necessário configurá-la no sistema de parágrafo da página do site. Consulte [Configuração de componentes no modo de design](/help/sites-authoring/default-components-designmode.md) para obter mais informações.
+Se houver uma página do Sites usando um modelo estático, será necessário configurá-la no sistema de parágrafo da página do site. Consulte [Configurando Componentes no Modo de Design](/help/sites-authoring/default-components-designmode.md) para obter mais informações.
 
 ## Incorporação de um formulário adaptável ou comunicação interativa {#af-component}
 
@@ -52,26 +52,26 @@ Para incorporar um formulário adaptável ou a comunicação interativa usando o
 1. Abra a página de sites do AEM, no modo de edição, em que você deseja incorporar um formulário adaptável ou uma comunicação interativa.
 1. No painel Navegador de componentes, arraste e solte o componente Contêiner do AEM Forms na página.
 
-   Como alternativa, você pode pesquisar um formulário adaptável ou comunicação interativa no navegador de Ativos e arrastá-lo e soltá-lo na página Sites. Ele incorpora o formulário em um Contêiner do AEM Forms.
+   Como alternativa, você pode pesquisar um formulário adaptável ou comunicação interativa no navegador Assets e arrastá-lo e soltá-lo na página Sites. Ele incorpora o formulário em um Contêiner do AEM Forms.
 
    >[!NOTE]
    >
    >Não há suporte para vários componentes do AEM Forms Container em uma página.
 
-1. Selecione o componente de Contêiner do AEM Forms incorporado na página Sites e selecione ![settings_icon](assets/settings_icon.png) na barra de ações. A variável **[!UICONTROL Editar contêiner do AEM Forms]** será aberta.
+1. Selecione o componente de Contêiner do AEM Forms inserido na página de sites e selecione ![settings_icon](assets/settings_icon.png) na barra de ações. A caixa de diálogo **[!UICONTROL Editar Contêiner do AEM Forms]** é aberta.
 1. Na caixa de diálogo Editar contêiner do AEM Forms, especifique o seguinte.
 
-   * **Tipo de ativo:** Selecione o tipo de ativo a ser incorporado. As opções são o formulário adaptável e a comunicação interativa
-   * **Caminho do ativo**: Procure e selecione o formulário adaptável ou a comunicação interativa a ser incorporada. Ela será preenchida automaticamente se você soltá-la no navegador de ativos.
-   * (Somente formulário adaptável) **Envio de publicação**: selecione a ação a ser acionada no envio do formulário. Você pode optar por mostrar uma mensagem de agradecimento ou uma página de agradecimento.
+   * **Tipo de ativo:** selecione o tipo de ativo a ser incorporado. As opções são o formulário adaptável e a comunicação interativa
+   * **Caminho do ativo**: procure e selecione o formulário adaptável ou a comunicação interativa a ser incorporada. Ela será preenchida automaticamente se você soltá-la no navegador Assets.
+   * (Somente formulário adaptável) **Envio de Post**: selecione a ação a ser acionada no envio do formulário. Você pode optar por mostrar uma mensagem de agradecimento ou uma página de agradecimento.
 
-      * **Obrigado Pela Mensagem**: escreva uma mensagem usando o editor de rich text para mostrar no envio do formulário. Essa opção está disponível somente quando você opta por mostrar uma mensagem de agradecimento.
-      * **Página de agradecimento**: navegue e selecione a página que será exibida no envio do formulário. Essa opção está disponível somente quando você escolhe mostrar uma página de agradecimento.
-      * **Atualizar página no envio**: ative para atualizar a página que contém o formulário adaptável incorporado para mostrar a página de agradecimento. Caso contrário, a página de agradecimento substituirá o formulário adaptável no container do AEM Forms, sem atualizar a página. Essa opção está disponível somente quando você escolhe mostrar uma página de agradecimento.
+      * **Mensagem de agradecimento**: escreva uma mensagem usando o editor de rich text para mostrar no envio do formulário. Essa opção está disponível somente quando você opta por mostrar uma mensagem de agradecimento.
+      * **Página de Agradecimento**: procure e selecione a página a ser exibida no envio do formulário. Essa opção está disponível somente quando você escolhe mostrar uma página de agradecimento.
+      * **Atualizar Página no Envio**: habilite essa opção para que você possa atualizar a página que contém o formulário adaptável inserido para mostrar a página de agradecimento. Caso contrário, a página de agradecimento substituirá o formulário adaptável no container do AEM Forms, sem atualizar a página. Essa opção está disponível somente quando você escolhe mostrar uma página de agradecimento.
 
-   * **Tema**: selecione um tema que define o estilo dos componentes do seu formulário adaptável ou comunicação interativa. O estilo inclui propriedades de aparência, como estilo da fonte, cor do plano de fundo, dimensões e alinhamento.
+   * **Tema**: selecione um tema que defina o estilo dos componentes do formulário adaptável ou da comunicação interativa. O estilo inclui propriedades de aparência, como estilo da fonte, cor do plano de fundo, dimensões e alinhamento.
    * **Altura**: especifique a altura do container. Deixe em branco para redimensionar automaticamente o contêiner.
-   * **Biblioteca cliente CSS**: especifique o caminho para uma biblioteca de cliente CSS.
+   * **Biblioteca do cliente CSS**: especifique o caminho para uma biblioteca do cliente CSS.
 
 1. Salve as configurações. O formulário adaptável ou a comunicação interativa agora está incorporada na página.
 

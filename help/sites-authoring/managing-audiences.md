@@ -24,11 +24,11 @@ O console Públicos permite criar, organizar e gerenciar públicos para sua cont
 * Adição de públicos-alvo, seja públicos-alvo do Adobe Target ou segmentos do ContextHub.
 * Gerenciar públicos-alvo.
 
-Um público, chamado *segmento* no ContextHub e no Client Context, é uma classe de visitantes definida por critérios específicos, que determina quem vê uma atividade direcionada. Ao direcionar uma atividade, você pode selecionar públicos diretamente no processo de direcionamento ou criar mais no console Públicos.
+Um público, chamado *segment* no ContextHub e no Client Context, é uma classe de visitantes definida por critérios específicos, que determina quem vê uma atividade direcionada. Ao direcionar uma atividade, você pode selecionar públicos diretamente no processo de direcionamento ou criar mais no console Públicos.
 
 No console Públicos-alvo, os públicos-alvo são organizados por marca.
 
-Os públicos-alvo estão disponíveis no modo Direcionamento para [criação de conteúdo direcionado](/help/sites-authoring/content-targeting-touch.md), em que você também pode criar públicos-alvo (mas deve criar públicos-alvo do Adobe Target no console de Públicos-alvo). Os públicos-alvo criados no modo Direcionamento são exibidos no console Públicos-alvo.
+Os Públicos estão disponíveis no modo Direcionamento para [criação de conteúdo direcionado](/help/sites-authoring/content-targeting-touch.md), em que você também pode criar públicos (mas você deve criar públicos do Adobe Target no console de Públicos). Os públicos-alvo criados no modo Direcionamento são exibidos no console Públicos-alvo.
 
 Os públicos-alvo são exibidos com um rótulo que descreve que tipo de público-alvo está definido:
 
@@ -42,10 +42,10 @@ Os públicos-alvo são exibidos com um rótulo que descreve que tipo de público
 
 Para criar um segmento do ContextHub no console Públicos-alvo:
 
-1. No console Navegação, clique em **Personalização**. Clique em **Públicos-alvo**.
+1. No console Navegação, clique em **Personalization**. Clique em **Públicos**.
 1. Clique em **Criar segmento do ContextHub**.
 
-   ![screen-shot_2019-03-05at124034](assets/screen-shot_2019-03-05at124034.png)
+   ![captura de tela_2019-03-05at124034](assets/screen-shot_2019-03-05at124034.png)
 
 1. Na caixa de diálogo **Novo segmento do ContextHub**, insira um título e ajuste o reforço e clique em **Criar**. Seu novo segmento do ContextHub aparece na lista de públicos-alvo.
 
@@ -53,7 +53,7 @@ Para criar um segmento do ContextHub no console Públicos-alvo:
    >
    >Classifique a lista modificada ao tocar ou clicar em **Modificado** para classificar por ordem decrescente para ver qualquer público recém-criado.
 
-Para obter mais detalhes sobre como criar segmentos usando o ContextHub, consulte [Configuração de segmentação com o ContextHub](/help/sites-administering/segmentation.md) documentação.
+Para obter mais detalhes sobre como criar segmentos usando o ContextHub, consulte a [Configuração da segmentação com o ContextHub](/help/sites-administering/segmentation.md) documentação.
 
 ## Criação de um público-alvo do Adobe Target usando o Console de público-alvo {#creating-an-adobe-target-audience-using-the-audience-console}
 
@@ -65,19 +65,19 @@ Quando você usa mais de uma regra, elas são combinadas pelo operador boolean A
 
 >[!NOTE]
 >
->Se você não vir **Criar público-alvo **no **Criar** , você não tem as permissões necessárias para criar um público-alvo. Você precisa de permissões de gravação em **/etc/segmentation** para criar públicos-alvo. Por padrão, os autores de conteúdo do grupo têm permissões de gravação.
+>Se você não vir **Criar público-alvo **no menu **Criar**, não terá as permissões necessárias para criar um público-alvo. Você precisa de permissões de gravação em **/etc/segmentation** para criar públicos-alvo. Por padrão, os autores de conteúdo do grupo têm permissões de gravação.
 
 Para criar um público-alvo do Adobe Target:
 
-1. No console Navegação, clique em **Personalização**. Clique em **Públicos-alvo**.
+1. No console Navegação, clique em **Personalization**. Clique em **Públicos**.
 
-   ![screen-shot_2019-03-05at124139](assets/screen-shot_2019-03-05at124139.png)
+   ![captura de tela_2019-03-05at124139](assets/screen-shot_2019-03-05at124139.png)
 
-1. No console Públicos-alvo, clique em **Criar** e, em seguida,** Criar público-alvo**.
+1. No console Públicos-alvo, clique em **Criar** e** Criar público-alvo**.
 
    ![chlimage_1-168](assets/chlimage_1-168.png)
 
-1. No **Configuração do Adobe Target** , selecione a configuração de destino e clique em **OK**.
+1. Na caixa de diálogo **Configuração do Adobe Target**, selecione a configuração de destino e clique em **OK**.
 1. Na área Regra nº 1, clique no tipo de atributo e insira quaisquer informações de atributo nos campos disponíveis. Ao terminar, selecione a marca de seleção à direita do atributo para salvá-lo. Consulte [Atributos e suas opções](#attributes-and-their-options) para obter informações sobre todos os atributos.
 1. Clique em **Adicionar regra** para adicionar outra regra. Insira quantas regras forem necessárias. As regras são combinadas com o operador boolean AND, o que significa que o público-alvo deve atender a todos os requisitos de cada regra para ser elegível para uma atividade.
 1. Clique em **Avançar**.
@@ -106,6 +106,6 @@ Para criar um público-alvo do Adobe Target:
 
 Você pode editar qualquer público do ContextHub ou do Client Context no console de Públicos. Você também pode editar os públicos do Adobe Target, mas somente aqueles que foram criados no AEM:
 
-1. No console Navegação, clique em **Personalização**. Clique em **Públicos-alvo**.
+1. No console Navegação, clique em **Personalization**. Clique em **Públicos**.
 1. Clique no ícone ao lado do segmento ContextHub ou Client Context que você deseja editar e clique em **Editar**.
-1. Faça edições no editor de segmentos. Consulte [Client Context](/help/sites-administering/campaign-segmentation.md) ou [ContextHub](/help/sites-developing/ch-configuring.md) documentação.
+1. Faça edições no editor de segmentos. Consulte a documentação do [Client Context](/help/sites-administering/campaign-segmentation.md) ou [ContextHub](/help/sites-developing/ch-configuring.md).

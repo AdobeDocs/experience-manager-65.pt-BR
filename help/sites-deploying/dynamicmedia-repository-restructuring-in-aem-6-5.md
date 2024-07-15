@@ -17,7 +17,7 @@ ht-degree: 3%
 
 # Restruturação do repositório do Dynamic Media no Adobe Experience Manager 6.5 {#dynamic-media-repository-restructuring-in-aem}
 
-Conforme descrito no pai [Reestruturação do repositório no Adobe Experience Manager 6.5](/help/sites-deploying/repository-restructuring.md) , os clientes que estiverem atualizando para o Experience Manager 6.5 devem usar esta página para avaliar o esforço de trabalho associado às alterações no repositório que afetam o Dynamic Media. Algumas alterações exigem esforço de trabalho durante o processo de atualização do Experience Manager 6.5, enquanto outras podem ser adiadas até uma atualização futura.
+Conforme descrito na página pai [Reestruturação do repositório no Adobe Experience Manager 6.5](/help/sites-deploying/repository-restructuring.md), os clientes que estão atualizando para o Experience Manager 6.5 devem usar esta página para avaliar o esforço de trabalho associado às alterações no repositório que afetam o Dynamic Media. Algumas alterações exigem esforço de trabalho durante o processo de atualização do Experience Manager 6.5, enquanto outras podem ser adiadas até uma atualização futura.
 
 **Antes de uma atualização futura**
 
@@ -116,7 +116,7 @@ Conforme descrito no pai [Reestruturação do repositório no Adobe Experience M
   </tr>
   <tr>
    <td><strong>Orientações em matéria de reestruturação</strong></td>
-   <td><p>1. Desfazer a publicação de todos os vídeos do YouTube<br /> 2. Crie a configuração do YouTube usando a nova interface para toque (do <code>/conf</code>) incluindo copiar todos os canais do local antigo<br /> 3. Publicar todos os vídeos de volta no YouTube.</p> <p>Esse workflow resulta em novos URLs do YouTube. Se você não cancelar a publicação antes de criar uma configuração do YouTube com interface para toque, terá vários URLs do YouTube listados em Propriedades, pois os Canais recriados serão publicados novamente, se houver a chance. Essa funcionalidade significa que você tem URLs inúteis listados em Propriedades.</p> </td>
+   <td><p>1. Desfaça a publicação de todos os vídeos do YouTube<br /> 2. Crie a Configuração do YouTube usando a nova Interface para toque (de <code>/conf</code>), incluindo a cópia de todos os Canais do local antigo<br /> 3. Publish todos os vídeos de volta para o YouTube.</p> <p>Esse workflow resulta em novos URLs do YouTube. Se você não cancelar a publicação antes de criar uma configuração do YouTube com interface para toque, terá vários URLs do YouTube listados em Propriedades, pois os Canais recriados serão publicados novamente, se houver a chance. Essa funcionalidade significa que você tem URLs inúteis listados em Propriedades.</p> </td>
   </tr>
   <tr>
    <td><strong>Notas</strong></td>

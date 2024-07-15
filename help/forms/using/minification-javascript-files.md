@@ -22,13 +22,13 @@ A minificação remove do código-fonte os caracteres redundantes, como espaço 
 
 Para gerar um código minificado para alterações semânticas, siga estas etapas.
 
-1. Copiar `client-html/src/main/webapp/js` do pacote src no sistema de arquivos.
+1. Copie `client-html/src/main/webapp/js` de src-package no sistema de arquivos.
 
    >[!NOTE]
    >
-   >Consulte [Introdução à Personalização do espaço de trabalho do AEM Forms](/help/forms/using/introduction-customizing-html-workspace.md) para obter mais detalhes sobre os pacotes.
+   >Consulte [Introdução à personalização do espaço de trabalho do AEM Forms](/help/forms/using/introduction-customizing-html-workspace.md) para obter mais detalhes sobre os pacotes.
 
-1. Atualizar caminhos em `main.js` localizado em client-html/src/main/webapp/js, para modelos/exibições adicionados/atualizados.
+1. Atualizar caminhos em `main.js`, localizado em client-html/src/main/webapp/js, para modelos/exibições adicionados/atualizados.
 
    Por exemplo, a adição de um novo modelo Sharequeue, digamos mySharequeue, altera:
 

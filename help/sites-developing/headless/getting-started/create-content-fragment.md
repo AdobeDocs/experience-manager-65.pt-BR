@@ -28,24 +28,24 @@ Fragmentos de conteúdo contêm conteúdo estruturado e podem ser entregues no f
 
 Os autores de conteúdo criarão qualquer quantidade de fragmentos de conteúdo para representar o conteúdo que eles criam. Esta será a principal tarefa deles no AEM. Para os propósitos deste guia de introdução, só será necessário criar um.
 
-1. Faça logon no AEM e, no menu principal, selecione **Navegação > Ativos**.
+1. Faça logon no AEM e, no menu principal, selecione **Navegação > Assets**.
 1. Navegue até a [pasta criada anteriormente.](create-assets-folder.md)
 1. Clique em **Criar > Fragmento de conteúdo**.
-1. A criação de um fragmento de conteúdo é apresentada como um assistente de duas etapas. Primeiro, selecione qual modelo deseja usar para criar o fragmento de conteúdo e clique em **Próxima**.
+1. A criação de um fragmento de conteúdo é apresentada como um assistente de duas etapas. Primeiro, selecione qual modelo deseja usar para criar o fragmento de conteúdo e clique em **Próximo**.
    * Os modelos disponíveis dependem da [**Configuração na nuvem** que foi definida para a pasta de ativos](create-assets-folder.md) na qual você está criando o fragmento de conteúdo.
    * Se você receber a mensagem `We could not find any models`, verifique a configuração da pasta de ativos.
 
    ![Selecionar modelo de fragmento de conteúdo](assets/content-fragment-model-select.png)
-1. Forneça um **Título**, **Descrição**, e **Tags** conforme necessário e clique em **Criar**.
+1. Forneça o **Título**, **Descrição** e **Marcas** conforme necessário e clique em **Criar**.
 
    ![Criar fragmento do conteúdo](assets/content-fragment-create.png)
-1. Clique em **Abertura** na janela de confirmação.
+1. Clique em **Abrir** na janela de confirmação.
 
    ![Confirmação da criação do fragmento de conteúdo](assets/content-fragment-confirmation.png)
 1. Forneça os detalhes do fragmento de conteúdo no Editor de fragmento de conteúdo.
 
    ![Editor de fragmento de conteúdo](assets/content-fragment-edit.png)
-1. Clique em **Salvar** ou  **Salvar e fechar**.
+1. Clique em **Salvar** ou **Salvar e fechar**.
 
 Os fragmentos de conteúdo podem fazer referência a outros fragmentos de conteúdo, permitindo uma estrutura de conteúdo aninhada, se necessário.
 

@@ -41,7 +41,7 @@ Os Serviços de conteúdo podem fornecer o conteúdo como ativos, HTML empacotad
 >
 >Antes de começar a usar os Serviços de conteúdo, ative o sinalizador dos Serviços de conteúdo. Para habilitar a criação e o gerenciamento de modelos no seu aplicativo, habilite os modelos de dados no Navegador de configuração.
 >
->Consulte **[Administração dos serviços de conteúdo](/help/mobile/developing-content-services.md)** e a variável [Navegador de configuração](/help/sites-administering/configurations.md) para obter mais informações.
+>Consulte **[Administrando o Content Services](/help/mobile/developing-content-services.md)** e a documentação do [Navegador de Configuração](/help/sites-administering/configurations.md) para obter mais informações.
 
 ![chlimage_1-143](assets/chlimage_1-143.png)
 

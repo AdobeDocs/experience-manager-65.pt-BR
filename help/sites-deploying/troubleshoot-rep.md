@@ -41,8 +41,8 @@ Verifique isso acessando /etc/replication/agents.author.html e clicando nos agen
 
 **Se uma fila de agente ou algumas filas de agente estiverem travadas:**
 
-1. A fila mostra **bloqueado** Status? Em caso afirmativo, a instância de publicação não está em execução ou não está respondendo? Verifique a instância de publicação para ver o que há de errado com ela. Ou seja, verifique os registros e veja se há um erro OutOfMemory ou algum outro problema. Se estiver apenas lento, então pegue os despejos de thread e analise-os.
-1. O status da fila mostra **A fila está ativa - nº pendente**? Basicamente, o trabalho de replicação pode estar preso em uma leitura de soquete aguardando a instância de publicação ou o Dispatcher responder. Isso pode significar que a instância de publicação ou o Dispatcher está sobrecarregada ou travada em um bloqueio. Obtenha despejos de thread do autor e da publicação neste caso.
+1. A fila mostra o status **bloqueado**? Em caso afirmativo, a instância de publicação não está em execução ou não está respondendo? Verifique a instância de publicação para ver o que há de errado com ela. Ou seja, verifique os registros e veja se há um erro OutOfMemory ou algum outro problema. Se estiver apenas lento, então pegue os despejos de thread e analise-os.
+1. O status da fila mostra **A fila está ativa - nº pendente**? Basicamente, o trabalho de replicação pode ficar preso em uma leitura de soquete aguardando a instância de publicação ou o Dispatcher responder. Isso pode significar que a instância de publicação ou o Dispatcher está sobrecarregada ou travada em um bloqueio. Obtenha despejos de thread do autor e da publicação neste caso.
 
    * Abra os despejos de thread do autor em um analisador de despejo de thread. Verifique se ele mostra que o trabalho de evento sling do agente de replicação está preso em um socketRead.
    * Abra os despejos de thread em publicar em um analisador de despejo de thread e analise o que pode estar fazendo com que a instância de publicação não responda. Você deve ver uma thread com POST /bin/receive em seu nome, que é a thread que recebe a replicação do autor.
@@ -55,7 +55,7 @@ Verifique isso acessando /etc/replication/agents.author.html e clicando nos agen
    1. Clique em &quot;Ferramentas&quot; no menu superior.
    1. Clique no botão de lupa.
    1. Selecione &quot;XPath&quot; como Type.
-   1. Na caixa &quot;Consulta&quot;, digite esta consulta /jcr:root/var/eventing/jobs//element(&#42;,slingevent:Job) ordem de @slingevent:criada
+   1. Na caixa &quot;Consulta&quot;, digite esta ordem de consulta /jcr:root/var/eventing/jobs//element(&#42;,slingevent:Job) por @slingevent:created
    1. Clique em &quot;Pesquisar&quot;.
    1. Nos resultados, os itens principais são os trabalhos de evento do sling mais recentes. Clique em cada uma e localize as replicações paralisadas correspondentes ao que aparece na parte superior da fila.
 
@@ -74,7 +74,7 @@ Verifique isso acessando /etc/replication/agents.author.html e clicando nos agen
 Às vezes, é útil definir todos os logs de replicação para serem adicionados em um arquivo de log separado no nível DEBUG. Para fazer isso:
 
 1. Acesse https://host:port/system/console/configMgr e faça logon como administrador.
-1. Localize o fatory Apache Sling Logging Logger e crie uma instância clicando no **+** à direita da configuração de fábrica. Isso cria um novo logger de log.
+1. Localize a fábrica do Logger de Log do Apache Sling e crie uma instância clicando no botão **+** à direita da configuração de fábrica. Isso cria um novo logger de log.
 1. Defina a configuração desta forma:
 
    * Nível de log: DEBUG
@@ -96,18 +96,18 @@ As permissões de página não são replicadas porque são armazenadas nos nós 
 
 Em geral, as permissões de página não devem ser replicadas do autor para publicar e não são usadas por padrão. Isso ocorre porque os direitos de acesso devem ser diferentes nesses dois ambientes. Portanto, o Adobe recomenda que você configure ACLs em publicação, separadamente do autor.
 
-## Fila de replicação bloqueada ao replicar informações de namespace de Autor para Publicação {#replication-queue-blocked-when-replicating-namespace-information-from-author-to-publish}
+## Fila de replicação bloqueada ao replicar informações de namespace de Autor para Publish {#replication-queue-blocked-when-replicating-namespace-information-from-author-to-publish}
 
-Às vezes, a fila de replicação é bloqueada ao tentar replicar informações de namespace da instância do autor para a instância de publicação. Isso acontece porque o usuário de replicação não tem `jcr:namespaceManagement` Privilégio. Para evitar esse problema, verifique se:
+Às vezes, a fila de replicação é bloqueada ao tentar replicar informações de namespace da instância do autor para a instância de publicação. Isso acontece porque o usuário de replicação não tem o privilégio `jcr:namespaceManagement`. Para evitar esse problema, verifique se:
 
-* O usuário de replicação (conforme configurado no [Transporte](/help/sites-deploying/replication.md#replication-agents-configuration-parameters) tab>User) também existe na instância Publish.
+* O usuário de replicação (conforme configurado na guia [Transporte](/help/sites-deploying/replication.md#replication-agents-configuration-parameters)>Usuário) também existe na instância do Publish.
 * O usuário tem privilégios de leitura e gravação no caminho em que o conteúdo está instalado.
-* O usuário tem `jcr:namespaceManagement` no nível do repositório. Você pode conceder o privilégio da seguinte maneira:
+* O usuário tem privilégio de `jcr:namespaceManagement` no nível do repositório. Você pode conceder o privilégio da seguinte maneira:
 
 1. Faça logon no CRX/DE ( `https://localhost:4502/crx/de/index.jsp`) como administrador.
-1. Clique em **Controle de acesso** guia.
-1. Selecionar **Repositório**.
-1. Clique em **Adicionar entrada** (o ícone com sinal de mais).
+1. Clique na guia **Controle de acesso**.
+1. Selecione **Repositório**.
+1. Clique em **Adicionar entrada** (o ícone de adição).
 1. Insira o nome do usuário.
-1. Selecionar `jcr:namespaceManagement` na lista de privilégios.
+1. Selecione `jcr:namespaceManagement` na lista de privilégios.
 1. Clique em **OK**.

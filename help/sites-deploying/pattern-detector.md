@@ -30,7 +30,7 @@ Isso pode servir como uma avaliação do esforço de desenvolvimento que está e
 
 ## Como configurar {#how-to-set-up}
 
-O Detector de padrões é lançado separadamente como um [um pacote](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/compatpack/pd-all-aem65) trabalhar em qualquer versão do AEM de origem de 6.1 para 6.5 direcionada à atualização do AEM 6.5. Ele pode ser instalado usando o [Gerenciador de pacotes](/help/sites-administering/package-manager.md).
+O Detector de Padrões é lançado separadamente como um [um pacote](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/compatpack/pd-all-aem65) que funciona em qualquer versão do AEM de origem de 6.1 para 6.5 direcionado à atualização do AEM 6.5. Ele pode ser instalado usando o [Gerenciador de Pacotes](/help/sites-administering/package-manager.md).
 
 ## Como usar {#how-to-use}
 
@@ -41,14 +41,14 @@ O Detector de padrões é lançado separadamente como um [um pacote](https://exp
 >* aumentar a taxa de detecção
 >* evitar qualquer lentidão em instâncias críticas para os negócios
 >
->ambos ao mesmo tempo, é recomendável executá-lo **em ambientes de preparo** que estejam o mais próximo possível de produções nas áreas de aplicativos de usuários, conteúdo e configurações.
+>ao mesmo tempo, é recomendável executar **em ambientes de preparo** o mais próximo possível dos de produção nas áreas de aplicativos, conteúdo e configurações do usuário.
 
 Você pode usar vários métodos para verificar a saída do Detector de padrões:
 
-* **Através do console Felix Inventory:**
+* **Através do console de Inventário Felix:**
 
-1. Acesse o console da Web do AEM navegando até *https://serveraddress:serverport/system/console/configMgr*
-1. Selecionar **Status - Detector de padrões** conforme mostrado na imagem abaixo:
+1. Vá para o Console da Web do AEM navegando até *https://serveraddress:serverport/system/console/configMgr*
+1. Selecione **Status - Detector de Padrões** conforme mostrado na imagem abaixo:
 
    ![screenshot-2018-2-5detector-padrão](assets/screenshot-2018-2-5pattern-detector.png)
 
@@ -82,7 +82,7 @@ A saída terá esta aparência:
 2018-02-13T14:18:32.071+01:00 [SUSPICION] The pattern=ECU/extraneous.content.usage was found by detector=ContentAccessDetector with id=a07fd94318f12312c165e06d890cbd3c2c8b8dad0c030663db8b4c800dd7c33f message="Cross-boundary overlay of internal marked path /libs/granite/operations/components/commons/commons.jsp/jcr:content referenced at /apps/granite/operations/components/commons/commons.jsp/jcr:content with properties redefined: jcr:lastModifiedBy, jcr:mimeType, jcr:data, jcr:lastModified, jcr:uuid". More info at=https://www.adobe.com/go/aem6_EC
 ```
 
-O progresso pode ser filtrado usando o `grep` comando:
+O progresso pode ser filtrado usando o comando `grep`:
 
 ```shell
 curl -Nsu 'admin:admin' https://localhost:4502/system/console/status-pattern-detector.txt | tee patterns-report.log | grep PROGRESS
@@ -98,7 +98,7 @@ O que resulta na seguinte saída:
 
 ## Manuseio da interface JSON {#handling-the-json-interface}
 
-Da mesma forma, o JSON pode ser processado usando o [ferramenta jq](https://stedolan.github.io/jq/) assim que for publicado.
+Da mesma forma, o JSON pode ser processado usando a [ferramenta jq](https://stedolan.github.io/jq/) assim que for publicado.
 
 ```shell
 curl -Nsu 'admin:admin' https://localhost:4502/system/console/status-pattern-detector.json | tee patterns-report.json | jq --unbuffered -C 'select(.suspicion == true)'
@@ -216,7 +216,7 @@ Atualmente, o Detector de padrões permite verificar o seguinte:
 
 * Incompatibilidade de exportações e importações de pacotes OSGi
 * Sobreutilizações de tipos e supertipos de recursos do Sling (com sobreposições de conteúdo de caminho de pesquisa)
-* definições de índices Oak (compatibilidade)
+* definições de índices do Oak (compatibilidade)
 * Pacotes VLT (uso excessivo)
 * rep:Compatibilidade de nós de usuário (no contexto da configuração do OAuth)
 

@@ -36,7 +36,7 @@ Os formulários HTML5 podem usar as seguintes topologias para se conectar aos se
 * Uma topologia em que o Servidor AEM ou o HTML 5 envia dados via POST para o servidor.
 * Uma topologia em que o servidor proxy envia dados de POST para o servidor.
 
-![Topologias de proxy de serviço de formulários HTML5](assets/topology.png)
+![topologias de proxy do serviço de formulários HTML5](assets/topology.png)
 
 Topologias de proxy de serviço de formulários HTML5
 
@@ -131,6 +131,6 @@ O proxy de serviço de envio atua como uma passagem se o URL de envio não estiv
 O proxy de serviço de envio seleciona uma topologia se o URL de envio estiver presente no parâmetro de solicitação.
 
 * Se os servidores AEM publicarem os dados, o serviço de proxy atuará como uma passagem. Ele envia a solicitação para o ponto de acesso /bin/xfaforms/submitaction e envia a resposta para o tempo de execução do XFA.
-* Se o proxy publicar os dados, o serviço de proxy transmitirá todos os parâmetros, exceto submitUrl, para o */bin/xfaforms/submitaction* ponto final e recebe bytes xml no fluxo de resposta. Em seguida, o serviço proxy publica os bytes xml de dados no submitUrl para processamento.
+* Se o proxy postar os dados, o serviço proxy transmitirá todos os parâmetros, exceto submitUrl, para o ponto de extremidade */bin/xfaforms/submitaction* e receberá bytes xml no fluxo de resposta. Em seguida, o serviço proxy publica os bytes xml de dados no submitUrl para processamento.
 
-* Antes de enviar dados (solicitação de POST) para um servidor, os formulários HTML5 verificam a conectividade e a disponibilidade do servidor. Para verificar a conectividade e a disponibilidade, os formulários HTML enviam uma solicitação head vazia para o servidor. Se o servidor estiver disponível, o formulário HTML5 enviará dados (solicitação POST) para o servidor. Se o servidor não estiver disponível, uma mensagem de erro, *Não foi possível se conectar ao servidor,* é exibido. A detecção avançada evita que os usuários tenham dificuldade em preencher o formulário novamente. O servlet proxy manipula a solicitação head e não gera exceção.
+* Antes de enviar dados (solicitação de POST) para um servidor, os formulários HTML5 verificam a conectividade e a disponibilidade do servidor. Para verificar a conectividade e a disponibilidade, os formulários HTML enviam uma solicitação head vazia para o servidor. Se o servidor estiver disponível, o formulário HTML5 enviará dados (solicitação POST) para o servidor. Se o servidor não estiver disponível, uma mensagem de erro, *Não foi possível se conectar ao servidor,* será exibida. A detecção avançada evita que os usuários tenham dificuldade em preencher o formulário novamente. O servlet proxy manipula a solicitação head e não gera exceção.

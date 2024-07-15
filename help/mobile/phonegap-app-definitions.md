@@ -30,13 +30,13 @@ As definições de aplicativo são uma maneira de identificar quais espaços e o
 
 ## Criação de uma nova definição de aplicativo {#creating-a-new-app-definition}
 
-1. Escolher **Dispositivo móvel** no console de navegação do AEM.
+1. Escolha **Dispositivo móvel** no Console de Navegação do AEM.
 
    ![chlimage_1-170](assets/chlimage_1-170.png)
 
-1. Escolher **Aplicativos** de **Dispositivo móvel** e clique em **Criar.**
+1. Escolha **Aplicativos** em **Celular** e clique em **Criar.**
 
-   Escolher **Aplicativo** Acesse e insira os detalhes para criar seu novo aplicativo.
+   Escolha **Aplicativo** para e insira os detalhes para criar seu novo aplicativo.
 
    ![chlimage_1-11](assets/chlimage_1-11.gif)
 

@@ -19,12 +19,12 @@ ht-degree: 0%
 
 A opção salvar como rascunho salva um instantâneo de uma tarefa ou formulário junto com os dados preenchidos no formulário associado. Você também pode criar um rascunho de um modelo. Os rascunhos são salvos no dispositivo móvel e sincronizados com o servidor do Adobe Experience Manager Forms para uma recuperação posterior.
 
-Você pode [atualizar o formulário](/help/forms/using/working-with-form.md), [anotar](/help/forms/using/add-attachments.md) com fotografias e notas escritas. À medida que você continua a atualizar um formulário, é recomendável salvá-lo como rascunho. Para situações em que você decide enviar um formulário preenchido posteriormente, é útil salvá-lo como rascunho.
+Você pode [atualizar o formulário](/help/forms/using/working-with-form.md), [anotá-lo](/help/forms/using/add-attachments.md) com fotografias e anotações à mão. À medida que você continua a atualizar um formulário, é recomendável salvá-lo como rascunho. Para situações em que você decide enviar um formulário preenchido posteriormente, é útil salvá-lo como rascunho.
 
-Para ativar o recurso Salvar como rascunho para formulários salvos no portal de formulários, consulte [Salvamento de um formulário HTML 5 como rascunho](/help/forms/using/saving-html5-form-draft.md).
-Para configurar o envio de formulários adaptáveis, consulte [Rascunhos e componentes de envios](/help/forms/using/draft-submission-component.md). (Não válido para formulários sincronizados com o servidor AEM Forms JEE.)
+Para habilitar o recurso salvar como rascunho para formulários salvos no portal de formulários, consulte [Salvar um formulário HTML como rascunho](/help/forms/using/saving-html5-form-draft.md).
+Para configurar o envio de formulários adaptáveis, consulte [Componente de rascunhos e envios](/help/forms/using/draft-submission-component.md). (Não válido para formulários sincronizados com o servidor AEM Forms JEE.)
 
-Para criar um rascunho, abra o formulário e selecione a **Salvar como rascunho** ![salvar como rascunho](assets/save-as-draft.png). Forneça o nome do rascunho e selecione **Salvar**. O rascunho é salvo na pasta Rascunhos e sincronizado com o servidor. Ele é salvo na pasta Caixa de saída se o aplicativo estiver offline.
+Para criar um rascunho, abra o formulário e selecione **Salvar como rascunho** ![salvar como rascunho](assets/save-as-draft.png). Forneça o nome do rascunho e selecione **Salvar**. O rascunho é salvo na pasta Rascunhos e sincronizado com o servidor. Ele é salvo na pasta Caixa de saída se o aplicativo estiver offline.
 
 Se você atualizar o formulário correspondente posteriormente, as alterações serão refletidas imediatamente. Ao sincronizar o aplicativo do AEM Forms com o servidor do AEM Forms, o rascunho é carregado no servidor do AEM Forms. Além disso, o rascunho é movido da Caixa de saída para a pasta Tarefas ou Rascunhos. Um ícone de edição é exibido ao lado dele.
 
@@ -41,6 +41,6 @@ A opção para excluir rascunhos criados de uma tarefa não está disponível. A
 Execute as seguintes etapas para deletar um rascunho:
 
 1. No aplicativo AEM Forms, navegue até **Forms.**
-1. Selecionar **Rascunhos** no menu suspenso ao lado de Pesquisar.
-1. Um formulário com o ícone de edição ![edit-draft-app](assets/edit-draft-app.png) indica um rascunho. Selecione as reticências horizontais ao lado do rascunho.
-1. Nas opções exibidas ao selecionar as reticências horizontais, selecione **Excluir rascunho**.
+1. Selecione **Rascunhos** no menu suspenso ao lado de Pesquisar.
+1. Um formulário com o ícone de edição ![edit-draft-app](assets/edit-draft-app.png) denota um rascunho. Selecione as reticências horizontais ao lado do rascunho.
+1. Nas opções exibidas ao selecionar as reticências horizontais, selecione **Excluir Rascunho**.

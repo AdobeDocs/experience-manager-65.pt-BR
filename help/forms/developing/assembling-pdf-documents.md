@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Montagem de documentos do PDF {#assembling-pdf-documents}
 
-**Os exemplos e amostras neste documento são somente para AEM Forms no ambiente JEE.**
+**Exemplos e exemplos neste documento são somente para AEM Forms no ambiente JEE.**
 
 **Sobre o Serviço de Assembler**
 
@@ -29,4 +29,4 @@ A partir do LiveCycle ES 8.0 e mais recente, o suporte para pacotes de PDF está
 
 >[!NOTE]
 >
->Para obter mais informações sobre o serviço Assembler, consulte [Referência de serviços para o AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Para obter mais informações sobre o serviço Assembler, consulte [Referência de serviços para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).

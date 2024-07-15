@@ -17,23 +17,23 @@ ht-degree: 0%
 
 # API para chamar o serviço de modelo de dados de formulário a partir de formulários adaptáveis {#api-to-invoke-form-data-model-service-from-adaptive-forms}
 
-<span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) para [criação de um novo Forms adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
+O <span class="preview"> Adobe recomenda o uso de [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adicionar o Forms Adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
 
 ## Visão geral {#overview}
 
-O AEM Forms permite que os autores de formulários simplifiquem e aprimorem ainda mais a experiência de preenchimento, chamando serviços configurados em um modelo de dados de formulário de dentro de um campo de formulário adaptável. Para chamar um serviço de modelo de dados, você pode criar uma regra no editor visual ou especificar um JavaScript usando o `guidelib.dataIntegrationUtils.executeOperation` API no editor de código do [editor de regras](/help/forms/using/rule-editor.md).
+O AEM Forms permite que os autores de formulários simplifiquem e aprimorem ainda mais a experiência de preenchimento, chamando serviços configurados em um modelo de dados de formulário de dentro de um campo de formulário adaptável. Para invocar um serviço de modelo de dados, você pode criar uma regra no editor visual ou especificar um JavaScript usando a API `guidelib.dataIntegrationUtils.executeOperation` no editor de códigos do [editor de regras](/help/forms/using/rule-editor.md).
 
-Este documento se concentra na gravação de um JavaScript usando o `guidelib.dataIntegrationUtils.executeOperation` API para invocar um serviço.
+Este documento se concentra na gravação de um JavaScript usando a API `guidelib.dataIntegrationUtils.executeOperation` para invocar um serviço.
 
 ## Uso da API {#using-the-api}
 
-A variável `guidelib.dataIntegrationUtils.executeOperation` A API chama um serviço de dentro de um campo de formulário adaptável. A sintaxe da API é a seguinte:
+A API `guidelib.dataIntegrationUtils.executeOperation` invoca um serviço de dentro de um campo de formulário adaptável. A sintaxe da API é a seguinte:
 
 ```javascript
 guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs)
 ```
 
-A estrutura do `guidelib.dataIntegrationUtils.executeOperation` A API especifica detalhes sobre a operação do serviço. A sintaxe da estrutura é a seguinte:
+A estrutura da API `guidelib.dataIntegrationUtils.executeOperation` especifica detalhes sobre a operação de serviço. A sintaxe da estrutura é a seguinte:
 
 ```javascript
 var operationInfo = {
@@ -77,24 +77,24 @@ A estrutura da API especifica os seguintes detalhes sobre a operação de servi�
   </tr>
   <tr>
    <td><code>Outputs</code></td>
-   <td>Mapeia um ou mais objetos de formulário para valores de saída da operação de serviço a fim de preencher campos de formulário<br /> </td>
+   <td>Mapeia um ou mais objetos de formulário para valores de saída da operação de serviço para preencher campos de formulário<br /> </td>
   </tr>
   <tr>
    <td><code>success</code></td>
-   <td>Retorna valores com base nos argumentos de entrada da operação de serviço. É um parâmetro opcional usado como uma função de retorno de chamada.<br /> </td>
+   <td>Retorna valores com base nos argumentos de entrada da operação de serviço. É um parâmetro opcional usado como função de retorno de chamada.<br /> </td>
   </tr>
   <tr>
    <td><code>failure</code></td>
-   <td>Exibe uma mensagem de erro se a função de retorno de chamada bem-sucedida falhar ao exibir os valores de saída com base nos argumentos de entrada. É um parâmetro opcional usado como uma função de retorno de chamada.<br /> </td>
+   <td>Exibe uma mensagem de erro se a função de retorno de chamada bem-sucedida falhar ao exibir os valores de saída com base nos argumentos de entrada. É um parâmetro opcional usado como função de retorno de chamada.<br /> </td>
   </tr>
  </tbody>
 </table>
 
 ## Exemplo de script para chamar um serviço {#sample-script-to-invoke-a-service}
 
-O exemplo de script a seguir usa o `guidelib.dataIntegrationUtils.executeOperation` API para invocar o `getAccountById` operação de serviço configurada no `employeeAccount` modelo de dados de formulário.
+O exemplo de script a seguir usa a API `guidelib.dataIntegrationUtils.executeOperation` para invocar a operação de serviço `getAccountById` configurada no modelo de dados de formulário `employeeAccount`.
 
-A variável `getAccountById` A operação utiliza o valor no `employeeID` campo de formulário como entrada para o `empId` argumento e retorna o nome, o número e o saldo da conta do funcionário correspondente. Os valores de saída são preenchidos nos campos de formulário especificados. Por exemplo, o valor em `name` O argumento é preenchido na variável `fullName` elemento de formulário e valor para `accountNumber` argumento em `account` elemento de formulário.
+A operação `getAccountById` usa o valor no campo de formulário `employeeID` como entrada para o argumento `empId` e retorna o nome do funcionário, o número da conta e o saldo da conta para o funcionário correspondente. Os valores de saída são preenchidos nos campos de formulário especificados. Por exemplo, o valor no argumento `name` é preenchido no elemento de formulário `fullName` e o valor para o argumento `accountNumber` no elemento de formulário `account`.
 
 ```javascript
 var operationInfo = {
@@ -114,7 +114,7 @@ guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs);
 
 ## Uso da API com função de retorno de chamada {#using-the-api-callback}
 
-Você também pode chamar o serviço de modelo de dados de formulário usando o `guidelib.dataIntegrationUtils.executeOperation` API com uma função de retorno de chamada. A sintaxe da API é a seguinte:
+Você também pode invocar o serviço de modelo de dados de formulário usando a API `guidelib.dataIntegrationUtils.executeOperation` com uma função de retorno de chamada. A sintaxe da API é a seguinte:
 
 ```javascript
 guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs, callbackFunction)
@@ -124,13 +124,13 @@ A função de retorno de chamada pode ter `success` e `failure` funções de ret
 
 ### Exemplo de script com funções de retorno de chamada de sucesso e falha {#callback-function-success-failure}
 
-O exemplo de script a seguir usa o `guidelib.dataIntegrationUtils.executeOperation` API para invocar o `GETOrder` operação de serviço configurada no `employeeOrder` modelo de dados de formulário.
+O exemplo de script a seguir usa a API `guidelib.dataIntegrationUtils.executeOperation` para invocar a operação de serviço `GETOrder` configurada no modelo de dados de formulário `employeeOrder`.
 
-A variável `GETOrder` A operação utiliza o valor no `Order ID` campo de formulário como entrada para o `orderId` argumento e retorna o valor da quantidade da ordem no `success` função de retorno de chamada.  Se a variável `success` a função de retorno de chamada não retornar a quantidade da ordem, a variável `failure` a função de retorno de chamada exibe a variável `Error occured` mensagem.
+A operação `GETOrder` usa o valor no campo de formulário `Order ID` como entrada para o argumento `orderId` e retorna o valor da quantidade da ordem na função de retorno de chamada `success`.  Se a função de retorno de chamada `success` não retornar a quantidade da ordem, a função de retorno de chamada `failure` exibirá a mensagem `Error occured`.
 
 >[!NOTE]
 >
->Se você usar o `success` função de retorno de chamada, os valores de saída não serão preenchidos nos campos de formulário especificados.
+>Se você usar a função de retorno de chamada `success`, os valores de saída não serão preenchidos nos campos de formulário especificados.
 
 ```javascript
 var operationInfo = {

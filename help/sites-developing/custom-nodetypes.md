@@ -20,8 +20,8 @@ ht-degree: 5%
 
 Como o Adobe Experience Manager (AEM) é baseado no Sling e usa um repositório JCR, os tipos de nó oferecidos por ambos estão disponíveis para uso:
 
-* [Tipos de nó JCR](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/3_Repository_Model.html#3.1.7-Node-Types)
-* [Tipos de nó Sling](https://cwiki.apache.org/confluence/display/SLING/Sling+Node+Types)
+* [Tipos de nós JCR](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/3_Repository_Model.html#3.1.7-Node-Types)
+* [Tipos de Nó do Sling](https://cwiki.apache.org/confluence/display/SLING/Sling+Node+Types)
 
 Além desses tipos de nó, o AEM fornece uma variedade de tipos de nó personalizados.
 
@@ -78,7 +78,7 @@ Define o nodetype de um nó de comentário.
 
 **Descrição**
 
-Define o tipo de nó de um `commentattachment` nó
+Define o nodetype de um nó `commentattachment`
 
 **Definição**
 
@@ -164,12 +164,12 @@ Define o nó padrão para o conteúdo da página, com as propriedades mínimas c
 * `@prop jcr:description` - Descrição desta página.
 * `@prop cq:template` - Caminho para o modelo usado para criar a página.
 * `@prop cq:allowedTemplates` - Lista de expressões regulares usadas para determinar os caminhos para o modelo permitido.
-* `@prop pageTitle` - Título exibido no `<title>` tag.
+* `@prop pageTitle` - Título exibido na marca `<title>`.
 * `@prop navTitle` - Título usado na navegação.
 * `@prop hideInNav` - Especifica se a página deve estar oculta na navegação.
 * `@prop onTime` - Hora em que esta página se torna válida.
 * `@prop offTime` - Hora em que esta página se torna inválida.
-* `@prop cq:lastModified` - Data em que a página (ou seus parágrafos) foi modificada pela última vez.
+* `@prop cq:lastModified` - Data da última modificação da página (ou de seus parágrafos).
 * `@prop cq:lastModifiedBy` - Último usuário a alterar a página (ou seus parágrafos).
 * `@prop jcr:language` - O idioma do conteúdo da página.
 
@@ -205,9 +205,9 @@ Define um modelo CQ.
       * `+ name1`
          * `- cq:path`
             * `- cq:workflowName`
-* `@prop allowedParents` - Padrões de expressão regular para determinar os caminhos para modelos permitidos como modelos principais.
+* `@prop allowedParents` - Padrões de expressão regular para determinar os caminhos para modelos permitidos como modelos pai.
 * `@prop allowedChildren` - Padrões de expressão regular para determinar os caminhos para modelos permitidos como modelos filho.
-* `@prop ranking` - Posicionar na lista de modelos na caixa de diálogo Criar página.
+* `@prop ranking` - Posição na lista de modelos na caixa de diálogo Criar página.
 
 **Definição**
 
@@ -233,20 +233,20 @@ Define um componente do CQ.
 * `@prop jcr:description` - Descrição do componente.
 * `@node dialog` - Caixa de diálogo principal.
 * `@prop dialogPath` - Caminho primário da caixa de diálogo (alternativa à caixa de diálogo).
-* `@node design_dialog` - Caixa de diálogo Design.
+* `@node design_dialog` - Caixa de diálogo de Design.
 * `@prop cq:cellName` - Nome da célula de design.
-* `@prop cq:isContainer` - Indica se é um componente de contêiner. Força os nomes das células dos componentes filhos a serem usados em vez dos nomes de caminho. Por exemplo, a variável `parsys` é um componente de container. Se esse valor não estiver definido, a verificação será feita com base na existência de um `cq:childEditConfig`.
-* `@prop cq:noDecoration` - Se verdadeiro, nenhuma decoração `div` as tags são desenhadas ao incluir este componente.
+* `@prop cq:isContainer` - Indica se é um componente de contêiner. Força os nomes das células dos componentes filhos a serem usados em vez dos nomes de caminho. Por exemplo, `parsys` é um componente de contêiner. Se esse valor não estiver definido, a verificação será feita com base na existência de um `cq:childEditConfig`.
+* `@prop cq:noDecoration` - Se for verdadeiro, nenhuma marca `div` de decoração será desenhada ao incluir este componente.
 * `@node cq:editConfig` - A configuração que define os parâmetros da barra de edição.
-* `@node cq:childEditConfig` - A configuração de edição que é herdada por componentes secundários.
-* `@node cq:htmlTag` - Define atributos de tag adicionais que são adicionados ao &quot;ambiente&quot; `div` quando o componente é incluído.
+* `@node cq:childEditConfig` - A configuração de edição que é herdada por componentes filhos.
+* `@node cq:htmlTag` - Define atributos de marca adicionais que são adicionados à marca `div` &quot;ao redor&quot; quando o componente é incluído.
 * `@node icon.png`- Um arquivo que contém um ícone característico.
 * `@node thumbnail.png` - Um arquivo que contém uma imagem em miniatura característica.
-* `@prop allowedParents` - Padrões de expressão regular para determinar os caminhos de componentes permitidos como componentes principais.
-* `@prop allowedChildren` - Padrões de expressão regular para determinar os caminhos de componentes permitidos como componentes secundários.
+* `@prop allowedParents` - Padrões de expressão regular para determinar os caminhos de componentes permitidos como componentes pai.
+* `@prop allowedChildren` - Padrões de expressão regular para determinar os caminhos de componentes permitidos como componentes filho.
 * `@node virtual` - Contém subnós que refletem componentes virtuais usados para arrastar e soltar componentes.
 * `@prop componentGroup` - Nome do grupo de componentes, usado para arrastar e soltar o componente.
-* `@node cq:infoProviders` - Contém subnós, cada um com uma propriedade `className` que se refere a um `PageInfoProvider`.
+* `@node cq:infoProviders` - Contém subnós, cada um dos quais tem uma propriedade `className` que se refere a um `PageInfoProvider`.
 
 **Definição**
 
@@ -287,14 +287,14 @@ Define um componente CQ como um tipo de mixin.
 
 Define a configuração da &quot;barra de edição&quot;.
 
-* `@prop cq:dialogMode` - Modo da caixa de diálogo:
+* `@prop cq:dialogMode` - Modo de diálogo:
    * `floating` - para uma caixa de diálogo flutuante normal
    * `inline` - edição em linha
    * `auto` - detecção automática (dependendo do espaço disponível)
 * `@node cq:inplaceEditing` - Inserir configuração de edição para este componente.
 * `@prop cq:layout`- Layout da barra de edição:
-   * `editbar` - editar barra
-   * `rollover` - quadro de rolagem
+   * `editbar` - barra de edição
+   * `rollover` - sobrepor quadro
    * `auto` - detecção automática
 * `@node cq:formParameters`- Parâmetros adicionais para adicionar ao formulário de diálogo.
 * `@prop cq:actions`- Lista de ações (botões da barra de edição ou itens de menu).
@@ -319,7 +319,7 @@ Define a configuração da &quot;barra de edição&quot;.
 
 Configura um alvo de liberação de um componente. O nome deste nó é usado como uma ID para arrastar e soltar.
 
-* `@prop accept` - Lista de tipos MIME aceitos por este alvo; por exemplo, `["image/*"]`
+* `@prop accept` - Lista de tipos MIME aceitos por este destino de lançamento; por exemplo, `["image/*"]`
 * `@prop groups` - Lista de grupos de arrastar e soltar que aceitam uma origem.
 * `@prop propertyName` - Nome da propriedade usada para armazenar a referência.
 
@@ -339,13 +339,13 @@ Define um componente do CQ virtual. Atualmente usado apenas para o novo assisten
 
 * `@prop jcr:title` - Título deste componente.
 * `@prop jcr:description` - Descrição deste componente.
-* `@node cq:editConfig` - Editar a configuração que define os parâmetros da barra de edição.
-* `@node cq:childEditConfig`- Editar a configuração herdada por componentes filhos.
+* `@node cq:editConfig` - Editar configuração que define os parâmetros da barra de edição.
+* `@node cq:childEditConfig`- Editar configuração herdada por componentes filhos.
 * `@node icon.png` - Um arquivo que contém um ícone característico.
 * `@node thumbnail.png` - Um arquivo que contém uma imagem em miniatura característica.
-* `@prop allowedParents` - Padrões de expressão regular para determinar caminhos de componentes permitidos como componentes principais.
-* `@prop allowedChildren` - Padrões de expressão regular para determinar caminhos de componentes permitidos como componentes secundários.
-* `@prop componentGroup` - Nome do grupo de componentes de arrastar e soltar.
+* `@prop allowedParents` - Padrões de expressão regular para determinar caminhos de componentes permitidos como componentes pai.
+* `@prop allowedChildren` - Padrões de expressão regular para determinar caminhos de componentes permitidos como componentes filho.
+* `@prop componentGroup` - Nome do grupo de componentes para arrastar e soltar o componente.
 
 **Definição**
 
@@ -373,9 +373,9 @@ Define os ouvintes (do lado do cliente) a serem executados em um evento de ediç
 * `@prop aftercreate` - Acionado após a criação de um componente.
 * `@prop afteredit` - Acionado após um componente ter sido editado (modificado).
 * `@prop afterdelete` - Acionado após a exclusão de um componente.
-* `@prop afterinsert` - Acionado após a adição de um componente a esse contêiner.
-* `@prop afterremove` - Dispara depois que um componente é removido deste contêiner.
-* `@prop aftermove` - Dispara depois que os componentes são movidos neste contêiner.
+* `@prop afterinsert` - Acionado após a adição de um componente a este contêiner.
+* `@prop afterremove` - Acionado após a remoção de um componente deste contêiner.
+* `@prop aftermove` - Acionado após os componentes terem sido movidos neste contêiner.
 
 **Definição**
 
@@ -447,12 +447,12 @@ Lista de Contêineres.
 
 **Descrição**
 
-O tipo de nó `cq:attributes` é para as etiquetas da versão do ContentBus. Esse nó tem apenas uma série de propriedades; das quais três são predefinidas &quot;created&quot;, &quot;csd&quot; e &quot;timestamp&quot;.
+O tipo de nó `cq:attributes` é para as marcas de versão de ContentBus. Esse nó tem apenas uma série de propriedades; das quais três são predefinidas &quot;created&quot;, &quot;csd&quot; e &quot;timestamp&quot;.
 
 * `@prop created (long) mandatory copy` - Carimbo de data e hora de criação das informações de versão, geralmente a hora de check-in da versão anterior ou a hora de criação da página.
-* `@prop csd (string) mandatory copy` - atributo csd padrão, cópia da propriedade cq:csd do nó da página
-* `@prop timestamp (long) mandatory copy` - Carimbo de data e hora da última modificação de versão, geralmente hora de check-in.
-* `@prop * (string) copy` - Atributos adicionais, com versão feita com o nó principal.
+* `@prop csd (string) mandatory copy` - atributo padrão csd, cópia da propriedade cq:csd do nó da página
+* `@prop timestamp (long) mandatory copy` - Carimbo de data/hora da última modificação de versão, geralmente verificando a hora.
+* `@prop * (string) copy` - Atributos adicionais, com controle de versão com o nó pai.
 
 **Definição**
 
@@ -468,11 +468,11 @@ O tipo de nó `cq:attributes` é para as etiquetas da versão do ContentBus. Ess
 
 O tipo de nó `cq:contentPage` contém as definições de propriedade e nó filho para páginas de conteúdo de ContentBus. Somente quando este tipo de mixin é adicionado a um nó do tipo `cq:page`, um nó se torna uma página de conteúdo de ContentBus.
 
-Os itens em uma `cq:Cq4ContentPage` são:
+Os itens em um `cq:Cq4ContentPage` são:
 
 * `@prop cq:csd` - O CSD de ContentBus da página.
 * `@node cq:content` - O conteúdo da página. Esse nó secundário não existe se o nó da página estiver no estado &quot;Existente sem conteúdo&quot; ou &quot;Excluído&quot;.
-* `@node cq:attributes` - A lista de atributos de página, que eram conhecidos anteriormente como tags de versão. Esse nó é obrigatório para o tipo cq:contentPage. Quando é feita a versão do nó da página, é feita a versão do nó dos atributos.
+* `@node cq:attributes` - A lista de atributos de página, que eram conhecidos anteriormente como marcas de versão. Esse nó é obrigatório para o tipo cq:contentPage. Quando é feita a versão do nó da página, é feita a versão do nó dos atributos.
 
 **Definição**
 
@@ -490,8 +490,8 @@ Configuração de enquete.
 
 * `@prop source (String) mandatory` - URI da fonte de dados. Obrigatório e não deve estar vazio.
 * `@prop target (String)` - O local de destino onde os dados recuperados da fonte de dados são armazenados. Opcional e assume como padrão o nó cq:PollConfig.
-* `@prop interval (Long)` - O intervalo em segundos no qual pesquisar dados novos ou atualizados a partir da fonte de dados. Opcional e o padrão é 30 minutos (1800 segundos).
-* [Criação de serviços personalizados do importador de dados para o Adobe Experience Manager](https://helpx.adobe.com/experience-manager/using/polling.html)
+* `@prop interval (Long)` - O intervalo em segundos no qual pesquisar dados novos ou atualizados da fonte de dados. Opcional e o padrão é 30 minutos (1800 segundos).
+* [Criando serviços personalizados de importação de dados para o Adobe Experience Manager](https://helpx.adobe.com/experience-manager/using/polling.html)
 
 **Definição**
 
@@ -566,9 +566,9 @@ Define uma combinação de LiveRelationship. Um nó de origem principal (control
 
 Define um mixin do LiveSync. Se um nó estiver envolvido em um LiveRelationship com um nó de origem primária (controle) e um nó de live copy (controlado), ele será marcado como um LiveSync.
 
-* `@prop cq:master` - Caminho da fonte primária (controle) do LiveRelationship.
-* `@prop cq:isDeep` - Define se o relacionamento está disponível para filhos.
-* `@prop cq:syncTrigger` - Define quando o é acionado pela sincronização.
+* `@prop cq:master` - Caminho da origem primária (controle) do LiveRelationship.
+* `@prop cq:isDeep` - Define se a relação está disponível para filhos.
+* `@prop cq:syncTrigger` - Define quando é acionada a sincronização.
 * `@node * LiveSyncAction` - Ações a serem executadas na sincronização
 
 **Definição**
@@ -583,7 +583,7 @@ Define um mixin do LiveSync. Se um nó estiver envolvido em um LiveRelationship 
 
 Define um mixin LiveSyncCancelled. Cancele o comportamento do LiveSync de um nó de live copy (controlado) que pode estar envolvido em um LiveRelationship devido a um de seus pais.
 
-* `@prop cq:isCancelledForChildren` - Define se um LiveSync é cancelado; também para secundários.
+* `@prop cq:isCancelledForChildren` - Define se um LiveSync é cancelado; também para filhos.
 
 **Definição**
 
@@ -652,8 +652,8 @@ Define o tipo de nó de um nó de console.
 Define a combinação de informações do status de replicação.
 
 * `@prop cq:lastPublished`- A data em que a página foi publicada pela última vez (não é mais usada).
-* `@prop cq:lastPublishedBy`- O último usuário que publicou a página (não é mais usado).
-* `@prop cq:lastReplicated` - A data em que a página foi replicada por último.
+* `@prop cq:lastPublishedBy`- O usuário que publicou a página por último (não é mais usado).
+* `@prop cq:lastReplicated` - A data da última replicação da página.
 * `@prop cq:lastReplicatedBy` - O usuário que replicou a página por último.
 * `@prop cq:lastReplicationAction` - A ação de replicação: ativar ou desativar.
 * `@prop cq:lastReplicationStatus` - O status de replicação (não é mais usado).
@@ -817,7 +817,7 @@ Qualquer site do usuário/público pode marcar o conteúdo (estilo Web2.0), usad
 
 **Descrição**
 
-Adiciona um `cq:userContent` subnó que pode ser modificado pelos usuários. Cada usuário tem seu próprio `cq:userContent/<userid>` subnó, que normalmente tem o mixin `cq:UserTaggable`.
+Adiciona um subnó `cq:userContent` que pode ser modificado pelos usuários. Cada usuário tem seu próprio subnó `cq:userContent/<userid>`, que normalmente tem o mixin `cq:UserTaggable`.
 
 **Definição**
 
@@ -825,7 +825,7 @@ Adiciona um `cq:userContent` subnó que pode ser modificado pelos usuários. Cad
    * `mixin`
    * `+ cq:userContent (nt:unstructured)`
 
-Variante estendida, definindo mais explicitamente a variável `cq:userContent` árvore
+Variante estendida, definindo mais explicitamente a árvore `cq:userContent`
 
 * `[cq:AllowsUserContent]`
    * `mixin`

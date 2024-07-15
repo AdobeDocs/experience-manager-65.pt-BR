@@ -19,7 +19,7 @@ ht-degree: 3%
 
 # Migração para a interface de toque{#migration-to-the-touch-ui}
 
-A partir da versão 6.0, o Adobe Experience Manager (AEM) apresentou uma nova interface de usuário chamada de *interface habilitada para toque* (também conhecido simplesmente como *interface de toque*). Ele está alinhado à Adobe Experience Cloud e às diretrizes gerais da interface do usuário do Adobe. Essa se tornou a interface padrão no AEM, com a interface herdada, orientada para desktop, chamada de *IU clássica*.
+A partir da versão 6.0, o Adobe Experience Manager (AEM) apresentou uma nova interface de usuário chamada de *interface habilitada para toque* (também conhecida simplesmente como *interface de toque*). Ele está alinhado à Adobe Experience Cloud e às diretrizes gerais da interface do usuário do Adobe. Esta se tornou a interface padrão no AEM com a interface herdada, orientada para desktop, chamada de *interface clássica*.
 
 Se você tem usado o AEM com a interface clássica, execute uma ação para migrar sua instância. Esta página serve como um trampolim, fornecendo links para recursos individuais.
 
@@ -38,7 +38,7 @@ Ao migrar, esteja ciente das principais diferenças a seguir entre a interface c
    <td>Interface de usuário habilitada para toque</td>
   </tr>
   <tr>
-   <td>É descrito no repositório JCR como uma estrutura de nós. Cada nó que representa um elemento da interface do usuário é chamado de um <em>Widget ExtJS</em> e renderizado no lado do cliente por <code>ExtJS</code>.</td>
+   <td>É descrito no repositório JCR como uma estrutura de nós. Cada nó que representa um elemento da interface do usuário é chamado de <em>widget ExtJS</em> e renderizado no lado do cliente por <code>ExtJS</code>.</td>
    <td>Também descrito no repositório JCR como uma estrutura de nós. No entanto, nesse caso, cada nó se refere a um tipo de recurso Sling (componente Sling), responsável pela renderização. Portanto, a interface do usuário é (basicamente) renderizada no lado do servidor.</td>
   </tr>
   <tr>
@@ -81,7 +81,7 @@ Ao migrar, esteja ciente das principais diferenças a seguir entre a interface c
     </ul> </td>
    <td><p>Manipulação de eventos:</p>
     <ul>
-     <li>O JavaScript observa eventos de diálogo.</li>
+     <li>A JavaScript observa eventos de diálogo.</li>
     </ul> </td>
   </tr>
   <tr>
@@ -99,7 +99,7 @@ Ao migrar, esteja ciente das principais diferenças a seguir entre a interface c
  </tbody>
 </table>
 
-Em outras palavras, migrar uma seção da interface do usuário da interface clássica para a interface do usuário de toque significa portar um *Widget ExtJS* para um *Componente do Sling*. Para facilitar isso, a interface de toque é baseada na estrutura da interface de usuário do Granite, que já fornece alguns componentes do Sling para a interface de usuário (conhecidos como componentes da interface de usuário do Granite).
+Em outras palavras, migrar uma seção da sua interface do usuário da interface clássica para a interface de toque significa portar um *widget ExtJS* para um *componente Sling*. Para facilitar isso, a interface de toque é baseada na estrutura da interface de usuário do Granite, que já fornece alguns componentes do Sling para a interface de usuário (conhecidos como componentes da interface de usuário do Granite).
 
 Antes de começar, verifique o status e as recomendações relacionadas:
 
@@ -115,21 +115,21 @@ As noções básicas para o desenvolvimento da interface para toque fornecem uma
 
 As caixas de diálogo são um fator importante ao migrar seus componentes:
 
-* [Desenvolvimento de componentes do AEM](/help/sites-developing/developing-components.md) (com a interface habilitada para toque)
+* [Desenvolvendo componentes do AEM](/help/sites-developing/developing-components.md) (com a interface habilitada para toque)
 * [Migração de um componente clássico](/help/sites-developing/developing-components.md#migrating-from-a-classic-component)
-* [Ferramentas de modernização do AEM](/help/sites-developing/modernization-tools.md) - para ajudá-lo a converter as caixas de diálogo dos componentes da interface clássica para a interface de toque
+* [Ferramentas de Modernização do AEM](/help/sites-developing/modernization-tools.md) - para ajudá-lo a converter as caixas de diálogo dos seus componentes de interface clássica para a interface de toque
 
    * Há uma camada de compatibilidade na interface para toque para abrir uma caixa de diálogo da interface clássica em um &quot;invólucro da interface para toque&quot;, mas essa funcionalidade é limitada e não é recomendada para longo prazo.
 
-* [Personalização de campos de caixa de diálogo na interface para toque](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-customizing-dialog-fields-in-touch-ui.html)
+* [Personalizando Campos de Caixa de Diálogo na Interface para Toque](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-customizing-dialog-fields-in-touch-ui.html)
 * [Criação de um novo componente de campo da interface de usuário do Granite](/help/sites-developing/granite-ui-component.md)
-* [Personalização da criação de página](/help/sites-developing/customizing-page-authoring-touch.md) (com a interface habilitada para toque)
+* [Personalizando a Criação de Página](/help/sites-developing/customizing-page-authoring-touch.md) (com a interface habilitada para toque)
 
 ## Migração de Consoles {#migrating-consoles}
 
 Você também pode personalizar os consoles:
 
-* [Personalização dos Consoles](/help/sites-developing/customizing-consoles-touch.md) (para a interface habilitada para toque)
+* [Personalizando os Consoles](/help/sites-developing/customizing-consoles-touch.md) (para a interface habilitada para toque)
 
 ## Considerações relacionadas {#related-considerations}
 
@@ -148,8 +148,8 @@ Embora não esteja diretamente relacionado a uma migração para a interface de 
 Para obter informações completas sobre o desenvolvimento do AEM, consulte a coleta de recursos em:
 
 * [Guia do usuário para desenvolvimento](/help/sites-developing/getting-started.md)
-* [Documentação da interface de usuário do Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
-* [AEM 6.5 Sites Tutorials e vídeos](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html)
+* [Documentação da interface do Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
+* [Vídeos e Tutorials de Sites do AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html)
 * [Introdução ao desenvolvimento do AEM Sites - Tutorial de WKND](/help/sites-developing/getting-started.md)
 * [Gems AEM](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html)
 * [Ferramentas de Modernização do AEM](https://opensource.adobe.com/aem-modernize-tools/)

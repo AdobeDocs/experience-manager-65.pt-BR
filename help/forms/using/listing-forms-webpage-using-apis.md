@@ -19,7 +19,7 @@ ht-degree: 1%
 
 O AEM Forms fornece uma API de pesquisa baseada em REST que os desenvolvedores da Web podem usar para consultar e recuperar um conjunto de formulários que atenda aos critérios de pesquisa. Você pode usar APIs para pesquisar formulários com base em vários filtros. O objeto de resposta contém atributos de formulário, propriedades e pontos de extremidade de renderização de formulários.
 
-Para pesquisar formulários usando a REST API, envie uma solicitação do GET para o servidor em `https://'[server]:[port]'/libs/fd/fm/content/manage.json` com os parâmetros de consulta descritos abaixo.
+Para pesquisar formulários usando a API REST, envie uma solicitação GET ao servidor em `https://'[server]:[port]'/libs/fd/fm/content/manage.json` com os parâmetros de consulta descritos abaixo.
 
 ## Parâmetros de consulta {#query-parameters}
 
@@ -31,9 +31,9 @@ Para pesquisar formulários usando a REST API, envie uma solicitação do GET pa
   </tr>
   <tr>
    <td>func<br /> </td>
-   <td><p>Especifica a função a ser chamada. Para pesquisar formulários, defina o valor do <code>func </code>atributo para <code>searchForms</code>.</p> <p>Por exemplo, <code class="code">
+   <td><p>Especifica a função a ser chamada. Para pesquisar formulários, defina o valor do atributo <code>func </code> como <code>searchForms</code>.</p> <p>Por exemplo, <code class="code">
        URLParameterBuilder entityBuilder=new URLParameterBuilder ();
-       entityBuilder.add("func", "searchForms");</code></p> <p><strong>Nota:</strong> <em>Esse parâmetro é obrigatório.</em><br /> </p> </td>
+       entityBuilder.add("func", "searchForms");</code></p> <p><strong>Observação:</strong> <em>Este parâmetro é obrigatório.</em><br /> </p> </td>
   </tr>
   <tr>
    <td>appPath<br /> </td>
@@ -51,9 +51,9 @@ Para pesquisar formulários usando a REST API, envie uma solicitação do GET pa
    <td>relação<br /> </td>
    <td>Especifica os ativos relacionados a serem buscados junto com os resultados da pesquisa. Você pode escolher uma das seguintes opções para buscar ativos relacionados:
     <ul>
-     <li><strong>NO_RELATION</strong>: não busque ativos relacionados.</li>
-     <li><strong>IMEDIATO</strong>: busca ativos que estão diretamente relacionados aos resultados da pesquisa.</li>
-     <li><strong>TODOS</strong>: Buscar ativos relacionados direta e indiretamente.</li>
+     <li><strong>NO_RELATION</strong>: não buscar ativos relacionados.</li>
+     <li><strong>IMEDIATO</strong>: busca ativos diretamente relacionados aos resultados da pesquisa.</li>
+     <li><strong>TODOS</strong>: buscar ativos relacionados direta e indiretamente.</li>
     </ul> </td>
   </tr>
   <tr>
@@ -76,9 +76,9 @@ Para pesquisar formulários usando a REST API, envie uma solicitação do GET pa
        statement.put("value", "SimpleSurveyAF");
        statement.put("operator", "EQ"); statementArray.put(statement);</code></p> <p>No exemplo acima, </p>
     <ul>
-     <li><strong>name</strong>: especifica o nome da propriedade que será pesquisada.</li>
-     <li><strong>value</strong>: especifica o valor da propriedade que será pesquisada.</li>
-     <li><strong>operador</strong>: especifica o operador a ser aplicado durante a pesquisa. Os seguintes operadores são compatíveis:
+     <li><strong>name</strong>: especifica o nome da propriedade a ser pesquisada.</li>
+     <li><strong>value</strong>: especifica o valor da propriedade a ser pesquisada.</li>
+     <li><strong>operator</strong>: especifica o operador a ser aplicado durante a pesquisa. Os seguintes operadores são compatíveis:
       <ul>
        <li>EQ - Igual a </li>
        <li>NEQ - Diferente de</li>
@@ -92,7 +92,7 @@ Para pesquisar formulários usando a REST API, envie uma solicitação do GET pa
        <li>ENDSWITH - A termina com B se B for a parte final de A</li>
        <li>LIKE - Implementa o operador LIKE</li>
        <li>AND - Combinar vários demonstrativos</li>
-      </ul> <p><strong>Nota:</strong> <em>Os operadores GT, LT, GTEQ e LTEQ são aplicáveis para propriedades do tipo linear, como LONG, DOUBLE e DATE.</em></p> </li>
+      </ul> <p><strong>Observação:</strong> <em>Os operadores GT, LT, GTEQ e LTEQ se aplicam às propriedades do tipo linear, como LONG, DOUBLE e DATE.</em></p> </li>
     </ul> </td>
   </tr>
   <tr>
@@ -104,7 +104,7 @@ Para pesquisar formulários usando a REST API, envie uma solicitação do GET pa
        orderingsArray.put(orderings);
        entityBuilder.add("orderings", orderingsArray.toString());</code></p>
     <ul>
-     <li><strong>name</strong>: especifica o nome da propriedade a ser usada para ordenar os resultados da pesquisa.</li>
+     <li><strong>nome</strong>: especifica o nome da propriedade a ser usada para ordenar os resultados da pesquisa.</li>
      <li><strong>critérios</strong>: especifica a ordem dos resultados. O atributo order aceita os seguintes valores:
       <ul>
        <li>ASC - Use ASC para organizar os resultados na ordem crescente.<br /> </li>
@@ -114,7 +114,7 @@ Para pesquisar formulários usando a REST API, envie uma solicitação do GET pa
   </tr>
   <tr>
    <td>includeXdp</td>
-   <td>Especifica se o conteúdo binário deve ser recuperado ou não. A variável <code>includeXdp</code> o atributo é aplicável a ativos do tipo <code>FORM</code>, <code>PDFFORM</code>, e <code>PRINTFORM</code>.</td>
+   <td>Especifica se o conteúdo binário deve ser recuperado ou não. O atributo <code>includeXdp</code> é aplicável a ativos do tipo <code>FORM</code>, <code>PDFFORM</code> e <code>PRINTFORM</code>.</td>
   </tr>
   <tr>
    <td>assetType</td>

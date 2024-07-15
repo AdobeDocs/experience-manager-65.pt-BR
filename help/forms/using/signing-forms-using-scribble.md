@@ -17,7 +17,7 @@ ht-degree: 2%
 
 # Aplicar assinaturas eletrônicas a um formulário usando assinaturas escritas{#apply-electronic-signatures-to-a-form-using-deprecated-scribble-signatures}
 
-<span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) para [criação de um novo Forms adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
+O <span class="preview"> Adobe recomenda o uso de [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adicionar o Forms Adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
 
 
 | Versão | Link do artigo |
@@ -26,25 +26,25 @@ ht-degree: 2%
 | AEM 6.5 | Este artigo |
 
 
-Você pode usar o **Rabiscar a assinatura** componente e **Etapa de assinatura** componente para desenhar (Rabiscar) assinatura em um formulário adaptável. O componente Etapa de assinatura exibe uma versão PDF do formulário adaptável. Você precisa de uma opção Documento de registro ativada ou de formulários adaptáveis baseados em modelo de formulário para usar o componente Etapa de assinatura.
+Você pode usar o componente **Assinatura assinável** e o componente **Etapa de assinatura** para desenhar (Rabiscar) uma assinatura em um formulário adaptável. O componente Etapa de assinatura exibe uma versão PDF do formulário adaptável. Você precisa de uma opção Documento de registro ativada ou de formulários adaptáveis baseados em modelo de formulário para usar o componente Etapa de assinatura.
 
-![Caixa de diálogo Scribble sign](/help/forms/using/assets/scribble-signature.png)
+![Caixa de diálogo Assinar assinatura](/help/forms/using/assets/scribble-signature.png)
 
 ## Várias opções disponíveis na Janela de assinatura
 
-* **R:** Clique em **Pincel de pintura** ícone para desenhar sua assinatura na tela.
-* **B:** Clique em **Limpar** ícone para limpar a assinatura na tela.
-* **C:** Clique em **Localização geográfica** ícone para adicionar a localização geográfica junto com a assinatura.
-* **D:** Clique em **Teclado** ícone para digitar seu nome na tela.
+* **A:** Clique no ícone **Pincel de Tinta** para desenhar sua assinatura na tela.
+* **B:** Clique no ícone **Limpar** para limpar a assinatura na tela.
+* **C:** Clique no ícone **Geolocalização** para adicionar a geolocalização junto com a assinatura.
+* **D:** Clique no ícone **Teclado** para digitar seu nome na tela.
 
-Depois de selecionar Concluído![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) ícone na janela Assinatura, não é possível editar a assinatura. No caso, se você quiser editar a assinatura, desconsidere a assinatura atual e assine novamente usando a opção Pincel/Teclado acima.
+Depois de selecionar o ícone Concluído![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) na janela Assinatura Escrita, você não poderá editar a assinatura. No caso, se você quiser editar a assinatura, desconsidere a assinatura atual e assine novamente usando a opção Pincel/Teclado acima.
 
-É possível selecionar a variável **Configurar** ![configurar](assets/configure.png) ícone para definir a proporção da tela Assinatura Escrita.
+Você pode selecionar o ícone **Configurar** ![configurar](assets/configure.png) para definir a proporção da tela Assinatura Escrita.
 * Quando a proporção da tela Assinatura Escrita for menor que 1, as informações de localização geográfica serão adicionadas na parte inferior da tela Assinatura Escrita.
 
 * Quando a proporção da tela Assinatura Escrita for maior que 1, as informações de geolocalização serão adicionadas ao lado direito da tela Assinatura Escrita.
 
-![rabisco inferior de assinatura](/help/forms/using/assets/scribble-signature-aspectratio.PNG)
+![rabisco de assinatura-fundo](/help/forms/using/assets/scribble-signature-aspectratio.PNG)
 
 
 >[!NOTE]
@@ -55,8 +55,8 @@ Depois de selecionar Concluído![aem_6_3_forms_save](assets/aem_6_3_forms_save.p
 ## Configurar um formulário adaptável para usar a assinatura escritas {#configure-an-adaptive-form-to-use-scribble-signature}
 
 1. Opção Criar um documento de registro ativada ou formulário adaptável baseado em modelo de formulário. Para obter informações passo a passo, consulte [Criação de um formulário adaptável](../../forms/using/creating-adaptive-form.md).
-1. Arraste e solte a variável **Rabiscar a assinatura** componente do navegador de componentes ao formulário adaptável.
-1. Selecione o **Configurar** ![configurar](assets/configure.png) ícone. Ele abre as propriedades do navegador e exibe as propriedades do componente Assinatura Escrita. Configure as propriedades do componente Assinatura Escrita.
+1. Arraste e solte o componente **Assinatura Escrita** do navegador de componentes para o formulário adaptável.
+1. Selecione o ícone **Configurar** ![configurar](assets/configure.png). Ele abre as propriedades do navegador e exibe as propriedades do componente Assinatura Escrita. Configure as propriedades do componente Assinatura Escrita.
 1. Arraste e solte o componente Etapa de assinatura do navegador de componentes para o formulário adaptável.
 
    >[!NOTE]
@@ -64,24 +64,24 @@ Depois de selecionar Concluído![aem_6_3_forms_save](assets/aem_6_3_forms_save.p
    >O componente Etapa de assinatura ocupa toda a largura disponível para o formulário. É recomendável não ter nenhum outro componente na seção que contém o componente Etapa de assinatura.
    >
 
-1. No Navegador de conteúdo, selecione **Contêiner de formulário** e selecione a variável **Configurar** ![configurar](/help/forms/using/assets/configure.png) ícone. Ela abre as propriedades do navegador e exibe as propriedades do contêiner do Formulário adaptável. Navegue até **Contêiner de formulário adaptável** > **Assinatura eletrônica** e desmarque a opção **Ativar o Adobe Sign** opção. Selecione o Concluído ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) ícone para salvar as alterações.
+1. No Navegador de conteúdo, selecione **Contêiner de formulário** e selecione o ícone **Configurar** ![configurar](/help/forms/using/assets/configure.png). Ela abre as propriedades do navegador e exibe as propriedades do contêiner do Formulário adaptável. Navegue até **Contêiner de formulário adaptável** > **Assinatura eletrônica** e desmarque a opção **Habilitar Adobe Sign**. Selecione o ícone Concluído ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) para salvar as alterações.
 
    >[!NOTE]
    >
    >Quando você adiciona um componente Etapa de assinatura a um formulário adaptável, a opção Habilitar Adobe Sign é selecionada automaticamente.
    >
 
-1. Selecione o **Configurar** ![configurar](assets/configure.png) ícone. Ele abre o navegador de propriedades e exibe as propriedades da etapa Assinatura. Configure as seguintes propriedades:
+1. Selecione o ícone **Configurar** ![configurar](assets/configure.png). Ele abre o navegador de propriedades e exibe as propriedades da etapa Assinatura. Configure as seguintes propriedades:
 
-   * **Nome do elemento**: especifique o nome do componente.
+   * **Nome do Elemento**: especifique o nome do componente.
 
-   * **Título:** Especifique o título exclusivo do componente.
-   * **Mensagem do modelo:** Especifique a mensagem a ser exibida enquanto o PDF de assinatura estiver sendo carregado. Os serviços da Adobe Sign demoram algum tempo para preparar e carregar o PDF de assinatura.
-   * **Serviço de assinatura:** Selecione o **Rabiscar a assinatura** opção.
+   * **Título:** especifique o título exclusivo do componente.
+   * **Mensagem de modelo:** especifique a mensagem a ser exibida enquanto o PDF de assinatura estiver sendo carregado. Os serviços da Adobe Sign demoram algum tempo para preparar e carregar o PDF de assinatura.
+   * **Serviço de assinatura:** selecione a opção **Assinatura assinável**.
 
-   * **Classe CSS**: especifique a classe CSS da biblioteca do cliente, se houver. Uso [temas](../../forms/using/themes.md) e [estilos em linha](../../forms/using/inline-style-adaptive-forms.md) em vez da classe CSS.
+   * **Classe CSS**: especifique a classe CSS da biblioteca do cliente, se houver. Use [temas](../../forms/using/themes.md) e [estilos embutidos](../../forms/using/inline-style-adaptive-forms.md) em vez da Classe CSS.
 
-   Selecione o Concluído ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) ícone para salvar as alterações. A Assinatura foi configurada com êxito.
+   Selecione o ícone Concluído ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) para salvar as alterações. A Assinatura foi configurada com êxito.
 
    Agora, quando você preenche um formulário, uma versão de PDF do formulário adaptável é exibida e as opções para assinar o documento de PDF são fornecidas. Para obter informações detalhadas, consulte [Assinar um formulário adaptável usando a Assinatura Escrita](../../forms/using/signing-forms-using-scribble.md#sign-an-adaptive-form-using-scribble-signature).
 
@@ -89,11 +89,11 @@ Depois de selecionar Concluído![aem_6_3_forms_save](assets/aem_6_3_forms_save.p
 
 1. Depois de preencher um formulário adaptável e chegar à página Etapa de assinatura, a tela de assinatura é exibida.
 
-   ![Caixa de diálogo Scribble sign](/help/forms/using/assets/esignscribblesign.jpg)
+   ![Caixa de diálogo Assinar assinatura](/help/forms/using/assets/esignscribblesign.jpg)
 
-1. Clique em **[!UICONTROL Sign]**. A caixa de diálogo assinar é exibida. Assine o formulário e clique no link Concluído ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) ícone para salvar a assinatura.
+1. Clique em **[!UICONTROL Assinar]**. A caixa de diálogo assinar é exibida. Assine o formulário e clique no ícone Concluído ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) para salvar a assinatura.
 
-   ![Caixa de diálogo Scribble sign](/help/forms/using/assets/scribblewidget.png)
+   ![Caixa de diálogo Assinar assinatura](/help/forms/using/assets/scribblewidget.png)
 
 1. Clique em Concluir para concluir o processo de assinatura.
 

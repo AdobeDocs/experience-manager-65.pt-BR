@@ -30,13 +30,14 @@ O controle de versão cria um “instantâneo” de uma página em um momento es
 Para criar uma versão de uma página:
 
 1. No navegador, abra a página para a qual deseja criar uma versão.
-1. No Sidekick, selecione a variável **Controle de versão** e, em seguida, **Criar versão** subguia.
+1. No Sidekick, selecione a guia **Versionamento** e depois a subguia **Criar versão**.
 
    ![screen_shot_2012-02-14at40259pm](assets/screen_shot_2012-02-14at40259pm.png)
 
 1. Insira um **Comentário** (opcional).
-1. Para definir um rótulo para a versão (opcional), clique no link **Mais >>** e defina o **Rótulo** para nomear a versão. Se o rótulo não for definido, a versão será um número incrementado automaticamente.
-1. Clique em **Criar versão**. Uma mensagem esmaecida é exibida na página; por exemplo: Versão 1.2 criada para: Camisas.
+1. Para definir um rótulo para a versão (opcional), clique no botão **Mais >>** e defina o **Rótulo** para nomear a versão. Se o rótulo não for definido, a versão será um número incrementado automaticamente.
+1. Clique em **Criar Versão**. Uma mensagem em cinza é exibida na página; por exemplo:
+Versão 1.2 criada para: Camisas.
 
 >[!NOTE]
 >
@@ -47,33 +48,33 @@ Para criar uma versão de uma página:
 Para restaurar a página para uma versão anterior:
 
 1. Abra a página para a qual deseja restaurar uma versão anterior.
-1. No sidekick, selecione a variável **Controle de versão** e, em seguida, **Restaurar versão** subguia.
+1. No sidekick, selecione a guia **Versionamento** e depois a subguia **Restaurar versão**.
 
    ![screen_shot_2012-02-14at42949pm](assets/screen_shot_2012-02-14at42949pm.png)
 
-1. Selecione a versão que deseja restaurar e selecione **Restaurar**.
+1. Selecione a versão que você deseja restaurar e selecione **Restaurar**.
 
 ## Restaurar uma versão da página no console {#restoring-a-page-version-from-the-console}
 
 Esse método pode ser usado para restaurar uma versão da página. Ele também pode ser usado para restaurar páginas que foram excluídas anteriormente:
 
-1. No **Sites** navegue até a página que deseja restaurar e selecione-a.
-1. No menu superior, selecione **Ferramentas**, depois **Restaurar**:
+1. No console **Sites**, navegue até a página que deseja restaurar e selecione-a.
+1. No menu superior, selecione **Ferramentas** e **Restaurar**:
 
    ![screen_shot_2012-02-08at41326pm](assets/screen_shot_2012-02-08at41326pm.png)
 
-1. Selecionar **Restaurar versão...** lista versões de documentos na pasta atual. Mesmo que uma página tenha sido excluída, a última versão será listada:
+1. Selecionar **Restaurar Versão...** lista versões de documentos na pasta atual. Mesmo que uma página tenha sido excluída, a última versão será listada:
 
    ![screen_shot_2012-02-08at45743pm](assets/screen_shot_2012-02-08at45743pm.png)
 
-1. Selecione a versão que deseja restaurar e clique em **Restaurar**. O AEM restaura as versões (ou árvores) selecionadas.
+1. Selecione a versão que você deseja restaurar e clique em **Restaurar**. O AEM restaura as versões (ou árvores) selecionadas.
 
 ### Restauração de uma árvore no console {#restoring-a-tree-from-the-console}
 
 Esse método pode ser usado para restaurar uma versão da página. Ele também pode ser usado para restaurar páginas que foram excluídas anteriormente:
 
-1. No **Sites** navegue até a pasta que deseja restaurar e selecione-a.
-1. No menu superior, selecione **Ferramentas**, depois **Restaurar**.
+1. No console **Sites**, navegue até a pasta que deseja restaurar e selecione-a.
+1. No menu superior, selecione **Ferramentas** e **Restaurar**.
 1. Selecionar **Restaurar árvore...** abre a caixa de diálogo para que você possa selecionar a árvore que deseja restaurar:
 
    ![screen_shot_2012-02-08at45743pm-1](assets/screen_shot_2012-02-08at45743pm-1.png)
@@ -85,11 +86,11 @@ Esse método pode ser usado para restaurar uma versão da página. Ele também p
 Para comparar a versão atual da página com uma versão anterior:
 
 1. No navegador, abra a página para a qual deseja comparar com uma versão anterior.
-1. No Sidekick, selecione a variável **Controle de versão** e, em seguida, **Restaurar versão** na subguia.
+1. No Sidekick, selecione a guia **Versionamento** e depois a subguia **Restaurar Versão** n.
 
    ![screen_shot_2012-02-14at42949pm-1](assets/screen_shot_2012-02-14at42949pm-1.png)
 
-1. Selecione a versão que deseja comparar e clique no link **Diferença** botão.
+1. Selecione a versão que você deseja comparar e clique no botão **Diff**.
 1. As diferenças entre a versão atual e a versão selecionada são exibidas da seguinte maneira:
 
    * O texto excluído fica vermelho e riscado.
@@ -98,7 +99,7 @@ Para comparar a versão atual da página com uma versão anterior:
 
    ![chlimage_1-75](assets/chlimage_1-75.png)
 
-1. No Sidekick, selecione a variável **Restaurar versão** e clique na guia **&lt;&lt;back span=&quot;&quot; id=&quot;3&quot; translate=&quot;no&quot; /> botão para exibir a versão atual.**
+1. No Sidekick, selecione a subguia **Restaurar versão** e clique no botão **&lt;&lt;Voltar** para exibir a versão atual.
 
 ## Timewarp   {#timewarp}
 
@@ -109,7 +110,7 @@ O objetivo é permitir que você rastreie o site publicado no momento selecionad
 Para fazer isso:
 
 * O sistema procura a versão da página que estava ativa no momento selecionado.
-* Isso significa que a versão mostrada foi criada/ativada *antes* o ponto no tempo selecionado no Timewarp.
+* Isso significa que a versão mostrada foi criada/ativada *antes* do momento selecionado no Timewarp.
 * Ao navegar para uma página que foi excluída, isso também é renderizado - desde que as versões antigas da página ainda estejam disponíveis no repositório.
 * Se nenhuma versão publicada for encontrada, o Timewarp reverterá para o estado atual da página no ambiente de criação (o objetivo é evitar um erro de página/404, o que significa que você não pode mais navegar).
 
@@ -123,7 +124,7 @@ O Timewarp está disponível no sidekick.
 
 A versão do calendário é usada se você tiver um dia específico para ser exibido:
 
-1. Abra o **Controle de versão** e clique em **Timewarp** (perto da parte inferior do sidekick). A seguinte caixa de diálogo é exibida:
+1. Abra a guia **Versionamento** e clique em **Timewarp** (próximo à parte inferior do sidekick). A seguinte caixa de diálogo é exibida:
 
    ![chlimage_1-76](assets/chlimage_1-76.png)
 
@@ -141,12 +142,12 @@ A versão do calendário é usada se você tiver um dia específico para ser exi
 
    >[!NOTE]
    >
-   >Não é possível editar a versão antiga da página. Ela só está disponível para exibição. Se quiser restaurar a versão mais antiga, faça isso manualmente usando [restaurar](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#restoring-a-page-version-from-sidekick).
+   >Não é possível editar a versão antiga da página. Ela só está disponível para exibição. Se você deseja restaurar a versão mais antiga, faça isso manualmente usando [restaurar](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#restoring-a-page-version-from-sidekick).
 
 1. Quando terminar de visualizar a página, clique em:
 
    * **Sair do Timewarp** para sair e retornar à página do autor atual.
-   * [Mostrar Linha do Tempo](#using-the-timewarp-timeline) para exibir a linha do tempo.
+   * [Mostrar Linha do Tempo](#using-the-timewarp-timeline) para que você possa exibir a linha do tempo.
 
    ![chlimage_1-77](assets/chlimage_1-77.png)
 
@@ -158,9 +159,9 @@ Se quiser exibir a linha do tempo do documento:
 
 1. Para mostrar a Linha do tempo, siga um destes procedimentos:
 
-   1. Abra o **Controle de versão** e clique em **Timewarp** (perto da parte inferior do sidekick).
+   1. Abra a guia **Controle de versão** e clique em **Timewarp** (próximo à parte inferior do sidekick).
 
-   1. Usar a caixa de diálogo do sidekick mostrada após [usar o calendário do Timewarp](#using-the-timewarp-calendar).
+   1. Use a caixa de diálogo sidekick exibida após [usar o Calendário do Timewarp](#using-the-timewarp-calendar).
 
 1. Clique em **Mostrar Linha do Tempo** - a linha do tempo do documento é exibida; por exemplo:
 
@@ -176,7 +177,7 @@ No exemplo abaixo, a linha vermelha indica que a página foi editada durante o p
 
 1. Clique em:
 
-   1. **Ir** para mostrar o conteúdo da página publicada no horário selecionado.
+   1. **Vá** para mostrar o conteúdo da página publicada no horário selecionado.
    1. Ao mostrar esse conteúdo, use **Sair do Timewarp** para sair e retornar à página do autor atual.
 
 ### Limitações do Timewarp {#timewarp-limitations}
@@ -187,9 +188,9 @@ O Timewarp se esforça ao máximo para reproduzir uma página em um ponto seleci
 * **O Timewarp usa versões de página**: se você navegar para uma página que foi removida/excluída do repositório, ela será renderizada corretamente se ainda houver versões antigas disponíveis no repositório.
 * **As versões removidas afetam o Timewarp** - se as versões forem removidas do repositório, o Timewarp não poderá mostrar a exibição correta.
 
-* **O Timewarp é somente leitura** - não é possível editar a versão antiga da página. Ela só está disponível para exibição. Se quiser restaurar a versão mais antiga, faça isso manualmente usando [restaurar](#main-pars-title-1).
+* **O Timewarp é somente leitura** - não é possível editar a versão antiga da página. Ela só está disponível para exibição. Se você deseja restaurar a versão mais antiga, faça isso manualmente usando [restaurar](#main-pars-title-1).
 
-* **O Timewarp é baseado apenas no conteúdo da página** - Se os elementos (como código, css e ativos de imagem) para renderização do site forem alterados, a exibição será diferente da original. O motivo é porque esses itens não têm controle de versão no repositório.
+* **O Timewarp é baseado apenas no conteúdo da página** - se elementos, como código, css e ativos de imagem, para renderização do site forem alterados, a exibição será diferente da original. O motivo é porque esses itens não têm controle de versão no repositório.
 
 >[!CAUTION]
 >

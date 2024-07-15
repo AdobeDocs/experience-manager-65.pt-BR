@@ -290,7 +290,7 @@ Para instâncias de autor, os valores padrão são:
 Estes:
 
 * não pode ser substituído por uma configuração OSGi
-* pode ser substituído por uma solicitação que define configurações do cabeçalho HTTP usando cURL; deve incluir configurações adequadas para `cache-control` e/ou `surrogate-control`; para obter exemplos, consulte [Gerenciamento de cache no nível de consulta persistente](#cache-persisted-query-level)
+* pode ser substituído por uma solicitação que define configurações do cabeçalho HTTP usando cURL; ela deve incluir configurações adequadas para `cache-control` e/ou `surrogate-control`; para obter exemplos, consulte [Gerenciamento de Cache no Nível de Consulta Persistente](#cache-persisted-query-level)
 
 <!-- CQDOC-20186 -->
 <!-- following entry is only when the GraphiQL IDE is ready; add cross-reference too -->
@@ -353,7 +353,7 @@ O `cache-control` pode ser definido no momento da criação (PUT) ou posteriorme
 
 ### Gerenciamento de cache com uma configuração OSGi {#cache-osgi-configration}
 
-Para gerenciar o cache globalmente, você pode [definir as configurações de OSGi](/help/sites-deploying/configuring-osgi.md) para o **Configuração do Serviço de Consulta Persistente**. Caso contrário, essa configuração OSGi usará a variável [valores padrão para instâncias de publicação](#publish-instances).
+Para gerenciar o cache globalmente, você pode [definir as configurações de OSGi](/help/sites-deploying/configuring-osgi.md) para a **Configuração do Serviço de Consulta Persistente**. Caso contrário, essa configuração OSGi usa os [valores padrão para instâncias de publicação](#publish-instances).
 
 >[!NOTE]
 >
@@ -400,12 +400,12 @@ As consultas persistidas podem ser inseridas em [pacotes do AEM](/help/sites-adm
 Para criar um pacote:
 
 1. Navegue até **Ferramentas** > **Implantação** > **Pacotes**.
-1. Criar um pacote tocando **Criar pacote**. Isso abre uma caixa de diálogo para definir o pacote.
+1. Crie um pacote tocando em **Criar Pacote**. Isso abre uma caixa de diálogo para definir o pacote.
 1. Em **Geral** na caixa de diálogo Definição do pacote, insira um **Nome** como “wknd-persistent-queries”.
 1. Insira um número de versão como “1.0”.
-1. Em **Filtros**, adicione um novo **Filtro**. Use o Localizador de caminhos para selecionar a pasta `persistentQueries`, abaixo da configuração. Por exemplo, para o `wknd` configuração, o caminho completo será `/conf/wknd/settings/graphql/persistentQueries`.
-1. Selecionar **Salvar** para salvar a nova definição de pacote e fechar a caixa de diálogo.
-1. Selecione o **Build** na definição de pacote recém-criada.
+1. Em **Filtros**, adicione um novo **Filtro**. Use o Localizador de caminhos para selecionar a pasta `persistentQueries`, abaixo da configuração. Por exemplo, para a configuração `wknd`, o caminho completo será `/conf/wknd/settings/graphql/persistentQueries`.
+1. Selecione **Salvar** para salvar a nova definição de pacote e fechar a caixa de diálogo.
+1. Selecione o botão **Criar** na definição de pacote recém-criada.
 
 Depois que o pacote tiver sido criado, você poderá:
 

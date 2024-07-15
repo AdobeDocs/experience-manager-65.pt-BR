@@ -64,12 +64,12 @@ Abaixo está a lista de APIs faturáveis do JEE. Encontre a lista de [APIs fatur
    <td>Conversão<br /> </td>
   </tr>
   <tr>
-   <td><a>ExportPDF2</a></td>
+   <td><a>EXPORTPDF2</a></td>
    <td><p>Exporta PDF para tipos de arquivos suportados.</p> </td>
    <td>Conversão<br /> </td>
   </tr>
   <tr>
-   <td><a>ExportarPDF3</a></td>
+   <td><a>EXPORTPDF3</a></td>
    <td>Exporta PDF para tipos de arquivos suportados.</td>
    <td>Conversão<br /> </td>
   </tr>
@@ -240,7 +240,7 @@ Abaixo está a lista de APIs faturáveis do JEE. Encontre a lista de [APIs fatur
   </tr>
   <tr>
    <td><a>toPS2</a></td>
-   <td>Converte um arquivo de PDF simples em formato PostScript usando as opções especificadas na especificação da opção.</td>
+   <td>Converte um arquivo de PDF simples em formato PostScript usando as opções especificadas na especificação de opções.</td>
    <td>Conversão de documentos</td>
   </tr>
   <tr>
@@ -312,8 +312,8 @@ O uso da API de chamada é contado como uma transação, quando você executa um
 
 >[!NOTE]
 >
->* A API de chamada do serviço do montador pode chamar internamente uma API faturável de outro serviço, dependendo da entrada. Então, o `invoke API` pode ser contabilizado como nenhuma, uma única ou várias transações. O número de transações contadas depende da entrada e das APIs internas chamadas.
->* Um único documento de PDF produzido usando o serviço de montagem, como `invoke` e `invokeDDX`, podem ser contabilizadas como nenhuma, uma única ou várias transações. O número de transações contadas depende do valor fornecido <!--DDX--> código.
+>* A API de chamada do serviço do montador pode chamar internamente uma API faturável de outro serviço, dependendo da entrada. Portanto, o `invoke API` pode ser contabilizado como nenhuma, uma única ou várias transações. O número de transações contadas depende da entrada e das APIs internas chamadas.
+>* Um único documento de PDF produzido usando o serviço de assembler, como `invoke` e `invokeDDX`, pode ser contabilizado como nenhuma, única ou várias transações. O número de transações contadas depende do código <!--DDX--> fornecido.
 
 <!--
 ### PDF Utility Service  {#pdf-utility-service}

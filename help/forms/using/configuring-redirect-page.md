@@ -17,7 +17,7 @@ ht-degree: 4%
 
 # Configuração da página de redirecionamento{#configuring-redirect-page}
 
-<span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) para [criação de um novo Forms adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
+O <span class="preview"> Adobe recomenda o uso de [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adicionar o Forms Adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
@@ -26,7 +26,7 @@ ht-degree: 4%
 
 Os autores de formulários podem configurar uma página para cada formulário, para a qual os usuários são redirecionados após enviarem um formulário.
 
-1. No modo de edição, selecione um componente e clique em ![nível de campo](assets/field-level.png) > **Contêiner de formulário adaptável** e clique em ![cmppr](assets/cmppr.png).
+1. No modo de edição, selecione um componente e clique em ![nível do campo](assets/field-level.png) > **Contêiner de formulário adaptável** e clique em ![cmppr](assets/cmppr.png).
 
 1. Na barra lateral, clique em **Envio**.
 
@@ -37,12 +37,12 @@ Os autores de formulários podem configurar uma página para cada formulário, p
 
 Redirecionar configuração de página
 
-Os autores de formulário podem usar os seguintes parâmetros que são passados para a página Thank you. Para todas as ações de envio disponíveis, `status` e `owner` parâmetros são transmitidos. Além desses dois parâmetros, alguns parâmetros adicionais são transmitidos para as seguintes ações de envio:
+Os autores de formulário podem usar os seguintes parâmetros que são passados para a página Thank you. Para todas as ações de envio disponíveis, `status` e `owner` parâmetros são passados. Além desses dois parâmetros, alguns parâmetros adicionais são transmitidos para as seguintes ações de envio:
 
-* **Ação de armazenamento de conteúdo** (obsoleto): `contentPath`— o caminho do nó no repositório onde os dados enviados estão armazenados — é transmitido.
+* **Ação de conteúdo de repositório** (obsoleto): `contentPath`—o caminho do nó no repositório onde os dados enviados estão armazenados—é passado.
 
-* **Ação de PDF de armazenamento** (obsoleto): `contentPath`—dos dados enviados e do caminho para o nó que armazena o arquivo de PDF no repositório—é enviado.
+* **Ação de PDF de armazenamento** (obsoleto): `contentPath`—dos dados enviados e do caminho para o nó que armazena o arquivo de PDF no repositório—é transmitido.
 
-* **Enviar para fluxo de trabalho do Forms**: os parâmetros de saída retornados do workflow de formulários são passados.
+* **Enviar para fluxo de trabalho do Forms**: os parâmetros de saída retornados do fluxo de trabalho de formulários são passados.
 
-* **Enviar para endpoint REST**: os parâmetros adicionados para o mapeamento no campo para o parâmetro são transmitidos. `status` e `owner` Os parâmetros do não são transmitidos nesta ação de envio. Para obter mais informações, consulte [Configuração da ação de envio Enviar para endpoint REST](../../forms/using/configuring-submit-actions.md).
+* **Enviar para ponto de extremidade REST**: os parâmetros adicionados para o campo ao mapeamento de parâmetros são passados. Os parâmetros `status` e `owner` não são passados nesta ação de envio. Para obter mais informações, consulte [Configurando a ação de envio Enviar para ponto de extremidade REST](../../forms/using/configuring-submit-actions.md).

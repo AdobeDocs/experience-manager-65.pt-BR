@@ -24,33 +24,33 @@ O usuário não pode executar operações como Enviar PDF por email ou Incluir a
 
 ## Solução {#solution}
 
-1. Baixar jar como [java.mail-1.0.jar](/help/forms/using/java.mail-1.0.jar) e descompacte o arquivo jar baixado para obter o arquivo manifest.
+1. Baixe jar como [java.mail-1.0.jar](/help/forms/using/java.mail-1.0.jar) e descompacte o arquivo jar baixado para obter o arquivo de manifesto.
 
-1. Usar o arquivo de manifesto de `java.mail-1.0.jar` recuperado da Etapa 1 para criar um arquivo jar personalizado, diga como `java.mail-1.5.jar`.
+1. Use o arquivo de manifesto de `java.mail-1.0.jar` recuperado da Etapa 1 para criar um arquivo jar personalizado, digamos `java.mail-1.5.jar`.
 
-1. Abra o arquivo de manifesto e substitua todas as ocorrências de `1.5.0` com `1.5.6` e `Bundle-Version: 1.0` com `Bundle-Version:1.5`
+1. Abrir o arquivo de manifesto e substituir todas as ocorrências de `1.5.0` por `1.5.6` e `Bundle-Version: 1.0` por `Bundle-Version:1.5`
 
-1. Criar um jar personalizado (`java.mail-1.5.jar`) usando o seguinte comando em `C:\Adobe\Adobe_Experience_Manager_Forms\java\jdk\bin` pasta como:
+1. Crie um arquivo jar (`java.mail-1.5.jar`) personalizado usando o seguinte comando na pasta `C:\Adobe\Adobe_Experience_Manager_Forms\java\jdk\bin` como:
    `jar -cfm java.mail-1.5.jar manifest.mf`
 
    No comando acima, *manifest.mf* é o nome do arquivo de manifesto e *java.mail-1.5.jar* é o nome do arquivo que seria criado após a execução do comando acima.
 
 1. Baixar [javax.mail-1.5.6.redhat-1.jar](https://mvnrepository.com/artifact/com.sun.mail/javax.mail/1.5.6.redhat-1).
 
-1. Navegue até `http://<server name>:<port>/lc/system/console/bundles`e exclua o pacote com um nome como `JavaMail API (com.sun.mail.javax.mail) version 1.6.2`.
+1. Navegue até `http://<server name>:<port>/lc/system/console/bundles` e exclua o conjunto com o nome `JavaMail API (com.sun.mail.javax.mail) version 1.6.2`.
 
-1. Instalar `java.mail-1.5.jar` obtido da etapa 3. Esta etapa reinicia as propriedades sling da implantação do JEE. Aguardar os pacotes instalados em `http://<server name>:<port>/lc/system/console/bundles` para mostrar o Status como **Ativo**.
+1. Instalar o `java.mail-1.5.jar` obtido da etapa 3. Esta etapa reinicia as propriedades sling da implantação do JEE. Aguarde os pacotes instalados em `http://<server name>:<port>/lc/system/console/bundles` para mostrar o Status como **Ativo**.
 
-   >Caso o status ainda seja **InAtive**, reiniciar   **JBoss®** do **Console de serviços**.
+   >Caso o status ainda seja **InActive**, reinicie   **JBoss®** do **Console de Serviços**.
 
 
-1. Instalar `javax.mail-1.5.6.redhat-1.jar`arquivo baixado usando a etapa 5.
+1. Instale o arquivo `javax.mail-1.5.6.redhat-1.jar` baixado usando a etapa 5.
 
-1. Parar **JBoss®** do **Console de serviços** e anexe as seguintes propriedades a **Sling.properties** arquivo:
+1. Pare o **JBoss®** do **Console de Serviços** e anexe as seguintes propriedades ao arquivo **Sling.properties**:
    * `org.osgi.framework.system.packages.extra=javax.activation; version\=1.2.0`
    * `sling.bootdelegation.activation=javax.activation.*`
 
-1. Restart **JBoss®**.
+1. Reinicie o **JBoss®**.
 
 >[!NOTE]
 >

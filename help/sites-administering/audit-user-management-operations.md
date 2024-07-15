@@ -29,22 +29,22 @@ O aprimoramento permite a auditoria de ações CRUD (Criar, Ler, Atualizar, Excl
 * Um usuário sendo adicionado a um grupo
 * Alterações de permissão de um usuário ou grupo existente
 
-Por padrão, as entradas são gravadas na variável `error.log` arquivo. Para facilitar o monitoramento, é recomendável que eles sejam redirecionados para um arquivo de log separado. Mais informações sobre como fazer isso estão no parágrafo abaixo.
+Por padrão, as entradas são gravadas no arquivo `error.log`. Para facilitar o monitoramento, é recomendável que eles sejam redirecionados para um arquivo de log separado. Mais informações sobre como fazer isso estão no parágrafo abaixo.
 
 ## Redirecionando a saída para um arquivo de log separado {#redirecting-the-output-to-a-separate-log-file}
 
-Para redirecionar a saída de registro para um arquivo de registro separado, crie um **Logger do Apache Sling** configuração. Vamos usar `useraudit.log` como o nome do arquivo separado no exemplo abaixo.
+Para redirecionar a saída de log para um arquivo de log separado, crie uma configuração do **Logger de Log do Apache Sling**. Vamos usar `useraudit.log` como o nome do arquivo separado no exemplo abaixo.
 
-1. Acesse o Console da Web navegando até *https://serveraddress:serverport/system/console/configMgr*
-1. Pesquisar por **Configuração do logger de log do Apache Sling**. Em seguida, pressione o sinal &quot;+&quot; no lado direito da entrada para criar uma configuração de fábrica.
+1. Vá para o Console da Web navegando até *https://serveraddress:serverport/system/console/configMgr*
+1. Procure por **Configuração do logger de log do Apache Sling**. Em seguida, pressione o sinal &quot;+&quot; no lado direito da entrada para criar uma configuração de fábrica.
 1. Crie a seguinte configuração:
 
-   * **Nível de log:** Informações
-   * **Arquivo de log:** logs/useraudit.log
-   * **Padrão de mensagem:** padrão de nível
+   * **Nível de Log:** Informações
+   * **Arquivo de Log:** logs/useraudit.log
+   * **Padrão de Mensagem:** nível padrão
    * **Logger:** com.adobe.granite.security.user.internal.audit, com.adobe.granite.security.user.internal.servlets.AuthorizableServlet
 
-   Para inserir ambos os registradores na variável **Logger** , você deve inserir o nome do primeiro e, em seguida, criar outro campo pressionando o botão &quot;+&quot; e inserindo o nome do segundo agente de log.
+   Para inserir ambos os registradores no campo **Logger**, digite o nome do primeiro e crie outro campo pressionando o botão &quot;+&quot; e inserindo o nome do segundo registrador.
 
 ## Exemplo de saída {#example-output}
 

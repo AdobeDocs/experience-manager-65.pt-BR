@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ## Iniciar o Adobe Experience Manager a partir da linha de comando {#starting-adobe-experience-manager-from-the-command-line}
 
-A variável `start` script está disponível em *o &lt;cq-installation>/bin* diretório. São fornecidas as versões para UNIX® e Windows. O script inicia a instância instalada no *&lt;cq-installation>* diretório.
+O script `start` está disponível em *o diretório &lt;cq-installation>/bin*. São fornecidas as versões para UNIX® e Windows. O script inicia a instância instalada no diretório *&lt;cq-installation>*.
 
 Essas duas versões oferecem suporte a uma lista de variáveis de ambiente que podem ser usadas para iniciar e ajustar a instância do Adobe Experience Manager (AEM).
 
@@ -32,7 +32,7 @@ Essas duas versões oferecem suporte a uma lista de variáveis de ambiente que p
   </tr>
   <tr>
    <td>CQ_PORT</td>
-   <td>Porta TCP usada para scripts de interrupção e status<br /> </td>
+   <td>Porta TCP usada para scripts de parada e status<br /> </td>
   </tr>
   <tr>
    <td>CQ_HOST</td>
@@ -52,7 +52,7 @@ Essas duas versões oferecem suporte a uma lista de variáveis de ambiente que p
   </tr>
   <tr>
    <td>CQ_USE_JAAS</td>
-   <td>Uso do JAAS (se verdadeiro)<br /> </td>
+   <td>Uso de JAAS (se verdadeiro)<br /> </td>
   </tr>
   <tr>
    <td>CQ_JAAS_CONFIG</td>
@@ -67,7 +67,7 @@ Essas duas versões oferecem suporte a uma lista de variáveis de ambiente que p
 
 >[!CAUTION]
 >
->Alguns modos de execução, entre eles autor e publicação, devem ser definidos antes de o AEM ser iniciado primeiro e não podem ser alterados posteriormente. Antes de configurar uma instância do AEM usada na produção, consulte [documentação de modos de execução](/help/sites-deploying/configure-runmodes.md) para obter detalhes.
+>Alguns modos de execução, entre eles autor e publicação, devem ser definidos antes de o AEM ser iniciado primeiro e não podem ser alterados posteriormente. Antes de configurar uma instância do AEM que seja usada na produção, consulte [documentação sobre modos de execução](/help/sites-deploying/configure-runmodes.md) para obter detalhes.
 
 ### Exemplo de script start.bat para plataforma Windows {#windows-platform-start-bat-script-example}
 
@@ -83,7 +83,7 @@ CQ_PORT=1234 ./start
 
 >[!NOTE]
 >
->O script de inicialização inicia o AEM Quickstart instalado em *o &lt;cq-installation>/app* pasta.
+>O script de inicialização inicia o AEM Quickstart instalado na pasta *a &lt;cq-installation>/app*.
 
 ## Interrupção do Adobe Experience Manager {#stopping-adobe-experience-manager}
 
@@ -94,13 +94,13 @@ Para interromper o AEM, siga um destes procedimentos:
    * Se você iniciou o AEM a partir de um script ou da linha de comando, pressione **Ctrl+C** para desligar o servidor.
    * Se você tiver usado o script de inicialização no UNIX®, deverá usar o script de interrupção para interromper o AEM.
 
-* Se você iniciou o AEM clicando duas vezes no arquivo jar, clique no ícone **Ligado** na janela de inicialização (o botão muda então para **Desligado**) para desligar o servidor.
+* Se você iniciou o AEM clicando duas vezes no arquivo jar, clique no botão **Ligado** na janela de inicialização (o botão muda para **Desligado**) para desligar o servidor.
 
   ![chlimage_1-63](assets/chlimage_1-63.png)
 
 ## Interrupção do Adobe Experience Manager a partir da linha de comando {#stopping-adobe-experience-manager-from-the-command-line}
 
-A variável `stop` script está disponível em *o &lt;cq-installation>/bin* diretório. São fornecidas as versões para UNIX® e Windows. O script interrompe a instância em execução instalada no *&lt;cq-installation>* diretório.
+O script `stop` está disponível em *o diretório &lt;cq-installation>/bin*. São fornecidas as versões para UNIX® e Windows. O script para a instância em execução instalada no diretório *&lt;cq-installation>*.
 
 ### Exemplo de script de interrupção da plataforma UNIX® {#unix-platform-stop-script-example}
 
@@ -116,7 +116,7 @@ A variável `stop` script está disponível em *o &lt;cq-installation>/bin* dire
 
 Se você quiser apenas pré-configurar o repositório (sem realocá-lo), basta:
 
-* Extract `repository.xml` para o local necessário
+* Extrair `repository.xml` para o local necessário
 
 * atualizar `repository.xml` conforme necessário
 

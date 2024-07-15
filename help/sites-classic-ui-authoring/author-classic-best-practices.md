@@ -19,7 +19,7 @@ As Práticas recomendadas de criação descrevem como usar o AEM da maneira mais
 
 As seguintes áreas têm documentação disponível sobre práticas recomendadas:
 
-* [Assets](#assets)
+* [Ativos](#assets)
 * [Sites](#sites)
 * [Forms](#forms)
 
@@ -31,15 +31,15 @@ Para obter as práticas recomendadas sobre administração, implantação e manu
 
 Os documentos específicos são descritos e vinculados nas tabelas seguintes.
 
-## Assets {#assets}
+## Ativos {#assets}
 
-As práticas recomendadas para o Assets, incluindo o recurso do Dynamic Media e a integração do Dynamic Media Classic, estão descritas nos seguintes tópicos:
+As práticas recomendadas do Assets, incluindo o recurso Dynamic Media e a integração do Dynamic Media Classic, estão descritas nos seguintes tópicos:
 
 <table>
  <tbody>
   <tr>
    <td>Formatos de arquivo</td>
-   <td><a href="/help/assets/assets-file-format-best-practices.md">Práticas recomendadas dos formatos de arquivo do Assets</a></td>
+   <td><a href="/help/assets/assets-file-format-best-practices.md">Práticas recomendadas para formatos de arquivo do Assets</a></td>
    <td>Descreve as práticas recomendadas sobre o suporte a arquivos no AEM Assets.</td>
   </tr>
   <tr>
@@ -53,7 +53,7 @@ As práticas recomendadas para o Assets, incluindo o recurso do Dynamic Media e 
    <td><p>Descreve como ajustar a nitidez de uma imagem para obter melhores resultados e a melhor maneira de otimizar a qualidade das imagens se estiver usando a funcionalidade do Dynamic Media ou estiver integrando com o Dynamic Media Classic. </p> </td>
   </tr>
   <tr>
-   <td>Ativos multilíngues</td>
+   <td>Assets multilíngue</td>
    <td><a href="/help/assets/best-practices-for-translating-assets-efficiently.md">Práticas recomendadas de tradução</a></td>
    <td>Descreve as práticas recomendadas para traduzir ativos AEM com eficiência.</td>
   </tr>
@@ -64,10 +64,10 @@ As práticas recomendadas para o Assets, incluindo o recurso do Dynamic Media e 
 
 O gerenciamento e a criação do conteúdo do seu site têm algumas práticas recomendadas descritas a seguir:
 
-Criação: [Ambiente e ferramentas do autor](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md) - Fornece uma visão geral sobre como criar páginas.
+Criação: [Ambiente e ferramentas de criação](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md) - fornece uma visão geral sobre como criar páginas.
 
 ## Forms {#forms}
 
 Formulários adaptáveis: [Práticas recomendadas para trabalhar com formulários adaptáveis](/help/forms/using/adaptive-forms-best-practices.md) - Descreve as práticas recomendadas para configurar, criar e personalizar formulários adaptáveis.
 
-formulários HTML5: [Práticas recomendadas para criar formulários HTML5](/help/forms/using/best-practices-for-html5-forms.md) - Descreve as práticas recomendadas para trabalhar no layout e design de formulários HTML5.
+Formulários HTML5: [Práticas recomendadas para criar formulários HTML5](/help/forms/using/best-practices-for-html5-forms.md) - Descreve as práticas recomendadas para trabalhar no layout e design de formulários HTML5.

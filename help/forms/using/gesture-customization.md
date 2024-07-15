@@ -27,26 +27,26 @@ No aplicativo AEM Forms, o deslizamento para a esquerda abre uma nova tarefa ou 
 1. Abra o projeto.
 
    * Para o iOS, abra `Capture.xcodeproj` no Xcode
-   * Para Android, abra o projeto Android no Eclipse.
+   * Para o Android, abra o projeto Android no Eclipse.
    * Para Windows, abra `MWSWindows.sln` no Visual Studio.
 
-1. Navegue até a pasta de exibições e abra a `task.js` arquivo para edição.
+1. Navegue até a pasta de exibições e abra o arquivo `task.js` para edição.
 
-   * No XCode, navegue até a guia **Capture > www > wsmobile > js > tempo de execução > exibições** pasta.
-   * No Eclipse, navegue até o **ativos > www > wsmobile > js > tempo de execução > exibições** pasta.
-   * No Visual Studio, navegue até o **MWSWindows > www > wsmobile > js > tempo de execução > exibições** pasta.
+   * No Xcode, navegue até a pasta **Capture > www > wsmobile > js > runtime > views**.
+   * No Eclipse, navegue até a pasta **assets > www > wsmobile > js > runtime > views**.
+   * No Visual Studio, navegue até a pasta **MWSWindows > www > wsmobile > js > runtime > views**.
 
    >[!NOTE]
    >
    >O arquivo task.js contém a exibição de backbone associada a cada tarefa ou Startpoint listado nas listas tarefa ou Startpoint.
 
-1. No `task.js` arquivo, procure a propriedade events da visualização.
+1. No arquivo `task.js`, pesquise a propriedade events da exibição.
 
    A propriedade events é um mapa com cada entrada no formato:
 
    `"EventName Selector": "Function"`
 
-   Quando você aciona um evento JavaScript chamado `EventName`em um elemento HTML especificado por `Selector`, o `Function`é chamado.
+   Quando você aciona um evento JavaScript chamado `EventName` em um elemento HTML especificado por `Selector`, `Function` é chamado.
 
 1. Localizar
 
@@ -68,7 +68,7 @@ No aplicativo AEM Forms, o deslizamento para a esquerda abre uma nova tarefa ou 
 
      &quot;swipe .last_empty_div&quot; : &quot;onTaskClick&quot;,
 
-1. Salve e feche o `task.js` arquivo.
+1. Salvar e fechar o arquivo `task.js`.
 1. Crie e execute o aplicativo AEM Forms. Agora você pode abrir um usando o com o deslizamento para a esquerda e para a direita.
 
 Da mesma forma, é possível fazer alterações em outras exibições para várias combinações de gestos, elementos HTML e funções.

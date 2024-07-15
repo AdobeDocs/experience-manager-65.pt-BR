@@ -31,7 +31,7 @@ Para iniciar uma nova experiência de aplicativo AEM Mobile, é necessário ter 
 
 ## Criação de aplicativos PhoneGap {#authoring-phonegap-applications}
 
-Um ***Autor do AEM* (ou *Profissional de marketing*)**O pode usar os modelos e componentes prontos para uso para adicionar e editar páginas. Você pode arrastar e soltar componentes e adicionar mídias de todos os tipos do DAM, incluindo imagens, vídeos e fragmentos de texto (fragmentos de conteúdo).
+Um ***Autor do AEM* (ou *Profissional de marketing*)**pode usar os modelos e componentes prontos para uso para adicionar e editar páginas. Você pode arrastar e soltar componentes e adicionar mídias de todos os tipos do DAM, incluindo imagens, vídeos e fragmentos de texto (fragmentos de conteúdo).
 
 Consulte os seguintes recursos:
 
@@ -43,7 +43,7 @@ Consulte os seguintes recursos:
 * [Criação de um aplicativo do AEM Mobile usando o assistente de criação](/help/mobile/phonegap-create-new-app.md)
 * [Importar um aplicativo híbrido existente](/help/mobile/phonegap-adding-content-to-imported-app.md)
 
-Para saber mais sobre **Serviços de conteúdo**, consulte [Visão geral dos serviços de conteúdo](/help/mobile/develop-content-as-a-service.md) para começar.
+Para saber mais sobre os **Serviços de Conteúdo**, consulte a [Visão Geral dos Serviços de Conteúdo](/help/mobile/develop-content-as-a-service.md) para começar.
 
 ## Recursos adicionais {#additional-resources}
 

@@ -35,11 +35,11 @@ Há três métodos que você pode usar para adicionar metadados e tags:
 
   ![Criar fragmento de conteúdo: fornecer um nome](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
 
-* A variável **Variações** do editor de Fragmento de conteúdo permite adicionar propriedades **Tags** do seu projeto:
+* A guia **Variações** do editor de Fragmento de conteúdo permite adicionar **Marcas** predefinidas do seu projeto:
 
   ![Editor de fragmentos de conteúdo - Alaska Spirits](/help/journey-headless/author/assets/headless-journey-author-content-fragment-05.png)
 
-* A variável **Metadados** permite adicionar vários campos de metadados e campos de dados predefinidos, **Tags** do seu projeto:
+* A guia **Metadados** do editor de Fragmento de conteúdo permite adicionar vários campos de metadados e **Marcas** predefinidas do seu projeto:
 
   ![Editor de fragmento de conteúdo: metadados](/help/journey-headless/author/assets/headless-journey-author-metadata-01.png)
 

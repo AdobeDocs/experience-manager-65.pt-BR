@@ -86,7 +86,7 @@ Como opção, especifique a **Data de inicialização** (e a hora) para definir 
    * **Título do lançamento**: o nome do lançamento. O nome deve ser significativo para os autores.
    * **com conteúdo já existente**: o conteúdo original será usado para criar o lançamento.
    * **usar um novo modelo para substituir a página**: consulte [Criar inicialização com um novo modelo](#create-launch-with-new-template) para obter mais detalhes.
-   * **Herdar dados online da página de origem:** selecione essa opção para atualizar automaticamente o conteúdo das páginas de inicialização quando as páginas de origem forem alteradas. Essa opção faz isso transformando a inicialização em uma [live copy](/help/sites-administering/msm.md).
+   * **Herdar dados online da página de origem:** selecione essa opção para atualizar automaticamente o conteúdo das páginas de inicialização quando as páginas de origem forem alteradas. Esta opção faz isso transformando a inicialização em uma [live copy](/help/sites-administering/msm.md).
 
      Por padrão, essa opção está selecionada.
 
@@ -98,12 +98,12 @@ Como opção, especifique a **Data de inicialização** (e a hora) para definir 
 
    Se você retornar ao console (com **Concluído**) será possível ver (e acessar) seu lançamento por meio de:
 
-   * o [**Lançamentos** console](/help/sites-authoring/launches.md#the-launches-console)
-   * o [**Referências** no **Sites** console](/help/sites-authoring/launches.md#launches-in-references-sites-console)
+   * o console [**Inicializações**](/help/sites-authoring/launches.md#the-launches-console)
+   * as [**Referências** no console **Sites**](/help/sites-authoring/launches.md#launches-in-references-sites-console)
 
 ### Criar inicialização com um novo modelo {#create-launch-with-new-template}
 
-Quando [criação de uma inicialização](/help/sites-authoring/launches-creating.md#create-launch-with-new-template) é possível selecionar se deseja usar um novo modelo com a opção: **uso de um novo modelo para substituir a página**
+Ao [criar uma inicialização](/help/sites-authoring/launches-creating.md#create-launch-with-new-template), você pode selecionar se deseja usar um novo modelo com a opção: **usar um novo modelo para substituir a página**
 
 >[!CAUTION]
 >
@@ -141,7 +141,7 @@ A criação de uma inicialização aninhada no console **Inicializações** segu
 
    ![Selecionar lançamento](assets/chlimage_1-230.png)
 
-1. Continuar com **Próxima** e conclua o **Propriedades** como em qualquer outro lançamento.
+1. Continue com **Próximo** e conclua as **Propriedades** como em qualquer outra inicialização.
 
    ![Especificar propriedades](assets/chlimage_1-231.png)
 

@@ -29,7 +29,7 @@ Você pode aderir à coleção de estatísticas de uso usando a interface para t
 >
 >Há várias regulamentações de proteção e privacidade de dados; incluindo, por exemplo, o GDPR e o CCPA. A AEM Sites está pronta para ajudar os clientes em suas obrigações de conformidade de proteção e privacidade de dados. Esta página orienta os clientes por meio dos procedimentos de aceitação (ou recusa) da Coleta de Estatísticas de Uso Agregado.
 >
->Para obter mais informações, consulte também o [Centro de privacidade do Adobe](https://www.adobe.com/br/privacy.html).
+>Para obter mais informações, consulte também o [Centro de Privacidade do Adobe](https://www.adobe.com/br/privacy.html).
 
 >[!NOTE]
 >
@@ -39,17 +39,17 @@ Você pode aderir à coleção de estatísticas de uso usando a interface para t
 
 Na primeira vez que você iniciar o AEM, poderá aceitar usando a interface para toque da seguinte maneira:
 
-1. Na tela de Navegação do AEM, clique na guia **Caixa de entrada** Ícone (sino).
+1. Na tela de Navegação do AEM, clique no ícone **Caixa de entrada** (sino).
 
-   ![usage_statistics navigationscreen](assets/usage_statisticsnavigationscreen.png)
+   ![usage_statistics_navigationscreen](assets/usage_statisticsnavigationscreen.png)
 
-1. Na lista suspensa, clique em &quot;**Permitir coleta de dados estatísticos de uso agregados**&quot;.
+1. Na lista suspensa, clique em &quot;**Habilitar Coleta de Estatísticas de Uso Agregado**&quot;.
 
-   ![usage_statticsnavigationscreen2](assets/usage_statisticsnavigationscreen2.png)
+   ![usage_statistics_navigationscreen2](assets/usage_statisticsnavigationscreen2.png)
 
-1. Na tela de aceitação, selecione &quot;**Permitir coleta de dados estatísticos de uso agregados**&quot;.
+1. Na tela de aceitação, selecione &quot;**Permitir coleta de estatísticas de uso agregadas**&quot;.
 
-   ![usage_statticsopt-inscreen](assets/usage_statisticsopt-inscreen.png)
+   ![uso_statticsopt-inscreen](assets/usage_statisticsopt-inscreen.png)
 
 1. Clique em &quot;**Concluído**&quot;.
 
@@ -57,21 +57,21 @@ Na primeira vez que você iniciar o AEM, poderá aceitar usando a interface para
 
 Você pode aceitar (ou recusar) usando o Console da Web da seguinte maneira:
 
-1. Na tela de Navegação do AEM, clique em **Ferramentas** e depois **Operações**.
+1. Na tela Navegação AEM, clique em **Ferramentas** e depois em **Operações**.
 
-   ![usage_statticsopsdashboard](assets/usage_statisticsopsdashboard.png)
+   ![uso_estatísticasdashboard](assets/usage_statisticsopsdashboard.png)
 
 1. Na janela Operações, clique em **Console da Web**.
 
-   ![usage_statistics webconsole](assets/usage_statisticswebconsole.png)
+   ![uso_estatísticswebconsole](assets/usage_statisticswebconsole.png)
 
-1. Pesquisar por &quot;**Coleta de Estatísticas de Uso Agregado**&quot;.
-1. Clique em **Editar** ícone.
+1. Pesquise por &quot;**Coleção de Estatísticas de Uso Agregado**&quot;.
+1. Clique no ícone **Editar**.
 
-   ![usage_statistics collectionedit](assets/usage_statisticscollectionedit.png)
+   ![uso_estatísticascollectionedit](assets/usage_statisticscollectionedit.png)
 
-1. Selecione o **Ativado** caixa de seleção Como alternativa, desmarque a caixa de seleção se desejar recusar a coleta de estatísticas de uso.
+1. Marque a caixa de seleção **Habilitado**. Como alternativa, desmarque a caixa de seleção se desejar recusar a coleta de estatísticas de uso.
 
-   ![usage_statticsselect](assets/usage_statisticsselect.png)
+   ![uso_estatísticasselect](assets/usage_statisticsselect.png)
 
 1. Clique em **Salvar**.

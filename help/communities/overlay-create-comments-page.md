@@ -18,11 +18,11 @@ ht-degree: 0%
 
 # Criar página de comentários {#create-comments-page}
 
-**[Componente de Comentários de Sobreposição](overlay-comments.md) [Criar nós obs.](overlay-create-nodes.md)**
+**[⇐ Componente de Comentários de Sobreposição](overlay-comments.md) [Criar Nós](overlay-create-nodes.md)**
 
 ## Página de comentários {#comments-page}
 
-A variável [Guia de componentes da comunidade](components-guide.md) permite que você sobreponha facilmente o componente de comentários.
+O [guia dos Componentes da Comunidade](components-guide.md) permite que você experimente facilmente a sobreposição do componente de comentários.
 
 Visualize a página na instância do autor:
 
@@ -30,4 +30,4 @@ Visualize a página na instância do autor:
 
 ![comentários](assets/comments.png)
 
-**[Componente de Comentários de Sobreposição](overlay-comments.md) [Criar nós obs.](overlay-create-nodes.md)**
+**[⇐ Componente de Comentários de Sobreposição](overlay-comments.md) [Criar Nós](overlay-create-nodes.md)**

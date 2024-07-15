@@ -1,5 +1,5 @@
 ---
-title: Publicar ativos no Brand Portal
+title: Ativos do Publish para o Brand Portal
 description: Saiba como publicar e desfazer a publicação de ativos no Brand Portal.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -18,7 +18,7 @@ ht-degree: 40%
 
 ---
 
-# Publicar ativos no Brand Portal {#publish-assets-to-brand-portal}
+# Ativos do Publish para o Brand Portal {#publish-assets-to-brand-portal}
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
@@ -33,37 +33,37 @@ Após o sucesso da replicação, você pode publicar ativos, pastas e coleções
 >
 >A Adobe recomenda uma publicação escalonada, de preferência durante horários que não sejam de pico, para que o autor do AEM não ocupe recursos excessivos.
 
-1. No console Assets, selecione os ativos/pastas que deseja publicar e clique em **[!UICONTROL Publicação rápida]** na barra de ferramentas.
+1. No console Assets, selecione os ativos/pastas que deseja publicar e clique na opção **[!UICONTROL Publish Rápido]** na barra de ferramentas.
 
    Como alternativa, selecione os ativos que deseja publicar no Brand Portal.
 
    ![publish2bp-2](assets/publish2bp.png)
 
 1. Para publicar os ativos no Brand Portal, as duas opções a seguir estão disponíveis:
-   * [Publicar ativos imediatamente](#publish-to-bp-now)
-   * [Publicar ativos mais tarde](#publish-to-bp-now)
+   * [Ativos do Publish imediatamente](#publish-to-bp-now)
+   * [Ativos do Publish mais tarde](#publish-to-bp-now)
 
-## Publicar ativos agora {#publish-to-bp-now}
+## Ativos do Publish agora {#publish-to-bp-now}
 
 Para publicar os ativos selecionados no Brand Portal, siga um dos procedimentos a seguir:
 
-* Na barra de ferramentas, selecione **[!UICONTROL Publicação rápida]**. Em seguida, no menu, selecione **[!UICONTROL Publicar no Brand Portal]**.
+* Na barra de ferramentas, selecione **[!UICONTROL Publicação rápida]**. Em seguida, no menu, selecione **[!UICONTROL Publish to Brand Portal]**.
 
 * Na barra de ferramentas, selecione **[!UICONTROL Gerenciar publicação]**.
 
-   1. Em seguida, do **[!UICONTROL Ação]** selecionar **[!UICONTROL Publicar no Brand Portal]**, e de **[!UICONTROL Agendamento]** selecionar **[!UICONTROL Agora]**. Clique em **[!UICONTROL Avançar]**.
+   1. Em seguida, em **[!UICONTROL Ação]**, selecione **[!UICONTROL Publish para Brand Portal]** e, em **[!UICONTROL Agendamento]**, selecione **[!UICONTROL Agora]**. Clique em **[!UICONTROL Avançar]**.
 
-   2. Dentro de **[!UICONTROL Escopo]**, confirme sua seleção e clique em **[!UICONTROL Publicar no Brand Portal]**.
+   2. No **[!UICONTROL Escopo]**, confirme sua seleção e clique em **[!UICONTROL Publish to Brand Portal]**.
 
 Será exibida uma mensagem informando que os ativos foram enfileirados para publicação no Brand Portal. Faça logon na interface do Brand Portal para ver os ativos publicados.
 
-## Publicar ativos mais tarde {#publish-to-bp-later}
+## Ativos do Publish mais tarde {#publish-to-bp-later}
 
 Para agendar a publicação dos ativos no Brand Portal para uma data ou hora posterior:
 
 1. Depois de selecionar os ativos/pastas a serem publicados, selecione **[!UICONTROL Gerenciar publicação]** na barra de ferramentas na parte superior.
 
-1. Ligado **[!UICONTROL Gerenciar publicação]** selecione **[!UICONTROL Publicar no Brand Portal]** de **[!UICONTROL Ação]** e selecione **[!UICONTROL Mais tarde]** de **[!UICONTROL Agendamento]**.
+1. Na página **[!UICONTROL Gerenciar Publicação]**, selecione **[!UICONTROL Publish para Brand Portal]** em **[!UICONTROL Ação]** e selecione **[!UICONTROL Depois]** em **[!UICONTROL Agendamento]**.
 
    ![publishlaterbp-1](assets/publishlaterbp-1.png)
 
@@ -85,7 +85,7 @@ Agora, faça logon no Brand Portal para ver se os ativos publicados estão dispo
 
    ![bp_landingpage](assets/bp_landingpage.png)
 
-1. Alternar para exibição de lista ![Exibição de lista](assets/list-view.svg) para ver o status de publicação atual do ativo.
+1. Alterne para o Modo de exibição de lista ![Modo de exibição de lista](assets/list-view.svg) para ver o status de publicação atual do ativo.
 
 <!--2. On the [Asset Reports page](#https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/asset-reports), you can see the current state of the report job, for example, Success, Failed, Queued, or Scheduled.-->
 

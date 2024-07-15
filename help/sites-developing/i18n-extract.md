@@ -21,7 +21,7 @@ ht-degree: 0%
 Use xgettext-maven-plugin para extrair strings do código-fonte que precisam ser traduzidas. O plug-in Maven extrai strings para um arquivo XLIFF que você envia para tradução. As cadeias de caracteres são extraídas dos seguintes locais:
 
 * Arquivos de código-fonte Java
-* Arquivos de código-fonte JavaScript
+* Arquivos de origem do JavaScript
 * Representações XML de recursos SVN (nós JCR)
 
 ## Configuração da extração de sequência de caracteres {#configuring-string-extraction}
@@ -48,7 +48,7 @@ Configure como a ferramenta xgettext-maven-plugin extrai strings para o seu proj
 |---|---|
 | /filter | Identifica os arquivos analisados. |
 | /parsers/vaultxml | Configura a análise dos arquivos do Vault. Identifica os nós JCR que contêm strings externalizadas e dicas de localização. Também identifica nós JCR a ignorar. |
-| /parsers/javascript | Identifica as funções JavaScript que externalizam strings. Não é necessário alterar esta seção. |
+| /parsers/javascript | Identifica as funções do JavaScript que externalizam cadeias de caracteres. Não é necessário alterar esta seção. |
 | /parsers/regexp | Configura a análise de arquivos de modelo Java, JSP e ExtJS. Não é necessário alterar esta seção. |
 | /potenciais | A fórmula para detectar strings a serem internacionalizadas. |
 
@@ -135,9 +135,9 @@ mvn xgettext:extract
 ### Arquivos de saída {#output-files}
 
 * `raw.xliff`: cadeias de caracteres extraídas
-* `warn.log`: avisos (se houver), se `CQ.I18n.getMessage()` A API é usada incorretamente. Eles sempre precisam de uma correção e, em seguida, uma reexecução.
+* `warn.log`: avisos (se houver), se a API `CQ.I18n.getMessage()` for usada incorretamente. Eles sempre precisam de uma correção e, em seguida, uma reexecução.
 
 * `parserwarn.log`: avisos do analisador (se houver), por exemplo, problemas do analisador js
-* `potentials.xliff`: candidatos &quot;em potencial&quot; que não são extraídos, mas podem ser strings legíveis por humanos que precisam de tradução (podem ser ignoradas e ainda produzem uma grande quantidade de falsos positivos)
-* `strings.xliff`: arquivo xliff nivelado, a ser importado para o ALF
-* `backrefs.txt`: permite a pesquisa rápida de locais de código-fonte para uma determinada string
+* `potentials.xliff`: candidatos &quot;em potencial&quot; que não são extraídos, mas podem ser cadeias de caracteres legíveis por humanos que precisam de tradução (podem ser ignorados, ainda produzem uma grande quantidade de falsos positivos)
+* `strings.xliff`: arquivo xliff nivelado, a ser importado para ALF
+* `backrefs.txt`: permite pesquisa rápida de locais de código-fonte para uma determinada cadeia de caracteres

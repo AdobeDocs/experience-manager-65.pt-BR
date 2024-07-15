@@ -25,24 +25,24 @@ Um ponto inicial invoca um processo criado no Workbench. Está associado a um fo
 >
 >Os termos pontos de partida, processo de início e formulário são usados alternadamente ao se referirem a esse conceito.
 
-Para iniciar um processo no aplicativo Forms do Adobe Experience Manager (AEM), é necessário ter um ponto de partida do tipo **Workspace** em seu processo. Além disso, você deve selecionar o **[!UICONTROL Visível no Espaço de trabalho móvel]** para o ponto de partida.
+Para iniciar um processo do aplicativo Forms Adobe Experience Manager (AEM), você deve ter um ponto de partida do tipo **Workspace** em seu processo. Além disso, você deve selecionar a opção **[!UICONTROL Visível no Mobile Workspace]** para o ponto de partida.
 
 ![mws_startpoint_select_option](assets/mws_startpoint_select_option.png)
 
-**Para iniciar um processo definido na Bancada**
+**Para iniciar um processo definido no Workbench**
 
-1. Para exibir os pontos iniciais disponíveis no aplicativo AEM Forms, acesse [Tela inicial](../../forms/using/home-screen.md).
-1. No **[!UICONTROL Início]** por padrão, a variável **[!UICONTROL Todos os Forms]** é exibida.
+1. Para exibir os pontos iniciais disponíveis no aplicativo AEM Forms, vá para [Tela inicial](../../forms/using/home-screen.md).
+1. Na tela **[!UICONTROL Página Inicial]**, por padrão, a lista **[!UICONTROL Todas as Forms]** é exibida.
 
    O ponto inicial está associado a um formulário. Selecione o ponto inicial associado ao formulário na lista para abri-lo.
 
    O formulário associado ao ponto inicial é aberto.
 
-1. Insira os detalhes na **[!UICONTROL Ponto inicial]** formulário.
+1. Insira os detalhes no formulário **[!UICONTROL Startpoint]**.
 
-   É possível adicionar anotações a essa tarefa usando o [anexo](../../forms/using/add-attachments.md) botão.
+   Você pode adicionar anotações a esta tarefa usando o botão [anexo](../../forms/using/add-attachments.md).
 
-1. Depois de preencher o formulário, selecione o **[!UICONTROL Enviar]** botão.
+1. Depois de preencher o formulário, clique no botão **[!UICONTROL Enviar]**.
 
 Se o aplicativo estiver offline, o formulário e seus dados serão salvos na pasta Caixa de saída.
 

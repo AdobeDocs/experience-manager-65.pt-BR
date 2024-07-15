@@ -442,7 +442,7 @@ public class GetApplication_SOAP {
 
 O seguinte exemplo de código Java™ obtém os aplicativos usando a API Java™.
 
-**Nota**: Obtendo a API do aplicativo AEM Forms, getApplications(), retorna somente aplicativos implantados.
+**Observação**: ao obter a API do Aplicativo AEM Forms, getApplications(), retorna somente aplicativos implantados.
 
 ```java
 /*

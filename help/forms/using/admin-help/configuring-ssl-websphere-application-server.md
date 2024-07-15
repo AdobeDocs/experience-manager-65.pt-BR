@@ -24,7 +24,7 @@ Esta seção inclui as seguintes etapas para configurar o SSL com seu IBM WebSph
 
 Para habilitar o SSL, o WebSphere precisa acessar uma conta de usuário no registro de usuário do SO local que tenha permissão para administrar o sistema:
 
-* (Windows) Crie um usuário do Windows que faça parte do grupo Administradores e tenha o privilégio de atuar como parte do sistema operacional. (Consulte [Criar um usuário do Windows para o WebSphere](configuring-ssl-websphere-application-server.md#create-a-windows-user-for-websphere).)
+* (Windows) Crie um usuário do Windows que faça parte do grupo Administradores e tenha o privilégio de atuar como parte do sistema operacional. (Consulte [Criar um usuário do Windows para WebSphere](configuring-ssl-websphere-application-server.md#create-a-windows-user-for-websphere).)
 * (Linux, UNIX) O usuário pode ser um usuário root ou outro usuário que tenha privilégios root. Ao habilitar o SSL no WebSphere, use a identificação e a senha do servidor desse usuário.
 
 ### Criar um usuário Linux ou UNIX para o WebSphere {#create-a-linux-or-unix-user-for-websphere}
@@ -50,29 +50,29 @@ Para habilitar o SSL, o WebSphere precisa acessar uma conta de usuário no regis
 ### Criar um usuário do Windows para o WebSphere {#create-a-windows-user-for-websphere}
 
 1. Faça logon no Windows usando uma conta de usuário administrador.
-1. Selecionar **Iniciar > Painel de controle > Ferramentas administrativas > Gerenciamento do computador > Usuários e grupos locais**.
-1. Clique com o botão direito do mouse em Usuários e selecione **Novo usuário**.
+1. Selecione **Iniciar > Painel de Controle > Ferramentas Administrativas > Gerenciamento do Computador > Usuários e Grupos Locais**.
+1. Clique com o botão direito do mouse em Usuários e selecione **Novo Usuário**.
 1. Digite um nome de usuário e senha nas caixas apropriadas e digite quaisquer outras informações necessárias nas caixas restantes.
-1. Desmarcar **O Usuário Deve Alterar A Senha No Próximo Logon**, clique em **Criar** e clique em **Fechar**.
+1. Desmarque **O Usuário Deve Alterar a Senha no Próximo Logon**, clique em **Criar** e em **Fechar**.
 1. Clique em **Usuários**, clique com o botão direito do mouse no usuário criado e selecione **Propriedades**.
-1. Clique em **Membro de** e clique em **Adicionar**.
-1. Na caixa Inserir os Nomes de Objeto a Serem Selecionados, digite `Administrators`, clique em Verificar nomes para garantir que o nome do grupo esteja correto.
-1. Clique em **OK** e clique em **OK** novamente.
-1. Selecionar **Iniciar > Painel de controle > Ferramentas administrativas > Política de segurança local > Políticas locais**.
+1. Clique na guia **Membro de** e em **Adicionar**.
+1. Na caixa Inserir os Nomes de Objeto a Serem Selecionados, digite `Administrators`, clique em Verificar Nomes para garantir que o nome do grupo esteja correto.
+1. Clique em **OK** e em **OK** novamente.
+1. Selecione **Iniciar > Painel de Controle > Ferramentas Administrativas > Política de Segurança Local > Políticas Locais**.
 1. Clique em Atribuição de direitos de usuário, clique com o botão direito em Agir como parte do sistema operacional e selecione Propriedades.
 1. Clique em **Adicionar usuário ou grupo**.
-1. Na caixa Inserir os Nomes de Objetos a Serem Selecionados, digite o nome do usuário que você criou na etapa 4, clique em **Verificar nomes** para garantir que o nome esteja correto e clique em **OK**.
-1. Clique em **OK** para fechar a caixa de diálogo Agir como parte das propriedades do sistema operacional.
+1. Na caixa Inserir os Nomes de Objeto a Serem Selecionados, digite o nome do usuário criado na etapa 4, clique em **Verificar Nomes** para garantir que o nome esteja correto e clique em **OK**.
+1. Clique em **OK** para fechar a opção Agir como parte da caixa de diálogo Propriedades do Sistema Operacional.
 
 ### Configurar o WebSphere para usar o usuário recém-criado como administrador {#configure-websphere-to-use-the-newly-created-user-as-administrator}
 
 1. Certifique-se de que o WebSphere esteja em execução.
-1. No Console administrativo do WebSphere, selecione **Segurança > Segurança global**.
-1. Em Segurança administrativa, selecione **Funções de usuário administrativo**.
+1. No Console Administrativo do WebSphere, selecione **Segurança > Segurança Global**.
+1. Em Segurança administrativa, selecione **Funções administrativas de usuário**.
 1. Clique em Adicionar e faça o seguinte:
 
-   1. Tipo **&amp;ast;** na caixa pesquisar e clique em pesquisar.
-   1. Clique em **Administrador** em funções.
+   1. Digite **&amp;ast;** na caixa de pesquisa e clique em pesquisar.
+   1. Clique em **Administrador** em Funções.
    1. Adicione o usuário recém-criado à função Mapeado para e mapeie-o para Administrador.
 
 1. Clique em **OK** e salve as alterações.
@@ -80,11 +80,11 @@ Para habilitar o SSL, o WebSphere precisa acessar uma conta de usuário no regis
 
 ## Habilitar segurança administrativa {#enable-administrative-security}
 
-1. No Console administrativo do WebSphere, selecione **Segurança > Segurança global**.
-1. Clique em **Assistente de configuração de segurança**.
-1. Assegurar **Habilitar Segurança de Aplicativo** está ativada. Clique em **Avançar**.
-1. Selecionar **Repositórios federados** e clique em **Próxima**.
-1. Especifique as credenciais que deseja definir e clique em **Próxima**.
+1. No Console Administrativo do WebSphere, selecione **Segurança > Segurança Global**.
+1. Clique em **Assistente de Configuração de Segurança**.
+1. Certifique-se de que a caixa de seleção **Habilitar Segurança de Aplicativo** esteja habilitada. Clique em **Avançar**.
+1. Selecione **Repositórios Federados** e clique em **Avançar**.
+1. Especifique as credenciais que deseja definir e clique em **Avançar**.
 1. Clique em **Concluir**.
 1. Reinicie o perfil do WebSphere.
 
@@ -94,15 +94,15 @@ Para habilitar o SSL, o WebSphere precisa acessar uma conta de usuário no regis
 
 Truststores e keystores podem ser criados usando o utilitário ikeyman ou o Admin Console. Para fazer o ikeyman funcionar corretamente, certifique-se de que o caminho de instalação do WebSphere não contenha parênteses.
 
-1. No Console administrativo do WebSphere, selecione **Segurança > Gerenciamento de chaves e certificados SSL**.
+1. No Console Administrativo do WebSphere, selecione **Segurança > Gerenciamento de chaves e certificados SSL**.
 1. Clique em **Armazenamento de chaves e certificados** em Itens relacionados.
-1. No **Principais usos do armazenamento** , verifique se **Armazenamento de chaves SSL** está selecionada. Clique em **Novo**.
+1. Na lista suspensa **Usos de armazenamento de chaves**, verifique se **Repositórios de chaves SSL** está selecionado. Clique em **Novo**.
 1. Digite um nome lógico e uma descrição.
 1. Especifique o caminho onde deseja que o armazenamento de chaves seja criado. Se você já criou um armazenamento de chaves por meio do ikeyman, especifique o caminho para o arquivo de armazenamento de chaves.
 1. Especifique e confirme a senha.
-1. Escolha o tipo de armazenamento de chaves e clique em **Aplicar**.
+1. Escolha o tipo de keystore e clique em **Aplicar**.
 1. Salve a configuração principal.
-1. Clique em **Certificado pessoal**.
+1. Clique em **Certificado Pessoal**.
 1. Se você tiver adicionado um armazenamento de chaves já criado usando ikeyman, seu certificado será exibido. Caso contrário, você precisará adicionar um novo certificado autoassinado executando as seguintes etapas:
 
    1. Selecione **Criar > certificado** autoassinado.
@@ -127,9 +127,9 @@ Truststores e keystores podem ser criados usando o utilitário ikeyman ou o Admi
 
 ## Habilitação de suporte para nativos de formulários AEM {#enabling-support-for-aem-forms-natives}
 
-1. No Console administrativo do WebSphere, selecione **Segurança > Segurança global**.
-1. Na seção Autenticação, expanda **Segurança RMI/IIOP** e clique em **Comunicações de entrada CSIv2**.
-1. Assegure que **Compatível com SSL** está selecionado na lista suspensa Transport.
+1. No Console Administrativo do WebSphere, selecione **Segurança > Segurança Global**.
+1. Na seção Autenticação, expanda **segurança RMI/IIOP** e clique em **comunicações de entrada CSIv2**.
+1. Verifique se **SSL-supported** está selecionado na lista suspensa Transporte.
 1. Reinicie o perfil do WebSphere.
 
 ## Configuração do WebSphere para converter URLs que começam com https {#configuring-websphere-to-convert-urls-that-begins-with-https}
@@ -161,10 +161,10 @@ O IBM WebSphere não permite várias chamadas para ORB.init() quando a Seguranç
 
 Execute as seguintes etapas para definir a porta como dinâmica e resolver o problema:
 
-1. No Console administrativo do WebSphere, selecione **Servidores** > **Tipos de servidor** > **Servidor de aplicativos WebSphere**.
+1. No Console Administrativo do WebSphere, selecione **Servidores** > **Tipos de Servidor** > **Servidor de aplicativos do WebSphere**.
 1. Na seção Preferências, selecione o servidor.
-1. No **Configuração** guia, em **Comunicações** seção, expandir **Portas** e clique em **Detalhes**.
-1. Clique nos seguintes nomes de porta e altere o **número da porta** para 0 e clique em **OK**.
+1. Na guia **Configuração**, na seção **Comunicações**, expanda **Portas** e clique em **Detalhes**.
+1. Clique nos seguintes nomes de porta, altere o **número da porta** para 0 e clique em **OK**.
 
    * `ORB_LISTENER_ADDRESS`
    * `SAS_SSL_SERVERAUTH_LISTENER_ADDRESS`
@@ -173,8 +173,8 @@ Execute as seguintes etapas para definir a porta como dinâmica e resolver o pro
 
 ## Configurar o arquivo sling.properties {#configure-the-sling-properties-file}
 
-1. Abertura `[aem-forms_root]`arquivo \crx-repository\launchpad\sling.properties para edição.
-1. Localize o `sling.bootdelegation.ibm` propriedade e adicionar `com.ibm.websphere.ssl.*`ao seu campo de valor. O campo atualizado tem a seguinte aparência:
+1. Abra o arquivo `[aem-forms_root]`\crx-repository\launchpad\sling.properties para edição.
+1. Localize a propriedade `sling.bootdelegation.ibm` e adicione `com.ibm.websphere.ssl.*` ao seu campo de valor. O campo atualizado tem a seguinte aparência:
 
    ```shell
    sling.bootdelegation.ibm=com.ibm.xml.*, com.ibm.websphere.ssl.*

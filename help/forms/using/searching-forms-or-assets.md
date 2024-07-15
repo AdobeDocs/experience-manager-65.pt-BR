@@ -22,13 +22,13 @@ Você pode pesquisar seus formulários ou ativos de formulário, usando uma sequ
 
 Ao selecionar um ou mais critérios e também especificar uma cadeia de caracteres de texto, a interseção do texto e dos critérios é retornada como resultado de pesquisa. Os resultados da pesquisa são tão bons quanto os metadados de formulário e ativo fornecidos.
 
-Clique em ![aem6forms_search](assets/aem6forms_search.png), para mostrar ou ocultar o painel de pesquisa.
+Clique em ![aem6forms_search](assets/aem6forms_search.png) para mostrar ou ocultar o painel de pesquisa.
 
 ## Pesquisa básica {#basic-search}
 
 Uma pesquisa básica é a pesquisa padrão, executada sem especificar filtros. Uma pesquisa de texto completo sobre propriedades de metadados é conduzida pelo AEM Forms.
 
-Para executar uma pesquisa básica, insira a consulta de pesquisa no campo de texto e pressione Return. Também é possível inserir o caractere curinga (&#42;) para corresponder a qualquer número de caracteres.
+Para executar uma pesquisa básica, insira a consulta de pesquisa no campo de texto e pressione Return. Você também pode inserir o caractere curinga (&#42;) para corresponder a qualquer número de caracteres.
 
 O Adobe Experience Manager pesquisa o texto inserido nas propriedades de metadados e retorna os resultados correspondentes. Se você digitar mais de uma palavra, a operação de pesquisa corresponderá ao texto completo da pesquisa.
 
@@ -36,9 +36,9 @@ Observe os seguintes pontos sobre a pesquisa básica:
 
 * A pesquisa é conduzida usando as propriedades de metadados de formulário e ativo.
 * Se você digitar mais de uma palavra, a operação de pesquisa corresponderá ao texto completo da pesquisa.
-* A pesquisa não diferencia maiúsculas de minúsculas. Por exemplo, ao digitar `geometrixx`, ativos com títulos `Geometrixx`, `GEOMETRIXX`, e `GeoMetRixx` são exibidos nos resultados da pesquisa.
+* A pesquisa não diferencia maiúsculas de minúsculas. Por exemplo, ao digitar `geometrixx`, os ativos com títulos `Geometrixx`, `GEOMETRIXX` e `GeoMetRixx` são exibidos nos resultados da pesquisa.
 
-* Correspondências parciais de uma palavra não são suportadas. Para pesquisar usando strings parciais, use &#42; curinga. No entanto, se a consulta de pesquisa corresponder a uma palavra completa, o formulário ou ativo correspondente será exibido.
+* Correspondências parciais de uma palavra não são suportadas. Para pesquisar usando cadeias de caracteres parciais, use o curinga &#42;. No entanto, se a consulta de pesquisa corresponder a uma palavra completa, o formulário ou ativo correspondente será exibido.
 * Os espaços extras são respeitados e não são aparados durante a pesquisa. Por exemplo, `My form` não é a mesma consulta de pesquisa que `My form`.
 
 * Se os valores de exibição e de dados dos campos nas propriedades de metadados forem diferentes, você não poderá usar valores de exibição como parâmetros de pesquisa. Por exemplo, não é possível pesquisar com base em um status, como Modificado ou Publicado, já que essas propriedades são armazenadas em um formato diferente.
@@ -47,7 +47,7 @@ Observe os seguintes pontos sobre a pesquisa básica:
 
 Nos critérios de pesquisa, além da consulta, você pode especificar alguns parâmetros de pesquisa para tornar a pesquisa básica mais eficiente e focada.
 
-![Campo de pesquisa e parâmetros ou filtros para pesquisa de formulário e ativo no AEM](assets/search_forms_assets.png)
+![Pesquisar campo e parâmetros ou filtros para pesquisa de formulário e ativo do AEM](assets/search_forms_assets.png)
 
 Campo de pesquisa e parâmetros ou filtros para pesquisa de formulário e ativo no AEM
 
@@ -72,9 +72,9 @@ Você pode pesquisar ativos usando um dos seguintes status:
 
 * **Publicado**: pesquise todos os ativos publicados e não modificados após a publicação.
 
-* **Não publicado**: pesquise todos os ativos que nunca são publicados.
+* **Publicação cancelada**: pesquise todos os ativos que nunca foram publicados.
 
-* **Modificado**: pesquise todos os ativos modificados ou cuja publicação foi cancelada.
+* **Modificado**: pesquise todos os ativos modificados ou cuja publicação foi cancelada após a publicação.
 
 ### Tipo de ativo {#asset-type}
 
@@ -88,7 +88,7 @@ Você pode selecionar qualquer número de tipos de ativos. A pesquisa retorna a 
   </tr>
   <tr>
    <td>Modelo de formulário<br /> </td> 
-   <td>Pesquise em todos os modelos de formulário.<br /> </td> 
+   <td>Pesquisar em todos os modelos de formulário.<br /> </td> 
   </tr>
   <tr>
    <td>Formulário PDF</td> 
@@ -104,7 +104,7 @@ Você pode selecionar qualquer número de tipos de ativos. A pesquisa retorna a 
   </tr>
   <tr>
    <td>Recurso</td> 
-   <td>Pesquise em todos os recursos.<br /> </td> 
+   <td>Pesquisar em todos os recursos.<br /> </td> 
   </tr>
  </tbody>
 </table>

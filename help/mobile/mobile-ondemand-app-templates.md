@@ -31,7 +31,7 @@ Selecionar esse modelo de amostra ao criar um aplicativo fornece um painel avan�
 
 >[!NOTE]
 >
->Para gerenciar o conteúdo do aplicativo móvel e do aplicativo no Centro de controle de aplicativos do AEM Mobile, consulte [Painel de aplicativos do AEM Mobile](/help/mobile/mobile-apps-ondemand-application-dashboard.md).
+>Para gerenciar o conteúdo do aplicativo móvel e do aplicativo no Centro de Controle de Aplicativos AEM Mobile, consulte o [Painel de Aplicativos AEM Mobile](/help/mobile/mobile-apps-ondemand-application-dashboard.md).
 
 ## Criação de modelos de aplicativo {#creating-app-templates}
 
@@ -44,44 +44,44 @@ Ao criar um aplicativo com base no modelo de outro aplicativo, você obterá um 
 Etapas para criar um aplicativo com base em um modelo de aplicativo:
 
 1. Navegue até o catálogo de aplicativos do AEM Mobile: *&lt;server-url>/aem/apps.html/content/mobileapps*
-1. Selecionar **Criar** > **Aplicativo** conforme mostrado abaixo
+1. Selecione **Criar** > **Aplicativo** como mostrado abaixo
 
 Depois de criar um aplicativo usando esse modelo, você pode adicionar artigos, banners e coleções ao aplicativo. Para visitar novamente, criar artigos, banners e coleções, consulte [Ações de gerenciamento de conteúdo](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md).
 
 >[!NOTE]
 >
->Como alternativa, você também pode selecionar um modelo de aplicativo de amostra, por exemplo, **We.Unlimited** aplicativo, disponibilizado a você por um desenvolvedor de AEM. Se você usar esse modelo de amostra para o seu aplicativo, obterá alguns artigos e coleções de exemplo para trabalhar. Você terá a opção de usar modelos e componentes de amostra, personalizar os existentes ou criar novos para seu aplicativo.
+>Como alternativa, você também pode selecionar um modelo de aplicativo de exemplo, por exemplo, o aplicativo **We.Unlimited**, disponibilizado a você por um desenvolvedor de AEM. Se você usar esse modelo de amostra para o seu aplicativo, obterá alguns artigos e coleções de exemplo para trabalhar. Você terá a opção de usar modelos e componentes de amostra, personalizar os existentes ou criar novos para seu aplicativo.
 
 >[!CAUTION]
 >
->Configuração ***redirectTarget*** propriedade
+>Definindo propriedade ***redirectTarget***
 >
->Ao usar um dos modelos do aplicativo, o desenvolvedor define o conteúdo do aplicativo. No entanto, o desenvolvedor deve estar ciente de onde o aplicativo é criado no jcr e o valor de ***redirectTarget*** propriedade.
+>Ao usar um dos modelos do aplicativo, o desenvolvedor define o conteúdo do aplicativo. No entanto, o desenvolvedor deve estar ciente de onde o aplicativo é criado no jcr e do valor da propriedade ***redirectTarget***.
 >
->A variável ***redirectTarget*** é calculado como parte da operação de criação de aplicativo e tenta resolver um caminho, se houver uma propriedade redirectTarget disponível como parte do modelo de aplicativo e o valor do redirectTarget for definido como relativo. Quando o processo de criação do aplicativo encontra um valor relativo para o redirectTarget no modelo do aplicativo, o valor é anexado ao local resolvido de onde o aplicativo foi criado.
+>O ***redirectTarget*** é calculado como parte da operação de criação de aplicativo e tenta resolver um caminho, se houver uma propriedade redirectTarget disponível como parte do modelo de aplicativo e o valor do redirectTarget for definido como relativo. Quando o processo de criação do aplicativo encontra um valor relativo para o redirectTarget no modelo do aplicativo, o valor é anexado ao local resolvido de onde o aplicativo foi criado.
 >
->Por exemplo, se um modelo de aplicativo definir uma variável ***redirectTarget*** com um valor de &quot;*language-masters/en*&quot; e o aplicativo foi criado em &quot;*/content/mobileapps/fooApp*&quot;, o valor final para redirectTarget após a criação do aplicativo será &quot;*/content/mobileapps/fooApp/language-masters/br*&quot;.
+>Por exemplo, se um modelo de aplicativo definir um ***redirectTarget*** com um valor de &quot;*language-masters/en*&quot; e o aplicativo tiver sido criado em &quot;*/content/mobileapps/fooApp*&quot;, o valor final para redirectTarget após a criação do aplicativo será &quot;*/content/mobileapps/fooApp/language-masters/en*&quot;.
 >
 
 ## Criação de modelos de conteúdo {#creating-content-templates}
 
 Cada tipo de entidade tem dois templates prontos para uso. São eles:
 
-* **Modelos padrão:** usado para criação de conteúdo com propriedades/estrutura padrão aplicáveis
+* **Modelos padrão:** usados para a criação de conteúdo com propriedades/estrutura padrão aplicáveis
 * **Modelos importados:** usado para importar conteúdo do AEM Mobile com propriedades/estrutura padrão aplicáveis
 
 ### Modelos de artigo {#article-templates}
 
 O Unlimited Article é um modelo de amostra representando um layout de artigo típico do AEM Mobile On-Demand.
 
-1. Entrada **Gerenciar artigos**, selecione **+**  para criar um artigo. Você pode escolher um **Artigo Unlimited** ou um **Artigo de rich text**. A imagem abaixo mostra a opção que permite escolher qualquer um desses dois modelos de artigo.
+1. Em **Gerenciar Artigos**, selecione **+** para criar um artigo. Você pode escolher um **Artigo Ilimitado** ou um **Artigo de Rich Text**. A imagem abaixo mostra a opção que permite escolher qualquer um desses dois modelos de artigo.
 
-1. Clique em **Próxima** para definir metadados de artigo, como Nome/Título do artigo, Descrição, Autor, Resumo, Departamento, Imagem em miniatura, Acesso ao artigo e assim por diante.
-1. Clique em **Próxima** para preencher as Propriedades do anúncio.
-1. Clique em **Próxima** para inserir a imagem do artigo ou a imagem da rede social
-1. Clique em **Próxima** para escolher uma coleção, vincule este novo artigo.
-1. Clique em **Próxima** para inserir os detalhes para compartilhamento em redes sociais.
-1. Clique em **Criar** para concluir o processo de criação de um artigo usando a amostra. Clique em **Concluído** ou **Editar artigo** para editar as propriedades deste artigo.
+1. Clique em **Avançar** para definir os metadados do artigo, como Nome/Título do artigo, Descrição, Autor, Resumo, Departamento, Imagem em miniatura, Acesso ao artigo etc.
+1. Clique em **Avançar** para preencher as Propriedades do Anúncio.
+1. Clique em **Avançar** para inserir a imagem do artigo ou a imagem da rede social
+1. Clique em **Avançar** para escolher uma coleção para a qual vincular este novo Artigo.
+1. Clique em **Avançar** para inserir os detalhes de compartilhamento em redes sociais.
+1. Clique em **Criar** para concluir o processo de criação de um artigo usando a amostra. Você pode clicar em **Concluído** ou **Editar artigo** para editar as propriedades deste artigo.
 
 ![chlimage_1-71](assets/chlimage_1-71.png)
 
@@ -99,7 +99,7 @@ Escolha o &#39;**+**&#39; no painel esquerdo para adicionar componentes ao seu a
 
 ### Criação de modelos prontos para uso {#creating-out-of-the-box-templates}
 
-Geometrixx Unlimited Não há Modelos de artigo prontos para uso. No entanto, há um modelo padrão que os modelos personalizados devem estender. Consulte o [Amostra de modelo de artigo](http://localhost:4502/crx/de/index.jsp#/apps/geometrixx-unlimited-app/templates/article).
+Não há Modelos de artigo prontos para uso. No entanto, há um modelo padrão que os modelos personalizados devem estender. Consulte a [amostra de modelo de artigo](http://localhost:4502/crx/de/index.jsp#/apps/geometrixx-unlimited-app/templates/article) do Geometrixx Unlimited App.
 
 As propriedades principais além das propriedades obrigatórias do modelo AEM normal incluem;
 
@@ -107,7 +107,7 @@ As propriedades principais além das propriedades obrigatórias do modelo AEM no
 
 Essa propriedade garante que a página do AEM seja reconhecida como uma página de artigo direcionada da AEM Mobile.
 
-De acordo com os modelos do AEM, é possível adicionar propriedades padrão ou nós secundários ao ***jcr:content***.
+De acordo com os modelos AEM, você pode adicionar propriedades padrão ou nós filhos ao ***jcr:content*** do modelo.
 
 ### Modelos de banner e coleção {#banner-and-collection-templates}
 
@@ -136,19 +136,19 @@ Depois que o componente já tiver sido incluído em uma página AEM, juntamente 
 
 1. Escolha essa página e verifique se você está no modo de Edição, por meio da lista suspensa na parte superior direita do cabeçalho do Editor
 1. Alterne o painel lateral usando o ícone mais à esquerda no cabeçalho do editor
-1. Selecione o **Componentes** guia
+1. Selecione a guia **Componentes**
 1. Arraste e solte um dos componentes disponíveis na página
 
 ![chlimage_1-75](assets/chlimage_1-75.png)
 
 **Para editar um componente existente:**
 
-1. Escolha essa página e verifique se você está em **Editar** e selecione o componente
+1. Escolha essa página, verifique se você está no modo **Editar** e selecione o componente
 1. Selecione a chave inglesa para configurar o componente
 
 >[!NOTE]
 >
->É possível criar um componente no AEM e personalizar o mesmo usando [Desenvolvimento com o CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md). Depois de personalizar o componente existente como suas necessidades, você poderá adicioná-lo na página usando o **Editar** opção em **Gerenciar artigos** conforme mostrado na figura acima.
+>Você pode criar um componente no AEM e personalizar o mesmo usando [Desenvolvimento com CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md). Depois de personalizar o componente existente como seus requisitos, você pode adicioná-lo em sua página usando a opção **Editar** em **Gerenciar artigos**, conforme mostrado na figura acima.
 
 >[!NOTE]
 >

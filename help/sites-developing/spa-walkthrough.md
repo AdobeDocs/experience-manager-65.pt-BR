@@ -40,16 +40,16 @@ O passo a passo é baseado na funcionalidade padrão do AEM e no aplicativo de e
 * [AEM versão 6.5.4 ou mais recente](/help/release-notes/release-notes.md)
    * Você deve ter direitos de administrador no sistema.
 * [O aplicativo de exemplo Projeto SPA WKND está disponível no GitHub](https://github.com/adobe/aem-guides-wknd-spa)
-   * Baixe o [versão mais recente do aplicativo React.](https://github.com/adobe/aem-guides-wknd-spa/releases) Ele será nomeado de forma semelhante a `wknd-spa-react.all.classic-X.Y.Z-SNAPSHOT.zip`.
-   * Baixe o [imagens de amostra mais recentes](https://github.com/adobe/aem-guides-wknd-spa/releases) para o aplicativo. Ele será nomeado de forma semelhante a `wknd-spa-sample-images-X.Y.Z.zip`.
-   * [Usar gerenciador de pacotes](/help/sites-administering/package-manager.md) para instalar os pacotes como você faria com qualquer outro pacote no AEM.
+   * Baixe a [versão mais recente do aplicativo React.](https://github.com/adobe/aem-guides-wknd-spa/releases) Será nomeado de forma semelhante a `wknd-spa-react.all.classic-X.Y.Z-SNAPSHOT.zip`.
+   * Baixe as [imagens de exemplo mais recentes](https://github.com/adobe/aem-guides-wknd-spa/releases) para o aplicativo. Ele será nomeado de forma semelhante a `wknd-spa-sample-images-X.Y.Z.zip`.
+   * [Use o gerenciador de pacotes](/help/sites-administering/package-manager.md) para instalar os pacotes como você faria com qualquer outro pacote no AEM.
    * O aplicativo não precisa ser instalado usando o Maven para fins deste passo a passo.
 
 >[!CAUTION]
 >
->Este documento usa o [Aplicativo WKND Spa Project](https://github.com/adobe/aem-guides-wknd-spa) apenas para fins de demonstração. Não use para nenhum trabalho de projeto.
+>Este documento usa o [aplicativo WKND Spa Project](https://github.com/adobe/aem-guides-wknd-spa) somente para fins de demonstração. Não use para nenhum trabalho de projeto.
 >
->Qualquer projeto AEM deve usar o [Arquétipo de projeto AEM,](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR) que apoia projetos SPA usando o React ou o Angular e usa o SDK do SPA.
+>Qualquer projeto do AEM deve usar o [Arquétipo de projeto do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR), que oferece suporte a projetos do SPA usando o React ou o Angular SPA e usa o SDK do.
 
 ### O que é um SPA? {#what-is-a-spa}
 
@@ -94,9 +94,9 @@ Ao renderizar no lado do cliente, o elemento de página reage mais rápido e as 
 
 >[!NOTE]
 >
->Para obter detalhes técnicos sobre como o SPA funciona no AEM, consulte o artigo [SPA Introdução ao AEM](/help/sites-developing/spa-getting-started-react.md).
+>Para detalhes técnicos sobre como o SPA funciona no AEM, consulte o artigo [Introdução ao SPA no AEM](/help/sites-developing/spa-getting-started-react.md).
 >
->Para obter mais informações sobre design, arquitetura e fluxo de trabalho técnico do Editor de SPA, consulte o artigo [Visão geral do editor de SPA](/help/sites-developing/spa-overview.md).
+>Para mais detalhes sobre o design, a arquitetura e o fluxo de trabalho técnico do Editor de SPA, consulte o artigo [Visão geral do Editor de SPA](/help/sites-developing/spa-overview.md).
 
 ## Experiência de edição de conteúdo com SPA {#content-editing-experience-with-spa}
 
@@ -118,7 +118,7 @@ Quando um SPA AEM é criado para usar o Editor de SPA, o autor de conteúdo não
 
    >[!NOTE]
    >
-   >Consulte a [Visão geral do editor de SPA](spa-overview.md#requirements-limitations) para obter mais informações sobre o editor de texto in-loco e o SPA.
+   >Consulte a [Visão geral do Editor de SPA](spa-overview.md#requirements-limitations) para obter mais informações sobre o editor de texto in-loco e o SPA.
 
 1. Use o Navegador de ativos para arrastar e soltar uma nova imagem em um componente de imagem.
 
@@ -164,7 +164,7 @@ Experimentar como um SPA se comporta para o usuário final e, em seguida, inspec
 
 Mas se a página não é recarregada ao navegar pelas páginas secundárias, como ela é carregada?
 
-A próxima seção, [Carregamento de um aplicativo SPA,](#loading-an-spa-application) aprofunda-se nos mecanismos de carregamento do SPA e como o conteúdo pode ser carregado de forma síncrona e assíncrona.
+A próxima seção, [Carregando um Aplicativo SPA](#loading-an-spa-application), aprofunda-se nos mecanismos de carregamento do SPA e como o conteúdo pode ser carregado de forma síncrona e assíncrona.
 
 ### Carregar um SPA {#loading-an-spa-application}
 
@@ -184,9 +184,9 @@ A próxima seção, [Carregamento de um aplicativo SPA,](#loading-an-spa-applica
 
    ![Etapa 4](assets/spa-walkthrough-step-1-4.png)
 
-1. Alterne para a **Rede** das ferramentas do desenvolvedor e recarregue a página.
+1. Alterne para a guia **Rede** das ferramentas do desenvolvedor e recarregue a página.
 
-   Ignorando solicitações de imagem, os principais recursos carregados para a página são a própria página, CSS, o JavaScript React, suas dependências e dados JSON para a página.
+   Ignorando solicitações de imagem, os principais recursos carregados para a página são a própria página, CSS, o React JavaScript, suas dependências e dados JSON para a página.
 
    ![Etapa 5](assets/spa-walkthrough-step-1-5.png)
 
@@ -244,7 +244,7 @@ Na seção a seguir, exploraremos o contrato que permite que o editor de SPA rel
 
    >[!NOTE]
    >
-   >Isso é uma mudança de comportamento das páginas renderizadas do lado do servidor no AEM, em que há uma `cq` elemento inserido para cada componente editável.
+   >Essa é uma alteração de comportamento das páginas renderizadas do lado do servidor no AEM, em que há um elemento `cq` inserido para cada componente editável.
    >
    >
    >Essa abordagem no SPA elimina a necessidade de inserir elementos personalizados, confiando apenas em um atributo de dados adicional, tornando a marcação mais simples para o desenvolvedor de front-end.
@@ -253,6 +253,6 @@ Na seção a seguir, exploraremos o contrato que permite que o editor de SPA rel
 
 Agora que você entende a experiência de edição de SPA no AEM e como um SPA se relaciona ao editor de SPA, aprofunde-se ainda mais para entender como um SPA é criado.
 
-* [SPA Introdução ao AEM](/help/sites-developing/spa-getting-started-react.md) mostra como um SPA básico é construído para funcionar com o editor SPA no AEM
+* [Introdução ao SPA no AEM](/help/sites-developing/spa-getting-started-react.md) mostra como um SPA básico é criado para funcionar com o editor do SPA no AEM
 * A [Visão geral do editor de SPA](/help/sites-developing/spa-overview.md) aborda em detalhes o modelo de comunicação do AEM e do SPA.
 * [Desenvolvimento de SPAs para o AEM](/help/sites-developing/spa-architecture.md) descreve como engajar desenvolvedores de front-end no desenvolvimento de um SPA para o AEM e como os SPAs interagem com a arquitetura do AEM.

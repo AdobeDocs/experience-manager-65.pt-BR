@@ -22,7 +22,7 @@ O arquivo de configuração contém as informações de conversão de PDF Genera
 
 >[!NOTE]
 >
->Não é possível alterar a configuração de tempo limite para o PDF Generator importando um arquivo nativo2pdfconfig.xml personalizado. A configuração de tempo limite nesse arquivo é apenas para fins informativos e exibe a configuração atual no PDF Generator. Para alterar a configuração de tempo limite, consulte &quot;Definindo parâmetros de desempenho de PDF Generator&quot; em [Instalação e implantação de formulários AEM](https://www.adobe.com/go/learn_aemforms_installJBoss_63).
+>Não é possível alterar a configuração de tempo limite para o PDF Generator importando um arquivo nativo2pdfconfig.xml personalizado. A configuração de tempo limite nesse arquivo é apenas para fins informativos e exibe a configuração atual no PDF Generator. Para alterar a configuração de tempo limite, consulte &quot;Definindo parâmetros de desempenho de PDF Generator&quot; em [Instalando e implantando formulários AEM](https://www.adobe.com/go/learn_aemforms_installJBoss_63).
 
 ## Exportar seu arquivo de configuração atual {#export-your-current-configuration-file}
 
@@ -52,7 +52,7 @@ Por padrão, o PDF Generator converte somente a camada padrão dos arquivos do A
 
 1. No console de administração, clique em Serviços > PDF Generator > Arquivos de configuração > Exportar configuração.
 1. Selecione Baixar toda a configuração e clique em Baixar.
-1. Em um editor de texto, abra o arquivo baixado e, no `AutoCAD` tag na `PDFMaker` adicionar o texto `convertAllPages="true"`.
+1. Em um editor de texto, abra o arquivo baixado e, na tag `AutoCAD` dentro da tag `PDFMaker`, adicione o texto `convertAllPages="true"`.
 1. No console de administração, clique em Serviços > PDF Generator > Arquivos de configuração > Importar configuração.
 1. Selecione Importar um arquivo de configuração existente, especifique o arquivo atualizado e clique em Importar.
 

@@ -24,13 +24,13 @@ A DPR do lado do cliente fornece valores 100% precisos e funciona para qualquer 
 
 **Aplicativos renderizados do lado do servidor**
 
-1. Carregar inicialização do trabalhador do serviço (`srvinit.js`) incluindo o seguinte script na seção de cabeçalho da página HTML:
+1. Carregue a inicialização do service worker (`srvinit.js`) incluindo o seguinte script na seção de cabeçalho da página de HTML:
 
    ```javascript
    <script type="text/javascript" src="srvinit.js"></script>
    ```
 
-   O Adobe recomenda que você carregue esse script _antes_ qualquer outro script para que o service worker comece a inicialização imediatamente.
+   A Adobe recomenda que você carregue este script _antes_ de qualquer outro script para que o service worker comece a inicialização imediatamente.
 
 1. Inclua o seguinte código de tag de imagem DPR na parte superior da seção body da página HTML:
 
@@ -43,7 +43,7 @@ A DPR do lado do cliente fornece valores 100% precisos e funciona para qualquer 
        aem_dm_dpr_5x.jpg 5x">
    ```
 
-   É obrigatório incluir esse código de tag de imagem DPR _antes_ todas as imagens estáticas na página do HTML.
+   É obrigatório incluir este código de marca de imagem DPR _antes_ em todas as imagens estáticas da sua página de HTML.
 
 **Aplicativos renderizados do lado do cliente**
 
@@ -56,10 +56,10 @@ A DPR do lado do cliente fornece valores 100% precisos e funciona para qualquer 
 
    Você pode combinar ambos os scripts DPR em um para evitar várias solicitações de rede.
 
-   O Adobe recomenda carregar esses scripts _antes_ qualquer outro script na página HTML.
-O Adobe também recomenda que você Bootstrap seu aplicativo com a tag HTML diff em vez de um elemento body. O motivo é porque `dprImageInjection.js` injeta dinamicamente a tag de imagem na parte superior da seção body na página HTML.
+   A Adobe recomenda que você carregue esses scripts _antes_ de qualquer outro script na página HTML.
+O Adobe também recomenda que você Bootstrap seu aplicativo com a tag HTML diff em vez de um elemento body. O motivo é porque o `dprImageInjection.js` injeta dinamicamente a marca de imagem na parte superior da seção do corpo na página HTML.
 
-## Download de arquivos JavaScript {#client-side-dpr-script}
+## Download de arquivos do JavaScript {#client-side-dpr-script}
 
 Os seguintes arquivos JavaScript no download são fornecidos a você somente como referência de exemplo. Se você pretende usar esses arquivos em páginas de HTML, edite o código de cada arquivo para atender aos seus próprios requisitos.
 
@@ -67,7 +67,7 @@ Os seguintes arquivos JavaScript no download são fornecidos a você somente com
 * `srvinit.js`
 * `srvwrk.js`
 
-[Download de arquivos JavaScript](/help/assets/assets-dm/aem-dynamicmedia-smartimaging-dpr.zip)
+[Download de arquivos do JavaScript](/help/assets/assets-dm/aem-dynamicmedia-smartimaging-dpr.zip)
 
 >[!MORELIKETHIS]
 >

@@ -24,11 +24,11 @@ ht-degree: 3%
 
 Os aplicativos são representados como *cq:Pages* no AEM.
 
-Eles compartilham as mesmas propriedades comuns encontradas em qualquer *cq:Page* além de outros mostrados abaixo que representam propriedades de suporte à integração.
+Eles compartilham as mesmas propriedades comuns encontradas em qualquer *cq:Page*, além de outras mostradas abaixo que representam propriedades de suporte à integração.
 
 ## Propriedades do aplicativo {#app-properties}
 
-A tabela a seguir mostra **Nós e propriedades do aplicativo**.
+A tabela a seguir mostra **Nós e Propriedades do Aplicativo**.
 
 <table>
  <tbody>
@@ -45,7 +45,7 @@ A tabela a seguir mostra **Nós e propriedades do aplicativo**.
   <tr>
    <td>dps-exportTemplate</td>
    <td>Sequência:Caminho</td>
-   <td><p>Caminho das configurações de exportação do aplicativo. A configuração de exportação é uma pasta com dois modelos de configuração de exportação filhos do ContentSync;</p> <p><i>dps-article</i>: configuração de exportação do ContentSync para exportar o conteúdo do artigo</p> <p><i>dps-HTMLResources</i>: configuração de exportação do ContentSync para exportar recursos compartilhados de aplicativo/artigo</p> </td>
+   <td><p>Caminho das configurações de exportação do aplicativo. A configuração de exportação é uma pasta com dois modelos de configuração de exportação filhos do ContentSync;</p> <p><i>artigo-dps</i>: configuração de exportação do ContentSync para exportar o conteúdo do artigo</p> <p><i>dps-HTMLResources</i>: configuração de exportação do ContentSync para exportar recursos compartilhados de aplicativo/artigo</p> </td>
   </tr>
   <tr>
    <td>dps-projectId</td>
@@ -80,12 +80,12 @@ A tabela a seguir mostra **Nós e propriedades do aplicativo**.
   <tr>
    <td>sling:resourceType</td>
    <td>Sequência:Caminho</td>
-   <td><p>Caminho para um cq:Component que é ou estende <i>mobileapps/core/components/instance.</i></p> <p>Isso fornece a presença e a renderização no Catálogo de aplicativos.</p> </td>
+   <td><p>Caminho para um cq:Component que está ou estende <i>mobileapps/core/components/instance.</i></p> <p>Isso fornece a presença e a renderização no Catálogo de aplicativos.</p> </td>
   </tr>
  </tbody>
 </table>
 
-Você pode usar ***Propriedades de conteúdo*** para criar conteúdo. Consulte os seguintes recursos para criar e exportar artigos e recursos compartilhados:
+Você pode usar ***Propriedades de Conteúdo*** para criar conteúdo. Consulte os seguintes recursos para criar e exportar artigos e recursos compartilhados:
 
 * [Propriedades de conteúdo](/help/mobile/content-properties.md)
 * [Criação da configuração de exportação do artigo](/help/mobile/creating-article-export-configuration.md)

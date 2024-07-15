@@ -14,17 +14,17 @@ ht-degree: 64%
 
 # Criar e organizar páginas {#creating-and-organizing-pages}
 
-Esta seção descreve como criar e gerenciar páginas com o Adobe Experience Manager (AEM) para depois usá-las [criar conteúdo](/help/sites-authoring/editing-content.md) nessas páginas.
+Esta seção descreve como criar e gerenciar páginas com o Adobe Experience Manager (AEM) para depois [criar conteúdo](/help/sites-authoring/editing-content.md) nessas páginas.
 
 >[!NOTE]
 >
->Sua conta precisa do [direitos de acesso apropriados](/help/sites-administering/security.md) e [permissões](/help/sites-administering/security.md#permissions) para executar ações nas páginas, como criar, copiar, mover, editar e excluir.
+>Sua conta precisa de [direitos de acesso apropriados](/help/sites-administering/security.md) e [permissões](/help/sites-administering/security.md#permissions) para executar ações nas páginas, como criar, copiar, mover, editar e excluir.
 >
 >Caso encontre algum problema, sugerimos que você entre em contato com o administrador do sistema.
 
 >[!NOTE]
 >
->Há vários [atalhos de teclado](/help/sites-authoring/keyboard-shortcuts.md) que você pode usar no console sites, que torna a organização das suas páginas mais eficiente.
+>Há vários [atalhos de teclado](/help/sites-authoring/keyboard-shortcuts.md) que você pode usar no console Sites que tornam a organização das suas páginas mais eficiente.
 
 ## Organizar seu site {#organizing-your-website}
 
@@ -42,7 +42,7 @@ O exemplo a seguir mostra o site We.Retail, onde uma página de shorts de caminh
 * Ambiente de autor
   `https://localhost:4502/editor.html/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
 
-* Ambiente de publicação
+* Ambiente do Publish
   `https://localhost:4503/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
 
 Dependendo da configuração da sua instância, o uso de `/content` pode ser opcional no ambiente de publicação.
@@ -107,7 +107,7 @@ O **Título** da página e o **Nome** podem ser criados separadamente, mas estã
 >
 >Lembre-se também de que alguns navegadores (por exemplo, versões mais antigas do IE) só podem aceitar URLs com um limite de comprimento, por isso também há um motivo técnico para manter os nomes de página curtos.
 
-Ao criar uma página, AEM [valida o nome da página de acordo com as convenções](/help/sites-developing/naming-conventions.md) impostos pelo AEM e pelo JCR.
+Ao criar uma página, AEM [valida o nome da página de acordo com as convenções](/help/sites-developing/naming-conventions.md) impostas pelo AEM e JCR.
 
 Os caracteres mínimos permitidos são:
 
@@ -121,11 +121,11 @@ Detalhes completos sobre todos os caracteres permitidos podem ser encontrados na
 
 >[!NOTE]
 >
->Se o AEM estiver sendo executado em um [Implantação do gerenciador de persistência MongoMK](/help/sites-deploying/recommended-deploys.md), os nomes de página são limitados a 150 caracteres.
+>Se o AEM estiver sendo executado em uma [implantação do gerenciador de persistência MongoMK](/help/sites-deploying/recommended-deploys.md), os nomes de página serão limitados a 150 caracteres.
 
 #### Título {#title}
 
-Se você fornecer apenas uma página **Título** ao criar uma página, o AEM deriva a página **Nome** desta cadeia de caracteres e [validar o nome de acordo com as convenções](/help/sites-developing/naming-conventions.md) impostos pelo AEM e pelo JCR. Um campo de **Título** que contém caracteres inválidos será aceito, mas o nome derivado terá os caracteres inválidos substituídos. Por exemplo:
+Se você fornecer apenas uma página **Título** ao criar uma página, o AEM derivará a página **Nome** desta cadeia de caracteres e [validará o nome de acordo com as convenções](/help/sites-developing/naming-conventions.md) impostas pelo AEM e JCR. Um campo de **Título** que contém caracteres inválidos será aceito, mas o nome derivado terá os caracteres inválidos substituídos. Por exemplo:
 
 | Título | Nome derivado |
 |---|---|
@@ -134,7 +134,7 @@ Se você fornecer apenas uma página **Título** ao criar uma página, o AEM der
 
 #### Nome {#name}
 
-Quando você fornece uma página **Nome** ao criar uma página, AEM [valida o nome de acordo com as convenções](/help/sites-developing/naming-conventions.md) impostos pelo AEM e pelo JCR. Não é possível inserir caracteres inválidos no campo **Nome**. Quando o AEM detecta caracteres inválidos, o campo é realçado com uma mensagem explicativa.
+Quando você fornece uma página **Nome** ao criar uma página, o AEM [valida o nome de acordo com as convenções](/help/sites-developing/naming-conventions.md) impostas pelo AEM e JCR. Não é possível inserir caracteres inválidos no campo **Nome**. Quando o AEM detecta caracteres inválidos, o campo é realçado com uma mensagem explicativa.
 
 ![caop-02](assets/caop-02.png)
 
@@ -164,7 +164,7 @@ O AEM vem com vários modelos prontos para uso. Os modelos disponíveis dependem
 
 ### Componentes {#components}
 
-Os componentes são os elementos fornecidos pelo AEM, desse modo, é possível adicionar tipos específicos de conteúdo. O AEM vem com uma variedade de [componentes prontos para uso](/help/sites-authoring/default-components-console.md) que oferecem funcionalidade abrangente. Isso inclui:
+Os componentes são os elementos fornecidos pelo AEM, desse modo, é possível adicionar tipos específicos de conteúdo. O AEM vem com uma variedade de [componentes prontos para uso](/help/sites-authoring/default-components-console.md) que fornecem funcionalidade abrangente. Isso inclui:
 
 * Texto
 * Imagem
@@ -192,7 +192,7 @@ A menos que todas as páginas tenham sido criadas antecipadamente para você, an
 
 1. A partir do primeiro estágio do assistente, você pode:
 
-   * Selecione o modelo que deseja usar para criar a nova página e clique em **Próxima** para continuar.
+   * Selecione o modelo que deseja usar para criar a nova página e clique em **Avançar** para continuar.
 
    * **Cancelar** para suspender o processo.
 
@@ -200,7 +200,7 @@ A menos que todas as páginas tenham sido criadas antecipadamente para você, an
 
 1. A partir do último estágio do assistente, você pode:
 
-   * Use as três guias para inserir a variável [propriedades da página](/help/sites-authoring/editing-page-properties.md) que deseja atribuir à nova página, em seguida, clique em **Criar** para realmente criar a página.
+   * Use as três guias para inserir as [propriedades de página](/help/sites-authoring/editing-page-properties.md) que você deseja atribuir à nova página, em seguida, clique em **Criar** para realmente criar a página.
 
    * Use **Voltar** para retornar à seleção do modelo.
 
@@ -213,7 +213,7 @@ A menos que todas as páginas tenham sido criadas antecipadamente para você, an
    * **Nome**:
 
       * Usado para gerar o URI. Se não especificado, o nome é derivado do título.
-      * Se você fornecer uma página **Nome** ao criar uma página, AEM [valida o nome de acordo com as convenções](/help/sites-developing/naming-conventions.md) impostos pelo AEM e pelo JCR.
+      * Se você fornecer uma página **Nome** ao criar uma página, o AEM [validará o nome de acordo com as convenções](/help/sites-developing/naming-conventions.md) impostas pelo AEM e JCR.
 
       * **Não é possível inserir caracteres inválidos** no campo **Nome**. Quando o AEM detectar caracteres inválidos, o campo será realçado e uma mensagem explicativa será exibida para indicar os caracteres que precisam ser removidos/substituídos.
 
@@ -221,7 +221,7 @@ A menos que todas as páginas tenham sido criadas antecipadamente para você, an
    >
    >Consulte [Convenções de nomenclatura da página](#page-naming-conventions).
 
-   As informações mínimas necessárias para criar uma página são **Título**.
+   As informações mínimas necessárias para criar uma página são o **Título**.
 
    ![caop-05](assets/caop-05.png)
 
@@ -231,7 +231,7 @@ A menos que todas as páginas tenham sido criadas antecipadamente para você, an
 
    >[!NOTE]
    >
-   >Caso crie uma página usando um nome que já existe no local, o sistema vai gerar automaticamente uma variação do nome, ao anexar um número. Por exemplo, se `winter` já existe uma nova página se tornará `winter0`.
+   >Caso crie uma página usando um nome que já existe no local, o sistema vai gerar automaticamente uma variação do nome, ao anexar um número. Por exemplo, se `winter` já existir, uma nova página se tornará `winter0`.
 
 1. Caso volte ao console, você verá em sua nova página:
 
@@ -239,7 +239,7 @@ A menos que todas as páginas tenham sido criadas antecipadamente para você, an
 
 >[!CAUTION]
 >
->Assim que uma página tiver sido criada, seu modelo não poderá ser alterado, a menos que você [criar uma inicialização com um novo modelo](/help/sites-authoring/launches-creating.md#create-launch-with-new-template), embora isso perderá qualquer conteúdo já existente.
+>Assim que uma página tiver sido criada, seu modelo não poderá ser alterado, a menos que você [crie uma inicialização com um novo modelo](/help/sites-authoring/launches-creating.md#create-launch-with-new-template), embora isso perderá todo o conteúdo já existente.
 
 ### Abrir uma página para edição {#opening-a-page-for-editing}
 
@@ -281,17 +281,17 @@ Você pode copiar uma página e todas as suas subpáginas para um novo local:
    >Se você estiver no modo de seleção, isso será encerrado automaticamente assim que a página for copiada.
 
 1. Navegue até o local para a nova cópia da página.
-1. A variável **Colar** O ícone está disponível com uma seta suspensa à direita:
+1. O ícone **Colar** está disponível com uma seta suspensa à direita:
 
    ![Colar](assets/paste-without-children.png)
 
    Você pode:
    * Selecionar o próprio ícone **Colar**: uma cópia da página original e qualquer página secundária serão criadas neste local.
-   * Selecione a seta suspensa para revelar a **Colar sem filhos** opção. Será criada uma cópia da página original neste local; páginas secundárias não serão copiadas.
+   * Selecione a seta suspensa para revelar a opção **Colar sem filhos**. Será criada uma cópia da página original neste local; páginas secundárias não serão copiadas.
 
    >[!NOTE]
    >
-   >Se você copiar a página para um local onde uma página com o mesmo nome que a original já existir, o sistema gerará automaticamente uma variação do nome anexando um número. Por exemplo, se `winter` já existe `winter` se tornará `winter1`.
+   >Se você copiar a página para um local onde uma página com o mesmo nome que a original já existir, o sistema gerará automaticamente uma variação do nome anexando um número. Por exemplo, se `winter` já existir, `winter` se tornará `winter1`.
 
 ### Mover ou renomear uma página {#moving-or-renaming-a-page}
 
@@ -325,7 +325,7 @@ O AEM oferece a funcionalidade de atualizar todos os links internos que se refer
 
 1. No estágio **Renomear** do assistente, é possível:
 
-   * Especifique o nome que deseja para a página após movê-la, depois clique em **Próxima** para continuar.
+   * Especifique o nome que deseja para a página após movê-la, em seguida, clique em **Avançar** para prosseguir.
 
    * **Cancelar** para suspender o processo.
 
@@ -335,7 +335,7 @@ O AEM oferece a funcionalidade de atualizar todos os links internos que se refer
 
    >[!NOTE]
    >
-   >Se você mover uma página para um local onde uma página com o mesmo nome já existe, o sistema gera automaticamente uma variação do nome ao anexar um número. Por exemplo, se `winter` já existe `winter` se tornará `winter1`.
+   >Se você mover uma página para um local onde uma página com o mesmo nome já existe, o sistema gera automaticamente uma variação do nome ao anexar um número. Por exemplo, se `winter` já existir, `winter` se tornará `winter1`.
 
 1. No estágio **Selecionar destino** do assistente, é possível:
 
@@ -354,7 +354,7 @@ O AEM oferece a funcionalidade de atualizar todos os links internos que se refer
 
    >[!NOTE]
    >
-   >Se você mover uma página para um local onde uma página com o mesmo nome já existe, o sistema gera automaticamente uma variação do nome ao anexar um número. Por exemplo, se `winter` já existe `winter` se tornará `winter1`.
+   >Se você mover uma página para um local onde uma página com o mesmo nome já existe, o sistema gera automaticamente uma variação do nome ao anexar um número. Por exemplo, se `winter` já existir, `winter` se tornará `winter1`.
 
 1. Se a página estiver vinculada ou referenciada, ou tiver sido publicada, os detalhes serão listados na etapa **Ajustar/Republicar**.
 
@@ -370,7 +370,7 @@ O AEM oferece a funcionalidade de atualizar todos os links internos que se refer
 
 >[!NOTE]
 >
->Se a página já tiver sido publicada, movê-la automaticamente desfará a publicação. Por padrão, ela será republicada quando a mudança for concluída, mas isso pode ser alterado ao desmarcar a opção **Republicar** no campo **Ajustar/Republicar** etapa.
+>Se a página já tiver sido publicada, movê-la automaticamente desfará a publicação. Por padrão, ela será republicada quando a mudança for concluída, mas isso pode ser alterado ao desmarcar o campo **Republicar** na etapa **Ajustar/Republicar**.
 
 >[!NOTE]
 >
@@ -386,11 +386,11 @@ As ações de movimentação de página são sempre processadas de forma assínc
 
   ![Mover página assíncrona](assets/asynchronous-page-move.png)
 
-O status de trabalhos assíncronos pode ser verificado no campo [**Status de trabalhos assíncronos** painel](/help/sites-administering/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) em **Navegação global** > **Ferramentas** > **Operações** > **Tarefas**
+O status de trabalhos assíncronos pode ser verificado no painel [**Status de Trabalhos Assíncronos**](/help/sites-administering/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) em **Navegação Global** > **Ferramentas** > **Operações** > **Trabalhos**
 
 >[!NOTE]
 >
->Para obter mais informações sobre o processamento assíncrono de trabalhos e como configurar o limite para ações de movimentação/renomeação de páginas, consulte o [Trabalhos assíncronos](/help/sites-administering/asynchronous-jobs.md) no guia do usuário Administração.
+>Para obter mais informações sobre o processamento assíncrono de trabalhos e como configurar o limite para ações de movimentação/renomeação de páginas, consulte o documento [Trabalhos assíncronos](/help/sites-administering/asynchronous-jobs.md) no guia do usuário de Administração.
 
 >[!NOTE]
 >
@@ -413,7 +413,7 @@ O status de trabalhos assíncronos pode ser verificado no campo [**Status de tra
    * Clique em **Excluir** para confirmar a ação:
 
       * Se a página não tiver referências, ela será excluída.
-      * Se a página tiver referências, uma caixa de mensagem informará que **Uma ou mais páginas são mencionadas.** É possível selecionar **Forçar Exclusão** ou **Cancelar**.
+      * Se a página tiver referências, uma caixa de mensagem informará que **Uma ou mais páginas são mencionadas.** Você pode selecionar **Forçar Exclusão** ou **Cancelar**.
 
 >[!NOTE]
 >

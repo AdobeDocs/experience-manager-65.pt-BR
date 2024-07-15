@@ -37,14 +37,14 @@ Você pode definir quais colunas aparecem nos resultados da pesquisa.
 
 ### Procurar uma tarefa usando um modelo de pesquisa {#search-for-a-task-using-a-search-template}
 
-1. Na página Rastreamento, na lista à esquerda, selecione **Procurar Modelos** e selecione um modelo de pesquisa.
-1. Se o modelo suportar parâmetros de pesquisa, Para restringir os parâmetros de pesquisa, preencha os campos do modelo e clique em **Pesquisar**. Exibe uma lista de todas as tarefas das quais você participou, que correspondem aos critérios de pesquisa.
+1. Na página Acompanhamento, na lista à esquerda, selecione **Pesquisar Modelos** e selecione um modelo de pesquisa.
+1. Se o modelo der suporte a parâmetros de pesquisa, Para restringir os parâmetros de pesquisa, preencha os campos do modelo e clique em **Pesquisar**. Exibe uma lista de todas as tarefas das quais você participou, que correspondem aos critérios de pesquisa.
 
 ## Exibir detalhes do processo {#view-process-details}
 
 Na página de Rastreamento, é possível selecionar um processo e visualizar seus detalhes. Você pode pesquisar os processos com base em vários parâmetros para exibir os detalhes da tarefa. Você também pode visualizar a guia Status para processos que têm vários usuários recebendo tarefas em paralelo, onde as ferramentas para revisar documentos estão habilitadas.
 
-**Status:** O status das tarefas em um processo é exibido na coluna &#39;Ação selecionada&#39; quando você clica em uma tarefa. No entanto, o status do processo não está disponível.
+**Status:** o status das tarefas em um processo é exibido na coluna &#39;Ação Selecionada&#39; quando você clica em uma tarefa. No entanto, o status do processo não está disponível.
 
 1. Selecione a instância do processo na lista de resultados da pesquisa para exibir detalhes das tarefas que fazem parte da instância do processo.
 1. Para exibir mais informações sobre uma tarefa, execute uma ou mais destas ações:

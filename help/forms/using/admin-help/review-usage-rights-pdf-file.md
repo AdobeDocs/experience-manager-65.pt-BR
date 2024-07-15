@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Ao fazer upload de um arquivo PDF para a aplicação Web Acrobat Reader DC Extensions, você pode exibir essas informações para ver se ele tem Reader estendido, os direitos de uso aplicados e as datas de expiração.
 
-1. Faça logon no aplicativo web Acrobat Reader DC Extensions em `http://[localhost]:[port]/ReaderExtensions` (onde *[porta]* é o número da porta do seu servidor de aplicativos).
+1. Faça logon no aplicativo Web Acrobat Reader DC Extensions em `http://[localhost]:[port]/ReaderExtensions` (onde *[porta]* é o número da porta do seu servidor de aplicativos).
 1. Clique em Procurar para fazer upload do arquivo PDF e, em seguida, clique em Informações. As informações são exibidas abaixo do nome do arquivo.
 
    Consulte a Ajuda das extensões do Acrobat Reader DC para obter detalhes sobre como modificar os direitos de uso do arquivo.

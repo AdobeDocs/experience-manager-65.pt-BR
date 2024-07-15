@@ -22,17 +22,17 @@ ht-degree: 1%
 >
 >A Adobe recomenda o uso do Editor SPA para projetos que exigem renderização no lado do cliente baseada em estrutura de aplicativo de página única (por exemplo, React). [Saiba mais](/help/sites-developing/spa-overview.md).
 
-A variável **`Manage App`** O bloco no Painel do aplicativo permite editar detalhes sobre o aplicativo. Para abrir a página Detalhes, clique no link **`Manage App`** link de detalhes do bloco. De dentro do **`Manage App`** você pode editar as configurações de configuração do aplicativo PhoneGap (config.xml) e preparar seu aplicativo para envio a várias lojas de aplicativos.
+O bloco **`Manage App`** no Painel de Aplicativos permite editar detalhes sobre o Aplicativo. Para abrir a página Detalhes, clique no link de detalhes do bloco **`Manage App`**. Na página **`Manage App`**, você pode editar as configurações do Aplicativo PhoneGap (config.xml) e preparar seu aplicativo para envio a várias lojas de aplicativos.
 
 ![chlimage_1-116](assets/chlimage_1-116.png)
 
-## Compreender o `Manage App` bloco {#understanding-the-manage-app-tile}
+## Entendendo o bloco `Manage App` {#understanding-the-manage-app-tile}
 
-Você pode detalhar cada bloco na **`Manage App`** mosaico para exibir ou editar detalhes clicando em &quot;...&quot; no canto inferior direito.
+Você pode detalhar cada bloco no bloco **`Manage App`** para exibir ou editar detalhes clicando em &#39;...&#39; no canto inferior direito.
 
 ### A guia Básico {#the-basic-tab}
 
-É possível editar a variável **Nome**, **Autor**, **Descrição curta**, e o **Descrição** para seu aplicativo nesta guia.
+Você pode editar o **Nome**, o **Autor**, a **Breve Descrição** e a **Descrição** do seu aplicativo nesta guia.
 
 ![chlimage_1-117](assets/chlimage_1-117.png)
 
@@ -55,7 +55,7 @@ Cada loja de aplicativos de fornecedor — por exemplo, Apple App Store ou Googl
 >
 >O aplicativo AEM Verify permite enviar capturas de tela diretamente para os detalhes do aplicativo no AEM.
 >
->Consulte [Verificação de Quickstart para AEM em dispositivo móvel](/help/mobile/phonegap-mobile-quickstart.md) para obter mais detalhes.
+>Consulte [Verificação de AEM do Quickstart para dispositivos móveis](/help/mobile/phonegap-mobile-quickstart.md) para obter mais detalhes.
 
 ![chlimage_1-118](assets/chlimage_1-118.png)
 
@@ -63,7 +63,7 @@ Cada loja de aplicativos de fornecedor — por exemplo, Apple App Store ou Googl
 
 >[!NOTE]
 >
->Depois de conhecer o **`Manage App`** bloco, consulte [Edição de metadados do aplicativo](/help/mobile/phonegap-editmetadata.md) para exibir e editar os metadados.
+>Depois de conhecer o bloco **`Manage App`**, consulte [Editar metadados do aplicativo](/help/mobile/phonegap-editmetadata.md) para exibir e editar os metadados.
 
 #### Metadados comuns {#common-metadata}
 
@@ -73,11 +73,11 @@ Há configurações e metadados comuns para todas as plataformas.
 
 Nesta seção, você define o URL do Content Update Server, a página de aterrissagem do aplicativo móvel, a versão do PhoneGap para compilação, a versão do aplicativo, o nome, a descrição e muito mais.
 
-**Versão do aplicativo** é a versão em funcionamento do aplicativo. Uma prática recomendada é usar uma notação 3 decimal e começar abaixo de 1.0.0 antes da primeira versão.
+**Versão do Aplicativo** é a versão do seu aplicativo que está funcionando. Uma prática recomendada é usar uma notação 3 decimal e começar abaixo de 1.0.0 antes da primeira versão.
 
-**Versão do PhoneGap** é a versão na qual você deseja compilar seu aplicativo com PhoneGap. A prática recomendada é acompanhar a versão atual para garantir que você obtenha os melhores e mais recentes recursos e correções de erros.
+**Versão do PhoneGap** é a versão na qual você deseja compilar seu aplicativo com o PhoneGap. A prática recomendada é acompanhar a versão atual para garantir que você obtenha os melhores e mais recentes recursos e correções de erros.
 
-**URL do servidor de atualização de conteúdo** é o URL que seu aplicativo usa para chamar para atualizações do ContentSync. Ele deve ser definido como o URL do Dispatcher ou, se não estiver usando um Dispatcher, como uma das instâncias de publicação usadas para fornecer atualizações do ContentSync ao aplicativo.
+A **URL do Servidor de Atualização de Conteúdo** é a URL que seu aplicativo usa para chamar para atualizações do ContentSync. Ele deve ser definido como o URL do Dispatcher ou, se não estiver usando um Dispatcher, como uma das instâncias de publicação usadas para fornecer atualizações do ContentSync ao aplicativo.
 
 ![chlimage_1-119](assets/chlimage_1-119.png)
 
@@ -91,7 +91,7 @@ Nesta seção, você define o URL do Content Update Server, a página de aterris
 
 Todas as plataformas definidas no config.xml do PhoneGap podem conter propriedades de plataforma personalizadas. Um desenvolvedor de AEM deve contribuir com a estrutura de conteúdo para capturar essas propriedades. Um exemplo fornecido de propriedades específicas da plataforma pode ser encontrado para o iOS.
 
-Os metadados de todas as plataformas configuradas agora são exibidos ao mesmo tempo na guia Avançado do `Manage App` bloco.
+Os metadados de todas as plataformas configuradas agora são exibidos ao mesmo tempo na guia Avançado do bloco `Manage App`.
 
 >[!NOTE]
 >
@@ -111,9 +111,9 @@ A funcionalidade de exportação é usada para fornecer uma maneira conveniente 
 
 ![chlimage_1-120](assets/chlimage_1-120.png)
 
-#### Metadados do Android™ {#android-metadata}
+#### Metadados Android™ {#android-metadata}
 
-Ao selecionar a plataforma Android™, não há metadados personalizados no momento que possam ser definidos. Ao clicar no botão de download, um arquivo zip é gerado com um arquivo de propriedades que contém todos os metadados e capturas de tela associadas.
+Ao selecionar a plataforma Android™, não há metadados personalizados neste momento que possam ser definidos. Ao clicar no botão de download, um arquivo zip é gerado com um arquivo de propriedades que contém todos os metadados e capturas de tela associadas.
 
 A funcionalidade de exportação é usada para fornecer uma maneira conveniente de coletar as capturas de tela e os metadados que podem ser transmitidos ao editor do aplicativo para entrada na loja de aplicativos específica do fornecedor.
 
@@ -123,7 +123,7 @@ A funcionalidade de exportação é usada para fornecer uma maneira conveniente 
 
 Um dos principais recursos dos aplicativos AEM é a capacidade de ter um aplicativo móvel solicitando novo conteúdo por meio do ContentSync, em que o conteúdo pode ser recursos html, páginas, vídeo, imagens, texto e muito mais. Depois que um autor de conteúdo atualiza o conteúdo e, em seguida, publica esse conteúdo, o servidor disponibiliza a atualização de conteúdo para o aplicativo móvel baixar.
 
-A propriedade URL do Servidor de atualização de conteúdo é o URL que deve apontar para uma instância de publicação, diretamente ou por meio do Dispatcher ou do CDN. O formato do URL é simplesmente:
+A propriedade Content Update Server URL é o URL que deve apontar para uma instância de publicação, diretamente ou por meio da Dispatcher ou CDN. O formato do URL é simplesmente:
 
 `https://[hostname]:[port]`
 
@@ -133,23 +133,23 @@ A propriedade URL do Servidor de atualização de conteúdo é o URL que deve ap
 
 ### A aba Plug- ins {#the-plugins-tab}
 
-A variável **Plug-ins** A guia descreve os plug-ins associados ao seu aplicativo. Essas informações são usadas para recuperar o plug-in apropriado durante uma criação.
+A guia **Plug-ins** descreve os plug-ins associados ao seu aplicativo. Essas informações são usadas para recuperar o plug-in apropriado durante uma criação.
 
 ![chlimage_1-122](assets/chlimage_1-122.png)
 
 ### A página de Capturas de Tela {#the-screenshots-tab}
 
-A variável **Capturas de tela** A guia exibe as resoluções de captura de tela compatíveis em diferentes plataformas.
+A guia **Capturas de tela** exibe as resoluções de captura de tela com suporte em diferentes plataformas.
 
 ![chlimage_1-123](assets/chlimage_1-123.png)
 
 >[!NOTE]
 >
->Para adicionar e remover capturas de tela, consulte [Edição de metadados do aplicativo](/help/mobile/phonegap-editmetadata.md).
+>Para adicionar e remover capturas de tela, consulte [Editando Metadados de Aplicativo](/help/mobile/phonegap-editmetadata.md).
 
 ### A guia Autenticação {#the-authentication-tab}
 
-A variável **Autenticação** permite que você selecione um cliente OAuth para associar ao aplicativo e permite que um desenvolvedor use a autenticação OAuth do Adobe Experience Manager.
+A guia **Autenticação** permite que você selecione um cliente OAuth para associar ao seu aplicativo e permite que um desenvolvedor use a autenticação OAuth do Adobe Experience Manager.
 
 ![chlimage_1-124](assets/chlimage_1-124.png)
 

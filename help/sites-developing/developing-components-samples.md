@@ -33,7 +33,7 @@ Para obter informações sobre a interface clássica, consulte [Componentes do A
 >Para ajudá-lo a analisar, testar e depurar seus componentes, o AEM fornece:
 >
 >* [Modo de desenvolvedor](/help/sites-developing/developer-mode.md)
->* a [estrutura para automatizar testes, com base na biblioteca Hobbes.js](/help/sites-developing/hobbes.md)
+>* uma [estrutura para automatizar testes, com base na biblioteca Hobbes.js](/help/sites-developing/hobbes.md)
 >
 
 ## Amostra de código - Como personalizar campos de diálogo {#code-sample-how-to-customize-dialog-fields}
@@ -42,12 +42,12 @@ CÓDIGO NO GITHUB
 
 Você pode encontrar o código desta página no GitHub
 
-* [Abra o projeto aem-authoring-dialog-fields-customization no GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-dialog-fields-customization)
+* [Abrir o projeto aem-authoring-dialog-fields-customization no GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-dialog-fields-customization)
 * Baixar o projeto como [um arquivo ZIP](https://codeload.github.com/Adobe-Marketing-Cloud/aem-authoring-dialog-fields-customization/zip/refs/heads/master)
 
 >[!NOTE]
 >
->Esta amostra de código está relacionada à sessão AEM Gems no [Personalizar campos de diálogo](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html).
+>Esta amostra de código está relacionada à sessão Gems do AEM em [Personalizando campos de caixa de diálogo](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html).
 
 ## Recursos relacionados {#related-resources}
 
@@ -55,10 +55,10 @@ Você pode encontrar o código desta página no GitHub
 
 Novas ações podem ser adicionadas às barras de ferramentas do componente usando a camada de edição do editor de páginas.
 
-Os detalhes, juntamente com links para a amostra de código, estão em [Adicionar nova ação a uma barra de ferramentas do componente](/help/sites-developing/customizing-page-authoring-touch.md#add-new-action-to-a-component-toolbar).
+Detalhes, juntamente com links para a amostra de código, estão em [Adicionar nova ação a uma barra de ferramentas de componente](/help/sites-developing/customizing-page-authoring-touch.md#add-new-action-to-a-component-toolbar).
 
 ### Personalização e extensão de fragmentos de conteúdo {#customizing-and-extending-content-fragments}
 
 Você pode estender o componente Fragmento de conteúdo padrão para adicionar recursos.
 
-Os detalhes estão em [Personalização e extensão de fragmentos de conteúdo](/help/sites-developing/customizing-content-fragments.md).
+Detalhes em [Personalização e extensão de fragmentos de conteúdo](/help/sites-developing/customizing-content-fragments.md).

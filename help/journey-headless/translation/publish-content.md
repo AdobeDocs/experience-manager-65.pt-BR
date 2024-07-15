@@ -66,7 +66,7 @@ A maneira mais simples de publicar as traduções é navegar até a pasta de ati
 
 Nesse caminho, você tem subpastas para cada idioma de tradução e pode escolher qual publicar.
 
-1. Ir para **Navegação** > **Assets** > **Arquivos** e abra a pasta do projeto.
+1. Vá para **Navegação** > **Assets** > **Arquivos** e abra a pasta do projeto.
 1. Aqui você vê a pasta raiz do idioma e todas as outras pastas de idioma. Selecione o idioma ou idiomas localizados que deseja publicar.
    ![Selecionar pasta de idioma](assets/select-language-folder.png)
 1. Clique em **Gerenciar publicação**.
@@ -96,14 +96,14 @@ No entanto, assim como antes, o processo é um pouco diferente se você opta por
 ### Atualizar um projeto de tradução criado automaticamente {#updating-automatic-project}
 
 1. Navegue até **Navegação** > **Assets** > **Arquivos**. Lembre-se de que o conteúdo headless no AEM é armazenado como ativos conhecidos como Fragmentos de conteúdo.
-1. Selecione a raiz do idioma do projeto. Nesse caso, `/content/dam/wknd/en` está selecionada.
-1. Clique no seletor de painéis e exiba a **Referências** painel.
+1. Selecione a raiz do idioma do projeto. Nesse caso, `/content/dam/wknd/en` está selecionado.
+1. Clique no seletor do painel e exiba o painel **Referências**.
 1. Clique em **Cópias de idioma**.
 1. Marque a caixa de seleção **Cópias de idioma**.
 1. Expanda a seção **Atualizar cópias de idioma** na parte inferior do painel de referências.
 1. Na lista suspensa **Projeto**, selecione **Adicionar a um projeto de tradução existente**.
 1. Na lista suspensa **Projeto de tradução existente**, selecione o projeto criado para a tradução inicial.
-1. Clique em **Início**.
+1. Clique em **Iniciar**.
 
 ![Adicionar itens ao projeto de tradução existente](assets/add-to-existing-project.png)
 
@@ -131,16 +131,16 @@ Para atualizar uma tradução, você pode adicionar um novo trabalho ao projeto 
 
 1. Navegue até **Navegação** > **Projetos**.
 1. Clique no projeto que você deve atualizar.
-1. Clique em **Adicionar** na parte superior da janela.
-1. No **Adicionar mosaico** clique em **Tarefa de tradução** e depois **Enviar**.
+1. Clique no botão **Adicionar**, na parte superior da janela.
+1. Na janela **Adicionar Bloco**, clique em **Trabalho de Tradução** e depois em **Enviar**.
 
    ![Adicionar mosaico](assets/add-translation-job-tile.png)
 
-1. No cartão do novo trabalho de tradução, clique no botão divisa na parte superior do cartão e selecione **Atualizar Destino** para definir o idioma de destino do novo job.
+1. No cartão do novo trabalho de tradução, clique no botão divisa na parte superior do cartão e selecione **Atualizar destino** para definir o idioma de destino da nova tarefa.
 
    ![Atualizar destino](assets/update-target.png)
 
-1. No **Selecionar idioma de destino** , utilize o menu suspenso para selecionar o idioma e clique em **Concluído**.
+1. Na caixa de diálogo **Selecionar idioma de destino**, use o menu suspenso para selecionar o idioma e clique em **Concluído**.
 
    ![Selecionar idioma de destino](assets/select-target-language.png)
 

@@ -31,7 +31,7 @@ Os módulos de formulários AEM (por exemplo, Forms, Rights Management, Output) 
 >
 > É recomendável usar o comando &quot;Ctrl + C&quot; para reiniciar o SDK. Reiniciar o SDK do AEM usando métodos alternativos, por exemplo, parar processos Java, pode levar a inconsistências no ambiente de desenvolvimento do AEM.
 
-1. No console de administração, clique em **Serviços** > **Aplicativos e serviços** > **Gerenciamento de serviços**.
+1. No console de administração, clique em **Serviços** > **Aplicativos e Serviços** > **Gerenciamento de Serviços**.
 1. Na página Gerenciamento de Serviços, marque a caixa de seleção ao lado do serviço a ser interrompido ou iniciado e clique em Interromper ou Iniciar.
 
 ## Iniciar ou interromper serviços para o servidor de aplicativos e o banco de dados {#start-or-stop-services-for-the-application-server-and-database}
@@ -41,14 +41,14 @@ Uma implementação completa dos formulários AEM inclui um servidor de aplicati
 * *`[application server]`* para formulários AEM
 * *`[database]`* para formulários AEM
 
-No Windows, esses serviços podem ser acessados por meio da **Ferramentas administrativas** > **Painel Serviços**. Por exemplo, se você instalou formulários AEM no JBoss usando o método turnkey, os seguintes serviços estão disponíveis no sistema:
+No Windows, esses serviços podem ser acessados por meio das **Ferramentas Administrativas** > **Painel de serviços**. Por exemplo, se você instalou formulários AEM no JBoss usando o método turnkey, os seguintes serviços estão disponíveis no sistema:
 
 * JBoss para o Adobe Experience Manager Forms
 * MySQL para Adobe Experience Manager Forms
 
 Inicie ou interrompa esses serviços selecionando-os na lista do painel Serviços e clicando no botão de ação apropriado no painel.
 
-No UNIX® ou Linux, digite o seguinte texto a partir de uma linha de comando, onde *`[service name]`* é o nome do serviço que você está verificando:
+No UNIX® ou Linux, digite o seguinte texto em uma linha de comando, onde *`[service name]`* é o nome do serviço que você está verificando:
 
 ```java
      ps -A | grep [service name]

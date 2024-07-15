@@ -22,11 +22,11 @@ Esta página apresenta melhorias e refinamentos incrementais nos recursos de ger
 
 Foram adicionadas opções para melhorar a produtividade, trabalhando com projetos de tradução, como promover e excluir automaticamente inicializações de tradução e agendar a execução recorrente de um projeto de tradução.
 
-1. No seu projeto de tradução, clique nas reticências na parte inferior da **Resumo da tradução** bloco.
+1. No seu projeto de tradução, clique nas reticências na parte inferior do bloco **Resumo da tradução**.
 
    ![screen_shot_2018-04-19at222622](assets/screen_shot_2018-04-19at222622.jpg)
 
-1. Alterne para a **Avançado** guia. Na parte inferior, é possível selecionar **Promover inicializações de tradução automaticamente**.
+1. Alterne para a guia **Avançado**. Na parte inferior, você pode selecionar **Promover inicializações de tradução automaticamente**.
 
    ![screen_shot_2018-04-19at223430](assets/screen_shot_2018-04-19at223430.jpg)
 
@@ -42,15 +42,15 @@ Foram adicionadas opções para melhorar a produtividade, trabalhando com projet
 
 É possível configurar vários idiomas de destino em um projeto de tradução para reduzir o número total de projetos de tradução criados.
 
-1. No seu projeto de tradução, clique nos pontos na parte inferior da **Resumo da tradução** bloco.
+1. No seu projeto de tradução, clique nos pontos na parte inferior do bloco **Resumo da tradução**.
 
    ![screen_shot_2018-04-19at222622](assets/screen_shot_2018-04-19at222622.jpg)
 
-1. Alterne para a **Avançado** guia. É possível adicionar vários idiomas em **Idioma de destino**.
+1. Alterne para a guia **Avançado**. Você pode adicionar vários idiomas em **Idioma de Destino**.
 
    ![screen_shot_2018-04-22at212601](assets/screen_shot_2018-04-22at212601.jpg)
 
-1. Como alternativa, se estiver iniciando a tradução por meio do painel de referências no Sites, adicione os idiomas e selecione **Criar projeto de tradução em vários idiomas**.
+1. Como alternativa, se você estiver iniciando a tradução por meio do painel de referências no Sites, adicione os idiomas e selecione **Criar projeto de tradução entre vários idiomas**.
 
    ![screen_shot_2018-04-22at212941](assets/screen_shot_2018-04-22at212941.jpg)
 
@@ -66,7 +66,7 @@ As edições manuais de conteúdo traduzido podem ser sincronizadas com o Sistem
 
    ![screen_shot_2018-04-22at234430](assets/screen_shot_2018-04-22at234430.jpg)
 
-1. Uma exibição de lista mostra uma comparação lado a lado da origem e da tradução para cada componente de texto que foi editado. Selecione quais atualizações de tradução devem ser sincronizadas com a Memória de tradução e selecione **Atualizar memória**.
+1. Uma exibição de lista mostra uma comparação lado a lado da origem e da tradução para cada componente de texto que foi editado. Selecione quais atualizações de tradução devem ser sincronizadas com a memória de tradução e selecione **Atualizar memória**.
 
    ![screen_shot_2018-04-22at235024](assets/screen_shot_2018-04-22at235024.jpg)
 
@@ -98,7 +98,7 @@ As raízes de idioma agora podem ser agrupadas em nós, por exemplo, por região
 >* `/content/we-retail/language-masters/en`
 >* `/content/we-retail/language-masters/americas/central-america/es`
 >
->Este `es` a cópia de idioma não será detectada, pois tem 2 níveis (américas/américa central) longe do `en` nó.
+>Esta cópia de idioma `es` não será detectada, pois tem 2 níveis (américas/américa central) longe do nó `en`.
 
 >[!NOTE]
 >
@@ -108,18 +108,18 @@ As raízes de idioma agora podem ser agrupadas em nós, por exemplo, por região
 
 Uma propriedade agora pode ser selecionada na exibição de lista dos sites que mostra se uma página foi traduzida, está em tradução ou ainda não foi traduzida. Para exibi-lo:
 
-1. No Sites, alterne para **Exibição em lista.**
+1. Em Sites, alterne para **Exibição em Lista.**
 
    ![screen_shot_2018-04-23at130646](assets/screen_shot_2018-04-23at130646.jpg)
 
-1. Clique em **Configurações de exibição**.
+1. Clique em **Exibir configurações**.
 
    ![screen_shot_2018-04-23at130844](assets/screen_shot_2018-04-23at130844.jpg)
 
-1. Marcar **Traduzido** caixa de seleção em **Tradução** e clique em **Atualizar**.
+1. Marque a caixa de seleção **Traduzido** em **Tradução** e clique em **Atualização**.
 
    ![screen_shot_2018-04-23at130955](assets/screen_shot_2018-04-23at130955.jpg)
 
-Agora você pode ver uma **Traduzido** coluna que mostra o status de tradução das páginas.
+Agora você pode ver uma coluna **Traduzido** que mostra o status de tradução das páginas.
 
 ![screen_shot_2018-04-23at133821](assets/screen_shot_2018-04-23at133821.jpg)

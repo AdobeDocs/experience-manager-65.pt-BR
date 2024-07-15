@@ -21,11 +21,11 @@ ht-degree: 7%
 | AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/translate-assets.html?lang=en) |
 | AEM 6.5 | Este artigo |
 
-[!DNL Adobe Experience Manager Assets] O permite automatizar fluxos de trabalho de tradução em ativos (incluindo binários, metadados e tags) para gerar ativos em outros idiomas para uso em projetos multilíngues.
+O [!DNL Adobe Experience Manager Assets] permite automatizar fluxos de trabalho de tradução em ativos (incluindo binários, metadados e tags) para gerar ativos em outros idiomas para uso em projetos multilíngues.
 
-Para automatizar fluxos de trabalho de tradução, você integra provedores de serviços de tradução com [!DNL Experience Manager] e criar projetos para traduzir ativos em vários idiomas. [!DNL Experience Manager] O oferece suporte a fluxos de trabalho de tradução humana e automática.
+Para automatizar fluxos de trabalho de tradução, você integra provedores de serviços de tradução ao [!DNL Experience Manager] e cria projetos para traduzir ativos em vários idiomas. [!DNL Experience Manager] dá suporte a fluxos de trabalho de tradução humana e de máquina.
 
-Tradução humana: os ativos traduzidos são retornados e importados para o [!DNL Experience Manager]. Quando seu provedor de tradução é integrado ao [!DNL Experience Manager], os ativos são automaticamente enviados entre [!DNL Experience Manager] e o provedor de tradução.
+Tradução humana: os ativos traduzidos são retornados e importados para [!DNL Experience Manager]. Quando seu provedor de tradução é integrado ao [!DNL Experience Manager], os ativos são automaticamente enviados entre o [!DNL Experience Manager] e o provedor de tradução.
 
 Tradução automática: o serviço de tradução automática traduz imediatamente os metadados e as tags dos ativos.
 
@@ -39,4 +39,4 @@ A tradução de ativos inclui o seguinte:
 
 Se o seu provedor de serviços de tradução não fornecer um conector para integração com o [!DNL Experience Manager], use um [processo alternativo](/help/sites-administering/tc-manage.md#exporting-a-translation-job).
 
-Consulte também, [Criar projetos de tradução para fragmentos de conteúdo](creating-translation-projects-for-content-fragments.md).
+Consulte também [Criar projetos de tradução para fragmentos de conteúdo](creating-translation-projects-for-content-fragments.md).

@@ -1,5 +1,5 @@
 ---
-title: Início rápido da API Java (SOAP) do LiveCycleProcess
+title: Início rápido do LiveCycleProcess Java API(SOAP)
 description: Use o LiveCycleProcess Java API (SOAP) Quick Start para pesquisar instâncias de processos, suspender instâncias de processos, iniciar instâncias suspensas de processos, encerrar instâncias de processos, limpar dados de processos e recuperar o status de um trabalho.
 contentOwner: admin
 content-type: reference
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Início rápido da API Java (SOAP) do LiveCycleProcess {#livecycleprocess-java-api-soap-quick-start}
 
-O Início rápido da API (SOAP) do Java está disponível para processos. A *instância do processo* é uma ocorrência de um processo específico que foi iniciado por um método de chamada, como a API de chamada, ou a partir do espaço de trabalho.
+O Início rápido da API (SOAP) do Java está disponível para processos. Uma *instância de processo* é uma ocorrência de um processo específico que foi iniciado por um método de invocação, como a API de Invocação ou a partir do Workspace.
 
 [Início rápido (modo SOAP): pesquisa por instâncias de processo usando a API Java](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-searching-for-process-instances-using-the-java-api)
 
@@ -40,7 +40,7 @@ As operações do AEM Forms podem ser executadas usando a API altamente tipada d
 
 ## Início rápido (modo SOAP): pesquisa por instâncias de processo usando a API Java {#quick-start-soap-mode-searching-for-process-instances-using-the-java-api}
 
-O exemplo de código Java a seguir pesquisa instâncias de processo que são baseadas no *Empréstimo hipotecário - Pré-construído* processo.
+O exemplo de código Java a seguir pesquisa instâncias de processo baseadas no processo *MortgageLoan - Prebuild*.
 
 ```java
  /*
@@ -429,7 +429,7 @@ O exemplo de código Java a seguir finaliza uma instância de processo com o val
 
 ## Início rápido (modo SOAP): limpeza de dados do processo usando a API Java {#quick-start-soap-mode-purging-process-data-using-the-java-api}
 
-O código Java a seguir limpa dados de um processo chamado *SecureDocument*. É usado um filtro que especifica a limpeza de dados das instâncias de processo em que a variável de processo chamada *inValue* é maior que 200.
+O código Java a seguir limpa dados de um processo chamado *SecureDocument*. É usado um filtro que especifica a limpeza de dados para as instâncias de processo em que a variável de processo *inValue* é maior que 200.
 
 ```java
  /*

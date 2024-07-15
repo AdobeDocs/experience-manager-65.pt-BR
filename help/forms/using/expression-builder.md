@@ -24,7 +24,7 @@ Usando o Construtor de expressões, você pode criar expressões ou condições 
 
 O Construtor de expressões usa internamente bibliotecas JSP EL, de modo que a expressão adere à sintaxe JSPEL. Para obter mais informações, consulte [Expressões de exemplo](#exampleexpressions).
 
-![Construtor de expressões](assets/expressionbuilder.png)
+![Construtor de Expressões](assets/expressionbuilder.png)
 
 ### Operadores {#operators}
 
@@ -35,12 +35,12 @@ Os operadores disponíveis para uso em expressões estão disponíveis na barra 
 Estes são alguns exemplos de JSP EL usados com frequência que você pode usar na solução de Gerenciamento de correspondência:
 
 * Para adicionar dois números: ${number1 + number2}
-* Para concatenar duas strings: ${str1} ${str2}
+* Para concatenar duas cadeias de caracteres: ${str1} ${str2}
 * Para comparar dois números: ${age &lt; 18}
 
-Você pode encontrar mais informações na [Especificação JSP EL](https://download.oracle.com/otn-pub/jcp/jsp-2.1-fr-spec-oth-JSpec/jsp-2_1-fr-spec-el.pdf). O gerenciador de expressões do lado do cliente não suporta determinadas variáveis e funções na especificação JSP EL, especificamente:
+Você pode encontrar mais informações na [especificação JSP EL](https://download.oracle.com/otn-pub/jcp/jsp-2.1-fr-spec-oth-JSpec/jsp-2_1-fr-spec-el.pdf). O gerenciador de expressões do lado do cliente não suporta determinadas variáveis e funções na especificação JSP EL, especificamente:
 
-* Índices de coleção e chaves de mapa (usando o método [] notação) não são suportados em nomes de variáveis para expressões avaliadas no lado do cliente.
+* Índices de coleção e chaves de mapa (usando a notação []) não têm suporte em nomes de variáveis para expressões avaliadas no lado do cliente.
 * A seguir estão os tipos de parâmetros ou tipos de retorno das funções usadas em expressões:
 
    * java.lang.String
@@ -78,7 +78,7 @@ Você pode criar um pacote personalizado para exportar suas próprias funções 
 1. Defina uma interface para o serviço OSGi contendo métodos que estão sendo exportados para uso pelo Gerenciador de Expressões.
 1. Declare os métodos na interface A e anote-os com a anotação @ServiceMethod (com.adobe.exm.expeval.ServiceMethod). O Gerenciador de expressões ignora todos os métodos não anotados. A anotação ServiceMethod tem os seguintes atributos opcionais que também podem ser especificados:
 
-   1. **Ativado**: determina se esse método está ativado. O Gerenciador de Expressões ignora métodos desativados.
+   1. **Habilitado**: determina se este método está habilitado. O Gerenciador de Expressões ignora métodos desativados.
    1. **familyId**: especifica a família (grupo) do método. Se estiver vazio, o Gerenciador de expressões presume que o método pertence à família padrão. Não há registro de famílias (exceto a padrão) a partir das quais as funções são escolhidas. O Gerenciador de expressão cria dinamicamente o registro, unindo todas as IDs de família especificadas por todas as funções exportadas pelos vários pacotes. Certifique-se de que a ID especificada aqui possa ser lida razoavelmente, pois é exibida também na interface do usuário da criação de expressões.
    1. **displayName**: um nome legível para a função. Esse nome é usado para fins de exibição na interface do usuário de criação. Se estiver vazio, o Gerenciador de Expressões construirá um nome padrão usando o prefixo da função e o nome local.
    1. **Descrição**: uma descrição detalhada da função. Essa descrição é usada para fins de exibição na interface do usuário de criação. Se estiver vazio, o Gerenciador de Expressões construirá uma descrição padrão usando o prefixo da função e o nome local.
@@ -126,7 +126,7 @@ Você pode criar um pacote personalizado para exportar suas próprias funções 
   @org.apache.felix.scr.annotations.Property(name = "exm.service", boolValue = true)})
 ```
 
-A entrada exm.service=true instrui o Gerenciador de expressão de que o serviço contém funções remotas adequadas para uso em expressões. A variável &lt;service_id> o valor deve ser um identificador Java válido (alfanumérico,$, _ sem outros caracteres especiais). Esse valor, com o prefixo da palavra-chave REMOTE_, forma o prefixo que é usado dentro das expressões. Por exemplo, uma interface com um método bar() anotado e a ID de serviço foo nas propriedades de serviço, pode ser referenciada dentro de expressões usando REMOTE_foo:bar().
+A entrada exm.service=true instrui o Gerenciador de expressão de que o serviço contém funções remotas adequadas para uso em expressões. O valor &lt;service_id> deve ser um identificador Java válido (alfanumérico,$, _ sem outros caracteres especiais). Esse valor, com o prefixo da palavra-chave REMOTE_, forma o prefixo que é usado dentro das expressões. Por exemplo, uma interface com um método bar() anotado e a ID de serviço foo nas propriedades de serviço, pode ser referenciada dentro de expressões usando REMOTE_foo:bar().
 
 ```java
 package mergeandfuse.com;

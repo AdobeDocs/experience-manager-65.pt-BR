@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Início Rápido da API de Serviço de Backup e Restauração {#backup-and-restore-service-apiquick-starts}
 
-**Os exemplos e amostras neste documento são somente para AEM Forms no ambiente JEE.**
+**Exemplos e exemplos neste documento são somente para AEM Forms no ambiente JEE.**
 
 O Java™ API Quick Start (SOAP) está disponível para a API de serviço de backup e restauração.
 
@@ -34,7 +34,7 @@ As operações do AEM Forms podem ser executadas usando a API altamente tipada d
 
 ## Início rápido (modo SOAP): entrando no modo de backup usando a API Java™ {#quick-start-soap-mode-entering-backup-mode-using-the-java-api}
 
-O seguinte exemplo de código Java™ entra no modo de backup com um rótulo exclusivo para duas horas. Depois que o tempo de backup expirar ou se o modo de backup for explicitamente encerrado, o Forms Server retornará para a limpeza de arquivos do Armazenamento global de documentos. (Consulte [Entrando no modo de backup no servidor do Forms](/help/forms/developing/preparing-aem-forms-backup.md#entering-backup-mode-on-the-forms-server).)
+O seguinte exemplo de código Java™ entra no modo de backup com um rótulo exclusivo para duas horas. Depois que o tempo de backup expirar ou se o modo de backup for explicitamente encerrado, o Forms Server retornará para a limpeza de arquivos do Armazenamento global de documentos. (Consulte [Entrando no Modo de Backup no Forms Server](/help/forms/developing/preparing-aem-forms-backup.md#entering-backup-mode-on-the-forms-server).)
 
 ```java
  /*
@@ -149,7 +149,7 @@ O seguinte exemplo de código Java™ entra no modo de backup com um rótulo exc
 
 ## Início rápido (modo SOAP): saindo do modo de backup usando a API Java™ {#quick-start-soap-mode-leaving-backup-mode-using-the-java-api}
 
-O seguinte exemplo de código Java™ faz com que um Forms Server saia do modo de backup e retorne à limpeza de arquivos do Armazenamento global de documentos. (Consulte [Saindo do modo de backup no servidor do Forms](/help/forms/developing/preparing-aem-forms-backup.md#leaving-backup-mode-on-the-forms-server).)
+O seguinte exemplo de código Java™ faz com que um Forms Server saia do modo de backup e retorne à limpeza de arquivos do Armazenamento global de documentos. (Consulte [Deixando o Modo de Backup no Forms Server](/help/forms/developing/preparing-aem-forms-backup.md#leaving-backup-mode-on-the-forms-server).)
 
 ```java
  /*

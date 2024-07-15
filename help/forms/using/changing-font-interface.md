@@ -21,7 +21,7 @@ ht-degree: 1%
 
 Você pode alterar a fonte exibida no espaço de trabalho do AEM Forms. As fontes usadas em uma seção específica da interface do usuário são definidas na seção correspondente da folha de estilos. É possível alterar as fontes na interface do usuário seletivamente.
 
-Siga as [Etapas genéricas para personalização do espaço de trabalho do AEM Forms](../../forms/using/generic-steps-html-workspace-customization.md) e, dependendo das suas necessidades, siga as etapas para personalizar CSS, HTML ou ambos.
+Siga as [etapas genéricas para personalização do espaço de trabalho do AEM Forms](../../forms/using/generic-steps-html-workspace-customization.md) e, dependendo de seus requisitos, siga as etapas para personalizar CSS, HTML ou ambos.
 
 1. Alterar ou adicionar a família de fontes em um estilo existente.
 1. Altere ou adicione a família de fontes integrada para o elemento HTML.
@@ -40,7 +40,7 @@ Por exemplo, para alterar a fonte do texto de âncora da barra de navegação su
       }
       ```
 
-   1. Para adicionar a família de fontes em linha para o elemento HTML, copie a variável `/libs/ws/js/runtime/templates/appnavigation.html` arquivo para `/apps/ws/js/runtime/templates/appnavigation.html`.
+   1. Para adicionar a família de fontes em linha para o elemento HTML, copie o arquivo `/libs/ws/js/runtime/templates/appnavigation.html` para `/apps/ws/js/runtime/templates/appnavigation.html`.
 
       Atualize o arquivo /apps/ws/js/runtime/templates/appnavigation.html da seguinte maneira:
 
@@ -51,7 +51,7 @@ Por exemplo, para alterar a fonte do texto de âncora da barra de navegação su
       <li class="preference"><a href="#/preferences" title="<%= $.t('index.header.topnav.preferences.detail')%>" style="font-family:Courier New;" ><%= $.t('index.header.topnav.preferences.name')%></a></li>
       ```
 
-      Abra o arquivo /apps/ws/js/registry.js para edição e substituição `text!/lc/libs/ws/js/runtime/templates/appnavigation.html` com `text!/lc/apps/ws/js/runtime/templates/appnavigation.html`.
+      Abra o arquivo /apps/ws/js/registry.js para edição e substitua `text!/lc/libs/ws/js/runtime/templates/appnavigation.html` por `text!/lc/apps/ws/js/runtime/templates/appnavigation.html`.
 
    1. Para adicionar um estilo que defina a família de fontes, adicione o seguinte no arquivo newStyle.css em /apps/ws/css.
 
@@ -80,6 +80,6 @@ Por exemplo, para alterar a fonte do texto de âncora da barra de navegação su
 
 Barra de navegação superior antes da personalização da fonte
 
-![change_font_after](assets/change_font_after.png)
+![alterar_fonte_após](assets/change_font_after.png)
 
 Barra de navegação superior após a personalização da primeira guia

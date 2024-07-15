@@ -22,7 +22,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->A atualização requer tempo de inatividade para o nível de Autor, pois a maioria das atualizações do Adobe Experience Manager (AEM) é realizada no local. Seguindo essas práticas recomendadas, você pode minimizar ou eliminar o tempo de inatividade do nível de publicação.
+>A atualização requer tempo de inatividade para o nível de Autor, pois a maioria das atualizações do Adobe Experience Manager (AEM) é realizada no local. Seguindo essas práticas recomendadas, você pode minimizar ou eliminar o tempo de inatividade no nível da Publish.
 
 Ao atualizar os ambientes do AEM, você deve considerar as diferenças na abordagem entre atualizar os ambientes do autor ou de publicação para minimizar o tempo de inatividade dos autores e usuários finais. Esta página descreve o procedimento de alto nível para atualizar uma topologia de AEM em execução atualmente em uma versão do AEM 6.x. Como o processo difere entre os níveis de criação e publicação e implantações baseadas em Mongo e TarMK, cada nível e microkernel foi listado em uma seção separada. Ao executar a implantação, o Adobe recomenda primeiro atualizar o ambiente do autor, determinar o sucesso e prosseguir para os ambientes de publicação.
 
@@ -42,7 +42,7 @@ A topologia presumida para esta seção consiste em um servidor de Autores em ex
 
 ### Preparação de atualização {#upgrade-preparation}
 
-![upgrade-preparation-author](assets/upgrade-preparation-author.png)
+![autor-preparação-atualização](assets/upgrade-preparation-author.png)
 
 1. Interrompa a criação de conteúdo.
 
@@ -50,14 +50,14 @@ A topologia presumida para esta seção consiste em um servidor de Autores em ex
 
 1. Desative os agentes de replicação no autor.
 
-1. Execute o [tarefas de manutenção pré-atualização](/help/sites-deploying/pre-upgrade-maintenance-tasks.md).
+1. Execute as [tarefas de manutenção de pré-atualização](/help/sites-deploying/pre-upgrade-maintenance-tasks.md).
 
 ### Execução de atualização {#upgrade-execution}
 
-![execute_upgrade](assets/execute_upgrade.jpg)
+![executar_atualização](assets/execute_upgrade.jpg)
 
-1. Execute o [atualização no local](/help/sites-deploying/in-place-upgrade.md).
-1. Atualizar o módulo Dispatcher *se necessário*.
+1. Execute a [atualização no local](/help/sites-deploying/in-place-upgrade.md).
+1. Atualize o módulo Dispatcher *se necessário*.
 
 1. O controle de qualidade valida a atualização.
 
@@ -85,9 +85,9 @@ A topologia presumida para esta seção consiste em um servidor de Autores em ex
 
 ### Topologia Inicial {#starting-topology-1}
 
-A topologia presumida para esta seção consiste em um cluster de Autores MongoMK com pelo menos duas instâncias de Autores AEM, apoiadas por pelo menos dois bancos de dados MongoMK. Todas as instâncias de Autor compartilham um armazenamento de dados. Essas etapas devem se aplicar aos armazenamentos de dados S3 e File. A replicação ocorre dos servidores do autor para o farm de publicação TarMK.
+A topologia presumida para esta seção consiste em um cluster de Autores MongoMK com pelo menos duas instâncias de Autores AEM, apoiadas por pelo menos dois bancos de dados MongoMK. Todas as instâncias de Autor compartilham um armazenamento de dados. Essas etapas devem se aplicar aos armazenamentos de dados S3 e File. A replicação ocorre dos servidores do autor para o farm do Publish TarMK.
 
-![topologia de mongo](assets/mongo-topology.jpg)
+![topologia-mongo](assets/mongo-topology.jpg)
 
 ### Preparação de atualização {#upgrade-preparation-1}
 
@@ -97,18 +97,18 @@ A topologia presumida para esta seção consiste em um cluster de Autores MongoM
 1. Clonar o armazenamento de dados para backup.
 1. Interrompa todas as instâncias de autor do AEM, exceto uma instância de autor principal.
 1. Remova todos os nós MongoDB, exceto um do conjunto de réplicas, sua instância Mongo primária.
-1. Atualize o `DocumentNodeStoreService.cfg` no Autor principal para refletir seu único conjunto de réplicas do membro.
+1. Atualize o arquivo `DocumentNodeStoreService.cfg` no Autor principal para refletir seu único conjunto de réplicas membro.
 1. Reinicie o Author principal para garantir que ele seja reiniciado corretamente.
 1. Desative os agentes de replicação no autor principal.
-1. Executar [tarefas de manutenção pré-atualização](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) na instância primária do Autor.
+1. Execute [tarefas de manutenção de pré-atualização](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) na instância de Autor primária.
 1. Se necessário, atualize o MongoDB na instância primária do Mongo para a versão 3.2 com o WiredTiger.
 
 ### Execução de atualização {#Upgrade-execution-1}
 
-![mongo-execution](assets/mongo-execution.jpg)
+![execução-mongo](assets/mongo-execution.jpg)
 
-1. Executar um [atualização no local](/help/sites-deploying/in-place-upgrade.md) no Autor principal.
-1. Atualizar o Dispatcher ou o Módulo Web *se necessário*.
+1. Execute uma [atualização no local](/help/sites-deploying/in-place-upgrade.md) no Autor principal.
+1. Atualize o Dispatcher ou o Módulo Web *se necessário*.
 1. O controle de qualidade valida a atualização.
 
 ### Se bem-sucedido {#if-successful-1}
@@ -119,7 +119,7 @@ A topologia presumida para esta seção consiste em um cluster de Autores MongoM
 
 1. Recrie os nós MongoDB que foram removidos do cluster.
 
-1. Atualize o `DocumentNodeStoreService.cfg` para refletir o conjunto completo de réplicas.
+1. Atualize os arquivos `DocumentNodeStoreService.cfg` para refletir o conjunto de réplicas completo.
 
 1. Reinicie as instâncias do Autor, uma de cada vez.
 
@@ -127,7 +127,7 @@ A topologia presumida para esta seção consiste em um cluster de Autores MongoM
 
 ### Se Não Tiver Êxito (Reversão)  {#if-unsuccessful-rollback-2}
 
-![mongo-rollback](assets/mongo-rollback.jpg)
+![reversão mongo](assets/mongo-rollback.jpg)
 
 1. Reconfigure as instâncias secundárias do Autor para se conectarem ao armazenamento de dados clonado.
 
@@ -137,61 +137,61 @@ A topologia presumida para esta seção consiste em um cluster de Autores MongoM
 
 1. Inicie as instâncias secundárias do Mongo com uma delas como a nova primária.
 
-1. Configure o `DocumentNodeStoreService.cfg` Arquivos nas instâncias secundárias do Autor para apontar para o conjunto de réplicas de instâncias Mongo ainda não atualizadas.
+1. Configure os arquivos `DocumentNodeStoreService.cfg` nas instâncias secundárias do Autor para apontar para o conjunto de réplicas das instâncias Mongo ainda não atualizadas.
 
 1. Inicie as instâncias secundárias do Autor.
 
 1. Limpe as instâncias do autor atualizadas, o nó Mongo e o armazenamento de dados.
 
-## Farm de publicação do TarMK {#tarmk-publish-farm}
+## Farm do Publish TarMK {#tarmk-publish-farm}
 
-### Farm de publicação do TarMK {#tarmk-publish-farm-1}
+### Farm do Publish TarMK {#tarmk-publish-farm-1}
 
-A topologia assumida para esta seção consiste em duas instâncias de publicação TarMK, lideradas pelos Dispatchers que, por sua vez, são liderados por um balanceador de carga. A replicação ocorre do servidor do autor para o farm de publicação TarMK.
+A topologia assumida para esta seção consiste em duas instâncias de publicação TarMK, lideradas pelos Dispatchers que, por sua vez, são liderados por um balanceador de carga. A replicação ocorre do servidor do autor para o farm do Publish TarMK.
 
 ![tarmk-pub-farmv5](assets/tarmk-pub-farmv5.png)
 
 ### Execução de atualização {#upgrade-execution-2}
 
-![upgrade-publish2](assets/upgrade-publish2.png)
+![publicação-atualização2](assets/upgrade-publish2.png)
 
-1. Pare o tráfego para a instância de Publicação 2 no balanceador de carga.
-1. Executar [manutenção pré-atualização](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) em Publicar 2.
-1. Executar um [atualização no local](/help/sites-deploying/in-place-upgrade.md) em Publicar 2.
-1. Atualizar o Dispatcher ou o Módulo Web *se necessário*.
+1. Pare o tráfego para a instância do Publish 2 no balanceador de carga.
+1. Execute a [manutenção de pré-atualização](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) no Publish 2.
+1. Execute uma [atualização no local](/help/sites-deploying/in-place-upgrade.md) no Publish 2.
+1. Atualize o Dispatcher ou o Módulo Web *se necessário*.
 1. Limpe o cache do Dispatcher.
-1. O controle de qualidade valida a Publicação 2 por meio do Dispatcher, atrás do firewall.
-1. Desligar Publicação 2.
-1. Copie a instância Publish 2.
-1. Iniciar publicação 2.
+1. O controle de qualidade valida o Publish 2 por meio da Dispatcher, atrás do firewall.
+1. Encerre o Publish 2.
+1. Copie a instância do Publish 2.
+1. Inicie o Publish 2.
 
 ### Se bem-sucedido {#if-successful-2}
 
-![upgrade-publish1](assets/upgrade-publish1.png)
+![publicação-atualização1](assets/upgrade-publish1.png)
 
-1. Ative o tráfego para a Publicação 2.
-1. Interromper o tráfego para a Publicação 1.
-1. Interrompa a instância do Publish 1.
-1. Substitua a instância de Publicação 1 por uma cópia de Publicação 2.
-1. Atualizar o Dispatcher ou o Módulo Web *se necessário*.
-1. Limpe o cache do Dispatcher para Publicação 1.
-1. Iniciar publicação 1.
-1. O controle de qualidade valida a Publicação 1 por meio do Dispatcher, atrás do firewall.
+1. Ative o tráfego para o Publish 2.
+1. Pare o tráfego para o Publish 1.
+1. Pare a instância do Publish 1.
+1. Substitua a instância do Publish 1 por uma cópia do Publish 2.
+1. Atualize o Dispatcher ou o Módulo Web *se necessário*.
+1. Limpe o cache do Dispatcher para o Publish 1.
+1. Inicie o Publish 1.
+1. O controle de qualidade valida o Publish 1 por meio da Dispatcher, atrás do firewall.
 
 ### Se Não Tiver Êxito (Reversão) {#if-unsuccessful-rollback-1}
 
-![pub_rollback](assets/pub_rollback.jpg)
+![reversão_do_pub](assets/pub_rollback.jpg)
 
-1. Criar uma cópia de Publicar 1.
-1. Substitua a instância de Publicação 2 por uma cópia de Publicação 1.
-1. Limpe o cache do Dispatcher para Publicação 2.
-1. Iniciar publicação 2.
-1. O controle de qualidade valida a Publicação 2 por meio do Dispatcher, atrás do firewall.
-1. Ative o tráfego para a Publicação 2.
+1. Crie uma cópia do Publish 1.
+1. Substitua a instância do Publish 2 por uma cópia do Publish 1.
+1. Limpe o cache do Dispatcher para o Publish 2.
+1. Inicie o Publish 2.
+1. O controle de qualidade valida o Publish 2 por meio da Dispatcher, atrás do firewall.
+1. Ative o tráfego para o Publish 2.
 
 ## Etapas finais de atualização {#final-upgrade-steps}
 
-1. Ative o tráfego para Publicar 1.
+1. Ative o tráfego para o Publish 1.
 1. O controle de qualidade executa a validação final de um URL público.
 1. Ative os agentes de replicação no ambiente do Autor.
 1. Retomar a criação de conteúdo.

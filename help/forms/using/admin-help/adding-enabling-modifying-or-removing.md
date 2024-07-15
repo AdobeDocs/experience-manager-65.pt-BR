@@ -62,7 +62,7 @@ Se você estiver tendo problemas com os serviços do, desative os endpoints asso
 
    >[!NOTE]
    >
-   >Não inclua um caractere &lt; no nome ou descrição porque ele truncará o nome ou a descrição exibida no Espaço de trabalho.
+   >Não inclua um caractere &lt; no nome ou na descrição porque ele truncará o nome ou a descrição exibida no Workspace.
 
 1. Para salvar as alterações, clique em Atualizar.
 

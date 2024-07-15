@@ -21,7 +21,7 @@ O AEM Forms fornece APIs que você pode usar para consultar dados de formulário
 
 >[!NOTE]
 >
->Os usuários que chamarão as APIs devem ser adicionados ao grupo de revisores, conforme descrito em [Associar revisores de envio a um formulário](/help/forms/using/adding-reviewers-form.md).
+>Os usuários que chamarão as APIs devem ser adicionados ao grupo de revisores conforme descrito em [Associando revisores de envio a um formulário](/help/forms/using/adding-reviewers-form.md).
 
 ## GET /content/forms/portal/submission.review.json?func=getFormsForSubmissionReview {#get-content-forms-portal-submission-review-json-func-getformsforsubmissionreview-br}
 
@@ -45,7 +45,7 @@ O objeto de resposta contém uma matriz JSON que inclui nomes de formulários e 
 
 ### Exemplo {#example}
 
-**URL de solicitação**
+**Solicitar URL**
 
 ```http
 https://[host]:[port]/content/forms/portal/submission.review.json?func=getFormsForSubmissionReview
@@ -73,7 +73,7 @@ Especifique os seguintes parâmetros no URL da solicitação:
   </tr>
   <tr>
    <td><code>formPath</code></td>
-   <td>Especifica o caminho do repositório CRX onde o formulário reside. Se você não especificar o caminho do formulário, ele retornará uma resposta vazia.<br /> </td>
+   <td>Especifica o caminho do repositório do CRX onde o formulário reside. Se você não especificar o caminho do formulário, ele retornará uma resposta vazia.<br /> </td>
   </tr>
   <tr>
    <td><code>offset</code><br /> (opcional)</td>
@@ -97,7 +97,7 @@ Especifique os seguintes parâmetros no URL da solicitação:
   </tr>
   <tr>
    <td><code>search</code> <br /> (opcional)</td>
-   <td>Pesquisa o valor especificado nas propriedades do formulário e retorna formulários com valores correspondentes. O valor padrão é <strong>""</strong>.</td>
+   <td>Pesquisa o valor especificado nas propriedades do formulário e retorna formulários com valores correspondentes. O valor padrão é <strong>"</strong>.</td>
   </tr>
  </tbody>
 </table>
@@ -115,7 +115,7 @@ O objeto de resposta contém uma matriz JSON que inclui detalhes dos formulário
 
 ### Exemplo {#example-1}
 
-**URL de solicitação**
+**Solicitar URL**
 
 ```http
 https://[host]:[port]/content/forms/portal/submission.review.json?func=getAllSubmissions&formPath=/content/dam/formsanddocuments/forms-review/form2
@@ -146,7 +146,7 @@ Retorna uma ID de comentário na publicação bem-sucedida de um comentário.
 
 ### Exemplo {#example-2}
 
-**URL de solicitação**
+**Solicitar URL**
 
 ```http
 https://[host:'port'/content/forms/portal/submission.review.json?func=addComment&submitID=1403037413508500&comment=API+test+comment
@@ -184,7 +184,7 @@ O objeto de resposta contém uma matriz JSON que inclui todos os comentários as
 
 ### Exemplo {#example-3}
 
-**URL de solicitação**
+**Solicitar URL**
 
 ```http
 https://[host]:'port'/content/forms/portal/submission.review.json?func=getComments&submitID=1403037413508500
@@ -216,7 +216,7 @@ Retorna um objeto JSON com informações sobre a atualização publicada.
 
 ### Exemplo {#example-4}
 
-**URL de solicitação**
+**Solicitar URL**
 
 ```http
 https://[host]:'port'/content/forms/portal/submission.review.json?func=updateSubmission&submitID=1403037413508500&value=sample_value&property=some_new_prop

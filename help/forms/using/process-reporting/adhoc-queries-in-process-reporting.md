@@ -24,13 +24,13 @@ As consultas ad-hoc no Process Reporting permitem criar consultas personalizadas
 
 Além disso, as consultas ad hoc podem ser definidas usando filtros de propriedade de processo e tarefa. Esses filtros podem ser salvos e usados para executar os relatórios posteriormente.
 
-[**Pesquisa de processos**](/help/forms/using/process-reporting/adhoc-queries-in-process-reporting.md#p-process-task-search-p): pesquise instâncias de processo com um filtro de pesquisa definido pelo usuário com base em atributos de processo.
+[**Pesquisa de processos**](/help/forms/using/process-reporting/adhoc-queries-in-process-reporting.md#p-process-task-search-p): pesquise instâncias de processos com um filtro de pesquisa definido pelo usuário com base em atributos de processos.
 
-[**Detalhes do processo**](/help/forms/using/process-reporting/adhoc-queries-in-process-reporting.md#p-process-task-details-p): visualize os detalhes de uma instância do processo especificando a ID do processo.
+[**Detalhes do Processo**](/help/forms/using/process-reporting/adhoc-queries-in-process-reporting.md#p-process-task-details-p): visualize detalhes de uma instância do processo especificando a ID do processo.
 
-**Pesquisa de tarefa**: procure instâncias de tarefas com um filtro de pesquisa definido pelo usuário com base em atributos de tarefas.
+**Pesquisa de tarefas**: procure instâncias de tarefas com um filtro de pesquisa definido pelo usuário com base em atributos de tarefas.
 
-**Detalhes da tarefa**: visualize os detalhes de uma instância de tarefa especificando a ID da tarefa.
+**Detalhes da Tarefa**: visualize os detalhes de uma instância da tarefa especificando a ID da tarefa.
 
 ### Processos e tarefas {#processes-and-tasks}
 
@@ -46,20 +46,20 @@ Use a Pesquisa de processos/tarefas para definir filtros para consultar instânc
 
 ### Para criar uma consulta de Pesquisa de Processo/Tarefa {#to-create-a-process-task-search-query}
 
-1. Para exibir as consultas salvas de Pesquisa de Processo/Tarefa ou criar uma consulta, clique em **Consultas adhoc** e clique em **Pesquisa de Processo/Tarefa**.
+1. Para exibir as consultas salvas de Pesquisa de Processo/Tarefa ou criar uma consulta, clique em **Consultas Adhoc** e em **Pesquisa de Processo/Tarefa**.
 
-   ![search_nodes](assets/search_nodes.png)
+   ![nós_de_pesquisa](assets/search_nodes.png)
 
-   A variável **Meus filtros** é exibido à direita da exibição em árvore.
+   O painel **Meus Filtros** é exibido à direita da exibição em árvore.
 
-   No **Meus filtros** você pode criar novas consultas ad-hoc e clicar em para executar as consultas salvas anteriormente.
+   No painel **Meus Filtros**, você pode criar novas consultas ad-hoc e clicar em para executar consultas salvas anteriormente.
 
    ![my_filters_panel](assets/my_filters_panel.png)
 
-1. Para executar uma consulta existente, basta clicar na consulta na **Meus filtros** painel.
+1. Para executar uma consulta existente, basta clicar na consulta no painel **Meus Filtros**.
 1. Para criar uma consulta, clique em **Adicionar** (+).
 
-   A variável **Criar filtro** é exibido.
+   O painel **Criar Filtro** é exibido.
 
    ![create_filter_panel](assets/create_filter_panel.png)
 
@@ -69,7 +69,7 @@ Use a Pesquisa de processos/tarefas para definir filtros para consultar instânc
 
    1. Selecione um campo.
 
-      ![filter_field](assets/filter_field.png)
+      ![campo_de_filtro](assets/filter_field.png)
 
       >[!NOTE]
       >
@@ -77,7 +77,7 @@ Use a Pesquisa de processos/tarefas para definir filtros para consultar instânc
 
    1. Selecione uma condição.
 
-      ![filter_condition](assets/filter_condition.png)
+      ![condição_de_filtro](assets/filter_condition.png)
 
       >[!NOTE]
       >
@@ -85,7 +85,7 @@ Use a Pesquisa de processos/tarefas para definir filtros para consultar instânc
 
    1. Insira um valor.
 
-      ![filter_value](assets/filter_value.png)
+      ![valor_do_filtro](assets/filter_value.png)
 
    1. Para adicionar outro filtro à consulta, clique em **Adicionar (+)** à direita da linha de filtro.
 
@@ -93,22 +93,22 @@ Use a Pesquisa de processos/tarefas para definir filtros para consultar instânc
 
       ![filter_add_del](assets/filter_add_del.png)
 
-Após criar uma query, use as opções no canto superior direito da **Criar filtro** para:
+Depois de criar uma consulta, use as opções no canto superior direito do painel **Criar filtro** para:
 
-* **Cancelar**: Cancele as alterações e volte para a guia **Meus filtros** painel.
+* **Cancelar**: cancele as alterações e volte para o painel **Meus Filtros**.
 * **Executar**: execute a consulta atual para ver e/ou verificar os resultados. Nesse caso, não é necessário salvar a query antes de executá-la. Você pode verificar os resultados, fazer alterações se necessário e salvar a consulta quando estiver satisfeito com a saída.
-* **Salvar**: Salve o filtro. O filtro pode ser exibido e executado no **Meus filtros** painel.
+* **Salvar**: salve o filtro. O filtro pode ser exibido e executado no painel **Meus Filtros**.
 
 ### Opções no painel Meus filtros {#options-in-my-filters-panel}
 
-Use as opções no **Meus filtros** painel para **Adicionar** ![lc_pr_add_filter](assets/lc_pr_add_filter.png), **Editar** ![lc_pr_delete_filter](assets/lc_pr_delete_filter.png)ou **Excluir** ![lc_pr_edit_filter](assets/lc_pr_edit_filter.png)uma consulta ad-hoc.
+Use as opções no painel **Meus Filtros** para **Adicionar** ![lc_pr_add_filter](assets/lc_pr_add_filter.png), **Editar** ![lc_pr_delete_filter](assets/lc_pr_delete_filter.png) ou **Excluir** ![lc_pr_edit_filter](assets/lc_pr_edit_filter.png)uma consulta ad hoc.
 
 ![my_filters_options](assets/my_filters_options.png)
 
 ### Para executar uma consulta de Pesquisa {#to-execute-a-search-query}
 
-1. Para executar uma consulta, clique no filtro na **Meus filtros** ou clique no botão **Executar** botão se estiver criando ou editando um filtro.
-1. Os resultados da query são exibidos na variável **Relatório** painel da **Relatório do processo** janela.
+1. Para executar uma consulta, clique no filtro no painel **Meus Filtros** ou clique no botão **Executar** se estiver criando ou editando um filtro.
+1. Os resultados da consulta são exibidos no painel **Relatório** da janela **Relatórios de Processos**.
 
    ![process_search_result](assets/process_search_result.png)
 
@@ -116,16 +116,16 @@ Use as opções no **Meus filtros** painel para **Adicionar** ![lc_pr_add_filter
 
    ![process_result_pgn](assets/process_result_pgn.png)
 
-   No **Exibir** escolha o número de resultados a serem exibidos por página.
+   Na lista suspensa **Exibir**, escolha o número de resultados a serem exibidos por página.
 
-   No **Página** , insira um número de página para ir diretamente para essa página.
+   Na caixa de texto **Página**, digite um número de página para ir diretamente para essa página.
 
 1. Os seguintes campos são exibidos em um resultado de Pesquisa de processo:
 
-   * **ID do processo**: a ID do processo. O campo está com hiperlink. Se você clicar em uma ID de processo neste campo, será redirecionado para a **[!UICONTROL Detalhes do processo]** painel do processo.
+   * **ID do Processo**: A ID do processo. O campo está com hiperlink. Se você clicar em uma ID de processo neste campo, será redirecionado para o painel **[!UICONTROL Detalhes do processo]** do processo.
    * **Iniciador**: o usuário do AEM Forms que iniciou a instância do processo
-   * **Hora de criação**: a data e a hora em que a instância do processo foi iniciada
-   * **Hora de conclusão**: a data e a hora em que a instância do processo foi concluída
+   * **Hora de Criação**: a data e a hora em que a instância do processo foi iniciada
+   * **Hora de Conclusão**: a data e a hora em que a instância do processo foi concluída
    * **Duração**: a duração do início à conclusão da instância do processo
    * **Status**: o status atual da instância do processo.
 
@@ -135,10 +135,10 @@ Use as opções no **Meus filtros** painel para **Adicionar** ![lc_pr_add_filter
 
    Da mesma forma, os seguintes campos são exibidos em um resultado de Pesquisa de tarefa:
 
-   * **ID da tarefa**: A ID da tarefa. O campo está com hiperlink. Se clicar em uma ID de tarefa neste campo, você será redirecionado para a **[!UICONTROL Detalhes da tarefa]** painel da tarefa.
+   * **ID da Tarefa**: a ID da tarefa. O campo está com hiperlink. Se você clicar em uma ID de tarefa neste campo, será redirecionado para o painel **[!UICONTROL Detalhes da tarefa]** da tarefa.
    * **Iniciador**: o usuário do AEM Forms que iniciou a instância do processo
-   * **Hora de criação**: a data e a hora em que a instância do processo foi iniciada
-   * **Hora de conclusão**: a data e a hora em que a instância do processo foi concluída
+   * **Hora de Criação**: a data e a hora em que a instância do processo foi iniciada
+   * **Hora de Conclusão**: a data e a hora em que a instância do processo foi concluída
    * **Duração**: a duração do início à conclusão da instância do processo
    * **Status**: o status atual da instância do processo.
 
@@ -146,12 +146,12 @@ Use as opções no **Meus filtros** painel para **Adicionar** ![lc_pr_add_filter
 
    Como a classificação é uma operação de alternância, clique em um cabeçalho de campo para classificar o resultado em ordem crescente e clique nele novamente para classificar em ordem decrescente. A ordem de classificação atual (crescente / decrescente) é indicada pela direção da seta escurecida ao lado do cabeçalho da coluna.
 
-   ![task_search_result](assets/task_search_result.png)
+   ![resultado_da_pesquisa_de_tarefa](assets/task_search_result.png)
 
-1. Clique no botão do painel ![lc_pr_rail_button](assets/lc_pr_rail_button.png) na parte superior esquerda para recolher o **Meus filtros** e expande o espaço disponível para o **Relatório** painel.
+1. Clique no botão do painel ![lc_pr_rail_button](assets/lc_pr_rail_button.png) no canto superior esquerdo para recolher o painel **Meus Filtros** e expandir o espaço disponível para o painel **Relatório**.
 1. Use as opções no canto superior direito do painel **Relatório** para executar operações no resultado da consulta.
 
-   * **Atualizar**: atualiza o relatório com os dados mais recentes armazenados no armazenamento
+   * **Atualizar**: atualiza o relatório com os dados mais recentes contidos no armazenamento
 
    * **Exportar para CSV**: exporte os dados do relatório para um arquivo separado por vírgulas.
 
@@ -161,16 +161,16 @@ Use as opções no **Meus filtros** painel para **Adicionar** ![lc_pr_add_filter
 
 ## Detalhes de Processo/Tarefa {#process-task-details}
 
-Você usa o **Detalhes do processo** para exibir os detalhes de um processo específico.
+Use o painel **Detalhes do processo** para exibir os detalhes de um processo específico.
 
-Da mesma forma, você usa o **Detalhes da tarefa** para exibir os detalhes de uma tarefa específica.
+Da mesma forma, você usa o painel **Detalhes da tarefa** para exibir os detalhes de uma tarefa específica.
 
 ### Para exibir Detalhes de Processos/Tarefas {#to-view-process-task-details}
 
 Você pode exibir os detalhes de um processo/tarefa específico do AEM Forms:
 
 * **De um resultado de Pesquisa de Processo/Tarefa**
-* **Ao inserir o ID de processo/tarefa no painel Detalhes de processo/tarefa**
+* **Inserindo a ID de Processo/Tarefa no painel Detalhes de Processo/Tarefa**
 
 #### De um resultado de Pesquisa de Processo/Tarefa {#from-a-process-task-search-result}
 
@@ -180,17 +180,17 @@ Você pode exibir os detalhes de um processo/tarefa específico do AEM Forms:
 
    ![process_id_list](assets/process_id_list.png)
 
-1. Clique em uma ID de processo na lista para exibir os detalhes desse processo na **Detalhes do processo** painel.
+1. Clique em uma ID de processo na lista para exibir os detalhes desse processo no painel **Detalhes do processo**.
 
-   A variável **Detalhes de Processo/Tarefa** o resultado da consulta exibe detalhes das tarefas/formulários contidos no processo/tarefa.
+   O resultado da consulta **Detalhes do Processo/Tarefa** exibe detalhes das tarefas/formulários contidos no processo/tarefa.
 
    Por padrão, o resultado é classificado por ID de tarefa/formulário. No entanto, para classificar o resultado por qualquer um dos campos, clique no título do campo. A coluna pela qual o resultado é classificado é indicada por uma seta escurecida ao lado do cabeçalho da coluna.
 
    Como a classificação é uma operação de alternância, clique em um cabeçalho de campo para classificar o resultado em ordem crescente e clique nele novamente para classificar em ordem decrescente. A ordem de classificação atual (crescente / decrescente) é indicada pela direção da seta escurecida ao lado do cabeçalho da coluna.
 
-   **Resultado dos Detalhes do Processo**
+   **Resultado do Detalhes do Processo**
 
-   ![process_details](assets/process_details.png)
+   ![detalhes_do_processo](assets/process_details.png)
 
    **Painel esquerdo:** Exibe os seguintes detalhes do processo selecionado:
 
@@ -201,7 +201,7 @@ Você pode exibir os detalhes de um processo/tarefa específico do AEM Forms:
    * Status do processo
    * Iniciador do processo
 
-   **Painel superior direito:** Exibe os seguintes detalhes das tarefas que compõem o processo selecionado:
+   **Painel Superior Direito:** Exibe os seguintes detalhes das tarefas que compõem o processo selecionado:
 
    * ID da tarefa
    * Nome da tarefa
@@ -212,7 +212,7 @@ Você pode exibir os detalhes de um processo/tarefa específico do AEM Forms:
    * Duração da tarefa
    * Status da tarefa
 
-   **Painel inferior direito:** Exibe os seguintes detalhes do histórico do processo selecionado:
+   **Painel Inferior Direito:** Exibe os seguintes detalhes do histórico do processo selecionado:
 
    * Nome do processo
    * Iniciador do processo
@@ -220,9 +220,9 @@ Você pode exibir os detalhes de um processo/tarefa específico do AEM Forms:
    * Data e hora de conclusão do processo
    * Status do processo
 
-   **Resultado da tarefa Detalhes**
+   **Resultado do Detalhes da Tarefa**
 
-   ![task_details](assets/task_details.png)
+   ![detalhes_da_tarefa](assets/task_details.png)
 
    **Painel esquerdo:** Exibe os seguintes detalhes da tarefa selecionada:
 
@@ -235,7 +235,7 @@ Você pode exibir os detalhes de um processo/tarefa específico do AEM Forms:
    * Status da tarefa
    * Rota selecionada da tarefa
 
-   **Painel superior direito:** Exibe os seguintes detalhes dos formulários que compõem a tarefa selecionada:
+   **Painel Superior Direito:** Exibe os seguintes detalhes dos formulários que compõem a tarefa selecionada:
 
    * ID do formulário
    * Data e hora de criação do formulário
@@ -249,23 +249,23 @@ Você pode exibir os detalhes de um processo/tarefa específico do AEM Forms:
    * Data e hora de criação da atribuição de tarefa
    * Data e hora de atualização da tarefa
 
-1. Clique em **Voltar para Pesquisa de Processo/Tarefa** para voltar ao resultado da pesquisa a partir do qual os detalhes do processo/tarefa foram detalhados.
+1. Clique em **Voltar à Pesquisa de Processo/Tarefa** para voltar ao resultado da pesquisa a partir do qual os detalhes de processo/tarefa foram detalhados.
 
-   ![back_to_search](assets/back_to_search.png)
+   ![voltar_para_pesquisa](assets/back_to_search.png)
 
-   No entanto, se os detalhes do processo/tarefa foram encontrados ao inserir um ID de processo/tarefa específico, clicar em Voltar para a Pesquisa de Processo/Tarefa o redirecionará para **Pesquisa de Processo/Tarefa**, sem exibir nenhum resultado de pesquisa.
+   No entanto, se os detalhes do processo/tarefa foram encontrados ao inserir uma ID de processo/tarefa específica, clicar em Voltar para a Pesquisa de Processo/Tarefa o redirecionará para a **Pesquisa de Processo/Tarefa**, sem exibir nenhum resultado da pesquisa.
 
 #### Ao inserir o ID de processo/tarefa no painel Detalhes de processo/tarefa {#by-entering-the-process-task-id-in-the-process-task-details-panel-br}
 
-1. Vá para a **Detalhes de Processo/Tarefa** painel.
+1. Vá para o painel **Detalhes do processo/tarefa**.
 
-   ![details_nodes](assets/details_nodes.png)
+   ![nós_de_detalhes](assets/details_nodes.png)
 
 1. Na caixa de texto ID de Processo/Tarefa, informe o ID de processo/tarefa.
 
-   ![process_details-1](assets/process_details-1.png)
+   ![detalhes_do_processo-1](assets/process_details-1.png)
 
-   Os campos no **Detalhes de Processo/Tarefa** os resultados da consulta são campos específicos de um processo/tarefa do AEM Forms.
+   Os campos no resultado da consulta **Detalhes de Processo/Tarefa** são campos específicos de um processo/tarefa do AEM Forms.
 
    Para um processo, o resultado da consulta exibe os detalhes das tarefas contidas no processo.
 

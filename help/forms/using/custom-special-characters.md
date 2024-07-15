@@ -31,7 +31,7 @@ Por exemplo, você pode inserir os seguintes caracteres especiais:
 É possível inserir caracteres especiais nas letras:
 
 * No [editor de texto](/help/forms/using/document-fragments.md#createtext)
-* Em um [editável, módulo em linha em uma correspondência](../../forms/using/create-correspondence.md#managecontent)
+* Em um módulo [editável, incorporado em uma correspondência](../../forms/using/create-correspondence.md#managecontent)
 
 ![specialcaractersinlinemodule](assets/specialcharactersinlinemodule.png)
 
@@ -41,10 +41,10 @@ O administrador pode adicionar suporte para caracteres especiais adicionais/pers
 
 Use as seguintes etapas para adicionar suporte a caracteres especiais personalizados:
 
-1. Ir para `https://'[server]:[port]'/[ContextPath]/crx/de` e faça logon como Administrador.
-1. Na pasta de aplicativos, crie uma pasta chamada **[!UICONTROL caracteres especiais]** com caminho/estrutura semelhante à pasta caracteres especiais (na pasta textEditorConfig em libs):
+1. Vá para `https://'[server]:[port]'/[ContextPath]/crx/de` e faça logon como Administrador.
+1. Na pasta de aplicativos, crie uma pasta chamada **[!UICONTROL specialcharacters]** com caminho/estrutura semelhante à pasta specialcharacters (na pasta textEditorConfig em libs):
 
-   1. Clique com o botão direito do mouse no **caracteres especiais** no seguinte caminho e selecione **Sobrepor nó**:
+   1. Clique com o botão direito do mouse na pasta **specialcharacters** no seguinte caminho e selecione **Sobrepor Nó**:
 
       `/libs/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters`
 
@@ -52,9 +52,9 @@ Use as seguintes etapas para adicionar suporte a caracteres especiais personaliz
 
       **Caminho:** /libs/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters
 
-      **Local da sobreposição:** /apps/
+      **Local de Sobreposição:** /apps/
 
-      **Corresponder Tipos de Nó:** Marcado
+      **Corresponder Tipos De Nó:** Marcado
 
       >[!NOTE]
       >
@@ -68,20 +68,20 @@ Use as seguintes etapas para adicionar suporte a caracteres especiais personaliz
       >
       >
 
-   1. Clique em **OK** e clique em **Salvar tudo**. A pasta de caracteres especiais é criada no caminho especificado.
+   1. Clique em **OK** e em **Salvar tudo**. A pasta de caracteres especiais é criada no caminho especificado.
 
       Depois de criar a sobreposição, verifique as tags de estrutura do nó. Cada nó criado em /apps usando a sobreposição deve ter a mesma classe e propriedades conforme definido em /libs para esse nó. Se qualquer propriedade ou tag estiver ausente na estrutura do nó no local /apps, sincronize suas tags com o nó correspondente em /libs.
 
-1. Certifique-se de que o **[!UICONTROL textEditorConfig]** O nó tem as seguintes propriedades e valores:
+1. Verifique se o nó **[!UICONTROL textEditorConfig]** tem as seguintes propriedades e valores:
 
    | Nome | Tipo | Valor |
    |---|---|---|
    | cmConfigurationType | String | cmTextEditorConfiguration |
    | cssPath | String | /libs/fd/cm/ma/gui/components/admin/createasset/textcontrol/clientlibs/textcontrol |
 
-1. Clique com o botão direito do mouse no **[!UICONTROL caracteres especiais]** no seguinte caminho e selecione **Criar > Nó secundário** e clique em **Salvar tudo**:
+1. Clique com o botão direito do mouse na pasta **[!UICONTROL caracteres especiais]** no seguinte caminho e selecione **Criar > Nó Filho** e clique em **Salvar Tudo**:
 
-   /apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters/&lt;yourchildnode>
+   /apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters/&lt;YourChildNode>
 
 1. Atualize a página Editor de Texto\Criar Interface de Correspondência. O nó adicionado é o último na lista de caracteres especiais na interface do usuário.
 1. Clique em **Salvar tudo**.
@@ -119,7 +119,7 @@ Use as seguintes etapas para adicionar suporte a caracteres especiais personaliz
      <li>Sobrepor o nó a ser oculto em "/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters"</li>
      <li>Adicione a propriedade sling:hideResource (Booleano) ao nó (em aplicativos) para ser oculta. </li>
      <li>Clique em Salvar tudo. </li>
-     <li>Atualize o Editor de texto\Criar interface de correspondência para que você possa ver as alterações.<br /> </li>
+     <li>Atualize o Editor de Texto\Criar Interface de Correspondência para que você possa ver as alterações.<br /> </li>
     </ol> </td>
   </tr>
   <tr>
@@ -129,7 +129,7 @@ Use as seguintes etapas para adicionar suporte a caracteres especiais personaliz
      <li>Adicione a propriedade "sling:hideChildren (String ou String[])" a "/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters". </li>
      <li>Adicione nomes de nó (caracteres especiais a serem ocultados) como valores para a propriedade "sling:hideChildren". </li>
      <li>Clique em Salvar tudo. </li>
-     <li>Atualize o Editor de texto\Criar interface de correspondência para que você possa ver as alterações.<br /> </li>
+     <li>Atualize o Editor de Texto\Criar Interface de Correspondência para que você possa ver as alterações.<br /> </li>
     </ol> </td>
   </tr>
   <tr>
@@ -140,7 +140,7 @@ Use as seguintes etapas para adicionar suporte a caracteres especiais personaliz
      <li>Adicione a propriedade "sling:orderBefore (String)" ao nó filho recém-criado. </li>
      <li>Adicione o nome do nó como o valor antes do qual o caractere especial recém-adicionado deve ser exibido. </li>
      <li>Clique em Salvar tudo. </li>
-     <li>Atualize o Editor de texto\Criar interface de correspondência para que você possa ver as alterações.<br /> </li>
+     <li>Atualize o Editor de Texto\Criar Interface de Correspondência para que você possa ver as alterações.<br /> </li>
     </ol> </td>
   </tr>
  </tbody>

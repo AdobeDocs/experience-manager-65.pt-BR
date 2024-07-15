@@ -21,7 +21,7 @@ A integração de soluções que não sejam da Adobe Commerce é um cenário com
 
 Esta é a arquitetura geral:
 
-![Visão geral da arquitetura AEM de terceiros/não-Magento](../assets//AEM_nonMagento_Architecture.png)
+![Visão geral da arquitetura de terceiros/não-Magento AEM](../assets//AEM_nonMagento_Architecture.png)
 
 A finalidade dessa camada de integração é mapear APIs e esquemas de terceiros em relação às APIs e esquemas compatíveis do Adobe Commerce GraphQL fora do Experience Manager. Graças a esse encapsulamento, a lógica de integração e os sistemas podem ser atualizados sem alterar o código dentro do Experience Manager.
 
@@ -43,15 +43,15 @@ A integração das APIs de catálogo de produtos é necessária para desbloquear
 
 ## Casos de uso de front-end
 
-[AEM Componentes principais do CIF](https://github.com/adobe/aem-core-cif-components) recuperar e trocar dados por meio das APIs do Adobe Commerce compatíveis com CIF. Para reutilizar componentes, as respectivas APIs devem ser implementadas.
+AEM [Os Componentes principais do CIF](https://github.com/adobe/aem-core-cif-components) recuperam e trocam dados por meio das APIs do Adobe Commerce compatíveis com CIF. Para reutilizar componentes, as respectivas APIs devem ser implementadas.
 
 A recomendação para componentes do lado do cliente de desempenho crítico é se comunicar diretamente com a solução de terceiros para evitar latência.
 
 ## Desenvolvimento de uma integração {#develop-integration}
 
-O Adobe recomenda usar [Adobe I/O Runtime](https://developer.adobe.com/apis/experienceplatform/runtime.html) para a camada de integração. Ele está incluído no complemento CIF para terceiros. Como funciona com uma abordagem semelhante a um microsserviço, é adequado para integrar facilmente várias soluções.
+A Adobe recomenda o uso do [Adobe I/O Runtime](https://developer.adobe.com/apis/experienceplatform/runtime.html) para a camada de integração. Ele está incluído no complemento CIF para terceiros. Como funciona com uma abordagem semelhante a um microsserviço, é adequado para integrar facilmente várias soluções.
 
-A variável [implementação de referência](https://github.com/adobe/commerce-cif-graphql-integration-reference) O é um excelente ponto de partida para criar a integração com sua solução comercial. Embora seja compatível com o GraphQL, ele também pode ser integrado a qualquer outro tipo de API, como REST.
+A [implementação de referência](https://github.com/adobe/commerce-cif-graphql-integration-reference) é um excelente ponto de partida para criar a integração com sua solução comercial. Embora seja compatível com o GraphQL, ele também pode ser integrado a qualquer outro tipo de API, como REST.
 
 Essa camada de integração não será necessária se uma camada de terceiros estiver disponível (como a Mulesoft) ou se a integração for criada sobre a solução de terceiros.
 
@@ -59,8 +59,8 @@ Essa camada de integração não será necessária se uma camada de terceiros es
 
 Os conectores são um bom ponto de partida para os projetos. Eles vêm com uma conexão específica à solução comercial e mapeamento de API padrão. Esses conectores são criados por terceiros e não são mantidos pela Adobe. Entre em contato com o respectivo parceiro para obter informações.
 
-* [SAP COMMERCE](https://github.com/diconium/commerce-cif-graphql-integration-hybris), construído por Diconium
-* [Ferramentas comerciais](https://github.com/diconium/commerce-cif-graphql-integration-commercetool), construído por Diconium
+* [SAP Commerce](https://github.com/diconium/commerce-cif-graphql-integration-hybris), criado por Diconium
+* [Ferramentas Comerciais](https://github.com/diconium/commerce-cif-graphql-integration-commercetool), compiladas por Diconium
 
 >[!TIP]
 >

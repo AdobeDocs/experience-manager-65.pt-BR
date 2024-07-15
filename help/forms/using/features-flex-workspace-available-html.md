@@ -1,6 +1,6 @@
 ---
 title: Recursos do espaço de trabalho do Flex não disponíveis no espaço de trabalho do AEM Forms
-description: O espaço de trabalho do AEM Forms é mais inovador do que o Espaço de trabalho baseado no Flex. Leia sobre as diferenças nos recursos e capacidades.
+description: O espaço de trabalho do AEM Forms é mais inovador do que o Workspace baseado no Flex. Leia sobre as diferenças nos recursos e capacidades.
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS

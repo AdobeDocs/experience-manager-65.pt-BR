@@ -23,7 +23,7 @@ O ambiente de criação do AEM fornece vários mecanismos para organização e e
 
 ## Gerenciar o site {#managing-your-site}
 
-A variável **Sites** o console permite navegar e gerenciar o site, usando a barra de cabeçalho, a barra de ferramentas, os ícones de ação (aplicáveis ao recurso selecionado), as navegações estruturais e, quando selecionados, os painéis secundários (por exemplo, linha do tempo e referências).
+O console **Sites** permite navegar e gerenciar o site, usando a barra de cabeçalho, a barra de ferramentas, os ícones de ação (aplicáveis ao recurso selecionado), as navegações estruturais e, quando selecionados, os painéis secundários (por exemplo, linha do tempo e referências).
 
 Por exemplo, exibição de coluna:
 
@@ -47,8 +47,8 @@ Por exemplo, exibição de coluna:
 
 Ao editar uma página, a **Ajuda** pode ser acessada de:
 
-* o [**Informações da página**](/help/sites-authoring/editing-page-properties.md#page-properties) seletor; mostra os slides de introdução (como na primeira vez que você acessa o editor).
-* o [configuração](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) para componentes específicos (usando o ponto de interrogação (?) na barra de ferramentas da caixa de diálogo); mostra a Ajuda contextual.
+* o seletor [**Informações da página**](/help/sites-authoring/editing-page-properties.md#page-properties); ele mostra os slides de introdução (como na primeira vez que você acessa o editor).
+* a caixa de diálogo [configuração](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) para componentes específicos (usando o ponto de interrogação (?) na barra de ferramentas da caixa de diálogo); mostra a Ajuda contextual.
 
 Mais [recursos relacionados à ajuda estão disponíveis nos consoles](/help/sites-authoring/basic-handling.md#accessing-help).
 
@@ -60,7 +60,7 @@ O navegador de componentes é uma guia dentro do painel lateral (junto com o [na
 
 ![ateat-03](assets/ateat-03.png)
 
-Ao abrir o painel lateral, ele desliza do lado esquerdo (selecione a variável **Componentes** se necessário). Quando aberto, é possível navegar por todos os componentes disponíveis para sua página.
+Ao abrir o painel lateral, ele desliza do lado esquerdo (selecione a guia **Componentes** se necessário). Quando aberto, é possível navegar por todos os componentes disponíveis para sua página.
 
 A aparência e o manuseio real dependem do tipo de dispositivo que você está usando:
 
@@ -93,26 +93,26 @@ A aparência e o manuseio real dependem do tipo de dispositivo que você está u
       * Os ícones dos componentes padrão são monocromáticos.
       * As abreviações são sempre os dois primeiros caracteres do nome do componente.
 
-  Na barra de ferramentas superior do **Componentes** navegador, você pode fazer o seguinte:
+  Na barra de ferramentas superior, no navegador **Componentes**, você pode fazer o seguinte:
 
    * Filtrar componentes por nome.
    * Limitar a exibição para um grupo específico usando a seleção suspensa.
 
-  Para obter uma descrição mais detalhada do componente, clique no ícone de informações ao lado do componente na **Componentes** navegador (se disponível). Por exemplo, para o **Contêiner de layout**:
+  Para obter uma descrição mais detalhada do componente, clique no ícone de informações ao lado do componente no navegador **Componentes** (se disponível). Por exemplo, para o **Contêiner de layout**:
 
   ![ateat-06](assets/ateat-06.png)
 
-  Para mais informações sobre os componentes disponíveis para você, consulte [Console de componentes](/help/sites-authoring/default-components-console.md).
+  Para mais informações sobre os componentes disponíveis para você, consulte [Console de Componentes](/help/sites-authoring/default-components-console.md).
 
 ## Navegador de ativos {#assets-browser}
 
 O navegador de ativos mostra todos os [ativos](/help/assets/assets.md) disponíveis para uso direto em sua página atual.
 
-O navegador de ativos é uma guia dentro do painel lateral juntamente com o [componentes procurar](/help/sites-authoring/author-environment-tools.md#components-browser)r e [árvore de conteúdo](/help/sites-authoring/author-environment-tools.md#content-tree). Para abrir ou fechar o painel lateral, use o ícone na parte superior esquerda da barra de ferramentas:
+O navegador de ativos é uma guia dentro do painel lateral juntamente com o [navegador de componentes](/help/sites-authoring/author-environment-tools.md#components-browser)r e a [árvore de conteúdo](/help/sites-authoring/author-environment-tools.md#content-tree). Para abrir ou fechar o painel lateral, use o ícone na parte superior esquerda da barra de ferramentas:
 
 ![ateat-03-1](assets/ateat-03-1.png)
 
-Quando você abre o painel lateral, ele desliza do lado esquerdo. Selecione o **Assets** se necessário.
+Quando você abre o painel lateral, ele desliza do lado esquerdo. Selecione a guia **Assets**, se necessário.
 
 ![ateat-07](assets/ateat-07.png)
 
@@ -126,7 +126,7 @@ Para adicionar um ativo à sua página, selecione-o e arraste-o até o local des
 
    * Por exemplo, você pode arrastar um ativo de imagem para um componente de imagem.
 
-* A [espaço reservado](/help/sites-authoring/editing-content.md#component-placeholder) no sistema de parágrafo para criar um componente do tipo apropriado.
+* Um [espaço reservado](/help/sites-authoring/editing-content.md#component-placeholder) no sistema de parágrafo para criar um componente do tipo apropriado.
 
    * Por exemplo, você pode arrastar um ativo de imagem para o sistema de parágrafo para criar um componente de imagem.
 
@@ -149,7 +149,7 @@ A aparência e o manuseio real dependem do tipo de dispositivo que você está u
 >
 >Um dispositivo móvel é detectado quando a largura é menor do que 1024px, ou seja, isso também inclui em uma janela de desktop pequena.
 
-* **Dispositivo móvel, como o iPad**
+* **Dispositivo móvel, como iPad**
 
   O navegador de arquivos cobre completamente a página que está sendo editada.
 
@@ -165,13 +165,13 @@ A aparência e o manuseio real dependem do tipo de dispositivo que você está u
 
   ![ateat-10](assets/ateat-10.png)
 
-Se precisar alterar rapidamente um ativo, você pode iniciar o [Editor de ativos](/help/assets/manage-assets.md) diretamente do navegador de ativos, clicando no ícone editar mostrado ao lado do nome do ativo.
+Se você precisar alterar um ativo rapidamente, poderá iniciar o [Editor de ativos](/help/assets/manage-assets.md) diretamente do navegador de ativos, clicando no ícone de edição mostrado ao lado do nome do ativo.
 
-![Dispositivo desktop do navegador de ativos](do-not-localize/screen_shot_2018-03-22at142448.png)
+![Dispositivo de Área de Trabalho do Navegador Assets](do-not-localize/screen_shot_2018-03-22at142448.png)
 
 ## Árvore de conteúdo {#content-tree}
 
-A variável **Árvore de conteúdo** fornece uma visão geral de todos os componentes na página em uma hierarquia para que você possa ver de perto como a página é composta.
+A **Árvore de conteúdo** fornece uma visão geral de todos os componentes da página em uma hierarquia para que você possa ver de perto como a página é composta.
 
 A Árvore de conteúdo é uma guia dentro do painel lateral (junto com o navegador de componentes e de ativos). Para abrir ou fechar o painel lateral, use o ícone na parte superior esquerda da barra de ferramentas:
 
@@ -205,7 +205,7 @@ Clicar no componente realça o componente no editor de páginas. As ações disp
 
   ![Ícone de chave inglesa - Editar](do-not-localize/screen_shot_2018-03-22at142725.png)
 
-* Ou uma página que faça parte de um [livecopy](/help/sites-administering/msm.md), em que os componentes são herdados de outra página; por exemplo:
+* Ou uma página que faz parte de uma [livecopy](/help/sites-administering/msm.md), em que os componentes são herdados de outra página; por exemplo:
 
   `https://localhost:4502/editor.html/content/we-retail/us/en/equipment.html`
 
@@ -213,11 +213,11 @@ Clicar no componente realça o componente no editor de páginas. As ações disp
 
 ## Fragmentos: navegador do conteúdo associado {#fragments-associated-content-browser}
 
-Se a página contiver Fragmentos do conteúdo, você terá acesso à [navegador para conteúdo associado](/help/sites-authoring/content-fragments.md#using-associated-content).
+Se a página contiver Fragmentos do conteúdo, você terá acesso ao [navegador para o conteúdo associado](/help/sites-authoring/content-fragments.md#using-associated-content).
 
 ## Referências {#references}
 
-**Referências** mostrar conexões com a página selecionada:
+**Referências** mostram conexões com a página selecionada:
 
 * Blueprints
 * Lançamentos
@@ -231,23 +231,23 @@ Abra o console e navegue até o recurso desejado, e abra **Referências** usando
 
 ![screen_shot_2018-03-22at153653](assets/screen_shot_2018-03-22at153653.png)
 
-[Selecione o recurso desejado](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) A mostra uma lista de tipos de referências relevantes para esse recurso:
+[Selecionar o recurso necessário](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) mostra uma lista de tipos de referências relevantes para esse recurso:
 
 ![ateat-22](assets/ateat-22.png)
 
 Selecione o tipo de referência apropriado para obter mais informações. Em determinadas situações, outras ações estarão disponíveis quando você selecionar uma referência específica, incluindo:
 
-* **Links de entrada** fornece uma lista de páginas que fazem referência à página, juntamente com acesso direto a **Editar** uma dessas páginas ao selecionar um link específico.
+* **Links de Entrada** fornece uma lista de páginas que fazem referência à página, juntamente com acesso direto a **Editar** uma dessas páginas ao selecionar um link específico.
 
    * Isso só pode mostrar links estáticos, não links gerados dinamicamente; por exemplo, do componente List.
 
 * Instâncias de conteúdo emprestado e concedido usando o componente **Referência**, daqui você pode navegar até a página de referência/referenciada
 
 * [Referências às páginas de produto](/help/commerce/cif-classic/administering/generic.md#showing-product-references) (disponível no console Commerce-Products)
-* [Lançamentos](/help/sites-authoring/launches.md) O fornece acesso a inicializações relacionadas.
+* [Inicializações](/help/sites-authoring/launches.md) fornece acesso a inicializações relacionadas.
 * As [Live Copies](/help/sites-administering/msm.md) exibem os caminhos de todas as live copies que são baseadas no recurso selecionado.
-* [Blueprint](/help/sites-administering/msm-best-practices.md) O fornece detalhes e várias ações.
-* [Cópias de idiomas](/help/sites-administering/tc-manage.md#creating-translation-projects-using-the-references-panel) O fornece detalhes e várias ações.
+* [Blueprint](/help/sites-administering/msm-best-practices.md) fornece detalhes e várias ações.
+* [Cópias de idiomas](/help/sites-administering/tc-manage.md#creating-translation-projects-using-the-references-panel) fornece detalhes e várias ações.
 
 Por exemplo, você pode corrigir uma referência quebrada em um componente Referência:
 
@@ -277,16 +277,16 @@ O botão Informações da página (ícone de equalizador) abre um menu que tamb�
 * [Bloquear página](/help/sites-authoring/editing-content.md#locking-a-page)
 * [Publicar página](/help/sites-authoring/publishing-pages.md#main-pars-title-10)
 * [Desfazer a publicação da página](/help/sites-authoring/publishing-pages.md#main-pars-title-5)
-* [Editar modelo](/help/sites-authoring/templates.md); quando a página for baseada em um [modelo editável](/help/sites-authoring/templates.md#editable-and-static-templates)
+* [Editar Modelo](/help/sites-authoring/templates.md); quando a página for baseada em um [modelo editável](/help/sites-authoring/templates.md#editable-and-static-templates)
 
 * [Exibir como publicado](/help/sites-authoring/editing-content.md#view-as-published)
 * Exibir no Admin; abre a página no [console de sites](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)
 * [Ajuda](/help/sites-authoring/basic-handling.md#accessing-help)
 
-Por exemplo, quando apropriado, **Informações da página** O também tem as opções:
+Por exemplo, quando apropriado, as **Informações da página** também têm as opções:
 
 * [Promover lançamento](/help/sites-authoring/launches-promoting.md) se a página for um lançamento
-* [Abrir na interface clássica](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page) se esta opção foi [habilitado por um administrador](/help/sites-administering/enable-classic-ui-editor.md)
+* [Abrir na interface clássica](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page) se esta opção foi [habilitada por um administrador](/help/sites-administering/enable-classic-ui-editor.md)
 
 Além disso, as **Informações da página** podem fornecer acesso a análises e recomendações, quando apropriado.
 
@@ -294,18 +294,18 @@ Além disso, as **Informações da página** podem fornecer acesso a análises e
 
 Há vários modos ao editar uma página o que permite diversas ações:
 
-* [Editar](/help/sites-authoring/editing-content.md) - usar esse modo ao editar o conteúdo da página.
-* [Layout](/help/sites-authoring/responsive-layout.md) - permite criar e editar o layout responsivo dependendo do dispositivo (se a página for baseada em um contêiner de layout)
+* [Editar](/help/sites-authoring/editing-content.md) - use este modo ao editar o conteúdo da página.
+* [Layout](/help/sites-authoring/responsive-layout.md) - permite que você crie e edite seu layout responsivo dependente do dispositivo (se a página for baseada em um contêiner de layout)
 
-* [Andaime](/help/sites-authoring/scaffolding.md) : ajuda a criar um grande conjunto de páginas que compartilham estrutura, mas têm conteúdo diferente.
+* [Andaime](/help/sites-authoring/scaffolding.md) - ajuda a criar um grande conjunto de páginas que compartilham estrutura, mas têm conteúdo diferente.
 * [Desenvolvedor](/help/sites-developing/developer-mode.md) - permite executar várias ações (requer privilégios). Isso inclui a inspeção dos detalhes técnicos de uma página e seus componentes.
 
-* [Design](/help/sites-authoring/default-components-designmode.md) - permite ativar/desativar componentes para uso em uma página e configurar o design do componente (se a página for baseada em um [modelo estático](/help/sites-authoring/templates.md#editable-and-static-templates)).
+* [Design](/help/sites-authoring/default-components-designmode.md) - permite habilitar/desabilitar componentes para uso em uma página e configurar o design do componente (se a página for baseada em um [modelo estático](/help/sites-authoring/templates.md#editable-and-static-templates)).
 
 * [Direcionamento](/help/sites-authoring/content-targeting-touch.md): aumente a relevância do conteúdo por meio do direcionamento e da medição em todos os canais.
-* [Activity Map](/help/sites-authoring/page-analytics-using.md#analyticsvisiblefromthepageeditor) - mostra os dados do Analytics para a página.
+* [Activity Map](/help/sites-authoring/page-analytics-using.md#analyticsvisiblefromthepageeditor) - mostra os dados de análise da página.
 
-* [Timewarp](/help/sites-authoring/working-with-page-versions.md#timewarp) - permite a exibição do estado das páginas em um momento específico.
+* [Timewarp](/help/sites-authoring/working-with-page-versions.md#timewarp) - permite exibir um estado de páginas em um momento específico.
 * [Status da Live Copy](/help/sites-authoring/editing-content.md#live-copy-status): permite uma visão geral rápida do status da live copy e de quais componentes são, ou não, herdados.
 * [Visualização](/help/sites-authoring/editing-content.md#previewing-pages): usado para visualizar a página da forma que será exibida no ambiente de publicação ou navegar usando os links no conteúdo.
 
@@ -320,7 +320,7 @@ Você pode acessá-los usando os ícones no canto superior direito. O ícone rea
 >* Dependendo das características da página, alguns modos podem não estar disponíveis.
 >* O acesso a alguns modos requer as permissões/privilégios apropriados.
 >* O modo de desenvolvedor não está disponível em dispositivos móveis devido a restrições de espaço.
->* Existe uma [atalho de teclado](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) ( `Ctrl-Shift-M`) para alternar entre **Visualizar** e o modo selecionado no momento (por exemplo, **Editar**, e **Layout**).
+>* Há um [atalho de teclado](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) ( `Ctrl-Shift-M`) para alternar entre a **Visualização** e o modo selecionado no momento (por exemplo, **Editar** e **Layout**).
 >
 
 ## Seleção de caminho {#path-selection}
@@ -329,13 +329,13 @@ Geralmente, durante a criação, é necessário selecionar outro recurso, como a
 
 ### Campos de caminho   {#path-fields}
 
-O exemplo usado aqui para ilustrar é o componente de imagem. Para obter mais informações sobre como usar e editar componentes, consulte [Componentes para criação de página](/help/sites-authoring/default-components.md).
+O exemplo usado aqui para ilustrar é o componente de imagem. Para obter mais informações sobre o uso e a edição de componentes, consulte [Componentes para Criação de Página](/help/sites-authoring/default-components.md).
 
 Agora, os campos de caminho têm funcionalidade antecipada e de preenchimento automático, para facilitar a localização de um recurso.
 
 Clicar no botão **Abrir caixa de diálogo** no campo de caminho abre a caixa de diálogo [navegador de caminho](/help/sites-authoring/author-environment-tools.md#path-browser) para permitir opções mais detalhadas de seleção.
 
-![Abrir caixa de diálogo da seleção](do-not-localize/screen_shot_2018-03-22at154427.png)
+![Abrir Caixa de Diálogo de Seleção](do-not-localize/screen_shot_2018-03-22at154427.png)
 
 Como alternativa, comece a digitar no campo de caminho e o AEM oferece caminhos correspondentes à medida que você digita.
 
@@ -347,7 +347,7 @@ O navegador de caminho é organizado da mesma maneira que a [exibição de colun
 
 ![screen_shot_2018-03-22at154521](assets/screen_shot_2018-03-22at154521.png)
 
-* Após selecionar um recurso, o botão **Selecionar** no canto superior direito da caixa de diálogo se torna ativo. Clique em para confirmar a seleção ou **Cancelar** para suspender.
+* Após selecionar um recurso, o botão **Selecionar** no canto superior direito da caixa de diálogo se torna ativo. Clique para confirmar a seleção ou **Cancelar** para anular.
 * Se o contexto permite a seleção de vários recursos, selecionar um recurso também ativa o botão **Selecionar**, mas, além disso, adiciona uma contagem do número de recursos selecionados no canto superior direito da janela. Clique em **X** ao lado do número para desmarcar tudo.
 * Ao navegar pela árvore, sua localização é refletida na navegação estrutural na parte superior da caixa de diálogo. Essas navegações estruturais também podem ser usadas para saltar rapidamente dentro da hierarquia de recursos.
 * A qualquer momento, você pode usar o campo de pesquisa na parte superior da caixa de diálogo. Clique no **X** no campo de pesquisa para limpar a pesquisa.

@@ -36,7 +36,7 @@ As operações do AEM Forms podem ser executadas usando a API altamente tipada d
 
 ## Início rápido (modo SOAP): importação de credenciais usando a API Java™ {#quick-start-soap-mode-importing-credentials-using-the-java-api}
 
-O exemplo de código a seguir importa uma credencial com base em um arquivo chamado *cred.p12*. O valor de alias usado para importar a credencial é `Secure`. (Consulte [Importando Credenciais usando a API do Gerenciador de Confiança](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api).)
+O exemplo de código a seguir importa uma credencial com base em um arquivo denominado *cred.p12*. O valor de alias usado para importar a credencial é `Secure`. (Consulte [Importar Credenciais usando a API do Gerenciador de Confiança](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api).)
 
 ```java
  /*
@@ -137,7 +137,7 @@ O exemplo de código a seguir importa uma credencial com base em um arquivo cham
 
 ## Início rápido (modo SOAP): exclusão de credenciais usando a API Java™ {#quick-start-soap-mode-deleting-credentials-using-the-java-api}
 
-O código de exemplo a seguir exclui uma credencial baseada em um valor de alias *seguro*. (Consulte [Excluindo Credenciais usando a API do Gerenciador de Confiança](/help/forms/developing/credentials.md#deleting-credentials-by-using-the-trust-manager-api).)
+O código de exemplo a seguir exclui uma credencial baseada em um valor de alias *secure*. (Consulte [Excluindo Credenciais usando a API do Gerenciador de Confiança](/help/forms/developing/credentials.md#deleting-credentials-by-using-the-trust-manager-api).)
 
 ```java
  /*

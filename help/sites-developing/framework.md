@@ -22,8 +22,8 @@ ht-degree: 0%
 
 A marcação permite que o conteúdo seja categorizado e organizado. As tags podem ser classificadas por um namespace e uma taxonomia. Para obter informações detalhadas sobre o uso de tags:
 
-* Consulte o documento [Uso de tags](/help/sites-authoring/tags.md) para obter informações sobre como marcar conteúdo como autor de conteúdo.
-* Consulte o documento [Administração de tags](/help/sites-administering/tags.md) para obter a perspectiva de um administrador sobre a criação e o gerenciamento de tags e a quais tags de conteúdo foram aplicadas.
+* Consulte o documento [Usando Tags](/help/sites-authoring/tags.md) para obter informações sobre como marcar conteúdo como autor de conteúdo.
+* Consulte o documento [Administração de tags](/help/sites-administering/tags.md) para obter a perspectiva de um administrador sobre como criar e gerenciar tags e para quais tags de conteúdo foram aplicadas.
 
 Este artigo se concentra na estrutura subjacente que oferece suporte à marcação no AEM e em como usá-lo como desenvolvedor.
 
@@ -31,16 +31,16 @@ Este artigo se concentra na estrutura subjacente que oferece suporte à marcaç�
 
 Para marcar conteúdo e usar a infraestrutura de marcação AEM:
 
-* A tag deve existir como um nó do tipo `[cq:Tag](#tags-cq-tag-node-type)` no [nó raiz de taxonomia.](#taxonomy-root-node)
+* A marca deve existir como um nó do tipo `[cq:Tag](#tags-cq-tag-node-type)` no nó raiz de [taxonomia.](#taxonomy-root-node)
 
-* O do nó de conteúdo marcado `NodeType` deve incluir o [`cq:Taggable`](#taggable-content-cq-taggable-mixin) mixin.
-* A variável [`TagID`](#tagid) é adicionado ao do nó de conteúdo [`cq:tags`](#tagged-content-cq-tags-property) propriedade e é resolvido para um nó do tipo ` [cq:Tag](#tags-cq-tag-node-type)`.
+* O nó de conteúdo marcado `NodeType` deve incluir o mixin [`cq:Taggable`](#taggable-content-cq-taggable-mixin).
+* O [`TagID`](#tagid) é adicionado à propriedade [`cq:tags`](#tagged-content-cq-tags-property) do nó de conteúdo e é resolvido para um nó do tipo ` [cq:Tag](#tags-cq-tag-node-type)`.
 
 ## Tags : cq:Tag Node Type  {#tags-cq-tag-node-type}
 
-A declaração de uma tag é capturada no repositório em um nó do tipo `cq:Tag`.
+A declaração de uma marca é capturada no repositório em um nó do tipo `cq:Tag`.
 
-Uma tag pode ser uma palavra simples (por exemplo, `sky`) ou representam uma taxonomia hierárquica (por exemplo, `fruit/apple`, ou seja, os genéricos `fruit` e, mais especificamente, `apple`).
+Uma marca pode ser uma palavra simples (por exemplo, `sky`) ou representar uma taxonomia hierárquica (por exemplo, `fruit/apple`, significando tanto o `fruit` genérico quanto o `apple` mais específico).
 
 As tags são identificadas por uma TagID exclusiva.
 
@@ -51,24 +51,24 @@ A estrutura de marcação também fornece a capacidade de restringir autores e v
 ### Características da tag {#tag-characteristics}
 
 * O tipo de nó é `cq:Tag`n
-* O nome do nó é um componente do [TagID](#tagid).
-* A variável [TagID](#tagid) sempre inclui um [namespace.](#tag-namespace)
-* A variável `jcr:title` (o título a ser exibido na interface do usuário) é opcional.
-* A variável `jcr:description` é opcional.
-* Ao conter nós filhos, a tag do é chamada de [tag container.](#container-tags)
-* A tag é armazenada no repositório abaixo de um caminho base chamado de [nó raiz de taxonomia.](#taxonomy-root-node)
+* O nome do nó é um componente de [TagID](#tagid).
+* A [TagID](#tagid) sempre inclui um [namespace.](#tag-namespace)
+* A propriedade `jcr:title` (o título a ser exibido na interface do usuário) é opcional.
+* A propriedade `jcr:description` é opcional.
+* Ao conter nós filhos, a marca é chamada de [marca de contêiner.](#container-tags)
+* A marca é armazenada no repositório abaixo de um caminho base chamado nó raiz de taxonomia [.](#taxonomy-root-node)
 
-Como as tags são simplesmente nós JCR, os nomes dos nós devem obedecer à [Convenção de nomenclatura JCR.](naming-conventions.md)
+Como as marcas são simplesmente nós JCR, os nomes dos nós devem obedecer à [convenção de nomenclatura JCR.](naming-conventions.md)
 
 ### TagID {#tagid}
 
 Uma TagID identifica um caminho que é resolvido para um nó de tag no repositório.
 
-Normalmente, a TagID é uma TagID abreviada que começa com o namespace ou pode ser uma TagID absoluta que começa com o [nó raiz de taxonomia.](#taxonomy-root-node)
+Normalmente, a TagID é uma TagID abreviada que começa com o namespace ou pode ser uma TagID absoluta que começa no [nó raiz de taxonomia.](#taxonomy-root-node)
 
-Quando o conteúdo for marcado, se ainda não existir, a variável `[cq:tags](#tagged-content-cq-tags-property)` é adicionada ao nó de conteúdo e a TagID é adicionada à propriedade `String` valor da matriz.
+Quando o conteúdo é marcado, se ainda não existir, a propriedade `[cq:tags](#tagged-content-cq-tags-property)` é adicionada ao nó de conteúdo e o TagID é adicionado ao valor da matriz `String` da propriedade.
 
-A TagID consiste em um [namespace](#tag-namespace) seguido pela TagID local. [Tags de contêiner](#container-tags) ter subtags que representam uma ordem hierárquica na taxonomia. Subtags podem ser usadas para fazer referência a tags como qualquer TagID local. Por exemplo, marcar conteúdo com `fruit` é permitido, mesmo se for uma tag container com subtags, como `fruit/apple` e `fruit/banana`.
+A TagID consiste em um [namespace](#tag-namespace) seguido pela TagID local. [Marcas de contêiner](#container-tags) têm submarcas que representam uma ordem hierárquica na taxonomia. Subtags podem ser usadas para fazer referência a tags como qualquer TagID local. Por exemplo, a marcação de conteúdo com `fruit` é permitida, mesmo que seja uma marca de contêiner com submarcas, como `fruit/apple` e `fruit/banana`.
 
 ### Nó raiz da taxonomia {#taxonomy-root-node}
 
@@ -78,25 +78,25 @@ No AEM, o caminho base é `/content/cq:tags` e o nó raiz é do tipo `cq:Folder`
 
 ### Namespace da tag {#tag-namespace}
 
-Os namespaces permitem agrupar itens. O caso de uso mais típico é um namespace por site (por exemplo, público, interno e portal) ou por aplicativo maior (por exemplo, WCM, Ativos, Comunidades). Mas os namespaces podem ser usados para várias outras necessidades. Os namespaces são usados na interface do usuário para mostrar apenas o subconjunto de tags (ou seja, tags de um determinado namespace) que é aplicável ao conteúdo atual.
+Os namespaces permitem agrupar itens. O caso de uso mais típico é um namespace por site (por exemplo, público, interno e portal) ou por aplicativo maior (por exemplo, WCM, Assets, Communities). Mas os namespaces podem ser usados para várias outras necessidades. Os namespaces são usados na interface do usuário para mostrar apenas o subconjunto de tags (ou seja, tags de um determinado namespace) que é aplicável ao conteúdo atual.
 
-O namespace da tag é o primeiro nível na subárvore de taxonomia, que é o nó imediatamente abaixo de [nó raiz de taxonomia](#taxonomy-root-node). Um namespace é um nó do tipo `cq:Tag` cujo pai não é um `cq:Tag` tipo de nó.
+O namespace da marca é o primeiro nível na subárvore de taxonomia, que é o nó imediatamente abaixo do [nó raiz de taxonomia](#taxonomy-root-node). Um namespace é um nó do tipo `cq:Tag` cujo pai não é um tipo de nó `cq:Tag`.
 
-Todas as tags têm um namespace. Se nenhum namespace for especificado, a tag será atribuída ao namespace padrão, que é TagID `default` com o título `Standard Tags`, ou seja, `/content/cq:tags/default`.
+Todas as tags têm um namespace. Se nenhum namespace for especificado, a marca será atribuída ao namespace padrão, que é TagID `default` com o título `Standard Tags`, ou seja, `/content/cq:tags/default`.
 
 ### Tags de contêiner {#container-tags}
 
-Uma tag container é um nó do tipo `cq:Tag` que contém qualquer número e tipo de nós secundários, o que permite aprimorar o modelo de tag com metadados personalizados.
+Uma marca de contêiner é um nó do tipo `cq:Tag` que contém qualquer número e tipo de nós filhos, o que permite aprimorar o modelo de marca com metadados personalizados.
 
-Além disso, tags container (ou supertags) em uma taxonomia servem como subsoma de todas as subtags. Por exemplo, conteúdo marcado com `fruit/apple` é considerado marcado com `fruit` também. Ou seja, pesquisar conteúdo marcado com `fruit` também localizaria o conteúdo marcado com `fruit/apple`.
+Além disso, tags container (ou supertags) em uma taxonomia servem como subsoma de todas as subtags. Por exemplo, o conteúdo marcado com `fruit/apple` também é considerado marcado com `fruit`. Ou seja, pesquisar conteúdo marcado com `fruit` também localizaria o conteúdo marcado com `fruit/apple`.
 
 ### Resolvendo TagIDs {#resolving-tagids}
 
-Se a TagID contiver dois pontos (`:`), os dois pontos separam o namespace da tag ou subtaxonomia, que é separada por barras (`/`). Se TagID não tiver dois pontos, o namespace padrão será considerado.
+Se a TagID contiver dois pontos (`:`), os dois pontos separarão o namespace da marca ou subtaxonomia, que é separada ainda mais com barras (`/`). Se TagID não tiver dois pontos, o namespace padrão será considerado.
 
-O local padrão e único das tags é abaixo de `/content/cq:tags`.
+O local padrão e único das marcas está abaixo de `/content/cq:tags`.
 
-Marca que faz referência a caminhos ou caminhos não existentes que não apontam para um `cq:Tag` são considerados inválidos e são ignorados.
+A marca que faz referência a caminhos ou caminhos não existentes que não apontam para um nó `cq:Tag` é considerada inválida e é ignorada.
 
 A tabela a seguir mostra algumas amostras de TagIDs, seus elementos e como a TagID é resolvida para um caminho absoluto no repositório:
 
@@ -110,42 +110,42 @@ A tabela a seguir mostra algumas amostras de TagIDs, seus elementos e como a Tag
 
 ### Localização do título da tag {#localization-of-tag-title}
 
-Quando a tag inclui a string de título opcional ( `jcr:title`), é possível localizar o título para exibição adicionando a propriedade `jcr:title.<locale>`.
+Quando a marca inclui a cadeia de caracteres de título opcional ( `jcr:title`), é possível localizar o título para exibição adicionando a propriedade `jcr:title.<locale>`.
 
 Para obter mais detalhes, consulte os seguintes documentos:
 
-* [Tags em diferentes idiomas](/help/sites-developing/building.md#tags-in-different-languages), que descreve o uso das APIs
-* [Gerenciamento de tags em diferentes idiomas](/help/sites-administering/tags.md#managing-tags-in-different-languages), que descreve o uso do console de marcação
+* [Marcas em Diferentes Idiomas](/help/sites-developing/building.md#tags-in-different-languages), que descreve o uso das APIs
+* [Gerenciamento de Marcas em Diferentes Idiomas](/help/sites-administering/tags.md#managing-tags-in-different-languages), que descreve o uso do console de marcação
 
 ### Controle de acesso {#access-control}
 
-As tags existem como nós no repositório, na variável [nó raiz de taxonomia](#taxonomy-root-node). Permitir ou negar que autores e visitantes do site criem tags em um determinado namespace pode ser obtido definindo ACLs apropriadas no repositório.
+As marcas existem como nós no repositório no [nó raiz de taxonomia](#taxonomy-root-node). Permitir ou negar que autores e visitantes do site criem tags em um determinado namespace pode ser obtido definindo ACLs apropriadas no repositório.
 
 Além disso, negar permissões de leitura para determinadas tags ou namespaces controla a capacidade de aplicar tags a um conteúdo específico.
 
 Uma prática típica inclui:
 
-* Permitindo que o `tag-administrators` acesso de gravação de grupo/função a todos os namespaces (adicionar/modificar em `/content/cq:tags`). Esse grupo vem com AEM pronto para uso.
+* Permitindo acesso de gravação de grupo/função `tag-administrators` a todos os namespaces (adicionar/modificar em `/content/cq:tags`). Esse grupo vem com AEM pronto para uso.
 * Permitir que usuários/autores leiam todos os namespaces que devem ser legíveis para eles (principalmente todos).
-* Permitir que usuários/autores gravem acesso aos namespaces em que as tags devem ser definidas livremente por usuários/autores (adicione um nó sob `/content/cq:tags/some_namespace`)
+* Permitir que usuários/autores gravem acesso aos namespaces em que as marcas devem ser definidas livremente por usuários/autores (adicione um nó sob `/content/cq:tags/some_namespace`)
 
 ## Conteúdo Marcável : cq:Taggable Mixin {#taggable-content-cq-taggable-mixin}
 
-Para que os desenvolvedores de aplicativos anexem a marcação a um tipo de conteúdo, o registro do nó ([CND](https://jackrabbit.apache.org/jcr/node-type-notation.html)) devem incluir a `cq:Taggable` mixin ou o `cq:OwnerTaggable` mixin.
+Para que os desenvolvedores de aplicativos anexem a marcação a um tipo de conteúdo, o registro do nó ([CND](https://jackrabbit.apache.org/jcr/node-type-notation.html)) deve incluir o mixin `cq:Taggable` ou `cq:OwnerTaggable`.
 
-A variável `cq:OwnerTaggable` mixin, que herda de `cq:Taggable`, destina-se a indicar que o conteúdo pode ser classificado pelo proprietário/autor. No AEM, é apenas um atributo do `cq:PageContent` nó. A variável `cq:OwnerTaggable` O mixin não é exigido pela estrutura de marcação.
+O mixin `cq:OwnerTaggable`, que herda de `cq:Taggable`, destina-se a indicar que o conteúdo pode ser classificado pelo proprietário/autor. No AEM, é apenas um atributo do nó `cq:PageContent`. O mixin `cq:OwnerTaggable` não é exigido pela estrutura de marcação.
 
 >[!NOTE]
 >
->É recomendável ativar tags somente no nó de nível superior de um item de conteúdo agregado (ou em sua `jcr:content` nó). Os exemplos incluem:
+>É recomendável habilitar tags somente no nó de nível superior de um item de conteúdo agregado (ou em seu nó `jcr:content`). Os exemplos incluem:
 >
->* Páginas (`cq:Page`) em que o `jcr:content`o nó é do tipo `cq:PageContent` que inclui a `cq:Taggable` mixin
->* Ativos ( `cq:Asset`) em que o `jcr:content/metadata` o nó sempre tem o `cq:Taggable` mixin
+>* Páginas (`cq:Page`) onde o nó `jcr:content` é do tipo `cq:PageContent` que inclui o mixin `cq:Taggable`
+>* Assets ( `cq:Asset`) onde o nó `jcr:content/metadata` sempre tem o mixin `cq:Taggable`
 >
 
 ### Notação de tipo de nó (CND) {#node-type-notation-cnd}
 
-As definições de tipo de nó existem no repositório como arquivos CND. A notação CND é definida como parte da documentação do JCR [aqui](https://jackrabbit.apache.org/jcr/node-type-notation.html).
+As definições de tipo de nó existem no repositório como arquivos CND. A notação CND é definida como parte da documentação JCR [aqui](https://jackrabbit.apache.org/jcr/node-type-notation.html).
 
 As definições essenciais para os Tipos de nós incluídos no AEM são as seguintes:
 
@@ -166,56 +166,56 @@ As definições essenciais para os Tipos de nós incluídos no AEM são as segui
 
 ## Conteúdo marcado: cq:tags Propriedade {#tagged-content-cq-tags-property}
 
-A variável `cq:tags` propriedade é um `String` Matriz usada para armazenar uma ou mais TagIDs quando elas são aplicadas ao conteúdo por autores ou visitantes do site. A propriedade só tem significado quando adicionada a um nó definido com o `[cq:Taggable](#taggable-content-cq-taggable-mixin)` mixin.
+A propriedade `cq:tags` é uma matriz `String` usada para armazenar uma ou mais TagIDs quando elas são aplicadas ao conteúdo por autores ou visitantes do site. A propriedade só tem significado quando adicionada a um nó definido com o mixin `[cq:Taggable](#taggable-content-cq-taggable-mixin)`.
 
 >[!NOTE]
 >
->Para usar a funcionalidade de marcação AEM, os aplicativos desenvolvidos de forma personalizada não devem definir propriedades de tag diferentes de `cq:tags`.
+>Para usar a funcionalidade de marcação AEM, os aplicativos personalizados desenvolvidos não devem definir propriedades de marca diferentes de `cq:tags`.
 
 ## Mover e mesclar tags {#moving-and-merging-tags}
 
-Veja a seguir uma descrição dos efeitos no repositório ao mover ou mesclar tags usando o [console de marcação](/help/sites-administering/tags.md):
+Esta é uma descrição dos efeitos no repositório ao mover ou mesclar marcas usando o [console de marcação](/help/sites-administering/tags.md):
 
 * Quando uma tag A é movida ou mesclada na tag B em `/content/cq:tags`:
 
-   * A tag A não é excluída e obtém um `cq:movedTo` propriedade.
-   * A tag B é criada (se houver uma movimentação) e obtém um `cq:backlinks` propriedade.
+   * A tag A não é excluída e obtém uma propriedade `cq:movedTo`.
+   * A marca B é criada (se houver uma movimentação) e obtém uma propriedade `cq:backlinks`.
 
-* `cq:movedTo` aponta para a tag B.
+* `cq:movedTo` pontos para a marca B.
 
    * Essa propriedade significa que a tag A foi movida ou mesclada na tag B. Mover a tag B atualiza essa propriedade de acordo. A tag A fica oculta e é mantida somente no repositório para resolver IDs de tag em nós de conteúdo que apontam para a tag A. O coletor de lixo da tag remove tags como a tag A assim que os nós de conteúdo não apontam mais para elas.
 
-   * Um valor especial para o `cq:movedTo` propriedade é `nirvana`. Ele é aplicado quando a tag é excluída, mas não pode ser removida do repositório porque há subtags com uma `cq:movedTo` que deve ser mantido.
+   * Um valor especial para a propriedade `cq:movedTo` é `nirvana`. Ele é aplicado quando a tag é excluída, mas não pode ser removida do repositório porque há subtags com um `cq:movedTo` que deve ser mantido.
 
   >[!NOTE]
   >
-  >A variável `cq:movedTo` A propriedade só será adicionada à tag movida ou mesclada se qualquer uma dessas condições for atendida:
+  >A propriedade `cq:movedTo` só será adicionada à marca movida ou mesclada se qualquer uma destas condições for atendida:
   >
   >1. Tag for usada no conteúdo (significando que tem uma referência) ou
   >1. A tag tem filhos que já foram movidos.
 
-* `cq:backlinks` mantém as referências na outra direção. Ou seja, ela mantém uma lista de todas as tags que foram movidas ou mescladas com a tag B. Isso é necessário principalmente para manter `cq:movedTo` propriedades atualizadas quando a tag B é movida/mesclada/excluída ou quando a tag B é ativada, nesse caso, todas as tags de backlinks também devem ser ativadas.
+* `cq:backlinks` mantém as referências na outra direção. Ou seja, ela mantém uma lista de todas as tags que foram movidas ou mescladas com a tag B. Isso é necessário principalmente para manter as propriedades `cq:movedTo` atualizadas quando a tag B também é movida/mesclada/excluída ou quando a tag B é ativada, caso em que todas as tags de backlinks também devem ser ativadas.
 
   >[!NOTE]
   >
-  >A variável `cq:backlinks` A propriedade só será adicionada à tag movida ou mesclada se qualquer uma dessas condições for atendida:
+  >A propriedade `cq:backlinks` só será adicionada à marca movida ou mesclada se qualquer uma destas condições for atendida:
   >
   >1. A tag é usada no conteúdo (o que significa que tem uma referência) OU
   >1. A tag tem filhos que já foram movidos.
 
-* Ler um `cq:tags` A propriedade de um nó de conteúdo envolve a seguinte resolução:
+* A leitura de uma propriedade `cq:tags` de um nó de conteúdo envolve a seguinte resolução:
 
-   1. Se não houver correspondência em `/content/cq:tags`, nenhuma tag é retornada.
+   1. Se não houver correspondência em `/content/cq:tags`, nenhuma tag será retornada.
 
-   1. Se a tag tiver uma `cq:movedTo` for definida, a ID da tag referenciada será seguida.
+   1. Se a marca tiver um conjunto de propriedades `cq:movedTo`, a ID de marca referenciada será seguida.
 
-      * Esta etapa é repetida desde que a tag seguida tenha uma `cq:movedTo` propriedade.
+      * Esta etapa será repetida desde que a marca seguida tenha uma propriedade `cq:movedTo`.
 
-   1. Se a tag seguida não tiver um `cq:movedTo` propriedade, a tag será lida.
+   1. Se a marca seguida não tiver uma propriedade `cq:movedTo`, a marca será lida.
 
-* Para publicar a alteração quando uma tag tiver sido movida ou mesclada, a variável `cq:Tag` e todos os seus backlinks devem ser replicados. Isso é feito automaticamente quando a tag é ativada no console de administração de tags.
+* Para publicar a alteração quando uma marca for movida ou mesclada, o nó `cq:Tag` e todos os seus backlinks deverão ser replicados. Isso é feito automaticamente quando a tag é ativada no console de administração de tags.
 
-* Atualizações posteriores no da página `cq:tags` propriedade limpa automaticamente as referências antigas. Isso é acionado porque a resolução de uma tag movida pela API retorna a tag de destino, fornecendo a ID da tag de destino.
+* Atualizações posteriores na propriedade `cq:tags` da página limpam automaticamente as referências antigas. Isso é acionado porque a resolução de uma tag movida pela API retorna a tag de destino, fornecendo a ID da tag de destino.
 
 >[!NOTE]
 >
@@ -223,6 +223,6 @@ Veja a seguir uma descrição dos efeitos no repositório ao mover ou mesclar ta
 
 ## Migração de tags {#tags-migration}
 
-A partir do Adobe Experience Manager 6.4, as tags são armazenadas no `/content/cq:tags` Considerando que as versões anteriores armazenavam tags em `/etc/tags`.
+A partir do Adobe Experience Manager 6.4, as tags são armazenadas em `/content/cq:tags`, enquanto as versões anteriores armazenavam tags em `/etc/tags`.
 
-Sempre que atualizar um sistema AEM de uma versão anterior à 6.4, as tags devem ser migradas para `/content/cq:tags`. Consulte [Reestruturação do repositório comum no AEM 6.5](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#tags) para obter mais informações.
+Sempre que atualizar um sistema AEM de uma versão anterior à 6.4, as tags devem ser migradas para o `/content/cq:tags`. Consulte [Reestruturação do repositório comum no AEM 6.5](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#tags) para obter mais informações.

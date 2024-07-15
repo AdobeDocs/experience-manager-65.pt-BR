@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Integração de landing pages ao Adobe Analytics{#integrating-landing-pages-with-adobe-analytics}
 
-A AEM integrou a solução de landing pages com [Adobe Analytics](https://www.omniture.com/en/products/analytics/sitecatalyst) usando os seguintes componentes de chamada para ação (CTA):
+O AEM integrou a solução de páginas de aterrissagem com o [Adobe Analytics](https://www.omniture.com/en/products/analytics/sitecatalyst) usando os seguintes componentes de chamada para ação (CTA):
 
 1. Componente de Click Through
 1. Componente Link gráfico
@@ -27,11 +27,11 @@ Esses componentes expõem determinados atributos que podem ser mapeados por meio
 
 ## Pré-requisitos {#prerequisites}
 
-A Adobe recomenda que você passe pelo [integração AEM-Adobe Analytics existente](/help/sites-administering/adobeanalytics.md) para entender como essa integração funciona.
+A Adobe recomenda que você passe pela [integração AEM-Adobe Analytics existente](/help/sites-administering/adobeanalytics.md) para entender como essa integração funciona.
 
 ## Componentes disponíveis para mapeamento {#components-available-for-mapping}
 
-No caso do AEM, a **Chamada para ação** componentes - **ClickThroughLink** e **GraphicalLink** - exibido aqui no sidekick, pode ser mapeado para variáveis do Adobe Analytics.
+No AEM, os componentes de **Chamada para Ação** - **ClickThroughLink** e **GraphicalLink** - exibidos aqui no sidekick, podem ser mapeados para variáveis do Adobe Analytics.
 
 ![chlimage_1-21](assets/chlimage_1-21a.jpeg)
 
@@ -88,7 +88,7 @@ Para mapear componentes da página de aterrissagem para o Adobe Analytics:
 </table>
 
 1. Mapeie esses atributos expostos com qualquer variável do Adobe Analytics no localizador de conteúdo. A estrutura agora está pronta para uso.
-1. Agora você pode criar uma página de aterrissagem ou abrir uma página de aterrissagem existente com componentes CTA existentes e clicar em **Cloud Service** guia em **Propriedades da página** no sidekick (na interface otimizada para toque, selecione **Abrir propriedades** e clique em **Cloud Service**) e configurar a estrutura para usar com a landing page. Selecione a estrutura na lista suspensa.
+1. Agora você pode criar uma página de aterrissagem ou abrir uma página de aterrissagem existente com componentes do CTA existentes e clicar na guia **Cloud Service** em **Propriedades da página** no sidekick (na interface otimizada para toque, selecione **Abrir propriedades** e clique em **Cloud Service**) e configurar a estrutura para usar com a página de aterrissagem. Selecione a estrutura na lista suspensa.
 
    ![chlimage_1-25](assets/chlimage_1-25a.png)
 

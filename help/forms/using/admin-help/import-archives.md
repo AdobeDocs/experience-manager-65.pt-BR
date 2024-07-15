@@ -39,12 +39,12 @@ Use a guia arquivos para importar e gerenciar LCAs criadas no workbench.
 1. Se você clicar em Configurar, a página Configurar Pontos de Extremidade será exibida, onde você poderá fazer as alterações necessárias:
 
    * Para renomear um endpoint ou editar sua descrição, clique nele.
-   * Para adicionar um ponto de extremidade do Gerenciador de tarefas, clique em Adicionar Gerenciador de tarefas. Para obter detalhes sobre as configurações do Gerenciador de tarefas, consulte [Configurar pontos de extremidade do Gerenciador de tarefas](/help/forms/using/admin-help/configuring-task-manager-endpoints.md#configuring-task-manager-endpoints).
-   * Para adicionar um endpoint de Pasta monitorada, clique em Adicionar WatchedFolder. Para obter detalhes sobre as configurações da Pasta monitorada, consulte [Configurações de ponto de extremidade da pasta monitoradas](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#watched-folder-endpoint-settings).
-   * Para adicionar um terminal de email, clique em Adicionar email. Para obter detalhes sobre as configurações de email, consulte [Configurações de ponto de extremidade de email](/help/forms/using/admin-help/configuring-email-endpoints.md#email-endpoint-settings).
+   * Para adicionar um ponto de extremidade do Gerenciador de tarefas, clique em Adicionar Gerenciador de tarefas. Para obter detalhes sobre as configurações do Gerenciador de Tarefas, consulte [Configurando pontos de extremidade do Gerenciador de Tarefas](/help/forms/using/admin-help/configuring-task-manager-endpoints.md#configuring-task-manager-endpoints).
+   * Para adicionar um endpoint de Pasta monitorada, clique em Adicionar WatchedFolder. Para obter detalhes sobre as configurações da Pasta monitorada, consulte [configurações do ponto de extremidade da pasta monitorada](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#watched-folder-endpoint-settings).
+   * Para adicionar um terminal de email, clique em Adicionar email. Para obter detalhes sobre as configurações de Email, consulte [Configurações de ponto de extremidade de email](/help/forms/using/admin-help/configuring-email-endpoints.md#email-endpoint-settings).
    * Para adicionar um ponto final EJB, clique em Adicionar EJB e especifique um nome e uma descrição para o ponto final.
    * Para adicionar um endpoint de SOAP, clique em Adicionar SOAP e especifique um nome e uma descrição para o endpoint.
-   * Para adicionar um ponto de extremidade Remoting, clique em Adicionar Remoting. Para obter detalhes sobre as configurações de comunicação remota, consulte [Configurações de ponto de extremidade de comunicação remota](/help/forms/using/admin-help/configuring-remoting-endpoints.md#remoting-endpoint-settings).
+   * Para adicionar um ponto de extremidade Remoting, clique em Adicionar Remoting. Para obter detalhes sobre as configurações de Comunicação Remota, consulte [Configurações de ponto de extremidade de Comunicação Remota](/help/forms/using/admin-help/configuring-remoting-endpoints.md#remoting-endpoint-settings).
    * Para adicionar um endpoint REST, clique em Add REST e especifique um nome e uma descrição para o endpoint. Observe o URL de invocação REST exibido na página Adicionar Ponto de Extremidade REST.
    * Para remover um endpoint, marque a caixa de seleção ao lado dele e clique em Remover.
 
@@ -52,33 +52,33 @@ Use a guia arquivos para importar e gerenciar LCAs criadas no workbench.
 1. Se um processo ou serviço no LCA tiver parâmetros de configuração, será exibida uma página Configurar Parâmetros, onde você configura os parâmetros de serviço e clica em Próximo.
 1. Na página Configurar perfil de segurança, faça as alterações necessárias:
 
-   * **Exigir que os chamadores autentiquem:** Esta configuração indica se o serviço pode ser chamado com ou sem credenciais.
+   * **Exigir que chamadores se autentiquem:** Esta configuração indica se o serviço pode ser chamado com ou sem credenciais.
 
-     Se *Atualmente, os chamadores são necessários para autenticar* for exibido, o chamador do serviço deverá ser autenticado e o usuário principal desse chamador deverá estar autorizado a chamar o serviço; caso contrário, a tentativa de invocação será recusada. Para remover a necessidade de autenticação, clique em Permitir chamadores não autenticados.
+     Se *Chamadores são necessários para autenticar* no momento, o chamador do serviço deve ser autenticado e a entidade de usuário desse chamador deve ser autorizada a invocar o serviço; caso contrário, a tentativa de invocação será recusada. Para remover a necessidade de autenticação, clique em Permitir chamadores não autenticados.
 
-     Se *Os chamadores não precisam se autenticar* for exibido, o chamador do serviço não precisará ser autenticado. A invocação do serviço sempre terá êxito porque não há verificação de autorização. Para exigir autenticação, clique em Exigir autenticação dos chamadores.
+     Se *Chamadores não são necessários para autenticar* for exibido, o chamador do serviço não precisa ser autenticado. A invocação do serviço sempre terá êxito porque não há verificação de autorização. Para exigir autenticação, clique em Exigir autenticação dos chamadores.
 
    * **Executar como:** Especifica a identidade de tempo de execução usada por um serviço depois de ter sido chamado. Para alterar essa opção, clique em Alterar. Escolha entre as seguintes opções:
 
      **Não especificado:** O comportamento padrão é usado.
 
-     **Chamador:** Usa a mesma identidade do usuário que chamou o serviço.
+     **Chamador:** Usa a mesma identidade do usuário que invocou o serviço.
 
      **Sistema:** Executa o serviço com privilégios totais. Essa é a configuração padrão para processos de longa duração.
 
-     **Usuário nomeado:** Permite executar o serviço como um usuário específico. Essa é a configuração padrão para processos de vida curta. Ao selecionar essa opção, clique em Selecionar Usuário para exibir a página Selecionar Principal, onde você pode pesquisar e selecionar o usuário.
+     **Usuário Nomeado:** Permite que você execute o serviço como um usuário específico. Essa é a configuração padrão para processos de vida curta. Ao selecionar essa opção, clique em Selecionar Usuário para exibir a página Selecionar Principal, onde você pode pesquisar e selecionar o usuário.
 
    * Para adicionar um principal ao perfil de segurança, clique em Adicionar principal e selecione o usuário ou grupo a ser adicionado como principal. Clique em Próximo e selecione as permissões que deseja atribuir a este principal:
 
-     **INVOKE_PERM:** Para chamar todas as operações no serviço
+     **INVOKE_PERM:** Para invocar todas as operações no serviço
 
      **MODIFY_CONFIG_PERM:** Para modificar a configuração de um serviço
 
-     **SUPERVISOR_PERM:** Para exibir dados da instância do processo para um serviço criado a partir de um processo
+     **SUPERVISOR_PERM:** Para exibir dados de instância de processo para um serviço criado a partir de um processo
 
      **START_STOP_PERM:** Para iniciar e parar um serviço
 
-     **ADD_REMOVE_ENDPOINTS_PERM:** Para adicionar, remover e modificar endpoints de um serviço
+     **ADD_REMOVE_ENDPOINTS_PERM:** Para adicionar, remover e modificar pontos de extremidade para um serviço
 
      **CREATE_VERSION_PERM:** Para criar uma versão do serviço
 
@@ -106,12 +106,12 @@ Use a guia arquivos para importar e gerenciar LCAs criadas no workbench.
 1. A página Configurar Pontos de Extremidade é exibida, onde você pode fazer as alterações necessárias:
 
    * Para renomear um endpoint ou editar sua descrição, clique nele.
-   * Para adicionar um ponto de extremidade do Gerenciador de tarefas, clique em Adicionar Gerenciador de tarefas. Para obter detalhes sobre as configurações do Gerenciador de tarefas, consulte [Configurar pontos de extremidade do Gerenciador de tarefas](/help/forms/using/admin-help/configuring-task-manager-endpoints.md#configuring-task-manager-endpoints).
-   * Para adicionar um endpoint de Pasta monitorada, clique em Adicionar WatchedFolder. Para obter detalhes sobre as configurações da Pasta monitorada, consulte [Configurações de ponto de extremidade da pasta monitoradas](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#watched-folder-endpoint-settings).
-   * Para adicionar um terminal de email, clique em Adicionar email. Para obter detalhes sobre as configurações de email, consulte [Configurações de ponto de extremidade de email](/help/forms/using/admin-help/configuring-email-endpoints.md#email-endpoint-settings).
+   * Para adicionar um ponto de extremidade do Gerenciador de tarefas, clique em Adicionar Gerenciador de tarefas. Para obter detalhes sobre as configurações do Gerenciador de Tarefas, consulte [Configurando pontos de extremidade do Gerenciador de Tarefas](/help/forms/using/admin-help/configuring-task-manager-endpoints.md#configuring-task-manager-endpoints).
+   * Para adicionar um endpoint de Pasta monitorada, clique em Adicionar WatchedFolder. Para obter detalhes sobre as configurações da Pasta monitorada, consulte [configurações do ponto de extremidade da pasta monitorada](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#watched-folder-endpoint-settings).
+   * Para adicionar um terminal de email, clique em Adicionar email. Para obter detalhes sobre as configurações de Email, consulte [Configurações de ponto de extremidade de email](/help/forms/using/admin-help/configuring-email-endpoints.md#email-endpoint-settings).
    * Para adicionar um ponto final EJB, clique em Adicionar EJB e especifique um nome e uma descrição para o ponto final.
    * Para adicionar um endpoint de SOAP, clique em Adicionar SOAP e especifique um nome e uma descrição para o endpoint.
-   * Para adicionar um ponto de extremidade Remoting, clique em Adicionar Remoting. Para obter detalhes sobre as configurações de comunicação remota, consulte [Configurações de ponto de extremidade de comunicação remota](/help/forms/using/admin-help/configuring-remoting-endpoints.md#remoting-endpoint-settings).
+   * Para adicionar um ponto de extremidade Remoting, clique em Adicionar Remoting. Para obter detalhes sobre as configurações de Comunicação Remota, consulte [Configurações de ponto de extremidade de Comunicação Remota](/help/forms/using/admin-help/configuring-remoting-endpoints.md#remoting-endpoint-settings).
    * Para adicionar um endpoint REST, clique em Add REST e especifique um nome e uma descrição para o endpoint. Observe o URL de invocação REST exibido na página Adicionar Ponto de Extremidade REST.
    * Para remover um endpoint, marque a caixa de seleção ao lado dele e clique em Remover.
 
@@ -119,33 +119,33 @@ Use a guia arquivos para importar e gerenciar LCAs criadas no workbench.
 1. Se um processo ou serviço no LCA tiver parâmetros de configuração, será exibida uma página Configurar Parâmetros, onde você configura os parâmetros de serviço e clica em Próximo.
 1. Na página Configurar perfil de segurança, você pode fazer as alterações necessárias:
 
-   * **Exigir que os chamadores autentiquem:** Esta configuração indica se o serviço pode ser chamado com ou sem credenciais.
+   * **Exigir que chamadores se autentiquem:** Esta configuração indica se o serviço pode ser chamado com ou sem credenciais.
 
-     Se *Atualmente, os chamadores são necessários para autenticar* for exibido, o chamador do serviço deverá ser autenticado e o usuário principal desse chamador deverá estar autorizado a chamar o serviço; caso contrário, a tentativa de invocação será recusada. Para remover a necessidade de autenticação, clique em Permitir chamadores não autenticados.
+     Se *Chamadores são necessários para autenticar* no momento, o chamador do serviço deve ser autenticado e a entidade de usuário desse chamador deve ser autorizada a invocar o serviço; caso contrário, a tentativa de invocação será recusada. Para remover a necessidade de autenticação, clique em Permitir chamadores não autenticados.
 
-     Se *Os chamadores não precisam se autenticar* for exibido, o chamador do serviço poderá ou não ser autenticado. A invocação do serviço sempre terá êxito porque não há verificação de autorização. Para exigir autenticação, clique em Exigir autenticação dos chamadores.
+     Se *Chamadores não são necessários para autenticar* for exibido, o chamador do serviço pode ou não ser autenticado. A invocação do serviço sempre terá êxito porque não há verificação de autorização. Para exigir autenticação, clique em Exigir autenticação dos chamadores.
 
    * **Executar como:** Especifica a identidade de tempo de execução usada por um serviço depois de ter sido chamado. Para alterar essa opção, clique em Alterar. Escolha entre as seguintes opções:
 
      **Não especificado:** O comportamento padrão é usado.
 
-     **Chamador:** Usa a mesma identidade do usuário que chamou o serviço.
+     **Chamador:** Usa a mesma identidade do usuário que invocou o serviço.
 
      **Sistema:** Executa o serviço com privilégios totais. Essa é a configuração padrão para processos de longa duração.
 
-     **Usuário nomeado:** Permite executar o serviço como um usuário específico. Essa é a configuração padrão para processos de vida curta. Ao selecionar essa opção, clique em Selecionar Usuário para exibir a página Selecionar Principal, onde você pode pesquisar e selecionar o usuário.
+     **Usuário Nomeado:** Permite que você execute o serviço como um usuário específico. Essa é a configuração padrão para processos de vida curta. Ao selecionar essa opção, clique em Selecionar Usuário para exibir a página Selecionar Principal, onde você pode pesquisar e selecionar o usuário.
 
    * Para adicionar um principal ao perfil de segurança, clique em Adicionar principal e selecione o usuário ou grupo a ser adicionado como principal. Clique em Próximo e selecione as permissões que deseja atribuir a este principal:
 
-     **INVOKE_PERM:** Para chamar todas as operações no serviço
+     **INVOKE_PERM:** Para invocar todas as operações no serviço
 
      **MODIFY_CONFIG_PERM:** Para modificar a configuração de um serviço
 
-     **SUPERVISOR_PERM:** Para exibir dados da instância do processo para um serviço criado a partir de um processo
+     **SUPERVISOR_PERM:** Para exibir dados de instância de processo para um serviço criado a partir de um processo
 
      **START_STOP_PERM:** Para iniciar e parar um serviço
 
-     **ADD_REMOVE_ENDPOINTS_PERM:** Para adicionar, remover e modificar endpoints de um serviço
+     **ADD_REMOVE_ENDPOINTS_PERM:** Para adicionar, remover e modificar pontos de extremidade para um serviço
 
      **CREATE_VERSION_PERM:** Para criar uma versão do serviço
 

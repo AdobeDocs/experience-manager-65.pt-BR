@@ -22,21 +22,21 @@ A seção a seguir aborda alguns problemas que você poderá enfrentar ao usar o
 
 >[!NOTE]
 >
->Em caso de problemas, vale a pena também verificar a lista de [Problemas conhecidos](/help/release-notes/release-notes.md) para sua instância (versão e service packs).
+>Quando você tiver problemas, também vale a pena verificar a lista de [Problemas conhecidos](/help/release-notes/release-notes.md) para sua instância (versão e service packs).
 
 >[!NOTE]
 >
->Os usuários que têm privilégios de administrador e desejam solucionar problemas com AEM podem usar os métodos de solução de problemas descritos em [Solução de problemas do AEM (para administradores)](/help/sites-administering/troubleshoot.md). Se você não tiver privilégios suficientes, consulte o administrador do sistema para obter informações sobre como solucionar problemas de AEM.
+>Os usuários que têm privilégios de administrador e que desejam solucionar problemas com AEM podem usar os métodos de solução de problemas descritos em [Solução de problemas com AEM (para Administradores)](/help/sites-administering/troubleshoot.md). Se você não tiver privilégios suficientes, consulte o administrador do sistema para obter informações sobre como solucionar problemas de AEM.
 
 ## A versão antiga da página ainda está no site publicado {#old-page-version-still-on-published-site}
 
 * **Problema**:
 
-   * Você fez alterações em uma página e a replicou para o site de publicação, mas a variável *antigo* A versão da página ainda está sendo exibida no site de publicação.
+   * Você fez alterações em uma página e a replicou para o site de publicação, mas a versão *antiga* da página ainda está sendo exibida no site de publicação.
 
 * **Motivo**:
 
-   * Isso pode ter várias causas, mais frequentemente o cache (seu navegador local ou o Dispatcher), embora possa, às vezes, ser um problema com a fila de replicação.
+   * Isso pode ter várias causas, mais frequentemente o cache (o navegador local ou o Dispatcher), embora possa, às vezes, ser um problema com a fila de replicação.
 
 * **Soluções**:
 
@@ -69,11 +69,11 @@ A seção a seguir aborda alguns problemas que você poderá enfrentar ao usar o
 
 * **Problema:**
 
-   * Ao usar o **Localizar e substituir** opção, pode acontecer que nem todas as instâncias da `find` termo são substituídos em uma página.
+   * Ao usar a opção **Localizar e Substituir**, pode acontecer que nem todas as instâncias do termo `find` sejam substituídas em uma página.
 
 * **Motivo**:
 
-   * A capacidade de **Localizar e substituir** depende de como o conteúdo é salvo e se ele pode ser pesquisado. Por exemplo, um texto de blog é armazenado em `jcr:text` propriedade que não está configurada para ser pesquisada. O escopo padrão para o servlet localizar e substituir abrange as seguintes propriedades:
+   * A capacidade de **Localizar e substituir** depende de como o conteúdo é salvo e se ele pode ser pesquisado. Por exemplo, um texto de blog é armazenado na propriedade `jcr:text`, que não está configurada para ser pesquisada. O escopo padrão para o servlet localizar e substituir abrange as seguintes propriedades:
 
       * `jcr:title`
       * `jcr:description`
@@ -82,6 +82,6 @@ A seção a seguir aborda alguns problemas que você poderá enfrentar ao usar o
 
 * **Solução**:
 
-   * Essas definições podem ser alteradas com a configuração para **Servlet Localizar e Substituir CQ do Dia** usando o **Console da Web**; por exemplo, em
+   * Essas definições podem ser alteradas com a configuração para o **Day CQ WCM Find Replace Servlet** usando o **Console da Web**; por exemplo, em
 
      `http://localhost:4502/system/console/configMgr`

@@ -20,9 +20,9 @@ ht-degree: 0%
 
 A página Configurações do servidor fornece acesso a várias configurações para o fluxo de trabalho de formulários:
 
-* **Configurações de email** que permitem mensagens de email de saída, juntamente com as configurações do servidor de email usadas para essas mensagens. (Consulte [Definição das configurações de email](configuring-server-settings.md#configuring-email-settings).)
-* **Configurações de notificação de tarefa** que ativam, desativam ou modificam as mensagens enviadas em notificações por email aos usuários finais e grupos com relação às suas tarefas. (Consulte [Configurar notificações para usuários e grupos](configuring-server-settings.md#configuring-notifications-for-users-and-groups).)
-* **Configurações de notificação do administrador** que ativam, desativam ou modificam as mensagens enviadas em notificações por email para tarefas administrativas. (Consulte [Configurar notificações para administradores](configuring-server-settings.md#configuring-notifications-for-administrators).)
+* **Configurações de email** que permitem mensagens de email de saída, juntamente com as configurações do servidor de email usadas para essas mensagens. (Consulte [Definindo configurações de email](configuring-server-settings.md#configuring-email-settings).)
+* **Configurações de notificação de tarefa** que habilitam, desabilitam ou modificam as mensagens enviadas em notificações por email para usuários finais e grupos em relação a suas tarefas. (Consulte [Configurar notificações para usuários e grupos](configuring-server-settings.md#configuring-notifications-for-users-and-groups).)
+* **Configurações de notificação do administrador** que habilitam, desabilitam ou modificam as mensagens enviadas em notificações por email para tarefas administrativas. (Consulte [Configurar notificações para administradores](configuring-server-settings.md#configuring-notifications-for-administrators).)
 
 ## Definição das configurações de email {#configuring-email-settings}
 
@@ -30,7 +30,7 @@ Você pode especificar uma conta de email para o Forms Server, por meio da qual 
 
 Para habilitar o envio de mensagens de email entre formulários AEM e usuários, defina as configurações de email de saída na página Configurações de email. O email de saída deve usar um servidor SMTP.
 
-Para permitir que os formulários AEM recebam e lidem com as mensagens de email recebidas dos usuários, crie um terminal de email para o serviço Tarefa Completa. (Consulte [Criar um terminal de email para o serviço de Tarefa Concluída](/help/forms/using/admin-help/configuring-email-endpoints.md#create-an-email-endpoint-for-the-complete-task-service)).
+Para permitir que os formulários AEM recebam e lidem com as mensagens de email recebidas dos usuários, crie um terminal de email para o serviço Tarefa Completa. (Consulte [Criar um ponto de extremidade de email para o serviço Concluir Tarefa](/help/forms/using/admin-help/configuring-email-endpoints.md#create-an-email-endpoint-for-the-complete-task-service)).
 
 Se seus processos forem projetados e implementados sem a necessidade de enviar um email, não será necessário configurar nenhuma das opções na página Configurações de email.
 
@@ -44,7 +44,7 @@ Se seus processos forem projetados e implementados sem a necessidade de enviar u
 
    >[!NOTE]
    >
-   >Se você estiver usando o Microsoft Exchange Server e o Endereço de email for um endereço inválido, o Microsoft Exchange Server não enviará um email para Listas de distribuição. Para resolver o problema, selecione a variável **Habilitar Comunicação Externa** separadamente para cada Lista de distribuição no servidor Microsoft Exchange.
+   >Se você estiver usando o Microsoft Exchange Server e o Endereço de email for um endereço inválido, o Microsoft Exchange Server não enviará um email para Listas de distribuição. Para resolver o problema, selecione a opção **Habilitar Comunicação Externa** separadamente para cada Lista de Distribuição no Microsoft Exchange Server.
 
 1. Clique em Salvar.
 
@@ -58,11 +58,11 @@ Se seus processos forem projetados e implementados sem a necessidade de enviar u
 >
 >O Flex Workspace está obsoleto para a versão do AEM forms.
 
-Por padrão, os emails enviados pelo AEM contêm links para o (obsoleto para o AEM forms no JEE) Flex Workspace. Você pode configurar formulários AEM para enviar emails com links para o AEM Forms Workspace. Para saber mais sobre os benefícios do AEM Forms Workspace em relação ao (obsoleto para o AEM no JEE) Flex Workspace, consulte [este](/help/forms/using/features-html-workspace-available-flex.md) artigo.
+Por padrão, os emails enviados pelo AEM contêm links para (obsoleto para o AEM forms no JEE) o Flex Workspace. Você pode configurar formulários AEM para enviar emails com links para o AEM Forms Workspace. Para saber mais sobre os benefícios do AEM Forms Workspace em relação ao (obsoleto para o AEM no JEE) Flex Workspace, consulte o artigo [this](/help/forms/using/features-html-workspace-available-flex.md).
 
 1. No console de administração, clique em Início > Serviços > Fluxo de trabalho de formulários > Configurações do servidor > Notificações de tarefa.
 1. Abra o modelo de atribuição de tarefa.
-1. Defina o modelo nas notificações de tarefa como a seguir: `https://@@notification-host@@:8080/lc/libs/ws/index.html?taskId=@@taskid@@`
+1. Defina o modelo nas notificações de tarefa para o seguinte: `https://@@notification-host@@:8080/lc/libs/ws/index.html?taskId=@@taskid@@`
 
    ```java
    https://@@notification-host@@:8080/lc/libs/ws/index.html?taskId=@@taskid@@
@@ -78,7 +78,7 @@ Você configura os seguintes tipos de notificações para usuários e grupos:
 * atribuições de tarefas
 * prazos
 
-Para gerar notificações por email para um grupo, especifique um endereço de email para o grupo no Gerenciamento de usuários. <!--Fix broken link See Setting up and organizing users -->Quando o workflow de formulários envia uma notificação por email para um grupo, cada membro do grupo que tem um endereço de email especificado recebe a notificação por email. Quando um membro do grupo recebe uma notificação por email e deseja reivindicar a tarefa, ele deve clicar no link de reivindicação na notificação por email, que abre a página de detalhes da tarefa no Workspace. A partir daí, o membro pode reivindicar ou reivindicar e abrir o item de trabalho.
+Para gerar notificações por email para um grupo, especifique um endereço de email para o grupo no Gerenciamento de usuários. <!--Fix broken link See Setting up and organizing users -->Quando o fluxo de trabalho de formulários envia uma notificação por email para um grupo, cada membro do grupo que tem um endereço de email especificado recebe a notificação por email. Quando um membro do grupo recebe uma notificação por email e deseja reivindicar a tarefa, ele deve clicar no link de reivindicação na notificação por email, que abre a página de detalhes da tarefa no Workspace. A partir daí, o membro pode reivindicar ou reivindicar e abrir o item de trabalho.
 
 >[!NOTE]
 >
@@ -196,17 +196,17 @@ Somente para Notificações de Tarefas, o workflow do Forms inclui duas configur
 >
 >O espaço de trabalho do Flex está obsoleto para a versão do AEM forms.
 
-Se sua solução for implantada em um ambiente de cluster, substitua `@@notification-host@@` com o endereço do cluster.
+Se a solução for implantada em um ambiente de cluster, substitua `@@notification-host@@` pelo endereço do cluster.
 
-`<`*PORTA* `>` é o número da porta do listener HTTP do servidor de aplicações. A porta de listener HTTP default para os servidores de aplicativos suportados é a seguinte:
+`<`*PORTA* `>` é o número da porta do ouvinte HTTP do servidor de aplicativos. A porta de listener HTTP default para os servidores de aplicativos suportados é a seguinte:
 
 **JBoss:** 8080
 
-**Oracle WebLogic Server:** 7001
+**Servidor WebLogic do Oracle:** 7001
 
 **IBM WebSphere:** 9080
 
-Para que esses URLs funcionem corretamente, substitua `<`*PORTA* `>` com o número da porta apropriado ao seu ambiente.
+Para que essas URLs funcionem corretamente, substitua `<`*PORT* `>` pelo número de porta apropriado para seu ambiente.
 
 >[!NOTE]
 >
@@ -218,23 +218,23 @@ A lista Seletor de variáveis fornece variáveis úteis que você pode arrastar 
 
 Para lembretes, atribuições de tarefas e prazos de conclusão para usuários e grupos, é possível usar as seguintes variáveis nas caixas Assunto e Modelo de notificação:
 
-**descrição** O conteúdo da propriedade Descrição, conforme definido na etapa do usuário (ponto inicial, operação Atribuir tarefa ou operação Atribuir várias tarefas) do processo no Workbench.
+**descrição** O conteúdo da propriedade Description, conforme definido na etapa do usuário (ponto inicial, operação Atribuir tarefa ou operação Atribuir várias tarefas) do processo no Workbench.
 
-**instruções** O conteúdo da propriedade Instruções da Tarefa, conforme definido na etapa do usuário do processo no Workbench.
+**instruções** o conteúdo da propriedade Instruções da tarefa, conforme definido na etapa do usuário do processo no Workbench.
 
-**notification-host** O nome do host do servidor de aplicativos do AEM Forms.
+**notification-host** O nome do host do servidor de aplicativos de formulários AEM.
 
 **process-name** O nome do processo.
 
-**nome-operação** O nome da etapa.
+**nome-da-operação** O nome da etapa.
 
-**taskid** O identificador exclusivo da tarefa atual.
+**taskid** o identificador exclusivo da tarefa atual.
 
-**ações** Produz uma lista numerada de rotas válidas (por exemplo, Aprovar, Rejeitar) em que o recipient pode clicar.
+**actions** Produz uma lista numerada de rotas válidas (por exemplo, Aprovar, Rejeitar) em que o destinatário pode clicar.
 
 Além disso, para lembretes de grupo, atribuições de tarefa de grupo e prazos finais de grupo, você também pode usar:
 
-**group-name** O nome do grupo ao qual o item de trabalho foi atribuído.
+**nome-do-grupo** O nome do grupo ao qual o item de trabalho foi atribuído.
 
 >[!NOTE]
 >
@@ -242,21 +242,21 @@ Além disso, para lembretes de grupo, atribuições de tarefa de grupo e prazos 
 
 Para ramificações interrompidas, é possível usar as seguintes variáveis nas caixas Assunto e Modelo de notificação:
 
-**branch-id** O identificador da filial.
+**branch-id** O identificador da ramificação.
 
 **process-id** O identificador de instância do processo.
 
-**notification-host** O nome do host do servidor de aplicativos do AEM Forms.
+**notification-host** O nome do host do servidor de aplicativos de formulários AEM.
 
 Para operações interrompidas, é possível usar as seguintes variáveis nas caixas Assunto e Modelo de notificação:
 
 **action-id** O identificador da operação.
 
-**branch-id** O identificador da filial.
+**branch-id** O identificador da ramificação.
 
 **process-id** O identificador de instância do processo.
 
-**notification-host** O nome do host do servidor de aplicativos do AEM Forms.
+**notification-host** O nome do host do servidor de aplicativos de formulários AEM.
 
 ### Uso de uma variável na caixa Assunto {#using-a-variable-in-the-subject-box}
 

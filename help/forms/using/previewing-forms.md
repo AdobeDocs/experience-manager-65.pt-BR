@@ -17,7 +17,7 @@ ht-degree: 2%
 
 # Pré-visualização de um formulário {#previewing-a-form}
 
-<span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) para [criação de um novo Forms adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
+O <span class="preview"> Adobe recomenda o uso de [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adicionar o Forms Adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
 
 ## Visão geral {#overview}
 
@@ -39,7 +39,7 @@ A tabela a seguir lista as opções de visualização disponíveis para diferent
   </tr>
   <tr>
    <td>Formulário PDF</td>
-   <td>Visualização e visualização do PDF com dados<br /> </td>
+   <td>Visualização e visualização de PDF com dados<br /> </td>
   </tr>
   <tr>
    <td>formulário adaptável</td>
@@ -47,18 +47,18 @@ A tabela a seguir lista as opções de visualização disponíveis para diferent
   </tr>
   <tr>
    <td>Modelo de formulário</td>
-   <td>Visualização de PDF, visualização de PDF com dados, visualização de HTML, visualização de HTML com dados<br /> </td>
+   <td>Visualização de PDF, visualização de PDF com Dados, visualização de HTML, visualização de HTML com Dados<br /> </td>
   </tr>
  </tbody>
 </table>
 
 ## Pré-visualização de um formulário {#previewing-a-form-1}
 
-1. Selecione um ativo que deseja visualizar e clique em Visualizar ![aem6forms_preview](assets/aem6forms_preview.png) na barra de ferramentas ações.
+1. Selecione um ativo que deseja visualizar e clique em Visualizar ![aem6forms_preview](assets/aem6forms_preview.png) na barra de ferramentas de ações.
 
    >[!NOTE]
    >
-   >Para selecionar um ativo, alterne para a Exibição de lista na Exibição de cartão padrão. Clique em ![aem6forms_viewlist](assets/aem6forms_viewlist.png) ou ![aem6forms_viewcard](assets/aem6forms_viewcard.png) para alternar visualizações.
+   >Para selecionar um ativo, alterne para a Exibição de lista na Exibição de cartão padrão. Clique em ![aem6forms_viewlist](assets/aem6forms_viewlist.png) ou ![aem6forms_viewcard](assets/aem6forms_viewcard.png) para alternar as exibições.
 
 1. Clicar em Visualizar lista as possíveis opções de visualização aplicáveis ao Tipo de ativo selecionado. Clique na opção desejada para renderizar o ativo selecionado em uma nova guia.
 
@@ -70,7 +70,7 @@ A tabela a seguir lista as opções de visualização disponíveis para diferent
 
 ## Exibir com dados {#preview-with-data}
 
-Ao selecionar **Visualizar com dados**, é possível ver a aparência do formulário com os dados reais inseridos. A opção Preview with Data permite fazer upload de um XML que contém dados de usuário de amostra. Os dados do usuário de exemplo são usados para preencher o formulário de visualização no formato escolhido.
+Ao selecionar **Visualizar com Dados**, você poderá ver como ficará o formulário com os dados reais inseridos. A opção Preview with Data permite fazer upload de um XML que contém dados de usuário de amostra. Os dados do usuário de exemplo são usados para preencher o formulário de visualização no formato escolhido.
 
-1. Selecione um ativo e clique em Visualizar ![aem6forms_preview](assets/aem6forms_preview.png)e selecione **Visualizar com dados**.
+1. Selecione um ativo, clique em Visualizar ![aem6forms_preview](assets/aem6forms_preview.png) e selecione **Visualizar com Dados**.
 1. Na caixa de diálogo Visualizar formulário, forneça FormData como um arquivo XML. Clique em Visualizar para renderizar o formulário com os dados mesclados do XML.

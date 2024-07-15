@@ -20,4 +20,4 @@ ht-degree: 0%
 
 **[Adicionar Clientlibs](add-clientlibs.md)**
 
-Nesse ponto, é possível explorar os recursos da comunidade na sandbox usando o [Comunidade We-Retail](../../help/sites-developing/we-retail.md), o [Guia de componentes da comunidade](components-guide.md), e [Fundamentos dos recursos](essentials.md) para referência.
+Neste ponto, é possível explorar os recursos da comunidade na sandbox usando o [We-Retail Community](../../help/sites-developing/we-retail.md), o [Guia de Componentes da Comunidade](components-guide.md) e o [Feature Essentials](essentials.md) como referência.

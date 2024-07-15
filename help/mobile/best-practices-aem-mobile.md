@@ -30,13 +30,13 @@ Criar um aplicativo AEM Mobile On-demand Services é diferente de criar um aplic
 >
 >Para saber mais detalhes sobre plug-ins, consulte os seguintes recursos:
 >
->* [Utilização de plug-ins do Cordova no AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/cordova-api.html)
->* [Uso de plug-ins específicos do AEM Mobile habilitados para Cordova](https://helpx.adobe.com/digital-publishing-solution/help/app-runtime-api.html)
+>* [Usando plug-ins do Cordova no AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/cordova-api.html)
+>* [Usando plug-ins habilitados para Cordova específicos do AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/app-runtime-api.html)
 >
 
 * Os modelos que usam a funcionalidade de plug-in devem ser escritos de forma que ainda sejam autoráveis no navegador, sem que a ponte do plug-in esteja presente.
 
-   * Por exemplo, aguarde o *device ready* antes de tentar acessar a API de um plugin.
+   * Por exemplo, aguarde a função *deviceready* antes de tentar acessar a API de um plug-in.
 
 ## Diretrizes para desenvolvedores do AEM {#guidelines-for-aem-developers}
 
@@ -47,7 +47,7 @@ As seguintes diretrizes ajudam os desenvolvedores de AEM competentes para sites 
 * Preferir vários arquivos de script de componente em vez de um único arquivo monolítico
 
    * Vários pontos de extensão vazios são fornecidos, como *customheaderlibs.html* e *customfooterlibs.html*, que permitem que o desenvolvedor altere o modelo da página enquanto duplica o mínimo possível de código principal
-   * Os modelos podem ser estendidos e personalizados por meio do *sling:resourceSuperType* mecanismo
+   * Os modelos podem ser estendidos e personalizados pelo mecanismo *sling:resourceSuperType* do Sling
 
 * Prefira Sightly/HTL a JSP como a linguagem de modelo
 
@@ -63,25 +63,25 @@ As seguintes diretrizes ajudam os desenvolvedores de AEM competentes para sites 
 >
 >Você pode saber mais detalhes sobre os scripts externos de bloqueio de renderização [aqui](https://developers.google.com/speed/docs/insights/BlockingJS).
 
-**Prefira JS do lado do cliente específico do aplicativo e bibliotecas CSS específicas da Web**
+**Prefira JS e bibliotecas CSS específicas do cliente para o aplicativo a bibliotecas específicas da Web**
 
 * Para evitar sobrecarga em bibliotecas como jQuery Mobile para lidar com uma grande variedade de dispositivos e navegadores
-* Quando um modelo está em execução na visualização da Web de um aplicativo, você tem controle sobre as plataformas e versões compatíveis com o aplicativo e sabe que o suporte ao JavaScript estará presente. Por exemplo, prefira o Ionic (apenas o CSS) ao jQuery Mobile e à interface do usuário do Onsen ao Bootstrap.
+* Quando um modelo está em execução na visualização da Web de um aplicativo, você tem controle sobre as plataformas e versões compatíveis com o aplicativo e sabe que o suporte do JavaScript estará presente. Por exemplo, prefira o Ionic (apenas o CSS) ao jQuery Mobile e à interface do usuário do Onsen ao Bootstrap.
 
 >[!NOTE]
 >
->Para saber mais detalhes sobre o jQuery mobile, clique em [aqui](https://jquerymobile.com/browser-support/1.4/).
+>Para saber mais detalhes sobre o jQuery mobile, clique [aqui](https://jquerymobile.com/browser-support/1.4/).
 
-**Preferir bibliotecas micro em vez de pilha completa**
+**Preferir bibliotecas micro sobre pilha completa**
 
 * O tempo que leva para colocar seu conteúdo no vidro do dispositivo é reduzido por cada biblioteca da qual seus artigos dependem. Esse atraso é agravado quando uma nova visualização da Web é usada para renderizar cada artigo, de modo que cada biblioteca deve ser inicializada novamente do zero
 * Se seus artigos não forem criados como SPA (aplicativos de página única), você provavelmente não precisará incluir uma biblioteca de pilha completa, como o Angular
-* Prefira bibliotecas menores de uso único que ajudem a adicionar a interatividade exigida pela sua página, como [Fastclick](https://github.com/ftlabs/fastclick) ou [Velocity.js](https://velocityjs.org)
+* Prefira bibliotecas menores de uso único que ajudem a adicionar a interatividade exigida pela sua página, como o [Fastclick](https://github.com/ftlabs/fastclick) ou o [Velocity.js](https://velocityjs.org)
 
-**Minimizar o tamanho da carga do artigo**
+**Minimizar tamanho da carga do artigo**
 
 * Use os menores ativos possíveis que possam cobrir efetivamente o maior visor que você estiver apoiando, com uma resolução razoável
-* Use uma ferramenta como *ImageOptim* em suas imagens para que você possa remover qualquer excesso de metadados
+* Use uma ferramenta como o *ImageOptim* nas imagens para remover qualquer excesso de metadados
 
 ## Avançando {#getting-ahead}
 

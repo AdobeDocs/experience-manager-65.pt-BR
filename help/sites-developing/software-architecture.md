@@ -34,11 +34,11 @@ Ao definir quais componentes podem ser incluídos em cada parsys na página, a c
 
 SOLID é um acrônimo que descreve cinco princípios arquitetônicos que devem ser seguidos:
 
-* **S** Princípio da responsabilidade única - cada módulo, classe, método e assim por diante devem ter apenas uma responsabilidade.
+* **S** Princípio de Responsabilidade Único - cada módulo, classe, método e assim por diante devem ter apenas uma responsabilidade.
 * **O** Princípio de Abertura/Fechamento - os módulos devem ser abertos para extensão e fechados para modificação.
-* **L** Princípio de substituição iskov - os tipos devem ser substituíveis por seus subtipos.
-* **I** Princípio de segmentação de interface - nenhum cliente deve ser forçado a depender de métodos que não usa.
-* **D** Princípio da inversão de dependência - os módulos de alto nível não devem depender dos módulos de baixo nível. Ambos devem depender de abstrações. As abstrações não devem depender de detalhes. Os detalhes devem depender de abstrações.
+* **L** Princípio de Substituição iskov - os tipos devem ser substituíveis por seus subtipos.
+* Princípio de Segregação da Interface **I** n - nenhum cliente deve ser forçado a depender de métodos que não usa.
+* **D** Princípio de Inversão de Dependência - Os módulos de alto nível não devem depender de módulos de baixo nível. Ambos devem depender de abstrações. As abstrações não devem depender de detalhes. Os detalhes devem depender de abstrações.
 
 O esforço para cumprir esses cinco princípios deve resultar em um sistema que tenha uma separação estrita de preocupações.
 

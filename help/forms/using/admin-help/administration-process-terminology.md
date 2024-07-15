@@ -20,11 +20,11 @@ ht-degree: 0%
 
 Para administrar o workflow de formulários de maneira eficaz, você deve entender os seguintes termos e a hierarquia dos elementos:
 
-* *Categorias de processo* organizar processos em grupos lógicos.
-* *Processos* representam os processos de negócios automatizados. Deve existir pelo menos um processo para cada processo de negócios implementado.
-* A *diagrama de processo* é a representação visual do processo de negócios que está sendo automatizado.
-* A *instância do processo* é um processo que foi iniciado por um usuário (como preencher e enviar um formulário) ou uma etapa automatizada. Pode haver várias instâncias de um processo.
-* Um *operação* é uma etapa de um diagrama de processo, que é representado no Workbench por um ícone no diagrama de processo.
-* A *tarefa* é uma ação atribuída a um usuário. Quando a tarefa é executada e a operação é executada, o serviço do Usuário atribui uma tarefa a um usuário.
+* *Categorias de processo* organizam processos em grupos lógicos.
+* *Processos* representam os processos comerciais automatizados. Deve existir pelo menos um processo para cada processo de negócios implementado.
+* Um *diagrama de processo* é a representação visual do processo empresarial que está sendo automatizado.
+* Uma *instância de processo* é um processo que foi iniciado por um usuário (como preencher e enviar um formulário) ou uma etapa automatizada. Pode haver várias instâncias de um processo.
+* Uma *operação* é uma etapa de um diagrama de processo, que é representado no Workbench por um ícone no diagrama de processo.
+* *tarefa* é uma ação que foi atribuída a um usuário. Quando a tarefa é executada e a operação é executada, o serviço do Usuário atribui uma tarefa a um usuário.
 
-Para obter mais informações sobre esses termos, consulte [Ajuda do Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).
+Para obter mais informações sobre esses termos, consulte a [Ajuda do Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).

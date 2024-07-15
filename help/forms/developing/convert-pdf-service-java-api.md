@@ -1,6 +1,6 @@
 ---
 title: Converter serviço PDF Java&trade; API QuickStart (SOAP)
-description: Saiba como o serviço Converter PDF converte documentos PDF em PostScript ou arquivos de imagem (JPEG, JPEG 2000, PNG e TIFF).
+description: Saiba como o Serviço de conversão de PDF converte documentos de PDF para arquivos PostScript ou de imagem (JPEG, JPEG 2000, PNG e TIFF).
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -32,7 +32,7 @@ As operações do AEM Forms podem ser executadas usando a API altamente tipada d
 
 ## Início rápido (modo SOAP): conversão de um documento PDF em PostScript usando a API Java™ {#quick-start-soap-mode-converting-a-pdf-document-to-postscript-using-the-java-api}
 
-O exemplo de código a seguir converte um documento PDF chamado *Loan.pdf* para um documento PostScript chamado *Empréstimo.ps*. (Consulte [Conversão de documentos PDF em PostScript](/help/forms/developing/converting-pdf-postscript-image-files.md#converting-pdf-documents-to-postscript).)
+O exemplo de código a seguir converte um documento PDF chamado *Loan.pdf* em um documento PostScript chamado *Loan.ps*. (Consulte [Convertendo documentos PDF em PostScript](/help/forms/developing/converting-pdf-postscript-image-files.md#converting-pdf-documents-to-postscript).)
 
 ```java
  /*
@@ -147,7 +147,7 @@ O exemplo de código a seguir converte um documento PDF chamado *Loan.pdf* para 
 
 ## Início rápido (modo SOAP): conversão de um documento PDF em arquivos JPEG usando a API Java™ {#quick-start-soap-mode-converting-a-pdf-document-to-jpeg-files-using-the-java-api}
 
-O exemplo de código Java™ a seguir converte um documento PDF chamado *Loan.pdf* para um conjunto de arquivos JPEG e os armazena no diretório C:\Adobe. Cada arquivo é nomeado `tempFile[index].jpg`, onde o primeiro arquivo de imagem é nomeado *tempFile0.jpg*. (Consulte [Conversão de documentos PDF em formatos de imagem](/help/forms/developing/converting-pdf-postscript-image-files.md#converting-pdf-documents-to-image-formats).)
+O exemplo de código Java™ a seguir converte um documento PDF chamado *Loan.pdf* em um conjunto de arquivos JPEG e os armazena no diretório C:\Adobe. Cada arquivo é denominado `tempFile[index].jpg`, onde o primeiro arquivo de imagem é denominado *tempFile0.jpg*. (Consulte [Conversão de Documentos PDF em Formatos de Imagem](/help/forms/developing/converting-pdf-postscript-image-files.md#converting-pdf-documents-to-image-formats).)
 
 ```java
  /*

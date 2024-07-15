@@ -49,12 +49,12 @@ Antes de dar a visão geral das especificidades, veja uma pequena coleção de d
 
 * Links de navegação
 
-   * ***Os links não estão disponíveis para navegação*** quando você estiver em modo **Editar**. Para navegar com links, é necessário [visualizar a página](/help/sites-authoring/editing-content.md#previewing-pages) usando:
+   * ***Os links não estão disponíveis para navegação*** quando você estiver em modo **Editar**. Para navegar com links, você precisa [visualizar a página](/help/sites-authoring/editing-content.md#previewing-pages) usando:
 
       * [Modo de visualização](/help/sites-authoring/editing-content.md#preview-mode)
       * [Exibir como publicado](/help/sites-authoring/editing-content.md#view-as-published)
 
-* As versões não são iniciadas/criadas pelo editor de página; agora isso é feito no console Sites (por meio de **Criar** ou [Linha do tempo](/help/sites-authoring/basic-handling.md#timeline) para um recurso selecionado).
+* As versões não são iniciadas/criadas pelo editor de página; agora isso é feito no console Sites (através da **Criação** ou da [Linha do Tempo](/help/sites-authoring/basic-handling.md#timeline) de um recurso selecionado).
 
 >[!NOTE]
 >
@@ -68,13 +68,13 @@ Antes de dar a visão geral das especificidades, veja uma pequena coleção de d
 
 Há vários aspectos para localizar uma página. Você pode navegar e/ou pesquisar:
 
-1. Abra o **Sites** console (usando o **Sites** opção no [Navegação global](/help/sites-authoring/basic-handling.md#global-navigation)) - é acionado (lista suspensa) ao selecionar o link do Adobe Experience Manager (parte superior esquerda).
+1. Abra o console **Sites** (usando a opção **Sites** na [Navegação Global](/help/sites-authoring/basic-handling.md#global-navigation)) - isso será acionado (menu suspenso) ao selecionar o link do Adobe Experience Manager (parte superior esquerda).
 
 1. Navegue para baixo na árvore, tocando/clicando na página apropriada. A forma como os recursos da página são representados depende da exibição usada - [Cartão, Lista ou Coluna](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources):
 
    ![screen_shot_2018-03-21at160214](assets/screen_shot_2018-03-21at160214.png)
 
-1. Navegue até a árvore usando [a navegação estrutural no cabeçalho](/help/sites-authoring/basic-handling.md#theheaderwithbreadcrumbs), que permite retornar ao local selecionado:
+1. Navegue até a árvore usando [a navegação estrutural do cabeçalho](/help/sites-authoring/basic-handling.md#theheaderwithbreadcrumbs), o que permite retornar ao local selecionado:
 
    ![qgtap-01](assets/qgtap-01.png)
 
@@ -86,7 +86,7 @@ Há vários aspectos para localizar uma página. Você pode navegar e/ou pesquis
 
 Para [criar uma página](/help/sites-authoring/managing-pages.md#creating-a-new-page):
 
-1. [Navegue até o local](#finding-your-page) onde você deseja criar a página.
+1. [Navegue até o local](#finding-your-page) onde deseja criar a página.
 1. Use o ícone **Criar** e selecione **Página** na lista:
 
    ![qgtap-02](assets/qgtap-02.png)
@@ -109,10 +109,10 @@ Como selecionar uma página depende da exibição usada no console:
 
 1. Exibição de cartão:
 
-   * Entrar no modo de seleção por [selecionar o recurso desejado](/help/sites-authoring/basic-handling.md#viewingandselectingyourresources) com:
+   * Entre no modo de seleção [selecionando o recurso necessário](/help/sites-authoring/basic-handling.md#viewingandselectingyourresources) com:
 
       * Dispositivo móvel: selecionar e manter
-      * Desktop: o [ação rápida](/help/sites-authoring/basic-handling.md#quick-actions) - ícone de marca de verificação:
+      * Área de trabalho: a [ação rápida](/help/sites-authoring/basic-handling.md#quick-actions) - ícone de marca de verificação:
 
    ![screen_shot_2018-03-21at160503](assets/screen_shot_2018-03-21at160503.png)
 
@@ -120,7 +120,7 @@ Como selecionar uma página depende da exibição usada no console:
 
    >[!NOTE]
    >
-   >Uma vez no modo de seleção, a variável **Selecionar** O ícone (uma marca de verificação) será alterado para a variável **Desmarcar** ícone (uma cruz).
+   >Uma vez no modo de seleção, o ícone **Selecionar** (uma marca de verificação) será alterado para o ícone **Desmarcar** (uma cruz).
 
 ### Ações rápidas (apenas a exibição de cartão/desktop) {#quick-actions-card-view-desktop-only}
 
@@ -148,7 +148,7 @@ As [ações rápidas](/help/sites-authoring/basic-handling.md#quick-actions) est
    * [Adicionar um novo componente para a página](/help/sites-authoring/editing-content.md#inserting-a-component) ao:
 
       * abrir o painel lateral
-      * selecionar a guia componentes (a guia [navegador de componentes](/help/sites-authoring/author-environment-tools.md#components-browser))
+      * selecionando a guia componentes (o [navegador de componentes](/help/sites-authoring/author-environment-tools.md#components-browser))
       * arrastar o componente desejado para a página.
 
      O painel lateral pode ser aberto (ou fechado) com:
@@ -170,11 +170,11 @@ As [ações rápidas](/help/sites-authoring/basic-handling.md#quick-actions) est
    * [Mover um componente](/help/sites-authoring/editing-content.md#moving-a-component):
 
       * Arrastando o componente desejado para o novo local.
-      * Abra a barra de ferramentas do componente com um clique. Use o **Recortar** depois **Colar** ícones, quando necessário.
+      * Abra a barra de ferramentas do componente com um clique. Use os ícones **Cortar** e **Colar** quando necessário.
 
    * [Copiar (e Colar)](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) um componente:
 
-      * Abra a barra de ferramentas do componente com um clique. Use o **Copiar** depois **Colar** ícones, conforme necessário.
+      * Abra a barra de ferramentas do componente com um clique. Use os ícones **Copiar** e **Colar** conforme necessário.
 
    >[!NOTE]
    >
@@ -182,7 +182,7 @@ As [ações rápidas](/help/sites-authoring/basic-handling.md#quick-actions) est
 
    * [Excluir](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) um componente:
 
-      * Abra a barra de ferramentas do componente com um clique, em seguida, use o **Excluir** ícone.
+      * Abra a barra de ferramentas do componente com um clique, em seguida, use o ícone **Excluir**.
 
    * [Adicionar anotações](/help/sites-authoring/annotations.md#annotations) à página:
 
@@ -294,7 +294,7 @@ Por exemplo, o ícone de bloqueio tem a seguinte aparência:
 
 ### Acessar as referências da página {#accessing-page-references}
 
-[Acesso rápido às referências](/help/sites-authoring/author-environment-tools.md#references) para uma página ou de uma página estão disponíveis no Trilho de referências.
+[O acesso rápido às referências](/help/sites-authoring/author-environment-tools.md#references) para uma página ou de uma página estão disponíveis no Trilho de Referências.
 
 1. Selecione a **Referências** usando o ícone da barra de ferramentas (antes ou depois de [selecionar a página](#selecting-your-page-for-further-action)): 
 
@@ -302,7 +302,7 @@ Por exemplo, o ícone de bloqueio tem a seguinte aparência:
 
    Uma lista de tipos de referência será exibida:
 
-   ![screen-shot_2019-03-05at114412](assets/screen-shot_2019-03-05at114412.png)
+   ![captura de tela_2019-03-05at114412](assets/screen-shot_2019-03-05at114412.png)
 
 1. Clique no tipo de referência necessário para mostrar mais detalhes e (quando apropriado) executar outras ações.
 
@@ -314,9 +314,9 @@ Para criar uma [versão](/help/sites-authoring/working-with-page-versions.md) da
 
    ![screen_shot_2018-03-21at161355](assets/screen_shot_2018-03-21at161355.png)
 
-1. Clique na seta para cima na parte inferior direita da coluna Linha do tempo para exibir os botões extras; incluindo **Salvar como versão**.
+1. Clique na seta para cima na parte inferior direita da coluna Linha do Tempo para exibir os botões extras, incluindo **Salvar como versão**.
 
-   ![screen-shot_2019-03-05at114600](assets/screen-shot_2019-03-05at114600.png)
+   ![captura de tela_2019-03-05at114600](assets/screen-shot_2019-03-05at114600.png)
 
 1. Selecione **Salvar como versão**, em seguida, **Criar**.
 

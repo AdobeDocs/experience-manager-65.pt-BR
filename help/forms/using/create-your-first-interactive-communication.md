@@ -48,9 +48,9 @@ Uma operadora de telecomunicações envia faturas mensais aos clientes por email
 ## Pré-requisitos {#prerequisites}
 
 * Configure uma instância de autor do AEM.
-* Instalar [Complemento do AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md) na instância do autor
+* Instalar [complemento do AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md) na instância do autor
 * Configurar o banco de dados MYSQL
-* Obter o driver de banco de dados JDBC (arquivo JAR) do provedor de banco de dados. Exemplos no tutorial são baseados no banco de dados MySQL e usam o Oracle [Driver de banco de dados JDBC MySQL](https://dev.mysql.com/downloads/connector/j/5.1.html).
+* Obter o driver de banco de dados JDBC (arquivo JAR) do provedor de banco de dados. Exemplos no tutorial são baseados no banco de dados MySQL e usam o [driver do banco de dados MySQL JDBC](https://dev.mysql.com/downloads/connector/j/5.1.html) do Oracle.
 
 ## Etapa 1: Planejar a comunicação interativa {#step-plan-the-interactive-communication}
 
@@ -72,7 +72,7 @@ Para criar uma anatomia para a Comunicação interativa com os seguintes modos d
 
 ## Etapa 2: Criar modelo de dados de formulário {#step-create-form-data-model}
 
-![03-criar-formulário-adaptável-imagem-principal_pequeno](assets/03-create-adaptive-form-main-image_small.png)
+![03-criar-formulário-adaptável-imagem-principal_pequena](assets/03-create-adaptive-form-main-image_small.png)
 
 Um modelo de dados de formulário permite conectar uma Comunicação interativa a fontes de dados diferentes. Por exemplo, perfil de usuário AEM, serviços Web RESTful, serviços Web baseados em SOAP, serviços OData e bancos de dados relacionais. Um modelo de dados de formulário é um esquema de representação de dados unificada de entidades e serviços comerciais disponíveis em fontes de dados conectadas. Você pode usar o modelo de dados de formulário com uma Comunicação interativa para recuperar dados de fontes de dados conectadas. Para obter mais informações sobre o modelo de dados de formulário, consulte [Integração de dados do AEM Forms](/help/forms/using/data-integration.md).
 
@@ -109,7 +109,7 @@ Os fragmentos de documento são componentes reutilizáveis de uma correspondênc
 
 Para criar uma comunicação interativa, você deve ter modelos disponíveis no servidor AEM para impressão e canais da Web.
 
-Os modelos para o canal de impressão são criados no Adobe Forms Designer e carregados no servidor AEM. Esses modelos ficam disponíveis para uso ao criar uma Comunicação interativa.
+Os modelos para o canal de impressão são criados no Adobe Forms Designer e carregados no servidor de AEM. Esses modelos ficam disponíveis para uso ao criar uma Comunicação interativa.
 
 Os templates para o canal da Web são criados no AEM. Os autores e administradores de modelos podem criar, editar e ativar modelos da Web. Depois de criados e ativados, esses modelos ficam disponíveis para uso ao criar uma Comunicação interativa.
 
@@ -123,7 +123,7 @@ Os templates para o canal da Web são criados no AEM. Os autores e administrador
 
 ## Etapa 5: Criar uma comunicação interativa {#step-create-an-interactive-communication}
 
-![09-estilo-seu-formulário-adaptável-pequeno](assets/09-style-your-adaptive-form-small.png)
+![09-style-your-adaptive-form-small](assets/09-style-your-adaptive-form-small.png)
 
 Depois de criar todos os blocos de construção, como modelo de dados de formulário, fragmentos de documento e modelos para a versão da Web, você pode começar a criar uma comunicação interativa.
 
@@ -140,9 +140,9 @@ As Comunicações interativas podem ser fornecidas por meio de dois canais: Impr
 
 [](/help/forms/using/create-interactive-communication0.md)
 
-## Etapa 6: publicar a comunicação interativa {#step-publish-your-interactive-communication}
+## Etapa 6: Publish sua comunicação interativa {#step-publish-your-interactive-communication}
 
-![12-publish-your-adaptive-form-small](assets/12-publish-your-adaptive-form-_small.png)
+![12-publicar-seu-formulário-adaptável-pequeno_pequeno](assets/12-publish-your-adaptive-form-_small.png)
 
 Depois de criar e testar as Comunicações interativas usando canais de impressão e da Web, você poderá publicar esses ativos. O caso de uso descrito neste tutorial foca na integração desses ativos com um cliente de email. O cliente de email serve como uma ponte para enviar as Comunicações interativas para vários endereços de email.
 

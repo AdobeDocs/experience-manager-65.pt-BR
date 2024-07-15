@@ -18,27 +18,27 @@ ht-degree: 0%
 
 # Definir a mensagem do dia {#setting-the-message-of-the-day}
 
-É possível definir uma mensagem para ser exibida na página de Boas-vindas na interface do usuário do Workspace.
+Você pode definir a exibição de uma mensagem na página de Boas-vindas da interface do Workspace.
 
 Se necessário, você pode usar as tags HTML suportadas pelo Adobe Flash® Player para formatar a aparência do texto:
 
-* &lt;a> Ancorar tag
-* &lt;b> Tag em Negrito
+* &lt;a> Marca de âncora
+* &lt;b> Tag em negrito
 * &lt;br> Quebrar tag
-* &lt;font> Tag de fonte
-* &lt;img> Tag de imagem
-* &lt;i> Tag em itálico
+* &lt;font> Marca de fonte
+* &lt;img> Marca de imagem
+* &lt;i> Marca em itálico
 * &lt;li> Marca de item de lista
 * &lt;p> Tag de parágrafo
 * &lt;span> Marca de extensão
-* &lt;textformat> Tag de formato de texto
-* &lt;u> Sublinhar tag
+* &lt;textformat> Marca de formato de texto
+* &lt;u> Marca de sublinhado
 
-Para obter mais informações sobre as tags compatíveis, consulte a definição da variável `htmlText` para a classe TextField na variável [Referência de idioma do Flex](https://flex.apache.org/).
+Para obter mais informações sobre as marcas com suporte, consulte a definição da propriedade `htmlText` para a classe TextField na [Referência de Idioma do Flex](https://flex.apache.org/).
 
 ## Definir a mensagem do dia {#set-the-message-of-the-day}
 
-1. No console de administração, clique em Serviços > Espaço de trabalho > Mensagem do dia.
+1. No console de administração, clique em Serviços > Workspace > Mensagem do dia.
 1. Na caixa Mensagem do dia, forneça o texto a ser exibido na tela de boas-vindas.
 1. Clique em Salvar.
 

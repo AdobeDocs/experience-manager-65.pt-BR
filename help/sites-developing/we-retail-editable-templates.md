@@ -29,7 +29,7 @@ Todas as páginas no We.Retail são baseadas em modelos editáveis, permitindo q
    http://localhost:4502/editor.html/content/we-retail/language-masters/en/equipment.html
 
 1. O seletor de modo não oferece mais um modo Design. Todas as páginas para We.Retail são baseadas em modelos editáveis e, para alterar o design dos modelos editáveis, elas devem ser editadas no editor de modelos.
-1. No **Informações da página** menu selecionar **Editar modelo**.
+1. No menu **Informações da página**, selecione **Editar modelo**.
 1. Agora você está editando o modelo da Página principal.
 
    O modo de estrutura da página permite modificar a estrutura do modelo. Isso inclui, por exemplo, os componentes permitidos no contêiner de layout.
@@ -66,12 +66,12 @@ Todas as páginas no We.Retail são baseadas em modelos editáveis, permitindo q
 
    ![chlimage_1-141](assets/chlimage_1-141.png)
 
-1. De volta ao editor de modelo, você pode usar o seletor de modo para alterar para **Conteúdo inicial** para definir qual conteúdo é necessário na página.
+1. De volta ao editor de modelo, você pode usar o seletor de modo para alterar para o modo **Conteúdo inicial** para definir qual conteúdo é necessário na página.
 
-   **Layout** O modo pode ser usado como está em uma página normal para definir o layout do modelo.
+   O modo **Layout** pode ser usado como está em uma página normal para definir o layout do modelo.
 
 ## Mais informações {#more-information}
 
-Para obter mais informações, consulte o documento de criação [Criação de modelos de página](/help/sites-authoring/templates.md) ou a página do documento do desenvolvedor [Modelos - Editáveis](/help/sites-developing/page-templates-editable.md) para obter detalhes técnicos completos sobre modelos editáveis.
+Para obter mais informações, consulte o documento de criação [Criação de modelos de página](/help/sites-authoring/templates.md) ou o documento do desenvolvedor Página [Modelos - Editáveis](/help/sites-developing/page-templates-editable.md) para obter detalhes técnicos completos sobre modelos editáveis.
 
-Você também pode querer investigar [componentes principais](/help/sites-developing/we-retail-core-components.md). Consulte o documento de criação [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) para obter uma visão geral dos recursos dos componentes principais e o documento do desenvolvedor [Desenvolvimento dos Componentes principais](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) para obter uma visão geral técnica.
+Você também pode investigar [componentes principais](/help/sites-developing/we-retail-core-components.md). Consulte o documento de criação [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) para obter uma visão geral dos recursos dos componentes principais e o documento do desenvolvedor [Desenvolvendo componentes principais](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) para obter uma visão geral técnica.

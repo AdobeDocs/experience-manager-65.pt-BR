@@ -25,7 +25,7 @@ Esta seção da documentação descreve como adicionar bibliotecas do lado do cl
 
 Para obter informações básicas, consulte o seguinte:
 
-* [Uso de bibliotecas do lado do cliente](/help/sites-developing/clientlibs.md) que fornece detalhes de uso e ferramentas de depuração
+* [Usando Bibliotecas do Lado do Cliente](/help/sites-developing/clientlibs.md) que fornece detalhes de uso e ferramentas de depuração
 * [Clientlibs para SCF](/help/communities/client-customize.md#clientlibs) que fornece informações úteis ao personalizar componentes SCF
 
 
@@ -33,62 +33,62 @@ Para obter informações básicas, consulte o seguinte:
 
 As bibliotecas de clientes são necessárias para o funcionamento adequado (JavaScript) e o estilo (CSS) de um componente.
 
-Quando existe uma [função da comunidade](/help/communities/functions.md) para um recurso, todos os componentes e configurações necessários, incluindo as clientlibs necessárias, estão presentes no site da comunidade. Somente se os componentes adicionais estiverem disponíveis para os autores, é necessário adicionar mais clientlibs.
+Quando existe uma [função de comunidade](/help/communities/functions.md) para um recurso, todos os componentes e configurações necessários, incluindo as clientlibs necessárias, estão presentes no site da comunidade. Somente se os componentes adicionais estiverem disponíveis para os autores, é necessário adicionar mais clientlibs.
 
-Quando as clientlibs necessárias estiverem ausentes, [adição de um componente Comunidades a uma página](/help/communities/author-communities.md) poderia resultar em erros de JavaScript e uma aparência inesperada.
+Quando as clientlibs necessárias estiverem ausentes, [adicionar um componente de Comunidades a uma página](/help/communities/author-communities.md) poderá resultar em erros de JavaScript e em uma aparência inesperada.
 
 ### Exemplo: análises colocadas sem clientlibs {#example-placed-reviews-without-clientlibs}
 
-![places-review](assets/placed-reviews.png)
+![avaliações_colocadas](assets/placed-reviews.png)
 
 ### Exemplo: Análises Feitas com Clientlibs {#example-placed-reviews-with-clientlibs}
 
-![review-clientlibs](assets/reviews-clientlibs.png)
+![comentários-clientlibs](assets/reviews-clientlibs.png)
 
 ## Identificação das clientlibs necessárias {#identifying-required-clientlibs}
 
 As informações essenciais do recurso para desenvolvedores identificam as clientlibs necessárias.
 
-Além disso, em uma instância do AEM, navegar até o [Guia de componentes da comunidade](/help/communities/components-guide.md) O fornece acesso a uma lista de categorias clientlib necessárias para um componente.
+Além disso, a partir de uma instância do AEM, navegar até o [Guia de Componentes da Comunidade](/help/communities/components-guide.md) fornece acesso a uma lista de categorias de clientlib necessárias para um componente.
 
-Por exemplo, na parte superior da [Página de análises](https://localhost:4502/content/community-components/en/reviews.html) as clientlibs necessárias listadas são
+Por exemplo, na parte superior da [página Análises](https://localhost:4502/content/community-components/en/reviews.html), as bibliotecas de clientes necessárias listadas são
 
 * cq.ckeditor
 * cq.social.hbs.reviews
 
-![clientlibs-review](assets/clientlibs-reviews.png)
+![clientlibs-comentários](assets/clientlibs-reviews.png)
 
 ## Adicionar Clientlibs Necessárias {#adding-required-clientlibs}
 
 Quando quiser adicionar um componente Comunidades a uma página, será necessário adicionar as clientlibs necessárias para o componente, se ainda não estiver presente.
 
-Uso [CRXDE|Lite](#using-crxde-lite) para modificar uma clientlibslist existente para uma página de site da comunidade.
+Use o [CRXDE|Lite](#using-crxde-lite) para modificar uma clientlibslist existente para uma página de site da comunidade.
 
-Para adicionar uma clientlib a um site da comunidade usando [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
+Para adicionar um clientlib para um site da comunidade usando o [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
 
 * Navegue até [https://&lt;server>:&lt;port>/crx/de](https://localhost:4502/crx/de).
-* Localize o `clientlibslist` para a página em que deseja adicionar o componente:
+* Localize o nó `clientlibslist` da página em que você deseja adicionar o componente:
 
    * `/content/sites/sample/en/page/jcr:content/clientlibslist`
 
-* Com `clientlibslist` nó selecionado:
+* Com o nó `clientlibslist` selecionado:
 
-   * Localize a string[] propriedade `scg:requiredClientLibs`.
-   * Selecionar sua `Value` para poder acessar a caixa de diálogo Matriz de string.
+   * Localize a propriedade `scg:requiredClientLibs` da Cadeia de Caracteres [].
+   * Selecione seu `Value` para poder acessar a caixa de diálogo Matriz de cadeia de caracteres.
 
       * Role para baixo, se necessário.
       * Selecione + para inserir uma nova biblioteca do cliente.
 
          * Repita para adicionar mais bibliotecas de clientes.
 
-         * Selecionar **OK**.
+         * Selecione **OK**.
 
-   * Selecionar **Salvar tudo**.
+   * Selecione **Salvar tudo**.
 
 >[!NOTE]
 >
 >Se o site não for um site da comunidade, a existência ou o local das bibliotecas de clientes em uso para o site devem ser descobertos.
 
-Usar o [Introdução ao AEM Communities](/help/communities/getting-started.md) exemplo, onde `site-name` é *engajar*, é assim que a clientliblist apareceria se adicionasse o componente de revisões:
+Usando o exemplo de [Introdução ao AEM Communities](/help/communities/getting-started.md), em que `site-name` é *engajamento*, esta é a forma como a clientliblist aparecerá se o componente de revisões for adicionado:
 
 ![componente de revisão](assets/review-component.png)

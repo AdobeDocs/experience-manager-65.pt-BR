@@ -20,7 +20,7 @@ ht-degree: 2%
 
 Para desenvolver aplicativos JCR, Apache Sling ou Adobe Experience Manager (AEM), os seguintes conjuntos de ferramentas estão disponíveis:
 
-* um conjunto que consiste em [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) e WebDAV. O CRXDE Lite está incorporado ao CRX/AEM e permite executar tarefas de desenvolvimento padrão no navegador. Com o CRXDE Lite, você pode criar e editar arquivos (como .jsp e .java), pastas, modelos, componentes, caixas de diálogo, nós, propriedades e pacotes, ao fazer logon e integrar com o SVN.
+* um conjunto formado por [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) e WebDAV. O CRXDE Lite está incorporado ao CRX/AEM e permite executar tarefas de desenvolvimento padrão no navegador. Com o CRXDE Lite, você pode criar e editar arquivos (como .jsp e .java), pastas, modelos, componentes, caixas de diálogo, nós, propriedades e pacotes, ao fazer logon e integrar com o SVN.
 
   O CRXDE Lite é recomendado quando você não tem acesso direto ao servidor CRX/AEM, quando você desenvolve um aplicativo estendendo ou modificando os componentes prontos para uso e pacotes Java™ ou quando não precisa de um depurador dedicado, autocompletar de código e realce de sintaxe.
 

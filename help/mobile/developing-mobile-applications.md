@@ -28,37 +28,37 @@ O AEM usa as soluções de publicação do Adobe PhoneGap e do Adobe, permitindo
 * Analise os aplicativos em ambientes de desenvolvimento e de preparo sem as complexidades dos perfis de provisionamento e o esforço extra para criar e carregar seu aplicativo para compartilhamento.
 * Use o ambiente de criação do AEM para criar e gerenciar conteúdo avançado para seus aplicativos.
 * Use o HTML5 com Adobe PhoneGap para criar experiências avançadas com recursos nativos do dispositivo.
-* Apresentar o HTML5 Webviews a versões novas ou pré-existentes **nativo** aplicativos por meio do Cordova WebViews.
+* Introduza Webviews HTML5 a aplicativos **nativos** novos ou pré-existentes por meio do Cordova WebViews.
 * Crie, prepare e compartilhe conteúdo multimídia avançado em todos os canais de entrega, incluindo internet, internet móvel, aplicativo para dispositivos móveis e impressão.
 
-O AEM integra-se ao serviço da Adobe PhoneGap Build (`https://build.phonegap.com/`) para simplificar o processo de criação e implantação de aplicativos.
+O AEM integra-se ao serviço da Adobe PhoneGap Build (`https://build.phonegap.com/`) para simplificar o processo de compilação e implantação do aplicativo.
 
-**Adobe ContentSync** O permite que os usuários baixem facilmente atualizações de página e conteúdo OTA (Over-the-Air) para seus dispositivos sem precisar reinstalar o aplicativo ou baixá-las da appStore, do Google Play ou de outras fontes de aplicativo.
+O **Adobe ContentSync** permite que os usuários baixem facilmente atualizações de página e conteúdo OTA (Over-the-Air) para seus dispositivos sem precisar reinstalar o aplicativo ou baixá-las da appStore, da Google Play ou de outras fontes de aplicativo.
 
-**Adobe Analytics** O é totalmente integrado a aplicativos AEM e permite o rastreamento detalhado de distribuição, geolocalização, sistemas operacionais, dispositivos, fluxos de cliques, rastreamento de iBeacon e muito mais.
+O **Adobe Analytics** é totalmente integrado aos aplicativos AEM e permite o rastreamento detalhado de distribuição, geolocalização, sistemas operacionais, dispositivos, fluxos de cliques, rastreamento de iBeacon e muito mais.
 
 ## Criação de aplicativos {#creating-apps}
 
-Os desenvolvedores podem usar o [Kit inicial do PhoneGap para AEM](https://github.com/Adobe-Marketing-Cloud/aem-phonegap-starter-kit) juntamente com os recursos adicionais encontrados no [https://github.com/adobe-marketing-cloud-apps](https://github.com/adobe-marketing-cloud-apps) para inicializar aplicativos AEM com PhoneGap, incluindo um aplicativo nativo de referência que executa o Cordova Webviews.
+Os desenvolvedores podem usar o [Kit de Inicialização do AEM PhoneGap](https://github.com/Adobe-Marketing-Cloud/aem-phonegap-starter-kit) juntamente com os recursos adicionais encontrados em [https://github.com/adobe-marketing-cloud-apps](https://github.com/adobe-marketing-cloud-apps) para inicializar os aplicativos AEM com PhoneGap, incluindo um aplicativo nativo de referência que execute o Cordova Webviews.
 
 O readme do repositório Git do Starter Kit inclui um tutorial para usar o starter kit:
 
 * Personalizar a identidade visual
 * Destinos de build e implantação da amostra Maven
-* Configuração do repositório de controle de origem
+* Configuração do repositório de controle do Source
 * Instalar e implantar em instâncias locais ou remotas do AEM
 * Desinstalar do AEM
 
 >[!NOTE]
 >
->Uma fonte adicional de implementação de referência, incluindo laboratórios, pode ser encontrada no GitHub [aqui](https://github.com/adobe-marketing-cloud-apps) e, a fonte &quot;cozinha-pia&quot; [aqui](https://github.com/blefebvre/aem-phonegap-kitchen-sink).
+>Uma fonte adicional de implementação de referência, incluindo laboratórios, pode ser encontrada no GitHub [aqui](https://github.com/adobe-marketing-cloud-apps) e na fonte &quot;cozinha-pia&quot; [aqui](https://github.com/blefebvre/aem-phonegap-kitchen-sink).
 
 ## Desenvolvimento para IOS 9 e hosts HTTP {#developing-for-ios-and-http-hosts}
 
 Os desenvolvedores do iOS devem estar cientes de um problema em aberto com aplicativos Cordova em execução no iOS 9. Esse problema impede que solicitações sejam feitas a hosts inseguros (como *http://localhost:4502*). Esse problema será resolvido com uma próxima versão do cordova-ios (consumida pela CLI do Cordova), mas enquanto isso há duas soluções alternativas disponíveis:
 
 1. Como solução alternativa imediata, você ainda pode usar qualquer um dos simuladores do iOS 8 sem problemas.
-1. Se você precisar usar o iOS 9, seus aplicativos -Info.plist (encontrados após a execução `cordova platform add ios` em &quot;&lt;app root=&quot;&quot;>/platforms/ios/&lt;app name=&quot;&quot;>/&lt;app name=&quot;&quot;>O arquivo &quot;-Info.plist&quot;) pode ser editado manualmente para incluir a seguinte propriedade:
+1. Se você precisar usar o iOS 9, seu arquivo de aplicativos -Info.plist (encontrado após a execução de `cordova platform add ios` em &quot;&lt;raiz do aplicativo>/plataformas/ios/&lt;nome do aplicativo>/&lt;nome do aplicativo>-Info.plist&quot;) poderá ser editado manualmente para incluir a seguinte propriedade:
 
 ```
 <key>NSAppTransportSecurity</key>
@@ -72,7 +72,7 @@ Os desenvolvedores do iOS devem estar cientes de um problema em aberto com aplic
 
 >[!NOTE]
 >
->Para obter mais detalhes sobre &quot;App Transport Security&quot;, consulte a seguinte seção de [Documentos de pré-lançamento do iOS9 da Apple](https://developer.apple.com/library/prerelease/ios/releasenotes/General/WhatsNewIniOS/Articles/iOS9.html#//apple_ref/doc/uid/TP40016198-SW14) e este [Discussão de Estouro de Pilha](https://stackoverflow.com/questions/30751053/ios9-ats-what-about-html5-based-apps/).
+>Para obter mais detalhes sobre &quot;App Transport Security&quot;, consulte a seguinte seção dos [documentos de pré-lançamento do iOS9 da Apple](https://developer.apple.com/library/prerelease/ios/releasenotes/General/WhatsNewIniOS/Articles/iOS9.html#//apple_ref/doc/uid/TP40016198-SW14) e esta [discussão sobre Estouro de Pilha](https://stackoverflow.com/questions/30751053/ios9-ats-what-about-html5-based-apps/).
 
 ## Desenvolvimento de aplicativos móveis no AEM {#developing-mobile-applications-in-aem-1}
 

@@ -17,9 +17,9 @@ ht-degree: 14%
 
 # Uso do fluxo de trabalho de tradução do AEM para localizar formulários adaptáveis e documentos de registro {#using-aem-translation-workflow-to-localize-adaptive-forms-and-document-of-record}
 
-<span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) para [criação de um novo Forms adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
+O <span class="preview"> Adobe recomenda o uso de [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adicionar o Forms Adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
 
-Os formulários localizados ajudam você a atender um público-alvo maior em todas as regiões geográficas. O fluxo de trabalho de tradução do Adobe Experience Manager ajuda a localizar formulários adaptáveis e seus documentos de registro. Você pode usar **tradução automática** ou **tradutores humanos** para localizar um formulário adaptável.
+Os formulários localizados ajudam você a atender um público-alvo maior em todas as regiões geográficas. O fluxo de trabalho de tradução do Adobe Experience Manager ajuda a localizar formulários adaptáveis e seus documentos de registro. Você pode usar a **tradução automática** ou os **tradutores humanos** para localizar um formulário adaptável.
 
 Este artigo explica o processo de uso do fluxo de trabalho de tradução do AEM com formulários adaptáveis e documentos de registro.
 
@@ -27,15 +27,15 @@ Este artigo explica o processo de uso do fluxo de trabalho de tradução do AEM 
 
 O serviço de tradução automática traduz imediatamente seu conteúdo em forma adaptável e documento de registro. O AEM Forms é pré-configurado para usar uma versão de avaliação do Microsoft Translator para tradução automática. Execute as seguintes etapas para habilitar a tradução automática dos formulários adaptáveis e do documento de registro:
 
-1. Na interface do usuário do AEM Forms, selecione um formulário e selecione a **Adicionar dicionário** opção.
-1. Entrada **Adicionar dicionário ao projeto de tradução** , selecione a **Criar um novo projeto de tradução** ou **Adicionar a um projeto de tradução existente** opção.
-1. No **Título do projeto** especifique o título. Por exemplo, `Government Reference Site - German locale.`
-1. No **Idiomas de destino** especifique um local (Por exemplo, `German(de)`) e clique em **Concluído**. Você pode especificar várias localidades. O formulário é traduzido para todas as localidades especificadas no **Idiomas de destino** campo.
-1. Na caixa de diálogo Dicionário adicionado, clique em **Abrir Projetos**. Na tela Projetos, abra o projeto recém-criado.
-1. Clique em **reticências** na parte inferior do **Resumo da tradução** bloco. A tela Resumo da tradução é aberta.
-1. Clique em **Editar** ícone na parte superior do **Resumo da tradução** tela. Abra o **Tradução** e selecione Tradução automática na guia **Método de tradução** tela. Selecione o apropriado **Provedor de tradução** e **Configuração na nuvem**. Clique em **Concluído** no topo da tela.
-1. No **Tarefa de tradução** lado a lado, clique no link ![aem62forms_downarrow](assets/aem62forms_downarrow.png) e clique em **Início**. O status do bloco muda para Rascunho. Na conclusão da tradução, o status muda para **Pronto para revisão**. Atualize a página após alguns minutos e verifique o status.
-1. Depois que o status for alterado para **Pronto para revisão** no **Tarefa de tradução** bloco, abra o formulário em uma janela do navegador. Uma versão localizada do formulário é exibida.
+1. Na interface do usuário do AEM Forms, selecione um formulário e a opção **Adicionar dicionário**.
+1. Na tela **Adicionar Dicionário ao Projeto de Tradução**, selecione a opção **Criar um novo projeto de tradução** ou **Adicionar a um projeto de tradução existente**.
+1. No campo **Título do projeto**, especifique o título. Por exemplo, `Government Reference Site - German locale.`
+1. No campo **Idiomas de Destino**, especifique uma localidade (por exemplo, `German(de)`) e clique em **Concluído**. Você pode especificar várias localidades. O formulário é traduzido para todas as localidades especificadas no campo **Idiomas de Destino**.
+1. Na caixa de diálogo Dicionário Adicionado, clique em **Abrir Projetos**. Na tela Projetos, abra o projeto recém-criado.
+1. Clique nas **reticências** na parte inferior do bloco **Resumo da Tradução**. A tela Resumo da tradução é aberta.
+1. Clique no ícone **Editar** na parte superior da tela **Resumo da Tradução**. Abra a guia **Tradução** e selecione Tradução Automática na tela **Método de Tradução**. Selecione o **Provedor de Tradução** e a **Configuração da Nuvem** apropriados. Clique no ícone **Concluído** na parte superior da tela.
+1. No bloco **Trabalho de Tradução**, clique no ícone ![aem62forms_downarrow](assets/aem62forms_downarrow.png) e clique em **Iniciar**. O status do bloco muda para Rascunho. Na conclusão da tradução, o status muda para **Pronto para revisão**. Atualize a página após alguns minutos e verifique o status.
+1. Depois que o status for alterado para **Pronto para revisão** no bloco **Trabalho de Tradução**, abra o formulário em uma janela do navegador. Uma versão localizada do formulário é exibida.
 
    >[!NOTE]
    >
@@ -50,7 +50,7 @@ O serviço de tradução automática traduz imediatamente seu conteúdo em forma
 
 [Configurações do documento de registro](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#p-document-of-record-settings-p)
 
-1. [Personalizar as informações de marca do documento de registro](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md) e certifique-se de que a localidade do navegador esteja definida com o mesmo idioma para o qual você localizou o Formulário adaptável usando o idioma do computador. A localidade do navegador ajuda a localizar as informações de marca no documento de registro.
+1. [Personalize as informações de identidade visual do documento de registro](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md) e verifique se a localidade do navegador está definida com o mesmo idioma para o qual você localizou o Formulário adaptável usando o idioma do computador. A localidade do navegador ajuda a localizar as informações de marca no documento de registro.
 1. Para exibir o documento de registro localizado, selecione Gerar visualização. O documento do PDF de registro é gerado e aberto em uma nova guia no navegador.
 
 ## Localizar um formulário adaptável e seu documento de registro usando a Tradução humana {#localizing-an-adaptive-form-and-its-document-of-record-using-human-translation}

@@ -21,7 +21,7 @@ ht-degree: 0%
 Você pode criar conteúdo de email no AEM e processá-lo em emails do Adobe Campaign. Para fazer isso, você deve:
 
 1. Crie um boletim informativo no AEM a partir de um modelo específico do Adobe Campaign.
-1. Selecionar [um serviço do Adobe Campaign](#selectingtheadobecampaigncloudservice) antes de editar o conteúdo para acessar todas as funcionalidades.
+1. Selecione [um serviço do Adobe Campaign](#selectingtheadobecampaigncloudservice) antes de editar o conteúdo para acessar todas as funcionalidades.
 1. Editar o conteúdo.
 1. Validar o conteúdo.
 
@@ -29,7 +29,7 @@ O conteúdo pode ser sincronizado com um delivery no Adobe Campaign. As instruç
 
 >[!NOTE]
 >
->Antes de usar essa funcionalidade, é necessário configurar o AEM para integrar com o [Adobe Campaign](/help/sites-administering/campaignonpremise.md) ou [Adobe Campaign Standard](/help/sites-administering/campaignstandard.md).
+>Antes de usar esta funcionalidade, você deve configurar o AEM para integrar com o [Adobe Campaign](/help/sites-administering/campaignonpremise.md) ou o [Adobe Campaign Standard](/help/sites-administering/campaignstandard.md).
 
 ## Envio de conteúdo de e-mail via Adobe Campaign {#sending-email-content-via-adobe-campaign}
 
@@ -48,22 +48,22 @@ As instruções detalhadas estão descritas neste documento.
 
 >[!NOTE]
 >
->Ao adicionar modelos de email, adicione-os em **/content/campaigns** disponibilizá-las.
+>Ao adicionar modelos de email, adicione-os em **/content/campaigns** para torná-los disponíveis.
 >
 
-1. No AEM, selecione a variável **Sites** e navegue pelo explorador para encontrar onde suas campanhas de email são gerenciadas. No exemplo a seguir, o nó relacionado é **Sites** > **Campanhas** > **Geometrixx Outdoors** > **Campanhas de email**.
+1. No AEM, selecione a pasta **Sites** e navegue pelo seu navegador para descobrir onde suas campanhas de email são gerenciadas. No exemplo a seguir, o nó relacionado é **Sites** > **Campanhas** > **Geometrixx Outdoors** > **Campanhas por email**.
 
    >[!NOTE]
    >
-   >[As amostras de email estão disponíveis somente no Geometrixx](/help/sites-developing/we-retail.md#weretail). Baixe o conteúdo de Geometrixx de amostra do Compartilhamento de pacotes.
+   >[Amostras de email só estão disponíveis em Geometrixx](/help/sites-developing/we-retail.md#weretail). Baixe o conteúdo de Geometrixx de amostra do Compartilhamento de pacotes.
 
    ![chlimage_1-172](assets/chlimage_1-172.png)
 
-1. Selecionar **Novo** > **Nova página** para criar novo conteúdo de email.
+1. Selecione **Nova** > **Nova página** para criar um novo conteúdo de email.
 1. Selecione um dos modelos disponíveis específicos para o Adobe Campaign e preencha as propriedades gerais da página. Três templates estão disponíveis por padrão:
 
    * **Email do Adobe Campaign (AC 6.1)**: permite adicionar conteúdo a um modelo predefinido antes de enviá-lo para o Adobe Campaign 6.1 para entrega.
-   * **Email do Adobe Campaign (ACS)**: permite adicionar conteúdo a um modelo predefinido antes de enviá-lo para o Adobe Campaign Standard para entrega.
+   * **Email do Adobe Campaign (ACS)**: permite adicionar conteúdo a um modelo predefinido antes de enviá-lo ao Adobe Campaign Standard para entrega.
 
    ![chlimage_1-173](assets/chlimage_1-173.png)
 
@@ -75,8 +75,8 @@ Para integrar ao Adobe Campaign, é necessário adicionar um serviço em nuvem d
 
 Além disso, talvez também seja necessário selecionar o modelo do Adobe Campaign, alterar o assunto e adicionar conteúdo de texto sem formatação para os usuários que não visualizarão o email no HTML.
 
-1. Selecione o **Página** no sidekick, depois selecione **Propriedades da página.**
-1. No **Serviços em nuvem** na janela pop-up, selecione **Adicionar serviço** para adicionar o serviço Adobe Campaign e clique em **OK**.
+1. Selecione a guia **Página** no sidekick e selecione **Propriedades da página.**
+1. Na guia **Serviços em nuvem** da janela pop-up, selecione **Adicionar serviço** para adicionar o serviço Adobe Campaign e clique em **OK**.
 
    ![chlimage_1-174](assets/chlimage_1-174.png)
 
@@ -84,19 +84,19 @@ Além disso, talvez também seja necessário selecionar o modelo do Adobe Campai
 
    >[!NOTE]
    >
-   >Certifique-se de clicar em **OK** ou **Aplicar** depois de adicionar o cloud service. Isso habilita a **Adobe Campaign** para funcionar corretamente.
+   >Certifique-se de clicar em **OK** ou **Aplicar** depois de adicionar o serviço de nuvem. Isso habilita a guia **Adobe Campaign** a funcionar corretamente.
 
-1. Se quiser aplicar um template do delivery de email específico (do Adobe Campaign), diferente do padrão **email** modelo, selecione **Propriedades da página** novamente. No **Adobe Campaign** insira o nome interno do template de delivery de email na instância relacionada do Adobe Campaign.
+1. Se você quiser aplicar um modelo de entrega de email específico (do Adobe Campaign), diferente do modelo padrão **email**, selecione novamente **Propriedades da página**. Na guia **Adobe Campaign**, insira o nome interno do modelo de entrega de email na instância do Adobe Campaign relacionada.
 
-   No Adobe Campaign Standard, o modelo é **Entrega com conteúdo AEM**. No Adobe Campaign 6.1, o modelo é **Entrega de email com conteúdo AEM**.
+   No Adobe Campaign Standard, o modelo é **Delivery com Conteúdo AEM**. No Adobe Campaign 6.1, o modelo é **Entrega de email com conteúdo AEM**.
 
-   Ao selecionar o modelo, o AEM ativa automaticamente a variável **Informativo do Adobe Campaign** componentes.
+   Ao selecionar o modelo, o AEM habilita automaticamente os componentes **Informativo da Adobe Campaign**.
 
 ### Edição de conteúdo de email {#editing-email-content}
 
 É possível editar conteúdo de email na interface clássica do usuário ou na interface otimizada para toque.
 
-1. Insira o assunto e a versão de texto do email selecionando **Propriedades da página** > **E-mail** na caixa de ferramentas.
+1. Insira o assunto e a versão de texto do email selecionando **Propriedades da página** > **Email** na caixa de ferramentas.
 
    ![chlimage_1-175](assets/chlimage_1-175.png)
 
@@ -106,7 +106,7 @@ Além disso, talvez também seja necessário selecionar o modelo do Adobe Campai
 
    ![chlimage_1-176](assets/chlimage_1-176.png)
 
-   Consulte [Componentes do Adobe Campaign](/help/sites-classic-ui-authoring/classic-personalization-ac-components.md) para obter uma descrição dos componentes disponíveis para informativos/campanhas por email do Adobe Campaign.
+   Consulte [Componentes do Adobe Campaign](/help/sites-classic-ui-authoring/classic-personalization-ac-components.md) para obter uma descrição dos componentes disponíveis para informativos/campanhas de email do Adobe Campaign.
 
    ![chlimage_1-177](assets/chlimage_1-177.png)
 
@@ -121,22 +121,22 @@ Consulte [Componentes do Adobe Campaign](/help/sites-classic-ui-authoring/classi
 
 >[!NOTE]
 >
->* Somente os campos do Adobe Campaign **Perfis** targeting dimension são considerados.
->* Ao visualizar Propriedades de **Sites**, você não tem acesso aos campos de contexto do Adobe Campaign. É possível acessá-los diretamente do email ao editar.
+>* Somente os campos da targeting dimension **Profiles** da Adobe Campaign são considerados.
+>* Ao exibir Propriedades de **Sites**, você não tem acesso aos campos de contexto do Adobe Campaign. É possível acessá-los diretamente do email ao editar.
 >
 
-1. Inserir um novo **Informativo** > **Texto e personalização (Campanha)** componente.
-1. Abra o componente clicando duas vezes nele. A variável **Editar** tem uma funcionalidade que permite inserir os elementos de personalização.
+1. Insira um novo componente **Informativo** > **Texto e Personalization (Campanha)**.
+1. Abra o componente clicando duas vezes nele. A janela **Editar** tem uma funcionalidade que permite inserir os elementos de personalização.
 
    >[!NOTE]
    >
-   >Os campos de contexto disponíveis correspondem à variável **Perfis** targeting dimension no Adobe Campaign.
+   >Os campos de contexto disponíveis correspondem à targeting dimension **Perfis** no Adobe Campaign.
    >
-   >Consulte [Vinculação de uma página do AEM a um email do Adobe Campaign](/help/sites-classic-ui-authoring/classic-personalization-ac-campaign.md#linkinganaempagetoanadobecampaignemail).
+   >Consulte [Vinculando uma página de AEM a um email do Adobe Campaign](/help/sites-classic-ui-authoring/classic-personalization-ac-campaign.md#linkinganaempagetoanadobecampaignemail).
 
    ![chlimage_1-178](assets/chlimage_1-178.png)
 
-1. Selecionar **Client Context** no sidekick para testar os campos de personalização usando os dados nos perfis de persona.
+1. Selecione **Client Context** no sidekick para testar os campos de personalização usando os dados nos perfis de persona.
 
    ![chlimage_1-179](assets/chlimage_1-179.png)
 
@@ -157,13 +157,13 @@ Você pode visualizar como o informativo será exibido e visualizar a personaliz
 
 ### Aprovar conteúdo no AEM {#approving-content-in-aem}
 
-Após a conclusão do conteúdo, é possível iniciar o processo de aprovação. Vá para a **Fluxo de trabalho** da caixa de ferramentas e selecione o **Aprovar para o Adobe Campaign** fluxo de trabalho.
+Após a conclusão do conteúdo, é possível iniciar o processo de aprovação. Vá para a guia **Workflow** da caixa de ferramentas e selecione o fluxo de trabalho **Aprovar para Adobe Campaign**.
 
 Esse workflow pronto para uso tem duas etapas: revisão e depois aprovação ou revisão e depois rejeição. No entanto, esse fluxo de trabalho pode ser estendido e adaptado a um processo mais complexo.
 
 ![chlimage_1-182](assets/chlimage_1-182.png)
 
-Para aprovar o conteúdo do Adobe Campaign, aplique o fluxo de trabalho selecionando **Fluxo de trabalho** no sidekick e ao selecionar **Aprovar para o Adobe Campaign** e clique em **Iniciar fluxo de trabalho**. Percorra as etapas e aprove o conteúdo. Também é possível rejeitar o conteúdo selecionando **Rejeitar** em vez de **Aprovar** na última etapa do workflow.
+Para aprovar o conteúdo para o Adobe Campaign, aplique o fluxo de trabalho selecionando **Fluxo de trabalho** no sidekick e selecionando **Aprovar para o Adobe Campaign** e clique em **Iniciar fluxo de trabalho**. Percorra as etapas e aprove o conteúdo. Você também pode rejeitar o conteúdo selecionando **Rejeitar** em vez de **Aprovar** na última etapa do fluxo de trabalho.
 
 ![chlimage_1-183](assets/chlimage_1-183.png)
 
@@ -185,4 +185,4 @@ No Adobe Campaign 6.1:
 
 >[!NOTE]
 >
->Consulte [Vinculação do AEM ao Adobe Campaign Standard e ao Adobe Campaign 6.1](/help/sites-authoring/campaign.md#linking-aem-with-adobe-campaign-standard-and-adobe-campaign-classic) em [Trabalhar com o Adobe Campaign 6.1 e o Adobe Campaign Standard](/help/sites-authoring/campaign.md) na documentação de criação padrão para obter detalhes.
+>Consulte [Vinculação do AEM ao Adobe Campaign Standard e ao Adobe Campaign 6.1](/help/sites-authoring/campaign.md#linking-aem-with-adobe-campaign-standard-and-adobe-campaign-classic) em [Trabalhando com o Adobe Campaign 6.1 e o Adobe Campaign Standard](/help/sites-authoring/campaign.md) na documentação de criação padrão para obter detalhes.

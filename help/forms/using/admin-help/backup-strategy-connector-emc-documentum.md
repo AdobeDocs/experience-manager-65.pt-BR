@@ -1,5 +1,5 @@
 ---
-title: Estratégia de backup para o Connector para usuários do EMC Documentum&reg;
+title: Estratégia de backup do Connector para usuários do EMC Documentum&reg;
 description: Verifique como criar uma estratégia de backup para o Connector para usuários do EMC Documentum&reg;.
 contentOwner: admin
 content-type: reference
@@ -23,7 +23,7 @@ Se você tiver o Connector for EMC Documentum® instalado, além das instruçõe
 Faça backup do ambiente de formulários AEM usando o repositório ECM e executando as seguintes tarefas:
 
 * Faça backup dos formulários AEM seguindo as instruções descritas neste documento.
-* Faça backup do sistema ECM Documentum® seguindo as instruções em [Faça backup do EMC Documentum® Content Server](/help/forms/using/admin-help/backing-recovering-emc-documentum-repository.md#back-up-the-emc-documentum-content-server).
+* Faça backup do sistema ECM Documentum® seguindo as instruções em [Fazer backup do EMC Documentum® Content Server](/help/forms/using/admin-help/backing-recovering-emc-documentum-repository.md#back-up-the-emc-documentum-content-server).
 
 Restaure o ambiente de formulários AEM usando o repositório ECM e executando as seguintes tarefas:
 

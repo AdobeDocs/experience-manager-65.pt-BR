@@ -38,7 +38,7 @@ Os objetos JSON usados no espaço de trabalho do AEM Forms são descritos abaixo
   <tr>
    <td>id</td>
    <td>S</td>
-   <td>ID da categoria<br type="_moz" /> </td>
+   <td>ID da Categoria <br type="_moz" /> </td>
   </tr>
   <tr>
    <td>descrição<br type="_moz" /> </td>
@@ -48,7 +48,7 @@ Os objetos JSON usados no espaço de trabalho do AEM Forms são descritos abaixo
   <tr>
    <td>parentOid<br type="_moz" /> </td>
    <td>S</td>
-   <td>Contém oid da categoria principal<br type="_moz" /> </td>
+   <td>Contém oid da categoria pai<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>startPointsList<br type="_moz" /> </td>
@@ -98,52 +98,52 @@ Os objetos JSON usados no espaço de trabalho do AEM Forms são descritos abaixo
   <tr>
    <td>classOfTask</td>
    <td>S</td>
-   <td>A classe de tarefa é 'LC8' quando a tarefa é lc8 e não 'Standard'.<br /> </td>
+   <td>A classe de tarefa é 'LC8' quando a tarefa é lc8 ou 'Standard'.<br /> </td>
   </tr>
   <tr>
    <td>completeTime<br /> </td>
    <td>S</td>
-   <td>Ele contém o carimbo de data e hora de conclusão da tarefa.<br /> </td>
+   <td>Contém o carimbo de data/hora quando a tarefa é concluída.<br /> </td>
   </tr>
   <tr>
    <td>consultGroupId<br /> </td>
    <td>S</td>
-   <td>Ela contém a ID de um grupo para o qual a tarefa pode ser consultada. Ele é definido durante o design do processo.<br /> </td>
+   <td>Ela contém a ID de um grupo para o qual a tarefa pode ser consultada. É definido durante a criação do processo.<br /> </td>
   </tr>
   <tr>
    <td>createTime<br /> </td>
    <td>S</td>
-   <td>Ela contém o carimbo de data e hora de criação da tarefa.<br /> </td>
+   <td>Contém o carimbo de data/hora quando a tarefa é criada.<br /> </td>
   </tr>
   <tr>
    <td>creationId<br /> </td>
    <td>S</td>
-   <td>Ele contém a ID do usuário que criou a tarefa.<br /> </td>
+   <td>Ele contém a identificação do usuário que criou a tarefa.<br /> </td>
   </tr>
   <tr>
    <td>currentAssignment<br /> </td>
    <td>S</td>
-   <td>Ele contém detalhes sobre a atribuição atual da tarefa.<br /> </td>
+   <td>Ela contém detalhes sobre a atribuição atual da tarefa.<br /> </td>
   </tr>
   <tr>
-   <td>prazo<br /> </td>
+   <td>prazo final<br /> </td>
    <td>S</td>
-   <td>Ela contém o carimbo de data e hora que quando uma tarefa atingirá seu prazo final.<br /> </td>
+   <td>Ela contém o carimbo de data/hora com o qual uma tarefa atingirá seu prazo final.<br /> </td>
   </tr>
   <tr>
    <td>descrição<br /> </td>
    <td>S</td>
-   <td>Contém a descrição da tarefa.<br /> </td>
+   <td>Ele contém a descrição da tarefa.<br /> </td>
   </tr>
   <tr>
    <td>displayName<br /> </td>
    <td>S</td>
-   <td>Ele contém o nome de exibição da tarefa.<br /> </td>
+   <td>Ele contém o nome para exibição da tarefa.<br /> </td>
   </tr>
   <tr>
    <td>forwardGroupId<br /> </td>
    <td>S</td>
-   <td>Ela contém a ID de um grupo para o qual a tarefa pode ser encaminhada. Ele é definido durante o design do processo.<br /> </td>
+   <td>Ela contém a ID de um grupo para o qual a tarefa pode ser encaminhada. É definido durante a criação do processo.<br /> </td>
   </tr>
   <tr>
    <td>instruções<br /> </td>
@@ -153,7 +153,7 @@ Os objetos JSON usados no espaço de trabalho do AEM Forms são descritos abaixo
   <tr>
    <td>isLocked<br /> </td>
    <td>S</td>
-   <td>True se a tarefa estiver bloqueada.<br /> </td>
+   <td>Verdadeiro se a tarefa estiver bloqueada.<br /> </td>
   </tr>
   <tr>
    <td>isMustOpenToComplete<br /> </td>
@@ -163,7 +163,7 @@ Os objetos JSON usados no espaço de trabalho do AEM Forms são descritos abaixo
   <tr>
    <td>isOpenFullScreen<br /> </td>
    <td>S</td>
-   <td>Se verdadeiro, ao abrir a tarefa, o formulário ocupa tela completa na primeira vez.<br /> </td>
+   <td>Se for verdadeiro, ao abrir a tarefa, o formulário é preenchido pela primeira vez na tela.<br /> </td>
   </tr>
   <tr>
    <td>isRouteSelectionRequired<br /> </td>
@@ -173,17 +173,17 @@ Os objetos JSON usados no espaço de trabalho do AEM Forms são descritos abaixo
   <tr>
    <td>isShowAttachments<br /> </td>
    <td>S</td>
-   <td>Os anexos serão exibidos se for verdadeiro.<br /> </td>
+   <td>Anexos são exibidos se for verdadeiro.<br /> </td>
   </tr>
   <tr>
    <td>isStartTask<br /> </td>
    <td>S</td>
-   <td>Se verdadeiro, a tarefa é criada a partir do ponto inicial.<br /> </td>
+   <td>Se for verdadeiro, a tarefa será criada a partir do ponto inicial.<br /> </td>
   </tr>
   <tr>
    <td>isVisible<br /> </td>
    <td>S</td>
-   <td>True se a tarefa estiver visível no espaço de trabalho.<br /> </td>
+   <td>Verdadeiro se a tarefa estiver visível no espaço de trabalho.<br /> </td>
   </tr>
   <tr>
    <td>nextReminder<br /> </td>
@@ -193,7 +193,7 @@ Os objetos JSON usados no espaço de trabalho do AEM Forms são descritos abaixo
   <tr>
    <td>prioridade<br /> </td>
    <td>S</td>
-   <td>Ela contém a prioridade da tarefa.<br /> 1 = Maior prioridade<br /> 2 = Alta Prioridade<br /> 3 = Prioridade normal<br /> 4 = Prioridade baixa<br /> 5 = Prioridade Mais Baixa<br /> </td>
+   <td>Ela contém a prioridade da tarefa.<br /> 1 = Prioridade Mais Alta<br /> 2 = Prioridade Alta<br /> 3 = Prioridade Normal<br /> 4 = Prioridade Baixa<br /> 5 = Prioridade Mais Baixa<br /> </td>
   </tr>
   <tr>
    <td>processInstanceId</td>
@@ -213,7 +213,7 @@ Os objetos JSON usados no espaço de trabalho do AEM Forms são descritos abaixo
   <tr>
    <td>routeList<br /> </td>
    <td>S</td>
-   <td>Ela contém a lista de rotas associadas à tarefa. O usuário pode concluir a tarefa selecionando qualquer um dos roteiros na lista de roteiros.<br /> </td>
+   <td>Ela contém a lista de rotas associadas à tarefa. O usuário pode concluir a tarefa selecionando qualquer uma das rotas da lista de rotas.<br /> </td>
   </tr>
   <tr>
    <td>seletedRoute<br /> </td>
@@ -228,7 +228,7 @@ Os objetos JSON usados no espaço de trabalho do AEM Forms são descritos abaixo
   <tr>
    <td>serviceName<br /> </td>
    <td>S</td>
-   <td>Ele contém o nome do serviço da tarefa.<br /> </td>
+   <td>Ele contém o nome do serviço para a tarefa.<br /> </td>
   </tr>
   <tr>
    <td>serviceTitle<br /> </td>
@@ -238,17 +238,17 @@ Os objetos JSON usados no espaço de trabalho do AEM Forms são descritos abaixo
   <tr>
    <td>status<br /> </td>
    <td>S</td>
-   <td>1 = Criada (a tarefa é criada a partir do ponto inicial.)<br /> 2 = Criada e salva (a tarefa é criada a partir do ponto inicial e salva).<br /> 3 = Atribuída (a tarefa é atribuída ao usuário após o início do processo.)<br /> 4 = Atribuído e Salvo (a tarefa é atribuída e salva.)<br /> 100 = Concluído (a tarefa está concluída.)<br /> 101 = Prazo final (a tarefa atingiu o prazo final).<br /> 102 = Encerrado<br /> </td>
+   <td>1 = Criada (a tarefa é criada a partir do ponto inicial.)<br /> 2 = Criado e salvo (a tarefa é criada a partir do ponto inicial e salva.)<br /> 3 = Atribuída (a tarefa é atribuída ao usuário após o início do processo.)<br /> 4 = Atribuído e Salvo (a tarefa é atribuída e salva.)<br /> 100 = Concluído (A tarefa está concluída.)<br /> 101 = Prazo final (a tarefa atingiu o prazo final.)<br /> 102 = Encerrado<br /> </td>
   </tr>
   <tr>
    <td>stepName<br /> </td>
    <td>S</td>
-   <td>Ele contém o nome do conjunto de tarefas durante o design do processo.<br /> </td>
+   <td>Ele contém o nome do conjunto de tarefas durante a criação do processo.<br /> </td>
   </tr>
   <tr>
    <td>summaryUrl<br /> </td>
    <td>S</td>
-   <td>Ele contém o URL de resumo da tarefa.<br /> </td>
+   <td>Ele contém a URL de resumo da tarefa.<br /> </td>
   </tr>
   <tr>
    <td>taskACL<br /> </td>
@@ -268,17 +268,17 @@ Os objetos JSON usados no espaço de trabalho do AEM Forms são descritos abaixo
   <tr>
    <td>formUrl<br /> </td>
    <td>T</td>
-   <td>Ele contém a URL do formulário de uma tarefa.<br /> </td>
+   <td>Ele contém a url do formulário para uma tarefa.<br /> </td>
   </tr>
   <tr>
    <td>taskFormType<br /> </td>
    <td>T</td>
-   <td>Ele contém o tipo de formulário de tarefa. Usando esse campo, a tarefa é renderizada no cliente como pdf para, formulário swf e assim por diante.<br /> </td>
+   <td>Ele contém o tipo de formulário de tarefa. Usando este campo, a tarefa é renderizada no cliente como pdf para, formulário swf e assim por diante.<br /> </td>
   </tr>
   <tr>
    <td>showDirectActions<br /> </td>
    <td>T</td>
-   <td>Se verdadeiro, as ações de roteiro são visíveis no espaço de trabalho.<br /> </td>
+   <td>Se verdadeiro, as ações de rota estarão visíveis no espaço de trabalho.<br /> </td>
   </tr>
   <tr>
    <td>showACLActions<br /> </td>
@@ -288,7 +288,7 @@ Os objetos JSON usados no espaço de trabalho do AEM Forms são descritos abaixo
   <tr>
    <td>supportedOffline<br /> </td>
    <td>T</td>
-   <td>Se verdadeiro, o formulário pode ser usado offline. Isso é somente para formulários pdf.<br /> </td>
+   <td>Se verdadeiro, o formulário pode ser usado offline. Isto é somente para formulários pdf.<br /> </td>
   </tr>
   <tr>
    <td>supportedSave<br /> </td>
@@ -298,22 +298,22 @@ Os objetos JSON usados no espaço de trabalho do AEM Forms são descritos abaixo
   <tr>
    <td>readerSubmitOptions<br /> </td>
    <td>T</td>
-   <td>Esse objeto contém opções que são usadas para enviar formulários pdf por meio do reader quando o formulário pdf não contém um botão de envio.<br /> </td>
+   <td>Este objeto contém opções que são usadas para enviar formulários pdf por meio de leitor, caso o formulário pdf não contenha o botão enviar.<br /> </td>
   </tr>
   <tr>
    <td>isDefaultImage<br /> </td>
    <td>T</td>
-   <td>Indica se há uma imagem especificada para o processo ou não. Verdadeiro se não houver imagem associada ao processo; caso contrário, é falso.<br /> </td>
+   <td>Indica se há uma imagem especificada para o processo ou não. Verdadeiro se não houver nenhuma imagem associada ao processo; caso contrário, será falso.<br /> </td>
   </tr>
   <tr>
    <td>historyTaskList<br /> </td>
    <td>T</td>
-   <td>Ele contém a lista de tarefas que são usadas na guia histórico de detalhes da tarefa.<br /> </td>
+   <td>Ela contém a lista de tarefas que são usadas na guia de histórico de detalhes da tarefa.<br /> </td>
   </tr>
   <tr>
    <td>isOwner<br /> </td>
    <td>T</td>
-   <td>Verdadeiro se o usuário conectado for o proprietário da tarefa.<br /> </td>
+   <td>Verdadeiro se o usuário conectado for proprietário da tarefa.<br /> </td>
   </tr>
   <tr>
    <td>availableCommands<br /> </td>
@@ -323,7 +323,7 @@ Os objetos JSON usados no espaço de trabalho do AEM Forms são descritos abaixo
   <tr>
    <td>availableCommands.directCommands<br /> </td>
    <td>T</td>
-   <td>Ele contém todas as ações de roteiro disponíveis para uma tarefa.<br /> </td>
+   <td>Ele contém todas as ações de rota disponíveis para uma tarefa.<br /> </td>
   </tr>
   <tr>
    <td>availableCommands.taskACLCommands<br /> </td>
@@ -333,7 +333,7 @@ Os objetos JSON usados no espaço de trabalho do AEM Forms são descritos abaixo
   <tr>
    <td>availableCommands.otherCommands<br /> </td>
    <td>T</td>
-   <td>Ele contém comandos como bloquear, desbloquear, abandonar, retornar, reivindicar e assim por diante, conforme disponível.<br /> </td>
+   <td>Contém comandos como bloquear, desbloquear, abandonar, retornar, reivindicar, etc., conforme disponível.<br /> </td>
   </tr>
   <tr>
    <td>processInstanceInfo<br /> </td>
@@ -343,12 +343,12 @@ Os objetos JSON usados no espaço de trabalho do AEM Forms são descritos abaixo
   <tr>
    <td>processVariables<br /> </td>
    <td>T<br /> </td>
-   <td>Ela contém a matriz de objetos de variáveis de processo, se presentes.<br /> </td>
+   <td>Ela contém uma matriz de objetos de variáveis de processo, se presentes.<br /> </td>
   </tr>
   <tr>
    <td>pendingTasks<br /> </td>
    <td>T</td>
-   <td>Ela contém uma lista de tarefas pendentes para a instância do processo da tarefa.<br /> </td>
+   <td>Ela contém a lista de tarefas pendentes para a instância do processo da tarefa.<br /> </td>
   </tr>
   <tr>
    <td>userActions<br /> </td>
@@ -358,12 +358,12 @@ Os objetos JSON usados no espaço de trabalho do AEM Forms são descritos abaixo
   <tr>
    <td>dataUrl<br /> </td>
    <td>T</td>
-   <td>É o URL para os dados do formulário de uma tarefa.<br /> </td>
+   <td>É a URL dos dados do formulário de uma tarefa.<br /> </td>
   </tr>
   <tr>
    <td>externalAppConfig<br /> </td>
    <td>T</td>
-   <td>Essa é a configuração para formulários de aplicativos de terceiros.<br /> </td>
+   <td>Esta é a configuração para formulários de aplicativo de terceiros.<br /> </td>
   </tr>
   <tr>
    <td>enviado<br /> </td>
@@ -397,10 +397,10 @@ Os objetos JSON usados no espaço de trabalho do AEM Forms são descritos abaixo
   <tr>
    <td>isDefault <br type="_moz" /> </td>
    <td>S</td>
-   <td>True se a fila for a fila padrão do usuário conectado, caso contrário false.<br type="_moz" /> </td>
+   <td>Verdadeiro se a fila for a fila padrão do usuário conectado, caso contrário, falso.<br type="_moz" /> </td>
   </tr>
   <tr>
-   <td>name<br type="_moz" /> </td>
+   <td>nome<br type="_moz" /> </td>
    <td>S</td>
    <td>Nome do proprietário da fila.<br type="_moz" /> </td>
   </tr>
@@ -412,17 +412,17 @@ Os objetos JSON usados no espaço de trabalho do AEM Forms são descritos abaixo
   <tr>
    <td>tipo</td>
    <td>S</td>
-   <td>Ele contém o tipo da fila.<br /> 0 - Fila de usuários.<br /> 1. Fila compartilhada.<br /> 2. Fila de grupo.<br type="_moz" /> </td>
+   <td>Ele contém o tipo da fila.<br /> 0 - Fila de usuários.<br /> 1. Fila compartilhada.<br /> 2. Fila de Grupo.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>query</td>
    <td>T</td>
-   <td>Ele contém query associada a um filtro. Esta consulta é usada para pesquisar tarefas a partir da lista de tarefas completa.<br type="_moz" /> </td>
+   <td>Ele contém query associada a um filtro. Esta consulta é usada para pesquisar tarefas da lista de tarefas concluídas.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>tarefas</td>
    <td>T</td>
-   <td>Ele contém uma lista de todas as tarefas que pertencem a um filtro.<br type="_moz" /> </td>
+   <td>Ele contém a lista de todas as tarefas que pertencem a um filtro.<br type="_moz" /> </td>
   </tr>
  </tbody>
 </table>
@@ -441,7 +441,7 @@ Os objetos JSON usados no espaço de trabalho do AEM Forms são descritos abaixo
   <tr>
    <td>dateRanges<br type="_moz" /> </td>
    <td>S</td>
-   <td>Ele contém objetos de matriz de agendamentos de um usuário fora do escritório. Em cada objeto de agendamento, o campo startDate contém a data inicial do agendamento e o campo endDate contém a data final do agendamento. Se endDate for nulo na programação, isso implica que o usuário não programou a data final da programação fora do escritório.<br type="_moz" /> </td>
+   <td>Ele contém objetos de matriz de agendamentos de um usuário fora do escritório. Em cada objeto de agendamento, o campo startDate contém a data inicial do agendamento e o campo endDate contém a data final do agendamento. Se endDate for nulo no cronograma, isso implica que o usuário não agendou a data final do cronograma de ausência temporária.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>isNoPrimaryDesignate<br type="_moz" /> </td>
@@ -456,22 +456,22 @@ Os objetos JSON usados no espaço de trabalho do AEM Forms são descritos abaixo
   <tr>
    <td>outOfOfficeDesignate<br type="_moz" /> </td>
    <td>S</td>
-   <td>Ele contém detalhes do usuário que é atribuído como designado principal pelo usuário.<br type="_moz" /> </td>
+   <td>Ele contém detalhes do usuário que foi atribuído como o principal designado pelo usuário.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>processSpecificDesignates<br type="_moz" /> </td>
    <td>S</td>
-   <td>Ele contém uma matriz de objetos para designados fora do escritório específicos do processo. Em cada objeto designado específico do processo, processName contém o nome do processo, isNotDesignated é verdadeiro se nenhum usuário for atribuído ao processo correspondente e userDesignated é nulo se nenhum usuário tiver atribuído outros detalhes do usuário para o processo correspondente.<br type="_moz" /> </td>
+   <td>Ele contém uma matriz de objetos para designados fora do escritório específicos do processo. Em cada objeto designado específico do processo, processName contém o nome do processo, isNotDesignated é verdadeiro se nenhum usuário for atribuído para o processo correspondente e userDesignated é nulo se nenhum usuário tiver atribuído detalhes do usuário para o processo correspondente.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>processos<br type="_moz" /> </td>
    <td>T</td>
-   <td>Ela contém uma lista de todos os processos que estão disponíveis para o usuário.<br type="_moz" /> </td>
+   <td>Ele contém uma lista de todos os processos que estão disponíveis para o usuário.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>initialOutOfOfficeSettings<br type="_moz" /> </td>
    <td>T</td>
-   <td>Ele contém as configurações iniciais fora do escritório do usuário, que são buscadas inicialmente.<br type="_moz" /> </td>
+   <td>Ele contém as configurações iniciais de ausência temporária do usuário que são buscadas inicialmente.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>outOfOfficeSettings<br type="_moz" /> </td>
@@ -481,7 +481,7 @@ Os objetos JSON usados no espaço de trabalho do AEM Forms são descritos abaixo
   <tr>
    <td>userSearchHistory<br type="_moz" /> </td>
    <td>T</td>
-   <td>Ela contém uma lista de usuários que são pesquisados por um usuário conectado até a data.<br type="_moz" /> </td>
+   <td>Ela contém uma lista de usuários pesquisados por um usuário conectado até a data.<br type="_moz" /> </td>
   </tr>
  </tbody>
 </table>
@@ -500,12 +500,12 @@ Os objetos JSON usados no espaço de trabalho do AEM Forms são descritos abaixo
   <tr>
    <td>descrição<br type="_moz" /> </td>
    <td>S</td>
-   <td>Descrição da instância do processo<br type="_moz" /> </td>
+   <td>Descrição da instância do processo <br type="_moz" /> </td>
   </tr>
   <tr>
    <td>iniciador</td>
    <td>S</td>
-   <td>Nome do iniciador de uma instância do processo.<br type="_moz" /> </td>
+   <td>Nome do iniciador de uma instância de processo.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>initiatorId</td>
@@ -525,7 +525,7 @@ Os objetos JSON usados no espaço de trabalho do AEM Forms são descritos abaixo
   <tr>
    <td>processInstanceStatus<br type="_moz" /> </td>
    <td>S</td>
-   <td>0 = Iniciado<br /> 1 = Em execução<br /> 2 = Concluído<br /> 3 = Concluindo<br /> 4 = Terminado<br /> 5 = Encerrando<br /> 6 = Suspenso<br /> 7 = Suspensão<br /> 8 = Cancelando Suspensão<br type="_moz" /> </td>
+   <td>0 = Iniciado<br /> 1 = Em Execução<br /> 2 = Concluído<br /> 3 = Concluindo<br /> 4 = Encerrado<br /> 5 = Encerrando<br /> 6 = Suspenso<br /> 7 = Suspenso<br /> 8 = Cancelando a Suspensão<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>processName<br type="_moz" /> </td>
@@ -535,7 +535,7 @@ Os objetos JSON usados no espaço de trabalho do AEM Forms são descritos abaixo
   <tr>
    <td>processStartTime<br type="_moz" /> </td>
    <td>S</td>
-   <td>Carimbo de data/hora de início do processo.<br type="_moz" /> </td>
+   <td>Carimbo de data/hora quando o processo foi iniciado.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>processVariables<br type="_moz" /> </td>
@@ -545,7 +545,7 @@ Os objetos JSON usados no espaço de trabalho do AEM Forms são descritos abaixo
   <tr>
    <td>lista de tarefas<br type="_moz" /> </td>
    <td>T</td>
-   <td>Tarefas geradas por essa instância do processo.<br type="_moz" /> </td>
+   <td>Tarefas geradas por esta instância de processo.<br type="_moz" /> </td>
   </tr>
  </tbody>
 </table>
@@ -582,7 +582,7 @@ Os objetos JSON usados no espaço de trabalho do AEM Forms são descritos abaixo
   <tr>
    <td>processInstanceList<br type="_moz" /> </td>
    <td>T</td>
-   <td>Lista de instâncias deste processo.<br type="_moz" /> </td>
+   <td>Lista de instâncias de processo para este processo.<br type="_moz" /> </td>
   </tr>
  </tbody>
 </table>
@@ -606,7 +606,7 @@ Os objetos JSON usados no espaço de trabalho do AEM Forms são descritos abaixo
   <tr>
    <td>assignmentType<br type="_moz" /> </td>
    <td>S</td>
-   <td>0 = Atribuição inicial<br /> 1 = Encaminhar (a tarefa foi encaminhada ao proprietário atual da tarefa.)<br /> 2 = Retornado (a tarefa foi retornada ao proprietário atual da tarefa pelo proprietário anterior da tarefa).<br /> 3 = Reclamado (a tarefa foi reclamada pelo proprietário atual da tarefa.)<br /> 4 = Escalação (a tarefa foi atribuída ao proprietário atual da tarefa após a escalação.)<br /> 5 = Administrador atribuído (a tarefa foi atribuída pelo administrador ao proprietário atual da tarefa.)<br /> 6 = Consultado ( a tarefa foi consultada para o proprietário atual da tarefa.)<br type="_moz" /> </td>
+   <td>0 = Atribuição Inicial<br /> 1 = Encaminhar (a tarefa foi encaminhada para o proprietário atual da tarefa.)<br /> 2 = Retornado (a tarefa foi retornada ao proprietário atual da tarefa pelo proprietário anterior da tarefa.)<br /> 3 = Declarado (a tarefa foi reivindicada pelo proprietário atual da tarefa.)<br /> 4 = Escalonamento (a tarefa foi atribuída ao proprietário atual da tarefa após o escalonamento.)<br /> 5 = Administrador atribuído (a tarefa foi atribuída pelo administrador ao proprietário atual da tarefa.)<br /> 6 = Consultada ( A tarefa foi consultada para o proprietário atual da tarefa.)<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>assignmentUpdateTime<br type="_moz" /> </td>
@@ -650,22 +650,22 @@ Os objetos JSON usados no espaço de trabalho do AEM Forms são descritos abaixo
   <tr>
    <td>canAddNotes<br type="_moz" /> </td>
    <td>S</td>
-   <td>Se verdadeiro, as observações podem ser adicionadas à tarefa.<br type="_moz" /> </td>
+   <td>Se true, as anotações poderão ser adicionadas à tarefa.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>canClaim<br type="_moz" /> </td>
    <td>S</td>
-   <td>Se verdadeiro, a tarefa pode ser solicitada.<br type="_moz" /> </td>
+   <td>Se for verdadeiro, a tarefa pode ser solicitada.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>canConsult<br type="_moz" /> </td>
    <td>S</td>
-   <td>Se verdadeiro, a tarefa pode ser consultada.<br type="_moz" /> </td>
+   <td>Se for verdadeiro, a tarefa pode ser consultada.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>canForward<br type="_moz" /> </td>
    <td>S</td>
-   <td>Se verdadeiro, a tarefa pode ser encaminhada.<br type="_moz" /> </td>
+   <td>Se for verdadeiro, a tarefa pode ser encaminhada.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>canShare<br type="_moz" /> </td>
@@ -724,12 +724,12 @@ Os objetos JSON usados no espaço de trabalho do AEM Forms são descritos abaixo
   <tr>
    <td>noteExtended<br type="_moz" /> </td>
    <td>S</td>
-   <td>Se verdadeiro, a nota será uma nota estendida (longa).<br type="_moz" /> </td>
+   <td>Se verdadeiro, a observação é uma observação estendida (longa).<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>permissões<br type="_moz" /> </td>
    <td>S</td>
-   <td>Permissões associadas a um anexo. O campo allowRead é para permissão de leitura, allowWrite é para permissão de gravação, allowDelete é para permissão de exclusão.<br type="_moz" /> </td>
+   <td>Permissões associadas a um anexo. o campo allowRead é para permissão de leitura, allowWrite é para permissão de gravação, allowDelete é para permissão de exclusão.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>tamanho<br type="_moz" /> </td>
@@ -742,9 +742,9 @@ Os objetos JSON usados no espaço de trabalho do AEM Forms são descritos abaixo
    <td>ID da tarefa à qual o anexo foi adicionado.<br type="_moz" /> </td>
   </tr>
   <tr>
-   <td>type<br type="_moz" /> </td>
+   <td>tipo<br type="_moz" /> </td>
    <td>S</td>
-   <td>Tipo é o anexo para arquivos e Tipo é uma observação para notas.<br type="_moz" /> </td>
+   <td>Tipo é anexo para arquivos e Tipo é observação para anotações.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>formattedCreationDate<br type="_moz" /> </td>
@@ -759,7 +759,7 @@ Os objetos JSON usados no espaço de trabalho do AEM Forms são descritos abaixo
   <tr>
    <td>formattedFileName<br type="_moz" /> </td>
    <td>T</td>
-   <td>Nome do anexo formatado. Usado para exibir caracteres especiais presentes no nome do anexo no espaço de trabalho do AEM Forms. Isso é somente para notas.<br type="_moz" /> </td>
+   <td>Nome do anexo formatado. Usado para exibir caracteres especiais presentes no nome do anexo no espaço de trabalho do AEM Forms. Isto é somente para notas.<br type="_moz" /> </td>
   </tr>
  </tbody>
 </table>
@@ -793,12 +793,12 @@ Os objetos JSON usados no espaço de trabalho do AEM Forms são descritos abaixo
   <tr>
    <td>directGroupMemberships<br type="_moz" /> </td>
    <td>S</td>
-   <td>Lista do grupo do usuário.<br type="_moz" /> </td>
+   <td>Lista do grupo de usuários.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>displayName<br type="_moz" /> </td>
    <td>S</td>
-   <td>Nome de exibição do usuário.<br type="_moz" /> </td>
+   <td>Nome para exibição do usuário.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>email<br type="_moz" /> </td>
@@ -841,7 +841,7 @@ Os objetos JSON usados no espaço de trabalho do AEM Forms são descritos abaixo
    <td>Número de contato do usuário.<br type="_moz" /> </td>
   </tr>
   <tr>
-   <td>phoneNumber<br type="_moz" /> </td>
+   <td>telephoneNumber<br type="_moz" /> </td>
    <td>S</td>
    <td>Número de contato do usuário.<br type="_moz" /> </td>
   </tr>

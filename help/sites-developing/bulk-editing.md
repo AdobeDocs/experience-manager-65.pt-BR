@@ -18,7 +18,7 @@ ht-degree: 3%
 
 # Configurar sua página para edição em massa das propriedades da página {#configuring-your-page-for-bulk-editing-of-page-properties}
 
-[Edição em massa das propriedades da página](/help/sites-authoring/editing-page-properties.md#from-the-sites-console-multiple-pages) permite editar as propriedades de várias páginas de uma só vez.
+[A edição em massa das propriedades da página](/help/sites-authoring/editing-page-properties.md#from-the-sites-console-multiple-pages) permite editar as propriedades de várias páginas de uma só vez.
 
 Devido à possibilidade de valores diferentes, as propriedades de página não são ativadas para edição em massa como padrão. Eles devem ser explicitamente permitidos (ativados). Ao definir as propriedades de página para que estejam disponíveis para edição de itens em massa, você precisa considerar certas implicações, como:
 
@@ -38,7 +38,7 @@ Devido à possibilidade de valores diferentes, as propriedades de página não s
 
 >[!NOTE]
 >
->A edição em massa também está disponível para o Assets. É muito semelhante, mas difere em alguns pontos. Consulte [Edição de propriedades de vários ativos](/help/assets/metadata.md) para obter informações completas. Você pode personalizar os campos no editor de metadados em massa para Ativos usando o [Editor de esquema](/help/assets/metadata-schemas.md).
+>A edição em massa também está disponível para o Assets. É muito semelhante, mas difere em alguns pontos. Consulte [Editando Propriedades de Várias Assets](/help/assets/metadata.md) para obter informações completas. Você pode personalizar os campos no editor de Metadados em massa do Assets usando o [editor de esquemas](/help/assets/metadata-schemas.md).
 
 ## Ativar um campo {#enabling-a-field}
 
@@ -54,7 +54,7 @@ Devido à possibilidade de valores diferentes, as propriedades de página não s
 >* `/libs/granite/ui/components/foundation/form/checkbox`
 >
 
-Os campos são ativados no componente de página (*não* no modelo):
+Campos são habilitados no componente de página (*não* no modelo):
 
 1. Usando o CRXDE Lite (ou um método equivalente), abra o componente de página.
 
@@ -62,9 +62,9 @@ Os campos são ativados no componente de página (*não* no modelo):
 
    >[!NOTE]
    >
-   >Este exemplo presume que os Componentes principais foram instalados na instância, que é o caso se a instância estiver em execução com conteúdo de amostra We.Retail. Consulte a [Documentação dos Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) para obter mais informações.
+   >Este exemplo presume que os Componentes principais foram instalados na instância, que é o caso se a instância estiver em execução com conteúdo de amostra We.Retail. Consulte a [documentação dos Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) para obter mais informações.
 
-1. Navegue até o campo obrigatório na `cq:dialog` definição.
+1. Navegue até o campo obrigatório dentro da definição `cq:dialog`.
 1. Defina a seguinte propriedade no nó do campo:
 
    * **Nome**: `allowBulkEdit`
@@ -81,13 +81,13 @@ Os campos são ativados no componente de página (*não* no modelo):
 
    >[!CAUTION]
    >
-   >Você ***deve*** não alterar nada no `/libs` caminho.
+   >Você ***deve*** não alterar nada no caminho `/libs`.
    >
-   >Isso ocorre porque o conteúdo de `/libs` é substituído na próxima vez que você atualizar sua instância (e pode ser substituído ao aplicar um hotfix ou pacote de recursos).
+   >Isso ocorre porque o conteúdo de `/libs` é substituído na próxima vez que você atualizar sua instância (e pode ser substituído quando você aplicar um hotfix ou pacote de recursos).
    >
    >O método recomendado para configuração e outras alterações é:
    >
-   >    1. Recrie o item necessário (ou seja, como ele existe em `/libs`) em `/apps`
+   >    1. Recriar o item necessário (isto é, como ele existe em `/libs`) em `/apps`
    >    1. Fazer alterações em `/apps`
 
-1. Selecionar **Salvar tudo** para continuar com suas atualizações.
+1. Selecione **Salvar tudo** para manter suas atualizações.

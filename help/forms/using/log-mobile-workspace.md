@@ -32,7 +32,7 @@ Ao iniciar seu aplicativo Adobe Experience Manager (AEM) Forms, você deve prime
    >    * Para exibir a lista de URLs do servidor, clique na seta da lista no canto direito da caixa de texto URL do servidor.
    >    * Selecione um URL do AEM Forms Server para fazer logon no por meio do aplicativo.
 
-Ao fazer logon no aplicativo, você é direcionado para a [**Início** tela](../../forms/using/home-screen.md).
+Ao fazer logon no aplicativo, você é direcionado à [**tela inicial**](../../forms/using/home-screen.md).
 
 >[!NOTE]
 >

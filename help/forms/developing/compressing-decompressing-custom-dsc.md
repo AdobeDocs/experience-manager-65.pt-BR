@@ -18,7 +18,7 @@ ht-degree: 0%
 
 Experiência com o AEM Forms no Gerenciamento de processos JEE, programação Java™ básica e criação de componente personalizado.
 
-**Outros produtos adicionais obrigatórios**
+**Outros produtos necessários adicionais**
 
 Editor Java™, como [Eclipse](https://www.eclipse.org/) ou [Netbeans IDE](https://netbeans.apache.org/)
 
@@ -202,15 +202,15 @@ O arquivo component.xml é mostrado aqui:
 
 A operação UnzipDocument do serviço personalizado agora pode aceitar uma variável de documento como entrada e retornar uma lista de variáveis de documento como saída.
 
-![Descompactar documento](assets/unzip-doc.jpg)
+![Descompactar Documento](assets/unzip-doc.jpg)
 
 Da mesma forma, a operação ZipDocuments do componente personalizado pode aceitar uma lista de documentos como entrada, compactá-los como um arquivo zip e retornar o documento compactado.
 
-![Documento zip](assets/zip-doc.jpg)
+![Documento ZIP](assets/zip-doc.jpg)
 
 A orquestração de fluxo de trabalho a seguir mostra como descompactar o arquivo ZIP fornecido, compactá-lo novamente em outro arquivo ZIP e retornar a saída (consulte a Figura abaixo).
 
-![Fluxo de trabalho do Unzip Zip](assets/unzip-zip-process.jpg)
+![Descompactar Fluxo de Trabalho Zip](assets/unzip-zip-process.jpg)
 
 ## Alguns casos de uso de negócios {#business-use-cases}
 

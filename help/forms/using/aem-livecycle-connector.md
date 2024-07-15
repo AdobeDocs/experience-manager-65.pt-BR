@@ -21,7 +21,7 @@ O conector do LiveCycle Adobe Experience Manager (AEM) permite a invocação sem
 
 ## Conectar o servidor AEM ao LiveCycle Adobe {#connecting-aem-server-to-adobe-livecycle}
 
-O Conector do LiveCycle AEM faz parte do [Pacote complementar do AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md). Depois de instalar o pacote complementar do AEM Forms, siga as etapas abaixo para adicionar detalhes do servidor LiveCycle ao Console da Web do AEM.
+O Conector de LiveCycle AEM faz parte do [pacote complementar do AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md). Depois de instalar o pacote complementar do AEM Forms, siga as etapas abaixo para adicionar detalhes do servidor LiveCycle ao Console da Web do AEM.
 
 1. No gerenciador de configuração do console da Web AEM, localize o componente de configuração do SDK do cliente do LiveCycle Adobe.
 1. Clique no componente para editar o URL do servidor de configuração, nome de usuário e senha.
@@ -29,7 +29,7 @@ O Conector do LiveCycle AEM faz parte do [Pacote complementar do AEM Forms](/hel
 
 Embora as propriedades sejam autoexplicativas, as importantes são as seguintes:
 
-* **URL do servidor** - Especifica o URL para o servidor do LiveCycle. Se quiser que o LiveCycle e o AEM se comuniquem por https, inicie o AEM com a seguinte JVM
+* **URL do Servidor** - Especifica a URL para o servidor do LiveCycle. Se quiser que o LiveCycle e o AEM se comuniquem por https, inicie o AEM com a seguinte JVM
 
   ```java
   argument
@@ -38,9 +38,9 @@ Embora as propriedades sejam autoexplicativas, as importantes são as seguintes:
 
   opção.
 
-* **Nome de usuário**- Especifica o nome de usuário da conta usada para estabelecer a comunicação entre o AEM e o LiveCycle. A conta é uma conta de usuário do LiveCycle que tem permissões para iniciar o Acrobat Services.
+* **Nome de usuário**- Especifica o nome de usuário da conta que é usada para estabelecer a comunicação entre o AEM e o LiveCycle. A conta é uma conta de usuário do LiveCycle que tem permissões para iniciar o Acrobat Services.
 * **Senha**- Especifica a senha.
-* **Nome do serviço** - Especifica os serviços que são iniciados usando as credenciais de usuário fornecidas nos campos Nome de Usuário e Senha. Por padrão, nenhuma credencial é passada ao iniciar os serviços do LiveCycle.
+* **Nome do Serviço** - Especifica os serviços que são iniciados usando as credenciais de usuário fornecidas nos campos Nome de Usuário e Senha. Por padrão, nenhuma credencial é passada ao iniciar os serviços do LiveCycle.
 
 ## Iniciando serviços de documento {#starting-document-services}
 
@@ -52,7 +52,7 @@ Os aplicativos clientes podem iniciar serviços do LiveCycle de forma programát
 
 O Conector de LiveCycle AEM simplifica o fluxo ao expor essas instâncias do cliente como serviços OSGi que podem ser acessados usando meios OSGi padrão. O conector do LiveCycle oferece os seguintes recursos:
 
-* Instâncias do cliente como Serviço OSGi: os clientes empacotados como pacotes OSGi são listados na [Lista de serviços da Acrobat](/help/forms/using/aem-livecycle-connector.md#p-document-services-list-p) seção. Cada jar do cliente registra a instância do cliente como um serviço OSGi com o Registro de serviço OSGi.
+* Instâncias do cliente como Serviço OSGi: os clientes empacotados como pacotes OSGi estão listados na seção [Lista de serviços do Acrobat](/help/forms/using/aem-livecycle-connector.md#p-document-services-list-p). Cada jar do cliente registra a instância do cliente como um serviço OSGi com o Registro de serviço OSGi.
 * Propagação de credencial do usuário: os detalhes de conexão necessários para se conectar ao servidor do LiveCycle são gerenciados em um local central.
 * ServiceClientFactory Service: Para iniciar os processos, o aplicativo cliente pode acessar a instância ServiceClientFactory.
 
@@ -80,7 +80,7 @@ Para iniciar um serviço exposto de dentro do AEM, execute as seguintes etapas:
    </dependency>
    ```
 
-   Para iniciar um serviço, adicione uma dependência Maven correspondente para o serviço. Para obter a lista de dependências, consulte [Lista de serviços da Acrobat](/help/forms/using/aem-livecycle-connector.md#p-document-services-list-p). Por exemplo, para o serviço Gerar PDF, adicione a seguinte dependência:
+   Para iniciar um serviço, adicione uma dependência Maven correspondente para o serviço. Para obter a lista de dependências, consulte [Lista de Serviços da Acrobat](/help/forms/using/aem-livecycle-connector.md#p-document-services-list-p). Por exemplo, para o serviço Gerar PDF, adicione a seguinte dependência:
 
    ```xml
    <dependency>

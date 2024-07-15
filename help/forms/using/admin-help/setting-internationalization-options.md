@@ -30,6 +30,6 @@ Você pode especificar a localidade usada ao renderizar um formulário PDF. Os c
 
 1. Em Internacionalização, na lista Conjunto de caracteres, selecione um conjunto de caracteres. Essa configuração depende da API usada, renderHTMLForm ou renderPDFForm. Para especificar um conjunto de caracteres diferente dos listados, selecione Personalizado e especifique um valor de codificação na caixa exibida.
 
-   Para transformações de HTML, os formulários AEM suportam valores de codificação de caracteres definidos pelo `java.nio.charset` pacote. Se sFormPreference for PDFForm, somente conjuntos de caracteres específicos serão suportados. O conjunto de caracteres deve ser um nome canônico válido. O valor padrão é ISO-8859-1.
+   Para transformações de HTML, os formulários AEM suportam valores de codificação de caracteres definidos pelo pacote `java.nio.charset`. Se sFormPreference for PDFForm, somente conjuntos de caracteres específicos serão suportados. O conjunto de caracteres deve ser um nome canônico válido. O valor padrão é ISO-8859-1.
 
 1. Clique em Salvar.

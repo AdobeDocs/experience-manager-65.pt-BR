@@ -18,24 +18,24 @@ ht-degree: 0%
 
 # Gerenciar credenciais locais {#managing-local-credentials}
 
-As credenciais locais são credenciais de chave privada hospedadas no Gerenciamento de Repositório de Confiança. A *credencial local* identifica onde a credencial DES de um usuário é armazenada. Usando o Gerenciamento de Armazenamento de Confiança, você pode importar e gerenciar suas credenciais locais usando, por exemplo, arquivos PFX existentes para poder importar, editar e excluir credenciais locais.
+As credenciais locais são credenciais de chave privada hospedadas no Gerenciamento de Repositório de Confiança. Uma *credencial local* identifica onde a credencial DES de um usuário está armazenada. Usando o Gerenciamento de Armazenamento de Confiança, você pode importar e gerenciar suas credenciais locais usando, por exemplo, arquivos PFX existentes para poder importar, editar e excluir credenciais locais.
 
 Os formulários AEM são compatíveis com credenciais RSA e DSA de até 4.096 bits no formato PKCS12 padrão (arquivos .pfx e .p12).
 
 É possível importar e exportar qualquer número de credenciais. Se você quiser substituir uma credencial expirada usando o mesmo alias, exclua a credencial e importe a nova credencial com o mesmo alias.
 
-Para obter informações e instruções relacionadas às extensões do Acrobat Reader DC, consulte [Configurar credenciais para usar com extensões do Acrobat Reader DC](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md#configuring-credentials-for-use-with-acrobat-reader-dc-extensions).
+Para obter informações e instruções relacionadas às extensões do Acrobat Reader DC, consulte [Configurando credenciais para uso com extensões do Acrobat Reader DC](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md#configuring-credentials-for-use-with-acrobat-reader-dc-extensions).
 
 ## Importar uma credencial {#import-a-credential}
 
 1. No console de administração, clique em Configurações > Gerenciamento de armazenamento de confiança > Credenciais locais.
 1. Clique em Importar. Em Tipo de armazenamento de confiança, selecione uma destas opções:
 
-   * **Credencial de assinatura de documento:** Uma credencial usada para emitir uma assinatura digital em um documento.
-   * **Credencial de extensões do Acrobat Reader DC:** Um certificado digital específico para extensões do Acrobat Reader DC que permite que os direitos de uso do Adobe Reader sejam ativados nos documentos PDF produzidos.
-   * **Padrão:** Indica que essa é a credencial padrão para usar com as extensões do Acrobat Reader DC.
+   * **Credencial de Assinatura de Documento:** Uma credencial usada para emitir uma assinatura digital em um documento.
+   * **Credencial de extensões do Acrobat Reader DC:** um certificado digital específico para extensões do Acrobat Reader DC que permite que os direitos de uso do Adobe Reader sejam ativados nos documentos PDF produzidos.
+   * **Padrão:** Indica que esta é a credencial padrão a ser usada com as extensões do Acrobat Reader DC.
 
-   Para obter informações sobre como obter uma credencial, consulte [Preparação para instalar formulários AEM](https://helpx.adobe.com/pdf/aem-forms/6-3/prepare-install-single-server.pdf).
+   Para obter informações sobre como obter uma credencial, consulte [Preparando para instalar formulários AEM](https://helpx.adobe.com/pdf/aem-forms/6-3/prepare-install-single-server.pdf).
 
 1. Na caixa Alias, digite um identificador para a credencial. Esse identificador é usado como o nome de exibição da credencial nas Extensões da Acrobat Reader DC e no serviço de assinatura. Esse alias também é usado para acessar a credencial de forma programática usando o SDK de formulários AEM.
 

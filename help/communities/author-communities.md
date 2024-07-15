@@ -30,47 +30,47 @@ Para saber mais sobre como criar uma visita a um site da comunidade:
 
 >[!NOTE]
 >
->Se não estiver familiarizado com o ambiente de criação, exiba a documentação em [manuseio básico](/help/sites-authoring/basic-handling.md) e uma [guia rápido para a criação de páginas](/help/sites-authoring/qg-page-authoring.md).
+>Se não estiver familiarizado com o ambiente de criação, exiba a documentação sobre [manuseio básico](/help/sites-authoring/basic-handling.md) e um [guia rápido para páginas de criação](/help/sites-authoring/qg-page-authoring.md).
 
 ## Componentes disponíveis das comunidades {#available-communities-components}
 
 A tabela a seguir lista os componentes das Comunidades visíveis para os autores quando ativados no navegador de componentes (sidekick).
 
-Consulte também a seção [Guia de componentes da comunidade](/help/communities/components-guide.md).
+Consulte também o [guia de Componentes da Comunidade](/help/communities/components-guide.md).
 
 >[!NOTE]
 >
->Ler [Noções básicas sobre componentes das comunidades](/help/communities/basics.md) pois contém informações necessárias para a criação com componentes do Communities.
+>Leia as [Noções básicas sobre componentes das comunidades](/help/communities/basics.md), pois elas contêm informações necessárias para a criação com componentes das comunidades.
 
 | **Título do componente** | **Recurso** |
 |---|---|
-| Fluxos de atividade | [Fluxos de atividade](/help/communities/activities.md) |
+| Fluxos de atividade | [Fluxos de atividades](/help/communities/activities.md) |
 | Blog | [Blog](/help/communities/blog-feature.md) |
 | Barra lateral do blog | [Blog](/help/communities/blog-feature.md) |
 | Calendário | [Calendário](/help/communities/calendar.md) |
 | Comentários | [Comentários](/help/communities/comments.md) |
-| Lista de atividades da comunidade | [Tendências da atividade](/help/communities/trends.md) |
+| Lista de atividades da comunidade | [Tendências da Atividade](/help/communities/trends.md) |
 | Lista de membros do grupo da comunidade | [Grupos de comunidades](/help/communities/creating-groups.md) |
 | Compor mensagem | [Mensagens](/help/communities/configure-messaging.md) |
-| Conteúdo incluso | [Conteúdo incluso](/help/communities/featured.md) |
-| Biblioteca de arquivo | [Biblioteca de arquivos](/help/communities/file-library.md) |
-| Seguir | [Gráfico social](/help/communities/socialgraph.md) |
-| Seguindo | [Gráfico social](/help/communities/socialgraph.md) |
+| Conteúdo incluso | [Conteúdo em destaque](/help/communities/featured.md) |
+| Biblioteca de arquivo | [Biblioteca de Arquivos](/help/communities/file-library.md) |
+| Seguir | [Gráfico Social](/help/communities/socialgraph.md) |
+| Seguindo | [Gráfico Social](/help/communities/socialgraph.md) |
 | Fórum | [Fórum](/help/communities/forum.md) |
 | Ideação | [Ideação](/help/communities/ideation-feature.md) |
 | Placar de líderes | [Pontuação e medalhas](/help/communities/enabling-leaderboard.md) |
-| Curtir | [Curtir](/help/communities/liking.md) |
+| Curtir | [Curtindo](/help/communities/liking.md) |
 | Mensagem | [Mensagens](/help/communities/configure-messaging.md) |
 | Lista de mensagens | [Mensagens](/help/communities/configure-messaging.md) |
 | QnA | [Perguntas e respostas](/help/communities/working-with-qna.md) |
 | Busca rápida | [Pesquisar](/help/communities/search.md) |
 | Avaliação | [Classificação](/help/communities/rating.md) |
 | Perguntas relacionadas | [Perguntas e respostas](/help/communities/working-with-qna.md) |
-| Revisões | [Resenhas](/help/communities/reviews.md) |
-| Resumo das análises (exibir) | [Resenhas](/help/communities/reviews.md) |
+| Revisões | [Avaliações](/help/communities/reviews.md) |
+| Resumo das análises (exibir) | [Avaliações](/help/communities/reviews.md) |
 | Pesquisar | [Pesquisar](/help/communities/search.md) |
 | Resultado da pesquisa | [Pesquisar](/help/communities/search.md) |
-| Tags em nuvem do Social | [Tags em nuvem do Social](/help/communities/tagcloud.md) |
+| Tags em nuvem do Social | [Nuvem da Marca Social](/help/communities/tagcloud.md) |
 | Votação | [Votação](/help/communities/voting.md) |
 
 >[!NOTE]
@@ -79,8 +79,8 @@ Consulte também a seção [Guia de componentes da comunidade](/help/communities
 
 ## Documentação de comunidades relacionadas {#related-communities-documentation}
 
-* Visita [Implantação de comunidades](/help/communities/deploy-communities.md) onde você pode saber mais sobre implantações recomendadas.
+* Visite [Implantando Comunidades](/help/communities/deploy-communities.md), onde você pode obter mais informações sobre as implantações recomendadas.
 
-* Visita [Administração dos sites das comunidades](/help/communities/administer-landing.md) para saber mais sobre como criar um site da comunidade, configurar modelos de site da comunidade, moderar o conteúdo da comunidade, gerenciar membros e configurar mensagens.
+* Visite [Administrando sites de comunidades](/help/communities/administer-landing.md) para saber mais sobre como criar um site de comunidade, configurar modelos de site de comunidade, moderar o conteúdo da comunidade, gerenciar membros e configurar mensagens.
 
-* Visita [Comunidades de desenvolvimento](/help/communities/communities.md) onde você pode saber mais sobre a estrutura do componente social (SCF) e personalização de componentes e recursos do Communities.
+* Visite [Comunidades de Desenvolvimento](/help/communities/communities.md), onde você pode saber mais sobre a estrutura do componente social (SCF) e sobre como personalizar componentes e recursos das Comunidades.

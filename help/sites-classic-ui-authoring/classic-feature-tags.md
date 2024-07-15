@@ -20,7 +20,7 @@ ht-degree: 39%
 
 As tags são um método rápido e fácil de classificar conteúdo em um site. As tags podem ser consideradas palavras-chave ou rótulos que podem ser anexados a uma página, um ativo ou outro conteúdo para permitir que as pesquisas localizem esse conteúdo e outros relacionados.
 
-* Consulte [Administração de tags](/help/sites-administering/tags.md) para obter informações sobre como criar e gerenciar tags e às quais tags de conteúdo foram aplicadas.
+* Consulte [Administrando tags](/help/sites-administering/tags.md) para obter informações sobre como criar e gerenciar tags e às quais tags de conteúdo foram aplicadas.
 * Consulte [Marcação para desenvolvedores](/help/sites-developing/tags.md) para obter informações sobre a estrutura de marcação e sobre como incluir e estender tags em aplicativos personalizados.
 
 ## Dez razões para usar marcação {#ten-reasons-to-use-tagging}
@@ -42,7 +42,7 @@ Ao projetar a estrutura de conteúdo para um site e o esquema de metadados para 
 
 No ambiente de criação, os autores podem aplicar tags acessando as propriedades da página e digitando uma ou mais tags no campo **Tags/Palavras-chave**.
 
-Para aplicar [tags predefinidas](/help/sites-administering/tags.md), no **Propriedades da página** janela use o `Tags/Keywords` para selecionar na lista de tags permitidas para a página. Ta **Tags padrão** tab é o namespace padrão, o que significa que não há `namespace-string:` prefixado à taxonomia.
+Para aplicar [marcas predefinidas](/help/sites-administering/tags.md), na janela **Propriedades da Página** use o menu suspenso do campo `Tags/Keywords` para selecionar na lista de marcas permitidas para a página. A guia **Tags Padrão** é o namespace padrão, o que significa que não há `namespace-string:` prefixado à taxonomia.
 
 ![chlimage_1-2](assets/chlimage_1-2a.png)
 
@@ -68,7 +68,7 @@ Assim como com as páginas, você pode executar o seguinte em tags e namespaces:
 
 Nuvens de tags mostram uma nuvem de tags, para a página atual, para o site inteiro ou para aqueles mais acessados. Nuvens de tags são um meio de destacar as questões que são (foram) de interesse para o usuário. O tamanho do texto usado para exibir a tag varia em relação ao seu uso.
 
-A variável [Nuvem de tags](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md#tag-cloud) O componente (grupo geral de componentes) é usado para adicionar uma nuvem de tags a uma página.
+O componente [Nuvem de Marcas](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md#tag-cloud) (grupo de componentes Geral) é usado para adicionar uma nuvem de marcas a uma página.
 
 ## Pesquisar em tags {#searching-on-tags}
 
@@ -76,6 +76,6 @@ Você pode pesquisar tags nos ambientes do autor e de publicação.
 
 ### Utilização do componente de Pesquisa {#using-search-component}
 
-Adicionar um [Componente de pesquisa](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md#search) O para uma página fornece um recurso de pesquisa que inclui tags e pode ser usado nos ambientes do autor e de publicação.
+Adicionar um [componente de Pesquisa](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md#search) a uma página fornece um recurso de pesquisa que inclui marcas e pode ser usado nos ambientes do autor e de publicação.
 
 ![chlimage_1-3](assets/chlimage_1-3a.png)

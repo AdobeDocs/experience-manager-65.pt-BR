@@ -26,9 +26,9 @@ Por exemplo, considere um cenário em que você esteja conectado ao console de a
 
 ## Termos relacionados ao CSRF {#csrf-related-terms}
 
-**Referenciador:** O endereço da página de origem da qual uma solicitação é recebida. Por exemplo, uma página da Web em site1.com contém um link para site2.com. Clicar no link publica uma solicitação em site2.com. O referenciador desta solicitação é site1.com porque a solicitação é feita de uma página cuja origem é site1.com.
+**Referenciador:** O endereço da página de origem da qual uma solicitação está vindo. Por exemplo, uma página da Web em site1.com contém um link para site2.com. Clicar no link publica uma solicitação em site2.com. O referenciador desta solicitação é site1.com porque a solicitação é feita de uma página cuja origem é site1.com.
 
-**Incluir na lista de permissões URIs resolvidas:** Os URIs identificam recursos no servidor do Forms que estão sendo solicitados, por exemplo, /adminui ou /contentspace. Alguns recursos podem permitir que uma solicitação entre no aplicativo a partir de sites externos. Incluir na lista de permissões Esses recursos são considerados URIs classificados. O Forms incluir na lista de permissões Server nunca executa uma verificação de referenciador a partir de URIs.
+incluir na lista de permissões **URIs minuciados:** URIs identificam recursos no Forms Server que estão sendo solicitados, por exemplo, /adi ou /contentspace. Alguns recursos podem permitir que uma solicitação entre no aplicativo a partir de sites externos. Incluir na lista de permissões Esses recursos são considerados URIs classificados. O Forms incluir na lista de permissões Server nunca executa uma verificação de referenciador a partir de URIs.
 
 **Referenciador nulo:** Quando você abre uma nova janela ou guia do navegador, digita um endereço e pressiona Enter, o referenciador é nulo. A solicitação é totalmente nova e não se origina de uma página da Web pai; portanto, não há referenciador para a solicitação. O servidor do Forms pode receber um referenciador nulo de:
 
@@ -36,9 +36,9 @@ Por exemplo, considere um cenário em que você esteja conectado ao console de a
 * qualquer cliente de desktop que faça uma solicitação HTTP em um SOAP forma um endpoint AEM ou REST
 * quando uma nova janela do navegador é aberta e o URL de qualquer página de logon de aplicativo web AEM forms é inserido
 
-Permite um referenciador nulo em pontos de extremidade SOAP e REST. Também permite um referenciador nulo em todas as páginas de logon do URI, como /adminui e /contentspace, e seus recursos mapeados correspondentes. Por exemplo, o servlet mapeado para /contentspace é /contentspace/faces/jsp/login.jsp, que deve ser uma exceção de referenciador nulo. Essa exceção é necessária somente se você habilitar a filtragem de GET para seu aplicativo web. Seus aplicativos podem especificar se devem permitir referenciadores nulos. Consulte &quot;Protegendo contra ataques de falsificação de solicitação entre sites&quot; em [Fortalecimento e segurança para formulários AEM](https://help.adobe.com/en_US/livecycle/11.0/HardeningSecurity/index.html).
+Permite um referenciador nulo em pontos de extremidade SOAP e REST. Também permite um referenciador nulo em todas as páginas de logon do URI, como /adminui e /contentspace, e seus recursos mapeados correspondentes. Por exemplo, o servlet mapeado para /contentspace é /contentspace/faces/jsp/login.jsp, que deve ser uma exceção de referenciador nulo. Essa exceção é necessária somente se você habilitar a filtragem de GET para seu aplicativo web. Seus aplicativos podem especificar se devem permitir referenciadores nulos. Consulte &quot;Proteção contra ataques de falsificação de solicitação entre sites&quot; em [Proteção e segurança para formulários AEM](https://help.adobe.com/en_US/livecycle/11.0/HardeningSecurity/index.html).
 
-**Exceção de referenciador permitida:** Exceção de referenciador permitido é uma sublista da lista de referenciadores permitidos, da qual as solicitações são bloqueadas. Permitido As exceções de referência são específicas a um aplicativo web. Se um subconjunto de Referenciadores permitidos não tiver permissão para chamar uma aplicação Web específica, você poderá incluir na lista de bloqueios os referenciadores por meio de Exceções de referenciador permitidas. As Exceções de referenciador permitidas são especificadas no arquivo web.xml do aplicativo. (Consulte &quot;Protegendo contra ataques de falsificação de solicitação entre sites&quot; em Fortalecimento e segurança para formulários AEM na página Ajuda e Tutorials.)
+**Exceção de Referenciador Permitida:** Exceção de Referenciador Permitida é uma sublista da lista de referenciadores permitidos, da qual as solicitações são bloqueadas. Permitido As exceções de referência são específicas a um aplicativo web. Se um subconjunto de Referenciadores permitidos não tiver permissão para chamar uma aplicação Web específica, você poderá incluir na lista de bloqueios os referenciadores por meio de Exceções de referenciador permitidas. As Exceções de referenciador permitidas são especificadas no arquivo web.xml do aplicativo. (Consulte &quot;Protegendo contra ataques de falsificação de solicitação entre sites&quot; em Fortalecimento e segurança para formulários AEM na página Ajuda e Tutorials.)
 
 ## Como os referenciadores permitidos funcionam {#how-allowed-referers-work}
 
@@ -47,7 +47,7 @@ O AEM Forms fornece filtragem de referenciador, que pode ajudar a impedir ataque
 1. O Forms Server verifica o método HTTP usado para invocação:
 
    * Se for POST, o Forms Server executará a verificação do cabeçalho do referenciador.
-   * Se for GET, o Forms Server ignorará a verificação do referenciador, a menos que CSRF_CHECK_GETS esteja definido como true, nesse caso, ele executará a verificação do cabeçalho do referenciador. CSRF_CHECK_GETS é especificado no arquivo web.xml do aplicativo. (Consulte &quot;Protegendo contra ataques de falsificação de solicitação entre sites&quot; em [Guia de proteção e segurança](https://help.adobe.com/en_US/livecycle/11.0/HardeningSecurity/index.html).)
+   * Se for GET, o Forms Server ignorará a verificação do referenciador, a menos que CSRF_CHECK_GETS esteja definido como true, nesse caso, ele executará a verificação do cabeçalho do referenciador. CSRF_CHECK_GETS é especificado no arquivo web.xml do aplicativo. (Consulte &quot;Protegendo contra ataques de falsificação de solicitação entre sites&quot; no [Guia de Proteção e Segurança](https://help.adobe.com/en_US/livecycle/11.0/HardeningSecurity/index.html).)
 
 1. O servidor do Forms incluir na lista de permissões verifica se o URI solicitado é:
 
@@ -72,7 +72,7 @@ Quando você executa o Configuration Manager, o host padrão e o endereço IP do
 1. Para adicionar um referenciador permitido:
 
    * Digite um nome de host ou endereço IP na caixa Referenciadores permitidos. Para adicionar mais de um referenciador permitido por vez, digite cada nome de host ou endereço IP em uma nova linha.
-   * Nas caixas Porta HTTP e Portas HTTPS, especifique quais portas permitir para HTTP, HTTPS ou ambos. Se essas caixas estiverem vazias, as portas padrão (porta 80 para HTTP e porta 443 para HTTPS) serão usadas. Se você inserir `0` (zero) nas caixas, todas as portas nesse servidor são ativadas. Você também pode inserir um número de porta específico para habilitar somente essa porta.
+   * Nas caixas Porta HTTP e Portas HTTPS, especifique quais portas permitir para HTTP, HTTPS ou ambos. Se essas caixas estiverem vazias, as portas padrão (porta 80 para HTTP e porta 443 para HTTPS) serão usadas. Se você digitar `0` (zero) nas caixas, todas as portas nesse servidor serão habilitadas. Você também pode inserir um número de porta específico para habilitar somente essa porta.
    * Clique em Adicionar.
 
 1. Para remover a entrada da lista Referenciador permitido, selecione o item na lista e clique em Excluir.

@@ -20,9 +20,9 @@ ht-degree: 1%
 
 ## Visão geral {#overview}
 
-A partir das comunidades [FP1](deploy-communities.md#latestfeaturepack), os membros da comunidade podem interagir com a comunidade por email usando um recurso conhecido como assinaturas.
+A partir das Comunidades [FP1](deploy-communities.md#latestfeaturepack), os membros da comunidade podem interagir com a comunidade por email usando um recurso conhecido como assinaturas.
 
-As assinaturas são semelhantes a [notificações](notifications.md) como membros podem se inscrever ao seguir artigos do blog, tópicos do fórum ou perguntas sobre QnA.
+As assinaturas são semelhantes a [notificações](notifications.md), pois os membros podem se inscrever ao seguir artigos do blog, tópicos do fórum ou perguntas sobre QnA.
 
 O que diferencia assinaturas de notificações é:
 
@@ -32,25 +32,25 @@ O que diferencia assinaturas de notificações é:
 
 ### Requisitos {#requirements}
 
-**Configurar email**
+**Configurar Email**
 
 O email deve ser configurado para que as assinaturas sejam funcionais e para que os membros respondam por email.
 
-Para obter instruções sobre como configurar o email, consulte [Configuração de email](email.md).
+Para obter instruções sobre como configurar emails, consulte [Configurando Email](email.md).
 
-**Habilitar assinaturas e seguir**
+**Habilitar Assinaturas e Seguir**
 
-Os componentes devem ser configurados para habilitar assinaturas *e* a seguir. Os recursos que permitem assinaturas são [blog](blog-feature.md), [fórum](forum.md) e [QnA](working-with-qna.md).
+Os componentes devem ser configurados para habilitar as assinaturas *e* a seguir. Os recursos que permitem assinaturas são [blog](blog-feature.md), [fórum](forum.md) e [QnA](working-with-qna.md).
 
 ## Assinaturas do Seguinte {#subscriptions-from-following}
 
-![subscription-following](assets/subscription-following.png)
+![assinatura-sequência](assets/subscription-following.png)
 
-A variável **Seguir** O botão fornece um meio de seguir entradas como atividades, assinaturas e/ou notificações. Cada vez que a variável **Seguir** for selecionada, é possível ativar ou desativar uma seleção.
+O botão **Seguir** fornece um meio de seguir entradas como atividades, assinaturas e/ou notificações. Sempre que o botão **Seguir** é selecionado, é possível ativar ou desativar uma seleção.
 
-Se qualquer método de seguir for selecionado, o texto do botão será alterado para **Seguindo**. Por conveniência, é possível selecionar `Unfollow All` para desativar todos os métodos.
+Se qualquer método de acompanhamento for selecionado, o texto do botão será alterado para **Seguinte**. Para maior comodidade, é possível selecionar `Unfollow All` para desligar todos os métodos.
 
-A variável **Seguir** incluirá a variável `Email Subscriptions` opção somente quando um fórum, QnA ou blog é configurado para ativar assinaturas de email. Esse botão aparecerá:
+O botão **Seguir** incluirá a opção `Email Subscriptions` somente quando um fórum, QnA ou blog for configurado para habilitar assinaturas de email. Esse botão aparecerá:
 
 * Na página principal do recurso do fórum, QnA ou blog ativado, enviará um email para todas as atividades sob esse recurso.
 
@@ -58,11 +58,11 @@ A variável **Seguir** incluirá a variável `Email Subscriptions` opção somen
 
 ## Responder por e-mail {#reply-by-email}
 
-Quando o email é [configurado para responder por e-mail](email.md#configure-polling-importer), o membro que se inscreveu receberá um email com o conteúdo postado e um link para o conteúdo online.
+Quando o email estiver [configurado para resposta por email](email.md#configure-polling-importer), o membro que se inscreveu receberá um email com o conteúdo postado e um link para o conteúdo online.
 
 Se responderem ao email, o conteúdo inserido na resposta será exibido como conteúdo online.
 
-![email-reply](assets/email-reply.png)
+![resposta-email](assets/email-reply.png)
 
 O tempo necessário para que uma resposta seja postada é controlado pelo [intervalo de atualização do importador de sondagem](email.md#configure-polling-importer).
 

@@ -30,7 +30,7 @@ As operações do AEM Forms podem ser executadas usando a API altamente tipada d
 
 ## Início rápido (modo SOAP): decodificação de dados de formulário com código de barras usando a API Java™ {#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api}
 
-O código Java™ a seguir decodifica dados de formulário que estão em um formulário PDF salvo como Loan.pdf. Os dados decodificados são salvos como um arquivo XML chamado extraídoData.xml. Este exemplo de código converte um `org.w3c.dom.Document` em um `com.adobe.idp.Document` objeto. (Consulte [Decodificação de dados de formulário com código de barras](/help/forms/developing/barcoded-forms.md#decoding-barcoded-form-data).)
+O código Java™ a seguir decodifica dados de formulário que estão em um formulário PDF salvo como Loan.pdf. Os dados decodificados são salvos como um arquivo XML chamado extraídoData.xml. Este exemplo de código converte um objeto `org.w3c.dom.Document` em um objeto `com.adobe.idp.Document`. (Consulte [Decodificação De Dados De Formulário Com Código De Barras](/help/forms/developing/barcoded-forms.md#decoding-barcoded-form-data).)
 
 ```java
  /*
@@ -219,4 +219,4 @@ O código Java™ a seguir decodifica dados de formulário que estão em um form
 
 >[!NOTE]
 >
->Ao usar uma `org.w3c.dom.Document` objeto e um `com.adobe.idp.Document` na mesma lógica de aplicativo, é uma boa prática qualificar totalmente ambos os objetos.
+>Ao usar um objeto `org.w3c.dom.Document` e um objeto `com.adobe.idp.Document` na mesma lógica de aplicativo, é uma boa prática qualificar completamente ambos os objetos.

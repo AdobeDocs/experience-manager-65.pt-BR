@@ -44,7 +44,7 @@ No estágio anterior da jornada headless, você aprendeu como usar a API GraphQL
 
 Então, por que é necessária outra API?
 
-A API HTTP do Assets permite **Ler** seu conteúdo, mas também permite **Criar**, **Atualizar** e **Excluir** conteúdo - ações que não são possíveis com a API do GraphQL.
+A API HTTP do Assets permite **Ler** o seu conteúdo, mas também permite **Criar**, **Atualizar** e **Excluir** conteúdo - ações que não são possíveis com a API do GraphQL.
 
 A API REST do Assets está disponível em cada instalação pronta para uso de uma versão recente do Adobe Experience Manager.
 
@@ -57,7 +57,7 @@ A API HTTP de ativos abrange:
 
 A implementação atual da API HTTP de ativos é baseada no estilo de arquitetura **REST** e permite que você acesse o conteúdo (armazenado no AEM) por meio de operações **CRUD** (criar, ler, atualizar, excluir).
 
-Com essas operações, a API permite operar o Adobe Experience Manager como um CMS (Content Management System) headless, fornecendo Serviços de conteúdo a um aplicativo front-end JavaScript. Ou qualquer outro aplicativo que possa executar solicitações HTTP e manipular respostas JSON. Por exemplo, aplicativos de página única (SPA) baseados em estrutura ou personalizados exigem conteúdo fornecido por meio de uma API, geralmente no formato JSON.
+Com essas operações, a API permite operar o Adobe Experience Manager como um CMS (Content Management System, Sistema de gerenciamento de conteúdo) headless, fornecendo Serviços de conteúdo a um aplicativo front-end do JavaScript. Ou qualquer outro aplicativo que possa executar solicitações HTTP e manipular respostas JSON. Por exemplo, aplicativos de página única (SPA) baseados em estrutura ou personalizados exigem conteúdo fornecido por meio de uma API, geralmente no formato JSON.
 
 <!--
 >[!NOTE]
@@ -320,7 +320,7 @@ Agora que concluiu esta parte da jornada de desenvolvedores headless do AEM, voc
 
 <!--You should continue your AEM headless journey by next reviewing the document [How to Put It All Together - Your App and Your Content in AEM Headless](put-it-all-together.md) where you learn how to take your AEM Headless project and prepare it for going live.-->
 
-Você deve continuar sua jornada AEM headless revisando em seguida o documento [Como fazer a ativação com seu aplicativo headless](go-live.md) onde você realmente leva seu projeto AEM Headless ao vivo!
+Você deve continuar sua jornada sem periféricos de AEM revisando a seguir o documento [Como entrar em operação com seu aplicativo sem periféricos](go-live.md) onde você de fato coloca seu projeto com AEM sem periféricos em funcionamento!
 
 ## Recursos adicionais {#additional-resources}
 
@@ -332,6 +332,6 @@ Você deve continuar sua jornada AEM headless revisando em seguida o documento [
 * [Componentes principais do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR)
 * [Explicação sobre o CORS/AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-article-understand.html?lang=pt-BR)
 * [Vídeo - Desenvolvimento do CORS com o AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html?lang=pt-BR)
-* Um [Introdução ao AEM as a Headless CMS](/help/sites-developing/headless/introduction.md)
-* A variável [Portal do desenvolvedor de AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=pt-BR)
-* [Tutorials para headless no AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=pt-BR)
+* Uma [Introdução ao AEM as a Headless CMS](/help/sites-developing/headless/introduction.md)
+* O [Portal do Desenvolvedor do AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=pt-BR)
+* [Tutorials para Headless no AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=pt-BR)

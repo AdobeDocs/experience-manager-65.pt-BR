@@ -49,7 +49,7 @@ Ao contrário de fixar uma publicação na parte superior de um fórum, esse rec
   </tr>
   <tr>
    <td><strong> propriedades</strong></td>
-   <td>Consulte <a href="featured.md">Conteúdo incluso</a></td>
+   <td>Ver <a href="featured.md">Conteúdo em destaque</a></td>
   </tr>
  </tbody>
 </table>
@@ -58,4 +58,4 @@ Ao contrário de fixar uma publicação na parte superior de um fórum, esse rec
 
 ### Função da biblioteca de arquivo {#file-library-function}
 
-Uma estrutura de site da comunidade que inclui o [Função Conteúdo em destaque](functions.md#featured-content-function), inclui um configurado `featured content` componente.
+Uma estrutura de site de comunidade que inclui a [função de Conteúdo em Destaque](functions.md#featured-content-function), inclui um componente `featured content` configurado.

@@ -43,7 +43,7 @@ Iniciar o servidor na linha de comando:
 
 `<host>`
 
-Esse é o endereço do host da instância do CRX à qual você deseja se conectar. Se a instância estiver no computador local, isso será `localhost`.
+Esse é o endereço do host da instância do CRX à qual você deseja se conectar. Se a instância estiver no computador local, isso significa `localhost`.
 
 `<remoteport>`
 
@@ -63,7 +63,7 @@ Não grava a saída na janela do console. Use-a se não quiser retardar a conex�
 
 Se estiver procurando combinações específicas de bytes no tráfego, ative o modo binário. A saída conterá a saída hexadecimal e de caracteres.
 
-`-t` (entradas de log de carimbo de data e hora)
+`-t` (entradas de log de carimbo de data/hora)
 
 Adiciona um carimbo de data/hora a cada saída de log. O carimbo de data e hora é expresso em segundos, portanto, pode não ser adequado para a verificação de solicitações únicas. Use-a para localizar eventos que ocorreram em um horário específico se você usar o servidor proxy por um período mais longo.
 
@@ -73,7 +73,7 @@ Grava a conversa cliente-servidor em um arquivo de log. Esse parâmetro também 
 
 **`-i <numIndentions>`**(adicionar recuo)
 
-Cada conexão ativa é recuada para melhorar a leitura. O padrão é 16 níveis. Esse recurso foi introduzido com o `proxy.jar version 1.16`.
+Cada conexão ativa é recuada para melhorar a leitura. O padrão é 16 níveis. Este recurso foi introduzido com `proxy.jar version 1.16`.
 
 ### Formato do Log {#log-format}
 
@@ -88,7 +88,7 @@ Por exemplo, uma solicitação de página da Web pode ter a seguinte aparência:
 * C significa que essa entrada vem do cliente (é uma solicitação para uma página da Web)
 * 0 é o número da conexão (o contador de conexões começa em 0)
 * #00000 o deslocamento no fluxo de bytes. Esta é a primeira entrada, portanto, o deslocamento é 0.
-* `[GET <?>]` é o conteúdo da solicitação, no exemplo de um dos cabeçalhos HTTP (url).
+* `[GET <?>]` é o conteúdo da solicitação, no exemplo um dos cabeçalhos HTTP (url).
 
 Quando uma conexão é fechada, as seguintes informações são registradas:
 
@@ -99,7 +99,7 @@ S-6-Finished: 665 bytes (1.0 kb/s)
 
 Isso mostra o número de bytes transmitidos entre o cliente ( `C`) e o servidor ( `S`) na sexta conexão e na velocidade média.
 
-**Um exemplo de saída de log**
+**Um Exemplo de Saída de Log**
 
 Como exemplo, considere uma página que produz o seguinte código quando solicitado:
 
@@ -127,7 +127,7 @@ O conteúdo de `test.html` é:
 </html>
 ```
 
-Supondo que a instância AEM esteja em execução `localhost:4502`, o proxy é iniciado assim:
+Supondo que a instância AEM esteja em execução em `localhost:4502`, o proxy é iniciado da seguinte maneira:
 
 `java -jar proxy.jar localhost 4502 4444 -logfile test.log`
 
@@ -146,7 +146,7 @@ Agora abra um navegador e acesse a página de teste:
 
 `http://localhost:4444/content/test.html`
 
-E você vê que o navegador faz uma `GET` solicitação para a página:
+E você vê que o navegador faz uma solicitação `GET` para a página:
 
 ```shell
 C-0-#000000 -> [GET /content/test.html HTTP/1.1 ]
@@ -163,7 +163,7 @@ C-0-#000684 -> [59-7913-4285-8857-832c087bafd5_c484727d3b3665ad%3acrx.default; y
 C-0-#000824 -> [ ]
 ```
 
-A instância do AEM responde com o conteúdo do arquivo `test.html`:
+A instância AEM responde com o conteúdo do arquivo `test.html`:
 
 ```shell
 S-0-#000000 -> [HTTP/1.1 200 OK ]
@@ -189,13 +189,13 @@ S-0-#000319 -> [</html>]
 
 Os cenários a seguir ilustram algumas das finalidades para as quais o Servidor Proxy pode ser usado:
 
-**Verificar se há cookies e seus valores**
+**Verificar Cookies e seus Valores**
 
 O exemplo de entrada de log a seguir mostra todos os cookies e seus valores enviados pelo cliente na sexta conexão aberta desde que o proxy foi iniciado:
 
 `C-6-#000635 -> [Cookie: cq3session=7e39bc51-ac72-3f48-88a9-ed80dbac0693; Show=ShowMode; JSESSIONID=68d78874-cabf-9444-84a4-538d43f5064d ]`
 
-**Verificação de Cabeçalhos e seus Valores**
+**Verificando Cabeçalhos e seus Valores**
 
 O exemplo de entrada de log a seguir mostra que o servidor pode fazer uma conexão keep-alive e o cabeçalho de comprimento de conteúdo foi definido corretamente:
 
@@ -216,7 +216,7 @@ Para verificar se o keep-alive funciona:
 * Se o keep-alive estiver funcionando, o contador de conexões nunca deverá ultrapassar 5 a 10 conexões.
 * Se o keep-alive não estiver funcionando, o contador de conexões aumentará rapidamente.
 
-**Localizando solicitações perdidas**
+**Localizando Solicitações Perdidas**
 
 Se você perder solicitações em uma configuração de servidor complexa, por exemplo, com um firewall e um Dispatcher, poderá usar o servidor proxy para descobrir onde a solicitação foi perdida. Se houver um firewall:
 
@@ -224,7 +224,7 @@ Se você perder solicitações em uma configuração de servidor complexa, por e
 * Iniciar outro proxy após um firewall
 * Use-os para ver até que ponto as solicitações estão chegando.
 
-**Solicitações Deslocadas**
+**Solicitações suspensas**
 
 Se você tiver solicitações de alteração de vez em quando:
 

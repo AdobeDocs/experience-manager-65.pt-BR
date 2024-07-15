@@ -54,7 +54,7 @@ Para atualizar a barra de navegação na parte superior do Workspace do AEM Form
 
 ## Componente da categoria {#category-component}
 
-Componente Categoria exibe as várias categorias de suas tarefas no painel esquerdo. Para alterar a cor, defina a cor do plano de fundo em `.category` elemento do arquivo CSS.
+Componente Categoria exibe as várias categorias de suas tarefas no painel esquerdo. Para alterar a cor, defina a cor do plano de fundo no elemento `.category` do arquivo CSS.
 
 ## Componente da tarefa {#task-component}
 

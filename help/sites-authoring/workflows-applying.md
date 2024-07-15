@@ -43,7 +43,7 @@ Os fluxos de trabalho podem ser iniciados:
 
 >[!NOTE]
 >
->Os administradores do AEM podem [iniciar workflows usando vários outros métodos](/help/sites-administering/workflows-starting.md).
+>Os administradores do AEM podem [iniciar fluxos de trabalho usando vários outros métodos](/help/sites-administering/workflows-starting.md).
 
 ## Iniciar um fluxo de trabalho a partir do console Sites {#starting-a-workflow-from-the-sites-console}
 
@@ -75,7 +75,7 @@ Na **linha do tempo** é possível iniciar um fluxo de trabalho a ser aplicado a
 1. [Selecione o recurso](/help/sites-authoring/basic-handling.md#viewingandselectingyourresources) e abra a [Linha do tempo](/help/sites-authoring/basic-handling.md#timeline) (ou abra a Linha do tempo e depois selecione o recurso).
 1. A ponta da seta no campo de comentário pode ser usada para revelar a opção **Iniciar fluxo de trabalho**:
 
-   ![screen-shot_2019-03-05at120026](assets/screen-shot_2019-03-05at120026.png)
+   ![captura de tela_2019-03-05at120026](assets/screen-shot_2019-03-05at120026.png)
 
 1. O assistente **Criar fluxo de trabalho** ajuda [a especificar os detalhes do fluxo de trabalho](#specifying-workflow-details-in-the-create-workflow-wizard).
 
@@ -106,7 +106,7 @@ Você pode especificar detalhes:
 
    >[!NOTE]
    >
-   >A variável **Manter pacote de fluxo de trabalho** estiver disponível quando o fluxo de trabalho tiver sido configurado para [Suporte a vários recursos](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support) e vários recursos foram selecionados.
+   >A opção **Manter pacote de fluxo de trabalho** estará disponível quando o fluxo de trabalho for configurado para o [Suporte a Vários Recursos](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support) e vários recursos forem selecionados.
 
    Quando terminar, use **Próximo** para prosseguir.
 
@@ -114,7 +114,7 @@ Você pode especificar detalhes:
 
 1. Na etapa **Escopo**, você pode selecionar:
 
-   * **Adicionar conteúdo** para abrir o [navegador de caminho](/help/sites-authoring/author-environment-tools.md#path-browser) e selecione recursos adicionais; quando estiver no navegador, clique em **Selecionar** para adicionar o conteúdo à instância do workflow.
+   * **Adicionar Conteúdo** para abrir o [navegador de caminhos](/help/sites-authoring/author-environment-tools.md#path-browser) e selecionar recursos adicionais. Quando estiver no navegador, clique em **Selecionar** para adicionar o conteúdo à instância do fluxo de trabalho.
 
    * Um recurso existente para ver ações adicionais:
 

@@ -17,7 +17,7 @@ ht-degree: 4%
 
 # Palavras-chave de formulários adaptáveis {#adaptive-forms-keywords}
 
-<span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) para [criação de um novo Forms adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
+O <span class="preview"> Adobe recomenda o uso de [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adicionar o Forms Adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
 
 As palavras-chave dos formulários adaptáveis são identificadores predefinidos e reservados que têm significado especial para formulários adaptáveis. Não é possível usar essas palavras-chave como identificadores em formulários adaptáveis. A tabela a seguir lista todas as palavras-chave que são identificadores reservados para formulários adaptáveis.
 
@@ -241,4 +241,4 @@ As palavras-chave dos formulários adaptáveis são identificadores predefinidos
  </tbody>
 </table>
 
-Além das palavras-chave listadas acima, evite usar nomes semelhantes a [APIs JavaScript de formulários adaptáveis](https://adobe.com/go/learn_aemforms_javascript_api_63).
+Além das palavras-chave listadas acima, evite usar nomes semelhantes às [APIs de formulários adaptáveis do JavaScript](https://adobe.com/go/learn_aemforms_javascript_api_63).

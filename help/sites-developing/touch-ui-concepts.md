@@ -39,7 +39,7 @@ A interface habilitada para toque inclui:
    * Indica qual console você está usando no momento, sua localização ou ambos dentro desse console
    * Seleção para o painel esquerdo
    * Navegações estruturais
-   * O acesso a **Criar** ações
+   * Acesso a **Criar** ações apropriadas
    * Exibir seleções
 * A área de conteúdo que:
    * Lista os itens de conteúdo (sejam páginas, ativos, publicações de fórum e assim por diante)
@@ -51,12 +51,12 @@ A interface habilitada para toque inclui:
 
 >[!NOTE]
 >
->Quase toda a funcionalidade do AEM foi transferida para a interface habilitada para toque. No entanto, em alguns casos limitados, a funcionalidade reverte para a interface clássica. Consulte [Status do recurso da interface de toque](/help/release-notes/touch-ui-features-status.md) para obter mais informações.
+>Quase toda a funcionalidade do AEM foi transferida para a interface habilitada para toque. No entanto, em alguns casos limitados, a funcionalidade reverte para a interface clássica. Consulte [Status do Recurso da Interface para Toque](/help/release-notes/touch-ui-features-status.md) para obter mais informações.
 
 A interface habilitada para toque foi projetada pelo Adobe para fornecer consistência na experiência do usuário em vários produtos. Tem por base:
 
-* **Coral UI** (CUI) uma implementação do estilo visual do Adobe para a interface habilitada para toque. A interface Coral fornece tudo o que seu produto/projeto/aplicativo Web precisa para adotar o estilo visual da interface.
-* **Interface do Granite** Os componentes do são criados com a interface do Coral.
+* **Interface do usuário do Coral** (CUI) uma implementação do estilo visual de Adobe para a interface do usuário habilitada para toque. A interface Coral fornece tudo o que seu produto/projeto/aplicativo Web precisa para adotar o estilo visual da interface.
+* Os componentes da **interface do Granite** são criados com a interface do Coral.
 
 Os princípios básicos da interface habilitada para toque são:
 
@@ -68,7 +68,7 @@ Os princípios básicos da interface habilitada para toque são:
 * Incluir testes incorporados
 * Design ascendente para garantir que esses princípios sejam aplicados a todos os elementos e componentes
 
-Para obter uma visão geral adicional da estrutura da interface habilitada para toque, consulte [Estrutura da interface habilitada para toque por AEM](/help/sites-developing/touch-ui-structure.md).
+Para obter mais uma visão geral da estrutura da interface habilitada para toque, consulte [Estrutura da interface habilitada para toque por AEM](/help/sites-developing/touch-ui-structure.md).
 
 ## Pilha de tecnologia AEM {#aem-technology-stack}
 
@@ -84,7 +84,7 @@ O Granite é uma pilha da Web aberta do Adobe, que fornece vários componentes, 
 * Uma estrutura OSGi na qual tudo é implantado
 * Vários serviços de compêndio OSGi para suportar a criação de aplicativos
 * Uma estrutura de log abrangente que fornece várias APIs de log
-* A implementação do repositório CRX da especificação da API JCR
+* A implementação do Repositório do CRX da especificação da API JCR
 * A estrutura da Web do Apache Sling
 * Partes adicionais do produto CRX atual
 
@@ -92,7 +92,7 @@ O Granite é uma pilha da Web aberta do Adobe, que fornece vários componentes, 
 >
 >O Granite é executado como um projeto de desenvolvimento aberto no Adobe: contribuições para o código, discussões e problemas são feitas em toda a empresa.
 >
->No entanto, o Granite é **não** um projeto de código aberto. É fortemente baseado em vários projetos de código aberto (Apache Sling, Felix, Jackrabbit, e Lucene em particular), mas Adobe traça uma linha clara entre o que é público e o que é interno.
+>No entanto, o Granite **não** é um projeto de código aberto. É fortemente baseado em vários projetos de código aberto (Apache Sling, Felix, Jackrabbit, e Lucene em particular), mas Adobe traça uma linha clara entre o que é público e o que é interno.
 
 ## Interface do Granite {#granite-ui}
 
@@ -124,7 +124,7 @@ A interface do Granite:
 
 ![chlimage_1-82](assets/chlimage_1-82.png)
 
-* [Componentes de base da interface de usuário do Granite](#granite-ui-foundation-components)
+* [Componentes de base da interface do Granite](#granite-ui-foundation-components)
 Essa biblioteca de componentes de base pode ser usada ou estendida por outras bibliotecas.
 * [Componentes de administração da interface de usuário do Granite](#granite-ui-administration-components)
 
@@ -139,7 +139,7 @@ A comunicação cliente-servidor na interface do Granite consiste em hipertexto,
 
 #### Lado do cliente {#client-side}
 
-Isso usa uma extensão do vocabulário HTML, fornecida para que o autor possa expressar sua intenção de criar um aplicativo web interativo. Esta abordagem é semelhante à [WAI-ARIA](https://www.w3.org/TR/wai-aria/) e [microformatos](https://microformats.org/).
+Isso usa uma extensão do vocabulário HTML, fornecida para que o autor possa expressar sua intenção de criar um aplicativo web interativo. Esta é uma abordagem semelhante para [WAI-ARIA](https://www.w3.org/TR/wai-aria/) e [microformatos](https://microformats.org/).
 
 Consiste principalmente em uma coleção de padrões de interação (por exemplo, envio assíncrono de um formulário) que são interpretados por códigos JS e CSS, executados no lado do cliente. A função do lado do cliente é aprimorar a marcação (fornecida como o custo de hipermídia pelo servidor) para interatividade.
 
@@ -155,7 +155,7 @@ Eles são entregues como parte do pacote de conteúdo:
 
 #### Lado do servidor {#server-side}
 
-Isso é formado por uma coleção de componentes do sling que permitem que o autor *compor* um aplicativo da web rápido. O desenvolvedor desenvolve componentes, o autor monta os componentes para ser um aplicativo da Web. A função do lado do servidor é oferecer o preço acessível da hipermídia (marcação) ao cliente.
+Isso é formado por uma coleção de componentes do sling que permitem que o autor *componha* um aplicativo da web rapidamente. O desenvolvedor desenvolve componentes, o autor monta os componentes para ser um aplicativo da Web. A função do lado do servidor é oferecer o preço acessível da hipermídia (marcação) ao cliente.
 
 Atualmente, os componentes estão no repositório do Granite em:
 
@@ -176,7 +176,7 @@ As diferenças entre a interface do Granite e a ExtJS (usada para a interface cl
    <td><strong>Interface do Granite</strong></td>
   </tr>
   <tr>
-   <td>Chamada de procedimento remoto<br /> </td>
+   <td>Chamada de Procedimento Remoto<br /> </td>
    <td>Transições de Estado</td>
   </tr>
   <tr>
@@ -200,7 +200,7 @@ As diferenças entre a interface do Granite e a ExtJS (usada para a interface cl
 
 ### Componentes de base da interface de usuário do Granite {#granite-ui-foundation-components}
 
-A variável [Componentes de base da interface do Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) O fornece os blocos de construção básicos necessários para criar qualquer interface do usuário. Incluem, entre outros:
+Os [componentes de base da interface do Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) fornecem os blocos de construção básicos necessários para a compilação de qualquer interface do usuário. Incluem, entre outros:
 
 * Botão
 * Hiperlink
@@ -230,7 +230,7 @@ Essa biblioteca de componentes de base pode ser usada ou estendida por outras bi
 
 Ao atualizar o código ExtJS para usar a interface do Granite, a lista a seguir fornece uma visão geral conveniente dos tipos de nó e xtypes ExtJS com seus tipos de recursos equivalentes da interface do Granite.
 
-| **ExtJS xtype** | **Tipo de recurso da interface do Granite** |
+| **ExtJS xtype** | **Tipo de recurso de interface do Granite** |
 |---|---|
 | `button` | `granite/ui/components/foundation/form/button` |
 | `checkbox` | `granite/ui/components/foundation/form/checkbox` |
@@ -249,7 +249,7 @@ Ao atualizar o código ExtJS para usar a interface do Granite, a lista a seguir 
 | `textarea` | `granite/ui/components/foundation/form/textarea` |
 | `textfield` | `granite/ui/components/foundation/form/textfield` |
 
-| **Tipo de nó** | **Tipo de recurso da interface do Granite** |
+| **Tipo de nó** | **Tipo de recurso de interface do Granite** |
 |---|---|
 | `cq:WidgetCollection` | `granite/ui/components/foundation/container` |
 | `cq:TabPanel` | `granite/ui/components/foundation/container``granite/ui/components/foundation/layouts/tabs` |
@@ -257,7 +257,7 @@ Ao atualizar o código ExtJS para usar a interface do Granite, a lista a seguir 
 
 ### Componentes de administração da interface de usuário do Granite {#granite-ui-administration-components}
 
-A variável [Componentes de administração da interface do Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) aproveite os componentes básicos para fornecer blocos de construção genéricos que qualquer aplicativo de administração possa implementar. Estes incluem, entre outros:
+Os [componentes de administração da interface do Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) são compilados nos componentes de base para fornecer blocos de construção genéricos que qualquer aplicativo de administração pode implementar. Estes incluem, entre outros:
 
 * Barra de navegação global
 * Trilho (esqueleto)
@@ -314,7 +314,7 @@ Os elementos HTML fornecem uma aparência comum para todos os elementos básicos
 
 No nível mais básico, um elemento HTML é uma tag HTML com um nome de classe dedicado. Elementos mais complexos podem ser compostos de várias tags, aninhadas entre si (de uma maneira específica).
 
-O CSS é usado para fornecer a aparência real. Para facilitar a personalização da aparência (por exemplo, no caso de marcas), os valores de estilo reais são declarados como variáveis, que são expandidas pelo [MENOS](https://lesscss.org/) pré-processador durante o tempo de execução.
+O CSS é usado para fornecer a aparência real. Para facilitar a personalização da aparência (por exemplo, no caso de marca), os valores de estilo reais são declarados como variáveis que são expandidas pelo pré-processador [LESS](https://lesscss.org/) durante o tempo de execução.
 
 Finalidade:
 
@@ -323,7 +323,7 @@ Finalidade:
 
 Implementação:
 
-* tags HTML com estilos inspirados em [Bootstrap](https://twitter.github.com/bootstrap/)
+* Marcas HTML com estilos inspirados em [Bootstrap](https://twitter.github.com/bootstrap/)
 * As classes são definidas em arquivos LESS
 * Os ícones são definidos como sprites de fonte
 
@@ -360,7 +360,7 @@ Os valores reais são definidos em um arquivo de variável LESS (a seguinte extr
 
 ### Plug-ins de elementos {#element-plugins}
 
-Muitos dos elementos de HTML precisam exibir algum tipo de comportamento dinâmico, como menus pop-up de abertura e fechamento. Essa é a função dos plug-ins de elementos, que realizam essas tarefas manipulando o DOM usando JavaScript.
+Muitos dos elementos de HTML precisam exibir algum tipo de comportamento dinâmico, como menus pop-up de abertura e fechamento. Essa é a função dos plug-ins de elementos, que realizam essas tarefas manipulando o DOM usando o JavaScript.
 
 Um plug-in pode ser:
 
@@ -369,15 +369,15 @@ Um plug-in pode ser:
 
 O comportamento do plug-in pode ser personalizado com parâmetros, através:
 
-* Passar os parâmetros com uma chamada JavaScript
-* Uso de dedicado `data-*` atributos vinculados à marcação HTML
+* Passagem dos parâmetros com uma chamada JavaScript
+* Uso de atributos dedicados `data-*` vinculados à marcação HTML
 
 Embora o desenvolvedor possa selecionar a melhor abordagem para qualquer plug-in, a regra geral é usar:
 
 * `data-*` atributos para opções relacionadas ao layout HTML. Por exemplo, para especificar o número de colunas
 * Opções/classes de API para funcionalidade relacionada aos dados. Por exemplo, criar a lista de itens para exibir
 
-O mesmo conceito é usado para implementar a validação de formulários. Para um elemento que você deseja validar, você deve especificar o formulário de entrada necessário como um personalizado `data-*` atributo. Esse atributo é usado como uma opção para um plug-in de validação.
+O mesmo conceito é usado para implementar a validação de formulários. Para um elemento que você deseja validar, especifique o formulário de entrada necessário como um atributo `data-*` personalizado. Esse atributo é usado como uma opção para um plug-in de validação.
 
 >[!NOTE]
 >
@@ -393,9 +393,9 @@ Finalidade:
 Implementação:
 
 * Plug-in jQuery, vinculado a elementos DOM específicos
-* Usar `data-*` atributos para personalizar o comportamento
+* Usando atributos de `data-*` para personalizar o comportamento
 
-Uma extração de marcação de exemplo (observe as opções especificadas como data-&#42; atributos):
+Uma extração de marcação de exemplo (observe as opções especificadas como atributos de dados-&#42;):
 
 ```xml
 <ul data-column-width="220" data-layout="card" class="cards">
@@ -429,11 +429,11 @@ Isso é exibido como:
 
 ![chlimage_1-86](assets/chlimage_1-86.png)
 
-A variável `cardLayout` O plug-in apresenta o `UL` elementos com base em suas respectivas alturas e também levando em consideração a largura do pai.
+O plug-in `cardLayout` apresenta os elementos `UL` incluídos com base em suas respectivas alturas e também levando em consideração a largura do pai.
 
 ### Widgets de elementos do HTML {#html-elements-widgets}
 
-Um widget combina um ou mais elementos básicos com um plug-in JavaScript para formar elementos de interface do usuário de &quot;nível superior&quot;. Eles podem implementar comportamentos mais complexos e também uma aparência mais complexa do que um único elemento pode oferecer. Bons exemplos são o seletor de tags ou os widgets do painel.
+Um widget combina um ou mais elementos básicos com um plug-in do JavaScript para formar elementos de interface do usuário de &quot;nível superior&quot;. Eles podem implementar comportamentos mais complexos e também uma aparência mais complexa do que um único elemento pode oferecer. Bons exemplos são o seletor de tags ou os widgets do painel.
 
 Um widget pode acionar e ouvir eventos personalizados para cooperar com outros widgets na página. Alguns widgets são widgets nativos do jQuery que usam os elementos HTML Coral.
 
@@ -482,7 +482,7 @@ Isso é exibido como:
 
 ### Biblioteca do utilitário {#utility-library}
 
-Esta biblioteca é uma coleção de plug-ins e/ou funções de ajuda do JavaScript que são:
+Esta biblioteca é uma coleção de plug-ins auxiliares e/ou funções do JavaScript que são:
 
 * Independente da interface
 * No entanto, é fundamental para a criação de aplicativos web completos

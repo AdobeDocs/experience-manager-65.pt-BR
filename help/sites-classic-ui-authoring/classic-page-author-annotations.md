@@ -92,12 +92,12 @@ Os rascunhos são um recurso de anotações que permitem criar gráficos de linh
 
    * reta:
 
-     mantenha pressionada `ALT` e clique nos pontos inicial e final; conclua com um clique duplo.
+     mantenha a tecla `ALT` pressionada e clique nos pontos inicial e final. conclua com um clique duplo.
 
 * Depois de sair do modo de rascunho, você pode clicar em uma linha de rascunho para selecioná-lo.
 * Mover um rascunho selecionando-o e arrastando-o para a posição desejada.
 * Um rascunho sobrepõe o conteúdo. Isso significa que dentro dos quatro cantos do rascunho, não é possível clicar no parágrafo subjacente. Por exemplo, se você precisar editar ou acessar um link. Se isso se tornar um problema (por exemplo, se você tiver um rascunho que cubra uma grande área da página), minimize a anotação apropriada, pois isso também minimizará todos os rascunhos relacionados, dando acesso à área subjacente.
-* Para excluir um rascunho individual - selecione o rascunho necessário e pressione a tecla **Excluir** chave (**fn**-**backspace** em um Mac).
+* Para excluir um rascunho individual - selecione o rascunho necessário e pressione a tecla **Delete** (**fn**-**backspace** em uma Mac).
 
 * Se você mover ou copiar um parágrafo, todas as anotações relacionadas e seus rascunhos também serão movidos ou copiados; sua posição em relação ao parágrafo permanecerá a mesma.
 * Se você excluir uma anotação, todos os rascunhos anexados a essa anotação também serão excluídos.

@@ -8,7 +8,7 @@ role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '253'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
@@ -18,11 +18,11 @@ Este guia ajuda a identificar as áreas que você precisa atualizar para a migra
 
 ## Complemento para CIF
 
-O complemento CIF está disponível para AEM 6.5 por meio de [Portal de distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/br/aem.html). Ele é compatível e fornece os mesmos recursos que o complemento CIF para o Experience Manager as a Cloud Service.
+O complemento CIF está disponível para AEM 6.5 por meio do [Portal de distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/br/aem.html). Ele é compatível e fornece os mesmos recursos que o complemento CIF para Experience Manager as a Cloud Service.
 
-Consulte [Introdução ao conteúdo AEM e ao Commerce](getting-started.md).
+Consulte [Introdução ao Conteúdo AEM e ao Commerce](getting-started.md).
 
-Para apoiar projetos que implantam o CIF, o Adobe fornece [AEM Componentes principais do CIF](https://github.com/adobe/aem-core-cif-components).
+Para prestar suporte a projetos que implantam a CIF, a Adobe fornece os [Componentes principais da CIF do AEM](https://github.com/adobe/aem-core-cif-components).
 
 ## Catálogo de produtos
 

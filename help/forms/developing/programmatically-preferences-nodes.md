@@ -18,13 +18,13 @@ ht-degree: 0%
 
 # Gerenciando programaticamente os nós de preferências {#programmatically-managing-the-preferencesnodes}
 
-**Os exemplos e amostras neste documento são somente para AEM Forms no ambiente JEE.**
+**Exemplos e exemplos neste documento são somente para AEM Forms no ambiente JEE.**
 
 Este tópico descreve como você pode usar a API de serviço do Gerenciador de preferências (Java) para gerenciar programaticamente os nós de preferências.
 
-Você pode alterar manualmente as definições de configuração na interface do Administrador. Para alterar as opções, navegue até `Home>Settings>User Management> Configuration>Manual Configuration`. Importar `config.xml` depois de fazer as alterações, você notará que todas as alterações, exceto as alterações feitas no nó `/Adobe/Adobe Experience Manager Forms/Config/UM persist` são perdidos. A visualização da Importação e exportação do Gerenciamento de usuários não oferece suporte à alteração das definições de configuração de outros componentes. Agora, essas alterações podem ser feitas usando `PreferencesManagerServiceClient` APIs.
+Você pode alterar manualmente as definições de configuração na interface do Administrador. Para alterar as opções, navegue até `Home>Settings>User Management> Configuration>Manual Configuration`. Importar `config.xml` depois de fazer as alterações, você notará que todas as alterações, exceto as alterações feitas no nó `/Adobe/Adobe Experience Manager Forms/Config/UM persist`, foram perdidas. A visualização da Importação e exportação do Gerenciamento de usuários não oferece suporte à alteração das definições de configuração de outros componentes. Agora, essas alterações podem ser feitas usando as APIs `PreferencesManagerServiceClient`.
 
-**Resumo das etapas** Para gerenciar programaticamente os nós de preferências, execute as seguintes etapas:
+**Resumo das etapas** Para gerenciar programaticamente os Nós de Preferências, execute as seguintes etapas:
 
 1. Incluir arquivos de projeto.
 1. Criar um cliente PreferencesManagerService
@@ -38,6 +38,6 @@ Inclua os arquivos necessários no projeto de desenvolvimento. Se você estiver 
 
 Antes de executar programaticamente uma operação User Management PreferencesManagerService, você deve criar um cliente PreferencesManagerService. Com a API Java, isso é feito criando um objeto PreferencesManagerServiceClient.
 
-**Executar as operações de permissão ou função apropriadas**
+**Invocar as operações de permissão ou função apropriadas**
 
 Depois de criar o cliente de serviço, você pode chamar as operações do Gerenciador de preferências. O cliente do serviço permite ler e definir permissões.

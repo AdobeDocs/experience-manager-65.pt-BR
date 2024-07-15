@@ -21,7 +21,7 @@ ht-degree: 54%
 
 Crie um lançamento para permitir a atualização de uma nova versão de páginas da Web para ativação futura. Ao criar a inicialização, especifique um título e a página de origem:
 
-* O título aparece na tag **Sidekick**, de onde os autores podem acessá-los para trabalhar neles.
+* O título aparece no **Sidekick**, onde os autores podem acessá-lo para trabalhar nele.
 * As páginas secundárias da página de origem são incluídas no lançamento por padrão. Você pode usar somente a página de origem, se desejar.
 * Por padrão, [Live Copy](/help/sites-administering/msm.md) atualiza automaticamente as páginas de lançamento à medida que as páginas de origem são alteradas. É possível especificar que uma cópia estática seja criada para impedir alterações automáticas.
 
@@ -31,14 +31,14 @@ Como opção, especifique a **Data de inicialização** (e a hora) para definir 
 
 O procedimento a seguir cria um lançamento.
 
-1. Abra a página Administração do site ([http://localhost:4502/siteadmin](http://localhost:4502/siteadmin)).
-1. Clique em **Novo...** depois **Novo lançamento...**.
-1. No **Criar lançamento** especifique valores para as seguintes propriedades:
+1. Abra a página de administração do site ([http://localhost:4502/siteadmin](http://localhost:4502/siteadmin)).
+1. Clique em **Novo...** e depois em **Novo Lançamento...**.
+1. Na caixa de diálogo **Criar Inicialização**, especifique valores para as seguintes propriedades:
 
    * **Título do lançamento**: o nome do lançamento. O nome deve ser significativo para os autores.
-   * **Página de origem**: o caminho para a página para a qual criar a inicialização. Por padrão, todas as páginas secundárias são incluídas.
+   * **Página do Source**: o caminho para a página para a qual criar a inicialização. Por padrão, todas as páginas secundárias são incluídas.
    * **Excluir subpáginas**: selecione essa opção para criar a inicialização somente para a página de origem e não para as páginas secundárias. Por padrão, essa opção não está selecionada.
-   * **Manter em Sincronia**: selecione essa opção para atualizar automaticamente o conteúdo das páginas de inicialização quando as páginas de origem forem alteradas. Isso é feito tornando o lançamento um [live copy](/help/sites-administering/msm.md).
+   * **Manter em Sincronia**: selecione esta opção para atualizar automaticamente o conteúdo das páginas de inicialização quando as páginas de origem forem alteradas. Isso é feito fazendo da inicialização uma [live copy](/help/sites-administering/msm.md).
    * **Data da inicialização**: a data e a hora em que a cópia de inicialização deve ser ativada (dependendo do sinalizador de **Pronto para produção**; consulte [Inicializações - a ordem dos eventos](/help/sites-authoring/launches.md#launches-the-order-of-events)).
 
    ![chlimage_1-99](assets/chlimage_1-99a.png)
@@ -49,8 +49,8 @@ O procedimento a seguir cria um lançamento.
 
 Você também pode excluir um lançamento.
 
-1. No [inicia o console](/help/sites-classic-ui-authoring/classic-launches.md), selecione a inicialização necessária.
-1. Clique em **Excluir** - é necessária uma confirmação:
+1. No [console de inicializações](/help/sites-classic-ui-authoring/classic-launches.md), selecione a inicialização necessária.
+1. Clique em **Excluir** - confirmação necessária:
 
    ![chlimage_1-100](assets/chlimage_1-100a.png)
 

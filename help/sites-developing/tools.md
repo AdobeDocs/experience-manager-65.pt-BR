@@ -24,11 +24,11 @@ ht-degree: 1%
 O AEM fornece:
 
 * [uma estrutura para testar a interface do usuário do componente](/help/sites-developing/hobbes.md).
-* [um mecanismo para testar e depurar componentes](/help/sites-developing/developer-mode.md).
+* [um mecanismo para componentes de teste e depuração](/help/sites-developing/developer-mode.md).
 
-Veja a seguir duas ferramentas de teste de código aberto:
+Veja a seguir duas ferramentas de teste do Open Source:
 
-**Selênio**
+**Selenium**
 
 O Selenium é usado para testes de função em um navegador com um usuário por atividade. Ele registra etapas de teste (cliques) como tabelas de HTML ou classes Java™.
 
@@ -52,7 +52,7 @@ Um sistema de acompanhamento de erros que pode ser configurado de acordo com os 
 
 **Planilhas**
 
-Embora não seja especificamente uma ferramenta de rastreamento de erros, as planilhas são frequentemente *mis* usados para essa finalidade, pois são fáceis de entender e a maioria dos usuários tem experiência de sua funcionalidade.
+Embora não seja uma ferramenta de rastreamento de erros específica, as planilhas são frequentemente *mis* usadas para essa finalidade, pois são fáceis de entender e a maioria dos usuários tem experiência em sua funcionalidade.
 
 Se essas planilhas forem usadas para rastreamento, então:
 

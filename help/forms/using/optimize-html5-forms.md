@@ -34,7 +34,7 @@ Obtenha o software Apache Web Server aplicável ao seu sistema operacional:
 
 O Apache pode se comunicar com o JBoss usando HTTP ou o protocolo AJP.
 
-1. Remova o comentário das seguintes configurações de módulo no *APACHE_HOME/conf/httpd.conf* arquivo.
+1. Remova o comentário das seguintes configurações de módulo no arquivo *APACHE_HOME/conf/httpd.conf*.
 
    ```java
    LoadModule proxy_balancer_module modules/mod_proxy.so
@@ -48,7 +48,7 @@ O Apache pode se comunicar com o JBoss usando HTTP ou o protocolo AJP.
 
 1. Configure o proxy na porta 8080 do JBoss.
 
-   Adicione a seguinte configuração à *APACHE_HOME/conf/httpd.conf* arquivo de configuração.
+   Adicione a seguinte configuração ao arquivo de configuração *APACHE_HOME/conf/httpd.conf*.
 
    ```java
    ProxyPass / https://<server_Name>:8080/
@@ -59,13 +59,13 @@ O Apache pode se comunicar com o JBoss usando HTTP ou o protocolo AJP.
    >
    >Quando você usa um proxy, as seguintes alterações de configuração são necessárias:
    >
-   >* Acesso: *https://&lt;server>:&lt;port>/system/console/configMgr*
+   >* Acesso: *https://&lt;servidor>:&lt;porta>/system/console/configMgr*
    * Editar a configuração do Filtro referenciador do Apache Sling
    * Em Permitir hosts, adicione a entrada para o servidor proxy
 
 1. Ative a compactação.
 
-   Adicione a seguinte configuração à *APACHE_HOME/conf/httpd.conf* arquivo de configuração.
+   Adicione a seguinte configuração ao arquivo de configuração *APACHE_HOME/conf/httpd.conf*.
 
    ```xml
    <Location /content/xfaforms>

@@ -25,4 +25,4 @@ Com a funcionalidade habilitada para toque atingindo a paridade com e, na verdad
 
 >[!NOTE]
 >
->Para obter detalhes sobre o status da paridade de recursos com a interface clássica, consulte o [Paridade de recursos da interface para toque](/help/release-notes/touch-ui-features-status.md) documento.
+>Para obter detalhes sobre o status da paridade de recursos com a interface clássica, consulte o documento [Paridade de Recursos da Interface para Toque](/help/release-notes/touch-ui-features-status.md).

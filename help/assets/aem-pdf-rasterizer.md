@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Usar o rasterizador de PDF {#using-pdf-rasterizer}
 
-Ao fazer upload de arquivos grandes de PDF ou AI com grande volume de conteúdo para o [!DNL Adobe Experience Manager Assets], a biblioteca padrão pode não gerar uma saída precisa. A biblioteca PDF Rasterizer Adobe pode gerar uma saída mais confiável e precisa quando comparada à saída de uma biblioteca padrão. A Adobe recomenda o uso da biblioteca PDF Rasterizer para os seguintes cenários:
+Ao carregar arquivos grandes de PDF ou AI que exijam muito conteúdo para [!DNL Adobe Experience Manager Assets], a biblioteca padrão pode não gerar uma saída precisa. A biblioteca PDF Rasterizer Adobe pode gerar uma saída mais confiável e precisa quando comparada à saída de uma biblioteca padrão. A Adobe recomenda o uso da biblioteca PDF Rasterizer para os seguintes cenários:
 
 A Adobe recomenda o uso da biblioteca PDF Rasterizer para o seguinte:
 
@@ -25,85 +25,85 @@ A Adobe recomenda o uso da biblioteca PDF Rasterizer para o seguinte:
 
 Miniaturas e visualizações geradas usando o PDF Rasterizer são melhores em qualidade em comparação com a saída pronta para uso e, portanto, fornecem experiência de visualização consistente em todos os dispositivos. A biblioteca do Adobe PDF Rasterizer não é compatível com nenhuma conversão de espaço de cores. Ele sempre gera para o RGB independentemente do espaço de cor do arquivo de origem.
 
-1. Instale o pacote PDF Rasterizer no [!DNL Adobe Experience Manager] implantação de [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/aem-assets-pdf-rasterizer-pkg-4.6.zip).
+1. Instale o pacote PDF Rasterizer na implantação [!DNL Adobe Experience Manager] da [Distribuição de Software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/aem-assets-pdf-rasterizer-pkg-4.6.zip).
 
    >[!NOTE]
    >
    >A biblioteca PDF Rasterizer está disponível somente para Windows e Linux®.
 
-1. Acesse o [!DNL Assets] console de fluxo de trabalho em `https://[aem_server]:[port]/workflow`. Abertura [!UICONTROL Ativo de atualização DAM] fluxo de trabalho.
+1. Acesse o console de fluxo de trabalho [!DNL Assets] em `https://[aem_server]:[port]/workflow`. Abra o fluxo de trabalho [!UICONTROL Ativo de atualização DAM].
 
 1. Para impedir a geração de miniaturas e representações da Web para arquivos PDF e arquivos AI usando os métodos padrão, siga estas etapas:
 
-   * Abra o **[!UICONTROL Miniaturas do processo]** etapa e adicionar `application/pdf` ou `application/postscript` no **[!UICONTROL Ignorar tipos MIME]** sob o campo **[!UICONTROL Miniaturas]** conforme necessário.
+   * Abra a etapa **[!UICONTROL Processar Miniaturas]** e adicione `application/pdf` ou `application/postscript` no campo **[!UICONTROL Ignorar Tipos MIME]** na guia **[!UICONTROL Miniaturas]**, conforme necessário.
 
    ![skip_mime_types-2](assets/skip_mime_types-2.png)
 
-   * No **[!UICONTROL Imagem ativada pela Web]** , adicionar `application/pdf` ou `application/postscript` em **[!UICONTROL Ignorar lista]** dependendo das suas necessidades.
+   * Na guia **[!UICONTROL Imagem Habilitada para a Web]**, adicione `application/pdf` ou `application/postscript` em **[!UICONTROL Ignorar Lista]**, dependendo de suas necessidades.
 
-   ![Configuração para ignorar o processamento da miniatura para um formato de imagem](assets/web_enabled_imageskiplist.png)
+   ![Configuração para ignorar o processamento de miniatura para um formato de imagem](assets/web_enabled_imageskiplist.png)
 
-1. Abra o **[!UICONTROL Rasterizar representação da exibição de imagens do PDF/AI]** e remova o tipo MIME para o qual deseja ignorar a geração padrão de representações de imagem de pré-visualização. Por exemplo, remover o tipo MIME `application/pdf`, `application/postscript`ou `application/illustrator` do **[!UICONTROL Tipos MIME]** lista.
+1. Abra a etapa **[!UICONTROL Rasterizar Representação de Visualização de PDF/Imagem de IA]** e remova o tipo MIME para o qual você deseja ignorar a geração padrão de representações de imagens de visualização. Por exemplo, remova o tipo MIME `application/pdf`, `application/postscript` ou `application/illustrator` da lista **[!UICONTROL Tipos MIME]**.
 
-   ![process_arguments](assets/process_arguments.png)
+   ![argumentos_do_processo](assets/process_arguments.png)
 
-1. Arraste o **[!UICONTROL Manipulador de rasterizador PDF]** passe do painel lateral para abaixo de **[!UICONTROL Miniaturas do processo]** etapa.
-1. Configure os seguintes argumentos para o **[!UICONTROL Manipulador de rasterizador PDF]** etapa:
+1. Arraste a etapa **[!UICONTROL Manipulador do rasterizador de PDF]** do painel lateral para abaixo da etapa **[!UICONTROL Processar miniaturas]**.
+1. Configure os seguintes argumentos para a etapa **[!UICONTROL Manipulador Rasterizador de PDF]**:
 
    * Tipos MIME: `application/pdf` ou `application/postscript`
    * Comandos: `PDFRasterizer -d -s 1280 -t PNG -i ${file}`
    * Adicionar tamanhos de miniatura: 319:319, 140:100, 48:48. Adicione a configuração de miniatura personalizada, se necessário.
 
-   Os argumentos de linha de comando para o `PDFRasterizer` pode incluir o seguinte:
+   Os argumentos de linha de comando para o comando `PDFRasterizer` podem incluir o seguinte:
 
-   * `-d`: Sinalizador para permitir a renderização suave de texto, arte-final vetorial e imagens. Cria imagens de melhor qualidade. No entanto, a inclusão desse parâmetro faz com que o comando seja executado lentamente e aumente o tamanho das imagens.
+   * `-d`: sinalizador para permitir a renderização suave de texto, arte vetorial e imagens. Cria imagens de melhor qualidade. No entanto, a inclusão desse parâmetro faz com que o comando seja executado lentamente e aumente o tamanho das imagens.
 
-   * `-s`: dimensão máxima da imagem (altura ou largura). Isso é convertido em DPI para cada página. Se as páginas forem de tamanhos diferentes, cada página poderá ser dimensionada de acordo com a quantidade. O padrão é o tamanho de página real.
+   * `-s`: Dimensão máxima da imagem (altura ou largura). Isso é convertido em DPI para cada página. Se as páginas forem de tamanhos diferentes, cada página poderá ser dimensionada de acordo com a quantidade. O padrão é o tamanho de página real.
 
    * `-t`: Tipo de imagem de saída. Os tipos válidos são JPEG, PNG, GIF e BMP. O valor padrão é JPEG.
 
-   * `-i`: caminho para o PDF de entrada. É um parâmetro obrigatório.
+   * `-i`: Caminho do PDF de entrada. É um parâmetro obrigatório.
 
    * `-h`: Ajuda
 
-1. Para excluir representações intermediárias, selecione **[!UICONTROL Excluir representação gerada]**.
-1. Para permitir que o PDF Rasterizer gere representações da Web, selecione **[!UICONTROL Gerar representação da Web]**.
+1. Para excluir representações intermediárias, selecione **[!UICONTROL Excluir Representação Gerada]**.
+1. Para permitir que o PDF Rasterizer gere representações da Web, selecione **[!UICONTROL Gerar Representação da Web]**.
 
    ![generate_web_renditions1](assets/generate_web_renditions1.png)
 
-1. Especifique as configurações no **[!UICONTROL Imagem ativada pela Web]** guia.
+1. Especifique as configurações na guia **[!UICONTROL Imagem Habilitada para Web]**.
 
-   ![web_enabled_image1](assets/web_enabled_image1.png)
+   ![imagem_habilitada_para_Web1](assets/web_enabled_image1.png)
 
 1. Salve o workflow.
-1. Para permitir que o PDF Rasterizer processe páginas de PDF com bibliotecas de PDF, abra o **[!UICONTROL Subativo do processo DAM]** do [!UICONTROL Fluxo de trabalho] console.
-1. No painel lateral, arraste a etapa Manipulador de rasterizador de PDF para a **[!UICONTROL Criar representação de imagem habilitada para a Web]** etapa.
-1. Configure os seguintes argumentos para o **[!UICONTROL Manipulador de rasterizador PDF]** etapa:
+1. Para permitir que o Rasterizador de PDF processe páginas de PDF com bibliotecas de PDF, abra o modelo **[!UICONTROL Subativo do processo do DAM]** no console [!UICONTROL Fluxo de trabalho].
+1. No painel lateral, arraste a etapa Manipulador do rasterizador de PDF para a etapa **[!UICONTROL Criar representação de imagem habilitada para a Web]**.
+1. Configure os seguintes argumentos para a etapa **[!UICONTROL Manipulador Rasterizador de PDF]**:
 
    * Tipos MIME: `application/pdf` ou `application/postscript`
    * Comandos: `PDFRasterizer -d -s 1280 -t PNG -i ${file}`
-   * Adicionar tamanhos de miniatura: `319:319`, `140:100`, `48:48`. Adicione a configuração de miniatura personalizada, conforme necessário.
+   * Adicionar tamanhos de miniaturas: `319:319`, `140:100`, `48:48`. Adicione a configuração de miniatura personalizada, conforme necessário.
 
-   Os argumentos de linha de comando para o `PDFRasterizer` pode incluir o seguinte:
+   Os argumentos de linha de comando para o comando `PDFRasterizer` podem incluir o seguinte:
 
-   * `-d`: Sinalizador para permitir a renderização suave de texto, arte-final vetorial e imagens. Cria imagens de melhor qualidade. No entanto, a inclusão desse parâmetro faz com que o comando seja executado lentamente e aumente o tamanho das imagens.
+   * `-d`: sinalizador para permitir a renderização suave de texto, arte vetorial e imagens. Cria imagens de melhor qualidade. No entanto, a inclusão desse parâmetro faz com que o comando seja executado lentamente e aumente o tamanho das imagens.
 
-   * `-s`: dimensão máxima da imagem (altura ou largura). Isso é convertido em DPI para cada página. Se as páginas forem de tamanhos diferentes, cada página poderá ser dimensionada de acordo com a quantidade. O padrão é o tamanho de página real.
+   * `-s`: Dimensão máxima da imagem (altura ou largura). Isso é convertido em DPI para cada página. Se as páginas forem de tamanhos diferentes, cada página poderá ser dimensionada de acordo com a quantidade. O padrão é o tamanho de página real.
 
    * `-t`: Tipo de imagem de saída. Os tipos válidos são JPEG, PNG, GIF e BMP. O valor padrão é JPEG.
 
-   * `-i`: caminho para o PDF de entrada. É um parâmetro obrigatório.
+   * `-i`: Caminho do PDF de entrada. É um parâmetro obrigatório.
 
    * `-h`: Ajuda
 
-1. Para excluir representações intermediárias, selecione **[!UICONTROL Excluir representação gerada]**.
-1. Para permitir que o PDF Rasterizer gere representações da Web, selecione **[!UICONTROL Gerar representação da Web]**.
+1. Para excluir representações intermediárias, selecione **[!UICONTROL Excluir Representação Gerada]**.
+1. Para permitir que o PDF Rasterizer gere representações da Web, selecione **[!UICONTROL Gerar Representação da Web]**.
 
    ![generate_web_renditions](assets/generate_web_renditions.png)
 
-1. Especifique as configurações no **[!UICONTROL Imagem ativada pela Web]** guia.
+1. Especifique as configurações na guia **[!UICONTROL Imagem Habilitada para Web]**.
 
-   ![web_enabled_image-1](assets/web_enabled_image-1.png)
+   ![imagem_habilitada_para_Web-1](assets/web_enabled_image-1.png)
 
 1. Salve o workflow.
-1. Faça upload de um arquivo PDF ou AI para [!DNL Experience Manager Assets]. O PDF Rasterizer gera as miniaturas e representações da Web para o arquivo.
+1. Carregar um arquivo PDF ou AI para [!DNL Experience Manager Assets]. O PDF Rasterizer gera as miniaturas e representações da Web para o arquivo.

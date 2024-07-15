@@ -30,8 +30,8 @@ O console de Boas-vindas fornece uma lista de links para os vários consoles e f
 
 É possível configurar os links que estão visíveis. Isso pode ser definido para usuários e/ou grupos específicos. As ações a serem tomadas dependem do tipo de target (que se correlaciona à seção do console em que estão):
 
-* [Consoles principais](#links-in-main-console-left-pane) - Links no console principal (painel esquerdo)
-* [Recursos, documentação e referência, recursos](#links-in-sidebar-right-pane) - Links na barra lateral (painel direito)
+* [Consoles Principais](#links-in-main-console-left-pane) - Links no console principal (painel esquerdo)
+* [Recursos, Documentação e Referência, Recursos](#links-in-sidebar-right-pane) - Links na barra lateral (painel direito)
 
 ## Links no console principal (painel esquerdo) {#links-in-main-console-left-pane}
 
@@ -45,7 +45,7 @@ As permissões de nível de nó determinam se o link pode ser visto ou não. Os 
 
 * **Sites:** `/libs/wcm/core/content/siteadmin`
 
-* **Ativos digitais:** `/libs/wcm/core/content/damadmin`
+* **Assets Digital:** `/libs/wcm/core/content/damadmin`
 
 * **Comunidade:** `/libs/collab/core/content/admin`
 
@@ -61,17 +61,17 @@ As permissões de nível de nó determinam se o link pode ser visto ou não. Os 
 
 Por exemplo:
 
-* Para restringir o acesso a **Ferramentas**, remover acesso de leitura de
+* Para restringir o acesso a **Ferramentas**, remova o acesso de leitura de
 
   `/libs/wcm/core/content/misc`
 
-Consulte a [Seção Segurança](/help/sites-administering/security.md) para obter mais informações sobre como definir as permissões desejadas.
+Consulte a [seção Segurança](/help/sites-administering/security.md) para obter mais informações sobre como definir as permissões desejadas.
 
 ### Links na barra lateral (painel direito) {#links-in-sidebar-right-pane}
 
 ![cq_welcomescreensidebar](assets/cq_welcomescreensidebar.png)
 
-Estas ligações baseiam-se na *e* acesso de leitura aos nós no seguinte caminho:
+Estes links são baseados na existência de acesso de leitura *e* para nós no seguinte caminho:
 
 `/libs/cq/core/content/welcome`
 
@@ -176,19 +176,19 @@ Há três seções (espaçadas levemente afastadas) fornecidas por padrão:
 
 Por exemplo:
 
-* Para remover o link para **Relatórios**, remover acesso de leitura de
+* Para remover o link para **Relatórios**, remova o acesso de leitura de
 
   `/libs/cq/core/content/welcome/resources/reports`
 
-* Para remover o link para **Pacotes**, remover acesso de leitura de
+* Para remover o link para **Pacotes**, remova o acesso de leitura de
 
   `/libs/cq/core/content/welcome/features/packages`
 
-Consulte a [Seção Segurança](/help/sites-administering/security.md) para obter mais informações sobre como definir as permissões desejadas.
+Consulte a [seção Segurança](/help/sites-administering/security.md) para obter mais informações sobre como definir as permissões desejadas.
 
 ### Mecanismo de seleção de link {#link-selection-mechanism}
 
-Entrada `/libs/cq/core/components/welcome/welcome.jsp` é feita uso de [ConsoleUtil](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/ConsoleUtil.html), que executa uma consulta em nós que têm a propriedade:
+No `/libs/cq/core/components/welcome/welcome.jsp`, é usado o [ConsoleUtil](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/ConsoleUtil.html), que executa uma consulta nos nós que possuem a propriedade:
 
 * `jcr:mixinTypes` com o valor: `cq:Console`
 
@@ -199,12 +199,12 @@ Entrada `/libs/cq/core/components/welcome/welcome.jsp` é feita uso de [ConsoleU
 >* `select * from cq:Console`
 >
 
-Quando um usuário ou grupo não tem permissão de leitura em um nó com o mixin `cq:Console`, esse nó não será recuperado pelo `ConsoleUtil` pesquisa, portanto, não está listado no console.
+Quando um usuário ou grupo não tem permissão de leitura em um nó com o mixin `cq:Console`, esse nó não é recuperado pela pesquisa `ConsoleUtil`, portanto, não está listado no console.
 
 ### Adicionar um item personalizado {#adding-a-custom-item}
 
-A variável [mecanismo de seleção de link](#link-selection-mechanism) pode ser usado para adicionar seu próprio item personalizado à lista de links.
+O [mecanismo de seleção de link](#link-selection-mechanism) pode ser usado para adicionar seu próprio item personalizado à lista de links.
 
-Adicione seu item personalizado à lista adicionando o `cq:Console` fazer mixin no widget ou recurso. Isso é feito definindo a propriedade:
+Adicione o item personalizado à lista adicionando o mixin `cq:Console` ao widget ou recurso. Isso é feito definindo a propriedade:
 
 * `jcr:mixinTypes` com o valor: `cq:Console`

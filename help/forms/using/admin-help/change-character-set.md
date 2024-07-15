@@ -21,9 +21,9 @@ ht-degree: 1%
 Você pode especificar o conjunto de caracteres usado para codificar o fluxo de saída.
 
 1. No console de administração, clique em **[!UICONTROL Serviços > saída]**.
-1. Em Internacionalização, na lista Conjunto de caracteres, selecione um conjunto de caracteres. Essa configuração depende da configuração `TransformationFormat` e `PrintFormat` especificado por meio da API. Para especificar um conjunto de caracteres diferente dos listados, selecione Personalizado e especifique um valor de codificação na caixa exibida.
+1. Em Internacionalização, na lista Conjunto de caracteres, selecione um conjunto de caracteres. Esta configuração depende do `TransformationFormat` e do `PrintFormat` especificados por meio da API. Para especificar um conjunto de caracteres diferente dos listados, selecione Personalizado e especifique um valor de codificação na caixa exibida.
 
-   Se `TransformationFormat` é PDF e PDF/A ou `PrintFormat` for PCL, PostScript, rótulo Zebra, IPL, DPL, TPCL, GenericColorPCL ou GenericPSLevel3, somente conjuntos de caracteres específicos serão suportados.
+   Se `TransformationFormat` for PDF e PDF/A ou `PrintFormat` for PCL, PostScript, Rótulo Zebra, IPL, DPL, TPCL, GenericColorPCL ou GenericPSLevel3, somente conjuntos de caracteres específicos serão suportados.
 
    O conjunto de caracteres deve ser um nome canônico válido. O valor padrão é ISO-8859-1.
 

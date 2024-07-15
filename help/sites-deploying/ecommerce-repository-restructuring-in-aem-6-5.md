@@ -17,7 +17,7 @@ ht-degree: 1%
 
 # Reestruturação do repositório do E-Commerce no AEM 6.5{#e-commerce-repository-restructuring-in-aem}
 
-Conforme descrito no pai [Reestruturação do repositório no AEM 6.5](/help/sites-deploying/repository-restructuring.md) , os clientes que estiverem atualizando para o AEM 6.5 devem usar esta página para avaliar o esforço de trabalho associado às alterações no repositório que afetam a solução AEM E-Commerce. Algumas alterações exigem esforço de trabalho durante o processo de atualização do AEM 6.5, enquanto outras podem ser adiadas até uma atualização futura.
+Conforme descrito na página pai [Reestruturação do repositório no AEM 6.5](/help/sites-deploying/repository-restructuring.md), os clientes que estão atualizando para o AEM 6.5 devem usar esta página para avaliar o esforço de trabalho associado às alterações no repositório que afetam a solução AEM E-Commerce. Algumas alterações exigem esforço de trabalho durante o processo de atualização do AEM 6.5, enquanto outras podem ser adiadas até uma atualização futura.
 
 ## Com atualização para 6.5 {#with-upgrade}
 
@@ -35,7 +35,7 @@ Conforme descrito no pai [Reestruturação do repositório no AEM 6.5](/help/sit
   </tr>
   <tr>
    <td><strong>Orientações em matéria de reestruturação</strong></td>
-   <td><p>Você pode usar um <a href="/help/sites-deploying/lazy-content-migration.md" target="_blank">Migração lenta</a> tarefa para migrar dados do E-Commerce.</p> <p>Ele executa as seguintes etapas:</p>
+   <td><p>Você pode usar uma tarefa de <a href="/help/sites-deploying/lazy-content-migration.md" target="_blank">Migração lenta</a> para migrar dados do E-Commerce.</p> <p>Ele executa as seguintes etapas:</p>
     <ul>
      <li>ajusta as referências ao local antigo para apontar para o novo local</li>
      <li>move o conteúdo do local antigo para o novo local</li>

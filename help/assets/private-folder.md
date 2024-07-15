@@ -1,6 +1,6 @@
 ---
 title: Pastas privadas para compartilhar ativos
-description: Saiba como criar uma pasta privada no [!DNL Adobe Experience Manager Assets] e compartilhá-lo com outros usuários e atribuir vários privilégios a eles.
+description: Saiba como criar uma pasta privada no  [!DNL Adobe Experience Manager Assets] , compartilhá-la com outros usuários e atribuir vários privilégios a eles.
 contentOwner: AG
 role: User
 feature: Collaboration
@@ -21,7 +21,7 @@ ht-degree: 3%
 | AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/private-folder.html?lang=en) |
 | AEM 6.5 | Este artigo |
 
-Você pode criar uma pasta privada na variável [!DNL Adobe Experience Manager Assets] que está disponível exclusivamente para você. Você pode compartilhar essa pasta particular com outros usuários e atribuir vários privilégios a eles. Com base no nível de privilégio atribuído, os usuários podem executar várias tarefas na pasta, por exemplo, exibir ativos na pasta ou editar os ativos.
+Você pode criar uma pasta privada na interface do usuário do [!DNL Adobe Experience Manager Assets] que esteja disponível exclusivamente para você. Você pode compartilhar essa pasta particular com outros usuários e atribuir vários privilégios a eles. Com base no nível de privilégio atribuído, os usuários podem executar várias tarefas na pasta, por exemplo, exibir ativos na pasta ou editar os ativos.
 
 >[!NOTE]
 >
@@ -31,11 +31,11 @@ Você pode criar uma pasta privada na variável [!DNL Adobe Experience Manager A
 
 Para criar e compartilhar uma pasta privada:
 
-1. No [!DNL Assets] , clique em **[!UICONTROL Criar]** na barra de ferramentas e escolha **[!UICONTROL Pasta]** no menu.
+1. No console [!DNL Assets], clique em **[!UICONTROL Criar]** na barra de ferramentas e escolha **[!UICONTROL Pasta]** no menu.
 
    ![Criar pasta de ativos](assets/Create-folder.png)
 
-1. No **[!UICONTROL Criar pasta]** , insira um título e nome (opcional) para a pasta e selecione **[!UICONTROL Privado]** opção.
+1. Na caixa de diálogo **[!UICONTROL Criar Pasta]**, digite um título e um nome (opcional) para a pasta e selecione a opção **[!UICONTROL Particular]**.
 
 1. Clique em **[!UICONTROL Criar]**. Uma pasta privada é criada.
 
@@ -43,31 +43,31 @@ Para criar e compartilhar uma pasta privada:
 
 1. Para compartilhar a pasta com outros usuários e atribuir privilégios a eles, selecione a pasta e clique em **[!UICONTROL Propriedades]** na barra de ferramentas.
 
-   ![opção info](assets/do-not-localize/info-circle-icon.png)
+   ![opção de informações](assets/do-not-localize/info-circle-icon.png)
 
    >[!NOTE]
    >
    >A pasta não estará visível para nenhum outro usuário até que você a compartilhe.
 
-1. No **[!UICONTROL Propriedades da pasta]** selecione um usuário na lista suspensa **[!UICONTROL Adicionar usuário]** atribua uma função ao usuário em sua pasta particular e clique em **[!UICONTROL Adicionar]**.
+1. Na página **[!UICONTROL Propriedades da Pasta]**, selecione um usuário na lista **[!UICONTROL Adicionar Usuário]**, atribua uma função a ele na sua pasta particular e clique em **[!UICONTROL Adicionar]**.
 
    ![chlimage_1-415](assets/chlimage_1-415.png)
 
    >[!NOTE]
    >
-   >É possível atribuir várias funções, como `Editor`, `Owner`ou `Viewer` ao usuário com quem você compartilha a pasta. Se você atribuir um `Owner` para o usuário, o usuário tem `Editor` privilégios na pasta. Além disso, o usuário pode compartilhar a pasta com outras pessoas. Se você atribuir um `Editor` usuário pode editar os ativos na sua pasta privada. Se você atribuir uma função de visualizador, o usuário só poderá visualizar os ativos na pasta privada.
+   >Você pode atribuir várias funções, como `Editor`, `Owner` ou `Viewer`, ao usuário com o qual você compartilha a pasta. Se você atribuir uma função de `Owner` ao usuário, ele terá privilégios de `Editor` na pasta. Além disso, o usuário pode compartilhar a pasta com outras pessoas. Se você atribuir uma função `Editor`, o usuário poderá editar os ativos em sua pasta privada. Se você atribuir uma função de visualizador, o usuário só poderá visualizar os ativos na pasta privada.
 
    >[!NOTE]
    >
-   >A pasta privada tem pelo menos um membro com `Owner` função. Portanto, o administrador não pode remover todos os membros proprietários de uma pasta privada. No entanto, para remover os proprietários existentes (e o próprio administrador) da pasta privada, o administrador deve adicionar outro usuário como proprietário.
+   >A pasta privada tem pelo menos um membro com a função `Owner`. Portanto, o administrador não pode remover todos os membros proprietários de uma pasta privada. No entanto, para remover os proprietários existentes (e o próprio administrador) da pasta privada, o administrador deve adicionar outro usuário como proprietário.
 
-1. Clique em **[!UICONTROL Salvar]**. Dependendo da função atribuída, o usuário recebe um conjunto de privilégios em sua pasta privada quando faz logon no [!DNL Assets].
+1. Clique em **[!UICONTROL Salvar]**. Dependendo da função atribuída, o usuário recebe um conjunto de privilégios em sua pasta particular quando faz logon no [!DNL Assets].
 1. Clique em **[!UICONTROL Ok]** para fechar a mensagem de confirmação.
-1. O usuário com quem você compartilha a pasta recebe uma notificação de compartilhamento. Efetue logon no [!DNL Assets] com as credenciais do usuário para exibir a notificação.
+1. O usuário com quem você compartilha a pasta recebe uma notificação de compartilhamento. Faça logon em [!DNL Assets] com as credenciais do usuário para ver a notificação.
 
    ![chlimage_1-416](assets/chlimage_1-416.png)
 
-1. Clique em [!UICONTROL Notificação] para abrir uma lista de notificações.
+1. Clique em [!UICONTROL Notificações] para abrir uma lista de notificações.
 
    ![Lista de notificações](assets/Assets-Notification.png)
 
@@ -75,13 +75,13 @@ Para criar e compartilhar uma pasta privada:
 
 >[!NOTE]
 >
->Para criar uma pasta privada, é necessário Ler e Modificar [permissões de controle de acesso](/help/sites-administering/security.md#permissions-in-aem) na pasta pai na qual deseja criar uma pasta privada. Se você não for um administrador, essas permissões não estarão habilitadas para você por padrão em `/content/dam`. Nesse caso, primeiro obtenha essas permissões para sua ID/grupo de usuários antes de tentar criar pastas privadas.
+>Para criar uma pasta particular, você precisa de [permissões de controle de acesso](/help/sites-administering/security.md#permissions-in-aem) de Leitura e Modificação na pasta particular em que deseja criar uma pasta particular. Se você não for um administrador, essas permissões não estarão habilitadas para você por padrão no `/content/dam`. Nesse caso, primeiro obtenha essas permissões para sua ID/grupo de usuários antes de tentar criar pastas privadas.
 
 ## Exclusão de pasta privada {#delete-private-folder}
 
-É possível excluir uma pasta selecionando-a e, em seguida, [!UICONTROL Excluir] no menu superior ou usando a tecla Backspace em seu teclado.
+Você pode excluir uma pasta selecionando a pasta e a opção [!UICONTROL Excluir] no menu superior ou usando a tecla Backspace no teclado.
 
-![opção excluir no menu superior](assets/delete-option.png)
+![excluir opção no menu superior](assets/delete-option.png)
 
 >[!CAUTION]
 >
@@ -91,4 +91,4 @@ Para criar e compartilhar uma pasta privada:
 >
 >Se você excluir uma pasta usando o método acima na interface do usuário do, os grupos de usuários associados também serão excluídos.
 >
->No entanto, os grupos de usuários redundantes, não utilizados e gerados automaticamente existentes podem ser removidos do repositório usando `clean` método no JMX na instância do autor (`http://[server]:[port]/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets`).
+>No entanto, os grupos de usuários redundantes, não utilizados e gerados automaticamente existentes podem ser removidos do repositório usando o método `clean` no JMX na instância do autor (`http://[server]:[port]/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets`).

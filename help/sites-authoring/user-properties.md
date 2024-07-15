@@ -31,11 +31,11 @@ A caixa de diálogo de configurações do **usuário** concede acesso a:
 
 * Representar como
 
-   * Com o [Representar como](/help/sites-administering/security.md#impersonating-another-user) funcionalidade que um usuário pode trabalhar em nome de outro usuário.
+   * Com a funcionalidade [Representar como](/help/sites-administering/security.md#impersonating-another-user), um usuário pode trabalhar em nome de outro usuário.
 
 * Perfil
 
-   * Oferece um link conveniente para o seu [configurações do usuário](/help/sites-administering/security.md))
+   * Oferece um link conveniente para suas [configurações de usuário](/help/sites-administering/security.md))
 
 * [Minhas preferências](/help/sites-authoring/user-properties.md#my-preferences)
 
@@ -49,7 +49,7 @@ A caixa de diálogo **Minhas preferências** é acessada através da opção [Us
 
 Cada usuário pode definir determinadas propriedades para si mesmo.
 
-![screen-shot_2019-03-05at100322](assets/screen-shot_2019-03-05at100322.png)
+![captura de tela_2019-03-05at100322](assets/screen-shot_2019-03-05at100322.png)
 
 * **Idioma**
 
@@ -108,12 +108,12 @@ Cada usuário pode definir determinadas propriedades para si mesmo.
 
 * **Usar a experiência de criação clássica**
 
-  Essa opção permite [IU clássica](/help/sites-classic-ui-authoring/classic-page-author-first-steps.md)criação de página com base em. Por padrão, a interface do usuário é usada.
+  Esta opção habilita a criação de página baseada na [interface clássica](/help/sites-classic-ui-authoring/classic-page-author-first-steps.md). Por padrão, a interface do usuário é usada.
 
 * **Ativar a Página inicial dos ativos**
 
-  Essa opção só estará disponível se o administrador do sistema tiver ativado a experiência da Página inicial do Assets para toda a organização.
+  Essa opção só estará disponível se o administrador do sistema tiver ativado a experiência da Página inicial da Assets para toda a organização.
 
 * **Configuração do Stock**
 
-  Essa opção permite especificar a configuração preferencial do Adobe Stock e só estará disponível se o administrador do sistema tiver ativado [Integração do Adobe Stock](/help/assets/aem-assets-adobe-stock.md).
+  Esta opção permite especificar a configuração preferencial do Adobe Stock e só estará disponível se o administrador do sistema tiver habilitado a [integração com o Adobe Stock](/help/assets/aem-assets-adobe-stock.md).

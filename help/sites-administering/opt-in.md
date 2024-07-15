@@ -20,17 +20,17 @@ ht-degree: 10%
 
 O AEM tem um procedimento de aceitação para ajudar você a se integrar ao Adobe Analytics e ao Adobe Target. Isso está disponível e pronto para uso, como uma tarefa pré-carregada atribuída ao grupo de usuários administrador.
 
-Quando você efetua login como administrador desta tarefa (**Configuração do Analytics e do Targeting**) está disponível no [Caixa de entrada](/help/sites-authoring/inbox.md#out-of-the-box-administrative-tasks). Com base nas credenciais fornecidas, ele ajuda a configurar e integrar esses serviços.
+Quando você faz logon como administrador, esta tarefa (**Configuração do Analytics e do Targeting**) fica disponível na [Caixa de Entrada](/help/sites-authoring/inbox.md#out-of-the-box-administrative-tasks). Com base nas credenciais fornecidas, ele ajuda a configurar e integrar esses serviços.
 
 Você tem as seguintes opções para configurar a integração:
 
 * Configure a integração por meio da tarefa.
 
-  Isso pode ser feito imediatamente ou posteriormente, a tarefa permanecerá na Caixa de entrada até que alguma ação seja tomada. Em ambos os casos, a configuração pode ser feita diretamente na interface do usuário ou com o uso de uma configuração `.properties` arquivo.
+  Isso pode ser feito imediatamente ou posteriormente, a tarefa permanecerá na Caixa de entrada até que alguma ação seja tomada. Em ambos os casos, a configuração pode ser feita diretamente na interface do usuário ou com o uso de um arquivo `.properties` predefinido.
 
 * Recusar a integração.
 
-  Considere esta opção se preferir [configurar manualmente a integração](/help/sites-administering/marketing-cloud.md). Consulte também [Integração do AEM ao Adobe Target e ao Adobe Analytics usando o DTM](https://helpx.adobe.com/experience-manager/using/integrate-digital-marketing-solutions.html).
+  Considere esta opção se preferir [configurar manualmente a integração](/help/sites-administering/marketing-cloud.md). Consulte também [Integração do AEM com o Adobe Target e o Adobe Analytics usando o DTM](https://helpx.adobe.com/experience-manager/using/integrate-digital-marketing-solutions.html).
 
 * Configure a configuração e o provisionamento usando um script.
 
@@ -45,7 +45,7 @@ Para qualquer uma das opções, é necessário fornecer as informações da cont
 
 >[!NOTE]
 >
->Opcionalmente, é possível fornecer informações da conta do Analytics e do Target usando um arquivo de propriedades lido na inicialização do servidor. Consulte [Como fornecer informações da conta usando um arquivo de propriedades](/help/sites-administering/opt-in.md#providing-account-information-using-a-properties-file).
+>Opcionalmente, é possível fornecer informações da conta do Analytics e do Target usando um arquivo de propriedades lido na inicialização do servidor. Consulte [Fornecendo Informações da Conta Usando um Arquivo de Propriedades](/help/sites-administering/opt-in.md#providing-account-information-using-a-properties-file).
 
 Quando você opta pela integração, o AEM executa as seguintes tarefas:
 
@@ -55,31 +55,31 @@ Quando você opta pela integração, o AEM executa as seguintes tarefas:
 
 >[!NOTE]
 >
->A AT.js é a biblioteca do cliente padrão. Isso é configurado em seu [configuração dos serviços em nuvem do target](/help/sites-administering/target-configuring.md#creating-a-target-cloud-configuration).
+>A AT.js é a biblioteca do cliente padrão. Isso é configurado na [configuração dos serviços de nuvem de destino](/help/sites-administering/target-configuring.md#creating-a-target-cloud-configuration).
 >
 >A Adobe recomenda que você use a AT.js como a biblioteca do cliente.
 
 Para aceitar a tarefa pré-carregada e pronta para uso:
 
-1. Do seu [Caixa de entrada, selecione e **Abertura** a Configuração do Analytics e do Targeting](/help/sites-authoring/inbox.md#taking-action-on-an-item) tarefa.
+1. Na sua [Caixa de entrada, selecione e **Abra** a tarefa Configurar Analytics e Targeting](/help/sites-authoring/inbox.md#taking-action-on-an-item).
 
    ![optin-01](assets/optin-01.png)
 
 1. Para o Analytics:
 
-   1. Insira as informações da conta do usuário para o Analytics e clique no link correspondente **Adicionar** botão.
+   1. Insira as informações da conta de usuário do Analytics e clique no botão **Adicionar** correspondente.
    1. As credenciais apropriadas são autenticadas.
    1. Quando a conta do Analytics for autenticada, selecione o conjunto de relatórios do Analytics para usar. O AEM recupera esses conjuntos de relatórios do Analytics. O status é atualizado para **Adicionado**.
 
 1. Para o Target:
 
-   1. Insira as informações da conta do usuário para o Target e clique no link correspondente **Adicionar** botão.
+   1. Insira as informações da conta de usuário do Target e clique no botão **Adicionar** correspondente.
    1. As credenciais apropriadas são autenticadas. O status é atualizado para **Adicionado**.
 
 1. Selecione **Próximo**.
 1. Selecione os sites para os quais o Analytics e/ou Target devem ser usados.
 
-1. Selecionar **Concluído** para concluir.
+1. Selecione **Concluído** para concluir.
 
    >[!CAUTION]
    >
@@ -96,7 +96,7 @@ Recuse a integração com o Analytics e o Target ao:
 
 Para recusar, você precisa concluir a tarefa pré-carregada:
 
-* Do seu [Caixa de entrada, selecione e **Concluído** a Configuração do Analytics e do Targeting](/help/sites-authoring/inbox.md#taking-action-on-an-item) tarefa.
+* Na sua [Caixa de entrada, selecione e **Conclua** a tarefa Configurar Analytics e Targeting](/help/sites-authoring/inbox.md#taking-action-on-an-item).
 
 ## Como fornecer informações da conta usando um arquivo de propriedades {#providing-account-information-using-a-properties-file}
 
@@ -113,9 +113,9 @@ O arquivo de propriedades é um arquivo de texto chamado marketingcloud.properti
 * target.email: o endereço de email que você usa para autenticar sua conta do Target.
 * target.password: a senha associada ao seu endereço de email.
 
-As propriedades e os valores são separados por sinais de igual (=). As propriedades do Analytics recebem o prefixo `analytics`e as propriedades do Target recebem o prefixo `target`. Para configurar um serviço, forneça valores para todas as propriedades desse serviço. Se você não quiser configurar um serviço, não forneça valores para esse serviço.
+As propriedades e os valores são separados por sinais de igual (=). As propriedades do Analytics recebem o prefixo `analytics` e as propriedades do Target recebem o prefixo `target`. Para configurar um serviço, forneça valores para todas as propriedades desse serviço. Se você não quiser configurar um serviço, não forneça valores para esse serviço.
 
-O exemplo a seguir `.properties` O arquivo inclui os valores de propriedade para criar uma configuração em nuvem do Analytics:
+O arquivo de exemplo `.properties` a seguir inclui os valores de propriedade para a criação de uma configuração em nuvem do Analytics:
 
 ```xml
 analytics.server=https://test.omniture.com/login/
@@ -130,11 +130,11 @@ target.password=
 
 O procedimento a seguir descreve como aderir à integração usando o arquivo de propriedades.
 
-1. Crie o `marketingcloud.properties` arquivo no diretório de trabalho que o processo AEM está usando (instância do autor).
+1. Crie o arquivo `marketingcloud.properties` no diretório de trabalho que o processo AEM está usando (instância do autor).
 
    >[!NOTE]
    >
-   >O diretório de trabalho geralmente é o diretório que contém o jar ou `license.properties` arquivo.
+   >O diretório de trabalho geralmente é o diretório que contém o jar ou o arquivo `license.properties`.
    >
    >No entanto, também pode ser definido como um caminho absoluto pela propriedade do sistema:
    >
@@ -142,9 +142,9 @@ O procedimento a seguir descreve como aderir à integração usando o arquivo de
 
 1. Adicione os valores da propriedade de acordo com suas contas do Analytics e/ou do Target.
 1. Inicie ou reinicie o servidor e faça logon usando uma conta de administrador.
-1. Abra a tarefa Configurar Analytics e Targeting conforme descrito em [Configurar a integração](/help/sites-administering/opt-in.md#configuring-the-integration). Em vez de solicitar as informações da conta, o assistente usa os valores da variável `.properties` arquivo.
+1. Abra a tarefa Configurar Analytics e Targeting conforme descrito em [Configurando a Integração](/help/sites-administering/opt-in.md#configuring-the-integration). Em vez de solicitar as informações da sua conta, o assistente usa os valores do arquivo `.properties`.
 
-   Selecionar **Adicionar** para o serviço apropriado, prossiga com o assistente.
+   Selecione **Adicionar** para o serviço apropriado e continue com o assistente.
 
    ![optin-02](assets/optin-02.png)
 
@@ -152,7 +152,7 @@ O procedimento a seguir descreve como aderir à integração usando o arquivo de
 
 Ao configurar a integração com o Analytics e o Target, o AEM cria automaticamente as configurações e estruturas de nuvem necessárias. Por exemplo, a configuração de nuvem do Analytics é chamada de Conta provisionada do Analytics.
 
-Não é necessário alterar as configurações de nuvem. No entanto, você pode configurar as estruturas conforme necessário. (Consulte [Mapeamento de dados do componente com propriedades do Adobe Analytics](/help/sites-administering/adobeanalytics-mapping.md) e [Adicionar uma estrutura do Target](/help/sites-administering/target.md).)
+Não é necessário alterar as configurações de nuvem. No entanto, você pode configurar as estruturas conforme necessário. (Consulte [Mapeamento de Dados do Componente com Propriedades do Adobe Analytics](/help/sites-administering/adobeanalytics-mapping.md) e [Adicionar uma Estrutura de Destino](/help/sites-administering/target.md).)
 
 >[!NOTE]
 >
@@ -166,7 +166,7 @@ Não é necessário alterar as configurações de nuvem. No entanto, você pode 
 
 >[!CAUTION]
 >
->Ao optar pela configuração do Analytics e uma configuração `reportsuite` for selecionada, a estrutura será restrita ao modo de execução de publicação. Isso significa que o rastreamento só funciona na instância de publicação.
+>Quando você opta pela configuração do Analytics e um `reportsuite` específico é selecionado, a estrutura é restrita ao modo de execução de publicação. Isso significa que o rastreamento só funciona na instância de publicação.
 >
 >Se o rastreamento for necessário em uma instância de criação, o valor deverá ser alterado para `all`.
 
@@ -174,11 +174,11 @@ Não é necessário alterar as configurações de nuvem. No entanto, você pode 
 
 Como administrador, talvez você queira acionar a configuração e o provisionamento com um script em vez de executar manualmente a etapa do assistente. Você pode fazer isso ao:
 
-* Envio de uma solicitação POST para **/libs/cq/cloudservicesprovisioning/content/autoprovisioning.json** com os parâmetros necessários.
+* Enviando uma solicitação POST para **/libs/cq/cloudservicesprovisioning/content/autoprovisioning.json** com os parâmetros necessários.
 
 Os parâmetros enviados dependem do seguinte:
 
-* Se quiser usar a variável **marketingcloud.properties** arquivo preenchido com todas as credenciais necessárias, você deve enviar os seguintes parâmetros:
+* Se você quiser usar o arquivo **marketingcloud.properties** preenchido com todas as credenciais necessárias, deverá enviar os seguintes parâmetros:
 
    * `automaticProvisioning`= `true`
    * `servicename`= `analytics|target`
@@ -190,7 +190,7 @@ Os parâmetros enviados dependem do seguinte:
   curl -v -u admin:admin -X POST -d"automaticProvisioning=true&servicename=target&servicename=analytics&path=/content/we-retail" http://localhost:4502/libs/cq/cloudservicesprovisioning/content/autoprovisioning.json
   ```
 
-* Se não quiser usar o plug-in **marketingcloud.properties** , você deverá enviar as credenciais e os parâmetros. Por exemplo:
+* Se você não quiser usar o arquivo **marketingcloud.properties**, envie as credenciais e os parâmetros. Por exemplo:
    * automaticProvisioning= `true`
    * servicename= `analytics|target`
    * path=path para uma página do AEM para anexar as configurações dos serviços de nuvem criados; vários caminhos podem ser definidos

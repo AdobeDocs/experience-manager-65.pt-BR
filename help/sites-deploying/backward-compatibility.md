@@ -23,7 +23,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Para obter uma lista de alterações de conteúdo e configuração que não estão no escopo do Pacote de compatibilidade, consulte [Reestruturação do repositório no AEM](/help/sites-deploying/repository-restructuring.md).
+>Para obter uma lista de alterações de conteúdo e configuração que não estão no escopo do Pacote de Compatibilidade, consulte [Reestruturação do Repositório no AEM](/help/sites-deploying/repository-restructuring.md).
 
 No Adobe Experience Manager (AEM) 6.5, todos os recursos foram desenvolvidos tendo em mente a compatibilidade com versões anteriores.
 
@@ -39,11 +39,11 @@ O pacote de compatibilidade permite executar o AEM no modo de compatibilidade e 
 
 ![sase](assets/sase.png)
 
-O pacote de compatibilidade tem dois modos: **Roteamento Habilitado** e **Roteamento Desabilitado**.
+O Pacote de Compatibilidade tem dois modos: **Roteamento Habilitado** e **Roteamento Desabilitado**.
 
 Isso permite que o AEM 6.5 seja executado em três modos:
 
-**Modo nativo:**
+**Modo Nativo:**
 
 O modo nativo é para clientes que desejam usar todos os novos recursos do AEM 6.5 e estão prontos para fazer o desenvolvimento e fazer com que suas personalizações funcionem com todos os novos recursos.
 
@@ -53,18 +53,18 @@ Isso significa que você deve ajustar seu aplicativo imediatamente após a atual
 
 O Modo de compatibilidade é para clientes que têm personalizações de interfaces que não são compatíveis com versões anteriores. Isso permite que o AEM seja executado no modo de compatibilidade e adie o desenvolvimento personalizado necessário em relação aos novos Recursos de AEM que não são compatíveis com alguns de seus códigos personalizados.
 
-**Modo Herdado: Pacote de Compatibilidade Instalado com Roteamento Desativado**
+**Modo Herdado: Pacote de Compatibilidade Instalado com Roteamento Desabilitado**
 
 O modo herdado é para clientes que têm interfaces personalizadas baseadas em código herdado ou obsoleto do AEM que foi movido para fora no pacote de compatibilidade.
 
-![sapte](assets/sapte.png)
+![sapato](assets/sapte.png)
 
 ## Como configurar {#how-to-set-up}
 
-A variável **Pacote de compatibilidade do AEM 6.4 para 6.5** pode ser instalado como um pacote usando o Gerenciador de pacotes. Você pode baixar o [Pacote de compatibilidade do AEM 6.4 para 6.5 da Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?fulltext=compat*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=20&amp;package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fcompatpack%2Faem-compat-cq65-to-cq64) local.
+O Pacote de Compatibilidade do **AEM 6.4 para 6.5** pode ser instalado como um pacote usando o Gerenciador de Pacotes. Você pode baixar o [Pacote de Compatibilidade do AEM 6.4 para 6.5 do site Distribuição de Software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?fulltext=compat*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=20&amp;package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fcompatpack%2Faem-compat-cq65-to-cq64).
 
 Depois que o Pacote de Compatibilidade é instalado, o roteamento pode ser ativado ou desativado usando um switch na configuração OSGI, conforme mostrado abaixo:
 
-![Switches Compat](assets/compat-switches.png)
+![Opções de Compatibilidade](assets/compat-switches.png)
 
 Depois que o pacote de compatibilidade é instalado e configurado, os recursos são usados com base no modo de compatibilidade escolhido.

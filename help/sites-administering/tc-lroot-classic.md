@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Criação de uma raiz de idioma usando a interface clássica{#creating-a-language-root-using-the-classic-ui}
 
-O procedimento a seguir usa a interface clássica do usuário para criar uma raiz de idioma de um site. Para obter mais informações, consulte [Criar uma raiz de idioma](/help/sites-administering/tc-prep.md#creating-a-language-root).
+O procedimento a seguir usa a interface clássica do usuário para criar uma raiz de idioma de um site. Para obter mais informações, consulte [Criando uma raiz de idioma](/help/sites-administering/tc-prep.md#creating-a-language-root).
 
 1. No console Sites, selecione a página raiz na árvore Sites. ([http://localhost:4502/siteadmin#](http://localhost:4502/siteadmin#))
 1. Adicione uma nova página secundária que represente a versão de idioma do site:
@@ -33,17 +33,17 @@ O procedimento a seguir usa a interface clássica do usuário para criar uma rai
 1. No console Sites, selecione a página raiz na árvore Sites.
 1. No menu Ferramentas, selecione Cópia de idioma.
 
-   ![toolslanguage copy](assets/toolslanguagecopy.png)
+   ![toolslanguageCopy](assets/toolslanguagecopy.png)
 
    A caixa de diálogo Cópia de idioma exibe uma matriz de versões de idioma e páginas da Web disponíveis. Um x em uma coluna de idioma significa que a página está disponível nesse idioma.
 
-   ![language copydialog](assets/languagecopydialog.png)
+   ![caixa de diálogo de cópia de idioma](assets/languagecopydialog.png)
 
 1. Para copiar uma página ou árvore de página existente para uma versão de idioma, selecione a célula dessa página na coluna de idioma. Clique na seta e selecione o tipo de cópia a ser criada.
 
    No exemplo a seguir, a página equipamento/óculos escuros/irian está sendo copiada para a versão em francês.
 
-   ![language copydilogdropdown](assets/languagecopydilogdropdown.png)
+   ![Languagecopydilogdropdown](assets/languagecopydilogdropdown.png)
 
    | Tipo de cópia de idioma | Descrição |
    |---|---|

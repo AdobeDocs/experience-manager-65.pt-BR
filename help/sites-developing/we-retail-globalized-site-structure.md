@@ -22,7 +22,7 @@ O We.Retail foi criado com uma estrutura de site globalizada que oferece um idio
 
 ## Experimentando {#trying-it-out}
 
-1. Abra o console Sites em **Navegação global > Sites**.
+1. Abra o console Sites em **Navegação Global > Sites**.
 1. Alterne para a exibição de coluna (se ainda não estiver ativa) e selecione We.Retail. Observe o exemplo de estrutura de país com Suíça, Estados Unidos, França e assim por diante, ao lado do Idioma principal.
 
    ![chlimage_1-87](assets/chlimage_1-87a.png)
@@ -41,11 +41,11 @@ O We.Retail foi criado com uma estrutura de site globalizada que oferece um idio
 
    ![chlimage_1-90](assets/chlimage_1-90a.png)
 
-1. Com o idioma inglês principal selecionado, abra o **Referências** no console sites e selecione **Cópias de idioma**.
+1. Com a opção Idioma principal em inglês selecionada, abra o painel **Referências** no console de sites e selecione **Cópias de idioma**.
 
    ![chlimage_1-91](assets/chlimage_1-91.png)
 
-1. Marque a caixa de seleção ao lado da caixa de seleção **Cópias de idioma** rótulo para selecionar todas as cópias de idioma. No **Atualizar cópias de idioma** do painel, selecione a opção para **Criar um novo projeto de tradução**. Forneça um nome para o projeto e clique em **Atualizar**.
+1. Marque a caixa de seleção ao lado do rótulo **Cópias de idioma** para selecionar todas as cópias de idioma. Na seção **Atualizar cópias de idioma** do painel, selecione a opção para **Criar um novo projeto de tradução**. Forneça um nome para o projeto e clique em **Atualizar**.
 
    ![chlimage_1-92](assets/chlimage_1-92.png)
 
@@ -53,21 +53,21 @@ O We.Retail foi criado com uma estrutura de site globalizada que oferece um idio
 
    ![chlimage_1-93](assets/chlimage_1-93.png)
 
-1. Clique em Alemão para ver os detalhes do projeto de tradução. O status está em **Rascunho**. Para iniciar a tradução com o serviço de tradução da Microsoft®, clique na divisa ao lado da **Tarefa de tradução** cabeçalho e selecione **Início**.
+1. Clique em Alemão para ver os detalhes do projeto de tradução. O status está em **Rascunho**. Para iniciar a tradução com o serviço de tradução da Microsoft®, clique na divisa ao lado do cabeçalho **Tarefa de tradução** e selecione **Iniciar**.
 
    ![chlimage_1-94](assets/chlimage_1-94.png)
 
-1. O projeto de tradução é iniciado. Clique nas reticências na parte inferior do cartão chamado Tarefa de tradução para ver os detalhes. Páginas com o estado **Pronto para revisão** já foram traduzidas pelo serviço de tradução.
+1. O projeto de tradução é iniciado. Clique nas reticências na parte inferior do cartão chamado Tarefa de tradução para ver os detalhes. As páginas com o estado **Pronto para revisão** já foram traduzidas pelo serviço de tradução.
 
    ![chlimage_1-95](assets/chlimage_1-95.png)
 
-1. Selecionar uma das páginas na lista e **Visualizar no Sites** na barra de ferramentas abre a página traduzida no editor de páginas.
+1. Selecionar uma das páginas na lista e depois **Visualizar nos Sites** na barra de ferramentas abre a página traduzida no editor de páginas.
 
    ![chlimage_1-96](assets/chlimage_1-96.png)
 
 >[!NOTE]
 >
->Este procedimento demonstrou a integração integrada com a tradução automática da Microsoft®. Usar o [Estrutura de integração de tradução do AEM](/help/sites-administering/translation.md), você pode integrar a muitos serviços de tradução padrão para orquestrar a tradução do AEM.
+>Este procedimento demonstrou a integração integrada com a tradução automática da Microsoft®. Usando a [Estrutura de Integração de Tradução do AEM](/help/sites-administering/translation.md), você pode integrar-se a vários serviços de tradução padrão para orquestrar a tradução do AEM.
 
 ## Mais informações {#further-information}
 

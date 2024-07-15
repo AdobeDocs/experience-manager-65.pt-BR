@@ -18,7 +18,7 @@ ht-degree: 2%
 
 # Criar e gerenciar revisões em formulários{#creating-and-managing-reviews-to-forms}
 
-<span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) para [criação de um novo Forms adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
+O <span class="preview"> Adobe recomenda o uso de [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adicionar o Forms Adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
@@ -32,15 +32,15 @@ Uma revisão é um mecanismo que permite que um ou mais revisores comentem formu
 ## Configurar uma revisão {#setting-up-a-review}
 
 1. Navegue até o navegador de formulários e selecione um formulário para revisão.
-1. Se o Formulário não tiver uma revisão em andamento, uma solicitação **Iniciar revisão** ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) aparece na barra de Ações. Clique em **Iniciar revisão** ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) ícone.
+1. Se o Formulário não tiver uma revisão em andamento, um ícone **Iniciar Revisão** ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) será exibido na barra de Ações. Clique no ícone **Iniciar revisão** ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png).
 1. Insira as seguintes informações:
 
    * **Título**: obrigatório, pode conter caracteres alfanuméricos, hífen e sublinhado.
    * **Descrição**: opcional, descrição da finalidade/conteúdo para revisão.
    * **Prazo**: opcional, a data em que a revisão termina. Quando ultrapassado o prazo, a tarefa aparece como &#39;Vencida&#39;.
-   * **Nome do Revisor**: no mínimo um é obrigatório. use a caixa de combinação para adicionar revisores, digitando uma lista de nomes com todos os nomes correspondentes; selecione um nome e clique em **Adicionar**. Na próxima seção do **Revisores** mostra o nome de todos os revisores.
+   * **Nome do Revisor**: no mínimo um é obrigatório. use a caixa de combinação para adicionar revisores, digitando uma lista de nomes com todos os nomes correspondentes; selecione um nome e clique em **Adicionar**. Na próxima seção da guia **Revisores**, mostra o nome de todos os revisores.
 
-1. Clique em **Início** para iniciar uma revisão.
+1. Clique em **Iniciar** para iniciar uma revisão.
 
    >[!NOTE]
    >
@@ -54,7 +54,7 @@ Esta seção descreve o que acontece quando uma revisão é criada ou configurad
 1. Uma nova tarefa de revisão é criada e atribuída ao revisor selecionado.
 1. Todos os revisores recebem uma tarefa de revisão. A tarefa é exibida na seção Notificações. Um revisor pode clicar em uma notificação ou ir para a Caixa de entrada para exibir a tarefa. Um revisor pode clicar em para abrir a tarefa de revisão, exibir o formulário e começar a adicionar comentários.
 
-   ![Alerta de notificação do revisor](assets/review-notification-img.png)
+   ![Alerta de Notificação do Revisor](assets/review-notification-img.png)
 
    Alerta de notificação do revisor
 
@@ -69,9 +69,9 @@ Esta seção descreve o que acontece quando uma revisão é criada ou configurad
 
 1. Navegue até a guia formulários e selecione um formulário.
 
-1. Se um formulário tiver uma revisão em andamento e você for o iniciador da revisão, uma solicitação **Gerenciar revisão** ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) ícones são exibidos na barra de Ações. Somente o iniciador da revisão pode gerenciar (Atualizar/Encerrar) a revisão.
+1. Se um formulário tiver uma revisão em andamento e você for o iniciador da revisão, os ícones **Gerenciar revisão** ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) aparecerão na barra de Ações. Somente o iniciador da revisão pode gerenciar (Atualizar/Encerrar) a revisão.
 
-   Clique em **Gerenciar revisão** ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png)ícone.
+   Clique no ícone **Gerenciar revisão** ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png).
 
    Para usuários diferentes do iniciador, o ícone Gerenciar revisão está desativado.
 
@@ -83,7 +83,7 @@ Esta seção descreve o que acontece quando uma revisão é criada ou configurad
 
    * **Prazo da revisão**: disponível para edição. É possível modificar o prazo para qualquer data e hora além da data e hora atuais.
 
-   * **Revisores**: disponível para edição. É possível adicionar ou remover revisores. Se uma tarefa estiver vencida, você poderá adicionar revisores somente depois de estender o prazo além da data atual.
+   * **Revisores**: disponíveis para edição. É possível adicionar ou remover revisores. Se uma tarefa estiver vencida, você poderá adicionar revisores somente depois de estender o prazo além da data atual.
 
 1. Para encerrar a revisão, clique em **Fim**.
 
@@ -96,7 +96,7 @@ Esta seção descreve o que acontece em **Atualização/Fim da Revisão**:
 
 1. Se um revisor for removido:
 
-   ![Remover um revisor](assets/removeduser.png)
+   ![Removendo um revisor](assets/removeduser.png)
 
    Remover um revisor
 
@@ -105,7 +105,7 @@ Esta seção descreve o que acontece em **Atualização/Fim da Revisão**:
 
 1. Se um revisor for adicionado:
 
-   ![Adicionar um revisor](assets/addedreviewer.png)
+   ![Adicionando um revisor](assets/addedreviewer.png)
 
    Adicionar um revisor
 
@@ -114,8 +114,8 @@ Esta seção descreve o que acontece em **Atualização/Fim da Revisão**:
 
 1. Quando uma revisão termina:
 
-   1. **Revisores**: Para cada revisor, a tarefa incompleta relacionada à revisão é encerrada. A tarefa não aparece mais como &#39;Pendente&#39; na seção Notificações do revisor.
+   1. **Revisores**: para cada revisor, a tarefa incompleta relacionada à revisão é encerrada. A tarefa não aparece mais como &#39;Pendente&#39; na seção Notificações do revisor.
    1. **Iniciador**: a tarefa atribuída ao iniciador da revisão está marcada como concluída. A tarefa é removida da seção Notificação do iniciador da revisão.
-   1. **Todos**: a revisão aparece na seção Análises anteriores. Nenhum comentário adicional pode ser adicionado.
+   1. **Todos**: a revisão aparece na seção Análises Anteriores. Nenhum comentário adicional pode ser adicionado.
 
    ![revisão concluída](assets/review-complete-imgg.png)

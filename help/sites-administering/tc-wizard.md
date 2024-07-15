@@ -30,11 +30,11 @@ Para acessar este assistente:
 
    ![chlimage_1-10](assets/chlimage_1-10.jpeg)
 
-1. A variável **Selecionar fonte** a etapa do assistente permite adicionar/remover páginas. Também há a opção de incluir ou excluir as subpáginas.
+1. A etapa **Selecionar Source** do assistente permite adicionar/remover páginas. Também há a opção de incluir ou excluir as subpáginas.
 
    ![chlimage_1-11](assets/chlimage_1-11.jpeg)
 
-1. A variável **Próxima** O botão traz você para a **Configurar** etapa do assistente. Aqui você pode adicionar/remover idiomas e selecionar o método de tradução.
+1. O botão **Avançar** leva você à etapa **Configurar** do assistente. Aqui você pode adicionar/remover idiomas e selecionar o método de tradução.
 
    ![chlimage_1-12](assets/chlimage_1-12.jpeg)
 
@@ -42,7 +42,7 @@ Para acessar este assistente:
    >
    >Por padrão, há apenas uma configuração de tradução. Para poder selecionar outras configurações, é necessário definir as configurações de nuvem primeiro. Consulte [Configuração da estrutura de integração de tradução](/help/sites-administering/tc-tic.md).
 
-1. A variável **Próxima** O botão traz você para a **Traduza** etapa do assistente. Aqui é possível escolher entre criar somente a estrutura, criar um projeto de tradução ou adicionar a um projeto de tradução existente.
+1. O botão **Avançar** leva você à etapa **Traduzir** do assistente. Aqui é possível escolher entre criar somente a estrutura, criar um projeto de tradução ou adicionar a um projeto de tradução existente.
 
    >[!NOTE]
    >
@@ -50,6 +50,6 @@ Para acessar este assistente:
 
    ![chlimage_1-13](assets/chlimage_1-13.jpeg)
 
-1. A variável **Criar** encerra o assistente.
+1. O botão **Criar** encerra o assistente.
 
    ![chlimage_1-14](assets/chlimage_1-14.jpeg)

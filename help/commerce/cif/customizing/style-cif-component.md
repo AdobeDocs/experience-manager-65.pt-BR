@@ -20,7 +20,7 @@ ht-degree: 16%
 
 # Alterar estilo dos Componentes principais da CIF do AEM {#style-aem-cif-core-components}
 
-A variável [Projeto CIF Venia](https://github.com/adobe/aem-cif-guides-venia) é uma base de código de referência para o uso de [Componentes principais do CIF](https://github.com/adobe/aem-core-cif-components). AEM Neste tutorial, você inspeciona o projeto de referência Venia e entende como o CSS e o JavaScript usados pelos componentes principais CIF são organizados. Você também criará um estilo usando CSS para atualizar o estilo padrão do **Teaser do produto** componente.
+O [Projeto CIF Venia](https://github.com/adobe/aem-cif-guides-venia) é uma base de código de referência para o uso de [Componentes principais do CIF](https://github.com/adobe/aem-core-cif-components). Neste tutorial, você inspeciona o projeto de referência Venia e entende como o CSS e o JavaScript usados pelos componentes principais CIF do AEM são organizados. Você também criará um estilo usando CSS para atualizar o estilo padrão do componente **Teaser do produto**.
 
 >[!TIP]
 >
@@ -38,11 +38,11 @@ Um ambiente de desenvolvimento local é necessário para concluir este tutorial.
 
 ## Clonar o projeto Venia {#clone-venia-project}
 
-Clonizamos o [Projeto Venia](https://github.com/adobe/aem-cif-guides-venia) e substitua os estilos padrão.
+Clonizamos o [Projeto Venia](https://github.com/adobe/aem-cif-guides-venia) e substituímos os estilos padrão.
 
 >[!NOTE]
 >
->**Você pode usar um projeto existente** (baseado no Arquétipo de projeto AEM com CIF incluído) e pule esta seção.
+>**Você pode usar um projeto existente** (baseado no Arquétipo de Projeto AEM com CIF incluído) e ignorar esta seção.
 
 1. Execute o seguinte comando git para clonar o projeto:
 
@@ -59,7 +59,7 @@ Clonizamos o [Projeto Venia](https://github.com/adobe/aem-cif-guides-venia) e su
 
 1. Adicione as configurações OSGi necessárias para conectar a instância do AEM a uma instância do Adobe Commerce ou adicione as configurações ao projeto recém-criado.
 
-1. Neste ponto, você deve ter uma versão funcional de uma loja conectada a uma instância do Adobe Commerce. Navegue até a `US` > `Home` página em: [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
+1. Neste ponto, você deve ter uma versão funcional de uma loja conectada a uma instância do Adobe Commerce. Navegue até a página `US` > `Home` em: [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
 
    Você verá que a loja está usando o tema Venia. Ao expandir o Menu principal da loja, você verá várias categorias, indicando que a conexão com o Adobe Commerce está funcionando.
 
@@ -67,31 +67,31 @@ Clonizamos o [Projeto Venia](https://github.com/adobe/aem-cif-guides-venia) e su
 
 ## Bibliotecas de clientes e módulo ui.frontend {#introduction-to-client-libraries}
 
-O CSS e o JavaScript responsáveis pela renderização de temas/estilos da loja são gerenciados no AEM por um [biblioteca do cliente](/help/sites-developing/clientlibs.md) ou clientlibs para abreviar. As bibliotecas de clientes fornecem um mecanismo para organizar o CSS e o JavaScript no código de um projeto e, em seguida, na página.
+O CSS e o JavaScript responsáveis pela renderização de temas/estilos da loja são gerenciados no AEM por uma [biblioteca do cliente](/help/sites-developing/clientlibs.md) ou, abreviando, clientlibs. As bibliotecas de clientes fornecem um mecanismo para organizar o CSS e o JavaScript no código de um projeto e, em seguida, na página.
 
 AEM Estilos específicos da marca podem ser aplicados aos Componentes principais do CIF adicionando e substituindo o CSS gerenciado por essas bibliotecas de clientes. Entender como as bibliotecas de clientes são estruturadas e incluídas na página é essencial.
 
-A variável [ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) é uma dedicada [webpack](https://webpack.js.org/) projeto para gerenciar todos os ativos de front-end de um projeto. Isso permite que desenvolvedores de front-end usem qualquer número de linguagens e tecnologias, como [TypeScript](https://www.typescriptlang.org/), [Sass](https://sass-lang.com/) e muito mais.
+O [ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) é um [webpack](https://webpack.js.org/) dedicado para gerenciar todos os ativos de front-end de um projeto. Isso permite que desenvolvedores de front-end usem qualquer número de linguagens e tecnologias como [TypeScript](https://www.typescriptlang.org/), [Sass](https://sass-lang.com/) e muito mais.
 
-A variável `ui.frontend` também é um módulo Maven e integrado ao projeto maior usando um módulo NPM com a [aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator). Durante uma criação, a variável `aem-clientlib-generator` O copia os arquivos CSS e JavaScript compilados em uma biblioteca do cliente na `ui.apps` módulo.
+O módulo `ui.frontend` também é um módulo Maven e integrado ao projeto maior usando um módulo NPM, o [aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator). Durante uma compilação, o `aem-clientlib-generator` copia os arquivos CSS e JavaScript compilados para uma biblioteca do cliente no módulo `ui.apps`.
 
 ![Ui.frontend para a arquitetura ui.apps](../assets/style-cif-component/ui-frontend-architecture.png)
 
-*O CSS compilado e o JavaScript são copiados do `ui.frontend` módulo no `ui.apps` módulo como uma biblioteca do cliente durante uma compilação Maven*
+*O CSS e o JavaScript compilados são copiados do módulo `ui.frontend` para o módulo `ui.apps` como uma biblioteca do cliente durante uma compilação Maven*
 
 ## Atualizar o estilo do teaser {#ui-frontend-module}
 
-Em seguida, faça uma pequena alteração no estilo de Teaser para ver como `ui.frontend` as bibliotecas de módulo e cliente funcionam. Uso [o IDE de sua escolha](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#set-up-the-development-ide) para importar o projeto Venia. As capturas de tela usadas são do [IDE do Visual Studio Code](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#microsoft-visual-studio-code).
+Em seguida, faça uma pequena alteração no estilo Teaser para ver como o módulo `ui.frontend` e as bibliotecas de clientes funcionam. Use [o IDE de sua escolha](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#set-up-the-development-ide) para importar o projeto Venia. As capturas de tela usadas são do [Visual Studio Code IDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#microsoft-visual-studio-code).
 
-1. Navegue e expanda a variável **ui.frontend** e expandir a hierarquia de pastas para: `ui.frontend/src/main/styles/commerce`:
+1. Navegue e expanda o módulo **ui.frontend** e expanda a hierarquia de pastas para: `ui.frontend/src/main/styles/commerce`:
 
    ![pasta de comércio ui.frontend](../assets/style-cif-component/ui-frontend-commerce-folder.png)
 
-   Observe que há vários Sass (`.scss`) arquivos abaixo da pasta. Esses são os estilos específicos do Commerce para cada um dos componentes do Commerce.
+   Observe que há vários arquivos Sass (`.scss`) abaixo da pasta. Esses são os estilos específicos do Commerce para cada um dos componentes do Commerce.
 
 1. Abra o arquivo `_productteaser.scss`.
 
-1. Atualize o `.item__image` e modifique a regra de borda:
+1. Atualize a regra `.item__image` e modifique a regra de borda:
 
    ```scss
    .item__image {
@@ -110,7 +110,7 @@ Em seguida, faça uma pequena alteração no estilo de Teaser para ver como `ui.
 
    A regra acima deve adicionar uma borda rosa forte ao Teaser do produto.
 
-1. Abra uma nova janela de terminal e navegue até a `ui.frontend` pasta:
+1. Abra uma nova janela de terminal e navegue até a pasta `ui.frontend`:
 
    ```shell
    $ cd <project-location>/aem-cif-guides-venia/ui.frontend
@@ -129,11 +129,11 @@ Em seguida, faça uma pequena alteração no estilo de Teaser para ver como `ui.
    [INFO] ------------------------------------------------------------------------
    ```
 
-   Inspect a saída do terminal. Você pode ver que o comando Maven executou vários scripts NPM, incluindo `npm run build`. A variável `npm run build` é definido na variável `package.json` e tem o efeito de compilar o projeto do webpack e acionar a geração da biblioteca do cliente.
+   Inspect a saída do terminal. Você pode ver que o comando Maven executou vários scripts NPM, incluindo `npm run build`. O comando `npm run build` é definido no arquivo `package.json` e tem o efeito de compilar o projeto do webpack e acionar a geração da biblioteca do cliente.
 
 1. Inspect o arquivo `ui.frontend/dist/clientlib-site/site.css`:
 
-   ![CSS do site compilado](../assets/style-cif-component/comiled-site-css.png)
+   ![CSS do Site Compilado](../assets/style-cif-component/comiled-site-css.png)
 
    O arquivo é a versão compilada e minificada de todos os arquivos Sass no projeto.
 
@@ -162,11 +162,11 @@ Em seguida, faça uma pequena alteração no estilo de Teaser para ver como `ui.
 
    Este é o arquivo de configuração para [aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator) e determina onde e como o CSS compilado e o JavaScript serão transformados em uma biblioteca cliente AEM.
 
-1. No `ui.apps` módulo inspecione o arquivo: `ui.apps/src/main/content/jcr_root/apps/venia/clientlibs/clientlib-site/css/site.css`:
+1. No módulo `ui.apps`, inspecione o arquivo: `ui.apps/src/main/content/jcr_root/apps/venia/clientlibs/clientlib-site/css/site.css`:
 
-   ![CSS do site compilado em ui.apps](../assets/style-cif-component/comiled-css-ui-apps.png)
+   ![CSS do Site compilado em ui.apps](../assets/style-cif-component/comiled-css-ui-apps.png)
 
-   Isso copia o `site.css` arquivo na `ui.apps` projeto. Agora, ele faz parte de uma biblioteca do cliente chamada `clientlib-site` com uma categoria de `venia.site`. Quando o arquivo fizer parte da variável `ui.apps` pode ser implantado no AEM.
+   Isso copia o arquivo `site.css` no projeto `ui.apps`. Agora ele faz parte de uma biblioteca de cliente chamada `clientlib-site` com uma categoria de `venia.site`. Quando o arquivo fizer parte do módulo `ui.apps`, ele poderá ser implantado no AEM.
 
    >[!NOTE]
    >
@@ -176,23 +176,23 @@ Em seguida, faça uma pequena alteração no estilo de Teaser para ver como `ui.
 
    ![Outras bibliotecas de clientes](../assets/style-cif-component/other-clientlibs.png)
 
-   Essas bibliotecas de clientes não são gerenciadas pelo `ui.frontend` módulo. Em vez disso, essas bibliotecas de clientes incluem as dependências de CSS e JavaScript fornecidas pelo Adobe. A definição dessas bibliotecas de clientes está na `.content.xml` arquivo abaixo de cada pasta.
+   Essas bibliotecas de clientes não são gerenciadas pelo módulo `ui.frontend`. Em vez disso, essas bibliotecas de clientes incluem dependências de CSS e JavaScript fornecidas pelo Adobe. A definição dessas bibliotecas de clientes está no arquivo `.content.xml` abaixo de cada pasta.
 
-   **clientlib-base** - Esta é uma biblioteca do cliente vazia que simplesmente incorpora as dependências necessárias do [Componentes principais do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR). A categoria é `venia.base`.
+   **clientlib-base** - Esta é uma biblioteca do cliente vazia que simplesmente incorpora as dependências necessárias dos [Componentes principais do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR). A categoria é `venia.base`.
 
-   **clientlib-cif** - Essa também é uma biblioteca do cliente vazia que simplesmente incorpora as dependências necessárias do [AEM Componentes principais do CIF](https://github.com/adobe/aem-core-cif-components). A categoria é `venia.cif`.
+   **clientlib-cif** - Esta também é uma biblioteca do cliente vazia que simplesmente incorpora as dependências necessárias dos [Componentes principais CIF do AEM](https://github.com/adobe/aem-core-cif-components). A categoria é `venia.cif`.
 
-   **clientlib-grid** - Isso inclui o CSS necessário para ativar o recurso de Grade responsiva AEM. O uso da grade AEM habilita [Modo de layout](/help/sites-authoring/responsive-layout.md) no Editor de AEM e dá aos autores de conteúdo a capacidade de redimensionar componentes. A categoria é `venia.grid` e está incorporado na `venia.base` biblioteca.
+   **clientlib-grid** - Isso inclui o CSS necessário para habilitar o recurso de Grade Responsiva do AEM. O uso da grade AEM habilita o [Modo de layout](/help/sites-authoring/responsive-layout.md) no Editor AEM e oferece aos autores de conteúdo a capacidade de redimensionar componentes. A categoria é `venia.grid` e está incorporada na biblioteca `venia.base`.
 
-1. Inspect os arquivos `customheaderlibs.html` e `customfooterlibs.html` debaixo `ui.apps/src/main/content/jcr_root/apps/venia/components/page`:
+1. Inspect os arquivos `customheaderlibs.html` e `customfooterlibs.html` abaixo de `ui.apps/src/main/content/jcr_root/apps/venia/components/page`:
 
-   ![Scripts Personalizados de Cabeçalho e Rodapé](../assets/style-cif-component/custom-header-footer-script.png)
+   ![Scripts personalizados de cabeçalho e rodapé](../assets/style-cif-component/custom-header-footer-script.png)
 
-   Esses scripts incluem **venia.base** e **venia.cif** bibliotecas como parte de todas as páginas.
+   Esses scripts incluem as bibliotecas **venia.base** e **venia.cif** como parte de todas as páginas.
 
    >[!NOTE]
    >
-   >Somente as bibliotecas base são &quot;codificadas&quot; como parte dos scripts da página. `venia.site` O não está incluído nesses arquivos e, em vez disso, é incluído como parte do modelo de página para obter mais flexibilidade. Isso é inspecionado posteriormente.
+   >Somente as bibliotecas base são &quot;codificadas&quot; como parte dos scripts da página. `venia.site` não está incluído nesses arquivos e, em vez disso, foi incluído como parte do modelo da página para maior flexibilidade. Isso é inspecionado posteriormente.
 
 1. No terminal, crie e implante todo o projeto em uma instância local do AEM:
 
@@ -205,11 +205,11 @@ Em seguida, faça uma pequena alteração no estilo de Teaser para ver como `ui.
 
 Agora que as atualizações de código foram implantadas, adicione uma nova instância do Teaser do produto à página inicial do site usando as ferramentas de criação do AEM. Isso nos permite visualizar os estilos atualizados.
 
-1. Abra uma nova guia do navegador e navegue até a **Página inicial** do site: [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
+1. Abra uma nova guia do navegador e navegue até a **Página Inicial** do site: [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
 
-1. Expanda o Localizador de ativos (o painel lateral) no **Editar** modo. Alternar o filtro de Ativo para **Produtos**.
+1. Expanda o Localizador de ativos (o painel lateral) no modo **Editar**. Alternar o filtro de Ativo para **Produtos**.
 
-   ![Expandir o Localizador de ativos e filtrar por Produtos](../assets/style-cif-component/drag-drop-product-page.png)
+   ![Expandir o Localizador de Ativos e filtrar por Produtos](../assets/style-cif-component/drag-drop-product-page.png)
 
 1. Arraste e solte um novo Produto na página inicial no Contêiner de layout principal:
 
@@ -221,13 +221,13 @@ Agora que as atualizações de código foram implantadas, adicione uma nova inst
 
 Em seguida, verifique a inclusão das bibliotecas de clientes na página.
 
-1. Navegue até a **Página inicial** do site: [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
+1. Navegue até a **Página Inicial** do site: [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
 
 1. Selecione o menu **Informações da página** e clique em **Exibir como publicado**:
 
    ![Exibir como publicado](../assets/style-cif-component/view-as-published.png)
 
-   Essa ação abre a página sem carregar nenhum JavaScript do autor AEM, como ele seria exibido no site publicado. Observe que o URL tem o parâmetro de consulta `?wcmmode=disabled` anexado. Ao desenvolver o CSS e o JavaScript, é uma boa prática usar esse parâmetro para simplificar a página sem nada do autor do AEM.
+   A página será aberta sem carregar o JavaScript do autor do AEM, como seria exibido no site publicado. Observe que a URL tem o parâmetro de consulta `?wcmmode=disabled` anexado. Ao desenvolver CSS e JavaScript, é uma boa prática usar esse parâmetro para simplificar a página sem nada do autor AEM.
 
 1. Visualize a fonte da página e você poderá identificar que várias bibliotecas de clientes estão incluídas:
 
@@ -249,25 +249,25 @@ Em seguida, verifique a inclusão das bibliotecas de clientes na página.
    </html>
    ```
 
-   As bibliotecas de clientes quando entregues à página recebem o prefixo `/etc.clientlibs` e são servidos por meio de um [proxy](/help/sites-developing/clientlibs.md) para evitar expor itens sensíveis no `/apps` ou `/libs`.
+   As bibliotecas de clientes quando entregues à página recebem o prefixo `/etc.clientlibs` e são servidas por meio de um [proxy](/help/sites-developing/clientlibs.md) para evitar a exposição de itens confidenciais em `/apps` ou `/libs`.
 
-   Aviso `venia/clientlibs/clientlib-site.min.css` e `venia/clientlibs/clientlib-site.min.js`. Esses são os arquivos CSS e JavaScript compilados derivados do `ui.frontend` módulo.
+   Aviso `venia/clientlibs/clientlib-site.min.css` e `venia/clientlibs/clientlib-site.min.js`. Esses são os arquivos CSS e JavaScript compilados derivados do módulo `ui.frontend`.
 
 ## Inclusão da biblioteca do cliente com modelos de página {#client-library-inclusion-pagetemplates}
 
-Há várias opções para incluir uma biblioteca do lado do cliente. Em seguida, verifique como o projeto gerado inclui a `clientlib-site` bibliotecas via [Modelos de página](/help/sites-developing/templates.md).
+Há várias opções para incluir uma biblioteca do lado do cliente. Em seguida, verifique como o projeto gerado inclui as bibliotecas `clientlib-site` por meio de [Modelos de Página](/help/sites-developing/templates.md).
 
-1. Navegue até a **Página inicial** do site no Editor de AEM: [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
+1. Navegue até a **Página Inicial** do site no Editor de AEM: [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
 
-1. Selecione o **Informações da página** e clique em **Editar modelo**:
+1. Selecione o menu **Informações da página** e clique em **Editar modelo**:
 
    ![Editar o modelo](../assets/style-cif-component/edit-template.png)
 
-   Isso abre o **Landing Page** modelo o **Início** página é baseada em.
+   Isso abre o modelo da **Página de Aterrissagem** na qual a **Página inicial** se baseia.
 
    >[!NOTE]
    >
-   >Para visualizar todos os modelos disponíveis na tela inicial do AEM, acesse **Ferramentas** > **Geral** > **Modelos**.
+   >Para exibir todos os modelos disponíveis na tela inicial do AEM, navegue até **Ferramentas** > **Geral** > **Modelos**.
 
 1. No canto superior esquerdo, selecione o ícone **Informações da página** e clique em **Política da página**.
 
@@ -275,34 +275,34 @@ Há várias opções para incluir uma biblioteca do lado do cliente. Em seguida,
 
 1. A Política da página para o modelo Página de aterrissagem é aberta:
 
-   ![Política da página - página inicial](../assets/style-cif-component/page-policy-properties.png)
+   ![Política da Página - página de aterrissagem](../assets/style-cif-component/page-policy-properties.png)
 
-   No lado direito, é possível ver uma lista de bibliotecas de clientes **categorias** que serão incluídos em todas as páginas que usam esse modelo.
+   No lado direito, é possível ver uma lista das bibliotecas de clientes **categorias** que serão incluídas em todas as páginas que usam esse modelo.
 
-   * `venia.dependencies` - Fornece bibliotecas de fornecedores que `venia.site` depende do.
-   * `venia.site` - Esta é a categoria para `clientlib-site` que o `ui.frontend` gerado pelo módulo.
+   * `venia.dependencies` - Fornece as bibliotecas de fornecedores das quais `venia.site` depende.
+   * `venia.site` - Esta é a categoria para `clientlib-site` gerada pelo módulo `ui.frontend`.
 
-   Observe que outros modelos usam a mesma política, **Página de conteúdo**, **Landing Page** e assim por diante. Ao reutilizar a mesma política, podemos garantir que as mesmas bibliotecas de clientes sejam incluídas em todas as páginas.
+   Observe que outros modelos usam a mesma política, **Página de Conteúdo**, **Página de Aterrissagem** e assim por diante. Ao reutilizar a mesma política, podemos garantir que as mesmas bibliotecas de clientes sejam incluídas em todas as páginas.
 
-   A vantagem de utilizar modelos e políticas de página para gerenciar a inclusão das bibliotecas de clientes é que você pode alterar a política de acordo com o modelo. Por exemplo, talvez você esteja gerenciando duas marcas diferentes na mesma instância do AEM. Cada marca tem seu próprio estilo ou *tema* mas as bibliotecas base e o código base serão os mesmos. Outro exemplo: se você quisesse que uma biblioteca do cliente maior fosse exibida apenas em determinadas páginas, seria possível criar uma política de página exclusiva para esse modelo.
+   A vantagem de utilizar modelos e políticas de página para gerenciar a inclusão das bibliotecas de clientes é que você pode alterar a política de acordo com o modelo. Por exemplo, talvez você esteja gerenciando duas marcas diferentes na mesma instância do AEM. Cada marca tem seu próprio estilo ou *tema*, mas as bibliotecas base e o código base serão os mesmos. Outro exemplo: se você quisesse que uma biblioteca do cliente maior fosse exibida apenas em determinadas páginas, seria possível criar uma política de página exclusiva para esse modelo.
 
 ## Desenvolvimento de Webpack local {#local-webpack-development}
 
-No exercício anterior, foi efetuada uma atualização a um ficheiro Sass `ui.frontend` e, em seguida, após executar uma compilação Maven, as alterações são implantadas no AEM. Em seguida, usamos um webpack-dev-server para desenvolver rapidamente os estilos de front-end.
+No exercício anterior, uma atualização foi feita em um arquivo Sass no módulo `ui.frontend` e, em seguida, após a execução de uma compilação Maven, as alterações são implantadas no AEM. Em seguida, usamos um webpack-dev-server para desenvolver rapidamente os estilos de front-end.
 
-As imagens proxies webpack-dev-server e algumas das imagens CSS/JavaScript da instância local do AEM, mas permitem que o desenvolvedor modifique os estilos e o JavaScript no `ui.frontend` módulo.
+Os proxies webpack-dev-server de imagens e alguns dos CSS/JavaScript da instância local do AEM, mas permitem que o desenvolvedor modifique os estilos e o JavaScript no módulo `ui.frontend`.
 
-1. No navegador, navegue até a janela **Início** página e **Exibir como publicado**: [http://localhost:4502/content/venia/us/en.html?wcmmode=disabled](http://localhost:4502/content/venia/us/en.html?wcmmode=disabled).
+1. No navegador, navegue até a **Página inicial** e **Exiba como Publicado**: [http://localhost:4502/content/venia/us/en.html?wcmmode=disabled](http://localhost:4502/content/venia/us/en.html?wcmmode=disabled).
 
-1. Visualize o código-fonte da página e as **copiar** o HTML bruto da página.
+1. Visualize o código-fonte da página e a **cópia** o HTML bruto da página.
 
-1. Retorne ao IDE de sua escolha abaixo de `ui.frontend` módulo abra o arquivo: `ui.frontend/src/main/static/index.html`
+1. Retorne ao IDE de sua escolha abaixo do módulo `ui.frontend` e abra o arquivo: `ui.frontend/src/main/static/index.html`
 
    ![Arquivo HTML estático](../assets/style-cif-component/static-index-html.png)
 
-1. Substituir o conteúdo de `index.html` e **colar** o HTML copiado na etapa anterior.
+1. Substitua o conteúdo de `index.html` e **cole** o HTML copiado na etapa anterior.
 
-1. Localizar as inclusões de `clientlib-site.min.css`, `clientlib-site.min.js` e **remover** as mesmas.
+1. Localize as inclusões de `clientlib-site.min.css`, `clientlib-site.min.js` e **remova**.
 
    ```html
    <head>
@@ -317,22 +317,22 @@ As imagens proxies webpack-dev-server e algumas das imagens CSS/JavaScript da in
    </body>
    ```
 
-   Eles são removidos porque representam a versão compilada do CSS e do JavaScript gerada pelo `ui.frontend` módulo. Deixe as outras bibliotecas do cliente como elas serão enviadas por proxy da instância do AEM em execução.
+   Eles são removidos porque representam a versão compilada do CSS e do JavaScript gerada pelo módulo `ui.frontend`. Deixe as outras bibliotecas do cliente como elas serão enviadas por proxy da instância do AEM em execução.
 
-1. Abra uma nova janela de terminal e acesse o `ui.frontend` pasta. Execute o comando `npm start`:
+1. Abra uma nova janela de terminal e navegue até a pasta `ui.frontend`. Execute o comando `npm start`:
 
    ```shell
    $ cd ui.frontend
    $ npm start
    ```
 
-   Inicia o webpack-dev-server em [http://localhost:8080/](http://localhost:8080/)
+   Isso inicia o webpack-dev-server em [http://localhost:8080/](http://localhost:8080/)
 
    >[!CAUTION]
    >
-   >Se você receber um erro relacionado ao Sass, pare o servidor e execute o comando `npm rebuild node-sass` e repita as etapas acima. Isso pode ocorrer se você tiver uma versão diferente do `npm` e `node` então especificado no projeto `aem-cif-guides-venia/pom.xml`.
+   >Se você receber um erro relacionado ao Sass, pare o servidor e execute o comando `npm rebuild node-sass` e repita as etapas acima. Isso pode ocorrer se você tiver uma versão diferente de `npm` e `node`, então especificada no projeto `aem-cif-guides-venia/pom.xml`.
 
-1. Navegue até a [http://localhost:8080/](http://localhost:8080/) em uma nova guia com o mesmo navegador usado para fazer logon na instância do AEM. Você deve ver a página inicial do Venia por meio do webpack-dev-server:
+1. Navegue até [http://localhost:8080/](http://localhost:8080/) em uma nova guia com o mesmo navegador que uma instância conectada do AEM. Você deve ver a página inicial do Venia por meio do webpack-dev-server:
 
    ![Servidor de desenvolvimento do Webpack na porta 80](../assets/style-cif-component/webpack-dev-server-port80.png)
 
@@ -340,11 +340,11 @@ As imagens proxies webpack-dev-server e algumas das imagens CSS/JavaScript da in
 
 ## Implementar estilo de cartão para Teaser do produto {#update-css-product-teaser}
 
-Em seguida, modifique os arquivos Sass na `ui.frontend` para implementar um Teaser do produto com estilo de cartão. O webpack-dev-server é usado para visualizar rapidamente as alterações.
+Em seguida, modifique os arquivos Sass no módulo `ui.frontend` para implementar um Teaser do produto com layout de cartão. O webpack-dev-server é usado para visualizar rapidamente as alterações.
 
 Retorne ao IDE e ao projeto gerado.
 
-1. No **ui.frontend** , reabra o arquivo `_productteaser.scss` em `ui.frontend/src/main/styles/commerce/_productteaser.scss`.
+1. No módulo **ui.frontend**, reabra o arquivo `_productteaser.scss` em `ui.frontend/src/main/styles/commerce/_productteaser.scss`.
 
 1. Faça as seguintes alterações na borda do Teaser do produto:
 
@@ -416,7 +416,7 @@ Retorne ao IDE e ao projeto gerado.
        ...
    ```
 
-1. Atualize a consulta de mídia na parte inferior para empilhar o nome e o preço em telas menores que **992 px**.
+1. Atualize a consulta de mídia na parte inferior para empilhar o nome e o preço em telas menores que **992px**.
 
    ```css
    @media (max-width: 992px) {
@@ -433,7 +433,7 @@ Retorne ao IDE e ao projeto gerado.
 
    Agora você deve ver o estilo do cartão refletido no webpack-dev-server:
 
-   ![Alterações no teaser do servidor de desenvolvimento do Webpack](../assets/style-cif-component/webpack-dev-server-teaser-changes.png)
+   ![Alterações no teaser do Servidor de Desenvolvimento do Webpack](../assets/style-cif-component/webpack-dev-server-teaser-changes.png)
 
    No entanto, as alterações ainda não foram implantadas no AEM. Você pode baixar o [arquivo de solução aqui](../assets/style-cif-component/_productteaser.scss).
 
@@ -451,7 +451,7 @@ Retorne ao IDE e ao projeto gerado.
 
 Depois que o código do projeto for implantado no AEM, você poderá ver as alterações no Teaser do produto.
 
-1. Retorne ao navegador e atualize a página inicial: [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html). O estilo do teaser de produto já deve ter sido aplicado.
+1. Retorne ao navegador e atualize a Página inicial: [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html). O estilo do teaser de produto já deve ter sido aplicado.
 
    ![Estilo atualizado do Teaser do produto](../assets/style-cif-component/product-teaser-new-style.png)
 
@@ -461,9 +461,9 @@ Depois que o código do projeto for implantado no AEM, você poderá ver as alte
 
 ## Resolução de problemas {#troubleshooting}
 
-Você pode verificar em [CRXDE-Lite](http://localhost:4502/crx/de/index.jsp) que o arquivo CSS atualizado foi implantado: [http://localhost:4502/crx/de/index.jsp#/apps/venia/clientlibs/clientlib-site/css/site.css](http://localhost:4502/crx/de/index.jsp#/apps/venia/clientlibs/clientlib-site/css/site.css)
+Você pode verificar no [CRXDE-Lite](http://localhost:4502/crx/de/index.jsp) se o arquivo CSS atualizado foi implantado: [http://localhost:4502/crx/de/index.jsp#/apps/venia/clientlibs/clientlib-site/css/site.css](http://localhost:4502/crx/de/index.jsp#/apps/venia/clientlibs/clientlib-site/css/site.css)
 
-Ao implantar novos arquivos CSS e/ou JavaScript, também é importante garantir que o navegador não esteja disponibilizando arquivos obsoletos. Você pode corrigir isso limpando o cache do navegador ou iniciando uma nova sessão do navegador.
+Ao implantar novos arquivos CSS e/ou JavaScript, também é importante garantir que o navegador não esteja fornecendo arquivos obsoletos. Você pode corrigir isso limpando o cache do navegador ou iniciando uma nova sessão do navegador.
 
 O AEM também tenta armazenar as bibliotecas de clientes em cache para melhorar o desempenho. Ocasionalmente, após a implantação de um código, os arquivos mais antigos são enviados. Você pode invalidar manualmente o cache das bibliotecas de clientes do AEM utilizando a [ferramenta Recompilar bibliotecas de clientes](http://localhost:4502/libs/granite/ui/content/dumplibs.rebuild.html). *Invalidar caches é o método mais aconselhável se você suspeitar que o AEM armazenou em cache uma versão antiga de uma biblioteca do cliente. A ferramenta Recompilar bibliotecas é ineficaz e demorada.*
 

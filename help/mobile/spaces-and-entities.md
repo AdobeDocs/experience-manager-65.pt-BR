@@ -31,23 +31,23 @@ Um espaço é um local conveniente para armazenar entidades que são expostas po
 
 Se o usuário quiser expor um monte de conteúdo e ativos a um aplicativo móvel, ele cria o espaço usando o painel do AEM Mobile.
 
-Pela primeira vez, o usuário que não configurou os serviços de conteúdo para trabalhar com espaços, o painel do AEM Mobile exibe somente Aplicativos após selecionar **Serviços de conteúdo**.
+Para o primeiro usuário, que não configurou os serviços de conteúdo para funcionar com espaços, o painel do AEM Mobile exibe somente Aplicativos após selecionar **Serviços de Conteúdo**.
 
 >[!CAUTION]
 >
 >**Pré-requisitos para adicionar um espaço**
 >
->Verifique a **Habilitar os serviços de conteúdo AEM** para trabalhar com o Spaces e habilitá-lo no painel de aplicativos do AEM Mobile.
+>Marque a opção **Habilitar Serviços de Conteúdo AEM** para trabalhar com o Spaces e habilite-a no painel de aplicativos do AEM Mobile.
 >
->Consulte [Administração dos serviços de conteúdo](/help/mobile/developing-content-services.md) para obter mais detalhes.
+>Consulte [Administrando o Content Services](/help/mobile/developing-content-services.md) para obter mais detalhes.
 
 Depois de configurar o Spaces no painel, siga estas etapas para criar o Spaces:
 
-1. Escolher **Espaços** do Content Services.
+1. Escolha **Espaços** nos Serviços de Conteúdo.
 
    ![chlimage_1-83](assets/chlimage_1-83.png)
 
-1. Escolher **Criar** para criar um espaço. Enter **Título**, **Nome**, e **Descrição** para o espaço.
+1. Escolha **Criar** para criar um espaço. Insira **Título**, **Nome** e **Descrição** para o espaço.
 
    Clique em **Criar**.
 
@@ -61,20 +61,20 @@ Você pode visualizar propriedades do espaço, excluir o espaço ou publicar o e
 
 ![chlimage_1-85](assets/chlimage_1-85.png)
 
-**Visualizando e editando propriedades de um espaço**
+**Exibindo e Editando Propriedades de um Espaço**
 
 1. Selecione o espaço na lista
-1. Escolher **Propriedades** na barra de ferramentas
-1. Clique em **Fechar** quando concluído
+1. Escolha **Propriedades** na barra de ferramentas
+1. Clique em **Fechar** quando terminar
 
-**Publicar um espaço** Quando um espaço é publicado, todas as pastas e entidades nesse espaço também são publicadas.
+**Publicando um espaço** Quando um espaço é publicado, todas as pastas e entidades desse espaço também são publicadas.
 
 1. Selecione o espaço clicando em seu ícone na lista Console do espaço
-1. Escolher **Publicar árvore**
+1. Escolher **árvore do Publish**
 
 >[!NOTE]
 >
->Você pode **Cancelar publicação** um Espaço, que remove o espaço da instância de publicação.
+>Você pode **Desfazer a publicação** de um Espaço, o que remove o espaço da instância de publicação.
 >
 >A imagem a seguir ilustra as ações que podem ser executadas após a publicação do espaço.
 
@@ -90,7 +90,7 @@ Os espaços podem incluir pastas para ajudar a organizar ainda mais o conteúdo 
 
    ![chlimage_1-87](assets/chlimage_1-87.png)
 
-1. Insira o **Título**, **Nome,** e **Descrição** para a pasta
+1. Insira o **Título**, **Nome** e **Descrição** da pasta
 
    ![chlimage_1-88](assets/chlimage_1-88.png)
 
@@ -102,7 +102,7 @@ Os espaços podem incluir pastas para ajudar a organizar ainda mais o conteúdo 
 >
 >A Cópia de idioma não está totalmente funcional para esta versão. Ele só configura a estrutura.
 
-A variável **Cópia de idioma** O recurso de permite que os autores copiem a Cópia de idioma principal e criem um Projeto e um Fluxo de trabalho para traduzir automaticamente o conteúdo. A Cópia de idioma cria a estrutura correta. Depois de adicionar uma pasta em um espaço, você pode adicionar uma Cópia de idioma ao espaço.
+O recurso **Cópia de idioma** permite que os autores copiem sua Cópia de idioma principal e, em seguida, criem um Projeto e Fluxo de trabalho para traduzir automaticamente o conteúdo. A Cópia de idioma cria a estrutura correta. Depois de adicionar uma pasta em um espaço, você pode adicionar uma Cópia de idioma ao espaço.
 
 >[!NOTE]
 >
@@ -120,19 +120,19 @@ A variável **Cópia de idioma** O recurso de permite que os autores copiem a C�
    >
    >Os nós de Cópia de idioma só podem existir como um filho direto do Espaço.
 
-1. Escolher **Idioma do pacote do conteúdo&amp;ast;** e insira o **Título&amp;ast;** in **Criar cópia de idioma** diálogo.
+1. Escolha **Idioma do Pacote de Conteúdo&amp;ast;** e insira o **Título&amp;ast;** na caixa de diálogo **Criar Cópia de Idioma**.
 
    Clique em **Criar**.
 
    ![chlimage_1-90](assets/chlimage_1-90.png)
 
-1. Depois de criar uma Cópia de idioma, ela aparecerá no seu espaço no **Idioma principal**.
+1. Depois de criar uma Cópia de idioma, ela aparecerá no seu espaço em **Idiomas principais**.
 
    ![chlimage_1-91](assets/chlimage_1-91.png)
 
    >[!NOTE]
    >
-   >Selecionar **Idioma principal** para exibir as pastas de cópia de idioma.
+   >Selecione **Idiomas principais** para exibir as pastas de cópia de idioma.
 
 ### Removendo uma pasta do espaço {#removing-a-folder-from-the-space}
 
@@ -169,11 +169,11 @@ Se os filhos da entidade, que são outras entidades, forem coletados para modela
 
    >[!NOTE]
    >
-   >Você tem a opção de escolher a variável **Modelo de ativos**, **Modelo de páginas** ou um modelo de tipo de entidade que você criou anteriormente.
+   >Você tem a opção de escolher o **Modelo do Assets**, o **Modelo de Páginas** ou um modelo do tipo de entidade criado anteriormente.
    >
-   >Consulte [Criação de um modelo](/help/mobile/administer-mobile-apps.md), para criar sua entidade personalizada.
+   >Consulte [Criando um Modelo](/help/mobile/administer-mobile-apps.md), para criar sua entidade personalizada.
 
-1. Insira um **Título**, **Nome**, **Descrição**, e **Tags** para a entidade. Clique em **Criar**.
+1. Insira um **Título**, **Nome**, **Descrição** e **Marcas** para a entidade. Clique em **Criar**.
 
    ![chlimage_1-94](assets/chlimage_1-94.png)
 
@@ -193,7 +193,7 @@ Se os filhos da entidade, que são outras entidades, forem coletados para modela
    >
    >Dependendo do modelo escolhido para criar sua entidade, a interface será diferente para editar e exibir as propriedades da entidade. Consulte as etapas abaixo para obter mais detalhes.
 
-   ***Se você escolher o modelo para criar a entidade como Modelos de ativos***, clicando em **Editar** permite adicionar ativos como mostrado na figura abaixo:
+   ***Se você escolher o modelo para criar a entidade como Modelos do Assets***, clicar em **Editar** permitirá adicionar ativos, como mostrado na figura abaixo:
 
    ![chlimage_1-97](assets/chlimage_1-97.png)
 
@@ -201,25 +201,25 @@ Se os filhos da entidade, que são outras entidades, forem coletados para modela
 
    ![chlimage_1-98](assets/chlimage_1-98.png)
 
-   ***Se você escolher o modelo para criar a entidade como Modelos de páginas***, clicando em **Editar** permite adicionar ativos como mostrado na figura abaixo:
+   ***Se você escolher o modelo para criar a entidade como Modelos de páginas***, clicar em **Editar** permitirá adicionar ativos, como mostrado na figura abaixo:
 
    ![chlimage_1-99](assets/chlimage_1-99.png)
 
-   Clique no ícone na **Caminho** para adicionar um ativo
+   Clique no ícone no **Caminho** para adicionar um ativo
 
    ![chlimage_1-100](assets/chlimage_1-100.png)
 
    >[!NOTE]
    >
-   >Depois de adicionar uma entidade, ela deve ser salva para que o link de Pré-visualização funcione. Para exibir a visualização, clique em **Salvar**. Ao clicar no botão **Visualizar** mostra o json do ativo adicionado, como mostrado na figura abaixo:
+   >Depois de adicionar uma entidade, ela deve ser salva para que o link de Pré-visualização funcione. Para exibir a visualização, clique em **Salvar**. Clicar na **Visualização** mostra o json do ativo adicionado, como mostrado na figura abaixo:
 
    ![chlimage_1-101](assets/chlimage_1-101.png)
 
    >[!NOTE]
    >
-   >Quando terminar de adicionar ativos à entidade, você poderá escolher **Salvar** para salvar as alterações ou escolher **Salvar e fechar** para salvar e redirecionar para a lista do console Espaço em que as entidades são definidas.
+   >Quando terminar de adicionar ativos à sua entidade, você poderá escolher **Salvar** para salvar as alterações ou escolher **Salvar e Fechar** para salvar e redirecionar para a lista do console Espaço onde as entidades estão definidas.
 
-   Além disso, selecione uma entidade na lista console de espaço e clique em **Propriedades** para exibir e editar as propriedades de uma entidade definida.
+   Além disso, selecione uma entidade na lista do console de espaço e clique em **Propriedades** para exibir e editar as propriedades de uma entidade definida.
 
    ![chlimage_1-102](assets/chlimage_1-102.png)
 
@@ -237,12 +237,12 @@ Se os filhos da entidade, que são outras entidades, forem coletados para modela
 
 ### Publicar uma entidade {#publishing-an-entity}
 
-Você tem a opção de escolher **Publicar árvore** ou **Publicação rápida** para publicar sua entidade.
+Você tem a opção de escolher a **Árvore do Publish** ou o **Publish rápido** para publicar sua entidade.
 
-1. Selecione uma entidade na lista do console de espaço e clique em **Publicar árvore ** para publicar essa entidade e seus filhos.
+1. Selecione uma entidade na lista do console de espaço e clique em **Árvore do Publish** para publicar essa entidade e seus filhos.
 
    ![chlimage_1-105](assets/chlimage_1-105.png)
 
    **Ou**,
 
-   Clique em **Publicação rápida** para publicar essa entidade específica.
+   Clique em **Quick Publish** para publicar essa entidade específica.

@@ -22,13 +22,13 @@ O AEM permite gerar gráficos incorporando texto dinamicamente retirado do seu c
 
 Para fazer isso, você também pode carregar e usar suas próprias fontes.
 
-Atualmente, todas as implementações do suporte à plataforma Java [TrueType](https://en.wikipedia.org/wiki/Truetype) fontes.
+Atualmente, todas as implementações da Plataforma Java oferecem suporte a [TrueType](https://en.wikipedia.org/wiki/Truetype) fontes.
 
 1. Abra o CRXDE Lite e navegue até a pasta do aplicativo do projeto:
 
    `/apps/<your-project>/`
 
-1. Em `/apps/<your-project>/` criar um nó:
+1. Em `/apps/<your-project>/`, crie um nó:
 
    * **Nome**: `fonts`
    * **Tipo**: `sling:Folder`
@@ -41,10 +41,10 @@ Atualmente, todas as implementações do suporte à plataforma Java [TrueType](h
    >
    >Os arquivos de fonte no repositório devem ter o sufixo `*.ttf` ou `*.TTF`.
 
-1. Atualize o [Configuração OSGi](/help/sites-deploying/configuring-osgi.md) de [Auxiliar de fontes Day Commons GFX](/help/sites-deploying/osgi-configuration-settings.md). Adicione o caminho à pasta de fontes; ou seja, `/apps/<your-project>/fonts`.
+1. Atualize a [configuração OSGi](/help/sites-deploying/configuring-osgi.md) do [Day Commons GFX Font Helper](/help/sites-deploying/osgi-configuration-settings.md). Adicione o caminho à pasta de fontes; ou seja, `/apps/<your-project>/fonts`.
 
-1. Retorne ao CRXDE Lite. Agora você deve ver uma `.fontlist` nó na pasta que contém o nome das fontes importadas.
+1. Retorne ao CRXDE Lite. Agora você deve ver um nó `.fontlist` na pasta que contém o nome das fontes importadas.
 
    Essas fontes agora estão prontas para serem usadas na API do Java.
 
-Para obter detalhes completos sobre como usar as fontes com a API Java, consulte a [Documentação da classe Fonte da API Java](https://download.oracle.com/javase/6/docs/api/java/awt/Font.html).
+Para obter detalhes completos sobre como usar as fontes com a API Java, consulte a [documentação da classe Font da API Java](https://download.oracle.com/javase/6/docs/api/java/awt/Font.html).

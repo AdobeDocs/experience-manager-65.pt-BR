@@ -1,6 +1,6 @@
 ---
 title: Gerenciamento das categorias exibidas no Workspace
-description: No Workspace, os processos que um usuário pode iniciar são exibidos em categorias no painel de navegação esquerdo. Saiba como gerenciar essas categorias exibidas no Espaço de trabalho.
+description: No Workspace, os processos que um usuário pode iniciar são exibidos em categorias no painel de navegação esquerdo. Saiba como gerenciar essas categorias exibidas no Workspace.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_workspace
@@ -22,9 +22,9 @@ No Workspace, os processos que um usuário pode iniciar são exibidos em categor
 
 Ao especificar nomes de categoria, crie-os para que eles apareçam corretamente no painel de navegação do Workspace. Por padrão, o painel de navegação esquerdo tem uma largura fixa de 210 pixels, que é de aproximadamente 24 caracteres. Se o nome da categoria especificado for muito longo para caber dentro da largura fixa do painel de navegação esquerdo, ele será truncado. O nome completo aparece somente quando o ponteiro do mouse está pausado sobre ele. Tente evitar nomes de categoria que serão truncados. Os exemplos a seguir ilustram nomes de categoria que se encaixam e aqueles que estão truncados:
 
-**Nome da categoria que se encaixa:** Presença e saída
+**Nome da categoria que se encaixa:** Presença e Saída
 
-**Nome da categoria truncado:** Presença e Licença (Estados Unidos)
+**Nome da categoria truncado:** Presença e Saída (Estados Unidos)
 
 No Workspace, os processos em uma categoria normalmente são exibidos como cartões na página Iniciar processo. Em geral, seis cartões podem ser exibidos na tela para uma categoria antes que o usuário precise rolar a tela para visualizar os cartões restantes. Como a rolagem dificulta a localização de um processo, limite cada categoria a seis processos ou, dependendo da sua resolução, limite o número de processos que podem ser exibidos na tela sem a necessidade de rolagem.
 
@@ -37,7 +37,7 @@ Se você estiver usando o MySQL como banco de dados do AEM Forms, o Console de A
 1. Na caixa Nome, digite um nome para a categoria e, na caixa Descrição, digite uma descrição da categoria.
 1. Clique em Adicionar. A categoria é exibida na página Gerenciamento de categorias.
 
-   ***observação **: é possível adicionar até cinco níveis de hierarquia ao criar categorias.*
+   ***observação **: você pode adicionar até cinco níveis de hierarquia ao criar categorias.*
 
 ## Editar uma categoria {#edit-a-category}
 

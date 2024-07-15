@@ -1,5 +1,5 @@
 ---
-title: Publicar e desfazer publicação de conteúdo
+title: Publish - Cancelar publicação de conteúdo
 description: Quando estiver familiarizado com as ações de gerenciamento de conteúdo em artigos, banners e coleções, siga esta página para saber como publicar seu conteúdo. Além disso, você pode desfazer a publicação do conteúdo.
 contentOwner: User
 content-type: reference
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 ---
 
-# Publicar e desfazer publicação de conteúdo{#publish-unpublish-content}
+# Publish - Cancelar publicação de conteúdo{#publish-unpublish-content}
 
 >[!NOTE]
 >
@@ -26,11 +26,11 @@ Depois de conhecer as ações de gerenciamento de conteúdo em artigos, banners 
 
 >[!NOTE]
 >
->Para saber mais sobre as considerações de design para aplicativos do AEM Mobile, consulte [Considerações de design para aplicativos do AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html) na Ajuda online.
+>Para saber mais sobre as considerações de design para aplicativos do AEM Mobile, consulte [Considerações de design para aplicativos do AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html) na Ajuda Online.
 
 ## Publicar/desfazer publicação do conteúdo {#publishing-unpublishing-the-content}
 
-Isso é diferente de uma &quot;publicação AEM&quot;. Você não está enviando conteúdo para uma instância do servidor de publicação AEM para torná-lo visível publicamente. Aqui, você está informando ao Mobile On-Demand que o conteúdo selecionado deve ser tornado público no aplicativo ao vivo do Mobile On-Demand.
+Isso é diferente de um &quot;AEM Publish&quot;. Você não está enviando conteúdo para uma instância do servidor Publish AEM para torná-lo visível publicamente. Aqui, você está informando ao Mobile On-Demand que o conteúdo selecionado deve ser tornado público no aplicativo ao vivo do Mobile On-Demand.
 
 >[!NOTE]
 >
@@ -41,7 +41,7 @@ O fluxo de trabalho geral para publicar/desfazer a publicação de um artigo:
 1. Em Dispositivo móvel, escolha seu aplicativo móvel por demanda no catálogo.
 1. Selecione um artigo.
 1. Adicione mais artigos, se necessário, da exibição em lista.
-1. Selecione Publicar na barra de ações. Após alguns minutos, seus artigos serão publicados.
+1. Selecione Publish na barra de ações. Após alguns minutos, seus artigos serão publicados.
 1. Use as mesmas etapas acima para Desfazer a publicação de artigos.
 
 <!-- FAIL >>[!NOTE]

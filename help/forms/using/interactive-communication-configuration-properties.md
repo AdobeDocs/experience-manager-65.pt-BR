@@ -19,9 +19,9 @@ ht-degree: 6%
 
 # Propriedades de configuração de Comunicações interativas{#interactive-communications-configuration-properties}
 
-As Comunicações interativas incluem propriedades que são configuradas automaticamente após a instalação do [Complemento do AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md) pacote. Os autores de Comunicação interativa podem editar essas propriedades de configuração padrão usando o **Configuração do console da Web do Adobe Experience Manager** página.
+As Comunicações Interativas incluem propriedades que são configuradas automaticamente após a instalação do pacote do [complemento do AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md). Os autores de Comunicações interativas podem editar essas propriedades de configuração padrão usando a página **Configuração do console da Web do Adobe Experience Manager**.
 
-Abra o **Configuração do console da Web do Adobe Experience Manager** usando o seguinte URL:
+Abra a página **Configuração do Console da Web do Adobe Experience Manager** usando esta URL:
 
 `https:/[server]:[port]/<contextPath>/system/console/configMgr`
 
@@ -34,7 +34,7 @@ As propriedades de configuração incluem:
 
 ## Configuração de fragmentos do documento {#document-fragments-configuration}
 
-Selecionar **Configuração de fragmentos do documento** no **Configuração do console da Web do Adobe Experience Manager** para exibir as propriedades de configuração dos fragmentos de documento.
+Selecione a **configuração de fragmentos de documento** na página **Configuração do Console da Web do Adobe Experience Manager** para exibir as propriedades de configuração de fragmentos de documento.
 
 <table>
  <tbody> 
@@ -80,7 +80,7 @@ Selecionar **Configuração de fragmentos do documento** no **Configuração do 
 
 ## Criar configuração de correspondência {#create-correspondence-configuration}
 
-Selecionar **Criar configuração de correspondência** no **Configuração do console da Web do Adobe Experience Manager** para exibir as propriedades de configuração da IU do Agente.
+Selecione **Criar configuração de correspondência** na página **Configuração do Console da Web do Adobe Experience Manager** para exibir as propriedades de configuração da interface do usuário do Agente.
 
 <table>
  <tbody> 
@@ -104,7 +104,7 @@ Selecionar **Criar configuração de correspondência** no **Configuração do c
   </tr> 
   <tr> 
    <td>Ativar incorporação de fontes no PDF</td> 
-   <td><p>Marque a caixa de seleção para ativar as fontes incorporadas nos documentos do PDF. Após selecionar essa opção, é possível incorporar novas fontes após gerar ou visualizar os documentos do PDF usando a interface do usuário do agente. Use o canal de impressão de comunicação interativa para gerar e visualizar documentos PDF.</p> <p>A incorporação de fontes em um documento PDF é útil se uma fonte estiver disponível em uma máquina usada para gerar o PDF e não estiver disponível na máquina cliente que acessa o PDF.</p> <p>Para obter mais informações sobre incorporação de fontes, consulte <a href="../../forms/using/customize-text-editor.md" target="_blank">Personalizar editor de texto</a>.</p> </td> 
+   <td><p>Marque a caixa de seleção para ativar as fontes incorporadas nos documentos do PDF. Após selecionar essa opção, é possível incorporar novas fontes após gerar ou visualizar os documentos do PDF usando a interface do usuário do agente. Use o canal de impressão de comunicação interativa para gerar e visualizar documentos PDF.</p> <p>A incorporação de fontes em um documento PDF é útil se uma fonte estiver disponível em uma máquina usada para gerar o PDF e não estiver disponível na máquina cliente que acessa o PDF.</p> <p>Para obter mais informações sobre como incorporar fontes, consulte <a href="../../forms/using/customize-text-editor.md" target="_blank">Personalizar editor de texto</a>.</p> </td> 
    <td>Não selecionado</td> 
    <td>Não aplicável</td> 
   </tr> 
@@ -113,7 +113,7 @@ Selecionar **Criar configuração de correspondência** no **Configuração do c
 
 ## Configuração do canal da Web do formulário adaptável e da comunicação interativa {#adaptive-form-and-interactive-communication-web-channel-configuration}
 
-Selecionar **Configuração do canal da Web do formulário adaptável e da comunicação interativa** no **Configuração do console da Web do Adobe Experience Manager** para exibir as propriedades de configuração do canal da Web Forms adaptável e Comunicações interativas. A tabela a seguir descreve as propriedades relacionadas às Comunicações Interativas:
+Selecione **Configuração do canal da Web do Formulário Adaptável e da Comunicação Interativa** na página **Configuração do Console da Web do Adobe Experience Manager** para exibir as propriedades de configuração do canal da Web do Forms Adaptável e das Comunicações Interativas. A tabela a seguir descreve as propriedades relacionadas às Comunicações Interativas:
 
 | Propriedade | Descrição | Padrão | Valores aceitáveis |
 |---|---|---|---|
@@ -123,7 +123,7 @@ Selecionar **Configuração do canal da Web do formulário adaptável e da comun
 
 ## Configuração do tema do canal da Web do formulário adaptável e da comunicação interativa {#adaptive-form-and-interactive-communication-web-channel-theme-configuration}
 
-Selecionar **Configuração do tema do canal da Web do formulário adaptável e da comunicação interativa** no **Configuração do console da Web do Adobe Experience Manager** para exibir as propriedades de configuração dos temas de canal da Web do Adaptive Forms e das Comunicações interativas.
+Selecione **Configuração do tema de canal da Web do formulário adaptável e da comunicação interativa** na página **Configuração do console da Web do Adobe Experience Manager** para exibir as propriedades de configuração dos temas de canal da Web do Forms adaptável e das comunicações interativas.
 
 <table>
  <tbody> 

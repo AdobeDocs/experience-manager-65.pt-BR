@@ -24,15 +24,15 @@ O AEM oferece a possibilidade de configurar:
 * registro de dados de solicitação; uma configuração de registro especializada para informações de solicitação
 * definições específicas para os serviços individuais; por exemplo, um arquivo de log individual e o formato para as mensagens de log
 
-Estas são todas [Configurações do OSGi](/help/sites-deploying/configuring-osgi.md).
+Estas são todas as [configurações de OSGi](/help/sites-deploying/configuring-osgi.md).
 
 >[!NOTE]
 >
->O logon no AEM é baseado em princípios Sling. Consulte [Log do Sling](https://sling.apache.org/site/logging.html) para obter mais informações.
+>O logon no AEM é baseado em princípios Sling. Consulte [Sling Logging](https://sling.apache.org/site/logging.html) para obter mais informações.
 
 ## Log global {#global-logging}
 
-[Configuração de registro do Apache Sling](/help/sites-deploying/osgi-configuration-settings.md) é usado para configurar o agente de log raiz. Isso define as configurações globais para fazer logon no AEM:
+A [Configuração de log do Apache Sling](/help/sites-deploying/osgi-configuration-settings.md) é usada para configurar o agente raiz. Isso define as configurações globais para fazer logon no AEM:
 
 * o nível de registro
 * o local do arquivo de log central
@@ -42,7 +42,7 @@ Estas são todas [Configurações do OSGi](/help/sites-deploying/configuring-osg
 
 >[!NOTE]
 >
->Este [Artigo da knowledge base](https://helpx.adobe.com/experience-manager/kb/HowToRotateRequestAndAccessLog.html) explica como girar os arquivos request.log e access.log.
+>Este [artigo da Base de Dados de Conhecimento](https://helpx.adobe.com/experience-manager/kb/HowToRotateRequestAndAccessLog.html) explica como girar os arquivos request.log e access.log.
 
 ## Registradores e Gravadores para Serviços Individuais {#loggers-and-writers-for-individual-services}
 
@@ -59,17 +59,17 @@ Isso permite canalizar mensagens de log de um único serviço em um arquivo sepa
 
 O AEM usa o seguinte para gravar mensagens de log no arquivo:
 
-1. Um **Serviço OSGi** (logger) grava uma mensagem de log.
-1. A **Logger de registro** O pega essa mensagem e a formata de acordo com sua especificação.
-1. A **Gravador de Log** grava todas essas mensagens no arquivo físico definido.
+1. Um **serviço OSGi** (agente de log) grava uma mensagem de log.
+1. Um **Logger** pega essa mensagem e a formata de acordo com sua especificação.
+1. Um **Gravador de Log** grava todas essas mensagens no arquivo físico definido.
 
 Esses elementos estão vinculados pelos seguintes parâmetros para os elementos apropriados:
 
-* **Logger (Logger de Log)**
+* **Agente (Agente de Log)**
 
   Defina os serviços que geram as mensagens.
 
-* **Arquivo de log (Logging Logger)**
+* **Arquivo de Log (Agente de Log)**
 
   Defina o arquivo físico para armazenar as mensagens de log.
 
@@ -85,7 +85,7 @@ Esses elementos estão vinculados pelos seguintes parâmetros para os elementos 
 
 Alguns registradores e gravadores estão incluídos em uma instalação padrão do AEM.
 
-O primeiro é um caso especial, uma vez que `request.log` e `access.log` arquivos:
+O primeiro é um caso especial, pois controla os arquivos `request.log` e `access.log`:
 
 * O logger:
 
@@ -93,7 +93,7 @@ O primeiro é um caso especial, uma vez que `request.log` e `access.log` arquivo
 
      (org.apache.sling.engine.impl.log.RequestLoggerService)
 
-   * Escrever mensagens sobre o conteúdo da solicitação em `request.log`.
+   * Gravar mensagens sobre o conteúdo da solicitação em `request.log`.
 
 * Links para:
 
@@ -113,7 +113,7 @@ Os outros pares seguem a configuração padrão:
 
      (org.apache.sling.commons.log.LogManager.fatory.config)
 
-   * Gravações `Information` mensagens para `logs/error.log`.
+   * Grava `Information` mensagens em `logs/error.log`.
 
 * Links para o autor:
 
@@ -123,9 +123,10 @@ Os outros pares seguem a configuração padrão:
 
 * O logger:
 
-   * Configuração do logger de registro do Apache Sling (org.apache.sling.commons.log.LogManager.fatory.config.649d51b7-6425-45c9-81e6-2697a03d6be7)
+   * Configuração do logger de log do Apache Sling
+(org.apache.sling.commons.log.LogManager.fatory.config.649d51b7-6425-45c9-81e6-2697a03d6be7)
 
-   * Gravações `Warning` mensagens para `../logs/error.log` para o serviço `org.apache.pdfbox`.
+   * Grava `Warning` mensagens em `../logs/error.log` para o serviço `org.apache.pdfbox`.
 
 * Não vincula a um Gravador específico, portanto, criará e usará um Gravador implícito com configuração padrão (rotação diária de log).
 
@@ -133,13 +134,13 @@ Os outros pares seguem a configuração padrão:
 
 Você pode definir seu próprio par de Logger/Gravador:
 
-1. Criar uma instância da Configuração de Fábrica [Configuração do logger de log do Apache Sling](/help/sites-deploying/osgi-configuration-settings.md).
+1. Crie uma instância da Configuração de Fábrica [Configuração do Agente de Log do Apache Sling](/help/sites-deploying/osgi-configuration-settings.md).
 
    1. Especifique o Arquivo de log.
    1. Especifique o Logger.
    1. Configure os outros parâmetros conforme necessário.
 
-1. Criar uma instância da Configuração de Fábrica [Configuração do Apache Sling Logging Writer](/help/sites-deploying/osgi-configuration-settings.md).
+1. Crie uma instância da Configuração de Fábrica [Configuração de Gravador de Log do Apache Sling](/help/sites-deploying/osgi-configuration-settings.md).
 
    1. Especifique o Arquivo de log - deve corresponder ao especificado para o Logger.
    1. Configure os outros parâmetros conforme necessário.

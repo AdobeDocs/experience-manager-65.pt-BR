@@ -25,8 +25,8 @@ Esta página fornece as informações essenciais para trabalhar com o recurso de
 <table>
  <tbody>
   <tr>
-   <td> <strong>resourceTypes</strong></td>
-   <td>social/fórum/components/hbs/forum<br /> social/fórum/components/hbs/topic<br /> social/fórum/components/hbs/post</td>
+   <td> <strong>tiposDeRecursos</strong></td>
+   <td>social/forum/components/hbs/forum<br /> social/forum/components/hbs/topic<br /> social/forum/components/hbs/post</td>
   </tr>
   <tr>
    <td> <a href="scf.md#add-or-include-a-communities-component"><strong>incluível</strong></a></td>
@@ -46,7 +46,7 @@ Esta página fornece as informações essenciais para trabalhar com o recurso de
   </tr>
   <tr>
    <td><strong> propriedades</strong></td>
-   <td>Consulte <a href="forum.md">Recurso de fórum</a></td>
+   <td>Consulte <a href="forum.md">Recurso do fórum</a></td>
   </tr>
  </tbody>
 </table>
@@ -57,26 +57,26 @@ Esta página fornece as informações essenciais para trabalhar com o recurso de
 
 * [API do fórum](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/forum/client/api/package-summary.html)
 
-* [Endpoints do fórum](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/forum/client/endpoints/package-summary.html)
+* [Pontos de Extremidade do Fórum](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/forum/client/endpoints/package-summary.html)
 
 * [Personalizações do lado do servidor](server-customize.md)
 
 ### Função do fórum {#forum-function}
 
-Uma estrutura de site da comunidade que inclui o [Função Fórum](functions.md#forum-function), inclui um configurado `forum` e configurações que afetam moderação, marcação e tradução.
+Uma estrutura de site de comunidade que inclui a [função de Fórum](functions.md#forum-function), um componente `forum` configurado e configurações que afetam a moderação, a marcação e a tradução.
 
 ### Acessar publicações do fórum (UGC) {#accessing-forum-posts-ugc}
 
 A UGC deve ser moderada usando um dos métodos padrão para moderação.
-Consulte [Moderação de conteúdo gerado pelo usuário](moderate-ugc.md).
+Consulte [Moderando Conteúdo Gerado Pelo Usuário](moderate-ugc.md).
 
-A partir do Adobe Experience Manager 6.1 Communities, o uso de um [armazenamento comum](working-with-srp.md) O para UGC inclui acesso programático ao UGC, independentemente da opção de armazenamento escolhida (como ASRP, MSRP ou JSRP).
+A partir do Adobe Experience Manager 6.1 Communities, o uso de um [armazenamento comum](working-with-srp.md) para UGC inclui acesso programático a UGC, independentemente da opção de armazenamento escolhida (como ASRP, MSRP ou JSRP).
 
 **A localização e o formato do UGC no repositório estão sujeitos a alterações sem aviso**.
 
 Consulte:
 
-* [Visão geral do provedor de recursos de armazenamento](srp.md) - Introdução e visão geral do uso do repositório.
-* [Fundamentos de SRP e UGC](srp-and-ugc.md) - Métodos e exemplos do utilitário SRP.
-* [Acesso ao UGC com SRP](accessing-ugc-with-srp.md) - Diretrizes de codificação.
-* [Refatoração de SocialUtils](socialutils.md) - Mapeamento de métodos de utilitário obsoletos para métodos de utilitário SRP atuais.
+* [Visão Geral do Provedor de Recursos de Armazenamento](srp.md) - Introdução e visão geral do uso do repositório.
+* [Fundamentos do SRP e do UGC](srp-and-ugc.md) - Métodos e exemplos do utilitário SRP.
+* [Acessando UGC com SRP](accessing-ugc-with-srp.md) - Diretrizes de codificação.
+* [Refatoração de SocialUtils](socialutils.md) - Mapeando métodos de utilitário obsoletos para métodos de utilitário SRP atuais.

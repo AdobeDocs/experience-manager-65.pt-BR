@@ -14,7 +14,7 @@ ht-degree: 82%
 
 # Criação de conteúdo acessível (Conformidade com o WCAG 2.1) {#creating-accessible-content-wcag-conformance}
 
-A variável [Diretrizes de acessibilidade de conteúdo da Web (WCAG) 2.1](https://www.w3.org/TR/WCAG/), elaborada por [um grupo de trabalho do World Wide Web Consortium](https://www.w3.org/groups/#Accessibility_Guidelines_Working_Group), consistem em um conjunto de diretrizes de tecnologia independente e critérios de sucesso para ajudar a tornar o conteúdo da Web acessível e utilizável para pessoas com deficiência.
+As [Diretrizes de Acessibilidade de Conteúdo da Web (WCAG) 2.1](https://www.w3.org/TR/WCAG/), elaboradas por [um grupo de trabalho do World Wide Web Consortium](https://www.w3.org/groups/#Accessibility_Guidelines_Working_Group), consistem em um conjunto de diretrizes de tecnologia independentes e critérios de sucesso para ajudar a tornar o conteúdo da Web acessível e utilizável por pessoas com deficiência.
 
 Como introdução, o consórcio fornece uma série de seções e documentos de apoio:
 
@@ -25,7 +25,7 @@ Como introdução, o consórcio fornece uma série de seções e documentos de a
 * [Os documentos da WCAG](https://www.w3.org/WAI/standards-guidelines/wcag/docs/)
 
 Além disso, consulte:
-* A variável [Guia rápido para a WCAG 2.1](/help/managing/qg-wcag.md).
+* O [Guia Rápido para a WCAG 2.1](/help/managing/qg-wcag.md).
 * Os [Relatórios de conformidade para acessibilidade de soluções da Adobe](https://www.adobe.com/accessibility/compliance.html).
 * [Configurar o Editor de Rich Text para a produção de conteúdo acessível](/help/sites-administering/rte-accessible-content.md)
 
@@ -68,7 +68,7 @@ Uma vantagem adicional é que as alternativas em texto permitem que o conteúdo 
 
 #### Como cumprir - Conteúdo não textual (1.1.1) {#how-to-meet-non-text-content}
 
-Para gráficos estáticos, o requisito básico é o de proporcionar uma alternativa em texto equivalente para o gráfico. Isso pode ser feito no **Texto alternativo** campo. Consulte, por exemplo, o Componente principal **[Imagem](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=pt-BR)**.
+Para gráficos estáticos, o requisito básico é o de proporcionar uma alternativa em texto equivalente para o gráfico. Isso pode ser feito no campo **Texto alternativo**. Consulte, por exemplo, o Componente principal **[Imagem](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=pt-BR)**.
 
 >[!NOTE]
 >
@@ -97,11 +97,11 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
 
 Tipos específicos de conteúdo não textual que necessitam de alternativas em texto podem incluir:
 
-* Fotos ilustrativas: são imagens de pessoas, objetos ou lugares. É importante pensar na função da foto na página e descrever o conteúdo da imagem, já que a tecnologia de assistência anunciará o tipo de elemento (por exemplo, `graphic` ou `image`); pode aumentar a clareza usar `screenshot` ou `illustration` nas descrições de texto alternativo, mas isso depende do contexto. A consistência é um fator importante. Uma decisão deve ser tomada pela equipe de criação, e isso deve ser aplicado à inteira experiência do usuário.
+* Fotos ilustrativas: são imagens de pessoas, objetos ou lugares. É importante pensar na função da foto na página e descrever o conteúdo da imagem, já que a tecnologia de assistência anunciará o tipo de elemento (por exemplo, `graphic` ou `image`). Pode aumentar a clareza usar `screenshot` ou `illustration` nas descrições de texto alternativo, mas isso depende do contexto. A consistência é um fator importante. Uma decisão deve ser tomada pela equipe de criação, e isso deve ser aplicado à inteira experiência do usuário.
 * Ícones: são pequenos pictogramas (gráficos) que transmitem informações específicas. Eles devem ser usados de forma consistente em uma página e um site. Todas as instâncias do ícone em uma página ou um site devem ter a mesma alternativa em texto curta e sucinta, a menos que isso resulte em duplicação desnecessária do texto adjacente.
-* Tabelas e gráficos: geralmente representam dados numéricos. Portanto, uma opção para fornecer uma alternativa em texto pode ser incluir um breve resumo das principais tendências mostradas no gráfico. Se necessário, forneça também uma descrição mais detalhada no texto usando o **Descrição** no campo **Avançado** guia de propriedades da imagem. Além disso, é possível fornecer os dados de origem em forma de tabela em outro lugar da página ou site.
+* Tabelas e gráficos: geralmente representam dados numéricos. Portanto, uma opção para fornecer uma alternativa em texto pode ser incluir um breve resumo das principais tendências mostradas no gráfico. Se necessário, também forneça uma descrição mais detalhada no texto usando o campo **Descrição** na guia de propriedades de imagem **Avançado**. Além disso, é possível fornecer os dados de origem em forma de tabela em outro lugar da página ou site.
 * Mapas, diagramas, fluxogramas: para gráficos que fornecem dados espaciais (por exemplo, para permitir a descrição das relações entre objetos ou um processo), verifique se a mensagem principal é fornecida em formato de texto e se essa informação sobre o texto está posicionada perto de cada ponto de dados associado. Para mapas, fornecer um equivalente de texto completo provavelmente não será prático, mas se o mapa for fornecido como uma maneira de ajudar as pessoas a encontrar o caminho para um determinado local, o texto alternativo da imagem do mapa poderá indicar brevemente a informação *Mapa de X* e, em seguida, fornecer instruções para acessar esse local no texto de outro lugar da página ou por meio do campo **Descrição** na guia **Avançado** do componente **Imagem**.
-* CAPTCHAs: Um CAPTCHA é um *Teste de Turing público completamente automatizado para diferenciação entre computadores e humanos*. É uma verificação de segurança usada em páginas da Web para distinguir os humanos de softwares mal-intencionados, mas que pode causar barreiras de acessibilidade. São imagens que exigem que os usuários descrevam o que eles veem para passar em um teste de segurança. Fornecer uma alternativa em texto para a imagem não é possível. Em vez disso, considere usar soluções não gráficas alternativas. O W3C fornece algumas sugestões, como:
+* CAPTCHAs: Um CAPTCHA é um *teste de Turing público completamente automatizado para diferenciação entre computadores e humanos*. É uma verificação de segurança usada em páginas da Web para distinguir os humanos de softwares mal-intencionados, mas que pode causar barreiras de acessibilidade. São imagens que exigem que os usuários descrevam o que eles veem para passar em um teste de segurança. Fornecer uma alternativa em texto para a imagem não é possível. Em vez disso, considere usar soluções não gráficas alternativas. O W3C fornece algumas sugestões, como:
    * Enigmas de lógica
    * O uso de som em vez de imagens
    * Contas e filtros de spam de uso limitado.
@@ -191,7 +191,7 @@ As legendas podem ser:
 
 Use legendas ocultas sempre que possível, pois elas oferecem ao usuário a opção de visualizar legendas. 
 
-Para as legendas ocultas, crie e forneça um arquivo de legenda sincronizada em um formato apropriado (como [SMIL](https://www.w3.org/AudioVideo/)) junto com o arquivo de vídeo (os detalhes sobre como fazer isso estão fora do escopo deste guia, mas fornecemos links para alguns tutoriais em [Mais informações - Legendas (pré-gravadas) (1.2.2)](#more-information-captions-prerecorded)). Certifique-se de fornecer uma nota ou ativar o recurso de legenda no player de vídeo para informar aos usuários que legendas estão disponíveis para o vídeo.
+Para as legendas ocultas, crie e forneça um arquivo de legenda sincronizada em um formato apropriado (como [SMIL](https://www.w3.org/AudioVideo/)), junto com o arquivo de vídeo (os detalhes sobre como proceder estão fora do escopo desse guia, mas fornecemos links para alguns tutoriais em [Mais informações - Legendas (pré-gravadas) (1.2.2)](#more-information-captions-prerecorded)). Certifique-se de fornecer uma nota ou ativar o recurso de legenda no player de vídeo para informar aos usuários que legendas estão disponíveis para o vídeo.
 
 Se você precisar usar legendas abertas, incorpore o texto à faixa de vídeo. Isso pode ser feito usando aplicativos de edição de vídeo que permitem a sobreposição de títulos no vídeo.
 
@@ -222,7 +222,7 @@ Há duas abordagens que podem ser adotadas para atender a esse critério de suce
 1. Incluir uma descrição de áudio adicional para o conteúdo de vídeo. Isso pode ser feito por uma de três maneiras:
    * Durante as pausas na caixa de diálogo existente, forneça informações sobre as alterações na cena que não são apresentadas como parte da faixa de áudio existente;
    * Forneça uma faixa de áudio nova, adicional e opcional que contenha a trilha sonora original, mas incluindo também informações de áudio extras sobre as mudanças de cena.
-      * Os usuários podem alternar entre a faixa de áudio existente (que *não* contém uma descrição de áudio) e a nova faixa de áudio (que *faz* contém uma descrição de áudio).
+      * Os usuários podem alternar entre a faixa de áudio existente (que *não* contém uma descrição de áudio) e a nova faixa de áudio (que *contém* uma descrição de áudio).
       * Isso evita a interrupção para usuários que não precisam de uma descrição adicional.
    * Crie uma segunda versão do conteúdo de vídeo para permitir descrições de áudio mais extensas. Isso reduz as dificuldades associadas ao fornecimento de descrições de áudio detalhadas dentro das lacunas do diálogo existente, pausando temporariamente o áudio e o vídeo em pontos apropriados. Como resultado, uma descrição de áudio muito mais longa pode ser fornecida, antes de retornar à ação. Como no exemplo anterior, a melhor forma de fornecer essa opção é disponibilizar uma faixa de áudio extra opcional, para evitar a interrupção de usuários que não precisam de uma descrição adicional.
 1. Forneça uma transcrição de texto que seja um equivalente de texto adequado dos elementos visuais e de áudio do vídeo ou da animação. Isso deve incluir, quando apropriado, uma indicação de quem está falando, uma descrição do cenário, quaisquer eventos ou informações apresentados visualmente, além das expressões vocais. Dependendo do tamanho, você pode colocar a transcrição na mesma página do vídeo ou animação ou em uma página separada; caso escolha a última opção, forneça um link para a transcrição ao lado do vídeo ou animação.
@@ -284,7 +284,7 @@ Siga as orientações fornecidas para a [Descrição de áudio ou alternativa de
 
 ### Adaptável (1.3)       {#adaptable}
 
-[Diretriz 1.3 Adaptável: crie conteúdo que pode ser apresentado de diferentes maneiras (por exemplo, layout mais simples) sem perder informações ou estrutura.](https://www.w3.org/TR/WCAG/#adaptable)
+[Diretriz 1.3 Adaptável: crie conteúdo que possa ser apresentado de maneiras diferentes (por exemplo, layout mais simples) sem perder informações ou estrutura.](https://www.w3.org/TR/WCAG/#adaptable)
 
 Esta diretriz abrange os requisitos necessários para fornecer suporte a pessoas que:
 
@@ -306,7 +306,7 @@ Esse critério de sucesso existe para garantir que a informação estrutural sej
 
 #### Como cumprir - Informações e Relações (1.3.1)       {#how-to-meet-info-and-relationships}
 
-O AEM facilita a criação de um conteúdo da web semanticamente significativo usando os elementos HTML apropriados. Abra o conteúdo da página no RTE (um componente de Texto) e use o **Paraformat** menu (símbolo de parágrafo) para especificar o elemento estrutural adequado (por exemplo, parágrafo e cabeçalho).
+O AEM facilita a criação de um conteúdo da web semanticamente significativo usando os elementos HTML apropriados. Abra o conteúdo da página no RTE (um componente de Texto) e use o menu **Formatar parágrafo** (símbolo de parágrafo) para especificar o elemento estrutural apropriado (por exemplo, parágrafo e cabeçalho).
 
 É possível verificar se as suas páginas da web têm a estrutura adequada usando os seguintes elementos, quando aplicável:
 
@@ -334,7 +334,7 @@ O AEM facilita a criação de um conteúdo da web semanticamente significativo u
 
   >[!NOTE]
   >
-  >Por padrão, esses elementos e atributos não estão diretamente disponíveis, embora o administrador do sistema possa adicionar o suporte para esses valores no **Propriedades da tabela** (consulte [Adição de suporte para elementos e atributos de HTML adicionais](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes).
+  >Por padrão, esses elementos e atributos não estão diretamente disponíveis, embora o administrador do sistema possa adicionar suporte a esses valores na caixa de diálogo **Propriedades da tabela** (consulte [Adicionando suporte a elementos e atributos de HTML adicionais](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes).
 
   Para abrir a caixa de diálogo **Tabela** onde é possível selecionar a guia **Propriedades da tabela**:
 
@@ -345,7 +345,7 @@ O AEM facilita a criação de um conteúdo da web semanticamente significativo u
 
 * **Ênfase**: Use o elemento `<strong>` ou `<em>` para indicar ênfase. Não use os cabeçalhos para destacar o texto dentro dos parágrafos.
    * Destaque o texto que deseja enfatizar;
-   * Clique em **B** ícone (para `<strong>`) ou o **I** ícone (para `<em>`) mostrada na **Propriedades** (verifique se HTML está selecionado).
+   * Clique no ícone **B** (para `<strong>`) ou no ícone **I** (para `<em>`) exibido no painel **Propriedades** (verifique se o HTML está selecionado).
 
      >[!NOTE]
      >
@@ -356,7 +356,7 @@ O AEM facilita a criação de um conteúdo da web semanticamente significativo u
      >
      >Eles são efetivamente os mesmos, mas `<strong>` e `<em>` são preferíveis, pois são html semanticamente corretos. Sua equipe de desenvolvimento pode configurar o RTE para usar `<strong>` e `<em>` (em vez de `<b>` e `<i>`), ao desenvolver a instância do projeto.
 
-* **Tabelas de dados complexos**: às vezes, quando há tabelas complexas com dois ou mais níveis de cabeçalhos, as Propriedades básicas da tabela podem não ser suficientes para fornecer todas as informações estruturais necessárias. Para esses tipos de tabelas complexas, relações diretas devem ser criadas entre os cabeçalhos e suas células relacionadas usando o **cabeçalho** e **id** atributos.
+* **Tabelas de Dados Complexos**: às vezes, quando há tabelas complexas com dois ou mais níveis de cabeçalhos, as Propriedades da Tabela básicas podem não ser suficientes para fornecer todas as informações estruturais necessárias. Para esses tipos de tabelas complexas, relações diretas devem ser criadas entre os cabeçalhos e suas células relacionadas usando os atributos **cabeçalho** e **id**.
 
   >[!NOTE]
   >
@@ -441,7 +441,7 @@ Da mesma forma, as informações que exigem a distinção entre sons diferentes 
 
 Certifique-se de que todas as informações que dependem das características visuais do conteúdo da página também sejam apresentadas em um formato alternativo.
 
-* Não se baseie na posição visual para fornecer informações. Por exemplo, se você quiser direcionar os usuários a um menu no lado direito da página para acessar mais informações, não consulte *o menu à direita*; em vez disso, nomeie o menu (por exemplo, por meio de um cabeçalho) e consulte esse nome no texto.
+* Não se baseie na posição visual para fornecer informações. Por exemplo, se você quiser que os usuários acessem um menu no lado direito da página para obter mais informações, não consulte *o menu à direita*; em vez disso, nomeie o menu (por exemplo, por meio de um cabeçalho) e faça referência a esse nome no texto.
 * Não se baseie no estilo do texto (por exemplo, negrito ou itálico) como a única maneira de transmitir as informações.
 
 >[!NOTE]
@@ -475,7 +475,7 @@ Por exemplo, alguém com deficiência de visão de cor vermelho-verde não será
 
 Além disso, a cor pode não ser observada por indivíduos que usam navegadores somente de texto, dispositivos com visor monocromático ou que utilizam uma impressão em preto e branco da página.
 
-Uma outra consideração é a *selecionado* estado de um elemento de interface (por exemplo, guias, botões de alternância, entre outros), que deve ser transmitido de alguma forma que não seja apenas com cor e além de apenas uma apresentação visual. Para esses elementos, o uso adicional de padrões, formas e informações programáticas é útil ao criar uma experiência do usuário totalmente inclusiva que não depende de um sentido específico.
+Uma outra consideração é o estado *seleted* para um elemento de interface (por exemplo, guias, botões de alternância, entre outros), que deve ser transmitido de alguma forma que não seja apenas com cor e além de apenas uma apresentação visual. Para esses elementos, o uso adicional de padrões, formas e informações programáticas é útil ao criar uma experiência do usuário totalmente inclusiva que não depende de um sentido específico.
 
 #### Como cumprir - Utilização de cor (1.4.1)       {#how-to-meet-use-of-color}
 
@@ -521,7 +521,7 @@ Siga as orientações em [Como cumprir o Critério de sucesso 1.4.2](https://www
 * Nível AA
 * Contraste (mínimo): a apresentação visual de texto e imagens de texto tem uma relação de contraste de pelo menos 4.5:1, exceto nos seguintes casos:
    * Texto grande: os textos e imagens de texto em grande escala têm uma relação de contraste de pelo menos 3:1.
-   * Incidental: texto ou imagens de texto que fazem parte de um componente de interface de usuário inativo, [decoração pura](https://www.w3.org/TR/WCAG/#dfn-pure-decoration), não visíveis para ninguém ou que fazem parte de uma imagem que contém outro conteúdo visual significativo, não têm requisito de contraste.
+   * Incidental: o texto ou as imagens de texto que fazem parte de um componente de interface de usuário inativo, [decoração pura](https://www.w3.org/TR/WCAG/#dfn-pure-decoration), não está visível para ninguém ou que fazem parte de uma imagem que contém outro conteúdo visual significativo, não têm requisito de contraste.
    * Logotipos: o texto que faz parte de um logotipo ou marca comercial não tem requisito de contraste.
 
   >[!NOTE]
@@ -557,9 +557,9 @@ Verifique se o texto está suficientemente contrastado com o plano de fundo. As 
 >
 >Os seguintes sites podem ajudar com conversões para outras unidades:
 >
->* [Calculadora De Px Para Em - Omni](https://www.omnicalculator.com/conversion/px-to-em)
->* Consulte &quot;Conversão de tamanho de fonte: pixel-point-em-rem-percent&quot; em `https://websemantics.uk/tools/font-size-conversion-pixel-point-em-rem-percent/`
->* Consulte PMtoEM.com: Conversão de PX em EM simplificada em `http://pxtoem.com/`
+>* Calculadora De [Px Para Em - Omni](https://www.omnicalculator.com/conversion/px-to-em)
+>* Consulte &quot;Conversão do tamanho da fonte: pixel-point-em-rem-percent&quot; em `https://websemantics.uk/tools/font-size-conversion-pixel-point-em-rem-percent/`
+>* Consulte PMtoEM.com: Conversão de PX para EM simplificada em `http://pxtoem.com/`
 
 Para verificar as relações de contraste, use uma ferramenta de contraste de cores, como o [Color Contrast Analyzer do Paciello Group](https://www.paciellogroup.com/resources/contrast-analyser.html) ou o [Color Contrast Checker do WebAIM](https://webaim.org/resources/contrastchecker/). Essas ferramentas permitem verificar pares de cores e relatar problemas de contraste.
 
@@ -584,7 +584,7 @@ O propósito deste Critério de sucesso é garantir que o texto renderizado visu
 
 #### Como cumprir - Redimensionar texto (1.4.4) {#how-to-meet-resize-text}
 
-Para além de seguir as orientações [Como cumprir o Critério de sucesso 1.4.4](https://www.w3.org/WAI/WCAG21/quickref/#resize-text) Você pode incentivar os autores de conteúdo a usar larguras e alturas fluidas e flexíveis em seus designs de página e tamanhos de fonte (por exemplo, web design responsivo) para permitir que os leitores possam redimensionar o texto.
+Além de seguir as diretrizes em [Como cumprir o Critério de sucesso 1.4.4](https://www.w3.org/WAI/WCAG21/quickref/#resize-text), você pode incentivar os autores de conteúdo a usar larguras fluidas e flexíveis, além de alturas em seus designs de página e tamanhos de fonte (por exemplo, web design responsivo) para permitir que os leitores possam redimensionar o texto.
 
 #### Mais informações - Redimensionar texto (1.4.4) {#more-information-resize-text}
 
@@ -609,7 +609,7 @@ Imagens de texto são usadas com frequência quando um determinado estilo de tex
 
 #### Como cumprir - Imagens de texto (1.4.5)       {#how-to-meet-images-of-text}
 
-Se as imagens de texto tiverem que ser utilizadas, use o CSS para substituir as imagens de texto pelo texto equivalente em HTML, para que o texto seja disponibilizado de forma personalizada. Para ver um exemplo, consulte [C30: utilizar CSS para substituir o texto por imagens de texto e fornecer controles de interface do usuário para alternar](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/C30).
+Se as imagens de texto tiverem que ser utilizadas, use o CSS para substituir as imagens de texto pelo texto equivalente em HTML, para que o texto seja disponibilizado de forma personalizada. Para obter um exemplo, consulte [C30: usando CSS para substituir texto por imagens de texto e fornecendo controles de interface do usuário para alternar](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/C30).
 
 #### Mais informações - Imagens de texto (1.4.5)       {#more-information-images-of-text}
 
@@ -699,10 +699,12 @@ Siga as orientações em [Como cumprir o Critério de sucesso 2.2.1](https://www
    * Movimentação, intermitência ou rolagem: para qualquer informação de movimentação, intermitência ou rolagem que
       * a) Inicia automaticamente;
       * b) Tenha uma duração superior a cinco segundos e
-      * C) For apresentado em paralelo com outros conteúdos, existir um mecanismo para o utilizador os pausar, parar ou ocultar, a menos que o movimento, a intermitência ou a deslocação façam parte de uma atividade em que são essenciais;
+      * C) É apresentado em paralelo com outros conteúdos;
+existe um mecanismo para o utilizador o pausar, parar ou ocultar, a menos que o movimento, a intermitência ou a deslocação façam parte de uma atividade em que é essencial;
    * Atualização automática: para qualquer informação de atualização automática que
       * a) Inicia automaticamente; e
-      * (b) é apresentado em paralelo com outros conteúdos, existe um mecanismo para o usuário pausar, parar ou ocultar ou controlar a frequência da atualização, a menos que a atualização automática faça parte de uma atividade em que é essencial.
+      * b) É apresentado em paralelo com outros conteúdos
+há um mecanismo para o usuário pausar, parar ou ocultar a atualização ou controlar a frequência da atualização, a menos que a atualização automática faça parte de uma atividade em que é essencial.
 
 Os pontos para observar são:
 
@@ -753,7 +755,7 @@ Em certos casos, os flashes podem causar convulsões fotossensíveis. Este é um
 Adote algumas medidas para se certificar de que as seguintes técnicas são aplicadas:
 
 * Garantir que nenhum componente do conteúdo tenha mais de três flashes no período de um segundo;
-* Se a condição acima não puder ser cumprida, exibir o conteúdo em modo flash em uma *área pequena de segurança* em pixels na tela. Essa área é calculada usando uma fórmula complexa, coberta por [G176: Mantendo a área piscante suficientemente pequena](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/G176), portanto, essa técnica só deve ser seguida se o conteúdo em flash for *necessário.
+* Se a condição acima não puder ser cumprida, exibir o conteúdo em modo flash em uma *área pequena de segurança* em pixels na tela. Essa área é calculada usando uma fórmula complexa, abordada em [G176: manter a área de flashes suficientemente pequena](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/G176), de modo que essa técnica só deve ser seguida se o conteúdo de flashes for *necessário.
 
 #### Mais informações - Três flashes ou Abaixo do limite (2.3.1) {#more-information-three-flashes-or-below-threshold}
 
@@ -846,7 +848,7 @@ Acima de tudo, verifique se a finalidade de um link está claramente descrita no
    * Texto: aulas à noite para o segundo trimestre de 2010 - mais informações.
    * Motivo: ajustando ligeiramente o texto e a posição do elemento de link, o texto do link pode ser melhorado:
 
-Os links devem ser redigidos de forma consistente ao longo das páginas, especialmente em barras de navegação. Por exemplo, se um link para uma página específica for nomeado como **Publicações** em uma página, use esse texto em outras páginas para garantir a consistência.
+Os links devem ser redigidos de forma consistente ao longo das páginas, especialmente em barras de navegação. Por exemplo, se um link para uma página específica for chamado de **Publicações** em uma página, use esse texto nas outras páginas para garantir a consistência.
 
 No momento da escrita, há algumas questões relacionadas ao uso de atributos de título para garantir que links semelhantes apresentados em uma página forneçam informações exclusivas sobre o destino (por exemplo, “leia mais” geralmente se refere a vários destinos diferentes):
 
@@ -856,7 +858,7 @@ No momento da escrita, há algumas questões relacionadas ao uso de atributos de
 
 Portanto, embora o atributo de título possa ser usado para fornecer contexto adicional a um link, esteja ciente de suas limitações e não o use como alternativa para um texto de link apropriado.
 
-Quando o link for composto de uma imagem, verifique se o texto alternativo para a imagem descreve o destino do link. Por exemplo, se uma imagem de uma estante de livros for definida como um link para as publicações de uma pessoa, o texto alternativo deverá informar **Publicações de John Smith** e não **Estante**.
+Quando o link for composto de uma imagem, verifique se o texto alternativo para a imagem descreve o destino do link. Por exemplo, se uma imagem de uma estante de livros for definida como um link para as publicações de uma pessoa, o texto alternativo deverá informar **Publicações de John Smith** e não **Estante de livros**.
 
 De maneira alternativa, se a âncora do link contiver um texto que descreva a finalidade do link, além do elemento de imagem (e, portanto, o texto apareça junto com a imagem), use um atributo alternativo vazio para a imagem:
 
@@ -874,14 +876,14 @@ John Smith's publications
 Embora seja aconselhável fornecer um texto de link que identifique a finalidade do link sem a necessidade de contexto adicional, reconhece-se que isto nem sempre é possível. Link contextuais gratuitos podem ser usados nos casos a seguir, exemplos de HTML que podem ser encontrados em [Como cumprir o Critério de sucesso 2.4.4](https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context).
 
 * O texto do link faz parte de uma lista de links estritamente relacionados e quando o item de lista que delimita o link fornece contexto suficiente.
-* A finalidade de um link pode ser claramente identificada na variável *precedente* (não o seguinte) texto do parágrafo.
+* A finalidade de um link pode ser claramente identificada no texto do parágrafo *precedente* (não o seguinte).
 * O link está contido em uma tabela de dados e, portanto, a finalidade pode ser claramente identificada nos cabeçalhos associados.
 * Uma lista de links está contida em um conjunto de cabeçalhos e o próprio cabeçalho fornece o contexto adequado.
 * Há uma lista de links dentro de um link aninhado e o item da lista pai acima do link aninhado fornece o contexto adequado.
 
 Algumas vezes, quando existem vários links em uma página (cada um dos quais fornecendo a direção de um link em detalhes complexos, mas necessários), pode ser apropriado fornecer uma versão alternativa da página da web que mostre exatamente o mesmo conteúdo, mas sem um texto de link tão detalhado.
 
-Como alternativa, use scripts para que uma quantidade mínima de texto seja fornecida no próprio link. Ao ativar um controle apropriado posicionado na parte superior da página, o texto do link é *expandido* em mais detalhes. Uma abordagem semelhante é usar o CSS para *ocultar* o link completo de usuários deficientes visuais, mas ainda o envia por completo para os usuários de leitores de tela. Isso está fora do escopo deste documento, mas mais informações sobre como isso pode ser feito podem ser encontradas no [Mais informações - Finalidade do link (no contexto) (2.4.4)](#more-information-link-purpose-in-context) seção.
+Como alternativa, use scripts para que uma quantidade mínima de texto seja fornecida no próprio link. Ao ativar um controle apropriado posicionado na parte superior da página, o texto do link é *expandido* para fornecer mais detalhes. Uma abordagem semelhante é usar o CSS para *ocultar* o link completo de usuários deficientes visuais, mas ainda exibi-lo na íntegra para os usuários de leitores de tela. Isso está fora do escopo deste documento, mas mais informações sobre como fazer isso podem ser encontradas na seção [Mais Informações - Finalidade do Link (Em Contexto) (2.4.4)](#more-information-link-purpose-in-context).
 
 #### Mais informações - Finalidade do link (no contexto) (2.4.4) {#more-information-link-purpose-in-context}
 
@@ -1033,7 +1035,7 @@ Da mesma forma, o navegador poderá processar uma palavra incomum ou frase corre
 
 >[!NOTE]
 >
->Não é necessário seguir este critério de sucesso ao incluir nomes ou cidades em diferentes idiomas. Ou, ao usar palavras de empréstimo ou frases que se tornaram comuns no idioma padrão, como *schadenfreude* em inglês.
+>Não é necessário seguir este critério de sucesso ao incluir nomes ou cidades em diferentes idiomas. Ou ao usar palavras emprestadas ou frases que se tornaram comuns no idioma padrão, como *schadenfreude* em inglês.
 
 Para adicionar o elemento span, com um idioma apropriado, você pode editar manualmente a sua marcação HTML no modo de edição de fonte da RTE para ser exibido como acima. Como alternativa, o atributo `lang` pode ser incluído na RTE pelo administrador do sistema (consulte [Adicionar suporte para elementos e atributos HTML adicionais](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
 
@@ -1193,13 +1195,13 @@ Para alguns componentes de formulário, também é possível ocultar visualmente
 
 ###### Botões de imagem {#image-buttons}
 
-Quando são utilizados botões de imagem (por exemplo, o **Botão de imagem** componente do projeto WKND), a **Título** no campo **Título e texto** A guia da caixa de diálogo de edição fornece o texto alternativo para a imagem, em vez do rótulo. Assim, no exemplo abaixo, a imagem com o texto `Submit`tem o texto alternativo de `Submit`, adicionado usando o campo **Título** na janela de edição.
+Quando são usados botões de imagem (por exemplo, o componente **Botão de Imagem** do projeto WKND), o campo **Título** da guia **Título e Texto** da caixa de diálogo de edição fornece o texto alternativo para a imagem, em vez do rótulo. Assim, no exemplo abaixo, a imagem com o texto `Submit`tem o texto alternativo de `Submit`, adicionado usando o campo **Título** na janela de edição.
 
 ###### Grupos de campos de formulário {#groups-of-form-fields}
 
 No projeto WKND, quando houver um grupo de controles relacionados, como um **Grupo de opções**, talvez seja necessário fornecer um título para o grupo, bem como controles individuais. Ao adicionar um conjunto de botões de opção no AEM, o campo **Título** fornece esse título de grupo, enquanto títulos individuais são especificados conforme os botões de opção (**Itens**) são criados.
 
-Contudo, não existe uma associação programática entre o título do grupo e os próprios botões de opção. Os editores de modelo precisariam vincular o título ao conteúdo `fieldset` e `legend` para criar essa associação, e isso só pode ser feito ao editar o código fonte da página. Alternativamente, um administrador do sistema pode adicionar suporte a esses elementos para que eles apareçam na janela **Propriedades do Campo** (consulte [Adicionar suporte para elementos e atributos HTML adicionais](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
+Contudo, não existe uma associação programática entre o título do grupo e os próprios botões de opção. Os editores de modelo devem envolver o título nas marcas `fieldset` e `legend` necessárias para criar esta associação e isso só pode ser feito através da edição do código fonte da página. Alternativamente, um administrador do sistema pode adicionar suporte a esses elementos para que eles apareçam na janela **Propriedades do Campo** (consulte [Adicionar suporte para elementos e atributos HTML adicionais](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
 
 ###### Considerações adicionais para formulários {#additional-considerations-for-forms}
 
@@ -1214,7 +1216,7 @@ As etiquetas são posicionadas imediatamente à direita do campo.
 * Todos os outros componentes do formulário (por exemplo, caixas de texto, caixas de combinação):
 os rótulos são posicionados imediatamente acima ou à esquerda do campo.
 
-Em formas simples com funcionalidade limitada, rotular adequadamente uma `Submit` pode agir como um rótulo para o campo adjacente (por exemplo, `Search`). Isso é útil em situações em que encontrar espaço para o texto da etiqueta pode ser difícil.
+Em formulários simples com funcionalidade limitada, a identificação adequada de um botão `Submit` pode servir como etiqueta para o campo adjacente (por exemplo, `Search`). Isso é útil em situações em que encontrar espaço para o texto da etiqueta pode ser difícil.
 
 #### Mais Informações - Etiquetas ou Instruções (3.3.2)       {#more-information-labels-or-instructions}
 

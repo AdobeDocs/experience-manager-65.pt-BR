@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Preencher previamente campos de formulário adaptável{#prefill-adaptive-form-fields}
 
-<span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) para [criação de um novo Forms adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
+O <span class="preview"> Adobe recomenda o uso de [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adicionar o Forms Adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
@@ -31,15 +31,15 @@ ht-degree: 0%
 
 ## Estrutura dos dados de preenchimento prévio {#the-prefill-structure}
 
-Um formulário adaptável pode ter uma combinação de campos vinculados e não vinculados. Campos vinculados são campos que são arrastados da guia Localizador de conteúdo e contêm campos não vazios `bindRef` valor da propriedade na caixa de diálogo de edição do campo. Os campos não vinculados são arrastados diretamente do navegador de componentes do Sidekick e têm um campo vazio `bindRef` valor.
+Um formulário adaptável pode ter uma combinação de campos vinculados e não vinculados. Os campos associados são campos que são arrastados da guia Localizador de conteúdo e contêm o valor da propriedade `bindRef` não vazio na caixa de diálogo de edição de campo. Os campos não vinculados são arrastados diretamente do navegador de componentes do Sidekick e têm um valor `bindRef` vazio.
 
-É possível preencher previamente os campos vinculados e não vinculados de um formulário adaptável. Os dados de pré-preenchimento contêm as seções afBoundData e afUnBoundData para preencher previamente os campos ligados e não vinculados de um formulário adaptável. A variável `afBoundData` contém os dados de preenchimento prévio para campos e painéis vinculados. Esses dados devem ser compatíveis com o schema do modelo de formulário associado:
+É possível preencher previamente os campos vinculados e não vinculados de um formulário adaptável. Os dados de pré-preenchimento contêm as seções afBoundData e afUnBoundData para preencher previamente os campos ligados e não vinculados de um formulário adaptável. A seção `afBoundData` contém os dados de preenchimento prévio para campos e painéis associados. Esses dados devem ser compatíveis com o schema do modelo de formulário associado:
 
-* Para formulários adaptáveis usando o [Modelo de formulário XFA](../../forms/using/prepopulate-adaptive-form-fields.md), use o XML de preenchimento prévio compatível com o esquema de dados do modelo XFA.
-* Para formulários adaptáveis usando [Esquema XML](#xml-schema-af), use o XML de preenchimento prévio compatível com a estrutura do esquema XML.
-* Para formulários adaptáveis usando [Esquema JSON](#json-schema-based-adaptive-forms), use o JSON de preenchimento prévio compatível com o esquema JSON.
+* Para formulários adaptáveis usando o [modelo de formulário XFA](../../forms/using/prepopulate-adaptive-form-fields.md), use o XML de preenchimento prévio compatível com o esquema de dados do modelo XFA.
+* Para formulários adaptáveis usando o [esquema XML](#xml-schema-af), use o XML de preenchimento prévio compatível com a estrutura do esquema XML.
+* Para formulários adaptáveis que usam o [esquema JSON](#json-schema-based-adaptive-forms), use o JSON de preenchimento prévio compatível com o esquema JSON.
 * Para formulários adaptáveis que usam o esquema do FDM, use o preenchimento prévio de JSON compatível com o esquema do FDM.
-* Para formulários adaptáveis com [nenhum modelo de formulário](#adaptive-form-with-no-form-model), não há dados vinculados. Cada campo é um campo não vinculado e é pré-preenchido usando o XML não vinculado.
+* Para formulários adaptáveis com [nenhum modelo de formulário](#adaptive-form-with-no-form-model), não há dados associados. Cada campo é um campo não vinculado e é pré-preenchido usando o XML não vinculado.
 
 ### Exemplo de estrutura XML de preenchimento prévio {#sample-prefill-xml-structure}
 
@@ -87,9 +87,9 @@ Para campos vinculados com o mesmo vínculo ou campos não vinculados com o mesm
 
 A estrutura do XML pré-preenchido e do XML enviado para formulários adaptáveis baseados em XFA é a seguinte:
 
-* **Preencher previamente a estrutura XML**: o XML de preenchimento prévio para o formulário adaptável baseado em XFA deve ser compatível com o esquema de dados do modelo de formulário XFA. Para preencher previamente campos não vinculados, envolva a estrutura XML de preenchimento `/afData/afBoundData` tag.
+* **Estrutura XML de Preenchimento Prévio**: o XML de preenchimento prévio para o formulário adaptável baseado em XFA deve ser compatível com o esquema de dados do modelo de formulário XFA. Para preencher previamente campos não associados, envolva a estrutura XML de preenchimento prévio na marca `/afData/afBoundData`.
 
-* **Estrutura XML enviada**: quando nenhum XML de preenchimento prévio é usado, o XML enviado contém dados para campos ligados e não ligados em `afData` tag wrapper. Se um XML de preenchimento prévio for usado, o XML enviado terá a mesma estrutura que o XML de preenchimento prévio. Se o XML de preenchimento prévio começar com a variável `afData` raiz, o XML de saída também terá o mesmo formato. Se o XML de preenchimento prévio não tiver `afData/afBoundData`invólucro e, em vez disso, inicia diretamente da tag raiz do esquema como `employeeData`, o XML enviado também começa com o `employeeData` tag.
+* **Estrutura XML Enviada**: quando nenhum XML de preenchimento prévio é usado, o XML enviado contém dados para campos associados e não associados na marca wrapper `afData`. Se um XML de preenchimento prévio for usado, o XML enviado terá a mesma estrutura que o XML de preenchimento prévio. Se o XML de preenchimento prévio começar com a marca raiz `afData`, o XML de saída também terá o mesmo formato. Se o XML de preenchimento prévio não tiver `afData/afBoundData`wrapper e, em vez disso, iniciar diretamente da marca raiz do esquema como `employeeData`, o XML enviado também iniciará com a marca `employeeData`.
 
 Prefill-Submit-Data-ContentPackage.zip
 
@@ -100,8 +100,8 @@ Amostra contendo dados de preenchimento prévio e dados enviados
 
 A estrutura do XML pré-preenchido e do XML enviado para formulários adaptáveis com base no esquema XML é a seguinte:
 
-* **Preencher previamente a estrutura XML**: o XML de preenchimento prévio deve ser compatível com o Esquema XML associado. Para preencher previamente os campos não vinculados, coloque a estrutura XML de preenchimento previamente na tag /afData/afBoundData.
-* **Estrutura XML enviada**: se nenhum XML de preenchimento prévio for usado, o XML enviado conterá dados para campos ligados e não ligados em `afData` tag wrapper. Se o XML de preenchimento prévio for usado, o XML enviado terá a mesma estrutura do XML de preenchimento prévio. Se o XML de preenchimento prévio começar com a variável `afData` raiz, o XML de saída terá o mesmo formato. Se o XML de preenchimento prévio não tiver `afData/afBoundData` invólucro e, em vez disso, inicie diretamente da tag raiz do esquema como `employeeData`, o XML enviado também começa com o `employeeData` tag.
+* **Estrutura XML de preenchimento prévio**: o XML de preenchimento prévio deve ser compatível com o Esquema XML associado. Para preencher previamente os campos não vinculados, coloque a estrutura XML de preenchimento previamente na tag /afData/afBoundData.
+* **Estrutura XML enviada**: se nenhum XML de preenchimento prévio for usado, o XML enviado conterá dados para campos associados e não associados na marca wrapper `afData`. Se o XML de preenchimento prévio for usado, o XML enviado terá a mesma estrutura do XML de preenchimento prévio. Se o XML de preenchimento prévio começar com a marca raiz `afData`, o XML de saída terá o mesmo formato. Se o XML de preenchimento prévio não tiver o invólucro `afData/afBoundData` e, em vez disso, iniciar diretamente da marca raiz do esquema como `employeeData`, o XML enviado também iniciará com a marca `employeeData`.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?> 
@@ -119,7 +119,7 @@ A estrutura do XML pré-preenchido e do XML enviado para formulários adaptávei
 </xs:schema>
 ```
 
-Para campos cujo modelo é o esquema XML, os dados são pré-preenchidos na variável `afBoundData` conforme mostrado no exemplo XML abaixo. Ele pode ser usado para preencher previamente um formulário adaptável com um ou mais campos de texto não vinculados.
+Para campos cujo modelo é um esquema XML, os dados são pré-preenchidos na marca `afBoundData`, como mostrado na amostra XML abaixo. Ele pode ser usado para preencher previamente um formulário adaptável com um ou mais campos de texto não vinculados.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?><afData>
@@ -138,7 +138,7 @@ Para campos cujo modelo é o esquema XML, os dados são pré-preenchidos na vari
 
 >[!NOTE]
 >
->É recomendável não usar campos não vinculados em painéis vinculados (painéis com campos não vazios) `bindRef` que foi criado ao arrastar componentes da guia Sidekick ou Fontes de dados). Isso pode causar perda de dados desses campos não vinculados. Além disso, é recomendável que os nomes dos campos sejam exclusivos em todo o formulário, especialmente para campos não vinculados.
+>É recomendável não usar campos não vinculados em painéis vinculados (painéis com o `bindRef` não vazio que foi criado ao arrastar componentes da guia Sidekick ou Fontes de dados). Isso pode causar perda de dados desses campos não vinculados. Além disso, é recomendável que os nomes dos campos sejam exclusivos em todo o formulário, especialmente para campos não vinculados.
 
 #### Um exemplo sem afData e afBoundData wrapper {#an-example-without-afdata-and-afbounddata-wrapper}
 
@@ -153,8 +153,8 @@ Para campos cujo modelo é o esquema XML, os dados são pré-preenchidos na vari
 
 Para formulários adaptáveis com base no esquema JSON, a estrutura do JSON de preenchimento prévio e do JSON enviado é descrita abaixo. Para obter mais informações, consulte [Criação de formulários adaptáveis usando o esquema JSON](../../forms/using/adaptive-form-json-schema-form-model.md).
 
-* **Preencher previamente a estrutura JSON**: o JSON de pré-preenchimento deve ser compatível com o Esquema JSON associado. Opcionalmente, ele pode ser encapsulado no objeto /afData/afBoundData se você também quiser preencher previamente os campos não vinculados.
-* **Estrutura JSON enviada**: se nenhum JSON de preenchimento prévio for usado, o JSON enviado conterá dados para campos ligados e não vinculados na tag afData wrapper. Se o JSON de preenchimento prévio for usado, o JSON enviado terá a mesma estrutura que o JSON de preenchimento prévio. Se o JSON de preenchimento prévio começar com o objeto raiz afData, o JSON de saída terá o mesmo formato. Se o JSON de preenchimento prévio não tiver o invólucro afData/afBoundData e, em vez disso, iniciar diretamente a partir do objeto raiz do esquema, como o usuário, o JSON enviado também começará com o objeto do usuário.
+* **Preencher previamente a estrutura JSON**: o JSON de preenchimento prévio deve ser compatível com o Esquema JSON associado. Opcionalmente, ele pode ser encapsulado no objeto /afData/afBoundData se você também quiser preencher previamente os campos não vinculados.
+* **Estrutura JSON enviada**: se nenhum JSON de preenchimento prévio for usado, o JSON enviado conterá dados para campos ligados e não ligados na marca afData wrapper. Se o JSON de preenchimento prévio for usado, o JSON enviado terá a mesma estrutura que o JSON de preenchimento prévio. Se o JSON de preenchimento prévio começar com o objeto raiz afData, o JSON de saída terá o mesmo formato. Se o JSON de preenchimento prévio não tiver o invólucro afData/afBoundData e, em vez disso, iniciar diretamente a partir do objeto raiz do esquema, como o usuário, o JSON enviado também começará com o objeto do usuário.
 
 ```json
 {
@@ -173,7 +173,7 @@ Para formulários adaptáveis com base no esquema JSON, a estrutura do JSON de p
 }}}}}
 ```
 
-Para campos que usam o modelo de esquema JSON, os dados são pré-preenchidos no objeto afBoundData, como mostrado na amostra JSON abaixo. Ele pode ser usado para preencher previamente um formulário adaptável com um ou mais campos de texto não vinculados. Veja abaixo um exemplo de dados com `afData/afBoundData` invólucro:
+Para campos que usam o modelo de esquema JSON, os dados são pré-preenchidos no objeto afBoundData, como mostrado na amostra JSON abaixo. Ele pode ser usado para preencher previamente um formulário adaptável com um ou mais campos de texto não vinculados. Veja abaixo um exemplo de dados com o wrapper `afData/afBoundData`:
 
 ```json
 {
@@ -190,7 +190,7 @@ Para campos que usam o modelo de esquema JSON, os dados são pré-preenchidos no
 }}}}}}}
 ```
 
-Veja abaixo um exemplo sem `afData/afBoundData` invólucro:
+Veja abaixo um exemplo sem o `afData/afBoundData` wrapper:
 
 ```json
 {
@@ -203,11 +203,11 @@ Veja abaixo um exemplo sem `afData/afBoundData` invólucro:
 
 >[!NOTE]
 >
->O uso de campos não vinculados em painéis vinculados (painéis com bindRef não vazios que foram criados ao arrastar componentes da guia Sidekick ou Fontes de dados) é **não** recomendada, pois pode causar perda de dados dos campos não vinculados. É recomendável ter nomes de campo exclusivos em todo o formulário, especialmente para campos não vinculados.
+>O uso de campos não vinculados em painéis vinculados (painéis com bindRef não vazios que foram criados ao arrastar componentes da guia Sidekick ou Fontes de dados) é **não** recomendado, pois pode causar perda de dados dos campos não vinculados. É recomendável ter nomes de campo exclusivos em todo o formulário, especialmente para campos não vinculados.
 
 ### Formulário adaptável sem modelo de formulário {#adaptive-form-with-no-form-model}
 
-Para formulários adaptáveis sem modelo de formulário, os dados de todos os campos estão sob o `<data>` tag de `<afUnboundData> tag`.
+Para formulários adaptáveis sem modelo de formulário, os dados de todos os campos estão sob a marca `<data>` de `<afUnboundData> tag`.
 
 Além disso, tome nota do seguinte:
 
@@ -240,13 +240,13 @@ Para ativar o serviço de preenchimento prévio, especifique a Configuração do
 >
 >A Configuração do serviço de preenchimento prévio é aplicável para formulários adaptáveis, formulários de HTML5 e conjuntos de formulários de HTML5.
 
-1. Abertura **[!UICONTROL Configuração do console da Web do Adobe Experience Manager]** usando o URL:\
+1. Abra a **[!UICONTROL Configuração do Console da Web do Adobe Experience Manager]** usando a URL:\
    https://&lt;server>:&lt;port>/system/console/configMgr
-1. Pesquisar e abrir **[!UICONTROL Configuração do serviço de preenchimento prévio padrão]**.
+1. Pesquise e abra **[!UICONTROL Configuração do Serviço de Preenchimento Prévio Padrão]**.
 
    ![Configuração de preenchimento prévio](assets/prefill_config_new.png)
 
-1. Insira o local dos dados ou um regex (expressão regular) para o **Locais dos arquivos de dados**. Exemplos de locais válidos de arquivos de dados são:
+1. Insira o local dos dados ou um regex (expressão regular) para os **locais dos arquivos de dados**. Exemplos de locais válidos de arquivos de dados são:
 
    * file:///C:/Users/public/Document/Prefill/.&#42;
    * https://localhost:8000/somesamplexmlfile.xml
@@ -282,7 +282,7 @@ Os formulários adaptáveis podem ser pré-preenchidos com dados do usuário no 
 https://localhost:4502/content/forms/af/xml.html?wcmmode=disabled&dataRef=crx:///tmp/fd/af/myassets/sample.xml
 ```
 
-O nó especificado deve ter uma propriedade chamada `jcr:data` e mantenha os dados.
+O nó especificado deve ter uma propriedade chamada `jcr:data` e conter os dados.
 
 ### O protocolo file://  {#the-file-protocol-nbsp}
 
@@ -304,7 +304,7 @@ https://localhost:4502/content/forms/af/xml.html?wcmmode=disabled&dataRef=https:
 https://localhost:4502/content/forms/af/abc.html?wcmmode=disabled&dataRef=service://[SERVICE_NAME]/[IDENTIFIER]
 ```
 
-* SERVICE_NAME refere-se ao nome do serviço de preenchimento prévio OSGI. Consultar [Criar e executar um serviço de preenchimento prévio](../../forms/using/prepopulate-adaptive-form-fields.md#create-and-run-a-prefill-service).
+* SERVICE_NAME refere-se ao nome do serviço de preenchimento prévio OSGI. Consulte [Criar e executar um serviço de preenchimento prévio](../../forms/using/prepopulate-adaptive-form-fields.md#create-and-run-a-prefill-service).
 * IDENTIFIER refere-se a quaisquer metadados necessários pelo serviço de preenchimento prévio OSGI para buscar os dados de preenchimento prévio. Um identificador para o usuário conectado é um exemplo de metadados que podem ser usados.
 
 >[!NOTE]
@@ -313,7 +313,7 @@ https://localhost:4502/content/forms/af/abc.html?wcmmode=disabled&dataRef=servic
 
 ### Definição do atributo de dados em slingRequest {#setting-data-attribute-in-slingrequest}
 
-Você também pode definir a variável `data` atributo em `slingRequest`, em que o `data` attribute é uma string que contém XML ou JSON, conforme mostrado no código de exemplo abaixo (o exemplo é para XML):
+Você também pode definir o atributo `data` em `slingRequest`, onde o atributo `data` é uma cadeia de caracteres que contém XML ou JSON, conforme mostrado no código de exemplo abaixo (O exemplo é para XML):
 
 ```javascript
 <%
@@ -333,9 +333,9 @@ Você também pode definir a variável `data` atributo em `slingRequest`, em que
 
 Você pode gravar uma sequência XML ou JSON simples contendo todos os seus dados e defini-la em slingRequest. Isso pode ser feito facilmente no JSP do renderizador para qualquer componente, que você deseja incluir na página, onde é possível definir o atributo de dados slingRequest.
 
-Por exemplo, quando você deseja um design específico para a página com um tipo específico de cabeçalho. Para isso, você pode escrever o seu próprio `header.jsp`, que você pode incluir no componente de página e definir a `data` atributo.
+Por exemplo, quando você deseja um design específico para a página com um tipo específico de cabeçalho. Para isso, você pode escrever seu próprio `header.jsp`, que pode ser incluído no componente de página e definir o atributo `data`.
 
-Outro bom exemplo é um caso de uso em que você deseja preencher previamente os dados ao fazer logon por meio de contas sociais como Facebook, Twitter ou LinkedIn. Nesse caso, é possível incluir um JSP simples em `header.jsp`, que busca dados da conta de usuário e define o parâmetro de dados.
+Outro bom exemplo é um caso de uso em que você deseja preencher previamente os dados ao fazer logon por meio de contas sociais como Facebook, Twitter ou LinkedIn. Nesse caso, você pode incluir um JSP simples em `header.jsp`, que busca dados da conta de usuário e define o parâmetro de dados.
 
 prefill-page component.zip
 
@@ -364,11 +364,11 @@ O pacote padrão (pacote de serviço de preenchimento de amostra) contém uma im
 1. Abra o arquivo src\main\java\com\adobe\test\Prefill.java para edição.
 1. No código, defina o valor de:
 
-   * `nodePath:` A variável de caminho do nó que aponta para o local do repositório crx contém o caminho do arquivo de dados (pré-preenchimento). Por exemplo, /content/prefilldata.xml
-   * `label:` O parâmetro label especifica o nome de exibição do serviço. Por exemplo, Serviço de preenchimento prévio padrão
+   * `nodePath:` A variável de caminho de nó que aponta para o local do repositório crx contém o caminho do arquivo de dados (preenchimento prévio). Por exemplo, /content/prefilldata.xml
+   * `label:` O parâmetro de rótulo especifica o nome de exibição do serviço. Por exemplo, Serviço de preenchimento prévio padrão
 
-1. Salve e feche o `Prefill.java` arquivo.
-1. Adicione o `AEM Forms Client SDK` pacote para o caminho de compilação do projeto padrão.
+1. Salvar e fechar o arquivo `Prefill.java`.
+1. Adicione o pacote `AEM Forms Client SDK` ao caminho de compilação do projeto padrão.
 1. Compile o projeto e crie o .jar para o pacote.
 
 #### Iniciar e usar o serviço de preenchimento prévio {#start-and-use-the-prefill-service}
@@ -396,4 +396,4 @@ Você pode configurar o servidor do AEM Forms para executar a ação de mesclage
    * Para desativar, execute o seguinte comando cURL:
      `curl -u admin:admin -X POST -d apply=true \ -d propertylist=af.clientside.datamerge.enabled \ -d af.clientside.datamerge.enabled=false \ http://${crx.host}:${crx.port}/system/console/configMgr/Adaptive%20Form%20and%20Interactive%20Communication%20Web%20Channel%20Configuration`
 
-  Para aproveitar ao máximo os dados pré-preenchidos na opção do cliente, atualize o serviço de preenchimento para retornar [MapaAnexoArquivo](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) e [CustomContext](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html)
+  Para aproveitar ao máximo os dados pré-preenchidos na opção do cliente, atualize o serviço de preenchimento para retornar [FileAttachmentMap](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) e [CustomContext](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html)

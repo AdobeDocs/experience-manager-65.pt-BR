@@ -17,16 +17,16 @@ ht-degree: 0%
 
 # Portal Forms | Manuseio de dados do usuário {#forms-portal-handling-user-data}
 
-[!DNL AEM Forms] O portal fornece componentes que você pode usar para listar formulários adaptáveis, formulários HTML5 e outros ativos do Forms no [!DNL AEM Sites] página. Além disso, você pode configurá-lo para exibir rascunhos e formulários adaptáveis enviados, bem como formulários HTML5 para um usuário conectado. Para obter mais informações sobre o Forms Portal, consulte [Introdução à publicação de formulários em um portal](/help/forms/using/introduction-publishing-forms.md).
+O Portal [!DNL AEM Forms] fornece componentes que você pode usar para listar formulários adaptáveis, formulários HTML5 e outros ativos do Forms na página [!DNL AEM Sites]. Além disso, você pode configurá-lo para exibir rascunhos e formulários adaptáveis enviados, bem como formulários HTML5 para um usuário conectado. Para obter mais informações sobre o Forms Portal, consulte [Introdução à publicação de formulários em um portal](/help/forms/using/introduction-publishing-forms.md).
 
-Quando um usuário conectado salva um formulário adaptável como rascunho ou o envia, eles são exibidos nas guias Rascunhos e envios no Portal do Forms. Os dados de formulários em rascunho ou enviados são armazenados no armazenamento de dados configurado para implantação do AEM. Os rascunhos e envios de usuários anônimos não são exibidos na página do Forms Portal; no entanto, os dados são armazenados no armazenamento de dados configurado. Consulte [Configuração de serviços de armazenamento para rascunhos e envios](/help/forms/using/configuring-draft-submission-storage.md).
+Quando um usuário conectado salva um formulário adaptável como rascunho ou o envia, eles são exibidos nas guias Rascunhos e envios no Portal do Forms. Os dados de formulários em rascunho ou enviados são armazenados no armazenamento de dados configurado para implantação do AEM. Os rascunhos e envios de usuários anônimos não são exibidos na página do Forms Portal; no entanto, os dados são armazenados no armazenamento de dados configurado. Consulte [Configurando serviços de armazenamento para rascunhos e envios](/help/forms/using/configuring-draft-submission-storage.md).
 
 ## Dados do usuário e armazenamentos de dados {#user-data-and-data-stores}
 
 O Forms Portal armazena dados para formulários de rascunho e enviados nos seguintes cenários:
 
-* A ação de envio configurada no formulário adaptável é **Ação de envio do portal do Forms**.
-* Para ações de envio diferentes de **Ação de envio do portal do Forms**, o **[!UICONTROL Armazenar dados no Forms Portal]** está ativada na variável **[!UICONTROL Envio]** propriedades do contêiner de formulário adaptável.
+* A ação de envio configurada no formulário adaptável é **Ação de Envio do Portal do Forms**.
+* Para ações de envio diferentes de **Ação de Envio do Forms Portal**, a opção **[!UICONTROL Armazenar dados no Forms Portal]** está habilitada nas propriedades **[!UICONTROL Envio]** do contêiner de formulário adaptável.
 
 Para cada rascunho e formulário enviado para usuários conectados e anônimos, o Portal do Forms armazena os seguintes dados:
 
@@ -56,7 +56,7 @@ Dependendo da persistência do armazenamento de dados configurado, os dados de r
   <tr>
    <td><p>Banco de dados</p> </td>
    <td><p>Repositório AEM da instância do autor e tabelas do banco de dados</p> </td>
-   <td>Tabelas de banco de dados <code>data</code>, <code>metadata</code>, e <code>additionalmetadata</code></td>
+   <td>Tabelas do banco de dados <code>data</code>, <code>metadata</code> e <code>additionalmetadata</code></td>
   </tr>
  </tbody>
 </table>
@@ -67,19 +67,19 @@ Você pode acessar dados de rascunho e de formulários enviados para usuários c
 
 ### Instâncias do AEM {#aem-instances}
 
-Todos os rascunhos e dados de formulários enviados em instâncias AEM (autor, publicação ou remoto) para usuários conectados e anônimos são armazenados no `/content/forms/fp/` do repositório AEM aplicável. Toda vez que um usuário conectado ou anônimo salvar um rascunho ou enviar um formulário, uma `draft ID` ou `submission ID`, um `user data ID`, e aleatoriamente `ID` para cada anexo (se aplicável) é gerado. Está associado ao respectivo rascunho ou envio.
+Todos os rascunhos e dados de formulários enviados em instâncias de AEM (autor, publicação ou remoto) para usuários conectados e anônimos são armazenados no nó `/content/forms/fp/` do repositório AEM aplicável. Toda vez que um usuário conectado ou anônimo salva um rascunho ou envia um formulário, um `draft ID` ou `submission ID`, um `user data ID` e um `ID` aleatório para cada anexo (se aplicável) é gerado. Está associado ao respectivo rascunho ou envio.
 
 #### Acessar dados do usuário {#access-user-data}
 
-Quando um usuário conectado salva um rascunho ou envia um formulário, um nó secundário é criado com sua ID de usuário. Por exemplo, dados de rascunhos e envios de Sarah Rose cuja ID de usuário é `srose` são armazenados em `/content/forms/fp/srose/` no repositório AEM. No nó da ID de usuário, os dados são organizados em uma estrutura hierárquica.
+Quando um usuário conectado salva um rascunho ou envia um formulário, um nó secundário é criado com sua ID de usuário. Por exemplo, os dados de rascunhos e envios de Sarah Rose, com ID de usuário `srose`, são armazenados no nó `/content/forms/fp/srose/` no repositório AEM. No nó da ID de usuário, os dados são organizados em uma estrutura hierárquica.
 
-A tabela a seguir explica como os dados de todos os rascunhos de `srose` é armazenado no repositório do AEM.
+A tabela a seguir explica como os dados de todos os rascunhos de `srose` são armazenados no repositório AEM.
 
 >[!NOTE]
 >
->Uma estrutura exata como `drafts` é replicado para formulários enviados para `srose` no `/content/forms/fp/srose/submit/` nó.
+>Uma estrutura exata como `drafts` é replicada para formulários enviados para `srose` no nó `/content/forms/fp/srose/submit/`.
 >
->Todos os rascunhos e envios de `anonymous` Os usuários do são armazenados no `/content/forms/fp/anonymous/` que organiza rascunhos e envios para todos os usuários anônimos no `draft` e `submit` nós.
+>Todos os rascunhos e envios de usuários `anonymous` são armazenados no nó `/content/forms/fp/anonymous/`, que organiza rascunhos e envios para todos os usuários anônimos nos nós `draft` e `submit`.
 
 | Nó | Descrição |
 |---|---|
@@ -93,9 +93,9 @@ A tabela a seguir explica como os dados de todos os rascunhos de `srose` é arma
 
 #### Excluir dados do usuário {#delete-user-data}
 
-Para excluir completamente os dados do usuário de rascunhos e envios de um usuário conectado dos sistemas AEM, você deve excluir a variável `user ID` para um usuário específico no nó do autor. Exclua manualmente os dados de todas as instâncias AEM aplicáveis.
+Para excluir completamente os dados do usuário dos rascunhos e envios de um usuário conectado dos sistemas AEM, você deve excluir o nó `user ID` de um usuário específico do nó do autor. Exclua manualmente os dados de todas as instâncias AEM aplicáveis.
 
-Os rascunhos e dados de envio de todos os usuários anônimos são armazenados no `drafts` e `submit` nós em `/content/forms/fp/anonymous`. Não há um método para encontrar dados para um usuário anônimo específico, a menos que algumas informações identificáveis sejam conhecidas. Nesse caso, você pode pesquisar informações que identifiquem o usuário anônimo no repositório AEM e excluir manualmente o nó que o contém de todas as instâncias AEM aplicáveis para remover dados do sistema AEM. No entanto, para excluir dados de todos os usuários anônimos, é possível excluir o `anonymous` nó para remover rascunhos e dados de envio de todos os usuários anônimos.
+Rascunhos e dados de envio para todos os usuários anônimos são armazenados nos nós `drafts` e `submit` comuns em `/content/forms/fp/anonymous`. Não há um método para encontrar dados para um usuário anônimo específico, a menos que algumas informações identificáveis sejam conhecidas. Nesse caso, você pode pesquisar informações que identifiquem o usuário anônimo no repositório AEM e excluir manualmente o nó que o contém de todas as instâncias AEM aplicáveis para remover dados do sistema AEM. No entanto, para excluir dados de todos os usuários anônimos, você pode excluir o nó `anonymous` para remover os rascunhos e os dados de envio de todos os usuários anônimos.
 
 ### Banco de dados {#database}
 
@@ -107,7 +107,7 @@ Quando o AEM é configurado para armazenar dados em um banco de dados, os dados 
 
 #### Acessar dados do usuário {#access-user-data-1}
 
-Para acessar os dados de rascunhos e envios de um usuário conectado e anônimo nas tabelas do banco de dados, execute o seguinte comando do banco de dados. Na query, substitua `logged-in user` com a ID do usuário cujos dados você deseja acessar ou com `anonymous` para usuários anônimos.
+Para acessar os dados de rascunhos e envios de um usuário conectado e anônimo nas tabelas do banco de dados, execute o seguinte comando do banco de dados. Na consulta, substitua `logged-in user` pela ID de usuário cujos dados você deseja acessar ou por `anonymous` para usuários anônimos.
 
 ```sql
 select * from metadata, data, additionalmetadatatable where metadata.owner = 'logged-in user' and metadata.id = additionalmetadatatable.id and metadata.userdataID = data.id
@@ -115,7 +115,7 @@ select * from metadata, data, additionalmetadatatable where metadata.owner = 'lo
 
 #### Excluir dados do usuário {#delete-user-data-1}
 
-Para excluir das tabelas do banco de dados os rascunhos e os dados de envio de um usuário conectado, execute o seguinte comando do banco de dados. Na query, substitua `logged-in user` com a ID do usuário cujos dados você deseja excluir ou com `anonymous` para usuários anônimos. Para deletar dados de um usuário anônimo específico do banco de dados, você deve encontrá-los usando algumas informações identificáveis e deletá-los das tabelas do banco de dados que contêm as informações.
+Para excluir das tabelas do banco de dados os rascunhos e os dados de envio de um usuário conectado, execute o seguinte comando do banco de dados. Na consulta, substitua `logged-in user` pela ID de usuário cujos dados você deseja excluir ou por `anonymous` para usuários anônimos. Para deletar dados de um usuário anônimo específico do banco de dados, você deve encontrá-los usando algumas informações identificáveis e deletá-los das tabelas do banco de dados que contêm as informações.
 
 ```sql
 DELETE FROM metadata, data, additionalmetadatatable USING metadata INNER JOIN data ON metadata.userdataID = data.id INNER JOIN additionalmetadatatable ON metadata.id = additionalmetadatatable.id WHERE metadata.owner = 'logged-in user'

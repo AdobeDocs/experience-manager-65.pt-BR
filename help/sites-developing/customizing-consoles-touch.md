@@ -23,11 +23,13 @@ ht-degree: 0%
 >
 >Este documento descreve como personalizar consoles na interface moderna e habilitada para toque, e não se aplica à interface clássica.
 
-O AEM fornece vários mecanismos para permitir que você personalize os consoles (e o [funcionalidade de criação de página](/help/sites-developing/customizing-page-authoring-touch.md)) da sua instância de criação.
+O AEM fornece vários mecanismos para permitir que você personalize os consoles (e a [funcionalidade de criação de página](/help/sites-developing/customizing-page-authoring-touch.md)) da sua instância de criação.
 
-* Clientlibs As clientlibs permitem estender a implementação padrão para obter uma nova funcionalidade, além de reutilizar as funções, os objetos e os métodos padrão. Ao personalizar, você pode criar sua própria clientlib em `/apps.` Por exemplo, ele pode conter o código necessário para o componente personalizado.
+* Clientlibs
+As clientlibs permitem estender a implementação padrão para obter uma nova funcionalidade, além de reutilizar as funções, os objetos e os métodos padrão. Ao personalizar, você pode criar sua própria clientlib em `/apps.`. Por exemplo, ela pode conter o código necessário para seu componente personalizado.
 
-* As Sobreposições são baseadas nas definições do nó e permitem sobrepor a funcionalidade padrão (em `/libs`) com sua própria funcionalidade personalizada (no `/apps`). Ao criar uma sobreposição, uma cópia 1:1 do original não é necessária, pois a fusão de recursos do sling permite a herança.
+* Sobreposições
+As sobreposições são baseadas nas definições de nó e permitem sobrepor a funcionalidade padrão (em `/libs`) com sua própria funcionalidade personalizada (em `/apps`). Ao criar uma sobreposição, uma cópia 1:1 do original não é necessária, pois a fusão de recursos do sling permite a herança.
 
 Eles podem ser usados de várias maneiras para estender os consoles AEM. Uma pequena seleção é abordada abaixo (em um nível alto).
 
@@ -35,26 +37,26 @@ Eles podem ser usados de várias maneiras para estender os consoles AEM. Uma peq
 >
 >Para obter mais informações, consulte:
 >
->* Uso e criação [clientlibs](/help/sites-developing/clientlibs.md).
->* Uso e criação [sobreposições](/help/sites-developing/overlays.md).
+>* Usando e criando [clientlibs](/help/sites-developing/clientlibs.md).
+>* Usando e criando [sobreposições](/help/sites-developing/overlays.md).
 >* [Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html)
 >
 
 
 >[!CAUTION]
 >
->Você ***deve*** não alterar nada no `/libs` caminho.
+>Você ***deve*** não alterar nada no caminho `/libs`.
 >
->Isso ocorre porque o conteúdo de `/libs` é substituído na próxima vez que você atualizar sua instância (e pode ser substituído ao aplicar um hotfix ou pacote de recursos).
+>Isso ocorre porque o conteúdo de `/libs` é substituído na próxima vez que você atualizar sua instância (e pode ser substituído quando você aplicar um hotfix ou pacote de recursos).
 >
 >O método recomendado para configuração e outras alterações é:
 >
->1. Recrie o item necessário (ou seja, como ele existe em `/libs`) em `/apps`
+>1. Recriar o item necessário (isto é, como ele existe em `/libs`) em `/apps`
 >
 >1. Fazer alterações em `/apps`
 >
 
-Por exemplo, o seguinte local dentro da variável `/libs` a estrutura pode ser sobreposta:
+Por exemplo, o seguinte local dentro da estrutura `/libs` pode ser sobreposto:
 
 * consoles (qualquer console com base nas páginas de interface do Granite); por exemplo:
 
@@ -62,7 +64,7 @@ Por exemplo, o seguinte local dentro da variável `/libs` a estrutura pode ser s
 
 >[!NOTE]
 >
->Consulte o artigo da Base de conhecimento, [Solução de problemas da interface de toque AEM](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html), para obter mais dicas e ferramentas.
+>Consulte o artigo da Base de Dados de Conhecimento, [Solução de problemas da interface para toque do AEM](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html), para obter mais dicas e ferramentas.
 
 ## Personalizando a View Default para uma Console {#customizing-the-default-view-for-a-console}
 
@@ -92,7 +94,7 @@ Por exemplo, o seguinte local dentro da variável `/libs` a estrutura pode ser s
 
 ### Adicionar nova ação à barra de ferramentas {#add-new-action-to-the-toolbar}
 
-1. Você pode criar seus próprios componentes e incluir as bibliotecas de clientes correspondentes para ações personalizadas. Por exemplo, uma variável **Promover para o Twitter** ação em:
+1. Você pode criar seus próprios componentes e incluir as bibliotecas de clientes correspondentes para ações personalizadas. Por exemplo, uma ação **Promover para Twitter** em:
 
    `/apps/wcm/core/clientlibs/sites/js/twitter.js`
 
@@ -124,13 +126,13 @@ Por exemplo, o seguinte local dentro da variável `/libs` a estrutura pode ser s
 
    `jcr:content/body/content/header/items/default/items/create/items/createsite/rendercondition`
 
-   Usando propriedades nesse nó, você pode definir a variável `groups` autorizado a executar a ação específica; por exemplo, `administrators`
+   Usando propriedades neste nó, você pode definir o `groups` permitido para executar a ação específica; por exemplo, `administrators`
 
 ### Personalização de Colunas na Exibição de Lista {#customizing-columns-in-the-list-view}
 
 >[!NOTE]
 >
->Esse recurso é otimizado para colunas de campos de texto; para outros tipos de dados, é possível sobrepor `cq/gui/components/siteadmin/admin/listview/columns/analyticscolumnrenderer` in `/apps`.
+>Este recurso é otimizado para colunas de campos de texto; para outros tipos de dados, é possível sobrepor `cq/gui/components/siteadmin/admin/listview/columns/analyticscolumnrenderer` em `/apps`.
 
 Para personalizar as colunas na exibição de lista:
 
@@ -144,12 +146,12 @@ Para personalizar as colunas na exibição de lista:
 
    * Adicione suas novas colunas ou remova as existentes.
 
-   Consulte [Uso de sobreposições (e a Fusão de recursos do Sling)](/help/sites-developing/overlays.md) para obter mais informações.
+   Consulte [Uso de sobreposições (e o Sling Resource Merger)](/help/sites-developing/overlays.md) para obter mais informações.
 
 1. Opcionalmente:
 
-   * Se quiser conectar dados adicionais, será necessário gravar um [PageInforProvider](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageInfoProvider.html) com um
-     `pageInfoProviderType` propriedade.
+   * Se quiser conectar dados adicionais, você precisará gravar um [PageInforProvider](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageInfoProvider.html) com um
+     Propriedade `pageInfoProviderType`.
 
    Por exemplo, consulte a classe/pacote anexado (do GitHub) abaixo.
 

@@ -23,7 +23,7 @@ Se você excluir um ativo da instância do Autor, o ativo também será excluíd
 
 ## Como excluir um formulário {#how-to-delete-a-form}
 
-1. Faça logon na interface do usuário do AEM Forms, acessando `https://[hostname]:'port'/aem/forms.html.`
+1. Faça logon na interface de usuário do AEM Forms, acessando `https://[hostname]:'port'/aem/forms.html.`
 1. Navegue até o formulário que deseja excluir e selecione-o. Clique em Excluir ![aem6forms_delete2](assets/aem6forms_delete2.png) na barra de ferramentas e confirme a operação de exclusão.
 
    >[!NOTE]

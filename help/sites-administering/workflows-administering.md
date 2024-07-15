@@ -22,7 +22,7 @@ O console do fluxo de trabalho fornece várias ferramentas para administrar inst
 
 >[!NOTE]
 >
->A variável [Console JMX](/help/sites-administering/jmx-console.md#workflow-maintenance) O fornece operações adicionais de manutenção de workflow.
+>O [console JMX](/help/sites-administering/jmx-console.md#workflow-maintenance) fornece operações adicionais de manutenção de fluxo de trabalho.
 
 Há vários consoles disponíveis para administrar seus fluxos de trabalho. Use a [navegação global](/help/sites-authoring/basic-handling.md#global-navigation) para abrir o painel **Ferramentas** e selecione **Fluxo de trabalho**:
 
@@ -36,7 +36,7 @@ Há vários consoles disponíveis para administrar seus fluxos de trabalho. Use 
 ## Monitorar o status de instâncias de fluxo de trabalho {#monitoring-the-status-of-workflow-instances}
 
 1. Usando a navegação, selecione **Ferramentas** e, em seguida, **Fluxo de trabalho**.
-1. Selecionar **Instâncias** para que seja possível exibir a lista de instâncias de fluxo de trabalho em andamento.
+1. Selecione **Instâncias** para exibir a lista de instâncias de fluxo de trabalho em andamento.
 
    ![wf-96](assets/wf-96.png)
 
@@ -65,7 +65,7 @@ Há vários consoles disponíveis para administrar seus fluxos de trabalho. Use 
 ## Suspensão, retomada e encerramento de uma instância de fluxo de trabalho {#suspending-resuming-and-terminating-a-workflow-instance}
 
 1. Usando a navegação, selecione **Ferramentas** e, em seguida, **Fluxo de trabalho**.
-1. Selecionar **Instâncias** para que seja possível exibir a lista de instâncias de fluxo de trabalho em andamento.
+1. Selecione **Instâncias** para exibir a lista de instâncias de fluxo de trabalho em andamento.
 
    ![wf-96-1](assets/wf-96-1.png)
 
@@ -76,7 +76,7 @@ Há vários consoles disponíveis para administrar seus fluxos de trabalho. Use 
 ## Visualização de fluxos de trabalho arquivados {#viewing-archived-workflows}
 
 1. Usando a navegação, selecione **Ferramentas** e, em seguida, **Fluxo de trabalho**.
-1. Selecionar **Arquivar** para que você possa exibir a lista de instâncias de fluxo de trabalho concluídas com sucesso.
+1. Selecione **Arquivar** para exibir a lista de instâncias de fluxo de trabalho concluídas com êxito.
 
    ![wf-98](assets/wf-98.png)
 
@@ -93,22 +93,22 @@ Há vários consoles disponíveis para administrar seus fluxos de trabalho. Use 
 
 ## Correção de falhas na instância do fluxo de trabalho {#fixing-workflow-instance-failures}
 
-Quando um workflow falha, o AEM fornece a variável **Falhas** para permitir que você investigue e tome as medidas apropriadas após tratar a causa original:
+Quando um fluxo de trabalho falha, o AEM fornece o console **Falhas**, que permite investigar e tomar as medidas apropriadas após tratar a causa original:
 
 * **Detalhes da falha**
-Abre uma janela para mostrar a **Mensagem de falha**, **Etapa**, e **Pilha de falhas**.
+Abre uma janela para mostrar a **Mensagem de Falha**, **Etapa** e **Pilha de Falhas**.
 
 * **Abrir histórico**
 Mostra detalhes do histórico do fluxo de trabalho.
 
-* **Tentar etapa novamente** - Executa a instância do componente Etapa do script novamente. Use o comando Repetir etapa após corrigir a causa do erro original. Por exemplo, repita a etapa depois de corrigir um erro no script que a Etapa do processo executa.
-* **Encerrar** - Encerra o workflow se o erro tiver gerado uma situação irreparável para o workflow. Por exemplo, o fluxo de trabalho pode depender de condições ambientais, como informações no repositório que não são mais válidas para a instância do fluxo de trabalho.
-* **Encerrar e tentar novamente** - Semelhante **Encerrar** exceto que uma nova instância de fluxo de trabalho é iniciada usando a carga, o título e a descrição originais.
+* **Repetir Etapa** - Executa a instância do componente Etapa do Script novamente. Use o comando Repetir etapa após corrigir a causa do erro original. Por exemplo, repita a etapa depois de corrigir um erro no script que a Etapa do processo executa.
+* **Encerrar** - Encerra o fluxo de trabalho se o erro tiver gerado uma situação irreparável para o fluxo de trabalho. Por exemplo, o fluxo de trabalho pode depender de condições ambientais, como informações no repositório que não são mais válidas para a instância do fluxo de trabalho.
+* **Encerrar e repetir** - Semelhante a **Encerrar**, exceto que uma nova instância de fluxo de trabalho é iniciada usando a carga, o título e a descrição originais.
 
 Para investigar falhas e, em seguida, retomar ou encerrar o fluxo de trabalho, use as seguintes etapas:
 
 1. Usando a navegação, selecione **Ferramentas** e, em seguida, **Fluxo de trabalho**.
-1. Selecionar **Falhas** para exibir a lista de instâncias de fluxo de trabalho que não foram concluídas com sucesso.
+1. Selecione **Falhas** para exibir a lista de instâncias de fluxo de trabalho que não foram concluídas com êxito.
 1. Selecione um item específico e, em seguida, a ação apropriada:
 
    ![wf-47](assets/wf-47.png)
@@ -169,7 +169,7 @@ Para configurar o serviço, você pode usar o [Console da Web](/help/sites-deplo
 
 ## Configuração do tamanho máximo da caixa de entrada {#setting-the-maximum-size-of-the-inbox}
 
-É possível definir o tamanho máximo da caixa de entrada configurando o **Serviço de fluxo de trabalho do Adobe Granite**, utilizando o [Console da Web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) ou [adicionar uma configuração OSGi ao repositório](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository). A tabela a seguir descreve a propriedade que você configura para qualquer método.
+Você pode definir o tamanho máximo da caixa de entrada configurando o **Serviço de Fluxo de Trabalho do Adobe Granite**, usando o [Console da Web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) ou [adicionar uma configuração OSGi ao repositório](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository). A tabela a seguir descreve a propriedade que você configura para qualquer método.
 
 >[!NOTE]
 >

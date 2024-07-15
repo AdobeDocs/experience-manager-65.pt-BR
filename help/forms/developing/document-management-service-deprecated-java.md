@@ -22,7 +22,7 @@ Os seguintes Quick Starts estão disponíveis para o serviço de Gerenciamento d
 
 >[!NOTE]
 >
->A partir de 5 de agosto de 2011, o Adobe está migrando clientes dos Serviços de conteúdo ES para os Serviços de experiência da Adobe Digital Enterprise Platform. O roteiro de produtos para clientes que usam os Serviços de conteúdo é migrar para os novos Serviços de experiência da ADEP - Core, que incluem um Repositório de conteúdo nativo criado na arquitetura CRX modular moderna, adquirida durante a aquisição da Adobe do software Day.
+>A partir de 5 de agosto de 2011, o Adobe está migrando clientes dos Serviços de conteúdo ES para os Serviços de experiência da Adobe Digital Enterprise Platform. O roteiro de produtos para clientes que usam os Serviços de conteúdo é migrar para os novos Serviços de experiência da ADEP - Core, que incluem um Repositório de conteúdo nativo criado na arquitetura moderna e modular da CRX, adquirido durante a aquisição da Adobe da Day Software.
 
 [Início rápido (modo SOAP): criar espaços do Content Services usando a API Java](document-management-service-deprecated-java.md#quick-start-soap-mode-create-content-services-spaces-using-the-java-api-deprecated)
 
@@ -48,7 +48,7 @@ As operações do AEM Forms podem ser executadas usando a API altamente tipada d
 
 ## Início rápido (modo SOAP): criar espaços do Content Services usando a API Java (obsoleto) {#quick-start-soap-mode-create-content-services-spaces-using-the-java-api-deprecated}
 
-O código Java a seguir cria um novo espaço chamado *Diretório de teste* na Página inicial da empresa. O valor de identificação do novo espaço é gravado no console.
+O exemplo de código Java a seguir cria um novo espaço chamado *Diretório de Teste* na Página Inicial da Empresa. O valor de identificação do novo espaço é gravado no console.
 
 ```java
  /*
@@ -244,7 +244,7 @@ O exemplo de código Java a seguir exclui um espaço chamado /Company Home/Test 
 
 ## Início rápido (modo SOAP): adicionar conteúdo ao Content Services usando a API Java (obsoleto) {#quick-start-soap-mode-add-content-to-content-services-using-the-java-api-deprecated}
 
-O exemplo de código Java a seguir adiciona um arquivo de PDF chamado *MortgageForm.pdf* para uma pasta chamada /Diretório de teste/inicial da empresa. Os atributos de criador e descrição são definidos. O valor de identificação do novo conteúdo é gravado no console.
+O exemplo de código Java a seguir adiciona um arquivo PDF chamado *MortgageForm.pdf* a uma pasta chamada /Company Home/Test Diretory. Os atributos de criador e descrição são definidos. O valor de identificação do novo conteúdo é gravado no console.
 
 ```java
  /*
@@ -367,7 +367,7 @@ O exemplo de código Java a seguir adiciona um arquivo de PDF chamado *MortgageF
 
 ## Início rápido (modo SOAP): recuperar conteúdo dos Serviços de conteúdo usando a API Java (obsoleto) {#quick-start-soap-mode-retrieve-content-from-content-services-using-the-java-api-deprecated}
 
-O exemplo de código Java a seguir recupera um arquivo de PDF chamado *MortgageForm.pdf* na /Company Home. O arquivo PDF é salvo no sistema de arquivos local e é nomeado como *UpdatedMortgageForm.pdf*.
+O exemplo de código Java a seguir recupera um arquivo de PDF chamado *MortgageForm.pdf* da /Company Home. O arquivo PDF é salvo no sistema de arquivos local e é denominado *UpdatedMortgageForm.pdf*.
 
 ```java
  /*
@@ -473,7 +473,7 @@ O exemplo de código Java a seguir recupera um arquivo de PDF chamado *MortgageF
 
 ## Início rápido (modo SOAP): mova o conteúdo do Content Services usando a API Java (obsoleto) {#quick-start-soap-mode-move-content-services-content-using-the-java-api-deprecated}
 
-O exemplo de código Java a seguir move um arquivo de PDF chamado *MortgageForm.pdf* de /Company Home/Test Diretory para /Company Home. O valor de identificação do conteúdo movido é gravado no console.
+O exemplo de código Java a seguir move um arquivo PDF chamado *MortgageForm.pdf* do diretório /Company Home/Test para o diretório /Company Home. O valor de identificação do conteúdo movido é gravado no console.
 
 ```java
  /*

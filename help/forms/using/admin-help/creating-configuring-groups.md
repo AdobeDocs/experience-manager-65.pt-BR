@@ -62,7 +62,7 @@ Em um grupo dinâmico, você não seleciona individualmente os usuários que per
 
 Use uma destas duas maneiras para criar grupos dinâmicos:
 
-* Ative a criação automática de grupos dinâmicos com base em domínios de email, como @adobe.com. Quando você habilita esse recurso, o Gerenciamento de usuários cria um grupo dinâmico para cada domínio de email exclusivo no banco de dados de formulários AEM. Use uma expressão cron para especificar a frequência com que o Gerenciamento de usuários pesquisa novos domínios de email no banco de dados de formulários AEM. Esses grupos dinâmicos são adicionados ao domínio local DefaultDom e são nomeados como &quot;Todos os usuários com um *`[email domain]`* ID do e-mail.&quot;
+* Ative a criação automática de grupos dinâmicos com base em domínios de email, como @adobe.com. Quando você habilita esse recurso, o Gerenciamento de usuários cria um grupo dinâmico para cada domínio de email exclusivo no banco de dados de formulários AEM. Use uma expressão cron para especificar a frequência com que o Gerenciamento de usuários pesquisa novos domínios de email no banco de dados de formulários AEM. Esses grupos dinâmicos são adicionados ao domínio local DefaultDom e são nomeados como &quot;Todos os usuários com uma ID de e-mail *`[email domain]`*&quot;.
 * Crie um grupo dinâmico com base em critérios especificados, incluindo o domínio de email, a descrição, o nome canônico e o nome de domínio do usuário. Para pertencer ao grupo dinâmico, um usuário deve atender a todos os critérios especificados. Para configurar uma condição &quot;ou&quot;, crie dois grupos dinâmicos separados e adicione-os a um grupo local. Por exemplo, use essa abordagem para criar um grupo de usuários que pertencem ao domínio de email @adobe.com ou cujo nome canônico contém ou=adobe.com. No entanto, os usuários não precisam necessariamente atender a ambas as condições.
 
 Um grupo dinâmico contém apenas usuários. Ela não pode conter outros grupos. No entanto, um grupo dinâmico pode pertencer a um grupo principal.
@@ -74,7 +74,7 @@ Um grupo dinâmico contém apenas usuários. Ela não pode conter outros grupos.
 1. Especifique quando o Gerenciador de usuários verificará se há novos domínios de email. Esse horário deve ser posterior ao horário de sincronização do domínio, pois a criação de grupos dinâmicos é lógica somente se a sincronização do domínio for concluída.
 
    * Para habilitar a sincronização automática diariamente, digite a hora no formato de 24 horas na caixa Ocorre diariamente em. Quando você salva as configurações, esse valor é convertido em uma expressão cron, que é exibida na caixa abaixo.
-   * Para agendar a sincronização em um dia específico da semana ou mês, ou em um mês específico, selecione digite a expressão cron apropriada na caixa. O valor padrão é `0 00 4 ? * *`(o que significa verificar às 4 da manhã todos os dias).
+   * Para agendar a sincronização em um dia específico da semana ou mês, ou em um mês específico, selecione digite a expressão cron apropriada na caixa. O valor padrão é `0 00 4 ? * *` (o que significa verificar às 4 da manhã todos os dias).
 
      O uso da expressão cron é baseado no sistema de agendamento de tarefas de código aberto Quartz, versão 1.4.0.
 
@@ -93,11 +93,11 @@ Um grupo dinâmico contém apenas usuários. Ela não pode conter outros grupos.
 
    **Email:** Domínio de email do usuário, como `@adobe.com`.
 
-   **Descrição:** Descrição do usuário, como &quot;Cientista de computação&quot;
+   **Descrição:** Descrição do usuário, como &quot;Cientista da Computação&quot;
 
    **Nome canônico:** Nome canônico do usuário, como `ou=adobe.com`
 
-   **Nome do domínio:** O nome do domínio ao qual o usuário pertence, como `DefaultDom`. O atributo Nome de domínio diferencia maiúsculas de minúsculas ao usar o operador Contém. Não diferencia maiúsculas de minúsculas com os operadores Começa com, Termina com ou É igual a.
+   **Nome do Domínio:** O nome do domínio ao qual o usuário pertence, como `DefaultDom`. O atributo Nome de domínio diferencia maiúsculas de minúsculas ao usar o operador Contém. Não diferencia maiúsculas de minúsculas com os operadores Começa com, Termina com ou É igual a.
 
 1. Clique em Test (Testar). Uma página de Teste exibe os primeiros 200 usuários que atendem aos critérios definidos. Clique em Fechar.
 1. Se o teste retornou os resultados esperados, clique em Next. Caso contrário, edite os critérios do grupo dinâmico e teste novamente.

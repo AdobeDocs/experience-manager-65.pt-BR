@@ -26,4 +26,4 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->O aplicativo de verificação do AEM foi descontinuado. O aplicativo foi removido da Apple AppStore e da Android PlayStore.
+>O aplicativo de verificação do AEM foi descontinuado. O aplicativo foi removido da AppStore da Apple e da PlayStore da Android.

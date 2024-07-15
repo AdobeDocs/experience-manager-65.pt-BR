@@ -26,15 +26,15 @@ For more information on what is considered a transaction, see [Billable APIs](..
 
 Por padrão, a gravação da transação está desativada. Para ativar a emissão de relatórios de transação, execute as seguintes etapas:
 
-1. Navegue até a `/adminui` no AEM Forms no JEE, por exemplo, `http://10.14.18.10:8080/adminui`.
-1. Fazer logon como um **Administrador**.
-1. Ir para **Configurações** > **Configurações principais do sistema** > **Configurações**.
-1. Clique na caixa de seleção para **Habilitar relatório de transações** e **Salvar** as configurações.
+1. Navegue até o `/adminui` no seu AEM Forms no JEE, por exemplo, `http://10.14.18.10:8080/adminui`.
+1. Fazer logon como **Administrador**.
+1. Vá para **Configurações** > **Configurações Principais do Sistema** > **Configurações**.
+1. Clique na caixa de seleção para **Habilitar relatórios de transações** e **Salvar** as configurações.
 
-   ![sample-transaction-report-jee](assets/enable-transaction-jee.png)
+   ![exemplo-transação-relatório-jee](assets/enable-transaction-jee.png)
 
 1. Reinicie o servidor.
-1. Além das alterações no servidor, no lado do cliente, você deve atualizar o `adobe-livecycle-client.jar` arquivo no seu projeto, se estiver usando o mesmo.
+1. Além das alterações no servidor, no lado do cliente, você deve atualizar o arquivo `adobe-livecycle-client.jar` no seu projeto, se estiver usando o mesmo.
 
 <!--
 * You can [enable transaction recording](../../forms/using/viewing-and-understanding-transaction-reports.md#setting-up-transaction-reports) from AEM Web Console. view transaction reports on author, processing, or publish instances. View transaction reports on author or processing instances for an aggregated sum of all transactions. View transaction reports on the publish instances for a count of all transactions that take place only on that publish instance from where the report is run.
@@ -44,23 +44,23 @@ Por padrão, a gravação da transação está desativada. Para ativar a emissã
 
 ## Exibição do relatório de transações {#view-transaction-report}
 
-Quando você ativa o relatório de transações, as informações sobre as contagens de transações tornam-se acessíveis através do [relatório de transação via painel](#transaction-report-dashboard) e uma análise [relatório de transações via arquivo de log](#transaction-report-logfile). Ambos são explicados abaixo:
+Ao habilitar o relatório de transações, as informações sobre as contagens de transações ficam acessíveis por meio do [relatório de transações por meio do painel](#transaction-report-dashboard) e de um [relatório de transações detalhado por meio do arquivo de log](#transaction-report-logfile). Ambos são explicados abaixo:
 
 ### Relatório de transações via painel {#transaction-report-dashboard}
 
 O relatório de transações via painel fornece o número total de contagens de transações para cada tipo de transação. Por exemplo, você obtém as informações sobre o número total de formulários renderizados, convertidos e enviados conforme mostrado na imagem. Para obter o relatório de transações:
 
-1. Navegue até a `/adminui` no AEM Forms no JEE, por exemplo: `http://10.13.15.08:8080/adminui`.
-1. Fazer logon como um **Administrador**.
+1. Navegue até o `/adminui` no seu AEM Forms no JEE, por exemplo: `http://10.13.15.08:8080/adminui`.
+1. Fazer logon como **Administrador**.
 1. Clique em Monitor de integridade.
-1. Navegue até **Transaction Reporter** clique em **Calcular Total de Transações**, agora você vê que um gráfico de pizza representa o número de PDF forms - enviados, renderizados ou convertidos.
+1. Navegue até a guia **Repórter de Transações**, clique em **Calcular Total de Transações**. Agora você verá que um gráfico de pizza representa o número de PDF forms - enviados, renderizados ou convertidos.
 
-![sample-transaction-report-jee](assets/transaction-piechart.png)
+![exemplo-transação-relatório-jee](assets/transaction-piechart.png)
 
 
 ### Relatório de transações via arquivo de log {#transaction-report-logfile}
 
-O relatório de transações via arquivo de registro fornece informações detalhadas sobre cada transação. Para acessar os logs de transação, siga o caminho do contexto relativo à inicialização do servidor. As transações são capturadas em um arquivo de log separado `transaction_log.log` por padrão. A variável **caminho do arquivo** é relativo ao contexto de início do servidor. O caminho padrão para servidores diferentes é fornecido abaixo:
+O relatório de transações via arquivo de registro fornece informações detalhadas sobre cada transação. Para acessar os logs de transação, siga o caminho do contexto relativo à inicialização do servidor. As transações são capturadas em um arquivo de log separado `transaction_log.log` por padrão. O **caminho do arquivo** é relativo ao contexto de início do servidor. O caminho padrão para servidores diferentes é fornecido abaixo:
 
 ```
 For Jboss Turnkey:
@@ -97,16 +97,16 @@ TransactionRecord
 }
 ```
 
-* **serviço**: Nome do serviço.
-* **operação**: Nome da operação.
-* **internalService**: Nome do receptor da chamada se houver uma chamada interna, caso contrário, igual ao nome do serviço.
-* **internalOperation**: Nome do chamado em que há uma chamada interna, caso contrário, igual ao nome da operação.
-* **transactionOperationType**: Tipo de transação (Enviar, Renderizar, Converter).
-* **transactionCount**: Contagem total da transação.
-* **tempoDecorrido**: Tempo entre a iniciação da chamada e a resposta recebida.
-* **transactionDate**: Carimbo de data e hora que indica quando o serviço foi chamado.
+* **serviço**: nome do serviço.
+* **operação**: nome da operação.
+* **internalService**: nome do receptor da chamada se houver uma chamada interna, caso contrário, igual ao nome do serviço.
+* **internalOperation**: nome do chamado em que há uma chamada interna, caso contrário, igual ao nome da operação.
+* **transactionOperationType**: tipo de transação (Enviar, Renderizar, Converter).
+* **transactionCount**: Contagem total de transações.
+* **elapsedTime**: tempo entre a iniciação da chamada e a resposta recebida.
+* **transactionDate**: carimbo de data/hora indicando quando o serviço foi chamado.
 
-**Exemplo de log de transações**:
+**Log de transações de exemplo**:
 
 ```
 [2024-02-14 14:23:25] [INFO] TransactionRecord
@@ -128,9 +128,9 @@ TransactionRecord
 
 A frequência de transações de registro é determinada pelas operações de atualização no servidor para cada formulário enviado, renderizado ou convertido com sucesso.
 
-* Entrada **painel**, a contagem de transações é atualizada periodicamente, o padrão é definido como 1 minuto. Você pode atualizar a frequência definindo a propriedade do sistema em `"com.adobe.idp.dsc.transaction.recordFrequency"`. Por exemplo, no AEM Forms para JEE no JBoss®, adicione `-Dcom.adobe.idp.dsc.transaction.recordFrequency=5` in `JAVA_OPTS` para definir a frequência de atualização como 5 minutos.
+* No **painel**, a contagem de transações é atualizada periodicamente. O padrão é definido como 1 minuto. Você pode atualizar a frequência definindo a propriedade do sistema como `"com.adobe.idp.dsc.transaction.recordFrequency"`. Por exemplo, no AEM Forms para JEE em JBoss®, adicione `-Dcom.adobe.idp.dsc.transaction.recordFrequency=5` em `JAVA_OPTS` para definir a frequência de atualização para 5 minutos.
 
-* Entrada **logs de transações**, a atualização para cada transação ocorre instantaneamente quando um formulário é enviado, renderizado ou convertido com êxito.
+* Em **logs de transações**, a atualização para cada transação ocorre instantaneamente quando um formulário é enviado, renderizado ou convertido com êxito.
 
 <!-- A transaction remains in the buffer for a specified period (Flush Buffer time + Reverse replication time). By default, it takes approximately 90 seconds for the transaction count to reflect in the transaction report.
 

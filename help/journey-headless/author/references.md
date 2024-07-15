@@ -126,7 +126,7 @@ Agora que você aprendeu sobre referências e estrutura nos Fragmentos de conte�
       * [Modelos de fragmento de conteúdo: propriedades](/help/assets/content-fragments/content-fragments-models.md#properties)
 
 * Guias de introdução
-   * [Criação de uma pasta de ativos Guia de início rápido do Headless](/help/sites-developing/headless/getting-started/create-assets-folder.md)
+   * [Criação de um guia de início rápido do Assets Folder Headless](/help/sites-developing/headless/getting-started/create-assets-folder.md)
 
 * [Jornada do arquiteto de conteúdo do AEM Headless](/help/journey-headless/architect/overview.md)
 

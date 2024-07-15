@@ -22,7 +22,7 @@ ht-degree: 1%
 
 O pacote `com.adobe.cq.social.ugcbase.SocialUtils` foi descontinuado no AEM 6.1.
 
-As tabelas a seguir listam os métodos a serem usados no lugar de `SocialUtils` métodos.
+As tabelas a seguir listam os métodos a serem usados no lugar dos métodos `SocialUtils`.
 
 ## Pacote SocialResourceUtilities  {#socialresourceutilities-package}
 
@@ -42,13 +42,13 @@ As tabelas a seguir listam os métodos a serem usados no lugar de `SocialUtils` 
 | Cadeia de caracteres UGCToResourcePath(Cadeia de caracteres ugcPath) | assinatura de método alterada |
 | Cadeia de caracteres UGCToResourcePath(Cadeia de caracteres ugcPath, resolvedor ResourceResolver) | novo |
 
-| Métodos no `com.adobe.cq.social.`utilities.resource.api.SocialResourceUtilities |
+| Métodos em `com.adobe.cq.social.`utilities.resource.api.SocialResourceUtilities |
 |---|
 | SocialResourceProvider getSocialResourceProvider (recurso do recurso) | substitui SocialResourceProvider getConfiguredProvider(recurso do recurso) |
 
 ## Pacote SCFUtilities {#scfutilities-package}
 
-| Métodos no `com.adobe.cq.social.`utilities.scf.api.SCFUtilites |
+| Métodos em `com.adobe.cq.social.`utilities.scf.api.SCFUtilites |
 |---|
 | String getAvatar(UserProperties userProperties) |
 | String getAvatar(UserProperties userProperties, tamanho int) |

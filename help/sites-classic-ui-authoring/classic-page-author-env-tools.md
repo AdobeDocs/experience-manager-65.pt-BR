@@ -23,7 +23,7 @@ O ambiente de criação do AEM fornece vários mecanismos para organização e e
 
 ## Administração do site {#site-administration}
 
-A variável **Sites** O console do permite gerenciar e navegar no site. Usando os dois painéis, a estrutura do site pode ser expandida e as ações podem ser executadas no elemento necessário:
+O console **Sites** permite gerenciar e navegar no site. Usando os dois painéis, a estrutura do site pode ser expandida e as ações podem ser executadas no elemento necessário:
 
 ![chlimage_1-108](assets/chlimage_1-108.png)
 
@@ -37,17 +37,17 @@ Há um editor de página separado com a interface clássica, usando o localizado
 
 ## Acessar ajuda   {#accessing-help}
 
-Vários **Ajuda** os recursos podem ser acessados diretamente do AEM:
+Vários recursos da **Ajuda** podem ser acessados diretamente do AEM:
 
-Além de acessar [ajuda das barras de ferramentas do console](/help/sites-classic-ui-authoring/author-env-basic-handling.md#accessing-help), você também pode acessar a ajuda do sidekick (usando o ? ícone) ao editar uma página:
+Além de acessar a [ajuda das barras de ferramentas do console](/help/sites-classic-ui-authoring/author-env-basic-handling.md#accessing-help), você também pode acessar a ajuda do sidekick (usando o ? ícone) ao editar uma página:
 
-![Sidekick recolhido](do-not-localize/sidekick-collapsed-2.png)
+![Sidekick Recolhido](do-not-localize/sidekick-collapsed-2.png)
 
-Ou usando o **Ajuda** botão na caixa de diálogo de edição de componentes específicos; isso mostrará a ajuda sensível ao contexto.
+Ou usando o botão **Ajuda** na caixa de diálogo de edição de componentes específicos; isso mostrará a ajuda sensível ao contexto.
 
 ## Sidekick {#sidekick}
 
-A variável **Componentes** a guia do sidekick permite navegar pelos componentes disponíveis para serem adicionados à página atual. O grupo desejado pode ser expandido e, em seguida, um componente arrastado para o local desejado na página.
+A guia **Componentes** do sidekick permite navegar pelos componentes disponíveis para serem adicionados à página atual. O grupo desejado pode ser expandido e, em seguida, um componente arrastado para o local desejado na página.
 
 ![chlimage_1-110](assets/chlimage_1-110.png)
 
@@ -67,7 +67,7 @@ Você pode usar o localizador de conteúdo para localizar um intervalo de recurs
 * [Produtos](#products)
 * Ou para [navegar no site por estrutura de repositório](#the-content-finder)
 
-Com todas as opções, você pode [pesquisar itens específicos](#the-content-finder).
+Com todas as opções você pode [procurar itens específicos](#the-content-finder).
 
 ### Localizando imagens {#finding-images}
 
@@ -143,14 +143,14 @@ os seguintes padrões de pesquisa o encontrarão (e quaisquer outras imagens que
 
 * `name:*nmv*`
 * `name:AD*`
-a correspondência de caracteres é *não* distinção entre maiúsculas e minúsculas.
+a correspondência de caracteres *não* diferencia maiúsculas de minúsculas.
 
 * `name:ad?nm??is.*`
 você pode usar qualquer número de curingas em uma query.
 
 >[!NOTE]
 >
->Também é possível usar [SQL2](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/jackrabbit/commons/query/sql2/package-summary.html) pesquisa.
+>Você também pode usar a pesquisa do [SQL2](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/jackrabbit/commons/query/sql2/package-summary.html).
 
 ## Mostrando referências {#showing-references}
 
@@ -158,11 +158,11 @@ O AEM permite visualizar quais páginas estão vinculadas à página em que voc�
 
 Para mostrar referências diretas à página:
 
-1. No sidekick, selecione a variável **Página** ícone de guia.
+1. No sidekick, selecione o ícone de guia **Página**.
 
    ![screen_shot_2012-02-16at83127pm](assets/screen_shot_2012-02-16at83127pm.png)
 
-1. Selecionar **Mostrar referências...** O AEM abre a janela Referências e exibe quais páginas se referem à página selecionada, incluindo seus caminhos.
+1. Selecionar **Mostrar Referências...** O AEM abre a janela Referências e exibe quais páginas se referem à página selecionada, incluindo seus caminhos.
 
    ![screen_shot_2012-02-16at83311pm](assets/screen_shot_2012-02-16at83311pm.png)
 
@@ -173,23 +173,23 @@ Em determinadas situações, outras ações estão disponíveis no Sidekick, inc
 
 * [Blueprint](/help/sites-administering/msm-best-practices.md)
 
-Outro [as relações entre páginas podem ser vistas no console Sites](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console).
+Outras [relações entre páginas podem ser vistas no console Sites](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console).
 
 ## Log de auditoria {#audit-log}
 
-A variável **Log de auditoria** pode ser acessado no **Informações** guia do sidekick. Ela lista as ações recentes tomadas na página atual; por exemplo:
+O **Log de Auditoria** pode ser acessado a partir da guia **Informações** do sidekick. Ela lista as ações recentes tomadas na página atual; por exemplo:
 
 ![chlimage_1-118](assets/chlimage_1-118.png)
 
 ## Informações da página {#page-information}
 
-O console do site também [fornece informações sobre o status atual da página](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console) como publicação, modificação, bloqueado, livecopy e assim por diante.
+O console do Site também [fornece informações sobre o status atual da página](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console), como publicação, modificação, bloqueado, livecopy etc.
 
 ## Modos de página   {#page-modes}
 
 Ao editar uma página com a interface clássica, existem vários modos que podem ser acessados usando os ícones na parte inferior do sidekick:
 
-![Modos de página](do-not-localize/chlimage_1-12.png)
+![Modos de Página](do-not-localize/chlimage_1-12.png)
 
 A linha de ícones na parte inferior do Sidekick é usada para alternar os modos de trabalho com as páginas:
 
@@ -207,7 +207,7 @@ Nesse modo, é possível editar o design da página configurando os componentes 
 >Outras opções também estão disponíveis:
 >
 >* [Andaime](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md)
->* [Client Context](/help/sites-administering/client-context.md)
+>* [Contexto do Cliente](/help/sites-administering/client-context.md)
 >* Sites - abre o console Sites.
 >* Recarregar - atualizará a página.
 

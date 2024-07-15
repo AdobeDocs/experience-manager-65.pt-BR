@@ -24,7 +24,7 @@ Isso é feito configurando o [Serviço OSGi - Configuração do componente de fr
 
 >[!CAUTION]
 >
->Se você não precisar de [serviços avançados](/help/sites-developing/content-fragments-config-components-rendering.md#definition-of-advanced-services-that-need-configuration) descrito abaixo, você pode ignorar essa configuração.
+>Se você não precisa dos [serviços avançados](/help/sites-developing/content-fragments-config-components-rendering.md#definition-of-advanced-services-that-need-configuration) descritos abaixo, ignore essa configuração.
 
 >[!CAUTION]
 >
@@ -42,8 +42,8 @@ Os serviços que exigem o registro de um componente são:
 
 * Determinar as dependências corretamente durante a publicação (ou seja, verifique se os fragmentos e modelos podem ser publicados automaticamente com uma página se foram alterados desde a última publicação).
 * Suporte para fragmentos de conteúdo na pesquisa de texto completo.
-* A gestão/gestão dos *conteúdo intermediário.*
-* A gestão/gestão dos *ativos de mídia mista.*
+* O gerenciamento/manuseio de *conteúdo intermediário.*
+* O gerenciamento/manuseio de *ativos de mídia mista.*
 * Limpeza do Dispatcher para fragmentos referenciados (se uma página contendo um fragmento for republicada).
 * Uso da renderização baseada em parágrafo.
 
@@ -51,13 +51,13 @@ Se você precisar de um ou mais desses recursos, então (normalmente) é mais f�
 
 ## Serviço OSGi - Configuração do componente de fragmento de conteúdo {#osgi-service-content-fragment-component-configuration}
 
-A configuração precisa ser vinculada ao serviço OSGi **Configuração do componente de fragmento de conteúdo**:
+A configuração precisa ser associada à **Configuração do componente de fragmento de conteúdo** do serviço OSGi:
 
 `com.adobe.cq.dam.cfm.impl.component.ComponentConfigImpl`
 
 >[!NOTE]
 >
->Consulte [Configuração do OSGi](/help/sites-deploying/configuring-osgi.md) para obter mais detalhes.
+>Consulte [Configurar OSGi](/help/sites-deploying/configuring-osgi.md) para obter mais detalhes.
 
 Por exemplo:
 
@@ -105,15 +105,15 @@ Para algumas funcionalidades (por exemplo, para renderizar apenas um intervalo d
   </tr>
   <tr>
    <td><code>paragraphRange</code></td>
-   <td><p>Uma propriedade de sequência de caracteres que define o intervalo de parágrafos a ser gerado se em <em>modo de renderização de elemento único</em>.</p> <p>Formato:</p>
+   <td><p>Uma propriedade de cadeia de caracteres que define o intervalo de parágrafos a ser gerado se estiver em <em>modo de renderização de elemento único</em>.</p> <p>Formato:</p>
     <ul>
      <li><code>1</code> ou <code>1-3</code> ou <code>1-3;6;7-8</code> ou <code>*-3;5-*</code></li>
-     <li>avaliado somente se <code>paragraphScope</code> está definida como <code>range</code></li>
+     <li>avaliado somente se <code>paragraphScope</code> estiver definido como <code>range</code></li>
     </ul> </td>
   </tr>
   <tr>
    <td><code>paragraphScope</code></td>
-   <td><p>Uma propriedade de sequência de caracteres que define como os parágrafos serão gerados se <em>modo de renderização de elemento único</em>.</p> <p>Valores:</p>
+   <td><p>Uma propriedade de cadeia de caracteres que define como os parágrafos devem ser gerados se estiverem no <em>modo de renderização de elemento único</em>.</p> <p>Valores:</p>
     <ul>
      <li><code>all</code> : para renderizar todos os parágrafos</li>
      <li><code>range</code> : para renderizar o intervalo de parágrafos fornecido por <code>paragraphRange</code></li>

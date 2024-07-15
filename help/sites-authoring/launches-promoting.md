@@ -53,7 +53,7 @@ ht-degree: 76%
 
 1. Abrir:
 
-   * o **Sites** console:
+   * o console **Sites**:
 
       1. Abra o [painel de referências](/help/sites-authoring/author-environment-tools.md#showingpagereferences) e selecione a página de origem desejada usando o [modo de seleção](/help/sites-authoring/basic-handling.md) (ou selecione e abra o painel de referências; a ordem não é importante). Todas as referências são mostradas.
 
@@ -61,7 +61,7 @@ ht-degree: 76%
       1. Selecione um lançamento específico para mostrar as ações disponíveis.
       1. Selecione **Promover lançamento** para abrir o assistente.
 
-   * o **Lançamentos** console:
+   * o console **Inicializações**:
 
       1. Selecione o seu lançamento (clique na miniatura).
       1. Selecione **Promover**.
@@ -81,7 +81,7 @@ ht-degree: 76%
 
    Por exemplo, ao selecionar para promover somente as páginas modificadas:
 
-   ![launches-pd-06](assets/launches-pd-06.png)
+   ![inicializações-pd-06](assets/launches-pd-06.png)
 
    >[!NOTE]
    >
@@ -98,7 +98,7 @@ ht-degree: 76%
 
 Ao editar uma página de lançamento, a ação **Promover lançamento** também está disponível em **Informações da página**. Isso abre o assistente para coletar as informações necessárias.
 
-![Promover lançamento](assets/chlimage_1-103.png)
+![Promover Lançamento](assets/chlimage_1-103.png)
 
 >[!NOTE]
 >
@@ -110,14 +110,14 @@ Após criar um lançamento aninhado, você pode promovê-lo de volta para qualqu
 
 ![Visão geral da promoção de uma inicialização aninhada](assets/chlimage_1-104.png)
 
-1. Assim como com [Criação de uma inicialização aninhada](#creatinganestedlaunchlaunchwithinalaunch), navegue até o lançamento necessário e selecione-o no **Lançamentos** console ou o **Referências** ferroviário.
+1. Assim como em [Criando uma Inicialização Aninhada](#creatinganestedlaunchlaunchwithinalaunch), navegue e selecione a inicialização necessária no console **Inicializações** ou no painel **Referências**.
 1. Selecione **Promover lançamento** para abrir o assistente.
 
 1. Insira os detalhes necessários:
 
    * **Target**
 
-      * **Destino de promoção**
+      * **Destino da promoção**
 É possível promover para qualquer uma das origens.
 
       * **Excluir inicialização após promoção**
@@ -131,7 +131,7 @@ Aqui é possível promover toda a inicialização ou somente as páginas que for
       * **Promover a página atual**
       * **Promover página atual e subpáginas**
 
-   ![Configurações para promover um lançamento](assets/chlimage_1-105.png)
+   ![Configurações para promover uma inicialização](assets/chlimage_1-105.png)
 
 1. Selecione **Próximo**.
 1. Revise os detalhes da promoção antes que selecionar **Promover**:
@@ -142,7 +142,7 @@ Aqui é possível promover toda a inicialização ou somente as páginas que for
    >
    >As páginas listadas dependerão do tipo de **escopo** definido e, possivelmente, das páginas editadas.
 
-1. Suas alterações serão promovidas e refletidas no **Lançamentos** console:
+1. Suas alterações serão promovidas e refletidas no console **Inicializações**:
 
    ![Iniciar console](assets/chlimage_1-107.png)
 
@@ -154,8 +154,8 @@ Use modelos de fluxo de trabalho para executar o processamento em massa das pág
 1. Quando autores(as) promovem as páginas de lançamento, elas são armazenadas no pacote de fluxo de trabalho.
 1. Inicie um modelo de fluxo de trabalho usando o pacote como o conteúdo.
 
-Para iniciar um fluxo de trabalho automaticamente quando as páginas forem promovidas, [configurar um inicializador de fluxo de trabalho](/help/sites-administering/workflows-starting.md#workflows-launchers) para o nó do pacote.
+Para iniciar um fluxo de trabalho automaticamente quando as páginas forem promovidas, [configure um iniciador de fluxo de trabalho](/help/sites-administering/workflows-starting.md#workflows-launchers) para o nó do pacote.
 
 Por exemplo, você pode gerar solicitações de ativação de página automaticamente quando autores(as) promoverem páginas de lançamento. Configure um iniciador de fluxo de trabalho para iniciar o fluxo de trabalho Solicitar ativação quando o nó do pacote for modificado.
 
-![Iniciador do fluxo de trabalho](assets/chlimage_1-108.png)
+![Inicializador do fluxo de trabalho](assets/chlimage_1-108.png)

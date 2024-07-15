@@ -32,9 +32,9 @@ O Adobe Experience Manager (AEM) é parte integrante das formas AEM. Portanto, �
 
 A estratégia de backup do AEM envolve dois tipos de backups:
 
-**Imagem do sistema:** Um backup de sistema completo que você pode usar para restaurar o conteúdo do computador se o disco rígido ou o computador inteiro parar de funcionar. Um backup de imagem do sistema é necessário somente antes da implantação de produção de formulários AEM. As políticas corporativas internas determinam a frequência com que os backups de imagem do sistema são necessários.
+**Imagem do sistema:** um backup completo do sistema que você pode usar para restaurar o conteúdo do computador se o disco rígido ou o computador inteiro parar de funcionar. Um backup de imagem do sistema é necessário somente antes da implantação de produção de formulários AEM. As políticas corporativas internas determinam a frequência com que os backups de imagem do sistema são necessários.
 
-**Dados específicos dos formulários AEM:** Os dados de aplicativos existem no banco de dados, no GDS (Global Document Storage, armazenamento global de documentos) e no repositório AEM, e devem ser copiados em backup em tempo real. O GDS é um diretório usado para armazenar arquivos de longa vida usados em um processo. Esses arquivos podem incluir PDF, políticas ou modelos de formulário.
+**Dados específicos de formulários do AEM:** Os dados de aplicativos existem no banco de dados, no Armazenamento Global de Documentos (GDS) e no repositório AEM, e devem ter backup em tempo real. O GDS é um diretório usado para armazenar arquivos de longa vida usados em um processo. Esses arquivos podem incluir PDF, políticas ou modelos de formulário.
 
 >[!NOTE]
 >
@@ -42,17 +42,17 @@ A estratégia de backup do AEM envolve dois tipos de backups:
 
 O banco de dados é usado para armazenar artefatos de formulário, configurações de serviço, estado do processo e referências de banco de dados para arquivos GDS. Se você ativou o armazenamento de documentos no banco de dados, os dados e documentos persistentes no GDS também serão armazenados no banco de dados. O backup e a recuperação do banco de dados podem ser feitos usando os seguintes métodos:
 
-* **Backup de snapshot** indica que o sistema de formulários AEM está no modo de backup indefinidamente ou por um número especificado de minutos, após o qual o modo de backup não será mais ativado. Para entrar ou sair do modo de backup de snapshot, você pode usar uma das opções a seguir. Após um cenário de recuperação, o modo de backup de snapshot não deve ser ativado.
+* O modo **Backup de instantâneo** indica que o sistema de formulários AEM está no modo de backup indefinidamente ou por um número especificado de minutos, após o qual o modo de backup não será mais habilitado. Para entrar ou sair do modo de backup de snapshot, você pode usar uma das opções a seguir. Após um cenário de recuperação, o modo de backup de snapshot não deve ser ativado.
 
    * Use a página Definições de Backup no Console de Administração. Para entrar no modo de instantâneo, marque a caixa de seleção Operar no modo de backup seguro. Desmarque a caixa de seleção para sair do modo de instantâneo.
-   * Use o script LCBackupMode (consulte [Fazer backup do banco de dados, do GDS e dos diretórios raiz do armazenamento de conteúdo](/help/forms/using/admin-help/backing-aem-forms-data.md#back-up-the-database-gds-aem-repository-and-content-storage-root-directories)). Para sair do modo de backup do instantâneo, no argumento do script, defina o `continuousCoverage` parâmetro para `false` ou use o `leaveContinuousCoverage` opção.
-   * Use a API de backup/recuperação fornecida. <!-- Fix broken link(see AEM forms API Reference section on AEM Forms Help and Tutorials page).-->
+   * Use o script LCBackupMode (consulte [Fazer backup do banco de dados, do GDS e dos diretórios Raiz de Armazenamento de Conteúdo](/help/forms/using/admin-help/backing-aem-forms-data.md#back-up-the-database-gds-aem-repository-and-content-storage-root-directories)). Para sair do modo de backup de instantâneo, no argumento de script, defina o parâmetro `continuousCoverage` como `false` ou use a opção `leaveContinuousCoverage`.
+   * Use a API de Backup/Recuperação fornecida. <!-- Fix broken link(see AEM forms API Reference section on AEM Forms Help and Tutorials page).-->
 
-* **Backup contínuo** indica que o sistema está sempre no modo de backup, com uma nova sessão de modo de backup sendo iniciada assim que a sessão anterior é lançada. Não há tempo limite associado ao modo de backup contínuo. Quando o script ou as APIs LCBackupMode são chamados para deixar o modo de backup contínuo, uma nova sessão de modo de backup contínuo é iniciada. Esse modo é útil para oferecer suporte a backups contínuos, mas ainda permitir que documentos antigos e desnecessários sejam removidos do diretório GDS. O modo de backup contínuo não é suportado pela página Backup e Recuperação. Após um cenário de recuperação, o modo de backup contínuo ainda é ativado. Você pode sair do modo de backup contínuo (modo de backup contínuo) usando o script LCBackupMode com o `leaveContinuousCoverage` opção.
+* **O modo de backup contínuo** indica que o sistema está sempre no modo de backup, com uma nova sessão de modo de backup sendo iniciada assim que a sessão anterior é lançada. Não há tempo limite associado ao modo de backup contínuo. Quando o script ou as APIs LCBackupMode são chamados para deixar o modo de backup contínuo, uma nova sessão de modo de backup contínuo é iniciada. Esse modo é útil para oferecer suporte a backups contínuos, mas ainda permitir que documentos antigos e desnecessários sejam removidos do diretório GDS. O modo de backup contínuo não é suportado pela página Backup e Recuperação. Após um cenário de recuperação, o modo de backup contínuo ainda é ativado. Você pode sair do modo de backup contínuo (modo de backup contínuo) usando o script LCBackupMode com a opção `leaveContinuousCoverage`.
 
 >[!NOTE]
 >
->Sair do modo de backup contínuo faz com que uma nova sessão de modo de backup comece imediatamente. Para desativar completamente o modo de backup contínuo, use o `leaveContinuousCoverage` no script, que substitui a sessão de backup contínua existente. Quando estiver no modo de backup de snapshot, você poderá deixar o modo de backup como costuma fazer.
+>Sair do modo de backup contínuo faz com que uma nova sessão de modo de backup comece imediatamente. Para desabilitar completamente o modo de backup acumulado, use a opção `leaveContinuousCoverage` no script, que substitui a sessão de backup acumulado existente. Quando estiver no modo de backup de snapshot, você poderá deixar o modo de backup como costuma fazer.
 
 Para evitar a perda de dados, o backup dos dados específicos dos formulários AEM deve ser feito de forma a garantir que os documentos do GDS e do diretório raiz do armazenamento de conteúdo estejam correlacionados com as referências do banco de dados.
 
@@ -81,10 +81,10 @@ Antes de reiniciar o Forms Server após uma recuperação, faça o seguinte:
 1. Inicie o sistema no modo de manutenção.
 1. Faça o seguinte para garantir que o Gerenciador de formulários esteja sincronizado com formulários AEM no modo de manutenção:
 
-   1. Acesse https://&lt;*server*>:&lt;*porta*>/lc/fm e faça logon usando as credenciais de administrador/senha.
+   1. Acesse https://&lt;*server*>:&lt;*port*>/lc/fm e faça logon usando as credenciais de administrador/senha.
    1. Clique no nome do usuário (neste caso, Super Administrator) no canto superior direito.
-   1. Clique em **Opções de administração**.
-   1. Clique em **Início** para sincronizar ativos do repositório.
+   1. Clique em **Opções de Administração**.
+   1. Clique em **Iniciar** para sincronizar ativos do repositório.
 
 1. Em um ambiente em cluster, o nó primário (em relação ao AEM) deve estar ativo antes dos nós secundários.
 1. Certifique-se de que nenhum processo seja iniciado a partir de fontes internas ou externas, como os iniciadores de processos da Web, SOAP ou EJB, até que a operação normal do sistema seja validada.
@@ -105,7 +105,7 @@ Se você alterar os caminhos do sistema de arquivos para um nó independente, de
 
 Em um ambiente em cluster, a configuração do caminho do sistema de arquivos do repositório deve ser a mesma para todos os nós de cluster antes do backup e depois da recuperação.
 
-Use o `LCSetGDS`script no `[*aem-forms root]*\sdk\misc\Foundation\SetGDSCommandline` pasta para definir o caminho GDS depois de alterar os caminhos do sistema de arquivos. Consulte a `ReadMe.txt` na mesma pasta para obter detalhes. Se o caminho antigo do diretório GDS não puder ser usado, `LCSetGDS` deve ser usado para definir o novo caminho para o GDS antes de iniciar formulários AEM.
+Use o script `LCSetGDS` na pasta `[*aem-forms root]*\sdk\misc\Foundation\SetGDSCommandline` para definir o caminho GDS depois de alterar os caminhos do sistema de arquivos. Consulte o arquivo `ReadMe.txt` na mesma pasta para obter detalhes. Se o caminho de diretório GDS antigo não puder ser usado, o script `LCSetGDS` deverá ser usado para definir o novo caminho para o GDS antes de você iniciar formulários AEM.
 
 >[!NOTE]
 >

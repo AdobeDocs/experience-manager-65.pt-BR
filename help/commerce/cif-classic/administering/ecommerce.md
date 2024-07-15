@@ -123,7 +123,7 @@ A implementação permite acesso em tempo real às informações do produto. Iss
 
 >[!NOTE]
 >
->Para usar a estrutura de integração com provedores externos de comércio eletrônico, primeiro é necessário instalar os pacotes necessários. Para obter mais informações, consulte [Implantação do comércio eletrônico](/help/commerce/cif-classic/deploying/ecommerce.md).
+>Para usar a estrutura de integração com provedores externos de comércio eletrônico, primeiro é necessário instalar os pacotes necessários. Para obter mais informações, consulte [Implantando o comércio eletrônico](/help/commerce/cif-classic/deploying/ecommerce.md).
 >
 >Para obter informações sobre como estender os recursos de comércio eletrônico, consulte [Desenvolvimento do comércio eletrônico](/help/commerce/cif-classic/developing/ecommerce.md).
 
@@ -131,7 +131,7 @@ A implementação permite acesso em tempo real às informações do produto. Iss
 
 O eCommerce AEM oferece:
 
-* Um certo número de **componentes de AEM prontos para uso** para ilustrar o que pode ser obtido em seu projeto:
+* Um número de **componentes prontos para uso do AEM** para ilustrar o que pode ser obtido para o seu projeto:
 
    * Exibição do produto
    * Carrinho de compras
@@ -146,7 +146,7 @@ O eCommerce AEM oferece:
   >
   >A estrutura de integração fornecida pelo AEM também permite a criação de componentes adicionais do AEM para recursos de comércio, independentemente do mecanismo de comércio eletrônico específico.
 
-* **Pesquisar** - utilizando:
+* **Pesquisar** - usando:
 
    * a pesquisa por AEM
    * a pesquisa do sistema de comércio eletrônico
@@ -155,26 +155,26 @@ O eCommerce AEM oferece:
 
   ![exemplo de pesquisa](/help/sites-administering/assets/chlimage_1-131.png)
 
-* Usa a capacidade do AEM para **apresentar seu conteúdo em vários canais**, seja a janela completa do navegador ou o dispositivo móvel. Isso entrega seu conteúdo no formato necessário para seus visitantes.
+* Usa a capacidade do AEM de **apresentar seu conteúdo em vários canais**, seja na janela completa do navegador ou no dispositivo móvel. Isso entrega seu conteúdo no formato necessário para seus visitantes.
 
-  ![exemplo de visualização móvel](/help/sites-administering/assets/chlimage_1-132.png)
+  ![exemplo de exibição móvel](/help/sites-administering/assets/chlimage_1-132.png)
 
-* A capacidade de **desenvolva sua própria implementação de integração com base no [Estrutura de comércio eletrônico AEM](#the-framework)**.
+* A capacidade de **desenvolver sua própria implementação de integração com base na [estrutura de comércio eletrônico AEM](#the-framework)**.
 
   As duas implementações disponíveis atualmente são criadas na mesma base, com base na API geral (a estrutura). A implementação de uma nova integração envolve apenas a implementação dos recursos necessários à sua integração. Os componentes de front-end podem ser usados por qualquer nova implementação, à medida que usam interfaces (portanto, são independentes da implementação).
 
-* A possibilidade de **comércio orientado por experiência com base em dados e atividades do comprador**. Isso permite que você realize vários cenários:
+* A possibilidade de desenvolver o **comércio orientado por experiência com base nos dados e na atividade do comprador**. Isso permite que você realize vários cenários:
 
    * Um exemplo pode ser fornecer reduções nos custos de envio quando o pedido total exceder um valor específico.
    * Outro pode permitir que você forneça ofertas sazonais que usam dados de perfil (por exemplo, localização). Estes podem então ser destacados, novamente dependendo de outros fatores, quando necessário.
 
   No exemplo abaixo, um teaser é exibido, pois o conteúdo do carrinho é inferior a US$ 75:
 
-  ![carrinho de compras com contexto do cliente](/help/sites-administering/assets/chlimage_1-133.png)
+  ![carrinho de compras com contexto de cliente](/help/sites-administering/assets/chlimage_1-133.png)
 
   Isso pode ser alterado quando o conteúdo do carrinho exceder US$ 75:
 
-  ![carrinho de compras com contexto do cliente após alteração](/help/sites-administering/assets/chlimage_1-134.png)
+  ![carrinho de compras com contexto de cliente após alteração](/help/sites-administering/assets/chlimage_1-134.png)
 
 * E outros recursos, incluindo:
 
@@ -184,7 +184,7 @@ O eCommerce AEM oferece:
 
 ## A estrutura {#the-framework}
 
-A variável [Conceitos](/help/commerce/cif-classic/administering/concepts.md) A seção aborda a estrutura com mais detalhes, mas a seguir há uma exibição de alto nível e alta velocidade da estrutura:
+A seção [Conceitos](/help/commerce/cif-classic/administering/concepts.md) aborda a estrutura com mais detalhes, mas a seguir é fornecida uma exibição de alto nível e alta velocidade da estrutura:
 
 ### O quê? {#what}
 

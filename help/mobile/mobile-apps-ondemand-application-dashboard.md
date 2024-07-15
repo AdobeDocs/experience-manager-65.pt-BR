@@ -38,7 +38,7 @@ Por fim, os administradores publicam estrategicamente o conteúdo atualizado do 
 
 ## O mosaico Gerenciar aplicativo {#the-manage-app-tile}
 
-A variável **Gerenciar aplicativo** Bloco exibe as informações disponíveis do aplicativo:
+O Bloco **Gerenciar Aplicativo** exibe as informações disponíveis do aplicativo:
 
 * Título
 * Descrição
@@ -50,7 +50,7 @@ A variável **Gerenciar aplicativo** Bloco exibe as informações disponíveis d
 
 ## O mosaico Gerenciar conexão {#the-manage-connection-tile}
 
-A variável **Gerenciar conexão** O bloco exibe as informações de conexão do AEM Mobile On-demand Services:
+O bloco **Gerenciar Conexão** exibe as informações de conexão do AEM Mobile On-demand Services:
 
 * Nome da configuração da nuvem
 * Nome e ID do projeto
@@ -60,7 +60,7 @@ A variável **Gerenciar conexão** O bloco exibe as informações de conexão do
 >
 >Clique na engrenagem no canto superior direito para definir uma configuração de nuvem do Mobile On-Demand.
 >
->Consulte [Configuração do Mobile On-Demand Services](/help/mobile/mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md) para obter detalhes.
+>Consulte [Configurando o Mobile On-Demand Services](/help/mobile/mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md) para obter detalhes.
 
 ![chlimage_1-56](assets/chlimage_1-56.png)
 
@@ -76,16 +76,16 @@ Cada bloco pode ser expandido para fornecer uma exibição de lista mais detalha
 
 ### O mosaico Gerenciar banners {#the-manage-banners-tile}
 
-A variável **Gerenciar banners** o bloco permite gerenciar o conteúdo de um banner. As seguintes informações são exibidas para um banner:
+O bloco **Gerenciar banners** permite gerenciar o conteúdo de um banner. As seguintes informações são exibidas para um banner:
 
 * imagem
 * **TÍTULO**: nome do banner
 * **MODIFICADO**: última modificação em AEM
-* **CARREGADO**: último upload do AEM
-* **PUBLICADO**: última publicação do formulário de solicitação AEM
-* **ORIGEM**: origem (AEM local ou remoto de Mobile On Demand)
+* **CARREGADO**: último carregamento do AEM
+* **PUBLISHED**: última solicitação publicada do AEM
+* **SOURCE**: origem (AEM local ou remoto de Mobile On Demand)
 
-A imagem a seguir mostra o **Gerenciar banners** mosaico no AEM Mobile Application Dashboard:
+A imagem a seguir mostra o bloco **Gerenciar banners** no Painel de Aplicativos do AEM Mobile:
 
 ![chlimage_1-57](assets/chlimage_1-57.png)
 
@@ -95,41 +95,41 @@ A imagem a seguir mostra o **Gerenciar banners** mosaico no AEM Mobile Applicati
 
 ### O mosaico Gerenciar artigos {#the-manage-articles-tile}
 
-A variável **Gerenciar artigos** o bloco permite gerenciar o conteúdo de um artigo. As seguintes informações são exibidas para um artigo:
+O bloco **Gerenciar artigos** permite gerenciar o conteúdo de um artigo. As seguintes informações são exibidas para um artigo:
 
 * imagem
 * **TÍTULO**: nome do artigo
 * **MODIFICADO**: última modificação em AEM
-* **CARREGADO**: último upload do AEM
-* **PUBLICADO**: última publicação do formulário de solicitação AEM
-* **ORIGEM**: origem (AEM local ou remoto de Mobile On-Demand)
+* **CARREGADO**: último carregamento do AEM
+* **PUBLISHED**: última solicitação publicada do AEM
+* **SOURCE**: origem (AEM local ou remoto de Mobile On-Demand)
 
-A imagem a seguir mostra o **Gerenciar artigos** mosaico no AEM Mobile Application Dashboard:
+A imagem a seguir mostra o bloco **Gerenciar Artigos** no Painel de Aplicativos do AEM Mobile:
 
 ![chlimage_1-58](assets/chlimage_1-58.png)
 
 >[!NOTE]
 >
->Consulte [**Gerenciamento de artigos**](/help/mobile/mobile-on-demand-managing-articles.md) para criar, excluir ou atualizar os artigos.
+>Consulte [**Gerenciar artigos**](/help/mobile/mobile-on-demand-managing-articles.md) para criar, excluir ou atualizar os artigos.
 
 ### O Bloco Gerenciar Coleções {#the-manage-collections-tile}
 
-A variável **Gerenciar coleções** o bloco permite gerenciar o conteúdo de uma coleção. As seguintes informações são exibidas para uma coleção:
+O bloco **Gerenciar Coleções** permite gerenciar o conteúdo de uma coleção. As seguintes informações são exibidas para uma coleção:
 
 * imagem
 * **TÍTULO**: nome da coleção
 * **MODIFICADO**: última modificação em AEM
-* **CARREGADO**: último upload do AEM
-* **PUBLICADO**: última publicação do formulário de solicitação AEM
-* **ORIGEM**: origem (AEM local ou remoto de Mobile On-Demand)
+* **CARREGADO**: último carregamento do AEM
+* **PUBLISHED**: última solicitação publicada do AEM
+* **SOURCE**: origem (AEM local ou remoto de Mobile On-Demand)
 
-A imagem a seguir mostra o **Gerenciar coleções** mosaico no AEM Mobile Application Dashboard:
+A imagem a seguir mostra o bloco **Gerenciar Coleções** no Painel de Aplicativos do AEM Mobile:
 
 ![chlimage_1-59](assets/chlimage_1-59.png)
 
 >[!NOTE]
 >
->Consulte **[Gerenciar coleções](/help/mobile/mobile-on-demand-managing-collections.md)** para criar, excluir ou atualizar as coleções.
+>Consulte **[Gerenciando Coleções](/help/mobile/mobile-on-demand-managing-collections.md)** para criar, excluir ou atualizar as coleções.
 
 ### Próximas etapas {#the-next-steps}
 

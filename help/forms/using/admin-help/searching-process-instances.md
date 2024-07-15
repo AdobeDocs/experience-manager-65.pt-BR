@@ -31,10 +31,10 @@ Informe os critérios básicos para executar uma pesquisa geral. Se você inform
 1. No console de administração, clique em Serviços > Fluxo de trabalho do Forms > Pesquisa de processo.
 1. Na página Pesquisa do processo, em Pesquisa geral, forneça os seguintes critérios:
 
-   * **ID do processo:** O número inteiro positivo que identifica cada instância de processo exclusiva.
-   * **Status do processo:** Selecione um status na lista.
-   * **Aplicativo:** Selecione um aplicativo na lista. Somente os aplicativos implantados são exibidos.
-   * **Nome do processo - Versão:** Selecione um nome de processo no menu. Somente os processos implantados são exibidos.
+   * **ID do Processo:** O inteiro positivo que identifica cada instância de processo exclusiva.
+   * **Status do Processo:** Selecione um status na lista.
+   * **Aplicativo:** selecione um aplicativo da lista. Somente os aplicativos implantados são exibidos.
+   * **Nome do Processo - Versão:** Selecione um nome de processo no menu. Somente os processos implantados são exibidos.
 
 1. Clique em Pesquisar. A página Instância do processo é exibida, listando as instâncias encontradas.
 

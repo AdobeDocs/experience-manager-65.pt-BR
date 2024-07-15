@@ -28,7 +28,7 @@ O ambiente de criação oferece os mecanismos para criação, atualização e an
 * Um autor cria e revisa o conteúdo (que pode ser de vários tipos; por exemplo, páginas, ativos, publicações e assim por diante)
 * que será, em algum momento, publicado no seu site.
 
-![Visão geral dos ambientes](assets/chlimage_1-132.png)
+![Visão Geral dos Ambientes](assets/chlimage_1-132.png)
 
 No ambiente de criação, a funcionalidade do AEM é disponibilizada por meio de duas interfaces do usuário. No ambiente de publicação, você projeta toda a aparência da interface disponibilizada aos usuários.
 
@@ -58,15 +58,15 @@ Além disso, há tarefas administrativas que ajudam a gerenciar o conteúdo:
 
 >[!NOTE]
 >
->O AEM também é [administrado](/help/sites-administering/home.md) (para a maioria das tarefas) do ambiente de criação.
+>O AEM também é [administrado](/help/sites-administering/home.md) (para a maioria das tarefas) do ambiente do autor.
 
 #### Ambiente de publicação {#publish-environment}
 
-Quando pronto, o conteúdo do site do AEM é publicado no **ambiente de publicação**. Aqui, as páginas do site são disponibilizadas para o público desejado de acordo com a aparência da interface projetada.
+Quando pronto, o conteúdo do site AEM é publicado no **ambiente de publicação**. Aqui, as páginas do site são disponibilizadas para o público desejado de acordo com a aparência da interface projetada.
 
 Normalmente, o ambiente de publicação está localizado dentro da zona desmilitarizada; em outras palavras, disponível para a Internet, mas não mais sob a proteção total da rede interna.
 
-Quando o site AEM é um [site da comunidade](/help/communities/overview.md), ou inclui [Componentes das comunidades](/help/communities/author-communities.md), os visitantes (membros) do site conectados podem interagir com os recursos das Comunidades. Por exemplo, eles podem postar em um fórum, postar um comentário ou seguir outros membros. Os membros podem receber permissão para realizar atividades normalmente limitadas ao ambiente de criação, como criar novas páginas (grupos da comunidade), artigos de blog e moderar as publicações de outros membros.
+Quando o site AEM é um [site da comunidade](/help/communities/overview.md) ou inclui [componentes das Comunidades](/help/communities/author-communities.md), os visitantes (membros) do site conectados podem interagir com os recursos das Comunidades. Por exemplo, eles podem postar em um fórum, postar um comentário ou seguir outros membros. Os membros podem receber permissão para realizar atividades normalmente limitadas ao ambiente de criação, como criar novas páginas (grupos da comunidade), artigos de blog e moderar as publicações de outros membros.
 
 >[!NOTE]
 >
@@ -84,4 +84,4 @@ Quando o site AEM é um [site da comunidade](/help/communities/overview.md), ou 
 
 #### Dispatcher {#dispatcher}
 
-Para otimizar o desempenho para os visitantes do seu site, a variável **[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=pt-BR)** O implementa o balanceamento de carga e o cache.
+Para otimizar o desempenho para os visitantes do seu site, o **[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=pt-BR)** implementa o balanceamento de carga e o cache.

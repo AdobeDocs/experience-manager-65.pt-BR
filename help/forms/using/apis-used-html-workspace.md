@@ -1,6 +1,6 @@
 ---
 title: APIs usadas no espaço de trabalho do AEM Forms
-description: APIs e métodos públicos do Java&trade; e do JavaScript do espaço de trabalho do LiveCycle AEM Forms, expostos para personalização e automação.
+description: APIs públicas do Java&trade; e do JavaScript e métodos do espaço de trabalho do LiveCycle AEM Forms, expostos para personalização e automação.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
@@ -265,7 +265,7 @@ As APIs a seguir são usadas no espaço de trabalho do AEM Forms.
    <td>getProcessInstance<br /> </td>
    <td>ProcessManagementProcessService<br /> </td>
    <td>getProcessInstance<br /> </td>
-   <td>Ele busca detalhes de uma instância do processo.<br /> </td>
+   <td>Ele busca detalhes de uma instância de processo.<br /> </td>
   </tr>
   <tr>
    <td>getProcessInstances</td>

@@ -24,7 +24,7 @@ Use os dados de análise da página para medir a eficácia do conteúdo da pági
 
 ![aa-10](assets/aa-10.png)
 
-Os dados de análise da página são exibidos em [Exibição de lista](/help/sites-authoring/basic-handling.md#list-view) do console Sites. Quando as páginas são exibidas no formato de lista, as seguintes colunas estão disponíveis por padrão:
+Os dados de análise de página são exibidos na [Exibição de lista](/help/sites-authoring/basic-handling.md#list-view) do console Sites. Quando as páginas são exibidas no formato de lista, as seguintes colunas estão disponíveis por padrão:
 
 * Visualizações de página
 * Visitantes únicos
@@ -34,12 +34,12 @@ Cada coluna mostra um valor para o período de relatório atual e também indica
 
 >[!NOTE]
 >
->Para alterar o período de atualização, [configurar o intervalo de importação](/help/sites-administering/adobeanalytics-connect.md#configuring-the-import-interval).
+>Para alterar o período de atualização, [configure o intervalo de importação](/help/sites-administering/adobeanalytics-connect.md#configuring-the-import-interval).
 
-1. Abra o **Sites** console; por exemplo, [http://localhost:4502/sites.html/content](http://localhost:4502/sites.html/content)
-1. Na extremidade direita da barra de ferramentas (canto superior direito), clique no ícone para selecionar **Exibição de lista** (o ícone mostrado dependerá do [exibição atual](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)).
+1. Abra o console **Sites**; por exemplo, [http://localhost:4502/sites.html/content](http://localhost:4502/sites.html/content)
+1. Na extremidade direita da barra de ferramentas (canto superior direito), clique no ícone para selecionar **Exibição em lista** (o ícone mostrado dependerá da [exibição atual](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)).
 
-1. Novamente, na extremidade direita da barra de ferramentas (canto superior direito), clique no ícone e selecione **Configurações de exibição**. A variável **Configurar colunas** será aberta. Faça as alterações necessárias e confirme com **Atualizar**.
+1. Novamente, na extremidade direita da barra de ferramentas (canto superior direito), clique no ícone e selecione **Exibir configurações**. A caixa de diálogo **Configurar Colunas** é aberta. Faça as alterações necessárias e confirme com **Atualizar**.
 
    ![aa-04](assets/aa-04.png)
 
@@ -62,7 +62,7 @@ Os membros do grupo de usuários de administradores de análises podem configura
 >
 >Quando uma árvore de páginas contém páginas secundárias associadas a diferentes configurações de nuvem do Adobe Analytics, não é possível definir colunas de dados disponíveis para as páginas.
 
-1. Na Exibição em lista, use os seletores de exibições (à direita da barra de ferramentas) e selecione **Configurações de exibição** e depois **Adicionar dados personalizados do Analytics**.
+1. Na Exibição de Lista, use os seletores de exibição (à direita da barra de ferramentas), selecione **Exibir Configurações** e **Adicionar Dados Personalizados do Analytics**.
 
    ![aa-15](assets/aa-15.png)
 
@@ -74,7 +74,7 @@ Os membros do grupo de usuários de administradores de análises podem configura
 
 ### Abrindo insights de conteúdo em sites {#opening-content-insights-from-sites}
 
-Abertura [Content Insight](/help/sites-authoring/content-insights.md) no console Sites para investigar mais a eficácia da página.
+Abra o [Content Insight](/help/sites-authoring/content-insights.md) do console Sites para investigar mais a eficácia da página.
 
 1. No console do Sites, selecione a página da qual deseja ver os Insights de conteúdo.
 1. Na barra de ferramentas, clique no ícone Analytics e Recommendations.
@@ -85,23 +85,23 @@ Abertura [Content Insight](/help/sites-authoring/content-insights.md) no console
 
 >[!NOTE]
 >
->Isso é mostrado se a variável [O Activity Map foi configurado](/help/sites-administering/adobeanalytics-connect.md#configuring-for-the-activity-map) para o seu site.
+>Isto é mostrado se o [Activity Map foi configurado](/help/sites-administering/adobeanalytics-connect.md#configuring-for-the-activity-map) para o seu site.
 
 >[!NOTE]
 >
 >Os dados da Activity Map são obtidos do Adobe Analytics.
 
-Quando o site tiver sido [configurado para Adobe Analytics](/help/sites-administering/adobeanalytics-connect.md), você pode usar o [Activity Map de modo](/help/sites-authoring/author-environment-tools.md#page-modes) para visualizar dados relevantes. Por exemplo:
+Quando seu site tiver sido [configurado para Adobe Analytics](/help/sites-administering/adobeanalytics-connect.md), você poderá usar o [Activity Map de modo](/help/sites-authoring/author-environment-tools.md#page-modes) para exibir dados relevantes. Por exemplo:
 
 ![aa-07](assets/aa-07.png)
 
 ### Acessar o Activity Map {#accessing-the-activity-map}
 
-Depois de selecionar o [Activity Map](/help/sites-authoring/author-environment-tools.md#page-modes) , você será solicitado a inserir suas credenciais da Adobe Analytics.
+Após selecionar o modo [Activity Map](/help/sites-authoring/author-environment-tools.md#page-modes), você será solicitado a inserir suas credenciais do Adobe Analytics.
 
 ![aa-03](assets/aa-03.png)
 
-A variável **Analytics** a barra de ferramentas flutuante é exibida; aqui você pode:
+A barra de ferramentas flutuante do **Analytics** é exibida; aqui você pode:
 
 * alterar o formato da barra de ferramentas usando as setas duplas (**>>**)
 * Alternar Detalhes da página (ícone de olho)
@@ -115,11 +115,11 @@ A variável **Analytics** a barra de ferramentas flutuante é exibida; aqui voc�
 
 Você pode selecionar os dados analíticos a serem mostrados e como eles devem ser exibidos, usando os vários critérios:
 
-* **Padrão**/**Ao vivo**
+* **Padrão**/**Ao Vivo**
 
 * tipo de evento
 * grupo de usuários
-* **Bolhas**/**Gradiente**/**Ganhadores e perdedores**/**Desligado**
+* **Bolhas**/**Gradiente**/**Ganhadores e Perdedores**/**Desativado**
 
 * período a ser exibido
 
@@ -127,11 +127,11 @@ Você pode selecionar os dados analíticos a serem mostrados e como eles devem s
 
 ### Configuração do Activity Map {#configuring-the-activity-map}
 
-Use o **Exibir configurações** ícone para abrir o **Configurações do Activity Map** diálogo.
+Use o ícone **Mostrar Configurações** para abrir a caixa de diálogo **Configurações de Activity Map**.
 
 ![aa-04-1](assets/aa-04-1.png)
 
-A variável **Configurações do Activity Map** A caixa de diálogo fornece uma variedade de opções em três guias:
+A caixa de diálogo **Configurações de Activity Map** fornece um intervalo de opções em três guias:
 
 ![aa-06](assets/aa-06.png)
 

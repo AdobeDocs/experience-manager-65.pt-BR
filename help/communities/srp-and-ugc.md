@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ## Introdução {#introduction}
 
-Se não estiver familiarizado com o provedor de recursos de armazenamento (SRP) e seu relacionamento com o conteúdo gerado pelo usuário (UGC), visite [Armazenamento de conteúdo da comunidade](working-with-srp.md) e [Visão geral do provedor de recursos de armazenamento](srp.md).
+Se não estiver familiarizado com o provedor de recursos de armazenamento (SRP) e sua relação com o conteúdo gerado pelo usuário (UGC), visite [Armazenamento de conteúdo da comunidade](working-with-srp.md) e [Visão geral do provedor de recursos de armazenamento](srp.md).
 
 Esta seção da documentação fornece algumas informações essenciais sobre SRP e UGC.
 
@@ -36,13 +36,13 @@ A API SRP não é uma classe abstrata, é uma interface. Uma implementação per
 
 Os meios de usar a API SRP são por meio de utilitários fornecidos, como os encontrados no pacote SocialResourceUtilities.
 
-Ao atualizar do AEM 6.0 ou anterior, será necessário migrar o UGC para todos os SRPs, para os quais uma ferramenta de Código aberto está disponível. Consulte [Atualização para o AEM Communities 6.3](upgrade.md).
+Ao atualizar do AEM 6.0 ou anterior, será necessário migrar o UGC para todos os SRPs, para os quais uma ferramenta Open Source está disponível. Consulte [Atualização para o AEM Communities 6.3](upgrade.md).
 
 >[!NOTE]
 >
 >Historicamente, os utilitários para acessar UGC foram encontrados no pacote SocialUtils, que não existe mais.
 >
->Para obter utilitários de substituição, consulte [Refatoração de SocialUtils](socialutils.md).
+>Para utilitários de substituição, consulte [Refatoração de SocialUtils](socialutils.md).
 
 ## Método do utilitário para acessar o UGC {#utility-method-to-access-ugc}
 
@@ -65,11 +65,11 @@ protected void doGet(final SlingHttpServletRequest request, final SlingHttpServl
 
 Para outras substituições de SocialUtils, consulte [Refatoração de SocialUtils](socialutils.md).
 
-Para obter diretrizes de codificação, visite [Acesso ao UGC com SRP](accessing-ugc-with-srp.md).
+Para obter diretrizes de codificação, visite [Acessando UGC com SRP](accessing-ugc-with-srp.md).
 
 >[!CAUTION]
 >
->O caminho que resourceToUGCStoragePath() retorna é *não* adequado para [Verificação de ACL](srp.md#for-access-control-acls).
+>O caminho que resourceToUGCStoragePath() retorna é *não* adequado para a [verificação de ACL](srp.md#for-access-control-acls).
 
 ## Método do utilitário para acessar ACLs {#utility-method-to-access-acls}
 
@@ -96,38 +96,38 @@ protected void doGet(final SlingHttpServletRequest request, final SlingHttpServl
 
 >[!CAUTION]
 >
->O caminho retornado por resourceToACLPath() é *não* adequado para [acesso ao UGC](#utility-method-to-access-acls) próprio.
+>O caminho retornado por resourceToACLPath() é *not* adequado para [acessar o próprio UGC](#utility-method-to-access-acls).
 
 ## Locais de armazenamento relacionados ao UGC {#ugc-related-storage-locations}
 
-As descrições a seguir do local de armazenamento podem ser úteis ao desenvolver com JSRP ou talvez MSRP. No momento, não há interface do usuário para acessar o UGC armazenado no ASRP, pois há para JSRP ([CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md)) e MSRP (ferramentas MongoDB).
+As descrições a seguir do local de armazenamento podem ser úteis ao desenvolver com JSRP ou talvez MSRP. No momento, não há interface para acessar o UGC armazenado no ASRP, pois há para JSRP ([CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md)) e MSRP (ferramentas do MongoDB).
 
-**Localização do componente**
+**Local do componente**
 
 Quando um membro insere o UGC no ambiente de publicação, ele interage com um componente como parte de um site de AEM.
 
-Um exemplo desse componente é o [componente comentários](http://localhost:4502/content/community-components/en/comments.html) que existe no [Guia de componentes da comunidade](components-guide.md) local. O caminho para o nó do comentário no repositório local é:
+Um exemplo desse componente é o [componente de comentários](http://localhost:4502/content/community-components/en/comments.html) que existe no site do [Guia de Componentes da Comunidade](components-guide.md). O caminho para o nó do comentário no repositório local é:
 
 * Caminho do componente = `/content/community-components/en/comments/jcr:content/content/includable/comments`
 
 **Local do nó de sombra**
 
-A criação do UGC também cria uma [nó de sombra](srp.md#about-shadow-nodes-in-jcr) às quais as ACLs necessárias são aplicadas. O caminho para o nó de sombra correspondente no repositório local é o resultado de anexar o caminho raiz do nó de sombra ao caminho do componente:
+A criação de UGC também cria um [nó de sombra](srp.md#about-shadow-nodes-in-jcr) ao qual as ACLs necessárias são aplicadas. O caminho para o nó de sombra correspondente no repositório local é o resultado de anexar o caminho raiz do nó de sombra ao caminho do componente:
 
 * Caminho raiz = `/content/usergenerated`
 * Nó de sombra do comentário = `/content/usergenerated/content/community-components/en/comments/jcr:content/content/includable/comments`
 
 **Local do UGC**
 
-O UGC é criado em nenhum desses locais e deve ser acessado somente usando um [método de utilitário](#utility-method-to-access-ugc) que chama a API SRP.
+O UGC não foi criado em nenhum desses locais e só deve ser acessado usando um [método de utilitário](#utility-method-to-access-ugc) que chame a API SRP.
 
 * Caminho raiz = `/content/usergenerated/asi/srp-choice`
 * Nó UGC para JSRP = `/content/usergenerated/asi/jcr/content/community-components/en/comments/jcr:content/content/includable/comments/srzd-let_it_be_`
 
-*Esteja ciente*, para JSRP, o nó UGC *somente* estar presente na instância do AEM (autor ou publicação) em que foi inserida. Se inserido em uma instância de publicação, a moderação não será possível no console de moderação do autor.
+*Saiba* que, para o JSRP, o nó UGC *somente* estará presente na instância do AEM (autor ou publicação) em que foi inserido. Se inserido em uma instância de publicação, a moderação não será possível no console de moderação do autor.
 
 ## Informações relacionadas {#related-information}
 
-* [Visão geral do provedor de recursos de armazenamento](srp.md) - Introdução e visão geral do uso do repositório.
-* [Acesso ao UGC com SRP](accessing-ugc-with-srp.md) - Diretrizes de codificação.
-* [Refatoração de SocialUtils](socialutils.md) - Mapeamento de métodos de utilitário obsoletos para métodos de utilitário SRP atuais.
+* [Visão Geral do Provedor de Recursos de Armazenamento](srp.md) - Introdução e visão geral do uso do repositório.
+* [Acessando UGC com SRP](accessing-ugc-with-srp.md) - Diretrizes de codificação.
+* [Refatoração de SocialUtils](socialutils.md) - Mapeando métodos de utilitário obsoletos para métodos de utilitário SRP atuais.

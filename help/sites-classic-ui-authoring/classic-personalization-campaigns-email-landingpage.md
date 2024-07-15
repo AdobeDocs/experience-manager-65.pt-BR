@@ -31,11 +31,11 @@ Para criar uma landing page efetiva do boletim informativo, faça o seguinte:
 >[!NOTE]
 >
 >A Adobe não pretende aprimorar ainda mais esse recurso (Gerenciamento de clientes em potencial e listas).
->A recomendação é usar [Adobe Campaign e a integração com o AEM](/help/sites-administering/campaign.md).
+>A recomendação é usar o [Adobe Campaign e a integração com o AEM](/help/sites-administering/campaign.md).
 
 ## Criação de uma lista para o informativo {#creating-a-list-for-the-newsletter}
 
-Criar uma lista, por exemplo, **Informativo do Geometrixx**, no MCM para o boletim informativo ao qual as pessoas devem se inscrever. A criação de listas é descrita em [Criação de listas](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingnewlists).
+Geometrixx Crie uma lista, por exemplo, **Informativo**, no MCM para o informativo que as pessoas devem assinar. A criação de listas está descrita em [Criação de listas](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingnewlists).
 
 O exemplo a seguir mostra uma lista:
 
@@ -45,7 +45,7 @@ O exemplo a seguir mostra uma lista:
 
 Crie um formulário de registro de boletim informativo que permita que os usuários assinem tags. O site de exemplo do Geometrixx fornece uma página de informativo na barra de ferramentas do Geometrixx, onde você pode criar o formulário.
 
-Para criar seu próprio formulário de informativo, consulte informações sobre a criação de formulários na [Documentação do Forms](/help/sites-authoring/default-components.md#form). O informativo usa as tags da Biblioteca de tags. Para adicionar tags adicionais, consulte [Administração de tags](/help/sites-authoring/tags.md#tagadministration).
+Para criar seu próprio formulário de informativo, consulte informações sobre a criação de formulários na [documentação do Forms](/help/sites-authoring/default-components.md#form). O informativo usa as tags da Biblioteca de tags. Para adicionar outras marcas, consulte [Administração de Marcas](/help/sites-authoring/tags.md#tagadministration).
 
 Os campos ocultos no exemplo a seguir fornecem a quantidade mínima de informações (email); além disso, você pode adicionar mais campos posteriormente, mas isso afetará a taxa de conversão.
 
@@ -55,7 +55,7 @@ O exemplo a seguir é um formulário criado em https://localhost:4502/cf#/conten
 
    ![mcm_newsletterpage](assets/mcm_newsletterpage.png)
 
-1. Clique em **Editar** no componente Formulário para configurar o formulário para ir para uma página de agradecimento (consulte [Criando páginas de agradecimento](#creating-a-thank-you-page)).
+1. Clique em **Editar** no componente Formulário para configurar o formulário para ir para uma página de agradecimento (consulte [Criando Páginas de Agradecimento](#creating-a-thank-you-page)).
 
    ![dc_formstart_thankyou](assets/dc_formstart_thankyou.png)
 
@@ -65,23 +65,23 @@ O exemplo a seguir é um formulário criado em https://localhost:4502/cf#/conten
 
 ### Criando uma página de agradecimento {#creating-a-thank-you-page}
 
-Quando os usuários clicarem em **Inscreva-se agora**, você deseja que a página Obrigado seja aberta automaticamente. Crie a página de agradecimento na página do informativo do Geometrixx. Depois de criar o formulário de informativo, edite o componente de Formulário e adicione o caminho à página de agradecimento.
+Quando os usuários clicarem em **Assinar agora**, você desejará que uma página de agradecimento seja aberta automaticamente. Crie a página de agradecimento na página do informativo do Geometrixx. Depois de criar o formulário de informativo, edite o componente de Formulário e adicione o caminho à página de agradecimento.
 
-O envio da solicitação leva o usuário a um **Obrigado** página após a qual receberão um email. Esta página de agradecimento foi criada em /content/geometrixx/en/toolbar/newsletter/thank_you.
+O envio da solicitação leva o usuário para uma página **Obrigado**, após a qual ele receberá um email. Esta página de agradecimento foi criada em /content/geometrixx/en/toolbar/newsletter/thank_you.
 
 ![mcm_newsletter_thankyoupage](assets/mcm_newsletter_thankyoupage.png)
 
 ### Adicionar teasers {#adding-teasers}
 
-Adicionar [teasers](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#teasers) para direcionar públicos-alvo específicos. Por exemplo, você pode adicionar teasers à página de agradecimento e à página de cadastro da newsletter.
+Adicione [teasers](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#teasers) para direcionar públicos-alvo específicos. Por exemplo, você pode adicionar teasers à página de agradecimento e à página de cadastro da newsletter.
 
 Para adicionar teasers para criar uma página de aterrissagem efetiva de boletim informativo:
 
-1. Crie um parágrafo de teaser para um presente de inscrição. Selecionar **Primeiro** como estratégia e incluir um texto que informa qual presente eles receberão.
+1. Crie um parágrafo de teaser para um presente de inscrição. Selecione **Primeiro** como estratégia e inclua um texto que informe qual presente eles receberão.
 
    ![dc_teaser_thankyou](assets/dc_teaser_thankyou.png)
 
-1. Crie um parágrafo de teaser para a página de agradecimento. Selecionar **Primeiro** como estratégia e incluir texto que indica que o presente está a caminho.
+1. Crie um parágrafo de teaser para a página de agradecimento. Selecione **Primeiro** como estratégia e inclua um texto que indique que o presente está a caminho.
 
    ![chlimage_1-103](assets/chlimage_1-103.png)
 
@@ -91,4 +91,4 @@ Para adicionar teasers para criar uma página de aterrissagem efetiva de boletim
 
 Enviar quaisquer alterações para páginas por meio da funcionalidade Boletim informativo no MCM. Em seguida, você envia o conteúdo atualizado para os assinantes.
 
-Consulte [Envio de informativos](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#newsletters).
+Consulte [Enviando informativos](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#newsletters).

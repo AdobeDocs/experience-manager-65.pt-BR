@@ -22,7 +22,7 @@ ht-degree: 0%
 >
 >O Adobe não planeja aprimorar ainda mais o rastreamento de emails abertos/rejeitados enviados pelo serviço AEM SMTP.
 >
->Recomenda-se [usar o Adobe Campaign e sua integração com o AEM](/help/sites-administering/campaign.md).
+>A recomendação é [usar o Adobe Campaign e sua integração com o AEM](/help/sites-administering/campaign.md).
 
 Quando você envia um informativo para muitos usuários, geralmente há alguns endereços de email inválidos na lista. O envio de informativos para esses endereços será rejeitado. O AEM pode gerenciar essas rejeições e pode interromper o envio de informativos para esses endereços depois que o contador de rejeições configurado é excedido. Por padrão, a taxa de rejeição é definida como 3, mas é configurável.
 
@@ -34,7 +34,7 @@ O importador de feed permite importar conteúdo repetidamente de fontes externas
 
 Para configurar o importador de feed para rastrear emails devolvidos, faça o seguinte:
 
-1. Entrada **Ferramentas**, selecione o Importador de feed.
+1. Em **Ferramentas**, selecione o Importador de Feed.
 
 1. Clique em **Adicionar** para criar uma configuração.
 
@@ -44,15 +44,15 @@ Para configurar o importador de feed para rastrear emails devolvidos, faça o se
 
    Todas as configurações precisam de informações sobre o seguinte no URL de pesquisa:
 
-   `username`: O nome de usuário usado para conexão
+   `username`: O nome de usuário que é usado para conexão
 
-   `password`: a senha usada para a conexão
+   `password`: a senha usada para conexão
 
    Além disso, dependendo do protocolo, é possível definir determinadas configurações.
 
-   **Propriedades de configuração do POP3:**
+   **Propriedades de configuração POP3:**
 
-   `pop3.leave.on.server`: define se as mensagens devem ser deixadas no servidor ou não. Defina como verdadeiro para deixar mensagens no servidor; caso contrário, defina falso. O padrão é true.
+   `pop3.leave.on.server`: Define se as mensagens devem ser deixadas no servidor ou não. Defina como verdadeiro para deixar mensagens no servidor; caso contrário, defina falso. O padrão é true.
 
    **Exemplos de POP3:**
 
@@ -83,7 +83,7 @@ Após configurar o importador de feed, configure o Endereço de origem e o conta
 
 Para configurar o serviço de boletim informativo:
 
-1. No console OSGi, em `<host>:<port>/system/console/configMgr`, navegue até **Informativo MCM**.
+1. No console OSGi, em `<host>:<port>/system/console/configMgr`, navegue até o **Informativo MCM**.
 
 1. Configure o serviço e salve as alterações ao concluir.
 

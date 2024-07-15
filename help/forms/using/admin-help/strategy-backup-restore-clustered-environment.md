@@ -43,8 +43,8 @@ Este tópico discute as seguintes estratégias para fazer backup de qualquer amb
 
 ### Backup off-line com tempo de inatividade {#offline-backup-with-downtime}
 
-1. Desligue todo o cluster e os serviços relacionados. (consulte [Iniciar e parar serviços](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))
-1. Em qualquer nó, faça backup do banco de dados, do GDS e dos Conectores. (consulte [Arquivos para backup e recuperação](/help/forms/using/admin-help/files-back-recover.md#files-to-back-up-and-recover))
+1. Desligue todo o cluster e os serviços relacionados. (consulte [Iniciando e interrompendo serviços](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))
+1. Em qualquer nó, faça backup do banco de dados, do GDS e dos Conectores. (consulte [Arquivos para fazer backup e recuperar](/help/forms/using/admin-help/files-back-recover.md#files-to-back-up-and-recover))
 1. Para fazer backup do repositório AEM off-line, execute as seguintes etapas:
 
    1. Para cada nó de cluster, faça backup do arquivo que contém a ID do nó de cluster.
@@ -62,8 +62,8 @@ Este tópico discute as seguintes estratégias para fazer backup de qualquer amb
 
    Sair do modo de backup contínuo após uma recuperação.
 
-1. Desligue qualquer um dos nós secundários do cluster em relação ao AEM. (consulte [Iniciar e parar serviços](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))
-1. Em qualquer nó, faça backup do banco de dados, do GDS e dos Conectores. (consulte [Arquivos para backup e recuperação](/help/forms/using/admin-help/files-back-recover.md#files-to-back-up-and-recover))
+1. Desligue qualquer um dos nós secundários do cluster em relação ao AEM. (consulte [Iniciando e interrompendo serviços](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))
+1. Em qualquer nó, faça backup do banco de dados, do GDS e dos Conectores. (consulte [Arquivos para fazer backup e recuperar](/help/forms/using/admin-help/files-back-recover.md#files-to-back-up-and-recover))
 1. Para fazer backup do repositório AEM off-line, execute as seguintes etapas:
 
    1. Para cada nó de cluster, faça backup do arquivo que contém a ID do nó de cluster.
@@ -81,8 +81,8 @@ Este tópico discute as seguintes estratégias para fazer backup de qualquer amb
 
    Sair do modo de backup contínuo após uma recuperação.
 
-1. Desligue qualquer um dos nós secundários do cluster em relação ao AEM. (consulte [Iniciar e parar serviços](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))
-1. Em qualquer nó, faça backup do banco de dados, do GDS e dos Conectores. (consulte [Arquivos para backup e recuperação](/help/forms/using/admin-help/files-back-recover.md#files-to-back-up-and-recover))
+1. Desligue qualquer um dos nós secundários do cluster em relação ao AEM. (consulte [Iniciando e interrompendo serviços](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))
+1. Em qualquer nó, faça backup do banco de dados, do GDS e dos Conectores. (consulte [Arquivos para fazer backup e recuperar](/help/forms/using/admin-help/files-back-recover.md#files-to-back-up-and-recover))
 1. Para fazer backup do repositório AEM on-line, execute as seguintes etapas:
 
    1. Para cada nó de cluster, faça backup do arquivo que contém o cluster_node.id.
@@ -120,7 +120,7 @@ Caso todo o cluster falhe devido a falhas como falha no banco de dados, execute 
 
 1. Recrie o sistema físico a partir de uma imagem do sistema.
 1. Aplique patches ou atualizações aos formulários AEM que foram aplicados desde que a imagem foi criada. Essas informações foram registradas durante o procedimento de backup. Os formulários AEM devem ser recuperados no mesmo nível de patch que tinham quando foi feito o backup do sistema.
-1. (*Opcional*) Se todos os outros nós estiverem funcionando bem, é possível que o repositório do AEM também esteja corrompido. Nesse caso, você verá uma mensagem de dessincronização do repositório no arquivo error.log do repositório AEM.
+1. (*Opcional*) Se todos os outros nós estiverem funcionando bem, é possível que o repositório AEM também esteja corrompido. Nesse caso, você verá uma mensagem de dessincronização do repositório no arquivo error.log do repositório AEM.
 
    Para restaurar o repositório, execute as etapas a seguir.
 
@@ -176,15 +176,15 @@ Caso todo o cluster falhe devido a falhas como falha no banco de dados, execute 
 
 ## Fazer backup e restaurar nó de publicação da Solução de gerenciamento de correspondência {#back-up-and-restore-correspondence-management-solution-publish-node}
 
-O nó publicador não tem nenhuma relação primário-secundário em um ambiente clusterizado. Você pode fazer backup de qualquer nó do Publisher seguindo [Backup e restauração](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html).
+O nó publicador não tem nenhuma relação primário-secundário em um ambiente clusterizado. Você pode fazer backup de qualquer nó do Editor seguindo [Backup e Restauração](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html).
 
 ### Recuperar um único nó de editor {#recover-a-single-publisher-node}
 
 1. Desligue o nó que deve ser recuperado e não faça nenhuma atividade de publicação até que o nó esteja ativo novamente.
-1. Restaurar o nó do Publish usando [Restaurando o backup](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html).
+1. Restaure o nó Publish usando [Restaurando o Backup](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html).
 
 ### Recuperar um cluster {#recover-a-cluster}
 
 1. Desligue o cluster.
-1. Restaurar o nó do Publish usando [Restaurando o backup](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html).
+1. Restaure o nó Publish usando [Restaurando o Backup](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html).
 1. Inicie o nó primário seguido pelo nó secundário do cluster do autor.

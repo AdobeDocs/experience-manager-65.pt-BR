@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Definição das configurações de AEM DS{#configuring-aem-ds-settings}
 
-Este artigo descreve como configurar o **Serviço de Configurações do AEM DS**. Essa configuração pode ser usada em vários cenários, por exemplo:
+Este artigo descreve como configurar o **Serviço de configurações do AEM DS**. Essa configuração pode ser usada em vários cenários, por exemplo:
 
 * No Gerenciamento de correspondência
 
@@ -27,28 +27,28 @@ Este artigo descreve como configurar o **Serviço de Configurações do AEM DS**
 
 * Em Formulários adaptáveis, para casos em que um Formulário adaptável é enviado da instância de publicação
 
-Veja a seguir as etapas para configurar o **[!UICONTROL Configurações do AEM DS]**:
+Veja a seguir as etapas para configurar as **[!UICONTROL Configurações de AEM DS]**:
 
 1. Abra o Configuration Manager na instância de publicação usando o URL:\
    *https://localhost:port/system/console/configMgr*.
 
-   ![Configuração do console da Web AEM](assets/web_configuration_console_new.png)
+   ![Configuração do Console da Web AEM](assets/web_configuration_console_new.png)
 
-1. No **[!UICONTROL Configuração do console da Web do Adobe Experience Manager]** localize e clique na guia **[!UICONTROL Configurações do AEM DS]** opção.
+1. Na janela **[!UICONTROL Configuração do Adobe Experience Manager Web Console]**, localize e clique na opção **[!UICONTROL Configurações AEM do DS]**.
 
    ![Configurações DS](assets/ds_settings_new.png)
 
-1. A variável **[!UICONTROL Serviço de Configurações do AEM DS]** exibe as definições de configuração comuns para os Componentes do AEM DS.
+1. A janela **[!UICONTROL Serviço de Configurações do AEM DS]** exibe as definições de configuração comuns para Componentes AEM DS.
 
-   ![Serviço de configurações DS](assets/ds_settings_service_new.png)
+   ![Serviço de Configurações DS](assets/ds_settings_service_new.png)
 
 1. Adicione as seguintes informações nos respectivos campos:
 
-   **[!UICONTROL URL do servidor de processamento]**: o Servidor de processamento é o servidor no qual o workflow do Forms ou AEM deve ser acionado. Pode ser o mesmo que o URL da instância do autor do AEM ou o outro URL do servidor (ou seja, https://localhost:port/).
+   **[!UICONTROL URL do Servidor de Processamento]**: o Servidor de Processamento é o servidor no qual o fluxo de trabalho Forms ou AEM deve ser acionado. Pode ser o mesmo que o URL da instância do autor do AEM ou o outro URL do servidor (ou seja, https://localhost:port/).
 
-   **[!UICONTROL Nome de usuário do servidor de processamento]**: Nome de usuário do usuário do workflow [com base no URL do servidor que está sendo usado]
+   **[!UICONTROL Nome de Usuário do Servidor de Processamento]**: Nome de Usuário do Fluxo de Trabalho [baseado na URL do servidor sendo usada]
 
-   **[!UICONTROL Senha do servidor de processamento]**: Senha do usuário do workflow
+   **[!UICONTROL Processando a senha do servidor]**: senha do usuário do fluxo de trabalho
 
    >[!NOTE]
    >

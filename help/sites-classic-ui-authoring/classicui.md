@@ -30,4 +30,4 @@ A interface habilitada para toque é a nova interface padrão do usuário para A
 
 ## Conceito de criação (e publicação) {#concept-of-authoring-and-publishing}
 
-Independentemente da escolha da interface, há certos conceitos e ideias comuns à criação, que estão bem descritos [aqui na documentação de criação padrão](/help/sites-authoring/author.md#concept-of-authoring-and-publishing).
+Independentemente da escolha da interface, há certos conceitos e ideias comuns à criação, que estão bem descritos [aqui, na documentação de criação padrão](/help/sites-authoring/author.md#concept-of-authoring-and-publishing).

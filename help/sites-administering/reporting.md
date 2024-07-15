@@ -32,15 +32,15 @@ Para ajudar você a monitorar e analisar o estado da sua instância, o Adobe Exp
 
 >[!NOTE]
 >
->Esses relatórios só estão disponíveis na interface clássica. Para obter o monitoramento e os relatórios do sistema na interface moderna do, consulte a [Painel de operações.](/help/sites-administering/operations-dashboard.md)
+>Esses relatórios só estão disponíveis na interface clássica. Para obter relatórios e monitoramento do sistema na interface moderna, consulte o [Painel de Operações.](/help/sites-administering/operations-dashboard.md)
 
-Todos os relatórios podem ser acessados no **Ferramentas** console. Selecionar **Relatórios** no painel esquerdo, clique duas vezes no relatório desejado no painel direito para que você possa abri-lo para exibição, configuração ou ambos.
+Todos os relatórios podem ser acessados no console **Ferramentas**. Selecione **Relatórios** no painel à esquerda e clique duas vezes no relatório necessário no painel à direita para abri-lo para exibição, configuração ou ambos.
 
-Novas instâncias de um relatório também podem ser criadas no **Ferramentas** console. Selecionar **Relatórios** no painel à esquerda, e **Novo...** na barra de ferramentas. Definir um **Título** e **Nome**, selecione o tipo de relatório necessário e clique em **Criar**. A nova instância do relatório aparece na lista. Clique duas vezes para abrir, em seguida, arraste um componente do sidekick para que você possa criar a primeira coluna e iniciar a definição do relatório.
+Novas instâncias de um relatório também podem ser criadas no console **Ferramentas**. Selecione **Relatórios** no painel esquerdo e, em seguida, **Novo...** na barra de ferramentas. Defina um **Título** e um **Nome**, selecione o tipo de relatório necessário e clique em **Criar**. A nova instância do relatório aparece na lista. Clique duas vezes para abrir, em seguida, arraste um componente do sidekick para que você possa criar a primeira coluna e iniciar a definição do relatório.
 
 >[!NOTE]
 >
->Além dos relatórios padrão do AEM que estão disponíveis imediatamente, você pode [desenvolver seus próprios (novos) relatórios](/help/sites-developing/dev-reports.md).
+>Além dos relatórios padrão de AEM que estão disponíveis prontamente, você pode [desenvolver seus próprios (novos) relatórios](/help/sites-developing/dev-reports.md).
 
 ## Noções básicas da personalização de relatórios {#the-basics-of-report-customization}
 
@@ -57,9 +57,9 @@ Há vários formatos de relatórios disponíveis. Os relatórios a seguir usam c
 >Os seguintes relatórios têm seu próprio formato e personalização:
 >
 >
->* [Verificação de integridade](#health-check) O usa campos de seleção para especificar os dados que você deseja relatar.
->* [Uso do disco](#disk-usage) O usa links para detalhar a estrutura do repositório.
->* [Fluxo de trabalho](/help/sites-administering/reporting.md#workflow-report) fornece uma visão geral dos workflows em execução na sua instância.
+>* A [Verificação de integridade](#health-check) usa campos de seleção para especificar os dados que você deseja relatar.
+>* [Uso do disco](#disk-usage) usa links para detalhar a estrutura do repositório.
+>* [Fluxo de trabalho](/help/sites-administering/reporting.md#workflow-report) fornece uma visão geral dos fluxos de trabalho em execução na sua instância.
 >
 >Portanto, os procedimentos a seguir para a configuração da coluna não são apropriados. Consulte as descrições de relatórios individuais para obter seus detalhes.
 
@@ -67,7 +67,7 @@ Há vários formatos de relatórios disponíveis. Os relatórios a seguir usam c
 
 As colunas podem ser adicionadas, reposicionadas ou removidas de qualquer um dos relatórios, seja padrão ou personalizado.
 
-A variável **Componentes** A guia do sidekick (disponível na página de relatório) lista todas as categorias de dados que podem ser selecionadas como colunas.
+A guia **Components** do sidekick (disponível na página de relatório) lista todas as categorias de dados que podem ser selecionadas como colunas.
 
 Para alterar a seleção de dados:
 
@@ -83,7 +83,7 @@ Para alterar a seleção de dados:
 
 Cada coluna no relatório tem um menu suspenso. Isso se torna visível quando o cursor do mouse se move sobre a célula de título da coluna.
 
-Uma cabeça de seta é exibida na extremidade direita da célula de título (não deve ser confundida com a cabeça de seta imediatamente à direita do texto de título que indica a [mecanismo de classificação atual](#sorting-the-data)).
+Uma ponta de seta é exibida na extremidade direita da célula de título (não confunda com a ponta de seta imediatamente à direita do texto do título que indica o [mecanismo de classificação atual](#sorting-the-data)).
 
 ![reportcolumnsort](assets/reportcolumnsort.png)
 
@@ -94,13 +94,13 @@ As opções disponíveis no menu dependem da configuração da coluna (conforme 
 Os dados podem ser classificados de acordo com uma coluna específica por:
 
 * clicar no cabeçalho de coluna apropriado; a classificação alterna entre crescente e decrescente, indicado por um cabeçalho de seta imediatamente ao lado do texto do título
-* use o [menu suspenso da coluna](#column-drop-down-menu) para selecionar especificamente **Ordenar por ordem crescente** ou **Ordenar por ordem decrescente**; novamente, isso é indicado por uma seta imediatamente ao lado do texto do título
+* use o menu suspenso da [coluna](#column-drop-down-menu) para selecionar especificamente **Classificar em Ordem Crescente** ou **Classificar em Ordem Decrescente**; novamente, isso é indicado por uma seta imediatamente ao lado do texto do título
 
 ### Gráfico de Grupos e Dados Atuais {#groups-and-the-current-data-chart}
 
-Nas colunas apropriadas, você pode selecionar **Agrupar por esta coluna** do [menu suspenso da coluna](#column-drop-down-menu). Isso agrupa os dados de acordo com cada valor distinto nessa coluna. É possível selecionar mais de uma coluna a ser agrupada. A opção fica esmaecida (esmaecida) quando os dados na coluna são inadequados. Ou seja, cada entrada é distinta e única, de modo que nenhum grupo pode ser formado. Por exemplo, a coluna ID de usuário do relatório do usuário.
+Nas colunas apropriadas, você pode selecionar **Agrupar por esta coluna** no menu suspenso da [coluna](#column-drop-down-menu). Isso agrupa os dados de acordo com cada valor distinto nessa coluna. É possível selecionar mais de uma coluna a ser agrupada. A opção fica esmaecida (esmaecida) quando os dados na coluna são inadequados. Ou seja, cada entrada é distinta e única, de modo que nenhum grupo pode ser formado. Por exemplo, a coluna ID de usuário do relatório do usuário.
 
-Depois que pelo menos uma coluna for agrupada, um gráfico de pizza de **Dados atuais** é gerado, com base nesse agrupamento. Se várias colunas forem agrupadas, isso será indicado no gráfico.
+Depois que pelo menos uma coluna é agrupada, um gráfico de pizza de **Dados atuais** é gerado, com base neste agrupamento. Se várias colunas forem agrupadas, isso será indicado no gráfico.
 
 ![reportuser](assets/reportuser.png)
 
@@ -108,7 +108,7 @@ Mover o cursor sobre o gráfico de pizza mostra o valor agregado do segmento apr
 
 ### Filtros e agregações {#filters-and-aggregates}
 
-Nas colunas apropriadas, você também pode configurar **Configurações do filtro** e/ou **Agregados** do [menu suspenso da coluna](#column-drop-down-menu).
+Nas colunas apropriadas, você também pode definir **Configurações de Filtro** e/ou **Agregações** no menu suspenso da [coluna](#column-drop-down-menu).
 
 #### Filtros {#filters}
 
@@ -138,7 +138,7 @@ Você também pode selecionar um método de agregação (que pode variar depende
 
 ### Propriedades da coluna {#column-properties}
 
-Essa opção só estará disponível quando a variável [Coluna genérica](#generic-column) foi usada na [Relatório do usuário](#user-report).
+Esta opção só está disponível quando a [coluna Genérica](#generic-column) foi usada no [Relatório de Usuário](#user-report).
 
 ### Dados históricos {#historic-data}
 
@@ -151,9 +151,9 @@ Os dados são:
 
 O relatório pode ser gerado:
 
-1. Definir **Agrupamento** na coluna obrigatória.
-1. **Editar** a configuração para que você possa definir instantâneos por hora ou por dia.
-1. **Concluir...** a definição para iniciar a coleta de instantâneos.
+1. Defina **Agrupamento** na coluna necessária.
+1. **Edite** a configuração para poder definir instantâneos por hora ou por dia.
+1. **Concluir...** a definição para iniciar a coleção de instantâneos.
 
    O botão deslizante vermelho/verde na parte superior esquerda indica quando os instantâneos estão sendo coletados.
 
@@ -167,39 +167,39 @@ Quando a coleta de dados começar, é possível selecionar:
 
   Você pode selecionar datas de e até para os dados do relatório a serem mostrados.
 
-* **Interval**
+* **Intervalo**
 
   Mês, Semana, Dia, Hora podem ser selecionados para a escala e agregação do relatório.
 
   Por exemplo, se os instantâneos diários estiverem disponíveis para fevereiro de 2011:
 
-   * Se o intervalo estiver definido como `Day`, cada instantâneo é mostrado como um valor único no gráfico.
-   * Se o intervalo estiver definido como `Month`, todos os snapshots de fevereiro são agregados em um único valor (exibido como um único &quot;ponto&quot; no gráfico).
+   * Se o intervalo estiver definido como `Day`, cada instantâneo será mostrado como um valor único no gráfico.
+   * Se o intervalo for definido como `Month`, todos os instantâneos de fevereiro serão agregados em um único valor (exibido como um único &quot;ponto&quot; no gráfico).
 
-Selecione suas necessidades e clique em **Ir** para aplicá-los ao relatório. Para atualizar a exibição depois que outros instantâneos tiverem sido criados, clique em **Ir** novamente.
+Selecione seus requisitos e clique em **Ir** para aplicá-los ao relatório. Para atualizar a exibição depois da criação de mais instantâneos, clique novamente em **Ir**.
 
 ![chlimage_1-43](assets/chlimage_1-43.png)
 
 Quando os instantâneos estão sendo coletados, você pode:
 
-* Uso **Concluir...** novamente para reinicializar a coleção.
+* Use **Concluir...** novamente para reinicializar a coleção.
 
-  **Concluir** &quot;congela&quot; a estrutura do relatório (ou seja, as colunas atribuídas ao relatório e que são agrupadas, classificadas, filtradas etc.) e começa a tirar instantâneos.
+  **Término** &quot;congela&quot; a estrutura do relatório (ou seja, as colunas atribuídas ao relatório e que são agrupadas, classificadas, filtradas, etc.) e começa a tirar instantâneos.
 
-* Abra o **Editar** caixa de diálogo para que você possa selecionar **Sem instantâneos de dados** para encerrar a coleção até que seja necessário.
+* Abra a caixa de diálogo **Editar** para poder selecionar **Nenhum instantâneo de dados** para encerrar a coleção até que seja necessário.
 
-  **Editar** apenas ativa ou desativa a captura de instantâneos. Se tirar instantâneos estiver ativado novamente, ele usa o estado do relatório quando foi concluído pela última vez para tirar mais instantâneos.
+  **Editar** alterna somente a captura de instantâneos. Se tirar instantâneos estiver ativado novamente, ele usa o estado do relatório quando foi concluído pela última vez para tirar mais instantâneos.
 
 >[!NOTE]
 >
->Os instantâneos são armazenados em `/var/reports/...` onde o restante do caminho reflete o caminho do respectivo relatório e ID criada quando o relatório foi concluído.
+>Os instantâneos são armazenados em `/var/reports/...`, onde o restante do caminho espelha o caminho do respectivo relatório e a ID criada quando o relatório foi concluído.
 >
 >
 >Os snapshots antigos podem ser removidos manualmente, se você tiver certeza de que não precisa mais dessas instâncias.
 
 >[!NOTE]
 >
->Os relatórios pré-configurados não exigem alto desempenho, mas ainda é recomendável usar snapshots diários em um ambiente de produção. Se possível, execute esses instantâneos diários em um horário do dia quando não houver muita atividade no site. Isso pode ser definido com o `Daily snapshots (repconf.hourofday)` parâmetro para **Configuração de relatório do Day CQ**. Consulte [Configuração OSGI](/help/sites-deploying/configuring-osgi.md) para obter mais detalhes sobre como configurar isso.
+>Os relatórios pré-configurados não exigem alto desempenho, mas ainda é recomendável usar snapshots diários em um ambiente de produção. Se possível, execute esses instantâneos diários em um horário do dia quando não houver muita atividade no site. Isso pode ser definido com o parâmetro `Daily snapshots (repconf.hourofday)` para **Configuração de relatório do Day CQ**. Consulte [Configuração OSGI](/help/sites-deploying/configuring-osgi.md) para obter mais detalhes sobre como configurar isso.
 
 #### Limites de exibição {#display-limits}
 
@@ -213,7 +213,7 @@ Para manter o gráfico limpo por longos períodos de tempo, há limites que pode
 
 * série horizontal - o padrão e o máximo do sistema são `9`
 
-* instantâneos verticais agregados - o padrão é `35` (por série horizontal)
+* instantâneos agregados verticais - o padrão é `35` (por série horizontal)
 
 Assim, quando os limites (apropriados) são excedidos, o:
 
@@ -222,7 +222,7 @@ Assim, quando os limites (apropriados) são excedidos, o:
 
 ![chlimage_1-45](assets/chlimage_1-45.png)
 
-Relatórios personalizados também podem mostrar a **Total** valor para todas as séries. Isso é mostrado como uma série (linha horizontal e entrada na legenda).
+Relatórios personalizados também podem mostrar o valor **Total** para todas as séries. Isso é mostrado como uma série (linha horizontal e entrada na legenda).
 
 >[!NOTE]
 >
@@ -230,11 +230,11 @@ Relatórios personalizados também podem mostrar a **Total** valor para todas as
 
 ### Editar (Relatório) {#edit-report}
 
-A variável **Editar** O botão abre a **Editar relatório** Caixa de diálogo
+O botão **Editar** abre a Caixa de Diálogo **Editar Relatório**.
 
-Este é um local onde o período para coleta de snapshots para [Dados históricos](#historic-data) está definido, mas várias outras configurações também podem ser definidas:
+Este é um local onde o período para coletar instantâneos de [Dados históricos](#historic-data) é definido, mas várias outras configurações também podem ser definidas:
 
-![reportdit](assets/reportedit.png)
+![editarrelatório](assets/reportedit.png)
 
 * **Título**
 
@@ -248,7 +248,7 @@ Este é um local onde o período para coleta de snapshots para [Dados histórico
 
   Use essa opção para limitar o relatório a uma (sub) seção do repositório.
 
-* **Processamento de relatório**
+* **Processamento de Relatório**
 
    * **atualizar dados automaticamente**
 
@@ -260,18 +260,18 @@ Este é um local onde o período para coleta de snapshots para [Dados histórico
 
      Selecionar essa opção indica que os dados do relatório devem ser atualizados manualmente quando qualquer aspecto da configuração do relatório for alterado. Também significa que, quando você altera qualquer aspecto da configuração, a tabela de relatório fica em branco.
 
-     Quando essa opção estiver selecionada, a variável **[Carregar dados](#load-data)** é exibido (ao lado de **Editar** relatório). **Carregar dados** carrega os dados e atualiza os dados de relatório mostrados.
+     Quando selecionado, o botão **[Carregar dados](#load-data)** é exibido (ao lado de **Editar** no relatório). **Carregar dados** carrega os dados e atualiza os dados de relatório mostrados.
 
 * **Instantâneos**
 Você pode definir a frequência com que os instantâneos devem ser criados, diariamente, a cada hora ou não.
 
 ### Carregar dados {#load-data}
 
-A variável **Carregar dados** O botão só fica visível quando **atualizar dados manualmente** foi selecionado de **[Editar](#edit-report)**.
+O botão **Carregar dados** só estará visível quando **atualizar dados manualmente** for selecionado em **[Editar](#edit-report)**.
 
 ![chlimage_1-46](assets/chlimage_1-46.png)
 
-Clicando **Carregar dados** recarrega os dados e atualiza o relatório que está sendo exibido.
+Clicar em **Carregar dados** recarregará os dados e atualizará o relatório que está sendo mostrado.
 
 Selecionar para atualizar dados manualmente significa que:
 
@@ -285,9 +285,9 @@ Selecionar para atualizar dados manualmente significa que:
 
 Quando você **Concluir** o relatório:
 
-* A definição do relatório *a partir desse momento* é usado para tirar instantâneos. Depois disso, você pode continuar trabalhando em uma definição de relatório porque ela é separada dos instantâneos.
+* A definição de relatório *a partir desse momento* é usada para tirar instantâneos. Depois disso, você pode continuar trabalhando em uma definição de relatório porque ela é separada dos instantâneos.
 * Todos os snapshots existentes serão removidos.
-* Novos instantâneos são coletados para o [Dados históricos](#historic-data).
+* Novos instantâneos são coletados para os [dados históricos](#historic-data).
 
 Com essa caixa de diálogo, você pode definir ou atualizar seu próprio título e descrição para o relatório resultante.
 
@@ -299,7 +299,7 @@ Com essa caixa de diálogo, você pode definir ou atualizar seu próprio título
 
 O relatório de componentes fornece informações sobre como seu site usa os componentes.
 
-[Colunas de informação](#selecting-and-positioning-the-data-columns) sobre:
+[Colunas de informações](#selecting-and-positioning-the-data-columns) sobre:
 
 * Autor
 * Caminho do componente
@@ -320,7 +320,7 @@ Isso significa que você pode ver o seguinte:
 * Identificar partes do site com alterações frequentes/menos frequentes.
 * Veja como o conteúdo da página se desenvolve ao longo do tempo.
 
-Todos os componentes estão incluídos, são padrão do produto e específicos do projeto. Usar o **Editar** caixa de diálogo o usuário também pode definir uma **Caminho raiz** que define o ponto de partida do relatório - todos os componentes nessa raiz são considerados para o relatório.
+Todos os componentes estão incluídos, são padrão do produto e específicos do projeto. Usando a caixa de diálogo **Editar**, o usuário também pode definir um **Caminho raiz** que defina o ponto inicial do relatório. Todos os componentes dessa raiz serão considerados para o relatório.
 
 ![reportcomponent](assets/reportcomponent.png) ![reportcompentall](assets/reportcompentall.png)
 
@@ -348,13 +348,13 @@ Para gerar o relatório, você pode especificar o seguinte:
 
   Padrão: `24`
 
-* **máx Resultados**
+* **máx. Resultados**
 
   Número máximo de linhas de saída.
 
   Padrão: `50`
 
-* **máx Solicitações**
+* **máx. Solicitações**
 
   Número máximo de solicitações a serem analisadas.
 
@@ -378,7 +378,7 @@ Para gerar o relatório, você pode especificar o seguinte:
 
 O relatório de atividade da página lista as páginas e as ações nelas feitas.
 
-[Colunas de informação](#selecting-and-positioning-the-data-columns) sobre:
+[Colunas de informações](#selecting-and-positioning-the-data-columns) sobre:
 
 * Página
 * Hora
@@ -393,7 +393,7 @@ Isso significa que é possível monitorar:
 * Páginas alteradas com mais/menos frequência.
 * Usuários mais/menos ativos.
 
-O relatório de atividade de página obtém todas as informações do log de auditoria. Por padrão, o caminho raiz é configurado para o log de auditoria em `/var/audit/com.day.cq.wcm.core.page`.
+O relatório de atividade de página obtém todas as informações do log de auditoria. Por padrão, o caminho raiz está configurado para o log de auditoria em `/var/audit/com.day.cq.wcm.core.page`.
 
 ![reportpageactivity](assets/reportpageactivity.png)
 
@@ -401,7 +401,7 @@ O relatório de atividade de página obtém todas as informações do log de aud
 
 Este relatório fornece informações sobre conteúdo gerado pelo usuário; seja comentários, classificações ou fóruns.
 
-[Colunas de informação](#selecting-and-positioning-the-data-columns) em:
+[Colunas de informações](#selecting-and-positioning-the-data-columns) sobre:
 
 * Data
 * Endereço IP
@@ -422,7 +422,7 @@ Permite:
 
 Este relatório fornece informações sobre todos os usuários que registraram uma conta e/ou perfil; isso pode incluir autores em sua organização e visitantes externos.
 
-[Colunas de informação](#selecting-and-positioning-the-data-columns) (se disponível) sobre:
+[Colunas de informações](#selecting-and-positioning-the-data-columns) (quando disponíveis) sobre:
 
 * Idade
 * País
@@ -447,7 +447,7 @@ Permite:
 
 #### Coluna genérica {#generic-column}
 
-A variável **Genérico** coluna está disponível no Relatório de usuário para que você possa acessar informações personalizadas, normalmente no [perfis de usuário](/help/sites-administering/identity-management.md#profiles-and-user-accounts); por exemplo, [Cor favorita conforme detalhado em Adicionar campos à definição do perfil](/help/sites-administering/identity-management.md#adding-fields-to-the-profile-definition).
+A coluna **Genérica** está disponível no Relatório de Usuário para que você possa acessar informações personalizadas, geralmente de [perfis de usuário](/help/sites-administering/identity-management.md#profiles-and-user-accounts); por exemplo, [Cor Favorita, conforme detalhado em Adição de Campos à Definição de Perfil](/help/sites-administering/identity-management.md#adding-fields-to-the-profile-definition).
 
 A caixa de diálogo Coluna genérica é aberta quando você realiza uma das ações a seguir:
 
@@ -456,7 +456,7 @@ A caixa de diálogo Coluna genérica é aberta quando você realiza uma das aç�
 
 ![reportusrgenericMalcolm](assets/reportusrgenericcolm.png)
 
-No **Definições** é possível definir:
+Na guia **Definições**, é possível definir:
 
 * **Título**
 
@@ -468,19 +468,19 @@ No **Definições** é possível definir:
 
 * **Caminho**
 
-  Normalmente, a propriedade é retirada do `profile`.
+  Normalmente, a propriedade é retirada de `profile`.
 
 * **Tipo**
 
-  Selecionar o tipo de campo de `String`, `Number`, `Integer`, `Date`.
+  Selecione o tipo de campo de `String`, `Number`, `Integer`, `Date`.
 
 * **Agregação Padrão**
 
-  Isso define a agregação usada por padrão se a coluna for desagrupada em um relatório com pelo menos uma coluna agrupada. Selecione a agregação necessária em `Count`, `Minimum`, `Average`, `Maximum`, `Sum`.
+  Isso define a agregação usada por padrão se a coluna for desagrupada em um relatório com pelo menos uma coluna agrupada. Selecione a agregação necessária de `Count`, `Minimum`, `Average`, `Maximum`, `Sum`.
 
-  Por exemplo, *Contagem* para um `String` campo significa que o número de caracteres distintos `String` valores é exibido para a coluna no estado agregado.
+  Por exemplo, *Count* para um campo `String` significa que o número de valores `String` distintos é exibido para a coluna no estado agregado.
 
-No **Estendido** você também poderá definir as agregações e os filtros disponíveis:
+Na guia **Extended**, você também pode definir as agregações e os filtros disponíveis:
 
 ![reportusrgenericcolmextented](assets/reportusrgenericcolmextented.png)
 
@@ -488,7 +488,7 @@ No **Estendido** você também poderá definir as agregações e os filtros disp
 
 Isso fornece uma visão geral concisa, fornecendo informações sobre as instâncias individuais de workflows, em execução e concluídos.
 
-[Colunas de informação](#selecting-and-positioning-the-data-columns) sobre:
+[Colunas de informações](#selecting-and-positioning-the-data-columns) sobre:
 
 * Concluído
 * Duração
@@ -502,7 +502,7 @@ Isso significa que você pode:
 
 * Monitore a duração média dos workflows; se isso ocorrer regularmente, pode destacar problemas com o workflow.
 
-![reportworkflowinstance](assets/reportworkflowintance.png)
+![reportworkflowintance](assets/reportworkflowintance.png)
 
 ### Relatório de fluxo de trabalho {#workflow-report}
 
@@ -510,13 +510,13 @@ Isso fornece estatísticas importantes sobre os workflows em execução na sua i
 
 ![reportworkflow](assets/reportworkflow.png)
 
-## Uso de relatórios em um ambiente de publicação {#using-reports-in-a-publish-environment}
+## Uso de relatórios em um ambiente Publish {#using-reports-in-a-publish-environment}
 
 Depois de configurar os relatórios de acordo com seus requisitos específicos, você pode ativá-los para transferir a configuração para o ambiente de publicação.
 
 >[!CAUTION]
 >
->Se você quiser **Dados históricos** para o Ambiente de publicação, **Concluir** o relatório no ambiente de Autor antes da ativação da página.
+>Se você quiser **dados históricos** do ambiente Publish, **Conclua** o relatório no ambiente do Autor antes de ativar a página.
 
 O relatório apropriado é então acessível em
 
@@ -526,15 +526,15 @@ Por exemplo, o relatório de Conteúdo gerado pelo usuário pode ser encontrado 
 
 `http://localhost:4503/etc/reports/ugcreport.html`
 
-Isso agora relata os dados coletados do ambiente de publicação.
+Agora, ele relata os dados coletados do ambiente do Publish.
 
-Como nenhuma configuração de relatório é permitida no ambiente de publicação, a variável **Editar** e **Concluir** botões não estão disponíveis. No entanto, é possível selecionar a variável **Período** e **Interval** para o **Dados históricos** relata se os snapshots estão sendo coletados.
+Como nenhuma configuração de relatório é permitida no ambiente Publish, os botões **Editar** e **Concluir** não estão disponíveis. No entanto, você pode selecionar o **Período** e o **Intervalo** para os relatórios de **Dados históricos** se os instantâneos estiverem sendo coletados.
 
 ![reportsucgpublish](assets/reportsucgpublish.png)
 
 >[!CAUTION]
 >
->O acesso a esses relatórios pode ser um problema de segurança; portanto, a Adobe recomenda configurar o Dispatcher para que `/etc/reports` não está disponível para visitantes externos. Consulte a [Lista de verificação de segurança](security-checklist.md) para obter mais detalhes.
+>O acesso a esses relatórios pode ser um problema de segurança; portanto, a Adobe recomenda que você configure o Dispatcher para que `/etc/reports` não fique disponível para visitantes externos. Consulte a [Lista de Verificação de Segurança](security-checklist.md) para obter mais detalhes.
 
 ## Permissões necessárias para executar relatórios {#permissions-needed-for-running-reports}
 
@@ -545,7 +545,7 @@ As permissões necessárias dependem da ação:
 
 Em uma instalação padrão do AEM, as seguintes permissões são predefinidas para os relatórios:
 
-* **Relatório do usuário**
+* **Relatório de usuário**
 
   `user administrators` - ler e gravar
 
@@ -553,7 +553,7 @@ Em uma instalação padrão do AEM, as seguintes permissões são predefinidas p
 
   `contributors` - ler e gravar
 
-* **Relatório de componente**
+* **Relatório de componentes**
 
   `contributors` - ler e gravar
 
@@ -565,4 +565,4 @@ Em uma instalação padrão do AEM, as seguintes permissões são predefinidas p
 
   `workflow-users` - ler e gravar
 
-Todos os membros da `administrators` grupo têm os direitos necessários para criar relatórios.
+Todos os membros do grupo `administrators` têm os direitos necessários para criar relatórios.

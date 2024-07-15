@@ -86,9 +86,9 @@ Para criar uma configuração de tradução:
 
    ![Criar configuração de tradução](assets/create-translation-configuration.png)
 
-1. Clique em **Criar** e a variável **Editar configuração** é exibida, onde você pode definir as propriedades de configuração.
+1. Clique em **Criar** e a janela **Editar Configuração** será exibida, onde você poderá definir as propriedades de configuração.
 
-1. Lembre-se de que os Fragmentos de conteúdo são armazenados como ativos no AEM. Clique em **Assets** guia.
+1. Lembre-se de que os Fragmentos de conteúdo são armazenados como ativos no AEM. Clique na guia **Assets**.
 
 ![Propriedades de configuração de tradução](assets/translation-configuration.png)
 
@@ -117,9 +117,9 @@ Para fazer isso, navegue até a raiz do idioma do conteúdo. Para os fins do nos
 /content/dam/<your-project>/en
 ```
 
-1. Vá para a navegação global e acesse **Navegação** > **Assets** > **Arquivos**.
+1. Vá para a navegação global e vá para **Navegação** > **Assets** > **Arquivos**.
 1. No console de ativos, selecione a raiz do idioma a ser configurada e clique em **Propriedades**.
-1. Clique em **Cloud Service** guia.
+1. Clique na guia **Cloud Service**.
 1. Em **Configurações do Cloud Service**, na lista suspensa **Adicionar configuração**, selecione o conector. Ele deve aparecer na lista suspensa quando você tiver instalado o pacote, conforme [descrito anteriormente.](#connect-translation-provider)
 1. Em **Configurações do Cloud Service**, na lista suspensa **Adicionar configuração**, selecione também a configuração.
 1. Clique em **Salvar e fechar**.
@@ -133,7 +133,7 @@ Agora que você concluiu esta parte da jornada de tradução headless, você dev
 * Compreender os parâmetros fundamentais da estrutura de integração de tradução no AEM.
 * Ser capaz de configurar sua própria conexão com o serviço de tradução.
 
-Desenvolva esse conhecimento e continue sua jornada de tradução AEM headless revisando o documento a seguir [Configurar regras de tradução,](translation-rules.md) onde você aprenderá a definir qual conteúdo traduzir.
+Desenvolva esse conhecimento e continue sua jornada de tradução AEM headless revisando a seguir o documento [Configurar regras de tradução](translation-rules.md), onde você aprenderá a definir qual conteúdo traduzir.
 
 ## Recursos adicionais {#additional-resources}
 

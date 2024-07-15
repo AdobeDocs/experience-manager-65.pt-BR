@@ -25,7 +25,7 @@ O AEM se integra ao PhoneGap para que você possa criar aplicativos facilmente u
 
 >[!NOTE]
 >
->Antes de começar a usar o AEM Mobile no Adobe PhoneGap, certifique-se de configurar seu ambiente e começar a usar o [Painel de aplicativos do AEM Mobile](/help/mobile/phonegap-authoring-apps.md).
+>Antes de começar a usar o AEM Mobile no Adobe PhoneGap, configure seu ambiente e comece a usar o [Painel de Aplicativos do AEM Mobile](/help/mobile/phonegap-authoring-apps.md).
 
 Os seguintes recursos ajudarão você a começar a usar o AEM Mobile com o Adobe PhoneGap:
 
@@ -35,13 +35,13 @@ Os seguintes recursos ajudarão você a começar a usar o AEM Mobile com o Adobe
 
 * [Serviços de conteúdo da AEM Mobile: uma visão geral](/help/mobile/develop-content-as-a-service.md)
 
-   * Para habilitar o Content Services e os Modelos de Dados, consulte [Administração dos serviços de conteúdo](/help/mobile/developing-content-services.md)
-   * Para saber mais sobre Criação de modelos, consulte [Desenvolvimento de modelos](/help/mobile/administer-mobile-apps.md)
-   * Para saber mais sobre renderização e entrega, consulte [Renderização e entrega de serviços de conteúdo](/help/mobile/rendering-and-delivery.md)
+   * Para habilitar o Content Services e os Modelos de Dados, consulte [Administrando Serviços de Conteúdo](/help/mobile/developing-content-services.md)
+   * Para saber mais sobre como Criar Modelos, consulte [Desenvolvendo Modelos](/help/mobile/administer-mobile-apps.md)
+   * Para saber mais sobre Renderização e Entrega, consulte [Renderização e Entrega de Serviços de Conteúdo](/help/mobile/rendering-and-delivery.md)
 
 >[!NOTE]
 >
->Para executar os aplicativos móveis do AEM em qualquer dispositivo móvel iOS ou Android, consulte [Início rápido móvel usando o aplicativo de verificação de AEM](/help/mobile/phonegap-mobile-quickstart.md).
+>Para executar os aplicativos móveis do AEM em qualquer dispositivo móvel iOS ou Android, consulte [Início Rápido para Dispositivos Móveis usando o aplicativo de verificação do AEM](/help/mobile/phonegap-mobile-quickstart.md).
 
 ## Avançando {#getting-ahead}
 

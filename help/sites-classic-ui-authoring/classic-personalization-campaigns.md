@@ -39,13 +39,13 @@ O gerenciamento de campanhas é composto de vários elementos:
 No Adobe Experience Manager (AEM), as marcas são a unidade de nível superior e formam uma coleção de **Campanhas**.
 
 * **Campanhas**
-Uma campanha é uma coleção de dados **Experiências**.
+Uma campanha é uma coleção de **Experiências** individuais.
 
 * **Experiências**
-O conteúdo focado forma as várias experiências, apresentadas ao visitante no **Pontos de contato**. Há vários tipos de experiência disponíveis:
+O conteúdo focalizado forma as várias experiências, apresentadas ao visitante em **Pontos de contato**. Há vários tipos de experiência disponíveis:
 
    * **Teasers**
-     [Páginas/parágrafos do teaser](#teasers) são usados para orientar visitantes específicos **Segmentos** conteúdo focado nos interesses deles.
+     [Páginas/Parágrafos](#teasers) do Teaser são usados para direcionar o visitante específico **Segmentos** para um conteúdo que focalize seus interesses.
 
      As páginas de teaser podem:
 
@@ -56,7 +56,7 @@ O conteúdo focado forma as várias experiências, apresentadas ao visitante no 
 
    * **Boletins informativos**
 
-     [Comunicações por e-mail](#emailmarketing) são usados para engajar os usuários e incentivá-los a visitar seu site. Normalmente, assumem a forma de um boletim informativo, enviado para o **Clientes potenciais** (que estão agrupados em **Listas**). **Nota:** A Adobe não planeja aprimorar ainda mais esse recurso. A recomendação é [usar o Adobe Campaign e a integração com o AEM](/help/sites-administering/campaign.md).
+     [Comunicações por email](#emailmarketing) são usadas para engajar os usuários e incentivá-los a visitar seu site. Normalmente, assumem a forma de um informativo, enviado para seus **Clientes potenciais** (que estão agrupados em **Listas**). **Observação:** o Adobe não está planejando aprimorar ainda mais este recurso. A recomendação é [usar o Adobe Campaign e a integração com o AEM](/help/sites-administering/campaign.md).
 
    * **Adobe Target**
 
@@ -68,15 +68,15 @@ O conteúdo focado forma as várias experiências, apresentadas ao visitante no 
 
   Por exemplo, para teasers, é a página de conteúdo na qual o parágrafo de teaser está localizado; para um boletim informativo, é a lista de mala direta.
 
-* **Clientes potenciais**
+* **Clientes Potenciais**
 
-  As informações que você coletou sobre seus visitantes e como contatá-los formam a base para seus leads. **Nota:** A Adobe não planeja aprimorar ainda mais esse recurso.
+  As informações que você coletou sobre seus visitantes e como contatá-los formam a base para seus leads. **Observação:** o Adobe não está planejando aprimorar ainda mais este recurso.
 
   A recomendação é [usar o Adobe Campaign e a integração com o AEM](/help/sites-administering/campaign.md).
 
 * **Listas**
 
-  Os clientes em potencial são agrupados em listas para que você possa realizar ações coletivas neles. Nota: **Nota:** A Adobe não planeja aprimorar ainda mais esse recurso.
+  Os clientes em potencial são agrupados em listas para que você possa realizar ações coletivas neles. Observação: **Observação:** o Adobe não está planejando aprimorar ainda mais esse recurso.
 
   A recomendação é [usar o Adobe Campaign e a integração com o AEM.](/help/sites-administering/campaign.md)
 
@@ -88,6 +88,6 @@ O conteúdo focado forma as várias experiências, apresentadas ao visitante no 
 
   O Gerenciador de campanha de marketing (MCM) é um console que permite acessar toda a funcionalidade necessária para criar e controlar suas campanhas, marcas, experiências, pontos de contato, leads, listas, segmentos e relatórios.
 
-  Ele pode ser acessado de vários locais (rotulados como **Campanhas**) ou com, por exemplo, o URL:
+  Ele pode ser acessado de vários locais (rotulados como **Campanhas**) ou com, por exemplo, a URL:
 
   `http://localhost:4502/libs/mcm/content/admin.html`

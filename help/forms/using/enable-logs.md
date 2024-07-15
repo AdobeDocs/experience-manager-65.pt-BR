@@ -25,21 +25,21 @@ Você pode configurar o utilitário logger para começar a criar registros para 
 
 Execute as seguintes etapas para configurar registros do lado do servidor:
 
-1. Ir para `https://'[server]:[port]'/system/console/configMgr`. Localize e abra o *Configuração do logger de log do Apace Sling* opção. Uma caixa de diálogo é exibida:
+1. Ir para `https://'[server]:[port]'/system/console/configMgr`. Localize e abra a opção *Configuração do log do Apace Sling*. Uma caixa de diálogo é exibida:
 
-   ![ Caixa de diálogo de opção de configuração do logger de log do Apace Sling](assets/logconfig.png)
+   ![ Caixa de diálogo de opção de configuração do agente de log do Apace Sling ](assets/logconfig.png)
 
    Opção de configuração do logger de log do Apace Sling
 
-1. Altere o **Nível de registro** para **Depurar**.
+1. Altere o **Nível de Log** para **Depuração**.
 
-1. Especifique o nome e o caminho do **Arquivo de log**.
+1. Especifique o nome e o caminho do **Arquivo de Log**.
 
    >[!NOTE]
    >
    >Para gerar logs no diretório de log dos formulários HTML5, adicione ../logs/ antes do nome do arquivo.
 
-1. Alterar **Logger** para **HTMLFormsPerfLogger**. Clique em **Salvar**.
+1. Altere **Logger** para **HTMLFormsPerfLogger**. Clique em **Salvar**.
 
 ## Configurando o registro do cliente {#configuring-client-logging}
 
@@ -66,11 +66,11 @@ A configuração de log é composta do nível de log e da categoria do log.
   </tr>
   <tr>
    <td>1</td>
-   <td>Os registros são direcionados ao navegador <strong>Console</strong></td>
+   <td>Os logs são direcionados ao <strong>Console</strong> do navegador</td>
   </tr>
   <tr>
    <td>2</td>
-   <td>Os logs são coletados em um objeto JavaScript no lado do cliente e podem ser publicados em <strong>Servidor</strong> </td>
+   <td>Os logs são coletados em um objeto JavaScript no lado do cliente e podem ser postados no <strong>Servidor</strong> </td>
   </tr>
   <tr>
    <td>3</td>
@@ -117,7 +117,7 @@ A configuração de log é composta do nível de log e da categoria do log.
   </tr>
   <tr>
    <td>7</td>
-   <td>TODOS<br type="_moz" /> </td>
+   <td>TUDO<br type="_moz" /> </td>
   </tr>
  </tbody>
 </table>
@@ -161,7 +161,7 @@ Por exemplo:
   </tr>
   <tr>
    <td>2-a4-b5-c6<br type="_moz" /> </td>
-   <td>Destino: Servidor<br /> nível xfa: INFO<br /> Nível do xfaView: DEBUG<br /> Nível xfaPerf: TRACE</td>
+   <td>Destino: Servidor<br /> nível xfa: INFO<br /> nível xfaView: DEBUG<br /> nível xfaPerf: TRACE</td>
   </tr>
  </tbody>
 </table>
@@ -177,8 +177,8 @@ Por exemplo:
 
 Se você usar o Configuration Manager para ativar o registro em log, serão gerados logs para cada solicitação de renderização até que o registro em log seja desativado novamente.
 
-1. Faça logon no Gerenciador de configuração do CQ em `https://'[server]:[port]'/system/console/configMgr` e faça logon com credenciais de administrador.
-1. Procure por e clique em **Configurações do Forms Mobile**.
+1. Faça logon no Gerenciador de configurações do CQ em `https://'[server]:[port]'/system/console/configMgr` e faça logon com credenciais de administrador.
+1. Procure por e clique em **Configurações de Forms Móvel**.
 1. Na caixa de texto Opções de Depuração, insira as configurações de log conforme descrito na seção anterior, por exemplo, **2-a4-b5-c6**
 
    ![Configuração do Forms](assets/forms_configuration.png)
@@ -187,23 +187,23 @@ Se você usar o Configuration Manager para ativar o registro em log, serão gera
 
 ## Upload de logs {#uploading-logs}
 
-Se o destino for definido como 1, todas as mensagens de log do script do cliente serão direcionadas ao console. Se um administrador exigir esses registros junto com os registros do servidor, defina o nível de destino como 2. Nesse nível, todos os logs são coletados em um objeto JS no lado do cliente e se o formulário for renderizado com o Perfil padrão, então uma **Enviar logs** é exibido à esquerda de **Realçar campos existentes** botão na barra de ferramentas. Quando o usuário clica no link, todos os logs coletados são publicados no servidor e são registrados no arquivo de log de erros configurado no servidor.
+Se o destino for definido como 1, todas as mensagens de log do script do cliente serão direcionadas ao console. Se um administrador exigir esses registros junto com os registros do servidor, defina o nível de destino como 2. Neste nível, todos os logs são coletados em um objeto JS no lado do cliente e, se o formulário for renderizado com o Perfil padrão, o botão **Enviar logs** será exibido à esquerda do botão **Realçar campos existentes** na barra de ferramentas. Quando o usuário clica no link, todos os logs coletados são publicados no servidor e são registrados no arquivo de log de erros configurado no servidor.
 
 Por padrão, todas as informações são adicionadas ao arquivo error.log no diretório /crx-repository/logs/.
 
 Para alterar o local e o nome do arquivo de log:
 
-1. Faça logon no Configuration Manager como administrador. O URL padrão do Configuration Manager é `https://'[server]:[port]'/system/console/configMgr`.
-1. Clique em **Configuração do logger de log do Apache Sling**. Uma caixa de diálogo é exibida.
+1. Faça logon no Configuration Manager como administrador. A URL padrão do Configuration Manager é `https://'[server]:[port]'/system/console/configMgr`.
+1. Clique em **Configuração do logger do Apache Sling**. Uma caixa de diálogo é exibida.
 
    ![logconfig-1](assets/logconfig-1.png)
 
-1. Altere o **Nível de registro** para depurar.
+1. Altere o **Nível de Log** para Depurar.
 
-1. Especifique o caminho e o nome do **Arquivo de log**.
+1. Especifique o caminho e o nome do **Arquivo de Log**.
 
    >[!NOTE]
    >
-   >Para criar logs no mesmo diretório em que outros arquivos de log são mantidos, especifique ../logs/&lt;filename> na propriedade Arquivos de log.
+   >Para criar logs no mesmo diretório em que outros arquivos de log são mantidos, especifique ../logs/&lt;filename> na propriedade Arquivos de Log.
 
 1. Altere o **Logger** para **HTMLFormsPerfLogger** e clique em **Salvar**.

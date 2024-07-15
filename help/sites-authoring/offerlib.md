@@ -32,12 +32,12 @@ Crie uma marca à qual suas ofertas serão associadas. Abra uma marca no console
 
 Ao criar uma marca usando o console Ofertas, ela também aparece no [Console Atividades](/help/sites-authoring/activitylib.md) onde é possível adicionar e administrar as atividades da marca.
 
-1. No console Navegação, clique em **Personalização** > **Ofertas**.
+1. No console Navegação, clique em **Personalization** > **Ofertas**.
 
-   ![screen-shot_2019-03-05at124139-1](assets/screen-shot_2019-03-05at124139-1.png)
+   ![captura de tela_2019-03-05at124139-1](assets/screen-shot_2019-03-05at124139-1.png)
 
-1. Clique em **Criar** e depois **Criar** **Marca**.
-1. Selecione o modelo da marca e clique em **Próxima**.
+1. Clique em **Criar** e depois em **Criar** **Marca**.
+1. Selecione o modelo da marca e clique em **Avançar**.
 1. Digite um título para a marca conforme você queira que ele seja exibido nos consoles de Ofertas e Atividades. Também é possível digitar ou selecionar uma ou mais tags para associar à marca.
 1. Clique em **Criar**.
 
@@ -48,7 +48,7 @@ Adicione uma pasta à biblioteca de ofertas de uma marca para organizar e armaze
 1. No console de Ofertas, abra o local em que deseja criar a pasta. Por exemplo, abra a marca para criar uma pasta de nível superior ou abra outra pasta na biblioteca.
 1. Clique em **Criar** > **Criar pasta ou oferta**.
 
-   ![screen-shot_2019-03-05at124557](assets/screen-shot_2019-03-05at124557.png)
+   ![captura de tela_2019-03-05at124557](assets/screen-shot_2019-03-05at124557.png)
 
 1. Selecione **Pasta** e clique em **Avançar**.
 1. Digite o título que você atribuir para a exibição da pasta na biblioteca de ofertas e digite ou selecione tags.
@@ -66,11 +66,11 @@ Após criar a oferta, você pode abri-la para criar o conteúdo.
 1. No console Ofertas, abra o local em que deseja criar a oferta. Por exemplo, abra a marca para criar uma oferta de nível superior ou abra uma pasta na biblioteca.
 1. Clique em **Criar** > **Criar pasta ou oferta**.
 
-   ![screen-shot_2019-03-05at124557-1](assets/screen-shot_2019-03-05at124557-1.png)
+   ![captura de tela_2019-03-05at124557-1](assets/screen-shot_2019-03-05at124557-1.png)
 
-1. Selecione o **Página de oferta** e clique em **Próxima**.
-1. Digite um título para a oferta e, opcionalmente, selecione ou digite uma ou mais tags para associar à oferta e clique em **Criar**.
-1. Na caixa de diálogo de confirmação, para abrir a oferta para edição, clique em **Abrir página**.
+1. Selecione o modelo **Página de Oferta** e clique em **Avançar**.
+1. Digite um título para a oferta e, opcionalmente, selecione ou digite uma ou mais marcas para associar à oferta e clique em **Criar**.
+1. Na caixa de diálogo de confirmação, para abrir a oferta para edição, clique em **Abrir Página**.
 
 ## Edição de uma oferta {#editing-an-offer}
 
@@ -94,14 +94,14 @@ Exclua uma oferta quando ela não for mais necessária. Ao tentar excluir uma of
 1. Na caixa de diálogo exibida, clique em **Excluir** para confirmar a exclusão.
 1. Se a oferta for usada em uma ou mais experiências, uma caixa de diálogo será exibida para indicar que a oferta é referenciada:
 
-   * Para excluir a oferta e removê-la das experiências, clique em **Forçar Exclusão**.
+   * Para excluir a oferta e removê-la das experiências, clique em **Forçar exclusão**.
    * Para manter a oferta, clique em **Cancelar**.
 
 ## Pesquisando Ofertas {#searching-for-offers}
 
 Pesquise ofertas de qualquer marca usando palavras-chave para corresponder ao título.
 
-![screen-shot_2019-03-05at124731](assets/screen-shot_2019-03-05at124731.png)
+![captura de tela_2019-03-05at124731](assets/screen-shot_2019-03-05at124731.png)
 
 Os critérios de pesquisa atuais aparecem ao lado dos resultados da pesquisa. Você também pode classificar os resultados por coluna em ordem crescente ou decrescente. É possível executar uma pesquisa em qualquer pasta de qualquer biblioteca de ofertas. Os resultados da pesquisa são os mesmos independentemente da pasta atual.
 

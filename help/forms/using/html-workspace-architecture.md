@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Arquitetura do AEM Forms Workspace {#aem-forms-workspace-architecture}
 
-O espaço de trabalho do AEM Forms é um aplicativo web hospedado no CRX™. Quando o espaço de trabalho é aberto em um navegador, um recurso CRX é acessado e o aplicativo é renderizado como página HTML no navegador.
+O espaço de trabalho do AEM Forms é um aplicativo web hospedado no CRX™. Quando o espaço de trabalho é aberto em um navegador, um recurso do CRX é acessado e o aplicativo é renderizado como a página HTML no navegador.
 
 O aplicativo acessa o servidor do AEM Forms nos endpoints REST para fazer o seguinte:
 
@@ -29,9 +29,9 @@ O aplicativo acessa o servidor do AEM Forms nos endpoints REST para fazer o segu
 
 O servidor do AEM Forms acessa o banco de dados do AEM Forms pelo JDBC. O banco de dados mantém tarefas, processos e suas instâncias, usuários e informações relacionadas.
 
-O espaço de trabalho do AEM Forms é projetado em componentes modulares JavaScript™ que podem ser personalizados e reutilizados individualmente em outras aplicações web. Os componentes são baseados no BackBone, uma biblioteca JavaScript que fornece estrutura para aplicações Web. Um artigo detalhado descrevendo a interação de componentes com o BackBone é [aqui](/help/forms/using/backbone-interaction.md). A organização dos componentes na estrutura de pastas do CRX é discutida em [este](/help/forms/using/folder-structure.md) artigo.
+O espaço de trabalho do AEM Forms é projetado em componentes modulares do JavaScript™ que podem ser personalizados individualmente e reutilizados em outros aplicativos da Web. Os componentes são baseados no BackBone, uma biblioteca do JavaScript que fornece estrutura para aplicações Web. Um artigo detalhado descrevendo a interação de componentes com o BackBone está [aqui](/help/forms/using/backbone-interaction.md). A organização dos componentes na estrutura de pastas do CRX é discutida no artigo [this](/help/forms/using/folder-structure.md).
 
 Pacotes entregues para o espaço de trabalho do AEM Forms:
 
-* `adobe-lc-workspace-pkg-<version>.zip`: é um pacote CRX, ou seja, ele pode ser implantado no CRX usando o Gerenciador de pacotes.
+* `adobe-lc-workspace-pkg-<version>.zip`: é um pacote do CRX, ou seja, pode ser implantado no CRX usando o Gerenciador de Pacotes.
 * `adobe-lc-workspace-<version>-src.zip`: é um arquivo que contém o código completo do espaço de trabalho e scripts do AEM Forms para criar os pacotes de implantação — pacotes de Entrega, Depuração e Desenvolvimento.

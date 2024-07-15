@@ -41,17 +41,17 @@ As seguintes IDs são necessárias para localizar dados do cliente. Qualquer sub
 
 Obrigatório:
 
-* ID do contrato do cliente: *dpsc-contractId*
+* ID de contrato do cliente: *dpsc-contractId*
 
 Forneça pelo menos 1 dos seguintes itens:
 
-* ID do OAuth fornecida pelo cliente do usuário final (a ID usada no sistema de direito direto do cliente): *dpsc-directEntitlementId*
+* ID do OAuth fornecida pelo cliente final (a ID usada no sistema de direito direto do cliente): *dpsc-directEntitlementId*
 * Para usuários de aplicativos Windows, a App Store ID do usuário final: *dpsc-windowsAppStoreId*
-* O endereço de email que o usuário final usou para interagir com o aplicativo da DPS: *email*
+* O endereço de email que o usuário final usou para interagir com o aplicativo DPS: *email*
 
 ### Perguntas frequentes {#frequently-asked-questions-faq}
 
-**O Adobe exclui minhas compras do App Store ao iniciar uma solicitação DELETE?**
+**O Adobe está excluindo minhas compras do App Store ao iniciar uma solicitação DELETE?**
 
 O Adobe exclui informações que tem de compras da App Store (assinaturas e assim por diante), mas as compras ainda estão registradas nas App Store. Se o aplicativo (usuário final) estiver conectado à App Store, esses recibos serão coletados novamente e enviados ao Adobe. Posteriormente, elas são consideradas novas compras e são restauradas pelo aplicativo, com acesso novamente.
 

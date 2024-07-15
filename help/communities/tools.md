@@ -21,18 +21,18 @@ ht-degree: 0%
 
 Para acessar o console de ferramentas das Comunidades, faça logon na instância do autor:
 
-* Na navegação global: **[!UICONTROL Ferramentas]** > **[!UICONTROL Communities]**.
+* Da navegação global: **[!UICONTROL Ferramentas]** > **[!UICONTROL Comunidades]**.
 
   ![comunidades](assets/communities-home.png)
 
-* [Modelos de site](sites.md) - Console para criação e gerenciamento de modelos de site.
+* [Modelos de Site](sites.md) - Console para criação e gerenciamento de modelos de site.
 
-* [Modelos de grupo](tools-groups.md) - Console para criação e gerenciamento de modelos de grupo.
+* [Modelos de Grupo](tools-groups.md) - Console para criação e gerenciamento de modelos de grupo.
 
 * [Funções da comunidade](functions.md) - Console para criação e gerenciamento de funções da comunidade.
 
-* [Configuração de armazenamento](srp-config.md) - Console para configuração e seleção do [SRP padrão](working-with-srp.md).
+* [Configuração de Armazenamento](srp-config.md) - Console para configuração e seleção do [SRP padrão](working-with-srp.md).
 
-* [Guia do componente](components-guide.md) - Abre um site interativo que permite a experimentação de como os componentes do SCF funcionam e como eles podem ser configurados ou personalizados.
+* [Guia de Componentes](components-guide.md) - Abre um site interativo que permite a experimentação de como os componentes SCF funcionam e como eles podem ser configurados ou personalizados.
 
-* [Medalhas](badges.md) - Console no qual é possível adicionar selos personalizados para uso no [regras de pontuação e medalha](implementing-scoring.md)
+* [Medalhas](badges.md) - Console no qual as medalhas personalizadas podem ser adicionadas para uso nas [regras de pontuação e medalha](implementing-scoring.md)

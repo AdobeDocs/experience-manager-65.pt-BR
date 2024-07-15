@@ -1,6 +1,6 @@
 ---
-title: Início Rápido da API Java do Application Manager Service (SOAP)
-description: Início Rápido da API Java do Application Manager Service (SOAP)
+title: Início Rápido do Application Manager Service JavaAPI (SOAP)
+description: Início Rápido do Application Manager Service JavaAPI (SOAP)
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS

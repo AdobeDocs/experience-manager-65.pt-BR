@@ -43,7 +43,7 @@ Ao adicionar usuários para OpenOffice, Microsoft® Word ou Microsoft® PowerPoi
 Em um sistema operacional Windows, as contas de usuário administrador usadas para conversão de PDF (usuários PDFG) devem substituir os privilégios de token de nível de processo. Você pode adicionar este direito usando o Editor de Diretiva de Grupo:
 
 1. No menu Iniciar do Windows, clique em Executar e depois insira gpedit.msc.
-1. Clique em Política do Computador Local > Configuração do Computador > Configurações do Windows > Configurações de Segurança > Políticas Locais > Atribuição de Direitos do Usuário. Edite o *Substituir um token de nível de processo* política para incluir o grupo Administradores.
+1. Clique em Política do Computador Local > Configuração do Computador > Configurações do Windows > Configurações de Segurança > Políticas Locais > Atribuição de Direitos do Usuário. Edite a política *Replace a process level token* para incluir o grupo Administradores.
 1. Adicione o usuário à entrada Substituir um token no nível do processo.
 
 ### Configuração adicional necessária para OpenOffice, Microsoft® Word e Microsoft® PowerPoint no Windows Server 2008 {#additional-configuration-required-for-openoffice-microsoft-word-and-microsoft-powerpoint-on-windows-server-2008}
@@ -80,7 +80,7 @@ Se você estiver executando o OpenOffice, o Microsoft® Word ou o Microsoft® Po
    Isso permite adicionar usuários do Linux®.
 
 1. Altere a permissão para o arquivo etc/sudoers de volta para 440.
-1. Permitir todos os usuários adicionados via [Adicionar uma conta de usuário](enabling-multi-threaded-file-conversions.md#add-a-user-account) para fazer conexões com o Forms Server. Por exemplo, para permitir que um usuário local chamado user1 tenha a permissão de fazer a conexão com o Forms Server, use o seguinte comando
+1. Permitir que todos os usuários adicionados via [Adicionar uma conta de usuário](enabling-multi-threaded-file-conversions.md#add-a-user-account) façam conexões com o Forms Server. Por exemplo, para permitir que um usuário local chamado user1 tenha a permissão de fazer a conexão com o Forms Server, use o seguinte comando
 
    `xhost +local:user1@`
 

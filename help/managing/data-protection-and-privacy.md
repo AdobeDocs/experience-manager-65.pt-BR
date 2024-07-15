@@ -91,11 +91,11 @@ Consulte as seções abaixo para obter a documentação regulamentar para as ár
 
 ## Fundação AEM {#aem-foundation}
 
-Consulte [Lidar com solicitações de proteção e privacidade de dados para a Fundação AEM](/help/sites-administering/handling-gdpr-requests-for-aem-platform.md).
+Consulte [Manipulando solicitações de proteção e privacidade de dados para o AEM Foundation](/help/sites-administering/handling-gdpr-requests-for-aem-platform.md).
 
 ## AEM Optando por uma coleta de dados estatísticos de uso agregados {#aem-opting-into-aggregate-usage-statistics-collection}
 
-Consulte [Coleta de Estatísticas de Uso Agregado](/help/sites-deploying/opt-in-aggregated-usage-statistics.md).
+Consulte [Coleção de Estatísticas de Uso Agregado](/help/sites-deploying/opt-in-aggregated-usage-statistics.md).
 
 ## AEM Sites {#aem-sites}
 
@@ -121,7 +121,7 @@ Para obter mais informações, consulte o seguinte:
 
 ## AEM Communities {#aem-communities}
 
-O AEM Communities concede aos titulares de dados o direito à portabilidade de dados, o direito de acesso e o direito de serem esquecidos pelo [APIs prontas para uso](/help/communities/user-ugc-management-service.md). Essas APIs permitem a exclusão e a exportação em massa de conteúdo gerado pelo usuário e a desativação de contas de usuário identificadas por meio de suas IDs autorizáveis. No entanto, a exclusão permanente da conta de usuário é realizável por meio da exclusão do nó do usuário no CRXDE Lite, que atende à necessidade de uma recusa fácil do sistema.
+A AEM Communities concede aos titulares de dados o direito à portabilidade dos dados, o direito de acesso e o direito de serem esquecidos pelas [APIs predefinidas](/help/communities/user-ugc-management-service.md). Essas APIs permitem a exclusão e a exportação em massa de conteúdo gerado pelo usuário e a desativação de contas de usuário identificadas por meio de suas IDs autorizáveis. No entanto, a exclusão permanente da conta de usuário é realizável por meio da exclusão do nó do usuário no CRXDE Lite, que atende à necessidade de uma recusa fácil do sistema.
 
 Além disso, o AEM Communities oferece privacidade por design devido ao seu console Moderação em massa, que permite que membros privilegiados encontrem e excluam as contribuições e os detalhes dos usuários. O console de gerenciamento de Membros permite limitar ao ponto de banir um colaborador. Além disso, autoriza os titulares dos dados a excluir as contribuições criadas por eles.
 
@@ -135,4 +135,4 @@ O AEM Forms inclui componentes e fluxos de trabalho que capturam, processam e ar
 * [Fluxos de trabalho centrados no Forms no OSGi](/help/forms/using/forms-workflow-osgi-handling-user-data.md)
 * [Fluxos de trabalho do Forms JEE](/help/forms/using/forms-workflow-jee-handling-user-data.md) (somente AEM Forms JEE)
 * [Segurança de documentos](/help/forms/using/document-security-handling-user-data.md) (somente AEM Forms JEE)
-* [User Management](/help/forms/using/user-management-handling-user-data.md) (somente AEM Forms JEE)
+* [Gerenciamento de usuários](/help/forms/using/user-management-handling-user-data.md) (somente AEM Forms JEE)

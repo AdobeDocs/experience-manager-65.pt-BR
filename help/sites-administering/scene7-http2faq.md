@@ -47,25 +47,25 @@ Para usar HTTP/2, você deve atender aos seguintes requisitos:
 
 * Use HTTPS seguro para suas solicitações de mídia avançada.
 * Use a CDN (content delivery network) agrupada em Adobe como parte de sua licença do Dynamic Media.
-* Use um domínio dedicado (ou seja, `images.company.com` ou `mycompany.scene7.com`), não um domínio Dynamic Media genérico (ou seja, `s7d1.scene7.com`, `s7d2.scene7.com`ou `s7d13.scene7.com`).
+* Use um domínio dedicado (isto é, `images.company.com` ou `mycompany.scene7.com`), não um domínio Dynamic Media genérico (isto é, `s7d1.scene7.com`, `s7d2.scene7.com` ou `s7d13.scene7.com`).
 
-  Para encontrar seus domínios, abra o [aplicativo de desktop do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), em seguida, faça logon na(s) conta(s) da empresa. Em seguida, acesse **[!UICONTROL Configuração]** > **[!UICONTROL Configuração do aplicativo]** > **[!UICONTROL Configurações gerais]**. Procure o campo rotulado **Nome do servidor publicado**. Se você estiver usando um domínio Dynamic Media genérico no momento, poderá solicitar a mudança para seu próprio domínio personalizado como parte dessa transição.
+  Para encontrar seus domínios, abra o [aplicativo de desktop do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) e entre na(s) conta(s) da sua empresa. Em seguida, navegue até **[!UICONTROL Configuração]** > **[!UICONTROL Configuração do Aplicativo]** > **[!UICONTROL Configurações Gerais]**. Procure o campo rotulado **Nome do Servidor Publicado**. Se você estiver usando um domínio Dynamic Media genérico no momento, poderá solicitar a mudança para seu próprio domínio personalizado como parte dessa transição.
 
 ## Qual é o processo de habilitação do HTTP/2 para minha conta do Dynamic Media? {#what-is-the-process-for-enabling-http-for-my-scene-account}
 
-1. [Use o Admin Console para criar um caso de suporte](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html?lang=pt-BR) e solicitar a mudança para HTTP/2; isso não é feito automaticamente para você.
+1. [Use o Admin Console para criar um caso de suporte](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html) e solicitar a mudança para HTTP/2; isso não é feito automaticamente para você.
 1. Forneça as seguintes informações no seu caso de suporte:
 
    * Nome do contato principal, email e número de telefone.
    * Todos os domínios que serão transferidos para HTTP2. Ou seja, `images.company.com` ou `mycompany.scene7.com`.
 
-     Para encontrar seus domínios, abra o [aplicativo de desktop do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), em seguida, faça logon na(s) conta(s) da empresa. Em seguida, acesse **[!UICONTROL Configuração]** > **[!UICONTROL Configuração do aplicativo]** > **[!UICONTROL Configurações gerais]**. Procure o campo rotulado **[!UICONTROL Nome do servidor publicado]**.
+     Para encontrar seus domínios, abra o [aplicativo de desktop do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) e entre na(s) conta(s) da sua empresa. Em seguida, navegue até **[!UICONTROL Configuração]** > **[!UICONTROL Configuração do Aplicativo]** > **[!UICONTROL Configurações Gerais]**. Procure o campo rotulado **[!UICONTROL Nome do Servidor Publicado]**.
 
    * Verifique se você usa HTTPS seguro para solicitações de mídia avançada.
    * Verifique se você está usando o CDN por meio do Adobe e se não é gerenciado com um relacionamento direto.
-   * Verifique se você está usando um domínio dedicado. Ou seja, `images.company.com` ou `mycompany.scene7.com`, não um domínio genérico do Dynamic Media, como `s7d1.scene7.com`, `s7d2.scene7.com`, `s7d13.scene7.com`.
+   * Verifique se você está usando um domínio dedicado. Ou seja, `images.company.com` ou `mycompany.scene7.com`, não é um domínio Dynamic Media genérico, como `s7d1.scene7.com`, `s7d2.scene7.com`, `s7d13.scene7.com`.
 
-     Para encontrar seus domínios, abra o [aplicativo de desktop do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), em seguida, faça logon na(s) conta(s) da empresa. Em seguida, acesse **[!UICONTROL Configuração]** > **[!UICONTROL Configuração do aplicativo]** > **[!UICONTROL Configurações gerais]**. Procure o campo rotulado **[!UICONTROL Nome do servidor publicado]**. Se você estiver usando um domínio Dynamic Media genérico no momento, poderá solicitar a mudança para seu próprio domínio personalizado como parte dessa transição.
+     Para encontrar seus domínios, abra o [aplicativo de desktop do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) e entre na(s) conta(s) da sua empresa. Em seguida, navegue até **[!UICONTROL Configuração]** > **[!UICONTROL Configuração do Aplicativo]** > **[!UICONTROL Configurações Gerais]**. Procure o campo rotulado **[!UICONTROL Nome do Servidor Publicado]**. Se você estiver usando um domínio Dynamic Media genérico no momento, poderá solicitar a mudança para seu próprio domínio personalizado como parte dessa transição.
 
 1. O Suporte ao cliente do Adobe adiciona você à lista de espera do cliente HTTP/2 com base na ordem em que as solicitações foram enviadas.
 1. Quando o Adobe estiver pronto para lidar com sua solicitação, o suporte entrará em contato com você para coordenar a transição e definir uma data limite.
@@ -87,4 +87,4 @@ O conteúdo não armazenado em cache atinge diretamente os servidores de origem 
 
 ## Como você pode verificar se um URL ou site está ativado com HTTP/2? {#how-can-you-verify-whether-a-url-or-website-is-activated-with-http}
 
-Baixe uma extensão que você pode usar com o navegador da Web. Para Firefox e Chrome, há uma extensão chamada **[!UICONTROL Indicador HTTP/2 e SPDY]**. Os navegadores só são compatíveis com HTTP/2 de forma segura, portanto, é necessário chamar um URL com HTTPS para verificar. Se houver suporte para HTTP/2, ele será indicado pela extensão no formato de um símbolo de Flash azul, e um cabeçalho &quot;X-Firefox-Spdy&quot; : &quot;h2&quot;.
+Baixe uma extensão que você pode usar com o navegador da Web. Para Firefox e Chrome, há uma extensão chamada **[!UICONTROL HTTP/2 e Indicador SPDY]**. Os navegadores só são compatíveis com HTTP/2 de forma segura, portanto, é necessário chamar um URL com HTTPS para verificar. Se houver suporte para HTTP/2, ele será indicado pela extensão no formato de um símbolo de Flash azul, e um cabeçalho &quot;X-Firefox-Spdy&quot; : &quot;h2&quot;.

@@ -34,7 +34,7 @@ Para dependências de tempo de compilação em arquivos POM, sempre dependa da v
 
 Quando um pacote é exportado, uma API é criada para que outras pessoas dependam dele. Exporte o mínimo possível e verifique se o que está sendo exportado é uma API. É muito mais fácil pegar um método/classe privado e torná-lo público do que pegar algo que foi exportado anteriormente e torná-lo privado.
 
-Sempre coloque as implementações em uma *impl* pacote. Por padrão, a variável *maven-bundle-plugin* exporta qualquer item no projeto que não tenha uma *impl* em seu nome.
+Sempre colocar implementações em um pacote *impl* separado. Por padrão, o *maven-bundle-plugin* exporta qualquer item no projeto que não tenha um *impl* em seu nome.
 
 ## Sempre defina explicitamente uma versão semântica para cada pacote exportado {#always-explicitly-define-a-semantic-version-for-each-package-exported}
 

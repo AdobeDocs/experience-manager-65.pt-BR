@@ -25,25 +25,25 @@ ht-degree: 3%
 
 <!--**Applies to:** ✅ Adaptive Form Core Components ❎ [Adaptive Form Foundation Components](/help/forms/using/create-adaptive-form.md).-->
 
-Habilitar os Componentes principais adaptáveis do Forms permite que você comece a criar, publicar e fornecer [Forms adaptável baseado em componentes principais](create-an-adaptive-form-core-components.md) e [Forms adaptável headless](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=pt-BR) do seu ambiente AEM 6.5 Forms.
+Habilitar os Componentes principais do Forms Adaptive permite começar a criar, publicar e entregar [Componentes principais baseados no Forms Adaptive](create-an-adaptive-form-core-components.md) e [Forms AEM Adaptive Headless](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=pt-BR) do seu ambiente do 6.5 Forms.
 
-Para ativar os Componentes principais do Adaptive Forms no ambiente AEM 6.5 Forms, configure e implante um [Arquétipo AEM 41 ou posterior](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR) projeto baseado em (com as opções de formulários ativadas) em todas as instâncias do Autor e do Publish.
+Para habilitar os Componentes principais do Adaptive Forms no ambiente do Forms AEM AEM 6.5, configure e implante um projeto baseado no [Arquétipo do 41 ou posterior](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR) (com opções de formulários habilitadas) em todas as instâncias do Author e do Publish.
 
-Este artigo fornece instruções detalhadas para configurar e implantar o Arquétipo AEM 41 ou posterior com base em seu ambiente AEM 6.5 Forms para ativar os Componentes principais adaptáveis do Forms. Consulte a lista abaixo para obter **AEM 6.5** versões compatíveis para ativar os Componentes principais do Forms:
+Este artigo fornece instruções detalhadas para configurar e implantar o Arquétipo AEM 41 ou posterior com base em seu ambiente AEM 6.5 Forms para ativar os Componentes principais adaptáveis do Forms. Consulte a lista abaixo para ver as versões compatíveis do **AEM 6.5** para habilitar os Componentes principais do Forms:
 
 ## Pré-requisitos {#prerequisites}
 
 Antes de ativar os Componentes principais do Adaptive Forms em um ambiente AEM 6.5 Forms:
 
-* [Atualizar para AEM 6.5 Forms Service Pack 16 (6.5.16.0) ou posterior](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html).
+* [Atualize para AEM 6.5 Forms Service Pack 16 (6.5.16.0) ou posterior](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html).
 
-* Instale a versão mais recente do [Apache Maven](https://maven.apache.org/download.cgi).
+* Instale a última versão do [Apache Maven](https://maven.apache.org/download.cgi).
 
 * Instale um editor de texto simples. Por exemplo, Microsoft Visual Studio Code.
 
 ## Criar e implantar o projeto mais recente baseado no Arquétipo AEM
 
-Para criar um Arquétipo AEM 41 ou [posteriormente](https://github.com/adobe/aem-project-archetype) projeto baseado em e implantá-lo em todas as instâncias do Autor e do Publish:
+Para criar um projeto com base no Arquétipo AEM 41 ou [posterior](https://github.com/adobe/aem-project-archetype) e implantá-lo em todas as instâncias do Autor e do Publish:
 
 1. Faça logon no computador, hospedando e executando a instância do Forms AEM 6.5, como administrador.
 1. Abra o prompt de comando ou terminal e execute o seguinte comando para criar um projeto do Arquétipo AEM (com as opções de formulários ativadas):
@@ -78,16 +78,16 @@ Para criar um Arquétipo AEM 41 ou [posteriormente](https://github.com/adobe/aem
 
    Ao executar o comando acima, considere os seguintes pontos:
 
-   * Não altere o valor de `aemVersion` propriedade de `6.5.15.0` a qualquer outra coisa.
+   * Não altere o valor da propriedade `aemVersion` de `6.5.15.0` para outra coisa.
 
-   * Defina o `archetypeVersion` propriedade para `41` ou posteriormente. Para obter a versão mais recente, consulte a seção requisitos de sistema em [Arquétipo de projeto AEM](https://github.com/adobe/aem-project-archetype) documentação.
+   * Defina a propriedade `archetypeVersion` como `41` ou posterior. Para obter a versão mais recente, consulte a seção requisitos do sistema na documentação do [Arquétipo de projeto do AEM](https://github.com/adobe/aem-project-archetype).
 
-   * Atualize o comando para refletir os valores específicos do seu ambiente, incluindo o `appTitle`, `appId`, e `groupId`. Além disso, defina o valor do  `includeFormsenrollment` propriedade para `y`. Se você usa o Forms Portal, defina a variável `includeExamples=y` opção para incluir os Componentes principais do Forms Portal no projeto.
+   * Atualize o comando para refletir os valores específicos do seu ambiente, incluindo `appTitle`, `appId` e `groupId`. Além disso, defina o valor da propriedade `includeFormsenrollment` como `y`. Se você usa o Forms Portal, defina a opção `includeExamples=y` para incluir os Componentes principais do Forms Portal no seu projeto.
 
 
 1. (Somente para projetos baseados no Arquétipo versão 41) Depois que o projeto Arquétipo AEM for criado, ative temas para o Forms adaptável baseado em Componentes principais. Para ativar temas:
 
-   1. Abra o [Pasta de projeto do arquétipo AEM]/ui.apps/src/main/content/jcr_root/apps/__appId__/components/adaptiveForm/page/customheaderlibs.html para edição:
+   1. Abra a [Pasta de Projeto do Arquétipo AEM]/ui.apps/src/main/content/jcr_root/apps/__appId__/components/adaptiveForm/page/customheaderlibs.html para edição:
 
    1. Adicione o seguinte código na linha 21:
 
@@ -105,16 +105,16 @@ Para criar um Arquétipo AEM 41 ou [posteriormente](https://github.com/adobe/aem
 
 1. Atualize o projeto para incluir a versão mais recente dos Componentes principais do Forms:
 
-   1. Abra o [Pasta de projeto do arquétipo AEM]/pom.xml para edição.
-   1. Definir versão de `core.forms.components.version` e `core.forms.components.af.version` para o [Componentes principais mais recentes do Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/version.html#aem-as-form-version-history) e garantir que ambas tenham a mesma versão que **Componentes principais do Forms** mencionado na tabela e defina a versão de `core.wcm.components.version` conforme indicado na [Componentes principais do WCM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/versions.html).
+   1. Abra a [Pasta do Projeto do Arquétipo AEM]/pom.xml para edição.
+   1. Defina as versões de `core.forms.components.version` e `core.forms.components.af.version` com a versão [mais recente dos Componentes Principais do Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/version.html#aem-as-form-version-history) e verifique se ambas têm a mesma versão que os **Componentes Principais do Forms** mencionados na tabela, e defina a versão de `core.wcm.components.version` conforme fornecido nos [Componentes Principais do WCM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/versions.html).
 
       >[!WARNING]
       >
-      >* Ao criar um projeto do Arquétipo com a versão 45, a variável `[AEM Archetype Project Folder]/pom.xml` define inicialmente a versão dos componentes principais de formulários como 1.1.28. Antes de criar ou implantar o projeto Arquétipo, atualize a versão dos componentes principais de formulários para 1.1.26. Você pode encontrar a versão mais recente no [Histórico de versão do AEM 6.5 Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/version.html#aem-as-form-version-history).
+      >* Ao criar um projeto do Arquétipo com versão 45, o `[AEM Archetype Project Folder]/pom.xml` define inicialmente a versão dos componentes principais de formulários como 1.1.28. Antes de criar ou implantar o projeto Arquétipo, atualize a versão dos componentes principais de formulários para 1.1.26. Você pode encontrar a última versão no [histórico de versões do Forms do AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/version.html#aem-as-form-version-history).
 
       >[!NOTE]
       >
-      >* Se você configurar qualquer outra topologia, adicione o envio, o preenchimento prévio e outros URLs ao arquivo de inclui na lista de permissões na camada do Dispatcher.
+      >* Se você configurar qualquer outra topologia, adicione o envio, o preenchimento prévio e outros URLs ao incluo na lista de permissões na camada do Dispatcher.
 
    1. Salvar e fechar o arquivo.
 
@@ -129,27 +129,27 @@ Para criar um Arquétipo AEM 41 ou [posteriormente](https://github.com/adobe/aem
       mvn clean install
       ```
 
-      ![arquétipo de construção-sucesso](/help/forms/using/assets/corecomponent-build-successful.png)
+      ![arquétipo-êxito](/help/forms/using/assets/corecomponent-build-successful.png)
 
 
-   Depois que o projeto do Arquétipo AEM é criado com êxito, um pacote AEM é gerado. Você pode encontrar o pacote em [Pasta de projeto do arquétipo AEM]\all\target\[appid].all-[version].zip
+   Depois que o projeto do Arquétipo AEM é criado com êxito, um pacote AEM é gerado. Você pode encontrar o pacote em [Pasta de Projeto do Arquétipo AEM]\all\target\[appid].all-[version].zip
 
-1. Use o [Gerenciador de pacotes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=en) para implantar o [Pasta de projeto do arquétipo AEM]\all\target\[appid].all-[version]pacote .zip em todas as instâncias Author e Publish.
+1. Use o [Gerenciador de Pacotes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=en) para implantar o pacote [Pasta do Projeto do Arquétipo AEM]\all\target\[appid].all-[version].zip em todas as instâncias do Autor e do Publish.
 
 >[!NOTE]
 >
 >
 >
-> * Caso encontre dificuldades ao acessar a caixa de diálogo de logon em uma instância de publicação, para instalar o pacote por meio do Gerenciador de pacotes, tente usar o URL: `http://[Publish Server URL]:[PORT]/system/console` para fazer logon. Isso permite que você acesse a página de logon em uma instância do Publish, o que permite prosseguir com o processo de instalação.
+> * Caso encontre dificuldades ao acessar a caixa de diálogo de logon em uma instância de publicação, para instalar o pacote por meio do Gerenciador de Pacotes, tente usar a URL: `http://[Publish Server URL]:[PORT]/system/console` para fazer logon. Isso permite que você acesse a página de logon em uma instância do Publish, o que permite prosseguir com o processo de instalação.
 > * Não exclua ou descarte o projeto do Arquétipo depois de implantá-lo em seu ambiente. O projeto Arquétipo é necessário para adicionar temas personalizados e novos Componentes principais adaptáveis do Forms ao seu ambiente.
 
-Os Componentes principais são ativados para o seu ambiente. Um modelo de Formulário adaptável e um tema da Tela 3.0 em branco dos Componentes principais são implantados em seu ambiente, permitindo [criar Componentes principais com base no Forms adaptável](create-an-adaptive-form-core-components.md).
+Os Componentes principais são ativados para o seu ambiente. Um modelo de Formulário adaptável baseado em Componentes principais em branco e o tema Tela 3.0 são implantados em seu ambiente, permitindo que você [crie Componentes principais baseados no Forms adaptável](create-an-adaptive-form-core-components.md).
 
 ## Perguntas frequentes
 
 ### Quais são os componentes principais?
 
-A variável [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) são um conjunto de componentes padronizados de Gerenciamento de Conteúdo na Web (WCM, na sigla em inglês) para o AEM a fim de acelerar o tempo de desenvolvimento e reduzir o custo de manutenção de seus sites.
+Os [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) são um conjunto de componentes padronizados de Gerenciamento de Conteúdo na Web (WCM) para o AEM, a fim de acelerar o tempo de desenvolvimento e reduzir o custo de manutenção de seus sites.
 
 ### Quais são os recursos adicionados à habilitação dos componentes principais?
 

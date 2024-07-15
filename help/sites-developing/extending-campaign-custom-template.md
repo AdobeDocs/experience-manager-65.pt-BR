@@ -18,11 +18,11 @@ ht-degree: 0%
 
 # Criação de um modelo de página AEM personalizado com componentes de formulário do Adobe Campaign{#creating-custom-aem-page-template-with-adobe-campaign-form-components}
 
-Esta página explica como criar um modelo de página personalizado que usa o [Formulário do Adobe Campaign](/help/sites-authoring/adobe-campaign-components.md) Geometrixx examinando o modo como o modelo para atividades no exterior (`/apps/geometrixx-outdoors/components/page_campaign_profile`) é implementada e aponta para informações importantes que podem ser necessárias ao criar seu próprio modelo personalizado.
+Esta página explica como criar um modelo de página personalizado que usa componentes do [Formulário do Adobe Campaign](/help/sites-authoring/adobe-campaign-components.md) examinando como o modelo Geometrixx-outdoors (`/apps/geometrixx-outdoors/components/page_campaign_profile`) é implementado e aponta para informações importantes que você pode precisar ao criar seu próprio modelo personalizado.
 
 >[!NOTE]
 >
->[O email e os exemplos de formulário estão disponíveis somente no Geometrixx](/help/sites-developing/we-retail.md). Baixe o conteúdo de Geometrixx de amostra do Compartilhamento de pacotes.
+>[Amostras de email e formulário só estão disponíveis em Geometrixx](/help/sites-developing/we-retail.md). Baixe o conteúdo de Geometrixx de amostra do Compartilhamento de pacotes.
 
 >[!CAUTION]
 >
@@ -46,16 +46,16 @@ Para criar um modelo de página do AEM personalizado usando componentes do Adobe
 
 1. **Configurações do ClientContext**
 
-   Ao observar as configurações de clientcontext ( `/etc/designs/geometrixx-outdoors/jcr:content/page_campaign_profile`) você verá as seguintes configurações:
+   Ao examinar as configurações de clientcontext ( `/etc/designs/geometrixx-outdoors/jcr:content/page_campaign_profile`), você verá as seguintes configurações:
 
    * O ClientContext aponta para `/etc/clientcontext/campaign`
-   * Há também uma *config* nó.
+   * Também há um nó *config* extra.
 
    ![chlimage_1-202](assets/chlimage_1-202.png)
 
 1. **head.jsp (/apps/geometrixx-outdoors/components/page_campaign_profile/head.jsp)**
 
-   Entrada **head.jsp**, você verá as seguintes linhas que usam a variável **clientcontext-config** e a variável **cloudservice-hook**:
+   Em **head.jsp**, você verá as seguintes linhas que usam o **clientcontext-config** e o **cloudservice-hook**:
 
    ```
    <cq:include path="config" resourceType="cq/personalization/components/clientcontext_optimized/config"/>
@@ -65,7 +65,7 @@ Para criar um modelo de página do AEM personalizado usando componentes do Adobe
 
 1. **body.jsp (/apps/geometrixx-outdoors/components/page_campaign_profile/body.jsp)**
 
-   Entrada **body.jsp**, os serviços em nuvem são carregados na parte inferior da página:
+   Em **body.jsp**, os serviços em nuvem são carregados na parte inferior da página:
 
    ```
    <cq:include path="cloudservices" resourceType="cq/cloudserviceconfigs/components/servicecomponents"/>
@@ -73,7 +73,7 @@ Para criar um modelo de página do AEM personalizado usando componentes do Adobe
 
 1. **Propriedades da página de campanha**
 
-   Para poder selecionar um modelo Adobe Campaign, as propriedades da página são estendidas com o **Campaign** guia:
+   Para poder selecionar um modelo de Adobe Campaign, as propriedades de página são estendidas com a guia **Campanha**:
 
    `/apps/geometrixx-outdoors/components/page_campaign_profile/dialog/items/tabs/items/campaign`
 

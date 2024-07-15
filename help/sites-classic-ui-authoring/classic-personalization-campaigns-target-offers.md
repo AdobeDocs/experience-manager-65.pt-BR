@@ -25,8 +25,8 @@ ht-degree: 8%
 
    ![Exibição de lista](do-not-localize/chlimage_1-11.png)
 
-1. Clique em **Novo ...**
-1. Você pode especificar o **Título**, **Nome** e o tipo de experiência a ser criada; nesse caso, Oferta do Test&amp;Target.
+1. Clique em **Novo...**
+1. Você pode especificar o **Título**, **Nome** e o tipo de experiência a ser criada; neste caso, Oferta do Test&amp;Target.
 
    ![chlimage_1-139](assets/chlimage_1-139.png)
 
@@ -34,7 +34,7 @@ ht-degree: 8%
 
    >[!NOTE]
    >
-   >As experiências Test&amp;Target não estão listadas no MCM. Elas podem ser acessadas no **Sites** console, em Campanhas.
+   >As experiências Test&amp;Target não estão listadas no MCM. Eles podem ser acessados no console **Sites**, em Campanhas.
 
 ## Integração com o Adobe Target {#integrating-with-adobe-target}
 

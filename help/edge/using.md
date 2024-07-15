@@ -14,7 +14,7 @@ ht-degree: 1%
 
 # Utilização de Edge Delivery Services {#usingedge}
 
-Com o Edge Delivery, você pode criar ambientes de desenvolvimento rápidos em que os autores podem atualizar e publicar conteúdo rapidamente, e novos sites podem ser iniciados rapidamente. Para isso, você pode trabalhar com várias fontes de conteúdo no mesmo site e a publicação será contínua e simplificada, independentemente da fonte escolhida. Dessa forma, leva apenas alguns segundos para ir da edição ao conteúdo ativo na Internet.
+Com o Edge Delivery, você pode criar ambientes de desenvolvimento rápidos em que os autores podem atualizar e publicar conteúdo rapidamente, e novos sites podem ser inicializados rapidamente. Para isso, você pode trabalhar com várias fontes de conteúdo no mesmo site e a publicação será contínua e simplificada, independentemente da fonte escolhida. Dessa forma, leva apenas alguns segundos para ir da edição ao conteúdo ativo na Internet.
 
 ## Criação   {#authoring-edge}
 
@@ -27,23 +27,23 @@ Se houver criação baseada em documentos, você poderá trabalhar com várias f
 
 ## Publicação {#publishing-edge}
 
-Com o Edge Delivery, a publicação de conteúdo é contínua, independentemente da sua fonte de conteúdo. O processo é o seguinte: você usa o [extensão sidekick](#using-sidekick) para acionar o mecanismo de publicação, e seu conteúdo estará disponível ao vivo no site em alguns segundos.
+Com o Edge Delivery, a publicação de conteúdo é perfeita, independentemente da sua fonte de conteúdo. O processo é o seguinte: você usa a [extensão do sidekick](#using-sidekick) para acionar o mecanismo de publicação e o conteúdo estará disponível ao vivo no seu site em alguns segundos.
 
 ## Edge Delivery Services e GitHub {#github-edge}
 
-O Edge Delivery usa o GitHub para que os clientes possam gerenciar e implantar o código diretamente do repositório do GitHub. Por exemplo, você pode escrever conteúdo no Google Docs ou no Microsoft Word e desenvolver a funcionalidade do site usando CSS e JavaScript no GitHub. Os sites são criados automaticamente para cada uma de suas ramificações, da pré-visualização de conteúdo à produção. Todos os recursos que você coloca no repositório GitHub estão disponíveis no seu site sem um processo de criação.
+A Edge Delivery usa o GitHub para que os clientes possam gerenciar e implantar o código diretamente do repositório do GitHub. Por exemplo, você pode gravar conteúdo nos documentos do Google ou no Microsoft Word e desenvolver a funcionalidade do site usando CSS e JavaScript no GitHub. Os sites são criados automaticamente para cada uma de suas ramificações, da pré-visualização de conteúdo à produção. Todos os recursos que você coloca no repositório GitHub estão disponíveis no seu site sem um processo de criação.
 
 ## Uso do Sidekick {#using-sidekick}
 
-O sidekick do AEM fornece uma barra de ferramentas com opções sensíveis ao contexto para que você possa editar, visualizar e publicar conteúdo facilmente. Depois [instalando](https://www.hlx.live/docs/sidekick-extension) A extensão AEM sidekick pode ser usada em ambientes de projeto ou ao editar conteúdo (por exemplo, em documentos do Google). Dependendo do ambiente, ele tem várias ações disponíveis, como Visualizar, Recarregar, Editar e Publicar. Você também pode alternar ambientes ao usar o sidekick que vai de pré-visualização a produção e vice-versa.
+O sidekick do AEM fornece uma barra de ferramentas com opções sensíveis ao contexto para que você possa editar, visualizar e publicar conteúdo facilmente. Depois de [instalar](https://www.hlx.live/docs/sidekick-extension) a extensão AEM sidekick, ela pode ser usada em ambientes de projeto ou quando você edita seu conteúdo (por exemplo, em documentos do Google). Dependendo do ambiente, ele tem várias ações disponíveis, como Visualizar, Recarregar, Editar e Publish. Você também pode alternar ambientes ao usar o sidekick que vai de pré-visualização a produção e vice-versa.
 
-**Para publicar**, abra o sidekick em uma página de visualização e use a ação Publicar. Depois de clicar em Publicar, a versão de visualização atual da página estará disponível em ambientes ativos e de produção.
+**Para publicar**, abra o sidekick em uma página de visualização e use a ação do Publish. Depois de clicar em Publish, a versão de visualização atual da página estará disponível em ambientes ativos e de produção.
 
 ## Integrar o AEM Assets com a criação baseada em documentos {#integrate-assets-edge}
 
 O Edge Delivery permite usar imagens disponíveis em repositórios do AEM Assets ao criar documentos no Microsoft Word ou Google Docs.
 
-As opções para usar imagens nos documentos estão disponíveis somente após [configuração do plug-in do AEM Assets sidekick](https://www.hlx.live/developer/configuring-aem-assets-sidekick-plugin).
+As opções para usar imagens em seus documentos estão disponíveis somente após [configurar o plug-in AEM Assets sidekick](https://www.hlx.live/developer/configuring-aem-assets-sidekick-plugin).
 
 O plug-in sidekick para AEM Assets oferece acesso a:
 
@@ -51,13 +51,13 @@ O plug-in sidekick para AEM Assets oferece acesso a:
 
 * AEM Assets Essentials
 
-Depois de configurar o plug-in do AEM Assets sidekick, você pode [comece a usar imagens nos documentos do Google Docs ou do Microsoft Word](https://www.hlx.live/docs/aem-assets-sidekick-plugin).
+Depois de configurar o plug-in do AEM Assets sidekick, você pode [começar a usar imagens nos documentos do Google Docs ou do Microsoft Word](https://www.hlx.live/docs/aem-assets-sidekick-plugin).
 
 ## Leitura adicional {#further-reading}
 
 Para obter mais detalhes, consulte as seguintes páginas:
 
-* Para obter detalhes sobre como começar a usar o Edge Delivery, consulte o [Build](https://www.hlx.live/docs/#build) seção da documentação de entrega do Edge.
-* Para entender como criar e publicar conteúdo usando o Edge Delivery, consulte [Publicar seção](https://www.hlx.live/docs/authoring).
-* Para entender como usar a extensão sidekick, consulte [Usar o sidekick](https://www.hlx.live/docs/sidekick) página.
-* Para criação no AEM, consulte [Página Conceitos de criação](/help/sites-authoring/author.md))
+* Para obter detalhes sobre como começar a usar o Edge Delivery, consulte a seção [Build](https://www.hlx.live/docs/#build) da documentação de entrega do Edge.
+* Para entender como criar e publicar conteúdo usando o Edge Delivery, consulte a [seção Publish](https://www.hlx.live/docs/authoring).
+* Para entender como usar a extensão sidekick, consulte a página [Uso do sidekick](https://www.hlx.live/docs/sidekick).
+* Para criação no AEM, consulte a [página Conceitos de criação](/help/sites-authoring/author.md))

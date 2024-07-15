@@ -23,38 +23,38 @@ ht-degree: 1%
 
 Na instância do autor do AEM, na navegação global:
 
-* Selecionar **[!UICONTROL Communities]** > **[!UICONTROL Sites]**.
-* Selecionar **[!UICONTROL pasta de engajamento]** para abri-lo.
-* Selecione o cartão para o **[!UICONTROL Tutorial de introdução]** Site em inglês.
+* Selecione **[!UICONTROL Comunidades]** > **[!UICONTROL Sites]**.
+* Selecione **[!UICONTROL engajar pasta]** para abri-la.
+* Selecione o cartão para o site em inglês **[!UICONTROL Tutorial de introdução]**.
 
    * Selecione a imagem do cartão.
-   * Fazer *não* selecione um ícone.
+   * *não* selecione um ícone.
 
-O resultado é alcançar o objetivo [Console de grupos](/help/communities/groups.md):
+O resultado é alcançar o [console Grupos](/help/communities/groups.md):
 
-![create-group](assets/create-group.png)
+![criar-grupo](assets/create-group.png)
 
-A função de grupos é exibida como uma pasta na qual as instâncias dos grupos são criadas. Para abri-lo, selecione a pasta Grupos. O grupo criado em Publicar está visível.
+A função de grupos é exibida como uma pasta na qual as instâncias dos grupos são criadas. Para abri-lo, selecione a pasta Grupos. O grupo criado no Publish está visível.
 
-![create-new-group](assets/create-new-group.png)
+![criar-novo-grupo](assets/create-new-group.png)
 
 ## Criar grupo principal de artes {#create-main-arts-group}
 
-Este grupo pode ser criado porque a estrutura do site para participação inclui a função de um grupo. A configuração da função no repositório do site `Reference Template` O padrão é permitir a seleção de qualquer modelo de grupo ativado. Assim, o modelo escolhido para esse novo grupo é o `Reference Group`.
+Este grupo pode ser criado porque a estrutura do site para participação inclui a função de um grupo. A configuração da função no `Reference Template` do site é padronizada para permitir a seleção de qualquer modelo de grupo habilitado. Assim, o modelo escolhido para este novo grupo é o `Reference Group`.
 
 Esses consoles são semelhantes ao console Sites de comunidades.
 
-* Selecionar **[!UICONTROL Criar grupo]**
+* Selecionar **[!UICONTROL Criar Grupo]**
 
 * **Modelo do grupo da comunidade**:
 
-   * **[!UICONTROL Título do grupo da comunidade]**: Artes
-   * **[!UICONTROL Descrição do grupo da comunidade]**: um grupo principal para vários grupos de artes
+   * **[!UICONTROL Título do Grupo da Comunidade]**: Artes
+   * **[!UICONTROL Descrição do grupo da comunidade]**: um grupo pai para vários grupos de artes
    * **[!UICONTROL Raiz do grupo da comunidade]**: *deixar como padrão*
-   * **[!UICONTROL Idiomas adicionais disponíveis do Grupo da comunidade]**: use o menu suspenso para selecionar os idiomas disponíveis do grupo da comunidade. O menu exibe todos os idiomas nos quais o site pai da comunidade é criado. Os usuários podem selecionar entre esses idiomas para criar grupos em vários locais nesta única etapa. O mesmo grupo é criado em vários idiomas especificados no console Grupos dos respectivos sites de comunidade.
-   * **[!UICONTROL Nome do grupo da comunidade]**: artes
+   * **[!UICONTROL Idioma(s) adicional(is) disponível(is) do grupo da comunidade]**: use o menu suspenso para selecionar os idiomas disponíveis do grupo da comunidade. O menu exibe todos os idiomas nos quais o site pai da comunidade é criado. Os usuários podem selecionar entre esses idiomas para criar grupos em vários locais nesta única etapa. O mesmo grupo é criado em vários idiomas especificados no console Grupos dos respectivos sites de comunidade.
+   * **[!UICONTROL Nome do Grupo da Comunidade]**: artes
    * **[!UICONTROL Modelo]**: menu suspenso para selecionar `Reference Group`
-   * Selecionar **[!UICONTROL Próxima]**
+   * Selecionar **[!UICONTROL Próximo]**
 
 ![Grupos de comunidades aninhados](assets/parent-to-nestedgroup.png)
 
@@ -73,32 +73,32 @@ Prossiga pelos outros painéis com estas configurações:
 
    * **[!UICONTROL Associação]**
 
-      * Usar padrão `Optional Membership.`
+      * Usar o padrão `Optional Membership.`
 
       * **[!UICONTROL Miniatura]**
          * `optional.*`
 
-      * **[!UICONTROL Selecionar próximo]**.
+      * **[!UICONTROL Selecione Próximo]**.
 
 * Selecione **[!UICONTROL Criar]**.
 
 ### Aninhamento de grupos no grupo de artes {#nesting-groups-within-arts-group}
 
-A variável `groups` A pasta agora contém dois grupos (atualize a página).
+A pasta `groups` agora contém dois grupos (atualize a página).
 
-![Aninhamento dos grupos](assets/create-community-group.png)
+![Aninhamento de grupos](assets/create-community-group.png)
 
-#### Publicar grupo {#publish-group}
+#### Grupo Publish {#publish-group}
 
-Antes de criar grupos aninhados no `arts` grupo, passe o mouse sobre a variável `arts` e selecione o ícone publicar para publicá-lo.
+Antes de criar grupos aninhados no grupo `arts`, passe o mouse sobre o cartão `arts` e selecione o ícone de publicação para publicá-lo.
 
-![site de publicação](assets/publish-site.png)
+![publicar-site](assets/publish-site.png)
 
 Aguarde a confirmação de que o grupo foi publicado.
 
-![publicado pelo grupo](assets/group-published.png)
+![grupo-publicado](assets/group-published.png)
 
-A variável `arts` O grupo também deve conter uma `groups` pasta, mas uma que esteja vazia e na qual novos grupos podem ser criados. Navegue até a pasta do grupo de artes e crie três grupos aninhados, cada um com uma configuração de associação diferente:
+O grupo `arts` também deve conter uma pasta `groups`, mas que esteja vazia e na qual novos grupos possam ser criados. Navegue até a pasta do grupo de artes e crie três grupos aninhados, cada um com uma configuração de associação diferente:
 
 1. **[!UICONTROL Visual]**
 
@@ -125,43 +125,43 @@ Atualize a página para que você possa ver todos os três grupos aninhados (sub
 
 Para navegar até os grupos aninhados do console Sites de comunidades:
 
-* Selecione o **[!UICONTROL pasta de engajamento]**
-* Selecionar **[!UICONTROL Cartão Tutorial de introdução]**
-* Selecione o **[!UICONTROL Grupos]** pasta
-* Selecionar **[!UICONTROL cartão arts]**
-* Selecione o **[!UICONTROL Grupos]** pasta
+* Selecione a **[!UICONTROL pasta de participação]**
+* Selecione o **[!UICONTROL cartão Tutorial de introdução]**
+* Selecione a pasta **[!UICONTROL Grupos]**
+* Selecione o **[!UICONTROL cartão de artes]**
+* Selecione a pasta **[!UICONTROL Grupos]**
 
-![create-new-group2](assets/create-new-group2.png)
+![criar-novo-grupo2](assets/create-new-group2.png)
 
 ## Publicar grupos {#publishing-groups}
 
-![site de publicação](assets/publish-site.png)
+![publicar-site](assets/publish-site.png)
 
 Depois de publicar o site principal da comunidade:
 
-* Publicar cada grupo individualmente:
+* Publish cada grupo individualmente:
 
    * Aguardando confirmação de que o grupo foi publicado.
 
-* Publique o grupo pai antes de publicar qualquer grupo aninhado em:
+* Publish o grupo pai antes de publicar quaisquer grupos aninhados em:
 
    * Todos os grupos devem ser publicados de cima para baixo.
 
-![publicado pelo grupo](assets/group-published.png)
+![grupo-publicado](assets/group-published.png)
 
-## Experiência na publicação {#experience-on-publish}
+## Experiência no Publish {#experience-on-publish}
 
-É possível experimentar os diferentes grupos quando conectado, por exemplo, com a [usuários de demonstração](/help/communities/tutorials.md#demo-users) usado para:
+É possível experimentar os diferentes grupos quando conectado, por exemplo, com os [usuários de demonstração](/help/communities/tutorials.md#demo-users) usados para:
 
-* Membro do grupo Arte/Histórico: `emily.andrews@mailinator.com/password`
+* Membro do grupo Art/History: `emily.andrews@mailinator.com/password`
    * O grupo restrito (secreto), artes/história, está visível:
    * É possível ver grupos opcionais (públicos).
    * Capaz de ingressar em grupos restritos (abertos).
 
-* Gerente de grupo: `aaron.mcdonald@mailinator.com/password`
+* Gerenciador de grupo: `aaron.mcdonald@mailinator.com/password`
 
    * É possível ver grupos opcionais (públicos).
    * Capaz de ingressar em grupos restritos (abertos).
    * Não é possível ver os grupos restritos (secretos).
 
-Acesse as comunidades [Consoles Membros e grupos](/help/communities/members.md) em autor para adicionar outros usuários a vários grupos de membros que correspondem aos grupos da comunidade.
+Acesse os [consoles Membros e Grupos](/help/communities/members.md) das Comunidades no autor para adicionar outros usuários a vários grupos de membros que correspondam aos grupos da comunidade.

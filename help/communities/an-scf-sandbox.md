@@ -20,11 +20,11 @@ ht-degree: 0%
 
 Desde o AEM 6.1 Communities, a maneira mais fácil de criar rapidamente uma sandbox é criar um site da comunidade. Consulte [Introdução ao AEM Communities](getting-started.md).
 
-Outra ferramenta útil para os desenvolvedores é a [Guia de componentes da comunidade](components-guide.md), que permite a exploração e a prototipagem rápida de componentes e recursos do Communities.
+Outra ferramenta útil para desenvolvedores é o [guia de Componentes da Comunidade](components-guide.md), que permite a exploração e a prototipagem rápida de componentes e recursos das Comunidades.
 
-O exercício de criar um site pode ser útil para entender a estrutura de um site AEM que pode incluir recursos das Comunidades, além de fornecer páginas simples nas quais explorar o trabalho com a [estrutura da componente social (SCF)](scf.md).
+O exercício de criar um site pode ser útil para entender a estrutura de um site AEM, que pode incluir recursos das Comunidades, além de fornecer páginas simples sobre as quais explorar o trabalho com a [estrutura do componente social (SCF)](scf.md).
 
-Este tutorial é principalmente para desenvolvedores novos no AEM, que estão interessados em usar os componentes SCF. Ele aborda a criação de um site de sandbox SCF, semelhante ao tutorial para [Como criar um site completo da Internet](../../help/sites-developing/website.md) que focaliza estruturas no site, como navegação, logotipo, pesquisa, barra de ferramentas e listagem de páginas secundárias.
+Este tutorial é principalmente para desenvolvedores novos no AEM, que estão interessados em usar os componentes SCF. Ele aborda a criação de um site SCF Sandbox, semelhante ao tutorial para [Como criar um site da Internet completo](../../help/sites-developing/website.md), que focaliza as estruturas no site, como navegação, logotipo, pesquisa, barra de ferramentas e listagem de páginas secundárias.
 
 O desenvolvimento ocorre em uma instância do autor, enquanto o teste com o site é melhor em uma instância de publicação.
 
@@ -39,24 +39,24 @@ As etapas deste tutorial são:
 
 >[!CAUTION]
 >
->Este tutorial não cria um site da comunidade com a funcionalidade criada usando o [Console de sites das comunidades](sites-console.md). Por exemplo, este tutorial não descreve como configurar o login, o autorregistro, [login social](social-login.md), mensagens, perfis e assim por diante.
+>Este tutorial não cria um site de comunidade com a funcionalidade criada usando o [console Sites de comunidades](sites-console.md). Por exemplo, este tutorial não descreve como configurar o login, o autorregistro, o [login social](social-login.md), as mensagens, os perfis e assim por diante.
 >
->Se um site de comunidade simples for preferido, siga as [Criar uma página de exemplo](create-sample-page.md) tutorial.
+>Se um site de comunidade simples for preferido, siga o tutorial [Criar uma página de exemplo](create-sample-page.md).
 
 ## Pré-requisitos {#prerequisites}
 
-Este tutorial pressupõe que você tenha um autor de AEM e uma instância de publicação AEM instalada com o [versão mais recente](deploy-communities.md#latest-releases) das Comunidades.
+Este tutorial pressupõe que você tenha um autor de AEM e uma instância de publicação AEM instalada com a [última versão](deploy-communities.md#latest-releases) das Comunidades.
 
 A seguir estão alguns links úteis para desenvolvedores novos na plataforma AEM:
 
-* [Introdução](../../help/sites-deploying/deploy.md#getting-started): para implantar instâncias do AEM.
+* [Introdução](../../help/sites-deploying/deploy.md#getting-started): para implantar instâncias AEM.
 
    * [Noções básicas](../../help/sites-developing/the-basics.md): para desenvolvedores de sites e recursos.
    * [Primeiras etapas para autores](../../help/sites-authoring/first-steps.md): para criação de conteúdo de página.
 
 ## Uso do ambiente de desenvolvimento do CRXDE Lite {#using-crxde-lite-development-environment}
 
-Os desenvolvedores de AEM passam grande parte do tempo no [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md) ambiente de desenvolvimento em uma instância do autor. O CRXDE Lite fornece um acesso menos restrito ao repositório CRX. As ferramentas da interface clássica e os consoles de interface habilitados para toque fornecem acesso mais estruturado a partes específicas do repositório CRX.
+Os desenvolvedores do AEM passam grande parte do tempo no ambiente de desenvolvimento [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md) em uma instância de autor. O CRXDE Lite fornece um acesso menos restrito ao repositório do CRX. As ferramentas da interface clássica e os consoles de interface habilitados para toque fornecem acesso mais estruturado a partes específicas do repositório do CRX.
 
 Depois de fazer logon com privilégios administrativos, há várias maneiras de acessar o CRXDE Lite:
 
@@ -64,11 +64,11 @@ Depois de fazer logon com privilégios administrativos, há várias maneiras de 
 
    ![crxde-lite](assets/tools-crxde.png)
 
-2. No [página de boas-vindas da interface clássica](http://localhost:4502/welcome.html), role para baixo e clique em **[!UICONTROL CRXDE Lite]** no painel direito.
+2. Na [página de boas-vindas da interface clássica](http://localhost:4502/welcome.html), role para baixo e clique em **[!UICONTROL CRXDE Lite]** no painel direito.
 
    ![classic-ui-crxde](assets/classic-ui-crxde.png)
 
-3. Navegue diretamente para `CRXDE Lite`: `<server>:<port>/crx/de`
+3. Navegar diretamente para `CRXDE Lite`: `<server>:<port>/crx/de`
 
    Por exemplo, em uma instância de autor local: [http://localhost:4502/crx/de](http://localhost:4502/crx/de)
 
@@ -82,6 +82,6 @@ Esse logon expira e você deve fazer logon novamente periodicamente usando o men
 
 Se não estiver conectado, você não poderá navegar no repositório JCR nem executar operações de edição/salvamento.
 
-***Na dúvida, faça o logon novamente!***
+***Em caso de dúvida, faça o logon novamente!***
 
-![fazer logon novamente](assets/relogin.png)
+![refazer logon](assets/relogin.png)

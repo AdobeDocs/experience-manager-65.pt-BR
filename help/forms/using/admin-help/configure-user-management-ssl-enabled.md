@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Configurar o gerenciamento de usuários para um servidor LDAP habilitado para SSL {#configure-user-management-for-an-ssl-enabled-ldap-server}
 
-Para que a sincronização funcione corretamente em LDAPS, os certificados LDAP emitidos pela CA (autoridade de certificação) devem estar presentes no JRE (Java runtime environment) do servidor de aplicativos. Importe o certificado para o arquivo JRE cacerts do servidor de aplicativos, que geralmente está no *[JAVA_HOME]* diretório /jre/lib/security/cacerts.
+Para que a sincronização funcione corretamente em LDAPS, os certificados LDAP emitidos pela CA (autoridade de certificação) devem estar presentes no JRE (Java runtime environment) do servidor de aplicativos. Importe o certificado para o arquivo JRE cacerts do servidor de aplicativos, que geralmente está no diretório *[JAVA_HOME]*/jre/lib/security/cacerts.
 
 1. Ative o SSL no servidor de diretório. Para obter detalhes, consulte a documentação fornecida pelo fornecedor do diretório.
 1. Exporte um certificado de cliente do servidor de diretório.

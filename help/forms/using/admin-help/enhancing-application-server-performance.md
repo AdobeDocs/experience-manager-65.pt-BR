@@ -24,7 +24,7 @@ Este conteúdo descreve as configurações opcionais que você pode configurar p
 
 O AEM Forms usa o repositório de formulários AEM como fonte de dados. O repositório de formulários AEM armazena ativos de aplicativos e, no tempo de execução, os serviços podem recuperar ativos do repositório como parte da conclusão de um processo de negócios automatizado.
 
-O acesso à fonte de dados pode ser significativo, dependendo do número de módulos de formulários AEM que você está executando e do número de usuários simultâneos que acessam o aplicativo. O acesso à fonte de dados pode ser otimizado usando o pool de conexões. *Pool de conexão* é uma técnica usada para evitar a sobrecarga de fazer novas conexões de banco de dados sempre que um aplicativo ou objeto de servidor exigir acesso ao banco de dados. O pool de conexões é geralmente usado em aplicativos empresariais e baseados na Web e geralmente é manipulado por, mas não limitado a, um servidor de aplicativos.
+O acesso à fonte de dados pode ser significativo, dependendo do número de módulos de formulários AEM que você está executando e do número de usuários simultâneos que acessam o aplicativo. O acesso à fonte de dados pode ser otimizado usando o pool de conexões. *O pool de conexões* é uma técnica usada para evitar a sobrecarga de fazer novas conexões de banco de dados sempre que um aplicativo ou objeto de servidor exigir acesso ao banco de dados. O pool de conexões é geralmente usado em aplicativos empresariais e baseados na Web e geralmente é manipulado por, mas não limitado a, um servidor de aplicativos.
 
 É importante configurar corretamente os parâmetros do pool de conexões para que as conexões não fiquem esgotadas, o que pode deteriorar o desempenho do aplicativo.
 
@@ -99,7 +99,7 @@ Um documento maior que o tamanho máximo em linha é armazenado no sistema de ar
 
 Quando o conteúdo do documento é embutido (ou seja, menor que o tamanho máximo embutido), o conteúdo é armazenado no banco de dados como parte da carga de serialização do documento. Portanto, aumentar o tamanho máximo em linha pode afetar o tamanho do banco de dados.
 
-**Alterar o tamanho máximo em linha**
+**Alterar o tamanho máximo incorporado**
 
 1. No console de administração, clique em Configurações > Configurações do sistema principal > Configurações.
 1. Insira um valor na caixa Tamanho Inline Máximo do Documento Padrão e clique em OK.
@@ -128,7 +128,7 @@ Um sistema muito carregado que está processando muitos documentos pode saturar 
 
 Aumento do tamanho máximo do heap do JVM = (tamanho dos documentos em linha) x (número médio de documentos processados).
 
-**Calculando o tamanho máximo do heap do JVM**
+**Calculando o tamanho máximo de heap de JVM**
 
 Neste exemplo, o heap máximo de JVM atual é definido como 512 MB e o tamanho máximo em linha é 64 KB. O servidor deve ser configurado para o cenário em que 10 trabalhos são executados simultaneamente e cada trabalho tem 9 arquivos de entrada e 1 arquivo de resultado (um total de 10 arquivos por trabalho e 100 arquivos processados simultaneamente). Todos os arquivos têm menos de 512 KB.
 
@@ -140,7 +140,7 @@ O aumento necessário no tamanho máximo do heap do JVM é calculado usando a se
 
 O tamanho máximo do heap do JVM deve ser aumentado em 50 MB para um total de 562 MB.
 
-**Considerar fragmentação de heap**
+**Considerando fragmentação de heap**
 
 Definir o tamanho de documentos em linha como valores grandes aumenta o risco de um OutOfMemoryError em sistemas propensos à fragmentação de heap. Para armazenar um documento em linha, a memória heap JVM deve ter espaço contíguo suficiente. Alguns sistemas operacionais, JVMs e algoritmos de coleta de lixo são propensos à fragmentação de heap. A fragmentação diminui a quantidade de espaço de heap contíguo e pode levar a um OutOfMemoryError, mesmo quando há espaço livre total suficiente.
 
@@ -154,16 +154,16 @@ Esta seção descreve configurações específicas para um ambiente do WebSphere
 
 ### Aumentando a memória máxima alocada para a JVM {#increasing-the-maximum-memory-allocated-to-the-jvm}
 
-Se você estiver executando o Configuration Manager ou tentando gerar o código de implantação do Enterprise JavaBeans (EJB) usando o utilitário de linha de comando *ejbdeploy* e ocorrer um erro OutOfMemory, aumente a quantidade de memória alocada para a JVM.
+Se você estiver executando o Configuration Manager ou tentando gerar o código de implantação do Enterprise JavaBeans (EJB) usando o utilitário de linha de comando *ejbdeploy* e ocorrer um erro OutOfMemory, aumente a quantidade de memória alocada para o JVM.
 
-1. Edite o script ejbdeploy na variável *[raiz do appserver]* diretório /deploytool/itp/:
+1. Edite o script ejbdeploy no diretório *[appserver root]*/deploytool/itp/:
 
    * (Windows) `ejbdeploy.bat`
    * (Linux e UNIX) `ejbdeploy.sh`
 
-1. Localize o `-Xmx256M` e altere para um valor maior, como `-Xmx1024M`.
+1. Localize o parâmetro `-Xmx256M` e altere-o para um valor maior, como `-Xmx1024M`.
 1. Salve o arquivo.
-1. Execute o `ejbdeploy` ou reimplante usando o Configuration Manager.
+1. Execute o comando `ejbdeploy` ou reimplante usando o Gerenciador de Configurações.
 
 ## Aprimoramento do desempenho do Windows Server 2003 com LDAP {#improving-windows-server-2003-performance-with-ldap}
 

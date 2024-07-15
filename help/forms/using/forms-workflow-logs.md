@@ -20,7 +20,7 @@ ht-degree: 5%
 
 As etapas de Forms Workflow fornecem registros detalhados para depurar problemas relacionados ao fluxo de trabalho convenientemente. Habilite o log de depuração para workflows do AEM Forms para visualizar os logs.
 
-Por padrão, todas as informações de registro estão disponíveis no **error.log** arquivo no */crx-repository/logs/* diretório.
+Por padrão, todas as informações de log estão disponíveis no arquivo **error.log** no diretório */crx-repository/logs/*.
 
 Os logs de depuração para workflows de formulários incluem:
 
@@ -81,15 +81,15 @@ Faça o seguinte para ativar o log de depuração para workflows do AEM Forms:
 
 1. Vá para o gerenciador de configuração do console da Web do AEM em:
 
-   https://&#39;[server]:[porta]&#39;/system/console/configMgr
+   https://&#39;[server]:[port]&#39;/system/console/configMgr
 
-1. Selecionar **[!UICONTROL Sling]** > **[!UICONTROL Suporte de registro]**.
-1. Selecionar **[!UICONTROL Adicionar novo logger.]**
-1. Selecionar **[!UICONTROL Depurar]** como o **[!UICONTROL Nível de registro]**.
+1. Selecione **[!UICONTROL Sling]** > **[!UICONTROL Suporte De Log]**.
+1. Selecione **[!UICONTROL Adicionar novo Agente.]**
+1. Selecione **[!UICONTROL Depurar]** como o **[!UICONTROL Nível de Log]**.
 1. Especifique o local do arquivo de log. O local padrão para o arquivo de log é: *logs\error.log*
-1. Especifique o nome do pacote como **com.adobe.granite.workflow.core** no **[!UICONTROL Logger]** coluna.
+1. Especifique o nome do pacote como **com.adobe.granite.workflow.core** na coluna **[!UICONTROL Logger]**.
 
-   A execução dessas etapas permite armazenar os logs de depuração da **com.adobe.granite.workflow.core** pacote. Selecionar **[!UICONTROL +]** e adicione os seguintes nomes de pacote à lista:
+   A execução dessas etapas permite armazenar os logs de depuração do pacote **com.adobe.granite.workflow.core**. Selecione **[!UICONTROL +]** e adicione os seguintes nomes de pacote à lista:
 
    * com.adobe.fd.workflow
    * com.adobe.fd.workspace

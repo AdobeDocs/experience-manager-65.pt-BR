@@ -27,14 +27,14 @@ Os ativos digitais podem ser associados a uma ou mais SKUs do produto. Depois de
 
 >[!VIDEO](https://video.tv.adobe.com/v/333205/?quality=12&learn=on)
 
-Fragmentos de experiência são um recurso do Adobe Experience Manager que permite ao profissional de marketing criar **não estruturado** conteúdo reutilizável. Os Fragmentos de experiência podem ser associados a uma SKU de produto ou ID de catálogo. Depois de associados, os profissionais de marketing podem descobrir facilmente fragmentos relacionados com base em produtos exibidos em uma página. Os Fragmentos de experiência também podem ser incluídos dinamicamente em uma página de catálogo de produtos por meio do uso de um espaço reservado e uma associação.
+Os Fragmentos de experiência são um recurso do Adobe Experience Manager que permite ao profissional de marketing criar conteúdo **não estruturado** reutilizável. Os Fragmentos de experiência podem ser associados a uma SKU de produto ou ID de catálogo. Depois de associados, os profissionais de marketing podem descobrir facilmente fragmentos relacionados com base em produtos exibidos em uma página. Os Fragmentos de experiência também podem ser incluídos dinamicamente em uma página de catálogo de produtos por meio do uso de um espaço reservado e uma associação.
 
 ## Fragmentos de conteúdo
 
 >[!VIDEO](https://video.tv.adobe.com/v/339182/?quality=12&learn=on)
 
-Os fragmentos de conteúdo são um recurso do Adobe Experience Manager que permite ao profissional de marketing criar **estruturado** conteúdo reutilizável. Os fragmentos de conteúdo podem ser associados a uma SKU do produto ou ID do catálogo. Depois de associados, os profissionais de marketing podem descobrir facilmente fragmentos relacionados com base em produtos exibidos em uma página. Os fragmentos de conteúdo também podem ser incluídos dinamicamente em uma página de catálogo de produtos por meio do uso de um espaço reservado e uma associação.
+Os fragmentos de conteúdo são um recurso do Adobe Experience Manager que permite ao profissional de marketing criar conteúdo **estruturado** reutilizável. Os fragmentos de conteúdo podem ser associados a uma SKU do produto ou ID do catálogo. Depois de associados, os profissionais de marketing podem descobrir facilmente fragmentos relacionados com base em produtos exibidos em uma página. Os fragmentos de conteúdo também podem ser incluídos dinamicamente em uma página de catálogo de produtos por meio do uso de um espaço reservado e uma associação.
 
 ## Recursos relacionados {#related}
 
-Também é possível personalizar um modelo inteiro para um conjunto específico de produtos ou categorias. Saiba como [criação de várias páginas de categoria e produto](/help/commerce/cif/configuring/multi-template-usage.md).
+Também é possível personalizar um modelo inteiro para um conjunto específico de produtos ou categorias. Saiba como [criando várias páginas de categoria e produto](/help/commerce/cif/configuring/multi-template-usage.md).

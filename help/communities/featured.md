@@ -35,11 +35,11 @@ A capacidade de apresentar conteúdo pode ser permitida ou não por componente.
 Esta seção da documentação descreve:
 
 * Adicionando conteúdo em destaque a um site da comunidade.
-* Definições de configuração para o `Featured Content` componente.
+* Definições de configuração para o componente `Featured Content`.
 
 ## Adicionar conteúdo em destaque a uma página {#adding-featured-content-to-a-page}
 
-Para adicionar um `Featured Content` para uma página no modo de autor, use o navegador de componentes para localizar
+Para adicionar um componente `Featured Content` a uma página no modo de autor, use o navegador de componentes para localizar
 
 * `Communities / Featured Content`
 
@@ -47,29 +47,29 @@ E arraste-o para o local em uma página onde o conteúdo em destaque deve aparec
 
 Para obter as informações necessárias, visite [Noções básicas sobre componentes das comunidades](basics.md).
 
-Quando a variável [bibliotecas obrigatórias do lado do cliente](essentials-featured.md#essentials-for-client-side) são incluídos, é assim que a variável `Featured Content` é exibido:
+Quando as [bibliotecas obrigatórias do lado do cliente](essentials-featured.md#essentials-for-client-side) são incluídas, é assim que o componente `Featured Content` aparece:
 
-![featuredcontent](assets/featuredcontent.png)
+![conteúdo do recurso](assets/featuredcontent.png)
 
 ## Configuração de conteúdo em destaque {#configuring-featured-content}
 
-Selecione o colocado `Featured Content` para que você possa acessar e selecionar o `Configure` ícone que abre a caixa de diálogo de edição.
+Selecione o componente `Featured Content` inserido para que você possa acessar e selecionar o ícone `Configure` que abre a caixa de diálogo de edição.
 
-![configure-new](assets/configure-new.png)
+![configurar-novo](assets/configure-new.png)
 
-![featuredcontent1](assets/featuredcontent1.png)
+![conteúdo_do_recurso1](assets/featuredcontent1.png)
 
 ### Guia Configurações {#settings-tab}
 
-No **[!UICONTROL Configurações]** identifique o conteúdo que será exibido:
+Na guia **[!UICONTROL Configurações]**, identifique o conteúdo a ser apresentado:
 
 * **[!UICONTROL Nome de exibição]**
 
   O título da lista de conteúdo em destaque. Por exemplo, `Featured Questions` ou `Featured Ideas`. O padrão é `Featured Content` se deixado em branco.
 
-* **[!UICONTROL Localização do conteúdo em destaque]**
+* **[!UICONTROL Local do Conteúdo em Destaque]**
 
-  *(Obrigatório)* Navegue até a página que contém o conteúdo que pode ser apresentado (os componentes dessa página devem ser configurados para Permitir conteúdo em destaque). Por exemplo, `/content/sites/engage/en/forum`.
+  *(Obrigatório)* Navegue até a página que contém o conteúdo que pode ser apresentado (os componentes dessa página devem ser configurados para Permitir Conteúdo em Destaque). Por exemplo, `/content/sites/engage/en/forum`.
 
 * **[!UICONTROL Limite de exibição]**
 
@@ -79,20 +79,20 @@ No **[!UICONTROL Configurações]** identifique o conteúdo que será exibido:
 
 A capacidade de sinalizar conteúdo como conteúdo em destaque requer privilégios de moderador.
 
-Quando um moderador visualiza o conteúdo publicado, ele tem acesso aos sinalizadores de moderação do contexto, que incluem o novo `Feature` sinalizador.
+Quando um moderador exibe o conteúdo postado, ele tem acesso aos sinalizadores de moderação no contexto, que incluem o novo sinalizador `Feature`.
 
-![site-visitor-experience](assets/site-visitor-experience.png)
+![experiência-visitante-site](assets/site-visitor-experience.png)
 
-Depois de sinalizado como um recurso, o sinalizador de moderação se torna `Unfeature`.
+Depois de sinalizado como recurso, o sinalizador de moderação torna-se `Unfeature`.
 
-A página que contém a variável `Featured Content` componente, agora inclui esta publicação.
+A página contendo o componente `Featured Content`, agora inclui esta publicação.
 
-![site-visitor-experience1](assets/site-visitor-experience1.png)
+![experiência-visitante-site1](assets/site-visitor-experience1.png)
 
-A variável `Read More` links para a publicação real.
+O `Read More` está vinculado à postagem real.
 
 ## Informações adicionais {#additional-information}
 
-Mais informações podem ser encontradas no [Conteúdo incluso](essentials-featured.md) página para desenvolvedores.
+Mais informações podem ser encontradas na página [Conteúdo em destaque](essentials-featured.md) para desenvolvedores.
 
 Para sinalizar conteúdo como em destaque, consulte [Moderação de conteúdo gerado pelo usuário](moderate-ugc.md).

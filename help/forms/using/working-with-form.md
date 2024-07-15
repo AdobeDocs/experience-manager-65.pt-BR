@@ -23,17 +23,17 @@ Os formulários são baixados no aplicativo e estão disponíveis offline. Por e
 
 Para sincronizar o formulário no aplicativo AEM Forms:
 
-1. Na instância do autor, selecione um formulário e clique em **Propriedades da exibição**.
+1. Na instância do autor, selecione um formulário e clique em **Exibir Propriedades**.
 1. Na página de propriedades, clique em **Avançado.**
 1. Em Avançado, habilite a opção: **Sincronizar com o aplicativo AEM Forms** e selecione **Salvar**.
 
-Para sincronizar vários formulários, na instância do autor, selecione vários formulários no gerenciador de formulários e **Sincronizar com o aplicativo AEM Forms**. Quando o formulário é publicado, o aplicativo AEM Forms pode se conectar ao servidor de publicação e buscar os formulários.
+Para sincronizar vários formulários, na instância do autor, selecione vários formulários no gerenciador de formulários e selecione **Sincronizar com o aplicativo AEM Forms**. Quando o formulário é publicado, o aplicativo AEM Forms pode se conectar ao servidor de publicação e buscar os formulários.
 
-Se o aplicativo Android AFA (AEM Form Application, Aplicativo de formulário) não for sincronizado, execute as seguintes etapas para corrigir o problema de sincronização:
+Se o aplicativo Android AFA (AEM Form Application) falhar na sincronização, execute as seguintes etapas para corrigir o problema de sincronização:
 
-1. Vá para a **https://[server]:[porta]/system/console/configMgr**.
-1. Procure por **[!UICONTROL Manipulador de autenticação de token do Adobe Granite]** e clique em **[!UICONTROL Editar]**.
-1. Selecione o **[!UICONTROL Nenhum]** no menu suspenso para a variável **[!UICONTROL Atributo SameSite para o cookie de token de logon]** atributo.
+1. Vá para o **https://[server]:[port]/system/console/configMgr**.
+1. Procure o **[!UICONTROL Manipulador de autenticação de token do Adobe Granite]** e clique em **[!UICONTROL Editar]**.
+1. Selecione a opção **[!UICONTROL Nenhum]** no menu suspenso para o atributo **[!UICONTROL SameSite do atributo cookie de token de logon]**.
 1. Clique em **[!UICONTROL Salvar]**.
 
 ![Sincronizar imagem com o aplicativo Android AFA](/help/forms/using/assets/afaandroid.png)
@@ -50,5 +50,5 @@ Se o aplicativo Android AFA (AEM Form Application, Aplicativo de formulário) n�
 
 **Para abrir e atualizar um formulário**
 
-1. Para abrir um formulário, selecione a variável **[!UICONTROL Formulário]** na tela inicial.
+1. Para abrir um formulário, selecione o **[!UICONTROL Formulário]** na tela inicial.
 1. Você pode atualizar os campos do formulário, adicionar anexos, salvar como rascunho e enviá-lo.

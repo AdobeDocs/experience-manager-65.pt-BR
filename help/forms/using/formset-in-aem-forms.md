@@ -34,7 +34,7 @@ Os conjuntos de formulários também são compatíveis com o aplicativo AEM Form
 
 Você pode associar vários XDPs ou Modelos de formulário, criados usando o Designer, em um conjunto de formulários. Os conjuntos de formulários podem ser usados para renderizar seletivamente os XDPs com base nos valores inseridos pelos usuários nos formulários iniciais e em seus perfis.
 
-Uso [Interface do usuário do AEM Forms](../../forms/using/introduction-managing-forms.md) para gerenciar todos os formulários, conjuntos de formulários e ativos relacionados.
+Use a [interface do usuário do AEM Forms](../../forms/using/introduction-managing-forms.md) para gerenciar todos os seus formulários, conjuntos de formulários e ativos relacionados.
 
 ### Criar um conjunto de formulários {#create-a-form-set}
 
@@ -65,16 +65,16 @@ Para criar um conjunto de formulários, faça o seguinte:
 
    * Ordem dos formulários: arraste e solte os formulários para reorganizá-los. A ordem do formulário define a ordem em que os formulários são mostrados ao usuário final no aplicativo AEM Forms e na representação independente.
    * Identificador de formulário: especifica uma identidade exclusiva para os formulários a serem usados em expressões de qualificação.
-   * Raiz de dados: para cada formulário no conjunto de formulários, o Autor pode configurar o XPATH onde os dados desse formulário específico estão posicionados no XML enviado. Por padrão, o valor é /. Se todos os formulários no conjunto de formulários estiverem vinculados a um esquema e compartilharem o mesmo esquema XML, você poderá alterar esse valor. Recomenda-se que cada campo no formulário tenha a vinculação de dados adequada especificada no XDP. Se dois campos em dois formulários diferentes compartilharem a associação de dados comum, o campo no segundo formulário mostrará valores preenchidos previamente do primeiro formulário. Não vincule dois subformulários com o mesmo conteúdo interno ao mesmo nó XML. Para obter mais informações sobre a estrutura XML do conjunto de formulários, consulte [Preencher previamente XML para o conjunto de formulários](../../forms/using/formset-in-aem-forms.md#p-prefill-xml-for-form-set-p).
-   * Expressão de elegibilidade: especifica uma expressão JavaScript que avalia um valor booleano e indica se um formulário no conjunto de formulários é elegível para preenchimento. Se falso, o usuário não será solicitado ou nem receberá o formulário para preencher. Normalmente, a expressão é baseada nos valores dos campos capturados antes desse formulário. As expressões também contêm chamadas para o conjunto de formulários API fs.valueOf para extrair os valores preenchidos pelo usuário em um campo de um formulário do conjunto de formulários:
+   * Raiz de dados: para cada formulário no conjunto de formulários, o Autor pode configurar o XPATH onde os dados desse formulário específico estão posicionados no XML enviado. Por padrão, o valor é /. Se todos os formulários no conjunto de formulários estiverem vinculados a um esquema e compartilharem o mesmo esquema XML, você poderá alterar esse valor. Recomenda-se que cada campo no formulário tenha a vinculação de dados adequada especificada no XDP. Se dois campos em dois formulários diferentes compartilharem a associação de dados comum, o campo no segundo formulário mostrará valores preenchidos previamente do primeiro formulário. Não vincule dois subformulários com o mesmo conteúdo interno ao mesmo nó XML. Para obter mais informações sobre a estrutura XML do conjunto de formulários, consulte [Preencher XML previamente para o conjunto de formulários](../../forms/using/formset-in-aem-forms.md#p-prefill-xml-for-form-set-p).
+   * Expressão de elegibilidade: especifica uma expressão JavaScript que avalia um valor Booleano e indica se um formulário no conjunto de formulários é elegível para preenchimento. Se falso, o usuário não será solicitado ou nem receberá o formulário para preencher. Normalmente, a expressão é baseada nos valores dos campos capturados antes desse formulário. As expressões também contêm chamadas para o conjunto de formulários API fs.valueOf para extrair os valores preenchidos pelo usuário em um campo de um formulário do conjunto de formulários:
 
-   *fs.valueOf()&lt;form identifier=&quot;&quot;>, &lt;fieldsom expression=&quot;&quot;>) > &lt;value>*
+   *fs.valueOf(&lt;Identificador de Formulário>, &lt;expressão de SomCampo>) > &lt;valor>*
 
-   Por exemplo, se você tiver dois formulários no conjunto de formulários: despesa de negócios e despesa de viagem, é possível adicionar um trecho JavaScript no campo Expressão de elegibilidade para ambos os formulários para verificar a entrada do usuário para o tipo de despesa em um formulário. Se o usuário escolher Despesa Comercial, o formulário Despesa Comercial é renderizado para o usuário final. Ou se o usuário escolher despesas de viagem, um formulário diferente será renderizado para o usuário final. Para obter mais informações, consulte Expressão de qualificação.
+   Por exemplo, se você tiver dois formulários no conjunto de formulários: despesa de negócios e despesa de viagem, é possível adicionar um trecho de JavaScript no campo Expressão de qualificação para ambos os formulários para verificar a entrada do usuário para o tipo de despesa em um formulário. Se o usuário escolher Despesa Comercial, o formulário Despesa Comercial é renderizado para o usuário final. Ou se o usuário escolher despesas de viagem, um formulário diferente será renderizado para o usuário final. Para obter mais informações, consulte Expressão de qualificação.
 
-   Além disso, o Autor também pode optar por remover um formulário do conjunto de formulários usando o ícone Excluir presente no canto direito de cada linha ou adicionar outro conjunto de formulários usando o caractere &#39;**+**&#39; na barra de ferramentas. Este &#39;**+** O ícone &quot; direciona o usuário de volta à etapa anterior do assistente, que foi usada para &quot;Selecionar formulário(s)&quot;. As seleções existentes são mantidas e qualquer seleção adicional feita deve ser adicionada ao conjunto de formulários usando o ícone Adicionar ao conjunto de formulários nessa página.
+   Além disso, o Autor também pode optar por remover um formulário do conjunto de formulários usando o ícone Excluir presente no canto direito de cada linha ou adicionar outro conjunto de formulários usando o ícone &#39;**+**&#39; na barra de ferramentas. Este ícone &#39;**+**&#39; direciona o usuário de volta à etapa anterior do assistente, que foi usada para &#39;Selecionar Formulário(s)&#39;. As seleções existentes são mantidas e qualquer seleção adicional feita deve ser adicionada ao conjunto de formulários usando o ícone Adicionar ao conjunto de formulários nessa página.
 
-   ![Conjunto de formulários: configurar formulário (s)](assets/createformset2.png)
+   ![Conjunto de formulários: configurar o(s) formulário(s)](assets/createformset2.png)
 
    >[!NOTE]
    >
@@ -117,13 +117,13 @@ Depois de criar um conjunto de formulários usando a interface do usuário do AE
 
 ### Usando o conjunto de formulários na Tarefa ou no ponto inicial {#using-form-set-in-task-or-start-point}
 
-1. Ao projetar um processo, na seção Apresentação e dados de Atribuir tarefa/Ponto inicial, selecione **usar um ativo CRX**. O navegador CRX Asset é exibido.
+1. Ao projetar um processo, na seção Apresentação e Dados de Atribuir Tarefa/Ponto de Início, selecione **usar um ativo do CRX**. O navegador CRX Asset é exibido.
 
-   ![Criar um processo: usar um ativo CRX](assets/formsetinprocessmgmt1.png)
+   ![Criar um processo: usar um ativo do CRX](assets/formsetinprocessmgmt1.png)
 
 1. Selecione o conjunto de formulários para filtrar o conjunto de formulários no repositório AEM (CRX).
 
-   ![Criar um processo: caixa de diálogo Selecionar ativo de formulário](assets/formsetinprocessmgmt2.png)
+   ![Criar um processo: caixa de diálogo Selecionar Ativo do Formulário](assets/formsetinprocessmgmt2.png)
 
 1. Selecione um conjunto de formulários e clique em OK.
 
@@ -131,13 +131,13 @@ Depois de criar um conjunto de formulários usando a interface do usuário do AE
 
 As expressões de qualificação em um conjunto de formulários são usadas para definir e controlar dinamicamente os formulários exibidos para um usuário. Por exemplo, para exibir um formulário específico somente se o usuário pertencer a uma faixa etária específica. Especifique e edite uma expressão de qualificação usando o gerenciador de formulários.
 
-Uma expressão de elegibilidade pode ser qualquer instrução JavaScript válida que retorne um valor booleano. A última instrução no trecho de código JavaScript é tratada como um valor booleano que determina a qualificação do formulário com base no processamento no restante (linhas anteriores) do trecho de código JavaScript. Se o valor da expressão for true, o formulário estará qualificado para ser exibido ao usuário. Tais formulários são conhecidos como formulários elegíveis.
+Uma expressão de elegibilidade pode ser qualquer declaração JavaScript válida que retorne um valor booleano. A última instrução no trecho de código JavaScript é tratada como um valor booleano que determina a qualificação do formulário com base no processamento no restante (linhas anteriores) do trecho de código JavaScript. Se o valor da expressão for true, o formulário estará qualificado para ser exibido ao usuário. Tais formulários são conhecidos como formulários elegíveis.
 
 >[!NOTE]
 >
 >A expressão de qualificação para o primeiro formulário no conjunto de formulários não é executada. O primeiro formulário é sempre exibido independentemente da sua expressão de qualificação.
 
-Além das funções JavaScript padrão, o conjunto de formulários também expõe a API fs.valueOf que fornece acesso ao valor de um campo de um formulário em um conjunto de formulários. Use esta API para acessar o valor de um campo de formulário em um conjunto de formulários. A sintaxe da API é fs.valueOf (formUid, fieldSOM), onde:
+Além das funções padrão do JavaScript, o conjunto de formulários também expõe a API fs.valueOf que fornece acesso ao valor de um campo de um formulário em um conjunto de formulários. Use esta API para acessar o valor de um campo de formulário em um conjunto de formulários. A sintaxe da API é fs.valueOf (formUid, fieldSOM), onde:
 
 * formUid (string): uma ID exclusiva de um formulário no conjunto de formulários. Você pode especificá-lo ao criar o conjunto de formulários na interface do usuário do gerenciador de formulários. Por padrão, é o nome do formulário.
 * fieldSOM (string): uma expressão SOM do campo no formulário especificado por formUid. A expressão SOM ou a expressão Modelo de Objeto de Script é usada para fazer referência a valores, propriedades e métodos em um modelo de objeto de documento (DOM) específico. Você pode exibi-lo no Form Designer na guia Scripts enquanto o campo é selecionado.
@@ -169,17 +169,20 @@ Por exemplo, você tem três formulários (formulário1, formulário2 e formulá
 
 formulário1
 
-campo formulário1campo
+campo
+form1field
 
 formulário2
 
-campo formulário2campo
+campo
+form2field
 
 formulário3
 
-campo formulário3campo
+campo
+form3field
 
-Cada formulário tem um campo nomeado comum, chamado &quot;campo&quot;, e um campo nomeado exclusivamente chamado &quot;formfield&quot;.
+Cada formulário tem um campo nomeado comum, chamado &quot;campo&quot;, e um campo nomeado exclusivamente chamado &quot;campo&lt;i>de formulário&quot;.
 
 É possível preencher previamente esse conjunto de formulários usando um XML com a seguinte estrutura:
 
@@ -342,7 +345,7 @@ No XML pré-preenchido, essa tag é opcional, mas se estiver ausente, o XML inte
 
 NOME DA TAG DO ELEMENTO RAIZ
 
-Caso haja um elemento raiz no XML de preenchimento prévio, o nome desse elemento também será usado no XML de envio. Nos casos em que não há xml de preenchimento prévio, o nome do rootElement é o nome do Subformulário raiz do primeiro formulário no conjunto de formulários que tem uma propriedade dataRoot definida como &quot;/&quot;. Se não houver tal formulário, o nome do rootElement será **fs_dummy_root**, que é uma palavra-chave reservada.
+Caso haja um elemento raiz no XML de preenchimento prévio, o nome desse elemento também será usado no XML de envio. Nos casos em que não há xml de preenchimento prévio, o nome do rootElement é o nome do Subformulário raiz do primeiro formulário no conjunto de formulários que tem uma propriedade dataRoot definida como &quot;/&quot;. Se não houver tal formulário, o nome de rootElement será **fs_dummy_root**, que é uma palavra-chave reservada.
 
 ## Formulário definido no aplicativo AEM Forms {#formset-in-workspace-app}
 
@@ -374,7 +377,7 @@ Os seguintes padrões de dados não são totalmente compatíveis com o conjunto 
   </tr>
   <tr>
    <td>Padrões curtos </td>
-   <td><p>num.integer{},</p> <p>num.decimal{},</p> <p>num.percent{}ou</p> <p>num.currency{}</p> </td>
+   <td><p>num.integer{},</p> <p>num.decimal{},</p> <p>num.percent{} ou</p> <p>num.currency{}</p> </td>
   </tr>
  </tbody>
 </table>

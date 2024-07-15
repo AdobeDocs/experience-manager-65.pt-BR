@@ -35,34 +35,34 @@ Você pode modificar a tela de logon de todos os módulos do AEM Forms que usam 
 
       para: `/apps/livecycle/core`.
 
-   1. Excluir o conteúdo de `/apps/livecycle/core` pasta.
+   1. Excluir o conteúdo da pasta `/apps/livecycle/core`.
 
 1. Execute estas ações:
 
    1. Replicar a estrutura hierárquica: de `/libs/livecycle/core/components/login` em `/apps/livecycle/core/components/login`. Mantenha as mesmas propriedades (nó/pasta) e controle de acesso.
 
-   1. Copie a pasta de componentes: de `/libs/livecycle/core` para `/apps/livecycle/core`.
+   1. Copiar a pasta de componentes: de `/libs/livecycle/core` para `/apps/livecycle/core`.
 
    1. Exclua o conteúdo da pasta: `/apps/livecycle/core/components/login`.
 
 ### Adicionar um novo local {#adding-a-new-locale}
 
-1. Copie o `i18n` pasta:
+1. Copiar a pasta `i18n`:
 
    * de `/libs/livecycle/core/components/login`
    * para `/apps/livecycle/core/components/login`
 
-1. Excluir todas as pastas contidas `i18n` exceto um, digamos `en`.
+1. Exclua todas as pastas dentro de `i18n` exceto uma, digamos `en`.
 
 1. Na pasta `en`, execute estas ações:
 
    1. Renomeie a pasta com o nome do local que você deseja que seja compatível. Por exemplo, `ar`.
 
-   1. Alterar a propriedade `jcr:language` valor para `ar`(para o `ar` pasta).
+   1. Altere o valor da propriedade `jcr:language` para `ar`(para a pasta `ar`).
 
    >[!NOTE]
    >
-   >Se o local for uma combinação de código de idioma e país, digamos, `ar-DZ`, em seguida, altere o nome da pasta e o valor da propriedade para `ar-DZ`.
+   >Se a localidade for uma combinação de código idioma-país, digamos, `ar-DZ`, altere o nome da pasta e o valor da propriedade para `ar-DZ`.
 
 1. Copiar `login.jsp`:
 
@@ -71,7 +71,7 @@ Você pode modificar a tela de logon de todos os módulos do AEM Forms que usam 
 
 1. Modifique o seguinte trecho de código para `/apps/livecycle/core/components/login/login.jsp`:
 
-***Localidade é o código do idioma***
+***A localidade é o código de idioma***
 
 ```jsp
 String browserLocale = "en";
@@ -197,23 +197,23 @@ String browserLocale = "en";
 
 ### Adição de novo texto ou modificação de texto existente {#adding-new-text-or-modifying-existing-text}
 
-1. Copiar `i18n` pasta:
+1. Copiar pasta `i18n`:
 
    * de `/libs/livecycle/core/components/login`
    * para `/apps/livecycle/core/components/login`
 
-1. Agora modifique o valor da propriedade `sling:message` do nó (na pasta do código de localidade desejado) para o qual você deseja alterar o texto. A tradução é feita pela chave mencionada no valor de `sling:key` propriedade do nó.
+1. Agora modifique o valor da propriedade `sling:message` do nó (na pasta de código de localidade desejada) para o qual você deseja alterar o texto. A tradução é feita através da chave mencionada no valor da propriedade `sling:key` do nó.
 
 1. Para adicionar um novo par de valor-chave, execute as seguintes ações. Verifique um exemplo na captura de tela a seguir.
 
-   1. Criar um nó do tipo `sling:MessageEntry`, ou copie um nó existente e renomeie-o, em todas as pastas de localidade.
+   1. Crie um nó do tipo `sling:MessageEntry`, ou copie um nó existente e renomeie-o, em todas as pastas de localidade.
    1. Copiar `login.jsp` :
 
       * de `/libs/livecycle/core/components/login`
 
       * para `/apps/livecycle/core/components/login`
 
-   1. Modificar `/apps/livecycle/core/components/login/login.jsp` para incorporar o texto recém-adicionado.
+   1. Modifique `/apps/livecycle/core/components/login/login.jsp` para incorporar o texto recém-adicionado.
 
    ![Adicionar novo par de valor-chave](assets/capture_new.png)
 
@@ -240,12 +240,12 @@ String browserLocale = "en";
 
 ### Adicionar novo estilo ou modificar estilo existente {#adding-new-style-or-modifying-existing-style}
 
-1. Copiar `login` nó:
+1. Copiar nó `login`:
 
    * de `/libs/livecycle/core/content`
    * para `/apps/livecycle/core/content`
 
-1. Excluir arquivos `login.js` e `jquery-1.8.0.min.js`, do nó `/apps/livecycle/core/content/login.`
+1. Excluir os arquivos `login.js` e `jquery-1.8.0.min.js` do nó `/apps/livecycle/core/content/login.`
 1. Modifique os estilos no arquivo CSS.
 1. Para adicionar novos estilos:
 
@@ -256,12 +256,12 @@ String browserLocale = "en";
 
       * para `/apps/livecycle/core/components/login`
 
-   1. Modificar `/apps/livecycle/core/components/login/login.jsp` para incorporar os estilos recém-adicionados.
+   1. Modifique `/apps/livecycle/core/components/login/login.jsp` para incorporar os estilos adicionados recentemente.
 
 
 Por exemplo:
 
-* Adicione o seguinte a `/apps/livecycle/core/content/login/login.css`.
+* Adicionar o seguinte a `/apps/livecycle/core/content/login/login.css`.
 
 ```
 css.newLoginContentArea {
@@ -285,20 +285,20 @@ css.newLoginContentArea {
 
 >[!NOTE]
 >
->Se as imagens existentes no `/apps/livecycle/core/content/login` (copiado de `/libs/livecycle/core/content/login`) são removidos e, em seguida, remova as referências correspondentes no CSS.
+>Se as imagens existentes em `/apps/livecycle/core/content/login` (copiadas de `/libs/livecycle/core/content/login`) forem removidas, remova as referências correspondentes no CSS.
 
 ### Adicionar novas imagens {#add-new-images}
 
 1. Siga as etapas de Adicionar novo estilo ou modificar estilo existente (documentado acima).
-1. Adicionar novas imagens no `/apps/livecycle/core/content/login`. Para adicionar uma imagem:
+1. Adicionar novas imagens em `/apps/livecycle/core/content/login`. Para adicionar uma imagem:
 
    1. Instale o cliente WebDAV.
-   1. Navegue até `/apps/livecycle/core/content/login` pasta, usando o cliente webDAV. Para obter mais informações, consulte [Acesso ao WebDAV](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/webdav-access.html?lang=en).
+   1. Navegue até a pasta `/apps/livecycle/core/content/login`, usando o cliente webDAV. Para obter mais informações, consulte [Acesso ao WebDAV](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/webdav-access.html?lang=en).
 
    1. Adicione novas imagens.
 
-1. Adicionar novos estilos no `/apps/livecycle/core/content/login/login.css,` correspondente às novas imagens adicionadas em `/apps/livecycle/core/content/login`.
-1. Use os novos estilos no `login.jsp` em `/apps/livecycle/core/components`.
+1. Adicione novos estilos em `/apps/livecycle/core/content/login/login.css,` correspondentes às novas imagens adicionadas em `/apps/livecycle/core/content/login`.
+1. Use os novos estilos em `login.jsp` às `/apps/livecycle/core/components`.
 
 Por exemplo:
 

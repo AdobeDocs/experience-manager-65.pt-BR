@@ -20,11 +20,11 @@ ht-degree: 0%
 
 Quando o recurso de auditoria está ativado, a segurança de documentos permite monitorar determinados tipos de eventos. Os eventos que você pode ver dependem da sua função:
 
-**Usuários:** Pode exibir eventos auditados para seus documentos protegidos por política e para quaisquer documentos protegidos que recebam e usem.
+**Usuários:** podem exibir eventos auditados para seus documentos protegidos por política e para quaisquer documentos protegidos que recebam e usem.
 
-**Coordenadores de definições de políticas:** Pode exibir eventos auditados, incluindo eventos de documentos e políticas, para documentos protegidos por políticas de seus conjuntos de políticas.
+**Coordenadores de definições de políticas:** pode exibir eventos auditados, incluindo eventos de documentos e políticas, para documentos protegidos por políticas de seus conjuntos de políticas.
 
-**Administradores:** Pode exibir eventos auditados relacionados a todos os documentos e usuários protegidos por política. Os administradores também podem rastrear outros tipos de eventos, incluindo eventos de usuário, documento, política e sistema.
+**Administradores:** podem exibir eventos auditados relacionados a todos os documentos e usuários protegidos por política. Os administradores também podem rastrear outros tipos de eventos, incluindo eventos de usuário, documento, política e sistema.
 
 >[!NOTE]
 >
@@ -46,7 +46,7 @@ Esses requisitos de configuração devem ser atendidos para que a auditoria do e
 
 * O sistema ou o administrador deve habilitar o recurso de auditoria para o servidor.
 
-  (Consulte [Definição de configurações de privacidade e auditoria de eventos](/help/forms/using/admin-help/configuring-client-server-options.md#configuring-event-auditing-and-privacy-settings).)
+  (Consulte [Definindo configurações de privacidade e auditoria de eventos](/help/forms/using/admin-help/configuring-client-server-options.md#configuring-event-auditing-and-privacy-settings).)
 
 * A política usada para proteger o documento deve ter a auditoria habilitada. (Consulte [Criação e edição de políticas](/help/forms/using/admin-help/creating-policies.md#creating-and-editing-policies).)
 
@@ -56,25 +56,27 @@ Você pode pesquisar a lista de eventos e visualizar descrições mais detalhada
 
 Você pode pesquisar eventos na página Eventos usando uma combinação de critérios de pesquisa de eventos e as datas em que os eventos ocorreram. Os eventos que você pode pesquisar dependem da sua função:
 
-**Usuários:** Pode exibir eventos auditados para seus documentos protegidos por política e para quaisquer documentos protegidos que recebam e usem. Estas opções de pesquisa estão disponíveis:
+**Usuários:** podem exibir eventos auditados para seus documentos protegidos por política e para quaisquer documentos protegidos que recebam e usem. Estas opções de pesquisa estão disponíveis:
 
-**Eventos relacionados a mim:** Os usuários podem encontrar eventos para qualquer documento protegido por política que criaram ou receberam. Por exemplo, se um usuário abrir, visualizar ou imprimir um documento que outra pessoa protegeu, ele verá apenas esses eventos para esse documento.
+**Eventos relacionados
+para mim:** Os usuários podem encontrar eventos para qualquer documento protegido por política que tenham criado ou recebido. Por exemplo, se um usuário abrir, visualizar ou imprimir um documento que outra pessoa protegeu, ele verá apenas esses eventos para esse documento.
 
-**Eventos relacionados a meus documentos:** Os usuários podem encontrar todos os eventos relacionados a seus próprios documentos protegidos por política. Os usuários veem os eventos gerados por cada pessoa que manipulou seus documentos.
+**Eventos relacionados aos meus documentos:** Os usuários podem encontrar todos os eventos relacionados a seus próprios documentos protegidos por política. Os usuários veem os eventos gerados por cada pessoa que manipulou seus documentos.
 
-**Coordenadores de definições de políticas:** Pode exibir eventos auditados, incluindo eventos de documentos e políticas, para documentos protegidos por políticas de seus conjuntos de políticas. Estas opções estão disponíveis:
+**Coordenadores de definições de políticas:** pode exibir eventos auditados, incluindo eventos de documentos e políticas, para documentos protegidos por políticas de seus conjuntos de políticas. Estas opções estão disponíveis:
 
-**Documentar eventos nos quais sou um coordenador de conjunto de políticas:** Os coordenadores de definições de políticas que têm a permissão exibir evento podem encontrar eventos relacionados a documentos protegidos por políticas de seus conjuntos de políticas.
+**Documentar eventos onde
+Sou um coordenador de conjunto de políticas:** Os coordenadores de conjuntos de políticas que têm permissão para exibir evento podem encontrar eventos relacionados a documentos protegidos por políticas de seus conjuntos de políticas.
 
-**Eventos de política em que sou um coordenador de conjunto de políticas:** Os coordenadores de definições de políticas que têm a permissão exibir eventos podem encontrar eventos relacionados a políticas em seus conjuntos de políticas.
+**Eventos de política nos quais eu sou um coordenador de conjunto de políticas:** os coordenadores de conjuntos de políticas que têm permissão para exibir eventos podem encontrar eventos relacionados às políticas de seus conjuntos de políticas.
 
-**Administradores:** Pode exibir eventos auditados relacionados a todos os documentos e usuários protegidos por política. Os administradores também podem rastrear outros tipos. Além disso, os administradores podem subdividir ainda mais as pesquisas de eventos de acordo com o tipo de usuário:
+**Administradores:** podem exibir eventos auditados relacionados a todos os documentos e usuários protegidos por política. Os administradores também podem rastrear outros tipos. Além disso, os administradores podem subdividir ainda mais as pesquisas de eventos de acordo com o tipo de usuário:
 
-**Usuários conhecidos:** Os usuários estão nos diretórios de origem ou são registrados como usuários externos.
+**Usuários conhecidos:** Os usuários estão nos diretórios de origem ou estão registrados como usuários externos.
 
-**Usuários anônimos:** Usuários desconhecidos que acessam um documento protegido por uma política que permite acesso anônimo.
+**Usuários anônimos:** usuários desconhecidos que acessam um documento protegido por uma política que permite acesso anônimo.
 
-**Usuários do sistema:** Eventos iniciados pelo servidor, como uma sincronização de diretório.
+**Usuários do sistema:** eventos iniciados pelo servidor, como uma sincronização de diretório.
 
 1. Na página Segurança de documentos, clique em Eventos.
 1. Na lista Localizar, selecione os critérios de pesquisa que deseja usar. Dependendo da sua seleção na lista Localizar, uma segunda lista será exibida, fornecendo critérios de pesquisa adicionais. Se aplicável, na caixa de texto, digite os critérios de pesquisa.

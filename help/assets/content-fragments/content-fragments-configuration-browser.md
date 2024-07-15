@@ -18,7 +18,7 @@ Saiba como ativar determinadas funcionalidades do fragmento de conteúdo no Nave
 
 ## Ativar a funcionalidade de fragmento de conteúdo para sua instância {#enable-content-fragment-functionality-instance}
 
-Antes de usar fragmentos de conteúdo, use o **Navegador de configuração** para ativar o seguinte:
+Antes de usar fragmentos de conteúdo, use o **Navegador de configuração** para habilitar o seguinte:
 
 * **Modelos de fragmentos de conteúdo** (obrigatório)
 * **Consultas persistentes de GraphQL** (opcional)
@@ -27,8 +27,8 @@ Antes de usar fragmentos de conteúdo, use o **Navegador de configuração** par
 >
 >Se você não ativar os **modelos de fragmentos de conteúdo**:
 >
->* o **Criar** A opção não estará disponível para criar modelos.
->* você não pode [selecione a configuração do Sites para criar o ponto de extremidade relacionado](/help/sites-developing/headless/graphql-api/graphql-endpoint.md#enabling-graphql-endpoint).
+>* a opção **Criar** não estará disponível para criar modelos.
+>* você não pode [selecionar a configuração de sites para criar o ponto de extremidade relacionado](/help/sites-developing/headless/graphql-api/graphql-endpoint.md#enabling-graphql-endpoint).
 
 Para habilitar a funcionalidade dos fragmentos de conteúdo, você deve fazer o seguinte:
 
@@ -37,11 +37,11 @@ Para habilitar a funcionalidade dos fragmentos de conteúdo, você deve fazer o 
 
 ### Ativar a funcionalidade de fragmento de conteúdo no navegador de configuração {#enable-content-fragment-functionality-in-configuration-browser}
 
-Para [usar determinadas funcionalidades do fragmento de conteúdo](#creating-a-content-fragment-model), você **deve** primeiro ative-os por meio da **Navegador de configuração**:
+Para [usar determinadas funcionalidades do Fragmento de Conteúdo](#creating-a-content-fragment-model), você **deve** habilitá-las primeiro por meio do **Navegador de Configuração**:
 
 >[!NOTE]
 >
->Para obter mais informações, consulte [Navegador de configuração:](/help/sites-administering/configurations.md#using-configuration-browser).
+>Para obter mais informações, consulte [Navegador de Configuração:](/help/sites-administering/configurations.md#using-configuration-browser).
 
 1. Navegue até **Ferramentas**, **Geral**, e abra o **Navegador de configuração**.
 
@@ -60,7 +60,7 @@ Para [usar determinadas funcionalidades do fragmento de conteúdo](#creating-a-c
 
 ### Aplique a configuração à sua pasta de ativos {#apply-the-configuration-to-your-assets-folder}
 
-Quando a configuração **global** está ativado para a funcionalidade de fragmento de conteúdo e se aplica a qualquer pasta de ativos.
+Quando a configuração **global** está habilitada para a funcionalidade de fragmento de conteúdo, ela se aplica a qualquer pasta do Assets.
 
 Para usar outras configurações (ou seja, excluindo globais) com uma pasta do Assets comparável, é necessário definir a conexão. Isso é feito ao selecionar a **Configuração** apropriada na guia **Serviços da nuvem** das **Propriedades da pasta** da pasta apropriada.
 

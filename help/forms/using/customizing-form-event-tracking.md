@@ -62,23 +62,23 @@ Imediatamente, os seguintes eventos são rastreados em um Formulário adaptável
 
 ## Personalização do tempo limite do evento de visita de campo {#customizing-the-field-visit-event-timeout}
 
-Na configuração padrão do formulário AEM, se um usuário gastar mais de 60 segundos em um campo, uma variável `fieldvisit` evento é acionado e os detalhes do campo são enviados para o Adobe Analytics. Você pode personalizar a linha de base do Rastreamento de tempo de campo em Configuração do AEM Forms Analytics no console de configuração do AEM (/system/console/configMgr) para aumentar ou diminuir o tempo limite.
+Na configuração padrão do formulário AEM, se um usuário gastar mais de 60 segundos em um campo, um evento `fieldvisit` será acionado e os detalhes do campo serão enviados ao Adobe Analytics. Você pode personalizar a linha de base do Rastreamento de tempo de campo em Configuração do AEM Forms Analytics no console de configuração do AEM (/system/console/configMgr) para aumentar ou diminuir o tempo limite.
 
 ## Personalização dos eventos de rastreamento {#customizing-the-tracking-events}
 
-Você pode modificar a variável `trackEvent`função disponível em `/libs/afanalytics/js/custom.js` arquivo para personalizar o rastreamento de eventos. Sempre que um evento que está sendo rastreado ocorrer em um formulário adaptável, a variável `trackEvent`é chamada. A variável `trackEvent` A função aceita dois parâmetros: `eventName`e `variableValueMap`.
+Você pode modificar a função `trackEvent` disponível no arquivo `/libs/afanalytics/js/custom.js` para personalizar o rastreamento de eventos. Sempre que um evento que está sendo rastreado ocorre em um formulário adaptável, a função `trackEvent` é chamada. A função `trackEvent` aceita dois parâmetros: `eventName` e `variableValueMap`.
 
-É possível avaliar o valor de *eventName* e *variableValueMap* argumentos para alterar o comportamento de rastreamento dos eventos. Por exemplo, você pode optar por enviar as informações para o servidor do Analytics após um determinado número de eventos de erro. Você também pode optar por executar qualquer uma das seguintes personalizações:
+Você pode avaliar o valor dos argumentos *eventName* e *variableValueMap* para alterar o comportamento de rastreamento dos eventos. Por exemplo, você pode optar por enviar as informações para o servidor do Analytics após um determinado número de eventos de erro. Você também pode optar por executar qualquer uma das seguintes personalizações:
 
 * Você pode definir um tempo limite antes de enviar o evento.
-* É possível manter um estado para decidir a ação, por exemplo, *fieldVisit* envia um evento fictício com base no carimbo de data e hora do último evento.
-* Você pode usar o `pushEvent` função para enviar o evento ao servidor do analytics *.*
+* Você pode manter um estado para decidir a ação, por exemplo, *fieldVisit* envia um evento fictício com base no carimbo de data e hora do último evento.
+* Você pode usar a função `pushEvent` para enviar o evento para o servidor de análise *.*
 
 * Você pode optar por não enviar o evento para o servidor do Analytics.
 
 ### Amostra {#sample}
 
-No exemplo a seguir, digite para a variável *erro* evento de cada *fieldName* atributo é mantido. O evento é enviado ao servidor do Analytics somente se ocorrer um erro novamente.
+No exemplo a seguir, o estado do evento *error* de cada atributo *fieldName* é mantido. O evento é enviado ao servidor do Analytics somente se ocorrer um erro novamente.
 
 ```javascript
 case 'error':
@@ -91,10 +91,10 @@ case 'error':
 
 ## Personalização do evento de visita do painel {#customizing-the-panelvisit-event}
 
-Na configuração padrão do AEM Forms, após cada 60 segundos, é verificado se a janela que contém o formulário adaptável está ativa. Se a janela estiver ativa, uma variável `panelVisit`evento é acionado para o Adobe Analytics. Isso ajuda a verificar se o documento ou o formulário está ativo e a calcular o tempo gasto no formulário ou documento correspondente.
+Na configuração padrão do AEM Forms, após cada 60 segundos, é verificado se a janela que contém o formulário adaptável está ativa. Se a janela estiver ativa, um evento `panelVisit` será acionado para o Adobe Analytics. Isso ajuda a verificar se o documento ou o formulário está ativo e a calcular o tempo gasto no formulário ou documento correspondente.
 
 >[!NOTE]
 >
 >O nome do evento usado para determinar a atividade e calcular o tempo gasto é &quot;panelVisit&quot;. Esse evento é diferente do evento de visita do painel listado na tabela acima.
 
-Você pode modificar a função scheduleHeartBeatCheck disponível na `/libs/afanalytics/js/custom.js` arquivo para alterar ou interromper esse evento enviado ao Adobe Analytics em um intervalo regular.
+Você pode modificar a função scheduleHeartBeatCheck disponível no arquivo `/libs/afanalytics/js/custom.js` para alterar ou parar esse evento enviado ao Adobe Analytics em um intervalo regular.

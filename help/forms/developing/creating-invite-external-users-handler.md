@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Criando um Manipulador de Usuários Externos para Convidar {#create-invite-external-users-handler}
 
-**Os exemplos e amostras neste documento são somente para AEM Forms no ambiente JEE.**
+**Exemplos e exemplos neste documento são somente para AEM Forms no ambiente JEE.**
 
 Você pode criar um Manipulador de usuários externos para o serviço Rights Management. Rights Management Um Manipulador de usuários externos para convidar usuários externos para se tornarem usuários Rights Management. Depois que um usuário se torna um usuário Rights Management, ele pode executar tarefas, como abrir um documento PDF protegido por política. Depois que o Manipulador para usuários externos do Convite é implantado no AEM Forms, você pode usar o console de administração para interagir com ele.
 
@@ -34,25 +34,25 @@ Para desenvolver um Handler de Usuários Externos do Convite, você deve executa
 
 ## Configurar o ambiente de desenvolvimento {#setting-up-development-environment}
 
-Para configurar seu ambiente de desenvolvimento, você deve criar um projeto Java, como um projeto Eclipse. A versão do Eclipse compatível é `3.2.1` ou posteriormente.
+Para configurar seu ambiente de desenvolvimento, você deve criar um projeto Java, como um projeto Eclipse. A versão do Eclipse com suporte é `3.2.1` ou posterior.
 
-O Rights Management SPI exige o `edc-server-spi.jar` arquivo a ser definido no caminho de classe do projeto. Se você não fizer referência a esse arquivo JAR, não poderá usar o SPI do Rights Management no projeto Java. Esse arquivo JAR é instalado com o SDK do AEM Forms no `[install directory]\Adobe\Adobe_Experience_Manager_forms\sdk\spi` pasta.
+O SPI do Rights Management exige que o arquivo `edc-server-spi.jar` seja definido no caminho de classe do seu projeto. Se você não fizer referência a esse arquivo JAR, não poderá usar o SPI do Rights Management no projeto Java. Este arquivo JAR está instalado com o SDK do AEM Forms na pasta `[install directory]\Adobe\Adobe_Experience_Manager_forms\sdk\spi`.
 
-Além de adicionar a variável `edc-server-spi.jar` ao caminho de classe do seu projeto, você também deve adicionar os arquivos JAR necessários para usar a API do serviço de Rights Management. Esses arquivos são necessários para usar a API do Serviço Rights Management no Manipulador de usuários externos do convite.
+Além de adicionar o arquivo `edc-server-spi.jar` ao caminho de classe do seu projeto, você também deve adicionar os arquivos JAR necessários para usar a API de serviço de Rights Management. Esses arquivos são necessários para usar a API do Serviço Rights Management no Manipulador de usuários externos do convite.
 
 ## Definição da implementação do manipulador de convidar usuários externos {#define-invite-external-users-handler}
 
-Para desenvolver um manipulador de convidar usuários externos, você deve criar uma classe Java que implemente a `com.adobe.edc.server.spi.ersp.InvitedUserProvider` interface. Esta classe contém um método chamado `invitedUser`, que o serviço Rights Management chama quando endereços de email são enviados usando o **Adicionar Usuários Convidados** página acessível por meio do console de administração.
+Para desenvolver um manipulador de convidar usuários externos, você deve criar uma classe Java que implemente a interface `com.adobe.edc.server.spi.ersp.InvitedUserProvider`. Esta classe contém um método chamado `invitedUser`, que o serviço Rights Management invoca quando endereços de email são enviados usando a página **Adicionar Usuários Convidados**, acessível pelo console de administração.
 
-A variável `invitedUser` o método aceita um `java.util.List` instância, que contém endereços de email do tipo string enviados do **Adicionar Usuários Convidados** página. A variável `invitedUser` o método retorna uma matriz de `InvitedUserProviderResult` objetos, que geralmente é um mapeamento de endereços de email para objetos do Usuário (não retorne nulo).
+O método `invitedUser` aceita uma instância `java.util.List`, que contém endereços de email do tipo cadeia de caracteres enviados da página **Adicionar Usuários Convidados**. O método `invitedUser` retorna uma matriz de objetos `InvitedUserProviderResult`, que geralmente é um mapeamento de endereços de email para objetos do Usuário (não retorne nulo).
 
 >[!NOTE]
 >
 >Além de demonstrar como criar um manipulador para convidar usuários externos, esta seção também usa a API do AEM Forms.
 
-A implementação do manipulador convidar usuários externos contém um método definido pelo usuário chamado `createLocalPrincipalAccount`. Este método aceita um valor de string que especifica um endereço de email como um valor de parâmetro. A variável `createLocalPrincipalAccount` O método assume a pré-existência de um domínio local chamado `EDC_EXTERNAL_REGISTERED`. Você pode configurar esse nome de domínio como o que desejar; no entanto, para um aplicativo de produção, convém integrar a um domínio corporativo.
+A implementação do manipulador convidar usuários externos contém um método definido pelo usuário chamado `createLocalPrincipalAccount`. Este método aceita um valor de string que especifica um endereço de email como um valor de parâmetro. O método `createLocalPrincipalAccount` presume a pré-existência de um domínio local chamado `EDC_EXTERNAL_REGISTERED`. Você pode configurar esse nome de domínio como o que desejar; no entanto, para um aplicativo de produção, convém integrar a um domínio corporativo.
 
-A variável `createUsers` repete cada endereço de email e cria um objeto User correspondente (um usuário local na variável `EDC_EXTERNAL_REGISTERED` domínio). Por último, a `doEmails` é chamado. Esse método é intencionalmente deixado como um stub na amostra. Em uma implementação de produção, ela conteria a lógica do aplicativo para enviar mensagens de email de convite para os usuários recém-criados. Ele é deixado na amostra para demonstrar o fluxo lógico da aplicação de uma aplicação real.
+O método `createUsers` repete todos os endereços de email e cria um objeto Usuário correspondente (um usuário local no domínio `EDC_EXTERNAL_REGISTERED`). Finalmente, o método `doEmails` é chamado. Esse método é intencionalmente deixado como um stub na amostra. Em uma implementação de produção, ela conteria a lógica do aplicativo para enviar mensagens de email de convite para os usuários recém-criados. Ele é deixado na amostra para demonstrar o fluxo lógico da aplicação de uma aplicação real.
 
 ### Definição da implementação do manipulador de convidar usuários externos {#user-handler-implementation}
 
@@ -174,7 +174,7 @@ public class InviteExternalUsersSample implements InvitedUserProvider
 
 Refinar um arquivo XML do componente para implantar o componente do manipulador de usuários externos do convite. Existe um arquivo XML componente para cada componente e ele fornece metadados sobre o componente.
 
-As seguintes `component.xml` arquivo é usado para o manipulador convidar usuários externos. Observe que o nome do serviço é `InviteExternalUsersSample` e a operação que este serviço expõe é nomeada `invitedUser`. O parâmetro de entrada é um `java.util.List` e o valor de saída é uma matriz de `com.adobe.edc.server.spi.esrp.InvitedUserProviderResult` instâncias.
+O seguinte arquivo `component.xml` é usado para o manipulador de convidar usuários externos. Observe que o nome do serviço é `InviteExternalUsersSample` e a operação que esse serviço expõe é chamada `invitedUser`. O parâmetro de entrada é uma instância `java.util.List` e o valor de saída é uma matriz de instâncias `com.adobe.edc.server.spi.esrp.InvitedUserProviderResult`.
 
 ### Definindo o arquivo XML do componente para o manipulador de convidar usuários externos {#component-xml-invite-external-users-handler}
 
@@ -205,11 +205,11 @@ As seguintes `component.xml` arquivo é usado para o manipulador convidar usuár
 
 ## Empacotamento do manipulador de usuários externos do convite {#packaging-invite-external-users-handler}
 
-Para implantar o manipulador convidar usuários externos para o AEM Forms, você deve empacotar o projeto Java em um arquivo JAR. Verifique se os arquivos JAR externos dos quais depende a lógica de negócios do manipulador de usuários externos do convite, como a `edc-server-spi.jar` e `adobe-rightsmanagement-client.jar` Os arquivos também estão incluídos no arquivo JAR. Além disso, o componente XML file deve estar presente. A variável `component.xml` O arquivo JAR e os arquivos JAR externos devem estar localizados na raiz do arquivo JAR.
+Para implantar o manipulador convidar usuários externos para o AEM Forms, você deve empacotar o projeto Java em um arquivo JAR. Verifique se os arquivos JAR externos dos quais depende a lógica de negócios do manipulador de usuários externos do convite, como os arquivos `edc-server-spi.jar` e `adobe-rightsmanagement-client.jar`, também estão incluídos no arquivo JAR. Além disso, o componente XML file deve estar presente. O arquivo `component.xml` e os arquivos JAR externos devem estar localizados na raiz do arquivo JAR.
 
 >[!NOTE]
 >
->Na ilustração abaixo, uma `BootstrapImpl` é exibida. Esta seção não discute como criar um `BootstrapImpl` classe.
+>Na ilustração abaixo, uma classe `BootstrapImpl` é mostrada. Esta seção não discute como criar uma classe `BootstrapImpl`.
 
 A ilustração a seguir mostra o conteúdo do projeto Java que é empacotado no arquivo JAR do manipulador de usuários externos do convite.
 
@@ -241,14 +241,14 @@ Para adicionar usuários externos a convidar usando o console de administração
    > É recomendável usar o comando &quot;Ctrl + C&quot; para reiniciar o SDK. Reiniciar o SDK do AEM usando métodos alternativos, por exemplo, parar processos Java, pode levar a inconsistências no ambiente de desenvolvimento do AEM.
 
 1. Faça logon no console de administração.
-1. Clique em **[!UICONTROL Serviços]** > **[!UICONTROL Rights Management]** > **[!UICONTROL Configuração]** > Convidado **[!UICONTROL Registro do usuário]**.
-1. Habilite o registro de usuários convidados marcando a **[!UICONTROL Habilitar registro de usuário convidado]** caixa. Em **[!UICONTROL Usar sistema de registro incorporado]**, clique em **[!UICONTROL Não]**. Salve suas configurações.
-1. Na página inicial do console de administração, clique em **[!UICONTROL Configurações]** > **[!UICONTROL User Management]** > **[!UICONTROL Gerenciamento de domínio]**.
-1. Clique em **[!UICONTROL Novo Domínio Local]**. Na página a seguir, crie um domínio com o nome e o valor do identificador de `EDC_EXTERNAL_REGISTERED`. Salve as alterações.
-1. Na página inicial do console de administração, clique em **[!UICONTROL Serviços]** > **[!UICONTROL Rights Management]** > **[!UICONTROL Usuários convidados e locais]**. A variável **[!UICONTROL Adicionar usuário convidado]** é exibida.
+1. Clique em **[!UICONTROL Serviços]** > **[!UICONTROL Rights Management]** > **[!UICONTROL Configuração]** > Convidado **[!UICONTROL Registro de Usuário]**.
+1. Habilite o registro de usuários convidados marcando a caixa **[!UICONTROL Habilitar registro de usuários convidados]**. Em **[!UICONTROL Usar sistema de registro interno]**, clique em **[!UICONTROL Não]**. Salve suas configurações.
+1. Na home page do console de administração, clique em **[!UICONTROL Configurações]** > **[!UICONTROL Gerenciamento de Usuários]** > **[!UICONTROL Gerenciamento de Domínios]**.
+1. Clique em **[!UICONTROL Novo Domínio Local]**. Na página a seguir, crie um domínio com o nome e o valor de identificador `EDC_EXTERNAL_REGISTERED`. Salve as alterações.
+1. Na home page do console de administração, clique em **[!UICONTROL Serviços]** > **[!UICONTROL Rights Management]** > **[!UICONTROL Usuários Convidados e Locais]**. A página **[!UICONTROL Adicionar Usuário Convidado]** é exibida.
 1. Insira endereços de email (como o manipulador de usuários externos do convite atual não envia mensagens de email, o email endereçado não precisa ser válido). Clique em **[!UICONTROL OK]**. Os usuários são convidados para o sistema.
-1. Na página inicial do console de administração, clique em **[!UICONTROL Configurações]** > **[!UICONTROL User Management]** > **[!UICONTROL Usuários e grupos]**.
-1. No **[!UICONTROL Localizar]** insira um endereço de email especificado. Clique em **[!UICONTROL Localizar]**. O usuário que você convidou aparece como um usuário no local `EDC_EXTERNAL_REGISTERED` domínio.
+1. Na home page do console de administração, clique em **[!UICONTROL Configurações]** > **[!UICONTROL Gerenciamento de Usuários]** > **[!UICONTROL Usuários e Grupos]**.
+1. No campo **[!UICONTROL Localizar]**, digite um endereço de email especificado. Clique em **[!UICONTROL Localizar]**. O usuário que você convidou aparece como um usuário no domínio `EDC_EXTERNAL_REGISTERED` local.
 
 >[!NOTE]
 >

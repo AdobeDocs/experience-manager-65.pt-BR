@@ -18,18 +18,18 @@ ht-degree: 0%
 
 # Internacionalizando strings de interface do usuário {#internationalizing-ui-strings}
 
-As APIs Java™ e JavaScript permitem internacionalizar strings nos seguintes tipos de recursos:
+As APIs do Java™ e do JavaScript permitem internacionalizar strings nos seguintes tipos de recursos:
 
 * Arquivos de origem Java™.
 * Scripts JSP.
 * JavaScript em bibliotecas do lado do cliente ou na origem da página.
 * Valores de propriedade do nó JCR usados em caixas de diálogo e propriedades de configuração do componente.
 
-Para obter uma visão geral do processo de internacionalização e localização, consulte [Internacionalizar componentes](/help/sites-developing/i18n.md).
+Para obter uma visão geral do processo de internacionalização e localização, consulte [Internacionalizando componentes](/help/sites-developing/i18n.md).
 
 ## Internacionalizando strings em código Java™ e JSP {#internationalizing-strings-in-java-and-jsp-code}
 
-A variável `com.day.cq.i18n` O pacote Java™ permite exibir strings localizadas na interface do usuário. A variável `I18n` A classe fornece a `get` método que recupera strings localizadas do dicionário Adobe Experience Manager (AEM). O único parâmetro obrigatório do `get` method é a cadeia de caracteres literal no idioma inglês. O inglês é o idioma padrão da interface do usuário do. O exemplo a seguir localiza a palavra `Search`:
+O pacote Java™ `com.day.cq.i18n` permite exibir cadeias de caracteres localizadas na interface do usuário. A classe `I18n` fornece o método `get` que recupera strings localizadas do dicionário Adobe Experience Manager (AEM). O único parâmetro obrigatório do método `get` é o literal da cadeia de caracteres no idioma inglês. O inglês é o idioma padrão da interface do usuário do. O exemplo a seguir localiza a palavra `Search`:
 
 `i18n.get("Search");`
 
@@ -51,13 +51,13 @@ A propriedade language da conta do usuário é o método preferido porque é mai
 
 A classe I18n fornece dois construtores. A maneira como você determina a linguagem preferencial do usuário determina o construtor a ser usado.
 
-Para apresentar a cadeia de caracteres no idioma especificado na conta do usuário, use o seguinte construtor (após a importação `com.day.cq.i18n.I18n)`:
+Para apresentar a cadeia de caracteres no idioma especificado na conta de usuário, use o seguinte construtor (após a importação de `com.day.cq.i18n.I18n)`:
 
 ```java
 I18n i18n = new I18n(slingRequest);
 ```
 
-O construtor usa o `SlingHTTPRequest` para recuperar a configuração de idioma do usuário.
+O construtor usa `SlingHTTPRequest` para recuperar a configuração de idioma do usuário.
 
 Para usar o local da página para determinar o idioma, primeiro obtenha o ResourceBundle para o idioma da página solicitada:
 
@@ -69,9 +69,9 @@ I18n i18n = new I18n(resourceBundle);
 
 #### Internacionalizando uma string {#internationalizing-a-string}
 
-Use o `get` método do `I18n` para internacionalizar uma string. O único parâmetro obrigatório do `get` é a sequência de caracteres a ser internacionalizada. A string corresponde a uma string em um dicionário do Translator. O método get pesquisa a string no dicionário e retorna a tradução para o idioma atual.
+Use o método `get` do objeto `I18n` para internacionalizar uma cadeia de caracteres. O único parâmetro obrigatório do método `get` é a cadeia de caracteres a ser internacionalizada. A string corresponde a uma string em um dicionário do Translator. O método get pesquisa a string no dicionário e retorna a tradução para o idioma atual.
 
-O primeiro argumento do `get` deve estar em conformidade com as seguintes regras:
+O primeiro argumento do método `get` deve estar em conformidade com as seguintes regras:
 
 * O valor deve ser um literal de cadeia de caracteres. Uma variável do tipo `String` não é aceitável.
 * O literal da cadeia de caracteres deve ser expresso em uma única linha.
@@ -83,9 +83,9 @@ i18n.get("Enter a search keyword");
 
 #### Uso de dicas de tradução {#using-translation-hints}
 
-Especifique a [dica de tradução](/help/sites-developing/i18n-translator.md#adding-changing-and-removing-strings) da string internacionalizada para distinguir entre strings duplicadas no dicionário. Use o segundo parâmetro opcional do `get` para fornecer a dica de tradução. A dica de tradução deve corresponder exatamente à propriedade Comentário do item no dicionário.
+Especifique a [dica de tradução](/help/sites-developing/i18n-translator.md#adding-changing-and-removing-strings) da cadeia de caracteres internacionalizada para distinguir entre cadeias de caracteres duplicadas no dicionário. Use o segundo parâmetro opcional do método `get` para fornecer a dica de tradução. A dica de tradução deve corresponder exatamente à propriedade Comentário do item no dicionário.
 
-Por exemplo, o dicionário contém a string `Request` duas vezes: uma como verbo e outra como substantivo. O código a seguir inclui a dica de tradução como argumento na variável `get` método:
+Por exemplo, o dicionário contém a sequência de caracteres `Request` duas vezes: uma como verbo e outra como substantivo. O código a seguir inclui a dica de tradução como argumento no método `get`:
 
 ```java
 i18n.get("Request","A noun, as in a request for a web page");
@@ -95,17 +95,17 @@ i18n.get("Request","A noun, as in a request for a web page");
 
 Inclua variáveis na string localizada para criar significado contextual em uma frase. Por exemplo, depois de fazer logon em um aplicativo web, a página inicial exibe a mensagem &quot;Bem-vindo de volta, Administrador. Você tem duas mensagens na sua caixa de entrada.&quot; O contexto da página determina o nome de usuário e o número de mensagens.
 
-[No dicionário](/help/sites-developing/i18n-translator.md#adding-changing-and-removing-strings), as variáveis são representadas em strings como índices entre colchetes. Especifique os valores das variáveis como argumentos da variável `get` método. Os argumentos são colocados após a dica de tradução e os índices correspondem à ordem dos argumentos:
+[No dicionário](/help/sites-developing/i18n-translator.md#adding-changing-and-removing-strings), as variáveis são representadas em cadeias de caracteres como índices entre colchetes. Especifique os valores das variáveis como argumentos do método `get`. Os argumentos são colocados após a dica de tradução e os índices correspondem à ordem dos argumentos:
 
 ```xml
 i18n.get("Welcome back {0}. You have {1} messages.", "user name, number of messages", user.getDisplayName(), numItems);
 ```
 
-A string internacionalizada e a dica de tradução devem corresponder exatamente à string e ao comentário no dicionário. Você pode omitir a dica de localização fornecendo um `null` como o segundo argumento.
+A string internacionalizada e a dica de tradução devem corresponder exatamente à string e ao comentário no dicionário. Você pode omitir a dica de localização fornecendo um valor `null` como segundo argumento.
 
 #### Uso do Método Get Estático {#using-the-static-get-method}
 
-A variável `I18N` define um parâmetro estático `get` que é útil quando você deve localizar algumas strings. Além dos parâmetros de um objeto `get` , o método estático exige o `SlingHttpRequest` ou o `ResourceBundle` que você está usando, de acordo com a forma como está determinando o idioma preferido do usuário:
+A classe `I18N` define um método `get` estático que é útil quando você deve localizar algumas cadeias de caracteres. Além dos parâmetros do método `get` de um objeto, o método estático requer o objeto `SlingHttpRequest` ou o `ResourceBundle` que você está usando, de acordo com a forma como você está determinando o idioma preferencial do usuário:
 
 * Usar a preferência de idioma do usuário: forneça o SlingHttpRequest como o primeiro parâmetro.
 
@@ -114,19 +114,19 @@ A variável `I18N` define um parâmetro estático `get` que é útil quando voc�
 
   `I18n.get(resourceBundle,"Welcome back {}. You have {} messages.", "user name, number of messages", user.getDisplayName(), numItems);`
 
-### Internacionalizando strings no código JavaScript {#internationalizing-strings-in-javascript-code}
+### Internacionalização de strings no JavaScript Code {#internationalizing-strings-in-javascript-code}
 
-A API do JavaScript permite localizar strings no cliente. Assim como com [Java™ e JSP](#internationalizing-strings-in-java-and-jsp-code) , a API JavaScript permite identificar strings para localização, fornecer dicas de localização e incluir variáveis nas strings localizadas.
+A API do JavaScript permite localizar strings no cliente. Assim como no código [Java™ e JSP](#internationalizing-strings-in-java-and-jsp-code), a API do JavaScript permite identificar cadeias de caracteres para localização, fornecer dicas de localização e incluir variáveis nas cadeias de caracteres localizadas.
 
-A variável `granite.utils` [pasta da biblioteca do cliente](/help/sites-developing/clientlibs.md) O fornece a API do JavaScript. Para usar a API, inclua essa pasta da biblioteca do cliente na sua página. As funções de localização usam o `Granite.I18n` namespace.
+A `granite.utils` [pasta da biblioteca do cliente](/help/sites-developing/clientlibs.md) fornece a API do JavaScript. Para usar a API, inclua essa pasta da biblioteca do cliente na sua página. As funções de localização usam o namespace `Granite.I18n`.
 
-Antes de apresentar strings localizadas, defina o local usando o `Granite.I18n.setLocale` função. A função requer o código de idioma do local como argumento:
+Antes de apresentar cadeias de caracteres localizadas, defina a localidade usando a função `Granite.I18n.setLocale`. A função requer o código de idioma do local como argumento:
 
 ```
 Granite.I18n.setLocale("fr");
 ```
 
-Para apresentar uma string localizada, use o `Granite.I18n.get` função:
+Para apresentar uma cadeia de caracteres localizada, use a função `Granite.I18n.get`:
 
 ```
 Granite.I18n.get("string to localize");
@@ -145,7 +145,7 @@ Os parâmetros de função são diferentes do método Java™ I18n.get:
 * O segundo parâmetro é uma matriz de valores a serem inseridos no literal da string.
 * O terceiro parâmetro é a dica de localização.
 
-O exemplo a seguir usa o JavaScript para localizar a mensagem &quot;Bem-vindo de volta, Administrador. Você tem duas mensagens na sua caixa de entrada.&quot; frase:
+O exemplo a seguir usa o JavaScript para localizar a caixa de diálogo &quot;Bem-vindo de volta ao administrador&quot;. Você tem duas mensagens na sua caixa de entrada.&quot; frase:
 
 ```
 Granite.I18n.setLocale("fr");
@@ -154,9 +154,9 @@ Granite.I18n.get("Welcome back {0}. You have {1} new messages in your inbox.", [
 
 ### Internacionalizando strings de nós JCR {#internationalizing-strings-from-jcr-nodes}
 
-As cadeias de caracteres da interface do usuário geralmente se baseiam nas propriedades do nó JCR. Por exemplo, a variável `jcr:title` propriedade de uma página é normalmente usada como o conteúdo da variável `h1` elemento no código da página. A variável `I18n` A classe fornece a `getVar` método para localizar essas cadeias de caracteres.
+As cadeias de caracteres da interface do usuário geralmente se baseiam nas propriedades do nó JCR. Por exemplo, a propriedade `jcr:title` de uma página geralmente é usada como o conteúdo do elemento `h1` no código da página. A classe `I18n` fornece o método `getVar` para localizar essas cadeias de caracteres.
 
-O exemplo de script JSP a seguir recupera o `jcr:title` do repositório e exibe a cadeia de caracteres localizada na página:
+O exemplo de script JSP a seguir recupera a propriedade `jcr:title` do repositório e exibe a cadeia de caracteres localizada na página:
 
 ```java
 <% title = properties.get("jcr:title", String.class);%>
@@ -165,11 +165,11 @@ O exemplo de script JSP a seguir recupera o `jcr:title` do repositório e exibe 
 
 #### Especificando dicas de tradução para nós JCR {#specifying-translation-hints-for-jcr-nodes}
 
-Semelhante [dicas de tradução na API Java™](#using-translation-hints), você pode fornecer dicas de tradução para distinguir cadeias de caracteres duplicadas no dicionário. Forneça a dica de tradução como uma propriedade do nó que contém a propriedade internacionalizada. O nome da propriedade de dica é composto do nome da propriedade internacionalizada com a variável `_commentI18n` sufixo:
+Semelhante às [dicas de tradução na API Java™](#using-translation-hints), você pode fornecer dicas de tradução para distinguir cadeias de caracteres duplicadas no dicionário. Forneça a dica de tradução como uma propriedade do nó que contém a propriedade internacionalizada. O nome da propriedade de dica é composto do nome da propriedade internacionalizada com o sufixo `_commentI18n`:
 
 `${prop}_commentI18n`
 
-Por exemplo, uma variável `cq:page` O nó inclui a propriedade jcr:title que está sendo localizada. A dica é fornecida como o valor da propriedade chamada jcr:title_commentI18n.
+Por exemplo, um nó `cq:page` inclui a propriedade jcr:title que está sendo localizada. A dica é fornecida como o valor da propriedade chamada jcr:title_commentI18n.
 
 ### Testar cobertura de internacionalização {#testing-internationalization-coverage}
 

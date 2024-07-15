@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Tabelas em formulários adaptáveis{#tables-in-adaptive-forms}
 
-<span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) para [criação de um novo Forms adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
+O <span class="preview"> Adobe recomenda o uso de [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adicionar o Forms Adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
@@ -47,7 +47,7 @@ Para criar uma tabela, arraste e solte o componente Tabela do navegador de compo
 
 ### Sobre as células do cabeçalho e do corpo {#about-header-and-body-cells}
 
-As células de cabeçalho são campos de texto. Para alterar o rótulo de um cabeçalho, clique com o botão direito do mouse na célula de cabeçalho e clique em **Editar**. Na caixa de diálogo Editar, atualize o rótulo na **Valor** e clique em **OK**.
+As células de cabeçalho são campos de texto. Para alterar o rótulo de um cabeçalho, clique com o botão direito do mouse na célula de cabeçalho e clique em **Editar**. Na caixa de diálogo Editar, atualize o rótulo no campo **Valor** e clique em **OK**.
 
 Por padrão, as células do corpo são caixas de texto. Você pode substituir uma célula do corpo por qualquer outro componente de formulários adaptáveis disponível no sidekick, como uma caixa numérica, seletor de datas ou lista suspensa.
 
@@ -55,7 +55,7 @@ Por exemplo, a primeira linha do corpo na tabela a seguir inclui componentes de 
 
 ![tipos-célula-linha](assets/row-cell-types.png)
 
-É possível mesclar duas ou mais células do corpo selecionando as células que deseja mesclar, clicando com o botão direito do mouse e selecionando **Mesclar**. Além disso, é possível dividir uma célula mesclada clicando com o botão direito do mouse nela e selecionando **Dividir células**.
+Você pode mesclar duas ou mais células de corpo selecionando as células que deseja mesclar, clicando com o botão direito do mouse e selecionando **Mesclar**. Além disso, você pode dividir uma célula mesclada clicando com o botão direito do mouse nela e selecionando **Dividir células**.
 
 ### Adicionar, excluir, mover linhas e colunas {#add-delete-move-rows-and-columns}
 
@@ -69,7 +69,7 @@ Para adicionar ou excluir uma linha ou coluna ou mover uma linha, clique em qual
 
 O menu suspenso da linha também fornece a operação Editar para editar propriedades, configurações e opções de estilo de linhas.
 
-![add-delete-move-row-column](assets/add-delete-move-row-column.png)
+![adicionar-excluir-mover-linha-coluna](assets/add-delete-move-row-column.png)
 
 >[!NOTE]
 >
@@ -97,13 +97,13 @@ Para aplicar a classificação nas colunas da tabela, as células da coluna da t
 
 Para ativar a classificação:
 
-1. Selecione a tabela e selecione ![configure_icon](assets/configure_icon.png) (Configurar). Também é possível selecionar a tabela usando o **Conteúdo** no sidekick da Comunicação interativa.
-1. Selecionar **Ativar classificação**.
-1. Selecionar ![done_icon](assets/done_icon.png) para salvar as propriedades da tabela. Os ícones de classificação, setas para cima e para baixo, nos cabeçalhos das colunas, representam que a classificação foi ativada.
+1. Selecione a tabela e selecione ![configure_icon](assets/configure_icon.png) (Configurar). Você também pode selecionar a tabela usando o navegador **Conteúdo** no sidekick da Comunicação interativa.
+1. Selecione **Habilitar Classificação**.
+1. Selecione ![done_icon](assets/done_icon.png) para salvar as propriedades da tabela. Os ícones de classificação, setas para cima e para baixo, nos cabeçalhos das colunas, representam que a classificação foi ativada.
 
-   ![Ativar classificação](assets/enable_sorting_new.png)
+   ![Habilitar classificação](assets/enable_sorting_new.png)
 
-1. Alterne para a **Visualizar** para exibir a saída. A tabela é classificada automaticamente com base na primeira coluna da tabela.
+1. Alterne para o modo **Visualização** para exibir a saída. A tabela é classificada automaticamente com base na primeira coluna da tabela.
 1. Clique no cabeçalho da coluna para classificar os valores com base na coluna.
 
    Um cabeçalho de coluna com uma seta para cima representa que a tabela é classificada com base nessa coluna. Além disso, os valores na coluna são exibidos na ordem crescente.
@@ -112,15 +112,15 @@ Para ativar a classificação:
 
    Da mesma forma, um cabeçalho de coluna com uma seta para baixo representa que os valores na coluna são exibidos na ordem decrescente.
 
-   Também é possível fazer alterações na tabela no **Visualizar** e clique no cabeçalho da coluna novamente para classificar os valores da coluna.
+   Você também pode fazer alterações na tabela no modo **Visualização** e clicar no cabeçalho da coluna novamente para classificar os valores da coluna.
 
 ## Definir a largura da coluna de uma tabela {#set-column-width}
 
 Execute as seguintes etapas para definir a largura da coluna para uma tabela:
 
-1. No **[!UICONTROL Conteúdo]** , selecione a **[!UICONTROL Tabela]** e selecione o botão Configurar (![Configurar](assets/configure-icon.svg))ícone.
+1. Na guia **[!UICONTROL Conteúdo]**, selecione o componente **[!UICONTROL Tabela]** e selecione o ícone Configurar (![Configurar](assets/configure-icon.svg)).
 
-1. Insira a lista separada por vírgulas de valores na **[!UICONTROL Largura da coluna]** para especificar a largura proporcional de cada coluna na tabela. Por exemplo, para uma tabela que inclui 3 colunas, especificando 2,4,6 como o valor na variável **[!UICONTROL Largura da coluna]** o campo resulta na definição da largura das colunas como 2/12 para a primeira coluna, 4/12 para a segunda coluna e 6/12 para a terceira coluna. 2/12 como a largura da primeira coluna refere-se a um sexto da largura do quadro. Da mesma forma, 4/12 define a largura da segunda coluna como um terço da largura da tabela, e 6/12 define a largura da terceira coluna como metade da largura da tabela.
+1. Insira a lista separada por vírgulas de valores no campo **[!UICONTROL Largura da Coluna]** para especificar a largura proporcional de cada coluna na tabela. Por exemplo, para uma tabela que inclui 3 colunas, especificar 2,4,6 como o valor no campo **[!UICONTROL Largura da coluna]** resultará na definição da largura das colunas como 2/12 para a primeira coluna, 4/12 para a segunda coluna e 6/12 para a terceira coluna. 2/12 como a largura da primeira coluna refere-se a um sexto da largura do quadro. Da mesma forma, 4/12 define a largura da segunda coluna como um terço da largura da tabela, e 6/12 define a largura da terceira coluna como metade da largura da tabela.
 
 ## Configurar estilo da tabela {#configure}
 
@@ -128,7 +128,7 @@ Você pode definir o estilo de uma tabela usando o modo Estilo na barra de ferra
 
 1. Na barra de ferramentas da página, antes de Visualizar, selecione ![tela suspensa](assets/canvas-drop-down.png) > **Estilo**.
 
-1. Na barra lateral, selecione tabela e clique no botão Editar ![botão editar](assets/edit-button.png).
+1. Na barra lateral, selecione tabela e selecione o botão de edição ![botão de edição](assets/edit-button.png).
 Você pode ver as propriedades de estilo na barra lateral.
 
 ![Propriedades de estilo de uma tabela](assets/style-table.png)
@@ -145,9 +145,9 @@ As tabelas fornecem suporte pronto para adicionar ou excluir dinamicamente linha
 1. Na guia Configurações de repetição, especifique as contagens mínima e máxima para limitar o número de linhas na tabela.
 1. Clique em **Concluído**.
 
-No tempo de execução, você verá **+** e *-* botões para adicionar ou excluir uma linha.
+No tempo de execução, você verá os botões **+** e *-* para adicionar ou excluir uma linha.
 
-![add-delete-rows-dynamically](assets/add-delete-rows-dynamically.png)
+![adicionar-excluir-linhas-dinamicamente](assets/add-delete-rows-dynamically.png)
 
 >[!NOTE]
 >
@@ -155,12 +155,12 @@ No tempo de execução, você verá **+** e *-* botões para adicionar ou exclui
 
 ## Expressões em uma tabela {#expressions-in-a-table}
 
-As tabelas em formulários adaptáveis permitem escrever expressões em JavaScript para induzir comportamentos, como mostrar ou ocultar uma tabela ou uma linha, adicionar todos os números e mostrar o total em uma célula, habilitar ou desabilitar uma célula, validar a entrada do usuário e assim por diante. Essas expressões usam APIs de modelo de script de formulários adaptáveis.
+As tabelas em formulários adaptáveis permitem escrever expressões no JavaScript para induzir comportamentos, como mostrar ou ocultar uma tabela ou uma linha, adicionar todos os números e mostrar o total em uma célula, habilitar ou desabilitar uma célula, validar a entrada do usuário e assim por diante. Essas expressões usam APIs de modelo de script de formulários adaptáveis.
 
 Embora tabelas e linhas suportem apenas expressões de visibilidade para controlar sua visibilidade com base no valor retornado por uma expressão, as células suportam as seguintes expressões:
 
-* **Script de inicialização:** para executar uma ação na inicialização de um campo.
-* **Script de confirmação de valor:** para alterar os componentes de um formulário depois que o valor de um campo é alterado.
+* **Script de Inicialização:** para executar uma ação na inicialização de um campo.
+* **Script de Confirmação de Valor:** para alterar os componentes de um formulário após a alteração do valor de um campo.
 
 >[!NOTE]
 >
@@ -168,7 +168,7 @@ Embora tabelas e linhas suportem apenas expressões de visibilidade para control
 
 * **Calcular expressões**: para calcular automaticamente o valor de um campo.
 * **Expressões de validação**: para validar um campo.
-* **Acessar expressões**: para ativar/desativar um campo.
+* **Acessar expressões**: para habilitar/desabilitar um campo.
 * **Expressão de visibilidade**: para controlar a visibilidade de um campo e painel.
 
 A expressão de visibilidade de uma tabela ou linha pode ser definida na guia de propriedades Painel da caixa de diálogo Editar componente correspondente. As expressões de uma célula podem ser definidas na guia Script da caixa de diálogo Editar componente.
@@ -213,18 +213,18 @@ Coluna expandida de uma tabela em um dispositivo móvel
 
 ## Mesclar dados em uma tabela {#merge-data-in-a-table}
 
-Tabelas em formulários adaptáveis permitem preencher a tabela no tempo de execução usando dados de um arquivo XML. O arquivo XML de dados pode residir no sistema de arquivos local da máquina em que o servidor do AEM Forms está sendo executado ou no repositório CRX.
+Tabelas em formulários adaptáveis permitem preencher a tabela no tempo de execução usando dados de um arquivo XML. O arquivo XML de dados pode residir no sistema de arquivos local da máquina em que o servidor do AEM Forms está em execução ou no repositório do CRX.
 
 Vamos ver um exemplo da tabela de resumo de transações bancárias a seguir que queremos preencher com dados de um arquivo XML.
 
-![data-merge-table](assets/data-merge-table.png)
+![tabela-de-mesclagem-de-dados](assets/data-merge-table.png)
 
 Neste exemplo, a propriedade Element name para:
 
 * a linha é **Linha1**
 * a célula do corpo em Data da transação é **tableItem1**
 * a célula do corpo em Descrição é **tableItem2**
-* a célula do corpo em Transaction type é **type**
+* a célula do corpo sob o tipo Transação é **tipo**
 * a célula do corpo em Valor em USD é **tableItem3**
 
 O arquivo XML que contém dados no seguinte formato:
@@ -285,13 +285,13 @@ O arquivo XML que contém dados no seguinte formato:
 </afData>
 ```
 
-No exemplo XML, os dados de uma linha são definidos pela variável `<Row1>` tags, que é o nome do elemento para a linha na tabela. No prazo de `<Row1>` tag, os dados de cada célula são definidos na tag para seu nome de elemento, como `<tableItem1>`, `<tableItem2>`, `<tableItem3>`, e `<type>`.
+No exemplo XML, os dados de uma linha são definidos pelas marcas `<Row1>`, que é o nome do elemento da linha na tabela. Na marca `<Row1>`, os dados de cada célula são definidos na marca para seu nome de elemento, como `<tableItem1>`, `<tableItem2>`, `<tableItem3>` e `<type>`.
 
-Para mesclar esses dados com a tabela no tempo de execução, precisamos apontar o formulário adaptável que contém a tabela para o local XML absoluto com o wcmmode desativado. Por exemplo, se o formulário adaptável estiver em *https://localhost:4502/myForms/bankTransaction.html* e o arquivo XML de dados é salvo em *C:/myTransactions/bankSummary.xml*, você pode visualizar a tabela com os dados no seguinte URL:
+Para mesclar esses dados com a tabela no tempo de execução, precisamos apontar o formulário adaptável que contém a tabela para o local XML absoluto com o wcmmode desativado. Por exemplo, se o formulário adaptável estiver em *https://localhost:4502/myForms/bankTransaction.html* e o arquivo XML de dados estiver salvo em *C:/myTransactions/bankSummary.xml*, você poderá exibir a tabela com dados na seguinte URL:
 
 *https://localhost:4502/myForms/bankTransaction.html?dataRef=file:/// C:/myTransactions/bankSummary.xml&amp;wcmmode=disabled*
 
-![dados-mesclados-tabela](assets/data-merged-table.png)
+![tabela-mesclada-de-dados](assets/data-merged-table.png)
 
 ## Usar componentes XDP e tipos complexos de XSD {#use-xdp-components-and-xsd-complex-types}
 

@@ -28,11 +28,11 @@ Para obter mais informações sobre o Forms Portal e seus recursos, consulte [In
 
 ## Introdução ao Forms Portal {#getting-started-with-forms-portal}
 
-Navegue até a página do Forms Portal publicada. Para obter mais informações sobre como criar uma página do Forms Portal, consulte [Criação de uma página do Forms Portal](../../forms/using/creating-form-portal-page.md).
+Navegue até a página do Forms Portal publicada. Para obter mais informações sobre como criar uma página do Forms Portal, consulte [Criando uma página do Forms Portal](../../forms/using/creating-form-portal-page.md).
 
 O componente de Pesquisa e Lister do Forms Portal exibe os formulários disponíveis na instância do Publish do servidor AEM. Essa lista inclui todos os formulários ou os formulários definidos no filtro no momento da criação da página do Forms Portal. Uma página do Forms Portal é semelhante à exibida na imagem a seguir:
 
-![Um exemplo de página do portal de formulários ](assets/forms-portal-page.png)
+![Um exemplo de página de portal de formulários ](assets/forms-portal-page.png)
 
 Um exemplo de página do Forms Portal
 
@@ -75,7 +75,7 @@ Cada formulário contém informações de ajuda que permitem ao usuário preench
 
 #### Rascunhos e envio {#drafts-and-submission}
 
-Como opção, um usuário pode salvar o rascunho de um formulário clicando em **Salvar**. Isso permite que o usuário trabalhe em um formulário por um período de tempo antes de enviar o formulário.
+Opcionalmente, um usuário pode salvar um rascunho de um formulário clicando em **Salvar**. Isso permite que o usuário trabalhe em um formulário por um período de tempo antes de enviar o formulário.
 
 Os dados preenchidos no formulário (incluindo anexos) são salvos como rascunho no servidor. O rascunho de um formulário pode ser salvo qualquer número de vezes. O formulário salvo aparece na guia Rascunhos do componente Rascunho e envio da página.
 
@@ -83,9 +83,9 @@ Após o preenchimento do formulário, o usuário envia os formulários clicando 
 
 >[!NOTE]
 >
->Os formulários enviados aparecerão na guia Forms enviado somente se a ação enviar para o formulário adaptável estiver configurada como Ação enviar do Forms Portal. Para obter mais informações sobre ações de envio, consulte [Configuração da ação Enviar](../../forms/using/configuring-submit-actions.md).
+>Os formulários enviados aparecerão na guia Forms enviado somente se a ação enviar para o formulário adaptável estiver configurada como Ação enviar do Forms Portal. Para obter mais informações sobre ações de envio, consulte [Configurando a ação de envio](../../forms/using/configuring-submit-actions.md).
 
-![Rascunhos e componentes de envios](assets/draft-submission.png)
+![Componente de rascunhos e envios](assets/draft-submission.png)
 
 Rascunhos e componentes de envios
 
@@ -93,8 +93,8 @@ Rascunhos e componentes de envios
 
 Há determinados formulários que você deve preencher e enviar com frequência. Por exemplo, o formulário para apresentar uma declaração de imposto individual é enviado todos os anos. Nesses casos, enquanto parte das informações muda sempre que você preenche o formulário, a maioria delas, como os detalhes pessoais e familiares, não muda. No entanto, ainda é necessário preencher todo o formulário novamente, do zero.
 
-O AEM Forms pode ajudar a otimizar a experiência de preenchimento do formulário e reduzir significativamente o tempo para preencher e enviar um formulário novamente. Os usuários finais podem iniciar um novo formulário usando dados de um formulário enviado. Essa funcionalidade é incorporada no [Rascunhos e componentes de envios](../../forms/using/draft-submission-component.md). Ao adicionar o componente Rascunhos e envio à página do Forms Portal e publicá-lo, os usuários finais veem uma opção nas guias Forms enviado e Rascunho do Forms. A opção permite iniciar um novo formulário usando dados de um formulário enviado. A imagem a seguir destaca essa opção.
+O AEM Forms pode ajudar a otimizar a experiência de preenchimento do formulário e reduzir significativamente o tempo para preencher e enviar um formulário novamente. Os usuários finais podem iniciar um novo formulário usando dados de um formulário enviado. Esta funcionalidade é integrada ao [componente Rascunhos e Envios](../../forms/using/draft-submission-component.md). Ao adicionar o componente Rascunhos e envio à página do Forms Portal e publicá-lo, os usuários finais veem uma opção nas guias Forms enviado e Rascunho do Forms. A opção permite iniciar um novo formulário usando dados de um formulário enviado. A imagem a seguir destaca essa opção.
 
-![start-a-new-form](assets/start-a-new-form.png)
+![iniciar-um-novo-formulário](assets/start-a-new-form.png)
 
 Ao clicar no botão para iniciar um novo formulário, ele abre um novo formulário com dados do formulário enviado correspondente. Agora você pode revisar e atualizar as informações, conforme necessário, e enviar o formulário.

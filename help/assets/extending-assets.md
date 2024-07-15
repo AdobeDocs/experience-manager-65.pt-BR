@@ -17,15 +17,15 @@ ht-degree: 0%
 
 O Editor de Ativos é o principal ponto de acesso que os usuários de um site do Adobe Enterprise Manager usam para localizar, exibir e manipular os ativos digitais no seu repositório.
 
-Como um [!DNL Experience Manager] desenvolvedor, você pode personalizar e estender o Editor de ativos de várias maneiras, apresentando aos usuários uma interface e um conjunto de funcionalidades especificamente adaptados.
+Como desenvolvedor do [!DNL Experience Manager], você pode personalizar e estender o Editor de ativos de várias maneiras, apresentando aos usuários uma interface e um conjunto de funcionalidades especificamente adaptados.
 
 Os seguintes aspectos da funcionalidade podem ser personalizados ou aprimorados:
 
 * [Estender editor de ativos](asseteditorx.md)
-* [Estender pesquisa de ativos](searchx.md)
-* [Processar ativos usando manipuladores de mídia e fluxos de trabalho](media-handlers.md)
-* [Integrar ativos ao fluxo de atividade](extending-activity-stream.md)
-* [Desenvolvimento de proxy de ativos](proxy.md)
+* [Estender a pesquisa do Assets](searchx.md)
+* [Processar o Assets usando manipuladores de mídia e fluxos de trabalho](media-handlers.md)
+* [Integrar o Assets ao fluxo de atividade](extending-activity-stream.md)
+* [Desenvolvimento de proxy do Assets](proxy.md)
 * [Práticas recomendadas para configurar o ImageMagick](best-practices-for-imagemagick.md)
 
 ## Personalizar a aparência {#customizing-the-look-and-feel}
@@ -38,6 +38,6 @@ Os seguintes aspectos da aparência do Editor de ativos são personalizáveis:
 
 ## Personalizar representações {#customizing-renditions}
 
-Entrada [!DNL Experience Manager Assets] terminologia uma representação é o formulário no qual um ativo é apresentado. Em geral, um ativo específico pode ter várias representações. Por exemplo, uma imagem colorida pode ter uma representação em seu tamanho original, outra em um tamanho reduzido e outra que é dimensionada e convertida em tons de cinza.
+Na terminologia do [!DNL Experience Manager Assets], uma representação é a forma na qual um ativo é apresentado. Em geral, um ativo específico pode ter várias representações. Por exemplo, uma imagem colorida pode ter uma representação em seu tamanho original, outra em um tamanho reduzido e outra que é dimensionada e convertida em tons de cinza.
 
 As representações em que um ativo específico está disponível podem ser personalizadas e novas representações podem ser criadas.

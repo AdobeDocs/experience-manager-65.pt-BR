@@ -24,7 +24,7 @@ Vários atalhos de teclado estão disponíveis em todo o AEM. Alguns aplicam-se 
 >
 >Seleção múltipla em um dispositivo de desktop:
 >
->* Windows: **Ctrl**+**click** nos componentes necessários.
+>* Windows: **Ctrl**+**clique** nos componentes necessários.
 >
 >* Mac: **Cmd**+**click** nos componentes necessários.
 >
@@ -41,9 +41,9 @@ Vários atalhos de teclado estão disponíveis em todo o AEM. Alguns aplicam-se 
   <tr>
    <td>Console</td>
    <td><strong><code>Shift-Double-Click</code></strong><br /> (na página obrigatória)</td>
-   <td>Abrir página em nova janela.<br /> <strong>Nota:</strong> este sistema é operacional se o <a href="/help/sites-classic-ui-authoring/author-env-user-props.md">Propriedades do usuário</a> são definidos como Janela única; se Várias janelas, esse será o comportamento padrão.</td>
+   <td>Abrir página em nova janela.<br /> <strong>Observação:</strong> esta opção estará operacional se as <a href="/help/sites-classic-ui-authoring/author-env-user-props.md">Propriedades do Usuário</a> estiverem definidas como Janela Única; se houver Várias Janelas, este será o comportamento padrão.</td>
   </tr>
  </tbody>
 </table>
 
-Vários atalhos de teclado também estão disponíveis para os usuários de desktop ao usar o [editor de página](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) para criar páginas.
+Vários atalhos de teclado também estão disponíveis para usuários de desktop que utilizam o [editor de páginas](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) para criar páginas.

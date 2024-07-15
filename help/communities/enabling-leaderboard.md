@@ -21,18 +21,18 @@ ht-degree: 2%
 
 ## Introdução {#introduction}
 
-A variável `Leaderboard` o componente ajuda você a ter uma ideia de como os membros estão interagindo na comunidade, classificando-os de acordo com os pontos ganhos (pontuação básica) ou sua experiência (pontuação avançada).
+O componente `Leaderboard` ajuda você a ter uma ideia de como os membros estão interagindo na comunidade, classificando-os de acordo com os pontos ganhos (pontuação básica) ou sua experiência (pontuação avançada).
 
-Antes de incluir o componente de quadro de classificação em uma página, é necessário configurar [Pontuação e medalhas das comunidades](/help/communities/implementing-scoring.md).
+Antes de incluir o componente de quadro de classificação em uma página, é necessário configurar a [Pontuação e as medalhas das comunidades](/help/communities/implementing-scoring.md).
 
 Esta seção da documentação descreve:
 
-* Adicionar o `Leaderboard` componente a um [site da comunidade](/help/communities/overview.md#community-sites).
-* Definições de configuração para o `Leaderboard` componente.
+* Adicionando o componente `Leaderboard` a um [site da comunidade](/help/communities/overview.md#community-sites).
+* Definições de configuração para o componente `Leaderboard`.
 
 ### Adicionar um quadro de classificação a uma página {#adding-a-leaderboard-to-a-page}
 
-Para adicionar um `Leaderboard` para uma página no modo de autor, localize o componente
+Para adicionar um componente `Leaderboard` a uma página no modo de autor, localize o componente
 
 * `Communities / Leaderboard`
 
@@ -42,19 +42,19 @@ Para obter as informações necessárias, visite [Noções básicas sobre compon
 
 Quando colocado pela primeira vez em uma página de um site da comunidade, é assim que o componente aparece:
 
-![placar de líderes](assets/leaderboard.png)
+![quadro de classificação](assets/leaderboard.png)
 
 ### Configurar quadro de classificação {#configuring-leaderboard}
 
-Selecione o colocado `Leaderboard` para que você possa acessar e selecionar o `Configure` ícone que abre a caixa de diálogo de edição.
+Selecione o componente `Leaderboard` inserido para que você possa acessar e selecionar o ícone `Configure` que abre a caixa de diálogo de edição.
 
-![configure-new](assets/configure-new.png)
+![configurar-novo](assets/configure-new.png)
 
-![configure-leaderboard](assets/configure-leaderboard.png)
+![configurar quadro de classificação](assets/configure-leaderboard.png)
 
 #### Guia Configurações {#settings-tab}
 
-No **[!UICONTROL Configurações]** especifique quais informações relacionadas ao membro são exibidas:
+Na guia **[!UICONTROL Configurações]**, especifique quais informações relacionadas ao membro serão exibidas:
 
 * **Nome de exibição**
 
@@ -66,7 +66,7 @@ O padrão é `Leaderboard` se nada for inserido.
   Se marcada, uma coluna para ícones de selo é incluída no quadro de classificação.
 O padrão está desmarcado.
 
-* **Nome da insígnia**
+* **Nome da medalha**
 
   Se marcada, uma coluna para o nome do selo é incluída no quadro de classificação.
 O padrão está desmarcado.
@@ -78,9 +78,9 @@ O padrão está desmarcado.
 
 #### Guia Regras {#rules-tab}
 
-No **Regras** , o site da comunidade e suas regras de pontuação e criação de símbolos
+Na guia **Regras**, selecione o site da comunidade e suas regras de pontuação e notificação
 
-* **Local da regra**
+* **Local da Regra**
 
   (Obrigatório) Local onde a regra de Pontuação/Inscrição está configurada.
 
@@ -88,7 +88,7 @@ No **Regras** , o site da comunidade e suas regras de pontuação e criação de
 
   (Obrigatório) Regra específica que gera as pontuações a serem exibidas.
 
-* **Regra de insígnia**
+* **Regra de distribuição de insígnias**
 
   (Obrigatório) Regra específica que gera o símbolo a ser exibido.
 
@@ -104,7 +104,7 @@ Configuração do componente de quadro de classificação:
 
 * Guia Configurações:
 
-   * Nome de exibição = `Participation Board`
+   * Nome para Exibição = `Participation Board`
    * `checked`:
 
       * Insígnia
@@ -113,12 +113,12 @@ Configuração do componente de quadro de classificação:
 
 * Guia Regras:
 
-   * Local da regra = `/content/sites/<site name>/jcr:content`
-   * Regra de pontuação = `/libs/settings/community/scoring/rules/forums-scoring`
-   * Regra de insígnia = `/libs/settings/community/badging/rules//reference-badging`
-   * Limite de exibição = `10`
+   * Local da Regra = `/content/sites/<site name>/jcr:content`
+   * Regra de Pontuação = `/libs/settings/community/scoring/rules/forums-scoring`
+   * Regra de Insígnia = `/libs/settings/community/badging/rules//reference-badging`
+   * Limite de Exibição = `10`
 
-![participantes-quadro de classificação](assets/participants-leaderboard.png)
+![placar de líderes dos participantes](assets/participants-leaderboard.png)
 
 ### Exemplo: Quadro de classificação de especialistas {#example-experts-leaderboard}
 
@@ -128,7 +128,7 @@ Configuração do componente de quadro de classificação:
 
 * Guia Configurações:
 
-   * Nome de exibição = `Expertise Board`
+   * Nome para Exibição = `Expertise Board`
    * `checked`:
 
       * Insígnia
@@ -136,15 +136,15 @@ Configuração do componente de quadro de classificação:
 
 * Guia Regras:
 
-   * Local da regra = `/content/sites/<site name>/jcr:content`
-   * Regra de pontuação = `/libs/settings/community/scoring/rules/adv-forums-scoring`
-   * Regra de insígnia = `/libs/settings/community/badging/rules/adv-forums-badging`
-   * Limite de exibição = `10`
+   * Local da Regra = `/content/sites/<site name>/jcr:content`
+   * Regra de Pontuação = `/libs/settings/community/scoring/rules/adv-forums-scoring`
+   * Regra de Insígnia = `/libs/settings/community/badging/rules/adv-forums-badging`
+   * Limite de Exibição = `10`
 
-![especialistas-quadro de classificação](assets/experts-leaderboard.png)
+![quadro de classificação de especialistas](assets/experts-leaderboard.png)
 
 ### Informações adicionais {#additional-information}
 
-Mais informações podem ser encontradas no [Fundamentos do Placar de líderes](/help/communities/leaderboard.md) página para desenvolvedores.
+Mais informações podem ser encontradas na página do [Leaderboard Essentials](/help/communities/leaderboard.md) para desenvolvedores.
 
-As instruções para criar regras são fornecidas no [Pontuação e medalhas das comunidades](/help/communities/implementing-scoring.md) página para administradores.
+As instruções para criar regras são fornecidas na página [Pontuação e medalhas das comunidades](/help/communities/implementing-scoring.md) para administradores.

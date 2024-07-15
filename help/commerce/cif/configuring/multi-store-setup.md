@@ -32,13 +32,13 @@ Para conectar um site de AEM AEM e os componentes principais de CIF também a um
 
 ## Configuração {#configuration}
 
-1. Configure várias lojas e visualizações de loja de acordo com o padrão descrito em [Sites, lojas e visualizações do Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html)
+1. Configure várias lojas e visualizações de loja de acordo com o padrão descrito em [Sites, lojas e visualizações da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html)
 
 2. Verifique se a conexão entre AEM e Adobe Commerce está funcionando.
 
 3. Crie uma configuração secundária da configuração do CIF Cloud Service seguindo estas etapas:
 
-   * No AEM, acesse Ferramentas > Geral > [Navegador de configuração](/help/sites-administering/configurations.md#using-configuration-browser)
+   * No AEM, vá para Ferramentas > Geral > [Navegador de Configuração](/help/sites-administering/configurations.md#using-configuration-browser)
    * Selecione a configuração básica que você criou
    * Crie uma configuração usando as etapas descritas no ponto 2 acima
 
@@ -46,19 +46,19 @@ Para conectar um site de AEM AEM e os componentes principais de CIF também a um
 
    >[!TIP]
    >
-   >Os catálogos de comércio podem ser endereçados usando IDs ou UIDs. Os UIDs foram introduzidos no Adobe Commerce 2.4.2. Habilite isso somente se o back-end de comércio suportar um esquema do GraphQL versão 2.4.2 ou posterior.
+   >Os catálogos do Commerce podem ser endereçados usando IDs ou UIDs. Os UIDs foram introduzidos no Adobe Commerce 2.4.2. Habilite isso somente se o back-end de comércio suportar um esquema do GraphQL versão 2.4.2 ou posterior.
 
 4. Atribua a configuração secundária a um site do AEM
 
    * Acesse o console do AEM Sites
-   * Navegue até a raiz de região ou idioma da estrutura do site, por exemplo, /content/venia/us _ou_ /content/venia/us/en para a página de exemplo Venia
+   * Acesse a raiz de região ou idioma da estrutura do site, por exemplo, /content/venia/us _ou_ /content/venia/us/en para a página de exemplo Venia.
    * Selecione a página e abra as propriedades dela
    * Selecione a guia Avançado
-   * No `Configuration` selecione a configuração que você criou na etapa 3
+   * Na seção `Configuration`, selecione a configuração criada na etapa
 
 ## Recursos adicionais
 
-* [Sites, lojas e visualizações do Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html)
+* [Sites, Lojas e Exibições do Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html)
 * [Componentes principais da CIF do AEM — Configuração de várias lojas/sites](https://github.com/adobe/aem-core-cif-components#multi-store--site-configuration)
 * [Usar o gerenciamento de vários sites](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/translation/multi-site-manager-feature-video-use.html)
 * [Reutilizar conteúdo: gerenciador de vários sites e Live Copy](/help/sites-administering/msm.md)

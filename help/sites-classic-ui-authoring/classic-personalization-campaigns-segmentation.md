@@ -32,7 +32,7 @@ O conteúdo pode então ser direcionado para as necessidades e os interesses do 
 
 ## Uso da segmentação {#using-segmentation}
 
-Os segmentos são definidos em [Configuração da segmentação](/help/sites-administering/campaign-segmentation.md). Eles são usados para orientar o conteúdo real visto por um público-alvo específico.
+Segmentos estão definidos em [Configurando a Segmentação](/help/sites-administering/campaign-segmentation.md). Eles são usados para orientar o conteúdo real visto por um público-alvo específico.
 
 ## Terminologia de segmentação {#segmentation-terminology}
 

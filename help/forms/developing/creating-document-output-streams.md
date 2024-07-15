@@ -1,6 +1,6 @@
 ---
 title: Criando Fluxos de Saída de Documento
-description: Use o serviço Output para converter documentos como formatos de etiquetas PDF (incluindo documentos PDF/A), PostScript, Printer Control Language (PCL) e Zebra - ZPL, Intermec - IPL, Datamax - DPL e TecToshiba - TPCL.
+description: Use o Serviço de saída para converter documentos como formatos de etiqueta PDF (incluindo documentos PDF/A), PostScript, Printer Control Language (PCL) e Zebra - ZPL, Intermec - IPL, Datamax - DPL e TecToshiba - TPCL.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Criando Fluxos de Saída de Documento  {#creating-document-output-streams}
 
-**Os exemplos e amostras neste documento são somente para AEM Forms no ambiente JEE.**
+**Exemplos e exemplos neste documento são somente para AEM Forms no ambiente JEE.**
 
 **Sobre o Serviço de Saída**
 
@@ -31,7 +31,7 @@ O Serviço de saída permite produzir documentos como PDF (incluindo documentos 
 
 Usando o Serviço de saída, você pode mesclar dados de formulário XML com um design de formulário e enviar o documento para uma impressora ou arquivo de rede.
 
-Há duas maneiras de passar um design de formulário (um arquivo XDP) para o serviço de Saída. Você pode passar um `com.adobe.idp.Document` instância que contém um design de formulário para o serviço de Saída. Ou você pode passar um valor de URI que especifica a localização do design do formulário. Ambas as formas são discutidas no *Programação com formulários AEM*.
+Há duas maneiras de passar um design de formulário (um arquivo XDP) para o serviço de Saída. Você pode passar uma instância `com.adobe.idp.Document` que contenha um design de formulário para o serviço de Saída. Ou você pode passar um valor de URI que especifica a localização do design do formulário. Ambas as maneiras são discutidas em *Programação com formulários AEM*.
 
 >[!NOTE]
 >
@@ -42,18 +42,18 @@ As seções a seguir mostram como passar um design de formulário para o serviç
 * [Criação de documentos PDF](creating-document-output-streams.md#creating-pdf-documents)
 * [Criação de documentos PDF/A](creating-document-output-streams.md#creating-pdf-a-documents)
 
-As seções a seguir mostram como passar um design de formulário em um `com.adobe.idp.Document` instância:
+As seções a seguir mostram como passar um design de formulário em uma instância `com.adobe.idp.Document`:
 
 * [Passagem de documentos no Content Services (desaprovado) para o Serviço de saída](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)
 * [Criação de documentos PDF usando fragmentos](creating-document-output-streams.md#creating-pdf-documents-using-fragments)
 
-Uma consideração ao decidir qual técnica usar é se você está obtendo o design do formulário de outro serviço do AEM Forms e, em seguida, passá-lo dentro de um `com.adobe.idp.Document` instância. Ambos os *Passar documentos para o serviço de saída* e *Criação de documentos PDF usando fragmentos* As seções mostram como obter um design de formulário de outro serviço do AEM Forms. A primeira seção recupera o design do formulário do Content Services (desaprovado). A segunda seção recupera o design do formulário do serviço Assembler.
+Uma consideração ao decidir qual técnica usar é se você está obtendo o design do formulário de outro serviço do AEM Forms e, em seguida, passá-lo dentro de uma instância `com.adobe.idp.Document`. As seções *Passando Documentos para o Serviço de Saída* e *Criando Documentos de PDF usando Fragmentos* mostram como obter um design de formulário de outro serviço do AEM Forms. A primeira seção recupera o design do formulário do Content Services (desaprovado). A segunda seção recupera o design do formulário do serviço Assembler.
 
-Se você estiver obtendo o design do formulário de um local fixo, como o sistema de arquivos, poderá usar qualquer uma das técnicas. Ou seja, você pode especificar o valor do URI para um arquivo XDP ou usar um `com.adobe.idp.Document` instância.
+Se você estiver obtendo o design do formulário de um local fixo, como o sistema de arquivos, poderá usar qualquer uma das técnicas. Ou seja, você pode especificar o valor do URI para um arquivo XDP ou usar uma instância `com.adobe.idp.Document`.
 
-Para passar um valor de URI que especifique o local do design do formulário ao criar um documento PDF, use o `generatePDFOutput` método. Do mesmo modo, `com.adobe.idp.Document` para o Serviço de saída ao criar um documento PDF, use o `generatePDFOutput2` método.
+Para passar um valor de URI que especifique o local do design do formulário ao criar um documento PDF, use o método `generatePDFOutput`. Da mesma forma, para passar uma instância `com.adobe.idp.Document` para o serviço de Saída ao criar um documento PDF, use o método `generatePDFOutput2`.
 
-Ao enviar um fluxo de saída para uma impressora de rede, você também pode usar qualquer uma das técnicas. Para enviar um fluxo de saída para uma impressora passando um `com.adobe.idp.Document` instância que contém um design de formulário, use o `sendToPrinter2`método. Para enviar um fluxo de saída para uma impressora passando um valor de URI, use o `sendToPrinter`método. A variável *Enviando fluxos de impressão para impressoras* A seção usa o `sendToPrinter` método.
+Ao enviar um fluxo de saída para uma impressora de rede, você também pode usar qualquer uma das técnicas. Para enviar um fluxo de saída para uma impressora passando uma instância `com.adobe.idp.Document` que contenha um design de formulário, use o método `sendToPrinter2`. Para enviar um fluxo de saída para uma impressora passando um valor de URI, use o método `sendToPrinter`. A seção *Enviando Fluxos de Impressão para Impressoras* usa o método `sendToPrinter`.
 
 Você pode realizar essas tarefas usando o Serviço de saída:
 
@@ -69,19 +69,19 @@ Você pode realizar essas tarefas usando o Serviço de saída:
 
 >[!NOTE]
 >
->Para obter mais informações sobre o Serviço de saída, consulte [Referência de serviços para o AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Para obter mais informações sobre o Serviço de saída, consulte [Referência de serviços para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Criação de documentos PDF {#creating-pdf-documents}
 
 Você pode usar o Serviço de saída para criar um documento PDF baseado em um design de formulário e em dados de formulário XML fornecidos. O documento PDF criado pelo serviço de saída não é um documento PDF interativo; um usuário não pode inserir ou modificar dados de formulário.
 
-Se você deseja criar um documento PDF para armazenamento de longo prazo, é recomendável criar um documento PDF/A. (Consulte [Criação de documentos PDF/A](creating-document-output-streams.md#creating-pdf-a-documents).)
+Se você deseja criar um documento PDF para armazenamento de longo prazo, é recomendável criar um documento PDF/A. (Consulte [Criação De Documentos PDF/A](creating-document-output-streams.md#creating-pdf-a-documents).)
 
 Para criar um formulário PDF interativo que permita ao usuário inserir dados, use o serviço Forms. (Consulte [Renderização de PDF forms interativos](/help/forms/developing/rendering-forms.md#rendering-interactive-pdf-forms).)
 
 >[!NOTE]
 >
->Para obter mais informações sobre o Serviço de saída, consulte [Referência de serviços para o AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Para obter mais informações sobre o Serviço de saída, consulte [Referência de serviços para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Resumo das etapas {#summary-of-steps}
 
@@ -109,11 +109,11 @@ Os seguintes arquivos JAR devem ser adicionados ao classpath do projeto:
 
 se o AEM Forms for disponibilizado em um servidor de aplicativos J2EE compatível que não seja JBoss, você deverá substituir os arquivos adobe-utilities.jar e jbossall-client.jar por arquivos JAR específicos para o servidor de aplicativos J2EE no qual o AEM Forms é disponibilizado.
 
-**Criar um objeto do Cliente de saída**
+**Criar um objeto de Cliente de Saída**
 
-Antes de executar programaticamente uma operação do Serviço de saída, você deve criar um objeto cliente do Serviço de saída. Se estiver usando a API Java, crie uma `OutputClient` objeto. Se você estiver usando a API de serviço Web de saída, crie uma `OutputServiceService` objeto.
+Antes de executar programaticamente uma operação do Serviço de saída, você deve criar um objeto cliente do Serviço de saída. Se você estiver usando a API Java, crie um objeto `OutputClient`. Se você estiver usando a API de Serviço Web de Saída, crie um objeto `OutputServiceService`.
 
-**Fazer referência a uma fonte de dados XML**
+**Referenciar uma fonte de dados XML**
 
 Para mesclar dados com o design do formulário, você deve fazer referência a uma fonte de dados XML que contém dados. Um elemento XML deve existir para cada campo de formulário que você planeja preencher com dados. O nome do elemento XML deve corresponder ao nome do campo. Um elemento XML será ignorado se não corresponder a um campo de formulário ou se o nome do elemento XML não corresponder ao nome do campo. Não é necessário corresponder à ordem em que os elementos XML são exibidos se todos os elementos XML forem especificados.
 
@@ -166,31 +166,31 @@ Defina a opção de URI do arquivo ao criar um documento PDF. Essa opção espec
 
 Você pode definir opções de tempo de execução de renderização ao criar um documento PDF. Embora essas opções não sejam obrigatórias (ao contrário das opções de tempo de execução de PDF que são necessárias), é possível executar tarefas como melhorar o desempenho do serviço de Saída. Por exemplo, é possível armazenar em cache o design do formulário que o serviço de Saída usa para melhorar o desempenho.
 
-Se você usar um formulário Acrobat marcado como entrada, não poderá usar o Java do serviço de saída ou a API do serviço da Web para desativar a configuração marcada. Se você tentar definir esta opção de forma programática como `false`, o documento de PDF de resultado ainda estará marcado.
+Se você usar um formulário Acrobat marcado como entrada, não poderá usar o Java do serviço de saída ou a API do serviço da Web para desativar a configuração marcada. Se você tentar definir esta opção de forma programática como `false`, o documento PDF de resultado ainda estará marcado.
 
 >[!NOTE]
 >
->Se você não especificar opções de tempo de execução de renderização, os valores padrão serão usados. Para obter informações sobre as opções de tempo de execução de renderização, consulte `RenderOptionsSpec` referência de classe. (Consulte [Referência da API do AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)).
+>Se você não especificar opções de tempo de execução de renderização, os valores padrão serão usados. Para obter informações sobre as opções de tempo de execução de renderização, consulte a referência de classe `RenderOptionsSpec`. (Consulte [Referência da API do AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)).
 
 **Gerar um documento PDF**
 
 Depois de referenciar uma fonte de dados XML válida que contenha dados de formulário e definir opções de tempo de execução, você pode chamar o serviço de Saída, o que resulta na geração de um documento PDF.
 
-Ao gerar um documento PDF, você especifica valores de URI que são exigidos pelo serviço de Saída para criar um documento PDF. Um design de formulário pode ser armazenado em locais como o sistema de arquivos do servidor ou como parte de um aplicativo do AEM Forms. Um design de formulário (ou outros recursos, como um arquivo de imagem) que existe como parte de um aplicativo do Forms pode ser referenciado usando o valor de URI da raiz de conteúdo `repository:///`. Por exemplo, considere o seguinte design de formulário chamado *Empréstimo.xdp* localizado em um aplicativo do Forms chamado *Aplicativos/FormuláriosAplicativo*:
+Ao gerar um documento PDF, você especifica valores de URI que são exigidos pelo serviço de Saída para criar um documento PDF. Um design de formulário pode ser armazenado em locais como o sistema de arquivos do servidor ou como parte de um aplicativo do AEM Forms. Um design de formulário (ou outros recursos, como um arquivo de imagem) que existe como parte de um aplicativo do Forms pode ser referenciado usando o valor de URI da raiz de conteúdo `repository:///`. Por exemplo, considere o seguinte design de formulário chamado *Loan.xdp* localizado em um aplicativo do Forms chamado *Applications/FormsApplication*:
 
 ![cp_cp_formrepository](assets/cp_cp_formrepository.png)
 
-Para acessar o arquivo Loan.xdp mostrado na ilustração anterior, especifique `repository:///Applications/FormsApplication/1.0/FormsFolder/` como o terceiro parâmetro passado para o `OutputClient` do objeto `generatePDFOutput` método. Especifique o nome do formulário (*Empréstimo.xdp*) como o segundo parâmetro passado para o `OutputClient` do objeto `generatePDFOutput` método.
+Para acessar o arquivo Loan.xdp mostrado na ilustração anterior, especifique `repository:///Applications/FormsApplication/1.0/FormsFolder/` como o terceiro parâmetro passado para o método `generatePDFOutput` do objeto `OutputClient`. Especifique o nome do formulário (*Loan.xdp*) como o segundo parâmetro passado para o método `generatePDFOutput` do objeto `OutputClient`.
 
 Se o arquivo XDP contiver imagens (ou outros recursos, como fragmentos), coloque os recursos na mesma pasta do aplicativo que o arquivo XDP. O AEM Forms usa o URI da raiz do conteúdo como o caminho base para resolver referências a imagens. Por exemplo, se o arquivo Loan.xdp contiver uma imagem, certifique-se de colocar a imagem em `Applications/FormsApplication/1.0/FormsFolder/`.
 
 >[!NOTE]
 >
->Você pode fazer referência a um URI de aplicativo do Forms ao chamar o `OutputClient` do objeto `generatePDFOutput` ou `generatePrintedOutput` métodos.
+>Você pode fazer referência a um URI de aplicativo Forms ao invocar os métodos `generatePDFOutput` ou `generatePrintedOutput` do objeto `OutputClient`.
 
 >[!NOTE]
 >
->Para ver um início rápido completo que cria um documento PDF referenciando um XDP em um aplicativo do Forms, consulte [Início rápido (modo EJB): Criando um documento PDF com base em um arquivo XDP do aplicativo usando a API Java](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-an-application-xdp-file-using-the-java-api).
+>Para ver um início rápido completo que cria um documento PDF referenciando um XDP em um aplicativo Forms, consulte [Início Rápido (modo EJB): Criando um documento PDF com base em um arquivo XDP de aplicativo usando a API Java](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-an-application-xdp-file-using-the-java-api).
 
 **Recuperar os resultados da operação**
 
@@ -218,64 +218,64 @@ Crie um documento PDF usando a API de saída (Java):
 
 1. Crie um objeto Cliente de saída.
 
-   * Criar um `ServiceClientFactory` objeto que contém propriedades de conexão.
-   * Criar um `OutputClient` usando seu construtor e transmitindo o `ServiceClientFactory` objeto.
+   * Crie um objeto `ServiceClientFactory` que contenha propriedades de conexão.
+   * Crie um objeto `OutputClient` usando seu construtor e transmitindo o objeto `ServiceClientFactory`.
 
 1. Fazer referência a uma fonte de dados XML.
 
-   * Criar um `java.io.FileInputStream` objeto que representa a fonte de dados XML usada para preencher o documento PDF usando seu construtor e transmitindo um valor de string que especifica o local do arquivo XML.
-   * Criar um `com.adobe.idp.Document` usando seu construtor. Passe o `java.io.FileInputStream` objeto.
+   * Crie um objeto `java.io.FileInputStream` que represente a fonte de dados XML usada para preencher o documento PDF, usando seu construtor e transmitindo um valor de cadeia de caracteres que especifique o local do arquivo XML.
+   * Crie um objeto `com.adobe.idp.Document` usando seu construtor. Passar o objeto `java.io.FileInputStream`.
 
 1. Defina as opções de tempo de execução de PDF.
 
-   * Criar um `PDFOutputOptionsSpec` usando seu construtor.
-   * Defina a opção File URI chamando o `PDFOutputOptionsSpec` do objeto `setFileURI` método. Transmita um valor de string que especifique o local do arquivo de PDF gerado pelo serviço de Saída. A opção File URI é relativa ao servidor de aplicativos J2EE que hospeda o AEM Forms, não ao computador cliente.
+   * Crie um objeto `PDFOutputOptionsSpec` usando seu construtor.
+   * Defina a opção File URI invocando o método `setFileURI` do objeto `PDFOutputOptionsSpec`. Transmita um valor de string que especifique o local do arquivo de PDF gerado pelo serviço de Saída. A opção File URI é relativa ao servidor de aplicativos J2EE que hospeda o AEM Forms, não ao computador cliente.
 
 1. Definir opções de tempo de execução de renderização.
 
-   * Criar um `RenderOptionsSpec` usando seu construtor.
-   * Armazene em cache o design do formulário para melhorar o desempenho do Serviço de saída chamando o `RenderOptionsSpec` do objeto `setCacheEnabled` e transmitindo `true`.
+   * Crie um objeto `RenderOptionsSpec` usando seu construtor.
+   * Armazene em cache o design do formulário para melhorar o desempenho do serviço de Saída invocando `setCacheEnabled` do objeto `RenderOptionsSpec` e transmitindo `true`.
 
    >[!NOTE]
    >
-   >Não é possível definir a versão do documento PDF usando o `RenderOptionsSpec` do objeto `setPdfVersion` se o documento de entrada for um formulário Acrobat (um formulário criado no Acrobat) ou um documento XFA que esteja assinado ou certificado. O documento PDF de saída retém a versão original do PDF. Da mesma forma, não é possível definir a opção Adobe PDF com tags chamando o `RenderOptionsSpec` do objeto `setTaggedPDF` se o documento de entrada for um formulário Acrobat ou um documento XFA assinado ou certificado.
+   >Você não pode definir a versão do documento PDF usando o método `setPdfVersion` do objeto `RenderOptionsSpec` se o documento de entrada for um formulário Acrobat (um formulário criado no Acrobat) ou um documento XFA assinado ou certificado. O documento PDF de saída retém a versão original do PDF. Da mesma forma, não é possível definir a opção Adobe PDF marcada invocando o método `setTaggedPDF` do objeto `RenderOptionsSpec` se o documento de entrada for um formulário do Acrobat ou um documento XFA assinado ou certificado.
 
    >[!NOTE]
    >
-   >Não é possível definir a opção de PDF linearizado usando o `RenderOptionsSpec` do objeto `setLinearizedPDF` se o documento de PDF de entrada estiver certificado ou assinado digitalmente. (Consulte [Assinatura digital de documentos PDF ](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)*.)*
+   >Não é possível definir a opção PDF linearizada usando o método `setLinearizedPDF` do objeto `RenderOptionsSpec` se o documento PDF de entrada estiver certificado ou assinado digitalmente. (Consulte [Assinatura digital de documentos PDF ](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)*.)*
 
 1. Gere um documento PDF.
 
-   Crie um documento PDF chamando o `OutputClient` do objeto `generatePDFOutput` e transmitindo os seguintes valores:
+   Crie um documento PDF invocando o método `generatePDFOutput` do objeto `OutputClient` e transmitindo os seguintes valores:
 
-   * A `TransformationFormat` valor de enumeração. Para gerar um documento PDF, especifique `TransformationFormat.PDF`.
+   * Um valor de enumeração `TransformationFormat`. Para gerar um documento PDF, especifique `TransformationFormat.PDF`.
    * Um valor de cadeia de caracteres que especifica o nome do design do formulário.
    * Um valor de cadeia de caracteres que especifica a raiz do conteúdo onde o design do formulário está localizado.
-   * A `PDFOutputOptionsSpec` objeto que contém opções de tempo de execução de PDF.
-   * A `RenderOptionsSpec` objeto que contém opções de tempo de execução de renderização.
-   * A variável `com.adobe.idp.Document` objeto que contém a fonte de dados XML que contém os dados a serem mesclados com o design do formulário.
+   * Um objeto `PDFOutputOptionsSpec` que contém opções de tempo de execução de PDF.
+   * Um objeto `RenderOptionsSpec` que contém opções de tempo de execução de renderização.
+   * O objeto `com.adobe.idp.Document` que contém a fonte de dados XML que contém os dados a serem mesclados com o design do formulário.
 
-   A variável `generatePDFOutput` o método retorna um `OutputResult` objeto que contém os resultados da operação.
-
-   >[!NOTE]
-   >
-   >Ao gerar um documento PDF chamando o `generatePDFOutput` não é possível mesclar dados com um formulário PDF XFA assinado ou certificado. (Consulte [Assinatura digital e documentos de certificação ](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-and-certifying-documents)*.)*
+   O método `generatePDFOutput` retorna um objeto `OutputResult` que contém os resultados da operação.
 
    >[!NOTE]
    >
-   >A variável `OutputResult` do objeto `getRecordLevelMetaDataList` o método retorna `null`*.*
+   >Ao gerar um documento PDF invocando o método `generatePDFOutput`, não é possível mesclar dados com um formulário PDF XFA assinado ou certificado. (Consulte [Documentos de Assinatura e Certificação Digitais ](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-and-certifying-documents)*.)*
 
    >[!NOTE]
    >
-   >Você também pode criar um documento PDF chamando o `OutputClient` do objeto `generatePDFOutput2` método. (Consulte [Passagem de documentos no Content Services (desaprovado) para o Serviço de saída ](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)*.)*
+   >O método `getRecordLevelMetaDataList` do objeto `OutputResult` retorna `null`*.*
+
+   >[!NOTE]
+   >
+   >Você também pode criar um documento PDF invocando o método `generatePDFOutput2` do objeto `OutputClient`. (Consulte [Passando Documentos no Content Services (desaprovado) para o Serviço de Saída ](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)*.)*
 
 1. Recuperar os resultados da operação.
 
-   * Recuperar um `com.adobe.idp.Document` objeto que representa o status do `generatePDFOutput` operação, chamando o `OutputResult` do objeto `getStatusDoc` método. Esse método retorna dados XML de status que especificam se a operação foi bem-sucedida.
-   * Criar um `java.io.File` objeto que contém os resultados da operação. Verifique se a extensão do nome do arquivo é .xml.
-   * Chame o `com.adobe.idp.Document` do objeto `copyToFile` método para copiar o conteúdo do `com.adobe.idp.Document` ao arquivo (certifique-se de usar o `com.adobe.idp.Document` objeto que foi retornado pelo `getStatusDoc` método).
+   * Recupere um objeto `com.adobe.idp.Document` que represente o status da operação `generatePDFOutput` invocando o método `getStatusDoc` do objeto `OutputResult`. Esse método retorna dados XML de status que especificam se a operação foi bem-sucedida.
+   * Crie um objeto `java.io.File` que contenha os resultados da operação. Verifique se a extensão do nome do arquivo é .xml.
+   * Invoque o método `copyToFile` do objeto `com.adobe.idp.Document` para copiar o conteúdo do objeto `com.adobe.idp.Document` para o arquivo (certifique-se de usar o objeto `com.adobe.idp.Document` retornado pelo método `getStatusDoc`).
 
-   Embora o Serviço de saída grave o documento PDF no local especificado pelo argumento que é passado para o `PDFOutputOptionsSpec` do objeto `setFileURI` método, é possível recuperar programaticamente o documento PDF/A chamando o método `OutputResult` do objeto `getGeneratedDoc` método.
+   Embora o serviço de Saída grave o documento PDF no local especificado pelo argumento passado para o método `setFileURI` do objeto `PDFOutputOptionsSpec`, é possível recuperar programaticamente o documento PDF/A invocando o método `getGeneratedDoc` do objeto `OutputResult`.
 
 **Consulte também**
 
@@ -299,75 +299,75 @@ Crie um documento PDF usando a API de saída (serviço Web):
 
    >[!NOTE]
    >
-   >Substituir `localhost` com o endereço IP do servidor que hospeda o AEM Forms.
+   >Substitua `localhost` pelo endereço IP do servidor que hospeda o AEM Forms.
 
 1. Crie um objeto Cliente de saída.
 
-   * Criar um `OutputServiceClient` usando seu construtor padrão.
-   * Criar um `OutputServiceClient.Endpoint.Address` usando o `System.ServiceModel.EndpointAddress` construtor. Transmita um valor de string que especifique o WSDL para o serviço AEM Forms (por exemplo, `http://localhost:8080/soap/services/OutputService?blob=mtom`.) Não é necessário usar a variável `lc_version` atributo. Esse atributo é usado quando você cria uma referência de serviço. No entanto, especifique `?blob=mtom` para usar MTOM.
-   * Criar um `System.ServiceModel.BasicHttpBinding` obtendo o valor do `OutputServiceClient.Endpoint.Binding` campo. Converter o valor de retorno em `BasicHttpBinding`.
-   * Defina o `System.ServiceModel.BasicHttpBinding` do objeto `MessageEncoding` campo para `WSMessageEncoding.Mtom`. Esse valor garante que a MTOM seja usada.
+   * Crie um objeto `OutputServiceClient` usando seu construtor padrão.
+   * Crie um objeto `OutputServiceClient.Endpoint.Address` usando o construtor `System.ServiceModel.EndpointAddress`. Transmita um valor de cadeia de caracteres que especifique o WSDL para o serviço AEM Forms (por exemplo, `http://localhost:8080/soap/services/OutputService?blob=mtom`.) Você não precisa usar o atributo `lc_version`. Esse atributo é usado quando você cria uma referência de serviço. No entanto, especifique `?blob=mtom` para usar MTOM.
+   * Crie um objeto `System.ServiceModel.BasicHttpBinding` obtendo o valor do campo `OutputServiceClient.Endpoint.Binding`. Converter o valor de retorno em `BasicHttpBinding`.
+   * Defina o campo `MessageEncoding` do objeto `System.ServiceModel.BasicHttpBinding` como `WSMessageEncoding.Mtom`. Esse valor garante que a MTOM seja usada.
    * Ative a autenticação HTTP básica executando as seguintes tarefas:
 
-      * Atribuir o nome de usuário dos formulários AEM ao campo `OutputServiceClient.ClientCredentials.UserName.UserName`.
+      * Atribua o nome de usuário dos formulários AEM ao campo `OutputServiceClient.ClientCredentials.UserName.UserName`.
       * Atribua o valor de senha correspondente ao campo `OutputServiceClient.ClientCredentials.UserName.Password`.
-      * Atribuir o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Atribuir o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
+      * Atribua o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * Atribua o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Fazer referência a uma fonte de dados XML.
 
-   * Criar um `BLOB` usando seu construtor. A variável `BLOB` O objeto é usado para armazenar dados XML que serão mesclados com o documento PDF.
-   * Criar um `System.IO.FileStream` chamando seu construtor e transmitindo um valor de string que representa o local do arquivo XML que contém dados de formulário.
-   * Crie uma matriz de bytes que armazene o conteúdo da variável `System.IO.FileStream` objeto. Você pode determinar o tamanho da matriz de bytes obtendo o `System.IO.FileStream` do objeto `Length` propriedade.
-   * Preencha a matriz de bytes com dados de fluxo invocando o `System.IO.FileStream` do objeto `Read` e transmitindo a matriz de bytes, a posição inicial e o comprimento do fluxo para leitura.
-   * Preencha o `BLOB` atribuindo seu `MTOM` com o conteúdo da matriz de bytes.
+   * Crie um objeto `BLOB` usando seu construtor. O objeto `BLOB` é usado para armazenar dados XML que serão mesclados com o documento PDF.
+   * Crie um objeto `System.IO.FileStream` chamando seu construtor e transmitindo um valor de cadeia de caracteres que representa o local do arquivo XML que contém dados de formulário.
+   * Crie uma matriz de bytes que armazene o conteúdo do objeto `System.IO.FileStream`. Você pode determinar o tamanho da matriz de bytes obtendo a propriedade `Length` do objeto `System.IO.FileStream`.
+   * Preencha a matriz de bytes com dados de fluxo invocando o método `Read` do objeto `System.IO.FileStream` e transmitindo a matriz de bytes, a posição inicial e o comprimento do fluxo para leitura.
+   * Preencha o objeto `BLOB` atribuindo seu campo `MTOM` com o conteúdo da matriz de bytes.
 
 1. Definir opções de tempo de execução de PDF
 
-   * Criar um `PDFOutputOptionsSpec` usando seu construtor.
-   * Defina a opção File URI atribuindo um valor de string que especifique o local do arquivo de PDF gerado pelo serviço de saída para o `PDFOutputOptionsSpec` do objeto `fileURI` membro de dados. A opção File URI é relativa ao servidor de aplicativos J2EE que hospeda o AEM Forms, não ao computador cliente.
+   * Crie um objeto `PDFOutputOptionsSpec` usando seu construtor.
+   * Defina a opção File URI atribuindo um valor de cadeia de caracteres que especifique o local do arquivo de PDF que o serviço de Saída gera para o membro de dados `fileURI` do objeto `PDFOutputOptionsSpec`. A opção File URI é relativa ao servidor de aplicativos J2EE que hospeda o AEM Forms, não ao computador cliente.
 
 1. Definir opções de tempo de execução de renderização.
 
-   * Criar um `RenderOptionsSpec` usando seu construtor.
-   * Armazenar em cache o design do formulário para melhorar o desempenho do serviço de Saída atribuindo o valor `true` para o `RenderOptionsSpec` do objeto `cacheEnabled` membro de dados.
+   * Crie um objeto `RenderOptionsSpec` usando seu construtor.
+   * Armazene em cache o design do formulário para melhorar o desempenho do serviço de Saída atribuindo o valor `true` ao membro de dados `cacheEnabled` do objeto `RenderOptionsSpec`.
 
    >[!NOTE]
    >
-   >Não é possível definir a versão do documento PDF usando o `RenderOptionsSpec` do objeto `setPdfVersion` se o documento de entrada for um formulário Acrobat (um formulário criado no Acrobat) ou um documento XFA que esteja assinado ou certificado. O documento PDF de saída retém a versão original do PDF. Da mesma forma, não é possível definir a opção Adobe PDF com tags chamando o `RenderOptionsSpec` do objeto `setTaggedPDF`* se o documento de entrada for um formulário Acrobat ou um documento XFA assinado ou certificado.*
+   >Você não pode definir a versão do documento PDF usando o método `setPdfVersion` do objeto `RenderOptionsSpec` se o documento de entrada for um formulário Acrobat (um formulário criado no Acrobat) ou um documento XFA assinado ou certificado. O documento PDF de saída retém a versão original do PDF. Da mesma forma, você não pode definir a opção Adobe PDF marcada invocando o método `setTaggedPDF`* do objeto `RenderOptionsSpec` se o documento de entrada for um formulário do Acrobat ou um documento XFA assinado ou certificado.*
 
    >[!NOTE]
    >
-   >Não é possível definir a opção de PDF linearizado usando o `RenderOptionsSpec` do objeto `linearizedPDF` membro se o documento de PDF de entrada for certificado ou assinado digitalmente. (Consulte [Assinatura digital de documentos PDF ](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)*.)*
+   >Não é possível definir a opção PDF linearizada usando o membro `linearizedPDF` do objeto `RenderOptionsSpec` se o documento PDF de entrada estiver certificado ou assinado digitalmente. (Consulte [Assinatura digital de documentos PDF ](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)*.)*
 
 1. Gere um documento PDF.
 
-   Crie um documento PDF chamando o `OutputServiceService` do objeto `generatePDFOutput`e transmitindo os seguintes valores:
+   Crie um documento PDF chamando o método `generatePDFOutput` do objeto `OutputServiceService` e transmitindo os seguintes valores:
 
-   * A `TransformationFormat` valor de enumeração. Para gerar um documento PDF, especifique `TransformationFormat.PDF`.
+   * Um valor de enumeração `TransformationFormat`. Para gerar um documento PDF, especifique `TransformationFormat.PDF`.
    * Um valor de cadeia de caracteres que especifica o nome do design do formulário.
    * Um valor de cadeia de caracteres que especifica a raiz do conteúdo onde o design do formulário está localizado.
-   * A `PDFOutputOptionsSpec` objeto que contém opções de tempo de execução de PDF.
-   * A `RenderOptionsSpec` objeto que contém opções de tempo de execução de renderização.
-   * A variável `BLOB` objeto que contém a fonte de dados XML que contém os dados a serem mesclados com o design do formulário.
-   * A `BLOB` objeto que é preenchido pelo `generatePDFOutput` método. A variável `generatePDFOutput` O método preenche esse objeto com metadados gerados que descrevem o documento. (Este valor de parâmetro é necessário somente para a invocação do serviço Web).
-   * A `BLOB` objeto que é preenchido pelo `generatePDFOutput` método. A variável `generatePDFOutput` O método preenche este objeto com os dados do resultado. (Este valor de parâmetro é necessário somente para a invocação do serviço Web).
-   * Um `OutputResult` objeto que contém os resultados da operação. (Este valor de parâmetro é necessário somente para a invocação do serviço Web).
+   * Um objeto `PDFOutputOptionsSpec` que contém opções de tempo de execução de PDF.
+   * Um objeto `RenderOptionsSpec` que contém opções de tempo de execução de renderização.
+   * O objeto `BLOB` que contém a fonte de dados XML que contém os dados a serem mesclados com o design do formulário.
+   * Um objeto `BLOB` que é preenchido pelo método `generatePDFOutput`. O método `generatePDFOutput` preenche este objeto com metadados gerados que descrevem o documento. (Este valor de parâmetro é necessário somente para a invocação do serviço Web).
+   * Um objeto `BLOB` que é preenchido pelo método `generatePDFOutput`. O método `generatePDFOutput` preenche este objeto com os dados do resultado. (Este valor de parâmetro é necessário somente para a invocação do serviço Web).
+   * Um objeto `OutputResult` que contém os resultados da operação. (Este valor de parâmetro é necessário somente para a invocação do serviço Web).
 
    >[!NOTE]
    >
-   >Ao gerar um documento PDF chamando o `generatePDFOutput` não é possível mesclar dados com um formulário PDF XFA assinado ou certificado. (Consulte [Assinatura digital e documentos de certificação ](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-and-certifying-documents)*.)*
+   >Ao gerar um documento PDF invocando o método `generatePDFOutput`, não é possível mesclar dados com um formulário PDF XFA assinado ou certificado. (Consulte [Documentos de Assinatura e Certificação Digitais ](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-and-certifying-documents)*.)*
 
    >[!NOTE]
    >
-   >Você também pode criar um documento PDF chamando o `OutputClient` do objeto `generatePDFOutput2` método. (Consulte [Passagem de documentos no Content Services (desaprovado) para o Serviço de saída ](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)*.)*
+   >Você também pode criar um documento PDF invocando o método `generatePDFOutput2` do objeto `OutputClient`. (Consulte [Passando Documentos no Content Services (desaprovado) para o Serviço de Saída ](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)*.)*
 
 1. Recuperar os resultados da operação.
 
-   * Criar um `System.IO.FileStream` chamando seu construtor e transmitindo um valor de string que representa um local de arquivo XML que contém dados de resultado. Verifique se a extensão do nome do arquivo é .xml.
-   * Crie uma matriz de bytes que armazene o conteúdo de dados do `BLOB` objeto que foi preenchido com dados de resultado pelo `OutputServiceService` do objeto `generatePDFOutput` (o oitavo parâmetro). Preencha a matriz de bytes obtendo o valor de `BLOB` do objeto `MTOM` `field`.
-   * Criar um `System.IO.BinaryWriter` objeto chamando seu construtor e transmitindo o `System.IO.FileStream` objeto.
-   * Grave o conteúdo da matriz de bytes no arquivo XML chamando o `System.IO.BinaryWriter` do objeto `Write` e transmitindo a matriz de bytes.
+   * Crie um objeto `System.IO.FileStream` chamando seu construtor e transmitindo um valor de cadeia de caracteres que representa um local de arquivo XML que contém dados de resultado. Verifique se a extensão do nome do arquivo é .xml.
+   * Crie uma matriz de bytes que armazene o conteúdo de dados do objeto `BLOB` que foi preenchido com dados de resultado pelo método `generatePDFOutput` do objeto `OutputServiceService` (o oitavo parâmetro). Preencha a matriz de bytes obtendo o valor de `MTOM` `field` do objeto `BLOB`.
+   * Crie um objeto `System.IO.BinaryWriter` invocando seu construtor e transmitindo o objeto `System.IO.FileStream`.
+   * Grave o conteúdo da matriz de bytes no arquivo XML invocando o método `Write` do objeto `System.IO.BinaryWriter` e transmitindo a matriz de bytes.
 
    Consulte também:
 
@@ -379,7 +379,7 @@ Crie um documento PDF usando a API de saída (serviço Web):
 
    >[!NOTE]
    >
-   >A variável `OutputServiceService` do objeto `generateOutput` está obsoleto.
+   >O método `generateOutput` do objeto `OutputServiceService` está obsoleto.
 
 ## Criação de documentos PDF/A {#creating-pdf-a-documents}
 
@@ -389,7 +389,7 @@ A especificação PDF/A-1 consiste em dois níveis de conformidade, a saber, a e
 
 Embora PDF/A seja o padrão para o arquivamento de documentos de PDF, não é obrigatório que PDF/A seja usado para arquivamento se um documento de PDF padrão atender às necessidades da sua empresa. O objetivo do padrão PDF/A é estabelecer um arquivo PDF que possa ser armazenado por um longo período e atender aos requisitos de preservação de documentos. Por exemplo, um URL não pode ser incorporado em um PDF/A porque, com o tempo, o URL pode se tornar inválido.
 
-Sua empresa deve avaliar suas próprias necessidades, o tempo que pretende manter o documento, as considerações sobre o tamanho do arquivo e determinar sua própria estratégia de arquivamento. Você pode determinar programaticamente se um documento de PDF é compatível com PDF/A usando o serviço DocConverter. (Consulte [Determinação Programática Da Conformidade Com PDF/A](/help/forms/developing/pdf-a-documents.md#programmatically-determining-pdf-a-compliancy).)
+Sua empresa deve avaliar suas próprias necessidades, o tempo que pretende manter o documento, as considerações sobre o tamanho do arquivo e determinar sua própria estratégia de arquivamento. Você pode determinar programaticamente se um documento de PDF é compatível com PDF/A usando o serviço DocConverter. (Consulte [Determinando Programaticamente A Conformidade De PDF/A](/help/forms/developing/pdf-a-documents.md#programmatically-determining-pdf-a-compliancy).)
 
 Um documento PDF/A deve usar a fonte especificada no design do formulário e as fontes não podem ser substituídas. Como resultado, se uma fonte localizada em um documento do PDF não estiver disponível no sistema operacional (SO) do host, ocorrerá uma exceção.
 
@@ -403,7 +403,7 @@ Quando um documento PDF/A é aberto no Acrobat, uma mensagem é exibida confirma
 
 >[!NOTE]
 >
->Para obter mais informações sobre o Serviço de saída, consulte [Referência de serviços para o AEM Forms](https://www.adobe.com/go/learn_aemforms_services_65).
+>Para obter mais informações sobre o Serviço de saída, consulte [Referência de serviços para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_65).
 
 ### Resumo das etapas {#summary_of_steps-1}
 
@@ -431,23 +431,23 @@ Os seguintes arquivos JAR devem ser adicionados ao caminho de classe do projeto:
 
 se o AEM Forms for disponibilizado em um servidor de aplicativos J2EE compatível que não seja JBoss, você deverá substituir os arquivos adobe-utilities.jar e jbossall-client.jar por arquivos JAR específicos para o servidor de aplicativos J2EE no qual o AEM Forms é disponibilizado.
 
-**Criar um objeto do Cliente de saída**
+**Criar um objeto de Cliente de Saída**
 
-Antes de executar programaticamente uma operação do Serviço de saída, você deve criar um objeto cliente do Serviço de saída. Se estiver usando a API Java, crie uma `OutputClient` objeto. Se você estiver usando a API de serviço Web de saída, crie uma `OutputServiceService` objeto.
+Antes de executar programaticamente uma operação do Serviço de saída, você deve criar um objeto cliente do Serviço de saída. Se você estiver usando a API Java, crie um objeto `OutputClient`. Se você estiver usando a API de Serviço Web de Saída, crie um objeto `OutputServiceService`.
 
-**Fazer referência a uma fonte de dados XML**
+**Referenciar uma fonte de dados XML**
 
 Para mesclar dados com o design do formulário, você deve fazer referência a uma fonte de dados XML que contém dados. Um elemento XML deve existir para cada campo de formulário que você deseja preencher com dados. O nome do elemento XML deve corresponder ao nome do campo. Um elemento XML será ignorado se não corresponder a um campo de formulário ou se o nome do elemento XML não corresponder ao nome do campo. Não é necessário corresponder à ordem em que os elementos XML são exibidos se todos os elementos XML forem especificados.
 
-**Definir opções de tempo de execução de PDF/A**
+**Definir opções de PDF/tempo de execução**
 
 É possível definir a opção File URI ao criar um documento PDF/A. O URI é relativo ao servidor de aplicativos J2EE que hospeda o AEM Forms. Ou seja, se você definir C:\Adobe, o arquivo será gravado na pasta no servidor, não no computador cliente. O URI especifica o nome e o local do arquivo PDF/A gerado pelo serviço de saída.
 
 **Definir opções de tempo de execução de renderização**
 
-Você pode definir opções de tempo de execução de renderização ao criar documentos PDF/A. Duas opções relacionadas a PDF/A que você pode definir são a `PDFAConformance` e `PDFARevisionNumber` valores. A variável `PDFAConformance` valor refere-se à forma como um documento PDF atende aos requisitos que especificam como os documentos eletrônicos de longo prazo são preservados. Os valores válidos para essa opção são `A` e `B`. Para obter informações sobre a conformidade dos níveis a e b, consulte a especificação PDF/A-1 ISO intitulada *ISO 19005-1 Gestão de documentos*.
+Você pode definir opções de tempo de execução de renderização ao criar documentos PDF/A. Duas opções relacionadas a PDF/A que você pode definir são os valores `PDFAConformance` e `PDFARevisionNumber`. O valor `PDFAConformance` refere-se à forma como um documento PDF atende aos requisitos que especificam como os documentos eletrônicos de longo prazo são preservados. Os valores válidos para esta opção são `A` e `B`. Para obter informações sobre a conformidade dos níveis a e b, consulte a especificação PDF/A-1 ISO intitulada *ISO 19005-1 Document management*.
 
-A variável `PDFARevisionNumber` value refere-se ao número de revisão de um documento PDF/A. Para obter informações sobre o número de revisão de um documento PDF/A, consulte a especificação ISO PDF/A-1, intitulada *ISO 19005-1 Gestão de documentos*.
+O valor `PDFARevisionNumber` refere-se ao número de revisão de um documento PDF/A. Para obter informações sobre o número de revisão de um documento PDF/A, consulte a especificação PDF/A-1 ISO intitulada *ISO 19005-1 Document management*.
 
 >[!NOTE]
 >
@@ -483,59 +483,59 @@ Crie um documento PDF/A usando a API de saída (Java):
 
 1. Crie um objeto Cliente de saída.
 
-   * Criar um `ServiceClientFactory` objeto que contém propriedades de conexão.
-   * Criar um `OutputClient` usando seu construtor e transmitindo o `ServiceClientFactory` objeto.
+   * Crie um objeto `ServiceClientFactory` que contenha propriedades de conexão.
+   * Crie um objeto `OutputClient` usando seu construtor e transmitindo o objeto `ServiceClientFactory`.
 
 1. Fazer referência a uma fonte de dados XML.
 
-   * Criar um `java.io.FileInputStream` objeto que representa a fonte de dados XML usada para preencher o documento PDF/A usando seu construtor e transmitindo um valor de string que especifica o local do arquivo XML.
-   * Criar um `com.adobe.idp.Document` usando seu construtor e transmitindo o `java.io.FileInputStream` objeto.
+   * Crie um objeto `java.io.FileInputStream` que represente a fonte de dados XML usada para preencher o documento PDF/A usando seu construtor e transmitindo um valor de cadeia de caracteres que especifique o local do arquivo XML.
+   * Crie um objeto `com.adobe.idp.Document` usando seu construtor e transmitindo o objeto `java.io.FileInputStream`.
 
 1. Definir opções de tempo de execução de PDF/A.
 
-   * Criar um `PDFOutputOptionsSpec` usando seu construtor.
-   * Defina a opção File URI chamando o `PDFOutputOptionsSpec` do objeto `setFileURI` método. Transmita um valor de string que especifique o local do arquivo de PDF gerado pelo serviço de Saída. A opção File URI é relativa ao servidor de aplicativos J2EE que hospeda o AEM Forms, não ao computador cliente.
+   * Crie um objeto `PDFOutputOptionsSpec` usando seu construtor.
+   * Defina a opção File URI invocando o método `setFileURI` do objeto `PDFOutputOptionsSpec`. Transmita um valor de string que especifique o local do arquivo de PDF gerado pelo serviço de Saída. A opção File URI é relativa ao servidor de aplicativos J2EE que hospeda o AEM Forms, não ao computador cliente.
 
 1. Definir opções de tempo de execução de renderização.
 
-   * Criar um `RenderOptionsSpec` usando seu construtor.
-   * Defina o `PDFAConformance` ao chamar o `RenderOptionsSpec` do objeto `setPDFAConformance` e passar um `PDFAConformance` valor de enumeração que especifica o nível de conformidade. Por exemplo, para especificar o nível de conformidade A, passe `PDFAConformance.A`.
-   * Defina o `PDFARevisionNumber` ao chamar o `RenderOptionsSpec` do objeto `setPDFARevisionNumber` método e transmissão `PDFARevisionNumber.Revision_1`.
+   * Crie um objeto `RenderOptionsSpec` usando seu construtor.
+   * Defina o valor `PDFAConformance` invocando o método `setPDFAConformance` do objeto `RenderOptionsSpec` e transmitindo um valor de enumeração `PDFAConformance` que especifica o nível de conformidade. Por exemplo, para especificar o nível de conformidade A, passe `PDFAConformance.A`.
+   * Defina o valor `PDFARevisionNumber` invocando o método `setPDFARevisionNumber` do objeto `RenderOptionsSpec` e transmitindo `PDFARevisionNumber.Revision_1`.
 
    >[!NOTE]
    >
-   >A versão de PDF de um documento PDF/A é a 1.4, independentemente do valor especificado para a variável `RenderOptionsSpec` do objeto `setPdfVersion`*método.*
+   >A versão de PDF de um documento PDF/A é 1.4, independentemente do valor especificado para o `setPdfVersion`*método.* do objeto `RenderOptionsSpec`.
 
 1. Gere um documento PDF/A.
 
-   Crie um documento PDF/A chamando o `OutputClient` do objeto `generatePDFOutput` e transmitindo os seguintes valores:
+   Crie um documento PDF/A chamando o método `generatePDFOutput` do objeto `OutputClient` e transmitindo os seguintes valores:
 
-   * A `TransformationFormat` valor de enumeração. Para gerar um documento PDF/A, especifique `TransformationFormat.PDFA`.
+   * Um valor de enumeração `TransformationFormat`. Para gerar um documento PDF/A, especifique `TransformationFormat.PDFA`.
    * Um valor de cadeia de caracteres que especifica o nome do design do formulário.
    * Um valor de cadeia de caracteres que especifica a raiz do conteúdo onde o design do formulário está localizado.
-   * A `PDFOutputOptionsSpec` objeto que contém opções de tempo de execução de PDF.
-   * A `RenderOptionsSpec` objeto que contém opções de tempo de execução de renderização.
-   * A variável `com.adobe.idp.Document` objeto que contém a fonte de dados XML que contém os dados a serem mesclados com o design do formulário.
+   * Um objeto `PDFOutputOptionsSpec` que contém opções de tempo de execução de PDF.
+   * Um objeto `RenderOptionsSpec` que contém opções de tempo de execução de renderização.
+   * O objeto `com.adobe.idp.Document` que contém a fonte de dados XML que contém os dados a serem mesclados com o design do formulário.
 
-   A variável `generatePDFOutput` o método retorna um `OutputResult` objeto que contém os resultados da operação.
-
-   >[!NOTE]
-   >
-   >A variável `OutputResult` do objeto `getRecordLevelMetaDataList` o método retorna `null`.
+   O método `generatePDFOutput` retorna um objeto `OutputResult` que contém os resultados da operação.
 
    >[!NOTE]
    >
-   >Você também pode criar um documento PDF /A chamando o `OutputClient` do objeto `generatePDFOutput`2 método. (Consulte [Passagem de documentos no Content Services (desaprovado) para o Serviço de saída](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service).)
+   >O método `getRecordLevelMetaDataList` do objeto `OutputResult` retorna `null`.
+
+   >[!NOTE]
+   >
+   >Você também pode criar um documento PDF /A invocando o método `generatePDFOutput`2 do objeto `OutputClient`. (Consulte [Passando Documentos no Content Services (desaprovado) para o Serviço de Saída](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service).)
 
 1. Recuperar os resultados da operação.
 
-   * Criar um `com.adobe.idp.Document` objeto que representa o status do `generatePDFOutput` ao invocar o `OutputResult` do objeto `getStatusDoc` método.
-   * Criar um `java.io.File` objeto que conterá os resultados da operação. Verifique se a extensão do nome do arquivo é .xml.
-   * Chame o `com.adobe.idp.Document` do objeto `copyToFile` método para copiar o conteúdo do `com.adobe.idp.Document` ao arquivo (certifique-se de usar o `com.adobe.idp.Document` objeto que foi retornado pelo `getStatusDoc` método).
+   * Crie um objeto `com.adobe.idp.Document` que represente o status do método `generatePDFOutput` invocando o método `getStatusDoc` do objeto `OutputResult`.
+   * Crie um objeto `java.io.File` que conterá os resultados da operação. Verifique se a extensão do nome do arquivo é .xml.
+   * Invoque o método `copyToFile` do objeto `com.adobe.idp.Document` para copiar o conteúdo do objeto `com.adobe.idp.Document` para o arquivo (certifique-se de usar o objeto `com.adobe.idp.Document` retornado pelo método `getStatusDoc`).
 
    >[!NOTE]
    >
-   >Embora o serviço de saída grave o documento PDF/A no local especificado pelo argumento que é passado para o `PDFOutputOptionsSpec` do objeto `setFileURI` método, é possível recuperar programaticamente o documento PDF/A chamando o método `OutputResult` do objeto `getGeneratedDoc` método.
+   >Embora o serviço de Saída grave o documento PDF/A no local especificado pelo argumento passado para o método `setFileURI` do objeto `PDFOutputOptionsSpec`, é possível recuperar programaticamente o documento PDF/A invocando o método `getGeneratedDoc` do objeto `OutputResult`.
 
 **Consulte também**
 
@@ -557,39 +557,39 @@ Crie um documento PDF/A usando a API de saída (serviço da Web):
 
    >[!NOTE]
    >
-   >Substituir `localhost` com o endereço IP do servidor que hospeda o AEM Forms.
+   >Substitua `localhost` pelo endereço IP do servidor que hospeda o AEM Forms.
 
 1. Crie um objeto Cliente de saída.
 
-   * Criar um `OutputServiceClient` usando seu construtor padrão.
-   * Criar um `OutputServiceClient.Endpoint.Address` usando o `System.ServiceModel.EndpointAddress` construtor. Transmita um valor de string que especifique o WSDL para o serviço AEM Forms (por exemplo, `http://localhost:8080/soap/services/OutputService?blob=mtom`.) Não é necessário usar a variável `lc_version` atributo. Esse atributo é usado quando você cria uma referência de serviço. No entanto, especifique `?blob=mtom` para usar MTOM.
-   * Criar um `System.ServiceModel.BasicHttpBinding` obtendo o valor do `OutputServiceClient.Endpoint.Binding` campo. Converter o valor de retorno em `BasicHttpBinding`.
-   * Defina o `System.ServiceModel.BasicHttpBinding` do objeto `MessageEncoding` campo para `WSMessageEncoding.Mtom`. Esse valor garante que a MTOM seja usada.
+   * Crie um objeto `OutputServiceClient` usando seu construtor padrão.
+   * Crie um objeto `OutputServiceClient.Endpoint.Address` usando o construtor `System.ServiceModel.EndpointAddress`. Transmita um valor de cadeia de caracteres que especifique o WSDL para o serviço AEM Forms (por exemplo, `http://localhost:8080/soap/services/OutputService?blob=mtom`.) Você não precisa usar o atributo `lc_version`. Esse atributo é usado quando você cria uma referência de serviço. No entanto, especifique `?blob=mtom` para usar MTOM.
+   * Crie um objeto `System.ServiceModel.BasicHttpBinding` obtendo o valor do campo `OutputServiceClient.Endpoint.Binding`. Converter o valor de retorno em `BasicHttpBinding`.
+   * Defina o campo `MessageEncoding` do objeto `System.ServiceModel.BasicHttpBinding` como `WSMessageEncoding.Mtom`. Esse valor garante que a MTOM seja usada.
    * Ative a autenticação HTTP básica executando as seguintes tarefas:
 
-      * Atribuir o nome de usuário dos formulários AEM ao campo `OutputServiceClient.ClientCredentials.UserName.UserName`.
+      * Atribua o nome de usuário dos formulários AEM ao campo `OutputServiceClient.ClientCredentials.UserName.UserName`.
       * Atribua o valor de senha correspondente ao campo `OutputServiceClient.ClientCredentials.UserName.Password`.
-      * Atribuir o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Atribuir o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
+      * Atribua o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * Atribua o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Fazer referência a uma fonte de dados XML.
 
-   * Criar um `BLOB` usando seu construtor. A variável `BLOB` O objeto é usado para armazenar dados que serão mesclados com o documento PDF/A.
-   * Criar um `System.IO.FileStream` chamando seu construtor e transmitindo um valor de string que representa o local do arquivo do documento PDF a ser criptografado e o modo no qual o arquivo será aberto.
-   * Crie uma matriz de bytes que armazene o conteúdo da variável `System.IO.FileStream` objeto. Você pode determinar o tamanho da matriz de bytes obtendo o `System.IO.FileStream` do objeto `Length` propriedade.
-   * Preencha a matriz de bytes com dados de fluxo invocando o `System.IO.FileStream` do objeto `Read` e transmitindo a matriz de bytes, a posição inicial e o comprimento do fluxo para leitura.
-   * Preencha o `BLOB` atribuindo seu `MTOM` com o conteúdo da matriz de bytes.
+   * Crie um objeto `BLOB` usando seu construtor. O objeto `BLOB` é usado para armazenar dados que serão mesclados com o documento PDF/A.
+   * Crie um objeto `System.IO.FileStream` chamando seu construtor e transmitindo um valor de cadeia de caracteres que representa o local do arquivo do documento PDF a ser criptografado e o modo no qual o arquivo será aberto.
+   * Crie uma matriz de bytes que armazene o conteúdo do objeto `System.IO.FileStream`. Você pode determinar o tamanho da matriz de bytes obtendo a propriedade `Length` do objeto `System.IO.FileStream`.
+   * Preencha a matriz de bytes com dados de fluxo invocando o método `Read` do objeto `System.IO.FileStream` e transmitindo a matriz de bytes, a posição inicial e o comprimento do fluxo para leitura.
+   * Preencha o objeto `BLOB` atribuindo seu campo `MTOM` com o conteúdo da matriz de bytes.
 
 1. Definir opções de tempo de execução de PDF/A.
 
-   * Criar um `PDFOutputOptionsSpec` usando seu construtor.
-   * Defina a opção File URI atribuindo um valor de string que especifique o local do arquivo de PDF gerado pelo serviço de saída para o `PDFOutputOptionsSpec` do objeto `fileURI` membro de dados. A opção File URI é relativa ao servidor de aplicativos J2EE que hospeda o AEM Forms, não ao computador cliente
+   * Crie um objeto `PDFOutputOptionsSpec` usando seu construtor.
+   * Defina a opção File URI atribuindo um valor de cadeia de caracteres que especifique o local do arquivo de PDF que o serviço de Saída gera para o membro de dados `fileURI` do objeto `PDFOutputOptionsSpec`. A opção File URI é relativa ao servidor de aplicativos J2EE que hospeda o AEM Forms, não ao computador cliente
 
 1. Definir opções de tempo de execução de renderização.
 
-   * Criar um `RenderOptionsSpec` usando seu construtor.
-   * Defina o `PDFAConformance` atribuindo um `PDFAConformance` valor de enumeração para o `RenderOptionsSpec` do objeto `PDFAConformance` membro de dados. Por exemplo, para especificar o nível de conformidade A, atribua `PDFAConformance.A` para esse membro de dados.
-   * Defina o `PDFARevisionNumber` atribuindo um `PDFARevisionNumber` valor de enumeração para o `RenderOptionsSpec` do objeto `PDFARevisionNumber` membro de dados. Atribuir `PDFARevisionNumber.Revision_1` para esse membro de dados.
+   * Crie um objeto `RenderOptionsSpec` usando seu construtor.
+   * Defina o valor `PDFAConformance` atribuindo um valor de enumeração `PDFAConformance` ao membro de dados `PDFAConformance` do objeto `RenderOptionsSpec`. Por exemplo, para especificar o nível de conformidade A, atribua `PDFAConformance.A` a esse membro de dados.
+   * Defina o valor `PDFARevisionNumber` atribuindo um valor de enumeração `PDFARevisionNumber` ao membro de dados `PDFARevisionNumber` do objeto `RenderOptionsSpec`. Atribuir `PDFARevisionNumber.Revision_1` a este membro de dados.
 
    >[!NOTE]
    >
@@ -597,28 +597,28 @@ Crie um documento PDF/A usando a API de saída (serviço da Web):
 
 1. Gere um documento PDF/A.
 
-   Crie um documento PDF chamando o `OutputServiceService` do objeto `generatePDFOutput`e transmitindo os seguintes valores:
+   Crie um documento PDF chamando o método `generatePDFOutput` do objeto `OutputServiceService` e transmitindo os seguintes valores:
 
    * Um valor de enumeração TransformationFormat. Para gerar um documento PDF, especifique `TransformationFormat.PDFA`.
    * Um valor de cadeia de caracteres que especifica o nome do design do formulário.
    * Um valor de cadeia de caracteres que especifica a raiz do conteúdo onde o design do formulário está localizado.
-   * A `PDFOutputOptionsSpec` objeto que contém opções de tempo de execução de PDF.
-   * A `RenderOptionsSpec` objeto que contém opções de tempo de execução de renderização.
-   * A variável `BLOB` objeto que contém a fonte de dados XML que contém os dados a serem mesclados com o design do formulário.
-   * A `BLOB` objeto que é preenchido pelo `generatePDFOutput` método. A variável `generatePDFOutput` O método preenche esse objeto com metadados gerados que descrevem o documento. (Este valor de parâmetro é necessário somente para a invocação do serviço Web.)
-   * A `BLOB` objeto que é preenchido pelo `generatePDFOutput` método. A variável `generatePDFOutput` O método preenche este objeto com os dados do resultado. (Este valor de parâmetro é necessário somente para a invocação do serviço Web.)
-   * Um `OutputResult` objeto que contém os resultados da operação. (Este valor de parâmetro é necessário somente para a invocação do serviço Web.)
+   * Um objeto `PDFOutputOptionsSpec` que contém opções de tempo de execução de PDF.
+   * Um objeto `RenderOptionsSpec` que contém opções de tempo de execução de renderização.
+   * O objeto `BLOB` que contém a fonte de dados XML que contém os dados a serem mesclados com o design do formulário.
+   * Um objeto `BLOB` que é preenchido pelo método `generatePDFOutput`. O método `generatePDFOutput` preenche este objeto com metadados gerados que descrevem o documento. (Este valor de parâmetro é necessário somente para a invocação do serviço Web.)
+   * Um objeto `BLOB` que é preenchido pelo método `generatePDFOutput`. O método `generatePDFOutput` preenche este objeto com os dados do resultado. (Este valor de parâmetro é necessário somente para a invocação do serviço Web.)
+   * Um objeto `OutputResult` que contém os resultados da operação. (Este valor de parâmetro é necessário somente para a invocação do serviço Web.)
 
    >[!NOTE]
    >
-   >Você também pode criar um documento PDF /A chamando o `OutputClient` do objeto `generatePDFOutput`2 método. (Consulte [Passagem de documentos no Content Services (desaprovado) para o Serviço de saída](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service).)
+   >Você também pode criar um documento PDF /A invocando o método `generatePDFOutput`2 do objeto `OutputClient`. (Consulte [Passando Documentos no Content Services (desaprovado) para o Serviço de Saída](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service).)
 
 1. Recuperar os resultados da operação.
 
-   * Criar um `System.IO.FileStream` chamando seu construtor e transmitindo um valor de string que representa um local de arquivo XML que contém dados de resultado. Verifique se a extensão do nome do arquivo é .xml.
-   * Crie uma matriz de bytes que armazene o conteúdo de dados do `BLOB` objeto que foi preenchido com dados de resultado pelo `OutputServiceService` do objeto `generatePDFOutput` (o oitavo parâmetro). Preencha a matriz de bytes obtendo o valor de `BLOB` do objeto `MTOM` campo.
-   * Criar um `System.IO.BinaryWriter` objeto chamando seu construtor e transmitindo o `System.IO.FileStream` objeto.
-   * Grave o conteúdo da matriz de bytes no arquivo XML chamando o `System.IO.BinaryWriter` do objeto `Write` e transmitindo a matriz de bytes.
+   * Crie um objeto `System.IO.FileStream` chamando seu construtor e transmitindo um valor de cadeia de caracteres que representa um local de arquivo XML que contém dados de resultado. Verifique se a extensão do nome do arquivo é .xml.
+   * Crie uma matriz de bytes que armazene o conteúdo de dados do objeto `BLOB` que foi preenchido com dados de resultado pelo método `generatePDFOutput` do objeto `OutputServiceService` (o oitavo parâmetro). Popular a matriz de bytes obtendo o valor do campo `MTOM` do objeto `BLOB`.
+   * Crie um objeto `System.IO.BinaryWriter` invocando seu construtor e transmitindo o objeto `System.IO.FileStream`.
+   * Grave o conteúdo da matriz de bytes no arquivo XML invocando o método `Write` do objeto `System.IO.BinaryWriter` e transmitindo a matriz de bytes.
 
 **Consulte também**
 
@@ -630,15 +630,15 @@ Crie um documento PDF/A usando a API de saída (serviço da Web):
 
 ## Passagem de documentos no Content Services (desaprovado) para o Serviço de saída {#passing-documents-located-in-content-services-deprecated-to-the-output-service}
 
-O serviço de Saída renderiza um formulário PDF não interativo baseado em um design de formulário normalmente salvo como um arquivo XDP e criado no Designer. Você pode passar um `com.adobe.idp.Document` objeto que contém o design de formulário para o serviço de Saída. O Serviço de saída renderiza o design do formulário no `com.adobe.idp.Document` objeto.
+O serviço de Saída renderiza um formulário PDF não interativo baseado em um design de formulário normalmente salvo como um arquivo XDP e criado no Designer. Você pode passar um objeto `com.adobe.idp.Document` que contenha o design do formulário para o serviço de Saída. O Serviço de saída renderiza o design do formulário no objeto `com.adobe.idp.Document`.
 
-Uma vantagem de passar um `com.adobe.idp.Document` para o Serviço de saída é que outras operações de serviço do AEM Forms retornam um `com.adobe.idp.Document` instância. Ou seja, você pode obter um `com.adobe.idp.Document` instância de outra operação de serviço e renderizá-la. Por exemplo, suponha que um arquivo XDP esteja armazenado em um nó do Content Services (obsoleto) chamado `/Company Home/Form Designs`, conforme mostrado na ilustração a seguir.
+Uma vantagem de passar um objeto `com.adobe.idp.Document` para o serviço de Saída é que outras operações de serviço do AEM Forms retornam uma instância `com.adobe.idp.Document`. Ou seja, você pode obter uma instância `com.adobe.idp.Document` de outra operação de serviço e renderizá-la. Por exemplo, digamos que um arquivo XDP esteja armazenado em um nó do Content Services (obsoleto) chamado `/Company Home/Form Designs`, como mostrado na ilustração a seguir.
 
-Você pode recuperar programaticamente Loan.xdp do Content Services (desaprovado) e passar o arquivo XDP para o serviço de saída em um `com.adobe.idp.Document` objeto.
+Você pode recuperar programaticamente Loan.xdp do Content Services (desaprovado) e passar o arquivo XDP para o Serviço de saída em um objeto `com.adobe.idp.Document`.
 
 >[!NOTE]
 >
->Para obter mais informações sobre o serviço Forms, consulte [Referência de serviços para o AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Para obter mais informações sobre o serviço Forms, consulte [Referência de serviços para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Resumo das etapas {#summary_of_steps-2}
 
@@ -654,21 +654,21 @@ Para passar um documento obtido do Content Services (obsoleto) para o serviço d
 
 Inclua os arquivos necessários ao projeto de desenvolvimento. Se você estiver criando uma aplicação cliente usando Java, inclua os arquivos JAR necessários. Se você estiver usando serviços da Web, inclua os arquivos proxy.
 
-**Criar um objeto de Saída e de API do cliente de gerenciamento de documentos**
+**Criar um objeto de API de Cliente de Gerenciamento de Documentos e de Saída**
 
 Antes de executar programaticamente uma operação da API do Serviço de saída, crie um objeto da API do Cliente de saída. Além disso, como esse fluxo de trabalho recupera um arquivo XDP do Content Services (obsoleto), crie um objeto de API do Document Management.
 
 **Recuperar o design do formulário do Content Services (desaprovado)**
 
-Recupere o arquivo XDP do Content Services (obsoleto) usando o Java ou a API do serviço da Web. O arquivo XDP é retornado em um `com.adobe.idp.Document` instância (ou um `BLOB` instância se você estiver usando serviços da web). Em seguida, você pode passar o `com.adobe.idp.Document` para o Serviço de saída.
+Recupere o arquivo XDP do Content Services (obsoleto) usando o Java ou a API do serviço da Web. O arquivo XDP é retornado em uma instância `com.adobe.idp.Document` (ou uma instância `BLOB` se você estiver usando serviços da Web). Em seguida, você pode passar a instância `com.adobe.idp.Document` para o serviço de Saída.
 
 **Renderizar o formulário de PDF não interativo**
 
-Para renderizar um formulário não interativo, passe o `com.adobe.idp.Document` que foi retornada do Content Services (descontinuada) para o Serviço de saída.
+Para renderizar um formulário não interativo, passe a instância `com.adobe.idp.Document` que foi retornada do Content Services (desaprovado) para o serviço de Saída.
 
 >[!NOTE]
 >
->Dois novos métodos chamados `generatePDFOutput2`e g `eneratePrintedOutput2`aceitar um `com.adobe.idp.Document` objeto que contém um design de formulário. Você também pode passar um `com.adobe.idp.Document`que contém o design do formulário para o serviço de saída ao enviar um fluxo de impressão para uma impressora de rede.
+>Dois novos métodos nomeados como `generatePDFOutput2`e g `eneratePrintedOutput2`aceitam um objeto `com.adobe.idp.Document` que contém um design de formulário. Você também pode passar um `com.adobe.idp.Document` que contenha o design do formulário para o serviço de Saída ao enviar um fluxo de impressão para uma impressora de rede.
 
 **Executar uma ação com o fluxo de dados de formulário**
 
@@ -698,38 +698,38 @@ Envie um documento recuperado do Content Services (desaprovado) usando o Serviç
 
 1. Crie um objeto de Saída e de API do cliente de Gerenciamento de documentos.
 
-   * Criar um `ServiceClientFactory` objeto que contém propriedades de conexão. (Consulte [Definindo propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
-   * Criar um `OutputClient` usando seu construtor e transmitindo o `ServiceClientFactory` objeto.
-   * Criar um `DocumentManagementServiceClientImpl` usando seu construtor e transmitindo o `ServiceClientFactory` objeto.
+   * Crie um objeto `ServiceClientFactory` que contenha propriedades de conexão. (Consulte [Definindo propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
+   * Crie um objeto `OutputClient` usando seu construtor e transmitindo o objeto `ServiceClientFactory`.
+   * Crie um objeto `DocumentManagementServiceClientImpl` usando seu construtor e transmitindo o objeto `ServiceClientFactory`.
 
 1. Recuperar o design do formulário do Content Services (desaprovado).
 
-   Chame o `DocumentManagementServiceClientImpl` do objeto `retrieveContent` e passe os seguintes valores:
+   Invoque o método `retrieveContent` do objeto `DocumentManagementServiceClientImpl` e passe os seguintes valores:
 
-   * Um valor de string que especifica o armazenamento em que o conteúdo é adicionado. A loja padrão é `SpacesStore`. Esse valor é um parâmetro obrigatório.
-   * Um valor de string que especifica o caminho totalmente qualificado do conteúdo a ser recuperado (por exemplo, `/Company Home/Form Designs/Loan.xdp`). Esse valor é um parâmetro obrigatório.
+   * Um valor de string que especifica o armazenamento em que o conteúdo é adicionado. O armazenamento padrão é `SpacesStore`. Esse valor é um parâmetro obrigatório.
+   * Um valor de cadeia que especifica o caminho totalmente qualificado do conteúdo a ser recuperado (por exemplo, `/Company Home/Form Designs/Loan.xdp`). Esse valor é um parâmetro obrigatório.
    * Um valor de string que especifica a versão. Esse valor é um parâmetro opcional e você pode passar uma string vazia. Nessa situação, a versão mais recente é recuperada.
 
-   A variável `retrieveContent` o método retorna um `CRCResult` objeto que contém o arquivo XDP. Recuperar um `com.adobe.idp.Document` ao invocar a variável `CRCResult` do objeto `getDocument` método.
+   O método `retrieveContent` retorna um objeto `CRCResult` que contém o arquivo XDP. Recupere uma instância `com.adobe.idp.Document` invocando o método `getDocument` do objeto `CRCResult`.
 
 1. Renderize o formulário de PDF não interativo.
 
-   Chame o `OutputClient` do objeto `generatePDFOutput2` e passe os seguintes valores:
+   Invoque o método `generatePDFOutput2` do objeto `OutputClient` e passe os seguintes valores:
 
-   * A `TransformationFormat` valor de enumeração. Para gerar um documento PDF, especifique `TransformationFormat.PDF`.
+   * Um valor de enumeração `TransformationFormat`. Para gerar um documento PDF, especifique `TransformationFormat.PDF`.
    * Um valor de string que especifica a raiz do conteúdo onde os recursos adicionais, como imagens, estão localizados.
-   * A `com.adobe.idp.Document` objeto que representa o design do formulário (use a instância retornada pelo `CRCResult` do objeto `getDocument` método).
-   * A `PDFOutputOptionsSpec` objeto que contém opções de tempo de execução de PDF.
-   * A `RenderOptionsSpec` objeto que contém opções de tempo de execução de renderização.
-   * A variável `com.adobe.idp.Document` objeto que contém a fonte de dados XML que contém os dados a serem mesclados com o design do formulário.
+   * Um objeto `com.adobe.idp.Document` que representa o design do formulário (use a instância retornada pelo método `getDocument` do objeto `CRCResult`).
+   * Um objeto `PDFOutputOptionsSpec` que contém opções de tempo de execução de PDF.
+   * Um objeto `RenderOptionsSpec` que contém opções de tempo de execução de renderização.
+   * O objeto `com.adobe.idp.Document` que contém a fonte de dados XML que contém os dados a serem mesclados com o design do formulário.
 
-   A variável `generatePDFOutput2` o método retorna um `OutputResult` objeto que contém os resultados da operação.
+   O método `generatePDFOutput2` retorna um objeto `OutputResult` que contém os resultados da operação.
 
 1. Execute uma ação com o fluxo de dados de formulário.
 
-   * Recuperar um `com.adobe.idp.Document` objeto que representa o formulário não interativo chamando o `OutputResult` do objeto `getGeneratedDoc` método.
-   * Criar um `java.io.File` objeto que contém os resultados da operação. Verifique se a extensão do nome do arquivo é .pdf.
-   * Chame o `com.adobe.idp.Document` do objeto `copyToFile` método para copiar o conteúdo do `com.adobe.idp.Document` ao arquivo (certifique-se de usar o `com.adobe.idp.Document` objeto que foi retornado pelo `getGeneratedDoc` método).
+   * Recupere um objeto `com.adobe.idp.Document` que represente o formulário não interativo invocando o método `getGeneratedDoc` do objeto `OutputResult`.
+   * Crie um objeto `java.io.File` que contenha os resultados da operação. Verifique se a extensão do nome do arquivo é .pdf.
+   * Invoque o método `copyToFile` do objeto `com.adobe.idp.Document` para copiar o conteúdo do objeto `com.adobe.idp.Document` para o arquivo (certifique-se de usar o objeto `com.adobe.idp.Document` retornado pelo método `getGeneratedDoc`).
 
 **Consulte também**
 
@@ -753,63 +753,63 @@ Envie um documento recuperado do Content Services (desaprovado) usando o Serviç
 
    Use a seguinte definição WSDL para a referência de serviço associada ao serviço de Gerenciamento de Documentos: `http://localhost:8080/soap/services/DocumentManagementService?WSDL&lc_version=9.0.1`.
 
-   Como a variável `BLOB` tipo de dados for comum a ambas as referências de serviço, qualifique totalmente o `BLOB` tipo de dados ao usá-lo. No início rápido do serviço Web correspondente, todas as `BLOB` As instâncias do são totalmente qualificadas.
+   Como o tipo de dados `BLOB` é comum a ambas as referências de serviço, qualifique totalmente o tipo de dados `BLOB` ao usá-lo. No início rápido do serviço Web correspondente, todas as `BLOB` instâncias são totalmente qualificadas.
 
    >[!NOTE]
    >
-   >Substituir `localhost` com o endereço IP do servidor que hospeda o AEM Forms.
+   >Substitua `localhost` pelo endereço IP do servidor que hospeda o AEM Forms.
 
 1. Crie um objeto de Saída e de API do cliente de Gerenciamento de documentos.
 
-   * Criar um `OutputServiceClient` usando seu construtor padrão.
-   * Criar um `OutputServiceClient.Endpoint.Address` usando o `System.ServiceModel.EndpointAddress` construtor. Transmita um valor de string que especifique o WSDL para o serviço Forms (por exemplo, `http://localhost:8080/soap/services/OutputService?blob=mtom`). Não é necessário usar a variável `lc_version` atributo. Esse atributo é usado quando você cria uma referência de serviço.)
-   * Criar um `System.ServiceModel.BasicHttpBinding` obtendo o valor do `OutputServiceClient.Endpoint.Binding` campo. Converter o valor de retorno em `BasicHttpBinding`.
-   * Defina o `System.ServiceModel.BasicHttpBinding` do objeto `MessageEncoding` campo para `WSMessageEncoding.Mtom`. Esse valor garante que a MTOM seja usada.
+   * Crie um objeto `OutputServiceClient` usando seu construtor padrão.
+   * Crie um objeto `OutputServiceClient.Endpoint.Address` usando o construtor `System.ServiceModel.EndpointAddress`. Transmita um valor de string que especifique o WSDL para o serviço Forms (por exemplo, `http://localhost:8080/soap/services/OutputService?blob=mtom`). Você não precisa usar o atributo `lc_version`. Esse atributo é usado quando você cria uma referência de serviço.)
+   * Crie um objeto `System.ServiceModel.BasicHttpBinding` obtendo o valor do campo `OutputServiceClient.Endpoint.Binding`. Converter o valor de retorno em `BasicHttpBinding`.
+   * Defina o campo `MessageEncoding` do objeto `System.ServiceModel.BasicHttpBinding` como `WSMessageEncoding.Mtom`. Esse valor garante que a MTOM seja usada.
    * Ative a autenticação HTTP básica executando as seguintes tarefas:
 
-      * Atribuir o nome de usuário dos formulários AEM ao campo `OutputServiceClient.ClientCredentials.UserName.UserName`.
+      * Atribua o nome de usuário dos formulários AEM ao campo `OutputServiceClient.ClientCredentials.UserName.UserName`.
       * Atribua o valor de senha correspondente ao campo `OutputServiceClient.ClientCredentials.UserName.Password`.
-      * Atribuir o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * Atribua o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
 
-   * Atribuir o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
+   * Atribua o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
 
    >[!NOTE]
    >
-   >Repita essas etapas para a variável `DocumentManagementServiceClient`cliente de serviço.
+   >Repita essas etapas para o cliente de serviço `DocumentManagementServiceClient`.
 
 1. Recuperar o design do formulário do Content Services (desaprovado).
 
-   Recupere o conteúdo chamando o `DocumentManagementServiceClient` do objeto `retrieveContent` e transmitindo os seguintes valores:
+   Recupere o conteúdo chamando o método `retrieveContent` do objeto `DocumentManagementServiceClient` e transmitindo os seguintes valores:
 
-   * Um valor de string que especifica o armazenamento em que o conteúdo é adicionado. A loja padrão é `SpacesStore`. Esse valor é um parâmetro obrigatório.
-   * Um valor de string que especifica o caminho totalmente qualificado do conteúdo a ser recuperado (por exemplo, `/Company Home/Form Designs/Loan.xdp`). Esse valor é um parâmetro obrigatório.
+   * Um valor de string que especifica o armazenamento em que o conteúdo é adicionado. O armazenamento padrão é `SpacesStore`. Esse valor é um parâmetro obrigatório.
+   * Um valor de cadeia que especifica o caminho totalmente qualificado do conteúdo a ser recuperado (por exemplo, `/Company Home/Form Designs/Loan.xdp`). Esse valor é um parâmetro obrigatório.
    * Um valor de string que especifica a versão. Esse valor é um parâmetro opcional e você pode passar uma string vazia. Nessa situação, a versão mais recente é recuperada.
    * Um parâmetro de saída da string que armazena o valor do link de pesquisa.
-   * A `BLOB` parâmetro de saída que armazena o conteúdo. Você pode usar esse parâmetro de saída para recuperar o conteúdo.
-   * A `ServiceReference1.MyMapOf_xsd_string_To_xsd_anyType` parâmetro de saída que armazena atributos de conteúdo.
-   * A `CRCResult` parâmetro de saída. Em vez de usar esse objeto, você pode usar o `BLOB` para recuperar o conteúdo.
+   * Um parâmetro de saída `BLOB` que armazena o conteúdo. Você pode usar esse parâmetro de saída para recuperar o conteúdo.
+   * Um parâmetro de saída `ServiceReference1.MyMapOf_xsd_string_To_xsd_anyType` que armazena atributos de conteúdo.
+   * Um parâmetro de saída `CRCResult`. Em vez de usar esse objeto, você pode usar o parâmetro de saída `BLOB` para recuperar o conteúdo.
 
 1. Renderize o formulário de PDF não interativo.
 
-   Chame o `OutputServiceClient` do objeto `generatePDFOutput2` e passe os seguintes valores:
+   Invoque o método `generatePDFOutput2` do objeto `OutputServiceClient` e passe os seguintes valores:
 
-   * A `TransformationFormat` valor de enumeração. Para gerar um documento PDF, especifique `TransformationFormat.PDF`.
+   * Um valor de enumeração `TransformationFormat`. Para gerar um documento PDF, especifique `TransformationFormat.PDF`.
    * Um valor de string que especifica a raiz do conteúdo onde os recursos adicionais, como imagens, estão localizados.
-   * A `BLOB` objeto que representa o design do formulário (use o `BLOB` retornada pelo Content Services (desaprovado).
-   * A `PDFOutputOptionsSpec` objeto que contém opções de tempo de execução de PDF.
-   * A `RenderOptionsSpec` objeto que contém opções de tempo de execução de renderização.
-   * A variável `BLOB` objeto que contém a fonte de dados XML que contém os dados a serem mesclados com o design do formulário.
-   * Uma saída `BLOB` objeto que é preenchido pelo `generatePDFOutput2` método. A variável `generatePDFOutput2` O método preenche esse objeto com metadados gerados que descrevem o documento. (Este valor de parâmetro é necessário somente para a invocação do serviço Web).
-   * Uma saída `OutputResult` objeto que contém os resultados da operação. (Este valor de parâmetro é necessário somente para a invocação do serviço Web).
+   * Um objeto `BLOB` que representa o design do formulário (use a instância `BLOB` retornada pelo Content Services (desaprovado)).
+   * Um objeto `PDFOutputOptionsSpec` que contém opções de tempo de execução de PDF.
+   * Um objeto `RenderOptionsSpec` que contém opções de tempo de execução de renderização.
+   * O objeto `BLOB` que contém a fonte de dados XML que contém os dados a serem mesclados com o design do formulário.
+   * Um objeto de saída `BLOB` preenchido pelo método `generatePDFOutput2`. O método `generatePDFOutput2` preenche este objeto com metadados gerados que descrevem o documento. (Este valor de parâmetro é necessário somente para a invocação do serviço Web).
+   * Um objeto de saída `OutputResult` que contém os resultados da operação. (Este valor de parâmetro é necessário somente para a invocação do serviço Web).
 
-   A variável `generatePDFOutput2` o método retorna um `BLOB` objeto que contém o formato PDF não interativo.
+   O método `generatePDFOutput2` retorna um objeto `BLOB` que contém o formato de PDF não interativo.
 
 1. Execute uma ação com o fluxo de dados de formulário.
 
-   * Criar um `System.IO.FileStream` invocando seu construtor. Transmita um valor de string que represente o local do arquivo do documento PDF interativo e o modo no qual o arquivo será aberto.
-   * Crie uma matriz de bytes que armazene o conteúdo da variável `BLOB` objeto recuperado do `generatePDFOutput2` método. Preencha a matriz de bytes obtendo o valor de `BLOB` do objeto `MTOM` membro de dados.
-   * Criar um `System.IO.BinaryWriter` objeto chamando seu construtor e transmitindo o `System.IO.FileStream` objeto.
-   * Grave o conteúdo da matriz de bytes em um arquivo PDF, chamando o `System.IO.BinaryWriter` do objeto `Write` e transmitindo a matriz de bytes.
+   * Crie um objeto `System.IO.FileStream` invocando seu construtor. Transmita um valor de string que represente o local do arquivo do documento PDF interativo e o modo no qual o arquivo será aberto.
+   * Crie uma matriz de bytes que armazene o conteúdo do objeto `BLOB` recuperado do método `generatePDFOutput2`. Popular a matriz de bytes obtendo o valor do membro de dados `MTOM` do objeto `BLOB`.
+   * Crie um objeto `System.IO.BinaryWriter` invocando seu construtor e transmitindo o objeto `System.IO.FileStream`.
+   * Grave o conteúdo da matriz de bytes em um arquivo PDF, chamando o método `Write` do objeto `System.IO.BinaryWriter` e transmitindo a matriz de bytes.
 
 **Consulte também**
 
@@ -819,27 +819,27 @@ Envie um documento recuperado do Content Services (desaprovado) usando o Serviç
 
 ## Passar documentos no repositório para o serviço de saída {#passing-documents-located-in-the-repository-to-the-output-service}
 
-O serviço de Saída renderiza um formulário PDF não interativo baseado em um design de formulário normalmente salvo como um arquivo XDP e criado no Designer. Você pode passar um `com.adobe.idp.Document` objeto que contém o design de formulário para o serviço de Saída. O Serviço de saída renderiza o design do formulário no `com.adobe.idp.Document` objeto.
+O serviço de Saída renderiza um formulário PDF não interativo baseado em um design de formulário normalmente salvo como um arquivo XDP e criado no Designer. Você pode passar um objeto `com.adobe.idp.Document` que contenha o design do formulário para o serviço de Saída. O Serviço de saída renderiza o design do formulário no objeto `com.adobe.idp.Document`.
 
-Uma vantagem de passar um `com.adobe.idp.Document` para o Serviço de saída é que outras operações de serviço do AEM Forms retornam um `com.adobe.idp.Document` instância. Ou seja, você pode obter um `com.adobe.idp.Document` instância de outra operação de serviço e renderizá-la. Por exemplo, suponha que um arquivo XDP esteja armazenado no repositório do AEM Forms, conforme mostrado na ilustração a seguir.
+Uma vantagem de passar um objeto `com.adobe.idp.Document` para o serviço de Saída é que outras operações de serviço do AEM Forms retornam uma instância `com.adobe.idp.Document`. Ou seja, você pode obter uma instância `com.adobe.idp.Document` de outra operação de serviço e renderizá-la. Por exemplo, suponha que um arquivo XDP esteja armazenado no repositório do AEM Forms, conforme mostrado na ilustração a seguir.
 
 ![pd_pd_formrepository](assets/pd_pd_formrepository.png)
 
-A variável *FormsFolder* pasta é um local definido pelo usuário no repositório do AEM Forms (esse local é um exemplo e não existe por padrão). Neste exemplo, um design de formulário chamado Loan.xdp está nesta pasta. Além do design do formulário, outros materiais de apoio como imagens podem ser armazenados neste local. O caminho para um recurso no repositório do AEM Forms é:
+A pasta *FormsFolder* é um local definido pelo usuário no repositório do AEM Forms (esse local é um exemplo e não existe por padrão). Neste exemplo, um design de formulário chamado Loan.xdp está nesta pasta. Além do design do formulário, outros materiais de apoio como imagens podem ser armazenados neste local. O caminho para um recurso no repositório do AEM Forms é:
 
 `Applications/Application-name/Application-version/Folder.../Filename`
 
-Você pode recuperar programaticamente o Loan.xdp do repositório do AEM Forms e transmiti-lo para o Serviço de saída em um `com.adobe.idp.Document` objeto.
+Você pode recuperar programaticamente Loan.xdp do repositório do AEM Forms e passá-lo para o Serviço de saída em um objeto `com.adobe.idp.Document`.
 
 Você pode criar um PDF com base em um arquivo XDP no repositório usando uma das duas formas a seguir. Você pode passar a localização XDP por referência ou recuperar programaticamente o XDP do repositório e transmiti-lo para o serviço de Saída em um arquivo XDP.
 
-[Início rápido (modo EJB): Criando um documento PDF com base em um arquivo XDP do aplicativo usando a API Java](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-an-application-xdp-file-using-the-java-api) (mostra como passar a localização do arquivo XDP por referência).
+[Início Rápido (modo EJB): criando um documento PDF com base em um arquivo XDP de aplicativo usando a API Java](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-an-application-xdp-file-using-the-java-api) (mostra como passar a localização do arquivo XDP por referência).
 
-[Início rápido (modo EJB): Passar um documento no Repositório do AEM Forms para o serviço de saída usando a API Java](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api) (mostra como recuperar programaticamente o arquivo XDP do Repositório do AEM Forms e passá-lo para o serviço de Saída em um `com.adobe.idp.Document` instância). (Esta seção discute como executar esta tarefa)
+[Início Rápido (modo EJB): Passar um documento no Repositório AEM Forms para o serviço de Saída usando a API Java](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api) (mostra como recuperar programaticamente o arquivo XDP do Repositório AEM Forms e passá-lo para o serviço de Saída em uma instância `com.adobe.idp.Document`). (Esta seção discute como executar esta tarefa)
 
 >[!NOTE]
 >
->Para obter mais informações sobre o serviço Forms, consulte [Referência de serviços para o AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Para obter mais informações sobre o serviço Forms, consulte [Referência de serviços para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Resumo das etapas {#summary_of_steps-3}
 
@@ -855,23 +855,23 @@ Para passar um documento obtido do repositório do AEM Forms para o Serviço de 
 
 Inclua os arquivos necessários ao projeto de desenvolvimento. Se você estiver criando uma aplicação cliente usando Java, inclua os arquivos JAR necessários. Se você estiver usando serviços da Web, inclua os arquivos proxy.
 
-**Criar um objeto de Saída e de API do cliente de gerenciamento de documentos**
+**Criar um objeto de API de Cliente de Gerenciamento de Documentos e de Saída**
 
 Antes de executar programaticamente uma operação da API do Serviço de saída, crie um objeto da API do Cliente de saída. Além disso, como esse fluxo de trabalho recupera um arquivo XDP do Content Services (obsoleto), crie um objeto de API do Document Management.
 
 **Recuperar o design do formulário do Repositório do AEM Forms**
 
-Recupere o arquivo XDP do Repositório do AEM Forms usando a API do Repositório. (Consulte [Recursos de leitura](/help/forms/developing/aem-forms-repository.md#reading-resources).)
+Recupere o arquivo XDP do Repositório do AEM Forms usando a API do Repositório. (Consulte [Recursos de Leitura](/help/forms/developing/aem-forms-repository.md#reading-resources).)
 
-O arquivo XDP é retornado em um `com.adobe.idp.Document` instância (ou um `BLOB` instância se você estiver usando serviços da web). Em seguida, você pode passar o `com.adobe.idp.Document` instância do Serviço de saída.
+O arquivo XDP é retornado em uma instância `com.adobe.idp.Document` (ou uma instância `BLOB` se você estiver usando serviços da Web). Você pode passar a instância `com.adobe.idp.Document` para o serviço de Saída.
 
 **Renderizar o formulário de PDF não interativo**
 
-Para renderizar um formulário não interativo, passe o `com.adobe.idp.Document` que foi retornada usando a API do repositório do AEM Forms.
+Para renderizar um formulário não interativo, transmita a instância `com.adobe.idp.Document` que foi retornada usando a API do Repositório do AEM Forms.
 
 >[!NOTE]
 >
->Dois novos métodos chamados `generatePDFOutput2`e `generatePrintedOutput2`aceitar um `com.adobe.idp.Document`objeto que contém um design de formulário. Você também pode passar um `com.adobe.idp.Document` que contém o design do formulário para o serviço de saída ao enviar um fluxo de impressão para uma impressora de rede.
+>Dois novos métodos chamados `generatePDFOutput2` e `generatePrintedOutput2`aceitam um objeto `com.adobe.idp.Document` que contém um design de formulário. Você também pode passar um `com.adobe.idp.Document` que contenha o design do formulário para o serviço de Saída ao enviar um fluxo de impressão para uma impressora de rede.
 
 **Executar uma ação com o fluxo de dados de formulário**
 
@@ -899,32 +899,32 @@ Envie um documento recuperado do Repositório usando o Serviço de saída e a AP
 
 1. Crie um objeto de Saída e de API do cliente de Gerenciamento de documentos.
 
-   * Criar um `ServiceClientFactory` objeto que contém propriedades de conexão. (Consulte [Definindo propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
-   * Criar um `OutputClient` usando seu construtor e transmitindo o `ServiceClientFactory` objeto.
-   * Criar um `DocumentManagementServiceClientImpl` usando seu construtor e transmitindo o `ServiceClientFactory` objeto.
+   * Crie um objeto `ServiceClientFactory` que contenha propriedades de conexão. (Consulte [Definindo propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
+   * Crie um objeto `OutputClient` usando seu construtor e transmitindo o objeto `ServiceClientFactory`.
+   * Crie um objeto `DocumentManagementServiceClientImpl` usando seu construtor e transmitindo o objeto `ServiceClientFactory`.
 
 1. Recupere o design do formulário do Repositório do AEM Forms.
 
-   Chame o `ResourceRepositoryClient` do objeto `readResourceContent` e transmita um valor de string que especifique o local do URI para o arquivo XDP. Por exemplo, `/Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`. Esse valor é obrigatório. Este método retorna um valor de `com.adobe.idp.Document` que representa o arquivo XDP.
+   Invoque o método `readResourceContent` do objeto `ResourceRepositoryClient` e passe um valor de cadeia de caracteres que especifique o local do URI para o arquivo XDP. Por exemplo, `/Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`. Esse valor é obrigatório. Este método retorna uma instância `com.adobe.idp.Document` que representa o arquivo XDP.
 
 1. Renderize o formulário de PDF não interativo.
 
-   Chame o `OutputClient` do objeto `generatePDFOutput2` e passe os seguintes valores:
+   Invoque o método `generatePDFOutput2` do objeto `OutputClient` e passe os seguintes valores:
 
-   * A `TransformationFormat` valor de enumeração. Para gerar um documento PDF, especifique `TransformationFormat.PDF`.
+   * Um valor de enumeração `TransformationFormat`. Para gerar um documento PDF, especifique `TransformationFormat.PDF`.
    * Um valor de string que especifica a raiz do conteúdo onde os recursos adicionais, como imagens, estão localizados. Por exemplo, `repository:///Applications/FormsApplication/1.0/FormsFolder/`.
-   * A `com.adobe.idp.Document` objeto que representa o design do formulário (use a instância retornada pelo `ResourceRepositoryClient` do objeto `readResourceContent` método).
-   * A `PDFOutputOptionsSpec` objeto que contém opções de tempo de execução de PDF.
-   * A `RenderOptionsSpec` objeto que contém opções de tempo de execução de renderização.
-   * A variável `com.adobe.idp.Document` objeto que contém a fonte de dados XML que contém os dados a serem mesclados com o design do formulário.
+   * Um objeto `com.adobe.idp.Document` que representa o design do formulário (use a instância retornada pelo método `readResourceContent` do objeto `ResourceRepositoryClient`).
+   * Um objeto `PDFOutputOptionsSpec` que contém opções de tempo de execução de PDF.
+   * Um objeto `RenderOptionsSpec` que contém opções de tempo de execução de renderização.
+   * O objeto `com.adobe.idp.Document` que contém a fonte de dados XML que contém os dados a serem mesclados com o design do formulário.
 
-   A variável `generatePDFOutput2` o método retorna um `OutputResult` objeto que contém os resultados da operação.
+   O método `generatePDFOutput2` retorna um objeto `OutputResult` que contém os resultados da operação.
 
 1. Execute uma ação com o fluxo de dados de formulário.
 
-   * Recuperar um `com.adobe.idp.Document` objeto que representa o formulário não interativo chamando o `OutputResult` do objeto `getGeneratedDoc` método.
-   * Criar um `java.io.File` objeto que contém os resultados da operação. Verifique se a extensão do nome do arquivo é .pdf.
-   * Chame o `com.adobe.idp.Document` do objeto `copyToFile` método para copiar o conteúdo do `com.adobe.idp.Document` ao arquivo (certifique-se de usar o `com.adobe.idp.Document` objeto que foi retornado pelo `getGeneratedDoc` método).
+   * Recupere um objeto `com.adobe.idp.Document` que represente o formulário não interativo invocando o método `getGeneratedDoc` do objeto `OutputResult`.
+   * Crie um objeto `java.io.File` que contenha os resultados da operação. Verifique se a extensão do nome do arquivo é .pdf.
+   * Invoque o método `copyToFile` do objeto `com.adobe.idp.Document` para copiar o conteúdo do objeto `com.adobe.idp.Document` para o arquivo (certifique-se de usar o objeto `com.adobe.idp.Document` retornado pelo método `getGeneratedDoc`).
 
 **Consulte também**
 
@@ -952,7 +952,7 @@ Antes de ler *Criação de documentos PDF usando fragmentos*, é recomendável q
 
 >[!NOTE]
 >
->Para obter mais informações sobre o Serviço de saída, consulte [Referência de serviços para o AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Para obter mais informações sobre o Serviço de saída, consulte [Referência de serviços para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Resumo das etapas {#summary_of_steps-4}
 
@@ -974,13 +974,13 @@ Antes de executar programaticamente uma operação da API do Serviço de saída,
 
 **Usar o serviço Assembler para gerar o design do formulário**
 
-Use o serviço Assembler para gerar o design do formulário usando fragmentos. O serviço Assembler retorna um `com.adobe.idp.Document` instância que contém o design do formulário.
+Use o serviço Assembler para gerar o design do formulário usando fragmentos. O serviço Assembler retorna uma instância `com.adobe.idp.Document` que contém o design do formulário.
 
-**Use o Serviço de saída para gerar o documento PDF**
+**Usar o Serviço de saída para gerar o documento PDF**
 
-Você pode usar o Serviço de saída para gerar um documento PDF usando o design de formulário criado pelo serviço Assembler. Passe o `com.adobe.idp.Document` que o serviço Assembler retornou para o serviço Output.
+Você pode usar o Serviço de saída para gerar um documento PDF usando o design de formulário criado pelo serviço Assembler. Passe a instância `com.adobe.idp.Document` que o serviço do Assembler retornou para o serviço de Saída.
 
-**Salve o documento PDF como um arquivo PDF**
+**Salvar o documento PDF como um arquivo PDF**
 
 Depois que o serviço de saída gerar um documento PDF, você poderá salvá-lo como um arquivo PDF.
 
@@ -1010,42 +1010,42 @@ Crie um documento PDF com base em fragmentos usando a API de serviço de saída 
 
 1. Criar um objeto Cliente de Saída e Assembler.
 
-   * Criar um `ServiceClientFactory` objeto que contém propriedades de conexão.
-   * Criar um `OutputClient` usando seu construtor e transmitindo o `ServiceClientFactory` objeto.
-   * Criar um `AssemblerServiceClient` usando seu construtor e transmitindo o `ServiceClientFactory` objeto.
+   * Crie um objeto `ServiceClientFactory` que contenha propriedades de conexão.
+   * Crie um objeto `OutputClient` usando seu construtor e transmitindo o objeto `ServiceClientFactory`.
+   * Crie um objeto `AssemblerServiceClient` usando seu construtor e transmitindo o objeto `ServiceClientFactory`.
 
 1. Use o serviço Assembler para gerar o design do formulário.
 
-   Chame o `AssemblerServiceClient` do objeto `invokeDDX` e passe os seguintes valores obrigatórios:
+   Invoque o método `invokeDDX` do objeto `AssemblerServiceClient` e passe os seguintes valores obrigatórios:
 
-   * A `com.adobe.idp.Document` objeto que representa o documento DDX a ser usado.
-   * A `java.util.Map` objeto que contém os arquivos XDP de entrada.
-   * A `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` objeto que especifica as opções de tempo de execução, incluindo a fonte padrão e o nível de log do job.
+   * Um objeto `com.adobe.idp.Document` que representa o documento DDX a ser usado.
+   * Um objeto `java.util.Map` que contém os arquivos XDP de entrada.
+   * Um objeto `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` que especifica as opções de tempo de execução, incluindo a fonte padrão e o nível de log do trabalho.
 
-   A variável `invokeDDX` o método retorna um `com.adobe.livecycle.assembler.client.AssemblerResult` objeto que contém o documento XDP montado. Para recuperar o documento XDP montado, execute as seguintes ações:
+   O método `invokeDDX` retorna um objeto `com.adobe.livecycle.assembler.client.AssemblerResult` que contém o documento XDP montado. Para recuperar o documento XDP montado, execute as seguintes ações:
 
-   * Chame o `AssemblerResult` do objeto `getDocuments` método. Este método retorna um valor de `java.util.Map` objeto.
-   * Repita através do `java.util.Map` até encontrar o resultado `com.adobe.idp.Document` objeto.
-   * Chame o `com.adobe.idp.Document` do objeto `copyToFile` para extrair o documento XDP montado.
+   * Invoque o método `getDocuments` do objeto `AssemblerResult`. Este método retorna um objeto `java.util.Map`.
+   * Repita o objeto `java.util.Map` até encontrar o objeto `com.adobe.idp.Document` resultante.
+   * Invoque o método `copyToFile` do objeto `com.adobe.idp.Document` para extrair o documento XDP montado.
 
 1. Use o Serviço de saída para gerar o documento PDF.
 
-   Chame o `OutputClient` do objeto `generatePDFOutput2` e passe os seguintes valores:
+   Invoque o método `generatePDFOutput2` do objeto `OutputClient` e passe os seguintes valores:
 
-   * A `TransformationFormat` valor de enumeração. Para gerar um documento PDF, especifique `TransformationFormat.PDF`
+   * Um valor de enumeração `TransformationFormat`. Para gerar um documento PDF, especifique `TransformationFormat.PDF`
    * Um valor de string que especifica a raiz do conteúdo onde os recursos adicionais, como imagens, estão localizados
-   * A `com.adobe.idp.Document` objeto que representa o design do formulário (use a instância retornada pelo serviço Assembler)
-   * A `PDFOutputOptionsSpec` objeto que contém opções de tempo de execução de PDF
-   * A `RenderOptionsSpec` objeto que contém opções de tempo de execução de renderização
-   * A variável `com.adobe.idp.Document` objeto que contém a fonte de dados XML que contém os dados a serem mesclados com o design do formulário
+   * Um objeto `com.adobe.idp.Document` que representa o design do formulário (use a instância retornada pelo serviço Assembler)
+   * Um objeto `PDFOutputOptionsSpec` que contém opções de tempo de execução de PDF
+   * Um objeto `RenderOptionsSpec` que contém opções de tempo de execução de renderização
+   * O objeto `com.adobe.idp.Document` que contém a fonte de dados XML que contém os dados a serem mesclados com o design do formulário
 
-   A variável `generatePDFOutput2` o método retorna um `OutputResult` objeto que contém os resultados da operação
+   O método `generatePDFOutput2` retorna um objeto `OutputResult` que contém os resultados da operação
 
 1. Salve o documento PDF como um arquivo PDF.
 
-   * Recuperar um `com.adobe.idp.Document` objeto que representa o documento PDF chamando o `OutputResult` do objeto `getGeneratedDoc` método.
-   * Criar um `java.io.File` objeto que contém os resultados da operação. Verifique se a extensão do nome do arquivo é .pdf.
-   * Chame o `com.adobe.idp.Document` do objeto `copyToFile` método para copiar o conteúdo do `com.adobe.idp.Document` ao arquivo. (Certifique-se de usar a variável `com.adobe.idp.Document` objeto que o `getGeneratedDoc` método retornado.).
+   * Recupere um objeto `com.adobe.idp.Document` que represente o documento PDF invocando o método `getGeneratedDoc` do objeto `OutputResult`.
+   * Crie um objeto `java.io.File` que contenha os resultados da operação. Verifique se a extensão do nome do arquivo é .pdf.
+   * Invoque o método `copyToFile` do objeto `com.adobe.idp.Document` para copiar o conteúdo do objeto `com.adobe.idp.Document` para o arquivo. (Use o objeto `com.adobe.idp.Document` que o método `getGeneratedDoc` retornou.)
 
 **Consulte também**
 
@@ -1077,64 +1077,64 @@ Crie um documento PDF com base em fragmentos usando a API de serviço de saída 
     http://localhost:8080/soap/services/AssemblerService?WSDL&lc_version=9.0.1.
    ```
 
-   Como a variável `BLOB` tipo de dados for comum a ambas as referências de serviço, qualifique totalmente o `BLOB` tipo de dados ao usá-lo. No início rápido do serviço Web correspondente, todas as `BLOB` As instâncias do são totalmente qualificadas.
+   Como o tipo de dados `BLOB` é comum a ambas as referências de serviço, qualifique totalmente o tipo de dados `BLOB` ao usá-lo. No início rápido do serviço Web correspondente, todas as `BLOB` instâncias são totalmente qualificadas.
 
    >[!NOTE]
    >
-   >Substituir `localhost` com o endereço IP do servidor que hospeda o AEM Forms.
+   >Substitua `localhost` pelo endereço IP do servidor que hospeda o AEM Forms.
 
 1. Criar um objeto Cliente de Saída e Assembler.
 
-   * Criar um `OutputServiceClient` usando seu construtor padrão.
-   * Criar um `OutputServiceClient.Endpoint.Address` usando o `System.ServiceModel.EndpointAddress` construtor. Transmita um valor de string que especifique o WSDL para o serviço AEM Forms (por exemplo, `http://localhost:8080/soap/services/OutputService?blob=mtom`.) Não é necessário usar a variável `lc_version` atributo. Esse atributo é usado quando você cria uma referência de serviço. No entanto, especifique `?blob=mtom` para usar MTOM.
-   * Criar um `System.ServiceModel.BasicHttpBinding` obtendo o valor do `OutputServiceClient.Endpoint.Binding` campo. Converter o valor de retorno em `BasicHttpBinding`.
-   * Defina o `System.ServiceModel.BasicHttpBinding` do objeto `MessageEncoding` campo para `WSMessageEncoding.Mtom`. Esse valor garante que a MTOM seja usada.
+   * Crie um objeto `OutputServiceClient` usando seu construtor padrão.
+   * Crie um objeto `OutputServiceClient.Endpoint.Address` usando o construtor `System.ServiceModel.EndpointAddress`. Transmita um valor de cadeia de caracteres que especifique o WSDL para o serviço AEM Forms (por exemplo, `http://localhost:8080/soap/services/OutputService?blob=mtom`.) Você não precisa usar o atributo `lc_version`. Esse atributo é usado quando você cria uma referência de serviço. No entanto, especifique `?blob=mtom` para usar MTOM.
+   * Crie um objeto `System.ServiceModel.BasicHttpBinding` obtendo o valor do campo `OutputServiceClient.Endpoint.Binding`. Converter o valor de retorno em `BasicHttpBinding`.
+   * Defina o campo `MessageEncoding` do objeto `System.ServiceModel.BasicHttpBinding` como `WSMessageEncoding.Mtom`. Esse valor garante que a MTOM seja usada.
    * Ative a autenticação HTTP básica executando as seguintes tarefas:
 
-      * Atribua o nome de usuário dos formulários AEM à `OutputServiceClient.ClientCredentials.UserName.UserName`campo.
-      * Atribua o valor de senha correspondente ao `OutputServiceClient.ClientCredentials.UserName.Password`campo.
-      * Atribuir o valor constante `HttpClientCredentialType.Basic` para o `BasicHttpBindingSecurity.Transport.ClientCredentialType`campo.
+      * Atribua o nome de usuário dos formulários AEM ao campo `OutputServiceClient.ClientCredentials.UserName.UserName`.
+      * Atribua o valor de senha correspondente ao campo `OutputServiceClient.ClientCredentials.UserName.Password`.
+      * Atribua o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
 
-   * Atribua a `BasicHttpSecurityMode.TransportCredentialOnly` valor constante para o `BasicHttpBindingSecurity.Security.Mode`campo.
+   * Atribua o valor da constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
 
    >[!NOTE]
    >
-   >Repita essas etapas para a variável `AssemblerServiceClient`objeto.
+   >Repita essas etapas para o objeto `AssemblerServiceClient`.
 
 1. Use o serviço Assembler para gerar o design do formulário.
 
-   Chame o `AssemblerServiceClient` do objeto `invokeDDX` e passe os seguintes valores:
+   Invoque o método `invokeDDX` do objeto `AssemblerServiceClient` e passe os seguintes valores:
 
-   * A `BLOB` objeto que representa o documento DDX
-   * A variável `MyMapOf_xsd_string_To_xsd_anyType` objeto que contém os arquivos necessários
-   * Um `AssemblerOptionSpec` objeto que especifica as opções de tempo de execução
+   * Um objeto `BLOB` que representa o documento DDX
+   * O objeto `MyMapOf_xsd_string_To_xsd_anyType` que contém os arquivos necessários
+   * Um objeto `AssemblerOptionSpec` que especifica as opções de tempo de execução
 
-   A variável `invokeDDX` o método retorna um `AssemblerResult` objeto que contém os resultados do trabalho e quaisquer exceções que ocorreram. Para obter o documento XDP recém-criado, execute as seguintes ações:
+   O método `invokeDDX` retorna um objeto `AssemblerResult` que contém os resultados do trabalho e as exceções que ocorreram. Para obter o documento XDP recém-criado, execute as seguintes ações:
 
-   * Acesse o `AssemblerResult` do objeto `documents` que é um `Map` objeto que contém os documentos PDF resultantes.
-   * Repita através do `Map` objeto para recuperar o design do formulário montado. Transmitir do membro da matriz `value` para um `BLOB`. Passar este `BLOB` para o Serviço de saída.
+   * Acesse o campo `documents` do objeto `AssemblerResult`, que é um objeto `Map` que contém os documentos PDF resultantes.
+   * Repita através do objeto `Map` para recuperar o design de formulário montado. Transmitir o `value` desse membro da matriz para um `BLOB`. Passar esta instância `BLOB` para o serviço de Saída.
 
 1. Use o Serviço de saída para gerar o documento PDF.
 
-   Chame o `OutputServiceClient` do objeto `generatePDFOutput2` e passe os seguintes valores:
+   Invoque o método `generatePDFOutput2` do objeto `OutputServiceClient` e passe os seguintes valores:
 
-   * A `TransformationFormat` valor de enumeração. Para gerar um documento PDF, especifique `TransformationFormat.PDF`.
+   * Um valor de enumeração `TransformationFormat`. Para gerar um documento PDF, especifique `TransformationFormat.PDF`.
    * Um valor de string que especifica a raiz do conteúdo onde os recursos adicionais, como imagens, estão localizados.
-   * A `BLOB` objeto que representa o design do formulário (use o `BLOB` instância retornada pelo serviço Assembler).
-   * A `PDFOutputOptionsSpec` objeto que contém opções de tempo de execução de PDF.
-   * A `RenderOptionsSpec` objeto que contém opções de tempo de execução de renderização.
-   * A variável `BLOB` objeto que contém a fonte de dados XML que contém os dados a serem mesclados com o design do formulário.
-   * Uma saída `BLOB` objeto que o `generatePDFOutput2` é preenchido. A variável `generatePDFOutput2` O método preenche esse objeto com metadados gerados que descrevem o documento. (Este valor de parâmetro é necessário somente para a invocação do serviço Web).
-   * Uma saída `OutputResult` objeto que contém os resultados da operação. (Este valor de parâmetro é necessário somente para a invocação do serviço Web).
+   * Um objeto `BLOB` que representa o design do formulário (use a instância `BLOB` retornada pelo serviço Assembler).
+   * Um objeto `PDFOutputOptionsSpec` que contém opções de tempo de execução de PDF.
+   * Um objeto `RenderOptionsSpec` que contém opções de tempo de execução de renderização.
+   * O objeto `BLOB` que contém a fonte de dados XML que contém os dados a serem mesclados com o design do formulário.
+   * Um objeto de saída `BLOB` que o método `generatePDFOutput2` preenche. O método `generatePDFOutput2` preenche este objeto com metadados gerados que descrevem o documento. (Este valor de parâmetro é necessário somente para a invocação do serviço Web).
+   * Um objeto de saída `OutputResult` que contém os resultados da operação. (Este valor de parâmetro é necessário somente para a invocação do serviço Web).
 
-   A variável `generatePDFOutput2` o método retorna um `BLOB` objeto que contém o formato PDF não interativo.
+   O método `generatePDFOutput2` retorna um objeto `BLOB` que contém o formato de PDF não interativo.
 
 1. Salve o documento PDF como um arquivo PDF.
 
-   * Criar um `System.IO.FileStream` invocando seu construtor. Transmita um valor de string que represente o local do arquivo do documento PDF interativo e o modo no qual o arquivo será aberto.
-   * Crie uma matriz de bytes que armazene o conteúdo da variável `BLOB` objeto recuperado do `generatePDFOutput2` método. Preencha a matriz de bytes obtendo o valor de `BLOB` do objeto `MTOM` membro de dados.
-   * Criar um `System.IO.BinaryWriter` objeto chamando seu construtor e transmitindo o `System.IO.FileStream` objeto.
-   * Grave o conteúdo da matriz de bytes em um arquivo PDF, chamando o `System.IO.BinaryWriter` do objeto `Write` e transmitindo a matriz de bytes.
+   * Crie um objeto `System.IO.FileStream` invocando seu construtor. Transmita um valor de string que represente o local do arquivo do documento PDF interativo e o modo no qual o arquivo será aberto.
+   * Crie uma matriz de bytes que armazene o conteúdo do objeto `BLOB` recuperado do método `generatePDFOutput2`. Popular a matriz de bytes obtendo o valor do membro de dados `MTOM` do objeto `BLOB`.
+   * Crie um objeto `System.IO.BinaryWriter` invocando seu construtor e transmitindo o objeto `System.IO.FileStream`.
+   * Grave o conteúdo da matriz de bytes em um arquivo PDF, chamando o método `Write` do objeto `System.IO.BinaryWriter` e transmitindo a matriz de bytes.
 
 **Consulte também**
 
@@ -1144,7 +1144,7 @@ Crie um documento PDF com base em fragmentos usando a API de serviço de saída 
 
 ## Imprimindo em Arquivos {#printing-to-files}
 
-Você pode usar o serviço de Saída para imprimir fluxos como PostScript, Printer Control Language (PCL) ou os seguintes formatos de rótulo em um arquivo:
+Você pode usar o serviço de Saída para imprimir fluxos como PostScript, PCL (Printer Control Language, Linguagem de Controle de Impressora) ou os seguintes formatos de rótulo em um arquivo:
 
 * Zebra - ZPL
 * Intermec - IPL
@@ -1155,11 +1155,11 @@ Usando o Serviço de saída, você pode mesclar dados XML com um design de formu
 
 >[!NOTE]
 >
->Para obter informações sobre como enviar fluxos de impressão para impressoras, consulte [Enviando fluxos de impressão para impressoras](creating-document-output-streams.md#sending-print-streams-to-printers).
+>Para obter informações sobre como enviar fluxos de impressão para impressoras, consulte [Enviando Fluxos de Impressão para Impressoras](creating-document-output-streams.md#sending-print-streams-to-printers).
 
 >[!NOTE]
 >
->Para obter mais informações sobre o Serviço de saída, consulte [Referência de serviços para o AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Para obter mais informações sobre o Serviço de saída, consulte [Referência de serviços para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Resumo das etapas {#summary_of_steps-5}
 
@@ -1184,23 +1184,23 @@ Os seguintes arquivos JAR devem ser adicionados ao caminho de classe do projeto:
 * adobe-utilities.jar (necessário se o AEM Forms for implantado no JBoss)
 * jbossall-client.jar (necessário se o AEM Forms for implantado no JBoss)
 
-se o AEM Forms for disponibilizado em um servidor de aplicativos J2EE compatível que não seja JBoss, você deverá substituir os arquivos adobe-utilities.jar e jbossall-client.jar por arquivos JAR específicos para o servidor de aplicativos J2EE no qual o AEM Forms é disponibilizado. (Consulte [Inclusão de arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).)
+se o AEM Forms for disponibilizado em um servidor de aplicativos J2EE compatível que não seja JBoss, você deverá substituir os arquivos adobe-utilities.jar e jbossall-client.jar por arquivos JAR específicos para o servidor de aplicativos J2EE no qual o AEM Forms é disponibilizado. (Consulte [Incluindo arquivos da biblioteca AEM Forms Java](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).)
 
-**Criar um objeto do Cliente de saída**
+**Criar um objeto de Cliente de Saída**
 
-Antes de executar programaticamente uma operação do Serviço de saída, você deve criar um objeto cliente do Serviço de saída. Se estiver usando a API Java, crie uma `OutputClient` objeto. Se você estiver usando a API de serviço Web de saída, crie uma `OutputServiceService` objeto.
+Antes de executar programaticamente uma operação do Serviço de saída, você deve criar um objeto cliente do Serviço de saída. Se você estiver usando a API Java, crie um objeto `OutputClient`. Se você estiver usando a API de Serviço Web de Saída, crie um objeto `OutputServiceService`.
 
-**Fazer referência a uma fonte de dados XML**
+**Referenciar uma fonte de dados XML**
 
 Para imprimir um documento que contenha dados, você deve fazer referência a uma fonte de dados XML que contenha elementos XML para cada campo de formulário que você deseja preencher com dados. O nome do elemento XML deve corresponder ao nome do campo. Um elemento XML será ignorado se não corresponder a um campo de formulário ou se o nome do elemento XML não corresponder ao nome do campo. Não é necessário corresponder à ordem em que os elementos XML são exibidos se todos os elementos XML forem especificados.
 
 **Definir as opções de tempo de execução de impressão necessárias para imprimir em um arquivo**
 
-Para imprimir em um arquivo, você deve definir a opção de tempo de execução do URI de arquivo especificando o local e o nome do arquivo no qual o serviço de Saída é impresso. Por exemplo, para instruir o serviço de saída a imprimir um arquivo PostScript chamado *FormulárioHipoteca.ps* para C:\Adobe, especifique C:\Adobe\MortgageForm.ps.
+Para imprimir em um arquivo, você deve definir a opção de tempo de execução do URI de arquivo especificando o local e o nome do arquivo no qual o serviço de Saída é impresso. Por exemplo, para instruir o serviço de Saída a imprimir um arquivo PostScript chamado *MortgageForm.ps* em C:\Adobe, especifique C:\Adobe\MortgageForm.ps.
 
 >[!NOTE]
 >
->Há opções opcionais de tempo de execução que podem ser definidas. Para obter informações sobre todas as opções que podem ser definidas, consulte `PrintedOutputOptionsSpec` referência de classe em [Referência da API do AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+>Há opções opcionais de tempo de execução que podem ser definidas. Para obter informações sobre todas as opções que podem ser definidas, consulte a referência de classe `PrintedOutputOptionsSpec` na [Referência da API do AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 **Imprimir o fluxo de impressão em um arquivo**
 
@@ -1232,42 +1232,42 @@ Imprima em um arquivo usando a API de saída (Java):
 
 1. Crie um objeto Cliente de saída.
 
-   * Criar um `ServiceClientFactory` objeto que contém propriedades de conexão.
-   * Criar um `OutputClient` usando seu construtor e transmitindo o `ServiceClientFactory` objeto.
+   * Crie um objeto `ServiceClientFactory` que contenha propriedades de conexão.
+   * Crie um objeto `OutputClient` usando seu construtor e transmitindo o objeto `ServiceClientFactory`.
 
 1. Fazer referência a uma fonte de dados XML.
 
-   * Criar um `java.io.FileInputStream` objeto que representa a fonte de dados XML usada para preencher o documento usando seu construtor e transmitindo um valor de cadeia de caracteres que especifica o local do arquivo XML.
-   * Criar um `com.adobe.idp.Document` usando seu construtor e transmitindo o `java.io.FileInputStream` objeto.
+   * Crie um objeto `java.io.FileInputStream` que represente a fonte de dados XML usada para preencher o documento usando seu construtor e transmitindo um valor de cadeia de caracteres que especifique o local do arquivo XML.
+   * Crie um objeto `com.adobe.idp.Document` usando seu construtor e transmitindo o objeto `java.io.FileInputStream`.
 
 1. Defina as opções de tempo de execução de impressão necessárias para imprimir em um arquivo.
 
-   * Criar um `PrintedOutputOptionsSpec` usando seu construtor.
-   * Especifique o arquivo chamando o nome do objeto PrintedOutputOptionsSpec `setFileURI` e transmitindo um valor de string que representa o nome e o local do arquivo. Por exemplo, se você quiser que o serviço de Saída imprima em um arquivo PostScript chamado MortgageForm.ps em C:\Adobe, especifique C:\\Adobe\MortgageForm.ps.
-   * Especifique o número de cópias a serem impressas chamando o `PrintedOutputOptionsSpec` do objeto `setCopies` e transmitindo um valor inteiro que representa o número de cópias.
+   * Crie um objeto `PrintedOutputOptionsSpec` usando seu construtor.
+   * Especifique o arquivo chamando o método `setFileURI` do objeto PrintedOutputOptionsSpec e transmitindo um valor de cadeia de caracteres que representa o nome e o local do arquivo. Por exemplo, se você quiser que o serviço de Saída imprima em um arquivo do PostScript chamado MortgageForm.ps em C:\Adobe, especifique C:\\Adobe\MortgageForm.ps.
+   * Especifique o número de cópias a serem impressas invocando o método `setCopies` do objeto `PrintedOutputOptionsSpec` e transmitindo um valor inteiro que represente o número de cópias.
 
 1. Imprima o fluxo de impressão em um arquivo.
 
-   Imprima em um arquivo chamando o `OutputClient` do objeto `generatePrintedOutput` e transmitindo os seguintes valores:
+   Imprima em um arquivo chamando o método `generatePrintedOutput` do objeto `OutputClient` e passando os seguintes valores:
 
-   * A `PrintFormat` valor de enumeração que especifica o formato de fluxo de impressão a ser criado. Por exemplo, para criar um fluxo de impressão PostScript, passe `PrintFormat.PostScript`.
+   * Um valor de enumeração `PrintFormat` que especifica o formato de fluxo de impressão a ser criado. Por exemplo, para criar um fluxo de impressão PostScript, passe `PrintFormat.PostScript`.
    * Um valor de cadeia de caracteres que especifica o nome do design do formulário.
    * Um valor de string que especifica o local dos arquivos de materiais relacionados, como arquivos de imagem.
-   * Um valor de cadeia de caracteres que especifica o local do arquivo XDC a ser usado (você pode passar `null` se você especificou o arquivo XDC a ser usado usando o `PrintedOutputOptionsSpec` objeto).
-   * A variável `PrintedOutputOptionsSpec` objeto que contém as opções de tempo de execução necessárias para imprimir em um arquivo.
-   * A variável `com.adobe.idp.Document` objeto que contém a fonte de dados XML que contém dados de formulário.
+   * Um valor de cadeia de caracteres que especifica o local do arquivo XDC a ser usado (você pode passar `null`, se tiver especificado o arquivo XDC a ser usado, usando o objeto `PrintedOutputOptionsSpec`).
+   * O objeto `PrintedOutputOptionsSpec` que contém as opções de tempo de execução necessárias para imprimir em um arquivo.
+   * O objeto `com.adobe.idp.Document` que contém a fonte de dados XML que contém dados de formulário.
 
-   A variável `generatePrintedOutput` o método retorna um `OutputResult` objeto que contém os resultados da operação.
+   O método `generatePrintedOutput` retorna um objeto `OutputResult` que contém os resultados da operação.
 
    >[!NOTE]
    >
-   >A variável `OutputResult` do objeto `getRecordLevelMetaDataList` o método retorna `null`.
+   >O método `getRecordLevelMetaDataList` do objeto `OutputResult` retorna `null`.
 
 1. Recuperar os resultados da operação.
 
-   * Criar um `com.adobe.idp.Document` objeto que representa o status do `generatePrintedOutput` ao invocar o `OutputResult` do objeto `getStatusDoc` (o método `OutputResult` objeto foi retornado pelo `generatePrintedOutput` método).
-   * Criar um `java.io.File` objeto que conterá os resultados da operação. Certifique-se de que a extensão do arquivo seja XML.
-   * Chame o `com.adobe.idp.Document` do objeto `copyToFile` método para copiar o conteúdo do `com.adobe.idp.Document` ao arquivo (certifique-se de usar o `com.adobe.idp.Document` objeto que foi retornado pelo `getStatusDoc` método).
+   * Crie um objeto `com.adobe.idp.Document` que represente o status do método `generatePrintedOutput` invocando o método `getStatusDoc` do objeto `OutputResult` (o objeto `OutputResult` foi retornado pelo método `generatePrintedOutput`).
+   * Crie um objeto `java.io.File` que conterá os resultados da operação. Certifique-se de que a extensão do arquivo seja XML.
+   * Invoque o método `copyToFile` do objeto `com.adobe.idp.Document` para copiar o conteúdo do objeto `com.adobe.idp.Document` para o arquivo (certifique-se de usar o objeto `com.adobe.idp.Document` retornado pelo método `getStatusDoc`).
 
 **Consulte também**
 
@@ -1289,55 +1289,55 @@ Imprima em um arquivo usando a API de saída (serviço da Web):
 
    >[!NOTE]
    >
-   >Substituir `localhost` com o endereço IP do servidor que hospeda o AEM Forms.
+   >Substitua `localhost` pelo endereço IP do servidor que hospeda o AEM Forms.
 
 1. Crie um objeto Cliente de saída.
 
-   * Criar um `OutputServiceClient` usando seu construtor padrão.
-   * Criar um `OutputServiceClient.Endpoint.Address` usando o `System.ServiceModel.EndpointAddress` construtor. Transmita um valor de string que especifique o WSDL para o serviço AEM Forms (por exemplo, `http://localhost:8080/soap/services/OutputService?blob=mtom`.) Não é necessário usar a variável `lc_version` atributo. Esse atributo é usado quando você cria uma referência de serviço. No entanto, especifique `?blob=mtom` para usar MTOM.
-   * Criar um `System.ServiceModel.BasicHttpBinding` obtendo o valor do `OutputServiceClient.Endpoint.Binding` campo. Converter o valor de retorno em `BasicHttpBinding`.
-   * Defina o `System.ServiceModel.BasicHttpBinding` do objeto `MessageEncoding` campo para `WSMessageEncoding.Mtom`. Esse valor garante que a MTOM seja usada.
+   * Crie um objeto `OutputServiceClient` usando seu construtor padrão.
+   * Crie um objeto `OutputServiceClient.Endpoint.Address` usando o construtor `System.ServiceModel.EndpointAddress`. Transmita um valor de cadeia de caracteres que especifique o WSDL para o serviço AEM Forms (por exemplo, `http://localhost:8080/soap/services/OutputService?blob=mtom`.) Você não precisa usar o atributo `lc_version`. Esse atributo é usado quando você cria uma referência de serviço. No entanto, especifique `?blob=mtom` para usar MTOM.
+   * Crie um objeto `System.ServiceModel.BasicHttpBinding` obtendo o valor do campo `OutputServiceClient.Endpoint.Binding`. Converter o valor de retorno em `BasicHttpBinding`.
+   * Defina o campo `MessageEncoding` do objeto `System.ServiceModel.BasicHttpBinding` como `WSMessageEncoding.Mtom`. Esse valor garante que a MTOM seja usada.
    * Ative a autenticação HTTP básica executando as seguintes tarefas:
 
-      * Atribuir o nome de usuário dos formulários AEM ao campo `OutputServiceClient.ClientCredentials.UserName.UserName`.
+      * Atribua o nome de usuário dos formulários AEM ao campo `OutputServiceClient.ClientCredentials.UserName.UserName`.
       * Atribua o valor de senha correspondente ao campo `OutputServiceClient.ClientCredentials.UserName.Password`.
-      * Atribuir o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Atribuir o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
+      * Atribua o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * Atribua o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Fazer referência a uma fonte de dados XML.
 
-   * Criar um `BLOB` usando seu construtor. A variável `BLOB` objeto é usado para armazenar dados de formulário.
-   * Criar um `System.IO.FileStream` chamando seu construtor e transmitindo um valor de string que especifica o local do arquivo XML que contém dados de formulário.
-   * Crie uma matriz de bytes que armazene o conteúdo da variável `System.IO.FileStream` objeto. Você pode determinar o tamanho da matriz de bytes obtendo o `System.IO.FileStream` do objeto `Length` propriedade.
-   * Preencha a matriz de bytes com dados de fluxo invocando o `System.IO.FileStream` do objeto `Read` e transmitindo a matriz de bytes, a posição inicial e o comprimento do fluxo para leitura.
-   * Preencha o `BLOB` atribuindo seu `binaryData` com o conteúdo da matriz de bytes.
+   * Crie um objeto `BLOB` usando seu construtor. O objeto `BLOB` é usado para armazenar dados de formulário.
+   * Crie um objeto `System.IO.FileStream` chamando seu construtor e transmitindo um valor de cadeia de caracteres que especifica o local do arquivo XML que contém dados de formulário.
+   * Crie uma matriz de bytes que armazene o conteúdo do objeto `System.IO.FileStream`. Você pode determinar o tamanho da matriz de bytes obtendo a propriedade `Length` do objeto `System.IO.FileStream`.
+   * Preencha a matriz de bytes com dados de fluxo invocando o método `Read` do objeto `System.IO.FileStream` e transmitindo a matriz de bytes, a posição inicial e o comprimento do fluxo para leitura.
+   * Preencha o objeto `BLOB` atribuindo sua propriedade `binaryData` com o conteúdo da matriz de bytes.
 
 1. Defina as opções de tempo de execução de impressão necessárias para imprimir em um arquivo.
 
-   * Criar um `PrintedOutputOptionsSpec` usando seu construtor.
-   * Especifique o arquivo atribuindo um valor de string que represente o local e o nome do arquivo à `PrintedOutputOptionsSpec` do objeto `fileURI` membro de dados. Por exemplo, se você quiser que o serviço de saída imprima em um arquivo PostScript chamado *FormulárioHipoteca.ps* em C:\Adobe, especifique C:\\Adobe\MortgageForm.ps.
-   * Especifique o número de cópias a serem impressas atribuindo um valor inteiro que represente o número de cópias à `PrintedOutputOptionsSpec` do objeto `copies` membros de dados.
+   * Crie um objeto `PrintedOutputOptionsSpec` usando seu construtor.
+   * Especifique o arquivo atribuindo um valor de cadeia de caracteres que represente o local e o nome do arquivo ao membro de dados `fileURI` do objeto `PrintedOutputOptionsSpec`. Por exemplo, se você deseja que o Serviço de saída imprima em um arquivo PostScript chamado *MortgageForm.ps* em C:\Adobe, especifique C:\\Adobe\MortgageForm.ps.
+   * Especifique o número de cópias a serem impressas atribuindo um valor inteiro que represente o número de cópias para os membros de dados `copies` do objeto `PrintedOutputOptionsSpec`.
 
 1. Imprima o fluxo de impressão em um arquivo.
 
-   Imprima em um arquivo chamando o `OutputServiceService` do objeto `generatePrintedOutput` e transmitindo os seguintes valores:
+   Imprima em um arquivo chamando o método `generatePrintedOutput` do objeto `OutputServiceService` e passando os seguintes valores:
 
-   * A `PrintFormat` valor de enumeração que especifica o formato de fluxo de impressão a ser criado. Por exemplo, para criar um fluxo de impressão PostScript, passe `PrintFormat.PostScript`.
+   * Um valor de enumeração `PrintFormat` que especifica o formato de fluxo de impressão a ser criado. Por exemplo, para criar um fluxo de impressão PostScript, passe `PrintFormat.PostScript`.
    * Um valor de cadeia de caracteres que especifica o nome do design do formulário.
    * Um valor de string que especifica o local dos arquivos de materiais relacionados, como arquivos de imagem.
-   * Um valor de cadeia de caracteres que especifica o local do arquivo XDC a ser usado (você pode passar `null` se você especificou o arquivo XDC a ser usado usando o `PrintedOutputOptionsSpec` objeto).
-   * A variável `PrintedOutputOptionsSpec` objeto que contém as opções de tempo de execução de impressão necessárias para imprimir em um arquivo.
-   * A variável `BLOB` objeto que contém a fonte de dados XML que contém dados de formulário.
-   * A `BLOB` objeto que é preenchido pelo `generatePDFOutput` método. A variável `generatePDFOutput` O método preenche esse objeto com metadados gerados que descrevem o documento. (Este valor de parâmetro é necessário somente para a invocação do serviço Web.)
-   * A `BLOB` objeto que é preenchido pelo `generatePDFOutput` método. A variável `generatePDFOutput` O método preenche este objeto com os dados do resultado. (Este valor de parâmetro é necessário somente para a invocação do serviço Web.)
-   * Um `OutputResult` objeto que contém os resultados da operação. (Este valor de parâmetro é necessário somente para a invocação do serviço Web.)
+   * Um valor de cadeia de caracteres que especifica o local do arquivo XDC a ser usado (você pode passar `null`, se tiver especificado o arquivo XDC a ser usado, usando o objeto `PrintedOutputOptionsSpec`).
+   * O objeto `PrintedOutputOptionsSpec` que contém as opções de tempo de execução de impressão necessárias para imprimir em um arquivo.
+   * O objeto `BLOB` que contém a fonte de dados XML que contém dados de formulário.
+   * Um objeto `BLOB` que é preenchido pelo método `generatePDFOutput`. O método `generatePDFOutput` preenche este objeto com metadados gerados que descrevem o documento. (Este valor de parâmetro é necessário somente para a invocação do serviço Web.)
+   * Um objeto `BLOB` que é preenchido pelo método `generatePDFOutput`. O método `generatePDFOutput` preenche este objeto com os dados do resultado. (Este valor de parâmetro é necessário somente para a invocação do serviço Web.)
+   * Um objeto `OutputResult` que contém os resultados da operação. (Este valor de parâmetro é necessário somente para a invocação do serviço Web.)
 
 1. Recuperar os resultados da operação.
 
-   * Criar um `System.IO.FileStream` chamando seu construtor e transmitindo um valor de string que representa um local de arquivo XML que contém dados de resultado. Certifique-se de que a extensão do arquivo seja XML.
-   * Crie uma matriz de bytes que armazene o conteúdo de dados do `BLOB` objeto que foi preenchido com dados de resultado pelo `OutputServiceService` do objeto `generatePDFOutput` (o oitavo parâmetro). Preencha a matriz de bytes obtendo o valor de `BLOB` do objeto `MTOM` membro de dados.
-   * Criar um `System.IO.BinaryWriter` objeto chamando seu construtor e transmitindo o `System.IO.FileStream` objeto.
-   * Grave o conteúdo da matriz de bytes no arquivo XML chamando o `System.IO.BinaryWriter` do objeto `Write` e transmitindo a matriz de bytes.
+   * Crie um objeto `System.IO.FileStream` chamando seu construtor e transmitindo um valor de cadeia de caracteres que representa um local de arquivo XML que contém dados de resultado. Certifique-se de que a extensão do arquivo seja XML.
+   * Crie uma matriz de bytes que armazene o conteúdo de dados do objeto `BLOB` que foi preenchido com dados de resultado pelo método `generatePDFOutput` do objeto `OutputServiceService` (o oitavo parâmetro). Popular a matriz de bytes obtendo o valor do membro de dados `MTOM` do objeto `BLOB`.
+   * Crie um objeto `System.IO.BinaryWriter` invocando seu construtor e transmitindo o objeto `System.IO.FileStream`.
+   * Grave o conteúdo da matriz de bytes no arquivo XML invocando o método `Write` do objeto `System.IO.BinaryWriter` e transmitindo a matriz de bytes.
 
 **Consulte também**
 
@@ -1349,7 +1349,7 @@ Imprima em um arquivo usando a API de saída (serviço da Web):
 
 ## Enviando fluxos de impressão para impressoras {#sending-print-streams-to-printers}
 
-Você pode usar o Serviço de saída para enviar fluxos de impressão, como PostScript, PCL (Printer Control Language) ou os seguintes formatos de rótulo, para impressoras de rede:
+Você pode usar o serviço de Saída para enviar fluxos de impressão, como PostScript, PCL (Printer Control Language, Linguagem de Controle de Impressora) ou os seguintes formatos de etiqueta para impressoras de rede:
 
 * Zebra - ZPL
 * Intermec - IPL
@@ -1364,7 +1364,7 @@ Usando o Serviço de saída, você pode mesclar dados XML com um design de formu
 
 >[!NOTE]
 >
->Para obter mais informações sobre o Serviço de saída, consulte [Referência de serviços para o AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Para obter mais informações sobre o Serviço de saída, consulte [Referência de serviços para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Resumo das etapas {#summary_of_steps-6}
 
@@ -1391,11 +1391,11 @@ Os seguintes arquivos JAR devem ser adicionados ao caminho de classe do projeto:
 
 se o AEM Forms for disponibilizado em um servidor de aplicativos J2EE compatível que não seja JBoss, você deverá substituir os arquivos adobe-utilities.jar e jbossall-client.jar por arquivos JAR específicos para o servidor de aplicativos J2EE no qual o AEM Forms é disponibilizado.
 
-**Criar um objeto do Cliente de saída**
+**Criar um objeto de Cliente de Saída**
 
-Antes de executar programaticamente uma operação do Serviço de saída, crie um objeto cliente do Serviço de saída. Se estiver usando a API Java, crie uma `OutputClient` objeto. Se você estiver usando a API de serviço Web de saída, crie uma `OutputServiceClient` objeto.
+Antes de executar programaticamente uma operação do Serviço de saída, crie um objeto cliente do Serviço de saída. Se você estiver usando a API Java, crie um objeto `OutputClient`. Se você estiver usando a API de Serviço Web de Saída, crie um objeto `OutputServiceClient`.
 
-**Fazer referência a uma fonte de dados XML**
+**Referenciar uma fonte de dados XML**
 
 Para imprimir um documento que contenha dados, você deve fazer referência a uma fonte de dados XML que contenha elementos XML para cada campo de formulário que você deseja preencher com dados. O nome do elemento XML deve corresponder ao nome do campo. Um elemento XML será ignorado se não corresponder a um campo de formulário ou se o nome do elemento XML não corresponder ao nome do campo. Não é necessário corresponder à ordem em que os elementos XML são exibidos se todos os elementos XML forem especificados.
 
@@ -1404,23 +1404,23 @@ Para imprimir um documento que contenha dados, você deve fazer referência a um
 É possível definir as opções de tempo de execução ao enviar um fluxo de impressão para uma impressora, incluindo as seguintes opções:
 
 * **Cópias**: especifica o número de cópias a serem enviadas para a impressora. O valor padrão é 1.
-* **Grampear**: uma opção XCI é definida quando um grampeador é usado. Esta opção pode ser especificada no modelo de configuração pelo elemento de grampo e é usada somente para impressoras PS e PCL.
+* **Grampeamento**: uma opção XCI é definida quando um grampeador é usado. Esta opção pode ser especificada no modelo de configuração pelo elemento de grampo e é usada somente para impressoras PS e PCL.
 * **OutputJog**: uma opção XCI é definida quando as páginas de saída devem ser ajustadas (deslocadas fisicamente na bandeja de saída). Esta opção é somente para impressoras PS e PCL.
-* **OutputBin**: valor XCI usado para permitir que o driver de impressão selecione o compartimento de saída apropriado.
+* **OutputBin**: valor XCI usado para habilitar o driver de impressão para selecionar o compartimento de saída apropriado.
 
 >[!NOTE]
 >
->Para obter informações sobre todas as opções de tempo de execução que podem ser definidas, consulte `PrintedOutputOptionsSpec` referência de classe.
+>Para obter informações sobre todas as opções de tempo de execução que você pode definir, consulte a referência de classe `PrintedOutputOptionsSpec`.
 
-**Recuperar um documento para imprimir**
+**Recuperar um documento para impressão**
 
-Recupere um fluxo de impressão para enviar a uma impressora. Por exemplo, é possível recuperar um arquivo PostScript e enviá-lo para uma impressora.
+Recupere um fluxo de impressão para enviar a uma impressora. Por exemplo, você pode recuperar um arquivo PostScript e enviá-lo para uma impressora.
 
 Você pode optar por enviar um arquivo de PDF se a impressora suportar PDF. Entretanto, um problema ao enviar um documento de PDF para uma impressora é que cada fabricante de impressora tem uma implementação diferente do interpretador de PDF. Ou seja, alguns fabricantes de impressão usam a interpretação Adobe PDF, mas isso depende da impressora. Outras impressoras têm seu próprio interpretador PDF. Como resultado, os resultados da impressão podem variar.
 
 Outra limitação do envio de um documento PDF para uma impressora é que ele apenas imprime; ele não pode acessar duplex, seleção de bandeja de papel e grampeamento, exceto pelas configurações da impressora.
 
-Para recuperar um documento para impressão, use o `generatePrintedOutput` método. A tabela a seguir especifica os tipos de conteúdo definidos para um determinado fluxo de impressão ao usar o `generatePrintedOutput` método.
+Para recuperar um documento para impressão, use o método `generatePrintedOutput`. A tabela a seguir especifica os tipos de conteúdo definidos para um determinado fluxo de impressão ao usar o método `generatePrintedOutput`.
 
 <table>
  <thead>
@@ -1452,7 +1452,7 @@ Para recuperar um documento para impressão, use o `generatePrintedOutput` méto
   </tr>
   <tr>
    <td><p>GenericPSLevel3 </p></td>
-   <td><p>Cria um fluxo de saída PostScript genérico de nível 3.</p></td>
+   <td><p>Cria um fluxo de saída genérico do PostScript nível 3.</p></td>
   </tr>
   <tr>
    <td><p>IPL </p></td>
@@ -1472,7 +1472,7 @@ Para recuperar um documento para impressão, use o `generatePrintedOutput` méto
   </tr>
   <tr>
    <td><p>PostScript </p></td>
-   <td><p>Cria um fluxo de saída PostScript genérico de nível 2.</p></td>
+   <td><p>Cria um fluxo de saída genérico do PostScript nível 2.</p></td>
   </tr>
   <tr>
    <td><p>TPCL </p></td>
@@ -1499,7 +1499,7 @@ Para recuperar um documento para impressão, use o `generatePrintedOutput` méto
 
 >[!NOTE]
 >
->Também é possível enviar um fluxo de impressão para uma impressora usando o `generatePrintedOutput2` método. No entanto, os inícios rápidos associados à seção Envio de fluxos de impressão para impressoras usam o `generatePrintedOutput` método.
+>Você também pode enviar um fluxo de impressão para uma impressora usando o método `generatePrintedOutput2`. No entanto, os inícios rápidos associados à seção Envio de Fluxos de Impressão para Impressoras usam o método `generatePrintedOutput`.
 
 **Enviar o fluxo de impressão para uma impressora de rede**
 
@@ -1521,49 +1521,49 @@ Envie um fluxo de impressão para uma impressora de rede usando a API de saída 
 
 1. Criar um objeto do Cliente de saída
 
-   * Criar um `ServiceClientFactory` objeto que contém propriedades de conexão.
-   * Criar um `OutputClient` usando seu construtor e transmitindo o `ServiceClientFactory` objeto.
+   * Crie um objeto `ServiceClientFactory` que contenha propriedades de conexão.
+   * Crie um objeto `OutputClient` usando seu construtor e transmitindo o objeto `ServiceClientFactory`.
 
 1. Fazer referência a uma fonte de dados XML
 
-   * Criar um `java.io.FileInputStream` objeto que representa a fonte de dados XML usada para preencher o documento usando seu construtor e transmitindo um valor de cadeia de caracteres que especifica o local do arquivo XML.
-   * Criar um `com.adobe.idp.Document` usando seu construtor e transmitindo o `java.io.FileInputStream` objeto.
+   * Crie um objeto `java.io.FileInputStream` que represente a fonte de dados XML usada para preencher o documento usando seu construtor e transmitindo um valor de cadeia de caracteres que especifique o local do arquivo XML.
+   * Crie um objeto `com.adobe.idp.Document` usando seu construtor e transmitindo o objeto `java.io.FileInputStream`.
 
 1. Definir opções de tempo de execução de impressão
 
-   Criar um `PrintedOutputOptionsSpec` objeto que representa as opções de tempo de execução de impressão. Por exemplo, você pode especificar o número de cópias a serem impressas chamando o `PrintedOutputOptionsSpec` do objeto `setCopies` método.
+   Crie um objeto `PrintedOutputOptionsSpec` que represente opções de tempo de execução de impressão. Por exemplo, você pode especificar o número de cópias a serem impressas chamando o método `setCopies` do objeto `PrintedOutputOptionsSpec`.
 
    >[!NOTE]
    >
-   >Não é possível definir o valor de paginação usando o `PrintedOutputOptionsSpec` do objeto `setPagination` se estiver gerando um fluxo de impressão ZPL. Da mesma forma, não é possível definir as seguintes opções para um fluxo de impressão ZPL: OutputJog, PageOffset e Staple. A variável `setPagination` O método não é válido para geração PostScript. É válido apenas para a geração PCL.
+   >Você não pode definir o valor de paginação usando o método `setPagination` do objeto `PrintedOutputOptionsSpec` se estiver gerando um fluxo de impressão ZPL. Da mesma forma, não é possível definir as seguintes opções para um fluxo de impressão ZPL: OutputJog, PageOffset e Staple. O método `setPagination` não é válido para geração PostScript. É válido apenas para a geração PCL.
 
 1. Recuperar um documento para imprimir
 
-   * Recupere um documento para imprimir chamando o `OutputClient` do objeto `generatePrintedOutput` e transmitindo os seguintes valores:
+   * Recupere um documento para impressão invocando o método `generatePrintedOutput` do objeto `OutputClient` e passando os seguintes valores:
 
-      * A `PrintFormat` valor de enumeração que especifica o fluxo de impressão. Por exemplo, para criar um fluxo de impressão PostScript, passe `PrintFormat.PostScript`.
+      * Um valor de enumeração `PrintFormat` que especifica o fluxo de impressão. Por exemplo, para criar um fluxo de impressão PostScript, passe `PrintFormat.PostScript`.
       * Um valor de cadeia de caracteres que especifica o nome do design do formulário.
       * Um valor de string que especifica o local dos arquivos de materiais relacionados, como arquivos de imagem.
       * Um valor de cadeia de caracteres que especifica o local do arquivo XDC a ser usado.
-      * A variável `PrintedOutputOptionsSpec` objeto que contém as opções de tempo de execução necessárias para imprimir em um arquivo.
-      * A variável `com.adobe.idp.Document` objeto que representa a fonte de dados XML que contém dados de formulário a serem mesclados com o design do formulário.
+      * O objeto `PrintedOutputOptionsSpec` que contém as opções de tempo de execução necessárias para imprimir em um arquivo.
+      * O objeto `com.adobe.idp.Document` que representa a fonte de dados XML que contém dados de formulário a serem mesclados com o design do formulário.
 
-     Este método retorna um valor de `OutputResult` objeto que contém os resultados da operação.
+     Este método retorna um objeto `OutputResult` que contém os resultados da operação.
 
-   * Criar um `com.adobe.idp.Document` para enviar à impressora invocando o `OutputResult` do objeto `getGeneratedDoc` método. Este método retorna um valor de `com.adobe.idp.Document` objeto.
+   * Crie um objeto `com.adobe.idp.Document` para enviar à impressora invocando o método `getGeneratedDoc` do objeto `OutputResult`. Este método retorna um objeto `com.adobe.idp.Document`.
 
 1. Enviar o fluxo de impressão para uma impressora de rede
 
-   Envie o fluxo de impressão para uma impressora de rede chamando o `OutputClient` do objeto `sendToPrinter` e transmitindo os seguintes valores:
+   Envie o fluxo de impressão para uma impressora de rede, chamando o método `sendToPrinter` do objeto `OutputClient` e transmitindo os seguintes valores:
 
-   * A `com.adobe.idp.Document` objeto que representa o fluxo de impressão a ser enviado para a impressora.
-   * A `PrinterProtocol` valor de enumeração que especifica o protocolo de impressora a ser usado. Por exemplo, para especificar o protocolo SharedPrinter, passe `PrinterProtocol.SharedPrinter`.
+   * Um objeto `com.adobe.idp.Document` que representa o fluxo de impressão a ser enviado para a impressora.
+   * Um valor de enumeração `PrinterProtocol` que especifica o protocolo de impressora a ser usado. Por exemplo, para especificar o protocolo SharedPrinter, passe `PrinterProtocol.SharedPrinter`.
    * Um valor de string que especifica o nome do servidor de impressão. Por exemplo, supondo que o nome do servidor de impressão seja PrintServer1, passe `\\\PrintSever1`.
    * Um valor de cadeia de caracteres que especifica o nome da impressora. Por exemplo, supondo que o nome da impressora seja Printer1, passe `\\\PrintSever1\Printer1`.
 
    >[!NOTE]
    >
-   >A variável `sendToPrinter` O método foi adicionado à API do AEM Forms na versão 8.2.1.
+   >O método `sendToPrinter` foi adicionado à API do AEM Forms na versão 8.2.1.
 
 ### Enviar um fluxo de impressão para uma impressora usando a API do serviço Web {#send-a-print-stream-to-a-printer-using-the-web-service-api}
 
@@ -1575,66 +1575,66 @@ Envie um fluxo de impressão para uma impressora de rede usando a API de saída 
 
    >[!NOTE]
    >
-   >Substituir `localhost` com o endereço IP do servidor que hospeda o AEM Forms.
+   >Substitua `localhost` pelo endereço IP do servidor que hospeda o AEM Forms.
 
 1. Crie um objeto Cliente de saída.
 
-   * Criar um `OutputServiceClient` usando seu construtor padrão.
-   * Criar um `OutputServiceClient.Endpoint.Address` usando o `System.ServiceModel.EndpointAddress` construtor. Transmita um valor de string que especifique o WSDL para o serviço AEM Forms (por exemplo, `http://localhost:8080/soap/services/OutputService?blob=mtom`.) Não é necessário usar a variável `lc_version` atributo. Esse atributo é usado quando você cria uma referência de serviço. No entanto, especifique `?blob=mtom` para usar MTOM.
-   * Criar um `System.ServiceModel.BasicHttpBinding` obtendo o valor do `OutputServiceClient.Endpoint.Binding` campo. Converter o valor de retorno em `BasicHttpBinding`.
-   * Defina o `System.ServiceModel.BasicHttpBinding` do objeto `MessageEncoding` campo para `WSMessageEncoding.Mtom`. Esse valor garante que a MTOM seja usada.
+   * Crie um objeto `OutputServiceClient` usando seu construtor padrão.
+   * Crie um objeto `OutputServiceClient.Endpoint.Address` usando o construtor `System.ServiceModel.EndpointAddress`. Transmita um valor de cadeia de caracteres que especifique o WSDL para o serviço AEM Forms (por exemplo, `http://localhost:8080/soap/services/OutputService?blob=mtom`.) Você não precisa usar o atributo `lc_version`. Esse atributo é usado quando você cria uma referência de serviço. No entanto, especifique `?blob=mtom` para usar MTOM.
+   * Crie um objeto `System.ServiceModel.BasicHttpBinding` obtendo o valor do campo `OutputServiceClient.Endpoint.Binding`. Converter o valor de retorno em `BasicHttpBinding`.
+   * Defina o campo `MessageEncoding` do objeto `System.ServiceModel.BasicHttpBinding` como `WSMessageEncoding.Mtom`. Esse valor garante que a MTOM seja usada.
    * Ative a autenticação HTTP básica executando as seguintes tarefas:
 
-      * Atribuir o nome de usuário dos formulários AEM ao campo `OutputServiceClient.ClientCredentials.UserName.UserName`.
+      * Atribua o nome de usuário dos formulários AEM ao campo `OutputServiceClient.ClientCredentials.UserName.UserName`.
       * Atribua o valor de senha correspondente ao campo `OutputServiceClient.ClientCredentials.UserName.Password`.
-      * Atribuir o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Atribuir o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
+      * Atribua o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * Atribua o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Fazer referência a uma fonte de dados XML.
 
-   * Criar um `BLOB` usando seu construtor. A variável `BLOB` objeto é usado para armazenar dados de formulário.
-   * Criar um `System.IO.FileStream` invocando seu construtor. Transmita um valor de cadeia de caracteres que especifique o local do arquivo XML que contém dados de formulário.
-   * Crie uma matriz de bytes que armazene o conteúdo da variável `System.IO.FileStream` objeto. Determine o comprimento da matriz de bytes obtendo o `System.IO.FileStream` do objeto `Length` propriedade.
-   * Preencha a matriz de bytes com dados de fluxo invocando o `System.IO.FileStream` do objeto `Read` e transmitindo a matriz de bytes, a posição inicial e o comprimento do fluxo para leitura.
-   * Preencha o `BLOB` atribuindo seu `MTOM` com o conteúdo da matriz de bytes.
+   * Crie um objeto `BLOB` usando seu construtor. O objeto `BLOB` é usado para armazenar dados de formulário.
+   * Crie um objeto `System.IO.FileStream` invocando seu construtor. Transmita um valor de cadeia de caracteres que especifique o local do arquivo XML que contém dados de formulário.
+   * Crie uma matriz de bytes que armazene o conteúdo do objeto `System.IO.FileStream`. Determine o comprimento da matriz de bytes obtendo a propriedade `Length` do objeto `System.IO.FileStream`.
+   * Preencha a matriz de bytes com dados de fluxo invocando o método `Read` do objeto `System.IO.FileStream` e transmitindo a matriz de bytes, a posição inicial e o comprimento do fluxo para leitura.
+   * Preencha o objeto `BLOB` atribuindo seu campo `MTOM` com o conteúdo da matriz de bytes.
 
 1. Definir opções de tempo de execução de impressão.
 
-   Criar um `PrintedOutputOptionsSpec` usando seu construtor. Por exemplo, você pode especificar o número de cópias a serem impressas atribuindo um valor inteiro que represente o número de cópias à `PrintedOutputOptionsSpec` do objeto `copies` membro de dados.
+   Crie um objeto `PrintedOutputOptionsSpec` usando seu construtor. Por exemplo, você pode especificar o número de cópias a serem impressas atribuindo um valor inteiro que representa o número de cópias para o membro de dados `copies` do objeto `PrintedOutputOptionsSpec`.
 
    >[!NOTE]
    >
-   >Não é possível definir o valor de paginação usando o `PrintedOutputOptionsSpec` do objeto `pagination` membro de dados se você estiver gerando um fluxo de impressão ZPL. Da mesma forma, não é possível definir as seguintes opções para um fluxo de impressão ZPL: OutputJog, PageOffset e Staple. A variável `pagination` membro de dados inválido para geração PostScript. É válido apenas para a geração PCL.
+   >Você não pode definir o valor de paginação usando o membro de dados `pagination` do objeto `PrintedOutputOptionsSpec` se estiver gerando um fluxo de impressão ZPL. Da mesma forma, não é possível definir as seguintes opções para um fluxo de impressão ZPL: OutputJog, PageOffset e Staple. O membro de dados `pagination` não é válido para geração PostScript. É válido apenas para a geração PCL.
 
 1. Recupere um documento para imprimir.
 
-   * Recupere um documento para imprimir chamando o `OutputServiceService` do objeto `generatePrintedOutput` e transmitindo os seguintes valores:
+   * Recupere um documento para impressão invocando o método `generatePrintedOutput` do objeto `OutputServiceService` e passando os seguintes valores:
 
-      * A `PrintFormat` valor de enumeração que especifica o fluxo de impressão. Por exemplo, para criar um fluxo de impressão PostScript, passe `PrintFormat.PostScript`.
+      * Um valor de enumeração `PrintFormat` que especifica o fluxo de impressão. Por exemplo, para criar um fluxo de impressão PostScript, passe `PrintFormat.PostScript`.
       * Um valor de cadeia de caracteres que especifica o nome do design do formulário.
       * Um valor de string que especifica o local dos arquivos de materiais relacionados, como arquivos de imagem.
       * Um valor de cadeia de caracteres que especifica o local do arquivo XDC a ser usado.
-      * A variável `PrintedOutputOptionsSpec` objeto que contém opções de tempo de execução de impressão que são usadas ao enviar um fluxo de impressão para uma impressora de rede.
-      * A variável `BLOB` objeto que contém a fonte de dados XML que contém dados de formulário.
-      * A `BLOB` objeto que é preenchido pelo `generatePrintedOutput` método. A variável `generatePrintedOutput` O método preenche esse objeto com metadados gerados que descrevem o documento. (Este valor de parâmetro é necessário somente para a invocação do serviço Web.)
-      * A `BLOB` objeto que é preenchido pelo `generatePrintedOutput` método. A variável `generatePrintedOutput` O método preenche este objeto com os dados do resultado. (Este valor de parâmetro é necessário somente para a invocação do serviço Web.)
-      * Um `OutputResult` objeto que contém os resultados da operação. (Este valor de parâmetro é necessário somente para a invocação do serviço Web.)
+      * O objeto `PrintedOutputOptionsSpec` que contém as opções de tempo de execução de impressão usadas ao enviar um fluxo de impressão para uma impressora de rede.
+      * O objeto `BLOB` que contém a fonte de dados XML que contém dados de formulário.
+      * Um objeto `BLOB` que é preenchido pelo método `generatePrintedOutput`. O método `generatePrintedOutput` preenche este objeto com metadados gerados que descrevem o documento. (Este valor de parâmetro é necessário somente para a invocação do serviço Web.)
+      * Um objeto `BLOB` que é preenchido pelo método `generatePrintedOutput`. O método `generatePrintedOutput` preenche este objeto com os dados do resultado. (Este valor de parâmetro é necessário somente para a invocação do serviço Web.)
+      * Um objeto `OutputResult` que contém os resultados da operação. (Este valor de parâmetro é necessário somente para a invocação do serviço Web.)
 
-   * Criar um `BLOB` para enviar à impressora obtendo o valor do parâmetro `OutputResult` do objeto `generatedDoc` método. Este método retorna um valor de `BLOB` objeto que contém dados PostScript retornados pelo `generatePrintedOutput` método.
+   * Crie um objeto `BLOB` para enviar à impressora obtendo o valor do método `generatedDoc` do objeto `OutputResult`. Este método retorna um objeto `BLOB` que contém dados PostScript retornados pelo método `generatePrintedOutput`.
 
 1. Envie o fluxo de impressão para uma impressora de rede.
 
-   Envie o fluxo de impressão para uma impressora de rede chamando o `OutputClient` do objeto `sendToPrinter` e transmitindo os seguintes valores:
+   Envie o fluxo de impressão para uma impressora de rede, chamando o método `sendToPrinter` do objeto `OutputClient` e transmitindo os seguintes valores:
 
-   * A `BLOB` objeto que representa o fluxo de impressão a ser enviado para a impressora.
-   * A `PrinterProtocol` valor de enumeração que especifica o protocolo de impressora a ser usado. Por exemplo, para especificar o protocolo SharedPrinter, passe `PrinterProtocol.SharedPrinter`.
-   * A `bool` valor que especifica se o valor do parâmetro anterior deve ser usado. Transmita o valor `true`. (Este valor de parâmetro é necessário somente para a invocação do serviço Web.)
+   * Um objeto `BLOB` que representa o fluxo de impressão a ser enviado para a impressora.
+   * Um valor de enumeração `PrinterProtocol` que especifica o protocolo de impressora a ser usado. Por exemplo, para especificar o protocolo SharedPrinter, passe `PrinterProtocol.SharedPrinter`.
+   * Um valor `bool` que especifica se o valor do parâmetro anterior deve ser usado. Passe o valor `true`. (Este valor de parâmetro é necessário somente para a invocação do serviço Web.)
    * Um valor de string que especifica o nome do servidor de impressão. Por exemplo, supondo que o nome do servidor de impressão seja PrintServer1, passe `\\\PrintSever1`.
    * Um valor de cadeia de caracteres que especifica o nome da impressora. Por exemplo, supondo que o nome da impressora seja Printer1, passe `\\\PrintSever1\Printer1`.
 
    >[!NOTE]
    >
-   >A variável `sendToPrinter` O método foi adicionado à API do AEM Forms na versão 8.2.1.
+   >O método `sendToPrinter` foi adicionado à API do AEM Forms na versão 8.2.1.
 
 ## Criação de vários arquivos de saída {#creating-multiple-output-files}
 
@@ -1703,7 +1703,7 @@ Observe que o elemento XML que inicia e termina cada registro de dados é `LoanR
 
 >[!NOTE]
 >
->Para obter mais informações sobre o Serviço de saída, consulte [Referência de serviços para o AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Para obter mais informações sobre o Serviço de saída, consulte [Referência de serviços para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Resumo das etapas {#summary_of_steps-7}
 
@@ -1731,13 +1731,13 @@ Os seguintes arquivos JAR devem ser adicionados ao caminho de classe do projeto:
 
 se o AEM Forms for disponibilizado em um servidor de aplicativos J2EE compatível que não seja JBoss, você deverá substituir os arquivos adobe-utilities.jar e jbossall-client.jar por arquivos JAR específicos para o servidor de aplicativos J2EE no qual o AEM Forms é disponibilizado.
 
-**Criar um objeto do Cliente de saída**
+**Criar um objeto de Cliente de Saída**
 
-Antes de executar programaticamente uma operação do Serviço de saída, você deve criar um objeto cliente do Serviço de saída. Se estiver usando a API Java, crie uma `OutputClient` objeto. Se você estiver usando a API de serviço Web de saída, crie uma `OutputServiceService` objeto.
+Antes de executar programaticamente uma operação do Serviço de saída, você deve criar um objeto cliente do Serviço de saída. Se você estiver usando a API Java, crie um objeto `OutputClient`. Se você estiver usando a API de Serviço Web de Saída, crie um objeto `OutputServiceService`.
 
-**Fazer referência a uma fonte de dados XML**
+**Referenciar uma fonte de dados XML**
 
-Faça referência a uma fonte de dados XML que contém vários registros. Um elemento XML deve ser usado para separar os registros de dados. Por exemplo, na fonte de dados XML de exemplo mostrada anteriormente nesta seção, o elemento XML que separa registros de dados é nomeado como `LoanRecord`.
+Faça referência a uma fonte de dados XML que contém vários registros. Um elemento XML deve ser usado para separar os registros de dados. Por exemplo, na fonte de dados XML de exemplo mostrada anteriormente nesta seção, o elemento XML que separa registros de dados é denominado `LoanRecord`.
 
 Um elemento XML deve existir para cada campo de formulário que você deseja preencher com dados. O nome do elemento XML deve corresponder ao nome do campo. Um elemento XML será ignorado se não corresponder a um campo de formulário ou se o nome do elemento XML não corresponder ao nome do campo. Não é necessário corresponder à ordem em que os elementos XML são exibidos se todos os elementos XML forem especificados.
 
@@ -1745,9 +1745,9 @@ Um elemento XML deve existir para cada campo de formulário que você deseja pre
 
 Defina as seguintes opções de tempo de execução para que o serviço de Saída crie com êxito vários arquivos com base em uma fonte de dados XML:
 
-* **Muitos arquivos**: especifica se o serviço de saída cria um único documento ou vários documentos. Você pode especificar verdadeiro ou falso. Para criar um documento separado para cada registro de dados na fonte de dados XML, especifique verdadeiro.
-* **URI do arquivo**: especifica o local dos arquivos gerados pelo serviço de Saída. Por exemplo, suponha que você especifique C:\\Adobe\forms\Loan.pdf. Nessa situação, o serviço de saída cria um arquivo chamado Loan.pdf e coloca o arquivo na pasta C:\\Adobe\forms. Quando existem vários arquivos, os nomes dos arquivos são Loan0001.pdf, Loan0002.pdf, Loan0003.pdf e assim por diante. Se você especificar um local de arquivo, os arquivos serão colocados no servidor e não no computador cliente.
-* **Nome do registro**: especifica o nome do elemento XML na fonte de dados que separa os registros de dados. Por exemplo, na fonte de dados XML de exemplo mostrada anteriormente nesta seção, o elemento XML que separa os registros de dados é chamado de `LoanRecord`. (Em vez de definir a opção de tempo de execução Nome do registro, você pode definir o Nível do registro atribuindo a ele um valor numérico que indica o nível do elemento que contém registros de dados. No entanto, você pode definir somente o Nome do registro ou o Nível do registro. Não é possível definir ambos os valores.)
+* **Muitos Arquivos**: especifica se o serviço de Saída cria um único documento ou vários documentos. Você pode especificar verdadeiro ou falso. Para criar um documento separado para cada registro de dados na fonte de dados XML, especifique verdadeiro.
+* **URI do Arquivo**: especifica o local dos arquivos gerados pelo serviço de Saída. Por exemplo, suponha que você especifique C:\\Adobe\forms\Loan.pdf. Nessa situação, o serviço de saída cria um arquivo chamado Loan.pdf e coloca o arquivo na pasta C:\\Adobe\forms. Quando existem vários arquivos, os nomes dos arquivos são Loan0001.pdf, Loan0002.pdf, Loan0003.pdf e assim por diante. Se você especificar um local de arquivo, os arquivos serão colocados no servidor e não no computador cliente.
+* **Nome do Registro**: especifica o nome do elemento XML na fonte de dados que separa os registros de dados. Por exemplo, na fonte de dados XML de exemplo mostrada anteriormente nesta seção, o elemento XML que separa registros de dados é chamado de `LoanRecord`. (Em vez de definir a opção de tempo de execução Nome do registro, você pode definir o Nível do registro atribuindo a ele um valor numérico que indica o nível do elemento que contém registros de dados. No entanto, você pode definir somente o Nome do registro ou o Nível do registro. Não é possível definir ambos os valores.)
 
 **Definir opções de tempo de execução de renderização**
 
@@ -1755,11 +1755,11 @@ Defina as seguintes opções de tempo de execução para que o serviço de Saíd
 
 Quando o Serviço de saída processa registros em lote, ele lê dados que contêm vários registros de maneira incremental. Ou seja, o Serviço de saída lê os dados na memória e libera os dados conforme o lote de registros é processado. O serviço de saída carrega dados de maneira incremental quando uma das duas opções de tempo de execução é definida. Se você definir a opção de tempo de execução Nome do registro, o serviço de Saída lerá os dados de maneira incremental. Da mesma forma, se você definir a opção de tempo de execução Record Level como 2 ou superior, o serviço Output lerá os dados de maneira incremental.
 
-Você pode controlar se o Serviço de saída executa carregamento incremental usando o `PDFOutputOptionsSpec` ou o `PrintedOutputOptionSpec` do objeto `setLazyLoading` método. Você pode passar o valor `false` para este método que desativa o carregamento incremental.
+Você pode controlar se o Serviço de saída executa o carregamento incremental usando o método `PDFOutputOptionsSpec` ou `setLazyLoading` do objeto `PrintedOutputOptionSpec`. Você pode passar o valor `false` para esse método que desativa o carregamento incremental.
 
-**Gerar vários arquivos PDF**
+**Gerar vários arquivos de PDF**
 
-Depois de fazer referência a uma fonte de dados XML válida que contém vários registros de dados e definir opções de tempo de execução, você pode chamar o Serviço de saída, o que faz com que ele gere vários arquivos. Ao gerar vários registros, a variável `OutputResult` do objeto `getGeneratedDoc` o método retorna `null`.
+Depois de fazer referência a uma fonte de dados XML válida que contém vários registros de dados e definir opções de tempo de execução, você pode chamar o Serviço de saída, o que faz com que ele gere vários arquivos. Ao gerar vários registros, o método `getGeneratedDoc` do objeto `OutputResult` retorna `null`.
 
 **Recuperar os resultados da operação**
 
@@ -1812,43 +1812,43 @@ Crie vários arquivos de PDF usando a API de saída (Java):
 
 1. Criar um objeto do Cliente de saída
 
-   * Criar um `ServiceClientFactory` objeto que contém propriedades de conexão.
-   * Criar um `OutputClient` usando seu construtor e transmitindo o `ServiceClientFactory` objeto.
+   * Crie um objeto `ServiceClientFactory` que contenha propriedades de conexão.
+   * Crie um objeto `OutputClient` usando seu construtor e transmitindo o objeto `ServiceClientFactory`.
 
 1. Fazer referência a uma fonte de dados XML
 
-   * Criar um `java.io.FileInputStream` objeto que representa a fonte de dados XML que contém vários registros usando seu construtor e transmitindo um valor de cadeia de caracteres que especifica o local do arquivo XML.
-   * Criar um `com.adobe.idp.Document` usando seu construtor e transmitindo o `java.io.FileInputStream` objeto.
+   * Crie um objeto `java.io.FileInputStream` que represente a fonte de dados XML que contém vários registros usando seu construtor e transmitindo um valor de cadeia de caracteres que especifique o local do arquivo XML.
+   * Crie um objeto `com.adobe.idp.Document` usando seu construtor e transmitindo o objeto `java.io.FileInputStream`.
 
 1. Definir opções de tempo de execução de PDF
 
-   * Criar um `PDFOutputOptionsSpec` usando seu construtor.
-   * Defina a opção Muitos arquivos chamando o botão `PDFOutputOptionsSpec` do objeto `setGenerateManyFiles` método. Por exemplo, passe o valor `true` para instruir o Serviço de saída a criar um arquivo de PDF separado para cada registro na fonte de dados XML. (Se você passar `false`, o Serviço de saída gera um único documento de PDF que contém todos os registros).
-   * Defina a opção File URI chamando o `PDFOutputOptionsSpec` do objeto `setFileUri` e transmitindo um valor de string que especifica o local dos arquivos gerados pelo serviço de Saída. A opção File URI é relativa ao servidor de aplicativos J2EE que hospeda o AEM Forms, não ao computador cliente.
-   * Defina a opção Nome do registro chamando o `OutputOptionsSpec` do objeto `setRecordName` e transmitindo um valor de string que especifica o nome do elemento XML na fonte de dados que separa os registros de dados. (Por exemplo, considere a fonte de dados XML mostrada anteriormente nesta seção. O nome do elemento XML que separa registros de dados é LoanRecord).
+   * Crie um objeto `PDFOutputOptionsSpec` usando seu construtor.
+   * Defina a opção Muitos Arquivos invocando o método `setGenerateManyFiles` do objeto `PDFOutputOptionsSpec`. Por exemplo, passe o valor `true` para instruir o serviço de Saída a criar um arquivo de PDF separado para cada registro na fonte de dados XML. (Se você passar `false`, o Serviço de saída gerará um único documento PDF que conterá todos os registros).
+   * Defina a opção File URI invocando o método `setFileUri` do objeto `PDFOutputOptionsSpec` e transmitindo um valor de cadeia de caracteres que especifica o local dos arquivos gerados pelo serviço de Saída. A opção File URI é relativa ao servidor de aplicativos J2EE que hospeda o AEM Forms, não ao computador cliente.
+   * Defina a opção Nome do Registro invocando o método `setRecordName` do objeto `OutputOptionsSpec` e transmitindo um valor de cadeia de caracteres que especifica o nome do elemento XML na fonte de dados que separa os registros de dados. (Por exemplo, considere a fonte de dados XML mostrada anteriormente nesta seção. O nome do elemento XML que separa registros de dados é LoanRecord).
 
 1. Definir opções de tempo de execução de renderização
 
-   * Criar um `RenderOptionsSpec` usando seu construtor.
-   * Armazene em cache o design do formulário para melhorar o desempenho do Serviço de saída chamando o `RenderOptionsSpec` do objeto `setCacheEnabled` e a passagem de um `Boolean` valor de `true`.
+   * Crie um objeto `RenderOptionsSpec` usando seu construtor.
+   * Armazene em cache o design do formulário para melhorar o desempenho do Serviço de saída, chamando o `setCacheEnabled` do objeto `RenderOptionsSpec` e passando um valor `Boolean` de `true`.
 
 1. Gerar vários arquivos PDF
 
-   Gere vários arquivos de PDF chamando o `OutputClient` do objeto `generatePDFOutput` e transmitindo os seguintes valores:
+   Gere vários arquivos de PDF chamando o método `generatePDFOutput` do objeto `OutputClient` e transmitindo os seguintes valores:
 
-   * A `TransformationFormat` valor de enumeração. Para gerar um documento PDF, especifique `TransformationFormat.PDF`.
+   * Um valor de enumeração `TransformationFormat`. Para gerar um documento PDF, especifique `TransformationFormat.PDF`.
    * Um valor de cadeia de caracteres que especifica o nome do design do formulário.
    * Um valor de cadeia de caracteres que especifica a raiz do conteúdo onde o design do formulário está localizado.
-   * A `PDFOutputOptionsSpec` objeto que contém opções de tempo de execução de PDF.
-   * A `RenderOptionsSpec` objeto que contém opções de tempo de execução de renderização.
-   * A variável `com.adobe.idp.Document` objeto que contém a fonte de dados XML que contém os dados a serem mesclados com o design do formulário.
+   * Um objeto `PDFOutputOptionsSpec` que contém opções de tempo de execução de PDF.
+   * Um objeto `RenderOptionsSpec` que contém opções de tempo de execução de renderização.
+   * O objeto `com.adobe.idp.Document` que contém a fonte de dados XML que contém os dados a serem mesclados com o design do formulário.
 
-   A variável `generatePDFOutput` o método retorna um `OutputResult` objeto que contém os resultados da operação.
+   O método `generatePDFOutput` retorna um objeto `OutputResult` que contém os resultados da operação.
 
 1. Recuperar os resultados da operação
 
-   * Criar um `java.io.File` objeto que representa um arquivo XML que conterá os resultados do `generatePDFOutput` método. Verifique se a extensão do nome do arquivo é .xml.
-   * Chame o `com.adobe.idp.Document` do objeto `copyToFile` método para copiar o conteúdo do `com.adobe.idp.Document` ao arquivo (certifique-se de usar o `com.adobe.idp.Document` objeto que foi retornado pelo `applyUsageRights` método).
+   * Crie um objeto `java.io.File` que represente um arquivo XML que conterá os resultados do método `generatePDFOutput`. Verifique se a extensão do nome do arquivo é .xml.
+   * Invoque o método `copyToFile` do objeto `com.adobe.idp.Document` para copiar o conteúdo do objeto `com.adobe.idp.Document` para o arquivo (certifique-se de usar o objeto `com.adobe.idp.Document` retornado pelo método `applyUsageRights`).
 
 **Consulte também**
 
@@ -1870,62 +1870,62 @@ Crie vários arquivos de PDF usando a API de saída (serviço da Web):
 
    >[!NOTE]
    >
-   >Substituir `localhost` com o endereço IP do servidor que hospeda o AEM Forms.
+   >Substitua `localhost` pelo endereço IP do servidor que hospeda o AEM Forms.
 
 1. Crie um objeto Cliente de saída.
 
-   * Criar um `OutputServiceClient` usando seu construtor padrão.
-   * Criar um `OutputServiceClient.Endpoint.Address` usando o `System.ServiceModel.EndpointAddress` construtor. Transmita um valor de string que especifique o WSDL para o serviço AEM Forms (por exemplo, `http://localhost:8080/soap/services/OutputService?blob=mtom`.) Não é necessário usar a variável `lc_version` atributo. Esse atributo é usado quando você cria uma referência de serviço. No entanto, especifique `?blob=mtom` para usar MTOM.
-   * Criar um `System.ServiceModel.BasicHttpBinding` obtendo o valor do `OutputServiceClient.Endpoint.Binding` campo. Converter o valor de retorno em `BasicHttpBinding`.
-   * Defina o `System.ServiceModel.BasicHttpBinding` do objeto `MessageEncoding` campo para `WSMessageEncoding.Mtom`. Esse valor garante que a MTOM seja usada.
+   * Crie um objeto `OutputServiceClient` usando seu construtor padrão.
+   * Crie um objeto `OutputServiceClient.Endpoint.Address` usando o construtor `System.ServiceModel.EndpointAddress`. Transmita um valor de cadeia de caracteres que especifique o WSDL para o serviço AEM Forms (por exemplo, `http://localhost:8080/soap/services/OutputService?blob=mtom`.) Você não precisa usar o atributo `lc_version`. Esse atributo é usado quando você cria uma referência de serviço. No entanto, especifique `?blob=mtom` para usar MTOM.
+   * Crie um objeto `System.ServiceModel.BasicHttpBinding` obtendo o valor do campo `OutputServiceClient.Endpoint.Binding`. Converter o valor de retorno em `BasicHttpBinding`.
+   * Defina o campo `MessageEncoding` do objeto `System.ServiceModel.BasicHttpBinding` como `WSMessageEncoding.Mtom`. Esse valor garante que a MTOM seja usada.
    * Ative a autenticação HTTP básica executando as seguintes tarefas:
 
-      * Atribuir o nome de usuário dos formulários AEM ao campo `OutputServiceClient.ClientCredentials.UserName.UserName`.
+      * Atribua o nome de usuário dos formulários AEM ao campo `OutputServiceClient.ClientCredentials.UserName.UserName`.
       * Atribua o valor de senha correspondente ao campo `OutputServiceClient.ClientCredentials.UserName.Password`.
-      * Atribuir o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Atribuir o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
+      * Atribua o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * Atribua o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Fazer referência a uma fonte de dados XML.
 
-   * Criar um `BLOB` usando seu construtor. A variável `BLOB` O objeto é usado para armazenar dados de formulário que contêm vários registros.
-   * Criar um `System.IO.FileStream` invocando seu construtor. Transmita um valor de string que represente o local do arquivo XML que contém vários registros.
-   * Crie uma matriz de bytes que armazene o conteúdo da variável `System.IO.FileStream` objeto. Você pode determinar o tamanho da matriz de bytes obtendo o `System.IO.FileStream` do objeto `Length` propriedade.
-   * Preencha a matriz de bytes com dados de fluxo invocando o `System.IO.FileStream` do objeto `Read` e transmitindo a matriz de bytes, a posição inicial e o comprimento do fluxo para leitura.
-   * Preencha o `BLOB` atribuindo seu `MTOM` com o conteúdo da matriz de bytes.
+   * Crie um objeto `BLOB` usando seu construtor. O objeto `BLOB` é usado para armazenar dados de formulário que contêm vários registros.
+   * Crie um objeto `System.IO.FileStream` invocando seu construtor. Transmita um valor de string que represente o local do arquivo XML que contém vários registros.
+   * Crie uma matriz de bytes que armazene o conteúdo do objeto `System.IO.FileStream`. Você pode determinar o tamanho da matriz de bytes obtendo a propriedade `Length` do objeto `System.IO.FileStream`.
+   * Preencha a matriz de bytes com dados de fluxo invocando o método `Read` do objeto `System.IO.FileStream` e transmitindo a matriz de bytes, a posição inicial e o comprimento do fluxo para leitura.
+   * Preencha o objeto `BLOB` atribuindo seu campo `MTOM` com o conteúdo da matriz de bytes.
 
 1. Defina as opções de tempo de execução de PDF.
 
-   * Criar um `PDFOutputOptionsSpec` usando seu construtor.
-   * Defina a opção Muitos arquivos atribuindo um valor booleano à variável `OutputOptionsSpec` do objeto `generateManyFiles` membro de dados. Por exemplo, atribuir o valor `true` a esse membro de dados para instruir o Serviço de saída a criar um arquivo de PDF separado para cada registro na fonte de dados XML. (Se você atribuir `false` para esse membro de dados, o Serviço de saída gera um único PDF que contém todos os registros).
-   * Defina a opção de URI de arquivo atribuindo um valor de string que especifica o local do(s) arquivo(s) gerado(s) pelo serviço de saída para o `OutputOptionsSpec` do objeto `fileURI` membro de dados. A opção File URI é relativa ao servidor de aplicativos J2EE que hospeda o AEM Forms, não ao computador cliente.
-   * Defina a opção nome do registro atribuindo um valor de sequência de caracteres que especifique o nome do elemento XML na fonte de dados que separa os registros de dados do `OutputOptionsSpec` do objeto `recordName` membro de dados.
-   * Defina a opção copies atribuindo um valor inteiro que especifica o número de cópias que o serviço de Saída gera para o `OutputOptionsSpec` do objeto `copies` membro de dados.
+   * Crie um objeto `PDFOutputOptionsSpec` usando seu construtor.
+   * Defina a opção Muitos Arquivos atribuindo um valor booleano ao membro de dados `generateManyFiles` do objeto `OutputOptionsSpec`. Por exemplo, atribua o valor `true` a esse membro de dados para instruir o serviço de Saída a criar um arquivo de PDF separado para cada registro na fonte de dados XML. (Se você atribuir `false` a esse membro de dados, o Serviço de saída gerará um único PDF que contém todos os registros).
+   * Defina a opção de URI de arquivo atribuindo um valor de cadeia de caracteres que especifique o local do(s) arquivo(s) gerado(s) pelo serviço de Saída ao membro de dados `fileURI` do objeto `OutputOptionsSpec`. A opção File URI é relativa ao servidor de aplicativos J2EE que hospeda o AEM Forms, não ao computador cliente.
+   * Defina a opção de nome de registro atribuindo um valor de cadeia de caracteres que especifique o nome do elemento XML na fonte de dados que separa os registros de dados para o membro de dados `recordName` do objeto `OutputOptionsSpec`.
+   * Defina a opção copies atribuindo um valor inteiro que especifica o número de cópias que o serviço de Saída gera para o membro de dados `copies` do objeto `OutputOptionsSpec`.
 
 1. Definir opções de tempo de execução de renderização.
 
-   * Criar um `RenderOptionsSpec` usando seu construtor.
-   * Armazenar em cache o design do formulário para melhorar o desempenho do serviço de Saída atribuindo o valor `true` para o `RenderOptionsSpec` do objeto `cacheEnabled` membro de dados.
+   * Crie um objeto `RenderOptionsSpec` usando seu construtor.
+   * Armazene em cache o design do formulário para melhorar o desempenho do serviço de Saída atribuindo o valor `true` ao membro de dados `cacheEnabled` do objeto `RenderOptionsSpec`.
 
 1. Gere vários arquivos PDF.
 
-   Crie vários arquivos de PDF chamando o `OutputServiceService` do objeto `generatePDFOutput`e transmitindo os seguintes valores:
+   Crie vários arquivos de PDF chamando o método `generatePDFOutput` do objeto `OutputServiceService` e transmitindo os seguintes valores:
 
    * Um valor de enumeração TransformationFormat. Para gerar um documento PDF, especifique `TransformationFormat.PDF`.
    * Um valor de cadeia de caracteres que especifica o nome do design do formulário.
    * Um valor de cadeia de caracteres que especifica a raiz do conteúdo onde o design do formulário está localizado.
-   * A `PDFOutputOptionsSpec` objeto que contém opções de tempo de execução de PDF.
-   * A `RenderOptionsSpec` objeto que contém opções de tempo de execução de renderização.
-   * A variável `BLOB` objeto que contém a fonte de dados XML que contém os dados a serem mesclados com o design do formulário.
-   * A `BLOB` objeto que é preenchido pelo `generatePDFOutput` método. A variável `generatePDFOutput` O método preenche esse objeto com metadados gerados que descrevem o documento.
-   * A `BLOB` objeto que é preenchido pelo `generatePDFOutput` método. A variável `generatePDFOutput` O método preenche este objeto com os dados do resultado.
-   * Um `OutputResult` objeto que contém os resultados da operação.
+   * Um objeto `PDFOutputOptionsSpec` que contém opções de tempo de execução de PDF.
+   * Um objeto `RenderOptionsSpec` que contém opções de tempo de execução de renderização.
+   * O objeto `BLOB` que contém a fonte de dados XML que contém os dados a serem mesclados com o design do formulário.
+   * Um objeto `BLOB` que é preenchido pelo método `generatePDFOutput`. O método `generatePDFOutput` preenche este objeto com metadados gerados que descrevem o documento.
+   * Um objeto `BLOB` que é preenchido pelo método `generatePDFOutput`. O método `generatePDFOutput` preenche este objeto com os dados do resultado.
+   * Um objeto `OutputResult` que contém os resultados da operação.
 
 1. Recuperar os resultados da operação
 
-   * Criar um `System.IO.FileStream` chamando seu construtor e transmitindo um valor de string que representa um local de arquivo XML que contém dados de resultado. Verifique se a extensão do nome do arquivo é .xml.
-   * Crie uma matriz de bytes que armazene o conteúdo de dados do `BLOB` objeto que foi preenchido com dados de resultado pelo `OutputServiceService` do objeto `generatePDFOutput` (o oitavo parâmetro). Preencha a matriz de bytes obtendo o valor de `BLOB` do objeto `binaryData` membro de dados.
-   * Criar um `System.IO.BinaryWriter` objeto chamando seu construtor e transmitindo o `System.IO.FileStream` objeto.
-   * Grave o conteúdo da matriz de bytes no arquivo XML chamando o `System.IO.BinaryWriter` do objeto `Write` e transmitindo a matriz de bytes.
+   * Crie um objeto `System.IO.FileStream` chamando seu construtor e transmitindo um valor de cadeia de caracteres que representa um local de arquivo XML que contém dados de resultado. Verifique se a extensão do nome do arquivo é .xml.
+   * Crie uma matriz de bytes que armazene o conteúdo de dados do objeto `BLOB` que foi preenchido com dados de resultado pelo método `generatePDFOutput` do objeto `OutputServiceService` (o oitavo parâmetro). Popular a matriz de bytes obtendo o valor do membro de dados `binaryData` do objeto `BLOB`.
+   * Crie um objeto `System.IO.BinaryWriter` invocando seu construtor e transmitindo o objeto `System.IO.FileStream`.
+   * Grave o conteúdo da matriz de bytes no arquivo XML invocando o método `Write` do objeto `System.IO.BinaryWriter` e transmitindo a matriz de bytes.
 
 **Consulte também**
 
@@ -1937,7 +1937,7 @@ Crie vários arquivos de PDF usando a API de saída (serviço da Web):
 
 ## Criação de regras de pesquisa {#creating-search-rules}
 
-Você pode criar regras de pesquisa que resultam no serviço de Saída examinando dados de entrada e usando diferentes designs de formulário com base no conteúdo dos dados para gerar a saída. Por exemplo, se o texto *hipoteca* estiver localizado nos dados de entrada, o Serviço de saída poderá usar um design de formulário chamado Mortgage.xdp. Da mesma forma, se o texto *automóvel* estiver nos dados de entrada, o Serviço de saída poderá usar um design de formulário salvo como AutomobileLoan.xdp. Embora o Serviço de saída possa gerar diferentes tipos de saída, esta seção presume que o Serviço de saída gera um arquivo PDF. O diagrama a seguir mostra o Serviço de saída gerando um arquivo de PDF, processando um arquivo de dados XML e usando um dos vários designs de formulário.
+Você pode criar regras de pesquisa que resultam no serviço de Saída examinando dados de entrada e usando diferentes designs de formulário com base no conteúdo dos dados para gerar a saída. Por exemplo, se o texto *hipoteca* estiver localizado nos dados de entrada, o serviço de Saída poderá usar um design de formulário chamado Hipoteca.xdp. Da mesma forma, se o texto *automobile* estiver nos dados de entrada, o serviço de Saída poderá usar um design de formulário salvo como AutomobileLoan.xdp. Embora o Serviço de saída possa gerar diferentes tipos de saída, esta seção presume que o Serviço de saída gera um arquivo PDF. O diagrama a seguir mostra o Serviço de saída gerando um arquivo de PDF, processando um arquivo de dados XML e usando um dos vários designs de formulário.
 
 Além disso, o Serviço de saída é capaz de gerar pacotes de documentos, em que vários registros são fornecidos no conjunto de dados e cada registro é correspondido a um design de formulário, e um único documento é gerado composto de vários designs de formulário.
 
@@ -1945,7 +1945,7 @@ Além disso, o Serviço de saída é capaz de gerar pacotes de documentos, em qu
 
 >[!NOTE]
 >
->Para obter mais informações sobre o Serviço de saída, consulte [Referência de serviços para o AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Para obter mais informações sobre o Serviço de saída, consulte [Referência de serviços para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Resumo das etapas {#summary_of_steps-8}
 
@@ -1974,11 +1974,11 @@ Os seguintes arquivos JAR devem ser adicionados ao classpath do projeto:
 
 se o AEM Forms for disponibilizado em um servidor de aplicativos J2EE compatível que não seja JBoss, você deverá substituir adobe-utilities.jar e jbossall-client.jar por arquivos JAR específicos para o servidor de aplicativos J2EE no qual o AEM Forms é disponibilizado.
 
-**Criar um objeto do Cliente de saída**
+**Criar um objeto de Cliente de Saída**
 
 Antes de executar programaticamente uma operação do Serviço de saída, você deve criar um objeto cliente do Serviço de saída.
 
-**Fazer referência a uma fonte de dados XML**
+**Referenciar uma fonte de dados XML**
 
 Um elemento XML deve existir para cada campo de formulário que você deseja preencher com dados. O nome do elemento XML deve corresponder ao nome do campo. Um elemento XML será ignorado se não corresponder a um campo de formulário ou se o nome do elemento XML não corresponder ao nome do campo. Não é necessário corresponder à ordem em que os elementos XML são exibidos, desde que todos os elementos XML sejam especificados.
 
@@ -1994,7 +1994,7 @@ Para definir regras de pesquisa, defina um ou mais padrões de texto que os serv
 
 Defina as seguintes opções de tempo de execução de PDF para que o serviço de Saída crie com êxito um documento de PDF com base em vários designs de formulário:
 
-* **URI do arquivo**: especifica o nome e o local do arquivo de PDF gerado pelo serviço de Saída.
+* **URI do Arquivo**: especifica o nome e o local do arquivo de PDF gerado pelo serviço de Saída.
 * **Regras**: especifica as regras que você definiu.
 * **LookAHead**: especifica o número de bytes a serem usados desde o início do arquivo de dados de entrada para verificar os padrões de texto definidos. O padrão é 500 bytes.
 
@@ -2028,57 +2028,57 @@ Crie regras de pesquisa usando a API de saída (Java):
 
 1. Crie um objeto Cliente de saída.
 
-   * Criar um `ServiceClientFactory` objeto que contém propriedades de conexão.
-   * Criar um `OutputClient` usando seu construtor e transmitindo o `ServiceClientFactory` objeto.
+   * Crie um objeto `ServiceClientFactory` que contenha propriedades de conexão.
+   * Crie um objeto `OutputClient` usando seu construtor e transmitindo o objeto `ServiceClientFactory`.
 
 1. Fazer referência a uma fonte de dados XML.
 
-   * Criar um `java.io.FileInputStream` objeto que representa a fonte de dados XML usada para preencher o documento PDF usando seu construtor e transmitindo um valor de string que especifica o local do arquivo XML.
-   * Criar um `com.adobe.idp.Document` usando seu construtor e transmitindo o `java.io.FileInputStream` objeto.
+   * Crie um objeto `java.io.FileInputStream` que represente a fonte de dados XML usada para preencher o documento PDF, usando seu construtor e transmitindo um valor de cadeia de caracteres que especifique o local do arquivo XML.
+   * Crie um objeto `com.adobe.idp.Document` usando seu construtor e transmitindo o objeto `java.io.FileInputStream`.
 
 1. Defina as regras de pesquisa.
 
-   * Criar um `Rule` usando seu construtor.
-   * Defina um padrão de texto chamando o `Rule` do objeto `setPattern` e transmitindo um valor de string que especifica um padrão de texto.
-   * Defina o design do formulário correspondente chamando o `Rule` do objeto `setForm` método . Transmita um valor de cadeia de caracteres que especifique o nome do design do formulário.
+   * Crie um objeto `Rule` usando seu construtor.
+   * Defina um padrão de texto chamando o método `setPattern` do objeto `Rule` e transmitindo um valor de cadeia de caracteres que especifica um padrão de texto.
+   * Defina o design do formulário correspondente invocando o método `setForm` do objeto `Rule`. Transmita um valor de cadeia de caracteres que especifique o nome do design do formulário.
 
    >[!NOTE]
    >
    >Para cada padrão de texto que deseja definir, repita as três subetapas anteriores.
 
-   * Criar um `java.util.List` usando um `java.util.ArrayList` construtor.
-   * Para cada `Rule` objeto que você criou, chame o `java.util.List` do objeto `add` e transmita o `Rule` objeto.
+   * Crie um objeto `java.util.List` usando um construtor `java.util.ArrayList`.
+   * Para cada objeto `Rule` criado, chame o método `add` do objeto `java.util.List` e passe o objeto `Rule`.
 
 1. Defina as opções de tempo de execução de PDF.
 
-   * Criar um `PDFOutputOptionsSpec` usando seu construtor.
-   * Especifique o nome e o local do arquivo de PDF que o serviço de Saída gera chamando o `PDFOutputOptionsSpec` do objeto `setFileURI` método. Transmita um valor de string que especifique o local do arquivo de PDF. A opção File URI é relativa ao servidor de aplicativos J2EE que hospeda o AEM Forms, não ao computador cliente.
-   * Defina as regras que você definiu chamando o `PDFOutputOptionsSpec` do objeto `setRules` método. Passe o `java.util.List` objeto que contém o `Rule` objetos.
-   * Defina o número de bytes para procurar os padrões de texto definidos, chamando o `PDFOutputOptionsSpec` do objeto `setLookAhead` método. Transmita um valor inteiro que represente os números de bytes.
+   * Crie um objeto `PDFOutputOptionsSpec` usando seu construtor.
+   * Especifique o nome e o local do arquivo de PDF gerado pelo serviço de Saída invocando o método `setFileURI` do objeto `PDFOutputOptionsSpec`. Transmita um valor de string que especifique o local do arquivo de PDF. A opção File URI é relativa ao servidor de aplicativos J2EE que hospeda o AEM Forms, não ao computador cliente.
+   * Defina as regras definidas chamando o método `setRules` do objeto `PDFOutputOptionsSpec`. Passe o objeto `java.util.List` que contém os objetos `Rule`.
+   * Defina o número de bytes para verificar os padrões de texto definidos invocando o método `setLookAhead` do objeto `PDFOutputOptionsSpec`. Transmita um valor inteiro que represente os números de bytes.
 
 1. Definir opções de tempo de execução de renderização.
 
-   * Criar um `RenderOptionsSpec` usando seu construtor.
-   * Armazene em cache o design do formulário para melhorar o desempenho do Serviço de saída chamando o `RenderOptionsSpec` do objeto `setCacheEnabled` e transmitindo `true`.
+   * Crie um objeto `RenderOptionsSpec` usando seu construtor.
+   * Armazene em cache o design do formulário para melhorar o desempenho do serviço de Saída invocando `setCacheEnabled` do objeto `RenderOptionsSpec` e transmitindo `true`.
 
 1. Gere um documento PDF.
 
-   Gere um documento de PDF que seja baseado em vários designs de formulário chamando o `OutputClient` do objeto `generatePDFOutput` e transmitindo os seguintes valores:
+   Gere um documento de PDF que seja baseado em vários designs de formulário, chamando o método `generatePDFOutput` do objeto `OutputClient` e transmitindo os seguintes valores:
 
-   * A `TransformationFormat` valor de enumeração. Para gerar um documento PDF, especifique `TransformationFormat.PDF`.
+   * Um valor de enumeração `TransformationFormat`. Para gerar um documento PDF, especifique `TransformationFormat.PDF`.
    * Um valor de sequência de caracteres que especifica o nome do design do formulário padrão. Ou seja, o design do formulário usado se um padrão de texto não estiver localizado.
    * Um valor de sequência de caracteres que especifica a raiz de conteúdo onde os designs de formulário estão localizados.
-   * A `PDFOutputOptionsSpec` objeto que contém opções de tempo de execução de PDF.
-   * A `RenderOptionsSpec` objeto que contém opções de tempo de execução de renderização.
-   * A variável `com.adobe.idp.Document` objeto que contém os dados de formulário que são pesquisados pelo serviço de Saída para os padrões de texto definidos.
+   * Um objeto `PDFOutputOptionsSpec` que contém opções de tempo de execução de PDF.
+   * Um objeto `RenderOptionsSpec` que contém opções de tempo de execução de renderização.
+   * O objeto `com.adobe.idp.Document` que contém os dados de formulário pesquisados pelo serviço de Saída para os padrões de texto definidos.
 
-   A variável `generatePDFOutput` o método retorna um `OutputResult` objeto que contém os resultados da operação.
+   O método `generatePDFOutput` retorna um objeto `OutputResult` que contém os resultados da operação.
 
 1. Recuperar os resultados da operação.
 
-   * Criar um `com.adobe.idp.Document` objeto que representa o status do `generatePDFOutput` ao invocar o `OutputResult` do objeto `getStatusDoc` método.
-   * Criar um `java.io.File` objeto que conterá os resultados da operação. Verifique se a extensão do arquivo é .xml.
-   * Chame o `com.adobe.idp.Document` do objeto `copyToFile` método para copiar o conteúdo do `com.adobe.idp.Document` ao arquivo (certifique-se de usar o `com.adobe.idp.Document` objeto que foi retornado pelo `getStatusDoc` método).
+   * Crie um objeto `com.adobe.idp.Document` que represente o status do método `generatePDFOutput` invocando o método `getStatusDoc` do objeto `OutputResult`.
+   * Crie um objeto `java.io.File` que conterá os resultados da operação. Verifique se a extensão do arquivo é .xml.
+   * Invoque o método `copyToFile` do objeto `com.adobe.idp.Document` para copiar o conteúdo do objeto `com.adobe.idp.Document` para o arquivo (certifique-se de usar o objeto `com.adobe.idp.Document` retornado pelo método `getStatusDoc`).
 
 **Consulte também**
 
@@ -2102,87 +2102,87 @@ Crie regras de pesquisa usando a API de saída (serviço Web):
 
    >[!NOTE]
    >
-   >Substituir `localhost` com o endereço IP do servidor que hospeda o AEM Forms.
+   >Substitua `localhost` pelo endereço IP do servidor que hospeda o AEM Forms.
 
 1. Crie um objeto Cliente de saída.
 
-   * Criar um `OutputServiceClient` usando seu construtor padrão.
-   * Criar um `OutputServiceClient.Endpoint.Address` usando o `System.ServiceModel.EndpointAddress` construtor. Transmita um valor de string que especifique o WSDL para o serviço AEM Forms (por exemplo, `http://localhost:8080/soap/services/OutputService?blob=mtom`.) Não é necessário usar a variável `lc_version` atributo. Esse atributo é usado quando você cria uma referência de serviço. No entanto, especifique `?blob=mtom` para usar MTOM.
-   * Criar um `System.ServiceModel.BasicHttpBinding` obtendo o valor do `OutputServiceClient.Endpoint.Binding` campo. Converter o valor de retorno em `BasicHttpBinding`.
-   * Defina o `System.ServiceModel.BasicHttpBinding` do objeto `MessageEncoding` campo para `WSMessageEncoding.Mtom`. Esse valor garante que a MTOM seja usada.
+   * Crie um objeto `OutputServiceClient` usando seu construtor padrão.
+   * Crie um objeto `OutputServiceClient.Endpoint.Address` usando o construtor `System.ServiceModel.EndpointAddress`. Transmita um valor de cadeia de caracteres que especifique o WSDL para o serviço AEM Forms (por exemplo, `http://localhost:8080/soap/services/OutputService?blob=mtom`.) Você não precisa usar o atributo `lc_version`. Esse atributo é usado quando você cria uma referência de serviço. No entanto, especifique `?blob=mtom` para usar MTOM.
+   * Crie um objeto `System.ServiceModel.BasicHttpBinding` obtendo o valor do campo `OutputServiceClient.Endpoint.Binding`. Converter o valor de retorno em `BasicHttpBinding`.
+   * Defina o campo `MessageEncoding` do objeto `System.ServiceModel.BasicHttpBinding` como `WSMessageEncoding.Mtom`. Esse valor garante que a MTOM seja usada.
    * Ative a autenticação HTTP básica executando as seguintes tarefas:
 
-      * Atribuir o nome de usuário dos formulários AEM ao campo `OutputServiceClient.ClientCredentials.UserName.UserName`.
+      * Atribua o nome de usuário dos formulários AEM ao campo `OutputServiceClient.ClientCredentials.UserName.UserName`.
       * Atribua o valor de senha correspondente ao campo `OutputServiceClient.ClientCredentials.UserName.Password`.
-      * Atribuir o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Atribuir o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
+      * Atribua o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * Atribua o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Fazer referência a uma fonte de dados XML.
 
-   * Criar um `BLOB` usando seu construtor. A variável `BLOB` O objeto é usado para armazenar dados que serão mesclados com o documento PDF.
-   * Criar um `System.IO.FileStream` chamando seu construtor e transmitindo um valor de string que representa o local do arquivo do documento PDF a ser criptografado e o modo no qual o arquivo será aberto.
-   * Crie uma matriz de bytes que armazene o conteúdo da variável `System.IO.FileStream` objeto. Você pode determinar o tamanho da matriz de bytes obtendo o `System.IO.FileStream` do objeto `Length` propriedade.
-   * Preencha a matriz de bytes com dados de fluxo invocando o `System.IO.FileStream` do objeto `Read` e transmitindo a matriz de bytes, a posição inicial e o comprimento do fluxo para leitura.
-   * Preencha o `BLOB` atribuindo seu `MTOM` com o conteúdo da matriz de bytes.
+   * Crie um objeto `BLOB` usando seu construtor. O objeto `BLOB` é usado para armazenar dados que serão mesclados com o documento PDF.
+   * Crie um objeto `System.IO.FileStream` chamando seu construtor e transmitindo um valor de cadeia de caracteres que representa o local do arquivo do documento PDF a ser criptografado e o modo no qual o arquivo será aberto.
+   * Crie uma matriz de bytes que armazene o conteúdo do objeto `System.IO.FileStream`. Você pode determinar o tamanho da matriz de bytes obtendo a propriedade `Length` do objeto `System.IO.FileStream`.
+   * Preencha a matriz de bytes com dados de fluxo invocando o método `Read` do objeto `System.IO.FileStream` e transmitindo a matriz de bytes, a posição inicial e o comprimento do fluxo para leitura.
+   * Preencha o objeto `BLOB` atribuindo seu campo `MTOM` com o conteúdo da matriz de bytes.
 
 1. Defina as regras de pesquisa.
 
-   * Criar um `Rule` usando seu construtor.
-   * Defina um padrão de texto atribuindo um valor de string que especifique um padrão de texto para o `Rule` do objeto `pattern` membro de dados.
-   * Defina o design do formulário correspondente atribuindo um valor de sequência de caracteres que especifique o design do formulário ao `Rule` do objeto `form` membro de dados.
+   * Crie um objeto `Rule` usando seu construtor.
+   * Defina um padrão de texto atribuindo um valor de cadeia que especifique um padrão de texto para o membro de dados `pattern` do objeto `Rule`.
+   * Defina o design do formulário correspondente atribuindo um valor de cadeia de caracteres que especifique o design do formulário para o membro de dados `form` do objeto `Rule`.
 
    >[!NOTE]
    >
    >Para cada padrão de texto que deseja definir, repita as três subetapas anteriores.
 
-   * Criar um `MyArrayOf_xsd_anyType` objeto que armazena as regras.
-   * Atribuir cada `Rule` a um elemento da variável `MyArrayOf_xsd_anyType` matriz. Chame o `MyArrayOf_xsd_anyType` do objeto `Add` para cada `Rule` objeto.
+   * Crie um objeto `MyArrayOf_xsd_anyType` que armazene as regras.
+   * Atribua cada objeto `Rule` a um elemento da matriz `MyArrayOf_xsd_anyType`. Invoque o método `Add` do objeto `MyArrayOf_xsd_anyType` para cada objeto `Rule`.
 
 1. Definir opções de tempo de execução de PDF
 
-   * Criar um `PDFOutputOptionsSpec` usando seu construtor.
-   * Defina a opção de URI de arquivo atribuindo um valor de string que especifica o local do arquivo de PDF gerado pelo serviço de saída para o `PDFOutputOptionsSpec` do objeto `fileURI` membro de dados. A opção File URI é relativa ao servidor de aplicativos J2EE que hospeda o AEM Forms, não ao computador cliente.
-   * Defina a opção copies atribuindo um valor inteiro que especifica o número de cópias que o serviço de Saída gera para o `PDFOutputOptionsSpec` do objeto `copies` membro de dados.
-   * Defina as regras que você definiu atribuindo a variável `MyArrayOf_xsd_anyType` objeto que armazena as regras para o `PDFOutputOptionsSpec` do objeto `rules` membro de dados.
-   * Defina o número de bytes a serem examinados em busca dos padrões de texto definidos, atribuindo um valor inteiro que represente os números de bytes a serem examinados na variável `PDFOutputOptionsSpec` do objeto `lookAhead` método de dados.
+   * Crie um objeto `PDFOutputOptionsSpec` usando seu construtor.
+   * Defina a opção de URI de arquivo atribuindo um valor de cadeia de caracteres que especifique o local do arquivo de PDF que o serviço de Saída gera para o membro de dados `fileURI` do objeto `PDFOutputOptionsSpec`. A opção File URI é relativa ao servidor de aplicativos J2EE que hospeda o AEM Forms, não ao computador cliente.
+   * Defina a opção copies atribuindo um valor inteiro que especifica o número de cópias que o serviço de Saída gera para o membro de dados `copies` do objeto `PDFOutputOptionsSpec`.
+   * Defina as regras definidas atribuindo o objeto `MyArrayOf_xsd_anyType` que armazena as regras ao membro de dados `rules` do objeto `PDFOutputOptionsSpec`.
+   * Defina o número de bytes para verificar os padrões de texto definidos, atribuindo um valor inteiro que represente os números de bytes a serem verificados para o método de dados `lookAhead` do objeto `PDFOutputOptionsSpec`.
 
 1. Definir opções de tempo de execução de renderização
 
-   * Criar um `RenderOptionsSpec` usando seu construtor.
-   * Armazenar em cache o design do formulário para melhorar o desempenho do serviço de Saída atribuindo o valor `true` para o `RenderOptionsSpec` do objeto `cacheEnabled` membro de dados.
+   * Crie um objeto `RenderOptionsSpec` usando seu construtor.
+   * Armazene em cache o design do formulário para melhorar o desempenho do serviço de Saída atribuindo o valor `true` ao membro de dados `cacheEnabled` do objeto `RenderOptionsSpec`.
 
    >[!NOTE]
    >
-   >Não é possível definir a versão do documento PDF usando o `RenderOptionsSpec` do objeto `pdfVersion` membro se o documento de entrada for um formulário Acrobat. O documento PDF de saída retém a versão PDF do formulário Acrobat. Da mesma forma, não é possível definir a opção PDF com tags usando o `RenderOptionsSpec` do objeto `taggedPDF` se o documento de entrada for um formulário Acrobat.
+   >Você não pode definir a versão do documento PDF usando o membro `pdfVersion` do objeto `RenderOptionsSpec` se o documento de entrada for um formulário Acrobat. O documento PDF de saída retém a versão PDF do formulário Acrobat. Da mesma forma, não é possível definir a opção PDF com tags usando o método `taggedPDF` do objeto `RenderOptionsSpec` se o documento de entrada for um formulário Acrobat.
 
    >[!NOTE]
    >
-   >Não é possível definir a opção de PDF linearizado usando o `RenderOptionsSpec` do objeto `linearizedPDF` membro se o documento de PDF de entrada for certificado ou assinado digitalmente. Para obter informações, consulte [Assinatura digital de documentos PDF](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents).
+   >Não é possível definir a opção PDF linearizada usando o membro `linearizedPDF` do objeto `RenderOptionsSpec` se o documento PDF de entrada estiver certificado ou assinado digitalmente. Para obter informações, consulte [Assinatura digital de documentos PDF](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents).
 
 1. Gerar um documento PDF
 
-   Crie um documento PDF chamando o `OutputServiceService` do objeto `generatePDFOutput`e transmitindo os seguintes valores:
+   Crie um documento PDF chamando o método `generatePDFOutput` do objeto `OutputServiceService` e transmitindo os seguintes valores:
 
-   * A `TransformationFormat` valor de enumeração. Para gerar um documento PDF, especifique `TransformationFormat.PDF`.
+   * Um valor de enumeração `TransformationFormat`. Para gerar um documento PDF, especifique `TransformationFormat.PDF`.
    * Um valor de cadeia de caracteres que especifica o nome do design do formulário.
    * Um valor de cadeia de caracteres que especifica a raiz do conteúdo onde o design do formulário está localizado.
-   * A `PDFOutputOptionsSpec` objeto que contém opções de tempo de execução de PDF.
-   * A `RenderOptionsSpec` objeto que contém opções de tempo de execução de renderização.
-   * A variável `BLOB` objeto que contém a fonte de dados XML que contém os dados a serem mesclados com o design do formulário.
-   * A `BLOB` objeto que é preenchido pelo `generatePDFOutput` método. A variável `generatePDFOutput` O método preenche esse objeto com metadados gerados que descrevem o documento. (Este valor de parâmetro é necessário somente para a invocação do serviço Web).
-   * A `BLOB` objeto que é preenchido pelo `generatePDFOutput` método. A variável `generatePDFOutput` O método preenche este objeto com os dados do resultado. (Este valor de parâmetro é necessário somente para a invocação do serviço Web).
-   * Um `OutputResult` objeto que contém os resultados da operação. (Este valor de parâmetro é necessário somente para a invocação do serviço Web).
+   * Um objeto `PDFOutputOptionsSpec` que contém opções de tempo de execução de PDF.
+   * Um objeto `RenderOptionsSpec` que contém opções de tempo de execução de renderização.
+   * O objeto `BLOB` que contém a fonte de dados XML que contém os dados a serem mesclados com o design do formulário.
+   * Um objeto `BLOB` que é preenchido pelo método `generatePDFOutput`. O método `generatePDFOutput` preenche este objeto com metadados gerados que descrevem o documento. (Este valor de parâmetro é necessário somente para a invocação do serviço Web).
+   * Um objeto `BLOB` que é preenchido pelo método `generatePDFOutput`. O método `generatePDFOutput` preenche este objeto com os dados do resultado. (Este valor de parâmetro é necessário somente para a invocação do serviço Web).
+   * Um objeto `OutputResult` que contém os resultados da operação. (Este valor de parâmetro é necessário somente para a invocação do serviço Web).
 
    >[!NOTE]
    >
-   >Ao gerar um documento PDF chamando o `generatePDFOutput` , não será possível mesclar dados com um formulário PDF XFA que esteja assinado, certificado ou contenha direitos de uso. Para obter informações sobre direitos de uso, consulte [Aplicação de direitos de uso a documentos PDF](/help/forms/developing/assigning-usage-rights.md#applying-usage-rights-to-pdf-documents).
+   >Ao gerar um documento PDF invocando o método `generatePDFOutput`, não é possível mesclar dados com um formulário PDF XFA que esteja assinado, certificado ou contenha direitos de uso. Para obter informações sobre direitos de uso, consulte [Aplicando direitos de uso a documentos do PDF](/help/forms/developing/assigning-usage-rights.md#applying-usage-rights-to-pdf-documents).
 
 1. Recuperar os resultados da operação
 
-   * Criar um `System.IO.FileStream` chamando seu construtor e transmitindo um valor de string que representa um local de arquivo XML que contém dados de resultado. Certifique-se de que a extensão do arquivo seja XML.
-   * Crie uma matriz de bytes que armazene o conteúdo de dados do `BLOB` objeto que foi preenchido com dados de resultado pelo `OutputServiceService` do objeto `generatePDFOutput` (o oitavo parâmetro). Preencha a matriz de bytes obtendo o valor de `BLOB` do objeto `MTOM` membro de dados.
-   * Criar um `System.IO.BinaryWriter` objeto chamando seu construtor e transmitindo o `System.IO.FileStream` objeto.
-   * Grave o conteúdo da matriz de bytes no arquivo XML chamando o `System.IO.BinaryWriter` do objeto `Write` e transmitindo a matriz de bytes.
+   * Crie um objeto `System.IO.FileStream` chamando seu construtor e transmitindo um valor de cadeia de caracteres que representa um local de arquivo XML que contém dados de resultado. Certifique-se de que a extensão do arquivo seja XML.
+   * Crie uma matriz de bytes que armazene o conteúdo de dados do objeto `BLOB` que foi preenchido com dados de resultado pelo método `generatePDFOutput` do objeto `OutputServiceService` (o oitavo parâmetro). Popular a matriz de bytes obtendo o valor do membro de dados `MTOM` do objeto `BLOB`.
+   * Crie um objeto `System.IO.BinaryWriter` invocando seu construtor e transmitindo o objeto `System.IO.FileStream`.
+   * Grave o conteúdo da matriz de bytes no arquivo XML invocando o método `Write` do objeto `System.IO.BinaryWriter` e transmitindo a matriz de bytes.
 
 **Consulte também**
 
@@ -2194,7 +2194,7 @@ Crie regras de pesquisa usando a API de saída (serviço Web):
 
 ## Nivelamento de documentos PDF {#flattening-pdf-documents}
 
-Você pode usar o Serviço de saída para transformar um documento PDF interativo em um PDF não interativo. Um documento PDF interativo permite que os usuários insiram ou modifiquem dados que estejam nos campos do documento PDF. O processo de transformação de um documento PDF interativo em um documento PDF não interativo é chamado de *achatamento*. Quando um documento PDF é nivelado, o usuário não pode modificar os dados nos campos do documento. Um motivo para nivelar um documento PDF é garantir que os dados não possam ser modificados.
+Você pode usar o Serviço de saída para transformar um documento PDF interativo em um PDF não interativo. Um documento PDF interativo permite que os usuários insiram ou modifiquem dados que estejam nos campos do documento PDF. O processo de transformação de um documento PDF interativo em um documento PDF não interativo é chamado de *nivelamento*. Quando um documento PDF é nivelado, o usuário não pode modificar os dados nos campos do documento. Um motivo para nivelar um documento PDF é garantir que os dados não possam ser modificados.
 
 Você pode nivelar os seguintes tipos de documentos PDF:
 
@@ -2205,7 +2205,7 @@ A tentativa de nivelar um PDF que é um documento PDF não interativo causa uma 
 
 >[!NOTE]
 >
->Para obter mais informações sobre o Serviço de saída, consulte [Referência de serviços para o AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Para obter mais informações sobre o Serviço de saída, consulte [Referência de serviços para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Resumo das etapas {#summary_of_steps-9}
 
@@ -2229,21 +2229,21 @@ Os seguintes arquivos JAR devem ser adicionados ao caminho de classe do projeto:
 * adobe-utilities.jar (necessário se o AEM Forms for implantado no JBoss)
 * jbossall-client.jar (necessário se o AEM Forms for implantado no JBoss)
 
-se o AEM Forms for disponibilizado em um servidor de aplicativos J2EE compatível que não seja JBoss, você deverá substituir os arquivos adobe-utilities.jar e jbossall-client.jar por arquivos JAR específicos para o servidor de aplicativos J2EE no qual o AEM Forms é disponibilizado. Para obter informações sobre a localização de todos os arquivos JAR do AEM Forms, consulte [Inclusão de arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+se o AEM Forms for disponibilizado em um servidor de aplicativos J2EE compatível que não seja JBoss, você deverá substituir os arquivos adobe-utilities.jar e jbossall-client.jar por arquivos JAR específicos para o servidor de aplicativos J2EE no qual o AEM Forms é disponibilizado. Para obter informações sobre a localização de todos os arquivos JAR do AEM Forms, consulte [Incluindo arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
-**Criar um objeto do Cliente de saída**
+**Criar um objeto de Cliente de Saída**
 
-Antes de executar programaticamente uma operação do Serviço de saída, você deve criar um objeto cliente do Serviço de saída. Se estiver usando a API Java, crie uma `OutputClient` objeto. Se você estiver usando a API de serviço Web de saída, crie uma `OutputServiceService` objeto.
+Antes de executar programaticamente uma operação do Serviço de saída, você deve criar um objeto cliente do Serviço de saída. Se você estiver usando a API Java, crie um objeto `OutputClient`. Se você estiver usando a API de Serviço Web de Saída, crie um objeto `OutputServiceService`.
 
 **Recuperar um documento PDF interativo**
 
 Recupere um documento PDF interativo que você deseja transformar em um documento PDF não interativo. A tentativa de transformar um documento PDF não interativo causa uma exceção.
 
-**Transforme o documento PDF**
+**Transformar o documento PDF**
 
 Após recuperar um documento PDF interativo, é possível transformá-lo em um documento PDF não interativo. O serviço de Saída retorna um documento PDF não interativo.
 
-**Salve o documento PDF não interativo como um arquivo PDF**
+**Salvar o documento PDF não interativo como um arquivo PDF**
 
 Você pode salvar o documento PDF não interativo como um arquivo PDF.
 
@@ -2269,30 +2269,30 @@ Nivelar um documento PDF interativo em um documento PDF não interativo usando a
 
 1. Crie um objeto Cliente de saída.
 
-   * Criar um `ServiceClientFactory` objeto que contém propriedades de conexão.
-   * Criar um `OutputClient` usando seu construtor e transmitindo o `ServiceClientFactory` objeto.
+   * Crie um objeto `ServiceClientFactory` que contenha propriedades de conexão.
+   * Crie um objeto `OutputClient` usando seu construtor e transmitindo o objeto `ServiceClientFactory`.
 
 1. Recupere um documento PDF interativo.
 
-   * Criar um `java.io.FileInputStream` objeto que representa o documento PDF interativo a ser transformado usando seu construtor e transmitindo um valor de string que especifica o local do arquivo PDF interativo.
-   * Criar um `com.adobe.idp.Document` usando seu construtor e transmitindo o `java.io.FileInputStream` objeto.
+   * Crie um objeto `java.io.FileInputStream` que represente o documento PDF interativo a ser transformado usando seu construtor e transmitindo um valor de cadeia de caracteres que especifique o local do arquivo PDF interativo.
+   * Crie um objeto `com.adobe.idp.Document` usando seu construtor e transmitindo o objeto `java.io.FileInputStream`.
 
 1. Transforme o documento PDF.
 
-   Transforme o documento PDF interativo em um documento PDF não interativo chamando o `OutputServiceService` do objeto `transformPDF` e transmitindo os seguintes valores:
+   Transforme o documento PDF interativo em um documento PDF não interativo, chamando o método `transformPDF` do objeto `OutputServiceService` e transmitindo os seguintes valores:
 
-   * A variável `com.adobe.idp.Document` objeto que contém o documento PDF interativo.
-   * A `TransformationFormat` valor de enumeração. Para gerar um documento PDF não interativo, especifique `TransformationFormat.PDF`.
-   * A `PDFARevisionNumber` valor de enumeração que especifica o número da revisão. Como esse parâmetro se destina a um documento PDF/A, você pode especificar `null`.
+   * O objeto `com.adobe.idp.Document` que contém o documento PDF interativo.
+   * Um valor de enumeração `TransformationFormat`. Para gerar um documento PDF não interativo, especifique `TransformationFormat.PDF`.
+   * Um valor de enumeração `PDFARevisionNumber` que especifica o número de revisão. Como esse parâmetro se destina a um documento PDF/A, você pode especificar `null`.
    * Um valor de sequência de caracteres que representa o número da alteração e o ano, separados por dois pontos. Como esse parâmetro se destina a um documento PDF/A, você pode especificar `null`.
-   * A `PDFAConformance` valor de enumeração que representa o nível de conformidade PDF/A. Como esse parâmetro se destina a um documento PDF/A, você pode especificar `null`.
+   * Um valor de enumeração `PDFAConformance` que representa o nível de conformidade PDF/A. Como esse parâmetro se destina a um documento PDF/A, você pode especificar `null`.
 
-   A variável `transformPDF` o método retorna um `com.adobe.idp.Document` objeto que contém um documento PDF não interativo.
+   O método `transformPDF` retorna um objeto `com.adobe.idp.Document` que contém um documento PDF não interativo.
 
 1. Salve o documento PDF não interativo como um arquivo PDF.
 
-   * Criar um `java.io.File` e verifique se a extensão do nome do arquivo é .pdf.
-   * Chame o `Document` do objeto `copyToFile` método para copiar o conteúdo do `Document` ao arquivo (certifique-se de usar o `Document` objeto que foi retornado pelo `transformPDF` método).
+   * Crie um objeto `java.io.File` e verifique se a extensão do nome do arquivo é .pdf.
+   * Invoque o método `copyToFile` do objeto `Document` para copiar o conteúdo do objeto `Document` para o arquivo (certifique-se de usar o objeto `Document` retornado pelo método `transformPDF`).
 
 **Consulte também**
 
@@ -2316,49 +2316,49 @@ Nivelar um documento PDF interativo em um documento PDF não interativo usando a
 
    >[!NOTE]
    >
-   >Substituir `localhost` com o endereço IP do servidor que hospeda o AEM Forms.
+   >Substitua `localhost` pelo endereço IP do servidor que hospeda o AEM Forms.
 
 1. Crie um objeto Cliente de saída.
 
-   * Criar um `OutputServiceClient` usando seu construtor padrão.
-   * Criar um `OutputServiceClient.Endpoint.Address` usando o `System.ServiceModel.EndpointAddress` construtor. Transmita um valor de string que especifique o WSDL para o serviço AEM Forms (por exemplo, `http://localhost:8080/soap/services/OutputService?blob=mtom`.) Não é necessário usar a variável `lc_version` atributo. Esse atributo é usado quando você cria uma referência de serviço. No entanto, especifique `?blob=mtom` para usar MTOM.
-   * Criar um `System.ServiceModel.BasicHttpBinding` obtendo o valor do `OutputServiceClient.Endpoint.Binding` campo. Converter o valor de retorno em `BasicHttpBinding`.
-   * Defina o `System.ServiceModel.BasicHttpBinding` do objeto `MessageEncoding` campo para `WSMessageEncoding.Mtom`. Esse valor garante que a MTOM seja usada.
+   * Crie um objeto `OutputServiceClient` usando seu construtor padrão.
+   * Crie um objeto `OutputServiceClient.Endpoint.Address` usando o construtor `System.ServiceModel.EndpointAddress`. Transmita um valor de cadeia de caracteres que especifique o WSDL para o serviço AEM Forms (por exemplo, `http://localhost:8080/soap/services/OutputService?blob=mtom`.) Você não precisa usar o atributo `lc_version`. Esse atributo é usado quando você cria uma referência de serviço. No entanto, especifique `?blob=mtom` para usar MTOM.
+   * Crie um objeto `System.ServiceModel.BasicHttpBinding` obtendo o valor do campo `OutputServiceClient.Endpoint.Binding`. Converter o valor de retorno em `BasicHttpBinding`.
+   * Defina o campo `MessageEncoding` do objeto `System.ServiceModel.BasicHttpBinding` como `WSMessageEncoding.Mtom`. Esse valor garante que a MTOM seja usada.
    * Ative a autenticação HTTP básica executando as seguintes tarefas:
 
-      * Atribuir o nome de usuário dos formulários AEM ao campo `OutputServiceClient.ClientCredentials.UserName.UserName`.
+      * Atribua o nome de usuário dos formulários AEM ao campo `OutputServiceClient.ClientCredentials.UserName.UserName`.
       * Atribua o valor de senha correspondente ao campo `OutputServiceClient.ClientCredentials.UserName.Password`.
-      * Atribuir o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Atribuir o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
+      * Atribua o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * Atribua o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Recupere um documento PDF interativo.
 
-   * Criar um `BLOB` usando seu construtor. A variável `BLOB` objeto é usado para armazenar o documento PDF interativo.
-   * Criar um `System.IO.FileStream` chamando seu construtor e transmitindo um valor de string que representa o local do arquivo do documento PDF interativo.
-   * Crie uma matriz de bytes que armazene o conteúdo da variável `System.IO.FileStream` objeto. Você pode determinar o tamanho da matriz de bytes obtendo o `System.IO.FileStream` do objeto `Length` propriedade.
-   * Preencha a matriz de bytes com dados de fluxo invocando o `System.IO.FileStream` do objeto `Read` e transmitindo a matriz de bytes, a posição inicial e o comprimento do fluxo para leitura.
-   * Preencha o `BLOB` atribuindo seu `MTOM` com o conteúdo da matriz de bytes.
+   * Crie um objeto `BLOB` usando seu construtor. O objeto `BLOB` é usado para armazenar o documento PDF interativo.
+   * Crie um objeto `System.IO.FileStream` chamando seu construtor e transmitindo um valor de cadeia de caracteres que representa o local do arquivo do documento PDF interativo.
+   * Crie uma matriz de bytes que armazene o conteúdo do objeto `System.IO.FileStream`. Você pode determinar o tamanho da matriz de bytes obtendo a propriedade `Length` do objeto `System.IO.FileStream`.
+   * Preencha a matriz de bytes com dados de fluxo invocando o método `Read` do objeto `System.IO.FileStream` e transmitindo a matriz de bytes, a posição inicial e o comprimento do fluxo para leitura.
+   * Preencha o objeto `BLOB` atribuindo sua propriedade `MTOM` com o conteúdo da matriz de bytes.
 
 1. Transforme o documento PDF.
 
-   Transforme o documento PDF interativo em um documento PDF não interativo chamando o `OutputClient` do objeto `transformPDF` e transmitindo os seguintes valores:
+   Transforme o documento PDF interativo em um documento PDF não interativo, chamando o método `transformPDF` do objeto `OutputClient` e transmitindo os seguintes valores:
 
-   * A `BLOB` objeto que contém o documento PDF interativo.
-   * A `TransformationFormat` valor de enumeração. Para gerar um documento PDF não interativo, especifique `TransformationFormat.PDF`.
-   * A `PDFARevisionNumber` valor de enumeração que especifica o número da revisão.
-   * Um valor booliano que especifica se a variável `PDFARevisionNumber` valor enum é usado. Como esse parâmetro se destina a um documento PDF/A, você pode especificar `false`.
+   * Um objeto `BLOB` que contém o documento PDF interativo.
+   * Um valor de enumeração `TransformationFormat`. Para gerar um documento PDF não interativo, especifique `TransformationFormat.PDF`.
+   * Um valor de enumeração `PDFARevisionNumber` que especifica o número de revisão.
+   * Um valor booliano que especifica se o valor de enumeração `PDFARevisionNumber` é usado. Como esse parâmetro se destina a um documento PDF/A, você pode especificar `false`.
    * Um valor de sequência de caracteres que representa o número da alteração e o ano, separados por dois pontos. Como esse parâmetro se destina a um documento PDF/A, você pode especificar `null`.
-   * A `PDFAConformance` valor de enumeração que representa o nível de conformidade PDF/A.
-   * Valor booleano que especifica se a variável `PDFAConformance` valor enum é usado. Como esse parâmetro se destina a um documento PDF/A, você pode especificar `false`.
+   * Um valor de enumeração `PDFAConformance` que representa o nível de conformidade PDF/A.
+   * Valor booliano que especifica se o valor de enumeração `PDFAConformance` é usado. Como esse parâmetro se destina a um documento PDF/A, você pode especificar `false`.
 
-   A variável `transformPDF` o método retorna um `BLOB` objeto que contém um documento PDF não interativo.
+   O método `transformPDF` retorna um objeto `BLOB` que contém um documento PDF não interativo.
 
 1. Salve o documento PDF não interativo como um arquivo PDF.
 
-   * Criar um `System.IO.FileStream` chamando seu construtor e transmitindo um valor de string que representa o local do arquivo do documento PDF não interativo.
-   * Crie uma matriz de bytes que armazene o conteúdo de dados do `BLOB` objeto que foi retornado pelo `transformPDF` método. Preencha a matriz de bytes obtendo o valor de `BLOB` do objeto `MTOM` membro de dados.
-   * Criar um `System.IO.BinaryWriter` objeto chamando seu construtor e transmitindo o `System.IO.FileStream` objeto.
-   * Grave o conteúdo da matriz de bytes em um arquivo PDF, chamando o `System.IO.BinaryWriter` do objeto `Write` e transmitindo a matriz de bytes.
+   * Crie um objeto `System.IO.FileStream` chamando seu construtor e transmitindo um valor de cadeia de caracteres que representa o local do arquivo do documento PDF não interativo.
+   * Crie uma matriz de bytes que armazene o conteúdo de dados do objeto `BLOB` retornado pelo método `transformPDF`. Popular a matriz de bytes obtendo o valor do membro de dados `MTOM` do objeto `BLOB`.
+   * Crie um objeto `System.IO.BinaryWriter` invocando seu construtor e transmitindo o objeto `System.IO.FileStream`.
+   * Grave o conteúdo da matriz de bytes em um arquivo PDF, chamando o método `Write` do objeto `System.IO.BinaryWriter` e transmitindo a matriz de bytes.
 
 **Consulte também**
 

@@ -46,7 +46,7 @@ Quando você seleciona um processo, a guia Formulário e a guia Detalhes são ex
 
 1. Selecione um processo clicando em uma tarefa. O formulário associado ao processo é aberto na guia Formulário.
 
-   Cada formulário em um processo tem um URL exclusivo. Você pode usar o URL exclusivo para iniciar diretamente o espaço de trabalho do HTML com o processo e formulário específicos. O formato do URL é https://&lt;server>:&lt;port>/lc/libs/ws/index.html#/startprocess/&lt;applicationname>%2F&lt;processname>. A variável &lt;applicationname>%2F&lt;processname> a string sempre é codificada por URL. Um exemplo de URL é http://localhost:8080/lc/libs/ws/index.html#/startprocess/MyApplication%2FNewProcess. A cadeia de caracteres ApplicationName%2FProcessName no exemplo é codificada por URL.
+   Cada formulário em um processo tem um URL exclusivo. Você pode usar o URL exclusivo para iniciar diretamente o HTML Workspace com o processo e formulário específicos. O formato do URL é https://&lt;server>:&lt;port>/lc/libs/ws/index.html#/startprocess/&lt;ApplicationName>%2F&lt;ProcessName>. A cadeia de caracteres do &lt;ApplicationName>%2F&lt;ProcessName> é sempre codificada por URL. Um exemplo de URL é http://localhost:8080/lc/libs/ws/index.html#/startprocess/MyApplication%2FNewProcess. A cadeia de caracteres ApplicationName%2FProcessName no exemplo é codificada por URL.
 
 1. Preencha o formulário de acordo com as instruções fornecidas. Se necessário, clique em **Maximizar** para aumentar a área visível do formulário.
 1. Se a guia Anexos estiver disponível, adicione os anexos conforme necessário.
@@ -58,7 +58,7 @@ Quando você seleciona um processo, a guia Formulário e a guia Detalhes são ex
 
    O Process Management inicia o processo e direciona o formulário para as listas de tarefas pendentes das pessoas apropriadas que precisam concluir a próxima tarefa no processo.
 
-   Se você precisar fechar um formulário antes de enviá-lo e sem perder os dados inseridos, salve um rascunho e preencha-o posteriormente, se o processo permitir. Se o formulário e o processo permitirem, você também poderá clicar em **Offline** e mais tarde, envie-o do Adobe® Reader® ou Adobe® Acrobat® Professional ou Acrobat Standard.
+   Se você precisar fechar um formulário antes de enviá-lo e sem perder os dados inseridos, salve um rascunho e preencha-o posteriormente, se o processo permitir. Se o formulário e o processo permitirem, você também pode clicar em **Offline** e enviá-lo posteriormente do Adobe® Reader® ou Adobe® Acrobat® Professional ou Acrobat Standard.
 
    >[!NOTE]
    >
@@ -78,10 +78,10 @@ Quando você seleciona um processo, a guia Formulário e a guia Detalhes são ex
 * Ler/Excluir
 * Sem acesso
 
-1. Abra uma tarefa e clique no link **Notas** se o processo permitir.
-1. Digite um título para a nota na caixa **Título** e digite o texto da nota na caixa **Nota** caixa.
-1. Selecione o **Permissões** nível da nota para outros usuários que participam do processo.
-1. Clique em **OK**. Um arquivo de texto que contém sua nota é anexado ao formulário. Você pode atualizar uma nota clicando nela e modificando diretamente o texto. É possível excluir uma nota clicando no ícone **Excluir** botão ![Imagem de uma lata de lixo](assets/icondelete.png) ao lado da nota.
+1. Abra uma tarefa e clique na guia **Notas**, se o processo permitir.
+1. Digite um título para a observação na caixa **Título** e digite o texto da observação na caixa **Nota**.
+1. Selecione o nível **Permissões** para a observação de outros usuários que participam do processo.
+1. Clique em **OK**. Um arquivo de texto que contém sua nota é anexado ao formulário. Você pode atualizar uma nota clicando nela e modificando diretamente o texto. Você pode excluir uma anotação clicando no botão **Excluir** ![Imagem de uma lixeira](assets/icondelete.png) ao lado da anotação.
 
 ### Adicionar um anexo {#add-an-attachment}
 
@@ -93,10 +93,10 @@ Você também pode adicionar comentários sobre o anexo. Você pode definir uma 
 * Ler/Excluir
 * Sem acesso
 
-1. Clique em **Anexos** e selecione **Anexo**.
+1. Clique na guia **Anexos** e selecione **Anexo**.
 1. Clique em **Procurar** para selecionar o arquivo a ser anexado.
-1. Selecione o **Permissões** nível do anexo para outros usuários que participam do processo. Se você selecionar **Ler**, outros usuários poderão salvar o arquivo localmente. Se você selecionar uma das permissões de edição, outros usuários também poderão fazer upload de um novo arquivo para substituir seu anexo.
-1. Clique em **OK**. O arquivo é anexado ao formulário. É possível excluir um arquivo clicando no ícone **Excluir** botão ![Imagem de uma lata de lixo](assets/icondelete.png) ao lado do anexo.
+1. Selecione o nível **Permissões** para o anexo para outros usuários que participam do processo. Se você selecionar **Ler**, outros usuários poderão salvar o arquivo localmente. Se você selecionar uma das permissões de edição, outros usuários também poderão fazer upload de um novo arquivo para substituir seu anexo.
+1. Clique em **OK**. O arquivo é anexado ao formulário. Você pode excluir um arquivo clicando no botão **Excluir** ![Imagem de uma lixeira](assets/icondelete.png) ao lado do anexo.
 
 ## Salvamento de cópias de rascunho de formulários {#saving-draft-copies-of-forms}
 
@@ -104,7 +104,7 @@ Se precisar preencher e enviar um formulário posteriormente, você poderá salv
 
 Depois de reabrir e enviar um formulário de rascunho, o rascunho é removido da categoria Rascunhos.
 
-Além disso, você pode configurar o espaço de trabalho para salvar automaticamente as informações inseridas por um usuário como rascunho. Para obter mais informações, consulte [Gerenciamento de preferências](/help/forms/using/getting-started-livecycle-html-workspace.md).
+Além disso, você pode configurar o espaço de trabalho para salvar automaticamente as informações inseridas por um usuário como rascunho. Para obter mais informações, consulte [Gerenciando Preferências](/help/forms/using/getting-started-livecycle-html-workspace.md).
 
 >[!NOTE]
 >
@@ -116,7 +116,7 @@ Além disso, você pode configurar o espaço de trabalho para salvar automaticam
 
 ### Reabrir uma cópia de rascunho {#reopen-a-draft-copy}
 
-1. Na página Tarefas, selecione a variável **Rascunhos** e clique na cópia de rascunho do formulário.
+1. Na página Tarefas, selecione a fila **Rascunhos** e clique na cópia de rascunho do formulário.
 
    Se o formulário contiver uma série de painéis, talvez seja necessário ir para o painel em que você encerrou sua última sessão.
 
@@ -126,6 +126,6 @@ Você pode adicionar qualquer processo à sua categoria Favoritos. Ao definir fa
 
 >[!NOTE]
 >
->Se você geralmente inicia processos ao usar o espaço de trabalho do AEM Forms, pode definir a preferência Iniciar local para exibir automaticamente a categoria Favoritos ao iniciar o espaço de trabalho do AEM Forms. Para obter mais detalhes, consulte Gerenciamento de preferências em [Introdução ao AEM Forms Workspace](/help/forms/using/getting-started-livecycle-html-workspace.md).
+>Se você geralmente inicia processos ao usar o espaço de trabalho do AEM Forms, pode definir a preferência Iniciar local para exibir automaticamente a categoria Favoritos ao iniciar o espaço de trabalho do AEM Forms. Para obter mais detalhes, consulte Gerenciamento de preferências em [Introdução ao AEM Forms workspace](/help/forms/using/getting-started-livecycle-html-workspace.md).
 
 Para marcar um processo como favorito, selecione a tarefa em sua categoria e clique na estrela vazia. A estrela fica dourada. Para desmarcar um processo como favorito, clique novamente na estrela dourada.

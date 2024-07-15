@@ -40,7 +40,7 @@ O Gerenciamento de correspondências expõe as APIs para buscar instâncias de c
 
 ### Uso de getAllLetterInstances {#using-nbsp-getallletterinstances}
 
-A API a seguir encontra as instâncias de correspondência com base no objeto de consulta (Enviado e Rascunho). Se o objeto de consulta for nulo, ele retornará todas as instâncias de letras. Essa API retorna uma lista de [LetterInstanceVO](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/dbforms/obj/LetterInstanceVO.html) objetos, que podem ser usados para extrair informações adicionais da ocorrência de carta.
+A API a seguir encontra as instâncias de correspondência com base no objeto de consulta (Enviado e Rascunho). Se o objeto de consulta for nulo, ele retornará todas as instâncias de letras. Esta API retorna uma lista de objetos [LetterInstanceVO](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/dbforms/obj/LetterInstanceVO.html), que podem ser usados para extrair informações adicionais da instância de carta.
 
 **Sintaxe**: `List getAllLetterInstances(Query query) throws ICCException;`
 
@@ -52,14 +52,14 @@ A API a seguir encontra as instâncias de correspondência com base no objeto de
   </tr>
   <tr>
    <td>query</td>
-   <td>O parâmetro de consulta é usado para localizar/filtrar a instância de carta. Aqui, a consulta aceita somente atributos/propriedades de nível superior do objeto. A consulta consiste em instruções e o "attributeName" usado no objeto Statement deve ser o nome da propriedade no objeto de instância Letter.<br /> </td>
+   <td>O parâmetro de consulta é usado para localizar/filtrar a instância de carta. Aqui, a consulta aceita somente atributos/propriedades de nível superior do objeto. A consulta consiste em instruções e o "attributeName" usado no objeto Statement deve ser o nome da propriedade no objeto Letter instance.<br /> </td>
   </tr>
  </tbody>
 </table>
 
 #### Exemplo 1: buscar todas as instâncias de correspondência do tipo ENVIADO {#example-fetch-all-the-letter-instances-of-type-submitted}
 
-O código a seguir retorna a lista de ocorrências de cartas enviadas. Para obter apenas rascunhos, altere a `LetterInstanceType.COMPLETE.name()` para `LetterInstanceType.DRAFT.name().`
+O código a seguir retorna a lista de ocorrências de cartas enviadas. Para obter somente rascunhos, altere o `LetterInstanceType.COMPLETE.name()` para `LetterInstanceType.DRAFT.name().`
 
 ```java
 @Reference

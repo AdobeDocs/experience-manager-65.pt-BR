@@ -47,8 +47,8 @@ Ao visualizar uma correspondência, o erro &quot;Erro ao carregar a correspondê
 
 Redefina o cache de cartas na instância de publicação usando as seguintes etapas e tente exibir a carta novamente:
 
-1. Ir para **`https://'[server]:[port]'/[contextPath]/system/console/configMgr`** e faça logon como Administrador.
-1. Selecionar **Configurações do gerenciamento de correspondência**.
-1. Entrada **Configurações do gerenciamento de correspondência**, desativar **Ativar cache de cartas** e clique em **Salve.**
-1. Marcar **Ativar cache de cartas** e clique em **Salvar**.
+1. Vá para **`https://'[server]:[port]'/[contextPath]/system/console/configMgr`** e faça logon como Administrador.
+1. Selecione **Configurações de gerenciamento de correspondência**.
+1. Em **Configurações de Gerenciamento de Correspondências**, desabilite **Habilitar Cache de Carta** e clique em **Salvar.**
+1. Marque **Habilitar Cache de Carta** e clique em **Salvar**.
 1. Tente novamente visualizar a carta.

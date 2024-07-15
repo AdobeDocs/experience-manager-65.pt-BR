@@ -20,19 +20,19 @@ ht-degree: 0%
 
 Eventos como erros de tempo de execução ou de inicialização são registrados nos arquivos de log do servidor de aplicativos. Se você tiver problemas ao implantar no servidor de aplicativos, poderá usar os arquivos de log para ajudá-lo a encontrar o problema. Você pode abrir os arquivos de log usando qualquer editor de texto.
 
-(JBoss) Os seguintes arquivos de log estão na `[appserver root]/server/'server'/log` diretório:
+(JBoss) Os seguintes arquivos de log estão no diretório `[appserver root]/server/'server'/log`:
 
 * boot.log
-* server.log.*[aaaa-mm-dd]*
+* server.log.*[dd-mm-yyyy]*
 * server.log
 
-(WebLogic) Os arquivos de log de domínio estão na `[appserverdomain]` diretório e os arquivos de log do servidor estão no `[appserverdomain]/servers/[appserver name]/logs` diretório:
+(WebLogic) Os arquivos de log de domínio estão no diretório `[appserverdomain]` e os arquivos de log do servidor estão no diretório `[appserverdomain]/servers/[appserver name]/logs`:
 
 * `access.log`
 * `[appserver name].log`
 * `[appserver name].out.[incremental number]`
 
-(WebSphere) Os seguintes arquivos de log estão na `[appserver root]/profiles/default/logs/[appserver name]` diretório:
+(WebSphere) Os seguintes arquivos de log estão no diretório `[appserver root]/profiles/default/logs/[appserver name]`:
 
 * SystemErr.log
 * SystemOut.log

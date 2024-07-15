@@ -22,13 +22,13 @@ Quando os componentes do AEM Communities são configurados com a marcação ativ
 
 A infraestrutura subjacente das tags aplicadas no ambiente de publicação é a mesma que as tags aplicadas ao conteúdo no ambiente de criação, como páginas e ativos:
 
-* Consulte [Administração de tags](../../help/sites-administering/tags.md) e [Marcação do conteúdo gerado pelo usuário](tag-ugc.md) (UGC) para obter informações sobre como criar e gerenciar tags.
+* Consulte [Administrando tags](../../help/sites-administering/tags.md) e [Marcando o conteúdo gerado pelo usuário](tag-ugc.md) (UGC) para obter informações sobre como criar e gerenciar tags.
 
-* Consulte [Marcação para desenvolvedores](../../help/sites-developing/tags.md) para obter informações sobre o [estrutura de marcação](../../help/sites-developing/framework.md) e inclusão e extensão de tags no [aplicativos personalizados](../../help/sites-developing/building.md).
+* Consulte [Marcação para desenvolvedores](../../help/sites-developing/tags.md) para obter informações sobre a [estrutura de marcação](../../help/sites-developing/framework.md) e sobre como incluir e estender marcas em [aplicativos personalizados](../../help/sites-developing/building.md).
 
-* Consulte [Uso da Social Tag Cloud](tagcloud.md) para obter informações para autores sobre como adicionar uma `social tag cloud` componente a uma página para realçar as tags aplicadas a UGC no ambiente de publicação.
+* Consulte [Usando a Nuvem da Marca Social](tagcloud.md) para obter informações para autores sobre como adicionar um componente `social tag cloud` a uma página para destacar as marcas aplicadas ao UGC no ambiente de publicação.
 
-A marcação de UGC pode ser ativada ao configurar um [site da comunidade](sites-console.md#tagging) ou um dos seguintes recursos:
+A marcação de UGC pode ser habilitada ao configurar um [site da comunidade](sites-console.md#tagging) ou um dos seguintes recursos:
 
 * [Blog](blog-feature.md)
 * [Calendário](calendar.md)
@@ -64,7 +64,7 @@ A marcação de UGC pode ser ativada ao configurar um [site da comunidade](sites
   </tr>
   <tr>
    <td><strong>propriedades</strong></td>
-   <td>Consulte <a href="tagcloud.md">Uso da Social Tag Cloud</a></td>
+   <td>Consulte <a href="tagcloud.md">Usando a Nuvem de Tags Sociais</a></td>
   </tr>
  </tbody>
 </table>
@@ -73,14 +73,14 @@ A marcação de UGC pode ser ativada ao configurar um [site da comunidade](sites
 
 ## Essentials para o lado do servidor {#essentials-for-server-side}
 
-* [API da nuvem de tag social](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/commons/tagcloud/api/package-summary.html)
+* [API da Nuvem da Marca Social](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/commons/tagcloud/api/package-summary.html)
 
-* [Gerenciador de tags sociais](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/commons/tagging/package-summary.html)
+* [Gerenciador de marcas sociais](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/commons/tagging/package-summary.html)
 
 * [Personalizações do lado do servidor](server-customize.md)
 
 ## Pesquisa de tags {#tag-searching}
 
-Em [pacote de recursos 1](deploy-communities.md#latestfeaturepack) (FP1), a pesquisa de tags é realizada usando [títulos de tags](../../help/sites-developing/framework.md#tag-characteristics).
+Desde o [feature pack 1](deploy-communities.md#latestfeaturepack) (FP1), a pesquisa de tags é executada usando [títulos de tags](../../help/sites-developing/framework.md#tag-characteristics).
 
 Antes do FP1, a pesquisa era realizada usando [ids de tag](../../help/sites-developing/framework.md#tagid).

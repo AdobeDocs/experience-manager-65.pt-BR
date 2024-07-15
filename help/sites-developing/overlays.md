@@ -18,27 +18,27 @@ ht-degree: 0%
 
 # Sobreposições{#overlays}
 
-O Adobe Experience Manager (AEM) — e, antes disso, o CQ — há muito tempo usa o princípio de sobreposições para permitir estender e personalizar o [consoles](/help/sites-developing/customizing-consoles-touch.md) e outras funcionalidades (por exemplo, [criação de página](/help/sites-developing/customizing-page-authoring-touch.md)).
+O Adobe Experience Manager (AEM) — e, antes disso, o CQ — há muito tempo usa o princípio de sobreposições para permitir que você estenda e personalize os [consoles](/help/sites-developing/customizing-consoles-touch.md) e outras funcionalidades (por exemplo, [criação de página](/help/sites-developing/customizing-page-authoring-touch.md)).
 
 Sobreposição é um termo usado em muitos contextos. Nesse contexto (extensão do AEM), uma sobreposição significa usar a funcionalidade predefinida e impor suas próprias definições sobre ela (para personalizar a funcionalidade padrão).
 
-Em uma instância padrão, a funcionalidade predefinida é mantida em `/libs` e é prática recomendada definir sua sobreposição (personalizações) no `/apps` filial. O AEM usa um caminho de pesquisa para encontrar um recurso, pesquisando primeiro o `/apps` e depois a variável `/libs` ramificação (a [o caminho de pesquisa pode ser configurado](#configuring-the-search-paths)). Esse mecanismo significa que sua sobreposição (e as personalizações definidas lá) tem prioridade.
+Em uma instância padrão, a funcionalidade predefinida é mantida em `/libs` e é prática recomendada definir sua sobreposição (personalizações) na ramificação `/apps`. O AEM usa um caminho de pesquisa para localizar um recurso, pesquisando primeiro a ramificação `/apps` e depois a ramificação `/libs` (o [caminho de pesquisa pode ser configurado](#configuring-the-search-paths)). Esse mecanismo significa que sua sobreposição (e as personalizações definidas lá) tem prioridade.
 
 Desde o AEM 6.0, foram feitas alterações no modo como as sobreposições são implementadas e usadas:
 
-* AEM 6.0 e posterior - para [Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)sobreposições relacionadas ao (ou seja, a interface habilitada para toque)
+* AEM 6.0 e posterior - para sobreposições relacionadas ao [Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) (ou seja, a interface habilitada para toque)
 
    * Método
 
-      * Reconstrua o apropriado `/libs` estrutura em `/apps`.
+      * Reconstruir a estrutura `/libs` apropriada em `/apps`.
 
-        Isso não exige uma cópia 1:1, a [Fusão de recursos do Sling](/help/sites-developing/sling-resource-merger.md) é usado para cruzar as definições originais necessárias. O Sling Resource Merger fornece serviços para acessar e mesclar recursos com mecanismos de diferenciação.
+        Isso não requer uma cópia 1:1. O [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md) é usado para fazer referência cruzada das definições originais necessárias. O Sling Resource Merger fornece serviços para acessar e mesclar recursos com mecanismos de diferenciação.
 
-      * Em `/apps`, faça as alterações necessárias.
+      * Em `/apps`, faça as alterações.
 
    * Vantagens
 
-      * Mais robusta às mudanças no `/libs`.
+      * Mais robusto para alterações em `/libs`.
       * Apenas redefina o que é necessário.
 
 * Sobreposições não-Granite e sobreposições antes do AEM 6.0
@@ -49,21 +49,21 @@ Desde o AEM 6.0, foram feitas alterações no modo como as sobreposições são 
 
         Copie a subramificação inteira, incluindo as propriedades.
 
-      * Em `/apps`, faça as alterações necessárias.
+      * Em `/apps`, faça as alterações.
 
    * Desvantagens
 
-      * Embora suas alterações não sejam perdidas quando algo for alterado em `/libs`, talvez seja necessário recriar determinadas alterações que ocorrem na sobreposição em `/apps`.
+      * Embora as alterações não sejam perdidas quando algo for alterado em `/libs`, talvez seja necessário recriar determinadas alterações que ocorrem na sobreposição em `/apps`.
 
 >[!CAUTION]
 >
->A variável [Fusão de recursos do Sling](/help/sites-developing/sling-resource-merger.md) e os métodos relacionados só podem ser usados com [Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html). Isso significa que a criação de uma sobreposição com uma estrutura de esqueleto só é apropriada para a interface de usuário padrão habilitada para toque.
+>O [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md) e os métodos relacionados só podem ser usados com o [Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html). Isso significa que a criação de uma sobreposição com uma estrutura de esqueleto só é apropriada para a interface de usuário padrão habilitada para toque.
 >
 >As sobreposições para outras áreas (incluindo a interface clássica) envolvem a cópia do nó apropriado e de toda a subestrutura e, em seguida, fazem as alterações necessárias.
 
-As sobreposições são o método recomendado para muitas alterações, como [configuração dos seus consoles](/help/sites-developing/customizing-consoles-touch.md#create-a-custom-console) ou [criar a categoria de seleção no navegador de ativos no painel lateral](/help/sites-developing/customizing-page-authoring-touch.md#add-new-selection-category-to-asset-browser) (usado ao criar páginas). Elas são necessárias como:
+Sobreposições são o método recomendado para muitas alterações, como [configurar seus consoles](/help/sites-developing/customizing-consoles-touch.md#create-a-custom-console) ou [criar a categoria de seleção para o navegador de ativos no painel lateral](/help/sites-developing/customizing-page-authoring-touch.md#add-new-selection-category-to-asset-browser) (usado ao criar páginas). Elas são necessárias como:
 
-* ***Não* fazer alterações no `/libs` ramificação **As alterações feitas podem ser perdidas, pois essa ramificação pode sofrer alterações sempre que você:
+* ***Não* fazer alterações na `/libs` ramificação **As alterações feitas podem ser perdidas, pois essa ramificação pode sofrer alterações sempre que você:
 
    * atualizar na sua instância
    * aplicar um hotfix
@@ -75,10 +75,10 @@ As sobreposições são o método recomendado para muitas alterações, como [co
 
 Para sobreposições, o recurso entregue é uma agregação dos recursos e propriedades recuperados, dependendo dos caminhos de pesquisa que podem ser definidos:
 
-* O recurso **Caminho de pesquisa do resolvedor** conforme definido na [Configuração OSGi](/help/sites-deploying/configuring-osgi.md) para o **Fábrica do Apache Sling Resource Resolver**.
+* O recurso **Caminho de Pesquisa do Resolvedor** conforme definido na [configuração OSGi](/help/sites-deploying/configuring-osgi.md) para a **Fábrica do Resolvedor de Recursos Apache Sling**.
 
    * A ordem de cima para baixo dos caminhos de pesquisa indica suas respectivas prioridades.
-   * Em uma instalação padrão, os padrões primários são `/apps`, `/libs` - para que o conteúdo de `/apps` tem uma prioridade mais alta do que a de `/libs` (ou seja, *sobreposições* it).
+   * Em uma instalação padrão, os padrões primários são `/apps`, `/libs` - portanto, o conteúdo de `/apps` tem uma prioridade mais alta do que a de `/libs` (isto é, ele *sobreposições*).
 
 * Dois usuários de serviço precisam de acesso JCR:READ ao local em que os scripts são armazenados. Esses usuários são: components-search-service (usado pelo com.day.cq.wcm.coto access/cache components) e sling-scripting (usado por org.apache.sling.servlets.resolver para localizar servlets).
 * A configuração a seguir também deve ser configurada de acordo com o local onde você coloca os scripts (neste exemplo, em /etc, /libs ou /apps).

@@ -32,17 +32,17 @@ Os detalhes do aplicativo podem ser exibidos no Painel ou no AEM Mobile Control 
 >
 >O Painel é uma série de blocos úteis que fornecem uma visão geral do conteúdo, dos metadados e do status da conexão do AEM Mobile On-Demand.
 >
->Consulte [Painel de aplicativos do AEM Mobile](/help/mobile/mobile-apps-ondemand-application-dashboard.md) para obter detalhes.
+>Consulte [Painel de Aplicativos do AEM Mobile](/help/mobile/mobile-apps-ondemand-application-dashboard.md) para obter detalhes.
 
 **Para criar um aplicativo sob demanda:**
 
-1. Selecionar **Dispositivo móvel** do painel lateral.
-1. Selecionar **Aplicativos** da Navegação.
+1. Selecione **Dispositivo móvel** no painel lateral.
+1. Selecione **Aplicativos** na Navegação.
 1. Clique em **Criar** e selecione **Aplicativo** no menu suspenso.
-1. Escolha o modelo de Aplicativo móvel e clique em **Próxima**.
-1. Insira as propriedades do aplicativo, como **Título**, **Nome**, **Descrição**.
+1. Escolha o modelo de Aplicativo móvel e clique em **Avançar**.
+1. Insira propriedades do aplicativo, como **Título**, **Nome**, **Descrição**.
 1. Clique em **Avançar**.
-1. Se conhecido, insira os detalhes da configuração na nuvem; caso contrário, clique em **Criar**.
+1. Se conhecidos, insira os detalhes de configuração da nuvem; caso contrário, clique em **Criar**.
 1. Clique em **Concluído** para exibir seu novo aplicativo AEM Mobile no catálogo.
 
 ![chlimage_1](assets/chlimage_1.gif)
@@ -64,19 +64,19 @@ Você deve ter um modelo de aplicativo móvel existente (ou um aplicativo instal
 
 Depois de criar um aplicativo sob demanda no painel do aplicativo, a próxima etapa é associar o aplicativo à configuração de nuvem.
 
-Consulte [Associar seu aplicativo à configuração na nuvem](/help/mobile/mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md) para obter mais detalhes.
+Consulte [Associando seu aplicativo à Configuração na Nuvem](/help/mobile/mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md) para obter mais detalhes.
 
 ### Avançando {#getting-ahead}
 
-Depois de conhecer a criação de um aplicativo sob demanda e, portanto, associar esse aplicativo a uma configuração de nuvem, consulte [Ações de gerenciamento de conteúdo](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md).
+Depois de conhecer a criação de um aplicativo sob demanda e, portanto, associar esse aplicativo a uma configuração na nuvem, consulte [Ações de gerenciamento de conteúdo](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md).
 
-**Ações de gerenciamento de conteúdo** envolve a criação e o gerenciamento dos seguintes conteúdos:
+**As Ações de Gerenciamento de Conteúdo** envolvem a criação e o gerenciamento do seguinte conteúdo:
 
 * [Gerenciamento de artigos](/help/mobile/mobile-on-demand-managing-articles.md)
 * [Gerenciamento de banners](/help/mobile/mobile-on-demand-managing-banners.md)
 * [Gerenciar coleções](/help/mobile/mobile-on-demand-managing-collections.md)
 * [Upload de recursos compartilhados](/help/mobile/mobile-on-demand-shared-resources.md)
-* [Publicar e desfazer publicação de conteúdo](/help/mobile/mobile-on-demand-publishing-unpublishing.md)
+* [Publish - Cancelar publicação de conteúdo](/help/mobile/mobile-on-demand-publishing-unpublishing.md)
 
 Para saber mais sobre as funções e responsabilidades de um Administrador e Desenvolvedor, consulte os recursos abaixo:
 

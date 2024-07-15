@@ -34,9 +34,9 @@ A partir daí, a publicação, a pré-visualização e o gerenciamento de conte�
 >
 >Para obter detalhes, consulte [Configuração do AEM Mobile On-demand Services](/help/mobile/aem-mobile-setup.md) na seção Administração.
 
-Para configurar os Cloud Service do Mobile On-Demand, clique na engrenagem superior no canto superior direito do **Gerenciar conexão** mosaico do painel do aplicativo.
+Para configurar os Cloud Service do Mobile On-Demand, clique na engrenagem superior no canto superior direito do bloco **Gerenciar conexão** do painel do aplicativo.
 
-Você deve estar familiarizado com o painel do aplicativo e os blocos disponíveis. Consulte [Painel de aplicativos do AEM Mobile](/help/mobile/mobile-apps-ondemand-application-dashboard.md) para obter mais detalhes.
+Você deve estar familiarizado com o painel do aplicativo e os blocos disponíveis. Consulte [Painel de Aplicativos do AEM Mobile](/help/mobile/mobile-apps-ondemand-application-dashboard.md) para obter mais detalhes.
 
 ### Definição da configuração de link para nuvem {#setting-up-link-to-cloud-configuration}
 
@@ -48,22 +48,22 @@ Você deve estar familiarizado com o painel do aplicativo e os blocos disponíve
 
 As etapas a seguir descrevem a definição do link para a configuração na nuvem:
 
-1. De **Dispositivo móvel**, escolha **Aplicativos** e, em seguida, seu aplicativo Mobile On-Demand do catálogo.
-1. Clique no ícone de engrenagem na **Gerenciar conexão** bloco.
+1. No **Mobile**, escolha **Apps** e seu aplicativo Mobile On-Demand no catálogo.
+1. Clique no ícone de engrenagem no bloco **Gerenciar Conexão**.
 
    ![chlimage_1-65](assets/chlimage_1-65.png)
 
-1. Insira a configuração já existente ou crie uma inserindo o **Título da configuração**, **ID do dispositivo**, e **Token do dispositivo**.
+1. Insira a configuração já existente ou crie uma inserindo o **Título da Configuração**, o **ID do Dispositivo** e o **Token do Dispositivo**.
 
    ![chlimage_1-66](assets/chlimage_1-66.png)
 
-1. Uma vez que o **ID do dispositivo** e **Token do dispositivo** forem verificadas, escolha seu projeto On-Demand na lista.
+1. Depois que a sua **ID do dispositivo** e o **Token do dispositivo** forem verificados, escolha o seu projeto sob demanda na lista.
 
    Clique em **Enviar**.
 
    ![chlimage_1-67](assets/chlimage_1-67.png)
 
-   A variável **Gerenciar conexão** O bloco mostra a Configuração na nuvem.
+   O bloco **Gerenciar Conexão** mostra sua Configuração na Nuvem.
 
    ![chlimage_1-68](assets/chlimage_1-68.png)
 

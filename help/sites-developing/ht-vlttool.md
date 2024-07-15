@@ -18,13 +18,13 @@ ht-degree: 1%
 
 # Como usar a ferramenta VLT {#how-to-use-the-vlt-tool}
 
-A ferramenta Jackrabbit FileVault (VLT) é uma ferramenta desenvolvida pela [A Fundação Apache](https://www.apache.org/) que mapeia o conteúdo de uma instância Jackrabbit/AEM para o seu sistema de arquivos. A ferramenta VLT tem funções semelhantes às do cliente do sistema de controle de origem (como um cliente SVN), fornecendo operações normais de check-in, check-out e gerenciamento, além de opções de configuração para representação flexível do conteúdo do projeto.
+A ferramenta Jackrabbit FileVault (VLT) é uma ferramenta desenvolvida pela [The Apache Foundation](https://www.apache.org/), que mapeia o conteúdo de uma instância Jackrabbit/AEM para o seu sistema de arquivos. A ferramenta VLT tem funções semelhantes às do cliente do sistema de controle de origem (como um cliente SVN), fornecendo operações normais de check-in, check-out e gerenciamento, além de opções de configuração para representação flexível do conteúdo do projeto.
 
-Execute a ferramenta VLT a partir da linha de comando. Este documento descreve como usar a ferramenta, incluindo como começar e obter ajuda, e uma lista de todos os [comandos](#vlt-commands) e disponíveis [opções](#vlt-global-options).
+Execute a ferramenta VLT a partir da linha de comando. Este documento descreve como usar a ferramenta, incluindo como começar e obter ajuda, e uma lista de todos os [comandos](#vlt-commands) e as [opções](#vlt-global-options) disponíveis.
 
 ## Conceitos e arquitetura {#concepts-and-architecture}
 
-Consulte a [Visão geral do Filevault](https://jackrabbit.apache.org/filevault/overview.html) e [Vault FS](https://jackrabbit.apache.org/filevault/vaultfs.html) página do funcionário [Documentação do Apache Jackrabbit Filevault](https://jackrabbit.apache.org/filevault/index.html) para obter uma visão geral completa dos conceitos e da estrutura da ferramenta Filevault.
+Consulte a página [Visão geral do Filevault](https://jackrabbit.apache.org/filevault/overview.html) e [Vault FS](https://jackrabbit.apache.org/filevault/vaultfs.html) da [documentação oficial do Apache Jackrabbit Filevault](https://jackrabbit.apache.org/filevault/index.html) para obter uma visão geral completa dos conceitos e da estrutura da ferramenta Filevault.
 
 ## Introdução ao VLT {#getting-started-with-vlt}
 
@@ -40,16 +40,16 @@ Para começar a usar o VLT, é necessário fazer o seguinte:
 
 Para usar a ferramenta VLT, primeiro é necessário instalá-la. Ele não é instalado por padrão, pois é uma ferramenta adicional. Além disso, é necessário definir a variável de ambiente do sistema.
 
-1. Baixe o arquivo de arquivamento do FileVault no [Repositório de artefatos Maven.](https://repo1.maven.org/maven2/org/apache/jackrabbit/vault/vault-cli/)
+1. Baixe o arquivo morto FileVault do [repositório de artefatos Maven.](https://repo1.maven.org/maven2/org/apache/jackrabbit/vault/vault-cli/)
    >[!NOTE]
    >
    >A origem da ferramenta VLT é [disponível no GitHub.](https://github.com/apache/jackrabbit-filevault)
 1. Extraia o arquivo.
-1. Adicionar `<archive-dir>/vault-cli-<version>/bin` ao seu ambiente `PATH` para que os arquivos de comando `vlt` ou `vlt.bat` são acessados conforme apropriado. Por exemplo:
+1. Adicione `<archive-dir>/vault-cli-<version>/bin` ao ambiente `PATH` para que os arquivos de comando `vlt` ou `vlt.bat` sejam acessados conforme apropriado. Por exemplo:
 
    `<aem-installation-dir>/crx-quickstart/opt/helpers/vault-cli-3.1.16/bin>`
 
-1. Abrir um shell de linha de comando e executar `vlt --help`. Verifique se a saída é semelhante à seguinte tela de ajuda:
+1. Abra um shell de linha de comando e execute `vlt --help`. Verifique se a saída é semelhante à seguinte tela de ajuda:
 
    ```shell
    vlt --help
@@ -90,9 +90,9 @@ O VLT processa automaticamente o Final da Linha (EOF) de acordo com as seguintes
 
 * linhas de arquivos com check-out no Windows terminam com um `CRLF`
 * linhas de arquivos com check-out no Linux/Unix terminam com um `LF`
-* linhas de arquivos enviadas ao repositório terminam com um `LF`
+* linhas de arquivos confirmadas no repositório terminam com um `LF`
 
-Para garantir que a configuração do VLT e do SVN correspondam, você deve configurar o `svn:eol-style` propriedade para `native` para a extensão dos arquivos armazenados no repositório. Edite suas configurações de svn e adicione o seguinte:
+Para garantir que a configuração de VLT e SVN corresponda, você deve configurar a propriedade `svn:eol-style` como `native` para a extensão dos arquivos armazenados no repositório. Edite suas configurações de svn e adicione o seguinte:
 
 ```xml
 [auto-props]
@@ -122,7 +122,7 @@ svn co https://svn.server.com/repos/myproject
 Você precisa sincronizar o cofre com o repositório. Para fazer isso:
 
 1. Na linha de comando, navegue até `content/jcr_root`.
-1. Verifique o repositório digitando o seguinte (substituindo o número da porta por **4502** e suas senhas de administrador):
+1. Verifique o repositório digitando o seguinte (substituindo seu número de porta por **4502** e suas senhas de administrador):
 
    ```shell
    vlt --credentials admin:admin co --force http://localhost:4502/crx
@@ -130,17 +130,17 @@ Você precisa sincronizar o cofre com o repositório. Para fazer isso:
 
    >[!NOTE]
    >
-   >As credenciais devem ser especificadas apenas uma vez no check-out inicial. Em seguida, eles serão armazenados em seu diretório inicial no `.vault/auth.xml`.
+   >As credenciais devem ser especificadas apenas uma vez no check-out inicial. Eles serão armazenados em seu diretório inicial dentro de `.vault/auth.xml`.
 
 ### Testar se a sincronização funcionou {#testing-whether-the-synchronization-worked}
 
-Depois de fazer check-out do repositório e sincronizá-lo, você deve testar para garantir que tudo funcione corretamente. Uma maneira fácil de fazer isso é editar um **.jsp** e veja se suas alterações são refletidas após a confirmação das alterações.
+Depois de fazer check-out do repositório e sincronizá-lo, você deve testar para garantir que tudo funcione corretamente. Uma maneira fácil de fazer isso é editar um arquivo **.jsp** e ver se suas alterações são refletidas após confirmar as alterações.
 
 Para testar a sincronização:
 
 1. Vá até `.../jcr_content/libs/foundation/components/text`.
 1. Editar algo em `text.jsp`.
-1. Veja os arquivos modificados digitando `vlt st`
+1. Ver os arquivos modificados digitando `vlt st`
 1. Veja as alterações digitando `vlt diff text.jsp`
 1. Confirme as alterações: `vlt ci test.jsp`.
 1. Recarregue uma página contendo um componente de texto e veja se suas alterações estão lá.
@@ -214,21 +214,21 @@ Options:
 
 ## Tarefas Comuns Executadas no VLT {#common-tasks-performed-in-vlt}
 
-A seguir estão algumas tarefas comuns executadas no VLT. Para obter informações detalhadas sobre cada comando, consulte as [comandos](#vlt-commands).
+A seguir estão algumas tarefas comuns executadas no VLT. Para obter informações detalhadas sobre cada comando, consulte os [comandos](#vlt-commands) individuais.
 
 ### Fazendo Check-out de uma Subárvore {#checking-out-a-subtree}
 
-Se você quiser apenas fazer check-out de uma subárvore do repositório, por exemplo, `/apps/geometrixx`, você pode fazer isso digitando o seguinte:
+Se você quiser fazer check-out apenas de uma subárvore do repositório, por exemplo, `/apps/geometrixx`, digite o seguinte:
 
 ```shell
 vlt co http://localhost:4502/crx/-/jcr:root/apps/geometrixx geo
 ```
 
-Fazer isso cria uma nova raiz de exportação `geo` com um `META-INF` e `jcr_root` e coloca todos os arquivos abaixo de `/apps/geometrixx` in `geo/jcr_root`.
+Isso cria uma nova raiz de exportação `geo` com um diretório `META-INF` e `jcr_root` e coloca todos os arquivos abaixo de `/apps/geometrixx` em `geo/jcr_root`.
 
 ### Executando uma Finalização Filtrada {#performing-a-filtered-checkout}
 
-Se você tiver um filtro de espaço de trabalho existente e quiser usá-lo para o check-out, poderá primeiro criar o `META-INF/vault` e coloque o filtro lá ou especifique-o na linha de comando da seguinte maneira:
+Se você tiver um filtro de espaço de trabalho existente e quiser usá-lo para check-out, poderá primeiro criar o diretório `META-INF/vault` e colocar o filtro nele ou especificá-lo na linha de comando da seguinte maneira:
 
 ```shell
 $ vlt co --filter filter.xml http://localhost:4502/crx/-/jcr:root geo
@@ -248,7 +248,7 @@ Um exemplo de filtro:
 
 Você pode importar e exportar conteúdo entre um repositório JCR e o sistema de arquivos local sem usar arquivos de controle.
 
-Para importar e exportar conteúdo sem usar `.vlt` controle:
+Para importar e exportar conteúdo sem usar o controle `.vlt`:
 
 1. Inicialmente, configure o repositório:
 
@@ -336,7 +336,7 @@ A tabela a seguir descreve todos os comandos VLT disponíveis. Consulte os coman
 
 ### Exportar {#export}
 
-Exporta o sistema de arquivos do Vault montado em &lt;uri> ao sistema de arquivos local em &lt;local-path>. Uma opção &lt;jcr-path> pode ser especificado para exportar apenas uma subárvore.
+Exporta o sistema de arquivos do Vault montado em &lt;uri> para o sistema de arquivos local em &lt;local-path>. Um &lt;jcr-path> opcional pode ser especificado para exportar apenas uma subárvore.
 
 #### Sintaxe {#syntax}
 
@@ -363,7 +363,7 @@ vlt export http://localhost:4502/crx /apps/geometrixx myproject
 
 ### Importar {#import}
 
-Importa o sistema de arquivos local (começando em `<local-path>` para o sistema de arquivos do Vault em `<uri>`. Você pode especificar um `<jcr-path>` como raiz de importação. Se `--sync` for especificado, os arquivos importados serão automaticamente colocados no controle do Vault.
+Importa o sistema de arquivos local (iniciando em `<local-path>` para o sistema de arquivos do cofre em `<uri>`. Você pode especificar um `<jcr-path>` como raiz de importação. Se `--sync` for especificado, os arquivos importados serão automaticamente colocados sob controle do cofre.
 
 #### Sintaxe {#syntax-1}
 
@@ -389,7 +389,7 @@ vlt import http://localhost:4502/crx . /
 
 ### Check-out (co) {#checkout-co}
 
-Executa uma finalização inicial de um repositório JCR para o sistema de arquivos local, iniciando em &lt;uri> ao sistema de arquivos local em &lt;local-path>. Você também pode adicionar um &lt;jcrpath> argumento para verificar um subdiretório da árvore remota. É possível especificar filtros do Workspace que são copiados para o diretório META-INF.
+Executa uma verificação inicial de um repositório JCR no sistema de arquivos local, iniciando em &lt;uri> para o sistema de arquivos local em &lt;local-path>. Você também pode adicionar um argumento &lt;jcrPath> para verificar um subdiretório da árvore remota. É possível especificar filtros Workspace que são copiados para o diretório META-INF.
 
 #### Sintaxe {#syntax-2}
 
@@ -549,7 +549,7 @@ revert -q|-R <file1> [<file2> ...]
 
 ### Resolvido {#resolved}
 
-Remove **conflitante** estado em arquivos ou diretórios de cópia de trabalho.
+Remove o estado **conflitante** nos arquivos ou diretórios da cópia de trabalho.
 
 >[!NOTE]
 >
@@ -709,7 +709,7 @@ console -F <file>
 
 ### Rcp {#rcp}
 
-Copia uma árvore de nós de um repositório remoto para outro. `<src>` aponta para o nó de origem e `<dst>` especifica o caminho de destino, onde o nó principal deve existir. O Rcp processa os nós transmitindo os dados.
+Copia uma árvore de nós de um repositório remoto para outro. `<src>` aponta para o nó de origem e `<dst>` especifica o caminho de destino, onde o nó pai deve existir. O Rcp processa os nós transmitindo os dados.
 
 #### Sintaxe {#syntax-17}
 
@@ -739,7 +739,7 @@ vlt rcp http://localhost:4502/crx/-/jcr:root/content  https://admin:admin@localh
 
 >[!NOTE]
 >
->A variável `--exclude` opções precisam ser seguidas por outra opção antes da exibição do `<src>` e `<dst>` argumentos. Por exemplo:
+>As opções `--exclude` precisam ser seguidas por outra opção antes dos argumentos `<src>` e `<dst>`. Por exemplo:
 >
 >`vlt rcp -e ".*\.txt" -r`
 
@@ -788,9 +788,9 @@ O serviço de sincronização do Vault é usado para sincronizar o conteúdo do 
 
 ### Instalando o serviço usando vlt {#installing-the-service-using-vlt}
 
-A variável `vlt sync install` comando pode ser usado para instalar o pacote de serviço e a configuração do vault sync automaticamente.
+O comando `vlt sync install` pode ser usado para instalar o pacote de serviços de sincronização do Vault e a configuração automaticamente.
 
-O pacote é instalado abaixo `/libs/crx/vault/install` e o nó de configuração é criado em `/libs/crx/vault/com.day.jcr.sync.impl.VaultSyncServiceImpl`. Inicialmente, o serviço está habilitado, mas nenhuma raiz de sincronização está configurada.
+O pacote está instalado abaixo de `/libs/crx/vault/install` e o nó de configuração é criado em `/libs/crx/vault/com.day.jcr.sync.impl.VaultSyncServiceImpl`. Inicialmente, o serviço está habilitado, mas nenhuma raiz de sincronização está configurada.
 
 O exemplo a seguir instala o serviço de sincronização na instância do CRX acessível pelo uri fornecido.
 
@@ -800,7 +800,7 @@ $ vlt --credentials admin:admin sync --uri http://localhost:4502/crx install
 
 ### Exibição do status do serviço {#displaying-the-service-status}
 
-A variável `status` comando pode ser usado para exibir informações sobre o serviço de sincronização em execução. &quot;
+O comando `status` pode ser usado para exibir informações sobre o serviço de sincronização em execução. &quot;
 
 ```shell
 $ vlt sync status --uri http://localhost:4502/crx
@@ -812,11 +812,11 @@ Listing sync status for http://localhost:4502/crx/server/-/jcr:root
 
 >[!NOTE]
 >
->A variável `status` não busca dados em tempo real do serviço, mas lê a configuração em `/libs/crx/vault/com.day.jcr.sync.impl.VaultSyncServiceImpl`.
+>O comando `status` não busca nenhum dado ativo do serviço, mas lê a configuração em `/libs/crx/vault/com.day.jcr.sync.impl.VaultSyncServiceImpl`.
 
 ### Adição de uma pasta de sincronização {#adding-a-sync-folder}
 
-A variável `register` é usado para adicionar uma pasta para sincronizar com a configuração.
+O comando `register` é usado para adicionar uma pasta para sincronizar com a configuração.
 
 ```shell
 $ vlt sync register
@@ -826,11 +826,11 @@ Added new sync directory: /tmp/workspace/vltsync/jcr_root
 
 >[!NOTE]
 >
->A variável `register` O comando não aciona uma sincronização até que você configure o `sync-once` configuração.
+>O comando `register` não aciona uma sincronização até que você defina a configuração `sync-once`.
 
 ### Remoção de uma pasta de sincronização {#removing-a-sync-folder}
 
-A variável `unregister` é usado para remover uma pasta para sincronização da configuração.
+O comando `unregister` é usado para remover uma pasta para sincronização da configuração.
 
 ```shell
 $  vlt sync unregister
@@ -855,9 +855,9 @@ Quando o serviço estiver em execução, ele poderá ser configurado com os segu
 
 >[!NOTE]
 >
->O serviço pode ser configurado com o console da Web ou um `sling:OsgiConfig` nó (com o nome `com.day.jcr.sync.impl.VaultSyncServiceImpl`) no repositório.
+>O serviço pode ser configurado com o console da Web ou um nó `sling:OsgiConfig` (com o nome `com.day.jcr.sync.impl.VaultSyncServiceImpl`) no repositório.
 >
->Ao trabalhar com AEM, há vários métodos de gerenciamento das definições de configuração desses serviços; consulte [Configuração do OSGi](/help/sites-deploying/configuring-osgi.md) para obter detalhes completos.
+>Ao trabalhar com AEM, há vários métodos de gerenciamento das definições de configuração desses serviços; consulte [Configurar OSGi](/help/sites-deploying/configuring-osgi.md) para obter detalhes completos.
 
 #### Sincronizar configuração da pasta {#sync-folder-configuration}
 
@@ -866,13 +866,13 @@ Cada pasta de sincronização armazena a configuração e o status em três arqu
 * `.vlt-sync-config.properties`: arquivo de configuração.
 
 * `.vlt-sync.log`: arquivo de log que contém informações sobre as operações executadas durante a sincronização.
-* `.vlt-sync-filter.xml`: filtros que definem quais partes do repositório são sincronizadas. O formato desse arquivo é descrito pela variável [Execução de um check-out filtrado](#performing-a-filtered-checkout) seção.
+* `.vlt-sync-filter.xml`: filtros que definem quais partes do repositório são sincronizadas. O formato deste arquivo é descrito pela seção [Executando um check-out filtrado](#performing-a-filtered-checkout).
 
-A variável `.vlt-sync-config.properties` file permite configurar as seguintes propriedades:
+O arquivo `.vlt-sync-config.properties` permite configurar as seguintes propriedades:
 
 **desabilitado** Ativa ou desativa a sincronização. Por padrão, esse parâmetro é definido como false para permitir a sincronização.
 
-**sync-once** Se não estiver vazio, a próxima verificação sincronizará a pasta na direção especificada, e o parâmetro será limpo. Dois valores são suportados:
+**sincronizar uma vez** Se não estiver vazio, a próxima verificação sincronizará a pasta na direção especificada e o parâmetro será limpo. Dois valores são suportados:
 
 * `JCR2FS`: exporta todo o conteúdo do repositório JCR e grava no disco local.
 * `FS2JCR`: importa todo o conteúdo do disco para o repositório JCR.
@@ -891,7 +891,7 @@ Para configurar um ambiente de desenvolvimento com base em uma pasta de sincroni
 
    >[!NOTE]
    >
-   >É possível usar filtros para fazer check-out apenas dos caminhos apropriados. Consulte a [Execução de um check-out filtrado](#performing-a-filtered-checkout) para obter informações.
+   >É possível usar filtros para fazer check-out apenas dos caminhos apropriados. Consulte a seção [Executando um check-out filtrado](#performing-a-filtered-checkout) para obter informações.
 
 1. Vá para a pasta raiz da sua cópia de trabalho:
 
@@ -922,7 +922,7 @@ Para configurar um ambiente de desenvolvimento com base em uma pasta de sincroni
    appropriate flag in the /Users/trushton/Applications/aem/vltsync/sandbox/dev/jcr_root/.vlt-sync-config.properties file.
    ```
 
-1. Edite o `.vlt-sync-config.properties` arquivo oculto e configure a sincronização para sincronizar o conteúdo do repositório:
+1. Edite o arquivo oculto `.vlt-sync-config.properties` e configure a sincronização para sincronizar o conteúdo do seu repositório:
 
    ```xml
    sync-once=JCR2FS
@@ -932,7 +932,7 @@ Para configurar um ambiente de desenvolvimento com base em uma pasta de sincroni
    >
    >Essa etapa baixa todo o repositório de acordo com a configuração de filtro.
 
-1. Verificar o arquivo de log `.vlt-sync.log` para ver o progresso:
+1. Verifique o arquivo de log `.vlt-sync.log` para ver o progresso:
 
    ```xml
    ***

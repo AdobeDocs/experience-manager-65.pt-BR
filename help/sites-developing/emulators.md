@@ -44,7 +44,7 @@ Um emulador:
 * Sua aparência é regulada por CSS.
 * Suporta plug-ins (por exemplo, o plug-in de rotação de dispositivo móvel).
 * Está ativo somente no autor.
-* Seu componente básico está em `/libs/wcm/emulator/components/base`.
+* Seu componente base está em `/libs/wcm/emulator/components/base`.
 
 ### Como o emulador transforma o conteúdo {#how-the-emulator-transforms-the-content}
 
@@ -88,9 +88,9 @@ O emulador funciona envolvendo o conteúdo do corpo do HTML em DIVs do emulador.
 
 Duas tags div foram adicionadas:
 
-* a div com id `cq-emulator` a manutenção do emulador como um todo e
+* o div com id `cq-emulator` que contém o emulador como um todo e
 
-* a div com id `cq-emulator-content` representando o visor/tela/área de conteúdo do dispositivo onde o conteúdo da página reside.
+* a div com id `cq-emulator-content` representando a área de visor/tela/conteúdo do dispositivo em que o conteúdo da página reside.
 
 Novas classes CSS também são atribuídas aos novos divs do emulador: elas representam o nome do emulador atual.
 
@@ -111,13 +111,13 @@ Os emuladores móveis existentes:
 
   http://localhost:4502/bin/wcm/mobile/emulators.json
 
-Quando o componente de página depende do componente de página móvel ( `/libs/wcm/mobile/components/page`), a funcionalidade do emulador é integrada automaticamente na página por meio do seguinte mecanismo:
+Quando o componente de página depende do componente de página móvel ( `/libs/wcm/mobile/components/page`), a funcionalidade de emulador é automaticamente integrada na página através do seguinte mecanismo:
 
-* O componente de página móvel `head.jsp` inclui o componente de inicialização do emulador associado ao grupo de dispositivos (somente no modo autor) e o CSS de renderização do grupo de dispositivos por meio de:
+* O componente de página móvel `head.jsp` inclui o componente de inicialização do emulador associado ao grupo de dispositivos (somente no modo de autor) e a renderização de CSS do grupo de dispositivos por meio de:
 
   `deviceGroup.drawHead(pageContext);`
 
-* O método `DeviceGroup.drawHead(pageContext)` inclui o componente de inicialização do emulador, ou seja, chama o `init.html.jsp` do componente do emulador. Se o componente do emulador não tiver o seu próprio `init.html.jsp` e depende do emulador base móvel ( `wcm/mobile/components/emulators/base)`, o script de inicialização do emulador base móvel é chamado de ( `/libs/wcm/mobile/components/emulators/base/init.html.jsp`).
+* O método `DeviceGroup.drawHead(pageContext)` inclui o componente de inicialização do emulador, ou seja, chama o `init.html.jsp` do componente do emulador. Se o componente emulador não tiver seu próprio `init.html.jsp` e depender do emulador base móvel ( `wcm/mobile/components/emulators/base)`, o script de inicialização do emulador base móvel é chamado de ( `/libs/wcm/mobile/components/emulators/base/init.html.jsp`).
 
 * O script de inicialização do emulador base móvel é definido pelo JavaScript:
 
@@ -134,11 +134,11 @@ Quando o componente de página depende do componente de página móvel ( `/libs/
 
 Para criar um emulador móvel personalizado:
 
-1. Abaixo `/apps/myapp/components/emulators` criar o componente `myemulator` (tipo de nó: `cq:Component`).
+1. Abaixo de `/apps/myapp/components/emulators`, crie o componente `myemulator` (tipo de nó: `cq:Component`).
 
-1. Defina o `sling:resourceSuperType` propriedade para `/libs/wcm/mobile/components/emulators/base`
+1. Definir a propriedade `sling:resourceSuperType` como `/libs/wcm/mobile/components/emulators/base`
 
-1. Definir uma biblioteca do cliente CSS com categoria `cq.wcm.mobile.emulator` para a aparência do emulador: nome = `css`, tipo de nó = `cq:ClientLibrary`
+1. Defina uma biblioteca de cliente CSS com a categoria `cq.wcm.mobile.emulator` para a aparência do emulador: nome = `css`, tipo de nó = `cq:ClientLibrary`
 
    Como exemplo, você pode consultar o nó `/libs/wcm/mobile/components/emulators/iPhone/css`
 

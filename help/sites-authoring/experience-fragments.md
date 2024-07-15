@@ -33,7 +33,7 @@ Use os Fragmentos de experiência:
 
 * Se um autor quiser reutilizar partes (um fragmento de uma experiência) de uma página, ele precisará copiar e colar esse fragmento. Criar e manter essa experiências de copiar/colar é um processo demorado e pode causar erros feitos pelo usuário. Os fragmentos de experiência eliminam a necessidade de copiar/colar.
 * Para dar suporte ao caso de uso de CMS headless. Os autores desejam usar o AEM somente para criação, não para entrega ao cliente. Um ponto de contato ou sistema de terceiros consumiria essa experiência e a entregaria para o usuário final.
-* Com [Gerenciamento de vários sites (MSM)](/help/sites-administering/msm.md); como um Fragmento de experiência faz parte de uma página. Isso se aplica aos fragmentos individuais e às pastas em que eles residem.
+* Com o [Gerenciamento de vários sites (MSM)](/help/sites-administering/msm.md); o como um Fragmento de experiência faz parte de uma página. Isso se aplica aos fragmentos individuais e às pastas em que eles residem.
 
 >[!NOTE]
 >
@@ -63,7 +63,7 @@ Fragmentos de experiência devem ser usados:
 
 * Quando você usar o Comércio omnichannel.
 
-   * Compartilhamento de conteúdo relacionado ao comércio no [redes sociais](/help/sites-developing/experience-fragments.md#social-variations) canais em escala
+   * Compartilhando conteúdo comercial em [redes sociais](/help/sites-developing/experience-fragments.md#social-variations) canais em escala
    * Tornar pontos de contato transacionais
 
 ## Organizar os Fragmentos de experiência {#organizing-your-experience-fragments}
@@ -177,7 +177,7 @@ Para criar um fragmento de experiência:
 
 1. Insira as **Propriedades** do **Fragmento de experiência**.
 
-   É obrigatório ter um **título**. Se a variável **Nome** for deixada em branco, será derivada do **Título**.
+   É obrigatório ter um **título**. Se o **Nome** for deixado em branco, ele será derivado do **Título**.
 
    ![xf-04](assets/xf-04.png)
 
@@ -205,11 +205,11 @@ O Editor de fragmento de experiência oferece recursos semelhantes ao editor de 
 
 O exemplo de procedimento a seguir ilustra como criar um teaser de um produto:
 
-1. Arraste e solte uma **Teaser** do [Navegador de componentes](/help/sites-authoring/author-environment-tools.md#components-browser).
+1. Arraste e solte um **Teaser** do [Navegador de Componentes](/help/sites-authoring/author-environment-tools.md#components-browser).
 
    ![xf-05](assets/xf-05.png)
 
-1. Selecionar **[Configurar](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste)** na barra de ferramentas do componente.
+1. Selecione **[Configurar](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste)** na barra de ferramentas do componente.
 1. Adicione o **Ativo** e defina as **Propriedades** conforme necessário.
 1. Confirme as definições com **Concluído** (ícone de marca de verificação).
 1. Adicione mais componentes conforme necessário.
@@ -230,7 +230,7 @@ O exemplo de procedimento a seguir ilustra como criar um teaser de um produto:
 
      >[!NOTE]
      >
-     >Criar uma variação inicial como Live Copy herdará o título usando a Origem da Live Copy como a Variação principal.
+     >Criar uma variação inicial como Live Copy herdará o título usando a Source da Live Copy como a variação principal.
 
 1. Defina as propriedades necessárias:
 
@@ -242,7 +242,7 @@ O exemplo de procedimento a seguir ilustra como criar um teaser de um produto:
 
    ![xf-06](assets/xf-06.png)
 
-1. Confirmar com **Concluído** (ícone de marca de verificação), a nova variação é mostrada no painel:
+1. Confirme com **Concluído** (ícone de marca de verificação), a nova variação será mostrada no painel:
 
    ![xf-07](assets/xf-07.png)
 
@@ -264,8 +264,8 @@ Agora você poderá usar seu fragmento de experiência ao criar suas páginas:
 
 1. Adicione o Fragmento de experiência real à ocorrência de componente:
 
-   * Arraste o fragmento necessário do Navegador de ativos e solte no componente
-   * Selecionar **Configurar** na barra de ferramentas do componente e especifique o fragmento a ser usado, confirme com **Concluído** (marca de verificação)
+   * Arraste o fragmento necessário do Navegador Assets e solte no componente
+   * Selecione **Configurar** na barra de ferramentas do componente e especifique o fragmento a ser usado, confirme com **Concluído** (marca de seleção)
 
    ![xf-09](assets/xf-09.png)
 
@@ -293,7 +293,7 @@ Para criar um Bloco de Construção:
 
    ![xf-11](assets/xf-11.png)
 
-1. A variável **Bloco de construção** é exibido na guia e pode ser selecionado no sistema de parágrafos:
+1. O **Bloco de Construção** é mostrado na guia e pode ser selecionado no sistema de parágrafos:
 
    ![xf-12](assets/xf-12.png)
 
@@ -343,7 +343,7 @@ Os detalhes do fragmento podem ser vistos:
       * **Número total de variantes** - somente informações
 
       * **Número de variantes da Web** - somente informações
-      * **Número de variantes que não fazem parte da Web** - inf **Somente formação**
+      * **Número de variantes que não fazem parte da Web** - inf **somente formatação**
 
       * **Número de páginas usando esse fragmento** - somente informações
 

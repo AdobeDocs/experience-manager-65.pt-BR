@@ -22,6 +22,6 @@ A Comunidade Adobe Experience Manager (AEM) gerou uma série de artigos relacion
 
 Veja a seguir uma lista do conteúdo disponível:
 
-* [Uso das regras de ativação nas páginas da Web do Adobe Experience Manager](https://helpx.adobe.com/experience-manager/using/dtm.html)
+* [Usando regras de Ativação em páginas da Web do Adobe Experience Manager](https://helpx.adobe.com/experience-manager/using/dtm.html)
 * [Integração do AEM ao Adobe Analytics e ao Target usando o DTM](https://helpx.adobe.com/experience-manager/using/integrate-digital-marketing-solutions.html)
-* [Integração do Adobe Experience Manager e do Adobe Campaign Standard para criar informativos](https://helpx.adobe.com/experience-manager/using/aem_campaign.html)
+* [Integrando o Adobe Experience Manager e o Adobe Campaign Standard para criar informativos](https://helpx.adobe.com/experience-manager/using/aem_campaign.html)

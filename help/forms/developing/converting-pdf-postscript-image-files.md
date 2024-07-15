@@ -18,9 +18,9 @@ ht-degree: 0%
 
 # Conversão de PDF para arquivos Postscript e de imagem {#converting-pdf-to-postscript-andimage-files}
 
-**Os exemplos e amostras neste documento são somente para AEM Forms no ambiente JEE.**
+**Exemplos e exemplos neste documento são somente para AEM Forms no ambiente JEE.**
 
-**Sobre o serviço de conversão de PDF**
+**Sobre o Serviço Converter PDF**
 
 O serviço Convert PDF converte documentos PDF para PostScript e para vários formatos de imagem (JPEG, JPEG 2000, PNG e TIFF). A conversão de um documento PDF em PostScript é útil para impressão autônoma baseada em servidor em qualquer impressora PostScript. A conversão de um documento de PDF em um arquivo de TIFF de várias páginas é prática ao arquivar documentos em sistemas de gerenciamento de conteúdo que não sejam compatíveis com documentos de PDF.
 
@@ -33,7 +33,7 @@ Você pode realizar essas tarefas usando o serviço Converter PDF:
 >
 >Para obter mais informações sobre o serviço Converter PDF, consulte [Referência de serviços para o AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
-## Conversão de documentos PDF em PostScript {#converting-pdf-documents-to-postscript}
+## Conversão de documentos PDF para PostScript {#converting-pdf-documents-to-postscript}
 
 Este tópico descreve como você pode usar a API de serviço Converter PDF (Java e serviço Web) para converter programaticamente documentos PDF em arquivos PostScript. O documento PDF que é convertido em um arquivo PostScript deve ser um documento PDF não interativo. Ou seja, se você tentar converter um documento PDF interativo em um arquivo PostScript, ocorrerá uma exceção.
 
@@ -50,7 +50,7 @@ Para converter um documento PDF em um arquivo PostScript, execute as seguintes e
 1. Consulte o documento PDF para converter em um arquivo PostScript.
 1. Definir opções de tempo de execução de conversão.
 1. Converta o documento PDF em um arquivo PostScript.
-1. Salve o arquivo PostScript.
+1. Salve o arquivo do PostScript.
 
 **Incluir arquivos de projeto**
 
@@ -58,9 +58,9 @@ Inclua os arquivos necessários no projeto de desenvolvimento. Se você estiver 
 
 **Criar um cliente Converter PDF**
 
-Antes de executar programaticamente uma operação de serviço Converter PDF, você deve criar um cliente de serviço Converter PDF. Se estiver usando a API Java, crie uma `ConvertPdfServiceClient` objeto. Se estiver usando a API do serviço Web, crie uma `ConvertPDFServiceService` objeto.
+Antes de executar programaticamente uma operação de serviço Converter PDF, você deve criar um cliente de serviço Converter PDF. Se você estiver usando a API Java, crie um objeto `ConvertPdfServiceClient`. Se você estiver usando a API de serviço Web, crie um objeto `ConvertPDFServiceService`.
 
-Esta seção usa a funcionalidade de serviço Web introduzida no AEM Forms. Para acessar a nova funcionalidade, é necessário construir o objeto proxy usando o `lc_version` atributo. (Consulte &quot;Acessar novas funcionalidades usando serviços da Web&quot; em [Chamar o AEM Forms usando serviços da Web](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services).)
+Esta seção usa a funcionalidade de serviço Web introduzida no AEM Forms. Para acessar uma nova funcionalidade, é necessário construir o objeto proxy usando o atributo `lc_version`. (Consulte &quot;Acessando nova funcionalidade usando serviços Web&quot; em [Chamando o AEM Forms usando Serviços Web](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services).)
 
 **Referencie o documento PDF a ser convertido em um arquivo PostScript**
 
@@ -68,21 +68,21 @@ Referencie o documento PDF que você deseja converter em um arquivo PostScript. 
 
 **Definir opções de tempo de execução de conversão**
 
-Ao converter um documento PDF em um arquivo PostScript, você pode definir opções de tempo de execução que especifiquem o tipo PostScript que é criado. Por exemplo, você pode definir um arquivo PostScript nível 3.
+Ao converter um documento PDF em um arquivo PostScript, você pode definir opções de tempo de execução que especifiquem o tipo de PostScript criado. Por exemplo, você pode definir um arquivo PostScript de nível 3.
 
-Normalmente, o arquivo PostScript gerado refletirá o tamanho do documento PDF de entrada. Se você selecionar a variável `ShrinkToFit` (que reduz a saída do arquivo PostScript para caber na página), você não verá uma diferença entre o documento PDF de entrada e o arquivo PostScript gerado. A variável `ShrinkToFit` A opção só terá efeito se você optar por imprimir em um tamanho de página menor do que o documento PDF de entrada. Para selecionar um tamanho de página menor, defina o `PageSize` opção. Além disso, é recomendável que você defina o `RotateAndCenter` opção para `true` para obter a saída PostScript correta.
+Normalmente, o arquivo PostScript gerado refletirá o tamanho do documento PDF de entrada. Se você selecionar a opção `ShrinkToFit` (que reduz a saída do arquivo PostScript para caber na página), você não verá uma diferença entre o documento PDF de entrada e o arquivo PostScript gerado. A opção `ShrinkToFit` só terá efeito se você optar por imprimir em um tamanho de página menor do que o documento PDF de entrada. Para selecionar uma página menor, defina a opção `PageSize`. Além disso, é recomendável que você defina a opção `RotateAndCenter` como `true` para obter a saída de PostScript correta.
 
-Da mesma forma, se você selecionar a variável `ExpandToFit` (que expande a saída do arquivo PostScript para caber na página), só terá efeito se você optar por imprimir em um tamanho de página maior que o documento PDF de entrada. Para selecionar um tamanho de página maior, defina o `PageSize` opção. Além disso, é recomendável que você defina o `RotateAndCenter` opção para `true` para obter a saída PostScript correta.
+Da mesma forma, se você selecionar a opção `ExpandToFit` (que expande a saída do arquivo PostScript para caber na página), ela só terá efeito se você optar por imprimir em um tamanho de página maior que o documento PDF de entrada. Para selecionar uma página maior, defina a opção `PageSize`. Além disso, é recomendável que você defina a opção `RotateAndCenter` como `true` para obter a saída de PostScript correta.
 
 >[!NOTE]
 >
->Para obter informações sobre os valores de tempo de execução que podem ser definidos, consulte `ToPSOptionsSpec` referência de classe em [Referência da API do AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+>Para obter informações sobre os valores de tempo de execução que você pode definir, consulte a referência de classe `ToPSOptionsSpec` na [Referência da API AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 **Converter o documento PDF em um arquivo PostScript**
 
-Depois de criar o cliente de serviço e definir as opções de tempo de execução, você pode chamar a operação de conversão PostScript. Esta operação precisará de informações sobre o documento a ser convertido, incluindo o nível de PostScript preferencial para o documento de destino.
+Depois de criar o cliente de serviço e definir as opções de tempo de execução, você pode chamar a operação de conversão do PostScript. Esta operação precisará de informações sobre o documento a ser convertido, incluindo o nível de PostScript preferido para o documento de destino.
 
-**Salve o arquivo PostScript**
+**Salvar o arquivo do PostScript**
 
 Depois de converter o documento PDF em PostScript, você pode salvar a saída como um arquivo PostScript.
 
@@ -100,7 +100,7 @@ Depois de converter o documento PDF em PostScript, você pode salvar a saída co
 
 ### Converter um documento PDF em PS usando a API Java {#convert-a-pdf-document-to-ps-using-the-java-api}
 
-Converta um documento PDF em PostScript usando a API de serviço Converter PDF (Java):
+Converta um documento PDF em PostScript usando a API de serviço de conversão de PDF (Java):
 
 1. Incluir arquivos de projeto.
 
@@ -108,38 +108,38 @@ Converta um documento PDF em PostScript usando a API de serviço Converter PDF (
 
 1. Crie um cliente Converter PDF.
 
-   * Criar um `ServiceClientFactory` objeto que contém propriedades de conexão.
-   * Criar um `ConvertPdfServiceClient` usando seu construtor e transmitindo o `ServiceClientFactory` objeto.
+   * Crie um objeto `ServiceClientFactory` que contenha propriedades de conexão.
+   * Crie um objeto `ConvertPdfServiceClient` usando seu construtor e transmitindo o objeto `ServiceClientFactory`.
 
 1. Consulte o documento PDF para converter em um arquivo PostScript.
 
-   * Criar um `java.io.FileInputStream` usando seu construtor e transmitindo um valor de string que especifica o local do documento PDF a ser convertido.
-   * Criar um `com.adobe.idp.Document` objeto que armazena o documento PDF usando o `com.adobe.idp.Document` construtor. Passe o `java.io.FileInputStream` objeto que contém o documento PDF.
+   * Crie um objeto `java.io.FileInputStream` usando seu construtor e passe um valor de cadeia de caracteres que especifique o local do documento PDF a ser convertido.
+   * Crie um objeto `com.adobe.idp.Document` que armazene o documento PDF usando o construtor `com.adobe.idp.Document`. Transmita o objeto `java.io.FileInputStream` que contém o documento PDF.
 
 1. Definir opções de tempo de execução de conversão.
 
-   * Criar um `ToPSOptionsSpec` invocando seu construtor.
-   * Defina as opções de tempo de execução chamando um método apropriado que pertença à `ToPSOptionsSpec` objeto. Por exemplo, para definir o nível PostScript que é criado, chame o `ToPSOptionsSpec` do objeto `setPsLevel` e transmita um `PSLevel` valor de enumeração que especifica o nível PostScript. Para obter informações sobre todos os valores de tempo de execução que podem ser definidos, consulte `ToPSOptionsSpec` referência de classe em [Referência da API do AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+   * Crie um objeto `ToPSOptionsSpec` invocando seu construtor.
+   * Defina as opções de tempo de execução invocando um método apropriado que pertença ao objeto `ToPSOptionsSpec`. Por exemplo, para definir o nível PostScript que é criado, chame o método `setPsLevel` do objeto `ToPSOptionsSpec` e passe um valor de enumeração `PSLevel` que especifique o nível PostScript. Para obter informações sobre todos os valores de tempo de execução que você pode definir, consulte a referência de classe `ToPSOptionsSpec` na [Referência da API AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 1. Converta o documento PDF em um arquivo PostScript.
 
-   Chame o `ConvertPdfServiceClient`do objeto `toPS2` e passe os seguintes valores:
+   Invoque o método `toPS2` do `ConvertPdfServiceClient`objeto e passe os seguintes valores:
 
-   * A `com.adobe.idp.Document` objeto que representa o documento PDF a ser convertido em um arquivo PostScript.
-   * A `ToPSOptionsSpec` objeto que especifica as opções de tempo de execução PostScript.
+   * Um objeto `com.adobe.idp.Document` que representa o documento PDF a ser convertido em um arquivo PostScript.
+   * Um objeto `ToPSOptionsSpec` que especifica as opções de tempo de execução do PostScript.
 
-   A variável `toPS2` o método retorna um `Document` objeto que contém o novo documento PostScript.
+   O método `toPS2` retorna um objeto `Document` que contém o novo documento do PostScript.
 
-1. Salve o arquivo PostScript.
+1. Salve o arquivo do PostScript.
 
-   * Criar um `java.io.File` e certifique-se de que a extensão do nome do arquivo seja .ps.
-   * Chame o `Document` do objeto `copyToFile` método para copiar o conteúdo do `Document` ao arquivo (certifique-se de usar o `Document` objeto que foi retornado pelo `toPS2` método).
+   * Crie um objeto `java.io.File` e verifique se a extensão do nome do arquivo é .ps.
+   * Invoque o método `copyToFile` do objeto `Document` para copiar o conteúdo do objeto `Document` para o arquivo (certifique-se de usar o objeto `Document` retornado pelo método `toPS2`).
 
 **Consulte também**
 
 [Resumo das etapas](converting-pdf-postscript-image-files.md#summary-of-steps)
 
-[Início rápido (modo SOAP): conversão de um documento PDF em PostScript usando a API do Java](/help/forms/developing/convert-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-postscript-using-the-java-api)
+[Início rápido (modo SOAP): conversão de um documento PDF em PostScript usando a API Java](/help/forms/developing/convert-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-postscript-using-the-java-api)
 
 [Inclusão de arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -155,49 +155,49 @@ Converta um documento PDF em PostScript usando a API de serviço de conversão d
 
    >[!NOTE]
    >
-   >Substituir `localhost` com o endereço IP do servidor que hospeda o AEM Forms.
+   >Substitua `localhost` pelo endereço IP do servidor que hospeda o AEM Forms.
 
 1. Crie um cliente Converter PDF.
 
-   * Criar um `ConvertPdfServiceClient` usando seu construtor padrão.
-   * Criar um `ConvertPdfServiceClient.Endpoint.Address` usando o `System.ServiceModel.EndpointAddress` construtor. Transmita um valor de string que especifique o WSDL para o serviço AEM Forms (por exemplo, `http://localhost:8080/soap/services/ConvertPDFService?blob=mtom`.) Não é necessário usar a variável `lc_version` atributo. No entanto, especifique `?blob=mtom`.
-   * Criar um `System.ServiceModel.BasicHttpBinding` obtendo o valor do `ConvertPdfServiceClient.Endpoint.Binding` campo. Converter o valor de retorno em `BasicHttpBinding`.
-   * Defina o `System.ServiceModel.BasicHttpBinding` do objeto `MessageEncoding` campo para `WSMessageEncoding.Mtom`. Esse valor garante que a MTOM seja usada.
+   * Crie um objeto `ConvertPdfServiceClient` usando seu construtor padrão.
+   * Crie um objeto `ConvertPdfServiceClient.Endpoint.Address` usando o construtor `System.ServiceModel.EndpointAddress`. Transmita um valor de cadeia de caracteres que especifique o WSDL para o serviço AEM Forms (por exemplo, `http://localhost:8080/soap/services/ConvertPDFService?blob=mtom`.) Você não precisa usar o atributo `lc_version`. No entanto, especifique `?blob=mtom`.
+   * Crie um objeto `System.ServiceModel.BasicHttpBinding` obtendo o valor do campo `ConvertPdfServiceClient.Endpoint.Binding`. Converter o valor de retorno em `BasicHttpBinding`.
+   * Defina o campo `MessageEncoding` do objeto `System.ServiceModel.BasicHttpBinding` como `WSMessageEncoding.Mtom`. Esse valor garante que a MTOM seja usada.
    * Ative a autenticação HTTP básica executando as seguintes tarefas:
 
-      * Atribuir o nome de usuário dos formulários AEM ao campo `ConvertPdfServiceClient.ClientCredentials.UserName.UserName`.
+      * Atribua o nome de usuário dos formulários AEM ao campo `ConvertPdfServiceClient.ClientCredentials.UserName.UserName`.
       * Atribua o valor de senha correspondente ao campo `ConvertPdfServiceClient.ClientCredentials.UserName.Password`.
-      * Atribuir o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Atribuir o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
+      * Atribua o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * Atribua o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Consulte o documento PDF para converter em um arquivo PostScript.
 
-   * Criar um `BLOB` usando seu construtor. A variável `BLOB` O objeto é usado para armazenar um documento PDF convertido em um arquivo PostScript.
-   * Criar um `System.IO.FileStream` chamando seu construtor e transmitindo um valor de string que representa o local do arquivo do documento PDF a ser convertido e o modo no qual o arquivo será aberto.
-   * Crie uma matriz de bytes que armazene o conteúdo da variável `System.IO.FileStream` objeto. Você pode determinar o tamanho da matriz de bytes obtendo o `System.IO.FileStream` do objeto `Length` propriedade.
-   * Preencha a matriz de bytes com dados de fluxo invocando o `System.IO.FileStream` do objeto `Read` e transmitindo a matriz de bytes, a posição inicial e o comprimento do fluxo para leitura.
-   * Preencha o `BLOB` atribuindo seu `MTOM` com o conteúdo da matriz de bytes.
+   * Crie um objeto `BLOB` usando seu construtor. O objeto `BLOB` é usado para armazenar um documento PDF que é convertido em um arquivo PostScript.
+   * Crie um objeto `System.IO.FileStream` chamando seu construtor e transmitindo um valor de cadeia de caracteres que representa o local do arquivo do documento PDF a ser convertido e o modo no qual o arquivo será aberto.
+   * Crie uma matriz de bytes que armazene o conteúdo do objeto `System.IO.FileStream`. Você pode determinar o tamanho da matriz de bytes obtendo a propriedade `Length` do objeto `System.IO.FileStream`.
+   * Preencha a matriz de bytes com dados de fluxo invocando o método `Read` do objeto `System.IO.FileStream` e transmitindo a matriz de bytes, a posição inicial e o comprimento do fluxo para leitura.
+   * Preencha o objeto `BLOB` atribuindo seu campo `MTOM` com o conteúdo da matriz de bytes.
 
 1. Definir opções de tempo de execução de conversão.
 
-   * Criar um `ToPSOptionsSpec` invocando seu construtor.
-   * Defina as opções de tempo de execução atribuindo um valor ao `ToPSOptionsSpec` membro de dados do objeto. Por exemplo, para definir o nível PostScript que é criado, atribua um `PSLevel` valor de enumeração para o `ToPSOptionsSpec` do objeto `psLevel` membro de dados.
+   * Crie um objeto `ToPSOptionsSpec` invocando seu construtor.
+   * Defina as opções de tempo de execução atribuindo um valor ao membro de dados do objeto `ToPSOptionsSpec`. Por exemplo, para definir o nível de PostScript que é criado, atribua um valor de enumeração `PSLevel` ao membro de dados `psLevel` do objeto `ToPSOptionsSpec`.
 
 1. Converta o documento PDF em um arquivo PostScript.
 
-   Chame o `GeneratePDFServiceService` do objeto `toPS2` e passe os seguintes valores:
+   Invoque o método `toPS2` do objeto `GeneratePDFServiceService` e passe os seguintes valores:
 
-   * A `BLOB` objeto que representa o documento PDF a ser convertido em um arquivo PostScript
-   * A `ToPSOptionsSpec` objeto que especifica as opções de tempo de execução
+   * Um objeto `BLOB` que representa o documento PDF a ser convertido em um arquivo PostScript
+   * Um objeto `ToPSOptionsSpec` que especifica as opções de tempo de execução
 
-   Após a conclusão da conversão, extraia os dados binários que representam o documento PostScript, acessando seus `BLOB` do objeto `MTOM` propriedade. Isso retorna uma matriz de bytes que pode ser gravada em um arquivo PostScript.
+   Após a conclusão da conversão, extraia os dados binários que representam o documento do PostScript acessando a propriedade `MTOM` do objeto `BLOB`. Isso retorna uma matriz de bytes que você pode gravar em um arquivo PostScript.
 
-1. Salve o arquivo PostScript.
+1. Salve o arquivo do PostScript.
 
-   * Criar um `System.IO.FileStream` invocando seu construtor. Transmita um valor de string que represente o local do arquivo PS.
-   * Crie uma matriz de bytes que armazene o conteúdo de dados do `BLOB` objeto que foi retornado pelo `encryptPDFUsingPassword` método. Preencha a matriz de bytes obtendo o valor de `BLOB` do objeto `MTOM` campo.
-   * Criar um `System.IO.BinaryWriter` objeto chamando seu construtor e transmitindo o `System.IO.FileStream` objeto.
-   * Grave o conteúdo da matriz de bytes no arquivo PostScript, chamando o `System.IO.BinaryWriter` do objeto `Write` e transmitindo a matriz de bytes.
+   * Crie um objeto `System.IO.FileStream` invocando seu construtor. Transmita um valor de string que represente o local do arquivo PS.
+   * Crie uma matriz de bytes que armazene o conteúdo de dados do objeto `BLOB` retornado pelo método `encryptPDFUsingPassword`. Popular a matriz de bytes obtendo o valor do campo `MTOM` do objeto `BLOB`.
+   * Crie um objeto `System.IO.BinaryWriter` invocando seu construtor e transmitindo o objeto `System.IO.FileStream`.
+   * Grave o conteúdo da matriz de bytes no arquivo PostScript chamando o método `Write` do objeto `System.IO.BinaryWriter` e transmitindo a matriz de bytes.
 
 **Consulte também**
 
@@ -234,25 +234,25 @@ Inclua os arquivos necessários no projeto de desenvolvimento. Se você estiver 
 
 **Criar um cliente Converter PDF**
 
-Antes de executar programaticamente uma operação de serviço Converter PDF, você deve criar um cliente de serviço Converter PDF. Se estiver usando a API Java, crie uma `ConvertPdfServiceClient` objeto. Se estiver usando a API do serviço Web, crie uma `ConvertPDFServiceService` objeto.
+Antes de executar programaticamente uma operação de serviço Converter PDF, você deve criar um cliente de serviço Converter PDF. Se você estiver usando a API Java, crie um objeto `ConvertPdfServiceClient`. Se você estiver usando a API de serviço Web, crie um objeto `ConvertPDFServiceService`.
 
 **Recuperar o documento PDF para converter**
 
-Recupere o documento PDF para converter em uma imagem. Não é possível converter um documento PDF interativo em uma imagem. Se você tentar fazer isso, uma exceção será lançada. Para converter um documento PDF interativo em um arquivo de imagem, é necessário nivelar o documento PDF antes de convertê-lo. (Consulte [Nivelamento de documentos PDF](/help/forms/developing/creating-document-output-streams.md#flattening-pdf-documents).)
+Recupere o documento PDF para converter em uma imagem. Não é possível converter um documento PDF interativo em uma imagem. Se você tentar fazer isso, uma exceção será lançada. Para converter um documento PDF interativo em um arquivo de imagem, é necessário nivelar o documento PDF antes de convertê-lo. (Consulte [Nivelando Documentos PDF](/help/forms/developing/creating-document-output-streams.md#flattening-pdf-documents).)
 
 **Definir opções de tempo de execução**
 
-Defina opções de tempo de execução, como o formato da imagem e os valores de resolução. Para obter informações sobre os valores de tempo de execução, consulte `ToImageOptionsSpec` referência de classe em [Referência da API do AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+Defina opções de tempo de execução, como o formato da imagem e os valores de resolução. Para obter informações sobre os valores de tempo de execução, consulte a referência de classe `ToImageOptionsSpec` na [Referência da API AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
-**Conversão do PDF em uma imagem**
+**Converter o PDF em uma imagem**
 
 Depois de criar o cliente de serviço e definir as opções de tempo de execução, você pode converter o documento PDF em uma imagem. Um objeto de coleção que contém as imagens é retornado.
 
 **Recuperar os arquivos de imagem de uma coleção**
 
-Você pode recuperar arquivos de imagem de um objeto de coleção que o serviço Converter PDF retorna. Cada elemento na coleção é um `com.adobe.idp.Document` instância (ou um `BLOB` caso esteja usando serviços da web) que você pode salvar como um arquivo de imagem, como um arquivo JPG de.
+Você pode recuperar arquivos de imagem de um objeto de coleção que o serviço Converter PDF retorna. Cada elemento na coleção é uma instância `com.adobe.idp.Document` (ou uma instância `BLOB`, se você estiver usando serviços da Web) que você pode salvar como um arquivo de imagem, como um arquivo JPG.
 
-O formato do arquivo de imagem depende da variável `ImageConvertFormat` opção de tempo de execução. Ou seja, se você definir a variável `ImageConvertFormat` opção de tempo de execução para `ImageConvertFormat.JPEG`, é possível salvar arquivos de imagem como arquivos de JPG.
+O formato do arquivo de imagem depende da opção de tempo de execução `ImageConvertFormat`. Ou seja, se você definir a opção de tempo de execução `ImageConvertFormat` como `ImageConvertFormat.JPEG`, poderá salvar arquivos de imagem como arquivos de JPG.
 
 **Consulte também**
 
@@ -272,35 +272,35 @@ Converta um documento PDF em um formato de imagem usando a API de serviço Conve
 
 1. Crie um cliente Converter PDF.
 
-   * Criar um `ServiceClientFactory` objeto que contém propriedades de conexão.
-   * Criar um `ConvertPdfServiceClient` usando seu construtor e transmitindo o `ServiceClientFactory` objeto.
+   * Crie um objeto `ServiceClientFactory` que contenha propriedades de conexão.
+   * Crie um objeto `ConvertPdfServiceClient` usando seu construtor e transmitindo o objeto `ServiceClientFactory`.
 
 1. Recupere o documento PDF para converter.
 
-   * Criar um `java.io.FileInputStream` objeto que representa o documento PDF a ser convertido usando seu construtor e transmitindo um valor de string que especifica o local do documento PDF.
-   * Criar um `com.adobe.idp.Document` usando seu construtor e transmitindo o `java.io.FileInputStream` objeto.
+   * Crie um objeto `java.io.FileInputStream` que represente o documento PDF a ser convertido usando seu construtor e transmitindo um valor de cadeia de caracteres que especifique o local do documento PDF.
+   * Crie um objeto `com.adobe.idp.Document` usando seu construtor e transmitindo o objeto `java.io.FileInputStream`.
 
 1. Definir opções de tempo de execução.
 
-   * Criar um `ToImageOptionsSpec` usando seu construtor.
-   * Chame os métodos que pertencem a este objeto, conforme necessário. Por exemplo, defina o tipo de imagem chamando o `setImageConvertFormat` e transmitindo um `ImageConvertFormat` valor de enumeração que especifica o tipo de formato.
+   * Crie um objeto `ToImageOptionsSpec` usando seu construtor.
+   * Chame os métodos que pertencem a este objeto, conforme necessário. Por exemplo, defina o tipo de imagem chamando o método `setImageConvertFormat` e transmitindo um valor enum `ImageConvertFormat` que especifica o tipo de formato.
 
    >[!NOTE]
    >
-   >Definição de `ImageConvertFormat` o valor de enumeração é obrigatório.
+   >A configuração do valor de enumeração `ImageConvertFormat` é obrigatória.
 
 1. Converta o PDF em uma imagem.
 
-   Chame o `ConvertPdfServiceClient` do objeto `toImage2` e passe os seguintes valores:
+   Invoque o método `toImage2` do objeto `ConvertPdfServiceClient` e passe os seguintes valores:
 
-   * A `com.adobe.idp.Document` objeto que representa o arquivo PDF a ser convertido.
-   * A `com.adobe.livecycle.converpdfservice.client.ToImageOptionsSpec` objeto que contém as várias preferências sobre o formato de imagem de destino.
+   * Um objeto `com.adobe.idp.Document` que representa o arquivo PDF a ser convertido.
+   * Um objeto `com.adobe.livecycle.converpdfservice.client.ToImageOptionsSpec` que contém as várias preferências sobre o formato de imagem de destino.
 
-   A variável `toImage2` o método retorna um `java.util.List` objeto que contém imagens. Cada elemento na coleção é um `com.adobe.idp.Document` instância.
+   O método `toImage2` retorna um objeto `java.util.List` que contém imagens. Cada elemento na coleção é uma instância `com.adobe.idp.Document`.
 
 1. Recupera os arquivos de imagem de uma coleção.
 
-   Repita através do `java.util.List` para determinar se as imagens estão presentes. Cada elemento é um `com.adobe.idp.Document` instância. Salve a imagem invocando o `com.adobe.idp.Document` do objeto `copyToFile` e passar um `java.io.File` objeto.
+   Repita através do objeto `java.util.List` para determinar se as imagens estão presentes. Cada elemento é uma instância `com.adobe.idp.Document`. Salve a imagem invocando o método `copyToFile` do objeto `com.adobe.idp.Document` e transmitindo um objeto `java.io.File`.
 
 **Consulte também**
 
@@ -316,51 +316,51 @@ Converta um documento PDF em um formato de imagem usando a API de serviço de co
 
    >[!NOTE]
    >
-   >Substituir `localhost` com o endereço IP do servidor que hospeda o AEM Forms.
+   >Substitua `localhost` pelo endereço IP do servidor que hospeda o AEM Forms.
 
 1. Crie um cliente PDF de conversão.
 
-   * Criar um `ConvertPdfServiceClient` usando seu construtor padrão.
-   * Criar um `ConvertPdfServiceClient.Endpoint.Address` usando o `System.ServiceModel.EndpointAddress` construtor. Transmita um valor de string que especifique o WSDL para o serviço AEM Forms (por exemplo, `http://localhost:8080/soap/services/ConvertPDFService?blob=mtom`.) Não é necessário usar a variável `lc_version` atributo. No entanto, especifique `?blob=mtom`.
-   * Criar um `System.ServiceModel.BasicHttpBinding` obtendo o valor do `ConvertPdfServiceClient.Endpoint.Binding` campo. Converter o valor de retorno em `BasicHttpBinding`.
-   * Defina o `System.ServiceModel.BasicHttpBinding` do objeto `MessageEncoding` campo para `WSMessageEncoding.Mtom`. Esse valor garante que a MTOM seja usada.
+   * Crie um objeto `ConvertPdfServiceClient` usando seu construtor padrão.
+   * Crie um objeto `ConvertPdfServiceClient.Endpoint.Address` usando o construtor `System.ServiceModel.EndpointAddress`. Transmita um valor de cadeia de caracteres que especifique o WSDL para o serviço AEM Forms (por exemplo, `http://localhost:8080/soap/services/ConvertPDFService?blob=mtom`.) Você não precisa usar o atributo `lc_version`. No entanto, especifique `?blob=mtom`.
+   * Crie um objeto `System.ServiceModel.BasicHttpBinding` obtendo o valor do campo `ConvertPdfServiceClient.Endpoint.Binding`. Converter o valor de retorno em `BasicHttpBinding`.
+   * Defina o campo `MessageEncoding` do objeto `System.ServiceModel.BasicHttpBinding` como `WSMessageEncoding.Mtom`. Esse valor garante que a MTOM seja usada.
    * Ative a autenticação HTTP básica executando as seguintes tarefas:
 
-      * Atribuir o nome de usuário dos formulários AEM ao campo `ConvertPdfServiceClient.ClientCredentials.UserName.UserName`.
+      * Atribua o nome de usuário dos formulários AEM ao campo `ConvertPdfServiceClient.ClientCredentials.UserName.UserName`.
       * Atribua o valor de senha correspondente ao campo `ConvertPdfServiceClient.ClientCredentials.UserName.Password`.
-      * Atribuir o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Atribuir o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
+      * Atribua o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * Atribua o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Recupere o documento PDF para converter.
 
-   * Criar um `BLOB` usando seu construtor. Este `BLOB` é usado para armazenar o formulário PDF.
-   * Criar um `System.IO.FileStream` invocando seu construtor. Transmita um valor de string que especifique o local do formulário de PDF e o modo em que o arquivo será aberto.
-   * Crie uma matriz de bytes que armazene o conteúdo da variável `System.IO.FileStream` objeto. Determine o tamanho da matriz de bytes obtendo o `System.IO.FileStream` do objeto `Length` propriedade.
-   * Preencha a matriz de bytes com dados de fluxo invocando o `System.IO.FileStream` do objeto `Read` método. Passe a matriz de bytes, a posição inicial e o comprimento do fluxo para leitura.
-   * Preencha o `BLOB` atribuindo seu `MTOM` com o conteúdo da matriz de bytes.
+   * Crie um objeto `BLOB` usando seu construtor. Este objeto `BLOB` é usado para armazenar o formulário PDF.
+   * Crie um objeto `System.IO.FileStream` invocando seu construtor. Transmita um valor de string que especifique o local do formulário de PDF e o modo em que o arquivo será aberto.
+   * Crie uma matriz de bytes que armazene o conteúdo do objeto `System.IO.FileStream`. Determine o tamanho da matriz de bytes obtendo a propriedade `Length` do objeto `System.IO.FileStream`.
+   * Preencha a matriz de bytes com dados de fluxo invocando o método `Read` do objeto `System.IO.FileStream`. Passe a matriz de bytes, a posição inicial e o comprimento do fluxo para leitura.
+   * Preencha o objeto `BLOB` atribuindo seu campo `MTOM` com o conteúdo da matriz de bytes.
 
 1. Definir opções de tempo de execução.
 
-   * Criar um `ToImageOptionsSpec` usando seu construtor.
-   * Chame os métodos que pertencem a este objeto, conforme necessário. Por exemplo, defina o tipo de imagem chamando o `setImageConvertFormat` e transmitindo um `ImageConvertFormat` valor de enumeração que especifica o tipo de formato.
+   * Crie um objeto `ToImageOptionsSpec` usando seu construtor.
+   * Chame os métodos que pertencem a este objeto, conforme necessário. Por exemplo, defina o tipo de imagem chamando o método `setImageConvertFormat` e transmitindo um valor de enumeração `ImageConvertFormat` que especifica o tipo de formato.
 
    >[!NOTE]
    >
-   >Definição de `ImageConvertFormat` o valor de enumeração é obrigatório.
+   >A configuração do valor de enumeração `ImageConvertFormat` é obrigatória.
 
 1. Converta o PDF em uma imagem.
 
-   Chame o `ConvertPDFServiceService` do objeto `toImage2` e passe os seguintes valores:
+   Invoque o método `toImage2` do objeto `ConvertPDFServiceService` e passe os seguintes valores:
 
-   * A `BLOB` objeto que representa o arquivo a ser convertido
-   * A `ToImageOptionsSpec` objeto que contém as várias preferências sobre o formato de imagem de destino
+   * Um objeto `BLOB` que representa o arquivo a ser convertido
+   * Um objeto `ToImageOptionsSpec` que contém as várias preferências sobre o formato de imagem de destino
 
-   A variável `toImage2` o método retorna um `MyArrayOfBLOB` objeto que contém os arquivos de imagem recém-criados.
+   O método `toImage2` retorna um objeto `MyArrayOfBLOB` que contém os arquivos de imagem recém-criados.
 
 1. Recupera os arquivos de imagem de uma coleção.
 
-   * Determine o número de elementos na variável `MyArrayOfBLOB` obtendo o valor de seu `Count` campo. Cada elemento é um `BLOB` objeto que contém a imagem.
-   * Repita através do `MyArrayOfBLOB` e salve cada arquivo de imagem.
+   * Determine o número de elementos no objeto `MyArrayOfBLOB` obtendo o valor de seu campo `Count`. Cada elemento é um objeto `BLOB` que contém a imagem.
+   * Repita através do objeto `MyArrayOfBLOB` e salve cada arquivo de imagem.
 
 **Consulte também**
 

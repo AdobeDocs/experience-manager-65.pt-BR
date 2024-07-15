@@ -20,38 +20,38 @@ ht-degree: 61%
 
 >[!NOTE]
 >
->Esta seção descreve como configurar a segmentação ao usar o ContextHub. Se você estiver usando a funcionalidade Contexto do cliente, consulte a documentação relevante para [configuração da segmentação para o Client Context](/help/sites-administering/campaign-segmentation.md).
+>Esta seção descreve como configurar a segmentação ao usar o ContextHub. Se você estiver usando a funcionalidade Client Context, consulte a documentação relevante para [configurar a segmentação para Client Context](/help/sites-administering/campaign-segmentation.md).
 >
 
-A segmentação é uma consideração importante ao criar uma campanha. Consulte [Gerenciamento de públicos](/help/sites-authoring/managing-audiences.md) para obter informações sobre como a segmentação funciona e os termos principais.
+A segmentação é uma consideração importante ao criar uma campanha. Consulte [Gerenciamento de públicos-alvo](/help/sites-authoring/managing-audiences.md) para obter informações sobre como a segmentação funciona e os termos principais.
 
 Dependendo das informações que você já coletou sobre os visitantes do seu site e das metas que deseja alcançar, é necessário definir os segmentos e as estratégias necessárias para o seu conteúdo direcionado.
 
-Esses segmentos são usados para fornecer conteúdo direcionado especificamente a um visitante. Esse conteúdo é mantido no [Personalização](/help/sites-authoring/personalization.md) seção do site. As [atividades](/help/sites-authoring/activitylib.md) definidas aqui podem ser incluídas em qualquer página e definem para qual segmento de visitante o conteúdo especializado se aplica.
+Esses segmentos são usados para fornecer conteúdo direcionado especificamente a um visitante. Este conteúdo é mantido na seção [Personalization](/help/sites-authoring/personalization.md) do site. As [atividades](/help/sites-authoring/activitylib.md) definidas aqui podem ser incluídas em qualquer página e definem para qual segmento de visitante o conteúdo especializado se aplica.
 
 O AEM permite personalizar facilmente a experiência dos usuários. Ela também permite verificar os resultados das definições de segmento.
 
 ## Acessar segmentos {#accessing-segments}
 
-A variável [Públicos-alvo](/help/sites-authoring/managing-audiences.md) O console é usado para gerenciar segmentos do ContextHub ou do Client Context e públicos-alvo da sua conta do Adobe Target. Esta documentação abrange o gerenciamento de segmentos para o ContextHub. Para [Segmentos de ClientContext](/help/sites-administering/campaign-segmentation.md) e Adobe Target, consulte a documentação relevante.
+O console [Públicos-alvo](/help/sites-authoring/managing-audiences.md) é usado para gerenciar segmentos do ContextHub ou do Client Context e públicos-alvo da sua conta do Adobe Target. Esta documentação abrange o gerenciamento de segmentos para o ContextHub. Para [segmentos de Client Context](/help/sites-administering/campaign-segmentation.md) e segmentos do Adobe Target, consulte a documentação relevante.
 
-Para acessar os segmentos, é necessário selecionar a configuração. Na navegação global, selecione **Navegação > Personalização > Públicos-alvo**. Você verá as configurações disponíveis:
+Para acessar os segmentos, é necessário selecionar a configuração. Na navegação global, selecione **Navegação > Personalization > Públicos-alvo**. Você verá as configurações disponíveis:
 
 ![Públicos-alvo - Configurações](assets/segmentation-access-confs.png)
 
 Selecione sua configuração para ver os segmentos, por exemplo, Site WKND:
 
-![Públicos - Segmentos](assets/segmentation-access-segments.png)
+![Públicos-alvo - Segmentos](assets/segmentation-access-segments.png)
 
 ## Editor do segmento  {#segment-editor}
 
-A variável **Editor de segmentos** O permite modificar facilmente um segmento. Para editar um segmento, selecione-o na [lista de segmentos](/help/sites-administering/segmentation.md#accessing-segments) e clique no link **Editar** botão.
+O **Editor de segmentos** permite modificar facilmente um segmento. Para editar um segmento, selecione-o na [lista de segmentos](/help/sites-administering/segmentation.md#accessing-segments) e clique no botão **Editar**.
 
-![segmenteditor](assets/segmenteditor.png)
+![editor de segmentos](assets/segmenteditor.png)
 
 Usando o navegador de componentes, você pode adicionar contêineres **AND** e **OR** para definir a lógica do segmento e, em seguida, adicionar componentes adicionais para comparar propriedades e valores ou scripts de referência e outros segmentos para definir os critérios de seleção (consulte [Criar um novo segmento](#creating-a-new-segment)) para definir o cenário exato para selecionar o segmento.
 
-Quando a declaração inteira for avaliada como verdadeira, o segmento será resolvido. Se houver vários segmentos aplicáveis, a variável **Aumentar** também é usado. Consulte [Criar um novo segmento](#creating-a-new-segment) para obter detalhes sobre a [fator de reforço.](/help/sites-administering/campaign-segmentation.md#boost-factor)
+Quando a declaração inteira for avaliada como verdadeira, o segmento será resolvido. Se houver vários segmentos aplicáveis, o fator **Boost** também será usado. Consulte [Criando um Novo Segmento](#creating-a-new-segment) para obter detalhes sobre o [fator de reforço.](/help/sites-administering/campaign-segmentation.md#boost-factor)
 
 >[!CAUTION]
 >
@@ -81,7 +81,7 @@ As comparações de segmentos a seguir estão disponíveis prontas para uso para
 <table>
  <tbody>
   <tr>
-   <td>Propriedade—Valor<br /> </td>
+   <td>Valor-Propriedade<br /> </td>
    <td>Compara uma propriedade de um armazenamento a um valor definido<br /> </td>
   </tr>
   <tr>
@@ -120,7 +120,7 @@ As seguintes referências estão disponíveis prontas para uso para vincular dir
 <table>
  <tbody>
   <tr>
-   <td>Referência do segmento<br /> </td>
+   <td>Referência de segmento<br /> </td>
    <td>Avaliar o segmento referenciado</td>
   </tr>
   <tr>
@@ -136,7 +136,7 @@ Para definir seu novo segmento:
 
 1. Depois de [acessar os segmentos](/help/sites-administering/segmentation.md#accessing-segments), [navegue até a pasta](#organizing-segments) onde deseja criar o segmento.
 
-1. clique no botão Create e selecione **Criar segmento do ContextHub**.
+1. clique no botão Criar e selecione **Criar segmento do ContextHub**.
 
    ![chlimage_1-311](assets/chlimage_1-311.png)
 
@@ -156,7 +156,7 @@ Para definir seu novo segmento:
 
    Sempre defina um **Tipo de dados**, se possível, para garantir que suas comparações sejam avaliadas corretamente. Consulte [Comparações](/help/sites-administering/segmentation.md#comparisons) para obter mais informações.
 
-1. Clique em **OK** para salvar suas definições:
+1. Clique em **OK** para salvar sua definição:
 1. Adicione mais componentes conforme necessário. É possível formular expressões boolean usando os componentes do contêiner para comparações AND e OR (consulte [Uso de contêineres AND e OR](/help/sites-administering/segmentation.md#using-and-and-or-containers) abaixo). Com o editor de segmentos, é possível excluir componentes que não são mais necessários ou arrastá-los para novas posições na instrução.
 
 ### Uso de contêineres AND e OR {#using-and-and-or-containers}
@@ -236,7 +236,7 @@ Se você tiver muitos segmentos, eles podem se tornar difíceis de gerenciar com
 
 ### Criar uma nova pasta {#create-folder}
 
-1. Depois [acesso aos segmentos](#accessing-segments), clique no link **Criar** e selecione **Pasta**.
+1. Depois de [acessar os segmentos](#accessing-segments), clique no botão **Criar** e selecione **Pasta**.
 
    ![Adicionar pasta](assets/contexthub-create-segment.png)
 
@@ -259,7 +259,7 @@ Se você tiver muitos segmentos, eles podem se tornar difíceis de gerenciar com
 
 ### Modificar pastas existentes {#modify-folders}
 
-1. Depois [acesso aos segmentos](#accessing-segments), clique na pasta que deseja modificar para selecioná-la.
+1. Após [acessar os segmentos](#accessing-segments), clique na pasta que deseja modificar para selecioná-la.
 
    ![Selecionar pasta](assets/contexthub-select-folder.png)
 
@@ -275,7 +275,7 @@ Se você tiver muitos segmentos, eles podem se tornar difíceis de gerenciar com
 
 ### Excluir uma pasta
 
-1. Depois [acesso aos segmentos](#accessing-segments), clique na pasta que deseja modificar para selecioná-la.
+1. Após [acessar os segmentos](#accessing-segments), clique na pasta que deseja modificar para selecioná-la.
 
    ![Selecionar pasta](assets/contexthub-select-folder.png)
 
@@ -286,14 +286,14 @@ Se você tiver muitos segmentos, eles podem se tornar difíceis de gerenciar com
    ![Confirmar exclusão](assets/contexthub-confirm-segment-delete.png)
 
    * Clique em **Excluir** para confirmar.
-   * Clique em **Cancelar** para suspender.
+   * Clique em **Cancelar** para anular.
 
 1. Se qualquer uma das pastas selecionadas contiver subpastas ou segmentos, sua exclusão deverá ser confirmada.
 
    ![Confirmar exclusão de filhos](assets/contexthub-confirm-segment-child-delete.png)
 
-   * Clique em **Forçar Exclusão** para confirmar.
-   * Clique em **Cancelar** para suspender.
+   * Clique em **Forçar exclusão** para confirmar.
+   * Clique em **Cancelar** para anular.
 
 >[!NOTE]
 >
@@ -322,7 +322,7 @@ Ou se não for resolvido:
 
 Esses testes também podem ser executados em páginas de conteúdo e em combinação com conteúdo direcionado e **Atividades** e **Experiências** relacionadas.
 
-Se você configurou uma atividade e uma experiência usando o exemplo de segmento de grupo de idade principal acima, é possível testar facilmente seu segmento com a atividade. Para obter detalhes sobre como configurar uma atividade, consulte as [documentação sobre criação de conteúdo direcionado](/help/sites-authoring/content-targeting-touch.md).
+Se você configurou uma atividade e uma experiência usando o exemplo de segmento de grupo de idade principal acima, é possível testar facilmente seu segmento com a atividade. Para obter detalhes sobre como configurar uma atividade, consulte a [documentação sobre a criação de conteúdo direcionado](/help/sites-authoring/content-targeting-touch.md) relacionada.
 
 1. No modo de edição de uma página em que você configurou o conteúdo direcionado, é possível ver que o conteúdo é direcionado por meio do ícone de seta no conteúdo.
 

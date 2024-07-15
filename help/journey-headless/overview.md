@@ -14,7 +14,7 @@ ht-degree: 57%
 
 # Jornadas do AEM Headless {#aem-headless-journeys}
 
-Comece aqui para obter uma visão geral das jornadas guiadas disponíveis para entender os poderosos recursos headless AEM.
+Comece aqui para obter uma visão geral das jornadas guiadas disponíveis para entender os poderosos recursos headless do AEM.
 
 ## Introdução {#introduction}
 
@@ -22,7 +22,7 @@ A implementação headless está se tornando cada vez mais importante para forne
 
 A implementação headless dispensa o gerenciamento de páginas e componentes tradicional utilizado em soluções de pilha completa e se concentra na criação de fragmentos de conteúdo reutilizáveis e neutros em relação ao canal, assim como na entrega entre canais. É um padrão de desenvolvimento moderno e dinâmico para implementação de experiências digitais.
 
-Se você é novo no AEM e/ou headless, as Jornadas headless AEM são um ótimo lugar para começar a entender a teoria e a tecnologia por meio de uma narrativa para resolver vários problemas empresariais de forma headless.
+Se você é novo no AEM e/ou headless, as Jornadas headless do AEM são um ótimo lugar para começar a entender a teoria e a tecnologia por meio de uma narrativa para resolver vários problemas empresariais de forma headless.
 
 ## Jornadas de documentação do AEM {#documentation-journeys}
 

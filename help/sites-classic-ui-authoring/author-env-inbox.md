@@ -24,13 +24,13 @@ Você pode receber notificações de várias áreas do AEM, como notificações 
 Você recebe essas notificações em duas caixas de entrada, que são separadas pelo tipo de notificações:
 
 * Uma caixa de entrada onde você pode ver as notificações que recebe como resultado de assinaturas é descrita na seção a seguir.
-* Uma caixa de entrada especializada para itens de workflow está descrita na [Participar de fluxos de trabalho](/help/sites-classic-ui-authoring/classic-workflows-participating.md) documento.
+* Uma caixa de entrada especializada para itens de fluxo de trabalho está descrita no documento [Participar de fluxos de trabalho](/help/sites-classic-ui-authoring/classic-workflows-participating.md).
 
 ## Exibir suas notificações {#viewing-your-notifications}
 
 Para exibir suas notificações:
 
-1. Abra a caixa de entrada de notificações: no **Sites** clique no botão de usuário no canto superior direito e selecione **Caixa de entrada de notificações**.
+1. Abra a caixa de entrada de notificações: no console **Sites**, clique no botão usuário no canto superior direito e selecione **Caixa de Entrada de Notificações**.
 
    ![screen_shot_2012-02-08at105226am](assets/screen_shot_2012-02-08at105226am.png)
 
@@ -52,7 +52,7 @@ Para exibir suas notificações:
 
 Para assinar notificações:
 
-1. Abra a caixa de entrada de notificações: no **Sites** clique no botão de usuário no canto superior direito e selecione **Caixa de entrada de notificações**.
+1. Abra a caixa de entrada de notificações: no console **Sites**, clique no botão usuário no canto superior direito e selecione **Caixa de Entrada de Notificações**.
 
    ![screen_shot_2012-02-08at105226am-1](assets/screen_shot_2012-02-08at105226am-1.png)
 
@@ -69,12 +69,12 @@ Para assinar notificações:
 
 1. Selecione o canal de notificação:
 
-   * **Caixa de entrada**: as notificações são exibidas na Caixa de entrada AEM.
-   * **E-mail**: as notificações são enviadas por email para o endereço definido em seu perfil de usuário.
+   * **Caixa de entrada**: as notificações são exibidas na Caixa de Entrada AEM.
+   * **Email**: as notificações são enviadas por email para o endereço de email definido em seu perfil de usuário.
 
    >[!NOTE]
    >
-   >Algumas configurações devem ser definidas para serem notificadas por email. Também é possível personalizar o template de email ou adicionar um template de email para um novo idioma. Consulte [Configuração da notificação por e-mail](/help/sites-administering/notification.md#configuringemailnotification) para configurar notificações por email no AEM.
+   >Algumas configurações devem ser definidas para serem notificadas por email. Também é possível personalizar o template de email ou adicionar um template de email para um novo idioma. Consulte [Configurando Notificação por Email](/help/sites-administering/notification.md#configuringemailnotification) para configurar notificações por email no AEM.
 
 1. Selecione as ações de página para as quais deseja ser notificado:
 
@@ -91,12 +91,12 @@ Quando uma página é excluída ou movida, uma ação de exclusão é automatica
 1. Defina os caminhos das páginas para as quais você será notificado:
 
    * Clique em **Adicionar** para adicionar uma nova linha à tabela.
-   * Clique em **Caminho** célula da tabela e insira o caminho, por exemplo, `/content/docs`.
+   * Clique na célula da tabela **Caminho** e insira o caminho, por exemplo, `/content/docs`.
 
-   * Para ser notificado para todas as páginas pertencentes à subárvore, defina **Exata?** para **Não**.
-Para ser notificado somente para ações na página definida pelo caminho, defina **Exata?** para **Sim**.
+   * Para ser notificado de todas as páginas pertencentes à subárvore, defina **Exato?** a **Não**.
+Para ser notificado somente para ações na página definida pelo caminho, defina **Exato?** a **Sim**.
 
-   * Para permitir a regra, defina **Regra** para **Permitir**. Se definida como **Negar**, a regra é negada, mas não removida, e pode ser permitida posteriormente.
+   * Para permitir a regra, defina **Regra** como **Permitir**. Se definida como **Negar**, a regra será negada, mas não removida, e poderá ser permitida posteriormente.
 
    Para remover uma definição, selecione a linha clicando em uma célula de tabela e clique em **Excluir**.
 
@@ -104,10 +104,10 @@ Para ser notificado somente para ações na página definida pelo caminho, defin
 
 ## Processamento de notificações {#processing-your-notifications}
 
-Se você optou por receber notificações na Caixa de entrada do AEM, a caixa de entrada estará cheia de notificações. Você pode [exibir suas notificações](#viewing-your-notifications), em seguida, selecione as notificações necessárias para:
+Se você optou por receber notificações na Caixa de entrada do AEM, a caixa de entrada estará cheia de notificações. Você pode [exibir suas notificações](#viewing-your-notifications) e selecionar as notificações necessárias para:
 
-* Aceite-o clicando em **Aprovar**: o valor no **Ler** a coluna está definida como **true**.
+* Aceite clicando em **Aprovar**: o valor na coluna **Ler** está definido como **true**.
 
-* Elimine-o clicando em **Excluir**.
+* Elimine-a clicando em **Excluir**.
 
 ![chlimage_1-5](assets/chlimage_1-5.jpeg)

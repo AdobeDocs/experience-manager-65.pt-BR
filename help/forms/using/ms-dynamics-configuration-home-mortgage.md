@@ -1,6 +1,6 @@
 ---
 title: Configure o Microsoft Dynamics 365 para o fluxo de trabalho de hipoteca da página inicial do site de referência We.Finance
-description: Saiba como usar os serviços do Microsoft&reg; Dynamics 365 por meio de formulários adaptáveis para o fluxo de trabalho de hipoteca da página de referência do We.Finance.
+description: Saiba como usar os serviços do Microsoft&reg; Dynamics 365 por meio de formulários adaptáveis para o fluxo de trabalho de hipoteca residencial do site de referência We.Finance.
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: develop, Configuration
 exl-id: 2ac37dc5-d88d-4f98-8576-cd2ca6f0ea3a
@@ -22,7 +22,7 @@ Saiba como usar os serviços do Microsoft® Dynamics 365 por meio de formulário
 
 O Microsoft® Dynamics 365 é um software de CRM (Customer Relationship Management) e ERP (Enterprise Resource Planning) que fornece soluções corporativas para criar e gerenciar contas, contatos, leads, oportunidades e casos de clientes.
 
-A AEM Forms fornece um serviço em nuvem para integrar o Dynamics 365 com o [Integração de dados do Forms](/help/forms/using/data-integration.md) módulo. Antes de usar a apresentação do aplicativo Hipoteca residencial com o cenário do Microsoft® Dynamics, é necessário configurar o Microsoft® Dynamics 365 para ser usado com o site de referência We.Finance.
+A AEM Forms fornece um serviço de nuvem para integrar o Dynamics 365 ao módulo [Integração de Dados do Forms](/help/forms/using/data-integration.md). Antes de usar a apresentação do aplicativo Hipoteca residencial com o cenário do Microsoft® Dynamics, é necessário configurar o Microsoft® Dynamics 365 para ser usado com o site de referência We.Finance.
 
 ## Pré-requisitos {#prerequisites}
 
@@ -44,13 +44,13 @@ Antes de começar a instalar e configurar o Dynamics 365, verifique se você tem
 
    ![calculatorconfigurepanel](assets/calculatorconfigurepanel.png)
 
-1. Na caixa de diálogo Editar contêiner do AEM Forms, navegue pelo caminho do ativo e selecione home-mortgage-calculator no seguinte caminho e selecione **Confirmar o**:
+1. Na caixa de diálogo Editar contêiner do AEM Forms, navegue pelo caminho do ativo e selecione home-mortgage-calculator no seguinte caminho e selecione **Confirmar**:
 
    formsanddocuments/We.Finance/MS Dynamics/
 
-   ![seletassetpath](assets/selectassetpath.png)
+   ![selectassetpath](assets/selectassetpath.png)
 
-1. Selecionar **Concluído**.
+1. Selecione **Concluído**.
 1. Publish a página editada.
 
    >[!NOTE]
@@ -63,7 +63,7 @@ Antes de começar a instalar e configurar o Dynamics 365, verifique se você tem
 
       `https://'[server]:[port]'/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/AEMFormsFSIRefsite_1_0.zip`
 
-   1. Importar o pacote de soluções para a instância do Microsoft® Dynamics. Na instância do Microsoft® Dynamics, acesse **Configurações** > **Soluções** e selecione **Importar**.
+   1. Importar o pacote de soluções para a instância do Microsoft® Dynamics. Na instância do Microsoft® Dynamics, vá para **Configurações** > **Soluções** e selecione **Importar**.
 
 1. Para configurar os detalhes de contato do usuário usados no refsite, importe o pacote Sarah Rose Contact.CSV para a instância do Microsoft® Dynamics:
 
@@ -71,4 +71,4 @@ Antes de começar a instalar e configurar o Dynamics 365, verifique se você tem
 
       `https://'[server]:[port]'/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/Sarah%20Rose%20Contact.csv`
 
-   1. Importe o pacote para sua instância do Microsoft® Dynamics. Na instância do Microsoft® Dynamics, acesse **Vendas** > **Contatos** e selecione **Importar dados**.
+   1. Importe o pacote para sua instância do Microsoft® Dynamics. Na instância do Microsoft® Dynamics, vá para **Vendas** > **Contatos** e selecione **Importar Dados**.

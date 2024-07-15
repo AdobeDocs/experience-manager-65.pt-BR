@@ -26,7 +26,7 @@ Vários atalhos de teclado estão disponíveis em todo o AEM. Alguns aplicam-se 
 
 ## Atalhos de teclado {#keyboard-shortcuts}
 
-Os seguintes atalhos estão disponíveis para os consoles Sites, Comércio, Telas, Ativos, Usuários, Grupos, Projetos e Fragmentos de experiência.
+Os seguintes atalhos estão disponíveis para os consoles Sites, Commerce, Screens, Assets, Usuários, Grupos, Projetos e Fragmentos de experiência.
 
 | Local | Atalho | Descrição |
 |---|---|---|
@@ -51,7 +51,7 @@ Os seguintes atalhos estão disponíveis para os consoles Sites, Comércio, Tela
 
 As combinações de teclas são listadas com as [teclas modificadoras](/help/sites-authoring/keyboard-shortcuts.md#os-specific-modifier-keys) do Windows.
 
-Vários atalhos de teclado também estão disponíveis para os usuários de desktop ao usar o [editor de página](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) para criar páginas.
+Vários atalhos de teclado também estão disponíveis para usuários de desktop que utilizam o [editor de páginas](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) para criar páginas.
 
 ## Teclas modificadoras específicas do sistema operacional {#os-specific-modifier-keys}
 

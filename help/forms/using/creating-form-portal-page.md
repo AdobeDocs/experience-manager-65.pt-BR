@@ -20,18 +20,18 @@ ht-degree: 2%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-forms-portal.html) |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-forms-portal.html?lang=pt-BR) |
 | AEM 6.5 | Este artigo |
 
 Os componentes do portal do Forms equipam os desenvolvedores da Web com componentes para criar e personalizar um portal de formulários em sites criados usando o Adobe Experience Manager (AEM). Para obter uma visão geral rápida do portal de formulários, consulte [Introdução à publicação de formulários em um portal](../../forms/using/introduction-publishing-forms.md).
 
 ## Pré-requisitos {#prerequisites}
 
-Os componentes do portal do Forms não estão disponíveis para uso por padrão. Verifique se as seguintes categorias de componente do portal de formulários estão habilitadas, conforme descrito em [Habilitar componentes do portal de formulários](/help/forms/using/enabling-forms-portal-components.md).
+Os componentes do portal do Forms não estão disponíveis para uso por padrão. Verifique se as seguintes categorias de componentes do portal de formulários estão habilitadas conforme descrito em [Habilitando componentes do portal de formulários](/help/forms/using/enabling-forms-portal-components.md).
 
-**Serviços de documento** Inclui os componentes Pesquisa e Lister, Link e Rascunhos e Envios.
+**Serviços de documentos** Inclui os componentes Pesquisa e Listagem, Link e Rascunhos e Envios.
 
-**Predicados de serviços de documento** Inclui o Predicado de data, o Predicado de texto completo, o Predicado de propriedades e os componentes Predicado de tags. Esses componentes são usados para configurar a pesquisa no componente Pesquisa e Lister.
+**Predicados De Serviços De Documento** Inclui Predicado De Data, Predicado De Texto Completo, Predicado De Propriedades E Componentes De Predicado De Marcas. Esses componentes são usados para configurar a pesquisa no componente Pesquisa e Lister.
 
 Uma vez ativadas em uma página de sites AEM, essas categorias de componentes ficam disponíveis para uso no navegador de componentes.
 
@@ -48,7 +48,7 @@ O componente de Pesquisa e listagem, disponível na categoria de componente Serv
 
 Você pode arrastar e soltar o componente Pesquisa e lista da categoria de componentes Serviços de documento no navegador de componentes para a página. O componente, quando adicionado, é semelhante ao seguinte.
 
-![Componente de pesquisa e listagem em uma página](assets/fp-grid-viw.png)
+![Componente de Pesquisa e Lister em uma página](assets/fp-grid-viw.png)
 
 Componente de Pesquisa e Lister em uma página com layout de Grade
 
@@ -56,13 +56,13 @@ Componente de Pesquisa e Lister em uma página com layout de Grade
 
 O painel Lista é uma área na qual os formulários são listados. O componente de Pesquisa e Lister fornece várias opções de configuração que você pode usar para controlar a exibição de formulários no painel Lista.
 
-Para configurar o painel Lista, selecione o componente Pesquisa e Lister e selecione ![settings_icon](assets/settings_icon.png). A variável **[!UICONTROL Editar componente]** será aberta.
+Para configurar o painel Lista, selecione o componente Pesquisa e Lister e selecione ![settings_icon](assets/settings_icon.png). A caixa de diálogo **[!UICONTROL Editar Componente]** é aberta.
 
-![Painel Lista no modo de edição](assets/edit-list.png)
+![Painel de lista no modo de edição](assets/edit-list.png)
 
 Painel Lista no modo de edição
 
-A variável **Editar** A caixa de diálogo inclui várias guias que fornecem opções de configuração descritas na tabela abaixo. Selecionar **OK** para salvar a configuração, quando concluído.
+A caixa de diálogo **Editar** inclui várias guias que fornecem opções de configuração descritas na tabela abaixo. Selecione **OK** para salvar a configuração, quando terminar.
 
 <table>
  <tbody>
@@ -79,7 +79,7 @@ A variável **Editar** A caixa de diálogo inclui várias guias que fornecem op�
   <tr>
    <td><p><span class="uicontrol"><strong>Exibir</strong></code></p> </td>
    <td>Texto do título</td>
-   <td>Título para o componente de Pesquisa e Lister. O título padrão é <strong>Portal Forms.</strong></td>
+   <td>Título para o componente de Pesquisa e Lister. O título padrão é <strong>Forms Portal.</strong></td>
   </tr>
   <tr>
    <td> </td>
@@ -109,12 +109,12 @@ A variável **Editar** A caixa de diálogo inclui várias guias que fornecem op�
   <tr>
    <td> </td>
    <td>Texto da página</td>
-   <td><p>Configura o texto da página (por exemplo, <strong>Página </strong>1 de 51). O valor padrão é <strong>Página</strong>.</p> <p>Por exemplo, se você especificar <strong>Formulário de inscrição </strong>neste campo e se houver 51 páginas, o texto da página será alterado para <strong>Formulário de inscrição </strong>1 de 51.</p> </td>
+   <td><p>Configura o texto da página (por exemplo, <strong>Página </strong>1 de 51). O valor padrão é <strong>Página</strong>.</p> <p>Por exemplo, se você especificar <strong>Formulário de Aplicativo </strong>neste campo e houver 51 páginas, o texto da página será alterado para <strong>Formulário de Aplicativo </strong>1 de 51.</p> </td>
   </tr>
   <tr>
    <td> </td>
    <td>Do Texto</td>
-   <td><p>Substitui a palavra <strong>de</strong> com o texto especificado (Página 1 <strong>de </strong>51). O valor padrão é <strong>de</strong>.</p> <p>Por exemplo, se você especificar <strong>de </strong>neste campo, o texto muda para a Página 1 <strong>de </strong>51.</p> </td>
+   <td><p>Substitui a palavra <strong>de</strong> pelo texto especificado (Página 1 <strong>de </strong>51). O valor padrão é <strong>de</strong>.</p> <p>Por exemplo, se você especificar <strong>de </strong>neste campo, o texto será alterado para Página 1 <strong>de </strong>51.</p> </td>
   </tr>
   <tr>
    <td><span class="uicontrol"><strong>Link do formulário</strong></code></td>
@@ -129,7 +129,7 @@ A variável **Editar** A caixa de diálogo inclui várias guias que fornecem op�
   <tr>
    <td> </td>
    <td>Enviar URL</td>
-   <td><p>Configura um servlet para o qual os dados de formulário são enviados.</p> <p><strong>Nota:</strong> <em>A URL de envio de um formulário pode ser especificada em vários locais e sua ordem de precedência é a seguinte:</em></p>
+   <td><p>Configura um servlet para o qual os dados de formulário são enviados.</p> <p><strong>Observação:</strong> <em>A URL de envio de um formulário pode ser especificada em vários locais e sua ordem de precedência é a seguinte:</em></p>
     <ol>
      <li><em>O URL de envio incorporado ao formulário (no botão Enviar ) tem a prioridade mais alta.</em></li>
      <li><em>O URL de envio mencionado na interface do usuário do AEM Forms tem a segunda prioridade mais alta.</em></li>
@@ -149,7 +149,7 @@ A variável **Editar** A caixa de diálogo inclui várias guias que fornecem op�
   <tr>
    <td><span class="uicontrol"><strong>Estilo</strong></code></td>
    <td>Tipo de estilo</td>
-   <td>Permite especificar <strong>Sem Estilo, Estilo Padrão</strong>ou <strong>Estilo personalizado </strong>para listar os formulários.</td>
+   <td>Permite especificar <strong>Sem Estilo, Estilo Padrão</strong> ou <strong>Estilo Personalizado </strong>para listar os formulários.</td>
   </tr>
   <tr>
    <td> </td>
@@ -163,9 +163,9 @@ A variável **Editar** A caixa de diálogo inclui várias guias que fornecem op�
 
 O painel Pesquisar permite adicionar os componentes Predicado de data, Predicado de texto completo, Predicado de propriedades e Predicado de tags da categoria Predicados de serviços de documento no AEM Sidekick. Esses componentes implementam a funcionalidade de pesquisa para que os usuários executem a pesquisa nos formulários listados.
 
-**Dica:** *Você pode controlar a lista de formulários exibida no portal de formulários com base em um critério predefinido e ocultar a funcionalidade de pesquisa para os usuários finais. Para controlar a lista de formulários, use os componentes de Predicado para aplicar filtros de pesquisa. Você também pode especificar os valores de filtro padrão e desativar a pesquisa na guia Exibição da caixa de diálogo Editar componente.*
+**Dica:** *Você pode controlar a lista de formulários exibida no portal de formulários com base em um critério predefinido e ocultar a funcionalidade de pesquisa para os usuários finais. Para controlar a lista de formulários, use os componentes de Predicado para aplicar filtros de pesquisa. Você também pode especificar os valores de filtro padrão e desabilitar a pesquisa na guia Exibição da caixa de diálogo Editar Componente.*
 
-![Painel de pesquisa com data, texto completo, propriedades e predicado de tags](assets/search-with-predicates.png)
+![Painel de Pesquisa com Data, Texto Completo, Propriedades e Predicado de Marcas](assets/search-with-predicates.png)
 
 Painel de pesquisa com data, texto completo, propriedades e predicado de tags
 
@@ -175,18 +175,18 @@ O componente de Predicado de data, quando adicionado, permite a pesquisa nos for
 
 Para configurar o componente de Predicado de data:
 
-1. Selecione o componente e selecione ![settings_icon](assets/settings_icon.png). A caixa de diálogo Editar é aberta.
+1. Selecione o componente e, em seguida, selecione ![settings_icon](assets/settings_icon.png). A caixa de diálogo Editar é aberta.
 1. Especifique o seguinte:
 
-   * **Tipo:** A única opção disponível é **Última data de modificação**
+   * **Tipo:** A única opção disponível é **Data da Última Modificação**
 
-   * **Texto:** Rótulo ou legenda do componente de Predicado de data. O valor padrão é **Data da última modificação.**
+   * **Texto:** Rótulo ou legenda para o componente de Predicado de Data. O valor padrão é **Última Data de Modificação.**
 
-   * **Rótulo da data inicial:** Rótulo ou legenda do campo de data de início
-   * **Rótulo de data final:** Rótulo ou legenda para o campo de data final
-   * **Ocultar:** Para aplicar o filtro de data padrão para listar formulários
+   * **Rótulo de Data de Início:** Rótulo ou legenda do campo de data de início
+   * **Rótulo de Data de Término:** Rótulo ou legenda para campo de data de término
+   * **Ocultar:** para aplicar o filtro de data padrão para listar formulários
 
-1. Selecionar **OK**
+1. Selecione **OK**
 
 #### Predicado de texto completo {#full-text-predicate}
 
@@ -194,8 +194,8 @@ O componente Predicado de texto completo implementa a pesquisa de texto completo
 
 Para configurar o componente Predicado de texto completo:
 
-1. Selecione o componente e selecione ![settings_icon](assets/settings_icon.png). A caixa de diálogo Editar é aberta.
-1. Especifique o título no campo **Título principal** campo.
+1. Selecione o componente e, em seguida, selecione ![settings_icon](assets/settings_icon.png). A caixa de diálogo Editar é aberta.
+1. Especifique o título no campo **Título principal**.
 1. Selecionar **Ok**
 
 #### Predicado de propriedades {#properties-predicate}
@@ -204,15 +204,15 @@ O componente Predicado de propriedades implementa a pesquisa de formulários com
 
 Para configurar o componente Predicado de propriedades:
 
-1. Selecione o componente e selecione ![settings_icon](assets/settings_icon.png). A caixa de diálogo Editar é aberta.
+1. Selecione o componente e, em seguida, selecione ![settings_icon](assets/settings_icon.png). A caixa de diálogo Editar é aberta.
 1. Na guia General, especifique o rótulo de pesquisa. O valor padrão é **Propriedades**
 
-1. Na guia Opções, selecione **Adicionar item.**
+1. Na guia Opções, selecione **Adicionar Item.**
 1. Selecione uma propriedade na lista suspensa e especifique um rótulo de pesquisa para ela no campo abaixo da lista suspensa.
 1. Repita a etapa 4 para adicionar mais propriedades. Você também pode especificar um valor de filtro padrão para listar formulários com base nos critérios especificados e ocultar a propriedade para pesquisa por usuários finais. Marque a caixa de seleção Ocultar de uma propriedade e especifique o valor do filtro padrão.
 Por exemplo, se você deseja exibir formulários que contêm &quot;Viagem&quot; em seus títulos, selecione Ocultar ao lado da propriedade Título. Além disso, especifique Viagem na caixa de texto de valor do filtro padrão.
 
-1. Selecionar **OK**
+1. Selecione **OK**
 
 #### Predicado de tags {#tags-predicate}
 
@@ -220,20 +220,20 @@ O componente Predicado de tags implementa a pesquisa de formulários com base em
 
 Para configurar o componente Predicado de tags:
 
-1. Selecione o componente e selecione ![settings_icon](assets/settings_icon.png). A caixa de diálogo Editar é aberta.
+1. Selecione o componente e, em seguida, selecione ![settings_icon](assets/settings_icon.png). A caixa de diálogo Editar é aberta.
 1. Selecione o botão de seta para baixo ao lado do campo Tags.
 1. Selecione as tags apropriadas
-1. Selecionar **OK**
+1. Selecione **OK**
 
 As tags selecionadas aparecem no painel Pesquisar junto com as caixas de seleção para seleção. Agora os usuários podem restringir sua pesquisa com base nas tags.
 
 ## Listar formulários em uma página {#list-forms-on-a-page-br}
 
-Para listar formulários em uma página, adicione o **[!UICONTROL Pesquisa e Lister]** Componente à página e configure o **[!UICONTROL Painel Lista]**. Para permitir que os usuários finais pesquisem formulários com data, texto e tags, adicione um **[!UICONTROL Painel de pesquisa]** componente.
+Para listar formulários em uma página, adicione o Componente **[!UICONTROL Pesquisa &amp; Lister]** à página e configure o **[!UICONTROL Painel de Lista]**. Para permitir que os usuários finais pesquisem formulários com data, texto e marcas, adicione um componente do **[!UICONTROL Painel de Pesquisa]**.
 
-Para vincular um formulário de qualquer lugar na página, use o componente Link. Para obter mais informações sobre o componente de link, consulte [Incorporação do componente de link em uma página](../../forms/using/embedding-link-component-page.md).
+Para vincular um formulário de qualquer lugar na página, use o componente Link. Para obter mais informações sobre o componente de link, consulte [Incorporando componente de link em uma página](../../forms/using/embedding-link-component-page.md).
 
-Para listar os formulários que estão em um estado de rascunho e os formulários que já foram enviados, use o **[!UICONTROL Rascunhos e envios]** componente. Para obter mais informações, consulte [Personalização do componente Rascunhos e Envios](../../forms/using/draft-submission-component.md).
+Para listar os formulários que estão em um estado de rascunho e os formulários que já foram enviados, use o componente **[!UICONTROL Rascunhos e Envios]**. Para obter mais informações, consulte [Personalizando rascunhos e componentes de envios](../../forms/using/draft-submission-component.md).
 
 ## Facilidade para dispositivos móveis {#mobile-device-friendliness}
 
@@ -247,11 +247,11 @@ Componente de pesquisa e listagem
 
 ## Personalização da página do portal de formulários {#customizing-a-forms-portal-page-br}
 
-Você pode personalizar uma página do portal de formulários para fornecer uma aparência distinta à página. Você também pode adicionar metadados para melhorar a experiência de pesquisa, alterar o layout da página e adicionar estilos CSS personalizados. Para obter mais informações, consulte [Personalização de modelos para Componentes do Forms Portal](../../forms/using/customizing-templates-forms-portal-components.md).
+Você pode personalizar uma página do portal de formulários para fornecer uma aparência distinta à página. Você também pode adicionar metadados para melhorar a experiência de pesquisa, alterar o layout da página e adicionar estilos CSS personalizados. Para obter mais informações, consulte [Personalização de modelos para Componentes do Portal Forms](../../forms/using/customizing-templates-forms-portal-components.md).
 
-A interface do usuário do AEM Forms permite adicionar metadados personalizados a formulários. Os metadados personalizados são úteis para fornecer uma listagem e pesquisar a experiência de formulários para os usuários finais. Para obter mais informações sobre Metadados personalizados, consulte [Personalização de modelos para Componentes do Forms Portal](../../forms/using/customizing-templates-forms-portal-components.md).
+A interface do usuário do AEM Forms permite adicionar metadados personalizados a formulários. Os metadados personalizados são úteis para fornecer uma listagem e pesquisar a experiência de formulários para os usuários finais. Para obter mais informações sobre Metadados personalizados, consulte [Personalizando modelos para Componentes do Portal Forms](../../forms/using/customizing-templates-forms-portal-components.md).
 
-Pronto para uso, o portal de formulários fornece ações de renderização. Você pode personalizar o portal de formulários para adicionar mais ações. Para obter informações detalhadas, consulte [Adição de ação personalizada em itens de lista de formulários.](../../forms/using/add-custom-action-form-lister.md)
+Pronto para uso, o portal de formulários fornece ações de renderização. Você pode personalizar o portal de formulários para adicionar mais ações. Para obter informações detalhadas, consulte [Adicionando ação personalizada em itens de lista de formulários.](../../forms/using/add-custom-action-form-lister.md)
 
 ## Artigos relacionados
 

@@ -1,5 +1,5 @@
 ---
-title: QuickStart da API Java do Serviço Gerenciador de Tarefas (SOAP)
+title: QuickStart(SOAP) da API Java do Serviço Gerenciador de Tarefas
 description: Use o serviço Gerenciador de Tarefas para atribuir tarefas, bloquear tarefas, recuperar tarefas atribuídas a usuários, recuperar dados de formulário de tarefas, modificar dados de formulário, recuperar anexos de arquivo e recuperar informações de tarefas.
 contentOwner: admin
 content-type: reference
@@ -38,7 +38,7 @@ As operações do AEM Forms podem ser executadas usando a API altamente tipada d
 
 >[!NOTE]
 >
->Não é possível pesquisar tarefas atribuídas a usuários usando a API do serviço Web. O motivo é que você não pode invocar a variável `taskList` que é uma chamada de método necessária para executar essa tarefa.
+>Não é possível pesquisar tarefas atribuídas a usuários usando a API do serviço Web. O motivo é porque você não pode invocar o método `taskList`, que é uma chamada de método necessária para executar esta tarefa.
 
 >[!NOTE]
 >
@@ -268,7 +268,7 @@ O exemplo de código Java a seguir bloqueia uma tarefa que corresponde ao valor 
 
 ## Início rápido (modo SOAP): recuperação de tarefas atribuídas aos usuários usando a API Java {#quick-start-soap-mode-retrieving-tasks-assigned-to-users-using-the-java-api}
 
-O exemplo de código Java a seguir recupera todas as tarefas atribuídas a um usuário chamado *tony blue*. Observe que esse usuário é especificado nas propriedades de conexão. Informações sobre tarefas retornadas, como seu valor identificador e descrição, são exibidas.
+O código Java a seguir recupera todas as tarefas atribuídas a um usuário chamado *tony blue*. Observe que esse usuário é especificado nas propriedades de conexão. Informações sobre tarefas retornadas, como seu valor identificador e descrição, são exibidas.
 
 ```java
  /*
@@ -500,7 +500,7 @@ O exemplo de código Java a seguir recupera dados de formulário de uma tarefa c
 
 ## Início rápido (modo SOAP): modificação de dados de formulário usando a API Java {#quick-start-soap-mode-modifying-form-data-using-the-java-api}
 
-O exemplo de código Java a seguir atualiza um formulário com dados que estão no estado *FormData.xml* arquivo.
+O exemplo de código Java a seguir atualiza um formulário com dados que está no arquivo *FormData.xml*.
 
 ```java
  /*
@@ -714,7 +714,7 @@ O exemplo de código Java a seguir recupera anexos de arquivo. Cada anexo é sal
 
 ## Início rápido (modo SOAP): recuperação de informações da tarefa usando a API Java {#quick-start-soap-mode-retrieving-task-information-using-the-java-api}
 
-O exemplo de código Java a seguir recupera todas as tarefas baseadas em um processo chamado *Empréstimo hipotecário - Pré-construído*. O status de cada tarefa retornada é verificado para garantir que seja uma tarefa concluída. Informações como o nome do usuário que concluiu a tarefa e a data em que a tarefa foi concluída são recuperadas e exibidas.
+O exemplo de código Java a seguir recupera todas as tarefas baseadas em um processo chamado *MortgageLoan - Prebuild*. O status de cada tarefa retornada é verificado para garantir que seja uma tarefa concluída. Informações como o nome do usuário que concluiu a tarefa e a data em que a tarefa foi concluída são recuperadas e exibidas.
 
 ```java
  /*

@@ -23,15 +23,15 @@ No espaço de trabalho do AEM Forms, os gerentes agora podem acessar as tarefas 
 
 **Encaminhar** - Encaminhar uma tarefa do subordinado direto para qualquer usuário.
 
-**Reclamação** - Reclamar uma tarefa de subordinação direta.
+**Declaração** - Reclamar uma tarefa de um subordinado direto.
 
-**Reclamação e abertura** - Reclamar uma tarefa de um subordinado direto e abri-la automaticamente na lista de tarefas pendentes do gerente.
+**Reclamação e Abertura** - Reclamar uma tarefa de um subordinado direto e abri-la automaticamente na lista de tarefas pendentes do gerente.
 
-**Rejeitar** - Rejeitar uma tarefa encaminhada a um subordinado direto por algum outro usuário. Essa opção está disponível para as tarefas encaminhadas por outros usuários a um subordinado direto.
+**Rejeitar** - Rejeita uma tarefa encaminhada a um subordinado direto por algum outro usuário. Essa opção está disponível para as tarefas encaminhadas por outros usuários a um subordinado direto.
 
 O AEM Forms restringe o acesso de um usuário somente às tarefas para as quais o usuário tem controle de acesso (ACL). Essa verificação garante que um usuário possa buscar somente as tarefas nas quais tem permissões de acesso. Usando serviços da Web e implementações de terceiros para definir a hierarquia, uma organização pode personalizar a definição de gerente e subordinados diretos para atender às suas necessidades.
 
-1. Crie um DSC. Para obter mais informações, consulte o tópico &quot;Desenvolvimento de componentes para o AEM Forms&quot; em [Programação com o AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63) guia.
+1. Crie um DSC. Para obter mais informações, consulte o tópico &quot;Desenvolvendo componentes para o AEM Forms&quot; no guia [Programação com o AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63).
 1. No DSC, defina uma nova SPI para gerenciamento de hierarquia para definir subordinados diretos e hierarquia dentro dos usuários do AEM Forms. Veja a seguir um exemplo de trecho de código Java™.
 
    ```java
@@ -111,7 +111,7 @@ O AEM Forms restringe o acesso de um usuário somente às tarefas para as quais 
    </component>
    ```
 
-1. Implante o DSC por meio do Workbench. Restart `ProcessManagementTeamTasksService` serviço.
+1. Implante o DSC por meio do Workbench. Reinicie o serviço `ProcessManagementTeamTasksService`.
 1. Talvez seja necessário atualizar o navegador ou fazer logout/logon com o usuário novamente.
 
 A tela a seguir ilustra o acesso às tarefas de subordinados diretos e às ações disponíveis.

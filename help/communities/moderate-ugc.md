@@ -24,13 +24,13 @@ ht-degree: 2%
 O conteúdo da comunidade, também conhecido como conteúdo gerado pelo usuário (UGC), é criado quando um membro (visitante do site conectado) publica conteúdo de um site da comunidade publicado por meio da interação com um dos seguintes componentes da comunidade:
 
 * [Blog](/help/communities/blog-feature.md): os membros postam um artigo de blog ou comentário.
-* [Calendário](/help/communities/calendar.md): os membros postam um evento de calendário ou comentário.
+* [Calendário](/help/communities/calendar.md): os membros postam um evento de calendário ou um comentário.
 * [Comentários](/help/communities/comments.md): os membros postam um comentário ou respondem a um comentário.
 
 * [Fórum](/help/communities/forum.md): os membros postam um novo tópico ou respondem a um tópico.
 * [Ideação](/help/communities/ideation-feature.md): os membros postam uma ideia ou um comentário.
 * [QnA](/help/communities/working-with-qna.md): os membros criam uma pergunta ou respondem a uma pergunta.
-* [Resenhas](/help/communities/reviews.md): os membros postam um comentário ao classificar um item.
+* [Avaliações](/help/communities/reviews.md): os membros postam um comentário ao classificar um item.
 
 A moderação de UGC é útil para reconhecer contribuições positivas e limitar as negativas (como spam e linguagem abusiva). O UGC pode ser moderado a partir de vários ambientes:
 
@@ -38,11 +38,11 @@ A moderação de UGC é útil para reconhecer contribuições positivas e limita
 
 * [Console de moderação em massa](moderation.md)
 
-  O console Moderação pode ser acessado por administradores e [moderadores da comunidade](/help/communities/users.md) no ambiente público e pelos administradores no ambiente de criação. Isso é possível quando o conteúdo da comunidade é armazenado em um [armazenamento comum](/help/communities/working-with-srp.md).
+  O console de Moderação pode ser acessado por administradores e [moderadores de comunidade](/help/communities/users.md) no ambiente público e por administradores no ambiente de criação. Isso é possível quando o conteúdo da comunidade é armazenado em um [armazenamento comum](/help/communities/working-with-srp.md).
 
 * [Moderação no contexto](in-context.md)
 
-  A moderação no ambiente de publicação pode ser executada por administradores e moderadores da comunidade diretamente na página em que o conteúdo foi publicado.
+  A moderação no ambiente do Publish pode ser executada por administradores e moderadores da comunidade diretamente na página em que o conteúdo foi publicado.
 
 ## Ações de moderação {#moderation-actions}
 
@@ -50,11 +50,11 @@ As ações que podem ser executadas no conteúdo postado (UGC) variam dependendo
 
 * `Admin`
 
-  Um usuário que é membro de [administradores da comunidade](users.md) grupo.
+  Um usuário que é membro do grupo [administradores-comunidade](users.md).
 
 * `Moderator`
 
-  Um membro de um [moderadores da comunidade](users.md#publishenvironmentusersandgroups) grupo (tem [permissões do moderador](in-context.md#moderatorpermissions)).
+  Um membro de um grupo de [moderadores da comunidade](users.md#publishenvironmentusersandgroups) (tem [permissões de moderador](in-context.md#moderatorpermissions)).
 
 * `Creator`
 
@@ -77,7 +77,7 @@ As ações que podem ser executadas no conteúdo postado (UGC) variam dependendo
    <td><strong>Criador</strong></td>
    <td><strong>Membro</strong></td>
    <td><strong>Visitante</strong></td>
-   <td><strong>Evento<br /> Acionado</strong></td>
+   <td><strong>Evento <br /> Acionado</strong></td>
    <td><strong>Pré-moderado</strong></td>
   </tr>
   <tr>
@@ -159,7 +159,7 @@ Ao selecionar a ação Recortar, o conteúdo é copiado para a área de transfer
 
 ![putbackugc](assets/putbackugc.png)
 
-No outro local, quando o conteúdo estiver presente na área de transferência, um botão Colar ficará visível ao lado de Nova publicação com um número que identifica o número de publicações que serão coladas. O botão Colar inclui uma opção para limpar a área de transferência em vez de colar.
+No outro local, quando o conteúdo estiver presente na área de transferência, um botão Colar ficará visível ao lado de Novo Post com um número que identifica o número de publicações que serão coladas. O botão Colar inclui uma opção para limpar a área de transferência em vez de colar.
 
 ![pasteugc](assets/pasteugc.png)
 
@@ -195,13 +195,13 @@ A ação Permitir é uma opção para UGC que foi sinalizada, negada ou não foi
 
 ### Pré-moderação {#premoderation}
 
-Quando o UGC é pré-moderado, a publicação não aparece no site publicado até ser aprovada por uma ação de moderação. Durante a criação de um [site da comunidade](/help/communities/sites-console.md), marcando a caixa [O conteúdo é pré-moderado](sites-console.md#moderation) permite a pré-moderação para todo o site. Quando os componentes são colocados em uma página, os componentes que oferecem suporte à moderação podem ser configurados para pré-moderação usando uma configuração na caixa de diálogo de edição:
+Quando o UGC é pré-moderado, a publicação não aparece no site publicado até ser aprovada por uma ação de moderação. Durante a criação de um [site da comunidade](/help/communities/sites-console.md), marcar a caixa [O conteúdo é pré-moderado](sites-console.md#moderation) habilita a pré-moderação para todo o site. Quando os componentes são colocados em uma página, os componentes que oferecem suporte à moderação podem ser configurados para pré-moderação usando uma configuração na caixa de diálogo de edição:
 
-* [Comentários](comments.md) e [análises](reviews.md)
-in **[!UICONTROL Moderação de usuário]** > **[!UICONTROL Pré-moderação]**.
+* [Comentários](comments.md) e [avaliações](reviews.md)
+em **[!UICONTROL Moderação de Usuário]** > **[!UICONTROL Pré-Moderação]**.
 
-* [Fórum](/help/communities/forum.md), [ideação](/help/communities/ideation-feature.md), [QnA](/help/communities/working-with-qna.md), e [calendário](/help/communities/calendar.md)
-in **[!UICONTROL Configurações]** > **[!UICONTROL Moderado]**.
+* [Fórum](/help/communities/forum.md), [ideação](/help/communities/ideation-feature.md), [QnA](/help/communities/working-with-qna.md) e [calendário](/help/communities/calendar.md)
+em **[!UICONTROL Configurações]** > **[!UICONTROL Moderado]**.
 
 ### Detecção de spam {#spam-detection}
 
@@ -219,10 +219,10 @@ O moderador pode visualizar essa publicação e marcar o mesmo para permitir ou 
 
 Para ativar o mecanismo de detecção de spam, siga estas etapas:
 
-1. Abertura [Console da Web](https://localhost:4502/system/console/configMgr), acessando `/system/console/configMgr`.
+1. Abra o [Console da Web](https://localhost:4502/system/console/configMgr) acessando `/system/console/configMgr`.
 
-1. Localizar **Moderação automática do AEM Communities** e editá-la.
-1. Adicione o **[!UICONTROL SpamProcess]** entrada.
+1. Localize a configuração da **Moderação automática do AEM Communities** e edite-a.
+1. Adicione a entrada **[!UICONTROL SpamProcess]**.
 
 ![spamprocess](assets/spamprocess.png)
 
@@ -232,7 +232,7 @@ Para ativar o mecanismo de detecção de spam, siga estas etapas:
 
 ### Sentimento {#sentiment}
 
-O sentimento é calculado com base no número de palavras-chave positivas e negativas ([watchwords](#configuringwatchwords)) presente em uma publicação (UGC).
+A impressão é calculada com base no número de palavras-chave positivas e negativas ([watchwords](#configuringwatchwords)) presentes em uma publicação (UGC).
 
 A análise de sentimentos usa um conjunto de regras pré-configuradas e calcula o sentimento do UGC. As regras padrão estão em `/libs/cq/workflow/components/workflow/social/sentiments/rules`.
 
@@ -249,46 +249,46 @@ Para substituir ou adicionar regras, crie um conjunto de regras no diretório /a
 
 Depois de analisado, o sentimento é armazenado com o UGC.
 
-No [console de moderação em massa](/help/communities/moderation.md)No entanto, é possível filtrar e visualizar o UGC com base no fato de o sentimento ser negativo, neutro ou positivo.
+No [console de moderação em massa](/help/communities/moderation.md), é possível filtrar e exibir o UGC com base no fato de o sentimento ser negativo, neutro ou positivo.
 
 #### Watchwords {#watchwords}
 
-O AEM Communities fornece uma *analisador de palavra-chave* como uma etapa no processo para avaliar [sentimento](#sentiment). A contribuição para o valor do sentimento fornecida pelas palavras de observação é devido a uma comparação de palavras de observação negativas e positivas usadas no conteúdo publicado e palavras proibidas.
+A AEM Communities fornece um *analisador de palavras-chave* como uma etapa no processo para avaliar o [sentimento](#sentiment). A contribuição para o valor do sentimento fornecida pelas palavras de observação é devido a uma comparação de palavras de observação negativas e positivas usadas no conteúdo publicado e palavras proibidas.
 
 #### Configurar o sentimento e as palavras-chave {#configure-sentiment-and-watchwords}
 
 A lista de palavras de ordem positivas e negativas pode ser personalizada como as regras de sentimento.
 
-A lista padrão de palavras-chave pode ser inserida como propriedades de um nó no repositório, semelhante ao padrão ou substituindo o padrão ao configurar o serviço OSGi `sentimentprocess.name` com a lista de palavras.
+A lista padrão de palavras de ordem pode ser inserida como propriedades de um nó no repositório, semelhante ao padrão, ou substituindo o padrão configurando o serviço OSGi `sentimentprocess.name` pela lista de palavras.
 
-A variável **sentimentprocess.name** O também pode ser modificado para fazer referência ao local de um conjunto personalizado de regras de sentimento.
+O **sentimentprocess.name** também pode ser modificado para fazer referência ao local de um conjunto personalizado de regras de sentimento.
 
 Para configurar o sentimento e as palavras de observação:
 
 * Faça logon na instância do autor como administrador.
-* Abertura [Console da Web](https://localhost:4502/system/console/configMgr).
+* Abra o [Console da Web](https://localhost:4502/system/console/configMgr).
 * Localizar `sentimentprocess.name`.
 * Selecione a configuração para abri-la no modo de edição.
 
 ![sentimentprocess](assets/sentimentprocess.png)
 
-* **Watchwords positivas**
+* **Palavras-Chave Positivas**
 
   Uma lista separada por vírgulas de palavras que contribuem para um sentimento positivo que substitui os padrões. O padrão é uma lista vazia.
 
-* **Watchwords Negativas**
+* **Palavras-Chave Negativas**
 
   Uma lista separada por vírgulas de palavras que contribuem para um sentimento negativo que substitui os padrões. O padrão é uma lista vazia.
 
 * **Caminho explícito para o nó Watchwords**
 
-  O local de repositório de um nó que contém o padrão `positive` e `negative` propriedades que especificam palavras-chave padrão. O padrão é `/libs/settings/community/watchwords/default`.
+  O local de repositório de um nó que contém as propriedades padrão `positive` e `negative` especificando palavras de observação padrão. O padrão é `/libs/settings/community/watchwords/default`.
 
-* **Regras de sentimento**
+* **Regras de Sentimento**
 
-  A localização no repositório das regras para calcular o sentimento com base em palavras de observação positivas e negativas. O padrão é `/libs/cq/workflow/components/workflow/social/sentiments/rules` (no entanto, não há mais nenhum workflow envolvido).
+  A localização no repositório das regras para calcular o sentimento com base em palavras de observação positivas e negativas. O padrão é `/libs/cq/workflow/components/workflow/social/sentiments/rules` (no entanto, não há mais nenhum fluxo de trabalho envolvido).
 
-Veja a seguir um exemplo de uma entrada personalizada para as palavras de observação padrão, quando `Explicit Path to Watchwords Node` está definida como `/libs/settings/community/watchwords/default`.
+Veja a seguir um exemplo de uma entrada personalizada para as palavras de ordem padrão, quando `Explicit Path to Watchwords Node` está definido como `/libs/settings/community/watchwords/default`.
 
 ![crxde](assets/crxde.png)
 

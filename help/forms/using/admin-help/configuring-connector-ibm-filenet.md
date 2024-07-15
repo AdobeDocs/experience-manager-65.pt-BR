@@ -18,7 +18,7 @@ ht-degree: 1%
 
 # Configurando o conector para o IBM FileNet {#configuring-connector-for-ibm-filenet}
 
-O conector para IBM FileNet permite a comunicação entre os formulários AEM e o IBM FileNet. Para obter informações adicionais, consulte &quot;Conectores para ECM&quot; em [Referência de serviços](https://www.adobe.com/go/learn_aemforms_services_63).
+O conector para IBM FileNet permite a comunicação entre os formulários AEM e o IBM FileNet. Para obter informações adicionais em segundo plano, consulte &quot;Conectores para ECM&quot; na [Referência de Serviços](https://www.adobe.com/go/learn_aemforms_services_63).
 
 >[!NOTE]
 >
@@ -79,11 +79,11 @@ Você pode configurar qual provedor de serviço de repositório usar com o FileN
 
 As opções disponíveis são as seguintes:
 
-**Nome do provedor do repositório atual:** O nome do provedor de serviços de repositório atual
+**Nome do Provedor do Repositório Atual:** O nome do provedor de serviço do repositório atual
 
-**Provedor de Repositório IBM FileNet:** Torna o provedor do repositório FileNet o provedor do repositório. Essa opção foi substituída.
+**Provedor do Repositório FileNet da IBM:** Transforma o provedor do repositório FileNet no provedor do repositório. Essa opção foi substituída.
 
-**provedor do repositório:** Torna o provedor do repositório nativo o provedor do repositório
+**provedor do repositório:** Transforma o provedor do repositório nativo no provedor do repositório
 
 >[!NOTE]
 >

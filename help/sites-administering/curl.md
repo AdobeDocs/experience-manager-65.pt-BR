@@ -28,7 +28,7 @@ cURL é uma ferramenta de linha de comando de código aberto usada para executar
 
 O cURL é uma ferramenta bem estabelecida e amplamente usada para obter ou enviar dados usando a sintaxe de URL e foi lançado originalmente em 1997. O nome cURL originalmente significava &quot;ver URL&quot;.
 
-Devido à natureza RESTful da estrutura do Sling no qual o AEM é criado, a maioria das tarefas pode ser reduzida a uma chamada de URL, que pode ser executada com cURL. [Tarefas de manipulação de conteúdo](/help/sites-administering/curl.md#common-content-manipulation-aem-curl-commands) como ativar páginas e iniciar workflows e [tarefas operacionais](/help/sites-administering/curl.md#common-operational-aem-curl-commands) como gerenciamento de pacotes e gerenciamento de usuários podem ser automatizados usando cURL. Além disso, você pode [criar seu próprio cURL](/help/sites-administering/curl.md#building-a-curl-ready-aem-command) para a maioria das tarefas no AEM.
+Devido à natureza RESTful da estrutura do Sling no qual o AEM é criado, a maioria das tarefas pode ser reduzida a uma chamada de URL, que pode ser executada com cURL. [Tarefas de manipulação de conteúdo](/help/sites-administering/curl.md#common-content-manipulation-aem-curl-commands), como ativar páginas e iniciar fluxos de trabalho, e [tarefas operacionais](/help/sites-administering/curl.md#common-operational-aem-curl-commands), como gerenciamento de pacotes e gerenciamento de usuários, podem ser automatizadas usando cURL. Além disso, você pode [criar seus próprios comandos cURL](/help/sites-administering/curl.md#building-a-curl-ready-aem-command) para a maioria das tarefas no AEM.
 
 >[!NOTE]
 >
@@ -48,15 +48,15 @@ Para localizar o comando exato necessário para sua operação específica, é n
 
 As etapas a seguir descrevem como fazer isso usando a criação de uma nova página no navegador Chrome como exemplo.
 
-1. Prepare a ação que deseja chamar no AEM. Neste caso, prosseguimos até ao final do **Criar página** assistente, mas ainda não clicaram **Criar**.
+1. Prepare a ação que deseja chamar no AEM. Nesse caso, chegamos ao fim do assistente **Criar Página**, mas ainda não clicamos em **Criar**.
 
    ![chlimage_1-66](assets/chlimage_1-66a.png)
 
-1. Inicie as ferramentas do desenvolvedor e selecione a variável **Rede** guia. Clique em **Preservar log** antes de limpar o console.
+1. Inicie as ferramentas de desenvolvedor e selecione a guia **Rede**. Clique na opção **Preservar log** antes de limpar o console.
 
    ![chlimage_1-67](assets/chlimage_1-67a.png)
 
-1. Clique em **Criar** no **Criar página** assistente para realmente criar o fluxo de trabalho.
+1. Clique em **Criar** no assistente **Criar página** para realmente criar o fluxo de trabalho.
 1. Clique com o botão direito do mouse na ação de POST resultante e selecione **Copiar** > **Copiar como cURL**.
 
    ![chlimage_1-68](assets/chlimage_1-68a.png)
@@ -75,7 +75,7 @@ Esta é uma lista de comandos cURL do AEM para tarefas administrativas e operaci
 
 >[!NOTE]
 >
->Os exemplos a seguir pressupõem que o AEM esteja em execução `localhost` na porta `4502` e usa o usuário `admin` com senha `admin`. Espaços reservados para comandos adicionais são definidos entre colchetes.
+>Os exemplos a seguir pressupõem que o AEM está em execução em `localhost` na porta `4502` e usa o usuário `admin` com a senha `admin`. Espaços reservados para comandos adicionais são definidos entre colchetes.
 
 ### Gerenciamento de pacotes {#package-management}
 
@@ -298,17 +298,17 @@ Consulte [MSRP - Provedor de Recurso de Armazenamento MongoDB](/help/communities
 
 ### Segurança {#security}
 
-#### Ativando e desativando o CRX DE Lite {#enabling-and-disabling-crx-de-lite}
+#### Ativar e desativar o CRX DE Lite {#enabling-and-disabling-crx-de-lite}
 
-Consulte [CRXDE Lite no AEM](/help/sites-administering/enabling-crxde-lite.md) para obter detalhes.
+Consulte [Habilitando o CRXDE Lite no AEM](/help/sites-administering/enabling-crxde-lite.md) para obter detalhes.
 
 ### Coleta de lixo do armazenamento de dados {#data-store-garbage-collection}
 
-Consulte [Coleta de lixo do armazenamento de dados](/help/sites-administering/data-store-garbage-collection.md#automating-data-store-garbage-collection) para obter detalhes.
+Consulte [Coleta de Lixo do Repositório de Dados](/help/sites-administering/data-store-garbage-collection.md#automating-data-store-garbage-collection) para obter detalhes.
 
 ### Integração do Analytics e do Target {#analytics-and-target-integration}
 
-Consulte [Ativação do Adobe Analytics e do Adobe Target](/help/sites-administering/opt-in.md#configuring-the-setup-and-provisioning-via-script) para obter detalhes.
+Consulte [Aceitação no Adobe Analytics e no Adobe Target](/help/sites-administering/opt-in.md#configuring-the-setup-and-provisioning-via-script) para obter detalhes.
 
 ### Logon único {#single-sign-on}
 
@@ -322,7 +322,7 @@ Aqui está uma lista de comandos AEM cURL para manipulação de conteúdo.
 
 >[!NOTE]
 >
->Os exemplos a seguir pressupõem que o AEM esteja em execução `localhost` na porta `4502` e usa o usuário `admin` com senha `admin`. Espaços reservados para comandos adicionais são definidos entre colchetes.
+>Os exemplos a seguir pressupõem que o AEM está em execução em `localhost` na porta `4502` e usa o usuário `admin` com a senha `admin`. Espaços reservados para comandos adicionais são definidos entre colchetes.
 
 ### Gerenciamento de página {#page-management}
 
@@ -412,4 +412,4 @@ curl -u <user>:<password> -F "*=@test.properties;type=text/plain" http://localho
 
 ### Manipulação de ativos {#asset-manipulation}
 
-Consulte [API HTTP de ativos](/help/assets/mac-api-assets.md) para obter detalhes.
+Consulte a [API HTTP do Assets](/help/assets/mac-api-assets.md) para obter detalhes.

@@ -24,7 +24,7 @@ Os detalhes a seguir são ideias e comentários expressos por David Nuescheler.
 
 David foi cofundador e CTO da Day Software AG, líder no fornecimento de software global de gerenciamento de conteúdo e infraestrutura de conteúdo, adquirido pela Adobe em 2010. Agora David é bolsista e VP de Tecnologia Empresarial na Adobe e também lidera o desenvolvimento da JSR-170, a API (Application Programming Interface, interface de programação de aplicativo) do Java™ Content Repository (JCR), o padrão de tecnologia para gerenciamento de conteúdo.
 
-Outras atualizações também podem ser vistas em [https://cwiki.apache.org/confluence/display/jackrabbit/DavidsModel](https://cwiki.apache.org/confluence/display/jackrabbit/DavidsModel).
+Atualizações adicionais também podem ser vistas em [https://cwiki.apache.org/confluence/display/jackrabbit/DavidsModel](https://cwiki.apache.org/confluence/display/jackrabbit/DavidsModel).
 
 ## Introdução do David {#introduction-from-david}
 
@@ -56,7 +56,7 @@ Outras restrições de dados, como restrições obrigatórias ou restrições de
 
 #### Exemplo {#example-1}
 
-O exemplo acima de uso de um `lastModified` A propriedade Date, por exemplo, no nó &quot;publicação do blog&quot;, não significa que haja necessidade de um tipo de nó especial. Eu definitivamente usaria `nt:unstructured` para os nós de postagem de blog, pelo menos inicialmente. Como no meu aplicativo de blog, tudo o que vou fazer é exibir a última data modificada de qualquer maneira (possivelmente &quot;pedir por&quot;), mal me importo se é uma data. Como eu implicitamente confio em meu aplicativo de escrita de blog para colocar uma &quot;data&quot; lá de qualquer maneira, realmente não há necessidade de declarar a presença de um `lastModified` de um tipo de nó.
+O exemplo acima de uso de uma propriedade Date `lastModified` em um nó &quot;publicação do blog&quot;, por exemplo, não significa que haja necessidade de um tipo de nó especial. Eu definitivamente usaria `nt:unstructured` para meus nós de postagem de blog pelo menos inicialmente. Como no meu aplicativo de blog, tudo o que vou fazer é exibir a última data modificada de qualquer maneira (possivelmente &quot;pedir por&quot;), mal me importo se é uma data. Como confio implicitamente no meu aplicativo de escrita de blog para colocar uma &quot;data&quot; lá de qualquer maneira, não há realmente necessidade de declarar a presença de uma data `lastModified` na forma de um tipo de nó.
 
 ### Regra #2: Direcione a hierarquia de conteúdo; não deixe que isso aconteça. {#rule-drive-the-content-hierarchy-don-t-let-it-happen}
 
@@ -74,7 +74,7 @@ Pessoalmente, prefiro convenções de hierarquia em vez do sistema de digitaçã
 >
 >A forma como um repositório de conteúdo é estruturado também pode afetar o desempenho. Para obter o melhor desempenho, o número de nós secundários anexados a nós individuais em um repositório de conteúdo não deve exceder 1.000.
 >
->Consulte [Quantos dados o CRX pode manipular?](https://helpx.adobe.com/experience-manager/kb/CrxLimitation.html)
+>Ver [Quantos dados o CRX pode manipular?](https://helpx.adobe.com/experience-manager/kb/CrxLimitation.html)
 
 #### Exemplo {#example-2}
 
@@ -100,7 +100,7 @@ Usando o modelo de conteúdo acima, posso permitir facilmente que o usuário &qu
 
 #### Explicação {#explanation-3}
 
-Se você não usar `clone()`, `merge()` ou `update()` métodos em seu aplicativo, um único espaço de trabalho é provavelmente o caminho a seguir.
+Se você não usar os métodos `clone()`, `merge()` ou `update()` em seu aplicativo, provavelmente um único espaço de trabalho será a melhor opção.
 
 &quot;Nós correspondentes&quot; é um conceito definido na especificação do JCR. Basicamente, ela se resume a nós que representam o mesmo conteúdo, em diferentes espaços de trabalho chamados de.
 
@@ -173,13 +173,13 @@ Eu acho que há casos de uso em que um sistema realmente não pode funcionar se 
 
 #### Explicação {#explanation-6}
 
-Se um modelo de conteúdo expor algo que até mesmo cheira remotamente como um arquivo ou uma pasta, tento usar (ou estender de) `nt:file`, `nt:folder`, e `nt:resource`.
+Se um modelo de conteúdo expor algo que mesmo remotamente cheira a um arquivo ou pasta, tento usar (ou estender de) `nt:file`, `nt:folder` e `nt:resource`.
 
 Em minha experiência, muitos aplicativos genéricos permitem a interação implícita com nt:folder e nt:files e sabem como lidar e exibir esses eventos se eles forem enriquecidos com metainformações adicionais. Por exemplo, uma interação direta com implementações de servidor de arquivos como CIF ou WebDAV que assenta sobre o JCR fica implícita.
 
-Eu acho que como regra geral um poderia usar o seguinte: Se você deve armazenar o nome do arquivo e o tipo MIME então `nt:file`/ `nt:resource` O é um bom jogo. Se você tiver vários &quot;arquivos&quot;, nt:folder é um bom lugar para armazená-los.
+Eu acho que como boa regra geral você poderia usar o seguinte: Se você deve armazenar o nome do arquivo e o tipo MIME então `nt:file`/ `nt:resource` é uma boa correspondência. Se você tiver vários &quot;arquivos&quot;, nt:folder é um bom lugar para armazená-los.
 
-Se você precisar adicionar informações meta para seu recurso, digamos uma propriedade &quot;author&quot; ou &quot;description&quot;, estenda `nt:resource` não o `nt:file`. Raramente estendo nt:file e estendo com frequência `nt:resource`.
+Se você precisar adicionar informações meta para seu recurso, digamos uma propriedade &quot;author&quot; ou &quot;description&quot;, estenda `nt:resource`, não o `nt:file`. Eu raramente estendo nt:file e frequentemente estendo `nt:resource`.
 
 #### Exemplo {#example-6}
 
@@ -207,13 +207,13 @@ Em bancos de dados relacionais, as IDs são um meio necessário para expressar r
 
 Se o modelo de conteúdo estiver cheio de propriedades que terminam em &quot;Id&quot;, é provável que você não esteja usando a hierarquia corretamente.
 
-É verdade que alguns nós precisam de uma identificação estável ao longo de seu ciclo de vida; menos do que você pode pensar. Mas `mix:referenceable` O tem esse mecanismo integrado no repositório, de modo que não há necessidade de criar um meio adicional de identificar um nó de maneira estável.
+É verdade que alguns nós precisam de uma identificação estável ao longo de seu ciclo de vida; menos do que você pode pensar. Mas o `mix:referenceable` tem esse mecanismo integrado no repositório, portanto, não há necessidade de criar um meio extra de identificar um nó de maneira estável.
 
 Lembre-se também de que os itens podem ser identificados por caminho. E, na medida em que os &quot;symlinks&quot; são mais adequados para a maioria dos usuários do que os links físicos em um sistema de arquivos UNIX®, um caminho faz sentido para que a maioria dos aplicativos se refira a um nó de destino.
 
 Mais importante ainda, é **mix**:referenceable, o que significa que ele pode ser aplicado a um nó no momento em que você realmente deve referenciá-lo.
 
-Portanto, apenas porque você gostaria de poder fazer referência a um nó do tipo &quot;Documento&quot;, não significa que o tipo de nó &quot;Documento&quot; tenha que se estender de `mix:referenceable` de forma estática. Isso ocorre porque ele pode ser adicionado dinamicamente a qualquer instância do &quot;Documento&quot;.
+Portanto, apenas porque você gostaria de poder fazer referência a um nó do tipo &quot;Documento&quot; não significa que o tipo de nó &quot;Documento&quot; tenha que se estender de `mix:referenceable` de forma estática. Isso ocorre porque ele pode ser adicionado dinamicamente a qualquer instância do &quot;Documento&quot;.
 
 #### Exemplo {#example-7}
 

@@ -28,15 +28,15 @@ As ações de gerenciamento de conteúdo são os blocos fundamentais que ajudam 
 
 Se você pensar em uma revista on-line, o conteúdo principal inclui artigos, anúncios e as capas. Três tipos principais de conteúdo Mobile On-Demand podem ser criados no AEM:
 
-* **Artigos**: baseado em texto junto com a arte para transmitir informações
-* **Banners:** links promocionais tipicamente gráficos
-* **Coleções:** representa um grupo bem definido *balde* repleto de conteúdo, como artigos ou banners que se encaixam no tema da capa
+* **Artigos**: texto baseado junto com arte para transmitir informações
+* **Banners:** geralmente links promocionais gráficos
+* **Coleções:** representam um *balde* bem definido, preenchido com conteúdo, como artigos ou banners que se adequam ao tema da capa
 
-* **Recursos compartilhados:** permite reutilizar ou compartilhar partes comuns entre artigos
+* **Recursos compartilhados:** permite a reutilização ou o compartilhamento de partes comuns entre artigos
 
 >[!NOTE]
 >
->Para saber mais sobre as considerações de design para aplicativos do AEM Mobile, consulte [Considerações de design para aplicativos do AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) na Ajuda online.
+>Para saber mais sobre as considerações de design para aplicativos do AEM Mobile, consulte [Considerações de design para aplicativos do AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) na Ajuda Online.
 
 ## Criação e gerenciamento de conteúdo {#creating-and-managing-content}
 
@@ -46,7 +46,7 @@ Os tópicos a seguir descrevem a criação e o gerenciamento de conteúdo, a sab
 * [Gerenciamento de banners](/help/mobile/mobile-on-demand-managing-banners.md)
 * [Gerenciar coleções](/help/mobile/mobile-on-demand-managing-collections.md)
 * [Upload de recursos compartilhados](/help/mobile/mobile-on-demand-shared-resources.md)
-* [Publicar e desfazer publicação de conteúdo](/help/mobile/mobile-on-demand-publishing-unpublishing.md)
+* [Publish - Cancelar publicação de conteúdo](/help/mobile/mobile-on-demand-publishing-unpublishing.md)
 
 >[!NOTE]
 >

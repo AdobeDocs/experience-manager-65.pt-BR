@@ -25,6 +25,6 @@ Mergulhe no desenvolvimento do SPA com este tutorial dividido em várias partes.
 Para obter um exemplo completo de como criar seu próprio aplicativo de página única que seja editável com AEM, começando com a configuração do projeto por meio do roteamento de aplicativos, consulte o Tutorials SPA do WKND:
 
 * [Introdução ao Editor e Angular SPA do AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview.html)
-* [Introdução ao Editor de SPA AEM e React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html)
+* [Introdução ao Editor SPA AEM e React](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html)
 
-No entanto, antes de começar seu próprio projeto de SPA para AEM, não deixe de revisar também o [Desenvolvimento de AEM para SPA](/help/sites-developing/spa-architecture.md) documento.
+No entanto, antes de começar seu próprio projeto de SPA para AEM, leia também o documento [Desenvolvimento do SPA para AEM](/help/sites-developing/spa-architecture.md).

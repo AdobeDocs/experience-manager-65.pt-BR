@@ -32,7 +32,7 @@ Para configurar seu site, as instruções abaixo descrevem as pastas a serem cri
 
   É aqui que as páginas da Web disponíveis para download residem.
 
-O código deste tutorial depende do nome da pasta principal ser o mesmo para o aplicativo, design e conteúdo. Se você escolher algum outro nome para o seu site, sempre substitua `an-scf-sandbox` com o nome escolhido.
+O código deste tutorial depende do nome da pasta principal ser o mesmo para o aplicativo, design e conteúdo. Se você escolher outro nome para o seu site, sempre substitua `an-scf-sandbox` pelo nome escolhido.
 
 >[!NOTE]
 >
@@ -51,37 +51,37 @@ O diretório /apps no repositório contém o código com o que implementa o comp
 
 O diretório /apps está protegido e não está acessível publicamente, assim como os diretórios /content e /etc/designs.
 
-1. Criar `/apps/an-scf-sandbox` pasta.
+1. Criar pasta `/apps/an-scf-sandbox`.
 
-   Usar **[!UICONTROL CRXDE Lite]**, no painel do explorador
+   Usando o **[!UICONTROL CRXDE Lite]**, no painel do explorador
 
-   1. Selecione o `/apps` pasta.
-   1. Clique com o botão direito do mouse **[!UICONTROL Criar]**... ou puxe para baixo o **[!UICONTROL Criar...]** menu.
-   1. Selecionar **[!UICONTROL Criar pasta...]**.
-   1. No **[!UICONTROL Criar pasta]** , insira `an-scf-sandbox`.
+   1. Selecione a pasta `/apps`.
+   1. Clique com o botão direito do mouse em **[!UICONTROL Criar]**... ou puxe o menu **[!UICONTROL Criar...]**.
+   1. Selecione **[!UICONTROL Criar Pasta...]**.
+   1. Na caixa de diálogo **[!UICONTROL Criar Pasta]**, digite `an-scf-sandbox`.
    1. Clique em **[!UICONTROL OK]**.
 
-1. Criar **[!UICONTROL componentes]** subpasta.
+1. Criar subpasta de **[!UICONTROL componentes]**.
 
-   1. Selecione o `/apps/an-scf-sandbox` pasta.
+   1. Selecione a pasta `/apps/an-scf-sandbox`.
    1. Clique em **[!UICONTROL Criar > Criar pasta]**.
-   1. No **[!UICONTROL Criar pasta]** , insira **[!UICONTROL componentes]**.
+   1. Na caixa de diálogo **[!UICONTROL Criar Pasta]**, digite **[!UICONTROL componentes]**.
    1. Clique em **[!UICONTROL OK]**.
 
-1. Criar **[!UICONTROL modelos]** subpasta.
+1. Criar subpasta de **[!UICONTROL modelos]**.
 
-   1. Selecione o `/apps/an-scf-sandbox` pasta.
+   1. Selecione a pasta `/apps/an-scf-sandbox`.
    1. Clique em **[!UICONTROL Criar > Criar pasta]**.
-   1. No **[!UICONTROL Criar pasta]** , insira **[!UICONTROL modelos]**.
+   1. Na caixa de diálogo **[!UICONTROL Criar Pasta]**, digite **[!UICONTROL modelos]**.
    1. Clique em **[!UICONTROL OK]**.
-   1. Selecionar novamente `/apps/an-scf-sandbox`.
-   1. Selecionar **[!UICONTROL Salvar tudo]**.
+   1. Selecione novamente `/apps/an-scf-sandbox`.
+   1. Selecione **[!UICONTROL Salvar tudo]**.
 
    Como em qualquer processo de edição, você deve salvar com frequência. Se você tiver problemas ao inserir dados, talvez o tempo limite do seu logon tenha expirado ou você precise salvar as edições anteriores.
 
 1. A estrutura no painel do explorador do CRXDE Lite agora deve ser semelhante a esta:
 
-   ![crxde-template](assets/crxde-template.png)
+   ![modelo-crxde](assets/crxde-template.png)
 
 ## Configurar o Diretório de design (/etc/designs) {#setup-the-design-directory-etc-designs}
 
@@ -89,19 +89,19 @@ O diretório /etc/designs contém as imagens, os scripts e as folhas de estilos 
 
 1. Para usar a ferramenta Designer na interface clássica, navegue até [https://&lt;server>:&lt;port>/miscadmin](http://localhost:4502/miscadmin).
 
-   Observação: se você usar o CRXDE Lite para criar um Nó do tipo `cq:Page`, o Controle de acesso e a Replicação não seriam definidos como as configurações padrão para uma página.
+   Observação: se você usar o CRXDE Lite para criar um Nó do tipo `cq:Page`, o Controle de Acesso e a Replicação não serão definidos como as configurações padrão para uma página.
 
-1. No painel do explorador, selecione a variável **[!UICONTROL Designs]** e clique em **[!UICONTROL Novo]** > **[!UICONTROL Nova página]**.
+1. No painel do explorador, selecione a pasta **[!UICONTROL Designs]** e clique em **[!UICONTROL Nova]** > **[!UICONTROL Nova página]**.
 
    Insira:
 
-   * Título: **[!UICONTROL Uma sandbox SCF]**
+   * Título: **[!UICONTROL Uma Sandbox SCF]**
    * Nome: **[!UICONTROL an-scf-sandbox]**
-   * Selecionar **[!UICONTROL Modelo de página de design]**
+   * Selecionar **[!UICONTROL Modelo de Página de Design]**
 
    Clique em **[!UICONTROL Criar]**.
 
-   ![design-template](assets/design-template.png)
+   ![modelo de design](assets/design-template.png)
 
 1. Atualize o painel do explorador se a pasta &quot;Uma sandbox SCF&quot; não for exibida.
 
@@ -115,4 +115,4 @@ O diretório /etc/designs contém as imagens, os scripts e as folhas de estilos 
 
 O diretório /content no repositório é onde o conteúdo do site reside. Os caminhos em /content compreendem os caminhos do URL para solicitações do navegador.
 
-*Depois* o [modelo de página](initial-app.md#createthepagetemplate) for criado como parte do aplicativo inicial, o conteúdo da página inicial poderá ser criado com base no modelo.... [**^**](initial-app.md)
+*Depois* que o [modelo de página](initial-app.md#createthepagetemplate) for criado como parte do aplicativo inicial, o conteúdo da página inicial poderá ser criado com base no modelo... [**√**](initial-app.md)

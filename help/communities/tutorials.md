@@ -18,7 +18,7 @@ ht-degree: 1%
 
 # Tutoriais {#tutorials}
 
-Estes são exemplos para ajudar a aprender e trabalhar com as comunidades do Adobe Experience Manager (AEM) 6.1 [estrutura da componente social (SCF)](scf.md).
+Estes são exemplos para ajudar a aprender e trabalhar com o Adobe Experience Manager (AEM) 6.1 Communities [estrutura de componente social (SCF)](scf.md).
 
 ## Personalização do lado do cliente {#client-side-customization}
 
@@ -34,19 +34,19 @@ Consulte também:
 
 ## Personalização do lado do servidor {#server-side-customization}
 
-Consulte também [Personalização do lado do servidor SCF](server-customize.md).
+Consulte também [Personalização no lado do servidor do SCF](server-customize.md).
 
-O código de amostra está disponível no [GitHub da Adobe Experience Cloud](https://github.com/Adobe-Marketing-Cloud) repositório:
+O código de exemplo está disponível no repositório [Adobe Experience Cloud GitHub](https://github.com/Adobe-Marketing-Cloud):
 
-* [Personalizar amostra do componente SCF](https://github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-customize)
+* [Personalizar Amostra de Componente SCF](https://github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-customize)
 
-* [Amostra do componente SCF de sobreposição](https://github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-overlay)
+* [Amostra de Componente SCF de Sobreposição](https://github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-overlay)
 
-* [Estender amostra do componente SCF](https://github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-extension)
+* [Estender Amostra do Componente SCF](https://github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-extension)
 
 ## Instruções passo a passo {#how-to-instructions}
 
-* [AEM Communities Todo MVC](https://github.com/Adobe-Marketing-Cloud/aem-communities-todomvc-sample)
+* [MVC de tarefa do AEM Communities](https://github.com/Adobe-Marketing-Cloud/aem-communities-todomvc-sample)
 
   O MVC ToDo demonstra como desenvolver um componente SCF+SRP do zero.
 
@@ -60,11 +60,11 @@ O código de amostra está disponível no [GitHub da Adobe Experience Cloud](htt
 
 ## Usuários de demonstração {#demo-users}
 
-O pacote de amostras do Geometrixx inclui usuários de demonstração. Geralmente, há uma diferença na experiência entre ser um visitante (não conectado) ou um membro (conectado). E, desde que os pacotes de amostras do Geometrixx permaneçam instalados, você pode usar esses usuários para simular um estado conectado ao explorar com o [Guia de componentes da comunidade](components-guide.md).
+O pacote de amostras do Geometrixx inclui usuários de demonstração. Geralmente, há uma diferença na experiência entre ser um visitante (não conectado) ou um membro (conectado). E, enquanto os pacotes de amostras do Geometrixx permanecerem instalados, você pode usar esses usuários para simular um estado conectado ao explorar com o [guia de Componentes da Comunidade](components-guide.md).
 
-Para obter uma lista completa dos usuários de demonstração, navegue usando o Painel para **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > **[!UICONTROL Segurança > Usuários]**. Ou use a interface clássica [console de segurança](http://localhost:4502/useradmin) para gerenciar usuários e grupos.
+Para obter uma lista completa dos usuários de demonstração, navegue usando o Painel para **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > **[!UICONTROL Segurança > Usuários]**. Ou use o [console de segurança](http://localhost:4502/useradmin) da interface clássica para gerenciar usuários e grupos.
 
-Se um [o site da comunidade foi criado](getting-started.md), é possível atribuir usuários de demonstração à sua [grupos de usuários da comunidade](users.md).
+Se um [site de comunidade foi criado](getting-started.md), é possível atribuir usuários de demonstração aos seus [grupos de usuários da comunidade](users.md).
 
 ***id de usuário* / *senha***:
 

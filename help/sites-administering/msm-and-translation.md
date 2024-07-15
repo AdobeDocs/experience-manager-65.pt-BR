@@ -28,7 +28,7 @@ As seguintes ferramentas administrativas estão disponíveis para gerenciar site
 
    * [Tradução de conteúdo para sites multilíngues](/help/sites-administering/translation.md)
 
-* Esses dois recursos podem ser combinados para atender a sites que são ambos [Multinacional e multilíngue](#multinational-and-multilingual-sites).
+* Esses dois recursos podem ser combinados para atender a sites que são [Multinacionais e Multilíngues](#multinational-and-multilingual-sites).
 
 ## Sites multinacionais e multilíngues {#multinational-and-multilingual-sites}
 
@@ -44,13 +44,13 @@ Você pode criar conteúdo para sites multinacionais e multilíngues com eficiê
 
 O diagrama a seguir ilustra como os principais conceitos se cruzam (mas não mostra todos os níveis/elementos envolvidos):
 
-![Diagrama que mostra os principais conceitos de MSM e tradução](assets/chlimage_1-71a.png)
+![Diagrama mostrando os principais conceitos de MSM e Tradução](assets/chlimage_1-71a.png)
 
 >[!NOTE]
 >
 >Neste cenário, e em situações comparáveis, o MSM não gerencia as diferentes versões de idioma dessa maneira.
 >
->* [MSM](/help/sites-administering/msm.md) gerencia a implantação do conteúdo traduzido de um blueprint (por exemplo, um conteúdo principal global) para as live copies (por exemplo, os sites locais), dentro dos limites de um idioma.
+>* O [MSM](/help/sites-administering/msm.md) gerencia a implantação do conteúdo traduzido de um blueprint (por exemplo, um conteúdo principal global) para as live copies (por exemplo, os sites locais), dentro dos limites de um idioma.
 >* Os recursos de integração de [tradução](/help/sites-administering/translation.md) do AEM, juntamente com serviços de gerenciamento de tradução de terceiros, gerenciam os idiomas e a tradução de conteúdo para esses diferentes idiomas.
 >
 >Para casos de uso mais avançados, o MSM também pode ser usado com conteúdo principal de vários idiomas.
@@ -59,9 +59,9 @@ O diagrama a seguir ilustra como os principais conceitos se cruzam (mas não mos
 >
 >Em todos os casos de uso, é recomendável ler as seguintes práticas recomendadas:
 >
->* [Práticas recomendadas para MSM](/help/sites-administering/msm-best-practices.md)em especial:
+>* [Práticas recomendadas para MSM](/help/sites-administering/msm-best-practices.md); especificamente:
 >
->   * [Criar site](/help/sites-administering/msm-best-practices.md#create-site)
+>   * [Criar Site](/help/sites-administering/msm-best-practices.md#create-site)
 >   * [MSM e sites multilíngues](/help/sites-administering/msm-best-practices.md#msm-and-multilingual-websites)
 >
 >* [Práticas recomendadas para tradução](/help/sites-administering/tc-bp.md)

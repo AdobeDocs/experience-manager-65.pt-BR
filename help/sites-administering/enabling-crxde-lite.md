@@ -18,11 +18,11 @@ ht-degree: 0%
 
 # CRXDE Lite no AEM{#enabling-crxde-lite-in-aem}
 
-Para garantir que as instalações do AEM sejam o mais seguras possível, a lista de verificação de segurança recomenda [desabilitar WebDAV](/help/sites-administering/security-checklist.md#disable-webdav) em ambientes de produção.
+Para garantir que as instalações do AEM sejam o mais seguras possível, a lista de verificação de segurança recomenda [desabilitar o WebDAV](/help/sites-administering/security-checklist.md#disable-webdav) em ambientes de produção.
 
-No entanto, o CRXDE Lite depende da `org.apache.sling.jcr.davex` para funcionar corretamente, de modo que desabilitar WebDAV também desabilitará efetivamente o CRXDE Lite.
+No entanto, o CRXDE Lite depende do pacote `org.apache.sling.jcr.davex` para funcionar corretamente, portanto, desabilitar o WebDAV também desabilitará efetivamente o CRXDE Lite.
 
-Quando isso acontecer, navegue até `https://serveraddress:4502/crx/de/index.jsp` exibirá um nó raiz vazio e todas as solicitações HTTP para os recursos CRXDE Lite falharão:
+Quando isso acontecer, navegar até `https://serveraddress:4502/crx/de/index.jsp` exibirá um nó raiz vazio e todas as solicitações HTTP para os recursos CRXDE Lite falharão:
 
 ```xml
 404 Resource at '/crx/server/crx.default/jcr:root/.1.json' not found: No resource found
@@ -30,19 +30,19 @@ Quando isso acontecer, navegue até `https://serveraddress:4502/crx/de/index.jsp
 
 Embora essa recomendação tenha como objetivo reduzir ao máximo as superfícies de ataque, os administradores do sistema podem, às vezes, precisar de acesso ao CRXDE Lite para navegar pelo conteúdo ou depurar problemas em instâncias de produção.
 
-Você pode habilitar o CRXDE Lite com [Configurações de OSGi](#enabling-crxde-lite-osgi) ou com um [comando cURL](#enabling-crxde-lite-curl).
+Você pode habilitar o CRXDE Lite com [configurações OSGi](#enabling-crxde-lite-osgi) ou com um [comando cURL](#enabling-crxde-lite-curl).
 
 >[!WARNING]
 >
->Devido a pequenas diferenças em como esses métodos operam, você deve usar ***ou*** OSGI ***ou*** cURL.
+>Devido a pequenas diferenças na forma como esses métodos operam, você deve usar ***ou*** OSGI ***ou*** cURL.
 >
->Os dois métodos ***não*** intercambiável.
+>Os dois métodos são ***não*** intercambiáveis.
 
 ## Habilitar o CRXDE Lite com OSGI {#enabling-crxde-lite-osgi}
 
 Se desativado, você pode ativar o CRXDE Lite seguindo o procedimento abaixo:
 
-1. Acesse o console de Componentes OSGi em `http://localhost:4502/system/console/components`
+1. Ir para o console de Componentes OSGi em `http://localhost:4502/system/console/components`
 1. Procure o seguinte componente:
 
    * `org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet`

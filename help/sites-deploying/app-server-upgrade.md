@@ -16,9 +16,9 @@ ht-degree: 0%
 
 Esta seção descreve o procedimento que deve ser seguido para atualizar o AEM nas instalações do Servidor de Aplicativos.
 
-Todos os exemplos neste procedimento usam o Tomcat como o servidor da aplicação e implicam que você já tem uma versão funcional do AEM implantada. O procedimento destina-se a documentar as atualizações realizadas de **AEM versão 6.4 para 6.5**.
+Todos os exemplos neste procedimento usam o Tomcat como o servidor da aplicação e implicam que você já tem uma versão funcional do AEM implantada. O procedimento destina-se a documentar atualizações executadas da **versão 6.4 do AEM para a 6.5**.
 
-1. Primeiro, inicie o TomCat. Na maioria das situações, é possível fazer isso executando o `./catalina.sh` inicie o script de inicialização executando este comando no terminal:
+1. Primeiro, inicie o TomCat. Na maioria das situações, você pode fazer isso executando o script de inicialização `./catalina.sh`, executando este comando no terminal:
 
    ```shell
    $CATALINA_HOME/bin/catalina.sh start
@@ -30,9 +30,9 @@ Todos os exemplos neste procedimento usam o Tomcat como o servidor da aplicaçã
    https://<serveraddress:port>/cq/system/console/bundles
    ```
 
-1. Em seguida, desimplante o AEM 6.4. Isso pode ser feito no Gerenciador de aplicativos do TomCat (`http://serveraddress:serverport/manager/html`)
+1. Em seguida, desimplante o AEM 6.4. Isso pode ser feito no App Manager do TomCat (`http://serveraddress:serverport/manager/html`)
 
-1. Agora, migre o repositório usando a ferramenta de migração crx2oak. Para fazer isso, baixe a versão mais recente do crx2oak em [este local](https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/).
+1. Agora, migre o repositório usando a ferramenta de migração crx2oak. Para fazer isso, baixe a versão mais recente do crx2oak de [este local](https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/).
 
    ```shell
    SLING_HOME= $AEM-HOME/crx-quickstart java -Xmx4096m -jar crx2oak.jar --load-profile segment-fds
@@ -40,7 +40,7 @@ Todos os exemplos neste procedimento usam o Tomcat como o servidor da aplicaçã
 
 1. Exclua as propriedades necessárias no arquivo sling.properties fazendo o seguinte:
 
-   1. Abra o arquivo localizado em `crx-quickstart/launchpad/sling.properties`
+   1. Abrir o arquivo localizado em `crx-quickstart/launchpad/sling.properties`
    1. Texto da etapa Remova as seguintes propriedades e salve o arquivo:
 
       1. `sling.installer.dir`
@@ -61,11 +61,11 @@ Todos os exemplos neste procedimento usam o Tomcat como o servidor da aplicaçã
 
 1. Remova os arquivos e as pastas que não são mais necessários. Os itens que você precisa remover especificamente são:
 
-   * A variável **pasta de inicialização**. Você pode excluí-lo executando o seguinte comando no terminal: `rm -rf crx-quickstart/launchpad/startup`
+   * A **pasta de inicialização/inicialização**. Você pode excluí-lo executando o seguinte comando no terminal: `rm -rf crx-quickstart/launchpad/startup`
 
-   * A variável **arquivo base.jar**: `find crx-quickstart/launchpad -type f -name "org.apache.sling.launchpad.base.jar*" -exec rm -f {} \`
+   * O **arquivo base.jar**: `find crx-quickstart/launchpad -type f -name "org.apache.sling.launchpad.base.jar*" -exec rm -f {} \`
 
-   * A variável **Arquivo BootstrapCommandFile_timestamp.txt**: `rm -f crx-quickstart/launchpad/felix/bundle0/BootstrapCommandFile_timestamp.txt`
+   * O **arquivo BootstrapCommandFile_timestamp.txt**: `rm -f crx-quickstart/launchpad/felix/bundle0/BootstrapCommandFile_timestamp.txt`
 
    * Remover **sling.options.file** executando: `find crx-quickstart/launchpad -type f -name "sling.options.file" -exec rm -rf`
 
@@ -78,11 +78,11 @@ Todos os exemplos neste procedimento usam o Tomcat como o servidor da aplicaçã
 
 1. Edite os arquivos de configuração para deixá-los prontos para uso. Mais especificamente:
 
-   * Adicione a seguinte linha a `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config`:
+   * Adicionar a seguinte linha a `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config`:
 
      `customBlobStore=true`
 
-   * Em seguida, adicione as seguintes linhas em `org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.config`:
+   * Em seguida, adicione as seguintes linhas a `org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.config`:
 
      ```
      path=./crx-quickstart/repository/datastore
@@ -95,7 +95,7 @@ Todos os exemplos neste procedimento usam o Tomcat como o servidor da aplicaçã
    jar xvf aem-quickstart-6.5.0.war
    ```
 
-1. Depois que o conteúdo for extraído, acesse o **WEB-INF** e edite o arquivo web.xml para alterar os modos de execução. Para encontrar o local onde eles estão definidos no XML, procure a variável `sling.run.modes` string. Depois de encontrá-lo, altere os modos de execução na próxima linha do código, que por padrão é definida como autor:
+1. Depois de extrair o conteúdo, vá para a pasta **WEB-INF** e edite o arquivo web.xml para alterar os modos de execução. Para localizar o local onde eles estão definidos no XML, procure a cadeia de caracteres `sling.run.modes`. Depois de encontrá-lo, altere os modos de execução na próxima linha do código, que por padrão é definida como autor:
 
    ```bash
    <param-value >author</param-value>

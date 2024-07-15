@@ -30,21 +30,21 @@ Este documento explica o funcionamento desses renderizadores a partir da perspec
 
 ## PDF forms {#pdf-forms}
 
-PDF forms são renderizados por `PdfTaskForm View`.
+Os PDF forms são renderizados por `PdfTaskForm View`.
 
-Quando um formulário XDP é renderizado como PDF, um `FormBridge` O JavaScript™ é adicionado pelo serviço FormsAugmenter. Esse JavaScript™ (dentro do formulário PDF) ajuda a executar ações como enviar formulário, salvar formulário ou usar o formulário offline.
+Quando um formulário XDP é renderizado como PDF, um JavaScript™ `FormBridge` é adicionado pelo serviço FormsAugmenter. Este JavaScript™ (dentro do formulário PDF) ajuda a executar ações como enviar formulário, salvar formulário ou usar o formulário offline.
 
 No espaço de trabalho do AEM Forms, a exibição PDFTaskForm se comunica com o `FormBridge`JavaScript, por meio de um HTML intermediário presente em `/lc/libs/ws/libs/ws/pdf.html`. O fluxo é:
 
-**Exibição de PDFTaskForm - pdf.html**
+**modo de exibição PDFTaskForm - pdf.html**
 
-Comunica-se usando `window.postMessage` / `window.attachEvent('message')`
+Comunica-se usando o `window.postMessage` / `window.attachEvent('message')`
 
 Esse método é a maneira padrão de comunicação entre um quadro pai e um iframe. Os ouvintes de eventos existentes dos PDF forms abertos anteriormente são removidos antes de adicionar um novo. Essa limpeza também considera a alternância entre a guia de formulário e a guia de histórico na visualização de detalhes da tarefa.
 
 **pdf.html - `FormBridge`JavaScript dentro do PDF renderizado**
 
-Comunica-se usando `pdfObject.postMessage` / `pdfObject.messageHandler`
+Comunica-se usando o `pdfObject.postMessage` / `pdfObject.messageHandler`
 
 Esse método é a maneira padrão de comunicação com um PDFJavaScript de um HTML. A exibição PdfTaskForm também cuida de um PDF simples e o renderiza sem formatação.
 
@@ -56,7 +56,7 @@ Esse método é a maneira padrão de comunicação com um PDFJavaScript de um HT
 
 Novos formulários de HTML são renderizados pela visualização NewHTMLTaskForm.
 
-Quando um Formulário XDP é renderizado como HTML usando o pacote de formulários móveis implantado no CRX, ele também adiciona mais `FormBridge`JavaScript para o formulário, que expõe diferentes métodos para salvar e enviar dados de formulário.
+Quando um Formulário XDP é renderizado como HTML usando o pacote de formulários móveis implantado no CRX, ele também adiciona `FormBridge`JavaScript ao formulário, o que expõe diferentes métodos para salvar e enviar dados de formulário.
 
 Esse JavaScript é diferente do mencionado nos PDF forms acima, mas tem um propósito semelhante.
 
@@ -68,11 +68,11 @@ Esse JavaScript é diferente do mencionado nos PDF forms acima, mas tem um prop�
 
 O Flex Forms é renderizado pelo SwfTaskForm e os guias são renderizados pelas Exibições do HtmlTaskForm, respectivamente.
 
-Na área de trabalho do AEM Forms, essas exibições se comunicam com o SWF real que compõe o Flex®/guia usando um SWF intermediário presente em `/lc/libs/ws/libs/ws/WSNextAdapter.swf`
+No espaço de trabalho do AEM Forms, essas exibições se comunicam com o SWF real que compõe o Flex® form/guia usando um SWF intermediário presente em `/lc/libs/ws/libs/ws/WSNextAdapter.swf`
 
-A comunicação ocorre usando `swfObject.postMessage` / `window.flexMessageHandler`.
+A comunicação ocorre usando o `swfObject.postMessage` / `window.flexMessageHandler`.
 
-Esse protocolo é definido pela variável `WsNextAdapter.swf`. O atual `flexMessageHandlers`em objetos de janela, formulários de SWF abertos anteriormente são removidos antes de adicionar um novo. A lógica também considera a alternância entre a guia de formulário e a guia de histórico na visualização de detalhes da tarefa. A variável `WsNextAdapter.swf` é usado para executar várias ações de formulário, como salvar ou enviar.
+Este protocolo é definido pelo `WsNextAdapter.swf`. O `flexMessageHandlers`objeto da janela existente, de formulários de SWF abertos anteriormente, é removido antes da adição de um novo. A lógica também considera a alternância entre a guia de formulário e a guia de histórico na visualização de detalhes da tarefa. O `WsNextAdapter.swf` é usado para executar várias ações de formulário, como salvar ou enviar.
 
 >[!NOTE]
 >
@@ -82,16 +82,16 @@ Esse protocolo é definido pela variável `WsNextAdapter.swf`. O atual `flexMess
 
 Os aplicativos de terceiros são renderizados usando a exibição ExtAppTaskForm.
 
-**Aplicativo de terceiros para comunicação do espaço de trabalho do AEM Forms**
+**Aplicativo de terceiros para comunicação com o espaço de trabalho do AEM Forms**
 
 O espaço de trabalho do AEM Forms escuta em `window.global.postMessage([Message],[Payload])`
 
-[Mensagem] pode ser uma string especificada como `SubmitMessage`| `CancelMessage`| `ErrorMessage`| `actionEnabledMessage`no `runtimeMap`. Os aplicativos de terceiros devem usar essa interface para notificar o espaço de trabalho do AEM Forms conforme necessário. O uso dessa interface é obrigatório, pois o espaço de trabalho do AEM Forms deve saber quando a tarefa é enviada para que possa limpar a janela da tarefa.
+[A mensagem] pode ser uma cadeia de caracteres especificada como `SubmitMessage`| `CancelMessage`| `ErrorMessage`| `actionEnabledMessage`no `runtimeMap`. Os aplicativos de terceiros devem usar essa interface para notificar o espaço de trabalho do AEM Forms conforme necessário. O uso dessa interface é obrigatório, pois o espaço de trabalho do AEM Forms deve saber quando a tarefa é enviada para que possa limpar a janela da tarefa.
 
-**Espaço de trabalho do AEM Forms para comunicação com aplicativos de terceiros**
+**espaço de trabalho do AEM Forms para comunicação com aplicativos de terceiros**
 
-Se os botões de ação direta do espaço de trabalho do AEM Forms estiverem visíveis, ele chamará `window.[External-App-Name].getMessage([Action])`, onde `[Action]` é lida a partir do `routeActionMap`. O aplicativo de terceiros deve escutar nessa interface e notificar o espaço de trabalho do AEM Forms por meio da `postMessage ()` API.
+Se os botões de ação direta do espaço de trabalho do AEM Forms estiverem visíveis, ele chamará `window.[External-App-Name].getMessage([Action])`, em que `[Action]` é lido do `routeActionMap`. O aplicativo de terceiros deve escutar nesta interface e, em seguida, notificar o espaço de trabalho do AEM Forms por meio da API `postMessage ()`.
 
-Por exemplo, um aplicativo do Flex pode definir `ExternalInterface.addCallback('getMessage', listener)` para apoiar esta comunicação. Se o aplicativo de terceiros quiser lidar com o envio de formulários por meio de seus próprios botões, será necessário especificar `hideDirectActions = true() in the runtimeMap` e você pode ignorar esse ouvinte. Portanto, essa construção é opcional.
+Por exemplo, um aplicativo do Flex pode definir `ExternalInterface.addCallback('getMessage', listener)` para dar suporte a essa comunicação. Se o aplicativo de terceiros quiser lidar com o envio de formulários por meio de seus próprios botões, especifique `hideDirectActions = true() in the runtimeMap` e você poderá ignorar esse ouvinte. Portanto, essa construção é opcional.
 
-Você pode ler mais sobre a integração de aplicativos de terceiros relacionados ao Gerenciamento de correspondência em [Integração do Gerenciamento de correspondência no espaço de trabalho do AEM Forms](/help/forms/using/integrating-correspondence-management-html-workspace.md).
+Você pode ler mais sobre a integração de aplicativos de terceiros relacionados ao Gerenciamento de correspondência em [Integrando o Gerenciamento de correspondência no espaço de trabalho do AEM Forms](/help/forms/using/integrating-correspondence-management-html-workspace.md).

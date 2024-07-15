@@ -26,7 +26,7 @@ ht-degree: 6%
 
 Você pode [criar grupos](/help/sites-administering/user-group-ac-admin.md#group-administration) e atribuir políticas e [usuários](/help/sites-administering/user-group-ac-admin.md#user-administration) aos grupos no Adobe Experience Manager (AEM). Essas políticas controlam os privilégios dos usuários que fazem parte do grupo.
 
-Depois de instalar o [Pacote complementar do AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md), os grupos mencionados neste artigo, como forms-users e forms-power-user, estão automaticamente disponíveis para atribuição. A tabela a seguir lista as tarefas que um usuário pode executar para o AEM Forms no OSGi com base nas atribuições de grupo:
+Após instalar o [pacote complementar do AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md), os grupos mencionados neste artigo, como usuários de formulários e usuário avançado de formulários, estarão automaticamente disponíveis para atribuição. A tabela a seguir lista as tarefas que um usuário pode executar para o AEM Forms no OSGi com base nas atribuições de grupo:
 
 <table>
  <tbody>
@@ -35,7 +35,7 @@ Depois de instalar o [Pacote complementar do AEM Forms](../../forms/using/instal
    <td>Tarefas</td> 
   </tr>
   <tr>
-   <td>forms-users <sup>[1]</sup></td> 
+   <td>formulários-usuários <sup>[1]</sup></td> 
    <td>
     <ul> 
      <li>Criar, visualizar, publicar e enviar formulários adaptáveis</li> 
@@ -97,7 +97,7 @@ Depois de instalar o [Pacote complementar do AEM Forms](../../forms/using/instal
    <td>workflow-users</td> 
    <td>
     <ul> 
-     <li>Usar aplicativos da Caixa de entrada AEM<br /> <strong>Nota: </strong>Você deve ter atribuições de grupo cm-agent-users e workflow-users para acessar a interface do usuário do Agente de comunicações interativas na caixa de entrada do AEM.</li> 
+     <li>Use aplicativos da Caixa de Entrada de AEM<br /> <strong>Observação: </strong>Você deve ter atribuições de grupo cm-agent-users e workflow-users para acessar a interface do usuário do Agente de Comunicações Interativas na Caixa de Entrada de AEM.</li> 
      <li>Gerenciar instâncias de fluxo de trabalho</li> 
     </ul> </td> 
   </tr>

@@ -28,7 +28,7 @@ Para obter uma visão geral dos recursos de tradução de conteúdo do AEM, cons
 Crie uma configuração de nuvem que conecte o AEM ao seu provedor de serviços de tradução. O AEM inclui a capacidade de se conectar ao Microsoft Translator por padrão.
 Os seguintes fornecedores de tradução fornecem uma implementação da nova API para os Projetos de tradução. Links para saber mais sobre a integração:
 
-* [Translations.com](https://exchange.adobe.com/experiencecloud.details.90104.globallink-connect-plus-for-aem.html)
+* [Traduções.com](https://exchange.adobe.com/experiencecloud.details.90104.globallink-connect-plus-for-aem.html)
 * [Clay Tablet Technologies](https://exchange.adobe.com/experiencecloud.details.90064.clay-tablet-translation-for-experience-manager.html)
 * [Lionbridge](https://exchange.adobe.com/experiencecloud.details.100064.lionbridge-connector-for-experience-manager-63.html)
 * [Memsource](https://exchange.adobe.com/experiencecloud.details.103166.memsource-connector-for-adobe-experience-manager.html)
@@ -70,7 +70,7 @@ Quando diferentes seções do seu site tiverem diferentes requisitos de traduç�
 
 Após configurar uma estrutura de integração de tradução, é possível [associá-la às páginas](/help/sites-administering/tc-prep.md) que a utilizam.
 
-**Nota:** Para obter uma visão geral dos recursos de tradução de conteúdo no AEM, consulte [Tradução de conteúdo para sites multilíngues](/help/sites-administering/translation.md).
+**Observação:** para obter uma visão geral dos recursos de tradução de conteúdo no AEM, consulte [Tradução de Conteúdo para Sites Multilíngues](/help/sites-administering/translation.md).
 
 Uma única configuração da estrutura controla como traduzir conteúdo da página, conteúdo da comunidade e ativos.
 ![chlimage_1-386](assets/translation-config-65.jpg)
@@ -112,11 +112,11 @@ As propriedades do Sites controlam como a tradução do conteúdo da página é 
   </tr>
   <tr>
    <td>Traduzir ativos da página</td>
-   <td><p>Selecione como traduzir ativos adicionados a componentes a partir do sistema de arquivos ou referenciados a partir de ativos:</p>
+   <td><p>Selecione como traduzir ativos adicionados a componentes a partir do sistema de arquivos ou referenciados da Assets:</p>
     <ul>
      <li>Não traduzir: os ativos da página não são traduzidos.</li>
-     <li>Uso do fluxo de trabalho de tradução do Sites: os ativos são tratados de acordo com as propriedades configuradas na guia Sites.</li>
-     <li>Uso do fluxo de trabalho de tradução de Ativos: os ativos são tratados de acordo com a configuração das propriedades na guia Ativos.</li>
+     <li>Uso do fluxo de trabalho de tradução do Sites: os Assets são tratados de acordo com as propriedades de configuração na guia Sites.</li>
+     <li>Uso do fluxo de trabalho de tradução do Assets: os Assets são tratados de acordo com a configuração das propriedades na guia Assets.</li>
     </ul> </td>
   </tr>
   <tr>
@@ -128,13 +128,13 @@ As propriedades do Sites controlam como a tradução do conteúdo da página é 
 
 ### Propriedades da configuração das comunidades {#communities-configuration-properties}
 
-As propriedades das comunidades controlam como a tradução de conteúdo gerado pelo usuário é realizada. A tradução de conteúdo gerado pelo usuário sempre usa a tradução automática. Para obter mais informações, consulte [Tradução de conteúdo gerado pelo usuário](/help/communities/translate-ugc.md).
+As propriedades das comunidades controlam como a tradução de conteúdo gerado pelo usuário é realizada. A tradução de conteúdo gerado pelo usuário sempre usa a tradução automática. Para obter mais informações, consulte [Tradução do conteúdo gerado pelo usuário](/help/communities/translate-ugc.md).
 
 | Propriedade | Descrição |
 |---|---|
 | Provedor de tradução | Selecione o provedor de tradução para executar a tradução. O provedor para o qual as configurações de nuvem são criadas aparece na lista. |
 | Categoria de conteúdo | Uma categoria que descreve o conteúdo que você está traduzindo. A categoria pode afetar a escolha de terminologia e do estilo linguístico na tradução do conteúdo. |
-| Escolha Um Local Para Usar Como Armazenamento De Compartilhamento Global | (Opcional) Ao selecionar um local para armazenar o UGC, as publicações de todas as cópias de idioma aparecerão em uma conversa global. Por convenção, escolha o local para o [idioma base](/help/communities/sites-console.md#translation) para o site. Escolher No Common Store desativará a tradução global. Por padrão, a tradução global está desativada. |
+| Escolha Um Local Para Usar Como Armazenamento De Compartilhamento Global | (Opcional) Ao selecionar um local para armazenar o UGC, as publicações de todas as cópias de idioma aparecerão em uma conversa global. Por convenção, escolha a localidade para o [idioma base](/help/communities/sites-console.md#translation) do site. Escolher No Common Store desativará a tradução global. Por padrão, a tradução global está desativada. |
 
 ### Propriedades de configuração de ativos {#assets-configuration-properties}
 
@@ -152,7 +152,7 @@ As propriedades de ativos controlam como configurar ativos. Para obter mais info
     <ul>
      <li>Tradução automática: o provedor de tradução executa a tradução imediatamente usando a tradução automática.</li>
      <li>Tradução humana: o conteúdo é enviado automaticamente para o provedor de tradução para ser traduzido manualmente. </li>
-     <li>Não traduzir: os ativos não são enviados para tradução.</li>
+     <li>Não traduzir: as Assets não são enviadas para tradução.</li>
     </ul> </td>
   </tr>
   <tr>
@@ -189,7 +189,7 @@ As propriedades de ativos controlam como configurar ativos. Para obter mais info
    * Se já existirem configurações, clique em Mostrar configurações e, em seguida, clique no link + que aparece ao lado de Configurações disponíveis.
 
 1. Digite um nome para a configuração e clique em Criar.
-1. Configure as propriedades na guia Sites, Comunidades e Ativos e clique em OK.
+1. Configure as propriedades na guia Sites, Communities e Assets e clique em OK.
 
 ## Configuração de páginas para tradução {#configuring-pages-for-translation}
 
@@ -204,7 +204,7 @@ Quando você associa uma página a uma configuração de nuvem, os descendentes 
 
 Quando necessário, é possível sobrepor a associação em uma página descendente. Por exemplo, o conteúdo de um site é principalmente sobre roupas. No entanto, uma ramificação de páginas descreve a empresa. A página raiz do site está associada a uma estrutura de integração de tradução que especifica o uso da tradução automática usando a categoria Roupas. A ramificação que descreve a empresa usa uma estrutura que executa a tradução automática usando a categoria Geral.
 
-Além disso, para qualquer comunidade [Componentes SCF](/help/communities/scf.md) nas páginas, o conteúdo gerado pelo usuário (UGC) incluirá a capacidade de os usuários traduzirem conteúdo. Para obter mais informações, consulte [Tradução de conteúdo gerado pelo usuário](/help/communities/translate-ugc.md).
+Além disso, para qualquer comunidade [componentes SCF](/help/communities/scf.md) nas páginas, o conteúdo gerado pelo usuário (UGC) incluirá a capacidade de tradução de conteúdo pelos usuários. Para obter mais informações, consulte [Tradução de Conteúdo Gerado pelo Usuário](/help/communities/translate-ugc.md).
 
 ### Associar uma página a um provedor de tradução {#associating-a-page-with-a-translation-provider}
 

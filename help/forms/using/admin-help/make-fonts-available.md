@@ -25,7 +25,7 @@ Para obter informações sobre configurações de fonte adicionais, consulte [De
 **Especificar o local do diretório de fontes do Cliente**
 
 1. No console de administração, clique em Configurações > Configurações dos sistemas principais > Configurações.
-1. Na caixa Localização do Diretório de fontes do sistema, digite o caminho para o diretório de fontes do cliente. É possível adicionar vários diretórios, separados por ponto e vírgula **;**
+1. Na caixa Localização do Diretório de fontes do sistema, digite o caminho para o diretório de fontes do cliente. É possível adicionar vários diretórios, separados por ponto-e-vírgula **;**
 1. Clique em OK.
 1. Reinicie o sistema em que o AEM Forms está instalado.
 

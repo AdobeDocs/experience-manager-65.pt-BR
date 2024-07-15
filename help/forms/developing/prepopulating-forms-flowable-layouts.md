@@ -39,7 +39,7 @@ Quando você preenche um formulário que já contém dados, deve especificar os 
 
 Por exemplo, você pode preencher previamente um formulário, como o formulário de confirmação de amostra. (Consulte &quot;Formulário de confirmação&quot; em [Renderização de PDF forms interativos](/help/forms/developing/rendering-interactive-pdf-forms.md).)
 
-Para preencher previamente o formulário de confirmação de amostra, é necessário criar uma fonte de dados XML que contenha três elementos XML que correspondam aos três campos no formulário. Este formulário contém os três campos a seguir: `FirstName`, `LastName`, e `Amount`. A primeira etapa é criar uma fonte de dados XML que contenha elementos XML que correspondam aos campos no design do formulário. A próxima etapa é atribuir valores de dados aos elementos XML, conforme mostrado no código XML a seguir.
+Para preencher previamente o formulário de confirmação de amostra, é necessário criar uma fonte de dados XML que contenha três elementos XML que correspondam aos três campos no formulário. Este formulário contém estes três campos: `FirstName`, `LastName` e `Amount`. A primeira etapa é criar uma fonte de dados XML que contenha elementos XML que correspondam aos campos no design do formulário. A próxima etapa é atribuir valores de dados aos elementos XML, conforme mostrado no código XML a seguir.
 
 ```xml
      <Untitled>
@@ -102,7 +102,7 @@ O diagrama a seguir mostra um exemplo de um form de ordem de compra. As informa�
 
 ### Considerações de design do formulário {#form-design-considerations}
 
-O Forms com layouts fluíveis é baseado em designs de formulário criados no Designer. Um design de formulário especifica um conjunto de regras de layout, apresentação e captura de dados, incluindo o cálculo de valores com base na entrada do usuário. As regras são aplicadas quando os dados são inseridos em um formulário. Os campos adicionados a um formulário são subformulários que estão dentro do design do formulário. Por exemplo, no formulário de ordem de compra mostrado no diagrama anterior, cada linha é um subformulário. Para obter informações sobre como criar um design de formulário que contenha subformulários, consulte [Criando um formulário de ordem de compra com um layout de fluxo](https://www.adobe.com/go/learn_aemforms_qs_poformflowable_9).
+O Forms com layouts fluíveis é baseado em designs de formulário criados no Designer. Um design de formulário especifica um conjunto de regras de layout, apresentação e captura de dados, incluindo o cálculo de valores com base na entrada do usuário. As regras são aplicadas quando os dados são inseridos em um formulário. Os campos adicionados a um formulário são subformulários que estão dentro do design do formulário. Por exemplo, no formulário de ordem de compra mostrado no diagrama anterior, cada linha é um subformulário. Para obter informações sobre como criar um design de formulário que contenha subformulários, consulte [Criação de um formulário de ordem de compra que tenha um layout que possa fluir](https://www.adobe.com/go/learn_aemforms_qs_poformflowable_9).
 
 ### Entender subgrupos de dados {#understanding-data-subgroups}
 
@@ -176,7 +176,7 @@ Observe que cada subgrupo de dados contém quatro elementos XML que correspondem
 
 O nome do elemento XML pai de um subgrupo de dados deve corresponder ao nome do subformulário que está no design do formulário. Por exemplo, no diagrama anterior, observe que o nome do elemento XML pai do subgrupo de dados é `detail`. Isso corresponde ao nome do subformulário que está no design do formulário no qual o formulário de ordem de compra se baseia. Se o nome do elemento XML pai do subgrupo de dados e o subformulário não corresponderem, um formulário do lado do servidor não será pré-preenchido.
 
-Cada subgrupo de dados deve conter elementos XML que correspondam aos nomes de campo no subformulário. A variável `detail` o subformulário no design do formulário contém os seguintes campos:
+Cada subgrupo de dados deve conter elementos XML que correspondam aos nomes de campo no subformulário. O subformulário `detail` no design do formulário contém os seguintes campos:
 
 * txtPartNum
 * txtDescription
@@ -185,11 +185,11 @@ Cada subgrupo de dados deve conter elementos XML que correspondam aos nomes de c
 
 >[!NOTE]
 >
->Se você tentar preencher previamente um formulário com uma fonte de dados que contenha elementos XML repetidos e definir a variável `RenderAtClient` opção para `No`, somente o primeiro registro de dados é mesclado ao formulário. Para garantir que todos os registros de dados sejam mesclados no formulário, defina o `RenderAtClient` para `Yes`. Para obter informações sobre o `RenderAtClient` , consulte [Renderização do Forms no cliente](/help/forms/developing/rendering-forms-client.md).
+>Se você tentar preencher previamente um formulário com uma fonte de dados que contém elementos XML repetidos e definir a opção `RenderAtClient` como `No`, somente o primeiro registro de dados será mesclado ao formulário. Para garantir que todos os registros de dados sejam mesclados no formulário, defina o `RenderAtClient` como `Yes`. Para obter informações sobre a opção `RenderAtClient`, consulte [Renderização do Forms no Cliente](/help/forms/developing/rendering-forms-client.md).
 
 >[!NOTE]
 >
->Para obter mais informações sobre o serviço Forms, consulte [Referência de serviços para o AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Para obter mais informações sobre o serviço Forms, consulte [Referência de serviços para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Resumo das etapas {#summary-of-steps}
 
@@ -210,19 +210,19 @@ Inclua os arquivos necessários no projeto de desenvolvimento. Se você estiver 
 
 **Criar uma fonte de dados XML na memória**
 
-Você pode usar `org.w3c.dom` para criar uma fonte de dados XML na memória para preencher previamente um formulário com um layout fluível. Insira os dados em uma fonte de dados XML que esteja em conformidade com o formulário. Para obter informações sobre a relação entre um formulário com um layout fluível e a fonte de dados XML, consulte [Entender subgrupos de dados](#understanding-data-subgroups).
+Você pode usar classes `org.w3c.dom` para criar uma fonte de dados XML na memória para preencher previamente um formulário com um layout fluível. Insira os dados em uma fonte de dados XML que esteja em conformidade com o formulário. Para obter informações sobre a relação entre um formulário com um layout fluível e a fonte de dados XML, consulte [Noções básicas sobre subgrupos de dados](#understanding-data-subgroups).
 
 **Converter a fonte de dados XML**
 
-Uma fonte de dados XML na memória criada com o uso de `org.w3c.dom` as classes podem ser convertidas em um `com.adobe.idp.Document` antes de poder ser usado para preencher um formulário previamente. Uma fonte de dados XML na memória pode ser convertida usando classes de transformação Java XML.
+Uma fonte de dados XML na memória que é criada usando classes `org.w3c.dom` pode ser convertida em um objeto `com.adobe.idp.Document` antes de ser usada para preencher previamente um formulário. Uma fonte de dados XML na memória pode ser convertida usando classes de transformação Java XML.
 
 >[!NOTE]
 >
->Se você estiver usando o WSDL do serviço Forms para preencher previamente um formulário, converta um `org.w3c.dom.Document` em um `BLOB` objeto.
+>Se você estiver usando o WSDL do serviço Forms para preencher previamente um formulário, converta um objeto `org.w3c.dom.Document` em um objeto `BLOB`.
 
 **Renderizar um formulário pré-preenchido**
 
-Você renderiza um formulário pré-preenchido como qualquer outro formulário. A única diferença é que você usa o `com.adobe.idp.Document` objeto que contém a fonte de dados XML para preencher previamente o formulário.
+Você renderiza um formulário pré-preenchido como qualquer outro formulário. A única diferença é que você usa o objeto `com.adobe.idp.Document` que contém a fonte de dados XML para preencher previamente o formulário.
 
 **Consulte também**
 
@@ -242,67 +242,67 @@ Para preencher previamente um formulário com um layout fluível usando a API do
 
 1. Incluir arquivos de projeto
 
-   Inclua arquivos JAR do cliente, como adobe-forms-client.jar, no caminho de classe do projeto Java. Para obter informações sobre a localização desses arquivos, consulte [Inclusão de arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+   Inclua arquivos JAR do cliente, como adobe-forms-client.jar, no caminho de classe do projeto Java. Para obter informações sobre o local desses arquivos, consulte [Incluindo arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 1. Criar uma fonte de dados XML na memória
 
-   * Criar um Java `DocumentBuilderFactory` ao chamar o `DocumentBuilderFactory` class&#39; `newInstance` método.
-   * Criar um Java `DocumentBuilder` ao chamar o `DocumentBuilderFactory` do objeto `newDocumentBuilder` método.
-   * Chame o `DocumentBuilder` do objeto `newDocument` método para instanciar um `org.w3c.dom.Document` objeto.
-   * Crie o elemento raiz da fonte de dados XML chamando o `org.w3c.dom.Document` do objeto `createElement` método. Isso cria uma `Element` objeto que representa o elemento raiz. Transmita um valor de string que represente o nome do elemento para a variável `createElement` método. Converter o valor de retorno em `Element`. Em seguida, anexe o elemento raiz ao documento chamando o `Document` do objeto `appendChild` e transmita o objeto de elemento raiz como um argumento. As linhas de código a seguir mostram essa lógica de aplicação:
+   * Crie um objeto Java `DocumentBuilderFactory` chamando o método `newInstance` da classe `DocumentBuilderFactory`.
+   * Crie um objeto Java `DocumentBuilder` chamando o método `newDocumentBuilder` do objeto `DocumentBuilderFactory`.
+   * Chame o método `newDocument` do objeto `DocumentBuilder` para instanciar um objeto `org.w3c.dom.Document`.
+   * Crie o elemento raiz da fonte de dados XML invocando o método `createElement` do objeto `org.w3c.dom.Document`. Isso cria um objeto `Element` que representa o elemento raiz. Passe um valor de cadeia de caracteres que representa o nome do elemento para o método `createElement`. Converter o valor de retorno em `Element`. Em seguida, anexe o elemento raiz ao documento chamando o método `appendChild` do objeto `Document` e passe o objeto de elemento raiz como argumento. As linhas de código a seguir mostram essa lógica de aplicação:
 
      ` Element root = (Element)document.createElement("transaction");  document.appendChild(root);`
 
-   * Crie o elemento de cabeçalho da fonte de dados XML chamando o `Document` do objeto `createElement` método. Transmita um valor de string que represente o nome do elemento para a variável `createElement` método. Converter o valor de retorno em `Element`. Em seguida, anexe o elemento de cabeçalho ao elemento raiz chamando o `root` do objeto `appendChild` e transmita o objeto do elemento de cabeçalho como um argumento. Os elementos XML anexados ao elemento de cabeçalho correspondem à parte estática do formulário. As linhas de código a seguir mostram essa lógica de aplicação:
+   * Crie o elemento de cabeçalho da fonte de dados XML chamando o método `createElement` do objeto `Document`. Passe um valor de cadeia de caracteres que representa o nome do elemento para o método `createElement`. Converter o valor de retorno em `Element`. Em seguida, anexe o elemento de cabeçalho ao elemento raiz chamando o método `appendChild` do objeto `root` e transmita o objeto de elemento de cabeçalho como um argumento. Os elementos XML anexados ao elemento de cabeçalho correspondem à parte estática do formulário. As linhas de código a seguir mostram essa lógica de aplicação:
 
      ` Element header = (Element)document.createElement("header");  root.appendChild(header);`
 
-   * Crie um elemento filho que pertença ao elemento de cabeçalho chamando o `Document` do objeto `createElement` e passe um valor de string que represente o nome do elemento. Converter o valor de retorno em `Element`. Em seguida, defina um valor para o elemento filho chamando seu `appendChild` e transmita o `Document` do objeto `createTextNode` como um argumento. Especifique um valor de string que apareça como o valor do elemento filho. Finalmente, anexe o elemento filho ao elemento de cabeçalho chamando o do elemento de cabeçalho `appendChild` e transmita o objeto de elemento filho como um argumento. As linhas de código a seguir mostram essa lógica de aplicação:
+   * Crie um elemento filho que pertença ao elemento de cabeçalho chamando o método `createElement` do objeto `Document` e passe um valor de cadeia de caracteres que represente o nome do elemento. Converter o valor de retorno em `Element`. Em seguida, defina um valor para o elemento filho chamando seu método `appendChild` e passe o método `createTextNode` do objeto `Document` como um argumento. Especifique um valor de string que apareça como o valor do elemento filho. Finalmente, anexe o elemento filho ao elemento de cabeçalho chamando o método `appendChild` do elemento de cabeçalho e passe o objeto de elemento filho como argumento. As linhas de código a seguir mostram essa lógica de aplicação:
 
      ` Element poNum= (Element)document.createElement("txtPONum");  poNum.appendChild(document.createTextNode("8745236985"));  header.appendChild(LastName);`
 
 
-   * Adicione todos os elementos restantes ao elemento de cabeçalho repetindo a última subetapa para cada campo que aparece na parte estática do formulário (no diagrama de fonte de dados XML, esses campos são mostrados na seção A. (Consulte [Entender subgrupos de dados](#understanding-data-subgroups).)
-   * Crie o elemento de detalhes da fonte de dados XML chamando o `Document` do objeto `createElement` método. Transmita um valor de string que represente o nome do elemento para a variável `createElement` método. Converter o valor de retorno em `Element`. Em seguida, anexe o elemento de detalhes ao elemento raiz chamando o `root` do objeto `appendChild` e transmita o objeto do elemento de detalhe como um argumento. Os elementos XML anexados ao elemento de detalhes correspondem à parte dinâmica do formulário. As linhas de código a seguir mostram essa lógica de aplicação:
+   * Adicione todos os elementos restantes ao elemento de cabeçalho repetindo a última subetapa para cada campo que aparece na parte estática do formulário (no diagrama de fonte de dados XML, esses campos são mostrados na seção A. (Consulte [Noções básicas sobre subgrupos de dados](#understanding-data-subgroups).)
+   * Crie o elemento de detalhes da fonte de dados XML chamando o método `createElement` do objeto `Document`. Passe um valor de cadeia de caracteres que representa o nome do elemento para o método `createElement`. Converter o valor de retorno em `Element`. Em seguida, anexe o elemento de detalhes ao elemento raiz chamando o método `appendChild` do objeto `root` e passe o objeto do elemento de detalhes como um argumento. Os elementos XML anexados ao elemento de detalhes correspondem à parte dinâmica do formulário. As linhas de código a seguir mostram essa lógica de aplicação:
 
      ` Element detail = (Element)document.createElement("detail");  root.appendChild(detail);`
 
-   * Crie um elemento filho que pertença ao elemento de detalhes chamando o `Document` do objeto `createElement` e passe um valor de string que represente o nome do elemento. Converter o valor de retorno em `Element`. Em seguida, defina um valor para o elemento filho chamando seu `appendChild` e transmita o `Document` do objeto `createTextNode` como um argumento. Especifique um valor de string que apareça como o valor do elemento filho. Por fim, anexe o elemento filho ao elemento de detalhes, chamando a função do elemento de detalhes `appendChild` e transmita o objeto de elemento filho como um argumento. As linhas de código a seguir mostram essa lógica de aplicação:
+   * Crie um elemento filho que pertença ao elemento de detalhes chamando o método `createElement` do objeto `Document` e passe um valor de cadeia de caracteres que represente o nome do elemento. Converter o valor de retorno em `Element`. Em seguida, defina um valor para o elemento filho chamando seu método `appendChild` e passe o método `createTextNode` do objeto `Document` como um argumento. Especifique um valor de string que apareça como o valor do elemento filho. Finalmente, anexe o elemento filho ao elemento de detalhes, chamando o método `appendChild` do elemento de detalhes, e passe o objeto do elemento filho como um argumento. As linhas de código a seguir mostram essa lógica de aplicação:
 
      ` Element txtPartNum = (Element)document.createElement("txtPartNum");  txtPartNum.appendChild(document.createTextNode("00010-100"));  detail.appendChild(txtPartNum);`
 
-   * Repita a última subetapa para todos os elementos XML a serem anexados ao elemento de detalhes. Para criar corretamente a origem de dados XML usada para preencher o formulário de ordem de compra, você deve anexar os seguintes elementos XML ao elemento de detalhes: `txtDescription`, `numQty`, e `numUnitPrice`.
+   * Repita a última subetapa para todos os elementos XML a serem anexados ao elemento de detalhes. Para criar corretamente a fonte de dados XML usada para preencher o formulário de ordem de compra, anexe os seguintes elementos XML ao elemento de detalhes: `txtDescription`, `numQty` e `numUnitPrice`.
    * Repita as duas últimas subetapas para todos os itens de dados usados para preencher previamente o formulário.
 
 1. Converter a fonte de dados XML
 
-   * Criar um `javax.xml.transform.Transformer` ao invocar o `javax.xml.transform.Transformer` estática do objeto `newInstance` método.
-   * Criar um `Transformer` ao invocar o `TransformerFactory` do objeto `newTransformer` método.
-   * Criar um `ByteArrayOutputStream` usando seu construtor.
-   * Criar um `javax.xml.transform.dom.DOMSource` usando seu construtor e transmitindo o `org.w3c.dom.Document` objeto criado na etapa 1.
-   * Criar um `javax.xml.transform.dom.DOMSource` usando seu construtor e transmitindo o `ByteArrayOutputStream` objeto.
-   * Preencha o Java `ByteArrayOutputStream` ao invocar o `javax.xml.transform.Transformer` do objeto `transform` e transmitindo o `javax.xml.transform.dom.DOMSource` e a variável `javax.xml.transform.stream.StreamResult` objetos.
-   * Crie uma matriz de bytes e aloque o tamanho da variável `ByteArrayOutputStream` à matriz de bytes.
-   * Preencha a matriz de bytes chamando o `ByteArrayOutputStream` do objeto `toByteArray` método.
-   * Criar um `com.adobe.idp.Document` usando seu construtor e transmitindo a matriz de bytes.
+   * Crie um objeto `javax.xml.transform.Transformer` invocando o método `newInstance` estático do objeto `javax.xml.transform.Transformer`.
+   * Crie um objeto `Transformer` invocando o método `newTransformer` do objeto `TransformerFactory`.
+   * Crie um objeto `ByteArrayOutputStream` usando seu construtor.
+   * Crie um objeto `javax.xml.transform.dom.DOMSource` usando seu construtor e transmitindo o objeto `org.w3c.dom.Document` criado na etapa 1.
+   * Crie um objeto `javax.xml.transform.dom.DOMSource` usando seu construtor e transmitindo o objeto `ByteArrayOutputStream`.
+   * Preencha o objeto Java `ByteArrayOutputStream` chamando o método `transform` do objeto `javax.xml.transform.Transformer` e transmitindo os objetos `javax.xml.transform.dom.DOMSource` e `javax.xml.transform.stream.StreamResult`.
+   * Crie uma matriz de bytes e aloque o tamanho do objeto `ByteArrayOutputStream` à matriz de bytes.
+   * Preencha a matriz de bytes invocando o método `toByteArray` do objeto `ByteArrayOutputStream`.
+   * Crie um objeto `com.adobe.idp.Document` usando seu construtor e transmitindo a matriz de bytes.
 
 1. Renderizar um formulário pré-preenchido
 
-   Chame o `FormsServiceClient` do objeto `renderPDFForm` e passe os seguintes valores:
+   Invoque o método `renderPDFForm` do objeto `FormsServiceClient` e passe os seguintes valores:
 
    * Um valor de cadeia de caracteres que especifica o nome de design do formulário, incluindo a extensão de nome de arquivo.
-   * A `com.adobe.idp.Document` objeto que contém dados a serem mesclados com o formulário. Certifique-se de usar o `com.adobe.idp.Document` objeto criado nas etapas um e dois.
-   * A `PDFFormRenderSpec` objeto que armazena opções de tempo de execução.
-   * A `URLSpec` objeto que contém valores de URI exigidos pelo serviço do Forms.
-   * A `java.util.HashMap` objeto que armazena anexos de arquivo. Este é um parâmetro opcional e você pode especificar `null` se não quiser anexar arquivos ao formulário.
+   * Um objeto `com.adobe.idp.Document` que contém dados para mesclar com o formulário. Use o objeto `com.adobe.idp.Document` criado nas etapas um e dois.
+   * Um objeto `PDFFormRenderSpec` que armazena opções de tempo de execução.
+   * Um objeto `URLSpec` que contém valores de URI exigidos pelo serviço Forms.
+   * Um objeto `java.util.HashMap` que armazena anexos de arquivo. Este é um parâmetro opcional e você pode especificar `null` se não quiser anexar arquivos ao formulário.
 
-   A variável `renderPDFForm` o método retorna um `FormsResult` objeto que contém um fluxo de dados de formulário que deve ser gravado no navegador da web do cliente.
+   O método `renderPDFForm` retorna um objeto `FormsResult` que contém um fluxo de dados de formulário que deve ser gravado no navegador Web cliente.
 
-   * Criar um `javax.servlet.ServletOutputStream` objeto usado para enviar um fluxo de dados de formulário para o navegador da web cliente.
-   * Criar um `com.adobe.idp.Document` ao invocar o `FormsResult` do objeto `getOutputContent` método.
-   * Criar um `java.io.InputStream` ao invocar o `com.adobe.idp.Document` do objeto `getInputStream` método.
-   * Crie uma matriz de bytes para preenchê-la com o fluxo de dados de formulário, chamando o `InputStream` do objeto `read` e transmitindo a matriz de bytes como um argumento.
-   * Chame o `javax.servlet.ServletOutputStream` do objeto `write` para enviar o fluxo de dados de formulário para o navegador web cliente. Passe a matriz de bytes para o `write` método.
+   * Crie um objeto `javax.servlet.ServletOutputStream` usado para enviar um fluxo de dados de formulário ao navegador da Web cliente.
+   * Crie um objeto `com.adobe.idp.Document` invocando o método `getOutputContent` do objeto `FormsResult`.
+   * Crie um objeto `java.io.InputStream` invocando o método `getInputStream` do objeto `com.adobe.idp.Document`.
+   * Crie uma matriz de bytes para preenchê-la com o fluxo de dados de formulário, chamando o método `read` do objeto `InputStream` e transmitindo a matriz de bytes como argumento.
+   * Invoque o método `write` do objeto `javax.servlet.ServletOutputStream` para enviar o fluxo de dados de formulário para o navegador Web cliente. Passar a matriz de bytes para o método `write`.
 
 **Consulte também**
 
@@ -318,77 +318,77 @@ Para preencher previamente um formulário com um layout fluível usando a API do
 
 1. Incluir arquivos de projeto
 
-   * Crie classes de proxy Java que consomem o serviço WSDL do Forms. (Consulte [Criando classes de proxy Java usando o Apache Axis](/help/forms/developing/invoking-aem-forms-using-web.md#creating-java-proxy-classes-using-apache-axis).)
+   * Crie classes de proxy Java que consomem o serviço WSDL do Forms. (Consulte [Criação de classes proxy Java usando o Apache Axis](/help/forms/developing/invoking-aem-forms-using-web.md#creating-java-proxy-classes-using-apache-axis).)
    * Inclua as classes de proxy Java no caminho da classe.
 
 1. Criar uma fonte de dados XML na memória
 
-   * Criar um Java `DocumentBuilderFactory` ao chamar o `DocumentBuilderFactory` class&#39; `newInstance` método.
-   * Criar um Java `DocumentBuilder` ao chamar o `DocumentBuilderFactory` do objeto `newDocumentBuilder` método.
-   * Chame o `DocumentBuilder` do objeto `newDocument` método para instanciar um `org.w3c.dom.Document` objeto.
-   * Crie o elemento raiz da fonte de dados XML chamando o `org.w3c.dom.Document` do objeto `createElement` método. Isso cria uma `Element` objeto que representa o elemento raiz. Transmita um valor de string que represente o nome do elemento para a variável `createElement` método. Converter o valor de retorno em `Element`. Em seguida, anexe o elemento raiz ao documento chamando o `Document` do objeto `appendChild` e transmita o objeto de elemento raiz como um argumento. As linhas de código a seguir mostram essa lógica de aplicação:
+   * Crie um objeto Java `DocumentBuilderFactory` chamando o método `newInstance` da classe `DocumentBuilderFactory`.
+   * Crie um objeto Java `DocumentBuilder` chamando o método `newDocumentBuilder` do objeto `DocumentBuilderFactory`.
+   * Chame o método `newDocument` do objeto `DocumentBuilder` para instanciar um objeto `org.w3c.dom.Document`.
+   * Crie o elemento raiz da fonte de dados XML invocando o método `createElement` do objeto `org.w3c.dom.Document`. Isso cria um objeto `Element` que representa o elemento raiz. Passe um valor de cadeia de caracteres que representa o nome do elemento para o método `createElement`. Converter o valor de retorno em `Element`. Em seguida, anexe o elemento raiz ao documento chamando o método `appendChild` do objeto `Document` e passe o objeto de elemento raiz como argumento. As linhas de código a seguir mostram essa lógica de aplicação:
 
      ` Element root = (Element)document.createElement("transaction");  document.appendChild(root);`
 
-   * Crie o elemento de cabeçalho da fonte de dados XML chamando o `Document` do objeto `createElement` método. Transmita um valor de string que represente o nome do elemento para a variável `createElement` método. Converter o valor de retorno em `Element`. Em seguida, anexe o elemento de cabeçalho ao elemento raiz chamando o `root` do objeto `appendChild` e transmita o objeto do elemento de cabeçalho como um argumento. Os elementos XML anexados ao elemento de cabeçalho correspondem à parte estática do formulário. As linhas de código a seguir mostram essa lógica de aplicação:
+   * Crie o elemento de cabeçalho da fonte de dados XML chamando o método `createElement` do objeto `Document`. Passe um valor de cadeia de caracteres que representa o nome do elemento para o método `createElement`. Converter o valor de retorno em `Element`. Em seguida, anexe o elemento de cabeçalho ao elemento raiz chamando o método `appendChild` do objeto `root` e transmita o objeto de elemento de cabeçalho como um argumento. Os elementos XML anexados ao elemento de cabeçalho correspondem à parte estática do formulário. As linhas de código a seguir mostram essa lógica de aplicação:
 
      ` Element header = (Element)document.createElement("header");  root.appendChild(header);`
 
-   * Crie um elemento filho que pertença ao elemento de cabeçalho chamando o `Document` do objeto `createElement` e passe um valor de string que represente o nome do elemento. Converter o valor de retorno em `Element`. Em seguida, defina um valor para o elemento filho chamando seu `appendChild` e transmita o `Document` do objeto `createTextNode` como um argumento. Especifique um valor de string que apareça como o valor do elemento filho. Finalmente, anexe o elemento filho ao elemento de cabeçalho chamando o do elemento de cabeçalho `appendChild` e transmita o objeto de elemento filho como um argumento. As linhas de código a seguir mostram essa lógica de aplicação:
+   * Crie um elemento filho que pertença ao elemento de cabeçalho chamando o método `createElement` do objeto `Document` e passe um valor de cadeia de caracteres que represente o nome do elemento. Converter o valor de retorno em `Element`. Em seguida, defina um valor para o elemento filho chamando seu método `appendChild` e passe o método `createTextNode` do objeto `Document` como um argumento. Especifique um valor de string que apareça como o valor do elemento filho. Finalmente, anexe o elemento filho ao elemento de cabeçalho chamando o método `appendChild` do elemento de cabeçalho e passe o objeto de elemento filho como argumento. As linhas de código a seguir mostram essa lógica de aplicação:
 
      ` Element poNum= (Element)document.createElement("txtPONum");  poNum.appendChild(document.createTextNode("8745236985"));  header.appendChild(LastName);`
 
-   * Adicione todos os elementos restantes ao elemento de cabeçalho repetindo a última subetapa para cada campo que aparece na parte estática do formulário (no diagrama de fonte de dados XML, esses campos são mostrados na seção A. (Consulte [Entender subgrupos de dados](#understanding-data-subgroups).)
-   * Crie o elemento de detalhes da fonte de dados XML chamando o `Document` do objeto `createElement` método. Transmita um valor de string que represente o nome do elemento para a variável `createElement` método. Converter o valor de retorno em `Element`. Em seguida, anexe o elemento de detalhes ao elemento raiz chamando o `root` do objeto `appendChild` e transmita o objeto do elemento de detalhe como um argumento. Os elementos XML anexados ao elemento de detalhes correspondem à parte dinâmica do formulário. As linhas de código a seguir mostram essa lógica de aplicação:
+   * Adicione todos os elementos restantes ao elemento de cabeçalho repetindo a última subetapa para cada campo que aparece na parte estática do formulário (no diagrama de fonte de dados XML, esses campos são mostrados na seção A. (Consulte [Noções básicas sobre subgrupos de dados](#understanding-data-subgroups).)
+   * Crie o elemento de detalhes da fonte de dados XML chamando o método `createElement` do objeto `Document`. Passe um valor de cadeia de caracteres que representa o nome do elemento para o método `createElement`. Converter o valor de retorno em `Element`. Em seguida, anexe o elemento de detalhes ao elemento raiz chamando o método `appendChild` do objeto `root` e passe o objeto do elemento de detalhes como um argumento. Os elementos XML anexados ao elemento de detalhes correspondem à parte dinâmica do formulário. As linhas de código a seguir mostram essa lógica de aplicação:
 
      ` Element detail = (Element)document.createElement("detail");  root.appendChild(detail);`
 
-   * Crie um elemento filho que pertença ao elemento de detalhes chamando o `Document` do objeto `createElement` e passe um valor de string que represente o nome do elemento. Converter o valor de retorno em `Element`. Em seguida, defina um valor para o elemento filho chamando seu `appendChild` e transmita o `Document` do objeto `createTextNode` como um argumento. Especifique um valor de string que apareça como o valor do elemento filho. Por fim, anexe o elemento filho ao elemento de detalhes, chamando a função do elemento de detalhes `appendChild` e transmita o objeto de elemento filho como um argumento. As linhas de código a seguir mostram essa lógica de aplicação:
+   * Crie um elemento filho que pertença ao elemento de detalhes chamando o método `createElement` do objeto `Document` e passe um valor de cadeia de caracteres que represente o nome do elemento. Converter o valor de retorno em `Element`. Em seguida, defina um valor para o elemento filho chamando seu método `appendChild` e passe o método `createTextNode` do objeto `Document` como um argumento. Especifique um valor de string que apareça como o valor do elemento filho. Finalmente, anexe o elemento filho ao elemento de detalhes, chamando o método `appendChild` do elemento de detalhes, e passe o objeto do elemento filho como um argumento. As linhas de código a seguir mostram essa lógica de aplicação:
 
      ` Element txtPartNum = (Element)document.createElement("txtPartNum");  txtPartNum.appendChild(document.createTextNode("00010-100"));  detail.appendChild(txtPartNum);`
 
-   * Repita a última subetapa para todos os elementos XML a serem anexados ao elemento de detalhes. Para criar corretamente a origem de dados XML usada para preencher o formulário de ordem de compra, você deve anexar os seguintes elementos XML ao elemento de detalhes: `txtDescription`, `numQty`, e `numUnitPrice`.
+   * Repita a última subetapa para todos os elementos XML a serem anexados ao elemento de detalhes. Para criar corretamente a fonte de dados XML usada para preencher o formulário de ordem de compra, anexe os seguintes elementos XML ao elemento de detalhes: `txtDescription`, `numQty` e `numUnitPrice`.
    * Repita as duas últimas subetapas para todos os itens de dados usados para preencher previamente o formulário.
 
 1. Converter a fonte de dados XML
 
-   * Criar um `javax.xml.transform.Transformer` ao invocar o `javax.xml.transform.Transformer` estática do objeto `newInstance` método.
-   * Criar um `Transformer` ao invocar o `TransformerFactory` do objeto `newTransformer` método.
-   * Criar um `ByteArrayOutputStream` usando seu construtor.
-   * Criar um `javax.xml.transform.dom.DOMSource` usando seu construtor e transmitindo o `org.w3c.dom.Document` objeto criado na etapa 1.
-   * Criar um `javax.xml.transform.dom.DOMSource` usando seu construtor e transmitindo o `ByteArrayOutputStream` objeto.
-   * Preencha o Java `ByteArrayOutputStream` ao invocar o `javax.xml.transform.Transformer` do objeto `transform` e transmitindo o `javax.xml.transform.dom.DOMSource` e a variável `javax.xml.transform.stream.StreamResult` objetos.
-   * Crie uma matriz de bytes e aloque o tamanho da variável `ByteArrayOutputStream` à matriz de bytes.
-   * Preencha a matriz de bytes chamando o `ByteArrayOutputStream` do objeto `toByteArray` método.
-   * Criar um `BLOB` objeto usando seu construtor e invocando seu `setBinaryData` e transmitem a matriz de bytes.
+   * Crie um objeto `javax.xml.transform.Transformer` invocando o método `newInstance` estático do objeto `javax.xml.transform.Transformer`.
+   * Crie um objeto `Transformer` invocando o método `newTransformer` do objeto `TransformerFactory`.
+   * Crie um objeto `ByteArrayOutputStream` usando seu construtor.
+   * Crie um objeto `javax.xml.transform.dom.DOMSource` usando seu construtor e transmitindo o objeto `org.w3c.dom.Document` criado na etapa 1.
+   * Crie um objeto `javax.xml.transform.dom.DOMSource` usando seu construtor e transmitindo o objeto `ByteArrayOutputStream`.
+   * Preencha o objeto Java `ByteArrayOutputStream` chamando o método `transform` do objeto `javax.xml.transform.Transformer` e transmitindo os objetos `javax.xml.transform.dom.DOMSource` e `javax.xml.transform.stream.StreamResult`.
+   * Crie uma matriz de bytes e aloque o tamanho do objeto `ByteArrayOutputStream` à matriz de bytes.
+   * Preencha a matriz de bytes invocando o método `toByteArray` do objeto `ByteArrayOutputStream`.
+   * Crie um objeto `BLOB` usando seu construtor e chame seu método `setBinaryData` e passe a matriz de bytes.
 
 1. Renderizar um formulário pré-preenchido
 
-   Chame o `FormsService` do objeto `renderPDFForm` e passe os seguintes valores:
+   Invoque o método `renderPDFForm` do objeto `FormsService` e passe os seguintes valores:
 
    * Um valor de cadeia de caracteres que especifica o nome de design do formulário, incluindo a extensão de nome de arquivo.
-   * A `BLOB` objeto que contém dados a serem mesclados com o formulário. Certifique-se de usar o `BLOB` objeto criado nas etapas um e dois.
-   * A `PDFFormRenderSpecc` objeto que armazena opções de tempo de execução. Para obter mais informações, consulte [Referência da API do AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
-   * A `URLSpec` objeto que contém valores de URI exigidos pelo serviço do Forms.
-   * A `java.util.HashMap` objeto que armazena anexos de arquivo. Este é um parâmetro opcional e você pode especificar `null` se não quiser anexar arquivos ao formulário.
-   * Um vazio `com.adobe.idp.services.holders.BLOBHolder` objeto preenchido pelo método. Isso é usado para armazenar o formulário de PDF renderizado.
-   * Um vazio `javax.xml.rpc.holders.LongHolder` objeto preenchido pelo método. (Esse argumento armazenará o número de páginas no formulário).
-   * Um vazio `javax.xml.rpc.holders.StringHolder` objeto preenchido pelo método. (Esse argumento armazenará o valor do local).
-   * Um vazio `com.adobe.idp.services.holders.FormsResultHolder` objeto que conterá os resultados desta operação.
+   * Um objeto `BLOB` que contém dados para mesclar com o formulário. Use o objeto `BLOB` criado nas etapas um e dois.
+   * Um objeto `PDFFormRenderSpecc` que armazena opções de tempo de execução. Para obter mais informações, consulte [Referência da API do AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+   * Um objeto `URLSpec` que contém valores de URI exigidos pelo serviço Forms.
+   * Um objeto `java.util.HashMap` que armazena anexos de arquivo. Este é um parâmetro opcional e você pode especificar `null` se não quiser anexar arquivos ao formulário.
+   * Um objeto `com.adobe.idp.services.holders.BLOBHolder` vazio preenchido pelo método. Isso é usado para armazenar o formulário de PDF renderizado.
+   * Um objeto `javax.xml.rpc.holders.LongHolder` vazio preenchido pelo método. (Esse argumento armazenará o número de páginas no formulário).
+   * Um objeto `javax.xml.rpc.holders.StringHolder` vazio preenchido pelo método. (Esse argumento armazenará o valor do local).
+   * Um objeto `com.adobe.idp.services.holders.FormsResultHolder` vazio que conterá os resultados desta operação.
 
-   A variável `renderPDFForm` O método preenche o `com.adobe.idp.services.holders.FormsResultHolder` objeto que é passado como o último valor de argumento com um fluxo de dados de formulário que deve ser gravado no navegador da web do cliente.
+   O método `renderPDFForm` preenche o objeto `com.adobe.idp.services.holders.FormsResultHolder` que é passado como o último valor de argumento com um fluxo de dados de formulário que deve ser gravado no navegador Web cliente.
 
-   * Criar um `FormResult` obtendo o valor do `com.adobe.idp.services.holders.FormsResultHolder` do objeto `value` membro de dados.
-   * Criar um `BLOB` objeto que contém dados de formulário chamando o `FormsResult` do objeto `getOutputContent` método.
-   * Obter o tipo de conteúdo do `BLOB` ao invocar seu `getContentType` método.
-   * Defina o `javax.servlet.http.HttpServletResponse` tipo de conteúdo do objeto chamando seu `setContentType` e transmitindo o tipo de conteúdo do `BLOB` objeto.
-   * Criar um `javax.servlet.ServletOutputStream` objeto usado para gravar o fluxo de dados de formulário no navegador da web cliente, chamando o `javax.servlet.http.HttpServletResponse` do objeto `getOutputStream` método.
-   * Crie uma matriz de bytes e preencha-a chamando o `BLOB` do objeto `getBinaryData` método. Esta tarefa atribui o conteúdo do `FormsResult` à matriz de bytes.
-   * Chame o `javax.servlet.http.HttpServletResponse` do objeto `write` para enviar o fluxo de dados de formulário para o navegador web cliente. Passe a matriz de bytes para o `write` método.
+   * Crie um objeto `FormResult` obtendo o valor do membro de dados `value` do objeto `com.adobe.idp.services.holders.FormsResultHolder`.
+   * Crie um objeto `BLOB` que contenha dados de formulário invocando o método `getOutputContent` do objeto `FormsResult`.
+   * Obtenha o tipo de conteúdo do objeto `BLOB` invocando seu método `getContentType`.
+   * Defina o tipo de conteúdo do objeto `javax.servlet.http.HttpServletResponse` invocando seu método `setContentType` e transmitindo o tipo de conteúdo do objeto `BLOB`.
+   * Crie um objeto `javax.servlet.ServletOutputStream` usado para gravar o fluxo de dados de formulário no navegador da Web cliente, chamando o método `getOutputStream` do objeto `javax.servlet.http.HttpServletResponse`.
+   * Crie uma matriz de bytes e preencha-a chamando o método `getBinaryData` do objeto `BLOB`. Esta tarefa atribui o conteúdo do objeto `FormsResult` à matriz de bytes.
+   * Invoque o método `write` do objeto `javax.servlet.http.HttpServletResponse` para enviar o fluxo de dados de formulário para o navegador Web cliente. Passar a matriz de bytes para o método `write`.
 
    >[!NOTE]
    >
-   >A variável `renderPDFForm` O método preenche o `com.adobe.idp.services.holders.FormsResultHolder` objeto que é passado como o último valor de argumento com um fluxo de dados de formulário que deve ser gravado no navegador da web do cliente.
+   >O método `renderPDFForm` preenche o objeto `com.adobe.idp.services.holders.FormsResultHolder` que é passado como o último valor de argumento com um fluxo de dados de formulário que deve ser gravado no navegador Web cliente.
 
 **Consulte também**
 

@@ -41,7 +41,7 @@ Os formulários HTML5 suportam todos os pressionamentos de tecla e gestos padrã
 
 ## Problemas conhecidos {#known-issues}
 
-* **(Somente Gerenciador Interno 9)** Nos formulários HTML5, as páginas são carregadas sob demanda (dinamicamente). O carregamento de página sob demanda causa problemas com o funcionamento dos leitores de tela. Quando o foco do leitor de tela está no último campo da página e o usuário pressiona Tab, o leitor de tela retorna o foco para o primeiro campo da primeira página do formulário.
-* **(Somente Gerenciador Interno 9)** O controle Seletor de datas em formulários HTML5 não é totalmente acessível com o teclado. No controle Seletor de datas, se você pressionar as teclas Para cima/Para baixo várias vezes, o controle Seletor de datas será fechado e o foco será movido para o próximo/último campo.
+* **(Somente Gerenciador Interno 9)** Em formulários HTML5, as páginas são carregadas sob demanda (dinamicamente). O carregamento de página sob demanda causa problemas com o funcionamento dos leitores de tela. Quando o foco do leitor de tela está no último campo da página e o usuário pressiona Tab, o leitor de tela retorna o foco para o primeiro campo da primeira página do formulário.
+* **(Somente no Gerenciador Interno 9)** O controle Seletor de Datas em formulários HTML5 não está totalmente acessível com teclado. No controle Seletor de datas, se você pressionar as teclas Para cima/Para baixo várias vezes, o controle Seletor de datas será fechado e o foco será movido para o próximo/último campo.
 
 * O VoiceOver não consegue detectar as teclas de seta no widget de data no iPad safari.

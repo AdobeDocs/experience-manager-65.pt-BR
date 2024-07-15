@@ -18,7 +18,7 @@ ht-degree: 30%
 
 # Visão geral do console da Live Copy{#live-copy-overview-console}
 
-A variável **Visão geral da Live Copy** permite:
+A **Visão geral da Live Copy** permite:
 
 * Visualizar/gerenciar a herança em um site:
 
@@ -40,15 +40,15 @@ Você pode abrir a visão geral da Live Copy em:
 A **Visão geral da Live Copy** pode ser aberta a partir do painel lateral **Referências** do console **Sites**:
 
 1. No console **Sites**, [navegue até a página do blueprint e selecione-a](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
-1. Abra o **[Referências](/help/sites-authoring/basic-handling.md#references)** e selecione **Live Copies**.
+1. Abra o painel **[Referências](/help/sites-authoring/basic-handling.md#references)** e selecione **Live Copies**.
 
-   ![Painel Referências - Live copies](assets/chlimage_1-359.png)
+   ![Painel de referências - Live copies](assets/chlimage_1-359.png)
 
    >[!NOTE]
    >
    >Você também pode abrir Referências primeiro e depois selecionar o blueprint.
 
-1. Selecionar **Visão geral da Live Copy** para mostrar e usar a visão geral de todas as live copies relacionadas ao blueprint selecionado.
+1. Selecione **Visão geral da Live Copy** para exibir e usar a visão geral de todas as live copies relacionadas ao blueprint selecionado.
 1. Use **Fechar** para sair e retornar ao console **Sites**.
 
 ### Abrir a visão geral da Live Copy - propriedades de uma página do blueprint {#opening-live-copy-overview-properties-of-a-blueprint-page}
@@ -58,22 +58,22 @@ A **Visão geral da Live Copy** pode ser aberta ao visualizar propriedades de um
 1. Abra as **Propriedades** para a página do blueprint apropriada.
 1. Abra a guia **Blueprint** e verá a opção **Visão geral da Live Copy** exibida na barra de ferramentas superior:
 
-   ![Guia Blueprint — Visão geral da Live Copy](assets/chlimage_1-360.png)
+   ![Guia Blueprint - Visão geral da Live Copy](assets/chlimage_1-360.png)
 
-1. Selecionar **Visão geral da Live Copy** para mostrar e usar a visão geral de todas as live copies relacionadas ao blueprint atual.
+1. Selecione **Visão geral da Live Copy** para exibir e usar a visão geral de todas as live copies relacionadas ao blueprint atual.
 
    >[!NOTE]
    >
-   >Para obter mais detalhes, consulte também o artigo da Base de conhecimento [Mensagem de status da Live Copy - Atualizada/Verde/Em sincronia](https://helpx.adobe.com/experience-manager/kb/livecopy-status-message---up-to-date-green-in-sync.html).
+   >Para obter mais detalhes, consulte também o artigo da Base de Dados de Conhecimento [Mensagem de status da Live Copy - Atualizada/Verde/Em sincronia](https://helpx.adobe.com/experience-manager/kb/livecopy-status-message---up-to-date-green-in-sync.html).
 
 1. Use **Fechar** para sair e retornar ao console **Sites**.
 
 ## Usar a visão geral da Live Copy {#using-the-live-copy-overview}
 
-A variável **Visão geral da Live Copy** O também pode ser usado para executar ações na live copy:
+A **Visão geral da Live Copy** também pode ser usada para executar ações na live copy:
 
 1. Abra a **Visão geral da Live Copy**. 
-1. Selecione o blueprint necessário ou a página de live copy - a barra de ferramentas será atualizada para mostrar as ações disponíveis. A variável [ações](/help/sites-administering/msm.md#terms-used) depende se você seleciona um [blueprint](#actions-for-a-blueprint-page) ou [live copy](#actions-for-a-live-copy-page) página:
+1. Selecione o blueprint necessário ou a página de live copy - a barra de ferramentas será atualizada para mostrar as ações disponíveis. As [ações](/help/sites-administering/msm.md#terms-used) disponíveis dependem se você selecionar uma [blueprint](#actions-for-a-blueprint-page) ou uma [live copy](#actions-for-a-live-copy-page) página:
 
 ### Ações para uma página do blueprint {#actions-for-a-blueprint-page}
 
@@ -125,7 +125,7 @@ Quando você seleciona uma página de live copy, as seguintes ações estão dis
 
 ## Status do relacionamento {#relationship-status}
 
-A variável **Status do relacionamento** O console do tem duas guias que fornecem uma variedade de funcionalidades:
+O console **Status do Relacionamento** tem duas guias que fornecem um intervalo de funcionalidades:
 
 * [Informações de Status do Relacionamento](#relationship-status-information)
 * [Informações da Live Copy](#live-copy-information)
@@ -134,7 +134,7 @@ A variável **Status do relacionamento** O console do tem duas guias que fornece
 
 Essa guia fornece informações detalhadas sobre o status do relacionamento entre o blueprint e a live copy:
 
-![Informações de status do relacionamento](assets/chlimage_1-363.png)
+![Informações sobre o status do relacionamento](assets/chlimage_1-363.png)
 
 ### Informações da Live Copy {#live-copy-information}
 

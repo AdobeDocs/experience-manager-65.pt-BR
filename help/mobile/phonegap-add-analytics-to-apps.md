@@ -26,11 +26,11 @@ Deseja criar experiências envolventes e relevantes para os usuários de aplicat
 
 Seus usuários estão acessando todo o conteúdo? Eles estão abandonando o aplicativo e, em caso afirmativo, onde? Com que frequência eles ficam no aplicativo e com que frequência voltam para usar o aplicativo? Que alterações você pode introduzir e, então, medir que aumentam a retenção? E as taxas de falha? Seu aplicativo está falhando para seus usuários?
 
-Aproveite [Análise de aplicativos móveis](https://business.adobe.com/products/analytics/mobile-marketing.html) em seus aplicativos Adobe Experience Manager (AEM) ao integrar com a [Adobe Mobile Services](https://business.adobe.com/products/campaign/mobile-marketing.html).
+Aproveite as vantagens do [Mobile App Analytics](https://business.adobe.com/products/analytics/mobile-marketing.html) nos seus aplicativos Adobe Experience Manager (AEM) ao integrar com o [Adobe Mobile Services](https://business.adobe.com/products/campaign/mobile-marketing.html).
 
 Instrumente seus aplicativos AEM para rastrear, relatar e entender como seus usuários se envolvem com seu aplicativo móvel e conteúdo e para medir as principais métricas de ciclo de vida, como inicializações, tempo no aplicativo e taxa de falha.
 
-Esta seção descreve como o AEM *Desenvolvedores* pode:
+Esta seção descreve como os *desenvolvedores* do AEM podem:
 
 * Integrar o Mobile Analytics no aplicativo móvel
 * Teste o rastreamento de análise com o Bloodhound
@@ -48,7 +48,7 @@ O AEM Mobile exige uma conta da Adobe Analytics para coletar e relatar dados de 
 
 Depois que a conta do Analytics for configurada, crie uma configuração de Sincronização de conteúdo para transferir o conteúdo para o aplicativo móvel.
 
-Para obter detalhes adicionais, consulte Configuração do conteúdo da sincronização de conteúdo. A configuração deve instruir a Sincronização de conteúdo a colocar o ADBMobileConfig no diretório /www. Por exemplo, no aplicativo Geometrixx Outdoors, a configuração da Sincronização de conteúdo está em: */content/phonegap/geometrixx-outdoors/shell/jcr:content/page-app/app-config/ams-ADBMobileConfig*. Também há uma configuração para desenvolvimento. No entanto, é idêntica à configuração que não é de desenvolvimento, se houver Geometrixx Outdoors.
+Para obter detalhes adicionais, consulte Configuração do conteúdo da sincronização de conteúdo. A configuração deve instruir a Sincronização de conteúdo a colocar o ADBMobileConfig no diretório /www. Por exemplo, no aplicativo Geometrixx Outdoors, a configuração de sincronização de conteúdo está em: */content/phonegap/geometrixx-outdoors/shell/jcr:content/page-app/app-config/ams-ADBMobileConfig*. Também há uma configuração para desenvolvimento. No entanto, é idêntica à configuração que não é de desenvolvimento, se houver Geometrixx Outdoors.
 
 Para obter mais detalhes sobre como baixar o ADBMobileConfig no painel de aplicativos do AEM para aplicativos móveis, consulte Analytics - Mobile Services - Adobe Mobile Services SDK Config File.
 
@@ -66,7 +66,7 @@ Cada plataforma exige que o ADBMobileConfig seja copiado para um local específi
 
 Se estiver criando com a CLI do PhoneGap, isso pode ser feito com um script de gancho de criação do cordova. Isso pode ser visto no aplicativo Geometrixx Outdoors em:*content/phonegap/geometrixx-outdoors/shell/_jcr_content/pge-app/app-content/phonegap/scripts/restore_plugins.js.*
 
-Para o iOS, o arquivo deve ser copiado para o do projeto XCode **Recursos** (por exemplo, &quot;platforms/ios/Geometrixx/Resources/ADBMobileConfig.json&quot;). Se o aplicativo for direcionado para Android™, o caminho para copiar será &quot;platforms/android/assets/ADBMobileConfig.json&quot;. Para obter mais detalhes sobre como usar ganchos durante a criação da CLI do PhoneGap, consulte [Três ganchos de que seu projeto Cordova/PhoneGap precisa](https://gist.github.com/jlcarvalho/22402d013bc72f795d45a01836ce735c).
+Para o iOS, o arquivo deve ser copiado para o diretório **Resources** do projeto XCode (por exemplo, &quot;platforms/ios/Geometrixx/Resources/ADBMobileConfig.json&quot;). Se o aplicativo for direcionado para Android™, o caminho para o qual copiar será &quot;platforms/android/assets/ADBMobileConfig.json&quot;. Para obter mais detalhes sobre como usar ganchos durante a compilação da CLI do PhoneGap, consulte [Três ganchos de que seu projeto Cordova/PhoneGap precisa](https://gist.github.com/jlcarvalho/22402d013bc72f795d45a01836ce735c).
 
 ```xml
 ///////////////////////////
@@ -103,7 +103,7 @@ Depois de executar essas etapas, seu aplicativo será ativado para relatar todas
 
 ### Instrumente seu código para um rastreamento completo do aplicativo {#instrument-your-code-for-full-app-tracking}
 
-Há várias APIs de rastreamento fornecidas no [API do plug-in AMS Phonegap.](https://github.com/Adobe-Marketing-Cloud/mobile-services/blob/master/docs/ios/phonegap/phonegap-methods.md)
+Há várias APIs de rastreamento fornecidas na [API do plug-in AMS Phonegap.](https://github.com/Adobe-Marketing-Cloud/mobile-services/blob/master/docs/ios/phonegap/phonegap-methods.md)
 
 Isso permitirá rastrear estados e ações, como para onde os usuários estão navegando em seu aplicativo, quais controles estão sendo mais usados. A maneira mais fácil de instrumentar seu aplicativo para rastreamento é usar as APIs do Analytics fornecidas pelo plug-in AMS.
 

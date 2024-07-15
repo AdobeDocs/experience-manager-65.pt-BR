@@ -23,11 +23,11 @@ A seção a seguir aborda alguns problemas que você pode encontrar ao usar o AE
 
 >[!NOTE]
 >
->Se estiver solucionando problemas de criação no AEM, consulte [Solução de problemas para autores.](/help/sites-authoring/troubleshooting.md)
+>Se você estiver solucionando problemas de criação no AEM, consulte [Solução de problemas para autores.](/help/sites-authoring/troubleshooting.md)
 
 >[!NOTE]
 >
->Em caso de problemas, vale a pena também verificar a lista de [Problemas conhecidos](/help/release-notes/release-notes.md) para sua instância (versão e service packs).
+>Quando você tiver problemas, também vale a pena verificar a lista de [Problemas conhecidos](/help/release-notes/release-notes.md) para sua instância (versão e service packs).
 
 ## Cenários de solução de problemas para administradores {#troubleshooting-scenarios-for-administrators}
 
@@ -45,7 +45,7 @@ A tabela a seguir fornece uma visão geral dos problemas que os administradores 
   </tr>
   <tr>
    <td><p>Administrador do sistema</p> </td>
-   <td><p>Meu aplicativo em execução no CRX emite erros de falta de memória</p> </td>
+   <td><p>Meu aplicativo em execução no CRX emite erros de memória insuficiente</p> </td>
   </tr>
   <tr>
    <td><p>Administrador do sistema</p> </td>
@@ -64,10 +64,10 @@ A tabela a seguir fornece uma visão geral dos problemas que os administradores 
 
 ## Problemas de instalação {#installation-issues}
 
-Consulte [Problemas comuns de instalação](/help/sites-deploying/troubleshooting.md#common-installation-issues) para obter informações sobre os seguintes cenários de solução de problemas:
+Consulte [Problemas Comuns de Instalação](/help/sites-deploying/troubleshooting.md#common-installation-issues) para obter informações sobre os seguintes cenários de solução de problemas:
 
 * Clicar duas vezes no jar Quickstart não tem efeito ou o arquivo JAR com outro programa (como o gerenciador de arquivos).
-* Os aplicativos em execução no CRX lançam erros de falta de memória.
+* Os aplicativos em execução no CRX apresentam erros de falta de memória.
 * A tela de boas-vindas do AEM não é exibida no navegador após clicar duas vezes no AEM Quickstart.
 
 ## Métodos de análise de solução de problemas {#methods-for-troubleshooting-analysis}
@@ -78,8 +78,8 @@ O despejo de thread é uma lista de todas as threads do Java™ que estão ativa
 
 ### Uso do Sling Thread Dumper {#using-sling-thread-dumper}
 
-1. Abra o **Console da Web AEM**; por exemplo, em `https://localhost:4502/system/console/`.
-1. Selecione o **Threads** em **Status** guia.
+1. Abra o **Console da Web do AEM**; por exemplo, em `https://localhost:4502/system/console/`.
+1. Selecione a guia **Threads** em **Status**.
 
 ![screen_shot_2012-02-13at43925pm](assets/screen_shot_2012-02-13at43925pm.png)
 
@@ -97,11 +97,11 @@ O despejo de thread é uma lista de todas as threads do Java™ que estão ativa
 
 >[!NOTE]
 >
->Você pode anexar os despejos de thread a um arquivo de log usando o `>>` redirecionamento de saída:
+>Você pode anexar os despejos de thread a um arquivo de log usando o redirecionamento de saída `>>`:
 >
 >`jstack <pid> >> /path/to/logfile.log`
 
-Consulte a [Como fazer despejos de thread de uma JVM](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html) documentação para obter mais informações
+Consulte a documentação [Como remover despejos de thread de uma JVM](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html) para obter mais informações
 
 ### Verificando sessões JCR não fechadas {#checking-for-unclosed-jcr-sessions}
 
@@ -111,14 +111,14 @@ Quando a funcionalidade é desenvolvida para o WCM do AEM, as sessões JCR podem
 * Você pode ver grande parte das entradas do CacheManager: resizeAll no arquivo de log; o seguinte número (size=&lt;x>) mostra o número de caches, cada sessão abre vários caches.
 * Periodicamente, o sistema fica sem memória (após algumas horas, dias ou semanas - dependendo da gravidade).
 
-Para analisar sessões não fechadas e descobrir qual código não está fechando uma sessão, consulte o artigo da Base de conhecimento [Analisar Sessões Não Fechadas](https://helpx.adobe.com/experience-manager/kb/AnalyzeUnclosedSessions.html).
+Para analisar sessões não fechadas e descobrir qual código não está fechando uma sessão, consulte o artigo da Base de Dados de Conhecimento [Analisar sessões não fechadas](https://helpx.adobe.com/experience-manager/kb/AnalyzeUnclosedSessions.html).
 
 ### Uso do console da Web do Adobe Experience Manager {#using-the-adobe-experience-manager-web-console}
 
 O status dos pacotes OSGi também pode fornecer uma indicação antecipada de possíveis problemas.
 
-1. Abra o **Console da Web AEM**; por exemplo, em `https://localhost:4502/system/console/`.
-1. Selecionar **Pacotes** em **OSGI** guia.
+1. Abra o **Console da Web do AEM**; por exemplo, em `https://localhost:4502/system/console/`.
+1. Selecione **Pacotes** na guia **OSGI**.
 1. Verificar:
 
    * o Status dos pacotes. Se algum estiver Inativo ou Insatisfeito, tente parar e reiniciar o pacote. Se o problema persistir, investigue mais usando outros métodos.

@@ -42,7 +42,7 @@ Se você configurou vários provedores de autenticação, é possível alterar a
     </node>
    ```
 
-   Entrada `<entry key="order" value="3" />`, edite o valor de cada nó para definir a ordem da avaliação de autenticação.
+   Em `<entry key="order" value="3" />`, edite o valor de cada nó para definir a ordem da avaliação de autenticação.
 
 1. Para importar o arquivo atualizado, no Gerenciamento de usuários, clique em Configuração > Importar e exportar arquivos de configuração.
 1. Clique em Procurar para localizar o arquivo, clique em Importar e em OK.

@@ -62,20 +62,20 @@ Ao navegar na área de trabalho do AEM Forms usando um teclado, a navegação es
 
 Você pode definir as várias preferências do espaço de trabalho do AEM Forms nas seguintes categorias:
 
-**Fora do escritório:** Defina preferências para controlar como as tarefas são atribuídas a outras pessoas enquanto você estiver fora do escritório. Consulte [Definição das preferências de ausência temporária](todo-lists.md#setting-out-of-office-preferences).
+**Ausência Temporária:** Defina preferências para controlar como as tarefas são atribuídas a outras pessoas enquanto você está fora do escritório. Consulte [Definindo preferências de ausência temporária](todo-lists.md#setting-out-of-office-preferences).
 
-**Filas:** Defina preferências para compartilhar sua lista de tarefas com outros usuários ou para solicitar acesso à lista de outro usuário. Consulte [Trabalhar com tarefas de filas de grupo e compartilhadas](todo-lists.md#working-with-tasks-from-group-and-shared-queues).
+**Filas:** defina preferências para compartilhar sua lista de tarefas com outros usuários ou para solicitar acesso à lista de outros usuários. Consulte [Trabalhando com tarefas de filas de grupo e compartilhadas](todo-lists.md#working-with-tasks-from-group-and-shared-queues).
 
-**Configurações da interface:** Defina as preferências de como você interage com o espaço de trabalho do AEM Forms. Consulte [Definir preferências da interface do usuário](#set-user-interface-preferences).
+**Configurações de Interface do Usuário:** defina preferências para a forma como você interage com o espaço de trabalho do AEM Forms. Consulte [Definir preferências da interface do usuário](#set-user-interface-preferences).
 
 ### Definir preferências da interface do usuário {#set-user-interface-preferences}
 
 Defina as preferências da interface do usuário na guia Preferências > Configurações da interface. As preferências a seguir estão disponíveis.
 
-* **Local de Início:** Especifica a página que aparece ao fazer logon no espaço de trabalho do AEM Forms. As quatro opções disponíveis são Iniciar processo, Tarefa pendente, Rastreamento e Favoritos.
-* **Aviso de saída:** Especifica se você será solicitado a confirmar que deseja efetuar logout após clicar em Fazer Logoff.
-* **Formato de data:** Especifica o formato de exibição de data usado no espaço de trabalho do AEM Forms.
+* **Local de Início:** Especifica a página que aparece quando você faz logon no espaço de trabalho do AEM Forms. As quatro opções disponíveis são Iniciar processo, Tarefa pendente, Rastreamento e Favoritos.
+* **Aviso de Saída:** Especifica se você será solicitado a confirmar que deseja sair depois de clicar em Sair.
+* **Formato de Data:** Especifica o formato de exibição de data usado no espaço de trabalho do AEM Forms.
 * **Formato de hora**: especifica o formato de exibição de hora usado no espaço de trabalho do AEM Forms.
-* **Notificar eventos de tarefa por e-mail:** Especifica se você receberá notificações por email sobre eventos de tarefas, incluindo atribuições de tarefas, lembretes e prazos finais para tarefas em sua lista de tarefas pendentes e em listas de tarefas pendentes de grupos às quais você pertence.
-* **Anexar o Forms no email:** Especifica se uma cópia do formulário é anexada a mensagens de notificação por email. Os anexos são compatíveis somente com formulários PDF e XDP.
+* **Notificar Eventos de Tarefa por Email:** Especifica se você recebe notificações por email sobre eventos de tarefa, incluindo atribuições de tarefa, lembretes e prazos finais para tarefas em sua lista de tarefas pendentes e em listas de tarefas pendentes de grupo às quais você pertence.
+* **Anexar Forms no Email:** Especifica se uma cópia do formulário está anexada a mensagens de notificação por email. Os anexos são compatíveis somente com formulários PDF e XDP.
 * **Salvar rascunho periodicamente:** Especifica se os rascunhos dos formulários são salvos automaticamente periodicamente ou não. Para salvar os rascunhos periodicamente, ative essa opção e defina a duração do salvamento automático de 1 a 30 minutos. Quando o salvamento automático está ativado e um usuário está trabalhando em um rascunho, o rascunho é salvo periodicamente após o número especificado de minutos. O rascunho é salvo automaticamente somente quando há uma alteração no rascunho desde o último salvamento ou salvamento automático. Quando o rascunho é salvo, uma mensagem de alerta é exibida na tela.

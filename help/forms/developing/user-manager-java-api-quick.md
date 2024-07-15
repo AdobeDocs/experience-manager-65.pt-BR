@@ -1,5 +1,5 @@
 ---
-title: Início rápido da API Java do Gerenciador de usuários (SOAP)
+title: Início rápido da API Java do gerenciador de usuários (SOAP)
 description: Use a API do Gerenciador de usuários para adicionar usuários, excluir usuários, criar grupos, gerenciar usuários e grupos, gerenciar funções e permissões, sincronizar usuários programaticamente e gerenciar os Nós de preferências programaticamente.
 contentOwner: admin
 content-type: reference
@@ -42,7 +42,7 @@ As operações do AEM Forms podem ser executadas usando a API altamente tipada d
 
 ## Início rápido (modo SOAP): Adição de usuários usando a API Java {#quick-start-soap-mode-adding-users-using-the-java-api}
 
-O código de exemplo a seguir adiciona um usuário chamado Wendy Blue ao AEM Forms. (Consulte [Adição de usuários](/help/forms/developing/users.md#adding-users).)
+O código de exemplo a seguir adiciona um usuário chamado Wendy Blue ao AEM Forms. (Consulte [Adicionando Usuários](/help/forms/developing/users.md#adding-users).)
 
 ```java
  /*
@@ -160,7 +160,7 @@ O código de exemplo a seguir adiciona um usuário chamado Wendy Blue ao AEM For
 
 ## Início rápido (modo SOAP): exclusão de usuários usando a API Java {#quick-start-soap-mode-deleting-users-using-the-java-api}
 
-O código de exemplo a seguir exclui um usuário chamado Wendy Blue do AEM Forms. (Consulte [Exclusão de usuários](/help/forms/developing/users.md#deleting-users).)
+O código de exemplo a seguir exclui um usuário chamado Wendy Blue do AEM Forms. (Consulte [Excluindo Usuários](/help/forms/developing/users.md#deleting-users).)
 
 ```java
  /*
@@ -256,7 +256,7 @@ O código de exemplo a seguir exclui um usuário chamado Wendy Blue do AEM Forms
 
 ## Início rápido (modo SOAP): gerenciamento de usuários e grupos usando a API Java {#quick-start-soap-mode-managing-users-and-groups-using-the-java-api}
 
-O código de exemplo a seguir encontra um usuário local e o grupo local ao qual ele pertence. (Consulte [Gerenciar usuários e grupos](/help/forms/developing/users.md#managing-users-and-groups).)
+O código de exemplo a seguir encontra um usuário local e o grupo local ao qual ele pertence. (Consulte [Gerenciando Usuários e Grupos](/help/forms/developing/users.md#managing-users-and-groups).)
 
 ```java
  /*
@@ -523,7 +523,7 @@ O exemplo de código a seguir atribui a função Usuário de Serviços a um prin
 
 ## Início rápido (modo SOAP): sincronização programática de usuários usando a API Java {#quick-start-soap-mode-programmatically-synchronizing-users-using-the-java-api}
 
-O exemplo de código Java a seguir sincroniza usuários usando as APIs de gerenciamento de usuários. (Consulte [Sincronização programática de usuários](/help/forms/developing/users.md#programmatically-synchronizing-users).)
+O exemplo de código Java a seguir sincroniza usuários usando as APIs de gerenciamento de usuários. (Consulte [Sincronização Programática De Usuários](/help/forms/developing/users.md#programmatically-synchronizing-users).)
 
 ```java
  /*
@@ -632,7 +632,7 @@ O exemplo de código Java a seguir sincroniza usuários usando as APIs de gerenc
 
 ## Início rápido (modo SOAP): Adição de usuários usando a API Java {#quick_start_soap_mode_adding_users_using_the_java_api-1}
 
-O código de exemplo a seguir adiciona um usuário chamado Wendy Blue ao AEM Forms. (Consulte [Adição de usuários](/help/forms/developing/users.md#adding-users).)
+O código de exemplo a seguir adiciona um usuário chamado Wendy Blue ao AEM Forms. (Consulte [Adicionando Usuários](/help/forms/developing/users.md#adding-users).)
 
 ```java
  /*
@@ -750,7 +750,7 @@ O código de exemplo a seguir adiciona um usuário chamado Wendy Blue ao AEM For
 
 ## Início rápido (modo SOAP): Criação de grupos usando a API Java {#quick-start-soap-mode-creating-groups-using-the-java-api}
 
-O código de exemplo a seguir cria um grupo chamado AdobeGroup para o AEM Forms. (Consulte [Criação de grupos](/help/forms/developing/users.md#creating-groups).)
+O código de exemplo a seguir cria um grupo chamado AdobeGroup para o AEM Forms. (Consulte [Criando Grupos](/help/forms/developing/users.md#creating-groups).)
 
 ```java
  /*

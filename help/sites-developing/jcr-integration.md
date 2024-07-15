@@ -28,7 +28,7 @@ A API do Sling funciona em um nível mais alto e mais abstrato do que a API JCR.
 
 ## Restringir o escopo de observação do JCR {#restrict-the-scope-of-jcr-observation}
 
-Ao acompanhar eventos no repositório, é importante restringir o escopo o máximo possível. Por exemplo, é muito melhor ouvir um evento em `/etc/mycompany` do que escutar em `/etc`. Nunca escute eventos na raiz do repositório. Além disso, certifique-se de que os métodos de retorno de chamada sejam executados o mais rápido possível quando não houver nada para eles fazerem.
+Ao acompanhar eventos no repositório, é importante restringir o escopo o máximo possível. Por exemplo, é muito melhor ouvir um evento em `/etc/mycompany` do que ouvir em `/etc`. Nunca escute eventos na raiz do repositório. Além disso, certifique-se de que os métodos de retorno de chamada sejam executados o mais rápido possível quando não houver nada para eles fazerem.
 
 ## Eliminar o uso do acesso do administrador de JCR {#eliminate-use-of-jcr-admin-access}
 

@@ -81,7 +81,7 @@ O arquiteto de conteúdo funciona no início do projeto para definir essa estrut
 
 Como os Modelos de conteúdo definem a estrutura do seu conteúdo, é necessário saber quais campos de seus modelos devem ser traduzidos. Geralmente, você trabalha com o arquiteto de conteúdo para definir isso. Para navegar pelos campos de seus modelos de conteúdo, siga as etapas abaixo.
 
-1. Navegue até **Ferramentas** > **Assets** > **Modelos de fragmentos do conteúdo**.
+1. Navegue até **Ferramentas** > **Assets** > **Modelos de fragmentos de conteúdo**.
 1. Os Modelos de fragmentos de conteúdo geralmente são armazenados em uma estrutura de pastas. Clique na pasta do projeto.
 1. Os modelos estão listados. Clique no modelo para ver os detalhes.
    ![Modelos de fragmentos do conteúdo](assets/content-fragment-models.png)
@@ -92,11 +92,11 @@ Como os Modelos de conteúdo definem a estrutura do seu conteúdo, é necessári
 1. Clique em um dos campos do modelo. O AEM o marca e os detalhes desse campo são mostrados na coluna direita.
    ![Detalhe do Editor de modelo de fragmento de conteúdo](assets/content-fragment-model-editor-detail.png)
 
-Anote o campo **Nome da propriedade** para todos os campos que devem ser traduzidos. Essas informações serão necessárias posteriormente na jornada. Esses **Nome da propriedade** s são necessários para informar ao AEM quais campos do seu conteúdo devem ser traduzidos.
+Anote o campo **Nome da Propriedade** para todos os campos que devem ser traduzidos. Essas informações serão necessárias posteriormente na jornada. Esses **Nome da propriedade** s são necessários para informar ao AEM quais campos do seu conteúdo devem ser traduzidos.
 
 >[!TIP]
 >
->Geralmente, o arquiteto de conteúdo fornece ao especialista em tradução a **Nome da propriedade** s de todos os campos necessários para tradução. Esses nomes de campos são necessários para uma versão posterior da jornada. As etapas anteriores são fornecidas para a compreensão do especialista em tradução.
+>Geralmente, o arquiteto de conteúdo fornece ao especialista em tradução o **Nome da Propriedade** s de todos os campos necessários para tradução. Esses nomes de campos são necessários para uma versão posterior da jornada. As etapas anteriores são fornecidas para a compreensão do especialista em tradução.
 
 ### Fragmentos de conteúdo {#content-fragments}
 
@@ -183,7 +183,7 @@ Agora que você concluiu esta parte da jornada de tradução headless, você dev
 * Entenda como o AEM armazena conteúdo headless.
 * Se familiarizar com as ferramentas de tradução do AEM.
 
-Desenvolva esse conhecimento e continue sua jornada de tradução AEM headless revisando o documento a seguir [Configurar a integração da tradução](configure-connector.md) onde você aprenderá a conectar o AEM a um serviço de tradução.|
+Desenvolva esse conhecimento e continue sua jornada de tradução AEM headless revisando a seguir o documento [Configurar a integração de tradução](configure-connector.md), onde você aprenderá a conectar o AEM a um serviço de tradução.|
 
 ## Recursos adicionais {#additional-resources}
 
@@ -193,6 +193,6 @@ Embora seja recomendável que você passe para a próxima parte da jornada de tr
 * [Identificação do conteúdo a ser traduzido](/help/sites-administering/tc-rules.md) - Saiba como as regras de tradução identificam o conteúdo que precisa ser traduzido.
 * [Configuração da estrutura de integração de tradução](/help/sites-administering/tc-tic.md) - Saiba como configurar a Estrutura de integração de tradução para integrar-se a serviços de tradução de terceiros.
 * [Gerenciamento de projetos de tradução](/help/sites-administering/tc-manage.md) - Saiba como criar e gerenciar projetos de tradução automática e humana no AEM.
-* Um [Introdução ao AEM as a Headless CMS](/help/sites-developing/headless/introduction.md)
-* A variável [Portal do desenvolvedor de AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=pt-BR)
-* [Tutorials para headless no AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=pt-BR)
+* Uma [Introdução ao AEM as a Headless CMS](/help/sites-developing/headless/introduction.md)
+* O [Portal do Desenvolvedor do AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=pt-BR)
+* [Tutorials para Headless no AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=pt-BR)

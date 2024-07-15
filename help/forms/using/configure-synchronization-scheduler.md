@@ -24,35 +24,35 @@ Por padrão, o agendador de sincronização é executado a cada 3 minutos para s
 
 Execute as seguintes etapas para alterar o intervalo do scheduler de sincronização:
 
-1. Faça logon no Gerenciador de configuração do AEM. O URL do Configuration Manager é `https://'[server]:[port]'/lc/system/console/configMgr`
+1. Faça logon no Gerenciador de configuração do AEM. A URL do Configuration Manager é `https://'[server]:[port]'/lc/system/console/configMgr`
 
-1. Localize e abra o **FormsManagerConfiguration** pacote.
+1. Localize e abra o pacote **FormsManagerConfiguration**.
 
-1. Especifique um novo valor para a variável **Frequência do Agendador de Sincronização** opção.
+1. Especifique um novo valor para a opção **Frequência do Agendador de Sincronização**.
 
    A unidade da frequência é minutos. Por exemplo, para configurar o scheduler para ser executado a cada 60 minutos, especifique 60.
 
 ## Sincronização de ativos {#synchronizing-assets}
 
-Você pode usar o **Sincronizar ativos do repositório** opção para sincronizar manualmente os ativos. Execute as seguintes etapas para sincronizar manualmente os ativos:
+Você pode usar a opção **Sincronizar Assets do Repositório** para sincronizar manualmente os ativos. Execute as seguintes etapas para sincronizar manualmente os ativos:
 
-1. Faça logon no AEM Forms. O URL padrão é `https://'[server]:[port]'/lc/aem/forms/`.
+1. Faça logon no AEM Forms. A URL padrão é `https://'[server]:[port]'/lc/aem/forms/`.
 
-   ![Interface do usuário do AEM Forms](assets/aem_forms_ui.png)
+   ![Interface de usuário do AEM Forms](assets/aem_forms_ui.png)
 
    **Figura:** *Interface do usuário do AEM Forms*
 
-1. Clique em ![aem6forms_sync](assets/aem6forms_sync.png) na barra de ferramentas. Se você não tiver nenhum ativo no último caminho configurado, abra a caixa de diálogo como mostrado abaixo. Clique em **Início** para iniciar a sincronização.
+1. Clique no ícone ![aem6forms_sync](assets/aem6forms_sync.png) na barra de ferramentas. Se você não tiver nenhum ativo no último caminho configurado, abra a caixa de diálogo como mostrado abaixo. Clique em **Iniciar** para iniciar a sincronização.
 
-   ![Caixa de diálogo Sincronização](assets/migrate-and-syncronize.png)
+   ![Caixa de diálogo de sincronização](assets/migrate-and-syncronize.png)
 
-   **Figura:** *Caixa de diálogo Sincronização*
+   **Figura:** *Caixa de diálogo de sincronização*
 
 ## Solução de problemas de erro de sincronização {#troubleshooting-synchronization-error}
 
 Você pode criar novos aplicativos no designer do workflow (LiveCycle Workbench).
 
-Se o aplicativo recém-criado e uma pasta em /content/dam/formsanddocuments tiverem um nome idêntico, um erro &quot;*Um ativo com o mesmo nome deste aplicativo já existe no nível raiz.*&quot; está registrado.
+Se o aplicativo recém-criado e uma pasta em /content/dam/formsanddocuments tiverem um nome idêntico, um erro &quot;*Um ativo com o mesmo nome deste aplicativo já existe no nível raiz.* está registrado.
 
 Para resolver o conflito, renomeie o aplicativo e sincronize manualmente os ativos.
 

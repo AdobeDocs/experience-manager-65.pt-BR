@@ -32,7 +32,7 @@ As operações do AEM Forms podem ser executadas usando a API altamente tipada d
 
 ## Início rápido (modo SOAP): conversão de um documento em um documento PDF/A usando a API Java™ {#quick-start-soap-mode-converting-a-document-to-a-pdf-a-document-using-the-java-api}
 
-O exemplo de código Java™ a seguir converte um documento PDF chamado *Loan.pdf* para um documento PDF/A salvo como um arquivo PDF chamado *LoanArchive.pdf*. (Consulte [Conversão de documentos em documentos PDF/A](/help/forms/developing/pdf-a-documents.md#converting-documents-to-pdf-a-documents).)
+O exemplo de código Java™ a seguir converte um documento PDF chamado *Loan.pdf* em um documento PDF/A salvo como um arquivo PDF chamado *LoanArchive.pdf*. (Consulte [Conversão de documentos em documentos PDF/A](/help/forms/developing/pdf-a-documents.md#converting-documents-to-pdf-a-documents).)
 
 ```java
  /*
@@ -135,7 +135,7 @@ O exemplo de código Java™ a seguir converte um documento PDF chamado *Loan.pd
 
 ## Início rápido (modo SOAP): determinação da conformidade PDF/A usando a API Java™ {#quick-start-soap-mode-determining-pdf-a-compliancy-using-the-java-api}
 
-O seguinte exemplo de código Java™ determina se o documento de PDF de entrada é compatível com PDF/A. O documento de PDF de entrada passado para o serviço DocConverter é nomeado como *LoanArchive.pdf*. Os resultados da validação são gravados em um arquivo XML chamado *ValidationResults.xml*. (Consulte [Determinação Programática Da Conformidade Com PDF/A](/help/forms/developing/pdf-a-documents.md#programmatically-determining-pdf-a-compliancy).)
+O seguinte exemplo de código Java™ determina se o documento de PDF de entrada é compatível com PDF/A. O documento de PDF de entrada passado para o serviço DocConverter é denominado *LoanArchive.pdf*. Os resultados da validação são gravados em um arquivo XML chamado *ValidationResults.xml*. (Consulte [Determinando Programaticamente A Conformidade De PDF/A](/help/forms/developing/pdf-a-documents.md#programmatically-determining-pdf-a-compliancy).)
 
 ```java
  /*

@@ -33,15 +33,15 @@ SÃO 2D Código de barras Produção completa V6.1 P8 0002054
 
 A string contém os seguintes elementos:
 
-**Tipo de certificado:** Descreve os módulos de formulários AEM ativados pelo certificado e o nível de ativação, como o código de barras 2D completo do ARE. Para obter uma lista dos tipos de certificados disponíveis, consulte a coluna Tipo na tabela na seção Perfis de certificado.
+**Tipo de certificado:** Descreve os módulos de formulários AEM ativados pelo certificado e o nível de ativação, como Código de Barras 2D Completo. Para obter uma lista dos tipos de certificados disponíveis, consulte a coluna Tipo na tabela na seção Perfis de certificado.
 
-**Tipo de implantação:** Indica o uso pretendido do certificado, como Produção. O valor pode ser Avaliação ou Produção. Para obter uma lista dos tipos de implantação associados a cada tipo de certificado, consulte a coluna Tipo de implantação na tabela na seção Perfis de certificado.
+**Tipo de implantação:** indica o uso pretendido do certificado, como Produção. O valor pode ser Avaliação ou Produção. Para obter uma lista dos tipos de implantação associados a cada tipo de certificado, consulte a coluna Tipo de implantação na tabela na seção Perfis de certificado.
 
-**Versão de direitos de uso:** Descreve a versão do algoritmo de direitos de uso para o qual o certificado pode ser usado, como V6.1. Esta versão não significa a versão do Acrobat ou as extensões do Acrobat Reader DC.
+**Versão de direitos de uso:** descreve a versão do algoritmo de direitos de uso para o qual o certificado pode ser usado, como V6.1. Esta versão não significa a versão do Acrobat ou as extensões do Acrobat Reader DC.
 
-**Código do perfil:** O código do perfil é uma descrição resumida de propriedades completas do certificado, como por exemplo, P8. Para obter uma lista dos códigos de perfil associados a cada tipo de arquivo, consulte a coluna Código de perfil na tabela na seção Perfis de certificado.
+**Código do perfil:** o código do perfil é uma descrição resumida das propriedades completas do certificado, como por exemplo, P8. Para obter uma lista dos códigos de perfil associados a cada tipo de arquivo, consulte a coluna Código de perfil na tabela na seção Perfis de certificado.
 
-**Número de série:** Um número de série é atribuído a cada certificado emitido pelo Adobe, como 0002054. O Suporte Adobe Enterprise ou um representante de conta Adobe Enterprise pode usar esse número de série para rastrear o certificado a um pedido de produto específico ou a um relacionamento OEM.
+**Número de série:** um número de série é atribuído a cada certificado emitido pelo Adobe, como 0002054. O Suporte Adobe Enterprise ou um representante de conta Adobe Enterprise pode usar esse número de série para rastrear o certificado a um pedido de produto específico ou a um relacionamento OEM.
 
 ## Perfis de certificado {#certificate-profiles}
 

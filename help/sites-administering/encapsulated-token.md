@@ -58,7 +58,7 @@ Você pode ver como isso funciona em uma implantação distribuída geograficame
 >
 >* Sessões adesivas estão ativadas ou
 >
->* Os usuários já são criados no AEM quando a sincronização começa. Isso significa que os tokens encapsulados não serão suportados em situações em que os manipuladores **criar** usuários durante o processo de sincronização.
+>* Os usuários já são criados no AEM quando a sincronização começa. Isso significa que os tokens encapsulados não terão suporte em situações em que os manipuladores **criam** usuários durante o processo de sincronização.
 
 Há algumas coisas que você precisa considerar ao configurar o token encapsulado:
 
@@ -70,11 +70,11 @@ Há algumas coisas que você precisa considerar ao configurar o token encapsulad
 Para replicar a chave entre instâncias, é necessário:
 
 1. Acesse a instância do AEM, normalmente uma instância de autor, que contém o material principal a ser copiado;
-1. Localize o `com.adobe.granite.crypto.file` no sistema de arquivos local. Por exemplo, neste caminho:
+1. Localize o pacote `com.adobe.granite.crypto.file` no sistema de arquivos local. Por exemplo, neste caminho:
 
    * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle25`
 
-   A variável `bundle.info` arquivo dentro de cada pasta identificará o nome do pacote.
+   O arquivo `bundle.info` dentro de cada pasta identificará o nome do pacote.
 
 1. Navegue até a pasta de dados. Por exemplo:
 
@@ -86,7 +86,7 @@ Para replicar a chave entre instâncias, é necessário:
    * `<publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle25/data`
 
 1. Cole os dois arquivos copiados anteriormente.
-1. [Atualizar o pacote de criptografia](/help/communities/deploy-communities.md#refresh-the-granite-crypto-bundle) se a instância de destino já estiver em execução.
+1. [Atualize o Pacote de Criptografia](/help/communities/deploy-communities.md#refresh-the-granite-crypto-bundle) se a instância de destino já estiver em execução.
 
 1. Repita as etapas acima para todas as instâncias para as quais deseja replicar a chave.
 
@@ -96,4 +96,4 @@ Depois que a chave HMAC for replicada, você poderá ativar o Encapsulated Token
 
 1. Aponte seu navegador para `https://serveraddress:port/system/console/configMgr`
 1. Procure uma entrada chamada **Manipulador de autenticação de token do Adobe Granite** e clique nela.
-1. Na janela a seguir, marque a caixa de seleção **Habilitar suporte a token encapsulado** e pressione **Salvar**.
+1. Na janela a seguir, marque a caixa **Habilitar suporte a token encapsulado** e pressione **Salvar**.

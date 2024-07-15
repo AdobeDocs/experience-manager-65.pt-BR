@@ -19,7 +19,7 @@ ht-degree: 20%
 
 # Componentes{#components}
 
-O Adobe Experience Manager (AEM) vem com vários componentes prontos para uso que fornecem funcionalidade abrangente para os autores de sites. Eles estão disponíveis quando [editar uma página](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) e são agrupados por área funcional principal (ou seja, grupo de componentes) para ajudar na filtragem.
+O Adobe Experience Manager (AEM) vem com vários componentes prontos para uso que fornecem funcionalidade abrangente para os autores de sites. Eles estão disponíveis ao [editar uma página](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) e são agrupados por área funcional principal (ou seja, grupo de componentes) para ajudar na filtragem.
 
 >[!CAUTION]
 >
@@ -37,8 +37,8 @@ As páginas a seguir fornecem links rápidos para algumas das principais áreas 
 
 * [eCommerce](/help/commerce/cif-classic/administering/ecommerce.md)
 
-  A funcionalidade de comércio eletrônico no AEM também inclui uma variedade de componentes, contidos na **Commerce** grupo. O uso real pode depender do mecanismo de comércio sendo usado.
+  A funcionalidade de comércio eletrônico dentro do AEM também inclui vários componentes, contidos no grupo **Commerce**. O uso real pode depender do mecanismo de comércio sendo usado.
 
 ## Utilização do modo de design para configurar componentes {#using-design-mode-to-configure-components}
 
-Além dos componentes que os autores podem acessar por meio do sidekick em uma instalação padrão, vários outros componentes também estão disponíveis. Você pode usar [Modo de design](/help/sites-classic-ui-authoring/classic-page-author-design-mode.md#enable-disable-components) para ativá-los/desativá-los e editar parâmetros para componentes específicos.
+Além dos componentes que os autores podem acessar por meio do sidekick em uma instalação padrão, vários outros componentes também estão disponíveis. Você pode usar o [Modo de design](/help/sites-classic-ui-authoring/classic-page-author-design-mode.md#enable-disable-components) para habilitar/desabilitar esses itens e editar parâmetros de componentes específicos.

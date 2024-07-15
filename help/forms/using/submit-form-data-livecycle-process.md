@@ -24,22 +24,22 @@ Os formulários adaptáveis oferecem suporte ao envio de dados para o AEM Forms 
 
 Execute as seguintes etapas para permitir que seu servidor do AEM Forms envie dados para uma AEM Forms no servidor JEE:
 
-1. Acesse o console de configuração da Web do AEM em https://[*host*]:[*porta*]/system/console/configMgr
+1. Vá para o console de configuração da Web do AEM em https://[*host*]:[*port*]/system/console/configMgr.
 
-1. Localize e clique no link **Configuração do SDK do cliente do LiveCycle Adobe** componente.
+1. Localize e clique no componente **Configuração do SDK do cliente do Adobe LiveCycle**.
 1. Clique em para editar o URL do servidor de configuração, o nome de usuário e a senha do AEM Forms no servidor JEE.
 1. Revise as configurações e clique em **Salvar**.
 
-![Configuração do SDK do cliente do LiveCycle Adobe](assets/clientsdkconfiguration.jpg)
+![Configuração do SDK do cliente do Adobe LiveCycle](assets/clientsdkconfiguration.jpg)
 
 ## Mapear dados com campos de processo {#map-data-with-process-fields}
 
 Depois de configurar o AEM Forms, mapeie o XML de dados e os anexos do formulário enviado para os campos no processo do AEM Forms no JEE. Faça o seguinte:
 
-1. No console de configuração da Web do AEM, clique em para editar a variável **Localizador e Chamador do Processo do LiveCycle do Guia** configuração.
+1. No console de configuração da Web do AEM, clique para editar a configuração **Localizador do Processo do LiveCycle do Guia e Chamador**.
 1. Especifique os seguintes parâmetros:
 
-   * **Nome do parâmetro xml de dados** (obrigatório): especifique o arquivo de propriedade XML do processo AEM Forms no JEE que deve processar os dados enviados. O valor padrão é **dataxml**.
+   * **Nome do parâmetro xml de dados** (obrigatório): especifique o arquivo de propriedades XML do processo AEM Forms no JEE que deve processar os dados enviados. O valor padrão é **dataxml**.
 
    * **Nome do parâmetro de anexos de arquivo** (opcional): especifique a lista de objetos de documento que o processo do AEM Forms no JEE deve processar. O valor padrão é **fileAttachmentsList**.
 

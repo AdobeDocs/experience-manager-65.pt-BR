@@ -30,7 +30,7 @@ As tabelas a seguir descrevem as propriedades de conteúdo e os nós.
 
 ## Propriedades comuns de integração {#common-integration-properties}
 
-| **Nome da Propriedade** | **Tipo** | **Padrões ou valores esperados** | **Descrição** |
+| **Nome da Propriedade** | **Tipo** | **Valores Padrões ou Esperados** | **Descrição** |
 |---|---|---|---|
 | dps-id | String |  | atribuído pelo AEM Mobile e armazenado pelo AEM depois de carregado no AEM Mobile ou importado do AEM Mobile |
 | dps-resourceType | String | dps:Article | dps:Banner | dps:Collection | propriedade de tipo de entidade |
@@ -49,13 +49,13 @@ As tabelas a seguir descrevem as propriedades de conteúdo e os nós.
 | dps-shortAbstract | String |  |
 | dps-department | String |  |
 | dps-category | String |  |
-| dps-keywords | String[] |  |
-| dps-internalKeywords | String[] |  |
-| dps-importance | String[] | Importância de {&quot;low&quot;, &quot;normal&quot;, &quot;high&quot;} |
+| dps-keywords | Cadeia de caracteres[] |  |
+| dps-internalKeywords | Cadeia de caracteres[] |  |
+| dps-importance | Cadeia de caracteres[] | Importância de {&quot;low&quot;, &quot;normal&quot;, &quot;high&quot;} |
 
 ### Artigos {#articles}
 
-| **Nome da Propriedade** | **Tipo** | **Padrões ou valores esperados** |
+| **Nome da Propriedade** | **Tipo** | **Valores Padrões ou Esperados** |
 |---|---|---|
 | dps-author | String |  |
 | dps-authorURL | String |  |
@@ -68,9 +68,9 @@ As tabelas a seguir descrevem as propriedades de conteúdo e os nós.
 
 ### Banners {#banners}
 
-| **Nome da Propriedade** | **Tipo** | **Padrões ou valores esperados** |
+| **Nome da Propriedade** | **Tipo** | **Valores Padrões ou Esperados** |
 |---|---|---|
-| dps-tapAction |  | Toque em Ação de {webLink} |
+| dps-tapAction |  | TapAction de {webLink} |
 | dps-tapActionUrl |  |  |
 
 ### Coleções {#collections}

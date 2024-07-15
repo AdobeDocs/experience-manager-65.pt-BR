@@ -19,21 +19,21 @@ ht-degree: 1%
 
 # Operações do Granite - Administração de usuários e grupos{#granite-operations-user-and-group-administration}
 
-Como o Granite incorpora a implementação do Repositório CRX da especificação da API JCR, ele tem sua própria administração de usuários e grupos.
+Como o Granite incorpora a implementação do Repositório do CRX da especificação da API JCR, ele tem sua própria administração de usuários e grupos.
 
-Estas contas constituem a base subjacente da [Contas AEM](/help/sites-administering/security.md) e quaisquer alterações de conta feitas com a administração do Granite serão refletidas se/quando as contas forem acessadas do [Console de usuários AEM](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console) (por exemplo, `http://localhost:4502/useradmin`). No console Usuários do AEM, também é possível gerenciar os privilégios e outras especificidades do AEM.
+Essas contas são a base subjacente das [contas AEM](/help/sites-administering/security.md), e quaisquer alterações de conta feitas com a administração do Granite serão refletidas se/quando as contas forem acessadas do [console Usuários do AEM](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console) (por exemplo, `http://localhost:4502/useradmin`). No console Usuários do AEM, também é possível gerenciar os privilégios e outras especificidades do AEM.
 
-Os consoles de administração de usuários e grupos do Granite estão disponíveis no **[Ferramentas](/help/sites-administering/tools-consoles.md)** console da interface otimizada para toque:
+Os consoles de administração de usuários e grupos do Granite estão disponíveis no console **[Ferramentas](/help/sites-administering/tools-consoles.md)** da interface otimizada para toque:
 
-![Console Ferramentas](assets/chlimage_1-72a.png)
+![Console de ferramentas](assets/chlimage_1-72a.png)
 
-Escolhendo um **Usuários** ou **Grupos** no console Ferramentas abre o console apropriado. Em ambos, é possível realizar ações usando a caixa de cliques e, em seguida, as ações na barra de ferramentas, ou abrindo os detalhes da conta por meio do link em **Nome**.
+Escolher **Usuários** ou **Grupos** do console Ferramentas abre o console apropriado. Em ambos, você pode executar ações usando a caixa de cliques e depois as ações da barra de ferramentas, ou abrindo os detalhes da conta por meio do link em **Nome**.
 
 * [Administração de usuários](#user-administration)
 
   ![chlimage_1-73](assets/chlimage_1-73a.png)
 
-  A variável **Usuários** listas do console:
+  O console **Usuários** lista:
 
    * o nome de usuário
    * o nome de login do usuário (nome da conta)
@@ -43,7 +43,7 @@ Escolhendo um **Usuários** ou **Grupos** no console Ferramentas abre o console 
 
   ![Console de gerenciamento de usuários](assets/chlimage_1-74a.png)
 
-  A variável **Grupos** listas do console:
+  O console **Grupos** lista:
 
    * o nome do grupo
    * a descrição do grupo
@@ -53,13 +53,13 @@ Escolhendo um **Usuários** ou **Grupos** no console Ferramentas abre o console 
 
 ### Adicionar um novo usuário {#adding-a-new-user}
 
-1. Use o **Adicionar usuário** ícone:
+1. Usar o ícone **Adicionar Usuário**:
 
-   ![Ícone Adicionar usuário](do-not-localize/chlimage_1-1.png)
+   ![Ícone Adicionar Usuário](do-not-localize/chlimage_1-1.png)
 
-1. A variável **Criar usuário** abertura do formulário:
+1. O formulário **Criar Usuário** abre:
 
-   ![Formulário Detalhes do usuário](assets/chlimage_1-75a.png)
+   ![Formulário Detalhes do Usuário](assets/chlimage_1-75a.png)
 
    Aqui você pode inserir os detalhes do usuário para a conta (a maioria é padrão e autoexplicativa):
 
@@ -67,32 +67,32 @@ Escolhendo um **Usuários** ou **Grupos** no console Ferramentas abre o console 
 
      É a identificação exclusiva da conta de usuário. É obrigatório e não pode conter espaços.
 
-   * **Endereço de e-mail**
+   * **Endereço de email**
    * **Senha**
 
      Uma senha é obrigatória.
 
-   * **Digite a senha novamente**
+   * **Senha do Retype**
 
      Isso é obrigatório, pois é necessário para confirmação da senha.
 
    * **Nome**
    * **Sobrenome**
-   * **Número de telefone**
+   * **Telefone**
    * **Cargo**
    * **Rua**
    * **Móvel**
    * **Cidade**
-   * **Código postal**
+   * **CEP**
    * **País**
    * **Estado**
    * **Título**
-   * **Sexo**
+   * **Gênero**
    * **Sobre**
    * **Configurações da conta**
 
       * **Status**
-Você pode sinalizar a conta como **ativo** ou **inativo**.
+Você pode sinalizar a conta como **ativa** ou **inativa**.
 
    * **Foto**
 
@@ -104,36 +104,36 @@ Você pode sinalizar a conta como **ativo** ou **inativo**.
 
    * **Adicionar usuário aos grupos**
 
-     Use o menu suspenso de seleção para selecionar grupos dos quais o usuário deve ser membro. Depois de selecionado, use o **X** pelo nome a ser desmarcado antes de salvar.
+     Use o menu suspenso de seleção para selecionar grupos dos quais o usuário deve ser membro. Depois de selecionado, use o **X** pelo nome para desmarcar antes de salvar.
 
    * **Grupos**
 
-     Uma lista de grupos dos quais o usuário é membro no momento. Use o **X** pelo nome a ser desmarcado antes de salvar.
+     Uma lista de grupos dos quais o usuário é membro no momento. Use o **X** pelo nome para desmarcar antes de salvar.
 
 1. Quando tiver definido a conta de usuário, use:
 
    * **Cancelar** para cancelar o registro.
-   * **Salvar** para concluir o registro. A criação da conta de usuário será confirmada com uma mensagem.
+   * **Salve** para concluir o registro. A criação da conta de usuário será confirmada com uma mensagem.
 
 ### Editar um usuário existente {#editing-an-existing-user}
 
 1. Acesse os detalhes do usuário no link com o nome do usuário no console Usuários.
 
-1. Agora é possível editar os detalhes como em [Adicionar um novo usuário](#adding-a-new-user).
+1. Agora você pode editar os detalhes como em [Adicionando um Novo Usuário](#adding-a-new-user).
 
 1. Acesse os detalhes do usuário no link com o nome do usuário no console Usuários.
 
-1. Agora é possível editar os detalhes como em [Adicionar um novo usuário](#adding-a-new-user).
+1. Agora você pode editar os detalhes como em [Adicionando um Novo Usuário](#adding-a-new-user).
 
 ### Alterando a senha de um usuário existente {#changing-the-password-for-an-existing-user}
 
 1. Acesse os detalhes do usuário no link com o nome do usuário no console Usuários.
 
-1. Agora é possível editar os detalhes como em [Adicionar um novo usuário](#adding-a-new-user). Em **Configurações da conta** há um link para **Alterar senha**.
+1. Agora você pode editar os detalhes como em [Adicionando um Novo Usuário](#adding-a-new-user). Em **Configurações de Conta**, há um link para **Alterar Senha**.
 
-   ![Caixa de diálogo Configurações da conta](assets/chlimage_1-76a.png)
+   ![Caixa de diálogo Configurações da Conta](assets/chlimage_1-76a.png)
 
-1. A variável **Alterar senha** será aberta. Digite e digite novamente a nova senha, juntamente com a senha. Uso **OK** para confirmar as alterações.
+1. A caixa de diálogo **Alterar Senha** é aberta. Digite e digite novamente a nova senha, juntamente com a senha. Use **OK** para confirmar as alterações.
 
    ![Caixa de diálogo Alterar senha](assets/chlimage_1-77a.png)
 
@@ -142,7 +142,7 @@ Você pode sinalizar a conta como **ativo** ou **inativo**.
 ### Atribuição rápida de grupo {#quick-group-assignment}
 
 1. Use a caixa de clique para sinalizar um ou mais usuários.
-1. Use o **Grupos** ícone:
+1. Usar o ícone **Grupos**:
 
    ![Usando o ícone Grupos](do-not-localize/chlimage_1-2.png)
 
@@ -154,13 +154,13 @@ Você pode sinalizar a conta como **ativo** ou **inativo**.
 
 1. Quando você tiver atribuído ou desatribuído os grupos, use:
 
-   * **Cancelar** para suspender as alterações
+   * **Cancelar** para anular as alterações
    * **Salvar** para confirmar as alterações
 
 ### Deletando Detalhes do Usuário Existente {#deleting-existing-user-details}
 
 1. Use a caixa de clique para sinalizar um ou mais usuários.
-1. Use o **Excluir** ícone para excluir os detalhes do usuário:
+1. Use o ícone **Excluir** para excluir os detalhes do usuário:
 
    ![Excluir detalhes do usuário existente](do-not-localize/chlimage_1-3.png)
 
@@ -174,9 +174,9 @@ Você pode sinalizar a conta como **ativo** ou **inativo**.
 
    ![Adicionar um novo grupo](do-not-localize/chlimage_1-4.png)
 
-1. A variável **Criar grupo** abertura do formulário:
+1. O formulário **Criar Grupo** abre:
 
-   ![Formulário Detalhes do grupo](assets/chlimage_1-79a.png)
+   ![Formulário Detalhes do Grupo](assets/chlimage_1-79a.png)
 
    Aqui você pode inserir os detalhes do grupo:
 
@@ -194,41 +194,41 @@ Você pode sinalizar a conta como **ativo** ou **inativo**.
 
    * **Adicionar membros ao grupo**
 
-     Use o menu suspenso de seleção para selecionar usuários a serem adicionados ao grupo. Depois de selecionado, use o **X** pelo nome a ser desmarcado antes de salvar.
+     Use o menu suspenso de seleção para selecionar usuários a serem adicionados ao grupo. Depois de selecionado, use o **X** pelo nome para desmarcar antes de salvar.
 
    * **Membros do grupo**
 
-     Uma lista de usuários no grupo. Use o **X** pelo nome a ser desmarcado antes de salvar.
+     Uma lista de usuários no grupo. Use o **X** pelo nome para desmarcar antes de salvar.
 
 1. Quando tiver definido o grupo, use:
 
    * **Cancelar** para cancelar o registro.
-   * **Salvar** para concluir o registro. A criação do grupo será confirmada com uma mensagem.
+   * **Salve** para concluir o registro. A criação do grupo será confirmada com uma mensagem.
 
 ### Editar um grupo existente {#editing-an-existing-group}
 
 1. Acesse os detalhes do grupo no link com o nome do grupo no console Grupos.
 
-1. Agora você pode editar e salvar os detalhes como na [Adicionar um novo grupo](#adding-a-new-group).
+1. Agora você pode editar e salvar os detalhes como em [Adicionando um Novo Grupo](#adding-a-new-group).
 
 ### Copiando um Grupo Existente {#copying-an-existing-group}
 
 1. Use a caixa de clique para sinalizar um grupo.
-1. Use o **Copiar** ícone para copiar os detalhes do grupo:
+1. Use o ícone **Copiar** para copiar os detalhes do grupo:
 
    ![Copiar um grupo existente](do-not-localize/chlimage_1-5.png)
 
-1. A variável **Editar configurações de grupo** formulário será aberto.
+1. O formulário **Editar Configurações do Grupo** será aberto.
 
    A ID do grupo será a mesma do original, mas com o prefixo `Copy of`. Edite essa ID porque ela não pode conter espaços. Todos os outros detalhes são os mesmos do original.
 
-   Agora você pode editar e salvar os detalhes como na [Adicionar um novo grupo](#adding-a-new-group).
+   Agora você pode editar e salvar os detalhes como em [Adicionando um Novo Grupo](#adding-a-new-group).
 
 ### Excluindo um grupo existente {#deleting-an-existing-group}
 
 1. Use a caixa de clique para sinalizar um ou mais grupos.
-1. Use o **Excluir** ícone para excluir os detalhes do grupo:
+1. Use o ícone **Excluir** para excluir os detalhes do grupo:
 
-   ![Deletando um grupo existente](do-not-localize/chlimage_1-6.png)
+   ![Excluindo um grupo existente](do-not-localize/chlimage_1-6.png)
 
 1. Você será solicitado a confirmar a exclusão e, em seguida, uma mensagem confirmará que a exclusão ocorreu.

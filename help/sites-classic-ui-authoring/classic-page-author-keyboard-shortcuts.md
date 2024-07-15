@@ -22,7 +22,7 @@ Vários atalhos de teclado estão disponíveis em todo o AEM. Alguns são aplic�
 
 >[!NOTE]
 >
->Nas tabelas a seguir, para as combinações de teclas no **Atalho** , as teclas Ctrl e Command funcionam no macOS.
+>Nas tabelas a seguir, para as combinações de teclas na coluna **Atalho**, as teclas Ctrl e Command funcionam no macOS.
 
 >[!NOTE]
 >
@@ -69,7 +69,7 @@ Vários atalhos de teclado estão disponíveis em todo o AEM. Alguns são aplic�
   <tr>
    <td> </td>
    <td><strong><code>Ctrl-X</code></strong></td>
-   <td>Recortar parágrafos selecionados.<strong><br /> Nota:</strong> O parágrafo recortado não desaparecerá até que seja colado no novo local.</td>
+   <td>Recortar parágrafos selecionados.<strong><br /> Observação:</strong> o parágrafo recortado não desaparecerá até que seja colado no novo local.</td>
   </tr>
   <tr>
    <td> </td>
@@ -94,7 +94,7 @@ Vários atalhos de teclado estão disponíveis em todo o AEM. Alguns são aplic�
   <tr>
    <td> </td>
    <td><strong><code>Alt-right-click</code></strong></td>
-   <td>Forçar menu de contexto padrão (navegador).<br /> <strong>Nota:</strong> Menus de contexto AEM só ocorrem na interface clássica.</td>
+   <td>Forçar menu de contexto padrão (navegador).<br /> <strong>Observação:</strong> menus de contexto AEM só ocorrem na interface clássica.</td>
   </tr>
   <tr>
    <td> </td>
@@ -142,7 +142,7 @@ Vários atalhos de teclado estão disponíveis em todo o AEM. Alguns são aplic�
    <td>Feche a camada de sugestões.</td>
   </tr>
   <tr>
-   <td>Localizador de conteúdo<br /> </td>
+   <td>Localizador de Conteúdo<br /> </td>
    <td><strong><code>Alt+drag</code></strong></td>
    <td><p>Arraste os ativos e solte no destino.</p> <p>A ação de soltar produz um novo parágrafo; em vez de substituir o ativo no destino.</p> </td>
   </tr>
@@ -164,7 +164,7 @@ Atalhos de teclado adicionais estão disponíveis para desenvolvedores de deskto
   </tr>
   <tr>
    <td>Modo de edição</td>
-   <td>Defina o seguinte sufixo no URL:<br /> <code>?debugClientLibs=true</code><br /> Em seguida, use:<br /> <strong><code>Ctrl-Shift-U</code></strong></td>
+   <td>Defina o seguinte sufixo na URL:<br /> <code>?debugClientLibs=true</code><br /> Em seguida, use:<br /> <strong><code>Ctrl-Shift-U</code></strong></td>
    <td>Para ver as estatísticas de tempo do carregamento da página.</td>
   </tr>
  </tbody>

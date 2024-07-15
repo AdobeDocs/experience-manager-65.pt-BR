@@ -26,7 +26,7 @@ Depois de configurado para um determinado componente, o cache começa a armazena
 
 Ao configurar o armazenamento em cache de componentes, o nome do cache deve ser o nome dos componentes **proxy** definidos no projeto.
 
-Antes de enviar uma solicitação GraphQL, o cliente verifica se **exato** a mesma solicitação do GraphQL já está armazenada em cache e possivelmente retorna a resposta em cache. Para que haja correspondência, a solicitação GraphQL deve ser exatamente igual, ou seja, a consulta, o nome da operação (se houver), as variáveis (se houver) devem ser iguais à solicitação em cache. Além disso, todos os cabeçalhos HTTP personalizados que podem ser definidos devem ser iguais. Por exemplo, o Adobe Commerce `Store` O cabeçalho DEVE corresponder a.
+Antes de enviar uma solicitação GraphQL, o cliente verifica se **exato** a mesma solicitação GraphQL já está em cache e possivelmente retorna a resposta em cache. Para que haja correspondência, a solicitação GraphQL deve ser exatamente igual, ou seja, a consulta, o nome da operação (se houver), as variáveis (se houver) devem ser iguais à solicitação em cache. Além disso, todos os cabeçalhos HTTP personalizados que podem ser definidos devem ser iguais. Por exemplo, o cabeçalho `Store` do Adobe Commerce deve ser igual.
 
 ### Exemplos
 
@@ -44,7 +44,7 @@ O uso do recurso de armazenamento em cache GraphQl também é recomendado no com
 venia/components/structure/navigation:true:10:600
 ```
 
-Ao considerar a [Loja de referência Venia](https://github.com/adobe/aem-cif-guides-venia) é usada. Observe o uso do nome proxy do componente `venia/components/structure/navigation`, e **não** o nome do componente de navegação na CIF (`core/cif/components/structure/navigation/v1/navigation`).
+Quando a [loja de referência Venia](https://github.com/adobe/aem-cif-guides-venia) é usada. Observe o uso do nome proxy do componente `venia/components/structure/navigation`, e **não** o nome do componente de navegação na CIF (`core/cif/components/structure/navigation/v1/navigation`).
 
 O armazenamento em cache para outros componentes deve ser definido de acordo com o projeto, geralmente junto com o armazenamento em cache configurado no Dispatcher. Lembre-se de que não há nenhuma invalidação ativa desses caches, portanto a duração do armazenamento em cache deve ser cuidadosamente definida. Não há valores de &quot;tamanho único&quot; que correspondam a todos os projetos e casos de uso possíveis. Defina a melhor estratégia de armazenamento em cache segundo as exigências do seu projeto.
 
@@ -54,13 +54,13 @@ O armazenamento em cache de páginas ou fragmentos do AEM no [AEM Dispatcher](ht
 
 Além do CIF puro de conteúdo gerenciado por AEM, uma página pode exibir dados comerciais que são buscados dinamicamente no Adobe Commerce via GraphQL. Embora a estrutura da página em si nunca mude, o conteúdo comercial pode mudar se alguns dados do produto (como nome ou preço) forem alterados no Adobe Commerce.
 
-Para garantir que as páginas do CIF possam ser armazenadas em cache por um período limitado no AEM Dispatcher, recomendamos o uso de [Invalidação de cache com base no tempo](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-time-based-cache-invalidation-enablettl) (também conhecido como armazenamento em cache com base em TTL) ao armazenar páginas do CIF no AEM Dispatcher. Esse recurso pode ser configurado no AEM com o uso do pacote adicional [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/).
+Para garantir que as páginas do CIF possam ser armazenadas em cache por um período limitado no AEM Dispatcher CIF AEM, recomendamos o uso de [Invalidação de cache com base no tempo](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-time-based-cache-invalidation-enablettl) (também conhecido como cache com base em TTL) ao armazenar páginas do no Dispatcher. Esse recurso pode ser configurado no AEM com o uso do pacote adicional [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/).
 
-Com o armazenamento em cache com base em TTL, o desenvolvedor normalmente define uma ou várias durações de armazenamento em cache para determinadas páginas do AEM. Isso garante que as páginas CIF sejam armazenadas em cache somente no AEM Dispatcher pela duração configurada e que o conteúdo seja atualizado com frequência.
+Com o armazenamento em cache com base em TTL, o desenvolvedor normalmente define uma ou várias durações de armazenamento em cache para determinadas páginas do AEM. Isso garante que as páginas CIF sejam armazenadas em cache somente no AEM Dispatcher até a duração configurada e que o conteúdo seja atualizado com frequência.
 
 >[!NOTE]
 >
->Embora os dados do lado do servidor possam ser armazenados em cache pelo AEM Dispatcher, alguns componentes do CIF, como o `product`, `productlist`, e `searchresults` os componentes normalmente buscam novamente os preços do produto em uma solicitação do navegador do lado do cliente quando a página é carregada. Assim, o conteúdo dinâmico essencial é sempre buscado no carregamento da página.
+>Embora os dados do lado do servidor possam ser armazenados em cache pelo Dispatcher do AEM, alguns componentes do CIF, como os componentes `product`, `productlist` e `searchresults` normalmente tornam a buscar os preços do produto em uma solicitação do navegador do lado do cliente quando a página é carregada. Assim, o conteúdo dinâmico essencial é sempre buscado no carregamento da página.
 
 ## Recursos adicionais
 

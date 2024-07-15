@@ -38,7 +38,7 @@ Além da funcionalidade padrão, os manipuladores de conflito personalizados pod
 
 ### Exemplo de cenário {#example-scenario}
 
-Nas seções a seguir, você deve usar o exemplo de uma nova página `b`, criado na ramificação do blueprint e da live copy (criado manualmente), para ilustrar os vários métodos de resolução de conflitos:
+Nas seções a seguir, você deve usar o exemplo de uma nova página `b`, criada na ramificação do blueprint e da live copy (criada manualmente), para ilustrar os vários métodos de resolução de conflitos:
 
 * blueprint: `/b`
 
@@ -67,7 +67,7 @@ Nas seções a seguir, você deve usar o exemplo de uma nova página `b`, criado
   <tr>
    <td><code> /bp-level-1</code></td>
    <td><code> /lc-level-1</code><br /> <br /> (criado manualmente na ramificação da live copy)<br /> </td>
-   <td><code> /lc-level-1</code><br /> <br /> (contém o conteúdo da página)<br /> nível secundário-1 que foi criado manualmente na ramificação da live copy)</td>
+   <td><code> /lc-level-1</code><br /> <br /> (contém o conteúdo da página <br /> de nível secundário-1 que foi criada manualmente na ramificação da live copy)</td>
   </tr>
  </tbody>
 </table>
@@ -76,15 +76,15 @@ Nas seções a seguir, você deve usar o exemplo de uma nova página `b`, criado
 
 O gerenciador de implantação permite ativar ou desativar o gerenciamento de conflitos.
 
-Isso é feito usando o [Configuração OSGi](/help/sites-deploying/configuring-osgi.md) de **Gerente de implantação do WCM CQ do dia**:
+Isso é feito usando a [configuração OSGi](/help/sites-deploying/configuring-osgi.md) do **Gerenciador de Implantação do WCM do Day CQ**:
 
-* **Lidar com conflitos com páginas criadas manualmente**:
+* **Manipular conflitos com páginas criadas manualmente**:
 
   ( `rolloutmgr.conflicthandling.enabled`)
 
   Definido como verdadeiro se o gerenciador de implantação deve lidar com conflitos de uma página criada na live copy com um nome que existe no blueprint.
 
-O AEM [comportamento predefinido quando o gerenciamento de conflitos foi desativado](#behavior-when-conflict-handling-deactivated).
+O AEM tem [comportamento predefinido quando o gerenciamento de conflitos foi desativado](#behavior-when-conflict-handling-deactivated).
 
 ## Manipuladores de conflito {#conflict-handlers}
 
@@ -96,7 +96,7 @@ O AEM fornece:
 
    * `ResourceNameRolloutConflictHandler`
 
-* A possibilidade de aplicar uma [manipulador personalizado](#customized-handlers).
+* A possibilidade de implementar um [manipulador personalizado](#customized-handlers).
 * O mecanismo de classificação de serviço que permite definir a prioridade de cada manipulador individual. O serviço com a classificação mais alta é usado.
 
 ### Manipulador de conflito padrão {#default-conflict-handler}
@@ -106,9 +106,9 @@ O manipulador de conflitos padrão:
 * É chamado `ResourceNameRolloutConflictHandler`
 
 * Com esse manipulador, a página do blueprint recebe prioridade.
-* A classificação de serviço para esse manipulador é definida como baixa (ou seja, abaixo do valor padrão para o `service.ranking` propriedade ), pois a suposição é que os manipuladores personalizados precisam de uma classificação mais alta. No entanto, a classificação não é o mínimo absoluto para garantir flexibilidade quando necessária.
+* A classificação de serviço para este manipulador é definida como baixa (ou seja, abaixo do valor padrão para a propriedade `service.ranking`), pois se supõe que os manipuladores personalizados precisam de uma classificação mais alta. No entanto, a classificação não é o mínimo absoluto para garantir flexibilidade quando necessária.
 
-Esse manipulador de conflitos dá prioridade ao blueprint. A página da live copy `/b` é movido (dentro da ramificação da live copy) para `/b_msm_moved`.
+Esse manipulador de conflitos dá prioridade ao blueprint. A página de live copy `/b` foi movida (dentro da ramificação da live copy) para `/b_msm_moved`.
 
 * live copy: `/b`
 
@@ -118,7 +118,7 @@ Esse manipulador de conflitos dá prioridade ao blueprint. A página da live cop
 
 * blueprint: `/b`
 
-  É implantado na página da live copy `/b`.
+  É implantado na página de live copy `/b`.
 
    * `bp-level-1` é implantado na live copy.
 
@@ -158,7 +158,7 @@ Os manipuladores de conflito personalizados podem ter o seguinte:
 
 * Nomeado de acordo com suas necessidades.
 * Desenvolvido/configurado de acordo com seus requisitos; por exemplo, você pode desenvolver um manipulador para que a página da Live Copy tenha prioridade.
-* Projetado para ser configurado usando o [Configuração OSGi](/help/sites-deploying/configuring-osgi.md)em especial:
+* Projetado para ser configurado usando a [configuração OSGi](/help/sites-deploying/configuring-osgi.md); especificamente:
 
    * **Classificação do serviço**:
 
@@ -168,13 +168,13 @@ Os manipuladores de conflito personalizados podem ter o seguinte:
 
 ### Comportamento quando o manuseio de conflitos é desativado {#behavior-when-conflict-handling-deactivated}
 
-Se você [desativar tratamento de conflitos](#rollout-manager-and-conflict-handling), o AEM não executa nenhuma ação em páginas conflitantes (as páginas não conflitantes são implantadas conforme esperado).
+Se você [desativar o tratamento de conflitos](#rollout-manager-and-conflict-handling) manualmente, o AEM não executará nenhuma ação em páginas em conflito (as páginas não em conflito são implantadas conforme esperado).
 
 >[!CAUTION]
 >
 >O AEM não dá nenhuma indicação de que os conflitos estão sendo ignorados, pois esse comportamento deve ser configurado explicitamente, portanto, presume-se que seja o comportamento necessário.
 
-Nesse caso, a live copy tem prioridade efetiva. A página do blueprint `/b` não é copiado e a página da live copy `/b` é deixada intocada.
+Nesse caso, a live copy tem prioridade efetiva. A página de blueprint `/b` não é copiada e a página de live copy `/b` é deixada intocada.
 
 * blueprint: `/b`
 

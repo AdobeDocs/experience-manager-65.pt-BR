@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Console da Web{#web-console}
 
-O console da Web no Adobe Experience Manager (AEM) é baseado no [Console de gerenciamento Web Apache Felix](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html). O Apache Felix é um esforço da comunidade para implementar a Plataforma de serviço OSGi R4, que inclui a estrutura OSGi e os serviços padrão.
+O console da Web no Adobe Experience Manager (AEM) é baseado no [Console de Gerenciamento da Web do Apache Felix](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html). O Apache Felix é um esforço da comunidade para implementar a Plataforma de serviço OSGi R4, que inclui a estrutura OSGi e os serviços padrão.
 
 >[!NOTE]
 >
@@ -27,9 +27,9 @@ O console da Web no Adobe Experience Manager (AEM) é baseado no [Console de ger
 
 O console da Web oferece uma seleção de guias para manter os pacotes OSGi, incluindo:
 
-* [Configuração](#configuration): usado para configurar os pacotes OSGi e, portanto, é o mecanismo subjacente para configurar parâmetros do sistema AEM
-* [Pacotes](#bundles): usado para instalar pacotes
-* [Componentes](#components): usado para controlar o status dos componentes necessários para o AEM
+* [Configuração](#configuration): usada para configurar os pacotes OSGi e, portanto, é o mecanismo subjacente para configurar parâmetros do sistema AEM
+* [Pacotes](#bundles): usados para instalar pacotes
+* [Componentes](#components): usados para controlar o status dos componentes necessários para o AEM
 
 Quaisquer alterações feitas são aplicadas imediatamente ao sistema em execução. Não é necessário reiniciar.
 
@@ -39,13 +39,13 @@ O console pode ser acessado de `../system/console`; por exemplo:
 
 ## Configuração {#configuration}
 
-A variável **Configuração** é usada para configurar os pacotes OSGi e, portanto, é o mecanismo subjacente para configurar os parâmetros do sistema AEM.
+A guia **Configuração** é usada para configurar os pacotes OSGi e, portanto, é o mecanismo subjacente para configurar parâmetros do sistema AEM.
 
 >[!NOTE]
 >
->Consulte [Configuração do OSGi com o console da Web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) para obter mais detalhes.
+>Consulte [Configuração OSGi com o Console da Web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) para obter mais detalhes.
 
-A variável **Configuração** A guia pode ser acessada das seguintes maneiras:
+A guia **Configuração** pode ser acessada por:
 
 * O menu suspenso:
 
@@ -94,7 +94,7 @@ Em seguida, você pode atualizar os parâmetros conforme necessário e:
 
   Exclua a configuração atual. Se for padrão, os parâmetros são retornados às configurações padrão. Se criada a partir de uma Configuração de fábrica, a instância específica é excluída.
 
-* **Desvincular**
+* **Desassociar**
 
   Desvincular a configuração atual do pacote.
 
@@ -104,7 +104,7 @@ Em seguida, você pode atualizar os parâmetros conforme necessário e:
 
 ## Pacotes {#bundles}
 
-A variável **Pacotes** é o mecanismo para instalar os pacotes OSGi necessários para o AEM. A guia pode ser acessada por um dos seguintes métodos:
+A guia **Pacotes** é o mecanismo para instalar os pacotes OSGi necessários para o AEM. A guia pode ser acessada por um dos seguintes métodos:
 
 * O menu suspenso:
 
@@ -120,15 +120,15 @@ Uma lista de pacotes é exibida:
 
 Usando essa guia, você pode:
 
-* **Instalar ou atualizar**
+* **Instalar ou Atualizar**
 
-  Você pode **Procurar** para localizar o arquivo que contém o pacote e especificar se ele deve **Início** imediatamente e em que **Nível inicial**.
+  Você pode **Procurar** para localizar o arquivo que contém o seu pacote e especificar se ele deve **Iniciar** imediatamente e em que **Nível inicial**.
 
 * **Recarregar**
 
   Atualiza a lista exibida.
 
-* **Atualizar pacotes**
+* **Atualizar Pacotes**
 
   Isso verifica as referências de todos os pacotes e atualiza conforme necessário.
 
@@ -146,17 +146,17 @@ Usando essa guia, você pode:
 
   Desinstala o pacote do sistema.
 
-* **ver o status**
+* **veja o status**
 
   A lista especifica o status do pacote; clicando no nome de um pacote específico com show additional information.
 
 >[!NOTE]
 >
->Depois **Atualizar**, o Adobe recomenda que você execute um **Atualizar pacotes**.
+>Após **Atualizar**, o Adobe recomenda que você execute um **Atualizar Pacotes**.
 
 ## Componentes {#components}
 
-A variável **Componentes** permite Ativar e/ou Desativar os vários componentes. Ele pode ser acessado das seguintes maneiras:
+A guia **Componentes** permite Habilitar e/ou Desabilitar os vários componentes. Ele pode ser acessado das seguintes maneiras:
 
 * O menu suspenso:
 

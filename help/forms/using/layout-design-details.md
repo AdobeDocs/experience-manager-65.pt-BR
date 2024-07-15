@@ -54,43 +54,43 @@ Depois de analisar o layout necessário para criar a Comunicação interativa, �
 
 >[!NOTE]
 >
->Adicione conteúdo ao canal de impressão da comunicação interativa em vez de adicionar conteúdo ao componente de subformulário no modelo XDP. Adicione conteúdo às áreas de destino no canal de impressão usando [fragmentos de documentos, gráficos, imagens](create-interactive-communication.md#step2)e fragmentos de layout.
+>Adicione conteúdo ao canal de impressão da comunicação interativa em vez de adicionar conteúdo ao componente de subformulário no modelo XDP. Adicione conteúdo às áreas de destino no canal de impressão usando [fragmentos de documento, gráficos, imagens](create-interactive-communication.md#step2) e fragmentos de layout.
 
 Execute as seguintes etapas para usar o subformulário em um modelo XDP:
 
-1. Abra o Forms Designer e selecione **Arquivo** > **Novo** > **Usar um formulário em branco**, selecione **Próxima** e selecione **Concluir** para abrir o formulário para criação de modelo.
+1. Abra o Forms Designer, selecione **Arquivo** > **Novo** > **Usar um formulário em branco**, selecione **Avançar** e selecione **Concluir** para abrir o formulário para criação de modelo.
 
-   Certifique-se de que o **Biblioteca de objetos** e **Objeto** opções são selecionadas no **Janela** menu.
+   Verifique se as opções **Biblioteca de Objetos** e **Objeto** estão selecionadas no menu **Janela**.
 
-1. Arraste e solte a variável **Subformulário** componente do **Biblioteca de objetos** ao formulário.
+1. Arraste e solte o componente **Subformulário** da **Biblioteca de Objetos** no formulário.
 
-   ![Designer de componentes](assets/subform_component_designer_new.png)
+   ![Componente Designer](assets/subform_component_designer_new.png)
 
-1. Selecione o subformulário para exibir as opções do subformulário no **Objeto** no painel direito.
-1. Selecione o **Subformulário** e selecione **Fluxado** do **Conteúdo** lista suspensa. Arraste a extremidade esquerda do subformulário para ajustar o comprimento.
+1. Selecione o subformulário para exibir as opções do subformulário na janela **Objeto** no painel direito.
+1. Selecione a guia **Subformulário** e selecione **Fluxo** na lista suspensa **Conteúdo**. Arraste a extremidade esquerda do subformulário para ajustar o comprimento.
 
-   ![Subformulário fluido](assets/object_subform_flowed_new.png)
+   ![Subformulário com Fluxo](assets/object_subform_flowed_new.png)
 
-1. No **Vinculação** guia:
+1. Na guia **Associação**:
 
-   1. Especifique um nome para o subformulário no **Nome** campo.
-   1. Selecionar **Sem associação de dados** do **Vinculação de dados** lista suspensa.
+   1. Especifique um nome para o subformulário no campo **Nome**.
+   1. Selecione **Nenhuma associação de dados** na lista suspensa **Associação de Dados**.
 
 1. Da mesma forma, selecione o subformulário raiz no painel esquerdo.
 
    ![Subformulário raiz](assets/root_subform_designer_new.png)
 
-1. Selecione o **Subformulário** e selecione **Fluxado** do **Conteúdo** lista suspensa. No **Associações** guia:
+1. Selecione a guia **Subformulário** e selecione **Fluxo** na lista suspensa **Conteúdo**. Na guia **Ligações**:
 
-   1. Especifique um nome para o subformulário no **Nome** campo.
-   1. Selecionar **Sem associação de dados** do **Vinculação de dados** lista suspensa.
+   1. Especifique um nome para o subformulário no campo **Nome**.
+   1. Selecione **Nenhuma associação de dados** na lista suspensa **Associação de Dados**.
 
-   Repita as etapas 2 a 5 para adicionar mais subformulários ao modelo XDP. Adicionar [texto, fragmentos de documentos, imagens e gráficos](create-interactive-communication.md#step2) para as áreas de destino somente durante a criação da Comunicação interativa.
+   Repita as etapas 2 a 5 para adicionar mais subformulários ao modelo XDP. Adicione [texto, fragmentos de documento, imagens e gráficos](create-interactive-communication.md#step2) às áreas de destino somente durante a criação da Comunicação Interativa.
 
-1. Selecionar **Arquivo** > **Salvar como** para salvar o arquivo no sistema de arquivos local:
+1. Selecione **Arquivo** > **Salvar como** para salvar o arquivo no sistema de arquivos local:
 
    1. Navegue até o local onde o arquivo será salvo e especifique um nome para o modelo XDP.
-   1. Selecionar **.xdp** do **Salvar como tipo** lista suspensa.
+   1. Selecione **.xdp** na lista suspensa **Salvar como tipo**.
 
    1. Selecione **Salvar**.
 
@@ -100,16 +100,16 @@ Use o componente Campo de imagem ou Subformulário no modelo XDP e adicione uma 
 
 >[!NOTE]
 >
->Adicione imagem ao canal de impressão da comunicação interativa em vez de adicionar imagem ao componente Campo de imagem ou Subformulário no modelo XDP. Para obter mais informações, consulte [Adicionar conteúdo à comunicação interativa](../../forms/using/create-interactive-communication.md#step2).
+>Adicione imagem ao canal de impressão da comunicação interativa em vez de adicionar imagem ao componente Campo de imagem ou Subformulário no modelo XDP. Para obter mais informações, consulte [Adicionando conteúdo à Comunicação Interativa](../../forms/using/create-interactive-communication.md#step2).
 
 Execute as seguintes etapas para usar o componente Campo de imagem em um modelo XDP:
 
-1. Arraste e solte a variável **Campo de imagem** componente do **Biblioteca de objetos** ao formulário.
-1. Selecione o subformulário para exibir as opções do subformulário no **Objeto** no painel direito.
-1. No **Vinculação** guia:
+1. Arraste e solte o componente **Campo de Imagem** da **Biblioteca de Objetos** no formulário.
+1. Selecione o subformulário para exibir as opções do subformulário na janela **Objeto** no painel direito.
+1. Na guia **Associação**:
 
-   1. Especifique um nome para o campo de imagem no **Nome** campo.
-   1. Selecionar **Sem associação de dados** do **Vinculação de dados** lista suspensa.
+   1. Especifique um nome para o campo de imagem no campo **Nome**.
+   1. Selecione **Nenhuma associação de dados** na lista suspensa **Associação de Dados**.
 
 ### Criar modelo XDP para fragmentos de layout {#xdplayoutfragments}
 
@@ -117,41 +117,41 @@ Use o componente Tabela no Forms Designer para criar fragmentos de layout e, em 
 
 >[!NOTE]
 >
->Insira texto nas células da tabela ou [criar vínculo com os objetos de modelo de dados de formulário](create-interactive-communication.md#step2) somente durante a criação da Comunicação interativa.
+>Insira texto nas células da tabela ou [crie associação somente com os objetos do modelo de dados de formulário](create-interactive-communication.md#step2) durante a criação da Comunicação Interativa.
 
 Execute as seguintes etapas para usar o componente Tabela no modelo XDP usando o Forms Designer:
 
-1. Arraste e solte a variável **Tabela** componente do **Biblioteca de objetos** ao formulário.
-1. No **Inserir tabela** diálogo:
+1. Arraste e solte o componente **Tabela** da **Biblioteca de Objetos** no formulário.
+1. Na caixa de diálogo **Inserir Tabela**:
 
    1. Especifique o número de linhas e colunas da tabela.
-   1. Selecione o **Incluir linha de cabeçalho na tabela** para incluir uma linha para o cabeçalho da tabela.
-   1. Selecionar **OK**.
+   1. Marque a caixa de seleção **Incluir linha de cabeçalho na tabela** para incluir uma linha para o cabeçalho da tabela.
+   1. Selecione **OK**.
 
-1. Selecionar **+** no painel esquerdo ao lado do nome da tabela, clique com o botão direito do mouse nos nomes das células incluídas no cabeçalho e em outras linhas e selecione **Renomear objeto** para renomear as células da tabela.
-1. Clique nos campos de texto do cabeçalho da tabela na **Modo Design** e renomeie-as.
-1. Arraste e solte a variável **Campo de texto** componente do **Biblioteca de objetos** para cada célula da tabela no **Modo Design**. Execute esta etapa para poder vincular células de tabela aos objetos de modelo de dados de formulário ao criar a Comunicação interativa.
+1. Selecione **+** no painel esquerdo ao lado do nome da tabela, clique com o botão direito nos nomes de células incluídos no cabeçalho e em outras linhas e selecione **Renomear Objeto** para renomear as células da tabela.
+1. Clique nos campos de texto do cabeçalho da tabela na **Exibição de Design** e renomeie-os.
+1. Arraste e solte o componente **Campo de Texto** da **Biblioteca de Objetos** em cada célula da tabela na **Exibição de Design**. Execute esta etapa para poder vincular células de tabela aos objetos de modelo de dados de formulário ao criar a Comunicação interativa.
 
    ![Campos de texto em uma tabela](assets/text_fields_table_new.png)
 
-1. Selecione o nome da linha no painel esquerdo e selecione **Objeto** > **Vinculação** > **Repetir Linha para Cada Item de Dados**. Execute esta etapa para garantir que, se uma associação for criada entre as células desta linha com objetos de modelo de dados de formulário do tipo coleção, a linha da tabela será repetida automaticamente para cada item de dados disponível no banco de dados.
+1. Selecione o nome da linha no painel esquerdo e selecione **Objeto** > **Associação** > **Repetir Linha para Cada Item de Dados**. Execute esta etapa para garantir que, se uma associação for criada entre as células desta linha com objetos de modelo de dados de formulário do tipo coleção, a linha da tabela será repetida automaticamente para cada item de dados disponível no banco de dados.
 
-   Insira texto nas células da tabela ou [criar vínculo com os objetos de modelo de dados de formulário](create-interactive-communication.md#step2) somente durante a criação da Comunicação interativa.
+   Insira texto nas células da tabela ou [crie associação somente com os objetos do modelo de dados de formulário](create-interactive-communication.md#step2) durante a criação da Comunicação Interativa.
 
-1. Selecionar **Arquivo** > **Salvar como** para salvar o arquivo no sistema de arquivos local:
+1. Selecione **Arquivo** > **Salvar como** para salvar o arquivo no sistema de arquivos local:
 
    1. Navegue até o local onde o arquivo será salvo e especifique o nome do modelo XDP.
-   1. Selecionar **.xdp** do **Salvar como tipo** lista suspensa.
+   1. Selecione **.xdp** na lista suspensa **Salvar como tipo**.
 
    1. Selecione **Salvar**.
 
 ### Fazer upload do modelo XDP para o servidor do AEM Forms {#uploadxdptemplate}
 
-Depois de criar um modelo XDP usando o Forms Designer, você deve carregá-lo no servidor do AEM Forms para que o modelo esteja disponível para uso ao criar a Comunicação interativa.
+Depois de criar um modelo XDP usando o Forms Designer, você deve carregá-lo no servidor do AEM Forms para que o modelo fique disponível para uso ao criar a Comunicação interativa.
 
-1. Selecionar **Forms** > **Forms e documentos**.
-1. Selecionar **Criar** > **Upload de arquivo**.
-1. Navegue até o local do modelo XDP no sistema de arquivos local e selecione **Abertura** para importar o modelo XDP para o servidor do AEM Forms.
+1. Selecione **Forms** > **Forms e Documentos**.
+1. Selecione **Criar** > **Carregar arquivo**.
+1. Navegue até o local do modelo XDP no sistema de arquivos local e selecione **Abrir** para importar o modelo XDP para o servidor do AEM Forms.
 
 ## Uso do schema {#using-schema}
 
@@ -166,9 +166,9 @@ Por padrão, todos os campos são considerados relacionáveis a várias outras f
 
 Um campo relacionável deve:
 
-* ser um XFA &lt;field> ou &lt;exclgroup>
+* ser um &lt;field> ou &lt;exclGroup> XFA
 * têm uma referência de vinculação XFA
-* se for um &lt;exclgroup>, ele deve ter pelo menos um campo filho de botão de opção; caso contrário, seu tipo de valor não poderá ser determinado
+* se for um &lt;exclGroup>, deverá ter pelo menos um campo de botão de opção filho; caso contrário, seu tipo de valor não poderá ser determinado
 
 Um campo relacionável deve:
 
@@ -178,7 +178,7 @@ Um campo relacionável não deve:
 
 * Incluir um sufixo &quot;_int&quot; em seu nome
 * têm a vinculação definida como &quot;nenhum&quot;
-* ser filho de um &lt;exclgroup> element
+* ser filho de um elemento &lt;exclGroup>
 
 Desde que um campo relacionável atenda aos critérios descritos acima, ele pode estar em qualquer local e em qualquer profundidade de aninhamento no layout. Você pode usar campos relacionáveis nas páginas-mestre.
 
@@ -231,4 +231,4 @@ Quando elementos como o logotipo e o endereço de sua organização aparecem em 
 
 Use o formato de renderização do servidor do layout para o Formulário XML Dinâmico; caso contrário, quaisquer letras/Comunicações interativas baseadas nesse layout não poderão ser renderizadas corretamente. Por padrão, o formato de renderização do servidor no Forms Designer é definido como Formulário XML dinâmico. Para garantir que você esteja usando o formato correto:
 
-* No Designer, clique em **Arquivo** > **Propriedades do formulário** > **Padrões** e verifique se a configuração Renderização/Formato de PDF está definida como Formulário XML Dinâmico.
+* No Designer, clique em **Arquivo** > **Propriedades do Formulário** > **Padrões** e verifique se a configuração Renderizar/Formatar PDF está definida como Formulário XML Dinâmico.

@@ -32,7 +32,7 @@ Para maximizar o ROI, as organizações devem monitorar como seus clientes inter
 
 ## A solução {#the-solution}
 
-O AEM Forms integra-se com [Adobe Marketing Cloud](https://www.adobe.com/marketing-cloud.html) soluções - [Adobe Analytics](https://www.adobe.com/marketing-cloud/web-analytics.html) e [Adobe Target](https://www.adobe.com/marketing-cloud/testing-targeting.html) - que podem ajudá-lo a monitorar e analisar o desempenho de seus formulários e permitir que você experimente e identifique a experiência que leva a um melhor índice de conversão.
+O AEM Forms integra-se com as soluções da [Adobe Marketing Cloud](https://www.adobe.com/marketing-cloud.html) - [Adobe Analytics](https://www.adobe.com/marketing-cloud/web-analytics.html) e [Adobe Target](https://www.adobe.com/marketing-cloud/testing-targeting.html) - que podem ajudá-lo a monitorar e analisar o desempenho de seus formulários e permitir que você experimente e identifique a experiência que leva a uma melhor taxa de conversão.
 
 ## O fluxo de trabalho {#the-workflow}
 
@@ -70,7 +70,7 @@ Para obter insights profundos sobre as interações do cliente com seus formulá
 
 Para obter etapas detalhadas, consulte [Configuração de análises e relatórios para formulários adaptáveis](../../forms/using/configure-analytics-forms-documents.md).
 
-**Configurar o Target**
+**Configurar Destino**
 
 Para criar e executar testes A/B para seus formulários adaptáveis, configure o Target no AEM Forms conforme descrito em [Configurar e integrar o Target no AEM Forms](../../forms/using/ab-testing-adaptive-forms.md#p-set-up-and-integrate-target-in-aem-forms-p).
 
@@ -80,37 +80,37 @@ Para criar e executar testes A/B para seus formulários adaptáveis, configure o
 
 Você pode visualizar um relatório do AEM para formulários habilitados para análise e analisar dados. Para exibir o relatório:
 
-1. No servidor AEM, navegue até **Forms > Forms e documentos**.
+1. No servidor AEM, navegue até **Forms > Forms e Documentos**.
 1. Selecione o formulário para o qual deseja criar o relatório de análise.
 1. Clique no ícone Relatórios do Analytics. O relatório é exibido.
 
 Vamos analisar os pontos de dados que o Analytics coleta e relata para formulários.
 
-**relatório de análise do Forms**
+**relatório do Forms Analytics**
 
 O relatório de análise para formulários adaptáveis captura os seguintes Indicadores principais de desempenho (KPIs) no nível do formulário:
 
-* **Tempo médio de preenchimento**: Tempo médio gasto no preenchimento do formulário
-* **Impressões**: Número de vezes que o formulário apareceu nos resultados da pesquisa
+* **Tempo médio de preenchimento**: tempo médio gasto no preenchimento do formulário
+* **Impressões**: número de vezes que o formulário apareceu nos resultados da pesquisa
 
-* **Representações**: Número de vezes que o formulário foi renderizado ou aberto
+* **Representações**: número de vezes que o formulário foi renderizado ou aberto
 * **Rascunhos**: Número de vezes que o formulário foi salvo como rascunho
 
-* **Envios**: Número de vezes que o formulário foi enviado
-* **Anular**: Número de vezes que os usuários saíram sem preencher o formulário
-* **Visitas/envios**: Taxa de visitas por envio
+* **Envios**: número de vezes que o formulário foi enviado
+* **Anular**: número de vezes que os usuários saíram sem preencher o formulário
+* **Visitas/Envios**: taxa de visitas por envio
 
 Além disso, você obtém os seguintes detalhes sobre cada painel no formulário:
 
-* **Hora**: Tempo médio gasto (segundos) no painel e seus campos
+* **Tempo**: tempo médio gasto (segundos) no painel e seus campos
 
 * **Erro**: Número de erros encontrados no painel e seus campos por 1000 representações de formulário
 
-* **Ajuda**: Número de vezes que os usuários acessaram a ajuda em contexto para o painel e seus campos por 1000 representações de formulário
+* **Ajuda**: Número de vezes que os usuários acessaram a ajuda em contexto para o painel e seus campos por mil representações de formulário
 
-![Um exemplo de relatório de análise para um formulário adaptável](assets/summary-report.png)
+![Um relatório de análise de exemplo para um formulário adaptável](assets/summary-report.png)
 
-Para obter mais detalhes sobre os relatórios do Forms Analytics, consulte [Visualização e compreensão de relatórios do AEM Forms Analytics](../../forms/using/view-understand-aem-forms-analytics-reports.md).
+Para obter mais detalhes sobre relatórios de análise de formulários, consulte [Exibir e entender relatórios do AEM Forms Analytics](../../forms/using/view-understand-aem-forms-analytics-reports.md).
 
 >[!NOTE]
 >
@@ -136,7 +136,7 @@ A integração do AEM Forms com o Target permite criar testes A/B para formulár
 
 Para obter mais informações sobre como criar um teste A/B para um formulário adaptável, consulte [Teste A/B de formulários adaptáveis](../../forms/using/ab-testing-adaptive-forms.md).
 
-![Um relatório de resumo de amostra do teste A/B para um formulário adaptável](assets/ab-test-report-4.png)
+![Um relatório de resumo de exemplo do teste A/B para um formulário adaptável](assets/ab-test-report-4.png)
 
 ## Práticas recomendadas {#best-practices}
 
@@ -144,7 +144,7 @@ As práticas recomendadas reais são aquelas que você identifica a si mesmo ao 
 
 Algumas recomendações sobre como criar formulários e executar testes A/B são as seguintes:
 
-**Design do Forms**
+**design do Forms**
 
 * Mantenha o formulário simples, curto e fácil de navegar. Use dicas direcionais para navegação.
 * Use terminologias padrão ou comuns para campos de formulário.

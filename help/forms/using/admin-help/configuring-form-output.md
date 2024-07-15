@@ -23,9 +23,9 @@ ht-degree: 0%
 1. No console de administração, clique em Serviços > Formulários.
 1. Em Saída de formulário, na lista Tipo de saída, selecione uma das seguintes opções:
 
-   **HTML completo:** Para renderizar o formulário em tags de HTML completo (uma página de HTML completa). Esse valor é o padrão.
+   **HTML completo:** para renderizar o formulário em marcas de HTML completo (uma página de HTML completa). Esse valor é o padrão.
 
-   **Corpo do formulário:** Para renderizar o formulário em `<BODY>` tags (não é uma página de HTML completa).
+   **Corpo do formulário:** Para renderizar o formulário em `<BODY>` marcas (não é uma página de HTML completa).
 
 1. Clique em Salvar.
 
@@ -37,7 +37,7 @@ ht-degree: 0%
 
    **Servidor:** Para renderizar PDF forms no servidor de aplicativos.
 
-   **Automático:** Para renderizar o formulário PDF no local especificado pelo `dynamicRender` valor de configuração do arquivo XDP. Esse valor é o padrão.
+   **Auto:** Para renderizar o formulário PDF no local especificado pelo valor de configuração `dynamicRender` do arquivo XDP. Esse valor é o padrão.
 
 1. Clique em Salvar.
 
@@ -46,11 +46,11 @@ ht-degree: 0%
 Execute as seguintes etapas para ativar o recurso:
 
 1. Faça logon no console de administração.
-1. Ir para **Serviços** > **formulários**.
+1. Vá para **Serviços** > **formulários**.
 1. Especifique o Tipo de saída como Corpo do formulário.
 1. Salve as configurações.
 1. Declare uma variável JavaScript, __CUSTOM_SCRIPTS_VERSION, na seção de cabeçalho do código HTML e defina seu valor como 1.
 
    >[!NOTE]
    >
-   >*Para desativar o recurso, você pode remover a variável JavaScript ou definir seu valor como 0.*
+   >*Para desabilitar o recurso, você pode remover a variável JavaScript ou definir seu valor como 0.*

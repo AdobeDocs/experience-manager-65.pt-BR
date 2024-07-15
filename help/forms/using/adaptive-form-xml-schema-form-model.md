@@ -15,7 +15,7 @@ ht-degree: 5%
 
 # Criação de formulários adaptáveis usando o esquema XML {#creating-adaptive-forms-using-xml-schema}
 
-<span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) para [criação de um novo Forms adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
+O <span class="preview"> Adobe recomenda o uso de [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adicionar o Forms Adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
 
 ## Pré-requisitos {#prerequisites}
 
@@ -26,7 +26,7 @@ A criação de um formulário adaptável usando um esquema XML como modelo de fo
 
 ## Usando um esquema XML como modelo de formulário {#using-an-xml-schema-as-form-model}
 
-[!DNL Experience Manager Forms] O oferece suporte à criação de um formulário adaptável usando um esquema XML existente como o modelo de formulário. Esse esquema XML representa a estrutura em que os dados são produzidos ou consumidos pelo sistema de back-end em sua organização.
+[!DNL Experience Manager Forms] dá suporte à criação de um formulário adaptável usando um esquema XML existente como modelo de formulário. Esse esquema XML representa a estrutura em que os dados são produzidos ou consumidos pelo sistema de back-end em sua organização.
 
 Os principais recursos do uso de um esquema XML são:
 
@@ -140,7 +140,7 @@ Você pode adicionar os seguintes atributos aos elementos do Esquema XML para ad
   </tr>
   <tr>
    <td><code>use=required </code></td>
-   <td>Marca um campo como obrigatório<br /> </td>
+   <td>Marca um campo obrigatório<br /> </td>
    <td>Atributo</td>
   </tr>
   <tr>
@@ -169,7 +169,7 @@ Você pode adicionar os seguintes atributos aos elementos do Esquema XML para ad
 >* Colocar o primeiro caractere do nome do elemento em maiúsculas
 >* Inserção de espaço em branco nos limites do Camel Case.
 >
->Por exemplo, se você adicionar a variável `userFirstName` elemento de esquema, a legenda gerada no formulário adaptável é `User First Name`.
+>Por exemplo, se você adicionar o elemento de esquema `userFirstName`, a legenda gerada no formulário adaptável será `User First Name`.
 
 ## Limitar valores aceitáveis para um componente de formulário adaptável {#limit-acceptable-values-for-an-adaptive-form-component}
 
@@ -289,21 +289,21 @@ Você pode adicionar as seguintes restrições aos elementos do esquema XML para
 
 **Como sei qual elemento na árvore está associado a qual elemento XML?**
 
-Quando você clica duas vezes em um elemento no Localizador de conteúdo, uma janela pop-up exibe um nome de campo e uma propriedade chamada `bindRef`. Essa propriedade mapeia o elemento de árvore para o elemento ou atributo no esquema.
+Ao clicar duas vezes em um elemento no Localizador de conteúdo, uma janela pop-up exibe um nome de campo e uma propriedade chamada `bindRef`. Essa propriedade mapeia o elemento de árvore para o elemento ou atributo no esquema.
 
 ![Um campo bindref de um elemento de esquema XML](assets/dblclick.png)
 
-A variável <code>bindRef</code> o campo mostra a associação entre um elemento de árvore e um elemento ou atributo em um esquema.
+O <code>bindRef</code> o campo mostra a associação entre um elemento de árvore e um elemento ou atributo em um esquema.
 
 >[!NOTE]
 >
->Os atributos têm um `@` símbolo em seus `bindRef`para diferenciá-los dos elementos. Por exemplo, `/config/projectDetails/@duration`.
+>Os atributos têm um símbolo `@` em seu valor `bindRef` para diferenciá-los dos elementos. Por exemplo, `/config/projectDetails/@duration`.
 
-**Por que não consigo arrastar elementos individuais de um subformulário (estrutura gerada de qualquer tipo complexo) para subformulários repetíveis (os valores minOccours ou maxOccurs são maiores que 1)?**
+**Por que não consigo arrastar elementos individuais de um subformulário (estrutura gerada de qualquer tipo complexo) para subformulários repetíveis (valores minOccours ou maxOccurs são maiores que 1)?**
 
 Em um subformulário repetível, você deve usar o subformulário Concluído. Se desejar apenas campos seletivos, use a estrutura inteira e exclua os indesejados.
 
-**Tenho uma estrutura complexa longa no Localizador de conteúdo. Como posso encontrar um elemento específico?**
+**Tenho uma estrutura complexa longa no Localizador de Conteúdo. Como posso encontrar um elemento específico?**
 
 Você tem duas opções:
 
@@ -312,4 +312,4 @@ Você tem duas opções:
 
 **O que é um bindRef?**
 
-A `bindRef` é a conexão entre um componente de formulário adaptável e um elemento ou atributo de esquema. Ele dita que `XPath` em que o valor capturado deste componente ou campo está disponível no XML de saída. A `bindRef`também é usado ao preencher previamente um valor de campo do XML preenchido previamente (preenchido previamente).
+`bindRef` é a conexão entre um componente de formulário adaptável e um elemento ou atributo de esquema. Ele determina o `XPath` onde o valor capturado deste componente ou campo está disponível no XML de saída. Um `bindRef` também é usado ao preencher previamente um valor de campo de XML preenchido (preenchido previamente).

@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Personalizar imagens usadas nas ações de roteiro {#customize-images-used-in-route-actions}
 
-Para personalizar as imagens usadas nas ações de rota, execute as etapas descritas em [Etapas genéricas de personalização](/help/forms/using/generic-steps-html-workspace-customization.md) seguido das etapas descritas neste artigo.
+Para personalizar as imagens usadas nas ações de rota, execute as etapas descritas em [Etapas genéricas de personalização](/help/forms/using/generic-steps-html-workspace-customization.md) seguidas pelas etapas descritas neste artigo.
 
 ## Imagens para ações de rota {#images-for-route-actions}
 
@@ -25,7 +25,7 @@ Para personalizar as imagens usadas nas ações de rota, execute as etapas descr
 
    `/apps/ws/css/newStyle.css`
 
-   Por exemplo: adicione um novo estilo chamado `myStyle1`conforme mostrado abaixo e faça upload do arquivo de imagem `myStyleIcon1.png` para o `/apps/ws/image`pasta %s usando um cliente WebDAV.
+   Por exemplo: adicione um novo estilo chamado `myStyle1`, como mostrado abaixo, e carregue o arquivo de imagem `myStyleIcon1.png` para a pasta `/apps/ws/image`s usando um cliente WebDAV.
 
    >[!NOTE]
    >
@@ -45,7 +45,7 @@ Para personalizar as imagens usadas nas ações de rota, execute as etapas descr
 
 ## Pop-up de ação de tarefa da Lista de Tarefas {#task-list-task-action-popup}
 
-1. Pop-up de ação Criar uma lista de tarefas, consulte [Criação do código do espaço de trabalho do AEM Forms](introduction-customizing-html-workspace.md#building-html-workspace-code). É necessário usar o pacote dev.
+1. Crie um pop-up de ação de lista de tarefas, consulte [Criação do código do espaço de trabalho do AEM Forms](introduction-customizing-html-workspace.md#building-html-workspace-code). É necessário usar o pacote dev.
 
 1. Copiar `/libs/ws/js/runtime/templates/task.html` para `/apps/ws/js/runtime/templates/task.html`.
 
@@ -79,7 +79,7 @@ Para personalizar as imagens usadas nas ações de rota, execute as etapas descr
                <%}%>
    ```
 
-1. Se o nome do estilo CSS for diferente do nome da ação de rota proveniente do servidor, modifique o seguinte código no `/apps/ws/js/runtime/templates/task.html`. Ele adiciona uma pilha de `if-else` condições do servlet para mapear o estilo com o nome da ação de rota.
+1. Se o nome do estilo CSS for diferente do nome da ação de rota proveniente do servidor, modifique o seguinte código em `/apps/ws/js/runtime/templates/task.html`. Ele adiciona uma pilha das condições do servlet `if-else` para mapear o estilo com o nome da ação de rota.
 
 ```jsp
 <%if(routeList == null){%>
@@ -139,7 +139,7 @@ To
                        <%}%>
    ```
 
-1. Se o nome do estilo CSS for diferente do nome da ação de rota proveniente do servidor, modifique o seguinte código no `/apps/ws/js/runtime/templates/taskdetails.html`. Ele adiciona uma pilha de `if-else` condições do servlet para mapear o estilo com o nome da ação de rota.
+1. Se o nome do estilo CSS for diferente do nome da ação de rota proveniente do servidor, modifique o seguinte código em `/apps/ws/js/runtime/templates/taskdetails.html`. Ele adiciona uma pilha de condições de servlet `if-else` para mapear o estilo com o nome da ação de rota.
 
    ```jsp
    <%for (var i = 0; i < availableCommands.directCommands.length; i++) {%>
@@ -167,7 +167,7 @@ To
                <%}%>
    ```
 
-1. Abertura `/apps/ws/js/registry.js` para editar e procurar o seguinte texto:
+1. Abra `/apps/ws/js/registry.js` para edição e procure o seguinte texto:
    `"text!/lc/libs/ws/js/runtime/templates/taskdetails.html"`
 
 1. Substituir o texto pelo seguinte:

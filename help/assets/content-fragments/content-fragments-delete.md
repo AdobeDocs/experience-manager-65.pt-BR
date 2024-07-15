@@ -25,7 +25,7 @@ Com relação às permissões de exclusão, os fragmentos de conteúdo devem ser
 1. **O fragmento do conteúdo como uma única entidade.**
 
    * **Caso de uso**: um usuário que precisa editar/atualizar um fragmento de conteúdo **e excluir um fragmento inteiro**.
-   * **Permissões**: A variável [Excluir](/help/sites-administering/security.md#actions) a permissão pode ser [atribuído por meio do gerenciamento de usuários e/ou grupos](/help/sites-administering/security.md#managing-permissions).
+   * **Permissões**: a permissão [Excluir](/help/sites-administering/security.md#actions) pode ser [atribuída por meio do Gerenciamento de Usuários e/ou Grupos](/help/sites-administering/security.md#managing-permissions).
 
 2. **As várias entidades secundárias que compõem um fragmento de conteúdo; por exemplo, variações, nós secundários.**
 
@@ -36,7 +36,7 @@ Com relação às permissões de exclusão, os fragmentos de conteúdo devem ser
 
 >[!NOTE]
 >
->Quando um usuário não tem nenhuma [Excluir](/help/sites-administering/security.md#actions) permissões, o editor de Fragmento de conteúdo opera no *somente leitura* modo.
+>Quando um usuário não tem permissões de [Exclusão](/help/sites-administering/security.md#actions), o editor de Fragmento de conteúdo opera no modo *somente leitura*.
 
 >[!NOTE]
 >
@@ -50,7 +50,7 @@ Por exemplo, ao manipular variações; também ao editar metadados ou gerenciar 
 
 >[!NOTE]
 >
->As permissões de exclusão, necessárias para editar/atualizar um fragmento de conteúdo, estão incluídas na permissão de exclusão [atribuído por meio do gerenciamento de usuários e/ou grupos](/help/sites-administering/security.md#managing-permissions).
+>As permissões de exclusão, necessárias para editar/atualizar um Fragmento de conteúdo, estão incluídas na permissão de exclusão [atribuída por meio do gerenciamento de usuários e/ou grupos](/help/sites-administering/security.md#managing-permissions).
 
 As permissões necessárias para editar/atualizar um fragmento precisam ser aplicadas ao nó que contém o fragmento de conteúdo ou a um nó principal apropriado (em qualquer nível no `/content/dam`). Quando atribuídas a esse nó principal, as permissões serão aplicadas a todos os nós dentro dessa ramificação.
 
@@ -82,10 +82,10 @@ Os pré-requisitos de permissões para permitir que um usuário e/ou grupo espec
 
    * `jcr:addChildNodes`, `jcr:modifyProperties` e `jcr:removeChildNodes`, `jcr:removeNode`
 
-Esses `remove` os privilégios devem ser [administrado usando Listas de controle de acesso, no CRXDE Lite](/help/sites-administering/user-group-ac-admin.md#access-right-management).
+Esses privilégios `remove` devem ser [administrados usando Listas de Controle de Acesso, no CRXDE Lite](/help/sites-administering/user-group-ac-admin.md#access-right-management).
 
-A variável `add` e `modify` os privilégios também podem ser administrados no CRXDE Lite ou usando o console Gerenciamento de usuários.
+Os privilégios `add` e `modify` também podem ser administrados no CRXDE Lite ou usando o console de Gerenciamento de Usuários.
 
-Por exemplo, a definição da variável `remove` privilégios para um grupo `content-authors-no-delete`:
+Por exemplo, a definição dos privilégios `remove` para um grupo `content-authors-no-delete`:
 
 ![cf-delete-03](assets/cf-delete-03.png)

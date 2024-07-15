@@ -29,14 +29,14 @@ ht-degree: 56%
 
 Para promover páginas, execute as seguintes etapas ao editar a página de inicialização que deseja promover:
 
-1. No **Página** no Sidekick, clique em **Promover lançamento**.
+1. Na guia **Página** do Sidekick, clique em **Promover Inicialização**.
 1. Especificar as páginas a serem promovidas:
 
-   * (Padrão) Para promover somente a página atual, selecione **Promover Alterações Na Página Para A Versão De Produção**.
+   * (Padrão) Para promover somente a página atual, selecione **Promover alterações de página para versão de produção**.
    * Para promover também as páginas secundárias da página atual, selecione **Incluir subpáginas**.
-   * Para promover todas as páginas no lançamento, selecione **Promover Lançamento Completo Para Versão De Produção**.
+   * Para promover todas as páginas no lançamento, selecione **Promover Inicialização Completa para Versão de Produção**.
 
-1. Para adicionar as páginas de produção a um pacote de workflow, selecione **Adicionar ao pacote de fluxo de trabalho** e, em seguida, selecione o pacote de workflow.
+1. Para adicionar as páginas de produção a um pacote de fluxo de trabalho, selecione **Adicionar ao Pacote de Fluxo de Trabalho** e, em seguida, selecione o pacote de fluxo de trabalho.
 1. Clique em **Promover**.
 
 ## Processamento de Páginas promovidas usando o fluxo de trabalho do AEM {#processing-promoted-pages-using-aem-workflow}
@@ -47,7 +47,7 @@ Use modelos de fluxo de trabalho para executar o processamento em massa das pág
 1. Quando autores(as) promovem as páginas de lançamento, elas são armazenadas no pacote de fluxo de trabalho.
 1. Inicie um modelo de fluxo de trabalho usando o pacote como o conteúdo.
 
-Para iniciar um fluxo de trabalho automaticamente quando as páginas forem promovidas, [configurar um inicializador de fluxo de trabalho](/help/sites-administering/workflows-starting.md#workflows-launchers) para o nó do pacote.
+Para iniciar um fluxo de trabalho automaticamente quando as páginas forem promovidas, [configure um iniciador de fluxo de trabalho](/help/sites-administering/workflows-starting.md#workflows-launchers) para o nó do pacote.
 
 Por exemplo, você pode gerar solicitações de ativação de página automaticamente quando autores(as) promoverem páginas de lançamento. Configure um iniciador de fluxo de trabalho para iniciar o fluxo de trabalho Solicitar ativação quando o nó do pacote for modificado.
 

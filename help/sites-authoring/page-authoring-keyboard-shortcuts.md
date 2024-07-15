@@ -28,7 +28,7 @@ Vários atalhos de teclado estão disponíveis em todo o AEM. Alguns são aplic�
 
 | Local | Atalho | Descrição |
 |---|---|---|
-| Qualquer modo de Editar janela | `Ctrl-Shift-m` | Alternar entre **Visualizar** e os selecionados no momento [modo](/help/sites-authoring/author-environment-tools.md#page-modes)</a> (por exemplo, **Editar**, **Layout** e assim por diante) |
+| Qualquer modo de Editar janela | `Ctrl-Shift-m` | Alternar entre a **Visualização** e o [modo](/help/sites-authoring/author-environment-tools.md#page-modes)</a> selecionado no momento (por exemplo, **Editar**, **Layout** e assim por diante) |
 | Modo de **Edição** | `Ctrl-z` | [Desfazer a última alteração](/help/sites-authoring/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-y` | [Refazer a última alteração](/help/sites-authoring/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-Click` | Selecionar parágrafos múltiplos |
@@ -42,7 +42,7 @@ Vários atalhos de teclado estão disponíveis em todo o AEM. Alguns são aplic�
 
 >[!NOTE]
 >
->&amp;ast; Uma vez que o usuário começa a interagir com a página no Modo de visualização, a variável `Ctrl-Shift-m` o atalho não está mais disponível. O usuário deve clicar na barra superior do editor ou voltar para o modo Editar para que o atalho fique disponível novamente.
+>&amp;ast; Assim que o usuário começa a interagir com a página no Modo de visualização, o atalho `Ctrl-Shift-m` não fica mais disponível. O usuário deve clicar na barra superior do editor ou voltar para o modo Editar para que o atalho fique disponível novamente.
 
 Vários atalhos de teclado também estão disponíveis para os usuários de desktop ao usar os [consoles](/help/sites-authoring/keyboard-shortcuts.md).
 

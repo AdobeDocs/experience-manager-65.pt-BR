@@ -60,12 +60,12 @@ Veja a seguir uma extensa lista de propriedades de metadados compatíveis com o 
   <tr> 
    <td>Título</td> 
    <td>Todos, exceto o recurso</td> 
-   <td>Nome de exibição do formulário.<br /> </td> 
+   <td>Nome para exibição do formulário.<br /> </td> 
   </tr> 
   <tr> 
    <td>Descrição</td> 
    <td>Todos, exceto o recurso</td> 
-   <td>Descrição do formulário. O usuário pode especificar esse valor.<br /> </td> 
+   <td>Descrição do formulário. O usuário pode especificar este valor.<br /> </td> 
   </tr> 
   <tr> 
    <td>Tipo</td> 
@@ -157,8 +157,8 @@ Veja a seguir uma extensa lista de propriedades de metadados compatíveis com o 
    <td><p>Formulários adaptáveis</p> <p>Modelo de formulário</p> <p>Recurso</p> </td> 
    <td><p>Lista de ativos (outros formulários ou recursos) aos quais este formulário está relacionado. Esses ativos podem estar nas duas categorias a seguir:</p> 
     <ul> 
-     <li>Refere-se: ativos aos quais o formulário atual se refere.</li> 
-     <li>Referenciado por: Ativos que se referem ao ativo atual.</li> 
+     <li>Refere-se: Assets ao qual o formulário atual se refere.</li> 
+     <li>Referenciado por: Assets que se refere ao ativo atual.</li> 
     </ul> <p>Esses ativos são exibidos como links e seus metadados podem ser acessados diretamente clicando neles.<br /> </p> </td> 
   </tr> 
   <tr> 
@@ -179,27 +179,27 @@ Veja a seguir uma extensa lista de propriedades de metadados compatíveis com o 
 
 ## Exibir metadados de formulário {#view-form-metadata}
 
-Os ativos têm valores de propriedade existentes, que podem ser exibidos no modo somente leitura. Esses metadados são originados no momento do upload ou da criação do formulário.
+O Assets tem valores de propriedade existentes, que podem ser exibidos no modo somente leitura. Esses metadados são originados no momento do upload ou da criação do formulário.
 
 1. Navegue até o local do ativo para o qual deseja exibir metadados.
 
 1. Abra a página de propriedades usando uma das seguintes maneiras:
 
-   1. Clique em Propriedades da exibição ![e_reviewmode_properties_n](assets/e_reviewmode_properties_n.png) ícone de Ações rápidas.
+   1. Clique no ícone Propriedades de exibição ![e_reviewmode_properties_n](assets/e_reviewmode_properties_n.png) em Ações rápidas.
 
       >[!NOTE]
       >
       >As Ações rápidas são itens de ação exibidos ao passar o mouse sobre uma miniatura.
 
-   1. Selecione o formulário e clique em Propriedades da exibição ![e_reviewmode_properties_n](assets/e_reviewmode_properties_n.png) ícone que aparece na barra de ferramentas.
-   1. Navegue até a página de detalhes do formulário clicando na miniatura do formulário quando não estiver no modo de seleção. Agora, clique no link ![aem6forms_eye_view_win](assets/aem6forms_eye_viewon.png) ícone de olho no canto superior direito e, em seguida, clique em Propriedades na lista abaixo.
+   1. Selecione o formulário e clique no ícone Propriedades da Exibição ![e_reviewmode_properties_n](assets/e_reviewmode_properties_n.png) que aparece na barra de ferramentas.
+   1. Navegue até a página de detalhes do formulário clicando na miniatura do formulário quando não estiver no modo de seleção. Agora, clique no ícone do olho ![aem6forms_eye_view](assets/aem6forms_eye_viewon.png) no canto superior direito e clique em Propriedades na lista abaixo.
 
 1. A página de propriedades que é aberta exibe um esquema que contém apenas as propriedades de metadados que têm algum valor.
 
    A página de propriedades tem uma barra de ferramentas contendo dois ícones de ação:
 
-   * Editar: ![aem6forms_edit](assets/aem6forms_edit.png) Editar os valores da propriedade de metadados
-   * Exibir: ![aem6forms_eye_view_win](assets/aem6forms_eye_viewon.png) Navegue até a página de detalhes do formulário, que abre o formulário no modo de visualização.
+   * Editar: ![aem6forms_edit](assets/aem6forms_edit.png) Edite os valores da propriedade de metadados
+   * Exibição: ![aem6forms_eye_view](assets/aem6forms_eye_viewon.png) Navegue até a página de detalhes do formulário, que abre o formulário no modo de visualização.
 
    A parte de conteúdo é dividida em duas partes:
 
@@ -225,7 +225,7 @@ Os ativos têm valores de propriedade existentes, que podem ser exibidos no modo
    Esta página tem uma barra de ferramentas contendo dois ícones de ação diferentes daqueles no modo de exibição:
 
    * Cancelar: ![aem6forms_close](assets/aem6forms_close.svg_w24.png) Cancelar todas as alterações feitas nos valores de propriedade de metadados até o momento
-   * Concluído: ![aem6forms_check](assets/aem6forms_check.png) Salvar todas as alterações feitas nos valores de propriedade de metadados até o momento
+   * Concluído: ![aem6forms_check](assets/aem6forms_check.png) Salve todas as alterações feitas até agora nos valores de propriedade de metadados
 
    Ambas as ações direcionam o usuário de volta ao modo somente leitura da página de propriedades que contém os valores atualizados.
 
@@ -233,9 +233,9 @@ Os ativos têm valores de propriedade existentes, que podem ser exibidos no modo
 
 O painel esquerdo na página de propriedades exibe a miniatura do formulário. Por padrão, a miniatura exibida é a gerada no momento da criação do formulário (formulário adaptável) ou no momento do upload do formulário.
 
-Para todos os tipos de formulário, você tem a opção de carregar uma imagem clicando em **[!UICONTROL Fazer upload de imagem]** e procure um arquivo de imagem no diretório local. A imagem selecionada é usada como uma miniatura em vez da padrão.
+Para todos os tipos de formulário, você tem a opção de carregar uma imagem clicando em **[!UICONTROL Carregar Imagem]** e procurando um arquivo de imagem no diretório local. A imagem selecionada é usada como uma miniatura em vez da padrão.
 
-Para formulários adaptáveis, é fornecida uma funcionalidade adicional, que permite que o usuário gere uma miniatura como um instantâneo da visualização atual do formulário adaptável. Como o AEM Forms também oferece suporte à criação de formulários adaptáveis, a visualização do formulário adaptável pode mudar sempre que você alterar o formulário adaptável. Essa funcionalidade de gerar uma miniatura ajuda a obter uma nova miniatura para o formulário adaptável com base no status de visualização atual. Clique em **[!UICONTROL Gerar visualização]** para executar esta ação.
+Para formulários adaptáveis, é fornecida uma funcionalidade adicional, que permite que o usuário gere uma miniatura como um instantâneo da visualização atual do formulário adaptável. Como o AEM Forms também oferece suporte à criação de formulários adaptáveis, a visualização do formulário adaptável pode mudar sempre que você alterar o formulário adaptável. Essa funcionalidade de gerar uma miniatura ajuda a obter uma nova miniatura para o formulário adaptável com base no status de visualização atual. Clique em **[!UICONTROL Gerar visualização]** para realizar esta ação.
 
 >[!NOTE]
 >
@@ -247,15 +247,15 @@ Para formulários adaptáveis, é fornecida uma funcionalidade adicional, que pe
 
 Além dos metadados fornecidos prontos para uso, o AEM Forms é compatível com novos metadados personalizados.
 
-Uma ferramenta (Editor de esquema de metadados) é fornecida para definir o esquema para o layout de metadados; ou seja, o layout do que aparece no **[!UICONTROL Propriedades]** página de um formulário. O Editor de esquema de metadados permite adicionar ou modificar um esquema personalizado para seus ativos.
+Uma ferramenta (Editor de Esquema de Metadados) é fornecida para definir o esquema para o layout de metadados; ou seja, o layout do que aparece na página **[!UICONTROL Propriedades]** de um formulário. O Editor de esquema de metadados permite adicionar ou modificar um esquema personalizado para seus ativos.
 
 O AEM Forms expõe os esquemas de metadados dos tipos de formulários compatíveis nesta ferramenta. Dessa forma, você pode acessar esses esquemas e usar a funcionalidade fornecida no editor de esquema de metadados para adicionar propriedades personalizadas.
 
 ### Navegar pelo editor de esquema de metadados {#navigate-the-metadata-schema-editor}
 
-1. Navegue até **[!UICONTROL Ferramentas > Ativos > Esquemas de metadados]**.
+1. Navegue até **[!UICONTROL Ferramentas > Assets > Esquemas de metadados]**.
 
-1. Clique em **[!UICONTROL formulários]** dos formulários de esquema listados.
+1. Clique em **[!UICONTROL formulários]** nos formulários de esquema listados.
 
 1. Na lista aberta, clique no tipo de ativo ao qual deseja adicionar metadados personalizados.
 
@@ -263,9 +263,9 @@ O AEM Forms expõe os esquemas de metadados dos tipos de formulários compatíve
    >
    >Esses esquemas contêm propriedades de metadados que são fornecidas prontas para uso e não devem ser alteradas/editadas (marque a caixa de seleção e clique em editar na barra de ferramentas) para evitar problemas funcionais.
 
-1. Qualquer tipo de ativo clicado abre uma lista contendo o `extendedmetadata` opção. Editar este esquema.
+1. Qualquer tipo de ativo clicado abre uma lista contendo a opção `extendedmetadata`. Editar este esquema.
 
-1. Marque a caixa de seleção ao lado de `extendedmetadata` e, em seguida, clique no botão editar ![aem6forms_edit](assets/aem6forms_edit.png) ícone que aparece na barra de ferramentas.
+1. Marque a caixa de seleção ao lado de `extendedmetadata` e clique no ícone editar ![aem6forms_edit](assets/aem6forms_edit.png) que aparece na barra de ferramentas.
 
 1. O AEM Forms abre o editor de esquema de metadados/construtor de formulários do tipo de ativo selecionado (nesse caso, formulário adaptável).
 
@@ -279,14 +279,14 @@ O AEM Forms expõe os esquemas de metadados dos tipos de formulários compatíve
 
    1. Você pode adicionar guias adicionais clicando no símbolo +.
 
-   1. Você pode adicionar um campo personalizado do tipo desejado arrastando o componente de campo da **[!UICONTROL Formulário de criação]** na página do esquema.
-   1. As especificações desse campo podem ser fornecidas no **[!UICONTROL Configurações]** depois de clicar no campo.
+   1. Você pode adicionar um campo personalizado do tipo desejado arrastando o componente de campo da seção **[!UICONTROL Criar formulário]** para a página de esquema.
+   1. As especificações desse campo podem ser fornecidas na seção **[!UICONTROL Configurações]** depois de clicar no campo.
 
 ### Adicionar propriedade de metadados personalizada no editor de esquema {#add-custom-metadata-property-in-schema-editor}
 
 1. Navegue até a guia (existente ou nova) onde deseja adicionar a propriedade personalizada.
 
-1. Arraste um componente do tipo desejado da **[!UICONTROL Formulário de criação]** seção para o painel esquerdo e coloque-o em um local conveniente.
+1. Arraste um componente do tipo desejado da seção **[!UICONTROL Criar Formulário]** para o painel esquerdo e coloque-o em um local conveniente.
 
    >[!NOTE]
    >
@@ -295,7 +295,7 @@ O AEM Forms expõe os esquemas de metadados dos tipos de formulários compatíve
 1. Clique em um componente que você acabou de arrastar. Na guia Configurações que é aberta no painel direito, preencha as informações dos seguintes campos:
 
    1. Especifique um Rótulo de campo que seja usado como um nome de exibição acima do campo colocado no esquema (Por exemplo: Departamento)
-   1. No campo Mapear para propriedade, é possível ver um valor pré-preenchido **&#39;./jcr:content/metadata/default&#39;**. Altere o ‘**padrão**&quot; para um nome de propriedade desejado, que é usado para armazenar a propriedade no repositório crx (Por exemplo: &#39;./jcr:content/metadata/department&#39;)
+   1. Em Mapear para campo de propriedade, você pode ver um valor pré-preenchido **&#39;./jcr:content/metadata/default&#39;**. Altere ‘**default**’ para um nome de propriedade desejado, que é usado para armazenar a propriedade no repositório crx (Por exemplo: &#39;./jcr:content/metadata/department&#39;)
 
       >[!NOTE]
       >
@@ -304,7 +304,7 @@ O AEM Forms expõe os esquemas de metadados dos tipos de formulários compatíve
       >Além disso, o nome da propriedade deve ser exclusivo para evitar a gravação de valores para duas ou mais propriedades no mesmo local no repositório. Portanto, é recomendável alterar o valor &quot;padrão&quot;.
 
    1. Preencha outras configurações com base no requisito. Por exemplo: selecione a opção Obrigatório se desejar tornar o campo obrigatório.
-   1. Para excluir um campo adicionado, selecione-o e clique no link excluir ![delete-1](assets/delete-1.png) ícone.
+   1. Para excluir um campo adicionado, selecione-o e clique no ícone excluir ![excluir-1](assets/delete-1.png).
 
 1. Se necessário, siga as etapas 1 a 3 para adicionar outra propriedade.
 1. Clique em **Concluído** depois de fazer todas as alterações.

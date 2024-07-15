@@ -15,7 +15,7 @@ ht-degree: 4%
 
 # Criação de formulários adaptáveis usando o esquema JSON {#creating-adaptive-forms-using-json-schema}
 
-<span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) para [criação de um novo Forms adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
+O <span class="preview"> Adobe recomenda o uso de [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adicionar o Forms Adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
@@ -32,7 +32,7 @@ A criação de um formulário adaptável usando um Esquema JSON como seu modelo 
 
 ## Utilização de um esquema JSON como modelo de formulário  {#using-a-json-schema-as-form-model}
 
-[!DNL Adobe Experience Manager Forms] O oferece suporte à criação de um formulário adaptável usando um Esquema JSON existente como o modelo de formulário. Esse esquema JSON representa a estrutura em que os dados são produzidos ou consumidos pelo sistema de back-end em sua organização. O esquema JSON usado deve ser compatível com [Especificações da v4](https://json-schema.org/draft-04/schema).
+[!DNL Adobe Experience Manager Forms] dá suporte à criação de um formulário adaptável usando um Esquema JSON existente como o modelo de formulário. Esse esquema JSON representa a estrutura em que os dados são produzidos ou consumidos pelo sistema de back-end em sua organização. O Esquema JSON usado deve ser compatível com [especificações v4](https://json-schema.org/draft-04/schema).
 
 Os principais recursos do uso de um Esquema JSON são:
 
@@ -90,19 +90,19 @@ Esse mapeamento de elementos JSON com componentes de formulário adaptáveis é 
    <td><br /> <br /> Campo de texto<br /> <br /> <br /> </td>
   </tr>
   <tr>
-   <td>propriedade number<br /> </td>
+   <td>propriedade numérica<br /> </td>
    <td>Campo numérico com subtipo definido como flutuante<br /> </td>
   </tr>
   <tr>
-   <td>propriedade integer<br /> </td>
-   <td>Campo numérico com subtipo definido como número inteiro<br /> </td>
+   <td>propriedade inteira<br /> </td>
+   <td>Campo Numérico com subtipo definido como inteiro<br /> </td>
   </tr>
   <tr>
    <td>propriedade booleana<br /> </td>
    <td>Alternar<br /> </td>
   </tr>
   <tr>
-   <td>propriedade do objeto<br /> </td>
+   <td>propriedade de objeto <br /> </td>
    <td>Painel<br /> </td>
   </tr>
   <tr>
@@ -116,17 +116,17 @@ Esse mapeamento de elementos JSON com componentes de formulário adaptáveis é 
 
 O Formulário adaptável usa as informações disponíveis no Esquema JSON para mapear cada campo gerado. Em especial:
 
-* A variável `title` A propriedade serve como rótulo para os componentes de formulário adaptável.
-* A variável `description` é definida como descrição longa para um componente de formulário adaptável.
-* A variável `default` A propriedade serve como valor inicial de um campo de formulário adaptável.
-* A variável `maxLength` é definida como `maxlength` atributo do componente de campo de texto.
-* A variável `minimum`, `maximum`, `exclusiveMinimum`, e `exclusiveMaximum` As propriedades são usadas para o componente Caixa numérica.
-* Para oferecer suporte ao intervalo de `DatePicker component` propriedades adicionais do Esquema JSON `minDate` e `maxDate` são fornecidos.
-* A variável `minItems` e `maxItems` as propriedades são usadas para restringir o número de itens/campos que podem ser adicionados ou removidos de um componente do painel.
-* A variável `readOnly` propriedade define a variável `readonly` atributo de um componente de formulário adaptável.
-* A variável `required` marca o campo de formulário adaptável como obrigatório, enquanto no painel (em que o tipo é objeto), os dados JSON enviados finais têm campos com valor vazio que correspondem a esse objeto.
-* A variável `pattern` é definida como o padrão de validação (expressão regular) no formulário adaptável.
-* A extensão do arquivo de Esquema JSON deve ser mantida em .schema.json. Por exemplo, &lt;filename>.schema.json.
+* A propriedade `title` serve como rótulo para os componentes de formulário adaptáveis.
+* A propriedade `description` é definida como descrição longa para um componente de formulário adaptável.
+* A propriedade `default` serve como valor inicial de um campo de formulário adaptável.
+* A propriedade `maxLength` está definida como atributo `maxlength` do componente de campo de texto.
+* As propriedades `minimum`, `maximum`, `exclusiveMinimum` e `exclusiveMaximum` são usadas para o componente de Caixa Numérica.
+* Para dar suporte ao intervalo de `DatePicker component`, são fornecidas as propriedades adicionais do Esquema JSON `minDate` e `maxDate`.
+* As propriedades `minItems` e `maxItems` são usadas para restringir o número de itens/campos que podem ser adicionados ou removidos de um componente do painel.
+* A propriedade `readOnly` define o atributo `readonly` de um componente de formulário adaptável.
+* A propriedade `required` marca o campo de formulário adaptável como obrigatório, enquanto no painel (em que o tipo é objeto), os dados JSON enviados finais têm campos com valor vazio que correspondem a esse objeto.
+* A propriedade `pattern` é definida como o padrão de validação (expressão regular) no formato adaptável.
+* A extensão do arquivo de Esquema JSON deve ser mantida em .schema.json. Por exemplo, &lt;nome do arquivo>.schema.json.
 
 ## Exemplo de esquema JSON {#sample-json-schema}
 
@@ -343,7 +343,7 @@ O exemplo acima define um registro de cliente, em que cada cliente tem um endere
 
 ## Pré-configuração de campos na definição do esquema JSON {#pre-configuring-fields-in-json-schema-definition}
 
-Você pode usar o **aem:afProperties** propriedade para pré-configurar o campo Esquema JSON para mapear para um componente de formulário adaptável personalizado. Um exemplo está listado abaixo:
+Você pode usar a propriedade **aem:afProperties** para pré-configurar o campo de Esquema JSON para mapear para um componente de formulário adaptável personalizado. Um exemplo está listado abaixo:
 
 ```json
 {
@@ -365,7 +365,7 @@ Você pode usar o **aem:afProperties** propriedade para pré-configurar o campo 
 
 ## Configurar scripts ou expressões para objetos de formulário  {#configure-scripts-or-expressions-for-form-objects}
 
-JavaScript é a linguagem de expressão de formulários adaptáveis. Todas as expressões são expressões JavaScript válidas e usam APIs de modelo de script de formulários adaptáveis. Você pode pré-configurar objetos de formulário para [avaliar uma expressão](adaptive-form-expressions.md) em um evento de formulário.
+O JavaScript é o idioma de expressão dos formulários adaptáveis. Todas as expressões são expressões JavaScript válidas e usam APIs de modelo de script de formulários adaptáveis. Você pode pré-configurar objetos de formulário para [avaliar uma expressão](adaptive-form-expressions.md) em um evento de formulário.
 
 Use a propriedade aem:afproperties para pré-configurar expressões de formulário adaptáveis ou scripts para componentes de formulário adaptáveis. Por exemplo, quando o evento de inicialização é acionado, o código abaixo define o valor do campo de telefone e imprime um valor no log:
 
@@ -385,7 +385,7 @@ Use a propriedade aem:afproperties para pré-configurar expressões de formulár
 }
 ```
 
-Você deve ser um membro do [grupo forms-power-user](forms-groups-privileges-tasks.md) para configurar scripts ou expressões para objeto de formulário. A tabela abaixo lista todos os eventos de script compatíveis com um componente de formulário adaptável.
+Você deve ser membro do [grupo de formulários-usuário](forms-groups-privileges-tasks.md) para configurar scripts ou expressões para o objeto de formulário. A tabela abaixo lista todos os eventos de script compatíveis com um componente de formulário adaptável.
 
 <table>
  <tbody>
@@ -590,7 +590,7 @@ Você deve ser um membro do [grupo forms-power-user](forms-groups-privileges-tas
  </tbody>
 </table>
 
-Alguns exemplos de uso de eventos em um JSON estão ocultando um campo em inicializar evento e configurando o valor de outro campo em evento de confirmação de valor. Para obter informações detalhadas sobre a criação de expressões para os eventos de script, consulte [Expressões de formulário adaptável](adaptive-form-expressions.md).
+Alguns exemplos de uso de eventos em um JSON estão ocultando um campo em inicializar evento e configurando o valor de outro campo em evento de confirmação de valor. Para obter informações detalhadas sobre como criar expressões para eventos de script, consulte [Expressões de Formulário Adaptável](adaptive-form-expressions.md).
 
 Este é o exemplo de código JSON para exemplos mencionados anteriormente.
 
@@ -735,13 +735,13 @@ Você pode adicionar as seguintes restrições aos elementos do Esquema JSON par
 
 Para permitir que todo o Forms adaptável baseado em esquema JSON gere dados compatíveis com o esquema no envio do formulário, siga estas etapas:
 
-1. Acesse o console da Web do Experience Manager em `https://server:host/system/console/configMgr`.
-1. Localizar **[!UICONTROL Configuração do canal da Web de comunicação adaptável e interativa]**.
+1. Vá para o Experience Manager web console em `https://server:host/system/console/configMgr`.
+1. Localize **[!UICONTROL Configuração de Canal da Web de Comunicação entre Interações e Formulários Adaptáveis]**.
 1. Selecione para abrir a configuração no modo de edição.
-1. Selecione o **[!UICONTROL Gerar dados compatíveis com o esquema]** caixa de seleção
+1. Marque a caixa de seleção **[!UICONTROL Gerar dados compatíveis com o esquema]**.
 1. Salve as configurações.
 
-![configuração do canal web de formulário adaptável e comunicação interativa](/help/forms/using/assets/af-ic-web-channel-configuration.png)
+![configuração do canal da Web de formulário adaptável e comunicação interativa](/help/forms/using/assets/af-ic-web-channel-configuration.png)
 
 ## Construções não suportadas  {#non-supported-constructs}
 
@@ -754,11 +754,11 @@ Os formulários adaptáveis não são compatíveis com as seguintes construçõe
 
 ## Perguntas frequentes {#frequently-asked-questions}
 
-**Por que não consigo arrastar elementos individuais de um subformulário (estrutura gerada de qualquer tipo complexo) para subformulários repetíveis (os valores minOccours ou maxOccurs são maiores que 1)?**
+**Por que não consigo arrastar elementos individuais de um subformulário (estrutura gerada de qualquer tipo complexo) para subformulários repetíveis (valores minOccours ou maxOccurs são maiores que 1)?**
 
 Em um subformulário repetível, você deve usar o subformulário completo. Se desejar apenas campos seletivos, use a estrutura inteira e exclua os indesejados.
 
-**Tenho uma estrutura complexa longa no Localizador de conteúdo. Como posso encontrar um elemento específico?**
+**Tenho uma estrutura complexa longa no Localizador de Conteúdo. Como posso encontrar um elemento específico?**
 
 Você tem duas opções:
 
@@ -767,4 +767,4 @@ Você tem duas opções:
 
 **Qual deve ser a extensão do arquivo de esquema JSON?**
 
-A extensão do arquivo de esquema JSON deve ser .schema.json. Por exemplo, &lt;filename>.schema.json.
+A extensão do arquivo de esquema JSON deve ser .schema.json. Por exemplo, &lt;nome do arquivo>.schema.json.

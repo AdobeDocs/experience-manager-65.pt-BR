@@ -1,5 +1,5 @@
 ---
-title: Início rápido da API Java do serviço de integração de dados de formulário (SOAP)
+title: Início rápido da API JavaAPI do serviço de integração de dados de formulário (SOAP)
 description: Use o serviço de Integração de dados de formulário para importar dados em um formulário PDF e exportar dados de um formulário PDF usando a API do Java.
 contentOwner: admin
 content-type: reference
@@ -32,7 +32,7 @@ As operações do AEM Forms podem ser executadas usando a API altamente tipada d
 
 ## Início rápido (modo SOAP): importação de dados de formulário usando a API Java {#quick-start-soap-mode-importing-form-data-using-the-java-api}
 
-O exemplo de código Java a seguir importa dados para um formulário PDF. Os dados estão em um arquivo XML chamado *Loan_data.xml* e o formulário PDF é salvo como um arquivo PDF chamado *ResultLoanForm.pdf*. (Consulte [Importação de dados do formulário](/help/forms/developing/importing-exporting-data.md#importing-form-data).)
+O exemplo de código Java a seguir importa dados para um formulário PDF. Os dados estão em um arquivo XML chamado *Loan_data.xml* e o formulário PDF é salvo como um arquivo PDF chamado *ResultLoanForm.pdf*. (Consulte [Importar Dados de Formulário](/help/forms/developing/importing-exporting-data.md#importing-form-data).)
 
 ```java
  /*
@@ -134,7 +134,7 @@ O exemplo de código Java a seguir importa dados para um formulário PDF. Os dad
 
 ## Início rápido (modo SOAP): exportação de dados de formulário usando a API Java {#quick-start-soap-mode-exporting-form-data-using-the-java-api}
 
-O exemplo de código Java a seguir exporta dados de um formulário PDF. Os dados do formulário são salvos como um arquivo XML chamado *Loan_data.xml*. (Consulte [Exportar dados do formulário](/help/forms/developing/importing-exporting-data.md#exporting-form-data).)
+O exemplo de código Java a seguir exporta dados de um formulário PDF. Os dados do formulário são salvos como um arquivo XML chamado *Loan_data.xml*. (Consulte [Exportar Dados De Formulário](/help/forms/developing/importing-exporting-data.md#exporting-form-data).)
 
 ```java
  /*

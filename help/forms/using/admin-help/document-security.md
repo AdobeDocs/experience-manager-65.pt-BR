@@ -24,7 +24,7 @@ A segurança de documentos garante que somente usuários autorizados possam usar
 * Arquivos do Adobe PDF
 * Arquivos do Microsoft® Word, Excel e PowerPoint
 
-Para obter mais informações sobre como as políticas protegem os tipos de arquivos compatíveis, consulte [mais informações de segurança de documentos](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-security/document-security-offerings.html?lang=en).
+Para obter mais informações sobre como as políticas protegem os tipos de arquivos aceitos, consulte [mais informações de segurança de documentos](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-security/document-security-offerings.html?lang=en).
 
 Usando a segurança de documentos, você pode criar, armazenar e aplicar facilmente configurações de confidencialidade predefinidas a seus documentos. Para evitar que as informações se espalhem além do seu alcance, você também pode monitorar e controlar como os recipients usam seus documentos depois de distribuí-los.
 
@@ -32,7 +32,7 @@ Você pode proteger documentos usando políticas. Uma *política* é uma coleç�
 
 Os usuários da segurança de documentos criam políticas por meio das páginas da Web do usuário final. Os administradores usam as páginas da Web de segurança de documentos para criar conjuntos de políticas que contenham políticas compartilhadas disponíveis para todos os usuários autorizados.
 
-Embora as políticas sejam armazenadas na segurança de documentos, elas podem ser aplicadas a documentos por meio do aplicativo cliente. Como aplicar políticas a documentos do PDF é descrito detalhadamente em *Ajuda do Acrobat*. A aplicação de políticas usando outros aplicativos, como o Microsoft® Office, está documentada na *Ajuda das extensões do Acrobat Reader DC* para o aplicativo.
+Embora as políticas sejam armazenadas na segurança de documentos, elas podem ser aplicadas a documentos por meio do aplicativo cliente. Como aplicar políticas a documentos do PDF está descrito detalhadamente na *Ajuda do Acrobat*. A aplicação de políticas usando outros aplicativos, como o Microsoft® Office, está documentada na *Ajuda das extensões do Acrobat Reader DC* do aplicativo.
 
 Quando você aplica uma política a um documento, as configurações de confidencialidade especificadas na política protegem as informações contidas no documento. As configurações de confidencialidade também protegem todos os arquivos (texto, áudio ou vídeo) de um documento PDF. Você pode distribuir o documento protegido por política para recipients autorizados pela política.
 
@@ -46,9 +46,9 @@ Por meio da segurança de documentos, é possível monitorar documentos protegid
 
 A segurança de documentos consiste em um servidor e uma interface de usuário:
 
-**Servidor:** O componente central por meio do qual a segurança de documentos realiza transações, como autenticação de usuários, gerenciamento de políticas em tempo real e aplicação de confidencialidade. O servidor também fornece um repositório central para políticas, registros de auditoria e outras informações relacionadas.
+**Servidor:** O componente central através do qual a segurança de documentos executa transações, como autenticação de usuário, gerenciamento de políticas em tempo real e aplicação de confidencialidade. O servidor também fornece um repositório central para políticas, registros de auditoria e outras informações relacionadas.
 
-**Páginas da Web:** A interface em que você cria políticas, gerencia documentos protegidos por política e monitora eventos associados a documentos protegidos por política. Os administradores também podem configurar opções globais, como autenticação de usuário, auditoria e mensagens para usuários convidados, e gerenciar contas de usuários convidados.
+**Páginas da Web:** a interface em que você cria políticas, gerencia seus documentos protegidos por política e monitora eventos associados a documentos protegidos por política. Os administradores também podem configurar opções globais, como autenticação de usuário, auditoria e mensagens para usuários convidados, e gerenciar contas de usuários convidados.
 
 ![rm_psworkflow](assets/rm_psworkflow.png)
 
@@ -120,7 +120,7 @@ Vários tipos de usuários trabalham com segurança de documentos para realizar 
   >
   >Os usuários com essa função também devem ter a função Usuário do console de administração para poderem fazer logon no console de administração e editar quaisquer configurações relacionadas.
 
-  **Usuário de convite de segurança de documentos**
+  **Usuário do convite de segurança de documentos**
 
   Os usuários com essa função podem convidar usuários. Estas permissões estão associadas à função:
 
@@ -147,7 +147,7 @@ Os administradores de segurança de documentos podem criar funções personaliza
 
 ## Políticas e documentos protegidos por política {#policies-and-policy-protected-documents}
 
-A *política* define um conjunto de configurações de confidencialidade e usuários que podem acessar um documento ao qual a política é aplicada. Uma política também permite que as permissões em um documento sejam alteradas dinamicamente. Ele dá à pessoa que protege o documento permissão para alterar as configurações de confidencialidade para revogar o acesso ao documento ou para alternar a política.
+Uma *política* define um conjunto de configurações de confidencialidade e usuários que podem acessar um documento ao qual a política é aplicada. Uma política também permite que as permissões em um documento sejam alteradas dinamicamente. Ele dá à pessoa que protege o documento permissão para alterar as configurações de confidencialidade para revogar o acesso ao documento ou para alternar a política.
 
 A proteção por política pode ser aplicada a um documento PDF usando Adobe Acrobat® Pro e Acrobat Standard. A proteção por política pode ser aplicada a outros tipos de arquivos, como arquivos do Microsoft® Word, Excel e PowerPoint, usando o aplicativo cliente com as extensões adequadas do Acrobat Reader DC instaladas.
 
@@ -201,15 +201,15 @@ Você pode continuar a usar um documento sob estas condições:
 
 Você também pode usar documentos protegidos por política offline (sem uma conexão com a Internet ou com uma rede) se a política permitir acesso offline. Primeiro logon na segurança de documentos para sincronizar o documento. Você pode usar o documento durante o período de concessão offline especificado na política.
 
-Quando o período de concessão offline terminar, sincronize o documento com a segurança de documentos novamente, entrando online e abrindo um documento protegido por política ou usando um comando no aplicativo cliente. Consulte *Ajuda do Acrobat* ou o apropriado *Ajuda das extensões do Acrobat Reader DC* para obter detalhes.
+Quando o período de concessão offline terminar, sincronize o documento com a segurança de documentos novamente, entrando online e abrindo um documento protegido por política ou usando um comando no aplicativo cliente. Consulte a *Ajuda do Acrobat* ou a *Ajuda de Extensões do Acrobat Reader DC* apropriada para obter detalhes.
 
 Se você salvar uma cópia de um documento protegido por política usando o comando de menu Salvar ou Salvar como, a política será automaticamente aplicada e imposta para o novo documento. Eventos como tentativas de abrir o novo documento também são auditados e registrados para o documento original.
 
 ## Conjuntos de políticas {#policy-sets}
 
-*Conjuntos de políticas* são usados para agrupar um conjunto de políticas que têm um objetivo comercial comum. Esses conjuntos de políticas são então disponibilizados a um subconjunto de usuários no sistema.
+*Os conjuntos de políticas* são usados para agrupar um conjunto de políticas que têm uma finalidade comercial comum. Esses conjuntos de políticas são então disponibilizados a um subconjunto de usuários no sistema.
 
-Cada conjunto de políticas pode ter um ou mais coordenadores de definições de políticas associados. O coordenador do conjunto de políticas é um administrador ou um usuário que tem mais permissões. A variável *coordenador de conjunto de políticas* O geralmente é um especialista na organização que pode criar melhor as políticas em um conjunto de políticas específico.
+Cada conjunto de políticas pode ter um ou mais coordenadores de definições de políticas associados. O coordenador do conjunto de políticas é um administrador ou um usuário que tem mais permissões. O *coordenador do conjunto de políticas* geralmente é um especialista na organização que pode criar melhor as políticas em um conjunto de políticas específico.
 
 Os coordenadores de definições de políticas podem executar estas tarefas:
 
@@ -223,19 +223,19 @@ Os coordenadores de definições de políticas podem executar estas tarefas:
 
 >[!NOTE]
 >
->Você pode recuperar no máximo 1000 nomes de conjuntos de políticas do banco de dados usando `getAllPolicysetnames()` API.
+>Você pode recuperar no máximo 1000 nomes de conjuntos de políticas do banco de dados usando a API `getAllPolicysetnames()`.
 
 Os conjuntos de políticas são criados e excluídos nas páginas da Web de administração de segurança de documentos por administradores e coordenadores de definições de políticas que têm permissão para fazer isso.
 
 Os conjuntos de políticas são disponibilizados para um número limitado de usuários especificando quais usuários ou grupos em um domínio podem usar as políticas do conjunto de políticas para proteger documentos.
 
-Quando a segurança de documentos é instalada, um conjunto de políticas padrão é criado, chamado *Conjunto de Políticas Globais*. O administrador que instalou o software gerencia este conjunto de políticas.
+Quando a segurança de documentos é instalada, um conjunto de políticas padrão é criado chamado *Conjunto de Políticas Globais*. O administrador que instalou o software gerencia este conjunto de políticas.
 
 ## Práticas recomendadas {#best-practices}
 
 As políticas são conjuntos reutilizáveis de permissões e grupos de usuários que podem ser aplicados a vários documentos. Para os documentos protegidos. Essas políticas garantem que somente usuários autorizados possam usar os recursos permitidos. Espera-se que o número de políticas e conjuntos de políticas aumente com um aumento em diferentes funções de usuário e documentos em um departamento. Para criar e gerenciar políticas, veja a seguir algumas considerações e práticas recomendadas:
 
-* **Criar políticas reutilizáveis:** O Adobe recomenda reutilizar políticas em vários documentos. Isso ajuda a manter o número de políticas no mínimo, fornece o desempenho ideal e facilita o gerenciamento de políticas. Para criar uma política reutilizável:
+* **Criar políticas reutilizáveis:** o Adobe recomenda reutilizar políticas em vários documentos. Isso ajuda a manter o número de políticas no mínimo, fornece o desempenho ideal e facilita o gerenciamento de políticas. Para criar uma política reutilizável:
 
 1. Identificar e definir os requisitos de controle de acesso em nível de departamentos e organizações.
 
@@ -247,11 +247,11 @@ As políticas são conjuntos reutilizáveis de permissões e grupos de usuários
 
 Adicione grupos de usuários a políticas em vez de usuários individuais. Isso facilita o gerenciamento e a aplicação de políticas a muitos usuários.
 
-* **Criar conjuntos de políticas personalizados:** Um conjunto de políticas combina várias políticas em uma entidade gerenciável. Crie conjuntos de políticas personalizados para sua organização ou departamento, use-os para agrupar políticas relacionadas e disponibilizá-los a um subconjunto de usuários no sistema.
+* **Criar conjuntos de políticas personalizados:** um conjunto de políticas combina várias políticas em uma entidade gerenciável. Crie conjuntos de políticas personalizados para sua organização ou departamento, use-os para agrupar políticas relacionadas e disponibilizá-los a um subconjunto de usuários no sistema.
 
   Usar conjuntos de políticas facilita a atribuição e o gerenciamento de políticas relacionadas a usuários específicos em uma organização ou departamento. Por exemplo, conjuntos de políticas separados para o departamento de finanças e recursos humanos podem ajudar a gerenciar e aplicar políticas relacionadas facilmente a documentos designados para departamentos correspondentes.
 
-* **Usar um autorizador externo para aplicar permissões dinamicamente:** Você pode usar [autorizador externo](https://help.adobe.com/en_US/livecycle/11.0/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-6f26.2.html) para avaliar e aplicar dinamicamente permissões com base na condição externa. Quando as permissões são avaliadas dinamicamente, com base na condição externa, você pode:
+* **Use um autorizador externo para aplicar permissões dinamicamente:** Você pode usar o [autorizador externo](https://help.adobe.com/en_US/livecycle/11.0/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-6f26.2.html) para avaliar e aplicar dinamicamente permissões com base na condição externa. Quando as permissões são avaliadas dinamicamente, com base na condição externa, você pode:
 
    * Forneça controle de acesso centralizado para documentos em sua organização.
 
@@ -259,9 +259,9 @@ Adicione grupos de usuários a políticas em vez de usuários individuais. Isso 
 
    * Use um mecanismo de controle de acesso que seu sistema de gerenciamento de conteúdo usa, além do processo padrão de avaliação de políticas. Por exemplo, quando o serviço determina se um usuário pode imprimir um documento protegido por política, ele pode usar o processo padrão de avaliação de política. E também pode usar o mecanismo de controle de acesso que seu sistema de gerenciamento de conteúdo usa.
 
-  Embora seja possível substituir completamente o processo de avaliação de política de Segurança de documentos por um manipulador de autorização externo, é recomendável usar um manipulador de autorização externo com o processo de avaliação de política. Como resultado, o acesso aos documentos pode ser controlado pelo mesmo mecanismo de controle que seu sistema de gerenciamento de conteúdo usa. Por exemplo, quando o serviço de Segurança de documentos determina se um usuário pode imprimir um documento protegido por política, ele usa o processo padrão de avaliação de política. Ele também usa o mecanismo de controle de acesso que seu sistema de gerenciamento de conteúdo usa. Para obter mais informações, consulte [Criando manipuladores de autorização externos](https://help.adobe.com/en_US/livecycle/11.0/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-6f26.2.html).
+  Embora seja possível substituir completamente o processo de avaliação de política de Segurança de documentos por um manipulador de autorização externo, é recomendável usar um manipulador de autorização externo com o processo de avaliação de política. Como resultado, o acesso aos documentos pode ser controlado pelo mesmo mecanismo de controle que seu sistema de gerenciamento de conteúdo usa. Por exemplo, quando o serviço de Segurança de documentos determina se um usuário pode imprimir um documento protegido por política, ele usa o processo padrão de avaliação de política. Ele também usa o mecanismo de controle de acesso que seu sistema de gerenciamento de conteúdo usa. Para obter mais informações, consulte [Criando Manipuladores de Autorização Externa](https://help.adobe.com/en_US/livecycle/11.0/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-6f26.2.html).
 
-* **Mantenha os conjuntos de políticas em um número limitado:** Vários fatores conduzem a um crescimento constante das políticas e dos conjuntos de políticas. Alguns fatores comuns são:
+* **Mantenha os conjuntos de políticas em um número limitado:** Vários fatores levam ao crescimento constante de políticas e conjuntos de políticas. Alguns fatores comuns são:
 
    * Aumento nas funções de usuário, departamentos e documentos em uma organização durante um período.
    * Os departamentos de uma organização trabalham isoladamente e mantêm um controle rígido sobre as políticas específicas do departamento. Ele leva a políticas idênticas dentro de uma organização.
@@ -275,4 +275,4 @@ Adicione grupos de usuários a políticas em vez de usuários individuais. Isso 
 
   >[!NOTE]
   >
-  >Você pode usar o [getAllPolicysetnames()](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/PolicyManager.html) API para recuperar um máximo de 1000 nomes de conjuntos de políticas. Internamente, a API recupera um máximo de 1000 políticas para as quais o chamador da API tem permissão de editor de documentos e, em seguida, cria e retorna uma lista de nomes de conjuntos de políticas exclusivos associados às políticas recuperadas para você. Por exemplo, quando a API recupera 1000 políticas e as políticas recuperadas são associadas a 200 conjuntos de políticas no total, a API retorna apenas 200 nomes de conjuntos de políticas.
+  >Você pode usar a API [getAllPolicysetnames()](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/PolicyManager.html) para recuperar no máximo 1000 nomes de conjuntos de políticas. Internamente, a API recupera um máximo de 1000 políticas para as quais o chamador da API tem permissão de editor de documentos e, em seguida, cria e retorna uma lista de nomes de conjuntos de políticas exclusivos associados às políticas recuperadas para você. Por exemplo, quando a API recupera 1000 políticas e as políticas recuperadas são associadas a 200 conjuntos de políticas no total, a API retorna apenas 200 nomes de conjuntos de políticas.

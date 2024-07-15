@@ -35,16 +35,16 @@ Com o aplicativo Comprovação por demanda para dispositivos móveis, é possív
 ## Visualização com simulação {#previewing-with-preflight-1}
 
 1. Em Dispositivo móvel, escolha seu aplicativo móvel por demanda no catálogo.
-1. Clique nas reticências (...) da **Gerenciar artigos** (ou Banners/Coleções).
-1. Selecionar **Comprovação** na barra de ações.
-1. Clique em **Ativar simulação** da caixa de diálogo.
+1. Clique nas reticências (...) do bloco **Gerenciar artigos** (ou Banners/Coleções).
+1. Selecione **Comprovação** na barra de ações.
+1. Clique em **Ativar simulação** na caixa de diálogo.
 1. Seu aplicativo está pronto para visualização no aplicativo de simulação por demanda móvel.
 
 ![chlimage_1-8](assets/chlimage_1-8.gif)
 
 >[!NOTE]
 >
->O aplicativo Comprovação do AEM é usado para visualizar conteúdo e navegar pelas páginas. Para saber mais detalhes sobre o aplicativo Comprovação, clique em [aqui](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html).
+>O aplicativo Comprovação do AEM é usado para visualizar conteúdo e navegar pelas páginas. Para saber mais detalhes sobre o Aplicativo de Comprovação, clique [aqui](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html).
 >
 
 ### Avançando {#getting-ahead}

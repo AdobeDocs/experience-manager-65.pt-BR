@@ -89,7 +89,7 @@ O quadro de conteúdo está na seção à direita da janela, na barra de ferrame
 
 O quadro do editor reconhece os recursos de edição.
 
-O quadro do editor é um contêiner (abstrato) para todas as *elementos de criação de página*. Ela fica na parte superior do quadro de conteúdo e inclui:
+O quadro do editor é um contêiner (abstrato) para todos os *elementos de criação da página*. Ela fica na parte superior do quadro de conteúdo e inclui:
 
 * a barra de ferramentas superior
 * o painel lateral
@@ -106,9 +106,9 @@ O painel lateral fica oculto por padrão. Quando selecionado, ele será mostrado
 
 ![chlimage_1-150](assets/chlimage_1-150.png)
 
-### Painel lateral - Ativos {#side-panel-assets}
+### Painel lateral - Assets {#side-panel-assets}
 
-Na guia Ativos, é possível selecionar dentre uma variedade de ativos. Você também pode filtrar por um termo específico ou selecionar um grupo.
+Na guia Assets, é possível selecionar dentre uma variedade de ativos. Você também pode filtrar por um termo específico ou selecionar um grupo.
 
 ![chlimage_1-151](assets/chlimage_1-151.png)
 
@@ -126,7 +126,7 @@ Na guia Componentes, é possível selecionar dentre uma variedade de componentes
 
 ### Sobreposições {#overlays}
 
-Eles sobrepõem o quadro de conteúdo e são usados pelo [camadas](#layer) para conhecer os mecanismos de como você pode interagir (de forma transparente) com os componentes e seu conteúdo.
+Eles sobrepõem o quadro de conteúdo e são usados pelas [camadas](#layer) para compreender os mecanismos de como você pode interagir (de forma transparente) com os componentes e seu conteúdo.
 
 As sobreposições ficam no quadro do editor (com todos os outros elementos de criação de página), embora elas realmente sobreponham os componentes apropriados no quadro de conteúdo.
 
@@ -167,4 +167,4 @@ Dependendo do espaço disponível, as barras de ferramentas do componente são p
 
 Para obter mais detalhes sobre os conceitos da interface habilitada para toque, leia [Conceitos da interface habilitada para toque por AEM](/help/sites-developing/touch-ui-concepts.md).
 
-Para obter mais informações técnicas, consulte [Conjunto de documentação JS](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html) para o editor de páginas habilitado para toque.
+Para obter mais informações técnicas, consulte [Conjunto de documentação JS](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html) para o editor de página habilitado para toque.

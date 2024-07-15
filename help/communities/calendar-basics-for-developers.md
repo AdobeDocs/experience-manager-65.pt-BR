@@ -47,7 +47,7 @@ Esta página fornece informações essenciais sobre como trabalhar com o recurso
   </tr>
   <tr>
    <td><strong> propriedades</strong></td>
-   <td>consulte <a href="calendar.md">Uso de calendários</a></td>
+   <td>consulte <a href="calendar.md">Usando Calendários</a></td>
   </tr>
  </tbody>
 </table>
@@ -58,23 +58,23 @@ Esta página fornece informações essenciais sobre como trabalhar com o recurso
 
 * [APIs de calendário](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/calendar/client/api/package-summary.html)
 
-* [Endpoints de calendário](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/calendar/client/endpoints/package-summary.html)
+* [Pontos de Extremidade de Calendário](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/calendar/client/endpoints/package-summary.html)
 
 * [Personalizações do lado do servidor](server-customize.md)
 
 ### Função do calendário {#calendar-function}
 
-Uma estrutura de site da comunidade que inclui o [Função de calendário](functions.md#calendar-function) tem um `calendar` componente configurado. A função Calendário permite identificar um [grupo de usuários membro privilegiado](users.md#privileged-members-group).
+Uma estrutura de site de comunidade que inclui a [função de Calendário](functions.md#calendar-function) tem um componente `calendar` configurado. A função Calendário oferece suporte à identificação de um [grupo de usuários membro privilegiado](users.md#privileged-members-group).
 
 ### Acessar publicações do calendário (UGC) {#accessing-calendar-posts-ugc}
 
-A partir do AEM 6.1 Communities, o uso de um [armazenamento comum](working-with-srp.md) O para UGC inclui acesso programático ao UGC, independentemente da opção de armazenamento escolhida (como ASRP, MSRP ou JSRP).
+Desde o AEM 6.1 Communities, o uso de um [armazenamento comum](working-with-srp.md) para UGC inclui acesso programático a UGC, independentemente da opção de armazenamento escolhida (como ASRP, MSRP ou JSRP).
 
 **A localização e o formato do UGC no repositório estão sujeitos a alterações sem aviso**.
 
 Consulte:
 
-* [Visão geral do provedor de recursos de armazenamento](srp.md) - introdução e visão geral do uso do repositório
-* [Fundamentos de SRP e UGC](srp-and-ugc.md) - Métodos e exemplos do utilitário SRP
-* [Acesso ao UGC com SRP](accessing-ugc-with-srp.md) - diretrizes de codificação
-* [Refatoração de SocialUtils](socialutils.md) - mapeamento de métodos de utilitário obsoletos para métodos de utilitário SRP atuais
+* [Visão Geral do Provedor de Recursos de Armazenamento](srp.md) - introdução e visão geral do uso do repositório
+* [Fundamentos do SRP e do UGC](srp-and-ugc.md) - Métodos e exemplos do utilitário SRP
+* [Acessando UGC com SRP](accessing-ugc-with-srp.md) - diretrizes de codificação
+* [Refatoração de SocialUtils](socialutils.md) - mapeando métodos de utilitário obsoletos para métodos de utilitário SRP atuais

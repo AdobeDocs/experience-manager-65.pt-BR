@@ -23,29 +23,29 @@ As campanhas geralmente usam teasers como um mecanismo para atrair um segmento e
 
 >[!NOTE]
 >
->O componente de Teaser agora está obsoleto no AEM 6.2. Use o botão [Componente de direcionamento](/help/sites-authoring/content-targeting-touch.md).
+>O componente de Teaser agora está obsoleto no AEM 6.2. Em vez disso, use o [Componente de destino](/help/sites-authoring/content-targeting-touch.md).
 
-* **Páginas da marca** são armazenados na seção Campanhas do site. Uma marca contém as campanhas individuais.
-* **Páginas de campanha** são armazenados na seção Campanhas do site. Cada campanha tem uma página individual, sob a qual as definições do teaser são mantidas. O container, ou a página de visão geral, também contém determinadas informações e estatísticas sobre as páginas de teaser individuais.
+* **Páginas da marca** são armazenadas na seção Campanhas do site. Uma marca contém as campanhas individuais.
+* **Páginas de campanha** são armazenadas na seção Campanhas do site. Cada campanha tem uma página individual, sob a qual as definições do teaser são mantidas. O container, ou a página de visão geral, também contém determinadas informações e estatísticas sobre as páginas de teaser individuais.
 
 Os teasers dentro do AEM são compostos de várias partes:
 
-* **Páginas de teaser** são armazenados na página de campanha apropriada e mantêm as definições dos parágrafos do teaser disponíveis para cada campanha específica. Essas definições são usadas ao exibir os parágrafos do teaser; incluindo variações de conteúdo, o segmento a ser usado para selecionar uma variação e um fator de reforço.
-* A variável **Componente de teaser** O está disponível prontamente e permite criar uma ocorrência do seu parágrafo de teaser específico em uma página de conteúdo. Você pode arrastar o componente de teaser do sidekick e, em seguida, especificar sua definição de teaser para criar seu próprio parágrafo de teaser. **Nota:** O componente de Teaser agora está obsoleto no AEM 6.2. Use o botão [Componente de direcionamento](/help/sites-authoring/content-targeting-touch.md).
-* **Parágrafos de teaser** são instâncias reais do teaser em uma página de conteúdo. Eles atraem um segmento de visitantes para um conteúdo focado em seus interesses.
+* **As páginas de teaser** são armazenadas na página de campanha apropriada e mantêm as definições dos parágrafos de teaser disponíveis para cada campanha específica. Essas definições são usadas ao exibir os parágrafos do teaser; incluindo variações de conteúdo, o segmento a ser usado para selecionar uma variação e um fator de reforço.
+* O **Componente de teaser** está disponível imediatamente e permite criar uma instância do seu parágrafo de teaser específico em uma página de conteúdo. Você pode arrastar o componente de teaser do sidekick e, em seguida, especificar sua definição de teaser para criar seu próprio parágrafo de teaser. **Observação:** o componente de Teaser agora está obsoleto no AEM 6.2. Em vez disso, use o [Componente de destino](/help/sites-authoring/content-targeting-touch.md).
+* **Os parágrafos do teaser** são instâncias reais do teaser em uma página de conteúdo. Eles atraem um segmento de visitantes para um conteúdo focado em seus interesses.
 * Páginas que contêm o conteúdo da campanha focado em um segmento de visitante específico. Normalmente, os parágrafos do teaser levam o visitante a essas páginas.
 
 ## Estratégias {#strategies}
 
-Ao adicionar um parágrafo de teaser a uma página, você deve definir o **Estratégia**.
+Ao adicionar um parágrafo de teaser a uma página, defina a **Estratégia**.
 
-Isso ocorre porque vários teasers estão disponíveis para seleção à medida que seus segmentos atribuídos são resolvidos com êxito. A variável **Estratégia** em seguida, especifica um critério extra usado para selecionar o teaser mostrado:
+Isso ocorre porque vários teasers estão disponíveis para seleção à medida que seus segmentos atribuídos são resolvidos com êxito. A **Estratégia** especifica um critério extra usado para selecionar o teaser mostrado:
 
-* **Pontuação de sequência de cliques**, é baseado nas tags e ocorrências de tag relacionadas mantidas no contexto do cliente do visitante (mostra a frequência com que um visitante clicou em páginas que contêm a respectiva tag). As taxas de hit das tags definidas na página do teaser são comparadas.
-* **Aleatório**, para seleção &quot;aleatória&quot;; usa o fator aleatório gerado para uma página, isso pode ser visto com o [contexto do cliente](/help/sites-administering/client-context.md).
+* A **Pontuação da sequência de cliques**, é baseada nas marcas e ocorrências de marcas relacionadas mantidas no contexto de cliente do visitante (mostra a frequência com que um visitante clicou em páginas que contêm a respectiva marca). As taxas de hit das tags definidas na página do teaser são comparadas.
+* **Aleatório**, para seleção &quot;aleatória&quot;; usa o fator aleatório gerado para uma página; isso pode ser visto com o [contexto do cliente](/help/sites-administering/client-context.md).
 * **Primeiro** na lista de segmentos resolvidos. A ordem é a dos teasers na página do container da campanha.
 
-A variável [Fator de reforço](/help/sites-administering/campaign-segmentation.md#boost-factor) do segmento também tem impacto na seleção. É um fator de ponderação adicionado a uma definição de segmento para aumentar/diminuir a probabilidade relativa de sua seleção.
+O [Fator de reforço](/help/sites-administering/campaign-segmentation.md#boost-factor) do segmento também afeta a seleção. É um fator de ponderação adicionado a uma definição de segmento para aumentar/diminuir a probabilidade relativa de sua seleção.
 
 O processo e as inter-relações dos vários critérios de seleção são melhor ilustrados com um exemplo (um método que também pode ser usado para garantir que seus teasers atinjam o público necessário).
 
@@ -104,17 +104,17 @@ E usamos as seguintes definições de teaser:
    <td>C1 </td>
    <td>T6</td>
    <td>S6</td>
-   <td>Empresas<br /> </td>
+   <td>Empresa<br /> </td>
   </tr>
  </tbody>
 </table>
 
 Em seguida, se aplicarmos isso a um visitante em que:
 
-* **S1**, **S2 e **S6** resolver com sucesso
+* **S1**, **S2 e **S6** resolvidos com êxito
 
-* a tag **marketing** tem três ocorrências
-* a tag **empresa** tem seis ocorrências
+* a marca **marketing** tem três ocorrências
+* a tag **business** tem seis ocorrências
 
 Podemos ver o resultado:
 
@@ -192,7 +192,7 @@ que são calculados antes da aplicação da estratégia adequada:
  </tbody>
 </table>
 
-Esses valores são usados para determinar os teasers que o visitante verá, dependendo da **Estratégia** aplicado ao parágrafo de teaser:
+Esses valores são usados para determinar os teasers que o visitante verá, dependendo da **Estratégia** aplicada ao parágrafo de teaser:
 
 <table>
  <tbody>
@@ -204,7 +204,7 @@ Esses valores são usados para determinar os teasers que o visitante verá, depe
   <tr>
    <td>Primeiro</td>
    <td>T5</td>
-   <td>Somente T5 e T6 são considerados como segmentos resolvidos <i>e</i> eles têm o fator de reforço mais alto. A lista retornada está na ordem T5, T6; portanto, T5 é selecionado e exibido.</td>
+   <td>Somente T5 e T6 são considerados como segmentos, todos resolvem <i>e</i> porque têm o fator de reforço mais alto. A lista retornada está na ordem T5, T6; portanto, T5 é selecionado e exibido.</td>
   </tr>
   <tr>
    <td>Aleatório</td>
@@ -235,10 +235,10 @@ Depois de criar sua marca e campanha, você pode criar e configurar sua experiê
 
 >[!NOTE]
 >
->O componente de Teaser agora está obsoleto no AEM 6.2. Use o botão [Componente de direcionamento](/help/sites-authoring/content-targeting-touch.md).
+>O componente de Teaser agora está obsoleto no AEM 6.2. Em vez disso, use o [Componente de destino](/help/sites-authoring/content-targeting-touch.md).
 
 1. Navegue até a página de conteúdo na qual deseja colocar o parágrafo de teaser que levará à página da campanha.
-1. Adicionar um **Teaser** componente (disponível na **Personalização** seção do sidekick) na posição desejada. Quando criado pela primeira vez, ele mostrará que o caminho da campanha ainda não está configurado:
+1. Adicione um componente de **Teaser** (disponível na seção **Personalization** do sidekick) na posição desejada. Quando criado pela primeira vez, ele mostrará que o caminho da campanha ainda não está configurado:
 
    ![chlimage_1](assets/chlimage_1.png)
 
@@ -264,7 +264,7 @@ Método usado para seleção quando vários segmentos são resolvidos com sucess
 
 Além da visualização da campanha no MCM, a página da campanha também fornece informações sobre os teasers conectados a ela:
 
-1. No **Sites** abra a página da campanha; por exemplo:
+1. No console **Sites**, abra a página da campanha; por exemplo:
 
    `https://localhost:4502/content/campaigns/geometrixx-outdoors/storefront/summer.html`
 

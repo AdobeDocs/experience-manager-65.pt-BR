@@ -34,11 +34,11 @@ Você também pode ativar o SSO usando o SPNEGO. (Consulte [Habilitar SSO usando
 1. Selecione Sim para ativar o SSO. Se você selecionar Não, as configurações restantes na página não estarão disponíveis.
 1. Defina as opções restantes na página, conforme necessário, e clique em OK:
 
-   * **Tipo de SSO:** (Obrigatório) Selecione Cabeçalho HTTP para ativar o SSO usando cabeçalhos HTTP.
-   * **Cabeçalho HTTP para o identificador do usuário:** (Obrigatório) Nome do cabeçalho cujo valor contém o identificador exclusivo do usuário conectado. O Gerenciamento de usuários usa esse valor para localizar o usuário no banco de dados de Gerenciamento de usuários. O valor obtido desse cabeçalho deve corresponder ao identificador exclusivo do usuário que está sincronizado do diretório LDAP. (Consulte [Configurações do usuário](/help/forms/using/admin-help/adding-configuring-users.md#user-settings).)
-   * **O valor do identificador mapeia para a ID de usuário do usuário em vez do identificador exclusivo do usuário:** Mapeia o valor do identificador exclusivo do usuário para a ID do usuário. Selecione esta opção se o identificador exclusivo do usuário for um valor binário que não pode ser facilmente propagado por cabeçalhos HTTP (por exemplo, objectGUID se você estiver sincronizando usuários do Ative Diretory).
-   * **Cabeçalho HTTP para o domínio:** (Não obrigatório) Nome do cabeçalho cujo valor contém o nome de domínio. Use essa configuração somente se nenhum único cabeçalho HTTP identificar exclusivamente o usuário. Use essa configuração para casos em que existem vários domínios e o identificador exclusivo é exclusivo somente em um domínio. Nesse caso, especifique o nome do cabeçalho nessa caixa de texto e especifique o mapeamento de domínio para os vários domínios na caixa Mapeamento de domínio. (Consulte [Edição e conversão de domínios existentes](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains).)
-   * **Mapeamento de domínio:** (Obrigatório) Especifica o mapeamento para vários domínios no formato *valor do cabeçalho=nome do domínio*.
+   * **Tipo de SSO:** (Obrigatório) Selecione Cabeçalho HTTP para habilitar o SSO usando cabeçalhos HTTP.
+   * **Cabeçalho HTTP para o identificador do usuário:** (Obrigatório) Nome do cabeçalho cujo valor contém o identificador exclusivo do usuário conectado. O Gerenciamento de usuários usa esse valor para localizar o usuário no banco de dados de Gerenciamento de usuários. O valor obtido desse cabeçalho deve corresponder ao identificador exclusivo do usuário que está sincronizado do diretório LDAP. (Consulte [Configurações de usuário](/help/forms/using/admin-help/adding-configuring-users.md#user-settings).)
+   * **O valor do identificador mapeia para a ID de usuário do usuário em vez do identificador exclusivo do usuário:** Mapeia o valor do identificador exclusivo do usuário para a ID do Usuário. Selecione esta opção se o identificador exclusivo do usuário for um valor binário que não pode ser facilmente propagado por cabeçalhos HTTP (por exemplo, objectGUID se você estiver sincronizando usuários do Ative Diretory).
+   * **Cabeçalho HTTP para o domínio:** (Não obrigatório) Nome do cabeçalho cujo valor contém o nome de domínio. Use essa configuração somente se nenhum único cabeçalho HTTP identificar exclusivamente o usuário. Use essa configuração para casos em que existem vários domínios e o identificador exclusivo é exclusivo somente em um domínio. Nesse caso, especifique o nome do cabeçalho nessa caixa de texto e especifique o mapeamento de domínio para os vários domínios na caixa Mapeamento de domínio. (Consulte [Editar e converter domínios existentes](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains).)
+   * **Mapeamento de domínio:** (obrigatório) especifica o mapeamento para vários domínios no formato *valor do cabeçalho=nome do domínio*.
 
      Por exemplo, considere uma situação em que o cabeçalho HTTP de um domínio é domainName e pode ter valores de domain1, domain2 ou domain3. Nesse caso, use o mapeamento de domínio para mapear os valores de domainName para nomes de domínio do User Management. Cada mapeamento deve estar em uma linha diferente:
 
@@ -66,21 +66,21 @@ Você também pode ativar o SSO usando cabeçalhos HTTP. (Consulte [Habilitar SS
 1. No Ative Diretory, crie um usuário que represente o AEM Forms Server. (Consulte [Criar uma conta de usuário](enabling-single-sign-on-aem.md#create-a-user-account).) Se você estiver configurando mais de um domínio para usar o SPNEGO, certifique-se de que as senhas de cada um desses usuários sejam diferentes. Se as senhas não forem diferentes, o SPNEGO SSO não funcionará.
 1. Mapeie o nome da entidade de serviço. (Consulte [Mapear um SPN (Nome da Entidade de Serviço)](enabling-single-sign-on-aem.md#map-a-service-principal-name-spn).)
 1. Configure o controlador de domínio. (Consulte [Evitar falhas de verificação de integridade Kerberos](enabling-single-sign-on-aem.md#prevent-kerberos-integrity-check-failures).)
-1. Adicione ou edite um domínio enterprise conforme descrito em [Adicionar domínios](/help/forms/using/admin-help/adding-domains.md#adding-domains) ou [Edição e conversão de domínios existentes](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains). Ao criar ou editar o domínio enterprise, execute estas tarefas:
+1. Adicione ou edite um domínio corporativo conforme descrito em [Adicionando domínios](/help/forms/using/admin-help/adding-domains.md#adding-domains) ou [Editando e convertendo domínios existentes](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains). Ao criar ou editar o domínio enterprise, execute estas tarefas:
 
    * Adicione ou edite um diretório que contenha suas informações do Ative Diretory.
    * Adicione o LDAP como um provedor de autenticação.
    * Adicione o Kerberos como um provedor de autenticação. Forneça as seguintes informações na página Nova ou Editar Autenticação do Kerberos:
 
-      * **Provedor de autenticação:** Kerberos
-      * **IP DNS:** O endereço IP DNS do servidor onde os formulários AEM estão sendo executados. Você pode determinar esse endereço IP executando `ipconfig/all` na linha de comando.
+      * **Provedor de Autenticação:** Kerberos
+      * **IP do DNS:** O endereço IP do DNS do servidor onde os formulários AEM estão em execução. Você pode determinar este endereço IP executando `ipconfig/all` na linha de comando.
       * **Host KDC:** Nome de host ou endereço IP totalmente qualificado do servidor do Ative Diretory usado para autenticação
-      * **Usuário de serviço:** O SPN (nome da entidade de serviço) passado para a ferramenta KtPass. No exemplo usado anteriormente, o usuário do serviço é `HTTP/lcserver.um.lc.com`.
-      * **Domínio de Serviço:** Nome de domínio do Ative Diretory. No exemplo usado anteriormente, o Nome do domínio é `UM.LC.COM.`
+      * **Usuário do Serviço:** o SPN (nome da entidade de serviço) passado para a ferramenta KtPass. No exemplo usado anteriormente, o usuário do serviço é `HTTP/lcserver.um.lc.com`.
+      * **Realm de Serviço:** Nome de domínio do Ative Diretory. No exemplo usado anteriormente, o nome do Domínio é `UM.LC.COM.`
       * **Senha do serviço:** Senha do usuário do serviço. No exemplo usado anteriormente, a senha do serviço é `password`.
-      * **Ativar SPNEGO:** Habilita o uso do SPNEGO para logon único (SSO). Selecione esta opção.
+      * **Habilitar SPNEGO:** Habilita o uso do SPNEGO para logon único (SSO). Selecione esta opção.
 
-1. Defina as configurações do navegador do cliente SPNEGO. (Consulte [Definição das configurações do navegador do cliente SPNEGO](enabling-single-sign-on-aem.md#configuring-spnego-client-browser-settings).)
+1. Defina as configurações do navegador do cliente SPNEGO. (Consulte [Definindo as configurações do navegador do cliente SPNEGO](enabling-single-sign-on-aem.md#configuring-spnego-client-browser-settings).)
 
 ### Criar uma conta de usuário {#create-a-user-account}
 
@@ -90,7 +90,7 @@ Você também pode ativar o SSO usando cabeçalhos HTTP. (Consulte [Habilitar SS
 1. Digite o Nome/Sobrenome e o Nome de logon do usuário e clique em Avançar. Por exemplo, defina os seguintes valores:
 
    * **Nome**: umspnego
-   * **Nome de logon do usuário**: spnegodemo
+   * **Nome de Logon do Usuário**: spnegodemo
 
 1. Digite uma senha. Por exemplo, defina como *senha*. Certifique-se de que a opção Senha nunca expira esteja selecionada e que nenhuma outra opção esteja selecionada.
 1. Clique em Avançar e em Concluir.
@@ -100,7 +100,7 @@ Você também pode ativar o SSO usando cabeçalhos HTTP. (Consulte [Habilitar SS
 1. Obtenha o utilitário KtPass. Esse utilitário é usado para mapear um SPN para um REALM. Você pode obter o utilitário KtPass como parte do Pacote de ferramentas ou Kit de recursos do Windows Server. (Consulte [Ferramentas de Suporte do Windows Server 2003 Service Pack 1](https://support.microsoft.com/kb/892777).)
 1. Em um prompt de comando, execute `ktpass` usando os seguintes argumentos:
 
-   `ktpass -princ HTTP/`*host* `@`*DOMÍNIO* `-mapuser`*usuário*
+   `ktpass -princ HTTP/`*host* `@`*REALM* `-mapuser`*usuário*
 
    Por exemplo, digite o seguinte texto:
 
@@ -108,14 +108,14 @@ Você também pode ativar o SSO usando cabeçalhos HTTP. (Consulte [Habilitar SS
 
    Os valores que você deve fornecer são descritos a seguir:
 
-   **host:** Nome totalmente qualificado do servidor do Forms ou qualquer URL exclusivo. Neste exemplo, ele é definido como lcserver.um.lc.com.
+   **host:** Nome totalmente qualificado do Servidor Forms ou qualquer URL exclusiva. Neste exemplo, ele é definido como lcserver.um.lc.com.
 
-   **REALM:** O realm do Ative Diretory para o controlador de domínio. Neste exemplo, ele é definido como UM.LC.COM. Certifique-se de informar o realm em caracteres maiúsculos. Para determinar o realm do Windows 2003, conclua as seguintes etapas:
+   **REALM:** O domínio do Ative Diretory para o controlador de domínio. Neste exemplo, ele é definido como UM.LC.COM. Certifique-se de informar o realm em caracteres maiúsculos. Para determinar o realm do Windows 2003, conclua as seguintes etapas:
 
    * Clique com o botão direito em Meu computador e selecione Propriedades
    * Clique na guia Nome do computador. O valor Nome do Domínio é o nome do realm.
 
-   **usuário:** O nome de logon da conta de usuário criada na tarefa anterior. Neste exemplo, está definido como spnegodemo.
+   **usuário:** o nome de logon da conta de usuário que você criou na tarefa anterior. Neste exemplo, está definido como spnegodemo.
 
 Se você encontrar este erro:
 
@@ -134,7 +134,7 @@ ktpass -princ HTTP/lcserver.um.lc.com@UM.LC.COM -mapuser spnegodemo
 
 1. No controlador de domínio, acesse Menu Iniciar > Ferramentas Administrativas > Usuários e Computadores do Ative Diretory. Se Ferramentas administrativas não estiver no menu Iniciar, use o Painel de controle.
 1. Clique na pasta Usuários para exibir uma lista de usuários.
-1. Clique com o botão direito do mouse na conta de usuário criada em uma tarefa anterior. Neste exemplo, a conta do usuário é `spnegodemo`.
+1. Clique com o botão direito do mouse na conta de usuário criada em uma tarefa anterior. Neste exemplo, a conta de usuário é `spnegodemo`.
 1. Clique em Redefinir senha.
 1. Digite e confirme a mesma senha digitada anteriormente. Neste exemplo, está definido como `password`.
 1. Desmarque Alterar senha no próximo logon e clique em OK.
@@ -149,20 +149,20 @@ Se o servidor for acessado usando o nome do computador, como https://lcserver:80
 
 1. Vá para Ferramentas > Opções da Internet e clique na guia Segurança.
 1. Clique no ícone Intranet local e em Sites.
-1. Clique em Avançado e, na caixa Adicionar este site à zona, digite o URL do servidor do Forms. Por exemplo, digite `https://lcserver.um.lc.com`
+1. Clique em Avançado e, na caixa Adicionar este site à zona, digite o URL do servidor do Forms. Por exemplo, tipo `https://lcserver.um.lc.com`
 1. Clique em OK até que todas as caixas de diálogo sejam fechadas.
-1. Teste a configuração acessando o URL do servidor do AEM Forms. Por exemplo, na caixa URL do navegador, digite `https://lcserver.um.lc.com:8080/um/login?um_no_redirect=true`
+1. Teste a configuração acessando o URL do servidor do AEM Forms. Por exemplo, na caixa de URL do navegador, digite `https://lcserver.um.lc.com:8080/um/login?um_no_redirect=true`
 
 **Configurar o Mozilla Firefox**
 
-1. Na caixa URL do navegador, digite `about:config`
+1. Na caixa de URL do navegador, digite `about:config`
 
    A caixa de diálogo about:config - Mozilla Firefox é exibida.
 
 1. Na caixa Filtro, digite `negotiate`
 1. Na lista mostrada, clique em network.negotiation-auth.trusted-uri e digite um dos seguintes comandos conforme apropriado para seu ambiente:
 
-   `.um.lc.com`- Configura o Firefox para permitir SPNEGO para qualquer URL que termine com um.lc.com. Certifique-se de incluir o ponto (&quot;.&quot;) no início.
+   `.um.lc.com`- Configura o Firefox para permitir o SPNEGO para qualquer URL que termine com um.lc.com. Certifique-se de incluir o ponto (&quot;.&quot;) no início.
 
    `lcserver.um.lc.com` - Configura o Firefox para permitir o SPNEGO somente para seu servidor específico. Não inicie este valor com um ponto (&quot;.&quot;).
 

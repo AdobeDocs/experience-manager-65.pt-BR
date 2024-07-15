@@ -22,32 +22,32 @@ Este artigo discute estratégias e práticas recomendadas que você pode impleme
 
 ## Configurações de cache {#cache-settings}
 
-Você pode configurar e controlar a estratégia de armazenamento em cache do AEM Forms usando o **Configurações do Forms Mobile** no Console de configuração da Web do AEM em:
+Você pode configurar e controlar a estratégia de armazenamento em cache do AEM Forms usando o componente **Configurações de Forms para dispositivos móveis** no Console de Configuração da Web do AEM em:
 
 * (AEM Forms no OSGi) `https://'[server]:[port]'/system/console/configMgr`
 * (AEM Forms no JEE) `https://'[server]:[port]'/lc/system/console/configMgr`
 
 As opções disponíveis para armazenamento em cache são as seguintes:
 
-* **Nenhum**: força o a não armazenar em cache nenhum artefato. Na prática, isso retarda o desempenho e exige alta disponibilidade de memória devido à ausência de cache.
+* **Nenhum**: força a não armazenar em cache nenhum artefato. Na prática, isso retarda o desempenho e exige alta disponibilidade de memória devido à ausência de cache.
 * **Conservador**: determina o armazenamento em cache somente dos artefatos intermediários gerados antes da renderização do formulário, como um modelo contendo fragmentos e imagens embutidas.
-* **Agressivo**: força o a armazenar em cache quase tudo o que pode ser armazenado em cache, incluindo o conteúdo de HTML renderizado, além de todos os artefatos do nível de armazenamento em cache conservador. Ele resulta no melhor desempenho, mas também consome mais memória para armazenar artefatos em cache. Estratégia agressiva de armazenamento em cache significa que você obtém desempenho de tempo constante na renderização de um formulário conforme o conteúdo renderizado é armazenado em cache.
+* **Agressivo**: força o a armazenar em cache quase tudo o que pode ser armazenado em cache, incluindo conteúdo de HTML renderizado além de todos os artefatos do nível de armazenamento em cache Conservador. Ele resulta no melhor desempenho, mas também consome mais memória para armazenar artefatos em cache. Estratégia agressiva de armazenamento em cache significa que você obtém desempenho de tempo constante na renderização de um formulário conforme o conteúdo renderizado é armazenado em cache.
 
 As configurações de cache padrão do AEM Forms podem não ser boas o suficiente para alcançar o desempenho ideal. Portanto, é recomendável usar as seguintes configurações:
 
-* **Estratégia de cache**: Agressivo
-* **Tamanho do cache** (em termos de número de formulários): Conforme exigido
-* **Tamanho máximo do objeto**: conforme necessário
+* **Estratégia de cache**: agressiva
+* **Tamanho do cache** (em termos de número de formulários): conforme necessário
+* **Tamanho Máximo do Objeto**: Conforme necessário
 
-![Configurações do Forms Mobile](assets/snap.png)
+![Configurações do Mobile Forms](assets/snap.png)
 
 >[!NOTE]
 >
->Se você usar o AEM Dispatcher para armazenar em cache formulários adaptáveis, ele também armazenará em cache formulários adaptáveis que contêm formulários com dados pré-preenchidos. Se esses formulários forem veiculados a partir do cache do AEM Dispatcher, isso poderá levar ao fornecimento de dados pré-preenchidos ou obsoletos aos usuários. Portanto, use o AEM Dispatcher para armazenar em cache formulários adaptáveis que não usam dados pré-preenchidos. Além disso, um cache do Dispatcher não invalida automaticamente os fragmentos em cache. Portanto, não os use para armazenar em cache fragmentos de formulário. Para esses formulários e fragmentos, use [Cache de formulários adaptáveis](../../forms/using/configure-adaptive-forms-cache.md).
+>Se você usar o AEM Dispatcher para armazenar em cache formulários adaptáveis, ele também armazenará em cache formulários adaptáveis que contêm formulários com dados pré-preenchidos. Se esses formulários forem veiculados a partir do cache do AEM Dispatcher, isso poderá levar à veiculação de dados pré-preenchidos ou obsoletos para os usuários. Portanto, use o AEM Dispatcher para armazenar em cache formulários adaptáveis que não usam dados pré-preenchidos. Além disso, um cache do Dispatcher não invalida automaticamente os fragmentos em cache. Portanto, não os use para armazenar em cache fragmentos de formulário. Para esses formulários e fragmentos, use o [cache de formulários adaptáveis](../../forms/using/configure-adaptive-forms-cache.md).
 
 ## Parâmetros JVM {#jvm-parameters}
 
-Para um desempenho ideal, é recomendável usar a seguinte JVM `init` argumentos para configurar o `Java heap` e `PermGen`.
+Para um desempenho ideal, é recomendável usar os seguintes argumentos JVM `init` para configurar o `Java heap` e o `PermGen`.
 
 ```shell
 set CQ_JVM_OPTS=%CQ_JVM_OPTS% -Xms8192m
@@ -80,7 +80,7 @@ As etapas a seguir demonstram as alterações necessárias para habilitar a comp
 
 O Apache pode se comunicar com o CRX usando o protocolo HTTP. As configurações são para otimização usando HTTP.
 
-1. Remova o comentário das seguintes configurações de módulo em `APACHE_HOME/conf/httpd.conf` arquivo.
+1. Descomente as seguintes configurações de módulo no arquivo `APACHE_HOME/conf/httpd.conf`.
 
    ```shell
    LoadModule proxy_balancer_module modules/mod_proxy.so
@@ -90,17 +90,17 @@ O Apache pode se comunicar com o CRX usando o protocolo HTTP. As configurações
 
    >[!NOTE]
    >
-   >No Linux®, o padrão é `APACHE_HOME` é `/etc/httpd/`.
+   >Para Linux®, o padrão `APACHE_HOME` é `/etc/httpd/`.
 
 1. Configure o proxy na porta 4502 do crx.
-Adicionar configuração a seguir em `APACHE_HOME/conf/httpd.conf` arquivo de configuração.
+Adicione a seguinte configuração no arquivo de configuração `APACHE_HOME/conf/httpd.conf`.
 
    ```shell
    ProxyPass / https://<server>:4502/
    ProxyPassReverse / https://<server>:4502/
    ```
 
-1. Ative a compactação. Adicionar configuração a seguir em `APACHE_HOME/conf/httpd.conf` arquivo de configuração.
+1. Ative a compactação. Adicione a seguinte configuração no arquivo de configuração `APACHE_HOME/conf/httpd.conf`.
 
    **Para formulários HTML5**
 
@@ -147,29 +147,29 @@ Para melhorar o desempenho, você pode direcionar o software antivírus para exc
 * Diretório de instalação do AEM. Se não for possível excluir o diretório completo, exclua o seguinte:
 
    * [Diretório de instalação do AEM]\crx-repository\temp
-   * [Diretório de instalação do AEM]\crx-repository\repository
-   * [Diretório de instalação do AEM]\crx-repository\launchpad
+   * [diretório de instalação do AEM]\crx-repository\repository
+   * [diretório de instalação do AEM]\crx-repository\launchpad
 
 * Diretório temporário do servidor de aplicativos. O local padrão é:
 
-   * (JBoss®) [Diretório de instalação do AEM]\jboss\standalone\tmp
+   * (JBoss®) [diretório de instalação do AEM]\jboss\standalone\tmp
    * (WebLogic) \Oracle\Middleware\user_projects\domains\LCDomain\servers\LCServer1\tmp
    * (WebSphere®) \Programa Files\IBM\WebSphere\AppServer\profiles\AppSrv01\temp
 
-* **(AEM Forms somente no JEE)** Diretório de Armazenamento Global de Documentos (GDS). O local padrão é:
+* **(AEM Forms somente no JEE)** diretório de Armazenamento Global de Documentos (GDS). O local padrão é:
 
    * (JBoss®) [raiz do appserver]/server/&#39;server&#39;/svcnative/DocumentStorage
    * (WebLogic) [appserverdomain]/&#39;server&#39;/adobe/LiveCycleServer/DocumentStorage
    * (WebSphere®) [raiz do appserver]/installedApps/adobe/&#39;server&#39;/DocumentStorage
 
-* **(AEM Forms somente no JEE)** Registros do servidor do AEM Forms e diretório temporário. O local padrão é:
+* **(AEM Forms somente no JEE)** logs e diretório temporário do AEM Forms Server. O local padrão é:
 
-   * Logs do servidor - [diretório de instalação do AEM Forms]\Adobe\AEM formulários\[servidor-aplicativo]\server\all\logs
-   * Diretório temporário - [diretório de instalação do AEM Forms]\temp
+   * Logs do servidor - [diretório de instalação do AEM Forms]\Adobe\AEM forms\[app-server]\server\all\logs
+   * Diretório temporário - [Diretório de instalação do AEM Forms]\temp
 
 >[!NOTE]
 >
->* Se você estiver usando um local diferente para GDS e diretório temporário, abra a interface do usuário do administrador em `https://'[server]:[port]'/adminui`, navegue até **Início > Configurações > Configurações do sistema principal > Configurações principais** para confirmar o local em uso.
+>* Se você estiver usando um local diferente para GDS e diretório temporário, abra AdminUI em `https://'[server]:[port]'/adminui`, vá até **Início > Configurações > Configurações do Sistema Principal > Configurações Principais** para confirmar o local em uso.
 >
 * Se o servidor do AEM Forms funcionar lentamente mesmo após a exclusão dos diretórios sugeridos, exclua também o arquivo executável Java™ (java.exe).
 >

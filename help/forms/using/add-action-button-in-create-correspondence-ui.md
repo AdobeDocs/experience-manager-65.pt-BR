@@ -28,7 +28,7 @@ O cenário deste documento explica como você pode criar um botão na interface 
 
 Para concluir este cenário, você precisa do seguinte:
 
-* Conhecimento sobre CRX e JavaScript
+* Conhecimento do CRX e do JavaScript
 * LiveCycle Server
 
 ## Cenário: Crie o botão na Interface do Usuário Criar Correspondência para enviar uma carta para revisão {#scenario-create-the-button-in-the-create-correspondence-user-interface-to-send-a-letter-for-review}
@@ -41,10 +41,10 @@ Adicionar um botão com uma ação (aqui, enviar uma carta para revisão) à int
 
 ### Adicionar o botão à interface do usuário Criar correspondência {#add-the-button-to-the-create-correspondence-user-interface}
 
-1. Ir para `https://'[server]:[port]'/[ContextPath]/crx/de` e faça logon como Administrador.
+1. Vá para `https://'[server]:[port]'/[ContextPath]/crx/de` e faça logon como Administrador.
 1. Na pasta de aplicativos, crie uma pasta chamada `defaultApp` com caminho/estrutura semelhante à pasta defaultApp (na pasta de configuração). Use as seguintes etapas para criar a pasta:
 
-   1. Clique com o botão direito do mouse no **defaultApp** no seguinte caminho e selecione **Sobrepor nó**:
+   1. Clique com o botão direito do mouse na pasta **defaultApp** no seguinte caminho e selecione **Sobrepor Nó**:
 
       /libs/fd/cm/config/defaultApp/
 
@@ -54,9 +54,9 @@ Adicionar um botão com uma ação (aqui, enviar uma carta para revisão) à int
 
       **Caminho:** /libs/fd/cm/config/defaultApp/
 
-      **Local da sobreposição:** /apps/
+      **Local de Sobreposição:** /apps/
 
-      **Corresponder Tipos de Nó:** Marcado
+      **Corresponder Tipos De Nó:** Marcado
 
       ![Sobrepor nó](assets/2_defaultappoverlaynode.png)
 
@@ -71,7 +71,7 @@ Adicionar um botão com uma ação (aqui, enviar uma carta para revisão) à int
 
       ![Copiar acmExtensionsConfig.xml](assets/3_acmextensionsconfig_xml_copy.png)
 
-   1. Clique com o botão direito do mouse no **defaultApp** em &quot;/apps/fd/cm/config/defaultApp/&quot; e selecione **Colar**.
+   1. Clique com o botão direito na pasta **defaultApp** em &quot;/apps/fd/cm/config/defaultApp/&quot; e selecione **Colar**.
    1. Clique em **Salvar tudo**.
 
 1. Clique duas vezes na cópia do acmExtentionsConfig.xml recém-criado na pasta de aplicativos. O arquivo é aberto para edição.
@@ -99,7 +99,7 @@ Adicionar um botão com uma ação (aqui, enviar uma carta para revisão) à int
        </customAction>
    ```
 
-   ![tag customAction](assets/5_acmextensionsconfig_xml.png)
+   ![marca customAction](assets/5_acmextensionsconfig_xml.png)
 
    A tag modelExtension tem um conjunto de tags secundárias customAction que configuram a ação, as permissões e a aparência do botão de ação. Veja a seguir a lista de tags de configuração customAction:
 
@@ -109,7 +109,7 @@ Adicionar um botão com uma ação (aqui, enviar uma carta para revisão) à int
    | rótulo | O rótulo a ser exibido no botão de ação |
    | dica de ferramenta | Texto da dica de ferramenta do botão, que é exibido quando o usuário passa o mouse sobre o botão. |
    | styleName | Nome do estilo personalizado aplicado ao botão de ação. |
-   | permissionName | A ação correspondente é exibida somente se o usuário tiver a permissão especificada por permissionName. Quando você especifica permissionName como `forms-users`, todos os usuários terão acesso a essa opção. |
+   | permissionName | A ação correspondente é exibida somente se o usuário tiver a permissão especificada por permissionName. Quando você especifica permissionName como `forms-users`, todos os usuários obtêm acesso a essa opção. |
    | actionHandler | Nome totalmente qualificado da classe ActionHandler que é chamada quando o usuário clica no botão. |
 
    Além dos parâmetros acima, pode haver configurações adicionais associadas a uma customAction. Essas configurações adicionais são disponibilizadas para o manipulador por meio do objeto CustomAction.
@@ -117,7 +117,7 @@ Adicionar um botão com uma ação (aqui, enviar uma carta para revisão) à int
    | **Nome** | **Descrição** |
    |---|---|
    | serviceName | Se uma customAction contiver uma tag secundária com o nome serviceName, ao clicar no botão/link relevante, um processo será chamado com o nome representado pela tag serviceName. Certifique-se de que esse processo tenha a mesma assinatura que o PostProcess da Carta. Adicione o prefixo &quot;Forms Workflow ->&quot; no nome do serviço. |
-   | Parâmetros que contêm o prefixo cm_ no nome da tag | Se uma customAction contiver uma tag secundária começando com o nome cm_, em seguida, no pós-processo (seja ele Letter Post Process ou o processo especial representado pela tag serviceName ), esses parâmetros estarão disponíveis no código XML de entrada sob a tag relevante com o prefixo cm_ removido. |
+   | Parâmetros que contêm o prefixo cm_ no nome da tag | Se uma customAction contiver uma tag secundária começando com o nome cm_, em seguida, no pós-processo (seja no processo Letter Post ou no processo especial representado pela tag serviceName ), esses parâmetros estarão disponíveis no código XML de entrada sob a tag relevante com o prefixo cm_ removido. |
    | actionName | Sempre que um processo posterior ocorre devido a um clique, o XML enviado contém uma tag especial com o nome na tag com o nome da ação do usuário. |
 
 1. Clique em **Salvar tudo**.
@@ -126,7 +126,7 @@ Adicionar um botão com uma ação (aqui, enviar uma carta para revisão) à int
 
 O arquivo ACMExtensionsMessages.properties inclui rótulos e mensagens de dica de ferramenta de vários campos na interface do usuário Criar correspondência. Para que as ações/botões personalizados funcionem, faça uma cópia desse arquivo na ramificação /apps.
 
-1. Clique com o botão direito do mouse no **localidade** no seguinte caminho e selecione **Sobrepor nó**:
+1. Clique com o botão direito do mouse na pasta **locale** no seguinte caminho e selecione **Sobrepor Nó**:
 
    /libs/fd/cm/config/defaultApp/locale
 
@@ -134,9 +134,9 @@ O arquivo ACMExtensionsMessages.properties inclui rótulos e mensagens de dica d
 
    **Caminho:** /libs/fd/cm/config/defaultApp/locale
 
-   **Local da sobreposição:** /apps/
+   **Local de Sobreposição:** /apps/
 
-   **Corresponder Tipos de Nó:** Marcado
+   **Corresponder Tipos De Nó:** Marcado
 
 1. Clique em **OK**.
 1. Clique em **Salvar tudo**.
@@ -144,7 +144,7 @@ O arquivo ACMExtensionsMessages.properties inclui rótulos e mensagens de dica d
 
    `/libs/fd/cm/config/defaultApp/locale/ACMExtensionsMessages.properties`
 
-1. Clique com o botão direito do mouse no **localidade** no seguinte caminho e selecione **Colar**:
+1. Clique com o botão direito do mouse na pasta **locale** no seguinte caminho e selecione **Colar**:
 
    `/apps/fd/cm/config/defaultApp/locale/`
 
@@ -172,7 +172,7 @@ Depois de fazer cada alteração no lado do servidor, reinicie o pacote de bloco
 
 1. Localize o pacote de blocos de construção do Adobe Asset Composer. Reinicie o pacote: clique em Stop e em Start.
 
-   ![Bloco de construção do Criador de ativos do Adobe](assets/6_assetcomposerbuildingblockbundle.png)
+   ![Bloco De Construção Do Adobe Asset Composer](assets/6_assetcomposerbuildingblockbundle.png)
 
 Depois de reiniciar o pacote de blocos de construção do Adobe Asset Composer, o botão personalizado é exibido na interface do usuário Criar correspondência. É possível abrir uma correspondência na interface do usuário Criar correspondência para visualizar o botão personalizado.
 
@@ -198,7 +198,7 @@ Manipular a ação/botão ao clicar na ação/botão inclui lógica para:
 
    Use as seguintes etapas para criar a pasta:
 
-   1. Clique com o botão direito do mouse no **js** no seguinte caminho e selecione **Sobrepor nó**:
+   1. Clique com o botão direito do mouse na pasta **js** no seguinte caminho e selecione **Sobrepor Nó**:
 
       `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/js`
 
@@ -206,16 +206,16 @@ Manipular a ação/botão ao clicar na ação/botão inclui lógica para:
 
       **Caminho:** /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/js
 
-      **Local da sobreposição:** /apps/
+      **Local de Sobreposição:** /apps/
 
-      **Corresponder Tipos de Nó:** Marcado
+      **Corresponder Tipos De Nó:** Marcado
 
    1. Clique em **OK**.
    1. Clique em **Salvar tudo**.
 
 1. Na pasta js, crie um arquivo chamado customization.js com o código para a manipulação de ação do botão usando as seguintes etapas:
 
-   1. Clique com o botão direito do mouse no **js** no seguinte caminho e selecione **Criar > Criar arquivo**:
+   1. Clique com o botão direito do mouse na pasta **js** no seguinte caminho e selecione **Criar > Criar arquivo**:
 
       `/apps/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/js`
 
@@ -321,7 +321,7 @@ Manipular a ação/botão ao clicar na ação/botão inclui lógica para:
       '</div>';
       ```
 
-### Adicionar o processo de LiveCycle para habilitar a ação <span class="acrolinxCursorMarker"></code>manuseio {#add-the-livecycle-process-to-enable-action-span-class-acrolinxcursormarker-span-handling}
+### Adicionar o processo LiveCycle para habilitar a ação <span class="acrolinxCursorMarker"></code>manuseio {#add-the-livecycle-process-to-enable-action-span-class-acrolinxcursormarker-span-handling}
 
 Nesse cenário, ative os seguintes componentes, que fazem parte do arquivo components.zip anexado:
 
@@ -339,16 +339,16 @@ Baixe e descompacte o arquivo components.zip para obter os arquivos DSCSample.ja
 
 O processo LCA é executado no servidor do LiveCycle e requer o endereço do servidor e as credenciais de login.
 
-1. Ir para `https://'[server]:[port]'/system/console/configMgr` e faça logon como Administrador.
-1. Localize Configuração do SDK do cliente do LiveCycle Adobe e clique em **Editar** (ícone editar). O painel Configurações é aberto.
+1. Vá para `https://'[server]:[port]'/system/console/configMgr` e faça logon como Administrador.
+1. Localize a Configuração do SDK do Cliente do Adobe LiveCycle e clique em **Editar** (ícone de edição). O painel Configurações é aberto.
 
-1. Insira os seguintes detalhes e clique em **Salvar**:
+1. Insira os detalhes a seguir e clique em **Salvar**:
 
-   * **URL do servidor**: URL do servidor LC cujo serviço Enviar para revisão o código do manipulador de ação usa.
+   * **URL do Servidor**: URL do servidor LC cujo serviço Enviar para Revisão o código do manipulador de ações usa.
    * **Nome de usuário**: nome de usuário administrador do servidor LC
-   * **Senha**: Senha do nome de usuário Admin
+   * **Senha**: senha do nome de usuário administrador
 
-   ![Configuração do SDK do cliente do LiveCycle Adobe](assets/3_clientsdkconfiguration.png)
+   ![Configuração do SDK do cliente do Adobe LiveCycle](assets/3_clientsdkconfiguration.png)
 
 #### Instalar o arquivo do LiveCycle (LCA) {#install-livecycle-archive-lca}
 
@@ -360,21 +360,21 @@ O processo de LiveCycle necessário que habilita o processo do serviço de email
 
 1. Faça logon como Administrador no adminui do LiveCycle® Server em `https:/[lc server]/:[lc port]/adminui`.
 
-1. Navegue até **Início > Serviços > Aplicativos e Serviços > Gerenciamento de Aplicativos**.
+1. Navegue até **Home > Serviços > Aplicativos e Serviços > Gerenciamento de Aplicativos**.
 
 1. Se o aplicativo SendLetterForReview já estiver presente, ignore as etapas restantes neste procedimento; caso contrário, continue para as próximas etapas.
 
-   ![Aplicativo SendLetterForReview na interface](assets/12_applicationmanagementlc.png)
+   ![EnviarCartaParaRevisar aplicativo na interface do usuário](assets/12_applicationmanagementlc.png)
 
 1. Clique em **Importar**.
 
-1. Clique em **Escolher arquivo** e selecione SendLetterForReview.lca.
+1. Clique em **Escolher Arquivo** e selecione SendLetterForReview.lca.
 
    ![Selecione o arquivo SendLetterForReview.lca](assets/14_sendletterforreview_lca.png)
 
 1. Clique em **Visualizar**.
 
-1. Selecionar **Implantar ativos para tempo de execução quando a importação for concluída**.
+1. Selecione **Implantar ativos para tempo de execução quando a importação estiver concluída**.
 
 1. Clique em **Importar**.
 
@@ -382,10 +382,10 @@ O processo de LiveCycle necessário que habilita o processo do serviço de email
 
 Mencione no servidor Experience Manager os serviços de LiveCycle que você deseja que acessem o servidor Experience Manager.
 
-1. Efetue login como administrador em `https:/[host]:'port'/system/console/configMgr`.
+1. Fazer logon como Administrador em `https:/[host]:'port'/system/console/configMgr`.
 
-1. Localize e clique em **Configuração do SDK do cliente do LiveCycle Adobe**. O painel Configuração do SDK do cliente do LiveCycle do Adobe é exibido.
-1. Na lista Nome do serviço, clique no ícone + e adicione um serviceName **EnviarCartaParaRevisão/EnviarCartaParaProcessoDeRevisão**.
+1. Localize e clique em **Configuração do SDK do Cliente do Adobe LiveCycle**. O painel Configuração do SDK do cliente do LiveCycle do Adobe é exibido.
+1. Na lista Nome do Serviço, clique no ícone + e adicione um serviceName **SendLetterForReview/SendLetterForReviewProcess**.
 
 1. Clique em **Salvar**.
 
@@ -393,13 +393,13 @@ Mencione no servidor Experience Manager os serviços de LiveCycle que você dese
 
 Nesse cenário, para que o Gerenciamento de correspondências possa enviar um email, configure o serviço de email no servidor do LiveCycle.
 
-1. Faça logon com credenciais de Administrador para LiveCycle Server adminui em `https:/[lc server]:[lc port]/adminui`.
+1. Faça logon com credenciais de Administrador no adminui do LiveCycle Server em `https:/[lc server]:[lc port]/adminui`.
 
 1. Navegue até **Home > Serviços > Aplicativos e Serviços > Gerenciamento de Serviços**.
 
-1. Localize e clique em **ServiçoEmail**.
+1. Localize e clique em **EmailService**.
 
-1. Entrada **Host SMTP**, configure o serviço de email.
+1. No **Host SMTP**, configure o serviço de email.
 
 1. Clique em **Salvar**.
 
@@ -407,7 +407,7 @@ Nesse cenário, para que o Gerenciamento de correspondências possa enviar um em
 
 Para usar a API do Gerenciamento de correspondências, baixe o DSCSample.jar (anexado neste documento como parte do components.zip) e faça upload dele para o servidor do LiveCycle. Depois que o arquivo DSCSample.jar é carregado no servidor do LiveCycle, o servidor do Experience Manager usa o arquivo DSCSample.jar para acessar a API renderLetter.
 
-Para obter mais informações, consulte [Conectar o AEM Forms com o LiveCycle Adobe](/help/forms/using/aem-livecycle-connector.md).
+Para obter mais informações, consulte [Conectando o AEM Forms com o Adobe LiveCycle](/help/forms/using/aem-livecycle-connector.md).
 
 1. Atualize o URL do servidor Experience Manager no cmsa.properties em DSCSample.jar, que está no seguinte local:
 
@@ -415,7 +415,7 @@ Para obter mais informações, consulte [Conectar o AEM Forms com o LiveCycle Ad
 
 1. Forneça os seguintes parâmetros no arquivo de configuração:
 
-   * **crx.serverUrl**=https:/host:port/[caminho do contexto]/[URL do AEM]
+   * **crx.serverUrl**=https:/host:port/[caminho de contexto]/[URL do AEM]
    * **crx.username**= nome de usuário Experience Manager
    * **crx.password**= senha do Experience Manager
    * **crx.appRoot**=/content/apps/cm
@@ -428,15 +428,15 @@ Para obter mais informações, consulte [Conectar o AEM Forms com o LiveCycle Ad
 
 #### Importar DSC para o LiveCycle {#import-dsc-to-livecyle}
 
-O arquivo DSCSample.jar usa a API renderLetter para renderizar a letra como bytes de PDF dos dados XML que o DSC fornece como entrada. Para obter mais informações sobre renderLetter e outras APIs, consulte [Serviço de renderização de carta](https://www.adobe.io/experience-manager/reference-materials/6-5/forms/javadocs/index.html?com/adobe/icc/ddg/api/LetterRenderService.html).
+O arquivo DSCSample.jar usa a API renderLetter para renderizar a letra como bytes de PDF dos dados XML que o DSC fornece como entrada. Para obter mais informações sobre renderLetter e outras APIs, consulte [Serviço de Renderização de Carta](https://www.adobe.io/experience-manager/reference-materials/6-5/forms/javadocs/index.html?com/adobe/icc/ddg/api/LetterRenderService.html).
 
 1. Inicie o Workbench e faça logon.
-1. Selecionar **Janela > Mostrar exibições > Componentes**. A visualização Componentes é adicionada ao Workbench ES2.
+1. Selecione **Janela > Mostrar Exibições > Componentes**. A visualização Componentes é adicionada ao Workbench ES2.
 
-1. Clique com o botão direito do mouse **Componentes** e selecione **Instalar componente**.
+1. Clique com o botão direito do mouse em **Componentes** e selecione **Instalar Componente**.
 
-1. Selecione o **DSCSample.jar** arquivo por meio do navegador de arquivos e clique em **Abertura**.
-1. Clique com o botão direito do mouse **RenderWrapper** e selecione **Iniciar componente**. Se o componente for iniciado, uma seta verde aparecerá ao lado do nome do componente.
+1. Selecione o arquivo **DSCSample.jar** por meio do navegador de arquivos e clique em **Abrir**.
+1. Clique com o botão direito em **RenderWrapper** e selecione **Iniciar Componente**. Se o componente for iniciado, uma seta verde aparecerá ao lado do nome do componente.
 
 ## Enviar carta para revisão {#send-letter-for-review}
 
@@ -444,7 +444,7 @@ Depois de configurar a ação e o botão para enviar a carta para revisão:
 
 1. Limpe o cache do navegador.
 
-1. Na interface de Criar correspondência, clique em **Revisão da carta** e especifique a ID de email do revisor.
+1. Na interface de Criar correspondência, clique em **Revisão de correspondência** e especifique a ID de email do revisor.
 
 1. Clique em **Enviar**.
 

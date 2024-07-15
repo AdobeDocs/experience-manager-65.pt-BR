@@ -80,14 +80,14 @@ O gerenciamento e a criação do conteúdo do seu site têm algumas práticas re
 
 ## Communities {#communities}
 
-[AEM Communities](/help/communities/overview.md) O simplifica a criação e o gerenciamento de comunidades no local.
+O [AEM Communities](/help/communities/overview.md) simplifica a criação e o gerenciamento de Comunidades locais.
 
 Algumas práticas recomendadas para comunidades estão descritas aqui:
 
 |  |  |  |
 |---|---|---|
-| Práticas recomendadas para trabalhar com conteúdo gerado pelo usuário (UGC) | [Diretrizes de codificação](/help/communities/code-guide.md) | Diretrizes para o desenvolvimento de código flexível e portátil para o [estrutura da componente social](/help/communities/scf.md) (SCF). |
-| Exemplo de uso de componentes do Communities | [Guia de componentes da comunidade](/help/communities/components-guide.md) | Uma ferramenta de desenvolvimento interativa. |
+| Práticas recomendadas para trabalhar com conteúdo gerado pelo usuário (UGC) | [Diretrizes de codificação](/help/communities/code-guide.md) | Diretrizes para o desenvolvimento de código flexível e portátil para a [estrutura de componente social](/help/communities/scf.md) (SCF). |
+| Exemplo de uso de componentes do Communities | [Guia de Componentes da Comunidade](/help/communities/components-guide.md) | Uma ferramenta de desenvolvimento interativa. |
 
 ## Ferramentas/HTL {#tooling-htl}
 
@@ -101,4 +101,4 @@ A Linguagem de modelo de HTML (HTL) é um novo sistema de modelos de HTML, intro
 >[!NOTE]
 >
 >Seguir um tutorial com várias partes pode ser de interesse para a prática recomendada de configurar um novo projeto AEM, detalhando os Componentes principais, Modelos editáveis, Bibliotecas de clientes e desenvolvimento de componentes:
->[Introdução ao AEM Sites - Tutorial do WKND](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html)
+>[Introdução ao AEM Sites - Tutorial WKND](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html)

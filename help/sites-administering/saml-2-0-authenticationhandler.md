@@ -18,7 +18,7 @@ ht-degree: 1%
 
 # Manipulador de autenticação SAML 2.0{#saml-authentication-handler}
 
-O AEM tem uma [SAML](https://saml.xml.org/saml-specifications) manipulador de autenticação. Esse manipulador oferece suporte ao [SAML](https://saml.xml.org/saml-specifications) 2.0 Protocolo de solicitação de autenticação (perfil Web-SSO) usando o `HTTP POST` vinculativo.
+O AEM vem com um manipulador de autenticação [SAML](https://saml.xml.org/saml-specifications). Este manipulador dá suporte ao Protocolo de Solicitação de Autenticação [SAML](https://saml.xml.org/saml-specifications) 2.0 (perfil Web-SSO) usando a associação `HTTP POST`.
 
 Ele oferece suporte a:
 
@@ -27,15 +27,15 @@ Ele oferece suporte a:
 * sincronização de grupos com grupos existentes no AEM
 * O provedor de serviços e o provedor de identidade iniciaram a autenticação
 
-Esse manipulador armazena a mensagem de resposta SAML criptografada no nó do usuário ( `usernode/samlResponse`) para facilitar a comunicação com um provedor de serviços terceirizado.
+Este manipulador armazena a mensagem de resposta SAML criptografada no nó do usuário ( `usernode/samlResponse`) para facilitar a comunicação com um Provedor de Serviços de terceiros.
 
 >[!NOTE]
 >
->Consulte [uma demonstração da integração do AEM e SAML](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17481.html).
+>Consulte [uma demonstração de integração de AEM e SAML](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17481.html).
 
 ## Configurando o Manipulador de Autenticação SAML 2.0 {#configuring-the-saml-authentication-handler}
 
-A variável [Console da Web](/help/sites-deploying/configuring-osgi.md) fornece acesso à [SAML](https://saml.xml.org/saml-specifications) Configuração do Manipulador de autenticação 2.0 chamada **Manipulador de autenticação Adobe Granite SAML 2.0**. As seguintes propriedades podem ser definidas.
+O [console da Web](/help/sites-deploying/configuring-osgi.md) fornece acesso à configuração do Manipulador de Autenticação [SAML](https://saml.xml.org/saml-specifications) 2.0 chamada **Manipulador de Autenticação SAML 2.0 do Adobe Granite**. As seguintes propriedades podem ser definidas.
 
 >[!NOTE]
 >
@@ -47,53 +47,53 @@ A variável [Console da Web](/help/sites-deploying/configuring-osgi.md) fornece 
 
 >[!NOTE]
 >
->As asserções SAML são assinadas e podem, opcionalmente, ser criptografadas. Para que isso funcione, é necessário fornecer pelo menos o certificado público do Provedor de Identidade no TrustStore. Consulte [Adicionar o certificado IdP ao TrustStore](/help/sites-administering/saml-2-0-authenticationhandler.md#add-the-idp-certificate-to-the-aem-truststore) para obter mais informações.
+>As asserções SAML são assinadas e podem, opcionalmente, ser criptografadas. Para que isso funcione, é necessário fornecer pelo menos o certificado público do Provedor de Identidade no TrustStore. Consulte [Adicionando o certificado IdP à seção TrustStore](/help/sites-administering/saml-2-0-authenticationhandler.md#add-the-idp-certificate-to-the-aem-truststore) para obter mais informações.
 
-**Caminho** Caminho do repositório para o qual esse manipulador de autenticação deve ser usado pelo Sling. Se estiver vazio, o manipulador de autenticação será desativado.
+**Caminho** Caminho do repositório para o qual este manipulador de autenticação deve ser usado pelo Sling. Se estiver vazio, o manipulador de autenticação será desativado.
 
-**Classificação do serviço** Valor de Classificação do OSGi Framework Service para indicar a ordem na qual chamar esse serviço. É um valor inteiro em que valores mais altos designam maior precedência.
+**Classificação do Serviço** Valor de Classificação do Serviço OSGi Framework para indicar a ordem na qual chamar este serviço. É um valor inteiro em que valores mais altos designam maior precedência.
 
-**Alias do certificado IDP** O alias do certificado do IdP na truststore global. Se essa propriedade estiver vazia, o manipulador de autenticação será desativado. Consulte o capítulo &quot;Adicionar o certificado IdP ao AEM TrustStore&quot; abaixo sobre como configurá-lo.
+**Alias do Certificado IDP** O alias do certificado IdP no truststore global. Se essa propriedade estiver vazia, o manipulador de autenticação será desativado. Consulte o capítulo &quot;Adicionar o certificado IdP ao AEM TrustStore&quot; abaixo sobre como configurá-lo.
 
-**URL DO IDP** URL do IDP para o qual a Solicitação de Autenticação SAML deve ser enviada. Se essa propriedade estiver vazia, o manipulador de autenticação será desativado.
+**URL do IDP** URL do IDP para o qual a Solicitação de Autenticação SAML deve ser enviada. Se essa propriedade estiver vazia, o manipulador de autenticação será desativado.
 
 >[!CAUTION]
 >
->O nome de host do Provedor de Identidade deve ser adicionado ao **Filtro referenciador do Apache Sling** Configuração do OSGi. Consulte a [Console da Web](/help/sites-deploying/configuring-osgi.md) para obter mais informações.
+>O nome de host do Provedor de Identidade deve ser adicionado à configuração OSGi **Filtro do Referenciador Apache Sling**. Consulte a seção [Console da Web](/help/sites-deploying/configuring-osgi.md) para obter mais informações.
 
-**ID da entidade do provedor de serviços** ID que identifica exclusivamente este provedor de serviços com o provedor de identidade. Se essa propriedade estiver vazia, o manipulador de autenticação será desativado.
+**ID da Entidade do Provedor de Serviços** que identifica exclusivamente este provedor de serviços com o provedor de identidade. Se essa propriedade estiver vazia, o manipulador de autenticação será desativado.
 
-**Redirecionamento padrão** O local padrão para redirecionar após a autenticação bem-sucedida.
+**Redirecionamento padrão** O local padrão para o qual redirecionar após a autenticação bem-sucedida.
 
 >[!NOTE]
 >
->Esse local só será usado se a variável `request-path` cookie não está definido. Se você solicitar qualquer página abaixo do caminho configurado sem um token de logon válido, o caminho solicitado será armazenado em um cookie
+>Este local só será usado se o cookie `request-path` não estiver definido. Se você solicitar qualquer página abaixo do caminho configurado sem um token de logon válido, o caminho solicitado será armazenado em um cookie
 >e o navegador será redirecionado para este local novamente após a autenticação bem-sucedida.
 
-**Atributo de ID de usuário** O nome do atributo que contém a ID de usuário usada para autenticar e criar o usuário no repositório CRX.
+**Atributo de ID de usuário** O nome do atributo que contém a ID de usuário usada para autenticar e criar o usuário no repositório do CRX.
 
 >[!NOTE]
 >
->A ID de usuário não será retirada do `saml:Subject` nó da asserção SAML, mas a partir deste `saml:Attribute`.
+>A ID de usuário não será retirada do nó `saml:Subject` da asserção SAML, mas desse `saml:Attribute`.
 
-**Usar criptografia** Se este manipulador de autenticação espera ou não afirmações SAML criptografadas.
+**Usar Criptografia** Se este manipulador de autenticação espera ou não declarações SAML criptografadas.
 
-**Criar automaticamente usuários do CRX** Determina se os usuários não existentes no repositório devem ou não ser criados automaticamente após a autenticação bem-sucedida.
+**Criar Usuários do CRX Automaticamente** Determina se os usuários não existentes no repositório devem ou não ser criados automaticamente após a autenticação bem-sucedida.
 
 >[!CAUTION]
 >
 >Se a criação automática de usuários do CRX estiver desativada, os usuários terão que ser criados manualmente.
 
-**Adicionar a grupos** Se um usuário deve ou não ser adicionado automaticamente a grupos CRX após a autenticação bem-sucedida.
+**Adicionar aos grupos** Se um usuário deve ou não ser adicionado automaticamente aos grupos do CRX após a autenticação bem-sucedida.
 
-**Associação de grupo** O nome do saml:Attribute contendo uma lista de grupos CRX aos quais esse usuário deve ser adicionado.
+**Associação de Grupo** O nome do saml:Attribute contendo uma lista de grupos CRX aos quais esse usuário deve ser adicionado.
 
 ## Adicionar o certificado IdP ao AEM TrustStore {#add-the-idp-certificate-to-the-aem-truststore}
 
 As asserções SAML são assinadas e podem, opcionalmente, ser criptografadas. Para que isso funcione, é necessário fornecer pelo menos o certificado público do IdP no repositório. Para fazer isso, é necessário:
 
 1. Ir para *http:/serveraddress:serverport/libs/granite/security/content/truststore.html*
-1. Pressione a **[!UICONTROL Criar link TrustStore]**
+1. Pressione o **[!UICONTROL link Criar TrustStore]**
 1. Insira a senha para o TrustStore e pressione **[!UICONTROL Salvar]**.
 1. Clique em **[!UICONTROL Gerenciar TrustStore]**.
 1. Carregue o certificado IdP.
@@ -108,8 +108,8 @@ As asserções SAML são assinadas e podem, opcionalmente, ser criptografadas. P
 >As etapas abaixo são obrigatórias, caso contrário, a seguinte exceção será lançada: `com.adobe.granite.keystore.KeyStoreNotInitialisedException: Uninitialised system trust store`
 
 1. Ir para: [http://localhost:4502/libs/granite/security/content/useradmin.html](http://localhost:4502/libs/granite/security/content/useradmin.html)
-1. Edite o `authentication-service` usuário.
-1. Crie um KeyStore clicando em **Criar KeyStore** em **Configurações da conta**.
+1. Editar o usuário `authentication-service`.
+1. Crie um KeyStore clicando em **Criar KeyStore** em **Configurações de Conta**.
 
 >[!NOTE]
 >
@@ -123,8 +123,8 @@ As asserções SAML são assinadas e podem, opcionalmente, ser criptografadas. P
 
    `openssl pkcs8 -topk8 -inform PEM -outform DER -in key.pem -out key.der -nocrypt`
 
-1. Faça upload do arquivo de chave de privacidade clicando em **Selecione o arquivo da chave de privacidade**.
-1. Faça upload do arquivo de certificado clicando em **Selecionar arquivos da cadeia de certificados**.
+1. Carregue o arquivo de chave privada clicando em **Selecionar arquivo de chave privada**.
+1. Carregue o arquivo de certificado clicando em **Selecionar Arquivos da Cadeia de Certificados**.
 1. Atribua um Alias, conforme mostrado abaixo:
 
    ![chlimage_1-373](assets/chlimage_1-373.png)
@@ -133,10 +133,10 @@ As asserções SAML são assinadas e podem, opcionalmente, ser criptografadas. P
 
 Você pode configurar um Logger para depurar quaisquer problemas que possam surgir ao configurar incorretamente o SAML. Você pode fazer isso ao:
 
-1. Acessando o console da Web, em *http://localhost:4502/system/console/configMgr*
-1. Procure e clique na entrada chamada **Configuração do logger de log do Apache Sling**
+1. Acessando o Console da Web, em *http://localhost:4502/system/console/configMgr*
+1. Procure e clique na entrada denominada **Configuração do logger de log do Apache Sling**
 1. Crie um agente de log com a seguinte configuração:
 
-   * **Nível de log:** Depurar
-   * **Arquivo de log:** logs/saml.log
+   * **Nível de Log:** Depuração
+   * **Arquivo de Log:** logs/saml.log
    * **Logger:** com.adobe.granite.auth.saml

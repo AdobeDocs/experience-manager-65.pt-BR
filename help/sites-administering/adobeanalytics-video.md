@@ -23,7 +23,7 @@ Há vários métodos disponíveis para rastrear eventos de vídeo, dois dos quai
 
 >[!NOTE]
 >
->Antes de continuar, verifique se você tem uma **vídeo reproduzível** enviado por AEM.
+>Antes de continuar, verifique se você tem um **vídeo reproduzível** carregado com AEM.
 >
 >Para garantir que seus vídeos sejam reproduzidos na página, consulte **[este tutorial](/help/sites-authoring/default-components-foundation.md#video)** para obter informações sobre como transcodificar arquivos de vídeo no AEM.
 
@@ -31,15 +31,15 @@ Use o procedimento a seguir para configurar uma estrutura para o rastreamento de
 
 >[!NOTE]
 >
->Para novas implementações, é recomendável que você **não usar** as opções herdadas para o rastreamento de vídeo. Use o **Etapas** em vez disso.
+>Para novas implementações, é recomendável que você **não use** as opções herdadas para o rastreamento de vídeo. Em vez disso, use o método **Marcos**.
 
 ## Etapas comuns {#common-steps}
 
-1. Configurar uma página da Web arrastando um **componente de vídeo** no sidekick e adicionar um reproduzível **vídeo como um ativo** para o componente
+1. Configure uma página da Web arrastando um **componente de vídeo** do sidekick e adicionando um **vídeo reproduzível como um ativo** para o componente
 
 1. [Criar uma configuração e estrutura do Adobe Analytics](/help/sites-administering/adobeanalytics.md).
 
-   * Os exemplos nas seções seguintes usam o nome **my-sc-configuration** para a configuração e **videofw** para o quadro.
+   * Os exemplos nas seções a seguir usam o nome **my-sc-configuration** para a configuração e **videofw** para a estrutura.
 
 1. Na página da estrutura, selecione uma RSID e defina o uso para todos. ([https://localhost:4502/cf#/etc/cloudservices/sitecatalyst/videoconf/videofw.html](https://localhost:4502/cf#/etc/cloudservices/sitecatalyst/videoconf/videofw.html))
 1. Na categoria geral de componentes no Sidekick, arraste o componente de Vídeo para a estrutura.
@@ -80,7 +80,7 @@ A tabela a seguir descreve as variáveis de CQ padrão fornecidas para o método
   </tr>
   <tr>
    <td>eventdata.videoName </td>
-   <td>As variáveis mapeadas para esse conterão a variável <strong>fácil de usar</strong> nome (<strong>Título</strong>) do vídeo, se definido no DAM; se não estiver definido, o do vídeo <strong>nome do arquivo</strong> será enviado. Enviado somente uma vez, no início da reprodução de um vídeo.</td>
+   <td>As variáveis mapeadas para este conterão o nome <strong>amigável</strong> do usuário (<strong>Título</strong>) do vídeo se definido no DAM; se não estiver definido, o <strong>nome de arquivo</strong> do vídeo será enviado. Enviado somente uma vez, no início da reprodução de um vídeo.</td>
   </tr>
   <tr>
    <td>eventdata.videoFileName </td>
@@ -104,11 +104,11 @@ A tabela a seguir descreve as variáveis de CQ padrão fornecidas para o método
   </tr>
   <tr>
    <td>eventdata.events.a.media.complete </td>
-   <td>Enviado quando o vídeo terminar de ser reproduzido<br /> </td>
+   <td>Enviado quando a reprodução do vídeo terminar<br /> </td>
   </tr>
   <tr>
    <td>eventdata.events.milestoneX </td>
-   <td>Enviado quando o marco fornecido é passado, X representa o segundo em que o marco é acionado<br /> </td>
+   <td>Enviado quando o marco fornecido é passado, X representa o segundo em que o marco é acionado em<br /> </td>
   </tr>
   <tr>
    <td>eventdata.a.contentType </td>
@@ -127,7 +127,7 @@ A tabela a seguir descreve as variáveis de CQ padrão fornecidas para o método
 
 >[!NOTE]
 >
->É possível definir as configurações de **fácil de usar** abrindo o vídeo para edição no DAM e definindo o parâmetro **Título** para o nome desejado.
+>Você pode definir o nome **amigável** de um vídeo, abrindo o vídeo para edição no DAM e definindo o campo de metadados **Título** com o nome desejado.
 
 1. Depois de selecionar Etapas como método de rastreamento, na caixa Rastrear deslocamento, insira uma lista separada por vírgulas de deslocamentos de rastreamento em segundos. Por exemplo, o valor a seguir define marcos em 4, 8, 16, 20 e 28 segundos após o início do vídeo:
 
@@ -139,10 +139,10 @@ A tabela a seguir descreve as variáveis de CQ padrão fornecidas para o método
 
 1. Para mapear as variáveis CQ para as propriedades do Adobe Analytics, arraste as propriedades do Adobe Analytics do ContentFinder ao lado da variável CQ no componente.
 
-   Para obter informações sobre como otimizar os mapeamentos, consulte [Medição de vídeo no Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html) guia.
+   Para obter informações sobre como otimizar os mapeamentos, consulte o guia [Medição de Vídeo no Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html).
 
-1. [Adicionar a estrutura](/help/sites-administering/adobeanalytics.md) para a página.
-1. Para testar a configuração no **Modo de visualização**, reproduza o vídeo para obter as chamadas do Adobe Analytics para acionar o.
+1. [Adicionar a estrutura](/help/sites-administering/adobeanalytics.md) à página.
+1. Para testar a configuração no **modo de Visualização**, reproduza o vídeo para obter chamadas do Adobe Analytics para acionar.
 
 Os exemplos de dados de rastreamento do Adobe Analytics a seguir se aplicam ao rastreamento de Marco usando deslocamentos de rastreamento de 4, 8, 16, 20 e 24, e os seguintes mapeamentos para as variáveis CQ:
 
@@ -217,7 +217,7 @@ Os exemplos de dados de rastreamento do Adobe Analytics a seguir se aplicam ao r
 
 Neste exemplo, o componente de Vídeo aparece da seguinte maneira na página da estrutura:
 
-![video1](assets/video1.png)
+![vídeo1](assets/video1.png)
 
 >[!NOTE]
 >
@@ -227,7 +227,7 @@ As chamadas para o Adobe Analytics usando o exemplo fornecido devem ter esta apa
 
 ![chlimage_1-128](assets/chlimage_1-128.png)
 
-*Este é o **primeira chamada**feito no Adobe Analytics contendo os seguintes valores:*
+*Esta é a **primeira chamada**feita para o Adobe Analytics contendo os seguintes valores:*
 
 * *prop1 e eVar 1 para eventdata.a.media.name,*
 * *props2-4, juntamente com eVar 2 e eVar 3 contendo contentType (vídeo) e segmento (1:O:1-4)*
@@ -235,20 +235,20 @@ As chamadas para o Adobe Analytics usando o exemplo fornecido devem ter esta apa
 
 ![chlimage_1-129](assets/chlimage_1-129.png)
 
-*Este é o **terceira chamada**feito no Adobe Analytics:*
+*Esta é a **terceira chamada**feita para o Adobe Analytics:*
 
 * *prop1 e eVar 1 contêm a.media.name;*
 * *event1 porque um segmento foi visualizado*
-* *event2 enviado com o tempo reproduzido = 4*
+* *evento2 enviado com tempo reproduzido = 4*
 * *event11 enviado porque eventdata.events.milestone8 foi atingido*
-* *prop2 para 4 não são enviados (já que eventdata.events.a.media.view não foi acionado)*
+* *prop2 a 4 não são enviados (já que eventdata.events.a.media.view não foi acionado)*
 
 ## Etapas não herdadas {#non-legacy-milestones}
 
 O método de Etapas não herdadas é semelhante ao método de Etapas, exceto que as etapas são definidas usando porcentagens da duração da trilha. As semelhanças são as seguintes:
 
 * Quando uma reprodução de vídeo passa um marco, a página chama o Adobe Analytics para rastrear o evento.
-* A variável [conjunto estático de variáveis CQ](#cqvars) que são definidos para mapeamento com propriedades do Adobe Analytics.
+* O [conjunto estático de variáveis CQ](#cqvars) definidas para mapeamento com propriedades Adobe Analytics.
 * Para cada marco definido, o componente cria uma variável do CQ que você pode mapear para uma propriedade do Adobe Analytics.
 
 O nome dessas variáveis CQ usa o seguinte formato:
@@ -274,14 +274,14 @@ eventdata.events.milestoneXX
 
 1. Para mapear as variáveis CQ para as propriedades do Adobe Analytics, arraste as propriedades do Adobe Analytics do ContentFinder ao lado da variável CQ no componente.
 
-   Para obter informações sobre como otimizar os mapeamentos, consulte [Medição de vídeo no Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html) guia.
+   Para obter informações sobre como otimizar os mapeamentos, consulte o guia [Medição de Vídeo no Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html).
 
-1. [Adicionar a estrutura](/help/sites-administering/adobeanalytics.md) para a página.
-1. Para testar a configuração no **Modo de visualização**, reproduza o vídeo para obter as chamadas do Adobe Analytics para acionar o.
+1. [Adicionar a estrutura](/help/sites-administering/adobeanalytics.md) à página.
+1. Para testar a configuração no **modo de Visualização**, reproduza o vídeo para obter chamadas do Adobe Analytics para acionar.
 
 ## Etapas herdadas {#legacy-milestones}
 
-Este método é semelhante ao método de Marcos com a diferença de que os marcos especificados na variável *Deslocamento de rastreamento* são porcentagens em vez de pontos definidos no vídeo.
+Este método é semelhante ao método de Marcos com a diferença de que os marcos especificados no campo *Deslocamento de rastreamento* são porcentagens em vez de pontos de definição no vídeo.
 
 >[!NOTE]
 >
@@ -297,7 +297,7 @@ Este método é semelhante ao método de Marcos com a diferença de que os marco
  <tbody>
   <tr>
    <td>eventdata.videoName <br /> </td>
-   <td>As variáveis mapeadas para esse conterão a variável <strong>fácil de usar</strong> nome (<strong>Título</strong>) do vídeo se definido no DAM; se o Título não estiver definido, o nome do vídeo <strong>nome do arquivo</strong> será enviado. Enviado somente uma vez, no início da reprodução de um vídeo.<br /> </td>
+   <td>As variáveis mapeadas para este contêm o nome <strong>amigável</strong> do usuário (<strong>Título</strong>) do vídeo, se definido no DAM. Se o Título não for definido, o <strong>nome do arquivo</strong> do vídeo será enviado. Enviado apenas uma vez, no início da reprodução de um vídeo.<br /> </td>
   </tr>
   <tr>
    <td>eventdata.videoFileName </td>
@@ -312,13 +312,13 @@ Este método é semelhante ao método de Marcos com a diferença de que os marco
 
 >[!NOTE]
 >
->É possível definir as configurações de **fácil de usar** abrindo o vídeo para edição no DAM e definindo o parâmetro **Título** para o nome desejado. Também é necessário Salvar as alterações feitas ao concluir.
+>Você pode definir o nome **amigável** de um vídeo, abrindo o vídeo para edição no DAM e definindo o campo de metadados **Título** com o nome desejado. Também é necessário Salvar as alterações feitas ao concluir.
 
 1. Mapear essas variáveis para props 1 a 3
 
-   A variável **resto das informações relevantes** na chamada será enviada concatenada em **um** variável nomeada **pev3**.
+   O **restante das informações relevantes** na chamada será enviado concatenado na variável **one** denominada **pev3**.
 
-   **Exemplos de chamadas** Para o Adobe Analytics usar o exemplo fornecido, deve ter esta aparência quando visualizado com o DigitalPulse Debugger:
+   **Chamadas de exemplo** para o Adobe Analytics usando o exemplo fornecido devem ter esta aparência quando visualizadas com o DigitalPulse Debugger:
 
    ![marcos1](assets/lmilestones1.png)
 
@@ -326,15 +326,15 @@ Este método é semelhante ao método de Marcos com a diferença de que os marco
 
    * *Nome* - O nome do arquivo de vídeo (*film.avi*)
 
-   * *Length* - A duração do arquivo de vídeo, em segundos (*100*)
+   * *Comprimento* - O comprimento do arquivo de vídeo, em segundos (*100*)
 
-   * *Nome do player* - O reprodutor de vídeo usado para reproduzir o arquivo de vídeo (*vídeo HTML5*)
+   * *Nome do player* - O player de vídeo usado para reproduzir o arquivo de vídeo (*HTML5 vídeo*)
 
-   * *Total de segundos reproduzidos* - O número total de segundos em que o vídeo foi reproduzido (*25*)
+   * *Total de Segundos Reproduzidos* - O número total de segundos em que o vídeo foi reproduzido (*25*)
 
-   * *Carimbo de data e hora inicial* - Carimbo de data e hora que identifica quando a reprodução do vídeo começou (*1331035567*)
+   * *Carimbo de data/hora de início* - Carimbo de data/hora que identifica quando a reprodução de vídeo começou (*1331035567*)
 
-   * *Reproduzir sessão* - Os detalhes da sessão de reprodução. Esse campo indica como o usuário interagiu com o vídeo. Isso pode incluir dados como onde começaram a reproduzir o vídeo, se usaram o controle deslizante do vídeo para avançar o vídeo e onde pararam de reproduzir o vídeo (*L10E24S58L58 - video was stopped at sec (O vídeo foi interrompido em segundos). 25 da seção L10, então ignorado para s. 48*)
+   * *Reproduzir Sessão* - Os detalhes da sessão de reprodução. Esse campo indica como o usuário interagiu com o vídeo. Isso pode incluir dados como onde eles começaram a reproduzir o vídeo, se usaram o controle deslizante do vídeo para avançar o vídeo e onde pararam de reproduzir o vídeo (*L10E24S58L58 - o vídeo foi interrompido em segundos. 25 da seção L10, então ignorado para s. 48*)
 
 ## Segundos herdados {#legacy-seconds}
 
@@ -354,7 +354,7 @@ Ao usar o método** legacy seconds**, as chamadas do Adobe Analytics são aciona
  <tbody>
   <tr>
    <td>eventdata.videoName <br /> </td>
-   <td>As variáveis mapeadas para esse conterão a variável <strong>fácil de usar</strong> nome (<strong>Título</strong>) do vídeo se definido no DAM; se o Título não estiver definido, o nome do vídeo <strong>nome do arquivo</strong> será enviado. Enviado somente uma vez, no início da reprodução de um vídeo.<br /> </td>
+   <td>As variáveis mapeadas para este contêm o nome <strong>amigável</strong> do usuário (<strong>Título</strong>) do vídeo, se definido no DAM. Se o Título não for definido, o <strong>nome do arquivo</strong> do vídeo será enviado. Enviado apenas uma vez, no início da reprodução de um vídeo.<br /> </td>
   </tr>
   <tr>
    <td>eventdata.videoFileName </td>
@@ -369,17 +369,17 @@ Ao usar o método** legacy seconds**, as chamadas do Adobe Analytics são aciona
 
 >[!NOTE]
 >
->É possível definir as configurações de **fácil de usar** abrindo o vídeo para edição no DAM e definindo o parâmetro **Título** para o nome desejado. Também é necessário Salvar as alterações feitas ao concluir.
+>Você pode definir o nome **amigável** de um vídeo, abrindo o vídeo para edição no DAM e definindo o campo de metadados **Título** com o nome desejado. Também é necessário Salvar as alterações feitas ao concluir.
 
 1. Mapear essas variáveis para prop1, prop2 e prop3
 
-   A variável **resto das informações relevantes** na chamada será enviado concatinado em **um** variável nomeada **pev3**.
+   O **restante das informações relevantes** na chamada será enviado concatenado na variável **one** denominada **pev3**.
 
    As chamadas para o Adobe Analytics usando o exemplo fornecido devem ter esta aparência quando visualizadas com o DigitalPulse Debugger:
 
-   ![lseconds](assets/lseconds.png)
+   ![lsegundos](assets/lseconds.png)
 
-   *A chamada é semelhante à chamada de Marcos herdados acima. Consulte as informações em pev3 **[fornecido lá](/help/sites-administering/adobeanalytics.md)**.*
+   *A chamada é semelhante à chamada de Marcos herdados acima. Consulte as informações no pev3 **[fornecidas aqui](/help/sites-administering/adobeanalytics.md)**.*
 
 **Referências usadas neste tutorial:**
 

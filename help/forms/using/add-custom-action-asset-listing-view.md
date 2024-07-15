@@ -20,7 +20,7 @@ ht-degree: 2%
 
 ## Visão geral {#overview}
 
-A solução de Gerenciamento de correspondência permite adicionar ações personalizadas à interface do usuário Gerenciar ativos.
+A solução de Gerenciamento de correspondência permite adicionar ações personalizadas à interface de usuário Gerenciar o Assets.
 
 Você pode adicionar uma ação personalizada à exibição da Lista de ativos para:
 
@@ -43,11 +43,11 @@ As etapas abaixo adicionam um comando &quot;Baixar PDF simples&quot; à exibiç�
 
 Para personalizar o Gerenciamento de correspondência para permitir que seus usuários baixem uma PDF simples de cartas, conclua as seguintes etapas:
 
-1. Ir para `https://'[server]:[port]'/[ContextPath]/crx/de` e faça logon como Administrador.
+1. Vá para `https://'[server]:[port]'/[ContextPath]/crx/de` e faça logon como Administrador.
 
 1. Na pasta aplicativos, crie uma pasta chamada itens com caminho/estrutura semelhante à pasta itens na pasta seleção usando as seguintes etapas:
 
-   1. Clique com o botão direito do mouse no **itens** no seguinte caminho e selecione **Sobrepor nó**:
+   1. Clique com o botão direito do mouse na pasta **items** no seguinte caminho e selecione **Sobrepor Nó**:
 
       `/libs/fd/cm/ma/gui/content/cmassets/jcr:content/body/content/header/items/selection/items`
 
@@ -64,9 +64,9 @@ Para personalizar o Gerenciamento de correspondência para permitir que seus usu
 
       **Caminho:** /libs/fd/cm/ma/gui/content/cmassets/jcr:content/body/content/header/items/selection/items
 
-      **Localização:** /apps/
+      **Local:** /apps/
 
-      **Corresponder Tipos de Nó:** Selecionado
+      **Corresponder Tipos De Nó:** Selecionados
 
       ![Sobrepor nó](assets/2_createnodedownloadflatpdf.png)
 
@@ -76,9 +76,9 @@ Para personalizar o Gerenciamento de correspondência para permitir que seus usu
 
 1. Na pasta Itens recém-criados, adicione um nó para o botão/ação personalizado em um ativo específico (Exemplo: downloadFlatPDF) usando as seguintes etapas:
 
-   1. Clique com o botão direito do mouse no **itens** e selecione **Criar** > **Criar nó**.
+   1. Clique com o botão direito do mouse na pasta **itens** e selecione **Criar** > **Criar Nó**.
 
-   1. Certifique-se de que o diálogo Criar nó tenha os seguintes valores e clique em **OK**:
+   1. Certifique-se de que a caixa de diálogo Criar Nó tenha os seguintes valores e clique em **OK**:
 
       **Nome:** downloadFlatPDF (ou o nome que você deseja dar a esta propriedade)
 
@@ -103,12 +103,12 @@ Para personalizar o Gerenciamento de correspondência para permitir que seus usu
         <tr>
         <td>foundation-collection-action</td>
         <td>String</td>
-        <td><p>{"target": ".cq-manageasset-admin-childpages", "ativeSelectionCount": "single","type": "LETTER"}<br /> <br /> <br /> <strong>ativeSelectionCount</strong> pode ser único ou múltiplo para permitir seleções de um ou vários ativos nos quais a ação personalizada é executada.</p> <p><strong>type</strong> pode ser uma ou mais (várias entradas separadas por vírgula) do seguinte: LETTER,TEXT,LIST,CONDITION,DATADICTIONARY</p> </td>
+        <td><p>{"target": ".cq-manageasset-admin-childpages", "ativeSelectionCount": "single","type": "LETTER"}<br /> <br /> <br /> <strong>ativeSelectionCount</strong> pode ser único ou múltiplo para permitir seleções de um ou vários ativos nos quais a ação personalizada é executada.</p> <p><strong>tipo</strong> pode ser uma ou mais (várias entradas separadas por vírgula) dos seguintes: LETTER,TEXT,LIST,CONDITION,DATADICTIONARY</p> </td>
         </tr>
         <tr>
         <td>ícone</td>
         <td>String</td>
-        <td>icon-download<br /> <br /> O ícone Gerenciamento de correspondência é exibido no lado esquerdo do comando/menu. Para obter os diferentes ícones e configurações disponíveis, consulte <a href="https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=pt-BR" target="_blank">Documentação de ícones do CoralUI</a>.<br /> </td>
+        <td>icon-download<br /> <br /> O ícone que o Gerenciamento de correspondências exibe no lado esquerdo do seu comando/menu. Para obter os diferentes ícones e configurações disponíveis, consulte a <a href="https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=pt-BR" target="_blank">documentação sobre Ícones do CoralUI</a>.<br /> </td>
         </tr>
         <tr>
         <td>jcr:primaryType</td>
@@ -128,19 +128,19 @@ Para personalizar o Gerenciamento de correspondência para permitir que seus usu
         <tr>
         <td>text</td>
         <td>String</td>
-        <td>Baixar PDF simples (ou qualquer outro rótulo)<br /> <br /> O comando que aparece na interface da Lista de ativos</td>
+        <td>Baixar PDF Simples (Ou qualquer outro rótulo)<br /> <br /> O comando que aparece na interface de Listagem de Ativos</td>
         </tr>
         <tr>
         <td>cargo</td>
         <td>String</td>
-        <td>Baixar um PDF simples da letra selecionada (ou qualquer outro rótulo/texto alternativo)<br /> <br /> O título é o texto alternativo que o Gerenciamento de correspondência exibe quando o usuário passa o mouse sobre o comando personalizado.</td>
+        <td>Baixar um PDF simples da letra selecionada (Ou qualquer outro rótulo/texto alternativo)<br /> <br /> O título é o texto alternativo que o Gerenciamento de Correspondências exibe quando o usuário passa o mouse sobre o comando personalizado.</td>
         </tr>
         </tbody>
        </table>
 
 1. Na pasta aplicativos, crie uma pasta chamada js com caminho/estrutura semelhante à pasta itens na pasta do administrador usando as seguintes etapas:
 
-   1. Clique com o botão direito do mouse no **js** no seguinte caminho e selecione **Sobrepor nó**:
+   1. Clique com o botão direito do mouse na pasta **js** no seguinte caminho e selecione **Sobrepor Nó**:
 
       `/libs/fd/cm/ma/gui/components/admin/clientlibs/admin/js`
 
@@ -148,15 +148,15 @@ Para personalizar o Gerenciamento de correspondência para permitir que seus usu
 
       **Caminho:** /libs/fd/cm/ma/gui/components/admin/clientlibs/admin/js
 
-      **Localização:** /apps/
+      **Local:** /apps/
 
-      **Corresponder Tipos de Nó:** Selecionado
+      **Corresponder Tipos De Nó:** Selecionados
 
    1. Clique em **OK**. A estrutura de pastas é criada na pasta de aplicativos. Clique em **Salvar tudo**.
 
 1. Na pasta js, crie um arquivo chamado formaction.js com o código para o manuseio de ação do botão usando as seguintes etapas:
 
-   1. Clique com o botão direito do mouse no **js** no seguinte caminho e selecione **Criar > Criar arquivo**:
+   1. Clique com o botão direito do mouse na pasta **js** no seguinte caminho e selecione **Criar > Criar arquivo**:
 
       `/apps/fd/cm/ma/gui/components/admin/clientlibs/admin/js`
 
@@ -230,7 +230,7 @@ Para personalizar o Gerenciamento de correspondência para permitir que seus usu
 
 1. Na pasta aplicativos, crie uma pasta chamada itens com caminho/estrutura semelhante à pasta itens na pasta actionhandlers seguindo as seguintes etapas:
 
-   1. Clique com o botão direito do mouse no **itens** no seguinte caminho e selecione **Sobrepor nó**:
+   1. Clique com o botão direito do mouse na pasta **items** no seguinte caminho e selecione **Sobrepor Nó**:
 
       `/libs/fd/cm/ma/gui/content/commons/actionhandlers/items/`
 
@@ -238,9 +238,9 @@ Para personalizar o Gerenciamento de correspondência para permitir que seus usu
 
       **Caminho:** /libs/fd/cm/ma/gui/content/commons/actionhandlers/items/
 
-      **Localização:** /apps/
+      **Local:** /apps/
 
-      **Corresponder Tipos de Nó:** Selecionado
+      **Corresponder Tipos De Nó:** Selecionados
 
    1. Clique em **OK**. A estrutura de pastas é criada na pasta de aplicativos.
 
@@ -250,9 +250,9 @@ Para personalizar o Gerenciamento de correspondência para permitir que seus usu
 
    1. Clique com o botão direito do mouse na pasta de itens e selecione **Criar > Criar nó**.
 
-   1. Certifique-se de que o diálogo Criar nó tenha os seguintes valores e clique em **OK**:
+   1. Certifique-se de que a caixa de diálogo Criar Nó tenha os seguintes valores e clique em **OK**:
 
-      **Nome:** letterpdfdownloader (Ou o nome que você deseja dar a essa propriedade) deve ser exclusivo. Se você usar um nome diferente aqui, especifique também o mesmo na variável ACTION_URL do arquivo formaction.js.)
+      **Nome:** letterpdfdownloader (Ou o nome que você deseja dar a esta propriedade) deve ser exclusivo. Se você usar um nome diferente aqui, especifique também o mesmo na variável ACTION_URL do arquivo formaction.js.)
 
       **Tipo:** nt:não estruturado
 
@@ -268,13 +268,13 @@ Para personalizar o Gerenciamento de correspondência para permitir que seus usu
 
    /apps/fd/cm/ma/gui/components/admin/clientlibs/admin
 
-   1. Clique com o botão direito do mouse no **administrador** no seguinte caminho e selecione **Criar > Criar arquivo**:
+   1. Clique com o botão direito do mouse na pasta **admin** no seguinte caminho e selecione **Criar > Criar arquivo**:
 
       /apps/fd/cm/ma/gui/components/admin/clientlibs/admin
 
       Nomeie o arquivo como POST.jsp. (O nome do arquivo precisa ser somente POST.jsp.)
 
-   1. Clique duas vezes no ícone **POST.jsp** arquivo para abri-lo no CRX.
+   1. Clique duas vezes no arquivo **POST.jsp** para abri-lo no CRX.
    1. Adicione o seguinte código ao arquivo POST.jsp e clique em **Salvar tudo**:
 
       Esse código é específico para o serviço de renderização de cartas. Para qualquer outro ativo, adicione as bibliotecas Java™ desse ativo a este código. Para obter mais informações sobre APIs do AEM Forms, consulte [API do AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=pt-BR).
@@ -350,21 +350,21 @@ Para personalizar o Gerenciamento de correspondência para permitir que seus usu
 
 Depois de ter adicionado a funcionalidade personalizada para baixar o PDF simples de suas cartas, você pode usar as seguintes etapas para baixar a versão do PDF simples da carta selecionada:
 
-1. Ir para `https://'[server]:[port]'/[ContextPath]/projects.html` e faça logon.
+1. Vá para `https://'[server]:[port]'/[ContextPath]/projects.html` e faça logon.
 
-1. Selecionar **Forms > Cartas**. O Gerenciamento de correspondência lista as cartas disponíveis no sistema.
-1. Clique em **Selecionar** e, em seguida, clique em uma correspondência para selecioná-la.
-1. Selecionar **Mais** > **&lt;download flat=&quot;&quot; pdf=&quot;&quot;>** (A funcionalidade personalizada criada usando as instruções deste artigo). Download Letter as PDF (Baixar carta como) é exibida.
+1. Selecione **Forms > Cartas**. O Gerenciamento de correspondência lista as cartas disponíveis no sistema.
+1. Clique em **Selecionar** e em uma letra para selecioná-la.
+1. Selecione **Mais** > **&lt;Baixar PDF Simples>** (A funcionalidade personalizada criada usando as instruções deste artigo). Download Letter as PDF (Baixar carta como) é exibida.
 
-   O nome do item de menu, a funcionalidade e o texto alternativo são de acordo com a personalização criada no [Cenário: adicione um comando à interface do usuário da lista Cartas para baixar a versão de PDF simples de uma carta.](#addcommandtoletters)
+   O nome, a funcionalidade e o texto alternativo do item de menu estão de acordo com a personalização criada no [Cenário: adicione um comando à interface do usuário da lista Cartas para baixar a versão de PDF simples de uma carta.](#addcommandtoletters)
 
-   ![Funcionalidade personalizada: Baixar PDF simples](assets/5_downloadflatpdf.png)
+   ![Funcionalidade personalizada: baixar PDF simples](assets/5_downloadflatpdf.png)
 
 1. Na caixa de diálogo Baixar carta como PDF, selecione o XML relevante a partir do qual deseja preencher os dados no PDF.
 
    >[!NOTE]
    >
-   >Antes de baixar a correspondência como um PDF simples, você pode criar o arquivo XML com os dados contidos na correspondência usando o **Criar relatório** opção.
+   >Antes de baixar a correspondência como um PDF simples, você pode criar o arquivo XML com os dados contidos na correspondência usando a opção **Criar relatório**.
 
    ![Baixar carta como PDF](assets/6_downloadflatpdf.png)
 

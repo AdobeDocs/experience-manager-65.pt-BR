@@ -17,7 +17,7 @@ ht-degree: 3%
 
 # Melhorar o desempenho de formulários grandes com carregamento lento{#improve-performance-of-large-forms-with-lazy-loading}
 
-<span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) para [criação de um novo Forms adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
+O <span class="preview"> Adobe recomenda o uso de [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adicionar o Forms Adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
@@ -42,10 +42,10 @@ Você pode configurar apenas fragmentos de formulário adaptáveis para carregam
 * **Identificar e marcar valores globais**
 As transações baseadas em Forms envolvem elementos dinâmicos para capturar dados relevantes de usuários e processá-los para simplificar a experiência de preenchimento de formulário. Por exemplo, o formulário tem o campo A no fragmento X cujo valor determina a validade do campo B em outro fragmento. Nesse caso, se o fragmento X estiver marcado para carregamento lento, o valor do campo A deverá estar disponível para validar o campo B, mesmo quando o fragmento X não estiver carregado. Para isso, você pode marcar o campo A como global, o que garante que seu valor esteja disponível para validar o campo B quando o fragmento X não estiver carregado.
 
-  Para obter informações sobre como tornar um valor de campo global, consulte [Configuração de carregamento lento](../../forms/using/lazy-loading-adaptive-forms.md#p-configuring-lazy-loading-p).
+  Para obter informações sobre como tornar global um valor de campo, consulte [Configurando carregamento lento](../../forms/using/lazy-loading-adaptive-forms.md#p-configuring-lazy-loading-p).
 
-* **Escrever regras para controlar a visibilidade dos campos**
-O Forms inclui alguns campos e seções que não se aplicam a todos os usuários e em todas as condições. Os autores e desenvolvedores do Forms usam as regras de visibilidade ou mostrar-ocultar para controlar sua visibilidade com base nas entradas do usuário. Por exemplo, o campo Endereço Comercial não é exibido para os usuários que escolhem Desempregado no campo Status do Emprego em um formulário. Para obter mais informações sobre como escrever regras, consulte [Uso do editor de regras](../../forms/using/rule-editor.md).
+* **Gravar regras para controlar a visibilidade dos campos**
+O Forms inclui alguns campos e seções que não se aplicam a todos os usuários e em todas as condições. Os autores e desenvolvedores do Forms usam as regras de visibilidade ou mostrar-ocultar para controlar sua visibilidade com base nas entradas do usuário. Por exemplo, o campo Endereço Comercial não é exibido para os usuários que escolhem Desempregado no campo Status do Emprego em um formulário. Para obter mais informações sobre como gravar regras, consulte [Usando o editor de regras](../../forms/using/rule-editor.md).
 
   Você pode usar regras de visibilidade nos fragmentos carregados lentamente para que os campos condicionais sejam exibidos somente quando forem necessários. Além disso, marque o campo condicional como global para fazer referência a ele na expressão de visibilidade do fragmento carregado lentamente.
 
@@ -55,9 +55,9 @@ Execute as seguintes etapas para habilitar o carregamento lento em um fragmento 
 
 1. Abra o formulário adaptável no modo de criação que contém o fragmento que você deseja ativar para carregamento lento.
 1. Selecione o fragmento de formulário adaptável e selecione ![cmppr](assets/cmppr.png).
-1. Na barra lateral, ative **[!UICONTROL Carregar fragmento preguiçosamente]** e selecione **Concluído**.
+1. Na barra lateral, habilite **[!UICONTROL Carregar fragmento lentamente]** e selecione **Concluído**.
 
-   ![Ativar carregamento lento para o fragmento de formulário adaptável](assets/lazy-loading-fragment.png)
+   ![Habilitar carregamento lento para o fragmento de formulário adaptável](assets/lazy-loading-fragment.png)
 
    O fragmento agora está ativado para carregamento lento.
 
@@ -65,7 +65,7 @@ Você pode marcar os valores de objetos no fragmento carregado lentamente como g
 
 1. Abra o fragmento de formulário adaptável no modo de criação.
 1. Selecione o campo cujo valor você deseja marcar como global e selecione ![cmppr](assets/cmppr.png).
-1. Na barra lateral, ative **Usar valor durante carregamento lento**.
+1. Na barra lateral, habilite **Usar valor durante carregamento lento**.
 
    ![Campo de carregamento lento na barra lateral](assets/enable-lazy-loading.png)
 
@@ -76,7 +76,7 @@ Você pode marcar os valores de objetos no fragmento carregado lentamente como g
 Algumas limitações, recomendações e pontos importantes a serem considerados ao trabalhar com carregamento lento são os seguintes:
 
 * Use formulários adaptáveis baseados em esquema XSD em vez de formulários adaptáveis baseados em XFA para configurar o carregamento lento em formulários grandes. O ganho de desempenho devido à implementação de carregamento lento em formulários adaptáveis baseados em XFA é relativamente menor do que o ganho em formulários adaptáveis baseados em XSD.
-* Não configure o carregamento lento em fragmentos em um formulário adaptável que usa **[!UICONTROL Responsivo - tudo em uma página sem navegação]** para o painel raiz. Como resultado da configuração de Layout responsivo, todos os fragmentos são carregados simultaneamente em um formulário adaptável. Isso também pode resultar em redução do desempenho.
+* Não configure o carregamento lento em fragmentos em um formulário adaptável que use o layout **[!UICONTROL Responsivo -tudo em uma página sem navegação]** para o painel raiz. Como resultado da configuração de Layout responsivo, todos os fragmentos são carregados simultaneamente em um formulário adaptável. Isso também pode resultar em redução do desempenho.
 * É recomendável não configurar o carregamento lento no primeiro fragmento em um formulário adaptável.
 * É recomendável não configurar o carregamento lento em fragmentos no primeiro painel que é renderizado ao carregar o formulário adaptável.
 * O carregamento lento é compatível com até dois níveis na hierarquia do fragmento.

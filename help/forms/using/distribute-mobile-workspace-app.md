@@ -38,10 +38,10 @@ O administrador do MDM pode fazer upload de arquivos ipa e apk para o servidor M
 
 As seguintes configurações de perfil no seu dispositivo afetam o funcionamento do aplicativo AEM Forms no seu dispositivo:
 
-* **Permitir o uso da câmera** no **Funcionalidade do dispositivo** seção
+* **Permitir o uso da câmera** na seção **Funcionalidade do dispositivo**
 
-Se você desativar o **Permitir o uso da câmera**, o recurso de câmera do [Anotação de fotografia](/help/forms/using/add-attachments.md) não funciona. Ative esta opção para usar a câmera no aplicativo.
+Se você desabilitar **Permitir o uso da câmera**, o recurso de câmera da [Anotação da fotografia](/help/forms/using/add-attachments.md) não funcionará. Ative esta opção para usar a câmera no aplicativo.
 
-* **Exigir senha no dispositivo** na seção Políticas de senha
+* **Exigir senha no dispositivo** na seção de políticas de senha
 
-Para habilitar **criptografia de dados de aplicativos**, é recomendável ativar o **senha** no seu dispositivo. Se a senha não estiver definida no dispositivo, os dados do aplicativo armazenados no dispositivo não serão criptografados.
+Para habilitar a **criptografia de dados de aplicativo**, é recomendável habilitar a **senha** em seu dispositivo. Se a senha não estiver definida no dispositivo, os dados do aplicativo armazenados no dispositivo não serão criptografados.

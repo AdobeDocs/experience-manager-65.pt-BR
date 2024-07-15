@@ -31,14 +31,14 @@ Você pode adicionar um fragmento várias vezes a um documento e usar as proprie
 
 >[!NOTE]
 >
-> É possível personalizar facilmente a experiência do fragmento para usuários com o [Caixa de diálogo de configuração e caixa de diálogo de design do componente Fragmento de formulário](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/form-fragment.html).
+> Você pode personalizar facilmente a experiência do fragmento para usuários com a [Caixa de diálogo de Configuração e Caixa de diálogo de Design do componente de Fragmento de Formulário](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/form-fragment.html).
 
 
 ## Criar um fragmento de formulário {#create-a-fragment}
 
 Você pode criar um fragmento de formulário adaptável do zero ou salvar um painel em um formulário adaptável existente como fragmento. Para criar um fragmento de formulário:
 
-1. Faça logon na sua instância do AEM Forms em https://[*hostname*]:[*porta*]/aem/forms.html.
+1. Faça logon na instância do AEM Forms em https://[*hostname*]:[*port*]/aem/forms.html.
 1. Clique em **Criar > Fragmento de formulário adaptável**.
 1. Especifique título, nome, descrição e tags para o fragmento. Certifique-se de especificar um nome exclusivo para o fragmento. Se outro fragmento existir com o mesmo nome, o fragmento não será criado.
 1. Selecione um modelo de formulário. Você pode criar um fragmento de formulário para Componentes principais com base no Forms adaptável ou Componentes de base com base no Forms adaptável.
@@ -47,9 +47,9 @@ Você pode criar um fragmento de formulário adaptável do zero ou salvar um pai
 
    Ao criar fragmento de formulário para formulários baseados em Componentes principais, use a opção Selecionar tema do formulário para selecionar um tema baseado em Componentes principais.
 
-1. Clique para abrir a **Modelo de formulário** e na guia **Selecionar de** selecione um dos seguintes modelos para o fragmento:
+1. Clique para abrir a guia **Modelo de formulário** e, no menu suspenso **Selecionar de**, selecione um dos seguintes modelos para o fragmento:
 
-   ![Exibe o tipo de modelo na guia Modelo de formulário](assets/create-af-1-1.png)
+   ![Exibe o tipo de modelo na guia Modelo de Formulário](assets/create-af-1-1.png)
 
    * **Nenhum**: especifica criar o fragmento do zero sem usar nenhum modelo de formulário.
 
@@ -57,8 +57,8 @@ Você pode criar um fragmento de formulário adaptável do zero ou salvar um pai
      >
      > No Forms adaptável, é possível usar um único fragmento de formulário (com base nos Componentes principais) várias vezes. Ele oferece suporte a fragmentos de formulário baseados em nenhum e em esquema.
 
-   * **** Esquema: especifica a criação do fragmento usando um schema XML ou JSON carregado para AEM Forms. Você pode fazer upload ou selecionar dentre os esquemas XML ou JSON disponíveis como o modelo de formulário do fragmento. Ao selecionar um esquema XML, você também pode criar um fragmento de Formulário adaptável selecionando um complexType presente no esquema selecionado na **[!UICONTROL Tipo complexo de esquema XML]** lista suspensa. Ao selecionar um esquema JSON, você também pode criar um fragmento de Formulário adaptável selecionando uma definição de esquema presente no esquema selecionado da **[!UICONTROL Definições do esquema JSON]** lista suspensa.
-   * **Modelo de dados do formulário**: especifica para criar o fragmento usando um modelo de dados de formulário. Você pode criar um fragmento de formulário adaptável com base em apenas um objeto de modelo de dados em um modelo de dados de formulário. Expanda a lista suspensa Definições do modelo de dados de formulário. Ele lista todos os objetos do modelo de dados no modelo de dados de formulário especificado. Selecione um objeto de modelo de dados na lista.
+   * **** Esquema: especifica a criação do fragmento usando um schema XML ou JSON carregado para AEM Forms. Você pode fazer upload ou selecionar dentre os esquemas XML ou JSON disponíveis como o modelo de formulário do fragmento. Ao selecionar um esquema XML, você também pode criar um fragmento de Formulário adaptável selecionando um complexType presente no esquema selecionado na caixa suspensa **[!UICONTROL Tipo complexo de esquema XML]**. Ao selecionar um esquema JSON, você também pode criar um fragmento de Formulário adaptável selecionando uma definição de esquema presente no esquema selecionado na caixa suspensa **[!UICONTROL Definições de esquema JSON]**.
+   * **Modelo de dados de formulário**: especifica a criação do fragmento usando um modelo de dados de formulário. Você pode criar um fragmento de formulário adaptável com base em apenas um objeto de modelo de dados em um modelo de dados de formulário. Expanda a lista suspensa Definições do modelo de dados de formulário. Ele lista todos os objetos do modelo de dados no modelo de dados de formulário especificado. Selecione um objeto de modelo de dados na lista.
 
    ![Modelo de dados do formulário](assets/create-af-3.png)
 
@@ -76,12 +76,12 @@ Depois que o fragmento do formulário adaptável com base em um esquema ou model
 Para adicionar um fragmento de formulário adaptável a um formulário adaptável:
 
 1. Abra o Formulário adaptável no modo de edição.
-1. Adicione o **Fragmento de formulário adaptável** componente ao formulário.
-1. Clique em **Assets** navegador de conteúdo na barra lateral. No navegador de ativos, nos caminhos, selecione a variável **Fragmentos do formulário adaptável** opção. Todos os fragmentos do Forms adaptável disponíveis para o formulário, dependendo do modelo do formulário, são exibidos.
+1. Adicione o componente **Fragmento de formulário adaptável** ao formulário.
+1. Clique no navegador de conteúdo do **Assets** na barra lateral. No navegador de ativos, nos caminhos, selecione a opção **Fragmentos de formulário adaptável**. Todos os fragmentos do Forms adaptável disponíveis para o formulário, dependendo do modelo do formulário, são exibidos.
 
-   ![selecionar a opção Fragmentos do formulário adaptável](assets/adaptive-forms-fragments.png)
+   ![selecione a opção Fragmentos de formulário adaptável](assets/adaptive-forms-fragments.png)
 
-1. Arraste e solte um fragmento de Formulário adaptável na **Fragmento de formulário adaptável** em seu Formulário adaptável.
+1. Arraste e solte um fragmento de formulário adaptável no componente **Fragmento de formulário adaptável** no formulário adaptável.
 
    >[!NOTE]
    >
@@ -133,7 +133,7 @@ Você também pode arrastar e soltar um fragmento de formulário adaptável vinc
 
 1. Acesse `https://[hostname]/aem/forms.html`.
 
-1. Clique em **Selecionar** na barra de ferramentas da interface do usuário do AEM Forms e selecione um fragmento de Formulário adaptável. A barra de ferramentas exibe as seguintes operações que você pode executar no fragmento de Formulário adaptável selecionado.
+1. Clique em **Selecionar** na barra de ferramentas da interface do usuário do AEM Forms e selecione um fragmento de formulário adaptável. A barra de ferramentas exibe as seguintes operações que você pode executar no fragmento de Formulário adaptável selecionado.
 
 <table>
  <tbody>
@@ -159,18 +159,18 @@ Você também pode arrastar e soltar um fragmento de formulário adaptável vinc
   </tr>
   <tr>
    <td><p>Visualização</p> </td>
-   <td><p>Fornece opções para visualizar o fragmento como um HTML ou uma visualização personalizada mesclando dados de um arquivo XML com o fragmento. Para obter mais informações, consulte <a>Pré-visualização de um formulário</a>.<br /> <br /> </p> </td>
+   <td><p>Fornece opções para visualizar o fragmento como um HTML ou uma visualização personalizada mesclando dados de um arquivo XML com o fragmento. Para obter mais informações, consulte <a>Visualizando um formulário</a>.<br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>Iniciar revisão/Gerenciar revisão</p> </td>
-   <td><p>Permite iniciar e gerenciar uma revisão do fragmento selecionado. Para obter mais informações, consulte <a>Criar e gerenciar revisões</a>.<br /> <br /> </p> </td>
+   <td><p>Permite iniciar e gerenciar uma revisão do fragmento selecionado. Para obter mais informações, consulte <a>Criação e gerenciamento de análises</a>.<br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>Adicionar Dicionário</p> </td>
-   <td><p>Gera um dicionário para localizar o fragmento selecionado. Para obter mais informações, consulte <a>Localização do Adaptive Forms</a>.<br /> <br /> </p> </td>
+   <td><p>Gera um dicionário para localizar o fragmento selecionado. Para obter mais informações, consulte <a>Localizando Forms Adaptável</a>.<br /> <br /> </p> </td>
   </tr>
   <tr>
-   <td><p>Publicar/Desfazer publicação</p> </td>
+   <td><p>Publish / Desfazer publicação</p> </td>
    <td><p>Publica/cancela a publicação do fragmento selecionado.<br /> <br /> </p> </td>
   </tr>
   <tr>
@@ -193,7 +193,7 @@ Você também pode arrastar e soltar um fragmento de formulário adaptável vinc
 * Ao republicar um fragmento de Formulário adaptável atualizado, as alterações são refletidas nas instâncias publicadas do Formulário adaptável em que o fragmento é usado.
 * O formulário adaptável que contém o componente Verificar não é compatível com usuários anônimos. Além disso, não é recomendado usar o componente Verificar em um fragmento de Formulário adaptável.
 * (**Somente** Mac) Para garantir que os fragmentos de formulário funcionalidade funciona perfeitamente em todos os cenários, adicione a seguinte entrada ao arquivo /private/etc/hosts:
-  `127.0.0.1 <Host machine>` **Máquina host**: a máquina do Apple Mac na qual o AEM Forms é implantado.
+  `127.0.0.1 <Host machine>` **Máquina host**: a máquina do Apple Mac na qual o AEM Forms está implantado.
 
 ## Fragmentos de referência {#reference-fragments}
 
@@ -207,4 +207,4 @@ Referencie fragmentos de formulário adaptável que você pode usar para criar s
 * [Criar ou personalizar temas de componentes principais com base em Forms adaptáveis](create-or-customize-themes-for-adaptive-forms-core-components.md)
 * [Criar um modelo de componentes principais baseado em Forms adaptativos](template-editor.md)
 * [Criar ou adicionar um formulário adaptável a um AEM Sites Página ou fragmento de experiência](create-or-add-an-adaptive-form-to-aem-sites-page.md)
-* [Modelos de temas de amostra e modelos de dados de formulário](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
+* [Modelos de temas de exemplo e modelos de dados de formulário](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)

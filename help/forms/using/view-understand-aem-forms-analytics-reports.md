@@ -26,7 +26,7 @@ O recurso de análise no AEM Forms está disponível como parte do pacote comple
 
 Além do pacote complementar, você precisa de uma conta do Adobe Analytics. Para obter informações sobre a solução, consulte [Adobe Analytics](https://www.adobe.com/solutions/digital-analytics.html).
 
-Depois de ter o pacote complementar do AEM Forms e uma conta do Adobe Analytics, integre a conta do Adobe Analytics ao AEM Forms e ative o rastreamento em seus formulários ou documentos, conforme descrito em [Configurar análises e relatórios](../../forms/using/configure-analytics-forms-documents.md).
+Depois de ter o pacote complementar do AEM Forms e uma conta do Adobe Analytics, integre a conta do Adobe Analytics ao AEM Forms e habilite o rastreamento nos seus formulários ou documentos, conforme descrito em [Configurar análises e relatórios](../../forms/using/configure-analytics-forms-documents.md).
 
 ### Como as informações de interação do usuário são registradas {#how-user-interaction-information-is-recorded}
 
@@ -50,20 +50,20 @@ Quando um usuário interage com o formulário, as interações são registradas 
 
 Execute as seguintes etapas para exibir relatórios de análise:
 
-1. Faça logon no portal AEM em `https://[hostname]:'port'`
-1. Clique em **Forms > Forms e documentos**.
+1. Fazer logon no portal AEM em `https://[hostname]:'port'`
+1. Clique em **Forms > Forms e Documentos**.
 1. Selecione o formulário para o qual deseja exibir os relatórios de análise.
-1. Selecionar **Mais > Relatórios do Analytics**.
+1. Selecione **Mais > Relatórios do Analytics**.
 
-![analyticsreport](assets/analyticsreport.png)
+![relatórioanalítico](assets/analyticsreport.png)
 
-**A.** comando Relatório do Analytics
+**A.** Comando do Relatório do Analytics
 
 O AEM Forms exibe relatórios do Analytics para o formulário e para cada painel no formulário, conforme mostrado abaixo.
 
 ![Relatório de resumo de um formulário adaptável](assets/analyticsdashboard_callout.png)
 
-**A.** Conversões **B.** Resumo no nível do formulário **C** Resumo no nível do painel **D.** Navegadores de visitantes - filtro **E** SO de visitantes - filtro **F** Idioma dos visitantes - filtro
+**A.** Conversões **B.** Resumo no nível de formulário **C.** Resumo no nível de painel **D.** Navegadores de visitantes - filtro **E.** Sistema operacional de visitantes - filtro **F.** Idioma dos visitantes - filtro
 
 Por padrão, o relatório de análise dos últimos sete dias é exibido. Você pode exibir relatórios dos últimos 15 dias, do último mês e assim por diante, ou especificar um intervalo de datas.
 
@@ -77,9 +77,9 @@ Por padrão, o relatório de análise dos últimos sete dias é exibido. Você p
 
 O gráfico de conversões no nível do formulário fornece informações sobre o desempenho do formulário nos seguintes KPIs (indicadores-chave de desempenho):
 
-* **Representações**: O número de vezes que um formulário é aberto
+* **Representações**: o número de vezes que um formulário é aberto
 * **Visitantes**: o número de visitantes do formulário
-* **Envios**: Número de vezes que o formulário foi enviado
+* **Envios**: número de vezes que o formulário é enviado
 
 ![gráfico de conversão](assets/conversion-graph.png)
 
@@ -87,14 +87,14 @@ O gráfico de conversões no nível do formulário fornece informações sobre o
 
 A seção de resumo no nível do formulário fornece informações sobre o desempenho do formulário nos seguintes KPIs (indicadores-chave de desempenho):
 
-* **Tempo médio de preenchimento**: Tempo médio gasto no preenchimento do formulário. Quando os usuários passam tempo no formulário, mas não enviam, esse tempo não é incluído nesse cálculo.
-* **Representações**: Número de vezes que o formulário foi renderizado ou aberto
+* **Tempo médio de preenchimento**: tempo médio gasto no preenchimento do formulário. Quando os usuários passam tempo no formulário, mas não enviam, esse tempo não é incluído nesse cálculo.
+* **Representações**: número de vezes que o formulário foi renderizado ou aberto
 * **Rascunhos**: Número de vezes que o formulário foi salvo como rascunho
-* **Envios**: Número de vezes que o formulário foi enviado
-* **Anular**: Número de vezes que os usuários começaram a preencher o formulário e depois saíram sem preenchê-lo
-* **Visitantes únicos**: Número de vezes que o formulário é &quot;renderizado por visitantes únicos&quot;. Para obter mais informações sobre visitantes únicos, consulte [Visitantes únicos, visitas e comportamento do cliente](https://helpx.adobe.com/analytics/kb/unique-visitors-visitor-behavior.html).
+* **Envios**: número de vezes que o formulário foi enviado
+* **Abortar**: número de vezes que os usuários começaram a preencher o formulário e depois saíram sem preenchê-lo
+* **Visitantes únicos**: número de vezes que o formulário é renderizado por visitantes únicos. Para obter mais informações sobre visitantes únicos, consulte [Visitantes únicos, Visitas e comportamento do cliente](https://helpx.adobe.com/analytics/kb/unique-visitors-visitor-behavior.html).
 
-![Relatório de análise de resumo em nível de formulário expandido](assets/analytics-report.png)
+![Relatório de análise resumida em nível de formulário expandido](assets/analytics-report.png)
 
 ### Relatório do painel {#bottom-summary-report}
 
@@ -114,8 +114,8 @@ O relatório detalhado mostra valores para todos os campos no painel.
 
 O relatório do painel tem três guias:
 
-* **Relatório de tempo**(Padrão): exibe o tempo, em segundos, gasto no preenchimento de cada um dos campos no painel
-* **Relatório de erros**: exibe o número de erros encontrados pelos usuários durante o preenchimento dos campos
+* **Relatório de tempo**(Padrão): mostra o tempo, em segundos, gasto no preenchimento de cada um dos campos no painel
+* **Relatório de Erros**: exibe o número de erros encontrados pelos usuários durante o preenchimento dos campos
 * **Relatório de ajuda**: Número de vezes que a ajuda de um determinado campo foi acessada
 
 Você pode navegar entre os painéis, se vários painéis estiverem disponíveis.
@@ -124,7 +124,7 @@ Você pode navegar entre os painéis, se vários painéis estiverem disponíveis
 
 As tabelas Distribuição do navegador, Distribuição do sistema operacional e Distribuição de idioma exibem as representações, os visitantes e os envios de acordo com os navegadores, o sistema operacional e o Idioma dos usuários do formulário. Por padrão, essas tabelas exibem no máximo cinco entradas. Você pode clicar em Mostrar mais para exibir mais entradas e clicar em Mostrar menos para voltar às cinco entradas regulares ou menos.
 
-Para filtrar ainda mais os dados de análise, você pode clicar em uma entrada em qualquer uma das tabelas. Por exemplo, se você clicar em Google Chrome na tabela Distribuição do navegador, o relatório será renderizado novamente com dados relevantes para o navegador Google Chrome, da seguinte maneira:
+Para filtrar ainda mais os dados de análise, você pode clicar em uma entrada em qualquer uma das tabelas. Por exemplo, se você clicar em Google Chrome na tabela Distribuição de navegador, o relatório será renderizado novamente com dados relevantes para o navegador Google Chrome, da seguinte maneira:
 
 ![Filtro aplicado ao relatório do Analytics - Google Chrome ](assets/filter-1.png)
 

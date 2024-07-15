@@ -84,7 +84,7 @@ Para modificar o conteúdo de forma headless, o AEM oferece duas APIs robustas.
 * A API do GraphQL permite criar solicitações para acessar e entregar Fragmentos de conteúdo.
 * A API REST do Assets permite criar e modificar fragmentos de conteúdo (e outros ativos).
 
-Você aprenderá sobre essas APIs e como usá-las em uma parte posterior da jornada headless do AEM. Ou consulte a [recursos adicionais](#additional-resources) abaixo para obter a documentação adicional.
+Você aprenderá sobre essas APIs e como usá-las em uma parte posterior da jornada headless do AEM. Ou consulte a seção [recursos adicionais](#additional-resources) abaixo para obter a documentação adicional.
 
 ## Níveis de integração headless {#integration-levels}
 
@@ -116,7 +116,7 @@ Esse nível de integração baseia-se no nível dois, permitindo que a maioria d
 
 ### Você ainda não tem um consumidor externo do conteúdo headless, como um aplicativo de página única (SPA). {#do-not-have-a-spa}
 
-Se o objetivo for criar um SPA que consuma conteúdo sem periféricos do AEM, você poderá usar recursos como Fragmentos de conteúdo para gerenciar seu conteúdo sem periféricos e também criar um SPA AEM SPA com Editor de estrutura.
+Se o objetivo for criar um SPA que consuma conteúdo sem periféricos do AEM, você poderá usar recursos como Fragmentos de conteúdo para gerenciar seu conteúdo sem periféricos e também criar um SPA AEM SPA com o Editor.
 
 Usando o Editor de SPA, o SPA não apenas consome conteúdo do AEM, como também é totalmente editável dentro do AEM pelos autores de conteúdo, proporcionando a flexibilidade da entrega headless e da edição no contexto dentro do AEM.
 
@@ -280,7 +280,7 @@ Mesmo sendo recomendado que você siga para a próxima parte da jornada de desen
 
 * [Headful e Headless no AEM](/help/sites-developing/headful-headless.md) - Uma discussão completa dos níveis de integração headless disponíveis no AEM
 
-* Um [Introdução ao AEM as a Headless CMS](/help/sites-developing/headless/introduction.md)
+* Uma [Introdução ao AEM as a Headless CMS](/help/sites-developing/headless/introduction.md)
 
 * [Jornada de Tradução AEM Headless](/help/journey-headless/translation/overview.md) - Essa jornada de documentação oferece uma ampla compreensão da tecnologia headless, como o AEM fornece conteúdo headless e como você pode traduzi-lo.
 
@@ -298,4 +298,4 @@ Mesmo sendo recomendado que você siga para a próxima parte da jornada de desen
 * [API GraphQL](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) - Documentação técnica que explica como criar solicitações para acessar e fornecer Fragmentos de Conteúdo
 * [API REST do Assets](/help/assets/assets-api-content-fragments.md) - Documentação técnica que explica como criar e modificar Fragmentos de Conteúdo (e outros ativos)
 * [Consultas Persistentes](/help/sites-developing/headless/graphql-api/persisted-queries.md) - Documentação técnica sobre consultas persistentes no AEM
-* A variável [Portal do desenvolvedor de AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=pt-BR)
+* O [Portal do Desenvolvedor do AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=pt-BR)

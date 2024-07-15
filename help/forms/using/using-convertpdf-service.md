@@ -23,12 +23,12 @@ O serviço Convert PDF converte documentos PDF para PostScript ou arquivos de im
 
 Você pode fazer o seguinte com o serviço Converter PDF:
 
-* Converta documentos PDF em PostScript. Ao converter em PostScript, você pode usar a operação de conversão para especificar o documento de origem e se deseja converter em PostScript nível 2 ou 3. O documento PDF que você converter em um arquivo PostScript deve ser não interativo.
+* Converta documentos PDF em PostScript. Ao converter para o PostScript, você pode usar a operação de conversão para especificar o documento de origem e se deve converter para o PostScript nível 2 ou 3. O documento PDF que você converter em um arquivo PostScript deve ser não interativo.
 * Converta documentos PDF para formatos de imagem JPEG, JPEG 2000, PNG e TIFF. Ao converter para qualquer um desses formatos de imagem, você pode usar a operação de conversão para especificar o documento de origem e uma especificação de opções de imagem. A especificação contém várias preferências, como formato de conversão de imagem, resolução de imagem e conversão de cor.
 
 ## Configurar propriedades do serviço   {#properties}
 
-Você pode usar o **Serviço ConvertPDF do AEMFD** no Console AEM para configurar as propriedades desse serviço. O URL padrão do console AEM é `https://[host]:'port'/system/console/configMgr`.
+Você pode usar o **Serviço ConvertPDF do AEMFD** no Console AEM para configurar as propriedades deste serviço. A URL padrão do console AEM é `https://[host]:'port'/system/console/configMgr`.
 
 ## Uso do serviço {#using-the-service}
 
@@ -133,9 +133,11 @@ String documentPath = "/content/dam/formsanddocuments/ExpenseClaimFlat.pdf";
 
 A execução do serviço ConvertPDF a partir de um fluxo de trabalho é semelhante à execução a partir de JSP/Servlet.
 
-A única diferença é executar o serviço a partir do JSP/Servlet o objeto do documento recupera automaticamente uma instância do objeto ResourceResolver do objeto ResourceResolverHelper. Esse mecanismo automático não funciona quando o código é chamado de um workflow. Para um fluxo de trabalho, passe explicitamente uma instância do objeto ResourceResolver para o construtor de classe Document. Em seguida, o objeto Documento usa o objeto ResourceResolver fornecido para ler o conteúdo do repositório.
+A única diferença é executar o serviço a partir do JSP/Servlet o objeto do documento recupera automaticamente uma instância do objeto ResourceResolver do objeto ResourceResolverHelper. Este mecanismo automático
+não funciona quando o código é chamado de um workflow. Para um fluxo de trabalho, passe explicitamente uma instância do objeto ResourceResolver para o construtor de classe Document. Em seguida, o objeto Documento usa
+O objeto ResourceResolver fornecido para ler conteúdo do repositório.
 
-O processo de fluxo de trabalho de amostra a seguir converte o documento de entrada em um documento PostScript. O código é escrito no ECMAScript e o documento é passado como carga de fluxo de trabalho:
+O processo de fluxo de trabalho de amostra a seguir converte o documento de entrada em um documento do PostScript. O código é escrito no ECMAScript e o documento é passado como carga de fluxo de trabalho:
 
 ```javascript
 /*

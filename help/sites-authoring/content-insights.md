@@ -37,7 +37,7 @@ A página Content Insight inclui relatórios que usam dados do Adobe SiteCatalys
 * Target: relatórios sobre as atividades de campanha para as quais a página inclui ofertas.
 * BrightEdge: Relatórios sobre os recursos da página que melhoram a visibilidade da página para os mecanismos de pesquisa e recomenda os recursos que devem ser implementados.
 
-Consulte [Abrir o Analytics e o Recommendations em uma página](/help/sites-authoring/ci-analyze.md#opening-analytics-and-recommendations-for-a-page).
+Consulte [Abrindo o Analytics e o Recommendations para uma Página](/help/sites-authoring/ci-analyze.md#opening-analytics-and-recommendations-for-a-page).
 
 ## Período do relatório
 
@@ -49,11 +49,11 @@ Os relatórios mostram dados de um período de tempo que você controla. Quando 
 
 Você também pode especificar a granularidade dos dados relatados, por exemplo, ver dados diários, semanais, mensais ou anuais.
 
-Consulte [Alteração do Período de Geração de Relatórios](/help/sites-authoring/ci-analyze.md#changing-the-reporting-period).
+Consulte [Alterando o Período do Relatório](/help/sites-authoring/ci-analyze.md#changing-the-reporting-period).
 
 >[!NOTE]
 >
->Os relatórios de Insights de conteúdo exigem que o administrador tenha integrado o AEM ao SiteCatalyst, Target e BrightEdge. Consulte [Integração com o SightCatalyst](/help/sites-administering/adobeanalytics.md), [Integração com o Adobe Target](/help/sites-administering/target.md), e [Integração com o BrightEdge](/help/sites-administering/brightedge.md).
+>Os relatórios de Insights de conteúdo exigem que o administrador tenha integrado o AEM ao SiteCatalyst, Target e BrightEdge. Consulte [Integração com o SightCatalyst](/help/sites-administering/adobeanalytics.md), [Integração com o Adobe Target](/help/sites-administering/target.md) e [Integração com o BrightEdge](/help/sites-administering/brightedge.md).
 
 ## O Relatório de Visões {#the-views-report}
 
@@ -90,7 +90,7 @@ O relatório Rejeições inclui um gráfico que mostra o número de rejeições 
 
 ## O relatório de atividades de campanha {#the-campaign-activity-report}
 
-Para cada campanha para a qual a página está ativa, é exibido um relatório chamado *Nome da campanha* Atividade. O relatório mostra as impressões de página e as conversões de cada segmento para o qual uma oferta é fornecida.
+Para cada campanha para a qual a página está ativa, aparece um relatório chamado *Nome da campanha* Atividade. O relatório mostra as impressões de página e as conversões de cada segmento para o qual uma oferta é fornecida.
 
 ![chlimage_1-316](assets/chlimage_1-316.png)
 
@@ -98,6 +98,6 @@ Para cada campanha para a qual a página está ativa, é exibido um relatório c
 
 O relatório Recommendations da SEO contém os resultados da análise BrightEdge para a página. O relatório é uma lista de verificação de recursos da página que indica quais recursos a página inclui ou não para maximizar a localizabilidade usando mecanismos de pesquisa.
 
-O relatório permite criar tarefas para que sejam feitos aprimoramentos a fim de melhorar a localização da página. O Recommendations indica que as tarefas foram criadas para implementar a recomendação. Consulte [Atribuição de tarefas para SEO Recommendations](/help/sites-authoring/ci-analyze.md#assigning-tasks-for-seo-recommendations).
+O relatório permite criar tarefas para que sejam feitos aprimoramentos a fim de melhorar a localização da página. O Recommendations indica que as tarefas foram criadas para implementar a recomendação. Consulte [Atribuir tarefas para SEO Recommendations](/help/sites-authoring/ci-analyze.md#assigning-tasks-for-seo-recommendations).
 
 ![chlimage_1-317](assets/chlimage_1-317.png)

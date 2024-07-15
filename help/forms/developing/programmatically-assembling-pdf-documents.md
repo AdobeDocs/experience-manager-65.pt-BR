@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Montagem programática de documentos do PDF {#programmatically-assembling-pdf-documents}
 
-**Os exemplos e amostras neste documento são somente para AEM Forms no ambiente JEE.**
+**Exemplos e exemplos neste documento são somente para AEM Forms no ambiente JEE.**
 
 Você pode usar a API de serviço do Assembler para reunir vários documentos de PDF em um único documento de PDF. A ilustração a seguir mostra três documentos PDF sendo mesclados em um único documento PDF.
 
@@ -39,7 +39,7 @@ Para o propósito desta discussão, suponha que o seguinte documento DDX seja us
  </DDX>
 ```
 
-Este documento DDX mescla dois documentos PDF chamados *map.pdf* e *directs.pdf* em um único documento PDF.
+Este documento DDX mescla dois documentos PDF chamados *map.pdf* e *directions.pdf* em um único documento PDF.
 
 >[!NOTE]
 >
@@ -47,19 +47,19 @@ Este documento DDX mescla dois documentos PDF chamados *map.pdf* e *directs.pdf*
 
 >[!NOTE]
 >
->Para obter mais informações sobre o serviço Assembler, consulte [Referência de serviços para o AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Para obter mais informações sobre o serviço Assembler, consulte [Referência de serviços para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 >[!NOTE]
 >
->Para obter mais informações sobre um documento DDX, consulte [Serviço de Assembler e Referência DDX](https://www.adobe.com/go/learn_aemforms_ddx_63).
+>Para obter mais informações sobre um documento DDX, consulte [Serviço do Assembler e Referência DDX](https://www.adobe.com/go/learn_aemforms_ddx_63).
 
 ## Considerações ao invocar o serviço Assembler usando serviços Web {#considerations-when-invoking-assembler-service-using-web-services}
 
-Ao adicionar cabeçalhos e rodapés durante a montagem de documentos grandes, você pode encontrar um `OutOfMemory` e os arquivos não serão montados. Para reduzir a chance de esse problema ocorrer, adicione um `DDXProcessorSetting` elemento ao seu documento DDX, como mostrado no exemplo a seguir.
+Ao adicionar cabeçalhos e rodapés durante a montagem de documentos grandes, você pode encontrar um erro `OutOfMemory` e os arquivos não serão montados. Para reduzir a chance deste problema, adicione um elemento `DDXProcessorSetting` ao seu documento DDX, como mostrado no exemplo a seguir.
 
 `<DDXProcessorSetting name="checkpoint" value="2000" />`
 
-Você pode adicionar esse elemento como filho de `DDX` elemento ou como filho de um `PDF result` elemento. O valor padrão para essa configuração é 0 (zero), que desativa o ponto de verificação e o DDX se comporta como se o `DDXProcessorSetting` elemento não está presente. Se você encontrou um `OutOfMemory` erro, talvez seja necessário definir o valor como um número inteiro, normalmente entre 500 e 5000. Um valor de ponto de verificação pequeno resulta em pontos de verificação mais frequentes.
+Você pode adicionar este elemento como filho do elemento `DDX` ou como filho de um elemento `PDF result`. O valor padrão dessa configuração é 0 (zero), que desativa o ponto de verificação e o DDX se comporta como se o elemento `DDXProcessorSetting` não estivesse presente. Se você encontrou um erro `OutOfMemory`, talvez precise definir o valor como um inteiro, normalmente entre 500 e 5000. Um valor de ponto de verificação pequeno resulta em pontos de verificação mais frequentes.
 
 ## Resumo das etapas {#summary-of-steps}
 
@@ -87,15 +87,15 @@ Os seguintes arquivos JAR devem ser adicionados ao caminho de classe do projeto:
 
 se o AEM Forms for disponibilizado em um servidor de aplicativos J2EE compatível diferente do JBoss, você deverá substituir os arquivos adobe-utilities.jar e jbossall-client.jar por arquivos JAR específicos para o servidor de aplicativos J2EE no qual o AEM Forms é disponibilizado.
 
-**Criar um cliente do PDF Assembler**
+**Criar um cliente PDF Assembler**
 
 Antes de executar programaticamente uma operação do Assembler, você deve criar um cliente Assembler.
 
-**Referencie um documento DDX existente**
+**Referenciar um documento DDX existente**
 
 Um documento DDX deve ser referenciado para montar um documento PDF. Por exemplo, considere o documento DDX introduzido nesta seção. Este documento DDX instrui o serviço Assembler a unir dois documentos de PDF em um único documento de PDF.
 
-**Documentos de PDF de entrada de referência**
+**Referenciar documentos de PDF de entrada**
 
 Referencie documentos de PDF de entrada que você deseja passar para o serviço Assembler. Por exemplo, se você quiser passar dois documentos de PDF de entrada chamados Mapa e Direções, será necessário passar os arquivos de PDF correspondentes.
 
@@ -103,21 +103,21 @@ Tanto o arquivo map.pdf quanto o arquivo direction.pdf devem ser colocados em um
 
 >[!NOTE]
 >
->Um `AssemblerResult` objeto, que contém um objeto de coleção, será retornado se você chamar o `invokeDDX` operação. Essa operação é usada quando você passa dois ou mais documentos de PDF de entrada para o serviço Assembler. No entanto, se você passar apenas um PDF de entrada para o serviço Assembler e esperar apenas um documento de retorno, chame o `invokeOneDocument` operação. Ao invocar esta operação, um único documento é retornado. Para obter informações sobre como usar essa operação, consulte [Montagem de Documentos PDF Criptografados](/help/forms/developing/assembling-encrypted-pdf-documents.md#assembling-encrypted-pdf-documents).
+>Um objeto `AssemblerResult`, que contém um objeto de coleção, será retornado se você invocar a operação `invokeDDX`. Essa operação é usada quando você passa dois ou mais documentos de PDF de entrada para o serviço Assembler. No entanto, se você passar apenas um PDF de entrada para o serviço Assembler e esperar apenas um documento de retorno, chame a operação `invokeOneDocument`. Ao invocar esta operação, um único documento é retornado. Para obter informações sobre como usar esta operação, consulte [Assembling Encrypted PDF Documents](/help/forms/developing/assembling-encrypted-pdf-documents.md#assembling-encrypted-pdf-documents).
 
 **Definir opções de tempo de execução**
 
-Você pode definir opções de tempo de execução que controlam o comportamento do serviço Assembler enquanto ele executa um job. Por exemplo, você pode definir uma opção que instrui o serviço Assembler a continuar processando um job se um erro for encontrado. Para obter informações sobre as opções de tempo de execução que podem ser definidas, consulte `AssemblerOptionSpec` referência de classe em [Referência da API do AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+Você pode definir opções de tempo de execução que controlam o comportamento do serviço Assembler enquanto ele executa um job. Por exemplo, você pode definir uma opção que instrui o serviço Assembler a continuar processando um job se um erro for encontrado. Para obter informações sobre as opções de tempo de execução que você pode definir, consulte a referência de classe `AssemblerOptionSpec` na [Referência da API AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
-**Montar os documentos do PDF de entrada**
+**Montar os documentos de PDF de entrada**
 
 Depois de criar o cliente de serviço, fazer referência a um arquivo DDX, criar um objeto de coleção que armazene documentos de PDF de entrada e definir opções de tempo de execução, você pode chamar a operação DDX. Ao usar o documento DDX especificado nesta seção, os arquivos map.pdf e direction.pdf são mesclados em um documento PDF.
 
 **Extrair os resultados**
 
-O serviço Assembler retorna um `java.util.Map` objeto, que pode ser obtido do `AssemblerResult` e que contém os resultados da operação. O resultado `java.util.Map` objeto contém os documentos resultantes e quaisquer exceções.
+O serviço do Assembler retorna um objeto `java.util.Map`, que pode ser obtido do objeto `AssemblerResult`, e que contém os resultados da operação. O objeto `java.util.Map` retornado contém os documentos resultantes e quaisquer exceções.
 
-A tabela a seguir resume alguns dos valores-chave e tipos de objeto que podem estar na variável retornada `java.util.Map` objeto.
+A tabela a seguir resume alguns dos valores de chave e tipos de objeto que podem estar no objeto `java.util.Map` retornado.
 
 <table>
  <thead>
@@ -164,50 +164,50 @@ Montar um documento PDF usando a API de serviço do Assembler (Java):
 
 1. Crie um cliente PDF Assembler.
 
-   * Criar um `ServiceClientFactory` objeto que contém propriedades de conexão.
-   * Criar um `AssemblerServiceClient` usando seu construtor e transmitindo o `ServiceClientFactory` objeto.
+   * Crie um objeto `ServiceClientFactory` que contenha propriedades de conexão.
+   * Crie um objeto `AssemblerServiceClient` usando seu construtor e transmitindo o objeto `ServiceClientFactory`.
 
 1. Consulte um documento DDX existente.
 
-   * Criar um `java.io.FileInputStream` objeto que representa o documento DDX usando seu construtor e transmitindo um valor de string que especifica o local do arquivo DDX.
-   * Criar um `com.adobe.idp.Document` usando seu construtor e transmitindo o `java.io.FileInputStream` objeto.
+   * Crie um objeto `java.io.FileInputStream` que represente o documento DDX usando seu construtor e transmitindo um valor de cadeia de caracteres que especifique o local do arquivo DDX.
+   * Crie um objeto `com.adobe.idp.Document` usando seu construtor e transmitindo o objeto `java.io.FileInputStream`.
 
 1. Referencie documentos de PDF de entrada.
 
-   * Criar um `java.util.Map` objeto usado para armazenar documentos de PDF de entrada usando um `HashMap` construtor.
-   * Para cada documento de PDF de entrada, crie um `java.io.FileInputStream` usando seu construtor e transmitindo o local do documento PDF de entrada.
-   * Para cada documento de PDF de entrada, crie um `com.adobe.idp.Document` e transmita o `java.io.FileInputStream` objeto que contém o documento PDF.
-   * Para cada documento de entrada, adicione uma entrada à `java.util.Map` ao invocar seu `put` e transmitindo os seguintes argumentos:
+   * Crie um objeto `java.util.Map` usado para armazenar documentos de PDF de entrada usando um construtor `HashMap`.
+   * Para cada documento PDF de entrada, crie um objeto `java.io.FileInputStream` usando seu construtor e transmitindo o local do documento PDF de entrada.
+   * Para cada documento de PDF de entrada, crie um objeto `com.adobe.idp.Document` e passe o objeto `java.io.FileInputStream` que contém o documento PDF.
+   * Para cada documento de entrada, adicione uma entrada ao objeto `java.util.Map` invocando seu método `put` e transmitindo os seguintes argumentos:
 
       * Um valor de string que representa o nome da chave. Este valor deve corresponder ao valor do elemento de origem PDF especificado no documento DDX.
-      * A `com.adobe.idp.Document` objeto (ou `java.util.List` objeto que especifica vários documentos) que contém o documento PDF de origem.
+      * Um objeto `com.adobe.idp.Document` (ou objeto `java.util.List` que especifica vários documentos) que contém o documento PDF de origem.
 
 1. Definir opções de tempo de execução.
 
-   * Criar um `AssemblerOptionSpec` objeto que armazena opções de tempo de execução usando seu construtor.
-   * Defina opções de tempo de execução para atender aos requisitos da sua empresa, chamando um método que pertence à `AssemblerOptionSpec` objeto. Por exemplo, para instruir o serviço Assembler para continuar processando um job quando ocorrer um erro, chame o `AssemblerOptionSpec` do objeto `setFailOnError` e passar `false`.
+   * Crie um objeto `AssemblerOptionSpec` que armazene opções de tempo de execução usando seu construtor.
+   * Defina as opções de tempo de execução para atender aos requisitos da sua empresa invocando um método que pertença ao objeto `AssemblerOptionSpec`. Por exemplo, para instruir o serviço Assembler a continuar processando um trabalho quando ocorrer um erro, chame o método `setFailOnError` do objeto `AssemblerOptionSpec` e passe `false`.
 
 1. Montar os documentos do PDF de entrada.
 
-   Chame o `AssemblerServiceClient` do objeto `invokeDDX` e passe os seguintes valores obrigatórios:
+   Chame o método `invokeDDX` do objeto `AssemblerServiceClient` e passe os seguintes valores obrigatórios:
 
-   * A `com.adobe.idp.Document` objeto que representa o documento DDX a ser usado
-   * A `java.util.Map` objeto que contém os arquivos de PDF de entrada a serem montados
-   * A `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` objeto que especifica as opções de tempo de execução, incluindo fonte padrão e nível de log de job
+   * Um objeto `com.adobe.idp.Document` que representa o documento DDX a ser usado
+   * Um objeto `java.util.Map` que contém os arquivos de PDF de entrada a serem montados
+   * Um objeto `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` que especifica as opções de tempo de execução, incluindo a fonte padrão e o nível de log do trabalho
 
-   A variável `invokeDDX` o método retorna um `com.adobe.livecycle.assembler.client.AssemblerResult` objeto que contém os resultados do trabalho e quaisquer exceções que ocorreram.
+   O método `invokeDDX` retorna um objeto `com.adobe.livecycle.assembler.client.AssemblerResult` que contém os resultados do trabalho e as exceções que ocorreram.
 
 1. Extraia os resultados.
 
    Para obter o documento PDF recém-criado, execute as seguintes ações:
 
-   * Chame o `AssemblerResult` do objeto `getDocuments` método. Isso retorna um `java.util.Map` objeto.
-   * Repita através do `java.util.Map` até encontrar o resultado `com.adobe.idp.Document` objeto. (Você pode usar o elemento de resultado PDF especificado no documento DDX para obter o documento.)
-   * Chame o `com.adobe.idp.Document` do objeto `copyToFile` método para extrair o documento PDF.
+   * Invoque o método `getDocuments` do objeto `AssemblerResult`. Isso retorna um objeto `java.util.Map`.
+   * Repita o objeto `java.util.Map` até encontrar o objeto `com.adobe.idp.Document` resultante. (Você pode usar o elemento de resultado PDF especificado no documento DDX para obter o documento.)
+   * Invoque o método `copyToFile` do objeto `com.adobe.idp.Document` para extrair o documento PDF.
 
    >[!NOTE]
    >
-   >Se `LOG_LEVEL` foi definido para produzir um log, você pode extrair o log usando o `AssemblerResult` do objeto `getJobLog` método.
+   >Se `LOG_LEVEL` foi definido para produzir um log, você pode extrair o log usando o método `getJobLog` do objeto `AssemblerResult`.
 
 **Consulte também**
 
@@ -227,68 +227,68 @@ Montar documentos de PDF usando a API de serviço do Assembler (serviço da Web)
 
    >[!NOTE]
    >
-   >Substituir `localhost` com o endereço IP do servidor que hospeda o AEM Forms.
+   >Substitua `localhost` pelo endereço IP do servidor que hospeda o AEM Forms.
 
 1. Crie um cliente PDF Assembler.
 
-   * Criar um `AssemblerServiceClient` usando seu construtor padrão.
-   * Criar um `AssemblerServiceClient.Endpoint.Address` usando o `System.ServiceModel.EndpointAddress` construtor. Transmita um valor de string que especifique o WSDL para o serviço AEM Forms (por exemplo, `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). Não é necessário usar a variável `lc_version` atributo. Esse atributo é usado quando você cria uma referência de serviço.
-   * Criar um `System.ServiceModel.BasicHttpBinding` obtendo o valor do `AssemblerServiceClient.Endpoint.Binding` campo. Converter o valor de retorno em `BasicHttpBinding`.
-   * Defina o `System.ServiceModel.BasicHttpBinding` do objeto `MessageEncoding` campo para `WSMessageEncoding.Mtom`. Esse valor garante que a MTOM seja usada.
+   * Crie um objeto `AssemblerServiceClient` usando seu construtor padrão.
+   * Crie um objeto `AssemblerServiceClient.Endpoint.Address` usando o construtor `System.ServiceModel.EndpointAddress`. Transmita um valor de string que especifique o WSDL para o serviço AEM Forms (por exemplo, `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). Você não precisa usar o atributo `lc_version`. Esse atributo é usado quando você cria uma referência de serviço.
+   * Crie um objeto `System.ServiceModel.BasicHttpBinding` obtendo o valor do campo `AssemblerServiceClient.Endpoint.Binding`. Converter o valor de retorno em `BasicHttpBinding`.
+   * Defina o campo `MessageEncoding` do objeto `System.ServiceModel.BasicHttpBinding` como `WSMessageEncoding.Mtom`. Esse valor garante que a MTOM seja usada.
    * Ative a autenticação HTTP básica executando as seguintes tarefas:
 
-      * Atribuir o nome de usuário dos formulários AEM ao campo `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
+      * Atribua o nome de usuário dos formulários AEM ao campo `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
       * Atribua o valor de senha correspondente ao campo `AssemblerServiceClient.ClientCredentials.UserName.Password`.
-      * Atribuir o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Atribuir o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
+      * Atribua o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * Atribua o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Consulte um documento DDX existente.
 
-   * Criar um `BLOB` usando seu construtor. A variável `BLOB` objeto é usado para armazenar o documento DDX.
-   * Criar um `System.IO.FileStream` chamando seu construtor e transmitindo um valor de string que representa o local do arquivo do documento DDX e o modo no qual o arquivo será aberto.
-   * Crie uma matriz de bytes que armazene o conteúdo da variável `System.IO.FileStream` objeto. Você pode determinar o tamanho da matriz de bytes obtendo o `System.IO.FileStream` do objeto `Length` propriedade.
-   * Preencha a matriz de bytes com dados de fluxo invocando o `System.IO.FileStream` do objeto `Read` e transmitindo a matriz de bytes, a posição inicial e o comprimento do fluxo para leitura.
-   * Preencha o `BLOB` atribuindo seu `MTOM` com o conteúdo da matriz de bytes.
+   * Crie um objeto `BLOB` usando seu construtor. O objeto `BLOB` é usado para armazenar o documento DDX.
+   * Crie um objeto `System.IO.FileStream` chamando seu construtor e transmitindo um valor de cadeia de caracteres que representa o local do arquivo do documento DDX e o modo no qual o arquivo será aberto.
+   * Crie uma matriz de bytes que armazene o conteúdo do objeto `System.IO.FileStream`. Você pode determinar o tamanho da matriz de bytes obtendo a propriedade `Length` do objeto `System.IO.FileStream`.
+   * Preencha a matriz de bytes com os dados de fluxo invocando o método `Read` do objeto `System.IO.FileStream` e transmitindo a matriz de bytes, a posição inicial e o comprimento do fluxo para leitura.
+   * Preencha o objeto `BLOB` atribuindo sua propriedade `MTOM` com o conteúdo da matriz de bytes.
 
 1. Referencie documentos de PDF de entrada.
 
-   * Para cada documento de PDF de entrada, crie um `BLOB` usando seu construtor. A variável `BLOB` objeto é usado para armazenar o documento PDF de entrada.
-   * Criar um `System.IO.FileStream` chamando seu construtor e transmitindo um valor de string que representa o local do arquivo do documento de PDF de entrada e o modo no qual o arquivo será aberto.
-   * Crie uma matriz de bytes que armazene o conteúdo da variável `System.IO.FileStream` objeto. Você pode determinar o tamanho da matriz de bytes obtendo o `System.IO.FileStream` do objeto `Length` propriedade.
-   * Preencha a matriz de bytes com dados de fluxo invocando o `System.IO.FileStream` do objeto `Read` método. Passe a matriz de bytes, a posição inicial e o comprimento do fluxo para leitura.
-   * Preencha o `BLOB` atribuindo seu `MTOM` com o conteúdo da matriz de bytes.
-   * Criar um `MyMapOf_xsd_string_To_xsd_anyType` objeto. Este objeto de coleção é usado para armazenar documentos de PDF de entrada.
-   * Para cada documento de PDF de entrada, crie um `MyMapOf_xsd_string_To_xsd_anyType_Item` objeto. Por exemplo, se dois documentos de PDF de entrada forem usados, crie dois `MyMapOf_xsd_string_To_xsd_anyType_Item` objetos.
-   * Atribua um valor de string que represente o nome da chave à `MyMapOf_xsd_string_To_xsd_anyType_Item` do objeto `key` campo. Este valor deve corresponder ao valor do elemento de origem PDF especificado no documento DDX. (Execute esta tarefa para cada documento de PDF de entrada.)
-   * Atribua a `BLOB` objeto que armazena o documento PDF para o `MyMapOf_xsd_string_To_xsd_anyType_Item` do objeto `value` campo. (Execute esta tarefa para cada documento de PDF de entrada.)
-   * Adicione o `MyMapOf_xsd_string_To_xsd_anyType_Item` objeto para o `MyMapOf_xsd_string_To_xsd_anyType` objeto. Chame o `MyMapOf_xsd_string_To_xsd_anyType` do objeto `Add` e transmita o `MyMapOf_xsd_string_To_xsd_anyType` objeto. (Execute esta tarefa para cada documento de PDF de entrada.)
+   * Para cada documento de PDF de entrada, crie um objeto `BLOB` usando seu construtor. O objeto `BLOB` é usado para armazenar o documento de PDF de entrada.
+   * Crie um objeto `System.IO.FileStream` chamando seu construtor e transmitindo um valor de cadeia de caracteres que representa o local do arquivo do documento de PDF de entrada e o modo no qual o arquivo será aberto.
+   * Crie uma matriz de bytes que armazene o conteúdo do objeto `System.IO.FileStream`. Você pode determinar o tamanho da matriz de bytes obtendo a propriedade `Length` do objeto `System.IO.FileStream`.
+   * Preencha a matriz de bytes com dados de fluxo invocando o método `Read` do objeto `System.IO.FileStream`. Passe a matriz de bytes, a posição inicial e o comprimento do fluxo para leitura.
+   * Preencha o objeto `BLOB` atribuindo seu campo `MTOM` com o conteúdo da matriz de bytes.
+   * Crie um objeto `MyMapOf_xsd_string_To_xsd_anyType`. Este objeto de coleção é usado para armazenar documentos de PDF de entrada.
+   * Para cada documento de PDF de entrada, crie um objeto `MyMapOf_xsd_string_To_xsd_anyType_Item`. Por exemplo, se dois documentos de PDF de entrada forem usados, crie dois objetos `MyMapOf_xsd_string_To_xsd_anyType_Item`.
+   * Atribua um valor de cadeia de caracteres que represente o nome da chave para o campo `key` do objeto `MyMapOf_xsd_string_To_xsd_anyType_Item`. Este valor deve corresponder ao valor do elemento de origem PDF especificado no documento DDX. (Execute esta tarefa para cada documento de PDF de entrada.)
+   * Atribua o objeto `BLOB` que armazena o documento PDF ao campo `value` do objeto `MyMapOf_xsd_string_To_xsd_anyType_Item`. (Execute esta tarefa para cada documento de PDF de entrada.)
+   * Adicione o objeto `MyMapOf_xsd_string_To_xsd_anyType_Item` ao objeto `MyMapOf_xsd_string_To_xsd_anyType`. Invoque o método `Add` do objeto `MyMapOf_xsd_string_To_xsd_anyType` e passe o objeto `MyMapOf_xsd_string_To_xsd_anyType`. (Execute esta tarefa para cada documento de PDF de entrada.)
 
 1. Definir opções de tempo de execução.
 
-   * Criar um `AssemblerOptionSpec` objeto que armazena opções de tempo de execução usando seu construtor.
-   * Defina opções de tempo de execução para atender aos requisitos da sua empresa atribuindo um valor a um membro de dados que pertença à `AssemblerOptionSpec` objeto. Por exemplo, para instruir o serviço Assembler a continuar processando um job quando ocorrer um erro, atribua `false` para o `AssemblerOptionSpec` do objeto `failOnError` membro de dados.
+   * Crie um objeto `AssemblerOptionSpec` que armazene opções de tempo de execução usando seu construtor.
+   * Defina opções de tempo de execução para atender aos requisitos comerciais atribuindo um valor a um membro de dados que pertença ao objeto `AssemblerOptionSpec`. Por exemplo, para instruir o serviço Assembler a continuar processando um trabalho quando ocorrer um erro, atribua `false` ao membro de dados `failOnError` do objeto `AssemblerOptionSpec`.
 
 1. Montar os documentos do PDF de entrada.
 
-   Chame o `AssemblerServiceClient` do objeto `invoke` e passe os seguintes valores:
+   Chame o método `invoke` do objeto `AssemblerServiceClient` e passe os seguintes valores:
 
-   * A `BLOB` objeto que representa o documento DDX.
-   * A variável `mapItem` matriz que contém os documentos PDF de entrada. Suas chaves devem corresponder aos nomes dos arquivos de origem de PDF e seus valores devem ser os `BLOB` objetos que correspondem a esses arquivos.
-   * Um `AssemblerOptionSpec` objeto que especifica as opções de tempo de execução.
+   * Um objeto `BLOB` que representa o documento DDX.
+   * A matriz `mapItem` que contém os documentos de PDF de entrada. Suas chaves devem corresponder aos nomes dos arquivos de origem de PDF, e seus valores devem ser os objetos `BLOB` que correspondem a esses arquivos.
+   * Um objeto `AssemblerOptionSpec` que especifica opções de tempo de execução.
 
-   A variável `invoke` o método retorna um `AssemblerResult` objeto que contém os resultados do trabalho e quaisquer exceções que possam ter ocorrido.
+   O método `invoke` retorna um objeto `AssemblerResult` que contém os resultados do trabalho e quaisquer exceções que possam ter ocorrido.
 
 1. Extraia os resultados.
 
    Para obter o documento PDF recém-criado, execute as seguintes ações:
 
-   * Acesse o `AssemblerResult` do objeto `documents` que é um `Map` objeto que contém os documentos PDF de resultado.
-   * Repita através do `Map` até encontrar a chave que corresponde ao nome do documento resultante. Em seguida, converta os membros da matriz `value` para um `BLOB`.
-   * Extraia os dados binários que representam o documento PDF acessando seus `BLOB` do objeto `MTOM` propriedade. Isso retorna uma matriz de bytes que você pode gravar em um arquivo PDF.
+   * Acesse o campo `documents` do objeto `AssemblerResult`, que é um objeto `Map` que contém os documentos de PDF de resultado.
+   * Repita através do objeto `Map` até encontrar a chave que corresponde ao nome do documento resultante. Em seguida, converta o `value` desse membro da matriz em um `BLOB`.
+   * Extraia os dados binários que representam o documento PDF acessando a propriedade `MTOM` do objeto `BLOB`. Isso retorna uma matriz de bytes que você pode gravar em um arquivo PDF.
 
    >[!NOTE]
    >
-   >Se `LOG_LEVEL` foi definido para produzir um log, você pode extrair o log obtendo o valor de `AssemblerResult` do objeto `jobLog` membro de dados.
+   >Se `LOG_LEVEL` foi definido para produzir um log, você pode extrair o log obtendo o valor do membro de dados `jobLog` do objeto `AssemblerResult`.
 
 **Consulte também**
 

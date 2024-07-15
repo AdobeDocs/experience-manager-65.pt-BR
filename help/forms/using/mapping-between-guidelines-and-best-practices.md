@@ -98,7 +98,7 @@ As seções a seguir mapeiam a Seção 508 e as diretrizes da WCAG para as prát
 | [7.3](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-avoid-movement) | Até que os agentes do usuário permitam que os usuários congelem a movimentação de conteúdo, evite a movimentação nas páginas. | 2.1 Mantenha os formulários simples e fáceis de usar | |
 | [7.4](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-no-periodic-refresh) | Até que os agentes do usuário forneçam a capacidade de interromper a atualização, não crie periodicamente páginas de atualização automática. | Não aplicável | |
 | [7.5](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-no-auto-forward) | Até que os agentes do usuário forneçam a capacidade de interromper o redirecionamento automático, não use a marcação para redirecionar páginas automaticamente. Em vez disso, configure o servidor para executar redirecionamentos. | Não aplicável | |
-| [8.1](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-directly-accessible) | Torne elementos programáticos, como scripts e applets diretamente acessíveis ou compatíveis com tecnologias assistivas [Prioridade 1 se a funcionalidade for importante e não for apresentada em outro lugar; caso contrário, Prioridade 2.] | 2.11 Evitar scripts com interrupções | |
+| [8.1](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-directly-accessible) | Torne elementos programáticos, como scripts e applets, diretamente acessíveis ou compatíveis com as tecnologias assistivas [Prioridade 1 se a funcionalidade for importante e não for apresentada em outro lugar; caso contrário, Prioridade 2.] | 2.11 Evitar scripts com interrupções | |
 | [9.2](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-keyboard-operable) | Certifique-se de que qualquer elemento que tenha sua própria interface possa ser operado de maneira independente de dispositivo. | 2.7 Garantir que os controles de formulário estejam acessíveis ao teclado | |
 | [9.3](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-device-independent-events) | Para scripts, especifique manipuladores de eventos lógicos em vez de manipuladores de eventos dependentes de dispositivo. | 2.7 Garantir que os controles de formulário estejam acessíveis ao teclado | |
 | [10.1](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-avoid-pop-ups) | Até que os agentes do usuário permitam que os usuários desativem as janelas geradas, não faça com que janelas pop-ups ou outras janelas sejam exibidas e não altere a janela atual sem informar o usuário. | 2.11 Evitar scripts com interrupções | |
@@ -110,8 +110,8 @@ As seções a seguir mapeiam a Seção 508 e as diretrizes da WCAG para as prát
 | [12.4](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-associate-labels) | Associar rótulos explicitamente a seus controles. | 2.5 Fornecer rótulos adequados para controles de formulário | |
 | [13.1](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-meaningful-links) | Identifique claramente o target de cada link. | 2.5 Fornecer rótulos adequados para controles de formulário 2.5.6 Fornecer texto do link | |
 | [13.2](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-use-metadata) | Forneça metadados para adicionar informações semânticas a páginas e sites. | Não aplicável | |
-| [13,3](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-site-description) | Forneça informações sobre o layout geral de um site (por exemplo, um mapa de site ou índice). | 2.10 Fornecer uma estrutura de formulário navegável | |
-| [13,4](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-clear-nav-mechanism) | Use os mecanismos de navegação de maneira consistente. | 2.10 Fornecer uma estrutura de formulário navegável | Use páginas mestras para criar conteúdo de navegação consistente. |
+| [13.3](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-site-description) | Forneça informações sobre o layout geral de um site (por exemplo, um mapa de site ou índice). | 2.10 Fornecer uma estrutura de formulário navegável | |
+| [13.4](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-clear-nav-mechanism) | Use os mecanismos de navegação de maneira consistente. | 2.10 Fornecer uma estrutura de formulário navegável | Use páginas mestras para criar conteúdo de navegação consistente. |
 
 ### Critérios de sucesso da WCAG 2.0
 
@@ -123,11 +123,11 @@ As seções a seguir mapeiam a Seção 508 e as diretrizes da WCAG para as prát
 | 1.2 [Mídia com base no tempo](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv.html) | | |
 | 1.2.1 [Apenas áudio e apenas vídeo (pré-gravado)](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-av-only-alt.html) | 2.12 Garantir que todo o conteúdo de áudio e vídeo esteja acessível | |
 | 1.2.2 [Legendas (pré-gravadas)](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-captions.html) | 2.12 Garantir que todo o conteúdo de áudio e vídeo esteja acessível | |
-| 1.2.3 [Descrição de áudio ou alternativa de mídia (pré-gravada)](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc.html) | 2.12 Garantir que todo o conteúdo de áudio e vídeo esteja acessível | |
-| 1.2.4 [Legendas (ao vivo)](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-real-time-captions.html) | 2.12 Garantir que todo o conteúdo de áudio e vídeo esteja acessível | |
+| 1.2.3 [Descrição de Áudio ou Alternativa de Mídia (Pré-gravada)](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc.html) | 2.12 Garantir que todo o conteúdo de áudio e vídeo esteja acessível | |
+| 1.2.4 [Legendas (ao Vivo)](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-real-time-captions.html) | 2.12 Garantir que todo o conteúdo de áudio e vídeo esteja acessível | |
 | 1.2.5 [Descrição de áudio (pré-gravado)](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc-only.html) | 2.12 Garantir que todo o conteúdo de áudio e vídeo esteja acessível | |
 | 1.2.6 [Linguagem de sinais (pré-gravada)](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-sign.html) | 2.12 Garantir que todo o conteúdo de áudio e vídeo esteja acessível | |
-| 1.2.7 [Descrição de áudio estendido (pré-gravado)](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-extended-ad.html) | 2.12 Garantir que todo o conteúdo de áudio e vídeo esteja acessível | |
+| 1.2.7 [Descrição de Áudio Estendida (Pré-gravada)](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-extended-ad.html) | 2.12 Garantir que todo o conteúdo de áudio e vídeo esteja acessível | |
 | 1.2.8 [Alternativa de mídia (pré-gravada)](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-text-doc.html) | 2.12 Garantir que todo o conteúdo de áudio e vídeo esteja acessível | |
 | 1.2.9 [Somente áudio (ao vivo)](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-live-audio-only.html) | 2.12 Garantir que todo o conteúdo de áudio e vídeo esteja acessível | |
 | 1.3 [Adaptável](https://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation.html) | | |
@@ -136,14 +136,14 @@ As seções a seguir mapeiam a Seção 508 e as diretrizes da WCAG para as prát
 | | 2.10 Fornecer uma estrutura de formulário navegável | |
 | 1.3.3 [Características sensoriais](https://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation-understanding.html) | 2.8 Usar a cor com responsabilidade | |
 | 1.4 [Discernível](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast.html) | | |
-| 1.4.1 [Uso de cor](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-without-color.html) | 2.8 Usar a cor com responsabilidade | |
+| 1.4.1 [Uso de Cor](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-without-color.html) | 2.8 Usar a cor com responsabilidade | |
 | 1.4.2 [Controle de áudio](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-dis-audio.html) | Nenhuma técnica de LiveCycle específica | |
 | 1.4.3 [Contraste (Mínimo)](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html) | 2.8 Usar a cor com responsabilidade | |
 | 1.4.4 [Redimensionar texto](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-scale.html) | Nenhuma técnica de LiveCycle específica | |
 | 1.4.5 [Imagens de texto](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-text-presentation.html) | Nenhuma técnica de LiveCycle específica | |
 | 1.4.6 [Contraste (Avançado)](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast7.html) | 2.8 Usar a cor com responsabilidade | |
-| 1.4.7 [Áudio de fundo baixo ou sem](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-noaudio.html) | Nenhuma técnica de LiveCycle específica | |
-| 1.4.9 [Imagens de texto (sem exceção)](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-text-images.html) | Nenhuma técnica de LiveCycle específica | |
+| 1.4.7 [Áudio com baixo ou sem fundo](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-noaudio.html) | Nenhuma técnica de LiveCycle específica | |
+| 1.4.9 [Imagens de Texto (Sem Exceção)](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-text-images.html) | Nenhuma técnica de LiveCycle específica | |
 | 2.1 [Acessível por teclado](https://www.w3.org/TR/UNDERSTANDING-WCAG20/keyboard-operation.html) | | |
 | 2.1.1 [Teclado](https://www.w3.org/TR/UNDERSTANDING-WCAG20/keyboard-operation-keyboard-operable.html) | 2.6 Verifique se a leitura e a ordem das guias estão corretas | |
 | | 2.7 Garantir que os controles de formulário estejam acessíveis ao teclado | |
@@ -152,34 +152,34 @@ As seções a seguir mapeiam a Seção 508 e as diretrizes da WCAG para as prát
 | | 2.7 Garantir que os controles de formulário estejam acessíveis ao teclado | |
 | 2.2 [Tempo suficiente](https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits.html) | | |
 | 2.2.1 [Tempo ajustável](https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-required-behaviors.html) | Nenhuma técnica de LiveCycle específica | |
-| 2.2.2 [Pausar, Interromper, Ocultar](https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-pause.html) | 2.1 Mantenha os formulários simples e fáceis de usar | |
-| 2.2.3 [Sem Tempo](https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-no-exceptions.html) | Nenhuma técnica de LiveCycle específica | |
+| 2.2.2 [Pausar, Parar, Ocultar](https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-pause.html) | 2.1 Mantenha os formulários simples e fáceis de usar | |
+| 2.2.3 [Sem Intervalos](https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-no-exceptions.html) | Nenhuma técnica de LiveCycle específica | |
 | 2.2.4 [Interrupções](https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-postponed.html) | Nenhuma técnica de LiveCycle específica | |
 | 2.2.5 [Reautenticação](https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-server-timeout.html) | Nenhuma técnica de LiveCycle específica | |
 | 2.3 [Convulsões] | | |
 | 2.3.1 [Três Flashes ou Abaixo do Limite](https://www.w3.org/TR/UNDERSTANDING-WCAG20/seizure-does-not-violate.html) | 2.1 Mantenha os formulários simples e fáceis de usar | |
 | 2.3.2 [Três Flashes](https://www.w3.org/TR/UNDERSTANDING-WCAG20/seizure-three-times.html) | 2.1 Mantenha os formulários simples e fáceis de usar | |
 | 2.4 [Navegável](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms.html) | | |
-| 2.4.1 [Ignorar blocos](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-skip.html) | 2.10 Fornecer uma estrutura de formulário navegável | |
+| 2.4.1 [Ignorar Blocos](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-skip.html) | 2.10 Fornecer uma estrutura de formulário navegável | |
 | 2.4.2 [Página com título](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-title.html) | Nenhuma técnica de LiveCycle específica | |
 | 2.4.3 [Ordem de foco](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-focus-order.html) | 2.6 Verifique se a leitura e a ordem das guias estão corretas | |
-| 2.4.4 [Finalidade do link (em contexto)](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-refs.html) | Nenhuma técnica de LiveCycle específica | A finalidade do link depende de os autores escolherem texto significativo para elementos vinculados. |
+| 2.4.4 [Finalidade do link (Em contexto)](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-refs.html) | Nenhuma técnica de LiveCycle específica | A finalidade do link depende de os autores escolherem texto significativo para elementos vinculados. |
 | 2.4.5 [Várias maneiras](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-mult-loc.html) | 2.10 Fornecer uma estrutura de formulário navegável | |
 | 2.4.6 [Títulos e rótulos](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-descriptive.html) | <ul><li>2.5 Fornecer rótulos adequados para controles de formulário</li><li>2.10 Fornecer uma estrutura de formulário navegável</li> | |
 | 2.4.7 [Foco visível](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-focus-visible.html) | Nenhuma técnica de LiveCycle específica | O foco padrão em formulários de LiveCycle é visível. |
 | 2.4.8 [Localização](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-location.html) | Nenhuma técnica de LiveCycle específica | Não aplicável: os formulários LiveCycle não exigem sistemas de navegação. |
-| 2.4.9 [Finalidade do link (somente link)](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-link.html) | Nenhuma técnica de LiveCycle específica | A finalidade do link depende de os autores escolherem texto significativo para elementos vinculados. |
-| 2.4.10 [Cabeçalhos da seção](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-headings.html) | 2.10 Fornecer uma estrutura de formulário navegável | |
+| 2.4.9 [Finalidade do link (Somente link)](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-link.html) | Nenhuma técnica de LiveCycle específica | A finalidade do link depende de os autores escolherem texto significativo para elementos vinculados. |
+| 2.4.10 [Títulos de seção](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-headings.html) | 2.10 Fornecer uma estrutura de formulário navegável | |
 | 3.1 [Legível](https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning.html) | | |
 | 3.1.1 [Idioma da página](https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-doc-lang-id.html) | 2.13 Identificar a linguagem natural e quaisquer alterações na linguagem | |
 | 3.1.2 [Idioma de Partes](https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-other-lang-id.html) | 2.13 Identificar a linguagem natural e quaisquer alterações na linguagem | |
 | 3.1.3 [Palavras incomuns](https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-idioms.html) | Nenhuma técnica de LiveCycle específica | |
 | 3.1.4 [Abreviações](https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-located.html) | Nenhuma técnica de LiveCycle específica | |
-| 3.1.5 [Nível de leitura](https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-supplements.html) | Nenhuma técnica de LiveCycle específica | |
+| 3.1.5 [Nível de Leitura](https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-supplements.html) | Nenhuma técnica de LiveCycle específica | |
 | 3.1.6 [Pronúncia](https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-pronunciation.html) | Nenhuma técnica de LiveCycle específica | |
 | 3.2 [Previsível](https://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior.html) | | |
 | 3.2.1 [Em foco](https://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior-receive-focus.html) | 2.11 Evitar scripts com interrupções | |
-| 3.2.2 [Na entrada](https://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior-unpredictable-change.html) | 2.11 Evitar scripts com interrupções | |
+| 3.2.2 [Na Entrada](https://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior-unpredictable-change.html) | 2.11 Evitar scripts com interrupções | |
 | 3.2.3 [Navegação consistente](https://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior-consistent-locations.html) | 2.10 Fornecer uma estrutura de formulário navegável | |
 | 3.2.4 [Identificação consistente](https://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior-consistent-functionality.html) | <ul><li>2.3 Escolha os controles certos</li><li>2.5 Fornecer rótulos adequados para controles de formulário</li> | |
 | 3.2.5 [Alteração mediante solicitação](https://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior-no-extreme-changes-context.html) | 2.11 Evitar scripts com interrupções | |
@@ -189,7 +189,7 @@ As seções a seguir mapeiam a Seção 508 e as diretrizes da WCAG para as prát
 | 3.3.3 [Sugestão de erro](https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-suggestions.html) |  | O LiveCycle Designer fornece ferramentas para marcar campos de formulário conforme necessário e executar a validação de entrada de formulário. |
 | 3.3.4 [Prevenção de erros (legal, financeiro, dados)](https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-reversible.html) | Nenhuma técnica de LiveCycle específica | |
 | 3.3.5 [Ajuda](https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-context-help.html) | Nenhuma técnica de LiveCycle específica | |
-| 3.3.6 [Prevenção de erros (todos)](https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-reversible-all.html) | Nenhuma técnica de LiveCycle específica | |
+| 3.3.6 [Prevenção de Erros (Todos)](https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-reversible-all.html) | Nenhuma técnica de LiveCycle específica | |
 | 4.1 [Compatível](https://www.w3.org/TR/UNDERSTANDING-WCAG20/ensure-compat.html) | | |
 | 4.1.1 [Análise](https://www.w3.org/TR/UNDERSTANDING-WCAG20/ensure-compat-parses.html) | Nenhuma técnica de LiveCycle específica | |
 | 4.1.2 [Nome, Função, Valor](https://www.w3.org/TR/UNDERSTANDING-WCAG20/ensure-compat-rsv.html) | <ul><li>2.3 Escolha os controles certos</li> <li>2.5 Fornecer rótulos adequados para controles de formulário</li> | |

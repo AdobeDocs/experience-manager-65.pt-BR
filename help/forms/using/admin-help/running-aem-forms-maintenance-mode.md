@@ -37,7 +37,7 @@ Evite chamar processos enquanto o servidor estiver no modo de manutenção. Isso
    >
    >Se você desligar o servidor enquanto ele estiver no modo de manutenção, ele ainda estará no modo de manutenção quando for reiniciado. Desative o modo de manutenção quando terminar suas tarefas de manutenção.
 
-**Verifique se o AEM Forms está em execução no modo de manutenção**
+**Verifique se os formulários AEM estão sendo executados no modo de manutenção**
 
 1. Em um navegador da Web, digite:
 

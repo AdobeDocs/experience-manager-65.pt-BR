@@ -52,7 +52,7 @@ Desenvolvedores(as) são responsáveis por desenvolver e personalizar o projeto 
 * realizam o design
 * desenvolvem os serviços e scripts necessários para implementar a funcionalidade necessária
 
-A configuração da variável [desenvolvimento](/help/sites-developing/best-practices.md) O ambiente pode depender de vários fatores, embora seja composto de:
+A configuração do ambiente [desenvolvimento](/help/sites-developing/best-practices.md) pode depender de vários fatores, embora seja composta de:
 
 * Um sistema de desenvolvimento integrado com controle de versão para fornecer uma base de código integrada. Isso é usado para mesclar e consolidar o código dos ambientes de desenvolvimento individuais usados por cada desenvolvedor.
 * Um ambiente pessoal para cada desenvolvedor; geralmente residente em sua máquina local. Em intervalos adequados, o código é sincronizado com o sistema de controle de versão
@@ -61,7 +61,7 @@ Dependendo da escala do seu sistema, o ambiente de desenvolvimento pode ter inst
 
 ### Controle de qualidade {#quality-assurance}
 
-Esse ambiente é usado pela equipe de controle de qualidade para [test](/help/sites-developing/test-plan.md) seu novo sistema; tanto em termos de design quanto de função. Ele deve ter ambientes de autor e publicação, com conteúdo adequado, e fornecer todos os serviços necessários para possibilitar um conjunto completo de testes.
+Este ambiente é usado pela equipe de controle de qualidade para [testar](/help/sites-developing/test-plan.md) exaustivamente o novo sistema, tanto em termos de design quanto de função. Ele deve ter ambientes de autor e publicação, com conteúdo adequado, e fornecer todos os serviços necessários para possibilitar um conjunto completo de testes.
 
 ### Estágios {#staging}
 
@@ -139,6 +139,6 @@ O conteúdo de produção deve ser transferido do ambiente de produção ao ambi
 O conteúdo pode ser transferido:
 
 * Entre os diferentes ambientes, exportando e importando pacotes.
-* Entre instâncias diferentes - por replicação direta ([Replicação do AEM](/help/sites-deploying/replication.md)), o conteúdo (usando uma conexão HTTP ou HTTPS).
+* Entre instâncias diferentes - por replicação direta ([replicação de AEM](/help/sites-deploying/replication.md)), o conteúdo (usando uma conexão HTTP ou HTTPS).
 
 ![chlimage_1-1](assets/chlimage_1-1.png)

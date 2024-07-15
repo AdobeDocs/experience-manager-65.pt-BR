@@ -34,21 +34,21 @@ O recurso de fórum QnA (perguntas e respostas) fornece uma área para os membro
 A documentação descreve:
 
 * Adicionando o recurso de fórum QnA a um site AEM.
-* Definições de configuração para o `QnA`componente.
+* Definições de configuração para o componente `QnA`.
 
 ## Adicionar um fórum de perguntas e respostas a uma página {#adding-a-q-a-forum-to-a-page}
 
-Para adicionar um `QnA` para uma página no modo de autor, use o navegador de componentes para localizar `Communities / QnA` e arraste-o para o local em uma página onde o fórum QnA deve aparecer.
+Para adicionar um componente `QnA` a uma página no modo de autor, use o navegador de componentes para localizar `Communities / QnA` e arrastá-lo para o local em uma página onde o fórum QnA deve aparecer.
 
 Para obter as informações necessárias, visite [Noções básicas sobre componentes das comunidades](/help/communities/basics.md).
 
-Quando a variável [bibliotecas obrigatórias do lado do cliente](/help/communities/qna-essentials.md#essentials-for-client-side) são incluídos, é assim que a variável `QnA` é exibido:
+Quando as [bibliotecas obrigatórias do lado do cliente](/help/communities/qna-essentials.md#essentials-for-client-side) são incluídas, é assim que o componente `QnA` aparece:
 
-![qna-component](assets/qna-component.png)
+![componente-qna](assets/qna-component.png)
 
 ### Configurar QnA {#configuring-qna}
 
-Selecione o colocado `QnA` para que você possa acessar e selecionar o `Configure` ícone que abre a caixa de diálogo de edição.
+Selecione o componente `QnA` inserido para que você possa acessar e selecionar o ícone `Configure` que abre a caixa de diálogo de edição.
 
 ![configurar](assets/configure-new.png)
 
@@ -56,7 +56,7 @@ Selecione o colocado `QnA` para que você possa acessar e selecionar o `Configur
 
 #### Guia Configurações {#settings-tab}
 
-No **Configurações** especifique as configurações para tópicos (perguntas) e respostas (respostas):
+Na guia **Configurações**, especifique configurações para tópicos (perguntas) e respostas (respostas):
 
 * **Permitir miniatura do anexo**
 
@@ -66,11 +66,11 @@ No **Configurações** especifique as configurações para tópicos (perguntas) 
 
   Tamanho máximo (em pixels) da imagem em miniatura do anexo. O valor padrão é 800 x 800.
 
-* **Tamanho mínimo de imagem para a miniatura**
+* **Tamanho mínimo da imagem para a miniatura**
 
   Tamanho mínimo (em bytes) da imagem para gerar a miniatura para imagens integradas. O valor padrão é 100.000 bytes (100 kb).
 
-* **Tamanho máximo da miniatura**
+* **Tamanho Máximo da Miniatura**
 
   Tamanho máximo (em pixels) da imagem em miniatura para imagem integrada. O valor padrão é 800 x 800.
 
@@ -92,33 +92,33 @@ No **Configurações** especifique as configurações para tópicos (perguntas) 
 
 * **Permitir marcação**
 
-  Se marcados, permitem que os membros adicionem rótulos de tag às suas publicações (consulte **Campo de tag** guia ). O padrão está desmarcado.
+  Se marcado, permite que os membros adicionem rótulos de marca às suas publicações (consulte a guia **Campo de marca**). O padrão está desmarcado.
 
-* **Permitir carregamentos de arquivo**
+* **Permitir Carregamentos de Arquivos**
 
   Se marcado, permite que anexos de arquivo sejam adicionados à pergunta ou ao comentário. O padrão está desmarcado.
 
 * **Permitir acompanhamento**
 
-  Se marcado, inclui o seguinte recurso para publicações do fórum, o que permite que os membros sejam [notificado](/help/communities/notifications.md) de novos posts. O padrão está desmarcado.
+  Se marcado, inclui o seguinte recurso para postagens no fórum, o que permite que os membros sejam [notificados](/help/communities/notifications.md) sobre novas postagens. O padrão está desmarcado.
 
 * **Permitir fixação**
 
   Se marcados, os tópicos do fórum poderão ser fixados no topo da lista de tópicos. O padrão está desmarcado.
 
-* **Permitir assinaturas de email**
+* **Permitir assinaturas por email**
 
-  Se marcado, permitir que os membros sejam notificados sobre novas publicações por email ([subscrição](/help/communities/subscriptions.md)). Exige que a opção Permitir monitoramento seja marcada e [email configurado](/help/communities/email.md). O padrão está desmarcado.
+  Se marcado, permitirá que os membros sejam notificados sobre novas postagens por email ([assinatura](/help/communities/subscriptions.md)). Exige que a opção Permitir Acompanhamento seja marcada e o [email seja configurado](/help/communities/email.md). O padrão está desmarcado.
 
-* **Tamanho máximo do arquivo**
+* **Tamanho máx. do arquivo**
 
-  Relevante apenas se `Allow File Uploads` está marcado. Este campo limita o tamanho (em bytes) de um arquivo carregado. O padrão é 104857600 (10 Mb).
+  Relevante somente se `Allow File Uploads` estiver marcado. Este campo limita o tamanho (em bytes) de um arquivo carregado. O padrão é 104857600 (10 Mb).
 
-* **Tipos de arquivo permitidos**
+* **Tipos de arquivos permitidos**
 
-  Relevante apenas se `Allow File Uploads` está marcado. Uma lista separada por vírgulas de extensões de arquivo com o separador &quot;ponto&quot;. Por exemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se algum tipo de arquivo for especificado, os não especificados não poderão ser carregados. O padrão é nenhum especificado, de modo que **all** tipos de arquivo são permitidos.
+  Relevante somente se `Allow File Uploads` estiver marcado. Uma lista separada por vírgulas de extensões de arquivo com o separador &quot;ponto&quot;. Por exemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Se algum tipo de arquivo for especificado, os não especificados não poderão ser carregados. O padrão é nenhum especificado, de modo que **todos** os tipos de arquivos são permitidos.
 
-* **Tamanho máximo do arquivo de imagem a ser anexado**
+* **Tamanho máx. do arquivo de imagem a ser anexado**
 
   Relevante somente se Permitir uploads de arquivo estiver marcado. O número máximo de bytes que um arquivo de imagem carregado pode ter. O padrão é 2097152 (2 Mb).
 
@@ -138,57 +138,57 @@ No **Configurações** especifique as configurações para tópicos (perguntas) 
 
   Se marcado, somente os membros Privilegiados poderão criar conteúdo.
 
-* **Bloquear conteúdo gerado pelo usuário no modo Edição do autor**
+* **Bloquear Conteúdo Gerado pelo Usuário no Modo de Edição do Autor**
 
   Se estiver ativado, bloqueia o conteúdo gerado pelo usuário ao editar no Modo Autor.
 
-* **Mover a resposta selecionada para cima**
+* **Mover A Resposta Selecionada Para O Início**
 
   Se marcada, a primeira resposta mostrada será uma resposta selecionada. O padrão está desmarcado.
 * **Exibir selos**
 
-  Se marcado, exibir ganho e atribuído [medalhas](/help/communities/implementing-scoring.md) com uma entrada de blog do membro. O padrão está desmarcado.
+  Se marcado, exibe [medalhas](/help/communities/implementing-scoring.md) obtidas e atribuídas com uma entrada de blog do membro. O padrão está desmarcado.
 
 * **Permitir conteúdo em destaque**
 
   Se marcada, a ideia é identificável como [conteúdo em destaque](/help/communities/featured.md). O padrão está desmarcado.
 
-* **Ativar a menção**
+* **Habilitar menção**
 
   Se ativado, permite que os usuários registrados da comunidade identifiquem outros membros registrados (usando nome, sobrenome, nome de usuário) e marquem-nos usando a sintaxe comum @user-name. Os usuários marcados recebem notificações sobre suas menções.
 
-* **Max Mentions**
+* **Máximo de menções**
 
   Restringir o número máximo de menções permitidas em uma publicação. O padrão é 10.
 
-* **Padrão de menção da interface do usuário**
+* **Padrão de Menção da Interface do Usuário**
 
   Especifique a string do padrão permitido para marcar (@mention) o usuário registrado em uma publicação. Por exemplo, `~{{familyName}}{{givenName}}`.
 
 #### Guia Moderação de usuário {#user-moderation-tab}
 
-No **Moderação de usuário** especifique como os tópicos publicados (perguntas) e as respostas (conteúdo gerado pelo usuário) são gerenciados. Para obter mais informações, consulte [Moderação de conteúdo gerado pelo usuário](/help/communities/moderate-ugc.md).
+Na guia **Moderação de usuário**, especifique como os tópicos publicados (perguntas) e as respostas (conteúdo gerado pelo usuário) são gerenciados. Para obter mais informações, consulte [Moderando conteúdo gerado por usuário](/help/communities/moderate-ugc.md).
 
 * **Negar respostas**
 
   Se marcados, os moderadores de membros confiáveis têm permissão para negar as respostas publicadas e impedir que elas apareçam no fórum público de perguntas e respostas. O padrão está desmarcado.
 
-* **Fechar/Reabrir tópicos**
+* **Fechar/Reabrir Tópicos**
 
   Se marcados, os moderadores de membros confiáveis podem fechar uma pergunta (tópico) para edições e respostas adicionais, e também reabrir uma pergunta. O padrão está desmarcado.
 
-* **Mover tópicos**
+* **Mover Tópicos**
 Se marcado, permitir que os moderadores de publicação movam perguntas. O padrão está desmarcado.
 
 * **Sinalizar postagens**
 
   Se marcado, permite que os membros sinalizem as perguntas ou respostas de outras pessoas como inapropriadas. O padrão está desmarcado.
 
-* **Sinalizar lista de motivo**
+* **Lista de motivos da sinalização**
 
   Se marcado, permite que os membros escolham, em uma lista suspensa, o motivo para sinalizar uma pergunta ou resposta como inapropriada. O padrão está desmarcado.
 
-* **Motivo personalizado de sinalização**
+* **Motivo personalizado do sinalizador**
 
   Se marcado, permite que os membros insiram seu próprio motivo para sinalizar uma pergunta ou resposta como inapropriada. O padrão está desmarcado.
 
@@ -196,17 +196,17 @@ Se marcado, permitir que os moderadores de publicação movam perguntas. O padr�
 
   Insira o número de vezes que uma pergunta ou resposta precisa ser marcada por membros antes que os moderadores sejam notificados. O padrão é 1 (uma vez).
 
-* **Limite de sinalização**
+* **Limite de Sinalização**
 
   Insira o número de vezes que uma pergunta ou resposta precisa ser sinalizada antes de ser ocultada da visualização pública. Se definida como -1, a pergunta ou resposta sinalizada nunca será ocultada da visualização pública. Caso contrário, esse número deve ser maior ou igual ao Limite de moderação. O padrão é 5.
 
 #### Guia Campo de tag {#tag-field-tab}
 
-No **Campo de tag** , as tags que podem ser aplicadas, se permitido na guia **Configurações** são limitadas de acordo com os namespaces escolhidos.
+Na guia **Campo de marca**, as marcas que podem ser aplicadas, se permitidas na guia **Configurações**, são limitadas de acordo com os namespaces escolhidos.
 
 * **Namespaces permitidos**
 
-  Relevante se `Allow Tagging` é verificado sob o **Configurações** guia. As tags que podem ser aplicadas são limitadas àquelas dentro das categorias de namespace marcadas. A lista de namespaces inclui &quot;Tags padrão&quot; (o namespace padrão) e &quot;Incluir todas as tags&quot;. O padrão é nenhum marcado, o que significa que todos os namespaces são permitidos.
+  Relevante se `Allow Tagging` estiver marcado na guia **Configurações**. As tags que podem ser aplicadas são limitadas àquelas dentro das categorias de namespace marcadas. A lista de namespaces inclui &quot;Tags padrão&quot; (o namespace padrão) e &quot;Incluir todas as tags&quot;. O padrão é nenhum marcado, o que significa que todos os namespaces são permitidos.
 
 * **Limite sugerido**
 
@@ -214,7 +214,7 @@ No **Campo de tag** , as tags que podem ser aplicadas, se permitido na guia **Co
 
 #### Guia Configurações de classificação {#sort-settings-tab}
 
-No **Configurações de classificação** especifique como os comentários publicados são classificados quando exibidos.
+Na guia **Configurações de Classificação**, especifique como os comentários publicados são classificados quando exibidos.
 
 * **Classificar por**
 
@@ -224,7 +224,7 @@ No **Configurações de classificação** especifique como os comentários publi
 
   Selecione uma das opções de classificação marcadas para aparecer como padrão. O padrão é `Newest`.
 
-* **Selecionar opções de tempo para classificação do Analytics**
+* **Selecionar opções de tempo para a classificação do Analytics**
 
   Selecione um dos `All, Last 24 Hours, Last 7 Days, Last 30 Days`. O padrão é `All`.
 
@@ -232,11 +232,11 @@ No **Configurações de classificação** especifique como os comentários publi
 
 ### Identificação de respostas {#identifying-answers}
 
-Uma resposta pode ser marcada como correta ou útil usando o `Select Answer` botão. Depois que uma pergunta é marcada como respondida, outra resposta não pode ser selecionada até que a primeira seja desmarcada usando o `Unmark Chosen Answer` botão.
+Uma resposta pode ser marcada como correta ou útil usando o botão `Select Answer`. Depois que uma Pergunta é marcada como Respondida, outra resposta não pode ser selecionada até que a primeira seja desmarcada usando o botão `Unmark Chosen Answer`.
 
-Depois de selecionada como uma resposta viável, ela pode ser desmarcada usando o `Unmark Chosen Answer` botão.
+Depois de selecionada como uma resposta viável, ela pode ser desmarcada usando o botão `Unmark Chosen Answer`.
 
-Depois que uma resposta for selecionada como a resposta viável, uma indicação de que a pergunta foi `Answered` é exibido ao lado do tópico da pergunta na página principal do QnA.
+Depois que uma resposta é selecionada como a resposta viável, uma indicação de que a pergunta foi `Answered` é exibida ao lado do tópico da pergunta na página QnA principal.
 
 #### Moderadores e administradores {#moderators-and-administrators}
 
@@ -248,7 +248,7 @@ Eles também podem identificar as respostas.
 
 Quando os visitantes do site estão conectados, dependendo da configuração, eles podem:
 
-* Poste uma nova pergunta.
+* Post uma nova pergunta.
 * Editar ou excluir perguntas criadas por eles.
 * Sinalizar perguntas ou respostas de outros membros.
 * Identificar respostas para perguntas criadas por eles.
@@ -259,8 +259,8 @@ Os visitantes do site que não estão conectados só podem ler as perguntas e re
 
 ## Informações adicionais {#additional-information}
 
-Mais informações podem ser encontradas no [Fundamentos de QnA](/help/communities/qna-essentials.md) página para desenvolvedores.
+Mais informações podem ser encontradas na página [QnA Essentials](/help/communities/qna-essentials.md) para desenvolvedores.
 
-Para moderação de tópicos e comentários publicados, consulte [Moderação de conteúdo gerado pelo usuário](/help/communities/moderate-ugc.md).
+Para obter a moderação de tópicos e comentários publicados, consulte [Moderando Conteúdo Gerado por Usuário](/help/communities/moderate-ugc.md).
 
-Para marcar tópicos e comentários publicados, consulte [Marcação do conteúdo gerado pelo usuário](/help/communities/tag-ugc.md).
+Para marcar tópicos e comentários postados, consulte [Marcação de Conteúdo Gerado pelo Usuário](/help/communities/tag-ugc.md).

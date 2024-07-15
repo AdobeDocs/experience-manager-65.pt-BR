@@ -45,17 +45,17 @@ java -jar proxy.jar <host> <remoteport> <localport> [options]
 
 ### Opções {#options}
 
-* **q (modo silencioso)** Não grava as solicitações na janela do console. Use-a se não quiser retardar a conexão ou se registrar a saída em um arquivo (consulte a opção -logfile ).
-* **b (Modo binário)** Se estiver procurando combinações específicas de bytes no tráfego, ative o modo binário. A saída contém as saídas hexadecimal e de caractere.
-* **t (entradas do log de carimbo de data e hora)** Adiciona um carimbo de data/hora a cada saída de log. O carimbo de data e hora é expresso em segundos, portanto, pode não ser adequado para a verificação de solicitações únicas. Use-a para localizar eventos que ocorreram em um horário específico se você usar o servidor proxy por um período mais longo.
-* **logfile &lt;filename> (gravar no arquivo de log)** Grava a conversa cliente-servidor em um arquivo de log. Esse parâmetro também funciona no modo silencioso.
-* **i &lt;numindentions> (adicionar recuo)** Cada conexão ativa é recuada para melhorar a leitura. O padrão é 16 níveis. (Novo no proxy.jar versão 1.16).
+* **q (Modo silencioso)** Não grava as solicitações na janela do console. Use-a se não quiser retardar a conexão ou se registrar a saída em um arquivo (consulte a opção -logfile ).
+* **b (Modo binário)** Se estiver procurando combinações de bytes específicas no tráfego, habilite o modo binário. A saída contém as saídas hexadecimal e de caractere.
+* **t (entradas de log de carimbo de data/hora)** Adiciona um carimbo de data/hora a cada saída de log. O carimbo de data e hora é expresso em segundos, portanto, pode não ser adequado para a verificação de solicitações únicas. Use-a para localizar eventos que ocorreram em um horário específico se você usar o servidor proxy por um período mais longo.
+* **logfile &lt;nome_de_arquivo> (gravar no arquivo de log)** Grava a conversa cliente-servidor em um arquivo de log. Esse parâmetro também funciona no modo silencioso.
+* **i &lt;numIndentions> (adicionar recuo)** Cada conexão ativa é recuada para melhorar a leitura. O padrão é 16 níveis. (Novo no proxy.jar versão 1.16).
 
 ## Usos da ferramenta Servidor proxy {#uses-of-the-proxy-server-tool}
 
 Os cenários a seguir ilustram algumas das finalidades para as quais a Ferramenta de Servidor Proxy pode ser usada:
 
-**Verificar se há cookies e seus valores**
+**Verificar Cookies e seus Valores**
 
 O exemplo de entrada de log a seguir mostra todos os cookies e seus valores enviados pelo cliente na sexta conexão aberta desde o início do proxy:
 
@@ -63,7 +63,7 @@ O exemplo de entrada de log a seguir mostra todos os cookies e seus valores envi
 C-6-#000635 -> [Cookie: cq3session=7e39bc51-ac72-3f48-88a9-ed80dbac0693; Show=ShowMode; JSESSIONID=68d78874-cabf-9444-84a4-538d43f5064d ]
 ```
 
-**Verificação de Cabeçalhos e seus Valores** O exemplo de entrada de log a seguir mostra que o servidor pode fazer uma conexão keep-alive e o cabeçalho de comprimento de conteúdo foi definido corretamente:
+**Verificando Cabeçalhos e seus Valores** O exemplo de entrada de log a seguir mostra que o servidor pode fazer uma conexão keep-alive e o cabeçalho de comprimento de conteúdo foi definido corretamente:
 
 ```xml
 S-7-#000017 -> [Connection: Keep-Alive ]
@@ -73,7 +73,7 @@ S-7-#000107 -> [Content-Length: 124 ]
 
 **Verificando se a opção Keep-Alive funciona**
 
-**Manter ativo** significa que um cliente reutiliza a conexão com o servidor para transportar vários arquivos (código da página, imagens, folhas de estilos e assim por diante). Sem o keep-alive, o cliente precisa estabelecer uma nova conexão para cada solicitação.
+**Keep-Alive** significa que um cliente reutiliza a conexão com o servidor para transportar vários arquivos (código de página, imagens, folhas de estilos e assim por diante). Sem o keep-alive, o cliente precisa estabelecer uma nova conexão para cada solicitação.
 
 Para verificar se o keep-alive funciona:
 
@@ -83,7 +83,7 @@ Para verificar se o keep-alive funciona:
 * Se o keep-alive estiver funcionando, o contador de conexões nunca deverá ultrapassar 5 a 10 conexões.
 * Se o keep-alive não estiver funcionando, o contador de conexões aumentará rapidamente.
 
-**Localizando solicitações perdidas**
+**Localizando Solicitações Perdidas**
 
 Se você perder solicitações em uma configuração de servidor complexa, por exemplo, com um firewall e um Dispatcher, poderá usar o servidor proxy para descobrir onde a solicitação foi perdida. Se houver um firewall:
 
@@ -91,7 +91,7 @@ Se você perder solicitações em uma configuração de servidor complexa, por e
 1. Iniciar outro proxy após um firewall
 1. Use-os para ver até que ponto as solicitações estão chegando.
 
-**Solicitações Deslocadas**
+**Solicitações suspensas**
 
 Se você tiver solicitações de alteração de vez em quando:
 
@@ -116,7 +116,7 @@ C-0-#000000 -> [GET /author/prox.html?CFC_cK=1102938422341 HTTP/1.1 ]
 * C significa que essa entrada vem do cliente (é uma solicitação para uma página da Web)
 * 0 é o número da conexão (o contador de conexões começa em 0)
 * #00000 o deslocamento no fluxo de bytes. Esta é a primeira entrada, portanto, o deslocamento é 0.
-* [GET &lt;?>] é o conteúdo da solicitação, no exemplo de um dos cabeçalhos HTTP (url).
+* [GET &lt;?>] é o conteúdo da solicitação, no exemplo um dos cabeçalhos HTTP (url).
 
 Quando uma conexão é fechada, as seguintes informações são registradas:
 
@@ -149,7 +149,7 @@ Se o AEM estiver em execução no localhost:4303, inicie o servidor proxy da seg
 java -jar proxy.jar localhost 4303 4444 -logfile test.log
 ```
 
-Você pode acessar o servidor (`localhost:4303`) sem o servidor proxy, mas se você acessá-lo via `localhost:4444`, o servidor proxy registra a comunicação. Abra um navegador e acesse uma página criada com o modelo acima. Depois disso, verifique o arquivo de log.
+Você pode acessar o servidor (`localhost:4303`) sem o servidor proxy, mas se acessá-lo via `localhost:4444`, o servidor proxy registrará a comunicação. Abra um navegador e acesse uma página criada com o modelo acima. Depois disso, verifique o arquivo de log.
 
 >[!NOTE]
 >
@@ -280,4 +280,4 @@ O exemplo acima é comparativamente simples, porque as duas conexões ocorrem se
 * primeiro, o servidor retorna o código HTML
 * em seguida, o navegador solicita a imagem e abre uma nova conexão
 
-Na prática, uma página pode gerar muitas solicitações paralelas para imagens, folhas de estilos, arquivos JavaScript e assim por diante. Isso significa que os logs têm entradas sobrepostas de conexões abertas paralelas. Nesse caso, o Adobe recomenda usar a opção -i para melhorar a legibilidade.
+Na prática, uma página pode gerar muitas solicitações paralelas de imagens, folhas de estilos, arquivos JavaScript e assim por diante. Isso significa que os logs têm entradas sobrepostas de conexões abertas paralelas. Nesse caso, o Adobe recomenda usar a opção -i para melhorar a legibilidade.

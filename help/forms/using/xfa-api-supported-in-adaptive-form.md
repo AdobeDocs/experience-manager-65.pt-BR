@@ -19,7 +19,7 @@ ht-degree: 5%
 
 ## Introdução {#introduction}
 
-<span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) para [criação de um novo Forms adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
+O <span class="preview"> Adobe recomenda o uso de [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adicionar o Forms Adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
 
 Os formulários adaptáveis são compatíveis com vários eventos XFA, propriedades, scripts e validações definidos em um arquivo XDP, incluindo:
 
@@ -145,23 +145,23 @@ A tabela a seguir captura como vários scripts XFA definidos nos arquivos XDP se
    <td><p>Mapeado para a propriedade Título no formulário adaptável.</p> </td>
   </tr>
   <tr>
-   <td><p>displayFormat<em> (todos os tipos de campos)</em></p> </td>
+   <td><p>displayFormat<em> (todos os tipos de Campos)</em></p> </td>
    <td><p>Mapeado para o padrão de exibição no formulário adaptável.</p> </td>
   </tr>
   <tr>
-   <td><p>rawValue<em> (todos os tipos de campos)</em></p> </td>
+   <td><p>rawValue<em> (todos os tipos de campo)</em></p> </td>
    <td><p>Mapeado para a propriedade de valor no formulário adaptável.</p> </td>
   </tr>
   <tr>
-   <td><p>itens<em> (Caixa de listagem, Caixa de seleção)</em></p> </td>
+   <td><p>itens<em> (Caixa de Listagem, Caixa de Seleção)</em></p> </td>
    <td><p>Mapeado para a propriedade de opções no formulário adaptável. Você pode substituí-lo usando a expressão Options.</p> </td>
   </tr>
   <tr>
-   <td><p>maxChar<em> (Campo de texto)</em></p> </td>
+   <td><p>maxChar<em> (Campo de Texto)</em></p> </td>
    <td><p>Mapeado para a propriedade Máximo de caracteres permitidos no formulário adaptável.</p> </td>
   </tr>
   <tr>
-   <td><p>multilinha<em> (Campo de texto)</em></p> </td>
+   <td><p>multilinha<em> (Campo de Texto)</em></p> </td>
    <td><p>Mapeado para a propriedade Permitir várias linhas no formulário adaptável.</p> </td>
   </tr>
   <tr>
@@ -173,7 +173,7 @@ A tabela a seguir captura como vários scripts XFA definidos nos arquivos XDP se
    <td><p>Mapeado para a propriedade de dígitos de cliente potencial no formulário adaptável.</p> </td>
   </tr>
   <tr>
-   <td><p>multiSelect<em> (Caixa de listagem)</em></p> </td>
+   <td><p>multiSelect<em> (Caixa de Listagem)</em></p> </td>
    <td><p>Mapeado para a propriedade Permite seleção múltipla em formato adaptável.</p> </td>
   </tr>
  </tbody>
@@ -203,7 +203,7 @@ A tabela a seguir captura como vários scripts XFA definidos no arquivo XDP se c
   </tr>
   <tr>
    <td><p>validationState </p> </td>
-   <td><p>Esse script é executado no tempo de execução e não pode ser substituído no formulário adaptável.<br /> </p> </td>
+   <td><p>Este script é executado no tempo de execução e não pode ser substituído na forma adaptável.<br /> </p> </td>
   </tr>
   <tr>
    <td><p>sair </p> </td>

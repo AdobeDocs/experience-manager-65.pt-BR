@@ -18,11 +18,11 @@ ht-degree: 1%
 
 # Diretório de armazenamento de documentos global{#global-document-storage-directory}
 
-A variável *armazenamento global de documentos (GDS)* diretório é um diretório usado para armazenar arquivos de longa duração que são usados em um processo. Esses arquivos incluem PDF, políticas e modelos de formulário. Arquivos de longa duração são uma parte essencial do estado geral de muitas implantações de formulários AEM. Se alguns ou todos os documentos de longa duração forem perdidos ou corrompidos, o Forms Server poderá se tornar instável. Os documentos de entrada para invocações de trabalho assíncrono também são armazenados no diretório GDS e devem estar disponíveis para processar solicitações. É importante considerar a confiabilidade do sistema de arquivos que hospeda o diretório GDS. Use um storage redundante de discos independentes (RAID) ou outra tecnologia, conforme apropriado para suas necessidades de qualidade e nível de serviço.
+O diretório *GDS (armazenamento global de documentos)* é um diretório usado para armazenar arquivos de longa duração que são usados em um processo. Esses arquivos incluem PDF, políticas e modelos de formulário. Arquivos de longa duração são uma parte essencial do estado geral de muitas implantações de formulários AEM. Se alguns ou todos os documentos de longa duração forem perdidos ou corrompidos, o Forms Server poderá se tornar instável. Os documentos de entrada para invocações de trabalho assíncrono também são armazenados no diretório GDS e devem estar disponíveis para processar solicitações. É importante considerar a confiabilidade do sistema de arquivos que hospeda o diretório GDS. Use um storage redundante de discos independentes (RAID) ou outra tecnologia, conforme apropriado para suas necessidades de qualidade e nível de serviço.
 
 Arquivos de longa duração podem conter informações confidenciais do usuário. Essas informações podem exigir credenciais especiais quando acessadas usando as APIs de formulários AEM ou as interfaces do usuário. É importante que o diretório GDS seja adequadamente protegido pelo sistema operacional. Somente a conta de administrador usada para executar o servidor de aplicativos deve ter acesso de leitura/gravação ao diretório GDS.
 
-Além de selecionar um diretório seguro e altamente disponível para GDS, você também pode optar por habilitar o armazenamento de documentos no banco de dados. Observe que mesmo com o uso do banco de dados de formulários AEM para armazenamento de documentos, os formulários AEM ainda exigem o diretório GDS. (Consulte [Opções de backup quando o banco de dados é usado para armazenamento de documentos](/help/forms/using/admin-help/files-back-recover.md#backup-options-when-database-is-used-for-document-storage).)
+Além de selecionar um diretório seguro e altamente disponível para GDS, você também pode optar por habilitar o armazenamento de documentos no banco de dados. Observe que mesmo com o uso do banco de dados de formulários AEM para armazenamento de documentos, os formulários AEM ainda exigem o diretório GDS. (Consulte [Opções de backup quando o banco de dados for usado para armazenamento de documentos](/help/forms/using/admin-help/files-back-recover.md#backup-options-when-database-is-used-for-document-storage).)
 
 Os dados de aplicativos de formulários AEM residem no diretório GDS e no banco de dados de formulários AEM. A tabela a seguir descreve os dados e seus locais.
 
@@ -95,12 +95,12 @@ Você pode alterar a localização do GDS no console de administração após a 
 Os formulários AEM consistem em dois tipos de arquivos de implantação, os containers de serviço e os arquivos EAR da Plataforma Java 2, Enterprise Edition (J2EE). Os arquivos EAR consistem em pacotes de aplicativos J2EE padrão que contêm a funcionalidade principal dos formulários AEM. Os arquivos EAR específicos do servidor de aplicativos são os seguintes:
 
 * adobe-core-*[appserver]*.ear
-* adobe-core-*[appserver]*-*[SO]*.ear
+* adobe-core-*[appserver]*-*[OS]*.ear
 
-A implementação de formulários AEM envolve a implantação dos arquivos EAR montados e dos arquivos de suporte no servidor de aplicativos, onde você planeja executar a solução de formulários AEM. Se você configurou e montou vários módulos, os módulos implantáveis são empacotados dentro dos arquivos EAR implantáveis. Para implantar esses arquivos, copie-os no *[página inicial do appserver]* diretório \server\all\deploy.
+A implementação de formulários AEM envolve a implantação dos arquivos EAR montados e dos arquivos de suporte no servidor de aplicativos, onde você planeja executar a solução de formulários AEM. Se você configurou e montou vários módulos, os módulos implantáveis são empacotados dentro dos arquivos EAR implantáveis. Para implantar esses arquivos, copie-os no diretório *[home do appserver]*\server\all\deploy.
 
 Módulos e arquivos de formulários AEM são empacotados em arquivos JAR. Como não são arquivos do tipo J2EE, eles não são implantados no servidor de aplicativos. Em vez disso, eles são copiados para o diretório GDS e uma referência a seu local é armazenada no banco de dados de formulários AEM. Por esse motivo, o diretório GDS deve ser compartilhado entre todos os nós do cluster. Todos os nós devem ter acesso ao diretório de armazenamento central para os DSCs.
 
 >[!NOTE]
 >
->Antes de disponibilizar os contêineres de serviço, certifique-se de ter criado e configurado o diretório GDS. (Consulte [Configuração do diretório GDS](global-document-storage-directory.md#configuring-the-gds-directory))
+>Antes de disponibilizar os contêineres de serviço, certifique-se de ter criado e configurado o diretório GDS. (Consulte [Configurando o diretório GDS](global-document-storage-directory.md#configuring-the-gds-directory))

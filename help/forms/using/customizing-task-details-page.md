@@ -21,15 +21,15 @@ A página de detalhes da tarefa contém informações sobre uma tarefa e seus pr
 
 Você pode adicionar as seguintes informações à página de detalhes da tarefa:
 
-* Informações disponíveis no objeto JSON de uma tarefa (seção Tarefa em [Descrição de objeto JSON do espaço de trabalho do AEM Forms](/help/forms/using/html-workspace-json-object-description.md))
-* Informações disponíveis no objeto JSON de uma instância do processo (seção Instância do processo em [Descrição de objeto JSON do espaço de trabalho do AEM Forms](/help/forms/using/html-workspace-json-object-description.md))
+* Informações disponíveis no objeto JSON de uma tarefa (seção Tarefa em [Descrição de Objeto JSON do espaço de trabalho do AEM Forms](/help/forms/using/html-workspace-json-object-description.md))
+* Informações disponíveis no objeto JSON de uma instância do processo (seção Instância do processo na [Descrição do objeto JSON do espaço de trabalho do AEM Forms](/help/forms/using/html-workspace-json-object-description.md))
 
 Para personalizar a página de detalhes da tarefa:
 
-1. Seguir [Etapas genéricas para personalização do espaço de trabalho do AEM Forms.](/help/forms/using/generic-steps-html-workspace-customization.md)
-1. Para mostrar mais informações, adicione os pares de valores chave correspondentes à `translation.json` arquivo em `todo`bloquear > `details`bloquear > `app`bloquear > [`required`bloco].
+1. Siga [Etapas genéricas para personalização do espaço de trabalho do AEM Forms.](/help/forms/using/generic-steps-html-workspace-customization.md)
+1. Para mostrar mais informações, adicione os pares de valores chave correspondentes ao arquivo `translation.json` em `todo`bloco > `details`bloco > `app`bloco > [`required`bloco].
 
-   A variável [`required`bloco] refere-se aos blocos disponíveis, como o bloco de tarefas para informações sobre tarefas, o bloco de processos para informações sobre processos e o bloco de tarefas pendentes atual para informações sobre tarefas pendentes.
+   O [`required`bloco] se refere aos blocos disponíveis, como o bloco de tarefas para informações de tarefas, o bloco de processos para informações de processos e o bloco de tarefas pendentes atual para informações de tarefas pendentes.
 
    Por exemplo, para adicionar informações sobre Seleção de Rota Necessária na página de detalhes da tarefa, você pode adicionar o seguinte par de valores-chave no bloco de tarefas:
 
@@ -79,10 +79,10 @@ Para personalizar a página de detalhes da tarefa:
 
 1. Abra /apps/ws/js/registry.js para edição.
 
-   Pesquisar e substituir `text!/lc/libs/ws/js/runtime/templates/taskdetails.html` com `text!/lc/apps/ws/js/runtime/templates/taskdetails.html`.
+   Pesquisar e substituir `text!/lc/libs/ws/js/runtime/templates/taskdetails.html` por `text!/lc/apps/ws/js/runtime/templates/taskdetails.html`.
 
 >[!NOTE]
 >
->Para personalizar a página de detalhes da tarefa com tarefas criadas na **Iniciar processo** do espaço de trabalho do AEM Forms, adicione as novas informações a `/apps/ws/js/runtime/templates/startprocess.html`.
+>Para personalizar a página de detalhes da tarefa com tarefas criadas na guia **Iniciar Processo** do espaço de trabalho do AEM Forms, adicione as novas informações a `/apps/ws/js/runtime/templates/startprocess.html`.
 >
->Para adicionar novos estilos às informações adicionadas na página de detalhes, modifique o arquivo CSS usando o *Alterações na interface do usuário* seção em [Personalização do Workspace](changing-locale-user-interface.md).
+>Para adicionar novos estilos às informações adicionadas na página de detalhes, modifique o arquivo CSS usando a seção *Alterações na interface do usuário* em [Personalização do Workspace](changing-locale-user-interface.md).

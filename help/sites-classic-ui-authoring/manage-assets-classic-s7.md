@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Adicionar recursos do Dynamic Media Classic (Scene7) à sua página{#adding-scene-features-to-your-page}
 
-[Adobe Dynamic Media Classic (Scene7)](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/home.html?lang=pt-BR) O é uma solução hospedada para gerenciamento, aprimoramento, publicação e fornecimento de ativos de mídia avançada para exibições e impressão conectadas à Web, dispositivos móveis, e-mail e Internet.
+O [Adobe Dynamic Media Classic (Scene7)](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/home.html?lang=pt-BR) é uma solução hospedada para gerenciamento, aprimoramento, publicação e fornecimento de ativos de mídia avançada para Web, dispositivos móveis, email e exibições e impressões conectadas à Internet.
 
 Você pode visualizar ativos do Experience Manager publicados no Dynamic Media Classic (Scene7) em vários visualizadores:
 
@@ -43,22 +43,22 @@ Para obter mais informações sobre o uso de componentes de vídeo com o Experie
 >
 >Se os ativos do Dynamic Media Classic (Scene7) não forem exibidos corretamente, verifique se o Dynamic Media está [desabilitado](/help/assets/config-dynamic.md#disabling-dynamic-media) e atualize a página.
 
-## Publicar manualmente no Dynamic Media Classic (Scene7) a partir do Assets {#manually-publishing-to-scene-from-assets}
+## Publicação manual no Dynamic Media Classic (Scene7) a partir do Assets {#manually-publishing-to-scene-from-assets}
 
-Você pode publicar ativos digitais no Dynamic Media Classic (Scene7) pelo console de Ativos na interface clássica ou diretamente do ativo.
+Você pode publicar ativos digitais no Dynamic Media Classic (Scene7) pelo console do Assets na interface clássica ou diretamente do ativo.
 
 >[!NOTE]
 >
->O Experience Manager publica no Dynamic Media Classic (Scene7) de forma assíncrona. Depois de selecionar **[!UICONTROL Publish]**, pode levar vários segundos para que seu ativo seja publicado no Dynamic Media Classic (Scene7).
+>O Experience Manager publica no Dynamic Media Classic (Scene7) de forma assíncrona. Após selecionar **[!UICONTROL Publish]**, pode levar alguns segundos para que seu ativo seja publicado na Dynamic Media Classic (Scene7).
 >
 
-### Publicação por meio do console Assets {#publishing-from-the-assets-console}
+### Publicação por meio do console do Assets {#publishing-from-the-assets-console}
 
-Publique no Dynamic Media Classic (Scene7) a partir do console de Ativos se os ativos estiverem em uma pasta de destino do Dynamic Media Classic (Scene7).
+Publique no Dynamic Media Classic (Scene7) a partir do console do Assets se os ativos estiverem em uma pasta de destino do Dynamic Media Classic (Scene7).
 
-1. Na interface clássica do Experience Manager, selecione **[!UICONTROL Ativos digitais]** para acessar o gerenciador de ativos digitais.
+1. Na interface clássica do Experience Manager, selecione **[!UICONTROL Digital Assets]** para acessar o gerenciador de ativos digitais.
 
-1. Selecione o ativo (ou ativos) ou a pasta na pasta de destino que você deseja publicar no Dynamic Media Classic (Scene7), clique com o botão direito do mouse e selecione **[!UICONTROL Publicar no Dynamic Media Classic (Scene7)]**. Como alternativa, você pode selecionar **[!UICONTROL Publicar no Dynamic Media Classic (Scene7)]** do **[!UICONTROL Ferramentas]** menu.
+1. Selecione o(s) ativo(s) ou pasta(s) dentro da pasta de destino que você deseja publicar no Dynamic Media Classic (Scene7), clique com o botão direito do mouse e selecione **[!UICONTROL Publish to Dynamic Media Classic (Scene7)]**. Como alternativa, você pode selecionar **[!UICONTROL Publish para Dynamic Media Classic (Scene7)]** no menu **[!UICONTROL Ferramentas]**.
 
    ![chlimage_1-48](assets/chlimage_1-48.png)
 
@@ -66,63 +66,63 @@ Publique no Dynamic Media Classic (Scene7) a partir do console de Ativos se os a
 
    >[!NOTE]
    >
-   >Se os ativos não estiverem em uma pasta sincronizada do Dynamic Media Classic (Scene7), **[!UICONTROL Publicar no Dynamic Media Classic (Scene7)]** em ambos os menus está visível, mas desativado.
+   >Se os ativos não estiverem em uma pasta sincronizada do Dynamic Media Classic (Scene7), o **[!UICONTROL Publish para o Dynamic Media Classic (Scene7)]** em ambos os menus estará visível, mas desabilitado.
 
-### Publicar de um ativo {#publishing-from-an-asset}
+### Publish de um ativo {#publishing-from-an-asset}
 
 Você pode publicar manualmente um ativo, desde que ele esteja localizado na pasta Dynamic Media Classic sincronizada (Scene7).
 
 >[!NOTE]
 >
->Se o ativo não estiver na pasta sincronizada do Dynamic Media Classic (Scene7), o link para **[!UICONTROL Publicar no Dynamic Media Classic (Scene7)]** não aparece.
+>Se o ativo não estiver na pasta sincronizada do Dynamic Media Classic (Scene7), o link para o **[!UICONTROL Publish para o Dynamic Media Classic (Scene7)]** não será exibido.
 
 Para publicar no Dynamic Media Classic (Scene7) diretamente de um ativo digital:
 
-1. No Experience Manager, selecione **[!UICONTROL Ativos digitais]** para acessar o gerenciador de ativos digitais.
+1. No Experience Manager, selecione **[!UICONTROL Digital Assets]** para acessar o gerenciador de ativos digitais.
 
 1. Clique duas vezes para abrir um ativo.
 
-1. No painel de detalhes do ativo, selecione **[!UICONTROL Publicar no Dynamic Media Classic (Scene7)]**.
+1. No painel de detalhes do ativo, selecione **[!UICONTROL Publish para Dynamic Media Classic (Scene7)]**.
 
    ![screen_shot_2012-02-22at34828pm](assets/screen_shot_2012-02-22at34828pm.png)
 
-1. O link muda para **[!UICONTROL Publicando...]** e depois **[!UICONTROL Publicado]**. Acesse Dynamic Media Classic (Scene7) e confirme se o ativo está disponível.
+1. O link foi alterado para **[!UICONTROL Publicando...]** e depois **[!UICONTROL Publicado]**. Acesse Dynamic Media Classic (Scene7) e confirme se o ativo está disponível.
 
    >[!NOTE]
    >
-   >Se o ativo não for publicado corretamente no Dynamic Media Classic (Scene7), o link será alterado para **[!UICONTROL Falha na publicação]**. Se o ativo já tiver sido publicado no Dynamic Media Classic (Scene7), o link exibirá **[!UICONTROL Publicar novamente no Dynamic Media Classic (Scene7)]**. A republicação permite alterar ativos no Experience Manager e republicá-los.
+   >Se o ativo não for publicado corretamente no Dynamic Media Classic (Scene7), o link será alterado para **[!UICONTROL Falha na publicação]**. Se o ativo já tiver sido publicado no Dynamic Media Classic (Scene7), o link exibirá **[!UICONTROL Re-Publish para o Dynamic Media Classic (Scene7)]**. A republicação permite alterar ativos no Experience Manager e republicá-los.
 
-### Publicar ativos de fora da pasta de destino do CQ {#publishing-assets-from-outside-the-cq-target-folder}
+### Ativos do Publish de fora da pasta de destino do CQ {#publishing-assets-from-outside-the-cq-target-folder}
 
-A Adobe recomenda publicar ativos no Dynamic Media Classic (Scene7) somente de ativos contidos na pasta de destino do Dynamic Media Classic (Scene7). No entanto, se você precisar fazer upload de ativos de uma pasta fora da pasta de destino, ainda será possível fazer isso carregando-os em uma pasta sob demanda no Dynamic Media Classic (Scene7). Primeiro, defina a Configuração da nuvem para a página em que deseja que o ativo apareça. Em seguida, você adiciona um componente Dynamic Media Classic (Scene7) à página e arrasta e solta um ativo no componente. Depois que as propriedades da página forem definidas para essa página, uma **[!UICONTROL Publicar no Dynamic Media Classic (Scene7)]** será exibido quando a opção selecionada acionar o upload para o Dynamic Media Classic (Scene7).
+A Adobe recomenda publicar ativos no Dynamic Media Classic (Scene7) somente de ativos contidos na pasta de destino do Dynamic Media Classic (Scene7). No entanto, se você precisar fazer upload de ativos de uma pasta fora da pasta de destino, ainda será possível fazer isso carregando-os em uma pasta sob demanda no Dynamic Media Classic (Scene7). Primeiro, defina a Configuração da nuvem para a página em que deseja que o ativo apareça. Em seguida, você adiciona um componente Dynamic Media Classic (Scene7) à página e arrasta e solta um ativo no componente. Depois que as propriedades da página são definidas para essa página, um link **[!UICONTROL Publish para o Dynamic Media Classic (Scene7)]** é exibido e, quando selecionado, aciona o upload para o Dynamic Media Classic (Scene7).
 
 >[!NOTE]
 >
->Os ativos que estão na pasta sob demanda não aparecem no Navegador de conteúdo do Dynamic Media Classic (Scene7).
+>Os Assets que estão na pasta sob demanda não aparecem no Navegador de conteúdo do Dynamic Media Classic (Scene7).
 
 **Para publicar ativos de fora da pasta de destino do CQ:**
 
-1. Em Experience Manager na interface clássica, selecione **[!UICONTROL Sites]** e navegue até a página da web à qual você deseja adicionar um ativo digital que ainda não foi publicado no Dynamic Media Classic (Scene7). (As regras normais de herança de página se aplicam.)
+1. Em Experience Manager na interface clássica, selecione **[!UICONTROL Sites]** e navegue até a página da Web à qual você deseja adicionar um ativo digital que ainda não foi publicado no Dynamic Media Classic (Scene7). (As regras normais de herança de página se aplicam.)
 
-1. No sidekick, selecione a variável **[!UICONTROL Página]** e selecione **[!UICONTROL Propriedades da página]**.
+1. No sidekick, selecione o ícone **[!UICONTROL Página]** e selecione **[!UICONTROL Propriedades da página]**.
 
-1. Selecionar **[!UICONTROL Cloud Service]**.
-1. Selecionar **[!UICONTROL Adicionar serviços]**.
-1. Selecionar **[!UICONTROL Dynamic Media Classic (Scene7)]**.
-1. No **[!UICONTROL Adobe Dynamic Media Classic (Scene7)]** selecione a configuração desejada e selecione **[!UICONTROL OK]**.
+1. Selecione **[!UICONTROL Cloud Service]**.
+1. Selecione **[!UICONTROL Adicionar serviços]**.
+1. Selecione **[!UICONTROL Dynamic Media Classic (Scene7)]**.
+1. Na lista suspensa **[!UICONTROL Adobe Dynamic Media Classic (Scene7)]**, selecione a configuração desejada e selecione **[!UICONTROL OK]**.
 
    ![chlimage_1-49](assets/chlimage_1-49.png)
 
 1. Na página da Web, adicione um componente do Dynamic Media Classic (Scene7) ao local desejado na página.
-1. No localizador de conteúdo, arraste um ativo digital para o componente. Você vê um link para **[!UICONTROL Verificar status de publicação do Dynamic Media Classic (Scene7)]**.
+1. No localizador de conteúdo, arraste um ativo digital para o componente. Você verá um link para **[!UICONTROL Verificar o Status de Publicação do Dynamic Media Classic (Scene7)]**.
 
    >[!NOTE]
    >
-   >Se o ativo digital estiver na pasta de destino do CQ, nenhum link para **[!UICONTROL Verificar status de publicação do Dynamic Media Classic (Scene7)]** é exibida. Os ativos são colocados no componente.
+   >Se o ativo digital estiver na pasta de destino do CQ, nenhum link para **[!UICONTROL Verificar status de publicação do Dynamic Media Classic (Scene7)]** será exibido. Os ativos são colocados no componente.
 
    ![chlimage_1-50](assets/chlimage_1-50.png)
 
-1. Selecionar **[!UICONTROL Verificar status de publicação do Dynamic Media Classic (Scene7)]**. Se os ativos não forem publicados, o Experience Manager publicará o ativo no Dynamic Media Classic (Scene7). Depois de carregado, o ativo é encontrado na pasta sob demanda. Por padrão, a pasta por demanda está na **[!UICONTROL name_of_the_company/CQ5_adhoc]**. Você pode [configurar a pasta on-demand, se necessário](#configuringtheadhocfolder).
+1. Selecione **[!UICONTROL Verificar Status de Publicação do Dynamic Media Classic (Scene7)]**. Se os ativos não forem publicados, o Experience Manager publicará o ativo no Dynamic Media Classic (Scene7). Depois de carregado, o ativo é encontrado na pasta sob demanda. Por padrão, a pasta sob demanda está no **[!UICONTROL name_of_the_company/CQ5_adhoc]**. Você pode [configurar a pasta por demanda, se necessário](#configuringtheadhocfolder).
 
    >[!NOTE]
    >
@@ -142,11 +142,11 @@ Os seguintes componentes do Dynamic Media Classic (Scene7) estão disponíveis n
 >
 >Esses componentes não estão disponíveis por padrão e devem ser selecionados no modo Design antes de usar.
 
-Depois que eles forem disponibilizados no modo Design, será possível adicionar os componentes à página como qualquer outro componente Experience Manager. Os ativos que ainda não foram publicados no Dynamic Media Classic (Scene7) são publicados no Dynamic Media Classic (Scene7) se estiverem em uma pasta sincronizada, em uma página ou com uma configuração de nuvem do Dynamic Media Classic (Scene7).
+Depois que eles forem disponibilizados no modo Design, será possível adicionar os componentes à página como qualquer outro componente Experience Manager. Os Assets que ainda não foram publicados no Dynamic Media Classic (Scene7) são publicados no Dynamic Media Classic (Scene7) se estiverem em uma pasta sincronizada, em uma página ou com uma configuração de nuvem do Dynamic Media Classic (Scene7).
 
 >[!NOTE]
 >
->Se você estiver criando e desenvolvendo visualizadores S7 personalizados e estiver usando o Localizador de conteúdo, será necessário adicionar explicitamente o `allowfullscreen` parâmetro.
+>Se você estiver criando e desenvolvendo visualizadores S7 personalizados e estiver usando o Localizador de conteúdo, será necessário adicionar explicitamente o parâmetro `allowfullscreen`.
 
 ### Aviso de fim de vida útil de visualizadores do Flash {#flash-viewers-end-of-life-notice}
 
@@ -160,13 +160,13 @@ Para adicionar um componente/visualizador do Dynamic Media Classic (Scene7) a um
 
 1. No Experience Manager, abra a página em que deseja adicionar o componente Dynamic Media Classic (Scene7).
 
-1. Se nenhum componente do Dynamic Media Classic (Scene7) estiver disponível, selecione a régua no sidekick para inserir **Design** selecione **[!UICONTROL Editar]** parsys e selecione todas as opções **[!UICONTROL Dynamic Media Classic (Scene7)]** componentes para disponibilizá-los.
+1. Se nenhum componente do Dynamic Media Classic (Scene7) estiver disponível, selecione a régua no sidekick para entrar no modo **Design**, selecione **[!UICONTROL Editar]** parsys e selecione todos os componentes do **[!UICONTROL Dynamic Media Classic (Scene7)]** para torná-los disponíveis.
 
-1. Retornar para **Editar** selecionando o lápis no sidekick.
+1. Retorne ao modo **Editar** selecionando o lápis no sidekick.
 
-1. Arraste um componente da **[!UICONTROL Dynamic Media Classic (Scene7)]** agrupe no sidekick na página no local desejado.
+1. Arraste um componente do grupo **[!UICONTROL Dynamic Media Classic (Scene7)]** no sidekick para a página no local desejado.
 
-1. Selecionar ***[!UICONTROL Editar]** para que você possa abrir o componente.
+1. Selecione ***[!UICONTROL Editar]** para poder abrir o componente.
 
 1. Edite o componente conforme necessário e selecione **[!UICONTROL OK]** para salvar as alterações.
 
@@ -176,14 +176,14 @@ O design responsivo para seus ativos significa que seus ativos se adaptam depend
 
 Para adicionar uma experiência de visualização interativa a um site responsivo na interface clássica:
 
-1. Efetue logon no Experience Manager e verifique se você [Cloud Service do Adobe Dynamic Media Classic (Scene7) configurado](/help/sites-administering/scene7.md#configuring-scene-integration) e que os componentes do Dynamic Media Classic (Scene7) estão disponíveis.
+1. Faça logon no Experience Manager e verifique se você tem [Cloud Service do Adobe Dynamic Media Classic (Scene7) configurados](/help/sites-administering/scene7.md#configuring-scene-integration) e se os componentes do Dynamic Media Classic (Scene7) estão disponíveis.
 
    >[!NOTE]
    >
    >Se os componentes do WCM do Dynamic Media Classic (Scene7) não estiverem disponíveis, ative-os no modo Design.
 
-1. Em um site com os componentes do Dynamic Media Classic (Scene7) ativados, arraste uma **[!UICONTROL Imagem]** visualizador para a página.
-1. Editar o componente e ajustar os pontos de interrupção no **[!UICONTROL Configurações do Dynamic Media Classic (Scene7)]** guia.
+1. Em um site com os componentes do Dynamic Media Classic (Scene7) habilitados, arraste um visualizador de **[!UICONTROL Imagem]** para a página.
+1. Edite o componente e ajuste os pontos de interrupção na guia **[!UICONTROL Configurações do Dynamic Media Classic (Scene7)]**.
 
    ![chlimage_1-51](assets/chlimage_1-51.png)
 
@@ -197,7 +197,7 @@ Embora as opções de configuração variem, as seguintes opções são comuns a
 * **Largura** - Permite definir a largura.
 * **Altura** - Permite definir a altura.
 
-Você define essas opções de configuração abrindo (clicando duas vezes) um componente do Dynamic Media Classic (Scene7), por exemplo, ao abrir um **Zoom** componente:
+Você define estas opções de configuração abrindo (clicando duas vezes) um componente do Dynamic Media Classic (Scene7), por exemplo, quando você abre um componente **Zoom**:
 
 ![chlimage_1-52](assets/chlimage_1-52.png)
 
@@ -205,13 +205,13 @@ Você define essas opções de configuração abrindo (clicando duas vezes) um c
 
 O componente de HTML5 Zoom exibe uma imagem maior quando você pressiona o botão +.
 
-O ativo tem ferramentas de zoom na parte inferior. Selecionar **[!UICONTROL +]** para ampliar. Selecionar **[!UICONTROL -]** para reduzir. Selecionar o **[!UICONTROL x]** ou a seta para redefinir zoom traz a imagem de volta ao tamanho original como foi importada. Selecione as setas diagonais para que você possa usá-las em tela cheia. Selecionar **[!UICONTROL Editar]** para configurar o componente. Com esse componente, você pode configurar [configurações comuns a todos os componentes do Dynamic Media Classic (Scene7)](#settings-common-to-all-scene-components).
+O ativo tem ferramentas de zoom na parte inferior. Selecione **[!UICONTROL +]** para ampliar. Selecione **[!UICONTROL -]** para reduzir. Ao selecionar **[!UICONTROL x]** ou a seta para redefinir zoom, a imagem é retornada ao tamanho original para o qual foi importada. Selecione as setas diagonais para que você possa usá-las em tela cheia. Selecione **[!UICONTROL Editar]** para poder configurar o componente. Com este componente, você pode definir [configurações comuns a todos os componentes do Dynamic Media Classic (Scene7)](#settings-common-to-all-scene-components).
 
 ![Imagem de flores de tulipa dentro do componente de HTML5 Zoom.](do-not-localize/chlimage_1-3.png)
 
 ### Flyout {#flyout}
 
-No componente Flyout HTML5, o ativo é exibido como tela dividida; deixa o ativo no tamanho especificado; direita, a parte de zoom é exibida. Selecionar **[!UICONTROL Editar]** para configurar o componente. Com esse componente, você pode configurar [configurações comuns a todos os componentes do Dynamic Media Classic (Scene7)](/help/sites-administering/scene7.md#settingscommontoallscene7components).
+No componente Flyout HTML5, o ativo é exibido como tela dividida; deixa o ativo no tamanho especificado; direita, a parte de zoom é exibida. Selecione **[!UICONTROL Editar]** para poder configurar o componente. Com este componente, você pode definir [configurações comuns a todos os componentes do Dynamic Media Classic (Scene7)](/help/sites-administering/scene7.md#settingscommontoallscene7components).
 
 >[!NOTE]
 >
@@ -227,31 +227,31 @@ O componente de Imagem do Dynamic Media Classic (Scene7) permite adicionar a fun
 
 ![Imagem de uma esfera dentro do componente de imagem do Dynamic Media Classic (Scene 7)](do-not-localize/chlimage_1-4.png)
 
-**Título, texto alternativo** - Na guia Avançado, adicione um título à imagem e um texto alternativo para os usuários que têm gráficos desativados.
+**Título, Texto Alternativo** - Na guia Avançado, adicione um título à imagem e um texto alternativo para os usuários que têm gráficos desativados.
 
-**URL, Abrir em** - É possível definir um ativo do para abrir um link. Defina o URL e, em Abrir no, indique se deseja abri-lo na mesma janela ou em uma nova janela.
+**URL, Abrir em** - Você pode definir um ativo de para abrir um link. Defina o URL e, em Abrir no, indique se deseja abri-lo na mesma janela ou em uma nova janela.
 
 ![chlimage_1-54](assets/chlimage_1-54.png)
 
 **Predefinição do visualizador** - Selecione uma predefinição do visualizador existente no menu suspenso. Se a predefinição do visualizador que você está procurando não estiver visível, é necessário torná-la visível. Consulte Gerenciamento de predefinições do visualizador. Não é possível selecionar uma predefinição do visualizador se você estiver usando uma predefinição de imagem e vice-versa.
 
-**Configuração do Dynamic Media Classic (Scene7)** - Selecione a configuração do Dynamic Media Classic (Scene7) que deseja usar para buscar predefinições de imagens ativas na SPS.
+**Configuração do Dynamic Media Classic (Scene7)** - Selecione a configuração do Dynamic Media Classic (Scene7) que deseja usar para buscar predefinições de imagens ativas do SPS.
 
 **Predefinição de imagem** - Selecione uma predefinição de imagem existente no menu suspenso. Se a predefinição de imagem que você está procurando não estiver visível, será necessário torná-la visível. Consulte Gerenciamento de predefinições de imagem. Não é possível selecionar uma predefinição do visualizador se você estiver usando uma predefinição de imagem e vice-versa.
 
 **Formato de saída** - Selecione o formato de saída da imagem, por exemplo, jpeg. Dependendo do formato de saída selecionado, talvez você tenha opções de configuração adicionais. Consulte Práticas recomendadas de predefinição de imagem.
 
-**Nitidez** - Selecione como deseja tornar a imagem mais nítida. A nitidez é explicada em detalhes em Práticas recomendadas de predefinição de imagem e Práticas recomendadas de nitidez.
+**Nitidez** - Selecione como deseja nitidez da imagem. A nitidez é explicada em detalhes em Práticas recomendadas de predefinição de imagem e Práticas recomendadas de nitidez.
 
-**Modificadores de URL** - Você pode alterar os efeitos de imagem fornecendo comandos de imagem S7 adicionais. Esses comandos são descritos em Predefinições de imagem e a referência do comando.
+**Modificadores de URL** - Você pode alterar efeitos de imagem fornecendo comandos de imagem S7 adicionais. Esses comandos são descritos em Predefinições de imagem e a referência do comando.
 
-**Pontos de interrupção** - Se o seu site é responsivo, você quer ajustar os pontos de interrupção. Os pontos de interrupção devem ser separados por vírgulas (,).
+**Pontos de interrupção** - Se o site for responsivo, ajuste os pontos de interrupção. Os pontos de interrupção devem ser separados por vírgulas (,).
 
 ### Modelo da imagem {#image-template}
 
-Os Modelos de imagem do Dynamic Media Classic (Scene7) são conteúdo em camadas do Photoshop que foi importado para o Dynamic Media Classic (Scene7), onde o conteúdo e as propriedades eram parametrizados para fins de variabilidade. A variável **[!UICONTROL Modelo de imagem]** O componente permite importar imagens e alterar o texto dinamicamente no Experience Manager. Além disso, você pode configurar o **[!UICONTROL Modelo de imagem]** para usar valores do contexto do cliente, para que cada usuário experimente a imagem de forma personalizada.
+Os Modelos de imagem do Dynamic Media Classic (Scene7) são conteúdo em camadas do Photoshop que foi importado para o Dynamic Media Classic (Scene7), onde o conteúdo e as propriedades eram parametrizados para fins de variabilidade. O componente **[!UICONTROL Modelo de imagem]** permite importar imagens e alterar o texto dinamicamente no Experience Manager. Além disso, você pode configurar o componente **[!UICONTROL Modelo de imagem]** para usar valores do contexto do cliente, para que cada usuário experimente a imagem de forma personalizada.
 
-Selecionar **[!UICONTROL Editar]** - para configurar o componente. Você pode configurar [configurações comuns a todos os componentes do Dynamic Media Classic (Scene7)](/help/sites-administering/scene7.md#settingscommontoallscene7components) e outras configurações descritas nesta seção.
+Selecione **[!UICONTROL Editar]** - para configurar o componente. Você pode definir [configurações comuns a todos os componentes do Dynamic Media Classic (Scene7)](/help/sites-administering/scene7.md#settingscommontoallscene7components) e outras configurações descritas nesta seção.
 
 ![chlimage_1-55](assets/chlimage_1-55.png)
 
@@ -259,21 +259,21 @@ Selecionar **[!UICONTROL Editar]** - para configurar o componente. Você pode co
 
 >[!NOTE]
 >
->Os comandos e parâmetros de URL do Dynamic Media Classic (Scene7) não podem ser adicionados diretamente ao URL de referência de arquivo. Eles só podem ser definidos na interface do usuário do componente no **[!UICONTROL Parâmetro]** painel.
+>Os comandos e parâmetros de URL do Dynamic Media Classic (Scene7) não podem ser adicionados diretamente ao URL de referência de arquivo. Eles só podem ser definidos na interface do usuário do componente no painel **[!UICONTROL Parâmetro]**.
 
-**Título, texto alternativo** - Na guia Modelo de imagem do Dynamic Media Classic (Scene7), adicione um título à imagem e um texto alternativo para os usuários que têm gráficos desativados.
+**Título, Texto Alternativo** - Na guia Modelo de Imagem do Dynamic Media Classic (Scene7), adicione um título à imagem e um texto alternativo para os usuários que têm gráficos desativados.
 
-**URL, Abrir em** - É possível definir um ativo do para abrir um link. Defina o URL e, em Abrir no, indique se deseja abri-lo na mesma janela ou em uma nova janela.
+**URL, Abrir em** - Você pode definir um ativo de para abrir um link. Defina o URL e, em Abrir no, indique se deseja abri-lo na mesma janela ou em uma nova janela.
 
 ![chlimage_1-56](assets/chlimage_1-56.png)
 
-**Painel de parâmetros** - Ao importar uma imagem, os parâmetros são pré-preenchidos com informações da imagem. Se não houver conteúdo que possa ser alterado dinamicamente, essa janela ficará vazia.
+**Painel de Parâmetros** - Ao importar uma imagem, os parâmetros são pré-preenchidos com informações da imagem. Se não houver conteúdo que possa ser alterado dinamicamente, essa janela ficará vazia.
 
 ![chlimage_1-57](assets/chlimage_1-57.png)
 
 #### Alteração dinâmica do texto {#changing-text-dynamically}
 
-Para alterar o texto dinamicamente, insira o novo texto nos campos e selecione **[!UICONTROL OK]**. Neste exemplo, a variável **Preço** agora custa US$ 50 e o frete custa 99 centavos.
+Para alterar o texto dinamicamente, insira um novo texto nos campos e selecione **[!UICONTROL OK]**. Neste exemplo, o **Preço** agora é de $50 e o frete é de 99 centavos.
 
 ![chlimage_1-58](assets/chlimage_1-58.png)
 
@@ -283,7 +283,7 @@ O texto na imagem é alterado. Você pode redefinir o texto de volta para o valo
 
 #### Alterar texto para refletir o valor de um valor de contexto do cliente {#changing-text-to-reflect-the-value-of-a-client-context-value}
 
-Para vincular um campo a um valor de contexto de cliente, selecione **[!UICONTROL Selecionar]** para abrir o menu de contexto do cliente, selecione o contexto do cliente e **[!UICONTROL OK]**. Neste exemplo, o nome muda com base na vinculação do Name com o nome formatado no perfil.
+Para vincular um campo a um valor de contexto de cliente, selecione **[!UICONTROL Selecionar]** para abrir o menu de contexto de cliente, selecione o contexto de cliente e selecione **[!UICONTROL OK]**. Neste exemplo, o nome muda com base na vinculação do Name com o nome formatado no perfil.
 
 ![chlimage_1-60](assets/chlimage_1-60.png)
 
@@ -296,19 +296,19 @@ O texto reflete o nome do usuário conectado no momento. Você pode redefinir o 
 Você pode tornar o componente de modelo de imagem do Dynamic Media Classic (Scene7) um link clicável.
 
 1. Na página com o componente de modelo de imagem do Dynamic Media Classic (Scene7), selecione **[!UICONTROL Editar]**.
-1. No **[!UICONTROL URL]** insira o URL ao qual os usuários vão quando a imagem é clicada. No **[!UICONTROL Abrir em]** selecione se deseja que o target seja aberto (uma nova janela ou a mesma janela).
+1. No campo **[!UICONTROL URL]**, insira a URL para a qual os usuários irão quando a imagem for clicada. No campo **[!UICONTROL Abrir em]**, selecione se deseja abrir o destino (uma nova janela ou a mesma janela).
 
    ![chlimage_1-62](assets/chlimage_1-62.png)
 
-1. Selecionar **[!UICONTROL OK]**.
+1. Selecione **[!UICONTROL OK]**.
 
 ### Componente de vídeo {#video-component}
 
-O Dynamic Media Classic (Scene7) **[!UICONTROL Vídeo]** O componente (disponível na seção Dynamic Media Classic (Scene7) do sidekick) usa detecção de dispositivo e largura de banda para veicular o vídeo correto em cada tela. Esse componente é um reprodutor de vídeo HTML5; é um único visualizador que pode ser usado entre canais.
+O componente de **[!UICONTROL Vídeo]** do Dynamic Media Classic (Scene7) (disponível na seção Dynamic Media Classic (Scene7) do sidekick) usa detecção de dispositivo e largura de banda para veicular o vídeo correto em cada tela. Esse componente é um reprodutor de vídeo HTML5; é um único visualizador que pode ser usado entre canais.
 
 Ele pode ser usado para conjuntos de vídeos adaptáveis, um único vídeo MP4 ou um único vídeo F4V.
 
-Consulte [Vídeo](/help/sites-classic-ui-authoring/manage-assets-classic-s7-video.md) para obter mais informações sobre como os vídeos funcionam com a integração do Dynamic Media Classic (Scene7). Além disso, veja como [o **Vídeo do Dynamic Media Classic (Scene7)** componente compara à base **vídeo** componente](/help/sites-classic-ui-authoring/manage-assets-classic-s7-video.md).
+Consulte [Vídeo](/help/sites-classic-ui-authoring/manage-assets-classic-s7-video.md) para obter mais informações sobre como os vídeos funcionam com a integração do Dynamic Media Classic (Scene7). Além disso, veja como o componente de [vídeo **do** Dynamic Media Classic (Scene7) se compara ao componente de **vídeo** da base](/help/sites-classic-ui-authoring/manage-assets-classic-s7-video.md).
 
 ![chlimage_1-63](assets/chlimage_1-63.png)
 
@@ -323,15 +323,15 @@ Ao usar um conjunto de vídeos adaptáveis com o componente de vídeo do Dynamic
 
 ## Navegador de conteúdo do Dynamic Media Classic (Scene7) {#scene-content-browser}
 
-O navegador de conteúdo do Dynamic Media Classic (Scene7) permite exibir o conteúdo do Dynamic Media Classic (Scene7) diretamente no Experience Manager. Para acessar o navegador de conteúdo, no Localizador de Conteúdo, selecione **Dynamic Media Classic (Scene7)** na interface do usuário otimizada para toque ou na **S7** ícone na interface clássica do usuário. A funcionalidade é idêntica entre as duas interfaces do usuário.
+O navegador de conteúdo do Dynamic Media Classic (Scene7) permite exibir o conteúdo do Dynamic Media Classic (Scene7) diretamente no Experience Manager. Para acessar o navegador de conteúdo, no Localizador de Conteúdo, selecione **Dynamic Media Classic (Scene7)** na interface otimizada para toque ou o ícone **S7** na interface de usuário clássica. A funcionalidade é idêntica entre as duas interfaces do usuário.
 
-Se você tiver várias configurações, o Experience Manager, por padrão, exibirá a variável [configuração padrão](/help/sites-administering/scene7.md#configuring-a-default-configuration). Você pode selecionar configurações diferentes diretamente no navegador de conteúdo do Dynamic Media Classic (Scene7) no menu suspenso.
+Se você tiver várias configurações, o Experience Manager, por padrão, exibe a [configuração padrão](/help/sites-administering/scene7.md#configuring-a-default-configuration). Você pode selecionar configurações diferentes diretamente no navegador de conteúdo do Dynamic Media Classic (Scene7) no menu suspenso.
 
 >[!NOTE]
 >
->* Os ativos na pasta sob demanda não aparecem no navegador de conteúdo do Dynamic Media Classic (Scene7).
->* Quando [A Visualização Segura está ativada](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene), os ativos publicados e não publicados no Dynamic Media Classic (Scene7) aparecem no navegador de conteúdo do Dynamic Media Classic (Scene7).
->* Se você não vir **[!UICONTROL Dynamic Media Classic (Scene7)]** ou o **[!UICONTROL S7]** ícone como uma opção no navegador de conteúdo, você deve [configurar o Dynamic Media Classic (Scene7) para funcionar com o Experience Manager](/help/sites-administering/scene7.md).
+>* O Assets na pasta on-demand não aparece no navegador de conteúdo do Dynamic Media Classic (Scene7).
+>* Quando a [Visualização Segura está habilitada](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene), tanto os ativos publicados quanto os não publicados no Dynamic Media Classic (Scene7) aparecem no navegador de conteúdo do Dynamic Media Classic (Scene7).
+>* Se você não vir o ícone do **[!UICONTROL Dynamic Media Classic (Scene7)]** ou do **[!UICONTROL S7]** como uma opção no navegador de conteúdo, será necessário [configurar o Dynamic Media Classic (Scene7) para funcionar com o Experience Manager](/help/sites-administering/scene7.md).
 >* Para vídeo, o navegador de conteúdo do Dynamic Media Classic (Scene7) é compatível com:
 >   * Conjuntos de vídeos adaptados: contêiner de todas as representações de vídeo necessárias para a reprodução contínua em várias telas
 >   * Vídeo MP4 único
@@ -339,13 +339,13 @@ Se você tiver várias configurações, o Experience Manager, por padrão, exibi
 
 ### Procurar conteúdo {#browsing-content-in-the-classic-ui}
 
-Navegue pelo conteúdo no Dynamic Media Classic (Scene7) selecionando o **[!UICONTROL S7]** guia.
+Procure o conteúdo no Dynamic Media Classic (Scene7) selecionando a guia **[!UICONTROL S7]**.
 
 Você pode alterar a configuração que está acessando selecionando a configuração. As pastas mudam, dependendo da configuração selecionada.
 
 ![chlimage_1-64](assets/chlimage_1-64.png)
 
-Assim como no localizador de conteúdo para Ativos, você pode pesquisar por ativos e filtrar resultados. No entanto, ao contrário do localizador de Ativos, ao inserir uma palavra-chave no **S7** guia, o nome do arquivo **começa com** a sequência inserida, em vez de **contendo** a palavra-chave no nome do arquivo.
+Assim como no localizador de conteúdo para o Assets, você pode pesquisar por ativos e filtrar resultados. No entanto, ao contrário do localizador do Assets, ao inserir uma palavra-chave na guia **S7**, o nome de arquivo **começa com** a cadeia de caracteres inserida, em vez de **conter** a palavra-chave no nome de arquivo.
 
 Por padrão, os ativos são exibidos por nome de arquivo. No entanto, também é possível filtrar os resultados por tipo de ativo.
 
@@ -366,11 +366,11 @@ Você pode usar a interface clássica ou a interface otimizada para toque para v
 
 Ao pesquisar em qualquer uma das interfaces do usuário, você pode filtrar pelos seguintes critérios (mostrados aqui na interface otimizada para toque):
 
-**Inserir palavras-chave** - Você pode pesquisar ativos por nome. Ao pesquisar as palavras-chave, digite é com o nome do arquivo que começa. Por exemplo, digitar a palavra &quot;natação&quot; procuraria qualquer nome de arquivo de ativo que começasse com essas letras nessa ordem. Selecione `Enter` depois de digitar o termo para localizar o ativo.
+**Inserir palavras-chave** - Você pode pesquisar ativos por nome. Ao pesquisar as palavras-chave, digite é com o nome do arquivo que começa. Por exemplo, digitar a palavra &quot;natação&quot; procuraria qualquer nome de arquivo de ativo que começasse com essas letras nessa ordem. Certifique-se de selecionar `Enter` depois de digitar o termo para localizar o ativo.
 
 ![chlimage_1-65](assets/chlimage_1-65.png)
 
-**Pasta/caminho** - O nome da pasta se baseia na configuração selecionada. Você pode detalhar os níveis inferiores selecionando o ícone de pasta e uma subpasta e, em seguida, marcando a marca de seleção para selecioná-la.
+**Pasta/caminho** - O nome da pasta é baseado na configuração selecionada. Você pode detalhar os níveis inferiores selecionando o ícone de pasta e uma subpasta e, em seguida, marcando a marca de seleção para selecioná-la.
 
 Se você inserir uma palavra-chave e selecionar uma pasta, o Experience Manager pesquisará essa pasta e todas as subpastas. No entanto, se você não inserir nenhuma palavra-chave ao pesquisar, selecionar a pasta mostrará apenas os ativos nessa pasta e não incluirá nenhuma subpasta.
 
@@ -378,11 +378,11 @@ Por padrão, o Experience Manager pesquisa a pasta selecionada e todas as subpas
 
 ![chlimage_1-66](assets/chlimage_1-66.png)
 
-**Tipo de ativo** - Selecione Dynamic Media Classic (Scene7) para navegar pelo conteúdo do Dynamic Media Classic (Scene7). Essa opção só estará disponível se o Dynamic Media Classic (Scene7) tiver sido configurado.
+**Tipo de ativo** - Selecione Dynamic Media Classic (Scene7) para procurar conteúdo do Dynamic Media Classic (Scene7). Essa opção só estará disponível se o Dynamic Media Classic (Scene7) tiver sido configurado.
 
 ![chlimage_1-67](assets/chlimage_1-67.png)
 
-**Configuração** - Se você tiver mais de uma configuração do Dynamic Media Classic (Scene7) definida em Cloud Service, é possível selecioná-la aqui. Como resultado, a pasta muda com base na configuração escolhida.
+**Configuração** - Se você tiver mais de uma configuração Dynamic Media Classic (Scene7) definida em Cloud Service, selecione-a aqui. Como resultado, a pasta muda com base na configuração escolhida.
 
 ![chlimage_1-68](assets/chlimage_1-68.png)
 
@@ -392,12 +392,12 @@ Por padrão, o Experience Manager pesquisa a pasta selecionada e todas as subpas
 
 >[!NOTE]
 >
->* Na interface clássica, também é possível pesquisar por **Flash** e **FXG**. Não há suporte para a filtragem desses dois termos na interface otimizada para toque.
+>* Na interface clássica, você também pode procurar por **Flash** e **FXG**. Não há suporte para a filtragem desses dois termos na interface otimizada para toque.
 >
 >* Ao pesquisar vídeos, você pesquisa uma única representação. Os resultados retornam a representação original (somente &#42;.mp4) e a representação codificada.
 * Ao pesquisar um conjunto de vídeos adaptáveis, você está pesquisando a pasta e todas as subpastas, mas somente se tiver adicionado uma palavra-chave à pesquisa. Se você não tiver adicionado uma palavra-chave, o Experience Manager não pesquisará nas subpastas.
 >
 
-**Publicar status** - Você pode filtrar por ativos com base no status da publicação: Não publicado ou Publicado. Se você não selecionar nenhum Status de publicação, o Experience Manager, por padrão, pesquisará todos os status de publicação.
+**Status do Publish** - Você pode filtrar por ativos com base no status da publicação: Não publicado ou Publicado. Se você não selecionar nenhum Status do Publish, o Experience Manager, por padrão, pesquisará todos os status de publicação.
 
 ![chlimage_1-70](assets/chlimage_1-70.png)

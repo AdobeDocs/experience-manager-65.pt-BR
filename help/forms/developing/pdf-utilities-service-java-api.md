@@ -1,5 +1,5 @@
 ---
-title: PDF Utilities Service Java APIQuick Start (SOAP)
+title: PDF Utilities Service Java APIQuick Start(SOAP)
 description: Use o serviço Utilitários de PDF para converter um documento PDF em um documento XDP, converter um documento XDP em um documento PDF, recuperar propriedades de documentos PDF, definir o estilo de salvamento para um documento PDF e limpar documentos PDF.
 contentOwner: admin
 content-type: reference
@@ -356,7 +356,7 @@ O código de exemplo a seguir determina se o documento é um documento PDF e, ne
 
 ## Início rápido (modo SOAP): definição do estilo de salvamento de um documento PDF usando a API Java {#quick-start-soap-mode-setting-the-save-style-for-a-pdf-document-using-the-java-api}
 
-O exemplo de código a seguir define o modo de salvamento para exibição rápida na Web e, em seguida, passa o documento PDF para o serviço de criptografia, onde ele é criptografado. O documento PDF criptografado salvo para exibição rápida na Web é um arquivo PDF chamado* FastWebViewLoan.pdf*. (Consulte [Configuração dos modos de salvamento do documento PDF](/help/forms/developing/pdf-utilities.md#setting-pdf-document-save-modes).)
+O exemplo de código a seguir define o modo de salvamento para exibição rápida na Web e, em seguida, passa o documento PDF para o serviço de criptografia, onde ele é criptografado. O documento PDF criptografado salvo para exibição rápida na Web é um arquivo PDF chamado* FastWebViewLoan.pdf*. (Consulte [Definindo Modos de Salvamento de Documento PDF](/help/forms/developing/pdf-utilities.md#setting-pdf-document-save-modes).)
 
 ```java
  /*
@@ -496,7 +496,7 @@ O exemplo de código a seguir define o modo de salvamento para exibição rápid
 
 ## Início rápido (modo SOAP): conversão de um documento em um documento PDF/A-2b usando a API Java {#quick-start-soap-mode-converting-a-document-to-a-pdf-a-2b-document-using-the-java-api}
 
-O exemplo de código Java a seguir converte um documento PDF chamado *Loan.pdf* para um documento PDF/A-2b salvo como um arquivo PDF chamado *LoanArchive.pdf*. (Consulte [Conversão de documentos em documentos PDF/A](/help/forms/developing/pdf-a-documents.md#converting-documents-to-pdf-a-documents).)
+O exemplo de código Java a seguir converte um documento PDF chamado *Loan.pdf* em um documento PDF/A-2b salvo como um arquivo PDF chamado *LoanArchive.pdf*. (Consulte [Conversão de documentos em documentos PDF/A](/help/forms/developing/pdf-a-documents.md#converting-documents-to-pdf-a-documents).)
 
 ```java
 /*

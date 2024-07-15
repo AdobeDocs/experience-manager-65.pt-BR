@@ -26,7 +26,7 @@ Um Modelo é usado para criar uma Página e define quais componentes podem ser u
 
 Cada modelo apresenta uma seleção de componentes disponíveis para uso.
 
-* Os modelos são criados de [Componentes](/help/sites-developing/components.md);
+* Modelos são compilados de [Componentes](/help/sites-developing/components.md);
 * Os componentes usam e permitem acesso a Widgets e eles são usados para renderizar o Conteúdo.
 
 >[!NOTE]
@@ -35,7 +35,7 @@ Cada modelo apresenta uma seleção de componentes disponíveis para uso.
 
 Um modelo é a base de uma página.
 
-Para criar uma página, o modelo deve ser copiado (árvore de nó **/apps/&lt;myapp>/templates/&lt;mytemplate>**) para a posição correspondente na árvore do site: isso é o que acontece se uma página é criada usando o **Sites** guia.
+Para criar uma página, o modelo deve ser copiado (árvore de nó **/apps/&lt;myapp>/templates/&lt;mytemplate>**) para a posição correspondente na árvore de site: isso é o que acontece se uma página é criada usando a guia **Sites**.
 
 Essa ação de cópia também fornece à página seu conteúdo inicial (geralmente, Conteúdo de nível superior somente) e a propriedade sling:resourceType, o caminho para o componente de página usado para renderizar a página (tudo no nó filho jcr:content).
 
@@ -46,14 +46,14 @@ Há dois aspectos a considerar:
 * a estrutura do próprio modelo
 * a estrutura do conteúdo produzido quando um template é usado
 
-Um modelo é criado em um nó do tipo **cq:Template**.
+Um Modelo foi criado em um nó do tipo **cq:Template**.
 
 Várias propriedades podem ser definidas, em particular:
 
 * **jcr:title** - título do modelo; aparece na caixa de diálogo ao criar uma página.
 * **jcr:description** - descrição do modelo; aparece na caixa de diálogo ao criar uma página.
 
-Este nó contém *um jcr:content (cq:PageContent)* que é usado como base para o nó de conteúdo das páginas resultantes. Isso faz referência, usando *sling:resourceType*, o componente a ser usado para renderizar o conteúdo real de uma nova página.
+Este nó contém o nó *a jcr:content (cq:PageContent)* usado como base para o nó de conteúdo das páginas resultantes. Isso faz referência, usando *sling:resourceType*, ao componente a ser usado para renderizar o conteúdo real de uma nova página.
 
 >[!NOTE]
 >

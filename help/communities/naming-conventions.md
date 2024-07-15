@@ -1,6 +1,6 @@
 ---
 title: Nomeação de convenções no nome do pacote Java&trade;
-description: Saiba mais sobre as convenções de nomenclatura e o uso de hifens no nome do pacote Java&trade;.
+description: Saiba mais sobre convenções de nomenclatura e o uso de hifens no nome do pacote Java&trade;.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
@@ -24,8 +24,8 @@ Ao criar um local para uma classe Java™, o nome do pacote deve corresponder ao
 
 Embora o uso de hifens nos nomes dos itens do repositório seja uma prática recomendada no desenvolvimento de AEM, os hifens são ilegais nos nomes dos pacotes Java™.
 
-A plataforma CRX subjacente deve ser capaz de distinguir entre um sublinhado real `_ `e um hífen `-`. Assim, no JCR, o hífen deve ser substituído pelo seu valor Unicode (u002d) e evitado com um sublinhado `_`.
+A plataforma subjacente do CRX deve ser capaz de distinguir entre um sublinhado real `_ ` e um hífen `-`. Portanto, no JCR, o hífen deve ser substituído pelo seu valor Unicode (u002d) e evitado com um sublinhado `_`.
 
-Por exemplo, se o caminho do repositório for **/apps/my-example/component/info/Info.java**, o nome do pacote deve ser `java package apps.my_002dexample.component.info;`
+Por exemplo, se o caminho do repositório for **/apps/my-example/component/info/Info.java**, o nome do pacote deverá ser `java package apps.my_002dexample.component.info;`
 
-Observe que um sublinhado deve ser evitado de forma semelhante, de modo que `_` torna-se `_005f`.
+Observe que um sublinhado deve ser escapado da mesma forma, de modo que `_` se torne `_005f`.

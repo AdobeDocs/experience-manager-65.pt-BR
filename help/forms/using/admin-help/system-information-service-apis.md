@@ -32,7 +32,7 @@ O serviço de informações do sistema fornece um conjunto de APIs REST para rec
   <tr>
    <td><p>SystemInfo.properties</p></td>
    <td><p>https://'[server]:[port]'/rest/services/SystemInfo.properties'</p></td>
-   <td><p>Essa API é um empacotador para <a href="https://docs.oracle.com/javase/6/docs/api/java/lang/System.html#getProperties()">system.getProperties</a> API Java. Recupera a configuração do ambiente de trabalho atual. </p></td>
+   <td><p>Esta API é um invólucro para a API Java <a href="https://docs.oracle.com/javase/6/docs/api/java/lang/System.html#getProperties()">system.getProperties</a>. Recupera a configuração do ambiente de trabalho atual. </p></td>
   </tr>
   <tr>
    <td><p>SystemInfo.envVar</p></td>
@@ -105,7 +105,7 @@ O serviço de informações do sistema fornece um conjunto de APIs REST para rec
   <tr>
    <td><p>SystemInfo.info</p></td>
    <td><p>https://'[server]:[port]'/rest/services/ SystemInfo.info</p></td>
-   <td><p>Esta API é um invólucro para todas as APIs de serviço de informações do sistema. Internamente, ele executa todas as APIs de informações do sistema e baixa informações no formato zip. </p><p><i><strong>observação</strong>: O SystemInfo.info não fornece rastreamento de contagem e pilha de threads ativos. </i></p></td>
+   <td><p>Esta API é um invólucro para todas as APIs de serviço de informações do sistema. Internamente, ele executa todas as APIs de informações do sistema e baixa informações no formato zip. </p><p><i><strong>observação</strong>: o SystemInfo.info não fornece contagem e rastreamento de pilha de threads ativos. </i></p></td>
   </tr>
  </tbody>
 </table>

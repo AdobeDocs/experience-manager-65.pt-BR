@@ -22,12 +22,12 @@ Na página Gerenciamento de armazenamento de confiança, você pode adicionar e 
 
 ## Adicionar uma credencial de nome de usuário e senha {#add-a-user-name-and-password-credential}
 
-1. No console de administração, clique em **[!UICONTROL Configurações > Gerenciamento de armazenamento de confiança > Credenciais de usuário e senha]** e clique em **[!UICONTROL Adicionar]**.
-1. No **[!UICONTROL Nome do perfil]** digite um nome para a credencial.
-1. No **[!UICONTROL Nome do usuário]** digite um nome de usuário exclusivo.
-1. No **[!UICONTROL Senha]** digite uma senha para o usuário e clique em **[!UICONTROL OK]**.
+1. No console de administração, clique em **[!UICONTROL Configurações >Gerenciamento de Repositório Confiável > Credenciais de Usuário e Senha]** e em **[!UICONTROL Adicionar]**.
+1. Na caixa **[!UICONTROL Nome do Perfil]**, digite um nome para a credencial.
+1. Na caixa **[!UICONTROL Nome de Usuário]**, digite um nome de usuário exclusivo.
+1. Na caixa **[!UICONTROL Senha]**, digite uma senha para o usuário e clique em **[!UICONTROL OK]**.
 
 ## Excluir uma credencial de nome de usuário e senha {#delete-a-user-name-and-password-credential}
 
-1. No console de administração, clique em **[!UICONTROL Configurações > Gerenciamento de armazenamento de confiança > Credenciais de usuário e senha]**.
-1. Marque as caixas de seleção das credenciais que deseja excluir e clique em **[!UICONTROL Excluir]** e clique em **[!UICONTROL OK]**.
+1. No console de administração, clique em **[!UICONTROL Configurações > Gerenciamento de Repositório Confiável > Credenciais de Usuário e Senha]**.
+1. Marque as caixas de seleção das credenciais que deseja excluir, clique em **[!UICONTROL Excluir]** e em **[!UICONTROL OK]**.

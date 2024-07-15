@@ -27,11 +27,11 @@ No AEM Forms, você pode usar o serviço SendToPrinter para enviar um documento 
 
   Ao enviar um documento para uma impressora, especifique um destes protocolos de impressão:
 
-   * **CUPS** `: A printing protocol named common UNIX printing system. This protocol is used for UNIX operating systems and enables a computer to function as a print server. The print server accepts print requests from client applications, processes them, and sends them to configured printers. On the IBM AIX® operating system, usage of CUPS is not recommended.`
-   * &quot;**DirectIP** `: A standard protocol for remote printing and managing print jobs. This protocol can be used locally or remotely. Print queues are not required.`
+   * **XÍCARAS** `: A printing protocol named common UNIX printing system. This protocol is used for UNIX operating systems and enables a computer to function as a print server. The print server accepts print requests from client applications, processes them, and sends them to configured printers. On the IBM AIX® operating system, usage of CUPS is not recommended.`
+   * **DirectIP** `: A standard protocol for remote printing and managing print jobs. This protocol can be used locally or remotely. Print queues are not required.`
    * &quot;**LPD** `: A printing protocol named Line Printer Daemon protocol or Line Printer Remote (LPR) protocol. This protocol provides network print server functionality for UNIX-based systems.`
    * **SharedPrinter** `: A printing protocol that enables a computer to use a printer that is configured for that computer.`
-   * **CIF**: o serviço de Saída oferece suporte ao protocolo de impressão CIF (Common Internet File System).
+   * **CIF**: o serviço de Saída dá suporte ao protocolo de impressão CIF (Common Internet File System).
 
 ## Uso do Serviço SendToPrinter {#using-sendtoprinter-service}
 
@@ -66,6 +66,6 @@ A autenticação é suportada somente para impressão CIF. Para autenticar, forn
 
 1. Acesse https://&lt;server>:&lt;port>/system/console.
 
-1. Ir para **[!UICONTROL Principal]** > **[!UICONTROL Suporte a criptografia]**.
+1. Vá para **[!UICONTROL Principal]** > **[!UICONTROL Suporte de Criptografia]**.
 
-1. Insira algum texto sem formatação e clique em **[!UICONTROL Protect]**.
+1. Insira texto sem formatação e clique em **[!UICONTROL Protect]**.

@@ -44,13 +44,13 @@ Um [modo](/help/sites-authoring/author-environment-tools.md#page-modes) é usado
 
 >[!NOTE]
 >
->Não se esqueça disso [comentários](/help/sites-authoring/basic-handling.md#timeline) também estão disponíveis para fornecer feedback em uma página.
+>Não esqueça que [comentários](/help/sites-authoring/basic-handling.md#timeline) também estão disponíveis para fornecer feedback em uma página.
 
 >[!NOTE]
 >
 >É possível anotar em vários recursos:
 >
->* [Anotação de ativos](/help/assets/manage-assets.md#annotating)
+>* [Ativos de anotação](/help/assets/manage-assets.md#annotating)
 >* [Anotação de ativos de vídeo](/help/assets/managing-video-assets.md#annotate-video-assets)
 >
 

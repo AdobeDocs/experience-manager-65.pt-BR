@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Renderização do HTML Forms com barras de ferramentas personalizadas {#rendering-html-forms-with-customtoolbars}
 
-**Os exemplos e amostras neste documento são somente para AEM Forms no ambiente JEE.**
+**Exemplos e exemplos neste documento são somente para AEM Forms no ambiente JEE.**
 
 ## Renderização do HTML Forms com barras de ferramentas personalizadas {#rendering-html-forms-with-custom-toolbars}
 
@@ -40,21 +40,21 @@ Além do arquivo fscmenu.xml, você também precisa obter os seguintes arquivos:
 * fscmenu-ie.css
 * fscdialog.css
 
-fscJS é o script Java associado a cada nó. É necessário fornecer um para o `div#fscmenu` e, opcionalmente, para `ul#fscmenuItem` nós. Os arquivos JS implementam a funcionalidade principal da barra de ferramentas e os arquivos padrão funcionam.
+fscJS é o script Java associado a cada nó. É necessário fornecer um para o nó `div#fscmenu` e, opcionalmente, para os nós `ul#fscmenuItem`. Os arquivos JS implementam a funcionalidade principal da barra de ferramentas e os arquivos padrão funcionam.
 
-fscCSS é uma folha de estilos associada a um nó específico. Os estilos nos arquivos CSS especificam a aparência da barra de ferramentas. *fscVCSS* é uma folha de estilos de uma barra de ferramentas vertical, que é exibida à esquerda do formulário HTML renderizado. *fscIECSS* é uma folha de estilos usada para formulários HTML que são renderizados no Internet Explorer.
+fscCSS é uma folha de estilos associada a um nó específico. Os estilos nos arquivos CSS especificam a aparência da barra de ferramentas. *fscVCSS* é uma folha de estilos de uma barra de ferramentas vertical, que é exibida à esquerda do formulário HTML renderizado. *fscICES* é uma folha de estilos usada para formulários HTML que são renderizados no Internet Explorer.
 
-Verifique se todos os arquivos acima estão referenciados no arquivo fscmenu.xml. Ou seja, no arquivo fscmenu.xml, especifique os locais de URI para apontar para esses arquivos para que o serviço Forms possa localizá-los. Por padrão, esses arquivos estão disponíveis em locais URI, começando com palavras-chave internas `FSWebRoot` ou `ApplicationWebRoot`.
+Verifique se todos os arquivos acima estão referenciados no arquivo fscmenu.xml. Ou seja, no arquivo fscmenu.xml, especifique os locais de URI para apontar para esses arquivos para que o serviço Forms possa localizá-los. Por padrão, esses arquivos estão disponíveis em locais URI começando com palavras-chave internas `FSWebRoot` ou `ApplicationWebRoot`.
 
 Para personalizar a barra de ferramentas, substitua as palavras-chave usando a palavra-chave externa `FSToolBarURI`. Essa palavra-chave representa o URI passado para o serviço Forms no tempo de execução (essa abordagem é mostrada posteriormente nesta seção).
 
-Você também pode especificar os locais absolutos desses arquivos JS e CSS, como https://www.mycompany.com/scripts/misc/fscmenu.js. Nessa situação, não é necessário usar a variável `FSToolBarURI` palavra-chave.
+Você também pode especificar os locais absolutos desses arquivos JS e CSS, como https://www.mycompany.com/scripts/misc/fscmenu.js. Nessa situação, não é necessário usar a palavra-chave `FSToolBarURI`.
 
 >[!NOTE]
 >
->Não é recomendável misturar as maneiras pelas quais esses arquivos são referenciados. Ou seja, todos os URIs devem ser referenciados usando o `FSToolBarURI` palavra-chave ou um local absoluto.
+>Não é recomendável misturar as maneiras pelas quais esses arquivos são referenciados. Ou seja, todos os URIs devem ser referenciados usando a palavra-chave `FSToolBarURI` ou um local absoluto.
 
-Você pode obter os arquivos JS e CSS abrindo o&lt;appserver>arquivo .ear. Neste arquivo, abra o adobe-forms-res.war. Todos esses arquivos estão no arquivo WAR. Os formulários adobe-&lt;appserver>O arquivo .ear está na pasta de instalação dos formulários AEM (C:\ é o diretório de instalação). Você pode abrir os formulários adobe-&lt;appserver>.ear usando uma ferramenta de extração de arquivos, como o WinRAR.
+Você pode obter os arquivos JS e CSS abrindo o arquivo adobe-forms-&lt;appserver>.ear. Neste arquivo, abra o adobe-forms-res.war. Todos esses arquivos estão no arquivo WAR. O arquivo adobe-forms-&lt;appserver>.ear está na pasta de instalação do AEM forms (C:\ é o diretório de instalação). Você pode abrir o adobe-forms-&lt;appserver>.ear usando uma ferramenta de extração de arquivos, como o WinRAR.
 
 A sintaxe XML a seguir mostra um arquivo fscmenu.xml de exemplo.
 
@@ -97,12 +97,12 @@ A sintaxe XML a seguir mostra um arquivo fscmenu.xml de exemplo.
 
 Os itens a seguir descrevem como personalizar uma barra de ferramentas:
 
-* Altere os valores de `fscJS`, `fscCSS`, `fscVCSS`, `fscIECSS` atributos (no arquivo fscmenu.xml) para refletir as localizações personalizadas dos arquivos referenciados usando um dos métodos descritos nesta seção (por exemplo, `fscJS="FSToolBarURI/scripts/fscmenu.js"`).
+* Altere os valores dos atributos `fscJS`, `fscCSS`, `fscVCSS`, `fscIECSS` (no arquivo fscmenu.xml) para refletir os locais personalizados dos arquivos referenciados usando um dos métodos descritos nesta seção (por exemplo, `fscJS="FSToolBarURI/scripts/fscmenu.js"`).
 * Todos os arquivos CSS e JS devem ser especificados. Se nenhum dos arquivos for modificado, forneça o padrão no local personalizado. Você pode obter os arquivos padrão abrindo vários arquivos conforme descrito nesta seção.
 * É permitido fornecer uma referência absoluta (por exemplo, https://www.example.com/scripts/custom-vertical-fscmenu.css) para qualquer arquivo.
-* Os arquivos JS e CSS que o `div#fscmenu` Os requisitos do nó são essenciais para a funcionalidade da barra de ferramentas. Indivíduo `ul#fscmenuItem` Os nós podem ou não ter arquivos JS ou CSS compatíveis.
+* Os arquivos JS e CSS exigidos pelo nó `div#fscmenu` são essenciais para a funcionalidade da barra de ferramentas. Os nós `ul#fscmenuItem` individuais podem ou não ter arquivos JS ou CSS compatíveis.
 
-**Alteração do valor local**
+**Alterando o valor local**
 
 Como parte da personalização de uma barra de ferramentas, você pode alterar o valor do local da barra de ferramentas. Ou seja, você pode exibi-lo em outro idioma. A ilustração a seguir mostra uma barra de ferramentas personalizada que é exibida em francês.
 
@@ -149,13 +149,13 @@ Para alterar o valor do local de uma barra de ferramentas, verifique se o arquiv
 >
 >Os Quick Starts associados a esta seção usam este arquivo XML para exibir uma barra de ferramentas personalizada em francês, como mostrado na ilustração anterior.
 
-Além disso, especifique um valor de localidade válido chamando o `HTMLRenderSpec` do objeto `setLocale` e transmitindo um valor de string que especifica o valor do local. Por exemplo, passe `fr_FR` para especificar francês. O serviço Forms é fornecido com barras de ferramentas localizadas.
+Além disso, especifique um valor de localidade válido chamando o método `setLocale` do objeto `HTMLRenderSpec` e transmitindo um valor de cadeia de caracteres que especifique o valor de localidade. Por exemplo, passe `fr_FR` para especificar francês. O serviço Forms é fornecido com barras de ferramentas localizadas.
 
 >[!NOTE]
 >
 >Antes de renderizar um formulário HTML que usa uma barra de ferramentas personalizada, você deve saber como os formulários HTML são renderizados. (Consulte [Renderização do Forms como HTML](/help/forms/developing/rendering-forms-html.md).)
 
-Para obter mais informações sobre o serviço Forms, consulte [Referência de serviços para o AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+Para obter mais informações sobre o serviço Forms, consulte [Referência de serviços para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Resumo das etapas {#summary-of-steps}
 
@@ -171,21 +171,21 @@ Para renderizar um formulário HTML que contenha uma barra de ferramentas person
 
 Inclua os arquivos necessários no projeto de desenvolvimento. Se você estiver criando uma aplicação cliente usando Java, inclua os arquivos JAR necessários. Se você estiver usando serviços da Web, inclua os arquivos proxy.
 
-**Criar um objeto de API Java do Forms**
+**Criar um objeto da API Java do Forms**
 
 Antes de executar programaticamente uma operação que o serviço Forms suporta, você deve criar um objeto cliente Forms.
 
-**Referência a um arquivo XML personalizado do fscmenu**
+**Referenciar um arquivo XML fscmenu personalizado**
 
-Para renderizar um formulário HTML que contém uma barra de ferramentas personalizada, consulte um arquivo XML fscmenu que descreve a barra de ferramentas. (Esta seção fornece dois exemplos de um arquivo XML fscmenu.) Além disso, certifique-se de que o arquivo fscmenu.xml especifique os locais de todos os arquivos referenciados corretamente. Como mencionado anteriormente nesta seção, verifique se todos os arquivos são referenciados pelo `FSToolBarURI` ou seus locais absolutos.
+Para renderizar um formulário HTML que contém uma barra de ferramentas personalizada, consulte um arquivo XML fscmenu que descreve a barra de ferramentas. (Esta seção fornece dois exemplos de um arquivo XML fscmenu.) Além disso, certifique-se de que o arquivo fscmenu.xml especifique os locais de todos os arquivos referenciados corretamente. Como mencionado anteriormente nesta seção, verifique se todos os arquivos são referenciados pela palavra-chave `FSToolBarURI` ou por seus locais absolutos.
 
-**Renderizar um formulário HTML**
+**Renderizar um formulário de HTML**
 
 Para renderizar um formulário HTML, especifique um design de formulário que foi criado no Designer e salvo como um arquivo XDP. Selecione também um tipo de transformação de HTML. Por exemplo, você pode especificar o tipo de transformação de HTML que renderiza um HTML dinâmico para o Internet Explorer 5.0 ou posterior.
 
 A renderização de um formulário HTML também requer valores, como valores de URI para renderização de outros tipos de formulário.
 
-**Gravar o fluxo de dados do formulário no navegador Web cliente**
+**Gravar o fluxo de dados de formulário no navegador Web cliente**
 
 Quando o serviço Forms renderiza um formulário HTML, ele retorna um fluxo de dados de formulário que você deve gravar no navegador da Web do cliente para tornar o formulário HTML visível para os usuários.
 
@@ -217,43 +217,43 @@ Renderize um formulário HTML que contenha uma barra de ferramentas personalizad
 
 1. Criar um objeto de API Java do Forms
 
-   * Criar um `ServiceClientFactory` objeto que contém propriedades de conexão.
-   * Criar um `FormsServiceClient` usando seu construtor e transmitindo o `ServiceClientFactory` objeto.
+   * Crie um objeto `ServiceClientFactory` que contenha propriedades de conexão.
+   * Crie um objeto `FormsServiceClient` usando seu construtor e transmitindo o objeto `ServiceClientFactory`.
 
 1. Referência a um arquivo XML personalizado do fscmenu
 
-   * Criar um `HTMLRenderSpec` usando seu construtor.
-   * Para renderizar um formulário HTML com uma barra de ferramentas, chame o `HTMLRenderSpec` do objeto `setHTMLToolbar` e transmita um `HTMLToolbar` valor de enumeração. Por exemplo, para exibir uma barra de ferramentas HTML vertical, passe `HTMLToolbar.Vertical`.
-   * Especifique o local do arquivo XML fscmenu chamando o `HTMLRenderSpec` do objeto `setToolbarURI` e transmitindo um valor de string que especifica a localização do URI do arquivo XML.
-   * Se aplicável, defina o valor do local chamando o botão `HTMLRenderSpec` do objeto `setLocale` e transmitindo um valor de string que especifica o valor do local. O valor padrão é inglês.
+   * Crie um objeto `HTMLRenderSpec` usando seu construtor.
+   * Para renderizar um formulário HTML com uma barra de ferramentas, chame o método `setHTMLToolbar` do objeto `HTMLRenderSpec` e passe um valor enum `HTMLToolbar`. Por exemplo, para exibir uma barra de ferramentas HTML vertical, passe `HTMLToolbar.Vertical`.
+   * Especifique o local do arquivo XML fscmenu invocando o método `setToolbarURI` do objeto `HTMLRenderSpec` e transmitindo um valor de cadeia de caracteres que especifica o local URI do arquivo XML.
+   * Se aplicável, defina o valor da localidade chamando o método `setLocale` do objeto `HTMLRenderSpec` e transmitindo um valor de cadeia de caracteres que especifica o valor da localidade. O valor padrão é inglês.
 
    >[!NOTE]
    >
-   >Os Quick Starts associados a esta seção definem este valor como `fr_FR`*.*
+   >O Início Rápido associado a esta seção define este valor como `fr_FR`*.*
 
 1. Renderizar um formulário HTML
 
-   Chame o `FormsServiceClient` do objeto `renderHTMLForm` e passe os seguintes valores:
+   Chame o método `renderHTMLForm` do objeto `FormsServiceClient` e passe os seguintes valores:
 
-   * Um valor de cadeia de caracteres que especifica o nome de design do formulário, incluindo a extensão de nome de arquivo. Se você fizer referência a um design de formulário que faz parte de um aplicativo do Forms, certifique-se de especificar o caminho completo, como `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
-   * A `TransformTo` valor de enumeração que especifica o tipo de preferência HTML. Por exemplo, para renderizar um formulário de HTML que seja compatível com o HTML dinâmico para o Internet Explorer 5.0 ou posterior, especifique `TransformTo.MSDHTML`.
-   * A `com.adobe.idp.Document` objeto que contém dados a serem mesclados com o formulário. Se não quiser mesclar dados, passe uma tag vazia `com.adobe.idp.Document` objeto.
-   * A variável `HTMLRenderSpec` objeto que armazena opções de tempo de execução de HTML.
-   * Um valor de string que especifica a `HTTP_USER_AGENT` valor do cabeçalho, como `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
-   * A `URLSpec` objeto que armazena valores de URI necessários para renderizar um formulário HTML.
-   * A `java.util.HashMap` objeto que armazena anexos de arquivo. Este é um parâmetro opcional, e você pode especificar `null` se não quiser anexar arquivos ao formulário.
+   * Um valor de cadeia de caracteres que especifica o nome de design do formulário, incluindo a extensão de nome de arquivo. Se você referenciar um design de formulário que faça parte de um aplicativo do Forms, certifique-se de especificar o caminho completo, como `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
+   * Um valor de enumeração `TransformTo` que especifica o tipo de preferência HTML. Por exemplo, para renderizar um formulário de HTML que seja compatível com o HTML dinâmico para o Internet Explorer 5.0 ou posterior, especifique `TransformTo.MSDHTML`.
+   * Um objeto `com.adobe.idp.Document` que contém dados para mesclar com o formulário. Se não quiser mesclar dados, passe um objeto `com.adobe.idp.Document` vazio.
+   * O objeto `HTMLRenderSpec` que armazena opções de tempo de execução de HTML.
+   * Um valor de cadeia de caracteres que especifica o valor do cabeçalho `HTTP_USER_AGENT`, como `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
+   * Um objeto `URLSpec` que armazena valores de URI necessários para renderizar um formulário HTML.
+   * Um objeto `java.util.HashMap` que armazena anexos de arquivo. Este é um parâmetro opcional, e você pode especificar `null` se não quiser anexar arquivos ao formulário.
 
-   A variável `renderHTMLForm` o método retorna um `FormsResult` objeto que contém um fluxo de dados de formulário que deve ser gravado no navegador da web do cliente.
+   O método `renderHTMLForm` retorna um objeto `FormsResult` que contém um fluxo de dados de formulário que deve ser gravado no navegador Web cliente.
 
 1. Gravar o fluxo de dados do formulário no navegador Web cliente
 
-   * Criar um `com.adobe.idp.Document` ao invocar o `FormsResult` object&#39;s `getOutputContent` método.
-   * Obter o tipo de conteúdo do `com.adobe.idp.Document` ao invocar seu `getContentType` método.
-   * Defina o `javax.servlet.http.HttpServletResponse` tipo de conteúdo do objeto chamando seu `setContentType` e transmitindo o tipo de conteúdo do `com.adobe.idp.Document` objeto.
-   * Criar um `javax.servlet.ServletOutputStream` objeto usado para gravar o fluxo de dados de formulário no navegador da web cliente, chamando o `javax.servlet.http.HttpServletResponse` do objeto `getOutputStream` método.
-   * Criar um `java.io.InputStream` ao invocar o `com.adobe.idp.Document` do objeto `getInputStream` método.
-   * Crie uma matriz de bytes e preencha-a com o fluxo de dados de formulário chamando o `InputStream` do objeto `read` e transmitindo a matriz de bytes como um argumento.
-   * Chame o `javax.servlet.ServletOutputStream` do objeto `write` para enviar o fluxo de dados de formulário para o navegador web cliente. Passe a matriz de bytes para o `write` método.
+   * Crie um objeto `com.adobe.idp.Document` invocando o método `getOutputContent` do objeto `FormsResult`.
+   * Obtenha o tipo de conteúdo do objeto `com.adobe.idp.Document` invocando seu método `getContentType`.
+   * Defina o tipo de conteúdo do objeto `javax.servlet.http.HttpServletResponse` invocando seu método `setContentType` e transmitindo o tipo de conteúdo do objeto `com.adobe.idp.Document`.
+   * Crie um objeto `javax.servlet.ServletOutputStream` que seja usado para gravar o fluxo de dados de formulário no navegador da Web cliente, chamando o método `getOutputStream` do objeto `javax.servlet.http.HttpServletResponse`.
+   * Crie um objeto `java.io.InputStream` invocando o método `getInputStream` do objeto `com.adobe.idp.Document`.
+   * Crie uma matriz de bytes e preencha-a com o fluxo de dados de formulário, chamando o método `read` do objeto `InputStream` e transmitindo a matriz de bytes como argumento.
+   * Invoque o método `write` do objeto `javax.servlet.ServletOutputStream` para enviar o fluxo de dados de formulário para o navegador da Web cliente. Passar a matriz de bytes para o método `write`.
 
 **Consulte também**
 
@@ -274,48 +274,48 @@ Renderize um formulário HTML que contenha uma barra de ferramentas personalizad
 
 1. Criar um objeto de API Java do Forms
 
-   Criar um `FormsService` objeto e definir valores de autenticação.
+   Crie um objeto `FormsService` e defina valores de autenticação.
 
 1. Referência a um arquivo XML personalizado do fscmenu
 
-   * Criar um `HTMLRenderSpec` usando seu construtor.
-   * Para renderizar um formulário HTML com uma barra de ferramentas, chame o `HTMLRenderSpec` do objeto `setHTMLToolbar` e transmita um `HTMLToolbar` valor de enumeração. Por exemplo, para exibir uma barra de ferramentas HTML vertical, passe `HTMLToolbar.Vertical`.
-   * Especifique o local do arquivo XML fscmenu chamando o `HTMLRenderSpec` do objeto `setToolbarURI` e transmitindo um valor de string que especifica a localização do URI do arquivo XML.
-   * Se aplicável, defina o valor do local chamando o botão `HTMLRenderSpec` do objeto `setLocale` e transmitindo um valor de string que especifica o valor do local. O valor padrão é inglês.
+   * Crie um objeto `HTMLRenderSpec` usando seu construtor.
+   * Para renderizar um formulário HTML com uma barra de ferramentas, chame o método `setHTMLToolbar` do objeto `HTMLRenderSpec` e passe um valor enum `HTMLToolbar`. Por exemplo, para exibir uma barra de ferramentas HTML vertical, passe `HTMLToolbar.Vertical`.
+   * Especifique o local do arquivo XML fscmenu invocando o método `setToolbarURI` do objeto `HTMLRenderSpec` e transmitindo um valor de cadeia de caracteres que especifica o local URI do arquivo XML.
+   * Se aplicável, defina o valor da localidade chamando o método `setLocale` do objeto `HTMLRenderSpec` e transmitindo um valor de cadeia de caracteres que especifica o valor da localidade. O valor padrão é inglês.
 
    >[!NOTE]
    >
-   >Os Quick Starts associados a esta seção definem este valor como `fr_FR`*.*
+   >O Início Rápido associado a esta seção define este valor como `fr_FR`*.*
 
 1. Renderizar um formulário HTML
 
-   Chame o `FormsService` do objeto `renderHTMLForm` e passe os seguintes valores:
+   Chame o método `renderHTMLForm` do objeto `FormsService` e passe os seguintes valores:
 
-   * Um valor de cadeia de caracteres que especifica o nome de design do formulário, incluindo a extensão de nome de arquivo. Se você fizer referência a um design de formulário que faz parte de um aplicativo do Forms, certifique-se de especificar o caminho completo, como `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
-   * A `TransformTo` valor de enumeração que especifica o tipo de preferência HTML. Por exemplo, para renderizar um formulário de HTML que seja compatível com o HTML dinâmico para o Internet Explorer 5.0 ou posterior, especifique `TransformTo.MSDHTML`.
-   * A `BLOB` objeto que contém dados a serem mesclados com o formulário. Se não quiser mesclar dados, transmita `null`.
-   * A variável `HTMLRenderSpec` objeto que armazena opções de tempo de execução de HTML.
-   * Um valor de string que especifica a `HTTP_USER_AGENT` valor do cabeçalho, como `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322`). Você pode passar uma string vazia se não quiser definir esse valor.
-   * A `URLSpec` objeto que armazena valores de URI necessários para renderizar um formulário HTML.
-   * A `java.util.HashMap` objeto que armazena anexos de arquivo. Esse parâmetro é opcional, e você pode especificar `null` caso não pretenda anexar arquivos ao formulário.
-   * Um vazio `com.adobe.idp.services.holders.BLOBHolder` objeto que é preenchido pelo `renderHTMLForm` método. Esse valor de parâmetro armazena o formulário renderizado.
-   * Um vazio `com.adobe.idp.services.holders.BLOBHolder` objeto que é preenchido pelo `renderHTMLForm` método. Esse parâmetro armazena os dados XML de saída.
-   * Um vazio `javax.xml.rpc.holders.LongHolder` objeto que é preenchido pelo `renderHTMLForm` método. Esse argumento armazena o número de páginas no formulário.
-   * Um vazio `javax.xml.rpc.holders.StringHolder` objeto que é preenchido pelo `renderHTMLForm` método. Esse argumento armazena o valor do local.
-   * Um vazio `javax.xml.rpc.holders.StringHolder` objeto que é preenchido pelo `renderHTMLForm` método. Esse argumento armazena o valor de renderização do HTML usado.
-   * Um vazio `com.adobe.idp.services.holders.FormsResultHolder` objeto que conterá os resultados desta operação.
+   * Um valor de cadeia de caracteres que especifica o nome de design do formulário, incluindo a extensão de nome de arquivo. Se você referenciar um design de formulário que faça parte de um aplicativo do Forms, certifique-se de especificar o caminho completo, como `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
+   * Um valor de enumeração `TransformTo` que especifica o tipo de preferência HTML. Por exemplo, para renderizar um formulário de HTML que seja compatível com o HTML dinâmico para o Internet Explorer 5.0 ou posterior, especifique `TransformTo.MSDHTML`.
+   * Um objeto `BLOB` que contém dados para mesclar com o formulário. Se não quiser mesclar dados, passe `null`.
+   * O objeto `HTMLRenderSpec` que armazena opções de tempo de execução de HTML.
+   * Um valor de cadeia de caracteres que especifica o valor do cabeçalho `HTTP_USER_AGENT` (como `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322`). Você pode passar uma string vazia se não quiser definir esse valor.
+   * Um objeto `URLSpec` que armazena valores de URI necessários para renderizar um formulário HTML.
+   * Um objeto `java.util.HashMap` que armazena anexos de arquivo. Este parâmetro é opcional, e você pode especificar `null` se não pretende anexar arquivos ao formulário.
+   * Um objeto `com.adobe.idp.services.holders.BLOBHolder` vazio preenchido pelo método `renderHTMLForm`. Esse valor de parâmetro armazena o formulário renderizado.
+   * Um objeto `com.adobe.idp.services.holders.BLOBHolder` vazio preenchido pelo método `renderHTMLForm`. Esse parâmetro armazena os dados XML de saída.
+   * Um objeto `javax.xml.rpc.holders.LongHolder` vazio preenchido pelo método `renderHTMLForm`. Esse argumento armazena o número de páginas no formulário.
+   * Um objeto `javax.xml.rpc.holders.StringHolder` vazio preenchido pelo método `renderHTMLForm`. Esse argumento armazena o valor do local.
+   * Um objeto `javax.xml.rpc.holders.StringHolder` vazio preenchido pelo método `renderHTMLForm`. Esse argumento armazena o valor de renderização do HTML usado.
+   * Um objeto `com.adobe.idp.services.holders.FormsResultHolder` vazio que conterá os resultados desta operação.
 
-   A variável `renderHTMLForm` O método preenche o `com.adobe.idp.services.holders.FormsResultHolder` objeto que é passado como o último valor de argumento com um fluxo de dados de formulário que deve ser gravado no navegador da web do cliente.
+   O método `renderHTMLForm` preenche o objeto `com.adobe.idp.services.holders.FormsResultHolder` que é passado como o último valor de argumento com um fluxo de dados de formulário que deve ser gravado no navegador Web cliente.
 
 1. Gravar o fluxo de dados do formulário no navegador Web cliente
 
-   * Criar um `FormResult` obtendo o valor do `com.adobe.idp.services.holders.FormsResultHolder` do objeto `value` membro de dados.
-   * Criar um `BLOB` objeto que contém dados de formulário chamando o `FormsResult` do objeto `getOutputContent` método.
-   * Obter o tipo de conteúdo do `BLOB` ao invocar seu `getContentType` método.
-   * Defina o `javax.servlet.http.HttpServletResponse` tipo de conteúdo do objeto chamando seu `setContentType` e transmitindo o tipo de conteúdo do `BLOB` objeto.
-   * Criar um `javax.servlet.ServletOutputStream` objeto usado para gravar o fluxo de dados de formulário no navegador da web cliente, chamando o `javax.servlet.http.HttpServletResponse` do objeto `getOutputStream` método.
-   * Crie uma matriz de bytes e preencha-a chamando o `BLOB` do objeto `getBinaryData` método. Esta tarefa atribui o conteúdo do `FormsResult` à matriz de bytes.
-   * Chame o `javax.servlet.http.HttpServletResponse` do objeto `write` para enviar o fluxo de dados de formulário para o navegador web cliente. Passe a matriz de bytes para o `write` método.
+   * Crie um objeto `FormResult` obtendo o valor do membro de dados `value` do objeto `com.adobe.idp.services.holders.FormsResultHolder`.
+   * Crie um objeto `BLOB` que contenha dados de formulário invocando o método `getOutputContent` do objeto `FormsResult`.
+   * Obtenha o tipo de conteúdo do objeto `BLOB` invocando seu método `getContentType`.
+   * Defina o tipo de conteúdo do objeto `javax.servlet.http.HttpServletResponse` invocando seu método `setContentType` e transmitindo o tipo de conteúdo do objeto `BLOB`.
+   * Crie um objeto `javax.servlet.ServletOutputStream` que seja usado para gravar o fluxo de dados de formulário no navegador da Web cliente, chamando o método `getOutputStream` do objeto `javax.servlet.http.HttpServletResponse`.
+   * Crie uma matriz de bytes e preencha-a chamando o método `getBinaryData` do objeto `BLOB`. Esta tarefa atribui o conteúdo do objeto `FormsResult` à matriz de bytes.
+   * Invoque o método `write` do objeto `javax.servlet.http.HttpServletResponse` para enviar o fluxo de dados de formulário para o navegador da Web cliente. Passar a matriz de bytes para o método `write`.
 
 **Consulte também**
 

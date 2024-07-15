@@ -29,9 +29,9 @@ Para uma demonstração simples, um recurso visual, o avatar mostrado do usuári
 
 ## Modificar os scripts HBS {#modify-the-hbs-scripts}
 
-Usar [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
+Usando [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
 
-* Abertura [/apps/custom/components/comments/comment/**comentário.hbs**](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comment/comment.hbs)
+* Abrir [/apps/custom/components/comments/comment/**comment.hbs**](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comment/comment.hbs)
 
    * Comente a tag que inclui o avatar em uma postagem de comentário (~ linha 21):
 
@@ -41,7 +41,7 @@ Usar [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
         -->
      ```
 
-* Abertura [/apps/custom/components/comments/**comentários.hbs**](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comments.hbs)
+* Abrir [/apps/custom/components/comments/**comments.hbs**](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comments.hbs)
 
    * Comente a tag que inclui o avatar na próxima entrada de comentário (~ linha 44):
 
@@ -51,7 +51,7 @@ Usar [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
         -->
      ```
 
-* Selecionar **Salvar tudo**
+* Selecione **Salvar tudo**
 
 ### Replicar aplicativo personalizado {#replicate-custom-app}
 
@@ -61,17 +61,17 @@ Uma maneira de fazer isso é:
 
 * No menu principal
 
-   * Selecionar **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > **[!UICONTROL Replicação]**.
-   * Selecionar **[!UICONTROL Ativar árvore]**.
-   * Definir `Start Path` para `/apps/custom`.
-   * Desmarcar **[!UICONTROL Somente modificados]**.
-   * Selecionar **[!UICONTROL Ativar]** botão.
+   * Selecione **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > **[!UICONTROL Replicação]**.
+   * Selecione **[!UICONTROL Ativar árvore]**.
+   * Defina `Start Path` como `/apps/custom`.
+   * Desmarque **[!UICONTROL Somente modificados]**.
+   * Selecione o botão **[!UICONTROL Ativar]**.
 
 ### Exibir comentário modificado na página de exemplo publicada {#view-modified-comment-on-published-sample-page}
 
-[Continuar a experiência](/help/communities/extend-sample-page.md#publish-sample-page) na instância de publicação, ainda conectada como o mesmo usuário, agora é possível atualizar a página no ambiente de publicação para exibir a modificação para remover o avatar:
+[Continuando a experiência](/help/communities/extend-sample-page.md#publish-sample-page) na instância de publicação, ainda conectada como o mesmo usuário, agora é possível atualizar a página no ambiente de publicação para exibir a modificação para remover o avatar:
 
-![view-modified-content](assets/view-modified-content.png)
+![exibir-conteúdo-modificado](assets/view-modified-content.png)
 
 ### Exemplo de pacote de extensão de comentário {#sample-comment-extension-package}
 

@@ -37,14 +37,14 @@ Os processos de negócios que sua organização estabeleceu podem ser representa
 >
 >Para obter mais informações, consulte:
 >
->* Aplicar e participar de fluxos de trabalho: [Trabalhar com fluxos de trabalho](/help/sites-authoring/workflows.md).
->* Criação de modelos de workflow e extensão da funcionalidade do workflow: [Desenvolvimento e extensão de workflows](/help/sites-developing/workflows.md).
->* Melhorar o desempenho de workflows que usam recursos significativos do servidor: [Processamento de fluxo de trabalho simultâneo](/help/sites-deploying/configuring-performance.md#concurrent-workflow-processing).
+>* Aplicando e participando de fluxos de trabalho: [Trabalhando com fluxos de trabalho](/help/sites-authoring/workflows.md).
+>* Criação de modelos de fluxo de trabalho e extensão da funcionalidade do fluxo de trabalho: [Desenvolvimento e extensão de Fluxos de Trabalho](/help/sites-developing/workflows.md).
+>* Melhorando o desempenho de fluxos de trabalho que usam recursos significativos do servidor: [Processamento de Fluxo de Trabalho Simultâneo](/help/sites-deploying/configuring-performance.md#concurrent-workflow-processing).
 >
 
 ## Modelos e instâncias de fluxo de trabalho {#workflow-models-and-instances}
 
-[Modelos de fluxo de trabalho](/help/sites-developing/workflows.md#model) no AEM são a representação e a implementação de processos comerciais:
+[Os modelos de fluxo de trabalho](/help/sites-developing/workflows.md#model) no AEM são a representação e a implementação de processos comerciais:
 
 * Normalmente, eles agem em páginas ou ativos para alcançar um resultado específico.
 * Essas páginas e/ou ativos são chamados de carga de fluxo de trabalho.
@@ -55,7 +55,7 @@ Quando um modelo de fluxo de trabalho é iniciado (executado), uma instância de
 
 >[!CAUTION]
 >
->As etapas executadas são aquelas definidas pelo modelo de fluxo de trabalho *no momento em que a instância é gerada*. Consulte [Desenvolvimento de fluxos de trabalho](/help/sites-developing/workflows.md#model) para obter mais detalhes.
+>As etapas executadas são aquelas definidas pelo modelo de fluxo de trabalho *no momento em que a instância é gerada*. Consulte [Desenvolvendo fluxos de trabalho](/help/sites-developing/workflows.md#model) para obter mais detalhes.
 
 As instâncias de fluxo de trabalho avançam pelo seguinte ciclo de vida:
 
@@ -89,24 +89,24 @@ Um usuário ou serviço executa etapas de fluxo de trabalho, dependendo do tipo 
 
 Um workflow pode ter um dos seguintes status:
 
-* **EM EXECUÇÃO**: a instância do workflow está em execução.
-* **CONCLUÍDO**: a instância do fluxo de trabalho foi encerrada com êxito.
+* **EM EXECUÇÃO**: a instância do fluxo de trabalho está em execução.
+* **CONCLUÍDO**: a instância do fluxo de trabalho foi finalizada com êxito.
 
-* **SUSPENSO**: marca o workflow como suspenso. No entanto, consulte a Nota de advertência abaixo sobre um problema conhecido nesse estado.
-* **ANULADO**: a instância do workflow foi encerrada.
-* **OBSOLETO**: a progressão da instância de fluxo de trabalho exige que um trabalho em segundo plano seja executado, no entanto, o trabalho não pode ser encontrado no sistema. Essa situação pode ocorrer quando ocorre um erro ao executar o workflow.
+* **SUSPENSO**: marca o fluxo de trabalho como suspenso. No entanto, consulte a Nota de advertência abaixo sobre um problema conhecido nesse estado.
+* **ANULADO**: a instância do fluxo de trabalho foi encerrada.
+* **STALE**: a progressão da instância do fluxo de trabalho requer que um trabalho em segundo plano seja executado, no entanto, o trabalho não pode ser encontrado no sistema. Essa situação pode ocorrer quando ocorre um erro ao executar o workflow.
 
 >[!NOTE]
 >
->Quando a execução de uma Etapa do processo resulta em erros, a etapa é exibida na Caixa de entrada do administrador e o status do fluxo de trabalho é **EM EXECUÇÃO**.
+>Quando a execução de uma Etapa do processo resulta em erros, a etapa aparece na Caixa de Entrada do administrador e o status do fluxo de trabalho é **EM EXECUÇÃO**.
 
 Dependendo do status, você pode executar ações em instâncias de fluxo de trabalho em execução quando é necessário intervir no progresso normal de uma instância de fluxo de trabalho:
 
-* **Suspender**: a suspensão altera o estado do workflow para Suspenso. Consulte Cuidado abaixo:
+* **Suspender**: a suspensão altera o estado do fluxo de trabalho para Suspenso. Consulte Cuidado abaixo:
 
 >[!CAUTION]
 >
 >Marcar um estado de workflow como &quot;Suspender&quot; tem um problema conhecido. Nesse estado, é possível agir em itens de fluxo de trabalho suspensos em uma Caixa de entrada.
 
-* **Retomar**: reinicia um workflow suspenso no mesmo ponto de execução em que ele foi suspenso, usando a mesma configuração.
-* **Encerrar**: encerra a execução do workflow e altera o estado para **ANULADO**. Uma instância de fluxo de trabalho anulada não pode ser reiniciada.
+* **Retomar**: reinicia um fluxo de trabalho suspenso no mesmo ponto de execução, usando a mesma configuração.
+* **Encerrar**: encerra a execução do fluxo de trabalho e altera o estado para **ANULADO**. Uma instância de fluxo de trabalho anulada não pode ser reiniciada.

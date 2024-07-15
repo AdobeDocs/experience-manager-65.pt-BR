@@ -26,11 +26,11 @@ Ao sincronizar o aplicativo com o servidor do AEM Forms, todos os formulários e
 
 A solução de aplicativo pronta para uso do AEM Forms não baixa os anexos associados a cada formulário quando o aplicativo é sincronizado.
 
-Na guia General, altere as configurações de download de anexos, modo offline, tela de aterrissagem, salvamento automático e sincronização. Você pode alterar a [Tela inicial](../../forms/using/home-screen.md) do seu aplicativo.
+Na guia General, altere as configurações de download de anexos, modo offline, tela de aterrissagem, salvamento automático e sincronização. Você pode alterar a [tela inicial](../../forms/using/home-screen.md) do seu aplicativo.
 
-**Acesse a guia Geral na tela Configurações**
+**Navegue até a guia Geral na tela Configurações**
 
-1. Para ir até a tela Configuração, selecione o botão Menu no canto superior esquerdo da tela inicial e clique em Selecionar **Configurações**.
+1. Para ir para a tela Configuração, selecione o botão Menu no canto superior esquerdo da tela inicial e selecione **Configurações**.
 1. Na tela Settings, selecione a guia General.
 
    ![Configurações gerais no aplicativo AEM Forms](assets/gen-settings-1.png)
@@ -45,20 +45,20 @@ Na guia General, altere as configurações de download de anexos, modo offline, 
 
 Você pode fazer as seguintes alterações nas configurações do seu aplicativo.
 
-* **Buscar anexos da tarefa**: para especificar se os anexos associados devem ser baixados quando cada tarefa for baixada no aplicativo.
-* **Modo offline**: para ativar ou desativar o serviço offline para o aplicativo AEM Forms. Consulte [Trabalhar no modo offline](/help/forms/using/work-offline-mode.md) para obter detalhes.
-* **Landing screen**: Para definir o local inicial ([Tela inicial](../../forms/using/home-screen.md)) para o aplicativo.
+* **Buscar anexos de tarefa**: para especificar se os anexos associados devem ser baixados quando cada tarefa for baixada no aplicativo.
+* **Modo offline**: para habilitar ou desabilitar o serviço offline para o aplicativo AEM Forms. Consulte [Trabalhando no modo offline](/help/forms/using/work-offline-mode.md) para obter detalhes.
+* **Tela de aterrissagem**: para definir o local de início ([Tela inicial](../../forms/using/home-screen.md)) do aplicativo.
 Opções disponíveis:
 
    * Forms
    * Tarefas
    * Favoritos
 
-* **Categoria padrão**: permite selecionar a categoria de formulários para mostrar na tela inicial. Ao selecionar Tudo, você pode ver todos os formulários na tela inicial. As categorias são preenchidas com base nos formulários carregados no aplicativo. Os Forms estão disponíveis no aplicativo com base nas configurações de formulário especificadas no servidor do AEM Forms.
+* **Categoria padrão**: permite que você selecione a categoria de formulários a serem exibidos na tela inicial. Ao selecionar Tudo, você pode ver todos os formulários na tela inicial. As categorias são preenchidas com base nos formulários carregados no aplicativo. Os Forms estão disponíveis no aplicativo com base nas configurações de formulário especificadas no servidor do AEM Forms.
 
-* **Frequência de salvamento automático**: Para definir a frequência com que seus [o aplicativo móvel salva dados de formulário](../../forms/using/autosave-data-app.md) localmente.
-* **Frequência de sincronização**: Para definir a frequência com que seus [o aplicativo móvel está sincronizado](../../forms/using/sync-app.md) com o servidor do AEM Forms no modo online.
-  **Limpar dados locais**: limpe o banco de dados, incluindo as configurações e os dados locais para todos os usuários e o armazenamento de arquivos do dispositivo.
+* **Frequência de Salvamento Automático**: Para definir a frequência na qual seu [aplicativo para dispositivos móveis salva dados de formulário](../../forms/using/autosave-data-app.md) localmente.
+* **Frequência de Sincronização**: para definir a frequência com que seu [aplicativo móvel é sincronizado](../../forms/using/sync-app.md) com o servidor AEM Forms no modo online.
+  **Limpar Dados Locais**: Limpa o banco de dados, incluindo as configurações e os dados locais de todos os usuários e o armazenamento de arquivos do dispositivo.
 
 >[!NOTE]
 >

@@ -17,7 +17,7 @@ ht-degree: 2%
 
 # Estrutura de aparência para formulários adaptáveis e HTML5 {#appearance-framework-for-adaptive-and-html-forms}
 
-Uso do Forms (formulários adaptáveis e formulários HTML5) [jQuery](https://jquery.com/), [Backbone.js](https://backbonejs.org/) e [Underscore.js](https://underscorejs.org/) bibliotecas para aparência e script. Os formulários também usam o [Interface do jQuery](https://jqueryui.com/) **Widgets** para todos os elementos interativos (como campos e botões) no formulário. Essa arquitetura permite que o desenvolvedor de formulários use um conjunto avançado de widgets e plug-ins jQuery disponíveis no Forms. Você também pode implementar a lógica específica do formulário enquanto captura dados de usuários como restrições leadDigits/trailDigits ou implementa cláusulas de figura. Os desenvolvedores de formulários podem criar e usar aparências personalizadas para melhorar a experiência de captura de dados e torná-la mais fácil de usar.
+O Forms (formulários adaptáveis e formulários HTML5) usa as bibliotecas [jQuery](https://jquery.com/), [Backbone.js](https://backbonejs.org/) e [Underscore.js](https://underscorejs.org/) para aparência e scripts. Os formulários também usam a arquitetura [jQuery UI](https://jqueryui.com/) **Widgets** para todos os elementos interativos (como campos e botões) no formulário. Essa arquitetura permite que o desenvolvedor de formulários use um conjunto avançado de widgets e plug-ins jQuery disponíveis no Forms. Você também pode implementar a lógica específica do formulário enquanto captura dados de usuários como restrições leadDigits/trailDigits ou implementa cláusulas de figura. Os desenvolvedores de formulários podem criar e usar aparências personalizadas para melhorar a experiência de captura de dados e torná-la mais fácil de usar.
 
 Este artigo é para desenvolvedores com conhecimento suficiente de widgets jQuery e jQuery. Ele fornece informações sobre a estrutura de aparência e permite que os desenvolvedores criem uma aparência alternativa para um campo de formulário.
 
@@ -51,7 +51,7 @@ Veja a seguir o conjunto de opções globais. Essas opções estão disponíveis
   </tr>
   <tr>
    <td>screenReaderText</td>
-   <td>Os Reader de tela usam esse valor para narrar informações sobre o campo. O formulário fornece o valor e você pode substituir o valor.<br /> </td>
+   <td>Os Reader de tela usam esse valor para narrar informações sobre o campo. O formulário fornece o valor e você pode substituí-lo.<br /> </td>
   </tr>
   <tr>
    <td>tabIndex</td>
@@ -100,19 +100,19 @@ Para interagir com a estrutura de formulários, um widget aciona alguns eventos 
   </tr>
   <tr>
    <td>XFA_ENTER_EVENT</td>
-   <td>Esse evento é acionado sempre que o campo está em foco. Ele permite que o script "enter" seja executado no campo. A sintaxe para acionar o evento é<br /> (widget)._trigger(xfalib.ut.XfaUtil.prototype.XFA_ENTER_EVENT)<br /> </td>
+   <td>Esse evento é acionado sempre que o campo está em foco. Ele permite que o script "enter" seja executado no campo. A sintaxe para acionar o evento é <br /> (widget)._trigger(xfalib.ut.XfaUtil.prototype.XFA_ENTER_EVENT)<br /> </td>
   </tr>
   <tr>
    <td>XFA_EXIT_EVENT</td>
-   <td>Esse evento é acionado sempre que o usuário deixa o campo. Ele permite que o mecanismo defina o valor do campo e execute seu script "exit". A sintaxe para acionar o evento é<br /> (widget)._trigger(xfalib.ut.XfaUtil.prototype.XFA_EXIT_EVENT)<br /> </td>
+   <td>Esse evento é acionado sempre que o usuário deixa o campo. Ele permite que o mecanismo defina o valor do campo e execute seu script "exit". A sintaxe para acionar o evento é <br /> (widget)._trigger(xfalib.ut.XfaUtil.prototype.XFA_EXIT_EVENT)<br /> </td>
   </tr>
   <tr>
    <td>XFA_CHANGE_EVENT</td>
-   <td>Esse evento é acionado para permitir que o mecanismo execute o script "change" gravado no campo. A sintaxe para acionar o evento é<br /> (widget)._trigger(xfalib.ut.XfaUtil.prototype.XFA_CHANGE_EVENT)<br /> </td>
+   <td>Esse evento é acionado para permitir que o mecanismo execute o script "change" gravado no campo. A sintaxe para acionar o evento é <br /> (widget)._trigger(xfalib.ut.XfaUtil.prototype.XFA_CHANGE_EVENT)<br /> </td>
   </tr>
   <tr>
    <td>XFA_CLICK_EVENT</td>
-   <td>Esse evento é acionado sempre que o campo é clicado. ele permite que o mecanismo execute o script "click" gravado no campo. A sintaxe para acionar o evento é<br /> (widget)._trigger(xfalib.ut.XfaUtil.prototype.XFA_CLICK_EVENT)<br /> </td>
+   <td>Esse evento é acionado sempre que o campo é clicado. ele permite que o mecanismo execute o script "click" gravado no campo. A sintaxe para acionar o evento é <br /> (widget)._trigger(xfalib.ut.XfaUtil.prototype.XFA_CLICK_EVENT)<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -136,11 +136,11 @@ A estrutura de aparência chama algumas funções do widget que são implementad
    <td>Coloca o foco no campo e chama XFA_CLICK_EVENT.</td>
   </tr>
   <tr>
-   <td><p>markError:function(errorMessage, errorType)<br /> <br /> <em>errorMessage: string </em>representando o erro<br /> <em>errorType: string ("aviso"/"erro")</em></p> <p><strong>Nota</strong>: Aplicável somente a formulários HTML5.</p> </td>
+   <td><p>markError:function(errorMessage, errorType)<br /> <br /> <em>errorMessage: cadeia de caracteres </em>representando o erro<br /> <em>errorType: cadeia de caracteres ("aviso"/"erro")</em></p> <p><strong>Observação</strong>: aplicável somente para formulários HTML5.</p> </td>
    <td>Envia uma mensagem de erro e um tipo de erro para o widget. O widget exibe o erro.</td>
   </tr>
   <tr>
-   <td><p>clearError: function()</p> <p><strong>Nota</strong>: Aplicável somente a formulários HTML5.</p> </td>
+   <td><p>clearError: function()</p> <p><strong>Observação</strong>: aplicável somente para formulários HTML5.</p> </td>
    <td>Chamado se os erros no campo forem corrigidos. O widget oculta o erro.</td>
   </tr>
  </tbody>
@@ -167,7 +167,7 @@ Todos os widgets personalizados devem estar em conformidade com as especificaç�
    <td>Número máximo de caracteres que podem ser inseridos no campo.</td>
   </tr>
   <tr>
-   <td><p>limitLengthToVisibleArea</p> <p><strong>Nota</strong>: Aplicável somente a formulários HTML5</p> </td>
+   <td><p>limitLengthToVisibleArea</p> <p><strong>Observação</strong>: Aplicável somente a formulários HTML5</p> </td>
    <td>Especifica o comportamento do campo de texto quando a largura do texto excede a largura do widget.</td>
   </tr>
  </tbody>
@@ -182,24 +182,24 @@ Todos os widgets personalizados devem estar em conformidade com as especificaç�
    <th>Descrição</th>
   </tr>
   <tr>
-   <td>value<br /> </td>
+   <td>valor<br /> </td>
    <td>Matriz de valores selecionados.<br /> </td>
   </tr>
   <tr>
    <td>itens<br /> </td>
-   <td>Matriz de objetos a serem exibidos como opções. Cada objeto contém duas propriedades -<br /> save: valor a ser salvo, display: valor a ser exibido.<br /> <br /> </td>
+   <td>Matriz de objetos a serem exibidos como opções. Cada objeto contém duas propriedades -<br /> save: valor a ser salvo, exibição: valor a ser exibido.<br /> <br /> </td>
   </tr>
   <tr>
-   <td><p>editável</p> <p><strong>Nota</strong>: Aplicável somente a formulários HTML5.<br /> </p> </td>
+   <td><p>editável</p> <p><strong>Observação</strong>: Aplicável somente a formulários HTML5.<br /> </p> </td>
    <td>Se o valor for true, a entrada de texto personalizado será habilitada no widget.<br /> </td>
   </tr>
   <tr>
    <td>displayValue<br /> </td>
-   <td>Matriz de valores a ser exibida.<br /> </td>
+   <td>Matriz de valores a serem exibidos.<br /> </td>
   </tr>
   <tr>
    <td>multiselect<br /> </td>
-   <td>True se várias seleções forem permitidas, caso contrário, false.<br /> </td>
+   <td>Verdadeiro se várias seleções forem permitidas, caso contrário, falso.<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -213,11 +213,11 @@ Todos os widgets personalizados devem estar em conformidade com as especificaç�
    <th>Descrição</th>
   </tr>
   <tr>
-   <td><p>addItem:<em> function(itemValues)<br /> itemValues: objeto que contém a exibição e o valor salvo <br /> {sDisplayVal: &lt;displayvalue&gt;, sSaveVal: &lt;save value=""&gt;}</em></p> </td>
+   <td><p>addItem:<em> function(itemValues)<br /> itemValues: objeto que contém a exibição e o valor salvo <br /> {sDisplayVal: &lt;displayValue&gt;, sSaveVal: &lt;save Value&gt;}</em></p> </td>
    <td>Adiciona um item à lista.</td>
   </tr>
   <tr>
-   <td>deleteItem<em>: função(nIndex)<br /> nIndex: índice do item a ser removido da lista<br /> </em><br /> <br /> </td>
+   <td>deleteItem<em>: function(nIndex)<br /> nIndex: índice do item a ser removido da lista<br /> </em><br /> <br /> </td>
    <td>Exclui uma opção da lista.</td>
   </tr>
   <tr>

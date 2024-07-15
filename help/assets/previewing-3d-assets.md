@@ -43,7 +43,7 @@ A visualização 3D interativa é compatível com os seguintes formatos de arqui
 
 >[!NOTE]
 >
->Se os materiais não renderizam na pré-visualização de um modelo gLTF, certifique-se de que sejam nomeados corretamente e em uma `textures` pasta na mesma pasta raiz do modelo, semelhante ao seguinte:
+>Se os materiais não forem renderizados na pré-visualização de um modelo gLTF, verifique se estão nomeados corretamente e em uma pasta `textures` na mesma pasta raiz do modelo, semelhante ao seguinte:
 
     Ativo (pasta)
     model.gltf
@@ -61,26 +61,26 @@ Além disso, os recursos do computador cliente - como estação de trabalho, not
 **Para visualizar ativos 3D no Experience Manager:**
 
 1. Verifique se você carregou ativos 3D no Experience Manager.
-Consulte [Formatos compatíveis com a visualização 3D](#supported-3d-previewing-assets) e [Fazer upload de ativos](/help/assets/manage-assets.md#uploading-assets).
-1. Do Experience Manager, no **[!UICONTROL Navegação]** selecione **[!UICONTROL Assets]** > **[!UICONTROL Arquivos]**.
+Consulte [Formatos compatíveis com a visualização 3D](#supported-3d-previewing-assets) e [Carregar Assets](/help/assets/manage-assets.md#uploading-assets).
+1. No Experience Manager, na página **[!UICONTROL Navegação]**, selecione **[!UICONTROL Assets]** > **[!UICONTROL Arquivos]**.
 
    ![Página de navegação](/help/assets/assets-dm/navigation-assets.png)
 
-1. Próximo ao canto superior direito da página, na lista suspensa Exibir, selecione **[!UICONTROL Exibição de cartão]**, em seguida, navegue até um ativo 3D que deseja visualizar.
+1. Próximo ao canto superior direito da página, na lista suspensa Exibição, selecione **[!UICONTROL Exibição de cartão]** e navegue até um ativo 3D que deseja visualizar.
 
    ![Seleção de cartão 3D](/help/assets/assets-dm/3d-card-select.png)
-   _Na Exibição de cartão, selecione o cartão do ativo 3D que deseja visualizar._
+   _No Modo de Exibição de Cartão, selecione o cartão do ativo 3D que deseja visualizar._
 
 1. Selecione o cartão do ativo 3D.
 
-   ![Visualização interativa em 3D](/help/assets/assets-dm/3d-preview.png)
+   ![Visualização 3D interativa](/help/assets/assets-dm/3d-preview.png)
    _Visualização interativa de um ativo 3D na página de exibição de detalhes do ativo._
 1. Na página da exibição Detalhes do ativo do ativo 3D, siga um destes procedimentos:
 
    | Exibir | Descrição | Ação do mouse | Ação da tela de toque |
    | --- | --- | --- | --- |
-   | **Girar a câmera** | Gire a visualização em torno da cena 3D e dos objetos. | Clique com o botão esquerdo + arraste. | Pressione com um dedo + arraste. |
-   | **Deslocar a câmera** | Desloque sua exibição para a esquerda, direita, para cima ou para baixo. | Clique com o botão direito do mouse e arraste. | Pressione com dois dedos + arraste. |
+   | **Girar sua câmera** | Gire a visualização em torno da cena 3D e dos objetos. | Clique com o botão esquerdo + arraste. | Pressione com um dedo + arraste. |
+   | **Deslocar sua câmera** | Desloque sua exibição para a esquerda, direita, para cima ou para baixo. | Clique com o botão direito do mouse e arraste. | Pressione com dois dedos + arraste. |
    | **Aplicar zoom à sua câmera** | Mova para dentro e para fora das áreas na cena 3D. | Roda de rolagem. | Pinça de dois dedos. |
    | **Recentralize sua câmera** | Recentralize sua câmera em um ponto sobre um objeto na cena 3D. | Clique duas vezes em. | Selecione duas vezes. |
    | **Redefinir** | Próximo ao canto inferior direito da página, selecione o ícone Redefinir para restaurar o ponto de destino de exibição para o centro do ativo 3D. A redefinição também move a câmera para mais perto ou mais longe, para mostrar o ativo em sua totalidade e em um tamanho de visualização razoável. |   |   |

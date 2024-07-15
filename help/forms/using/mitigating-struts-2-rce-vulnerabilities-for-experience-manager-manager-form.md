@@ -34,15 +34,15 @@ A tabela a seguir lista a resolução de todas as versões afetadas:
 |---|---|---|
 | Experience Manager 6.5 Forms no JEE | 6.5.19.0 | [Instalar o pacote de serviços mais recente](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en) |
 | Experience Manager 6.5 Forms no JEE | 6.5.13.0 - 6.5.18.0 | Use um dos seguintes métodos: <ul><li>  <a href="https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en"> Instalar o pacote de serviços mais recente </a> </li> <li> <a href ="#use-manual-mitigation-steps"> Usar etapas de mitigação manual </a> |
-| Experience Manager 6.5 Forms no JEE | 6.5 - 6.5.12.0 | [Instalar o pacote de serviços mais recente](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en)  </br> </br> **NOTA:** Atualmente, o AEM Forms é compatível com as versões 6.5.13.0 a 6.5.19.0. Se você estiver usando uma versão mais antiga, recomendamos atualizar para a versão 6.5.13.0 ou posterior. Para obter instruções sobre como instalar o AEM versão 6.5.13.0 ou posterior, consulte notas de versão. |
+| Experience Manager 6.5 Forms no JEE | 6.5 - 6.5.12.0 | [Instalar o pacote de serviços mais recente](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en) </br> </br> **OBSERVAÇÃO:** atualmente, o AEM Forms oferece suporte às versões 6.5.13.0 a 6.5.19.0. Se você estiver usando uma versão mais antiga, recomendamos atualizar para a versão 6.5.13.0 ou posterior. Para obter instruções sobre como instalar o AEM versão 6.5.13.0 ou posterior, consulte notas de versão. |
 
 ### Usar etapas de mitigação manual {#use-manual-mitigation-steps}
 
 Você pode usar as etapas de mitigação manual para resolver o problema no Servidor de formulário AEM 6.5 que executa o Service Pack 13 para AEM 6.5 que executa o Service Pack 18 (6.5.13.0 - 6.5.18.0):
 
 1. Baixe o [struts-core 2.5.33 jar](https://repo1.maven.org/maven2/org/apache/struts/struts2-core/2.5.33/struts2-core-2.5.33.jar) para uma pasta local. Por exemplo, C:\Users\labuser\Desktop\struts2-core-2.5.33.jar.
-1. Baixe a Ferramenta de correção manual do AEM Forms no JEE em [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/patch_utility/archive-patcher-1.0.0.zip).
-1. Descompacte o arquivo da ferramenta de correção manual. Por exemplo, extraia para a variável `/Users/labuser/Desktop/archive-patcher-1.0.0 folder`. Os seguintes arquivos são extraídos:
+1. Baixe a Ferramenta de Correção Manual do AEM Forms no JEE em [Distribuição de Software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/patch_utility/archive-patcher-1.0.0.zip).
+1. Descompacte o arquivo da ferramenta de correção manual. Por exemplo, extraia para `/Users/labuser/Desktop/archive-patcher-1.0.0 folder`. Os seguintes arquivos são extraídos:
    * archive-patcher-1.0.0.jar
    * patch-archive.bat
    * patch-archive.sh
@@ -67,7 +67,7 @@ Você pode usar as etapas de mitigação manual para resolver o problema no Serv
    >
    >A ferramenta requer conectividade com a Internet, pois baixa dependências no tempo de execução. Portanto, antes de executar a ferramenta, verifique se você está conectado à Internet.
 
-1. Execute os seguintes comandos na ordem listada para substituição recursiva no local. Antes de executar o comando, substitua o caminho no comando pelo caminho do AEM Forms Server e `struts2-core-2.5.33.jar` arquivo.
+1. Execute os seguintes comandos na ordem listada para substituição recursiva no local. Antes de executar o comando, substitua o caminho no comando pelo caminho do AEM Forms Server e o arquivo `struts2-core-2.5.33.jar`.
 
 
 
@@ -99,7 +99,7 @@ Você pode usar as etapas de mitigação manual para resolver o problema no Serv
    >
    >A ferramenta requer conectividade com a Internet, pois baixa dependências no tempo de execução. Portanto, antes de executar a ferramenta, verifique se você está conectado à Internet.
 
-1. Execute os seguintes comandos na ordem listada para substituição recursiva no local. Antes de executar o comando, substitua o caminho no comando pelo caminho do AEM Forms Server e `struts2-core-2.5.33.jar` arquivo.
+1. Execute os seguintes comandos na ordem listada para substituição recursiva no local. Antes de executar o comando, substitua o caminho no comando pelo caminho do AEM Forms Server e o arquivo `struts2-core-2.5.33.jar`.
 
 
 

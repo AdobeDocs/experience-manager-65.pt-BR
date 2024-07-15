@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ## Visão geral {#overview}
 
-A extensão AEM Brackets fornece um fluxo de trabalho suave para editar componentes AEM e bibliotecas de clientes e usa o poder do [Colchetes](https://brackets.io/) editor de código, que dá acesso a arquivos e camadas do Photoshop a partir do editor de código. A fácil sincronização fornecida pela extensão (sem a necessidade de Maven ou File Vault) aumenta a eficiência do desenvolvedor e também ajuda desenvolvedores de front-end com conhecimento limitado em AEM a participar de projetos. Essa extensão também fornece suporte para o [Linguagem de modelo HTML (HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=pt-BR), que elimina a complexidade do JSP para tornar o desenvolvimento de componentes mais fácil e seguro.
+A extensão AEM Brackets fornece um fluxo de trabalho suave para editar componentes AEM e bibliotecas de clientes e usa o poder do editor de código [Brackets](https://brackets.io/), que dá acesso a arquivos e camadas do Photoshop a partir do editor de código. A fácil sincronização fornecida pela extensão (sem a necessidade de Maven ou File Vault) aumenta a eficiência do desenvolvedor e também ajuda desenvolvedores de front-end com conhecimento limitado em AEM a participar de projetos. Esta extensão também fornece algum suporte para a [Linguagem de modelo de HTML (HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=pt-BR), que elimina a complexidade do JSP para tornar o desenvolvimento de componentes mais fácil e seguro.
 
 ![chlimage_1-53](assets/chlimage_1-53a.png)
 
@@ -46,14 +46,14 @@ Além disso, o Brackets vem com muitos recursos úteis para desenvolvedores de f
 
 A extensão AEM Brackets é compatível com a versão 1.0 ou superior do Brackets.
 
-Baixe a versão mais recente do Brackets em [colchetes.io](https://brackets.io/).
+Baixe a versão mais recente do Brackets em [brackets.io](https://brackets.io/).
 
 ### A extensão {#the-extension}
 
 Para instalar a extensão, proceda da seguinte maneira:
 
 1. Colchetes. No menu **Arquivo**, selecione **Extension Manager...**
-1. Enter **AEM** na barra de pesquisa e procure **Extensão de Colchetes AEM**.
+1. Insira **AEM** na barra de pesquisa e procure a **Extensão de Colchetes AEM**.
 
    ![chlimage_1-54](assets/chlimage_1-54a.png)
 
@@ -68,34 +68,34 @@ Depois que a extensão for instalada, você poderá começar a desenvolver compo
 
 O projeto deve conter pelo menos:
 
-1. a `jcr_root` pasta (por exemplo, `myproject/jcr_root`)
+1. uma pasta `jcr_root` (por exemplo, `myproject/jcr_root`)
 
-1. a `filter.xml` arquivo (por exemplo, `myproject/META-INF/vault/filter.xml`); para obter mais detalhes sobre a estrutura do `filter.xml` arquivo consulte o [Definição de filtro do Workspace](https://jackrabbit.apache.org/filevault/filter.html).
+1. um arquivo `filter.xml` (por exemplo, `myproject/META-INF/vault/filter.xml`); para obter mais detalhes sobre a estrutura do arquivo `filter.xml`, consulte a [definição de Filtro do Workspace](https://jackrabbit.apache.org/filevault/filter.html).
 
-Entre parênteses&#39; **Arquivo** escolha **Abrir pasta...** e escolha a opção `jcr_root` ou a pasta do projeto principal.
+No menu **Arquivo** do Brackets, escolha **Abrir Pasta...** e escolha a pasta `jcr_root` ou a pasta do projeto pai.
 
 >[!NOTE]
 >
->Se você não tiver um projeto próprio com um pacote de conteúdo, poderá tentar o [Exemplo de HTL TodoMVC](https://github.com/Adobe-Marketing-Cloud/aem-sightly-sample-todomvc). No GitHub, clique em **Fazer download do ZIP**, extraia os arquivos localmente e, conforme instruído acima, abra o `jcr_root` pasta entre colchetes. Siga as etapas abaixo para configurar o **Configurações do projeto** e, por fim, faça o upload de todo o pacote para a sua instância de desenvolvimento do AEM fazendo uma **Exportar pacote de conteúdo** conforme instruído na seção Sincronização completa do pacote de conteúdo.
+>Se você não tiver um projeto próprio com um pacote de conteúdo, tente o [HTL TodoMVC Example](https://github.com/Adobe-Marketing-Cloud/aem-sightly-sample-todomvc). No GitHub, clique em **Baixar ZIP**, extraia os arquivos localmente e, conforme instruído acima, abra a pasta `jcr_root` entre colchetes. Siga as etapas abaixo para configurar as **Configurações do Projeto** e, por fim, carregue o pacote inteiro para a instância de desenvolvimento do AEM fazendo um **Exportar Pacote de Conteúdo**, conforme instruído na seção Sincronização Completa do Pacote de Conteúdo.
 >
->Após essas etapas, você poderá acessar a variável `/content/todo.html` URL na instância de desenvolvimento do AEM e você pode começar a fazer modificações no código entre parênteses e ver como, após uma atualização no navegador da Web, as alterações foram imediatamente sincronizadas com o servidor AEM.
+>Após essas etapas, você poderá acessar a URL `/content/todo.html` na instância de desenvolvimento do AEM e começar a fazer modificações no código entre colchetes e ver como, após uma atualização no navegador da Web, as alterações foram imediatamente sincronizadas com o servidor AEM.
 
 ### Configurações do projeto {#project-settings}
 
-Para sincronizar seu conteúdo de e para uma instância de desenvolvimento AEM, é necessário definir as Configurações do projeto. Isso pode ser feito acessando o **AEM** e escolhendo **Configurações do projeto...**
+Para sincronizar seu conteúdo de e para uma instância de desenvolvimento AEM, é necessário definir as Configurações do projeto. Isso pode ser feito ao acessar o menu **AEM** e escolher **Configurações do Projeto...**
 
 ![chlimage_1-55](assets/chlimage_1-55a.png)
 
 As Configurações do projeto permitem definir o seguinte:
 
-1. O URL do servidor (por exemplo, `http://localhost:4502`)
+1. A URL do servidor (por exemplo, `http://localhost:4502`)
 1. Tolerar servidores que não tenham um certificado HTTPS válido (manter desmarcado, a menos que necessário)
 1. O nome de usuário usado para sincronizar conteúdo (por exemplo, `admin`)
 1. A senha do usuário (por exemplo, `admin`)
 
 ## Sincronização de conteúdo {#synchronizing-content}
 
-A extensão AEM Brackets fornece os seguintes tipos de sincronização de conteúdo para arquivos e pastas permitidos pelas regras de filtragem definidas no `filter.xml`:
+A Extensão Colchetes AEM fornece os seguintes tipos de sincronização de conteúdo para arquivos e pastas permitidos pelas regras de filtragem definidas em `filter.xml`:
 
 ### Sincronização Automatizada De Arquivos Alterados {#automated-synchronization-of-changed-files}
 
@@ -103,17 +103,17 @@ Isso só sincronizará as alterações entre Colchetes e a instância AEM, mas n
 
 ### Sincronização Bidirecional Manual {#manual-bidirectional-synchronization}
 
-No Project Explorer, abra o menu contextual clicando com o botão direito do mouse em qualquer arquivo ou pasta e **Exportar para o servidor** ou **Importar do servidor** opções podem ser acessadas.
+No Project Explorer, abra o menu contextual clicando com o botão direito do mouse em qualquer arquivo ou pasta, e as opções **Exportar para Servidor** ou **Importar do Servidor** podem ser acessadas.
 
 ![chlimage_1-56](assets/chlimage_1-56a.png)
 
 >[!NOTE]
 >
->Se a entrada selecionada estiver fora do `jcr_root` pasta, a variável **Exportar para o servidor** e **Importar do servidor** as entradas de menu contextuais estão desativadas.
+>Se a entrada selecionada estiver fora da pasta `jcr_root`, as entradas de menu contextual **Exportar para Servidor** e **Importar do Servidor** serão desabilitadas.
 
 ### Sincronização completa do pacote de conteúdo {#full-content-package-synchronization}
 
-No **AEM** menu, a caixa **Exportar pacote de conteúdo** ou **Importar pacote de conteúdo** As opções permitem sincronizar todo o projeto com o servidor.
+No menu **AEM**, as opções **Exportar Pacote de Conteúdo** ou **Importar Pacote de Conteúdo** permitem sincronizar todo o projeto com o servidor.
 
 ![chlimage_1-57](assets/chlimage_1-57a.png)
 
@@ -132,9 +132,9 @@ Clicar no ícone de notificação abre a caixa de diálogo Status da sincroniza�
 
 >[!NOTE]
 >
->Somente conteúdo marcado como incluído pelas regras de filtragem de `filter.xml` serão sincronizados, independentemente do método de sincronização usado.
+>Somente o conteúdo marcado como incluído pelas regras de filtragem de `filter.xml` será sincronizado, independentemente do método de sincronização usado.
 >
->Além disso, `.vltignore` os arquivos são suportados para excluir conteúdo da sincronização para e do repositório.
+>Além disso, há suporte para `.vltignore` arquivos para a exclusão de conteúdo da sincronização para e do repositório.
 
 ## Edição do código HTL {#editing-htl-code}
 
@@ -142,7 +142,7 @@ A extensão Colchetes AEM também apresenta preenchimento automático para facil
 
 ### Preenchimento automático do atributo {#attribute-auto-completion}
 
-1. Em um atributo HTML, digite `sly`. O atributo é preenchido automaticamente para `data-sly-`.
+1. Em um atributo HTML, digite `sly`. O atributo foi preenchido automaticamente para `data-sly-`.
 1. Selecione o atributo HTL na lista suspensa.
 
 ### Preenchimento automático da expressão {#expression-auto-completion}
@@ -151,12 +151,12 @@ Em uma expressão `${}`, os nomes de variáveis comuns são preenchidos automati
 
 ## Mais informações {#more-information}
 
-A extensão AEM Brackets é um projeto de código aberto, hospedado no GitHub pela [Adobe Marketing Cloud](https://github.com/Adobe-Marketing-Cloud) sob a licença Apache, versão 2.0:
+A Extensão AEM Brackets é um projeto de código aberto, hospedado no GitHub pela organização [Adobe Marketing Cloud](https://github.com/Adobe-Marketing-Cloud), sob a Licença Apache, versão 2.0:
 
 * Repositório de código: [https://github.com/Adobe-Marketing-Cloud/aem-sightly-brackets-extension](https://github.com/Adobe-Marketing-Cloud/aem-sightly-brackets-extension)
 * Licença do Apache, versão 2.0: [https://www.apache.org/licenses/LICENSE-2.0.html](https://www.apache.org/licenses/LICENSE-2.0.html)
 
-O editor de código Brackets também é um projeto de código aberto, hospedado no GitHub pela [Adobe Systems Incorporated](https://github.com/adobe) organização:
+O editor de código Brackets também é um projeto de código aberto, hospedado no GitHub pela organização [Adobe Systems Incorporated](https://github.com/adobe):
 
 * Repositório de código: [https://github.com/adobe/brackets](https://github.com/adobe/brackets)
 

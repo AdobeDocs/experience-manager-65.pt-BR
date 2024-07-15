@@ -33,10 +33,10 @@ Idealmente, outro programador não deve ter que abrir um módulo para entender o
 Na base de código AEM, as seguintes convenções são usadas:
 
 
-* Uma única implementação de uma interface é chamada de `<Interface>Impl`, ou seja, `ReaderImpl`.
+* Uma única implementação de uma interface é chamada `<Interface>Impl`, ou seja, `ReaderImpl`.
 * Várias implementações de uma interface são nomeadas como `<Variant><Interface>`, ou seja, `JcrReader` e `FileSystemReader`.
-* As classes base abstratas são nomeadas `Abstract<Interface>` ou `Abstract<Variant><Interface>`.
-* Os pacotes são nomeados `com.adobe.product.module`. Cada artefato Maven ou pacote OSGi deve ter seu próprio pacote.
+* As classes base abstratas são nomeadas como `Abstract<Interface>` ou `Abstract<Variant><Interface>`.
+* Os pacotes são nomeados como `com.adobe.product.module`. Cada artefato Maven ou pacote OSGi deve ter seu próprio pacote.
 * As implementações do Java™ são colocadas em um pacote impl abaixo da API.
 
 
@@ -55,7 +55,7 @@ Idealmente, os nomes devem revelar sua intenção. Um teste de código comum par
    <td><p>int elapsedTimeInDays;</p> </td>
   </tr>
   <tr>
-   <td><p>//get tagged images<br /> getItems() de Lista pública {}</p> </td>
+   <td><p>//obter imagens com marcas de formatação<br /> getItems() de Lista pública {}</p> </td>
    <td><p>lista pública getTaggedImages() {}</p> </td>
   </tr>
  </tbody>
@@ -67,7 +67,7 @@ DRY indica que o mesmo conjunto de códigos nunca deve ser duplicado. Isso tamb�
 
 ### Evitar regras CSS nuas {#avoid-naked-css-rules}
 
-As regras CSS devem ser específicas para o elemento de destino no contexto do aplicativo. Por exemplo, uma regra CSS aplicada a *.content .center* seria muito abrangente e poderia potencialmente acabar afetando muitos conteúdos em seu sistema, exigindo que outros substituíssem esse estilo no futuro. Considerando que *.myapp-centertext* seria uma regra mais específica, uma vez que especifica os *texto* no contexto do aplicativo.
+As regras CSS devem ser específicas para o elemento de destino no contexto do aplicativo. Por exemplo, uma regra CSS aplicada a *.content .center* seria muito ampla e poderia afetar muitos conteúdos no sistema, exigindo que outros substituíssem esse estilo no futuro. Ao passo que *.myapp-centertext* seria uma regra mais específica, pois está especificando o *texto* centralizado no contexto do seu aplicativo.
 
 ### Eliminar o uso de APIs obsoletas {#eliminate-usage-of-deprecated-apis}
 
@@ -75,27 +75,27 @@ Quando uma API é descontinuada, é sempre melhor encontrar a nova abordagem rec
 
 ### Gravar código localizável {#write-localizable-code}
 
-Qualquer string que não estiver sendo fornecida por um autor deve ser encapsulada em uma chamada para o dicionário AEM i18n por meio de *I18n.get()* em JSP/Java e *CQ.I18n.get()* no JavaScript. Essa implementação retornará a string passada para ela se nenhuma implementação for encontrada, portanto, oferece a flexibilidade de implementar a localização após implementar os recursos no idioma principal.
+Qualquer cadeia de caracteres que não esteja sendo fornecida por um autor deve ser encapsulada em uma chamada para o dicionário i18n do AEM por meio de *I18n.get()* em JSP/Java e *CQ.I18n.get()* no JavaScript. Essa implementação retornará a string passada para ela se nenhuma implementação for encontrada, portanto, oferece a flexibilidade de implementar a localização após implementar os recursos no idioma principal.
 
 ### Evitar caminhos de recursos para segurança {#escape-resource-paths-for-safety}
 
-Embora os caminhos no JCR não devam conter espaços, a presença deles não deve causar a quebra do código. O Jackrabbit fornece uma classe de utilitário de texto com *escape()* e *escapePath()* métodos. Para JSPs, a interface do usuário do Granite expõe uma *granite:encodeURIPath() EL* função.
+Embora os caminhos no JCR não devam conter espaços, a presença deles não deve causar a quebra do código. O Jackrabbit fornece uma classe de utilitário de texto com os métodos *escape()* e *escapePath()*. Para JSPs, a interface do usuário do Granite expõe uma função EL ** granite:encodeURIPath().
 
 ### Usar a API XSS e/ou o HTL para proteger contra ataques de script entre sites {#use-the-xss-api-and-or-htl-to-protect-against-cross-site-scripting-attacks}
 
-O AEM fornece uma API XSS para limpar facilmente os parâmetros e garantir a segurança contra ataques de script entre sites. Além disso, o HTL tem essas proteções incorporadas diretamente na linguagem de modelo. Uma folha de características da API está disponível para download em [Desenvolvimento - diretrizes e práticas recomendadas](/help/sites-developing/dev-guidelines-bestpractices.md).
+O AEM fornece uma API XSS para limpar facilmente os parâmetros e garantir a segurança contra ataques de script entre sites. Além disso, o HTL tem essas proteções incorporadas diretamente na linguagem de modelo. Uma folha de características da API está disponível para download em [Desenvolvimento - Diretrizes e práticas recomendadas](/help/sites-developing/dev-guidelines-bestpractices.md).
 
 ### Implementar o registro apropriado {#implement-appropriate-logging}
 
 Para o código Java™, o AEM é compatível com o slf4j como a API padrão para mensagens de registro e deve ser usado com as configurações disponibilizadas pelo console OSGi para fins de consistência na administração. O Slf4j expõe cinco níveis de log diferentes. O Adobe recomenda usar as seguintes diretrizes ao escolher em qual nível registrar uma mensagem:
 
 * ERRO: quando algo está com defeito no código, o processamento não pode continuar. Isso frequentemente ocorrerá como resultado de uma exceção inesperada. É útil incluir rastreamentos de pilha nesses cenários.
-* AVISO: quando algo não funcionou corretamente, mas o processamento pode continuar. Isso será frequentemente o resultado de uma exceção que esperávamos, como uma *PathNotFoundException*.
+* AVISO: quando algo não funcionou corretamente, mas o processamento pode continuar. Isso geralmente será o resultado de uma exceção esperada, como *PathNotFoundException*.
 * INFO: informações que seriam úteis ao monitorar um sistema. Lembre-se de que esse é o padrão e que a maioria dos clientes deixará isso em vigor em seus ambientes. Portanto, não o use excessivamente.
 * DEBUG: Informações de nível inferior sobre processamento. Útil ao depurar um problema com suporte.
 * TRACE: As informações de nível mais baixo, como métodos de entrada/saída. Normalmente, isso só será usado por desenvolvedores.
 
-Se houver JavaScript, *console.log* O só deve ser usado durante o desenvolvimento e todas as instruções de log devem ser removidas antes da versão.
+Se houver JavaScript, o *console.log* deverá ser usado somente durante o desenvolvimento e todas as instruções de log deverão ser removidas antes do lançamento.
 
 ### Evite programação cult de carga {#avoid-cargo-cult-programming}
 

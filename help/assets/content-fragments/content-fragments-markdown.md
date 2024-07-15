@@ -14,7 +14,7 @@ ht-degree: 88%
 
 # Markdown {#markdown}
 
-Quando você estiver [criação](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content), o editor de fragmento de conteúdo usa *markdown* sintaxe para permitir que você grave conteúdo headless facilmente:
+Quando você está [criando](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content), o editor de fragmento de conteúdo usa a sintaxe *markdown* para permitir que você grave conteúdo headless facilmente:
 
 ![editor de Markdown](/help/assets/content-fragments/assets/cfm-markdown-01.png)
 

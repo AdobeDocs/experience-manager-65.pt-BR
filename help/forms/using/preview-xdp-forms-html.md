@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Gerar visualização de HTML5 de um formulário XDP{#generate-html-preview-of-an-xdp-form}
 
-Ao criar um formulário no AEM Forms Designer, além de visualizar a representação em PDF de um formulário, também é possível visualizar uma representação em HTML. Você pode usar o **Visualizar HTML** para visualizar um formulário da forma que apareceria em um navegador.
+Ao criar um formulário no AEM Forms Designer, além de visualizar a representação em PDF de um formulário, também é possível visualizar uma representação em HTML. Você pode usar a guia **Preview HTML** para visualizar um formulário da maneira que ele aparece em um navegador.
 
 ## Ativar a Visualização de HTML para formulários XDP no Designer {#html-preview-of-forms-in-forms-designer}
 
@@ -29,11 +29,11 @@ Para permitir que o Designer gere a pré-visualização de HTML de formulários 
 
 ### Configurar o serviço de autenticação do Apache Sling {#configure-apache-sling-authentication-service}
 
-1. Ir para `https://'[server]:[port]'/system/console/configMgr` no AEM Forms executado no OSGi ou
+1. Vá para `https://'[server]:[port]'/system/console/configMgr` no AEM Forms executando no OSGi ou
    `https://'[server]:[port]'/lc/system/console/configMgr` no AEM Forms em execução no JEE.
-1. Localize e clique em **Serviço de autenticação Apache Sling** configuração para abri-lo no modo de edição.
+1. Localize e clique na configuração do **Apache Sling Authentication Service** para abri-lo no modo de edição.
 
-1. Dependendo de você estar executando o AEM Forms no OSGi ou no JEE, adicione o seguinte no **Requisitos de autenticação** campo:
+1. Dependendo de você estar executando o AEM Forms no OSGi ou no JEE, adicione o seguinte no campo **Requisitos de autenticação**:
 
    * AEM Forms no JEE
 
@@ -49,30 +49,30 @@ Para permitir que o Designer gere a pré-visualização de HTML de formulários 
    >
    >Não copie e cole o valor especificado no campo Requisitos de autenticação, pois ele pode corromper os caracteres especiais no valor. Em vez disso, digite o valor especificado no campo.
 
-1. Especifique um nome de usuário e senha no **[!UICONTROL Nome de usuário anônimo]** e **[!UICONTROL Senha de usuário anônimo]** campos, respectivamente. As credenciais especificadas são usadas para manipular a autenticação anônima e permitir acesso a usuários anônimos.
+1. Especifique um nome de usuário e uma senha nos campos **[!UICONTROL Nome de Usuário Anônimo]** e **[!UICONTROL Senha de Usuário Anônimo]**, respectivamente. As credenciais especificadas são usadas para manipular a autenticação anônima e permitir acesso a usuários anônimos.
 1. Clique em **Salvar** para salvar a configuração.
 
 ### Desativar modo protegido {#disable-protected-mode}
 
-A variável [modo protegido](../../forms/using/get-xdp-pdf-documents-aem.md) está ativado, por padrão. Mantenha-o ativado para os ambientes de produção. Você pode desativá-lo para que um ambiente de desenvolvimento pré-visualize o HTML5 Forms no designer. Execute as seguintes etapas para desativá-la:
+O [modo protegido](../../forms/using/get-xdp-pdf-documents-aem.md) está ativado, por padrão. Mantenha-o ativado para os ambientes de produção. Você pode desativá-lo para que um ambiente de desenvolvimento pré-visualize o HTML5 Forms no designer. Execute as seguintes etapas para desativá-la:
 
 1. Faça logon no AEM Web Console como administrador.
 
-   * O URL do AEM Forms no OSGi é `https://'[server]:[port]'/system/console/configMgr`
-   * O URL do AEM Forms no JEE é `https://'[server]:[port]'/lc/system/console/configMgr`
+   * A URL para o AEM Forms no OSGi é `https://'[server]:[port]'/system/console/configMgr`
+   * A URL para o AEM Forms no JEE é `https://'[server]:[port]'/lc/system/console/configMgr`
 
-1. Abertura **[!UICONTROL Configurações do Forms Mobile]** para edição.
+1. Abra as **[!UICONTROL Configurações do Mobile Forms]** para edição.
 1. Desmarque a opção **[!UICONTROL Modo protegido]** e clique em **[!UICONTROL Salvar]**.
 
 ### Fornecer detalhes do servidor do AEM Forms {#provide-details-of-aem-forms-server}
 
-1. No Designer, acesse **Ferramentas** > **Opções**.
-1. Na janela Opções, selecione **Opções de servidor** forneça os seguintes detalhes e clique em **OK**.
+1. No Designer, vá para **Ferramentas** > **Opções**.
+1. Na janela Opções, selecione a página **Opções de Servidor**, forneça os detalhes a seguir e clique em **OK**.
 
    * **URL do servidor**: URL do servidor do AEM Forms.
 
-   * **Número da porta HTTP**: Porta do servidor AEM. O valor padrão é 4502.
-   * **Contexto de visualização do HTML:** Caminho do perfil para renderização de formulários XFA. Os perfis padrão a seguir são usados para visualizar o formulário no Designer. Entretanto, também é possível especificar o caminho para um perfil personalizado.
+   * **Número da porta HTTP**: porta do servidor AEM. O valor padrão é 4502.
+   * **Contexto de Visualização de HTML:** Caminho do perfil para renderização de formulários XFA. Os perfis padrão a seguir são usados para visualizar o formulário no Designer. Entretanto, também é possível especificar o caminho para um perfil personalizado.
 
       * `/content/xfaforms/profiles/default.html` (AEM Forms no OSGi)
 
@@ -85,13 +85,13 @@ A variável [modo protegido](../../forms/using/get-xdp-pdf-documents-aem.md) est
 
    >[!NOTE]
    >
-   >Verifique se o servidor do AEM Forms está ativo e em execução. A visualização do HTML se conecta ao servidor CRX para *gerar* uma visualização.
+   >Verifique se o servidor do AEM Forms está ativo e em execução. A visualização do HTML se conecta ao servidor do CRX para *gerar* uma visualização.
 
    ![Opções do AEM Forms Designer ](assets/server_options.png)
 
    Opções do AEM Forms Designer
 
-1. Para visualizar um formulário no HTML, clique no link **Visualizar HTML** guia.
+1. Para visualizar um formulário no HTML, clique na guia **Preview HTML**.
 
    >[!NOTE]
    >
@@ -111,15 +111,15 @@ A variável [modo protegido](../../forms/using/get-xdp-pdf-documents-aem.md) est
 
 O Designer permite visualizar e testar o formulário usando dados XML de amostra. É recomendável testar frequentemente seu formulário com dados de amostra para garantir que ele seja renderizado corretamente.
 
-Se você não tiver dados de amostra, o Designer poderá criá-los ou você mesmo poderá criá-los. (Consulte [Gerar automaticamente dados de amostra para pré-visualizar o formulário](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c136ae6f212a1f379c94-8000.2.html#WS92d06802c76abadb-728f46ac129b395660c-7efe.2) e [Para criar dados de amostra para visualizar seu formulário](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c136ae6f212a1f379c94-8000.2.html#WS92d06802c76abadb-728f46ac129b395660c-7eff.2).)
+Se você não tiver dados de amostra, o Designer poderá criá-los ou você mesmo poderá criá-los. (Consulte [Gerar automaticamente dados de exemplo para visualizar o formulário](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c136ae6f212a1f379c94-8000.2.html#WS92d06802c76abadb-728f46ac129b395660c-7efe.2) e [Criar dados de exemplo para visualizar o formulário](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c136ae6f212a1f379c94-8000.2.html#WS92d06802c76abadb-728f46ac129b395660c-7eff.2).)
 
 Testar o formulário usando uma fonte de dados de amostra garante que os dados e campos sejam mapeados e que os subformulários de repetição sejam repetidos conforme esperado. Você pode criar um layout de formulário equilibrado que forneça o espaço apropriado para cada objeto exibir os dados mesclados.
 
-1. Selecionar **Arquivo > Propriedades do formulário**.
+1. Selecione **Arquivo > Propriedades do formulário**.
 
-1. Clique em **Visualizar** e, na caixa Arquivo de dados, digite o caminho completo para o arquivo de dados de teste. Você também pode usar o botão Procurar para navegar até o arquivo.
+1. Clique na guia **Visualizar** e, na caixa Arquivo de dados, digite o caminho completo para o arquivo de dados de teste. Você também pode usar o botão Procurar para navegar até o arquivo.
 
-1. Clique em **OK**. Na próxima vez que você visualizar o formulário no **Visualizar HTML** , os valores de dados do arquivo XML de amostra aparecerão nos respectivos objetos.
+1. Clique em **OK**. Na próxima vez que você visualizar o formulário na guia **Visualizar HTML**, os valores de dados do arquivo XML de amostra aparecerão nos respectivos objetos.
 
 ## Visualizar formulários em um repositório {#html-preview-of-forms-in-forms-manager}
 

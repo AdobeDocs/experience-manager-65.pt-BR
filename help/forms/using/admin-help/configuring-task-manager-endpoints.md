@@ -20,28 +20,28 @@ ht-degree: 0%
 
 Os pontos de extremidade do Gerenciador de tarefas permitem que os usuários do Workspace chamem o serviço.
 
-**Configurações de ponto de extremidade do Gerenciador de tarefas**
+**Configurações de ponto de extremidade do Gerenciador de Tarefas**
 
 Use as seguintes configurações para configurar um ponto de extremidade do Gerenciador de tarefas.
 
-**Nome:** (Obrigatório) Identifica o endpoint. O nome é exibido na visualização de cartão no Espaço de trabalho. Não inclua um caractere &lt; porque ele truncará o nome exibido no Workspace. Se você estiver inserindo um URL como o nome do endpoint, verifique se ele está em conformidade com as regras de sintaxe especificadas no RFC1738.
+**Nome:** (Obrigatório) Identifica o ponto de extremidade. O nome é exibido na exibição de cartão no Workspace. Não inclua um caractere &lt; porque ele truncará o nome exibido no Workspace. Se você estiver inserindo um URL como o nome do endpoint, verifique se ele está em conformidade com as regras de sintaxe especificadas no RFC1738.
 
-**Descrição:** Uma descrição do endpoint. Não inclua um caractere &lt; porque ele truncará a descrição exibida no Workspace.
+**Descrição:** Uma descrição do ponto de extremidade. Não inclua um caractere &lt; porque ele truncará a descrição exibida no Workspace.
 
-**Instruções da tarefa:** Instruções para o usuário que inicia esse workflow.
+**Instruções da tarefa:** instruções para o usuário que inicia este fluxo de trabalho.
 
-**Proprietário do processo:** O nome da pessoa responsável pelo processo.
+**Proprietário do Processo:** O nome da pessoa responsável pelo processo.
 
-**O Usuário Pode Encaminhar Tarefas:** Permite ao usuário encaminhar a tarefa inicial.
+**O Usuário Pode Encaminhar a Tarefa:** Permite que o usuário encaminhe a tarefa inicial.
 
-**Mostrar janela de anexo:** Permite que o usuário veja a janela do anexo.
+**Mostrar Janela de Anexo:** Permite que o usuário veja a janela de anexo.
 
-**Permitir Anexo Adicionando:** Permite que o usuário adicione anexos e notas.
+**Permitir Adição de Anexo:** Permite que o usuário adicione anexos e anotações.
 
-**Tarefa inicialmente bloqueada:** Bloqueia a tarefa inicial.
+**Tarefa Bloqueada Inicialmente:** Bloqueia a tarefa inicial.
 
-**Adicionar ACLs para Filas Compartilhadas:** A tarefa inicial é criada com ACLs para usuários compartilhados da fila.
+**Adicionar ACLs para Filas Compartilhadas:** A tarefa inicial é criada com ACLs para usuários de fila compartilhados.
 
-**Categorização:** (Obrigatório) A categoria em que o usuário verá o formulário no Espaço de trabalho. Selecione uma categoria na lista ou selecione Nova categoria para adicionar uma categoria.
+**Categorização:** (obrigatória) a categoria na qual o usuário verá o formulário no Workspace. Selecione uma categoria na lista ou selecione Nova categoria para adicionar uma categoria.
 
-**Nome da operação:** (Obrigatório) Uma lista de operações que podem ser atribuídas ao endpoint.
+**Nome da Operação:** (Obrigatório) Uma lista de operações que podem ser atribuídas ao ponto de extremidade.

@@ -1,5 +1,5 @@
 ---
-title: Desenvolvimento do AEM - diretrizes e práticas recomendadas
+title: Desenvolvimento do AEM – Diretrizes e práticas recomendadas
 description: Diretrizes e práticas recomendadas para o desenvolvimento de AEM
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,11 +12,11 @@ role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '1083'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-# Desenvolvimento do AEM - diretrizes e práticas recomendadas{#aem-development-guidelines-and-best-practices}
+# Desenvolvimento do AEM – Diretrizes e práticas recomendadas{#aem-development-guidelines-and-best-practices}
 
 ## Diretrizes para o uso de modelos e componentes {#guidelines-for-using-templates-and-components}
 
@@ -51,11 +51,11 @@ As seguintes regras gerais para desenvolvedores fazem sentido nos projetos mais 
 
 Ao criar seus próprios componentes ou personalizar um componente existente, geralmente é mais fácil (e mais seguro) reutilizar as definições existentes. Os mesmos princípios também se aplicam a outros elementos dentro do AEM, por exemplo, o manipulador de erros.
 
-Isso pode ser feito copiando e sobrepondo a definição existente. Em outras palavras, copiar a definição de `/libs` para `/apps/<your-project>`. Esta nova definição, em especial `/apps`, podem ser atualizados de acordo com suas necessidades.
+Isso pode ser feito copiando e sobrepondo a definição existente. Em outras palavras, copiando a definição de `/libs` para `/apps/<your-project>`. Essa nova definição, no `/apps`, pode ser atualizada de acordo com suas necessidades.
 
 >[!NOTE]
 >
->Consulte [Uso de sobreposições](/help/sites-developing/overlays.md) para obter mais detalhes.
+>Consulte [Usando Sobreposições](/help/sites-developing/overlays.md) para obter mais detalhes.
 
 Por exemplo:
 
@@ -63,7 +63,7 @@ Por exemplo:
 
   Isso envolvia a sobreposição de uma definição de componente:
 
-   * Criar uma pasta de componentes no `/apps/<website-name>/components/<MyComponent>` copiando um componente existente:
+   * Criar uma pasta de componentes em `/apps/<website-name>/components/<MyComponent>` copiando um componente existente:
 
       * Por exemplo, para personalizar a cópia do componente de Texto:
 
@@ -81,9 +81,9 @@ Por exemplo:
 
 >[!CAUTION]
 >
->**Não** alterar qualquer item no `/libs` caminho.
+>**Não** altere nada no caminho `/libs`.
 >
->O motivo é porque o conteúdo de `/libs` é substituído na próxima vez que você atualizar sua instância (e pode ser substituído ao aplicar um hotfix ou pacote de recursos).
+>O motivo é que o conteúdo de `/libs` é substituído na próxima vez que você atualizar sua instância (e pode ser substituído quando você aplicar um hotfix ou pacote de recursos).
 >
 >Para configuração e outras alterações:
 >
@@ -109,14 +109,14 @@ Para renderizar conteúdo, use o acesso de navegação à árvore de conteúdo e
 
 >[!NOTE]
 >
->Se você usar o [Construtor de consulta](/help/sites-developing/querybuilder-api.md), você usa Consultas JCR, já que o Construtor de consultas gera Consultas JCR por baixo dos panos.
+>Se você usa o [Construtor de consultas](/help/sites-developing/querybuilder-api.md), use as consultas JCR, já que o Construtor de consultas gera consultas JCR por baixo dos panos.
 >
 
 ## Considerações sobre segurança {#security-considerations}
 
 >[!NOTE]
 >
->É igualmente útil fazer referência [lista de verificação de segurança](/help/sites-administering/security-checklist.md).
+>Também vale a pena consultar a [lista de verificação de segurança](/help/sites-administering/security-checklist.md).
 
 ### Sessões JCR (Repositório) {#jcr-repository-sessions}
 
@@ -132,7 +132,7 @@ A criação de script entre sites (XSS) permite que invasores injetem código em
 
 O AEM aplica o princípio de filtrar todo o conteúdo fornecido pelo usuário na saída. É dada a maior prioridade à prevenção de XSS durante o desenvolvimento e o teste.
 
-Além disso, um firewall de aplicativo web, como [mod_security para Apache](https://modsecurity.org)O, oferece controle confiável e central sobre a segurança do ambiente de implantação e proteção contra ataques de script entre sites não detectados anteriormente.
+Além disso, um firewall de aplicativo da Web, como o [mod_security para Apache](https://modsecurity.org), pode fornecer controle central e confiável sobre a segurança do ambiente de implantação e proteger contra ataques de script entre sites não detectados anteriormente.
 
 >[!CAUTION]
 >
@@ -159,10 +159,10 @@ Isso se aplica às informações confidenciais para o sistema (como configuraç�
 
 As páginas de erro podem ser personalizadas para AEM. Isso é aconselhável para que a instância não revele rastreamentos sling em erros internos do servidor.
 
-Consulte [Personalização de páginas de erro mostradas pelo Manipulador de erros](/help/sites-developing/customizing-errorhandler-pages.md) para obter detalhes completos.
+Consulte [Personalizando Páginas de Erro mostradas pelo Manipulador de Erros](/help/sites-developing/customizing-errorhandler-pages.md) para obter detalhes completos.
 
 ### Abrir arquivos no processo Java™ {#open-files-in-the-java-process}
 
-Como o AEM pode acessar muitos arquivos, é recomendável que o número de [abrir arquivos para um processo Java™](/help/sites-deploying/configuring.md#open-files-in-the-java-process) ser configurados explicitamente para AEM.
+Como o AEM pode acessar muitos arquivos, é recomendável que o número de [arquivos abertos para um processo Java™](/help/sites-deploying/configuring.md#open-files-in-the-java-process) seja configurado explicitamente para o AEM.
 
 Para minimizar esse problema, o desenvolvimento deve garantir que qualquer arquivo aberto seja fechado corretamente quando for possível (de forma significativa).

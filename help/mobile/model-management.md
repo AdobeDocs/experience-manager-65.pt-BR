@@ -23,7 +23,7 @@ ht-degree: 0%
 
 O gerenciamento de modelos envolve a criação e o gerenciamento de modelos para associação com eventuais objetos de dados. Cada modelo inclui todas as propriedades e definições de campo necessárias para facilitar a criação e a renderização de objetos.
 
-O gerenciamento de modelos envolve a criação de **modelos**, **entidades**, e **espaços**. O diagrama a seguir ilustra a relação entre o Conteúdo AEM e os modelos.
+O Gerenciamento de Modelos envolve a criação de **modelos**, **entidades** e **espaços**. O diagrama a seguir ilustra a relação entre o Conteúdo AEM e os modelos.
 
 ![chlimage_1-81](assets/chlimage_1-81.png)
 
@@ -58,9 +58,9 @@ Uma entidade é uma instância de um modelo de conteúdo. Uma entidade é expost
 
 Se houver conteúdo de AEM existente, uma entidade é gerada usando um modelo e a fonte de conteúdo de AEM. Por exemplo, uma entidade de página é um objeto independente de canal e layout gerado a partir de uma página AEM e do modelo de página.
 
-As alterações no conteúdo referenciado de uma entidade resultam em uma alteração na entidade. Por exemplo, se um *cq:page* for atualizada, as entidades baseadas nessa página também serão atualizadas.
+As alterações no conteúdo referenciado de uma entidade resultam em uma alteração na entidade. Por exemplo, se uma *cq:page* for atualizada, quaisquer entidades baseadas nessa página também serão atualizadas.
 
-Para criar entidades personalizadas a partir de modelos, consulte **[Trabalhar com entidades](/help/mobile/spaces-and-entities.md)**.
+Para criar entidades personalizadas a partir de modelos, consulte **[Trabalhando com Entidades](/help/mobile/spaces-and-entities.md)**.
 
 >[!NOTE]
 >
@@ -75,7 +75,7 @@ No lado do AEM, um espaço é uma maneira conveniente de gerenciar entidades rel
 
 *Por exemplo*,
 
-Um usuário tem três classificações gerais de entidades. Uma é apenas para uso interno, outra é aprovada para uso público e ainda uma terceira é para entidades comuns usadas por muitos aplicativos. Para facilitar o gerenciamento, o usuário cria três espaços, a saber: *interno*, *público* (com conteúdo em inglês e francês) e *comum* para gerenciar as entidades apropriadas, conforme mencionado abaixo:
+Um usuário tem três classificações gerais de entidades. Uma é apenas para uso interno, outra é aprovada para uso público e ainda uma terceira é para entidades comuns usadas por muitos aplicativos. Para facilitar o gerenciamento, o usuário cria três espaços: *interno*, *público* (com conteúdo em inglês e francês) e *comum* para gerenciar as entidades apropriadas, conforme mencionado abaixo:
 
 * /content/entities/internal
 * /content/entities/public/br
@@ -84,7 +84,7 @@ Um usuário tem três classificações gerais de entidades. Uma é apenas para u
 
 Um ponto final de serviço é fornecido ao espaço para que a biblioteca nativa do cliente possa solicitar uma lista do conteúdo de um espaço. Essa &quot;listagem&quot; é retornada como um objeto JSON.
 
-Consulte **[Espaços e entidades](/help/mobile/spaces-and-entities.md)** para criar e publicar espaços.
+Consulte **[Espaços e Entidades](/help/mobile/spaces-and-entities.md)** para criar e publicar espaços.
 
 >[!NOTE]
 >
@@ -94,4 +94,4 @@ Consulte **[Espaços e entidades](/help/mobile/spaces-and-entities.md)** para cr
 
 As pastas permitem que os usuários organizem entidades conforme necessário e facilitam um controle mais fino da ACL. Os espaços podem incluir pastas para ajudar a organizar ainda mais o conteúdo e os ativos do espaço. Um usuário pode criar sua própria hierarquia em um espaço.
 
-Para criar e gerenciar pastas em um espaço, consulte **[Trabalhar com pastas em um espaço](/help/mobile/spaces-and-entities.md)**.
+Para criar e gerenciar pastas em um espaço, consulte **[Trabalhando com Pastas em um Espaço](/help/mobile/spaces-and-entities.md)**.

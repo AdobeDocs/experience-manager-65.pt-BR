@@ -18,7 +18,7 @@ ht-degree: 5%
 
 # Suporte a script para formulários HTML5 {#scripting-support-for-html-forms}
 
-As propriedades JavaScript, FormCalc e os métodos compatíveis com formulários HTML5 estão listados abaixo:
+JavaScript, propriedades FormCalc e métodos compatíveis com formulários HTML5 estão listados abaixo:
 
 ## $event {#event}
 
@@ -35,7 +35,7 @@ As propriedades JavaScript, FormCalc e os métodos compatíveis com formulários
    <td><p>Não funciona para caixas suspensas e de listagem. <code>PrevText </code>não funciona corretamente nos seguintes casos:</p>
     <ul>
      <li>Ao digitar algumas chaves de caracteres especiais (por exemplo, $ ou , ou &amp; ou @ e mais) em campos Numéricos no iPad, e </li>
-     <li>Para o campo Date (quando a data é inserida por meio do calendário).<br /> </li>
+     <li>Para o campo Data (quando a data é inserida por meio do calendário).<br /> </li>
     </ul> <p>Não há suporte para a configuração de valor por meio do script.</p> </td>
   </tr>
   <tr>
@@ -46,7 +46,7 @@ As propriedades JavaScript, FormCalc e os métodos compatíveis com formulários
   <tr>
    <td><code>newtext</code></td>
    <td>Especifica o conteúdo do campo depois que ele é alterado em resposta às ações do usuário.</td>
-   <td><p>A variável <code>newText</code> A propriedade não funciona corretamente nos seguintes casos:</p>
+   <td><p>A propriedade <code>newText</code> não funciona adequadamente nos seguintes casos:</p>
     <ul>
      <li>Na seleção e substituição de textos</li>
      <li>Sobre exclusão, cópia e colagem de textos.</li>
@@ -95,7 +95,7 @@ As propriedades JavaScript, FormCalc e os métodos compatíveis com formulários
   <tr>
    <td><code>apptype</code></td>
    <td>Retorna o tipo de aplicativo do host. Disponível somente para aplicativos cliente.</td>
-   <td>Devoluções <code>HTML 5</code>.</td>
+   <td>Retorna <code>HTML 5</code>.</td>
   </tr>
   <tr>
    <td><code>name</code></td>
@@ -124,7 +124,7 @@ As propriedades JavaScript, FormCalc e os métodos compatíveis com formulários
   </tr>
   <tr>
    <td><code>calculationsEnabled</code></td>
-   <td>Especifica se os scripts de cálculo serão executados.<br /> </td>
+   <td>Especifica se scripts de cálculo serão executados.<br /> </td>
    <td>Nenhum</td>
   </tr>
   <tr>
@@ -182,7 +182,7 @@ As propriedades JavaScript, FormCalc e os métodos compatíveis com formulários
   <tr>
    <td><code>access</code></td>
    <td>Controla o acesso do usuário ao conteúdo.</td>
-   <td>Não funciona para o grupo de exclusão. Além disso, as formas HTML5 dão o mesmo tratamento a objetos não interativos e protegidos.<br /> </td>
+   <td>Não funciona para o grupo de exclusão. Além disso, os formulários HTML5 dão o mesmo tratamento a objetos protegidos e não interativos.<br /> </td>
   </tr>
   <tr>
    <td><code>name</code></td>
@@ -202,17 +202,17 @@ As propriedades JavaScript, FormCalc e os métodos compatíveis com formulários
   <tr>
    <td><code>formattedValue</code></td>
    <td>Especifica o valor formatado para este campo.</td>
-   <td>Configuração <code>formattedValue</code> por meio do script não é suportado.</td>
+   <td>Não há suporte para a configuração de <code>formattedValue</code> por meio de script.</td>
   </tr>
   <tr>
    <td><code>editValue</code></td>
    <td>Especifica o valor de edição desse campo.</td>
-   <td>Configuração <code>editValue </code>por meio do script não é suportado.</td>
+   <td>Não há suporte para a configuração de <code>editValue </code> por meio de script.</td>
   </tr>
   <tr>
    <td><code>formatMessage</code></td>
    <td>Especifica a cadeia de caracteres de mensagem de validação de formato para este campo.</td>
-   <td>Configuração <code>formatMessage </code>por meio do script não é suportado.</td>
+   <td>Não há suporte para a configuração de <code>formatMessage </code> por meio de script.</td>
   </tr>
   <tr>
    <td><code>fillcolor</code></td>
@@ -479,7 +479,7 @@ As propriedades JavaScript, FormCalc e os métodos compatíveis com formulários
   </tr>
   <tr>
    <td>instanceManager</td>
-   <td>O objeto instanceManager gerencia a criação, a remoção e a movimentação da instância de objetos de modelo de formulário.<br /> </td>
+   <td>O objeto instanceManager gerencia a criação, a remoção e a movimentação de instâncias de objetos de modelo de formulário.<br /> </td>
    <td>Nenhum</td>
   </tr>
  </tbody>
@@ -635,7 +635,7 @@ As propriedades JavaScript, FormCalc e os métodos compatíveis com formulários
   <tr>
    <td>borda</td>
    <td>O objeto de borda descreve um arco, uma linha ou um lado de uma borda ou um retângulo.<br /> </td>
-   <td>Atributos como cor, limite e muito mais não são compatíveis.<br /> </td>
+   <td>Atributos como cor, limite e muito mais não têm suporte.<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -734,7 +734,7 @@ As propriedades JavaScript, FormCalc e os métodos compatíveis com formulários
   </tr>
   <tr>
    <td>valor</td>
-   <td>O objeto de valor delimita uma única unidade de conteúdo de dados.<br /> </td>
+   <td>O objeto de valor contém uma única unidade de conteúdo de dados.<br /> </td>
    <td> </td>
   </tr>
  </tbody>
@@ -773,7 +773,7 @@ As propriedades JavaScript, FormCalc e os métodos compatíveis com formulários
   <tr>
    <td>borda</td>
    <td>O objeto de borda descreve a borda ao redor do objeto checkButton. </td>
-   <td>As alterações são refletidas no modelo e estão disponíveis para script, mas não são sincronizadas com os elementos HTML. Portanto, as alterações não são refletidas na interface do usuário.<br /> </td>
+   <td>As alterações são refletidas no modelo e estão disponíveis para script, mas não são sincronizadas com os elementos HTML. Portanto, as alterações não são refletidas na interface.<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -816,7 +816,7 @@ As propriedades JavaScript, FormCalc e os métodos compatíveis com formulários
    <td>Nenhum</td>
   </tr>
   <tr>
-   <td>name<br /> </td>
+   <td>nome<br /> </td>
    <td>Um identificador usado para identificar este elemento em expressões de script.</td>
    <td>Nenhum</td>
   </tr>
@@ -1161,7 +1161,7 @@ FormCalc é uma linguagem específica do XFA para criar lógica centrada no form
   <tr>
    <td>para cada</td>
    <td><br type="_moz" /> </td>
-   <td>para cada i em (1, 2, 3) <br /> do s = s + i endfor</td>
+   <td>para cada i in (1, 2, 3) <br /> do s = s + i endfor</td>
   </tr>
   <tr>
    <td>declaração de função</td>
@@ -1186,7 +1186,7 @@ FormCalc é uma linguagem específica do XFA para criar lógica centrada no form
    1. Round()
    1. Sum()
 
-1. **Funções científicas**
+1. **Funções Científicas**
 
    1. Acos()
    1. Asin()
@@ -1223,7 +1223,7 @@ FormCalc é uma linguagem específica do XFA para criar lógica centrada no form
    1. Oneof()
    1. Within()
 
-1. **Funções de string**
+1. **Funções de Cadeia de Caracteres**
 
    1. At()
    1. Concat()
@@ -1271,7 +1271,7 @@ FormCalc é uma linguagem específica do XFA para criar lógica centrada no form
   <tr>
    <td>app.execDialog()</td>
    <td>Apresenta uma caixa de diálogo modal ao usuário. As caixas de diálogo modais devem ser fechadas pelo usuário antes que o aplicativo host possa ser usado diretamente novamente.</td>
-   <td>Nenhuma ação é executada.<br /> </td>
+   <td>Nenhuma ação executada.<br /> </td>
   </tr>
   <tr>
    <td>app.launchURL()</td>
@@ -1280,12 +1280,12 @@ FormCalc é uma linguagem específica do XFA para criar lógica centrada no form
   </tr>
   <tr>
    <td>app.setInterval()</td>
-   <td>Especifica um script JavaScript e um período. O script é executado toda vez que o período decorre. O valor de retorno desse método deve ser mantido em uma variável JavaScript. Caso contrário, o objeto do intervalo está sujeito à coleta de lixo, o que faria com que o relógio parasse. Para encerrar a execução periódica, passe o objeto de intervalo retornado para clearInterval.</td>
+   <td>Especifica um script JavaScript e um período de tempo. O script é executado toda vez que o período decorre. O valor de retorno desse método deve ser mantido em uma variável do JavaScript. Caso contrário, o objeto do intervalo está sujeito à coleta de lixo, o que faria com que o relógio parasse. Para encerrar a execução periódica, passe o objeto de intervalo retornado para clearInterval.</td>
    <td> </td>
   </tr>
   <tr>
    <td>app.setTimeOut()</td>
-   <td>Especifica um script JavaScript e um período. O script é executado apenas uma vez depois que o período decorre. O valor de retorno desse método deve ser mantido em uma variável JavaScript. Caso contrário, o objeto de tempo limite está sujeito à coleta de lixo, o que faria com que o relógio parasse. Para cancelar o evento de tempo limite, passe o objeto de tempo limite retornado para clearTimeOut.</td>
+   <td>Especifica um script JavaScript e um período de tempo. O script é executado apenas uma vez, depois que o período decorre. O valor de retorno desse método deve ser mantido em uma variável JavaScript. Caso contrário, o objeto de tempo limite está sujeito à coleta de lixo, o que faria com que o relógio parasse. Para cancelar o evento de tempo limite, passe o objeto de tempo limite retornado para clearTimeOut.</td>
    <td> </td>
   </tr>
   <tr>
@@ -1296,7 +1296,7 @@ FormCalc é uma linguagem específica do XFA para criar lógica centrada no form
   <tr>
    <td>app.clearTimeOut()</td>
    <td>Cancela um intervalo de tempo limite registrado anteriormente. Esse intervalo é definido inicialmente por setTimeOut.</td>
-   <td>Nos formulários HTML5, a API não funciona corretamente.<br /> </td>
+   <td>Em formulários HTML5, a API não funciona corretamente.<br /> </td>
   </tr>
   <tr>
    <td>app.eval()</td>
@@ -1351,4 +1351,4 @@ Os seguintes eventos XFA do lado do cliente são compatíveis:
 
 >[!NOTE]
 >
->Os formulários HTML5 são renderizados no lado do cliente (navegador). Usar do lado do cliente **validar** e **calcular** scripts em vez de scripts do lado do servidor.
+>Os formulários HTML5 são renderizados no lado do cliente (navegador). Usar scripts **validate** e **calculate** do lado do cliente em vez de scripts do lado do servidor.

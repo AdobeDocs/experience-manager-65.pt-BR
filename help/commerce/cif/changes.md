@@ -36,7 +36,7 @@ O endpoint é configurado por meio do console OSGi.
 
 ## Implantação do projeto CIF Venia
 
-Projeto disponível em [Guias do GitHub AEM - Projeto CIF Venia](https://github.com/adobe/aem-cif-guides-venia) e implantação feitas pelo Gerenciador de pacotes AEM.
+Projeto disponível em [GitHub AEM Guides - CIF Venia Project](https://github.com/adobe/aem-cif-guides-venia) e implantação feita via AEM Package Manager.
 
 **Versões anteriores do CIF**
 
@@ -48,7 +48,7 @@ Os dados do catálogo de produtos são solicitados sob demanda por meio de chama
 
 **Versões anteriores do CIF**
 
-* CIF Classic: dados de produtos ao vivo e preparados são importados e mantidos no JCR no AEM Author por meio de importação completa ou delta de produtos. Os dados de produtos em tempo real são replicados para publicação no AEM.
+* CIF Classic: dados de produtos ao vivo e preparados são importados e mantidos no JCR no AEM Author por meio de importação completa ou delta de produtos. Os dados de produtos ao vivo são replicados para o AEM Publish.
 
 ## Experiências do catálogo de produtos com renderização por AEM
 
@@ -56,7 +56,7 @@ O AEM renderiza experiências de catálogo de produtos dinamicamente usando mode
 
 **Versões anteriores do CIF**
 
-* CIF Classic: AEM Author cria uma página do AEM para cada categoria/produto usando a ferramenta de blueprint do catálogo. Essas páginas são replicadas para AEM Publish.
+* CIF Classic: AEM Author cria uma página do AEM para cada categoria/produto usando a ferramenta de blueprint do catálogo. Essas páginas são replicadas para o AEM Publish.
 
 >[!NOTE]
 >

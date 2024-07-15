@@ -24,12 +24,12 @@ Depois de instalado, o filtro bloqueia o acesso a todos os ativos. Por exemplo, 
 
 ## Configurar o filtro de disposição de conteúdo {#configure-content-disposition-filter}
 
-É possível exibir a [Filtro de disposição de conteúdo Apache Sling no GitHub](https://github.com/apache/sling-org-apache-sling-security/blob/master/src/main/java/org/apache/sling/security/impl/ContentDispositionFilterConfiguration.java).
+Você pode exibir o [Filtro de disposição de conteúdo do Apache Sling no GitHub](https://github.com/apache/sling-org-apache-sling-security/blob/master/src/main/java/org/apache/sling/security/impl/ContentDispositionFilterConfiguration.java).
 
 As opções de Filtro de disposição de conteúdo oferecem a seguinte funcionalidade:
 
-* **Caminhos de disposição do conteúdo:** Uma lista de caminhos em que o filtro é aplicado seguida por uma lista de tipos MIME a serem excluídos nesse caminho. Este caminho deve ser absoluto e pode conter um curinga (`*`) no final, para corresponder cada caminho de recurso ao prefixo de caminho fornecido. Por exemplo: `/content/*:image/jpeg,image/svg+xml` aplica o filtro a cada nó em `/content?` exceto imagens de JPG e SVG.
+* **Caminhos de Disposição de Conteúdo:** Uma lista de caminhos em que o filtro é aplicado seguida por uma lista de tipos MIME a serem excluídos nesse caminho. Este caminho deve ser um caminho absoluto e pode conter um curinga (`*`) no final, para corresponder cada caminho de recurso com o prefixo de caminho fornecido. Por exemplo: `/content/*:image/jpeg,image/svg+xml` aplica o filtro a todos os nós em `/content?`, exceto imagens de SVG e JPG.
 
-* **Caminhos de recursos excluídos:** Uma lista de recursos excluídos, cada caminho de recurso deve ser fornecido como um caminho absoluto e totalmente qualificado. Correspondência de prefixos/curingas não são suportados.
+* **Caminhos de Recursos Excluídos:** Uma lista de recursos excluídos, cada caminho de recurso deve ser fornecido como um caminho absoluto e totalmente qualificado. Correspondência de prefixos/curingas não são suportados.
 
-* **Ativar Para Todos Os Caminhos De Recursos:** Esse sinalizador controla se esse filtro deve ser habilitado para todos os caminhos, exceto para os caminhos excluídos definidos pelos Caminhos de recursos excluídos. Definir esse sinalizador como &#39;true&#39; resulta na ignorância dos Caminhos de disposição de conteúdo. Independentemente da configuração, somente os caminhos de recursos são cobertos que contêm uma propriedade chamada `jcr:data` ou `jcr:content/jcr:data`.
+* **Habilitar Para Todos os Caminhos de Recursos:** Esse sinalizador controla se este filtro deve ser habilitado para todos os caminhos, exceto para os caminhos excluídos definidos pelos Caminhos de Recursos Excluídos. Definir esse sinalizador como &#39;true&#39; resulta na ignorância dos Caminhos de disposição de conteúdo. Independentemente da configuração, somente caminhos de recursos são cobertos que contenham uma propriedade chamada `jcr:data` ou `jcr:content/jcr:data`.

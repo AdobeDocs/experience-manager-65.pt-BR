@@ -1,5 +1,5 @@
 ---
-title: Criação de uma pasta de ativos Guia de início rápido do Headless
+title: Criação de um guia de início rápido do Assets Folder Headless
 description: Use os modelos de fragmento de conteúdo do AEM para definir a estrutura dos fragmentos de conteúdo, a base do seu conteúdo headless.
 exl-id: 8d913056-fcfa-4cdd-b40a-771f13dfd0f4
 solution: Experience Manager, Experience Manager Sites
@@ -12,7 +12,7 @@ ht-degree: 78%
 
 ---
 
-# Criação de uma pasta de ativos Guia de início rápido do Headless {#creating-an-assets-folder}
+# Criação de um guia de início rápido do Assets Folder Headless {#creating-an-assets-folder}
 
 Use os modelos de fragmento de conteúdo do AEM para definir a estrutura dos fragmentos de conteúdo, a base do seu conteúdo headless. Os fragmentos de conteúdo são armazenados nas pastas de ativos.
 
@@ -22,13 +22,13 @@ Use os modelos de fragmento de conteúdo do AEM para definir a estrutura dos fra
 
 No entanto, primeiro será necessário criar uma pasta de ativos na qual você os armazenará.
 
-As pastas de ativos são usadas para [organizar ativos de conteúdo tradicionais](/help/assets/manage-assets.md) como imagens, vídeos e fragmentos de conteúdo.
+As pastas do Assets são usadas para [organizar ativos de conteúdo tradicionais](/help/assets/manage-assets.md), como imagens e vídeos e Fragmentos de conteúdo.
 
 ## Como criar uma pasta de ativos {#how-to-create-an-assets-folder}
 
 Um administrador só precisaria criar pastas ocasionalmente para organizar o conteúdo, conforme ele fosse criado. Para os propósitos deste guia de introdução, precisamos criar apenas uma pasta.
 
-1. Faça logon no AEM e, no menu principal, selecione **Navegação > Ativos > Arquivos**.
+1. Faça logon no AEM e, no menu principal, selecione **Navegação > Assets > Arquivos**.
 1. Clique em **Criar > Pasta**.
 1. Forneça um **Título** e um **Nome** para sua pasta.
    * O **Título** deve ser descritivo.
@@ -37,7 +37,7 @@ Um administrador só precisaria criar pastas ocasionalmente para organizar o con
       * Ele pode ser ajustado, se necessário.
 
    ![Criar pasta](assets/assets-folder-create.png)
-1. Selecione a pasta criada e selecione **Propriedades** na barra de ferramentas (ou use o `p` [atalho de teclado.](/help/sites-authoring/keyboard-shortcuts.md))
+1. Selecione a pasta que você criou e selecione **Propriedades** na barra de ferramentas (ou use o `p` [atalho de teclado.](/help/sites-authoring/keyboard-shortcuts.md))
 1. Na janela **Propriedades**, selecione a guia **Serviços em nuvem**.
 1. Para a **Configuração na nuvem**, selecione a [configuração criada anteriormente.](create-configuration.md)
    ![Configurar pasta de ativos](assets/assets-folder-configure.png)

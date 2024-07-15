@@ -21,30 +21,30 @@ ht-degree: 0%
 
 Configurar uma nova campanha inclui as seguintes etapas (genéricas):
 
-1. [Criar uma marca](#creating-a-new-brand) para manter suas campanhas.
-1. Se necessário, você pode [definir as propriedades da nova marca](#defining-the-properties-for-your-new-brand).
-1. [Criar uma campanha](#creating-a-new-campaign) para manter experiências; por exemplo, páginas de teaser ou um boletim informativo.
-1. Se necessário, você pode [definir as propriedades da nova campanha](#defining-the-properties-for-your-new-campaign).
+1. [Crie uma marca](#creating-a-new-brand) para manter suas campanhas.
+1. Se necessário, você pode [definir as propriedades da sua nova marca](#defining-the-properties-for-your-new-brand).
+1. [Crie uma campanha](#creating-a-new-campaign) para manter experiências; por exemplo, páginas de teaser ou um boletim informativo.
+1. Se necessário, você pode [definir as propriedades para sua nova campanha](#defining-the-properties-for-your-new-campaign).
 
-Em seguida, dependendo do tipo de experiências criadas, é necessário [criar uma experiência](#creating-a-new-experience). Os detalhes da experiência e as ações que seguem sua criação dependem do tipo de experiência que você deseja criar:
+Em seguida, dependendo do tipo de experiências que você criar, será necessário [criar uma experiência](#creating-a-new-experience). Os detalhes da experiência e as ações que seguem sua criação dependem do tipo de experiência que você deseja criar:
 
 * Se estiver criando um Teaser:
 
    1. [Criar uma experiência de teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingateaserexperience).
    1. [Adicionar conteúdo ao seu teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#addingcontenttoyourteaser).
-   1. [Criar um ponto de contato para o teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingatouchpointforyourteaser) (adicione seu teaser a uma página de conteúdo).
+   1. [Crie um ponto de contato para seu Teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingatouchpointforyourteaser) (adicione seu teaser a uma página de conteúdo).
 
 * Se estiver criando um informativo:
 
    1. [Criar uma experiência com informativo](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatinganewsletterexperience).
    1. [Adicionar conteúdo ao informativo.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#addingcontenttonewsletters)
    1. [Personalize o informativo.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#personalizingnewsletters)
-   1. [Crie uma página de aterrissagem atraente de boletim informativo](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#settingupanewsletterlandingpage).
-   1. [Enviar informativo](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#sendingnewsletters) assinantes ou clientes potenciais.
+   1. [Crie uma página de aterrissagem atraente do informativo](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#settingupanewsletterlandingpage).
+   1. [Enviar o informativo](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#sendingnewsletters) aos assinantes ou clientes potenciais.
 
 * Se estiver criando uma oferta do Adobe Target (antigo Test&amp;Target):
 
-   1. [Criar uma experiência de oferta do Adobe Target](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingatesttargetofferexperience).
+   1. [Crie uma experiência de oferta do Adobe Target](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingatesttargetofferexperience).
    1. [Fazer a integração com o Adobe Target](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#integratewithadobetesttarget)
 
 >[!NOTE]
@@ -55,7 +55,7 @@ Em seguida, dependendo do tipo de experiências criadas, é necessário [criar u
 
 1. Abra o **MCM** e selecione **Campanhas** no painel esquerdo.
 
-1. Selecionar **Novo...** para inserir o **Título** e **Nome** e o modelo a ser usado para sua nova marca:
+1. Selecione **Novo...** para inserir o **Título** e o **Nome** e o modelo a ser usado para sua nova marca:
 
    ![chlimage_1-17](assets/chlimage_1-17.png)
 
@@ -63,9 +63,9 @@ Em seguida, dependendo do tipo de experiências criadas, é necessário [criar u
 
 ### Definição das propriedades da sua nova marca {#defining-the-properties-for-your-new-brand}
 
-1. De **Campanhas** no painel esquerdo, selecione o ícone de nova marca no painel direito e clique em **Propriedades...**
+1. Em **Campanhas** no painel esquerdo, selecione o ícone de nova marca no painel direito e clique em **Propriedades...**
 
-   Você pode inserir um **Título**, **Descrição** e uma imagem para ser usada como o ícone.
+   Você pode inserir um **Título**, **Descrição** e uma imagem a ser usada como ícone.
 
    ![chlimage_1-18](assets/chlimage_1-18.png)
 
@@ -73,11 +73,11 @@ Em seguida, dependendo do tipo de experiências criadas, é necessário [criar u
 
 ### Criar uma nova campanha {#creating-a-new-campaign}
 
-1. De **Campanhas**, selecione a nova marca no painel esquerdo ou clique duas vezes no ícone no painel direito.
+1. Em **Campanhas**, selecione sua nova marca no painel esquerdo ou clique duas vezes no ícone no painel direito.
 
    A visão geral é exibida (vazio se a marca for nova).
 
-1. Clique em **Novo...** e especificar a **Título**, **Nome** e o template a ser usado para sua nova campanha.
+1. Clique em **Novo...** e especifique o **Título**, **Nome** e o modelo a ser usado para sua nova campanha.
 
    ![chlimage_1-19](assets/chlimage_1-19.png)
 
@@ -87,16 +87,16 @@ Em seguida, dependendo do tipo de experiências criadas, é necessário [criar u
 
 Configure as propriedades de campanha que controlam o comportamento:
 
-* **Prioridade:** A prioridade desta campanha em relação a outras campanhas. Quando várias campanhas estão simultaneamente Ativada, a campanha com a maior prioridade controla a experiência do visitante.
-* **Horário ligado e desligado:** Essas propriedades controlam o período em que a campanha controla a experiência do visitante. A propriedade No prazo controla o horário em que a campanha começa a controlar a experiência. A propriedade Momento de desligar controla quando as campanhas param de controlar a experiência.
-* **Imagem:** A imagem que representa a campanha no AEM.
-* **Cloud Service:** As configurações de Cloud Service com as quais a campanha está integrada. (Consulte [Integração com o Adobe Marketing Cloud](/help/sites-administering/marketing-cloud.md).)
+* **Prioridade:** a prioridade desta campanha em relação a outras campanhas. Quando várias campanhas estão simultaneamente Ativada, a campanha com a maior prioridade controla a experiência do visitante.
+* **Horário ligado e desligado:** essas propriedades controlam o período quando a campanha controla a experiência do visitante. A propriedade No prazo controla o horário em que a campanha começa a controlar a experiência. A propriedade Momento de desligar controla quando as campanhas param de controlar a experiência.
+* **Imagem:** a imagem que representa a campanha no AEM.
+* **Cloud Services:** As configurações de Cloud Service com as quais a campanha está integrada. (Consulte [Integração com o Adobe Marketing Cloud](/help/sites-administering/marketing-cloud.md).)
 
-* **Adobe Target:** Propriedades que configuram campanhas integradas ao Adobe Target. (Consulte [Integração com o Adobe Target](/help/sites-administering/target.md).)
+* **Adobe Target:** propriedades que configuram campanhas integradas ao Adobe Target. (Consulte [Integração com o Adobe Target](/help/sites-administering/target.md).)
 
-1. De **Campanhas**, selecione sua marca. No painel direito, selecione sua campanha e clique em **Propriedades**.
+1. Em **Campanhas**, selecione sua marca. No painel direito, selecione sua campanha e clique em **Propriedades**.
 
-   É possível inserir várias propriedades, incluindo uma **Título**, **Descrição** e qualquer **Cloud Service** você quer.
+   Você pode inserir várias propriedades, incluindo um **Título**, **Descrição** e qualquer **Cloud Service** que desejar.
 
    ![chlimage_1-20](assets/chlimage_1-20.png)
 
@@ -112,7 +112,7 @@ O procedimento para criar uma experiência depende do tipo de experiência:
 
 >[!NOTE]
 >
->Assim como nas versões anteriores, ainda é possível criar a experiência como uma página no **Sites** console do (e todas as páginas criadas em versões anteriores ainda são totalmente compatíveis).
+>Assim como nas versões anteriores, ainda é possível criar a experiência como uma página no console **Sites** (e todas as páginas criadas em versões anteriores ainda são totalmente compatíveis).
 >
 >A prática recomendada agora é usar o MCM para criar experiências.
 
@@ -123,16 +123,16 @@ Agora que você criou o esqueleto básico para sua experiência, é necessário 
 * [Teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#teasers):
 
    * [Conecte a página de teaser aos segmentos de visitantes.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#applyingasegmenttoyourteaser)
-   * [Criar um ponto de contato para o teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingatouchpointforyourteaser) (adicione seu teaser a uma página de conteúdo).
+   * [Crie um ponto de contato para seu Teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingatouchpointforyourteaser) (adicione seu teaser a uma página de conteúdo).
 
 * [Informativo](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#newsletters):
 
    * [Adicionar conteúdo ao informativo.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#addingcontenttonewsletters)
    * [Personalize o informativo.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#personalizingnewsletters)
-   * [Enviar informativo](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#sendingnewsletters) assinantes ou clientes potenciais.
-   * [Crie uma página de aterrissagem atraente de boletim informativo](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#settingupanewsletterlandingpage).
+   * [Enviar o informativo](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#sendingnewsletters) aos assinantes ou clientes potenciais.
+   * [Crie uma página de aterrissagem atraente do informativo](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#settingupanewsletterlandingpage).
 
-* [Oferta do Adobe Target](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#testtargetoffers):
+* [Oferta da Adobe Target](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#testtargetoffers):
 
    * [Fazer a integração com o Adobe Target](/help/sites-administering/target.md)
 
@@ -153,13 +153,13 @@ Se você tiver experiências existentes, poderá adicionar um ponto de contato d
 >[!NOTE]
 >
 >A Adobe não está planejando aprimorar ainda mais esse recurso (Gerenciando clientes em potencial).
->A recomendação é usar [Adobe Campaign e a integração com o AEM](/help/sites-administering/campaign.md).
+>A recomendação é usar o [Adobe Campaign e a integração com o AEM](/help/sites-administering/campaign.md).
 
 No AEM MCM, é possível organizar e adicionar leads inserindo-os manualmente ou importando uma lista separada por vírgulas, por exemplo, uma lista de mala direta. Outras maneiras de gerar leads são: inscrições em newsletters ou inscrições em comunidades (se configuradas, elas podem acionar um workflow que preenche leads).
 
 Os clientes em potencial geralmente são categorizados e colocados em uma lista para que posteriormente você possa executar ações em toda a lista, por exemplo, enviar um email personalizado para uma determinada lista.
 
-No Painel, acesse todos os leads clicando em **Clientes potenciais** no painel esquerdo. Também é possível acessar clientes em potencial pelo **Listas** painel.
+No Painel, acesse todos os clientes em potencial clicando em **Clientes em potencial** no painel esquerdo. Você também pode acessar clientes em potencial no painel **Listas**.
 
 ![screen_shot_2012-02-21at114748am](assets/screen_shot_2012-02-21at114748am.png)
 
@@ -169,20 +169,20 @@ No Painel, acesse todos os leads clicando em **Clientes potenciais** no painel e
 
 ### Criar novos clientes potenciais {#creating-new-leads}
 
-Depois de criar novos leads, certifique-se de [ativá-los](#activating-or-deactivating-leads) para que você possa rastrear a atividade deles na instância de publicação e personalizar a experiência deles.
+Depois de criar novos clientes potenciais, certifique-se de [ativá-los](#activating-or-deactivating-leads) para que você possa acompanhar sua atividade na instância de publicação e personalizar sua experiência.
 
 Para criar um cliente potencial manualmente:
 
-1. No AEM, navegue até o MCM. No Painel, clique em **Clientes potenciais**.
-1. Clique em **Novo**. A variável **Criar novo** é aberta.
+1. No AEM, navegue até o MCM. No Painel, clique em **Clientes Potenciais**.
+1. Clique em **Novo**. A janela **Criar novo** é aberta.
 
    ![screen_shot_2012-02-21at115008am](assets/screen_shot_2012-02-21at115008am.png)
 
-1. Insira informações nos campos, conforme apropriado. Clique em **Endereço** guia.
+1. Insira informações nos campos, conforme apropriado. Clique na guia **Endereço**.
 
    ![screen_shot_2012-02-21at115045am](assets/screen_shot_2012-02-21at115045am.png)
 
-1. Especifique as informações do endereço, conforme apropriado. Clique em **Salvar** para salvar o lead. Se precisar adicionar outros clientes em potencial, clique em **Salvar e novo**.
+1. Especifique as informações do endereço, conforme apropriado. Clique em **Salvar** para salvar o cliente potencial. Se precisar adicionar outros clientes em potencial, clique em **Salvar e Novo**.
 
    O novo lead aparece no painel Leads. Quando você clica na entrada, todas as informações inseridas são exibidas no painel direito. Depois de criar um cliente potencial, você pode adicioná-lo a uma lista.
 
@@ -194,13 +194,13 @@ A ativação de leads ajuda a rastrear sua atividade na instância de publicaç�
 
 Para leads ativos ou desativos:
 
-1. No AEM, navegue até o MCM e clique em **Clientes potenciais**.
+1. No AEM, navegue até o MCM e clique em **Líderes**.
 
 1. Selecione os clientes em potencial que deseja ativar ou desativar e clique em **Ativar** ou **Desativar**.
 
    ![screen_shot_2012-02-21at120620pm](assets/screen_shot_2012-02-21at120620pm.png)
 
-   Assim como com as páginas AEM, o status de publicação é indicado na variável **Publicado** coluna.
+   Assim como nas páginas AEM, o status de publicação é indicado na coluna **Publicado**.
 
    ![screen_shot_2012-02-21at122901pm](assets/screen_shot_2012-02-21at122901pm.png)
 
@@ -210,16 +210,16 @@ Ao importar novos leads, você pode adicioná-los automaticamente a uma lista ex
 
 Para importar clientes em potencial de uma lista separada por vírgulas:
 
-1. No AEM, navegue até o MCM e clique em **Clientes potenciais**.
+1. No AEM, navegue até o MCM e clique em **Líderes**.
 
    >[!NOTE]
    >
    >Como alternativa, você pode importar clientes em potencial seguindo um destes procedimentos:
    >
-   >* No Painel, clique em **Importar clientes em potencial** no **Listas** painel
-   >* Clique em **Listas** e no **Ferramentas** selecione **Importar clientes em potencial**.
+   >* No Painel, clique em **Importar clientes em potencial** no painel **Listas**
+   >* Clique em **Listas** e, no menu **Ferramentas**, selecione **Importar clientes em potencial**.
 
-1. No **Ferramentas** selecione **Importar** **Clientes potenciais**.
+1. No menu **Ferramentas**, selecione **Importar** **Cliente em potencial**.
 
 1. Insira as informações conforme descrito em Dados de amostra. Os seguintes campos podem ser importados: email,familyName,givenName,gender,aboutMe,city,country,phoneNumber,postalCode,region,streetAddress
 
@@ -228,7 +228,7 @@ Para importar clientes em potencial de uma lista separada por vírgulas:
    >A primeira linha na lista de CSV são rótulos predefinidos que devem ser escritos exatamente como no exemplo:
    >
    >
-   >`email,givenName,familyName` - se escrito como `givenname`Por exemplo, o sistema não o reconhecerá.
+   >`email,givenName,familyName` - se escrito como `givenname`, por exemplo, o sistema não o reconhecerá.
    >
    >
 
@@ -248,17 +248,17 @@ Para importar clientes em potencial de uma lista separada por vírgulas:
 
 Para adicionar leads a listas pré-existentes:
 
-1. No MCM, clique em **Clientes potenciais** para exibir todos os leads disponíveis.
+1. No MCM, clique em **Clientes potenciais** para exibir todos os clientes potenciais disponíveis.
 
 1. Selecione os clientes em potencial que deseja adicionar a uma lista marcando a caixa de seleção ao lado do cliente potencial. Você pode adicionar quantos clientes em potencial desejar.
 
    ![screen_shot_2012-02-21at123835pm](assets/screen_shot_2012-02-21at123835pm.png)
 
-1. No **Ferramentas** selecione **Adicionar à lista...** A variável **Adicionar à lista** é aberta.
+1. No menu **Ferramentas**, selecione **Adicionar à Lista....** A janela **Adicionar à Lista** é aberta.
 
    ![screen_shot_2012-02-21at124019pm](assets/screen_shot_2012-02-21at124019pm.png)
 
-1. Selecione a qual lista você deseja adicionar os leads e clique em **OK**. Os clientes em potencial são adicionados às listas apropriadas.
+1. Selecione a qual lista você deseja adicionar os clientes em potencial e clique em **OK**. Os clientes em potencial são adicionados às listas apropriadas.
 
 ### Exibir informações de cliente potencial {#viewing-lead-information}
 
@@ -270,7 +270,7 @@ Para exibir as informações do cliente potencial, no MCM, clique na caixa de se
 
 Para modificar informações sobre lead existentes:
 
-1. No MCM, clique em **Clientes potenciais**. Na lista de clientes potenciais, marque a caixa de seleção ao lado do cliente potencial que deseja editar. Todas as informações do lead aparecem no painel direito.
+1. No MCM, clique em **Clientes em potencial**. Na lista de clientes potenciais, marque a caixa de seleção ao lado do cliente potencial que deseja editar. Todas as informações do lead aparecem no painel direito.
 
    ![screen_shot_2012-02-21at124514pm](assets/screen_shot_2012-02-21at124514pm.png)
 
@@ -278,15 +278,15 @@ Para modificar informações sobre lead existentes:
    >
    >Só é possível editar um único cliente em potencial por vez. Se você precisar modificar clientes em potencial que fazem parte da mesma lista, modifique a lista.
 
-1. Clique em **Editar**. A variável **Editar lead** é aberta.
+1. Clique em **Editar**. A janela **Editar cliente em potencial** é aberta.
 
    ![screen_shot_2012-02-21at124609pm](assets/screen_shot_2012-02-21at124609pm.png)
 
-1. Faça as edições conforme necessário e clique em **Salvar** para salvar as alterações.
+1. Faça as edições conforme necessário e clique em **Salvar** para salvar suas alterações.
 
    >[!NOTE]
    >
-   >Para alterar o avatar principal, vá para o perfil dos usuários. É possível carregar o perfil na nuvem de sequência de cliques pressionando CTRL+ALT+c, clicando em **Carregar** e selecionando o perfil.
+   >Para alterar o avatar principal, vá para o perfil dos usuários. Você pode carregar o perfil na nuvem de sequência de cliques pressionando CTRL+ALT+c, clicando em **Carregar** e selecionando o perfil.
 
 ### Excluir clientes em potencial existentes {#deleting-existing-leads}
 
@@ -301,23 +301,23 @@ Para excluir clientes potenciais existentes no MCM, marque a caixa de seleção 
 >[!NOTE]
 >
 >A Adobe não está planejando aprimorar ainda mais esse recurso (gerenciamento de listas).
->A recomendação é usar [Adobe Campaign e a integração com o AEM](/help/sites-administering/campaign.md).
+>A recomendação é usar o [Adobe Campaign e a integração com o AEM](/help/sites-administering/campaign.md).
 
 As listas permitem organizar seus leads em grupos. Com listas, você pode direcionar suas campanhas de marketing para um grupo selecionado de pessoas; por exemplo, é possível enviar um informativo direcionado para uma lista. As listas estão visíveis no MCM, no Painel ou clicando em **Listas**. Ambos fornecem o nome da lista e o número de membros.
 
 ![screen_shot_2012-02-21at125021pm](assets/screen_shot_2012-02-21at125021pm.png)
 
-Se você clicar em **Listas**, você também poderá verificar se a lista é um membro de outra lista e ver uma descrição.
+Se você clicar em **Listas**, também poderá ver se a lista é um membro de outra lista e ver uma descrição.
 
 ![screen_shot_2012-02-21at124828pm](assets/screen_shot_2012-02-21at124828pm.png)
 
 ### Criação de novas listas {#creating-new-lists}
 
-1. No painel MCM, clique em **Nova lista ...** ou em **Listas**, clique em **Novo** .. A janela Criar lista é aberta.
+1. No painel MCM, clique em **Nova Lista...** ou em **Listas**, clique em **Nova**... A janela Criar lista é aberta.
 
    ![screen_shot_2012-02-21at125147pm](assets/screen_shot_2012-02-21at125147pm.png)
 
-1. Insira um nome (obrigatório), se desejar, uma descrição e clique em **Salvar**. A lista é exibida no campo **Listas** painel.
+1. Insira um nome (obrigatório) e, se desejar, uma descrição e clique em **Salvar**. A lista aparece no painel **Listas**.
 
    ![screen_shot_2012-02-21at125320pm](assets/screen_shot_2012-02-21at125320pm.png)
 
@@ -325,7 +325,7 @@ Se você clicar em **Listas**, você também poderá verificar se a lista é um 
 
 1. No MCM, clique em **Listas**.
 
-1. Na lista, marque a caixa de seleção ao lado da lista que deseja editar e clique em **Editar**. A variável **Editar lista** é aberta.
+1. Na lista, marque a caixa de seleção ao lado da lista que você deseja editar e clique em **Editar**. A janela **Editar Lista** é aberta.
 
    ![screen_shot_2012-02-21at125452pm](assets/screen_shot_2012-02-21at125452pm.png)
 
@@ -333,7 +333,7 @@ Se você clicar em **Listas**, você também poderá verificar se a lista é um 
    >
    >Só é possível editar uma lista por vez.
 
-1. Faça edições, conforme necessário, e clique em **Salvar** para salvar as alterações.
+1. Faça edições, conforme necessário, e clique em **Salvar** para salvar suas alterações.
 
 ### Exclusão de listas existentes {#deleting-existing-lists}
 
@@ -355,17 +355,17 @@ Para mesclar listas existentes:
 
 1. Selecione a lista que você deseja mesclar com outra lista marcando a caixa de seleção ao lado dela.
 
-1. No **Ferramentas** selecione **Mesclar lista**.
+1. No menu **Ferramentas**, selecione **Mesclar Lista**.
 
    >[!NOTE]
    >
    >Só é possível mesclar uma lista por vez.
 
-1. No **Mesclar lista** selecione a lista que deseja mesclar e clique em **OK**.
+1. Na janela **Mesclar Lista**, selecione a lista que deseja mesclar e clique em **OK**.
 
    ![screen_shot_2012-02-21at10259pm](assets/screen_shot_2012-02-21at10259pm.png)
 
-   A lista que você mesclou deve aumentar em um membro. Para ver se a lista foi mesclada, selecione a lista que você mesclou e na **Ferramentas** selecione **Mostrar clientes em potencial**.
+   A lista que você mesclou deve aumentar em um membro. Para ver se a sua lista foi mesclada, selecione a lista que você mesclou e, no menu **Ferramentas**, selecione **Mostrar clientes em potencial**.
 
 1. Repita a etapa até mesclar todas as listas desejadas.
 
@@ -373,7 +373,7 @@ Para mesclar listas existentes:
 
 >[!NOTE]
 >
->A remoção de uma lista mesclada de sua associação é idêntica à remoção de um cliente potencial de uma lista. Abra o **Listas** , selecione a lista que inclui a lista mesclada e remova a associação clicando no círculo vermelho ao lado da lista.
+>A remoção de uma lista mesclada de sua associação é idêntica à remoção de um cliente potencial de uma lista. Abra a guia **Listas**, selecione a lista que inclui a lista mesclada e remova a associação clicando no círculo vermelho ao lado da lista.
 
 ### Exibição de clientes em potencial em listas {#viewing-leads-in-lists}
 
@@ -385,11 +385,11 @@ Para exibir os clientes em potencial em listas:
 
 1. Marque a caixa de seleção ao lado da lista para a qual deseja exibir membros.
 
-1. No **Ferramentas** selecione **Mostrar clientes em potencial**. O AEM exibe os clientes em potencial que são membros dessa lista. Você pode navegar pela lista ou pesquisar membros.
+1. No menu **Ferramentas**, selecione **Mostrar clientes em potencial**. O AEM exibe os clientes em potencial que são membros dessa lista. Você pode navegar pela lista ou pesquisar membros.
 
    >[!NOTE]
    >
-   >Além disso, você pode excluir clientes em potencial de uma lista selecionando-os e clicando em **Remover associação**.
+   >Além disso, você pode excluir clientes em potencial de uma lista selecionando-os e clicando em **Remover Associação**.
 
    ![screen_shot_2012-02-21at10828pm](assets/screen_shot_2012-02-21at10828pm.png)
 

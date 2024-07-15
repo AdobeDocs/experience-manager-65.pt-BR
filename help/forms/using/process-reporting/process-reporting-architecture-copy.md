@@ -38,13 +38,13 @@ O Relatório de processos consiste nos seguintes módulos:
 
 O servidor ProcessDataPublisher é executado periodicamente no banco de dados do AEM Forms e extrai os dados alterados desde a última execução do serviço. Em seguida, ele publica os dados no serviço de Armazenamento de dados de processos.
 
-Para obter detalhes sobre a configuração do serviço, consulte [Configurar o serviço ProcessDataPublisher](/help/forms/using/process-reporting/install-start-process-reporting.md#p-reportconfiguration-service-p).
+Para obter detalhes sobre como configurar o serviço, consulte [Configurar o serviço ProcessDataPublisher](/help/forms/using/process-reporting/install-start-process-reporting.md#p-reportconfiguration-service-p).
 
 ### Serviço ProcessDataStorageProvider {#processdatastorageprovider-service-br}
 
 O serviço ProcessDataStorageProvider recebe dados do processo do serviço ProcessDataPublisher e salva os dados no repositório do Process Reporting.
 
-Para obter detalhes sobre a configuração do serviço, consulte [Configurar o serviço ProcessDataStorageProvider](/help/forms/using/process-reporting/install-start-process-reporting.md#p-to-configure-the-process-reporting-repository-locations-p).
+Para obter detalhes sobre como configurar o serviço, consulte [Configurar o serviço ProcessDataStorageProvider](/help/forms/using/process-reporting/install-start-process-reporting.md#p-to-configure-the-process-reporting-repository-locations-p).
 
 ### Serviço OSGi {#osgi-service-br}
 
@@ -70,4 +70,4 @@ O serviço usa serviços OSGi para obter os dados de relatório relevantes, proc
 
 Você pode criar seus próprios relatórios personalizados e exibi-los na guia Relatórios personalizados da interface do usuário Processar relatórios.
 
-Para obter as etapas para criar um relatório personalizado, consulte Para criar um relatório personalizado no artigo [Relatórios personalizados em relatórios de processo](/help/forms/using/process-reporting/process-reporting-custom-reports.md).
+Para obter as etapas para criar um relatório personalizado, consulte Para criar um relatório personalizado no artigo [Relatórios Personalizados em Relatórios de Processo](/help/forms/using/process-reporting/process-reporting-custom-reports.md).

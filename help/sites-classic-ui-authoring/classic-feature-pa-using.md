@@ -28,4 +28,4 @@ Os dados de análise de página são exibidos no console Sites. Quando os sites 
 
 >[!NOTE]
 >
->A exibição dos dados do site Analytics diretamente no console só está disponível na interface otimizada para toque. Consulte [Visualização de dados de análise de página](/help/sites-authoring/page-analytics-using.md) na documentação de criação padrão para obter detalhes.
+>A exibição dos dados do site Analytics diretamente no console só está disponível na interface otimizada para toque. Consulte [Vendo dados de análise da página](/help/sites-authoring/page-analytics-using.md) na documentação de criação padrão para obter detalhes.

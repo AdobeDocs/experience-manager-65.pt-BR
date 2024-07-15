@@ -18,7 +18,7 @@ ht-degree: 2%
 
 # Gerar documento de registro para formulários adaptáveis ou fragmentos de formulário adaptáveis {#generate-document-of-record-for-adaptive-forms}
 
-<span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) para [criação de um novo Forms adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
+O <span class="preview"> Adobe recomenda o uso de [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adicionar o Forms Adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
@@ -54,7 +54,8 @@ Permite selecionar uma definição de esquema XML para o formulário adaptável.
    * Associe um modelo XFA para o documento de registro. Certifique-se de que o modelo XFA associado use o mesmo esquema XML que o formulário adaptável
    * Gerar automaticamente documento de registro
 
-* Nenhum Permite criar um formulário adaptável sem um modelo de formulário. O documento de registro é gerado automaticamente para o formulário adaptável.
+* Nenhum
+Permite criar um formulário adaptável sem um modelo de formulário. O documento de registro é gerado automaticamente para o formulário adaptável.
 
 Ao selecionar um modelo de formulário, configure o documento de registro usando as opções disponíveis em Documento de configuração do modelo de registro. Consulte [Documento de configuração de modelo de registro](#document-of-record-template-configuration).
 
@@ -86,11 +87,11 @@ Consulte [Modelo base de um documento de registro](#base-template-of-a-document-
 >
 >O modelo base de um documento de registro também é chamado de metamodelo de um documento de registro.
 
-**Documento do modelo de registro** Modelo XFA (arquivo XDP) gerado de um formulário adaptável.
+**Documento de modelo de registro** Modelo XFA (arquivo XDP) gerado de um formulário adaptável.
 
 Consulte [Documento de configuração de modelo de registro](#document-of-record-template-configuration).
 
-**Dados de formulário** Informações preenchidas por um usuário no formulário adaptável. Ele é mesclado com o documento do modelo de registro para gerar o documento de registro.
+**Dados do formulário** Informações preenchidas por um usuário no formulário adaptável. Ele é mesclado com o documento do modelo de registro para gerar o documento de registro.
 
 ## Mapeamento de elementos de formulário adaptáveis {#mapping-of-adaptive-form-elements}
 
@@ -223,34 +224,34 @@ Os componentes da tabela de formulários adaptáveis, como cabeçalho, rodapé e
 
 O modelo base fornece informações de estilo e aparência ao documento de registro. Ele permite personalizar a aparência padrão do documento de registro gerado automaticamente. Por exemplo, você deseja adicionar o logotipo da empresa no cabeçalho e as informações de direitos autorais no rodapé do documento de registro. A página mestra do modelo base é usada como uma página mestra do documento de modelo de registro. A página-mestre pode ter informações como cabeçalho, rodapé e número de página que podem ser aplicadas ao documento de registro. É possível aplicar essas informações ao documento de registro usando o modelo base para geração automática do documento de registro. O uso do template base permite alterar as propriedades padrão dos campos.
 
-Certifique-se de seguir [Convenções do modelo base](#base-template-conventions) ao criar o modelo base.
+Siga as [Convenções do modelo base](#base-template-conventions) ao criar o modelo base.
 
 ## Convenções do modelo base {#base-template-conventions}
 
 Um modelo base é usado para definir o cabeçalho, rodapé, estilo e aparência de um documento de registro. O cabeçalho e o rodapé podem incluir informações como o logotipo da empresa e o texto de direitos autorais. A primeira página mestra no modelo base é copiada e usada como página mestra do documento de registro, que contém o cabeçalho, o rodapé, o número da página ou qualquer outra informação que deva aparecer em todas as páginas do documento de registro. Se você estiver usando um modelo base que não esteja em conformidade com as convenções do modelo base, a primeira página mestra do modelo base ainda será usada no documento de modelo de registro. É altamente recomendável que você crie seu modelo base de acordo com suas convenções e o use para a geração automática do documento de registro.
 
-**Convenções da página principal**
+**Convenções de página mestra**
 
-* No modelo base, você deve nomear o subformulário raiz como `AF_METATEMPLATE` e a página principal como `AF_MASTERPAGE`.
+* No modelo base, você deve nomear o subformulário raiz como `AF_METATEMPLATE` e a página mestra como `AF_MASTERPAGE`.
 
-* A página mestra com o nome `AF_MASTERPAGE` localizado abaixo de `AF_METATEMPLATE` o subformulário raiz recebe preferência para extrair informações de cabeçalho, rodapé e estilo.
+* A página mestra com o nome `AF_MASTERPAGE`, localizada no subformulário raiz `AF_METATEMPLATE`, recebe preferência para extrair informações de cabeçalho, rodapé e estilo.
 
-* Se `AF_MASTERPAGE` estiver ausente, a primeira página principal presente no modelo base será usada.
+* Se `AF_MASTERPAGE` estiver ausente, a primeira página mestra presente no modelo base será usada.
 
 **Convenções de estilo para campos**
 
-* Para aplicar estilo aos campos no documento de registro, o modelo base fornece campos no `AF_FIELDSSUBFORM` subde sob o `AF_METATEMPLATE` subformulário raiz.
+* Para aplicar estilo aos campos no documento de registro, o modelo base fornece campos no subformulário `AF_FIELDSSUBFORM` sob o subformulário raiz `AF_METATEMPLATE`.
 
-* As propriedades desses campos são aplicadas aos campos no documento de registro. Esses campos devem seguir o `AF_<name of field in all caps>_XFO` convenção de nomenclatura. Por exemplo, o nome do campo da caixa de seleção deve ser `AF_CHECKBOX_XFO`.
+* As propriedades desses campos são aplicadas aos campos no documento de registro. Esses campos devem seguir a convenção de nomenclatura `AF_<name of field in all caps>_XFO`. Por exemplo, o nome do campo da caixa de seleção deve ser `AF_CHECKBOX_XFO`.
 
 Para criar um template base, faça o seguinte no AEM Designer.
 
 1. Clique em **Arquivo > Novo**.
-1. Selecione o **Com base em um modelo** opção.
+1. Selecione a opção **Baseado em um modelo**.
 
-1. Selecione o **Forms - Documento de registro** categoria.
-1. Selecionar **Modelo base do DoR**.
-1. Clique em **Próxima** e fornecer as informações necessárias.
+1. Selecione a categoria **Forms - Documento de Registro**.
+1. Selecione **Modelo Base DoR**.
+1. Clique em **Avançar** e forneça as informações necessárias.
 
 1. (Opcional) Modifique o estilo e a aparência dos campos que deseja aplicar nos campos do documento de registro.
 1. Salve o formulário.
@@ -258,7 +259,7 @@ Para criar um template base, faça o seguinte no AEM Designer.
 Agora você pode usar o formulário salvo como um modelo base para o documento de registro.
 Não modifique ou remova scripts presentes no modelo base.
 
-**Modificação do modelo base**
+**Modificando modelo base**
 
 * Se você não estiver aplicando nenhum estilo sobre os campos no modelo base, é aconselhável remover esses campos do modelo base para que todas as atualizações do modelo base sejam selecionadas automaticamente.
 * Ao modificar o modelo base, não remova, adicione ou modifique scripts.
@@ -273,24 +274,24 @@ Configure o documento de modelo de registro do seu formulário para permitir que
 
 Execute as seguintes etapas para configurar um documento de registro para formulários adaptáveis:
 
-1. Na instância do autor AEM, clique em **Forms > Forms e documentos.**
-1. Selecione um formulário e clique em **Propriedades da exibição**.
+1. Na instância do autor AEM, clique em **Forms > Forms e Documentos.**
+1. Selecione um formulário e clique em **Exibir Propriedades**.
 1. Na janela Propriedades, selecione **Modelo de formulário**.
 Você também pode selecionar um modelo de formulário ao criar um formulário.
 
    >[!NOTE]
    >
-   >Na guia Modelo de formulário, selecione **Esquema** ou **Nenhum** do **Selecionar de** menu suspenso. **[!UICONTROL O documento de registro não é compatível com formulários baseados em XFA ou adaptáveis com o Modelo de formulário como modelo de formulário.]**
+   >Na guia Modelo de formulário, selecione **Esquema** ou **Nenhum** no menu suspenso **Selecionar de**. **[!UICONTROL Não há suporte para o documento de registro em formulários baseados em XFA ou adaptáveis com o Modelo de formulário como modelo de formulário.]**
 
 1. Na seção Document of Record Template Configuration da guia Form Model, selecione uma das seguintes opções:
 
-   **Nenhum** Selecione essa opção se não quiser configurar o documento de registro para o formulário.
+   **Nenhum** Selecione esta opção se não quiser configurar o documento de registro para o formulário.
 
-   **Associar o modelo de formulário como o documento de modelo de registro** Selecione essa opção se você tiver um arquivo XDP que deseja usar como modelo para o documento de registro. Ao selecionar essa opção, todos os arquivos XDP disponíveis no repositório do AEM Forms são exibidos. Selecione o arquivo apropriado.
+   **Associar modelo de formulário como documento de modelo de registro** Selecione esta opção se você tiver um arquivo XDP que deseja usar como modelo para o documento de registro. Ao selecionar essa opção, todos os arquivos XDP disponíveis no repositório do AEM Forms são exibidos. Selecione o arquivo apropriado.
 
    O arquivo XDP selecionado é associado ao formulário adaptável.
 
-   **Gerar documento de registro** Selecione essa opção para usar um arquivo XDP como modelo base para definir o estilo e a aparência do documento de registro. Ao selecionar essa opção, todos os arquivos XDP disponíveis no repositório do AEM Forms são exibidos. Selecione o arquivo apropriado.
+   **Gerar documento de registro** Selecione esta opção para usar um arquivo XDP como modelo base para definir o estilo e a aparência do documento de registro. Ao selecionar essa opção, todos os arquivos XDP disponíveis no repositório do AEM Forms são exibidos. Selecione o arquivo apropriado.
 
    >[!NOTE]
    >
@@ -299,7 +300,7 @@ Você também pode selecionar um modelo de formulário ao criar um formulário.
    >
    >
    >    * Seu formulário adaptável é baseado em esquema
-   >    * Você está usando **Associar o modelo de formulário como o documento de modelo de registro** opção para documento de registro
+   >    * Você está usando a opção **Associar Modelo de Formulário como Documento de Modelo de Registro** para o documento de registro
    >
    >
 
@@ -312,10 +313,10 @@ Ao gerar um documento de registro, você pode alterar as informações de marca 
 Para localizar as informações de marca inseridas na guia Documento de registro, é necessário garantir que o local do navegador esteja definido adequadamente. Para personalizar as informações de marca do documento de registro, conclua as seguintes etapas:
 
 1. Selecione um painel (painel raiz) no documento de registro e selecione ![configurar](assets/configure.png).
-1. Selecionar ![dortab](/help/forms/using/assets/dortab.png). A guia Documento de registro é exibida.
+1. Selecione ![dortab](/help/forms/using/assets/dortab.png). A guia Documento de registro é exibida.
 1. Selecione o modelo padrão ou um modelo personalizado para renderizar o documento de registro. Se você selecionar o modelo padrão, uma visualização em miniatura do documento de registro será exibida abaixo do menu suspenso Modelo.
 
-   ![brandingtemplate](/help/forms/using/assets/brandingtemplateupdate.png)
+   ![modelo de marca](/help/forms/using/assets/brandingtemplateupdate.png)
 
    Se você optar por selecionar um modelo personalizado, procure e selecione um XDP no servidor do AEM Forms. Se quiser usar um modelo que ainda não esteja no servidor do AEM Forms, primeiro faça upload do XDP para o seu servidor do AEM Forms.
 
@@ -323,11 +324,11 @@ Para localizar as informações de marca inseridas na guia Documento de registro
 
 Se você selecionar um modelo padrão ou personalizado, algumas ou todas as propriedades de página-mestre a seguir serão exibidas na guia Documento de registro, como mostrado na imagem acima. Especifique esses itens adequadamente:
 
-* **Imagem de logotipo**: Você pode optar por usar a imagem de logotipo do formulário adaptável, escolher um do DAM ou fazer upload de um do seu computador.
+* **Imagem de logotipo**: você pode optar por usar a imagem de logotipo do formulário adaptável, escolher uma do DAM ou carregar uma do seu computador.
 * **Título do formulário**
-* **Texto do cabeçalho**
+* **Texto do Cabeçalho**
 * **Rótulo do aviso**
-* **Isenção de responsabilidade**
+* **Aviso de isenção de responsabilidade**
 * **Texto do aviso**
 
   <!--
@@ -340,11 +341,11 @@ Se você selecionar um modelo padrão ou personalizado, algumas ou todas as prop
     * **Hide description of panels**
     -->
 
-  Se o modelo XDP personalizado selecionado incluir várias páginas mestras, as propriedades dessas páginas aparecerão no **[!UICONTROL conteúdo]** seção do **[!UICONTROL Documento do registro]** guia.
+  Se o modelo XDP personalizado selecionado incluir várias páginas mestras, as propriedades dessas páginas aparecerão na seção **[!UICONTROL conteúdo]** da guia **[!UICONTROL Documento de Registro]**.
 
-  ![Propriedades da página principal](assets/master-page-properties.png)
+  ![Propriedades da Página Mestra](assets/master-page-properties.png)
 
-  As propriedades da página principal incluem Imagem de logotipo, Texto do cabeçalho, Título do formulário, Rótulo do aviso e Texto do aviso. Você pode aplicar propriedades de formulário adaptável ou modelo XDP ao documento de registro. Por padrão, o AEM Forms aplica as propriedades do modelo ao Documento de registro. Você também pode definir valores personalizados para as propriedades da página-mestre. Para obter informações sobre como aplicar várias páginas-mestre em um documento de registro, consulte [Aplicar várias páginas-mestre a um documento de registro](#apply-multiple-master-pages-dor).
+  As propriedades da página principal incluem Imagem de logotipo, Texto do cabeçalho, Título do formulário, Rótulo do aviso e Texto do aviso. Você pode aplicar propriedades de formulário adaptável ou modelo XDP ao documento de registro. Por padrão, o AEM Forms aplica as propriedades do modelo ao Documento de registro. Você também pode definir valores personalizados para as propriedades da página-mestre. Para obter informações sobre como aplicar várias páginas mestras em um Documento de Registro, consulte [Aplicar várias páginas mestras a um Documento de Registro](#apply-multiple-master-pages-dor).
 
   >[!NOTE]
   >
@@ -370,11 +371,11 @@ O formulário adaptável pode ser longo, com vários campos de formulário. Talv
 
 Antes de gerar um documento de registro, nas configurações de um painel, selecione Layout do documento de registro desse painel como Tabela ou Coluna. Os campos no painel são organizados de acordo no documento de registro.
 
-![Campos em um painel renderizado em um layout de tabela no documento de registro](assets/dortablelayout.png)
+![Campos em um painel renderizados em um layout de tabela no documento de registro](assets/dortablelayout.png)
 
 Campos em um painel renderizado em um layout de tabela no documento de registro
 
-![Campos em um painel renderizado em um layout de coluna no documento de registro](assets/dorcolumnlayout.png)
+![Campos em um painel renderizados em um layout de coluna no documento de registro](assets/dorcolumnlayout.png)
 
 Campos em um painel renderizado em um layout de coluna no documento de registro
 
@@ -386,55 +387,55 @@ O documento de configurações de registro de um componente está disponível em
 
 **Configurações de nível de campo**
 
-* **Excluir do documento de registro**: Definir a propriedade como true exclui o campo do documento de registro. Esta é uma propriedade que pode ser gerada por script chamada `excludeFromDoR`. Seu comportamento depende da **Excluir campos de DoR se ocultos** propriedade de nível de formulário.
+* **Excluir do documento de registro**: definir a propriedade true exclui o campo do documento de registro. Esta é uma propriedade que pode ser gerada por script chamada `excludeFromDoR`. Seu comportamento depende de **Excluir campos do DoR se ocultos** propriedade de nível de formulário.
 
 * **Exibir painel como tabela:** Definir a propriedade exibe o painel como tabela no documento de registro se o painel tiver menos de 6 campos. Aplicável somente para o painel.
-* **Excluir título do documento de registro:** Definir a propriedade exclui o título do painel/tabela do documento de registro. Aplicável somente para painel e tabela.
-* **Excluir descrição do documento de registro:** Definir a propriedade exclui a descrição do painel/tabela do documento de registro. Aplicável somente para painel e tabela.
-* **[!UICONTROL Paginação]** > **[!UICONTROL Local]**: determina onde colocar o painel.
-   * **[!UICONTROL Local]** > **[!UICONTROL Seguinte Anterior]**: coloca o painel depois do objeto anterior no painel principal.
-   * **[!UICONTROL Local]** > **[!UICONTROL Na área de conteúdo]** > Nome da área de conteúdo: coloca o painel na área de conteúdo especificada.
-   * **[!UICONTROL Local]** > **[!UICONTROL Parte superior da próxima área de conteúdo]**: Coloca o painel na parte superior da próxima área de conteúdo.
-   * **[!UICONTROL Local]** > **[!UICONTROL Parte superior da área de conteúdo]** > Nome da área de conteúdo: coloca o painel na parte superior da área de conteúdo especificada.
-   * **[!UICONTROL Local]** > **[!UICONTROL Na página]** > Nome da página-mestre: coloca o painel na página especificada. Se uma quebra de página não for inserida automaticamente, [!DNL AEM Forms] adiciona uma quebra de página.
-   * **[!UICONTROL Local]** > **[!UICONTROL Parte superior da próxima página]**: coloca o painel na parte superior da próxima página. Se uma quebra de página não for inserida automaticamente, [!DNL AEM Forms] adiciona uma quebra de página.
-   * **[!UICONTROL Local]** > **[!UICONTROL Início da página]** > Nome da página-mestre: coloca o painel na parte superior da página quando a página especificada é renderizada. Se uma quebra de página não for inserida automaticamente, [!DNL AEM Forms] adiciona uma quebra de página.
-* **[!UICONTROL Paginação]** > **[!UICONTROL Depois]**: determina qual área deve ser preenchida depois que um painel é posicionado. Os seguintes campos estão disponíveis na **[!UICONTROL Depois]** seção:
-   * **[!UICONTROL Depois]** > **[!UICONTROL Continuar preenchendo o pai]**: continua mesclando os dados de todos os objetos que ainda não foram preenchidos no painel principal.
+* **Excluir título do documento de registro:** a configuração da propriedade exclui título do painel/tabela do documento de registro. Aplicável somente para painel e tabela.
+* **Excluir descrição do documento de registro:** a configuração da propriedade exclui a descrição do painel/tabela do documento de registro. Aplicável somente para painel e tabela.
+* **[!UICONTROL Paginação]** > **[!UICONTROL Local]**: determina onde você seleciona posicionar o painel.
+   * **[!UICONTROL Colocar]** > **[!UICONTROL Seguinte Anterior]**: coloca o painel depois do objeto anterior no painel pai.
+   * **[!UICONTROL Colocar]** > **[!UICONTROL Na área de conteúdo]** > Nome da área de conteúdo: coloca o painel na área de conteúdo especificada.
+   * **[!UICONTROL Inserir]** > **[!UICONTROL Início da Próxima Área de Conteúdo]**: coloca o painel na parte superior da próxima área de conteúdo.
+   * **[!UICONTROL Local]** > **[!UICONTROL Início da Área de Conteúdo]** > Nome da área de conteúdo: coloca o painel na parte superior da área de conteúdo especificada.
+   * **[!UICONTROL Colocar]** > **[!UICONTROL Na página]** > Nome da página mestra: coloca o painel na página especificada. Se uma quebra de página não for inserida automaticamente, [!DNL AEM Forms] adicionará uma quebra de página.
+   * **[!UICONTROL Inserir]** > **[!UICONTROL Início da Próxima Página]**: coloca o painel no topo da próxima página. Se uma quebra de página não for inserida automaticamente, [!DNL AEM Forms] adicionará uma quebra de página.
+   * **[!UICONTROL Local]** > **[!UICONTROL Início da Página]** > Nome da página mestra: coloca o painel na parte superior da página quando a página especificada é renderizada. Se uma quebra de página não for inserida automaticamente, [!DNL AEM Forms] adicionará uma quebra de página.
+* **[!UICONTROL Paginação]** > **[!UICONTROL Depois]**: determina qual área deve ser preenchida depois que um painel é colocado. Os seguintes campos estão disponíveis na seção **[!UICONTROL Depois]**:
+   * **[!UICONTROL Depois]** > **[!UICONTROL Continuar Preenchendo Pai]**: continua mesclando dados para todos os objetos restantes a serem preenchidos no painel pai.
    * **[!UICONTROL Depois]** > **[!UICONTROL Ir para a próxima área de conteúdo]**: começa a preencher a próxima área de conteúdo depois de posicionar o painel.
-   * **[!UICONTROL Depois]** > **[!UICONTROL Ir para área de conteúdo]** > Nome da área de conteúdo: começa a preencher a área de conteúdo especificada depois de colocar o painel.
-   * **[!UICONTROL Depois]** > **[!UICONTROL Ir para a próxima página]**: começa a preencher a próxima página após colocar o painel.
-   * **[!UICONTROL Depois]** > **[!UICONTROL Ir para página]** > Nome da página: começa a preencher a página especificada depois de colocar o painel.
-* **[!UICONTROL Paginação]** > **[!UICONTROL Estouro]**: define um estouro para um painel ou uma tabela que abrange páginas. Os seguintes campos estão disponíveis no **[!UICONTROL Estouro]** seção:
-   * **[!UICONTROL Estouro]** > **[!UICONTROL Nenhum]**: começa a preencher a próxima página. Se uma quebra de página não for inserida automaticamente, [!DNL AEM Forms] adiciona uma quebra de página.
-   * **[!UICONTROL Estouro]** > **[!UICONTROL Ir para a área de conteúdo]** > Nome da área de conteúdo: começa a preencher a área de conteúdo especificada.
-   * **[!UICONTROL Estouro]** > **[!UICONTROL Ir para página]** > Nome da página: começa a preencher a página especificada.
+   * **[!UICONTROL Depois]** > **[!UICONTROL Ir para a área de conteúdo]** > Nome da área de conteúdo: começa a preencher a área de conteúdo especificada após posicionar o painel.
+   * **[!UICONTROL Depois]** > **[!UICONTROL Ir para a Próxima Página]**: começa a preencher a próxima página após posicionar o painel.
+   * **[!UICONTROL Depois]** > **[!UICONTROL Ir para Página]** > Nome da página: começa a preencher a página especificada após posicionar o painel.
+* **[!UICONTROL Paginação]** > **[!UICONTROL Estouro]**: define um estouro para um painel ou uma tabela que abrange páginas. Os seguintes campos estão disponíveis na seção **[!UICONTROL Estouro]**:
+   * **[!UICONTROL Estouro]** > **[!UICONTROL Nenhum]**: começa a preencher a próxima página. Se uma quebra de página não for inserida automaticamente, [!DNL AEM Forms] adicionará uma quebra de página.
+   * **[!UICONTROL Estouro]** > **[!UICONTROL Ir para a Área de Conteúdo]** > Nome da área de conteúdo: começa a preencher a área de conteúdo especificada.
+   * **[!UICONTROL Estouro]** > **[!UICONTROL Ir para Página]** > Nome da página: inicia o preenchimento da página especificada.
 
   >[!NOTE]
   >
   > A propriedade de paginação não está disponível para fragmentos de formulário adaptáveis.
 
-Para obter informações sobre como aplicar quebras de página e aplicar várias páginas-mestre em um documento de registro, consulte [Aplicar quebra de página em um documento de registro](#apply-page-breaks-in-dor) e [Aplicar várias páginas-mestre a um documento de registro](#apply-multiple-master-pages-dor).
+Para obter informações sobre como aplicar quebras de página e aplicar várias páginas mestras em um Documento de Registro, consulte [Aplicar quebra de página em um Documento de Registro](#apply-page-breaks-in-dor) e [Aplicar várias páginas mestras a um Documento de Registro](#apply-multiple-master-pages-dor).
 
-**Configurações do nível de formulário**
+**Configurações de nível de formulário**
 
 * **[!UICONTROL BÁSICO]**
-   * **Modelo:** É possível selecionar o modelo Padrão ou Personalizado.
-     ![texto alternativo](image.png)
-   * **Cor de realce:** É possível predefinir a Cor do modelo do [!UICONTROL Documento do registro].
-   * **Família da fonte:** Selecione o Tipo de fonte para a [!UICONTROL Documento do registro] textos.
-   * **Incluir campos desatados em DoR:** A configuração da propriedade inclui campos não vinculados do formulário adaptável baseado em esquema no [!UICONTROL Documento do registro]. Por padrão, é verdadeiro.
-   * **Excluir campos de DoR se ocultos:** Definir a propriedade da qual excluir os campos ocultos [!UICONTROL Documento do registro] no envio do formulário. Quando você habilita [Revalidar no servidor](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form), o servidor recalcula os campos ocultos antes de excluir esses campos da [!UICONTROL Documento do registro]
+   * **Modelo:** Você pode selecionar o modelo Padrão ou Personalizado.
+     ![alt texto](image.png)
+   * **Cor de Ênfase:** Você pode predefinir a Cor do modelo do [!UICONTROL Documento de Registro].
+   * **Família da Fonte:** Selecione o tipo de fonte para os textos do [!UICONTROL Documento de Registro].
+   * **Incluir campos não associados em DoR:** A configuração da propriedade inclui campos não associados do formulário adaptável baseado em esquema no [!UICONTROL Documento de Registro]. Por padrão, é verdadeiro.
+   * **Excluir campos do DoR se ocultos:** Defina a propriedade para excluir os campos ocultos do [!UICONTROL Documento de Registro] no envio do formulário. Ao habilitar [Revalidar no servidor](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form), o servidor recalcula os campos ocultos antes de excluir esses campos do [!UICONTROL Documento de Registro]
 * **[!UICONTROL PROPRIEDADES DO CAMPO DE FORMULÁRIO]**
-   * Se você marcar a opção **Para os componentes Caixa de seleção e Botão de opções, mostrar somente os valores selecionados**, ele gerará a saída do DoR somente com os valores selecionados.
+   * Se você marcar a opção **Para os componentes Caixa de Seleção e Botão de Opção, mostrar somente os valores selecionados**, ela gerará a saída do DoR somente com os valores selecionados.
    * Você pode selecionar Separador para vários valores selecionados ou escolher qualquer outro tipo de separador.
    * Alinhamento de opções
       * Vertical
       * Horizontal
       * O mesmo que o formulário adaptável
      >[!NOTE]
-     > O alinhamento vertical e horizontal é aplicável apenas ao botão de opção e à caixa de seleção
-* **[!UICONTROL PROPRIEDADES DA PÁGINA MESTRA]** Clique para obter mais informações sobre [Propriedades da Página Mestra](#master-page-properties-master-page-properties)
+     > O alinhamento vertical e horizontal é aplicável apenas a     Botão de opção e caixa de seleção
+* **[!UICONTROL PROPRIEDADES DA PÁGINA MESTRA]** Clique para obter mais informações sobre [propriedades da Página Mestra](#master-page-properties-master-page-properties)
 
 ## Aplicar uma quebra de página em um documento de registro {#apply-page-breaks-in-dor}
 
@@ -443,31 +444,32 @@ Você pode aplicar quebras de página em um Documento de registro usando vários
 Para aplicar uma quebra de página a um documento de registro:
 
 1. Selecione o painel e selecione ![Configurar](/help/forms/using/assets/configure.png)
-1. Expandir **[!UICONTROL Documento do registro]** para exibir as propriedades.
+1. Expanda **[!UICONTROL Documento de Registro]** para exibir as propriedades.
 
-1. No **[!UICONTROL Paginação]** , selecione ![Pasta](/help/forms/using/assets/folder-icon.png) no **[!UICONTROL Local]** campo.
-1. Selecionar **[!UICONTROL Parte superior da próxima página]** e selecione **[!UICONTROL Selecionar]**. Também é possível selecionar **[!UICONTROL Início da página]**, selecione a página-mestre e selecione **[!UICONTROL Selecionar]** para aplicar a quebra de página.
-1. Selecionar ![Salvar](/help/forms/using/assets/save_icon.png) para salvar as propriedades.
+1. Na seção **[!UICONTROL Paginação]**, selecione ![Pasta](/help/forms/using/assets/folder-icon.png) no campo **[!UICONTROL Local]**.
+1. Selecione **[!UICONTROL Início da Próxima página]** e selecione **[!UICONTROL Selecionar]**. Você também pode selecionar **[!UICONTROL Início da página]**, selecionar a página mestra e **[!UICONTROL Selecionar]** para aplicar a quebra de página.
+1. Selecione ![Salvar](/help/forms/using/assets/save_icon.png) para salvar as propriedades.
 
 O painel selecionado é movido para a próxima página.
 
 ## Aplicar várias páginas-mestre a um documento de registro {#apply-multiple-master-pages-dor}
 
-Se o modelo XDP personalizado selecionado incluir várias páginas mestras, as propriedades dessas páginas aparecerão no [!UICONTROL conteúdo] seção do [!UICONTROL Documento do registro] guia. Para obter mais informações, consulte [Personalizar as informações de marca no documento de registro](#customize-the-branding-information-in-document-of-record).
+Se o modelo XDP personalizado selecionado incluir várias páginas mestras, as propriedades dessas páginas aparecerão na seção [!UICONTROL conteúdo] da guia [!UICONTROL Documento de Registro]. Para obter mais informações, consulte [Personalizar as informações de marca no documento de registro](#customize-the-branding-information-in-document-of-record).
 
-Você pode aplicar várias páginas-mestre a um documento de registro aplicando páginas-mestre diferentes aos componentes de um formulário adaptável. Use o [Paginação](#document-of-record-settings) seção das propriedades do documento de registro para aplicar várias páginas-mestre.
+Você pode aplicar várias páginas-mestre a um documento de registro aplicando páginas-mestre diferentes aos componentes de um formulário adaptável. Use a seção [Paginação](#document-of-record-settings) do documento de propriedades de registro para aplicar várias páginas mestras.
 
-Este é um exemplo de como aplicar várias páginas-mestre a um Documento de registro: você faz upload de um modelo XDP que inclui quatro páginas-mestre para o [!DNL AEM Forms] servidor. [!DNL AEM Forms] O aplica as propriedades do modelo ao Documento de registro por padrão. [!DNL AEM Forms] O também aplica as propriedades da primeira página-mestre no modelo ao documento de registro.
+Este é um exemplo de como aplicar várias páginas-mestre a um documento de registro:
+Você carrega um modelo XDP que inclui quatro páginas mestras no servidor [!DNL AEM Forms]. [!DNL AEM Forms] aplica as propriedades do modelo ao Documento de Registro por padrão. [!DNL AEM Forms] também aplica as propriedades da primeira página mestra no modelo ao documento de registro.
 
 Para aplicar as propriedades da segunda página-mestre a um painel e as propriedades da terceira página-mestre aos painéis seguintes, execute as seguintes etapas:
 
-1. Selecione o painel para aplicar a segunda página-mestre e selecione ![Configurar](assets/cmppr.png).
-1. No **[!UICONTROL Paginação]** , selecione ![Pasta](/help/forms/using/assets/folder-icon.png) no **[!UICONTROL Local]** campo.
-1. Selecionar **[!UICONTROL Na página]**, selecione a segunda página-mestre e selecione **[!UICONTROL Selecionar]**.
+1. Selecione o painel para aplicar a segunda página mestra e selecione ![Configurar](assets/cmppr.png).
+1. Na seção **[!UICONTROL Paginação]**, selecione ![Pasta](/help/forms/using/assets/folder-icon.png) no campo **[!UICONTROL Local]**.
+1. Selecione **[!UICONTROL Na página]**, selecione a segunda página mestra e selecione **[!UICONTROL Selecionar]**.
 O AEM Forms aplica a segunda página-mestre ao painel e a todos os painéis subsequentes no formulário adaptável.
-1. No **[!UICONTROL Paginação]** , selecione ![Pasta](/help/forms/using/assets/folder-icon.png) no **[!UICONTROL Depois]** campo.
-1. Selecionar **[!UICONTROL Ir para página]**, selecione a terceira página-mestre e selecione **[!UICONTROL Selecionar]**.
-1. Selecionar ![Salvar](/help/forms/using/assets/save_icon.png) para salvar as propriedades.
+1. Na seção **[!UICONTROL Paginação]**, selecione ![Pasta](/help/forms/using/assets/folder-icon.png) no campo **[!UICONTROL Depois]**.
+1. Selecione **[!UICONTROL Ir para página]**, selecione a terceira página mestra e selecione **[!UICONTROL Selecionar]**.
+1. Selecione ![Salvar](/help/forms/using/assets/save_icon.png) para salvar as propriedades.
 O AEM Forms aplica a terceira página-mestre ao painel e a todos os painéis subsequentes no formulário adaptável.
 
 >[!NOTE]
@@ -481,7 +483,7 @@ Lembre-se das seguintes considerações e limitações ao trabalhar em um docume
 * Os modelos de documento de registro não dão suporte a rich text. Portanto, qualquer rich text no formulário adaptável estático ou nas informações preenchidas pelo usuário final aparece como texto simples no documento de registro.
 * Fragmentos de documento em um formulário adaptável não aparecem no documento de registro. No entanto, os fragmentos de formulário adaptáveis são compatíveis.
 * Não há suporte para a associação de conteúdo no documento de registro gerado para o formulário adaptável baseado em esquema XML.
-* A versão localizada do documento de registro é criada sob demanda para um local quando o usuário solicita a renderização do documento de registro. A localização do documento de registro ocorre juntamente com a localização do formulário adaptável. Para obter mais informações sobre a localização do documento de registro e formulários adaptáveis, consulte [Uso do fluxo de trabalho de tradução do AEM para localizar formulários adaptáveis e documentos de registro](/help/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.md).
+* A versão localizada do documento de registro é criada sob demanda para um local quando o usuário solicita a renderização do documento de registro. A localização do documento de registro ocorre juntamente com a localização do formulário adaptável. Para obter mais informações sobre a localização do documento de registro e formulários adaptáveis, consulte [Usar o fluxo de trabalho de tradução do AEM para localizar formulários adaptáveis e documento de registro](/help/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.md).
 
 ## Usar um arquivo XCI personalizado
 
@@ -489,8 +491,8 @@ Um arquivo XCI ajuda a definir várias propriedades de um documento. <!-- Forms 
 
 | Opção XCI | Descrição |
 |--- |--- |
-| config/present/pdf/creator | Identifica o criador do documento usando a entrada Criador no dicionário de Informações do Documento. Para obter informações sobre este dicionário, consulte [Guia de referência do PDF](https://opensource.adobe.com/dc-acrobat-sdk-docs/acrobatsdk/). |
-| config/present/pdf/producer | Identifica o produtor do documento usando a entrada Produtor no dicionário de Informações do documento. Para obter informações sobre este dicionário, consulte [Guia de referência do PDF](https://opensource.adobe.com/dc-acrobat-sdk-docs/acrobatsdk/). |
+| config/present/pdf/creator | Identifica o criador do documento usando a entrada Criador no dicionário de Informações do Documento. Para obter informações sobre este dicionário, consulte o [guia de Referência de PDF](https://opensource.adobe.com/dc-acrobat-sdk-docs/acrobatsdk/). |
+| config/present/pdf/producer | Identifica o produtor do documento usando a entrada Produtor no dicionário de Informações do documento. Para obter informações sobre este dicionário, consulte o [guia de Referência de PDF](https://opensource.adobe.com/dc-acrobat-sdk-docs/acrobatsdk/). |
 | config/present/layout | Controla se a saída é um painel único ou paginada. |
 | config/present/pdf/compression/level | Especifica o grau de compactação a ser usado ao gerar um documento PDF. |
 | config/present/pdf/fontInfo/embed | Controla a incorporação de fontes no documento de saída. |
@@ -531,6 +533,6 @@ Um arquivo XCI ajuda a definir várias propriedades de um documento. <!-- Forms 
 ### Usar um arquivo XCI personalizado no ambiente de desenvolvimento do Forms local
 
 1. Carregue o arquivo XCI no ambiente de desenvolvimento local.
-1. Abertura <!--Cloud Service SDK--> gerenciador de configurações. <!--The default URL is: <http://localhost:4502/system/console/configMgr>.-->
-1. Localize e abra o **[!UICONTROL Canal da Web de comunicação interativa e Forms adaptável]** configuração.
+1. Abra o gerenciador de configurações <!--Cloud Service SDK-->. <!--The default URL is: <http://localhost:4502/system/console/configMgr>.-->
+1. Localize e abra a configuração **[!UICONTROL Forms adaptável e Canal da Web de comunicação interativa]**.
 1. Especifique o caminho do arquivo XCI e clique em **[!UICONTROL Salvar]**.

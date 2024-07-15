@@ -51,7 +51,7 @@ Por exemplo, ao comparar versões, a versão atual será exibida à esquerda e a
 
 A origem de ambas as páginas é claramente exibida na barra de cabeçalho na parte superior da janela do navegador.
 
-![Fonte mostrada no cabeçalho](assets/chlimage_1-109.png)
+![Source mostrado no cabeçalho](assets/chlimage_1-109.png)
 
 O recurso diferencial detecta alterações no nível do componente e do HTML. Os itens alterados serão realçados com cores diferentes.
 
@@ -77,7 +77,7 @@ Para se concentrar em um conteúdo específico, você pode clicar no ícone de t
 
 O lado selecionado preencherá a janela inteira, mas a barra permanecerá no topo, permitindo que você alterne entre as duas páginas.
 
-![A barra na parte superior permite alternar entre páginas](assets/chlimage_1-110.png)
+A ![barra na parte superior permite alternar entre páginas](assets/chlimage_1-110.png)
 
 Você também pode optar por fechar a visualização em tela cheia clicando no ícone Saída da tela cheia.
 
@@ -101,4 +101,4 @@ Há algumas situações em que o recurso de diferencial de páginas pode não de
 
 >[!NOTE]
 >
->Para obter mais detalhes sobre a operação do mecanismo diff da página e as limitações que podem afetar o diff da página, consulte a [documentação do desenvolvedor](/help/sites-developing/pagediff.md) deste recurso.
+>Para obter mais detalhes sobre a operação do mecanismo diff da página e as limitações que podem afetar o diff da página, consulte a [documentação do desenvolvedor](/help/sites-developing/pagediff.md) desse recurso.

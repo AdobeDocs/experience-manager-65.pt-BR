@@ -1,5 +1,5 @@
 ---
-title: Início Rápido (SOAP) da API Java do Serviço de Utilitários XMP
+title: Início rápido do serviço de utilitários XMP Java APIQuick Start(SOAP)
 description: Use o serviço Utilitários XMP para exportar e importar metadados XMP.
 contentOwner: admin
 content-type: reference
@@ -32,7 +32,7 @@ As operações do AEM Forms podem ser executadas usando a API altamente tipada d
 
 ## Início rápido (modo SOAP): exportação de metadados XMP usando a API Java {#quick-start-soap-mode-exporting-xmp-metadata-using-the-java-api}
 
-O exemplo de código a seguir recupera, inspeciona e salva metadados XMP. (Consulte [Exportar metadados de documentos do PDF](/help/forms/developing/xmp-utilities.md#exporting-metadata-from-pdf-documents).)
+O exemplo de código a seguir recupera, inspeciona e salva metadados XMP. (Consulte [Exportar metadados de documentos PDF](/help/forms/developing/xmp-utilities.md#exporting-metadata-from-pdf-documents).)
 
 ```java
  /*
@@ -137,7 +137,7 @@ O exemplo de código a seguir recupera, inspeciona e salva metadados XMP. (Consu
 
 ## Início rápido (modo SOAP): importação de metadados XMP usando a API Java {#quick-start-soap-mode-importing-xmp-metadata-using-the-java-api}
 
-O exemplo de código a seguir importa metadados XMP e salva o novo arquivo PDF em disco. O documento PDF é baseado em um arquivo PDF chamado Loan.pdf. O documento XML que contém os metadados a serem importados para o documento PDF baseia-se em um arquivo XML chamado *LoanMetaData.xml*. Para obter informações sobre esse arquivo XML, consulte [Importação de metadados para documentos PDF](/help/forms/developing/xmp-utilities.md#importing-metadata-into-pdf-documents).
+O exemplo de código a seguir importa metadados XMP e salva o novo arquivo PDF em disco. O documento PDF é baseado em um arquivo PDF chamado Loan.pdf. O documento XML que contém os metadados a serem importados para o documento PDF é baseado em um arquivo XML chamado *LoanMetaData.xml*. Para obter informações sobre este arquivo XML, consulte [Importando Metadados em Documentos PDF](/help/forms/developing/xmp-utilities.md#importing-metadata-into-pdf-documents).
 
 ```java
  /*

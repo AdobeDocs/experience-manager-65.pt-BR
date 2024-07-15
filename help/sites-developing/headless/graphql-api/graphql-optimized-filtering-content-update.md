@@ -18,7 +18,7 @@ Para otimizar o desempenho dos filtros do GraphQL, execute um procedimento para 
 
 >[!NOTE]
 >
->Depois de atualizar os fragmentos de conteúdo, você pode seguir as recomendações para [Otimização de consultas do GraphQL](/help/sites-developing/headless/graphql-api/graphql-optimization.md).
+>Depois de atualizar os fragmentos de conteúdo, você pode seguir as recomendações para [Otimizar consultas do GraphQL](/help/sites-developing/headless/graphql-api/graphql-optimization.md).
 
 ## Pré-requisitos {#prerequisites}
 
@@ -28,25 +28,25 @@ Certifique-se de que você tenha um mínimo da versão 6.5.17.0 do AEM.
 
 Para executar o procedimento, siga as etapas abaixo:
 
-1. [Definir as configurações do OSGi](/help/sites-deploying/configuring-osgi.md) para o **Configuração da tarefa de migração do fragmento de conteúdo**:
+1. [Defina as configurações de OSGi](/help/sites-deploying/configuring-osgi.md) para a **Configuração do Trabalho de Migração de Fragmento de Conteúdo**:
 
    ![Configuração do trabalho de migração do fragmento de conteúdo OSGi](assets/cfm-graphql-update-01.png "Configuração do trabalho de migração do fragmento de conteúdo OSGi")
 
 1. Na caixa de diálogo do, defina esses dois parâmetros da seguinte maneira:
 
-   * **ContentFragmentMigration:Habilitado** : `1`
-   * **MigraçãoDeFragmentoDeConteúdo:Aplicar** : `1`
+   * **ContentFragmentMigration:Enabled** : `1`
+   * **MigraçãoDeFragmentoDeConteúdo:Impor** : `1`
 
-1. **Salvar** as especificações - o procedimento de atualização é iniciado.
+1. **Salve** as especificações - o procedimento de atualização é iniciado.
 
-1. Aguarde até que o procedimento seja concluído. O procedimento é concluído quando a propriedade `cfGlobalVersion` aparece em `/content/dam` e está definido como `1`.
+1. Aguarde até que o procedimento seja concluído. O procedimento é concluído quando a propriedade `cfGlobalVersion` aparece em `/content/dam` e está definida como `1`.
 
 1. Retorne à configuração do OSGi para desativar o procedimento.
 
-   Na caixa de diálogo do **Configuração da tarefa de migração do fragmento de conteúdo** defina esses dois parâmetros da seguinte maneira:
+   Na caixa de diálogo da **Configuração do trabalho de migração de fragmento de conteúdo**, defina estes dois parâmetros da seguinte maneira:
 
-   * **ContentFragmentMigration:Habilitado** : `0`
-   * **MigraçãoDeFragmentoDeConteúdo:Aplicar** : `0`
+   * **ContentFragmentMigration:Enabled** : `0`
+   * **MigraçãoDeFragmentoDeConteúdo:Impor** : `0`
 
 ## Limitações {#limitations}
 

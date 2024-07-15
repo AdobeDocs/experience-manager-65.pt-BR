@@ -34,23 +34,23 @@ A planilha fornece as seguintes planilhas:
 
 * **Instruções**
    * Fornece instruções sobre como usar a planilha, juntamente com explicações sobre os mecanismos usados.
-* **[Project Heartbeat](/help/managing/best-practices.md#project-heartbeat-dashboard)**
+* **[Pulsação do projeto](/help/managing/best-practices.md#project-heartbeat-dashboard)**
 * **[Status por Função](/help/managing/best-practices.md#status-by-role)**
-* Uma série de listas de [Persona](/help/managing/best-practices.md#persona), [Fase e Etapa](/help/managing/best-practices.md#phases-and-milestones)
+* Uma série de listas de verificação, de acordo com [Persona](/help/managing/best-practices.md#persona), [Fase e Marco](/help/managing/best-practices.md#phases-and-milestones)
 * **Glossário**
    * O Glossário lista detalhes de todos os documentos do Material de entrega da Lista de verificação do projeto.
-   * A variável [Glossário](/help/managing/best-practices-glossary.md) O também está disponível como parte da documentação do.
+   * O [Glossário](/help/managing/best-practices-glossary.md) também está disponível como parte da documentação.
 * **[Definições de persona](/help/managing/best-practices.md#persona)**
 
 ## Utilização das Listas de verificação {#using-the-checklists}
 
 Para entregar com êxito um projeto de alta qualidade, você precisa concluir todos os itens nas listas de verificação, de preferência na ordem:
 
-1. As listas de verificação são definidas **[Persona](/help/managing/best-practices.md#persona)** (Função) envolvido. Cada pessoa deve usar a lista de verificação apropriada à sua função no projeto.
-1. As listas de verificação abrangem **[Documentos necessários](/help/managing/best-practices.md#required-documents)** e **[Entregáveis](/help/managing/best-practices.md#deliverables)** para cada marco - a pessoa relevante deve definir os campos de status e qualidade apropriados.
+1. As listas de verificação são definidas de acordo com a **[Pessoa](/help/managing/best-practices.md#persona)** (função) envolvida. Cada pessoa deve usar a lista de verificação apropriada à sua função no projeto.
+1. As listas de verificação abrangem os **[Documentos Necessários](/help/managing/best-practices.md#required-documents)** e **[Entregas](/help/managing/best-practices.md#deliverables)** para cada marco - a pessoa relevante deve definir os campos de status e qualidade apropriados.
 
    >[!NOTE]
    >
    >Não há uma relação direta 1:1 entre os documentos necessários individuais e os materiais de entrega.
 
-1. Com base nos status das **[Documentos necessários](/help/managing/best-practices.md#required-documents)** e **[Entregáveis](/help/managing/best-practices.md#deliverables)**, as planilhas **[Project Heartbeat](/help/managing/best-practices.md#project-heartbeat-dashboard)** e **[Status por Função](/help/managing/best-practices.md#status-by-role)** são atualizados automaticamente para fornecer uma indicação atualizada do progresso e da integridade do projeto.
+1. Com base nos status dos **[Documentos Necessários](/help/managing/best-practices.md#required-documents)** e **[Resultados Finais](/help/managing/best-practices.md#deliverables)**, as planilhas **[Pulsação do Projeto](/help/managing/best-practices.md#project-heartbeat-dashboard)** e **[Status por Função](/help/managing/best-practices.md#status-by-role)** são atualizadas automaticamente para fornecer uma indicação atualizada do progresso e da integridade do seu projeto.

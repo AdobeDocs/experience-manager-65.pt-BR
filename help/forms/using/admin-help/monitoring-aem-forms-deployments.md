@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Monitoramento de implantações de formulários AEM {#monitoring-aem-forms-deployments}
 
-Você pode monitorar implantações de formulários AEM tanto no nível do sistema quanto no nível interno. Você pode usar ferramentas de gerenciamento especializadas, como HP OpenView, IBM® Tivoli e CA UniCenter, e um monitor JMX de terceiros chamado *JConsole* para monitorar especificamente a atividade do Java™. A implementação de uma estratégia de monitoramento melhora a disponibilidade, a confiabilidade e o desempenho das implantações de formulários AEM.
+Você pode monitorar implantações de formulários AEM tanto no nível do sistema quanto no nível interno. Você pode usar ferramentas de gerenciamento especializadas, como HP OpenView, IBM® Tivoli e CA UniCenter, e um monitor JMX de terceiros chamado *JConsole*, para monitorar especificamente a atividade do Java™. A implementação de uma estratégia de monitoramento melhora a disponibilidade, a confiabilidade e o desempenho das implantações de formulários AEM.
 
 <!-- For more information about monitoring AEM forms deployments, see [A technical guide for monitoring AEM forms deployments](https://www.adobe.com/devnet/livecycle/pdfs/lc_monitoring_wp_ue.pdf). This URL is 404. No suitable replacement URL was found after a search. Do not make this link live if it is dead! -->
 
@@ -27,7 +27,7 @@ Você pode monitorar implantações de formulários AEM tanto no nível do siste
 O AEM Forms fornece dois MBeans registrados que fornecem informações de navegação e estatística. Essas partes são os únicos MBeans compatíveis com integração e inspeção:
 
 * **ServiceStatistic:** Este MBean fornece informações sobre o nome do serviço e sua versão.
-* **Estatística da Operação:** Este MBean fornece as estatísticas de cada serviço do servidor do AEM Forms. Este MBean é onde os administradores podem obter informações sobre um serviço específico, como o tempo de chamada e o número de erros.
+* **OperationStatistic:** este MBean fornece as estatísticas de cada serviço do servidor AEM Forms. Este MBean é onde os administradores podem obter informações sobre um serviço específico, como o tempo de chamada e o número de erros.
 
 ### Interfaces públicas ServiceStatisticMbean {#servicestatisticmbean-public-interfaces}
 
@@ -71,35 +71,35 @@ Essas interfaces públicas do MBean OperationStatistic podem ser acessadas para 
 
 Usando um console JMX (JConsole), as estatísticas do MBean OperationStatistic estão disponíveis. Essas estatísticas são atributos de MBean e podem ser navegadas sob a seguinte árvore hierárquica:
 
-**Árvore MBean**
+**árvore do MBean**
 
-**Nome do domínio do Adobe:** Depende do servidor de aplicativos. Se o Servidor de Aplicativos não definir o domínio, o padrão será adobe.com.
+**Nome de Domínio do Adobe:** Depende do Servidor de Aplicativos. Se o Servidor de Aplicativos não definir o domínio, o padrão será adobe.com.
 
 **ServiceType:** AdobeService é o nome usado para listar todos os serviços.
 
-**AdobeServiceName:** Nome do serviço ou ID do serviço.
+**AdobeServiceName:** Nome do Serviço ou ID do Serviço.
 
 **Versão:** Versão do serviço.
 
-**Estatísticas da operação**
+**Estatísticas da Operação**
 
-**Hora da Chamada:** Tempo decorrido para a execução do método. Essa chamada não inclui o tempo em que a solicitação é serializada, transferida do cliente para o servidor e desserializada.
+**Tempo de Invocação:** Tempo necessário para a execução do método. Essa chamada não inclui o tempo em que a solicitação é serializada, transferida do cliente para o servidor e desserializada.
 
 **Contagem de chamadas:** O número de vezes que o serviço é chamado.
 
-**Tempo médio de invocação:** Tempo médio de todas as invocações executadas desde a inicialização do servidor.
+**Tempo médio de invocação:** Tempo médio de todas as invocações executadas desde que o servidor foi iniciado.
 
-**Tempo máximo de invocação:** A duração da invocação mais longa executada desde a inicialização do servidor.
+**Tempo máximo de invocação:** A duração da invocação mais longa que foi executada desde que o servidor foi iniciado.
 
-**Tempo mínimo de invocação:** A duração da invocação mais curta executada desde a inicialização do servidor.
+**Tempo mínimo de invocação:** A duração da menor invocação executada desde que o servidor foi iniciado.
 
 **Contagem de Exceções:** Número de invocações que resultaram em falhas.
 
-**Mensagem de exceção:** A mensagem de erro da última exceção que ocorreu.
+**Mensagem de Exceção:** A mensagem de erro da última exceção que ocorreu.
 
-**Data e hora da última amostragem:** A data da última invocação.
+**Data e hora da última amostragem:** a data da última invocação.
 
-**Unidade de tempo:** O padrão é milissegundo.
+**Unidade de Tempo:** O padrão é milissegundo.
 
 Para ativar o monitoramento JMX, os servidores de aplicações normalmente precisam de alguma configuração. Consulte a documentação do servidor de aplicativos para obter informações específicas.
 
@@ -144,7 +144,7 @@ Para exibir MBeans do JConsole, configure os parâmetros de inicialização do J
     -Djavax.management.builder.initial= -Dcom.sun.management.jmxremote
    ```
 
-1. Adicione ou remova o comentário das três linhas a seguir no arquivo /opt/IBM/WebSphere/AppServer/java/jre/lib/management/management.properties (ou &lt;your websphere=&quot;&quot; jre=&quot;&quot;>/ lib/management/management.properties):
+1. Adicione ou remova o comentário das três linhas a seguir no arquivo /opt/IBM/WebSphere/AppServer/java/jre/lib/management/management.properties (ou &lt;Your Websphere JRE>/ lib/management/management.properties):
 
    ```shell
     com.sun.management.jmxremote.port=9999 //any port you like, but make sure you use this port when you connect

@@ -22,19 +22,19 @@ ht-degree: 0%
 
 O Sling Resource Merger fornece serviços para acessar e mesclar recursos. Ela fornece mecanismos de diferenciação para:
 
-* **[Sobreposições](/help/sites-developing/overlays.md)** de recursos usando o [caminhos de pesquisa configurados](/help/sites-developing/overlays.md#configuring-the-search-paths).
+* **[Sobreposições](/help/sites-developing/overlays.md)** de recursos usando os [caminhos de pesquisa configurados](/help/sites-developing/overlays.md#configuring-the-search-paths).
 
-* **Substituições** das caixas de diálogo do componente para a interface habilitada para toque (`cq:dialog`), usando a hierarquia de tipo de recurso (por meio da propriedade `sling:resourceSuperType`).
+* **Substitui** das caixas de diálogo de componente para a interface habilitada para toque (`cq:dialog`), usando a hierarquia de tipo de recurso (por meio da propriedade `sling:resourceSuperType`).
 
 Com o Sling Resource Merger, os recursos e/ou propriedades de sobreposição/substituição são mesclados com os recursos/propriedades originais:
 
-* O conteúdo da definição personalizada tem uma prioridade mais alta do que a original (ou seja, ela *sobreposições* ou *sobreposições* it).
+* O conteúdo da definição personalizada tem uma prioridade mais alta que a do original (ou seja, *sobreposições* ou *substituições*).
 
-* Se necessário, [propriedades](#properties) definido na personalização, indique como o conteúdo mesclado do original deve ser usado.
+* Quando necessário, as [propriedades](#properties) definidas na personalização indicam como o conteúdo mesclado do original será usado.
 
 >[!CAUTION]
 >
->O Sling Resource Merger e métodos relacionados só podem ser usados com [Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html). Isso também significa que ele só é apropriado para a interface padrão habilitada para toque; em particular, as substituições definidas dessa maneira são aplicáveis somente para a caixa de diálogo habilitada para toque de um componente.
+>O Sling Resource Merger e métodos relacionados só podem ser usados com o [Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html). Isso também significa que ele só é apropriado para a interface padrão habilitada para toque; em particular, as substituições definidas dessa maneira são aplicáveis somente para a caixa de diálogo habilitada para toque de um componente.
 >
 >Sobreposições/substituições para outras áreas (incluindo outros aspectos de um componente habilitado para toque ou a interface clássica) envolvem copiar o nó e a estrutura apropriados do original para onde a personalização será definida.
 
@@ -42,26 +42,26 @@ Com o Sling Resource Merger, os recursos e/ou propriedades de sobreposição/sub
 
 As metas para usar a Fusão de recursos do Sling no AEM são:
 
-* certifique-se de que as alterações de personalização não sejam feitas no `/libs`.
-* reduzir a estrutura que é replicada de `/libs`.
+* verifique se as alterações de personalização não foram feitas em `/libs`.
+* reduza a estrutura replicada de `/libs`.
 
-  Ao usar a Fusão de recursos do Sling, não é recomendável copiar toda a estrutura de `/libs` como isso resultaria em muitas informações mantidas na personalização (geralmente `/apps`). Duplicar informações aumenta desnecessariamente a chance de problemas quando o sistema é atualizado de alguma forma.
+  Ao usar o Sling Resource Merger, não é recomendável copiar toda a estrutura de `/libs`, pois isso resultaria em muitas informações mantidas na personalização (geralmente `/apps`). Duplicar informações aumenta desnecessariamente a chance de problemas quando o sistema é atualizado de alguma forma.
 
 >[!NOTE]
 >
 >As substituições não dependem dos caminhos de pesquisa, elas usam a propriedade `sling:resourceSuperType` para fazer a conexão.
 >
->No entanto, as sobreposições geralmente são definidas em `/apps`, como prática recomendada no AEM, definir personalizações em `/apps`; isso ocorre porque você não deve alterar nada em `/libs`.
+>No entanto, as substituições geralmente são definidas em `/apps`, como prática recomendada no AEM é definir personalizações em `/apps`; isso ocorre porque você não deve alterar nada em `/libs`.
 
 >[!CAUTION]
 >
->Você ***deve*** não alterar nada no `/libs` caminho.
+>Você ***deve*** não alterar nada no caminho `/libs`.
 >
->Isso ocorre porque o conteúdo de `/libs` é substituído na próxima vez que você atualizar sua instância (e pode ser substituído ao aplicar um hotfix ou pacote de recursos).
+>Isso ocorre porque o conteúdo de `/libs` é substituído na próxima vez que você atualizar sua instância (e pode ser substituído quando você aplicar um hotfix ou pacote de recursos).
 >
 >O método recomendado para configuração e outras alterações é:
 >
->1. Recrie o item necessário (ou seja, como ele existe em `/libs`) em `/apps`
+>1. Recriar o item necessário (isto é, como ele existe em `/libs`) em `/apps`
 >
 >1. Fazer alterações em `/apps`
 >
@@ -94,7 +94,7 @@ Essas propriedades afetam como os recursos/propriedades correspondentes/originai
 
 ### Criação da estrutura {#creating-the-structure}
 
-Para criar uma sobreposição ou sobreposição, é necessário recriar o nó original, com a estrutura equivalente, no destino (geralmente `/apps`). Por exemplo:
+Para criar uma sobreposição ou substituição, é necessário recriar o nó original, com a estrutura equivalente, no destino (geralmente `/apps`). Por exemplo:
 
 * Sobreposição
 
@@ -106,7 +106,7 @@ Para criar uma sobreposição ou sobreposição, é necessário recriar o nó or
 
      `/apps/cq/core/content/nav/sites`
 
-     Em seguida, atualize a propriedade `jcr:title` conforme necessário.
+     Em seguida, atualize a propriedade `jcr:title`, conforme necessário.
 
 * Substituir
 
@@ -118,7 +118,7 @@ Para criar uma sobreposição ou sobreposição, é necessário recriar o nó or
 
      `/apps/the-project/components/text/cq:dialog`
 
-Para criar qualquer uma dessas opções, basta recriar a estrutura do esqueleto. Para simplificar a recriação da estrutura, todos os nós intermediários podem ser do tipo `nt:unstructured` (elas não precisam refletir o tipo de nó original; por exemplo, em `/libs`).
+Para criar qualquer uma dessas opções, basta recriar a estrutura do esqueleto. Para simplificar a recriação da estrutura, todos os nós intermediários podem ser do tipo `nt:unstructured` (eles não precisam refletir o tipo de nó original; por exemplo, em `/libs`).
 
 Portanto, no exemplo de sobreposição acima, os seguintes nós são necessários:
 
@@ -133,25 +133,25 @@ Portanto, no exemplo de sobreposição acima, os seguintes nós são necessário
 
 >[!NOTE]
 >
->Ao usar o Sling Resource Merger (ou seja, ao lidar com a interface padrão habilitada para toque), não é recomendável copiar toda a estrutura de `/libs` como resultaria em um excesso de informações mantidas em `/apps`. Isso pode causar problemas quando o sistema é atualizado de alguma forma.
+>Ao usar o Sling Resource Merger (ou seja, ao lidar com a interface de usuário padrão habilitada para toque), não é recomendável copiar toda a estrutura de `/libs`, pois isso resultaria em muitas informações mantidas em `/apps`. Isso pode causar problemas quando o sistema é atualizado de alguma forma.
 
 ### Casos de uso {#use-cases}
 
 Eles, juntamente com a funcionalidade padrão, permitem:
 
-* **Adicionar uma propriedade do**
+* **Adicionar uma propriedade**
 
-  A propriedade não existe no `/libs` definição, mas é obrigatório na variável `/apps` sobrepor/substituir.
+  A propriedade não existe na definição `/libs`, mas é necessária na sobreposição/substituição `/apps`.
 
-   1. Crie o nó correspondente em `/apps`
+   1. Criar o nó correspondente em `/apps`
    1. Criar a nova propriedade neste nó &quot;
 
 * **Redefinir uma propriedade (não propriedades criadas automaticamente)**
 
-  A propriedade é definida em `/libs`, mas um novo valor é necessário no `/apps` sobrepor/substituir.
+  A propriedade está definida em `/libs`, mas um novo valor é necessário na sobreposição/substituição `/apps`.
 
-   1. Crie o nó correspondente em `/apps`
-   1. Crie a propriedade correspondente neste nó (em / `apps`)
+   1. Criar o nó correspondente em `/apps`
+   1. Criar a propriedade correspondente neste nó (em / `apps`)
 
       * A propriedade terá uma prioridade com base na configuração do Sling Resource Resolver.
       * Não há suporte para a alteração do tipo de propriedade.
@@ -164,16 +164,16 @@ Eles, juntamente com a funcionalidade padrão, permitem:
 
 * **Redefinir uma propriedade criada automaticamente**
 
-  Por padrão, as propriedades criadas automaticamente `jcr:primaryType`) não estão sujeitos a uma sobreposição/substituição para garantir que o tipo de nó atualmente em `/libs` é respeitado. Para impor uma sobreposição/substituição, é necessário recriar o nó em `/apps`, oculte explicitamente a propriedade e redefina-a:
+  Por padrão, as propriedades criadas automaticamente (como `jcr:primaryType`) não estão sujeitas a uma sobreposição/substituição para garantir que o tipo de nó atualmente em `/libs` seja respeitado. Para impor uma sobreposição/substituição, é necessário recriar o nó em `/apps`, ocultar explicitamente a propriedade e redefini-la:
 
-   1. Crie o nó correspondente em `/apps` com o desejado `jcr:primaryType`
-   1. Criar a propriedade `sling:hideProperties` nesse nó, com o valor definido como aquele da propriedade criada automaticamente; por exemplo, `jcr:primaryType`
+   1. Crie o nó correspondente em `/apps` com o `jcr:primaryType` desejado
+   1. Crie a propriedade `sling:hideProperties` nesse nó, com o valor definido como aquele da propriedade criada automaticamente; por exemplo, `jcr:primaryType`
 
-      Essa propriedade, definida em `/apps`, terá prioridade sobre a definida em `/libs`
+      Esta propriedade, definida em `/apps`, terá prioridade sobre aquela definida em `/libs`
 
 * **Redefinir um nó e seus filhos**
 
-  O nó e seus filhos são definidos em `/libs`, mas uma nova configuração é necessária na variável `/apps` sobrepor/substituir.
+  O nó e seus filhos estão definidos em `/libs`, mas uma nova configuração é necessária na sobreposição/substituição `/apps`.
 
    1. Combine as ações de:
 
@@ -182,10 +182,10 @@ Eles, juntamente com a funcionalidade padrão, permitem:
 
 * **Ocultar uma propriedade**
 
-  A propriedade é definida em `/libs`, mas não obrigatório no `/apps` sobrepor/substituir.
+  A propriedade está definida em `/libs`, mas não é necessária na sobreposição/substituição de `/apps`.
 
-   1. Crie o nó correspondente em `/apps`
-   1. Criar uma propriedade do `sling:hideProperties` do tipo `String` ou `String[]`. Use esta opção para especificar as propriedades que devem ser ocultas/ignoradas. Curingas também podem ser usados. Por exemplo:
+   1. Criar o nó correspondente em `/apps`
+   1. Crie uma propriedade `sling:hideProperties` do tipo `String` ou `String[]`. Use esta opção para especificar as propriedades que devem ser ocultas/ignoradas. Curingas também podem ser usados. Por exemplo:
 
       * `*`
       * `["*"]`
@@ -194,33 +194,33 @@ Eles, juntamente com a funcionalidade padrão, permitem:
 
 * **Ocultar um nó e seus filhos**
 
-  O nó e seus filhos são definidos em `/libs`, mas não obrigatório no `/apps` sobrepor/substituir.
+  O nó e seus filhos estão definidos em `/libs`, mas não são necessários na sobreposição/substituição `/apps`.
 
    1. Crie o nó correspondente em /apps
-   1. Criar uma propriedade do `sling:hideResource`
+   1. Criar uma propriedade `sling:hideResource`
 
       * tipo: `Boolean`
       * valor: `true`
 
-* **Ocultar filhos de um nó (enquanto mantém as propriedades do nó)**
+* **Ocultar filhos de um nó (ao manter as propriedades do nó)**
 
-  O nó, suas propriedades e seus filhos são definidos em `/libs`. O nó e suas propriedades são necessários na variável `/apps` sobrepor/substituir, mas alguns ou todos os nós secundários não são necessários no `/apps` sobrepor/substituir.
+  O nó, suas propriedades e seus filhos estão definidos em `/libs`. O nó e suas propriedades são necessários na sobreposição/substituição `/apps`, mas alguns ou todos os nós filhos não são necessários na sobreposição/substituição `/apps`.
 
-   1. Crie o nó correspondente em `/apps`
+   1. Criar o nó correspondente em `/apps`
    1. Criar a propriedade `sling:hideChildren`:
 
       * tipo: `String[]`
-      * value: uma lista de nós filhos (conforme definido em `/libs`) para ocultar/ignorar
+      * value: uma lista dos nós filhos (conforme definido em `/libs`) a serem ocultados/ignorados
 
       O curinga &amp;ast; pode ser usado para ocultar/ignorar todos os nós filhos.
 
 * **Reordenar nós**
 
-  O nó e seus irmãos são definidos em `/libs`. Uma nova posição é necessária para que o nó seja recriado na `/apps` sobrepor/substituir, onde a nova posição é definida em referência ao nó irmão apropriado em `/libs`.
+  O nó e seus irmãos estão definidos em `/libs`. Uma nova posição é necessária para que o nó seja recriado na sobreposição/substituição `/apps`, onde a nova posição é definida em referência ao nó irmão apropriado em `/libs`.
 
-   * Use o `sling:orderBefore` propriedade:
+   * Usar a propriedade `sling:orderBefore`:
 
-      1. Crie o nó correspondente em `/apps`
+      1. Criar o nó correspondente em `/apps`
       1. Criar a propriedade `sling:orderBefore`:
 
          Isso especifica o nó (como em `/libs`) que o nó atual deve ser posicionado antes:
@@ -236,7 +236,7 @@ O Sling Resource Merger inclui dois provedores de recursos personalizados, um pa
 >
 >Ao acessar o recurso, é recomendável usar o ponto de montagem apropriado.
 >
->Isso garante que o Sling Resource Merger seja chamado e que o recurso totalmente mesclado seja retornado (reduzindo a estrutura que precisa ser replicada do `/libs`).
+>Isso garante que o Sling Resource Merger seja chamado e que o recurso totalmente mesclado seja retornado (reduzindo a estrutura que precisa ser replicada de `/libs`).
 
 * Sobreposição:
 

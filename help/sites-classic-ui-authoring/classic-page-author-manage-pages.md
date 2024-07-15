@@ -18,11 +18,11 @@ ht-degree: 16%
 
 # Criar e organizar páginas{#creating-and-organizing-pages}
 
-Esta seção descreve como criar e gerenciar páginas com o Adobe Experience Manager (AEM) para depois usá-las [criar conteúdo](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) nessas páginas.
+Esta seção descreve como criar e gerenciar páginas com o Adobe Experience Manager (AEM) para depois [criar conteúdo](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) nessas páginas.
 
 >[!NOTE]
 >
->Sua conta precisa do [direitos de acesso apropriados](/help/sites-administering/security.md) e [permissões](/help/sites-administering/security.md#permissions) para executar ações nas páginas, por exemplo, criar, copiar, mover, editar, excluir.
+>Sua conta precisa de [direitos de acesso apropriados](/help/sites-administering/security.md) e [permissões](/help/sites-administering/security.md#permissions) para realizar ações nas páginas, por exemplo, criar, copiar, mover, editar, excluir.
 >
 >Caso encontre algum problema, sugerimos que você entre em contato com o administrador do sistema.
 
@@ -35,15 +35,15 @@ Como autor, você deve organizar seu site dentro do AEM. Isso envolve criar e no
 
 Você também pode usar [pastas](#creating-a-new-folder) para ajudar a organizar o seu conteúdo.
 
-A estrutura de um site pode ser considerada como um *estrutura de árvore* que armazena suas páginas de conteúdo. Os nomes dessas páginas de conteúdo são usadas para formar os URLs, enquanto o título é exibido quando o conteúdo da página é visualizado.
+A estrutura de um site pode ser considerada como uma *estrutura em árvore* que armazena suas páginas de conteúdo. Os nomes dessas páginas de conteúdo são usadas para formar os URLs, enquanto o título é exibido quando o conteúdo da página é visualizado.
 
-A seguir, é mostrado um extrato do site do Geometrixx; onde, por exemplo, o `Triangle` A página será acessada:
+A seguir, uma extração do site do Geometrixx; onde, por exemplo, a página `Triangle` será acessada:
 
 * Ambiente de autor
 
   `http://localhost:4502/cf#/content/geometrixx/en/products/triangle.html`
 
-* Ambiente de publicação
+* Ambiente do Publish
 
   `http://localhost:4503/content/geometrixx/en/products/triangle.html`
 
@@ -69,7 +69,7 @@ A seguir, é mostrado um extrato do site do Geometrixx; onde, por exemplo, o `Tr
     /...
 ```
 
-Essa estrutura pode ser exibida no console Sites, que pode ser usado para [navegar pela estrutura de árvore](/help/sites-classic-ui-authoring/author-env-basic-handling.md#main-pars-text-15).
+Esta estrutura pode ser visualizada do console Sites, que você pode usar para [navegar pela estrutura de árvore](/help/sites-classic-ui-authoring/author-env-basic-handling.md#main-pars-text-15).
 
 ![chlimage_1-151](assets/chlimage_1-151.png)
 
@@ -87,7 +87,7 @@ Ao criar uma página, há dois campos principais:
    * Usado para gerar o URI.
    * A entrada do usuário para este campo é opcional. Se não especificado, o nome é derivado do título.
 
-Ao criar uma página, AEM [valida o nome da página de acordo com as convenções](/help/sites-developing/naming-conventions.md) impostos pelo AEM e pelo JCR.
+Ao criar uma página, AEM [valida o nome da página de acordo com as convenções](/help/sites-developing/naming-conventions.md) impostas pelo AEM e JCR.
 
 A implementação e a lista de caracteres permitidos diferem ligeiramente de acordo com a interface do usuário (é mais extensa para a interface habilitada para toque), mas o mínimo permitido é:
 
@@ -97,11 +97,11 @@ A implementação e a lista de caracteres permitidos diferem ligeiramente de aco
 * _ (sublinhado)
 * `-` (hífen/sinal de menos)
 
-Use apenas estes caracteres se quiser ter certeza de que serão aceitos/usados (se precisar de detalhes completos sobre todos os caracteres permitidos, consulte [as convenções de nomenclatura](/help/sites-developing/naming-conventions.md)).
+Use apenas estes caracteres se quiser ter certeza de que eles serão aceitos/usados (se precisar de detalhes completos sobre todos os caracteres permitidos, consulte [as convenções de nomenclatura](/help/sites-developing/naming-conventions.md)).
 
 #### Título {#title}
 
-Se você fornecer apenas uma página **Título** ao criar uma página, o AEM deriva a página **Nome** desta cadeia de caracteres e [validar o nome de acordo com as convenções](/help/sites-developing/naming-conventions.md) impostos pelo AEM e pelo JCR. Em ambas as interfaces, um **Título** um campo contendo caracteres inválidos será aceito, mas o nome derivado terá os caracteres inválidos substituídos. Por exemplo:
+Se você fornecer apenas uma página **Título** ao criar uma página, o AEM derivará a página **Nome** desta cadeia de caracteres e [validará o nome de acordo com as convenções](/help/sites-developing/naming-conventions.md) impostas pelo AEM e JCR. Em ambas as interfaces, um campo **Título** contendo caracteres inválidos será aceito, mas o nome derivado terá os caracteres inválidos substituídos. Por exemplo:
 
 | Título | Nome derivado |
 |---|---|
@@ -110,12 +110,12 @@ Se você fornecer apenas uma página **Título** ao criar uma página, o AEM der
 
 #### Nome {#name}
 
-Se você fornecer uma página **Nome** ao criar uma página, AEM [valida o nome de acordo com as convenções](/help/sites-developing/naming-conventions.md) impostos pelo AEM e pelo JCR.
+Se você fornecer uma página **Nome** ao criar uma página, o AEM [validará o nome de acordo com as convenções](/help/sites-developing/naming-conventions.md) impostas pelo AEM e JCR.
 
-Na interface clássica, você **não é possível inserir caracteres inválidos** no **Nome** campo.
+Na interface clássica, você **não pode inserir caracteres inválidos** no campo **Nome**.
 
 >[!NOTE]
->Na interface habilitada para toque, você **não é possível enviar caracteres inválidos** no **Nome** campo. Quando o AEM detectar caracteres inválidos, o campo será realçado e uma mensagem explicativa será exibida para indicar os caracteres que precisam ser removidos/substituídos.
+>Na interface habilitada para toque, você **não pode enviar caracteres inválidos** no campo **Nome**. Quando o AEM detectar caracteres inválidos, o campo será realçado e uma mensagem explicativa será exibida para indicar os caracteres que precisam ser removidos/substituídos.
 
 >[!NOTE]
 >
@@ -147,7 +147,7 @@ Os componentes são os elementos fornecidos pelo AEM, desse modo, é possível a
 * Vídeo
 * muito mais
 
-Depois de criar e abrir uma página, você pode [adicionar conteúdo usando os componentes](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#insertinganewparagraph), disponível no [sidekick](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#sidekick).
+Depois de criar e abrir uma página, você pode [adicionar conteúdo usando os componentes](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#insertinganewparagraph), disponíveis no [sidekick](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#sidekick).
 
 ## Gerenciamento de páginas {#managing-pages}
 
@@ -155,23 +155,23 @@ Depois de criar e abrir uma página, você pode [adicionar conteúdo usando os c
 
 A menos que todas as páginas tenham sido criadas antecipadamente para você, antes de começar a criar conteúdo, você deve criar uma página:
 
-1. No **Sites** selecione o nível no qual deseja criar uma página.
+1. No console **Sites**, selecione o nível no qual deseja criar uma página.
 
-   No exemplo a seguir, você está criando uma página no nível **Produtos** - exibido no painel à esquerda; o painel à direita mostra páginas que já existem no nível em **Produtos**.
+   No exemplo a seguir, você está criando uma página no nível **Produtos** - mostrado no painel esquerdo; o painel direito mostra páginas que já existem no nível em **Produtos**.
 
    ![screen_shot_2012-02-15at114413am](assets/screen_shot_2012-02-15at114413am.png)
 
-1. No **Novo...** (clique na seta ao lado de **Novo...**), selecione **Nova página...**. A variável **Criar página** é aberta.
+1. No menu **Nova...** (clique na seta ao lado de **Nova...**), selecione **Nova página...**. A janela **Criar página** é aberta.
 
-   Clicando **Novo...** O próprio também atua como um atalho para o **Nova página...** opção.
+   Clicar em **Nova...** também atua como atalho para a opção **Nova página...**.
 
-1. A variável **Criar página** permite:
+1. A caixa de diálogo **Criar Página** permite:
 
-   * Forneça um **Título**; isso é exibido ao usuário.
-   * Forneça um **Nome**; usado para gerar o URI. Se não especificado, o nome será derivado do título.
+   * Forneça um **Título**; isto é exibido ao usuário.
+   * Forneça um **Nome**; ele é usado para gerar o URI. Se não especificado, o nome será derivado do título.
 
-      * Se você fornecer uma página **Nome** ao criar uma página, AEM [valida o nome de acordo com as convenções](/help/sites-developing/naming-conventions.md) impostos pelo AEM e pelo JCR.
-      * Na interface clássica, você **não é possível inserir caracteres inválidos** no **Nome** campo.
+      * Se você fornecer uma página **Nome** ao criar uma página, o AEM [validará o nome de acordo com as convenções](/help/sites-developing/naming-conventions.md) impostas pelo AEM e JCR.
+      * Na interface clássica, você **não pode inserir caracteres inválidos** no campo **Nome**.
 
    * Clique no template que deseja usar para criar a nova página.
 
@@ -181,29 +181,29 @@ A menos que todas as páginas tenham sido criadas antecipadamente para você, an
    >
    >Consulte [Convenções de nomenclatura da página](#page-naming-conventions).
 
-   As informações mínimas necessárias para criar uma página são **Título** e o template necessário.
+   As informações mínimas necessárias para criar uma página são o **Título** e o modelo necessário.
 
    ![screen_shot_2012-02-15at114845am](assets/screen_shot_2012-02-15at114845am.png)
 
    >[!NOTE]
    >
-   >Se você quiser usar caracteres unicode nos URLs, defina o Alias ( `sling:alias`) propriedade ([propriedades da página](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md)).
+   >Se você quiser usar caracteres unicode nas URLs, defina a propriedade Alias ( `sling:alias`) ([propriedades da página](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md)).
 
-1. Clique em **Criar** para criar a página. Você retorna para a **Sites** onde você pode ver uma entrada para a nova página.
+1. Clique em **Criar** para criar a página. Você retorna ao console **Sites**, no qual pode ver uma entrada para a nova página.
 
    O console fornece informações sobre a página (por exemplo, quando ela foi editada pela última vez e por quem) que é atualizada conforme necessário.
 
    >[!NOTE]
    >
-   >Você também pode criar uma página ao editar uma página existente. Usar **Criar página secundária** do **Página** A guia do sidekick cria uma página diretamente abaixo da página que está sendo editada.
+   >Você também pode criar uma página ao editar uma página existente. Usar a **Criar página secundária** da guia **Página** do sidekick cria uma página diretamente abaixo da página que está sendo editada.
 
 ### Abrir uma página para edição {#opening-a-page-for-editing}
 
-Você pode abrir a página para ser [editado](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#editing-a-component-content-and-properties) por um de vários métodos:
+Você pode abrir a página para ser [editada](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#editing-a-component-content-and-properties) por um dos vários métodos:
 
-* De **Sites** console, é possível **clique duas vezes** a entrada da página para abri-la para edição.
+* No console **Sites**, você pode **clicar duas vezes** na entrada da página para abri-la para edição.
 
-* De **Sites** console, é possível **clique com o botão direito do mouse** (menu de contexto) o item de página e selecione **Abertura** no menu.
+* No console **Sites**, você pode **clicar com o botão direito do mouse** (menu de contexto) no item de página e selecionar **Abrir** no menu.
 
 * Depois de abrir uma página, você pode navegar para outras páginas do site (para editá-las) clicando em hiperlinks.
 
@@ -214,7 +214,7 @@ Ao copiar, é possível copiar:
 * uma página única
 * uma página junto com todas as subpáginas
 
-1. No **Sites** selecione a página que deseja copiar.
+1. No console **Sites**, selecione a página que deseja copiar.
 
    >[!NOTE]
    >
@@ -235,7 +235,7 @@ Ao copiar, é possível copiar:
 
    >[!NOTE]
    >
-   >Também é possível usar **Copiar página** do **Página** guia do sidekick. Isso abre uma caixa de diálogo onde você pode especificar o destino e assim por diante.
+   >Você também pode usar **Copiar página** da guia **Página** do sidekick. Isso abre uma caixa de diálogo onde você pode especificar o destino e assim por diante.
 
 ### Mover ou renomear página {#moving-or-renaming-page}
 
@@ -255,11 +255,11 @@ Para mover ou renomear uma página:
 
 1. Há vários métodos para acionar uma movimentação:
 
-   * No **Sites** , clique para selecionar a página e selecione **Mover...**
-   * No **Sites** também é possível selecionar o item de página e, em seguida, **clique com o botão direito do mouse** e selecione **Mover...**
-   * Ao editar uma página, você pode selecionar **Mover página** do **Página** guia do sidekick.
+   * No console **Sites**, clique para selecionar a página e selecione **Mover...**
+   * No console **Sites**, você também pode selecionar o item de página, clicar com o **botão direito do mouse** e selecionar **Mover...**
+   * Ao editar uma página, você pode selecionar **Mover página** na guia **Página** do sidekick.
 
-1. A variável **Mover** é aberta; aqui você pode especificar um novo local, um novo nome para a página ou ambos.
+1. A janela **Mover** é aberta; aqui você pode especificar um novo local, um novo nome para a página ou ambos.
 
    ![screen_shot_2012-02-15at121336pm](assets/screen_shot_2012-02-15at121336pm.png)
 
@@ -293,7 +293,7 @@ Para mover ou renomear uma página:
 
    >[!NOTE]
    >
-   >Se a página já tiver sido ativada, movê-la automaticamente a desativará. Por padrão, ele será reativado quando a movimentação for concluída, mas isso pode ser alterado ao desmarcar a opção **Republicar** para a página no campo **Mover** janela.
+   >Se a página já tiver sido ativada, movê-la automaticamente a desativará. Por padrão, ele será reativado quando a movimentação for concluída, mas isso pode ser alterado ao desmarcar o campo **Republicar** para a página na janela **Mover**.
 
 1. Clique em **Mover**. A confirmação será necessária. Clique em **OK** para confirmar.
 
@@ -305,9 +305,9 @@ Para mover ou renomear uma página:
 
 1. Você pode excluir uma página de vários locais:
 
-   * No prazo de **Sites** clique para selecionar a página, clique com o botão direito do mouse e selecione **Excluir** no menu resultante.
-   * No prazo de **Sites** , clique para selecionar a página e selecione **Excluir** no menu da barra de ferramentas.
-   * No sidekick, use o **Página** guia para selecionar **Excluir página** - essa ação exclui a página que está aberta no momento.
+   * No console **Sites**, clique para selecionar a página, clique com o botão direito do mouse e selecione **Excluir** do menu resultante.
+   * No console **Sites**, clique para selecionar a página e selecione **Excluir** no menu da barra de ferramentas.
+   * No sidekick, use a guia **Página** para selecionar **Excluir página**. Isso exclui a página aberta no momento.
 
 1. Depois de selecionar a exclusão de uma página, você deve confirmar a solicitação, pois a ação não pode ser desfeita.
 
@@ -329,9 +329,9 @@ Para mover ou renomear uma página:
 >
 >As pastas também estão sujeitas às [convenções de nomenclatura de página](#page-naming-conventions) ao especificar um novo nome de pasta.
 
-1. Abra o **Sites** e navegue até o local desejado.
-1. No **Novo...** (clique na seta ao lado de **Novo...**), selecione **Nova pasta...**.
-1. A variável **Criar pasta** é aberta. Aqui você pode inserir o **Nome** e o **Título**:
+1. Abra o console **Sites** e navegue até o local necessário.
+1. No menu **Nova...** (clique na seta ao lado de **Nova...**), selecione **Nova Pasta...**.
+1. A caixa de diálogo **Criar Pasta** é aberta. Aqui você pode inserir o **Nome** e o **Título**:
 
    ![chlimage_1-152](assets/chlimage_1-152.png)
 

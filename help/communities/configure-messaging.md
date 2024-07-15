@@ -21,13 +21,13 @@ ht-degree: 0%
 
 Além das interações visíveis publicamente que ocorrem em fóruns e comentários, o recurso de mensagens do AEM Communities permite que os membros da comunidade interajam entre si de forma mais privada.
 
-Esse recurso pode ser incluído quando um [site da comunidade](/help/communities/overview.md#communitiessites) é criado.
+Este recurso pode ser incluído quando um [site da comunidade](/help/communities/overview.md#communitiessites) for criado.
 
 O recurso de mensagens permite fazer o seguinte:
 
 **A** - enviar uma mensagem para um ou mais membros da comunidade
 
-**B** - enviar mensagens diretas no [em massa para grupos de membros da comunidade](/help/communities/messaging.md#group-messaging)
+**B** - enviar mensagens diretas em [massa para grupos de membros da comunidade](/help/communities/messaging.md#group-messaging)
 
 **C** - enviar uma mensagem com anexos
 
@@ -39,18 +39,18 @@ O recurso de mensagens permite fazer o seguinte:
 
 **G** - restaurar uma mensagem excluída
 
-![messaging-section](assets/messaging-section.png)
+![seção-mensagens](assets/messaging-section.png)
 
 ![restaurar-mensagem](assets/restore-message.png)
 
 Para ativar e modificar o recurso de mensagens, consulte:
 
-* [Configurar mensagens](/help/communities/messaging.md) para administradores
-* [Fundamentos de mensagens](/help/communities/essentials-messaging.md) para desenvolvedores
+* [Configurar Mensagens](/help/communities/messaging.md) para administradores
+* [Messaging Essentials](/help/communities/essentials-messaging.md) para desenvolvedores
 
 >[!NOTE]
 >
->Não é possível adicionar `Compose Message, Message, or Message List` componentes (encontrados em `Communities`grupo de componentes) para uma página no modo de edição do autor.
+>Não há suporte para adicionar componentes `Compose Message, Message, or Message List` (encontrados no grupo de componentes `Communities`) a uma página no modo de edição do autor.
 
 ## Configurar componentes de mensagens {#configure-messaging-components}
 
@@ -58,29 +58,29 @@ Quando as mensagens estiverem ativadas para um site da comunidade, ele será con
 
 ### Configurar Lista de Mensagens (caixa de mensagem) {#configure-message-list-message-box}
 
-Para modificar a configuração da lista de mensagens para **Caixa de entrada**, **Itens enviados**, e **Lixeira** do recurso de mensagens, abra o site em [modo de edição do autor](/help/communities/sites-console.md#authoring-site-content).
+Para modificar a configuração da lista de mensagens para as páginas **Caixa de Entrada**, **Itens Enviados** e **Lixeira** do recurso de mensagens, abra o site no [modo de edição do autor](/help/communities/sites-console.md#authoring-site-content).
 
-1. Entrada `Preview` , selecione o **Mensagens** link para abrir a página principal de mensagens. Em seguida, selecione **Caixa de entrada**, **Itens enviados** ou **Lixeira** para configurar o componente para essa lista de mensagens.
+1. No modo `Preview`, selecione o link **Mensagens** para abrir a página de mensagens principal. Em seguida, selecione **Caixa de entrada**, **Itens enviados** ou **Lixeira** para configurar o componente para essa lista de mensagens.
 
-1. Entrada `Edit` selecione o componente na página.
-1. Para acessar a caixa de diálogo de configuração, cancele a herança selecionando o `link` ícone.
+1. No modo `Edit`, selecione o componente na página.
+1. Para acessar o diálogo de configuração, cancele a herança selecionando o ícone `link`.
 Quando a herança for cancelada, é possível selecionar o ícone de configuração para abrir a caixa de diálogo de configuração.
 
-1. Quando a configuração estiver concluída, será necessário restaurar a herança selecionando o `broken link` ícone.
+1. Quando a configuração for concluída, será necessário restaurar a herança selecionando o ícone `broken link`.
 
 ![configure-message-list](assets/configure-message-list.png)
 
 #### Guia Básico {#basic-tab}
 
-![basic-tab-messagelist](assets/basic-tab-messagelist.png)
+![lista-de-mensagens-guia-básica](assets/basic-tab-messagelist.png)
 
 * **Seletor de serviços**
 
-  (*Obrigatório*) Definir com o valor da propriedade **`serviceSelector.name`** do [Serviço de operações de mensagens do AEM Communities](/help/communities/messaging.md#messaging-operations-service).
+  (*Obrigatório*) Defina com o valor da propriedade **`serviceSelector.name`** do [Serviço de Operações de Mensagens da AEM Communities](/help/communities/messaging.md#messaging-operations-service).
 
-* **Compor página**
+* **Compor Página**
 
-  (*Obrigatório*) A página a ser aberta quando um membro clicar no **`Reply`** botão. A página de destino deve conter as **Compor mensagem** formulário.
+  (*Obrigatório*) A página a ser aberta quando um membro clicar no botão **`Reply`**. A página de destino deve conter o formulário **Compor Mensagem**.
 
 * **Responder/Exibir como recurso**
 
@@ -90,69 +90,69 @@ Quando a herança for cancelada, é possível selecionar o ícone de configuraç
 
   O formulário de perfil a ser usado para exibir o perfil dos remetentes.
 
-* **Pasta Lixeira**
+* **Pasta de Lixeira**
 
   Se marcado, este componente Lista de mensagens exibe somente as mensagens sinalizadas como excluídas (lixeira).
 
 * **Caminhos de pasta**
 
-  (*Obrigatório*) Fazendo referência aos valores definidos para **inbox.path.name** e **sentiitems.path.name** no [Serviço de operações de mensagens do AEM Communities](/help/communities/messaging.md#messaging-operations-service). Ao configurar para um `Inbox`, adicione uma entrada usando o valor de **inbox.path.name**. Ao configurar para um `Outbox`, adicione uma entrada usando o valor de **sentiitems.path.name**. Ao configurar para `Trash`, adicione duas entradas com ambos os valores.
+  (*Obrigatório*) Fazendo referência aos valores definidos para **inbox.path.name** e **sentiitems.path.name** no [Serviço de Operações do AEM Communities Messaging](/help/communities/messaging.md#messaging-operations-service). Ao configurar para um `Inbox`, adicione uma entrada usando o valor de **inbox.path.name**. Ao configurar para um `Outbox`, adicione uma entrada usando o valor de **sentiitems.path.name**. Ao configurar para `Trash`, adicione duas entradas com ambos os valores.
 
 #### Guia Exibir {#display-tab}
 
-![display-tab-message-list](assets/display-tab-message-list.png)
+![lista-de-mensagens-guia-exibição](assets/display-tab-message-list.png)
 
-* **Botão Marcar como lido**
+* **Botão Marcar como Lida**
 
-  Se essa opção estiver marcada, exibe uma `Read`botão que permite marcar uma mensagem como lida.
+  Se marcado, exibe um botão `Read` que permite marcar uma mensagem como lida.
 
-* **Botão Marcar como não lido**
+* **Botão Marcar como Não Lido**
 
-  Se essa opção estiver marcada, exibe uma `Mark Unread` botão que permite marcar uma mensagem como lida.
+  Se marcado, exibe um botão `Mark Unread` que permite marcar uma mensagem como lida.
 
 * **Botão Excluir**
 
-  Se essa opção estiver marcada, exibe uma `Delete` botão que permite marcar uma mensagem como lida. Duplica a funcionalidade de exclusão se **`Message Options`** também está marcada.
+  Se marcado, exibe um botão `Delete` que permite marcar uma mensagem como lida. Duplica a funcionalidade de exclusão se **`Message Options`** também estiver marcado.
 
-* **Opções de mensagem**
+* **Opções de Mensagem**
 
-  Se essa opção estiver marcada, exibe **`Reply`**, **`Reply All`**, **`Forward`**, e **`Delete`** botões que permitem que uma mensagem seja reenviada ou excluída. Duplica a funcionalidade de exclusão se **`Delete Button`** também está marcada.
+  Se marcado, exibe os botões **`Reply`**, **`Reply All`**, **`Forward`** e **`Delete`**, permitindo que uma mensagem seja reenviada ou excluída. Duplica a funcionalidade de exclusão se **`Delete Button`** também estiver marcado.
 
-* **Mensagens por página**
+* **Mensagens por Página**
 
   O número especificado é o número máximo de mensagens exibidas por página em um esquema de paginação. Se nenhum número for especificado (deixado em branco), todas as mensagens serão exibidas e não haverá paginação.
 
-* **Padrões de carimbo de data e hora**
+* **Padrões de carimbo de data/hora**
 
   Forneça padrões de carimbo de data e hora para um ou mais idiomas. O padrão é para en, de, fr, it, es, ja, zh_CN, ko_KR.
 
-* **Exibir usuário**
+* **Exibir Usuário**
 
-  Escolha um **`Sender`** ou **`Recipients`** para que você possa determinar se deseja exibir o Remetente ou os Destinatários.
+  Escolha **`Sender`** ou **`Recipients`** para que você possa determinar se deseja exibir o Remetente ou os Destinatários.
 
 ### Configurar Compor Mensagem {#configure-compose-message}
 
-Para modificar a configuração da página Redigir mensagem, abra o site em [modo de edição do autor](/help/communities/sites-console.md#authoring-site-content).
+Para modificar a configuração da página para redigir mensagem, abra o site no [modo de edição do autor](/help/communities/sites-console.md#authoring-site-content).
 
-* Entrada `Preview` , selecione o **Mensagens** link para abrir a página principal de mensagens. Em seguida, clique no botão Nova mensagem para abrir a `Compose Message` página.
+* No modo `Preview`, selecione o link **Mensagens** para abrir a página de mensagens principal. Em seguida, clique no botão Nova Mensagem para abrir a página `Compose Message`.
 
-* Entrada `Edit` selecione o componente principal na página que contém o corpo da mensagem.
-* Para acessar a caixa de diálogo de configuração, cancele a herança selecionando o `link` ícone.
+* No modo `Edit`, selecione o componente principal na página que contém o corpo da Mensagem.
+* Para acessar o diálogo de configuração, cancele a herança selecionando o ícone `link`.
 Quando a herança for cancelada, é possível selecionar o ícone de configuração para abrir a caixa de diálogo de configuração.
 
-* Quando a configuração estiver concluída, será necessário restaurar a herança selecionando o `broken link` ícone.
+* Quando a configuração for concluída, será necessário restaurar a herança selecionando o ícone `broken link`.
 
 ![config-compose-message](assets/config-compose-message.png)
 
 #### Guia Básico {#basic-tab-1}
 
-![basic-tab-compose](assets/basic-tab-compose.png)
+![composição-guia-básica](assets/basic-tab-compose.png)
 
 * **URL de redirecionamento**
 
   Digite o URL da página exibida após o envio da mensagem. Por exemplo, `../messaging.html`.
 
-* **URL de cancelamento**
+* **Cancelar URL**
 
   Digite o URL da página exibida se o remetente cancelar a mensagem. Por exemplo, `../messaging.html`.
 
@@ -166,40 +166,40 @@ Quando a herança for cancelada, é possível selecionar o ícone de configuraç
 
 * **Seletor de serviços**
 
-  (*Obrigatório*) Definir com o valor da propriedade **`serviceSelector.name`** do [Serviço de operações de mensagens do AEM Communities](/help/communities/messaging.md#messaging-operations-service).
+  (*Obrigatório*) Defina com o valor da propriedade **`serviceSelector.name`** do [Serviço de Operações de Mensagens da AEM Communities](/help/communities/messaging.md#messaging-operations-service).
 
 #### Guia Exibir {#display-tab-1}
 
-![display-tab-compose](assets/display-tab-compose.png)
+![exibir-guia-compor](assets/display-tab-compose.png)
 
-* **Mostrar campo de assunto**
+* **Mostrar Campo de Assunto**
 
-  Se essa opção estiver marcada, mostrar a `Subject` e permite adicionar um assunto à mensagem. O padrão não está marcado.
+  Se marcado, mostra o campo `Subject` e habilita a adição de um assunto à mensagem. O padrão não está marcado.
 
 * **Rótulo do assunto**
 
-  Insira o texto que você deseja exibir ao lado da `Subject` campo. O padrão é `Subject`.
+  Insira o texto que você deseja exibir ao lado do campo `Subject`. O padrão é `Subject`.
 
 * **Mostrar campo Anexar arquivo**
 
-  Se essa opção estiver marcada, mostrar a `Attachment` e habilitar a adição de anexos de arquivo à mensagem. O padrão não está marcado.
+  Se marcado, mostra o campo `Attachment` e habilita a adição de anexos de arquivo à mensagem. O padrão não está marcado.
 
-* **Anexar etiqueta de arquivo**
+* **Anexar Rótulo de Arquivo**
 
-  Insira o texto que você deseja exibir ao lado da `Attachment` campo. O padrão é **`Attach File`**.
+  Insira o texto que você deseja exibir ao lado do campo `Attachment`. O padrão é **`Attach File`**.
 
-* **Mostrar campo de conteúdo**
+* **Mostrar Campo de Conteúdo**
 
-  Se essa opção estiver marcada, mostrar a `Content` e habilitar a adição de um corpo de mensagem. O padrão não está marcado.
+  Se marcado, mostra o campo `Content` e habilita a adição de um corpo de mensagem. O padrão não está marcado.
 
-* **Rótulo de conteúdo**
+* **Rótulo do conteúdo**
 
-  Insira o texto que você deseja exibir ao lado da `Content` campo. O padrão é **`Body`**.
+  Insira o texto que você deseja exibir ao lado do campo `Content`. O padrão é **`Body`**.
 
 * **Com Rich Text Editor**
 
   Se marcado, indica o uso de uma caixa de texto de Conteúdo personalizada com seu próprio editor de rich text. O padrão não está marcado.
 
-* **Padrões de carimbo de data e hora**
+* **Padrões de carimbo de data/hora**
 
   Forneça padrões de carimbo de data e hora para um ou mais idiomas. O padrão é para en, de, fr, it, es, ja, zh_CN, ko_KR.

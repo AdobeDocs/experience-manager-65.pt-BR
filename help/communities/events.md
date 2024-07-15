@@ -22,9 +22,9 @@ ht-degree: 5%
 
 Quando os membros interagem com os recursos do Communities, são enviados eventos OSGi que podem acionar ouvintes assíncronos, como notificações ou gamificação (pontuação e marcação).
 
-De um componente [SocialEvent](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html) a instância registra os eventos como `actions` que ocorrem por um `topic`. O SocialEvent inclui um método para retornar um `verb` associada à ação. Existe uma *n-1* relação entre `actions` e `verbs`.
+A instância [SocialEvent](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html) de um componente registra os eventos como `actions` que ocorrem para um `topic`. O SocialEvent inclui um método para retornar um `verb` associado à ação. Há uma relação *n-1* entre `actions` e `verbs`.
 
-Para os componentes das Comunidades entregues na versão, as tabelas a seguir descrevem os `verbs` definido para cada `topic` disponíveis para uso.
+Para os componentes das Comunidades entregues na versão, as tabelas a seguir descrevem a `verbs` definida para cada `topic` disponível para uso.
 
 ## Tópicos e verbos {#topics-and-verbs}
 
@@ -48,7 +48,7 @@ SocialEvent `topic`= com/adobe/cq/social/comment
 | ATUALIZAR | Comentário do membro editado |
 | EXCLUIR | O comentário do membro foi excluído |
 
-[Componente da biblioteca de arquivos](essentials-file-library.md)
+[Componente de Biblioteca de Arquivos](essentials-file-library.md)
 SocialEvent `topic`= com/adobe/cq/social/fileLibrary
 
 | **Verbo** | **Descrição** |
@@ -78,7 +78,7 @@ SocialEvent `topic`= com/adobe/cq/social/journal
 | ATUALIZAR | Artigo ou comentário do blog do membro editado |
 | EXCLUIR | O artigo ou comentário do blog do membro foi excluído |
 
-[Componente de QnA](qna-essentials.md)
+[Componente QnA](qna-essentials.md)
 SocialEvent `topic` = com/adobe/cq/social/qna
 
 | **Verbo** | **Descrição** |
@@ -129,9 +129,9 @@ SocialEvent `topic`= com/adobe/cq/social/moderation
 
 ## Eventos para Componentes personalizados {#events-for-custom-components}
 
-Para um componente personalizado, a variável [Classe abstrata de SocialEvent](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html) deve ser estendido para registrar os eventos do componente como `actions`que ocorrem por um `topic`.
+Para um componente personalizado, a [classe abstrata de SocialEvent](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html) deve ser estendida para registrar os eventos do componente como `actions` que ocorrem para um `topic`.
 
-O evento personalizado substituiria o método `getVerb()` de modo a que um `verb`é retornado para cada `action`. A variável `verb` retornados para uma ação podem ser aqueles normalmente usados (como `POST`) ou uma especializada para o componente (como `ADD RATING`). Existe uma *n-1* relação entre `actions`e `verbs`.
+O evento personalizado substituiria o método `getVerb()` para que um `verb` apropriado fosse retornado para cada `action`. O `verb` retornado para uma ação pode ser um usado com frequência (como `POST`) ou um especializado para o componente (como `ADD RATING`). Há uma relação *n-1* entre `actions`e `verbs`.
 
 >[!NOTE]
 >
@@ -246,7 +246,7 @@ A amostra de pseudo-código a seguir removerá os eventos de DELETE para o compo
 
 ### Pseudo-código para EventListener {#pseudo-code-for-eventlistener}
 
-Exige [pacote de recursos mais recente](deploy-communities.md#latestfeaturepack).
+Requer o [último pacote de recursos](deploy-communities.md#latestfeaturepack).
 
 ```java
 package my.company.comments;

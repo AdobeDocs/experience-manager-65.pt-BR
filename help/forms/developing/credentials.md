@@ -18,13 +18,13 @@ ht-degree: 0%
 
 # Trabalhar com credenciais {#working-with-credentials}
 
-**Os exemplos e amostras neste documento são somente para AEM Forms no ambiente JEE.**
+**Exemplos e exemplos neste documento são somente para AEM Forms no ambiente JEE.**
 
 **Sobre o Serviço de Credenciais**
 
 Uma credencial contém suas informações de chave privada necessárias para assinar ou identificar documentos. Um certificado é uma informação de chave pública que você configura para confiança. O AEM Forms usa certificados e credenciais para várias finalidades:
 
-* As extensões do Acrobat Reader DC usam uma credencial para ativar os direitos de uso do Adobe Reader em documentos do PDF. (Consulte [Aplicação de direitos de uso a documentos PDF](/help/forms/developing/assigning-usage-rights.md#applying-usage-rights-to-pdf-documents).)
+* As extensões do Acrobat Reader DC usam uma credencial para ativar os direitos de uso do Adobe Reader em documentos do PDF. (Consulte [Aplicar direitos de uso a documentos PDF](/help/forms/developing/assigning-usage-rights.md#applying-usage-rights-to-pdf-documents).)
 * O serviço de assinatura acessa certificados e credenciais ao executar operações, como assinar digitalmente documentos de PDF. (Consulte [Assinatura digital de documentos PDF](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents).)
 
 Você pode interagir programaticamente com o serviço de credenciais usando a API Java do Gerenciador de Confiança. Você pode executar as seguintes tarefas:
@@ -40,7 +40,7 @@ Você pode interagir programaticamente com o serviço de credenciais usando a AP
 
 Você pode importar programaticamente uma credencial para o AEM Forms usando a API do Gerenciador de Confiança. Por exemplo, você pode importar uma credencial usada para assinar um documento PDF. (Consulte [Assinatura digital de documentos PDF](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)).
 
-Ao importar uma credencial, especifique um alias para a credencial. O alias é usado para executar uma operação do Forms que requer uma credencial. Depois de importada, uma credencial pode ser exibida no console de administração, conforme mostrado na ilustração a seguir. Observe que o alias da credencial é *Seguro*.
+Ao importar uma credencial, especifique um alias para a credencial. O alias é usado para executar uma operação do Forms que requer uma credencial. Depois de importada, uma credencial pode ser exibida no console de administração, conforme mostrado na ilustração a seguir. Observe que o alias da credencial é *Secure*.
 
 ![ww_ww_truststore](assets/ww_ww_truststore.png)
 
@@ -69,7 +69,7 @@ Os seguintes arquivos JAR devem ser adicionados ao classpath do projeto:
 * adobe-utilities.jar (obrigatório se o AEM Forms for implantado no JBoss)
 * jbossall-client.jar (obrigatório se o AEM Forms for implantado no JBoss)
 
-Para obter informações sobre a localização desses arquivos JAR, consulte [Inclusão de arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Para obter informações sobre a localização desses arquivos JAR, consulte [Incluindo arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **Criar um cliente de serviço de credencial**
 
@@ -105,23 +105,23 @@ Importe uma credencial para o AEM Forms usando a API do Gerenciador de Confianç
 
 1. Criar um cliente de serviço de credencial
 
-   * Criar um `ServiceClientFactory` objeto que contém propriedades de conexão.
-   * Criar um `CredentialServiceClient` usando seu construtor e transmitindo o `ServiceClientFactory` objeto.
+   * Crie um objeto `ServiceClientFactory` que contenha propriedades de conexão.
+   * Crie um objeto `CredentialServiceClient` usando seu construtor e transmitindo o objeto `ServiceClientFactory`.
 
 1. Referenciar a credencial
 
-   * Criar um `java.io.FileInputStream` usando seu construtor. Transmita um valor de cadeia de caracteres que especifique o local da credencial.
-   * Criar um `com.adobe.idp.Document` objeto que armazena a credencial usando o `com.adobe.idp.Document` construtor. Passe o `java.io.FileInputStream` objeto que contém a credencial para o construtor.
+   * Crie um objeto `java.io.FileInputStream` usando seu construtor. Transmita um valor de cadeia de caracteres que especifique o local da credencial.
+   * Crie um objeto `com.adobe.idp.Document` que armazene a credencial usando o construtor `com.adobe.idp.Document`. Passe o objeto `java.io.FileInputStream` que contém a credencial para o construtor.
 
 1. Executar a operação de importação
 
-   * Crie uma matriz de cadeia de caracteres que contenha um elemento. Atribuir o valor `truststore.usage.type.sign` ao elemento.
-   * Chame o `CredentialServiceClient` do objeto `importCredential` e passe os seguintes valores:
+   * Crie uma matriz de cadeia de caracteres que contenha um elemento. Atribua o valor `truststore.usage.type.sign` ao elemento.
+   * Chame o método `importCredential` do objeto `CredentialServiceClient` e passe os seguintes valores:
 
       * Um valor de cadeia de caracteres que especifica o valor de alias da credencial.
-      * A variável `com.adobe.idp.Document` instância que armazena a credencial.
+      * A instância `com.adobe.idp.Document` que armazena a credencial.
       * Um valor de cadeia de caracteres que especifica a senha associada à credencial.
-      * A matriz de cadeia de caracteres que contém o valor de uso. Por exemplo, você pode especificar esse valor `truststore.usage.type.sign`. Para importar uma credencial de extensão de Reader, especifique `truststore.usage.type.lcre`.
+      * A matriz de cadeia de caracteres que contém o valor de uso. Por exemplo, você pode especificar este valor `truststore.usage.type.sign`. Para importar uma credencial de Extensão de Reader, especifique `truststore.usage.type.lcre`.
 
 **Consulte também**
 
@@ -159,7 +159,7 @@ Inclua os arquivos necessários no projeto de desenvolvimento. Se você estiver 
 * adobe-utilities.jar (obrigatório se o AEM Forms for implantado no JBoss)
 * jbossall-client.jar (obrigatório se o AEM Forms for implantado no JBoss)
 
-Para obter informações sobre a localização desses arquivos JAR, consulte [Inclusão de arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Para obter informações sobre a localização desses arquivos JAR, consulte [Incluindo arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **Criar um cliente de serviço de credencial**
 
@@ -189,12 +189,12 @@ Exclua uma credencial do AEM Forms usando a API do Gerenciador de Confiança (Ja
 
 1. Criar um cliente de serviço de credencial
 
-   * Criar um `ServiceClientFactory` objeto que contém propriedades de conexão.
-   * Criar um `CredentialServiceClient` usando seu construtor e transmitindo o `ServiceClientFactory` objeto.
+   * Crie um objeto `ServiceClientFactory` que contenha propriedades de conexão.
+   * Crie um objeto `CredentialServiceClient` usando seu construtor e transmitindo o objeto `ServiceClientFactory`.
 
 1. Executar a operação de exclusão
 
-   Chame o `CredentialServiceClient` do objeto `deleteCredential` e transmitem um valor de string que especifica o valor do alias.
+   Invoque o método `deleteCredential` do objeto `CredentialServiceClient` e passe um valor de cadeia de caracteres que especifique o valor do alias.
 
 **Consulte também**
 

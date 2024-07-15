@@ -65,13 +65,13 @@ O AEM 6.5.18.0 Forms no JEE fornece dois tipos de instaladores: [Instalador comp
 
 **Instalador completo**: você pode usar o instalador completo para configurar novas instâncias do AEM Forms ou executar atualizações do AEM 6.5.x.x Forms AEM no JEE para o 6.5.18.0 Forms no JEE.
 
-**Instalador de patch**: o instalador de patches é para clientes que já usam as versões do AEM 6.5.x.x. Você pode usar o instalador de patches para atualizar para a versão mais recente do AEM Forms.
+**Instalador de patch**: o instalador de patch é para clientes que já usam as versões AEM 6.5.x.x. Você pode usar o instalador de patches para atualizar para a versão mais recente do AEM Forms.
 
 A imagem a seguir mostra cenários de uso do instalador de patch e completo.
 
 ![Instalador Completo e Instalador de Patch](/help/forms/using/assets/full-and-patch-installer.png)
 
-Consulte a [Instruções de instalação do AEM 6.5 Forms Service Pack](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html) artigo para instalar o Service Pack mais recente para o ambiente JEE.
+Consulte o artigo [Instruções de instalação do Forms Service Pack do AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html) para instalar o Service Pack mais recente do ambiente JEE.
 
 <!--
 [Work in Progress]

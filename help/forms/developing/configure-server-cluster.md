@@ -30,7 +30,7 @@ Este documento discute os requisitos específicos de configuração e as possív
 
 Os nós de cluster do AEM Forms no JEE se comunicam entre si e compartilham informações para permitir que o cluster como um todo tenha um único estado consistente de configuração e aplicação. O compartilhamento de informações no cluster é feito de várias maneiras diferentes simultaneamente, usadas em contextos diferentes. Os métodos básicos de compartilhamento de informações estão ilustrados na Figura abaixo:
 
-![Cluster do servidor de aplicativos](assets/application-server-cluster.jpg)
+![Cluster do Servidor de Aplicativos](assets/application-server-cluster.jpg)
 
 ### Cluster do servidor de aplicativos {#application-server-cluster}
 
@@ -38,7 +38,7 @@ Um cluster do AEM Forms no JEE depende dos recursos de cluster subjacentes do se
 
 ### Cache do GemFire {#gemfire-cache}
 
-O cache do GemFire é um mecanismo de cache distribuído implementado em cada nó de cluster. Os nós se encontram e criam um único cache lógico que é mantido coerente entre os nós. Os nós que se encontram unem-se para manter um único cache nocional mostrado como uma nuvem na Figura 1. Ao contrário do GDS e do banco de dados, o cache é uma entidade puramente fictícia. O conteúdo real em cache é armazenado na memória e no `LC_TEMP` em cada um dos nós de cluster.
+O cache do GemFire é um mecanismo de cache distribuído implementado em cada nó de cluster. Os nós se encontram e criam um único cache lógico que é mantido coerente entre os nós. Os nós que se encontram unem-se para manter um único cache nocional mostrado como uma nuvem na Figura 1. Ao contrário do GDS e do banco de dados, o cache é uma entidade puramente fictícia. O conteúdo real em cache é armazenado na memória e no diretório `LC_TEMP` em cada um dos nós de cluster.
 
 ### Banco de dados {#database}
 
@@ -74,7 +74,7 @@ Se você tiver nós que pretende agrupar, eles precisarão encontrar um ao outro
 
 Um problema comum com a descoberta automática é que as mensagens multicast podem ser filtradas pela rede. Isso pode ser parte de uma política de rede, devido a regras de firewall de software ou porque elas não podem rotear pela rede existente entre nós. Devido à dificuldade geral em fazer com que a descoberta automática de UDP funcione em redes complexas, é prática comum que as implantações de produção usem um método de descoberta alternativo: os localizadores de TCP. Uma discussão geral dos localizadores TCP pode ser encontrada nas referências.
 
-**Como faço para saber se estou usando localizadores ou UDP?**
+**Como saber se estou usando localizadores ou UDP?**
 
 As seguintes propriedades da JVM controlam o método que o cache do GemFire usa para localizar outros nós.
 
@@ -86,13 +86,13 @@ Configurações de multicast:
 
 Configurações do Localizador de TCP:
 
-* `adobe.cache.cluster-locators`: O endereço IP/nome do host do localizador TCP e a porta do localizador TCP para todos os localizadores usados por membros do sistema para comunicação com localizadores em execução.
+* `adobe.cache.cluster-locators`: O endereço IP/nome de host do localizador TCP e a porta do localizador TCP para todos os localizadores usados por membros do sistema para comunicação com localizadores em execução.
 
 A lista deve incluir todos os localizadores em uso e deve ser configurada de forma consistente para cada membro do sistema de cluster.
 
 Se a lista do TCP Locator estiver vazia, os localizadores não são usados e o método de multicast é usado.
 
-**Como posso verificar se meu localizador de TCP está em execução?**
+**Como posso verificar se meu localizador TCP está em execução?**
 
 Primeiro, se os localizadores TCP estiverem em uso, você deverá listar seus localizadores TCP na seguinte propriedade JVM em todos os nós do cluster:
 
@@ -120,7 +120,7 @@ O GemFire produz informações de registro que podem ser usadas para diagnostica
 
 `.../LC_TEMP/adobeZZ__123456/Caching/Gemfire.log`
 
-A sequência numérica após `adobeZZ_` é exclusiva do nó do servidor e, portanto, você deve pesquisar o conteúdo real do diretório temporário. Os dois caracteres depois de `adobe` depende do tipo de servidor de aplicativos: `wl`, `jb`ou `ws`.
+A sequência numérica após `adobeZZ_` é exclusiva ao nó do servidor e, portanto, você deve pesquisar o conteúdo real do diretório temporário. Os dois caracteres após `adobe` dependem do tipo de servidor de aplicativo: `wl`, `jb` ou `ws`.
 
 Os seguintes logs de amostra mostram o que acontece quando um cluster de dois nós se encontra.
 
@@ -150,7 +150,7 @@ No outro nó, AP-HP7:
 [info 2011/08/05 09:28:10.128 EDT GemfireCacheAdapter <server.startup : 0> tid=0x64] DistributionManager ap-hp7(2821)<v1>:19498/59136 started on 239.192.81.1[33456]. There were 1 other DMs. others: [ap-hp8(4268)<v0>:18763/56449]
 ```
 
-**E se o GemFire estiver encontrando nós que não deveria?**
+**E se o GemFire estiver localizando nós que não deveria?**
 
 Cada cluster distinto que compartilha uma rede corporativa deve usar um conjunto separado de localizadores TCP, se os localizadores TCP forem usados, ou um número de porta UDP separado, se a configuração UDP de multicast for usada. Como a descoberta automática de UDP é a configuração padrão para o AEM Forms no JEE e a mesma porta padrão 33456 está em uso por vários clusters, é possível que os clusters que não devem estar tentando se comunicar possam estar fazendo isso inesperadamente. Por exemplo, os clusters de produção e controle de qualidade devem permanecer separados, mas podem se conectar entre si por meio de multicast de UDP.
 
@@ -170,7 +170,7 @@ Nesse caso, o bootstrapper está trabalhando com o GemFire para acessar as tabel
 
 Embora uma porta duplicada se torne evidente durante o Bootstrap, é possível que essa situação seja exibida posteriormente. Isso pode ocorrer quando um cluster é reiniciado após ser desativado quando o Bootstrap do outro cluster ocorreu. Ou, quando a configuração da rede for alterada para tornar visíveis entre si os clusters que estavam isolados anteriormente, para fins de multicast.
 
-Para diagnosticar essas situações, examine os logs do GemFire e considere cuidadosamente se apenas os nós esperados estão sendo encontrados. Para corrigir o problema, é necessário alterar a `adobe.cache.multicast-port` para um valor diferente em um ou ambos os clusters.
+Para diagnosticar essas situações, examine os logs do GemFire e considere cuidadosamente se apenas os nós esperados estão sendo encontrados. Para corrigir o problema, é necessário alterar a propriedade `adobe.cache.multicast-port` para um valor diferente em um ou ambos os clusters.
 
 ### 2) Partilha de GDS {#gds-sharing}
 
@@ -188,7 +188,7 @@ No UNIX®, a maneira como as montagens do NFS são mapeadas para a estrutura de 
 
 * LCES especifica o caminho para GDS: /u01/iapply/livecycle_gds
 
-Se a montagem no Nó 1 falhar, a estrutura de diretório ainda conterá um caminho `/u01/iapply/livecycle_gds` ao ponto de montagem vazio e o nó parece estar sendo executado corretamente. Mas como o conteúdo do GDS não está sendo compartilhado com o outro nó, o cluster não funciona corretamente. Isso pode e acontece, e o resultado é que o cluster falha de maneiras misteriosas.
+Se a montagem no Nó 1 falhar, a estrutura de diretório ainda conterá um caminho `/u01/iapply/livecycle_gds` para o ponto de montagem vazio e o nó parecerá estar sendo executado corretamente. Mas como o conteúdo do GDS não está sendo compartilhado com o outro nó, o cluster não funciona corretamente. Isso pode e acontece, e o resultado é que o cluster falha de maneiras misteriosas.
 
 A prática recomendada é organizar as coisas para que o ponto de montagem do Linux® não seja usado como a raiz do GDS, mas, em vez disso, algum diretório dentro dele seja usado como a raiz do GDS:
 
@@ -226,7 +226,7 @@ Referências:
 
 * [Serviços empresariais de alta disponibilidade por meio de clusters JBoss®](https://docs.jboss.org/jbossas/jboss4guide/r4/html/cluster.chapt.html)
 
-* [Oracle WebLogic Server - Uso de clusters](https://docs.oracle.com/cd/E12840_01/wls/docs103/pdf/cluster.pdf)
+* [Oracle WebLogic Server-Uso de clusters](https://docs.oracle.com/cd/E12840_01/wls/docs103/pdf/cluster.pdf)
 
 ### Como verifico se o JBoss® está sendo agrupado corretamente? {#check-jboss-clustering}
 
@@ -263,11 +263,12 @@ Uma configuração usa um ponto entre &quot;cluster&quot; e &quot;localizadores&
 
 Para determinar como o Quartz se configurou, você deve observar as mensagens geradas pelo serviço AEM Forms no JEE Scheduler durante a inicialização. Essas mensagens são geradas na severidade INFO e pode ser necessário ajustar o nível de log e reiniciar para obter as mensagens. Na sequência de inicialização do AEM Forms no JEE, a inicialização do quartzo começa com a seguinte linha:
 
-INFORMAÇÕES  `[com.adobe.idp.scheduler.SchedulerServiceImpl]` IDPSchedulerService onLoad É importante localizar esta primeira linha nos logs. O motivo é que alguns servidores de aplicativos também usam o Quartz, e suas instâncias do Quartz não devem ser confundidas com as instâncias que estão sendo usadas pelo serviço AEM Forms no JEE Scheduler. Esta é a indicação de que o serviço Scheduler está sendo iniciado e as linhas que o seguem informam se ele está sendo iniciado no modo clusterizado adequadamente. Várias mensagens são exibidas nessa sequência, e essa é a última mensagem &quot;iniciada&quot; que revela como o Quartz é configurado:
+INFO `[com.adobe.idp.scheduler.SchedulerServiceImpl]` IDPSchedulerService onLoad
+É importante localizar essa primeira linha nos logs. O motivo é que alguns servidores de aplicativos também usam o Quartz, e suas instâncias do Quartz não devem ser confundidas com as instâncias que estão sendo usadas pelo serviço AEM Forms no JEE Scheduler. Esta é a indicação de que o serviço Scheduler está sendo iniciado e as linhas que o seguem informam se ele está sendo iniciado no modo clusterizado adequadamente. Várias mensagens são exibidas nessa sequência, e essa é a última mensagem &quot;iniciada&quot; que revela como o Quartz é configurado:
 
-Aqui o nome da instância Quartz é dado: `IDPSchedulerService_$_ap-hp8.ottperflab.adobe.com1312883903975`. O nome da instância Quartz do scheduler sempre começa com a string `IDPSchedulerService_$_`. A string anexada ao final deste informa se o Quartz está sendo executado no modo agrupado. O identificador exclusivo longo gerado pelo nome do host do nó e uma longa cadeia de dígitos, aqui `ap-hp8.ottperflab.adobe.com1312883903975`, indica que está operando em um cluster. Se estiver operando como um único nó, o identificador será um número de dois dígitos, &quot;20&quot;:
+Aqui o nome da instância Quartz é fornecido: `IDPSchedulerService_$_ap-hp8.ottperflab.adobe.com1312883903975`. O nome da instância Quartz do agendador sempre começa com a cadeia de caracteres `IDPSchedulerService_$_`. A string anexada ao final deste informa se o Quartz está sendo executado no modo agrupado. O identificador exclusivo longo gerado pelo nome do host do nó e uma longa cadeia de dígitos, aqui `ap-hp8.ottperflab.adobe.com1312883903975`, indica que ele está operando em um cluster. Se estiver operando como um único nó, o identificador será um número de dois dígitos, &quot;20&quot;:
 
-INFORMAÇÕES  `[org.quartz.core.QuartzScheduler]` Scheduler `IDPSchedulerService_$_20` iniciado.
+INFORMAÇÃO `[org.quartz.core.QuartzScheduler]` Agendador `IDPSchedulerService_$_20` iniciado.
 Essa verificação deve ser feita em todos os nós de cluster separadamente, pois o programador de cada nó determina independentemente se operará no modo de cluster.
 
 ### Que tipos de problemas ocorrem se o Quartz estiver sendo executado no modo errado? {#quartz-running-in-wrong-mode}

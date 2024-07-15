@@ -32,7 +32,7 @@ O GDS é um diretório usado para armazenar arquivos de longa duração que são
 
 Os documentos de entrada para invocação de trabalho assíncrono também são armazenados no GDS e devem estar disponíveis para processar solicitações. Portanto, é importante considerar a confiabilidade do sistema de arquivos que hospeda o GDS e empregar um storage redundante de discos independentes (RAID) ou outra tecnologia, conforme apropriado para suas necessidades de qualidade e nível de serviço.
 
-A localização do GDS é determinada durante o processo de instalação dos formulários AEM ou posteriormente usando o console de administração. Além de manter um local de alta disponibilidade para GDS, você também pode habilitar o armazenamento de banco de dados para documentos. Consulte [Opções de backup quando o banco de dados é usado para armazenamento de documentos](files-back-recover.md#backup-options-when-database-is-used-for-document-storage).
+A localização do GDS é determinada durante o processo de instalação dos formulários AEM ou posteriormente usando o console de administração. Além de manter um local de alta disponibilidade para GDS, você também pode habilitar o armazenamento de banco de dados para documentos. Consulte [Opções de backup quando o banco de dados for usado para armazenamento de documentos](files-back-recover.md#backup-options-when-database-is-used-for-document-storage).
 
 ### Localização do GDS {#gds-location}
 
@@ -49,7 +49,7 @@ Se você tiver alterado o local GDS para um local não-padrão, poderá determin
 
 Em um ambiente em cluster, o GDS normalmente aponta para um diretório compartilhado na rede e acessível para leitura/gravação para cada nó de cluster.
 
-A localização do GDS pode ser alterada durante uma recuperação se a localização original já não estiver disponível. (Consulte [Alteração da localização do GDS durante a recuperação](/help/forms/using/admin-help/recovering-aem-forms-data.md#changing-the-gds-location-during-recovery).)
+A localização do GDS pode ser alterada durante uma recuperação se a localização original já não estiver disponível. (Consulte [Alterando o local do GDS durante a recuperação](/help/forms/using/admin-help/recovering-aem-forms-data.md#changing-the-gds-location-during-recovery).)
 
 ### Opções de backup quando o banco de dados é usado para armazenamento de documentos {#backup-options-when-database-is-used-for-document-storage}
 
@@ -71,7 +71,7 @@ Uma configuração simples da Solução de gerenciamento de correspondência inc
 
 o forms manager simplifica o processo de atualização, gerenciamento e baixa de formulários.
 
-### Espaço de trabalho AEM Forms {#html-workspace}
+### AEM Forms Workspace {#html-workspace}
 
 O AEM Forms Workspace corresponde aos recursos do Flex Workspace (obsoleto para o AEM no JEE) e adiciona novos recursos para estender e integrar o Workspace e torná-lo mais fácil de usar.
 
@@ -91,7 +91,7 @@ Para fazer backup do banco de dados em tempo real, você deve usar o modo de sna
 
 >[!NOTE]
 >
->Adobe® LiveCycle® Content Services ES (Obsoleto) é um sistema de gerenciamento de conteúdo instalado com o LiveCycle. Ele permite que os usuários projetem, gerenciem, monitorem e otimizem processos centrados no ser humano. O suporte aos Content Services (obsoleto) termina em 31/12/2014. Consulte [documento do ciclo de vida do produto Adobe](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html).
+>Adobe® LiveCycle® Content Services ES (Obsoleto) é um sistema de gerenciamento de conteúdo instalado com o LiveCycle. Ele permite que os usuários projetem, gerenciem, monitorem e otimizem processos centrados no ser humano. O suporte aos Content Services (obsoleto) termina em 31/12/2014. Consulte o [documento sobre o ciclo de vida do produto do Adobe](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html).
 
 ### DB2 {#db2}
 
@@ -110,13 +110,13 @@ O DB2 tem recursos integrados para fazer backup de um banco de dados no Tivoli S
 
 ### Oracle {#oracle}
 
-Use backups de snapshot ou configure o banco de dados do Oracle para ser executado no modo de log de arquivamento. (Consulte [Backup do Oracle: uma introdução](https://www.databasedesign-resource.com/oracle-backup.md).) Para obter mais informações sobre backup e recuperação do banco de dados do Oracle, acesse estes sites:
+Use backups de snapshot ou configure o banco de dados do Oracle para ser executado no modo de log de arquivamento. (Consulte [Backup Do Oracle: Uma Introdução](https://www.databasedesign-resource.com/oracle-backup.md).) Para obter mais informações sobre backup e recuperação do banco de dados do Oracle, acesse estes sites:
 
-[Backup e recuperação do Oracle:](https://www.oracle.com/technetwork/database/features/availability/br-overview-097160.html) Explica os conceitos de backup e recuperação e as técnicas mais comuns de uso do Recovery Manager (RMAN) para backup, recuperação e emissão de relatórios com mais detalhes e fornece mais informações sobre como planejar uma estratégia de backup e recuperação.
+[Backup e Recuperação do Oracle:](https://www.oracle.com/technetwork/database/features/availability/br-overview-097160.html) explica com mais detalhes os conceitos de backup e recuperação e as técnicas mais comuns de uso do Recovery Manager (RMAN) para backup, recuperação e emissão de relatórios, além de fornecer mais informações sobre como planejar uma estratégia de backup e recuperação.
 
-[Oracle Database Backup and Recovery User&#39;s Guide (Guia do Usuário para Backup e Recuperação do Banco de Dados do):](https://download.oracle.com/docs/cd/E11882_01/backup.112/e10642.pdf) Fornece informações detalhadas sobre a arquitetura RMAN, conceitos e mecanismos de backup e recuperação, técnicas avançadas de recuperação, como recursos de recuperação point-in-time e flashback de banco de dados, além de ajuste do desempenho de backup e recuperação. Ele também abrange backup e recuperação gerenciados pelo usuário, usando instalações do sistema operacional do host em vez de RMAN. Esse volume é essencial para backup e recuperação de implantações de bancos de dados mais sofisticadas e para cenários avançados de recuperação.
+[Guia do Usuário de Backup e Recuperação do Banco de Dados Oracle:](https://download.oracle.com/docs/cd/E11882_01/backup.112/e10642.pdf) fornece informações detalhadas sobre a arquitetura RMAN, conceitos e mecanismos de backup e recuperação, técnicas avançadas de recuperação, como recuperação point-in-time e recursos de flashback de banco de dados, além de ajuste do desempenho de backup e recuperação. Ele também abrange backup e recuperação gerenciados pelo usuário, usando instalações do sistema operacional do host em vez de RMAN. Esse volume é essencial para backup e recuperação de implantações de bancos de dados mais sofisticadas e para cenários avançados de recuperação.
 
-[Referência de backup e recuperação do banco de dados do Oracle:](https://download.oracle.com/docs/cd/E11882_01/backup.112/e10643.pdf) Fornece informações completas sobre sintaxe e semântica para todos os comandos do RMAN e descreve as exibições de banco de dados disponíveis para emissão de relatórios sobre atividades de backup e recuperação.
+[Referência de Backup e Recuperação do Banco de Dados do Oracle:](https://download.oracle.com/docs/cd/E11882_01/backup.112/e10643.pdf) Fornece informações completas sobre sintaxe e semântica para todos os comandos RMAN e descreve as exibições de banco de dados disponíveis para relatórios sobre atividades de backup e recuperação.
 
 ### SQL Server {#sql-server}
 
@@ -131,15 +131,15 @@ Para obter mais informações, consulte [Backup e restauração](https://msdn.mi
 
 ### MySQL {#mysql}
 
-Use MySQLAdmin ou modifique os arquivos INI no Windows para configurar seu banco de dados MySQL para ser executado no modo de log binário. (Consulte [Registro binário do MySQL](https://dev.mysql.com/doc/refman/5.1/en/binary-log.html).) Uma ferramenta de backup a quente para MySQL também está disponível no software InnoBase. (Consulte [Backup dinâmico do Innobase](https://www.innodb.com/hot-backup/features.md).)
+Use MySQLAdmin ou modifique os arquivos INI no Windows para configurar seu banco de dados MySQL para ser executado no modo de log binário. (Consulte [log binário do MySQL](https://dev.mysql.com/doc/refman/5.1/en/binary-log.html).) Uma ferramenta de backup a quente para MySQL também está disponível no software InnoBase. (Consulte [Hot Backup Innobase](https://www.innodb.com/hot-backup/features.md).)
 
 >[!NOTE]
 >
->O modo de log binário padrão do MySQL é &quot;Instrução&quot;, que é incompatível com as tabelas usadas pelo Content Services (obsoleto). Usar o registro binário nesse modo padrão faz com que os Serviços de conteúdo (obsoletos) falhem. Se o seu sistema inclui os Serviços de conteúdo (obsoleto), use o modo de registro &quot;Misto&quot;. Para ativar o registro &quot;Misto&quot;, adicione o seguinte argumento ao arquivo my.ini: `binlog_format=mixed log-bin=logname`
+>O modo de log binário padrão do MySQL é &quot;Instrução&quot;, que é incompatível com as tabelas usadas pelo Content Services (obsoleto). Usar o registro binário nesse modo padrão faz com que os Serviços de conteúdo (obsoletos) falhem. Se o seu sistema inclui os Serviços de conteúdo (obsoleto), use o modo de registro &quot;Misto&quot;. Para habilitar o log &quot;Misto&quot;, adicione o seguinte argumento ao arquivo my.ini: `binlog_format=mixed log-bin=logname`
 
-Você pode usar o utilitário mysqldump para obter o backup completo do banco de dados. Backups completos são necessários, mas nem sempre são convenientes. Eles produzem grandes arquivos de backup e demoram para serem gerados. Para fazer um backup incremental, inicie o servidor com - `log-bin` conforme descrito na seção anterior. Cada vez que o servidor MySQL é reiniciado, ele para de gravar no log binário atual, cria um novo e, a partir de então, o novo se torna o atual. Você pode forçar um switch manualmente com o `FLUSH LOGS SQL` comando. Após o primeiro backup completo, os backups incrementais subsequentes são feitos usando o utilitário mysqladmin com o `flush-logs` , que cria o próximo arquivo de log.
+Você pode usar o utilitário mysqldump para obter o backup completo do banco de dados. Backups completos são necessários, mas nem sempre são convenientes. Eles produzem grandes arquivos de backup e demoram para serem gerados. Para fazer um backup incremental, inicie o servidor com a opção - `log-bin`, conforme descrito na seção anterior. Cada vez que o servidor MySQL é reiniciado, ele para de gravar no log binário atual, cria um novo e, a partir de então, o novo se torna o atual. Você pode forçar uma opção manualmente com o comando `FLUSH LOGS SQL`. Após o primeiro backup completo, os backups incrementais subsequentes são feitos usando o utilitário mysqladmin com o comando `flush-logs`, que cria o próximo arquivo de log.
 
-Consulte [Resumo da estratégia de backup](https://dev.mysql.com/doc/refman/5.5/en/backup-strategy-summary.html).
+Consulte [Resumo da Estratégia de Backup](https://dev.mysql.com/doc/refman/5.5/en/backup-strategy-summary.html).
 
 ```text
 binlog_format=mixed
@@ -154,7 +154,7 @@ O diretório raiz de armazenamento de conteúdo contém o repositório do Conten
 
 O diretório raiz do armazenamento de conteúdo é criado quando o Content Services (Deprecated) é instalado. O local do diretório raiz do armazenamento de conteúdo é determinado durante o processo de instalação dos formulários AEM.
 
-O local padrão para o diretório raiz de armazenamento de conteúdo é `[aem-forms root]/lccs_data`.
+O local padrão para o diretório Raiz de Armazenamento de Conteúdo é `[aem-forms root]/lccs_data`.
 
 Faça backup dos seguintes diretórios no diretório raiz do armazenamento de conteúdo:
 
@@ -172,11 +172,11 @@ Se o diretório /backup-lucene-indexes não estiver presente, faça backup do di
 
 Quando você instala o Content Services (Obsoleto) em um ambiente em cluster, o diretório raiz do armazenamento de conteúdo é dividido em dois diretórios separados:
 
-**Diretório raiz do armazenamento de conteúdo:** Normalmente, um diretório de rede compartilhada que é acessível para leitura/gravação para todos os nós no cluster
+**Diretório Raiz de Armazenamento de Conteúdo:** Geralmente, é um diretório de rede compartilhado acessível para leitura/gravação para todos os nós do cluster
 
-**Diretório raiz do índice:** Um diretório criado em cada nó do cluster, sempre com o mesmo caminho e nome de diretório
+**Diretório Raiz do Índice:** Um diretório criado em cada nó do cluster, sempre com o mesmo caminho e nome de diretório
 
-O local padrão para o diretório raiz de armazenamento de conteúdo é `[GDS root]/lccs_data`, onde `[GDS root]` é a localização descrita em [Localização do GDS](files-back-recover.md#gds-location). Faça backup dos seguintes diretórios no diretório raiz do armazenamento de conteúdo:
+O local padrão para o diretório Raiz de Armazenamento de Conteúdo é `[GDS root]/lccs_data`, onde `[GDS root]` é o local descrito em [Local GDS](files-back-recover.md#gds-location). Faça backup dos seguintes diretórios no diretório raiz do armazenamento de conteúdo:
 
 /audit.contentstore
 
@@ -188,7 +188,7 @@ O local padrão para o diretório raiz de armazenamento de conteúdo é `[GDS ro
 
 Se o diretório /backup-lucene-indexes não estiver presente, faça backup do diretório /lucene-indexes, também no diretório raiz de armazenamento de conteúdo. Se o diretório /backup-lucene-indexes estiver presente, não faça backup do diretório /lucene-indexes porque isso pode causar erros.
 
-O local padrão para o diretório Raiz de Índice é `[aem-forms root]/lucene-indexes` em cada nó.
+O local padrão para o diretório Raiz do Índice é `[aem-forms root]/lucene-indexes` em cada nó.
 
 ## Fontes instaladas pelo cliente {#customer-installed-fonts}
 
@@ -196,6 +196,6 @@ Se você instalou fontes adicionais no ambiente de formulários AEM, é necessá
 
 >[!NOTE]
 >
->Por padrão, as fontes de Adobe instaladas com o AEM estão no estado `[aem-forms root]/fonts` diretório.
+>Por padrão, as fontes de Adobe instaladas com formulários AEM estão no diretório `[aem-forms root]/fonts`.
 
 Se você estiver reinicializando o sistema operacional no computador host e quiser usar fontes do sistema operacional anterior, o conteúdo do diretório de fontes do sistema também deverá ser submetido a backup. (Para obter instruções específicas, consulte a documentação do seu sistema operacional).

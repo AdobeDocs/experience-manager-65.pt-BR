@@ -65,12 +65,12 @@ Coletar as estatísticas do sistema que preenchem o Health Monitor tem algum imp
 ## Adicionar opções Java ao JBoss {#add-java-options-to-jboss}
 
 1. Interrompa o servidor da aplicação JBoss.
-1. Abra o *[raiz do appserver]*/bin/run.bat (Windows) ou run.sh (Linux ou UNIX) em um editor e adicione qualquer uma das opções de Java, conforme necessário.
+1. Abra a *[raiz do appserver]*/bin/run.bat (Windows) ou o run.sh (Linux ou UNIX) em um editor e adicione qualquer uma das opções de Java, conforme necessário.
 1. Reinicie o servidor.
 
 ## Adicionar opções Java ao WebLogic {#add-java-options-to-weblogic}
 
-1. Inicie o console de administração do WebLogic digitando https://[nome do host]:&#39;port&#39;/console na linha URL de um navegador da web.
+1. Inicie o console de administração do WebLogic digitando https://[nome do host]:&#39;port&#39;/console na linha URL de um navegador da Web.
 1. Digite o nome de usuário e a senha criados para o domínio do WebLogic Server e clique em Registrar no Centro de Alterações, em Bloquear e Editar.
 1. Em Estrutura do domínio, clique em Ambiente > Servidores e, no painel direito, clique no nome do servidor gerenciado.
 1. Na próxima tela, clique na guia Configuração > na guia Início do servidor.

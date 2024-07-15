@@ -18,7 +18,7 @@ ht-degree: 6%
 
 # Experimentar layout responsivo no We.Retail{#trying-out-responsive-layout-in-we-retail}
 
-Todas as páginas do We.Retail usam o componente de Contêiner de layout para implementar um design responsivo. O contêiner de layout fornece um sistema de parágrafo que permite posicionar componentes em uma grade responsiva. Essa grade pode reorganizar o layout de acordo com o tamanho e o formato do dispositivo/janela. O componente é usado em conjunto com o **Layout** no editor de páginas, que permite criar e editar o layout responsivo dependendo do dispositivo.
+Todas as páginas do We.Retail usam o componente de Contêiner de layout para implementar um design responsivo. O contêiner de layout fornece um sistema de parágrafo que permite posicionar componentes em uma grade responsiva. Essa grade pode reorganizar o layout de acordo com o tamanho e o formato do dispositivo/janela. O componente é usado em conjunto com o modo **Layout** no editor de páginas, que permite criar e editar seu layout responsivo dependendo do dispositivo.
 
 ## Experimentando {#trying-it-out}
 
@@ -26,7 +26,7 @@ Todas as páginas do We.Retail usam o componente de Contêiner de layout para im
 
    http://localhost:4502/editor.html/content/we-retail/language-masters/en/experience/arctic-surfing-in-lofoten.html
 
-1. Alternar para **Visualizar** para ver a página como ela seria renderizada para um visitante do site. Role para baixo até o conteúdo do artigo *Almoços Aloha em Norther Norway*.
+1. Alterne para **Visualização** para ver a página como ela seria renderizada para um visitante do site. Role para baixo até o conteúdo do artigo *Almoços Aloha no norte da Noruega*.
 
    ![chlimage_1-178](assets/chlimage_1-178.png)
 
@@ -46,4 +46,4 @@ Todas as páginas do We.Retail usam o componente de Contêiner de layout para im
 
 ## Informações adicionais {#further-information}
 
-Para obter mais informações, consulte o documento de criação [Layout responsivo](/help/sites-authoring/responsive-layout.md) ou o documento do administrador [Configurar o contêiner de layout e o modo de layout](/help/sites-administering/configuring-responsive-layout.md) para obter detalhes técnicos completos.
+Para obter mais informações, consulte o documento de criação [Layout responsivo](/help/sites-authoring/responsive-layout.md) ou o documento do administrador [Configurando o contêiner de layout e o modo de layout](/help/sites-administering/configuring-responsive-layout.md) para obter detalhes técnicos completos.

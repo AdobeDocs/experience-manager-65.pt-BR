@@ -18,25 +18,25 @@ ht-degree: 0%
 
 # Materiais de referência de SPA {#spa-reference-materials}
 
-## Referências da API JavaScript do SPA{#spa-javascript-api-references}
+## Referências da API do JavaScript do SPA{#spa-javascript-api-references}
 
-AEM A seguir estão as referências disponíveis da API do JavaScript dos módulos NPM para a estrutura do SDK do Editor de SPA.
+A seguir estão as referências disponíveis da API do JavaScript AEM dos módulos NPM para a estrutura SDK do editor do SPA.
 
 >[!NOTE]
 >
 >O Editor de SPA é a solução recomendada para projetos que exigem renderização no lado do cliente baseada na estrutura SPA (por exemplo, React ou Angular).
 
 * [Mapeamento de componentes](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping)
-* [Gerenciador de modelo da página](https://www.npmjs.com/package/@adobe/aem-spa-model-manager)
-* [Componentes editáveis do React](https://www.npmjs.com/package/@adobe/aem-react-editable-components)
+* [Gerenciador de Modelos de Página](https://www.npmjs.com/package/@adobe/aem-spa-model-manager)
+* [Reagir Componentes Editáveis](https://www.npmjs.com/package/@adobe/aem-react-editable-components)
 * [Componentes editáveis do Angular](https://www.npmjs.com/package/@adobe/aem-angular-editable-components)
 
-## Repositórios GitHub de origem aberta {#github-repositories}
+## Abrir repositórios GitHub da Source {#github-repositories}
 
 A seguir estão os repositórios de código aberto no GitHub para as bibliotecas SPA.
 
 * [Mapeamento de componentes](https://github.com/adobe/aem-spa-component-mapping)
-* [Gerenciador de modelo da página](https://github.com/adobe/aem-spa-page-model-manager)
-* [Componentes editáveis do React](https://github.com/adobe/aem-react-editable-components)
+* [Gerenciador de Modelos de Página](https://github.com/adobe/aem-spa-page-model-manager)
+* [Reagir Componentes Editáveis](https://github.com/adobe/aem-react-editable-components)
 * [Componentes editáveis do Angular](https://github.com/adobe/aem-angular-editable-components)
-* [Núcleo do projeto SPA](https://github.com/adobe/aem-spa-project-core)
+* [Núcleo do projeto do SPA](https://github.com/adobe/aem-spa-project-core)

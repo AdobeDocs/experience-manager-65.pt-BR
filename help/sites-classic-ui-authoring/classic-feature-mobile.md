@@ -30,15 +30,15 @@ Os dispositivos são agrupados nas recurso de categorias, inteligente e de toque
 
 Use o procedimento a seguir para criar uma página para dispositivos móveis:
 
-1. No navegador, acesse o menu **Siteadmin** console.
-1. Abra o **Produtos** página abaixo **Sites** >> **Site de demonstração do Geometrixx Mobile** >> **Inglês**.
+1. No navegador, vá para o console **Siteadmin**.
+1. Geometrixx Abra a página **Produtos** abaixo de **Sites** >> **Site de demonstração móvel** >> **Inglês**.
 
 1. Alternar para um emulador diferente. Para fazer isso, é possível:
 
    * Clique no ícone do dispositivo na parte superior da página.
-   * Clique em **Editar** botão na caixa **Sidekick** e selecione o dispositivo no menu suspenso.
+   * Clique no botão **Editar** no **Sidekick** e selecione o dispositivo no menu suspenso.
 
-1. Arraste e solte a **Texto e imagem** da guia Mobile do Sidekick para a página.
+1. Arraste e solte o componente **Texto e Imagem** da guia Dispositivo móvel do Sidekick para a página.
 1. Edite o componente e adicione texto. Clique em **OK** para salvar as alterações.
 
 A página tem a mesma aparência do seguinte:

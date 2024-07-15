@@ -24,18 +24,18 @@ Na interface Criar correspondência, os usuários do agente visualizam a corresp
 
 Para evitar o uso não autorizado desses dados, as organizações podem impor uma marca d&#39;água na PDF de visualização. A marca d&#39;água padrão é &quot;PRÉ-VISUALIZAÇÃO&quot;, que aparece no PDF.
 
-Para ativar a marca d&#39;água no PDF de pré-visualização, selecione o **[!UICONTROL Aplicar marca d&#39;água]** Durante a opção de Visualização em **[!UICONTROL Configurações do gerenciamento de correspondência]** em https://&#39;[server]:[porta]&#39;/system/console/configMgr.
+Para habilitar a marca d&#39;água no PDF de visualização, selecione a opção **[!UICONTROL Aplicar Marca D&#39;Água]** Durante Visualização em **[!UICONTROL Configurações de Gerenciamento de Correspondências]** em https://&#39;[server]:[port]&#39;/system/console/configMgr.
 
-![default-watermark](assets/default-watermark.png)
+![marca-d&#39;água padrão](assets/default-watermark.png)
 
 Você pode usar as seguintes etapas para personalizar o texto e a aparência da marca d&#39;água:
 
 ## Personalizar a marca d&#39;água na visualização do PDF na interface de Criar correspondência {#customizewatermark-}
 
-1. Ir para `https://'[server]:[port]'/[ContextPath]/crx/de` e faça logon como Administrador.
+1. Vá para `https://'[server]:[port]'/[ContextPath]/crx/de` e faça logon como Administrador.
 1. Na pasta de aplicativos, crie uma pasta chamada **[!UICONTROL previewwatermark]** com caminho/estrutura semelhante à pasta previewwatermark na pasta libs:
 
-   1. Clique com o botão direito do mouse no **previewwatermark** no seguinte caminho e selecione **Sobrepor nó**:
+   1. Clique com o botão direito do mouse na pasta **previewwatermark** no seguinte caminho e selecione **Sobrepor Nó**:
 
       `/libs/fd/cm/configFiles/previewwatermark`
 
@@ -43,9 +43,9 @@ Você pode usar as seguintes etapas para personalizar o texto e a aparência da 
 
       **Caminho:** /libs/fd/cm/configFiles/previewwatermark
 
-      **Local da sobreposição:** /apps/
+      **Local de Sobreposição:** /apps/
 
-      **Corresponder Tipos de Nó:** Marcado
+      **Corresponder Tipos De Nó:** Marcado
 
       >[!NOTE]
       >
@@ -59,7 +59,7 @@ Você pode usar as seguintes etapas para personalizar o texto e a aparência da 
       >    
       >
 
-   1. Clique em **OK** e clique em **Salvar tudo**. A variável **[!UICONTROL previewwatermark]** a pasta é criada no caminho especificado.
+   1. Clique em **OK** e em **Salvar tudo**. A pasta **[!UICONTROL previewwatermark]** é criada no caminho especificado.
 
 1. Copie e cole o arquivo ddx da pasta &quot;/libs/fd/cm/configFiles/previewwatermark&quot; para a pasta &quot;/apps/fd/cm/configFiles/previewwatermark&quot; e clique em **[!UICONTROL Salvar tudo]**.
 1. Faça as alterações desejadas no arquivo ddx em /apps/fd/cm/configFiles/previewwatermark/.
@@ -79,7 +79,7 @@ Você pode usar as seguintes etapas para personalizar o texto e a aparência da 
    </DDX>
    ```
 
-   Para obter informações sobre como personalizar a aparência, o texto e o alinhamento da marca d&#39;água, consulte Adição e remoção de marcas d&#39;água e planos de fundo na [Serviço de Assembler e Referência DDX](https://help.adobe.com/en_US/livecycle/11.0/ddxRef.pdf) documento.
+   Para obter informações sobre como personalizar a aparência, o texto e o alinhamento da marca d&#39;água, consulte Adição e remoção de marcas d&#39;água e planos de fundo no documento [Serviço de Assembler e Referência DDX](https://help.adobe.com/en_US/livecycle/11.0/ddxRef.pdf).
 
    >[!NOTE]
    >

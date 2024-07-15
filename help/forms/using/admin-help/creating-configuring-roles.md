@@ -22,9 +22,9 @@ Usando as páginas da Web de Gerenciamento de usuários, você pode associar usu
 
 O Gerenciamento de usuários tem dois tipos de funções:
 
-**Funções mutáveis:** Esse tipo de função pode ser editado e excluído, e permissões de função podem ser adicionadas e excluídas desses tipos de função. Qualquer função criada é considerada uma função mutável. Você pode adicionar ou remover usuários e grupos atribuídos a funções mutáveis.
+**Funções mutáveis:** esse tipo de função pode ser editado e excluído, e permissões de função podem ser adicionadas e excluídas desses tipos de função. Qualquer função criada é considerada uma função mutável. Você pode adicionar ou remover usuários e grupos atribuídos a funções mutáveis.
 
-**Funções imutáveis:** As funções padrão incluídas no Gerenciamento de usuários são funções imutáveis. Essas funções não podem ser editadas ou excluídas. No entanto, você pode adicionar ou remover usuários e grupos atribuídos a funções imutáveis.
+**Funções imutáveis:** as funções padrão incluídas no Gerenciamento de Usuários são funções imutáveis. Essas funções não podem ser editadas ou excluídas. No entanto, você pode adicionar ou remover usuários e grupos atribuídos a funções imutáveis.
 
 As funções mutáveis e imutáveis também podem ser criadas por meio das APIs de formulários AEM.
 
@@ -32,67 +32,67 @@ As funções mutáveis e imutáveis também podem ser criadas por meio das APIs 
 
 As funções padrão a seguir estão incluídas no banco de dados de Gerenciamento de usuários.
 
-**Admin Console Usuário:** Pode acessar o console de administração.
+**Usuário do console de administração:** Pode acessar o console de administração.
 
-**Administrador do aplicativo:** Pode usar todos os recursos do Workbench. Você pode usar as páginas Aplicativos e Serviços no console de administração para configurar propriedades, pontos de extremidade e segurança do tempo de execução do serviço.
+**Administrador do Aplicativo:** Pode usar todos os recursos do Workbench. Você pode usar as páginas Aplicativos e Serviços no console de administração para configurar propriedades, pontos de extremidade e segurança do tempo de execução do serviço.
 
-**Administrador do AEM Forms:** Pode executar todas as tarefas de todos os serviços instalados.
+**Administrador de formulários AEM:** pode executar todas as tarefas para todos os serviços instalados.
 
-**Administrador de segurança:** Controla as configurações de Gerenciamento de usuários e gerencia usuários e grupos associados a qualquer domínio do Gerenciador de usuários
+**Administrador de Segurança:** controla as configurações de Gerenciamento de Usuários e gerencia usuários e grupos associados a qualquer domínio do Gerenciador de Usuários
 
-**Usuário de serviços:** Pode exibir e chamar qualquer serviço
+**Usuário de Serviços:** Pode exibir e invocar qualquer serviço
 
-**Superadministrador:** Tem acesso a todas as funcionalidades administrativas do sistema, incluindo serviços
+**Superadministrador:** tem acesso a todas as funcionalidades administrativas do sistema, incluindo serviços
 
-**Administrador de Confiança:** É possível gerenciar as configurações de confiança de PKI e as credenciais de PKI gerenciadas na página Gerenciamento de Armazenamento Confiável no console de administração
+**Administrador de Confiança:** pode gerenciar as configurações de confiança PKI e as credenciais PKI gerenciadas na página Gerenciamento de Repositório de Confiança no console de administração
 
 ### Funções padrão adicionais {#additional-default-roles}
 
 As seguintes funções padrão adicionais podem ser incluídas, dependendo dos componentes de formulários AEM instalados por você
 
-**Usuário do aplicativo de carregamento de documento:** Pode carregar documentos usando o Flex Remoting.
+**Usuário do Aplicativo de Carregamento de Documentos:** Pode carregar documentos usando o Flex Remoting.
 
-**Administrador do Forms:** Pode exibir e modificar configurações na página Forms no Console de administração
+**Administrador do Forms:** pode exibir e modificar configurações na página Forms no Console de Administração
 
-**Administrador do Contentspace do AEM Forms:** Pode exibir e modificar configurações na página Serviços de conteúdo (obsoleto) no console de administração
+**Administrador do Contentspace do Forms AEM:** pode exibir e modificar configurações da página Serviços de Conteúdo (obsoleto) no console de administração
 
-**AEM forma Contentspace Usuário:** Pode fazer logon nas páginas da Web Contentspace (Obsoleto)
+**Usuário do Contentspace dos formulários AEM:** Pode fazer logon nas páginas da Web do Contentspace (Obsoleto)
 
-**Administrador do Documentum Connector:** Pode exibir e modificar configurações na página Connector for EMC Documentum no console de administração
+**Administrador do Documentum Connector:** pode visualizar e modificar configurações a partir da página Connector for EMC Documentum no console de administração
 
-**Administrador do Conector FileNet dos formulários AEM:** Pode exibir e modificar configurações na página Connector for IBM FileNet no console de administração
+**Administrador do Conector FileNet dos formulários AEM:** pode exibir e modificar configurações do Conector para IBM FileNet na página de console de administração
 
-**O AEM forma o Administrador do IBM CM Connector:** Pode exibir e modificar configurações no Conector da página Gerenciador de conteúdo do IBM no console de administração
+**Administrador do IBM CM Connector do AEM Forms:** pode exibir e modificar configurações no Conector da página Gerenciador de conteúdo do IBM no console de administração
 
 **Administrador de Rights Management:** Executa todas as tarefas necessárias para todas as configurações de servidor nas páginas de Rights Management relevantes
 
-**Usuário final do Rights Management:** Pode acessar páginas da Web do usuário final do Rights Management
+**Usuário final do Rights Management:** pode acessar páginas da Web do usuário final do Rights Management
 
 **Rights Management Convidar Usuário:** Pode convidar usuários
 
-**Rights Management Gerenciar usuários convidados e locais:** Pode executar tarefas necessárias para gerenciar todos os usuários convidados e locais nas páginas de Rights Management relevantes
+Rights Management **Gerenciar Usuários Convidados e Locais:** Pode executar tarefas necessárias para gerenciar todos os usuários convidados e locais nas páginas de Rights Management relevantes
 
-**Administrador de Definição de Política Rights Management:** Executa todas as tarefas necessárias para todos os conjuntos de políticas nas páginas de Rights Management relevantes
+**Administrador de Conjunto de Políticas de Rights Management:** Executa todas as tarefas necessárias para todos os conjuntos de políticas nas páginas de Rights Management relevantes
 
 **Superadministrador de Rights Management:** Executa todas as tarefas necessárias da página de Rights Management
 
-**Administrador do AEM Forms Workspace:** Pode exibir e modificar configurações na página Espaço de trabalho no Console de administração
+**Administrador do AEM Forms Workspace:** pode exibir e modificar configurações na página Workspace no Console de Administração
 
-***observação **: o Flex Workspace está obsoleto para a versão de formulários AEM.*
+***observação **: o Flex Workspace foi descontinuado para a versão de formulários AEM.*
 
-**Usuário do Workspace:** Pode fazer logon no aplicativo do usuário final do Workspace
+**Usuário do Workspace:** pode fazer logon no aplicativo de usuário final do Workspace
 
-**Administrador de saída:** Pode exibir e modificar configurações na página Saída no Console de administração
+**Administrador de Saída:** pode exibir e modificar configurações na página Saída do Console de Administração
 
-**Administrador PDFG:** Pode exibir e modificar configurações na página PDF Generator no console de administração
+**Administrador do PDFG:** pode exibir e modificar configurações na página PDF Generator no console de administração
 
-**Usuário PDFG:** Pode acessar todas as funcionalidades não administrativas do PDF Generator
+**Usuário PDFG:** pode acessar todas as funcionalidades não administrativas do PDF Generator
 
-**Aplicativo Web de extensões do Acrobat Reader DC:** Pode usar o aplicativo web de extensões do Acrobat Reader DC
+**Aplicativo Web de extensões do Acrobat Reader DC:** Pode usar o aplicativo Web de extensões do Acrobat Reader DC
 
 >[!NOTE]
 >
->Usuários com determinados tipos de privilégios de administrador não podem acessar as páginas da Web do usuário final do Workspace por motivos de segurança. Como essas páginas podem existir fora de um firewall, a permissão de tarefas no nível da administração pode representar um risco de segurança. Somente os usuários que têm os privilégios de Administrador do AEM Forms Workspace ou Usuário do AEM Forms Workspace podem acessar as páginas da Web do usuário final do Workspace.
+>Os usuários com determinados tipos de privilégios de administrador não podem acessar as páginas da Web do usuário final do Workspace por motivos de segurança. Como essas páginas podem existir fora de um firewall, a permissão de tarefas no nível da administração pode representar um risco de segurança. Somente os usuários que têm os privilégios de Administrador do Workspace para formulários AEM ou de Usuário do Workspace para formulários AEM podem acessar as páginas da Web do usuário final do Workspace.
 
 >[!NOTE]
 >
@@ -178,71 +178,71 @@ Você também pode atribuir funções usando a página Gerenciamento de funçõe
 
 ### Permissões de formulários AEM {#aem-forms-permissions}
 
-**ADD_REMOVE_ENDPOINT_PERM:** Adicionar, remover e modificar endpoints de um serviço
+**ADD_REMOVE_ENDPOINT_PERM:** Adicionar, remover e modificar pontos de extremidade para um serviço
 
-**Login do Admin Console:** Exibir o console de administração
+**Logon de Admin Console:** Exibir o console de administração
 
-**Modificação do certificado:** Modifique as configurações de confiança de qualquer certificado no Armazenamento de Confiança
+**Modificação de Certificado:** Modifique as configurações de confiança de qualquer certificado no Repositório de Confiança
 
-**Leitura do certificado:** Ler qualquer certificado no Armazenamento de Confiança
+**Leitura de Certificado:** Leia qualquer certificado no Repositório Confiável
 
-**Gravação do certificado:** Adicionar um certificado ao armazenamento de confiança
+**Gravação de Certificado:** Adicione um certificado ao Repositório Confiável
 
-**Adição de componente:** Instalar um novo componente no sistema
+**Adição de Componente:** Instale um novo componente no sistema
 
-**Exclusão de componente:** Excluir qualquer componente no sistema
+**Exclusão de Componente:** Exclua qualquer componente do sistema
 
-**Leitura do componente:** Leia todos os componentes do sistema
+**Leitura de Componente:** Leia qualquer componente no sistema
 
-**Administrador do Contentspace:** Permissão para administrador do Contentspace (obsoleto)
+**Administrador do Contentspace:** Permissão para Administrador do Contentspace (Obsoleto)
 
-**Logon no console Contentspace:** Permissão para logon do console Contentspace (obsoleto)
+**Logon do Console Contentspace:** Permissão para Logon do Console Contentspace (Obsoleto)
 
-**Controle de configurações principais:** Gerencie as configurações na página Configurações principais do sistema no Console de administração
+**Controle das Configurações Principais:** Gerencie as configurações na página Configurações Principais do Sistema no Console de Administração
 
-**CREATE_VERSION_PERM:** Criar uma versão de um serviço
+**CREATE_VERSION_PERM:** criar uma versão de um serviço
 
-**Modificação de credencial:** Modificar qualquer credencial de assinatura no Armazenamento de Confiança
+**Modificação de Credencial:** Modifique qualquer credencial de assinatura no Repositório de Confiança
 
-**Leitura de credencial:** Ler qualquer credencial de assinatura no Armazenamento de Confiança
+**Leitura de Credencial:** Leia qualquer credencial de assinatura no Repositório de Confiança
 
-**Gravação de credencial:** Adicionar uma credencial de assinatura ao Armazenamento de Confiança
+**Gravação de Credencial:** Adicione uma credencial de assinatura ao Repositório de Confiança
 
-**Modificação da CRL:** Modificar qualquer CRL (Lista de Revogação de Certificado) no Armazenamento de Confiança
+**Modificação de CRL:** Modifique qualquer CRL (Lista de Revogação de Certificado) no Repositório de Confiança
 
-**Leitura da CRL:** Ler qualquer CRL no Armazenamento de Confiança
+**Leitura da CRL:** Leia qualquer CRL no Armazenamento de Confiança
 
-**Gravação da CRL:** Adicionar uma CRL ao Armazenamento de Confiança
+**Gravação de CRL:** Adicione uma CRL ao Repositório de Confiança
 
-**Delegar:** Definir uma ACL em um recurso
+**Delegar:** Defina uma ACL em um recurso
 
 **DELETE_VERSION_PERM:** Excluir uma versão de um serviço
 
-**Carregamento de documento:** Carregar documentos em formulários AEM
+**Carregamento de Documentos:** Carregar documentos em formulários AEM
 
-**Controle de domínio:** Criar, excluir ou modificar configurações para qualquer domínio de Gerenciamento de usuários, incluindo seus provedores de autenticação e diretório
+**Controle de Domínio:** crie, exclua ou modifique configurações para qualquer domínio de Gerenciamento de Usuários, incluindo seus provedores de autenticação e diretório
 
-**Editar tipo de evento:** Editar em tipos de evento
+**Editar Tipo de Evento:** Editar tipos de evento
 
-**Controle de Representação de Identidade:** Representar identidade no Gerenciador de usuários
+**Controle de Representação de Identidade:** Representar identidade no Gerenciador de Usuários
 
-**INVOKE_PERM:** Executar todas as operações em um serviço
+**INVOKE_PERM:** Chame todas as operações em um serviço
 
-**Controle do modelo de dados LCDS:** Ler e implantar modelos de dados no Data Services
+**Controle de Modelo de Dados LCDS:** Ler e implantar modelos de dados no Data Services
 
 **Atualização do License Manager:** Atualizar informações de licença
 
 **MODIFY_CONFIG_PERM:** Modificar a configuração de um serviço
 
-**TERMO** Modificar a versão de um serviço
+**TERM** Modificar a versão de um serviço
 
-**PDFGAdminPermission:** Administrador PDFG
+**PDFGAdminPermission:** administrador PDFG
 
-**PDFGUserPermission:** Usuário PDFG
+**PDFGUserPermission:** usuário PDFG
 
-**PERM_DCTM_ADMIN:** Administrador do Documentum Connector
+**PERM_DCTM_ADMIN:** administrador do Documentum Connector
 
-**PERM_FILENET_ADMIN:** Administrador do FileNet Connector
+**PERM_FILENET_ADMIN:** administrador do FileNet Connector
 
 **PERM_FORMS_ADMIN:** administrador do Forms
 
@@ -250,95 +250,95 @@ Você também pode atribuir funções usando a página Gerenciamento de funçõe
 
 **PERM_OUTPUT_ADMIN:** Administrador de saída
 
-**PERM_READER_EXTENSIONS_WEB_APPLICATION:** Usar o aplicativo web de extensões do Acrobat Reader DC
+**PERM_READER_EXTENSIONS_WEB_APPLICATION:** Use o aplicativo Web de extensões do Acrobat Reader DC
 
-**PERM_SP_ADMIN:** Gerenciar configurações do SharePoint Connector
+**PERM_SP_ADMIN:** Gerenciar configurações do Conector do SharePoint
 
 **PERM_WORKSPACE_ADMIN:** Gerenciar configurações do Workspace
 
-**PERM_WORKSPACE_USER:** Faça logon no aplicativo do usuário final do Workspace
+**PERM_WORKSPACE_USER:** Faça logon no aplicativo de usuário final do Workspace
 
-**Controle principal:** Gerencie usuários e grupos para qualquer domínio e gerencie atribuições de funções para todos os usuários e grupos em qualquer domínio
+**Controle da Entidade de Segurança:** Gerencie usuários e grupos para qualquer domínio e gerencie atribuições de função para todos os usuários e grupos em qualquer domínio
 
-**Leitura/exclusão de gravação de processo:** Listar e recuperar instâncias de auditoria de fluxo de trabalho
+**Leitura/Exclusão da Gravação do Processo:** Listar e recuperar instâncias de auditoria do fluxo de trabalho
 
-**PROCESS_OWNER_PERM:** Exibir dados de tendência e executar ações administrativas em um serviço criado a partir de um processo
+**PROCESS_OWNER_PERM:** Exiba dados de tendência e execute ações administrativas em um serviço criado a partir de um processo
 
-**Lido:** Ler o conteúdo de um recurso
+**Leitura:** Ler o conteúdo de um recurso
 
 **READ_PERM:** Ler ou exibir um serviço
 
-**Renovar asserção:** Renovar asserções no Gerenciamento de usuários
+**Renovar asserção:** Renovar asserções no Gerenciamento de Usuários
 
-**Delegado do repositório:** Definir uma ACL em um recurso
+**Delegado do repositório:** Defina uma ACL em um recurso
 
-**Leitura do repositório:** Ler o conteúdo de um recurso
+**Leitura do Repositório:** Ler o conteúdo de um recurso
 
-**Percurso do repositório:** Incluir um recurso em uma solicitação de recursos de lista ou ler os metadados de um recurso
+**Travessia de Repositório:** Inclua um recurso em uma solicitação de recursos de lista ou leia os metadados de um recurso
 
-**Gravação no repositório:** Gravar metadados e conteúdo do repositório
+**Gravação do Repositório:** Gravar metadados e conteúdo do repositório
 
-**Proprietário da Política de Alteração de Rights Management:** Alterar proprietário da política
+**Proprietário da Política de Alteração de Rights Management:** Proprietário da política de alteração
 
-**Logon no console do usuário final do Rights Management:** Fazer logon na interface do usuário final do Rights Management
+**Logon do Console do Usuário Final do Rights Management:** Logon na Interface do Usuário Final do Rights Management
 
-**Configuração do gerenciador de Rights Management:** Gerenciar configuração do servidor
+**Configuração de Gerenciamento de Rights Management:** Gerenciar configuração do servidor
 
-**Rights Management Gerenciar usuários convidados e locais:** Gerenciar usuários convidados e locais
+Rights Management **Gerenciar Usuários Convidados e Locais:** Gerenciar usuários convidados e locais
 
-**Rights Management Gerenciar Conjuntos de Políticas:** Gerenciar todas as políticas e documentos em qualquer conjunto de políticas
+**Gerenciar Conjuntos de Políticas do Rights Management:** Gerenciar todas as políticas e documentos em qualquer conjunto de políticas
 
-**Coordenador de Adição do Conjunto de Políticas do Rights Management:** Adicionar, remover e alterar permissões para coordenadores de definições de políticas
+**Adicionar coordenador do conjunto de políticas do Rights Management:** Adicionar, remover e alterar permissões para coordenadores do conjunto de políticas
 
-**Política Rights Management Definir Criar Política:** Criar uma política para um conjunto de políticas
+**Criar política de conjunto de políticas do Rights Management:** Criar uma política para um conjunto de políticas
 
-**Política Rights Management Definir Política de Exclusão:** Remover uma política de um conjunto de políticas
+**Política de Exclusão do Conjunto de Políticas Rights Management:** Remova uma política de um conjunto de políticas
 
-**Política Rights Management Definir Editar Política:** Editar uma política em um conjunto de políticas
+**Editar Política de Conjunto de Políticas Rights Management:** Editar uma política em um conjunto de políticas
 
-**Política Rights Management Defina Gerenciar Editor de Documentos:** Ao criar conjuntos de políticas, você atribui aos usuários a função de editor de documentos. O editor do documento é o usuário que protege o documento com uma política.
+**Conjunto de Políticas do Rights Management Gerenciar Editor de Documentos:** Ao criar conjuntos de políticas, atribua aos usuários a função de editor de documentos. O editor do documento é o usuário que protege o documento com uma política.
 
-**Coordenador de Remoção do Conjunto de Políticas Rights Management:** Remover um coordenador de conjunto de políticas de um conjunto de políticas
+**Coordenador de Remoção do Conjunto de Políticas do Rights Management:** Remova um coordenador de conjunto de políticas de um conjunto de políticas
 
-**Documento de Revogação de Definição de Política Rights Management:** Revogar acesso a documentos em um conjunto de políticas
+**Revogar documento de conjunto de políticas do Rights Management:** Revogar acesso a documentos em um conjunto de políticas
 
-**Política Rights Management Definir Política de Comutação:** Alternar políticas para um documento
+**Política de Rights Management Defina a Política de Alternância:** políticas de alternância para um documento
 
-**Documento Não Revogado de Definição de Política Rights Management:** Cancelar revogação de um documento
+**Documento de Cancelamento de Revogação de Definição de Política de Rights Management:** Cancele a Revogação de um documento
 
-**Evento de Exibição de Definição de Política Rights Management:** Exibir eventos de política e documento para qualquer política ou documento em um conjunto de políticas
+**Evento de Exibição do Conjunto de Políticas do Rights Management:** Exiba eventos de política e documento para qualquer política ou documento em um conjunto de políticas
 
-**Eventos do Servidor de Exibição do Rights Management:** Pesquisar e exibir todos os eventos de auditoria
+**Eventos de Servidor de Exibição do Rights Management:** Pesquise e exiba todos os eventos de auditoria
 
-**Controle de função:** Criar, excluir e modificar funções no Gerenciamento de usuários
+**Controle de Função:** Criar, excluir e modificar funções no Gerenciamento de Usuários
 
-**Ativação do serviço:** Iniciar qualquer serviço, disponibilizando-o para invocação
+**Ativação de Serviço:** Inicie qualquer serviço, disponibilizando-o para invocação
 
-**Adição de serviço:** Implante um novo serviço no Registro do serviço. Isso inclui a adição de novos processos e variantes de processos
+**Adição de Serviço:** Implante um novo serviço no Registro de serviço. Isso inclui a adição de novos processos e variantes de processos
 
-**Desativação do serviço:** Interromper qualquer serviço no sistema
+**Desativação de Serviço:** Para qualquer serviço no sistema
 
-**Exclusão de serviço:** Excluir qualquer serviço no sistema, incluindo processos e variantes de processos
+**Exclusão de Serviço:** Exclua qualquer serviço no sistema, incluindo processos e variantes de processos
 
-**Chamada de serviço:** Invocar qualquer serviço no registro de serviço disponível no tempo de execução
+**Chamada de Serviço:** Chame qualquer serviço no Registro de serviço disponível em tempo de execução
 
-**Modificação do serviço:** Modifique as propriedades de configuração de qualquer serviço no sistema. Isso inclui bloquear e desbloquear um serviço no IDE e adicionar ou remover pontos finais de um serviço
+**Modificação de Serviço:** Modifique as propriedades de configuração de qualquer serviço no sistema. Isso inclui bloquear e desbloquear um serviço no IDE e adicionar ou remover pontos finais de um serviço
 
-**Leitura do serviço:** Leia todos os serviços no sistema. Isso inclui todos os processos e variantes de processos
+**Leitura de Serviço:** Leia todos os serviços no sistema. Isso inclui todos os processos e variantes de processos
 
-**SERVICE_AGENT_PERM:** Exibir dados e interagir com instâncias de processo para um serviço criado a partir de um processo
+**SERVICE_AGENT_PERM:** Exiba dados e interaja com instâncias do processo para um serviço criado a partir de um processo
 
-**SERVICE_MANAGER_PERM:** Executar balanceamento de carga e outras ações administrativas em um serviço criado a partir de um processo
+**SERVICE_MANAGER_PERM:** Execute o balanceamento de carga e outras ações administrativas em um serviço criado a partir de um processo
 
 **START_STOP_PERM:** Iniciar ou parar um serviço
 
-**SUPERVISOR_PERM:** Exibir dados da instância do processo para um serviço criado a partir de um processo
+**SUPERVISOR_PERM:** Exibir dados de instância de processo para um serviço criado a partir de um processo
 
 **Percorrer:** Incluir um recurso em uma solicitação de recursos de lista ou ler os metadados de um recurso
 
 **Gravar:** Gravar metadados e conteúdo do repositório
 
-**Abrir arquivos no Workbench**
+**Abrindo arquivos no Workbench**
 
 Para exibir o conteúdo da visualização Recursos no Workbench e abrir arquivos para visualização, um usuário precisa das seguintes permissões:
 

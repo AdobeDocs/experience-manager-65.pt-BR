@@ -24,7 +24,7 @@ Ao usar o AEM, é possível gerenciar vários conteúdos de diferentes tipos (po
 >
 >Painéis AEM são criados com base no usuário, de modo que um usuário só pode acessar seu próprio painel.
 >
->No entanto, [Modelos de painel](#creating-a-dashboard-template) pode ser usado para compartilhar configurações comuns e layout do Painel de controle.
+>No entanto, [Modelos de painel](#creating-a-dashboard-template) podem ser usados para compartilhar configurações e layouts de painel comuns.
 
 ![chlimage_1-22](assets/chlimage_1-22.jpeg)
 
@@ -32,17 +32,17 @@ Ao usar o AEM, é possível gerenciar vários conteúdos de diferentes tipos (po
 
 ### Criar Um Painel De Controle {#creating-a-dashboard}
 
-1. No **Ferramentas** clique em **Console de configuração**.
-1. Na árvore, clique duas vezes em **Painel**.
-1. Clique em **Novo painel**.
-1. Digite o **Título** (por exemplo, Meu painel) e a variável **Nome**.
+1. Na seção **Ferramentas**, clique em **Console de Configuração**.
+1. Na árvore, Clique Duas Vezes Em **Painel**.
+1. Clique em **Novo Painel**.
+1. Digite o **Título** (por exemplo, Meu Painel) e o **Nome**.
 1. Clique em **Criar**.
 
 ### Clonagem De Um Painel {#cloning-a-dashboard}
 
 Talvez você queira ter vários painéis para ver rapidamente as informações sobre seu conteúdo de diferentes visualizações. Para ajudá-lo a criar um novo Painel de Controle, o AEM fornece um recurso de clone que você pode usar para duplicar um Painel de Controle existente. Para clonar um painel, proceda da seguinte maneira:
 
-1. No **Ferramentas** clique em **Console de configuração**.
+1. Na seção **Ferramentas**, clique em **Console de Configuração**.
 
 1. Na árvore, clique em **Painel**.
 1. Clique no painel que deseja clonar.
@@ -53,7 +53,7 @@ Talvez você queira ter vários painéis para ver rapidamente as informações s
 
 ### Remover Um Painel {#removing-a-dashboard}
 
-1. No **Ferramentas** clique em **Console de configuração**.
+1. Na seção **Ferramentas**, clique em **Console de Configuração**.
 
 1. Na árvore, clique em **Painel**.
 1. Clique no painel que deseja excluir.
@@ -66,24 +66,24 @@ Talvez você queira ter vários painéis para ver rapidamente as informações s
 
 ### Visão geral {#overview}
 
-Os componentes do painel não são nada mais do que comuns [Componentes do AEM](/help/sites-developing/developing-components-samples.md). Esta seção descreve os componentes de relatórios enviados com o AEM.
+Os componentes do painel são nada mais do que [componentes do AEM](/help/sites-developing/developing-components-samples.md) comuns. Esta seção descreve os componentes de relatórios enviados com o AEM.
 
 ### Componentes de relatórios do Web Analytics {#web-analytics-reporting-components}
 
-O AEM vem com um conjunto de componentes que renderizam várias métricas do [SiteCatalyst](/help/sites-administering/adobeanalytics.md) dados. Esses componentes estão listados na Sidekick sob o **Painel** seção.
+O AEM é fornecido com um conjunto de componentes que renderizam várias métricas dos dados do [SiteCatalyst](/help/sites-administering/adobeanalytics.md). Esses componentes estão listados no Sidekick na seção **Dashboard**.
 
 Cada componente de relatório fornece pelo menos três guias:
 
 * **Básico**: contém a configuração principal.
 
 * **Relatório:** contém a configuração específica de cada relatório.
-* **Estilo**: contém configuração de estilo, como tamanho e margem do gráfico.
+* **Style**: contém configuração de estilo como tamanho e margem do gráfico.
 
 Os componentes de relatórios são inicializados com uma configuração padrão que ajuda a configurar rapidamente seu painel.
 
 #### Configuração básica {#basic-configuration}
 
-A variável **Básico** fornece acesso às seguintes entradas de configuração:
+A guia **Básico** fornece acesso às seguintes entradas de configuração:
 
 **Título** O título exibido no painel.
 
@@ -91,11 +91,11 @@ A variável **Básico** fornece acesso às seguintes entradas de configuração:
 
 **Configuração do SiteCatalyst (opcional)** A configuração que você deseja usar para se conectar ao SiteCatalyst. Se não for fornecida, presume-se que a configuração esteja definida na página Painel (por meio das propriedades da página).
 
-**ID do conjunto de relatórios (opcional)** O conjunto de relatórios SiteCatalyst que você deseja usar para gerar o gráfico.
+**ID do Conjunto de Relatórios (opcional)** O conjunto de relatórios do SiteCatalyst que você deseja usar para gerar o gráfico.
 
 #### Configuração do relatório {#report-configuration}
 
-Para exibir estatísticas da Web, você precisa definir o intervalo de datas dos dados que deseja obter. A variável **Relatório** fornece dois campos para definir esse intervalo.
+Para exibir estatísticas da Web, você precisa definir o intervalo de datas dos dados que deseja obter. A guia **Relatório** fornece dois campos para definir esse intervalo.
 
 >[!NOTE]
 >
@@ -103,7 +103,7 @@ Para exibir estatísticas da Web, você precisa definir o intervalo de datas dos
 
 **Data - De** Data absoluta ou relativa a partir da qual os dados são obtidos.
 
-**Data - Até** Data absoluta ou relativa para a qual os dados são obtidos.
+**Data Até** Data absoluta ou relativa para a qual os dados são obtidos.
 
 Cada componente também define configurações específicas.
 
@@ -111,7 +111,7 @@ Cada componente também define configurações específicas.
 
 ![chlimage_1-26](assets/chlimage_1-26a.png)
 
-**Granularidade de data** Unidade de tempo do eixo X (por exemplo, dia, hora).
+**Granularidade de data** Unidade de hora do eixo X (por exemplo, dia, hora).
 
 **Métricas** A lista de eventos que você deseja exibir.
 
@@ -125,7 +125,7 @@ Cada componente também define configurações específicas.
 
 **Métricas** O evento que você deseja exibir.
 
-**Não. dos principais itens** Número de itens exibidos pelo relatório.
+**Não. de itens principais** Número de itens exibidos pelo relatório.
 
 #### Relatório classificado {#ranked-report}
 
@@ -147,7 +147,7 @@ Este componente exibe um gráfico mostrando a seção mais visitada de um site d
 
 ![chlimage_1-30](assets/chlimage_1-30a.png)
 
-**Granularidade de data** Unidade de tempo do eixo X (por exemplo, dia, hora).
+**Granularidade de data** Unidade de hora do eixo X (por exemplo, dia, hora).
 
 **Métricas** O evento que você deseja exibir.
 
@@ -157,15 +157,15 @@ Este componente exibe um gráfico mostrando a seção mais visitada de um site d
 
 ### Visão geral {#overview-1}
 
-Os painéis são páginas normais ( `cq:Page`), portanto, quaisquer componentes podem ser usados para montar Painéis.
+Os painéis são páginas normais ( `cq:Page`), portanto, todos os componentes podem ser usados para montar Painéis.
 
-Há um grupo de componentes padrão `Dashboard` contendo componentes de relatórios do analytics que estão habilitados no modelo por padrão.
+Há um grupo de componentes padrão `Dashboard` contendo componentes de relatórios do Analytics que estão habilitados no modelo por padrão.
 
 ### Criação De Um Modelo De Painel De Controle {#creating-a-dashboard-template}
 
 Um template define o conteúdo padrão de um novo Painel. Você pode usar vários modelos para criar diferentes tipos de painéis.
 
-Os modelos de painéis são criados como outros modelos de página, exceto pelo fato de serem armazenados em `/libs/cq/dashboards/templates/`. Consulte a [Criação do modelo Contentpage](/help/sites-developing/website.md#creating-the-contentpage-template) seção.
+Os modelos de painel são criados como outros modelos de página, exceto que são armazenados em `/libs/cq/dashboards/templates/`. Consulte a seção [Criando Modelo de Contentpage](/help/sites-developing/website.md#creating-the-contentpage-template).
 
 >[!NOTE]
 >
@@ -177,17 +177,17 @@ O desenvolvimento de um componente do Painel consiste na criação de um compone
 
 ![chlimage_1-31](assets/chlimage_1-31a.png)
 
-Os componentes principais do autor são armazenados no repositório em `/apps/geometrixx-outdoors/components/reporting` e é composto por:
+Os componentes principais do autor são armazenados no repositório em `/apps/geometrixx-outdoors/components/reporting` e são compostos por:
 
-1. a `jsp` arquivo que lê os dados jcr e define o `html` espaço reservado.
+1. um arquivo `jsp` que lê dados jcr e define o espaço reservado `html`.
 
-1. uma biblioteca do lado do cliente contendo um `js` arquivo que busca e solicita os dados e, em seguida, preenche o `html` espaço reservado.
+1. uma biblioteca do lado do cliente contendo um arquivo `js` que busca e ordena os dados e, em seguida, preenche o espaço reservado `html`.
 
 ![chlimage_1-32](assets/chlimage_1-32a.png)
 
-O seguinte arquivo JavaScript é definido na variável `geout.reporting.topauthors` [Biblioteca do cliente](/help/sites-developing/clientlibs.md) como filho do próprio componente.
+O seguinte arquivo JavaScript está definido na `geout.reporting.topauthors` [Biblioteca de Clientes](/help/sites-developing/clientlibs.md) como filho do próprio componente.
 
-A variável [QueryBuilder](/help/sites-developing/querybuilder-api.md) é usado para consultar o repositório para ler `cq:AuditEvent` nós. O resultado da consulta é um objeto JSON do qual as contribuições do autor são extraídas.
+O [QueryBuilder](/help/sites-developing/querybuilder-api.md) é usado para consultar o repositório para ler os nós `cq:AuditEvent`. O resultado da consulta é um objeto JSON do qual as contribuições do autor são extraídas.
 
 #### top_author.js {#top-authors-js}
 
@@ -234,7 +234,7 @@ $.ajax({
 });
 ```
 
-A variável `JSP` inclui ambos `global.jsp` e `clientlib`.
+O `JSP` inclui `global.jsp` e `clientlib`.
 
 #### top_author.jsp {#top-authors-jsp}
 

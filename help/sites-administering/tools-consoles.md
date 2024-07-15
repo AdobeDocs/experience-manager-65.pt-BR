@@ -19,7 +19,7 @@ ht-degree: 26%
 
 # Consoles Ferramentas{#tools-consoles}
 
-A variável **Ferramentas** Os consoles fornecem acesso a várias ferramentas especializadas que ajudam a administrar seus sites, ativos digitais e outros aspectos do seu repositório de conteúdo. Atualmente, existem dois tipos de **Ferramentas** console dependente da interface do usuário que você está usando:
+Os consoles **Ferramentas** fornecem acesso a várias ferramentas especializadas que ajudam a administrar seus sites, ativos digitais e outros aspectos do seu repositório de conteúdo. Atualmente, existem duas opções do console **Ferramentas** que dependem da interface do usuário que você está usando:
 
 * [Ferramentas - Interface otimizada para toque](#tools-touch-optimized-ui)
 * [Ferramentas - Interface clássica](#tools-classic-ui)
@@ -158,7 +158,7 @@ A variável **Ferramentas** Os consoles fornecem acesso a várias ferramentas es
   </tr>
   <tr>
    <td> </td>
-   <td>Linkchecker externo<br /> </td>
+   <td>Linkchecker<br /> externo </td>
   </tr>
   <tr>
    <td>Ativos</td>
@@ -326,7 +326,7 @@ A variável **Ferramentas** Os consoles fornecem acesso a várias ferramentas es
   </tr>
   <tr>
    <td> </td>
-   <td>Guia do componente<br /> </td>
+   <td>Guia de componentes<br /> </td>
   </tr>
   <tr>
    <td> </td>
@@ -334,11 +334,11 @@ A variável **Ferramentas** Os consoles fornecem acesso a várias ferramentas es
   </tr>
   <tr>
    <td> </td>
-   <td>Modelos de grupo<br /> </td>
+   <td>Modelos de Grupo<br /> </td>
   </tr>
   <tr>
    <td> </td>
-   <td>Modelos de site<br /> </td>
+   <td>Modelos de Site<br /> </td>
   </tr>
   <tr>
    <td> </td>
@@ -372,7 +372,7 @@ A variável **Ferramentas** Os consoles fornecem acesso a várias ferramentas es
    <td>Ponto centralizado para gerenciar seus vários sites.</td>
   </tr>
   <tr>
-   <td>Configurações do ClientContext<br /> </td>
+   <td>Configurações de Contexto de Cliente<br /> </td>
    <td>O Client Context representa uma coleção de dados do usuário montada dinamicamente. As configurações padrão e Experience Cloud são mantidas aqui.<br /> </td>
   </tr>
   <tr>
@@ -421,11 +421,11 @@ A variável **Ferramentas** Os consoles fornecem acesso a várias ferramentas es
   </tr>
   <tr>
    <td>Pacotes</td>
-   <td>Um link alternativo para o Gerenciador de pacotes que mostra os pacotes que foram carregados para AEM WCM. Semelhante às informações mostradas no Gerenciador de pacotes do CRX.</td>
+   <td>Um link alternativo para o Gerenciador de pacotes que mostra os pacotes que foram carregados para AEM WCM. Semelhante às informações mostradas no Gerenciador de pacotes da CRX.</td>
   </tr>
   <tr>
    <td>Replicação - Agentes de replicação</td>
-   <td>Usado para replicar dados da instância do autor para publicação ao publicar páginas, ou com replicação reversa para retornar os comentários do usuário do ambiente de publicação para o autor.</td>
+   <td>Usado para replicar dados da instância do autor para o Publish ao publicar páginas, ou com replicação reversa para retornar os comentários do usuário do ambiente de publicação para o autor.</td>
   </tr>
   <tr>
    <td>Relatórios</td>

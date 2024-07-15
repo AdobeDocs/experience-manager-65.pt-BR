@@ -26,10 +26,10 @@ Veja a seguir as etapas para iniciar um novo processo a partir dos dados existen
 
    * Em Tracking, clique na instância do processo cujos dados você deseja usar. Na exibição Histórico do processo no painel direito, clique na linha de tarefa que corresponde ao ponto inicial.
    * Em Rastreamento, selecione um modelo de pesquisa para exibir uma lista de instâncias de processo. Selecione a instância cujos dados você deseja usar.
-   * No **[!UICONTROL Tarefa Pendente]** selecione a tarefa. Clique em **[!UICONTROL Histórico]** e selecione a tarefa que iniciou a instância do processo.
+   * Na guia **[!UICONTROL Tarefa Pendente]**, selecione a tarefa. Clique na guia **[!UICONTROL Histórico]** e selecione a tarefa que iniciou a instância do processo.
 
-   ![Selecione a tarefa](assets/start3_new.png) ![Selecione a tarefa](assets/start1_new.png)
+   ![Selecionar a tarefa](assets/start3_new.png) ![Selecionar a tarefa](assets/start1_new.png)
 
-1. Na barra de ferramentas da ação Tarefa, clique em **[!UICONTROL Início]**. Um formulário adaptável para a nova instância do processo é exibido com dados preenchidos previamente.
+1. Na barra de ferramentas da ação Tarefa, clique em **[!UICONTROL Iniciar]**. Um formulário adaptável para a nova instância do processo é exibido com dados preenchidos previamente.
 
-1. Atualize os dados conforme necessário e clique em **[!UICONTROL Concluído]** ou um botão apropriado no formulário.
+1. Atualize os dados conforme necessário e clique em **[!UICONTROL Concluir]** ou em um botão apropriado no formulário.

@@ -25,8 +25,8 @@ Esta seção inclui informações detalhadas sobre logs disponíveis para ajudar
 >
 >Para obter mais informações sobre logs, consulte:
 >
->* [Manutenção do registro de auditoria no AEM](/help/sites-administering/operations-audit-log.md)
->* [Trabalhar com registros de auditoria e arquivos de log](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files)
+>* [Manutenção do Log de Auditoria no AEM](/help/sites-administering/operations-audit-log.md)
+>* [Trabalhando com Registros de Auditoria e Arquivos de Log](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files)
 
 O CRX registra logs detalhados. Depois de descompactar e iniciar o Quickstart, você pode encontrar logs nos seguintes locais:
 
@@ -38,7 +38,7 @@ O CRX registra logs detalhados. Depois de descompactar e iniciar o Quickstart, v
 
 O nível de log padrão é INFO, ou seja, as mensagens DEBUG não são registradas.
 
-Para ativar o nível de log DEBUG, use o CRX Explorer para definir o
+Para ativar o nível de log DEBUG, use o explorador do CRX para definir o
 
 ```xml
 /libs/sling/config/org.apache.sling.commons.log.LogManager/org.apache.sling.commons.log.level

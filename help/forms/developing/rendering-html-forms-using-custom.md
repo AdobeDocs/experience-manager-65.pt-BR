@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Renderização do HTML Forms usando arquivos CSS personalizados {#rendering-html-forms-using-custom-css-files}
 
-**Os exemplos e amostras neste documento são somente para AEM Forms no ambiente JEE.**
+**Exemplos e exemplos neste documento são somente para AEM Forms no ambiente JEE.**
 
 O serviço Forms renderiza formulários HTML em resposta a uma solicitação HTTP de um navegador da Web. Ao renderizar um formulário HTML, o serviço Forms pode fazer referência a um arquivo CSS personalizado. Você pode criar um arquivo CSS personalizado para atender aos requisitos da empresa e fazer referência a esse arquivo CSS ao usar o serviço Forms para renderizar formulários HTML.
 
@@ -27,10 +27,10 @@ O serviço Forms analisa silenciosamente o arquivo CSS personalizado. Ou seja, o
 
 A lista a seguir especifica estilos compatíveis com um arquivo CSS personalizado:
 
-* **Pares de estilo do seletor de nível de classe**: Se presente em um arquivo CSS personalizado, os seletores usados no formulário HTML como estilos de classe são usados. Estilos de classe não utilizados são ignorados.
-* **Pares de estilo do seletor de nível do identificador**: Todos os estilos de identificador são usados se forem usados no formato HTML.
-* **Pares de estilo do seletor de nível de elemento**: Todos os estilos de elemento são usados se forem usados no formato HTML.
-* **Prioridade do estilo**: a prioridade do estilo (como importante) é compatível e pode ser usada em um arquivo CSS personalizado.
+* **Pares de estilos do seletor de nível de classe**: se presentes em um arquivo CSS personalizado, os seletores usados no formulário HTML como estilos de classe são usados. Estilos de classe não utilizados são ignorados.
+* **Pares de estilos de seletor de nível de identificador**: todos os estilos de identificador serão usados se forem usados no formulário HTML.
+* **Pares de estilo do seletor de nível de elemento**: todos os estilos de elemento serão usados se forem usados no formato HTML.
+* **Prioridade de Estilo**: a prioridade de estilo (como importante) é suportada e pode ser usada em um arquivo CSS personalizado.
 * **Tipo de mídia**: um ou mais pares de estilos do seletor podem ser encapsulados no estilo @media para definir o tipo de mídia. O serviço Forms não verifica se o tipo de mídia especificado é compatível. O tipo de mídia especificado no arquivo CSS personalizado é mesclado no formulário HTML.
 
 Você pode recuperar um arquivo CSS de amostra usando o aplicativo FormsIVS. Carregue o formulário, selecione-o na página Testar design de formulário e clique em Gerar CSS. Não é necessário definir o tipo de transformação de HTML antes de clicar no botão. Em seguida, selecione salvar. Você pode editar esse arquivo CSS para atender aos requisitos da sua empresa.
@@ -41,7 +41,7 @@ Você pode recuperar um arquivo CSS de amostra usando o aplicativo FormsIVS. Car
 
 >[!NOTE]
 >
->Para obter mais informações sobre o serviço Forms, consulte [Referência de serviços para o AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Para obter mais informações sobre o serviço Forms, consulte [Referência de serviços para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Resumo das etapas {#summary-of-steps}
 
@@ -57,7 +57,7 @@ Para renderizar um formulário HTML que use um arquivo CSS, execute as seguintes
 
 Inclua os arquivos necessários no projeto de desenvolvimento. Se você estiver criando uma aplicação cliente usando Java, inclua os arquivos JAR necessários. Se você estiver usando serviços da Web, certifique-se de incluir os arquivos proxy.
 
-**Criar um objeto de API Java do Forms**
+**Criar um objeto da API Java do Forms**
 
 Antes de executar programaticamente uma operação compatível com o serviço Forms, você deve criar um objeto cliente Forms.
 
@@ -65,13 +65,13 @@ Antes de executar programaticamente uma operação compatível com o serviço Fo
 
 Para renderizar um formulário HTML que use um arquivo CSS personalizado, certifique-se de fazer referência a um arquivo CSS existente.
 
-**Renderizar um formulário HTML**
+**Renderizar um formulário de HTML**
 
 Para renderizar um formulário HTML, especifique um design de formulário que foi criado no Designer e salvo como um arquivo XDP. Selecione um tipo de transformação HTML. Por exemplo, você pode especificar o tipo de transformação de HTML que renderiza um HTML dinâmico para o Internet Explorer 5.0 ou posterior.
 
 A renderização de um formulário HTML também requer valores, como valores de URI necessários para renderizar outros tipos de formulário.
 
-**Gravar o fluxo de dados do formulário no navegador Web cliente**
+**Gravar o fluxo de dados de formulário no navegador Web cliente**
 
 Quando o serviço Forms renderiza um formulário HTML, ele retorna um fluxo de dados de formulário que você deve gravar no navegador da Web do cliente para tornar o formulário HTML visível para o usuário.
 
@@ -101,37 +101,37 @@ Renderize um formulário HTML que use um arquivo CSS personalizado usando a API 
 
 1. Criar um objeto de API Java do Forms
 
-   * Criar um `ServiceClientFactory` objeto que contém propriedades de conexão.
-   * Criar um `FormsServiceClient` usando seu construtor e transmitindo o `ServiceClientFactory` objeto.
+   * Crie um objeto `ServiceClientFactory` que contenha propriedades de conexão.
+   * Crie um objeto `FormsServiceClient` usando seu construtor e transmitindo o objeto `ServiceClientFactory`.
 
 1. Referência ao arquivo CSS
 
-   * Criar um `HTMLRenderSpec` usando seu construtor.
-   * Para renderizar o formulário HTML que usa um arquivo CSS personalizado, chame o `HTMLRenderSpec` do objeto `setCustomCSSURI` e transmitem um valor de string que especifica a localização e o nome do arquivo CSS.
+   * Crie um objeto `HTMLRenderSpec` usando seu construtor.
+   * Para renderizar o formulário HTML que usa um arquivo CSS personalizado, chame o método `setCustomCSSURI` do objeto `HTMLRenderSpec` e passe um valor de cadeia de caracteres que especifique o local e o nome do arquivo CSS.
 
 1. Renderizar um formulário HTML
 
-   Chame o `FormsServiceClient` do objeto `(Deprecated) (Deprecated) renderHTMLForm` e passe os seguintes valores:
+   Invoque o método `(Deprecated) (Deprecated) renderHTMLForm` do objeto `FormsServiceClient` e passe os seguintes valores:
 
-   * Um valor de cadeia de caracteres que especifica o nome de design do formulário, incluindo a extensão de nome de arquivo. Se você fizer referência a um design de formulário que faz parte de um aplicativo do Forms, certifique-se de especificar o caminho completo, como `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
-   * A `TransformTo` valor de enumeração que especifica o tipo de preferência HTML. Por exemplo, para renderizar um formulário de HTML que seja compatível com o HTML dinâmico para o Internet Explorer 5.0 ou posterior, especifique `TransformTo.MSDHTML`.
-   * A `com.adobe.idp.Document` objeto que contém dados a serem mesclados com o formulário. Se não quiser mesclar dados, passe uma tag vazia `com.adobe.idp.Document` objeto.
-   * A variável `HTMLRenderSpec` objeto que armazena opções de tempo de execução de HTML.
-   * Um valor de string que especifica a `HTTP_USER_AGENT` valor do cabeçalho, como `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
-   * A `URLSpec` objeto que armazena valores de URI necessários para renderizar um formulário HTML.
-   * A `java.util.HashMap` objeto que armazena anexos de arquivo. Este é um parâmetro opcional, e você pode especificar `null` se não quiser anexar arquivos ao formulário.
+   * Um valor de cadeia de caracteres que especifica o nome de design do formulário, incluindo a extensão de nome de arquivo. Se você referenciar um design de formulário que faça parte de um aplicativo do Forms, certifique-se de especificar o caminho completo, como `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
+   * Um valor de enumeração `TransformTo` que especifica o tipo de preferência HTML. Por exemplo, para renderizar um formulário de HTML que seja compatível com o HTML dinâmico para o Internet Explorer 5.0 ou posterior, especifique `TransformTo.MSDHTML`.
+   * Um objeto `com.adobe.idp.Document` que contém dados para mesclar com o formulário. Se não quiser mesclar dados, passe um objeto `com.adobe.idp.Document` vazio.
+   * O objeto `HTMLRenderSpec` que armazena opções de tempo de execução de HTML.
+   * Um valor de cadeia de caracteres que especifica o valor do cabeçalho `HTTP_USER_AGENT`, como `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
+   * Um objeto `URLSpec` que armazena valores de URI necessários para renderizar um formulário HTML.
+   * Um objeto `java.util.HashMap` que armazena anexos de arquivo. Este é um parâmetro opcional, e você pode especificar `null` se não quiser anexar arquivos ao formulário.
 
-   A variável `(Deprecated) renderHTMLForm` o método retorna um `FormsResult` objeto que contém um fluxo de dados de formulário que deve ser gravado no navegador da web do cliente.
+   O método `(Deprecated) renderHTMLForm` retorna um objeto `FormsResult` que contém um fluxo de dados de formulário que deve ser gravado no navegador Web cliente.
 
 1. Gravar o fluxo de dados do formulário no navegador Web cliente
 
-   * Criar um `com.adobe.idp.Document` ao invocar o `FormsResult` do objeto `getOutputContent` método.
-   * Obter o tipo de conteúdo do `com.adobe.idp.Document` ao invocar seu `getContentType` método.
-   * Defina o `javax.servlet.http.HttpServletResponse` tipo de conteúdo do objeto chamando seu `setContentType` e transmitindo o tipo de conteúdo do `com.adobe.idp.Document` objeto.
-   * Criar um `javax.servlet.ServletOutputStream` objeto usado para gravar o fluxo de dados de formulário no navegador da web cliente, chamando o `javax.servlet.h\ttp.HttpServletResponse` do objeto `getOutputStream` método.
-   * Criar um `java.io.InputStream` ao invocar o `com.adobe.idp.Document` do objeto `getInputStream` método.
-   * Crie uma matriz de bytes e preencha-a com o fluxo de dados de formulário chamando o `InputStream` do objeto `read` e transmitindo a matriz de bytes como um argumento.
-   * Chame o `javax.servlet.ServletOutputStream` do objeto `write` para enviar o fluxo de dados de formulário para o navegador web cliente. Passe a matriz de bytes para o `write` método.
+   * Crie um objeto `com.adobe.idp.Document` invocando o método `getOutputContent` do objeto `FormsResult`.
+   * Obtenha o tipo de conteúdo do objeto `com.adobe.idp.Document` invocando seu método `getContentType`.
+   * Defina o tipo de conteúdo do objeto `javax.servlet.http.HttpServletResponse` invocando seu método `setContentType` e transmitindo o tipo de conteúdo do objeto `com.adobe.idp.Document`.
+   * Crie um objeto `javax.servlet.ServletOutputStream` usado para gravar o fluxo de dados de formulário no navegador da Web cliente, chamando o método `getOutputStream` do objeto `javax.servlet.h\ttp.HttpServletResponse`.
+   * Crie um objeto `java.io.InputStream` invocando o método `getInputStream` do objeto `com.adobe.idp.Document`.
+   * Crie uma matriz de bytes e preencha-a com o fluxo de dados de formulário, chamando o método `read` do objeto `InputStream` e transmitindo a matriz de bytes como argumento.
+   * Invoque o método `write` do objeto `javax.servlet.ServletOutputStream` para enviar o fluxo de dados de formulário para o navegador Web cliente. Passar a matriz de bytes para o método `write`.
 
 **Consulte também**
 
@@ -154,42 +154,42 @@ Renderize um formulário HTML que use um arquivo CSS personalizado usando a API 
 
 1. Criar um objeto de API Java do Forms
 
-   Criar um `FormsService` objeto e definir valores de autenticação.
+   Crie um objeto `FormsService` e defina valores de autenticação.
 
 1. Referência ao arquivo CSS
 
-   * Criar um `HTMLRenderSpec` usando seu construtor.
-   * Para renderizar o formulário HTML que usa um arquivo CSS personalizado, chame o `HTMLRenderSpec` do objeto `setCustomCSSURI` e transmitem um valor de string que especifica a localização e o nome do arquivo CSS.
+   * Crie um objeto `HTMLRenderSpec` usando seu construtor.
+   * Para renderizar o formulário HTML que usa um arquivo CSS personalizado, chame o método `setCustomCSSURI` do objeto `HTMLRenderSpec` e passe um valor de cadeia de caracteres que especifique o local e o nome do arquivo CSS.
 
 1. Renderizar um formulário HTML
 
-   Chame o `FormsService` do objeto `(Deprecated) renderHTMLForm` e passe os seguintes valores:
+   Invoque o método `(Deprecated) renderHTMLForm` do objeto `FormsService` e passe os seguintes valores:
 
-   * Um valor de cadeia de caracteres que especifica o nome de design do formulário, incluindo a extensão de nome de arquivo. Se você fizer referência a um design de formulário que faz parte de um aplicativo do Forms, certifique-se de especificar o caminho completo, como `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
-   * A `TransformTo` valor de enumeração que especifica o tipo de preferência HTML. Por exemplo, para renderizar um formulário de HTML que seja compatível com o HTML dinâmico para o Internet Explorer 5.0 ou posterior, especifique `TransformTo.MSDHTML`.
-   * A `BLOB` objeto que contém dados a serem mesclados com o formulário. Se não quiser mesclar dados, transmita `null`. (Consulte [Pré-preenchimento do Forms com layouts fluíveis](/help/forms/developing/prepopulating-forms-flowable-layouts.md).)
-   * A variável `HTMLRenderSpec` objeto que armazena opções de tempo de execução de HTML.
-   * Um valor de string que especifica a `HTTP_USER_AGENT` valor do cabeçalho, como `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`. Você pode passar uma string vazia se não quiser definir esse valor.
-   * A `URLSpec` objeto que armazena valores de URI necessários para renderizar um formulário HTML.
-   * A `java.util.HashMap` objeto que armazena anexos de arquivo. Este é um parâmetro opcional, e você pode especificar `null` se não quiser anexar arquivos ao formulário.
-   * Um vazio `com.adobe.idp.services.holders.BLOBHolder` objeto que é preenchido pelo `(Deprecated) renderHTMLForm` método. Esse valor de parâmetro armazena o formulário renderizado.
-   * Um vazio `com.adobe.idp.services.holders.BLOBHolder` objeto que é preenchido pelo `(Deprecated) renderHTMLForm` método. Esse parâmetro armazena os dados XML de saída.
-   * Um vazio `javax.xml.rpc.holders.LongHolder` objeto que é preenchido pelo `(Deprecated) renderHTMLForm` método. Esse argumento armazena o número de páginas no formulário.
-   * Um vazio `javax.xml.rpc.holders.StringHolder` objeto que é preenchido pelo `(Deprecated) renderHTMLForm` método. Esse argumento armazena o valor do local.
-   * Um vazio `javax.xml.rpc.holders.StringHolder` objeto que é preenchido pelo `(Deprecated) renderHTMLForm` método. Esse argumento armazena o valor de renderização do HTML usado.
-   * Um vazio `com.adobe.idp.services.holders.FormsResultHolder` objeto que conterá os resultados desta operação.
+   * Um valor de cadeia de caracteres que especifica o nome de design do formulário, incluindo a extensão de nome de arquivo. Se você referenciar um design de formulário que faça parte de um aplicativo do Forms, certifique-se de especificar o caminho completo, como `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
+   * Um valor de enumeração `TransformTo` que especifica o tipo de preferência HTML. Por exemplo, para renderizar um formulário de HTML que seja compatível com o HTML dinâmico para o Internet Explorer 5.0 ou posterior, especifique `TransformTo.MSDHTML`.
+   * Um objeto `BLOB` que contém dados para mesclar com o formulário. Se não quiser mesclar dados, passe `null`. (Consulte [Preenchimento prévio de Forms com Layouts Fluxáveis](/help/forms/developing/prepopulating-forms-flowable-layouts.md).)
+   * O objeto `HTMLRenderSpec` que armazena opções de tempo de execução de HTML.
+   * Um valor de cadeia de caracteres que especifica o valor do cabeçalho `HTTP_USER_AGENT`, como `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`. Você pode passar uma string vazia se não quiser definir esse valor.
+   * Um objeto `URLSpec` que armazena valores de URI necessários para renderizar um formulário HTML.
+   * Um objeto `java.util.HashMap` que armazena anexos de arquivo. Este é um parâmetro opcional, e você pode especificar `null` se não quiser anexar arquivos ao formulário.
+   * Um objeto `com.adobe.idp.services.holders.BLOBHolder` vazio preenchido pelo método `(Deprecated) renderHTMLForm`. Esse valor de parâmetro armazena o formulário renderizado.
+   * Um objeto `com.adobe.idp.services.holders.BLOBHolder` vazio preenchido pelo método `(Deprecated) renderHTMLForm`. Esse parâmetro armazena os dados XML de saída.
+   * Um objeto `javax.xml.rpc.holders.LongHolder` vazio preenchido pelo método `(Deprecated) renderHTMLForm`. Esse argumento armazena o número de páginas no formulário.
+   * Um objeto `javax.xml.rpc.holders.StringHolder` vazio preenchido pelo método `(Deprecated) renderHTMLForm`. Esse argumento armazena o valor do local.
+   * Um objeto `javax.xml.rpc.holders.StringHolder` vazio preenchido pelo método `(Deprecated) renderHTMLForm`. Esse argumento armazena o valor de renderização do HTML usado.
+   * Um objeto `com.adobe.idp.services.holders.FormsResultHolder` vazio que conterá os resultados desta operação.
 
-   A variável `(Deprecated) renderHTMLForm` O método preenche o `com.adobe.idp.services.holders.FormsResultHolder` objeto que é passado como o último valor de argumento com um fluxo de dados de formulário que deve ser gravado no navegador da web do cliente.
+   O método `(Deprecated) renderHTMLForm` preenche o objeto `com.adobe.idp.services.holders.FormsResultHolder` que é passado como o último valor de argumento com um fluxo de dados de formulário que deve ser gravado no navegador Web cliente.
 
 1. Gravar o fluxo de dados do formulário no navegador Web cliente
 
-   * Criar um `FormResult` obtendo o valor do `com.adobe.idp.services.holders.FormsResultHolder` do objeto `value` membro de dados.
-   * Criar um `BLOB` objeto que contém dados de formulário chamando o `FormsResult` do objeto `getOutputContent` método.
-   * Obter o tipo de conteúdo do `BLOB` ao invocar seu `getContentType` método.
-   * Defina o `javax.servlet.http.HttpServletResponse` tipo de conteúdo do objeto chamando seu `setContentType` e transmitindo o tipo de conteúdo do `BLOB` objeto.
-   * Criar um `javax.servlet.ServletOutputStream` objeto usado para gravar o fluxo de dados de formulário no navegador da web cliente, chamando o `javax.servlet.http.HttpServletResponse` do objeto `getOutputStream` método.
-   * Crie uma matriz de bytes e preencha-a chamando o `BLOB` do objeto `getBinaryData` método. Esta tarefa atribui o conteúdo do `FormsResult` à matriz de bytes.
-   * Chame o `javax.servlet.http.HttpServletResponse` do objeto `write` para enviar o fluxo de dados de formulário para o navegador web cliente. Passe a matriz de bytes para o `write` método.
+   * Crie um objeto `FormResult` obtendo o valor do membro de dados `value` do objeto `com.adobe.idp.services.holders.FormsResultHolder`.
+   * Crie um objeto `BLOB` que contenha dados de formulário invocando o método `getOutputContent` do objeto `FormsResult`.
+   * Obtenha o tipo de conteúdo do objeto `BLOB` invocando seu método `getContentType`.
+   * Defina o tipo de conteúdo do objeto `javax.servlet.http.HttpServletResponse` invocando seu método `setContentType` e transmitindo o tipo de conteúdo do objeto `BLOB`.
+   * Crie um objeto `javax.servlet.ServletOutputStream` usado para gravar o fluxo de dados de formulário no navegador da Web cliente, chamando o método `getOutputStream` do objeto `javax.servlet.http.HttpServletResponse`.
+   * Crie uma matriz de bytes e preencha-a chamando o método `getBinaryData` do objeto `BLOB`. Esta tarefa atribui o conteúdo do objeto `FormsResult` à matriz de bytes.
+   * Invoque o método `write` do objeto `javax.servlet.http.HttpServletResponse` para enviar o fluxo de dados de formulário para o navegador Web cliente. Passar a matriz de bytes para o método `write`.
 
 **Consulte também**
 

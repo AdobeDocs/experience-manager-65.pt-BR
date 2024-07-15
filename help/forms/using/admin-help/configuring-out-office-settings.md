@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Definindo Configurações de Ausência Temporária {#configuring-out-of-office-settings}
 
-O recurso Out of Office permite que os usuários ou administradores especifiquem quando um usuário estará fora do escritório e não poderá concluir tarefas atribuídas por formulários AEM. Embora um usuário esteja definido como Fora do escritório, suas tarefas são atribuídas a um ou mais usuários designados. Os usuários podem alterar as configurações de Ausência Temporária no Workspace ou os administradores podem alterar as configurações em nome de um usuário no fluxo de trabalho de formulários.
+O recurso Out of Office permite que os usuários ou administradores especifiquem quando um usuário estará fora do escritório e não poderá concluir tarefas atribuídas por formulários AEM. Embora um usuário esteja definido como Fora do escritório, suas tarefas são atribuídas a um ou mais usuários designados. Os usuários podem alterar suas configurações de Ausência temporária no Workspace ou os administradores podem alterar as configurações em nome de um usuário no fluxo de trabalho de formulários.
 
 Ao criar um processo, o usuário do Workbench pode especificar se uma tarefa pode ser redirecionada devido às configurações de Ausência temporária.
 
@@ -31,7 +31,7 @@ Ao criar um processo, o usuário do Workbench pode especificar se uma tarefa pod
 
    Selecione a opção Pesquisar por nome. Digite todo ou parte do nome de usuário e clique em Localizar. Se você deixar o campo em branco, o workflow do Forms retornará uma lista de todos os usuários.
 
-   **Pesquisar por intervalo de datas**
+   **Pesquisar Por Intervalo De Datas**
 
    Selecione a opção Pesquisar por intervalo de datas. Especifique as datas de e até juntamente com os carimbos de data e hora desejados para limitar o resultado da pesquisa. Clique em Localizar.
 
@@ -41,7 +41,7 @@ Ao criar um processo, o usuário do Workbench pode especificar se uma tarefa pod
 
 1. Localize o usuário, conforme descrito em [Exibir as informações de Ausência Temporária de um usuário](configuring-out-office-settings.md#view-a-user-s-out-of-office-information).
 1. Clique no nome do usuário que deseja alterar.
-1. No *Nome do usuário* estiver listada no momento, selecione No escritório ou Fora do escritório.
+1. Na lista *Nome de Usuário*, selecione No Escritório ou Fora do Escritório.
 1. Clique em Salvar.
 
 ## Adicionar um intervalo de datas de Ausência Temporária para um usuário {#add-an-out-of-office-date-range-for-a-user}

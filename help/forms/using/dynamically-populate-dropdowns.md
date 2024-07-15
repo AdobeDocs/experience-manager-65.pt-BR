@@ -20,14 +20,14 @@ ht-degree: 0%
 
 ## Pré-requisitos {#prerequisites}
 
-* [Criação de pacotes OSGi](https://helpx.adobe.com/experience-manager/using/creating-osgi-bundles-digital-marketing.html)
+* [Criando pacotes OSGI](https://helpx.adobe.com/experience-manager/using/creating-osgi-bundles-digital-marketing.html)
 * [Desenvolvimento de componentes do AEM](/help/sites-developing/components.md)
 * [Criação de formulário adaptável](../../forms/using/creating-adaptive-form.md)
 * [Criação de formulário adaptável](../../forms/using/introduction-forms-authoring.md)
 
 ## Procedimento para preencher listas suspensas dinamicamente {#procedure-to-dynamically-populate-drop-down-lists}
 
-Considere um cenário em que você deseja preencher o **Estado** lista suspensa com base em um valor selecionado na variável **País** lista suspensa. Se você selecionar Austrália no campo **País** lista suspensa, a variável **Estado** exibe os estados na Austrália. O procedimento a seguir descreve como realizar essa tarefa.
+Considere um cenário em que você deseja preencher a lista suspensa **Estado** com base em um valor selecionado na lista suspensa **País**. Se você selecionar Austrália na lista suspensa **País**, a lista suspensa **Estado** exibirá os estados da Austrália. O procedimento a seguir descreve como realizar essa tarefa.
 
 1. Crie um projeto com os seguintes módulos:
 
@@ -145,7 +145,7 @@ Considere um cenário em que você deseja preencher o **Estado** lista suspensa 
    }
    ```
 
-1. Crie um nó suspenso em uma hierarquia de pastas específica em aplicativos (por exemplo, crie um nó em /apps/myfolder/demo). Certifique-se de que o `sling:resourceType` o parâmetro do nó é o mesmo para o qual o servlet aponta (/apps/populatedropdown).
+1. Crie um nó suspenso em uma hierarquia de pastas específica em aplicativos (por exemplo, crie um nó em /apps/myfolder/demo). Verifique se o parâmetro `sling:resourceType` do nó é o mesmo para o qual o servlet aponta (/apps/populatedropdown).
 
    ![Criar um nó suspenso](assets/dropdown-node.png)
 
@@ -154,7 +154,7 @@ Considere um cenário em que você deseja preencher o **Estado** lista suspensa 
 
    Adicione os nomes dos países a serem exibidos na lista de Países. Na lista Estado, adicione um script para preenchê-lo com base no nome do país na lista País.
 
-   ![Adição de nomes de países](assets/country-dropdown.png) ![Adição de script para preencher nomes de estado](assets/state-dropdown.png) ![Listas suspensas de País e Estado a serem coletadas](assets/2dropdowns.png)
+   ![Adicionando nomes de países](assets/country-dropdown.png) ![Adicionando script para popular nomes de estados](assets/state-dropdown.png) ![Listas suspensas de país e estado a serem coletadas](assets/2dropdowns.png)
 
    ```javascript
    JSON.parse(

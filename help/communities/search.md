@@ -20,11 +20,11 @@ ht-degree: 1%
 
 O recurso de pesquisa funciona com vários outros recursos, como fóruns, para fornecer a capacidade de pesquisar conteúdo.
 
-Ao adicionar a capacidade de pesquisar publicações inseridas por membros da comunidade, chamadas de conteúdo gerado pelo usuário (UGC), há dois componentes: [Pesquisar](#search) e [Resultados da pesquisa](#search-results).
+Ao adicionar a capacidade de pesquisar postagens inseridas por membros da comunidade, chamadas de conteúdo gerado pelo usuário (UGC), há dois componentes: [Pesquisa](#search) e [Resultados da Pesquisa](#search-results).
 
-A página que inclui a variável `Search Results` O componente oferece suporte à pesquisa e à exibição de resultados.
+A página que inclui o componente `Search Results` oferece suporte à pesquisa e à exibição de resultados.
 
-A página que inclui a variável `Search` componente fornece um local para iniciar uma pesquisa com resultados que aparecem na `Search Results` página.
+A página que inclui o componente `Search` fornece um local para iniciar uma pesquisa com resultados que aparecem na página `Search Results`.
 
 O recurso de pesquisa pode ser usado com qualquer outro recurso que permita que visitantes e membros do site visualizem conteúdo.
 
@@ -32,68 +32,68 @@ O recurso de pesquisa pode ser usado com qualquer outro recurso que permita que 
 
 ### Adicionar pesquisa a uma página {#add-search-to-a-page}
 
-Para adicionar um `Search` para uma página no modo de autor, use o navegador de componentes para localizar `Communities / Search` e arraste-o para o local em uma página. Uso do `Search` O requer uma segunda página para o `Search Results.`
+Para adicionar um componente `Search` a uma página no modo de autor, use o navegador de componentes para localizar `Communities / Search` e arrastá-lo para o local em uma página. O uso de `Search` requer uma segunda página para `Search Results.`
 
 Para obter as informações necessárias, visite [Noções básicas sobre componentes das comunidades](basics.md).
 
-Quando a biblioteca do lado do cliente for necessária, `cq.social.hbs.search`, está incluído, é assim que a variável `Search` será exibido.
+Quando a biblioteca necessária do lado do cliente, `cq.social.hbs.search`, for incluída, é assim que o componente `Search` aparecerá.
 
-![adicionar-pesquisar](assets/add-search.png)
+![adicionar-pesquisa](assets/add-search.png)
 
 ### Configurar a pesquisa adicionada {#configure-the-added-search}
 
-Selecione o colocado `Search` para acessar e selecionar a variável `Configure` ícone que abre a caixa de diálogo de edição.
+Selecione o componente `Search` inserido para acessar e selecione o ícone `Configure` que abre a caixa de diálogo de edição.
 
 ![configurar](assets/configure-new.png)
 
-No **[!UICONTROL Configurações de pesquisa]** especifique quais caminhos são pesquisados quando uma consulta é inserida por um visitante.
+Na guia **[!UICONTROL Configurações de pesquisa]**, especifique quais caminhos são pesquisados quando uma consulta é inserida por um visitante.
 
-![search-settings](assets/search-settings.png)
+![configurações-de-pesquisa](assets/search-settings.png)
 
-* **[!UICONTROL Caminhos de pesquisa]**
+* **[!UICONTROL Caminhos de Pesquisa]**
 Ao adicionar caminhos de pesquisa usando o botão Adicionar item, a pesquisa de conteúdo é limitada. Como exemplo, para limitar a pesquisa a um fórum específico, selecione um componente do fórum que será colocado em uma página:
 
    * `/content/community-components/en/forum/jcr:content/content/forum`
 
 * **[!UICONTROL Página de resultado]**
-Os resultados aparecerão em uma página separada especificada usando o navegador para selecionar uma página contendo os `Search Results` componente.
+Os resultados aparecerão em uma página separada especificada usando o navegador para selecionar uma página contendo o componente `Search Results`.
 
 ## Resultados da pesquisa {#search-results}
 
 ### Adicionar resultados da pesquisa a uma página {#add-search-results-to-a-page}
 
-Para adicionar um `Search Results` para uma página no modo de autor, use o navegador de componentes para localizar
+Para adicionar um componente `Search Results` a uma página no modo de autor, use o navegador de componentes para localizar
 
 * `Communities / Search Results`
 
 e arraste-o para o local em uma página. Diferentemente do componente de Pesquisa, nenhuma segunda página é necessária, pois os resultados serão exibidos na mesma página.
 
-Se estiver usando a Pesquisa em outro lugar no site, esta página com `Search Results` pode ser configurado para ser o `Result Page` para qualquer uma ou todas as instâncias de `Search`.
+Se estiver usando a Pesquisa em outro lugar no site, esta página com `Search Results` poderá ser configurada como `Result Page` para qualquer uma ou todas as instâncias de `Search`.
 
 Para obter as informações necessárias, visite [Noções básicas sobre componentes das comunidades](basics.md).
 
-Quando a biblioteca do lado do cliente for necessária, `cq.social.hbs.search`, está incluído, é assim que a variável `Search Result` componente aparecerá:
+Quando a biblioteca do lado do cliente necessária, `cq.social.hbs.search`, for incluída, o componente `Search Result` será mostrado da seguinte forma:
 
-![resultado da pesquisa](assets/search-result1.png)
+![resultado-da-pesquisa](assets/search-result1.png)
 
 ### Configurar o resultado de pesquisa adicionado {#configure-the-added-search-result}
 
-Selecione o colocado `Search Results` para acessar e selecionar a variável `Configure` ícone que abre a caixa de diálogo de edição.
+Selecione o componente `Search Results` inserido para acessar e selecione o ícone `Configure` que abre a caixa de diálogo de edição.
 
 ![configurar](assets/configure-new.png)
 
-No **[!UICONTROL Configurações dos resultados de pesquisa]** é possível especificar quais caminhos são incluídos na pesquisa quando um query é inserido por um visitante.
+Na guia **[!UICONTROL Configurações de resultado de pesquisa]**, é possível especificar quais caminhos são incluídos na pesquisa quando uma consulta é inserida por um visitante.
 
-![search-result-settings](assets/search-result-settings.png)
+![configurações-resultado-pesquisa](assets/search-result-settings.png)
 
-* **[!UICONTROL Resultados de pesquisa por página]**
+* **[!UICONTROL Resultados de Pesquisa por Página]**
 
   Defina o número de tópicos/postagens exibidos por página. O padrão é 10.
 
-* **[!UICONTROL Caminhos de pesquisa]**
+* **[!UICONTROL Caminhos de Pesquisa]**
 
   Ao adicionar caminhos de pesquisa usando o botão Adicionar item, a pesquisa de conteúdo é limitada.
 
 ## Informações adicionais {#additional-information}
 
-Mais informações podem ser encontradas no [Search Essentials](search-implementation.md) página para desenvolvedores.
+Mais informações podem ser encontradas na página do [Search Essentials](search-implementation.md) para desenvolvedores.

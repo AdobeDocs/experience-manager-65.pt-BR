@@ -22,19 +22,19 @@ Esta seção descreve como desenvolver a ferramenta Editor de itens em massa e c
 
 ## Parâmetros de consulta do editor em massa {#bulk-editor-query-parameters}
 
-Ao trabalhar com o Editor de itens em massa, há vários parâmetros de consulta que você pode adicionar ao URL para chamar o Editor de itens em massa com uma configuração específica. Se você quiser que o Editor de itens em massa seja sempre usado com uma determinada configuração, por exemplo, como no componente Lista de produtos, edite `bulkeditor.jsp` (em /libs/wcm/core/components/bulkeditor) ou crie um componente com a configuração específica. As alterações feitas usando parâmetros de consulta não são permanentes.
+Ao trabalhar com o Editor de itens em massa, há vários parâmetros de consulta que você pode adicionar ao URL para chamar o Editor de itens em massa com uma configuração específica. Se você quiser que o Editor de itens em massa seja sempre usado com uma determinada configuração, por exemplo, como no componente Lista de produtos, edite o `bulkeditor.jsp` (em /libs/wcm/core/components/bulkeditor) ou crie um componente com a configuração específica. As alterações feitas usando parâmetros de consulta não são permanentes.
 
 Por exemplo, se você digitar o seguinte no URL do navegador:
 
 `https://<servername><port_number>/etc/importers/bulkeditor.html?rootPath=/content/geometrixx/en&queryParams=geometrixx&initialSearch=true&hrp=true`
 
-O Editor de itens em massa é exibido sem a **Caminho raiz** field como hrp=true oculta o campo. Com o parâmetro hrp=false, o campo é exibido (o valor padrão).
+O Editor de itens em massa é exibido sem o campo **Caminho raiz**, pois hrp=true oculta o campo. Com o parâmetro hrp=false, o campo é exibido (o valor padrão).
 
 Veja a seguir uma lista dos parâmetros de consulta do Editor de itens em massa:
 
 >[!NOTE]
 >
->Cada parâmetro pode ter um nome longo e curto. Por exemplo, o nome longo do caminho raiz de pesquisa é `rootPath`, a curta é `rp`. Se o nome longo não estiver definido, o nome curto será lido da solicitação.
+>Cada parâmetro pode ter um nome longo e curto. Por exemplo, o nome longo do caminho raiz de pesquisa é `rootPath`, o mais curto é `rp`. Se o nome longo não estiver definido, o nome curto será lido da solicitação.
 
 <table>
  <tbody>
@@ -44,12 +44,12 @@ Veja a seguir uma lista dos parâmetros de consulta do Editor de itens em massa:
    <td> </td>
   </tr>
   <tr>
-   <td><p> Parâmetro</p> <p>(nome longo/nome curto)<br /> </p> </td>
+   <td><p> Parâmetro</p> <p>(nome longo / nome curto)<br /> </p> </td>
    <td> Tipo <br /> </td>
    <td> Descrição <br /> </td>
   </tr>
   <tr>
-   <td> rootPath/rp<br /> </td>
+   <td> rootPath / rp<br /> </td>
    <td> String </td>
    <td> caminho raiz de pesquisa</td>
   </tr>
@@ -59,9 +59,9 @@ Veja a seguir uma lista dos parâmetros de consulta do Editor de itens em massa:
    <td> pesquisar consulta</td>
   </tr>
   <tr>
-   <td> contentMode/cm<br /> </td>
+   <td> contentMode / cm<br /> </td>
    <td> Booleano</td>
-   <td> quando true, o modo de conteúdo é habilitado<br /> </td>
+   <td> quando verdadeiro, o modo de conteúdo é habilitado<br /> </td>
   </tr>
   <tr>
    <td> colsValue / cv<br /> </td>
@@ -74,7 +74,7 @@ Veja a seguir uma lista dos parâmetros de consulta do Editor de itens em massa:
    <td> propriedades adicionais pesquisadas (exibidas em um campo de texto separado por vírgulas)</td>
   </tr>
   <tr>
-   <td> initialSearch / é<br /> </td>
+   <td> initialSearch / is<br /> </td>
    <td> Booleano</td>
    <td> quando verdadeiro, a consulta é executada no carregamento da página<br /> </td>
   </tr>
@@ -165,14 +165,14 @@ Veja a seguir uma lista dos parâmetros de consulta do Editor de itens em massa:
 
 Esta seção fornece uma visão geral de como usar o Editor de itens em massa e fornece uma descrição do componente Geometrixx existente com base no Editor de itens em massa: o componente Lista de produtos.
 
-O componente Lista de produtos permite que os usuários exibam e editem uma tabela de dados. Por exemplo, você pode usar o componente Lista de produtos para representar produtos em um catálogo. As informações são apresentadas em uma tabela de HTML padrão e qualquer edição é executada no **Editar** que contém um dispositivo BulkEditor. (Este Editor de itens em massa é o mesmo que o acessível em /etc/importers/bulkeditor.html ou através do menu Ferramentas). O componente Lista de produtos foi configurado para funcionalidade específica e limitada do Editor de itens em massa. Cada parte do Editor de itens em massa (ou componentes derivados do Editor de itens em massa) pode ser configurada.
+O componente Lista de produtos permite que os usuários exibam e editem uma tabela de dados. Por exemplo, você pode usar o componente Lista de produtos para representar produtos em um catálogo. As informações são apresentadas em uma tabela de HTML padrão e qualquer edição é executada na caixa de diálogo **Editar**, que contém um widget BulkEditor. (Este Editor de itens em massa é o mesmo que o acessível em /etc/importers/bulkeditor.html ou através do menu Ferramentas). O componente Lista de produtos foi configurado para funcionalidade específica e limitada do Editor de itens em massa. Cada parte do Editor de itens em massa (ou componentes derivados do Editor de itens em massa) pode ser configurada.
 
 Com o Editor de itens em massa, você pode adicionar, modificar, excluir, filtrar e exportar as linhas, salvar modificações e importar um conjunto de linhas. Cada linha é armazenada como um nó na própria instância do componente Lista de produtos. Cada célula é uma propriedade de cada nó. Essa é uma opção de design e pode ser facilmente alterada. Por exemplo, você pode armazenar nós em outro lugar no repositório. A função do servlet de consulta é retornar a lista dos nós a serem exibidos; o caminho de pesquisa é definido como uma instância da Lista de produtos.
 
 O código-fonte do componente Lista de produtos está disponível no repositório em /apps/geometrixx/components/productlist e é composto por várias partes, como todos os componentes do Adobe Experience Manager (AEM):
 
 * Renderização de HTML: a renderização é feita em um arquivo JSP (/apps/geometrixx/components/productlist/productlist.jsp). O JSP lê os subnós do componente Lista de produtos atual e exibe cada um deles como uma linha de uma tabela HTML.
-* Caixa de diálogo de edição, que é onde você define a configuração do Editor de itens em massa. Configure a caixa de diálogo para corresponder às necessidades do componente: colunas disponíveis e possíveis ações executadas na grade ou na pesquisa. Consulte [Propriedades de configuração do Editor de itens em massa](#bulk-editor-configuration-properties) para obter informações sobre todas as propriedades de configuração.
+* Caixa de diálogo de edição, que é onde você define a configuração do Editor de itens em massa. Configure a caixa de diálogo para corresponder às necessidades do componente: colunas disponíveis e possíveis ações executadas na grade ou na pesquisa. Consulte [Propriedades de configuração do Editor em massa](#bulk-editor-configuration-properties) para obter informações sobre todas as propriedades de configuração.
 
 Aqui está uma representação XML dos subnós do diálogo:
 
@@ -433,7 +433,7 @@ Cada parte do Editor de itens em massa pode ser configurada. A tabela a seguir l
   </tr>
   <tr>
    <td>colsMetadata</td>
-   <td>Configuração de metadados da coluna. As possíveis propriedades são (aplicadas a todas as células da coluna): <br />
+   <td>Configuração de metadados da coluna. As propriedades possíveis são (aplicadas a todas as células da coluna): <br />
     <ul>
      <li>cellStyle: html style </li>
      <li>cellCls: classe css </li>
@@ -511,13 +511,13 @@ O exemplo a seguir pode ser encontrado no componente da lista de produtos (/apps
 
 **Caixa de seleção**
 
-Se a propriedade de configuração da caixa de seleção estiver definida como verdadeira, todas as células da coluna serão renderizadas como caixas de seleção. Uma caixa de seleção envia **true** ao servidor Salvar servlet, **false** caso contrário. No menu de cabeçalho, você também pode **selecionar tudo** ou **selecionar nenhum**. Essas opções serão ativadas se o cabeçalho selecionado for o cabeçalho de uma coluna de caixa de seleção.
+Se a propriedade de configuração da caixa de seleção estiver definida como verdadeira, todas as células da coluna serão renderizadas como caixas de seleção. Uma caixa marcada envia **true** para o servidor Salvar servlet, **false** caso contrário. No menu de cabeçalho, você também pode **selecionar tudo** ou **selecionar nenhum**. Essas opções serão ativadas se o cabeçalho selecionado for o cabeçalho de uma coluna de caixa de seleção.
 
 No exemplo anterior, a coluna de seleção contém apenas caixas de seleção como checkbox=&quot;true&quot;.
 
 **Posição forçada**
 
-Os metadados de posição forçada forcedPosition permitem especificar onde a coluna é colocada na grade: 0 é o primeiro lugar e &lt;number of=&quot;&quot; columns=&quot;&quot;>-1 é a última posição. Qualquer outro valor é ignorado.
+Os metadados de posição forçada forcedPosition permitem especificar onde a coluna é colocada na grade: 0 é a primeira posição e &lt;número de colunas>-1 é a última posição. Qualquer outro valor é ignorado.
 
 No exemplo anterior, a coluna de seleção é a primeira coluna como forcedPosition=&quot;0&quot;.
 
@@ -561,7 +561,7 @@ O conceito de servlet Salvar é que as modificações não são publicadas diret
 
 Cada propriedade atualizada é enviada para o servlet no seguinte formato:
 
-* Nome do parâmetro: &lt;jcr path=&quot;&quot;>/&lt;property name=&quot;&quot;>
+* Nome do parâmetro: &lt;caminho jcr>/&lt;nome da propriedade>
 
   Exemplo: /content/geometrixx/en/products/jcr:content/par/productlist/1258674859000/SellingSku
 
@@ -571,6 +571,6 @@ Cada propriedade atualizada é enviada para o servlet no seguinte formato:
 
 O servlet precisa saber onde a propriedade catalogCode está armazenada.
 
-Uma implementação padrão para Salvar servlet está disponível em /libs/wcm/bulkeditor/save/POST.jsp e é usada no componente Lista de produtos. São necessários todos os parâmetros da solicitação (com um &lt;jcr path=&quot;&quot;>/&lt;property name=&quot;&quot;> format) e grava as propriedades nos nós usando a API JCR. Também cria nó se eles não existirem (linhas inseridas na grade).
+Uma implementação padrão para Salvar servlet está disponível em /libs/wcm/bulkeditor/save/POST.jsp e é usada no componente Lista de produtos. Ele pega todos os parâmetros da solicitação (com um formato &lt;caminho jcr>/&lt;nome da propriedade>) e grava propriedades em nós usando a API JCR. Também cria nó se eles não existirem (linhas inseridas na grade).
 
-Não use o código padrão como está, pois ele reimplementa o que o servidor faz nativamente (um POST em &lt;jcr path=&quot;&quot;>/&lt;property name=&quot;&quot;>) e, portanto, é apenas um bom ponto de partida para criar um servlet Save que possa gerenciar um modelo de herança de propriedade.
+Não use o código padrão como está, pois ele reimplementa o que o servidor faz nativamente (um POST no &lt;caminho jcr>/&lt;nome da propriedade>) e, portanto, é apenas um bom ponto de partida para criar um servlet Save que possa gerenciar um modelo de herança de propriedade.

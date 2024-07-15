@@ -23,7 +23,7 @@ O ambiente de criação do AEM fornece vários mecanismos de pesquisa de conteú
 
 >[!NOTE]
 >
->Fora do ambiente de criação, outros mecanismos também estão disponíveis para pesquisa, como o [Construtor de consulta](/help/sites-developing/querybuilder-api.md) e [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
+>Fora do ambiente de criação, outros mecanismos também estão disponíveis para pesquisa, como o [Construtor de consultas](/help/sites-developing/querybuilder-api.md) e o [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
 
 ## Noções básicas de pesquisa {#search-basics}
 
@@ -35,7 +35,7 @@ Com o painel de pesquisa, você pode:
 
 * Procure por uma palavra-chave, um caminho ou uma tag específica.
 * Filtre de acordo com os critérios específicos dos recursos, como datas modificadas, status da página, tamanho do arquivo e assim por diante.
-* Definir e usar um [pesquisa salva](#saved-searches) - com base nos critérios acima referidos.
+* Defina e use uma [pesquisa salva](#saved-searches) - com base nos critérios acima.
 
 >[!NOTE]
 >
@@ -53,12 +53,12 @@ Para pesquisar e filtrar os recursos:
 
    ![screen_shot_2018-03-23at101445](assets/screen_shot_2018-03-23at101445.png)
 
-1. Se necessário, é possível remover o filtro de localização (selecione **X** no filtro que deseja remover) para pesquisar em todos os consoles/tipos de recursos.
+1. Se necessário, você pode remover o filtro de localização (selecione **X** no filtro que deseja remover) para pesquisar em todos os tipos de consoles/recursos.
 1. Os resultados são mostrados, agrupados de acordo com o console e o tipo de recurso relacionado.
 
    Você pode selecionar um recurso específico (para a ação adicional) ou detalhar selecionando o tipo de recurso desejado; por exemplo, **Exibir todos os sites**:
 
-   ![screen-shot_2019-03-05at101900](assets/screen-shot_2019-03-05at101900.png)
+   ![captura de tela_2019-03-05at101900](assets/screen-shot_2019-03-05at101900.png)
 
 1. Se desejar mais detalhes, selecione o símbolo do Painel (parte superior esquerda) para abrir o painel lateral **Filtros e opções**.
 
@@ -71,7 +71,7 @@ Para pesquisar e filtrar os recursos:
    * Pesquisas salvas
    * Diretório de pesquisa
    * Tags
-   * Critérios de pesquisa; por exemplo, Datas modificadas, Status de publicação, Status da Live Copy.
+   * Critérios de pesquisa; por exemplo, Datas modificadas, Status do Publish, Status da Live Copy.
 
    >[!NOTE]
    >
@@ -80,15 +80,15 @@ Para pesquisar e filtrar os recursos:
    >
    >
    >    * Dependendo do tipo de recurso selecionado; por exemplo, os critérios de Ativos e comunidades são compreensivelmente especializados.
-   >    * Sua instância como o [Pesquisar no Forms](/help/sites-administering/search-forms.md) pode ser personalizado (apropriado ao local dentro do AEM).
+   >    * Sua instância como o [Forms de Pesquisa](/help/sites-administering/search-forms.md) pode ser personalizada (adequada ao local dentro do AEM).
    >
    >
 
-   ![screen-shot_2019-03-05at102509](assets/screen-shot_2019-03-05at102509.png)
+   ![captura de tela_2019-03-05at102509](assets/screen-shot_2019-03-05at102509.png)
 
 1. Você também pode adicionar outros termos de pesquisa:
 
-   ![screen-shot_2019-03-05at102613](assets/screen-shot_2019-03-05at102613.png)
+   ![captura de tela_2019-03-05at102613](assets/screen-shot_2019-03-05at102613.png)
 
 1. Feche a **Pesquisa** com o **X** (canto superior direito).
 
@@ -104,15 +104,15 @@ Além de pesquisar por uma grande variedade de aspectos, também é possível sa
 
 1. Defina seus critérios de pesquisa e clique em **Salvar**.
 
-   ![screen-shot_2019-03-05at102613-1](assets/screen-shot_2019-03-05at102613-1.png)
+   ![captura de tela_2019-03-05at102613-1](assets/screen-shot_2019-03-05at102613-1.png)
 
 1. Atribua um nome, em seguida, use **Salvar** para confirmar:
 
-   ![screen-shot_2019-03-05at102725](assets/screen-shot_2019-03-05at102725.png)
+   ![captura de tela_2019-03-05at102725](assets/screen-shot_2019-03-05at102725.png)
 
 1. Sua pesquisa salva estará disponível no seletor da próxima vez que você acessar o painel de pesquisa:
 
-   ![screen-shot_2019-03-05at102927](assets/screen-shot_2019-03-05at102927.png)
+   ![captura de tela_2019-03-05at102927](assets/screen-shot_2019-03-05at102927.png)
 
 1. Depois de salvo, é possível:
 
@@ -121,4 +121,4 @@ Além de pesquisar por uma grande variedade de aspectos, também é possível sa
 
 As pesquisas salvas podem ser modificadas ao selecionar a pesquisa salva e clicar em **Editar pesquisa salva** na parte inferior do painel de pesquisa.
 
-![screen-shot_2019-03-05at103010](assets/screen-shot_2019-03-05at103010.png)
+![captura de tela_2019-03-05at103010](assets/screen-shot_2019-03-05at103010.png)

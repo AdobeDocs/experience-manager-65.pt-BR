@@ -21,7 +21,7 @@ ht-degree: 6%
 >
 >A Adobe recomenda o uso do Editor SPA para projetos que exigem renderização no lado do cliente baseada em estrutura de aplicativo de página única (por exemplo, React). [Saiba mais](/help/sites-developing/spa-overview.md).
 
-O conteúdo do Adobe Experience Manager (AEM) pode ser facilmente renderizado por meio de [Sling Default Servlets](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) para renderizar [JSON](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html#default-json-rendering) e outros formatos.
+O conteúdo do Adobe Experience Manager (AEM) pode ser facilmente renderizado por meio dos [Servlets Padrão de Sling](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) para renderizar o [JSON](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html#default-json-rendering) e outros formatos.
 
 Essas renderizações prontas para uso normalmente orientam o repositório e retornam o conteúdo como está.
 
@@ -35,7 +35,7 @@ O diagrama a seguir mostra a renderização dos serviços de conteúdo.
 
 ## Solicitação de JSON {#requesting-json}
 
-Uso **&lt;resource.caas span=&quot;&quot; id=&quot;1&quot; translate=&quot;no&quot; />.[&lt;export-config span=&quot;&quot; id=&quot;0&quot; translate=&quot;no&quot; />.][&lt;export-config span=&quot;&quot; id=&quot;0&quot; translate=&quot;no&quot; />.json** para solicitar JSON.]
+Use **&lt;RESOURCE.caas[.&lt;EXPORT-CONFIG][.&lt;EXPORT-CONFIG].json** para solicitar JSON.
 
 <table>
  <tbody>
@@ -45,11 +45,11 @@ Uso **&lt;resource.caas span=&quot;&quot; id=&quot;1&quot; translate=&quot;no&qu
   </tr>
   <tr>
    <td>EXPORT-CONFIG</td>
-   <td><p><strong>OPCIONAL</strong><br /> </p> <p>uma configuração de exportação foi encontrada em /apps/mobileapps/caas/exportConfigs/EXPORT-CONFIG<br /> <br /> Se omitido, a configuração de exportação padrão é aplicada </p> </td>
+   <td><p><strong>OPCIONAL</strong><br /> </p> <p>uma configuração de exportação foi encontrada em /apps/mobileapps/caas/exportConfigs/EXPORT-CONFIG<br /> <br /> Se omitida, a configuração de exportação padrão será aplicada </p> </td>
   </tr>
   <tr>
    <td>DEPTH-INT</td>
-   <td><strong>OPCIONAL</strong><br /> <br /> recursão de profundidade para renderização de filhos, conforme usado na renderização de Sling</td>
+   <td><strong>OPCIONAL</strong><br /> <br /> recursão de profundidade para renderização de filhos conforme usado na renderização de Sling</td>
   </tr>
  </tbody>
 </table>
@@ -108,7 +108,7 @@ A tabela a seguir mostra as propriedades das Configurações de Exportação:
    <td>String[]</td>
    <td>incluir tudo</td>
    <td>Nomes de propriedades</td>
-   <td><p>se excludePropertyPrefixes estiver definido<br /> inclui propriedades especificadas apesar de corresponderem ao prefixo que está sendo excluído,</p> <p>else (excluir propriedades ignoradas) incluir somente estas propriedades</p> </td>
+   <td><p>se excludePropertyPrefixes definido como <br />, isso inclui propriedades especificadas, apesar de corresponder ao prefixo que está sendo excluído,</p> <p>else (excluir propriedades ignoradas) incluir somente estas propriedades</p> </td>
   </tr>
   <tr>
    <td>includeChildren</td>
@@ -128,7 +128,7 @@ A tabela a seguir mostra as propriedades das Configurações de Exportação:
    <td>renameProperties</td>
    <td>String[]<br /> <br /> </td>
    <td>não renomear</td>
-   <td>&lt;actual_property_name&gt;,&lt;replacement_property_name&gt;</td>
+   <td>&lt;nome_da_propriedade_real&gt;,&lt;nome_da_propriedade_de_substituição&gt;</td>
    <td>renomear propriedades usando substituições</td>
   </tr>
  </tbody>
@@ -154,11 +154,11 @@ A tabela a seguir mostra as propriedades:
    <td><strong>Descrição</strong></td>
   </tr>
   <tr>
-   <td>&lt;SELECTOR_TO_INC&gt;</td>
+   <td>&lt;SELETOR_TO_INC&gt;</td>
    <td>String[] </td>
    <td>-</td>
    <td>sling:resourceType</td>
-   <td>Para os seguintes tipos de recursos sling, não retorne a exportação json CaaS padrão.<br /> Retorne uma exportação json do cliente renderizando o recurso como;<br /> &lt;resource&gt;.&lt;selector_to_inc&gt;.json </td>
+   <td>Para os seguintes tipos de recursos sling, não retorne a exportação json CaaS padrão.<br /> Retorne uma exportação json do cliente renderizando o recurso como;<br /> &lt;RESOURCE&gt;.&lt;SELETOR_TO_INC&gt;.json </td>
   </tr>
  </tbody>
 </table>
@@ -174,7 +174,7 @@ Os Content Services incluem duas configurações de exportação:
 
 A configuração de exportação padrão do Content Services é aplicada se uma configuração for especificada no URI solicitado.
 
-&lt;resource>.caas[.&lt;depth-int>].json
+&lt;RESOURCE>.caas[.&lt;DEPTH-INT>].json
 
 <table>
  <tbody>
@@ -192,7 +192,7 @@ A configuração de exportação padrão do Content Services é aplicada se uma 
   </tr>
   <tr>
    <td>includeProperties</td>
-   <td>jcr:texto,texto<br /> jcr:título,título<br /> jcr:description,description<br /> jcr:lastModified,lastModified<br /> cq:tags,tags<br /> cq:lastModified,lastModified</td>
+   <td>jcr:text,text<br /> jcr:title,title<br /> jcr:description,description<br /> jcr:lastModified,lastModified<br /> cq:tags,tags<br /> cq:lastModified,lastModified</td>
   </tr>
   <tr>
    <td>includeComponents</td>
@@ -221,7 +221,7 @@ A configuração de exportação padrão do Content Services é aplicada se uma 
 
 Essa configuração estende o padrão para incluir o agrupamento de filhos em um nó filho.
 
-&lt;site_page>.caas.page[.&lt;depth-int>].json
+&lt;PÁGINA_SITE>.caas.page[.&lt;DEPTH-INT>].json
 
 ### Recursos adicionais {#additional-resources}
 

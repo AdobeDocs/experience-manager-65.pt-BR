@@ -33,11 +33,11 @@ Para aplicar um layout personalizado a um campo, faça o seguinte:
 
 ### Personalizar o layout de um único campo {#customize-layout-of-a-single-field}
 
-1. Abra o formulário no **Estilo** modo. Para abrir o formulário no modo de estilo, selecione na barra de ferramentas da página ![tela suspensa](assets/canvas-drop-down.png) > **Estilo**.
-1. Na barra lateral, em **Objetos de formulário**, selecione o campo e selecione o botão editar ![botão editar](assets/edit-button.png).
+1. Abra o formulário no modo **Estilo**. Para abrir o formulário no modo de estilo, na barra de ferramentas da página, selecione ![tela suspensa](assets/canvas-drop-down.png) > **Estilo**.
+1. Na barra lateral, em **Objetos de Formulário**, selecione o campo e selecione o botão de edição ![botão de edição](assets/edit-button.png).
 1. Selecione o estado do campo que deseja personalizar e especifique o estilo desse estado.
 
-   ![Especificação do estilo em linha de um campo](assets/edit-error-state.png)
+   ![Especificando o estilo em linha de um campo](assets/edit-error-state.png)
 
 ### Personalizar o layout de todos os campos de um formulário {#customize-layout-of-all-the-fields-of-a-form}
 
@@ -46,12 +46,12 @@ Com o AEM Forms, agora é possível criar um tema e aplicá-lo ao formulário. O
 Crie um tema usando o Editor de temas para personalizar o layout de todos os campos no formulário. Depois de criar um tema, execute as seguintes etapas para aplicá-lo a um formulário:
 
 1. Abra o formulário no modo de edição.
-1. No modo de edição, selecione um componente e selecione ![nível de campo](assets/field-level.png) > **Contêiner de formulário adaptável** e selecione ![cmppr](assets/cmppr.png).
+1. No modo de edição, selecione um componente e, em seguida, selecione ![nível do campo](assets/field-level.png) > **Contêiner de formulário adaptável** e selecione ![cmppr](assets/cmppr.png).
 1. Na barra lateral, em Tema do formulário adaptável, selecione o tema criado usando o Editor de temas.
 
 ## Criar um layout de campo personalizado {#create-a-custom-field-layout}
 
-1. Abra o CRXDE Lite. O URL padrão é https://&#39;[server]:[porta]&quot;/crx/de.
+1. Abra o CRXDE Lite. A URL padrão é https://&#39;[server]:[port]&#39;/crx/de.
 1. Copie um layout de campo do nó /libs/fd/af/layouts/field (Por exemplo, defaultFieldLayout) para o nó /apps (Por exemplo, /apps/af-field-layout).
 1. Renomeie o nó copiado e o arquivo defaultFieldLayout.jsp. Por exemplo, errorOnRight.jsp.
 
@@ -81,7 +81,7 @@ Crie um tema usando o Editor de temas para personalizar o layout de todos os cam
    ```
 
 1. Para aprimorar a aparência e o comportamento, inclua a biblioteca do cliente criada no arquivo de layout (errorOnRight.jsp).
-1. Abra a caixa de diálogo de edição do campo e selecione a **Estilo** guia. No **Configurar layout do campo** selecione o layout recém-criado e clique em **OK**.
+1. Abra a caixa de diálogo de edição do campo e selecione a guia **Estilo**. Na caixa suspensa **Configurar Layout do Campo**, selecione o layout recém-criado e clique em **OK**.
 
 O pacote ErrorOnRight.zip contém o código para mostrar mensagens de erro no lado direito dos campos.
 

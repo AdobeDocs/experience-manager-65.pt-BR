@@ -28,7 +28,7 @@ Estende CQ_Analytics.PersistedSessionStore.
 
 #### getRegisteredStore(name) {#getregisteredstore-name}
 
-Retorna um armazenamento de sessão de um nome especificado. Consulte também [Acessar um armazenamento de sessão](/help/sites-developing/client-context.md#accessing-session-stores).
+Retorna um armazenamento de sessão de um nome especificado. Consulte também [Acessando um Repositório de Sessão](/help/sites-developing/client-context.md#accessing-session-stores).
 
 **Parâmetros**
 
@@ -36,7 +36,7 @@ Retorna um armazenamento de sessão de um nome especificado. Consulte também [A
 
 **Devoluções**
 
-Um objeto CQ_Analytics.SessionStore que representa o armazenamento de sessão do nome fornecido. Devoluções `null` quando não existe armazenamento com o nome fornecido.
+Um objeto CQ_Analytics.SessionStore que representa o armazenamento de sessão do nome fornecido. Retorna `null` quando não existe nenhum armazenamento com o nome fornecido.
 
 #### register(sessionstore) {#register-sessionstore}
 
@@ -52,7 +52,7 @@ Nenhum valor retornado.
 
 ## CQ_Analytics.ClientContextUtils {#cq-analytics-clientcontextutils}
 
-Fornece métodos para escuta da ativação e registro do armazenamento de sessão. Consulte também [Verificando se um Armazenamento de Sessão está Definido e Inicializado](/help/sites-developing/client-context.md#checking-that-a-session-store-is-defined-and-initialized).
+Fornece métodos para escuta da ativação e registro do armazenamento de sessão. Consulte também [Verificação de Definição e Inicialização de um Repositório de Sessão](/help/sites-developing/client-context.md#checking-that-a-session-store-is-defined-and-initialized).
 
 ### Métodos {#methods-1}
 
@@ -70,7 +70,7 @@ Por exemplo, um armazenamento de sessão é baseado em um objeto JSON e recupera
 * O armazenamento é pré-preenchido com valores padrão (propriedades init), mas a solicitação falha (tempo limite). Há apenas uma inicialização com valores padrão.
 * O armazenamento é preenchido previamente
 
-Quando o atraso estiver definido como `true` Por vários milissegundos, o método aguarda antes de chamar o método de retorno de chamada. Se outro evento de inicialização for acionado antes que o atraso seja passado, ele aguardará até que o tempo de atraso seja excedido sem nenhum evento de inicialização. Isso permite aguardar um segundo evento de inicialização ser acionado e chama a função de retorno de chamada no caso ideal.
+Quando o atraso é definido como `true` ou vários milissegundos, o método aguarda antes de chamar o método de retorno de chamada. Se outro evento de inicialização for acionado antes que o atraso seja passado, ele aguardará até que o tempo de atraso seja excedido sem nenhum evento de inicialização. Isso permite aguardar um segundo evento de inicialização ser acionado e chama a função de retorno de chamada no caso ideal.
 
 **Parâmetros**
 
@@ -84,7 +84,7 @@ Nenhum valor retornado.
 
 #### onStoreRegistered(storeName, retorno de chamada) {#onstoreregistered-storename-callback}
 
-Registra uma função de retorno de chamada que é chamada quando um armazenamento de sessão é registrado. O evento register ocorre quando um armazenamento é registrado para [CQ_Analytics.ClientContextMgr](#cq-analytics-clientcontextmgr).
+Registra uma função de retorno de chamada que é chamada quando um armazenamento de sessão é registrado. O evento de registro ocorre quando um armazenamento é registrado no [CQ_Analytics.ClientContextMgr](#cq-analytics-clientcontextmgr).
 
 **Parâmetros**
 
@@ -97,7 +97,7 @@ Nenhum valor retornado.
 
 ## CQ_Analytics.JSONPStore {#cq-analytics-jsonpstore}
 
-Um armazenamento de sessão não persistente que contém dados JSON. Os dados são recuperados de um serviço JSONP externo. Use o `getInstance` ou `getRegisteredInstance` para criar uma ocorrência dessa classe.
+Um armazenamento de sessão não persistente que contém dados JSON. Os dados são recuperados de um serviço JSONP externo. Use o método `getInstance` ou `getRegisteredInstance` para criar uma instância dessa classe.
 
 Estende CQ_Analytics.JSONStore.
 
@@ -192,11 +192,11 @@ Estende CQ_Analytics.SessionStore.
 
 #### STOREKEY {#storekey}
 
-A chave que identifica o armazenamento. Use o `getInstance` para recuperar esse valor.
+A chave que identifica o armazenamento. Use o método `getInstance` para recuperar esse valor.
 
 #### STORENAME {#storename}
 
-O nome do armazenamento. Use o `getInstance` para recuperar esse valor.
+O nome do armazenamento. Use o método `getInstance` para recuperar esse valor.
 
 ### Métodos {#methods-3}
 
@@ -241,7 +241,7 @@ Um objeto que representa os dados do armazenamento no formato JSON.
 
 #### init() {#init}
 
-Limpa o armazenamento de sessão e o inicializa com a propriedade de inicialização. Define o sinalizador de inicialização como `true` e, em seguida, aciona o `initialize` e `update` eventos.
+Limpa o armazenamento de sessão e o inicializa com a propriedade de inicialização. Define o sinalizador de inicialização como `true` e dispara os eventos `initialize` e `update`.
 
 **Parâmetros**
 
@@ -303,7 +303,7 @@ Aciona eventos e permite que outros objetos ouçam esses eventos e reajam. As cl
 
 #### addListener(evento, fato, escopo) {#addlistener-event-fct-scope}
 
-Registra um ouvinte para um evento. Consulte também [Criando um Listener para Reagir a uma Atualização de Repositório de Sessão](/help/sites-developing/client-context.md#creating-a-listener-to-react-to-a-session-store-update).
+Registra um ouvinte para um evento. Consulte também [Criando um Ouvinte para Reagir a uma Atualização de Repositório de Sessão](/help/sites-developing/client-context.md#creating-a-listener-to-react-to-a-session-store-update).
 
 **Parâmetros**
 
@@ -417,11 +417,11 @@ Estende `CQ_Analytics.PersistedSessionStore`.
 
 #### STOREKEY {#storekey-1}
 
-A chave que identifica o armazenamento. Use o `getInstance` para recuperar esse valor.
+A chave que identifica o armazenamento. Use o método `getInstance` para recuperar esse valor.
 
 #### STORENAME {#storename-1}
 
-O nome do armazenamento. Use o `getInstance` para recuperar esse valor.
+O nome do armazenamento. Use o método `getInstance` para recuperar esse valor.
 
 ### Métodos {#methods-6}
 
@@ -514,11 +514,11 @@ O valor padrão é `key`.
 
 Consulte CQ_Analytics.SessionStore para obter os métodos herdados.
 
-Quando os métodos herdados `clear`, `setProperty`, `setProperties`, `removeProperty` são usados para alterar os dados de armazenamento, as alterações são automaticamente persistentes, a menos que as propriedades alteradas sejam sinalizadas como notPersisted.
+Quando os métodos herdados `clear`, `setProperty`, `setProperties`, `removeProperty` são usados para alterar os dados do repositório, as alterações são automaticamente persistidas, a menos que as propriedades alteradas sejam sinalizadas como notPersisted.
 
 #### getStoreKey() {#getstorekey}
 
-Recupera o `STOREKEY` propriedade.
+Recupera a propriedade `STOREKEY`.
 
 **Parâmetros**
 
@@ -526,7 +526,7 @@ Nenhum
 
 **Devoluções**
 
-O valor de `STOREKEY` propriedade.
+O valor da propriedade `STOREKEY`.
 
 #### isPersisted(name) {#ispersisted-name}
 
@@ -538,15 +538,15 @@ Determina se uma propriedade de dados é persistente.
 
 **Devoluções**
 
-Um valor booleano de `true` se a propriedade for persistente, e um valor de `false` se o valor não for uma propriedade persistente.
+Um valor booliano de `true` se a propriedade for persistente, e um valor de `false` se o valor não for uma propriedade persistente.
 
 #### persist() {#persist}
 
-Persiste no armazenamento de sessão. O modo de persistência padrão usa o navegador `localStorage` usar `ClientSidePersistence` como o nome ( `window.localStorage.set("ClientSidePersistance", store);`)
+Persiste no armazenamento de sessão. O modo de persistência padrão usa o navegador `localStorage` usando `ClientSidePersistence` como o nome ( `window.localStorage.set("ClientSidePersistance", store);`)
 
 Se localStorage não estiver disponível ou não for gravável, o armazenamento será mantido como uma propriedade da janela.
 
-Aciona o `persist` evento após a conclusão.
+Aciona o evento `persist` após a conclusão.
 
 **Parâmetros**
 
@@ -558,11 +558,11 @@ Nenhum valor retornado.
 
 #### redefinir(deferEvent) {#reset-deferevent}
 
-Remove todas as propriedades de dados do armazenamento e mantém o armazenamento. Opcionalmente, o não aciona o `udpate` evento após a conclusão.
+Remove todas as propriedades de dados do armazenamento e mantém o armazenamento. Opcionalmente, não aciona o evento `udpate` após a conclusão.
 
 **Parâmetros**
 
-* deferEvent: um valor de true impede que o `update` evento de ser disparado. Um valor de `false` faz com que o evento de atualização seja disparado.
+* deferEvent: um valor true impede que o evento `update` seja acionado. Um valor de `false` faz com que o evento de atualização seja disparado.
 
 **Devoluções**
 
@@ -625,7 +625,7 @@ Nenhum valor de retorno.
 
 #### getData(excluded) {#getdata-excluded}
 
-Retorna os dados da loja. Opcionalmente, exclui propriedades de nomes dos dados. Chama o `init` se a propriedade data do armazenamento não existir.
+Retorna os dados da loja. Opcionalmente, exclui propriedades de nomes dos dados. Chama o método `init` se a propriedade de dados do repositório não existir.
 
 **Parâmetros**
 
@@ -645,7 +645,7 @@ Recupera o valor de uma propriedade de dados.
 
 **Devoluções**
 
-O valor da propriedade data. Devoluções `null` se o armazenamento de sessão não contiver nenhuma propriedade do nome especificado.
+O valor da propriedade data. Retorna `null` se o repositório de sessão não contiver nenhuma propriedade do nome especificado.
 
 #### getName() {#getname}
 
@@ -661,7 +661,7 @@ Um valor String que representa o nome do armazenamento.
 
 #### getProperty(name, raw) {#getproperty-name-raw}
 
-Retorna o valor de uma propriedade. O valor é retornado como a propriedade bruta ou o valor filtrado por XSS. Chama o `init` se a propriedade data do armazenamento não existir.
+Retorna o valor de uma propriedade. O valor é retornado como a propriedade bruta ou o valor filtrado por XSS. Chama o método `init` se a propriedade de dados do repositório não existir.
 
 **Parâmetros**
 
@@ -674,7 +674,7 @@ O valor da propriedade data.
 
 #### getPropertyNames(excluída) {#getpropertynames-excluded}
 
-Retorna os nomes das propriedades que o armazenamento de sessão contém. Chama o `init` se a propriedade data do armazenamento não existir.
+Retorna os nomes das propriedades que o armazenamento de sessão contém. Chama o método `init` se a propriedade de dados do repositório não existir.
 
 **Parâmetros**
 
@@ -698,7 +698,7 @@ este
 
 #### init() {#init-1}
 
-Marca o armazenamento como inicializado e aciona o `initialize` evento.
+Marca o armazenamento como inicializado e aciona o evento `initialize`.
 
 **Parâmetros**
 
@@ -718,7 +718,7 @@ Nenhum.
 
 **Devoluções**
 
-Um valor de `true` se o armazenamento for inicializado e um valor de `false` se o armazenamento não for inicializado.
+Um valor de `true` se o armazenamento for inicializado, e um valor de `false` se o armazenamento não for inicializado.
 
 #### loadInitProperties(obj, setValues) {#loadinitproperties-obj-setvalues}
 
@@ -735,7 +735,7 @@ Nenhum valor retornado.
 
 #### removeProperty(nome) {#removeproperty-name}
 
-Remove uma propriedade do armazenamento de sessão. Aciona o `update` evento após a conclusão. Chama o `init` se a propriedade data do armazenamento não existir.
+Remove uma propriedade do armazenamento de sessão. Aciona o evento `update` após a conclusão. Chama o método `init` se a propriedade de dados do repositório não existir.
 
 **Parâmetros**
 
@@ -747,7 +747,7 @@ Nenhum valor retornado.
 
 #### reset() {#reset}
 
-Restaura os valores iniciais do armazenamento de dados. A implementação padrão simplesmente remove todos os dados. Aciona o `update` evento após a conclusão.
+Restaura os valores iniciais do armazenamento de dados. A implementação padrão simplesmente remove todos os dados. Aciona o evento `update` após a conclusão.
 
 **Parâmetros**
 
@@ -759,7 +759,7 @@ Nenhum valor retornado.
 
 #### setProperties(propriedades) {#setproperties-properties}
 
-Define os valores de várias propriedades. Aciona o `update` evento após a conclusão. Chama o `init` se a propriedade data do armazenamento não existir.
+Define os valores de várias propriedades. Aciona o evento `update` após a conclusão. Chama o método `init` se a propriedade de dados do repositório não existir.
 
 **Parâmetros**
 
@@ -771,7 +771,7 @@ Nenhum valor retornado.
 
 #### setProperty(nome, valor) {#setproperty-name-value}
 
-Define o valor de uma propriedade. Aciona o `update` evento após a conclusão. Chama o `init` se a propriedade data do armazenamento não existir.
+Define o valor de uma propriedade. Aciona o evento `update` após a conclusão. Chama o método `init` se a propriedade de dados do repositório não existir.
 
 **Parâmetros**
 

@@ -79,7 +79,7 @@ Se você desejar usar o Sistema de estilos em seus próprios componentes, faça 
 
    ![Sistema de estilos do autor](assets/style-system-author.png)
 
-1. Clique em **Estilos** na barra de ferramentas do **Lista** para abrir o menu estilo e alterar a aparência do componente.
+1. Clique no botão **Estilos** na barra de ferramentas do componente **Lista** para abrir o menu de estilos e alterar a aparência do componente.
 
    ![Seleção de estilos](assets/style-system-author2.png)
 
@@ -89,7 +89,7 @@ Se você desejar usar o Sistema de estilos em seus próprios componentes, faça 
 
 ### Como autor de modelo  {#as-a-template-author}
 
-1. Ao editar a página inicial principal no idioma inglês da WKND em `http://<host>:<port>/sites.html/content/wknd/language-masters/en`, edite o modelo da página pelo **Informações da página > Editar modelo**.
+1. Ao editar a página inicial mestra no idioma inglês do WKND em `http://<host>:<port>/sites.html/content/wknd/language-masters/en`, edite o modelo da página em **Informações da página > Editar modelo**.
 
    ![Editar modelo](assets/style-system-edit-template.png)
 
@@ -110,7 +110,7 @@ Se você desejar usar o Sistema de estilos em seus próprios componentes, faça 
 
 >[!CAUTION]
 >
->As classes CSS (e qualquer JavaScript necessário) configuradas como propriedades de estilo da política de um componente devem ser implantadas como [Bibliotecas de clientes](/help/sites-developing/clientlibs.md) para trabalhar.
+>As classes CSS (e qualquer JavaScript necessário) configuradas como propriedades de estilo da política de um componente devem ser implantadas como [Bibliotecas de Clientes](/help/sites-developing/clientlibs.md) para funcionarem.
 
 ## Configurar {#setup}
 
@@ -159,4 +159,4 @@ Essa propriedade é definida no nó `cq:Component`. Por exemplo:
 
 Essa capacidade de definir nomes de estilo é útil para componentes muito genéricos, como o Contêiner de layout ou o componente de Fragmento do conteúdo, para oferecer-lhes significado adicional.
 
-Por exemplo, permite que um Contêiner de layout receba uma semântica como `<main>`, `<aside>`, `<nav>`e assim por diante.
+Por exemplo, permite que um Contêiner de layout receba uma semântica como `<main>`, `<aside>`, `<nav>` e assim por diante.

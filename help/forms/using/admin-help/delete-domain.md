@@ -23,4 +23,4 @@ Use a página Gerenciamento de domínio para marcar um domínio existente como o
 Se você criar um domínio com o mesmo nome de um domínio excluído, o domínio excluído será reintegrado junto com as informações contidas. O domínio DefaultDom não pode ser excluído.
 
 1. No console de administração, clique em **[!UICONTROL Configurações > Gerenciamento de usuários > Gerenciamento de domínio]**.
-1. Marque a caixa de seleção do domínio a ser excluído e clique em **[!UICONTROL Excluir]** e clique em **[!UICONTROL OK]**.
+1. Marque a caixa de seleção do domínio a ser excluído, clique em **[!UICONTROL Excluir]** e em **[!UICONTROL OK]**.

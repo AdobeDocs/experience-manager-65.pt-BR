@@ -18,7 +18,7 @@ ht-degree: 1%
 
 # Convenções de nomenclatura para testes de ativos{#naming-conventions-for-assets-testing}
 
-Os nós no repositório estão sujeitos às convenções de nomenclatura da [Repositório de conteúdo Java](/help/sites-developing/the-basics.md#java-content-repository). No entanto, o Adobe Experience Manager impõe mais convenções para o nome dos nós de ativos.
+Os nós no repositório estão sujeitos às convenções de nomenclatura do [Repositório de conteúdo Java](/help/sites-developing/the-basics.md#java-content-repository). No entanto, o Adobe Experience Manager impõe mais convenções para o nome dos nós de ativos.
 
 ## IU Clássica {#classic-ui}
 

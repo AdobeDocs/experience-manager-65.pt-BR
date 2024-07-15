@@ -1,6 +1,6 @@
 ---
 title: Amostras de código
-description: A equipe de serviços de consultoria da Adobe gerou uma série de amostras de código da Adobe Experience Manager.
+description: A Equipe de serviços da Adobe Consulting gerou uma série de amostras de código do Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -18,7 +18,7 @@ ht-degree: 5%
 
 # Amostras de código{#code-samples}
 
-A Equipe de serviços de consultoria do Adobe gerou uma série de amostras de código do Adobe Experience Manager (AEM). Essas amostras são pedaços de código bem comentados para ajudar os desenvolvedores de AEM a entender os componentes-chave do AEM. As amostras estão disponíveis aqui: [https://adobe-consulting-services.github.io/acs-aem-samples/](https://adobe-consulting-services.github.io/acs-aem-samples/).
+A Equipe de serviços da Adobe Consulting gerou uma série de amostras de código do Adobe Experience Manager (AEM). Essas amostras são pedaços de código bem comentados para ajudar os desenvolvedores de AEM a entender os componentes-chave do AEM. Os exemplos estão disponíveis aqui: [https://adobe-consulting-services.github.io/acs-aem-samples/](https://adobe-consulting-services.github.io/acs-aem-samples/).
 
 Um tutorial em várias partes projetado para desenvolvedores novos no AEM que aborda tópicos fundamentais como configuração de projeto, Componentes principais, Modelos editáveis, Bibliotecas de clientes e desenvolvimento de componentes: [Introdução ao AEM Sites - Tutorial do WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=pt-BR)
 

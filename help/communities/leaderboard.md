@@ -20,7 +20,7 @@ ht-degree: 4%
 
 Esta página fornece as informações essenciais para trabalhar com o recurso de quadro de classificação.
 
-Antes de incluir o componente de quadro de classificação em uma página, é necessário configurar [Pontuação e medalhas das comunidades](implementing-scoring.md).
+Antes de incluir o componente de quadro de classificação em uma página, é necessário configurar a [Pontuação e as medalhas das comunidades](implementing-scoring.md).
 
 Consulte [Fundamentos de pontuação e medalhas](configure-scoring.md).
 
@@ -50,7 +50,7 @@ Consulte [Fundamentos de pontuação e medalhas](configure-scoring.md).
   </tr>
   <tr>
    <td><strong> propriedades</strong></td>
-   <td>Consulte <a href="enabling-leaderboard.md">Recurso de quadro de classificação</a></td>
+   <td>Consulte <a href="enabling-leaderboard.md">Recurso do quadro de classificação</a></td>
   </tr>
  </tbody>
 </table>
@@ -59,4 +59,4 @@ Consulte [Fundamentos de pontuação e medalhas](configure-scoring.md).
 
 ### Função da biblioteca de arquivo {#file-library-function}
 
-Uma estrutura de site da comunidade que inclui o [Função de placar de líderes](functions.md#leaderboard-function), inclui um configurado `leaderboard` componente.
+Uma estrutura de site de comunidade que inclui a [função de quadro de classificação](functions.md#leaderboard-function), inclui um componente `leaderboard` configurado.

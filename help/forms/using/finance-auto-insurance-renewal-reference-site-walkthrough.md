@@ -37,7 +37,7 @@ O cenário do aplicativo We.Finance AutoInsurance é uma narração visual para 
 
 ### Gloria envia uma comunicação de renovação da apólice de seguro da We.Finance {#gloria-sends-an-insurance-policy-renewal-communication-from-we-finance}
 
-Gloria entra na instância AEM, clica em **Renovação de seguro automático,** e, em seguida, cliques **Abrir IU do agente**. O clique preenche o documento de seguro com detalhes da apólice de Sarah Rose. Gloria clicks **Enviar** e uma mensagem é exibida na tela &quot;Envio iniciado&quot; e depois, em alguns segundos, &quot;Enviado com êxito&quot;.
+Gloria faz logon na instância do AEM, clica em **Renovação de Seguro Automático** e clica em **Abrir IU do Agente**. O clique preenche o documento de seguro com detalhes da apólice de Sarah Rose. Gloria clica em **Enviar** e uma mensagem é exibida na tela &quot;Envio iniciado&quot; e depois, em alguns segundos, &quot;Enviado com êxito&quot;.
 
 Sarah recebe um e-mail com o assunto &quot;Sua renovação de seguro automóvel&quot;.
 
@@ -45,15 +45,15 @@ Sarah recebe um e-mail com o assunto &quot;Sua renovação de seguro automóvel&
 
 #### Veja você mesmo {#see-it-yourself}
 
-Ir para **Adobe Experience Manager** > **Forms** > **Forms e documentos** > **We.Finance** > **Seguro Automático**. Selecione a renovação do seguro automático **comunicação interativa** e clique em **Abrir IU do agente**. A comunicação interativa é aberta na interface do usuário do agente. Insira um endereço de email válido para que eles possam receber o email com o documento de política anexado e clique em Enviar.
+Vá para **Adobe Experience Manager** > **Forms** > **Forms e Documentos** > **We.Finance** > **Seguro Automático**. Selecione a **comunicação interativa** de Renovação de Seguro Automático e clique em **Abrir Interface do Usuário do Agente**. A comunicação interativa é aberta na interface do usuário do agente. Insira um endereço de email válido para que eles possam receber o email com o documento de política anexado e clique em Enviar.
 
-Você pode acessar e revisar a comunicação interativa Renovação de seguro automático diretamente do `https://[authorHost]: authorPort]/aem/formdetails.html/content/dam/formsanddocuments/we-finance/autoinsurance/auto-insurance-renewal.`
+Você pode acessar e revisar a comunicação interativa Renovação de Seguro Automático diretamente de `https://[authorHost]: authorPort]/aem/formdetails.html/content/dam/formsanddocuments/we-finance/autoinsurance/auto-insurance-renewal.`
 
 ### Sarah recebe uma comunicação de renovação da apólice de seguro da We.Finance e decide renovar {#sarah-receives-an-insurance-policy-renewal-communication-from-we-finance-and-decides-to-renew}
 
 Sarah recebe um e-mail com um anexo da We.Finance, lembrando Sarah que sua apólice de Seguro Automático está prestes a expirar. O anexo é a versão impressa da carta do seguro automático da Sarah.
 
-Cliques de Sarah **Renovar agora** e é direcionado para a versão da Web de sua carta de Seguro Automático. Além desta carta, Sarah encontra a quantidade de tempo restante para sua política antes que ela expire. A página fornece a Sarah uma visão geral básica de seus detalhes da Apólice de seguro, como Número da apólice, Quantia devida e outras informações, como ofertas de desconto e recompensas de fidelidade. Sarah novamente clica **Renovar agora** na parte inferior da política.
+Sarah clica em **Renovar agora** e é direcionada para a versão da Web de sua carta de Seguro automático. Além desta carta, Sarah encontra a quantidade de tempo restante para sua política antes que ela expire. A página fornece a Sarah uma visão geral básica de seus detalhes da Apólice de seguro, como Número da apólice, Quantia devida e outras informações, como ofertas de desconto e recompensas de fidelidade. Sarah clica novamente em **Renovar agora** na parte inferior da política.
 
 ![ref1](assets/ref1.png)
 
@@ -65,13 +65,13 @@ O botão Renovar agora no email está vinculado ao aplicativo Renovação autom�
 
 #### Veja você mesmo {#see-it-yourself-1}
 
-Você deve ter recebido um email com uma PDF anexada. O PDF é uma versão impressa da sua carta de Seguro Automático. Clique em **Renovar agora** para acessar a versão da política na web. Verifique suas informações pessoais e detalhes da política e clique em **Renovar agora** que leva você a outra Comunicação interativa.
+Você deve ter recebido um email com uma PDF anexada. O PDF é uma versão impressa da sua carta de Seguro Automático. Clique em **Renovar Agora** para acessar a versão da política da Web. Verifique suas informações pessoais e os detalhes da política e clique em **Renovar Agora**, que leva você a outra Comunicação Interativa.
 
-A variável **Renovar agora** botão no e-mail direciona Sarah para a política na web. Você pode visitar o seguinte URL:
+O botão **Renovar agora** no email direciona Sarah para a política na Web. Você pode visitar o seguinte URL:
 
 `https://[authorServer]:[authorPort]/content/document.html?schema=fdm&documentId=/content/forms/af/we-finance/autoinsurance/auto-insurance-renewal/channels/web.html&customerId=1`
 
-Você pode verificar o resumo detalhado da Renovação do seguro automático e clicar em **Renovar agora** na parte inferior da página.
+Você pode verificar o resumo detalhado de sua Renovação de seguro automático e clicar em **Renovar agora** na parte inferior da página.
 
 ### Sarah chega à página de pagamento {#sarah-reaches-the-payment-page}
 
@@ -83,7 +83,7 @@ O botão Renovar agora direciona Sarah para a página de pagamento. A página de
 
 #### Veja você mesmo {#see-it-yourself-2}
 
-Clique em **Renovar agora** para acessar a página Pagamento. Preencha as informações do cartão de crédito e clique em **Efetuar pagamento**.
+Clique em **Renovar Agora** para acessar a página Pagamento. Preencha as informações do seu cartão de crédito e clique em **Efetuar Pagamento**.
 
 Você pode acessar a página de pagamento na instância de criação em
 
@@ -91,7 +91,7 @@ Você pode acessar a página de pagamento na instância de criação em
 
 ### Sarah faz o pagamento e conclui o processo {#sarah-makes-the-payment-and-completes-the-process}
 
-Sarah preenche os detalhes do seu cartão de crédito e cliques **Efetuar pagamento**.
+Sarah preenche os detalhes do seu Cartão de Crédito e clica em **Fazer Pagamento**.
 
 #### Como funciona {#how-it-works-2}
 

@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Introdução ao Process Reporting{#introduction-to-process-reporting}
 
-![relatório de processo](assets/process-reporting.png)
+![relatório-processo](assets/process-reporting.png)
 
 Relatórios de processos é uma ferramenta baseada em navegador usada para criar e exibir relatórios sobre processos e tarefas do AEM Forms.
 
@@ -38,7 +38,7 @@ O Process Reporting é construído em módulos que:
 
 ### Relatório sempre ativo {#always-on-reporting}
 
-![gerenciamento de site](assets/site-management.png)
+![gerenciamento de sites](assets/site-management.png)
 
 Visualize a lista de processos de longa execução, gráficos de duração do processo e executar consultas personalizadas usando filtros.
 
@@ -46,7 +46,7 @@ Process Reporting também oferece a opção de exportar o relatório e consultar
 
 ### Relatórios Ad Hoc {#adhoc-reports}
 
-![print-&amp;-color](assets/print-&-colour.png)
+![impressão-&amp;-cor](assets/print-&-colour.png)
 
 Use filtros para obter uma visualização específica dos seus dados.
 

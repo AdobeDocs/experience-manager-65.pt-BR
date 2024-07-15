@@ -26,14 +26,14 @@ ht-degree: 0%
 >
 >Os clientes de aplicativos móveis do Adobe Experience Manager (AEM) que estão migrando do AEM 6.2 ou 6.3 para o AEM 6.5 podem continuar a usar os aplicativos da AEM Mobile baixando um pacote do Compartilhamento de pacotes. No entanto, as novas instalações do AEM 6.5 não oferecem suporte à funcionalidade de aplicativos do AEM Mobile.
 
-O AEM Mobile faz parte da plataforma digital multicanal do Adobe Experience Manager que também usa o AEM Assets, Sites, Screens, Workflow, User Manager, Commerce e Forms. O AEM Mobile oferece flexibilidade de implantação notável, permitindo que as empresas usem várias fontes de conteúdo.
+O AEM Mobile faz parte da plataforma digital multicanal do Adobe Experience Manager que também usa o AEM Assets, Sites, Screens, Fluxo de trabalho, Gerenciador de usuários, Commerce e Forms. O AEM Mobile oferece flexibilidade de implantação notável, permitindo que as empresas usem várias fontes de conteúdo.
 
 O AEM Mobile oferece vários métodos para criar aplicativos. As três maneiras diferentes de criar aplicativos são:
 
-* **[Uso dos serviços por demanda com AEM](/help/mobile/getting-started-aem-mobile-on-demand.md)**
-* **[Uso de serviços por demanda sem AEM](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html)**
-* **[Uso do Adobe PhoneGap Enterprise com AEM](/help/mobile/getting-started-aem-mobile-phonegap.md)**
+* **[Usando serviços por demanda com AEM](/help/mobile/getting-started-aem-mobile-on-demand.md)**
+* **[Usando serviços por demanda sem AEM](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html)**
+* **[Usando o Adobe PhoneGap Enterprise com AEM](/help/mobile/getting-started-aem-mobile-phonegap.md)**
 
 >[!NOTE]
 >
->Se você é novo no Adobe Experience Manager, talvez queira apresentar [Introdução ao AEM](/help/sites-deploying/deploy.md).
+>Se você é novo no Adobe Experience Manager, talvez queira percorrer a [Introdução ao AEM](/help/sites-deploying/deploy.md).

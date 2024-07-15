@@ -35,38 +35,38 @@ Atualmente, as medalhas que um membro da comunidade ganha, ou é atribuído, apa
 
 No ambiente de criação, navegue até o console Emblemas:
 
-* Na navegação global: **[!UICONTROL Ferramentas]** > **[!UICONTROL Communities]** > **[!UICONTROL Medalhas]**
+* Da navegação global: **[!UICONTROL Ferramentas]** > **[!UICONTROL Comunidades]** > **[!UICONTROL Medalhas]**
 
 Esse console exibe os emblemas disponíveis no momento e a partir dos quais novos emblemas podem ser adicionados.
 
-![badges-homepage](assets/badges-homepage.png)
+![medalhas-página inicial](assets/badges-homepage.png)
 
 ## Criar selo {#create-badge}
 
-Um símbolo é criado ao fazer upload de uma imagem adequadamente pequena (72 dpi com uma altura variando de 26 a 32 pixels) e fornecer um nome. A imagem do selo é armazenada no repositório em `/libs/settings/community/badging/images` e é replicado automaticamente para o ambiente de publicação.
+Um símbolo é criado ao fazer upload de uma imagem adequadamente pequena (72 dpi com uma altura variando de 26 a 32 pixels) e fornecer um nome. A imagem do selo é armazenada no repositório em `/libs/settings/community/badging/images` e é replicada automaticamente para o ambiente de publicação.
 
-Se o ambiente de publicação for um farm de editores, será necessário configurar [sincronização de usuário](/help/communities/sync.md).
+Se o ambiente de publicação for um farm de editores, será necessário configurar a [sincronização de usuário](/help/communities/sync.md).
 
-![create-badge](assets/create-badge.png)
+![criar-selo](assets/create-badge.png)
 
 * **Fazer upload de imagem**
 
-  (*Obrigatório*) Uma imagem de selo com um tamanho recomendado de 32 x 32 pixels a 72 dpi no formato JPEG ou PNG.
+  (*Obrigatório*) Uma imagem de selo com tamanho recomendado de 32 x 32 pixels a 72 dpi em formato JPEG ou PNG.
 
 * **Nome**
 
-  (*Obrigatório*) O nome do selo. É o padrão `Display Name` e o nome do nó de repositório. Se a variável `Name` não é um nome de nó de repositório válido, ele foi modificado.
+  (*Obrigatório*) O nome do selo. É o `Display Name` padrão e o nome do nó do repositório. Se `Name` não for um nome de nó de repositório válido, ele será modificado.
 
 * **Nome de exibição**
 
-  (*Opcional*) O nome a ser exibido para o selo na interface. O padrão é o texto inalterado inserido para o `Name`.
+  (*Opcional*) O nome a ser exibido para o selo na interface do usuário. O padrão é o texto inalterado inserido para `Name`.
 
 * **Descrição**
 
-  (*Opcional*) Uma descrição para o selo.
+  (*Opcional*) Uma descrição para a medalha.
 
 ## Informações adicionais {#additional-information}
 
-Para obter detalhes sobre como configurar regras de pontuação e medalha, consulte [Pontuação e medalhas](/help/communities/implementing-scoring.md).
+Para obter detalhes sobre a configuração das regras de pontuação e medalha, consulte [Pontuação e medalhas](/help/communities/implementing-scoring.md).
 
-Para gerenciar selos para membros, consulte [Console de membros](/help/communities/members.md).
+Para gerenciar selos para membros, consulte [Console de Membros](/help/communities/members.md).

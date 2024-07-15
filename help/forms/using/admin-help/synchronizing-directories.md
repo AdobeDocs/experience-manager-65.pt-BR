@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Sincronização de diretórios {#synchronizing-directories}
 
-Para sincronizar domínios, você pode optar por fazer uma sincronização manual ou programada. A *sincronização manual* sincroniza todos os domínios selecionados. A *sincronização agendada* sincroniza todos os domínios.
+Para sincronizar domínios, você pode optar por fazer uma sincronização manual ou programada. Uma *sincronização manual* sincroniza todos os domínios selecionados. Uma *sincronização agendada* sincroniza todos os domínios.
 
 A sincronização de diretórios é usada para extrair detalhes dos servidores de diretórios especificados nas configurações de diretório para o banco de dados de Gerenciamento de Usuários. Posteriormente, você também poderá fazer uma sincronização manual se ocorrerem alterações ou atualizações nos servidores de diretório. Por exemplo, você pode fazer uma sincronização manual se usuários e grupos forem adicionados ou se forem feitas alterações na conta de um usuário.
 
@@ -36,7 +36,7 @@ Você também pode especificar se deseja enviar informações de usuário e grup
 
 >[!NOTE]
 >
->Adobe® LiveCycle® Content Services ES (Obsoleto) é um sistema de gerenciamento de conteúdo instalado com o LiveCycle. Ele permite que os usuários projetem, gerenciem, monitorem e otimizem processos centrados no ser humano. O suporte aos Content Services (obsoleto) termina em 31/12/2014. Consulte [documento do ciclo de vida do produto Adobe](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html).
+>Adobe® LiveCycle® Content Services ES (Obsoleto) é um sistema de gerenciamento de conteúdo instalado com o LiveCycle. Ele permite que os usuários projetem, gerenciem, monitorem e otimizem processos centrados no ser humano. O suporte aos Content Services (obsoleto) termina em 31/12/2014. Consulte o [documento sobre o ciclo de vida do produto do Adobe](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html).
 
 ## Habilitar a sincronização do diretório delta {#enable-delta-directory-synchronization}
 
@@ -54,7 +54,7 @@ O Gerenciamento de Usuários executa as seguintes etapas quando a sincronizaçã
 
 1. No console de administração, clique em Configurações > Gerenciamento de usuários > Gerenciamento de domínio.
 1. Em Sincronização delta, marque a caixa de seleção e clique em Salvar.
-1. Edite as definições de diretório para cada um dos domínios enterprise que usarão o recurso de sincronização de diretório delta. Nas páginas Configurações do usuário e Configurações do grupo, localize a configuração Modificar carimbo de data e hora e digite `modify TimeStamp` como o valor. Para obter detalhes sobre a edição de domínios enterprise, consulte [Edição e conversão de domínios existentes](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains).
+1. Edite as definições de diretório para cada um dos domínios enterprise que usarão o recurso de sincronização de diretório delta. Nas páginas Configurações de Usuário e Configurações de Grupo, localize a configuração Modificar Carimbo de Data/Hora e digite `modify TimeStamp` como o valor. Para obter detalhes sobre como editar domínios corporativos, consulte [Editar e converter domínios existentes](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains).
 
 ## Habilitar ou desabilitar o log detalhado durante a sincronização {#enable-or-disable-detailed-logging-during-synchronization}
 

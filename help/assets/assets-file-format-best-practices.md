@@ -1,6 +1,6 @@
 ---
 title: Práticas recomendadas para processar os formatos de arquivo compatíveis
-description: Práticas recomendadas para processar os vários tipos de arquivos compatíveis usando o [!DNL Experience Manager Assets].
+description: Práticas recomendadas para processar os vários tipos de arquivos com suporte usando o  [!DNL Experience Manager Assets].
 contentOwner: AG
 role: Admin
 feature: Asset Management,Developer Tools
@@ -13,23 +13,23 @@ ht-degree: 0%
 
 ---
 
-# Práticas recomendadas de formato de arquivo de ativos {#assets-file-format-best-practices}
+# Práticas recomendadas para o formato de arquivo Assets {#assets-file-format-best-practices}
 
-[!DNL Adobe Experience Manager Assets] O oferece suporte a muitas bibliotecas de formato de arquivo proprietárias e de terceiros para atender aos diversos requisitos de suporte de arquivos dos usuários. As bibliotecas de Adobe compatíveis incluem, [!DNL Adobe Camera Raw], Gibson, Adobe PDF Rasterizer e [!DNL Adobe InDesign Server]. Além disso, [!DNL Experience Manager Assets] O é compatível com bibliotecas de terceiros, incluindo [!DNL ImageMagick], [!DNL TwelveMonkeys]e assim por diante.
+O [!DNL Adobe Experience Manager Assets] oferece suporte a muitas bibliotecas de formatos de arquivo proprietárias e de terceiros para atender a diversos requisitos de suporte de arquivos dos usuários. As bibliotecas de Adobe compatíveis incluem, [!DNL Adobe Camera Raw], Gibson, Adobe PDF Rasterizer e [!DNL Adobe InDesign Server]. Além disso, o [!DNL Experience Manager Assets] oferece suporte a bibliotecas de terceiros, incluindo [!DNL ImageMagick], [!DNL TwelveMonkeys] e assim por diante.
 
-Para obter os formatos de arquivo compatíveis, consulte [Formatos de ativos compatíveis](/help/assets/assets-formats.md).
+Para obter os formatos de arquivo compatíveis, consulte [formatos compatíveis com o Assets](/help/assets/assets-formats.md).
 
 >[!TIP]
 >
->Se você estiver usando [!DNL Experience Manager] no Adobe Managed Services (AMS), entre em contato com o Suporte ao cliente do Adobe se planejar processar muitos arquivos PSD ou PSB grandes. Trabalhe com o representante do Suporte ao cliente da Adobe para implementar essas práticas recomendadas para a implantação do AMS e escolher as melhores ferramentas e modelos possíveis para os formatos proprietários do Adobe. [!DNL Experience Manager] O não pode processar arquivos PSB de resolução muito alta com mais de 30.000 x 23.000 pixels.
+>Se você estiver usando o [!DNL Experience Manager] no Adobe Managed Services (AMS), entre em contato com o Suporte ao cliente do Adobe se planejar processar muitos arquivos PSD ou PSB grandes. Trabalhe com o representante do Suporte ao cliente da Adobe para implementar essas práticas recomendadas para a implantação do AMS e escolher as melhores ferramentas e modelos possíveis para os formatos proprietários do Adobe. O [!DNL Experience Manager] pode não processar arquivos PSB de resolução muito alta com mais de 30.000 x 23.000 pixels.
 
-## [!DNL Adobe Camera Raw] biblioteca {#adobe-camera-raw-library}
+## Biblioteca [!DNL Adobe Camera Raw] {#adobe-camera-raw-library}
 
-Para obter o desempenho ideal, o Adobe recomenda o uso de [!DNL Adobe Camera Raw] para arquivos RAW e DNG.
+Para um desempenho ideal, o Adobe recomenda o uso da biblioteca [!DNL Adobe Camera Raw] para arquivos RAW e DNG.
 
-[!DNL Adobe Camera Raw] A biblioteca é compatível com o perfil de cores CMYK como entrada. No entanto, gera a saída no espaço de cores RGB e suporta a saída apenas no formato JPEG. Ele não retém o espaço de cores do arquivo de origem (por exemplo, CMYK) nas miniaturas.
+A biblioteca [!DNL Adobe Camera Raw] oferece suporte ao perfil de cores CMYK como entrada. No entanto, gera a saída no espaço de cores RGB e suporta a saída apenas no formato JPEG. Ele não retém o espaço de cores do arquivo de origem (por exemplo, CMYK) nas miniaturas.
 
-Para obter mais informações, consulte [Suporte Camera Raw](/help/assets/camera-raw.md).
+Para obter mais informações, consulte [Camera Raw suporte](/help/assets/camera-raw.md).
 
 ## Biblioteca do Adobe PDF Rasterizer {#adobe-pdf-rasterizer-library}
 
@@ -43,13 +43,13 @@ Miniaturas e visualizações geradas usando o PDF Rasterizer têm melhor qualida
 
 ## [!DNL Adobe InDesign Server] {#adobe-indesign-server}
 
-O Adobe recomenda usar [!DNL Adobe InDesign Server] para extrair [!DNL Adobe InDesign]representações específicas do, como IDML e HTML. Para obter mais informações, consulte [Adicionar ativos Experience Manager como referências no Adobe InDesign](/help/assets/managing-linked-subassets.md#refai).
+A Adobe recomenda o uso de [!DNL Adobe InDesign Server] para extrair representações específicas de [!DNL Adobe InDesign], como IDML e HTML. Para obter mais informações, consulte [Adicionando ativos Experience Manager como referências no Adobe InDesign](/help/assets/managing-linked-subassets.md#refai).
 
 ## [!DNL Dynamic Media] {#dynamic-media}
 
-[!DNL Dynamic Media] gera e fornece várias variações de conteúdo avançado em tempo real por meio de sua rede global, dimensionável e otimizada para desempenho. Ele fornece experiências de visualização interativa e simplifica o processo de gerenciamento de campanhas digitais. Para obter detalhes sobre como ativar [!DNL Dynamic Media], consulte [Configuração do Dynamic Media](/help/assets/config-dynamic.md).
+O [!DNL Dynamic Media] gera e fornece várias variações de conteúdo avançado em tempo real por meio de sua rede global, escalável e otimizada para desempenho. Ele fornece experiências de visualização interativa e simplifica o processo de gerenciamento de campanhas digitais. Para obter detalhes sobre como habilitar [!DNL Dynamic Media], consulte [Configurando o Dynamic Media](/help/assets/config-dynamic.md).
 
-Atualmente, [!DNL Dynamic Media] O pode aceitar vídeos com até 15 GB de conteúdo por arquivo.
+Atualmente, o [!DNL Dynamic Media] pode oferecer suporte a vídeos de até 15 GB de conteúdo por arquivo.
 
 ## Biblioteca ImageMagick {#imagemagick-library}
 
@@ -60,7 +60,7 @@ A Adobe recomenda usar a biblioteca ImageMagick nos seguintes cenários:
 * Para preservar a transparência.
 * Para processar arquivos PSD e PSB.
 
-Para saber como configurar o [!DNL ImageMagick] biblioteca em [!DNL Experience Manager], consulte [Utilização do ImageMagick](/help/assets/media-handlers.md#an-example-using-imagemagick). Para obter o uso ideal, consulte [Práticas recomendadas para a configuração do ImageMagick](/help/assets/best-practices-for-imagemagick.md).
+Para saber como configurar a biblioteca [!DNL ImageMagick] no [!DNL Experience Manager], consulte [Usando o ImageMagick](/help/assets/media-handlers.md#an-example-using-imagemagick). Para obter o uso ideal, consulte [Práticas recomendadas para configurar o ImageMagick](/help/assets/best-practices-for-imagemagick.md).
 
 ## Biblioteca de transcodificação de imagens {#image-transcoding-library}
 
@@ -76,4 +76,4 @@ A Biblioteca de Transcodificação de Imagens é compatível com os seguintes ti
 * ICO
 * ICN
 
-Para obter detalhes, consulte [Biblioteca de transcodificação de imagem](/help/assets/imaging-transcoding-library.md).
+Para obter detalhes, consulte [Biblioteca de Transcodificação de Imagens](/help/assets/imaging-transcoding-library.md).

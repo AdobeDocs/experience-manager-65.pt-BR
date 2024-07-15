@@ -26,20 +26,20 @@ O controle de versão cria um “instantâneo” de uma página em um momento es
 
 É possível criar uma versão do recurso usando:
 
-* o [Painel da linha do tempo](#creating-a-new-version-timeline)
-* o [Criar](#creating-a-new-version-create-with-a-selected-resource) opção (quando um recurso é selecionado)
+* o [painel Linha do tempo](#creating-a-new-version-timeline)
+* a opção [Criar](#creating-a-new-version-create-with-a-selected-resource) (quando um recurso estiver selecionado)
 
 ### Criar uma nova versão - Linha do tempo {#creating-a-new-version-timeline}
 
 1. Navegue para mostrar a página para a qual você deseja criar uma versão.
 1. Selecione a página no [modo de seleção](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
-1. Abra o **Linha do tempo** coluna.
+1. Abra a coluna **Linha do Tempo**.
 1. Clique na ponta da seta no campo de comentário para revelar as opções:
 
-   ![Linha do tempo - Salvar como versão](assets/screen-shot_2019-03-05at112335.png)
+   ![Linha do Tempo - Salvar como Versão](assets/screen-shot_2019-03-05at112335.png)
 
 1. Selecione **Salvar como versão**.
-1. Insira um **Rótulo** e **Comentário** se necessário.
+1. Insira um **Rótulo** e **Comentário**, se necessário.
 
    ![Criar versão - adicionar rótulo e comentário](assets/chlimage_1-42.png)
 
@@ -51,8 +51,8 @@ O controle de versão cria um “instantâneo” de uma página em um momento es
 
 1. Navegue para mostrar a página para a qual você deseja criar uma versão.
 1. Selecione a página no [modo de seleção](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
-1. Selecione o **Criar** opção na barra de ferramentas para abrir a caixa de diálogo.
-1. Na caixa de diálogo, você pode inserir um **Rótulo** e uma **Comentário**, se necessário:
+1. Selecione a opção **Criar** na barra de ferramentas para abrir a caixa de diálogo.
+1. Na caixa de diálogo, você pode inserir um **Rótulo** e um **Comentário**, se necessário:
 
    ![Insira um rótulo e um comentário](assets/screen_shot_2012-02-15at105050am.png)
 
@@ -167,7 +167,7 @@ Esse método pode ser usado para restaurar uma versão de uma árvore, por exemp
 1. Abra a coluna **Linha do tempo** e selecione **Mostrar tudo** ou **Versões**.
 1. As versões da página são listadas. Selecione a versão que deseja visualizar:
 
-   ![Selecionar a versão para visualizar](assets/screen-shot_2019-03-05at112505-1.png)
+   ![Selecione a versão para visualizar](assets/screen-shot_2019-03-05at112505-1.png)
 
 1. Selecione **Visualizar**. A página é exibida em uma nova guia.
 
@@ -186,9 +186,9 @@ Para comparar uma versão anterior com a página atual:
 1. Abra a coluna **Linha do tempo** e selecione **Mostrar tudo** ou **Versões**.
 1. As versões da página são listadas. Selecione a versão que deseja comparar:
 
-   ![Versões de página listadas - selecionar versão](assets/screen-shot_2019-03-05at112505-2.png)
+   ![Versões de página listadas - selecione a versão](assets/screen-shot_2019-03-05at112505-2.png)
 
-1. Selecione **Comparar com a atual**. A variável [diff de página](/help/sites-authoring/page-diff.md) abre para exibir as diferenças.
+1. Selecione **Comparar com a atual**. A [página diff](/help/sites-authoring/page-diff.md) é aberta para exibir as diferenças.
 
 ## Timewarp   {#timewarp}
 
@@ -201,7 +201,7 @@ O Timewarp é um recursos criado para simular o estado *publicado* de uma págin
 A criação de conteúdo é um processo contínuo e colaborativo. O objetivo do Timewarp é permitir que os autores rastreiem o site publicado ao longo do tempo, para ajudá-los a entender como o conteúdo mudou. Esse recurso usa as versões de página para determinar o estado do ambiente de publicação:
 
 * O sistema procura a versão da página que estava ativa no momento selecionado.
-   * Esta versão da página foi criada/ativada *antes* o ponto no tempo selecionado no Timewarp.
+   * Esta versão da página foi criada/ativada *antes* do momento selecionado no Timewarp.
 * Ao navegar para uma página que foi excluída, isso também é renderizado - desde que as versões antigas da página ainda estejam disponíveis no repositório.
 * Se nenhuma versão publicada for encontrada, o Timewarp reverterá para o estado atual da página no ambiente de criação (para evitar um erro de página/404, que impediria a navegação).
 
@@ -211,15 +211,15 @@ O Timewarp é um [modo](/help/sites-authoring/author-environment-tools.md#page-m
 
 1. Inicie o editor da página em que deseja iniciar o Timewarp e selecione o modo **Timewarp**.
 
-   ![Selecionar Timewarp na seleção de modo](assets/wwpv-01.png)
+   ![Selecione o Timewarp na seleção de modo](assets/wwpv-01.png)
 
-1. Na caixa de diálogo, defina uma data e hora de destino e clique em **Definir data**. Se você não selecionar uma hora, a hora atual será usada como padrão.
+1. Na caixa de diálogo, defina uma data e hora de destino e clique em **Definir Data**. Se você não selecionar uma hora, a hora atual será usada como padrão.
 
-   ![Definir data](assets/wwpv-02.png)
+   ![Definir Data](assets/wwpv-02.png)
 
 1. A página é exibida com base no conjunto de datas. O modo Timewarp é indicado por meio da barra de status azul na parte superior da janela. Use os links na barra de status para selecionar uma nova data de destino ou sair do modo Timewarp.
 
-   ![Indicador do Timewarp](assets/wwpv-03.png)
+   ![Indicador de Timewarp](assets/wwpv-03.png)
 
 ### Limitações do Timewarp {#timewarp-limitations}
 
@@ -231,7 +231,7 @@ O Timewarp se esforça ao máximo para reproduzir uma página em um ponto seleci
 
 * **O Timewarp é somente leitura** - não é possível editar a versão antiga da página. Ela só está disponível para exibição. Se quiser restaurar a versão mais antiga, faça isso manualmente usando [restaurar](#reverting-to-a-page-version).
 
-* **O Timewarp é baseado apenas no conteúdo da página** - Se os elementos para renderizar o site foram alterados, a exibição será diferente da original, pois esses itens não têm controle de versão no repositório. Esses elementos incluem código, css, ativos/imagens, entre outros.
+* **O Timewarp é baseado apenas no conteúdo da página** - Se os elementos para renderização do site foram alterados, a exibição será diferente da original, pois esses itens não têm controle de versão no repositório. Esses elementos incluem código, css, ativos/imagens, entre outros.
 
 >[!CAUTION]
 >

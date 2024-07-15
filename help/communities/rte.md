@@ -22,15 +22,15 @@ ht-degree: 3%
 
 Um Editor de Rich Text (RTE) permite inserir texto com marcação.
 
-Para componentes das Comunidades, embora semelhantes ao [editor de rich text no ambiente do autor](../../help/sites-authoring/rich-text-editor.md), afeta o texto inserido no ambiente de publicação.
+Para componentes das Comunidades, embora semelhante ao [editor de rich text no ambiente de criação](../../help/sites-authoring/rich-text-editor.md), afeta o texto inserido no ambiente de publicação.
 
-![rich-text-editor](assets/rich-text-editor.png)
+![editor de rich text](assets/rich-text-editor.png)
 
 ## Ativação do editor de rich text {#enabling-rich-text-editor}
 
-Os componentes das comunidades que permitem conteúdo gerado pelo usuário (UGC) podem ser habilitados para permitir RTE. Se o componente foi adicionado a uma página ou incluído em um [função](functions.md), o RTE pode ou não estar ativado por padrão.
+Os componentes das comunidades que permitem conteúdo gerado pelo usuário (UGC) podem ser habilitados para permitir RTE. Se o componente foi adicionado a uma página ou incluído em uma [função](functions.md), o RTE pode ou não estar habilitado por padrão.
 
-Se não estiver ativado, basta inserir [modo de edição do autor](sites-console.md#authoring-site-content), selecione o componente para edição e selecione o `Rich Text Editor` caixa de seleção
+Se não estiver habilitado, basta entrar no [modo de edição do autor](sites-console.md#authoring-site-content), selecionar o componente para edição e marcar a caixa de seleção `Rich Text Editor`.
 
 O RTE está disponível para os seguintes componentes do Communities:
 
@@ -45,9 +45,9 @@ O RTE está disponível para os seguintes componentes do Communities:
 
 ## Personalização {#customization}
 
-A personalização do editor de rich text é possível, pois a implementação é baseada em [CKEditor](https://ckeditor.com/).
+A personalização do editor de rich text é possível, pois a implementação é baseada no [CKEditor](https://ckeditor.com/).
 
-A configuração atual dos componentes do Communities está em `cq.social.  scf   clientlib`, no repositório em
+A configuração atual dos componentes das Comunidades está no `cq.social.  scf   clientlib`, no repositório em
 
 `/libs/clientlibs/social/commons/scf/ckrte.js`
 
@@ -61,7 +61,7 @@ Para adicionar as opções de hiperlink à barra de ferramentas:
 
 * Adicione uma barra de ferramentas chamada &quot; `links`&quot;
    * `{ name: 'links', items: [ 'Link','Unlink','Anchor' ] }`
-* Selecionar **[!UICONTROL Salvar tudo]**
+* Selecione **[!UICONTROL Salvar tudo]**
 
 #### /libs/clientlibs/social/commons/scf/ckrte.js {#libs-clientlibs-social-commons-scf-ckrte-js}
 

@@ -25,18 +25,18 @@ O AEM Forms permite alterar o título de uma pasta. O título não é o mesmo qu
 
 Você pode criar uma pasta no AEM Forms de uma das seguintes maneiras:
 
-* Faça upload de um arquivo ZIP contendo ativos na estrutura de pastas desejada (Consulte [Obtenção de documentos XDP e PDF no AEM Forms](/help/forms/using/get-xdp-pdf-documents-aem.md))
+* Carregue um arquivo ZIP contendo ativos na estrutura de pastas desejada (Consulte [Obtendo documentos XDP e PDF no AEM Forms](/help/forms/using/get-xdp-pdf-documents-aem.md))
 
 * Criar uma pasta vazia
 
 1. Faça logon na interface do usuário do AEM Forms em `https://<server>:<port>/aem/forms.html`.
 1. Navegue até o local em que deseja criar uma pasta.
-1. Clique em ![aem6forms_add](assets/aem6forms_add.png) na barra de ferramentas e selecione **[!UICONTROL Criar pasta]**.
+1. Clique no ícone ![aem6forms_add](assets/aem6forms_add.png) na barra de ferramentas e selecione **[!UICONTROL Criar pasta]**.
 
 1. Insira os seguintes detalhes:
 
-   * **Título:** Nome de exibição da pasta
-   * **Nome:** *(Obrigatório)* O nome do nó sob o qual você deseja armazenar a pasta no repositório
+   * **Título:** Nome para exibição da pasta
+   * **Nome:** *(Obrigatório)* O nome do nó no qual você deseja armazenar a pasta no repositório
 
    >[!NOTE]
    >
@@ -46,11 +46,11 @@ Você pode criar uma pasta no AEM Forms de uma das seguintes maneiras:
 
    Uma nova pasta com o título definido é exibida no local atual na lista de ativos.
 
-   Se existir uma pasta com o nome especificado, o envio falha com um erro. Você pode exibir a mensagem de erro passando o cursor do mouse sobre ele ![aem6forms_error_alert](assets/aem6forms_error_alert.png) ícone que aparece ao lado do campo de nome.
+   Se existir uma pasta com o nome especificado, o envio falha com um erro. Você pode exibir a mensagem de erro passando o cursor do mouse sobre o ícone de erro ![aem6forms_error_alert](assets/aem6forms_error_alert.png) que aparece ao lado do campo de nome.
 
 ### Editar o título da pasta {#edit-the-folder-title-br}
 
 1. Selecione a pasta cujo título deseja editar.
-1. Clique no botão de edição ![aem6forms_edit](assets/aem6forms_edit.png) na barra de ferramentas.
+1. Clique no ícone de edição ![aem6forms_edit](assets/aem6forms_edit.png) na barra de ferramentas.
 1. Insira o novo título. O campo de texto é pré-preenchido com o valor atual do título da pasta. Você pode alterá-lo para um novo valor.
 1. Clique em **[!UICONTROL Enviar].**

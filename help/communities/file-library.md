@@ -26,11 +26,11 @@ O recurso de biblioteca de arquivos fornece um local para visitantes conectados 
 Esta seção da documentação descreve:
 
 * Adicionando o recurso de biblioteca de arquivos a um site AEM.
-* Definições de configuração para o `File Library` componente.
+* Definições de configuração para o componente `File Library`.
 
 ### Adicionar uma biblioteca de arquivos a uma página {#adding-a-file-library-to-a-page}
 
-Para adicionar um `File Library` para uma página no modo de autor, localize o componente:
+Para adicionar um componente `File Library` a uma página no modo de autor, localize o componente:
 
 * `Communities / File Library`
 
@@ -38,23 +38,23 @@ E arraste-o para o local em uma página.
 
 Para obter as informações necessárias, visite [Noções básicas sobre componentes das comunidades](/help/communities/basics.md).
 
-Quando a variável [bibliotecas obrigatórias do lado do cliente](/help/communities/essentials-file-library.md#essentials-for-client-side) são incluídos, é assim que a `File Library` é exibido:
+Quando as [bibliotecas obrigatórias do lado do cliente](/help/communities/essentials-file-library.md#essentials-for-client-side) são incluídas, é assim que o componente `File Library` aparece:
 
-![file-library1](assets/file-library1.png)
+![biblioteca-de-arquivos1](assets/file-library1.png)
 
 ### Configuração da biblioteca de arquivos {#configuring-file-library}
 
-Selecione o colocado `File Library` para que você possa acessar e selecionar o `Configure` ícone que abre a caixa de diálogo de edição.
+Selecione o componente `File Library` inserido para que você possa acessar e selecionar o ícone `Configure` que abre a caixa de diálogo de edição.
 
-![configure-new](assets/configure-new.png)
+![configurar-novo](assets/configure-new.png)
 
-![file-library2](assets/file-library2.png)
+![biblioteca-de-arquivos2](assets/file-library2.png)
 
 #### Guia Comentários {#comments-tab}
 
-No **Comentários** especifique se e como os comentários dos arquivos carregados serão exibidos:
+Na guia **Comentários**, especifique se e como os comentários dos arquivos carregados serão exibidos:
 
-* **Permitir comentários em arquivos**
+* **Permitir comentários nos arquivos**
 
   Se marcado, permite comentários nos arquivos carregados. O padrão está desmarcado.
 
@@ -62,15 +62,15 @@ No **Comentários** especifique se e como os comentários dos arquivos carregado
 
   Limita o número de comentários exibidos por página e o número de respostas exibidas. O padrão é **10**.
 
-* **Tamanho máximo do arquivo**
+* **Tamanho máx. do arquivo**
 
   Esse valor limita o tamanho do arquivo carregado. O limite padrão é 104857600 (10 MB).
 
-* **Comprimento máximo da mensagem**
+* **Comprimento Máximo da Mensagem**
 
   Número máximo de caracteres que podem ser inseridos na caixa de texto. O padrão é 4.096 caracteres.
 
-* **Tipos de arquivo permitidos**
+* **Tipos de arquivos permitidos**
 
   Uma lista separada por vírgulas de extensões de arquivo com o separador &quot;ponto&quot;. Por exemplo, .jpg, .jpeg, .png, .doc, .docx, .pdf. Se algum tipo de arquivo for especificado, os tipos de arquivo não especificados não serão permitidos. O padrão não é especificado, de modo que todos os tipos de arquivos sejam permitidos.
 
@@ -100,17 +100,17 @@ No **Comentários** especifique se e como os comentários dos arquivos carregado
 
 * **Permitir acompanhamento**
 
-  Se marcado, inclui o seguinte recurso para artigos de blog, que permite que membros sejam [notificado](/help/communities/notifications.md) de novos posts. O padrão está desmarcado.
+  Se marcado, inclui o seguinte recurso para artigos de blog, o que permite que os membros sejam [notificados](/help/communities/notifications.md) sobre novos posts. O padrão está desmarcado.
 
-* **Ativar a menção**
+* **Habilitar menção**
 
   Se ativado, permite que os usuários registrados da comunidade identifiquem outros membros registrados (usando nome, sobrenome, nome de usuário) e marquem-nos usando a sintaxe comum @user-name. Os usuários marcados recebem notificações sobre suas menções.
 
-* **Max Mentions**
+* **Máximo de menções**
 
   Restringir o número máximo de menções permitidas em uma publicação. O padrão é 10.
 
-* **Padrão de menção da interface do usuário**
+* **Padrão de Menção da Interface do Usuário**
 
   Especifique a cadeia de caracteres do padrão permitido para marcar (@mention) o usuário registrado em uma publicação. Por exemplo, `~{{familyName}}{{givenName}}`.
 
@@ -120,7 +120,7 @@ No **Comentários** especifique se e como os comentários dos arquivos carregado
 
 #### Guia Moderação de usuário {#user-moderation-tab}
 
-No **Moderação de usuário** , configure a moderação de comentários, se os comentários forem permitidos:
+Na guia **Moderação de Usuário**, configure a moderação de comentários, se comentários forem permitidos:
 
 * **Pré-moderação**
 
@@ -134,7 +134,7 @@ No **Moderação de usuário** , configure a moderação de comentários, se os 
 
   Se marcado, permitir que os moderadores de membros confiáveis neguem comentários. O padrão está desmarcado.
 
-* **Fechar / Reabrir comentários**
+* **Fechar/Reabrir Comentários**
 
   Se essa opção estiver marcada, permitir que os moderadores de membros confiáveis fechem e reabram comentários. O padrão está desmarcado.
 
@@ -142,11 +142,11 @@ No **Moderação de usuário** , configure a moderação de comentários, se os 
 
   Se marcado, permite que os visitantes sinalizem comentários como inadequados. O padrão está desmarcado.
 
-* **Sinalizar lista de motivo**
+* **Lista de motivos da sinalização**
 
   Se marcado, permite que os visitantes escolham, em uma lista suspensa, o motivo para sinalizar um comentário como inapropriado. O padrão está desmarcado.
 
-* **Motivo personalizado de sinalização**
+* **Motivo personalizado do sinalizador**
 
   Se marcado, permite que os visitantes insiram seu próprio motivo para sinalizar um comentário como inapropriado. O padrão está desmarcado.
 
@@ -154,9 +154,9 @@ No **Moderação de usuário** , configure a moderação de comentários, se os 
 
   Insira o número de vezes que um comentário deve ser marcado pelos visitantes antes que os moderadores sejam notificados. O padrão é uma vez (**1**).
 
-* **Limite de sinalização**
+* **Limite de Sinalização**
 
-  Insira o número de vezes que um comentário deve ser sinalizado antes de ser ocultado da visualização pública. Esse número deve ser maior ou igual ao **Limite de moderação**. O padrão é 5.
+  Insira o número de vezes que um comentário deve ser sinalizado antes de ser ocultado da visualização pública. Este número deve ser maior ou igual ao **Limite de moderação**. O padrão é 5.
 
 ### Guia Configurações de classificação {#sort-settings-tab}
 
@@ -166,8 +166,8 @@ Definir como padrão
 
 ### Informações adicionais {#additional-information}
 
-Mais informações podem ser encontradas no [Fundamentos da biblioteca de arquivos](/help/communities/essentials-file-library.md) página para desenvolvedores.
+Mais informações podem ser encontradas na página [File Library Essentials](/help/communities/essentials-file-library.md) para desenvolvedores.
 
-Para moderação de tópicos e comentários publicados, consulte [Moderação de conteúdo gerado pelo usuário](/help/communities/moderate-ugc.md).
+Para obter a moderação de tópicos e comentários publicados, consulte [Moderando conteúdo gerado pelo usuário](/help/communities/moderate-ugc.md).
 
-Para marcar tópicos e comentários publicados, consulte [Marcação de conteúdo gerado pelo usuário](/help/communities/tag-ugc.md).
+Para marcar tópicos e comentários postados, consulte [Marcação de Conteúdo Gerado pelo Usuário](/help/communities/tag-ugc.md).

@@ -45,11 +45,11 @@ As atividades são exibidas com um rótulo descrevendo que tipo de atividade foi
 >
 >Os tipos de atividades disponíveis são determinados pelo seguinte:
 >
->* Se a variável **xt_only** estiver ativada no locatário do Adobe Target (clientcode) usado no lado do AEM para se conectar ao Adobe Target, você poderá criar **somente** Atividades XT no AEM.
+>* Se a opção **xt_only** estiver habilitada no locatário do Adobe Target (clientcode) usado no lado do AEM para se conectar ao Adobe Target AEM, você poderá criar atividades de XT **somente** no.
 >
->* Se a variável **xt_only** opções é **não** ativada no locatário do Adobe Target (clientcode), será possível criar **ambos** Atividades XT e A/B no AEM.
+>* Se as opções **xt_only** estiverem **not** habilitadas no locatário do Adobe Target (clientcode), você poderá criar **ambas** atividades XT e A/B no AEM.
 >
->**Nota adicional:** **xt_only** options é uma configuração aplicada a um determinado locatário do Target (clientcode) e só pode ser modificada diretamente no Adobe Target. Não é possível ativar ou desativar essa opção no AEM.
+>**Observação adicional:** as opções **xt_only** são uma configuração aplicada a um determinado locatário do Target (clientcode) e só podem ser modificadas diretamente no Adobe Target. Não é possível ativar ou desativar essa opção no AEM.
 
 >[!CAUTION]
 >
@@ -63,12 +63,12 @@ Crie uma marca para a qual deseja gerenciar atividades de marketing.
 
 Ao criar uma marca usando o console Atividades, ela também aparece no [console Ofertas](/help/sites-authoring/offerlib.md), onde é possível criar ofertas para as experiências das suas atividades.
 
-1. No console Navegação, clique em **Personalização**. Clique em **Atividades**.
+1. No console Navegação, clique em **Personalization**. Clique em **Atividades**.
 
    ![screen_shot_2018-03-21at151821](assets/screen_shot_2018-03-21at151821.png)
 
-1. No console Atividades, clique em **Criar** depois **Criar marca**.
-1. Selecione o modelo da marca e clique em **Próxima**.
+1. No console Atividades, clique em **Criar** depois **Criar Marca**.
+1. Selecione o modelo da marca e clique em **Avançar**.
 1. Digite um título para a marca conforme desejar que ele seja exibido nos consoles Atividades e Ofertas. Também é possível digitar ou selecionar uma ou mais tags para associar à marca.
 1. Clique em **Criar**. Sua marca aparecerá no console Atividades.
 
@@ -96,8 +96,8 @@ Adicione uma atividade ou edite uma atividade já existente para concentrar seus
 
 Para adicionar uma atividade:
 
-1. Clique na marca para a qual você está criando a atividade e clique em **Criar** e depois **Criar atividade**. Se estiver editando, selecione a atividade e clique em **Editar**.
-1. Forneça as seguintes informações e clique em **Próxima**:
+1. Clique na marca para a qual você está criando a atividade, clique em **Criar** e em **Criar atividade**. Se você estiver editando, selecione a atividade e clique em **Editar**.
+1. Forneça as seguintes informações e clique em **Avançar**:
 
    * Um nome para a atividade.
    * O mecanismo de direcionamento a ser usado. O ContextHub (AEM) é selecionado por padrão. Se precisar usar o Adobe Target, crie a atividade no editor de conteúdo direcionado.
@@ -152,9 +152,9 @@ Para publicar ou desfazer a publicação de atividades:
 1. Clique na marca e na área que contém a atividade que você deseja publicar ou desfazer a publicação.
 1. Clique no ícone ao lado da atividade ou atividades que deseja publicar ou desfazer a publicação.
 
-   ![screen-shot_2019-03-05at123846](assets/screen-shot_2019-03-05at123846.png)
+   ![captura de tela_2019-03-05at123846](assets/screen-shot_2019-03-05at123846.png)
 
-1. Para publicar, clique em **Publish**. Para desfazer a publicação, clique em **Cancelar publicação**. Sua atividade ou atividades serão publicadas ou desfarão a publicação, e o status é alterado no console Atividades (pode ser necessário atualizar a página).
+1. Para publicar, clique em **Publish**. Para desfazer a publicação, clique em **Desfazer publicação**. Sua atividade ou atividades serão publicadas ou desfarão a publicação, e o status é alterado no console Atividades (pode ser necessário atualizar a página).
 
 ## Atividades em instâncias de Autor e de Publicação {#activities-on-author-and-publish-instances}
 
@@ -169,13 +169,13 @@ Quando uma atividade que usa o mecanismo direcionado do Adobe Target é ativada,
 
 Para visualizar o desempenho da atividade e converter experiências vencedoras:
 
-1. Entrada **Personalização**, clique em **Atividades** para navegar até o **Atividades** console.
+1. Em **Personalization**, clique em **Atividades** para navegar até o console **Atividades**.
 1. Clique na marca cujas atividades você deseja ver.
-1. Selecione a atividade e clique em **Propriedades da exibição** e clique no link **Relatórios** e selecione a atividade na qual deseja exibir o desempenho/converter experiências vencedoras. Os dados de desempenho são exibidos.
+1. Selecione a atividade e clique em **Exibir propriedades**, clique na guia **Relatórios** e selecione a atividade na qual deseja exibir o desempenho/converter experiências vencedoras. Os dados de desempenho são exibidos.
 
    ![chlimage_1-115](assets/chlimage_1-115.png)
 
-1. Clique em **Selecionar vencedor** link para promover essa experiência como a experiência padrão.
+1. Clique no link **Selecionar vencedor** para promover esta como a experiência padrão.
 
    A conversão do vencedor faz o seguinte:
 
@@ -186,7 +186,7 @@ Para visualizar o desempenho da atividade e converter experiências vencedoras:
 
    Uma experiência vencedora é a aquela que os relatórios indicam que gerou um aumento maior, com base no índice de conversão.
 
-1. Clique em **Sim** para confirmar que deseja converter o vencedor, desative a experiência atual e substitua-a pelo conteúdo da experiência vencedora.
+1. Clique em **Sim** para confirmar que deseja converter o vencedor, desabilitando a experiência atual e substituindo-a pelo conteúdo da experiência vencedora.
 
 ## Sincronização de atividades com o Adobe Target {#synchronizing-activities-with-adobe-target}
 
@@ -227,7 +227,7 @@ Para evitar problemas de sincronização, sempre use nomes exclusivos para ativi
 
 >[!NOTE]
 >
->Quando você cria uma campanha no Adobe Target, ele atribui uma propriedade chamada `thirdPartyId t`em cada campanha. Quando você exclui a campanha no Adobe Target, a propriedade `thirdPartyId` não é excluída. Não é possível reutilizar o `thirdPartyId` para campanhas de tipos diferentes (AB, XT) e ele não pode ser removido manualmente. Para evitar esse problema, nomeie cada campanha com um nome exclusivo. Nomes de campanhas não podem ser reutilizados em diferentes tipos de campanha.
+>Quando você cria uma campanha no Adobe Target, ele atribui uma propriedade chamada `thirdPartyId t` a cada campanha. Quando você exclui a campanha no Adobe Target, a propriedade `thirdPartyId` não é excluída. Não é possível reutilizar o `thirdPartyId` para campanhas de tipos diferentes (AB, XT) e ele não pode ser removido manualmente. Para evitar esse problema, nomeie cada campanha com um nome exclusivo. Nomes de campanhas não podem ser reutilizados em diferentes tipos de campanha.
 >
 >Se você usar o mesmo nome no mesmo tipo de campanha, a campanha existente será substituída.
 >

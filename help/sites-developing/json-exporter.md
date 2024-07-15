@@ -30,13 +30,13 @@ Com fragmentos de conteúdo que usam conteúdo estruturado, você pode fornecer 
 
 >[!NOTE]
 >
->A funcionalidade descrita aqui está disponível para todos os Componentes principais desde [versão 1.1.0 dos Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR).
+>A funcionalidade descrita aqui está disponível para todos os Componentes Principais desde a [versão 1.1.0 dos Componentes Principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR).
 
 ## Exportador JSON com componentes principais de fragmento de conteúdo {#json-exporter-with-content-fragment-core-components}
 
 Usando o exportador JSON do AEM, é possível fornecer o conteúdo de qualquer página AEM no formato do modelo de dados JSON. Esse método pode ser consumido pelos seus próprios aplicativos.
 
-No AEM, a entrega é realizada usando o seletor `model` e `.json` extensão.
+No AEM, a entrega é realizada usando o seletor `model` e a extensão `.json`.
 
 `.model.json`
 
@@ -52,7 +52,7 @@ No AEM, a entrega é realizada usando o seletor `model` e `.json` extensão.
 
 Como alternativa, você pode fornecer o conteúdo de um fragmento de conteúdo estruturado direcionando-o especificamente.
 
-Use o caminho inteiro para o fragmento (por meio da variável `jcr:content`); por exemplo, com um sufixo como.
+Use o caminho inteiro para o fragmento (por meio de `jcr:content`); por exemplo, com um sufixo como.
 
 `.../jcr:content/root/responsivegrid/contentfragment.model.json`
 
@@ -70,11 +70,11 @@ Sua página pode conter um único fragmento de conteúdo ou vários componentes 
 
   >[!NOTE]
   >
-  >Você pode [adapte seus próprios componentes](/help/sites-developing/json-exporter-components.md) para acessar e usar esses dados.
+  >Você pode [adaptar seus próprios componentes](/help/sites-developing/json-exporter-components.md) para acessar e usar esses dados.
 
   >[!NOTE]
   >
-  >Embora não seja uma implementação padrão, [vários seletores são compatíveis,](json-exporter-components.md#multiple-selectors) mas `model` deve ser o primeiro.
+  >Embora não seja uma implementação padrão, [há suporte para vários seletores,](json-exporter-components.md#multiple-selectors) mas `model` deve ser o primeiro.
 
 ### Informações adicionais {#further-information}
 
@@ -86,7 +86,7 @@ Consulte também:
 
 * Modelos Sling:
 
-   * [Modelos Sling - Associando uma classe de modelo a um tipo de recurso desde 130](https://sling.apache.org/documentation/bundles/models.html#associating-a-model-class-with-a-resource-type-since-130)
+   * [Modelos do Sling - Associando uma classe de modelo a um tipo de recurso desde 130](https://sling.apache.org/documentation/bundles/models.html#associating-a-model-class-with-a-resource-type-since-130)
 
 * AEM com JSON:
 
@@ -96,10 +96,10 @@ Consulte também:
 
 Para obter mais detalhes, consulte:
 
-* A variável [Tópico Fragmentos de conteúdo no guia do usuário Ativos](/help/assets/content-fragments/content-fragments.md)
+* O [tópico Fragmentos de conteúdo no guia do usuário do Assets](/help/assets/content-fragments/content-fragments.md)
 
 * [Modelos de fragmentos do conteúdo](/help/assets/content-fragments/content-fragments-models.md)
 * [Criação com fragmentos de conteúdo](/help/sites-authoring/content-fragments.md)
 * [Ativação de exportação em JSON para um componente](/help/sites-developing/json-exporter-components.md)
 
-* [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) e a variável [Componente Fragmento de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=pt-BR)
+* [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) e o [componente de Fragmento de Conteúdo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=pt-BR)

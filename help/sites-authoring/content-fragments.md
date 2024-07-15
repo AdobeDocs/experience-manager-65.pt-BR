@@ -36,7 +36,7 @@ Juntamente com o exportador JSON atualizado, os fragmentos de conteúdo estrutur
 
 >[!CAUTION]
 >
->Esta página deve ser lida com [Trabalhar com fragmentos de conteúdo](/help/assets/content-fragments/content-fragments.md) (e páginas relacionadas) porque apresenta a terminologia e os conceitos básicos, além da criação e do gerenciamento de fragmentos.
+>Esta página deve ser lida com [Trabalhando com Fragmentos de conteúdo](/help/assets/content-fragments/content-fragments.md) (e páginas relacionadas), pois apresenta a terminologia e os conceitos básicos, além dos processos de criação e de gerenciamento de fragmentos.
 
 Os fragmentos de conteúdo habilitam:
 
@@ -74,13 +74,13 @@ Os fragmentos de conteúdo habilitam:
 
    * Abra o navegador de **ativos** e filtre por **Fragmentos de conteúdo** (o filtro padrão é por Imagens). Em seguida, arraste o fragmento necessário para a instância do componente.
 
-   * Selecione o componente do fragmento de conteúdo e clique em **Configurar** na barra de ferramentas. Na caixa de diálogo, é possível abrir a caixa de diálogo de seleção para procurar e selecionar o **Fragmento do conteúdo**.
+   * Selecione o componente do fragmento de conteúdo e clique em **Configurar** na barra de ferramentas. Na caixa de diálogo, é possível abrir a caixa de diálogo de seleção para procurar e selecionar o **Fragmento do conteúdo** necessário.
 
    >[!NOTE]
    >
    >Um método alternativo é arrastar um fragmento de conteúdo específico diretamente para a página. Isso cria automaticamente o componente associado (Fragmento de conteúdo).
 
-1. Inicialmente, o conteúdo da variável **Principal** Elemento e **Principal** (variação) é exibido. Você pode [selecionar outros elementos e/ou variações](#selecting-the-element-or-variation) conforme necessário.
+1. Inicialmente, o conteúdo do Elemento **Principal** e do **Mestre** (variação) é exibido. Você pode [selecionar outros elementos e/ou variações](#selecting-the-element-or-variation) conforme necessário.
 
    ![cfm-6420-01](assets/cfm-6420-01.png)
 
@@ -97,7 +97,7 @@ Os fragmentos de conteúdo habilitam:
 
 ### Selecionar o elemento ou a variação {#selecting-the-element-or-variation}
 
-Abra o do fragmento **Configuração** para que você possa configurar o fragmento para uso na página atual. A caixa de diálogo pode variar dependendo do componente usado.
+Abra a caixa de diálogo **Configuração** do fragmento para que você possa configurar o fragmento para uso na página atual. A caixa de diálogo pode variar dependendo do componente usado.
 
 Na caixa de diálogo de configuração apropriada, você pode selecionar os parâmetros disponíveis, incluindo:
 
@@ -109,7 +109,7 @@ Na caixa de diálogo de configuração apropriada, você pode selecionar os par�
 
    * **Elemento de texto simples**
 
-   * **Elemento múltiplo**
+   * **Vários elementos**
 
 * **Elemento**
 
@@ -122,12 +122,12 @@ Na caixa de diálogo de configuração apropriada, você pode selecionar os par�
 
 * **Variação**
 
-   * O padrão **Principal** está sempre disponível.
+   * O padrão **Mestre** está sempre disponível.
    * Uma seleção está disponível se variações forem criadas para o fragmento.
 
-* **Parágrafos**: especifique o intervalo de parágrafos que será incluído:
+* **Parágrafos**: especifique o intervalo de parágrafos a ser incluído:
 
-   * **Todos**
+   * **Tudo**
    * **Intervalo**: por exemplo, `1`, `3-5`, `9-*`
 
       * **Tratar cabeçalhos como seus próprios parágrafos**
@@ -146,7 +146,7 @@ Na caixa de diálogo de configuração apropriada, você pode selecionar os par�
 
 Quando um fragmento de conteúdo específico for adicionado à página, haverá um espaço reservado para **Arraste os componentes aqui** entre cada parágrafo HTML (e na parte superior/inferior) do fragmento.
 
-Isso permite adicionar conteúdo extra [intermediário (ou seja, conteúdo intermediário)](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments) o conteúdo do fragmento (em qualquer um dos pontos disponíveis), sem precisar alterar o fragmento raiz.
+Isso permite adicionar conteúdo extra [ao meio (ou seja, conteúdo intermediário)](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments) ao conteúdo do fragmento (em qualquer um dos pontos disponíveis), sem precisar alterar o fragmento raiz.
 
 Quanto ao conteúdo intermediário, é possível:
 
@@ -180,7 +180,7 @@ Quanto ao conteúdo intermediário, é possível:
 
 ### Usar conteúdo associado     {#using-associated-content}
 
-Se você tiver [conteúdo associado](/help/assets/content-fragments/content-fragments-assoc-content.md) com o [fragmento de conteúdo](/help/assets/content-fragments/content-fragments.md), esses ativos ficam disponíveis no painel lateral (depois de colocar o fragmento na página de conteúdo). O conteúdo associado é uma fonte especial de conteúdo do [conteúdo intermediário](#adding-in-between-content).
+Se você tiver [conteúdo associado](/help/assets/content-fragments/content-fragments-assoc-content.md) ao [fragmento de conteúdo](/help/assets/content-fragments/content-fragments.md), esses ativos estarão disponíveis no painel lateral (depois de colocar o fragmento na página de conteúdo). O conteúdo associado é uma fonte especial de conteúdo do [conteúdo intermediário](#adding-in-between-content).
 
 >[!NOTE]
 >
@@ -188,9 +188,9 @@ Se você tiver [conteúdo associado](/help/assets/content-fragments/content-frag
 
 >[!NOTE]
 >
->Se você tiver vários fragmentos de conteúdo em uma página, a variável **Conteúdo associado** A guia mostra ativos apropriados para todos os fragmentos.
+>Se você tiver vários fragmentos de conteúdo em uma página, a guia **Conteúdo associado** mostrará os ativos apropriados para todos os fragmentos.
 
-Depois de adicionar um fragmento com conteúdo associado à página, uma nova guia (**Conteúdo associado**) é aberto no painel lateral.
+Depois de adicionar um fragmento com conteúdo associado à página, uma nova guia (**Conteúdo associado**) será aberta no painel lateral.
 
 Aqui, é possível arrastar os arquivos para o local desejado (seja para um componente já existente ou para a posição desejada onde o componente adequado será criado): 
 
@@ -214,4 +214,4 @@ Outras alterações, como mover, copiar ou excluir, devem ser feitas no editor d
 Os fragmentos devem ser publicados para que possam ser usados em suas páginas da Web publicadas:
 
 * Um fragmento pode ser publicado depois de [criar o fragmento no console de Ativos](/help/assets/content-fragments/content-fragments.md#publishingandreferencingafragment).
-* Se um *fragmento não publicado* for usado em uma página que está sendo publicada, o fragmento também poderá ser publicado agora.
+* Se um *fragmento não publicado* for usado em uma página que está sendo publicada, ele também poderá ser publicado agora.

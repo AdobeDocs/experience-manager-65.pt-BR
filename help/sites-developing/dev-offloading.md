@@ -20,16 +20,16 @@ ht-degree: 0%
 
 O recurso Apache Sling Discovery fornece uma API Java que permite criar trabalhos JobManager e serviços JobConsumer que os consomem.
 
-Para obter informações sobre como criar topologias de descarregamento e configurar o consumo de tópico, consulte [Descarregamento de trabalhos](/help/sites-deploying/offloading.md).
+Para obter informações sobre como criar topologias de descarregamento e configurar o consumo de tópico, consulte [Trabalhos de Descarregamento](/help/sites-deploying/offloading.md).
 
 ## Lidar com cargas de trabalho {#handling-job-payloads}
 
 A estrutura de descarregamento define duas propriedades de trabalho que você usa para identificar a carga útil do trabalho. Os agentes de replicação de descarga usam essas propriedades para identificar os recursos a serem replicados nas instâncias na topologia:
 
-* `offloading.job.input.payload`: uma lista de caminhos de conteúdo separados por vírgulas. O conteúdo é replicado para a instância que executa o trabalho.
-* `offloading.job.output.payload`: uma lista de caminhos de conteúdo separados por vírgulas. Quando a execução do trabalho é concluída, a carga do trabalho é replicada para esses caminhos na instância que criou o trabalho.
+* `offloading.job.input.payload`: uma lista separada por vírgulas de caminhos de conteúdo. O conteúdo é replicado para a instância que executa o trabalho.
+* `offloading.job.output.payload`: uma lista separada por vírgulas de caminhos de conteúdo. Quando a execução do trabalho é concluída, a carga do trabalho é replicada para esses caminhos na instância que criou o trabalho.
 
-Use o `OffloadingJobProperties` enum para se referir aos nomes de propriedade:
+Use a enumeração `OffloadingJobProperties` para fazer referência aos nomes de propriedade:
 
 * `OffloadingJobProperties.INPUT_PAYLOAD.propertyName()`
 * `OffloadingJobProperties.OUTPUT_PAYLOAD.propetyName()`
@@ -42,7 +42,7 @@ Crie um cliente que chame o método JobManager.addJob para criar um trabalho que
 
 * Tópico: O tópico do trabalho.
 * Nome: (opcional)
-* Mapa de propriedades: A `Map<String, Object>` objeto que contém qualquer número de propriedades, como caminhos de carga de entrada e caminhos de carga de saída. Esse objeto Map está disponível para o objeto JobConsumer que executa o job.
+* Mapa de Propriedades: um objeto `Map<String, Object>` que contém qualquer número de propriedades, como os caminhos de carga útil de entrada e os caminhos de carga útil de saída. Esse objeto Map está disponível para o objeto JobConsumer que executa o job.
 
 O serviço de exemplo a seguir cria um trabalho para um determinado tópico e um caminho de carga de entrada.
 
@@ -92,7 +92,7 @@ public class JobGeneratorImpl implements JobGenerator  {
 }
 ```
 
-O log contém a seguinte mensagem quando JobGeneratorImpl.createJob é chamado para o `com/adobe/example/offloading` tópico e o `/content/geometrixx/de/services` carga útil:
+O log contém a seguinte mensagem quando JobGeneratorImpl.createJob é chamado para o tópico `com/adobe/example/offloading` e a carga `/content/geometrixx/de/services`:
 
 ```shell
 10.06.2013 15:43:33.868 *INFO* [JobHandler: /etc/workflow/instances/2013-06-10/model_1554418768647484:/content/geometrixx/en/company] com.adobe.example.offloading.JobGeneratorImpl Received request to make job for topic com/adobe/example/offloading and payload /content/geometrixx/de/services
@@ -100,9 +100,9 @@ O log contém a seguinte mensagem quando JobGeneratorImpl.createJob é chamado p
 
 ## Desenvolver um consumidor de trabalho {#developing-a-job-consumer}
 
-Para consumir empregos, desenvolva um serviço OSGi que implemente a `org.apache.sling.event.jobs.consumer.JobConsumer` interface. Identifique-se com o tópico a ser consumido usando o `JobConsumer.PROPERTY_TOPICS` propriedade.
+Para consumir trabalhos, desenvolva um serviço OSGi que implemente a interface `org.apache.sling.event.jobs.consumer.JobConsumer`. Identifique com o tópico a ser consumido usando a propriedade `JobConsumer.PROPERTY_TOPICS`.
 
-O exemplo de implementação JobConsumer a seguir é registrado com o `com/adobe/example/offloading` tópico. O consumidor simplesmente define a propriedade Consumed do nó de conteúdo da carga útil como true.
+O exemplo de implementação JobConsumer a seguir é registrado com o tópico `com/adobe/example/offloading`. O consumidor simplesmente define a propriedade Consumed do nó de conteúdo da carga útil como true.
 
 ```java
 package com.adobe.example.offloading;

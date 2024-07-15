@@ -17,14 +17,14 @@ ht-degree: 4%
 
 O Adobe Experience Manager Fluid Experience utiliza os poderosos conjuntos de recursos do AEM Sites, AEM Dynamic Media e AEM Assets para fornecer uma solução robusta para a entrega de conteúdo headless.
 
-O AEM Fluid Experience se diferencia do AEM clássico, pois somente o caso de uso de delivery headless é abordado. A criação e entrega de conteúdo headful e o forte suporte AEM para casos de uso híbrido estão disponíveis com o [soluções completas da AEM Sites, Assets e Dynamic Media.](https://experienceleague.adobe.com/docs/experience-manager-65/user-guide/home.html?lang=pt-BR)
+O AEM Fluid Experience se diferencia do AEM clássico, pois somente o caso de uso de delivery headless é abordado. A criação e a entrega de conteúdo headful e o forte suporte do AEM para casos de uso híbridos estão disponíveis com as [soluções completas para AEM Sites, Assets e Dynamic Media.](https://experienceleague.adobe.com/docs/experience-manager-65/user-guide/home.html?lang=pt-BR)
 
 As tabelas a seguir definem os recursos do AEM Fluid Experience e vinculam-se à documentação de suporte relevante.
 
 * [Repositório](#repository-features)
 * [Acesso, APIs e entrega](#access-api-and-delivery-features)
 * [Administração e integrações](#admin-and-integration-features)
-* [Analytics e Personalização](#analytics-and-personalization)
+* [Analytics e Personalization](#analytics-and-personalization)
 
 >[!NOTE]
 >
@@ -37,7 +37,7 @@ As tabelas a seguir definem os recursos do AEM Fluid Experience e vinculam-se à
 | [Repositório de conteúdo](/help/assets/manage-assets.md) |
 | [Tipos de ativos](/help/assets/assets-formats.md) |
 | [Representações de imagem](/help/assets/image-presets.md) |
-| [Metadados e gerenciamento de tags](/help/assets/metadata.md) |
+| [Gerenciamento de metadados e marcas](/help/assets/metadata.md) |
 | [Pesquisar](/help/assets/manage-assets.md) |
 | [Coleções](/help/assets/manage-assets.md) e [lightbox](/help/assets/light-box.md) |
 | [Perfis](/help/assets/processing-profiles.md) |
@@ -63,18 +63,18 @@ As tabelas a seguir definem os recursos do AEM Fluid Experience e vinculam-se à
 |  |
 |---|
 | [Gerenciamento de usuários](/help/sites-administering/user-group-ac-admin.md) |
-| [Gerenciamento de ativos em vários idiomas](/help/assets/multilingual-assets.md) |
+| [Gerenciamento de ativos multilíngues](/help/assets/multilingual-assets.md) |
 | [Internacionalização](/help/sites-developing/i18n.md) |
-| [Tradução de conteúdo](/help/sites-administering/translation.md) |
+| [Conversão de conteúdo](/help/sites-administering/translation.md) |
 | [Monitoramento](/help/sites-deploying/monitoring-and-maintaining.md) |
 | [Backup](/help/sites-administering/backup-and-restore.md) |
-| [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/introduction.html?lang=pt-BR) |
+| [Gerenciador de nuvem](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/introduction.html?lang=pt-BR) |
 | [Integração do PIM](/help/sites-authoring/managing-product-information.md) |
 | [Projetos e tarefas](/help/sites-authoring/projects.md) |
 | [Fluxos de trabalhos](/help/sites-administering/workflows-starting.md) |
 | Conectividade (serviços em nuvem) |
 
-## Analytics e Personalização {#analytics-and-personalization}
+## Analytics e Personalization {#analytics-and-personalization}
 
 |  |
 |---|
@@ -84,7 +84,7 @@ As tabelas a seguir definem os recursos do AEM Fluid Experience e vinculam-se à
 
 ## Saiba mais {#learn-more}
 
-* [Experiências fluídas para casos de uso sem interface](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-headless-usecases.html)
-* [Serviço de conteúdo AEM: o que, por que e como?](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html)
-* [Perguntas frequentes sobre acesso de terceiros](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/chapter-7.html)
-* [Uso de APIs do Sling](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html#sling-models)
+* [Experiências fluídas para casos de uso headless](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-headless-usecases.html)
+* [Serviço de Conteúdo AEM: O Que, Por Quê e Como?](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html)
+* [Perguntas frequentes sobre Acesso a Terceiros](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/chapter-7.html)
+* [Usando APIs Sling](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html#sling-models)

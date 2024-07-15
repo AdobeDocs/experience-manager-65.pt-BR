@@ -24,12 +24,12 @@ Você pode configurar manualmente o arquivo FontManagerResources.properties para
 >
 >A configuração de fonte de fallback também se aplica ao serviço de montagem.
 
-1. Navegue até o adobe-livecycle-*`[appserver]`* arquivo .ear no *`[aem-forms root]`* diretório /configurationManager/export, faça uma cópia de backup e desempacote o original.
+1. Navegue até o arquivo adobe-livecycle-*`[appserver]`*.ear no diretório *`[aem-forms root]`*/configurationManager/export, faça uma cópia de backup e desempacote o original.
 1. Localize o arquivo adobe-fontmanager.jar e desempacote-o.
 1. Localize o arquivo FontManagerResources.properties e abra-o em um editor de texto.
 1. Modifique os locais e nomes das fontes Genérica e de Fallback, conforme necessário, e salve o arquivo.
 
-   As entradas de fonte no arquivo FontManagerResources.properties são relativas ao *`[aem-forms root]`* diretório /fonts. Se você especificar fontes que não sejam fontes de formulários AEM padrão, instale essas fontes dentro dessa estrutura de diretório (seja em um diretório existente ou em um recém-criado).
+   As entradas de fonte no arquivo FontManagerResources.properties são relativas ao diretório *`[aem-forms root]`*/fonts. Se você especificar fontes que não sejam fontes de formulários AEM padrão, instale essas fontes dentro dessa estrutura de diretório (seja em um diretório existente ou em um recém-criado).
 
    >[!NOTE]
    >
@@ -40,8 +40,8 @@ Você pode configurar manualmente o arquivo FontManagerResources.properties para
    * Fonte genérica, pesquisada por conjunto de ordens na tabela de fallback
 
 1. Reempacotar o arquivo adobe-fontmanager.jar.
-1. Reempacotar o adobe-livecycle-*`[appserver]`* arquivo .ear e, em seguida, reimplante-o manualmente ou executando o Configuration Manager.
+1. Reempacote o arquivo adobe-livecycle-*`[appserver]`*.ear e implante-o novamente manualmente ou executando o Configuration Manager.
 
 >[!NOTE]
 >
->Não use o Configuration Manager para empacotar novamente o adobe-livecycle-`[appserver]`Arquivo .ear porque ele substituirá suas modificações pelos valores padrão dos formulários AEM.
+>Não use o Configuration Manager para reempacotar o arquivo adobe-livecycle-`[appserver]`.ear porque ele substituirá suas modificações pelos valores padrão dos formulários AEM.

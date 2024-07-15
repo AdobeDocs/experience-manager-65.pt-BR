@@ -134,7 +134,7 @@ ht-degree: 20%
          + [Aplicação de fluxos de trabalho a páginas](/help/sites-authoring/workflows-applying.md)
          + [Participar de fluxos de trabalho](/help/sites-authoring/workflows-participating.md)
          + [Trabalhar com fluxos de trabalho de projeto](/help/sites-authoring/projects-with-workflows.md)
-      + Desempenho da página {#page-performance}
+      + Desempenho da Página {#page-performance}
          + [Content Insight](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/authoring/siteandpage/content-insights.html)
          + [Análise do desempenho da página](/help/sites-authoring/ci-analyze.md)
          + [Visualização de dados de análise de página](/help/sites-authoring/pa-using.md)
@@ -148,7 +148,7 @@ ht-degree: 20%
          + [Gerenciamento de públicos](/help/sites-authoring/managing-audiences.md)
          + [Criação e gerenciamento de ofertas](/help/sites-authoring/offerlib.md)
          + [Noções sobre segmentação](/help/sites-authoring/segmentation-overview.md)
-      + AEM e ADOBE CAMPAIGN {#aem-adobe-campaign}
+      + AEM e Adobe Campaign {#aem-adobe-campaign}
          + [Trabalhar com o Adobe Campaign](/help/sites-authoring/adobe-campaign.md)
          + [Trabalhar com o Adobe Campaign Classic e o Adobe Campaign Standard](/help/sites-authoring/campaign.md)
          + [Direcionamento do seu Adobe Campaign](/help/sites-authoring/target-adobe-campaign.md)
@@ -156,7 +156,7 @@ ht-degree: 20%
          + [Componentes do Adobe Campaign](/help/sites-authoring/adobe-campaign-components.md)
    + Administração {#administering}
       + [Visão geral da administração do guia do usuário](/help/sites-administering/home.md)
-      + Recursos do Sites {#introduction}
+      + Recursos de Sites {#introduction}
          + [MSM e tradução](/help/sites-administering/msm-and-translation.md)
          + [Trabalhos assíncronos](/help/sites-administering/asynchronous-jobs.md)
          + [Reutilizar conteúdo: gerenciador de vários sites e Live Copy](/help/sites-administering/msm.md)
@@ -211,7 +211,7 @@ ht-degree: 20%
          + [Admin Console](/help/sites-administering/enable-classic-ui-admin.md)
       + Personalização {#personalization}
          + [Personalização](/help/sites-administering/personalization.md)
-         + [Configuração do ContextHub](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/developing/personlization/ch-configuring.html)
+         + [Configurando o ContextHub](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/developing/personlization/ch-configuring.html)
          + [ClientContext](/help/sites-administering/client-context.md)
          + [Campanhas](/help/sites-administering/campaigns.md)
          + [Configuração da segmentação com o ContextHub](/help/sites-administering/segmentation.md)
@@ -261,9 +261,9 @@ ht-degree: 20%
          + [Práticas recomendadas de tradução](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/introduction/tc-bp.html)
          + [Práticas recomendadas do MSM](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/introduction/msm-best-practices.html)
          + [AEM Sites - Disponibilidade do GDPR](/help/sites-administering/gdpr-compliance-sites.md)
-         + [Lidar com solicitações do GDPR para a Fundação AEM](https://experienceleague.adobe.com/docs/experience-manager-65/content/security/handling-gdpr-requests-for-aem-platform.html)
+         + [Manipulando solicitações do GDPR para a Fundação AEM](https://experienceleague.adobe.com/docs/experience-manager-65/content/security/handling-gdpr-requests-for-aem-platform.html)
          + [AEM Commerce - Disponibilidade do GDPR](/help/sites-administering/gdpr-compliance-commerce.md)
-      + Gestão de conteúdo {#contentmanagement}
+      + Gerenciamento de conteúdo {#contentmanagement}
          + [Gerenciador de pacotes](/help/sites-administering/package-manager.md)
          + [Administração de tags](/help/sites-administering/tags.md)
          + [O exportador da página](/help/sites-administering/page-exporter.md)
@@ -331,7 +331,7 @@ ht-degree: 20%
          + [Componentes do Adobe Campaign](/help/sites-classic-ui-authoring/classic-personalization-ac-components.md)
          + [Direcionamento do seu Adobe Campaign](/help/sites-classic-ui-authoring/classic-personalization-ac-target.md)
          + [Criação do Adobe Campaign Forms no AEM](/help/sites-classic-ui-authoring/classic-personalization-ac-forms.md)
-      + Criação do Assets na interface clássica {#assets}
+      + Criação de Assets na interface clássica {#assets}
          + [Trabalhar com ativos](/help/sites-classic-ui-authoring/classicui-assets.md)
          + [Entrega do Dynamic Media Assets](/help/sites-classic-ui-authoring/dynamic-media-assets-delivering.md)
          + [Adição do Dynamic Media Assets às páginas](/help/sites-classic-ui-authoring/dynamic-media-assets-adding-to-page.md)
@@ -344,11 +344,11 @@ ht-degree: 20%
    + [Práticas recomendadas para ativos](/help/assets/best-practices-for-assets.md)
    + [Acessibilidade no  [!DNL Assets]](/help/assets/accessibility.md)
    + Usar o Experience Manager Assets {#using}
-      + [[!DNL Assets] experiência de página inicial](/help/assets/assets-home-page.md)
+      + [Experiência da página inicial [!DNL Assets]](/help/assets/assets-home-page.md)
       + [Pesquisar ativos digitais](/help/assets/search-assets.md)
       + [Trabalhar com metadados de ativos](/help/assets/metadata.md)
       + [Ativos multilíngues](/help/assets/multilingual-assets.md)
-      + [Uso [!DNL Adobe Stock] ativos no Assets](/help/assets/aem-assets-adobe-stock.md)
+      + [Usar [!DNL Adobe Stock] ativos no Assets](/help/assets/aem-assets-adobe-stock.md)
       + [Pré-visualizar ativos 3D](/help/assets/previewing-3d-assets.md)
       + [Revisar ativos e coleções de pastas](/help/assets/bulk-approval.md)
       + [Tags inteligentes aprimoradas](/help/assets/enhanced-smart-tags.md)
@@ -357,7 +357,7 @@ ht-degree: 20%
       + [Processar ativos](/help/assets/assets-workflow.md)
       + [Adicionar mapas de imagem](/help/assets/image-maps.md)
       + [Reutilizar ativos usando o MSM](/help/assets/reuse-assets-using-msm.md)
-      + [Conectado o Assets com [!DNL Sites]](/help/assets/use-assets-across-connected-assets-instances.md)
+      + [Assets conectado com  [!DNL Sites]](/help/assets/use-assets-across-connected-assets-instances.md)
    + Dynamic Media{#dynamic}
       + [Arquivo de informativos do Experience League](/help/assets/dynamic-media-newsletter.md)
       + [Configuração do Dynamic Media](/help/assets/administering-dynamic-media.md)
@@ -417,14 +417,14 @@ ht-degree: 20%
       + [Instalar e configurar [!DNL ImageMagick] para trabalhar com [!DNL Assets]](/help/assets/best-practices-for-imagemagick.md)
       + [Integrar ativos ao fluxo de atividade](/help/assets/extending-activity-stream.md)
       + [Estender editor de ativos](/help/assets/asseteditorx.md)
-      + [[!DNL Assets] API HTTP](/help/assets/mac-api-assets.md)
-      + [Suporte a fragmentos de conteúdo no [!DNL Assets] API HTTP](/help/assets/assets-api-content-fragments.md)
+      + [API HTTP [!DNL Assets]](/help/assets/mac-api-assets.md)
+      + [Suporte a Fragmentos de conteúdo na  [!DNL Assets] API HTTP](/help/assets/assets-api-content-fragments.md)
       + [API GraphQL para fragmentos de conteúdo](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)
       + [Uso do GraphiQL IDE](/help/sites-developing/headless/graphql-api/graphiql-ide.md)
       + [Consultas persistentes](/help/sites-developing/headless/graphql-api/persisted-queries.md)
       + [Autenticação para consultas GraphQL remotas em fragmentos de conteúdo](/help/sites-developing/headless/graphql-api/graphql-authentication-content-fragments.md)
       + [API GraphQL com fragmentos de conteúdo - Conteúdo de amostra e consultas](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md)
-      + [[!DNL Assets] desenvolvimento de proxy](/help/assets/proxy.md)
+      + [Desenvolvimento de proxy [!DNL Assets]](/help/assets/proxy.md)
    + Administrar o Assets {#administer}
       + [Formatos de arquivo não compatíveis](/help/assets/assets-formats.md)
       + [Pesquisar aspectos](/help/assets/search-facets.md)
@@ -439,13 +439,13 @@ ht-degree: 20%
       + [Criar e configurar páginas do Editor de ativos](/help/assets/assets-finder-editor.md)
       + [Guia de dimensionamento do Assets](/help/assets/assets-sizing-guide.md)
       + [Práticas recomendadas para traduzir ativos](/help/assets/best-practices-for-translating-assets-efficiently.md)
-      + [[!DNL Assets] guia de ajuste de desempenho](/help/assets/performance-tuning-guidelines.md)
-      + [[!DNL Assets] guia de migração](/help/assets/assets-migration-guide.md)
+      + [Guia de ajuste de desempenho do [!DNL Assets]](/help/assets/performance-tuning-guidelines.md)
+      + [Guia de migração do [!DNL Assets]](/help/assets/assets-migration-guide.md)
       + [[!DNL Assets] considerações de rede](/help/assets/assets-network-considerations.md)
       + [[!DNL Assets] e MediaLibrary](/help/assets/medialibrary.md)
       + [Usar o rasterizador de PDF](/help/assets/aem-pdf-rasterizer.md)
       + [Configurar restrições de upload](/help/assets/configuring-asset-upload-restrictions.md)
-      + [[!DNL Experience Manager] e [!DNL Creative Cloud] integração](/help/assets/aem-cc-integration-best-practices.md)
+      + [Integração de [!DNL Experience Manager] e  [!DNL Creative Cloud] ](/help/assets/aem-cc-integration-best-practices.md)
       + [Integrar com a  [!DNL InDesign Server]](/help/assets/indesign.md)
       + [Digital Rights Management em ativos](/help/assets/drm.md)
       + [Use o pacote de demonstração para insights de ativos](/help/assets/use-demo-package-for-asset-insights.md)
@@ -462,8 +462,8 @@ ht-degree: 20%
    + Brand Portal {#brandportal}
       + [Configurar o [!DNL Assets] com o [!DNL Brand Portal]](/help/assets/configure-aem-assets-with-brand-portal.md)
       + [Publicar ativos no  [!DNL Brand Portal]](/help/assets/brand-portal-publish-assets.md)
-      + [Pastas do Publish para [!DNL Brand Portal]](/help/assets/brand-portal-publish-folder.md)
-      + [coleções do Publish para [!DNL Brand Portal]](/help/assets/brand-portal-publish-collection.md)
+      + [Pastas Publish para [!DNL Brand Portal]](/help/assets/brand-portal-publish-folder.md)
+      + [Coleções Publish para  [!DNL Brand Portal]](/help/assets/brand-portal-publish-collection.md)
    + Fragmentos de conteúdo {#content-fragments}
       + [Trabalho com fragmentos de conteúdo](/help/assets/content-fragments/content-fragments.md)
       + [Entrega headless com fragmentos de conteúdo e GraphQL](/help/assets/content-fragments/content-fragments-graphql.md)
@@ -513,21 +513,21 @@ ht-degree: 20%
       + [Introdução às comunicações interativas](/help/forms/using/interactive-communications-overview.md)
       + [Introdução ao gerenciamento de formulários](/help/forms/using/introduction-managing-forms.md)
       + [Introdução ao serviço de conversão automática de formulários](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=pt-BR)
-      + Tutorial: criar o primeiro formulário adaptável {#create-first-adaptive-form}
+      + Tutorial: Crie seu Primeiro Formulário Adaptável {#create-first-adaptive-form}
          + [Tutorial: criar o primeiro formulário adaptável](/help/forms/using/create-your-first-adaptive-form.md)
          + [Tutorial: Criar um formulário adaptável](/help/forms/using/create-adaptive-form.md)
          + [Tutorial: Criar modelo de dados do formulário](/help/forms/using/create-form-data-model.md)
          + [Tutorial: aplicar regras aos campos de formulário adaptáveis l](/help/forms/using/apply-rules-to-adaptive-form-fields.md)
          + [Tutorial: Crie o estilo do seu formulário adaptável](/help/forms/using/style-your-adaptive-form.md)
          + [Tutorial: Publish seu formulário adaptável](/help/forms/using/publish-your-adaptive-form.md)
-      + Tutorial: criar a primeira comunicação interativa {#create-first-interactive-communication}
+      + Tutorial: Crie sua Primeira Comunicação Interativa {#create-first-interactive-communication}
          + [Tutorial: criar a primeira comunicação interativa](/help/forms/using/create-your-first-interactive-communication.md)
          + [Tutorial: Planejar a comunicação interativa](/help/forms/using/planning-interactive-communications.md)
          + [Tutorial: Criar modelo de dados do formulário](/help/forms/using/create-form-data-model0.md)
          + [Tutorial: Criar fragmentos de documento](/help/forms/using/create-document-fragments.md)
          + [Tutorial: Criar modelos](/help/forms/using/create-templates-print-web.md)
          + [Tutorial: Criar a comunicação interativa](/help/forms/using/create-interactive-communication0.md)
-      + Materiais de referência do AEM Forms {#aem-forms-reference-collaterals}
+      + Materiais de Apoio de Referência do AEM Forms {#aem-forms-reference-collaterals}
          + [Configurar o site de referência We.Gov e We.Finance](/help/forms/using/forms-install-configure-gov-reference-site.md)
          + [Apresentação do site de referência do We.Gov e We.Finance](/help/forms/using/forms-gov-reference-site-user-demo.md)
          + [Apresentação do site de referência de recrutamento do funcionário](/help/forms/using/employee-recruitment-reference-site.md)
@@ -541,7 +541,7 @@ ht-degree: 20%
       + [Arquitetura e topologias de implantação do AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md)
       + [Escolha de um tipo de persistência para uma instalação do AEM Forms](/help/forms/using/choosing-persistence-type-for-aem-forms.md)
       + Instalar o AEM Forms no OSGi {#osgi-installation}
-         + [Plataformas compatíveis com o AEM Forms no OSGi](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/introduction/technical-requirements.html)
+         + [Plataformas com suporte para AEM no OSGi](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/introduction/technical-requirements.html)
          + [Instalar e configurar serviços de documento](/help/forms/using/install-configure-document-services.md)
          + [Instalar e configurar recursos de captura de dados](/help/forms/using/installing-configuring-aem-forms-osgi.md)
          + [Instalar e configurar o fluxo de trabalho centrado no Forms no OSGi](/help/forms/using/installing-configuring-forms-centric-workflow-on-osgi.md)
@@ -549,41 +549,41 @@ ht-degree: 20%
          + [Instalar e configurar o serviço do Automated forms conversion](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html?lang=pt-br)
       + Instalar o AEM Forms no JEE {#jee-installation}
          + [Plataformas compatíveis com o AEM Forms no JEE](/help/forms/using/aem-forms-jee-supported-platforms.md)
-         + [Instalar e implantar o AEM Forms no JEE usando o JBoss Turnkey](https://www.adobe.com/go/learn_aemforms_installTurnkey_65)
+         + [Instalando e implantando o AEM Forms no JEE usando o JBoss Turnkey](https://www.adobe.com/go/learn_aemforms_installTurnkey_65)
          + [Instalação e configuração do servidor do AEM Forms Document Security](/help/forms/using/installing-and-configuring-the-document-security-server.md)
-         + [Preparando-se para instalar o AEM Forms (Servidor único)](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_65)
-         + [Instalação e implantação do Adobe Experience Manager Forms no JEE para JBoss](https://www.adobe.com/go/learn_aemforms_installJBoss_65)
-         + [Instalação e implantação do Adobe Experience Manager Forms no JEE para WebSphere](https://www.adobe.com/go/learn_aemforms_installWebSphere_65)
-         + [Instalação e implantação do AEM Forms no JEE para WebLogic](https://www.adobe.com/go/learn_aemforms_installWebLogic_65)
+         + [Preparando para instalar o AEM Forms (Servidor Único)](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_65)
+         + [Instalando e implantando o Adobe Experience Manager Forms no JEE para JBoss](https://www.adobe.com/go/learn_aemforms_installJBoss_65)
+         + [Instalando e implantando formulários Adobe Experience Manager no JEE para WebSphere](https://www.adobe.com/go/learn_aemforms_installWebSphere_65)
+         + [Instalando e implantando o AEM Forms no JEE para WebLogic](https://www.adobe.com/go/learn_aemforms_installWebLogic_65)
          + [Instalar o AEM Forms Workbench](/help/forms/using/install-workbench.md)
          + [Instalar e configurar o Designer](/help/forms/using/installing-configuring-designer.md)
          + [Preparando para Instalar o AEM Forms (Cluster de Servidores)](https://www.adobe.com/go/learn_aemforms_prepareInstallcluster_65)
          + [Configurando o Adobe Experience Manager Forms no JEE em um cluster JBoss](https://www.adobe.com/go/learn_aemforms_clusterJBoss_65)
-         + [Configuração do Adobe Experience Manager Forms no JEE no cluster do WebSphere](https://www.adobe.com/go/learn_aemforms_clusterWebSphere_65)
-         + [Configuração do Adobe Experience Manager Forms no JEE no WebLogic Cluster](https://www.adobe.com/go/learn_aemforms_clusterWebLogic_65)
-      + Configurar AEM Forms {#configure-aem-forms}
+         + [Configurando o Adobe Experience Manager Forms no JEE no Cluster do WebSphere](https://www.adobe.com/go/learn_aemforms_clusterWebSphere_65)
+         + [Configurando o Adobe Experience Manager Forms no JEE no Cluster WebLogic](https://www.adobe.com/go/learn_aemforms_clusterWebLogic_65)
+      + Configurar o AEM Forms {#configure-aem-forms}
          + [Ajuste de desempenho do servidor do AEM Forms](/help/forms/using/performance-tuning-aem-forms.md)
          + [Configurar cache de formulários adaptáveis](/help/forms/using/configure-adaptive-forms-cache.md)
          + [Definição das configurações de AEM DS](/help/forms/using/configuring-the-processing-server-url.md)
          + [Configuração do scheduler de sincronização](/help/forms/using/configure-synchronization-scheduler.md)
-         + [Configuração do conector para o Microsoft SharePoint](https://help.adobe.com/en_US/AEMForms/6.1/SharePointConfig/index.html)
+         + [Configurando o Conector do Microsoft SharePoint](https://help.adobe.com/en_US/AEMForms/6.1/SharePointConfig/index.html)
          + [Conectar o AEM Forms com o LiveCycle Adobe](/help/forms/using/aem-livecycle-connector.md)
          + [Configuração do AEM Forms para enviar dados de formulário a uma AEM Forms no processo JEE](/help/forms/using/submit-form-data-livecycle-process.md)
          + [Aplicativo de desktop AEM para AEM Forms](/help/forms/using/aem-desktop-app-for-aem-forms.md)
    + Atualizar o AEM Forms {#upgrade-aem-forms}
       + [Caminhos de atualização disponíveis](/help/forms/using/upgrade.md)
-      + Atualização do AEM Forms no OSGi {#aem-forms-osgi-upgrade}
+      + Atualizar o AEM Forms no OSGi {#aem-forms-osgi-upgrade}
          + [Atualização para formulários AEM 6.5 no OSGi](/help/forms/using/upgrade-forms-osgi.md)
          + [Instalar pacote de compatibilidade](/help/forms/using/compatibility-package.md)
          + [Migrar ativos e documentos do AEM Forms](/help/forms/using/migration-utility.md)
-      + Atualização do AEM Forms no JEE {#aem-forms-jee-upgrade}
-         + [Preparação para atualizar o AEM Forms](https://www.adobe.com/go/learn_aemforms_prepareupgrade_65)
+      + Atualizar o AEM Forms no JEE {#aem-forms-jee-upgrade}
+         + [Preparando para atualizar o AEM Forms](https://www.adobe.com/go/learn_aemforms_prepareupgrade_65)
          + [Lista de verificação e planejamento de atualização do Adobe Experience Manager Forms no JEE](https://www.adobe.com/go/learn_aemforms_upgrade_checklist_65)
       + [Atualização para formulários AEM 6.5 no JEE](/help/forms/using/upgrade-forms-jee.md)
-      + [Atualização para Adobe Experience Manager Forms no JEE para JBoss](https://www.adobe.com/go/learn_aemforms_upgradeJBoss_65)
-      + [Atualização para AEM Forms no JEE para JBoss Turnkey](https://www.adobe.com/go/learn_aemforms_upgradeTurnkey_65)
-      + [Atualização para Adobe Experience Manager Forms no JEE para WebSphere](https://www.adobe.com/go/learn_aemforms_upgradeWebSphere_65)
-      + [Atualização para Adobe Experience Manager Forms no JEE para WebLogic](https://www.adobe.com/go/learn_aemforms_upgradeWebLogic_65)
+      + [Atualizando para Adobe Experience Manager Forms no JEE para JBoss](https://www.adobe.com/go/learn_aemforms_upgradeJBoss_65)
+      + [Atualizando para AEM Forms no JEE para JBoss Turnkey](https://www.adobe.com/go/learn_aemforms_upgradeTurnkey_65)
+      + [Atualizando para o Adobe Experience Manager Forms no JEE para WebSphere](https://www.adobe.com/go/learn_aemforms_upgradeWebSphere_65)
+      + [Atualizando para Adobe Experience Manager Forms no JEE para WebLogic](https://www.adobe.com/go/learn_aemforms_upgradeWebLogic_65)
    + Gerenciar o AEM Forms {#manage-administer-aem-forms}
       + [AEM Forms em grupos e privilégios OSGi](/help/forms/using/forms-groups-privileges-tasks.md)
       + [Criar novas pastas para categorizar formulários](/help/forms/using/creating-new-folders-categorize-forms.md)
@@ -594,7 +594,7 @@ ht-degree: 20%
       + [Obtenção de documentos XDP e PDF no AEM Forms](/help/forms/using/get-xdp-pdf-documents-aem.md)
       + [Importação e exportação de ativos para o AEM Forms](/help/forms/using/import-export-forms-templates.md)
       + [Suporte a novos códigos de idiomas para localização de formulários adaptáveis](/help/forms/using/supporting-new-language-localization.md)
-      + Manuseio de dados do usuário {#handling-user-data}
+      + Manipulando dados do usuário {#handling-user-data}
          + [Fluxos de trabalho centrados no Forms no OSGi](/help/forms/using/forms-workflow-osgi-handling-user-data.md)
          + [Gerenciamento de usuários do Forms](/help/forms/using/user-management-handling-user-data.md)
          + [Fluxos de trabalho do Forms JEE](/help/forms/using/forms-workflow-jee-handling-user-data.md)
@@ -602,7 +602,7 @@ ht-degree: 20%
          + [Gerenciamento de correspondência](/help/forms/using/correspondence-management-handling-user-data.md)
          + [Integração com o Adobe Sign](/help/forms/using/integration-adobe-sign-handling-user-data.md)
          + [Segurança de documentos](/help/forms/using/document-security-handling-user-data.md)
-      + Fortalecimento do ambiente AEM Forms {#hardening-aem-forms-environment}
+      + Fortalecendo o Ambiente AEM Forms {#hardening-aem-forms-environment}
          + [Fortalecimento e proteção de formulários AEM no ambiente OSGi](/help/forms/using/hardening-securing-aem-forms-environment.md)
          + [Considerações gerais de segurança para o AEM Forms no JEE](/help/forms/using/general-security-considerations.md)
          + [Fortalecimento do AEM Forms no ambiente JEE](/help/forms/using/hardening-aem-forms-jee-environment.md)
@@ -615,7 +615,7 @@ ht-degree: 20%
       + [Criar modelo de dados de formulário](/help/forms/using/create-form-data-models.md)
       + [Trabalhar com o modelo de dados de formulário](/help/forms/using/work-with-form-data-model.md)
       + [Usar modelo de dados de formulário](/help/forms/using/using-form-data-model.md)
-   + Forms adaptável - Componentes principais {#adaptive-forms-core-components}
+   + Forms Adaptável - Componentes Principais {#adaptive-forms-core-components}
       + [Ativar os Componentes principais para o seu ambiente](/help/forms/using/enable-adaptive-forms-core-components.md)
       + [Criar um formulário adaptável baseado nos Componentes principais](/help/forms/using/create-an-adaptive-form-core-components.md)
       + [Criar e usar fragmentos adaptáveis do Forms em um formulário adaptável](/help/forms/using/adaptive-form-fragment-core-components.md)
@@ -624,7 +624,7 @@ ht-degree: 20%
       + [Editor de regras](/help/forms/using/rule-editor-core-components.md)
       + [Criar e usar função personalizada em um componente principal do formulário adaptável](/help/forms/using/create-and-use-custom-functions-core-components.md)
       + [Criar e usar manipulador de erros personalizado para Componentes principais com base no Adaptive Forms](/help/forms/using/add-custom-error-handler-adaptive-forms-core-components.md)
-   + Forms adaptável - Criação básica {#adaptive-forms-basic-authoring}
+   + Forms Adaptável - Criação Básica {#adaptive-forms-basic-authoring}
       + [Práticas recomendadas para trabalhar com formulários adaptáveis](/help/forms/using/adaptive-forms-best-practices.md)
       + [Criação de um formulário adaptável](/help/forms/using/creating-adaptive-form.md)
       + [Criar ou adicionar um formulário adaptável à página do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)
@@ -653,7 +653,7 @@ ht-degree: 20%
       + [Criação da ajuda em contexto para campos de formulário](/help/forms/using/authoring-in-field-help.md)
       + [Usar o modo Layout para redimensionar componentes](/help/forms/using/resize-using-layout-mode.md)
       + [Conectar e enviar dados do formulário adaptável para o Microsoft](/help/forms/using/forms-microsoft-power-automate-integration.md)
-   + Forms adaptável - Criação avançada {#adaptive-forms-advanced-authoring}
+   + Forms Adaptável - Criação Avançada {#adaptive-forms-advanced-authoring}
       + [Criação de formulários adaptáveis usando o esquema JSON](/help/forms/using/adaptive-form-json-schema-form-model.md)
       + [Criação de formulários adaptáveis usando o esquema XML](/help/forms/using/adaptive-form-xml-schema-form-model.md)
       + [Uso do Adobe Sign em um formulário adaptável](/help/forms/using/working-with-adobe-sign.md)
@@ -678,7 +678,7 @@ ht-degree: 20%
       + [Criação e gerenciamento de revisões para ativos em formulários](/help/forms/using/create-reviews-forms.md)
       + [Incorpore um formulário adaptável ou a Comunicação interativa no aplicativo de página única do AEM Sites](/help/forms/using/embed-adaptive-form-aem-sites-spa.md)
       + [Criar e usar manipulador de erros personalizado para o Adaptive Forms](/help/forms/using/standard-validation-error-messages-adaptive-forms.md)
-   + Comunicações interativas {#interactive-communications}
+   + Comunicações Interativas {#interactive-communications}
       + [Introdução à interface de criação da comunicação interativa](/help/forms/using/introduction-interactive-communication-authoring.md)
       + [Criar uma comunicação interativa](/help/forms/using/create-interactive-communication.md)
       + [Utilização de gráficos em Comunicações interativas](/help/forms/using/chart-component-interactive-communications.md)
@@ -846,7 +846,7 @@ ht-degree: 20%
       + [Criar ou configurar uma pasta monitorada](/help/forms/using/creating-configure-watched-folder.md)
       + [Usar modelos de email personalizados em uma etapa Atribuir tarefa](/help/forms/using/use-custom-email-template-assign-task-step.md)
       + [Usar metadados em uma notificação por email](/help/forms/using/use-metadata-in-email-notifications.md)
-   + Portal Forms {#use-forms-portal}
+   + Portal do Forms {#use-forms-portal}
       + [Personalização de modelos para componentes do portal de formulários](/help/forms/using/customizing-templates-forms-portal-components.md)
       + [Habilitar componentes do portal de formulários](/help/forms/using/enabling-forms-portal-components.md)
       + [Criação de uma página do portal de formulários](/help/forms/using/creating-form-portal-page.md)
@@ -870,12 +870,12 @@ ht-degree: 20%
       + [Protect um documento em nome de outro usuário](/help/forms/using/protect-document-on-behalf-of-another-user.md)
    + Designer do Forms {#use-forms-designer}
       + [Ajuda do Forms Designer](/help/forms/using/forms-designer-help.md)
-      + [Utilização do Designer](https://www.adobe.com/go/learn_aemforms_designer_65_pt)
-      + [Tutorials de início rápido do Designer](https://www.adobe.com/go/learn_aemforms_designer_quick_start_65)
+      + [Usando o Designer](https://www.adobe.com/go/learn_aemforms_designer_65_pt)
+      + [Tutorials de Início Rápido do Designer](https://www.adobe.com/go/learn_aemforms_designer_quick_start_65)
       + [Amostras do Designer](https://www.adobe.com/go/learn_aemforms_designer_samples_65)
-      + [Noções básicas de script do Designer](https://www.adobe.com/go/learn_aemforms_scriptingBasics_65)
-      + [Referência de script do Designer](https://www.adobe.com/go/learn_aemforms_scriptingReference_65)
-      + [Referência do Designer FormCalc](https://www.adobe.com/go/learn_aemforms_formCalc_65)
+      + [Noções básicas sobre scripts do Designer](https://www.adobe.com/go/learn_aemforms_scriptingBasics_65)
+      + [Referência a script do Designer](https://www.adobe.com/go/learn_aemforms_scriptingReference_65)
+      + [Referência de FormCalc do Designer](https://www.adobe.com/go/learn_aemforms_formCalc_65)
       + [Uso da Assinatura Escrita em formulários HTML5](/help/forms/using/scribble-signature.md)
       + [Alteração do conteúdo da Página zero no Designer](/help/forms/using/changing-page-zero-content-designer.md)
       + [Práticas recomendadas de acessibilidade]{#accessibility-best-practices}
@@ -901,12 +901,12 @@ ht-degree: 20%
       + [Criação de temas de formulário adaptáveis personalizados](/help/forms/using/creating-custom-adaptive-form-themes.md)
    + Relatórios de transação {#transaction-reports}
       + [Visão geral do relatório de transações](/help/forms/using/transaction-reports-overview-jee-osgi.md)
-      + Relatórios de transação para o AEM Forms no OSGi {#transaction-reports-osgi}
+      + Relatórios de Transações para o AEM Forms no OSGi {#transaction-reports-osgi}
          + [Relatórios de transação](/help/forms/using/transaction-reports-overview.md)
          + [Exibição e compreensão de relatórios de transações](/help/forms/using/viewing-and-understanding-transaction-reports.md)
          + [Lista de APIs faturáveis para o AEM Forms no OSGi](/help/forms/using/transaction-reports-billable-apis.md)
          + [Registrar uma transação para implementações personalizadas](/help/forms/using/record-transaction-custom-implementation.md)
-      + Relatórios de transação para o AEM Forms no JEE {#transaction-reports-jee}
+      + Relatórios de Transações para o AEM Forms no JEE {#transaction-reports-jee}
          + [Ativação e visualização de relatórios de transações](/help/forms/using/transaction-report-overview-jee.md)
          + [Lista de APIs faturáveis para o AEM Forms no JEE](/help/forms/using/transaction-reports-billable-apis-jee.md)
          + [Registrar uma transação para APIs de componente personalizado](/help/forms/using/record-transaction-custom-component-jee.md)
@@ -914,7 +914,7 @@ ht-degree: 20%
       + Introdução {#get-started}
          + [Configurações gerais do AEM Forms](/help/forms/using/admin-help/configure-general-aem-forms-settings.md)
          + [Atualizar o tipo de licença para a implantação](/help/forms/using/admin-help/update-license-type-deployment.md)
-      + Configurar e gerenciar domínios {#setup-manage-domains}
+      + Configurando e gerenciando domínios {#setup-manage-domains}
          + [Adicionar domínios](/help/forms/using/admin-help/adding-domains.md)
          + [Excluir um domínio](/help/forms/using/admin-help/delete-domain.md)
          + [Definir configurações de bloqueio de conta](/help/forms/using/admin-help/configure-account-locking-settings.md)
@@ -922,7 +922,7 @@ ht-degree: 20%
          + [Configuração de provedores de autenticação](/help/forms/using/admin-help/configuring-authentication-providers.md)
          + [Sincronização de diretórios](/help/forms/using/admin-help/synchronizing-directories.md)
          + [Configurando diretórios](/help/forms/using/admin-help/configuring-directories.md)
-      + Configuração do gerenciamento de usuários {#configure-user-management}
+      + Configurando o Gerenciamento de Usuários {#configure-user-management}
          + [Alterar a ordem de avaliação para autenticação](/help/forms/using/admin-help/change-order-evaluation-authentication.md)
          + [Configurar a senha de associação LDAP](/help/forms/using/admin-help/configure-ldap-bind-password.md)
          + [Configurar formulários AEM para buscar previamente informações de domínio](/help/forms/using/admin-help/configure-aem-forms-prefetch-domain.md)
@@ -933,32 +933,32 @@ ht-degree: 20%
          + [Importação e exportação do arquivo de configuração](/help/forms/using/admin-help/importing-exporting-configuration-file.md)
          + [Configurar atributos avançados do sistema](/help/forms/using/admin-help/configure-advanced-system-attributes.md)
          + [Prevenção de ataques CSRF](/help/forms/using/admin-help/preventing-csrf-attacks.md)
-      + Configuração e organização de usuários {#setup-organize-users}
+      + Configurando e organizando usuários {#setup-organize-users}
          + [Adicionar e configurar usuários](/help/forms/using/admin-help/adding-configuring-users.md)
          + [Provisionamento de usuário just-in-time](/help/forms/using/admin-help/just-in-time-user-provisioning.md)
          + [Criação e configuração de grupos](/help/forms/using/admin-help/creating-configuring-groups.md)
          + [Pesquisar um usuário ou grupo](/help/forms/using/admin-help/search-user-or-group.md)
          + [Criação e configuração de funções](/help/forms/using/admin-help/creating-configuring-roles.md)
-      + Conexão com um sistema de gerenciamento de conteúdo {#connect-content-management-system}
+      + Conectando a um sistema de gerenciamento de conteúdo {#connect-content-management-system}
          + [Configurando o conector para o EMC Documentum](/help/forms/using/admin-help/configuring-connector-emc-documentum.md)
          + [Configurando o conector para o IBM FileNet](/help/forms/using/admin-help/configuring-connector-ibm-filenet.md)
          + [Configuração do conector para o Gerenciador de conteúdo do IBM](/help/forms/using/admin-help/configuring-connector-ibm-content-manager.md)
          + [Configuração do conector para o Microsoft SharePoint](/help/forms/using/admin-help/configuring-connector-microsoft-sharepoint.md)
-      + Gerenciar certificados e credenciais {#manage-certificates-credentials}
+      + Gerenciando certificados e credenciais {#manage-certificates-credentials}
          + [Adição e remoção de credenciais de nome de usuário e senha](/help/forms/using/admin-help/adding-removing-user-name-password.md)
          + [Gerenciar listas de revogação de certificados](/help/forms/using/admin-help/certificate-revocation-lists.md)
          + [Noções básicas do gerenciamento de certificados e credenciais](/help/forms/using/admin-help/overview-2.md)
          + [Gerenciar certificados](/help/forms/using/admin-help/certificates.md)
          + [Gerenciamento de credenciais HSM](/help/forms/using/admin-help/hsm-credentials.md)
          + [Gerenciar credenciais locais](/help/forms/using/admin-help/local-credentials.md)
-      + Importação e gerenciamento de aplicativos e arquivos {#import-manage-applications-archives}
+      + Importando e gerenciando aplicativos e arquivos {#import-manage-applications-archives}
          + [Alterar o número de itens exibidos nas páginas Aplicativos e Serviços](/help/forms/using/admin-help/change-number-items-displayed-applications.md)
          + [Importar e gerenciar arquivos](/help/forms/using/admin-help/import-archives.md)
          + [Importar e gerenciar aplicativos](/help/forms/using/admin-help/import-applications.md)
-      + Gerenciando serviços {#manage-services}
+      + Gerenciando Serviços {#manage-services}
          + [Definir configurações de serviço](/help/forms/using/admin-help/configure-service-settings.md)
          + [Iniciar e parar serviços](/help/forms/using/admin-help/starting-stopping-services.md)
-      + Gerenciamento de pontos de extremidade {#manage-endpoints}
+      + Gerenciando Pontos de Extremidade {#manage-endpoints}
          + [Adicionar, ativar, modificar ou remover pontos de extremidade](/help/forms/using/admin-help/adding-enabling-modifying-or-removing.md)
       + [Configuração de endpoints de email](/help/forms/using/admin-help/configuring-email-endpoints.md)
       + [Configurar a autenticação oAuth2.0](/help/forms/using/oauth2-support-for-mail-service.md)
@@ -966,7 +966,7 @@ ht-degree: 20%
       + [Configurando pontos de extremidade de pasta monitorada](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md)
       + [Configurar pontos de extremidade do Gerenciador de tarefas](/help/forms/using/admin-help/configuring-task-manager-endpoints.md)
       + [Tipos de endpoints](/help/forms/using/admin-help/types-endpoints.md)
-      + Configuração de extensões do Acrobat Reader DC {#configure-acrobat-reader-dc-extensions}
+      + Configurando extensões do Acrobat Reader DC {#configure-acrobat-reader-dc-extensions}
          + [Tipos de certificado usados por extensões do Acrobat Reader DC](/help/forms/using/admin-help/certificate-types-used-acrobat-reader.md)
          + [Reconhecimento de certificados válidos e expirados em documentos do PDF](/help/forms/using/admin-help/recognizing-valid-expired-certificates-pdf.md)
          + [Configuração de extensões do Acrobat Reader DC para captura de dados](/help/forms/using/admin-help/configuring-acrobat-reader-dc-extensions.md)
@@ -976,7 +976,7 @@ ht-degree: 20%
          + [Ativação de comentários on-line para o plug-in do navegador da Web do Adobe Reader](/help/forms/using/admin-help/enabling-online-commenting-reader-web.md)
          + [Configuração de valores de tempo limite para uso com extensões do Acrobat Reader DC](/help/forms/using/admin-help/setting-timeout-values-acrobat-reader.md)
          + [Atualização de certificados do serviço de extensão de Reader expirados](/help/forms/using/admin-help/updating-expired-reader-extension-certificates.md)
-      + Trabalhar com o PDF Generator {#work-with-pdf-generator}
+      + Trabalhando com PDF Generator {#work-with-pdf-generator}
          + [Introdução ao trabalho com o PDF Generator](/help/forms/using/admin-help/overview-5.md)
          + [Ativação de conversões de arquivos multithread](/help/forms/using/admin-help/enabling-multi-threaded-file-conversions.md)
          + [Definição das configurações do Adobe PDF](/help/forms/using/admin-help/configuring-pdf-settings.md)
@@ -988,12 +988,12 @@ ht-degree: 20%
          + [Configuração de fontes de fallback](/help/forms/using/admin-help/configuring-fallback-fonts.md)
          + [Modificação das configurações de conversão da exportação de PDF](/help/forms/using/admin-help/modifying-pdf-export-conversion-settings.md)
          + [Conversão de arquivos usando o PDF Generator](/help/forms/using/admin-help/converting-files-using-pdf-generator.md)
-      + Configuração do SSL {#configure-ssl}
+      + Configurando SSL {#configure-ssl}
          + [Visão geral da configuração do SSL](/help/forms/using/admin-help/overview-6.md)
          + [Configurando o SSL para o servidor da aplicação JBoss](/help/forms/using/admin-help/configuring-ssl-jboss-application-server.md)
          + [Configuração do SSL no Windows Vista](/help/forms/using/admin-help/configuring-ssl-windows-vista.md)
          + [Configuração do SSL para o WebSphere Application Server](/help/forms/using/admin-help/configuring-ssl-websphere-application-server.md)
-      + Trabalhar com segurança de documentos {#work-with-document-security}
+      + Trabalhando com a segurança de documentos {#work-with-document-security}
          + [Sobre a segurança de documentos](/help/forms/using/admin-help/document-security.md)
          + [Entrega segura de informações de alto volume](/help/forms/using/admin-help/high-volume-secure-information-delivery.md)
          + [Configuração das opções de cliente e servidor](/help/forms/using/admin-help/configuring-client-server-options.md)
@@ -1004,7 +1004,7 @@ ht-degree: 20%
          + [Uso das páginas da Web de segurança de documentos](/help/forms/using/admin-help/using-document-security-web-pages.md)
          + [Criação e gerenciamento de conjuntos de políticas](/help/forms/using/admin-help/creating-policy-sets.md)
          + [Registrando-se como usuário](/help/forms/using/admin-help/registering-as-a-user.md)
-      + Configuração do Forms {#configure-forms}
+      + Configurando o Forms {#configure-forms}
          + [Noções básicas para configuração de formulários](/help/forms/using/admin-help/overview-7.md)
          + [Configuração de opções de internacionalização](/help/forms/using/admin-help/setting-internationalization-options.md)
          + [Configuração de armazenamento em cache para o Forms](/help/forms/using/admin-help/configuring-caching-forms.md)
@@ -1014,7 +1014,7 @@ ht-degree: 20%
          + [Configuração de locais para o Forms](/help/forms/using/admin-help/configuring-locations-forms.md)
          + [Especificação de configurações de segurança](/help/forms/using/admin-help/specifying-security-settings.md)
          + [Configurar mensagens de validação](/help/forms/using/admin-help/configuring-validation-messages.md)
-      + Configuração da saída {#configure-output}
+      + Configurando Saída {#configure-output}
          + [Visão geral do serviço de saída](/help/forms/using/admin-help/overview-8.md)
          + [Especificar opções de configuração XCI](/help/forms/using/admin-help/specify-xci-configuration-options.md)
          + [Configuração do armazenamento em cache para saída](/help/forms/using/admin-help/configuring-caching-output.md)
@@ -1023,7 +1023,7 @@ ht-degree: 20%
          + [Especificar fontes a serem incorporadas](/help/forms/using/admin-help/specify-fonts-embed.md)
          + [Especificar configurações de segurança](/help/forms/using/admin-help/specify-security-settings.md)
          + [Alterar o conjunto de caracteres](/help/forms/using/admin-help/change-character-set.md)
-      + Configuração do fluxo de trabalho de formulários{#configure-forms-workflow}
+      + Configurando o fluxo de trabalho de formulários{#configure-forms-workflow}
          + [Sobre administração e terminologia do processo](/help/forms/using/admin-help/administration-process-terminology.md)
          + [Gerenciar processos](/help/forms/using/admin-help/processes.md)
          + [Configuração de calendários de negócios](/help/forms/using/admin-help/configuring-business-calendars.md)
@@ -1034,32 +1034,32 @@ ht-degree: 20%
          + [Trabalhar com operações e ramificações paralisadas](/help/forms/using/admin-help/stalled-operations-branches.md)
          + [Configurando Filas Compartilhadas](/help/forms/using/admin-help/configuring-shared-queues.md)
          + [Trabalhar com tarefas](/help/forms/using/admin-help/tasks.md)
-      + Configuração do Workspace {#configure-workspace}
+      + Configurando o Workspace {#configure-workspace}
          + [Visão geral do Workspace](/help/forms/using/admin-help/overview-10.md)
          + [Importação e exportação de configurações globais](/help/forms/using/admin-help/importing-exporting-global-settings.md)
          + [Definir a mensagem do dia](/help/forms/using/admin-help/setting-message-day.md)
          + [Personalização de modelos de pesquisa](/help/forms/using/admin-help/customizing-search-templates.md)
          + [Gerenciamento das categorias exibidas no Workspace](/help/forms/using/admin-help/categories-displayed-workspace.md)
-      + Monitor de integridade {#health-monitor}
+      + Monitor de Integridade {#health-monitor}
          + [Visão geral do Health Monitor](/help/forms/using/admin-help/overview-11.md)
          + [Ajustando o desempenho do Monitor de Integridade](/help/forms/using/admin-help/fine-tuning-health-monitor-performance.md)
          + [Exibir estatísticas relacionadas ao Gerenciador de Trabalho](/help/forms/using/admin-help/view-statistics-related-manager.md)
          + [Exibir informações do sistema](/help/forms/using/admin-help/view-system-information.md)
          + [Expurgar registros do banco de dados do Gerenciador de Jobs](/help/forms/using/admin-help/purge-records-job-manager-database.md)
-      + Manutenção de formulários AEM {#maintain-aem-forms}
+      + Mantendo formulários AEM {#maintain-aem-forms}
          + [Arquivos de log](/help/forms/using/admin-help/log-files.md)
          + [Gerenciamento de usuários](/help/forms/using/admin-help/user-management.md)
          + [Monitoramento de implantações de formulários AEM](/help/forms/using/admin-help/monitoring-aem-forms-deployments.md)
          + [Gerenciador de trabalho e limitação](/help/forms/using/admin-help/manager-throttling.md)
          + [Execução de formulários AEM no modo de manutenção](/help/forms/using/admin-help/running-aem-forms-maintenance-mode.md)
-      + Manutenção do banco de dados de formulários AEM {#maintain-aem-forms-database}
+      + Mantendo o Banco de Dados de Formulários AEM {#maintain-aem-forms-database}
          + [Banco de dados DB2: execução semanal de um processo](/help/forms/using/admin-help/db2-database-running-process-weekly.md)
          + [Limite máximo de cursores abertos do banco de dados do Oracle](/help/forms/using/admin-help/oracle-database-maximum-open-cursors.md)
          + [Banco de dados IBM DB2: execução de comandos para manutenção regular](/help/forms/using/admin-help/ibm-db2-database-running-commands.md)
          + [Limpando dados do processo](/help/forms/using/admin-help/purging-process-data.md)
          + [Banco de dados Microsoft SQL Server: ajuste da configuração](/help/forms/using/admin-help/microsoft-sql-server-database-fine.md)
          + [Dicas para minimizar o crescimento do banco de dados](/help/forms/using/admin-help/tips-minimizing-database-growth.md)
-      + Manutenção do servidor de aplicativos {#manage-application-server}
+      + Mantendo o Servidor de Aplicativos {#manage-application-server}
          + [Sites do servidor de aplicativos](/help/forms/using/admin-help/application-server-websites.md)
          + [Diretório de armazenamento de documentos global](/help/forms/using/admin-help/global-document-storage-directory.md)
          + [Considerações ao executar o Administration Console](/help/forms/using/admin-help/considerations-running-administration-console.md)
@@ -1076,10 +1076,10 @@ ht-degree: 20%
          + [Recuperação dos dados de formulários do AEM](/help/forms/using/admin-help/recovering-aem-forms-data.md)
          + [Estratégia de backup do Connector para usuários do EMC Documentum](/help/forms/using/admin-help/backup-strategy-connector-emc-documentum.md)
          + [Estratégia de backup e restauração em um ambiente em cluster](/help/forms/using/admin-help/strategy-backup-restore-clustered-environment.md)
-      + Serviço de informação do sistema {#system-information-service}
+      + Serviço de informações do sistema {#system-information-service}
          + [Configurar o serviço de informação do sistema](/help/forms/using/admin-help/set-system-information-service.md)
          + [APIs de serviço de informações do sistema](/help/forms/using/admin-help/system-information-service-apis.md)
-   + Relatório do processo {#process-reporting}
+   + Processar relatório {#process-reporting}
       + [Introdução ao Process Reporting](/help/forms/using/process-reporting/introduction-process-reporting.md)
       + [Introdução aos Relatórios de processos](/help/forms/using/process-reporting/install-start-process-reporting.md)
       + [Como Funciona o Relatório de Processo](/help/forms/using/process-reporting/process-reporting-architecture.md)
@@ -1088,23 +1088,23 @@ ht-degree: 20%
       + [Consultas ad-hoc em relatórios do processo](/help/forms/using/process-reporting/adhoc-queries-in-process-reporting.md)
       + [Resolução de Problemas no Relatório do Processo](/help/forms/using/process-reporting/troubleshooting-process-management.md)
    + Referência do desenvolvedor {#developer-reference}
-      + [Linguagem de modelo do HTML](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=pt-BR)
-      + [Plug-in AEM para depurar formulários adaptáveis](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/adaptive-form/)
+      + [Linguagem de Modelo de HTML](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=pt-BR)
+      + [Plug-in do AEM para depurar formulários adaptáveis](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/adaptive-form/)
       + [Referência da API Java do AEM Forms](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html)
       + [Referência da API Java do AEM Forms no JEE](https://helpx.adobe.com/experience-manager/6-5/forms/programlc/javadoc/index.html)
       + [APIs de Bridge de formulários para formulários HTML5](/help/forms/using/form-bridge-apis.md)
-      + [Referência da API da biblioteca JavaScript para o Adaptive Forms](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html)
+      + [Referência da API da Biblioteca JavaScript para Forms Adaptável](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html)
       + [Serviço de Assembler e Referência DDX](https://www.adobe.com/go/learn_aemforms_ddxRef_65)
       + [Ajuda do Workbench](https://www.adobe.com/go/learn_aemforms_workbench_65)
-      + Programação com o AEM Forms no JEE {#programming-aem-forms-jee}
-         + Introdução à programação com o AEM Forms no JEE {#introduction-programming-aem-forms-jee}
+      + Programando com o AEM Forms no JEE {#programming-aem-forms-jee}
+         + Introdução à programação com AEM Forms no JEE {#introduction-programming-aem-forms-jee}
             + [Introdução ao Java API QuickStart](/help/forms/developing/introducing-java-api-soap-quick.md)
             + [Chamada do AEM Forms usando APIs](/help/forms/developing/invoking-aem-forms-using-apis.md)
          + [Noções básicas sobre processos do AEM Forms](/help/forms/developing/aem-forms-processes.md)
          + [Contêiner de serviço](/help/forms/developing/service-container.md)
-         + Desenvolvimento de SPIs para AEM Forms {#developing-spis-aem-forms}
+         + Desenvolvendo SPIs para o AEM Forms {#developing-spis-aem-forms}
             + [Criando um Manipulador de Usuários Externos para Convidar](/help/forms/developing/creating-invite-external-users-handler.md)
-         + Início rápido da API Java - Exemplos de código {#java-api-quick-start-code-examples}
+         + Início Rápido da API Java - Exemplos de Código {#java-api-quick-start-code-examples}
             + [Início rápido da API Java do cliente Application Manager (SOAP)](/help/forms/developing/application-manager-client-java-api.md)
             + [Início Rápido do Application Manager Service JavaAPI (SOAP)](/help/forms/developing/application-manager-service-java-api.md)
             + [QuickStart(SOAP) da API Java do serviço do Assembler](/help/forms/developing/assembler-service-java-api-quick.md)
@@ -1132,14 +1132,14 @@ ht-degree: 20%
             + [QuickStart(SOAP) da API Java do Serviço Gerenciador de Tarefas](/help/forms/developing/task-manager-service-java-api.md)
             + [Início rápido da API Java do gerenciador de usuários (SOAP)](/help/forms/developing/user-manager-java-api-quick.md)
             + [Início rápido do serviço de utilitários XMP Java APIQuick Start(SOAP)](/help/forms/developing/xmp-utilities-service-java-api.md)
-         + Chamar o AEM Forms no JEE usando APIs {#invoking-aem-forms-jee-apis}
+         + Chamando AEM Forms no JEE usando APIs {#invoking-aem-forms-jee-apis}
             + [Chamar o AEM Forms usando solicitações REST](/help/forms/developing/invoking-aem-forms-using-rest.md)
             + [Chamar o AEM Forms usando serviços da Web](/help/forms/developing/invoking-aem-forms-using-web.md)
             + [Chamar o AEM Forms usando comunicação remota](/help/forms/developing/invoking-aem-forms-using-remoting.md)
             + [Chamar o AEM Forms usando serviços da Web](/help/forms/developing/invoking-human-centric-long-lived.md)
             + [Chamar o AEM Forms usando a JavaAPI](/help/forms/developing/invoking-aem-forms-using-java.md)
             + [Criação de aplicativos do Flash Builder que executam autenticação SSO usando tokens HTTP](/help/forms/developing/creating-flash-builder-applications-perform.md)
-         + Execução de operações de serviço usando APIs {#performing-service-operations-using-apis}
+         + Executando Operações de Serviço usando APIs {#performing-service-operations-using-apis}
             + [Execução de operações de serviço usando APIs](/help/forms/developing/performing-service-operations-using-apis.md)
             + [Renderização do Forms](/help/forms/developing/rendering-forms.md)
             + [Montagem de documentos do PDF](/help/forms/developing/assembling-pdf-documents.md)
@@ -1246,16 +1246,16 @@ ht-degree: 20%
       + [2020](/help/commerce/cif/release-notes/release-notes-2020.md)
       + [2019](/help/commerce/cif/release-notes/release-notes-2019.md)
    + [Perguntas frequentes](/help/commerce/cif/faq.md)
-   + AEM CIF Classic {#classic}
+   + AEM CIF Clássico {#classic}
       + [Visão geral](/help/commerce/cif-classic/home.md)
-      + Implantação {#deploying}
+      + Implantando {#deploying}
          + [Visão geral de comércio eletrônico](/help/commerce/cif-classic/deploying/ecommerce.md)
          + [COMMERCE CLOUD SAP](/help/commerce/cif-classic/deploying/sap-commerce-cloud.md)
       + Administração {#administering}
          + [eCommerce](/help/commerce/cif-classic/administering/ecommerce.md)
          + [Conceitos ](/help/commerce/cif-classic/administering/concepts.md)
          + [Administração de comércio eletrônico genérico](/help/commerce/cif-classic/administering/generic.md)
-         + [COMMERCE CLOUD SAP](/help/commerce/cif-classic/administering/sap-commerce-cloud.md)
+         + [Commerce Cloud SAP](/help/commerce/cif-classic/administering/sap-commerce-cloud.md)
       + Desenvolvimento {#developing}
          + [eCommerce](/help/commerce/cif-classic/developing/ecommerce.md)
          + [Desenvolvimento (genérico)](/help/commerce/cif-classic/developing/generic.md)
@@ -1265,7 +1265,7 @@ ht-degree: 20%
    + [Utilização do Edge Delivery](/help/edge/using.md)
 + Headless {#headless}
    + [Jornadas do AEM Headless](/help/journey-headless/overview.md)
-   + Jornada do desenvolvedor sem periféricos do AEM {#developer}
+   + Jornada para Desenvolvedores AEM Headless {#developer}
       + [Compreender o headless no AEM](/help/journey-headless/developer/overview.md)
       + [Saiba mais sobre o desenvolvimento headless CMS](/help/journey-headless/developer/learn-about.md)
       + [Introdução ao AEM Headless](/help/journey-headless/developer/getting-started.md)
@@ -1281,7 +1281,7 @@ ht-degree: 20%
       + [Modelagem de conteúdo para headless com o AEM - uma introdução](/help/journey-headless/architect/introduction.md)
       + [Saiba o básico sobre a modelagem de conteúdo para headless com AEM](/help/journey-headless/architect/basics.md)
       + [Saiba mais sobre criação de modelos de fragmento de conteúdo no AEM](/help/journey-headless/architect/model-structure.md)
-   + Jornada de autor de conteúdo do AEM Headless {#author}
+   + Jornada de Autor de Conteúdo AEM Headless {#author}
       + [Jornada do autor de conteúdo headless do AEM - Visão geral](/help/journey-headless/author/overview.md)
       + [Criação para headless com AEM - uma introdução](/help/journey-headless/author/introduction.md)
       + [Noções básicas de criação para headless com AEM](/help/journey-headless/author/basics.md)
@@ -1329,11 +1329,11 @@ ht-degree: 20%
          + [Sobreposições](/help/sites-developing/overlays.md)
          + [Convenções de nomenclatura](/help/sites-developing/naming-conventions.md)
          + [Criação de um novo componente de campo da interface de usuário do Granite](/help/sites-developing/granite-ui-component.md)
-         + Construtor de consulta{#query-builder}
+         + Construtor de Consultas{#query-builder}
             + [Implementação de um avaliador de predicado personalizado no Construtor de consultas](/help/sites-developing/implementing-custom-predicate-evaluator.md)
             + [Referência de predicado do construtor de consultas](/help/sites-developing/querybuilder-predicate-reference.md)
             + [API do Construtor de consulta](/help/sites-developing/querybuilder-api.md)
-         + Marcação{#tagging}
+         + Marcando{#tagging}
             + [Marcação com tags](/help/sites-developing/tags.md)
             + [Estrutura de marcação do AEM](/help/sites-developing/framework.md)
             + [Criação de tags em um aplicativo AEM](/help/sites-developing/building.md)
@@ -1370,7 +1370,7 @@ ht-degree: 20%
             + [Internacionalizando strings de interface do usuário](/help/sites-developing/i18n-dev.md)
             + [Usar o Translator para gerenciar dicionários](/help/sites-developing/i18n-translator.md)
             + [Extraindo strings para tradução](/help/sites-developing/i18n-extract.md)
-         + Componentes da interface clássica{#classic-ui-components}
+         + Componentes da Interface Clássica{#classic-ui-components}
             + [Desenvolvimento de componentes do AEM (interface clássica)](/help/sites-developing/developing-components-classic.md)
             + [Uso e extensão de widgets (interface de usuário clássica)](/help/sites-developing/widgets.md)
             + [Uso do xtypes (Interface clássica)](/help/sites-developing/xtypes.md)
@@ -1384,7 +1384,7 @@ ht-degree: 20%
                + [Saiba mais sobre o desenvolvimento headless CMS](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/learn-about.html)
                + [Introdução ao AEM Headless as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/getting-started.html)
                + [Caminho para sua primeira experiência usando o AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/path-to-first-experience.html)
-               + [Como modelar seu conteúdo como modelos de conteúdo AEM](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/model-your-content.html)
+               + [Como modelar seu conteúdo como Modelos de Conteúdo AEM](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/model-your-content.html)
                + [Como acessar seu conteúdo por meio das APIs de entrega do AEM](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/access-your-content.html)
                + [Como atualizar seu conteúdo por meio de APIs do AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/update-your-content.html)
                + [Como reunir tudo](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/put-it-all-together.html)
@@ -1393,7 +1393,7 @@ ht-degree: 20%
             + Jornada do arquiteto de conteúdo do Headless {#architect}
                + [Visão geral da Jornada do arquiteto de conteúdo do AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/architect/overview.html)
                + [Modelagem de conteúdo para headless com AEM - uma introdução](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/architect/introduction.html)
-               + [Saiba o básico sobre a modelagem de conteúdo para headless com AEM](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/architect/basics.html)
+               + [Saiba mais sobre as noções básicas de modelagem de conteúdo para headless com AEM](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/architect/basics.html)
                + [Saiba mais sobre como criar modelos de fragmento de conteúdo no AEM](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/architect/model-structure.html)
          + Guias de introdução {#getting-started}
             + [Introdução](/help/sites-developing/headless/getting-started/introduction.md)
@@ -1414,13 +1414,13 @@ ht-degree: 20%
             + [Metadados - propriedades dos fragmentos](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/content-fragments/content-fragments-metadata.html)
             + [Árvore de estrutura](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/content-fragments/content-fragments-structure-tree.html)
             + [Visualização - Representação JSON](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/content-fragments/content-fragments-json-preview.html)
-         + API de entrega{#delivery-api}
+         + API de entrega {#delivery-api}
             + [API HTTP de ativos](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/extending/mac-api-assets.html)
             + [API REST de fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/extending/assets-api-content-fragments.html)
             + [API GraphQL de fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/extending/graphql-api-content-fragments.html)
             + [Gerenciamento de endpoints do GraphQL](/help/sites-developing/headless/graphql-api/graphql-endpoint.md)
-            + [Uso do GraphiQL IDE](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/extending/graphiql-ide.html)
-            + [Consultas persistentes](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/extending/persisted-queries.html)
+            + [Usando o GraphiQL IDE](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/extending/graphiql-ide.html)
+            + [Consultas Persistentes](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/extending/persisted-queries.html)
             + [Otimização de consultas de GraphQL](/help/sites-developing/headless/graphql-api/graphql-optimization.md)
             + [Atualizar fragmentos de conteúdo para a filtragem otimizada de GraphQL](/help/sites-developing/headless/graphql-api/graphql-optimized-filtering-content-update.md)
             + [Autenticação para consultas remotas de GraphQL do AEM em fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/extending/graphql-authentication-content-fragments.html)
@@ -1446,7 +1446,7 @@ ht-degree: 20%
          + [Ativação de exportação em JSON para um componente](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/developing/components/json-exporter-components.html)
          + [Integração do Launch](/help/sites-developing/spa-launch.md)
          + [Materiais de referência de SPA](/help/sites-developing/spa-reference-materials.md)
-      + Ferramentas de desenvolvimento {#devtools}
+      + Ferramentas de Desenvolvimento {#devtools}
          + [Ferramentas de desenvolvimento](/help/sites-developing/dev-tools.md)
          + [Ferramentas de Modernização do AEM](/help/sites-developing/modernization-tools.md)
          + [Editor de caixa de diálogo](/help/sites-developing/dialog-editor.md)
@@ -1470,8 +1470,8 @@ ht-degree: 20%
          + [Exemplos de tipos de módulo da interface do usuário do ContextHub](/help/sites-developing/ch-samplemodules.md)
          + [Diagnósticos do ContextHub](/help/sites-developing/ch-diagnostics.md)
          + [Desenvolvimento de conteúdo direcionado](/help/sites-developing/target.md)
-         + [Referência da API JavaScript do ContextHub](/help/sites-developing/contexthub-api.md)
-         + Client Context{#client-context}
+         + [Referência da API do ContextHub JavaScript](/help/sites-developing/contexthub-api.md)
+         + Contexto do Cliente{#client-context}
             + [Contexto do cliente em detalhes](/help/sites-developing/client-context.md)
             + [API JavaScript do Client Context](/help/sites-developing/ccjsapi.md)
       + Extensão do AEM {#extending-aem}
@@ -1483,7 +1483,7 @@ ht-degree: 20%
          + [Personalização e extensão de fragmentos de conteúdo](/help/sites-developing/customizing-content-fragments.md)
          + [Fragmentos de conteúdo configuram componentes para renderização](/help/sites-developing/content-fragments-config-components-rendering.md)
          + [Fragmentos de experiência](/help/sites-developing/experience-fragments.md)
-         + Extensão de fluxos de trabalho{#extending-workflows}
+         + Estendendo Fluxos de Trabalho{#extending-workflows}
             + [Desenvolvimento e extensão de workflows](/help/sites-developing/workflows.md)
             + [Criação de modelos de fluxo de trabalho](/help/sites-developing/workflows-models.md)
             + [Ampliação da funcionalidade do fluxo de trabalho](/help/sites-developing/workflows-customizing-extending.md)
@@ -1493,7 +1493,7 @@ ht-degree: 20%
             + [Referência do processo de fluxo de trabalho](/help/sites-developing/workflows-process-ref.md)
             + [Variáveis em fluxos de trabalho de AEM](/help/sites-developing/using-variables-in-aem-workflows.md)
          + [Extensão do gerenciador de vários sites](/help/sites-developing/extending-msm.md)
-         + Rastreamento e análise{#extending-analytics}
+         + Rastreamento e Análise{#extending-analytics}
             + [Estender o rastreamento de eventos](/help/sites-developing/extending-analytics.md)
             + [Adicionar rastreamento do Adobe Analytics aos componentes](/help/sites-developing/extending-analytics-components.md)
             + [Personalização da estrutura do Adobe Analytics](/help/sites-developing/extending-analytics-framework.md)
@@ -1506,11 +1506,11 @@ ht-degree: 20%
             + [Criação de mapeamentos de formulário personalizados](/help/sites-developing/extending-campaign-form-mapping.md)
             + [Criação de um modelo de página AEM personalizado com componentes de formulário do Adobe Campaign](/help/sites-developing/extending-campaign-custom-template.md)
          + [Script de análise de solicitação](/help/sites-developing/analyze-request.md)
-         + Extensão da interface clássica{#extending-classic-ui}
+         + Extensão da interface clássica {#extending-classic-ui}
             + [Personalização do console Sites (interface clássica)](/help/sites-developing/customizing-siteadmin.md)
             + [Personalização do console de boas-vindas (interface clássica)](/help/sites-developing/customizing-the-welcome-console.md)
-            + [Desenvolvimento de relatórios](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/developing/platform/dev-reports.html)
-      + Testes {#testing}
+            + [Desenvolvendo Relatórios](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/developing/platform/dev-reports.html)
+      + Testando {#testing}
          + [Planejamento](/help/sites-developing/planning.md)
          + [Quais ambientes de teste são necessários?](/help/sites-developing/test-environments.md)
          + [Definição dos casos de teste](/help/sites-developing/test-cases.md)
@@ -1522,10 +1522,10 @@ ht-degree: 20%
          + [A próxima versão...](/help/sites-developing/the-next-release.md)
          + [Listas de verificação](/help/sites-developing/checklists.md)
          + [Dia difícil](/help/sites-developing/tough-day.md)
-         + [Teste da interface do usuário](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/developing/components/hobbes.html)
+         + [Testando sua interface](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/developing/components/hobbes.html)
       + Práticas recomendadas {#bestpractices}
          + [Visão geral das práticas recomendadas](/help/sites-developing/best-practices.md)
-         + [Diretrizes e práticas recomendadas de desenvolvimento do AEM](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/developing/introduction/dev-guidelines-bestpractices.html)
+         + [Diretrizes e práticas recomendadas para o desenvolvimento do AEM](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/developing/introduction/dev-guidelines-bestpractices.html)
          + [Práticas recomendadas de desenvolvimento](/help/sites-developing/development-practices.md)
          + [Arquitetura de conteúdo](/help/sites-developing/content-architecture.md)
          + [Arquitetura de software](/help/sites-developing/software-architecture.md)
@@ -1549,13 +1549,13 @@ ht-degree: 20%
          + [Design responsivo para páginas da Web](/help/sites-developing/responsive.md)
          + [Criação de sites para dispositivos móveis](/help/sites-developing/mobile.md)
          + [Emuladores](/help/sites-developing/emulators.md)
-   + Implantação {#deploying}
+   + Implantando {#deploying}
       + Introdução à plataforma AEM {#introduction}
          + [Introdução à plataforma AEM](/help/sites-deploying/platform.md)
          + [Requisitos técnicos](/help/sites-deploying/technical-requirements.md)
          + [Elementos de armazenamento no AEM 6.5](/help/sites-deploying/storage-elements-in-aem-6.md)
          + [AEM com MongoDB](/help/sites-deploying/aem-with-mongodb.md)
-      + Implantação do AEM {#deploying}
+      + Implantando AEM {#deploying}
          + [Implantação e manutenção](/help/sites-deploying/deploy.md)
          + [Implantações recomendadas](/help/sites-deploying/recommended-deploys.md)
          + [Instalação do Servidor de Aplicativos](/help/sites-deploying/application-server-install.md)
@@ -1569,9 +1569,9 @@ ht-degree: 20%
          + [Indexação através do Jar de execução do Oak](/help/sites-deploying/indexing-via-the-oak-run-jar.md)
          + [Casos de uso de indexação do Oak-run.jar](/help/sites-deploying/oak-run-indexing-usecases.md)
          + [Solução de problemas de índices do Oak](/help/sites-deploying/troubleshooting-oak-indexes.md)
-         + [Ativando A Coleta De Estatísticas De Uso Agregado](/help/sites-deploying/opt-in-aggregated-usage-statistics.md)
+         + [Optando Pela Coleção De Estatísticas De Uso Agregado](/help/sites-deploying/opt-in-aggregated-usage-statistics.md)
          + [Resolução de problemas](/help/sites-deploying/troubleshooting.md)
-      + Configuração do AEM {#configuring}
+      + Configurando o AEM {#configuring}
          + [Conceitos básicos de configuração](/help/sites-deploying/configuring.md)
          + [Logs](/help/sites-deploying/configure-logging.md)
          + [Configuração do OSGi](/help/sites-deploying/configuring-osgi.md)
@@ -1592,7 +1592,7 @@ ht-degree: 20%
          + [Guia de desempenho do Assets](/help/sites-deploying/assets-performance-sizing.md)
          + [Artigos de instruções sobre configuração](/help/sites-deploying/ht-deploy.md)
          + [Configuração do console da Web](/help/sites-deploying/configuring-web-console.md)
-      + Atualização para o AEM 6.5 {#upgrading}
+      + Atualizando para AEM 6.5 {#upgrading}
          + [Atualização para o AEM 6.5](/help/sites-deploying/upgrade.md)
          + [Planejando sua atualização](/help/sites-deploying/upgrade-planning.md)
          + [Avaliando a complexidade da atualização com o Detector de padrões](/help/sites-deploying/pattern-detector.md)
@@ -1609,7 +1609,7 @@ ht-degree: 20%
          + [Atualização de código e personalizações](/help/sites-deploying/upgrading-code-and-customizations.md)
          + [Etapas de Atualização para Instalações de Servidor de Aplicativos](/help/sites-deploying/app-server-upgrade.md)
          + [Lista de pacotes obsoletos desinstalados após a atualização](/help/sites-deploying/obsolete-bundles.md)
-      + Reestruturação do repositório {#restructuring}
+      + Reestruturação de repositório {#restructuring}
          + [Reestruturação do repositório no AEM 6.5](/help/sites-deploying/repository-restructuring.md)
          + [Reestruturação do repositório comum no AEM 6.5](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md)
          + [Reestruturação do repositório de sites no AEM 6.5](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md)
@@ -1627,14 +1627,14 @@ ht-degree: 20%
          + [Desempenho e escalabilidade](/help/sites-deploying/performance.md)
    + Experiências fluídas {#fluid-experiences}
       + [Lista de recursos](/help/fluid-experiences/feature-list.md)
-+ Gerenciamento {#managing}
++ Gerenciando {#managing}
    + [Guia do usuário de gerenciamento](/help/managing/home.md)
-   + Gerenciamento - Lista de verificação de práticas recomendadas {#managing-best-practices-checklist}
+   + Gerenciando - Lista de Verificação de Práticas Recomendadas {#managing-best-practices-checklist}
       + [Gerenciamento de projetos - Lista de verificação de práticas recomendadas](/help/managing/best-practices.md)
       + [A Lista de Verificação](/help/managing/best-practices-checklist.md)
       + [Glossário](/help/managing/best-practices-glossary.md)
       + [Lista de verificação - Referência adicional](/help/managing/best-practices-further-reference.md)
-   + Gerenciamento - Mais referência {#managing-further-reference}
+   + Gerenciando - Mais Referência {#managing-further-reference}
       + [Diretrizes de dimensionamento de hardware](/help/managing/hardware-sizing-guidelines.md)
       + [DevOps empresarial ](/help/managing/enterprise-devops.md)
       + [Práticas recomendadas de gerenciamento de SEO e URL](/help/managing/seo-and-url-management.md)

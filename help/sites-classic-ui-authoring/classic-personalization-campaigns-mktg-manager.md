@@ -38,7 +38,7 @@ Ela é dividida em quatro painéis:
 
    * [Listas](#lists)
 Esse painel mostra as listas que você já criou, juntamente com o número de clientes potenciais nessa lista. Nesse painel, é possível criar uma lista diretamente ou importar clientes em potencial para criar uma lista.
-Selecionar uma lista específica levará você ao [Listas](#lists) seção que mostra os detalhes da sua lista.
+Selecionar uma lista específica o levará à seção [Listas](#lists) mostrando os detalhes da sua lista.
 
    * [Segmentos](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#anoverviewofsegmentation)
 Esse painel mostra os segmentos que você definiu. Os segmentos permitem caracterizar uma coleção de visitantes que compartilham certas características.
@@ -49,15 +49,15 @@ O AEM fornece relatórios diferentes para ajudar você a analisar e monitorar o 
 Selecionar um relatório abre a página do relatório.
 
    * [Campanhas](#campaigns)
-Esse painel lista suas experiências de campanha, como [informativos](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#newsletters) e [teasers](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#teasers).
+Este painel lista suas experiências de campanha, como [newsletters](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#newsletters) e [teasers](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#teasers).
 
-* **[Clientes potenciais](#leads)**
-Aqui você pode gerenciar seus leads. Você pode criar ou importar clientes potenciais, editar detalhes específicos de clientes potenciais individuais ou excluir quando não for mais necessário. Você também pode colocar leads em grupos diferentes, chamados de Listas. **Nota:** A Adobe não planeja aprimorar ainda mais esse recurso.
-A recomendação é usar [Adobe Campaign e a integração com o AEM](/help/sites-administering/campaign.md).
+* **[Clientes Potenciais](#leads)**
+Aqui você pode gerenciar seus leads. Você pode criar ou importar clientes potenciais, editar detalhes específicos de clientes potenciais individuais ou excluir quando não for mais necessário. Você também pode colocar leads em grupos diferentes, chamados de Listas. **Observação:** o Adobe não está planejando aprimorar ainda mais este recurso.
+A recomendação é usar o [Adobe Campaign e a integração com o AEM](/help/sites-administering/campaign.md).
 
 * **[Listas](#lists)**
-Aqui você pode gerenciar suas listas (de clientes potenciais).**Nota:** A Adobe não planeja aprimorar ainda mais esse recurso.
-A recomendação é usar [Adobe Campaign e a integração com o AEM](/help/sites-administering/campaign.md).
+Aqui você pode gerenciar suas listas (de clientes potenciais).**Observação:** o Adobe não está planejando aprimorar ainda mais este recurso.
+A recomendação é usar o [Adobe Campaign e a integração com o AEM](/help/sites-administering/campaign.md).
 
 * **[Campanhas](#campaigns)**
 Aqui você pode gerenciar suas marcas, campanhas e experiências.
@@ -73,15 +73,15 @@ O painel mostra quatro painéis que fornecem uma visão geral de suas listas (de
 >[!NOTE]
 >
 >A Adobe não está planejando aprimorar ainda mais esse recurso (Gerenciando clientes em potencial).
->A recomendação é usar [Adobe Campaign e a integração com o AEM](/help/sites-administering/campaign.md).
+>A recomendação é usar o [Adobe Campaign e a integração com o AEM](/help/sites-administering/campaign.md).
 
 No AEM MCM, é possível organizar e adicionar leads inserindo-os manualmente ou importando uma lista separada por vírgulas; por exemplo, uma lista de mala direta. Outras maneiras de gerar leads são: inscrições em newsletters ou inscrições em comunidades (se configuradas, elas podem acionar um workflow que preenche leads). Geralmente, os clientes em potencial são categorizados e colocados em uma lista para que, posteriormente, você possa executar ações em toda a lista; por exemplo, enviar um email personalizado para uma determinada lista.
 
-Em **Clientes potenciais** no painel esquerdo, você pode criar, importar, editar e excluir seus leads e, em seguida, ativar ou desativar, conforme necessário. Você pode adicionar um cliente em potencial a uma lista ou ver a quais listas ele já pertence.
+Em **Clientes potenciais**, no painel esquerdo, você pode criar, importar, editar e excluir seus clientes potenciais e, em seguida, ativar ou desativar, conforme necessário. Você pode adicionar um cliente em potencial a uma lista ou ver a quais listas ele já pertence.
 
 >[!NOTE]
 >
->Consulte [Trabalhar com clientes em potencial](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#workingwithleads) para obter informações detalhadas sobre tarefas específicas.
+>Consulte [Trabalhando com clientes em potencial](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#workingwithleads) para obter informações detalhadas sobre tarefas específicas.
 
 ![screen_shot_2012-02-21at114748am-1](assets/screen_shot_2012-02-21at114748am-1.png)
 
@@ -90,15 +90,15 @@ Em **Clientes potenciais** no painel esquerdo, você pode criar, importar, edita
 >[!NOTE]
 >
 >O Adobe não pretende aprimorar esse recurso (Gerenciamento de listas).
->A recomendação é usar [Adobe Campaign e a integração com o AEM](/help/sites-administering/campaign.md).
+>A recomendação é usar o [Adobe Campaign e a integração com o AEM](/help/sites-administering/campaign.md).
 
 As listas permitem organizar seus leads em grupos. Com listas, você pode direcionar suas campanhas de marketing para um grupo selecionado de pessoas; por exemplo, você pode enviar um informativo direcionado para uma lista.
 
-Em **Listas**, é possível gerenciar suas listas criando, importando, editando, mesclando e excluindo listas que podem ser ativadas ou desativadas conforme necessário. Você também pode visualizar os leads dentro dessa lista, ver se a lista é um membro de outra lista ou ver a descrição.
+Em **Listas**, é possível gerenciar suas listas criando, importando, editando, mesclando e excluindo listas que você pode ativar ou desativar, conforme necessário. Você também pode visualizar os leads dentro dessa lista, ver se a lista é um membro de outra lista ou ver a descrição.
 
 >[!NOTE]
 >
->Consulte [Trabalhar com listas](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#workingwithlists) para obter informações detalhadas sobre tarefas específicas.
+>Consulte [Trabalhando com Listas](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#workingwithlists) para obter informações detalhadas sobre tarefas específicas.
 
 ![screen_shot_2012-02-21at124828pm-1](assets/screen_shot_2012-02-21at124828pm-1.png)
 
@@ -106,16 +106,18 @@ Em **Listas**, é possível gerenciar suas listas criando, importando, editando,
 
 >[!NOTE]
 >
->Consulte [Teasers e estratégias](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#workingwithlists), [Configuração da campanha](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#settingupyourcampaign) e [Boletins informativos](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#newsletters) para obter informações detalhadas sobre tarefas específicas.
+>Consulte [Teasers e estratégias](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#workingwithlists), [Configurando sua campanha](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#settingupyourcampaign) e [Newsletters](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#newsletters) para obter informações detalhadas sobre tarefas específicas.
 
 Para acessar campanhas existentes, no MCM clique em **Campanhas**.
 
 ![screen_shot_2012-02-21at11106pm](assets/screen_shot_2012-02-21at11106pm.png)
 
-* **No painel esquerdo**: há uma lista de todas as marcas e campanhas.
+* **No painel esquerdo**:
+Há uma lista de todas as marcas e campanhas.
 Clicar em uma marca expande a lista para mostrar todas as campanhas relacionadas no painel à esquerda; essa lista também mostra o número de experiências existentes para cada campanha. Também abre a visão geral da marca no painel direito.
 
-* **No painel direito**: os ícones são mostrados para cada marca (as campanhas históricas não serão mostradas).
+* **No painel direito**:
+Os ícones são exibidos para cada marca (as campanhas históricas não serão exibidas).
 Você pode clicar duas vezes neles para abrir a visão geral da marca.
 
 #### Visão geral da marca {#brand-overview}
@@ -125,13 +127,13 @@ Você pode clicar duas vezes neles para abrir a visão geral da marca.
 Aqui é possível:
 
 * Veja o número de campanhas e experiências (número mostrado no painel esquerdo) que existem para essa marca.
-* Criar um **Novo...** campanha para esta marca.
+* Crie uma campanha **New...** para esta marca.
 
-* Altere o período de tempo que está sendo visualizado; selecione **Semana**, **Month** ou **Trimestre**, use as setas para selecionar períodos específicos ou retornar a **Hoje**.
+* Altere o período de tempo sendo exibido; selecione **Semana**, **Mês** ou **Trimestre**. Use as setas para selecionar períodos específicos ou retornar a **Hoje**.
 
 * Selecione uma campanha (no painel direito) para:
 
-   * Edite o **Propriedades...**
+   * Editar as **Propriedades...**
    * **Excluir** a campanha.
 
 * Abra a visão geral da campanha (clique duas vezes em uma campanha no painel direito ou clique uma vez no painel esquerdo).
@@ -152,11 +154,11 @@ Para as campanhas individuais, há duas visualizações disponíveis:
 
    Aqui é possível:
 
-   * Altere o período que está visualizando usando as setas ou retorne para **Hoje**.
+   * Altere o período de tempo que você está visualizando usando as setas ou retorne para **Hoje**.
 
-   * Uso **Adicionar Touchpoint...** para adicionar um novo ponto de contato a uma experiência existente.
+   * Use **Adicionar ponto de contato...** para adicionar um novo ponto de contato para uma experiência existente.
 
-   * Clique em um teaser (no painel direito) para definir a **No Prazo** e **Tempo desligado**.
+   * Clique em um teaser (no painel direito) para definir o **Tempo de ativação** e o **Tempo de desativação**.
 
 1. **Exibição de lista**
 
@@ -170,17 +172,17 @@ Para as campanhas individuais, há duas visualizações disponíveis:
 
    Aqui é possível:
 
-   * Criar um **Novo...** experiência; por exemplo, ofertas, teasers e boletins informativos da Adobe Target.
-   * **Editar** os detalhes de uma página de teaser ou boletim informativo específico (um clique duplo também pode ser usado).
-   * Defina o **Propriedades...** para uma página de teaser ou boletim informativo específico.
-   * **Simular** a aparência de uma experiência (página de teaser ou boletim informativo).
+   * Crie uma experiência de **Nova...**; por exemplo, ofertas, teasers e boletins informativos da Adobe Target.
+   * **Edite** os detalhes de uma página de teaser ou boletim informativo específico (um clique duplo também pode ser usado).
+   * Defina as **Propriedades...** de uma página de teaser ou boletim informativo específico.
+   * **Simular** a aparência de uma experiência (página de teaser ou informativo).
 Quando a página simulada estiver aberta, você pode abrir o sidekick para alternar para o modo de edição para essa página.
 
    * **Analisar...** as impressões geradas para uma página.
 
-   * **Excluir** quando não forem mais necessários.
-   * **Pesquisar** para o seu texto (o campo Título da experiência será pesquisado).
-   * Uso **Avançado** pesquisa para aplicar filtros à pesquisa.
+   * **Excluir** itens quando não forem mais necessários.
+   * **Pesquise** por seu texto (o campo Título da experiência será pesquisado).
+   * Use a pesquisa **Avançada** para aplicar filtros à pesquisa.
 
 ### Simulação das experiências da campanha {#simulating-your-campaign-experiences}
 

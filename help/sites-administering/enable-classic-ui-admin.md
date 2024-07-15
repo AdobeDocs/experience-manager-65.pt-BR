@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Por padrão, a capacidade de alternar para a interface clássica por meio dos consoles de Administração está desativada. Portanto, os ícones pop-up que eram vistos ao passar o mouse sobre determinados ícones do console, permitindo acesso à interface clássica, não são mais exibidos.
 
-Todo console que tenha uma versão da interface clássica no `/libs/cq/core/content/nav` podem ser reativados individualmente para que a variável **Interface clássica** A opção aparece novamente sobre o ícone do console quando é tocada com o mouse.
+Todo console que tenha uma versão da interface clássica no `/libs/cq/core/content/nav` pode ser reabilitado individualmente para que a opção **Interface clássica** apareça novamente sobre o ícone do console quando for posicionada com o mouse.
 
 Neste exemplo, você está reativando a interface clássica para o console Sites.
 
@@ -38,17 +38,17 @@ Neste exemplo, você está reativando a interface clássica para o console Sites
 
    `/libs/cq/core/content/nav/sites`
 
-1. Criar uma sobreposição usando o **Sobrepor nó** opção; por exemplo:
+1. Crie uma sobreposição usando a opção **Sobrepor Nó**; por exemplo:
 
    * **Caminho**: `/apps/cq/core/content/nav/sites`
-   * **Local de sobreposição**: `/apps/`
-   * **Corresponder tipos de nós**: ativo (marque a caixa de seleção)
+   * **Local de Sobreposição**: `/apps/`
+   * **Corresponder Tipos de Nó**: ativo (marque a caixa de seleção)
 
 1. Adicione a seguinte propriedade booleana ao nó sobreposto:
 
    `enableDesktopOnly = {Boolean}true`
 
-1. A variável **Interface clássica** está disponível novamente como uma opção de popover no Admin Console.
+1. A opção **Interface Clássica** está novamente disponível como uma opção popover no Admin Console.
 
    ![opção de popover da interface clássica](assets/syui-01-2019-02-27-15-16-55.png)
 

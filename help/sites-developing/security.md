@@ -26,25 +26,25 @@ A criação de script entre sites (XSS) permite que invasores injetem código em
 
 O AEM aplica o princípio de filtrar todo o conteúdo fornecido pelo usuário na saída. É dada a maior prioridade à prevenção de XSS durante o desenvolvimento e o teste.
 
-O mecanismo de proteção XSS fornecido pelo AEM baseia-se no [Biblioteca Java™ antisspam](https://wiki.owasp.org/index.php/Category:OWASP_AntiSamy_Project) fornecido por [OWASP (The Open Web Application Security Project, Projeto de Segurança de Aplicações Web Abertas)](https://owasp.org/). A configuração padrão do AntiSamy pode ser encontrada em
+O mecanismo de proteção XSS fornecido pelo AEM é baseado na [Biblioteca AntiSamy Java™](https://wiki.owasp.org/index.php/Category:OWASP_AntiSamy_Project) fornecida pelo [OWASP (The Open Web Application Security Project)](https://owasp.org/). A configuração padrão do AntiSamy pode ser encontrada em
 
 `/libs/cq/xssprotection/config.xml`
 
-É importante adaptar essa configuração às suas necessidades de segurança, sobrepondo o arquivo de configuração. O funcionário [Documentação do AntiSamy](https://wiki.owasp.org/index.php/Category:OWASP_AntiSamy_Project) O fornece todas as informações necessárias para implementar seus requisitos de segurança.
+É importante adaptar essa configuração às suas necessidades de segurança, sobrepondo o arquivo de configuração. A [documentação oficial do AntiSamy](https://wiki.owasp.org/index.php/Category:OWASP_AntiSamy_Project) fornece todas as informações necessárias para implementar seus requisitos de segurança.
 
 >[!NOTE]
 >
->O Adobe recomenda que você sempre acesse a API de proteção XSS usando a variável [XSSAPI fornecido por AEM](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/xss/XSSAPI.html).
+>A Adobe recomenda que você sempre acesse a API de proteção XSS usando o [XSSAPI fornecido pelo AEM](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/xss/XSSAPI.html).
 
-Além disso, um firewall de aplicativo web, como [mod_security para Apache](https://www.modsecurity.org)O, oferece controle confiável e central sobre a segurança do ambiente de implantação e proteção contra ataques de script entre sites não detectados anteriormente.
+Além disso, um firewall de aplicativo da Web, como o [mod_security para Apache](https://www.modsecurity.org), pode fornecer controle central e confiável sobre a segurança do ambiente de implantação e proteger contra ataques de script entre sites não detectados anteriormente.
 
 ## Acesso às informações do Cloud Service {#access-to-cloud-service-information}
 
 >[!NOTE]
 >
->As ACLs para as Informações de Cloud Service e as configurações de OSGi necessárias para proteger sua instância são automatizadas como parte da [Modo de produção pronto](/help/sites-administering/production-ready.md). Embora isso signifique que não é necessário alterar a configuração manualmente, ainda é recomendável revisá-los antes de entrar em funcionamento com a implantação.
+>As ACLs para as Informações de Cloud Service e as configurações de OSGi necessárias para proteger sua instância são automatizadas como parte do [Modo Pronto para Produção](/help/sites-administering/production-ready.md). Embora isso signifique que não é necessário alterar a configuração manualmente, ainda é recomendável revisá-los antes de entrar em funcionamento com a implantação.
 
-Quando você [integrar sua instância do AEM à Adobe Experience Cloud](/help/sites-administering/marketing-cloud.md), você usa [configurações de Cloud Service](/help/sites-developing/extending-cloud-config.md). As informações sobre essas configurações, juntamente com quaisquer estatísticas coletadas, são armazenadas no repositório. A Adobe recomenda que, se estiver usando essa funcionalidade, você verifique se a segurança padrão nessas informações corresponde aos seus requisitos.
+Ao [integrar sua instância do AEM à Adobe Experience Cloud](/help/sites-administering/marketing-cloud.md), você usa [configurações de Cloud Service](/help/sites-developing/extending-cloud-config.md). As informações sobre essas configurações, juntamente com quaisquer estatísticas coletadas, são armazenadas no repositório. A Adobe recomenda que, se estiver usando essa funcionalidade, você verifique se a segurança padrão nessas informações corresponde aos seus requisitos.
 
 O módulo webservicesupport grava estatísticas e informações de configuração em:
 
@@ -52,10 +52,10 @@ O módulo webservicesupport grava estatísticas e informações de configuraçã
 
 Com as permissões padrão:
 
-* Ambiente do autor: `read` para `contributors`
+* Ambiente de autor: `read` para `contributors`
 
-* Ambiente de publicação: `read` para `everyone`
+* Ambiente do Publish: `read` para `everyone`
 
 ## Protect contra ataques de falsificação de solicitação entre sites {#protect-against-cross-site-request-forgery-attacks}
 
-Para obter mais informações sobre os mecanismos de segurança que o AEM utiliza para mitigar ataques de CSRF, consulte [Sling Referrer Filter](/help/sites-administering/security-checklist.md#protect-against-cross-site-request-forgery) seção da Lista de verificação de segurança e da [Documentação da Estrutura de proteção CSRF](/help/sites-developing/csrf-protection.md).
+Para obter mais informações sobre os mecanismos de segurança que o AEM emprega para mitigar ataques CSRF, consulte a seção [Filtro de referenciador do Sling](/help/sites-administering/security-checklist.md#protect-against-cross-site-request-forgery) da Lista de verificação de segurança e a [documentação da Estrutura de proteção CSRF](/help/sites-developing/csrf-protection.md).

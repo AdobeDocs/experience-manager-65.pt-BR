@@ -28,4 +28,4 @@ Se houver uma geração de fatura mensal para uma empresa de telecomunicações,
 
 A criação de uma política abstrata é suportada somente por meio do SDK Java de segurança de documentos. No entanto, você pode administrar as políticas criadas a partir da política abstrata das páginas da Web de segurança de documentos. As políticas criadas usando esse método são idênticas em comportamento às criadas nas páginas da Web de segurança de documentos.
 
-Consulte [Programação com formulários AEM](https://www.adobe.com/go/learn_aemforms_programming_63) para obter mais informações.
+Consulte [Programação com AEM](https://www.adobe.com/go/learn_aemforms_programming_63) para obter mais informações.

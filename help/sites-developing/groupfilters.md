@@ -32,9 +32,9 @@ Depois de criar um filtro, você pode usá-lo na [configuração do grupo.](/hel
 
 ## A classe Filter Java™ {#the-filter-java-class}
 
-Um filtro de grupo de dispositivos é um componente OSGi que implementa o [com.day.cq.wcm.mobile.api.device.DeviceGroupFilter](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html) interface. Quando implantada, a classe de implementação fornece um serviço de filtro que está disponível para configurações de grupos de dispositivos.
+Um filtro de grupo de dispositivos é um componente OSGi que implementa a interface [com.day.cq.wcm.mobile.api.device.DeviceGroupFilter](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html). Quando implantada, a classe de implementação fornece um serviço de filtro que está disponível para configurações de grupos de dispositivos.
 
-A solução descrita neste artigo usa o plug-in Apache Felix Maven SCR para facilitar o desenvolvimento do componente e do serviço. Portanto, a classe Java™ de exemplo usa a variável `@Component`e `@Service` anotações. A classe tem a seguinte estrutura:
+A solução descrita neste artigo usa o plug-in Apache Felix Maven SCR para facilitar o desenvolvimento do componente e do serviço. Portanto, a classe Java™ de exemplo usa as anotações `@Component` e `@Service`. A classe tem a seguinte estrutura:
 
 ```java
 package com.adobe.example.myapp;
@@ -74,7 +74,7 @@ Forneça o código para os seguintes métodos:
 
 ### Fornecer o nome e a descrição do filtro {#providing-the-filter-name-and-description}
 
-A variável `getTitle` e `getDescription` Os métodos do retornam o nome e a descrição do filtro, respectivamente. O código a seguir ilustra a implementação mais simples:
+Os métodos `getTitle` e `getDescription` retornam o nome e a descrição do filtro, respectivamente. O código a seguir ilustra a implementação mais simples:
 
 ```java
 public String getDescription() {
@@ -90,13 +90,13 @@ A codificação rígida do nome e do texto de descrição é suficiente para amb
 
 ### Avaliando em Relação aos Critérios de Filtro {#evaluating-against-filter-criteria}
 
-A variável `matches` função retorna `true` se os recursos do dispositivo atenderem a todos os critérios de filtro. Avalie as informações fornecidas nos argumentos de método para determinar se o dispositivo pertence ao grupo. Os seguintes valores são fornecidos como argumentos:
+A função `matches` retornará `true` se os recursos do dispositivo atenderem a todos os critérios de filtro. Avalie as informações fornecidas nos argumentos de método para determinar se o dispositivo pertence ao grupo. Os seguintes valores são fornecidos como argumentos:
 
 * Um objeto DeviceGroup
 * O nome do agente do usuário
 * Um objeto Map que contém os recursos do dispositivo. As chaves Map são os nomes do recurso WURFL™ e os valores são os valores correspondentes do banco de dados WURFL™.
 
-A variável [com.day.cq.wcm.mobile.api.devicespecs.DeviceSpecsConstants](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html) A interface contém um subconjunto dos nomes de recursos WURFL™ em campos estáticos. Use essas constantes de campo como chaves ao recuperar valores do Mapa de recursos do dispositivo.
+A interface [com.day.cq.wcm.mobile.api.devicespecs.DeviceSpecsConstants](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html) contém um subconjunto dos nomes de recursos WURFL™ em campos estáticos. Use essas constantes de campo como chaves ao recuperar valores do Mapa de recursos do dispositivo.
 
 Por exemplo, o código de exemplo a seguir determina se o dispositivo oferece suporte a CSS:
 
@@ -105,7 +105,7 @@ boolean cssSupport = true;
 cssSupport = NumberUtils.toInt(capabilities.get(DeviceSpecsConstants.DSPEC_XHTML_SUPPORT_LEVEL)) > 1;
 ```
 
-A variável `org.apache.commons.lang.math` O pacote fornece o `NumberUtils` classe.
+O pacote `org.apache.commons.lang.math` fornece a classe `NumberUtils`.
 
 >[!NOTE]
 >
@@ -115,7 +115,7 @@ A variável `org.apache.commons.lang.math` O pacote fornece o `NumberUtils` clas
 
 O exemplo de implementação DeviceGroupFilter a seguir determina se o tamanho físico do dispositivo atende aos requisitos mínimos. Esse filtro destina-se a adicionar granularidade ao grupo de dispositivos de toque. O tamanho dos botões na interface do aplicativo deve ser o mesmo, independentemente do tamanho da tela física. O tamanho de outros itens, como texto, pode variar. O filtro permite a seleção dinâmica de um CSS específico que controla o tamanho dos elementos da interface.
 
-Este filtro aplica critérios de tamanho ao `physical_screen_height` e `physical_screen_width` Nomes de propriedade WURFL™.
+Este filtro aplica critérios de tamanho aos nomes de propriedades WURFL™ `physical_screen_height` e `physical_screen_width`.
 
 ```java
 package com.adobe.example.myapp;
@@ -186,13 +186,13 @@ O código POM a seguir é útil se você usar o Maven para criar seus aplicativo
 
 * `cq-wcm-mobile-api-5.5.2.jar`: Fornece as interfaces DeviceGroup e DeviceGroupFilter.
 
-* `org.apache.felix.scr.annotations.jar`: fornece as anotações de Componente e Serviço.
+* `org.apache.felix.scr.annotations.jar`: Fornece as anotações de Componente e Serviço.
 
 As interfaces DeviceGroup e DeviceGroupFilter estão incluídas no pacote da API móvel WCM do Comunicado do dia 5. As anotações Felix estão incluídas no pacote do Apache Felix Declarative Services. Você pode obter esse arquivo JAR do repositório Adobe público.
 
-No momento da criação, a 5.5.2 é a versão do pacote da API do WCM Mobile que está na versão mais recente do AEM. Usar o console da Web do Adobe ([https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles)) para garantir que essa seja a versão do pacote implantada em seu ambiente.
+No momento da criação, a 5.5.2 é a versão do pacote da API do WCM Mobile que está na versão mais recente do AEM. Use o Console da Web do Adobe ([https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles)) para garantir que esta seja a versão do pacote implantada em seu ambiente.
 
-**POM:** (Seu POM usa um groupId e uma versão diferentes.)
+**POM:** (seu POM usa um groupId e uma versão diferentes.)
 
 ```xml
 <project xmlns="https://maven.apache.org/POM/4.0.0"
@@ -257,4 +257,4 @@ No momento da criação, a 5.5.2 é a versão do pacote da API do WCM Mobile que
 </project>
 ```
 
-Adicione o perfil que a [Obter o plug-in Maven do pacote de conteúdo](/help/sites-developing/vlt-mavenplugin.md) A seção fornece ao arquivo de configurações maven o uso do repositório Adobe público.
+Adicione o perfil que a seção [Obtendo o plug-in Maven do pacote de conteúdo](/help/sites-developing/vlt-mavenplugin.md) fornece ao arquivo de configurações maven para usar o repositório Adobe público.

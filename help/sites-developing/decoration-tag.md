@@ -39,33 +39,33 @@ Estas são algumas recomendações gerais de quando incluir o elemento invólucr
 
 As seguintes propriedades e nós podem ser aplicados aos componentes para controlar o comportamento da tag de decoração:
 
-* **`cq:noDecoration {boolean}`:** Essa propriedade pode ser adicionada a um componente e um valor verdadeiro força o AEM a não gerar elementos do invólucro sobre o componente.
+* **`cq:noDecoration {boolean}`:** Essa propriedade pode ser adicionada a um componente e um valor verdadeiro força o AEM a não gerar elementos wrapper sobre o componente.
 
-* **`cq:htmlTag`nó :** Esse nó pode ser adicionado em um componente e pode ter as seguintes propriedades:
+* Nó **`cq:htmlTag`:** Este nó pode ser adicionado em um componente e pode ter as seguintes propriedades:
 
-   * **`cq:tagName {String}`:** Isso pode ser usado para especificar uma tag HTML personalizada para ser usada para envolver os componentes em vez do elemento DIV padrão.
-   * **`class {String}`:** Isso pode ser usado para especificar nomes de classe css a serem adicionados ao invólucro.
+   * **`cq:tagName {String}`:** Isso pode ser usado para especificar uma marca de HTML personalizada a ser usada para envolver os componentes em vez do elemento DIV padrão.
+   * **`class {String}`:** Pode ser usado para especificar nomes de classe css a serem adicionados ao invólucro.
    * Outros nomes de propriedades serão adicionados como atributos de HTML com o mesmo valor de string fornecido.
 
 ## Controles de script {#script-controls}
 
-No entanto, o comportamento do invólucro é diferente dependendo se [HTL](/help/sites-developing/decoration-tag.md#htl) ou [JSP](/help/sites-developing/decoration-tag.md#jsp) é usado para incluir o elemento.
+No entanto, o comportamento do invólucro é diferente dependendo se o [HTL](/help/sites-developing/decoration-tag.md#htl) ou o [JSP](/help/sites-developing/decoration-tag.md#jsp) é usado para incluir o elemento.
 
 ### HTL {#htl}
 
 Em geral, o comportamento do invólucro no HTL pode ser resumido da seguinte maneira:
 
-* Nenhum DIV do invólucro é renderizado por padrão (ao fazer `data-sly-resource="foo"`).
+* Nenhum DIV de wrapper é renderizado por padrão (quando apenas faz `data-sly-resource="foo"`).
 * Todos os modos wcm (desativado, pré-visualização, edição no autor e publicação) são renderizados de forma idêntica.
 
 O comportamento do invólucro também pode ser totalmente controlado.
 
 * O script HTL tem controle total sobre o comportamento resultante da tag do invólucro.
-* Propriedades do componente (como `cq:noDecoration` e `cq:tagName`) também pode definir a tag do invólucro.
+* As propriedades do componente (como `cq:noDecoration` e `cq:tagName`) também podem definir a marca wrapper.
 
 É possível controlar totalmente o comportamento das tags do invólucro de scripts HTL e sua lógica associada.
 
-Para obter mais informações sobre como desenvolver em HTL, consulte a [Documentação HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=pt-BR).
+Para obter mais informações sobre como desenvolver em HTL, consulte a [documentação HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=pt-BR).
 
 #### Árvore de decisão {#decision-tree}
 
@@ -99,7 +99,7 @@ Todos os exemplos a seguir pressupõem a seguinte estrutura de conteúdo e compo
 
 #### Caso de uso 1: Incluir um componente para reutilização de código {#use-case-include-a-component-for-code-reuse}
 
-O caso de uso mais comum é quando um componente inclui outro componente por motivos de reutilização de código. Nesse caso, o componente incluído não deseja ser editável com sua própria barra de ferramentas e caixa de diálogo, portanto, nenhum invólucro é necessário e as propriedades do componente `cq:htmlTag` serão ignorados. Esse pode ser considerado o comportamento padrão.
+O caso de uso mais comum é quando um componente inclui outro componente por motivos de reutilização de código. Nesse caso, o componente incluído não é desejado para ser editável com sua própria barra de ferramentas e caixa de diálogo, portanto, nenhum invólucro é necessário, e o `cq:htmlTag` do componente será ignorado. Esse pode ser considerado o comportamento padrão.
 
 `one.html: <sly data-sly-resource="child"></sly>`
 
@@ -113,9 +113,9 @@ Um exemplo seria um componente que inclui um componente de imagem principal para
 
 #### Caso de uso 2: incluir um componente editável {#use-case-include-an-editable-component}
 
-Outro caso de uso comum é quando componentes de contêiner incluem componentes filhos editáveis, como um Contêiner de layout. Nesse caso, cada filho incluído precisa imperativamente de um invólucro para que o editor funcione (a menos que explicitamente desativado com o `cq:noDecoration` propriedade).
+Outro caso de uso comum é quando componentes de contêiner incluem componentes filhos editáveis, como um Contêiner de layout. Nesse caso, cada filho incluído precisa imperativamente de um invólucro para que o editor funcione (a menos que explicitamente desabilitado com a propriedade `cq:noDecoration` ).
 
-Como o componente incluído é, neste caso, um componente independente, ele precisa de um elemento wrapper para que o editor funcione e para definir seu layout e estilo a serem aplicados. Para acionar esse comportamento, há a `decoration=true` opção.
+Como o componente incluído é, neste caso, um componente independente, ele precisa de um elemento wrapper para que o editor funcione e para definir seu layout e estilo a serem aplicados. Para acionar esse comportamento, há a opção `decoration=true`.
 
 `one.html: <sly data-sly-resource="${'child' @ decoration=true}"></sly>`
 
@@ -130,7 +130,7 @@ Saída resultante em `/content/test.html`:
 Pode haver qualquer número de casos complexos, que podem ser facilmente obtidos com a possibilidade de o HTL fornecer explicitamente:
 
 * **`decorationTagName='ELEMENT_NAME'`** Para definir o nome do elemento do invólucro.
-* **`cssClassName='CLASS_NAME'`** Para definir os nomes de classe CSS a serem definidos nela.
+* **`cssClassName='CLASS_NAME'`** Para definir os nomes de classe CSS a serem definidos.
 
 `one.html: <sly data-sly-resource="${'child' @ decorationTagName='aside', cssClassName='child'}"></sly>`
 
@@ -149,6 +149,6 @@ Ao incluir um componente usando `cq:includ`e ou `sling:include`, o comportamento
 
 ### Árvore de decisão {#decision-tree-1}
 
-A seguinte árvore decisória ilustra como `cq:noDecoration`, `cq:htmlTag`, `cq:tagName`, e `decorationTagName` afetam o comportamento do invólucro.
+A árvore decisória a seguir ilustra como `cq:noDecoration`, `cq:htmlTag`, `cq:tagName` e `decorationTagName` afetam o comportamento do invólucro.
 
 ![chlimage_1-3](assets/chlimage_1-3a.jpeg)

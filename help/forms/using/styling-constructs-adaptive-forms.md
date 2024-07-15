@@ -17,7 +17,7 @@ ht-degree: 3%
 
 # Construtores de estilo para formulários adaptáveis{#styling-constructs-for-adaptive-forms}
 
-<span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) para [criação de um novo Forms adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
+O <span class="preview"> Adobe recomenda o uso de [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adicionar o Forms Adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
 
 ## Pré-requisitos {#prerequisites}
 
@@ -25,7 +25,7 @@ Conhecimento de CSS e da estrutura LESS.
 
 ## O que pode ser personalizado {#what-can-be-customized}
 
-O artigo lista classes css de formulários adaptáveis disponíveis publicamente. Você pode usar essas classes para estilizar vários componentes de um formulário adaptável. O estilo dos componentes de criação, como caixas de diálogo e barras de status que exibem avisos, está fora do escopo deste artigo. Use essas construções de estilo para criar estilos (usando CSS ou Menos) somente quando não for possível estilizar componentes usando [editor de tema](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html).
+O artigo lista classes css de formulários adaptáveis disponíveis publicamente. Você pode usar essas classes para estilizar vários componentes de um formulário adaptável. O estilo dos componentes de criação, como caixas de diálogo e barras de status que exibem avisos, está fora do escopo deste artigo. Use estas construções de estilo para criar estilos (usando CSS ou Menos) somente quando não for possível estilizar componentes usando o [editor de temas](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html).
 
 ## Personalização de estilos em formulários adaptáveis {#customizing-styles-in-adaptive-forms}
 
@@ -140,7 +140,7 @@ Os campos incluem rótulos, widgets, descrição da Ajuda (descrição longa e c
 
 ## Estilo do rótulo {#label-styling}
 
-O elemento HTML **rótulo** usado para o campo inclui as classes **left** ou **top** dependendo se o rótulo está na parte superior ou à esquerda.
+O elemento HTML **rótulo** usado para o campo inclui as classes **left** ou **top**, dependendo se o rótulo está na parte superior ou à esquerda.
 
 <table>
  <tbody>
@@ -180,11 +180,11 @@ O elemento HTML **rótulo** usado para o campo inclui as classes **left** ou **t
  </tbody>
 </table>
 
-As regras CSS para o rótulo são aplicadas usando o **guideFieldLabel** rótulo. Se você for um autor, substitua essa regra para tornar visíveis as alterações personalizadas.
+As regras de CSS para o rótulo são aplicadas usando o rótulo **guideFieldLabel**. Se você for um autor, substitua essa regra para tornar visíveis as alterações personalizadas.
 
 ## Estilo dos widgets {#widgets-styling}
 
-Dependendo do tipo, os widgets também incluem classes. Geralmente, os widgets incluem o `guideFieldWidget` classe. Os widgets enviados com o HTML normalmente usam a entrada de elemento de HTML padrão e selecionam. O estilo é feito de acordo. Não é possível estilizar um widget personalizado alterando as variáveis.
+Dependendo do tipo, os widgets também incluem classes. Geralmente, os widgets incluem a classe `guideFieldWidget`. Os widgets enviados com o HTML normalmente usam a entrada de elemento de HTML padrão e selecionam. O estilo é feito de acordo. Não é possível estilizar um widget personalizado alterando as variáveis.
 
 <table>
  <tbody>
@@ -331,7 +331,7 @@ Um autor pode especificar o conteúdo da Ajuda nos campos usando componentes de 
 
 ## Termos e condições {#terms-and-conditions}
 
-Os Termos e Condições (TnC `` ``) permite especificar termos e condições. Você pode personalizar o widget usando as variáveis descritas na tabela a seguir.
+O widget Termos e condições (TnC `` ``) permite especificar os termos e condições. Você pode personalizar o widget usando as variáveis descritas na tabela a seguir.
 
 <table>
  <tbody>
@@ -641,7 +641,7 @@ O código de HTML a seguir para o elemento tab navigator é (semelhante às guia
 
 `</div>`
 
-Você pode alterar o estilo do navegador usando regras CSS que selecionam os elementos usando **descendente** seletores. Por exemplo, para adicionar um estilo de decoração de texto à tag de âncora:
+Você pode alterar o estilo do navegador usando regras CSS que selecionam os elementos usando seletores **descendentes**. Por exemplo, para adicionar um estilo de decoração de texto à tag de âncora:
 
 Navegador de guias na parte superior:
 
@@ -721,7 +721,7 @@ A classe guideNavIcon fornece um ícone padrão para os navegadores de guia (à 
 
 >[!NOTE]
 >
->Você pode alterar o ícone de um navegador específico fornecendo uma classe CSS no painel em criação, exemplo de formulário &lt;class_name>. Você adiciona um **&lt;class_name>_nav** para o ícone do navegador.
+>Você pode alterar o ícone de um navegador específico fornecendo uma classe CSS no painel em criação, exemplo de formulário &lt;CLASS_NAME>. Você adiciona um **&lt;CLASS_NAME>_nav** para o ícone do navegador.
 
 <table>
  <tbody>
@@ -917,7 +917,7 @@ Um Painel inclui uma barra de ferramentas opcional e seu conteúdo.
   </tr>
   <tr>
    <td><p><code>panel-font-color</code></p> </td>
-   <td><p>Cor da fonte do texto do painel<br /> </p> </td>
+   <td><p>Cor da fonte para o texto do painel<br /> </p> </td>
   </tr>
   <tr>
    <td><p><code>panel-padding</code></p> </td>
@@ -942,7 +942,7 @@ Um Painel inclui uma barra de ferramentas opcional e seu conteúdo.
  </tbody>
 </table>
 
-O nó do painel é dividido em navegadores e conteúdo. Há `` `` não é um componente de estilo separado para o conteúdo. As variáveis descritas são aplicadas no navegador e no conteúdo.
+O nó do painel é dividido em navegadores e conteúdo. Não há `` `` componente de estilo separado para o conteúdo. As variáveis descritas são aplicadas no navegador e no conteúdo.
 
 O painel mais acima (RootPanel) não tem essa classe.
 
@@ -1076,7 +1076,7 @@ Essas variáveis na tabela a seguir influenciam o layout da barra de ferramentas
 
 ## Variável específica do tema {#theme-specific-variable}
 
-A variável **Inscrição simples** theme em /etc/clientlibs/fd/af/guidetheme/simpleEnrollment e a categoria `guide.theme.simpleEnrollment` também introduzem algumas variáveis. Se você quiser criar um tema que melhore a inscrição simples, poderá usar as seguintes &quot;variáveis adicionais:
+O tema de **Inscrição simples** em /etc/clientlibs/fd/af/guidetheme/simpleEnrollment e a categoria `guide.theme.simpleEnrollment` também apresentam algumas variáveis. Se você quiser criar um tema que melhore a inscrição simples, poderá usar as seguintes &quot;variáveis adicionais:
 
 <table>
  <tbody>

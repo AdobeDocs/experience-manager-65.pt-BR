@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Criação e gerenciamento de políticas {#creating-and-managing-policies}
 
-A *política* define um conjunto de configurações de confidencialidade e usuários que podem acessar um documento ao qual a política é aplicada. A *conjunto de políticas* O é usado para agrupar um conjunto de políticas que têm um objetivo comercial comum. Esses conjuntos de políticas são então disponibilizados a um subconjunto de usuários no sistema. Para obter detalhes sobre políticas, consulte [Políticas e documentos protegidos por política](/help/forms/using/admin-help/document-security.md#policies-and-policy-protected-documents).
+Uma *política* define um conjunto de configurações de confidencialidade e usuários que podem acessar um documento ao qual a política é aplicada. Um *conjunto de políticas* é usado para agrupar um conjunto de políticas que têm uma finalidade comercial comum. Esses conjuntos de políticas são então disponibilizados a um subconjunto de usuários no sistema. Para obter detalhes sobre políticas, consulte [Políticas e documentos protegidos por política](/help/forms/using/admin-help/document-security.md#policies-and-policy-protected-documents).
 
 ## Tipos de políticas {#types-of-policies}
 
@@ -34,11 +34,11 @@ Os usuários convidados também poderão criar, editar, copiar e excluir políti
 
 Os administradores e coordenadores de definições de políticas criam políticas compartilhadas com base nos requisitos de confidencialidade que sua organização identifica para diferentes tipos de documentos e usuários. As políticas compartilhadas estão contidas em conjuntos de políticas e estão disponíveis a todos os usuários autorizados (editores de documentos, coordenadores de definições de políticas e destinatários de documentos) para um conjunto de políticas específico. Os administradores e coordenadores de definições de políticas podem ativar e desativar políticas compartilhadas. As políticas compartilhadas aparecem nos conjuntos de políticas na guia Conjuntos de políticas da página Políticas.
 
-Quando você instala a segurança de documentos pela primeira vez, ela contém uma política compartilhada, chamada *Restringir a todas as entidades de segurança*. Quando essa política é aplicada a um documento, qualquer usuário que possa fazer logon na segurança de documentos pode acessar o documento. Esta política está no conjunto de políticas chamado *Conjunto de Políticas Globais*. Por padrão, essa política não está ativada. Você pode ativá-lo se ele atender às necessidades de sua organização.
+Quando você instala a segurança de documentos pela primeira vez, ela contém uma política compartilhada, denominada *Restringir a todas as entidades de segurança*. Quando essa política é aplicada a um documento, qualquer usuário que possa fazer logon na segurança de documentos pode acessar o documento. Esta política está no conjunto de políticas denominado *Conjunto de Políticas Globais*. Por padrão, essa política não está ativada. Você pode ativá-lo se ele atender às necessidades de sua organização.
 
 **Políticas geradas automaticamente pelo Microsoft® Outlook**
 
-Usando o Acrobat, você pode aplicar políticas a documentos enviados como anexos de email no Microsoft® Outlook. No Outlook, você pode proteger um documento usando uma política existente. Ou você pode usar uma política gerada automaticamente que o Acrobat gera com configurações de confidencialidade padrão e se aplica ao documento anexado a uma mensagem de email. (Consulte *[Ajuda do Acrobat](https://help.adobe.com/en_US/acrobat/pro/using/index.html)*.)
+Usando o Acrobat, você pode aplicar políticas a documentos enviados como anexos de email no Microsoft® Outlook. No Outlook, você pode proteger um documento usando uma política existente. Ou você pode usar uma política gerada automaticamente que o Acrobat gera com configurações de confidencialidade padrão e se aplica ao documento anexado a uma mensagem de email. (Consulte a *[Ajuda do Acrobat](https://help.adobe.com/en_US/acrobat/pro/using/index.html)*.)
 
 >[!NOTE]
 >
@@ -50,11 +50,11 @@ A maneira como você interage com políticas e conjuntos de políticas depende d
 
 **Usuários:** Os usuários podem criar, editar e excluir suas políticas pessoais. Usuários convidados também podem criar políticas pessoais se o administrador habilitar esse recurso.
 
-**Coordenadores de definições de políticas:** Os coordenadores de definições de políticas podem criar e gerenciar políticas compartilhadas nos conjuntos de políticas em que são designados como coordenadores. Um coordenador de conjunto de políticas normalmente é um especialista na organização que pode criar melhor as políticas em um conjunto de políticas específico.
+**Coordenadores de definições de políticas:** os coordenadores de definições de políticas podem criar e gerenciar políticas compartilhadas nos conjuntos de políticas em que são designados como coordenadores. Um coordenador de conjunto de políticas normalmente é um especialista na organização que pode criar melhor as políticas em um conjunto de políticas específico.
 
 **Administradores:** Os administradores podem editar as políticas pessoais de qualquer usuário. Eles podem criar políticas compartilhadas. Eles também podem criar, editar e excluir conjuntos de políticas e designar coordenadores de definições de políticas.
 
-Para obter detalhes sobre as várias funções de segurança de documentos, consulte [Sobre usuários de segurança de documentos](/help/forms/using/admin-help/document-security.md#about-document-security-users).
+Para obter detalhes sobre as várias funções de segurança de documentos, consulte [Sobre usuários da segurança de documentos](/help/forms/using/admin-help/document-security.md#about-document-security-users).
 
 ## Criação e edição de políticas {#creating-and-editing-policies}
 
@@ -111,13 +111,13 @@ Quando você edita políticas, estas restrições se aplicam:
    >É possível criar um nome de política que contenha caracteres estendidos; no entanto, quando uma comparação é feita entre duas strings, caracteres acentuados e não acentuados, como &quot;e&quot; e &quot;é&quot;, são considerados iguais. Quando alguém cria uma política, é feita uma comparação para verificar se existe uma política com o mesmo nome. A comparação não pode distinguir entre nomes que são iguais, exceto para caracteres acentuados. Pressupõe-se que a política já esteja adicionada ao banco de dados e a nova não esteja adicionada.
 
 1. Adicione usuários e grupos à política e defina as permissões apropriadas. (Consulte [Usuários e grupos](creating-policies.md#users-and-groups).)
-1. Em Configurações gerais, selecione as opções apropriadas. (Consulte [Configurações gerais](creating-policies.md#general-settings).)
+1. Em Configurações gerais, selecione as opções apropriadas. (Consulte [Configurações Gerais](creating-policies.md#general-settings).)
 1. (Opcional) Se aplicável, selecione um provedor de autorização externo e especifique suas propriedades. Se você não quiser usar um provedor de autorização externo, clique em Remover Provedor Padrão.
 
    Um provedor de autorização externo é usado para configurar propriedades na política e, quando selecionado, o provedor de autorização externo usa essas informações para avaliar a política. As propriedades disponíveis são configuradas pelo administrador e pela pessoa que instala o software.
 
-1. Em Configurações avançadas, selecione as opções apropriadas. (Consulte [Configurações avançadas](creating-policies.md#advanced-settings).)
-1. Em Configurações avançadas inalteráveis, selecione as opções apropriadas. (Consulte [Configurações avançadas inalteráveis](creating-policies.md#unchangeable-advanced-settings).)
+1. Em Configurações avançadas, selecione as opções apropriadas. (Consulte [Configurações Avançadas](creating-policies.md#advanced-settings).)
+1. Em Configurações avançadas inalteráveis, selecione as opções apropriadas. (Consulte [Configurações Avançadas Inalteráveis](creating-policies.md#unchangeable-advanced-settings).)
 1. Clique em Salvar. A política aparece na lista de políticas. Um ícone com um círculo vermelho é exibido ao lado da nova política, indicando que ainda está desativado.
 
    Para disponibilizar a política para os usuários, ative-a. (Consulte [Habilitar ou desabilitar políticas compartilhadas](creating-policies.md#enable-or-disable-shared-policies).)
@@ -130,7 +130,7 @@ Na área Usuários e grupos, especifique os usuários que têm acesso a document
 >
 >O editor do documento é o usuário que protege o documento com a política. Esse usuário é sempre incluído por padrão em uma política, com direitos de acesso totais, incluindo recursos de revogação e troca de políticas. No entanto, os administradores podem alterar os direitos de acesso do editor do documento para políticas compartilhadas. Por exemplo, o administrador pode restringir o editor de documentos de revogar o acesso aos documentos ou alternar a política.
 
-**Adicionar usuário ou grupo:** Para adicionar um usuário ou grupo de usuários, clique em Adicionar usuário ou grupo e, em seguida, clique em Pesquisa avançada para encontrar usuários ou grupos. Os usuários incluem os usuários internos da organização e os usuários convidados que se registraram com segurança de documentos. Quando você seleciona essa opção, a página Adicionar Usuário ou Grupo é exibida:
+**Adicionar Usuário ou Grupo:** Para adicionar um usuário ou grupo de usuários, clique em Adicionar Usuário ou Grupo e, em seguida, clique em Pesquisa Avançada para encontrar usuários ou grupos. Os usuários incluem os usuários internos da organização e os usuários convidados que se registraram com segurança de documentos. Quando você seleciona essa opção, a página Adicionar Usuário ou Grupo é exibida:
 
 * Na caixa Localizar, digite o nome do usuário ou do grupo ou o endereço de email.
 * Na lista Utilizando, selecione Nome ou Email.
@@ -162,53 +162,53 @@ A guia Permissões e opções é exibida em Segurança do documento.
 
 Essas permissões de documento estão disponíveis na guia Permissões. Você pode aplicar essas permissões aos arquivos PDF, PTC Pro/E e Microsoft Office.
 
-**Imprimir:** Permite que o usuário imprima um documento protegido por esta política. Para arquivos do Office e Pro/E, você pode marcar a caixa de seleção Imprimir para permitir a impressão ou desmarcá-la para impedir a impressão. Se você marcar a caixa de seleção Mostrar permissões personalizadas para PDF, será possível selecionar entre estas opções:
+**Imprimir:** permite que o usuário imprima um documento protegido por esta política. Para arquivos do Office e Pro/E, você pode marcar a caixa de seleção Imprimir para permitir a impressão ou desmarcá-la para impedir a impressão. Se você marcar a caixa de seleção Mostrar permissões personalizadas para PDF, será possível selecionar entre estas opções:
 
-**Não permitido:** O usuário não tem permissão para imprimir o PDF.
+**Não permitido:** o usuário não tem permissão para imprimir o PDF.
 
-**Permitido:** O usuário tem permissão para imprimir o PDF.
+**Permitido:** o usuário tem permissão para imprimir o PDF.
 
-**Baixa resolução. somente:** O usuário pode imprimir o PDF em baixa resolução.
+**Baixa resolução. somente:** usuário pode imprimir o PDF em baixa resolução.
 
-**Modificar:** Permite que o usuário modifique um documento protegido por esta política. Para arquivos do Office e Pro/E, você pode marcar a caixa de seleção Modificar para permitir modificações ou desmarcá-la para evitar modificações. Se você marcar a caixa de seleção Mostrar permissões personalizadas para PDF, será possível selecionar entre estas opções:
+**Modificar:** permite que o usuário modifique um documento protegido por esta política. Para arquivos do Office e Pro/E, você pode marcar a caixa de seleção Modificar para permitir modificações ou desmarcá-la para evitar modificações. Se você marcar a caixa de seleção Mostrar permissões personalizadas para PDF, será possível selecionar entre estas opções:
 
-**Não permitido:** O usuário não tem permissão para modificar o PDF.
+**Não permitido:** o usuário não tem permissão para modificar o PDF.
 
-**Qualquer um:** O usuário pode modificar o PDF.
+**Qualquer:** usuário pode modificar o PDF.
 
-**Colaborar:** O usuário pode colaborar com outras pessoas usando as opções Colaborar no Adobe Acrobat. Essa permissão possibilita que o usuário copie dados de formulário mesmo que a permissão Copiar não seja explicitamente fornecida na política.
+**Colaborar:** o usuário tem permissão para colaborar com outras pessoas usando as opções Colaborar no Adobe Acrobat. Essa permissão possibilita que o usuário copie dados de formulário mesmo que a permissão Copiar não seja explicitamente fornecida na política.
 
-**Alterar páginas:** O usuário tem permissão para adicionar e remover páginas e editar conteúdo no PDF.
+**Alterar páginas:** o usuário tem permissão para adicionar e remover páginas e editar conteúdo no PDF.
 
-**Fill &amp; Sign:** O usuário pode preencher campos de formulário no PDF e assiná-lo.
+**Fill &amp; Sign:** usuário pode preencher campos de formulário no PDF e assiná-lo.
 
-**Copiar:** Permite que o usuário copie texto de um documento protegido por esta política.
+**Copiar:** permite que o usuário copie texto de um documento protegido por esta política.
 
-**Reader da tela:** Essa permissão será exibida se você marcar a caixa de seleção Mostrar permissões personalizadas para PDF. Quando essa opção é selecionada, a Adobe Acrobat tem permissão para adicionar tags temporárias ao PDF para melhorar sua legibilidade com um leitor de tela.
+**Reader de tela:** essa permissão será exibida se você marcar a caixa de seleção Mostrar Permissões Personalizadas para PDF. Quando essa opção é selecionada, a Adobe Acrobat tem permissão para adicionar tags temporárias ao PDF para melhorar sua legibilidade com um leitor de tela.
 
 Essas permissões de documento estão disponíveis na guia Opções. Você pode aplicar essas permissões aos arquivos PDF, PTC Pro/E e Microsoft Office:
 
-**Offline:** Permite que o usuário visualize um documento offline protegido por esta política.
+**Offline:** permite que o usuário exiba um documento offline protegido por esta política.
 
-**Validade da permissão:** Selecione As permissões são sempre válidas ou defina um período de validade de permissão de documento. Se você selecionar um período de validade, clique no ícone de calendário para selecionar uma data e usar as setas para especificar a hora no formato de 24 horas.
+**Validade da Permissão:** Selecione Permissões São Sempre Válidas ou defina um período de validade de permissão de documento. Se você selecionar um período de validade, clique no ícone de calendário para selecionar uma data e usar as setas para especificar a hora no formato de 24 horas.
 
 Para políticas compartilhadas, os administradores podem desativar os seguintes privilégios para o editor do documento (o usuário que aplica a política a um documento):
 
 **Revogar:** Permite que o editor de documentos revogue privilégios de acesso a documentos.
 
-**Alternar:** Permite que o editor do documento alterne privilégios de política.
+**Alternar:** Permite que o fornecedor do documento alterne privilégios de diretiva.
 
 ### Configurações gerais {#general-settings}
 
 A área Configurações gerais contém as seguintes configurações:
 
-**Período de validade:** O período durante o qual o documento protegido por política está acessível aos destinatários autorizados. Você pode escolher entre estas opções de período de validade:
+**Período de Validade:** O período durante o qual o documento protegido por política está acessível aos destinatários autorizados. Você pode escolher entre estas opções de período de validade:
 
-**O documento não será válido após:** O documento pode ser acessado pelo número especificado de dias a partir de quando o documento foi protegido.
+**O documento não será válido após:** O documento fica acessível pelo número especificado de dias a partir de quando o documento foi protegido.
 
-**O documento não será válido após esta data:** O documento é válido desde a data em que a política é aplicada ao documento até a data final especificada.
+**O documento não será válido após esta data:** O documento é válido a partir da data em que a política é aplicada ao documento até a data final especificada.
 
-**Válido de, até:** O documento é válido durante as datas especificadas. Você pode usar o calendário para selecionar uma data, onde aplicável, clicando no ícone do calendário.
+**Válido de, a:** O documento é válido durante as datas especificadas. Você pode usar o calendário para selecionar uma data, onde aplicável, clicando no ícone do calendário.
 
 **O documento é sempre válido:** O período de validade do documento não expira.
 
@@ -216,15 +216,15 @@ A área Configurações gerais contém as seguintes configurações:
 >
 >As datas de validade são baseadas no fuso horário do sistema de segurança de documentos, não no fuso horário do computador local.
 
-**Auditoria:** Ative ou desative a auditoria dos eventos associados a um documento protegido por política. Por exemplo, a segurança de documentos pode registrar eventos como tentativas de abrir um documento. Os eventos auditados são exibidos na lista da página Eventos. Se você não selecionar essa opção, a segurança de documentos não registrará eventos para documentos associados à política.
+**Auditoria:** habilite ou desabilite a auditoria dos eventos associados a um documento protegido por política. Por exemplo, a segurança de documentos pode registrar eventos como tentativas de abrir um documento. Os eventos auditados são exibidos na lista da página Eventos. Se você não selecionar essa opção, a segurança de documentos não registrará eventos para documentos associados à política.
 
 >[!NOTE]
 >
 >O administrador também deve habilitar a auditoria do servidor na página de configuração Auditoria e Configurações de Privacidade para que o recurso de auditoria funcione.
 
-**Rastreamento de uso estendido:** Ative ou desative o Rastreamento de uso estendido. A segurança de documentos oferece suporte ao rastreamento de eventos de usuário associados a várias operações executadas em um arquivo PDF. O objeto de segurança do documento pode ser acessado usando um Java Script. Um clique de botão, um arquivo multimídia que está sendo reproduzido ou o salvamento de um arquivo são alguns exemplos de eventos que são acionados a partir de um PDF protegido por política. Usando o objeto de segurança de documentos, você também pode recuperar informações do usuário. O rastreamento de eventos pode ser ativado no servidor de segurança de documentos em nível global ou em nível de política.
+**Rastreamento de Uso Estendido:** Habilite ou desabilite o Rastreamento de Uso Estendido. A segurança de documentos oferece suporte ao rastreamento de eventos de usuário associados a várias operações executadas em um arquivo PDF. O objeto de segurança do documento pode ser acessado usando um Java Script. Um clique de botão, um arquivo multimídia que está sendo reproduzido ou o salvamento de um arquivo são alguns exemplos de eventos que são acionados a partir de um PDF protegido por política. Usando o objeto de segurança de documentos, você também pode recuperar informações do usuário. O rastreamento de eventos pode ser ativado no servidor de segurança de documentos em nível global ou em nível de política.
 
-**Período de concessão offline automático:** O número máximo de dias em que o destinatário pode usar o documento protegido por política offline (sem uma conexão ativa com a Internet ou com uma rede). Quando o período de concessão expirar, o recipient deverá sincronizar o documento novamente para continuar a usá-lo.
+**Período de Concessão Offline Automático:** O número máximo de dias que o destinatário pode usar o documento protegido por política offline (sem uma conexão ativa com a Internet ou com a rede). Quando o período de concessão expirar, o recipient deverá sincronizar o documento novamente para continuar a usá-lo.
 
 ### Provedores de autorização externos {#external-authorization-providers}
 
@@ -234,13 +234,13 @@ Selecione os provedores de autenticação externa se você já tiver configurado
 
 Você pode substituir as configurações de autenticação configuradas no servidor e especificar as opções de autenticação relevantes para esta política. Selecione Substituir configurações de autenticação global e, em seguida, selecione as opções de autenticação relevantes para esta política. As seguintes opções de autenticação estão disponíveis:
 
-**Permitir Autenticação de Senha de Nome de Usuário:** Selecione esta opção se quiser permitir que os aplicativos clientes usem autenticação de nome de usuário/senha ao se conectar ao servidor.
+**Permitir Autenticação de Senha de Nome de Usuário:** selecione esta opção se desejar habilitar os aplicativos cliente para usar autenticação de nome de usuário/senha ao se conectar ao servidor.
 
-**Permitir autenticação Kerberos:** Selecione esta opção se quiser permitir que os aplicativos clientes usem a autenticação Kerberos ao se conectarem ao servidor.
+**Permitir Autenticação Kerberos:** selecione esta opção se desejar permitir que os aplicativos clientes usem a autenticação Kerberos ao se conectarem ao servidor.
 
-**Permitir Autenticação de Certificado de Cliente:** Selecione esta opção se quiser permitir que os aplicativos clientes usem autenticação de certificado ao se conectar ao servidor.
+**Permitir Autenticação de Certificado de Cliente:** selecione esta opção se desejar habilitar os aplicativos cliente para usar autenticação de certificado ao se conectar ao servidor.
 
-**Permitir autenticação estendida** Selecione para habilitar a autenticação estendida. A seleção dessa opção permite que os aplicativos clientes usem autenticação estendida. A autenticação estendida fornece processos de autenticação personalizados e diferentes opções de autenticação configuradas no servidor de Segurança de documentos
+**Permitir Autenticação Estendida** Selecione para habilitar a autenticação estendida. A seleção dessa opção permite que os aplicativos clientes usem autenticação estendida. A autenticação estendida fornece processos de autenticação personalizados e diferentes opções de autenticação configuradas no servidor de Segurança de documentos
 
 Se você estiver substituindo as configurações de autenticação global, poderá escolher as opções de autenticação relevantes para esta política. Por exemplo, se você ativou três opções de autenticação (nome de usuário e senha, certificado do cliente e autenticação estendida) no servidor, é possível substituir essa configuração global e selecionar apenas a autenticação estendida para essa política. Verifique se a opção de autenticação selecionada aqui já está configurada no servidor. Neste exemplo, não é possível selecionar Kerberos como a opção de autenticação porque ele não está configurado no servidor.
 
@@ -252,7 +252,7 @@ Se você estiver substituindo as configurações de autenticação global, poder
 
 A área Configurações avançadas contém as seguintes configurações:
 
-**Marca d&#39;água dinâmica:** Selecione uma marca d&#39;água a ser exibida dinamicamente nas páginas de um documento (por exemplo, quando um destinatário imprime o documento). As marcas d&#39;água dinâmicas identificam exclusivamente um documento, ajudando assim a garantir a confidencialidade do documento e evitando a violação de direitos autorais. Por exemplo, o administrador pode configurar uma marca d&#39;água dinâmica que exibe a data atual, o nome de usuário ou o identificador da pessoa que está usando o documento. Ou o nome da política usada para proteger o documento. Uma marca d&#39;água também pode exibir texto personalizado ou elementos gráficos, se configurado. Os administradores configuram as opções de marca d&#39;água e os administradores e usuários podem aplicá-las às políticas.
+**Marca d&#39;água Dinâmica:** selecione uma marca d&#39;água a ser exibida dinamicamente nas páginas de um documento (por exemplo, quando um destinatário imprime o documento). As marcas d&#39;água dinâmicas identificam exclusivamente um documento, ajudando assim a garantir a confidencialidade do documento e evitando a violação de direitos autorais. Por exemplo, o administrador pode configurar uma marca d&#39;água dinâmica que exibe a data atual, o nome de usuário ou o identificador da pessoa que está usando o documento. Ou o nome da política usada para proteger o documento. Uma marca d&#39;água também pode exibir texto personalizado ou elementos gráficos, se configurado. Os administradores configuram as opções de marca d&#39;água e os administradores e usuários podem aplicá-las às políticas.
 
 (Consulte [Configurar marcas d&#39;água dinâmicas](/help/forms/using/admin-help/configuring-client-server-options.md#configure-dynamic-watermarks).)
 
@@ -262,7 +262,7 @@ Se você estiver editando uma política e o administrador tiver deletado uma mar
 >
 >Para políticas que fornecem acesso anônimo ao usuário, o nome do usuário e o identificador de um usuário anônimo não são exibidos como uma marca d&#39;água mesmo se você selecionar esse tipo de marca d&#39;água.
 
-**Use apenas plug-ins certificados do Acrobat para PDF:** Quando selecionada para uma política, essa opção especifica que o Acrobat 8.0 e posterior deve ser executado no modo certificado ao abrir documentos protegidos com a política. Quando o Acrobat é executado no modo certificado, ele não carrega plug-ins de terceiros.
+**Usar Somente Plug-ins Certificados do Acrobat para PDF:** Quando selecionada para uma política, esta opção especifica que o Acrobat 8.0 e posterior deve ser executado no modo certificado ao abrir documentos protegidos com a política. Quando o Acrobat é executado no modo certificado, ele não carrega plug-ins de terceiros.
 
 Selecione essa opção se estiver preocupado com a gravação de plug-in por um recipient de documento que pode contornar qualquer proteção de documento no Acrobat 8.0 e posteriores. Não selecione essa opção se os recipients do seu documento precisarem usar plug-ins de terceiros no Acrobat para interagir com documentos.
 
@@ -272,21 +272,21 @@ Essa opção ativa somente o modo certificado no Acrobat 8.0 ou posterior; o adm
 
 Essa opção não se aplica ao Adobe Reader.
 
-**Mensagem de erro de acesso negado:** Uma mensagem que aparece para qualquer pessoa que tenta abrir um documento protegido por política sem permissão. Esta mensagem é exibida no Acrobat. Os clientes que não puderem exibir essa mensagem exibirão uma mensagem padrão para indicar que o acesso foi negado.
+**Mensagem de Erro de Acesso Negado:** Uma mensagem que aparece para qualquer pessoa que tenta abrir um documento protegido por política sem permissão. Esta mensagem é exibida no Acrobat. Os clientes que não puderem exibir essa mensagem exibirão uma mensagem padrão para indicar que o acesso foi negado.
 
 ### Configurações avançadas inalteráveis {#unchangeable-advanced-settings}
 
 A área Configurações avançadas inalteráveis contém as seguintes configurações. Não é possível alterar essas configurações após salvar a política.
 
-**Algoritmo de criptografia e comprimento da chave:** Usado para proteger seus documentos. Você pode escolher entre estas opções:
+**Algoritmo de Criptografia e Tamanho da Chave:** Usado para proteger seus documentos. Você pode escolher entre estas opções:
 
 * AES de 128 bits
-* AES de 256 bits. Somente o Acrobat 9.0 e posterior é compatível com essa opção. Para usar a criptografia AES 256 para arquivos PDF, obtenha e instale os arquivos de Política de Jurisdição de Força Ilimitada Java Cryptography Extension (JCE). Esses arquivos substituem os arquivos local_policy.jar e US_export_policy.jar na [JAVE_HOME]pasta /lib/security. Por exemplo, se você estiver usando o Sun JDK 1.6, copie os arquivos baixados para o [raiz profunda]pasta /Java/jdk1.6.0_26/lib/security. Você pode baixar esses arquivos em [Downloads do Java SE](https://java.sun.com/javase/downloads/index.jsp).
+* AES de 256 bits. Somente o Acrobat 9.0 e posterior é compatível com essa opção. Para usar a criptografia AES 256 para arquivos PDF, obtenha e instale os arquivos de Política de Jurisdição de Força Ilimitada Java Cryptography Extension (JCE). Esses arquivos substituem os arquivos local_policy.jar e US_export_policy.jar na [pasta JAVE_HOME]/lib/security. Por exemplo, se você estiver usando o Sun JDK 1.6, copie os arquivos baixados para a pasta [dep root]/Java/jdk1.6.0_26/lib/security. Você pode baixar esses arquivos em [Downloads do Java SE](https://java.sun.com/javase/downloads/index.jsp).
 * Sem criptografia. Atualmente, o Acrobat 9.0 e versões posteriores oferecem suporte a essa opção. Se você selecionar essa opção, as opções de Restrições de documento serão desativadas. Essa opção pode ser útil se você quiser usar a segurança de documentos para auditoria de documentos ou controle de versão, mas não quiser criptografar o documento.
 
-**Restrições de documento:** Selecione os componentes do documento PDF a serem criptografados. Outros aplicativos clientes criptografam todo o documento, mas não os arquivos vinculados ou incorporados. Você pode escolher entre estas opções:
+**Restrições de Documento:** Selecione os componentes do documento de PDF a serem criptografados. Outros aplicativos clientes criptografam todo o documento, mas não os arquivos vinculados ou incorporados. Você pode escolher entre estas opções:
 
-* O documento inteiro, incluindo anexos e metadados. *Metadados* são informações sobre o documento e seu conteúdo que podem ser visualizadas na caixa de diálogo Propriedades do documento ou no menu Avançado do Acrobat. No Acrobat, é possível anexar arquivos de diferentes tipos (por exemplo, arquivos de texto, áudio e vídeo) a documentos PDF.
+* O documento inteiro, incluindo anexos e metadados. *Metadados* são informações sobre o documento e seu conteúdo que podem ser exibidas na caixa de diálogo Propriedades do documento ou no menu Avançado do Acrobat. No Acrobat, é possível anexar arquivos de diferentes tipos (por exemplo, arquivos de texto, áudio e vídeo) a documentos PDF.
 * O documento e seus anexos, mas não os metadados.
 * Somente os anexos do documento. Você pode criptografar os anexos para um arquivo PDF sem criptografar o conteúdo do documento.
 
@@ -341,9 +341,9 @@ Os administradores podem pesquisar por políticas compartilhadas e por política
 
 1. Na lista Localizar, selecione uma destas opções:
 
-   **ID da política:** O número de identificação da política gerado quando o usuário cria a política. Digite a ID exata da política.
+   **ID da Política:** o número de identificação da política gerado quando o usuário cria a política. Digite a ID exata da política.
 
-   **Nome da política:** O nome da política. Você pode pesquisar parte do nome da política ou todo ele.
+   **Nome da Política:** O nome da política. Você pode pesquisar parte do nome da política ou todo ele.
 
 1. Na caixa de texto, digite o valor correspondente. Por exemplo, se você selecionou Nome da política, digite o nome da política que você está procurando.
 1. Na lista Exibir, selecione o número de resultados a serem exibidos e clique em Localizar. Os resultados da pesquisa são exibidos.

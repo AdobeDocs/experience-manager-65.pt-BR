@@ -20,7 +20,7 @@ ht-degree: 1%
 
 Esse recurso consiste em dois componentes que trabalham juntos: revisões e resumo de revisões.
 
-Revisões é um componente composto baseado em uma [sistema de comentários](essentials-comments.md) que contenha um ou mais [avaliação](rating-basics.md) componentes (tally).
+Revisões é um componente composto baseado em um [sistema de comentários](essentials-comments.md) que contém um ou mais componentes [classificação](rating-basics.md) (tally).
 
 Não há suporte para postagem anônima de uma revisão. Os visitantes do site devem se registrar e fazer logon para adicionar uma avaliação. O visitante conectado (membro) pode atualizar sua análise a qualquer momento.
 
@@ -36,7 +36,7 @@ Não há suporte para postagem anônima de uma revisão. Os visitantes do site d
   </tr>
   <tr>
    <td> <a href="scf.md#add-or-include-a-communities-component"><strong>incluível</strong></a></td>
-   <td>Sim - as propriedades são editáveis no <i>design </i>modo</td>
+   <td>Sim - as propriedades são editáveis no modo <i>design </i></td>
   </tr>
   <tr>
    <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientllibs</strong></a></td>
@@ -52,7 +52,7 @@ Não há suporte para postagem anônima de uma revisão. Os visitantes do site d
   </tr>
   <tr>
    <td><strong>propriedades</strong></td>
-   <td>Consulte <a href="reviews.md">Usar análises</a></td>
+   <td>Ver <a href="reviews.md">Usando Análises</a></td>
   </tr>
  </tbody>
 </table>
@@ -65,7 +65,7 @@ Não há suporte para postagem anônima de uma revisão. Os visitantes do site d
 | [**clientllibs**](client-customize.md#clientlibs-for-scf) | cq.social.hbs.reviews |
 | **modelos** | /libs/social/reviews/components/hbs/summary/summary.hbs |
 | **css** | /libs/social/reviews/components/hbs/reviews/clientlibs/review.css |
-| **propriedades** | Consulte [Usar análises](reviews.md) |
+| **propriedades** | Ver [Usando Análises](reviews.md) |
 
 * [Personalizações do lado do cliente](client-customize.md)
 
@@ -80,15 +80,15 @@ Não há suporte para postagem anônima de uma revisão. Os visitantes do site d
 ### Acesso a análises publicadas (UGC) {#accessing-posted-reviews-ugc}
 
 A UGC deve ser moderada usando um dos métodos padrão para moderação.
-Consulte [Moderação de conteúdo gerado pelo usuário](moderate-ugc.md).
+Consulte [Moderando Conteúdo Gerado por Usuário](moderate-ugc.md).
 
-A partir do AEM 6.1 Communities, o uso de um [armazenamento comum](working-with-srp.md) O para UGC inclui acesso programático ao UGC, independentemente da opção de armazenamento escolhida (como ASRP, MSRP ou JSRP).
+Desde o AEM 6.1 Communities, o uso de um [armazenamento comum](working-with-srp.md) para UGC inclui acesso programático a UGC, independentemente da opção de armazenamento escolhida (como ASRP, MSRP ou JSRP).
 
 **A localização e o formato do UGC no repositório estão sujeitos a alterações sem aviso**.
 
 Consulte:
 
-* [Visão geral do provedor de recursos de armazenamento](srp.md) - Introdução e visão geral do uso do repositório.
-* [Fundamentos de SRP e UGC](srp-and-ugc.md) - Métodos e exemplos do utilitário SRP.
-* [Acesso ao UGC com SRP](accessing-ugc-with-srp.md) - Diretrizes de codificação.
-* [Refatoração de SocialUtils](socialutils.md) - Mapeamento de métodos de utilitário obsoletos para métodos de utilitário SRP atuais.
+* [Visão Geral do Provedor de Recursos de Armazenamento](srp.md) - Introdução e visão geral do uso do repositório.
+* [Fundamentos do SRP e do UGC](srp-and-ugc.md) - Métodos e exemplos do utilitário SRP.
+* [Acessando UGC com SRP](accessing-ugc-with-srp.md) - Diretrizes de codificação.
+* [Refatoração de SocialUtils](socialutils.md) - Mapeando métodos de utilitário obsoletos para métodos de utilitário SRP atuais.

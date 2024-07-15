@@ -38,7 +38,7 @@ A compatibilidade com SPA no AEM apresenta uma camada de JS sutil que interage c
 Para obter mais detalhes sobre SPAs no AEM, consulte os seguintes documentos:
 
 * [Blueprint do SPA](/help/sites-developing/spa-blueprint.md) para os requisitos técnicos de um SPA
-* [SPA Introdução ao AEM](/help/sites-developing/spa-getting-started-react.md) para um tour rápido por um SPA simples
+* [Introdução ao SPA no AEM](/help/sites-developing/spa-getting-started-react.md) para um tour rápido de um SPA simples
 
 ## Design {#design}
 
@@ -46,7 +46,7 @@ O componente de página para um SPA não fornece os elementos HTML de seus compo
 
 ### Gerenciamento do modelo de página {#page-model-management}
 
-A resolução e o gerenciamento do modelo de página são delegados a uma biblioteca `PageModel`. O SPA deve usar a biblioteca Modelo de página para ser inicializado e criado pelo editor de SPA. A biblioteca de Modelos de página fornecida indiretamente ao componente Página de AEM por meio do npm `aem-react-editable-components`. O Modelo de página é um interpretador entre o AEM e o SPA e, portanto, sempre deve estar presente. Quando a página é criada, uma biblioteca adicional `cq.authoring.pagemodel.messaging` deve ser adicionado para habilitar a comunicação com o editor de páginas.
+A resolução e o gerenciamento do modelo de página são delegados a uma biblioteca `PageModel`. O SPA deve usar a biblioteca Modelo de página para ser inicializado e criado pelo editor de SPA. A biblioteca de Modelos de página fornecida indiretamente ao componente Página de AEM por meio do npm `aem-react-editable-components`. O Modelo de página é um interpretador entre o AEM e o SPA e, portanto, sempre deve estar presente. Quando a página é criada, uma biblioteca adicional `cq.authoring.pagemodel.messaging` deve ser adicionada para habilitar a comunicação com o editor de páginas.
 
 Se o componente Página de SPA herda do componente principal da página, há duas opções para criar a categoria de biblioteca de clientes `cq.authoring.pagemodel.messaging` disponível:
 
@@ -158,7 +158,7 @@ Lembrando os elementos principais do editor de SPA, o fluxo de trabalho de alto 
 
 ## Requisitos e limitações {#requirements-limitations}
 
-Para permitir que o autor use o editor de páginas para editar o conteúdo de um SPA, o aplicativo SPA deve ser implementado para interagir com o SDK do Editor de SPA do AEM. Consulte [SPA Introdução ao AEM](/help/sites-developing/spa-getting-started-react.md) pelo mínimo que você precisa saber para que o seu funcione.
+Para permitir que o autor use o editor de páginas para editar o conteúdo de um SPA, o aplicativo SPA deve ser implementado para interagir com o SDK do Editor de SPA do AEM. Consulte a [Introdução ao SPA no AEM](/help/sites-developing/spa-getting-started-react.md) para obter o mínimo necessário para que o seu funcione.
 
 ### Estruturas compatíveis {#supported-frameworks}
 
@@ -171,20 +171,20 @@ As versões anteriores dessas estruturas podem funcionar com o SDK do Editor de 
 
 ### Estruturas adicionais {#additional-frameworks}
 
-Estruturas de SPA adicionais podem ser implementadas para funcionar com o SDK do Editor de SPA de AEM. Consulte a [Blueprint SPA](/help/sites-developing/spa-blueprint.md) para os requisitos que uma estrutura deve atender para criar uma camada específica da estrutura composta por módulos, componentes e serviços para trabalhar com o Editor de SPA AEM.
+Estruturas de SPA adicionais podem ser implementadas para funcionar com o SDK do Editor de SPA de AEM. Consulte o [Blueprint do SPA](/help/sites-developing/spa-blueprint.md) para conhecer os requisitos que uma estrutura deve atender para criar uma camada específica da estrutura composta por módulos, componentes e serviços para trabalhar com o editor SPA do AEM.
 
 ### Uso de vários seletores {#multiple-selectors}
 
-Seletores personalizados adicionais podem ser definidos e usados como parte de um SPA desenvolvido para o SDK de SPA do AEM. No entanto, este apoio exige que a `model` ser o primeiro seletor e a extensão ser `.json` as [exigido pelo Exportador JSON.](json-exporter-components.md#multiple-selectors)
+Seletores personalizados adicionais podem ser definidos e usados como parte de um SPA desenvolvido para o SDK de SPA do AEM. No entanto, esse suporte exige que o seletor `model` seja o primeiro seletor e a extensão seja `.json` como [, conforme exigido pelo Exportador JSON.](json-exporter-components.md#multiple-selectors)
 
 ### Requisitos do editor de texto {#text-editor-requirements}
 
 Se você quiser usar o editor local de um componente de texto criado no SPA, há uma configuração adicional necessária.
 
-1. Defina um atributo (pode ser qualquer um), no elemento wrapper do container, que contém o HTML de texto. Se houver conteúdo de amostra do WKND Journal, ele será um `<div>` e o seletor que foi usado é `data-rte-editelement`.
+1. Defina um atributo (pode ser qualquer um), no elemento wrapper do container, que contém o HTML de texto. Se houver o conteúdo de amostra do Diário WKND, ele será um elemento `<div>` e o seletor usado será `data-rte-editelement`.
 1. Defina a configuração `editElementQuery` no `cq:InplaceEditingConfig` do componente de texto AEM correspondente que aponta para esse seletor, por exemplo, `data-rte-editelement`. Isso permite que o editor saiba qual elemento HTML envolve o texto HTML.
 
-Para obter um exemplo de como isso é feito, consulte [Conteúdo de amostra do diário WKND.](https://github.com/adobe/aem-sample-we-retail-journal/pull/16/files)
+Para obter um exemplo de como isso é feito, consulte o [conteúdo de amostra do Diário WKND.](https://github.com/adobe/aem-sample-we-retail-journal/pull/16/files)
 
 Para obter mais informações sobre a propriedade `editElementQuery` e a configuração do editor de rich text, consulte [Configurar o Editor de rich text.](/help/sites-administering/rich-text-editor.md)
 

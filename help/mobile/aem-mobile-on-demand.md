@@ -23,15 +23,15 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Se você não estiver usando o AEM como fonte de gerenciamento de conteúdo, consulte [Ajuda do AEM Mobile On-demand Services](https://helpx.adobe.com/digital-publishing-solution/topics.html).
+>Se você não estiver usando o AEM como fonte de gerenciamento de conteúdo, consulte a [Ajuda do AEM Mobile On-demand Services](https://helpx.adobe.com/digital-publishing-solution/topics.html).
 
 >[!NOTE]
 >
 >Antes de trabalhar com o AEM Mobile e seguir as etapas deste guia de introdução, os usuários devem se familiarizar com o [AEM](/help/sites-deploying/deploy.md).
 >
->Para configurar o ambiente para o AEM Mobile On-demand Services, consulte [AEM Mobile Application Dashboard ou o Centro de Controle](/help/mobile/mobile-apps-ondemand-application-dashboard.md).
+>Para configurar o ambiente para o AEM Mobile On-demand Services, consulte o [Painel de Aplicativos do AEM Mobile ou o Centro de Controle](/help/mobile/mobile-apps-ondemand-application-dashboard.md).
 
-Um **Desenvolvedor de AEM** estende e cria modelos e componentes personalizados da web para habilitar a *Autor do AEM* para criar experiências móveis belas e envolventes. Esses modelos e componentes não são apenas otimizados para o mundo do aplicativo móvel, mas também se comunicam com o dispositivo e com o servidor AEM (qualquer servidor remoto) para pontos finais de serviço omnicanal. O editor de conteúdo integrado AEM é usado pelo *Autores do AEM* para criar experiências ricas e relevantes no aplicativo, incluindo a integração com o restante da Adobe Marketing Cloud.
+Um **desenvolvedor do AEM** estende e cria modelos e componentes personalizados da Web para permitir que o *Autor do AEM* crie experiências móveis atraentes. Esses modelos e componentes não são apenas otimizados para o mundo do aplicativo móvel, mas também se comunicam com o dispositivo e com o servidor AEM (qualquer servidor remoto) para pontos finais de serviço omnicanal. O editor de conteúdo integrado do AEM é usado pelos *Autores do AEM* para criar experiências avançadas e relevantes no aplicativo, incluindo a integração com o restante da Adobe Marketing Cloud.
 
 Um desenvolvedor do AEM é responsável pelas seguintes tarefas ao criar um aplicativo usando o AEM Mobile On-demand Services:
 
@@ -39,11 +39,11 @@ Um desenvolvedor do AEM é responsável pelas seguintes tarefas ao criar um apli
 * [Dispositivo móvel com sincronização de conteúdo](/help/mobile/mobile-ondemand-contentsync.md)
 * [Propriedades de conteúdo e exportação de conteúdo](/help/mobile/on-demand-content-properties-exporting.md)
 
-Consulte [Desenvolvimento dos serviços de conteúdo do AEM Mobile](/help/mobile/developing-content-services.md) para desenvolver serviços de conteúdo.
+Consulte [Desenvolvendo os Serviços de Conteúdo da AEM Mobile](/help/mobile/developing-content-services.md) para desenvolver os Serviços de Conteúdo.
 
 >[!NOTE]
 >
->Um *Desenvolvedor de AEM* A função do não começa e termina com o desenvolvimento de modelos e componentes. Um *Desenvolvedor de AEM* O pode criar um aplicativo totalmente novo em vez de simplesmente estender a amostra de implementação de referência pronta para uso.
+>A função de *desenvolvedor do AEM* não inicia nem termina com o desenvolvimento de modelos e componentes. Um *desenvolvedor de AEM* pode criar um aplicativo totalmente novo em vez de simplesmente estender a amostra de implementação de referência pronta para uso.
 
 ## Recursos adicionais {#additional-resources}
 

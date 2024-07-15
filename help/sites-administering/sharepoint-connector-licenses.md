@@ -59,12 +59,12 @@ A tabela a seguir lista as bibliotecas de terceiros usadas nas bibliotecas princ
 | wstx-asl | [Apache](#apache) |
 | xalan | [Apache](#apache) |
 | xbean | [Apache](#apache) |
-| xml-apis | [Apache](#apache) (contém partes cobertas pelas licenças de Domínio público e Software W3C) |
+| xml-apis | [Apache](#apache) (contém partes cobertas por licenças de Domínio Público e Software W3C) |
 | XmlSchema | [Apache](#apache) |
 
 ## Visão geral das bibliotecas de terceiros do CRX {#overview-of-crx-rd-party-libraries}
 
-A tabela a seguir lista as bibliotecas de terceiros usadas no CRX, juntamente com as licenças, avisos de direitos autorais ou isenções de responsabilidade pelas quais são abordadas:
+A tabela a seguir lista as bibliotecas de terceiros usadas no CRX, juntamente com as licenças, avisos de direitos autorais ou isenções de responsabilidade sobre as quais são abordadas:
 
 <table>
  <colgroup>

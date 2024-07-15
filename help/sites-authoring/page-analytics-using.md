@@ -26,7 +26,7 @@ Use os dados de análise da página para medir a eficácia do conteúdo da pági
 
 ![spad-01](assets/spad-01.png)
 
-Os dados de análise da página são exibidos em [Exibição de lista](/help/sites-authoring/basic-handling.md#list-view) do console Sites. Quando as páginas são exibidas no formato de lista, as seguintes colunas estão disponíveis por padrão:
+Os dados de análise de página são exibidos na [Exibição de lista](/help/sites-authoring/basic-handling.md#list-view) do console Sites. Quando as páginas são exibidas no formato de lista, as seguintes colunas estão disponíveis por padrão:
 
 * Visualizações de página
 * Visitantes únicos
@@ -36,12 +36,12 @@ Cada coluna mostra um valor para o período de relatório atual e também indica
 
 >[!NOTE]
 >
->Para alterar o período de atualização, [configurar o intervalo de importação](/help/sites-administering/adobeanalytics-connect.md#configuring-the-import-interval).
+>Para alterar o período de atualização, [configure o intervalo de importação](/help/sites-administering/adobeanalytics-connect.md#configuring-the-import-interval).
 
-1. Abra o **Sites** console; por exemplo, [https://localhost:4502/sites.html/content](https://localhost:4502/sites.html/content)
-1. Na extremidade direita da barra de ferramentas (canto superior direito), clique no ícone para selecionar **Exibição de lista** (o ícone mostrado dependerá do [exibição atual](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)).
+1. Abra o console **Sites**; por exemplo, [https://localhost:4502/sites.html/content](https://localhost:4502/sites.html/content)
+1. Na extremidade direita da barra de ferramentas (canto superior direito), clique no ícone para selecionar **Exibição em lista** (o ícone mostrado dependerá da [exibição atual](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)).
 
-1. Novamente, na extremidade direita da barra de ferramentas (canto superior direito), clique no ícone e selecione **Configurações de exibição**. A variável **Configurar colunas** será aberta. Faça as alterações necessárias e confirme com **Atualizar**.
+1. Novamente, na extremidade direita da barra de ferramentas (canto superior direito), clique no ícone e selecione **Exibir configurações**. A caixa de diálogo **Configurar Colunas** é aberta. Faça as alterações necessárias e confirme com **Atualizar**.
 
    ![spad-02](assets/spad-02.png)
 
@@ -65,7 +65,7 @@ Os membros do grupo de usuários de administradores de análises podem configura
 >
 >Quando uma árvore de páginas contém páginas secundárias associadas a diferentes configurações de nuvem do Adobe Analytics, não é possível definir colunas de dados disponíveis para as páginas.
 
-1. Na Exibição em lista, use os seletores de exibições (à direita da barra de ferramentas) e selecione **Configurações de exibição** e depois **Adicionar dados personalizados do Analytics**.
+1. Na Exibição de Lista, use os seletores de exibição (à direita da barra de ferramentas), selecione **Exibir Configurações** e **Adicionar Dados Personalizados do Analytics**.
 
    ![spad-03](assets/spad-03.png)
 
@@ -77,7 +77,7 @@ Os membros do grupo de usuários de administradores de análises podem configura
 
 ### Abrindo insights de conteúdo em sites {#opening-content-insights-from-sites}
 
-Abertura [Content Insight](/help/sites-authoring/content-insights.md) no console Sites para investigar mais a eficácia da página.
+Abra o [Content Insight](/help/sites-authoring/content-insights.md) do console Sites para investigar mais a eficácia da página.
 
 1. No console do Sites, selecione a página da qual deseja ver os Insights de conteúdo.
 1. Na barra de ferramentas, clique no ícone Analytics e Recommendations.
@@ -90,4 +90,4 @@ Abertura [Content Insight](/help/sites-authoring/content-insights.md) no console
 >
 >Devido a alterações de segurança na API do Adobe Analytics, não é mais possível usar a versão do Activity Map incluída no AEM.
 >
->A variável [Plug-in do ActivityMap fornecido pela Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=pt-BR) deve ser usada.
+>O plug-in [ActivityMap fornecido pelo Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=pt-BR) agora deve ser usado.

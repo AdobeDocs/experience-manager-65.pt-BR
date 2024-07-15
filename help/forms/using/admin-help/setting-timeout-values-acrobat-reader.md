@@ -20,11 +20,11 @@ ht-degree: 0%
 
 Ao trabalhar em muitos arquivos PDF nas extensões do Acrobat Reader DC, certifique-se de que os seguintes valores de tempo limite estejam definidos adequadamente para evitar que os trabalhos atinjam o tempo limite e falhem:
 
-**Tempo Limite de Descarte de Documento**
+**Tempo Limite para Descarte de Documentos**
 
 Esse valor pode ser definido no console de administração. Clique em Configurações > Configurações principais do sistema > Configurações e especifique um valor para Tempo limite padrão de descarte de documentos.
 
-**Tempo limite de formulários AEM do Gerenciador de usuários:** Esse valor pode ser definido ao editar o arquivo config.xml. No console de administração, clique em Configurações > Gerenciamento de usuários > Configuração > Importar e exportar arquivos de configuração e clique em Exportar. Abra o arquivo config.xml exportado e edite as seguintes linhas:
+**Tempo limite de AEM do Gerenciador de Usuários:** Esse valor pode ser definido ao editar o arquivo config.xml. No console de administração, clique em Configurações > Gerenciamento de usuários > Configuração > Importar e exportar arquivos de configuração e clique em Exportar. Abra o arquivo config.xml exportado e edite as seguintes linhas:
 
 &lt;entry key=&quot;assertionValidityInMinutes&quot; value=&quot;600&quot;/>
 
@@ -32,4 +32,4 @@ Esse valor pode ser definido no console de administração. Clique em Configura�
 
 Salve e importe o arquivo config.xml de volta para o console de administração.
 
-**Tempo Limite de Sessão do Servidor de Aplicativos:** Esse valor pode ser definido no servidor de aplicativos. Para obter mais informações, consulte a documentação fornecida com o servidor de aplicativos.
+**Tempo Limite da Sessão do Servidor de Aplicativos:** Esse valor pode ser definido no servidor de aplicativos. Para obter mais informações, consulte a documentação fornecida com o servidor de aplicativos.

@@ -1,6 +1,6 @@
 ---
 title: Atualização do link para a documentação
-description: Como atualizar o destino do link de Ajuda do Espaço de trabalho no espaço de trabalho do AEM Forms para apontar para o link de documentação personalizado.
+description: Como atualizar o destino do link de Ajuda do Workspace no espaço de trabalho do AEM Forms para apontar para o link de documentação personalizado.
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -25,9 +25,9 @@ Considere os seguintes casos de uso em que talvez você queira alterar o URL de 
 * Por fornecer ajuda localizada em um idioma de sua escolha.
 * Para fornecer conteúdo de ajuda personalizado para o seu espaço de trabalho personalizado.
 
-Para atualizar o URL da documentação online, siga o [Etapas genéricas de personalização](/help/forms/using/generic-steps-html-workspace-customization.md) e depois as etapas a seguir.
+Para atualizar a URL da documentação online, siga as [Etapas genéricas de personalização](/help/forms/using/generic-steps-html-workspace-customization.md) e as seguintes etapas.
 
-1. Copie o `userinfo.html` arquivo de `/libs/ws/js/runtime/templates` para `/apps/ws/js/runtime/templates`.
+1. Copie o arquivo `userinfo.html` de `/libs/ws/js/runtime/templates` para `/apps/ws/js/runtime/templates`.
 1. Alterar:
 
    ```html
@@ -49,4 +49,4 @@ Para atualizar o URL da documentação online, siga o [Etapas genéricas de pers
 1. Faça o seguinte:
 
    1. Abra /apps/ws/js/registry.js para edição.
-   1. Pesquisar e substituir `text!/lc/libs/ws/js/runtime/templates/userinfo.html` com `text!/lc/apps/ws/js/runtime/templates/userinfo.html`.
+   1. Pesquisar e substituir `text!/lc/libs/ws/js/runtime/templates/userinfo.html` por `text!/lc/apps/ws/js/runtime/templates/userinfo.html`.

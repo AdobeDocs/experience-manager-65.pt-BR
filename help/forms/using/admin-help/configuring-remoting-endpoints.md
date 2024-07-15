@@ -22,4 +22,4 @@ Um endpoint de comunicação remota permite que um aplicativo criado com o Flex 
 
 ## Configurações de ponto de extremidade de comunicação remota {#remoting-endpoint-settings}
 
-**Método de autenticação de cliente Flex:** Determina o tipo de resposta que o servidor envia de volta ao cliente quando o serviço chamado está habilitado para segurança, a operação chamada não dá suporte a invocações anônimas e o cliente passa credenciais inválidas ou nenhuma.
+**Método de Autenticação de Cliente do Flex:** Determina o tipo de resposta que o servidor envia de volta ao cliente quando o serviço chamado está habilitado para segurança, a operação invocada não dá suporte a invocações anônimas e o cliente transmite credenciais inválidas ou nenhuma.

@@ -49,7 +49,7 @@ Veja esses exemplos de consultas para obter ilustrações de como criar consulta
 
 ### Exemplo de consulta - Todos os esquemas e tipos de dados disponíveis {#sample-all-schemes-datatypes}
 
-Este exemplo de consulta retorna todas as `types` para todos os esquemas disponíveis.
+Este exemplo de consulta retorna todos os `types` para todos os esquemas disponíveis.
 
 **Exemplo de consulta**
 
@@ -225,7 +225,7 @@ Quando executada, o sistema expande automaticamente a consulta para incluir todo
 
 ### Exemplo de consulta - Nomes de todas as cidades {#sample-names-all-cities}
 
-Este exemplo de consulta é uma consulta simples para retornar o `name`de todas as entradas no `city`esquema.
+Este exemplo de consulta é uma consulta simples para retornar o `name` de todas as entradas no esquema `city`.
 
 **Exemplo de consulta**
 
@@ -316,7 +316,7 @@ Este exemplo de consulta é uma consulta para retornar os detalhes de uma única
 
 ### Exemplo de consulta - Todas as cidades com uma variação nomeada {#sample-cities-named-variation}
 
-Se você criar uma variação chamada &quot;Centro de Berlim&quot; (`berlin_centre`), para o `city` Berlim, você pode usar uma consulta para retornar detalhes da variação.
+Se você criar uma variação chamada &quot;Centro de Berlim&quot; (`berlin_centre`), para a `city` Berlim, poderá usar uma consulta para retornar detalhes da variação.
 
 **Exemplo de consulta**
 
@@ -362,7 +362,7 @@ Se você criar uma variação chamada &quot;Centro de Berlim&quot; (`berlin_cent
 Se você:
 
 * criar várias tags chamadas `Tourism` : `Business`, `City Break`, `Holiday`
-* e atribuir essas tags à variação principal de vários `City` instâncias
+* e atribua essas tags à variação mestre de várias instâncias `City`
 
 É possível usar uma consulta para retornar detalhes de `name` e `tags` de todas as entradas marcadas como Cidades para passeio no esquema de `city`.
 
@@ -539,7 +539,7 @@ query {
 
 ### Exemplo de consulta - Todas as pessoas com o nome de &quot;Jobs&quot; ou &quot;Smith&quot; {#sample-all-persons-jobs-smith}
 
-Este exemplo de consulta filtra tudo `persons` para qualquer uma que tenha o nome `Jobs`ou `Smith`.
+Esta consulta de exemplo filtra todos os `persons` para qualquer um que tenha o nome `Jobs` ou `Smith`.
 
 **Exemplo de consulta**
 
@@ -593,7 +593,7 @@ query {
 
 ### Exemplo de consulta - Todas as pessoas que não tenham o nome &quot;Jobs&quot; {#sample-all-persons-not-jobs}
 
-Este exemplo de consulta filtra tudo `persons` para qualquer uma que tenha o nome `Jobs`ou `Smith`.
+Esta consulta de exemplo filtra todos os `persons` para qualquer um que tenha o nome `Jobs` ou `Smith`.
 
 **Exemplo de consulta**
 

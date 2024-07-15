@@ -18,19 +18,19 @@ ht-degree: 12%
 
 # Experimentar fragmentos de conteúdo no We.Retail{#trying-out-content-fragments-in-we-retail}
 
-Os fragmentos de conteúdo permitem criar conteúdo não vinculado a canais, juntamente com variações (podem ser específicas de cada canal). **We.Retail** (conforme disponível em uma instância pronta para uso do Adobe Experience Manager) fornece o fragmento **Surfe no Ártico em Lofoten** base. Isso ilustra que:
+Os fragmentos de conteúdo permitem criar conteúdo não vinculado a canais, juntamente com variações (podem ser específicas de cada canal). O **We.Retail** (disponível em uma instância pronta para uso do Adobe Experience Manager) fornece o fragmento **Navegação ártica no Lofoten** como uma amostra básica. Isso ilustra que:
 
 * Os fragmentos de conteúdo do Adobe Experience Manager (AEM) são [criados e gerenciados como ativos independentes da página](/help/assets/content-fragments/content-fragments.md). Eles permitem criar conteúdo não vinculado a canais, juntamente com variações (podem ser específicas de cada canal).
 
-   * Consulte [Onde encontrar ativos de fragmento de conteúdo no We.Retail](#where-to-find-content-fragments-in-we-retail)
+   * Consulte [Onde encontrar ativos de Fragmento de conteúdo no We.Retail](#where-to-find-content-fragments-in-we-retail)
 
-* Você pode então [usar esses fragmentos e suas variações ao criar](/help/sites-authoring/content-fragments.md) suas páginas de conteúdo.
+* Em seguida, você pode [usar esses fragmentos e suas variações ao criar](/help/sites-authoring/content-fragments.md) suas páginas de conteúdo.
 
-   * Consulte [Onde os fragmentos de conteúdo são usados no We.Retail](#where-content-fragments-are-used-in-we-retail)
+   * Consulte [Onde os fragmentos de conteúdo são usados em We.Retail](#where-content-fragments-are-used-in-we-retail)
 
 Para obter a documentação completa sobre criação, gerenciamento, uso e desenvolvimento de fragmentos de conteúdo:
 
-* Consulte [Informações adicionais](#further-information)
+* Ver [Informações Adicionais](#further-information)
 
 >[!NOTE]
 >
@@ -43,17 +43,17 @@ Para obter a documentação completa sobre criação, gerenciamento, uso e desen
 
 ## Onde encontrar fragmentos de conteúdo no We.Retail {#where-to-find-content-fragments-in-we-retail}
 
-Há vários fragmentos de conteúdo de amostra no We.Retail; navegue por **Assets**, **Arquivos**, **We.Retail**, **Inglês**, **Experiências**.
+Há vários fragmentos de conteúdo de exemplo no We.Retail; navegue via **Assets**, **Arquivos**, **We.Retail**, **Inglês**, **Experiências**.
 
-Isso inclui **Surfe no Ártico em Lofoten**, um fragmento junto com ativos visuais relacionados:
+Isso inclui o **Surfe no Ártico no Lofoten**, um fragmento juntamente com ativos visuais relacionados:
 
-* Navegar por meio de **Assets**, **Arquivos**, **We.Retail**, **Inglês**, **Experiências**, **Surfe no Ártico em Lofoten**:
+* Navegue por meio do **Assets**, **Arquivos**, **We.Retail**, **Inglês**, **Experiências**, **Navegação Ártica no Lofoten**:
 
    * [http://localhost:4502/assets.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten](http://localhost:4502/assets.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten)
 
 ![cf-44](assets/cf-44.png)
 
-É possível selecionar e editar o **Surfe no Ártico em Lofoten** fragmento:
+Você pode selecionar e editar o fragmento **Navegação no Ártico no Lofoten**:
 
 * [http://localhost:4502/editor.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten/arctic-surfing-in-lofoten](http://localhost:4502/editor.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten/arctic-surfing-in-lofoten)
 
@@ -69,13 +69,13 @@ Aqui você pode [editar e gerenciar](/help/assets/content-fragments/content-frag
 
 ## Onde os fragmentos de conteúdo são usados no We.Retail {#where-content-fragments-are-used-in-we-retail}
 
-Para ilustrar [criação de página com um fragmento de conteúdo](/help/sites-authoring/content-fragments.md) há vários exemplos de páginas fornecidas em, por exemplo:
+Para ilustrar a criação de [páginas com um fragmento de conteúdo](/help/sites-authoring/content-fragments.md), há vários exemplos de páginas fornecidos em, por exemplo:
 
 * [http://localhost:4502/sites.html/content/we-retail/language-masters/en/experience](http://localhost:4502/sites.html/content/we-retail/language-masters/en/experience)
 
-Por exemplo, a variável **Surfe no Ártico em Lofoten** o fragmento de conteúdo é referenciado na página Sites:
+Por exemplo, o fragmento de conteúdo **Navegação no Ártico em Lofoten** é referenciado na página Sites:
 
-* Navegar via **Sites**, **We.Retail**, **Idioma principal**, **Inglês**, **Experiência**. Em seguida, abrir **Surfe no Ártico em Lofoten** para edição:
+* Navegue pelos **Sites**, **We.Retail**, **Idiomas principais**, **Inglês**, **Experiência**. Em seguida, abra o **Arctic Surfing in Lofoten** para edição:
 
    * [http://localhost:4502/editor.html/content/we-retail/language-masters/en/experience/arctic-surfing-in-lofoten.html](http://localhost:4502/editor.html/content/we-retail/language-masters/en/experience/arctic-surfing-in-lofoten.html)
 

@@ -18,14 +18,14 @@ ht-degree: 2%
 
 # Convenções de nomenclatura {#naming-conventions}
 
-Os nós no repositório estão sujeitos às convenções de nomenclatura da [Repositório de conteúdo Java](/help/sites-developing/the-basics.md#java-content-repository). No entanto, o AEM impõe mais convenções para o nome dos nós da página.
+Os nós no repositório estão sujeitos às convenções de nomenclatura do [Repositório de conteúdo Java](/help/sites-developing/the-basics.md#java-content-repository). No entanto, o AEM impõe mais convenções para o nome dos nós da página.
 
 ## Convenções de nomenclatura para páginas {#naming-conventions-for-pages}
 
 Essas convenções de nomenclatura são implementadas em vários níveis:
 
-* JcrUtil: a implementação do AEM do [Utilitários JCR](#jcr-utilities).
-* PageManager: a [Gerenciador de páginas](#page-manager) O fornece métodos para operações em nível de página.
+* JcrUtil: a implementação por AEM dos [utilitários JCR](#jcr-utilities).
+* PageManager: o [Gerenciador de páginas](#page-manager) fornece métodos para operações em nível de página.
 * De acordo com a interface que está sendo usada:
 
    * [Interface de usuário padrão habilitada para toque](#standard-ui)
@@ -47,7 +47,7 @@ Essas convenções de nomenclatura são implementadas em vários níveis:
 
 ### Gerenciador de páginas {#page-manager}
 
-[PageManager](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageManager.html) O fornece métodos para operações no nível da página, com base em [JCRUtil](#jcr-utilities).
+[PageManager](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageManager.html) fornece métodos para operações no nível da página, com base em [JCRUtil](#jcr-utilities).
 
 ### Interface do usuário padrão {#standard-ui}
 
@@ -67,7 +67,7 @@ A interface clássica impõe restrições mais rigorosas:
    * um título de página é fornecido para conversão no nome do nó
    * um nome de nó explícito é fornecido
 
-* Caracteres válidos (somente esses caracteres são realmente válidos quando uma página é criada na interface clássica, mesmo que `PageManagerImpl` permitiria caracteres adicionais):
+* Caracteres válidos (na verdade, apenas esses caracteres são válidos quando uma página é criada na interface clássica, mesmo que `PageManagerImpl` permita caracteres adicionais):
 
    * &#39;a&#39; a &#39;z&#39;
    * &#39;A&#39; a &#39;Z&#39;

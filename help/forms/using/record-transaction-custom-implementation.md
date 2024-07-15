@@ -24,9 +24,9 @@ ht-degree: 6%
 
 Usar a API TransactionRecorder para registrar ações que não são contabilizadas como transações automaticamente
 
-Você pode usar o código personalizado para enviar um Formulário PDF ou enviar o URL de visualização da interface do usuário do agente para os usuários finais visualizarem uma comunicação interativa. Ou você envia um formulário usando métodos personalizados em vez de usar os métodos de envio fornecidos com o AEM Forms. Todas as ações mencionadas anteriormente e implementações personalizadas de APIs do AEM Forms não são contabilizadas como transações. O AEM Forms fornece uma API, [TransactionRecorder](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/aem/transaction/core/ITransactionRecorder.html), para registrar essas ações como transações.
+Você pode usar o código personalizado para enviar um Formulário PDF ou enviar o URL de visualização da interface do usuário do agente para os usuários finais visualizarem uma comunicação interativa. Ou você envia um formulário usando métodos personalizados em vez de usar os métodos de envio fornecidos com o AEM Forms. Todas as ações mencionadas anteriormente e implementações personalizadas de APIs do AEM Forms não são contabilizadas como transações. A AEM Forms fornece uma API, [TransactionRecorder](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/aem/transaction/core/ITransactionRecorder.html), para registrar essas ações, como transações.
 
-Para registrar uma transação, escreva o [servlet sling padrão](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/store-and-retrieve-af-with-2fa/create-servlet.html?lang=en) e chamar o servlet de um cliente para registrar uma transação. Você pode chamar o servlet usando AJAX ou qualquer outro método padrão.
+Para registrar uma transação, escreva o [servlet sling padrão](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/store-and-retrieve-af-with-2fa/create-servlet.html?lang=en) e chame o servlet de um cliente para registrar uma transação. Você pode chamar o servlet usando AJAX ou qualquer outro método padrão.
 
 ## Código de exemplo do lado do servidor {#sample-server-sided-code}
 
@@ -78,7 +78,7 @@ private TransactionRecord extractTxRecordFromRequest(SlingHttpServletRequest req
 
 ## Código de exemplo do lado do cliente {#sample-client-side-code}
 
-Você pode usar o código de amostra abaixo para chamar o servlet que tem o `TransactionRecorder`API.
+Você pode usar o código de amostra abaixo para chamar o servlet que tem a API `TransactionRecorder`.
 
 ```javascript
 $.ajax({

@@ -17,21 +17,21 @@ ht-degree: 4%
 
 # Estilo em linha de componentes de formulário adaptáveis {#inline-styling-of-adaptive-form-components}
 
-<span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) para [criação de um novo Forms adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
+O <span class="preview"> Adobe recomenda o uso de [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adicionar o Forms Adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-layout-of-an-adaptive-form/inline-style-adaptive-forms.html) |
 | AEM 6.5 | Este artigo |
 
-Você pode definir a aparência geral e o estilo de um formulário adaptável especificando estilos usando [editor de tema](../../forms/using/themes.md). Além disso, você pode aplicar estilos CSS em linha a componentes de formulário adaptáveis individuais e visualizar as alterações em tempo real. Os estilos embutidos substituem o estilo fornecido no tema.
+Você pode definir a aparência geral e o estilo de um formulário adaptável especificando estilos com o [editor de temas](../../forms/using/themes.md). Além disso, você pode aplicar estilos CSS em linha a componentes de formulário adaptáveis individuais e visualizar as alterações em tempo real. Os estilos embutidos substituem o estilo fornecido no tema.
 
 ## Aplicar propriedades CSS em linha {#apply-inline-css-properties}
 
 Para adicionar estilos em linha a um componente:
 
 1. Abra o formulário no editor de formulários e altere o modo para o modo de estilo. Para alterar o modo para o modo de estilo, na barra de ferramentas da página, selecione ![tela suspensa](assets/canvas-drop-down.png) > **Estilo**.
-1. Selecione um componente na página e clique no botão editar ![botão editar](assets/edit-button.png). As propriedades de estilo são abertas na barra lateral.
+1. Selecione um componente na página e selecione o botão de edição ![botão de edição](assets/edit-button.png). As propriedades de estilo são abertas na barra lateral.
 
    Você também pode selecionar componentes da árvore de hierarquia de formulários na barra lateral. A árvore de hierarquia de formulários está disponível como Objetos de formulário na barra lateral.
 
@@ -49,13 +49,13 @@ Para adicionar estilos em linha a um componente:
    * Avançado (permite escrever CSS personalizado para o componente)
 
 1. Da mesma forma, é possível aplicar estilos a outras partes de um componente, como Widget, Legenda e Ajuda.
-1. Selecionar **Concluído** para confirmar as alterações ou **Cancelar** para descartar as alterações.
+1. Selecione **Concluído** para confirmar as alterações ou **Cancelar** para descartar as alterações.
 
 ## Exemplo: estilos em linha para um componente de campo {#example-inline-styles-for-a-field-component}
 
 As imagens a seguir representam um campo de texto antes e depois que estilos em linha são aplicados a ele.
 
-![Componente de caixa de texto antes da aplicação do estilo em linha](assets/no-style.png)
+![Componente de caixa de texto antes da aplicação do estilo embutido](assets/no-style.png)
 
 Componente Caixa de texto antes de aplicar propriedades de estilo em linha
 
@@ -102,7 +102,7 @@ Observe a alteração no estilo da caixa de texto, como mostrado na imagem a seg
  </tbody>
 </table>
 
-![Estilo da caixa de texto após a aplicação do estilo em linha](assets/applied-style.png)
+![Estilo da caixa de texto após a aplicação do estilo incorporado](assets/applied-style.png)
 
 Componente Caixa de texto após aplicar propriedades de estilo em linha
 

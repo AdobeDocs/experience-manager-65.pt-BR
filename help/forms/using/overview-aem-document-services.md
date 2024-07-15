@@ -28,7 +28,7 @@ Os serviços de documento AEM são um conjunto de serviços OSGi para criar, mon
 
 ## Serviço de saída {#output-service}
 
-O Output service permite criar documentos em diferentes formatos, incluindo formatos de PDF, impressora a laser e impressora a laser. Os formatos de impressora a laser são PostScript e Printer Control Language (PCL). A lista a seguir especifica os formatos de impressora de etiquetas:
+O Output service permite criar documentos em diferentes formatos, incluindo formatos de PDF, impressora a laser e impressora a laser. Os formatos de impressora a laser são PostScript e PCL (Printer Control Language). A lista a seguir especifica os formatos de impressora de etiquetas:
 
 * Zebra (ZPL)
 * Intermec (IPL)
@@ -46,10 +46,10 @@ Ao usar o Serviço de saída para mesclar dados XML com um design de formulário
 As quatro operações de Serviço de saída a seguir estão disponíveis para uso:
 
 * **generatePDFOuput**: mescla um design de formulário com dados para gerar um documento PDF
-* **generatePrintedOutput**: mescla um design de formulário com dados de formulário para gerar um documento para enviar a uma impressora a laser ou a uma impressora de rede de etiquetas
+* **generatePrintedOutput**: mescla um design de formulário com dados de formulário para gerar um documento para enviar a uma impressora laser ou a uma impressora de rede de etiquetas
 
-* **generatePDFOutputBatch**: mescla vários modelos com vários registros de dados em uma única chamada para gerar um lote de arquivos PDF. Há também a opção de gerar um único PDF combinando todos os PDF
-* **generatePrintedOutputBatch**: Mescla vários templates com vários registros de dados em uma única chamada para gerar um lote de documentos de impressão (PS,PCL,ZPL,DPL,IPL,TPCL). Há também a opção de gerar um único documento de impressão.
+* **generatePDFOutputBatch**: mescla vários modelos com vários registros de dados em uma única invocação para gerar um lote de arquivos PDF. Há também a opção de gerar um único PDF combinando todos os PDF
+* **generatePrintedOutputBatch**: mescla vários modelos com vários registros de dados em uma única invocação para gerar um lote de documentos de impressão (PS,PCL,ZPL,DPL,IPL,TPCL). Há também a opção de gerar um único documento de impressão.
 
 ## Serviço de Assembler {#assembler-service}
 
@@ -133,7 +133,7 @@ Quando os documentos PDF têm os direitos de uso apropriados adicionados, os rec
 
 Esses recursos especiais do usuário são ativados automaticamente quando um documento PDF habilitado para direitos é aberto no Adobe Reader. Quando o usuário terminar de trabalhar com um documento com direitos ativados, essas funções serão novamente desativadas no Adobe Reader. Eles permanecem desativados até que o usuário receba outro documento PDF com direitos ativados.
 
-Imediatamente, o serviço DocAssurance não está disponível para uso. Para configurar o serviço DocAssurance, consulte [Instalar e configurar serviços de documento](../../forms/using/install-configure-document-services.md).
+Imediatamente, o serviço DocAssurance não está disponível para uso. Para configurar o serviço DocAssurance, consulte [Instalação e Configuração de Serviços de Documento](../../forms/using/install-configure-document-services.md).
 
 ## Enviar para Serviço de Impressora {#send-to-printer-service}
 

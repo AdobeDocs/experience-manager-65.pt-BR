@@ -22,7 +22,7 @@ As práticas recomendadas descrevem como desenvolver, administrar ou usar o AEM 
 
 As seguintes áreas têm documentação disponível sobre práticas recomendadas:
 
-* [Assets](#assets)
+* [Ativos](#assets)
 * [Sites](#sites)
 
 Para obter as práticas recomendadas sobre criação, implantação e manutenção ou desenvolvimento, consulte uma das seguintes opções:
@@ -33,14 +33,14 @@ Para obter as práticas recomendadas sobre criação, implantação e manutenç�
 
 Os documentos específicos são descritos e vinculados nas tabelas seguintes.
 
-## Assets {#assets}
+## Ativos {#assets}
 
-As práticas recomendadas para o Assets, incluindo o recurso do Dynamic Media e a integração do Dynamic Media Classic, estão descritas nos seguintes tópicos:
+As práticas recomendadas do Assets, incluindo o recurso Dynamic Media e a integração do Dynamic Media Classic, estão descritas nos seguintes tópicos:
 
 <table>
  <tbody>
   <tr>
-   <td>Práticas recomendadas em diferentes áreas do Assets para melhorar a estabilidade e o desempenho do sistema sob carga</td>
+   <td>Práticas recomendadas em diferentes áreas da Assets para melhorar a estabilidade e o desempenho do sistema sob carga</td>
    <td><a href="/help/assets/best-practices-for-assets.md">Práticas recomendadas para o Assets</a></td>
    <td>Inclui links para guias de práticas recomendadas em diferentes áreas do Assets. Depois de revisá-los, você terá o conhecimento e as ferramentas para criar e gerenciar um sistema de gerenciamento de ativos da empresa.</td>
   </tr>
@@ -56,8 +56,8 @@ As práticas recomendadas para o Assets, incluindo o recurso do Dynamic Media e 
   </tr>
   <tr>
    <td>Opções de predefinição de imagem</td>
-   <td>Noções básicas <a href="/help/assets/managing-image-presets.md#understanding-image-presets">predefinições de imagem</a> e <a href="/help/assets/managing-image-presets.md#image-preset-options">práticas recomendadas de predefinição de imagem</a></td>
-   <td>Como parte da documentação sobre <a href="/help/assets/managing-image-presets.md">Gerenciamento de predefinições da imagem</a>, esses tópicos descrevem quais são as predefinições de imagens e as práticas recomendadas para selecionar as opções de predefinição de imagem.</td>
+   <td>Noções básicas sobre <a href="/help/assets/managing-image-presets.md#understanding-image-presets">predefinições de imagem</a> e <a href="/help/assets/managing-image-presets.md#image-preset-options">práticas recomendadas de predefinição de imagem</a></td>
+   <td>Como parte da documentação sobre <a href="/help/assets/managing-image-presets.md">Gerenciamento de predefinições de imagens</a>, esses tópicos descrevem quais são as predefinições de imagens e as práticas recomendadas para a seleção de opções de predefinições de imagens.</td>
   </tr>
   <tr>
    <td>Dynamic Media versus integração direta com o Scene7</td>

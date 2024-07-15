@@ -14,7 +14,7 @@ ht-degree: 51%
 
 # Como executar o aplicativo headless {#go-live}
 
-Nesta parte do [Jornada do desenvolvedor sem periféricos do AEM](overview.md), saiba como implantar um aplicativo headless ao vivo.
+Nesta parte da [Jornada de desenvolvedores sem periféricos do AEM](overview.md), saiba como implantar um aplicativo sem periféricos.
 
 ## A história até agora {#story-so-far}
 
@@ -39,7 +39,7 @@ Este documento ajuda você a entender o pipeline de publicação headless do AEM
 O SDK do AEM é usado para criar e implantar código personalizado. É a ferramenta principal que você deve desenvolver e testar seu aplicativo headless antes de entrar em funcionamento. Ele contém os seguintes artefatos:
 
 * O Quickstart jar: um arquivo jar executável que pode ser usado para configurar um autor e uma instância de publicação
-* Ferramentas do Dispatcher - o módulo Dispatcher e suas dependências para sistemas baseados no Windows e no UNIX
+* Ferramentas do Dispatcher - o módulo Dispatcher e suas dependências para sistemas baseados em Windows e UNIX
 * Java™ API Jar: a dependência Java™ Jar/Maven que expõe todas as APIs Java™ permitidas que podem ser usadas para desenvolvimento no AEM
 * Javadoc jar: o javadocs para o jar da API Java™
 
@@ -59,7 +59,7 @@ O Git é o que você usa para gerenciar o controle de origem e verificar as alte
 
 O AEM usa o Apache Maven para criar projetos gerados a partir do arquétipo de projeto Maven do AEM. Todos os principais IDEs fornecem suporte de integração para Maven.
 
-Node.js é um ambiente de tempo de execução JavaScript usado para trabalhar com os ativos de front-end de um projeto AEM `ui.frontend` subprojeto. O Node.js é distribuído com o npm, que é o gerenciador de pacotes Node.js de fato, usado para gerenciar dependências do JavaScript.
+Node.js é um ambiente de tempo de execução do JavaScript usado para trabalhar com os ativos front-end de um subprojeto `ui.frontend` do projeto AEM. O Node.js é distribuído com o npm, que é o verdadeiro Gerenciador de pacotes do Node.js, usado para gerenciar dependências do JavaScript.
 
 ## Principais características de componentes de um sistema do AEM {#components-of-an-aem-system-at-a-glance}
 
@@ -69,7 +69,7 @@ Um ambiente do AEM completo é composto de um Autor, Publicação e Dispatcher. 
 
 * **O serviço do Autor** é onde os usuários internos criam, gerenciam e visualizam conteúdo.
 
-* **O serviço de Publicação** O é considerado o ambiente &quot;ativo&quot; e é, normalmente, com o que os usuários finais interagem. O conteúdo, após ser editado e aprovado no serviço do Autor, é distribuído (replicado) para o serviço de Publicação. O padrão de implantação mais comum com aplicativos headless do AEM é ter uma versão de produção do aplicativo conectada a um serviço de publicação do AEM.
+* **O serviço Publish** é considerado o ambiente &quot;ativo&quot; e é, normalmente, com o que os usuários finais interagem. O conteúdo, após ser editado e aprovado no serviço do Autor, é distribuído (replicado) para o serviço do Publish. O padrão de implantação mais comum com aplicativos headless do AEM é ter uma versão de produção do aplicativo conectada a um serviço de publicação do AEM.
 
 * **O Dispatcher** é um servidor Web estático aumentado com o módulo AEM Dispatcher. Ele armazena em cache as páginas da Web produzidas pela instância de publicação para melhorar o desempenho.
 
@@ -107,7 +107,7 @@ Agora, é hora de preparar seu aplicativo AEM headless para o lançamento, segui
 
 ### Proteja seu aplicativo headless antes do lançamento {#secure-and-scale-before-launch}
 
-1. Preparar [Autenticação](/help/sites-developing/headless/graphql-api/graphql-authentication-content-fragments.md) para suas solicitações do GraphQL
+1. Preparar a [Autenticação](/help/sites-developing/headless/graphql-api/graphql-authentication-content-fragments.md) para as solicitações do GraphQL
 
 ### Estrutura do modelo vs Saída da GraphQL {#structure-vs-output}
 
@@ -126,31 +126,31 @@ Agora, é hora de preparar seu aplicativo AEM headless para o lançamento, segui
 
 >[!NOTE]
 >
->Consulte [Recursos adicionais](#additional-resources) para obter mais informações sobre CDN e cache.
+>Consulte [Recursos adicionais](#additional-resources) para obter mais informações sobre CDN e armazenamento em cache.
 
 ### Melhore o tempo de download de conteúdo headless {#improve-download-time}
 
 * Verifique se os clientes HTTP usam HTTP/2.
 * Verifique se os clientes HTTP aceitam a solicitação de cabeçalhos para gzip.
 * Minimize o número de domínios usados para hospedar JSON e artefatos referenciados.
-* Uso `Last-modified-since` para atualizar recursos.
+* Use `Last-modified-since` para atualizar recursos.
 * Use a saída `_reference` no arquivo JSON para iniciar o download de ativos sem precisar analisar os arquivos JSON completos.
 
 <!-- End of CDN Review -->
 
 ## Implantar para produção {#deploy-to-production}
 
-Implantar para produção pode depender se você tem um *tradicional* Instância de AEM que é implantada usando Maven ou que está no Adobe Managed Services (AMS) e, portanto, usando o Cloud Manager.
+A implantação para produção pode depender se você tem uma instância AEM *tradicional* que é implantada usando Maven ou se está no Adobe Managed Services (AMS) e, portanto, usando o Cloud Manager.
 
 ## Implantar para produção usando Maven {#deploy-to-production-maven}
 
-Para um *tradicional* (não AMS) usando Maven, consulte a seção [Tutorial do WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html#build) para obter uma visão geral.
+Para uma implantação *tradicional* (não AMS) usando o Maven, consulte o [Tutorial WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html#build) para obter uma visão geral.
 
 ## Implantar para produção usando o Cloud Manager {#deploy-to-production-cloud-manager}
 
 Se você for um cliente do AMS usando o Cloud Manager, depois de verificar se tudo foi testado e está funcionando corretamente, poderá enviar as atualizações de código para um [repositório Git centralizado no Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/managing-code/git-integration.html).
 
-Depois que as atualizações forem carregadas no Cloud Manager, implante-as no AEM usando [Pipeline de CI/CD do Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html).
+Depois que as atualizações forem carregadas no Cloud Manager, implante-as no AEM usando o [pipeline de CI/CD do Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html).
 
 <!-- Cannot find a parallel link -->
 <!--
@@ -211,13 +211,13 @@ Ou você já lançou seu primeiro projeto AEM Headless ou agora tem todo o conhe
 
 ### Explore os Aplicativos de página única {#explore-spa}
 
-Não há necessidade de parar as lojas headless no AEM. No [Introdução como parte da jornada](getting-started.md#integration-levels)Em seguida, discutiu como o AEM não apenas suporta a entrega headless e os modelos tradicionais de pilha completa, mas também suporta modelos híbridos que combinam as vantagens de ambos.
+Não há necessidade de parar as lojas headless no AEM. Na parte de [Introdução da jornada](getting-started.md#integration-levels), foi discutido como o AEM não apenas suporta entrega headless e modelos de pilha completa tradicionais, como também suporta modelos híbridos que combinam as vantagens de ambos.
 
 Se esse tipo de flexibilidade for algo que você precisa para seu projeto, continue com a parte adicional opcional da jornada, [Como criar aplicativos de página única (SPA) com AEM.](create-spa.md)
 
 ## Recursos adicionais {#additional-resources}
 
-* [Guia de desenvolvimento do AEM](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/the-basics.html)
+* [Guia de Desenvolvimento do AEM](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/the-basics.html)
 
 * [Tutorial do WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=pt-BR)
 
@@ -225,10 +225,10 @@ Se esse tipo de flexibilidade for algo que você precisa para seu projeto, conti
 
 * Cache da CDN
 
-   * [Controle de um cache CDN](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html#controlling-a-cdn-cache)
+   * [Controlando um Cache CDN](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html#controlling-a-cdn-cache)
 
-   * Configuração do [Reescrita CDN](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/osgi-configuration-settings.html) (*pesquisar Reescritor CDN*)
+   * Configurando o [Reescritor de CDN](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/osgi-configuration-settings.html) (*pesquisar Reescritor de CDN*)
 
 * [Introdução ao AEM as a Headless CMS](/help/sites-developing/headless/introduction.md)
-* [Portal do desenvolvedor de AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=pt-BR)
-* [Tutorials para headless no AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=pt-BR)
+* [Portal do desenvolvedor do AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=pt-BR)
+* [Tutorials para Headless no AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=pt-BR)

@@ -29,20 +29,20 @@ Para uma discussão sobre opções de armazenamento e topologias de implantaçã
 
 ## Console de configuração de armazenamento {#storage-configuration-console}
 
-![jsrp-configuration](assets/jsrp-configuration.png)
+![configuração-jsrp](assets/jsrp-configuration.png)
 
 No ambiente do Author, para acessar o console de configuração de armazenamento.
 
-* Na navegação global, selecione **[!UICONTROL Ferramentas]** > **[!UICONTROL Communities]** > **[!UICONTROL Configuração de armazenamento]**
+* Na navegação global, selecione **[!UICONTROL Ferramentas]** > **[!UICONTROL Comunidades]** > **[!UICONTROL Configuração de Armazenamento]**
 
 Para selecionar uma opção de armazenamento diferente do JCR padrão:
 
 * Selecione uma opção
 * Configurar adequadamente
 
-   * Veja os detalhes de [seleção de MSRP](msrp.md#select-msrp)
-   * Veja os detalhes de [seleção de DSRP](dsrp.md#select-dsrp)
-   * Veja os detalhes de [selecionando ASRP](asrp.md#select-asrp)
+   * Veja detalhes para [selecionar MSRP](msrp.md#select-msrp)
+   * Veja detalhes para [selecionar DSRP](dsrp.md#select-dsrp)
+   * Veja detalhes para [selecionar ASRP](asrp.md#select-asrp)
 
 * Selecione **[!UICONTROL Enviar]**.
 
@@ -50,10 +50,10 @@ Para selecionar uma opção de armazenamento diferente do JCR padrão:
 
 Se nenhuma seleção for feita, o padrão será o repositório AEM, JCR.
 
-O JCR é *não* um armazenamento comum compartilhado pelos ambientes Autor e Publicação. O conteúdo da comunidade é visível somente no ambiente de Autor ou Publicação em que foi criado.
+O JCR *não* é um armazenamento comum compartilhado pelos ambientes do Autor e do Publish. O conteúdo da comunidade é visível somente no ambiente Autor ou Publish em que foi criado.
 
-Visita [Armazenamento JCR](jsrp.md) para obter informações adicionais.
+Visite a [Loja JCR](jsrp.md) para obter mais informações.
 
 >[!NOTE]
 >
->A ausência do nó `srpc` em `/etc/socialconfig` indica o padrão [Armazenamento JCR](jsrp.md).
+>A ausência do nó `srpc` em `/etc/socialconfig` indica o [armazenamento JCR](jsrp.md) padrão.

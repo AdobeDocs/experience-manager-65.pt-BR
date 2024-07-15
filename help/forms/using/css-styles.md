@@ -25,13 +25,13 @@ A representação HTML5 de um modelo de formulário baseado em XFA consiste em v
 >
 >Nas classes CSS, não altere o valor da largura, altura, espessura da borda, superior, esquerda, direita, inferior, preenchimento, margem e outros atributos de posição e tamanho. Qualquer alteração nos atributos de posição e tamanho traz alterações ao layout do formulário.
 
-## Classes CSS para elementos  {#css-classes-nbsp-for-elements-nbsp}
+## Classes CSS  para elementos  {#css-classes-nbsp-for-elements-nbsp}
 
 Cada elemento contém classes CSS bem definidas. Você pode modificar essas classes para alterar a aparência de um elemento. Todos os elementos, exceto os elementos field e draw, têm duas classes CSS - classe Type e classe Name.
 
-* A variável **Classe de tipo** representa o tipo do campo XFA. Você pode substituir o `type` para modificar os estilos de todos os elementos de um tipo específico.
+* A classe **Type** representa o tipo do campo XFA. Você pode substituir a classe `type` para modificar os estilos de todos os elementos de um tipo específico.
 
-* A variável **Classe do nome** corresponde ao nome do campo XFA. Você pode substituir o `name` para modificar e aplicar um estilo personalizado a um elemento.
+* A **classe Name** corresponde ao nome do campo XFA. Você pode substituir a classe `name` para modificar e aplicar um estilo personalizado a um elemento.
 
 >[!NOTE]
 >
@@ -43,13 +43,13 @@ Para as páginas não nomeadas no AEM Forms Designer, as páginas em um formulá
 
 O elemento field contém dois elementos aninhados: widget e legenda.
 
-**Elemento widget**
+**Elemento de widget**
 
 O elemento widget contém o elemento da interface do usuário para interação com os usuários. Ele tem três classes CSS:
 
 * **Widget**: todos os widgets têm essa classe.
-* **name**: todos os widgets enviados com AEM contêm a classe de nome do widget. Para widgets personalizados, o desenvolvedor do widget fornece a classe Nome do widget.
-* **type**: cada widget tem um elemento de interface do usuário. Essa classe define o tipo do elemento da interface do usuário.
+* **nome**: todos os widgets enviados com AEM contêm a classe de nome de widget. Para widgets personalizados, o desenvolvedor do widget fornece a classe Nome do widget.
+* **tipo**: cada widget tem um elemento de interface do usuário. Essa classe define o tipo do elemento da interface do usuário.
 
 ```xml
 <!--field with caption-->
@@ -68,7 +68,7 @@ O elemento widget contém o elemento da interface do usuário para interação c
 </div>
 ```
 
-Além do tipo e da classe de nome, o componente de campo também contém uma classe CSS adicional chamada **subtipo**. Um subtipo identifica que tipo de campo é, por exemplo, NumericField, DateField, TextField. Você pode substituir a classe do subtipo para modificar o estilo de todos os campos do tipo, subtipo.
+Além do tipo e da classe de nome, o componente de campo também contém uma classe CSS adicional denominada **subtype**. Um subtipo identifica que tipo de campo é, por exemplo, NumericField, DateField, TextField. Você pode substituir a classe do subtipo para modificar o estilo de todos os campos do tipo, subtipo.
 
 ## Classes CSS para componentes diferentes {#css-classes-for-different-components}
 
@@ -82,7 +82,7 @@ Além do tipo e da classe de nome, o componente de campo também contém uma cla
   <tr>
    <td>Página</td>
    <td>página</td>
-   <td>Nome definido pelo usuário<br /> ou<br /> Página&lt;pagenumber&gt; (padrão)</td>
+   <td>Nome definido pelo usuário<br /> ou<br /> Página&lt;pageNumber&gt; (padrão)</td>
   </tr>
   <tr>
    <td>Área de conteúdo</td>
@@ -142,46 +142,46 @@ Cada campo tem um widget associado que representa o elemento da interface do usu
    <td>ND</td>
    <td>xfaButton<br type="_moz" /> </td>
    <td>buttonfieldwidget<br type="_moz" /> </td>
-   <td>input type=button<br type="_moz" /> </td>
+   <td>tipo de entrada=button<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>CheckButton<br type="_moz" /> </td>
    <td>checkboxfield<br /> </td>
    <td>XfaCheckBox<br type="_moz" /> </td>
    <td>checkboxfieldwidget<br type="_moz" /> </td>
-   <td>input type=caixa de seleção<br type="_moz" /> </td>
+   <td>tipo de entrada=caixa de seleção<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>DateField<br type="_moz" /> </td>
    <td>datefield<br type="_moz" /> </td>
    <td>dateField<br type="_moz" /> </td>
    <td>datefieldwidget<br type="_moz" /> </td>
-   <td>input type=text<br type="_moz" /> </td>
+   <td>tipo de entrada=texto<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>DateTimeField<br type="_moz" /> </td>
    <td>textfield<br type="_moz" /> </td>
    <td>textField<br type="_moz" /> </td>
    <td>textfieldwidget</td>
-   <td>input type=text<br type="_moz" /> </td>
+   <td>tipo de entrada=texto<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>DecimalField<br type="_moz" /> </td>
    <td>campo numérico<br type="_moz" /> </td>
    <td>numericInput<br type="_moz" /> </td>
    <td>numericfieldwidget<br type="_moz" /> </td>
-   <td>input type=text<br type="_moz" /> </td>
+   <td>tipo de entrada=texto<br type="_moz" /> </td>
   </tr>
   <tr>
-   <td>DropDown<br type="_moz" /> </td>
-   <td>choicelist<br type="_moz" /> </td>
+   <td>Suspenso<br type="_moz" /> </td>
+   <td>lista de opções<br type="_moz" /> </td>
    <td>dropDownListWidget<br type="_moz" /> </td>
    <td>choicelistwidget<br type="_moz" /> </td>
    <td>selecionar</td>
   </tr>
   <tr>
    <td>CaixaDeListagem<br type="_moz" /> </td>
-   <td>choicelist<br type="_moz" /> </td>
+   <td>lista de opções<br type="_moz" /> </td>
    <td>listBoxWidget<br type="_moz" /> </td>
    <td>choicelistwidget<br type="_moz" /> </td>
    <td>ol</td>
@@ -191,44 +191,44 @@ Cada campo tem um widget associado que representa o elemento da interface do usu
    <td>campo numérico<br type="_moz" /> </td>
    <td>numericInput<br type="_moz" /> </td>
    <td>numericfieldwidget<br type="_moz" /> </td>
-   <td>input type=text<br type="_moz" /> </td>
+   <td>tipo de entrada=texto<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>CampoSenha<br type="_moz" /> </td>
    <td>passwordfield<br type="_moz" /> </td>
    <td>defaultWidget<br type="_moz" /> </td>
    <td>passwordfieldwidget<br type="_moz" /> </td>
-   <td>input type=password<br type="_moz" /> </td>
+   <td>tipo de entrada=senha<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>RadioButton<br type="_moz" /> </td>
    <td>radiofield<br type="_moz" /> </td>
    <td>XfaCheckBox<br type="_moz" /> </td>
    <td>radiofieldwidget<br type="_moz" /> </td>
-   <td>input type=radio<br type="_moz" /> </td>
+   <td>tipo de entrada=rádio<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>CampoTexto<br type="_moz" /> </td>
    <td>textfield<br type="_moz" /> </td>
    <td>textField<br type="_moz" /> </td>
    <td>textfieldwidget<br type="_moz" /> </td>
-   <td>input type=text<br type="_moz" /> </td>
+   <td>tipo de entrada=texto<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>TimeField<br type="_moz" /> </td>
    <td>textfield<br type="_moz" /> </td>
    <td>textField<br type="_moz" /> </td>
    <td>textfieldwidget<br type="_moz" /> </td>
-   <td>input type=text<br type="_moz" /> </td>
+   <td>tipo de entrada=texto<br type="_moz" /> </td>
   </tr>
  </tbody>
 </table>
 
-## Classes CSS para diferentes elementos Draw {#css-classes-for-different-draw-elements}
+## Classes CSS para elementos Draw diferentes {#css-classes-for-different-draw-elements}
 
 Você pode inserir elementos de desenho estáticos, como texto e imagens, usando o AEM Forms Designer. Para cada elemento de desenho, uma classe CSS separada é associada a esse elemento. A lista de classes CSS para elementos de desenho está listada abaixo. Cada elemento de desenho tem uma classe de desenho associada a ele.
 
-| **Tipo de Desenho** | **Classe CSS** |
+| **Tipo de Draw** | **classe CSS** |
 |---|---|
 | Texto | text |
 | Imagem | imagem |
@@ -241,12 +241,12 @@ Além da aparência dos componentes da interface do usuário no formulário HTML
 
 `Styling Inline Errors`
 
-Quando a validação de um campo resulta em erro, um erro em linha é exibido quando o campo está ativo. Para alterar o estilo dos erros em linha, substitua a ID de CSS **error-msg**.
+Quando a validação de um campo resulta em erro, um erro em linha é exibido quando o campo está ativo. Para alterar o estilo de erros em linha, substitua a ID de CSS **error-msg**.
 
 `Styling Inline Warnings`
 
-Quando a validação de um campo resulta em um aviso, um aviso em linha é exibido quando o campo está ativo. Para alterar o estilo desses avisos em linha, substitua a ID de CSS **warning-msg**.
+Quando a validação de um campo resulta em um aviso, um aviso em linha é exibido quando o campo está ativo. Para alterar o estilo desses avisos incorporados, substitua a ID de CSS **warning-msg**.
 
 `Styling Fields with Validation Errors`
 
-Quando a validação de um campo falhar, o estilo do widget será alterado. Essa alteração de estilo é feita aplicando uma classe CSS **widgetError** no componente widget. Para modificar o estilo padrão, substitua o **widgetError** classe.
+Quando a validação de um campo falhar, o estilo do widget será alterado. Esta alteração de estilo é feita através da aplicação de uma classe CSS **widgetError** no componente widget. Para modificar o estilo padrão, substitua a classe **widgetError**.

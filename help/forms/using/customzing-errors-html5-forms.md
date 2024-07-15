@@ -34,10 +34,10 @@ Após extrair o pacote, abra a pasta CustomErrorManager-1.0-SNAPSHOT. Ele conté
 
 ### Personalização da posição das mensagens de erro  {#customizing-the-position-of-error-messages-nbsp}
 
-Para personalizar a posição da mensagem de erro, adicione uma &lt;div> para cada campo de erro e aviso, posicione a tag &lt;div> à esquerda ou à direita e aplique estilos de CSS à &lt;div> tag. Para obter etapas detalhadas, consulte o procedimento listado abaixo:
+Para personalizar a posição da mensagem de erro, adicione uma tag &lt;div> para cada campo de erro e aviso, posicione a tag &lt;div> à esquerda ou à direita e aplique estilos de css à tag &lt;div>. Para obter etapas detalhadas, consulte o procedimento listado abaixo:
 
-1. Navegue até a `CustomErrorManager-1.0-SNAPSHOT`e abra a `etc\clientlibs\mf-custom-error-manager\CustomErrorManager\javascript` pasta.
-1. Abra o `customErrorManager.js` arquivo para edição. A variável `markError` A função no arquivo aceita os seguintes parâmetros:
+1. Navegue até a pasta `CustomErrorManager-1.0-SNAPSHOT` e abra a pasta `etc\clientlibs\mf-custom-error-manager\CustomErrorManager\javascript`.
+1. Abra o arquivo `customErrorManager.js` para edição. A função `markError` no arquivo aceita os seguintes parâmetros:
 
    |   |  |
    |---|---|
@@ -75,7 +75,7 @@ Para personalizar a posição da mensagem de erro, adicione uma &lt;div> para ca
    ```
 
 1. Salvar e fechar o arquivo.
-1. Navegue até a `CustomErrorManager-1.0-SNAPSHOT` e crie um arquivo das pastas jcr_root e META-INF. Renomeie o arquivo para CustomErrorManager-1.0-SNAPSHOT.zip.
+1. Navegue até a pasta `CustomErrorManager-1.0-SNAPSHOT` e crie um arquivo das pastas jcr_root e META-INF. Renomeie o arquivo para CustomErrorManager-1.0-SNAPSHOT.zip.
 1. Use o Gerenciador de pacotes para fazer upload e instalar o pacote.
 
 ## Exibir mensagens de erro para vários campos  {#display-error-messages-for-multiple-fields-nbsp}
@@ -118,7 +118,7 @@ Use o pacote anexado para exibir simultaneamente mensagens de erro para todos os
 
 ## Renderize o formulário com o novo perfil.  {#render-the-form-with-the-new-profile-nbsp}
 
-Pronto para uso, os formulários html5 usam um perfil padrão: `https://&lt;server&gt;/content/xfaforms/profiles/default.html?contentRoot=&lt;xdp location&gt;&template=&lt;name of the xdp&gt;`
+Os formulários html5 prontos para uso usam um perfil padrão: `https://&lt;server&gt;/content/xfaforms/profiles/default.html?contentRoot=&lt;xdp location&gt;&template=&lt;name of the xdp&gt;`
 
 Para exibir um formulário com as mensagens de erro personalizadas, renderize o formulário com o perfil de erro: `https://&lt;server&gt;/content/xfaforms/profiles/error.html?contentRoot=&lt;xdp location&gt;&template=&lt;name of the xdp&gt;`
 

@@ -22,18 +22,18 @@ ht-degree: 1%
 As etapas genéricas para executar qualquer personalização são:
 
 1. Faça logon no CRXDE Lite acessando `https://'[server]:[port]'/lc/crx/de/index.jsp`.
-1. Criar um `sling:Folder` pasta nomeada `ws` em `/apps`, se não existir. Para criar um `sling:Folder` , clique com o botão direito do mouse na `apps` e selecione **[!UICONTROL Criar]** > **[!UICONTROL Criar nó]**. Especifique o nome como `ws`, selecione tipo como `sling:Folder`e clique em **[!UICONTROL OK]**. Clique em **[!UICONTROL Salvar tudo]**.
-1. Navegue até `/apps/ws`e navegue até o **[!UICONTROL Controle de acesso]** guia.
-1. Selecione o **[!UICONTROL Repositório]** opção. No **[!UICONTROL Controle de acesso]** clique em **[!UICONTROL +]** para adicionar uma entrada. Clique em **[!UICONTROL +]** novamente.
-1. Pesquise e selecione o **PERM_WORKSPACE_USER** Principal.
+1. Crie uma pasta `sling:Folder` chamada `ws` em `/apps`, se ela não existir. Para criar uma pasta `sling:Folder`, clique com o botão direito do mouse na pasta `apps` e selecione **[!UICONTROL Criar]** > **[!UICONTROL Criar Nó]**. Especifique o nome como `ws`, selecione tipo como `sling:Folder` e clique em **[!UICONTROL OK]**. Clique em **[!UICONTROL Salvar tudo]**.
+1. Navegue até `/apps/ws` e acesse a guia **[!UICONTROL Controle de Acesso]**.
+1. Selecione a opção **[!UICONTROL Repositório]**. Na lista **[!UICONTROL Controle de Acesso]**, clique em **[!UICONTROL +]** para adicionar uma entrada. Clique novamente em **[!UICONTROL +]**.
+1. Pesquise e selecione a Entidade de Segurança **PERM_WORKSPACE_USER**.
 
-   ![Selecione PRINCIPAL PERM_WORKSPACE_USER como parte das etapas genéricas para personalizar o HTML Workspace](assets/perm_workspace_user.png)
+   ![Selecione a entidade de segurança PERM_WORKSPACE_USER como parte das etapas genéricas para personalizar o HTML Workspace](assets/perm_workspace_user.png)
 
-1. Conceder `jcr:read` ao responsável principal.
+1. Conceda o privilégio `jcr:read` ao Principal.
 1. Clique em **[!UICONTROL Salvar tudo]**.
-1. Copie o `GET.jsp`, `index`, e `html.jsp` arquivos do `/libs/ws` pasta para a `/apps/ws` pasta.
-1. Copie o `/libs/ws/locales` pasta na `/apps/ws` pasta. Clique em **[!UICONTROL Salvar tudo]**.
-1. Atualize as referências e os caminhos relativos no `GET.jsp` conforme mostrado abaixo e clique em **[!UICONTROL Salvar tudo]**.
+1. Copie os arquivos `GET.jsp`, `index` e `html.jsp` da pasta `/libs/ws` para a pasta `/apps/ws`.
+1. Copie a pasta `/libs/ws/locales` na pasta `/apps/ws`. Clique em **[!UICONTROL Salvar tudo]**.
+1. Atualize as referências e os caminhos relativos no arquivo `GET.jsp`, conforme mostrado abaixo, e clique em **[!UICONTROL Salvar tudo]**.
 
    ```javascript
    <meta http-equiv="refresh" content="0;URL='/lc/apps/ws/index.html'" />
@@ -41,11 +41,11 @@ As etapas genéricas para executar qualquer personalização são:
 
 1. Faça o seguinte para personalizações de CSS:
 
-   1. Navegue até a `/apps/ws` e crie uma pasta chamada `css`.
+   1. Navegue até a pasta `/apps/ws` e crie uma pasta chamada `css`.
 
-   1. No `css` , crie um arquivo chamado `newStyle.css`.
+   1. Na pasta `css`, crie um arquivo chamado `newStyle.css`.
 
-   1. Abertura `/apps/ws/html`.jsp e alterar de
+   1. Abra `/apps/ws/html`.jsp e altere de
 
    ```javascript
    <link lang="en" rel="stylesheet" type="text/css" href="css/style.css" />
@@ -82,7 +82,7 @@ As etapas genéricas para executar qualquer personalização são:
 
    1. Crie uma pasta chamada `libs` em `/apps/ws/js`. Clique em **[!UICONTROL Salvar tudo]**.
 
-   1. Copiar `/libs/ws/js/libs/jqueryui` pasta para `/apps/ws/js/libs`. Clique em **[!UICONTROL Salvar tudo]**.
+   1. Copiar pasta `/libs/ws/js/libs/jqueryui` para `/apps/ws/js/libs`. Clique em **[!UICONTROL Salvar tudo]**.
 
 1. Faça o seguinte para personalizações de HTML:
 
@@ -96,4 +96,4 @@ As etapas genéricas para executar qualquer personalização são:
 
 1. Clique em **[!UICONTROL Salvar tudo]**, limpar o cache e atualizar o espaço de trabalho do AEM Forms.
 
-   Acessar o URL `https://'[server]:[port]'/lc/ws` e faça logon com credenciais de administrador/senha. O navegador redireciona para `https://'[server]:[port]'/lc/apps/ws/index.html`.
+   Acesse a URL `https://'[server]:[port]'/lc/ws` e faça logon com credenciais de administrador/senha. O navegador redireciona para `https://'[server]:[port]'/lc/apps/ws/index.html`.

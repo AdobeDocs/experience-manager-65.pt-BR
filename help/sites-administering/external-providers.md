@@ -27,13 +27,13 @@ Várias configurações prontas para uso estão disponíveis para integração c
 * [Adobe Analytics](/help/sites-administering/adobeanalytics.md)
 * [Adobe Target](/help/sites-administering/target.md)
 
-Você também pode configurar sua própria instância do **Trechos de análise genéricos** para definir uma nova configuração de serviço.
+Você também pode configurar sua própria instância dos **Trechos de Análise Genérica** para definir uma nova configuração de serviço.
 
 As informações são então coletadas por pequenos fragmentos de código que são adicionados às páginas da Web. Por exemplo:
 
 >[!CAUTION]
 >
->Não incluir scripts em `script` específicos.
+>Não coloque scripts em `script` tags.
 
 ```
 var _gaq = _gaq || [];
@@ -56,9 +56,9 @@ Esses snippets permitem que os dados sejam coletados e os relatórios gerados. O
 
 >[!CAUTION]
 >
->O site de demonstração Geometrixx-Outdoors é configurado de modo que os atributos fornecidos nas Propriedades da página sejam anexados ao código fonte html (logo acima da tag `</html>` tag final) na tag correspondente `js` script.
+>O site de demonstração Geometrixx-Outdoors é configurado de forma que os atributos fornecidos nas Propriedades da página sejam anexados ao código fonte html (logo acima da tag final `</html>`) no script `js` correspondente.
 >
->Se o seu `/apps` não herdar do componente de página padrão ( `/libs/foundation/components/page`) você (ou seus desenvolvedores) devem se certificar de que as tags `js` scripts são incluídos, por exemplo, incluindo `cq/cloudserviceconfigs/components/servicescomponents`ou utilizando um mecanismo semelhante.
+>Se seu próprio `/apps` não for herdado do componente de página padrão ( `/libs/foundation/components/page`), você (ou seus desenvolvedores) deverão se certificar de que os scripts `js` correspondentes sejam incluídos, por exemplo, incluindo `cq/cloudserviceconfigs/components/servicescomponents` ou usando um mecanismo semelhante.
 >
 >Sem isso, nenhum dos serviços (Genérico, Analytics, Target e assim por diante) funcionará.
 
@@ -66,19 +66,19 @@ Esses snippets permitem que os dados sejam coletados e os relatórios gerados. O
 
 Para a configuração básica:
 
-1. Abra o **Ferramentas** console.
+1. Abra o console **Ferramentas**.
 1. No painel esquerdo, expanda **Configurações do Cloud Service**.
-1. Clique duas vezes **Fragmento da análise genérica** para abrir a página:
+1. Clique duas vezes em **Fragmento de análise genérico** para abrir a página:
 
-   ![Fragmento da análise genérica](assets/analytics_genericoverview.png)
+   ![Fragmento de análise genérico](assets/analytics_genericoverview.png)
 
 1. Clique em + para adicionar uma nova configuração usando a caixa de diálogo. No mínimo, atribua um nome, por exemplo, Google Analytics:
 
    ![Criar configuração](assets/analytics_addconfig.png)
 
-1. Clique em **Criar**, a caixa de diálogo snippet será aberta imediatamente - cole o snippet de JavaScript apropriado no campo:
+1. Clique em **Criar**, a caixa de diálogo de trecho será aberta imediatamente. Cole o trecho apropriado do JavaScript no campo:
 
-   ![Edição do componente](assets/analytics_snippet.png)
+   ![Editando o componente](assets/analytics_snippet.png)
 
 1. Clique em **OK** para salvar.
 
@@ -87,19 +87,19 @@ Para a configuração básica:
 Após criar a configuração do serviço, você deve configurar as páginas necessárias para usá-lo:
 
 1. Navegue até a página.
-1. Abra o **Propriedades da página** no sidekick, depois o **Cloud Service** guia.
-1. Clique em **Adicionar serviço** e, em seguida, selecione o serviço necessário. Por exemplo, a variável **Fragmento da análise genérica**:
+1. Abra as **Propriedades da página** no sidekick e depois a guia **Cloud Service**.
+1. Clique em **Adicionar Serviço** e selecione o serviço necessário. Por exemplo, o **trecho de análise genérico**:
 
-   ![Adicionar um serviço em nuvem](assets/analytics_selectservice.png)
-
-1. Clique em **OK** para salvar.
-1. Você retornará à janela **Cloud Service** guia. A variável **Fragmento da análise genérica** agora está listado com a mensagem `Configuration reference missing`. Use a lista suspensa para selecionar sua instância de serviço específica. Por exemplo, google-analytics:
-
-   ![Adicionar configuração do serviço em nuvem](assets/analytics_selectspecificservice.png)
+   ![Adicionando um serviço de nuvem](assets/analytics_selectservice.png)
 
 1. Clique em **OK** para salvar.
+1. Você retornará à guia **Cloud Service**. O **Trecho de Análise Genérico** agora está listado com a mensagem `Configuration reference missing`. Use a lista suspensa para selecionar sua instância de serviço específica. Por exemplo, google-analytics:
 
-   O trecho agora poderá ser visto se você exibir a Origem da página para a página.
+   ![Adicionando configuração do serviço de nuvem](assets/analytics_selectspecificservice.png)
+
+1. Clique em **OK** para salvar.
+
+   O trecho agora poderá ser visto se você exibir a Source da página.
 
    Após um período, é possível exibir as estatísticas coletadas.
 

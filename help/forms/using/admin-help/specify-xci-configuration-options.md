@@ -18,7 +18,7 @@ ht-degree: 1%
 
 # Especificar opções de configuração XCI {#specify-xci-configuration-options}
 
-Output permite especificar um arquivo XCI personalizado que ele usa para renderização. Consulte [Especificar locais de arquivos para Saída](/help/forms/using/admin-help/specify-file-locations-output.md#specify-file-locations-for-output).
+Output permite especificar um arquivo XCI personalizado que ele usa para renderização. Consulte [Especificar locais de arquivo para Saída](/help/forms/using/admin-help/specify-file-locations-output.md#specify-file-locations-for-output).
 
 Por padrão, o Resultado substitui algumas das opções especificadas no arquivo XCI, incluindo o seguinte:
 

@@ -23,9 +23,9 @@ O artigo descreve recomendações e práticas recomendadas para proteger servido
 
 O artigo descreve técnicas de proteção que devem ser aplicadas durante os seguintes estágios durante o ciclo de vida de instalação e configuração:
 
-* **Pré-instalação:** Use essas técnicas antes de instalar o AEM Forms no JEE.
-* **Instalação:** Use essas técnicas durante o processo de instalação do AEM Forms no JEE.
-* **Pós-instalação:** Use essas técnicas após a instalação e periodicamente a partir de então.
+* **Pré-instalação:** use essas técnicas antes de instalar o AEM Forms no JEE.
+* **Instalação:** use essas técnicas durante o processo de instalação do AEM Forms no JEE.
+* **Post-installation:** Use essas técnicas após a instalação e periodicamente a partir de então.
 
 O AEM Forms no JEE é altamente personalizável e pode funcionar em vários ambientes diferentes. Algumas recomendações podem não se ajustar às necessidades de sua organização.
 
@@ -67,14 +67,14 @@ A tabela a seguir descreve processos comuns que reduzem as vulnerabilidades de s
    <td><p>Firewalls</p> </td> 
    <td><p>Use os seguintes critérios para selecionar uma solução de firewall:</p> 
     <ul> 
-     <li><p>Implementar firewalls que suportam servidores proxy e/ou <em>inspeção com estado</em> em vez de soluções simples de filtragem de pacotes.</p> </li> 
-     <li><p>Use um firewall que ofereça suporte a <em>negar todos os serviços, exceto os explicitamente permitidos</em> paradigmas de segurança.</p> </li> 
+     <li><p>Implemente firewalls que suportam servidores proxy e/ou <em>inspeção com monitoração de estado</em> em vez de soluções simples de filtragem de pacotes.</p> </li> 
+     <li><p>Use um firewall que ofereça suporte a <em>negar todos os serviços, exceto os paradigmas de segurança </em> explicitamente permitidos.</p> </li> 
      <li><p>Implemente uma solução de firewall que seja dual-homed ou multi-homed. Essa arquitetura oferece o mais alto nível de segurança e ajuda a impedir que usuários não autorizados ignorem a segurança do firewall.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td><p>Portas do banco de dados</p> </td> 
-   <td><p>Não usar portas de escuta padrão para bancos de dados (MySQL - 3306, Oracle - 1521, MS SQL - 1433). Para obter informações sobre como alterar portas de banco de dados, consulte a documentação do banco de dados.</p> <p>O uso de uma porta de banco de dados diferente afeta a configuração geral do AEM Forms no JEE. Se você alterar as portas padrão, deverá fazer modificações correspondentes em outras áreas de configuração, como as fontes de dados do AEM Forms no JEE.</p> <p>Para obter informações sobre como configurar fontes de dados no AEM Forms no JEE, consulte Instalar e atualizar o AEM Forms no JEE ou atualizar para o AEM Forms no JEE para o servidor de aplicativos em <a href="/help/forms/using/introduction-aem-forms.md" target="_blank">Guia do usuário do AEM Forms</a>.</p> </td> 
+   <td><p>Não usar portas de escuta padrão para bancos de dados (MySQL - 3306, Oracle - 1521, MS SQL - 1433). Para obter informações sobre como alterar portas de banco de dados, consulte a documentação do banco de dados.</p> <p>O uso de uma porta de banco de dados diferente afeta a configuração geral do AEM Forms no JEE. Se você alterar as portas padrão, deverá fazer modificações correspondentes em outras áreas de configuração, como as fontes de dados do AEM Forms no JEE.</p> <p>Para obter informações sobre como configurar fontes de dados no AEM Forms no JEE, consulte Instalar e atualizar o AEM Forms no JEE ou atualizar para o AEM Forms no JEE para o seu servidor de aplicativos em <a href="/help/forms/using/introduction-aem-forms.md" target="_blank">guia do usuário do AEM Forms</a>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -106,7 +106,7 @@ A tabela a seguir descreve algumas abordagens possíveis para minimizar as vulne
  </tbody> 
 </table>
 
-Para obter informações adicionais sobre segurança para seu sistema operacional, consulte [&quot;Informações de segurança do sistema operacional&quot;](https://helpx.adobe.com/aem-forms/6-1/hardening-security/general-security-considerations.html#operating_system_security_information).
+Para obter informações de segurança adicionais para o seu sistema operacional, consulte [&quot;Informações de segurança do sistema operacional&quot;](https://helpx.adobe.com/aem-forms/6-1/hardening-security/general-security-considerations.html#operating_system_security_information).
 
 ## Instalação {#installation}
 
@@ -122,7 +122,7 @@ Esta seção descreve técnicas que você pode usar durante o processo de instal
  <tbody>
   <tr> 
    <td><p>Privilégios</p> </td> 
-   <td><p>Use o número mínimo de privilégios necessários para instalar o software. Faça logon no computador usando uma conta que não esteja no grupo Administradores. No Windows, você pode usar o comando Executar como para executar o instalador do AEM Forms no JEE como um usuário administrativo. Em sistemas UNIX e Linux, use um comando como <code>sudo</code> para instalar o software.</p> </td> 
+   <td><p>Use o número mínimo de privilégios necessários para instalar o software. Faça logon no computador usando uma conta que não esteja no grupo Administradores. No Windows, você pode usar o comando Executar como para executar o instalador do AEM Forms no JEE como um usuário administrativo. Em sistemas UNIX e Linux, use um comando como o <code>sudo</code> para instalar o software.</p> </td> 
   </tr> 
   <tr> 
    <td><p>Fonte de software</p> </td> 
@@ -138,16 +138,16 @@ Esta seção descreve técnicas que você pode usar durante o processo de instal
   </tr> 
   <tr> 
    <td><p>Arquivo de política entre domínios</p> </td> 
-   <td><p>A presença de uma <code>crossdomain.xml</code> arquivo no servidor pode enfraquecer imediatamente esse servidor. É recomendável tornar a lista de domínios o mais restritiva possível. Não coloque o <code>crossdomain.xml</code> arquivo que foi usado durante o desenvolvimento na produção ao usar os Guias <em>(obsoleto)</em>. Para um guia que usa serviços da Web, se o serviço estiver no mesmo servidor que serviu o guia, um <code>crossdomain.xml</code> o arquivo não é necessário. Mas se o serviço estiver em outro servidor ou se houver clusters envolvidos, a presença de um <code>crossdomain.xml</code> arquivo seria necessário. Consulte <a href="https://kb2.adobe.com/cps/142/tn_14213.html">https://kb2.adobe.com/cps/142/tn_14213.html</a>, para obter mais informações sobre o arquivo crossdomain.xml.</p> </td> 
+   <td><p>A presença de um arquivo <code>crossdomain.xml</code> no servidor pode enfraquecer imediatamente esse servidor. É recomendável tornar a lista de domínios o mais restritiva possível. Não coloque o arquivo <code>crossdomain.xml</code> que foi usado durante o desenvolvimento na produção ao usar os Guias <em>(obsoleto)</em>. Para um guia que usa serviços da Web, se o serviço estiver no mesmo servidor que serviu o guia, um arquivo <code>crossdomain.xml</code> não será necessário. Mas se o serviço estiver em outro servidor, ou se os clusters estiverem envolvidos, a presença de um arquivo <code>crossdomain.xml</code> será necessária. Consulte <a href="https://kb2.adobe.com/cps/142/tn_14213.html">https://kb2.adobe.com/cps/142/tn_14213.html</a> para obter mais informações sobre o arquivo crossdomain.xml.</p> </td> 
   </tr> 
   <tr> 
    <td><p>Configurações de segurança do sistema operacional</p> </td> 
-   <td><p>Se você precisar usar criptografia XML de 192 ou 256 bits nas plataformas Solaris, certifique-se de instalar <code>pkcs11_softtoken_extra.so</code> em vez de <code>pkcs11_softtoken.so</code>.</p> </td> 
+   <td><p>Se você precisar usar a criptografia XML de 192 ou 256 bits nas plataformas Solaris, instale o <code>pkcs11_softtoken_extra.so</code> em vez do <code>pkcs11_softtoken.so</code>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## Etapas de pós-instalação {#post-installation-steps}
+## Etapas de instalação do Post {#post-installation-steps}
 
 Depois de instalar o AEM Forms no JEE com êxito, é importante manter o ambiente periodicamente de uma perspectiva de segurança.
 
@@ -169,17 +169,17 @@ Para executar o servidor de aplicativos no qual o AEM Forms no JEE é implantado
 
 1. No Microsoft Management Console (MMC), crie um usuário local para o serviço Forms Server para fazer logon como:
 
-   * Selecionar **Usuário não pode alterar senha**.
-   * No **Membro de** , verifique se **Usuários** grupo está listado.
+   * Selecionar **O usuário não pode alterar a senha**.
+   * Na guia **Membro de**, verifique se o grupo **Usuários** está listado.
 
    >[!NOTE]
    >
    >Não é possível alterar essa configuração para PDF Generator.
 
-1. Selecionar **Início** > **Configurações** > **Ferramentas administrativas** > **Serviços**.
+1. Selecione **Iniciar** > **Configurações** > **Ferramentas Administrativas** > **Serviços**.
 1. Clique duas vezes no JBoss para AEM Forms no JEE e interrompa o serviço.
-1. No **Fazer Logon** selecione **Esta conta**, procure a conta de usuário que você criou e digite a senha da conta.
-1. No MMC, abra **Configurações de segurança locais** e selecione **Políticas Locais** > **Atribuição de direitos do usuário**.
+1. Na guia **Logon**, selecione **Esta Conta**, procure a conta de usuário que você criou e digite a senha da conta.
+1. No MMC, abra **Configurações de Segurança Locais** e selecione **Políticas Locais** > **Atribuição de Direitos de Usuário**.
 1. Atribua os seguintes direitos à conta de usuário em que o Forms Server está sendo executado:
 
    * Negar logon pelos Serviços de Terminal
@@ -187,16 +187,17 @@ Para executar o servidor de aplicativos no qual o AEM Forms no JEE é implantado
    * Fazer logon como serviço (já deve estar definido)
 
 1. Conceda à nova conta de usuário permissões de modificação nos seguintes diretórios:
-   * **Diretório de Armazenamento Global de Documentos (GDS)**: o local do diretório GDS é configurado manualmente durante o processo de instalação do AEM Forms. Se a configuração de local permanecer vazia durante a instalação, o local assumirá como padrão um diretório na instalação do servidor de aplicativos em `[JBoss root]/server/[type]/svcnative/DocumentStorage`
-   * **Diretório do repositório CRX**: o local padrão é `[AEM-Forms-installation-location]\crx-repository`
-   * **Diretórios temporários do AEM Forms**:
+   * **Diretório GDS (Armazenamento Global de Documentos)**: o local do diretório GDS é configurado manualmente durante o processo de instalação do AEM Forms. Se a configuração de local permanecer vazia durante a instalação, o local assumirá como padrão um diretório na instalação do servidor de aplicativos em `[JBoss root]/server/[type]/svcnative/DocumentStorage`
+   * **Diretório CRX-Repository**: o local padrão é `[AEM-Forms-installation-location]\crx-repository`
+   * **diretórios temporários do AEM Forms**:
       * Caminho TMP ou TEMP (Windows) conforme definido nas variáveis de ambiente
-      * (AIX, Linux ou Solaris) Diretório inicial do usuário conectado Em sistemas baseados em UNIX, um usuário não raiz pode usar o seguinte diretório como o diretório temporário:
+      * (AIX, Linux ou Solaris) Diretório inicial do usuário conectado
+Em sistemas baseados em UNIX, um usuário não-raiz pode usar o seguinte diretório como o diretório temporário:
       * (Linux) /var/tmp ou /usr/tmp
       * (AIX) /tmp ou /usr/tmp
       * (Solaris) /var/tmp ou /usr/tmp
 1. Conceda à nova conta de usuário permissões de gravação nos seguintes diretórios:
-   * [JBoss-diretory]\independente\implantação
+   * [JBoss-diretory]\standalone\deployment
    * [JBoss-diretory]\autônomo\
    * [JBoss-diretory]\bin\
 
@@ -213,7 +214,7 @@ Para executar o servidor de aplicativos no qual o AEM Forms no JEE é implantado
 
 O Configuration Manager usou um servlet implantado em seu servidor de aplicativos para executar a inicialização do AEM Forms no banco de dados JEE. Como o Configuration Manager acessa esse servlet antes que a configuração seja concluída, o acesso a ele não foi protegido para usuários autorizados e deve ser desativado após você ter usado com êxito o Configuration Manager para configurar o AEM Forms no JEE.
 
-1. Descompacte o adobe-livecycle-[appserver]arquivo .ear.
+1. Descompacte o arquivo adobe-livecycle-[appserver].ear.
 1. Abra o arquivo META-INF/application.xml.
 1. Procure a seção adobe-bootstrapper.war:
 
@@ -263,19 +264,19 @@ O Configuration Manager usou um servlet implantado em seu servidor de aplicativo
 
    https://&lt;localhost>:&lt;port>/adobe-bootstrapper/bootstrap
 
-**Bloquear acesso remoto ao Armazenamento de Confiança**
+**Bloquear acesso remoto ao Armazenamento Confiável**
 
 O Configuration Manager permite que você carregue uma credencial de extensões do Acrobat Reader DC na loja de confiança do AEM Forms no JEE. Isso significa que o acesso ao Serviço de Credenciais do Armazenamento de Confiança em protocolos remotos (SOAP e EJB) foi habilitado por padrão. Esse acesso não será mais necessário depois que você tiver carregado a credencial de Direitos usando o Configuration Manager ou se decidir usar o Console de Administração posteriormente para gerenciar credenciais.
 
-Você pode desabilitar o acesso remoto a todos os serviços de Armazenamento Confiável seguindo as etapas da seção [Desativar o acesso remoto não essencial aos serviços](https://helpx.adobe.com/aem-forms/6-1/hardening-security/configuring-secure-administration-settings-aem.html#disabling_non_essential_remote_access_to_services).
+Você pode desabilitar o acesso remoto a todos os serviços de Armazenamento Confiável seguindo as etapas da seção [Desabilitando o acesso remoto não essencial aos serviços](https://helpx.adobe.com/aem-forms/6-1/hardening-security/configuring-secure-administration-settings-aem.html#disabling_non_essential_remote_access_to_services).
 
 **Desabilitar todo o acesso anônimo não essencial**
 
-Alguns serviços do Forms Server têm operações que podem ser chamadas por um chamador anônimo. Se o acesso anônimo a esses serviços não for necessário, desative-o seguindo as etapas em [Desabilitação de acesso anônimo não essencial a serviços](https://helpx.adobe.com/aem-forms/6-1/hardening-security/configuring-secure-administration-settings-aem.html#disabling_non_essential_anonymous_access_to_services).
+Alguns serviços do Forms Server têm operações que podem ser chamadas por um chamador anônimo. Se o acesso anônimo a esses serviços não for necessário, desabilite-o seguindo as etapas em [Desabilitando o acesso anônimo não essencial aos serviços](https://helpx.adobe.com/aem-forms/6-1/hardening-security/configuring-secure-administration-settings-aem.html#disabling_non_essential_anonymous_access_to_services).
 
 #### Alterar a senha padrão do administrador {#change-the-default-administrator-password}
 
-Quando o AEM Forms no JEE é instalado, uma única conta de usuário padrão é configurada para o usuário Super Administrador/ administrador de ID de logon com uma senha padrão de *senha*. Você deve alterar essa senha imediatamente usando o Gerenciador de configurações.
+Quando o AEM Forms no JEE é instalado, uma única conta de usuário padrão é configurada para Super Administrador do usuário/administrador de ID de logon com uma senha padrão de *senha*. Você deve alterar essa senha imediatamente usando o Gerenciador de configurações.
 
 1. Digite o seguinte URL em um navegador da Web:
 
@@ -291,19 +292,19 @@ Quando o AEM Forms no JEE é instalado, uma única conta de usuário padrão é 
 
    **WebSphere:** 9080.
 
-1. No **Nome do usuário** campo, tipo `administrator` e, no **Senha** campo, tipo `password`.
-1. Clique em **Configurações** > **User Management** > **Usuários e grupos**.
-1. Tipo `administrator` no **Localizar** e clique em **Localizar**.
+1. No campo **Nome de Usuário**, digite `administrator` e, no campo **Senha**, digite `password`.
+1. Clique em **Configurações** > **Gerenciamento de Usuários** > **Usuários e Grupos**.
+1. Digite `administrator` no campo **Localizar** e clique em **Localizar**.
 1. Clique em **Superadministrador** na lista de usuários.
-1. Clique em **Alterar senha** na página Editar Usuário.
+1. Clique em **Alterar senha** na página Editar usuário.
 1. Especifique a nova senha e clique em **Salvar**.
 
 Além disso, é recomendável alterar a senha padrão do Administrador do CRX executando as seguintes etapas:
 
-1. Efetue logon no `https://[server]:[port]/lc/libs/granite/security/content/useradmin.html` usando o nome de usuário/senha padrão.
+1. Faça logon em `https://[server]:[port]/lc/libs/granite/security/content/useradmin.html` usando o nome de usuário/senha padrão.
 1. Digite Administrador no campo de pesquisa e clique em **Ir**.
-1. Selecionar **Administrador** do resultado da pesquisa e clique no botão **Editar** no canto inferior direito da interface.
-1. Especifique a nova senha na caixa **Nova senha** e a senha antiga na caixa **Sua senha** campo.
+1. Selecione **Administrador** no resultado da pesquisa e clique no ícone **Editar** no canto inferior direito da interface do usuário.
+1. Especifique a nova senha no campo **Nova senha** e a senha antiga no campo **Sua senha**.
 1. Clique no ícone Salvar na parte inferior direita da interface.
 
 #### Desativar geração de WSDL {#disable-wsdl-generation}
@@ -316,8 +317,8 @@ A geração da WSDL (Web Service Definition Language) deve ser ativada somente p
    https://[host name]:[port]/adminui
    ```
 
-1. Selecionar **Configurações > Configurações principais do sistema > Configurações**.
-1. Desmarcar **Ativar WSDL** e selecione **OK**.
+1. Selecione **Configurações > Configurações Principais do Sistema > Configurações**.
+1. Desmarque **Habilitar WSDL** e selecione **OK**.
 
 ### Segurança do servidor de aplicativos {#application-server-security}
 
@@ -337,11 +338,11 @@ A tabela a seguir descreve algumas técnicas para proteger o servidor de aplicat
   </tr> 
   <tr> 
    <td><p>Configurações de cookie do servidor de aplicativos</p> </td> 
-   <td><p>Os cookies do aplicativo são controlados pelo servidor do aplicativo. Ao disponibilizar a aplicação, o administrador do servidor de aplicações pode especificar preferências de cookie em todo o servidor ou com base na aplicação específica. Por padrão, as configurações do servidor têm preferência.</p> <p>Todos os cookies de sessão gerados pelo seu servidor de aplicativos devem incluir o <code>HttpOnly</code> atributo. Por exemplo, ao usar o servidor da aplicação JBoss, você pode modificar o elemento SessionCookie para <code>httpOnly="true"</code> no <code>WEB-INF/web.xml</code> arquivo.</p> <p>Você pode restringir os cookies a serem enviados usando somente HTTPS. Como resultado, eles não são enviados não criptografados por HTTP. Os administradores do servidor de aplicativos devem ativar cookies seguros para o servidor globalmente. Por exemplo, ao usar o JBoss Application Server, você pode modificar o elemento do conector para <code>secure=true</code> no <code>server.xml</code> arquivo.</p> <p>Consulte a documentação do servidor de aplicativos para obter mais detalhes sobre configurações de cookies.</p> </td> 
+   <td><p>Os cookies do aplicativo são controlados pelo servidor do aplicativo. Ao disponibilizar a aplicação, o administrador do servidor de aplicações pode especificar preferências de cookie em todo o servidor ou com base na aplicação específica. Por padrão, as configurações do servidor têm preferência.</p> <p>Todos os cookies de sessão gerados pelo servidor de aplicativos devem incluir o atributo <code>HttpOnly</code>. Por exemplo, ao usar o JBoss Application Server, você pode modificar o elemento SessionCookie para <code>httpOnly="true"</code> no arquivo <code>WEB-INF/web.xml</code>.</p> <p>Você pode restringir os cookies a serem enviados usando somente HTTPS. Como resultado, eles não são enviados não criptografados por HTTP. Os administradores do servidor de aplicativos devem ativar cookies seguros para o servidor globalmente. Por exemplo, ao usar o JBoss Application Server, você pode modificar o elemento de conector para <code>secure=true</code> no arquivo <code>server.xml</code>.</p> <p>Consulte a documentação do servidor de aplicativos para obter mais detalhes sobre configurações de cookies.</p> </td> 
   </tr> 
   <tr> 
    <td><p>Navegação no diretório</p> </td> 
-   <td><p>Quando alguém solicita uma página que não existe ou solicita o nome de um diretório (a string de solicitação termina com uma barra (/)), o servidor de aplicativos não deve retornar o conteúdo desse diretório. Para evitar que isso aconteça, você pode desativar a navegação de diretórios no seu servidor de aplicativos. Você deve fazer isso para o aplicativo do console de administração e para outros aplicativos em execução no servidor.</p> <p>Para JBoss, defina o valor do parâmetro de inicialização listings de <code>DefaultServlet</code> propriedade para <code>false</code> no arquivo web.xml, conforme mostrado neste exemplo:</p> <p>&lt;servlet&gt;</p> <p>&lt;servlet-name&gt;padrão&lt;/servlet-name&gt;</p> <p>&lt;servlet-class&gt;</p> <p>org.apache.catalina.servlets.DefaultServlet</p> <p>&lt;/servlet-class&gt;</p> <p>&lt;init-param&gt;</p> <p>&lt;param-name&gt;listagens&lt;/param-name&gt;</p> <p>&lt;param-value&gt;false&lt;/param-value&gt;</p> <p>&lt;/init-param&gt;</p> <p>&lt;load-on-startup&gt;1&lt;/load-on-startup&gt;</p> <p>&lt;/servlet&gt;</p> <p>Para o WebSphere, defina o <code>directoryBrowsingEnabled</code> no arquivo ibm-web-ext.xmi para <code>false</code>.</p> <p>Para o WebLogic, defina as propriedades index-directories no arquivo weblogic.xml como <code>false</code>, conforme mostrado neste exemplo:</p> <p>&lt;container-descriptor&gt;</p> <p>&lt;index-directory-enabled&gt;false</p> <p>&lt;/index-directory-enabled&gt;</p> <p>&lt;/container-descriptor&gt;</p> </td> 
+   <td><p>Quando alguém solicita uma página que não existe ou solicita o nome de um diretório (a string de solicitação termina com uma barra (/)), o servidor de aplicativos não deve retornar o conteúdo desse diretório. Para evitar que isso aconteça, você pode desativar a navegação de diretórios no seu servidor de aplicativos. Você deve fazer isso para o aplicativo do console de administração e para outros aplicativos em execução no servidor.</p> <p>Para JBoss, defina o valor do parâmetro de inicialização de listagens da propriedade <code>DefaultServlet</code> como <code>false</code> no arquivo web.xml, conforme mostrado neste exemplo:</p> <p>&lt;servlet&gt;</p> <p>&lt;servlet-name&gt;default&lt;/servlet-name&gt;</p> <p>&lt;classe-servlet&gt;</p> <p>org.apache.catalina.servlets.DefaultServlet</p> <p>&lt;/servlet-class&gt;</p> <p>&lt;init-param&gt;</p> <p>&lt;param-name&gt;listagens&lt;/param-name&gt;</p> <p>&lt;param-value&gt;false&lt;/param-value&gt;</p> <p>&lt;/init-param&gt;</p> <p>&lt;load-on-startup&gt;1&lt;/load-on-startup&gt;</p> <p>&lt;/servlet&gt;</p> <p>Para o WebSphere, defina a propriedade <code>directoryBrowsingEnabled</code> no arquivo ibm-web-ext.xmi como <code>false</code>.</p> <p>Para o WebLogic, defina as propriedades index-directories no arquivo weblogic.xml como <code>false</code>, conforme mostrado neste exemplo:</p> <p>&lt;descritor-contêiner&gt;</p> <p>&lt;index-diretory-enabled&gt;falso</p> <p>&lt;/index-diretory-enabled&gt;</p> <p>&lt;/container-descriptor&gt;</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -350,11 +351,11 @@ A tabela a seguir descreve algumas técnicas para proteger o servidor de aplicat
 
 Ao proteger seu banco de dados, você deve implementar as medidas descritas pelo fornecedor do banco de dados. Você deve alocar um usuário do banco de dados com as permissões de banco de dados mínimas necessárias concedidas para uso pelo AEM Forms no JEE. Por exemplo, não use uma conta com privilégios de administrador de banco de dados.
 
-No Oracle, a conta do banco de dados que você usa precisa apenas dos privilégios CONNECT, RESOURCE e CREATE VIEW. Para requisitos semelhantes em outros bancos de dados, consulte [Preparando para instalar o AEM Forms no JEE (servidor único)](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_64).
+No Oracle, a conta do banco de dados que você usa precisa apenas dos privilégios CONNECT, RESOURCE e CREATE VIEW. Para requisitos semelhantes em outros bancos de dados, consulte [Preparando para instalar o AEM Forms no JEE (Servidor Único)](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_64).
 
 #### Configurando segurança integrada para SQL Server no Windows para JBoss {#configuring-integrated-security-for-sql-server-on-windows-for-jboss}
 
-1. Modificar [JBOSS_HOME]\\standalone\configuration\lc_{datasource.xml} para adicionar `integratedSecurity=true` ao URL de conexão, conforme mostrado neste exemplo:
+1. Modifique [JBOSS_HOME]\\standalone\configuration\lc_{datasource.xml} para adicionar `integratedSecurity=true` à URL de conexão, como mostrado neste exemplo:
 
    ```java
     jdbc:sqlserver://<serverhost>:<port>;databaseName=<dbname>;integratedSecurity=true
@@ -362,7 +363,7 @@ No Oracle, a conta do banco de dados que você usa precisa apenas dos privilégi
 
 1. Adicione o arquivo sqljdbc_auth.dll ao caminho de sistemas do Windows no computador que está executando o servidor de aplicativos. O arquivo sqljdbc_auth.dll está localizado com a instalação do driver Microsoft SQL JDBC 6.2.1.0.
 1. Modifique a propriedade do serviço JBoss do Windows (JBoss para AEM Forms em JEE) para Fazer logon como no sistema local para uma conta de logon que tenha um banco de dados AEM Forms e um conjunto mínimo de privilégios. Se você estiver executando o JBoss na linha de comando e não como um serviço do Windows, não será necessário executar essa etapa.
-1. Definir Segurança para o SQL Server a partir de **Misto** para **Somente Autenticação do Windows**.
+1. Defina a Segurança do SQL Server do modo **Misto** para **Somente Autenticação do Windows**.
 
 #### Configurando a segurança integrada do SQL Server no Windows para WebLogic {#configuring-integrated-security-for-sql-server-on-windows-for-weblogic}
 
@@ -372,30 +373,30 @@ No Oracle, a conta do banco de dados que você usa precisa apenas dos privilégi
    https://[host name]:7001/console
    ```
 
-1. Em Centro de alterações, clique em **Bloquear e editar**.
-1. Em Estrutura do domínio, clique em *[base_domain]* > **Serviços** > **JDBC** > **Fontes de dados** e, no painel direito, clique em **IDP_DS**.
-1. Na tela seguinte, na guia **Configuração** clique na guia **Pool de conexão** e, na guia **Propriedades** caixa, digite `integratedSecurity=true`.
-1. Em Estrutura do domínio, clique em **[base_domain]** > **Serviços** > **JDBC** > **Fontes de dados** e, no painel direito, clique em **RM_DS**.
-1. Na tela seguinte, na guia **Configuração** clique na guia **Pool de conexão** e, na guia **Propriedades** caixa, digite `integratedSecurity=true`.
+1. Em Centro de Alterações, clique em **Bloquear e Editar**.
+1. Em Estrutura do Domínio, clique em *[base_domain]* > **Services** > **JDBC** > **Fontes de Dados** e, no painel direito, clique em **IDP_DS**.
+1. Na próxima tela, na guia **Configuração**, clique na guia **Pool de Conexões** e, na caixa **Propriedades**, digite `integratedSecurity=true`.
+1. Em Estrutura do Domínio, clique em **[base_domain]** > **Services** > **JDBC** > **Fontes de Dados** e, no painel direito, clique em **RM_DS**.
+1. Na próxima tela, na guia **Configuração**, clique na guia **Pool de Conexões** e, na caixa **Propriedades**, digite `integratedSecurity=true`.
 1. Adicione o arquivo sqljdbc_auth.dll ao caminho de sistemas do Windows no computador que está executando o servidor de aplicativos. O arquivo sqljdbc_auth.dll está localizado com a instalação do driver Microsoft SQL JDBC 6.2.1.0.
-1. Definir Segurança para o SQL Server a partir de **Misto** para **Somente Autenticação do Windows**.
+1. Defina a Segurança do SQL Server do modo **Misto** para **Somente Autenticação do Windows**.
 
 #### Configuração da segurança integrada do SQL Server no Windows para WebSphere {#configuring-integrated-security-for-sql-server-on-windows-for-websphere}
 
 No WebSphere, você pode configurar a segurança integrada somente quando usar um driver JDBC externo do SQL Server, não o driver JDBC do SQL Server incorporado ao WebSphere.
 
 1. Faça logon no Console administrativo do WebSphere.
-1. Na árvore de navegação, clique em **Recursos** > **JDBC** > **Fontes de dados** e, no painel direito, clique em **IDP_DS**.
-1. No painel direito, em Propriedades adicionais, clique em **Propriedades Personalizadas** e clique em **Novo**.
-1. No **Nome** caixa, digite `integratedSecurity` e, no **Valor** caixa, digite `true`.
-1. Na árvore de navegação, clique em **Recursos** > **JDBC** > **Fontes de dados** e, no painel direito, clique em **RM_DS**.
-1. No painel direito, em Propriedades adicionais, clique em **Propriedades Personalizadas** e clique em **Novo**.
-1. No **Nome** caixa, digite `integratedSecurity` e, no **Valor** caixa, digite `true`.
-1. No computador em que o WebSphere está instalado, adicione o arquivo sqljdbc_auth.dll ao caminho de sistemas do Windows (C:\Windows). O arquivo sqljdbc_auth.dll está no mesmo local que a instalação do driver Microsoft SQL JDBC 1.2 (o padrão é *[InstallDir]*/sqljdbc_1.2/enu/auth/x86).
-1. Selecionar **Início** > **Painel de controle do Campaign** > **Serviços**, clique com o botão direito do mouse no serviço Windows para WebSphere (IBM WebSphere Application Server &lt;version> - &lt;node>) e selecione **Propriedades**.
-1. Na caixa de diálogo Propriedades, clique na guia **Fazer Logon** guia.
-1. Selecionar **Esta conta** e forneça as informações necessárias para definir a conta de logon que deseja usar.
-1. Definir Segurança no SQL Server a partir de **Misto** para **Somente Autenticação do Windows**.
+1. Na árvore de navegação, clique em **Recursos** > **JDBC** > **Fontes de Dados** e, no painel direito, clique em **IDP_DS**.
+1. No painel direito, em Propriedades adicionais, clique em **Propriedades personalizadas** e em **Novo**.
+1. Na caixa **Nome**, digite `integratedSecurity` e, na caixa **Valor**, digite `true`.
+1. Na árvore de navegação, clique em **Recursos** > **JDBC** > **Fontes de Dados** e, no painel direito, clique em **RM_DS**.
+1. No painel direito, em Propriedades adicionais, clique em **Propriedades personalizadas** e em **Novo**.
+1. Na caixa **Nome**, digite `integratedSecurity` e, na caixa **Valor**, digite `true`.
+1. No computador em que o WebSphere está instalado, adicione o arquivo sqljdbc_auth.dll ao caminho de sistemas do Windows (C:\Windows). O arquivo sqljdbc_auth.dll está no mesmo local da instalação do driver Microsoft SQL JDBC 1.2 (o padrão é *[InstallDir]*/sqljdbc_1.2/enu/auth/x86).
+1. Selecione **Iniciar** > **Painel de Controle** > **Serviços**, clique com o botão direito do mouse no serviço Windows para WebSphere (IBM WebSphere Application Server &lt;versão> - &lt;nó>) e selecione **Propriedades**.
+1. Na caixa de diálogo Propriedades, clique na guia **Logon**.
+1. Selecione **Esta conta** e forneça as informações necessárias para definir a conta de logon que você deseja usar.
+1. Defina a Segurança no SQL Server do modo **Misto** para **Somente Autenticação do Windows**.
 
 ### Proteção do acesso a conteúdo confidencial no banco de dados {#protecting-access-to-sensitive-content-in-the-database}
 
@@ -407,7 +408,7 @@ Como precaução adicional, você deve considerar o uso de ferramentas específi
 * Chave de criptografia do PIN HSM do armazenamento de confiança
 * Hashes de Senha de Usuário Local
 
-Para obter informações sobre ferramentas específicas de fornecedores, consulte [&quot;Informações de segurança do banco de dados&quot;](https://helpx.adobe.com/aem-forms/6-1/hardening-security/general-security-considerations.html#database_security_information).
+Para obter informações sobre ferramentas específicas do fornecedor, consulte [&quot;Informações de segurança do banco de dados&quot;](https://helpx.adobe.com/aem-forms/6-1/hardening-security/general-security-considerations.html#database_security_information).
 
 ### Segurança LDAP {#ldap-security}
 
@@ -422,8 +423,8 @@ Você pode definir o número de tentativas com falha e o tempo de bloqueio subse
 #### Definir bloqueio automático de conta {#set-automatic-account-locking}
 
 1. Faça logon no Console de administração.
-1. Clique em **Configurações** > **User Management** > **Gerenciamento de domínio**.
-1. Em Configurações de bloqueio automático de conta, defina **Máximo de falhas de autenticação consecutivas** para um número baixo, como 3.
+1. Clique em **Configurações** > **Gerenciamento de usuários** > **Gerenciamento de domínios**.
+1. Em Configurações de Bloqueio Automático de Conta, defina **Máximo de Falhas de Autenticação Consecutivas** para um número baixo, como 3.
 1. Clique em **Salvar**.
 
 ### Auditoria e registro {#auditing-and-logging}
@@ -477,9 +478,9 @@ Depois de instalar o AEM Forms no JEE, é importante manter a segurança do ambi
 
 ### Configuração de um proxy reverso para acesso à Web {#setting-up-a-reverse-proxy-for-web-access}
 
-A *proxy reverso* pode ser usado para garantir que um conjunto de URLs para o AEM Forms em aplicações Web JEE esteja disponível para usuários externos e internos. Essa configuração é mais segura do que permitir que os usuários se conectem diretamente ao servidor de aplicativos em que o AEM Forms no JEE está sendo executado. O proxy reverso executa todas as solicitações HTTP para o servidor da aplicação que está executando o AEM Forms no JEE. Os usuários só têm acesso de rede ao proxy reverso e só podem tentar conexões de URL compatíveis com o proxy reverso.
+Um *proxy reverso* pode ser usado para garantir que um conjunto de URLs para o AEM Forms em aplicativos Web JEE esteja disponível para usuários externos e internos. Essa configuração é mais segura do que permitir que os usuários se conectem diretamente ao servidor de aplicativos em que o AEM Forms no JEE está sendo executado. O proxy reverso executa todas as solicitações HTTP para o servidor da aplicação que está executando o AEM Forms no JEE. Os usuários só têm acesso de rede ao proxy reverso e só podem tentar conexões de URL compatíveis com o proxy reverso.
 
-**AEM Forms em URLs raiz JEE para uso com servidor proxy reverso**
+**URLs raiz do AEM Forms no JEE para uso com servidor proxy reverso**
 
 Os seguintes URLs raiz da aplicação para cada AEM Forms na aplicação Web JEE. Você deve configurar seu proxy reverso apenas para expor URLs para a funcionalidade do aplicativo web que você deseja fornecer aos usuários finais.
 
@@ -521,13 +522,13 @@ Determinados URLs são destacados como aplicações Web voltadas para o usuário
   </tr> 
   <tr> 
    <td><p>/workspace/*</p> </td> 
-   <td><p>Aplicativo Web do usuário final do Workspace</p> </td> 
+   <td><p>aplicativo web do usuário final do Workspace</p> </td> 
    <td><p>Sim</p> </td> 
    <td><p>Sim</p> </td> 
   </tr> 
   <tr> 
    <td><p>/workspace-server/*</p> </td> 
-   <td><p>Servlets e serviços de dados do Workspace exigidos pelo aplicativo cliente do Workspace</p> </td> 
+   <td><p>Servlets e serviços de dados Workspace exigidos pelo aplicativo cliente do Workspace</p> </td> 
    <td><p>Sim</p> </td> 
    <td><p>Sim</p> </td> 
   </tr> 
@@ -599,7 +600,7 @@ Determinados URLs são destacados como aplicações Web voltadas para o usuário
   </tr> 
   <tr> 
    <td><p>/FormServer/GetImage</p> <p>Servlet</p> </td> 
-   <td><p>Usado para obter JavaScript durante a transformação de HTML</p> </td> 
+   <td><p>Usado para obter o JavaScript durante a transformação de HTML</p> </td> 
    <td><p>Não</p> </td> 
    <td><p>Não</p> </td> 
   </tr> 
@@ -664,7 +665,7 @@ Determinados URLs são destacados como aplicações Web voltadas para o usuário
 
 Um ataque de falsificação de solicitação entre sites (CSRF) explora a confiança que um site tem para o usuário, para transmitir comandos não autorizados e não intencionais pelo usuário. O ataque é configurado incluindo um link ou um script em uma página da Web, ou um URL em uma mensagem de email, para acessar outro site para o qual o usuário já foi autenticado.
 
-Por exemplo, você pode estar conectado ao Console de administração enquanto navega simultaneamente por outro site. Uma das páginas da Web pode incluir uma tag de imagem de HTML com um `src` que direciona um script do lado do servidor no site da vítima. Ao usar o mecanismo de autenticação de sessão baseado em cookies fornecido pelos navegadores da Web, o site de ataque pode enviar solicitações mal-intencionadas para esse script do lado do servidor vítima, disfarçado de usuário legítimo. Para obter mais exemplos, consulte [https://owasp.org/www-community/attacks/csrf#Examples](https://owasp.org/www-community/attacks/csrf#Examples).
+Por exemplo, você pode estar conectado ao Console de administração enquanto navega simultaneamente por outro site. Uma das páginas da Web pode incluir uma tag de imagem de HTML com um atributo `src` direcionado a um script do lado do servidor no site da vítima. Ao usar o mecanismo de autenticação de sessão baseado em cookies fornecido pelos navegadores da Web, o site de ataque pode enviar solicitações mal-intencionadas para esse script do lado do servidor vítima, disfarçado de usuário legítimo. Para obter mais exemplos, consulte [https://owasp.org/www-community/attacks/csrf#Examples](https://owasp.org/www-community/attacks/csrf#Examples).
 
 As seguintes características são comuns ao CSRF:
 
@@ -675,10 +676,10 @@ As seguintes características são comuns ao CSRF:
 
 O AEM Forms no JEE usa o recurso Filtro referenciador para bloquear ataques CSRF. Os termos a seguir são usados nesta seção para descrever o mecanismo de Filtragem do referenciador:
 
-* **Referenciador permitido:** Referenciador é o endereço da página de origem que envia uma solicitação ao servidor. Para páginas ou formulários JSP, os Referenciadores são geralmente a página anterior no histórico de navegação. Normalmente, o referenciador de imagens são as páginas nas quais as imagens são exibidas. Você pode identificar o Referenciador que tem acesso permitido aos recursos do servidor, adicionando-o à lista Referenciador permitido.
-* **Exceções de referenciador permitidas:** Talvez você queira restringir o escopo de acesso de um determinado Referenciador na sua lista de Referenciadores permitidos. Para impor essa restrição, você pode adicionar caminhos individuais desse Referenciador à lista de Exceções permitidas do Referenciador. As solicitações originadas de caminhos na lista Exceções de referenciador permitidas são impedidas de invocar qualquer recurso no Forms Server. Você pode definir Exceções de referenciador permitidas para um aplicativo específico e também usar uma lista global de exceções que se aplicam a todos os aplicativos.
-* **URIs permitidos:** Esta é uma lista de recursos que devem ser atendidos sem verificar o Cabeçalho do referenciador. Recursos, por exemplo, páginas de ajuda, que não resultam em alterações de estado no servidor, podem ser adicionados a esta lista. Os recursos na lista de URIs permitidos nunca são bloqueados pelo Filtro referenciador independentemente de quem seja o Referenciador.
-* **Referenciador nulo:** Uma solicitação de servidor que não está associada a ou não se origina de uma página da Web pai é considerada uma solicitação de um Referenciador nulo. Por exemplo, ao abrir uma nova janela do navegador, digitar um endereço e pressionar Enter, o Referenciador enviado ao servidor será nulo. Um aplicativo de desktop (.NET ou SWING) que faz uma solicitação HTTP para um servidor Web também envia um Referenciador nulo para o servidor.
+* **Referenciador Permitido:** Um Referenciador é o endereço da página de origem que envia uma solicitação ao servidor. Para páginas ou formulários JSP, os Referenciadores são geralmente a página anterior no histórico de navegação. Normalmente, o referenciador de imagens são as páginas nas quais as imagens são exibidas. Você pode identificar o Referenciador que tem acesso permitido aos recursos do servidor, adicionando-o à lista Referenciador permitido.
+* **Exceções de Referenciador Permitido:** Talvez você queira restringir o escopo de acesso de um Referenciador específico na sua lista de Referenciadores Permitidos. Para impor essa restrição, você pode adicionar caminhos individuais desse Referenciador à lista de Exceções permitidas do Referenciador. As solicitações originadas de caminhos na lista Exceções de referenciador permitidas são impedidas de invocar qualquer recurso no Forms Server. Você pode definir Exceções de referenciador permitidas para um aplicativo específico e também usar uma lista global de exceções que se aplicam a todos os aplicativos.
+* **URIs permitidos:** Esta é uma lista de recursos que devem ser atendidos sem verificar o Cabeçalho do Referenciador. Recursos, por exemplo, páginas de ajuda, que não resultam em alterações de estado no servidor, podem ser adicionados a esta lista. Os recursos na lista de URIs permitidos nunca são bloqueados pelo Filtro referenciador independentemente de quem seja o Referenciador.
+* **Referenciador nulo:** uma solicitação de servidor que não está associada ou não se origina de uma página da Web pai é considerada uma solicitação de um Referenciador nulo. Por exemplo, ao abrir uma nova janela do navegador, digitar um endereço e pressionar Enter, o Referenciador enviado ao servidor será nulo. Um aplicativo de desktop (.NET ou SWING) que faz uma solicitação HTTP para um servidor Web também envia um Referenciador nulo para o servidor.
 
 ### Filtragem de referenciador {#referer-filtering}
 
@@ -687,7 +688,7 @@ O processo de Filtragem de referenciador pode ser descrito da seguinte maneira:
 1. O Forms Server verifica o método HTTP usado para invocação:
 
    1. Se for POST, o Forms Server executará a verificação do cabeçalho do Referenciador.
-   1. Se for GET, o Forms Server ignorará a verificação do Referenciador, a menos que *CSRF_CHECK_GETS* está definido como verdadeiro, nesse caso, ele executa a verificação do cabeçalho Referenciador. *CSRF_CHECK_GETS* é especificado na variável *web.xml* arquivo para seu aplicativo.
+   1. Se for GET, o Forms Server ignorará a verificação do Referenciador, a menos que *CSRF_CHECK_GETS* esteja definido como true, nesse caso, ele executará a verificação do cabeçalho do Referenciador. O *CSRF_CHECK_GETS* está especificado no arquivo *web.xml* do seu aplicativo.
 
 1. O Forms Server verifica se o URI solicitado existe na inclui na lista de permissões:
 
@@ -706,15 +707,15 @@ O processo de Filtragem de referenciador pode ser descrito da seguinte maneira:
 
 ### Gerenciando a filtragem do referenciador {#managing-referer-filtering}
 
-O AEM Forms no JEE fornece um Filtro referenciador para especificar o Referenciador que tem acesso permitido aos recursos do servidor. Por padrão, o filtro Referenciador não filtra solicitações que usam um método HTTP seguro, por exemplo, GET, a menos que *CSRF_CHECK_GETS* está definido como verdadeiro. Se o número da porta de uma entrada Referenciador permitido for definido como 0, o AEM Forms no JEE permitirá todas as solicitações com Referenciador desse host, independentemente do número da porta. Se nenhum número de porta for especificado, somente as solicitações da porta padrão 80 (HTTP) ou porta 443 (HTTPS) serão permitidas. A Filtragem de referenciador será desativada se todas as entradas na lista Referenciador permitido forem excluídas.
+O AEM Forms no JEE fornece um Filtro referenciador para especificar o Referenciador que tem acesso permitido aos recursos do servidor. Por padrão, o filtro Referenciador não filtra solicitações que usam um método HTTP seguro, por exemplo, GET, a menos que *CSRF_CHECK_GETS* esteja definido como verdadeiro. Se o número da porta de uma entrada Referenciador permitido for definido como 0, o AEM Forms no JEE permitirá todas as solicitações com Referenciador desse host, independentemente do número da porta. Se nenhum número de porta for especificado, somente as solicitações da porta padrão 80 (HTTP) ou porta 443 (HTTPS) serão permitidas. A Filtragem de referenciador será desativada se todas as entradas na lista Referenciador permitido forem excluídas.
 
 Quando você instala os Serviços de documento pela primeira vez, a lista Referenciador permitido é atualizada com o endereço do servidor no qual os Serviços de documento estão instalados. As entradas do servidor incluem o nome do servidor, o endereço IPv4, o endereço IPv6, se IPv6 estiver habilitado, o endereço de loopback e uma entrada de host local. Os nomes adicionados à lista Referenciador permitido são retornados pelo sistema operacional Host. Por exemplo, um servidor com endereço IP 10.40.54.187 incluirá as seguintes entradas: `https://server-name:0, https://10.40.54.187:0, https://127.0.0.1:0, http://localhost:0`. Para qualquer nome não qualificado retornado pelo sistema operacional do Host (nomes que não têm endereço IPv4, endereço IPv6 ou nome de domínio qualificado), a inclui na lista de permissões não é atualizada. Modifique a lista Referenciador permitido para se adequar ao seu ambiente empresarial. Não implante o Forms Server no ambiente de produção com a lista de Referenciadores permitidos padrão. Após modificar qualquer um dos Referenciadores Permitidos, Exceções de Referenciador ou URIs, reinicie o servidor para que as alterações entrem em vigor.
 
-**Gerenciar lista de referenciadores permitidos**
+**Gerenciando a lista de Referenciadores Permitidos**
 
-Você pode gerenciar a lista Referenciador permitido na Interface de gerenciamento de usuários do Console de administração. A Interface de gerenciamento de usuários fornece a funcionalidade de criar, editar ou excluir a lista. Consulte o * [Prevenção de ataques CSRF](/help/forms/using/admin-help/preventing-csrf-attacks.md)* seção do *ajuda administrativa* para obter mais informações sobre como trabalhar com a lista Referenciador permitido.
+Você pode gerenciar a lista Referenciador permitido na Interface de gerenciamento de usuários do Console de administração. A Interface de gerenciamento de usuários fornece a funcionalidade de criar, editar ou excluir a lista. Consulte a seção * [Impedindo ataques CSRF](/help/forms/using/admin-help/preventing-csrf-attacks.md)* da *ajuda administrativa* para obter mais informações sobre como trabalhar com a lista de Referenciadores permitidos.
 
-**Gerenciar listas de Exceção de referenciador e URI permitidos**
+**Gerenciando Exceção de Referenciador Permitido e listas de URI Permitido**
 
 O AEM Forms no JEE fornece APIs para gerenciar a lista Exceção de referenciador permitido e a lista URI permitido. Você pode usar essas APIs para recuperar, criar, editar ou excluir a lista. Veja a seguir uma lista de APIs disponíveis:
 
@@ -729,37 +730,37 @@ O AEM Forms no JEE fornece APIs para gerenciar a lista Exceção de referenciado
 
 Consulte * AEM Forms na Referência da API JEE * para obter mais informações sobre as APIs.
 
-Use o ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION*** lista para Exceções de Referenciador Permitidas no nível global, ou seja, para definir exceções que sejam aplicáveis a todos os aplicativos. Esta lista contém apenas URIs com um caminho absoluto (por exemplo, `/index.html`) ou um caminho relativo (por exemplo, `/sample/`). Você também pode anexar uma expressão regular ao final de um URI relativo, por exemplo, `/sample/(.)*`.
+Use a lista ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION*** para Exceções de Referenciador Permitidas em nível global, ou seja, para definir exceções que sejam aplicáveis a todos os aplicativos. Esta lista contém apenas URIs com um caminho absoluto (por exemplo, `/index.html`) ou um caminho relativo (por exemplo, `/sample/`). Você também pode anexar uma expressão regular ao final de um URI relativo, por exemplo, `/sample/(.)*`.
 
-A variável ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION*** a ID da lista é definida como uma constante na variável `UMConstants` classe do `com.adobe.idp.um.api` namespace, encontrado em `adobe-usermanager-client.jar`. Você pode usar as APIs do AEM Forms para criar, modificar ou editar essa lista. Por exemplo, para criar a lista Exceções globais permitidas do referenciador, use:
+A ID de lista ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION*** está definida como uma constante na classe `UMConstants` do namespace `com.adobe.idp.um.api`, encontrada em `adobe-usermanager-client.jar`. Você pode usar as APIs do AEM Forms para criar, modificar ou editar essa lista. Por exemplo, para criar a lista Exceções globais permitidas do referenciador, use:
 
 ```java
 addAllowedRefererExceptions(UMConstants.LC_GLOBAL_ALLOWED_REFERER_EXCEPTION, Arrays.asList("/index.html", "/sample/(.)*"))
 ```
 
-Use o ***CSRF_ALLOWED_REFERER_EXCEPTIONS*** para exceções específicas do aplicativo.
+Use a lista ***CSRF_ALLOWED_REFERER_EXCEPTIONS*** para exceções específicas do aplicativo.
 
-**Desabilitar o filtro referenciador**
+**Desabilitando o Filtro Referenciador**
 
 Caso o Filtro referenciador bloqueie completamente o acesso ao Servidor do Forms e você não possa editar a lista Referenciador permitido, é possível atualizar o script de inicialização do servidor e desativar a Filtragem do referenciador.
 
-Inclua o `-Dlc.um.csrffilter.disabled=true` Argumento JAVA no script de inicialização e reinicie o servidor. Certifique-se de excluir o argumento JAVA depois de reconfigurar apropriadamente a lista Referenciador permitido.
+Inclua o argumento JAVA `-Dlc.um.csrffilter.disabled=true` no script de inicialização e reinicie o servidor. Certifique-se de excluir o argumento JAVA depois de reconfigurar apropriadamente a lista Referenciador permitido.
 
-**Filtragem de referenciador para arquivos WAR personalizados**
+**Filtragem de Referenciador para arquivos WAR personalizados**
 
 Você pode ter criado arquivos WAR personalizados para trabalhar com o AEM Forms no JEE para atender aos requisitos da sua empresa. Para ativar a Filtragem de referenciador para seus arquivos WAR personalizados, inclua ***adobe-usermanager-client.jar*** no caminho de classe para o WAR e inclua uma entrada de filtro no arquivo * web.xml* com os seguintes parâmetros:
 
-**CSRF_CHECK_GETS** controla a verificação do Referenciador nas solicitações do GET. Se esse parâmetro não estiver definido, o valor padrão será definido como false. Inclua esse parâmetro somente se desejar filtrar suas solicitações do GET.
+**CSRF_CHECK_GETS** controla a verificação do Referenciador em solicitações GET. Se esse parâmetro não estiver definido, o valor padrão será definido como false. Inclua esse parâmetro somente se desejar filtrar suas solicitações do GET.
 
-**CSRF_ALLOWED_REFERER_EXCEPTIONS** é a ID da lista de Exceções do Referenciador Permitido. O Filtro referenciador impede que as solicitações originadas de referenciadores na lista identificada pela ID da lista chamem qualquer recurso no Forms Server.
+**CSRF_ALLOWED_REFERER_EXCEPTIONS** é a identificação da lista de Exceções de Referenciador Permitidas. O Filtro referenciador impede que as solicitações originadas de referenciadores na lista identificada pela ID da lista chamem qualquer recurso no Forms Server.
 
-**CSRF_ALLOWED_URIS_LIST_NAME** é a ID da lista de URIs permitidos. O Filtro referenciador não bloqueia solicitações para qualquer um dos recursos na lista identificados pela ID da lista, independentemente do valor do cabeçalho Referenciador na solicitação.
+**CSRF_ALLOWED_URIS_LIST_NAME** é a identificação da lista de URIs permitidos. O Filtro referenciador não bloqueia solicitações para qualquer um dos recursos na lista identificados pela ID da lista, independentemente do valor do cabeçalho Referenciador na solicitação.
 
-**CSRF_ALLOW_NULL_REFERER** controla o comportamento do Filtro do referenciador quando o Referenciador é nulo ou não está presente. Se esse parâmetro não estiver definido, o valor padrão será definido como false. Inclua esse parâmetro somente se desejar permitir Referenciadores nulos. Permitir referenciadores nulos pode permitir alguns tipos de ataques de falsificação de solicitação entre sites.
+**CSRF_ALLOW_NULL_REFERER** controla o comportamento do Filtro do Referenciador quando ele é nulo ou não está presente. Se esse parâmetro não estiver definido, o valor padrão será definido como false. Inclua esse parâmetro somente se desejar permitir Referenciadores nulos. Permitir referenciadores nulos pode permitir alguns tipos de ataques de falsificação de solicitação entre sites.
 
-**CSRF_NULL_REFERER_EXCEPTIONS** é uma lista dos URIs para os quais uma verificação do Referenciador não é executada quando o Referenciador é nulo. Esse parâmetro é ativado somente quando *CSRF_ALLOW_NULL_REFERER* está definido como falso. Separe vários URIs na lista com uma vírgula.
+**CSRF_NULL_REFERER_EXCEPTIONS** é uma lista de URIs para os quais uma verificação de Referenciador não é executada quando o Referenciador é nulo. Este parâmetro é habilitado somente quando *CSRF_ALLOW_NULL_REFERER* está definido como false. Separe vários URIs na lista com uma vírgula.
 
-Veja a seguir um exemplo da entrada de filtro no *web.xml* arquivo para um ***AMOSTRA*** Arquivo WAR:
+Este é um exemplo da entrada de filtro no arquivo *web.xml* para um arquivo WAR ***SAMPLE***:
 
 ```java
 <filter> 
@@ -897,7 +898,7 @@ Esta seção descreve as portas default (e intervalos de configuração alternat
 >
 >Por padrão, o servidor expõe vários MBeans JMX no namespace adobe.com. Somente as informações úteis para o monitoramento da integridade do servidor são expostas. No entanto, para evitar a divulgação de informações, você deve impedir que chamadores em uma rede não confiável procurem MBeans JMX e acessem métricas de integridade.
 
-**Portas JBoss**
+**portas JBoss**
 
 <table> 
  <thead> 
@@ -955,11 +956,11 @@ Para obter informações sobre as portas do WebSphere exigidas pelo AEM Forms no
 
 ### Configuração do SSL {#configuring-ssl}
 
-Consultando a arquitetura física descrita na seção [Arquitetura física do AEM Forms no JEE](hardening-aem-forms-jee-environment.md#aem-forms-on-jee-physical-architecture), você deve configurar o SSL para todas as conexões que planeja usar. Especificamente, todas as conexões do SOAP devem ser conduzidas por SSL para evitar a exposição das credenciais do usuário em uma rede.
+Referindo-se à arquitetura física descrita na seção [AEM Forms na arquitetura física JEE](hardening-aem-forms-jee-environment.md#aem-forms-on-jee-physical-architecture), você deve configurar o SSL para todas as conexões que planeja usar. Especificamente, todas as conexões do SOAP devem ser conduzidas por SSL para evitar a exposição das credenciais do usuário em uma rede.
 
-Para obter instruções sobre como configurar SSL em JBoss, WebLogic e WebSphere, consulte &quot;Configuring SSL&quot; no [ajuda administrativa](https://www.adobe.com/go/learn_aemforms_admin_64).
+Para obter instruções sobre como configurar o SSL em JBoss, WebLogic e WebSphere, consulte &quot;Configuring SSL&quot; na [ajuda de administração](https://www.adobe.com/go/learn_aemforms_admin_64).
 
-Para obter instruções sobre como importar certificados para a JVM (Java Virtual Machine) configurada para um servidor AEM Forms, consulte a seção Autenticação mútua em [Ajuda do AEM Forms Workbench](https://www.adobe.com/go/learn_aemforms_workbench_65).
+Para obter instruções sobre como importar certificados para a JVM (Java Virtual Machine) configurada para um servidor AEM Forms, consulte a seção Autenticação Mútua na [Ajuda do AEM Forms Workbench](https://www.adobe.com/go/learn_aemforms_workbench_65).
 
 ### Configuração do redirecionamento de SSL {#configuring-ssl-redirect}
 
@@ -973,7 +974,7 @@ Para configurar o redirecionamento SSL para WebSphere ou WebLogic, consulte a do
 
 1. Abra o arquivo JBOSS_HOME/standalone/configuration/standalone.xml para edição.
 
-   Depois que a variável &lt;subsystem xmlns=&quot;urn&lt;span id=&quot; translate=&quot;no&quot; />domínio:web:Elemento 1.1&quot; native=&quot;false&quot; default-virtual-server=&quot;default-host&quot;> , adicione os seguintes detalhes::jboss:
+   Após o elemento &lt;subsystem xmlns=&quot;urn:jboss:domain:web:1.1&quot; native=&quot;false&quot; default-virtual-server=&quot;default-host&quot;>, adicione os seguintes detalhes:
 
    &lt;connector name=&quot;https&quot; protocol=&quot;HTTP/1.1&quot; scheme=&quot;https&quot; socket-binding=&quot;https&quot; enabled=&quot;true&quot; secure=&quot;true&quot;/>
 
@@ -999,12 +1000,12 @@ A instalação completa do AEM Forms no JEE configura uma conta de serviço, por
 
 1. No Microsoft Management Console (MMC), crie um usuário local para o serviço Forms Server para fazer logon como:
 
-   * Selecionar **Usuário não pode alterar senha**.
-   * No **Membro de** verifique se o grupo Usuários está listado.
+   * Selecionar **O usuário não pode alterar a senha**.
+   * Na guia **Membro de**, verifique se o grupo Usuários está listado.
 
-1. Selecionar **Configurações** > **Ferramentas administrativas** > **Serviços**.
+1. Selecione **Configurações** > **Ferramentas Administrativas** > **Serviços**.
 1. Clique duas vezes no serviço do servidor de aplicativos e pare o serviço.
-1. No **Fazer Logon** selecione **Esta conta**, procure a conta de usuário que você criou e digite a senha da conta.
+1. Na guia **Logon**, selecione **Esta Conta**, procure a conta de usuário que você criou e digite a senha da conta.
 1. Na janela Configurações de segurança locais, em Atribuição de direitos de usuário, conceda os seguintes direitos à conta de usuário na qual o Forms Server está sendo executado:
 
    * Negar logon pelos Serviços de Terminal
@@ -1012,16 +1013,17 @@ A instalação completa do AEM Forms no JEE configura uma conta de serviço, por
    * Fazer logon como serviço (já deve estar definido)
 
 1. Conceda à nova conta de usuário permissões de modificação nos seguintes diretórios:
-   * **Diretório de Armazenamento Global de Documentos (GDS)**: o local do diretório GDS é configurado manualmente durante o processo de instalação do AEM Forms. Se a configuração de local permanecer vazia durante a instalação, o local assumirá como padrão um diretório na instalação do servidor de aplicativos em `[JBoss root]/server/[type]/svcnative/DocumentStorage`
-   * **Diretório do repositório CRX**: o local padrão é `[AEM-Forms-installation-location]\crx-repository`
-   * **Diretórios temporários do AEM Forms**:
+   * **Diretório GDS (Armazenamento Global de Documentos)**: o local do diretório GDS é configurado manualmente durante o processo de instalação do AEM Forms. Se a configuração de local permanecer vazia durante a instalação, o local assumirá como padrão um diretório na instalação do servidor de aplicativos em `[JBoss root]/server/[type]/svcnative/DocumentStorage`
+   * **Diretório CRX-Repository**: o local padrão é `[AEM-Forms-installation-location]\crx-repository`
+   * **diretórios temporários do AEM Forms**:
       * Caminho TMP ou TEMP (Windows) conforme definido nas variáveis de ambiente
-      * (AIX, Linux ou Solaris) Diretório inicial do usuário conectado Em sistemas baseados em UNIX, um usuário não raiz pode usar o seguinte diretório como o diretório temporário:
+      * (AIX, Linux ou Solaris) Diretório inicial do usuário conectado
+Em sistemas baseados em UNIX, um usuário não-raiz pode usar o seguinte diretório como o diretório temporário:
       * (Linux) /var/tmp ou /usr/tmp
       * (AIX) /tmp ou /usr/tmp
       * (Solaris) /var/tmp ou /usr/tmp
 1. Conceda à nova conta de usuário permissões de gravação nos seguintes diretórios:
-   * [JBoss-diretory]\independente\implantação
+   * [JBoss-diretory]\standalone\deployment
    * [JBoss-diretory]\autônomo\
    * [JBoss-diretory]\bin\
 
@@ -1067,7 +1069,7 @@ Esta seção contém recomendações de configuração do servidor de aplicativo
 
 ### Desativar a navegação no diretório {#disable_directory_browsing-1}
 
-Defina as propriedades index-directories no arquivo weblogic.xml para `false`, conforme mostrado neste exemplo:
+Defina as propriedades index-directories no arquivo weblogic.xml como `false`, conforme mostrado por este exemplo:
 
 ```xml
 <container-descriptor> 
@@ -1086,13 +1088,13 @@ Esta seção contém recomendações de configuração do servidor de aplicativo
 
 ### Desativar a navegação no diretório {#disable_directory_browsing-2}
 
-Defina o `directoryBrowsingEnabled` no arquivo ibm-web-ext.xml para `false`.
+Defina a propriedade `directoryBrowsingEnabled` no arquivo ibm-web-ext.xml como `false`.
 
 ### Habilitar a segurança administrativa do WebSphere {#enable-websphere-administrative-security}
 
 1. Faça logon no Console administrativo do WebSphere.
-1. Na árvore de navegação, acesse **Segurança** > **Segurança global**
-1. Selecionar **Habilitar segurança administrativa**.
-1. Desmarcar ambos **Habilitar segurança de aplicativos** e **Usar segurança do Java 2**.
+1. Na árvore de navegação, vá para **Segurança** > **Segurança Global**
+1. Selecione **Habilitar segurança administrativa**.
+1. Desmarque a opção **Habilitar segurança de aplicativo** e **Usar segurança do Java 2**.
 1. Clique em **OK** ou **Aplicar**.
-1. No **Mensagens** clique em **Salvar diretamente na configuração principal**.
+1. Na caixa **Mensagens**, clique em **Salvar diretamente na configuração mestre**.

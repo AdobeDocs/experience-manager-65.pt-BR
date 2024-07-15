@@ -22,13 +22,13 @@ ht-degree: 4%
 
 A plataforma AEM no AEM 6 é baseada no Apache Jackrabbit Oak.
 
-O Apache Jackrabbit Oak é um esforço para implementar um repositório hierárquico de conteúdo escalável e eficiente para uso como base de sites modernos de classe mundial e outros aplicativos de conteúdo exigentes.
+O Apache Jackrabbit Oak é um esforço para implementar um repositório de conteúdo hierárquico dimensionável e eficiente para uso como base de sites modernos de classe mundial e outros aplicativos de conteúdo exigentes.
 
 É o sucessor do Jackrabbit 2 e é usado pelo AEM 6 como back-end padrão para seu repositório de conteúdo, o CRX.
 
 ## Princípios e objetivos do projeto {#design-principles-and-goals}
 
-O Oak implementa o [JSR-283](https://jcp.org/en/jsr/detail?id=283) (JCR 2.0) Seus principais objetivos de design são:
+A Oak implementa a especificação [JSR-283](https://jcp.org/en/jsr/detail?id=283) (JCR 2.0). Seus principais objetivos de design são:
 
 * Melhor suporte para repositórios grandes
 * Vários nós de cluster distribuídos para alta disponibilidade
@@ -55,20 +55,20 @@ O Oak Core adiciona várias camadas à camada de armazenamento:
 * Pesquisa e indexação
 * Observação
 
-### Oak JCR {#oak-jcr}
+### OAK JCR {#oak-jcr}
 
 O principal objetivo do JCR do Oak é transformar a semântica de JCR em operações em árvore. É também responsável por:
 
 * Implementar a API JCR
 * Contendo ganchos de confirmação que implementam restrições JCR
 
-Além disso, implementações não-Java agora são possíveis e fazem parte do conceito Oak JCR.
+Além disso, implementações não-Java agora são possíveis e fazem parte do conceito JCR do Oak.
 
 ## Visão geral de armazenamento {#storage-overview}
 
 A camada de armazenamento do Oak fornece uma camada de abstração para o armazenamento real do conteúdo.
 
-Atualmente, há duas implementações de armazenamento de dados disponíveis no AEM6: **Armazenamento Tar** e **Armazenamento MongoDB**.
+Atualmente, há duas implementações de armazenamento disponíveis no AEM6: **Armazenamento Tar** e **Armazenamento MongoDB**.
 
 ### Armazenamento Tar {#tar-storage}
 
@@ -122,11 +122,11 @@ Uma configuração típica de cluster AEM com armazenamento MongoDB:
 
 ## O que é diferente de Jackrabbit 2? {#what-is-different-from-jackrabbit}
 
-Como o Oak é compatível com versões anteriores do JCR 1.0, quase não há alterações no nível do usuário. No entanto, há algumas diferenças notáveis que você deve considerar ao configurar uma instalação do AEM baseada no Oak:
+Como o Oak é compatível com versões anteriores do JCR 1.0, quase não há alterações no nível do usuário. No entanto, há algumas diferenças notáveis que você deve levar em conta ao configurar uma instalação de AEM baseada no Oak:
 
 * O Oak não cria índices automaticamente. Dessa forma, os índices personalizados devem ser criados quando necessário.
-* Ao contrário do Jackrabbit 2, onde as sessões sempre refletem o estado mais recente do repositório, com o Oak, uma sessão reflete uma visualização estável do repositório desde o momento em que a sessão foi adquirida. O motivo é devido ao modelo MVCC no qual o Oak é baseado.
-* Irmãos de mesmo nome (SNS) não são compatíveis com o Oak.
+* Ao contrário do Jackrabbit 2, onde as sessões sempre refletem o estado mais recente do repositório, com o Oak, uma sessão reflete uma exibição estável do repositório a partir do momento em que a sessão foi adquirida. O motivo é devido ao modelo MVCC no qual o Oak se baseia.
+* Irmãos do mesmo nome (SNS) não são compatíveis com o Oak.
 
 ## Outra documentação relacionada à plataforma {#other-platform-related-documentation}
 

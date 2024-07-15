@@ -18,11 +18,11 @@ ht-degree: 2%
 
 # Fundamentos do gráfico social  {#social-graph-essentials}
 
-A capacidade de um membro da Comunidade de seguir [atividades](essentials-activities.md) e ser seguida é estabelecida por meio de dois componentes:
+A capacidade de um membro da Comunidade seguir [atividades](essentials-activities.md) e ser seguido é estabelecida por meio de dois componentes:
 
-A variável `following` deve ser associado a outro recurso, e essa associação já está estabelecida para membros e recursos existentes das Comunidades em um [site da comunidade](overview.md#communitiessites).
+O componente `following` deve ser associado a outro recurso, e essa associação já está estabelecida para membros e recursos existentes das Comunidades em um [site da comunidade](overview.md#communitiessites).
 
-A variável `following` componente lista os membros que estão seguindo o membro atual ou que estão sendo seguidos pelo membro atual. Este gráfico social dos relacionamentos entre membros é incluído no perfil do usuário estabelecido para um site da comunidade.
+O componente `following` lista os membros que estão seguindo o membro atual ou que estão sendo seguidos pelo membro atual. Este gráfico social dos relacionamentos entre membros é incluído no perfil do usuário estabelecido para um site da comunidade.
 
 ## Essentials para o lado do cliente {#essentials-for-client-side}
 
@@ -52,20 +52,20 @@ A variável `following` componente lista os membros que estão seguindo o membro
   </tr>
   <tr>
    <td><strong> propriedades</strong></td>
-   <td>Consulte <a href="socialgraph.md">Uso do gráfico social</a></td>
+   <td>Consulte <a href="socialgraph.md">Usando o Gráfico Social</a></td>
   </tr>
   <tr>
-   <td><strong> opcional<br /> propriedade</strong></td>
+   <td><strong> propriedade <br /> opcional</strong></td>
    <td>
     <ul>
      <li>Nome: <strong><code>outgoing</code></strong></li>
      <li>Tipo: Booleano</li>
      <li>Valor:<br />
       <ul>
-       <li><i>True </i>- A <code>following</code> componente lista os membros que o membro conectado <code>follows</code></li>
-       <li><i>Falso </i>- A <code>following</code> componente lista os membros que <code>follow </code>o membro conectado</li>
+       <li><i>True </i>- O componente <code>following</code> lista os membros que o membro conectado <code>follows</code></li>
+       <li><i>Falso </i>- O componente <code>following</code> lista os membros que <code>follow </code>o membro conectado</li>
       </ul> </li>
-    </ul> <p>O padrão é <i>true</i> se a propriedade estiver ausente. Não é possível definir essa propriedade usando a caixa de diálogo de edição no modo Autor. A propriedade deve ser adicionada a uma instância do <code>following</code> usando <a href="../../help/sites-developing/developing-with-crxde-lite.md">CRXDE|Lite</a>.</p> </td>
+    </ul> <p>O padrão é <i>true</i> se a propriedade estiver ausente. Não é possível definir essa propriedade usando a caixa de diálogo de edição no modo Autor. A propriedade deve ser adicionada a uma instância do nó <code>following</code> usando <a href="../../help/sites-developing/developing-with-crxde-lite.md">CRXDE|Lite</a>.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -82,8 +82,8 @@ A variável `following` componente lista os membros que estão seguindo o membro
 
 ## Essentials para o lado do servidor {#essentials-for-server-side}
 
-* [API do gráfico social](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/graph/client/api/package-frame.html)
+* [API de gráfico social](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/graph/client/api/package-frame.html)
 
-* [Endpoints do gráfico social](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/graph/client/endpoint/package-frame.html)
+* [Pontos de Extremidade do Gráfico Social](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/graph/client/endpoint/package-frame.html)
 
 * [Personalizações do lado do servidor](server-customize.md)

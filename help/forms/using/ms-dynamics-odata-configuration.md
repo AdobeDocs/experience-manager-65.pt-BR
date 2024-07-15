@@ -24,7 +24,7 @@ ht-degree: 1%
 
 ![integração de dados](assets/data-integeration.png)
 
-O Microsoft Dynamics é um software de CRM (Customer Relationship Management, gerenciamento de relacionamento com o cliente) e ERP (Enterprise Resource Planning, planejamento de recursos corporativos) que fornece soluções corporativas para criar e gerenciar contas, contatos, clientes potenciais, oportunidades e casos de clientes. [Integração de dados do AEM Forms](../../forms/using/data-integration.md) O fornece uma configuração do serviço de nuvem OData para integrar o Forms ao servidor do Microsoft Dynamics online e local. Ela permite criar um modelo de dados de formulário com base nas entidades, atributos e serviços definidos no serviço Microsoft Dynamics. O modelo de dados de formulário pode ser usado para criar formulários adaptáveis que interagem com o servidor do Microsoft Dynamics para habilitar fluxos de trabalho de negócios. Por exemplo:
+O Microsoft Dynamics é um software de CRM (Customer Relationship Management, gerenciamento de relacionamento com o cliente) e ERP (Enterprise Resource Planning, planejamento de recursos corporativos) que fornece soluções corporativas para criar e gerenciar contas, contatos, clientes potenciais, oportunidades e casos de clientes. [A Integração de Dados do AEM Forms](../../forms/using/data-integration.md) fornece uma configuração do serviço de nuvem OData para integrar o Forms ao servidor do Microsoft Dynamics local e online. Ela permite criar um modelo de dados de formulário com base nas entidades, atributos e serviços definidos no serviço Microsoft Dynamics. O modelo de dados de formulário pode ser usado para criar formulários adaptáveis que interagem com o servidor do Microsoft Dynamics para habilitar fluxos de trabalho de negócios. Por exemplo:
 
 * Consultar o servidor do Microsoft Dynamics para obter dados e preencher formulários adaptáveis
 * Gravar dados no Microsoft Dynamics no envio de formulário adaptável
@@ -37,19 +37,19 @@ Quando o pacote é instalado, as seguintes entidades e serviços estão disponí
 * CLOUD SERVICE OData do MS Dynamics (Serviço OData)
 * Modelo de dados de formulário com entidades e serviços pré-configurados do Microsoft Dynamics.
 
-As entidades e os serviços pré-configurados do Microsoft Dynamics em um modelo de dados de formulário estarão disponíveis na instância do AEM Forms somente se o modo de execução da instância do AEM estiver definido como `samplecontent` (padrão). O MS Dynamics OData Cloud Service (OData Service) também está disponível com outros modos de execução. Para obter mais informações sobre como configurar os modos de execução para uma instância do AEM, consulte [Modos de execução](/help/sites-deploying/configure-runmodes.md).
+As entidades e os serviços pré-configurados do Microsoft Dynamics em um modelo de dados de formulário estarão disponíveis na instância do AEM Forms somente se o modo de execução da instância do AEM estiver definido como `samplecontent` (padrão). O MS Dynamics OData Cloud Service (OData Service) também está disponível com outros modos de execução. Para obter mais informações sobre como configurar os modos de execução para uma instância do AEM, consulte [Modos de Execução](/help/sites-deploying/configure-runmodes.md).
 
 ## Pré-requisitos {#prerequisites}
 
 Antes de começar a instalar e configurar o Microsoft Dynamics, verifique se você tem:
 
-* Instalado o [Pacote complementar do AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md)
+* Instalado o [pacote complementar do AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md)
 * O Microsoft Dynamics 365 foi configurado online ou instalou uma instância de uma das seguintes versões do Microsoft Dynamics:
 
    * Microsoft Dynamics 365 no local
    * Microsoft Dynamics 2016 no local
 
-* [Aplicativo registrado para o serviço online do Microsoft Dynamics com o Ative Diretory do Microsoft Azure](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/walkthrough-register-dynamics-365-app-azure-active-directory). Anote os valores da ID do cliente (também chamada de ID do aplicativo) e o segredo do cliente para o serviço registrado. Esses valores são usados enquanto [configuração do cloud service para o serviço Microsoft Dynamics](../../forms/using/ms-dynamics-odata-configuration.md#configure-cloud-service-for-your-microsoft-dynamics-service).
+* [Registrado o aplicativo para o serviço online do Microsoft Dynamics com o Ative Diretory do Microsoft Azure](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/walkthrough-register-dynamics-365-app-azure-active-directory). Anote os valores da ID do cliente (também chamada de ID do aplicativo) e o segredo do cliente para o serviço registrado. Esses valores são usados ao [configurar o serviço em nuvem para o serviço Microsoft Dynamics](../../forms/using/ms-dynamics-odata-configuration.md#configure-cloud-service-for-your-microsoft-dynamics-service).
 
 ## Definir URL de resposta para o aplicativo Microsoft Dynamics registrado {#set-reply-url-for-registered-microsoft-dynamics-application}
 
@@ -59,7 +59,7 @@ Faça o seguinte para definir o URL de resposta para o aplicativo registrado do 
 >
 >Use esse procedimento somente ao integrar o AEM Forms ao servidor online do Microsoft Dynamics.
 
-1. Vá para a conta do Ative Diretory do Microsoft Azure e adicione a seguinte URL de configuração do serviço de nuvem em **URLs de resposta** configurações para seu aplicativo registrado:
+1. Vá para a conta do Ative Diretory do Microsoft Azure e adicione a seguinte URL de configuração do serviço de nuvem nas configurações de **URLs de resposta** para seu aplicativo registrado:
 
    `https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html`
 
@@ -111,28 +111,28 @@ Faça o seguinte para registrar um cliente OAuth em um computador do Ative Diret
 
    Em que:
 
-   * `resource` é o URL da organização do Microsoft Dynamics.
+   * `resource` é a URL da organização do Microsoft Dynamics.
 
-1. O Microsoft Dynamics usa o protocolo HTTPS. Para chamar pontos de extremidade do AD FS do servidor do Forms, instale o certificado de site do Microsoft Dynamics no armazenamento de certificados Java usando o `keytool` no computador que executa o AEM Forms.
+1. O Microsoft Dynamics usa o protocolo HTTPS. Para invocar pontos de extremidade do AD FS do servidor do Forms, instale o certificado de site do Microsoft Dynamics no armazenamento de certificados Java usando o comando `keytool` no computador que executa o AEM Forms.
 
 ## Configurar o serviço em nuvem para o serviço Microsoft Dynamics {#configure-cloud-service-for-your-microsoft-dynamics-service}
 
-A variável **CLOUD SERVICE OData do MS Dynamics (Serviço OData)** A configuração do vem com a configuração OData padrão. Para configurá-lo para se conectar com o serviço Microsoft Dynamics, faça o seguinte.
+A configuração **OData Cloud Service (OData Service)** do MS Dynamics vem com a configuração OData padrão. Para configurá-lo para se conectar com o serviço Microsoft Dynamics, faça o seguinte.
 
-1. Navegue até **[!UICONTROL Ferramentas > Cloud Service > Fontes de dados]** e selecione a variável `global` pasta de configuração.
-1. Selecionar **CLOUD SERVICE OData do MS Dynamics (Serviço OData)** e selecione **[!UICONTROL Propriedades]**. A caixa de diálogo de propriedade de configuração do Cloud Service é aberta.
+1. Navegue até **[!UICONTROL Ferramentas > Cloud Service > Fontes de dados]** e selecione a pasta de configuração `global`.
+1. Selecione a configuração **OData Cloud Service (OData Service)** do MS Dynamics e selecione **[!UICONTROL Propriedades]**. A caixa de diálogo de propriedade de configuração do Cloud Service é aberta.
 
-   No **Configurações de autenticação** guia:
+   Na guia **Configurações de autenticação**:
 
-   1. Insira o valor para o **Raiz do serviço** campo. Acesse a instância do Dynamics e navegue até **Recursos do desenvolvedor** para exibir o valor do campo Raiz do Serviço. Por exemplo, https://&lt;tenant-name>/api/data/v9.1/
+   1. Insira o valor para o campo **Raiz de Serviço**. Vá para a instância do Dynamics e navegue até **Recursos do Desenvolvedor** para exibir o valor do campo Raiz do Serviço. Por exemplo, https://&lt;tenant-name>/api/data/v9.1/
 
-   1. Substitua os valores padrão no **ID do cliente**(também referido como **ID do aplicativo**), **Segredo do cliente**, **URL do OAuth**, **URL do token de atualização**, **URL do token de acesso**, e **Recurso** campos com valores da configuração do serviço Microsoft Dynamics. É obrigatório especificar o URL da instância do dynamics na variável **Recurso** para configurar o Microsoft Dynamics com um modelo de dados de formulário. Use o URL raiz do serviço para derivar o URL da instância dinâmica. Por exemplo, [https://org.crm.dynamics.com](https://org.crm.dynamics.com/).
+   1. Substitua os valores padrão nos campos **ID do Cliente**(também conhecido como **ID do Aplicativo**), **Segredo do Cliente**, **URL do OAuth**, **URL do Token de Atualização**, **URL do Token de Acesso** e **Recurso** por valores da configuração do serviço Microsoft Dynamics. É obrigatório especificar a URL da instância do Dynamics no campo **Recurso** para configurar o Microsoft Dynamics com um modelo de dados de formulário. Use o URL raiz do serviço para derivar o URL da instância dinâmica. Por exemplo, [https://org.crm.dynamics.com](https://org.crm.dynamics.com/).
 
-   1. Especificar **openid** no **Escopo da autorização** campo para processo de autorização no Microsoft Dynamics.
+   1. Especifique **openid** no campo **Escopo de Autorização** para o processo de autorização no Microsoft Dynamics.
 
    ![Configurações de autenticação](assets/dynamics_authentication_settings_new.png)
 
-1. Clique em **[!UICONTROL Conectar-se ao OAuth]**. Você é redirecionado para a página de logon do Microsoft Dynamics.
+1. Clique em **[!UICONTROL Conectar ao OAuth]**. Você é redirecionado para a página de logon do Microsoft Dynamics.
 1. Faça logon com as credenciais do Microsoft Dynamics e aceite para permitir que a configuração do serviço de nuvem se conecte ao serviço do Microsoft Dynamics. É uma tarefa única para estabelecer a conexão entre o serviço de nuvem e o serviço.
 
    Em seguida, você será redirecionado para a página de configuração do Cloud Service, que exibirá uma mensagem informando que a configuração OData foi salva com êxito.
@@ -141,11 +141,11 @@ O serviço de nuvem OData Cloud Service (OData Service) do MS Dynamics está con
 
 ## Criar modelo de dados de formulário {#create-form-data-model}
 
-Ao instalar o pacote do AEM Forms, um modelo de dados de formulário,**FDM do Microsoft Dynamics**, é implantado na instância do AEM. Por padrão, o modelo de dados de formulário usa o serviço Microsoft Dynamics configurado no Cloud Service OData (OData Service) do MS Dynamics como a fonte de dados.
+Quando você instala o pacote do AEM Forms, um modelo de dados de formulário,**Microsoft Dynamics FDM**, é implantado em sua instância do AEM. Por padrão, o modelo de dados de formulário usa o serviço Microsoft Dynamics configurado no Cloud Service OData (OData Service) do MS Dynamics como a fonte de dados.
 
 Ao abrir o modelo de dados de formulário pela primeira vez, ele se conecta ao serviço configurado do Microsoft Dynamics e busca entidades da sua instância do Microsoft Dynamics. As entidades &quot;contato&quot; e &quot;cliente potencial&quot; do Microsoft Dynamics já foram adicionadas no modelo de dados de formulário.
 
-Para revisar o modelo de dados do formulário, acesse **[!UICONTROL Forms > Integrações de dados]**. Selecionar **FDM do Microsoft Dynamics** e clique em **Editar** para abrir o modelo de dados de formulário no modo de edição. Como alternativa, você pode abrir o modelo de dados de formulário diretamente da seguinte URL:
+Para revisar o modelo de dados do formulário, acesse **[!UICONTROL Forms > Integrações de dados]**. Selecione **FDM** do Microsoft Dynamics e clique em **Editar** para abrir o modelo de dados de formulário no modo de edição. Como alternativa, você pode abrir o modelo de dados de formulário diretamente da seguinte URL:
 
 `https://'[server]:[port]'/aem/fdm/editor.html/content/dam/formsanddocuments-fdm/ms-dynamics-fdm`
 
@@ -159,4 +159,4 @@ Em seguida, você pode criar um formulário adaptável com base no modelo de dad
 
 É recomendável criar uma cópia do modelo de dados de formulário fornecido com o pacote do AEM Forms e configurar modelos de dados e serviços para atender aos seus requisitos. Ele garantirá que qualquer atualização futura do pacote não substitua o modelo de dados de formulário.
 
-Para obter mais informações sobre como criar e usar o modelo de dados de formulário em fluxos de trabalho de negócios, consulte [Integração de dados](../../forms/using/data-integration.md).
+Para obter mais informações sobre como criar e usar o modelo de dados de formulário em fluxos de trabalho de negócios, consulte [Integração de Dados](../../forms/using/data-integration.md).

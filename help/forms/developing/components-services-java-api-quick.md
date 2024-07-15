@@ -152,7 +152,7 @@ O exemplo do Java™ a seguir implanta um componente baseado em um arquivo JAR c
 
 ## Início rápido (modo SOAP): definição do contexto de execução de um serviço usando a API Java™ {#quick-start-soap-mode-setting-the-execution-context-of-a-service-using-the-java-api}
 
-O exemplo de código Java™ a seguir define o contexto de execução Executar como chamador como um serviço de exemplo chamado *EncryptDocument*.
+O exemplo de código Java™ a seguir define o contexto de execução Executar como Invoker para um serviço de exemplo chamado *EncryptDocument*.
 
 ```java
  /* 

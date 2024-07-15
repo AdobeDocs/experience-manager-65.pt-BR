@@ -18,11 +18,11 @@ ht-degree: 0%
 
 # Guia de componentes da comunidade  {#community-components-guide}
 
-O guia Componentes da comunidade é uma ferramenta de desenvolvimento interativa para a [estrutura da componente social (SCF)](scf.md). Ele fornece uma lista de componentes disponíveis das Comunidades Adobe Experience Manager (AEM) ou os recursos mais complexos criados com vários componentes.
+O guia Componentes da Comunidade é uma ferramenta de desenvolvimento interativa para a [estrutura do componente social (SCF)](scf.md). Ele fornece uma lista de componentes disponíveis das Comunidades Adobe Experience Manager (AEM) ou os recursos mais complexos criados com vários componentes.
 
 Juntamente com as informações básicas de cada componente, o guia permite a experimentação de como os componentes/recursos do SCF funcionam e como eles podem ser configurados ou personalizados.
 
-Para obter informações sobre os fundamentos de desenvolvimento relacionados a cada componente, consulte [Fundamentos de recursos e componentes](essentials.md).
+Para obter informações sobre os fundamentos de desenvolvimento relacionados a cada componente, consulte [Recursos e Componentes Essenciais](essentials.md).
 
 ## Introdução {#getting-started}
 
@@ -30,7 +30,7 @@ O guia deve ser usado em instalações de desenvolvimento de instâncias de auto
 
 O site Componentes da comunidade é acessado navegando até
 
-* [https://&lt;server>:&lt;port>/content/community-components/en.html](http://localhost:4502/content/community-components/en.html)
+* [https://&lt;servidor>:&lt;porta>/content/community-components/en.html](http://localhost:4502/content/community-components/en.html)
 
 As interações com os componentes das Comunidades variam de acordo com:
 
@@ -43,11 +43,11 @@ No autor, para entrar no modo de edição, insira `editor.html` ou `cf#` como o 
 
 * Interface do usuário padrão:
 
-  [https://&lt;server>:&lt;port>/editor.html/content/community-components/en.html](http://localhost:4502/editor.html/content/community-components/en.html)
+  [https://&lt;servidor>:&lt;porta>/editor.html/content/community-components/en.html](http://localhost:4502/editor.html/content/community-components/en.html)
 
 * Interface clássica:
 
-  [https://&lt;server>:&lt;port>/cf#/content/community-components/en.html](http://localhost:4502/cf#/content/community-components/en.html)
+  [https://&lt;servidor>:&lt;porta>/cf#/content/community-components/en.html](http://localhost:4502/cf#/content/community-components/en.html)
 
 >[!NOTE]
 >
@@ -57,9 +57,9 @@ No autor, para entrar no modo de edição, insira `editor.html` ou `cf#` como o 
 >
 >Com a página do componente exibida no navegador, volte para o modo Editar para abrir a caixa de diálogo de edição do componente.
 >
->Para obter informações gerais sobre criação, consulte [guia rápido para a criação de páginas](../../help/sites-authoring/qg-page-authoring.md).
+>Para obter informações gerais sobre criação, exiba o [guia rápido das páginas de criação](../../help/sites-authoring/qg-page-authoring.md).
 >
->Se não estiver familiarizado com o AEM, consulte a documentação em [manuseio básico](../../help/sites-authoring/basic-handling.md).
+>Se não estiver familiarizado com o AEM, exiba a documentação sobre [manipulação básica](../../help/sites-authoring/basic-handling.md).
 
 ### Página inicial {#home-page}
 
@@ -67,13 +67,13 @@ O guia fornece uma lista de componentes SCF disponíveis para visualização e p
 
 O Guia de componentes conforme visualizado em uma instância do autor no modo Editar:
 
-![componente da comunidade1](assets/community-component1.png)
+![componente1](assets/community-component1.png) da comunidade
 
 ## Páginas de componentes {#component-pages}
 
 Selecione um componente na lista do lado esquerdo da página.
 
-![comunidade-componente-páginas](assets/community-component2.png)
+![páginas-componente-comunidade](assets/community-component2.png)
 
 O corpo principal do guia é exibido:
 
@@ -93,13 +93,13 @@ O corpo principal do guia é exibido:
 
 ### Interações do autor {#author-interactions}
 
-Ao usar o guia em uma instância do autor, é possível executar a configuração de um componente abrindo a caixa de diálogo. As informações para desenvolvedores são fornecidas no [Fundamentos de componentes e recursos](essentials.md) seção da documentação, enquanto as configurações da caixa de diálogo estão descritas em [Componentes das comunidades](author-communities.md) seção para autores.
+Ao usar o guia em uma instância do autor, é possível executar a configuração de um componente abrindo a caixa de diálogo. As informações para desenvolvedores são fornecidas na seção [Component and Feature Essentials](essentials.md) da documentação, enquanto as configurações da caixa de diálogo são descritas na seção [Componentes de Comunidades](author-communities.md) para autores.
 
-Para o guia Componentes da comunidade, algumas configurações da caixa de diálogo do componente são sobrepostas com a [Incluível](scf.md#add-or-include-a-communities-component) alternar estado. Para alternar entre o uso do recurso existente ou de um recurso incluído dinamicamente, no modo de edição, selecione o componente e o texto incluível e clique duas vezes para abrir a caixa de diálogo de edição:
+Para o guia Componentes da Comunidade, algumas configurações da caixa de diálogo de componentes são sobrepostas ao estado de alternância [Incluível](scf.md#add-or-include-a-communities-component). Para alternar entre o uso do recurso existente ou de um recurso incluído dinamicamente, no modo de edição, selecione o componente e o texto incluível e clique duas vezes para abrir a caixa de diálogo de edição:
 
 ![componente da comunidade3](assets/community-component3.png)
 
-No **Modelos** guia:
+Na guia **Modelos**:
 
 ![componente-comunidade4](assets/community-component4.png)
 
@@ -115,25 +115,25 @@ No **Modelos** guia:
 
   O padrão está desmarcado.
 
-### Publicar interações {#publish-interactions}
+### Interações do Publish {#publish-interactions}
 
 Ao usar o guia em uma instância de publicação, é possível experimentar os componentes e recursos como um visitante do site (não conectado) e como membros com vários privilégios quando conectados.
 
 >[!NOTE]
 >
->Esteja ciente de que, se o SRP for deixado com o padrão de [JSRP](jsrp.md), o UGC inserido na instância de publicação só estará visível na publicação e *não* ser visível do [moderação](moderate-ugc.md) na instância do autor.
+>Observe que, se o SRP for deixado com o padrão [JSRP](jsrp.md), o UGC inserido na instância de publicação só estará visível na publicação e *não* ficará visível no console [moderação](moderate-ugc.md) na instância de autor.
 
 ## Bibliotecas do lado do cliente {#client-side-libraries}
 
-As bibliotecas do lado do cliente (clientlibs) listadas para cada componente são aquelas *obrigatório* para ser referenciado quando o componente for colocado em uma página. As clientlibs fornecem um meio de gerenciar e otimizar o download do JavaScript e do CSS usados para renderizar o componente no navegador.
+As bibliotecas do lado do cliente (clientlibs) listadas para cada componente são aquelas *necessárias* para serem referenciadas quando o componente for colocado em uma página. As clientlibs fornecem um meio de gerenciar e otimizar o download do JavaScript e do CSS usados para renderizar o componente no navegador.
 
-Para obter mais informações, visite [Clientlibs para componentes das comunidades](clientlibs.md).
+Para obter mais informações, visite [Clientlibs para Componentes de Comunidades](clientlibs.md).
 
 ## Representação {#impersonation}
 
-Na instância do autor, onde um usuário está conectado com frequência como administrador ou desenvolvedor, para experimentar o componente conectado como outro usuário, use a caixa de texto à esquerda do **[!UICONTROL Representar]** para digitar o nome de usuário ou selecione na lista suspensa e clique no botão. Clique em Reverter para sair e encerrar a representação.
+Na instância do autor, onde geralmente há um usuário conectado como administrador ou desenvolvedor, para experimentar o componente conectado como outro usuário, use a caixa de texto à esquerda do botão **[!UICONTROL Representar]** para digitar o nome de usuário ou selecione na lista suspensa e clique no botão. Clique em Reverter para sair e encerrar a representação.
 
-A instância de publicação não precisa representar. Basta usar o link Login/Logout para representar vários usuários, como o [usuários de demonstração](tutorials.md#demo-users).
+A instância de publicação não precisa representar. Basta usar o link Logon/Logout para representar vários usuários, como os [usuários de demonstração](tutorials.md#demo-users).
 
 ## Personalização {#customization}
 
@@ -145,15 +145,15 @@ Quando ativado, cada componente do SCF está disponível para prototipar de poss
 >
 >**Esta ferramenta é somente leitura**. Nenhuma das edições feitas em modelos, CSS ou dados é salva no repositório.
 
-Para experimentar rapidamente com personalizações, a variável `scg:showIde`A propriedade deve ser adicionada ao nó JCR de conteúdo da página de componentes e definida como true.
+Para experimentar rapidamente as personalizações, a propriedade `scg:showIde` deve ser adicionada ao nó JCR de conteúdo da página de componentes e definida como true.
 
 Usando o componente de comentários como exemplo, na instância do autor ou de publicação, conectada com privilégios de administrador:
 
-1. Navegue até [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md)
+1. Navegar até [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md)
 
    Por exemplo, [http://localhost:4503/crx/de](http://localhost:4503/crx/de)
 
-1. Selecione o `jcr:content` nó
+1. Selecione o nó `jcr:content` do componente
 
    Por exemplo, `/content/community-components/en/comments/jcr:content`
 
@@ -163,7 +163,7 @@ Usando o componente de comentários como exemplo, na instância do autor ou de p
    * **Tipo** `String`
    * **Valor** `true`
 
-1. Selecionar **[!UICONTROL Salvar tudo]**
+1. Selecione **[!UICONTROL Salvar tudo]**
 1. Recarregar a página Comentários no guia
 
    [http://localhost:4503/content/community-components/en/comments.html](http://localhost:4503/content/community-components/en/comments.html)

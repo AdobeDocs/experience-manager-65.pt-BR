@@ -1,6 +1,6 @@
 ---
 title: Protect um documento em nome de outro usuário
-description: Saiba como o SDK do Java&trade; para Segurança de documentos do AEM Forms oferece APIs para uma conta de usuário para proteger um documento em nome de outro usuário.
+description: Saiba como o SDK do Java&trade; para Segurança de documentos do AEM Forms oferece APIs para uma conta de usuário proteger um documento em nome de outro usuário.
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 feature: Document Security
 exl-id: e5c80569-d3c0-4358-9b91-b98a64d1c004
@@ -21,8 +21,8 @@ O SDK do Java™ para Segurança de documentos da AEM Forms fornece APIs para pe
 
   outra conta de usuário. As permissões da conta de usuário usada para aplicar a política permanecem limitadas à proteção do documento. Ele não tem o direito de abrir e visualizar o documento. RMSecureDocumentResult protectDocument(Document inDoc, String documentName, String policySetName, String policyName, RMLocale locale, booleano bExactMatchForNames)
 
-* **createLicenseUse** Use a API CreateLicense para criar uma licença para uma política em nome de outra conta de usuário. PublishLicenseDTO createLicense(String policyId, String documentName, booleano logSecureDocEvent)
-* **protectDocumentWithCoverPageUse** Use a API ProtectDocumentWithCoverPage para aplicar uma política e adicionar uma página de capa a um documento em nome de outro usuário. As permissões da conta de usuário usada para aplicar a política permanecem limitadas à proteção do documento. Ele não tem o direito de abrir e visualizar o documento. RMSecureDocumentResult protectDocumentWithCoverPage(Documento no documento, Nome do documento da cadeia de caracteres, Nome do conjunto de políticas da cadeia de caracteres, Nome da política da cadeia de caracteres, Documento coverDoc, Booleano bExactMatchForNames)
+* **createLicenseUse** a API CreateLicense para que você possa criar uma licença para uma política em nome de outra conta de usuário. PublishLicenseDTO createLicense(String policyId, String documentName, booleano logSecureDocEvent)
+* **protectDocumentWithCoverPageUse** a API ProtectDocumentWithCoverPage para que você possa aplicar uma política e adicionar uma página de capa a um documento em nome de outro usuário. As permissões da conta de usuário usada para aplicar a política permanecem limitadas à proteção do documento. Ele não tem o direito de abrir e visualizar o documento. RMSecureDocumentResult protectDocumentWithCoverPage(Documento no documento, Nome do documento da cadeia de caracteres, Nome do conjunto de políticas da cadeia de caracteres, Nome da política da cadeia de caracteres, Documento coverDoc, Booleano bExactMatchForNames)
 
 ## Uso das APIs para proteger um documento em nome de outro usuário {#using-the-apis-to-protect-a-document-on-behalf-of-another-user}
 

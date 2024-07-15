@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Personalização de exibições das propriedades da página{#customizing-views-of-page-properties}
 
-Cada página tem um conjunto de [propriedades](/help/sites-authoring/editing-page-properties.md) que podem ser visualizadas e editadas pelos usuários; algumas são necessárias ao criar a página (criar visualização), outras podem ser visualizadas e editadas (editar visualização) em um estágio posterior. Essas propriedades da página são definidas e disponibilizadas pela caixa de diálogo ( `cq:dialog`) do componente de página apropriado.
+Cada página tem um conjunto de [propriedades](/help/sites-authoring/editing-page-properties.md) que podem ser visualizadas e editadas pelos usuários. Algumas são necessárias ao criar a página (criar exibição), outras podem ser visualizadas e editadas (editar exibição) em um estágio posterior. Essas propriedades de página são definidas e disponibilizadas pela caixa de diálogo ( `cq:dialog`) do componente de página apropriado.
 
 >[!CAUTION]
 >
@@ -26,23 +26,23 @@ Cada página tem um conjunto de [propriedades](/help/sites-authoring/editing-pag
 
 O estado padrão de cada propriedade de página é:
 
-* oculto na visualização criar (por exemplo, **Criar página** assistente)
+* oculto na exibição de criação (por exemplo, assistente **Criar página**)
 
-* disponível na visualização de edição (por exemplo, **Propriedades da exibição**)
+* disponível no modo de edição (por exemplo, **Propriedades do Modo de Exibição**)
 
 Os campos devem ser configurados especificamente se qualquer alteração for necessária. Isso é feito usando as propriedades apropriadas do nó:
 
-* A propriedade da página que estará disponível na visualização de criação (por exemplo, **Criar página** assistente):
+* Propriedade da página a ser disponibilizada no modo de exibição de criação (por exemplo, assistente **Criar Página**):
 
    * Nome: `cq:showOnCreate`
    * Tipo: `Boolean`
 
-* A propriedade da página que estará disponível na visualização de edição (por exemplo, **Exibir**/**Editar**) **Propriedades** opção):
+* Propriedade da página a ser disponibilizada no modo de edição (por exemplo, **Modo de Exibição**/**Editar**) **Propriedades** opção):
 
    * Nome: `cq:hideOnEdit`
    * Tipo: `Boolean`
 
-Por exemplo, consulte as configurações para campos agrupados na **Mais títulos e descrições** no **Básico** para o componente de página de base. Eles são visíveis na **Criar página** assistente como `cq:showOnCreate` foi definido como `true`:
+Por exemplo, consulte as configurações para campos agrupados em **Mais Títulos e Descrição** na guia **Básico** para o componente de Página de base. Estes estão visíveis no assistente **Criar página**, pois `cq:showOnCreate` foi definido como `true`:
 
 ```xml
 /libs/foundation/components/page/cq:dialog/content/items/tabs/items/basic/items/column/items/moretitles
@@ -50,16 +50,16 @@ Por exemplo, consulte as configurações para campos agrupados na **Mais título
 
 >[!TIP]
 >
->Consulte a [Tutorial de extensão das propriedades da página](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/page-properties-technical-video-develop.html) para obter um guia sobre como personalizar as propriedades da página.
+>Consulte o [tutorial Extensão das propriedades de página](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/page-properties-technical-video-develop.html) para obter um guia sobre como personalizar as propriedades de página.
 
 ## Configuração das propriedades da página {#configuring-your-page-properties}
 
 Você também pode configurar os campos disponíveis configurando a caixa de diálogo do componente de página e aplicando as propriedades de nó apropriadas.
 
-Por exemplo, por padrão, a variável [**Criar página** assistente](/help/sites-authoring/managing-pages.md#creating-a-new-page) mostra os campos agrupados em **Mais títulos e descrições**. Para ocultá-los, você configura:
+Por exemplo, por padrão, o assistente [**Criar página**](/help/sites-authoring/managing-pages.md#creating-a-new-page) mostra os campos agrupados em **Mais títulos e descrições**. Para ocultá-los, você configura:
 
 1. Crie seu componente de página em `/apps`.
-1. Criar uma substituição (usando *diff da caixa de diálogo* fornecido pelo [Fusão de recursos do Sling](/help/sites-developing/sling-resource-merger.md)) para o `basic` do seu componente de página; por exemplo:
+1. Crie uma substituição (usando a *diff de caixa de diálogo* fornecida pelo [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md)) para a seção `basic` do seu componente de página; por exemplo:
 
    ```xml
    <your-page-component>/cq:dialog/content/items/tabs/items/basic
@@ -71,22 +71,22 @@ Por exemplo, por padrão, a variável [**Criar página** assistente](/help/sites
    >
    >    `/libs/wcm/foundation/components/basicpage/v1/basicpage/cq:dialog`
    >
-   >No entanto, você ***deve*** não alterar nada no `/libs` caminho.
+   >No entanto, você ***deve*** não alterar nada no caminho `/libs`.
    >
-   >Isso ocorre porque o conteúdo de `/libs` é substituído na próxima vez que você atualizar sua instância (e pode ser substituído ao aplicar um hotfix ou pacote de recursos).
+   >Isso ocorre porque o conteúdo de `/libs` é substituído na próxima vez que você atualizar sua instância (e pode ser substituído quando você aplicar um hotfix ou pacote de recursos).
    >
    >O método recomendado para configuração e outras alterações é:
    >
-   >1. Recrie o item necessário (ou seja, como ele existe em `/libs`) em `/apps`
+   >1. Recriar o item necessário (isto é, como ele existe em `/libs`) em `/apps`
    >1. Fazer alterações em `/apps`
 
-1. Defina o `path` propriedade em `basic` para apontar para a substituição da guia básica (consulte a próxima etapa também). Por exemplo:
+1. Defina a propriedade `path` em `basic` para apontar para a substituição da guia básica (veja a próxima etapa também). Por exemplo:
 
    ```xml
    /apps/demos/components/page/tabs/basic
    ```
 
-1. Criar uma substituição de `basic` - `moretitles` no caminho correspondente; por exemplo:
+1. Crie uma substituição da seção `basic` - `moretitles` no caminho correspondente; por exemplo:
 
    ```xml
    /apps/demos/components/page/tabs/basic/items/column/items/moretitles
@@ -98,15 +98,15 @@ Por exemplo, por padrão, a variável [**Criar página** assistente](/help/sites
    * **Tipo**: `Boolean`
    * **Valor**: `false`
 
-   A variável **Mais títulos e descrições** A seção não será mais exibida na **Criar página** assistente.
+   A seção **Mais Títulos e Descrição** não será mais exibida no assistente **Criar Página**.
 
 >[!NOTE]
 >
->Ao configurar propriedades de página para uso com live copies, consulte [Configuração de bloqueios do MSM nas propriedades da página](/help/sites-developing/extending-msm.md#configuring-msm-locks-on-page-properties-touch-enabled-ui) para obter mais detalhes.
+>Ao configurar propriedades de página para uso com live copies, consulte [Configurando Bloqueios do MSM nas Propriedades da Página](/help/sites-developing/extending-msm.md#configuring-msm-locks-on-page-properties-touch-enabled-ui) para obter mais detalhes.
 
 ## Exemplo de configuração das propriedades da página {#sample-configuration-of-page-properties}
 
-Esta amostra demonstra a técnica de diálogo diff do [Fusão de recursos do Sling](/help/sites-developing/sling-resource-merger.md)incluindo a utilização de [`sling:orderBefore`](/help/sites-developing/sling-resource-merger.md#properties). Ilustra igualmente a utilização de `cq:showOnCreate` e `cq:hideOnEdit`.
+Esta amostra demonstra a técnica de diálogo diff do [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md); incluindo o uso de [`sling:orderBefore`](/help/sites-developing/sling-resource-merger.md#properties). Também ilustra o uso de `cq:showOnCreate` e `cq:hideOnEdit`.
 
 CÓDIGO NO GITHUB
 

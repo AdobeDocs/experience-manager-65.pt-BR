@@ -26,7 +26,7 @@ Os Guias de introdução headless apresentam um caminho simples para criar, gere
 >
 >Este guia de introdução presume que você tenha conhecimento sobre a tecnologia headless e do AEM.
 >
->Se você é novo no AEM ou no headless, consulte a [Jornadas de documentação do Headless](/help/journey-headless/overview.md) para obter uma introdução completa sobre headless e como AEM oferece suporte a ele.
+>Se você é novo no AEM ou no headless, consulte as [Jornadas de documentação do headless](/help/journey-headless/overview.md) para obter uma introdução completa sobre headless e como o AEM oferece suporte a ele.
 
 ## Público {#audience}
 
@@ -35,11 +35,11 @@ As tarefas descritas nos Guias de introdução headless são necessárias para u
 No entanto, em uma situação de produção, as tarefas normalmente são executadas por personas diferentes em um número variável de vezes. Por exemplo:
 
 * Normalmente, **admins** precisarão definir a configuração inicial e a estrutura de pastas do conteúdo apenas uma vez, ou esporadicamente.
-* **Arquitetos de informações** adicionar novos modelos à medida que as necessidades da organização evoluem.
+* **Arquitetos da informação** adicionam novos modelos à medida que as necessidades da organização evoluem.
 * **Autores(as) de conteúdo** continuarão a criar novos conteúdos como fragmentos de conteúdo baseados nos modelos definidos por arquitetos(as).
 
 Os Guias de introdução headless apontam quem normalmente executaria as tarefas descritas e com que frequência.
 
 ## Próxima etapa {#next-step}
 
-Pronto para aprender mais? Então, comece lendo a primeira parte do Guia de introdução do Headless: [Criação de uma configuração.](create-configuration.md)
+Pronto para aprender mais? Então, comece lendo a primeira parte do Guia de Introdução Headless: [Criando uma Configuração.](create-configuration.md)

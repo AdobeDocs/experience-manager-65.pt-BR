@@ -43,7 +43,7 @@ Por exemplo, o portal personalizado prepararia o URL como\
 
 ## Chamada embutida baseada em dados {#inline-data-based-invocation}
 
-Outra (e uma maneira mais segura) de chamar o aplicativo Criar correspondência pode ser simplesmente clicar no URL em https://&#39;[server]:[porta]&#39;/[contextPath]/aem/forms/createcorrespondence.html, ao enviar os parâmetros e dados para chamar o aplicativo Criar correspondência como uma solicitação POST (ocultando-os do usuário final). Isso também significa que agora é possível transmitir os dados XML para o aplicativo Criar correspondência em linha (como parte da mesma solicitação, usando o parâmetro cmData ), o que não era possível/ideal na abordagem anterior.
+Outra maneira (e mais segura) de chamar o aplicativo Criar Correspondência poderia ser simplesmente acessar a URL em https://&#39;[server]:[port]&#39;/[contextPath]/aem/forms/createcorrespondence.html, enquanto enviava os parâmetros e dados para chamar o aplicativo Criar Correspondência como uma solicitação POST (ocultando-os do usuário final). Isso também significa que agora é possível transmitir os dados XML para o aplicativo Criar correspondência em linha (como parte da mesma solicitação, usando o parâmetro cmData ), o que não era possível/ideal na abordagem anterior.
 
 ### Parâmetros para especificação de carta {#parameters-for-specifying-letter}
 

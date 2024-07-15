@@ -54,4 +54,4 @@ Revise os requisitos mínimos do sistema na tabela abaixo para a versão do CIF 
 
 ### Novidades {#what-is-new-july}
 
-* Ganchos do filtro de produto no `ProductList` componente
+* Ganchos de filtro de produto no componente `ProductList`

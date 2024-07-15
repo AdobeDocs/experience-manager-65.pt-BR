@@ -39,13 +39,13 @@ Conclua este procedimento usando a página da Web Aplicativos e Serviços no Con
             https://[host name]:'port'/adminui
    ```
 
-1. Clique em **Serviços > Aplicativos e serviços > Preferências**.
+1. Clique em **Serviços > Aplicativos e Serviços > Preferências**.
 1. Defina as Preferências para exibir até 200 serviços e pontos de extremidade na mesma página.
-1. Clique em **Serviços** > **Aplicativos e serviços** > **Gerenciamento de Ponto de Extremidade**.
-1. Selecionar **EJB** do **Provedor** e clique em **Filtro**.
-1. Para desativar todos os endpoints de EJB, marque a caixa de seleção ao lado de cada um na lista e clique em **Desativar**.
-1. Clique em **Próxima** e repita a etapa anterior para todos os pontos finais EJB. Certifique-se de que o EJB esteja listado na coluna Provedor antes de desativar os pontos finais.
-1. Selecionar **SOAP** do **Provedor** e clique em **Filtro**.
+1. Clique em **Serviços** > **Aplicativos e Serviços** > **Gerenciamento de Ponto de Extremidade**.
+1. Selecione **EJB** na lista **Provider** e clique em **Filtro**.
+1. Para desativar todos os pontos de extremidade EJB, marque a caixa de seleção ao lado de cada um na lista e clique em **Desativar**.
+1. Clique em **Avançar** e repita a etapa anterior para todos os pontos de extremidade EJB. Certifique-se de que o EJB esteja listado na coluna Provedor antes de desativar os pontos finais.
+1. Selecione **SOAP** na lista **Provedor** e clique em **Filtro**.
 1. Para remover pontos de extremidade SOAP, marque a caixa de seleção ao lado de cada um na lista e clique em **Remover**. Não remova os seguintes pontos de extremidade:
 
    * AuthenticationManagerService
@@ -62,7 +62,7 @@ Conclua este procedimento usando a página da Web Aplicativos e Serviços no Con
    * LogonÚnicoWorkspace
    * ApplicationManager
 
-1. Clique em **Próxima** e repita a etapa anterior para endpoints do SOAP que não estão na lista acima. Verifique se o SOAP está listado na coluna Provedor antes de remover os pontos de extremidade.
+1. Clique em **Avançar** e repita a etapa anterior para pontos de extremidade SOAP que não estejam na lista acima. Verifique se o SOAP está listado na coluna Provedor antes de remover os pontos de extremidade.
 
 ## Desabilitação de acesso anônimo não essencial a serviços {#disabling-non-essential-anonymous-access-to-services}
 
@@ -74,9 +74,9 @@ Alguns serviços do Forms Server permitem a invocação não autenticada (anôni
             https://[host name]:'port'/adminui
    ```
 
-1. Clique em **Serviços > Aplicativos e serviços > Gerenciamento de serviços**.
+1. Clique em **Serviços > Aplicativos e Serviços > Gerenciamento de Serviços**.
 1. Clique no nome do serviço que deseja desativar (por exemplo, AuthenticationManagerService).
-1. Clique em **Guia Segurança**, desmarcar **Acesso anônimo permitido** e clique em **Salvar**.
+1. Clique na **guia Segurança**, desmarque **Acesso Anônimo Permitido** e clique em **Salvar**.
 1. Complete as etapas 3 e 4 para os seguintes serviços:
 
    * AuthenticationManagerService
@@ -117,7 +117,7 @@ Os usuários finais podem se autenticar no AEM Forms por meio do Workbench, de a
             https://[host name]:'port'/adminui
    ```
 
-1. Clique em **Configurações > Gerenciamento De Usuários > Configuração > Importar E Exportar Arquivos De Configuração**.
+1. Clique Em **Configurações > Gerenciamento De Usuários > Configuração > Importar E Exportar Arquivos De Configuração**.
 1. Clique em **Exportar** para produzir um arquivo config.xml com as configurações existentes do AEM Forms.
 1. Abra o arquivo XML em um editor e localize a seguinte entrada:
 
@@ -126,4 +126,4 @@ Os usuários finais podem se autenticar no AEM Forms por meio do Workbench, de a
 1. Altere o valor para qualquer número maior que 5 (em minutos) e salve o arquivo.
 1. No console de administração, navegue até a página Importar e exportar arquivos de configuração.
 1. Insira o caminho para o arquivo config.xml modificado ou clique em Procurar para navegar até ele.
-1. Clique em **Importar** para fazer upload do arquivo config.xml modificado e clique em **OK**.
+1. Clique em **Importar** para carregar o arquivo config.xml modificado e clique em **OK**.

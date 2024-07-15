@@ -24,7 +24,7 @@ ht-degree: 0%
 >
 >Este artigo se aplica aos componentes de email obsoletos do Foundation com base em AEM.
 >
->Os usuários são incentivados a usar o moderno [Componentes principais Componentes de email.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html)
+>Os usuários são incentivados a usar os [Componentes principais de email.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html)
 
 Este documento descreve algumas das práticas recomendadas para design de email, resultando em um modelo de campanha de email bem desenvolvido.
 
@@ -34,19 +34,19 @@ Use essas práticas recomendadas ao criar seu próprio informativo.
 
 >[!NOTE]
 >
->Todo o conteúdo da campanha deve ser criado em um `master` página do tipo `cq/personalization/components/ambitpage`.
+>Todo o conteúdo da campanha deve ser criado em uma página `master` do tipo `cq/personalization/components/ambitpage`.
 >
 >Por exemplo, se a estrutura da campanha planejada for algo como
 >
 >`/content/campaigns/teasers/en/campaign-promotion-global`
 >
->Certifique-se de que esteja sob um `master` página
+>Verifique se ele reside em uma página `master`
 >
 >`/content/campaigns/teasers/master/en/campaign-promotion-global`
 
 >[!NOTE]
 >
->Ao criar um template de email para o Adobe Campaign, você deve incluir a propriedade **acMapping** com o valor **mapRecipient** no **jcr:content** do modelo. Caso contrário, não será possível selecionar o modelo do Adobe Campaign em **Propriedades da página** de Experience Manager (campo desativado).
+>Ao criar um modelo de email para o Adobe Campaign, você deve incluir a propriedade **acMapping** com o valor **mapRecipient** no nó **jcr:content** do modelo. Caso contrário, você não poderá selecionar o modelo Adobe Campaign em **Propriedades da página** de Experience Manager (o campo está desabilitado).
 
 ## Componente de modelo/página {#template-page-component}
 
@@ -60,19 +60,19 @@ Use essas práticas recomendadas ao criar seu próprio informativo.
   </tr>
   <tr>
    <td><p>Especifique o tipo de documento para garantir uma renderização consistente.</p> <p>Adicionar DOCTYPE no início (HTML ou XHTML)</p> </td>
-   <td><p>É configurável quando o design altera o <i>cq:doctype</i> propriedade no<i>"/etc/designs/default/jcr:content/campaign_newsletterpage"</i></p> <p>O padrão é "XHTML":</p> <p>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional/EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;</p> <p>Pode ser alterado para "HTML_5":</p> <p>&lt;!DOCTYPE HTML&gt;</p> </td>
+   <td><p>É configurável por design alterando a propriedade <i>cq:doctype</i> em<i>"/etc/designs/default/jcr:content/campaign_newsletterpage"</i></p> <p>O padrão é "XHTML":</p> <p>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional/EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;</p> <p>Pode ser alterado para "HTML_5":</p> <p>&lt;!DOCTYPE HTML&gt;</p> </td>
   </tr>
   <tr>
    <td><p>Especifique a definição de caractere para garantir a renderização correta de caracteres especiais.</p> <p>Adicione a declaração CHARSET (por exemplo, iso-8859-15, UTF-8) a &lt;head&gt;</p> </td>
    <td><p>Está definido como UTF-8.</p> <p>&lt;meta http-equiv="content-type" content="text/html; charset=UTF-8"&gt;</p> </td>
   </tr>
   <tr>
-   <td><p>Codifique toda a estrutura usando o &lt;table&gt;elemento. Para layouts mais complicados, você deve aninhar tabelas para criar estruturas complexas.</p> <p>O email deve ficar bom mesmo sem o css.</p> </td>
-   <td><p>As tabelas são usadas em todo o modelo para estruturar conteúdo. Atualmente usando um máximo de quatro tabelas aninhadas (1 tabela base + máx. 3 níveis de aninhamento)</p> <p>&lt;div&gt; as tags são usadas apenas no modo de criação para garantir a edição adequada de componentes.</p> </td>
+   <td><p>Codifique toda a estrutura usando o elemento &lt;table&gt;element. Para layouts mais complicados, você deve aninhar tabelas para criar estruturas complexas.</p> <p>O email deve ficar bom mesmo sem o css.</p> </td>
+   <td><p>As tabelas são usadas em todo o modelo para estruturar conteúdo. Atualmente usando um máximo de quatro tabelas aninhadas (1 tabela base + máx. 3 níveis de aninhamento)</p> <p>As tags &lt;div&gt; são usadas apenas no modo de autor para garantir a edição adequada de componentes.</p> </td>
   </tr>
   <tr>
    <td>Use atributos de elemento (como preenchimento de célula, valência e largura) para definir dimensões de tabela. Esse método força uma estrutura de modelo de caixa.</td>
-   <td><p>Todas as tabelas contêm atributos necessários como <i>borda</i>, <i>preenchimento celular</i>, <i>espaçamento entre células</i>, e <i>largura</i>.</p> <p>Para harmonizar o posicionamento de elementos dentro de tabelas, todas as células da tabela têm o atributo <i>valign="top"</i> definido.</p> </td>
+   <td><p>Todas as tabelas contêm atributos necessários como <i>borda</i>, <i>preenchimento de célula</i>, <i>espaçamento de célula</i> e <i>largura</i>.</p> <p>Para harmonizar o posicionamento de elementos dentro de tabelas, todas as células da tabela têm o atributo <i>valign="top"</i> sendo definido.</p> </td>
   </tr>
   <tr>
    <td><p>Conte com facilidade de locomoção, se possível. Use consultas de mídia para aumentar o tamanho do texto em telas pequenas e fornecer áreas de ocorrência no tamanho de miniatura para links.</p> <p>Tornar um email responsivo se o design permitir.</p> </td>
@@ -88,7 +88,7 @@ Use essas práticas recomendadas ao criar seu próprio informativo.
   </tr>
   <tr>
    <td>Os emails devem ter no máximo 600-800 pixels de largura. Esse dimensionamento faz com que eles se comportem melhor dentro do tamanho do painel de visualização fornecido por muitos clientes.</td>
-   <td>A variável <i>largura</i> da tabela de conteúdo é limitada a 600 pixels no design de demonstração.</td>
+   <td>A <i>largura</i> da tabela de conteúdo é limitada a 600 pixels no design de demonstração.</td>
   </tr>
  </tbody>
 </table>
@@ -99,10 +99,10 @@ Use essas práticas recomendadas ao criar seu próprio informativo.
 
 | **Prática recomendada** | **Implementação** |
 |---|---|
-| Adicionar *alt* atributos para imagens | A variável *alt* o atributo foi definido como obrigatório para o componente de imagem. |
-| Uso *jpg* em vez de *png* formato para imagens | As imagens são sempre servidas como JPG pelo componente de imagem. |
-| Uso `<img>` elemento em vez de imagens de fundo em uma tabela. | Nenhum dado de imagem de fundo é usado nos modelos. |
-| Adicione o atributo style=&quot;display block&quot; nas imagens. Isso permite que eles sejam bem exibidos no Gmail. | Todas as imagens contêm, por padrão, o *style=&quot;display block&quot;* atributo. |
+| Adicionar atributos de *alt* a imagens | O atributo *alt* foi definido como obrigatório para o componente de imagem. |
+| Use o formato *jpg* em vez do *png* para imagens | As imagens são sempre servidas como JPG pelo componente de imagem. |
+| Usar elemento `<img>` em vez de imagens de plano de fundo em uma tabela. | Nenhum dado de imagem de fundo é usado nos modelos. |
+| Adicione o atributo style=&quot;display block&quot; nas imagens. Isso permite que eles sejam bem exibidos no Gmail. | Todas as imagens contêm por padrão o atributo *style=&quot;display block&quot;*. |
 
 ### Texto e links {#text-and-links}
 
@@ -115,11 +115,11 @@ Use essas práticas recomendadas ao criar seu próprio informativo.
    <td><strong>Implementação</strong></td>
   </tr>
   <tr>
-   <td>Usar html em vez de estilo em CSS (família de fontes)</td>
-   <td>O RichTextEditor (por exemplo, no componente de imagem de texto) agora é compatível com a escolha e a aplicação de famílias de fontes e tamanhos de fontes a textos selecionados. Eles são renderizados como tags.</td>
+   <td>Use html &lt;font&gt; em vez de style no CSS (font-family)</td>
+   <td>O RichTextEditor (por exemplo, no componente de imagem de texto) agora é compatível com a escolha e a aplicação de famílias de fontes e tamanhos de fontes a textos selecionados. Eles são renderizados como tags &lt;font&gt;.</td>
   </tr>
   <tr>
-   <td>Usar fontes básicas em várias plataformas, como <i>Arial®, Verdana, Geórgia</i>, e <i>Times New Roman®</i>.</td>
+   <td>Use fontes básicas em várias plataformas, como <i>Arial®, Verdana, Georgia</i> e <i>Times New Roman®</i>.</td>
    <td><p>Depende do design do informativo.</p> <p>Para o design da demonstração, a fonte "Helvetica®" é usada, mas retorna para uma fonte sans-serif genérica, se não estiver presente.</p> </td>
   </tr>
  </tbody>
@@ -129,8 +129,8 @@ Use essas práticas recomendadas ao criar seu próprio informativo.
 
 | **Prática recomendada** | **Implementação** |
 |---|---|
-| Use o validador W3C para corrigir o código HTML. Certifique-se de que todas as tags abertas estejam fechadas corretamente. | Código validado. Somente para Doctype de transição XHTML, o atributo xmlns ausente para o `<html>` elemento ausente. |
-| Evite usar JavaScript ou Flash - essas tecnologias geralmente não são compatíveis com clientes de email. | O JavaScript ou Flash não é usado no modelo do informativo. |
+| Use o validador W3C para corrigir o código HTML. Certifique-se de que todas as tags abertas estejam fechadas corretamente. | Código validado. Somente para Doctype de transição XHTML, o atributo xmlns ausente para o elemento `<html>` está ausente. |
+| Evite usar o JavaScript ou o Flash - essas tecnologias geralmente não são compatíveis com os clientes de email. | O JavaScript ou o Flash não é usado no modelo de boletim informativo. |
 | Adicione uma versão de texto sem formatação para envio de várias partes. | Um novo widget foi incorporado às propriedades da página para extrair facilmente uma versão de texto simples do conteúdo da página. Você pode usá-lo como ponto de partida para a versão final do texto sem formatação. |
 
 ## Modelos e exemplos do informativo da campanha {#campaign-newsletter-templates-and-examples}
@@ -141,13 +141,13 @@ O AEM vem com vários modelos e componentes prontos para uso para você criar in
 
 Para oferecer uma base sólida e ampliar a variedade de possibilidades de fluxo de conteúdo, há três tipos de modelo ligeiramente diferentes disponíveis prontos para uso. Você pode usar facilmente esses três tipos para criar um informativo personalizado.
 
-Todos têm um **cabeçalho**, um **rodapé**, e uma **corpo** seção. Abaixo da seção do corpo, cada modelo difere em **design da coluna** (uma, duas ou três colunas).
+Todos têm uma seção **cabeçalho**, um **rodapé** e uma seção **corpo**. Abaixo da seção do corpo, cada modelo difere no **design de coluna** (uma, duas ou três colunas).
 
 ![Variantes de informativos possíveis](assets/chlimage_1-69.png)
 
 ### Componentes {#components}
 
-Existem atualmente [sete componentes disponíveis para uso em templates de campanha](/help/sites-authoring/adobe-campaign-components.md). Todos esses componentes são baseados na linguagem de marcação Adobe **HTL**.
+Atualmente, há [sete componentes disponíveis para uso nos modelos de campanha](/help/sites-authoring/adobe-campaign-components.md). Todos esses componentes são baseados na linguagem de marcação Adobe **HTL**.
 
 | **Nome do componente** | **Caminho do componente** |
 |---|---|
@@ -163,4 +163,4 @@ Existem atualmente [sete componentes disponíveis para uso em templates de campa
 >
 >Esses componentes são otimizados para o conteúdo de e-mail; ou seja, seguem as práticas recomendadas descritas neste documento. O uso de outros componentes prontos para uso geralmente viola essas regras.
 
-Esses componentes são descritos detalhadamente na seção [Componentes do Adobe Campaign](/help/sites-authoring/adobe-campaign-components.md).
+Estes componentes são descritos em detalhes em [Adobe Campaign components](/help/sites-authoring/adobe-campaign-components.md).

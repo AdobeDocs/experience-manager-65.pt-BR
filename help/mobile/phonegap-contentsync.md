@@ -25,7 +25,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Este documento faz parte da [Introdução ao Adobe Experience Manager (AEM) Mobile](/help/mobile/getting-started-aem-mobile.md) Guia do, um ponto de partida recomendado para referência do AEM Mobile.
+>Este documento faz parte do [Guia de Introdução ao Adobe Experience Manager (AEM) Mobile](/help/mobile/getting-started-aem-mobile.md), um ponto de partida recomendado para referência do AEM Mobile.
 
 Use a Sincronização de conteúdo para empacotar o conteúdo para que ele possa ser usado em aplicativos móveis nativos. As páginas criadas no AEM podem ser usadas como conteúdo do aplicativo, mesmo quando o dispositivo está offline. Além disso, como as páginas AEM são baseadas em padrões da Web, elas funcionam em várias plataformas, permitindo que você as incorpore em qualquer invólucro nativo. Essa estratégia reduz o esforço de desenvolvimento e permite atualizar facilmente o conteúdo do aplicativo.
 
@@ -46,17 +46,17 @@ A sequência de etapas a seguir ilustra um caso de uso típico da Sincronizaçã
 
 >[!NOTE]
 >
->Para obter mais informações sobre diretrizes para desenvolver manipuladores de Sincronização de conteúdo, veja os manipuladores de aplicativo prontos para uso, consulte [Desenvolvimento de manipuladores de sincronização de conteúdo](/help/mobile/contentsync-app-handlers.md).
+>Para obter mais informações sobre diretrizes para desenvolver manipuladores de Sincronização de Conteúdo, consulte [Desenvolvendo manipuladores de Sincronização de Conteúdo](/help/mobile/contentsync-app-handlers.md).
 
 ## Configurar o conteúdo de sincronização do conteúdo {#configuring-the-content-sync-content}
 
 Crie uma configuração de Sincronização de conteúdo para especificar o conteúdo do arquivo ZIP que é entregue ao cliente. Você pode criar qualquer número de configurações de sincronização de conteúdo. Cada configuração tem um nome para fins de identificação.
 
-Para criar uma configuração de sincronização de conteúdo, adicione um `cq:ContentSyncConfig` para o repositório, com o `sling:resourceType` propriedade definida como `contentsync/config`. A variável `cq:ContentSyncConfig` O nó pode estar localizado em qualquer lugar no repositório, no entanto, deve estar acessível aos usuários na instância de publicação do AEM. Portanto, você deve adicionar o nó abaixo `/content`.
+Para criar uma configuração de Sincronização de Conteúdo, adicione um nó `cq:ContentSyncConfig` ao repositório, com a propriedade `sling:resourceType` definida como `contentsync/config`. O nó `cq:ContentSyncConfig` pode estar localizado em qualquer lugar no repositório, no entanto, ele deve estar acessível aos usuários na instância de publicação AEM. Portanto, você deve adicionar o nó abaixo de `/content`.
 
 Para especificar o conteúdo do arquivo ZIP de sincronização de conteúdo, adicione nós secundários ao nó cq:ContentSyncConfig. As seguintes propriedades de cada nó secundário identificam um item de conteúdo a ser incluído e como ele é processado ao adicioná-lo:
 
-* `path`: o local do conteúdo.
+* `path`: O local do conteúdo.
 * `type`: o nome do tipo de configuração a ser usado para processar o conteúdo. Vários tipos estão disponíveis e são descritos em Tipos de configuração.
 
 Consulte Exemplo de configuração de sincronização de conteúdo.
@@ -77,16 +77,16 @@ Quando o AEM é instalado, os membros do grupo do administrador podem baixar o d
 
 O serviço Gerenciador de sincronização de conteúdo do Day CQ controla o acesso à Sincronização de conteúdo. Configure esse serviço para especificar o usuário ou grupo que pode baixar da Sincronização de conteúdo por padrão.
 
-Se você estiver [configuração do serviço usando o Console da Web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console), digite o nome do usuário ou grupo como o valor da propriedade Cache de Fallback Autorizável.
+Se você estiver [configurando o serviço usando o Console da Web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console), digite o nome do usuário ou grupo como o valor da propriedade Autorizável de Cache de Fallback.
 
-Se você estiver [configuração no repositório](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository), use as seguintes informações sobre o serviço:
+Se você estiver [configurando no repositório](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository), use as seguintes informações sobre o serviço:
 
 * PID: com.day.cq.contentsync.impl.ContentSyncManagerImpl
 * Nome da propriedade: contentsync.fallback.authorizable
 
 #### Substituição do acesso de download para um cache de sincronização de conteúdo {#overriding-download-access-for-a-content-sync-cache}
 
-Para configurar o acesso de download para uma configuração específica da Sincronização de conteúdo, adicione a seguinte propriedade à `cq:ContentSyncConfig` nó:
+Para configurar o acesso ao download para uma configuração de Sincronização de Conteúdo específica, adicione a seguinte propriedade ao nó `cq:ContentSyncConfig`:
 
 * Nome: autorizável
 * Tipo: String
@@ -94,7 +94,7 @@ Para configurar o acesso de download para uma configuração específica da Sinc
 
 Por exemplo, seu aplicativo permite que os usuários instalem atualizações diretamente da Sincronização de conteúdo. Para permitir que todos os usuários baixem a atualização, defina o valor da propriedade autorizable como `everyone`.
 
-Se a variável `cq:ContentSyncConfig` O nó não tem propriedade autorizable, o usuário ou grupo padrão configurado para a propriedade Autorizable de Cache de Fallback do serviço Gerenciador de Sincronização de Conteúdo do Day CQ determina quem pode baixar.
+Se o nó `cq:ContentSyncConfig` não tiver uma propriedade autorizável, o usuário ou grupo padrão configurado para a propriedade Cache de Fallback Autorizável do serviço Gerenciador de Sincronização de Conteúdo do Day CQ determinará quem pode baixar.
 
 ### Configurar o usuário para atualizar um cache de sincronização de conteúdo {#configuring-the-user-for-updating-a-content-sync-cache}
 
@@ -108,34 +108,34 @@ Para substituir o usuário padrão, especifique um usuário ou grupo que execute
 * Tipo: String
 * Valor: o nome do usuário ou grupo que pode executar as atualizações.
 
-Se o nó cq:ContentSyncConfig não tiver `updateuser` propriedade, o usuário anônimo padrão atualiza o cache.
+Se o nó cq:ContentSyncConfig não tiver a propriedade `updateuser`, o usuário anônimo padrão atualizará o cache.
 
 ### Tipos de configuração {#configuration-types}
 
 O processamento pode variar desde a renderização de JSON simples até a renderização completa de páginas, incluindo seus ativos referenciados. Esta seção lista os tipos de configuração disponíveis e seus parâmetros específicos:
 
-**copiar** Basta copiar arquivos e pastas.
+**copiar** simplesmente copie arquivos e pastas.
 
 * **caminho** - Se o caminho apontar para um único arquivo, somente o arquivo será copiado. Se ele apontar para uma pasta (isso inclui nós de página), todos os arquivos e pastas abaixo serão copiados.
 
-**conteúdo** - Renderize o conteúdo usando o processamento padrão de solicitações do Sling.
+**conteúdo** - Renderiza o conteúdo usando o processamento de solicitação Sling padrão.
 
-* **caminho** - Caminho para o recurso que deve ser gerado.
+* **caminho** - Caminho para o recurso que deve ser de saída.
 * **extensão** - Extensão que deve ser usada na solicitação. Exemplos comuns são *html* e *json*, mas qualquer outra extensão é possível.
 
-* **seletor** - Seletores opcionais separados por ponto. Exemplos comuns são *toque* para renderizar versões móveis de uma página ou *infinito* para saída JSON.
+* **seletor** - Seletores opcionais separados por ponto. Exemplos comuns são *touch* para renderizar versões móveis de uma página ou *infinity* para saída JSON.
 
-**clientlib** - Criar um pacote de uma biblioteca de cliente JavaScript ou CSS.
+**clientlib** - Compactar uma biblioteca de cliente JavaScript ou CSS.
 
 * **caminho** - Caminho para a raiz da biblioteca do cliente.
-* **extensão** - Tipo de biblioteca do cliente. Isso deve ser definido como *js* ou *css* neste momento.
+* **extensão** - Tipo de biblioteca do cliente. Isso deve ser definido como *js* ou *css* no momento.
 
-* **includeFolders** - Tipo é uma matriz de cadeias de caracteres, e permite que o usuário especifique pastas adicionais para examinar na biblioteca do cliente para buscar arquivos (como fontes personalizadas).
+* **includeFolders** - O tipo é uma matriz de cadeias de caracteres e permite que o usuário especifique pastas adicionais para examinar na biblioteca do cliente para buscar arquivos (como fontes personalizadas).
 
-**ativos** - Colete representações originais de ativos.
+**ativos** - Coletar representações originais de ativos.
 
 * **caminho** - Caminho para uma pasta de ativos abaixo de /content/dam.
-* **representações** - Tipo é uma matriz de cadeias de caracteres que permite que o usuário especifique quais representações usar em vez da imagem padrão. A lista a seguir resume algumas representações predefinidas, mas você também pode usar qualquer representação criada pelo fluxo de trabalho:
+* **representações** - O tipo é uma matriz de cadeias de caracteres que permite ao usuário especificar quais representações usar em vez da imagem padrão. A lista a seguir resume algumas representações predefinidas, mas você também pode usar qualquer representação criada pelo fluxo de trabalho:
 
    * *original*
    * *cq5dam.thumbnail.48.48.png*
@@ -143,42 +143,42 @@ O processamento pode variar desde a renderização de JSON simples até a render
    * *cq5dam.thumbnail.140.100.png*
    * *cq5dam.web.1280.1280.png*
 
-**imagem** - Colete uma imagem.
+**image** - Coletar uma imagem.
 
 * **caminho** - Caminho para um recurso de imagem.
 
 O tipo de imagem é usado para incluir o logotipo We.Retail no arquivo zip.
 
-**páginas** - Renderize páginas AEM e colete ativos referenciados.
+**páginas** - Renderiza páginas AEM e coleta ativos referenciados.
 
 * **caminho** - Caminho para uma página.
-* **extensão** - Extensão que deve ser usada na solicitação. Para páginas, isso é quase sempre *html*, mas outros ainda são possíveis.
+* **extensão** - Extensão que deve ser usada na solicitação. Para páginas, isso é quase sempre *html*, mas outras ainda são possíveis.
 
-* **seletor** - Seletores opcionais separados por ponto. Exemplos comuns são *toque* para renderizar versões móveis de uma página.
+* **seletor** - Seletores opcionais separados por ponto. Exemplos comuns são *touch* para renderizar versões móveis de uma página.
 
-* **profundo** - Propriedade booleana opcional que determina se as páginas secundárias também devem ser incluídas. O valor padrão é *verdadeiro.*
+* **deep** - Propriedade booleana opcional que determina se as páginas secundárias também devem ser incluídas. O valor padrão é *true.*
 
-* **includeImages** - Propriedade booleana opcional que determina se as imagens devem ser incluídas. O valor padrão é *true*.
-Por padrão, somente componentes de imagem com um tipo de recurso de fundação/componentes/imagem são considerados para inclusão. Você pode adicionar mais tipos de recursos configurando o **Manipulador de atualização de páginas WCM CQ do dia** no console da Web.
+* **includeImages** - Propriedade booleana opcional determinando se as imagens devem ser incluídas. O valor padrão é *true*.
+Por padrão, somente componentes de imagem com um tipo de recurso de fundação/componentes/imagem são considerados para inclusão. Você pode adicionar mais tipos de recursos configurando o **Manipulador de Atualização de Páginas WCM do Day CQ** no console da Web.
 
-**reescrever** - O nó rewrite define como os links são reescritos na página exportada. Os links regravados podem apontar para os arquivos incluídos no arquivo zip ou para os recursos no servidor.
+**rewrite** - O nó rewrite define como os links são reescritos na página exportada. Os links regravados podem apontar para os arquivos incluídos no arquivo zip ou para os recursos no servidor.
 
-A variável `rewrite` deve estar localizado abaixo de `page` nó.
+O nó `rewrite` deve estar localizado abaixo do nó `page`.
 
-A variável `rewrite` pode ter uma ou mais das seguintes propriedades:
+O nó `rewrite` pode ter uma ou mais das seguintes propriedades:
 
-* `clientlibs`: substitui caminhos clientlibs.
+* `clientlibs`: reescreve caminhos clientlibs.
 
-* `images`: substitui caminhos de imagens.
-* `links`: substitui caminhos de links.
+* `images`: reescreve caminhos de imagens.
+* `links`: reescreve caminhos de links.
 
 Cada propriedade pode ter um dos seguintes valores:
 
-* `REWRITE_RELATIVE`: substitui o caminho por uma posição relativa para o arquivo de página .html no sistema de arquivos.
+* `REWRITE_RELATIVE`: reescreve o caminho com uma posição relativa para o arquivo .html da página no sistema de arquivos.
 
-* `REWRITE_EXTERNAL`: reescreve o caminho apontando para o recurso no servidor, usando o AEM [Serviço externalizador](/help/sites-developing/externalizer.md).
+* `REWRITE_EXTERNAL`: reescreve o caminho apontando para o recurso no servidor, usando o [Serviço Externalizador](/help/sites-developing/externalizer.md) do AEM.
 
-O serviço AEM chamou **PathRewriterTransformerFactory** permite configurar os atributos html específicos que serão reescritos. O serviço pode ser configurado no console da Web e tem uma configuração para cada propriedade do `rewrite` nó: `clientlibs`, `images`, e `links`.
+O serviço AEM chamado **PathRewriterTransformerFactory** permite configurar os atributos html específicos que serão regravados. O serviço pode ser configurado no console da Web e tem uma configuração para cada propriedade do nó `rewrite`: `clientlibs`, `images` e `links`.
 
 Este recurso foi adicionado no AEM 5.5.
 
@@ -222,21 +222,21 @@ A listagem abaixo mostra um exemplo de configuração para a Sincronização de 
 
 **etc.designs.default e etc.designs.mobile** - As duas primeiras entradas da configuração são óbvias. Como vamos incluir várias páginas móveis, precisamos dos arquivos de design relacionados abaixo /etc/designs. E como não há necessidade de processamento adicional, a cópia é suficiente.
 
-**events.plist** - Essa entrada é um pouco especial. Conforme mencionado na introdução, o aplicativo deve fornecer uma visualização de mapa com marcadores dos locais dos eventos. Vamos fornecer as informações de localização necessárias como um arquivo separado no formato PLIST. Para que isso funcione, o componente Lista de eventos que é usado na página índice, tem um script chamado plist.jsp. Este script é executado quando o recurso do componente é solicitado com o `.plist` extensão. Como de costume, o caminho dos componentes é fornecido na propriedade path e o tipo é definido como content, pois queremos usar o processamento de solicitação do Sling.
+**events.plist** - Esta entrada é um pouco especial. Conforme mencionado na introdução, o aplicativo deve fornecer uma visualização de mapa com marcadores dos locais dos eventos. Vamos fornecer as informações de localização necessárias como um arquivo separado no formato PLIST. Para que isso funcione, o componente Lista de eventos que é usado na página índice, tem um script chamado plist.jsp. Este script é executado quando o recurso do componente é solicitado com a extensão `.plist`. Como de costume, o caminho dos componentes é fornecido na propriedade path e o tipo é definido como content, pois queremos usar o processamento de solicitação do Sling.
 
-**events.touch.html** - Em seguida, vêm as páginas reais que são mostradas no aplicativo. A propriedade path é definida como a página raiz dos eventos. Todas as páginas de eventos abaixo dessa página também são incluídas, pois o padrão da propriedade deep é true. Usamos páginas como tipo de configuração, para que todas as imagens ou outros arquivos que possam ser referenciados de uma imagem ou componente de download em uma página sejam incluídos. Além disso, definir o seletor de toque nos fornece uma versão móvel das páginas. A configuração no pacote de recursos contém mais entradas desse tipo, mas elas são deixadas de fora para simplificar aqui.
+**events.touch.html** - Em seguida, vêm as páginas reais exibidas no aplicativo. A propriedade path é definida como a página raiz dos eventos. Todas as páginas de eventos abaixo dessa página também são incluídas, pois o padrão da propriedade deep é true. Usamos páginas como tipo de configuração, para que todas as imagens ou outros arquivos que possam ser referenciados de uma imagem ou componente de download em uma página sejam incluídos. Além disso, definir o seletor de toque nos fornece uma versão móvel das páginas. A configuração no pacote de recursos contém mais entradas desse tipo, mas elas são deixadas de fora para simplificar aqui.
 
-**logotipo** - O tipo de configuração de logotipo não foi mencionado até o momento e não é nenhum dos tipos incorporados. No entanto, a estrutura de sincronização de conteúdo é extensível em algum grau, e este é um exemplo disso, que será abordado na próxima seção.
+**logotipo** - O tipo de configuração de logotipo não foi mencionado até agora e não é nenhum dos tipos de compilação. No entanto, a estrutura de sincronização de conteúdo é extensível em algum grau, e este é um exemplo disso, que será abordado na próxima seção.
 
-**manifesto** - Geralmente, é desejável ter algum tipo de metadados incluídos no arquivo zip, como a página inicial do conteúdo, por exemplo. No entanto, a codificação rígida dessas informações impede que você as altere facilmente posteriormente. A estrutura de Sincronização de Conteúdo é compatível com esse caso de uso ao procurar um nó de manifesto na configuração, que é identificado por nome e não requer um tipo de configuração. Todas as propriedades definidas nesse nó específico são adicionadas a um arquivo, que também é chamado de manifest e reside na raiz do arquivo zip.
+**manifesto** - Geralmente é desejável ter algum tipo de metadados incluídos no arquivo zip, como a página inicial do seu conteúdo, por exemplo. No entanto, a codificação rígida dessas informações impede que você as altere facilmente posteriormente. A estrutura de Sincronização de Conteúdo é compatível com esse caso de uso ao procurar um nó de manifesto na configuração, que é identificado por nome e não requer um tipo de configuração. Todas as propriedades definidas nesse nó específico são adicionadas a um arquivo, que também é chamado de manifest e reside na raiz do arquivo zip.
 
-No exemplo, a página da listagem de eventos deve ser a página inicial. Essas informações são fornecidas no **indexPage** propriedade e, portanto, podem ser facilmente alteradas a qualquer momento. Uma segunda propriedade define o caminho da variável *events.plist* arquivo. Como veremos mais tarde, o aplicativo cliente agora pode ler o manifesto e agir de acordo com ele.
+No exemplo, a página da listagem de eventos deve ser a página inicial. Essas informações são fornecidas na propriedade **indexPage** e podem ser facilmente alteradas a qualquer momento. Uma segunda propriedade define o caminho do arquivo *events.plist*. Como veremos mais tarde, o aplicativo cliente agora pode ler o manifesto e agir de acordo com ele.
 
-Quando a configuração for definida, o conteúdo poderá ser baixado com um navegador ou qualquer outro cliente HTTP, ou se você estiver desenvolvendo para iOS, poderá usar a biblioteca dedicada do cliente WAppKitSync. O local de download é composto do caminho da configuração e do *.zip* extensão, por exemplo, ao trabalhar com uma instância local do AEM: *https://localhost:4502/content/weretail_go.zip*
+Quando a configuração for definida, o conteúdo poderá ser baixado com um navegador ou qualquer outro cliente HTTP, ou se você estiver desenvolvendo para iOS, poderá usar a biblioteca dedicada do cliente WAppKitSync. O local de download é composto do caminho da configuração e da extensão *.zip*, por exemplo, ao trabalhar com uma instância de AEM local: *https://localhost:4502/content/weretail_go.zip*
 
 ### O Console de sincronização de conteúdo {#the-content-sync-console}
 
-O console de Sincronização de conteúdo lista todas as configurações de Sincronização de conteúdo no repositório (todos os nós do tipo `cq:ContentSyncConfig`) e, para cada configuração, permite fazer o seguinte:
+O console de Sincronização de Conteúdo lista todas as configurações de Sincronização de Conteúdo no repositório (todos os nós do tipo `cq:ContentSyncConfig`) e, para cada configuração, você pode fazer o seguinte:
 
 * Atualize o cache.
 * Limpe o cache.
@@ -257,12 +257,12 @@ Ela tem a seguinte aparência:
 
 Embora o número de opções de configuração já seja extenso, ele pode não abranger todos os requisitos do seu caso de uso específico. Esta seção descreve os pontos de extensão da estrutura de sincronização de conteúdo e como criar tipos de configuração personalizados.
 
-Para cada tipo de configuração, há uma variável *Manipulador de atualização de conteúdo*, que é uma fábrica de componentes OSGi registrada para esse tipo específico. Esses manipuladores coletam conteúdo, processam-no e adicionam-no a um cache mantido pela estrutura de sincronização de conteúdo. Implemente a seguinte interface ou classe base abstrata:
+Para cada tipo de configuração, há um *Manipulador de atualização de conteúdo*, que é uma fábrica de componentes OSGi registrada para esse tipo específico. Esses manipuladores coletam conteúdo, processam-no e adicionam-no a um cache mantido pela estrutura de sincronização de conteúdo. Implemente a seguinte interface ou classe base abstrata:
 
 * `com.day.cq.contentsync.handler.ContentUpdateHandler` - Interface que todos os manipuladores de atualização devem implementar
 * `com.day.cq.contentsync.handler.AbstractSlingResourceUpdateHandler` - Uma classe abstrata que simplifica a renderização de recursos usando Sling
 
-Registre sua classe como fábrica de componentes OSGi e implante-a no contêiner OSGi em um pacote. Isso pode ser feito usando o [Plug-in Maven SCR](https://felix.apache.org/documentation/subprojects/apache-felix-maven-scr-plugin/apache-felix-maven-scr-plugin-use.html) usando tags ou anotações JavaDoc. O exemplo a seguir mostra a versão do JavaDoc:
+Registre sua classe como fábrica de componentes OSGi e implante-a no contêiner OSGi em um pacote. Isso pode ser feito usando o [plug-in Maven SCR](https://felix.apache.org/documentation/subprojects/apache-felix-maven-scr-plugin/apache-felix-maven-scr-plugin-use.html) com tags ou anotações JavaDoc. O exemplo a seguir mostra a versão do JavaDoc:
 
 ```java
 /*
@@ -282,15 +282,15 @@ public class OtherTypeUpdateHandler extends AbstractSlingResourceUpdateHandler {
 }
 ```
 
-Observe que *fábrica* A definição contém a interface comum e o tipo personalizado separados por barra. Essa estratégia permite que a estrutura de sincronização de conteúdo localize e crie uma instância de sua classe personalizada, pois ela reconhece o tipo personalizado em uma entrada de configuração. A próxima seção fornece um exemplo concreto de um manipulador de atualização personalizado.
+Observe que a definição *fatory* contém a interface comum e o tipo personalizado separados por barra. Essa estratégia permite que a estrutura de sincronização de conteúdo localize e crie uma instância de sua classe personalizada, pois ela reconhece o tipo personalizado em uma entrada de configuração. A próxima seção fornece um exemplo concreto de um manipulador de atualização personalizado.
 
 >[!CAUTION]
 >
->Ao criar com base na classe base AbstractSlingResourceUpdateHandler, você deve adicionar a variável *herdar* definição. Caso contrário, o contêiner OSGi não definirá as referências necessárias declaradas na classe base.
+>Ao criar com base na classe base AbstractSlingResourceUpdateHandler, você deve adicionar a definição *inherit*. Caso contrário, o contêiner OSGi não definirá as referências necessárias declaradas na classe base.
 
 ### Implementação de um manipulador de atualização personalizado {#implementing-a-custom-update-handler}
 
-Cada página móvel do We.Retail contém um logotipo no canto superior esquerdo que gostaríamos de incluir no arquivo zip. No entanto, para otimização de cache, o AEM não faz referência à localização real do arquivo de imagem no repositório, o que nos impede de simplesmente usar o **copiar** tipo de configuração. O que devemos fazer, ao invés disso, é prover o nosso próprio **logotipo** tipo de configuração que disponibiliza a imagem no local solicitado pelo AEM. A listagem de código a seguir mostra a implementação completa do manipulador de atualização de logotipo:
+Cada página móvel do We.Retail contém um logotipo no canto superior esquerdo que gostaríamos de incluir no arquivo zip. No entanto, para otimização de cache, o AEM não faz referência à localização real do arquivo de imagem no repositório, o que nos impede de simplesmente usar o tipo de configuração **copy**. Em vez disso, devemos fornecer nosso próprio tipo de configuração de **logotipo** que disponibiliza a imagem no local solicitado pelo AEM. A listagem de código a seguir mostra a implementação completa do manipulador de atualização de logotipo:
 
 #### LogoUpdateHandler.java {#logoupdatehandler-java}
 
@@ -356,17 +356,17 @@ public class LogoUpdateHandler implements ContentUpdateHandler {
 }
 ```
 
-A variável `LogoUpdateHandler` A classe implementa o `ContentUpdateHandler` da interface `updateCacheEntry(ConfigEntry, Long, String, Session, Session)` , que aceita vários argumentos:
+A classe `LogoUpdateHandler` implementa o método `updateCacheEntry(ConfigEntry, Long, String, Session, Session)` da interface `ContentUpdateHandler`, que aceita vários argumentos:
 
-* A `ConfigEntry` instância que fornece acesso à entrada de configuração, para a qual este manipulador é chamado, e suas propriedades.
-* A `lastUpdated` carimbo de data e hora indicando a última vez que a sincronização de conteúdo atualizou seu cache. O conteúdo que não foi modificado depois desse carimbo de data e hora não deve ser atualizado pelo manipulador.
-* A `configCacheRoot` argumento que especifica o caminho raiz do cache. Todos os arquivos atualizados devem ser armazenados abaixo deste caminho para serem adicionados ao arquivo zip.
+* Uma instância `ConfigEntry` que fornece acesso à entrada de configuração, para a qual este manipulador é chamado, e suas propriedades.
+* Um carimbo de data/hora `lastUpdated` indicando a última vez que a Sincronização de Conteúdo atualizou seu cache. O conteúdo que não foi modificado depois desse carimbo de data e hora não deve ser atualizado pelo manipulador.
+* Um argumento `configCacheRoot` que especifica o caminho raiz do cache. Todos os arquivos atualizados devem ser armazenados abaixo deste caminho para serem adicionados ao arquivo zip.
 * Uma sessão administrativa que deve ser usada para todas as operações de repositório relacionadas ao cache.
 * Uma sessão de usuário que pode ser usada para atualizar o conteúdo no contexto de um determinado usuário e, portanto, fornecer um tipo de conteúdo personalizado.
 
 Para implementar o manipulador personalizado, primeiro crie uma instância da classe Image com base no recurso fornecido na entrada de configuração. Este é basicamente o mesmo procedimento que o componente de logotipo real em nossas páginas está executando. Ele garante que o caminho de destino da imagem seja o mesmo referenciado de uma página.
 
-Em seguida, verifique se o recurso foi modificado desde a última atualização. As implementações personalizadas devem evitar atualizações desnecessárias do cache e retornar falso se nada for alterado. Se o recurso foi modificado, copie a imagem para o local de destino esperado relativo à raiz do cache. Por último, `true` é retornado para indicar à estrutura que o cache foi atualizado.
+Em seguida, verifique se o recurso foi modificado desde a última atualização. As implementações personalizadas devem evitar atualizações desnecessárias do cache e retornar falso se nada for alterado. Se o recurso foi modificado, copie a imagem para o local de destino esperado relativo à raiz do cache. Finalmente, `true` é retornado para indicar à estrutura que o cache foi atualizado.
 
 ## Usar o conteúdo no cliente {#using-the-content-on-the-client}
 

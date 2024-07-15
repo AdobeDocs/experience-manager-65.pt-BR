@@ -32,7 +32,7 @@ A componente de comentários estabelece um sistema de comentários de forma que 
   </tr>
   <tr>
    <td> <a href="scf.md#add-or-include-a-communities-component"><strong>incluível</strong></a></td>
-   <td>Sim - as propriedades são editáveis no <i>design </i>modo</td>
+   <td>Sim - as propriedades são editáveis no modo <i>design </i></td>
   </tr>
   <tr>
    <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientlibs</strong></a></td>
@@ -48,7 +48,7 @@ A componente de comentários estabelece um sistema de comentários de forma que 
   </tr>
   <tr>
    <td><strong> propriedades</strong></td>
-   <td> Consulte <a href="comments.md">Uso de comentários</a></td>
+   <td> Ver <a href="comments.md">Usando Comentários</a></td>
   </tr>
  </tbody>
 </table>
@@ -80,22 +80,22 @@ Isso se aplica a qualquer componente que estende um sistema de comentários.
 
 * [API de comentários](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/commons/comments/api/package-summary.html)
 
-* [Endpoints de comentários](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/commons/comments/endpoints/package-summary.html)
+* [Pontos de Extremidade de Comentários](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/commons/comments/endpoints/package-summary.html)
 
 * [Personalizações do lado do servidor](server-customize.md)
 
 ### Acesso a comentários publicados (UGC) {#accessing-posted-comments-ugc}
 
 A UGC deve ser moderada usando um dos métodos padrão para moderação.
-Consulte [Moderação de conteúdo gerado pelo usuário](moderate-ugc.md).
+Consulte [Moderando Conteúdo Gerado Pelo Usuário](moderate-ugc.md).
 
-A partir do AEM 6.1 Communities, o uso de um [armazenamento comum](working-with-srp.md) O para UGC inclui acesso programático ao UGC, independentemente da opção de armazenamento escolhida (como ASRP, MSRP ou JSRP).
+Desde o AEM 6.1 Communities, o uso de um [armazenamento comum](working-with-srp.md) para UGC inclui acesso programático a UGC, independentemente da opção de armazenamento escolhida (como ASRP, MSRP ou JSRP).
 
 **A localização e o formato do UGC no repositório estão sujeitos a alterações sem aviso**.
 
 Consulte:
 
-* [Visão geral do provedor de recursos de armazenamento](srp.md) - Introdução e visão geral do uso do repositório.
-* [Fundamentos de SRP e UGC](srp-and-ugc.md) - Métodos e exemplos do utilitário SRP.
-* [Acesso ao UGC com SRP](accessing-ugc-with-srp.md) - Diretrizes de codificação.
-* [Refatoração de SocialUtils](socialutils.md) - Mapeamento de métodos de utilitário obsoletos para métodos de utilitário SRP atuais.
+* [Visão Geral do Provedor de Recursos de Armazenamento](srp.md) - Introdução e visão geral do uso do repositório.
+* [Fundamentos do SRP e do UGC](srp-and-ugc.md) - Métodos e exemplos do utilitário SRP.
+* [Acessando UGC com SRP](accessing-ugc-with-srp.md) - Diretrizes de codificação.
+* [Refatoração de SocialUtils](socialutils.md) - Mapeando métodos de utilitário obsoletos para métodos de utilitário SRP atuais.

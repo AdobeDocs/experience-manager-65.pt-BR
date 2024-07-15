@@ -24,7 +24,7 @@ O recurso de limites de contribuição permite limitar as contribuições dos me
 
 Quando um membro é limitado, qualquer postagem que exceda o número permitido de contribuições resulta em um alerta de que o limite foi excedido e a postagem é rejeitada. O membro da comunidade pode então ir para o centro de mensagens da comunidade e entrar em contato com um gerente da comunidade que pode remover os limites, se apropriado.
 
-Os limites de contribuição podem ser habilitados individualmente do [Console de membros](members.md) e/ou configurada para ser ativada automaticamente quando os visitantes do site se tornarem novos membros.
+Os limites de contribuição podem ser habilitados individualmente no [console Membros](members.md) e/ou configurados para serem habilitados automaticamente quando os visitantes do site se tornarem novos membros.
 
 Usando o console Membros, os limites de contribuição podem ser removidos de forma proativa para um membro por um gerente da comunidade a qualquer momento, ou removidos de forma reativa quando um membro envia uma mensagem a um gerente da comunidade que faz essa solicitação.
 
@@ -47,9 +47,9 @@ Para acessar essa configuração OSGi:
 * Localizar `AEM Communities User Generated Content Contribution Limits Configuration`.
 * Selecione o ícone de edição.
 
-![configure-limits](assets/configure-limits.png)
+![configurar-limites](assets/configure-limits.png)
 
-* **[!UICONTROL Aplicar automaticamente limites de contribuição de UGC]**
+* **[!UICONTROL Aplicar automaticamente os limites de contribuição de UGC]**
 
   Se marcadas, definem automaticamente limites de contribuição para os usuários quando eles se registrarem como membros da comunidade. Isso é refletido no perfil do membro da comunidade e pode ser ativado/desativado no [console de membros](members.md). Novos membros com um endereço de email de um incluo na lista de permissões de domínios nunca são restritos.
 
@@ -61,7 +61,7 @@ Para acessar essa configuração OSGi:
 
   O padrão é dez postagens.
 
-* **[!UICONTROL Frequência limite de UGC]**
+* **[!UICONTROL Frequência Limite de UGC]**
 
   O período que restringe o limite de UGC.
 
@@ -71,11 +71,11 @@ Para acessar essa configuração OSGi:
 
   Uma lista de inclui na lista de permissões de um ou mais domínios de email. Selecione o ícone + para criar entradas adicionais.
 
-  Incluir na lista de permissões Os usuários com endereços de email na pesquisa de domínios não são afetados quando os limites de contribuição UGC são aplicados automaticamente. Por exemplo, se o domínio `mycompany.com` é adicionado à lista de domínios e, em seguida, um membro com endereço de email `me@mycompany.com` nunca está restrito ao lançamento.
+  Incluir na lista de permissões Os usuários com endereços de email na pesquisa de domínios não são afetados quando os limites de contribuição UGC são aplicados automaticamente. Por exemplo, se o domínio `mycompany.com` for adicionado à lista de domínios, um membro com endereço de email `me@mycompany.com` nunca será impedido de postar.
 
   O padrão é uma inclui na lista de permissões vazia.
 
-* **[!UICONTROL Destinatários de mensagens]**
+* **[!UICONTROL Destinatários de Mensagens]**
 
   Lista de uma ou mais IDs autorizadas de membros que podem modificar os limites de contribuição para membros. Selecione o ícone + para criar entradas adicionais.
 

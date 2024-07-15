@@ -37,7 +37,7 @@ Ao criar uma configuração de blueprint, você seleciona um modelo que define a
 Após criar a configuração de blueprint, configure as seguintes propriedades:
 
 * **Nome**: o nome da configuração de blueprint.
-* **Caminho de origem**: o caminho da página raiz do site que você está usando como origem (blueprint).
+* **Caminho do Source**: o caminho da página raiz do site que você está usando como origem (blueprint).
 * **Descrição**. (Opcional) Uma descrição da configuração de blueprint. A descrição é exibida na lista de configurações de blueprint para escolher ao criar um site.
 
 Quando sua configuração de blueprint é usada, você pode associá-la a uma configuração de implantação que determina como as live copies da origem/blueprint são sincronizadas. Consulte [Especificar as configurações de implantação a serem usadas](/help/sites-administering/msm-sync.md#specifying-the-rollout-configurations-to-use).
@@ -86,14 +86,14 @@ Para criar uma configuração de blueprint:
 
 É possível criar uma Live Copy de qualquer página:
 
-* Páginas referenciadas por um [configuração do blueprint](#creating-a-blueprint-configuration).
+* Páginas referenciadas por uma [configuração de blueprint](#creating-a-blueprint-configuration).
 * E páginas que não têm conexão com uma configuração.
 * O AEM também permite criar uma live copy nas páginas de outra live copy.
 
 A única diferença é que a disponibilidade do comando **Implantação** nas páginas de origem/blueprint depende da origem ser ou não referenciada por uma configuração de blueprint:
 
-* Se você criar a live copy a partir de uma página de origem que **é** referenciado em uma configuração de blueprint, o comando Implantação estará disponível nas páginas de origem/blueprint.
-* Se você criar a live copy a partir de uma página de origem que **não é** referenciado em uma configuração de blueprint, o comando Implantação não estará disponível nas páginas de origem/blueprint.
+* Se você criar a Live Copy a partir de uma página de origem que **é** referenciada em uma configuração de blueprint, o comando Implantação estará disponível nas páginas de origem/blueprint.
+* Se você criar a Live Copy a partir de uma página de origem que **não é** referenciada em uma configuração de blueprint, o comando Implantação não estará disponível nas páginas de origem/blueprint.
 
 Para criar uma live copy:
 
@@ -101,11 +101,11 @@ Para criar uma live copy:
 
    ![Criar Live Copy](assets/chlimage_1-212.png)
 
-1. Selecione a página de origem e clique em **Próxima**. Por exemplo:
+1. Selecione a página de origem e clique em **Avançar**. Por exemplo:
 
    ![Selecionar página de origem](assets/chlimage_1-213.png)
 
-1. Especifique o caminho de destino da live copy (abra a pasta/página principal da live copy) e clique em **Próxima**.
+1. Especifique o caminho de destino da live copy (abra a pasta/página pai da live copy) e clique em **Avançar**.
 
    ![Especificar destino](assets/chlimage_1-214.png)
 
@@ -118,21 +118,21 @@ Para criar uma live copy:
    * um **Título** para a página.
    * um **Nome**, que é usado no URL.
 
-   ![Inserir título e nome](assets/chlimage_1-215.png)
+   ![Insira o título e o nome](assets/chlimage_1-215.png)
 
 1. Use a caixa de seleção **Excluir subpáginas**:
 
    * Selecionado: cria uma live copy somente da página selecionada (live copy superficial)
    * Não selecionado: cria uma live copy que inclui todos os descendentes da página selecionada (live copy profunda)
 
-1. (Opcional) Para especificar uma ou mais configurações de implantação a serem usadas para a live copy, use o **Configurações de implantação** para selecioná-las; as configurações selecionadas são mostradas abaixo do seletor suspenso.
+1. (Opcional) Para especificar uma ou mais configurações de implantação a serem usadas na live copy, use a lista suspensa **Configurações de implantação** para selecioná-las; as configurações selecionadas são mostradas abaixo do seletor suspenso.
 1. Clique em **Criar**. Uma mensagem de confirmação será exibida, e daqui será possível selecionar **Abrir** ou **Concluído**.
 
 ### Criação de uma Live Copy de um site a partir de uma configuração de blueprint {#creating-a-live-copy-of-a-site-from-a-blueprint-configuration}
 
 Crie uma live copy usando uma configuração de blueprint para criar um site com base no conteúdo do blueprint (origem). Ao criar uma live copy a partir de uma configuração de blueprint, você seleciona uma ou mais ramificações de idioma para serem copiadas da origem do blueprint e, em seguida, seleciona os capítulos a serem copiados das ramificações de idioma. Consulte [Criação de uma configuração de blueprint](/help/sites-administering/msm-livecopy.md#creating-a-blueprint-configuration).
 
-Se omitir algumas ramificações de idioma ou capítulos da live copy, você poderá adicioná-los posteriormente; consulte [Criação de uma Live Copy dentro de uma Live Copy (configuração de blueprint)](#creating-a-live-copy-inside-a-live-copy-blueprint-configuration).
+Se omitir algumas ramificações de idioma ou capítulos da live copy, você poderá adicioná-los mais tarde; consulte [Criação de uma Live Copy dentro de uma Live Copy (configuração de blueprint)](#creating-a-live-copy-inside-a-live-copy-blueprint-configuration).
 
 >[!CAUTION]
 >
@@ -142,29 +142,29 @@ Ao criar o site, forneça valores para as seguintes propriedades:
 
 * **Idiomas iniciais**: as ramificações de idioma da origem do blueprint a serem incluídas na live copy.
 * **Capítulos iniciais**: as páginas secundárias das ramificações de idioma do blueprint a serem incluídas na live copy.
-* **Caminho de destino**: o local da página raiz do site de live copy.
-* **Título**: o título da página raiz do site de live copy.
+* **Caminho de Destino**: o local da página raiz do site de live copy.
+* **Título**: o título da página raiz do site live copy.
 * **Nome**: (opcional) o nome do nó JCR que armazena a página raiz da live copy. O valor padrão é baseado no título.
-* **Proprietário do site**: (Opcional)
+* **Proprietário do Site**: (Opcional)
 * **Live Copy**: selecione essa opção para estabelecer uma relação dinâmica com o site de origem. Se essa opção não for selecionada, uma cópia do blueprint será criada, mas não será sincronizada com a origem na sequência.
 * **Configurações de implantação**: (opcional) selecione uma ou mais configurações de implantação a serem usadas para sincronizar a live copy. Por padrão, as configurações de implantação são herdadas do blueprint; consulte [Especificar as configurações de implantação a serem usadas](/help/sites-administering/msm-sync.md#specifying-the-rollout-configurations-to-use) para obter mais detalhes.
 
 Para criar uma Live Copy de um site a partir de uma configuração de blueprint:
 
 1. No console dos **Sites**, selecione **Criar** e, em seguida, **Site** no seletor da lista suspensa.
-1. Selecione a configuração de blueprint a ser usada como origem da live copy e prossiga com **Próxima**:
+1. Selecione a configuração de blueprint a ser usada como origem da live copy e prossiga com **Próximo**:
 
    ![Selecione a configuração de blueprint como origem da live copy](assets/blueprint-configuration-select.png)
 
-1. Use o **Idiomas iniciais** seletor para especificar os idiomas do site do blueprint a serem usados na live copy.
+1. Use o seletor **Idiomas iniciais** para especificar os idiomas do site do blueprint a serem usados na live copy.
 
-   Todos os idiomas disponíveis estão selecionados por padrão. Para remover um idioma, clique no link **X** que aparece ao lado do idioma.
+   Todos os idiomas disponíveis estão selecionados por padrão. Para remover um idioma, clique no **X** que aparece ao lado do idioma.
 
    Por exemplo:
 
-   ![Selecionar idiomas iniciais](assets/chlimage_1-217.png)
+   ![Selecionar Idiomas Iniciais](assets/chlimage_1-217.png)
 
-1. Use o **Capítulos iniciais** para selecionar as seções do blueprint que serão incluídas na live copy. Novamente, todos os capítulos disponíveis são incluídos por padrão, mas podem ser removidos.
+1. Use a lista suspensa **Capítulos iniciais** para selecionar as seções do blueprint que serão incluídas na live copy. Novamente, todos os capítulos disponíveis são incluídos por padrão, mas podem ser removidos.
 1. Forneça valores para as propriedades restantes e selecione **Criar**. Na caixa de diálogo de confirmação, selecione **Concluído** para retornar ao console do **Sites** ou **Abrir site** para abrir a página raiz do site.
 
 ### Criação de uma Live Copy dentro de uma Live Copy (configuração do blueprint) {#creating-a-live-copy-inside-a-live-copy-blueprint-configuration}
@@ -177,7 +177,7 @@ Ao criar uma live copy dentro da live copy existente (criada usando uma configur
 
 As propriedades de uma página de live copy mostram as seguintes informações sobre a live copy:
 
-* **Origem**: a página de origem da página de live copy.
+* **Source**: a página de origem da página de live copy.
 * **Status**: o status de sincronização da live copy. O status inclui se a live copy está atualizada em relação à origem, quando a última sincronização ocorreu e quem executou a sincronização.
 * **Configuração**:
 
@@ -187,7 +187,7 @@ As propriedades de uma página de live copy mostram as seguintes informações s
 
 Para exibir as propriedades:
 
-1. No **Sites** selecione a página live copy e abra as propriedades.
+1. No console **Sites**, selecione a página live copy e abra as propriedades.
 1. Selecione a guia **Live Copy**.
 
    Por exemplo:
@@ -196,7 +196,7 @@ Para exibir as propriedades:
 
    >[!NOTE]
    >
-   >Para obter mais detalhes, consulte também o artigo da Base de conhecimento [Mensagem de status da Live Copy - Atualizada/Verde/Em sincronia](https://helpx.adobe.com/experience-manager/kb/livecopy-status-message---up-to-date-green-in-sync.html).
+   >Para obter mais detalhes, consulte também o artigo da Base de Dados de Conhecimento [Mensagem de status da Live Copy - Atualizada/Verde/Em sincronia](https://helpx.adobe.com/experience-manager/kb/livecopy-status-message---up-to-date-green-in-sync.html).
 
 ### Visualizar as Live Copies de uma página de blueprint {#seeing-the-live-copies-of-a-blueprint-page}
 
@@ -233,7 +233,7 @@ Implante uma página de blueprint para enviar alterações de conteúdo para liv
 
    ![Blueprint de implantação](assets/rollout-blueprint.png)
 
-As implantações são processadas como trabalhos assíncronos e podem ser verificadas no [**Status de trabalhos assíncronos** painel](asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) em **Navegação global** > **Ferramentas** > **Operações** > **Tarefas**
+As implantações são processadas como trabalhos assíncronos e podem ser verificadas no painel [**Status dos Trabalhos Assíncronos**](asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) em **Navegação Global** > **Ferramentas** > **Operações** > **Trabalhos**
 
 >[!NOTE]
 >
@@ -259,15 +259,15 @@ As implantações são processadas como trabalhos assíncronos e podem ser verif
 
 1. Depois de confirmar esses detalhes, selecione **Implantação** para executar a ação.
 
-As implantações são processadas como trabalhos assíncronos e podem ser verificadas no [**Status de trabalhos assíncronos** painel](asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) em **Navegação global** > **Ferramentas** > **Operações** > **Tarefas**
+As implantações são processadas como trabalhos assíncronos e podem ser verificadas no painel [**Status dos Trabalhos Assíncronos**](asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) em **Navegação Global** > **Ferramentas** > **Operações** > **Trabalhos**
 
 >[!NOTE]
 >
->O processamento assíncrono de implantação requer AEM 6.5.3.0 ou superior. Em versões anteriores, as páginas eram processadas de forma imediata e síncrona, a menos que o **Implantação do plano de fundo** opção foi marcada.
+>O processamento assíncrono de implantação requer AEM 6.5.3.0 ou superior. Nas versões anteriores, as páginas eram processadas de forma imediata e síncrona, a menos que a opção **implantação do plano de fundo** estivesse marcada.
 
 #### Implantar um blueprint a partir de uma visão geral da Live Copy {#roll-out-a-blueprint-from-the-live-copy-overview}
 
-A variável [A ação de implantação também está disponível na visão geral da Live Copy](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview), quando uma página do Blueprint é selecionada.
+A [ação de Implantação também está disponível na visão geral da Live Copy](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview), quando uma página do blueprint é selecionada.
 
 1. Abra a [Visão geral da Live Copy](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview) e selecione uma página do blueprint.
 1. Selecione **Implantação** na barra de ferramentas.
@@ -279,7 +279,7 @@ A variável [A ação de implantação também está disponível na visão geral
 
    ![Blueprint de implantação](assets/rollout-blueprint.png)
 
-As implantações são processadas como trabalhos assíncronos e podem ser verificadas no [**Status de trabalhos assíncronos** painel](asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) em **Navegação global** > **Ferramentas** > **Operações** > **Tarefas**
+As implantações são processadas como trabalhos assíncronos e podem ser verificadas no painel [**Status dos Trabalhos Assíncronos**](asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) em **Navegação Global** > **Ferramentas** > **Operações** > **Trabalhos**
 
 >[!NOTE]
 >
@@ -297,7 +297,7 @@ Sincronize uma live copy para extrair as alterações da origem para a live copy
 >
 >A sincronização executa as configurações de implantação que usam o acionador [Na implantação](/help/sites-administering/msm-sync.md#rollout-triggers).
 
-1. No **Sites** selecione a página live copy e abra as propriedades.
+1. No console **Sites**, selecione a página live copy e abra as propriedades.
 1. Abra a guia **Live Copy**.
 1. Clique em **Sincronizar**.
 
@@ -356,22 +356,22 @@ Você pode suspender a herança da live copy de uma página de live copy para po
 
 >[!NOTE]
 >
->Também é possível [desanexar uma live copy](#detaching-a-live-copy) do blueprint para remover todas as conexões. A ação Desconectar é permanente e irreversível.
+>Você também pode [desanexar uma live copy](#detaching-a-live-copy) do blueprint para remover todas as conexões. A ação Desconectar é permanente e irreversível.
 
 >[!NOTE]
 >
->Se o componente estiver marcado como um contêiner, as ações de cancelamento e suspensão não se aplicam aos componentes filho. Consulte também [Práticas recomendadas do MSM](/help/sites-administering/msm-best-practices.md#components-and-container-synchronization) para obter informações adicionais.
+>Se o componente estiver marcado como um contêiner, as ações de cancelamento e suspensão não se aplicam aos componentes filho. Consulte também [Práticas recomendadas do MSM](/help/sites-administering/msm-best-practices.md#components-and-container-synchronization) para obter mais informações.
 
 #### Suspensão da herança das propriedades da página {#suspending-inheritance-from-page-properties}
 
 Para suspender a herança em uma página:
 
-1. Abra as propriedades da página de live copy usando o **Propriedades da exibição** comando do **Sites** console ou usando **Informações da página** na barra de ferramentas da página.
-1. Clique em **Live Copy** guia.
+1. Abra as propriedades da página de live copy usando o comando **Propriedades de Exibição** do console **Sites** ou usando as **Informações da Página** na barra de ferramentas da página.
+1. Clique na guia **Live Copy**.
 1. Selecione **Suspender** na barra de ferramentas. Em seguida, é possível selecionar:
 
    * **Suspender**: somente página atual
-   * **Suspender com secundários**: a página atual junto com qualquer página secundária
+   * **Suspender com filhos**: a página atual junto com qualquer página secundária
 
 1. Selecione **Suspender** na caixa de diálogo de confirmação.
 
@@ -420,7 +420,7 @@ Quando selecionada, a caixa de diálogo é exibida. Você pode selecionar uma si
 
 A [ação Retomar também está disponível na visão geral da Live Copy](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview), quando uma página de Live Copy é selecionada.
 
-1. Abra o [Visão geral da Live Copy](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview) e selecione uma Página de Live Copy que foi suspensa; ela será exibida como **HERANÇA CANCELADA**.
+1. Abra a [Visão geral da Live Copy](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview) e selecione uma Página de Live Copy que foi suspensa; ela será exibida como **HERANÇA CANCELADA**.
 1. Selecione **Retomar** na barra de ferramentas.
 1. Indique se você deseja sincronizar a página após reverter a herança e, em seguida, confirme a ação **Retomar** na caixa de diálogo **Retomar Live Copy**.
 
@@ -447,8 +447,8 @@ Em uma live copy existente, é possível alterar a profundidade de uma página, 
 
 Para especificar ou alterar a profundidade:
 
-1. Abra as propriedades da página de live copy usando o **Propriedades da exibição** comando do **Sites** console ou usando **Informações da página** na barra de ferramentas da página.
-1. Clique em **Live Copy** guia.
+1. Abra as propriedades da página de live copy usando o comando **Propriedades de Exibição** do console **Sites** ou usando as **Informações da Página** na barra de ferramentas da página.
+1. Clique na guia **Live Copy**.
 1. Na seção **Configuração**, defina ou limpe a opção **Herança da Live Copy** dependendo se as páginas filhas estão incluídas:
 
    * marcado - uma live copy profunda (as páginas secundárias estão incluídas)
@@ -460,7 +460,7 @@ Para especificar ou alterar a profundidade:
    >
    >Consulte [Live Copies — Composição](/help/sites-administering/msm.md#live-copies-composition) para obter mais informações.
 
-1. Clique em **Salvar** para continuar com suas atualizações.
+1. Clique em **Salvar** para manter suas atualizações.
 
 ### Cancelar herança de um Componente {#cancelling-inheritance-for-a-component}
 
@@ -468,7 +468,7 @@ Cancele a herança da live copy de um componente para que ele não seja mais sin
 
 >[!NOTE]
 >
->Se o componente estiver marcado como um contêiner, as ações de cancelamento e suspensão não se aplicam aos componentes filho. Consulte também [Práticas recomendadas do MSM](/help/sites-administering/msm-best-practices.md#components-and-container-synchronization) para obter informações adicionais.
+>Se o componente estiver marcado como um contêiner, as ações de cancelamento e suspensão não se aplicam aos componentes filho. Consulte também [Práticas recomendadas do MSM](/help/sites-administering/msm-best-practices.md#components-and-container-synchronization) para obter mais informações.
 
 >[!NOTE]
 >
@@ -478,9 +478,9 @@ Cancelar a herança para alterar o conteúdo do componente ou excluir o componen
 
 1. Clique no componente para o qual deseja cancelar a herança.
 
-   ![Selecionar componente para cancelar a ação de herança](assets/chlimage_1-230.png)
+   ![Selecionar componente para ação cancelar herança](assets/chlimage_1-230.png)
 
-1. Na barra de ferramentas do componente, clique na guia **Cancelar herança** ícone.
+1. Na barra de ferramentas do componente, clique no ícone **Cancelar herança**.
 
    ![Cancelar herança](do-not-localize/chlimage_1-8.png)
 
@@ -490,9 +490,9 @@ Cancelar a herança para alterar o conteúdo do componente ou excluir o componen
 
 ### Ativar novamente a herança de um componente {#re-enabling-inheritance-for-a-component}
 
-Para habilitar a herança de um componente, clique no **Reativar herança** ícone na barra de ferramentas do componente.
+Para habilitar a herança de um componente, clique no ícone **Reabilitar herança** na barra de ferramentas do componente.
 
-![Reativar herança](do-not-localize/chlimage_1-9.png)
+![Reabilitar herança](do-not-localize/chlimage_1-9.png)
 
 ### Alterar a ordem dos componentes em uma página de Live Copy {#changing-the-order-of-components-on-a-live-copy-page}
 
@@ -530,16 +530,16 @@ Posteriormente, você pode reativar a herança de uma propriedade, se necessári
 >
 >Quando você reativa a herança, a propriedade da página de live copy não é sincronizada automaticamente com a propriedade de origem. Você pode solicitar manualmente uma sincronização, se necessário.
 
-1. Abra as propriedades da página de live copy usando a tag **Propriedades da exibição** opção do **Sites** console ou **Informações da página** ícone na barra de ferramentas da página.
+1. Abra as propriedades da página de live copy usando a opção **Exibir Propriedades** do console **Sites** ou o ícone **Informações da Página** na barra de ferramentas da página.
 1. Para cancelar a herança de uma propriedade, clique no ícone de link exibido à direita da propriedade.
 
    ![Cancelar herança da propriedade](do-not-localize/chlimage_1-10.png)
 
-1. No **Cancelar herança** caixa de diálogo de confirmação, clique **Sim**.
+1. Na caixa de diálogo de confirmação **Cancelar Herança**, clique em **Sim**.
 
 ### Reverter propriedades de uma página Live Copy {#revert-properties-of-a-live-copy-page}
 
-Para ativar a herança de uma propriedade, clique no link **Reverter herança** ícone que aparece ao lado da propriedade.
+Para habilitar a herança de uma propriedade, clique no ícone **Reverter herança** que aparece ao lado da propriedade.
 
 ![Reverter herança](do-not-localize/chlimage_1-11.png)
 
@@ -554,7 +554,7 @@ A redefinição afeta as alterações feitas nas propriedades da página, no sis
 
 #### Redefinir uma página Live Copy a partir das propriedades da página {#reset-a-live-copy-page-from-the-page-properties}
 
-1. No **Sites** selecione a página live copy e selecione **Propriedades da exibição**.
+1. No console **Sites**, selecione a página live copy e selecione **Exibir Propriedades**.
 1. Abra a guia **Live Copy**.
 1. Selecione **Redefinir** na barra de ferramentas.
 
@@ -564,28 +564,28 @@ A redefinição afeta as alterações feitas nas propriedades da página, no sis
 
 #### Redefinir uma página Live Copy a partir da Visão geral da Live Copy {#reset-a-live-copy-page-from-the-live-copy-overview}
 
-A variável [A ação de redefinição também está disponível na visão geral da Live Copy](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview), quando uma página de Live Copy é selecionada.
+A [ação Redefinir também está disponível na Visão geral da Live Copy](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview), quando uma página de Live Copy é selecionada.
 
 1. Abra a [Visão geral da Live Copy](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview) e selecione uma página Live Copy.
 1. Selecione **Redefinir** na barra de ferramentas.
 1. Confirme a ação **Redefinir** na caixa de diálogo **Redefinir Live Copy**:
 
-   ![Confirmar redefinição](assets/chlimage_1-234.png)
+   ![Confirmar Redefinição](assets/chlimage_1-234.png)
 
 ## Comparação de uma página Live Copy com uma página de blueprint {#comparing-a-live-copy-page-with-a-blueprint-page}
 
-Para acompanhar as alterações feitas, é possível exibir a página do blueprint em **Referências** e compare-o com a página da live copy:
+Para acompanhar as alterações feitas, é possível exibir a página do blueprint em **Referências** e compará-la com a página live copy:
 
-1. No **Sites** console, [navegue até uma página de blueprint ou live copy e selecione-a](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
-1. Abra o **[Referências](/help/sites-authoring/basic-handling.md#references)** e selecione:
+1. No console **Sites**, [navegue até uma página de blueprint ou Live Copy e selecione-a](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
+1. Abra o painel **[Referências](/help/sites-authoring/basic-handling.md#references)** e selecione:
 
-   * **Blueprint** (quando uma página de live copy é selecionada)
-   * **Live Copies** (quando uma página do blueprint é selecionada)
+   * **Blueprint** (quando uma página de live copy foi selecionada)
+   * **Live Copies** (quando uma página de blueprint é selecionada)
 
 1. Selecione a live copy específica e:
 
    * **Comparar ao Blueprint** (quando uma página de live copy é selecionada)
-   * **Comparar à Live Copy** (quando uma página do blueprint é selecionada)
+   * **Comparar à Live Copy** (quando uma página de blueprint é selecionada)
 
    Por exemplo:
 
@@ -603,7 +603,7 @@ Desanexar remove permanentemente o relacionamento dinâmico entre uma live copy 
 >
 >Não é possível restabelecer o relacionamento dinâmico após desanexar a live copy.
 >
->Para remover o relacionamento dinâmico com a opção de reinstalação posterior, é possível [cancelar herança da live copy](#suspending-inheritance-for-a-page) para a página.
+>Para remover o relacionamento dinâmico com a opção de reinstalação posterior, você pode [cancelar a herança da live copy](#suspending-inheritance-for-a-page) para a página.
 
 Há implicações com relação ao local na árvore em que você usa **Desanexar**:
 
@@ -611,7 +611,7 @@ Há implicações com relação ao local na árvore em que você usa **Desanexar
 
   Quando essa operação é executada na página raiz de uma live copy, ela remove o relacionamento dinâmico entre todas as páginas do blueprint e sua live copy.
 
-  Mais alterações em páginas no blueprint (como estava) **não** afetar a livecopy (como estava).
+  Demais alterações em páginas no blueprint (como estava) **não** afetarão a livecopy (como estava).
 
 * **Desanexar em uma subpágina de uma Live Copy**
 
@@ -636,7 +636,7 @@ Há implicações com relação ao local na árvore em que você usa **Desanexar
 
 Para desanexar uma live copy:
 
-1. No **Sites** selecione a página live copy e clique em **Propriedades da exibição**.
+1. No console do **Sites**, selecione a página live copy e clique em **Exibir Propriedades**.
 1. Abra a guia **Live Copy**.
 1. Na barra de ferramentas, selecione **Desanexar**.
 
@@ -652,4 +652,4 @@ A [ação de desconectar também está disponível na visão geral da Live Copy]
 1. Selecione **Desconectar** na barra de ferramentas.
 1. Confirme a ação **Desconectar** na caixa de diálogo **Desconectar Live Copy**:
 
-   ![Confirmar desanexação](assets/chlimage_1-237.png)
+   ![Confirmar Desanexação](assets/chlimage_1-237.png)

@@ -23,7 +23,7 @@ ht-degree: 15%
 | AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/home.html) |
 | AEM 6.5 | Este artigo |
 
-Para obter informações sobre os recursos e aprimoramentos mais recentes do AEM Forms, consulte [Novidades do AEM Forms](../../forms/using/whats-new.md).
+Para obter informações sobre os recursos e aprimoramentos mais recentes do AEM Forms, consulte [Novidades no AEM Forms](../../forms/using/whats-new.md).
 
 ## Sobre o AEM Forms {#about-aem-forms}
 
@@ -39,7 +39,7 @@ O AEM Forms fornece ferramentas de gerenciamento de formulários que permitem n�
 >
 >O recurso de formulários adaptáveis, disponível no [Início rápido do AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=pt-BR), foi projetado apenas para fins de exploração e avaliação. Para usá-lo na produção, é essencial obter uma licença válida para o AEM Forms, pois a funcionalidade de formulários adaptáveis requer uma licença adequada.
 
-![Recursos de formulários AEM](do-not-localize/4th-draft-updated.gif)
+![recursos de formulários AEM](do-not-localize/4th-draft-updated.gif)
 
 ### Principais recursos {#key-capabilities}
 
@@ -64,7 +64,7 @@ O AEM Forms permite estender formulários novos e existentes para criar:
 
 Os PDF forms podem ser preenchidos off-line, salvos localmente e os dados do formulário podem ser enviados quando você estiver on-line. Você pode usar códigos de barras 2D para capturar dados de formulário e usar assinaturas digitais para validar a autenticidade para os usuários.
 
-**formulários HTML**
+**formulários de HTML**
 
 Os formulários baseados em navegador do HTML5 podem ser visualizados em dispositivos móveis e navegadores de desktop. Você pode assinar eletronicamente os formulários HTML usando os serviços Scribble ou eSign.
 
@@ -89,7 +89,7 @@ Todos os tipos de formulários são compatíveis com os seguintes recursos:
 
 Depois que os dados de formulário são enviados, o Adobe Experience Manager conecta os dados de formulário com os sistemas existentes, as regras de negócios e as pessoas necessárias.
 
-A AEM Forms fornece o Forms Workspace, um aplicativo móvel que estende seus processos de negócios digitais para dispositivos móveis. Usando o Forms Workspace, você pode coletar e registrar dados mesmo quando estiver offline. O Forms Workspace usa os recursos do seu dispositivo móvel e permite capturar fotos, vídeos e coletar dados, como carimbos de data e hora e outras informações. Na próxima vez que você se conectar a uma rede, poderá sincronizar os dados coletados.
+A AEM Forms fornece o Forms Workspace, um aplicativo móvel que estende os processos de negócios digitais para dispositivos móveis. Usando o Forms Workspace, você pode coletar e registrar dados mesmo quando estiver offline. O Forms Workspace usa os recursos do seu dispositivo móvel e permite capturar fotos, vídeos e coletar dados, como carimbos de data e hora e outras informações. Na próxima vez que você se conectar a uma rede, poderá sincronizar os dados coletados.
 
 Capturar dados offline e sincronizá-los na próxima vez que você voltar online é especialmente útil para as pessoas no campo. Aumenta a produtividade e reduz erros.
 
@@ -103,7 +103,7 @@ Capturar dados offline e sincronizá-los na próxima vez que você voltar online
 * Painéis personalizáveis para obter insights em tempo real sobre as operações de negócios
 * API para conexão com ferramentas de relatórios de terceiros
 
-![Terceira versão](do-not-localize/3rd-draft.gif)
+![Terceiro rascunho](do-not-localize/3rd-draft.gif)
 
 ## Comunicação personalizada {#personalized-communication}
 

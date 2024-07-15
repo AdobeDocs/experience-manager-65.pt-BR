@@ -35,7 +35,7 @@ A tabela a seguir especifica o suporte ao recurso fornecido para formulários HT
   </tr>
   <tr>
    <td>Campo de assinatura<br /> </td>
-   <td><strong>Assinaturas digitais</strong> não são compatíveis, mas uma nova <strong>Rabiscar a assinatura</strong> é adicionado para assinaturas tipo papel. É possível rabiscar a assinatura no formulário usando o <strong>Rabiscar a assinatura</strong> campo. A assinatura é salva no formulário como uma imagem. É possível salvar informações de geolocalização na <strong>Rabiscar a assinatura</strong> campo.</td>
+   <td>Não há suporte para <strong>Assinaturas Digitais</strong>, mas um novo campo <strong>Assinatura Escrita</strong> foi adicionado para assinaturas tipo papel. É possível criar assinatura com script no formulário usando o campo <strong>Assinatura com Rabisco</strong>. A assinatura é salva no formulário como uma imagem. Você pode salvar informações de localização geográfica no campo <strong>Assinatura Escrita</strong>.</td>
    <td>Campo de assinatura disponível para <strong>Assinaturas digitais</strong>.</td>
   </tr>
   <tr>
@@ -45,17 +45,17 @@ A tabela a seguir especifica o suporte ao recurso fornecido para formulários HT
   </tr>
   <tr>
    <td>Imagens</td>
-   <td>O esquema do URI de dados é usado para exibir imagens. Todas as versões modernas de navegadores suportam esse esquema, mas há diferenças na variedade de formatos de imagem compatíveis com cada navegador.<br /> </td>
+   <td>O esquema do URI de dados é usado para exibir imagens. Todas as versões modernas dos navegadores oferecem suporte a esse esquema, mas há diferenças no intervalo de formatos de imagem que cada navegador aceita.<br /> </td>
    <td>Os formatos .gif, .png, .jpeg, .bmp e .tiff são suportados.</td>
   </tr>
   <tr>
    <td>Paginação<br /> </td>
-   <td><p>Um formulário HTML é dividido em painéis e caixas para dar-lhe uma aparência semelhante a PDF forms. O tamanho da página é calculado dinamicamente. Se todo o conteúdo de uma página em um formulário HTML5 for excluído ou marcado como oculto, a página em branco ficará oculta. Um espaço vazio (espaço em branco) não é exibido entre as páginas acima e abaixo da página em branco.</p> <p>Se a mesclagem de dados ou os scripts adicionarem conteúdo a uma página, o comprimento da página se expandirá para acomodar o conteúdo recém-adicionado. Nenhuma página nova é adicionada ao formulário para acomodar o conteúdo recém-adicionado. </p> <p><strong>Nota:</strong> Quando todo o conteúdo de uma página em um formulário HTML5 é excluído ou marcado como oculto, a página em branco (espaço em branco) permanece visível entre a primeira e a segunda página, mas não entre as outras páginas.</p> </td>
+   <td><p>Um formulário HTML é dividido em painéis e caixas para dar-lhe uma aparência semelhante a PDF forms. O tamanho da página é calculado dinamicamente. Se todo o conteúdo de uma página em um formulário HTML5 for excluído ou marcado como oculto, a página em branco ficará oculta. Um espaço vazio (espaço em branco) não é exibido entre as páginas acima e abaixo da página em branco.</p> <p>Se a mesclagem de dados ou os scripts adicionarem conteúdo a uma página, o comprimento da página se expandirá para acomodar o conteúdo recém-adicionado. Nenhuma página nova é adicionada ao formulário para acomodar o conteúdo recém-adicionado. </p> <p><strong>Observação:</strong> quando todos os conteúdos de uma página em um formulário HTML5 são excluídos ou marcados como ocultos, a página em branco (espaço em branco) permanece visível entre a primeira e a segunda página, mas não entre as outras páginas.</p> </td>
    <td>A paginação no PDF depende do conteúdo de dados mesclado ou do conteúdo do usuário e a contagem de páginas é aumentada/reduzida com base nela.</td>
   </tr>
   <tr>
    <td>Cabeçalhos/Rodapés </td>
-   <td>Compatível. <br /> <br /> Como os formulários móveis HTML5 não suportam quebras de página, os cabeçalhos e rodapés são exibidos apenas uma vez. No entanto, você pode configurá-los no layout para serem exibidos em vários lugares na pré-visualização de formulários para dispositivos móveis.<br /> </td>
+   <td>Compatível. <br /> <br /> Como os formulários HTML5 para dispositivos móveis não suportam quebras de página, os cabeçalhos e rodapés aparecem apenas uma vez. No entanto, você pode configurá-los no layout para serem exibidos em vários locais na visualização de formulários para dispositivos móveis.<br /> </td>
    <td>Compatível.</td>
   </tr>
   <tr>
@@ -65,12 +65,12 @@ A tabela a seguir especifica o suporte ao recurso fornecido para formulários HT
   </tr>
   <tr>
    <td>API de script XFA</td>
-   <td>Oferece suporte às construções de script XFA mais usadas. Para obter uma lista detalhada de construções compatíveis, consulte <a href="/help/forms/using/scripting-support.md">suporte a script</a>.</td>
+   <td>Oferece suporte às construções de script XFA mais usadas. Para obter uma lista detalhada das construções compatíveis, consulte <a href="/help/forms/using/scripting-support.md">suporte a script</a>.</td>
    <td>Suporta todas as construções de script XFA.</td>
   </tr>
   <tr>
    <td>APIs de script do Acrobat </td>
-   <td>Os formulários HTML5 são compatíveis com as APIs mais usadas. Para obter detalhes, consulte <a href="/help/forms/using/scripting-support.md">suporte a script</a>.</td>
+   <td>Os formulários HTML5 são compatíveis com as APIs mais usadas. Para obter detalhes, consulte <a href="/help/forms/using/scripting-support.md">suporte a scripts</a>.</td>
    <td>Se o arquivo de PDF for aberto no Acrobat ou Reader, ele também suportará todas as APIs de script que o Acrobat fornece.</td>
   </tr>
   <tr>

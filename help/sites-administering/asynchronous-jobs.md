@@ -24,7 +24,7 @@ Essas operações incluem:
 * Busca de ativos acima do limite definido a partir de uma implantação remota do Experience Manager
 * Implantação de Live Copy
 
-Você pode visualizar o status de trabalhos assíncronos na **[!UICONTROL Status do trabalho assíncrono]** painel em **Navegação global** > **Ferramentas** > **Operações** > **Tarefas**.
+Você pode exibir o status de trabalhos assíncronos no painel **[!UICONTROL Status de Trabalho Assíncrono]** em **Navegação Global** > **Ferramentas** > **Operações** > **Trabalhos**.
 
 >[!NOTE]
 >
@@ -58,7 +58,7 @@ Para visualizar o status das operações assíncronas em detalhes, acesse a pág
 
    ![stop_icon](assets/async-stop-icon.png)
 
-1. Para exibir detalhes adicionais, por exemplo, descrição e logs, selecione a operação e clique em **[!UICONTROL Abertura]** na barra de ferramentas.
+1. Para exibir detalhes adicionais, por exemplo, descrição e logs, selecione a operação e clique em **[!UICONTROL Abrir]** na barra de ferramentas.
 
    ![open_icon](assets/async-open-icon.png)
 
@@ -132,7 +132,7 @@ Se o número de ativos/pastas ou referências que serão movidos exceder o limit
 >[!MORELIKETHIS]
 >
 >* [Criar e organizar páginas](/help/sites-authoring/managing-pages.md)
->* [Criação e sincronização de Live Copies](/help/sites-administering/msm-livecopy.md)
+>* [Criando e sincronizando Live Copies](/help/sites-administering/msm-livecopy.md)
 >* [Configurar email no Experience Manager](/help/sites-administering/notification.md).
 >* [Importar metadados de ativos](/help/assets/metadata.md#import-metadata).
 >* [Exportar metadados de ativos](/help/assets/metadata.md#export-metadata).

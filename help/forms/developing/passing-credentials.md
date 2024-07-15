@@ -41,4 +41,4 @@ Para aproveitar ao máximo este documento, você precisa ter uma sólida compree
 
 >[!MORELIKETHIS]
 >
->* [Transmitindo credenciais usando cabeçalhos de Segurança WS](assets/passing-credentials-using-ws-security-headers.pdf)
+>* [Passando credenciais usando cabeçalhos WS-Security](assets/passing-credentials-using-ws-security-headers.pdf)

@@ -22,24 +22,24 @@ Vários procedimentos exigem que você interrompa ou inicie a instância do WebS
 
 ## Exibir o status do WebSphere Application Server {#view-the-status-of-websphere-application-server}
 
-1. Em um prompt de comando, vá para a `[appserver root]/bin` diretório.
-1. Digite o seguinte comando, substituindo *server_name* com o nome do WebSphere Application Server:
+1. Em um prompt de comando, vá para o diretório `[appserver root]/bin`.
+1. Digite o seguinte comando, substituindo *server_name* pelo nome do WebSphere Application Server:
 
-   * (Windows) `serverStatus.bat`*server_name*
-   * (Linux, UNIX) ./ `serverStatus.sh`*server_name*
+   * (Windows) `serverStatus.bat`*nome_do_servidor*
+   * (Linux, UNIX) ./ `serverStatus.sh`*nome_do_servidor*
 
 ## Iniciar o WebSphere Application Server {#start-websphere-application-server}
 
-1. Em um prompt de comando, vá para a `[appserver root]/bin` diretório.
-1. Digite o seguinte comando, substituindo *server_name* com o nome do WebSphere Application Server:
+1. Em um prompt de comando, vá para o diretório `[appserver root]/bin`.
+1. Digite o seguinte comando, substituindo *server_name* pelo nome do WebSphere Application Server:
 
-   * (Windows) `startServer.bat`*server_name*
-   * (Linux, UNIX) ./ `startServer.sh`*server_name*
+   * (Windows) `startServer.bat`*nome_do_servidor*
+   * (Linux, UNIX) ./ `startServer.sh`*nome_do_servidor*
 
 ## Interromper o Servidor de Aplicativos WebSphere {#stop-websphere-application-server}
 
-1. Em um prompt de comando, vá para a `[appserver root]/bin` diretório.
-1. Digite o seguinte comando, substituindo *server_name* com o nome do WebSphere Application Server:
+1. Em um prompt de comando, vá para o diretório `[appserver root]/bin`.
+1. Digite o seguinte comando, substituindo *server_name* pelo nome do WebSphere Application Server:
 
-   * (Windows) `stopServer.bat`*server_name*
-   * (Linux, UNIX) ./ `stopServer.sh`*server_name*
+   * (Windows) `stopServer.bat`*nome_do_servidor*
+   * (Linux, UNIX) ./ `stopServer.sh`*nome_do_servidor*

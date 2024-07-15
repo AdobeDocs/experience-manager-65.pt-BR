@@ -29,11 +29,11 @@ Um exemplo de widget padrão e personalizado
 
 ### Criar um perfil  {#create-a-profile-nbsp}
 
-Você pode criar um perfil ou escolher um perfil existente para adicionar um widget personalizado. Para obter mais informações sobre a criação de perfis, consulte [Criar perfil personalizado](/help/forms/using/custom-profile.md).
+Você pode criar um perfil ou escolher um perfil existente para adicionar um widget personalizado. Para obter mais informações sobre como criar perfis, consulte [Criando um perfil personalizado](/help/forms/using/custom-profile.md).
 
 ### Criar um dispositivo {#create-a-widget}
 
-Os formulários HTML5 fornecem uma implementação da estrutura de widgets que pode ser estendida para criar novos widgets. A implementação é um widget jQuery *abstractWidget* que pode ser estendido para criar um novo widget. O novo widget pode se tornar funcional somente estendendo/substituindo as funções mencionadas abaixo.
+Os formulários HTML5 fornecem uma implementação da estrutura de widgets que pode ser estendida para criar novos widgets. A implementação é um widget jQuery *abstractWidget* que pode ser estendido para gravar um novo widget. O novo widget pode se tornar funcional somente estendendo/substituindo as funções mencionadas abaixo.
 
 <table>
  <tbody>
@@ -43,7 +43,7 @@ Os formulários HTML5 fornecem uma implementação da estrutura de widgets que p
   </tr>
   <tr>
    <td>renderizar</td>
-   <td>A função de renderização retorna o objeto jQuery para o elemento de HTML padrão do widget. O elemento de HTML padrão deve ser do tipo focalizável. Por exemplo, &lt;a&gt;, &lt;input&gt;, e &lt;li&gt;. O elemento retornado é usado como $userControl. Se o $userControl especificar a restrição acima, então as funções da classe AbstractWidget funcionam como esperado, caso contrário algumas das APIs comuns (foco, clique) exigem alterações. </td>
+   <td>A função de renderização retorna o objeto jQuery para o elemento de HTML padrão do widget. O elemento de HTML padrão deve ser do tipo focalizável. Por exemplo, &lt;a&gt;, &lt;input&gt; e &lt;li&gt;. O elemento retornado é usado como $userControl. Se o $userControl especificar a restrição acima, então as funções da classe AbstractWidget funcionam como esperado, caso contrário algumas das APIs comuns (foco, clique) exigem alterações. </td>
   </tr>
   <tr>
    <td>getEventMap</td>
@@ -68,7 +68,7 @@ Os formulários HTML5 fornecem uma implementação da estrutura de widgets que p
  </tbody>
 </table>
 
-Para criar seu próprio widget, no perfil criado acima, inclua referências do arquivo JavaScript que contém funções substituídas e funções recém-adicionadas. Por exemplo, a variável *sliderNumericFieldWidget* é um widget para Campos numéricos. Para usar o widget em seu perfil na seção de cabeçalho, inclua a seguinte linha:
+Para criar seu próprio widget, no perfil criado acima, inclua referências do arquivo JavaScript que contém funções substituídas e funções recém-adicionadas. Por exemplo, o *sliderNumericFieldWidget* é um widget para Campos numéricos. Para usar o widget em seu perfil na seção de cabeçalho, inclua a seguinte linha:
 
 ```javascript
 window.formBridge.registerConfig("widgetConfig" , widgetConfigObject);
@@ -76,7 +76,7 @@ window.formBridge.registerConfig("widgetConfig" , widgetConfigObject);
 
 ### Registrar widget personalizado com o mecanismo de script XFA  {#register-custom-widget-with-xfa-scripting-engine-nbsp}
 
-Quando o código do widget personalizado estiver pronto, registre o widget com o mecanismo de script usando `registerConfig`API para [Ponte de formulário](/help/forms/using/form-bridge-apis.md). É necessário widgetConfigObject como entrada.
+Quando o código de widget personalizado estiver pronto, registre o widget com o mecanismo de script usando a `registerConfig`API para o [Form Bridge](/help/forms/using/form-bridge-apis.md). É necessário widgetConfigObject como entrada.
 
 ```javascript
 window.formBridge.registerConfig("widgetConfig",

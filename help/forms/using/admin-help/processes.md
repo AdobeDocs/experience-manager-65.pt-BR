@@ -22,13 +22,13 @@ A página Lista de processos mostra os processos que um usuário iniciou ou que 
 
 1. No console de administração, clique em Serviços > Fluxo de trabalho do Forms > Fluxo de trabalho do Forms. A Lista de Processos mostra as seguintes informações:
 
-   **Nome do processo - Versão:** O nome do processo, conforme definido na Bancada.
+   **Nome do Processo - Versão:** O nome do processo, conforme definido no Workbench.
 
-   **Aplicativo:** O aplicativo ao qual o processo pertence, conforme definido no Workbench.
+   **Aplicativo:** o aplicativo ao qual o processo pertence, conforme definido no Workbench.
 
-   **Status:** Ativo significa que é o processo ativado para a versão do processo. Inativo significa que o processo é uma versão antiga que ainda tem instâncias de processo.
+   **Status:** Ativo significa que o processo é aquele ativado para a versão do processo. Inativo significa que o processo é uma versão antiga que ainda tem instâncias de processo.
 
-   **Data de criação:** A data e a hora em que o processo foi implantado.
+   **Data de Criação:** A data e a hora em que o processo foi implantado.
 
 1. Clique em um nome de processo para exibir suas instâncias na página Instância do processo.
 
@@ -38,15 +38,15 @@ Se você acessar a página Instância do processo a partir da página Lista de p
 
 Para cada instância do processo, a lista mostra as seguintes informações:
 
-**ID do processo:** O identificador que o fluxo de trabalho de formulários atribui quando o processo é instanciado (ou seja, quando um usuário ou uma etapa automatizada inicia um processo). Você pode usar esse identificador para rastrear a instância do processo por meio de seu ciclo de vida.
+**ID do Processo:** O identificador que o fluxo de trabalho de formulários atribui quando o processo é instanciado (ou seja, quando um usuário ou uma etapa automatizada inicia um processo). Você pode usar esse identificador para rastrear a instância do processo por meio de seu ciclo de vida.
 
-**Nome do processo - Versão:** O nome do processo, conforme definido na Bancada.
+**Nome do Processo - Versão:** O nome do processo, conforme definido no Workbench.
 
-**Status:** Indica se a instância do processo está sendo executada normalmente, mudando de estado ou se foi interrompida. (Consulte Sobre status de instância de processo.)
+**Status:** Indica se a instância do processo está em execução normalmente, mudando de estado ou foi interrompida. (Consulte Sobre status de instância de processo.)
 
-**Data de criação:** A data e a hora em que a instância do processo foi criada.
+**Data de Criação:** A data e a hora em que a instância do processo foi criada.
 
-**Data de atualização:** A data e a hora em que o status da instância do processo foi alterado pela última vez.
+**Data de Atualização:** A data e a hora em que o status da instância do processo foi alterado pela última vez.
 
 Você pode executar as seguintes tarefas na página Instância do Processo:
 
@@ -58,23 +58,23 @@ Você pode executar as seguintes tarefas na página Instância do Processo:
 
 Uma instância de processo, incluindo subprocessos, pode ter os seguintes status:
 
-**CONCLUÍDO:** Todas as ramificações e operações na instância do processo foram concluídas. CONCLUÍDO é o status final de uma instância do processo.
+**CONCLUÍDO:** todas as ramificações e operações na instância do processo foram concluídas. CONCLUÍDO é o status final de uma instância do processo.
 
-**CONCLUINDO:** O status da instância do processo está prestes a ser alterado para COMPLETE.
+**CONCLUINDO:** O status da instância do processo está prestes a mudar para CONCLUÍDO.
 
-**INICIADO:** A instância do processo foi criada, mas ainda não está em execução. INITIATED é o primeiro status de uma instância do processo.
+**INICIADO:** a instância do processo foi criada, mas ainda não está em execução. INITIATED é o primeiro status de uma instância do processo.
 
 **EM EXECUÇÃO:** A instância do processo está sendo executada normalmente. Uma etapa automatizada pode estar em andamento ou a instância do processo pode estar recebendo entrada do usuário ou aguardando a interação do usuário.
 
-**SUSPENSO:** A instância do processo foi suspensa por um administrador ou por uma etapa do processo. Nenhuma outra operação ocorrerá até que o status seja alterado.
+**SUSPENSO:** a instância do processo foi suspensa por um administrador ou por uma etapa do processo. Nenhuma outra operação ocorrerá até que o status seja alterado.
 
-**SUSPENDENDO:** O status está prestes a mudar para SUSPENDED. Se uma operação tiver sido projetada para ignorar solicitações suspensas e ainda não tiver sido concluída, essa operação deverá ser concluída antes que a instância do processo seja suspensa.
+**SUSPENDING:** o status está prestes a mudar para SUSPENDED. Se uma operação tiver sido projetada para ignorar solicitações suspensas e ainda não tiver sido concluída, essa operação deverá ser concluída antes que a instância do processo seja suspensa.
 
 **ENCERRADO:** A instância do processo foi encerrada por um administrador.
 
-**ENCERRANDO:** O status está prestes a mudar para TERMINADO. Se uma operação tiver sido projetada para ignorar solicitações de encerramento e ainda não tiver sido concluída, essa operação deverá ser concluída antes que a instância do processo seja encerrada.
+**ENCERRANDO:** o status está prestes a mudar para ENCERRADO. Se uma operação tiver sido projetada para ignorar solicitações de encerramento e ainda não tiver sido concluída, essa operação deverá ser concluída antes que a instância do processo seja encerrada.
 
-**CANCELANDO SUSPENSÃO:** O status está prestes a mudar para RUNNING após ter sido SUSPENDED.
+**UNSUSPENDING:** o status está prestes a mudar para RUNNING após ter sido SUSPENDED.
 
 >[!NOTE]
 >
@@ -116,27 +116,27 @@ A área Resumo mostra informações básicas sobre a instância do processo.
 
 Na guia Operações, cada operação da instância do processo é mostrada em ordem de conclusão, da primeira até a última, com as seguintes informações:
 
-**Nome da operação:** O nome da operação, conforme definido na Bancada.
+**Nome da Operação:** O nome da operação, conforme definido no Workbench.
 
-**Status:** Indica se a operação está sendo executada normalmente ou se parou. (Consulte Sobre status de instância de processo.)
+**Status:** Indica se a operação está sendo executada normalmente ou se foi interrompida. (Consulte Sobre status de instância de processo.)
 
-**Nome da filial:** O nome da filial, conforme definido na Bancada.
+**Nome da Ramificação:** O nome da ramificação, conforme definido no Workbench.
 
-**Data de início:** A data e a hora em que a operação foi iniciada.
+**Data de Início:** A data e a hora em que a operação começou.
 
-**Data de conclusão:** A data e a hora em que a operação foi concluída.
+**Data de Conclusão:** A data e a hora em que a operação foi concluída.
 
 Um subprocesso é uma instância de processo iniciada por outro processo e executada independentemente desse outro processo. Os subprocessos são exibidos somente se tiverem sido projetados como parte do processo no Workbench. Na guia Subprocessos, cada subprocesso é mostrado com as seguintes informações:
 
-**ID do processo:** Esse número inteiro positivo que o workflow de formulários atribui quando o processo é instanciado (ou seja, quando um usuário ou uma etapa automatizada inicia o processo). Você pode usar esse identificador para rastrear a instância do processo por meio de seu ciclo de vida.
+**ID do Processo:** Este número inteiro positivo que o fluxo de trabalho de formulários atribui quando o processo é instanciado (ou seja, quando um usuário ou uma etapa automatizada inicia o processo). Você pode usar esse identificador para rastrear a instância do processo por meio de seu ciclo de vida.
 
-**Nome do processo - Versão:** O nome do processo, conforme definido no Designer.
+**Nome do Processo - Versão:** O nome do processo, conforme definido no Designer.
 
-**Status:** Indica se a instância do processo está sendo executada normalmente, mudando de estado ou parada. (Consulte Sobre status de instância de processo.)
+**Status:** Indica se a instância do processo está em execução normalmente, mudando de estado ou parada. (Consulte Sobre status de instância de processo.)
 
-**Data de criação:** A data e a hora em que o subprocesso foi criado.
+**Data de Criação:** A data e a hora em que o subprocesso foi criado.
 
-**Data de atualização:** A data e a hora em que o status do subprocesso foi alterado pela última vez.
+**Data de Atualização:** A data e a hora em que o status do subprocesso foi alterado pela última vez.
 
 Você pode executar as seguintes tarefas na página Detalhes da instância do processo:
 
@@ -152,7 +152,7 @@ Uma operação (uma etapa em um processo) pode ter os seguintes status:
 
 **EM EXECUÇÃO:** A operação está sendo executada normalmente. Ele pode estar recebendo entrada do usuário ou esperando a interação do usuário, ou uma etapa automatizada pode estar em andamento.
 
-**PARALISADO:** Ocorreu um problema enquanto a operação estava sendo processada. Verifique o erro ou a exceção na página Operações Paralisadas.
+**PARALISADO:** problema durante o processamento da operação. Verifique o erro ou a exceção na página Operações Paralisadas.
 
 **ENCERRADO:** A operação foi encerrada por um administrador.
 
@@ -191,10 +191,10 @@ A página Detalhes da Operação mostra um resumo de uma operação em um proces
 
    Para cada tarefa, a lista mostra as seguintes informações:
 
-   **Nome do processo - Versão:** O nome do processo, conforme definido na Bancada.
+   **Nome do Processo - Versão:** O nome do processo, conforme definido no Workbench.
 
-   **Aplicativo:** O aplicativo ao qual o processo pertence, conforme definido no Workbench.
+   **Aplicativo:** o aplicativo ao qual o processo pertence, conforme definido no Workbench.
 
-   **Status:** Ativo significa que é o processo ativado para a versão do processo. Inativo significa que o processo é uma versão antiga que ainda tem instâncias de processo.
+   **Status:** Ativo significa que o processo é aquele ativado para a versão do processo. Inativo significa que o processo é uma versão antiga que ainda tem instâncias de processo.
 
-   **Data de criação:** A data e a hora em que o processo foi implantado.
+   **Data de Criação:** A data e a hora em que o processo foi implantado.

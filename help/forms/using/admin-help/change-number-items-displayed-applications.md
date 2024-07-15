@@ -20,5 +20,5 @@ ht-degree: 0%
 
 Na página Preferências, você pode controlar o número de serviços, endpoints, categorias e arquivos exibidos em cada uma das páginas da Web Aplicativos e Serviços.
 
-1. No console de administração, **[!UICONTROL clique em Serviços > Aplicativos e serviços > Preferências]**.
-1. Na página Preferências, digite o número de serviços, endpoints, categorias e arquivos que podem ser exibidos em cada página e clique em **[!UICONTROL Salvar]**.
+1. No console de administração, **[!UICONTROL clique em Serviços > Aplicativos e Serviços > Preferências]**.
+1. Na página Preferências, digite o número de serviços, pontos de extremidade, categorias e arquivos que podem ser exibidos em cada página e clique em **[!UICONTROL Salvar]**.

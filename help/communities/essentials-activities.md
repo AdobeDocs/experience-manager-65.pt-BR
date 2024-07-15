@@ -23,7 +23,7 @@ As atividades de um membro da comunidade conectado, como postar em um fórum ou 
 
 A capacidade de seguir o adiciona outro conjunto de atividades quando os membros da comunidade seguem postagens de interesse ou outros membros da comunidade.
 
-Todos [sites da comunidade](/help/communities/overview.md#communitiessites) inclua uma página de perfil do usuário para o membro conectado que exibirá as atividades do membro da mesma maneira.
+Todos os [sites de comunidade](/help/communities/overview.md#communitiessites) incluem uma página de perfil de usuário para o membro conectado que exibirá as atividades do membro da mesma maneira.
 
 ## Conceitos  {#concepts}
 
@@ -31,9 +31,9 @@ Um *fluxo de atividades* é a lista de atividades recentes executadas por um mem
 
 Um membro pode seguir um fluxo de atividade, seguindo outro indivíduo ou conteúdo.
 
-A *feed de notícias* é uma mesclagem dos fluxos de atividade que estão sendo seguidos por um membro em um único fluxo.
+Um *feed de notícias* é uma mesclagem dos fluxos de atividade que estão sendo seguidos por um membro em um único fluxo.
 
-A *[gráfico social](/help/communities/essentials-socialgraph.md)* captura os seguintes relacionamentos de um membro para outro.
+Um *[gráfico social](/help/communities/essentials-socialgraph.md)* captura as seguintes relações de um membro com outro.
 
 ## Essentials para o lado do cliente {#essentials-for-client-side}
 
@@ -61,7 +61,7 @@ A *[gráfico social](/help/communities/essentials-socialgraph.md)* captura os se
   </tr>
   <tr>
    <td><strong> propriedades</strong></td>
-   <td>Consulte <a href="/help/communities/activities.md">Recurso de fluxos de atividade</a></td>
+   <td>Consulte <a href="/help/communities/activities.md">Recurso de Fluxos de Atividade</a></td>
   </tr>
  </tbody>
 </table>
@@ -70,12 +70,12 @@ A *[gráfico social](/help/communities/essentials-socialgraph.md)* captura os se
 
 ## Essentials para o lado do servidor {#essentials-for-server-side}
 
-* [API de fluxos de atividade](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/activitystreams/api/package-frame.html)
+* [API de Fluxos de Atividades](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/activitystreams/api/package-frame.html)
 
-* [API do ouvinte de fluxos de atividade](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/activitystreams/listener/api/package-frame.html)
+* [API do Ouvinte de Fluxos de Atividade](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/activitystreams/listener/api/package-frame.html)
 
 * [Personalizações do lado do servidor](/help/communities/server-customize.md)
 
 ### Função de fluxo de atividades {#activity-stream-function}
 
-Uma estrutura de site da comunidade que inclui o [Função de fluxo de atividades](/help/communities/functions.md#activity-stream-function), inclui um configurado `activity streams` componente.
+Uma estrutura de site de comunidade que inclui a [função de Activity Stream](/help/communities/functions.md#activity-stream-function), inclui um componente `activity streams` configurado.

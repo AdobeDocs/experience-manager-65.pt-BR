@@ -19,11 +19,11 @@ ht-degree: 0%
 
 # Sobrepor componentes das comunidades {#overlay-communities-components}
 
-A intenção da [sobreposição](/help/communities/client-customize.md#overlays) um componente padrão é alterar a aparência ou o comportamento de um componente globalmente, para todas as referências relativas ao componente. Depende da natureza do sling para resolver para a pasta /apps antes de pesquisar na pasta /libs. Assim, o caminho para o componente é idêntico ao caminho para o componente padrão, exceto que está na pasta /apps e não na pasta /libs.
+A intenção de [sobrepor](/help/communities/client-customize.md#overlays) um componente padrão é alterar a aparência ou o comportamento de um componente globalmente, para todas as referências relativas ao componente. Depende da natureza do sling para resolver para a pasta /apps antes de pesquisar na pasta /libs. Assim, o caminho para o componente é idêntico ao caminho para o componente padrão, exceto que está na pasta /apps e não na pasta /libs.
 
 ## Exemplo {#example}
 
-**Componente de sobreposição de comentários**
+**Componente de comentários de sobreposição**
 
 Suponha que você deseje modificar o recurso de comentário para que ele corresponda ao design do seu site, alterando o cabeçalho do comentário para que ele não exiba mais o avatar de nenhum comentário. As soluções para ocultar o avatar são usar o CSS ou, como descrito aqui, sobrepor o header.jsp na pasta de aplicativos para que o HTML que contém o avatar nunca seja enviado ao cliente.
 
@@ -35,9 +35,9 @@ Para sobrepor comentários, você deve:
 
 **Sobrepor emails de notificações**
 
-Suponha que você deseja personalizar a mensagem de notificações por email. Você pode fazer isso ao [sobreposição](/help/communities/client-customize.md#overlays) os modelos em `/libs/settings/community/templates/email/html`.
+Suponha que você deseja personalizar a mensagem de notificações por email, você pode fazer isso [sobrepondo](/help/communities/client-customize.md#overlays) os modelos em `/libs/settings/community/templates/email/html`.
 
-Por exemplo, suponha que você queira editar as menções notificações por email (para um componente das Comunidades específico onde o UGC é criado). Nesses casos, adicione um **se** condição para verbo **menção** nos modelos dos componentes para os quais você ativou a variável **@mentions** suporte.
+Por exemplo, suponha que você queira editar as menções notificações por email (para um componente das Comunidades específico onde o UGC é criado). Nesses casos, adicione uma condição **if** para o verbo **mention** nos modelos dos componentes para os quais você habilitou o suporte **@mentions**.
 
 ```java
 {{#equals this.verb "mention"}}\

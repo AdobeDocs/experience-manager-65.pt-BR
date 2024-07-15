@@ -19,11 +19,11 @@ ht-degree: 0%
 
 ![04-criar-formulário-modelo-dados-principal](assets/04-create-form-data-model-main.png)
 
-Este tutorial é uma etapa da [Criar a primeira comunicação interativa](/help/forms/using/create-your-first-interactive-communication.md) série. É recomendável seguir a série em sequência cronológica para entender, executar e demonstrar o caso de uso completo do tutorial.
+Este tutorial é uma etapa da série [Criar sua primeira Comunicação Interativa](/help/forms/using/create-your-first-interactive-communication.md). É recomendável seguir a série em sequência cronológica para entender, executar e demonstrar o caso de uso completo do tutorial.
 
 ## Sobre o tutorial {#about-the-tutorial}
 
-O módulo de integração de dados do AEM Forms permite criar um modelo de dados de formulário a partir de diferentes fontes de dados de back-end, como o perfil de usuário AEM, os serviços Web RESTful, os serviços Web baseados em SOAP, os serviços OData e os bancos de dados relacionais. Você pode configurar serviços e objetos de modelo de dados em um modelo de dados de formulário e associá-lo a um formulário adaptável. Os campos de formulário adaptável são vinculados às propriedades do objeto de modelo de dados. Os serviços permitem preencher previamente o formulário adaptável e gravar dados do formulário enviado de volta no objeto de modelo de dados.
+O módulo de integração de dados do AEM Forms permite criar um modelo de dados de formulário a partir de diferentes fontes de dados de back-end, como perfil de usuário AEM, serviços Web RESTful, serviços Web baseados em SOAP, serviços OData e bancos de dados relacionais. Você pode configurar serviços e objetos de modelo de dados em um modelo de dados de formulário e associá-lo a um formulário adaptável. Os campos de formulário adaptável são vinculados às propriedades do objeto de modelo de dados. Os serviços permitem preencher previamente o formulário adaptável e gravar dados do formulário enviado de volta no objeto de modelo de dados.
 
 Para obter mais informações sobre a integração de dados de formulário e o modelo de dados de formulário, consulte [Integração de dados do AEM Forms](https://helpx.adobe.com/experience-manager/6-3/forms/using/data-integration.html).
 
@@ -39,13 +39,13 @@ O modelo de dados de formulário é semelhante ao seguinte:
 
 ![Modelo de dados do formulário](assets/form_data_model_callouts_new.png)
 
-**A.** Fontes de dados configuradas **B.** Esquemas de fonte de dados **C** Serviços disponíveis **D.** Objetos do modelo de dados **E** Serviços configurados
+**A.** Fontes de dados **B.** Esquemas de fonte de dados **C.** Serviços disponíveis **D.** Objetos de modelo de dados **E.** Serviços configurados
 
 ## Pré-requisitos {#prerequisites}
 
 Antes de começar, verifique se você tem o seguinte:
 
-* Banco de dados MySQL com dados de amostra conforme declarado na [Configurar o banco de dados](../../forms/using/create-form-data-model0.md#step-set-up-the-database) seção.
+* Banco de dados MySQL com dados de exemplo, conforme declarado na seção [Configurar o banco de dados](../../forms/using/create-form-data-model0.md#step-set-up-the-database).
 * Pacote OSGi para o driver JDBC MySQL, conforme explicado em [Agrupando o driver do banco de dados JDBC](https://helpx.adobe.com/experience-manager/6-3/help/sites-developing/jdbc.html#bundling-the-jdbc-database-driver)
 
 ## Etapa 1: configurar o banco de dados {#step-set-up-the-database}
@@ -53,9 +53,9 @@ Antes de começar, verifique se você tem o seguinte:
 Um banco de dados é essencial para criar uma comunicação interativa. Este tutorial usa um banco de dados para exibir o Modelo de dados de formulário e os recursos de persistência das Comunicações interativas. Configurar um banco de dados contendo tabelas de clientes, faturamentos e chamadas.
 A imagem a seguir ilustra dados de exemplo para a tabela do cliente:
 
-![sample_data_cust](assets/sample_data_cust.png)
+![exemplo_de_dados_cust](assets/sample_data_cust.png)
 
-Use a seguinte instrução DDL para criar a **cliente** tabela no banco de dados.
+Use a instrução DDL a seguir para criar a tabela **customer** no banco de dados.
 
 ```sql
 CREATE TABLE `customer` (
@@ -70,7 +70,7 @@ CREATE TABLE `customer` (
  ) ENGINE=InnoDB DEFAULT CHARSET=utf8
 ```
 
-Use a seguinte instrução DDL para criar a **faturas** tabela no banco de dados.
+Use a instrução DDL a seguir para criar a tabela **listas** no banco de dados.
 
 ```sql
 CREATE TABLE `bills` (
@@ -93,7 +93,7 @@ CREATE TABLE `bills` (
  ) ENGINE=InnoDB DEFAULT CHARSET=utf8
 ```
 
-Use a seguinte instrução DDL para criar a **chamadas** tabela no banco de dados.
+Use a instrução DDL a seguir para criar a tabela **chamadas** no banco de dados.
 
 ```sql
 CREATE TABLE `calls` (
@@ -107,47 +107,47 @@ CREATE TABLE `calls` (
  ) ENGINE=InnoDB DEFAULT CHARSET=utf8
 ```
 
-A variável **chamadas** A tabela inclui os detalhes da chamada, como data da chamada, hora da chamada, número da chamada, duração da chamada e encargos da chamada. A variável **cliente** A tabela é vinculada à tabela de chamadas usando o campo Mobile Number (mobilenum). Para cada número de celular listado no **cliente** tabela, há vários registros na **chamadas** tabela. Por exemplo, você pode recuperar os detalhes da chamada para a variável **1457892541** número do celular por meio da referência ao **chamadas** tabela.
+A tabela **chamadas** inclui os detalhes da chamada, como data, hora, número, duração e encargos. A tabela **customer** está vinculada à tabela de chamadas usando o campo Celular (mobilenum). Para cada número de celular listado na tabela **customer**, há vários registros na tabela **calls**. Por exemplo, você pode recuperar os detalhes da chamada do número de celular **1457892541** referindo-se à tabela **chamadas**.
 
-A variável **faturas** A tabela inclui os detalhes de faturamento, como data de faturamento, período de faturamento, encargos mensais e encargos de chamada. A variável **cliente** A tabela está vinculada à variável **faturas** tabela usando o campo Plano de Faturamento. Há um plano associado a cada cliente na **cliente** tabela. A variável **faturas** A tabela inclui os detalhes de precificação de todos os planos existentes. Por exemplo, você pode recuperar os detalhes do plano para **Sarah** do **cliente** tabela e use esses detalhes para recuperar detalhes de preços da **faturas** tabela.
+A tabela **faturas** inclui os detalhes da fatura, como data da fatura, período da fatura, encargos mensais e encargos de chamada. A tabela **customer** está vinculada à tabela **bill** usando o campo Plano de Cobrança. Há um plano associado a cada cliente na tabela **cliente**. A tabela **contas** inclui os detalhes de preço de todos os planos existentes. Por exemplo, você pode recuperar os detalhes do plano para **Sarah** da tabela **customer** e usar esses detalhes para recuperar os detalhes de preço da tabela **bill**.
 
 ## Etapa 2: configurar o banco de dados MySQL como fonte de dados {#step-configure-mysql-database-as-data-source}
 
-É possível configurar diferentes tipos de fontes de dados para criar um modelo de dados de formulário. Para este tutorial, você configurará o banco de dados MySQL que está configurado e preenchido com dados de amostra. Para obter informações sobre outras fontes de dados compatíveis e como configurá-las, consulte [Integração de dados do AEM Forms](https://helpx.adobe.com/experience-manager/6-3/forms/using/data-integration.html).
+É possível configurar diferentes tipos de fontes de dados para criar um modelo de dados de formulário. Para este tutorial, você configurará o banco de dados MySQL que está configurado e preenchido com dados de amostra. Para obter informações sobre outras fontes de dados com suporte e como configurá-las, consulte [Integração de Dados do AEM Forms](https://helpx.adobe.com/experience-manager/6-3/forms/using/data-integration.html).
 
 Faça o seguinte para configurar o banco de dados MySQL:
 
 1. Instale o driver JDBC para o banco de dados MySQL como um pacote OSGi:
 
-   1. Faça logon na instância do autor do AEM Forms como administrador e acesse os pacotes de console da Web AEM. O URL padrão é [https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles).
-   1. Selecionar **Instalar/Atualizar**. Um **Carregar/instalar pacotes** será exibida.
+   1. Faça logon na instância do autor do AEM Forms como administrador e acesse os pacotes de console da Web AEM. A URL padrão é [https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles).
+   1. Selecione **Instalar/Atualizar**. Uma caixa de diálogo **Carregar/Instalar Pacotes** é exibida.
 
-   1. Selecionar **Escolher arquivo** para procurar e selecionar o pacote OSGi do driver JDBC MySQL. Selecionar **Iniciar pacote** e **Atualizar pacotes** e selecione **Instalar** ou **Atualizar**. Verifique se o driver JDBC da Oracle Corporation para MySQL está ativo. O driver está instalado.
+   1. Selecione **Escolher Arquivo** para procurar e selecionar o pacote OSGi do driver JDBC MySQL. Selecione **Iniciar Pacote** e **Atualizar Pacotes** e selecione **Instalar** ou **Atualizar**. Verifique se o driver JDBC da Oracle Corporation para MySQL está ativo. O driver está instalado.
 
 1. Configure o banco de dados MySQL como uma fonte de dados:
 
-   1. Ir para o console da Web do AEM em [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
-   1. Localizar **Fonte de dados agrupada da conexão Apache Sling** configuração. Selecione para abrir a configuração no modo de edição.
+   1. Vá para o console da Web do AEM em [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
+   1. Localize a configuração **Fonte de Dados Pooled da Conexão Apache Sling**. Selecione para abrir a configuração no modo de edição.
    1. Na caixa de diálogo de configuração, especifique os seguintes detalhes:
 
       * **Nome da fonte de dados:** Você pode especificar qualquer nome. Por exemplo, especifique **MySQL**.
 
-      * **Nome da propriedade do serviço DataSource**: especifique o nome da propriedade de serviço que contém o nome da DataSource. É especificado ao registrar a instância da fonte de dados como serviço OSGi. Por exemplo, **datasource.name**.
+      * **Nome da propriedade de serviço DataSource**: especifique o nome da propriedade de serviço que contém o nome DataSource. É especificado ao registrar a instância da fonte de dados como serviço OSGi. Por exemplo, **datasource.name**.
 
-      * **Classe de driver JDBC**: Especifique o nome da classe Java do driver JDBC. Para o banco de dados MySQL, especifique **com.mysql.jdbc.Driver**.
+      * **Classe do driver JDBC**: especifique o nome da classe Java do driver JDBC. Para o banco de dados MySQL, especifique **com.mysql.jdbc.Driver**.
 
-      * **URI da conexão JDBC**: especifique o URL de conexão do banco de dados. Para o banco de dados MySQL executado na porta 3306 e schema teleca, o URL é: `jdbc:mysql://'server':3306/teleca?autoReconnect=true&useUnicode=true&characterEncoding=utf-8`
+      * **URI de conexão JDBC**: especifique a URL de conexão do banco de dados. Para o banco de dados MySQL executado na porta 3306 e no esquema teleca, a URL é: `jdbc:mysql://'server':3306/teleca?autoReconnect=true&useUnicode=true&characterEncoding=utf-8`
       * **Nome de usuário:** Nome de usuário do banco de dados. É necessário habilitar o driver JDBC para estabelecer uma conexão com o banco de dados.
       * **Senha:** Senha do banco de dados. É necessário habilitar o driver JDBC para estabelecer uma conexão com o banco de dados.
-      * **Teste ao tomar emprestado:** Ativar o **Teste ao tomar emprestado** opção.
+      * **Testar ao Emprestar:** Habilitar a opção **Testar ao Emprestar**.
 
-      * **Testar ao retornar:** Ativar o **Testar na devolução** opção.
+      * **Testar ao Retornar:** Habilitar a opção **Testar ao Retornar**.
 
-      * **Consulta de validação:** Especifique uma consulta SQL SELECT para validar as conexões do pool. A consulta deve retornar pelo menos uma linha. Por exemplo, **selecionar &#42; do cliente**.
+      * **Consulta de Validação:** especifique uma consulta SQL SELECT para validar as conexões do pool. A consulta deve retornar pelo menos uma linha. Por exemplo, **selecione &#42; do cliente**.
 
-      * **Isolamento de transação**: Defina o valor como **READ_COMMITTED**.
+      * **Isolamento de Transação**: Defina o valor como **READ_COMMITTED**.
 
-   Deixar outras propriedades com o padrão [valores](https://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html) e selecione **Salvar**.
+   Deixe as outras propriedades com os [valores](https://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html) padrão e selecione **Salvar**.
 
    Uma configuração semelhante à seguinte é criada.
 
@@ -155,18 +155,18 @@ Faça o seguinte para configurar o banco de dados MySQL:
 
 ## Etapa 3: Criar modelo de dados de formulário {#step-create-form-data-model}
 
-O AEM Forms fornece uma interface intuitiva para [criar um modo de dados de formulário](https://helpx.adobe.com/experience-manager/6-3/forms/using/data-integration.html#main-pars_header_1524967585)l de fontes de dados configuradas. É possível usar várias fontes de dados em um modelo de dados de formulário. Para o caso de uso deste tutorial, você usará o MySQL como fonte de dados.
+O AEM Forms fornece uma interface de usuário intuitiva para [criar um modo de dados de formulário](https://helpx.adobe.com/experience-manager/6-3/forms/using/data-integration.html#main-pars_header_1524967585)l a partir de fontes de dados configuradas. É possível usar várias fontes de dados em um modelo de dados de formulário. Para o caso de uso deste tutorial, você usará o MySQL como fonte de dados.
 
 Faça o seguinte para criar o modelo de dados de formulário:
 
-1. Na instância do autor AEM, navegue até **Forms** > **Integrações de dados**.
-1. Selecionar **Criar** > **Modelo de dados do formulário**.
-1. No assistente Criar modelo de dados de formulário, especifique uma **name** para o modelo de dados do formulário. Por exemplo, **FDM_Create_First_IC**. Selecione **Próximo**.
-1. A tela selecionar fonte de dados lista todas as fontes de dados configuradas. Selecionar **MySQL** fonte de dados e selecione **Criar**.
+1. Na instância do autor AEM, navegue até **Forms** > **Integrações de Dados**.
+1. Selecione **Criar** > **Modelo de Dados de Formulário**.
+1. No assistente Criar modelo de dados de formulário, especifique um **nome** para o modelo de dados de formulário. Por exemplo, **FDM_Create_First_IC**. Selecione **Próximo**.
+1. A tela selecionar fonte de dados lista todas as fontes de dados configuradas. Selecione a fonte de dados **MySQL** e selecione **Criar**.
 
    ![Fonte de dados MYSQL](assets/fdm_mysql_data_source_new.png)
 
-1. Clique em **Concluído**. A variável **FDM_Create_First_IC** modelo de dados de formulário é criado.
+1. Clique em **Concluído**. O modelo de dados de formulário **FDM_Create_First_IC** foi criado.
 
 ## Etapa 4: configurar o modelo de dados de formulário {#step-configure-form-data-model}
 
@@ -180,14 +180,14 @@ A configuração do modelo de dados de formulário inclui:
 
 ### Adicionar objetos e serviços de modelo de dados {#add-data-model-objects-and-services}
 
-1. Na instância do autor AEM, navegue até **Forms** > **Integrações de dados**. O URL padrão é [https://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm](https://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm).
-1. A variável **FDM_Create_First_IC** o modelo de dados de formulário criado anteriormente está listado aqui. Selecione e selecione **Editar**.
+1. Na instância do autor do AEM, navegue até **Forms** > **Integrações de Dados**. A URL padrão é [https://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm](https://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm).
+1. O modelo de dados de formulário **FDM_Create_First_IC** criado anteriormente está listado aqui. Selecione e selecione **Editar**.
 
-   A fonte de dados selecionada **MySQL** é exibido na **Fontes de dados** painel.
+   A fonte de dados selecionada **MySQL** é exibida no painel **Fontes de Dados**.
 
    ![Fonte de dados MYSQL para FDM](assets/mysql_fdm_new.png)
 
-1. Expanda a **MySQL** árvore da fonte de dados. Selecione os seguintes serviços e objetos de modelo de dados em **teleca** esquema:
+1. Expanda a árvore de fonte de dados **MySQL**. Selecione os seguintes serviços e objetos de modelo de dados do esquema **teleca**:
 
    * **Objetos do modelo de dados**:
 
@@ -200,11 +200,11 @@ A configuração do modelo de dados de formulário inclui:
       * obter
       * atualizar
 
-   Selecionar **Adicionar selecionado** para adicionar objetos de modelo de dados e serviços selecionados ao modelo de dados de formulário.
+   Selecione **Adicionar Selecionados** para adicionar objetos e serviços de modelo de dados selecionados ao modelo de dados de formulário.
 
    ![Selecionar serviços de objeto de modelo de dados](assets/select_data_model_object_services_new.png)
 
-   Os objetos de modelo de dados de listas, chamadas e clientes são exibidos no painel direito na **Modelo** guia. Os serviços de obtenção e atualização são exibidos no **Serviços** guia.
+   Os objetos de modelo de dados de listas, chamadas e clientes são exibidos no painel direito na guia **Modelo**. Os serviços de obtenção e atualização são exibidos na guia **Serviços**.
 
    ![Objetos do modelo de dados](assets/data_model_objects_new.png)
 
@@ -212,35 +212,36 @@ A configuração do modelo de dados de formulário inclui:
 
 Uma propriedade calculada é aquela cujo valor é calculado com base em uma regra ou expressão. Usando uma regra, você pode definir o valor de uma propriedade calculada como uma cadeia de caracteres literal, um número, o resultado de uma expressão matemática ou o valor de outra propriedade no modelo de dados de formulário.
 
-Com base no caso de uso, crie o **encargos de uso** propriedade secundária calculada na variável **faturas** objeto de modelo de dados usando a seguinte expressão matemática:
+Com base no caso de uso, crie a propriedade computada filho **usagecharges** no objeto de modelo de dados **bills** usando a seguinte expressão matemática:
 
-* encargos de utilização = encargos das chamadas + encargos das chamadas em conferência + encargos SMS + encargos da internet móvel + itinerância nacional + itinerância internacional + SAV (todas estas propriedades existem no objeto de modelo de dados faturas) Para mais informações sobre a **encargos de uso** propriedade secundária calculada, consulte [Planejar a comunicação interativa](/help/forms/using/planning-interactive-communications.md).
+* encargos de utilização = encargos das chamadas + encargos das chamadas em conferência + encargos SMS + encargos da internet móvel + itinerância nacional + itinerância internacional + SAV (todas estas propriedades existem no objeto de modelo de dados faturas)
+Para obter mais informações sobre a propriedade computada filho **usagecharges**, consulte [Planejar a Comunicação Interativa](/help/forms/using/planning-interactive-communications.md).
 
 Execute as seguintes etapas para criar propriedades-filho calculadas para o objeto de modelo de dados de listas:
 
-1. Marque a caixa de seleção na parte superior da **faturas** objeto de modelo de dados para selecioná-lo e **Criar propriedade secundária**.
-1. No **Criar propriedade secundária** painel:
+1. Marque a caixa de seleção na parte superior do objeto de modelo de dados **listas** para selecioná-lo e selecione **Criar propriedade secundária**.
+1. No painel **Criar Propriedade Filho**:
 
-   1. Enter **encargos de uso** como o nome da propriedade secundária.
-   1. Ativar **Calculado**.
-   1. Selecionar **Flutuante** como o tipo e selecione **Concluído** para adicionar a propriedade secundária à **faturas** objeto de modelo de dados.
+   1. Insira **encargos de uso** como o nome da propriedade filho.
+   1. Habilitar **Computado**.
+   1. Selecione **Flutuante** como o tipo e selecione **Concluído** para adicionar a propriedade filho ao objeto de modelo de dados **contas**.
 
-   ![Criar propriedade secundária](assets/create_child_property_new.png)
+   ![Criar propriedade filho](assets/create_child_property_new.png)
 
-1. Selecionar **Editar regra** para abrir o Editor de regras.
-1. Selecione **Criar**. A variável **Definir valor** a janela regra é aberta.
+1. Selecione **Editar regra** para abrir o Editor de regras.
+1. Selecione **Criar**. A janela de regra **Definir Valor** é aberta.
 1. No menu suspenso Selecionar opção, selecione **Expressão matemática**.
 
-   ![Editor de regras de encargos de uso](assets/usage_charges_rule_editor_new.png)
+   ![Editor da regra de encargos de uso](assets/usage_charges_rule_editor_new.png)
 
-1. Na expressão matemática, selecione **encargos de chamada** e **confcallcharge** como primeiro e segundo objetos, respectivamente. Selecionar **mais** como operador. Selecione na expressão matemática e selecione **Estender expressão** para adicionar **smscharge**, **taxas de internet**, **roamingnational**, **roamingintnl**, e **vas** objetos à expressão.
+1. Na expressão matemática, selecione **chamcharge** e **confcallcharge** como primeiro e segundo objetos, respectivamente. Selecione **mais** como operador. Selecione dentro da expressão matemática e selecione **Estender Expressão** para adicionar objetos **smscharge**, **internetcharge**, **roamingnational**, **roamingintnl** e **vas** à expressão.
 
    A imagem a seguir descreve a expressão matemática no editor de regras:
 
    ![Regra de encargos de uso](assets/usage_charges_rule_all_new.png)
 
-1. Selecionar **Concluído**. A regra é criada no Editor de regras.
-1. Selecionar **Fechar** para fechar a janela Editor de regras.
+1. Selecione **Concluído**. A regra é criada no Editor de regras.
+1. Selecione **Fechar** para fechar a janela do Editor de Regras.
 
 ### Adicionar associações entre objetos de modelo de dados {#add-associations-between-data-model-objects}
 
@@ -257,60 +258,60 @@ Com base no caso de uso, crie as seguintes associações entre os objetos do mod
 
 Execute as seguintes etapas para criar associações entre objetos de modelo de dados:
 
-1. Marque a caixa de seleção na parte superior da **cliente** objeto de modelo de dados para selecioná-lo e **Adicionar associação**. A variável **Adicionar associação** painel de propriedades é aberto.
-1. No **Adicionar associação** painel:
+1. Marque a caixa de seleção na parte superior do objeto de modelo de dados **cliente** para selecioná-lo e selecione **Adicionar Associação**. O painel de propriedades **Adicionar Associação** é aberto.
+1. No painel **Adicionar Associação**:
 
    * Especifique um título para a associação. É um campo opcional.
-   * Selecionar **Um para muitos** do **Tipo** lista suspensa.
+   * Selecione **Um para Muitos** na lista suspensa **Tipo**.
 
-   * Selecionar **chamadas** do **Objeto de modelo** lista suspensa.
+   * Selecione **chamadas** da lista suspensa **Objeto de Modelo**.
 
-   * Selecionar **obter** do **Serviço** lista suspensa.
+   * Selecione **get** da lista suspensa **Serviço**.
 
-   * Selecionar **Adicionar** para vincular a variável **cliente** objeto de modelo de dados para **chamadas** objeto de modelo de dados usando uma propriedade. Com base no caso de uso, o objeto de modelo de dados de chamadas deve ser vinculado à propriedade de número de celular no objeto de modelo de dados do cliente. A variável **Adicionar argumento** é aberta.
+   * Selecione **Adicionar** para vincular o objeto de modelo de dados **cliente** ao objeto de modelo de dados **chamadas** usando uma propriedade. Com base no caso de uso, o objeto de modelo de dados de chamadas deve ser vinculado à propriedade de número de celular no objeto de modelo de dados do cliente. A caixa de diálogo **Adicionar Argumento** é aberta.
 
    ![Adicionar associação](assets/add_association_new.png)
 
-1. No **Adicionar argumento** caixa de diálogo:
+1. Na caixa de diálogo **Adicionar argumento**:
 
-   * Selecionar **mobilenum** do **Nome** lista suspensa. A propriedade de número de celular é uma propriedade comum disponível no cliente e chama objetos de modelo de dados. Como resultado, é usado para criar uma associação entre o cliente e chamar objetos de modelo de dados.
+   * Selecione **mobilenum** na lista suspensa **Nome**. A propriedade de número de celular é uma propriedade comum disponível no cliente e chama objetos de modelo de dados. Como resultado, é usado para criar uma associação entre o cliente e chamar objetos de modelo de dados.
 Para cada número de celular disponível no objeto de modelo de dados do cliente, há vários registros de chamada disponíveis na tabela de chamadas.
 
    * Especifique um título opcional e uma descrição para o argumento.
-   * Selecionar **cliente** do **Vinculando a** lista suspensa.
+   * Selecione **cliente** na lista suspensa **Ligando a**.
 
-   * Selecionar **mobilenum** do **Valor do vínculo** lista suspensa.
+   * Selecione **mobilenum** na lista suspensa **Valor de Associação**.
 
-   * Selecionar **Adicionar**.
+   * Selecione **Adicionar**.
 
    ![Adicionar associação para um argumento](assets/add_association_argument_new.png)
 
-   A propriedade mobilenum é exibida no campo **Argumentos** seção.
+   A propriedade mobilenum é exibida na seção **Argumentos**.
 
    ![Adicionar associação de argumento](assets/add_argument_association_new.png)
 
-1. Selecionar **Concluído** para criar uma associação 1:n entre objetos de modelo de dados cliente e chamadas.
+1. Selecione **Concluído** para criar uma associação 1:n entre o cliente e objetos de modelo de dados de chamadas.
 
    Depois de criar uma associação entre o cliente e chamar objetos de modelo de dados, crie uma associação 1:1 entre o cliente e os objetos de modelo de dados de faturamento.
 
-1. Marque a caixa de seleção na parte superior da **cliente** objeto de modelo de dados para selecioná-lo e **Adicionar associação**. A variável **Adicionar associação** painel de propriedades é aberto.
-1. No **Adicionar associação** painel:
+1. Marque a caixa de seleção na parte superior do objeto de modelo de dados **cliente** para selecioná-lo e selecione **Adicionar Associação**. O painel de propriedades **Adicionar Associação** é aberto.
+1. No painel **Adicionar Associação**:
 
    * Especifique um título para a associação. É um campo opcional.
-   * Selecionar **Um para um** do **Tipo** lista suspensa.
+   * Selecione **Um para Um** na lista suspensa **Tipo**.
 
-   * Selecionar **faturas** do **Objeto de modelo** lista suspensa.
+   * Selecione **contas** da lista suspensa **Objeto de Modelo**.
 
-   * Selecionar **obter** do **Serviço** lista suspensa. A variável **plano de cobrança** propriedade, que é a chave primária para a tabela de faturas, já está disponível na **Argumentos** seção.
+   * Selecione **get** da lista suspensa **Serviço**. A propriedade **billplan**, que é a chave primária para a tabela de contas, já está disponível na seção **Argumentos**.
 Os objetos de modelo de dados de listas e clientes são vinculados usando as propriedades billplan (listas) e customerplan (cliente), respectivamente. Crie um vínculo entre essas propriedades para recuperar os detalhes do plano para qualquer cliente disponível no banco de dados MySQL.
 
-   * Selecionar **cliente** do **Vinculando a** lista suspensa.
+   * Selecione **cliente** na lista suspensa **Ligando a**.
 
-   * Selecionar **customerplan** do **Valor do vínculo** lista suspensa.
+   * Selecione **customerplan** na lista suspensa **Valor de Associação**.
 
-   * Selecionar **Concluído** para criar uma vinculação entre as propriedades billplan e customerplan.
+   * Selecione **Concluído** para criar uma associação entre as propriedades billplan e customerplan.
 
-   ![Adicionar associação para fatura de cliente](assets/add_association_customer_bills_new.png)
+   ![Adicionar associação para a fatura de cliente](assets/add_association_customer_bills_new.png)
 
    A imagem a seguir descreve as associações entre os objetos do modelo de dados e as propriedades usadas para criar associações entre eles:
 
@@ -320,53 +321,53 @@ Os objetos de modelo de dados de listas e clientes são vinculados usando as pro
 
 Depois de criar associações entre o cliente e outros objetos de modelo de dados, edite as propriedades do cliente para definir a propriedade com base na qual os dados são recuperados do objeto de modelo de dados. Com base no caso de uso, o número de celular é usado como a propriedade para recuperar dados do objeto de modelo de dados do cliente.
 
-1. Marque a caixa de seleção na parte superior da **cliente** objeto de modelo de dados para selecioná-lo e **Editar propriedades**. A variável **Editar propriedades** será aberto.
-1. Especificar **cliente** como o **Objeto de modelo de nível superior**.
-1. Selecionar **obter** do **Serviço de leitura** lista suspensa.
-1. No **Argumentos** seção:
+1. Marque a caixa de seleção na parte superior do objeto de modelo de dados **customer** para selecioná-lo e selecione **Editar Propriedades**. O painel **Editar Propriedades** é aberto.
+1. Especifique **customer** como o **objeto de Modelo de Nível Superior**.
+1. Selecione **get** da lista suspensa **Serviço de Leitura**.
+1. Na seção **Argumentos**:
 
-   * Selecionar **Solicitar atributo** do **Vinculando a** lista suspensa.
+   * Selecione **Solicitar atributo** na lista suspensa **Ligando a**.
 
-   * Especificar **mobilenum** como o Valor de vinculação.
+   * Especifique **mobilenum** como o Valor de Associação.
 
-1. Selecionar **atualizar** do **Gravar** Lista suspensa Serviço.
-1. No **Argumentos** seção:
+1. Selecione **atualizar** na lista suspensa Serviço **Gravar**.
+1. Na seção **Argumentos**:
 
-   * Para **mobilenum** , selecione **cliente** do **Vinculando a** lista suspensa.
+   * Para a propriedade **mobilenum**, selecione **customer** na lista suspensa **Ligando a**.
 
-   * Selecionar **mobilenum** do **Valor do vínculo** lista suspensa.
+   * Selecione **mobilenum** na lista suspensa **Valor de Associação**.
 
-1. Selecionar **Concluído** para salvar as propriedades.
+1. Selecione **Concluído** para salvar as propriedades.
 
    ![Configurar serviços](assets/configure_services_customer_new.png)
 
-1. Marque a caixa de seleção na parte superior da **chamadas** objeto de modelo de dados para selecioná-lo e **Editar propriedades**. A variável **Editar propriedades** será aberto.
-1. Desative o **Objeto de modelo de nível superior** para **chamadas** objeto de modelo de dados.
-1. Selecionar **Concluído**.
+1. Marque a caixa de seleção na parte superior do objeto de modelo de dados **calls** para selecioná-lo e selecione **Editar Propriedades**. O painel **Editar Propriedades** é aberto.
+1. Desabilite o **objeto de modelo de nível superior** para o objeto de modelo de dados **calls**.
+1. Selecione **Concluído**.
 
-   Repita as etapas 8 - 10 para configurar as propriedades para **faturas** objeto de modelo de dados.
+   Repita as etapas 8 - 10 para configurar as propriedades do objeto de modelo de dados **listas**.
 
 ### Configurar serviços {#configure-services}
 
-1. Vá para a **Serviços** guia.
-1. Selecione o **obter** e selecione **Editar propriedades**. A variável **Editar propriedades** será aberto.
-1. No **Editar propriedades** painel:
+1. Vá para a guia **Serviços**.
+1. Selecione o serviço **get** e selecione **Editar Propriedades**. O painel **Editar Propriedades** é aberto.
+1. No painel **Editar Propriedades**:
 
    * Insira um título opcional e uma descrição.
-   * Selecionar **cliente** do **Objeto de modelo de saída** lista suspensa.
+   * Selecione **cliente** na lista suspensa **Objeto de modelo de saída**.
 
-   * Selecionar **Concluído** para salvar as propriedades.
+   * Selecione **Concluído** para salvar as propriedades.
 
    ![Editar propriedades](assets/edit_properties_get_details_new.png)
 
-1. Selecione o **atualizar** e selecione **Editar propriedades**. A variável **Editar propriedades** será aberto.
-1. No **Editar propriedades** painel:
+1. Selecione o serviço **atualizar** e selecione **Editar Propriedades**. O painel **Editar Propriedades** é aberto.
+1. No painel **Editar Propriedades**:
 
    * Insira um título opcional e uma descrição.
-   * Selecionar **cliente** do **Objeto de modelo de entrada** lista suspensa.
+   * Selecione **cliente** na lista suspensa **Objeto de Modelo de Entrada**.
 
-   * Selecionar **Concluído**.
-   * Selecionar **Salvar** para salvar o modelo de dados do formulário.
+   * Selecione **Concluído**.
+   * Selecione **Salvar** para salvar o modelo de dados de formulário.
 
    ![Atualizar propriedades do serviço](assets/update_service_properties_new.png)
 
@@ -376,21 +377,21 @@ Você pode testar o objeto de modelo de dados e os serviços para verificar se o
 
 Faça o seguinte para executar o teste:
 
-1. Vá para a **Modelo** , selecione a **cliente** objeto de modelo de dados e selecione **Testar objeto de modelo**.
-1. No **Testar modelo de dados do formulário** selecione **Ler objeto de modelo** do **Selecionar modelo/serviço** lista suspensa.
-1. No **Entrada** especifique um valor para a variável **mobilenum** que existe no banco de dados MySQL configurado e selecione **Teste**.
+1. Vá para a guia **Modelo**, selecione o objeto de modelo de dados **cliente** e selecione **Testar Objeto de Modelo**.
+1. Na janela **Testar Modelo de Dados de Formulário**, selecione **Ler objeto de modelo** na lista suspensa **Selecionar Modelo/Serviço**.
+1. Na seção **Input**, especifique um valor para a propriedade **mobilenum** que existe no banco de dados MySQL configurado e selecione **Test**.
 
    Os detalhes do cliente associados à propriedade mobilenum especificada são obtidos e exibidos na seção Saída, como mostrado abaixo. Feche a caixa de diálogo.
 
    ![Testar modelo de dados](assets/test_data_model_new.png)
 
-1. Vá para a **Serviços** guia.
-1. Selecione o **obter** e selecione **Testar serviço.**
-1. No **Entrada** especifique um valor para a variável **mobilenum** que existe no banco de dados MySQL configurado e selecione **Teste**.
+1. Vá para a guia **Serviços**.
+1. Selecione o serviço **get** e selecione **Testar Serviço.**
+1. Na seção **Input**, especifique um valor para a propriedade **mobilenum** que existe no banco de dados MySQL configurado e selecione **Test**.
 
    Os detalhes do cliente associados à propriedade mobilenum especificada são obtidos e exibidos na seção Saída, como mostrado abaixo. Feche a caixa de diálogo.
 
-   ![Testar serviço](assets/test_service_new.png)
+   ![Serviço de teste](assets/test_service_new.png)
 
 ### Editar e salvar dados de amostra {#edit-and-save-sample-data}
 
@@ -398,8 +399,8 @@ O editor do modelo de dados de formulário permite gerar dados de amostra para t
 
 Faça o seguinte para gerar, editar e salvar dados de amostra:
 
-1. Na página do modelo de dados do formulário, selecione **Editar dados de amostra**. Ele gera e exibe os dados de amostra na janela Editar dados de amostra.
+1. Na página do modelo de dados de formulário, selecione **Editar Dados de Exemplo**. Ele gera e exibe os dados de amostra na janela Editar dados de amostra.
 
-   ![Editar dados de amostra](assets/edit_sample_data_new.png)
+   ![Editar dados de exemplo](assets/edit_sample_data_new.png)
 
-1. Entrada **Editar dados de amostra** editar dados, conforme necessário, e selecione **Salvar**. Feche a janela.
+1. Na janela **Editar Dados de Exemplo**, edite os dados, conforme necessário, e selecione **Salvar**. Feche a janela.

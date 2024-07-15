@@ -20,13 +20,13 @@ ht-degree: 2%
 
 ## Download {#download}
 
-Esse script é feito para facilitar a análise do `access.log` arquivos produzindo um relatório legível para processamento posterior.
+Este script é feito para facilitar a análise dos arquivos `access.log`, produzindo um relatório legível para processamento posterior.
 
 [Obter arquivo](assets/analyse-access.sh)
 
 ## Descrição {#description}
 
-Esse script é feito para facilitar a análise do `access.log` arquivos produzindo um relatório legível para processamento posterior.
+Este script é feito para facilitar a análise dos arquivos `access.log`, produzindo um relatório legível para processamento posterior.
 
 Ele produz o número geral de solicitações, GET vs. POST, a distribuição de Solicitações ao longo do tempo e muito mais.
 
@@ -36,7 +36,7 @@ Ele pode analisar um caminho personalizado fornecido na linha de comando.
 
 A partir do comentário dentro do arquivo que informa como executá-lo:
 
-Analisar CQ `access.log` extrapolando várias informações e produzindo uma saída do Markdown no `stdout`.
+Analisar CQ `access.log` extrapolando várias informações e produzindo uma saída do Markdown em `stdout`.
 
 ## Uso {#usage}
 

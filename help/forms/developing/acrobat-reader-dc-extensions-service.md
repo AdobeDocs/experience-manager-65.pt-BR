@@ -33,7 +33,7 @@ As operações do AEM Forms podem ser executadas usando a API altamente tipada d
 
 ## Início rápido (modo SOAP):Aplicação de direitos de uso usando a API Java {#quick-start-soap-mode-applying-usage-rights-using-the-java-api}
 
-O exemplo de código Java a seguir aplica direitos de uso a um documento PDF chamado *Loan.pdf*. O documento PDF habilitado para direitos é salvo como um arquivo PDF chamado *LoanUsageRights.pdf*. Os seguintes direitos de uso são aplicados a este documento PDF: `enabledComments`, `enabledFormFillIn`, e `enabledDigitalSignatures`. (Consulte [Aplicação de direitos de uso a documentos PDF](/help/forms/developing/assigning-usage-rights.md).)
+O exemplo de código Java a seguir aplica direitos de uso a um documento PDF chamado *Loan.pdf*. O documento PDF habilitado para direitos foi salvo como um arquivo PDF chamado *LoanUsageRights.pdf*. Os seguintes direitos de uso são aplicados a este documento PDF: `enabledComments`, `enabledFormFillIn` e `enabledDigitalSignatures`. (Consulte [Aplicar direitos de uso a documentos PDF](/help/forms/developing/assigning-usage-rights.md).)
 
 
 ```java
@@ -145,7 +145,7 @@ O exemplo de código Java a seguir aplica direitos de uso a um documento PDF cha
 
 ## Início rápido (modo SOAP): remoção de direitos de uso de um documento PDF usando a API Java {#quick-start-soap-mode-removing-usage-rights-from-a-pdf-document-using-the-java-api}
 
-O exemplo de código Java a seguir remove os direitos de uso de um documento PDF habilitado para direitos chamado *LoanUsageRights.pdf*. (Consulte [Remoção de direitos de uso de documentos do PDF](/help/forms/developing/assigning-usage-rights.md).)
+O exemplo de código Java a seguir remove os direitos de uso de um documento PDF habilitado para direitos chamado *LoanUsageRights.pdf*. (Consulte [Removendo direitos de uso de documentos do PDF](/help/forms/developing/assigning-usage-rights.md).)
 
 ```java
  /* 

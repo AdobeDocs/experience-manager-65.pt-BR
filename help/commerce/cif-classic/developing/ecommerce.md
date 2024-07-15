@@ -26,11 +26,11 @@ Para obter mais informações, consulte:
 
 >[!NOTE]
 >
->Como a estrutura de comércio eletrônico pode ser usada com qualquer solução de comércio eletrônico, consulte [Desenvolvimento (genérico)](/help/commerce/cif-classic/developing/generic.md) para obter mais informações sobre as possibilidades de desenvolvimento.
+>Como a estrutura de comércio eletrônico pode ser usada com qualquer solução de comércio eletrônico, consulte [Desenvolvendo (genérico)](/help/commerce/cif-classic/developing/generic.md) para obter mais informações sobre possibilidades de desenvolvimento.
 
 >[!NOTE]
 >
->Para usar a estrutura de integração com provedores externos de comércio eletrônico, primeiro é necessário instalar os pacotes necessários. Para obter mais informações, consulte [Implantação do comércio eletrônico](/help/commerce/cif-classic/deploying/ecommerce.md).
+>Para usar a estrutura de integração com provedores externos de comércio eletrônico, primeiro é necessário instalar os pacotes necessários. Para obter mais informações, consulte [Implantando o comércio eletrônico](/help/commerce/cif-classic/deploying/ecommerce.md).
 >
 >Para obter informações sobre conceitos e administração de implementações de comércio eletrônico, consulte [Administração de comércio eletrônico](/help/commerce/cif-classic/administering/ecommerce.md).
 
@@ -40,4 +40,4 @@ A API de comércio eletrônico é fornecida pelos pacotes:
 
 `com.adobe.cq.commerce.*`
 
-Consulte a [Documentação da API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html) para obter mais informações.
+Consulte a [documentação da API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html) para obter mais informações.

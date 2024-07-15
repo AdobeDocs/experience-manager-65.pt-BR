@@ -31,7 +31,7 @@ Ao criar um Conjunto de rotação ou um Conjunto de imagens, ou fazer upload de 
 
 | Ativo - Tipo de limite | Prática recomendada | Limite imposto |
 | --- | --- | --- |
-| **Imagem** - Número de cortes inteligentes por imagem | 5 | 100 |
+| **Imagem** - Número de Recortes Inteligentes por imagem | 5 | 100 |
 | **Todos os conjuntos** - Número de ativos duplicados por conjunto | Sem duplicatas | 20‡ |
 | **Todos os conjuntos** - Número máximo de ativos por conjunto | De 5 a 10 imagens por conjunto | 1000 |
 | **Grupo de rotação** - Número máximo de linhas/colunas por conjunto 2D | 12 a 18 imagens por conjunto | 1000 |

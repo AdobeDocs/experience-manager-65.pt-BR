@@ -19,7 +19,7 @@ ht-degree: 0%
 
 No Gerenciamento de correspondências, um modelo de correspondência contém campos de formulário típicos, recursos de layout como cabeçalho e rodapé e &quot;áreas de destino&quot; vazias para a inserção de conteúdo.
 
-O Gerenciamento de correspondência fornece modelos de correspondência na [Pacote complementar do AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en). Você pode personalizar os modelos no Designer de acordo com suas necessidades comerciais e de marca. O pacote inclui os seguintes templates:
+O Gerenciamento de Correspondências fornece modelos de correspondência no [pacote complementar do AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en). Você pode personalizar os modelos no Designer de acordo com suas necessidades comerciais e de marca. O pacote inclui os seguintes templates:
 
 * Clássico
 * Simples clássico
@@ -40,7 +40,7 @@ A seguir estão os campos comuns em todos os templates neste pacote:
 * Texto de encerramento
 * Texto da assinatura
 
-![Todos os modelos de carta CM listados](assets/templatescorrespondence.png)
+![Todos os modelos de letra CM listados](assets/templatescorrespondence.png)
 
 Após instalar o pacote AEM-FORMS-6.3-REFERENCE-LAYOUT-TEMPLATES, os modelos são listados na pasta templates
 

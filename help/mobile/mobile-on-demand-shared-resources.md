@@ -26,7 +26,7 @@ As ações de gerenciamento de conteúdo são os blocos fundamentais que ajudam 
 
 >[!NOTE]
 >
->Para saber mais sobre as considerações de design para aplicativos do AEM Mobile, consulte [Considerações de design para aplicativos do AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) na Ajuda online.
+>Para saber mais sobre as considerações de design para aplicativos do AEM Mobile, consulte [Considerações de design para aplicativos do AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) na Ajuda Online.
 
 >[!CAUTION]
 >
@@ -36,16 +36,16 @@ As ações de gerenciamento de conteúdo são os blocos fundamentais que ajudam 
 
 Normalmente, o conteúdo, como artigos, precisa ter a mesma aparência em todos os autores e até mesmo aplicativos. Portanto, é essencial disponibilizar scripts, css e fontes para todos. Essa operação envia esses recursos compartilhados para o Mobile On-Demand, que podem ser consumidos conforme necessário.
 
-Depois de configurar e associar seu aplicativo a uma Configuração na nuvem, você pode fazer upload dos recursos compartilhados. Para obter etapas detalhadas sobre como associar seu aplicativo a uma configuração em nuvem, clique em [aqui](/help/mobile/mobile-apps-ondemand-application-create-configure-action.md).
+Depois de configurar e associar seu aplicativo a uma Configuração na nuvem, você pode fazer upload dos recursos compartilhados. Para obter etapas detalhadas sobre como associar seu aplicativo a uma configuração de nuvem, clique [aqui](/help/mobile/mobile-apps-ondemand-application-create-configure-action.md).
 
 >[!NOTE]
 >
->Os Recursos compartilhados usam ContentSync para coletar todos os recursos diferentes. Consulte [Dispositivo móvel com ContentSync](/help/mobile/mobile-ondemand-contentsync.md) para obter mais detalhes.
+>Os Recursos compartilhados usam ContentSync para coletar todos os recursos diferentes. Consulte [Mobile com ContentSync](/help/mobile/mobile-ondemand-contentsync.md) para obter mais detalhes.
 
 Siga estas etapas para fazer upload dos recursos compartilhados de um artigo:
 
-1. Selecione o artigo de **Gerenciar artigos** bloco.
-1. Clique em **Fazer upload de recursos compartilhados** para fazer upload dos recursos de HTML compartilhados.
+1. Selecione o artigo no bloco **Gerenciar artigos**.
+1. Clique em **Carregar Recursos Compartilhados** para carregar seus recursos de HTML compartilhados.
 
    ![chlimage_1-133](assets/chlimage_1-133.png)
 

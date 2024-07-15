@@ -18,11 +18,11 @@ ht-degree: 0%
 
 # Visão geral do Workspace {#overview-of-workspace}
 
-O Espaço de trabalho permite que os usuários iniciem, participem e acompanhem processos de negócios.
+O Workspace permite que os usuários iniciem, participem e rastreiem processos de negócios.
 
 Nas páginas do Workspace no console de administração, é possível executar as seguintes tarefas:
 
-* Definir a mensagem a ser exibida na página de Boas-vindas da interface do usuário do Workspace
+* Definir a mensagem a ser exibida na página de boas-vindas da interface do usuário do Workspace
 * Configurar modelos de pesquisa a serem usados no Workspace para pesquisar processos e tarefas
 * Importar e exportar modelos de pesquisa e configurações globais
 

@@ -24,7 +24,7 @@ O Gerenciamento de correspondência permite que você renove a marca do modelo d
 
 Você pode alterar o logotipo na interface de Criar correspondência com o logotipo da sua organização.
 
-![O ícone personalizado na interface de Criar correspondência](assets/0_1_introscreenshot.png)
+![O ícone personalizado na interface para Criar Correspondência](assets/0_1_introscreenshot.png)
 
 O ícone personalizado na interface de Criar correspondência
 
@@ -32,11 +32,11 @@ O ícone personalizado na interface de Criar correspondência
 
 Para configurar uma imagem de logotipo de sua escolha, faça o seguinte:
 
-1. Crie o apropriado [estrutura de pastas no CRX](#creatingfolderstructure).
+1. Crie a [estrutura de pastas apropriada no CRX](#creatingfolderstructure).
 1. [Carregar o novo arquivo de logotipo](#uploadlogo) na pasta criada no CRX.
 
-1. [Configurar o CSS](#createcss) no CRX para consultar o novo logotipo.
-1. Limpar o histórico do navegador e [atualizar a interface Criar correspondência](#refreshccrui).
+1. [Configure o CSS](#createcss) no CRX para fazer referência ao novo logotipo.
+1. Limpar o histórico do navegador e [atualizar a interface do usuário Criar Correspondência](#refreshccrui).
 
 ## Criação da estrutura de pastas necessária {#creatingfolderstructure}
 
@@ -44,20 +44,20 @@ Crie a estrutura de pastas, conforme explicado abaixo, para hospedar a imagem de
 
 Para qualquer personalização, crie uma estrutura de pastas paralela, conforme explicado abaixo, na ramificação /apps.
 
-A variável `/apps` ramificação (estrutura de pastas):
+A ramificação `/apps` (estrutura de pastas):
 
-* Garante a segurança dos arquivos se houver uma atualização do sistema. Se houver uma atualização, um pacote de recursos ou um hot fix, a variável `/libs` A ramificação será atualizada e se você hospedar suas alterações no `/libs` são substituídas.
+* Garante a segurança dos arquivos se houver uma atualização do sistema. Se houver uma atualização, um pacote de recursos ou um hot fix, a ramificação `/libs` será atualizada e, se você hospedar suas alterações na ramificação `/libs`, elas serão substituídas.
 * Ajuda a não perturbar o sistema/ramificação atual, o que você pode desfazer por engano se usar os locais padrão para armazenar os arquivos personalizados.
-* Ajuda os seus recursos a obter uma prioridade mais alta quando o AEM procura recursos. O AEM está configurado para pesquisar o `/apps` primeiro e depois o `/libs` para localizar um recurso. Esse mecanismo significa que o sistema usa sua sobreposição (e as personalizações definidas lá).
+* Ajuda os seus recursos a obter uma prioridade mais alta quando o AEM procura recursos. O AEM está configurado para pesquisar primeiro a ramificação `/apps` e depois a ramificação `/libs` para encontrar um recurso. Esse mecanismo significa que o sistema usa sua sobreposição (e as personalizações definidas lá).
 
-Use as etapas a seguir para criar a estrutura de pastas necessária no `/apps` filial:
+Use as etapas a seguir para criar a estrutura de pasta necessária na ramificação `/apps`:
 
-1. Ir para `https://'[server]:[port]'/[ContextPath]/crx/de` e faça logon como Administrador.
+1. Vá para `https://'[server]:[port]'/[ContextPath]/crx/de` e faça logon como Administrador.
 1. Na pasta de aplicativos, crie uma pasta chamada `css` com caminho/estrutura semelhante à pasta css (na pasta ccrui).
 
    Etapas para criar a pasta css:
 
-   1. Clique com o botão direito do mouse no **css** no seguinte caminho e selecione **Sobrepor nó**: `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/css`
+   1. Clique com o botão direito na pasta **css** no seguinte caminho e selecione **Sobrepor Nó**: `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/css`
 
       ![Sobrepor nó](assets/1_overlaynode_css.png)
 
@@ -65,15 +65,15 @@ Use as etapas a seguir para criar a estrutura de pastas necessária no `/apps` f
 
       **Caminho:** `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/css`
 
-      **Local da sobreposição:** `/apps/`
+      **Local de Sobreposição:** `/apps/`
 
-      **Corresponder Tipos de Nó:** Marcado
+      **Corresponder Tipos De Nó:** Marcado
 
-      ![Sobrepor caminho do nó](assets/0_1_5ioverlaynodedialog.png)
+      ![Caminho do nó de sobreposição](assets/0_1_5ioverlaynodedialog.png)
 
       >[!NOTE]
       >
-      >Não altere o `/libs` filial. As alterações feitas podem ser perdidas, pois essa ramificação é responsável por qualquer alteração sempre que você:
+      >Não altere a ramificação `/libs`. As alterações feitas podem ser perdidas, pois essa ramificação é responsável por qualquer alteração sempre que você:
       >
       >    
       >    
@@ -85,16 +85,16 @@ Use as etapas a seguir para criar a estrutura de pastas necessária no `/apps` f
 
    1. Clique em **OK**. A pasta css é criada no caminho especificado.
 
-1. Na pasta de aplicativos, crie uma pasta chamada `imgs` com caminho/estrutura semelhante ao `imgs` pasta (na pasta ccrui).
+1. Na pasta de aplicativos, crie uma pasta chamada `imgs` com caminho/estrutura semelhante à pasta `imgs` (na pasta de competência).
 
-   1. Clique com o botão direito do mouse no **imgs** no seguinte caminho e selecione **Sobrepor nó**: `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs`
+   1. Clique com o botão direito do mouse na pasta **imgs** no seguinte caminho e selecione **Sobrepor Nó**: `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs`
    1. Certifique-se de que a caixa de diálogo Sobrepor nó tenha os seguintes valores:
 
       **Caminho:** /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs
 
-      **Local da sobreposição:** /apps/
+      **Local de Sobreposição:** /apps/
 
-      **Corresponder Tipos de Nó:** Marcado
+      **Corresponder Tipos De Nó:** Marcado
 
    1. Clique em **OK**.
 
@@ -108,14 +108,14 @@ Use as etapas a seguir para criar a estrutura de pastas necessária no `/apps` f
 
 Faça upload do seu arquivo de logotipo personalizado para o CRX. As regras de HTML padrão regem a renderização do logotipo. Os formatos de arquivo de imagem compatíveis são de acordo com o navegador usado para acessar o AEM Forms. Todos os navegadores suportam JPEG, GIF e PNG. Para obter mais informações, consulte a documentação específica do navegador sobre os formatos de imagem compatíveis.
 
-* As dimensões padrão da imagem do logotipo são 48 px &#42; 48 px Verifique se a imagem é semelhante a esse tamanho ou maior que 48 px &#42; 48 px
+* As dimensões padrão da imagem do logotipo são 48 px &#42; 48 px. Verifique se a imagem é semelhante a este tamanho ou maior que 48 px &#42; 48 px.
 * Se a altura da imagem do logotipo for superior a 50 px, a interface de usuário Criar correspondência dimensionará a imagem para uma altura máxima de 50 px, pois essa é a altura do cabeçalho. Ao reduzir a imagem, a interface do usuário Criar correspondência mantém a proporção da imagem.
 * A interface de usuário Criar correspondência não aumenta a escala da imagem se ela for pequena. Portanto, use uma imagem de logotipo com pelo menos 48 px de altura e largura suficiente para maior clareza.
 
 Use as seguintes etapas para fazer upload do arquivo de logotipo personalizado para o CRX:
 
 1. Ir para `https://'[server]:[port]'/[contextpath]/crx/de`. Se necessário, efetue login como Administrador.
-1. No CRXDE, clique com o botão direito do mouse no **imgs** no seguinte caminho e selecione **Criar > Criar arquivo**:
+1. No CRXDE, clique com o botão direito do mouse na pasta **imgs** no seguinte caminho e selecione **Criar > Criar arquivo**:
 
    `/apps/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs/`
 
@@ -135,17 +135,17 @@ Use as seguintes etapas para fazer upload do arquivo de logotipo personalizado p
 
    ![jcrcontentproperties](assets/jcrcontentproperties.png)
 
-1. Clique duas vezes no ícone **jcr:data** propriedade.
+1. Clique duas vezes na propriedade **jcr:data**.
 
    A caixa de diálogo Editar jcr:data é exibida.
 
    Agora clique na pasta newlogo.png, clique duas vezes em jcr:content (opção dim) e defina o tipo nt:resource. Se não estiver presente, crie uma propriedade com o nome jcr:content.
 
-1. Na caixa de diálogo Editar jcr:dados, clique em **Procurar** e selecione o arquivo de imagem que deseja usar como logotipo (aqui CustomLogo.png).
+1. Na caixa de diálogo Editar jcr:data, clique em **Procurar** e selecione o arquivo de imagem que deseja usar como logotipo (aqui CustomLogo.png).
 
    Os formatos de arquivo de imagem compatíveis são de acordo com o navegador usado para acessar o AEM Forms. Todos os navegadores suportam JPEG, GIF e PNG. Para obter mais informações, consulte a documentação específica do navegador sobre os formatos de imagem compatíveis.
 
-   ![Exemplo de arquivo de logotipo personalizado](assets/geometrixx-outdoors.png)
+   ![Arquivo de logotipo personalizado de exemplo](assets/geometrixx-outdoors.png)
 
    Exemplo: CustomLogo.png para ser usado como o logotipo personalizado
 
@@ -164,8 +164,8 @@ Use as etapas a seguir para criar a folha de estilos para renderizar o logotipo 
 
    Etapas para criar o arquivo customcss.css:
 
-   1. Clique com o botão direito do mouse no **css** e selecione **Criar > Criar arquivo**.
-   1. Na caixa de diálogo Novo arquivo, especifique o nome do CSS como `customcss.css`(não é possível usar um nome de arquivo diferente) e clique em **OK**.
+   1. Clique com o botão direito na pasta **css** e selecione **Criar > Criar arquivo**.
+   1. Na caixa de diálogo Novo Arquivo, especifique o nome do CSS como `customcss.css` (você não pode usar um nome de arquivo diferente) e clique em **OK**.
    1. Adicione o seguinte código ao arquivo css recém-criado. Em content:url no código, especifique o nome da imagem carregada na pasta imgs no CRXDE.
 
       ```css
@@ -180,6 +180,6 @@ Use as etapas a seguir para criar a folha de estilos para renderizar o logotipo 
 
 Limpe o cache do navegador e abra a instância da interface Criar correspondência no navegador para que você possa ver seu logotipo personalizado.
 
-![Criar interface do usuário de correspondência com logotipo personalizado](assets/0_1_introscreenshot-1.png)
+![Criar interface de usuário de correspondência com logotipo personalizado](assets/0_1_introscreenshot-1.png)
 
 O ícone personalizado na interface de Criar correspondência

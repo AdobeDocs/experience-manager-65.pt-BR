@@ -18,7 +18,7 @@ ht-degree: 9%
 
 # Descrição de componentes reutilizáveis {#description-of-reusable-components}
 
-O espaço de trabalho do AEM Forms é composto de [reutilizável](/help/forms/using/integrating-html-ws-components-web.md) componentes organizados em uma [estrutura de pastas](/help/forms/using/folder-structure.md) no CRX™. Cada componente tem modelo, visualização e arquivo de modelo no local especificado na estrutura de pastas, dependências do JavaScript™ em outros arquivos de componente, eventos acompanhados pelo componente e objetos JavaScript que acionam esses eventos no espaço de trabalho do AEM Forms. A lista completa de componentes reutilizáveis com nomes de arquivo e dependências constituintes é fornecida aqui.
+O espaço de trabalho do AEM Forms é composto de [componentes reutilizáveis](/help/forms/using/integrating-html-ws-components-web.md) que são organizados em uma [estrutura de pastas](/help/forms/using/folder-structure.md) específica no CRX™. Cada componente tem um modelo, uma visualização e um arquivo de modelo no local especificado na estrutura de pastas, as dependências da JavaScript™ em outros arquivos de componentes, os eventos acompanhados pelo componente e os objetos do JavaScript que acionam esses eventos no espaço de trabalho do AEM Forms. A lista completa de componentes reutilizáveis com nomes de arquivo e dependências constituintes é fornecida aqui.
 
 ## ListaTarefas {#tasklist}
 
@@ -923,7 +923,7 @@ O espaço de trabalho do AEM Forms é composto de [reutilizável](/help/forms/us
    <td>
     <ul>
      <li>userImageUrlFetched - modelo de informações do usuário</li>
-     <li>sessionReneved - modelo de informações do usuário <br /> </li>
+     <li>sessionReneved - modelo de userinfo <br /> </li>
      <li>sessionExpired - modelo de informações do usuário </li>
     </ul> </td>
   </tr>

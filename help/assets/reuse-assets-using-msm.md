@@ -22,7 +22,7 @@ ht-degree: 9%
 | AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/reuse-assets-using-msm.html?lang=en) |
 | AEM 6.5 | Este artigo |
 
-Funcionalidade de Gerenciamento de vários sites (MSM) no [!DNL Adobe Experience Manager] permite que os usuários reutilizem o conteúdo criado uma vez e reutilizado em vários locais da Web. O mesmo está disponível para ativos digitais que o MSM para [!DNL Assets] funcionalidade. Uso do MSM para [!DNL Assets], você pode:
+A funcionalidade do Gerenciador de Vários Sites (MSM) no [!DNL Adobe Experience Manager] permite que os usuários reutilizem conteúdo criado uma vez e reutilizado em vários locais da Web. O mesmo está disponível para ativos digitais que o MSM para a funcionalidade [!DNL Assets]. Ao usar o MSM para [!DNL Assets], você pode:
 
 * Crie ativos uma vez e depois faça cópias desses ativos para reutilizar em outras áreas do site.
 * Manter várias cópias em sincronização e atualizar a cópia principal original uma vez para enviar as alterações para as cópias secundárias.
@@ -30,13 +30,13 @@ Funcionalidade de Gerenciamento de vários sites (MSM) no [!DNL Adobe Experience
 
 ## Pré-requisitos {#prereq}
 
-Para usar o MSM para [!DNL Assets], instalar pelo menos [!DNL Experience Manager] 6.5 Service Pack 1. Para obter mais informações, consulte [as notas de versão do service pack mais recente](/help/release-notes/release-notes.md).
+Para usar o MSM para [!DNL Assets], instale pelo menos o [!DNL Experience Manager] 6.5 Service Pack 1. Para obter mais informações, consulte [as notas de versão do service pack mais recente](/help/release-notes/release-notes.md).
 
 ## Compreender os benefícios e os conceitos {#concepts}
 
 ### Como funciona e os benefícios {#how-it-works-and-the-benefits}
 
-Para entender os cenários de uso para reutilizar o mesmo conteúdo (texto e ativos) em vários locais da Web, consulte [possíveis cenários do MSM](/help/sites-administering/msm.md). [!DNL Experience Manager] O mantém um link entre o ativo original e suas cópias vinculadas, chamadas de Live Copies (LCs). A vinculação mantida permite que as alterações centralizadas sejam enviadas para muitas cópias ativas. Isso permite atualizações mais rápidas, eliminando as limitações do gerenciamento de cópias duplicadas. A propagação das alterações é centralizada e livre de erros. A funcionalidade permite espaço para atualizações limitadas a live copies selecionadas. Os usuários podem desanexar a vinculação, ou seja, interromper a herança, e fazer edições locais que não serão substituídas na próxima vez que a cópia principal for atualizada e as alterações forem implementadas. A desanexação pode ser feita para alguns campos de metadados selecionados ou para um ativo inteiro. Ela permite flexibilidade para atualizar localmente os ativos que foram originalmente herdados de uma cópia principal.
+Para entender os cenários de uso para reutilizar o mesmo conteúdo (texto e ativos) em vários locais da Web, consulte [cenários possíveis do MSM](/help/sites-administering/msm.md). [!DNL Experience Manager] mantém um vínculo entre o ativo original e suas cópias vinculadas, chamadas de Live Copies (LCs). A vinculação mantida permite que as alterações centralizadas sejam enviadas para muitas cópias ativas. Isso permite atualizações mais rápidas, eliminando as limitações do gerenciamento de cópias duplicadas. A propagação das alterações é centralizada e livre de erros. A funcionalidade permite espaço para atualizações limitadas a live copies selecionadas. Os usuários podem desanexar a vinculação, ou seja, interromper a herança, e fazer edições locais que não serão substituídas na próxima vez que a cópia principal for atualizada e as alterações forem implementadas. A desanexação pode ser feita para alguns campos de metadados selecionados ou para um ativo inteiro. Ela permite flexibilidade para atualizar localmente os ativos que foram originalmente herdados de uma cópia principal.
 
 O MSM mantém um relacionamento dinâmico entre o ativo de origem e suas live copies para que:
 
@@ -45,32 +45,32 @@ O MSM mantém um relacionamento dinâmico entre o ativo de origem e suas live co
 
 ### Glossário do MSM para [!DNL Assets] termos {#glossary}
 
-**Fonte:** Os ativos ou pastas originais. Cópia principal da qual as live copies são derivadas.
+**Source:** os ativos ou pastas originais. Cópia principal da qual as live copies são derivadas.
 
-**Live Copy:** A cópia dos ativos/pastas de origem que está em sincronização com sua origem. As Live Copies podem ser uma origem de mais Live Copies. Veja como criar LCs.
+**Live Copy:** a cópia dos ativos/pastas de origem que está em sincronização com sua origem. As Live Copies podem ser uma origem de mais Live Copies. Veja como criar LCs.
 
-**Herança:** Um link/referência entre um ativo/pasta de live copy e sua origem que o sistema usa para lembrar para onde enviar as atualizações. A herança existe em nível granular para campos de metadados. A herança pode ser removida para campos de metadados seletivos, preservando o relacionamento dinâmico entre a origem e sua live copy.
+**Herança:** um link/referência entre um ativo/pasta de live copy e sua origem que o sistema usa para lembrar para onde enviar as atualizações. A herança existe em nível granular para campos de metadados. A herança pode ser removida para campos de metadados seletivos, preservando o relacionamento dinâmico entre a origem e sua live copy.
 
-**Implantação:** Uma ação que envia as modificações feitas no downstream de origem para suas live copies. É possível atualizar uma ou mais live copies de uma só vez usando a ação de implantação. Consulte implantação.
+**Implantação:** uma ação que envia as modificações feitas no downstream de origem para suas live copies. É possível atualizar uma ou mais live copies de uma só vez usando a ação de implantação. Consulte implantação.
 
-**Configuração de implantação:** Regras que determinam quais propriedades são sincronizadas, como e quando. Essas configurações são aplicadas ao criar live copies; podem ser editadas posteriormente; e um filho pode herdar a configuração de implantação de seu ativo principal. Para MSM para [!DNL Assets], use apenas a configuração de implantação Padrão. As outras configurações de implantação não estão disponíveis para o MSM para [!DNL Assets].
+**Configuração de implantação:** regras que determinam quais propriedades são sincronizadas, como e quando. Essas configurações são aplicadas ao criar live copies; podem ser editadas posteriormente; e um filho pode herdar a configuração de implantação de seu ativo principal. Para o MSM para [!DNL Assets], use somente a configuração de implantação padrão. As outras configurações de implantação não estão disponíveis para o MSM para [!DNL Assets].
 
-**Sincronizar:** Outra ação, além da implantação, que faz com que haja paridade entre a origem e sua live copy enviando as atualizações da origem para as live copies. Uma sincronização é iniciada para uma live copy específica e a ação extrai as alterações da origem. Com essa ação, é possível atualizar apenas uma das live copies. Consulte ação de sincronização.
+**Sincronizar:** outra ação, além da implantação, que faz com que haja paridade entre a origem e sua live copy enviando as atualizações da origem para as live copies. Uma sincronização é iniciada para uma live copy específica e a ação extrai as alterações da origem. Com essa ação, é possível atualizar apenas uma das live copies. Consulte ação de sincronização.
 
-**Suspender:** Remova temporariamente o relacionamento dinâmico entre uma live copy e seu ativo/pasta de origem. Você pode retomar o relacionamento. Consulte suspender ação.
+**Suspender:** remova temporariamente a relação dinâmica entre uma live copy e seu ativo/pasta de origem. Você pode retomar o relacionamento. Consulte suspender ação.
 
-**Retomar:** Retomar o relacionamento dinâmico para que uma live copy comece a receber as atualizações da origem novamente. Consulte retomar ação.
+**Retomar:** retoma a relação dinâmica para que uma live copy comece a receber as atualizações da origem novamente. Consulte retomar ação.
 
-**Redefinir:** A ação Redefinir torna a live copy novamente uma réplica da origem, substituindo quaisquer alterações locais. Também remove os cancelamentos de herança e redefine a herança em todos os campos de metadados. Para fazer modificações locais no futuro, você deve cancelar novamente a herança de campos específicos. Consulte as modificações locais na LC.
+**Redefinir:** a ação de redefinição torna a live copy novamente uma réplica da origem, substituindo todas as alterações locais. Também remove os cancelamentos de herança e redefine a herança em todos os campos de metadados. Para fazer modificações locais no futuro, você deve cancelar novamente a herança de campos específicos. Consulte as modificações locais na LC.
 
-**Desanexar:** Remover de forma irrevogável o relacionamento dinâmico de um ativo/pasta de live copy. Após a ação de desconectar, as live copies nunca podem receber atualizações da origem, e deixam de ser uma live copy. Consulte remover relacionamento.
+**Desanexar:** Remova irrevogavelmente a relação dinâmica de um ativo/pasta de live copy. Após a ação de desconectar, as live copies nunca podem receber atualizações da origem, e deixam de ser uma live copy. Consulte remover relacionamento.
 
 ## Criar live copy de um ativo {#createlc}
 
 Para criar uma live copy de um ou mais ativos ou pastas de origem, siga um destes procedimentos:
 
 * Método 1: selecione os ativos de origem e clique em **[!UICONTROL Criar]** > **[!UICONTROL Live Copy]** na barra de ferramentas na parte superior.
-* Método 2: Entrada [!DNL Experience Manager] clique em **[!UICONTROL Criar]** > **[!UICONTROL Live Copy]** no canto superior direito da interface.
+* Método 2: na interface de usuário do [!DNL Experience Manager], clique em **[!UICONTROL Criar]** > **[!UICONTROL Live Copy]** no canto superior direito da interface.
 
 É possível criar live copies de um ativo ou pasta, uma por vez. É possível criar live copies derivadas de um ativo ou uma pasta que seja uma live copy. Fragmentos de conteúdo (CFs) não são compatíveis com o caso de uso. Ao tentar criar suas live copies, os CFs são copiados como estão, sem qualquer relação. Os CFs copiados são um instantâneo do tempo e não são atualizados quando os CFs originais são atualizados.
 
@@ -78,25 +78,25 @@ Para criar live copies usando o primeiro método, siga estas etapas:
 
 1. Selecione ativos ou pastas de origem. Na barra de ferramentas, clique em **[!UICONTROL Criar]** > **[!UICONTROL Live Copy]**.
 
-   ![Criar live copy a partir de [!DNL Experience Manager] interface](assets/create_lc1.png)
+   ![Criar live copy a partir da [!DNL Experience Manager] interface](assets/create_lc1.png)
 
-   *Figura: Criar live copy a partir de [!DNL Experience Manager] interface.*
+   *Figura: criar live copy a partir da interface [!DNL Experience Manager].*
 
 1. Selecione uma pasta de destino. Clique em **[!UICONTROL Avançar]**.
-1. Forneça o título e o nome. Os ativos não têm filhos. Ao criar uma live copy das pastas, você pode optar por incluir ou excluir pastas secundárias.
+1. Forneça o título e o nome. O Assets não tem filhos. Ao criar uma live copy das pastas, você pode optar por incluir ou excluir pastas secundárias.
 1. Selecione uma configuração de implantação. Clique em **[!UICONTROL Criar]**.
 
 Para criar live copies usando o segundo método, siga estas etapas:
 
-1. Entrada [!DNL Experience Manager] , no canto superior direito, clique em **[!UICONTROL Criar]** > **[!UICONTROL Live Copy]**.
+1. Na interface do [!DNL Experience Manager], no canto superior direito, clique em **[!UICONTROL Criar]** > **[!UICONTROL Live Copy]**.
 
-   ![Criar live copy a partir de [!DNL Experience Manager] interface](assets/create_lc2.png)
+   ![Criar live copy a partir da [!DNL Experience Manager] interface](assets/create_lc2.png)
 
-   *Figura: Criar live copy a partir de [!DNL Experience Manager] interface.*
+   *Figura: criar live copy a partir da interface [!DNL Experience Manager].*
 
 1. Selecione o ativo ou a pasta de origem. Clique em **[!UICONTROL Avançar]**.
 1. Selecione a pasta de destino. Clique em **[!UICONTROL Avançar]**.
-1. Forneça o título e o nome. Os ativos não têm filhos. Ao criar uma live copy das pastas, você pode optar por incluir ou excluir pastas secundárias.
+1. Forneça o título e o nome. O Assets não tem filhos. Ao criar uma live copy das pastas, você pode optar por incluir ou excluir pastas secundárias.
 1. Selecione uma configuração de implantação. Clique em **[!UICONTROL Criar]**.
 
 >[!NOTE]
@@ -105,7 +105,7 @@ Para criar live copies usando o segundo método, siga estas etapas:
 
 ## Exibir várias propriedades e status da origem e da live copy {#properties}
 
-Você pode visualizar as informações e os status relacionados ao MSM da live copy, como relacionamento, sincronização, implantações e muito mais, das várias áreas da [!DNL Experience Manager] interface do usuário.
+Você pode visualizar as informações e os status relacionados ao MSM da live copy, como relação, sincronização, implantações e muito mais, das várias áreas da interface do usuário do [!DNL Experience Manager].
 
 Os dois métodos a seguir funcionam para ativos e pastas:
 
@@ -114,7 +114,7 @@ Os dois métodos a seguir funcionam para ativos e pastas:
 
 >[!TIP]
 >
->Para verificar o status de algumas live copies separadas, use o primeiro método para verificar o **[!UICONTROL Propriedades]** página. Para verificar os status de muitas cópias ativas, use o segundo método para verificar a **[!UICONTROL Status do relacionamento]** página.
+>Para verificar o status de algumas live copies separadas, use o primeiro método para verificar a página **[!UICONTROL Propriedades]**. Para verificar os status de muitas cópias ativas, use o segundo método para verificar a página **[!UICONTROL Status do relacionamento]**.
 
 ### Informações e status de uma live copy {#statuslcasset}
 
@@ -125,7 +125,7 @@ Para verificar as informações e os status de um ativo de live copy ou de uma p
 
    ![As informações e os status da Live Copy são exibidos em um console em Propriedades](assets/lcfolder_info_properties.png)
 
-   *Figura: Informações e status da Live Copy.*
+   *Figura: informações e status da Live Copy.*
 
 1. Você pode ativar ou desativar se os ativos secundários pegarem emprestada a configuração da live copy.
 
@@ -133,53 +133,53 @@ Para verificar as informações e os status de um ativo de live copy ou de uma p
 
 ### Informações e status de todas as live copies de uma pasta {#status-lc-folder}
 
-[!DNL Experience Manager] O fornece um console para verificar os status de todas as live copies de uma pasta de origem. Esse console exibe o status de todos os ativos secundários.
+[!DNL Experience Manager] fornece um console para verificar os status de todas as live copies de uma pasta de origem. Esse console exibe o status de todos os ativos secundários.
 
 1. Selecione uma pasta de origem. Clique em **[!UICONTROL Propriedades]** na barra de ferramentas. Como alternativa, use o atalho de teclado `p`.
 1. Clique em **[!UICONTROL Origem da Live Copy]**. Para abrir o console, clique em **[!UICONTROL Visão geral da Live Copy]**. Esse painel fornece um status de nível superior de todos os ativos secundários.
 
-   ![Exibir status de live copies no console Live Copy da origem](assets/livecopy-statuses.png)
+   ![Exibir status de cópias dinâmicas no Console de Live Copy da origem](assets/livecopy-statuses.png)
 
-   *Figura: exibir status de live copies no [!UICONTROL Console da Live Copy] de origem.*
+   *Figura: exibir status de cópias dinâmicas no [!UICONTROL Console da Live Copy] da origem.*
 
 1. Para exibir as informações detalhadas sobre cada ativo na pasta live copy, selecione um ativo e clique em **[!UICONTROL Status do relacionamento]** na barra de ferramentas.
 
-   ![Informações detalhadas e status de um ativo filho de live copy em uma pasta](assets/livecopy_relationship_status.png)
+   ![Informações detalhadas e status de um ativo filho live copy em uma pasta](assets/livecopy_relationship_status.png)
 
    Informações detalhadas e status de um ativo filho de live copy em uma pasta
 
 >[!TIP]
 >
->Você pode ver rapidamente os status das live copies de outras pastas sem precisar navegar muito. Altere a pasta da parte superior intermediária do **[!UICONTROL Visão geral da Live Copy]** interface.
+>Você pode ver rapidamente os status das live copies de outras pastas sem precisar navegar muito. Altere a pasta na parte superior intermediária da interface da **[!UICONTROL Visão geral da Live Copy]**.
 
 ### Ações rápidas do painel Referências para origem {#refrailsource}
 
 Para um ativo ou pasta de origem, você pode ver as informações a seguir e realizar as seguintes ações diretamente no painel Referências:
 
 * Consulte os caminhos das live copies.
-* Abrir ou revelar uma live copy específica no [!DNL Experience Manager] interface do usuário.
+* Abra ou revele uma live copy específica na interface do usuário do [!DNL Experience Manager].
 * Sincronizar as atualizações a uma live copy específica.
 * Suspender relacionamento ou alterar configuração de implantação para uma live copy específica.
 * Acesse o console de visão geral da live copy.
 
-Selecione o ativo ou a pasta de origem, abra o painel à esquerda e clique em **[!UICONTROL Referências]**. Como alternativa, selecione um ativo ou pasta e use o atalho de teclado `Alt + 4`.
+Selecione o ativo ou pasta de origem, abra o painel à esquerda e clique em **[!UICONTROL Referências]**. Como alternativa, selecione um ativo ou pasta e use o atalho de teclado `Alt + 4`.
 
-![Ações e informações disponíveis no painel Referências para a fonte selecionada](assets/referencerail_source.png)
+![Ações e informações disponíveis no painel Referências para a origem selecionada](assets/referencerail_source.png)
 
-*Figura: ações e informações disponíveis no painel Referências para a fonte selecionada.*
+*Figura: ações e informações disponíveis no painel Referências para a origem selecionada.*
 
-Para uma live copy específica, clique em **[!UICONTROL Editar Live Copy]** para suspender o relacionamento ou alterar a configuração de implantação.
+Para uma live copy específica, clique em **[!UICONTROL Editar Live Copy]** para suspender a relação ou alterar a configuração de implantação.
 
-![Para uma live copy específica, a opção de suspender o relacionamento ou alterar a configuração de implantação pode ser acessada no painel Referências quando o ativo de origem for selecionado](assets/referencerail_editlc_options.png)
+![Para uma live copy específica, a opção de suspender a relação ou alterar a configuração de implantação pode ser acessada no painel Referências quando o ativo de origem for selecionado](assets/referencerail_editlc_options.png)
 
-*Figura: suspender o relacionamento ou alterar a configuração de implantação de uma live copy específica.*
+*Figura: Suspender relação ou alterar a configuração de implantação de uma live copy específica.*
 
 ### Ações rápidas do painel Referências para live copy {#ref-rail-lc}
 
 Para um ativo ou pasta de live copy, você pode ver as seguintes informações e realizar as seguintes ações diretamente no painel Referências:
 
 * Veja o caminho de sua origem.
-* Abrir ou revelar uma live copy específica no [!DNL Experience Manager] interface do usuário.
+* Abra ou revele uma live copy específica na interface do usuário do [!DNL Experience Manager].
 * Implante as atualizações.
 
 Selecione um ativo ou uma pasta de live copy, abra o painel à esquerda e clique em **[!UICONTROL Referências]**. Como alternativa, selecione um ativo ou pasta e use o atalho de teclado `Alt + 4`.
@@ -190,7 +190,7 @@ Selecione um ativo ou uma pasta de live copy, abra o painel à esquerda e clique
 
 ## Propagar modificações da origem para as live copies {#rolloutsync}
 
-Depois que uma origem é modificada, as alterações podem ser propagadas para as live copies usando uma ação de sincronização ou de implantação. Para compreender a diferença entre as duas ações, consulte [glossário](#glossary).
+Depois que uma origem é modificada, as alterações podem ser propagadas para as live copies usando uma ação de sincronização ou de implantação. Para entender a diferença entre as duas ações, consulte [glossário](#glossary).
 
 ### Ação de implantação {#rollout}
 
@@ -199,7 +199,7 @@ Depois que uma origem é modificada, as alterações podem ser propagadas para a
 1. Selecione um ativo de live copy ou uma pasta. Clique em **[!UICONTROL Propriedades]** na barra de ferramentas. Como alternativa, use o atalho de teclado `p`.
 1. Clique em **[!UICONTROL Origem da Live Copy]**. Clique em **[!UICONTROL Implantação]** na barra de ferramentas.
 1. Selecione as live copies que deseja atualizar. Clique em **[!UICONTROL Implantação]**.
-1. Para implantar as atualizações feitas nos ativos secundários, selecione **[!UICONTROL Origem da implantação e todos os filhos]**.
+1. Para implantar as atualizações feitas nos ativos filho, selecione **[!UICONTROL Implantar Source e todos os filhos]**.
 
    ![Implantar as modificações da origem em algumas ou todas as live copies](assets/livecopy_rollout_page.png)
 
@@ -219,11 +219,11 @@ Como alternativa, você pode iniciar uma ação de implantação no painel Refer
 
 Uma ação de sincronização extrai as modificações de uma origem somente para a live copy selecionada. A ação de sincronização respeita e mantém as modificações locais feitas após cancelar a herança. As modificações locais não são substituídas e a herança cancelada não é restabelecida. Você pode iniciar uma ação de sincronização de três maneiras.
 
-| Onde em [!DNL Experience Manager] interface | Quando e por que usar | Como usar |
+| Onde na interface [!DNL Experience Manager] | Quando e por que usar | Como usar |
 |---|---|---|
-| [!UICONTROL Referências] trilho | Sincronizar rapidamente quando a origem já estiver selecionada. | Consulte [Ações rápidas do painel Referências para origem](#refrailsource) |
-| Barra de ferramentas no [!UICONTROL Propriedades] página | Inicie uma sincronização quando as propriedades da live copy já estiverem abertas. | Consulte [Sincronizar uma live copy](#sync-lc) |
-| [!UICONTROL Visão geral da Live Copy] console | Sincronizar rapidamente vários ativos (não necessariamente todos) quando a pasta de origem for selecionada ou [!UICONTROL Visão geral da Live Copy] O console do já está aberto. A ação de sincronização é iniciada para um ativo de cada vez, mas é uma maneira mais rápida de fazer a sincronização de vários ativos de uma só vez. | Consulte [Ações em muitos ativos em uma pasta de live copy](#bulk-actions) |
+| Painel [!UICONTROL Referências] | Sincronizar rapidamente quando a origem já estiver selecionada. | Consulte [Ações rápidas do painel de Referências para a origem](#refrailsource) |
+| Barra de ferramentas na página [!UICONTROL Propriedades] | Inicie uma sincronização quando as propriedades da live copy já estiverem abertas. | Consulte [Sincronizar uma live copy](#sync-lc) |
+| Console da [!UICONTROL Visão geral da Live Copy] | Sincronize rapidamente vários ativos (não necessariamente todos) quando a pasta de origem estiver selecionada ou o console [!UICONTROL Visão geral da Live Copy] já estiver aberto. A ação de sincronização é iniciada para um ativo de cada vez, mas é uma maneira mais rápida de fazer a sincronização de vários ativos de uma só vez. | Ver [Ações em muitos ativos em uma pasta de live copy](#bulk-actions) |
 
 ### Sincronizar uma live copy {#sync-lc}
 
@@ -231,9 +231,9 @@ Para iniciar uma ação de sincronização, abra a página **[!UICONTROL Proprie
 
 Para ver os status e as informações relacionadas a uma ação de sincronização, consulte [Informações e status de uma live copy](#statuslcasset) e [Informações e status de todas as live copies de uma pasta](#status-lc-folder).
 
-![A ação Sincronizar puxa as alterações feitas na origem](assets/livecopy_sync.png)
+![A ação Sincronizar extrai as alterações feitas na origem](assets/livecopy_sync.png)
 
-*Figura: A ação Sincronizar extrai as alterações feitas na origem.*
+*Figura: a ação Sincronizar extrai as alterações feitas na origem.*
 
 >[!NOTE]
 >
@@ -251,43 +251,43 @@ Como alternativa, você pode suspender ou retomar rapidamente os relacionamentos
 
 Uma live copy é uma réplica da origem original quando ela é criada. Os valores de metadados de uma live copy são herdados da origem. Os campos de metadados mantêm individualmente a herança com os respectivos campos do ativo de origem.
 
-Entretanto, você tem a flexibilidade de fazer modificações locais em uma live copy para alterar algumas propriedades selecionadas. Para fazer modificações locais, cancele a herança da propriedade desejada. Quando a herança de um ou mais campos de metadados é cancelada, o relacionamento em tampo real do ativo e a herança dos outros campos de metadados são mantidas. Qualquer sincronização ou implementação não substitui as modificações locais. Para fazer isso, abra **[!UICONTROL Propriedades]** de um ativo de live copy, clique no link **[!UICONTROL cancelar herança]** ao lado de um campo de metadados.
+Entretanto, você tem a flexibilidade de fazer modificações locais em uma live copy para alterar algumas propriedades selecionadas. Para fazer modificações locais, cancele a herança da propriedade desejada. Quando a herança de um ou mais campos de metadados é cancelada, o relacionamento em tampo real do ativo e a herança dos outros campos de metadados são mantidas. Qualquer sincronização ou implementação não substitui as modificações locais. Para fazer isso, abra a página **[!UICONTROL Propriedades]** de um ativo de live copy, clique na opção **[!UICONTROL Cancelar herança]** ao lado de um campo de metadados.
 
-Você pode desfazer todas as modificações locais e reverter o ativo para o estado de sua origem. A ação Redefinir substitui irrevogável e instantaneamente todas as modificações locais e restabelece a herança em todos os campos de metadados. Para reverter, no **[!UICONTROL Propriedades]** de um ativo de live copy, clique em **[!UICONTROL Redefinir]** na barra de ferramentas.
+Você pode desfazer todas as modificações locais e reverter o ativo para o estado de sua origem. A ação Redefinir substitui irrevogável e instantaneamente todas as modificações locais e restabelece a herança em todos os campos de metadados. Para reverter, na página **[!UICONTROL Propriedades]** de um ativo de live copy, clique em **[!UICONTROL Redefinir]** na barra de ferramentas.
 
-![A ação de redefinição substitui as edições locais e traz a live copy parcialmente com sua origem.](assets/livecopy_reset.png)
+![A ação de redefinição substitui edições locais e traz a live copy na parte com sua origem.](assets/livecopy_reset.png)
 
 *Figura: a ação de redefinição substitui as edições locais e traz a live copy na parte com sua origem.*
 
 ## Remover relacionamento ao vivo {#detach}
 
-Você pode remover completamente a relação entre uma origem e uma live copy usando a ação Desconectar. A live copy se torna um ativo ou pasta independente depois de ser desanexada. É exibido como um novo ativo no [!DNL Experience Manager] imediatamente após a desconexão. Para desanexar uma live copy da origem, siga estas etapas.
+Você pode remover completamente a relação entre uma origem e uma live copy usando a ação Desconectar. A live copy se torna um ativo ou pasta independente depois de ser desanexada. Ele é exibido como um novo ativo na interface [!DNL Experience Manager], imediatamente após a desanexação. Para desanexar uma live copy da origem, siga estas etapas.
 
 1. Selecione um ativo ou uma pasta de live copy. Clique em **[!UICONTROL Propriedades]** na barra de ferramentas. Como alternativa, use o atalho de teclado `p`.
 
 1. Clique em **[!UICONTROL Live Copy]**. Clique em **[!UICONTROL Desanexar]** na barra de ferramentas. Clique em **[!UICONTROL Desanexar]** da caixa de diálogo apresentada.
 
-   ![A ação Desanexar remove completamente a relação entre a origem e a live copy](assets/livecopy_detach.png)
+   ![A ação de desanexar remove completamente a relação entre a origem e a live copy](assets/livecopy_detach.png)
 
-   *Figura: a ação Desconectar remove completamente a relação entre a origem e a live copy.*
+   *Figura: a ação Desanexar remove completamente a relação entre a origem e a live copy.*
 
    >[!CAUTION]
    >
-   >O relacionamento é removido imediatamente ao clicar em **[!UICONTROL Desanexar]** da caixa de diálogo. Não é possível desfazer clicando em **[!UICONTROL Cancelar]** na página Propriedades.
+   >A relação é removida imediatamente quando você clica em **[!UICONTROL Desanexar]** da caixa de diálogo. Você não pode desfazer clicando em **[!UICONTROL Cancelar]** na página Propriedades.
 
-Como alternativa, você pode desanexar rapidamente vários ativos em uma pasta live copy da **[!UICONTROL Visão geral da Live Copy]** console. Consulte [Realizar ações em muitos ativos nas pastas de live copy](#bulk-actions).
+Como alternativa, você pode desanexar rapidamente vários ativos em uma pasta de live copy a partir do console **[!UICONTROL Visão geral da Live Copy]**. Consulte [Realizar ações em muitos ativos nas pastas de live copy](#bulk-actions).
 
 ## Ações em massa em uma pasta de live copy {#bulk-actions}
 
-Se você tiver vários ativos em uma pasta de live copy, iniciar ações em cada ativo pode ser cansativo. É possível iniciar rapidamente as ações básicas em muitos ativos no [!UICONTROL Console da Live Copy]. Os métodos acima continuam a funcionar para ativos individuais.
+Se você tiver vários ativos em uma pasta de live copy, iniciar ações em cada ativo pode ser cansativo. Você pode iniciar rapidamente as ações básicas em muitos ativos no [!UICONTROL Console da Live Copy]. Os métodos acima continuam a funcionar para ativos individuais.
 
 1. Selecione uma pasta de origem. Clique em **[!UICONTROL Propriedades]** na barra de ferramentas. Como alternativa, use o atalho de teclado `p`.
 1. Clique em **[!UICONTROL Origem da Live Copy]**. Para abrir o console, clique em **[!UICONTROL Visão geral da Live Copy]**.
-1. Nesse painel, selecione um ativo de live copy de uma pasta live copy. Clique nas ações desejadas na barra de ferramentas. As ações disponíveis são **[!UICONTROL Sincronizar]**, **[!UICONTROL Redefinir]**, **[!UICONTROL Suspender]**, e **[!UICONTROL Desanexar]**. É possível iniciar rapidamente essas ações em qualquer ativo em qualquer quantidade de pastas de live copy que estejam em um relacionamento dinâmico com a pasta de origem selecionada.
+1. Nesse painel, selecione um ativo de live copy de uma pasta live copy. Clique nas ações desejadas na barra de ferramentas. As ações disponíveis são **[!UICONTROL Sincronizar]**, **[!UICONTROL Redefinir]**, **[!UICONTROL Suspender]** e **[!UICONTROL Desanexar]**. É possível iniciar rapidamente essas ações em qualquer ativo em qualquer quantidade de pastas de live copy que estejam em um relacionamento dinâmico com a pasta de origem selecionada.
 
-   ![Atualize facilmente muitos ativos em pastas de live copy a partir do console Visão geral da Live Copy](assets/livecopyconsole_update_many_assets.png)
+   ![Atualize facilmente muitos ativos nas pastas de live copy a partir do console Visão geral da Live Copy](assets/livecopyconsole_update_many_assets.png)
 
-   *Figura: atualize facilmente muitos ativos nas pastas de live copy do [!UICONTROL Visão geral da Live Copy] console.*
+   *Figura: atualize facilmente muitos ativos nas pastas de live copy a partir do console [!UICONTROL Visão geral da Live Copy].*
 
 ## Impacto das tarefas de gerenciamento de ativos nas live copies {#manage-assets}
 
@@ -304,13 +304,13 @@ Live copies e origens são ativos ou pastas que podem ser gerenciados, até cert
 
 Em mais cenários, o MSM para [!DNL Assets] corresponde ao comportamento do MSM para a funcionalidade do Sites. Algumas diferenças importantes a serem observadas são:
 
-* Blueprint no MSM para [!DNL Sites] é chamado de origem da Live Copy no MSM para [!DNL Assets].
-* No Sites, você pode comparar um blueprint e sua live copy, mas isso não é possível no [!DNL Assets] para comparar uma origem à sua live copy.
-* Não é possível editar uma live copy no [!DNL Assets].
-* Os sites geralmente têm filhos, mas [!DNL Assets] não. A opção de incluir ou excluir secundários não está presente ao criar live copies de ativos individuais.
+* O blueprint no MSM para [!DNL Sites] é chamado de origem de Live Copy no MSM para [!DNL Assets].
+* No Sites, você pode comparar um blueprint e sua live copy, mas não é possível no [!DNL Assets] comparar uma origem à sua live copy.
+* Você não pode editar uma live copy em [!DNL Assets].
+* Sites geralmente têm filhos, mas [!DNL Assets] não tem. A opção de incluir ou excluir secundários não está presente ao criar live copies de ativos individuais.
 * A remoção da etapa de capítulos no assistente de criação de site não é suportada no MSM para [!DNL Assets].
-* A configuração de bloqueios de MSM nas propriedades da página (interface habilitada para toque) não é compatível com o MSM para [!DNL Assets].
-* Para MSM para [!DNL Assets], use apenas o **[!UICONTROL Configuração de implantação padrão]**. As outras configurações de implantação não estão disponíveis para o MSM para [!DNL Assets].
+* Não há suporte para a configuração de bloqueios de MSM nas propriedades da página (interface habilitada para toque) no MSM para [!DNL Assets].
+* Para o MSM para [!DNL Assets], use apenas a **[!UICONTROL Configuração de implantação padrão]**. As outras configurações de implantação não estão disponíveis para o MSM para [!DNL Assets].
 
 ## Práticas recomendadas {#best-practices}
 

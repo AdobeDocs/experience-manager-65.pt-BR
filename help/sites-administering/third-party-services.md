@@ -32,7 +32,7 @@ Com o AEM, você pode integrar o com os seguintes produtos não-Adobe prontos pa
 * YouTube - compartilhamento de vídeo
 <!-- * Silverpop Engage - marketing automation, email, mobile, and social NO LONGER EXISTS; ITS REPLACEMENT IS UNKNOWN -->
 
-Além disso, é possível integrar o AEM ao [Adobe Creative Cloud](/help/assets/aem-cc-integration-best-practices.md).
+Além disso, você pode integrar o AEM à [Adobe Creative Cloud](/help/assets/aem-cc-integration-best-practices.md).
 
 ## Integração com o Salesforce {#integrating-with-salesforce}
 
@@ -55,14 +55,14 @@ For information about integrating your AEM site and ExactTarget, see [Integratin
 
 As soluções de marketing por email da ExactTarget permitem que empresas de todos os portes projetem e entreguem campanhas altamente direcionadas, de missão crítica e totalmente integradas.
 
-Para obter informações sobre como integrar seu site AEM e ExactTarget, consulte [Configurar ExactTarget](/help/sites-administering/exacttarget.md).
+Para obter informações sobre como integrar seu site AEM e ExactTarget, consulte [Configurando ExactTarget](/help/sites-administering/exacttarget.md).
 
 ## Integração com o Facebook e Twitter {#integrating-with-facebook-and-twitter}
 
 O facebook e o Twitter são serviços populares de redes sociais. A integração do AEM com o Facebook e o Twitter permite que as organizações forneçam uma opção de logon no Facebook ou no Twitter em propriedades digitais próprias e, em seguida, personalizem a experiência do usuário com base nas informações do perfil. Os profissionais de marketing também podem combinar informações de perfil com dados de fontes adicionais, como um sistema de gerenciamento de relacionamento com o cliente ou um perfil de site, para criar uma visualização unificada do cliente.
 
-Consulte [Logon no Social](/help/communities/social-login.md) para obter mais informações.
+Consulte [Logon social](/help/communities/social-login.md) para obter mais informações.
 
 ## Integração com outros provedores {#integrating-with-other-providers}
 
-O AEM permite que você se conecte a outros provedores externos com uma [Fragmento de análise genérico.](/help/sites-administering/external-providers.md)
+O AEM permite que você se conecte a outros provedores externos com um [Trecho Genérico do Analytics.](/help/sites-administering/external-providers.md)

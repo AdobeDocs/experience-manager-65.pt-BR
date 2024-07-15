@@ -28,20 +28,20 @@ Que interage com o
 
 Para obter informações relacionadas à marcação, consulte:
 
-* [Administração de tags](/help/sites-administering/tags.md) para obter informações sobre como criar e gerenciar tags e às quais tags de conteúdo foram aplicadas.
-* [Uso de tags](/help/sites-authoring/tags.md) para obter informações sobre como marcar conteúdo.
+* [Administrando Tags](/help/sites-administering/tags.md) para obter informações sobre como criar e gerenciar tags e às quais as tags de conteúdo foram aplicadas.
+* [Usando Marcas](/help/sites-authoring/tags.md) para obter informações sobre como marcar conteúdo.
 
 ## Visão geral da API de marcação {#overview-of-the-tagging-api}
 
-A execução do [estrutura de marcação](/help/sites-developing/framework.md) no AEM permite o gerenciamento de tags e conteúdo de tags usando a API JCR. O TagManager garante que as tags sejam inseridas como valores na variável `cq:tags` As propriedades de matriz de sequência de caracteres não são duplicadas. Elas removem as TagIDs que apontam para tags não existentes e atualizam as TagIDs para tags movidas ou mescladas. O TagManager usa um ouvinte de observação JCR que reverte quaisquer alterações incorretas. As classes principais estão na [com.day.cq.tagging](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/tagging/package-summary.html) pacote:
+A implementação da [estrutura de marcação](/help/sites-developing/framework.md) no AEM permite o gerenciamento de tags e conteúdo de tags usando a API JCR. O TagManager garante que as marcas inseridas como valores na propriedade de matriz da cadeia de caracteres `cq:tags` não sejam duplicadas, ele remove TagIDs que apontam para marcas não existentes e atualiza TagIDs para marcas movidas ou mescladas. O TagManager usa um ouvinte de observação JCR que reverte quaisquer alterações incorretas. As classes principais estão no pacote [com.day.cq.tagging](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/tagging/package-summary.html):
 
 * JcrTagManagerFactory - retorna uma implementação baseada em JCR de um `TagManager`. É a implementação de referência da API de marcação.
-* `TagManager` - permite a resolução e a criação de tags por caminhos e nomes.
-* `Tag` - define o objeto de tag.
+* `TagManager` - permite resolver e criar marcas por caminhos e nomes.
+* `Tag` - define o objeto de marca.
 
 ### Obter um TagManager baseado em JCR {#getting-a-jcr-based-tagmanager}
 
-Para recuperar uma instância do TagManager, você deve ter um JCR `Session` e para chamar `getTagManager(Session)`:
+Para recuperar uma instância do TagManager, você deve ter um JCR `Session` e chamar `getTagManager(Session)`:
 
 ```java
 @Reference
@@ -50,7 +50,7 @@ JcrTagManagerFactory jcrTagManagerFactory;
 TagManager tagManager = jcrTagManagerFactory.getTagManager(session);
 ```
 
-No contexto Sling típico, você também pode adaptar a uma `TagManager` do `ResourceResolver`:
+No contexto Sling típico, você também pode adaptar a um `TagManager` do `ResourceResolver`:
 
 ```java
 TagManager tagManager = resourceResolver.adaptTo(TagManager.class);
@@ -58,7 +58,7 @@ TagManager tagManager = resourceResolver.adaptTo(TagManager.class);
 
 ### Recuperação de um objeto de tag {#retrieving-a-tag-object}
 
-A `Tag` pode ser recuperado por meio da variável `TagManager`, resolvendo uma tag existente ou criando uma:
+Um `Tag` pode ser recuperado por meio de `TagManager`, resolvendo uma marca existente ou criando uma:
 
 ```java
 Tag tag = tagManager.resolve("my/tag"); // for existing tags
@@ -66,7 +66,7 @@ Tag tag = tagManager.resolve("my/tag"); // for existing tags
 Tag tag = tagManager.createTag("my/tag"); // for new tags
 ```
 
-Para a implementação baseada em JCR, que mapeia `Tags` no JCR `Nodes`, você pode usar o do Sling diretamente `adaptTo` mecanismo se você tiver o recurso (por exemplo, como `/content/cq:tags/default/my/tag`):
+Para a implementação baseada em JCR, que mapeia `Tags` para JCR `Nodes`, você pode usar diretamente o mecanismo `adaptTo` do Sling se tiver o recurso (por exemplo, como `/content/cq:tags/default/my/tag`):
 
 ```java
 Tag tag = resource.adaptTo(Tag.class);
@@ -81,7 +81,7 @@ Resource node = tag.adaptTo(Resource.class);
 
 >[!NOTE]
 >
->Adaptando-se diretamente do `Node` para `Tag` não é possível, porque `Node` não implementa o Sling `Adaptable.adaptTo(Class)` método.
+>Adaptar diretamente de `Node` a `Tag` não é possível, porque `Node` não implementa o método Sling `Adaptable.adaptTo(Class)`.
 
 ### Obter e definir tags {#getting-and-setting-tags}
 
@@ -108,7 +108,7 @@ long count = tag.getCount();
 
 >[!NOTE]
 >
->O válido `RangeIterator` usar é:
+>O `RangeIterator` válido a ser usado é:
 >
 >`com.day.cq.commons.RangeIterator`
 
@@ -120,7 +120,7 @@ tagManager.deleteTag(tag);
 
 ### Replicação de tags {#replicating-tags}
 
-É possível usar o serviço de replicação ( `Replicator`) com tags, pois as tags são do tipo `nt:hierarchyNode`:
+É possível usar o serviço de replicação ( `Replicator`) com marcas porque as marcas são do tipo `nt:hierarchyNode`:
 
 ```java
 replicator.replicate(session, replicationActionType, tagPath);
@@ -128,11 +128,11 @@ replicator.replicate(session, replicationActionType, tagPath);
 
 ## Marcação no lado do cliente {#tagging-on-the-client-side}
 
-O widget de formulário `CQ.tagging.TagInputField` é para inserir tags. Ele tem um menu pop-up para seleção entre tags existentes, inclui preenchimento automático e muitos outros recursos. Seu xtype é `tags`.
+O widget de formulário `CQ.tagging.TagInputField` serve para inserir marcas. Ele tem um menu pop-up para seleção entre tags existentes, inclui preenchimento automático e muitos outros recursos. Seu xtype é `tags`.
 
 ## O coletor de lixo da tag {#the-tag-garbage-collector}
 
-O coletor de lixo da tag é um serviço em segundo plano que limpa as tags ocultas e não usadas. Tags ocultas e não usadas são as tags abaixo `/content/cq:tags` que tenham um `cq:movedTo` e não são usados em um nó de conteúdo - têm uma contagem de zero. Ao usar esse processo de exclusão lento, o nó de conteúdo (ou seja, o `cq:tags` ) não precisa ser atualizada como parte da operação de mover ou mesclar. As referências no `cq:tags` são atualizados automaticamente quando a variável `cq:tags` A propriedade do é atualizada, por exemplo, por meio da caixa de diálogo de propriedades da página.
+O coletor de lixo da tag é um serviço em segundo plano que limpa as tags ocultas e não usadas. Marcas ocultas e não usadas são marcas abaixo de `/content/cq:tags` que têm uma propriedade `cq:movedTo` e não são usadas em um nó de conteúdo - elas têm uma contagem igual a zero. Ao usar esse processo de exclusão lento, o nó de conteúdo (ou seja, a propriedade `cq:tags`) não precisa ser atualizado como parte da operação de movimentação ou mesclagem. As referências na propriedade `cq:tags` são atualizadas automaticamente quando a propriedade `cq:tags` é atualizada, por exemplo, por meio da caixa de diálogo de propriedades da página.
 
 O coletor de lixo da tag é executado por padrão uma vez por dia. Você pode configurá-lo em:
 
@@ -144,17 +144,17 @@ http://localhost:4502/system/console/configMgr/com.day.cq.tagging.impl.TagGarbag
 
 A pesquisa de tags e a listagem de tags funcionam da seguinte maneira:
 
-* A pesquisa por TagID pesquisa as tags que têm a propriedade `cq:movedTo` Defina como TagID e siga as etapas de `cq:movedTo` TagIDs.
+* A pesquisa por TagID pesquisa as tags que têm a propriedade `cq:movedTo` definida como TagID e segue pelas TagIDs `cq:movedTo`.
 
-* A pesquisa por título de tag pesquisa somente as tags que não têm um `cq:movedTo` propriedade.
+* A pesquisa por Título de marca somente pesquisa as marcas que não têm a propriedade `cq:movedTo`.
 
 ## Tags em diferentes idiomas {#tags-in-different-languages}
 
-Conforme descrito na documentação para administração de tags, na seção [Gerenciamento de tags em diferentes idiomas](/help/sites-administering/tags.md#managing-tags-in-different-languages), uma tag `title`podem ser definidos em diferentes idiomas. Em seguida, uma propriedade que diferencia idiomas é adicionada ao nó da tag. Essa propriedade tem o formato `jcr:title.<locale>`, por exemplo, `jcr:title.fr` pela tradução francesa. A variável `<locale>` deve ser uma sequência de caracteres de localidade ISO em minúsculas e usar &quot;_&quot; em vez de &quot;-&quot;, por exemplo: `de_ch`.
+Conforme descrito na documentação para administração de tags, na seção [Gerenciamento de Tags em Diferentes Idiomas](/help/sites-administering/tags.md#managing-tags-in-different-languages), uma tag `title` pode ser definida em diferentes idiomas. Em seguida, uma propriedade que diferencia idiomas é adicionada ao nó da tag. Essa propriedade tem o formato `jcr:title.<locale>`, por exemplo, `jcr:title.fr` para a tradução em francês. O `<locale>` deve ser uma cadeia de caracteres de localidade ISO em minúsculas e usar &quot;_&quot; em vez de &quot;-&quot;, por exemplo: `de_ch`.
 
-Quando a variável **Animais** é adicionada à guia **Produtos** página, o valor `stockphotography:animals` é adicionado à propriedade `cq:tags` do nó /content/geometrixx/en/products/jcr:content. A tradução é referenciada a partir do nó da tag.
+Quando a marca **Animais** é adicionada à página **Produtos**, o valor `stockphotography:animals` é adicionado à propriedade `cq:tags` do nó /content/geometrixx/en/products/jcr:content. A tradução é referenciada a partir do nó da tag.
 
-A API do lado do servidor localizou `title`Métodos relacionados ao:
+A API do lado do servidor localizou métodos relacionados a `title`:
 
 * [com.day.cq.tagging.Tag](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/tagging/Tag.html)
 
@@ -180,24 +180,24 @@ No AEM, o idioma pode ser obtido no idioma da página ou no idioma do usuário:
 
    * `slingRequest.getLocale()`
 
-A variável `currentPage` e `slingRequest` estão disponíveis em um JSP por meio do [&lt;cq:definedobjects>](/help/sites-developing/taglib.md) tag.
+O `currentPage` e o `slingRequest` estão disponíveis em um JSP por meio da marca [&lt;cq:definedObjects>](/help/sites-developing/taglib.md).
 
-Para marcação, a localização depende do contexto como tag `titles`pode ser exibido no idioma da página, no idioma do usuário ou em qualquer outro idioma.
+Para marcação, a localização depende do contexto, pois a marca `titles` pode ser exibida no idioma da página, no idioma do usuário ou em qualquer outro idioma.
 
 ### Adicionar um novo idioma à caixa de diálogo Editar tag {#adding-a-new-language-to-the-edit-tag-dialog}
 
-O procedimento a seguir descreve como adicionar um idioma (finlandês) à **Editar tag** diálogo:
+O procedimento a seguir descreve como adicionar um idioma (finlandês) à caixa de diálogo **Editar tag**:
 
-1. Entrada **CRXDE**, edite a propriedade de vários valores `languages` do nó `/content/cq:tags`.
+1. No **CRXDE**, edite a propriedade de vários valores `languages` do nó `/content/cq:tags`.
 
-1. Adicionar `fi_fi` - que representa a localidade finlandesa - e salve as alterações.
+1. Adicione `fi_fi` - que representa a localidade finlandesa - e salve as alterações.
 
-O novo idioma (finlandês) agora está disponível na caixa de diálogo de tag das propriedades da página e no **Editar tag** caixa de diálogo ao editar uma tag no **Marcação** console.
+O novo idioma (finlandês) agora está disponível na caixa de diálogo de marca das propriedades da página e na caixa de diálogo **Editar marca** ao editar uma marca no console **Marcação**.
 
 >[!NOTE]
 >
->A nova língua deve ser uma das línguas reconhecidas pelo AEM. Ou seja, ele deve estar disponível como um nó abaixo `/libs/wcm/core/resources/languages`.
+>A nova língua deve ser uma das línguas reconhecidas pelo AEM. Ou seja, ele deve estar disponível como um nó abaixo de `/libs/wcm/core/resources/languages`.
 
 >[!CAUTION]
 >
->A instalação de conteúdo pronto para uso relacionado à marcação por meio de um pacote de atualização oficial (incluindo Service Packs, Service Packs de Segurança, Extended Feature Packs, Cumulative Feature Packs, patches e outros) redefine a propriedade de idiomas do `/content/cq:tags` para o padrão. Portanto, é necessário adicioná-lo das propriedades antes da instalação.
+>A instalação de conteúdo pronto para uso relacionado à marcação por meio de um pacote de atualização oficial (incluindo Service Packs, Service Packs de Segurança, Extended Feature Packs, Cumulative Feature Packs, patches e outros) redefine a propriedade de idiomas do nó `/content/cq:tags` para o padrão. Portanto, é necessário adicioná-lo das propriedades antes da instalação.

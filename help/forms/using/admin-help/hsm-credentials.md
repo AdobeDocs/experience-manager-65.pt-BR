@@ -36,9 +36,9 @@ As assinaturas digitais de formulários AEM podem usar credenciais armazenadas e
 1. Clique em Test HSM Connectivity (Testar conectividade HSM). Se o AEM conseguir se conectar ao dispositivo HSM, será exibida uma mensagem informando que o HSM está disponível. Clique em Avançar.
 1. Use o Nome do token, a ID do slot ou o Índice da lista de slots para identificar onde as credenciais são armazenadas no HSM.
 
-   * **Nome do token:** Corresponde ao nome da partição HSM a ser usada (por exemplo, HSMPART1).
-   * **ID do Slot:** A ID do slot é um identificador de slot do tipo de dados long.
-   * **Índice da lista de slots:** Se você selecionar Índice da lista de slots, defina as Informações do slot para um número inteiro que corresponda ao slot. Este é um índice baseado em 0, o que significa que se o cliente for registrado primeiro com a partição HSMPART1, HSMPART1 será consultado usando o valor 0 de SlotListIndex.
+   * **Nome do Token:** Corresponde ao nome da partição HSM a ser usada (por exemplo, HSMPART1).
+   * **ID do Slot:** A ID do Slot é um identificador de slot do tipo de dados long.
+   * **Índice da Lista de Slots:** Se você selecionar Índice da Lista de Slots, defina as Informações de Slot para um número inteiro que corresponda ao slot. Este é um índice baseado em 0, o que significa que se o cliente for registrado primeiro com a partição HSMPART1, HSMPART1 será consultado usando o valor 0 de SlotListIndex.
 
 1. Na caixa Token Pin, digite a senha necessária para acessar a chave HSM e clique em Next.
 1. Na caixa Credenciais, selecione uma credencial. Clique em Salvar.
@@ -52,17 +52,17 @@ As assinaturas digitais de formulários AEM podem usar credenciais armazenadas e
 1. Na lista Dispositivo HSM, selecione o fabricante do dispositivo HSM onde a credencial está armazenada.
 1. Na lista Tipo de slot, selecione ID do slot, Índice do slot ou Nome do token e especifique um valor na caixa Informações do slot. Os formulários AEM usam essas configurações para determinar onde as credenciais são armazenadas no HSM.
 
-   * **Nome do token:** Corresponde a um nome de partição (por exemplo, HSMPART1).
-   * **ID do Slot:** A ID do slot é um número inteiro que corresponde ao slot, que por sua vez corresponde a uma partição. Por exemplo, o cliente (Forms Server) registrou-se primeiro com a partição HSMPART1. Isso mapeia o slot 1 para a partição HSMPART1 deste cliente. Como HSMPART1 é a primeira partição registrada, a ID do Slot é 1 e você definiria Informações do Slot como 1.
+   * **Nome do Token:** Corresponde a um nome de partição (por exemplo, HSMPART1).
+   * **ID do Slot:** A ID do Slot é um número inteiro que corresponde ao slot, que por sua vez corresponde a uma partição. Por exemplo, o cliente (Forms Server) registrou-se primeiro com a partição HSMPART1. Isso mapeia o slot 1 para a partição HSMPART1 deste cliente. Como HSMPART1 é a primeira partição registrada, a ID do Slot é 1 e você definiria Informações do Slot como 1.
 
      A ID do slot é definida cliente por cliente. Se você registrou uma segunda máquina em uma partição diferente (por exemplo, HSMPART2 no mesmo dispositivo HSM), o slot 1 seria associado à partição HSMPART2 desse cliente.
 
-   * **Índice de Slot:** Se você selecionar Índice de slot, defina as Informações do slot para um número inteiro que corresponda ao slot. Este é um índice baseado em 0, o que significa que se o cliente for registrado primeiro com a partição HSMPART1, o slot 1 será mapeado para o HSMPART1 deste cliente. Como HSMPART1 é a primeira partição registrada, o Índice de Slot é 0.
+   * **Índice de Slot:** Se você selecionar Índice de Slot, defina as Informações de Slot para um número inteiro que corresponda ao slot. Este é um índice baseado em 0, o que significa que se o cliente for registrado primeiro com a partição HSMPART1, o slot 1 será mapeado para o HSMPART1 deste cliente. Como HSMPART1 é a primeira partição registrada, o Índice de Slot é 0.
 
 1. Selecione uma dessas opções e forneça o caminho:
 
-   * **Certificado**: (Não é necessário se estiver usando SHA1) Clique em Procurar e localize o caminho para a chave pública da credencial que você está usando.
-   * **Certificado SHA1:** (Não é necessário se estiver usando um certificado físico) Digite o valor SHA1 (impressão digital) do arquivo de chave pública (.cer) da credencial que você está usando. Verifique se não há espaços usados no valor SHA1.
+   * **Certificado**: (Não é necessário se você estiver usando o SHA1) Clique em Procurar e localize o caminho para a chave pública da credencial que você está usando.
+   * **SHA1 do certificado:** (Não é necessário se estiver usando um certificado físico) Digite o valor SHA1 (impressão digital) do arquivo de chave pública (.cer) da credencial que você está usando. Verifique se não há espaços usados no valor SHA1.
 
 1. Na caixa Senha, digite a senha necessária para acessar a chave HSM para as informações de slot fornecidas e, em seguida, clique em Salvar.
 
@@ -98,9 +98,9 @@ Redefina as conexões abertas para um dispositivo HSM após qualquer interrupç�
 
 ## Configurar o suporte a HSM remoto {#configure-remote-hsm-support}
 
-O AEM Forms usa um mecanismo IPC/RPC baseado em serviços da Web. Esse mecanismo permite aos formulários AEM usar um HSM instalado em um computador remoto. Para usar essa funcionalidade, instale o serviço Web no computador remoto onde o HSM está instalado. Consulte [Configuração do suporte HSM para AEM Forms ES usando Sun JDK na plataforma Windows de 64 bits](https://kb2.adobe.com/cps/808/cpsid_80835.html)para obter mais informações.
+O AEM Forms usa um mecanismo IPC/RPC baseado em serviços da Web. Esse mecanismo permite aos formulários AEM usar um HSM instalado em um computador remoto. Para usar essa funcionalidade, instale o serviço Web no computador remoto onde o HSM está instalado. Consulte [Configurando o suporte HSM para formulários AEM ES usando o Sun JDK na plataforma Windows de 64 bits](https://kb2.adobe.com/cps/808/cpsid_80835.html)para obter mais informações.
 
 Esse mecanismo não oferece suporte à criação online de perfis HSM ou verificações de status. No entanto, há duas maneiras de criar perfis HSM e executar verificações de status:
 
-* Crie uma credencial de cliente de formulários AEM ao passá-la para o Certificado do signatário. Siga as etapas em [Configuração do suporte HSM para AEM Forms ES usando Sun JDK na plataforma Windows de 64 bits](https://kb2.adobe.com/cps/808/cpsid_80835.html). O local do serviço Web é passado como uma propriedade de credencial. Perfis HSM offline criados usando o certificado der ou o certificado SHA-1 hex também são compatíveis. No entanto, se você tiver atualizado para formulários AEM de uma versão anterior do AEM, faça alterações no cliente porque a credencial transportou informações de certificado e serviço da Web.
+* Crie uma credencial de cliente de formulários AEM ao passá-la para o Certificado do signatário. Siga as etapas em [Configurando o suporte HSM para formulários AEM ES usando o Sun JDK na plataforma Windows de 64 bits](https://kb2.adobe.com/cps/808/cpsid_80835.html). O local do serviço Web é passado como uma propriedade de credencial. Perfis HSM offline criados usando o certificado der ou o certificado SHA-1 hex também são compatíveis. No entanto, se você tiver atualizado para formulários AEM de uma versão anterior do AEM, faça alterações no cliente porque a credencial transportou informações de certificado e serviço da Web.
 * O local do Serviço Web está especificado no console de administração para o serviço de Assinatura. (Consulte [Configurações do serviço de assinatura](/help/forms/using/admin-help/configure-service-settings.md#signature-service-settings).) Aqui, o cliente carregava somente o alias do perfil HSM no armazenamento de confiança. Você pode usar essa opção sem interrupções sem nenhuma alteração no cliente, mesmo se tiver atualizado para formulários AEM de uma versão anterior dos formulários AEM. Essa opção não é compatível com perfis HSM que usam o certificado SHA-1.

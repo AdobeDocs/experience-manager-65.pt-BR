@@ -36,7 +36,7 @@ Se quiser saber como a Adobe recomenda resolver casos de negócios headless com 
 
 >[!TIP]
 >
->Se preferir **aprenda fazendo** e têm conhecimento técnico, visitem os tutoriais AEM Headless, que são organizados por API e estrutura e estão disponíveis no [Seção Recursos adicionais](#additional-resources) no final deste documento.
+>Se preferir **aprender fazendo** e tiver conhecimento técnico, visite os tutoriais do AEM Headless, que são organizados por API e estrutura e estão disponíveis na [seção Recursos Adicionais](#additional-resources) no final deste documento.
 
 ## Público {#audience}
 
@@ -69,12 +69,12 @@ Embora seja possível ir diretamente para uma parte específica da jornada, muit
 | 5 | [Como acessar seu conteúdo por meio das APIs de entrega do AEM](access-your-content.md) | Saiba como usar consultas do GraphQL para acessar o Conteúdo dos fragmentos de conteúdo. |
 | 6 | [Como atualizar seu conteúdo por meio de APIs do AEM Assets](update-your-content.md) | Saiba como usar a REST API para acessar e atualizar o Conteúdo dos fragmentos de conteúdo. |
 | 7 | [Como unir tudo - seu aplicativo e seu conteúdo no AEM Headless](put-it-all-together.md) | Saiba como aceitar seu projeto AEM e prepará-lo para entrar em vigor com o SDK do AEM headless. |
-| 8 | [Como executar o aplicativo headless](go-live.md) | Saiba como implantar o aplicativo em tempo real, colocar seu código local no Git e movê-lo para o Git do Cloud Manager para pipeline de CI/CD. |
-| 9 | [Opcional - Como criar aplicativos de página única (SPAs) com o AEM](create-spa.md) | Assim que você entender os recursos headless do AEM, explore como combinar delivery headful e headless e saiba como criar SPA editável usando a estrutura do Editor de AEM SPA. |
+| 8 | [Como executar o aplicativo headless](go-live.md) | Saiba como implantar o aplicativo em tempo real, colocar seu código local no Git e movê-lo para o pipeline de Git para CI/CD da Cloud Manager. |
+| 9 | [Opcional - Como criar aplicativos de página única (SPAs) com o AEM](create-spa.md) | Uma vez que você entenda os recursos headless do AEM, explore como combinar delivery headful e headless e saiba como criar SPA editável usando a estrutura do Editor de SPA do AEM. |
 
 ## O que vem a seguir {#what-is-next}
 
-Agora você está pronto para começar a usar a jornada headless da Adobe. Recomendamos que você siga para a próxima parte da jornada e leia o artigo [Saiba mais sobre o desenvolvimento headless CMS.](learn-about.md)
+Agora você está pronto para começar a usar a jornada headless da Adobe. Recomendamos que você siga para a próxima parte da jornada e leia o artigo [Saiba mais sobre o Desenvolvimento headless CMS.](learn-about.md)
 
 ### Escolha sua própria aventura {#choose-your-path}
 
@@ -92,9 +92,9 @@ Como tal, as jornadas são projetadas para se manterem sozinhas. No entanto, vá
 * [Tutoriais do AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=pt-BR) - se você prefere aprender na prática e tem conhecimento técnico, utilize nossos tutoriais práticos organizados por API e estrutura, que exploram a criação e o uso de aplicativos incorporados no AEM Headless.
 * [Jornada de tradução do AEM headless](/help/journey-headless/translation/overview.md) - essa jornada de documentação oferece uma ampla compreensão sobre a tecnologia headless, como o AEM fornece conteúdo headless e como você pode traduzi-lo.
 * [Jornada de criação headless](/help/journey-headless/author/overview.md) - comece aqui para obter uma jornada guiada pelos recursos headless avançados e flexíveis do AEM, suas funcionalidades e aprenda a modelar o conteúdo em seu primeiro projeto headless.
-* [Jornada do arquiteto headless](/help/journey-headless/architect/overview.md) : comece aqui para obter uma introdução aos recursos headless avançados e flexíveis do Adobe Experience Manager e aprender como modelar o conteúdo para seu projeto.
-* [Documentação técnica do AEM](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=pt-BR) - Se você já tem uma sólida compreensão de AEM e tecnologias headless, você pode querer consultar diretamente nossos documentos técnicos aprofundados.
+* [Jornada do arquiteto headless](/help/journey-headless/architect/overview.md) - Comece aqui para obter uma introdução aos recursos headless avançados e flexíveis do Adobe Experience Manager e aprender como modelar o conteúdo para seu projeto.
+* [Documentação técnica do AEM](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=pt-BR) - Se você já conhece bem as tecnologias headless e de AEM, poderá consultar diretamente os nossos documentos técnicos detalhados.
 
-   * Um [Introdução ao AEM as a Headless CMS](/help/sites-developing/headless/introduction.md)
+   * Uma [Introdução ao AEM as a Headless CMS](/help/sites-developing/headless/introduction.md)
 
-* A variável [Portal do desenvolvedor de AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=pt-BR)
+* O [Portal do Desenvolvedor do AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=pt-BR)

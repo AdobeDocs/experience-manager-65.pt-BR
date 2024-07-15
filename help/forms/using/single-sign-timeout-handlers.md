@@ -24,11 +24,11 @@ O espaço de trabalho do AEM Forms está habilitado para SSO. Se um usuário tiv
 
 O tempo limite da sessão de um usuário pode ser configurado no Console de administração.
 
-Para definir o tempo limite, faça logon no `https://'[server]:[port]'/adminui`, navegue até **Configurações > Gerenciamento de usuários > Configuração > Configurar atributos avançados do sistema** e faça as configurações desejadas.
+Para definir o tempo limite, faça logon em `https://'[server]:[port]'/adminui`, navegue até **Configurações > Gerenciamento de usuários > Configuração > Configurar atributos avançados do sistema** e faça as configurações desejadas.
 
 No AEM Forms, o tempo limite do espaço de trabalho é tratado como:
 
-* A duração da sessão para um usuário está disponível em resposta a `initialize` chamada que inicializa a sessão do usuário.
+* A duração da sessão de um usuário está disponível em resposta à chamada `initialize` que inicializa a sessão do usuário.
 * Uma caixa de diálogo pop-up notifica o usuário de que a sessão está prestes a expirar, 15 segundos antes da expiração da sessão.
 
 Nesta caixa de diálogo pop-up:

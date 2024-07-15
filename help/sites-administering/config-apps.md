@@ -27,10 +27,10 @@ Para configurar o serviço de filtro de referenciador:
 * Abra o console Apache Felix (**Configurações**) em:
 * https://&lt;server>:&lt;port_number>/system/console/configMgr
 * Faça logon como administrador.
-* No **Configurações** selecione: *Filtro referenciador do Apache Sling*
+* No menu **Configurações**, selecione: *Filtro de referenciador Apache Sling*
 * Marque o campo Permitir vazio para permitir cabeçalhos de referenciador vazios/ausentes.
 * Clique em **Salvar** para salvar as alterações.
 
 ![chlimage_1-58](assets/chlimage_1-58a.png)
 
-Consulte a [Configurações do OSGI](/help/sites-deploying/osgi-configuration-settings.md) e [Lista de verificação de segurança - Problemas com a falsificação da solicitação entre sites](/help/sites-administering/security-checklist.md#protect-against-cross-site-request-forgery) para obter mais detalhes.
+Consulte as [Configurações OSGI](/help/sites-deploying/osgi-configuration-settings.md) e a [Lista de Verificação de Segurança - Problemas com Falsificação de Solicitação Entre Sites](/help/sites-administering/security-checklist.md#protect-against-cross-site-request-forgery) para obter mais detalhes.

@@ -18,30 +18,30 @@ ht-degree: 1%
 
 # Uso de classificações {#using-ratings}
 
-A variável `Rating` O componente é usado de forma independente ou com outros recursos do Communities. Este componente permite que membros da comunidade conectados expressem suas opiniões por meio de conteúdo de classificação.
+O componente `Rating` é usado de forma independente ou com outros recursos das Comunidades. Este componente permite que membros da comunidade conectados expressem suas opiniões por meio de conteúdo de classificação.
 
 ## Adicionar uma classificação a uma página {#adding-a-rating-to-a-page}
 
-Para adicionar um `Rating` para uma página no modo de autor, localize o componente `Communities / Rating` e arraste-o para o local em uma página, como uma posição relativa ao recurso para que os membros avaliem.
+Para adicionar um componente `Rating` a uma página no modo de autor, localize o componente `Communities / Rating` e arraste-o para o local em uma página, como uma posição relativa ao recurso para que os membros avaliem.
 
 Para obter as informações necessárias, visite [Noções básicas sobre componentes das comunidades](basics.md).
 
-Quando a variável [bibliotecas obrigatórias do lado do cliente](rating-basics.md#essentials-for-client-side) são incluídos, é assim que a variável `Rating` é exibido.
+Quando as [bibliotecas obrigatórias do lado do cliente](rating-basics.md#essentials-for-client-side) são incluídas, é assim que o componente `Rating` aparece.
 
-![avaliação](assets/rating.png)
+![classificação](assets/rating.png)
 
 ## Configuração da classificação {#configuring-rating}
 
-Selecione o colocado `Rating` para que você possa acessar e selecionar o `Configure` ícone que abre a caixa de diálogo de edição.
+Selecione o componente `Rating` inserido para que você possa acessar e selecionar o ícone `Configure` que abre a caixa de diálogo de edição.
 
-![configure-new](assets/configure-new.png)
+![configurar-novo](assets/configure-new.png)
 
-No **[!UICONTROL Textos e rótulos]** especifique o identificador interno para a Classificação.
+Na guia **[!UICONTROL Textos e rótulos]**, especifique o identificador interno da classificação.
 
 ![tallyname](assets/tallyname.png)
 
-**[!UICONTROL Nome Tally]**
-(*Obrigatório*) Um nome simples para o `Rating` que identifica exclusivamente esta instância. Deve ser um nome de nó válido para o repositório.
+**[!UICONTROL Nome da Tally]**
+(*Obrigatório*) Um nome simples para `Rating` que identifica exclusivamente esta instância. Deve ser um nome de nó válido para o repositório.
 
 ## Experiência de visitante do site {#site-visitor-experience}
 
@@ -55,4 +55,4 @@ Não há suporte para postagem anônima de uma classificação. Os visitantes do
 
 ## Informações adicionais {#additional-information}
 
-Mais informações podem ser encontradas no [Fundamentos de classificação](rating-basics.md) página para desenvolvedores.
+Mais informações podem ser encontradas na página [Rating Essentials](rating-basics.md) para desenvolvedores.

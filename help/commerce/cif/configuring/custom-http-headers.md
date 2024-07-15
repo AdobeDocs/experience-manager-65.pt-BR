@@ -25,7 +25,7 @@ Para obter mais controle sobre o back-end, os autores podem configurar cabeçalh
 
 ## Configuração {#configuration}
 
-Para configurar os cabeçalhos HTTP personalizados, é necessário primeiro defini-los. Os cabeçalhos HTTP personalizados devem ser definidos primeiro adicionando-os à `com.adobe.cq.cif.http.internal.HttpHeadersConfigProviderImpl` configuração do serviço usando uma configuração OSGi.
+Para configurar os cabeçalhos HTTP personalizados, é necessário primeiro defini-los. Os cabeçalhos HTTP personalizados devem ser definidos primeiro adicionando-os à configuração do serviço `com.adobe.cq.cif.http.internal.HttpHeadersConfigProviderImpl` usando uma configuração OSGi.
 
 Você pode configurar os valores dos cabeçalhos HTTP na página Configuração de Cloud Service do seu projeto:
 

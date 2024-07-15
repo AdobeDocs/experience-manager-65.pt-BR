@@ -21,7 +21,7 @@ ht-degree: 2%
 O AEM fornece um serviço que permite configurar e controlar como os cookies são usados com suas páginas da Web:
 
 * Um serviço configurável do lado do servidor mantém uma lista de cookies que podem ser usados.
-* Uma API JavaScript permite que o código JavaScript verifique se um cookie pode ser usado.
+* Uma API do JavaScript permite que o código JavaScript verifique se um cookie pode ser usado.
 
 Use este recurso para garantir que suas páginas estejam em conformidade com o consentimento dos usuários em relação ao uso de cookies.
 
@@ -39,18 +39,18 @@ Para configurar o serviço, você pode usar o [Console da Web](/help/sites-deplo
 
 ## Validação do uso de cookies {#validating-cookie-usage}
 
-Use o JavaScript do lado do cliente para chamar o Serviço de recusa do Adobe Granite para verificar se você pode usar um cookie. Use o objeto JavaScript Granite.OptOutUtil para executar qualquer uma das seguintes tarefas:
+Use o JavaScript do lado do cliente para chamar o Serviço de recusa do Adobe Granite para verificar se você pode usar um cookie. Use o objeto de JavaScript Granite.OptOutUtil para executar qualquer uma das seguintes tarefas:
 
 * Obtenha uma lista de nomes de cookies que indicam que esse usuário não consente em usar cookies para fins de rastreamento.
 * Obtenha uma lista de cookies que podem ser usados.
 * Determine se o navegador da Web contém um cookie que indica que o usuário não consente com o uso de cookies para rastreamento.
 * Determine se um cookie específico pode ser usado.
 
-O granite.utils [pasta da biblioteca do cliente](/help/sites-developing/clientlibs.md#referencing-client-side-libraries) fornece o objeto Granite.OptOutUtil. Adicione o seguinte código à JSP do cabeçalho da página para incluir um link à biblioteca JavaScript:
+A [pasta da biblioteca do cliente](/help/sites-developing/clientlibs.md#referencing-client-side-libraries) do granite.utils fornece o objeto Granite.OptOutUtil. Adicione o seguinte código à JSP do cabeçalho da página para incluir um link à biblioteca do JavaScript:
 
 `<ui:includeClientLib categories="granite.utils" />`
 
-Por exemplo, a seguinte função JavaScript determina se o cookie COOKIE_NAME é permitido para uso antes de gravar nele:
+Por exemplo, a seguinte função do JavaScript determina se o cookie COOKIE_NAME é permitido para uso antes de gravar nele:
 
 ```
 function writeCookie(value){
@@ -63,7 +63,7 @@ function writeCookie(value){
 }
 ```
 
-## O objeto JavaScript Granite.OptOutUtil {#the-granite-optoututil-javascript-object}
+## O objeto Granite.OptOutUtil do JavaScript {#the-granite-optoututil-javascript-object}
 
 Granite.OptOutUtil permite determinar se o uso de cookies é permitido.
 
@@ -101,11 +101,11 @@ Nenhum.
 
 **Devoluções**
 
-Um valor booleano de `true` se for encontrado um cookie que indique ausência de consentimento e um valor de `false` se nenhum cookie indicar não consentimento.
+Um valor booliano de `true` se for encontrado um cookie que indica ausência de consentimento, e um valor de `false` se nenhum cookie indicar não consentimento.
 
 ### função maySetCookie(cookieName) {#maysetcookie-cookiename-function}
 
-Determina se um cookie específico pode ser usado no navegador do usuário. Esta função é equivalente a usar a variável `isOptedOut` função determinando se o cookie fornecido está incluído na lista que o cookie `getWhitelistCookieNames` A função retorna.
+Determina se um cookie específico pode ser usado no navegador do usuário. Esta função é equivalente a usar a função `isOptedOut` para determinar se o cookie fornecido está incluído na lista retornada pela função `getWhitelistCookieNames`.
 
 **Parâmetros**
 
@@ -113,4 +113,4 @@ Determina se um cookie específico pode ser usado no navegador do usuário. Esta
 
 **Devoluções**
 
-Um valor booleano de `true` se `cookieName` pode ser usado, ou um valor de `false` se `cookieName` não pode ser usado.
+Um valor booliano de `true` se `cookieName` puder ser usado, ou um valor de `false` se `cookieName` não puder ser usado.

@@ -38,7 +38,7 @@ A habilitação de recursos de catálogo em etapas requer autenticação. Consul
 
 A maneira mais fácil de acessar o Cockpit do produto é por meio do menu &quot;Commerce&quot; no menu principal do AEM. Também é possível usar o Omnisearch (pesquisa para Commerce) ou abrir o `https://<yourAEMInstance>/commerce.html`.
 
-![Menu AEM](/help/commerce/cif/assets/aem-menu.png)
+![menu AEM](/help/commerce/cif/assets/aem-menu.png)
 
 ## Procurar Catálogos de produtos {#browsing-product-catalogs}
 
@@ -62,13 +62,13 @@ Clicar em um produto carrega variações de produto, se disponíveis.
 
 Uma pesquisa de texto completo no catálogo de produtos completo é fornecida na guia de filtro à esquerda para localizar produtos rapidamente.
 
-![pesquisa](/help/commerce/cif/assets/search-cockpit.png)
+![pesquisar](/help/commerce/cif/assets/search-cockpit.png)
 
 ## Catálogo de produtos por etapa de navegação {#staged-product-catalogs}
 
 Por padrão, o cockpit de produtos mostra dados do catálogo de produtos em tempo real. O uso do &quot;CATÁLOGO PREPARADO&quot; na guia de filtro à esquerda carrega o catálogo de produtos para qualquer data selecionada.
 
-![catálogo em etapas](/help/commerce/cif/assets/staged-cockpit.png)
+![catálogo de etapas](/help/commerce/cif/assets/staged-cockpit.png)
 
 ## Propriedades do catálogo de produtos {#catalog-properties}
 
@@ -82,6 +82,6 @@ As guias geral e variante mostram propriedades de comércio predefinidas que vê
 
 ### Guias de conteúdo do AEM {#content-tabs}
 
-Essas guias, agrupadas por tipos de conteúdo AEM (Fragmentos de experiência, Fragmentos de conteúdo, Ativos associados), mostram o conteúdo AEM associado ao objeto de comércio. A ação &quot;Exibir detalhes&quot; abre uma nova guia do navegador com o conteúdo selecionado.
+Essas guias, agrupadas por tipos de conteúdo AEM (Fragmentos de experiência, Fragmentos de conteúdo, Assets associado), mostram conteúdo AEM associado ao objeto de comércio. A ação &quot;Exibir detalhes&quot; abre uma nova guia do navegador com o conteúdo selecionado.
 
-![propriedades de conteúdo](/help/commerce/cif/assets/content-properties.png)
+![propriedades do conteúdo](/help/commerce/cif/assets/content-properties.png)

@@ -32,7 +32,7 @@ Se você precisar fazer backup e/ou recuperar uma pequena quantidade de conteúd
 * Você pode buscar os dados de outro sistema por meio de um pacote
 * Para restaurar o backup em um sistema temporário, crie um pacote de conteúdo e implante-o no sistema, onde esse conteúdo está ausente.
 
-Para obter detalhes, consulte [Backup do pacote](/help/sites-administering/backup-and-restore.md#package-backup) abaixo.
+Para obter detalhes, consulte [Backup de Pacote](/help/sites-administering/backup-and-restore.md#package-backup) abaixo.
 
 ## Horário {#timing}
 
@@ -52,7 +52,7 @@ Como o backup de snapshot geralmente leva apenas alguns segundos, todo o tempo d
 
 ## Backup on-line {#online-backup}
 
-Esse método de backup cria um backup de todo o repositório, incluindo todos os aplicativos implantados nele, como AEM. O backup inclui conteúdo, histórico de versões, configuração, software, hotfixes, aplicativos personalizados, arquivos de registro, índices de pesquisa e assim por diante. Se você estiver usando clustering e se a pasta compartilhada for um subdiretório de `crx-quickstart` (fisicamente ou usando um softlink), também é feito backup do diretório compartilhado.
+Esse método de backup cria um backup de todo o repositório, incluindo todos os aplicativos implantados nele, como AEM. O backup inclui conteúdo, histórico de versões, configuração, software, hotfixes, aplicativos personalizados, arquivos de registro, índices de pesquisa e assim por diante. Se você estiver usando clustering e a pasta compartilhada for um subdiretório de `crx-quickstart` (fisicamente ou usando um softlink), também será feito backup do diretório compartilhado.
 
 É possível restaurar todo o repositório (e qualquer aplicativo) posteriormente.
 
@@ -60,18 +60,18 @@ Esse método opera como um backup &quot;ativo&quot; ou &quot;on-line&quot; para 
 
 Ao criar um backup, você tem as seguintes opções:
 
-* Backup em um diretório usando a ferramenta de backup integrada AEM.
+* Backup em um diretório usando a ferramenta de backup integrada do AEM.
 * Fazendo backup em um diretório usando um instantâneo do sistema de arquivos
 
 Em qualquer caso, o backup cria uma imagem (ou instantâneo) do repositório. Em seguida, o agente de backup de sistemas deve tomar cuidado para realmente transferir essa imagem para um sistema de backup dedicado (unidade de fita).
 
 >[!NOTE]
 >
->Se o recurso AEM Online Backup for usado em uma instância AEM que tenha uma configuração personalizada de armazenamento de blobs, é recomendável configurar o caminho do armazenamento de dados para ficar fora do &quot; `crx-quickstart`&quot; e faça backup do armazenamento de dados separadamente.
+>Se o recurso AEM Online Backup for usado em uma instância AEM que tenha uma configuração personalizada de armazenamento de blobs, é recomendável configurar o caminho do armazenamento de dados para estar fora do diretório &quot; `crx-quickstart`&quot; e fazer backup do armazenamento de dados separadamente.
 
 >[!CAUTION]
 >
->O backup on-line faz backup apenas do sistema de arquivos. Se você armazenar o conteúdo do repositório e/ou os arquivos do repositório em um banco de dados, será necessário fazer backup desse banco de dados separadamente. Se estiver usando AEM com MongoDB, consulte a documentação sobre como usar o [Ferramentas de backup nativas do MongoDB](https://docs.mongodb.org/manual/tutorial/backup-with-mongodump/).
+>O backup on-line faz backup apenas do sistema de arquivos. Se você armazenar o conteúdo do repositório e/ou os arquivos do repositório em um banco de dados, será necessário fazer backup desse banco de dados separadamente. Se você estiver usando AEM com MongoDB, consulte a documentação sobre como usar as [ferramentas de backup nativas do MongoDB](https://docs.mongodb.org/manual/tutorial/backup-with-mongodump/).
 
 ### Backup online do AEM {#aem-online-backup}
 
@@ -79,13 +79,13 @@ Um backup on-line do repositório permite criar, fazer download e excluir arquiv
 
 >[!CAUTION]
 >
->Não execute o AEM Online Backup simultaneamente com [Coleta de lixo do armazenamento de dados](/help/sites-administering/data-store-garbage-collection.md) ou [Limpeza de revisão](/help/sites-deploying/revision-cleanup.md#how-to-run-offline-revision-cleanup). Isso afetará negativamente o desempenho do sistema.
+>Não execute o AEM Online Backup simultaneamente com a [Coleta de Lixo do Armazenamento de Dados](/help/sites-administering/data-store-garbage-collection.md) ou a [Limpeza de Revisão](/help/sites-deploying/revision-cleanup.md#how-to-run-offline-revision-cleanup). Isso afetará negativamente o desempenho do sistema.
 
-Ao iniciar um backup, você pode especificar um **Caminho de destino** e/ou um **Atraso**.
+Ao iniciar um backup, você pode especificar um **Caminho de Destino** e/ou um **Atraso**.
 
-**Caminho de destino** Normalmente, os arquivos de backup são salvos na pasta principal da pasta que contém o arquivo jar de início rápido (.jar). Por exemplo, se você tiver o arquivo jar do AEM localizado em /InstallationKits/AEM, o backup será gerado em /InstallationKits. Você também pode especificar um destino para um local de sua escolha.
+**Caminho de destino** Os arquivos de backup geralmente são salvos na pasta pai da pasta que contém o arquivo jar de início rápido (.jar). Por exemplo, se você tiver o arquivo jar do AEM localizado em /InstallationKits/AEM, o backup será gerado em /InstallationKits. Você também pode especificar um destino para um local de sua escolha.
 
-Se a variável **TargetPath** for um diretório, a imagem do repositório será criada nesse diretório. Se o mesmo diretório for usado várias vezes (ou sempre) para armazenar o backup,
+Se o **TargetPath** for um diretório, a imagem do repositório será criada nesse diretório. Se o mesmo diretório for usado várias vezes (ou sempre) para armazenar o backup,
 
 * os arquivos modificados no repositório são modificados adequadamente no TargetPath
 * os arquivos excluídos no repositório são excluídos no TargetPath
@@ -93,7 +93,7 @@ Se a variável **TargetPath** for um diretório, a imagem do repositório será 
 
 >[!NOTE]
 >
->Se **TargetPath** está definido como nome de arquivo com a extensão **.zip**, o backup do repositório é feito em um diretório temporário e, em seguida, o conteúdo desse diretório temporário é compactado e armazenado no arquivo ZIP.
+>Se **TargetPath** estiver definido como nome de arquivo com a extensão **.zip**, será feito backup do repositório em um diretório temporário e, em seguida, o conteúdo desse diretório temporário será compactado e armazenado no arquivo ZIP.
 >
 >Esta abordagem é desencorajada, porque
 >
@@ -104,14 +104,14 @@ Se a variável **TargetPath** for um diretório, a imagem do repositório será 
 >
 >Se precisar criar um ZIP como formato de backup, você deve fazer backup em um diretório e usar um programa de compactação para criar o arquivo zip.
 
-**Atraso** Indica um atraso (em milissegundos) para que o desempenho do repositório não seja afetado. Por padrão, o backup do repositório é executado em velocidade total. Você pode retardar a criação de um backup on-line, de modo que ele não retarde outras tarefas.
+**Atraso** Indica um atraso de tempo (em milissegundos) para que o desempenho do repositório não seja afetado. Por padrão, o backup do repositório é executado em velocidade total. Você pode retardar a criação de um backup on-line, de modo que ele não retarde outras tarefas.
 
 Ao usar um atraso muito grande, certifique-se de que o backup on-line não leve mais de 24 horas. Se tiver feito, descarte esse backup, pois pode não conter todos os binários.
 Um atraso de 1 milissegundo normalmente resulta em 10% de uso da CPU, e um atraso de 10 milissegundos geralmente resulta em menos de 3% de uso da CPU. O atraso total em segundos pode ser estimado da seguinte forma: Tamanho do repositório em MB, multiplicado pelo atraso em milissegundos, dividido por 2 (se a opção zip for usada) ou dividido por 4 (ao fazer backup em um diretório). Isso significa que um backup em um diretório de um repositório de 200 MB com atraso de 1 ms aumenta o tempo de backup em cerca de 50 segundos.
 
 >[!NOTE]
 >
->Consulte [Como funciona o AEM Online Backup](#how-aem-online-backup-works) para obter detalhes internos do processo.
+>Consulte [Como o AEM Online Backup Funciona](#how-aem-online-backup-works) para obter detalhes internos sobre o processo.
 
 Para criar um backup:
 
@@ -122,7 +122,7 @@ Para criar um backup:
 
    ![chlimage_1-1](assets/chlimage_1-1a.png)
 
-1. No console de backup, especifique o **[Caminho de destino](#aem-online-backup)** e **[Atraso](#aem-online-backup)**.
+1. No console de backup, especifique o **[Caminho de Destino](#aem-online-backup)** e o **[Atraso](#aem-online-backup)**.
 
    ![chlimage_1-2](assets/chlimage_1-2a.png)
 
@@ -133,7 +133,7 @@ Para criar um backup:
    >
    >` https://<*hostname*>:<*port-number*>/libs/granite/backup/content/admin.html`
 
-1. Clique em **Salvar**, uma barra de andamento indicará o andamento do backup.
+1. Clique em **Salvar**. Uma barra de progresso indicará o progresso do backup.
 
    >[!NOTE]
    >
@@ -155,19 +155,19 @@ Para criar um backup:
 
 Se possível, o backup on-line deve ser executado quando houver pouca carga no sistema, por exemplo, de manhã.
 
-Os backups podem ser automatizados usando o `wget` ou `curl` Clientes HTTP. Veja a seguir exemplos de como automatizar o backup usando curl.
+Os backups podem ser automatizados usando os clientes HTTP `wget` ou `curl`. Veja a seguir exemplos de como automatizar o backup usando curl.
 
 #### Backup no diretório de destino padrão {#backing-up-to-the-default-target-directory}
 
 >[!CAUTION]
 >
->No exemplo a seguir, vários parâmetros na variável `curl` pode precisar ser configurado para sua instância; por exemplo, o nome do host ( `localhost`), porta ( `4502`), senha do administrador ( `xyz`) e nome do arquivo ( `backup.zip`).
+>No exemplo a seguir, vários parâmetros no comando `curl` podem precisar ser configurados para sua instância; por exemplo, o nome do host ( `localhost`), a porta ( `4502`), a senha do administrador ( `xyz`) e o nome do arquivo ( `backup.zip`).
 
 ```shell
 curl -u admin:admin -X POST http://localhost:4502/system/console/jmx/com.adobe.granite:type=Repository/op/startBackup/java.lang.String?target=backup.zip
 ```
 
-O arquivo/diretório de backup é criado no servidor na pasta pai da pasta que contém o `crx-quickstart` pasta (igual ao que ocorreria se você estivesse criando o backup usando o navegador). Por exemplo, se você instalou o AEM no diretório `/InstallationKits/crx-quickstart/`, o backup será criado na variável `/InstallationKits` diretório.
+O arquivo/diretório de backup é criado no servidor na pasta pai da pasta que contém a pasta `crx-quickstart` (o mesmo que você estaria criando o backup usando o navegador). Por exemplo, se você instalou o AEM no diretório `/InstallationKits/crx-quickstart/`, o backup será criado no diretório `/InstallationKits`.
 
 O comando curl retorna imediatamente; portanto, é necessário monitorar esse diretório para ver quando o arquivo zip está pronto. Enquanto o backup está sendo criado, um diretório temporário (com o nome baseado no do arquivo zip final) pode ser visto, no final, ele será compactado. Por exemplo:
 
@@ -176,9 +176,9 @@ O comando curl retorna imediatamente; portanto, é necessário monitorar esse di
 
 #### Backup em um Diretório de Destino não padrão {#backing-up-to-a-non-default-target-directory}
 
-Normalmente, o arquivo/diretório de backup é criado no servidor na pasta principal da pasta que contém o `crx-quickstart` pasta.
+Normalmente, o arquivo/diretório de backup é criado no servidor na pasta pai da pasta que contém a pasta `crx-quickstart`.
 
-Se quiser salvar seu backup (de qualquer tipo) em um local diferente, você pode definir um caminho absoluto &quot;para o `target` parâmetro no `curl` comando.
+Para salvar seu backup (de qualquer tipo) em um local diferente, você pode definir um caminho absoluto &quot;para o parâmetro `target` no comando `curl`.
 
 Por exemplo, para gerar `backupJune.zip` no diretório `/Backups/2012`:
 
@@ -220,7 +220,7 @@ O backup on-line utiliza o seguinte algoritmo:
 
      Um arquivo vazio chamado `backupInProgress.txt` é criado no diretório de destino quando o backup é iniciado. Este arquivo é excluído quando o backup é concluído.
 
-1. Os arquivos são copiados do diretório de origem para o diretório de destino (ou diretório temporário ao criar um arquivo zip). O armazenamento de segmentos é copiado antes do armazenamento de dados para evitar a corrupção do repositório. Os dados de índice e cache são omitidos ao criar o backup. Como resultado, dados de `crx-quickstart/repository/cache` e `crx-quickstart/repository/index` não está incluído no backup. O indicador da barra de progresso do processo está entre 0% e 70% ao criar um arquivo zip, ou 0% e 100% se nenhum arquivo zip for criado.
+1. Os arquivos são copiados do diretório de origem para o diretório de destino (ou diretório temporário ao criar um arquivo zip). O armazenamento de segmentos é copiado antes do armazenamento de dados para evitar a corrupção do repositório. Os dados de índice e cache são omitidos ao criar o backup. Como resultado, dados de `crx-quickstart/repository/cache` e `crx-quickstart/repository/index` não são incluídos no backup. O indicador da barra de progresso do processo está entre 0% e 70% ao criar um arquivo zip, ou 0% e 100% se nenhum arquivo zip for criado.
 
 1. Se o backup estiver sendo feito em um diretório pré-existente, os arquivos &quot;antigos&quot; no diretório de destino serão excluídos. Arquivos antigos são arquivos que não existem no diretório de origem.
 

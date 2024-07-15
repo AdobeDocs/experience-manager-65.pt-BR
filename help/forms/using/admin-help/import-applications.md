@@ -18,9 +18,9 @@ ht-degree: 0%
 
 # Importar e gerenciar aplicativos{#import-and-manage-applications}
 
-Nos formulários AEM, um *aplicativo* O é um container para armazenar ativos necessários à implementação de uma solução de formulários AEM. Exemplos de ativos são designs de formulário, fragmentos de formulário, imagens, processos, arquivos DDX, guias de formulário, páginas de HTML e arquivos SWF. Durante a fase de desenvolvimento de um projeto, os usuários do Workbench podem implantar aplicativos diretamente da visualização Aplicativos no Workbench. Depois de implantados, esses aplicativos aparecem no console de administração, na guia Aplicativos da página Gerenciamento de aplicativos.
+Em formulários AEM, um *aplicativo* é um contêiner para armazenar ativos necessários à implementação de uma solução de formulários AEM. Exemplos de ativos são designs de formulário, fragmentos de formulário, imagens, processos, arquivos DDX, guias de formulário, páginas de HTML e arquivos SWF. Durante a fase de desenvolvimento de um projeto, os usuários do Workbench podem implantar aplicativos diretamente da visualização Aplicativos no Workbench. Depois de implantados, esses aplicativos aparecem no console de administração, na guia Aplicativos da página Gerenciamento de aplicativos.
 
-Quando um aplicativo está concluído e pronto para implantação em um servidor de produção, o usuário do Workbench compacta o aplicativo em um *Arquivo de aplicativo de formulários AEM* (.lca). Em seguida, um administrador usa o console de administração para importar e implantar o arquivo de aplicativo, usando a guia Aplicativos na página Gerenciamento de aplicativos.
+Quando um aplicativo está concluído e pronto para implantação em um servidor de produção, o usuário do Workbench compacta o aplicativo em um *arquivo de aplicativo de formulários AEM* (.lca). Em seguida, um administrador usa o console de administração para importar e implantar o arquivo de aplicativo, usando a guia Aplicativos na página Gerenciamento de aplicativos.
 
 Você também pode usar a guia arquivos na página Gerenciamento de aplicativos para importar LCAs que foram criadas usando o Workbench 8.x.
 
@@ -40,10 +40,10 @@ Use a guia Aplicativos para importar e gerenciar aplicativos criados no Workbenc
 1. No console de administração, clique em Serviços > Aplicativos e serviços > Gerenciamento de aplicativos.
 1. Clique em Importar.
 1. Clique em Procurar, selecione o arquivo .lca a ser importado e clique em Visualizar. A página Visualizar Aplicativo exibe informações sobre o aplicativo.
-1. (Opcional) Para ver uma lista dos ativos contidos no aplicativo, clique em Exibir ativos.
-1. (Opcional) Para implantar os ativos no tempo de execução, selecione Implantar ativos no tempo de execução quando a importação estiver concluída. Se você não selecionar essa opção, será possível implantar os ativos posteriormente.
+1. (Opcional) Para ver uma lista dos ativos contidos no aplicativo, clique em Exibir Assets.
+1. (Opcional) Para implantar os ativos no tempo de execução, selecione Implantar o Assets no tempo de execução quando a importação estiver concluída. Se você não selecionar essa opção, será possível implantar os ativos posteriormente.
 1. Clique em Importar. O aplicativo é exibido na guia Aplicativos.
-1. Faça logon no repositório CRX com credenciais de administrador.
+1. Faça logon no repositório do CRX com credenciais de administrador.
 1. Navegar até content/dam/capplications
 
    >[!NOTE]
@@ -54,7 +54,7 @@ Use a guia Aplicativos para importar e gerenciar aplicativos criados no Workbenc
 
    A guia Propriedades à direita exibe as propriedades do nó CRX selecionado.
 
-   A variável **syncState** indica o estado de sincronização de dados entre o AEM Forms Server e o repositório CRX. Assim que o processo de importação começar, esse estado é definido como 0 (zero). Este estado indica que os dados não estão sincronizados no momento. Quando os dados são sincronizados, o estado é definido como 1.
+   A propriedade **syncState** indica o estado de sincronização de dados entre o AEM Forms Server e o repositório do CRX. Assim que o processo de importação começar, esse estado é definido como 0 (zero). Este estado indica que os dados não estão sincronizados no momento. Quando os dados são sincronizados, o estado é definido como 1.
 
 ## Implantar um aplicativo {#deploy-an-application}
 
@@ -109,7 +109,7 @@ Você também pode usar uma ferramenta de disponibilização com script para dis
 
 A implantação com script elimina a necessidade de redefinir manualmente as configurações no ambiente de produção antes de iniciar os aplicativos implantados.
 
-1. Em um prompt de comando, navegue até *[raiz de aem-forms]*/sdk/misc/Foundation/ArchiveManagement.
+1. Em um prompt de comando, navegue até *[raiz do aem-forms]*/sdk/misc/Foundation/ArchiveManagement.
 1. Consulte o arquivo ReadMe.txt para obter instruções mais detalhadas.
 1. Modifique manualmente os arquivos scriptedDeploy.bat e sample-files/sample.xml conforme descrito no arquivo readme.txt.
 1. Execute o arquivo scriptedDeploy.bat. Essa ação implanta o arquivo de arquivamento de formulários AEM com as configurações de substituição.

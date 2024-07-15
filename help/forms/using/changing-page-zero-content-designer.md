@@ -17,21 +17,21 @@ ht-degree: 0%
 
 # Alteração do conteúdo da Página zero no Designer {#changing-page-zero-content-in-designer}
 
-O conteúdo da Página zero é exibido por padrão quando um visualizador que não seja do Adobe PDF, como o visualizador de PDF padrão no [!DNL Chrome] ou [!DNL Firefox], não pode ler o conteúdo do formulário PDF/XFA. A mensagem padrão de Página zero é mostrada abaixo.
+O conteúdo da Página Zero é exibido por padrão quando um visualizador que não seja da Adobe PDF, como o visualizador de PDF padrão em [!DNL Chrome] ou [!DNL Firefox], não consegue ler o conteúdo do formulário PDF/XFA. A mensagem padrão de Página zero é mostrada abaixo.
 
 ![defaultpage0message](assets/defaultpage0message.png)
 
-[!DNL AEM Forms] A versão do Designer permite alterar a mensagem exibida na Página Zero. Para alterar a mensagem Página zero, execute as seguintes etapas:
+A versão [!DNL AEM Forms] do Designer permite alterar a mensagem que é exibida na Página Zero. Para alterar a mensagem Página zero, execute as seguintes etapas:
 
-1. Certifique-se de ter o [!DNL AEM Forms] versão do Designer instalada. Você pode verificar a versão na tela Sobre do designer.
+1. Verifique se você tem a versão [!DNL AEM Forms] do Designer instalada. Você pode verificar a versão na tela Sobre do designer.
 
 1. Abra o formulário para o qual deseja alterar o conteúdo da Página zero.
 
-1. Clique em **[!UICONTROL Arquivo]** > **[!UICONTROL Propriedades do formulário]**.
+1. Clique em **[!UICONTROL Arquivo]** > **[!UICONTROL Propriedades do Formulário]**.
 
-1. No [!UICONTROL Propriedades do formulário] clique em ![mais](assets/plus.png) (Ícone de adição) para adicionar uma propriedade personalizada.
+1. Na caixa de diálogo [!UICONTROL Propriedades do Formulário], clique em ![mais](assets/plus.png) (ícone de adição) para adicionar uma propriedade personalizada.
 
-1. Especificar **_pagezerocontent** como o nome da propriedade.
+1. Especifique **_pagezerocontent** como o nome da propriedade.
 1. Adicione a nova mensagem Página zero, em formato Rich Text, como valor. Por exemplo:
 
 
@@ -41,7 +41,7 @@ O conteúdo da Página zero é exibido por padrão quando um visualizador que n�
 
 1. Exiba o formulário PDF no navegador para confirmar que a mensagem foi atualizada. O exemplo de valor acima aparece da seguinte maneira:
 
-   ![changedmessage](assets/changedmessage.png)
+   ![mensagem alterada](assets/changedmessage.png)
 
 >[!NOTE]
 >

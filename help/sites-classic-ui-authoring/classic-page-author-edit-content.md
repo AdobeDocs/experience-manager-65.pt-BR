@@ -25,7 +25,7 @@ O conteúdo é adicionado usando [componentes](/help/sites-classic-ui-authoring/
 
 >[!NOTE]
 >
->Sua conta precisa do [direitos de acesso apropriados](/help/sites-administering/security.md) e [permissões](/help/sites-administering/security.md#permissions) para editar páginas; por exemplo, adicionar, editar ou excluir componentes, anotar, desbloquear.
+>Sua conta precisa de [direitos de acesso apropriados](/help/sites-administering/security.md) e [permissões](/help/sites-administering/security.md#permissions) para editar páginas; por exemplo, adicionar, editar ou excluir componentes, anotar, desbloquear.
 >
 >Caso encontre algum problema, sugerimos que você entre em contato com o administrador do sistema.
 
@@ -53,9 +53,9 @@ Eles fornecem acesso a uma ampla variedade de funcionalidades, incluindo:
 * [exibição de referências](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#showing-references)
 * [acesso ao log de auditoria](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#audit-log)
 * [alternando modos](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#page-modes)
-* [criando](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#creating-a-new-version), [restaurando](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#restoring-a-page-version-from-sidekick) e [comparação](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#comparing-with-a-previous-version) versões
+* [criando](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#creating-a-new-version), [restaurando](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#restoring-a-page-version-from-sidekick) e [comparando](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#comparing-with-a-previous-version) versões
 
-* [publicação](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#publishing-a-page), [desfazer publicação](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#unpublishing-a-page) uma página
+* [publicando](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#publishing-a-page), [despublicando](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#unpublishing-a-page) uma página
 
 * [editar propriedades da página](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md)
 
@@ -73,14 +73,14 @@ Para inserir um novo componente:
 
 1. Há vários métodos para selecionar o tipo de parágrafo que deseja inserir:
 
-   * Clique duas vezes na área rotulada **Arraste componentes ou ativos aqui...** - o **Inserir novo componente** a barra de ferramentas é aberta. Selecione um componente e clique em **OK**.
+   * Clique duas vezes na área rotulada **Arraste componentes ou ativos aqui...** - a barra de ferramentas **Inserir novo componente** se abre. Selecione um componente e clique em **OK**.
 
    * Arraste um componente da barra de ferramentas flutuante (chamado sidekick) para inserir um novo parágrafo.
-   * Clique com o botão direito em um parágrafo existente e selecione **Novo...** - a barra de ferramentas Inserir novo componente se abre. Selecione um componente e clique em **OK**.
+   * Clique com o botão direito do mouse em um parágrafo existente e selecione **Novo...** - a barra de ferramentas Inserir novo componente será aberta. Selecione um componente e clique em **OK**.
 
    ![screen_shot_2012-02-15at115605am](assets/screen_shot_2012-02-15at115605am.png)
 
-1. Tanto no sidekick como no **Inserir novo componente** barra de ferramentas, você verá uma lista dos componentes disponíveis (tipos de parágrafo). Eles podem ser divididos em várias seções (por exemplo, Geral, Colunas e assim por diante), que podem ser expandidas conforme necessário.
+1. Tanto no sidekick quanto na barra de ferramentas **Inserir novo componente**, você verá uma lista dos componentes disponíveis (tipos de parágrafo). Eles podem ser divididos em várias seções (por exemplo, Geral, Colunas e assim por diante), que podem ser expandidas conforme necessário.
 
    Dependendo do ambiente de produção, essas opções podem ser diferentes. Para obter detalhes completos sobre componentes, consulte [Componentes padrão](/help/sites-classic-ui-authoring/classic-page-author-default-components.md).
 
@@ -88,7 +88,7 @@ Para inserir um novo componente:
 
 ### Inserir um componente usando o Localizador de conteúdo {#inserting-a-component-using-the-content-finder}
 
-Você também pode adicionar um novo componente à página arrastando um ativo da página [Localizador de conteúdo](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#the-content-finder). Isso cria automaticamente um componente do tipo apropriado que contém o ativo.
+Você também pode adicionar um novo componente à página arrastando um ativo do [Localizador de conteúdo](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#the-content-finder). Isso cria automaticamente um componente do tipo apropriado que contém o ativo.
 
 Isso é válido para os seguintes tipos de ativos (alguns dependerão do sistema de página/parágrafo):
 
@@ -101,27 +101,27 @@ Isso é válido para os seguintes tipos de ativos (alguns dependerão do sistema
 
 >[!NOTE]
 >
->Esse comportamento pode ser configurado para a instalação. Consulte [Configurar um sistema de parágrafo para que arrastar um ativo crie uma instância de componente](/help/sites-developing/developing-components.md#configuring-a-paragraph-system-so-that-dragging-an-asset-creates-a-component-instance) para obter mais detalhes.
+>Esse comportamento pode ser configurado para a instalação. Consulte [Configurando um Sistema de Parágrafo para que a arrastar um Ativo crie uma Instância de Componente](/help/sites-developing/developing-components.md#configuring-a-paragraph-system-so-that-dragging-an-asset-creates-a-component-instance) para obter mais detalhes.
 
 Para criar um componente arrastando um dos tipos de ativos acima:
 
 1. Certifique-se de que a página está no modo de [**edição**](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#page-modes).
-1. Abra o [Localizador de conteúdo](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#the-content-finder).
-1. Arraste o ativo desejado para a posição desejada. A variável [espaço reservado do componente](#componentplaceholder) mostra onde o componente será posicionado.
+1. Abra o [Localizador de Conteúdo](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#the-content-finder).
+1. Arraste o ativo desejado para a posição desejada. O [espaço reservado do componente](#componentplaceholder) mostra onde o componente será posicionado.
 
    Um componente, apropriado para o tipo de ativo, será criado no local necessário; ele conterá o ativo selecionado.
 
-1. [Editar](#editmovecopypastedelete) o componente, se necessário.
+1. [Edite](#editmovecopypastedelete) o componente, se necessário.
 
 ## Editar um componente (conteúdo e propriedades) {#editing-a-component-content-and-properties}
 
 Para editar um parágrafo existente, siga um destes procedimentos:
 
-* **Clique duas vezes** o parágrafo para abri-lo. Você vê a mesma janela de quando criou o parágrafo com o conteúdo existente. Faça as alterações e clique em **OK**.
+* **Clique duas vezes** no parágrafo para abri-lo. Você vê a mesma janela de quando criou o parágrafo com o conteúdo existente. Faça suas alterações e clique em **OK**.
 
-* **Clique com o botão direito do mouse** o parágrafo e clique em **Editar**.
+* **Clique com o botão direito** no parágrafo e clique em **Editar**.
 
-* **Clique em** duas vezes no parágrafo (um clique duplo lento) para entrar no modo de edição no local. Você poderá editar o texto diretamente na página, em vez de dentro de uma janela de diálogo. Nesse modo, você receberá uma barra de ferramentas na parte superior da página. Basta fazer as alterações, que serão salvas automaticamente.
+* **Clique** duas vezes no parágrafo (um clique duplo lento) para entrar no modo de edição no local. Você poderá editar o texto diretamente na página, em vez de dentro de uma janela de diálogo. Nesse modo, você receberá uma barra de ferramentas na parte superior da página. Basta fazer as alterações, que serão salvas automaticamente.
 
 ## Mover um componente {#moving-a-component}
 
@@ -144,26 +144,26 @@ Para mover um parágrafo:
 
 Para excluir um parágrafo:
 
-1. Selecione o parágrafo e **clique com o botão direito do mouse**:
+1. Selecione o parágrafo e **clique com o botão direito**:
 
    ![screen_shot_2012-02-15at120220pm](assets/screen_shot_2012-02-15at120220pm.png)
 
-1. Selecionar **Excluir** no menu. O WCM do AEM solicita a confirmação de que você deseja excluir o parágrafo, pois essa ação não pode ser desfeita.
+1. Selecione **Excluir** no menu. O WCM do AEM solicita a confirmação de que você deseja excluir o parágrafo, pois essa ação não pode ser desfeita.
 1. Clique em **OK**.
 
 >[!NOTE]
 >
->Se você definiu seu [Propriedades do usuário para mostrar a barra de ferramentas Edição global](/help/sites-classic-ui-authoring/author-env-user-props.md) também é possível executar determinadas ações nos parágrafos usando o **Copiar**, **Recortar**, **Colar**, **Excluir** botões disponíveis.
+>Se você tiver definido suas [Propriedades de Usuário para mostrar a Barra de Ferramentas de Edição Global](/help/sites-classic-ui-authoring/author-env-user-props.md), também poderá executar determinadas ações nos parágrafos usando os botões **Copiar**, **Recortar**, **Colar** e **Excluir** disponíveis.
 >
 >Vários [atalhos de teclado](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) também estão disponíveis.
 
 ## Recortar/copiar/colar um componente {#cut-copy-paste-a-component}
 
-Como quando [Excluir um componente](#deleting-a-component) você pode usar o menu de contexto para copiar, recortar e/ou colar um componente
+Como quando [Excluindo um componente](#deleting-a-component), você pode usar o menu de contexto para copiar, recortar e/ou colar um componente
 
 >[!NOTE]
 >
->Se você definiu seu [Propriedades do usuário para mostrar a barra de ferramentas Edição global](/help/sites-classic-ui-authoring/author-env-user-props.md) também é possível executar determinadas ações nos parágrafos usando o **Copiar**, **Recortar**, **Colar**, **Excluir** botões disponíveis.
+>Se você tiver definido suas [Propriedades de Usuário para mostrar a Barra de Ferramentas de Edição Global](/help/sites-classic-ui-authoring/author-env-user-props.md), também poderá executar determinadas ações nos parágrafos usando os botões **Copiar**, **Recortar**, **Colar** e **Excluir** disponíveis.
 >
 >Vários [atalhos de teclado](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) também estão disponíveis.
 
@@ -175,9 +175,9 @@ Como quando [Excluir um componente](#deleting-a-component) você pode usar o men
 
 Componentes herdados podem ser o resultado de vários cenários, incluindo:
 
-* [Gerenciamento de vários sites](/help/sites-administering/msm.md); também em combinação com [andaime](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md#scaffolding-with-msm-inheritance).
+* [Gerenciamento de vários sites](/help/sites-administering/msm.md); também em combinação com [andaimes](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md#scaffolding-with-msm-inheritance).
 
-* [Lançamentos](/help/sites-classic-ui-authoring/classic-launches.md) (quando com base na live copy).
+* [Inicializações](/help/sites-classic-ui-authoring/classic-launches.md) (quando com base na livecopy).
 * Componentes específicos; por exemplo, o Sistema de parágrafo herdado no Geometrixx.
 
 Você pode cancelar (e depois reativar) a herança. Dependendo do componente, isso pode estar disponível em:
@@ -202,7 +202,7 @@ Você pode cancelar (e depois reativar) a herança. Dependendo do componente, is
 
 ## Adicionar anotações {#adding-annotations}
 
-[Anotações](/help/sites-classic-ui-authoring/classic-page-author-annotations.md) permitir que outros autores forneçam feedback sobre o seu conteúdo. Isso é usado com frequência para fins de revisão e validação.
+[As anotações](/help/sites-classic-ui-authoring/classic-page-author-annotations.md) permitem que outros autores forneçam comentários sobre o seu conteúdo. Isso é usado com frequência para fins de revisão e validação.
 
 ## Visualizar páginas   {#previewing-pages}
 
@@ -212,7 +212,7 @@ Há dois ícones na borda inferior do sidekick que são importantes para visuali
 
 * O ícone de lápis mostra que você está no modo de edição, onde é possível adicionar, modificar, mover ou excluir conteúdo.
 
-  ![Ícone de edição indicado por um lápis.](do-not-localize/chlimage_1-6.png)
+  ![Ícone de edição indicado por um símbolo de lápis.](do-not-localize/chlimage_1-6.png)
 
 * O ícone de lupa permite selecionar o modo de visualização, em que a página é exibida como será vista no ambiente de publicação (às vezes, também é necessária uma atualização da página):
 
@@ -220,11 +220,11 @@ Há dois ícones na borda inferior do sidekick que são importantes para visuali
 
   No modo de visualização, o sidekick será reduzido. Clique no ícone de seta para baixo para voltar ao modo de edição:
 
-  ![Barra com AEM como o título e um ícone de modo de edição à direita do título indicado por um símbolo de seta para baixo.](do-not-localize/chlimage_1-8.png)
+  ![Barra com AEM como título e um ícone de modo de edição à direita do título indicado por um símbolo de seta para baixo.](do-not-localize/chlimage_1-8.png)
 
 ## Localizar e substituir {#find-replace}
 
-Para edições em maior escala da mesma frase, um **[Localizar e substituir](/help/sites-classic-ui-authoring/author-env-search.md#find-and-replace)** A opção de menu permite pesquisar e substituir várias instâncias de uma cadeia de caracteres em uma seção do site.
+Para edições de maior escala da mesma frase, uma opção de menu **[Localizar e Substituir](/help/sites-classic-ui-authoring/author-env-search.md#find-and-replace)** permite procurar e substituir várias instâncias de uma cadeia de caracteres, em uma seção do site.
 
 ## Bloquear uma página   {#locking-a-page}
 
@@ -236,13 +236,13 @@ O AEM permite bloquear uma página, de modo que ninguém mais possa alterar o co
 
 Para bloquear uma página:
 
-1. No **Sites** selecione a página que deseja bloquear.
+1. Na guia **Sites**, selecione a página que deseja bloquear.
 1. Clique duas vezes na página para abri-la para edição.
-1. No **Página** do sidekick, selecione **Bloquear página**:
+1. Na guia **Página** do sidekick, selecione **Bloquear página**:
 
    ![screen_shot_2012-02-08at15750pm](assets/screen_shot_2012-02-08at15750pm.png)
 
-   Uma mensagem mostra que sua página está bloqueada para outros usuários. Além disso, no painel direito do **Sites** O WCM do AEM exibe a página como bloqueada e indica qual usuário bloqueou a página.
+   Uma mensagem mostra que sua página está bloqueada para outros usuários. Além disso, no painel direito do console **Sites**, o AEM WCM exibe a página como bloqueada e indica qual usuário bloqueou a página.
 
    ![screen_shot_2012-02-08at20657pm](assets/screen_shot_2012-02-08at20657pm.png)
 
@@ -250,9 +250,9 @@ Para bloquear uma página:
 
 Para desbloquear uma página:
 
-1. No **Sites** selecione a página que deseja desbloquear.
+1. Na guia **Sites**, selecione a página que deseja desbloquear.
 1. Clique duas vezes na página para abri-la.
-1. No **Página** do sidekick, selecione **Desbloquear página**.
+1. Na guia **Página** do sidekick, selecione **Desbloquear página**.
 
 ## Desfazer e refazer edições de página {#undoing-and-redoing-page-edits}
 
@@ -271,7 +271,7 @@ Ao desfazer ou refazer a remoção, adição ou realocação de um ou mais pará
 
 >[!NOTE]
 >
->O administrador do sistema pode [configurar vários aspectos dos recursos Desfazer/Refazer](/help/sites-administering/config-undo.md) de acordo com os requisitos de sua instância.
+>O administrador do sistema pode [configurar vários aspectos dos recursos Desfazer/Refazer](/help/sites-administering/config-undo.md) de acordo com os requisitos da sua instância.
 
 O AEM armazena um histórico de ações que você executa e a sequência na qual elas foram executadas. Assim, você desfaz várias ações na ordem em que as executou. Em seguida, é possível usar refazer para reaplicar uma ou mais ações.
 
@@ -285,7 +285,7 @@ O comportamento dos comandos desfazer e refazer é semelhante ao de outros progr
 >
 >* refazer ações, desde que você não tenha feito uma edição de página desde que usou desfazer.
 >* desfaça no máximo 20 ações de edição (configuração padrão).
->* também usar [Atalhos de teclado](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) para desfazer e refazer.
+>* use também os [atalhos de teclado](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) para desfazer e refazer.
 >
 
 É possível desfazer ou refazer os seguintes tipos de alterações de página:

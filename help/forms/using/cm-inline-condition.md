@@ -34,7 +34,7 @@ Para obter mais informações, consulte:
 
 Para condicionalizar uma frase, parágrafo ou string de texto em uma Comunicação interativa, você pode criar uma regra no fragmento de documento de texto apropriado. O exemplo a seguir usa uma regra para exibir um número de chamada gratuita somente para os recipients dos EUA da Comunicação interativa.
 
-Para obter mais informações, consulte Criar regra no texto em [Textos em comunicações interativas](../../forms/using/texts-interactive-communications.md).
+Para obter mais informações, consulte Criar regra no texto em [Textos nas Comunicações Interativas](../../forms/using/texts-interactive-communications.md).
 
 Depois de incluir o fragmento de texto em uma comunicação interativa e o agente usar a interface do usuário do agente para preparar uma comunicação interativa, os dados (modelo de dados de formulário) dos recipients serão avaliados e o texto será exibido apenas para os recipients nos EUA.
 
@@ -46,7 +46,7 @@ Você pode inserir a condição em linha em uma correspondência inserindo a con
 >
 >Se os ativos existentes incluírem expressões antigas de condição/repetição (pré 6.2 SP1 CFP 4), os ativos exibirão uma sintaxe antiga de condição e serão repetidos. No entanto, a condição/repetição antiga funciona. As expressões nova e antiga condição/repetição são compatíveis entre si para criar uma combinação aninhada de expressões antigas e novas condição/repetição.
 
-1. No módulo de texto relevante, selecione a parte do texto que deseja condicionar e selecione **Condição**.
+1. No módulo de texto relevante, selecione a parte do texto que você deseja condicionar e selecione **Condição**.
 
    ![1_selecttext](assets/1_selecttext.png)
 
@@ -56,7 +56,7 @@ Você pode inserir a condição em linha em uma correspondência inserindo a con
 
    >[!NOTE]
    >
-   >Não é possível salvar uma expressão condicional vazia ou inválida. Deve haver uma expressão condicional válida dentro de `${}` para salvar a expressão.
+   >Não é possível salvar uma expressão condicional vazia ou inválida. É necessário haver uma expressão condicional válida dentro de `${}` para salvar a expressão.
 
 1. Faça o seguinte para criar uma condição para avaliar se o texto selecionado/condicionado aparece na correspondência e, em seguida, selecione a marca de seleção para salvar a expressão:
 
@@ -66,11 +66,11 @@ Você pode inserir a condição em linha em uma correspondência inserindo a con
    ${DD_creditcard_Gender=="Male"}
    ```
 
-   Para obter mais informações sobre como criar a expressão, consulte **Criar expressões e funções remotas com o construtor de expressões** in [Construtor de expressões](../../forms/using/expression-builder.md). O valor especificado na expressão deve ser suportado para o elemento no dicionário de dados. Para obter mais informações, consulte [Dicionário de dados](../../forms/using/data-dictionary.md).
+   Para obter mais informações sobre como criar a expressão, consulte **Criação de expressões e funções remotas com o construtor de expressões** em [Construtor de Expressões](../../forms/using/expression-builder.md). O valor especificado na expressão deve ser suportado para o elemento no dicionário de dados. Para obter mais informações, consulte [Dicionário de dados](../../forms/using/data-dictionary.md).
 
    Depois que a condição for inserida, você poderá passar o mouse sobre a alça à esquerda da condição para visualizá-la. É possível selecionar a alça para exibir o menu pop-up da condição, que permite editar ou remover a condição.
 
-   ![3_hoverhandle](assets/3_hoverhandle.png) ![4_editconditionremoveconditionpop-up](assets/4_editconditionremoveconditionpopup.png)
+   ![3_hoverhandle](assets/3_hoverhandle.png) ![4_editconditionremoveconditionpopup](assets/4_editconditionremoveconditionpopup.png)
 
 1. Inserir condição semelhante selecionando o texto `Ma'am`.
 
@@ -107,13 +107,13 @@ O exemplo a seguir fornece as etapas para usar a opção repetir para estruturar
 
 1. Selecione o conteúdo no qual aplicar a repetição.
 
-   ![2_selection](assets/2_selection.png)
+   ![2_seleção](assets/2_selection.png)
 
 1. Selecione Repetir.
 
    A caixa de diálogo Repetir é exibida.
 
-   ![3_repeat_dialog](assets/3_repeatdialog.png)
+   ![3_caixa_de_diálogo_repetição](assets/3_repeatdialog.png)
 
 1. Selecione Quebra de linha como separador e, se necessário, selecione Adicionar condição para criar uma regra. Também é possível usar o texto como separador e especificar os caracteres de texto a serem usados como separador.
 
@@ -170,7 +170,7 @@ O exemplo a seguir fornece as etapas para usar repetir para estruturar e renderi
 
    ![2_repeat_selecttext](assets/2_repeat_selecttext.png)
 
-1. Selecionar **Repetir**. A caixa de diálogo Repetir é exibida com uma condição em linha vazia.
+1. Selecione **Repetir**. A caixa de diálogo Repetir é exibida com uma condição em linha vazia.
 
    ![3_repeat_dialog](assets/3_repeat_dialog.png)
 
@@ -180,11 +180,11 @@ O exemplo a seguir fornece as etapas para usar repetir para estruturar e renderi
    ${DD_creditcard_TransactionAmount > 0.5}
    ```
 
-   Caso contrário, se você não precisar renderizar as informações (aqui, transações) seletivamente, mantenha a condição vazia ao excluir o seguinte na caixa de diálogo: `${}`. Salvar uma expressão de repetição é permitido quando a janela de expressão de repetição está vazia (sem ${} quando nenhuma repetição é necessária) ou quando contém uma condição válida para repetição.
+   Caso contrário, se você não precisar renderizar as informações (aqui transações) seletivamente, mantenha a condição vazia excluindo o seguinte na caixa de diálogo: `${}`. Salvar uma expressão de repetição é habilitado quando a janela de expressão de repetição está vazia (sem ${} quando nenhuma repetição é necessária) ou quando contém uma condição válida para repetição.
 
 1. Selecione um separador para formatar o texto dinâmico e selecione a marca de seleção a ser salva:
 
-   * **Quebra de linha**: insere quebra de linha após cada entrada de transação na carta de saída.
+   * **Quebra de Linha**: insere a quebra de linha após cada entrada de transação na carta de saída.
    * **Texto**: insere o caractere de texto especificado após cada entrada de transação na letra de saída.
 
    Depois que a condição for inserida, o texto com repeat será realçado em vermelho e um identificador será exibido à esquerda. Você pode passar o mouse sobre a alça à esquerda da repetição para visualizar a construção de repetição.
@@ -204,7 +204,7 @@ O exemplo a seguir fornece as etapas para usar repetir para estruturar e renderi
 
    ![6_repetoutputpreview](assets/6_repeatoutputpreview.png)
 
-   O texto estático se repete com os detalhes da transação. A repetição de texto estático é facilitada pela repetição aplicada ao texto neste procedimento. A condição, ${DD_creditcard_TransactionAmount > 0.5}, garante que as transações inferiores a US$ 0,5 não sejam renderizadas na carta.
+   O texto estático se repete com os detalhes da transação. A repetição de texto estático é facilitada pela repetição aplicada ao texto neste procedimento. A condição ${DD_creditcard_TransactionAmount > 0.5}, garante que as transações abaixo de USD .5 não sejam renderizadas na carta.
 
    >[!NOTE]
    >
@@ -218,9 +218,9 @@ Talvez seja necessário usar a repetição em uma condição. O Gerenciamento de
 
 Por exemplo, o seguinte é repetido (formatado em vermelho) em uma condição (formatado em verde).
 
-Enquanto a repetição renderiza as transações de cartão de crédito, a condição ${DD_creditcard_nooftransactions > 0} garante que a construção repeat seja renderizada somente se houver pelo menos uma transação.
+Enquanto a repetição renderiza as transações de cartão de crédito, a condição ${DD_creditcard_nooftransactions > 0} garante que a construção de repetição seja renderizada somente se houver pelo menos uma transação.
 
-![repetindocondição](assets/repeatwitincondition.png)
+![repetwitincondition](assets/repeatwitincondition.png)
 
 Da mesma forma, de acordo com sua necessidade, você pode criar:
 

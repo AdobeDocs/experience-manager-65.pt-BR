@@ -25,11 +25,11 @@ Para o AEM Communities, há vários relatórios que podem ser acessados de vári
 
 Em geral, os vários relatórios são:
 
-* [Relatório de exibições](#views-report)
+* [Relatório de modos de exibição](#views-report)
 
   Fornece um gráfico de exibições de conteúdo por membros da comunidade e visitantes do site para qualquer site da comunidade.
 
-* [Relatório de publicações](#posts-report)
+* [Relatório de postagens](#posts-report)
 
   Fornece um gráfico de vários tipos de publicações de membros da comunidade para qualquer site da comunidade.
 
@@ -39,7 +39,7 @@ Os relatórios tabulares podem ser exportados no formato .csv para processamento
 
 ### Relatórios para sites da comunidade {#reports-for-community-sites}
 
-* Na navegação global: **[!UICONTROL Navegação]** > **[!UICONTROL Communities]** >  **[!UICONTROL Relatórios]**
+* Da navegação global: **[!UICONTROL Navegação]** > **[!UICONTROL Comunidades]** > **[!UICONTROL Relatórios]**
 
 * Escolher de:
 
@@ -47,11 +47,11 @@ Os relatórios tabulares podem ser exportados no formato .csv para processamento
 
       * Gere um relatório para o site da comunidade, usuário ou grupo selecionado e atribuição.
 
-   * **[!UICONTROL Relatório de publicações]**
+   * **[!UICONTROL Relatório de postagens]**
 
       * Gerar um relatório para o site da comunidade, tipo de conteúdo e período de tempo selecionados.
 
-   * **[!UICONTROL Relatório de exibições]**
+   * **[!UICONTROL Relatório de modos de exibição]**
 
       * gere um relatório para o Site da comunidade, Tipo de conteúdo e Período selecionados.
 
@@ -73,7 +73,7 @@ Selecione os critérios para o relatório:
 
   Pode escolher Todo o conteúdo ou selecionar um dos recursos presentes no site.
 
-* **[!UICONTROL Período de tempo]**
+* **[!UICONTROL Intervalo de tempo]**
 
   Selecione um de:
 
@@ -82,7 +82,7 @@ Selecione os critérios para o relatório:
    * Últimos 90 dias
    * Ano anterior
 
-Selecionar **[!UICONTROL Gerar]** para criar o relatório.
+Selecione **[!UICONTROL Gerar]** para criar o relatório.
 
 ![generate-views](assets/generate-views.png)
 
@@ -90,7 +90,7 @@ Selecionar **[!UICONTROL Gerar]** para criar o relatório.
 
 O console Postagens permite gerar relatórios sobre o número de postagens para recursos da comunidade em um determinado período de tempo.
 
-![post-report](assets/posts-report.png)
+![relatório de postagens](assets/posts-report.png)
 
 Selecione os critérios para o relatório:
 
@@ -102,7 +102,7 @@ Selecione os critérios para o relatório:
 
   Pode escolher Todo o conteúdo ou selecionar um dos recursos presentes no site.
 
-* **[!UICONTROL Período de tempo]**
+* **[!UICONTROL Intervalo de tempo]**
 
   Selecione um de:
 
@@ -111,9 +111,9 @@ Selecione os critérios para o relatório:
    * Últimos 90 dias
    * Ano anterior
 
-Selecionar **[!UICONTROL Gerar]** para criar o relatório.
+Selecione **[!UICONTROL Gerar]** para criar o relatório.
 
-![generate-report](assets/generate-posts-report.png)
+![gerar-relatório](assets/generate-posts-report.png)
 
 ## Resolução de problemas {#troubleshooting}
 
@@ -123,6 +123,6 @@ Se nenhum site da comunidade estiver listado, verifique se o Adobe Analytics foi
 
 ### Os relatórios não são exibidos na instância do autor do AEM {#reports-do-not-show-in-aem-author-instance}
 
-Se os relatórios não forem exibidos na instância do Autor AEM, verifique as personalizações, como o mapeamento de URL na instância de publicação. Se o mapeamento do URL for feito somente na instância AEM Publish do site das comunidades, verifique se o mesmo foi configurado na instância AEM Author em **Fatory do Componente Social do Relatório de Tendências do Site** configuração.
+Se os relatórios não forem exibidos na instância do Autor AEM, verifique as personalizações, como o mapeamento de URL na instância do Publish. Se o mapeamento de URL for feito somente na instância AEM Publish do site de comunidades, verifique se o mesmo foi configurado na instância AEM Author na configuração **Site Trend Report Social Component Fatory**.
 
-![Mapeamento de URL no autor do AEM](assets/sitetrend.png)
+![Mapeamento de URL no Autor do AEM](assets/sitetrend.png)

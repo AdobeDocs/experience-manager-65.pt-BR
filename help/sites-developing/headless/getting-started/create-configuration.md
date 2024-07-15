@@ -8,7 +8,7 @@ role: Admin,Architect,Data Architect,Developer
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '295'
-ht-degree: 65%
+ht-degree: 66%
 
 ---
 
@@ -32,7 +32,7 @@ Um administrador só precisaria criar uma configuração uma vez ou, muito raram
 
 1. Faça logon no AEM e, no menu principal, selecione **Ferramentas > Geral > Navegador de configuração**.
 1. Forneça um **Título** para sua configuração.
-   * Um nome será gerado automaticamente com base no título e ajustado de acordo com [Convenções de nomenclatura do AEM.](/help/sites-developing/naming-conventions.md). Ele se tornará o nome do nó no repositório.
+   * Um nome será gerado automaticamente com base no título e ajustado de acordo com as [convenções de nomenclatura do AEM.](/help/sites-developing/naming-conventions.md). Ele se tornará o nome do nó no repositório.
 1. Verifique as seguintes opções:
    * **Modelos de fragmentos do conteúdo**
    * **Consultas persistentes de GraphQL**

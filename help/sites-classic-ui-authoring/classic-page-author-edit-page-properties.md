@@ -28,7 +28,7 @@ As propriedades são distribuídas por várias guias:
 
 * **Título**
 
-  O título da página é exibido em vários locais. Por exemplo, a variável **Sites** lista de guias e o **Sites** exibições de cartão/lista.
+  O título da página é exibido em vários locais. Por exemplo, a lista de guias **Sites** e as exibições de cartão/lista **Sites**.
 
   Este campo é obrigatório.
 
@@ -44,7 +44,7 @@ As propriedades são distribuídas por várias guias:
    * Com a funcionalidade de menu suspenso, é possível selecionar tags existentes.
    * Um x é exibido quando você passa o mouse sobre uma entrada de tag na caixa de seleção; isso pode ser usado para remover essa tag para esta página.
 
-* **Ocultar na navegação**
+* **Ocultar na Navegação**
 
   Um switch para indicar se a página está visível ou oculta na navegação da página.
 
@@ -56,7 +56,7 @@ As propriedades são distribuídas por várias guias:
 
   Você pode especificar um título separado para usar na navegação (por exemplo, se desejar algo mais conciso). Se estiver vazio, a variável **Título** é usada.
 
-* **Legenda**
+* **Subtítulo**
 
   Um subtítulo para usar na página.
 
@@ -70,7 +70,7 @@ As propriedades são distribuídas por várias guias:
 
   Deixe esses campos vazios para páginas que deseja publicar imediatamente (o cenário normal).
 
-* **Tempo desligado**
+* **Tempo de Desativação**
 
   A hora em que a página publicada será desativada.
 
@@ -80,7 +80,7 @@ As propriedades são distribuídas por várias guias:
 
   Permite inserir um URL personalizado para esta página. Isso permite que você tenha um URL mais curto e expressivo.
 
-  Por exemplo, se o URL personalizado estiver definido como w `elcome`à página identificada pelo caminho / `v1.0/startpage`para o site h `ttp://example.com,` depois h `ttp://example.com/welcome`seria o URL personalizado de h `ttp://example.com/content/v1.0/startpage`
+  Por exemplo, se a URL personalizada estiver definida como w `elcome` para a página identificada pelo caminho / `v1.0/startpage` para o site h `ttp://example.com,` então h `ttp://example.com/welcome` seria a URL personalizada de h `ttp://example.com/content/v1.0/startpage`
 
   >[!CAUTION]
   >
@@ -89,7 +89,7 @@ As propriedades são distribuídas por várias guias:
   >* deve ser exclusivo, portanto, certifique-se de que o valor ainda não esteja sendo usado por outra página.
   >* não são compatíveis com padrões regex.
 
-* **Redirecionar URL personalizado**
+* **Redirecionar URL do Vanity**
 
   Indica se você deseja que a página use a URL personalizada.
 
@@ -105,21 +105,21 @@ As propriedades são distribuídas por várias guias:
 
 * **Design**
 
-  Indique a [design](/help/sites-developing/designer.md) a ser usado para esta página.
+  Indique o [design](/help/sites-developing/designer.md) a ser usado para esta página.
 
 * **Alias**
 
   Especifique um alias a ser usado com esta página.
 
-* **Ativar grupo de usuários fechado**
+* **Habilitar Grupo de Usuários Fechado**
 
-  Habilita (ou desabilita) o uso de [grupos de usuários fechados](/help/sites-administering/cug.md) (CUGs).
+  Permite (ou desabilita) o uso de [grupos de usuários fechados](/help/sites-administering/cug.md) (CUGs).
 
-* **Página de logon**
+* **Página de Logon**
 
   A página a ser usada para logon.
 
-* **Grupos Admitidos**
+* **Grupos admitidos**
 
   Grupos qualificados para fazer logon no CUG.
 
@@ -149,7 +149,7 @@ As propriedades são distribuídas por várias guias:
 
 * **Cloud Services**
 
-  Definir propriedades para [serviços em nuvem](/help/sites-developing/extending-cloud-config.md).
+  Defina as propriedades para [serviços em nuvem](/help/sites-developing/extending-cloud-config.md).
 
 ### Personalização {#personalization}
 
@@ -161,7 +161,7 @@ As propriedades são distribuídas por várias guias:
 
 * **Permissões** (interface otimizada para toque)
 
-  Exibir o [permissões efetivas e adicionar novas permissões](/help/sites-administering/user-group-ac-admin.md).
+  Exiba as [permissões efetivas e adicione novas permissões](/help/sites-administering/user-group-ac-admin.md).
 
 ### Blueprint {#blueprint}
 
@@ -173,11 +173,11 @@ As propriedades são distribuídas por várias guias:
 
 * **Live Copy**
 
-  Definir propriedades para uma página de Live Copy no [gerenciamento de vários sites](/help/sites-administering/msm.md). Controla as circunstâncias sob as quais as modificações serão propagadas do Blueprint.
+  Defina as propriedades para uma página de Live Copy no [gerenciamento de vários sites](/help/sites-administering/msm.md). Controla as circunstâncias sob as quais as modificações serão propagadas do Blueprint.
 
 ### Estrutura do site  {#site-structure}
 
-* Forneça links para páginas que oferecem funcionalidade em todo o site, como **Página de inscrição**, **Página offline**, entre outros.
+* Forneça links para páginas que oferecem funcionalidade em todo o site, como a **Página de Inscrição**, a **Página Offline**, entre outras.
 
 ## Editar as propriedades da página {#editing-page-properties-2}
 
@@ -187,7 +187,7 @@ As Propriedades da página definem as várias propriedades da página, como tít
 
 1. Abra a página que deseja editar.
 
-1. No sidekick, abra o **Página** e selecione **Página Propriedades...**
+1. No sidekick, abra a guia **Página** e selecione **Propriedades da página...**
 
    Isso abre uma caixa de diálogo com várias guias.
 

@@ -20,14 +20,14 @@ ht-degree: 0%
 
 A SAML (Security Assertion Markup Language) é uma das opções que você pode selecionar ao configurar a autorização para um domínio corporativo ou híbrido. O SAML é usado principalmente para oferecer suporte a SSO em vários domínios. Quando o SAML é configurado como seu provedor de autenticação, os usuários fazem logon e se autenticam em formulários AEM por meio de um provedor de identidade de terceiros (IDP) especificado.
 
-Para obter uma explicação sobre SAML, consulte [Visão geral técnica da Security Assertion Markup Language (SAML) V2.0](https://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-tech-overview-2.0.html).
+Para obter uma explicação sobre SAML, consulte [Visão Geral Técnica da SAML (Security Assertion Markup Language) V2.0](https://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-tech-overview-2.0.html).
 
 1. No console de administração, clique em Configurações > Gerenciamento de usuários > Configuração > Configurações do Provedor de serviço SAML.
-1. Na caixa ID de entidade do provedor de serviços, digite um ID exclusivo para usar como um identificador para a implementação do provedor de serviços dos formulários AEM. Você também especifica esse identificador exclusivo ao configurar seu IDP (por exemplo, `um.lc.com`.) Você também pode usar o URL usado para acessar formulários AEM (por exemplo, `https://AEMformsserver`).
-1. Na caixa URL de base do provedor de serviços, digite o URL de base do seu servidor Forms (por exemplo, `https://AEMformsserver:8080`).
+1. Na caixa ID de entidade do provedor de serviços, digite um ID exclusivo para usar como um identificador para a implementação do provedor de serviços dos formulários AEM. Você também especifica esse identificador exclusivo ao configurar seu IDP (por exemplo, `um.lc.com`.) Você também pode usar a URL usada para acessar formulários AEM (por exemplo, `https://AEMformsserver`).
+1. Na caixa URL Base do Provedor de Serviços, digite a URL base do seu Forms Server (por exemplo, `https://AEMformsserver:8080`).
 1. (Opcional) Para permitir que os formulários AEM enviem solicitações de autenticação assinadas ao IDP, execute as seguintes tarefas:
 
-   * Use o Gerenciador de Confiança para importar uma credencial no formato PKCS #12 com a Credencial de assinatura de documento selecionada como o Tipo de armazenamento de confiança. (Consulte [Gerenciar credenciais locais](/help/forms/using/admin-help/local-credentials.md#managing-local-credentials).)
+   * Use o Gerenciador de Confiança para importar uma credencial no formato PKCS #12 com a Credencial de assinatura de documento selecionada como o Tipo de armazenamento de confiança. (Consulte [Gerenciando credenciais locais](/help/forms/using/admin-help/local-credentials.md#managing-local-credentials).)
    * Na lista Alias da chave de credencial do provedor de serviços, selecione o alias atribuído à credencial no armazenamento de confiança.
    * Clique em Exportar para salvar o conteúdo do URL em um arquivo e, em seguida, importar esse arquivo para o IDP.
 

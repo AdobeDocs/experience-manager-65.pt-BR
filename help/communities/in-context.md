@@ -20,11 +20,11 @@ ht-degree: 0%
 
 Para o AEM Communities, a moderação pode ser executada por administradores e membros confiáveis da comunidade diretamente na página publicada onde o conteúdo da comunidade foi publicado.
 
-Ao usar uma [console de moderação](moderation.md), as informações exibidas para o conteúdo incluem um link para a página publicada para permitir acesso a ações de moderação adicionais disponíveis ao moderar no contexto.
+Ao usar um [console de moderação](moderation.md), as informações exibidas para o conteúdo incluem um link para a página publicada para permitir o acesso a ações de moderação adicionais disponíveis durante a moderação em contexto.
 
 ## Ações de moderação {#moderation-actions}
 
-Acesse a visão geral de moderação para obter uma descrição de [ações de moderação](moderate-ugc.md#moderation-actions).
+Visite a visão geral da moderação para obter uma descrição de [ações de moderação](moderate-ugc.md#moderation-actions).
 
 ## Moderação da interface do usuário {#moderation-ui}
 
@@ -38,20 +38,20 @@ A interface apresentada ao moderador na instância de publicação está contida
 
 ## Exemplo {#example}
 
-Usar o [Geometrixx Engage](http://localhost:4503/content/sites/engage/en.html) site criado quando [Introdução ao AEM Communities](getting-started.md), é possível configurar um thread em um fórum no qual experimentar várias atividades de moderação no ambiente de Publicação. Veja abaixo.
+Usando o site [Geometrixx Engage](http://localhost:4503/content/sites/engage/en.html) criado ao [Começar a usar o AEM Communities](getting-started.md), é possível configurar um thread em um fórum no qual experimentar várias atividades de moderação no ambiente do Publish. Veja abaixo.
 
-Aaron McDonald (`aaron.mcdonald@mailinator.com`) foi identificado como um membro confiável da comunidade, adicionando-o ao grupo community-engage-moderators ao criar o site.
+Aaron McDonald (`aaron.mcdonald@mailinator.com`) foi identificado como um membro confiável da comunidade, adicionando-o ao grupo de moderadores de engajamento da comunidade ao criar o site.
 
-Rebekah Larsen (`rebekah.larsen@trashymail.com`) pode ser adicionado como membro do grupo de membros de envolvimento da comunidade usando o [Console de membros](members.md).
+Rebekah Larsen (`rebekah.larsen@trashymail.com`) pode ser adicionada como membro do grupo community-engage-member usando o [console Membros](members.md).
 
-Para obter mais informações sobre grupos de usuários da comunidade, visite [Gerenciar usuários e grupos de usuários](users.md).
+Para obter mais informações sobre grupos de usuários da comunidade, visite [Gerenciando usuários e grupos de usuários](users.md).
 
 ### Criar as publicações do fórum {#create-the-forum-posts}
 
 * Fazer logon como Rebekah Larsen (rebekah.larsen@trashymail.com)
 
    * Selecionar fórum
-   * Selecionar nova publicação
+   * Selecionar novo Post
    * Insira o assunto
 
      Quando trocar o néctar no Humming Bird Feeder
@@ -60,14 +60,14 @@ Para obter mais informações sobre grupos de usuários da comunidade, visite [G
 
      Não tenho tido muito sucesso quando penduro um alimentador de beija-flor todo ano. Parece que eles chegam um ou dois dias, então é isso. Eu troco uma vez por semana é muito tempo? Preciso mudá-la antes?
 
-   * Selecionar publicação
+   * Selecionar Post
    * Selecione Fazer logoff
 
 * Efetue logon como Aaron McDonald (aaron.mcdonald@mailinator.com)
 
    * Selecionar fórum
    * Para o Tópico Hummingbird, selecione Ler mais
-   * Inserir o comentário para Publicar resposta
+   * Insira o comentário para a resposta do Post
 
      Eu troco as minhas uma vez por semana e as recebo de maio a outubro.
 
@@ -78,7 +78,7 @@ Para obter mais informações sobre grupos de usuários da comunidade, visite [G
 
    * Selecionar fórum
    * Para o Tópico Hummingbird, selecione Ler mais
-   * Inserir o comentário para Publicar resposta
+   * Insira o comentário para a resposta do Post
 
      Eu vendo néctar e alimentadores - visite https://my.viral.url/
 
@@ -95,9 +95,9 @@ Um visitante anônimo do site só pode ver o fórum, mas não pode publicar cont
 
 ### Novo membro (#4) {#new-member}
 
-Na criação, faça logon como administrador e adicione Boyd Larsen (boyd.larsen@dodgit.com) como um novo membro do grupo de membros envolvidos pela comunidade usando o [Console de membros](members.md)e, em seguida, Fazer logoff.
+Na criação, faça logon como administrador e adicione Boyd Larsen (boyd.larsen@dodgit.com) como um novo membro do grupo community-engage-members usando o [console Membros](members.md) e, em seguida, Faça logout.
 
-Ao publicar, faça logon como Boyd Larsen e acesse o thread selecionando `Forum`e depois `Read more` para o poste de beija-flor.
+Ao publicar, faça logon como Boyd Larsen e acesse o thread selecionando `Forum` e depois `Read more` para a publicação do beija-flor.
 
 Aviso:
 
@@ -109,7 +109,7 @@ Peça a Boyd que selecione Flag para sinalizar o conteúdo publicado por Andrew.
 
 Fazer logoff
 
-![comunidade-fórum-membro](assets/community-forum-member.png)
+![membro-fórum-comunidade](assets/community-forum-member.png)
 
 ### Administrador (#3) {#administrator}
 
@@ -120,9 +120,9 @@ Aviso:
 * O administrador pode sinalizar, excluir, editar, negar, recortar, fechar, fixar, recurso.
 * O administrador pode selecionar Administração para acessar o console de moderação.
 
-![community-admin-forum](assets/community-admin-forum.png)
+![fórum de administração da comunidade](assets/community-admin-forum.png)
 
-Selecione o item de menu Administração para poder acessar o [console de moderação](moderation.md) do Ambiente de publicação.
+Selecione o item de menu Administração para poder acessar o [console de moderação](moderation.md) do ambiente do Publish.
 
 Observe que, para um administrador, todo o conteúdo moderável está visível, não apenas o conteúdo do site da comunidade do Geometrixx Engage.
 
@@ -130,11 +130,11 @@ O filtro de pesquisa é um painel lateral que alterna entre aberto e fechado.
 
 Fazer logoff.
 
-![moderation-console-publish](assets/moderation-console-publish.png)
+![publicação-console-moderação](assets/moderation-console-publish.png)
 
 ### Moderador da comunidade (#2) {#community-moderator}
 
-Efetue logon como Aaron McDonald (`aaron.mcdonal@mailinator.com`), um moderador da comunidade, e acesse o tópico selecionando Fórum e, em seguida, Leia mais na publicação do beija-flor.
+Faça logon como Aaron McDonald (`aaron.mcdonal@mailinator.com`), um moderador da comunidade, acesse o thread selecionando Fórum e Leia mais na publicação do beija-flor.
 
 Aviso:
 
@@ -143,9 +143,9 @@ Aviso:
 * Aaron pode Cortar o tópico do fórum para movê-lo para outro fórum que ele modera.
 * Aaron pode selecionar Administração para acessar o console de moderação.
 
-![comunidade-fórum-moderador](assets/community-forum-moderator.png)
+![moderador-fórum-comunidade](assets/community-forum-moderator.png)
 
-Selecione o item de menu Administração para poder acessar o [console de moderação](moderation.md) do Ambiente de publicação.
+Selecione o item de menu Administração para poder acessar o [console de moderação](moderation.md) do ambiente do Publish.
 
 Observe que, para um moderador da comunidade, somente o conteúdo moderável do site da comunidade do Geometrixx Engage fica visível.
 
@@ -153,11 +153,11 @@ Observe que o moderador da comunidade tem as mesmas opções que o administrador
 
 Fazer logoff.
 
-![moderador-access](assets/moderator-access.png)
+![acesso-moderador](assets/moderator-access.png)
 
 ### Autor de conteúdo (#1) {#content-author}
 
-Efetue logon como Rebekah Larsen (`rebekah.larsen@mailinator.com`), um membro da comunidade que iniciou o thread e acesse o thread selecionando Fórum e, em seguida, Leia mais na publicação do beija-flor.
+Faça logon como Rebekah Larsen (`rebekah.larsen@mailinator.com`), um membro da comunidade que iniciou o thread, e acesse o thread selecionando Fórum e depois Leia mais para a publicação do beija-flor.
 
 Aviso:
 
@@ -165,4 +165,4 @@ Aviso:
 * Rebekah também pode Responder ou Sinalizar outro conteúdo.
 * Rebekah não pode acessar o console de moderação.
 
-![comunidade-fórum-autor](assets/community-forum-author.png)
+![autor-do-fórum-comunidade](assets/community-forum-author.png)

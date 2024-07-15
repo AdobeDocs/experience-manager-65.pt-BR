@@ -28,11 +28,11 @@ Com o Dynamic Media, você tem várias opções:
 
    * Incorporar o vídeo ou a imagem no site.
    * Vincule URLs ao aplicativo da Web. Use a vinculação quando quiser fornecer um reprodutor de vídeo como uma janela pop-up ou modal.
-   * Se o site for responsivo, você poderá [fornecer imagens otimizadas](/help/assets/responsive-site.md).
+   * Se o seu site é responsivo, você pode [fornecer imagens otimizadas](/help/assets/responsive-site.md).
 
 >[!NOTE]
 >
->A geração de imagens inteligentes funciona com suas predefinições de imagens existentes e usa inteligência nos últimos milissegundos do delivery para reduzir ainda mais o tamanho do arquivo de imagem com base na velocidade do navegador ou da conexão de rede. Consulte [Imagem inteligente](/help/assets/imaging-faq.md) para obter mais informações.
+>A geração de imagens inteligentes funciona com suas predefinições de imagens existentes e usa inteligência nos últimos milissegundos do delivery para reduzir ainda mais o tamanho do arquivo de imagem com base na velocidade do navegador ou da conexão de rede. Consulte [Smart Imaging](/help/assets/imaging-faq.md) para obter mais informações.
 
 Para obter mais informações, consulte os seguintes tópicos:
 

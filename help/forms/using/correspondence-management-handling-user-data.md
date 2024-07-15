@@ -52,11 +52,11 @@ Dependendo da persistência do armazenamento de dados configurada para a implant
 
 No local especificado acima para o repositório AEM:
 
-* `[yyyy]/[mm]/[dd]` é a estrutura do nó com base na data em que a ocorrência de carta foi criada
+* `[yyyy]/[mm]/[dd]` é a estrutura do nó baseada na data em que a instância de carta foi criada
 * `[node-id]` é a ID atribuída à pasta que contém a letra
 * `[letter-instance-name]` é o nome especificado ao salvar ou enviar uma carta
 
-No [letter-instance-name] , a seguinte estrutura de nó é criada e os dados de cada ocorrência de carta são armazenados no repositório AEM:
+No nó [letter-instance-name], a seguinte estrutura de nó é criada e os dados de cada instância de carta são armazenados no repositório AEM:
 
 | Nó | Descrição |
 |---|---|
@@ -73,7 +73,7 @@ Você pode acessar dados de correspondência de rascunho e enviados nos armazena
 
 O Gerenciamento de correspondência fornece APIs que podem ser usadas para localizar e acessar instâncias de rascunho e de carta enviada. Usando as APIs, você pode localizar e abrir instâncias de cartas usando a ID de instância de cartas ou o usuário que salvou ou enviou a correspondência. Para obter mais informações, consulte [APIs para acessar instâncias de cartas](/help/forms/using/cm-apis-to-access-letter-instances.md).
 
-Como alternativa, você pode navegar até a ocorrência de correspondência no repositório AEM usando CRXDE Lite. Consulte [Dados do usuário e armazenamentos de dados](/help/forms/using/correspondence-management-handling-user-data.md#data) para obter informações sobre os dados armazenados e o local do repositório.
+Como alternativa, você pode navegar até a ocorrência de correspondência no repositório AEM usando CRXDE Lite. Consulte [Dados do usuário e armazenamentos de dados](/help/forms/using/correspondence-management-handling-user-data.md#data) para obter informações sobre dados armazenados e o local do repositório.
 
 ### Excluir dados do usuário {#delete-user-data}
 

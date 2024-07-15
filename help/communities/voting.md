@@ -18,29 +18,29 @@ ht-degree: 1%
 
 # Usando a votação {#using-voting}
 
-A variável `Voting` O componente é uma ferramenta útil que permite aos membros da comunidade classificar um conteúdo específico, como uma resposta em um componente de QnA. Com o `Voting` componente, os membros selecionam setas para cima ou para baixo para indicar sua opinião.
+O componente `Voting` é uma ferramenta útil que permite aos membros da comunidade classificar um conteúdo específico, como uma resposta dentro de um componente QnA. Com o componente `Voting`, os membros selecionam setas para cima ou para baixo para indicar sua opinião.
 
 ## Adicionando votação a uma página {#adding-voting-to-a-page}
 
-Para adicionar um `Voting` para uma página no modo Autor, use o navegador de componentes. Localizar `Communities / Voting` e arraste-o para o local em uma página, como uma posição relativa ao recurso para que os usuários votem.
+Para adicionar um componente `Voting` a uma página no modo Autor, use o navegador de componentes. Localize `Communities / Voting` e arraste-o para o local em uma página, como uma posição relativa ao recurso para que os usuários possam votar.
 
 Para obter as informações necessárias, visite [Noções básicas sobre componentes das comunidades](basics.md).
 
-Quando a variável [bibliotecas obrigatórias do lado do cliente](essentials-voting.md#essentials-for-client-side) são incluídos, é assim que a variável `Voting` é exibido.
+Quando as [bibliotecas obrigatórias do lado do cliente](essentials-voting.md#essentials-for-client-side) são incluídas, é assim que o componente `Voting` aparece.
 
 ![componente de votação](assets/voting-component.png)
 
 ## Configurando a votação {#configuring-voting}
 
-Selecione o colocado `Voting` para que você possa acessar e selecionar o `Configure` ícone que abre a caixa de diálogo de edição.
+Selecione o componente `Voting` inserido para que você possa acessar e selecionar o ícone `Configure` que abre a caixa de diálogo de edição.
 
 ![configurar](assets/configure-new.png)
 
-No **[!UICONTROL Textos e rótulos]** especifique as propriedades usadas para registrar votos.
+Na guia **[!UICONTROL Textos e rótulos]**, especifique as propriedades usadas para registrar votos.
 
-![voting-label](assets/voting-label.png)
+![rótulo de votação](assets/voting-label.png)
 
-* **[!UICONTROL Rótulo de resposta positiva]**
+* **[!UICONTROL Rótulo de Resposta Positiva]**
 
   (*Obrigatório*) O nome da propriedade interna para uma resposta positiva.
 
@@ -48,9 +48,9 @@ No **[!UICONTROL Textos e rótulos]** especifique as propriedades usadas para re
 
   (*Obrigatório*) O nome da propriedade interna para uma resposta negativa.
 
-* **[!UICONTROL Nome Tally]**
+* **[!UICONTROL Nome da Tally]**
 
-  (*Obrigatório*) O nome de propriedade interno e identificável dessa instância de um componente de votação.
+  (*Obrigatório*) O nome de propriedade interno e identificável para esta instância de um componente de votação.
 
 ## Experiência de visitante do site {#site-visitor-experience}
 
@@ -64,4 +64,4 @@ O voto anônimo não é suportado. Os visitantes do site devem se registrar (se 
 
 ## Informações adicionais {#additional-information}
 
-Mais informações podem ser encontradas no [Fundamentos para votação](essentials-voting.md) página para desenvolvedores.
+Mais informações podem ser encontradas na página do [Voting Essentials](essentials-voting.md) para desenvolvedores.

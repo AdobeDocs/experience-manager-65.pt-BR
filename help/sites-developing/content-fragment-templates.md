@@ -21,7 +21,7 @@ ht-degree: 3%
 
 >[!CAUTION]
 >
->[Modelos de fragmento de conteúdo](/help/assets/content-fragments/content-fragments-models.md) são recomendadas para criar todos os novos fragmentos de conteúdo.
+>[Modelos de fragmento de conteúdo](/help/assets/content-fragments/content-fragments-models.md) são recomendados para criar todos os novos fragmentos de conteúdo.
 >
 >Os modelos de fragmento de conteúdo são usados para todos os exemplos no WKND.
 
@@ -49,13 +49,13 @@ A ordem de precedência é (em ordem decrescente) `/conf`, `/apps`, `/libs`.
 
 >[!CAUTION]
 >
->Você ***deve*** não alterar nada no `/libs` caminho.
+>Você ***deve*** não alterar nada no caminho `/libs`.
 >
->Isso ocorre porque o conteúdo de `/libs` é substituído na próxima vez que você atualizar sua instância (e pode ser substituído ao aplicar um hotfix ou pacote de recursos).
+>Isso ocorre porque o conteúdo de `/libs` é substituído na próxima vez que você atualizar sua instância (e pode ser substituído quando você aplicar um hotfix ou pacote de recursos).
 >
 >O método recomendado para configuração e outras alterações é:
 >
->1. Recrie o item necessário (ou seja, como ele existe em `/libs`) em `/apps`
+>1. Recriar o item necessário (isto é, como ele existe em `/libs`) em `/apps`
 >
 >1. Fazer alterações em `/apps`
 >
@@ -121,12 +121,12 @@ Mais detalhes sobre os nós e suas propriedades são:
     <tr>
      <td><code>jcr:title</code></td>
      <td><p><code>String</code></p> <p>obrigatório<br /> </p> </td>
-     <td>O título do modelo (exibido no campo <strong>Criar fragmento</strong> assistente).</td>
+     <td>O título do modelo (exibido no assistente <strong>Criar fragmento</strong>).</td>
     </tr>
     <tr>
      <td><code>jcr:description</code></td>
      <td><p><code>String</code></p> <p>opcional</p> </td>
-     <td>Um texto que descreve a finalidade do modelo (exibido no campo <strong>Criar fragmento</strong> assistente).</td>
+     <td>Um texto que descreve a finalidade do modelo (exibido no assistente <strong>Criar fragmento</strong>).</td>
     </tr>
     <tr>
      <td><code>initialAssociatedContent</code></td>
@@ -136,12 +136,12 @@ Mais detalhes sobre os nós e suas propriedades são:
     <tr>
      <td><code>precreateElements</code></td>
      <td><p><code>Boolean</code></p> <p>obrigatório</p> </td>
-     <td><p><code>true</code>, se os subativos que representam os elementos (exceto o elemento principal) do fragmento de conteúdo tiverem que ser criados quando o fragmento de conteúdo for criado; <em>false</em> se eles devem ser criados "em tempo real".</p> <p><strong>Nota</strong>: atualmente, esse parâmetro deve ser definido como <code>true</code>.</p> </td>
+     <td><p><code>true</code>, se os subativos que representam os elementos (exceto o elemento mestre) do fragmento de conteúdo tiverem que ser criados quando o fragmento de conteúdo for criado; <em>false</em> se tiverem que ser criados "instantaneamente".</p> <p><strong>Observação</strong>: atualmente, este parâmetro deve ser definido como <code>true</code>.</p> </td>
     </tr>
     <tr>
      <td><code>version</code></td>
      <td><p><code>Long</code></p> <p>obrigatório</p> </td>
-     <td><p>Versão da estrutura de conteúdo; atualmente compatível:</p> <p><strong>Nota</strong>: atualmente, esse parâmetro deve ser definido como <code>2</code>.<br /> </p> </td>
+     <td><p>Versão da estrutura de conteúdo; atualmente compatível:</p> <p><strong>Observação</strong>: atualmente, este parâmetro deve ser definido como <code>2</code>.<br /> </p> </td>
     </tr>
    </tbody>
   </table>
@@ -158,7 +158,7 @@ Mais detalhes sobre os nós e suas propriedades são:
     <tr>
      <td><code>elements</code><br /> </td>
      <td><p><code>nt:unstructured</code></p> <p>obrigatório</p> </td>
-     <td><p>Nó que contém a definição dos elementos do fragmento de conteúdo. É obrigatório e precisa conter pelo menos um nó secundário para o <strong>Principal</strong> elemento, mas pode conter [1..n] nós-filhos.</p> <p>Quando o modelo é usado, a sub-ramificação dos elementos é copiada para a sub-ramificação do modelo do fragmento.</p> <p>O primeiro elemento (conforme visualizado em CRXDE Lite) é automaticamente considerado como sendo o <i>main</i> elemento; o nome do nó é irrelevante e o nó em si não tem um significado especial, exceto o fato de que é representado pelo ativo principal; os outros elementos são tratados como subativos.</p> </td>
+     <td><p>Nó que contém a definição dos elementos do fragmento de conteúdo. É obrigatório e precisa conter pelo menos um nó filho para o elemento <strong>Main</strong>, mas pode conter [1.n] nós-filhos.</p> <p>Quando o modelo é usado, a sub-ramificação dos elementos é copiada para a sub-ramificação do modelo do fragmento.</p> <p>O primeiro elemento (conforme exibido em CRXDE Lite) é automaticamente considerado como o elemento <i>main</i>. O nome do nó é irrelevante e o próprio nó não tem um significado especial, exceto pelo fato de que é representado pelo ativo principal; os outros elementos são tratados como sub-ativos.</p> </td>
     </tr>
    </tbody>
   </table>
@@ -222,7 +222,7 @@ Mais detalhes sobre os nós e suas propriedades são:
    </tbody>
   </table>
 
-* **Nome da variação**
+* **Nome da Variação**
 
   <table>
    <tbody>
@@ -240,12 +240,12 @@ Mais detalhes sobre os nós e suas propriedades são:
     <tr>
      <td><code>jcr:title</code></td>
      <td><p><code>String</code></p> <p>obrigatório</p> </td>
-     <td>O título da variação (exibido no editor de fragmentos <strong>Variação</strong> (painel esquerdo).</td>
+     <td>O título da variação (exibido na guia <strong>Variação</strong> do editor de fragmentos (painel esquerdo)).</td>
     </tr>
     <tr>
      <td><code>jcr:desciption</code></td>
      <td><p><code>String</code></p> <p>opcional</p> <p>padrão: ""</p> </td>
-     <td>Um texto que fornece uma descrição da variação <span>(exibido no editor de fragmentos <strong>Variação</strong> (painel esquerdo).</code></td>
+     <td>Um texto que fornece uma descrição da variação <span> (exibida na guia <strong>Variação</strong> do editor de fragmento (painel esquerdo)).</code></td>
     </tr>
    </tbody>
   </table>

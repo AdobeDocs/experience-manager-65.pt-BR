@@ -39,17 +39,17 @@ Você pode segregar a delegação de itens com base nos modelos de fluxo de trab
 
 Execute as seguintes etapas para Ativar a configuração Ausência Temporária para sua conta e delegar seus Itens da Caixa de entrada a outro usuário:
 
-1. Faça logon na instância do AEM. Selecione o ![Caixa de entrada](assets/bell.svg) e selecione **[!UICONTROL Exibir todos]**. Uma lista dos itens da caixa de entrada é exibida.
-1. Selecione o ![Exibir seletor](assets/viewlist.svg) ou ![Exibir seletor](assets/calendar.svg) ícone ao lado do **[!UICONTROL Criar]** e selecione **[!UICONTROL Configurações]**. A caixa de diálogo de configurações é exibida.
-1. Abra o **[!UICONTROL Fora do escritório]** na caixa de diálogo de configurações.
-1. Selecione o **[!UICONTROL Ativar/desativar]** botão para ativar a configuração Out of Office.
-1. Especifique a **[!UICONTROL Hora de início]**  e **[!UICONTROL Hora de término]** para a configuração. Os itens são delegados somente durante o período especificado. Deixe a **[!UICONTROL Hora de término]** campo vazio para delegar itens por um período indefinido.
-1. Selecione o **[!UICONTROL Encaminhar meus itens durante este período]** caixa de seleção Se você não selecionar a opção e não especificar um destinatário, seus itens não serão encaminhados a nenhum usuário. Embora você esteja ausente e a configuração esteja ativada, os itens permanecem na sua Caixa de entrada.
-1. Selecionar **[!UICONTROL Adicionar atribuidor]**. Especifique um usuário no **[!UICONTROL Destinatário]** para poder delegar os itens. Especifique a **[!UICONTROL Modelo de fluxo de trabalho]** para que você possa delegar ao usuário especificado. É possível selecionar mais de um modelo de fluxo de trabalho.
+1. Faça logon na instância do AEM. Selecione o ícone ![Caixa de entrada](assets/bell.svg) e selecione **[!UICONTROL Exibir tudo]**. Uma lista dos itens da caixa de entrada é exibida.
+1. Selecione o ícone ![Exibir Seletor](assets/viewlist.svg) ou ![Exibir Seletor](assets/calendar.svg) ao lado do botão **[!UICONTROL Criar]** e selecione **[!UICONTROL Configurações]**. A caixa de diálogo de configurações é exibida.
+1. Abra a guia **[!UICONTROL Ausência Temporária]** na caixa de diálogo de configurações.
+1. Selecione o botão **[!UICONTROL Habilitar/Desabilitar]** para habilitar a configuração Ausência Temporária.
+1. Especifique a **[!UICONTROL Hora de Início]** e a **[!UICONTROL Hora de Término]** para a configuração. Os itens são delegados somente durante o período especificado. Deixe o campo **[!UICONTROL Hora de Término]** vazio para delegar itens por um período indefinido.
+1. Marque a caixa de seleção **[!UICONTROL Encaminhar meus itens durante este período]**. Se você não selecionar a opção e não especificar um destinatário, seus itens não serão encaminhados a nenhum usuário. Embora você esteja ausente e a configuração esteja ativada, os itens permanecem na sua Caixa de entrada.
+1. Selecione **[!UICONTROL Adicionar Atribuído]**. Especifique um usuário no campo **[!UICONTROL Destinatário]** para poder delegar os itens. Especifique o **[!UICONTROL Modelo de Fluxo de Trabalho]** para poder delegar ao usuário especificado. É possível selecionar mais de um modelo de fluxo de trabalho.
 
-   Além disso, para atribuir todos os itens, independentemente do modelo de workflow, a um usuário específico, selecione **[!UICONTROL Todos os fluxos de trabalho]** na lista suspensa Workflow Model. <br>
+   Além disso, para atribuir todos os itens, independentemente do modelo de fluxo de trabalho, a um usuário específico, selecione **[!UICONTROL Todos os fluxos de trabalho]** na lista suspensa Modelo de fluxo de trabalho. <br>
 
-   Para atribuir itens a um usuário específico para todos os modelos de workflow, exceto alguns, selecione **[!UICONTROL Todos os fluxos de trabalho]** na lista suspensa Modelo de workflow, selecione **[!UICONTROL + Adicionar exceções]**e especifique os modelos de fluxo de trabalho que serão deixados de fora.
+   Para atribuir itens a um usuário específico para todos os modelos de fluxo de trabalho, exceto alguns, selecione **[!UICONTROL Todos os Fluxos de Trabalho]** na lista suspensa Modelo de Fluxo de Trabalho, selecione **[!UICONTROL + Adicionar Exceções]** e especifique os modelos de fluxo de trabalho a serem deixados de fora.
    <br>
 
    Repita a etapa para adicionar mais atribuídos. <br>
@@ -58,14 +58,14 @@ Execute as seguintes etapas para Ativar a configuração Ausência Temporária p
    >
    >A ordem dos designados é importante. Quando um item é atribuído a um usuário que ativou a configuração de ausência temporária, o item é avaliado em relação à lista de responsáveis especificada na ordem em que os responsáveis são adicionados. Quando um item corresponde aos critérios, ele é atribuído ao destinatário e o próximo destinatário não é verificado.
 
-1. Selecionar **[!UICONTROL Salvar]**. A configuração entra em vigor na data e hora de início especificadas. Se você fizer logon enquanto estiver fora do escritório, não será considerado como estando no escritório até que altere suas configurações.
+1. Selecione **[!UICONTROL Salvar]**. A configuração entra em vigor na data e hora de início especificadas. Se você fizer logon enquanto estiver fora do escritório, não será considerado como estando no escritório até que altere suas configurações.
 
 Agora, os itens atribuídos a você durante o período de Ausência Temporária são automaticamente atribuídos ao destinatário especificado.
-![Fora do escritório](assets/out-of-office.png)
+![Ausência temporária](assets/out-of-office.png)
 
 >[!NOTE]
 >
->(Somente para itens de fluxo de trabalho centrados no Forms) Ative a opção **Permitir que o destinatário delegue usando as configurações &quot;Ausente&quot;** opção do **Atribuir tarefa** etapa no fluxo de trabalho. Somente os itens que têm a opção mencionada anteriormente ativada são delegados a outros usuários.
+>(Somente para itens de fluxo de trabalho centrados em Forms) Habilite a opção **Permitir que o destinatário delegue usando as configurações &#39;Ausente&#39;** da etapa **Atribuir tarefa** no fluxo de trabalho. Somente os itens que têm a opção mencionada anteriormente ativada são delegados a outros usuários.
 
 ## Limitações {#limitations}
 

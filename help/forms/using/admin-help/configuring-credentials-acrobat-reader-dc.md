@@ -22,7 +22,7 @@ Para aplicar direitos de uso a documentos do PDF, configure formulários AEM com
 
 Se estiver usando uma credencial de avaliação, substitua-a por uma credencial de produção ao migrar para o ambiente de produção. Para atualizar uma credencial expirada ou de avaliações, primeiro exclua a credencial antiga de extensões do Acrobat Reader DC.
 
-Para obter informações sobre como obter uma credencial, consulte [Preparação para instalar formulários AEM (servidor único)](https://helpx.adobe.com/pdf/aem-forms/6-3/prepare-install-single-server.pdf).
+Para obter informações sobre como obter uma credencial, consulte [Preparando para instalar formulários AEM (Servidor Único)](https://helpx.adobe.com/pdf/aem-forms/6-3/prepare-install-single-server.pdf).
 
 O armazenamento de confiança pode conter mais de uma credencial de extensões Acrobat Reader DC. Designe uma dessas credenciais como a credencial default de Extensões de Reader. A credencial padrão é usada quando um usuário do Workbench não consegue determinar qual credencial usar durante a criação do processo. Estas regras se aplicam às credenciais padrão:
 

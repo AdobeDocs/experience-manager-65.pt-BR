@@ -27,7 +27,7 @@ No AEM Forms, a operação de download é compatível com os seguintes tipos de 
 
 O AEM Forms permite o download desses tipos de formulário individualmente ou em uma pasta que contenha um ou mais formulários compatíveis.
 
-Além desses ativos, você pode baixar o `Resource` tipo de ativo se ele estiver presente em uma pasta. Essa funcionalidade é fornecida para permitir que você baixe o recurso referido por um formulário XFA junto com o formulário.
+Além desses ativos, você pode baixar o tipo de ativo `Resource` se ele estiver presente em uma pasta. Essa funcionalidade é fornecida para permitir que você baixe o recurso referido por um formulário XFA junto com o formulário.
 
 ## Baixar um ou mais formulários {#download-one-or-more-forms}
 
@@ -35,7 +35,7 @@ Além desses ativos, você pode baixar o `Resource` tipo de ativo se ele estiver
 
 1. Navegue até o local do ativo que deseja baixar.
 
-1. Selecione o ativo. Clique em **[!UICONTROL Baixar]** ![aem6forms_download](assets/aem6forms_download.png) na barra de ferramentas.
+1. Selecione o ativo. Clique no ícone **[!UICONTROL Download]** ![aem6forms_download](assets/aem6forms_download.png) na barra de ferramentas.
 
    >[!NOTE]
    >
@@ -47,7 +47,7 @@ Além desses ativos, você pode baixar o `Resource` tipo de ativo se ele estiver
 
    Se você estiver baixando uma pasta, os ativos compatíveis dentro da pasta serão baixados em sua hierarquia existente.
 
-   O arquivo ZIP é salvo no `Downloads` pasta no seu sistema.
+   O arquivo ZIP foi salvo na pasta `Downloads` do sistema.
 
 ## Considerações relacionadas para a operação de upload {#related-considerations-for-the-upload-operation}
 

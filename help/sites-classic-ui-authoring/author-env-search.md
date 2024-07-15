@@ -23,31 +23,31 @@ O ambiente de criação do AEM fornece vários mecanismos de pesquisa de conteú
 
 >[!NOTE]
 >
->Fora do ambiente de criação, outros mecanismos também estão disponíveis para pesquisa, como o [Construtor de consulta](/help/sites-developing/querybuilder-api.md) e [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
+>Fora do ambiente de criação, outros mecanismos também estão disponíveis para pesquisa, como o [Construtor de consultas](/help/sites-developing/querybuilder-api.md) e o [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
 
 ## Noções básicas de pesquisa {#search-basics}
 
-Para acessar o painel de pesquisa, clique no link **Pesquisar** na parte superior do painel esquerdo do console apropriado.
+Para acessar o painel de pesquisa, clique na guia **Pesquisar** na parte superior do painel à esquerda do console apropriado.
 
 ![chlimage_1-101](assets/chlimage_1-101.png)
 
 O painel de pesquisa permite pesquisar em todas as páginas do site. Ele contém campos e widgets para o seguinte:
 
-* **Texto completo**: Procure o texto especificado
-* **Modificado antes/depois**: Pesquise somente as páginas que foram alteradas entre as datas específicas
-* **Modelo**: Pesquise somente as páginas com base no modelo especificado
-* **Tags**: pesquisa somente nas páginas com as tags especificadas
+* **Texto completo**: procure o texto especificado
+* **Modificado antes/depois de**: pesquise somente as páginas que foram alteradas entre as datas específicas
+* **Modelo**: pesquise somente as páginas baseadas no modelo especificado
+* **Marcas**: pesquisar somente as páginas com as marcas especificadas
 
 >[!NOTE]
 >
->Quando sua instância é configurada para [Pesquisa Lucene](/help/sites-deploying/queries-and-indexing.md) você pode usar o seguinte no **Texto completo**:
+>Quando sua instância está configurada para [Pesquisa Lucene](/help/sites-deploying/queries-and-indexing.md), você pode usar o seguinte em **Texto completo**:
 >
->* [Curingas](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Wildcard_Searches)
+>* [Caracteres curinga](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Wildcard_Searches)
 >* [Operadores booleanos](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Boolean_operators)
 >
 >* [Expressões regulares](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Regexp_Searches)
 >* [Agrupamento de campos](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Field_Grouping)
->* [Impulsionando](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Boosting_a_Term)
+>* [Aumentando](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Boosting_a_Term)
 >
 
 Execute a pesquisa clicando em **Pesquisar** na parte inferior do painel. Clique em **Redefinir** para limpar os critérios de pesquisa.
@@ -60,14 +60,14 @@ Em vários locais, um filtro pode ser definido (e limpo) para detalhar e refinar
 
 ## Localizar e substituir {#find-and-replace}
 
-No **Sites** console a **Localizar e substituir** A opção de menu permite pesquisar e substituir várias instâncias de uma cadeia de caracteres em uma seção do site.
+No console **Sites**, uma opção de menu **Localizar e Substituir** permite procurar e substituir várias instâncias de uma cadeia de caracteres, em uma seção do site.
 
 1. Selecione a página raiz, ou pasta, onde deseja que a ação localizar e substituir ocorra.
-1. Selecionar **Ferramentas** depois **Localizar e substituir**:
+1. Selecione **Ferramentas** e depois **Localizar e Substituir**:
 
    ![screen_shot_2012-02-15at120346pm](assets/screen_shot_2012-02-15at120346pm.png)
 
-1. A variável **Localizar e substituir** faz o seguinte:
+1. A caixa de diálogo **Localizar e Substituir** faz o seguinte:
 
    * confirma o caminho raiz no qual a ação localizar deve começar
    * define o termo a ser encontrado
@@ -75,7 +75,7 @@ No **Sites** console a **Localizar e substituir** A opção de menu permite pesq
    * indica se a pesquisa deve diferenciar maiúsculas de minúsculas
    * indica se somente palavras inteiras devem ser encontradas (caso contrário, as subsequências de caracteres também serão encontradas)
 
-   Clicando **Visualizar** listas em que o termo foi encontrado. Você pode selecionar/limpar instâncias específicas a serem substituídas:
+   Clicar em **Visualizar** lista onde o termo foi encontrado. Você pode selecionar/limpar instâncias específicas a serem substituídas:
 
    ![screen_shot_2012-02-15at120719pm](assets/screen_shot_2012-02-15at120719pm.png)
 
@@ -88,7 +88,7 @@ O escopo padrão para o servlet localizar e substituir abrange as seguintes prop
 * `jcr:text`
 * `text`
 
-O escopo pode ser alterado usando o Console de gerenciamento Web Apache Felix (por exemplo, em `https://localhost:4502/system/console/configMgr`). Selecionar `CQ WCM Find Replace Servlet (com.day.cq.wcm.core.impl.servlets.FindReplaceServlet)` e configure o escopo conforme necessário.
+O escopo pode ser alterado usando o Console de Gerenciamento Web Apache Felix (por exemplo, em `https://localhost:4502/system/console/configMgr`). Selecione `CQ WCM Find Replace Servlet (com.day.cq.wcm.core.impl.servlets.FindReplaceServlet)` e configure o escopo conforme necessário.
 
 >[!NOTE]
 >

@@ -55,4 +55,4 @@ Esta página fornece as informações essenciais para trabalhar com o recurso de
 
 ### Função de ideação {#ideation-function}
 
-Uma estrutura de site da comunidade que inclui o [Função de ideação](functions.md#ideation-function), inclui um configurado `ideation` componente.
+Uma estrutura de site de comunidade que inclui a [função de ideação](functions.md#ideation-function), inclui um componente `ideation` configurado.

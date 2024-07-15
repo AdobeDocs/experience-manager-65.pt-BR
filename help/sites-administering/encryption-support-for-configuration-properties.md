@@ -32,21 +32,21 @@ O suporte ao OSGi Configuration Plugin foi adicionado para descriptografar a pro
 
 Essas etapas mostram como criptografar a senha SMTP para o serviço de email. Você pode concluir essas etapas para uma propriedade OSGI que deseja criptografar.
 
-1. Acesse o console da Web do AEM em *https://&lt;serveraddress>:&lt;serverport>/system/console/configMgr*
+1. Acesse o Console da Web do AEM em *https://&lt;serveraddress>:&lt;serverport>/system/console/configMgr*
 1. No canto superior esquerdo, vá para **Principal - Suporte a criptografia**
 
    ![chlimage_1-325](assets/chlimage_1-325.png)
 
-1. A variável **Suporte à criptografia do console da Web da Adobe Experience Manager** é exibida.
+1. A página **Suporte à Criptografia do Console da Web da Adobe Experience Manager** é exibida.
 
    ![screen_shot_2018-08-01at113417am](assets/screen_shot_2018-08-01at113417am.png)
 
-1. No **Texto sem formatação** insira o texto dos dados confidenciais que deseja proteger.
-1. Selecionar **Protect**. O texto protegido é exibido como texto criptografado.
+1. No campo **Texto sem formatação**, digite o texto dos dados confidenciais que deseja proteger.
+1. Selecione **Protect**. O texto protegido é exibido como texto criptografado.
 
    ![screen_shot_2018-08-01at113844am](assets/screen_shot_2018-08-01at113844am.png)
 
-1. Copie o Texto protegido da Etapa 5 e cole-o no valor de Formulário OSGI. Neste exemplo, o script **Senha SMTP** é adicionado à *Serviço de email Day CQ*.
+1. Copie o Texto protegido da Etapa 5 e cole-o no valor de Formulário OSGI. Neste exemplo, a **senha SMTP** criptografada é adicionada ao *Day CQ Mail Service*.
 
    ![screen_shot_2016-12-18at105809pm](assets/screen_shot_2016-12-18at105809pm.png)
 

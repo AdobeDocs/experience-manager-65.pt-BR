@@ -19,7 +19,7 @@ ht-degree: 0%
 
 Se o aplicativo Forms do Adobe Experience Manager (AEM) for sincronizado com um AEM Forms Server, você poderá trabalhar com as tarefas atribuídas a você. Tarefas são etapas no Fluxo de trabalho definido no Workbench ou no editor de fluxo de trabalho AEM.
 
-Outros formulários são salvos como rascunho na guia Rascunhos. Consulte [Salvar um rascunho](/help/forms/using/save-as-draft.md).
+Outros formulários são salvos como rascunho na guia Rascunhos. Consulte [Salvando um rascunho](/help/forms/using/save-as-draft.md).
 
 **Para abrir uma tarefa**
 
@@ -32,11 +32,11 @@ Outros formulários são salvos como rascunho na guia Rascunhos. Consulte [Salva
 
 1. Selecione a tarefa para abri-la.
 
-   É possível selecionar **Exibir resumo** para exibir instruções adicionais especificadas no processo Bancada.
+   Você pode selecionar **Exibir Resumo** para exibir instruções adicionais especificadas no processo do Workbench.
 
 **Para abrir um aplicativo**
 
-1. Selecione o **aplicativo** no **Forms** guia.
+1. Selecione o **aplicativo** na guia **Forms**.
 
    Quando você seleciona um aplicativo, a descrição do aplicativo é exibida abaixo do nome do aplicativo. Após a descrição, as ações/ações do usuário associadas ao aplicativo são mostradas.
 
@@ -45,4 +45,4 @@ Outros formulários são salvos como rascunho na guia Rascunhos. Consulte [Salva
 
 1. Selecione a tarefa para abri-la.
 
-   É possível selecionar **Exibir resumo** para exibir instruções adicionais especificadas para o aplicativo.
+   Você pode selecionar **Exibir Resumo** para exibir instruções adicionais especificadas para o aplicativo.

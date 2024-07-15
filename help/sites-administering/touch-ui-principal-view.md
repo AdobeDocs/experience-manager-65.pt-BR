@@ -30,7 +30,7 @@ O AEM 6.5 apresenta o Gerenciamento de permissões para usuários e grupos. A fu
 
 O novo gerenciamento de permissões com base em interface é acessado por meio do cartão Permissões, em Segurança, conforme mostrado abaixo:
 
-![Interface do usuário de gerenciamento de permissões](assets/screen_shot_2019-03-17at63333pm.png)
+![Interface de Gerenciamento de Permissões](assets/screen_shot_2019-03-17at63333pm.png)
 
 A nova exibição facilita a análise de todo o conjunto de privilégios e restrições para uma determinada entidade de segurança em todos os caminhos nos quais as Permissões foram concedidas explicitamente. Isso elimina a necessidade de ir para
 
@@ -38,25 +38,25 @@ CRXDE para gerenciar privilégios e restrições avançados. Ela foi consolidada
 
 ![Exibição do grupo &quot;todos&quot;](assets/unu-1.png)
 
-Há um filtro que permite ao usuário selecionar o tipo de entidades a serem observadas **Usuários**, **Grupos** ou **Todos** e pesquisar qualquer principal **.**
+Há um filtro que permite ao usuário selecionar o tipo de entidades de segurança a serem observadas em **Usuários**, **Grupos** ou **Todos os** e procurar qualquer entidade de segurança **.**
 
-![Pesquisar tipos de Principais](assets/image2019-3-20_23-52-51.png)
+![Pesquisar tipos de Entidades de Segurança](assets/image2019-3-20_23-52-51.png)
 
 ### Exibindo permissões para um Principal {#viewing-permissions-for-a-principal}
 
 O quadro à esquerda permite que os usuários rolem para baixo para encontrar qualquer principal ou pesquisar por um Grupo ou um Usuário com base no filtro selecionado, conforme mostrado abaixo:
 
-![Exibir permissões para um Principal](assets/doi-1.png)
+![Exibir Permissões para uma Entidade de Segurança](assets/doi-1.png)
 
 Clicar no nome mostra as permissões atribuídas à direita. O painel de permissões mostra a lista de Entradas de controle de acesso em caminhos específicos, juntamente com as restrições configuradas.
 
-![Exibir Lista de ACL](assets/trei-1.png)
+![Exibir Lista de ACLs](assets/trei-1.png)
 
 ### Adicionando uma nova Entrada de Controle de Acesso para um Principal {#adding-new-access-control-entry-for-a-principal}
 
 Novas permissões podem ser adicionadas adicionando uma Entrada de controle de acesso. Basta clicar no botão Adicionar ACE.
 
-![Adicionar nova ACL para um Principal](assets/patru.png)
+![Adicionar nova ACL para uma Entidade](assets/patru.png)
 
 Isso exibe a janela mostrada abaixo. A próxima etapa é escolher um caminho em que a permissão deve ser configurada.
 
@@ -66,7 +66,7 @@ Aqui, um caminho é selecionado onde você pode configurar uma permissão para *
 
 ![Exemplo de configuração para dam-users](assets/sase-1.png)
 
-Após selecionar o caminho, o fluxo de trabalho volta para essa tela, onde o usuário pode selecionar um ou mais privilégios dos namespaces disponíveis (como `jcr`, `rep` ou `crx`) conforme mostrado abaixo.
+Depois que o caminho é selecionado, o fluxo de trabalho volta para essa tela, onde o usuário pode selecionar um ou mais privilégios dos namespaces disponíveis (como `jcr`, `rep` ou `crx`), conforme mostrado abaixo.
 
 Os privilégios podem ser adicionados pesquisando usando o campo de texto e selecionando na lista.
 
@@ -74,7 +74,7 @@ Os privilégios podem ser adicionados pesquisando usando o campo de texto e sele
 >
 >Para obter uma lista completa de privilégios e descrições, consulte [esta página](/help/sites-administering/user-group-ac-admin.md#access-right-management).
 
-![Permissão de pesquisa para determinado caminho.](assets/image2019-3-21_0-5-47.png) ![Adicione nova entrada para &quot;dam-users&quot; como mostrado por um caminho selecionado em colunas verticais.](assets/image2019-3-21_0-6-53.png)
+![Permissão de pesquisa para um determinado caminho.](assets/image2019-3-21_0-5-47.png) ![Adicionar nova entrada para &#39;dam-users&#39; como mostrado por um caminho selecionado em colunas verticais.](assets/image2019-3-21_0-6-53.png)
 
 Depois que a lista de privilégios for selecionada, o usuário poderá escolher o Tipo de permissão: Negar ou Permitir, conforme mostrado abaixo.
 
@@ -88,13 +88,13 @@ Além da lista de privilégios e do Tipo de permissão em um determinado caminho
 
 >[!NOTE]
 >
->Para obter mais informações sobre o que significa cada restrição, consulte [a documentação do Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html).
+>Para obter mais informações sobre o que significa cada restrição, consulte [a Documentação do Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html).
 
-As restrições podem ser adicionadas conforme mostrado abaixo, escolhendo o tipo de restrição, inserindo o valor e acessando o **+** ícone.
+É possível adicionar restrições, como mostrado abaixo, escolhendo o tipo de restrição, inserindo o valor e clicando no ícone **+**.
 
 ![Adicionar o tipo de restrição](assets/sapte-1.png) ![Adicionar o tipo de restrição](assets/opt-1.png)
 
-O novo ACE é refletido na Lista de controle de acesso conforme mostrado abaixo. Observe que `jcr:write` é um privilégio agregado que inclui `jcr:removeNode` que foi acrescentado acima, mas não é mostrado abaixo como seu coberto `jcr:write`.
+O novo ACE é refletido na Lista de controle de acesso conforme mostrado abaixo. Observe que `jcr:write` é um privilégio agregado que inclui `jcr:removeNode` que foi adicionado acima, mas não é mostrado abaixo como coberto por `jcr:write`.
 
 ### Edição de ACEs {#editing-aces}
 
@@ -108,11 +108,11 @@ A tela de edição é exibida com ACEs configuradas pré-selecionadas, que podem
 
 ![Editar entrada](assets/noua-1.png)
 
-Aqui, o `addChildNodes` o privilégio foi adicionado para **dam-users** no caminho fornecido.
+Aqui o privilégio `addChildNodes` é adicionado para **dam-users** no caminho especificado.
 
 ![Adicionar privilégio](assets/image2019-3-21_0-45-35.png)
 
-As alterações podem ser salvas clicando no ícone **Salvar** no canto superior direito, e as alterações serão refletidas nas novas permissões para **dam-users** conforme mostrado abaixo:
+As alterações podem ser salvas clicando no botão **Salvar** na parte superior direita, e são refletidas nas novas permissões para **dam-users**, conforme mostrado abaixo:
 
 ![Salvar alterações](assets/zece-1.png)
 

@@ -24,16 +24,16 @@ ht-degree: 7%
 Quando uma inicialização é criada para uma página (ou conjunto de páginas), é possível editar o conteúdo na cópia de inicialização das páginas.
 
 1. Abra a página para edição.
-1. No Sidekick, selecione a variável **Controle de versão** e expanda a guia **Lançamentos** grupo. O título do lançamento que está sendo editado no momento usa uma fonte em negrito.
+1. No Sidekick, selecione a guia **Controle de Versão** e expanda o grupo **Inicializações**. O título do lançamento que está sendo editado no momento usa uma fonte em negrito.
 
    ![chlimage_1-13](assets/chlimage_1-13.jpeg)
 
-1. Selecione o lançamento que deseja trabalhar e clique em **Alternar**.
+1. Selecione a inicialização na qual deseja trabalhar e clique em **Alternar**.
 1. Comece a editar.
 
    >[!NOTE]
    >
-   >Você pode usar o **Página** guia do sidekick para executar ações como **Criar página secundária**, entre outros.
+   >Você pode usar a guia **Página** do sidekick para executar ações como **Criar página secundária**, entre outras.
 
 ## Editar uma configuração de lançamento {#editing-a-launch-configuration}
 
@@ -43,25 +43,25 @@ Depois de criar um lançamento, é possível alterar o nome do lançamento e a d
 
 1. Selecione a inicialização necessária e clique em **Editar** para abrir a caixa de diálogo:
 
-   * No **Geral** é possível editar:
+   * Na guia **Geral**, você pode editar:
 
       * **Título**
       * **Data de ativação**: é equivalente à data de lançamento
       * **Pronto para produção**
 
-     Consulte [Inicializações - a ordem dos eventos](/help/sites-authoring/launches.md#launches-the-order-of-events) para obter informações sobre a finalidade e interação desses campos.
+     Consulte [Inicializações - a Ordem dos Eventos](/help/sites-authoring/launches.md#launches-the-order-of-events) para obter informações sobre a finalidade e interação desses campos.
 
-   * No **Imagem** é possível fazer upload de um arquivo de imagem.
+   * Na guia **Imagem**, você pode carregar um arquivo de imagem.
 
 1. Clique em **Salvar**.
 
 ## Descobrir o status de lançamento de uma página {#discovering-the-launch-status-of-a-page}
 
-Quando você está editando uma inicialização de uma página, as informações sobre a inicialização são exibidas na parte inferior da **Controle de versão** guia do Sidekick:
+Quando você está editando um lançamento de uma página, as informações sobre o lançamento aparecem na parte inferior da guia **Controle de versão** do Sidekick:
 
 * O nome da inicialização.
 * O tempo desde a última alteração.
 * O usuário que executou a última alteração.
-* O status do **Pronto para produção** sinalizador (laranja=não definido; verde=definido).
+* O status do sinalizador **Pronto para Produção** (laranja=não definido; verde=definido).
 
 ![chlimage_1-186](assets/chlimage_1-186.png)

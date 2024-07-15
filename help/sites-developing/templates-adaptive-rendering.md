@@ -39,21 +39,21 @@ Lembre-se ao configurar seus grupos de dispositivos:
 
 ## Configuração {#configuration}
 
-Os seletores de renderização adaptativa podem ser configurados para grupos de dispositivos existentes ou para [grupos que você mesmo criou.](/help/sites-developing/mobile.md#device-groups)
+Os seletores de renderização adaptável podem ser configurados para grupos de dispositivos existentes ou para [grupos que você mesmo criou.](/help/sites-developing/mobile.md#device-groups)
 
-Neste exemplo, você configurará o grupo de dispositivos existente **Smartphones** para ter um seletor de renderização adaptável como parte da **Página da experiência** modelo no We.Retail.
+Neste exemplo, você vai configurar o grupo de dispositivos existente **Smart Phones** para ter um seletor de renderização adaptável como parte do modelo **Página da experiência** no We.Retail.
 
 1. Editar o grupo de dispositivos que requer um seletor adaptável em `http://localhost:4502/miscadmin#/etc/mobile/groups`
 
-   Definir a opção **Desativar emulador** e salve.
+   Defina a opção **Desabilitar emulador** e salve.
 
    ![chlimage_1-157](assets/chlimage_1-157.png)
 
-1. O seletor está disponível para o **BlackBerry®** e **IPHONE 4** forneceu o grupo de dispositivos **Telefone inteligente** é adicionado ao modelo e às estruturas de página nas etapas a seguir.
+1. O seletor está disponível para o **BlackBerry®** e o **iPhone 4**, desde que o grupo de dispositivos **Smart Phone** seja adicionado ao modelo e às estruturas de página nas etapas a seguir.
 
    ![chlimage_1-158](assets/chlimage_1-158.png)
 
-1. Usando o CRXDE Lite, permita que o grupo de dispositivos seja usado em seu modelo, adicionando-o à propriedade de cadeia de caracteres de vários valores `cq:deviceGroups` na estrutura do modelo.
+1. Usando o CRXDE Lite, permita que o grupo de dispositivos seja usado no modelo, adicionando-o à propriedade de cadeia de caracteres de vários valores `cq:deviceGroups` na estrutura do modelo.
 
    `/conf/<your-site>/settings/wcm/templates/<your-template>/structure/jcr:content`
 
@@ -67,15 +67,15 @@ Neste exemplo, você configurará o grupo de dispositivos existente **Smartphone
 
    `/content/<your-site>/jcr:content`
 
-   Por exemplo, se você deseja permitir a variável **Telefone inteligente** grupo de dispositivos:
+   Por exemplo, se você deseja permitir o grupo de dispositivos **Telefone Inteligente**:
 
    `/content/we-retail/jcr:content`
 
    ![chlimage_1-160](assets/chlimage_1-160.png)
 
-Agora, ao usar o [emulador](/help/sites-authoring/responsive-layout.md#layout-definitions-device-emulation-and-breakpoints) no editor de páginas (como quando [modificação do layout](/help/sites-authoring/responsive-layout.md)) e você escolher um dispositivo do grupo de dispositivos configurado, a página será renderizada com um seletor como parte do URL.
+Agora, ao usar o [emulador](/help/sites-authoring/responsive-layout.md#layout-definitions-device-emulation-and-breakpoints) no editor de página (como ao [modificar o layout](/help/sites-authoring/responsive-layout.md)) e escolher um dispositivo do grupo de dispositivos configurado, a página é renderizada com um seletor como parte da URL.
 
-Neste exemplo, ao editar uma página com base no **Página da experiência** e ao escolher iPhone 4 no emulador, a página é renderizada incluindo o seletor como `arctic-surfing-in-lofoten.smart.html` em vez de `arctic-surfing-in-lofoten.html`
+Neste exemplo, ao editar uma página com base no modelo **Página de Experiência** e escolher o iPhone 4 no emulador, a página é renderizada incluindo o seletor como `arctic-surfing-in-lofoten.smart.html` em vez de `arctic-surfing-in-lofoten.html`
 
 A página também pode ser chamada diretamente usando esse seletor.
 

@@ -22,7 +22,7 @@ Usuários e administradores usam as páginas da Web de segurança de documentos 
 
 >[!NOTE]
 >
->Você também pode fazer logon na segurança de documentos por meio do Acrobat e de outros aplicativos clientes usando sua conta de logon de usuário. (Consulte [Configuração do acesso à segurança de documentos a partir de aplicativos clientes](using-document-security-web-pages.md#setting-up-access-to-document-security-from-client-applications).)
+>Você também pode fazer logon na segurança de documentos por meio do Acrobat e de outros aplicativos clientes usando sua conta de logon de usuário. (Consulte [Configuração do acesso à segurança de documentos de aplicativos clientes](using-document-security-web-pages.md#setting-up-access-to-document-security-from-client-applications).)
 
 Para abrir as páginas da Web, você precisa de um navegador, do URL e de suas informações de logon para garantir a segurança dos documentos. O URL para usuários é diferente do URL para administradores.
 
@@ -34,9 +34,9 @@ Para fazer logon como administrador, você precisa ter a função de administrad
 
 Para fazer logon nas páginas da Web usando um navegador do, você precisa do URL de segurança do documento e de uma conta. O URL para usuários é diferente do URL para administradores. Os administradores também podem fazer logon nas páginas de usuário para criar políticas.
 
-Se você tiver acesso a mais de uma instalação de segurança de documentos, precisará do URL da instância de segurança de documentos que deseja acessar. Consulte o administrador se não tiver essas informações. O URL padrão para as páginas do usuário é `https://[host]:[port]/edc`. O número da porta pode não ser necessário em alguns casos. Peça detalhes ao administrador.
+Se você tiver acesso a mais de uma instalação de segurança de documentos, precisará do URL da instância de segurança de documentos que deseja acessar. Consulte o administrador se não tiver essas informações. A URL padrão para as páginas de usuário é `https://[host]:[port]/edc`. O número da porta pode não ser necessário em alguns casos. Peça detalhes ao administrador.
 
-O URL padrão para administradores é `https://[host]:[port]/adminui`.
+A URL padrão para administradores é `https://[host]:[port]/adminui`.
 
 Para administradores, uma conta de superadministrador padrão é criada durante a instalação. Você pode usar essa conta para fazer logon quando a segurança de documentos for instalada pela primeira vez.
 
@@ -46,7 +46,7 @@ Para administradores, uma conta de superadministrador padrão é criada durante 
 
 1. Digite o URL no navegador:
 
-   URL de segurança do documento: `https://[host]:[port]/edc`
+   URL de segurança de documentos: `https://[host]:[port]/edc`
 
    ou URL do Console de Administração: `https://[host]:[port]/adminui`
 
@@ -83,7 +83,7 @@ Use esses links para acessar as várias páginas, onde você cria e gerencia pol
 
 ## Configuração do acesso à segurança de documentos a partir de aplicativos clientes {#setting-up-access-to-document-security-from-client-applications}
 
-Os aplicativos clientes devem ser configurados para se conectar à segurança de documentos para proteger documentos, abrir documentos protegidos por política e conectar-se às páginas da Web de segurança de documentos. Consulte *Ajuda do Acrobat* ou o apropriado *Ajuda de RightsManagementExtension* para obter informações sobre como configurar a conexão no aplicativo cliente.
+Os aplicativos clientes devem ser configurados para se conectar à segurança de documentos para proteger documentos, abrir documentos protegidos por política e conectar-se às páginas da Web de segurança de documentos. Consulte a *Ajuda do Acrobat* ou a *Ajuda do RightsManagementExtension* apropriada para obter informações sobre como configurar a conexão no aplicativo cliente.
 
 A segurança de documentos é acessada por SSL (Secure Sockets Layer). Instale o certificado do site em seu armazenamento de certificados para poder acessar a segurança de documentos por meio dos aplicativos clientes.
 

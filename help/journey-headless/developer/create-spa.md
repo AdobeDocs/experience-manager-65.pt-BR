@@ -1,6 +1,6 @@
 ---
 title: Opcional - Como criar aplicativos de página única (SPA) com o Adobe Experience Manager
-description: Nesta continuação opcional da Jornada de desenvolvedores headless Adobe Experience Manager (AEM), você aprende como o AEM SPA AEM SPA pode combinar a entrega headless com os recursos tradicionais de CMS de pilha completa e como criar editáveis usando a estrutura do editor.
+description: Nesta continuação opcional da Jornada de desenvolvedores headless do Adobe Experience Manager (AEM), você aprende como o AEM SPA AEM SPA pode combinar a entrega headless com recursos tradicionais de CMS de pilha completa e como criar editável usando a estrutura do editor da.
 exl-id: 91eadda2-b881-4e4a-867f-8c5c54e8f8b4
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
@@ -14,7 +14,7 @@ ht-degree: 76%
 
 # Como criar aplicativos de página única (SPAs) com o AEM {#create-spa}
 
-Nesta continuação facultativa do [Jornada do desenvolvedor AEM Headless,](overview.md) você aprende como o Adobe Experience Manager (AEM) pode combinar a entrega headless com recursos tradicionais de CMS de pilha completa e como criar SPA AEM SPA SPA editáveis usando a estrutura do editor, além de integrar externo, habilitando recursos de edição conforme necessário.
+Nesta continuação opcional da [Jornada para desenvolvedores sem periféricos do AEM](overview.md), você aprenderá como o Adobe Experience Manager AEM SPA AEM SPA SPA () pode combinar a entrega sem periféricos com os recursos tradicionais de CMS de pilha completa e como você pode criar editáveis usando a estrutura Editor da e integrar o externo, habilitando recursos de edição conforme necessário.
 
 ## A história até agora {#story-so-far}
 
@@ -29,7 +29,7 @@ A esta altura, você deve ter completado toda a [Jornada de desenvolvedor headle
 
 Então vocês ou ativaram seu primeiro projeto AEM Headless, ou têm o conhecimento para fazê-lo. Parabéns!
 
-Sendo assim, por que você está lendo essa seção adicional e opcional da jornada? Provavelmente, você se lembra disso no [Introdução](getting-started.md#integration-levels)No entanto, houve uma breve discussão sobre como o AEM não apenas suporta a entrega headless e os modelos tradicionais de pilha completa, como também pode suportar modelos híbridos que combinam as vantagens de ambos. Embora não sejam o modelo tradicional headless, esses modelos híbridos podem oferecer uma flexibilidade sem precedentes a certos projetos.
+Sendo assim, por que você está lendo essa seção adicional e opcional da jornada? Provavelmente, você se lembra de que, na [Introdução](getting-started.md#integration-levels), houve uma breve discussão sobre como o AEM não só oferece suporte a entrega headless e a modelos tradicionais de pilha completa, como também pode oferecer suporte a modelos híbridos que combinam as vantagens de ambos. Embora não sejam o modelo tradicional headless, esses modelos híbridos podem oferecer uma flexibilidade sem precedentes a certos projetos.
 
 Este artigo amplia seu conhecimento sobre o AEM Headless, explorando em detalhes como criar seus próprios aplicativos de página única (SPAs) editáveis no AEM. Dessa forma, você pode criar conteúdo e enviá-lo de forma headless para um SPA, mas esse SPA permanece editável no AEM.
 
@@ -50,7 +50,7 @@ Há uma série de requisitos antes de começar a trabalhar com SPAs no AEM.
 
 * Experiência de desenvolvimento na criação de SPAs com estruturas React ou Angular
 * Habilidades básicas do AEM para criar fragmentos de conteúdo e usar o editor
-* Certifique-se de revisar o documento [Headful e Headless no AEM](/help/sites-developing/headful-headless.md) para compreender os vários níveis possíveis de integração do SPA.
+* Certifique-se de revisar o documento [Headful e Headless no AEM](/help/sites-developing/headful-headless.md) para entender os vários níveis possíveis de integração do SPA.
 
 ### Ferramentas {#tools}
 

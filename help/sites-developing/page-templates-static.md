@@ -23,7 +23,7 @@ Um Modelo é usado para criar uma Página e define quais componentes podem ser u
 
 Cada modelo apresenta uma seleção de componentes disponíveis para uso.
 
-* Os modelos são criados de [Componentes](/help/sites-developing/components.md);
+* Modelos são compilados de [Componentes](/help/sites-developing/components.md);
 * Os componentes usam e permitem acesso a Widgets e eles são usados para renderizar o Conteúdo.
 
 >[!NOTE]
@@ -79,12 +79,12 @@ Um modelo é um nó do tipo cq:Template e tem as seguintes propriedades e nós f
   <tr>
    <td> classificação</td>
    <td> Longo</td>
-   <td>Classificação do modelo. Usado para exibir o modelo na interface do usuário do.<br /> </td>
+   <td>Classificação do modelo. Usado para exibir o modelo na Interface do Usuário.<br /> </td>
   </tr>
   <tr>
    <td> jcr:content</td>
    <td> cq:PageContent</td>
-   <td>Nó que contém o conteúdo do template.<br /> </td>
+   <td>Nó que contém o conteúdo do modelo.<br /> </td>
   </tr>
   <tr>
    <td> thumbnail.png</td>
@@ -101,7 +101,7 @@ Um modelo é um nó do tipo cq:Template e tem as seguintes propriedades e nós f
 
 Um modelo é a base de uma página.
 
-Para criar uma página, o modelo deve ser copiado (árvore de nó `/apps/<myapp>/template/<mytemplate>`) para a posição correspondente na árvore do site: isso é o que acontece se uma página é criada usando o **Sites** guia.
+Para criar uma página, o modelo deve ser copiado (árvore de nó `/apps/<myapp>/template/<mytemplate>`) para a posição correspondente na árvore do site: isso é o que acontece se uma página é criada usando a guia **Sites**.
 
 Essa ação de cópia também fornece à página seu conteúdo inicial (geralmente, Conteúdo de nível superior somente) e a propriedade sling:resourceType, o caminho para o componente de página usado para renderizar a página (tudo no nó filho jcr:content).
 
@@ -114,7 +114,7 @@ Há dois aspectos a considerar:
 
 ### A estrutura de um modelo {#the-structure-of-a-template}
 
-Um modelo é criado em um nó do tipo **cq:Template**.
+Um Modelo foi criado em um nó do tipo **cq:Template**.
 
 ![screen_shot_2012-02-13at63646pm](assets/screen_shot_2012-02-13at63646pm.png)
 
@@ -137,7 +137,7 @@ Os modelos são usados para criar páginas do tipo `cq:Page` (como mencionado an
 
 * é do tipo cq:PageContent
 * é um nó estruturado-tipo que contém uma definição de conteúdo definida
-* tem uma propriedade `sling:resourceType` para fazer referência ao componente que contém os scripts sling usados para renderizar o conteúdo
+* tem uma propriedade `sling:resourceType` para referenciar o componente que contém os scripts sling usados para renderizar o conteúdo
 
 ### Modelos padrão {#default-templates}
 
@@ -154,30 +154,31 @@ Por exemplo, o AEM vem com vários modelos, incluindo uma página de conteúdo e
 
 Para ver uma lista de todos os modelos no repositório, proceda da seguinte maneira:
 
-1. No CRXDE Lite, abra o **Ferramentas** e clique em **Query**.
+1. No CRXDE Lite, abra o menu **Ferramentas** e clique em **Consulta**.
 
 1. Na guia Query
 1. Como **Tipo**, selecione **XPath**.
 
-1. No **Query** insira a seguinte string: //element()&#42;, cq:Template)
+1. No campo de entrada **Consulta**, digite a seguinte cadeia de caracteres:
+//element(&#42;, cq:Template)
 
 1. Clique em **Executar**. A lista é exibida na caixa de resultados.
 
-Normalmente, você pega um modelo existente e desenvolve um novo para uso próprio. Consulte [Desenvolvimento de modelos de página](#developing-page-templates) para obter mais informações.
+Normalmente, você pega um modelo existente e desenvolve um novo para uso próprio. Consulte [Desenvolvendo modelos de página](#developing-page-templates) para obter mais informações.
 
-Para habilitar um modelo existente para o seu site e exibi-lo na variável **Criar página** ao criar uma página logo em **Sites** do **Sites** defina a propriedade allowedPaths do nó do modelo como: **/content(/.&#42;)?**
+Para habilitar um modelo existente para o seu site e exibi-lo na caixa de diálogo **Criar Página** ao criar uma página diretamente em **Sites** a partir do console **Sites**, defina a propriedade allowedPaths do nó de modelo como: **/content(/.&#42;)?**
 
 ## Como os designs de modelo são aplicados {#how-template-designs-are-applied}
 
-Quando os estilos são definidos na interface do usuário usando [Modo Design](/help/sites-authoring/default-components-designmode.md), o design é mantido no caminho exato do nó de conteúdo para o qual o estilo está sendo definido.
+Quando os estilos são definidos na interface do usuário usando o [Modo de Design](/help/sites-authoring/default-components-designmode.md), o design é mantido no caminho exato do nó de conteúdo para o qual o estilo está sendo definido.
 
 >[!CAUTION]
 >
->O Adobe recomenda aplicar somente designs através do [Modo Design](/help/sites-authoring/default-components-designmode.md).
+>A Adobe recomenda aplicar somente designs ao [Modo de Design](/help/sites-authoring/default-components-designmode.md).
 >
 >A modificação de designs no CRXDE Lite, por exemplo, não é uma prática recomendada e a aplicação de tais designs pode variar do comportamento esperado.
 
-Se os designs forem aplicados usando apenas o Modo de design, as seguintes seções [Resolução do caminho de design](/help/sites-developing/page-templates-static.md#design-path-resolution), [Árvore de decisão](/help/sites-developing/page-templates-static.md#decision-tree), e o [Exemplo](/help/sites-developing/page-templates-static.md#example) não são aplicáveis.
+Se os designs forem aplicados usando apenas o Modo de Design, as seguintes seções: [Resolução do Caminho de Design](/help/sites-developing/page-templates-static.md#design-path-resolution), [Árvore de Decisão](/help/sites-developing/page-templates-static.md#decision-tree) e [Exemplo](/help/sites-developing/page-templates-static.md#example) não serão aplicáveis.
 
 ### Resolução do caminho de design {#design-path-resolution}
 
@@ -193,9 +194,9 @@ Nos dois últimos casos, se houver mais de um design aplicável, use o mais pró
 
 ### Árvore de decisão {#decision-tree}
 
-Esta é uma representação gráfica do [Resolução do caminho de design](/help/sites-developing/page-templates-static.md#design-path-resolution) lógica.
+Esta é uma representação gráfica da lógica de [Resolução do Caminho de Design](/help/sites-developing/page-templates-static.md#design-path-resolution).
 
-![design_path_resolution](assets/design_path_resolution.png)
+![resolução_do_caminho_de_design](assets/design_path_resolution.png)
 
 ### Exemplo {#example}
 
@@ -218,7 +219,7 @@ A tabela a seguir descreve como o AEM escolhe um design.
       </code></td>
    <td><p><code>root</code></p> <p><code>branch</code></p> <p><code>leaf</code></p> </td>
    <td><code>leaf</code></td>
-   <td>A correspondência mais exata é sempre feita.<br /> </td>
+   <td>A correspondência mais exata sempre é feita.<br /> </td>
   </tr>
   <tr>
    <td><code>leaf</code></td>
@@ -257,7 +258,7 @@ A tabela a seguir descreve como o AEM escolhe um design.
    <td><p><code>root</code></p> <p><code class="code">leaf
        </code></p> </td>
    <td><code>root</code></td>
-   <td><p>Se não houver uma correspondência exata, use a inferior na árvore.</p> <p>O pressuposto é que isso sempre será aplicável, mas mais acima na árvore pode ser muito específico.<br /> </p> </td>
+   <td><p>Se não houver uma correspondência exata, use a inferior na árvore.</p> <p>A suposição é que isso sempre será aplicável, mas um nível mais alto da árvore pode ser muito específico.<br /> </p> </td>
   </tr>
  </tbody>
 </table>
@@ -274,51 +275,51 @@ Para criar um modelo com base em um modelo existente:
 
 1. Copie um template existente (de preferência com uma definição o mais próximo possível do que você deseja alcançar) em um novo nó.
 
-   Os modelos são armazenados no **/apps/&lt;website-name>/templates/&lt;template-name>**.
+   Os modelos são armazenados em **/apps/&lt;nome-do-site>/templates/&lt;nome-do-modelo>**.
 
    >[!NOTE]
    >
-   >A lista de modelos disponíveis depende do local da nova página e das restrições de posicionamento especificadas em cada modelo. Consulte [Disponibilidade do modelo](#templateavailibility).
+   >A lista de modelos disponíveis depende do local da nova página e das restrições de posicionamento especificadas em cada modelo. Consulte [Disponibilidade de Modelo](#templateavailibility).
 
-1. Altere o **jcr:title** do nó novo modelo para refletir sua nova função. Você também pode atualizar a variável **jcr:description** se apropriado. Altere a disponibilidade do modelo da página, conforme apropriado.
+1. Altere o **jcr:title** do novo nó de modelo para refletir sua nova função. Você também pode atualizar a **jcr:description**, se apropriado. Altere a disponibilidade do modelo da página, conforme apropriado.
 
    >[!NOTE]
    >
-   >Se quiser que o modelo seja exibido no **Criar página** ao criar uma página logo em **Sites** do **Sites** , defina o `allowedPaths` propriedade do nó do modelo para: `/content(/.*)?`
+   >Se você quiser que seu modelo seja exibido na caixa de diálogo **Criar Página** ao criar uma página diretamente em **Sites** do console **Sites**, defina a propriedade `allowedPaths` do nó de modelo como: `/content(/.*)?`
 
    ![chlimage_1-88](assets/chlimage_1-88.png)
 
-1. Copie o componente no qual o modelo se baseia (isso é indicado pela variável **sling:resourceType** propriedade do **jcr:content** no modelo) para criar uma instância.
+1. Copie o componente no qual o modelo é baseado (isso é indicado pela propriedade **sling:resourceType** do nó **jcr:content** no modelo) para criar uma instância.
 
-   Os componentes são armazenados em **/apps/&lt;website-name>/components/&lt;component-name>**.
+   Os componentes são armazenados em **/apps/&lt;nome-do-site>/components/&lt;nome-do-componente>**.
 
-1. Atualize o **jcr:title** e **jcr:description** do novo componente.
+1. Atualize a **jcr:title** e a **jcr:description** do novo componente.
 1. Substitua thumbnail.png se desejar que uma nova imagem em miniatura seja mostrada na lista de seleção do modelo (tamanho 128 x 98 px).
-1. Atualize o **sling:resourceType** do modelo **jcr:content** para fazer referência ao novo componente.
+1. Atualize o **sling:resourceType** do nó **jcr:content** do modelo para fazer referência ao novo componente.
 1. Faça alterações adicionais na funcionalidade ou no design do modelo, no componente subjacente ou em ambos.
 
    >[!NOTE]
    >
-   >As alterações feitas no **/apps/&lt;website>/templates/&lt;template-name>** afetará a instância do modelo (como na lista de seleção).
+   >As alterações feitas no nó **/apps/&lt;site>/templates/&lt;nome-modelo>** afetam a instância do modelo (como na lista de seleção).
    >
    >
-   As alterações feitas no **/apps/&lt;website>/components/&lt;component-name>** afetará a página de conteúdo criada quando o modelo for usado.
+   As alterações feitas no nó **/apps/&lt;site>/components/&lt;nome-do-componente>** afetam a página de conteúdo criada quando o modelo é usado.
 
    Agora você pode criar uma página em seu site usando o novo modelo.
 
 >[!NOTE]
 >
-A biblioteca cliente do editor presume a presença do `cq.shared` nas páginas de conteúdo e, se estiver ausente, o erro de JavaScript `Uncaught TypeError: Cannot read property 'shared' of undefined` resultados.
+A biblioteca cliente do editor presume a presença do namespace `cq.shared` nas páginas de conteúdo e, se estiver ausente, o erro de JavaScript `Uncaught TypeError: Cannot read property 'shared' of undefined` ocorrerá.
 >
-Todos os exemplos de páginas de conteúdo contêm `cq.shared`, portanto, qualquer conteúdo baseado nelas inclui automaticamente `cq.shared`. No entanto, se você decidir criar suas próprias páginas de conteúdo do zero sem baseá-las em conteúdo de amostra, não deixe de incluir o `cq.shared` namespace.
+Todas as páginas de conteúdo de exemplo contêm `cq.shared`, portanto, qualquer conteúdo baseado nelas inclui automaticamente `cq.shared`. No entanto, se você decidir criar suas próprias páginas de conteúdo do zero sem baseá-las no conteúdo de exemplo, certifique-se de incluir o namespace `cq.shared`.
 >
-Consulte [Uso de bibliotecas do lado do cliente](/help/sites-developing/clientlibs.md) para obter mais informações.
+Consulte [Usando bibliotecas do lado do cliente](/help/sites-developing/clientlibs.md) para obter mais informações.
 
 ## Disponibilizar um modelo existente {#making-an-existing-template-available}
 
-Este exemplo ilustra como permitir que um modelo seja usado para determinados caminhos de conteúdo. Os modelos que estão disponíveis para o autor da página ao criar páginas são determinados pela lógica definida em [Disponibilidade do modelo](/help/sites-developing/templates.md#template-availability).
+Este exemplo ilustra como permitir que um modelo seja usado para determinados caminhos de conteúdo. Os modelos disponíveis para o autor da página ao criar páginas são determinados pela lógica definida em [Disponibilidade de Modelo](/help/sites-developing/templates.md#template-availability).
 
 1. No CRXDE Lite, navegue até o modelo que deseja usar para a página, por exemplo, o modelo Boletim informativo.
-1. Altere o `allowedPaths` propriedade e outras propriedades usadas para [disponibilidade do modelo](/help/sites-developing/templates.md#template-availability). Por exemplo, `allowedPaths`: `/content/geometrixx-outdoors/[^/]+(/.*)?` significa que este modelo é permitido em qualquer caminho em `/content/geometrixx-outdoors`.
+1. Altere a propriedade `allowedPaths` e outras propriedades usadas para [disponibilidade de modelo](/help/sites-developing/templates.md#template-availability). Por exemplo, `allowedPaths`: `/content/geometrixx-outdoors/[^/]+(/.*)?` significa que este modelo é permitido em qualquer caminho sob `/content/geometrixx-outdoors`.
 
    ![chlimage_1-89](assets/chlimage_1-89.png)

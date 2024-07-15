@@ -35,10 +35,10 @@ Quando uma inicialização é criada para uma página (ou conjunto de páginas),
 
 ### Edição de páginas de lançamento sujeitas a uma live copy {#editing-launch-pages-subject-to-a-live-copy}
 
-Se o seu lançamento se basear em um [live copy](/help/sites-administering/msm.md) em seguida, você:
+Se a sua inicialização for baseada em uma [live copy](/help/sites-administering/msm.md), você:
 
 * consulte símbolos de bloqueio (pequenos cadeados) ao editar um componente (conteúdo e/ou propriedades).
-* consulte a **Live Copy** guia em **Propriedades da página**
+* consulte a guia **Live Copy** em **Propriedades da página**
 
 Uma livecopy é usada para sincronizar o conteúdo da *ramificação de origem* para a *ramificação de inicialização* (para manter a inicialização atualizada com as alterações feitas na origem).
 
@@ -53,11 +53,11 @@ Consulte [Alterar conteúdo da live copy](/help/sites-administering/msm-livecopy
 
 Para rastrear as alterações feitas, é possível exibir a inicialização em **Referências** e comparar a página de inicialização com a página de origem:
 
-1. No **Sites** console, [navegue até a página de origem do seu lançamento e selecione-o](/help/sites-authoring/basic-handling.md#viewingandselectingyourresources).
+1. No console **Sites**, [navegue até a página de origem do seu lançamento e selecione-a](/help/sites-authoring/basic-handling.md#viewingandselectingyourresources).
 1. Abra o painel de **[Referências](/help/sites-authoring/basic-handling.md#references)** e selecione **Lançamentos**.
 1. Selecione o lançamento específico e **Comparar à origem**:
 
-   ![screen-shot_2019-03-05at121952](assets/screen-shot_2019-03-05at121952.png)
+   ![captura de tela_2019-03-05at121952](assets/screen-shot_2019-03-05at121952.png)
 
 1. As duas páginas (inicialização e origem) serão abertas lado a lado.
 
@@ -109,4 +109,4 @@ A qualquer momento, você pode editar as propriedades de um lançamento:
 
 O status é exibido ao selecionar um lançamento específico na guia Referências (consulte [Inicialização a partir de Referências (console Sites)](/help/sites-authoring/launches.md#launches-in-references-sites-console)).
 
-![screen-shot_2019-03-05at121901](assets/screen-shot_2019-03-05at121901.png)
+![captura de tela_2019-03-05at121901](assets/screen-shot_2019-03-05at121901.png)

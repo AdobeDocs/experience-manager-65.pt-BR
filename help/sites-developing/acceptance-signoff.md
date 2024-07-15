@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Aceitação e aprovação{#acceptance-and-sign-off}
 
-Como mencionado, [Testes de aceitação](/help/sites-developing/planning.md) constituem uma categoria especial de ensaio utilizada para verificar se:
+Como mencionado, os [Testes de aceitação](/help/sites-developing/planning.md) são uma categoria especial de teste usada para verificar se:
 
 * O projeto atende aos requisitos do cliente.
 * O cliente aceita o projeto.

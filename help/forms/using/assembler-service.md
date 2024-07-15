@@ -18,7 +18,7 @@ ht-degree: 6%
 
 # Usando o serviço Assembler{#using-assembler-service}
 
-O serviço Assembler permite combinar, reorganizar e aumentar documentos PDF e XDP e obter informações sobre documentos PDF. Cada tarefa enviada ao serviço Assembler inclui um documento XML de Descrição de Documento (DDX), documentos de origem e recursos externos (sequências e gráficos). Para obter mais informações sobre o serviço de montagem, consulte [Visão Geral do Serviço de Assembler](../../forms/using/overview-aem-document-services.md#p-assembler-service-p).
+O serviço Assembler permite combinar, reorganizar e aumentar documentos PDF e XDP e obter informações sobre documentos PDF. Cada tarefa enviada ao serviço Assembler inclui um documento XML de Descrição de Documento (DDX), documentos de origem e recursos externos (sequências e gráficos). Para obter mais informações sobre o serviço de assembler, consulte [Visão Geral do Serviço de Assembler](../../forms/using/overview-aem-document-services.md#p-assembler-service-p).
 
 Você pode usar o serviço de montagem para as seguintes operações:
 
@@ -30,7 +30,7 @@ Você pode usar o serviço Assembler para reunir dois ou mais documentos PDF em 
 
 A ilustração a seguir mostra três documentos de origem sendo mesclados em um único documento resultante.
 
-![Montagem de um documento PDF simples a partir de vários documentos PDF](assets/as_document_assembly.png)
+![Montando um documento PDF simples a partir de vários documentos PDF](assets/as_document_assembly.png)
 
 Montagem de um documento PDF simples a partir de vários documentos PDF
 
@@ -111,7 +111,7 @@ Estas são algumas das maneiras pelas quais você pode reunir documentos XDP:
 
 A ilustração a seguir mostra três documentos XDP de origem sendo montados em um único documento XDP resultante. O documento XDP resultante contém os três documentos XDP de origem, incluindo seus dados associados. O documento resultante obtém atributos básicos do documento base, que é o primeiro documento XDP de origem.
 
-![Montagem de um documento XDP simples a partir de vários documentos XDP](assets/as_assembler_xdpassembly.png)
+![Montando um documento XDP simples a partir de vários documentos XDP](assets/as_assembler_xdpassembly.png)
 
 Montagem de um documento XDP simples a partir de vários documentos XDP
 
@@ -149,11 +149,11 @@ Você pode especificar como o serviço do Assembler lida com as imagens referenc
   </tr> 
   <tr> 
    <td>relativo</td> 
-   <td>Incorpora todas as imagens referenciadas por meio de referências relativas no XDP de origem<br /> documento.</td> 
+   <td>Incorpora todas as imagens referenciadas por meio de referências relativas no documento XDP<br /> de origem.</td> 
   </tr> 
   <tr> 
    <td>absoluto</td> 
-   <td>Incorpora todas as imagens referenciadas por meio de referências absolutas no XDP de origem<br /> documento.</td> 
+   <td>Incorpora todas as imagens referenciadas por meio de referências absolutas no documento XDP<br /> de origem.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -227,7 +227,7 @@ Os designers de formulário usam o LiveCycle Designer para criar fragmentos de f
 
 A ilustração a seguir mostra dois formulários XML (modelos XFA). O formulário à esquerda contém um ponto de inserção chamado myInsertionPoint. O formulário à direita contém um fragmento chamado myFragment.
 
-![Inserir fragmentos de formulário em um formulário XFA](assets/as_assembler_fragment_assy_assembled.png)
+![Inserindo fragmentos de formulário em um formulário XFA](assets/as_assembler_fragment_assy_assembled.png)
 
 Inserir fragmentos de formulário em um formulário XFA
 
@@ -267,7 +267,7 @@ Você pode usar o serviço Assembler para desmontar um documento PDF. O serviço
 
 Na ilustração a seguir, as páginas 1 a 3 são extraídas do documento de origem e colocadas em um novo documento resultante.
 
-![Extração de páginas específicas de um documento de origem](assets/as_intro_page_extraction.png)
+![Extraindo páginas específicas de um documento de origem](assets/as_intro_page_extraction.png)
 
 Extração de páginas específicas de um documento de origem
 
@@ -283,7 +283,7 @@ O exemplo a seguir é um documento DDX usado para desmontar o documento.
 
 Na ilustração a seguir, o DocA é dividido em vários documentos resultantes. O primeiro marcador de nível 1 em uma página identifica o início de um novo documento resultante.
 
-![Divisão de um documento de origem com base em marcadores em vários documentos](assets/as_intro_pdfsfrombookmarks.png)
+![Dividindo um documento de origem com base em marcadores em vários documentos](assets/as_intro_pdfsfrombookmarks.png)
 
 Divisão de um documento de origem com base em marcadores em vários documentos
 
@@ -326,9 +326,9 @@ Você pode usar o serviço Assembler para determinar se um documento DDX é vál
 
 Você pode usar documentos DDX que fazem com que o serviço Assembler chame os seguintes serviços LiveC ycle. O serviço do Assembler pode chamar apenas os serviços instalados com o LiveCycle.
 
-**Serviço de extensões do Reader**: permite que os usuários do Adobe Reader assinem digitalmente o documento PDF resultante.
+**Serviço de extensões Reader**: permite que os usuários do Adobe Reader assinem digitalmente o documento PDF resultante.
 
-**serviço Forms**: mescla um arquivo XDP e um arquivo de dados XML para produzir um documento PDF que contém o formulário interativo preenchido.
+**Serviço Forms**: mescla um arquivo XDP e um arquivo de dados XML para produzir um documento PDF que contém o formulário interativo preenchido.
 
 **Serviço de saída**: converte um formulário XML dinâmico em um documento PDF que contém um formulário não interativo (nivela o formulário). O serviço do Assembler nivela formulários XML estáticos e formulários Acrobat sem chamar o serviço de Saída.
 

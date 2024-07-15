@@ -31,7 +31,7 @@ O exemplo de site de demonstração do Geometrixx inclui várias ramificações 
              |- zh
 ```
 
-Cada ramificação de idioma de um site é chamada de cópia de idioma. A página raiz de uma cópia de idioma, conhecida como raiz de idioma, identifica o idioma do conteúdo na cópia de idioma. Por exemplo, `/content/geometrixx/fr` é a raiz de idioma para a cópia em francês. As cópias de idioma devem usar um [raiz de idioma configurada corretamente](/help/sites-administering/tc-prep.md#creating-a-language-root) para que o idioma correto seja escolhido quando as traduções de um site de origem forem executadas.
+Cada ramificação de idioma de um site é chamada de cópia de idioma. A página raiz de uma cópia de idioma, conhecida como raiz de idioma, identifica o idioma do conteúdo na cópia de idioma. Por exemplo, `/content/geometrixx/fr` é a raiz de idioma para a cópia em francês. As cópias de idioma devem usar uma [raiz de idioma configurada corretamente](/help/sites-administering/tc-prep.md#creating-a-language-root) para que o idioma correto seja escolhido quando as traduções de um site de origem forem executadas.
 
 A cópia de idioma para a qual você criou originalmente o conteúdo do site é o idioma principal. O idioma principal é a fonte, que é traduzida para outros idiomas.
 
@@ -49,13 +49,13 @@ Crie uma raiz de idioma como a página raiz de uma cópia de idioma que identifi
 
 Para criar a raiz do idioma, crie uma página e use um código de idioma ISO como o valor da propriedade Nome. O código de idioma deve estar em um dos seguintes formatos:
 
-* `<language-code>`O código de idioma compatível é um código de duas letras, conforme definido pela ISO-639-1, por exemplo, `en`.
+* `<language-code>`O código de idioma com suporte é um código de duas letras, conforme definido pela ISO-639-1, como por exemplo, `en`.
 
-* `<language-code>_<country-code>` ou `<language-code>-<country-code>`O código do país compatível é um código de duas letras em minúsculas ou maiúsculas, conforme definido pela norma ISO 3166, por exemplo, `en_US`, `en_us`, `en_GB`, `en-gb`.
+* `<language-code>_<country-code>` ou `<language-code>-<country-code>`O código do país aceito é um código de duas letras em minúsculas ou maiúsculas, conforme definido pela norma ISO 3166, por exemplo, `en_US`, `en_us`, `en_GB`, `en-gb`.
 
 É possível usar qualquer um dos formatos, de acordo com a estrutura escolhida para o site global.  Por exemplo, a página raiz da cópia em francês do site do Geometrixx tem `fr` como a propriedade Nome. A propriedade Nome é usada como o nome do nó da página no repositório e, portanto, determina o caminho da página. (http://localhost:4502/content/geometrixx/fr.html)
 
-O procedimento a seguir usa a interface otimizada para toque para criar uma cópia de idioma de um site. Para obter instruções que usam a interface clássica, consulte [Criação de uma raiz de idioma usando a interface clássica](/help/sites-administering/tc-lroot-classic.md).
+O procedimento a seguir usa a interface otimizada para toque para criar uma cópia de idioma de um site. Para obter instruções que usam a interface clássica, consulte [Criando uma Raiz de Idioma Usando a interface clássica](/help/sites-administering/tc-lroot-classic.md).
 
 1. Navegue até Sites.
 1. Clique no site para o qual deseja criar uma cópia de idioma.
@@ -71,7 +71,7 @@ O procedimento a seguir usa a interface otimizada para toque para criar uma cóp
 
    ![chlimage_1-22](assets/chlimage_1-22a.png)
 
-1. Clique em Criar. Na caixa de diálogo de confirmação, clique em **Concluído** para retornar ao console Sites ou **Abertura** para abrir a cópia de idioma.
+1. Clique em Criar. Na caixa de diálogo de confirmação, clique em **Concluído** para retornar ao console de Sites ou **Abrir** para abrir a cópia de idioma.
 
 ## Ver o status das raízes de idioma {#seeing-the-status-of-language-roots}
 

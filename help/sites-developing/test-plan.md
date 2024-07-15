@@ -39,7 +39,7 @@ Se o projeto usar qualquer forma de iteração de desenvolvimento (envolvendo v�
 
 Em algum momento, você pode atribuir a equipe de teste apropriada ou uma pessoa de teste específica (possivelmente dependente de disponibilidade e/ou experiência).
 
-**Resumo ou visão geral**
+**Resumo ou Visão Geral**
 
 Para fins de relatório, você deverá fornecer uma visão geral dos resultados dos testes:
 

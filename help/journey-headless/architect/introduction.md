@@ -14,7 +14,7 @@ ht-degree: 76%
 
 # Modelagem de conteúdo para headless com o AEM - uma introdução {#architect-headless-introduction}
 
-Nesta parte do [Jornada de arquiteto de conteúdo AEM Headless](overview.md), você pode aprender os conceitos e a terminologia (básicos) necessários para entender a modelagem de conteúdo para entrega de conteúdo headless com o Adobe Experience Manager (AEM).
+Nesta parte da [Jornada do arquiteto de conteúdo do AEM Headless](overview.md), você pode aprender os conceitos e a terminologia (básicos) necessários para entender a modelagem de conteúdo para a entrega de conteúdo headless com o Adobe Experience Manager (AEM).
 
 Este documento ajuda você a entender a entrega de conteúdo headless, como o AEM é compatível com a tecnologia headless e como o conteúdo é modelado para a tecnologia headless. Depois de ler esse documento, você deverá:
 
@@ -85,5 +85,5 @@ Agora que você aprendeu os conceitos e a terminologia, o próximo passo é [Sab
    * [Saiba mais sobre o desenvolvimento headless do CMS](/help/journey-headless/developer/learn-about.md)
    * [Saiba como modelar seu conteúdo](/help/journey-headless/developer/model-your-content.md)
 * [Introdução ao AEM as a Headless CMS](/help/sites-developing/headless/introduction.md)
-* [Portal do desenvolvedor de AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=pt-BR)
-* [Tutorials para headless no AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=pt-BR)
+* [Portal do desenvolvedor do AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=pt-BR)
+* [Tutorials para Headless no AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=pt-BR)

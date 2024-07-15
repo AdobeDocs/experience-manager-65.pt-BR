@@ -1,6 +1,6 @@
 ---
 title: Interação backbone
-description: Informações conceituais sobre o uso de modelos de JavaScript do Backbone no espaço de trabalho do AEM Forms.
+description: Informações conceituais sobre o uso de modelos do Backbone JavaScript no espaço de trabalho do AEM Forms.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
@@ -22,13 +22,13 @@ O Backbone é uma biblioteca que ajuda a criar e a seguir a arquitetura MVC em a
 
 Alguns conceitos principais são os seguintes:
 
-**Modelo de backbone** Contém dados e a maior parte da lógica relacionada a esses dados.
+**Modelo de backbone** Contém dados e a maioria da lógica relacionada a esses dados.
 
-**Modo de exibição de backbone** Usado para representar o estado do modelo correspondente. Uma exibição de backbone se comporta realmente como um controlador, ouvindo eventos da interface do usuário como cliques do usuário ou eventos de modelo (como dados alterados) e modifica a interface do usuário conforme apropriado.
+**Exibição de backbone** Usada para representar o estado do modelo correspondente. Uma exibição de backbone se comporta realmente como um controlador, ouvindo eventos da interface do usuário como cliques do usuário ou eventos de modelo (como dados alterados) e modifica a interface do usuário conforme apropriado.
 
-**modelo HTML** Um modelo de invólucro que tem espaços reservados preenchidos pelo modelo.
+**modelo de HTML** Um modelo de wrapper que tem espaços reservados preenchidos pelo modelo.
 
-**Workspace do AEM Forms** Contém vários componentes individuais. Cada componente:
+O **espaço de trabalho do AEM Forms** contém vários componentes individuais. Cada componente:
 
 * Representa um único elemento da interface de usuário lógico.
 * Pode ser uma coleção de componentes semelhantes.
@@ -46,7 +46,7 @@ Na visualização Backbone, há um mapa de eventos que mapeia os vários eventos
 
 Quando uma exibição é inicializada, ela chama seu modelo correspondente para buscar dados do servidor. Quando todos os dados exigidos por uma visualização estão disponíveis, a visualização renderiza os dados no formato especificado pelo modelo de HTML. Várias exibições podem compartilhar o mesmo modelo para comunicação.
 
-![Exibição de backbone de formulários AEM](do-not-localize/aem_forms_workflow.png)
+![Exibição de backbone de formulários do AEM](do-not-localize/aem_forms_workflow.png)
 
 Um exemplo:
 

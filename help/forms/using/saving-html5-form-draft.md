@@ -22,9 +22,9 @@ Você pode salvar um formulário HTML5 como rascunho e retomar o preenchimento d
 
 ## Perfil personalizado para permitir o recurso Salvar como rascunho {#custom-profile-to-allow-save-as-draft-feature}
 
-Pronto para uso, a AEM Forms fornece um **Salvar como rascunho** perfil. Você pode renderizar um formulário com o perfil Salvar como rascunho para ativar a funcionalidade de rascunho para um formulário HTML5. Você pode especificar o perfil de renderização do HTML para um formulário em [Forms Manager](/help/forms/using/introduction-managing-forms.md).
+Por padrão, a AEM Forms fornece um perfil **Salvar como rascunho**. Você pode renderizar um formulário com o perfil Salvar como rascunho para ativar a funcionalidade de rascunho para um formulário HTML5. Você pode especificar o perfil de renderização de HTML para um formulário no [Forms Manager](/help/forms/using/introduction-managing-forms.md).
 
-Para ativar a funcionalidade Salvar como rascunho para o seu [perfil personalizado](/help/forms/using/custom-profile.md), adicione as seguintes propriedades ao nó de perfil personalizado:
+Para habilitar a funcionalidade Salvar como Rascunho para o seu [perfil personalizado](/help/forms/using/custom-profile.md) existente, adicione as seguintes propriedades ao nó de perfil personalizado:
 
 <table>
  <tbody>
@@ -51,7 +51,7 @@ Para ativar a funcionalidade Salvar como rascunho para o seu [perfil personaliza
 
 ## Armazenamento de rascunhos e listagem {#drafts-storage-and-listing}
 
-Depois de ativar a funcionalidade Salvar como rascunho para um formulário; quando o formulário for salvo, ele será listado no [Rascunhos e Componente de envio](/help/forms/using/draft-submission-component.md). Você pode recuperar e começar a preencher o formulário salvo no componente de Rascunho e Envio.
+Depois de habilitar a funcionalidade Salvar como Rascunho para um formulário; quando o formulário é salvo, ele é listado no [componente Rascunhos e Envio](/help/forms/using/draft-submission-component.md). Você pode recuperar e começar a preencher o formulário salvo no componente de Rascunho e Envio.
 
 Para ativar a listagem de formulários para o componente Rascunho e Envio, adicione a seguinte propriedade ao nó do perfil:
 
@@ -67,9 +67,9 @@ Para ativar a listagem de formulários para o componente Rascunho e Envio, adici
    <td>fp.enablePortalSubmit</td>
    <td>String</td>
    <td>verdadeiro</td>
-   <td>Para permitir que rascunhos e formulários sejam listados em<br /> Rascunhos e envios do Forms Portal após o envio</td>
+   <td>Para permitir que rascunhos e formulários sejam listados no <br /> Componente Rascunhos e Envios do Forms Portal após o envio</td>
   </tr>
  </tbody>
 </table>
 
-Por padrão, o AEM Forms armazena os dados do usuário associados ao rascunho e ao envio de um formulário no nó /content/forms/fp na instância do Publish. É possível adicionar seu provedor de armazenamento personalizado. Para obter mais detalhes, consulte [Armazenamento personalizado para componentes de Rascunhos e Envios](/help/forms/using/adding-custom-storage-provider-forms.md).
+Por padrão, o AEM Forms armazena os dados do usuário associados ao rascunho e ao envio de um formulário no nó /content/forms/fp na instância do Publish. Você pode adicionar seu provedor de armazenamento personalizado. Para obter detalhes, consulte [Armazenamento personalizado para componentes de Rascunhos e Envios](/help/forms/using/adding-custom-storage-provider-forms.md).

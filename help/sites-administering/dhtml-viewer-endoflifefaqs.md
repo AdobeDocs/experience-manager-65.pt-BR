@@ -20,7 +20,7 @@ ht-degree: 0%
 
 A partir de 31 de janeiro de 2014, a plataforma de visualizador DHTML será oficialmente encerrada.
 
-Consulte a [Guia de referência de visualizadores do Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html) para os visualizadores suportados mais recentes.
+Consulte o [Guia de Referência de Visualizadores do Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html) para obter os visualizadores mais recentes compatíveis.
 
 <!-- OBSOLETE CONTENT **What is the change?**
 

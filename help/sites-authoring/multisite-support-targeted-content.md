@@ -59,7 +59,7 @@ Um site ou uma live copy é vinculado a uma área que contém as atividades que 
 
 ## Casos de uso {#use-cases}
 
-Você pode configurar o suporte multissite para conteúdo direcionado de várias maneiras, dependendo do seu caso de uso. Esta seção descreve como isso funcionaria teoricamente com uma marca. Além disso, em [Exemplo: direcionamento de conteúdo com base na localização geográfica](#example-targeting-content-based-on-geography)No entanto, você pode ver uma aplicação real do direcionamento de conteúdo em vários sites.
+Você pode configurar o suporte multissite para conteúdo direcionado de várias maneiras, dependendo do seu caso de uso. Esta seção descreve como isso funcionaria teoricamente com uma marca. Além disso, em [Exemplo: direcionamento de conteúdo com base na localização geográfica](#example-targeting-content-based-on-geography), você pode ver uma aplicação real do direcionamento de conteúdo em vários sites.
 
 O conteúdo direcionado é envolvido nas chamadas áreas, que definem o escopo de sites ou páginas. Essas áreas são definidas no nível da marca. Uma marca pode conter várias áreas. As áreas podem ser distintas entre marcas. Enquanto uma marca pode conter apenas a área principal e, portanto, ser compartilhada por todas as marcas, outra marca pode conter várias marcas (por exemplo, por região). As marcas, portanto, não precisam refletir o conjunto de áreas entre elas.
 
@@ -156,12 +156,12 @@ As áreas podem abranger atividades e ofertas. Depois de criar uma área em qual
 
 >[!NOTE]
 >
->A área padrão chamada Área mestre é recolhida por padrão ao clicar no nome de uma marca **até** você cria outra área. Em seguida, ao selecionar uma marca no console **Atividade** ou **Ofertas**, você verá o console **Área**.
+>A área padrão chamada Área mestre é recolhida por padrão ao clicar no nome de uma marca **até** criar outra área. Em seguida, ao selecionar uma marca no console **Atividade** ou **Ofertas**, você verá o console **Área**.
 
 Para criar uma área:
 
 1. Navegue até **Personalização** > **Atividades** ou **Ofertas** e, em seguida, acesse sua marca.
-1. Clique em **Criar área**.
+1. Clique em **Criar Área**.
 
    ![chlimage_1-277](assets/chlimage_1-277.png)
 
@@ -221,13 +221,13 @@ Ao vincular, somente as atividades, experiências e ofertas da área selecionada
 Para vincular um site a uma área:
 
 1. Navegue até o site (ou página) que deseja vincular a uma área.
-1. Selecione o site ou a página e clique em **Propriedades da exibição**.
-1. Clique em **Personalização** guia.
+1. Selecione o site ou a página e clique em **Exibir Propriedades**.
+1. Clique na guia **Personalization**.
 1. No menu **Marca**, selecione a marca à qual deseja vincular sua área. Após selecionar a marca, as áreas disponíveis estarão no menu **Referência da área**.
 
    ![chlimage_1-283](assets/chlimage_1-283.png)
 
-1. Selecione a área na **Referência da área** e clique em **Salvar**.
+1. Selecione a área no menu suspenso **Referência da área** e clique em **Salvar**.
 
    ![chlimage_1-284](assets/chlimage_1-284.png)
 
@@ -251,7 +251,7 @@ Uma atividade que está herdando de outro site é marcada em verde ao lado do no
 
 Para suspender ou desconectar a herança do conteúdo direcionado em uma atividade:
 
-1. Navegue até a página em que deseja desanexar ou suspender a herança e clique em **Direcionamento** no menu suspenso do modo.
+1. Navegue até a página onde deseja desanexar ou suspender a herança e clique em **Direcionamento** no menu suspenso de modo.
 1. Se a página estiver vinculada a uma área que seja uma live copy, o status da herança será exibido. Clique em **Iniciar o direcionamento**.
 1. Para suspender uma atividade, siga um destes procedimentos:
 
@@ -268,7 +268,7 @@ Para suspender ou desconectar a herança do conteúdo direcionado em uma ativida
 
 Para interromper a herança do conteúdo direcionado em uma atividade:
 
-1. Navegue até a página onde deseja desanexar a live copy da página principal e clique em **Direcionamento** no menu suspenso do modo.
+1. Navegue até a página onde deseja desanexar a live copy do conteúdo principal e clique em **Direcionamento** no menu suspenso de modo.
 1. Se a página estiver vinculada a uma área que seja uma live copy, o status da herança será exibido. Clique em **Iniciar o direcionamento**.
 1. Selecione **Desanexar Live Copy** no menu suspenso na barra de ferramentas. O AEM confirma que você deseja desanexar a live copy.
 1. Clique em **Desanexar** para desanexar a live copy da atividade. Após a desconexão, o menu suspenso relativo à herança não será mais exibido. A atividade agora passará a ser uma atividade local.
@@ -281,13 +281,13 @@ Caso tenha suspendido a herança do conteúdo direcionado em uma atividade, é p
 
 Para restaurar a herança do conteúdo direcionado em uma atividade:
 
-1. Navegue até a página em que deseja restaurar a herança e clique em **Direcionamento** no menu suspenso do modo.
+1. Navegue até a página onde deseja restaurar a herança e clique em **Direcionamento** no menu suspenso de modo.
 1. Clique em **Iniciar o direcionamento**.
 1. Selecione **Retomar Live Copy** no menu suspenso da barra de ferramentas.
 
    ![chlimage_1-288](assets/chlimage_1-288.png)
 
-1. Clique em **Retomar** para confirmar se deseja retomar a herança da live copy. Quaisquer modificações feitas na atividade atual serão perdidas se você retomar a herança.
+1. Clique em **Retomar** para confirmar que deseja retomar a herança da live copy. Quaisquer modificações feitas na atividade atual serão perdidas se você retomar a herança.
 
 ## Excluindo áreas {#deleting-areas}
 

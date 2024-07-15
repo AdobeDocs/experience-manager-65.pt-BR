@@ -20,11 +20,11 @@ ht-degree: 0%
 
 O Gerenciamento de usuários permite habilitar o logon único (SSO) entre módulos de formulários AEM e aplicativos protegidos pelo Netegrity SiteMinder usando a SAML (Security Assertion Markup Language). Quando o SSO é implementado, as páginas de logon do usuário dos formulários AEM não são necessárias e não são exibidas se o usuário já estiver autenticado por meio do portal da empresa.
 
-Para obter informações sobre como melhorar o desempenho da sincronização de diretórios e bancos de dados para DB2, consulte [Banco de dados IBM DB2: execução de comandos para manutenção regular](/help/forms/using/admin-help/ibm-db2-database-running-commands.md#ibm-db2-database-running-commands-for-regular-maintenance).
+Para obter informações sobre como melhorar o desempenho da sincronização de diretório e banco de dados para DB2, consulte [Banco de dados IBM DB2: Executando comandos para manutenção regular](/help/forms/using/admin-help/ibm-db2-database-running-commands.md#ibm-db2-database-running-commands-for-regular-maintenance).
 
 ## Configurando o Gerenciamento de Usuários para um servidor LDAP habilitado para SSL {#configuring-user-management-for-an-ssl-enabled-ldap-server}
 
-Se você tiver um servidor LDAP habilitado para SSL, configure o Gerenciamento de usuários para trabalhar com ele. (Consulte [Configurar o gerenciamento de usuários para um servidor LDAP habilitado para SSL](/help/forms/using/admin-help/configure-user-management-ssl-enabled.md#configure-user-management-for-an-ssl-enabled-ldap-server).)
+Se você tiver um servidor LDAP habilitado para SSL, configure o Gerenciamento de usuários para trabalhar com ele. (Consulte [Configurar o Gerenciamento de Usuários para um servidor LDAP habilitado para SSL](/help/forms/using/admin-help/configure-user-management-ssl-enabled.md#configure-user-management-for-an-ssl-enabled-ldap-server).)
 
 ## Definição de privilégios de usuário para uso com Segurança de documentos {#setting-user-privileges-for-use-with-document-security}
 
@@ -50,7 +50,7 @@ Depois de instalar e configurar o ambiente de formulários AEM com a Segurança 
 
 ## Restrições de usuário administrador {#administrator-user-restrictions}
 
-Usuários com determinados tipos de privilégios de administrador não podem acessar as páginas da Web do usuário final do Workspace por motivos de segurança. Como essas páginas da Web podem existir fora de um firewall, a permissão de tarefas no nível de administração pode representar um risco de segurança. Somente os usuários que têm privilégios de Administrador do Workspace ou Usuário do Workspace podem acessar as páginas da Web do usuário final.
+Os usuários com determinados tipos de privilégios de administrador não podem acessar as páginas da Web do usuário final do Workspace por motivos de segurança. Como essas páginas da Web podem existir fora de um firewall, a permissão de tarefas no nível de administração pode representar um risco de segurança. Somente os usuários que têm privilégios de Administrador do Workspace ou Usuário do Workspace podem acessar as páginas da Web do usuário final.
 
 >[!NOTE]
 >

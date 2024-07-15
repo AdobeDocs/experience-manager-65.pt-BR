@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Os formulários HTML5 usam o padrão de acessibilidade ARIA HTML5 para gerar formulários HTML acessíveis. Esses formulários são compatíveis com a navegação com guias (exceto o Mozilla FireFox) e são certificados para serem compatíveis com leitores de tela comuns. Para gerar um formulário HTML5 com bons recursos de acessibilidade, crie o modelo de formulário XFA com base em algumas diretrizes básicas de design. As diretrizes de design incluem a configuração da ordem de tabulação correta e o fornecimento do conteúdo de Fale Texto para cada controle de formulário. O AEM Forms Designer é compatível com a configuração desses atributos de controle de formulário para gerar um formulário PDF e HTML acessíveis.
 
-*Nota:A navegação com guias não abrange campos protegidos, como campos de cálculo que exibem a soma dos valores. Para que o leitor de tela leia o valor de um campo protegido, coloque um campo somente leitura vazio na parte superior ou ao lado do campo protegido. Atribua o valor do campo protegido ao novo campo Somente leitura. O leitor de tela ou a navegação com guias pode escolher esse campo somente leitura e falar como o valor do campo protegido.*
+*Observação: a navegação com guias não abrange campos protegidos, como campos de cálculo que exibem a soma dos valores. Para que o leitor de tela leia o valor de um campo protegido, coloque um campo somente leitura vazio na parte superior ou ao lado do campo protegido. Atribua o valor do campo protegido ao novo campo Somente leitura. O leitor de tela ou a navegação com guias pode escolher esse campo somente leitura e falar como o valor do campo protegido.*
 
 O AEM Forms Designer inclui várias opções de Falar texto que podem ser passadas para leitores de tela. Para cada objeto em um formulário, o usuário pode especificar uma das várias configurações para o texto do leitor de tela:
 
@@ -31,4 +31,4 @@ O AEM Forms Designer inclui várias opções de Falar texto que podem ser passad
 
 ![acessibilidade](assets/accessibility.png)
 
-Quando várias opções como dica de ferramenta, Texto de Reader da tela e Legenda estão disponíveis em um controle de Formulário, o Reader da tela usa apenas uma dessas propriedades. A ordem padrão é Texto de Reader de tela personalizada, dica de ferramenta, Legenda e Nome. Você pode substituir a ordem padrão usando o Reader de tela **Precedência** na paleta Acessibilidade.
+Quando várias opções como dica de ferramenta, Texto de Reader da tela e Legenda estão disponíveis em um controle de Formulário, o Reader da tela usa apenas uma dessas propriedades. A ordem padrão é Texto de Reader de tela personalizada, dica de ferramenta, Legenda e Nome. Você pode substituir a ordem padrão usando a opção Reader de tela **Precedência** na paleta Acessibilidade.

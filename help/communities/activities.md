@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## Introdução {#introduction}
 
-As atividades de um membro da comunidade conectado, como postar em um fórum ou blog, são coletadas em um fluxo que pode ser filtrado e exibido de várias maneiras por meio da configuração do `Activity Streams` componente.
+As atividades de um membro da comunidade conectado, como postar em um fórum ou blog, são coletadas em um fluxo que pode ser filtrado e exibido de várias maneiras por meio da configuração do componente `Activity Streams`.
 
 A capacidade de seguir o adiciona outra visualização de atividades quando os membros da comunidade seguem postagens de interesse ou seguem as atividades de outros membros da comunidade.
 
@@ -32,7 +32,7 @@ O documento descreve:
 
 ### Adicionar fluxos de atividade a uma página {#adding-activity-streams-to-a-page}
 
-Se desejar adicionar um `Activity Streams` para uma página no modo de autor, use o navegador de componentes para localizar
+Se quiser adicionar um componente `Activity Streams` a uma página no modo de autor, use o navegador de componentes para localizar
 
 * `Communities / Activity Streams`
 
@@ -40,19 +40,19 @@ E arraste-o para o local em uma página onde os fluxos de atividade devem aparec
 
 Para obter as informações necessárias, visite [Noções básicas sobre componentes das comunidades](/help/communities/basics.md).
 
-Quando a variável [bibliotecas obrigatórias do lado do cliente](/help/communities/essentials-activities.md#essentials-for-client-side) são incluídos, é assim que a variável `Activity Streams` é exibido:
+Quando as [bibliotecas obrigatórias do lado do cliente](/help/communities/essentials-activities.md#essentials-for-client-side) são incluídas, é assim que o componente `Activity Streams` aparece:
 
-![fluxos de atividade](assets/activity-component.png)
+![fluxos-atividade](assets/activity-component.png)
 
 ### Configuração de fluxos de atividade {#configuring-activity-streams}
 
-Selecione o colocado `Activity Streams` para que você possa acessar e selecionar o `Configure` ícone que abre a caixa de diálogo de edição.
+Selecione o componente `Activity Streams` inserido para que você possa acessar e selecionar o ícone `Configure` que abre a caixa de diálogo de edição.
 
 ![configurar](assets/configure-new.png)
 
-No **Atividades do usuário** especifique quais atividades serão exibidas:
+Na guia **Atividades do usuário**, especifique quais atividades exibir:
 
-![user-activities](assets/user-activities.png)
+![atividades-usuário](assets/user-activities.png)
 
 * **Número máximo de atividades**
 
@@ -62,29 +62,29 @@ No **Atividades do usuário** especifique quais atividades serão exibidas:
 
   Deixe em branco para definir como padrão o site da comunidade ou o grupo da comunidade. O caminho do recurso de fluxo identifica a origem das atividades. O padrão é em branco.
 
-* **Visualização Exibir atividades do usuário**
+* **Exibir Exibição de Atividades do Usuário**
 
   Se marcada, a página de atividades inclui uma guia que filtra atividades com base naquelas geradas dentro da comunidade pelo membro atual. O padrão está marcado.
 
-* **Visualização Exibir todas as atividades**
+* **Exibir Todas As Atividades**
 
   Se marcada, a página de atividades inclui uma guia que inclui todas as atividades geradas na comunidade à qual o membro atual tem acesso. O padrão está marcado.
 
-* **Exibir exibição seguinte**
+* **Exibir a seguinte exibição**
 
   Se marcada, a página de atividades incluirá uma guia que filtra as atividades com base naquelas que o membro atual está seguindo. O padrão está marcado.
 
 ### Exibição Seguinte {#following-view}
 
-Os componentes devem ser configurados para permitir o acompanhamento. Os recursos que permitem seguir são [blog](/help/communities/blog-feature.md), [fórum](/help/communities/forum.md), [QnA](/help/communities/working-with-qna.md), [calendário](/help/communities/calendar.md), [biblioteca de arquivos](/help/communities/file-library.md), e [comentários](/help/communities/comments.md).
+Os componentes devem ser configurados para permitir o acompanhamento. Os recursos que permitem os seguintes itens são [blog](/help/communities/blog-feature.md), [fórum](/help/communities/forum.md), [QnA](/help/communities/working-with-qna.md), [calendário](/help/communities/calendar.md), [biblioteca de arquivos](/help/communities/file-library.md) e [comentários](/help/communities/comments.md).
 
-![following-view](assets/following-activities.png)
+![exibição seguinte](assets/following-activities.png)
 
-A variável **Seguir** fornece um meio de seguir entradas como atividades, [notificações](/help/communities/notifications.md)ou [assinaturas](/help/communities/subscriptions.md). Cada vez que a variável **Seguir** for selecionada, é possível ativar ou desativar uma seleção. A variável `Email Subscriptions` a seleção está presente somente quando configurada.
+O botão **Seguir** fornece um meio de seguir entradas como atividades, [notificações](/help/communities/notifications.md) ou [assinaturas](/help/communities/subscriptions.md). Sempre que o botão **Seguir** é selecionado, é possível ativar ou desativar uma seleção. A seleção `Email Subscriptions` está presente somente quando configurada.
 
-Se qualquer método de seguir for selecionado, o texto do botão será alterado para **Seguindo**. Por conveniência, é possível selecionar `Unfollow All` para desativar todos os métodos.
+Se qualquer método de acompanhamento for selecionado, o texto do botão será alterado para **Seguinte**. Para maior comodidade, é possível selecionar `Unfollow All` para desligar todos os métodos.
 
-A variável **Seguir** é exibido:
+O botão **Seguir** é exibido:
 
 * Ao exibir o perfil de outro membro.
 * Em uma página principal de recursos, como fóruns, QnA e blogs.
@@ -97,4 +97,4 @@ A variável **Seguir** é exibido:
 
 ### Informações adicionais {#additional-information}
 
-Mais informações podem ser encontradas no [Fundamentos do Activity Streams](/help/communities/essentials-activities.md) página para desenvolvedores.
+Mais informações podem ser encontradas na página [Activity Streams Essentials](/help/communities/essentials-activities.md) para desenvolvedores.

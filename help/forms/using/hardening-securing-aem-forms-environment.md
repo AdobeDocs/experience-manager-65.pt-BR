@@ -28,7 +28,7 @@ O artigo destina-se a consultores, especialistas em segurança, arquitetos de si
 
 A imagem a seguir exibe componentes e protocolos usados em uma implantação típica do AEM Forms, incluindo a topologia de firewall apropriada:
 
-![arquitetura típica](assets/typical-architecture.png)
+![arquitetura-típica](assets/typical-architecture.png)
 
 O AEM Forms é altamente personalizável e pode funcionar em vários ambientes diferentes. Algumas das recomendações podem não se aplicar à sua organização.
 
@@ -143,16 +143,16 @@ Por padrão, a ação enviar do portal de formulários adaptáveis salva os dado
 
 Você pode configurar o serviço de armazenamento para enviar pelo cabo ao cluster de processamento sem salvar nada localmente no nó de publicação. O cluster de processamento reside em uma zona segura atrás do firewall privado e os dados permanecem seguros.
 
-Use as credenciais do servidor de processamento para o serviço de configurações do AEM DS para postar dados do nó de publicação no servidor de processamento. Use as credenciais de um usuário não administrativo restrito com acesso de leitura e gravação ao repositório do servidor de processamento. Para obter mais informações, consulte [Configuração de serviços de armazenamento para rascunhos e envios](/help/forms/using/configuring-draft-submission-storage.md).
+Use as credenciais do servidor de processamento para o serviço de configurações do AEM DS para postar dados do nó de publicação no servidor de processamento. Use as credenciais de um usuário não administrativo restrito com acesso de leitura e gravação ao repositório do servidor de processamento. Para obter mais informações, consulte [Configurando serviços de armazenamento para rascunhos e envios](/help/forms/using/configuring-draft-submission-storage.md).
 
 ### Dados seguros tratados pelo modelo de dados de formulário (FDM) {#secure-data-handled-by-form-data-model-fdm}
 
 Use contas de usuário com os privilégios mínimos necessários para configurar fontes de dados para o modelo de dados de formulário (FDM). O uso da conta administrativa pode fornecer acesso aberto de metadados e entidades de esquema a usuários não autorizados.\
 A integração de dados também fornece métodos para autorizar solicitações de serviço do FDM. Você pode inserir mecanismos de autorização de pré e pós-execução para validar uma solicitação. As solicitações de serviço são geradas ao preencher previamente um formulário, enviar um formulário e chamar serviços por meio de uma regra.
 
-**Autorização de pré-processamento:** Você pode usar a autorização de pré-processamento para validar a autenticidade de uma solicitação antes de executá-la. Você pode usar entradas, serviço e detalhes da solicitação para permitir ou interromper a execução da solicitação. Você poderá retornar uma exceção de integração de dados OPERATION_ACCESS_DENIED se a execução for interrompida. Você também pode modificar a solicitação do cliente antes de enviá-la para execução. Por exemplo, alterar a entrada e adicionar outras informações.
+**Autorização de pré-processamento:** você pode usar a autorização de pré-processamento para validar a autenticidade de uma solicitação antes de executá-la. Você pode usar entradas, serviço e detalhes da solicitação para permitir ou interromper a execução da solicitação. Você poderá retornar uma exceção de integração de dados OPERATION_ACCESS_DENIED se a execução for interrompida. Você também pode modificar a solicitação do cliente antes de enviá-la para execução. Por exemplo, alterar a entrada e adicionar outras informações.
 
-**Autorização pós-processamento:** Você pode usar a autorização pós-processo para validar e controlar os resultados antes de retornar os resultados ao solicitante. Também é possível filtrar, remover e inserir dados adicionais nos resultados.
+**Autorização de processo Post:** você pode usar a autorização de pós-processo para validar e controlar os resultados antes de retornar os resultados ao solicitante. Também é possível filtrar, remover e inserir dados adicionais nos resultados.
 
 ### Limitar o acesso do usuário {#limit-user-access}
 
@@ -181,7 +181,7 @@ Um conjunto diferente de personalidades de usuário é necessário para as inst�
    * Um usuário do grupo cm-user-agent pode criar, pré-visualizar e publicar cartas de gerenciamento de correspondência.
    * Um usuário do grupo de editores de workflow pode criar um aplicativo de caixa de entrada e um modelo de workflow.
 
-**No processamento do autor:**
+**Ao processar o autor:**
 
 * Para casos de uso de salvar e enviar remotamente, crie um usuário com permissões de leitura, criação e modificação no caminho content/form/fp do repositório crx.
 * Adicione usuário ao grupo de usuários do fluxo de trabalho para permitir que um usuário use aplicativos da caixa de entrada do AEM.
@@ -196,4 +196,4 @@ Um cluster de processamento é executado no modo de autor, mas não o use para a
 
 ### USAR as práticas recomendadas de AEM para proteger um ambiente AEM Forms {#use-aem-best-practices-to-secure-an-aem-forms-environment}
 
-Este documento fornece instruções específicas para o ambiente do AEM Forms. É necessário garantir que sua instalação subjacente do AEM esteja segura quando implantada. Para obter instruções detalhadas, consulte [Lista de verificação de segurança do AEM](/help/sites-administering/security-checklist.md) documentação.
+Este documento fornece instruções específicas para o ambiente do AEM Forms. É necessário garantir que sua instalação subjacente do AEM esteja segura quando implantada. Para obter instruções detalhadas, consulte a documentação da [Lista de Verificação de Segurança do AEM](/help/sites-administering/security-checklist.md).

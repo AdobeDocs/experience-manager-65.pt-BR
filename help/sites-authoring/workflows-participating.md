@@ -32,7 +32,7 @@ Os fluxos de trabalho normalmente incluem etapas que exigem que uma pessoa execu
 
 Quando um item de trabalho é atribuído a você (por exemplo, **Aprovar conteúdo**), vários alertas e/ou notificações são exibidos:
 
-* Seu [notificação](/help/sites-authoring/inbox.md) O indicador (barra de ferramentas) será incrementado:
+* Seu indicador [notificação](/help/sites-authoring/inbox.md) (barra de ferramentas) será incrementado:
 
   ![Indicador de notificação](do-not-localize/wf-57.png)
 
@@ -60,7 +60,7 @@ Quando um item de trabalho é atribuído a você (por exemplo, **Aprovar conteú
 
 * Quando a **Linha do tempo** é aberta para o recurso, a etapa do fluxo de trabalho é exibida. Ao clicar no banner do alerta, as ações disponíveis também serão mostradas:
 
-  ![screen-shot_2019-03-05at120453](assets/screen-shot_2019-03-05at120453.png)
+  ![captura de tela_2019-03-05at120453](assets/screen-shot_2019-03-05at120453.png)
 
 ### Conclusão de uma etapa do participante {#completing-a-participant-step}
 
@@ -76,7 +76,7 @@ Nesta ação, você pode indicar:
 * [a Caixa de entrada](#completing-a-participant-step-inbox)
 * [o Editor de páginas](#completing-a-participant-step-page-editor)
 * [Linha do tempo](#completing-a-participant-step-timeline)
-* quando [abrir um item do fluxo de trabalho para exibir detalhes](#opening-a-workflow-item-to-view-details-and-take-actions).
+* ao [abrir um item do fluxo de trabalho para exibir detalhes](#opening-a-workflow-item-to-view-details-and-take-actions).
 
 #### Conclusão de uma etapa do participante - Caixa de entrada {#completing-a-participant-step-inbox}
 
@@ -85,7 +85,7 @@ Use o procedimento a seguir para concluir o item de trabalho:
 1. Abra a **[Caixa de entrada do AEM](/help/sites-authoring/inbox.md)**.
 1. Selecione o item do fluxo de trabalho que deseja executar a ação (clique na miniatura).
 1. Selecione **Concluído** na barra de ferramentas.
-1. A variável **Item de trabalho concluído** é aberta. Selecione o **Próxima etapa** no seletor suspenso e adicione um **Comentário** se necessário.
+1. A caixa de diálogo **Concluir item de trabalho** é aberta. Selecione a **Próxima etapa** no seletor suspenso e adicione um **Comentário**, se necessário.
 1. Use **OK** para concluir a etapa (ou o botão **Cancelar** para cancelar a ação).
 
 #### Conclusão de uma etapa do participante - Editor de páginas {#completing-a-participant-step-page-editor}
@@ -94,7 +94,7 @@ Use o procedimento a seguir para concluir o item de trabalho:
 
 1. Abra a [página para edição](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing).
 1. Selecione **Concluído** na barra de status na parte superior.
-1. A variável **Item de trabalho concluído** é aberta. Selecione o **Próxima etapa** no seletor suspenso e adicione um **Comentário** se necessário.
+1. A caixa de diálogo **Concluir item de trabalho** é aberta. Selecione a **Próxima etapa** no seletor suspenso e adicione um **Comentário**, se necessário.
 1. Use **OK** para concluir a etapa (ou o botão **Cancelar** para cancelar a ação).
 
 #### Conclusão de uma etapa do participante - Linha do tempo {#completing-a-participant-step-timeline}
@@ -103,15 +103,15 @@ Também é possível usar a linha do tempo para concluir e avançar uma etapa:
 
 1. Selecione a página desejada e abra a **Linha do tempo** (ou abra a **Linha do tempo** e selecione a página):
 
-   ![screen-shot_2019-03-05at120744](assets/screen-shot_2019-03-05at120744.png)
+   ![captura de tela_2019-03-05at120744](assets/screen-shot_2019-03-05at120744.png)
 
 1. Clique no banner de alerta para mostrar as ações disponíveis. Selecionar **Avançar**:
 
-   ![screen-shot_2019-03-05at120453-1](assets/screen-shot_2019-03-05at120453-1.png)
+   ![captura de tela_2019-03-05at120453-1](assets/screen-shot_2019-03-05at120453-1.png)
 
 1. Dependendo do fluxo de trabalho, você pode selecionar a próxima etapa:
 
-   ![screen-shot_2019-03-05at120905](assets/screen-shot_2019-03-05at120905.png)
+   ![captura de tela_2019-03-05at120905](assets/screen-shot_2019-03-05at120905.png)
 
 1. Selecione **Avançar** para confirmar a ação.
 
@@ -135,7 +135,7 @@ Nesta ação, você pode indicar:
 * [a Caixa de entrada](#delegating-a-participant-step-inbox)
 * [o Editor de páginas](#delegating-a-participant-step-page-editor)
 * [Linha do tempo](#delegating-a-participant-step-timeline)
-* quando [abrir um item do fluxo de trabalho para exibir detalhes](#opening-a-workflow-item-to-view-details-and-take-actions).
+* ao [abrir um item do fluxo de trabalho para exibir detalhes](#opening-a-workflow-item-to-view-details-and-take-actions).
 
 #### Delegação de uma etapa do participante - Caixa de entrada {#delegating-a-participant-step-inbox}
 
@@ -144,7 +144,7 @@ Use o procedimento a seguir para delegar um item de trabalho:
 1. Abra a **[Caixa de entrada do AEM](/help/sites-authoring/inbox.md)**.
 1. Selecione o item do fluxo de trabalho que deseja executar a ação (clique na miniatura).
 1. Selecione **Delegar** na barra de ferramentas.
-1. A caixa de diálogo se abre. Especifique a **Usuário** no seletor suspenso (também pode ser um grupo) e adicione um **Comentário** se necessário.
+1. A caixa de diálogo se abre. Especifique o **Usuário** no seletor suspenso (também pode ser um grupo) e adicione um **Comentário**, se necessário.
 1. Use **OK** para concluir a etapa (ou o botão **Cancelar** para cancelar a ação).
 
 #### Delegação de uma etapa do participante - Editor de páginas {#delegating-a-participant-step-page-editor}
@@ -153,7 +153,7 @@ Use o procedimento a seguir para delegar um item de trabalho:
 
 1. Abra a [página para edição](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing).
 1. Selecione **Delegar** na barra de status na parte superior.
-1. A caixa de diálogo se abre. Especifique a **Usuário** no seletor suspenso (também pode ser um grupo) e adicione um **Comentário** se necessário.
+1. A caixa de diálogo se abre. Especifique o **Usuário** no seletor suspenso (também pode ser um grupo) e adicione um **Comentário**, se necessário.
 1. Use **OK** para concluir a etapa (ou o botão **Cancelar** para cancelar a ação).
 
 #### Delegação de uma etapa do participante - Linha do tempo {#delegating-a-participant-step-timeline}
@@ -163,11 +163,11 @@ Também é possível usar a linha do tempo para delegar e/ou atribuir uma etapa:
 1. Selecione a página desejada e abra a **Linha do tempo** (ou abra a **Linha do tempo** e selecione a página).
 1. Clique no banner de alerta para mostrar as ações disponíveis. Selecionar **Alterar responsável**:
 
-   ![screen-shot_2019-03-05at120453-2](assets/screen-shot_2019-03-05at120453-2.png)
+   ![captura de tela_2019-03-05at120453-2](assets/screen-shot_2019-03-05at120453-2.png)
 
 1. Especifique um novo destinatário:
 
-   ![screen-shot_2019-03-05at121025](assets/screen-shot_2019-03-05at121025.png)
+   ![captura de tela_2019-03-05at121025](assets/screen-shot_2019-03-05at121025.png)
 
 1. Selecione **Atribuir** para confirmar a ação.
 
@@ -185,7 +185,7 @@ Nesta ação, você pode indicar:
 * [a Caixa de entrada](#performing-step-back-on-a-participant-step-inbox)
 * [o Editor de páginas](#performing-step-back-on-a-participant-step-page-editor)
 * [Linha do tempo](#performing-step-back-on-a-participant-step-timeline)
-* quando [abrir um item do fluxo de trabalho para exibir detalhes](#opening-a-workflow-item-to-view-details-and-take-actions).
+* ao [abrir um item do fluxo de trabalho para exibir detalhes](#opening-a-workflow-item-to-view-details-and-take-actions).
 
 #### Retrocesso em uma etapa do participante - Caixa de entrada {#performing-step-back-on-a-participant-step-inbox}
 
@@ -195,7 +195,7 @@ Use o procedimento a seguir para retroceder:
 1. Selecione o item do fluxo de trabalho que deseja executar a ação (clique na miniatura).
 1. Selecione **Retroceder** para abrir a caixa de diálogo.
 
-1. Especifique a **Etapa anterior** e adicionar um **Comentário** se necessário.
+1. Especifique a **Etapa anterior** e adicione um **Comentário**, se necessário.
 1. Use **OK** para concluir a etapa (ou o botão **Cancelar** para cancelar a ação).
 
 #### Retrocesso em uma etapa do participante - Editor de páginas {#performing-step-back-on-a-participant-step-page-editor}
@@ -204,7 +204,7 @@ Use o procedimento a seguir para retroceder:
 
 1. Abra a [página para edição](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing).
 1. Selecione **Retroceder** na barra de status na parte superior.
-1. Especifique a **Etapa anterior** e adicionar um **Comentário** se necessário.
+1. Especifique a **Etapa anterior** e adicione um **Comentário**, se necessário.
 1. Use **OK** para concluir a etapa (ou o botão **Cancelar** para cancelar a ação).
 
 #### Retrocesso em uma etapa do participante - Linha do tempo {#performing-step-back-on-a-participant-step-timeline}
@@ -214,11 +214,11 @@ Também é possível usar a linha do tempo para retroceder para uma etapa anteri
 1. Selecione a página desejada e abra a **Linha do tempo** (ou abra a **Linha do tempo** e selecione a página).
 1. Clique no banner de alerta para mostrar as ações disponíveis. Selecione **Reverter**:
 
-   ![screen-shot_2019-03-05at121131](assets/screen-shot_2019-03-05at121131.png)
+   ![captura de tela_2019-03-05at121131](assets/screen-shot_2019-03-05at121131.png)
 
 1. Especifique a etapa para a qual o fluxo de trabalho deve retornar:
 
-   ![screen-shot_2019-03-05at121158](assets/screen-shot_2019-03-05at121158.png)
+   ![captura de tela_2019-03-05at121158](assets/screen-shot_2019-03-05at121158.png)
 
 1. Selecione **Reverter** para confirmar a ação.
 
@@ -236,7 +236,7 @@ Os detalhes do fluxo de trabalho são mostrados em guias e as ações apropriada
 
   ![wf-73](assets/wf-73.png)
 
-  Se [Estágios do fluxo de trabalho](/help/sites-developing/workflows.md#workflow-stages) foram configuradas para o modelo, é possível visualizar o progresso de acordo com estes:
+  Se [Estágios do Fluxo de Trabalho](/help/sites-developing/workflows.md#workflow-stages) tiverem sido configurados para o modelo, você poderá visualizar o progresso de acordo com estes:
 
   ![wf-107](assets/wf-107.png)
 

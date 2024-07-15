@@ -26,27 +26,27 @@ As ações de gerenciamento de conteúdo são os blocos fundamentais que ajudam 
 
 ## Visão geral das coleções {#collections-overview}
 
-As coleções representam uma variável *balde* recheados de conteúdo, como artigos ou banners que se encaixam no tema da capa.
+As coleções representam um *balde* bem definido e repleto de conteúdo, como artigos ou banners que se adaptam ao tema da capa.
 
 >[!NOTE]
 >
 >Consulte os seguintes recursos na Ajuda online para saber mais sobre os seguintes tópicos em aplicativos AEM Mobile:
 >
->* [Considerações de design](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html)
+>* [Considerações sobre o design](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html)
 >
->* [Gerenciar coleções](https://helpx.adobe.com/digital-publishing-solution/help/creating-collections.html)
+>* [Gerenciando Coleções](https://helpx.adobe.com/digital-publishing-solution/help/creating-collections.html)
 >
 
 ## Criação de uma coleção {#creating-a-collection}
 
 O fluxo de trabalho geral para criar uma coleção é o seguinte:
 
-1. Selecionar **Dispositivo móvel** do painel lateral.
+1. Selecione **Dispositivo móvel** no painel lateral.
 1. Em Dispositivo móvel, escolha seu aplicativo móvel por demanda no catálogo.
-1. Clique na seta para baixo no canto superior direito da **Gerenciar coleções** bloco.
+1. Clique na seta para baixo no canto superior direito do bloco **Gerenciar coleções**.
 1. Analise cada etapa do assistente para continuar criando seu novo artigo.
 1. Quando estiver pronto, clique em **Criar**.
-1. Seu novo artigo aparece na guia **Gerenciar coleções** bloco.
+1. Seu novo artigo aparece no bloco **Gerenciar Coleções**.
 
 ![chlimage_1-1](assets/chlimage_1-1.gif)
 
@@ -61,9 +61,9 @@ O conteúdo do Mobile On-Demand existente pode ser baixado (importado) do Mobile
 O fluxo de trabalho para importar uma nova coleção
 
 1. Em Dispositivo móvel, escolha seu aplicativo móvel por demanda no catálogo.
-1. Clique na seta para baixo no canto superior direito da **Gerenciar coleções** lado a lado e selecione Importar coleções.
-1. Clique em **Importar coleções** na caixa de diálogo e, em seguida, em Fechar.
-1. Suas coleções do Mobile On-Demand agora aparecem no **Gerenciar coleções** bloco.
+1. Clique na seta para baixo no canto superior direito do bloco **Gerenciar coleções** e selecione Importar coleções.
+1. Clique em **Importar coleções** na caixa de diálogo e em Fechar.
+1. Suas coleções do Mobile On-Demand agora aparecem no bloco **Gerenciar coleções**.
 
 >[!CAUTION]
 >
@@ -71,12 +71,12 @@ O fluxo de trabalho para importar uma nova coleção
 
 ## Editar uma coleção {#editing-a-collection}
 
-Use o editor de arrastar e soltar AEM integrado para adicionar ou alterar um artigo. Componentes como texto e imagens podem ser adicionados/removidos. As imagens dos ativos DAM podem ser inseridas.
+Use o editor de arrastar e soltar AEM integrado para adicionar ou alterar um artigo. Componentes como texto e imagens podem ser adicionados/removidos. As imagens do Assets do DAM podem ser inseridas.
 
 O fluxo de trabalho para editar uma coleção:
 
 1. Em Dispositivo móvel, escolha seu aplicativo móvel por demanda no catálogo.
-1. Selecione um artigo de origem AEM na **Gerenciar coleções** bloco.
+1. Selecione um artigo de origem AEM no bloco **Gerenciar coleções**.
 1. Clique na coleção destacada na exibição de lista para abri-la no editor de conteúdo.
 1. Use o editor de conteúdo para arrastar o conteúdo da coleção (manuscritos, imagens, texto etc.).
 
@@ -87,11 +87,11 @@ As coleções têm várias propriedades, como títulos, descrições e imagens. 
 O fluxo de trabalho geral para exibir/editar uma coleção:
 
 1. Em Dispositivo móvel, escolha seu aplicativo móvel por demanda no catálogo.
-1. Escolha uma coleção na **Gerenciar coleções** bloco.
+1. Escolha uma coleção no bloco **Gerenciar Coleções**.
 
-1. Selecionar **Propriedades** na barra de ações.
+1. Selecione **Propriedades** na barra de ações.
 1. Visualize todos os metadados disponíveis para esse artigo.
-1. Edite os metadados se desejar e clique em **Salvar** quando terminar.
+1. Edite os metadados, se desejar, e clique em **Salvar** quando terminar.
 1. Como opção, carregue as alterações imediatamente no Mobile On-Demand.
 
 ## Fazendo upload de uma coleção {#uploading-a-collection}
@@ -100,10 +100,10 @@ A ação de upload copia o conteúdo selecionado e o adiciona a um projeto do Mo
 
 O fluxo de trabalho geral para fazer upload de uma coleção:
 
-1. De **Dispositivo móvel**, escolha seu aplicativo Mobile On-Demand no catálogo.
-1. No **Gerenciar coleções** selecione um artigo para fazer upload no Mobile On-Demand.
+1. Em **Mobile**, escolha seu aplicativo Mobile On-Demand no catálogo.
+1. No bloco **Gerenciar coleções**, selecione um artigo para carregar no Mobile On-Demand.
 1. Adicione mais coleções, se necessário, na exibição em lista.
-1. Selecionar **Carregar** na barra de ações e, em seguida, clique em Fazer upload na caixa de diálogo.
+1. Selecione **Carregar** na barra de ações e clique em Carregar na caixa de diálogo.
 1. Suas coleções foram carregadas no Mobile On-Demand.
 
 ## Excluindo uma coleção {#deleting-a-collection}
@@ -113,9 +113,9 @@ Essa operação exclui a coleção selecionada do Mobile On-Demand e, opcionalme
 O fluxo de trabalho geral para excluir uma coleção:
 
 1. Em Dispositivo móvel, escolha seu aplicativo móvel por demanda no catálogo.
-1. Selecione o artigo a ser excluído na **Gerenciar coleções** bloco.
+1. Selecione o artigo a ser excluído no bloco **Gerenciar Coleções**.
 1. Verifique se está selecionado na lista; selecione outras para excluir, conforme necessário.
-1. Clique em **Excluir** na barra de ações.
+1. Clique em **Excluir** da barra de ações.
 1. Marque se deseja excluir do AEM e do Mobile On-Demand.
 1. Clique em **Excluir**.
 1. Sua coleção foi removida da lista.

@@ -16,12 +16,12 @@ ht-degree: 46%
 
 # Ferramentas de Modernização do AEM {#modernization-tools}
 
-[Ferramentas de modernização do AEM](https://opensource.adobe.com/aem-modernize-tools/) permite a fácil conversão de:
+[As Ferramentas de Modernização do AEM](https://opensource.adobe.com/aem-modernize-tools/) permitem a fácil conversão de:
 
-* [Modelos estáticos](page-templates-static.md) para [modelos editáveis](page-templates-editable.md)
-* [Configurações de design](page-templates-static.md) para [políticas](page-templates-editable.md)
-* [Componentes de base](/help/sites-authoring/default-components-foundation.md) para [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR)
-* [Interface clássica](website.md) para [Interface de usuário habilitada para toque](touch-ui-concepts.md)
+* [Modelos estáticos](page-templates-static.md) a [modelos editáveis](page-templates-editable.md)
+* [Configurações de design](page-templates-static.md) a [políticas](page-templates-editable.md)
+* [Componentes de Base](/help/sites-authoring/default-components-foundation.md) a [Componentes Principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR)
+* [Interface Clássica](website.md) para [Interface Habilitada para Toque](touch-ui-concepts.md)
 
 Para mais informações sobre o uso dessas ferramentas, [consulte a documentação](https://opensource.adobe.com/aem-modernize-tools/).
 

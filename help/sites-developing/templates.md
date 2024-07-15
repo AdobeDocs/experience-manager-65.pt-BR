@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Modelos são usados em vários pontos no AEM:
 
-* [Ao criar uma página, selecione um modelo](#templates-pages). Esse modelo é usado como base para a nova página. O modelo define a estrutura da página, qualquer conteúdo inicial e o [componentes](/help/sites-authoring/default-components.md) que podem ser usadas (propriedades de design).
+* [Ao criar uma página, selecione um modelo](#templates-pages). Esse modelo é usado como base para a nova página. O modelo define a estrutura da página, qualquer conteúdo inicial e os [componentes](/help/sites-authoring/default-components.md) que podem ser usados (propriedades de design).
 
 * [Ao criar um fragmento de conteúdo, você também seleciona um modelo](#templates-content-fragments). Esse template define a estrutura, os elementos iniciais e as variações.
 
@@ -61,7 +61,7 @@ As vantagens dos Modelos editáveis:
 
 >[!NOTE]
 >
->Consulte [Utilização de modelos de página editáveis para desenvolver um site de Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=pt-BR).
+>Consulte [Usar modelos de página editáveis para desenvolver um site de Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=pt-BR).
 
 ### Modelos estáticos {#static-templates}
 
@@ -71,7 +71,7 @@ Modelos estáticos:
 * O sistema de modelo original do AEM que está disponível para muitas versões.
 * Um modelo estático é uma hierarquia de nós que tem a mesma estrutura que a página a ser criada, mas sem nenhum conteúdo real.
 * São copiados para criar a página; não existe conexão dinâmica depois.
-* Usos [Modo Design](/help/sites-authoring/default-components-designmode.md) para manter as propriedades de design.
+* Usa o [Modo de Design](/help/sites-authoring/default-components-designmode.md) para manter as propriedades de design.
 * São armazenados em `/apps`
 * Consulte [Modelos estáticos](/help/sites-developing/page-templates-static.md) para obter mais informações.
 
@@ -79,7 +79,7 @@ Modelos estáticos:
 >
 >A partir do AEM 6.5, o uso de Modelos estáticos não é considerado uma prática recomendada. Em vez disso, use Modelos editáveis.
 >
->[Modernização do AEM](modernization-tools.md) As ferramentas do podem ajudar a migrar de modelos estáticos para editáveis.
+>As ferramentas de [Modernização do AEM](modernization-tools.md) podem ajudar você a migrar de modelos estáticos para editáveis.
 
 ### Disponibilidade de modelo {#template-availability}
 
@@ -89,39 +89,39 @@ Modelos estáticos:
 >
 >Portanto, o Adobe recomenda que você comece de forma simples, definindo:
 >
->* somente o `cq:allowedTemplates` propriedade
+>* somente a propriedade `cq:allowedTemplates`
 >
 >* somente na raiz do site
 >
 >Para obter um exemplo, consulte We.Retail: `/content/we-retail/jcr:content`
 >
->As propriedades `allowedPaths`, `allowedParents`, e `allowedChildren` O também pode ser colocado nos modelos para definir regras mais sofisticadas. No entanto, sempre que possível, *muito* mais simples de definir `cq:allowedTemplates` propriedades nas subseções do site se houver necessidade de restringir ainda mais os modelos permitidos.
+>As propriedades `allowedPaths`, `allowedParents` e `allowedChildren` também podem ser colocadas nos modelos para definir regras mais sofisticadas. No entanto, quando possível, é *muito* mais simples definir outras propriedades `cq:allowedTemplates` em subseções do site se houver necessidade de restringir ainda mais os modelos permitidos.
 >
->Uma vantagem extra é que o `cq:allowedTemplates` as propriedades podem ser atualizadas por um autor na **Avançado** guia do **Propriedades da página**. As outras propriedades do template não podem ser atualizadas usando a interface do usuário (padrão), portanto, seria necessário um desenvolvedor para manter as regras e uma implantação de código para cada alteração.
+>Uma vantagem extra é que as propriedades `cq:allowedTemplates` podem ser atualizadas por um autor na guia **Avançado** das **Propriedades da página**. As outras propriedades do template não podem ser atualizadas usando a interface do usuário (padrão), portanto, seria necessário um desenvolvedor para manter as regras e uma implantação de código para cada alteração.
 
 Ao criar uma página na interface do administrador do site, a lista de modelos disponíveis depende do local da nova página e das restrições de posicionamento especificadas em cada modelo.
 
 As propriedades a seguir determinam se um modelo `T` é usado para que uma nova página seja colocada como secundária da página `P`. Cada uma dessas propriedades é uma string de vários valores que contém zero ou mais expressões regulares usadas para correspondência com caminhos:
 
-* A variável `cq:allowedTemplates` propriedade do `jcr:content` subnó de `P` ou um ancestral de `P`.
+* A propriedade `cq:allowedTemplates` do subnó `jcr:content` de `P` ou um ancestral de `P`.
 
-* A variável `allowedPaths` propriedade de `T`.
+* A propriedade `allowedPaths` de `T`.
 
-* A variável `allowedParents` propriedade de `T`.
+* A propriedade `allowedParents` de `T`.
 
-* A variável `allowedChildren` propriedade do modelo de `P`.
+* A propriedade `allowedChildren` do modelo de `P`.
 
 A avaliação funciona da seguinte forma:
 
-* O primeiro não vazio `cq:allowedTemplates` propriedade encontrada ao aumentar a hierarquia de páginas que começa com `P` corresponde ao caminho de `T`. Se nenhum dos valores for correspondente, `T` foi rejeitada.
+* A primeira propriedade `cq:allowedTemplates` não vazia encontrada ao aumentar a hierarquia de páginas que começa com `P` é comparada com o caminho de `T`. Se nenhum dos valores for correspondente, `T` será rejeitado.
 
-* Se `T` tem um não vazio `allowedPaths` propriedade, mas nenhum dos valores corresponde ao caminho de `P`, `T` foi rejeitada.
+* Se `T` tiver uma propriedade `allowedPaths` não vazia, mas nenhum dos valores corresponder ao caminho de `P`, `T` será rejeitado.
 
-* Se ambas as propriedades acima estiverem vazias ou não existirem, `T` é rejeitada, a menos que pertença ao mesmo aplicativo que `P`. `T` pertence ao mesmo aplicativo que `P` se e somente se o nome do segundo nível do caminho de `T` é o mesmo que o nome do segundo nível do caminho de `P`. Por exemplo, o template `/apps/geometrixx/templates/foo` pertence ao mesmo aplicativo que a página `/content/geometrixx`.
+* Se ambas as propriedades acima estiverem vazias ou não existirem, `T` será rejeitado, a menos que pertença ao mesmo aplicativo que `P`. `T` pertence ao mesmo aplicativo que `P` se, e somente se, o nome do segundo nível do caminho de `T` é o mesmo que o nome do segundo nível do caminho de `P`. Por exemplo, o modelo `/apps/geometrixx/templates/foo` pertence ao mesmo aplicativo que a página `/content/geometrixx`.
 
-* Se `T` tem um não vazio `allowedParents` propriedade, mas nenhum dos valores corresponde ao caminho de `P`, `T` foi rejeitada.
+* Se `T` tiver uma propriedade `allowedParents` não vazia, mas nenhum dos valores corresponder ao caminho de `P`, `T` será rejeitado.
 
-* Se o modelo de `P` tem um não vazio `allowedChildren` propriedade, mas nenhum dos valores corresponde ao caminho de `T`, `T` foi rejeitada.
+* Se o modelo de `P` tiver uma propriedade `allowedChildren` não vazia, mas nenhum dos valores corresponder ao caminho de `T`, `T` será rejeitado.
 
 * Em todos os outros casos, `T` é permitido.
 
@@ -131,12 +131,12 @@ O diagrama a seguir descreve o processo de avaliação do modelo:
 
 #### Limite de modelos usados em páginas secundárias {#limiting-templates-used-in-child-pages}
 
-Para limitar quais modelos podem ser usados para criar páginas secundárias em uma determinada página, use o `cq:allowedTemplates` propriedade de `jcr:content` nó da página para especificar a lista de modelos que podem ser páginas secundárias. Cada valor na lista deve ser um caminho absoluto para um modelo de uma página secundária permitida, por exemplo, `/apps/geometrixx/templates/contentpage`.
+Para limitar quais modelos podem ser usados para criar páginas secundárias em uma determinada página, use a propriedade `cq:allowedTemplates` do nó `jcr:content` da página para especificar a lista de modelos a serem permitidos como páginas secundárias. Cada valor na lista deve ser um caminho absoluto para um modelo de uma página secundária permitida, por exemplo, `/apps/geometrixx/templates/contentpage`.
 
-Você pode usar o `cq:allowedTemplates` propriedade no modelo  `jcr:content` para que esta configuração seja aplicada a todas as páginas recém-criadas que usam este modelo.
+Você pode usar a propriedade `cq:allowedTemplates` no nó `jcr:content` do modelo para aplicar essa configuração a todas as páginas recém-criadas que usam esse modelo.
 
-Se quiser adicionar mais restrições, por exemplo, em relação à hierarquia do template, você poderá usar o `allowedParents/allowedChildren` propriedades no modelo. Em seguida, é possível especificar explicitamente que as páginas criadas a partir de um modelo T devem ser páginas principais/secundárias das páginas criadas a partir de um modelo T.
+Se quiser adicionar mais restrições, por exemplo, em relação à hierarquia do modelo, você pode usar as propriedades `allowedParents/allowedChildren` no modelo. Em seguida, é possível especificar explicitamente que as páginas criadas a partir de um modelo T devem ser páginas principais/secundárias das páginas criadas a partir de um modelo T.
 
 ## Modelos - Fragmentos de conteúdo {#templates-content-fragments}
 
-Consulte [Modelos de fragmentos do conteúdo](/help/sites-developing/content-fragment-templates.md).
+Consulte [Modelos de fragmentos de conteúdo](/help/sites-developing/content-fragment-templates.md).

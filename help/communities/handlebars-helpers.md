@@ -16,7 +16,7 @@ ht-degree: 2%
 
 # Auxiliares de Handlebars SCF {#scf-handlebars-helpers}
 
-| **[Feature Essentials](essentials.md)** | **[Personalização do lado do servidor ^](server-customize.md)** |
+| **[⇐ Feature Essentials](essentials.md)** | **[Personalização no lado do servidor ^](server-customize.md)** |
 |---|---|
 |   | **[Personalização no lado do cliente ^](client-customize.md)** |
 
@@ -24,7 +24,7 @@ Os Handlebars Helpers (helpers) são métodos chamados de scripts Handlebars par
 
 A implementação inclui uma definição do lado do cliente e do lado do servidor. Também é possível para os desenvolvedores criar auxiliares personalizados.
 
-Os auxiliares SCF personalizados fornecidos com o AEM Communities são definidos na [biblioteca do cliente](../../help/sites-developing/clientlibs.md):
+Os auxiliares de SCF personalizados fornecidos com o AEM Communities são definidos na [biblioteca do cliente](../../help/sites-developing/clientlibs.md):
 
 * `/etc/clientlibs/social/commons/scf/helpers.js`
 
@@ -44,7 +44,7 @@ Se safeString estiver definido como true, a cadeia de caracteres retornada será
 
 ### Parâmetros {#parameters}
 
-* **contexto**: String
+* **contexto**: cadeia de caracteres
 
   (Opcional) O padrão é a string vazia
 
@@ -56,7 +56,7 @@ Se safeString estiver definido como true, a cadeia de caracteres retornada será
 
   (Opcional) Padrão é o número de palavras na string aparada.
 
-* **safeString**: Booleano
+* **safeString**: booleano
 
   (Opcional) Retorna Handlebars.SafeString() se verdadeiro. O padrão é falso.
 
@@ -92,23 +92,23 @@ Um auxiliar para adicionar duas extensões em uma div, uma para o texto completo
 
 ### Parâmetros {#parameters-1}
 
-* **contexto**: String
+* **contexto**: cadeia de caracteres
 
   (Opcional) O padrão é a cadeia de caracteres vazia.
 
-* **numChars**: Número
+* **numChars**: número
 
   (Opcional) O número de caracteres a serem exibidos quando não estiver exibindo o texto completo. O padrão é 100.
 
-* **moreText**: String
+* **moreText**: cadeia de caracteres
 
   (Opcional) O texto a ser exibido, indicando que há mais texto a ser exibido. O padrão é &quot;mais&quot;.
 
-* **elipsesText**: String
+* **elipsesText**: cadeia de caracteres
 
   (Opcional) O texto a ser exibido indicando que há texto oculto. O padrão é &quot;...&quot;.
 
-* **safeString**: Booleano
+* **safeString**: booleano
 
   (Opcional) Valor booleano que indica se Handlebars.SafeString() deve ser aplicado antes de retornar o resultado. O padrão é falso.
 
@@ -132,11 +132,11 @@ Um auxiliar para retornar uma string de data formatada.
 
 ### Parâmetros {#parameters-2}
 
-* **contexto**: Número
+* **contexto**: número
 
   (Opcional) uma diferença de valor em milissegundos de 1º de janeiro de 1970 (época). O padrão é a data atual.
 
-* **formato**: String
+* **formato**: cadeia de caracteres
 
   (Opcional) O formato de data a ser aplicado. O padrão é &quot;`YYYY-MM-DDTHH:mm:ss.sssZ`&quot; e o resultado aparece como &quot;`2015-03-18T18:17:13-07:00`&quot;
 
@@ -160,11 +160,11 @@ Um auxiliar para retornar o conteúdo dependendo de uma condição de igualdade.
 
 ### Parâmetros {#parameters-3}
 
-* **lvalue**: String
+* **lvalue**: cadeia de caracteres
 
   O valor à esquerda a ser comparado.
 
-* **rvalue**: String
+* **rvalue**: cadeia de caracteres
 
   O valor à direita a ser comparado.
 
@@ -180,17 +180,17 @@ Um auxiliar para retornar o conteúdo dependendo de uma condição de igualdade.
 
 ## If-wcm-mode {#if-wcm-mode}
 
-Um auxiliar de bloco que testa o valor atual de [Modo WCM](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html) contra uma lista de modos separada por sequência.
+Um auxiliar de bloco que testa o valor atual do [modo WCM](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html) em relação a uma lista separada por cadeia de caracteres de modos.
 
 ### Parâmetros {#parameters-4}
 
-* **contexto**: String
+* **contexto**: cadeia de caracteres
 
   (Opcional) A sequência de caracteres a ser traduzida. Obrigatório se nenhum padrão for fornecido.
 
-* **modo**: String
+* **modo**: cadeia de caracteres
 
-  (Opcional) Uma lista separada por vírgulas de [Modos WCM](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html) para testar se definido.
+  (Opcional) Uma lista separada por vírgulas de [modos WCM](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html) para testar se estão configurados.
 
 ### Exemplo {#example-2}
 
@@ -206,19 +206,19 @@ Um auxiliar de bloco que testa o valor atual de [Modo WCM](https://developer.ado
 
 Este auxiliar substitui o auxiliar Handlebars &#39;i18n&#39;.
 
-Consulte também [Internacionalizando strings no código JavaScript](../../help/sites-developing/i18n-dev.md#internationalizing-strings-in-javascript-code).
+Consulte também [Internacionalizar cadeias de caracteres no Código JavaScript](../../help/sites-developing/i18n-dev.md#internationalizing-strings-in-javascript-code).
 
 ### Parâmetros {#parameters-5}
 
-* **contexto**: String
+* **contexto**: cadeia de caracteres
 
   (Opcional) A sequência de caracteres a ser traduzida. Obrigatório se nenhum padrão for fornecido.
 
-* **padrão**: String
+* **padrão**: cadeia de caracteres
 
   (Opcional) A cadeia de caracteres padrão a ser traduzida. Obrigatório se nenhum contexto for fornecido.
 
-* **comentário**: String
+* **comentário**: cadeia de caracteres
 
   (Opcional) Uma dica de tradução
 
@@ -241,27 +241,27 @@ Este auxiliar, apropriado somente no lado do servidor, fornece funcionalidade se
 
 ### Parâmetros {#parameters-6}
 
-* **contexto**: sequência ou objeto
+* **contexto**: cadeia de caracteres ou objeto
 
   (Opcional, exceto se fornecer um caminho relativo)
 
-  Uso `this` para transmitir o contexto atual.
+  Use `this` para passar o contexto atual.
 
-  Uso `this.id` para obter o recurso em `id` para renderizar o resourceType solicitado.
+  Use `this.id` para obter o recurso em `id` para renderizar o resourceType solicitado.
 
-* **resourceType**: String
+* **resourceType**: cadeia de caracteres
 
   (Opcional) O tipo de recurso assume como padrão o tipo de recurso do contexto.
 
-* **modelo**: String
+* **modelo**: cadeia de caracteres
 
   Caminho para o script do componente.
 
-* **caminho**: String
+* **caminho**: cadeia de caracteres
 
   (Obrigatório) O caminho para o recurso. Se o caminho for relativo, um contexto deverá ser fornecido, caso contrário, a cadeia de caracteres vazia será retornada.
 
-* **authoringDisabled**: Booleano
+* **authoringDisabled**: booleano
 
   (Opcional) O padrão é falso. Somente para uso interno.
 
@@ -271,7 +271,7 @@ Este auxiliar, apropriado somente no lado do servidor, fornece funcionalidade se
 {{include this.id path="comments" resourceType="social/commons/components/hbs/comments"}}
 ```
 
-Inclui um novo componente de comentários em `this.id` + /comentários.
+Inclui um novo componente de comentários em `this.id` + /comments.
 
 ## IncludeClientLib {#includeclientlib}
 
@@ -281,19 +281,19 @@ Este auxiliar, apropriado somente no lado do servidor, fornece funcionalidade se
 
 ### Parâmetros {#parameters-7}
 
-* **categorias**: String
+* **categorias**: cadeia de caracteres
 
   (Opcional) Uma lista de categorias de bibliotecas de clientes separadas por vírgulas. Inclua todas as bibliotecas JavaScript e CSS para as categorias fornecidas. O nome do tema é extraído da solicitação.
 
-* **tema**: String
+* **tema**: cadeia de caracteres
 
   (Opcional) Uma lista de categorias de bibliotecas de clientes separadas por vírgulas. Inclua todas as bibliotecas relacionadas ao tema (CSS e JS) para as categorias fornecidas. O nome do tema é extraído da solicitação.
 
-* **js**: String
+* **js**: cadeia de caracteres
 
   (Opcional) Uma lista de categorias de bibliotecas de clientes separadas por vírgulas. Inclui todas as bibliotecas JavaScript para as categorias fornecidas.
 
-* **css**: String
+* **css**: cadeia de caracteres
 
   (Opcional) Uma lista de categorias de bibliotecas de clientes separadas por vírgulas. Inclui todas as bibliotecas CSS para as categorias fornecidas.
 
@@ -348,11 +348,11 @@ Por exemplo:
 
 ### Parâmetros {#parameters-8}
 
-* **contexto**: Número
+* **contexto**: número
 
   Um horário no passado para comparar com &#39;agora&#39;. O tempo é expresso como um deslocamento de valor em milissegundos a partir de 1° de janeiro de 1970 (época).
 
-* **daysCutoff**: Número
+* **LimiteDias**: Número
 
   O número de dias atrás antes de alternar para uma data real. O padrão é 60.
 
@@ -398,7 +398,7 @@ OBSERVAÇÃO: este auxiliar não é um validador e não deve ser usado para grav
 
 ### Parâmetros {#parameters-10}
 
-* **contexto**: Objeto
+* **contexto**: objeto
 
   O HTML a ser codificado.
 
@@ -410,13 +410,13 @@ OBSERVAÇÃO: este auxiliar não é um validador e não deve ser usado para grav
 
 ## Xss-jsString {#xss-jsstring}
 
-Um auxiliar que codifica uma cadeia de caracteres de origem para gravar no conteúdo de cadeia de caracteres JavaScript para ajudar a proteger contra XSS.
+Um auxiliar que codifica uma cadeia de caracteres de origem para gravação no conteúdo de cadeia de caracteres do JavaScript para ajudar a proteger contra XSS.
 
-OBSERVAÇÃO: Este auxiliar não é um validador e não deve ser usado para gravação em JavaScript arbitrário.
+OBSERVAÇÃO: este auxiliar não é um validador e não deve ser usado para gravação em JavaScript arbitrária.
 
 ### Parâmetros {#parameters-11}
 
-* **contexto**: Objeto
+* **contexto**: objeto
 
   O HTML a ser codificado.
 
@@ -434,7 +434,7 @@ OBSERVAÇÃO: este auxiliar pode retornar uma cadeia de caracteres vazia.
 
 ### Parâmetros {#parameters-12}
 
-* **contexto**: Objeto
+* **contexto**: objeto
 
   O URL para limpar.
 
@@ -446,13 +446,13 @@ OBSERVAÇÃO: este auxiliar pode retornar uma cadeia de caracteres vazia.
 
 ## Visão geral básica do Handlebars.js {#handlebars-js-basic-overview}
 
-* Uma chamada de auxiliar do Handlebars é um identificador simples (o *name* do auxiliar), seguido por zero ou mais parâmetros separados por espaço.
+* Uma chamada de auxiliar Handlebars é um identificador simples (o *nome* do auxiliar), seguido por zero ou mais parâmetros separados por espaços.
 * Os parâmetros podem ser um objeto String, número, booleano ou JSON simples e uma sequência opcional de pares de valores-chave (argumentos de hash) como os últimos parâmetros.
 * As chaves nos argumentos de hash devem ser identificadores simples.
 * Os valores em argumentos de hash são expressões Handlebars: identificadores simples, caminhos ou Strings.
 * O contexto atual, `this`, está sempre disponível para os auxiliares do Handlebars.
 * O contexto pode ser um objeto de dados String, number, boolean ou JSON.
-* É possível passar um objeto aninhado no contexto atual como o contexto, como `this.url` ou `this.id` (consulte os exemplos a seguir de auxiliares simples e de bloco).
+* É possível passar um objeto aninhado dentro do contexto atual como o contexto, como `this.url` ou `this.id` (veja os exemplos a seguir de auxiliares simples e de bloco).
 
 * Bloquear auxiliares são funções que podem ser chamadas de qualquer lugar no modelo. Eles podem chamar um bloco do modelo zero ou mais vezes com um contexto diferente a cada vez. Eles contêm um contexto entre `{{#*name*}}` e `{{/*name*}}`.
 
@@ -488,7 +488,7 @@ template(context);
 Renderizaria:
 
 &lt;ul>
-&lt;li>&lt;a href=&quot;/posts/hello-world&quot;>Publicar!&lt;/a>&lt;/li>
+&lt;li>&lt;a href=&quot;/posts/hello-world&quot;>Post!&lt;/a>&lt;/li>
 &lt;/ul>
 
 ### Um exemplo de um assistente de bloco da documentação do Handlebars.js: {#an-example-of-a-block-helper-from-handlebars-js-documentation}
@@ -523,7 +523,7 @@ Os auxiliares personalizados devem ser implementados no lado do servidor e no la
 
 ### Auxiliares personalizados do lado do servidor {#server-side-custom-helpers}
 
-Para implementar e registrar um auxiliar SCF personalizado no lado do servidor, basta implementar a interface Java™ [TemplateHelper](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/handlebars/api/TemplateHelper.html), torne-o um [Serviço OSGi](../../help/sites-developing/the-basics.md#osgi) e instale-o como parte de um pacote OSGi.
+Para implementar e registrar um auxiliar SCF personalizado no lado do servidor, basta implementar a interface Java™ [TemplateHelper](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/handlebars/api/TemplateHelper.html), torná-la um [Serviço OSGi](../../help/sites-developing/the-basics.md#osgi) e instalá-la como parte de um pacote OSGi.
 
 Por exemplo:
 
@@ -598,6 +598,6 @@ A clientlib deve:
 
 Observação: os auxiliares do SCF estão definidos em `/etc/clientlibs/social/commons/scf/helpers.js`.
 
-| **[Feature Essentials](essentials.md)** | **[Personalização do lado do servidor ^](server-customize.md)** |
+| **[⇐ Feature Essentials](essentials.md)** | **[Personalização no lado do servidor ^](server-customize.md)** |
 |---|---|
 |   | **[Personalização no lado do cliente ^](client-customize.md)** |

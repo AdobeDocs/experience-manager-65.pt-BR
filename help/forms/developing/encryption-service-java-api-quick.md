@@ -38,7 +38,7 @@ As operações do AEM Forms podem ser executadas usando a API altamente tipada d
 
 ## Início rápido (modo SOAP): criptografia de um documento PDF usando a API Java™ {#quick-start-soap-mode-encrypting-a-pdf-document-using-the-java-api}
 
-O seguinte exemplo de código Java™ criptografa um documento PDF chamado *Loan.pdf* com um valor de senha de `OpenPassword`. A senha principal é `PermissionPassword`. O documento de PDF protegido é salvo como um arquivo de PDF chamado *EncryptLoan.pdf*. (Consulte [Criptografar documentos PDF com senha](/help/forms/developing/encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-a-password).)
+O exemplo de código Java™ a seguir criptografa um documento PDF chamado *Loan.pdf* com um valor de senha de `OpenPassword`. A senha primária é `PermissionPassword`. O documento PDF protegido foi salvo como um arquivo PDF chamado *EncryptLoan.pdf*. (Consulte [Criptografar documentos do PDF com uma senha](/help/forms/developing/encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-a-password).)
 
 ```java
  /*
@@ -158,7 +158,7 @@ O seguinte exemplo de código Java™ criptografa um documento PDF chamado *Loan
 
 ## Início rápido (modo SOAP): remoção da criptografia baseada em senha usando a API Java™ {#quick-start-soap-mode-removing-password-based-encryption-using-the-java-api}
 
-O exemplo de código Java™ a seguir remove a criptografia baseada em senha de um documento PDF chamado *EncryptLoan.pdf*. O valor de senha primária usado para remover a criptografia baseada em senha é *PermissionPassword*. O documento PDF não seguro é salvo como um arquivo PDF chamado *noEncryptionLoan.pdf*. (Consulte [Remoção da criptografia de senha](/help/forms/developing/encrypting-decrypting-pdf-documents.md#removing-password-encryption).)
+O exemplo de código Java™ a seguir remove a criptografia baseada em senha de um documento PDF chamado *EncryptLoan.pdf*. O valor de senha principal usado para remover a criptografia baseada em senha é *PermissionPassword*. O documento PDF não seguro foi salvo como um arquivo PDF chamado *noEncryptionLoan.pdf*. (Consulte [Removendo a Criptografia de Senha](/help/forms/developing/encrypting-decrypting-pdf-documents.md#removing-password-encryption).)
 
 ```java
  /*
@@ -255,7 +255,7 @@ O exemplo de código Java™ a seguir remove a criptografia baseada em senha de 
 
 ## Início rápido (modo SOAP): criptografar um documento PDF com um certificado usando a API Java™ {#quick-start-soap-mode-encrypting-a-pdf-document-with-a-certificate-using-the-java-api}
 
-O seguinte exemplo de código Java™ criptografa um documento PDF chamado *Loan.pdf* com um certificado chamado *Encryption.cer*. O documento PDF criptografado é salvo como um arquivo PDF chamado *EncryptLoanCert.pdf*. (Consulte [Criptografar documentos PDF com certificados](/help/forms/developing/encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-certificates).)
+O exemplo de código Java™ a seguir criptografa um documento PDF chamado *Loan.pdf* com um certificado chamado *Encryption.cer*. O documento PDF criptografado foi salvo como um arquivo PDF chamado *EncryptLoanCert.pdf*. (Consulte [Criptografar documentos PDF com certificados](/help/forms/developing/encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-certificates).)
 
 ```java
  /*
@@ -384,7 +384,7 @@ O seguinte exemplo de código Java™ criptografa um documento PDF chamado *Loan
 
 ## Início rápido (modo SOAP): remoção da criptografia baseada em certificado usando a API Java™ {#quick-start-soap-mode-removing-certificate-based-encryption-using-the-java-api}
 
-O exemplo de código Java™ a seguir remove a criptografia baseada em certificado de um documento PDF chamado *EncryptLoanCert.pdf*. O alias da chave pública usado para remover a criptografia é `Encryption`. O documento PDF não seguro é salvo como um arquivo PDF chamado *noEncryptionLoan.pdf*. (Consulte [Removendo a Criptografia Baseada em Certificado](/help/forms/developing/encrypting-decrypting-pdf-documents.md#removing-certificate-based-encryption).)
+O exemplo de código Java™ a seguir remove a criptografia baseada em certificado de um documento PDF chamado *EncryptLoanCert.pdf*. O alias da chave pública usado para remover a criptografia é `Encryption`. O documento PDF não seguro foi salvo como um arquivo PDF chamado *noEncryptionLoan.pdf*. (Consulte [Removendo a Criptografia Baseada em Certificado](/help/forms/developing/encrypting-decrypting-pdf-documents.md#removing-certificate-based-encryption).)
 
 ```java
  /*
@@ -481,7 +481,7 @@ O exemplo de código Java™ a seguir remove a criptografia baseada em certifica
 
 ## Início rápido (modo SOAP): desbloqueio de um documento PDF criptografado usando a API Java™ {#quick-start-soap-mode-unlocking-an-encrypted-pdf-document-using-the-java-api}
 
-O seguinte exemplo de código Java™ desbloqueia um documento PDF criptografado por senha chamado *EncryptLoan.pdf*. (Consulte [Desbloquear documentos PDF criptografados](/help/forms/developing/encrypting-decrypting-pdf-documents.md#unlocking-encrypted-pdf-documents).)
+O exemplo de código Java™ a seguir desbloqueia um documento PDF criptografado por senha chamado *EncryptLoan.pdf*. (Consulte [Desbloqueando Documentos PDF Criptografados](/help/forms/developing/encrypting-decrypting-pdf-documents.md#unlocking-encrypted-pdf-documents).)
 
 ```java
  /*
@@ -577,7 +577,7 @@ O seguinte exemplo de código Java™ desbloqueia um documento PDF criptografado
 
 ## Início rápido (modo SOAP): determinação do tipo de criptografia usando a API Java™ {#quick-start-soap-mode-determining-encryption-type-using-the-java-api}
 
-O seguinte exemplo de código Java™ determina o tipo de criptografia que está protegendo um documento PDF chamado *EncryptLoan.pdf*. (Consulte [Determinação do tipo de criptografia](/help/forms/developing/encrypting-decrypting-pdf-documents.md#determining-encryption-type).)
+O exemplo de código Java™ a seguir determina o tipo de criptografia que está protegendo um documento PDF chamado *EncryptLoan.pdf*. (Consulte [Determinando o Tipo de Criptografia](/help/forms/developing/encrypting-decrypting-pdf-documents.md#determining-encryption-type).)
 
 ```java
  /*

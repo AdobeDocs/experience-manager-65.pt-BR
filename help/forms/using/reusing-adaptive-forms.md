@@ -17,7 +17,7 @@ ht-degree: 2%
 
 # Reutilizar formulários adaptáveis {#reusing-adaptive-forms}
 
-<span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) para [criação de um novo Forms adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
+O <span class="preview"> Adobe recomenda o uso de [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adicionar o Forms Adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
@@ -36,7 +36,7 @@ Se quiser usar algumas das propriedades de um formulário adaptável existente p
 
 Copie um formulário adaptável usando uma das seguintes abordagens:
 
-1. Clique em copiar ![aem6forms_copy](assets/aem6forms_copy.png) ícone de Ações rápidas.
+1. Clique no ícone copiar ![aem6forms_copy](assets/aem6forms_copy.png) de Ações rápidas.
 
    >[!NOTE]
    >
@@ -44,7 +44,7 @@ Copie um formulário adaptável usando uma das seguintes abordagens:
 
 1. Selecione o formulário adaptável. O processo de seleção é diferente para diferentes exibições.
 
-   Se você estiver na exibição de cartão, acesse o modo de seleção clicando na seleção ![aem6forms_check-circle](assets/aem6forms_check-circle.png) e clique em todos os formulários adaptáveis que deseja copiar.
+   Se você estiver na exibição de cartão, vá para o modo de seleção clicando no ícone de seleção ![aem6forms_check-circle](assets/aem6forms_check-circle.png) e clique em todos os formulários adaptáveis que deseja copiar.
 
    Se você estiver na exibição em lista, clique nas caixas de seleção de todos os formulários adaptáveis para selecioná-los.
 
@@ -52,15 +52,15 @@ Copie um formulário adaptável usando uma das seguintes abordagens:
    >
    >Todos os ativos selecionados devem ser formulários adaptáveis, pois a funcionalidade de copiar e colar é compatível somente com formulários adaptáveis, e todos os ativos selecionados devem estar presentes na mesma pasta.
 
-   Depois de selecionar os ativos, clique na cópia ![aem6forms_copy](assets/aem6forms_copy.png) ícone presente na barra de ferramentas para copiar o formulário adaptável selecionado.
+   Depois de selecionar os ativos, clique no ícone copiar ![aem6forms_copy](assets/aem6forms_copy.png) presente na barra de ferramentas para copiar o formulário adaptável selecionado.
 
 ### Colar um formulário adaptável {#paste-an-adaptive-form}
 
-Clicar na ação de cópia sai automaticamente do modo de seleção e faz a colagem ![aem6forms_cole](assets/aem6forms_paste.png) ícone visível. Agora vá para o caminho de pasta desejado e clique no botão ![aem6forms_cole](assets/aem6forms_paste.png) ícone para colar o formulário adaptável copiado.
+Clicar na ação de copiar sai automaticamente do modo de seleção e torna visível o ícone colar ![aem6forms_cole](assets/aem6forms_paste.png). Agora vá para o caminho de pasta desejado e clique no ícone colar ![aem6forms_cole](assets/aem6forms_paste.png) para colar o formulário adaptável copiado.
 
-Se você estiver colando na mesma pasta ou se outro arquivo com o mesmo nome de nó (com o qual ele é armazenado no repositório CRX) existir nessa pasta de destino, 1 será anexado ao sufixo (por exemplo, myaf torna-se myaf1 e se myaf1 existe no mesmo local, myaf torna-se myaf2. Todas as outras propriedades permanecem iguais ao formulário adaptável original.
+Se você estiver colando na mesma pasta ou se outro arquivo com o mesmo nome de nó (com o qual ele é armazenado no repositório do CRX) existir nessa pasta de destino, 1 será anexado ao sufixo (por exemplo, myaf torna-se myaf1 e se myaf1 existe no mesmo local, myaf torna-se myaf2. Todas as outras propriedades permanecem iguais ao formulário adaptável original.
 
-Depois de clicar no botão Colar ![aem6forms_cole](assets/aem6forms_paste.png) ícone, ele ficará oculto novamente. De uma só vez, só é possível colar uma vez. Para criar uma cópia do mesmo ativo novamente, copie-a novamente.
+Depois de clicar no ícone colar ![aem6forms_cole](assets/aem6forms_paste.png), ele ficará oculto novamente. De uma só vez, só é possível colar uma vez. Para criar uma cópia do mesmo ativo novamente, copie-a novamente.
 
 ### Alterar conteúdo do novo formulário adaptável {#change-contents-of-new-adaptive-form}
 
@@ -68,7 +68,7 @@ O conteúdo de um formulário adaptável colado pode ser alterado usando as segu
 
 1. **Alterar propriedades de metadados:**
 
-   É possível alterar as propriedades dos metadados do formulário adaptável, por exemplo, título e descrição. Para obter mais detalhes sobre as propriedades de metadados e como elas podem ser alteradas, consulte [Gerenciamento de metadados de formulário](/help/forms/using/manage-form-metadata.md)
+   É possível alterar as propriedades dos metadados do formulário adaptável, por exemplo, título e descrição. Para obter mais detalhes sobre as propriedades dos metadados e como eles podem ser alterados, consulte [Gerenciando Metadados de Formulário](/help/forms/using/manage-form-metadata.md)
 
 1. **Alterar XFA/XSD para Forms adaptável baseado em XFA/XSD:**
 

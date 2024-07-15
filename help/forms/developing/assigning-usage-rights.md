@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Atribuição de direitos de uso {#assigning-usage-rights}
 
-**Os exemplos e amostras neste documento são somente para AEM Forms no ambiente JEE.**
+**Exemplos e exemplos neste documento são somente para AEM Forms no ambiente JEE.**
 
 ## Sobre o serviço de extensões da Acrobat Reader DC {#about-the-acrobat-reader-dc-extensions-service}
 
@@ -26,13 +26,13 @@ O serviço de extensões da Acrobat Reader DC permite que sua organização comp
 
 Você pode realizar essas tarefas usando o serviço de extensões da Acrobat Reader DC:
 
-* Aplicar direitos de uso a documentos do PDF. Para obter informações, consulte [Aplicação de direitos de uso a documentos PDF](assigning-usage-rights.md#applying-usage-rights-to-pdf-documents).
-* Remova os direitos de uso dos documentos do PDF. Para obter informações, consulte [Remoção de direitos de uso de documentos do PDF](assigning-usage-rights.md#removing-usage-rights-from-pdf-documents).
+* Aplicar direitos de uso a documentos do PDF. Para obter informações, consulte [Aplicando direitos de uso a documentos PDF](assigning-usage-rights.md#applying-usage-rights-to-pdf-documents).
+* Remova os direitos de uso dos documentos do PDF. Para obter informações, consulte [Removendo Direitos de Uso de Documentos PDF](assigning-usage-rights.md#removing-usage-rights-from-pdf-documents).
 * Recuperar detalhes da credencial. Para obter informações, consulte [Recuperando Informações de Credencial](assigning-usage-rights.md#retrieving-credential-information).
 
 >[!NOTE]
 >
->Para obter mais informações sobre o serviço de extensões da Acrobat Reader DC, consulte [Referência de serviços para o AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Para obter mais informações sobre o serviço de extensões da Acrobat Reader DC, consulte [Referência de serviços para a AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Aplicação de direitos de uso a documentos PDF {#applying-usage-rights-to-pdf-documents}
 
@@ -40,11 +40,11 @@ Você pode aplicar direitos de uso a documentos do PDF usando a API de cliente J
 
 >[!NOTE]
 >
->Ao aplicar direitos de uso a documentos PDF usando o `applyUsageRights` que faz parte da API Java, é possível definir o método `isModeFinal` parâmetro do `ReaderExtensionsOptionSpec` objeto para `false`. Isso resulta na não atualização do contador de formulários processados e em uma melhoria no desempenho. Se você não estiver preocupado com a atualização do contador de formulários processados, é recomendável definir o `isModeFinal` parâmetro para `false`.
+>Ao aplicar direitos de uso a documentos PDF usando o método `applyUsageRights`, que faz parte da API Java, você pode definir o parâmetro `isModeFinal` do objeto `ReaderExtensionsOptionSpec` como `false`. Isso resulta na não atualização do contador de formulários processados e em uma melhoria no desempenho. Se você não estiver preocupado com a atualização do contador de formulários processados, é recomendável definir o parâmetro `isModeFinal` como `false`.
 
 >[!NOTE]
 >
->Para obter mais informações sobre o serviço de extensões da Acrobat Reader DC, consulte [Referência de serviços para o AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Para obter mais informações sobre o serviço de extensões da Acrobat Reader DC, consulte [Referência de serviços para a AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Resumo das etapas {#summary-of-steps}
 
@@ -63,7 +63,7 @@ Inclua os arquivos necessários no projeto de desenvolvimento. Se você estiver 
 
 **Criar um objeto Cliente de extensões do Acrobat Reader DC**
 
-Para executar programaticamente uma operação do serviço de extensões da Acrobat Reader DC, você deve criar um objeto cliente do serviço de extensões da Acrobat Reader DC. Se estiver usando as extensões do Acrobat Reader DC para a API Java, crie uma `ReaderExtensionsServiceClient` objeto. Se estiver usando a API de serviço Web de extensões do Acrobat Reader DC, crie uma `ReaderExtensionsServiceService` objeto.
+Para executar programaticamente uma operação do serviço de extensões da Acrobat Reader DC, você deve criar um objeto cliente do serviço de extensões da Acrobat Reader DC. Se você estiver usando a API Java das extensões do Acrobat Reader DC, crie um objeto `ReaderExtensionsServiceClient`. Se você estiver usando a API de serviço Web de extensões do Acrobat Reader DC, crie um objeto `ReaderExtensionsServiceService`.
 
 **Recuperar um documento PDF**
 
@@ -81,7 +81,7 @@ Os direitos de uso que você pode definir são determinados por uma credencial q
 
 Para aplicar direitos de uso a um documento PDF, você faz referência ao alias da credencial que está usando para aplicar direitos de uso (normalmente, uma credencial é instalada durante a instalação do AEM Forms). Além disso, você deve especificar o documento PDF ao qual os direitos de uso são aplicados. Para obter informações sobre como configurar uma credencial, consulte o guia de instalação e implantação do seu servidor de aplicativos.
 
-**Salve o documento PDF habilitado para direitos**
+**Salvar o PDF habilitado para direitos**
 
 Depois que o serviço de extensões da Acrobat Reader DC aplicar direitos de uso a um documento PDF, você poderá salvar o documento PDF habilitado para direitos como um arquivo PDF.
 
@@ -107,40 +107,40 @@ Aplique direitos de uso a um documento PDF usando a API de extensões do Acrobat
 
 1. Crie um objeto Cliente de extensões do Acrobat Reader DC.
 
-   * Criar um `ServiceClientFactory` objeto que contém propriedades de conexão.
-   * Criar um `ReaderExtensionsServiceClient` usando seu construtor e transmitindo o `ServiceClientFactory` objeto.
+   * Crie um objeto `ServiceClientFactory` que contenha propriedades de conexão.
+   * Crie um objeto `ReaderExtensionsServiceClient` usando seu construtor e transmitindo o objeto `ServiceClientFactory`.
 
 1. Recupere um documento PDF.
 
-   * Criar um `java.io.FileInputStream` objeto que representa o documento PDF usando seu construtor e transmitindo um valor de string que especifica o local do documento PDF.
-   * Criar um `com.adobe.idp.Document` usando seu construtor e transmitindo o `java.io.FileInputStream` objeto.
+   * Crie um objeto `java.io.FileInputStream` que represente o documento PDF usando seu construtor e transmitindo um valor de cadeia de caracteres que especifique o local do documento PDF.
+   * Crie um objeto `com.adobe.idp.Document` usando seu construtor e transmitindo o objeto `java.io.FileInputStream`.
 
 1. Especifique os direitos de uso a serem aplicados.
 
-   * Criar um `UsageRights` objeto que representa os direitos de uso usando seu construtor.
-   * Para cada direito de uso a ser aplicado, chame um método correspondente que pertença a `UsageRights` objeto. Por exemplo, para adicionar a variável `enableFormFillIn` direito de uso, chame o `UsageRights` do objeto `enableFormFillIn` e passar `true`. (Repita essa etapa para cada direito de uso a ser aplicado).
+   * Crie um objeto `UsageRights` que represente direitos de uso usando seu construtor.
+   * Para cada direito de uso a ser aplicado, chame um método correspondente que pertença ao objeto `UsageRights`. Por exemplo, para adicionar o direito de uso `enableFormFillIn`, chame o método `enableFormFillIn` do objeto `UsageRights` e passe `true`. (Repita essa etapa para cada direito de uso a ser aplicado).
 
 1. Aplique direitos de uso ao documento PDF.
 
-   * Criar um `ReaderExtensionsOptionSpec` usando seu construtor. Esse objeto contém opções de tempo de execução exigidas pelo serviço de extensões da Acrobat Reader DC. Ao chamar esse construtor, você deve especificar os seguintes valores:
+   * Crie um objeto `ReaderExtensionsOptionSpec` usando seu construtor. Esse objeto contém opções de tempo de execução exigidas pelo serviço de extensões da Acrobat Reader DC. Ao chamar esse construtor, você deve especificar os seguintes valores:
 
-      * A variável `UsageRights` objeto que contém os direitos de uso a serem aplicados ao documento.
+      * O objeto `UsageRights` que contém os direitos de uso a serem aplicados ao documento.
       * Um valor de string que especifica uma mensagem que um usuário vê quando o documento PDF com direitos ativados é aberto no Adobe Reader 7.x. Esta mensagem não é exibida no Adobe Reader 8.0.
 
-   * Aplique direitos de uso ao documento PDF invocando o `ReaderExtensionsServiceClient` do objeto `applyUsageRights` e transmitindo os seguintes valores:
+   * Aplique direitos de uso ao documento PDF invocando o método `applyUsageRights` do objeto `ReaderExtensionsServiceClient` e transmitindo os seguintes valores:
 
-      * A variável `com.adobe.idp.Document` objeto que contém o documento PDF ao qual os direitos de uso são aplicados.
+      * O objeto `com.adobe.idp.Document` que contém o documento PDF ao qual os direitos de uso são aplicados.
       * Um valor de string que especifica o alias da credencial que permite aplicar direitos de uso.
       * Um valor de string que especifica o valor de senha correspondente. (Atualmente, esse parâmetro é ignorado. Você pode passar `null`.)
 
-   * A variável `ReaderExtensionsOptionSpec` objeto que contém opções de tempo de execução.
+   * O objeto `ReaderExtensionsOptionSpec` que contém opções de tempo de execução.
 
-   A variável `applyUsageRights` o método retorna um `com.adobe.idp.Document` objeto que contém o documento PDF habilitado para direitos.
+   O método `applyUsageRights` retorna um objeto `com.adobe.idp.Document` que contém o documento PDF habilitado para direitos.
 
 1. Salve o documento PDF habilitado para direitos.
 
-   * Criar um `java.io.File` e verifique se a extensão do arquivo é .pdf.
-   * Chame o `com.adobe.idp.Document` do objeto `copyToFile` método para copiar o conteúdo do `com.adobe.idp.Document` ao arquivo (certifique-se de usar o `com.adobe.idp.Document` objeto que foi retornado pelo `applyUsageRights` método).
+   * Crie um objeto `java.io.File` e verifique se a extensão do arquivo é .pdf.
+   * Invoque o método `copyToFile` do objeto `com.adobe.idp.Document` para copiar o conteúdo do objeto `com.adobe.idp.Document` para o arquivo (certifique-se de usar o objeto `com.adobe.idp.Document` retornado pelo método `applyUsageRights`).
 
 **Consulte também**
 
@@ -162,55 +162,55 @@ Aplique direitos de uso a um documento PDF usando a API de extensões do Acrobat
 
    >[!NOTE]
    >
-   >Substituir `localhost` com o endereço IP do servidor que hospeda o AEM Forms.
+   >Substitua `localhost` pelo endereço IP do servidor que hospeda o AEM Forms.
 
 1. Crie um objeto Cliente de extensões do Acrobat Reader DC.
 
-   * Criar um `ReaderExtensionsServiceClient` usando seu construtor padrão.
-   * Criar um `ReaderExtensionsServiceClient.Endpoint.Address` usando o `System.ServiceModel.EndpointAddress` construtor. Transmita um valor de string que especifique o WSDL para o serviço AEM Forms (por exemplo, `http://localhost:8080/soap/services/ReaderExtensionsService?blob=mtom`. Certifique-se de especificar `?blob=mtom`.)
-   * Criar um `System.ServiceModel.BasicHttpBinding` obtendo o valor do `ReaderExtensionsServiceClient.Endpoint.Binding` campo. Converter o valor de retorno em `BasicHttpBinding`.
-   * Defina o `System.ServiceModel.BasicHttpBinding` do objeto `MessageEncoding` campo para `WSMessageEncoding.Mtom`. Esse valor garante que a MTOM seja usada.
+   * Crie um objeto `ReaderExtensionsServiceClient` usando seu construtor padrão.
+   * Crie um objeto `ReaderExtensionsServiceClient.Endpoint.Address` usando o construtor `System.ServiceModel.EndpointAddress`. Transmita um valor de cadeia de caracteres que especifique o WSDL para o serviço AEM Forms (por exemplo, `http://localhost:8080/soap/services/ReaderExtensionsService?blob=mtom`. Certifique-se de especificar `?blob=mtom`.)
+   * Crie um objeto `System.ServiceModel.BasicHttpBinding` obtendo o valor do campo `ReaderExtensionsServiceClient.Endpoint.Binding`. Converter o valor de retorno em `BasicHttpBinding`.
+   * Defina o campo `MessageEncoding` do objeto `System.ServiceModel.BasicHttpBinding` como `WSMessageEncoding.Mtom`. Esse valor garante que a MTOM seja usada.
    * Ative a autenticação HTTP básica executando as seguintes tarefas:
 
-      * Atribuir o nome de usuário dos formulários AEM ao campo `ReaderExtensionsServiceClient.ClientCredentials.UserName.UserName`.
+      * Atribua o nome de usuário dos formulários AEM ao campo `ReaderExtensionsServiceClient.ClientCredentials.UserName.UserName`.
       * Atribua o valor de senha correspondente ao campo `ReaderExtensionsServiceClient.ClientCredentials.UserName.Password`.
-      * Atribuir o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Atribuir o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
+      * Atribua o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * Atribua o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Recupere um documento PDF.
 
-   * Criar um `BLOB` usando seu construtor. A variável `BLOB` objeto é usado para armazenar um documento PDF ao qual são aplicados direitos de uso.
-   * Criar um `System.IO.FileStream` chamando seu construtor e transmitindo um valor de string que representa o local do arquivo do documento PDF e o modo no qual o arquivo será aberto.
-   * Crie uma matriz de bytes que armazene o conteúdo da variável `System.IO.FileStream` objeto. Você pode determinar o tamanho da matriz de bytes obtendo o `System.IO.FileStream` do objeto `Length` propriedade.
-   * Preencha a matriz de bytes com dados de fluxo invocando o `System.IO.FileStream` do objeto `Read` método. Passe a matriz de bytes, a posição inicial e o comprimento do fluxo para leitura.
-   * Preencha o `BLOB` atribuindo seu `MTOM` com o conteúdo da matriz de bytes.
+   * Crie um objeto `BLOB` usando seu construtor. O objeto `BLOB` é usado para armazenar um documento PDF ao qual são aplicados direitos de uso.
+   * Crie um objeto `System.IO.FileStream` chamando seu construtor e transmitindo um valor de cadeia de caracteres que representa o local do arquivo do documento PDF e o modo no qual o arquivo será aberto.
+   * Crie uma matriz de bytes que armazene o conteúdo do objeto `System.IO.FileStream`. Você pode determinar o tamanho da matriz de bytes obtendo a propriedade `Length` do objeto `System.IO.FileStream`.
+   * Preencha a matriz de bytes com dados de fluxo invocando o método `Read` do objeto `System.IO.FileStream`. Passe a matriz de bytes, a posição inicial e o comprimento do fluxo para leitura.
+   * Preencha o objeto `BLOB` atribuindo sua propriedade `MTOM` com o conteúdo da matriz de bytes.
 
 1. Especifique os direitos de uso a serem aplicados.
 
-   * Criar um `UsageRights` objeto que representa os direitos de uso usando seu construtor.
-   * Atribua o valor a cada direito de uso a ser aplicado `true` ao membro de dados correspondente que pertence ao `UsageRights` objeto. Por exemplo, para adicionar a variável `enableFormFillIn` direito de uso, atribuir `true` para o `UsageRights` do objeto `enableFormFillIn` membro de dados. (Repita essa etapa para cada direito de uso a ser aplicado).
+   * Crie um objeto `UsageRights` que represente direitos de uso usando seu construtor.
+   * Para cada direito de uso a ser aplicado, atribua o valor `true` ao membro de dados correspondente que pertence ao objeto `UsageRights`. Por exemplo, para adicionar o direito de uso `enableFormFillIn`, atribua `true` ao membro de dados `enableFormFillIn` do objeto `UsageRights`. (Repita essa etapa para cada direito de uso a ser aplicado).
 
 1. Aplique direitos de uso ao documento PDF.
 
-   * Criar um `ReaderExtensionsOptionSpec` usando seu construtor. Esse objeto contém opções de tempo de execução exigidas pelo serviço de extensões da Acrobat Reader DC.
-   * Atribua a `UsageRights` objeto para o `ReaderExtensionsOptionSpec` do objeto `usageRights` membro de dados.
-   * Atribua um valor de string que especifique a mensagem que um usuário vê quando o documento PDF habilitado para direitos é aberto no Adobe Reader para o `ReaderExtensionsOptionSpec` do objeto `message` membro de dados.
-   * Aplique direitos de uso ao documento PDF invocando o `ReaderExtensionsServiceClient` do objeto `applyUsageRights` e transmitindo os seguintes valores:
+   * Crie um objeto `ReaderExtensionsOptionSpec` usando seu construtor. Esse objeto contém opções de tempo de execução exigidas pelo serviço de extensões da Acrobat Reader DC.
+   * Atribua o objeto `UsageRights` ao membro de dados `usageRights` do objeto `ReaderExtensionsOptionSpec`.
+   * Atribua um valor de cadeia de caracteres que especifique a mensagem que um usuário vê quando o documento de PDF habilitado para direitos é aberto no Adobe Reader para o membro de dados `message` do objeto `ReaderExtensionsOptionSpec`.
+   * Aplique direitos de uso ao documento PDF invocando o método `applyUsageRights` do objeto `ReaderExtensionsServiceClient` e transmitindo os seguintes valores:
 
-      * A variável `BLOB` objeto que contém o documento PDF ao qual os direitos de uso são aplicados.
+      * O objeto `BLOB` que contém o documento PDF ao qual os direitos de uso são aplicados.
       * Um valor de string que especifica o alias da credencial que permite aplicar direitos de uso.
       * Um valor de string que especifica o valor de senha correspondente. (Atualmente, esse parâmetro é ignorado. Você pode passar `null`.)
 
-   * A variável `ReaderExtensionsOptionSpec` objeto que contém opções de tempo de execução.
+   * O objeto `ReaderExtensionsOptionSpec` que contém opções de tempo de execução.
 
-   A variável `applyUsageRights` o método retorna um `BLOB` objeto que contém o documento PDF habilitado para direitos.
+   O método `applyUsageRights` retorna um objeto `BLOB` que contém o documento PDF habilitado para direitos.
 
 1. Salve o documento PDF habilitado para direitos.
 
-   * Criar um `System.IO.FileStream` invocando seu construtor. Transmita um valor de string que represente o local do arquivo do documento PDF habilitado para direitos.
-   * Crie uma matriz de bytes que armazene o conteúdo de dados do `BLOB` objeto que foi retornado pelo `applyUsageRights` método. Preencha a matriz de bytes obtendo o valor de `BLOB` do objeto `MTOM` membro de dados.
-   * Criar um `System.IO.BinaryWriter` objeto chamando seu construtor e transmitindo o `System.IO.FileStream` objeto.
-   * Grave o conteúdo da matriz de bytes em um arquivo PDF, chamando o `System.IO.BinaryWriter` do objeto `Write` e transmitindo a matriz de bytes.
+   * Crie um objeto `System.IO.FileStream` invocando seu construtor. Transmita um valor de string que represente o local do arquivo do documento PDF habilitado para direitos.
+   * Crie uma matriz de bytes que armazene o conteúdo de dados do objeto `BLOB` retornado pelo método `applyUsageRights`. Popular a matriz de bytes obtendo o valor do membro de dados `MTOM` do objeto `BLOB`.
+   * Crie um objeto `System.IO.BinaryWriter` invocando seu construtor e transmitindo o objeto `System.IO.FileStream`.
+   * Grave o conteúdo da matriz de bytes em um arquivo PDF, chamando o método `Write` do objeto `System.IO.BinaryWriter` e transmitindo a matriz de bytes.
 
 **Consulte também**
 
@@ -226,7 +226,7 @@ Você pode remover direitos de uso de um documento habilitado para direitos. A r
 
 >[!NOTE]
 >
->Para obter mais informações sobre o serviço de extensões da Acrobat Reader DC, consulte [Referência de serviços para o AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Para obter mais informações sobre o serviço de extensões da Acrobat Reader DC, consulte [Referência de serviços para a AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Resumo das etapas {#summary_of_steps-1}
 
@@ -244,7 +244,7 @@ Inclua os arquivos necessários no projeto de desenvolvimento. Se você estiver 
 
 **Criar um objeto Cliente de extensões do Acrobat Reader DC**
 
-Antes de executar programaticamente uma operação de serviço de extensões da Acrobat Reader DC, você deve criar um objeto cliente de serviço de extensões da Acrobat Reader DC. Se estiver usando a API Java, crie uma `ReaderExtensionsServiceClient` objeto. Se estiver usando a API de serviço Web de extensões do Acrobat Reader DC, crie uma `ReaderExtensionsServiceService` objeto.
+Antes de executar programaticamente uma operação de serviço de extensões da Acrobat Reader DC, você deve criar um objeto cliente de serviço de extensões da Acrobat Reader DC. Se você estiver usando a API Java, crie um objeto `ReaderExtensionsServiceClient`. Se você estiver usando a API de serviço Web de extensões do Acrobat Reader DC, crie um objeto `ReaderExtensionsServiceService`.
 
 **Recuperar um documento PDF habilitado para direitos**
 
@@ -254,7 +254,7 @@ Recupere um documento PDF habilitado para direitos para remover direitos de uso.
 
 Depois de recuperar um documento de PDF habilitado para direitos, você pode remover os direitos de uso. Após remover os direitos de uso, o documento PDF não terá nenhuma funcionalidade adicional enquanto for visualizado no Adobe Reader.
 
-**Salve o documento PDF**
+**Salvar o documento do PDF**
 
 Você pode salvar o documento PDF que não contém mais direitos de uso como um arquivo PDF. Depois de salvo como um arquivo PDF, o documento PDF pode ser visualizado no Adobe Reader ou Acrobat.
 
@@ -282,21 +282,21 @@ Remova os direitos de uso de um documento PDF habilitado para direitos usando a 
 
 1. Crie um objeto Cliente de extensões do Acrobat Reader DC.
 
-   Criar um `ReaderExtensionsServiceClient` objeto usando seu construtor e transmitindo um `ServiceClientFactory` objeto que contém propriedades de conexão.
+   Crie um objeto `ReaderExtensionsServiceClient` usando seu construtor e transmitindo um objeto `ServiceClientFactory` que contenha propriedades de conexão.
 
 1. Recupere um documento PDF.
 
-   * Criar um `java.io.FileInputStream` objeto que representa o documento de PDF habilitado para direitos usando seu construtor e transmitindo um valor de string que especifica o local do documento de PDF.
-   * Criar um `com.adobe.idp.Document` usando seu construtor e transmitindo o `java.io.FileInputStream` objeto.
+   * Crie um objeto `java.io.FileInputStream` que represente o documento de PDF habilitado para direitos usando seu construtor e transmitindo um valor de cadeia de caracteres que especifique o local do documento de PDF.
+   * Crie um objeto `com.adobe.idp.Document` usando seu construtor e transmitindo o objeto `java.io.FileInputStream`.
 
 1. Remova os direitos de uso do documento PDF.
 
-   Remova os direitos de uso do documento PDF invocando o `ReaderExtensionsServiceClient` do objeto `removeUsageRights` e transmitindo o `com.adobe.idp.Document` objeto que contém o documento PDF habilitado para direitos. Este método retorna um valor de `com.adobe.idp.Document` objeto que contém um documento PDF que não tem direitos de uso.
+   Remova os direitos de uso do documento PDF invocando o método `removeUsageRights` do objeto `ReaderExtensionsServiceClient` e transmitindo o objeto `com.adobe.idp.Document` que contém o documento PDF habilitado para direitos. Este método retorna um objeto `com.adobe.idp.Document` que contém um documento PDF que não tem direitos de uso.
 
 1. Aplique direitos de uso ao documento PDF.
 
-   * Criar um `java.io.File` e verifique se a extensão do arquivo é .PDF.
-   * Chame o `Document` do objeto `copyToFile` método para copiar o conteúdo do `Document` ao arquivo (certifique-se de usar o `Document` objeto que foi retornado pelo `removeUsageRights` método).
+   * Crie um objeto `java.io.File` e verifique se a extensão do arquivo é .PDF.
+   * Invoque o método `copyToFile` do objeto `Document` para copiar o conteúdo do objeto `Document` para o arquivo (certifique-se de usar o objeto `Document` retornado pelo método `removeUsageRights`).
 
 **Consulte também**
 
@@ -318,38 +318,38 @@ Remova os direitos de uso de um documento PDF habilitado para direitos usando a 
 
    >[!NOTE]
    >
-   >Substituir `localhost` com o endereço IP do servidor que hospeda o AEM Forms.
+   >Substitua `localhost` pelo endereço IP do servidor que hospeda o AEM Forms.
 
 1. Crie um objeto Cliente de extensões do Acrobat Reader DC.
 
-   * Criar um `ReaderExtensionsServiceClient` usando seu construtor padrão.
-   * Criar um `ReaderExtensionsServiceClient.Endpoint.Address` usando o `System.ServiceModel.EndpointAddress` construtor. Transmita um valor de string que especifique o WSDL para o serviço AEM Forms (por exemplo, `http://localhost:8080/soap/services/ReaderExtensionsService?blob=mtom`. Certifique-se de especificar `?blob=mtom`.)
-   * Criar um `System.ServiceModel.BasicHttpBinding` obtendo o valor do `ReaderExtensionsServiceClient.Endpoint.Binding` campo. Converter o valor de retorno em `BasicHttpBinding`.
-   * Defina o `System.ServiceModel.BasicHttpBinding` do objeto `MessageEncoding` campo para `WSMessageEncoding.Mtom`. Esse valor garante que a MTOM seja usada.
+   * Crie um objeto `ReaderExtensionsServiceClient` usando seu construtor padrão.
+   * Crie um objeto `ReaderExtensionsServiceClient.Endpoint.Address` usando o construtor `System.ServiceModel.EndpointAddress`. Transmita um valor de cadeia de caracteres que especifique o WSDL para o serviço AEM Forms (por exemplo, `http://localhost:8080/soap/services/ReaderExtensionsService?blob=mtom`. Certifique-se de especificar `?blob=mtom`.)
+   * Crie um objeto `System.ServiceModel.BasicHttpBinding` obtendo o valor do campo `ReaderExtensionsServiceClient.Endpoint.Binding`. Converter o valor de retorno em `BasicHttpBinding`.
+   * Defina o campo `MessageEncoding` do objeto `System.ServiceModel.BasicHttpBinding` como `WSMessageEncoding.Mtom`. Esse valor garante que a MTOM seja usada.
    * Ative a autenticação HTTP básica executando as seguintes tarefas:
 
-      * Atribuir o nome de usuário dos formulários AEM ao campo `ReaderExtensionsServiceClient.ClientCredentials.UserName.UserName`.
+      * Atribua o nome de usuário dos formulários AEM ao campo `ReaderExtensionsServiceClient.ClientCredentials.UserName.UserName`.
       * Atribua o valor de senha correspondente ao campo `ReaderExtensionsServiceClient.ClientCredentials.UserName.Password`.
-      * Atribuir o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Atribuir o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
+      * Atribua o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * Atribua o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Recupere um documento PDF.
 
-   * Criar um `BLOB` usando seu construtor. A variável `BLOB` O objeto é usado para armazenar o documento de PDF habilitado para direitos do qual os direitos de uso são removidos.
-   * Criar um `System.IO.FileStream` chamando seu construtor e transmitindo um valor de string que representa o local do arquivo do documento PDF e o modo no qual o arquivo será aberto.
-   * Crie uma matriz de bytes que armazene o conteúdo da variável `System.IO.FileStream` objeto. Você pode determinar o tamanho da matriz de bytes obtendo o `System.IO.FileStream` do objeto `Length` propriedade.
-   * Preencha a matriz de bytes com dados de fluxo invocando o `System.IO.FileStream` do objeto `Read` e transmitindo a matriz de bytes, a posição inicial e o comprimento do fluxo para leitura.
-   * Preencha o `BLOB` atribuindo seu `MTOM` com o conteúdo da matriz de bytes.
+   * Crie um objeto `BLOB` usando seu construtor. O objeto `BLOB` é usado para armazenar o documento PDF habilitado para direitos do qual os direitos de uso são removidos.
+   * Crie um objeto `System.IO.FileStream` chamando seu construtor e transmitindo um valor de cadeia de caracteres que representa o local do arquivo do documento PDF e o modo no qual o arquivo será aberto.
+   * Crie uma matriz de bytes que armazene o conteúdo do objeto `System.IO.FileStream`. Você pode determinar o tamanho da matriz de bytes obtendo a propriedade `Length` do objeto `System.IO.FileStream`.
+   * Preencha a matriz de bytes com os dados de fluxo invocando o método `Read` do objeto `System.IO.FileStream` e transmitindo a matriz de bytes, a posição inicial e o comprimento do fluxo para leitura.
+   * Preencha o objeto `BLOB` atribuindo sua propriedade `MTOM` com o conteúdo da matriz de bytes.
 
 1. Remova os direitos de uso do documento PDF.
 
-   Remova os direitos de uso do documento PDF invocando o `ReaderExtensionsServiceClient` do objeto `removeUsageRights` e transmitindo o `BLOB` objeto que contém o documento PDF habilitado para direitos. Este método retorna um valor de `BLOB` objeto que contém um documento PDF que não tem direitos de uso.
+   Remova os direitos de uso do documento PDF invocando o método `removeUsageRights` do objeto `ReaderExtensionsServiceClient` e transmitindo o objeto `BLOB` que contém o documento PDF habilitado para direitos. Este método retorna um objeto `BLOB` que contém um documento PDF que não tem direitos de uso.
 
 1. Aplique direitos de uso ao documento PDF.
 
-   * Criar um `System.IO.FileStream` chamando seu construtor e transmitindo um valor de string que representa o local do arquivo PDF.
-   * Crie uma matriz de bytes que armazene o conteúdo de dados do `BLOB` objeto que foi retornado pelo `removeUsageRights` método. Preencha a matriz de bytes obtendo o valor de `BLOB` do objeto `MTOM` membro de dados.
-   * Criar um `System.IO.BinaryWriter` objeto chamando seu construtor e transmitindo o `System.IO.FileStream` objeto.
+   * Crie um objeto `System.IO.FileStream` chamando seu construtor e transmitindo um valor de cadeia de caracteres que representa o local do arquivo de PDF.
+   * Crie uma matriz de bytes que armazene o conteúdo de dados do objeto `BLOB` retornado pelo método `removeUsageRights`. Popular a matriz de bytes obtendo o valor do membro de dados `MTOM` do objeto `BLOB`.
+   * Crie um objeto `System.IO.BinaryWriter` invocando seu construtor e transmitindo o objeto `System.IO.FileStream`.
 
 **Consulte também**
 
@@ -365,7 +365,7 @@ Você pode recuperar informações sobre a credencial usada para aplicar direito
 
 >[!NOTE]
 >
->Para obter mais informações sobre o serviço de extensões da Acrobat Reader DC, consulte [Referência de serviços para o AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Para obter mais informações sobre o serviço de extensões da Acrobat Reader DC, consulte [Referência de serviços para a AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Resumo das etapas {#summary_of_steps-2}
 
@@ -382,7 +382,7 @@ Inclua os arquivos necessários no projeto de desenvolvimento. Se você estiver 
 
 **Criar um objeto Cliente de extensões do Acrobat Reader DC**
 
-Antes de executar programaticamente uma operação de serviço de extensões da Acrobat Reader DC, você deve criar um objeto cliente de serviço de extensões da Acrobat Reader DC. Se estiver usando a API Java, crie uma `ReaderExtensionsServiceClient` objeto. Se estiver usando a API de serviço Web de extensões do Acrobat Reader DC, crie uma `ReaderExtensionsServiceService` objeto.
+Antes de executar programaticamente uma operação de serviço de extensões da Acrobat Reader DC, você deve criar um objeto cliente de serviço de extensões da Acrobat Reader DC. Se você estiver usando a API Java, crie um objeto `ReaderExtensionsServiceClient`. Se você estiver usando a API de serviço Web de extensões do Acrobat Reader DC, crie um objeto `ReaderExtensionsServiceService`.
 
 **Recuperar um documento PDF habilitado para direitos**
 
@@ -420,18 +420,18 @@ Recupere informações de credencial usando a API de extensões da Acrobat Reade
 
 1. Crie um objeto Cliente de extensões do Acrobat Reader DC.
 
-   Criar um `ReaderExtensionsServiceClient` objeto usando seu construtor e transmitindo um `ServiceClientFactory` objeto que contém propriedades de conexão.
+   Crie um objeto `ReaderExtensionsServiceClient` usando seu construtor e transmitindo um objeto `ServiceClientFactory` que contenha propriedades de conexão.
 
 1. Recupere um documento PDF.
 
-   * Criar um `java.io.FileInputStream` objeto que representa o documento PDF habilitado para direitos usando seu construtor e transmitindo um valor de string que especifica o local do documento PDF habilitado para direitos.
-   * Criar um `com.adobe.idp.Document` usando seu construtor e transmitindo o `java.io.FileInputStream` objeto.
+   * Crie um objeto `java.io.FileInputStream` que represente o documento de PDF habilitado para direitos usando seu construtor e transmitindo um valor de cadeia de caracteres que especifique o local do documento de PDF habilitado para direitos.
+   * Crie um objeto `com.adobe.idp.Document` usando seu construtor e transmitindo o objeto `java.io.FileInputStream`.
 
 1. Remova os direitos de uso do documento PDF.
 
-   * Recupere informações sobre a credencial usada para aplicar direitos de uso ao documento PDF chamando o `ReaderExtensionsServiceClient` do objeto `getDocumentUsageRights` e transmitindo o `com.adobe.idp.Document` objeto que contém o documento PDF habilitado para direitos. Este método retorna um valor de `GetUsageRightsResult` objeto que contém informações de credencial.
-   * Recupere a data após a qual a credencial não será mais válida chamando o `GetUsageRightsResult` do objeto `getNotAfter` método. Este método retorna um valor de `java.util.Date` objeto que representa a data após a qual a credencial não é mais válida.
-   * Recupere a mensagem que é exibida no Adobe Reader quando o documento de PDF habilitado para direitos for aberto chamando o `GetUsageRightsResult` do objeto `getMessage` método. Esse método retorna um valor de string que representa a mensagem.
+   * Recupere informações sobre a credencial usada para aplicar direitos de uso ao documento PDF, chamando o método `getDocumentUsageRights` do objeto `ReaderExtensionsServiceClient` e transmitindo o objeto `com.adobe.idp.Document` que contém o documento PDF habilitado para direitos. Este método retorna um objeto `GetUsageRightsResult` que contém informações de credencial.
+   * Recupere a data após a qual a credencial não será mais válida invocando o método `getNotAfter` do objeto `GetUsageRightsResult`. Este método retorna um objeto `java.util.Date` que representa a data após a qual a credencial não é mais válida.
+   * Recupere a mensagem que é exibida no Adobe Reader quando o documento de PDF habilitado para direitos for aberto invocando o método `getMessage` do objeto `GetUsageRightsResult`. Esse método retorna um valor de string que representa a mensagem.
 
 **Consulte também**
 
@@ -453,35 +453,35 @@ Recupere informações de credencial usando a API de extensões do Acrobat Reade
 
    >[!NOTE]
    >
-   >Substituir `localhost` com o endereço IP do servidor que hospeda o AEM Forms.
+   >Substitua `localhost` pelo endereço IP do servidor que hospeda o AEM Forms.
 
 1. Crie um objeto Cliente de extensões do Acrobat Reader DC.
 
-   * Criar um `ReaderExtensionsServiceClient` usando seu construtor padrão.
-   * Criar um `ReaderExtensionsServiceClient.Endpoint.Address` usando o `System.ServiceModel.EndpointAddress` construtor. Transmita um valor de string que especifique o WSDL para o serviço AEM Forms (por exemplo, `http://localhost:8080/soap/services/ReaderExtensionsService?blob=mtom`. Certifique-se de especificar `?blob=mtom`.)
-   * Criar um `System.ServiceModel.BasicHttpBinding` obtendo o valor do `ReaderExtensionsServiceClient.Endpoint.Binding` campo. Converter o valor de retorno em `BasicHttpBinding`.
-   * Defina o `System.ServiceModel.BasicHttpBinding` do objeto `MessageEncoding` campo para `WSMessageEncoding.Mtom`. Esse valor garante que a MTOM seja usada.
+   * Crie um objeto `ReaderExtensionsServiceClient` usando seu construtor padrão.
+   * Crie um objeto `ReaderExtensionsServiceClient.Endpoint.Address` usando o construtor `System.ServiceModel.EndpointAddress`. Transmita um valor de cadeia de caracteres que especifique o WSDL para o serviço AEM Forms (por exemplo, `http://localhost:8080/soap/services/ReaderExtensionsService?blob=mtom`. Certifique-se de especificar `?blob=mtom`.)
+   * Crie um objeto `System.ServiceModel.BasicHttpBinding` obtendo o valor do campo `ReaderExtensionsServiceClient.Endpoint.Binding`. Converter o valor de retorno em `BasicHttpBinding`.
+   * Defina o campo `MessageEncoding` do objeto `System.ServiceModel.BasicHttpBinding` como `WSMessageEncoding.Mtom`. Esse valor garante que a MTOM seja usada.
    * Ative a autenticação HTTP básica executando as seguintes tarefas:
 
-      * Atribuir o nome de usuário dos formulários AEM ao campo `ReaderExtensionsServiceClient.ClientCredentials.UserName.UserName`.
+      * Atribua o nome de usuário dos formulários AEM ao campo `ReaderExtensionsServiceClient.ClientCredentials.UserName.UserName`.
       * Atribua o valor de senha correspondente ao campo `ReaderExtensionsServiceClient.ClientCredentials.UserName.Password`.
-      * Atribuir o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Atribuir o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
+      * Atribua o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * Atribua o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Recupere um documento PDF.
 
-   * Criar um `BLOB` usando seu construtor. A variável `BLOB` é usado para armazenar um documento PDF habilitado para direitos.
-   * Criar um `System.IO.FileStream` chamando seu construtor e transmitindo um valor de string que representa o local do arquivo do documento PDF habilitado para direitos e o modo no qual o arquivo será aberto.
-   * Crie uma matriz de bytes que armazene o conteúdo da variável `System.IO.FileStream` objeto. Você pode determinar o tamanho da matriz de bytes obtendo o `System.IO.FileStream` do objeto `Length` propriedade.
-   * Preencha a matriz de bytes com dados de fluxo invocando o `System.IO.FileStream` do objeto `Read` e transmitindo a matriz de bytes, a posição inicial e o comprimento do fluxo para leitura.
-   * Preencha o `BLOB` atribuindo seu `MTOM` com o conteúdo da matriz de bytes.
+   * Crie um objeto `BLOB` usando seu construtor. O objeto `BLOB` é usado para armazenar um documento PDF habilitado para direitos.
+   * Crie um objeto `System.IO.FileStream` chamando seu construtor e transmitindo um valor de cadeia de caracteres que representa o local do arquivo do documento de PDF habilitado para direitos e o modo no qual o arquivo será aberto.
+   * Crie uma matriz de bytes que armazene o conteúdo do objeto `System.IO.FileStream`. Você pode determinar o tamanho da matriz de bytes obtendo a propriedade `Length` do objeto `System.IO.FileStream`.
+   * Preencha a matriz de bytes com os dados de fluxo invocando o método `Read` do objeto `System.IO.FileStream` e transmitindo a matriz de bytes, a posição inicial e o comprimento do fluxo para leitura.
+   * Preencha o objeto `BLOB` atribuindo sua propriedade `MTOM` com o conteúdo da matriz de bytes.
 
 1. Remova os direitos de uso do documento PDF.
 
-   * Recupere informações sobre a credencial usada para aplicar direitos de uso ao documento PDF chamando o `ReaderExtensionsServiceClient` do objeto `getDocumentUsageRights` e transmitindo o `com.adobe.idp.Document` objeto que contém o documento PDF habilitado para direitos. Este método retorna um valor de `GetUsageRightsResult` objeto que contém informações de credencial.
-   * Recupere a data após a qual a credencial não é mais válida obtendo o valor de `GetUsageRightsResult` do objeto `notAfter` membro de dados. O tipo de dados deste membro de dados é `System.DateTime`.
-   * Recupere a mensagem exibida quando o documento de PDF habilitado para direitos for aberto no Adobe Reader obtendo o valor do `GetUsageRightsResult` do objeto `message` membro de dados. O tipo de dados deste membro de dados é uma string.
-   * Recuperar o número de vezes que a credencial é usada obtendo o valor de `GetUsageRightsResult` do objeto `useCount` membro de dados. O tipo de dados deste membro de dados é um inteiro.
+   * Recupere informações sobre a credencial usada para aplicar direitos de uso ao documento PDF, chamando o método `getDocumentUsageRights` do objeto `ReaderExtensionsServiceClient` e transmitindo o objeto `com.adobe.idp.Document` que contém o documento PDF habilitado para direitos. Este método retorna um objeto `GetUsageRightsResult` que contém informações de credencial.
+   * Recupere a data após a qual a credencial não será mais válida obtendo o valor do membro de dados `notAfter` do objeto `GetUsageRightsResult`. O tipo de dados deste membro de dados é `System.DateTime`.
+   * Recupere a mensagem exibida quando o documento de PDF habilitado para direitos for aberto no Adobe Reader obtendo o valor do membro de dados `message` do objeto `GetUsageRightsResult`. O tipo de dados deste membro de dados é uma string.
+   * Recupere o número de vezes que a credencial é usada obtendo o valor do membro de dados `useCount` do objeto `GetUsageRightsResult`. O tipo de dados deste membro de dados é um inteiro.
 
 **Consulte também**
 

@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Estes são alguns aspectos a serem considerados ao executar o Administration Console:
 
-* Se você acessar o console de administração usando o URL `https://[hostname]:'port'/adminui`, o nome de host especificado não pode conter caracteres sublinhados. Caso contrário, os links para algumas áreas do console de administração podem não funcionar corretamente.
+* Se você acessar o console de administração usando a URL `https://[hostname]:'port'/adminui`, o nome de host especificado não poderá conter caracteres sublinhados. Caso contrário, os links para algumas áreas do console de administração podem não funcionar corretamente.
 * Se você executar um console de administração no Windows Explorer em um sistema operacional japonês, poderá encontrar os seguintes problemas:
 
    * Clicar em um link o retorna à página de logon em vez do link esperado.

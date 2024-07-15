@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Remover os sites do Geometrixx{#removing-the-geometrixx-sites}
 
-O AEM vem com um conjunto de exemplos de sites de Geometrixx. Você pode remover esse conteúdo de amostra por meio da **Gerenciador de pacotes**.
+O AEM vem com um conjunto de exemplos de sites de Geometrixx. Você pode remover este conteúdo de exemplo por meio do **Gerenciador de Pacotes**.
 
 Os pacotes individuais relacionados ao geometrixx são:
 
@@ -34,7 +34,7 @@ Há também um super-pacote:
 
 * `cq-geometrixx-all-pkg-5.6.12.zip`
 
-Este pacote inclui todos os pacotes individuais acima. Para remover todo o conteúdo relacionado ao geometrixx de uma só vez, clique em **Desinstalar** neste pacote. O superpacote entra no estado desinstalado e todos os pacotes individuais desaparecem da exibição do Gerenciador de pacotes.
+Este pacote inclui todos os pacotes individuais acima. Para remover todo o conteúdo relacionado a geometrixx de uma só vez, clique em **Desinstalar** neste pacote. O superpacote entra no estado desinstalado e todos os pacotes individuais desaparecem da exibição do Gerenciador de pacotes.
 
 Agora você tem uma instância &quot;vazia&quot; do AEM sem nenhum site de demonstração.
 

@@ -15,46 +15,46 @@ ht-degree: 20%
 
 # Ações e recursos de fluxos de trabalho do AEM centrados em formulários em fluxos de trabalho OSGi e AEM Forms JEE {#actions-and-capabilities-of-form-centric-aem-workflows-on-osgi-and-aem-forms-jee-workflows}
 
-## Caixa de entrada do AEM e espaço de trabalho do HTML {#aem-inbox-and-html-workspace}
+## Caixa de entrada de AEM e HTML Workspace {#aem-inbox-and-html-workspace}
 
-Você pode usar a Caixa de entrada do AEM para executar e monitorar fluxos de trabalho do AEM centrados no Forms no OSGi. Por outro lado, o HTML Workspace permite executar e monitorar os fluxos de trabalho do AEM Forms JEE. A tabela a seguir ajuda você a entender várias ações importantes disponíveis na Caixa de entrada do AEM para fluxos de trabalho do AEM centrados no Forms no OSGi e no HTML Workspace para fluxos de trabalho do AEM Forms JEE.
+Você pode usar a Caixa de entrada do AEM para executar e monitorar fluxos de trabalho do AEM centrados no Forms no OSGi. Por outro lado, o HTML Workspace permite executar e monitorar Workflows do AEM Forms JEE. A tabela a seguir ajuda você a entender várias ações importantes disponíveis na Caixa de entrada do AEM para fluxos de trabalho do AEM centrados no Forms no OSGi e no HTML Workspace para fluxos de trabalho do AEM Forms JEE.
 
 <table>
  <tbody>
   <tr>
    <td>Ações</td>
    <td>Caixa de entrada AEM</td>
-   <td>Espaço de trabalho do HTML</td>
+   <td>HTML Workspace</td>
   </tr>
   <tr>
    <td>Iniciando um processo, tarefa ou aplicativo de formulário<br /> </td>
-   <td>Compatível<br /> </td>
-   <td>Compatível<br /> </td>
+   <td>Com suporte<br /> </td>
+   <td>Com suporte<br /> </td>
   </tr>
   <tr>
    <td>Envio de tarefas</td>
-   <td>Compatível<br /> </td>
-   <td>Compatível<br /> </td>
+   <td>Com suporte<br /> </td>
+   <td>Com suporte<br /> </td>
   </tr>
   <tr>
    <td>Atribuir uma tarefa a um grupo</td>
-   <td>Compatível<br /> </td>
-   <td>Compatível<br /> </td>
+   <td>Com suporte<br /> </td>
+   <td>Com suporte<br /> </td>
   </tr>
   <tr>
    <td>Enviando para vários roteiros</td>
-   <td>Compatível<br /> </td>
-   <td>Compatível<br /> </td>
+   <td>Com suporte<br /> </td>
+   <td>Com suporte<br /> </td>
   </tr>
   <tr>
    <td>Rastreamento do histórico e do resumo das tarefas</td>
-   <td>Compatível<br /> </td>
-   <td>Compatível<br /> </td>
+   <td>Com suporte<br /> </td>
+   <td>Com suporte<br /> </td>
   </tr>
   <tr>
    <td>Notificações por email</td>
-   <td>Compatível<br /> </td>
-   <td>Compatível<br /> </td>
+   <td>Com suporte<br /> </td>
+   <td>Com suporte<br /> </td>
   </tr>
   <tr>
    <td>Reatribuindo tarefas</td>
@@ -107,13 +107,13 @@ Os fluxos de trabalho do AEM centrados em formulários no OSGi e os fluxos de tr
  <tbody>
   <tr>
    <td>Recursos</td>
-   <td>Workflows do AEM centrados em formulários no OSGi<br /> </td>
+   <td>Fluxos de trabalho do AEM centrados em formulários no OSGi<br /> </td>
    <td>Fluxos de trabalho do AEM Forms JEE</td>
   </tr>
   <tr>
    <td>Adaptive Forms</td>
    <td>Compatível</td>
-   <td>Compatível<br /> </td>
+   <td>Com suporte<br /> </td>
   </tr>
   <tr>
    <td>Integração com outras soluções de AEM</td>
@@ -123,12 +123,12 @@ Os fluxos de trabalho do AEM centrados em formulários no OSGi e os fluxos de tr
   <tr>
    <td>Rabiscar a assinatura</td>
    <td>Compatível</td>
-   <td>Compatível<br /> </td>
+   <td>Com suporte<br /> </td>
   </tr>
   <tr>
    <td>Modelos de email personalizados</td>
    <td>Compatível</td>
-   <td>Compatível<br /> </td>
+   <td>Com suporte<br /> </td>
   </tr>
   <tr>
    <td>Definindo a prioridade da tarefa</td>
@@ -157,18 +157,18 @@ Os fluxos de trabalho do AEM centrados em formulários no OSGi e os fluxos de tr
   </tr>
   <tr>
    <td>Assinatura eletrônica (Adobe Sign)</td>
-   <td>Compatível <sup>[1]</sup></td>
-   <td>Compatível <sup>[5]</sup></td>
+   <td>Com suporte <sup>[1]</sup></td>
+   <td>Suportado <sup>[5]</sup></td>
   </tr>
   <tr>
    <td>Gerenciar aplicativos de formulários e tarefas</td>
-   <td>Compatível <sup>[2]</sup><br /> </td>
-   <td>Compatível <sup>[2]</sup></td>
+   <td>Com suporte <sup>[2]</sup><br /> </td>
+   <td>Com suporte <sup>[2]</sup></td>
   </tr>
   <tr>
    <td>Serviços de documento</td>
-   <td>Compatível <sup>[3]</sup></td>
-   <td>Compatível <sup>[3]</sup></td>
+   <td>Suportado <sup>[3]</sup></td>
+   <td>Suportado <sup>[3]</sup></td>
   </tr>
   <tr>
    <td>Renderizar tarefa concluída como formulário adaptável ou documento PDF</td>
@@ -202,7 +202,7 @@ Os fluxos de trabalho do AEM centrados em formulários no OSGi e os fluxos de tr
   </tr>
   <tr>
    <td>Enviar um email ao final do fluxo de trabalho</td>
-   <td>Compatível <sup>[7]</sup></td>
+   <td>Suportado <sup>[7]</sup></td>
    <td>Compatível</td>
   </tr>
   <tr>
@@ -212,8 +212,8 @@ Os fluxos de trabalho do AEM centrados em formulários no OSGi e os fluxos de tr
   </tr>
   <tr>
    <td>Assinatura digital</td>
-   <td>Compatível<br /> </td>
-   <td>Compatível<br /> </td>
+   <td>Com suporte<br /> </td>
+   <td>Com suporte<br /> </td>
   </tr>
   <tr>
    <td>Botão de redefinição</td>
@@ -328,16 +328,16 @@ Os fluxos de trabalho do AEM centrados em formulários no OSGi e os fluxos de tr
   <tr>
    <td>Visualização do gerente</td>
    <td>Incompatível</td>
-   <td>Compatível<br /> </td>
+   <td>Com suporte<br /> </td>
   </tr>
   <tr>
    <td>Pesquisar modelos</td>
    <td>Incompatível</td>
-   <td>Compatível<br /> </td>
+   <td>Com suporte<br /> </td>
   </tr>
   <tr>
    <td>Integração com aplicativos de terceiros</td>
-   <td>Não suportado <sup>[6]</sup></td>
+   <td>Sem Suporte <sup>[6]</sup></td>
    <td>Compatível</td>
   </tr>
   <tr>
@@ -388,18 +388,18 @@ Os fluxos de trabalho do AEM centrados em formulários no OSGi e os fluxos de tr
  </tbody>
 </table>
 
-1. Você pode usar Workflows do AEM centrados em formulários no OSGi para assinar um formulário adaptável preenchido. Fluxos de trabalho do AEM centrados em formulários no OSGi são compatíveis com a assinatura fora do formulário. A variável [assinatura no formulário](../../forms/using/working-with-adobe-sign.md#create-in-form-signing-experience) experiência não é suportada.
+1. Você pode usar Workflows do AEM centrados em formulários no OSGi para assinar um formulário adaptável preenchido. Fluxos de trabalho do AEM centrados em formulários no OSGi são compatíveis com a assinatura fora do formulário. A experiência de [assinatura no formulário](../../forms/using/working-with-adobe-sign.md#create-in-form-signing-experience) não é suportada.
 
 1. Você precisa de acesso à Caixa de entrada do AEM para executar e monitorar fluxos de trabalho centrados em formulários no AEM Forms OSGi e no HTML Workspace para executar e monitorar fluxos de trabalho do AEM Forms JEE.
 1. Os serviços de documento nativos da AEM Forms estão disponíveis para fluxos de trabalho AEM centrados em formulário no OSGi e para fluxos de trabalho AEM Forms no JEE. O fluxo de trabalho do AEM usa serviços de documento nativos para fluxos de trabalho do AEM centrados no formulário em fluxos de trabalho OSGi e AEM Forms JEE (Process Management).
 1. Os fluxos de trabalho do AEM Forms JEE só podem renderizar um formulário adaptável. Não há suporte para a renderização de um formulário adaptável como um documento PDF.
-1. Os fluxos de trabalho do AEM forms JEE não têm uma etapa separada para o Adobe Sign. Você precisa de um formulário adaptável habilitado para o Adobe Sign para AEM formulários JEE Workflows. Para obter mais detalhes, consulte [Documentação do Adobe Sign](../../forms/using/working-with-adobe-sign.md#add-and-configure-the-signature-step-component).
-1. Você pode usar o [Invocar serviço de modelo de dados de formulário](../../forms/using/aem-forms-workflow-step-reference.md#p-invoke-form-data-model-service-step-p) etapa para chamar um serviço da web e publicar ou recuperar dados de um aplicativo de terceiros.
-1. Você pode usar o [Enviar e-mail](../../forms/using/aem-forms-workflow-step-reference.md#send-email-step) etapa para enviar emails.
+1. Os fluxos de trabalho do AEM forms JEE não têm uma etapa separada para o Adobe Sign. Você precisa de um formulário adaptável habilitado para o Adobe Sign para AEM formulários JEE Workflows. Para obter mais detalhes, consulte a [documentação do Adobe Sign](../../forms/using/working-with-adobe-sign.md#add-and-configure-the-signature-step-component).
+1. Você pode usar a etapa [Invocar Serviço de Modelo de Dados de Formulário](../../forms/using/aem-forms-workflow-step-reference.md#p-invoke-form-data-model-service-step-p) para invocar um serviço Web e postar ou recuperar dados de um aplicativo de terceiros.
+1. Você pode usar a etapa [Enviar Email](../../forms/using/aem-forms-workflow-step-reference.md#send-email-step) para enviar emails.
 
 ## Diferenças entre a Caixa de entrada do AEM e os recursos do aplicativo AEM Forms {#differences-between-aem-inbox-and-aem-forms-app-features}
 
-Duas das principais maneiras de iniciar um fluxo de trabalho centrado no Forms são usar [Caixa de entrada AEM](../../forms/using/manage-applications-inbox.md) e AEM Forms. No entanto, os recursos da Caixa de entrada AEM e do aplicativo AEM Forms são diferentes. A Caixa de entrada AEM funciona somente com [Fluxos de trabalho centrados na Forms](../../forms/using/aem-forms-workflow.md) enquanto o aplicativo AEM Forms funciona com fluxos de trabalho e gerenciamento de processos centrados na Forms.
+Duas das principais maneiras de iniciar um fluxo de trabalho centrado no Forms são usar a [Caixa de entrada AEM](../../forms/using/manage-applications-inbox.md) e o aplicativo AEM Forms. No entanto, os recursos da Caixa de entrada AEM e do aplicativo AEM Forms são diferentes. A Caixa de entrada AEM funciona somente com [fluxos de trabalho centrados no Forms](../../forms/using/aem-forms-workflow.md), enquanto o aplicativo AEM Forms funciona com fluxos de trabalho centrados no Forms e gerenciamento de processos.
 
 A tabela a seguir lista os recursos da Caixa de entrada AEM e do aplicativo AEM Forms:
 

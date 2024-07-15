@@ -29,16 +29,16 @@ Você pode personalizar o código HTML e o arquivo CSS para fornecer uma aparên
 1. Abra o projeto.
 
    * Para o iOS, abra `Capture.xcodeproj` no Xcode
-   * Para Android, abra o projeto Android no Eclipse.
+   * Para o Android, abra o projeto Android no Eclipse.
    * Para Windows, abra `MWSWindows.sln` no Visual Studio.
 
 1. Navegue até a pasta de modelos.
 
-   * No XCode, navegue até a guia **Capture > www > wsmobile > js > tempo de execução > templates** pasta.
-   * No Eclipse, navegue até o **ativos > www > wsmobile > js > tempo de execução > modelos** pasta.
-   * No Visual Studio, navegue até o **MWSWindows > www > wsmobile > js > tempo de execução > modelos** pasta.
+   * No Xcode, navegue até a pasta **Capture > www > wsmobile > js > runtime > templates**.
+   * No Eclipse, navegue até a pasta **assets > www > wsmobile > js > runtime > templates**.
+   * No Visual Studio, navegue até a pasta **MWSWindows > www > wsmobile > js > runtime > templates**.
 
-1. Abra o `template.html` arquivo para edição.
+1. Abra o arquivo `template.html` para edição.
 1. Localize a seguinte string:
 
    ```jsp
@@ -51,7 +51,7 @@ Você pode personalizar o código HTML e o arquivo CSS para fornecer uma aparên
 
    Substituir por `<%`.
 
-1. Localize o seguinte código na `template.html` arquivo:
+1. Localize o seguinte código no arquivo `template.html`:
 
    ```jsp
    <ul id="task_menu_list">
@@ -74,12 +74,12 @@ Você pode personalizar o código HTML e o arquivo CSS para fornecer uma aparên
 1. Navegue até a pasta css.
 
    * No Xcode, navegue até **Capture > www > wsmobile > css**.
-   * No Eclipse, acesse **assets > www > wsmobile > css**.
+   * No Eclipse, navegue até **assets > www > wsmobile > css**.
    * No Visual Studio, navegue até **MWSWindows > www > wsmobile > css**.
 
-1. Abra o `_style.css` arquivo para edição.
-1. Para Imagem de fundo, altere `#323232` para `#fff`.
-1. Salvar as alterações e fechar `_style.css` arquivo.
+1. Abra o arquivo `_style.css` para edição.
+1. Para imagem de fundo, altere `#323232` para `#fff`.
+1. Salvar as alterações e fechar o arquivo `_style.css`.
 1. Abra o aplicativo AEM Forms.
 
    O aplicativo AEM Forms agora exibe instruções em vez de descrição.

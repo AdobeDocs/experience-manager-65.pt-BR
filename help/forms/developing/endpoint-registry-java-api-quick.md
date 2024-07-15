@@ -1,6 +1,6 @@
 ---
 title: Registro de ponto de extremidade Java&trade; API QuickStart(SOAP)
-description: Saiba como adicionar endpoints como EJB, SOAP, Pasta monitorada, endpoint de email e endpoint de comunicação remota e editar, remover e recuperar endpoints usando a API Java&trade;.
+description: Saiba como adicionar endpoints como EJB, SOAP, Pasta monitorada, endpoint de email e endpoint de comunicação remota e editar, remover e recuperar endpoints usando Java&trade; API.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -50,7 +50,7 @@ As operações do AEM Forms podem ser executadas usando a API altamente tipada d
 
 ## QuickStart: adicionando um endpoint EJB usando a API Java™ {#quickstart-adding-an-ejb-endpoint-using-the-java-api}
 
-O exemplo de código Java™ a seguir adiciona um terminal EJB a um serviço chamado *MyApplication/EncryptDocument*. (Consulte [Adicionando pontos finais EJB](/help/forms/developing/programmatically-endpoints.md#adding-ejb-endpoints).)
+O exemplo de código Java™ a seguir adiciona um ponto de extremidade EJB a um serviço chamado *MyApplication/EncryptDocument*. (Consulte [Adicionando pontos de extremidade EJB](/help/forms/developing/programmatically-endpoints.md#adding-ejb-endpoints).)
 
 ```java
  /*
@@ -149,7 +149,7 @@ O exemplo de código Java™ a seguir adiciona um terminal EJB a um serviço cha
 
 ## QuickStart: adicionando um terminal SOAP usando a API Java™ {#quickstart-adding-a-soap-endpoint-using-the-java-api}
 
-O seguinte exemplo de código Java™ adiciona um terminal SOAP a um serviço chamado *MyApplication/EncryptDocument*. (Consulte [Adicionar pontos de extremidade SOAP](/help/forms/developing/programmatically-endpoints.md#adding-soap-endpoints).)
+O exemplo de código Java™ a seguir adiciona um terminal SOAP a um serviço chamado *MyApplication/EncryptDocument*. (Consulte [Adicionar Pontos De Extremidade SOAP](/help/forms/developing/programmatically-endpoints.md#adding-soap-endpoints).)
 
 ```java
  /*
@@ -249,11 +249,11 @@ O seguinte exemplo de código Java™ adiciona um terminal SOAP a um serviço ch
 
 ## QuickStart: adicionando um endpoint de pasta monitorada usando a API Java™ {#quickstart-adding-a-watched-folder-endpoint-using-the-java-api}
 
-O exemplo de código Java™ a seguir adiciona um terminal Pasta monitorada a um serviço chamado *MyApplication/EncryptDocument*. (Consulte [Adicionar pontos de extremidade da pasta monitorada](/help/forms/developing/programmatically-endpoints.md#adding-watched-folder-endpoints).)
+O exemplo de código Java™ a seguir adiciona um ponto de extremidade de Pasta monitorada a um serviço chamado *MyApplication/EncryptDocument*. (Consulte [Adicionando Pontos De Extremidade De Pasta Monitorados](/help/forms/developing/programmatically-endpoints.md#adding-watched-folder-endpoints).)
 
 >[!NOTE]
 >
->Inclua o arquivo WatchedFolderEndpointConfigConstants.java no projeto para que você possa compilar e executar o início rápido a seguir. (Consulte [Arquivo constante de valores de configuração da pasta monitorada](/help/forms/developing/programmatically-endpoints.md#watched-folder-configuration-values-constant-file).)
+>Inclua o arquivo WatchedFolderEndpointConfigConstants.java no projeto para que você possa compilar e executar o início rápido a seguir. (Consulte [Arquivo de constante de valores de configuração de pasta monitorada](/help/forms/developing/programmatically-endpoints.md#watched-folder-configuration-values-constant-file).)
 
 ```java
  /*
@@ -384,11 +384,11 @@ O exemplo de código Java™ a seguir adiciona um terminal Pasta monitorada a um
 
 ## QuickStart: adicionando um endpoint de email usando a API Java™ {#quickstart-adding-an-email-endpoint-using-the-java-api}
 
-O exemplo de código Java™ a seguir adiciona um terminal de email a um serviço chamado *MyApplication/EncryptDocument* t. (Consulte [Adicionar pontos de extremidade de email](/help/forms/developing/programmatically-endpoints.md#adding-email-endpoints).)
+O exemplo de código Java™ a seguir adiciona um terminal de email a um serviço chamado *MyApplication/EncryptDocument* t. (Consulte [Adicionando Pontos De Extremidade De Email](/help/forms/developing/programmatically-endpoints.md#adding-email-endpoints).)
 
 >[!NOTE]
 >
->Inclua o arquivo EmailEndpointConfigConstants.java no projeto para que você possa compilar e executar o início rápido a seguir. (Consulte [Arquivo de constante de valores de configuração de email](/help/forms/developing/programmatically-endpoints.md#email-configuration-values-constant-file).)
+>Inclua o arquivo EmailEndpointConfigConstants.java no projeto para que você possa compilar e executar o início rápido a seguir. (Consulte [Arquivo de valores de configuração de email](/help/forms/developing/programmatically-endpoints.md#email-configuration-values-constant-file).)
 
 ```java
  /*
@@ -527,7 +527,7 @@ O exemplo de código Java™ a seguir adiciona um terminal de email a um serviç
 
 ## QuickStart: adicionando um endpoint de comunicação remota usando a API Java™ {#quickstart-adding-a-remoting-endpoint-using-the-java-api}
 
-O exemplo de código Java™ a seguir adiciona um terminal de Comunicação Remota a um serviço chamado *MyApplication/EncryptDocument*. (Consulte [Adicionando Pontos de Extremidade de Comunicação Remota](/help/forms/developing/programmatically-endpoints.md#adding-remoting-endpoints).)
+O exemplo de código Java™ a seguir adiciona um ponto de extremidade de Comunicação Remota a um serviço chamado *MyApplication/EncryptDocument*. (Consulte [Adicionando Pontos De Extremidade De Comunicação Remota](/help/forms/developing/programmatically-endpoints.md#adding-remoting-endpoints).)
 
 ```java
  /*
@@ -632,7 +632,7 @@ O exemplo de código Java™ a seguir adiciona um terminal de Comunicação Remo
 
 ## QuickStart: adicionando um endpoint TaskManager usando a API Java™ {#quickstart-adding-a-taskmanager-endpoint-using-the-java-api}
 
-O exemplo de código Java™ a seguir adiciona um ponto de extremidade TaskManager a um serviço chamado *MyApplication/EncryptDocument*. Observe que o nome da categoria é *EncryptProcess*. (Consulte [Adicionando pontos finais do Gerenciador de Tarefas](/help/forms/developing/programmatically-endpoints.md#adding-taskmanager-endpoints).)
+O exemplo de código Java™ a seguir adiciona um ponto de extremidade TaskManager a um serviço chamado *MyApplication/EncryptDocument*. Observe que o nome da categoria é *EncryptProcess*. (Consulte [Adicionando Pontos de Extremidade do TaskManager](/help/forms/developing/programmatically-endpoints.md#adding-taskmanager-endpoints).)
 
 ```java
  /*
@@ -741,7 +741,7 @@ O exemplo de código Java™ a seguir adiciona um ponto de extremidade TaskManag
 
 ## QuickStart: modificando um endpoint usando a API Java™ {#quickstart-modifying-an-endpoint-using-the-java-api}
 
-O código Java™ a seguir modifica um ponto de extremidade de Pasta monitorada. O endpoint é para a variável *MyApplication/EncryptDocument* processo. A pasta monitorada foi alterada para `C:\NewWatchedFolder`. (Consulte [Modificação de Pontos de Extremidade](/help/forms/developing/programmatically-endpoints.md#modifying-endpoints).)
+O código Java™ a seguir modifica um ponto de extremidade de Pasta monitorada. O ponto de extremidade é para o processo *MyApplication/EncryptDocument*. A pasta monitorada foi alterada para `C:\NewWatchedFolder`. (Consulte [Modificação de Pontos de Extremidade](/help/forms/developing/programmatically-endpoints.md#modifying-endpoints).)
 
 ```java
  /*
@@ -891,7 +891,7 @@ O código Java™ a seguir modifica um ponto de extremidade de Pasta monitorada.
 
 ## QuickStart: removendo um endpoint usando a API Java™ {#quickstart-removing-an-endpoint-using-the-java-api}
 
-O código Java™ a seguir remove um ponto de extremidade EJB de um serviço chamado *MyApplication/EncryptDocument*. (Consulte [Removendo Pontos de Extremidade](/help/forms/developing/programmatically-endpoints.md#removing-endpoints).)
+O código Java™ a seguir remove um ponto de extremidade EJB de um serviço chamado *MyApplication/EncryptDocument*. (Consulte [Removendo Pontos De Extremidade](/help/forms/developing/programmatically-endpoints.md#removing-endpoints).)
 
 ```java
  /*

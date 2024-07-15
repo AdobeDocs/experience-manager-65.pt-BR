@@ -38,13 +38,13 @@ Os fragmentos de conteúdo também podem ser entregues no formato JSON, usando o
 Esta e as seguintes páginas abordam as tarefas de criação, configuração, manutenção e uso dos fragmentos de conteúdo:
 
 * [Ativar a funcionalidade de fragmento de conteúdo para sua instância](/help/assets/content-fragments/content-fragments-configuration-browser.md)
-* [Modelos de fragmentos do conteúdo](/help/assets/content-fragments/content-fragments-models.md) - ativar, criar e definir modelos
-* [Gerenciamento de fragmentos de conteúdo](/help/assets/content-fragments/content-fragments-managing.md) : crie fragmentos de conteúdo; em seguida, edite, publique e faça referência
+* [Modelos de fragmentos do conteúdo](/help/assets/content-fragments/content-fragments-models.md) - habilitando, criando e definindo seus modelos
+* [Gerenciamento de fragmentos de conteúdo](/help/assets/content-fragments/content-fragments-managing.md) - crie fragmentos de conteúdo; em seguida, edite, publique e faça referência
 * [Variações - Criação do conteúdo dos fragmentos](/help/assets/content-fragments/content-fragments-variations.md) — crie o conteúdo do fragmento e variações do Principal
 * [Markdown](/help/assets/content-fragments/content-fragments-markdown.md) — uso da sintaxe de marcação para o fragmento
 * [Uso de conteúdo associado](/help/assets/content-fragments/content-fragments-assoc-content.md) — adição de conteúdo associado
 * [Metadados - Propriedades do fragmento](/help/assets/content-fragments/content-fragments-metadata.md) — visualização e edição das propriedades do fragmento
-* Uso [Fragmentos de conteúdo, juntamente com o GraphQL, para fornecer conteúdo](/help/assets/content-fragments/content-fragments-graphql.md) para uso em seus aplicativos. Para ajudar nisso, você pode visualizar [Saída JSON](/help/assets/content-fragments/content-fragments-json-preview.md).
+* Use os [Fragmentos de conteúdo, juntamente com o GraphQL, para fornecer conteúdo](/help/assets/content-fragments/content-fragments-graphql.md) para uso em seus aplicativos. Para ajudar nisso, você pode visualizar a [saída JSON](/help/assets/content-fragments/content-fragments-json-preview.md).
 
 >[!NOTE]
 >
@@ -128,10 +128,10 @@ Os fragmentos de conteúdo são:
 
 * Armazenados como **Ativos**:
 
-   * Os fragmentos de conteúdo (e suas variações) podem ser criados e mantidos do **Assets** console.
+   * Os fragmentos de conteúdo (e suas variações) podem ser criados e mantidos no console **Assets**.
    * Criados e editados no Editor de fragmento de conteúdo.
 
-* Usado no [editor de páginas com o componente Fragmento de conteúdo](/help/sites-authoring/content-fragments.md) (componente de referência):
+* Usado no [editor de páginas com o componente Fragmento de Conteúdo](/help/sites-authoring/content-fragments.md) (componente de referência):
 
    * O componente **Fragmento de conteúdo** está disponível para autores de página. Ele permite referenciar e entregar o fragmento de conteúdo necessário nos formatos HTML ou JSON.
 
@@ -140,7 +140,7 @@ Os fragmentos de conteúdo são:
 Fragmentos de conteúdo são uma estrutura de conteúdo que:
 
 * Não ter layout ou design (alguma formatação de texto é possível no modo Rich Text).
-* Ter um ou mais [partes componentes](#constituent-parts-of-a-content-fragment).
+* Ter uma ou mais [partes constituintes](#constituent-parts-of-a-content-fragment).
 * Podem [conter ou estar conectados a imagens](#fragments-with-visual-assets).
 * Podem usar [conteúdo intermediário](#in-between-content-when-page-authoring-with-content-fragments) quando referenciados em uma página.
 * São independentes do mecanismo de entrega (ou seja, a página ou canal).
@@ -149,11 +149,11 @@ Fragmentos de conteúdo são uma estrutura de conteúdo que:
 
 Para conceder mais controle do conteúdo aos autores, as imagens podem ser adicionadas e/ou integradas a um fragmento de conteúdo.
 
-Os ativos podem ser usados com um fragmento de conteúdo de várias maneiras; cada uma com suas próprias vantagens:
+O Assets pode ser usado com um fragmento de conteúdo de várias maneiras; cada uma com suas próprias vantagens:
 
 * **Inserir ativo** em um fragmento (fragmentos de mídia mista)
 
-   * São parte do fragmento (consulte [Partes constituintes de um fragmento de conteúdo](#constituent-parts-of-a-content-fragment)).
+   * São uma parte do fragmento (consulte [Partes constituintes de um fragmento de conteúdo](#constituent-parts-of-a-content-fragment)).
    * Definem a posição do ativo.
    * Consulte [Inserir ativos no fragmento](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment) no Editor de fragmentos para obter mais informações.
 
@@ -201,7 +201,7 @@ Os ativos do fragmento de conteúdo são compostos das seguintes partes (direta 
    * São incorporados ao sistema de parágrafo do fragmento.
    * Podem ser formatados quando o [fragmento é usado/referenciado em uma página](/help/sites-authoring/content-fragments.md).
    * Só podem ser adicionados, excluídos ou movidos dentro de um fragmento usando o editor de fragmentos. Essas ações não podem ser realizadas no editor de páginas.
-   * Só podem ser adicionados, excluídos ou movidos dentro de um fragmento usando o [Formato Rich Text no editor de fragmento](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment).
+   * Só podem ser adicionados, excluídos ou movidos dentro de um fragmento usando o [formato Rich Text no editor de fragmento](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment).
    * Só podem ser adicionados a elementos de texto multilinha (qualquer tipo de fragmento).
    * São anexados ao texto anterior (parágrafo).
 
@@ -251,7 +251,7 @@ Os ativos do fragmento de conteúdo são compostos das seguintes partes (direta 
 * **Variações**
 
    * Representações de texto de fragmento específicas para um objetivo editorial; podem estar relacionadas a canais, mas não é obrigatório. Também podem ser para modificações locais ad hoc.
-   * São criadas como cópias de **Principal**, mas podem ser editadas conforme necessário; há sobreposição de conteúdo entre as próprias variações.
+   * São criadas como cópias de **Mestre**, mas podem ser editadas conforme necessário; há sobreposição de conteúdo entre as próprias variações.
    * Podem ser definidas durante a criação do fragmento.
    * São armazenadas no fragmento para ajudar a evitar a dispersão de cópias de conteúdo.
    * As variações podem ser [sincronizadas](/help/assets/content-fragments/content-fragments-variations.md#synchronizing-with-master) com o Principal se o conteúdo do Principal tiver sido atualizado.

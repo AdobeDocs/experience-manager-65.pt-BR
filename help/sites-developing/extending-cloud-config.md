@@ -30,8 +30,8 @@ Os princípios usados no desenvolvimento das configurações foram baseados nos 
 * As configurações (por exemplo, propriedades/parágrafos) são herdadas dos pais.
 * Referenciado a partir de nós do Analytics por caminho.
 * Facilmente extensível.
-* Tem flexibilidade para atender a configurações mais complexas, como [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics).
-* Suporte para dependências (por exemplo, [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) Os plug-ins do precisam de um [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) configuração).
+* Tem flexibilidade para atender a configurações mais complexas, como o [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics).
+* Suporte para dependências (por exemplo, os plug-ins do [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) precisam da configuração [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics)).
 
 ## Estrutura {#structure}
 
@@ -52,7 +52,7 @@ Para fornecer uma configuração para novos serviços, faça o seguinte:
    * um modelo de configuração
    * um componente de configuração
 
-O modelo e o componente devem herdar o `sling:resourceSuperType` a partir do modelo base:
+O modelo e o componente devem herdar `sling:resourceSuperType` do modelo base:
 
 `cq/cloudserviceconfigs/templates/configpage`
 
@@ -70,7 +70,7 @@ Seu modelo estende o modelo base:
 
 `cq/cloudserviceconfigs/templates/configpage`
 
-E definir um `resourceType` que aponta para o componente personalizado.
+E defina um `resourceType` que aponte para o componente personalizado.
 
 ```xml
 /libs/cq/analytics/templates/sitecatalyst
@@ -123,7 +123,7 @@ O modelo de conteúdo é armazenado como `cq:Page` em:
 As configurações são armazenadas no subnó `jcr:content`.
 
 * As propriedades fixas, definidas em uma caixa de diálogo, devem ser armazenadas no `jcr:node` diretamente.
-* Elementos dinâmicos (uso de `parsys` ou `iparsys`) usar um subnó para armazenar os dados do componente.
+* Os elementos dinâmicos (que usam `parsys` ou `iparsys`) usam um subnó para armazenar os dados do componente.
 
 ```xml
 /etc/cloudservices/service/config/jcr:content as nt:unstructured
@@ -140,7 +140,7 @@ Para obter a documentação de referência sobre a API, consulte [com.day.cq.wcm
 
 ### Integração com o AEM {#aem-integration}
 
-Os serviços disponíveis estão listados na **Cloud Service** guia do **Propriedades da página** caixa de diálogo (de qualquer página que herde de `foundation/components/page` ou `wcm/mobile/components/page`).
+Os serviços disponíveis estão listados na guia **Cloud Service** da caixa de diálogo **Propriedades da Página** (de qualquer página que herde de `foundation/components/page` ou `wcm/mobile/components/page`).
 
 A guia também fornece:
 
@@ -151,19 +151,19 @@ A guia também fornece:
 
 Ao armazenar credenciais de usuário para o serviço, todas as senhas devem ser criptografadas.
 
-Você pode fazer isso adicionando um campo de formulário oculto. Este campo deve ter a anotação `@Encrypted` no nome da propriedade; ou seja, para a variável `password` o nome seria escrito como:
+Você pode fazer isso adicionando um campo de formulário oculto. Este campo deve ter a anotação `@Encrypted` no nome da propriedade; ou seja, para o campo `password`, o nome seria gravado como:
 
 `password@Encrypted`
 
-A propriedade será criptografada automaticamente (usando o `CryptoSupport` serviço) pela `EncryptionPostProcessor`.
+A propriedade será criptografada automaticamente (usando o serviço `CryptoSupport`) pelo `EncryptionPostProcessor`.
 
 >[!NOTE]
 >
->É semelhante ao padrão ` [SlingPostServlet](https://sling.apache.org/site/manipulating-content-the-slingpostservlet-servletspost.html)` anotações.
+>Isso é semelhante às ` [SlingPostServlet](https://sling.apache.org/site/manipulating-content-the-slingpostservlet-servletspost.html)` anotações padrão.
 
 >[!NOTE]
 >
->Por padrão, a variável `EcryptionPostProcessor` somente criptografa `POST` pedidos feitos a `/etc/cloudservices`.
+>Por padrão, o `EcryptionPostProcessor` criptografa somente `POST` solicitações feitas para `/etc/cloudservices`.
 
 #### Propriedades adicionais para a página de serviço jcr:nós de conteúdo {#additional-properties-for-service-page-jcr-content-nodes}
 
@@ -175,7 +175,7 @@ A propriedade será criptografada automaticamente (usando o `CryptoSupport` serv
   </tr>
   <tr>
    <td>componentReference</td>
-   <td>Caminho de referência para um componente a ser incluído automaticamente na página.<br /> Isso é usado para funcionalidade adicional e inclusões de JS.<br /> Isso inclui o componente na página em que<br /> <code> cq/cloudserviceconfigs/components/servicecomponents</code><br /> está incluído (normalmente antes da <code>body</code> tag).<br /> No caso do Adobe Analytics e do Adobe Target, usamos isso para incluir funcionalidades adicionais, como chamadas JavaScript para rastrear o comportamento do visitante.</td>
+   <td>Caminho de referência para um componente a ser incluído automaticamente na página.<br /> Usado para funcionalidade adicional e inclusões de JS.<br /> Isso inclui o componente na página em que <br /> <code> cq/cloudserviceconfigs/components/servicecomponents</code><br /> está incluído (normalmente antes da marca <code>body</code>).<br /> No caso do Adobe Analytics e do Adobe Target, usamos isso para incluir funcionalidades adicionais, como chamadas do JavaScript para rastrear o comportamento do visitante.</td>
   </tr>
   <tr>
    <td>descrição</td>
@@ -216,7 +216,7 @@ A propriedade será criptografada automaticamente (usando o `CryptoSupport` serv
 
 Esses serviços são fornecidos por padrão:
 
-* [Trechos do rastreador](/help/sites-administering/external-providers.md) (Google, WebTrends e outros)
+* [Trechos do Rastreador](/help/sites-administering/external-providers.md) (Google, WebTrends e outros)
 * [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics)
 * [Test&amp;Target](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-target)
 <!-- Search&Promote is end of life as of September 1, 2022 * [Search&Promote](/help/sites-administering/marketing-cloud.md#integrating-with-search-promote) -->

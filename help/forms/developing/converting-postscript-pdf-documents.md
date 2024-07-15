@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Conversão de Postscript em documentos PDF {#converting-postscript-to-pdf-documents}
 
-**Os exemplos e amostras neste documento são somente para AEM Forms no ambiente JEE.**
+**Exemplos e exemplos neste documento são somente para AEM Forms no ambiente JEE.**
 
 ## Sobre o serviço Distiller {#about-the-distiller-service}
 
@@ -26,7 +26,7 @@ O serviço Distiller® converte arquivos PostScript®, Encapsulated PostScript (
 
 >[!NOTE]
 >
->Para obter mais informações sobre o serviço Distiller, consulte [Referência de serviços para o AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Para obter mais informações sobre o serviço Distiller, consulte [Referência de serviços para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Conversão de PostScript em documentos PDF {#converting-postscript-to-pdf-documents-inner}
 
@@ -34,11 +34,11 @@ Este tópico descreve como você pode usar a API de serviço do Distiller (Java 
 
 >[!NOTE]
 >
->Para obter mais informações sobre o serviço Distiller, consulte [Referência de serviços para o AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Para obter mais informações sobre o serviço Distiller, consulte [Referência de serviços para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 >[!NOTE]
 >
->Para converter arquivos PostScript em documentos PDF, um dos itens a seguir precisa ser instalado no servidor que hospeda o AEM Forms: Acrobat 9 ou Microsoft Visual C++ 2005 pacote redistribuível.
+>Para converter arquivos PostScript em documentos PDF, um dos seguintes itens precisa ser instalado no servidor que hospeda o AEM Forms: Acrobat 9 ou Microsoft Visual C++ 2005 pacote redistribuível.
 
 ### Resumo das etapas {#summary-of-steps}
 
@@ -56,17 +56,17 @@ Inclua os arquivos necessários no projeto de desenvolvimento. Se você estiver 
 
 **Criar um cliente de serviço Distiller**
 
-Antes de executar programaticamente uma operação de serviço Distiller, você deve criar um cliente de serviço Distiller. Se estiver usando a API Java, crie uma `DistillerServiceClient` objeto. Se estiver usando a API do serviço Web, crie uma `DistillerServiceService` objeto.
+Antes de executar programaticamente uma operação de serviço Distiller, você deve criar um cliente de serviço Distiller. Se você estiver usando a API Java, crie um objeto `DistillerServiceClient`. Se você estiver usando a API de serviço Web, crie um objeto `DistillerServiceService`.
 
 **Recuperar o arquivo para converter**
 
 Recupere o arquivo que deseja converter. Por exemplo, para converter um arquivo PS em um documento PDF, você deve recuperar o arquivo PS.
 
-**Chame a operação de criação de PDF**
+**Invocar a operação de criação de PDF**
 
 Depois de criar o cliente de serviço, você pode chamar a operação de criação de PDF. Esta operação precisará de informações sobre o documento a ser convertido, incluindo o caminho para o documento de destino.
 
-**Salve o documento PDF**
+**Salvar o documento do PDF**
 
 Você pode salvar o documento PDF como um arquivo PDF.
 
@@ -74,7 +74,7 @@ Você pode salvar o documento PDF como um arquivo PDF.
 
 [Converter um arquivo PostScript em PDF usando a API Java](converting-postscript-pdf-documents.md#convert-a-postscript-file-to-pdf-using-the-java-api)
 
-[Conversão de um arquivo PostScript em PDF usando a API do serviço da Web](converting-postscript-pdf-documents.md#converting-a-postscript-file-to-pdf-using-the-web-service-api)
+[Conversão de um arquivo PostScript em PDF usando a API do serviço Web](converting-postscript-pdf-documents.md#converting-a-postscript-file-to-pdf-using-the-web-service-api)
 
 [Inclusão de arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -92,50 +92,50 @@ Converta um arquivo PostScript em um documento PDF usando a API de serviço do D
 
 1. Crie um cliente de serviço Distiller.
 
-   * Criar um `ServiceClientFactory` objeto que contém propriedades de conexão.
-   * Criar um `DistillerServiceClient` usando seu construtor e transmitindo o `ServiceClientFactory` objeto.
+   * Crie um objeto `ServiceClientFactory` que contenha propriedades de conexão.
+   * Crie um objeto `DistillerServiceClient` usando seu construtor e transmitindo o objeto `ServiceClientFactory`.
 
 1. Recupere o arquivo a ser convertido.
 
-   * Criar um `java.io.FileInputStream` objeto que representa o arquivo a ser convertido usando seu construtor e transmitindo um valor de string que especifica o local do arquivo.
-   * Criar um `com.adobe.idp.Document` usando seu construtor e transmitindo o `java.io.FileInputStream` objeto.
+   * Crie um objeto `java.io.FileInputStream` que represente o arquivo a ser convertido usando seu construtor e transmitindo um valor de cadeia de caracteres que especifique o local do arquivo.
+   * Crie um objeto `com.adobe.idp.Document` usando seu construtor e transmitindo o objeto `java.io.FileInputStream`.
 
 1. Chame a operação de criação de PDF.
 
-   Chame o `DistillerServiceClient` do objeto `createPDF` e passe os seguintes valores:
+   Chame o método `createPDF` do objeto `DistillerServiceClient` e passe os seguintes valores:
 
-   * A variável `com.adobe.idp.Document` objeto que representa o arquivo PS, EPS ou PRN a ser convertido
-   * A `java.lang.String` objeto que contém o nome do arquivo a ser convertido
-   * A `java.lang.String` objeto que contém o nome das configurações do Adobe PDF a serem usadas
-   * A `java.lang.String` objeto que contém o nome das configurações de segurança a serem usadas
-   * Uma opção `com.adobe.idp.Document` objeto que contém configurações a serem aplicadas durante a geração do documento PDF
-   * Uma opção `com.adobe.idp.Document` objeto que contém informações de metadados a serem aplicadas ao documento PDF
+   * O objeto `com.adobe.idp.Document` que representa o arquivo PS, EPS ou PRN a ser convertido
+   * Um objeto `java.lang.String` que contém o nome do arquivo a ser convertido
+   * Um objeto `java.lang.String` que contém o nome das configurações do Adobe PDF a serem usadas
+   * Um objeto `java.lang.String` que contém o nome das configurações de segurança a serem usadas
+   * Um objeto `com.adobe.idp.Document` opcional que contém configurações a serem aplicadas durante a geração do documento PDF
+   * Um objeto `com.adobe.idp.Document` opcional que contém informações de metadados a serem aplicadas ao documento PDF
 
-   A variável `createPDF` o método retorna um `CreatePDFResult` objeto que contém o novo documento PDF e um arquivo de log que pode ser gerado. O arquivo de log geralmente contém mensagens de erro ou aviso que são geradas pela solicitação de conversão.
+   O método `createPDF` retorna um objeto `CreatePDFResult` que contém o novo documento PDF e um arquivo de log que pode ser gerado. O arquivo de log geralmente contém mensagens de erro ou aviso que são geradas pela solicitação de conversão.
 
 1. Salve o documento PDF.
 
    Para obter o documento PDF recém-criado, execute as seguintes ações:
 
-   * Chame o `CreatePDFResult` do objeto `getCreatedDocument` método. Isso retorna um `com.adobe.idp.Document` objeto.
-   * Chame o `com.adobe.idp.Document` do objeto `copyToFile` método para extrair o documento PDF.
+   * Invoque o método `getCreatedDocument` do objeto `CreatePDFResult`. Isso retorna um objeto `com.adobe.idp.Document`.
+   * Invoque o método `copyToFile` do objeto `com.adobe.idp.Document` para extrair o documento PDF.
 
    Da mesma forma, para obter o documento de log, execute as ações a seguir.
 
-   * Chame o `CreatePDFResult` do objeto `getLogDocument` método. Isso retorna um `com.adobe.idp.Document` objeto.
-   * Chame o `com.adobe.idp.Document` do objeto `copyToFile` método para extrair o documento de log.
+   * Invoque o método `getLogDocument` do objeto `CreatePDFResult`. Isso retorna um objeto `com.adobe.idp.Document`.
+   * Invoque o método `copyToFile` do objeto `com.adobe.idp.Document` para extrair o documento de log.
 
 **Consulte também**
 
 [Resumo das etapas](converting-postscript-pdf-documents.md#summary-of-steps)
 
-[Início rápido (modo SOAP): conversão de um arquivo PostScript em um documento PDF usando a API do Java](/help/forms/developing/distiller-service-java-api-quick.md#quick-start-soap-mode-converting-a-postscript-file-to-a-pdf-document-using-the-java-api)
+[Início rápido (modo SOAP): conversão de um arquivo PostScript em um documento PDF usando a API Java](/help/forms/developing/distiller-service-java-api-quick.md#quick-start-soap-mode-converting-a-postscript-file-to-a-pdf-document-using-the-java-api)
 
 [Inclusão de arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Definindo propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Conversão de um arquivo PostScript em PDF usando a API do serviço da Web {#converting-a-postscript-file-to-pdf-using-the-web-service-api}
+### Conversão de um arquivo PostScript em PDF usando a API do serviço Web {#converting-a-postscript-file-to-pdf-using-the-web-service-api}
 
 Converta um arquivo PostScript em um documento PDF usando a API de serviço do Distiller (serviço da Web):
 
@@ -145,48 +145,48 @@ Converta um arquivo PostScript em um documento PDF usando a API de serviço do D
 
    >[!NOTE]
    >
-   >Substituir `localhost` com o endereço IP do servidor que hospeda o AEM Forms.
+   >Substitua `localhost` pelo endereço IP do servidor que hospeda o AEM Forms.
 
 1. Crie um cliente de serviço Distiller.
 
-   * Criar um `DistillerServiceClient` usando seu construtor padrão.
-   * Criar um `DistillerServiceClient.Endpoint.Address` usando o `System.ServiceModel.EndpointAddress` construtor. Transmita um valor de string que especifique o WSDL para o serviço AEM Forms (por exemplo, `http://localhost:8080/soap/services/DistillerService?blob=mtom`.) Não é necessário usar a variável `lc_version` atributo. Esse atributo é usado quando você cria uma referência de serviço. No entanto, especifique `?blob=mtom` para usar MTOM.
-   * Criar um `System.ServiceModel.BasicHttpBinding` obtendo o valor do `DistillerServiceClient.Endpoint.Binding` campo. Converter o valor de retorno em `BasicHttpBinding`.
-   * Defina o `System.ServiceModel.BasicHttpBinding` do objeto `MessageEncoding` campo para `WSMessageEncoding.Mtom`. Esse valor garante que a MTOM seja usada.
+   * Crie um objeto `DistillerServiceClient` usando seu construtor padrão.
+   * Crie um objeto `DistillerServiceClient.Endpoint.Address` usando o construtor `System.ServiceModel.EndpointAddress`. Transmita um valor de cadeia de caracteres que especifique o WSDL para o serviço AEM Forms (por exemplo, `http://localhost:8080/soap/services/DistillerService?blob=mtom`.) Você não precisa usar o atributo `lc_version`. Esse atributo é usado quando você cria uma referência de serviço. No entanto, especifique `?blob=mtom` para usar MTOM.
+   * Crie um objeto `System.ServiceModel.BasicHttpBinding` obtendo o valor do campo `DistillerServiceClient.Endpoint.Binding`. Converter o valor de retorno em `BasicHttpBinding`.
+   * Defina o campo `MessageEncoding` do objeto `System.ServiceModel.BasicHttpBinding` como `WSMessageEncoding.Mtom`. Esse valor garante que a MTOM seja usada.
    * Ative a autenticação HTTP básica executando as seguintes tarefas:
 
-      * Atribuir o nome de usuário dos formulários AEM ao campo `DistillerServiceClient.ClientCredentials.UserName.UserName`.
+      * Atribua o nome de usuário dos formulários AEM ao campo `DistillerServiceClient.ClientCredentials.UserName.UserName`.
       * Atribua o valor de senha correspondente ao campo `DistillerServiceClient.ClientCredentials.UserName.Password`.
-      * Atribuir o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Atribuir o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
+      * Atribua o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * Atribua o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Recupere o arquivo a ser convertido.
 
-   * Criar um `BLOB` usando seu construtor. Este `BLOB` objeto é usado para armazenar o arquivo a ser convertido em um documento PDF.
-   * Criar um `System.IO.FileStream` chamando seu construtor e transmitindo um valor de string que representa o local do arquivo e o modo em que o arquivo será aberto.
-   * Crie uma matriz de bytes que armazene o conteúdo da variável `System.IO.FileStream` objeto. Você pode determinar o tamanho da matriz de bytes obtendo o `System.IO.FileStream` do objeto `Length` propriedade.
-   * Preencha a matriz de bytes com dados de fluxo invocando o `System.IO.FileStream` do objeto `Read` e transmitindo a matriz de bytes, a posição inicial e o comprimento do fluxo para leitura.
-   * Preencha o `BLOB` atribuindo seu `MTOM` com o conteúdo da matriz de bytes.
+   * Crie um objeto `BLOB` usando seu construtor. Este objeto `BLOB` é usado para armazenar o arquivo a ser convertido em um documento PDF.
+   * Crie um objeto `System.IO.FileStream` chamando seu construtor e transmitindo um valor de cadeia de caracteres que representa o local do arquivo e o modo em que o arquivo será aberto.
+   * Crie uma matriz de bytes que armazene o conteúdo do objeto `System.IO.FileStream`. Você pode determinar o tamanho da matriz de bytes obtendo a propriedade `Length` do objeto `System.IO.FileStream`.
+   * Preencha a matriz de bytes com os dados de fluxo invocando o método `Read` do objeto `System.IO.FileStream` e transmitindo a matriz de bytes, a posição inicial e o comprimento do fluxo para leitura.
+   * Preencha o objeto `BLOB` atribuindo sua propriedade `MTOM` com o conteúdo da matriz de bytes.
 
 1. Chame a operação de criação de PDF.
 
-   Chame o `DistillerServiceService` do objeto `CreatePDF2` e passe os seguintes valores obrigatórios:
+   Chame o método `CreatePDF2` do objeto `DistillerServiceService` e passe os seguintes valores obrigatórios:
 
-   * A variável `BLOB` objeto que representa o arquivo PS a ser convertido
+   * O objeto `BLOB` que representa o arquivo PS a ser convertido
    * Uma string que contém o nome do caminho do arquivo a ser convertido
-   * Um objeto de string que contém as configurações do Adobe PDF a serem usadas (por exemplo, `Standard`)
-   * Um objeto de string que contém as configurações de segurança a serem usadas (por exemplo, `No Securit`y)
-   * Uma opção `BLOB` objeto que contém configurações a serem aplicadas durante a geração do documento PDF
-   * Uma opção `BLOB` objeto que contém informações de metadados a serem aplicadas ao documento PDF
-   * A `BLOB` parâmetro de saída usado para armazenar o documento PDF
-   * A `BLOB` parâmetro de saída usado para armazenar o log
+   * Um objeto de cadeia de caracteres que contém as configurações de Adobe PDF a serem usadas (por exemplo, `Standard`)
+   * Um objeto de cadeia de caracteres que contém as configurações de segurança a serem usadas (por exemplo, `No Securit`a)
+   * Um objeto `BLOB` opcional que contém configurações a serem aplicadas durante a geração do documento PDF
+   * Um objeto `BLOB` opcional que contém informações de metadados a serem aplicadas ao documento PDF
+   * Um parâmetro de saída `BLOB` usado para armazenar o documento PDF
+   * Um parâmetro de saída `BLOB` usado para armazenar o log
 
 1. Salve o documento PDF.
 
-   * Criar um `System.IO.FileStream` invocando seu construtor. Transmita um valor de string que represente o local do arquivo do documento de PDF assinado e o modo no qual o arquivo será aberto.
-   * Crie uma matriz de bytes que armazene o conteúdo da variável `BLOB` objeto que foi retornado pelo `CreatePDF2` (o parâmetro de saída). Preencha a matriz de bytes obtendo o valor de `BLOB` do objeto `MTOM` membro de dados.
-   * Criar um `System.IO.BinaryWriter` objeto chamando seu construtor e transmitindo o `System.IO.FileStream` objeto.
-   * Grave o conteúdo da matriz de bytes em um arquivo PDF, chamando o `System.IO.BinaryWriter` do objeto `Write` e transmitindo a matriz de bytes.
+   * Crie um objeto `System.IO.FileStream` invocando seu construtor. Transmita um valor de string que represente o local do arquivo do documento de PDF assinado e o modo no qual o arquivo será aberto.
+   * Crie uma matriz de bytes que armazene o conteúdo do objeto `BLOB` retornado pelo método `CreatePDF2` (o parâmetro de saída). Popular a matriz de bytes obtendo o valor do membro de dados `MTOM` do objeto `BLOB`.
+   * Crie um objeto `System.IO.BinaryWriter` invocando seu construtor e transmitindo o objeto `System.IO.FileStream`.
+   * Grave o conteúdo da matriz de bytes em um arquivo PDF, chamando o método `Write` do objeto `System.IO.BinaryWriter` e transmitindo a matriz de bytes.
 
 **Consulte também**
 

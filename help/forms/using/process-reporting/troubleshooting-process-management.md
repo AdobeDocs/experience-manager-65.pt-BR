@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ## Problemas ao criar filtros no Internet Explorer 9 no Microsoft Windows 7 {#issues-faced-in-creating-filters-on-internet-explorer-on-microsoft-windows}
 
-Se você criar filtros para relatórios predefinidos, os seguintes problemas ocorrerão intermitentemente no **Internet Explorer 9** para **Microsoft Windows 7** ambiente:
+Se você criar filtros para relatórios predefinidos, os seguintes problemas ocorrerão intermitentemente no **Internet Explorer 9** para o ambiente do **Microsoft Windows 7**:
 
 * A lista suspensa no campo Value exibe identificadores exclusivos em vez dos valores.
 * O controle Calendário no campo Valor exibe caracteres japoneses.

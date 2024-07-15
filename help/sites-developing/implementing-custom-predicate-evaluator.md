@@ -19,11 +19,11 @@ ht-degree: 0%
 
 # Implementação de um avaliador de predicado personalizado no Construtor de consultas{#implementing-a-custom-predicate-evaluator-for-the-query-builder}
 
-Esta seção descreve como estender o [Construtor de consulta](/help/sites-developing/querybuilder-api.md) implementando um avaliador de predicado personalizado.
+Esta seção descreve como estender o [Construtor de Consultas](/help/sites-developing/querybuilder-api.md) implementando um avaliador de predicado personalizado.
 
 ## Visão geral {#overview}
 
-A variável [Construtor de consulta](/help/sites-developing/querybuilder-api.md) O oferece uma maneira fácil de consultar o repositório de conteúdo. O CQ vem com um conjunto de avaliadores de predicado que ajuda você a lidar com seus dados.
+O [Construtor de Consultas](/help/sites-developing/querybuilder-api.md) oferece uma maneira fácil de consultar o repositório de conteúdo. O CQ vem com um conjunto de avaliadores de predicado que ajuda você a lidar com seus dados.
 
 No entanto, talvez você queira simplificar suas consultas implementando um avaliador de predicado personalizado que oculta alguma complexidade e garante uma semântica melhor.
 
@@ -38,13 +38,13 @@ Um predicado personalizado também pode executar outras coisas que não são dir
 
 >[!NOTE]
 >
->Você pode encontrar exemplos de queries no [Construtor de consulta](/help/sites-developing/querybuilder-api.md) seção.
+>Você pode encontrar exemplos de consultas na seção [Construtor de Consultas](/help/sites-developing/querybuilder-api.md).
 
 CÓDIGO NO GITHUB
 
 Você pode encontrar o código desta página no GitHub.
 
-* [Abra o projeto aem-search-custom-predicate-valuator no GitHub](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator)
+* [Abrir o projeto aem-search-custom-predicate-valuator no GitHub](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator)
 * Baixar o projeto como [um arquivo ZIP](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator/archive/master.zip)
 
 ### Avaliador de predicado em detalhes {#predicate-evaluator-in-detail}
@@ -55,7 +55,7 @@ Ele mapeia uma restrição de pesquisa de nível superior (como &quot;width > 20
 
 >[!NOTE]
 >
->Para obter mais informações sobre o `PredicateEvaluator` e a variável `com.day.cq.search` pacote, consulte a seção [Documentação do Java™](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/search/package-summary.html).
+>Para obter mais informações sobre o pacote `PredicateEvaluator` e `com.day.cq.search`, consulte a [documentação do Java™](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/search/package-summary.html).
 
 ### Implementação de um avaliador de predicado personalizado para metadados de replicação {#implementing-a-custom-predicate-evaluator-for-replication-metadata}
 
@@ -63,13 +63,13 @@ Como exemplo, esta seção descreve como criar um avaliador de predicado persona
 
 * `cq:lastReplicated` que armazena a data da última ação de replicação
 
-* `cq:lastReplicatedBy` que armazena a id do usuário que acionou a última ação de replicação
+* `cq:lastReplicatedBy` que armazena a ID do usuário que acionou a última ação de replicação
 
 * `cq:lastReplicationAction` que armazena a última ação de replicação (por exemplo, Ativação, Desativação)
 
 #### Consulta de metadados de replicação com avaliadores de predicado padrão {#querying-replication-metadata-with-default-predicate-evaluators}
 
-A consulta a seguir busca a lista de nós em `/content` ramificação que foi ativada por `admin` desde o início do ano.
+A consulta a seguir busca a lista de nós na ramificação `/content` que foram ativados por `admin` desde o início do ano.
 
 ```xml
 path=/content
@@ -89,7 +89,7 @@ Essa consulta é válida, mas difícil de ler e não realça a relação entre a
 
 #### Objetivos {#objectives}
 
-A meta do `ReplicationPredicateEvaluator` é para oferecer suporte à consulta acima usando a seguinte sintaxe.
+O objetivo de `ReplicationPredicateEvaluator` é oferecer suporte à consulta acima usando a seguinte sintaxe.
 
 ```xml
 path=/content
@@ -105,13 +105,13 @@ O agrupamento de predicados de metadados de replicação com um avaliador de pre
 
 >[!NOTE]
 >
->A configuração de novos projetos Adobe Experience Manager (AEM) usando o maven é documentada por [Como construir projetos AEM usando o Apache Maven](/help/sites-developing/ht-projects-maven.md).
+>A configuração de novos projetos Adobe Experience Manager (AEM) usando maven está documentada por [Como compilar projetos AEM usando Apache Maven](/help/sites-developing/ht-projects-maven.md).
 
-Primeiro, atualize as dependências Maven do seu projeto. A variável `PredicateEvaluator` faz parte da `cq-search` artefato, portanto, ele deve ser adicionado ao arquivo pom.xml Maven.
+Primeiro, atualize as dependências Maven do seu projeto. O `PredicateEvaluator` faz parte do artefato `cq-search` e, portanto, deve ser adicionado ao arquivo pom.xml Maven.
 
 >[!NOTE]
 >
->O âmbito de aplicação do `cq-search` a dependência está definida como `provided` porque `cq-search` é fornecido pela `OSGi` recipiente.
+>O escopo da dependência `cq-search` está definido como `provided` porque `cq-search` é fornecido pelo contêiner `OSGi`.
 
 pom.xml
 
@@ -132,18 +132,18 @@ O trecho a seguir mostra as diferenças no [formato de comparação unificado](h
              <version>3.8.1</version></dependency>
 ```
 
-[aem-search-custom-predicate-avaliator](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator) - [pom.xml](https://raw.githubusercontent.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator/7aed6b35b4c8dd3655296e1b10cf40c0dd1eaa61/pom.xml)
+[aem-search-custom-predicate-valuator](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator) - [pom.xml](https://raw.githubusercontent.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator/7aed6b35b4c8dd3655296e1b10cf40c0dd1eaa61/pom.xml)
 
 #### Gravando O ReplicationPredicateEvaluator {#writing-the-replicationpredicateevaluator}
 
-A variável `cq-search` o projeto contém o `AbstractPredicateEvaluator` classe abstrata. Isso pode ser estendido com algumas etapas para implementar seu próprio avaliador de predicado personalizado `(PredicateEvaluator`).
+O projeto `cq-search` contém a classe abstrata `AbstractPredicateEvaluator`. Isso pode ser estendido com algumas etapas para implementar seu próprio avaliador de predicado personalizado (`(PredicateEvaluator`).
 
 >[!NOTE]
 >
->O procedimento a seguir explica como criar uma `Xpath` expressão para filtrar dados. Outra opção seria implementar a `includes` método que seleciona dados em base de linha. Consulte a [Documentação do Java™](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/search/eval/PredicateEvaluator.html#includes28comdaycqsearchpredicatejavaxjcrqueryrowcomdaycqsearchevalevaluationcontext29) para obter mais informações.
+>O procedimento a seguir explica como criar uma expressão `Xpath` para filtrar dados. Outra opção seria implementar o método `includes` que seleciona dados em uma base de linha. Consulte a [documentação do Java™](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/search/eval/PredicateEvaluator.html#includes28comdaycqsearchpredicatejavaxjcrqueryrowcomdaycqsearchevalevaluationcontext29) para obter mais informações.
 
 1. Criar uma classe Java™ que estende `com.day.cq.search.eval.AbstractPredicateEvaluator`
-1. Anotar sua classe com um `@Component` curtir o seguinte
+1. Anotar sua classe com um `@Component` como o seguinte
 
    src/main/java/com/adobe/aem/docs/search/ReplicationPredicateEvaluator.java
 
@@ -164,15 +164,15 @@ A variável `cq-search` o projeto contém o `AbstractPredicateEvaluator` classe 
  }
 ```
 
-[aem-search-custom-predicate-avaliator](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator) - [src/main/java/com/adobe/aem/docs/search/ReplicationPredicateEvaluator.java](https://raw.githubusercontent.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator/ec70fac35fbd0d132e00c6066a204804e9cbe70f/src/main/java/com/adobe/aem/docs/search/ReplicationPredicateEvaluator.java)
+[aem-search-custom-predicate-valuator](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator) - [src/main/java/com/adobe/aem/docs/search/ReplicationPredicateEvaluator.java](https://raw.githubusercontent.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator/ec70fac35fbd0d132e00c6066a204804e9cbe70f/src/main/java/com/adobe/aem/docs/search/ReplicationPredicateEvaluator.java)
 
 >[!NOTE]
 >
->A variável `factory`deve ser uma sequência de caracteres exclusiva, começando com `com.day.cq.search.eval.PredicateEvaluator/`e terminando com o nome do seu personalizado `PredicateEvaluator`.
+>O `factory`deve ser uma cadeia de caracteres exclusiva que comece com `com.day.cq.search.eval.PredicateEvaluator/`e termine com o nome de seu `PredicateEvaluator` personalizado.
 
 >[!NOTE]
 >
->O nome do `PredicateEvaluator` é o nome do predicado, que é usado ao criar consultas.
+>O nome de `PredicateEvaluator` é o nome do predicado, que é usado ao criar consultas.
 
 1. Substituir:
 
@@ -180,11 +180,11 @@ A variável `cq-search` o projeto contém o `AbstractPredicateEvaluator` classe 
    public String getXPathExpression(Predicate predicate, EvaluationContext context)
    ```
 
-   No método override, você cria um `Xpath` expressão baseada no `Predicate` argumento.
+   No método override, você compila uma expressão `Xpath` com base no `Predicate` fornecido no argumento.
 
 ### Exemplo de um avaliador de predicado personalizado para metadados de replicação {#example-of-a-custom-predicate-evalutor-for-replication-metadata}
 
-A execução completa deste `PredicateEvaluator` pode ser semelhante à seguinte classe.
+A implementação completa deste `PredicateEvaluator` pode ser semelhante à seguinte classe.
 
 src/main/java/com/adobe/aem/docs/search/ReplicationPredicateEvaluator.java
 
@@ -307,4 +307,4 @@ public class ReplicationPredicateEvaluator extends AbstractPredicateEvaluator {
 }
 ```
 
-[aem-search-custom-predicate-avaliator](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator) - [src/main/java/com/adobe/aem/docs/search/ReplicationPredicateEvaluator.java](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator/blob/master/src/main/java/com/adobe/aem/docs/search/ReplicationPredicateEvaluator.java)
+[aem-search-custom-predicate-valuator](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator) - [src/main/java/com/adobe/aem/docs/search/ReplicationPredicateEvaluator.java](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator/blob/master/src/main/java/com/adobe/aem/docs/search/ReplicationPredicateEvaluator.java)

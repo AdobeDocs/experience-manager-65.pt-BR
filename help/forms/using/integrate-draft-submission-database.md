@@ -19,34 +19,34 @@ ht-degree: 1%
 
 ## Visão geral de exemplo {#sample-overview}
 
-O componente de rascunhos e envios do portal do AEM Forms permite que os usuários salvem seus formulários como rascunhos e os enviem posteriormente de qualquer dispositivo. Além disso, os usuários podem exibir seus formulários enviados no portal. Para ativar essa funcionalidade, a AEM Forms fornece serviços de dados e metadados para armazenar os dados preenchidos por um usuário no formulário e os metadados do formulário associados aos rascunhos e formulários enviados. Esses dados são armazenados no repositório CRX, por padrão. No entanto, como os usuários interagem com formulários por meio da instância de publicação do AEM, que geralmente está fora do firewall corporativo, as organizações podem querer personalizar o armazenamento de dados para que seja mais seguro e confiável.
+O componente de rascunhos e envios do portal do AEM Forms permite que os usuários salvem seus formulários como rascunhos e os enviem posteriormente de qualquer dispositivo. Além disso, os usuários podem exibir seus formulários enviados no portal. Para ativar essa funcionalidade, a AEM Forms fornece serviços de dados e metadados para armazenar os dados preenchidos por um usuário no formulário e os metadados do formulário associados aos rascunhos e formulários enviados. Esses dados são armazenados no repositório do CRX, por padrão. No entanto, como os usuários interagem com formulários por meio da instância de publicação do AEM, que geralmente está fora do firewall corporativo, as organizações podem querer personalizar o armazenamento de dados para que seja mais seguro e confiável.
 
-A amostra, discutida neste documento, é uma implementação de referência de dados personalizados e serviços de metadados para integrar rascunhos e componentes de envios a um banco de dados. O banco de dados usado na implementação de amostra é **MySQL 5.6.24**. No entanto, é possível integrar o componente de rascunhos e envios a qualquer banco de dados de sua escolha.
+A amostra, discutida neste documento, é uma implementação de referência de dados personalizados e serviços de metadados para integrar rascunhos e componentes de envios a um banco de dados. O banco de dados usado na implementação da amostra é **MySQL 5.6.24**. No entanto, é possível integrar o componente de rascunhos e envios a qualquer banco de dados de sua escolha.
 
 >[!NOTE]
 >
 >* Os exemplos e as configurações explicadas neste documento são de acordo com o MySQL 5.6.24 e você deve substituí-los apropriadamente pelo seu sistema de banco de dados.
->* Verifique se você instalou a versão mais recente do pacote complementar do AEM Forms. Para obter a lista de pacotes disponíveis, consulte [Versões do AEM Forms](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) artigo.
+>* Verifique se você instalou a versão mais recente do pacote complementar do AEM Forms. Para obter a lista de pacotes disponíveis, consulte o artigo [versões do AEM Forms](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html).
 >* O pacote de amostra funciona somente com ações de envio do Adaptive Forms.
 
 ## Definir e configurar a amostra {#set-up-and-configure-the-sample}
 
 Execute as seguintes etapas, em todas as instâncias de autor e publicação, para instalar e configurar a amostra:
 
-1. Baixar o seguinte **aem-fp-db-integration-sample-pkg-6.1.2.zip** para o seu sistema de arquivos.
+1. Baixe o seguinte pacote **aem-fp-db-integration-sample-pkg-6.1.2.zip** no sistema de arquivos.
 
    Exemplo de pacote para integração de banco de dados
 
 [Obter arquivo](assets/aem-fp-db-integration-sample-pkg-6.1.2.zip)
 
-1. Acesse o gerenciador de pacotes do AEM em https://[*host*]:[*porta*]/crx/packmgr/
-1. Clique em **[!UICONTROL Fazer upload do pacote]**.
+1. Acesse o gerenciador de pacotes do AEM em https://[*host*]:[*port*]/crx/packmgr/.
+1. Clique em **[!UICONTROL Carregar pacote]**.
 
-1. Navegue para selecionar o **aem-fp-db-integration-sample-pkg-6.1.2.zip** e clique em **[!UICONTROL OK]**.
-1. Clique em **[!UICONTROL Instalar]** ao lado do pacote para instalar o pacote.
-1. Ir para **[!UICONTROL Configuração do console da Web AEM]**
-página em https://[*host*]:[*porta*]/system/console/configMgr
-1. Clique para abrir **[!UICONTROL Configuração de rascunho e envio do Forms Portal]** no modo de edição.
+1. Navegue para selecionar o pacote **aem-fp-db-integration-sample-pkg-6.1.2.zip** e clique em **[!UICONTROL OK]**.
+1. Clique em **[!UICONTROL Instalar]** ao lado do pacote para instalá-lo.
+1. Ir para **[!UICONTROL Configuração do Console Web AEM]**
+página em https://[*host*]:[*port*]/system/console/configMgr.
+1. Clique para abrir o **[!UICONTROL Rascunho e Configuração de Envio do Forms Portal]** no modo de edição.
 
 1. Especifique os valores das propriedades conforme descrito na tabela a seguir:
 
@@ -61,7 +61,7 @@ página em https://[*host*]:[*porta*]/system/console/configMgr
 
    >[!NOTE]
    >
-   >Os serviços são resolvidos pelos nomes mencionados como valor para o `aem.formsportal.impl.prop` da seguinte forma:
+   >Os serviços são resolvidos pelos seus nomes mencionados como valor para a chave `aem.formsportal.impl.prop` da seguinte maneira:
 
    ```java
    @Service(value = {SubmitDataService.class, DraftDataService.class})
@@ -86,8 +86,8 @@ página em https://[*host*]:[*porta*]/system/console/configMgr
 
 1. Deixe as outras configurações como estão e clique em **[!UICONTROL Salvar]**.
 
-1. A conexão do banco de dados pode ser feita por meio da fonte de dados agrupada da conexão Apache Sling.
-1. Para conexão com o Apache Sling, localize e clique para abrir **[!UICONTROL Fonte de dados agrupada da conexão Apache Sling]** no modo de edição, na Configuração do console da Web. Especifique os valores das propriedades conforme descrito na tabela a seguir:
+1. A conexão do banco de dados pode ser feita por meio do Apache Sling Connection Pooled Data Source.
+1. Para conexão Apache Sling, localize e clique para abrir a **[!UICONTROL Fonte de dados agrupada da conexão Apache Sling]** no modo de edição, na Configuração do console da Web. Especifique os valores das propriedades conforme descrito na tabela a seguir:
 
 <table>
  <tbody>
@@ -97,15 +97,15 @@ página em https://[*host*]:[*porta*]/system/console/configMgr
   </tr>
   <tr>
    <td>Nome da fonte de dados</td>
-   <td><p>Um nome de fonte de dados para filtrar drivers do pool de fonte de dados</p> <p><strong>Nota: </strong><em>A implementação de amostra usa FormsPortal como o nome da fonte de dados.</em></p> </td>
+   <td><p>Um nome de fonte de dados para filtrar drivers do pool de fonte de dados</p> <p><strong>Observação: </strong><em>A implementação de exemplo usa FormsPortal como o nome da fonte de dados.</em></p> </td>
   </tr>
   <tr>
    <td>Classe de driver JDBC</td>
    <td>com.mysql.jdbc.Driver</td>
   </tr>
   <tr>
-   <td>URI da conexão JDBC<br /> </td>
-   <td>jdbc:mysql://[<em>host</em>]:[<em>porta</em>]/[<em>schema_name</em>]</td>
+   <td>URI de conexão JDBC<br /> </td>
+   <td>jdbc:mysql://[<em>host</em>]:[<em>porta</em>]/[<em>nome_do_esquema</em>]</td>
   </tr>
   <tr>
    <td>Nome de usuário</td>
@@ -225,7 +225,7 @@ página em https://[*host*]:[*porta*]/system/console/configMgr
    ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
    ```
 
-   **Instrução SQL para metadatatable adicional**
+   Instrução **SQL para additional metadatatable**
 
    ```sql
    CREATE TABLE `additionalmetadatatable` (
@@ -237,7 +237,7 @@ página em https://[*host*]:[*porta*]/system/console/configMgr
    ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
    ```
 
-   **Instrução SQL para tabela de comentários**
+   **Instrução SQL para a tabela de comentários**
 
    ```sql
    CREATE TABLE `commenttable` (
@@ -291,7 +291,7 @@ página em https://[*host*]:[*porta*]/system/console/configMgr
    CHANGE `xdpRef` `xdpRef` VARCHAR(1000) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL;
    ```
 
-   **Instrução SQL para alterar a tabela de metadados adicional**
+   **Instrução SQL para alterar a tabela additional metadatatable**
 
    ```sql
    ALTER TABLE `additionalmetadatatable` CHANGE `value` `value` TEXT CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL, CHANGE `key` `key` VARCHAR(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL;
@@ -309,8 +309,8 @@ Execute as seguintes etapas, em todas as instâncias de autor e publicação, pa
    Continue se o pacote não for exportado por um pacote.
 
 1. Navegue até `https://'[server]:[port]'/system/console/bundles` e clique em **[!UICONTROL Instalar/Atualizar]**.
-1. Clique em **[!UICONTROL Escolher arquivo]** e navegue para selecionar o arquivo mysql-connector-java-5.1.39-bin.jar. Além disso, **[!UICONTROL Iniciar pacote]** e **[!UICONTROL Atualizar pacotes]** caixas de seleção.
-1. Clique em **[!UICONTROL Instalar ou atualizar]**. Após a conclusão, reinicie o servidor.
+1. Clique em **[!UICONTROL Escolher arquivo]** e procure o arquivo mysql-connector-java-5.1.39-bin.jar. Além disso, marque as caixas de seleção **[!UICONTROL Iniciar pacote]** e **[!UICONTROL Atualizar pacotes]**.
+1. Clique em **[!UICONTROL Instalar ou Atualizar]**. Após a conclusão, reinicie o servidor.
 1. (*Somente Windows*) Desative o firewall do sistema para o seu sistema operacional.
 
 >[!NOTE]
@@ -327,23 +327,23 @@ O zip a seguir contém `FormsPortalSampleDataServiceImpl` e `FormsPortalSampleMe
 
 A implementação do banco de dados do Forms Portal usa uma tabela de metadados adicional. A tabela tem uma chave primária composta com base nas colunas Chave e id da tabela. O MySQL permite chaves primárias com até 255 caracteres. Você pode usar o script de validação do lado do cliente a seguir para verificar o comprimento do nome de arquivo anexado ao dispositivo de arquivo. A validação é executada quando um arquivo é anexado. O script fornecido no procedimento a seguir exibe uma mensagem quando o nome do arquivo é maior que 150 (incluindo a extensão). Você pode modificar o script para verificá-lo quanto a um número diferente de caracteres.
 
-Execute as seguintes etapas para criar [uma biblioteca do cliente](/help/sites-developing/clientlibs.md) e use o script:
+Execute as seguintes etapas para criar [uma biblioteca do cliente](/help/sites-developing/clientlibs.md) e usar o script:
 
 1. Faça logon no CRXDE e navegue até /etc/clientlibs/
-1. Criar um nó do tipo **cq:ClientLibraryFolder** e forneça o nome do nó. Por exemplo, `validation`.
+1. Crie um nó do tipo **cq:ClientLibraryFolder** e forneça o nome do nó. Por exemplo, `validation`.
 
    Clique em **[!UICONTROL Salvar tudo]**.
 
-1. Clique com o botão direito do mouse no nó e clique em **[!UICONTROL criar novo arquivo]**, e crie um arquivo com a extensão .txt. Por exemplo, `js.txt`Adicione o seguinte código ao arquivo .txt recém-criado e clique em **[!UICONTROL Salvar tudo]**.
+1. Clique com o botão direito do mouse no nó, clique em **[!UICONTROL criar novo arquivo]** e crie um arquivo com extensão .txt. Por exemplo, `js.txt`Adicione o seguinte código ao arquivo .txt recém-criado e clique em **[!UICONTROL Salvar tudo]**.
 
    ```javascript
    #base=util
     util.js
    ```
 
-   No código acima, `util` é o nome da pasta e `util.js` nome do arquivo na variável `util` pasta. A variável `util` pasta e `util.js` O arquivo será criado nas etapas seguintes.
+   No código acima, `util` é o nome da pasta e `util.js` o nome do arquivo na pasta `util`. A pasta `util` e o arquivo `util.js` foram criados em etapas subsequentes.
 
-1. Clique com o botão direito do mouse no `cq:ClientLibraryFolder` criado na etapa 2, selecione Criar > Criar pasta. Crie uma pasta chamada `util`. Clique em **[!UICONTROL Salvar tudo]**. Clique com o botão direito do mouse no `util` selecione Criar > Criar arquivo. Crie um arquivo chamado `util.js`. Clique em **[!UICONTROL Salvar tudo]**.
+1. Clique com o botão direito do mouse no nó `cq:ClientLibraryFolder` criado na etapa 2 e selecione Criar > Criar pasta. Crie uma pasta chamada `util`. Clique em **[!UICONTROL Salvar tudo]**. Clique com o botão direito do mouse na pasta `util` e selecione Criar > Criar arquivo. Crie um arquivo chamado `util.js`. Clique em **[!UICONTROL Salvar tudo]**.
 
 1. Adicione o seguinte código ao arquivo util.js e clique em **[!UICONTROL Salvar tudo]**. O comprimento de validação do código do nome do arquivo.
 
@@ -406,15 +406,15 @@ Execute as seguintes etapas para criar [uma biblioteca do cliente](/help/sites-d
 
    * **[!UICONTROL Nome:]** categorias
 
-   * **[!UICONTROL Tipo:]** String
+   * **[!UICONTROL Tipo:]** Cadeia de Caracteres
 
    * **[!UICONTROL Valor:]** fp.validation
 
-   * **[!UICONTROL multiopção:]** Ativado
+   * **[!UICONTROL opção múltipla:]** Habilitada
 
-1. Navegue até `/libs/fd/af/runtime/clientlibs/guideRuntime`e anexe a variável `fp.validation` para a propriedade embed.
+1. Navegue até `/libs/fd/af/runtime/clientlibs/guideRuntime` e anexe o valor `fp.validation` à propriedade incorporada.
 
-1. Navegue até /libs/fd/af/runtime/clientlibs/guideRuntimeWithXFA e anexe o `fp.validation` valor para incorporar a propriedade.
+1. Navegue até /libs/fd/af/runtime/clientlibs/guideRuntimeWithXFA e anexe o valor `fp.validation` à propriedade incorporada.
 
    >[!NOTE]
    >

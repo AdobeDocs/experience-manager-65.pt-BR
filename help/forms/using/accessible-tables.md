@@ -25,7 +25,7 @@ Para evitar problemas de acessibilidade com leitores de tela que não suportam t
 * Cabeçalhos de linha
 * Extensão de linha
 
-Para usar o novo formato no HTML5 Forms, marque a tabela como complexa. Para marcar a tabela como complexa, adicione `extras` na fonte XML do subformulário da tabela da seguinte maneira:
+Para usar o novo formato no HTML5 Forms, marque a tabela como complexa. Para marcar a tabela como complexa, adicione a marca `extras` na fonte XML do subformulário de tabela da seguinte maneira:
 
 ```xml
 </extras>
@@ -33,17 +33,17 @@ Para usar o novo formato no HTML5 Forms, marque a tabela como complexa. Para mar
  </extras>
 ```
 
-As tabelas marcadas como *complexTable* siga a representação de HTML nativa e forneça um melhor suporte de acessibilidade para determinados leitores de tela.  Para criar uma extensão de linha, selecione células consecutivas de uma tabela na mesma coluna, clique com o botão direito do mouse na seleção e clique em **[!UICONTROL Mesclar Células]**.
+As tabelas marcadas como *complexTable* seguem a representação de HTML nativa e oferecem melhor suporte de acessibilidade para determinados leitores de tela.  Para criar uma extensão de linha, selecione células consecutivas de uma tabela na mesma coluna, clique com o botão direito do mouse na seleção e clique em **[!UICONTROL Mesclar Células]**.
 
 >[!NOTE]
 >
 >A criação de uma extensão de linha funciona somente para as células mais à esquerda.
 
-Para marcar uma linha como cabeçalho da linha, selecione todas as células na linha, clique com o botão direito do mouse na seleção e clique em **[!UICONTROL Marcar Cabeçalho]**.
+Para marcar uma linha como cabeçalho de linha, selecione todas as células na linha, clique com o botão direito do mouse na seleção e clique em **[!UICONTROL Marcar Cabeçalho]**.
 
 Para marcar uma célula como cabeçalho da coluna, selecione qualquer célula na coluna, clique com o botão direito do mouse na seleção e clique em **[!UICONTROL Marcar Cabeçalho]**.
 
-Limitações em novos *AccessibleTable* formato:
+Limitações no novo formato *AccessibleTable*:
 
 * Falta de suporte para campos que podem ser expandidos se rowspan for usado na tabela
 * Não há suporte para tabelas aninhadas (tabelas dentro de células de tabela)

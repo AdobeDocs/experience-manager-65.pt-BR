@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Criação de documentos PDF com dados XML enviados {#creating-pdf-documents-with-submittedxml-data}
 
-**Os exemplos e amostras neste documento são somente para AEM Forms no ambiente JEE.**
+**Exemplos e exemplos neste documento são somente para AEM Forms no ambiente JEE.**
 
 ## Criação de documentos PDF com dados XML enviados {#creating-pdf-documents-with-submitted-xml-data}
 
@@ -58,11 +58,11 @@ Para criar um documento PDF não interativo com dados XML enviados e armazenar n
 
 Inclua os arquivos necessários no projeto de desenvolvimento. Se você estiver criando uma aplicação cliente usando Java, inclua os arquivos JAR necessários. Se você estiver usando serviços da Web, certifique-se de incluir os arquivos proxy.
 
-**Criar objetos do Forms, Output e Document Management**
+**Criar objetos do Forms, de Saída e de Gerenciamento de Documentos**
 
 Antes de executar programaticamente uma operação da API de serviço do Forms, crie um objeto da API de cliente do Forms. Da mesma forma, como esse fluxo de trabalho chama os serviços de Gerenciamento de Saída e de Documentos, crie um objeto da API de Cliente de Saída e um objeto da API de Cliente de Gerenciamento de Documentos.
 
-**Recuperar dados do formulário usando o serviço Forms**
+**Recuperar dados de formulário usando o serviço Forms**
 
 Recupere dados de formulário enviados para o serviço Forms. Você pode processar os dados enviados para atender aos requisitos da sua empresa. Por exemplo, você pode armazenar dados de formulário em um banco de dados empresarial. No entanto, para criar um documento PDF não interativo, os dados de formulário são passados para o serviço de Saída.
 
@@ -70,7 +70,7 @@ Recupere dados de formulário enviados para o serviço Forms. Você pode process
 
 Use o Serviço de saída para criar um documento PDF não interativo baseado em um design de formulário e dados de formulário XML. No workflow, os dados de formulário são recuperados do serviço Forms.
 
-**Armazenar o formulário PDF nos Serviços de conteúdo (obsoleto) usando o serviço Gerenciamento de documentos**
+**Armazenar o formulário PDF nos Serviços de Conteúdo (obsoleto) usando o serviço Gerenciamento de Documentos**
 
 Use a API do serviço de Gerenciamento de documentos para armazenar um documento PDF nos Serviços de conteúdo (desaprovado).
 
@@ -92,58 +92,58 @@ Crie um documento PDF com dados XML enviados usando a API de gerenciamento de do
 
 1. Criar objetos do Forms, Output e Document Management
 
-   * Criar um `ServiceClientFactory` objeto que contém propriedades de conexão.
-   * Criar um `FormsServiceClient` usando seu construtor e transmitindo o `ServiceClientFactory` objeto.
-   * Criar um `OutputClient` usando seu construtor e transmitindo o `ServiceClientFactory` objeto.
-   * Criar um `DocumentManagementServiceClientImpl` usando seu construtor e transmitindo o `ServiceClientFactory` objeto.
+   * Crie um objeto `ServiceClientFactory` que contenha propriedades de conexão.
+   * Crie um objeto `FormsServiceClient` usando seu construtor e transmitindo o objeto `ServiceClientFactory`.
+   * Crie um objeto `OutputClient` usando seu construtor e transmitindo o objeto `ServiceClientFactory`.
+   * Crie um objeto `DocumentManagementServiceClientImpl` usando seu construtor e transmitindo o objeto `ServiceClientFactory`.
 
 1. Recuperar dados do formulário usando o serviço Forms
 
-   * Chame o `FormsServiceClient` do objeto `processFormSubmission` e passe os seguintes valores:
+   * Chame o método `processFormSubmission` do objeto `FormsServiceClient` e passe os seguintes valores:
 
-      * A variável `com.adobe.idp.Document` objeto que contém os dados de formulário.
-      * Um valor de string que especifica variáveis de ambiente, incluindo todos os cabeçalhos HTTP relevantes. Especifique o tipo de conteúdo a ser manipulado especificando um ou mais valores para o `CONTENT_TYPE` variável de ambiente. Por exemplo, para manipular dados XML, especifique o seguinte valor de string para esse parâmetro: `CONTENT_TYPE=text/xml`.
-      * Um valor de string que especifica a `HTTP_USER_AGENT` valor do cabeçalho, como `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
-      * A `RenderOptionsSpec` objeto que armazena opções de tempo de execução.
+      * O objeto `com.adobe.idp.Document` que contém os dados de formulário.
+      * Um valor de string que especifica variáveis de ambiente, incluindo todos os cabeçalhos HTTP relevantes. Especifique o tipo de conteúdo a ser manipulado especificando um ou mais valores para a variável de ambiente `CONTENT_TYPE`. Por exemplo, para manipular dados XML, especifique o seguinte valor de cadeia de caracteres para este parâmetro: `CONTENT_TYPE=text/xml`.
+      * Um valor de cadeia de caracteres que especifica o valor do cabeçalho `HTTP_USER_AGENT`, como `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
+      * Um objeto `RenderOptionsSpec` que armazena opções de tempo de execução.
 
-     A variável `processFormSubmission` o método retorna um `FormsResult` objeto que contém os resultados do envio do formulário.
+     O método `processFormSubmission` retorna um objeto `FormsResult` contendo os resultados do envio do formulário.
 
-   * Determine se o serviço Forms terminou de processar os dados do formulário invocando o `FormsResult` do objeto `getAction` método. Se esse método retornar o valor `0`, os dados estão prontos para serem processados.
-   * Recuperar dados do formulário criando uma `com.adobe.idp.Document` ao invocar o `FormsResult` do objeto `getOutputContent` método. (Este objeto contém dados de formulário que podem ser enviados para o Serviço de saída.)
-   * Criar um `java.io.InputStream` ao invocar o `java.io.DataInputStream` construtor e transmitindo o `com.adobe.idp.Document` objeto.
-   * Criar um `org.w3c.dom.DocumentBuilderFactory` chamando o objeto estático `org.w3c.dom.DocumentBuilderFactory` do objeto `newInstance` método.
-   * Criar um `org.w3c.dom.DocumentBuilder` ao invocar o `org.w3c.dom.DocumentBuilderFactory` do objeto `newDocumentBuilder` método.
-   * Criar um `org.w3c.dom.Document` ao invocar o `org.w3c.dom.DocumentBuilder` do objeto `parse` e transmitindo o `java.io.InputStream` objeto.
-   * Recupere o valor de cada nó no documento XML. Uma maneira de realizar essa tarefa é criar um método personalizado que aceite dois parâmetros: o `org.w3c.dom.Document` e o nome do nó cujo valor você deseja recuperar. Esse método retorna um valor de string que representa o valor do nó. No exemplo de código que segue esse processo, esse método personalizado é chamado de `getNodeText`. O corpo desse método é mostrado.
+   * Determine se o serviço Forms terminou de processar os dados do formulário invocando o método `getAction` do objeto `FormsResult`. Se esse método retornar o valor `0`, os dados estarão prontos para serem processados.
+   * Recupere dados do formulário criando um objeto `com.adobe.idp.Document` invocando o método `getOutputContent` do objeto `FormsResult`. (Este objeto contém dados de formulário que podem ser enviados para o Serviço de saída.)
+   * Crie um objeto `java.io.InputStream` invocando o construtor `java.io.DataInputStream` e transmitindo o objeto `com.adobe.idp.Document`.
+   * Crie um objeto `org.w3c.dom.DocumentBuilderFactory` chamando o método `newInstance` estático do objeto `org.w3c.dom.DocumentBuilderFactory`.
+   * Crie um objeto `org.w3c.dom.DocumentBuilder` invocando o método `newDocumentBuilder` do objeto `org.w3c.dom.DocumentBuilderFactory`.
+   * Crie um objeto `org.w3c.dom.Document` invocando o método `parse` do objeto `org.w3c.dom.DocumentBuilder` e transmitindo o objeto `java.io.InputStream`.
+   * Recupere o valor de cada nó no documento XML. Uma maneira de realizar essa tarefa é criar um método personalizado que aceite dois parâmetros: o objeto `org.w3c.dom.Document` e o nome do nó cujo valor você deseja recuperar. Esse método retorna um valor de string que representa o valor do nó. No exemplo de código que segue esse processo, esse método personalizado é chamado de `getNodeText`. O corpo desse método é mostrado.
 
 1. Crie um documento PDF não interativo usando o Serviço de saída.
 
-   Crie um documento PDF chamando o `OutputClient` do objeto `generatePDFOutput` e transmitindo os seguintes valores:
+   Crie um documento PDF invocando o método `generatePDFOutput` do objeto `OutputClient` e transmitindo os seguintes valores:
 
-   * A `TransformationFormat` valor de enumeração. Para gerar um documento PDF, especifique `TransformationFormat.PDF`.
+   * Um valor de enumeração `TransformationFormat`. Para gerar um documento PDF, especifique `TransformationFormat.PDF`.
    * Um valor de cadeia de caracteres que especifica o nome do design do formulário. Verifique se o design do formulário é compatível com os dados de formulário recuperados do serviço Forms.
    * Um valor de cadeia de caracteres que especifica a raiz do conteúdo onde o design do formulário está localizado.
-   * A `PDFOutputOptionsSpec` objeto que contém opções de tempo de execução de PDF.
-   * A `RenderOptionsSpec` objeto que contém opções de tempo de execução de renderização.
-   * A variável `com.adobe.idp.Document` objeto que contém a fonte de dados XML que contém os dados a serem mesclados com o design do formulário. Verifique se esse objeto foi retornado pela variável `FormsResult` do objeto `getOutputContent` método.
-   * A variável `generatePDFOutput` o método retorna um `OutputResult` objeto que contém os resultados da operação.
-   * Recupere o documento PDF não interativo chamando o `OutputResult` do objeto `getGeneratedDoc` método. Este método retorna um valor de `com.adobe.idp.Document` que representa o documento PDF não interativo.
+   * Um objeto `PDFOutputOptionsSpec` que contém opções de tempo de execução de PDF.
+   * Um objeto `RenderOptionsSpec` que contém opções de tempo de execução de renderização.
+   * O objeto `com.adobe.idp.Document` que contém a fonte de dados XML que contém os dados a serem mesclados com o design do formulário. Verifique se esse objeto foi retornado pelo método `getOutputContent` do objeto `FormsResult`.
+   * O método `generatePDFOutput` retorna um objeto `OutputResult` que contém os resultados da operação.
+   * Recupere o documento PDF não interativo invocando o método `getGeneratedDoc` do objeto `OutputResult`. Este método retorna uma instância `com.adobe.idp.Document` que representa o documento PDF não interativo.
 
 1. Armazenar o formulário PDF nos Serviços de conteúdo (obsoleto) usando o serviço Gerenciamento de documentos
 
-   Adicione o conteúdo chamando o `DocumentManagementServiceClientImpl` do objeto `storeContent` e transmitindo os seguintes valores:
+   Adicione o conteúdo chamando o método `storeContent` do objeto `DocumentManagementServiceClientImpl` e passando os seguintes valores:
 
-   * Um valor de string que especifica o armazenamento em que o conteúdo é adicionado. A loja padrão é `SpacesStore`. Esse valor é um parâmetro obrigatório.
-   * Um valor de string que especifica o caminho totalmente qualificado do espaço em que o conteúdo é adicionado (por exemplo, `/Company Home/Test Directory`). Esse valor é um parâmetro obrigatório.
+   * Um valor de string que especifica o armazenamento em que o conteúdo é adicionado. O armazenamento padrão é `SpacesStore`. Esse valor é um parâmetro obrigatório.
+   * Um valor de cadeia de caracteres que especifica o caminho totalmente qualificado do espaço em que o conteúdo é adicionado (por exemplo, `/Company Home/Test Directory`). Esse valor é um parâmetro obrigatório.
    * O nome do nó que representa o novo conteúdo (por exemplo, `MortgageForm.pdf`). Esse valor é um parâmetro obrigatório.
-   * Um valor de string que especifica o tipo de nó. Para adicionar novo conteúdo, como um arquivo PDF, especifique `{https://www.alfresco.org/model/content/1.0}content`. Esse valor é um parâmetro obrigatório.
-   * A `com.adobe.idp.Document` objeto que representa o conteúdo. Esse valor é um parâmetro obrigatório.
-   * Um valor de string que especifica o valor de codificação (por exemplo, `UTF-8`). Esse valor é um parâmetro obrigatório.
-   * Um `UpdateVersionType` valor de enumeração que especifica como tratar informações de versão (por exemplo, `UpdateVersionType.INCREMENT_MAJOR_VERSION` para incrementar a versão do conteúdo. ) Esse valor é um parâmetro obrigatório.
-   * A `java.util.List` instância que especifica aspectos relacionados ao conteúdo. Esse valor é um parâmetro opcional e você pode especificar `null`.
-   * A `java.util.Map` objeto que armazena atributos de conteúdo.
+   * Um valor de string que especifica o tipo de nó. Para adicionar novo conteúdo, como um arquivo de PDF, especifique `{https://www.alfresco.org/model/content/1.0}content`. Esse valor é um parâmetro obrigatório.
+   * Um objeto `com.adobe.idp.Document` que representa o conteúdo. Esse valor é um parâmetro obrigatório.
+   * Um valor de cadeia de caracteres que especifica o valor de codificação (por exemplo, `UTF-8`). Esse valor é um parâmetro obrigatório.
+   * Um valor de enumeração `UpdateVersionType` que especifica como lidar com informações de versão (por exemplo, `UpdateVersionType.INCREMENT_MAJOR_VERSION` para incrementar a versão do conteúdo. ) Esse valor é um parâmetro obrigatório.
+   * Uma instância `java.util.List` que especifica aspectos relacionados ao conteúdo. Este valor é um parâmetro opcional e você pode especificar `null`.
+   * Um objeto `java.util.Map` que armazena atributos de conteúdo.
 
-   A variável `storeContent` o método retorna um `CRCResult` objeto que descreve o conteúdo. Uso de um `CRCResult` objeto, você pode, por exemplo, obter o valor do identificador exclusivo do conteúdo. Para executar essa tarefa, chame o `CRCResult` do objeto `getNodeUuid` método.
+   O método `storeContent` retorna um objeto `CRCResult` que descreve o conteúdo. Usando um objeto `CRCResult`, você pode, por exemplo, obter o valor do identificador exclusivo do conteúdo. Para executar esta tarefa, chame o método `getNodeUuid` do objeto `CRCResult`.
 
 **Consulte também**
 

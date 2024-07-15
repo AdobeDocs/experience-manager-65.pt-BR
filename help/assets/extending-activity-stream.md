@@ -1,6 +1,6 @@
 ---
-title: Integrar [!DNL Assets] com fluxo de atividade
-description: Descreve os recursos de gravação de [!DNL Experience Manager] e como configurá-lo para registrar eventos específicos.
+title: Integrar  [!DNL Assets]  ao fluxo de atividade
+description: Descreve os recursos de gravação de  [!DNL Experience Manager]  e como configurá-los para gravar eventos específicos.
 contentOwner: AG
 role: Developer
 feature: Asset Management
@@ -13,13 +13,13 @@ ht-degree: 0%
 
 ---
 
-# Integrar [!DNL Assets] com fluxo de atividade {#integrating-assets-with-activity-stream}
+# Integrar [!DNL Assets] ao fluxo de atividade {#integrating-assets-with-activity-stream}
 
-[!DNL Adobe Experience Manager Assets] Os usuários do executam muitas ações, como criar, fazer upload e excluir ativos. Essas ações podem ser registradas para que você possa fornecer um histórico do que foi feito por um usuário. Esta seção descreve os recursos de gravação de [!DNL Experience Manager] e como configurar [!DNL Experience Manager] para registrar eventos específicos.
+[!DNL Adobe Experience Manager Assets] usuários executam muitas ações, como criar, carregar e excluir o Assets. Essas ações podem ser registradas para que você possa fornecer um histórico do que foi feito por um usuário. Esta seção descreve os recursos de gravação de [!DNL Experience Manager] e como configurar [!DNL Experience Manager] para gravar eventos específicos.
 
 ## Considerações sobre o desempenho e comportamento padrão {#performance-considerations-and-default-behavior}
 
-Essa integração pode consumir CPU e espaço em disco, por exemplo, ao fazer uma importação em massa. Por estes motivos, a [!DNL Assets] a integração com o Fluxo de atividades é desabilitada por padrão.
+Essa integração pode consumir CPU e espaço em disco, por exemplo, ao fazer uma importação em massa. Por esses motivos, a integração [!DNL Assets] com o Fluxo de atividades é desabilitada por padrão.
 
 ## Eventos de ação compatíveis {#supported-action-events}
 
@@ -41,22 +41,22 @@ Você pode configurar os seguintes eventos a serem gravados:
 * Subativo atualizado (SUBASSET_UPDATED)
 * Subativo removido (SUBASSET_REMOVED)
 
-## Configurar [!DNL Assets] gravação de eventos {#configuring-aem-assets-events-recording}
+## Configurar a gravação de eventos do [!DNL Assets] {#configuring-aem-assets-events-recording}
 
-A variável [Console da Web](/help/sites-deploying/configuring-osgi.md) O fornece acesso ao ajuste do Gravador de eventos do Assets. Para configurar o Gravador de eventos do Assets, proceda da seguinte maneira:
+O [console da Web](/help/sites-deploying/configuring-osgi.md) fornece acesso ao ajuste do Gravador de Eventos do Assets. Para configurar o Gravador de eventos do Assets, proceda da seguinte maneira:
 
-1. Navegue até a **[!UICONTROL Console da Web]**
+1. Navegue até o **[!UICONTROL Console da Web]**
 
 1. Clique em **[!UICONTROL Configuração]**.
 
-1. Clique duas vezes **[!UICONTROL Gravador de eventos DAM CQ do dia]**.
+1. Clique duas vezes em **[!UICONTROL Gravador de eventos DAM do Day CQ]**.
 
-1. Marcar **[!UICONTROL Habilita este serviço]**.
+1. Verificar **[!UICONTROL Habilita este serviço]**.
 
-1. Verificar qual **[!UICONTROL Tipos de evento]** que você deseja registrar no fluxo de atividades do usuário.
+1. Verifique quais **[!UICONTROL Tipos de Evento]** você deseja registrar no fluxo de atividades do usuário.
 
 1. Clique em **[!UICONTROL Salvar]**.
 
 ## Ler eventos gravados {#reading-recorded-events}
 
-Os eventos registrados são armazenados como atividades. Você pode lê-los programaticamente usando o [API do ActivityManager](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/activitystreams/ActivityManager.html).
+Os eventos registrados são armazenados como atividades. Você pode lê-las programaticamente usando a [API do ActivityManager](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/activitystreams/ActivityManager.html).

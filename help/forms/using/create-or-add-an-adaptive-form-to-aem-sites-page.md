@@ -15,7 +15,7 @@ ht-degree: 3%
 
 # Criar ou adicionar um formulário adaptável à página do AEM Sites {#create-or-add-an-adaptive-form-to-aem-sites-page}
 
-<span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) para [criação de um novo Forms adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
+O <span class="preview"> Adobe recomenda o uso de [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adicionar o Forms Adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
@@ -34,30 +34,30 @@ O AEM Forms fornece o Contêiner de formulário adaptável e os componentes Form
 
 O uso do Contêiner de formulário adaptável no Editor de páginas AEM permite que você crie experiências de captura de dados perfeitas em uma página do Sites, usando o potencial dos componentes do Forms adaptáveis, incluindo comportamento dinâmico, validações, integração de dados, geração de documentos de registro e automação do processo comercial. Ele também permite usar vários recursos de páginas do AEM Sites, como controle de versão, direcionamento, tradução e gerenciador de vários sites, aprimorando a experiência geral de criação e gerenciamento de formulários. Vamos explorar alguns destes recursos:
 
-* **Controle de versão:** Oferta de páginas do AEM Sites [recursos robustos de controle de versão](/help/sites-authoring/working-with-page-versions.md), permitindo rastrear e gerenciar diferentes versões dos formulários. Isso permite fazer alterações e aprimoramentos nos formulários, mantendo a capacidade de reverter para versões anteriores, se necessário. O controle de versão garante uma abordagem controlada e organizada para o desenvolvimento e evolução da forma.
-* **Direcionamento (integração com o Adobe Target):** Com os recursos de direcionamento de páginas do AEM Sites, você também pode [personalizar a experiência do formulário para públicos diferentes](/help/sites-administering/target.md). Usando segmentos de usuários e critérios de direcionamento, você pode adaptar o conteúdo, o design ou o comportamento do formulário a grupos específicos de usuários. Isso permite fornecer uma experiência de formulário personalizada e relevante, aumentando as taxas de engajamento e conversão.
-* **Tradução:** AEM Sites [integração perfeita com serviços de tradução](/help/sites-administering/translation.md), permitindo que você traduza formulários em vários idiomas facilmente. Esse recurso simplifica o processo de localização, garantindo que seus formulários estejam acessíveis para um público-alvo global. Você pode gerenciar traduções com eficiência em projetos de tradução AEM, reduzindo o tempo e o esforço necessários para o suporte a formulários multilíngues. Consulte a seção considerações para obter mais informações sobre tradução.
-* **Gerenciamento de vários sites e Live Copy:** O AEM Sites oferece [Recursos de gerenciamento de vários sites e Live Copy](/help/sites-administering/msm.md), permitindo criar e gerenciar vários sites em um único ambiente. Esse recurso agora permite reutilizar formulários em sites diferentes, garantindo a consistência e reduzindo os esforços de duplicação. Com controle e gerenciamento centralizados, você pode manter e atualizar formulários de maneira eficiente em vários sites.
-* **Temas:** As páginas do AEM Sites fornecem uma estrutura para projetar e manter estilos visuais consistentes em várias páginas da Web. Eles definem cores, fontes, folhas de estilos e outros elementos visuais que contribuem para a aparência geral do site. [Você pode usar os temas criados para uma página do AEM Sites para um Formulário adaptável, economizando tempo e esforço](/help/sites-authoring/style-system.md).
-* **Marcação:** As páginas do AEM Sites permitem [atribuir tags ou rótulos a uma página, um ativo ou outro conteúdo](/help/sites-authoring/tags.md). Tags são rótulos de palavras-chave ou metadados que fornecem uma maneira de categorizar e organizar o conteúdo com base em critérios específicos. É possível atribuir uma ou mais tags a páginas, ativos ou qualquer outro conteúdo no AEM para melhorar a pesquisa e a categorização dos ativos.
-* **Bloquear e desbloquear conteúdo:** O AEM Sites permite que os usuários [controlar o acesso e as modificações nas páginas](/help/sites-authoring/editing-content.md#locking-a-page-locking-a-page) no ambiente do AEM Sites. Quando uma página é bloqueada, significa que ela está protegida contra alterações ou edições não autorizadas por outros usuários. Somente o usuário que bloqueou o conteúdo ou um administrador designado pode desbloqueá-lo para permitir modificações.
+* **Controle de versão:** as páginas do AEM Sites oferecem [recursos robustos de controle de versão](/help/sites-authoring/working-with-page-versions.md), que permitem rastrear e gerenciar diferentes versões dos seus formulários. Isso permite fazer alterações e aprimoramentos nos formulários, mantendo a capacidade de reverter para versões anteriores, se necessário. O controle de versão garante uma abordagem controlada e organizada para o desenvolvimento e evolução da forma.
+* **Direcionamento (Integração com o Adobe Target):** com os recursos de direcionamento de páginas do AEM Sites, você também pode [personalizar a experiência do formulário para públicos diferentes](/help/sites-administering/target.md). Usando segmentos de usuários e critérios de direcionamento, você pode adaptar o conteúdo, o design ou o comportamento do formulário a grupos específicos de usuários. Isso permite fornecer uma experiência de formulário personalizada e relevante, aumentando as taxas de engajamento e conversão.
+* **Tradução:** o AEM Sites [integração perfeita com os serviços de tradução](/help/sites-administering/translation.md), permitindo que você traduza formulários em vários idiomas facilmente. Esse recurso simplifica o processo de localização, garantindo que seus formulários estejam acessíveis para um público-alvo global. Você pode gerenciar traduções com eficiência em projetos de tradução AEM, reduzindo o tempo e o esforço necessários para o suporte a formulários multilíngues. Consulte a seção considerações para obter mais informações sobre tradução.
+* **Gerenciamento de vários sites e Live Copy:** o AEM Sites fornece recursos robustos de [Gerenciamento de vários sites e Live Copy](/help/sites-administering/msm.md), permitindo que você crie e gerencie vários sites em um único ambiente. Esse recurso agora permite reutilizar formulários em sites diferentes, garantindo a consistência e reduzindo os esforços de duplicação. Com controle e gerenciamento centralizados, você pode manter e atualizar formulários de maneira eficiente em vários sites.
+* **Temas:** as páginas do AEM Sites fornecem uma estrutura para criar e manter estilos visuais consistentes em várias páginas da Web. Eles definem cores, fontes, folhas de estilos e outros elementos visuais que contribuem para a aparência geral do site. [Você pode usar os temas criados para uma página do AEM Sites para um Formulário adaptável, economizando tempo e esforço](/help/sites-authoring/style-system.md).
+* **Marcação:** as páginas do AEM Sites permitem [atribuir marcas ou rótulos a uma página, um ativo ou outro conteúdo](/help/sites-authoring/tags.md). Tags são rótulos de palavras-chave ou metadados que fornecem uma maneira de categorizar e organizar o conteúdo com base em critérios específicos. É possível atribuir uma ou mais tags a páginas, ativos ou qualquer outro conteúdo no AEM para melhorar a pesquisa e a categorização dos ativos.
+* **Bloquear e desbloquear conteúdo:** o AEM Sites permite que os usuários [controlem o acesso e as modificações nas páginas](/help/sites-authoring/editing-content.md#locking-a-page-locking-a-page) no ambiente do AEM Sites. Quando uma página é bloqueada, significa que ela está protegida contra alterações ou edições não autorizadas por outros usuários. Somente o usuário que bloqueou o conteúdo ou um administrador designado pode desbloqueá-lo para permitir modificações.
 
 
 ## Várias opções para adicionar um formulário adaptável no editor de páginas AEM
 
 Você pode aproveitar ao máximo esse recurso utilizando as seguintes opções:
 
-* **[Adicionar um formulário adaptável personalizado a uma página do AEM Sites:](#create-an-adaptive-form-in-sites-editor)** Crie um formulário totalmente novo do zero, adaptando-o especificamente às suas necessidades e preferências de design.
+* **[Adicione um formulário adaptável personalizado a uma página do AEM Sites:](#create-an-adaptive-form-in-sites-editor)** Crie um formulário totalmente novo do zero, adaptando-o especificamente às suas necessidades e preferências de design.
 
-* **[Adicionar um formulário adaptável personalizado a um Fragmento de experiência:](#create-an-adaptive-form-in-experience-fragment)** Estenda o alcance de seus formulários adicionando-os aos Fragmentos de experiência de AEM, permitindo uma reutilização contínua em várias páginas ou sites.
+* **[Adicionar um formulário adaptável personalizado a um Fragmento de experiência:](#create-an-adaptive-form-in-experience-fragment)** Estenda o alcance de seus formulários adicionando-os a Fragmentos de experiência do AEM, permitindo uma reutilização contínua em várias páginas ou sites.
 
-* **[Converter um formulário adaptável em fragmento de experiência:](#convert-an-adaptive-form-in-sites-page-to-an-experience-fragment)** Converta um formulário adaptável adicionado a uma página do AEM Sites em um Fragmento de experiência para reutilizar o formulário em várias páginas do AEM Sites.
+* **[Converter um Formulário adaptável em Fragmento de experiência:](#convert-an-adaptive-form-in-sites-page-to-an-experience-fragment)** Converter um Formulário adaptável adicionado a uma página do AEM Sites em um Fragmento de experiência para reutilizar o formulário em várias páginas do AEM Sites.
 
-* **Criar e adicionar formulários com base em modelos aprovados a uma página do AEM Sites:** Aproveite os modelos pré-aprovados para criar rapidamente formulários que se alinhem às diretrizes de marca e aos padrões de design de sua organização. A opção está disponível somente para o Forms adaptável criado com o Editor Forms adaptável ou o componente Forms adaptável - Incorporar.
+* **Crie e adicione formulários com base em modelos aprovados a uma página do AEM Sites:** use os modelos pré-aprovados para criar rapidamente formulários que se alinhem às diretrizes de identidade visual e aos padrões de design da sua organização. A opção está disponível somente para o Forms adaptável criado com o Editor Forms adaptável ou o componente Forms adaptável - Incorporar.
 
-* **Adicionar formulários existentes a uma página do AEM Sites:** Integre facilmente formulários que você já criou em seus sites, permitindo que os visitantes interajam diretamente com eles. A opção está disponível somente para o Forms adaptável criado com o Editor Forms adaptável ou o componente Forms adaptável - Incorporar.
+* **Adicionar formulários existentes a uma página do AEM Sites:** Integre facilmente formulários que você já criou aos seus sites, permitindo que os visitantes interajam diretamente com eles. A opção está disponível somente para o Forms adaptável criado com o Editor Forms adaptável ou o componente Forms adaptável - Incorporar.
 
-* **Adicionar vários formulários a uma página do AEM Sites ou Fragmento de experiência:**  Adicione vários formulários a uma página para fornecer várias opções aos usuários com base em suas preferências e requisitos. Eles podem combinar formulários totalmente novos do zero com formulários existentes.
+* **Adicionar vários formulários a uma página do AEM Sites ou a um Fragmento de experiência:** Adicione vários formulários a uma página para fornecer várias opções aos usuários com base em suas preferências e requisitos. Eles podem combinar formulários totalmente novos do zero com formulários existentes.
 
 ## Considerações {#consideration}
 
@@ -70,7 +70,7 @@ Você pode aproveitar ao máximo esse recurso utilizando as seguintes opções:
 
 +++  Ativar os Componentes principais adaptáveis do Forms para o seu ambiente
 
-Certifique-se de que o [Os Componentes principais adaptáveis do Forms são ativados para o seu ambiente](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/quick-setup/enable-headless-adaptive-forms-and-core-components.html?lang=en).
+Verifique se os [Componentes principais adaptáveis do Forms estão habilitados para o seu ambiente](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/quick-setup/enable-headless-adaptive-forms-and-core-components.html?lang=en).
 
 +++
 
@@ -78,9 +78,9 @@ Certifique-se de que o [Os Componentes principais adaptáveis do Forms são ativ
 
 Para ativar a funcionalidade completa do componente de Contêiner adaptável do Forms, adicione as bibliotecas de clientes Customheaderlibs e Customfooterlibs à sua página do AEM Sites usando o pipeline de implantação. Para adicionar as bibliotecas:
 
-1. Faça logon na instância de autor do AEM e abra o CRX DE. O URL padrão de uma instância de Autor em execução localmente é `http://localhost:4502/crx/de`.
+1. Faça logon na instância de autor do AEM e abra o CRX DE. A URL padrão para uma instância de Autor em execução localmente é `http://localhost:4502/crx/de`.
 
-1. Abra o `/apps/[your-sites-project]/components/page/customheaderlibs.html` e adicione o seguinte código ao arquivo:
+1. Abra o arquivo `/apps/[your-sites-project]/components/page/customheaderlibs.html` e adicione o seguinte código ao arquivo:
 
    ```
        //Customheaderlibs.html
@@ -89,7 +89,7 @@ Para ativar a funcionalidade completa do componente de Contêiner adaptável do 
        </sly> 
    ```
 
-1. Abra o `/apps/[your-sites-project]/components/page/customfooterlibs.html` e adicione o seguinte código ao arquivo:
+1. Abra o arquivo `/apps/[your-sites-project]/components/page/customfooterlibs.html` e adicione o seguinte código ao arquivo:
 
    ```
        //customfooterlibs.html
@@ -98,7 +98,7 @@ Para ativar a funcionalidade completa do componente de Contêiner adaptável do 
        </sly> 
    ```
 
-1. Abra o `/apps/[your-sites-project]/components/xfpage/customheaderlibs.html` e adicione o seguinte código ao arquivo:
+1. Abra o arquivo `/apps/[your-sites-project]/components/xfpage/customheaderlibs.html` e adicione o seguinte código ao arquivo:
 
    ```
        //Customheaderlibs.html
@@ -107,7 +107,7 @@ Para ativar a funcionalidade completa do componente de Contêiner adaptável do 
        </sly> 
    ```
 
-1. Abra o `/apps/[your-sites-project]/components/customfooterlibs.html` e adicione o seguinte código ao arquivo:
+1. Abra o arquivo `/apps/[your-sites-project]/components/customfooterlibs.html` e adicione o seguinte código ao arquivo:
 
    ```
        //customfooterlibs.html
@@ -122,11 +122,11 @@ Para ativar a funcionalidade completa do componente de Contêiner adaptável do 
 
 +++ Ativar contêiner adaptável do Forms
 
-Para habilitar [!UICONTROL Contêiner adaptável do Forms] componente na política do modelo, execute as seguintes etapas:
+Para habilitar o componente [!UICONTROL Contêiner de Forms adaptável] na política do modelo, execute as seguintes etapas:
 
 1. Abra a página do AEM Sites ou o Fragmento de experiência para edição. Para abrir a página para edição, selecione a página e clique em Editar.
-1. Abra o modelo da página Sites ou Fragmento de experiência. Para abrir o template, vá para a [!UICONTROL Informações da página] ![Informações da página](/help/forms/using/assets/Smock_Properties_18_N.svg) > [!UICONTROL Editar modelo]. Ele abre o modelo correspondente no editor de modelo.
-1. Na visualização Estrutura, clique no botão **[!UICONTROL Política]** ![Política](/help/forms/using/assets/Smock_FeedManagement_18_N.svg) ícone na barra de menus. No **[!UICONTROL Componentes permitidos]** e selecione o **[!UICONTROL Contêiner adaptável do Forms]**  na caixa de seleção **[Nome do projeto do arquétipo AEM] - Formulário adaptável**.
+1. Abra o modelo da página Sites ou Fragmento de experiência. Para abrir o modelo, vá para as [!UICONTROL Informações da Página] ![Informações da Página](/help/forms/using/assets/Smock_Properties_18_N.svg) > [!UICONTROL Editar Modelo]. Ele abre o modelo correspondente no editor de modelo.
+1. Na exibição Estrutura, clique no ícone **[!UICONTROL Política]** ![Política](/help/forms/using/assets/Smock_FeedManagement_18_N.svg) na barra de menus. Na lista **[!UICONTROL Componentes Permitidos]** e marque a caixa de seleção **[!UICONTROL Contêiner de Forms Adaptável]** em **[Nome do Projeto do Arquétipo AEM] - Formulário Adaptável**.
 1. Clique em **[!UICONTROL Concluído]**.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419370?quality=12&learn=on)
@@ -139,7 +139,7 @@ Você pode criar um formulário totalmente novo do zero, ajustando-o especificam
 
 * [Criar um formulário em uma página do AEM Sites](#create-an-adaptive-form-in-sites-editor)
 * [Criar um formulário em um Fragmento de experiência](#create-an-adaptive-form-in-experience-fragment)
-* [Converter um formulário adaptável na página AEM Sites em um fragmento de experiência](#convert-an-adaptive-form-in-sites-page-to-an-experience-fragment)
+* [Converter um Formulário adaptável na página do AEM Sites em um Fragmento de experiência](#convert-an-adaptive-form-in-sites-page-to-an-experience-fragment)
 
 ### Criar um formulário em uma página do AEM Sites {#create-an-adaptive-form-in-sites-editor}
 
@@ -150,11 +150,11 @@ Você pode usar o componente de Contêiner de formulário adaptável no Editor d
 Para criar um Formulário adaptável em uma página do Sites:
 
 1. Abra a página do AEM Sites no modo de edição.
-1. Arraste e solte a variável **[!UICONTROL Contêiner adaptável do Forms]** componente do Navegador de componentes para a página Sites. Ele cria um espaço na página para o formulário. Você pode usar o modo de layout para alterar o Tamanho do espaço do container.
+1. Arraste e solte o componente **[!UICONTROL Contêiner de Forms adaptável]** do Navegador de componentes para a página Sites. Ele cria um espaço na página para o formulário. Você pode usar o modo de layout para alterar o Tamanho do espaço do container.
 1. Arraste e solte os Componentes principais do formulário adaptável no espaço do contêiner para criar o formulário.
 1. Adicione o botão Submit.
 
-Em seguida, você [definir a ação enviar](#configure-submit-action-for-form) e propriedades avançadas.
+Em seguida, você [define a Ação de Envio](#configure-submit-action-for-form) e as propriedades avançadas.
 
 ### Criar um formulário em um Fragmento de experiência {#create-an-adaptive-form-in-experience-fragment}
 
@@ -163,11 +163,11 @@ Você pode estender o alcance de seus formulários adicionando-os aos Fragmentos
 Para criar um formulário adaptável em um fragmento de experiência:
 
 1. Abra um Fragmento de experiência.
-1. Arraste e solte a variável **[!UICONTROL Contêiner adaptável do Forms]** componente do Navegador de componentes para o Fragmento de experiência.
+1. Arraste e solte o componente **[!UICONTROL Contêiner de Forms adaptável]** do Navegador de componentes para o Fragmento de experiência.
 1. Arraste e solte os Componentes principais do formulário adaptável no espaço de contêiner no Fragmento de experiência para criar o formulário.
 1. Adicione o botão Submit.
 
-Em seguida, você [definir a ação enviar](#configure-submit-action-for-form) e propriedades avançadas.
+Em seguida, você [define a Ação de Envio](#configure-submit-action-for-form) e as propriedades avançadas.
 
 ### Converter um formulário adaptável na página AEM Sites em um fragmento de experiência {#convert-an-adaptive-form-in-sites-page-to-an-experience-fragment}
 
@@ -176,17 +176,17 @@ Você pode converter um formulário adaptável existente em um Editor de página
 Para converter um formulário adaptável na página AEM Sites em um fragmento de experiência:
 
 1. Abra a página do AEM Sites que contém o formulário adaptável (no componente Contêiner adaptável do Forms) no modo de edição.
-1. Abra a Árvore de conteúdo e selecione a **[!UICONTROL Contêiner adaptável do Forms]** que hospeda o formulário adaptável. Uma página do AEM Sites pode hospedar vários Forms adaptáveis. Portanto, selecione cuidadosamente o Contêiner adaptável correto do Forms.
-1. Na barra de menus, selecione a opção ![Ícone Converter para variação de fragmento de experiência](/help/forms/using/assets/Smock_FilingCabinet_18_N.svg) Ícone Converter para variação de Fragmento de experiência.
-   ![Converter formulário na página Sites em um fragmento de experiência](/help/forms/using/assets/convert-form-in-sites-page-to-an-experience-fragment.png)
+1. Abra a Árvore de conteúdo e selecione o **[!UICONTROL Contêiner de Forms adaptável]** que hospeda seu formulário adaptável. Uma página do AEM Sites pode hospedar vários Forms adaptáveis. Portanto, selecione cuidadosamente o Contêiner adaptável correto do Forms.
+1. Na barra de menus, selecione o ![ícone Converter em variação de fragmento de experiência](/help/forms/using/assets/Smock_FilingCabinet_18_N.svg) ícone Converter em variação de Fragmento de experiência.
+   ![Converter formulário na página de sites em um fragmento de experiência](/help/forms/using/assets/convert-form-in-sites-page-to-an-experience-fragment.png)
 
    Uma caixa de diálogo para converter o contêiner do Formulário adaptável em um novo Fragmento de experiência ou adicionar a um Fragmento de experiência existente é exibida
 1. Na caixa de diálogo Converter em variação de Fragmento de experiência, defina valores para as seguintes opções:
 
-   * **Ação:** Selecione para criar um fragmento de experiência ou Adicionar a um fragmento de experiência existente.
+   * **Ação:** selecione para criar um fragmento de experiência ou Adicionar a um fragmento de experiência existente.
    * **Caminho principal:** Especifique o caminho da pasta na qual hospedar o fragmento de experiência. A opção está disponível somente para criar um fragmento de experiência.
-   * **Modelo:** Especifique o caminho do modelo do Fragmento de experiência. Se você não tiver um modelo de Fragmento de experiência, [criar](/help/sites-developing/experience-fragments.md). A opção está disponível somente para adicionar o Formulário adaptável a um Fragmento de experiência existente.
-   * **Título do fragmento:** Especifique o título do Fragmento de experiência. O título identifica exclusivamente um Fragmento de experiência
+   * **Modelo:** especifique o caminho do modelo de Fragmento de Experiência. Se você não tiver um modelo de Fragmento de experiência, [crie-o](/help/sites-developing/experience-fragments.md). A opção está disponível somente para adicionar o Formulário adaptável a um Fragmento de experiência existente.
+   * **Título do fragmento:** especifique o título do fragmento de experiência. O título identifica exclusivamente um Fragmento de experiência
 
 
 ## Configurar a ação enviar para o formulário {#configure-submit-action-for-form}
@@ -194,10 +194,10 @@ Para converter um formulário adaptável na página AEM Sites em um fragmento de
 Uma ação enviar permite escolher o destino dos dados capturados por meio de um formulário adaptável. É acionado quando um usuário clica no botão Enviar em um Formulário adaptável. Os formulários adaptáveis incluem algumas ações de envio prontas para uso. Você também pode estender ações de envio padrão para criar sua própria ação de envio personalizada. Para configurar uma Ação de envio para o formulário:
 
 1. Abra o Editor de páginas AEM ou o Fragmento de experiência que contém o Formulário adaptável.
-1. Abra a Árvore de conteúdo e selecione a **[!UICONTROL Contêiner adaptável do Forms]** que hospeda o formulário adaptável. Uma página do AEM Sites pode hospedar vários Forms adaptáveis. Portanto, selecione cuidadosamente o Contêiner adaptável correto do Forms.
-1. Clique nas propriedades do Contêiner de formulário adaptável ![Propriedades do contêiner de formulário adaptável](/help/forms/using/assets/configure-icon.svg) ícone. A caixa de diálogo Contêiner de formulário adaptável para configurar ações de envio é aberta.
+1. Abra a Árvore de conteúdo e selecione o **[!UICONTROL Contêiner de Forms adaptável]** que hospeda seu formulário adaptável. Uma página do AEM Sites pode hospedar vários Forms adaptáveis. Portanto, selecione cuidadosamente o Contêiner adaptável correto do Forms.
+1. Clique no ícone de propriedades do Contêiner de formulário adaptável ![propriedades do Contêiner de formulário adaptável](/help/forms/using/assets/configure-icon.svg). A caixa de diálogo Contêiner de formulário adaptável para configurar ações de envio é aberta.
    ![Contêiner de formulários adaptáveis](/help/forms/using/assets/adaptive-forms-container.png)
-1. Selecione e configure uma ação Enviar, com base em seus requisitos. Para obter informações detalhadas sobre Ações de Envio, consulte [Ação de envio do formulário adaptável](configuring-submit-actions.md)
+1. Selecione e configure uma ação Enviar, com base em seus requisitos. Para obter informações detalhadas sobre Ações de Envio, consulte [Ação de Envio do Formulário Adaptável](configuring-submit-actions.md)
 
 
 ## Configurar um esquema ou modelo de dados de formulário para um formulário {#configure-schema-or-data-model-for-form}
@@ -212,13 +212,13 @@ Antes de conectar um formulário a um esquema ou modelo de dados de formulário
 Para configurar um Esquema JSON ou um Modelo de dados de formulário para seu formulário:
 
 1. Abra o Editor de páginas AEM ou o Fragmento de experiência que contém o Formulário adaptável.
-1. Abra a Árvore de conteúdo e selecione a **[!UICONTROL Contêiner adaptável do Forms]** que hospeda o formulário adaptável. Uma página do AEM Sites pode hospedar vários Forms adaptáveis. Portanto, selecione cuidadosamente o Contêiner adaptável correto do Forms.
-1. Clique nas propriedades do Contêiner de formulário adaptável ![Propriedades do contêiner de formulário adaptável](/help/forms/using/assets/configure-icon.svg) ícone. A caixa de diálogo Contêiner de formulário adaptável para configurar os Modelos de dados é aberta.
+1. Abra a Árvore de conteúdo e selecione o **[!UICONTROL Contêiner de Forms adaptável]** que hospeda seu formulário adaptável. Uma página do AEM Sites pode hospedar vários Forms adaptáveis. Portanto, selecione cuidadosamente o Contêiner adaptável correto do Forms.
+1. Clique no ícone de propriedades do Contêiner de formulário adaptável ![propriedades do Contêiner de formulário adaptável](/help/forms/using/assets/configure-icon.svg). A caixa de diálogo Contêiner de formulário adaptável para configurar os Modelos de dados é aberta.
    ![Contêiner de formulários adaptáveis do modelo de dados de formulário](/help/forms/using/assets/form-data-model-adaptive-forms-container.png)
-1. Selecione e configure um Esquema JSON ou Modelo de dados de formulário, com base em seus requisitos. Para obter informações detalhadas sobre Ações de Envio, consulte [Ação de envio do formulário adaptável](configuring-submit-actions.md).
+1. Selecione e configure um Esquema JSON ou Modelo de dados de formulário, com base em seus requisitos. Para obter informações detalhadas sobre Ações de Envio, consulte [Ação de Envio do Formulário Adaptável](configuring-submit-actions.md).
 
-   * Ao selecionar a variável **[!UICONTROL Modelo de formulário]** , use o **[!UICONTROL Selecionar modelo de dados do formulário]** opção para selecionar um modelo de dados de formulário pré-configurado.
-   * Ao selecionar a variável **[!UICONTROL Esquema]** , use o **[!UICONTROL Esquema]** opção para selecionar um esquema JSON para o formulário.
+   * Ao selecionar a opção **[!UICONTROL Modelo de formulário]**, use a opção **[!UICONTROL Selecionar modelo de dados de formulário]** para selecionar um modelo de dados de formulário pré-configurado.
+   * Ao selecionar a opção **[!UICONTROL Esquema]**, use a opção **[!UICONTROL Esquema]** para selecionar um esquema JSON para o formulário.
 
 1. Clique em **[!UICONTROL Concluído]**.
 
@@ -231,13 +231,13 @@ Você pode usar o serviço de preenchimento prévio para preencher automaticamen
 
 ### Usar o serviço de preenchimento do modelo de dados de formulário {#fdm-prefill-service}
 
-Você pode usar o serviço de Preenchimento do modelo de dados de formulário para preencher previamente os campos de um formulário usando um Modelo de dados de formulário configurado. O serviço de Preenchimento do modelo de dados de formulário usa o [Obter serviço do modelo de dados de formulário configurado](work-with-form-data-model.md#add-data-model-objects-and-services-add-data-model-objects-and-services) para recuperar dados. Para usar o serviço de Preenchimento de modelo de dados de formulário para um Formulário adaptável:
+Você pode usar o serviço de Preenchimento do modelo de dados de formulário para preencher previamente os campos de um formulário usando um Modelo de dados de formulário configurado. O serviço de Preenchimento de Modelo de Dados de Formulário usa o [Obter Serviço do Modelo de Dados de Formulário](work-with-form-data-model.md#add-data-model-objects-and-services-add-data-model-objects-and-services) configurado para recuperar dados. Para usar o serviço de Preenchimento de modelo de dados de formulário para um Formulário adaptável:
 
 1. Abra o Editor de páginas AEM ou o Fragmento de experiência que contém o Formulário adaptável.
-1. Abra a Árvore de conteúdo e selecione a **[!UICONTROL Contêiner adaptável do Forms]** que hospeda o formulário adaptável. Uma página do AEM Sites pode hospedar vários Forms adaptáveis. Portanto, selecione cuidadosamente o Contêiner adaptável correto do Forms.
-1. Clique nas propriedades do Contêiner de formulário adaptável ![Propriedades do contêiner de formulário adaptável](/help/forms/using/assets/configure-icon.svg) ícone. A caixa de diálogo Contêiner de formulário adaptável para configurar os Modelos de dados é aberta.
-   ![Preencher o editor de página do serviço fdm aem sites](/help/forms/using/assets/prefill-service-fdm-aem-sites-page-editor.png)
-1. Selecione um modelo de dados de formulário. Abra o **[!UICONTROL Básico]** guia. No serviço de preenchimento, selecione **[!UICONTROL Serviço de Preenchimento de Rascunho do Portal do Forms]**.
+1. Abra a Árvore de conteúdo e selecione o **[!UICONTROL Contêiner de Forms adaptável]** que hospeda seu formulário adaptável. Uma página do AEM Sites pode hospedar vários Forms adaptáveis. Portanto, selecione cuidadosamente o Contêiner adaptável correto do Forms.
+1. Clique no ícone de propriedades do Contêiner de formulário adaptável ![propriedades do Contêiner de formulário adaptável](/help/forms/using/assets/configure-icon.svg). A caixa de diálogo Contêiner de formulário adaptável para configurar os Modelos de dados é aberta.
+   ![Editor de página do aem sites do serviço de preenchimento prévio do fdm](/help/forms/using/assets/prefill-service-fdm-aem-sites-page-editor.png)
+1. Selecione um modelo de dados de formulário. Abra a guia **[!UICONTROL Básico]**. No serviço de preenchimento prévio, selecione **[!UICONTROL Serviço de Preenchimento Prévio de Rascunho do Portal do Forms]**.
 1. Clique em **[!UICONTROL Concluído]**.
 
 ## Redirecionar o usuário para um novo usuário no envio do formulário ou mostrar uma mensagem de agradecimento
@@ -245,9 +245,9 @@ Você pode usar o serviço de Preenchimento do modelo de dados de formulário pa
 No envio de um formulário, você pode redirecionar o usuário para outra página da Web ou uma mensagem. Para redirecionar o usuário ou configurar a mensagem de agradecimento:
 
 1. Abra o Editor de páginas AEM ou o Fragmento de experiência que contém o Formulário adaptável.
-1. Abra a Árvore de conteúdo e selecione a **[!UICONTROL Contêiner adaptável do Forms]** que hospeda o formulário adaptável. Uma página do AEM Sites pode hospedar vários Forms adaptáveis. Portanto, selecione cuidadosamente o Contêiner adaptável correto do Forms.
-1. Clique nas propriedades do Contêiner de formulário adaptável ![Propriedades do contêiner de formulário adaptável](/help/forms/using/assets/configure-icon.svg) ícone. A caixa de diálogo Contêiner de formulário adaptável para configurar os Modelos de dados é aberta.
-1. Abra o **[!UICONTROL Envio]** guia.
+1. Abra a Árvore de conteúdo e selecione o **[!UICONTROL Contêiner de Forms adaptável]** que hospeda seu formulário adaptável. Uma página do AEM Sites pode hospedar vários Forms adaptáveis. Portanto, selecione cuidadosamente o Contêiner adaptável correto do Forms.
+1. Clique no ícone de propriedades do Contêiner de formulário adaptável ![propriedades do Contêiner de formulário adaptável](/help/forms/using/assets/configure-icon.svg). A caixa de diálogo Contêiner de formulário adaptável para configurar os Modelos de dados é aberta.
+1. Abra a guia **[!UICONTROL Envio]**.
 
    * Para configurar um URL de redirecionamento, para na opção Enviar, selecione a opção Redirecionar para URL e forneça um endereço absoluto, um URL de redirecionamento ou um caminho relativo de uma página do AEM Sites.
 

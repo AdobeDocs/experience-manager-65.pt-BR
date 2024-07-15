@@ -16,10 +16,10 @@ ht-degree: 0%
 
 # Gráficos de formulário adaptável {#af-charts}
 
-![Hero_Image](assets/charts_hero_image.jpg)
+![Imagem_Herói](assets/charts_hero_image.jpg)
 
 Um gráfico é uma representação visual de dados. Ele permite condensar grandes quantidades de informações em um formato visual fácil de entender, permitindo que você visualize, interprete e analise melhor dados complexos.
-O pacote complementar do AEM Forms fornece um componente de gráfico pronto para uso. Você pode usar em formulários e documentos adaptáveis para representação visual de dados bidimensionais no **painéis repetíveis** e **tabelas**. O componente de Gráfico permite adicionar e configurar os seguintes tipos de gráficos:
+O pacote complementar do AEM Forms fornece um componente de gráfico pronto para uso. Você pode usar em seus formulários e documentos adaptáveis para representação visual de dados bidimensionais em **painéis repetíveis** e **tabelas**. O componente de Gráfico permite adicionar e configurar os seguintes tipos de gráficos:
 
 1. Pizza
 1. Coluna
@@ -44,7 +44,7 @@ Por padrão, o componente Gráfico está disponível na barra lateral do AEM. Vo
 > 
 > Antes de configurar o gráfico, certifique-se de que o painel ou a linha da tabela para a qual você está configurando o gráfico esteja definida como repetível. Você pode especificar contagens mínimas e máximas para o painel ou linha de tabela repetível na guia Configurações de repetição da caixa de diálogo Editar componente.
 
-Para configurar o gráfico, clique no componente Gráfico e clique em ![Configurações](cmppr1.png) para abrir a caixa de diálogo Editar Gráfico. A caixa de diálogo inclui guias Título e texto, Configuração, Opções avançadas e Estilo, que permitem configurar o gráfico.
+Para configurar o gráfico, clique no componente Gráfico e em ![Configurações](cmppr1.png) para abrir a caixa de diálogo Editar Gráfico. A caixa de diálogo inclui guias Título e texto, Configuração, Opções avançadas e Estilo, que permitem configurar o gráfico.
 
 ### Básico {#basic}
 
@@ -52,24 +52,24 @@ Na guia Básico, é possível configurar as seguintes propriedades:
 
 ![Propriedades do Gráfico](assets/chart-properties.png)
 
-* **Nome do elemento**: um identificador para o elemento de gráfico na estrutura de conteúdo JCR. Não é visível no gráfico, mas ajuda ao fazer referência ao elemento de outros componentes, scripts e expressões SOM.
+* **Nome do elemento**: um identificador para o elemento do gráfico na estrutura de conteúdo JCR. Não é visível no gráfico, mas ajuda ao fazer referência ao elemento de outros componentes, scripts e expressões SOM.
 * **Tipo de gráfico**: especifica o tipo de gráfico que você deseja gerar. As opções disponíveis são Pizza, Rosca, Barra, Coluna, Linha, Linha e Ponto, Ponto e Área. No exemplo, o tipo de gráfico é Coluna.
-* **Repetição de nome de linha ou nome de painel para a fonte de dados**: especifica o nome do elemento da linha de tabela ou do painel repetível de onde os dados serão originados. No exemplo, statementDetails é o nome do elemento da linha repetível na tabela Detalhes da instrução.
+* **Nome de Linha ou Nome de Painel de Repetição para Source de Dados**: especifica o nome do elemento da linha de tabela ou do painel repetível de onde os dados serão originados. No exemplo, statementDetails é o nome do elemento da linha repetível na tabela Detalhes da instrução.
 * **Eixo X > Título**: especifica o título para o eixo X. No exemplo, o título do eixo X é Categoria.
 * **Eixo X > Campo**: especifica o nome do elemento do campo (ou uma célula em uma tabela) a ser plotado no eixo X. No exemplo, categorias são configuradas no eixo X. O nome do elemento da célula da tabela na coluna Category da tabela de exemplo é category.
 * **Eixo X > Usar função**: especifica a função estatística a ser usada para calcular os valores no eixo X. No exemplo, a opção selecionada é None. Para obter mais informações sobre funções, consulte Usar funções no gráfico.
 * **Eixo Y > Título**: especifica o título para o eixo Y. No exemplo, o título para o eixo Y é Despesa.
-* **Eixo Y > Campo**: especifica o nome do elemento do campo (ou da célula em uma tabela) a ser representado no eixo Y. No exemplo, configure a quantidade no eixo Y. O nome do elemento da célula da tabela na coluna Valor da tabela de exemplo é valor.
+* **Eixo Y > Campo**: especifica o nome do elemento do campo (ou da célula em uma tabela) a ser plotado no eixo Y. No exemplo, configure a quantidade no eixo Y. O nome do elemento da célula da tabela na coluna Valor da tabela de exemplo é valor.
 * **Eixo Y > Usar função**: especifica a função estatística a ser usada para calcular os valores no eixo Y. No exemplo, a quantidade gasta em cada categoria é adicionada e o valor calculado é representado no eixo Y. Portanto, selecione Soma na lista suspensa Usar função. Para obter mais informações sobre funções, consulte Usar funções no gráfico.
-* **Posição da legenda**: Especifica a posição da legenda em relação ao gráfico. As opções disponíveis são Direita, Esquerda, Superior e Inferior.
-* **Mostrar legenda**: mostrar uma legenda para o gráfico, quando ativado.
-* **Dica de ferramenta**: Especifica o formato em que a dica de ferramenta aparece ao passar o mouse em um ponto de dados no gráfico. O valor padrão é **\${x}(\${y})**. Dependendo do tipo de gráfico, quando você aponta o mouse em um ponto, barra ou fatia no gráfico, as variáveis **\${x}** e **\${y}** são dinamicamente substituídos pelos valores correspondentes no eixo X e no eixo Y e exibidos na dica de ferramenta. Como mostrado no exemplo abaixo, a dica de ferramenta é exibida como **Lojas de varejo (5870)** ao apontar com o mouse para a coluna Lojas de Varejo. Para desativar a dica de ferramenta, deixe o campo Dica de ferramenta em branco. Essa opção não é aplicável para gráficos de linha e de área.
-* **Configurações específicas do gráfico**: Além das configurações comuns, a seguinte configuração específica para o gráfico está disponível:
+* **Posição da legenda**: especifica a posição da legenda em relação ao gráfico. As opções disponíveis são Direita, Esquerda, Superior e Inferior.
+* **Mostrar legenda**: mostra uma legenda para o gráfico, quando habilitado.
+* **Dica de Ferramenta**: especifica o formato em que a dica de ferramenta aparece ao passar o mouse em um ponto de dados no gráfico. O valor padrão é **\${x}(\${y})**. Dependendo do tipo de gráfico, quando você aponta o mouse em um ponto, barra ou fatia no gráfico, as variáveis **\${x}** e **\${y}** são substituídas dinamicamente pelos valores correspondentes no eixo X e no eixo Y e exibidas na dica de ferramenta. Como mostrado no exemplo abaixo, a dica de ferramenta é exibida como **Lojas de Varejo(5870)** ao apontar com o mouse para a coluna Lojas de Varejo. Para desativar a dica de ferramenta, deixe o campo Dica de ferramenta em branco. Essa opção não é aplicável para gráficos de linha e de área.
+* **Configurações específicas de gráfico**: além das configurações comuns, a seguinte configuração específica de gráfico está disponível:
 * **Raio interno**: disponível para gráficos de rosca para especificar o raio (em pixels) do círculo interno no gráfico.
 * **Cor da linha**: disponível para gráficos de Linha, Linha e Ponto e Área para especificar o valor hexadecimal da cor da linha no gráfico.
-* **Cor do ponto**: disponível para gráficos de Ponto e Linha e Ponto para especificar o valor hexadecimal da cor dos pontos no gráfico.
-* **Cor da área**: disponível para gráficos de Área para especificar o valor hexadecimal da cor da área sob a linha no gráfico.
-* **Classe CSS**: especifique o nome de uma classe CSS no campo de classe CSS para aplicar o estilo personalizado ao gráfico.
+* **Cor do ponto**: disponível para os gráficos de Ponto e Linha e de Ponto para especificar o valor hexadecimal da cor dos pontos no gráfico.
+* **Cor da área**: disponível para gráficos de área para especificar o valor hexadecimal da cor da área sob a linha do gráfico.
+* **Classe CSS**: especifique o nome de uma classe CSS no campo de classe CSS para aplicar um estilo personalizado ao gráfico.
 
 ### Configuração {#configuration}
 
@@ -79,11 +79,11 @@ Vamos entender detalhadamente sobre as informações contidas nessa guia, com a 
 
 Para fazer isso, é necessário plotar categorias no eixo X e, no eixo Y, plotar o dispêndio total em cada categoria.
 
-![Detalhes do demonstrativo](assets/statement-details.png)
+![Detalhes do comunicado](assets/statement-details.png)
 
 O demonstrativo de cartão de crédito usado neste exemplo é um documento de formulário adaptável e a seção de detalhes do demonstrativo é uma tabela, que tem a seguinte aparência no modo de criação.
 
-![Criação de detalhes do demonstrativo](assets/statement-details-authoring.png)
+![Criação de detalhes da instrução](assets/statement-details-authoring.png)
 
 Vamos considerar os seguintes requisitos e condições para gerar o gráfico:
 
@@ -107,7 +107,7 @@ No modo Estilo, você pode configurar a largura, em porcentagem da largura total
 
 Para alternar para o modo de estilo, na barra de ferramentas da página, **toque>>Estilo**.
 
-![Propriedades do gráfico disponíveis para estilo](assets/chart-styling.png)
+![Propriedades de gráfico disponíveis para estilo](assets/chart-styling.png)
 
 ## Usar funções no gráfico {#use-functions}
 
@@ -121,18 +121,18 @@ Você pode configurar um gráfico para usar funções estatísticas para calcula
 
 As seguintes funções estão disponíveis por padrão com o componente de Gráfico:
 
-* **Média (Médio)**: retorna a média dos valores no eixo X ou Y para um determinado valor no outro eixo.
+* **Média (Média)**: retorna a média dos valores no eixo X ou Y de um determinado valor no outro eixo.
 * **Sum**: retorna a soma de todos os valores no eixo X ou Y de um determinado valor no outro eixo.
 * **Máximo**: retorna o máximo dos valores no eixo X ou Y para um determinado valor no outro eixo.
 * **Frequência**: retorna o número de valores no eixo X ou Y para um determinado valor no outro eixo.
 * **Intervalo**: retorna a diferença entre o máximo e o mínimo dos valores no eixo X ou Y para um determinado valor no outro eixo.
 * **Mediana**: retorna o valor que separa valores mais altos e mais baixos na metade no eixo X ou Y para um determinado valor no outro eixo.
 * **Mínimo**: retorna o mínimo dos valores no eixo X ou Y para um determinado valor no outro eixo.
-* **Modo**: retorna o valor com mais ocorrências no eixo X ou Y para um determinado valor no outro eixo
+* **Modo**: retorna o valor com a maioria das ocorrências no eixo X ou Y para um determinado valor no outro eixo
 
 ### Funções personalizadas {#custom-functions}
 
-Além de usar as funções padrão em gráficos, você pode escrever [funções personalizadas](/help/forms/using/rule-editor.md#custom-functions-in-rule-editor-custom-functions) no JavaScript e disponibilizá-las na lista de funções no componente Gráfico.
+Além de usar as funções padrão em gráficos, você pode gravar [funções personalizadas](/help/forms/using/rule-editor.md#custom-functions-in-rule-editor-custom-functions) no JavaScript e disponibilizá-las na lista de funções no componente Gráfico.
 
 Uma função assume uma matriz ou valores e um nome de categoria como entradas e retorna um valor. Por exemplo:
 
@@ -151,8 +151,8 @@ Depois de escrever uma função personalizada, faça o seguinte para disponibili
 1. Adicione a função personalizada na biblioteca do cliente associada ao formulário ou documento adaptável.
 1. No CRXDE Lite, crie um nó nt:unstructured na pasta apps com as seguintes propriedades:
    * Defina guideComponentType como fd/af/reduer. (obrigatório)
-   * Defina value com um nome totalmente qualificado da função JavaScript personalizada. (obrigatório)
-   * Defina jcr:description para um nome significativo. Aparece no **Usar função** lista suspensa. Por exemplo, **Multiplicar**.
+   * Defina o valor com um nome totalmente qualificado da função personalizada do JavaScript. (obrigatório)
+   * Defina jcr:description para um nome significativo. Ele aparece na lista suspensa **Usar função**. Por exemplo, **Multiplicar**.
    * Defina qtip para obter uma breve descrição da função. Ela aparece como uma dica de ferramenta ao passar o ponteiro sobre o nome da função na lista suspensa Usar função.
    * Clique em **Salvar tudo** para salvar a configuração.
    * A função agora está disponível para uso no gráfico.
@@ -169,7 +169,7 @@ Um gráfico é atualizado automaticamente quando os usuários executam um dos se
 
 ## Usar tipo de gráfico em regras de formulário adaptáveis {#chart-in-rules}
 
-A propriedade chartType especifica o tipo de gráfico. Os valores possíveis são pie, donut, bar, line, linepoint, point e area. É uma propriedade com script, o que significa que você pode usá-la no [regras de formulário adaptáveis](/help/forms/using/rule-editor.md) para manipular configurações de gráfico. Vamos entendê-lo com a ajuda de um exemplo.
+A propriedade chartType especifica o tipo de gráfico. Os valores possíveis são pie, donut, bar, line, linepoint, point e area. É uma propriedade com script, o que significa que você pode usá-la em [regras de formulário adaptáveis](/help/forms/using/rule-editor.md) para manipular configurações de gráfico. Vamos entendê-lo com a ajuda de um exemplo.
 
 Considere que você configurou um gráfico de Coluna. No entanto, você também deseja fornecer aos usuários uma opção para selecionar um tipo de gráfico diferente em uma lista suspensa e redesenhar o gráfico. Você pode fazer isso usando a propriedade chartType em uma regra da seguinte maneira:
 
@@ -177,10 +177,10 @@ Considere que você configurou um gráfico de Coluna. No entanto, você também 
 1. Selecione o componente e toque em ![Configurações](cmppr1.png).
 1. Especifique um título para a lista suspensa. Por exemplo, selecione o tipo de gráfico.
 1. Adicione tipos de gráficos compatíveis na seção Itens para preencher a lista suspensa. Clique em **Concluído**.
-   ![Seleção da lista suspensa de gráficos](chart-drop-down.png)
+   ![Selecionando o menu suspenso do gráfico](chart-drop-down.png)
 
 1. Selecione o componente suspenso e toque em ![Texto alternativo](rule_editor_icon.png). No editor de regras, escreva uma regra no editor visual de regras como mostrado abaixo.
-   ![Configuração de regras de gráfico](assets/chart-rules.png)
+   ![Definindo regras de gráfico](assets/chart-rules.png)
 
    Neste exemplo, o nome do elemento do componente de gráfico é **myChart**.
 

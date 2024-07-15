@@ -25,6 +25,6 @@ Eles permitem criar conteúdo não vinculado a canais, juntamente com variaçõe
 
 >[!CAUTION]
 >
->A funcionalidade completa do Gerenciamento de fragmento de conteúdo não está disponível na interface clássica. Consulte [Criação de página com fragmentos de conteúdo](/help/sites-authoring/content-fragments.md) na documentação de criação padrão.
+>A funcionalidade completa do Gerenciamento de fragmento de conteúdo não está disponível na interface clássica. Consulte [Criação de páginas com fragmentos de conteúdo](/help/sites-authoring/content-fragments.md) na documentação de criação padrão.
 >
 >O componente Fragmento de Conteúdo pode ser visto no sidekick clássico da interface do usuário, mas outras funções não estão disponíveis.

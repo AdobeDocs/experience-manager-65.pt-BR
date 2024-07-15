@@ -97,4 +97,4 @@ O conteúdo não armazenado em cache atinge diretamente os servidores de origem 
 
 Como o navegador não declara esse fato, é necessário baixar uma extensão.
 
-Para o Firefox e o Chrome, há uma extensão chamada &quot;Indicador HTTP/2 e SPDY&quot;. Os navegadores só são compatíveis com http/2 de forma segura, portanto, é necessário chamar um URL com https para verificação. Se http/2 for aceito, ele será indicado pela extensão no formato de um símbolo de Flash azul e um cabeçalho `X-Firefox-Spdy` : `h2`.
+Para o Firefox e o Chrome, há uma extensão chamada &quot;Indicador HTTP/2 e SPDY&quot;. Os navegadores só são compatíveis com http/2 de forma segura, portanto, é necessário chamar um URL com https para verificação. Se houver suporte para http/2, ele será indicado pela extensão no formato de um símbolo de Flash azul e um cabeçalho `X-Firefox-Spdy` : `h2`.

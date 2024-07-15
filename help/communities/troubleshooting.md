@@ -22,17 +22,18 @@ Esta seção contém preocupações comuns e problemas conhecidos ao solucionar 
 
 ## Problemas conhecidos {#known-issues}
 
-### Falha na recuperação do Dispatcher {#dispatcher-refetch-fails}
+### Falha na nova busca do Dispatcher {#dispatcher-refetch-fails}
 
 Ao usar o Dispatcher 4.1.5 com uma versão mais recente do Jetty, uma nova busca pode resultar em &quot;Não é possível receber resposta do servidor remoto&quot; após aguardar o tempo limite da solicitação.
 
 Usar o Dispatcher 4.1.6 ou posterior resolve esse problema.
 
-### Não é possível acessar a publicação do fórum após a atualização do CQ 5.4 {#cannot-access-forum-post-after-upgrading-from-cq}
+### Não é possível acessar o Forum Post após a atualização do CQ 5.4 {#cannot-access-forum-post-after-upgrading-from-cq}
 
 Se um fórum foi criado no CQ 5.4 e em tópicos publicados, e em seguida o site foi atualizado para AEM 5.6.1 ou posterior, tentar visualizar as publicações existentes pode resultar em um erro na página:
 
-Caractere de padrão ilegal &#39;a&#39; Não é possível atender à solicitação para `/content/demoforums/forum-test.html` neste servidor e os logs contêm o seguinte:
+Caractere de padrão ilegal &#39;a&#39;
+Não é possível atender à solicitação para `/content/demoforums/forum-test.html` neste servidor e os logs contêm o seguinte:
 
 ```xml
 20.03.2014 22:49:35.805 ERROR [10.177.45.32 [1395380975744] GET /content/demoforums/forum-test.html HTTP/1.1] com.day.cq.wcm.tags.IncludeTag Error while executing script content.jsp
@@ -48,9 +49,9 @@ Portanto, qualquer código que use a API RelativeTimeFormat() deverá ser altera
 * De: `final RelativeTimeFormat fmt = new RelativeTimeFormat("r a", resourceBundle);`
 * Para: `final RelativeTimeFormat fmt = new RelativeTimeFormat("r", resourceBundle);`
 
-A falha é diferente em Autor e Publicação. No Editor, ela falha silenciosamente e simplesmente não exibe os tópicos do fórum. Em Publicar, ele emite o erro na página.
+A falha é diferente no Author e no Publish. No Editor, ela falha silenciosamente e simplesmente não exibe os tópicos do fórum. No Publish, ele exibe o erro na página.
 
-Consulte a [com.day.cq.commons.date.RelativeTimeFormat](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html) API para obter mais informações.
+Consulte a API [com.day.cq.commons.date.RelativeTimeFormat](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html) para obter mais informações.
 
 ## Preocupações comuns {#common-concerns}
 
@@ -58,9 +59,9 @@ Consulte a [com.day.cq.commons.date.RelativeTimeFormat](https://developer.adobe.
 
 Durante a inicialização (não o primeiro - mas todos os próximos), o seguinte aviso pode ser visto nos logs:
 
-* `11.04.2014 08:38:07.223 WARN [FelixStartLevel]com.github.jknack.handlebars.Handlebars Helper 'i18n'` foi substituída por `com.adobe.cq.social.handlebars.I18nHelper@15bac645`
+* `11.04.2014 08:38:07.223 WARN [FelixStartLevel]com.github.jknack.handlebars.Handlebars Helper 'i18n'` foi substituído por `com.adobe.cq.social.handlebars.I18nHelper@15bac645`
 
-Esse aviso pode ser ignorado com segurança como `jknack.handlebars.Handlebars`, usado por [SCF](scf.md#handlebarsjavascripttemplatinglanguage), vem com seu próprio utilitário assistente i18n. Na inicialização, ele é substituído por um AEM-specific [Auxiliar i18n](handlebars-helpers.md#i-n). Este aviso é gerado pela biblioteca de terceiros para confirmar a substituição de um auxiliar existente.
+Este aviso pode ser ignorado com segurança, pois o `jknack.handlebars.Handlebars`, usado pelo [SCF](scf.md#handlebarsjavascripttemplatinglanguage), vem com seu próprio utilitário auxiliar i18n. Na inicialização, ele é substituído por um [auxiliar i18n específico do AEM](handlebars-helpers.md#i-n). Este aviso é gerado pela biblioteca de terceiros para confirmar a substituição de um auxiliar existente.
 
 ### Aviso nos logs: OakResourceListener processOsgiEventQueue {#warning-in-logs-oakresourcelistener-processosgieventqueue}
 

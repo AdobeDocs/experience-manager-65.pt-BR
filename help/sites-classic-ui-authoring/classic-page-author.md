@@ -48,5 +48,5 @@ No lado esquerdo de cada página autorável, o localizador de conteúdo fornece 
 * **Menu de contexto**
 Clicar com o botão direito do mouse na maioria dos elementos da tela (por exemplo, parágrafos na página) exibe um menu de contexto com opções de ação apropriadas.
 
-* **Pesquisar enquanto digita**
+* **Pesquisar enquanto você digita**
 Em determinados cenários (por exemplo, seleção de caminho em caixas de diálogo de edição), a pesquisa de conteúdo por meio da interface AEM apresenta correspondências dinâmicas à medida que você digita a consulta.

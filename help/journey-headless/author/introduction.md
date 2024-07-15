@@ -14,7 +14,7 @@ ht-degree: 85%
 
 # Criação para headless com AEM - uma introdução {#author-headless-introduction}
 
-Nesta parte do [Jornada de autor de conteúdo do AEM Headless](overview.md), você pode aprender os conceitos e a terminologia (básicos) necessários para entender a criação de conteúdo para entrega de conteúdo headless com o Adobe Experience Manager (AEM).
+Nesta parte da [Jornada do autor de conteúdo sem periféricos do AEM](overview.md), você pode aprender os conceitos e a terminologia (básicos) necessários para entender o conteúdo de criação para entrega de conteúdo sem periféricos com o Adobe Experience Manager (AEM).
 
 ## Objetivo {#objective}
 
@@ -87,6 +87,6 @@ Agora que você aprendeu os conceitos e a terminologia, o próximo passo é [Sab
 
 * [Introdução ao AEM as a Headless CMS](/help/sites-developing/headless/introduction.md)
 
-* [Portal do desenvolvedor de AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=pt-BR)
+* [Portal do desenvolvedor do AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=pt-BR)
 
-* [Tutorials para headless no AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=pt-BR)
+* [Tutorials para Headless no AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=pt-BR)

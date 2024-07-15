@@ -1,6 +1,6 @@
 ---
 title: "Banco de dados DB2&reg;: execução semanal de um processo"
-description: Saiba como você pode melhorar o desempenho do seu banco de dados do AEM Forms DB2&reg;.
+description: Saiba como você pode melhorar o desempenho do banco de dados do AEM Forms DB2&reg;.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_the_aem_forms_database
@@ -24,7 +24,7 @@ Se o seu banco de dados AEM Forms DB2® começar a ser executado lentamente, a e
 
    (Windows) Selecione Iniciar > Programas > IBM® DB2® > Ferramentas administrativas gerais > Centro de controle.
 
-   (Linux® e UNIX®) Em um prompt de comando, digite o `db2jcc` comando.
+   (Linux® e UNIX®) Em um prompt de comando, digite o comando `db2jcc`.
 
 1. Na árvore de objetos do DB2® Control Center, clique em Todos os Bancos de Dados.
 1. Clique no banco de dados criado para o AEM Forms e clique na pasta Tabelas.

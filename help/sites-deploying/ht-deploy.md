@@ -21,8 +21,8 @@ ht-degree: 1%
 Os tópicos a seguir descrevem como realizar tarefas específicas de implantação do AEM:
 
 * [Como Usar o Visualizador de Log](https://helpx.adobe.com/experience-manager/kb/logsviewer.html)
-* [Como limpar fluxos de trabalho e o registro de auditoria](https://helpx.adobe.com/experience-manager/kb/howtopurgewf.html)
+* [Como Limpar Fluxos de Trabalho e o Log de Auditoria](https://helpx.adobe.com/experience-manager/kb/howtopurgewf.html)
 
-* [Dicas para ajustar o desempenho](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=pt-BR)
+* [Dicas de Ajuste de Desempenho](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=pt-BR)
 * [Como remover recursos da tela de boas-vindas](/help/sites-developing/customizing-the-welcome-console.md)
-* [Como desativar o recurso Rastreador de localização](https://helpx.adobe.com/experience-manager/kb/turn-off-geolocation.html)
+* [Como Desativar o Recurso Rastreador de Localização](https://helpx.adobe.com/experience-manager/kb/turn-off-geolocation.html)

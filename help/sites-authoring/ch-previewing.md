@@ -18,14 +18,14 @@ ht-degree: 24%
 
 # Visualização de páginas usando dados do ContextHub{#previewing-pages-using-contexthub-data}
 
-A variável [ContextHub](/help/sites-developing/contexthub.md) A barra de ferramentas exibe dados dos armazenamentos do ContextHub e permite alterar esses dados. A barra de ferramentas do ContextHub é útil para visualizar o conteúdo determinado pelos dados em um armazenamento do ContextHub.
+A barra de ferramentas [ContextHub](/help/sites-developing/contexthub.md) exibe os dados dos armazenamentos do ContextHub e permite alterar esses dados. A barra de ferramentas do ContextHub é útil para visualizar o conteúdo determinado pelos dados em um armazenamento do ContextHub.
 
 A barra de ferramentas consiste em uma série de modos de interface que contêm um ou mais módulos de interface.
 
 * Os modos da interface são ícones exibidos no lado esquerdo da barra de ferramentas. Ao clicar em um ícone, a barra de ferramentas revela os módulos de interface do usuário que ela contém.
 * Os módulos de interface exibem dados de um ou mais armazenamentos do ContextHub. Alguns módulos de interface também permitem manipular dados de armazenamento.
 
-O ContextHub instala vários modos de interface e módulos de interface do usuário. Seu administrador pode ter [ContextHub configurado](/help/sites-developing/ch-configuring.md) para exibir diferentes.
+O ContextHub instala vários modos de interface e módulos de interface do usuário. O administrador pode ter [configurado o ContextHub](/help/sites-developing/ch-configuring.md) para exibir outros.
 
 ![screen_shot_2018-03-23at093446](assets/screen_shot_2018-03-23at093446.png)
 
@@ -67,4 +67,4 @@ A sobreposição pop-up de um módulo pode incluir elementos de formulário que 
 
 As sobreposições de pop-up podem incluir um ícone no qual você clica para expandir o conteúdo de pop-up para cobrir toda a janela ou tela do navegador.
 
-![Tela cheia](do-not-localize/chlimage_1-18.png)
+![Tela inteira](do-not-localize/chlimage_1-18.png)

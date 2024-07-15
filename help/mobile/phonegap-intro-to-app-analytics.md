@@ -32,20 +32,20 @@ Como você pode ajustar os aplicativos móveis para fornecer a melhor experiênc
 
 Com o Adobe Mobile Services, você pode obter informações sobre como seus usuários estão usando seus aplicativos móveis rastreando o uso, falhas do aplicativo, detalhes do dispositivo e muitas outras métricas críticas para seus aplicativos móveis.
 
-O Adobe Experience Manager Mobile fornece uma visão geral dos detalhes da análise móvel diretamente do painel de aplicativos do AEM Mobile. A variável **Mosaico de métricas móveis** no painel do fornece o Real-Time Analytics para seu aplicativo móvel, permitindo que desenvolvedores, autores e administradores tenham uma ideia rápida da integridade do seu aplicativo móvel. Nas capas, o poder da análise é o [Adobe Mobile Analytics](https://business.adobe.com/products/analytics/mobile-marketing.html) SDK. O SDK do Adobe Mobile Analytics pode ser conectado aos seus aplicativos nativamente ou por meio de um plug-in PhoneGap Bridge para visualizações da Web. As métricas são coletadas e armazenadas em cache no dispositivo até que ele seja conectado, no qual os dados são enviados para a nuvem do Adobe Mobile Services para relatórios e análise.
+O Adobe Experience Manager Mobile fornece uma visão geral dos detalhes da análise móvel diretamente do painel de aplicativos do AEM Mobile. O **Bloco de Métricas do Mobile** no painel fornece o Real-Time Analytics para o seu aplicativo móvel, permitindo que desenvolvedores, autores e administradores tenham uma ideia rápida da integridade do seu aplicativo móvel. Nas capas, a energia da análise é o SDK do [Adobe Mobile Analytics](https://business.adobe.com/products/analytics/mobile-marketing.html). O SDK do Adobe Mobile Analytics pode ser conectado aos seus aplicativos nativamente ou por meio de um plug-in PhoneGap Bridge para visualizações da Web. As métricas são coletadas e armazenadas em cache no dispositivo até que ele seja conectado, no qual os dados são enviados para a nuvem do Adobe Mobile Services para relatórios e análise.
 
 O SDK do Adobe Mobile Analytics fornece o seguinte:
 
-1. **Coleta de dados para canais móveis** - Colete dados abrangentes para seus sites e aplicativos móveis nos principais sistemas operacionais.
-1. **Análise de engajamento móvel** : entenda o engajamento do usuário no aplicativo móvel, site ou vídeo, incluindo a frequência com que os consumidores iniciam o canal, se fazem compras dele e muito mais.
-1. **Painéis e relatórios do aplicativo móvel** : obtenha relatórios de uso que incluem métricas de ciclo de vida para seus aplicativos e métricas da loja de aplicativos — consulte tendências para usuários, inicializações, duração média da sessão, duração da retenção e falhas.
-1. **Análise de campanha via celular** - Quantifique a eficácia de campanhas específicas para dispositivos móveis, como SMS, anúncios de pesquisa móveis, anúncios de exibição para dispositivos móveis e códigos QR.
-1. **Análise de geolocalização** - Descubra onde os usuários do aplicativo iniciam e interagem com suas experiências móveis por localização no GPS ou pontos de interesse.
+1. **Coleta de dados para canais móveis** - Colete dados abrangentes para seus sites e aplicativos móveis em todos os principais sistemas operacionais.
+1. **Análise de engajamento móvel** - Entenda o engajamento do usuário no aplicativo móvel, site ou vídeo, incluindo a frequência com que os consumidores iniciam o canal, se fazem compras dele e muito mais.
+1. **Painéis e relatórios de aplicativos móveis** - Obtenha relatórios de uso que incluem métricas de ciclo de vida dos seus aplicativos e métricas da loja de aplicativos — veja as tendências para usuários, inicializações, duração média da sessão, duração da retenção e falhas.
+1. **Análise de campanha móvel** - Quantifique a eficácia de campanhas específicas para dispositivos móveis, como SMS, anúncios de pesquisa móveis, anúncios de exibição para dispositivos móveis e códigos QR.
+1. **Análise de geolocalização** - Descubra onde os usuários do aplicativo inicializam e interagem com suas experiências móveis por localização no GPS ou pontos de interesse.
 1. **Análise de definição de caminho** - Veja como os usuários navegam pelo seu aplicativo para determinar quais telas e elementos da interface do usuário estão envolvendo os usuários e quais fazem com que eles abandonem.
 
-Esta seção descreve como [Desenvolvedores de AEM](#developers) Em seguida, você pode aprender a instrumentar os aplicativos do AEM Mobile com o rastreamento de análise.
+Esta seção descreve como [desenvolvedores de AEM](#developers) podem aprender a instrumentar aplicativos da AEM Mobile com o rastreamento de análise.
 
-Por último, [Administradores de AEM](#administrators) saiba como:
+Finalmente, [Administradores de AEM](#administrators) aprendem a:
 
 * criar um serviço em nuvem para o Adobe Mobile Services
 * criar uma configuração de serviço para dispositivos móveis e associar um conjunto de relatórios
@@ -55,13 +55,13 @@ Por último, [Administradores de AEM](#administrators) saiba como:
 
 ## Para desenvolvedores - Integre o Analytics ao seu aplicativo {#for-developers-integrate-analytics-into-your-app}
 
-**Pré-requisito:** Os administradores de AEM devem configurar a configuração de nuvem do Adobe Mobile Services, [conforme discutido abaixo](#amscloudserviceconfig).
+**Pré-requisito:** os administradores de AEM devem configurar a configuração de nuvem do Adobe Mobile Services, [conforme discutido abaixo](#amscloudserviceconfig).
 
-Os desenvolvedores são responsáveis por [adicionar o analytics a um aplicativo AEM Mobile](/help/mobile/phonegap-add-analytics-to-apps.md) conforme necessário para rastrear, relatar e entender como os usuários se envolvem com o conteúdo do aplicativo móvel e medir as principais métricas de ciclo de vida, como inicializações, tempo no aplicativo e taxa de falha.
+Os desenvolvedores são responsáveis por [adicionar análises a um aplicativo AEM Mobile](/help/mobile/phonegap-add-analytics-to-apps.md), conforme necessário, para rastrear, relatar e entender como os usuários se envolvem com o conteúdo do aplicativo móvel e medir as principais métricas de ciclo de vida, como inicializações, tempo no aplicativo e taxa de falha.
 
 ## Para administradores - Configurar o Cloud Service do Adobe Mobile Services {#for-administrators-configure-the-adobe-mobile-services-cloud-service}
 
-Para aproveitar as vantagens do Adobe Mobile Services, você deve configurar o Cloud Service AEM Adobe Mobile Services com as informações de sua conta Adobe Analytics. O Centro de comando dos aplicativos fornece uma **Analisar métricas** bloco, onde é possível criar e associar o serviço em nuvem ao aplicativo móvel.
+Para aproveitar as vantagens do Adobe Mobile Services, você deve configurar o Cloud Service AEM Adobe Mobile Services com as informações de sua conta Adobe Analytics. O Centro de Comando de Aplicativos fornece um bloco **Analisar Métricas**, no qual você pode criar e associar o serviço de nuvem ao seu aplicativo móvel.
 
 A configuração do serviço em nuvem para o aplicativo móvel começa clicando no ícone de engrenagem no bloco Analisar métricas.
 
@@ -75,7 +75,7 @@ Para começar, clique no botão &quot;+&quot; no bloco Gerenciar Cloud Service n
 
 ![chlimage_1-126](assets/chlimage_1-126.png)
 
-Depois de clicar no ícone &#39;**+** botão &#39;, o botão **Adicionar Cloud Service** será exibido.
+Depois de clicar no botão &#39;**+**&#39;, o assistente **Adicionar Cloud Service** é exibido.
 
 ![chlimage_1-127](assets/chlimage_1-127.png)
 

@@ -17,7 +17,7 @@ ht-degree: 1%
 
 # Atalhos de teclado do AEM Forms {#aem-forms-keyboard-shortcuts}
 
-<span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) para [criação de um novo Forms adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve uma abordagem mais antiga para a criação do Forms adaptável usando componentes de base. </span>
+O <span class="preview"> Adobe recomenda o uso de [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adicionar o Forms Adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve uma abordagem mais antiga para a criação do Forms adaptável usando componentes de base. </span>
 
 Este artigo lista os atalhos de teclado que podem ser usados com o Editor de formulário adaptável, o Editor de temas, o Navegador de conteúdo e o Gerenciamento de correspondência para sistemas operacionais Windows e Macintosh.
 
@@ -31,20 +31,20 @@ Este artigo lista os atalhos de teclado que podem ser usados com o Editor de for
 | Editar regra para o componente de formulário adaptável selecionado | Ctrl+Alt+Enter | Command+Alt+Return |
 | Alternar entre a Visualização e o modo selecionado atualmente (por exemplo, Editar e Andaime) | Ctrl+Shift+M | Ctrl+Shift+M&amp;ast; |
 | Desfazer a última alteração | Ctrl+Z | Ctrl+Z&amp;ast; |
-| Refazer a última alteração | Ctrl+Y | Ctrl+S&amp;ast; |
+| Refazer a última alteração | Ctrl+Y | Ctrl+Y&amp;ast; |
 | Selecionar vários componentes | Shift + clique | Shift + clique |
 | Copiar componente selecionado | Ctrl-C | Ctrl-C&amp;ast; |
 | Recortar componentes selecionados. O componente recortado não desaparece até que seja colado no novo local. | Ctrl-X | Ctrl-X&amp;ast; |
 | Colar componentes | Ctrl+V | Ctrl+V |
 | Excluir componentes selecionados | Ctrl+Del | Ctrl+Del&amp;ast; |
-| Excluir componentes selecionados | Ctrl+Barra de espaços | Ctrl+Espaço&amp;Atrasado; |
+| Excluir componentes selecionados | Ctrl+Barra de espaços | Ctrl+Espaço&amp;ast; |
 | Tornar o texto negrito ao usar o componente Editor de Rich Text no modo Visualização | Ctrl+O | Ctrl+B&amp;ast; |
 | Colocar texto em itálico ao usar o componente Editor de Rich Text no modo Visualização | Ctrl+I | Ctrl+I&amp;ast; |
 | Tornar o texto negrito ao usar o componente Editor de Rich Text no modo Visualização | Ctrl+S | Ctrl+U&amp;ast; |
 
 >[!NOTE]
 >
->Os atalhos marcados com um &#39;&amp;ast;&#39; funcionam com as teclas Ctrl e Command no macOS.
+>Os atalhos marcados com &quot;&amp;ast;&quot; funcionam com as teclas Ctrl e Command no macOS.
 
 >[!NOTE]
 >
@@ -61,12 +61,12 @@ Seleção múltipla em um dispositivo de desktop:
 | Abrir o navegador Propriedades do componente selecionado em um tema | Alt+Enter | Alt+Return |
 | Fechar o navegador Propriedades do componente selecionado em um tema | Ctrl+Alt+W | Command+Alt+W |
 | Desfazer a última alteração | Ctrl+Z | Ctrl+Z&amp;ast; |
-| Refazer a última alteração | Ctrl+Y | Ctrl+S&amp;ast; |
+| Refazer a última alteração | Ctrl+Y | Ctrl+Y&amp;ast; |
 | Salvar alterações no navegador Propriedades do componente selecionado em um tema | Ctrl+S | Ctrl+S&amp;ast; |
 
 >[!NOTE]
 >
-Os atalhos marcados com um &#39;&amp;ast;&#39; funcionam com as teclas Ctrl e Command no macOS.
+Os atalhos marcados com &quot;&amp;ast;&quot; funcionam com as teclas Ctrl e Command no macOS.
 
 ## Navegador de conteúdo  {#contentbrowser}
 
@@ -79,15 +79,15 @@ Os atalhos marcados com um &#39;&amp;ast;&#39; funcionam com as teclas Ctrl e Co
 | Selecione o próximo item na árvore Objetos do Forms | Seta para baixo | Seta para baixo |
 | Selecione o item anterior na árvore Objetos do Forms | Seta para cima | Seta para cima |
 
-[1] Substitui Ctrl + seta para a direita no Windows e Command + seta para a direita no macOS.\
-[2] Substitui Ctrl + Seta para a esquerda no Windows e Command + Seta para a esquerda no macOS.
+[1] substitui Ctrl + Seta para a direita no Windows e Command + Seta para a direita no macOS.\
+[2] substitui Ctrl + Seta para a esquerda no Windows e Command + Seta para a esquerda no macOS.
 
 ## Gerenciamento de correspondência {#correspondence-management}
 
 Esta seção lista vários teclados e atalhos de acessibilidade que você pode usar no editor de texto do Gerenciamento de correspondência. Você pode usar esses atalhos enquanto estiver:
 
-* Criar ou editar um [Texto](texts-interactive-communications.md) ativo
-* Editar um módulo de texto depois de tocar no ícone Editar relevante ( ![edittextmodule](assets/edittextmodule.png)) quando [criação de uma correspondência](/help/forms/using/create-correspondence.md).
+* Criando ou editando um ativo [Texto](texts-interactive-communications.md)
+* Editar um módulo de texto depois de tocar no ícone Editar relevante ( ![edittextmodule](assets/edittextmodule.png)) ao [criar uma correspondência](/help/forms/using/create-correspondence.md).
 
 ### Seleção de texto e movimentação do cursor {#text-selection-and-moving-the-cursor-around}
 
@@ -126,7 +126,7 @@ Esta seção lista vários teclados e atalhos de acessibilidade que você pode u
   <tr>
    <td><p>Mover o cursor para o início da próxima palavra</p> </td> 
    <td><p>Ctrl+Seta para a direita</p> </td> 
-   <td>Option+seta para a direita <em><sup>[1]</sup></em></td> 
+   <td>Option+Seta para a Direita <em><sup>[1]</sup></em></td> 
   </tr>
   <tr>
    <td><p>Mover o cursor para o início da palavra anterior</p> </td> 
@@ -186,7 +186,7 @@ Esta seção lista vários teclados e atalhos de acessibilidade que você pode u
   <tr>
    <td><p>Selecione o texto da posição atual até o fim (do módulo)</p> </td> 
    <td><p>Shift+Ctrl+End</p> </td> 
-   <td>Command+Shift+seta para baixo<br /> </td> 
+   <td>Command+Shift+Seta para Baixo<br /> </td> 
   </tr>
   <tr>
    <td><p>Selecione o texto da posição atual até o início (do módulo)</p> </td> 

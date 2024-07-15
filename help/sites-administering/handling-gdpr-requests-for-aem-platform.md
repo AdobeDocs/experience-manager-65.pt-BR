@@ -27,7 +27,7 @@ No nível da Fundação AEM, os Dados Pessoais armazenados são o Perfil do Usu�
 
 ### Etapas manuais {#manual-steps}
 
-1. Abra o console Administração do usuário, navegando até **[!UICONTROL Configurações - Segurança - Usuários]** ou navegando diretamente para `https://<serveraddress>:<serverport>/libs/granite/security/content/useradmin.html`
+1. Abra o console Administração do Usuário, navegando até **[!UICONTROL Configurações - Segurança - Usuários]** ou navegando diretamente até `https://<serveraddress>:<serverport>/libs/granite/security/content/useradmin.html`
 
    ![useradmin2](assets/useradmin2.png)
 
@@ -37,7 +37,7 @@ No nível da Fundação AEM, os Dados Pessoais armazenados são o Perfil do Usu�
 
 1. Por fim, clique para abrir o perfil do usuário, e verifique na guia **[!UICONTROL Detalhes]**.
 
-   ![userprofile_small](assets/userprofile_small.png)
+   ![perfil_usuário_pequeno](assets/userprofile_small.png)
 
 ### API HTTP {#http-api}
 
@@ -87,11 +87,11 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
    A interface do usuário indica que o usuário é desativado ao esmaecer e adicionar um bloqueio ao cartão de perfil:
 
-   ![disableduser](assets/disableduser.png)
+   ![usuário desabilitado](assets/disableduser.png)
 
 ### Excluir informações do perfil do usuário {#delete-user-profile-information}
 
-1. Efetue logon no CRXDE Lite e procure pelo `[!UICONTROL userId]`:
+1. Faça logon no CRXDE Lite e procure por `[!UICONTROL userId]`:
 
    ![image2018-2-6_1-57-11](assets/image2018-2-6_1-57-11.png)
 
@@ -102,22 +102,22 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 1. Excluir nós de perfil e todos os seus filhos. Há dois formatos para os nós de perfil, dependendo da versão do AEM:
 
    1. O perfil privado padrão em `[!UICONTROL /profile]`
-   1. `[!UICONTROL /profiles]`, para novos perfis criados usando o AEM 6.5.
+   1. `[!UICONTROL /profiles]`, para novos perfis criados com o AEM 6.5.
 
    ![image2018-2-6_2-0-4](assets/image2018-2-6_2-0-4.png)
 
 ### API HTTP {#http-api-1}
 
-Os procedimentos a seguir usam o `curl` de linha de comando para ilustrar como desativar o usuário com a tag **[!UICONTROL cavery]** `userId` e excluir perfis de `cavery` que estão disponíveis no local padrão.
+Os procedimentos a seguir usam a ferramenta de linha de comando `curl` para ilustrar como desabilitar o usuário com **[!UICONTROL cavery]** `userId` e excluir perfis de `cavery` que estejam disponíveis no local padrão.
 
-* *Descobrir a página inicial do usuário*
+* *Descobrindo a página inicial do usuário*
 
 ```shell
 curl -g -u user:password 'http://localhost:4502/libs/granite/security/search/authorizables.json?query={"condition":[{"named":"cavery"}]}'
      {"authorizables":[{"type":"user","authorizableId_xss":"cavery","authorizableId":"cavery","name_xss":"Carlene Avery","name":"Carlene Avery","home":"/home/users/we-retail/DSCP-athB1NYLBXvdTuN"}],"total":1}
 ```
 
-* *Desabilitar o usuário*
+* *Desabilitando o usuário*
 
 Usando o caminho do nó da propriedade home da carga JSON retornada do comando acima:
 

@@ -28,9 +28,9 @@ As atividades definem e organizam seus esforços de marketing. As atividades abr
 
 Por exemplo, o catálogo de produtos We.Retail inclui teasers que chamam a atenção para produtos sazonais. A atividade Esportes de verão define os segmentos de marketing aos quais os teasers se destinam durante os meses de verão.
 
-As atividades também identificam os [mecanismo de direcionamento](/help/sites-authoring/personalization.md#targeting-engine) que suas páginas usam.
+As atividades também identificam o [mecanismo de direcionamento](/help/sites-authoring/personalization.md#targeting-engine) que suas páginas usam.
 
-Use o [Console de Atividades](/help/sites-authoring/activitylib.md) para criar e gerenciar as atividades das suas marcas. Você também pode criar atividades ao [criar conteúdo direcionado](/help/sites-authoring/content-targeting-touch.md).
+Use o [console de Atividades](/help/sites-authoring/activitylib.md) para criar e gerenciar as atividades das suas marcas. Você também pode criar atividades ao [criar conteúdo direcionado](/help/sites-authoring/content-targeting-touch.md).
 
 ## Experiências {#experiences}
 
@@ -40,7 +40,7 @@ Os públicos-alvo são baseados em segmentos de marketing criados no AEM ou no A
 
 Por exemplo, uma atividade define experiências para dois públicos separados: mulheres com mais de 30 anos e mulheres com menos de 30 anos. A página Feminino do site We.Retail exibe produtos diferentes para cada experiência.
 
-Você define experiências para uma atividade. Você pode usar o [Console de atividades](/help/sites-authoring/activitylib.md#adding-editing-an-activity-using-the-activities-console) ou [Modo de direcionamento](/help/sites-authoring/content-targeting-touch.md#adding-and-removing-experiences-using-targeting-mode) para adicionar experiências a uma atividade.
+Você define experiências para uma atividade. Você pode usar o [console de Atividades](/help/sites-authoring/activitylib.md#adding-editing-an-activity-using-the-activities-console) ou o [modo de Direcionamento](/help/sites-authoring/content-targeting-touch.md#adding-and-removing-experiences-using-targeting-mode) para adicionar experiências a uma atividade.
 
 ## Ofertas {#offers}
 
@@ -48,7 +48,7 @@ Uma oferta é um conteúdo que aparece em um local em uma página para uma exper
 
 Por exemplo, a página Feminino do site de amostra We.Retail pode usar ofertas como a imagem do teaser que aparece na parte superior da página. Uma oferta diferente é usada como teaser para a experiência Feminino acima de 30 e para a experiência Feminino abaixo de 30.
 
-Use o [Console de ofertas](/help/sites-authoring/offerlib.md) para criar ofertas que você pode usar em várias experiências. Criar ofertas de uso único ou adicionar ofertas de uma biblioteca de ofertas quando [criação de conteúdo direcionado](/help/sites-authoring/content-targeting-touch.md).
+Use o [Console de ofertas](/help/sites-authoring/offerlib.md) para criar ofertas que você possa usar em várias experiências. Crie ofertas de uso único ou adicione ofertas de uma biblioteca de ofertas ao [criar conteúdo direcionado](/help/sites-authoring/content-targeting-touch.md).
 
 ## Mecanismo de direcionamento {#targeting-engine}
 

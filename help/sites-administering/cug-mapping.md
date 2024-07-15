@@ -53,7 +53,7 @@ ht-degree: 1%
 
 ## Comparação de serviços OSGi {#comparison-of-osgi-services}
 
-**Versões anteriores do AEM**
+**Versões mais antigas do AEM**
 
 Rótulo: Suporte ao grupo de usuários fechado (CUG) do Adobe Granite
 
@@ -61,7 +61,7 @@ Nome: com.day.cq.auth.impl.CugSupportImpl
 
 **AEM 6.5**
 
-* Rótulo: Configuração do Apache Jackrabbit Oak CUG
+* Rótulo: Configuração de CUG do Apache Jackrabbit Oak
 
   Nome: org.apache.jackrabbit.oak.spi.security.authorization.cug.impl.CugConfiguration
 
@@ -87,7 +87,7 @@ Serviço para configurar a lista de exclusão de entidades que não devem ser af
 
   >[!NOTE]
   > 
-  >Se a variável `CugExcludeImpl` não estiver configurado, a variável `CugConfiguration` retorna ao padrão.
+  >Se o `CugExcludeImpl` não estiver configurado, o `CugConfiguration` voltará ao padrão.
 
   É possível conectar uma implementação personalizada do CugExclude se houver necessidades especiais.
 

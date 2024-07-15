@@ -19,17 +19,17 @@ ht-degree: 2%
 
 # Modelos de grupo {#group-templates}
 
-O console Modelos de grupo é semelhante ao [Modelos de site](/help/communities/sites.md) console. Ambos são blueprints para um conjunto de páginas e recursos pré-conectados que formam um site da comunidade. A diferença é que um modelo de site é para a comunidade principal e um modelo de grupo é para um grupo da comunidade, uma subcomunidade aninhada na comunidade principal.
+O console Modelos de Grupo é semelhante ao console [Modelos de Site](/help/communities/sites.md). Ambos são blueprints para um conjunto de páginas e recursos pré-conectados que formam um site da comunidade. A diferença é que um modelo de site é para a comunidade principal e um modelo de grupo é para um grupo da comunidade, uma subcomunidade aninhada na comunidade principal.
 
-Um grupo da comunidade é incorporado a um modelo de site, incluindo o [Função Grupos](/help/communities/functions.md#groups-function) (que pode não ser a primeira nem a única função no template).
+Um grupo da comunidade é incorporado a um modelo de site através da inclusão da [função de Grupos](/help/communities/functions.md#groups-function) (que pode não ser a primeira nem a única função no modelo).
 
-A partir das comunidades [pacote de recursos 1](/help/communities/deploy-communities.md#latestfeaturepack), é possível aninhar grupos ao incluir a função Grupos em um modelo de grupo.
+A partir do Communities [feature pack 1](/help/communities/deploy-communities.md#latestfeaturepack), é possível aninhar grupos incluindo a função Grupos em um modelo de grupo.
 
 No momento em que uma ação é executada para criar um grupo da comunidade, o modelo (estrutura) do grupo é selecionado. A seleção depende de como a função Grupos foi configurada quando adicionada ao site ou modelo de grupo.
 
 >[!NOTE]
 >
->Os consoles para a criação de [sites da comunidade](/help/communities/sites-console.md), [modelos de site da comunidade](/help/communities/sites.md), [modelos de grupo da comunidade](/help/communities/tools-groups.md), e [funções da comunidade](/help/communities/functions.md) são para uso somente no ambiente de criação.
+>Os consoles para a criação de [sites de comunidade](/help/communities/sites-console.md), [modelos de site de comunidade](/help/communities/sites.md), [modelos de grupo de comunidade](/help/communities/tools-groups.md) e [funções de comunidade](/help/communities/functions.md) são para uso somente no ambiente de autor.
 
 ## Console de modelos de grupo {#group-templates-console}
 
@@ -37,7 +37,7 @@ Para acessar o console de modelos de grupo no ambiente de autor do AEM:
 
 * Selecionar **Ferramentas | Communities | Modelos de grupo,** da navegação global.
 
-Esse console exibe os modelos a partir dos quais [site da comunidade](/help/communities/sites-console.md) e permite a criação de novos modelos de grupo.
+Este console exibe os modelos a partir dos quais um [site da comunidade](/help/communities/sites-console.md) pode ser criado e permite que novos modelos de grupo sejam criados.
 
 ![Modelo de grupos da comunidade](assets/groups-template.png)
 
@@ -49,11 +49,11 @@ Isso exibe o painel Editor de sites, que contém três subpainéis:
 
 ### Informações básicas {#basic-info}
 
-![site-basic-info](assets/site-basic-info.png)
+![informações-básicas-site](assets/site-basic-info.png)
 
 No painel Informações básicas, um nome, uma descrição e se o modelo está ativado ou desativado são configurados:
 
-* **Novo nome do modelo do grupo**
+* **Nome do Novo Modelo do Grupo**
 
   A ID do nome do modelo.
 
@@ -61,13 +61,13 @@ No painel Informações básicas, um nome, uma descrição e se o modelo está a
 
   A descrição do modelo.
 
-* **Desativado/Ativado**
+* **Desabilitado/Habilitado**
 
   Um switch que controla se o modelo é referenciável.
 
 #### Miniatura  {#thumbnail}
 
-![miniatura do site](assets/site-thumbnail.png)
+![miniatura-site](assets/site-thumbnail.png)
 
 (Opcional) Selecione o ícone Fazer upload da imagem para exibir uma miniatura junto com o Nome e a Descrição para os criadores de sites da comunidade.
 
@@ -85,7 +85,7 @@ No painel Informações básicas, um nome, uma descrição e se o modelo está a
 
 Para adicionar funções da comunidade, arraste do lado direito para o lado esquerdo na ordem em que os links do menu do site devem aparecer. Os estilos são aplicados ao modelo durante a criação do site.
 
-Por exemplo, se você quiser um fórum, arraste a função forum da biblioteca e solte-a no construtor de modelos. Isso resulta na abertura da caixa de diálogo de configuração do fórum. Consulte a [console de funções](/help/communities/functions.md) para obter informações sobre as caixas de diálogo de configuração.
+Por exemplo, se você quiser um fórum, arraste a função forum da biblioteca e solte-a no construtor de modelos. Isso resulta na abertura da caixa de diálogo de configuração do fórum. Consulte o [console de funções](/help/communities/functions.md) para obter informações sobre as caixas de diálogo de configuração.
 
 Continue a arrastar e soltar quaisquer outras funções da comunidade desejadas para um site da subcomunidade (grupo) com base nesse modelo.
 
@@ -95,8 +95,8 @@ Depois que todas as funções desejadas forem soltas na área do construtor de m
 
 ## Editar modelo do grupo {#edit-group-template}
 
-Ao visualizar grupos da comunidade no principal [Console de modelos de grupo](#group-templates-console), é possível selecionar um modelo de grupo existente para edição.
+Ao visualizar grupos da comunidade no [console Modelos de grupo](#group-templates-console) principal, é possível selecionar um modelo de grupo existente para edição.
 
-A edição de um modelo de grupo não afeta os sites da comunidade já criados a partir do modelo. É possível identificar diretamente [editar um site da comunidade](/help/communities/sites-console.md#modify-structure)A estrutura de.
+A edição de um modelo de grupo não afeta os sites da comunidade já criados a partir do modelo. É possível [editar diretamente a estrutura de um site da comunidade](/help/communities/sites-console.md#modify-structure).
 
-Esse processo fornece os mesmos painéis que [criação de um modelo de grupo](#create-group-template).
+Este processo fornece os mesmos painéis que [criando um modelo de grupo](#create-group-template).

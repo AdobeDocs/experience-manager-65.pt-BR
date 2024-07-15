@@ -27,7 +27,7 @@ Como exemplo, considere o Gerenciamento de correspondência como o candidato de 
 
 Comece criando um modelo de Gerenciamento de correspondência de amostra que é renderizado no espaço de trabalho do AEM Forms. Para obter mais detalhes, consulte [Criar um modelo de carta](../../forms/using/create-letter.md).
 
-Acesse o modelo de Gerenciamento de correspondência em seu URL para verificar se o modelo de Gerenciamento de correspondência pode ser renderizado com sucesso. O URL tem um padrão semelhante a `https://'[server]:[port]'/lc/content/cm/createcorrespondence.html?cmLetterId=encodedLetterId&cmUseTestData=1&cmPreview=0;`
+Acesse o modelo de Gerenciamento de correspondência em seu URL para verificar se o modelo de Gerenciamento de correspondência pode ser renderizado com sucesso. A URL tem um padrão semelhante a `https://'[server]:[port]'/lc/content/cm/createcorrespondence.html?cmLetterId=encodedLetterId&cmUseTestData=1&cmPreview=0;`
 
 Onde `encodedLetterId` é a ID de letra codificada em URL. Especifique a mesma ID de correspondência ao definir o processo de renderização para a tarefa do espaço de trabalho no Workbench.
 
@@ -43,11 +43,11 @@ Para obter mais informações, consulte [Adicionar e configurar usuários](/help
 Use as seguintes etapas para criar uma tarefa para renderizar e enviar uma carta no AEM Workspace:
 
 1. Inicie o Workbench. Efetue logon no host local como administrador.
-1. Clique em Arquivo > Novo > Aplicativo. No campo Nome do Aplicativo, informe `CMDemoSample` e, em seguida, clique em Finish.
-1. Selecionar `CMDemoSample/1.0` e clique com o botão direito do mouse `NewProcess`. No campo nome, digite `CMRenderer` e, em seguida, clique em Finish.
+1. Clique em Arquivo > Novo > Aplicativo. No campo Nome do Aplicativo, digite `CMDemoSample` e clique em Concluir.
+1. Selecione `CMDemoSample/1.0` e clique com o botão direito `NewProcess`. No campo de nome, digite `CMRenderer` e clique em Concluir.
 1. Arraste o seletor de atividade Ponto de início e configure-o:
 
-   1. Em Dados de apresentação, selecione Usar um ativo CRX.
+   1. Em Dados de Apresentação, selecione Usar um Ativo do CRX.
 
       ![useacrxasset](assets/useacrxasset.png)
 
@@ -55,7 +55,7 @@ Use as seguintes etapas para criar uma tarefa para renderizar e enviar uma carta
 
       ![Guia Carta](assets/letter_tab_new.png)
 
-   1. Selecione a correspondência apropriada e clique em **OK**.
+   1. Selecione a letra apropriada e clique em **OK**.
 
 1. Clique em Gerenciar perfis de ação. A caixa de diálogo Gerenciar perfil de ação é exibida. Verifique se os processos Renderizar e Enviar estão selecionados corretamente.
 1. Para abrir a carta com um arquivo XML de dados, procure e selecione o arquivo de dados apropriado no processo de preparação de dados.
@@ -101,12 +101,12 @@ Use as seguintes etapas para criar uma tarefa para renderizar e enviar uma carta
    ```
 
    [Obter arquivo](assets/dscsample.zip)
-Baixar DSC: um DSC de amostra está disponível no arquivo DSCSample.zip anexado acima. Baixe e descompacte o arquivo DSCSample.zip. Antes de usar o serviço DSC, você deve configurá-lo. Consulte [Configurar o serviço DSC](../../forms/using/add-action-button-in-create-correspondence-ui.md#p-configure-the-dsc-service-p).
+Baixar DSC: um DSC de amostra está disponível no arquivo DSCSample.zip anexado acima. Baixe e descompacte o arquivo DSCSample.zip. Antes de usar o serviço DSC, você deve configurá-lo. Consulte [Configurar o Serviço DSC](../../forms/using/add-action-button-in-create-correspondence-ui.md#p-configure-the-dsc-service-p).
 
    Na caixa de diálogo Definir atividade, selecione a atividade apropriada, como getLetterInstanceInfo, e clique em **OK**.
 
 1. Implante o aplicativo. Se solicitado, faça check-in e salve os ativos.
-1. Faça logon no espaço de trabalho de formulários do AEM em https://&#39;[server]:[porta]&quot;/lc/content/ws.
+1. Faça logon no espaço de trabalho de formulários do AEM em https://&#39;[server]:[port]&#39;/lc/content/ws.
 1. Abra a tarefa que você adicionou, CMRenderer. A carta Gerenciamento de correspondência é exibida.
 
    ![cminworkspace](assets/cminworkspace.png)

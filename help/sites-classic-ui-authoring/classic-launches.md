@@ -24,9 +24,9 @@ Um lançamento é criado para permitir que as alterações sejam preparadas para
 
 >[!NOTE]
 >
->A teoria por trás dos lançamentos é descrita em detalhes na seção [Lançamentos](/help/sites-authoring/launches.md) na documentação de criação padrão.
+>A teoria por trás das inicializações é descrita em detalhes em [Inicializações](/help/sites-authoring/launches.md) na documentação de criação padrão.
 >
->As informações específicas para usar inicializações na interface clássica podem ser encontradas na documentação a seguir, juntamente com [Criação de lançamentos](/help/sites-classic-ui-authoring/classic-launches-creating.md), [Edição de lançamentos](/help/sites-classic-ui-authoring/classic-launches-editing.md), e [Promoção de lançamentos](/help/sites-classic-ui-authoring/classic-launches-promoting.md).
+>As informações específicas sobre o uso de inicializações na interface clássica podem ser encontradas na documentação a seguir, juntamente com [Criação de inicializações](/help/sites-classic-ui-authoring/classic-launches-creating.md), [Edição de inicializações](/help/sites-classic-ui-authoring/classic-launches-editing.md) e [Promoção de inicializações](/help/sites-classic-ui-authoring/classic-launches-promoting.md).
 
 >[!CAUTION]
 >

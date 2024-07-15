@@ -48,7 +48,7 @@ ht-degree: 8%
 
 * Um novo componente Carrossel de categoria foi adicionado para permitir que os usuários empresariais arrastem e soltem esse componente em páginas de conteúdo AEM para enriquecer páginas de conteúdo com dados comerciais.
 
-* Os componentes principais do CIF foram estendidos para hidratar a Camada de dados de clientes Adobe, enviando dados comerciais. A Camada de dados de clientes Adobe é um método padronizado para coletar dados e comunicá-los aos servidores de análise digital e de relatórios. Para obter mais detalhes, consulte [Camada de dados de clientes Adobe](https://github.com/adobe/adobe-client-data-layer/wiki).
+* Os componentes principais do CIF foram estendidos para hidratar a Camada de dados de clientes Adobe, enviando dados comerciais. A Camada de dados de clientes Adobe é um método padronizado para coletar dados e comunicá-los aos servidores de análise digital e de relatórios. Para obter mais detalhes, consulte [Camada de Dados de Clientes Adobe](https://github.com/adobe/adobe-client-data-layer/wiki).
 
 * As páginas Detalhes do produto e Lista de produtos foram estendidas para preencher automaticamente os metadados de SEO (como título, meta descrição e meta palavras-chave) configurados na interface de administrador do Adobe Commerce.
 
@@ -92,7 +92,7 @@ ht-degree: 8%
 
 * Componente de navegação estrutural adicionado para suportar páginas de conteúdo e comércio.
 
-* A guia Comércio foi adicionada às propriedades da página para expor as propriedades do CIF em Landing pages e Fragmentos de experiência.
+* A guia Commerce foi adicionada às Propriedades da página para expor propriedades de CIF para páginas de aterrissagem e Fragmentos de experiência.
 
 * O componente Barra de pesquisa foi aprimorado para oferecer suporte à opção para exibir texto de espaço reservado
 
@@ -116,7 +116,7 @@ ht-degree: 8%
 
 * O site de referência CIF Venia foi extraído do repositório Arquétipo CIF e agora é um repositório GitHub independente.
 
-* Arquétipo CIF fundido com Arquétipo do Projeto AEM. Para novos projetos, use [Arquétipo de projeto AEM](https://github.com/adobe/aem-project-archetype) como ponto de partida.
+* Arquétipo CIF fundido com Arquétipo do Projeto AEM. Para novos projetos, use o [Arquétipo de Projeto AEM](https://github.com/adobe/aem-project-archetype) como ponto de partida.
 
 * O gerenciamento de catálogo de endereços foi adicionado para permitir que os usuários conectados gerenciem seus endereços.
 
@@ -172,7 +172,7 @@ Esta é a primeira versão dos Componentes principais do CIF compatível com o A
 
 * O suporte à Pesquisa facetada foi adicionado à Página de pesquisa e à Página de lista de produtos para permitir que os compradores filtrem os resultados da pesquisa com base nas facetas do produto.
 
-* Novo serviço OSGi adicionado para personalizar URLs PDP/PLP para fins de SEO. Para obter mais detalhes, consulte [documentação](https://github.com/adobe/aem-core-cif-components).
+* Novo serviço OSGi adicionado para personalizar URLs PDP/PLP para fins de SEO. Para obter mais detalhes, consulte a [documentação](https://github.com/adobe/aem-core-cif-components).
 
 * A Associação de produto é criada automaticamente quando uma Configuração na nuvem é criada.
 
@@ -192,7 +192,7 @@ Esta é a primeira versão dos Componentes principais do CIF compatível com o A
 
 ### Novidades {#what-is-new-april}
 
-* As configurações do Conector CIF são unificadas e simplificadas. Para obter mais detalhes, confira [Introdução](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html?lang=pt-BR) ou [AEM Configuração de novo projeto CIF](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html?lang=pt-BR)
+* As configurações do Conector CIF são unificadas e simplificadas. Para obter mais detalhes, confira a [Introdução](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html?lang=pt-BR) ou a [Configuração do novo projeto CIF AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html?lang=pt-BR)
 
 ### O que foi melhorado {#what-is-improved-april}
 

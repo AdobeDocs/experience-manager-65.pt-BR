@@ -19,11 +19,11 @@ ht-degree: 0%
 
 # Recursos do Monitoring Server usando a console JMX{#monitoring-server-resources-using-the-jmx-console}
 
-A Console JMX permite que você monitore e gerencie serviços no servidor CRX. As seções a seguir resumem os atributos e operações que são expostos por meio da estrutura JMX.
+A Console JMX permite que você monitore e gerencie serviços no servidor do CRX. As seções a seguir resumem os atributos e operações que são expostos por meio da estrutura JMX.
 
-Para obter informações sobre como usar os controles do console, consulte [Usando a console JMX](#using-the-jmx-console). Para obter informações de fundo sobre JMX, consulte [Tecnologia Java Management Extensions (JMX)](https://www.oracle.com/technetwork/java/javase/tech/javamanagement-140525.html) página no site do Oracle.
+Para obter informações sobre como usar os controles do console, consulte [Usando o Console JMX](#using-the-jmx-console). Para obter informações de fundo sobre JMX, consulte a página [Tecnologia Java Management Extensions (JMX)](https://www.oracle.com/technetwork/java/javase/tech/javamanagement-140525.html) no site do Oracle.
 
-Para obter informações sobre como criar MBeans para gerenciar seus serviços usando a Console JMX, consulte [Integração de serviços com o console JMX](/help/sites-developing/jmx-integration.md).
+Para obter informações sobre como criar MBeans para gerenciar seus serviços usando o Console JMX, consulte [Integrando serviços com o Console JMX](/help/sites-developing/jmx-integration.md).
 
 ## Manutenção do fluxo de trabalho {#workflow-maintenance}
 
@@ -34,7 +34,7 @@ Operações para administrar instâncias de fluxos de trabalho em execução, co
 
 >[!NOTE]
 >
->Consulte a [console de fluxo de trabalho](/help/sites-administering/workflows-administering.md) para obter ferramentas adicionais de administração de workflow e descrições de possíveis status de instância de workflow.
+>Consulte o [console de fluxo de trabalho](/help/sites-administering/workflows-administering.md) para obter ferramentas adicionais de administração de fluxo de trabalho e descrições de possíveis status de instância de fluxo de trabalho.
 
 ### Operações {#operations}
 
@@ -43,12 +43,12 @@ Operações para administrar instâncias de fluxos de trabalho em execução, co
 * Argumentos: nenhum
 * Valor retornado: dados tabulares contendo as colunas Count e ModelId.
 
-**listCompletedWorkflowsPerModel** Lista o número de instâncias concluídas para cada modelo de fluxo de trabalho.
+**listCompletedWorkflowsPerModel** Lista o número de instâncias de fluxo de trabalho concluídas para cada modelo de fluxo de trabalho.
 
 * Argumentos: nenhum
 * Valor retornado: dados tabulares contendo as colunas Count e ModelId.
 
-**returnWorkflowQueueInfo** Lista informações sobre itens de fluxo de trabalho que foram processados e que estão na fila de processamento.
+**returnWorkflowQueueInfo** Lista informações sobre itens de fluxo de trabalho que foram processados e que estão na fila para processamento.
 
 * Argumentos: nenhum
 * Valor retornado: dados tabulares contendo as seguintes colunas:
@@ -64,7 +64,7 @@ Operações para administrar instâncias de fluxos de trabalho em execução, co
    * Trabalhos processados
    * Trabalhos em fila
 
-**returnWorkflowJobTopicInfo** Lista as informações de processamento para tarefas de workflow, organizadas por tópico.
+**returnWorkflowJobTopicInfo** Lista as informações de processamento dos trabalhos de fluxo de trabalho, organizadas por tópico.
 
 * Argumentos: nenhum
 * Valor retornado: dados tabulares contendo as seguintes colunas:
@@ -92,12 +92,12 @@ Operações para administrar instâncias de fluxos de trabalho em execução, co
 * Argumentos: nenhum.
 * Valor retornado: dados tabulares contendo as colunas Contagem e ID do modelo.
 
-**terminateFailedInstances** Encerrar instâncias de fluxo de trabalho que falharam. Você pode encerrar todas as instâncias com falha ou somente as instâncias com falha de um modelo específico. Opcionalmente, é possível reiniciar as instâncias após serem encerradas. Você também pode testar a operação para ver os resultados sem realmente executar a operação.
+**terminateFailedInstances** Encerra instâncias de fluxo de trabalho que falharam. Você pode encerrar todas as instâncias com falha ou somente as instâncias com falha de um modelo específico. Opcionalmente, é possível reiniciar as instâncias após serem encerradas. Você também pode testar a operação para ver os resultados sem realmente executar a operação.
 
 * Argumentos:
 
-   * Reinicie a instância: (opcional) especifique um valor de `true` para reiniciar as instâncias após serem encerradas. O valor padrão de `false` não causa a reinicialização de instâncias de fluxo de trabalho encerradas.
-   * simulação: (opcional) especifique um valor de `true` para ver os resultados da operação sem realmente executá-la. O valor padrão de `false` faz com que a operação seja executada.
+   * Reiniciar a instância: (Opcional) Especifique um valor de `true` para reiniciar as instâncias após serem encerradas. O valor padrão de `false` não causa a reinicialização de instâncias de fluxo de trabalho encerradas.
+   * Dry run: (opcional) especifique um valor de `true` para ver os resultados da operação sem realmente executar a operação. O valor padrão de `false` faz com que a operação seja executada.
    * Modelo: (opcional) a ID do modelo ao qual a operação é aplicada. Especifique nenhum modelo para aplicar a operação às instâncias com falha de todos os modelos de fluxo de trabalho. A ID é o caminho para o nó do modelo, por exemplo:
 
      `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
@@ -115,7 +115,7 @@ Operações para administrar instâncias de fluxos de trabalho em execução, co
 
 * Argumentos:
 
-   * simulação: (opcional) especifique um valor de `true` para ver os resultados da operação sem realmente executá-la. O valor padrão de `false` faz com que a operação seja executada.
+   * Dry run: (opcional) especifique um valor de `true` para ver os resultados da operação sem realmente executar a operação. O valor padrão de `false` faz com que a operação seja executada.
    * Modelo: (opcional) a ID do modelo ao qual a operação é aplicada. Especifique nenhum modelo para aplicar a operação aos itens de trabalho com falha de todos os modelos de fluxo de trabalho. A ID é o caminho para o nó do modelo, por exemplo:
 
      `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
@@ -129,7 +129,7 @@ Operações para administrar instâncias de fluxos de trabalho em execução, co
    * IniciarComentário
    * WorkflowTitle
 
-**LimparAtivo** Remove instâncias de fluxo de trabalho ativas de uma página específica. Você pode remover as instâncias ativas de todos os modelos ou apenas as instâncias de um modelo específico. Opcionalmente, você pode testar a operação para ver os resultados sem realmente executar a operação.
+**PurgeActive** remove as instâncias de fluxo de trabalho ativas de uma página específica. Você pode remover as instâncias ativas de todos os modelos ou apenas as instâncias de um modelo específico. Opcionalmente, você pode testar a operação para ver os resultados sem realmente executar a operação.
 
 * Argumentos:
 
@@ -137,7 +137,7 @@ Operações para administrar instâncias de fluxos de trabalho em execução, co
 
      `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
    * Número de dias desde o início do workflow: a idade das instâncias de workflow a serem removidas, em dias.
-   * simulação: (opcional) especifique um valor de `true` para ver os resultados da operação sem realmente executá-la. O valor padrão de `false` faz com que a operação seja executada.
+   * Dry run: (opcional) especifique um valor de `true` para ver os resultados da operação sem realmente executar a operação. O valor padrão de `false` faz com que a operação seja executada.
 
 * Valor retornado: dados tabulares sobre as instâncias de fluxo de trabalho ativas que são removidas, incluindo as seguintes colunas:
 
@@ -158,18 +158,18 @@ Operações para administrar instâncias de fluxos de trabalho em execução, co
 
 * Valor retornado: o número de instâncias de fluxo de trabalho obsoletas.
 
-**restartStaleWorkflows** Reinicia instâncias de fluxo de trabalho obsoletas. Você pode reiniciar todas as instâncias obsoletas ou apenas as instâncias obsoletas de um modelo específico. Você também pode testar a operação para ver os resultados sem realmente executar a operação.
+**restartStaleWorkflows** reinicia instâncias de fluxo de trabalho obsoletas. Você pode reiniciar todas as instâncias obsoletas ou apenas as instâncias obsoletas de um modelo específico. Você também pode testar a operação para ver os resultados sem realmente executar a operação.
 
 * Argumentos:
 
    * Modelo: (opcional) a ID do modelo ao qual a operação é aplicada. Especifique nenhum modelo para aplicar a operação às instâncias obsoletas de todos os modelos de fluxo de trabalho. A ID é o caminho para o nó do modelo, por exemplo:
 
      `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
-   * simulação: (opcional) especifique um valor de `true` para ver os resultados da operação sem realmente executá-la. O valor padrão de `false` faz com que a operação seja executada.
+   * Dry run: (opcional) especifique um valor de `true` para ver os resultados da operação sem realmente executar a operação. O valor padrão de `false` faz com que a operação seja executada.
 
 * Valor retornado: uma lista de instâncias de fluxo de trabalho que são reiniciadas.
 
-**fetchModelList** Lista todos os modelos de workflow.
+**fetchModelList** Lista todos os modelos de fluxo de trabalho.
 
 * Argumentos: nenhum
 * Valor retornado: dados tabulares que identificam os modelos de fluxo de trabalho, incluindo as colunas ModelId e ModelName.
@@ -202,7 +202,7 @@ Operações para administrar instâncias de fluxos de trabalho em execução, co
 
      `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
    * Número de dias desde a conclusão do fluxo de trabalho: o número de dias em que as instâncias de fluxo de trabalho estiveram no estado concluído.
-   * simulação: (opcional) especifique um valor de `true` para ver os resultados da operação sem realmente executá-la. O valor padrão de `false` faz com que a operação seja executada.
+   * Dry run: (opcional) especifique um valor de `true` para ver os resultados da operação sem realmente executar a operação. O valor padrão de `false` faz com que a operação seja executada.
 
 * Valor retornado: dados tabulares sobre as instâncias de fluxo de trabalho concluídas que são removidas, incluindo as seguintes colunas:
 
@@ -215,7 +215,7 @@ Operações para administrar instâncias de fluxos de trabalho em execução, co
 
 ## Repositório {#repository}
 
-Informações sobre o repositório CRX
+Informações sobre o repositório do CRX
 
 * Domínio: com.adobe.granite
 * Tipo: Repositório
@@ -226,15 +226,15 @@ Informações sobre o repositório CRX
 
 **Versão** A versão de implementação do repositório. Somente leitura.
 
-**HomeDir** O diretório onde o repositório está localizado. O local padrão é &lt;quickstart_jar_location>/crx-quickstart/repository. Somente leitura.
+**HomeDir** O diretório onde o repositório está localizado. O local padrão é &lt;QuickStart_Jar_Location>/crx-quickstart/repository. Somente leitura.
 
-**NomeCliente** O nome do cliente para o qual a licença de software é emitida. Somente leitura.
+**NomeCliente** O nome do cliente para o qual a licença de software foi emitida. Somente leitura.
 
 **LicenseKey** A chave de licença exclusiva para esta instalação do repositório. Somente leitura.
 
-**EspaçoDisponívelEmDisco** O espaço em disco disponível para esta instância do repositório, em Mbytes. Somente leitura.
+**AvailableDiskSpace** O espaço em disco disponível para esta instância do repositório, em Mbytes. Somente leitura.
 
-**NúmeroMáximoDeArquivosAbertos** O número de arquivos que podem ser abertos de uma vez. Somente leitura.
+**MaximumNumberOfOpenFiles** O número de arquivos que podem ser abertos ao mesmo tempo. Somente leitura.
 
 **SessionTracker** O valor da variável de sistema crx.debug.sessions. true indica uma sessão de depuração. false indica uma sessão normal. Leitura/gravação.
 
@@ -488,19 +488,19 @@ Informações sobre o repositório CRX
  </tbody>
 </table>
 
-**WorkspaceNames** Os nomes dos espaços de trabalho no repositório. Somente leitura.
+**NomesDoEspaçoDeTrabalho** Os nomes dos espaços de trabalho no repositório. Somente leitura.
 
-**DataStoreGarbageCollectionDelay** O tempo em milissegundos que a coleta de lixo fica em espera após a varredura a cada décimo nó. Leitura/gravação.
+**DataStoreGarbageCollectionDelay** A quantidade de tempo em milissegundos que a coleta de lixo fica em suspensão após a verificação de cada décimo nó. Leitura/gravação.
 
-**BackupDelay** O tempo em milissegundos que o processo de backup fica suspenso entre cada etapa do backup. Leitura/gravação.
+**BackupDelay** O tempo em milissegundos que o processo de backup aguarda entre cada etapa do backup. Leitura/gravação.
 
-**BackupEmAndamento** Um valor true indica que um processo de backup está em execução. Somente leitura.
+**BackupInProgress** Um valor true indica que um processo de backup está em execução. Somente leitura.
 
-**Andamento do backup** Para o backup atual, o percentual de todos os arquivos que foram submetidos a backup. Somente leitura.
+**BackupProgress** Para o backup atual, o percentual de todos os arquivos do backup. Somente leitura.
 
-**DestinoDoBackupAtual** Para o backup atual, o arquivo ZIP onde os arquivos de backup estão sendo armazenados. Quando um backup não está em andamento, nenhum valor é exibido. Somente leitura.
+**CurrentBackupTarget** Para o backup atual, o arquivo ZIP onde os arquivos de backup estão sendo armazenados. Quando um backup não está em andamento, nenhum valor é exibido. Somente leitura.
 
-**BackupWasSuccessful** Um valor true indica que não ocorreram erros durante o backup atual ou que nenhum backup está em andamento. false indica que ocorreu um erro durante o backup atual. Somente leitura.
+**BackupWasSuccessful** Um valor true indica que nenhum erro ocorreu durante o backup atual ou nenhum backup está em andamento. false indica que ocorreu um erro durante o backup atual. Somente leitura.
 
 **BackupResult** O status do backup atual. Os seguintes valores são possíveis:
 
@@ -512,11 +512,11 @@ Informações sobre o repositório CRX
 
 Somente leitura.
 
-**TarOtimizationRunningSince** A hora em que o processo atual de otimização de arquivos TAR começou. Somente leitura.
+**TarOtimizationRunningSince** A hora em que o processo de otimização de arquivos TAR atual começou. Somente leitura.
 
-**TarOtimizationDelay** O tempo em milissegundos que o processo de otimização de TAR aguarda entre cada etapa do processo. Leitura/gravação.
+**TarOtimizationDelay** A quantidade de tempo em milissegundos que o processo de otimização de TAR permanece em suspensão entre cada etapa do processo. Leitura/gravação.
 
-**ClusterProperties** Um conjunto de pares de valores-chave que representam as propriedades e os valores do cluster. Cada linha na tabela representa uma propriedade de cluster. Somente leitura.
+**ClusterProperties** Um conjunto de pares de valores chave que representam as propriedades e os valores do cluster. Cada linha na tabela representa uma propriedade de cluster. Somente leitura.
 
 **ClusterNodes** Os membros do cluster do repositório.
 
@@ -544,7 +544,7 @@ Somente leitura.
 
 * Valor retornado: nenhum
 
-**stopDataStoreGarbageCollection** Interrompe uma coleta de lixo do armazenamento de dados em execução.
+**stopDataStoreGarbageCollection** Para uma coleta de lixo de armazenamento de dados em execução.
 
 * Argumentos: nenhum
 * Valor retornado: representação da string do status atual
@@ -553,17 +553,17 @@ Somente leitura.
 
 * Argumentos:
 
-   * `target`: (Opcional) A `String` valor que representa o nome do arquivo ZIP ou diretório em que os dados do repositório serão arquivados. Para usar um arquivo ZIP, inclua a extensão de nome de arquivo ZIP. Para usar um diretório, inclua nenhuma extensão de nome de arquivo.
+   * `target`: (Opcional) Um valor `String` que representa o nome do arquivo ZIP ou diretório em que os dados do repositório serão arquivados. Para usar um arquivo ZIP, inclua a extensão de nome de arquivo ZIP. Para usar um diretório, inclua nenhuma extensão de nome de arquivo.
 
      Para executar um backup incremental, especifique o diretório usado anteriormente para o backup.
 
      Você pode especificar um caminho absoluto ou relativo. Os caminhos relativos são relativos ao pai do diretório crx-quickstart.
 
-     Quando você não especificar nenhum valor, o valor padrão de `backup-currentdate.zip` é utilizada, onde `currentdate` está no formato `yyyyMMdd-HHmm`.
+     Quando você não especifica nenhum valor, o valor padrão de `backup-currentdate.zip` é usado, onde `currentdate` está no formato `yyyyMMdd-HHmm`.
 
 * Valor retornado: nenhum
 
-**cancelBackup** Interrompe o processo de backup atual e exclui o arquivo temporário criado pelo processo para arquivar dados.
+**cancelBackup** Interrompe o processo de backup atual e exclui o arquivo morto temporário criado pelo processo para arquivar dados.
 
 * Argumentos: nenhum
 * Valor retornado: nenhum
@@ -583,12 +583,12 @@ Somente leitura.
 * Argumentos: nenhum
 * Valor retornado: nenhum
 
-**stopTarOtimization** Interrompe a otimização do arquivo TAR.
+**stopTarOtimization** Para a otimização do arquivo TAR.
 
 * Argumentos: nenhum
 * Valor retornado: nenhum
 
-**tarIndexMerge** Mescla os arquivos de índice superiores de todos os conjuntos TAR. Os principais arquivos de índice são arquivos com diferentes versões principais. Por exemplo, os seguintes arquivos são mesclados no arquivo index_3_1.tar: index_1_1.tar, index_2_0.tar, index_3_0.tar. Os arquivos mesclados são excluídos (no exemplo anterior, index_1_1.tar, index_2_0.tar e index_3_0.tar são excluídos).
+**tarIndexMerge** Mescla os arquivos de índice principais de todos os conjuntos TAR. Os principais arquivos de índice são arquivos com diferentes versões principais. Por exemplo, os seguintes arquivos são mesclados no arquivo index_3_1.tar: index_1_1.tar, index_2_0.tar, index_3_0.tar. Os arquivos mesclados são excluídos (no exemplo anterior, index_1_1.tar, index_2_0.tar e index_3_0.tar são excluídos).
 
 * Argumentos:
 
@@ -605,23 +605,23 @@ Somente leitura.
 
 * Argumentos:
 
-   * `master`: um valor de string que representa o endereço IP ou o nome do computador que executa o nó do repositório principal.
+   * `master`: um valor de cadeia de caracteres que representa o endereço IP ou o nome do computador que executa o nó de repositório mestre.
    * `username`: O nome a ser usado para autenticar com o cluster.
-   * `password`: a senha a ser usada para autenticação.
+   * `password`: A senha a ser usada para autenticação.
 
 * Valor retornado: nenhum
 
-**traversalCheck** Atravessa e, opcionalmente, corrige inconsistências em uma subárvore que começa em um nó específico. Isso é abordado em detalhes completos na documentação dos Gerenciadores de persistência.
+**traversalCheck** Percorre e, opcionalmente, corrige inconsistências em uma subárvore que começa em um nó específico. Isso é abordado em detalhes completos na documentação dos Gerenciadores de persistência.
 
-**consistencyCheck** Verificações e, opcionalmente, correções de consistência no Datastore. Isso é abordado em detalhes completos na documentação sobre o armazenamento de dados.
+**consistencyCheck** verifica e, opcionalmente, corrige a consistência no Datastore. Isso é abordado em detalhes completos na documentação sobre o armazenamento de dados.
 
 ## Estatísticas do repositório (TimeSeries) {#repository-statistics-timeseries}
 
-O valor do campo TimeSeries para cada tipo de estatística `org.apache.jackrabbit.api.stats.RepositoryStatistics` define.
+O valor do campo TimeSeries para cada tipo de estatística definido por `org.apache.jackrabbit.api.stats.RepositoryStatistics`.
 
 * Domínio: `com.adobe.granite`
 * Tipo: `TimeSeries`
-* Nome: um dos seguintes valores do `org.apache.jackrabbit.api.stats.RepositoryStatistics.Type` Classe Enum:
+* Nome: um dos seguintes valores da classe Enum `org.apache.jackrabbit.api.stats.RepositoryStatistics.Type`:
 
    * BUNDLE_CACHE_ACCESS_COUNTER
    * BUNDLE_CACHE_MISS_AVERAGE
@@ -666,7 +666,7 @@ Informações estatísticas sobre consultas de repositório.
 
 **SlowQueries** Informações sobre as consultas do repositório que levaram mais tempo para serem concluídas. Somente leitura.
 
-**TamanhoLentoDaFilaDeConsultas** O número máximo de consultas a serem incluídas na lista SlowQueries. Leitura-gravação.
+**SlowQueriesQueueSize** O número máximo de consultas a serem incluídas na lista SlowQueries. Leitura-gravação.
 
 **PopularQueries** Informações sobre as consultas do repositório que mais ocorreram. Somente leitura.
 
@@ -674,7 +674,7 @@ Informações estatísticas sobre consultas de repositório.
 
 ### Operações {#operations-2}
 
-**clearSlowQueriesQueue** Remove todas as consultas da lista de consultas lentas.
+**clearSlowQueriesQueue** Remove todas as consultas da lista SlowQueries.
 
 * Argumentos: nenhum
 * Valor retornado: nenhum
@@ -690,33 +690,33 @@ Monitore os serviços para cada agente de replicação. Quando você cria um age
 
 * **Domínio:** com.adobe.granite.replication
 * **Tipo:** agente
-* **Nome:** sem valor
-* **Propriedades:** {id=&quot;*Nome*&quot;}, onde *Nome* é o valor da propriedade Name do agente.
+* **Nome:** nenhum valor
+* **Propriedades:** {id=&quot;*Name*&quot;}, onde *Name* é o valor da propriedade Name do agente.
 
 ### Atributos {#attributes-3}
 
-**ID** Um valor de String que representa o identificador da configuração do agente de replicação. Vários agentes podem usar a mesma configuração. Somente leitura.
+**Id** Um valor de cadeia de caracteres que representa o identificador da configuração do agente de replicação. Vários agentes podem usar a mesma configuração. Somente leitura.
 
-**Válido** Um valor booleano que indica se o agente está configurado corretamente:
+**Válido** Um valor booliano que indica se o agente está configurado corretamente:
 
 * `true`: configuração válida.
 * `false` : a configuração contém erros.
 
 Somente leitura.
 
-**Ativado** Um valor booleano que indica se o agente está ativado:
+**Habilitado** Um valor booliano que indica se o agente está habilitado:
 
-* `true`: Ativado.
-* `false`: Desativado.
+* `true`: Habilitado.
+* `false`: Desabilitado.
 
-**FilaBloqueada** Um valor booleano que indica se a fila existe e está bloqueada:
+**QueueBlocked** Um valor booliano que indica se a fila existe e está bloqueada:
 
 * `true`: Bloqueado. Uma nova tentativa automática está pendente.
 * `false`: Não bloqueado ou não existe.
 
 Somente leitura.
 
-**QueuePaused** Um valor booleano que indica se a fila de trabalhos está pausada:
+**QueuePaused** Um valor booliano que indica se a fila de trabalhos está pausada:
 
 * `true`: Pausado (suspenso)
 * `false`: Não pausado ou não existe.
@@ -725,22 +725,22 @@ Leitura-gravação.
 
 **QueueNumEntries** Um valor int que representa o número de trabalhos na fila do agente. Somente leitura.
 
-**QueueStatusTime** Um valor de Date que indica a hora no servidor quando os valores de status exibidos foram obtidos. O valor corresponde à hora em que a página foi carregada. Somente leitura.
+**QueueStatusTime** Um valor Date que indica a hora no servidor quando os valores de status exibidos foram obtidos. O valor corresponde à hora em que a página foi carregada. Somente leitura.
 
-**EnfileirarPróximaTentativaHora** Para filas bloqueadas, um valor de Data que indica quando ocorre a próxima tentativa automática. Quando nenhuma hora for exibida, a fila não será bloqueada. Somente leitura.
+**QueueNextRetryTime** Para filas bloqueadas, um valor de Data que indica quando ocorre a próxima tentativa automática. Quando nenhuma hora for exibida, a fila não será bloqueada. Somente leitura.
 
-**EnfileirarProcessamentoDesde** Um valor de Data que indica quando o processamento começou para a tarefa atual. Quando não aparecer nenhuma hora, a fila será bloqueada ou ficará ociosa. Somente leitura.
+**QueueProcessingSince** Um valor de Date que indica o início do processamento do trabalho atual. Quando não aparecer nenhuma hora, a fila será bloqueada ou ficará ociosa. Somente leitura.
 
-**TempoÚltimoProcessoFila** Um valor de Data que indica quando o trabalho anterior foi concluído. Somente leitura.
+**QueueLastProcessTime** Um valor Date que indica quando o trabalho anterior foi concluído. Somente leitura.
 
 ### Operações {#operations-3}
 
-**queueForceRetry** Para filas bloqueadas, o emite o comando retry para a fila.
+**queueForceRetry** Para filas bloqueadas, emite o comando retry para a fila.
 
 * Argumentos: nenhum
 * Valor retornado: nenhum
 
-**queueClear** Remove todas as tarefas da fila.
+**queueClear** Remove todos os trabalhos da fila.
 
 * Argumentos: nenhum
 * Valor retornado: nenhum
@@ -759,31 +759,31 @@ Fornece estatísticas sobre solicitações HTTP para que você possa monitorar o
 
 **MinRequestDurationMsec** O menor tempo (em milissegundos) necessário para processar uma solicitação desde a última redefinição das estatísticas.
 
-**MaxRequestDurationMsec** O tempo mais longo (em milissegundos) necessário para processar uma solicitação desde a última redefinição das estatísticas.
+**MaxRequestDurationMsec** A quantidade de tempo mais longa (em milissegundos) que foi necessária para processar uma solicitação desde que as estatísticas foram redefinidas pela última vez.
 
-**DuraçãodeDesvioPadrãoMS** O desvio padrão da quantidade de tempo que foi necessária para processar solicitações. O desvio padrão é calculado usando todas as solicitações desde que as estatísticas foram redefinidas pela última vez.
+**StandardDeviationDurationMsec** O desvio padrão da quantidade de tempo necessária para processar solicitações. O desvio padrão é calculado usando todas as solicitações desde que as estatísticas foram redefinidas pela última vez.
 
-**DuraçãodeSolicitaçãodeMédiaMS** O tempo médio necessário para processar uma solicitação. A média é calculada usando todas as solicitações desde a última redefinição das estatísticas
+**MeanRequestDurationMsec** A quantidade média de tempo necessária para processar uma solicitação. A média é calculada usando todas as solicitações desde a última redefinição das estatísticas
 
 ### Operações {#operations-4}
 
-**resetStatistics** Define todas as estatísticas como zero. Redefina as estatísticas quando precisar analisar o desempenho do processamento de solicitações durante um período específico.
+**resetStatistics** Define todas as estatísticas para zero. Redefina as estatísticas quando precisar analisar o desempenho do processamento de solicitações durante um período específico.
 
 * Argumentos: nenhum
 * Valor retornado: nenhum
 
-**id** A representação da string da ID do pacote.
+**id** A representação da Cadeia de Caracteres da ID do pacote.
 
-**instalado** Um valor booleano que indica se o pacote está instalado:
+**instalado** Um valor booliano que indica se o pacote está instalado:
 
-* `true`: instalado.
-* `false`: não instalado.
+* `true`: Instalado.
+* `false`: Não instalado.
 
-**installedBy** A ID do último usuário que instalou o pacote.
+**installedBy** A identificação do usuário que instalou o pacote pela última vez.
 
 **installedDate** A data em que o pacote foi instalado pela última vez.
 
-**tamanho** Um valor longo que armazena o tamanho do pacote em bytes.
+**size** Um valor longo que armazena o tamanho do pacote em bytes.
 
 
 ## Quickstart Launcher {#quickstart-launcher}
@@ -801,7 +801,7 @@ Exibe uma mensagem na janela QuickStart.
 
 Argumentos:
 
-* p1: A `String` que representa a mensagem a ser exibida.
+* p1: Um valor `String` que representa a mensagem a ser exibida.
 * Valor retornado: nenhum
 
 **startupFinished**
@@ -854,7 +854,7 @@ Vários recursos de servidor de terceiros instalam MBeans que expõem atributos 
      <li>Tempo de execução</li>
      <li>Threading</li>
     </ul> </td>
-   <td><a href="https://docs.oracle.com/javase/8/docs/api/javax/management/package-summary.html">javax.management</a> pacote</td>
+   <td>Pacote <a href="https://docs.oracle.com/javase/8/docs/api/javax/management/package-summary.html">javax.management</a></td>
   </tr>
   <tr>
    <td>java.util.logging</td>
@@ -870,7 +870,7 @@ Vários recursos de servidor de terceiros instalam MBeans que expõem atributos 
      <li>packageState</li>
      <li>serviceState</li>
     </ul> </td>
-   <td><a href="https://osgi.org/specification/osgi.enterprise/7.0.0/service.jmx.html#d0e42567">org.osgi.jmx.framework</a> pacote</td>
+   <td>Pacote <a href="https://osgi.org/specification/osgi.enterprise/7.0.0/service.jmx.html#d0e42567">org.osgi.jmx.framework</a></td>
   </tr>
  </tbody>
 </table>
@@ -893,7 +893,7 @@ A página principal do console JMX inclui uma tabela de serviços. Cada linha na
 
 ## Usando aplicações JMX externas para monitoramento {#using-external-jmx-applications-for-monitoring}
 
-O CRX permite que aplicativos externos interajam com Beans gerenciados (MBeans) via [Java Management Extensions (JMX)](https://docs.oracle.com/javase/6/docs/technotes/guides/management/overview.html). Usar consoles genéricos, como [JConsole](https://java.sun.com/developer/technicalArticles/J2SE/jconsole.html) ou aplicativos de monitoramento específicos do domínio, permite obter e definir configurações e propriedades de CRX, além de monitorar o desempenho e o uso de recursos.
+O CRX permite que aplicativos externos interajam com Beans Gerenciados (MBeans) via [Java Management Extensions (JMX)](https://docs.oracle.com/javase/6/docs/technotes/guides/management/overview.html). O uso de consoles genéricos, como o [JConsole](https://java.sun.com/developer/technicalArticles/J2SE/jconsole.html) ou aplicativos de monitoramento específicos do domínio, permite obter e definir configurações e propriedades do CRX, além do monitoramento do desempenho e do uso de recursos.
 
 ### Utilização do JConsole para se conectar ao CRX {#using-jconsole-to-connect-to-crx}
 
@@ -906,21 +906,21 @@ Para se conectar ao CRX usando o JConsole, siga estas etapas:
 
 O JConsole será iniciado e a janela JConsole será exibida.
 
-### Conexão com um processo CRX local {#connecting-to-a-local-crx-process}
+### Conexão com um processo local do CRX {#connecting-to-a-local-crx-process}
 
 O JConsole exibirá uma lista de processos locais da Java Virtual Machine. A lista conterá dois processos de início rápido. Selecione o processo de início rápido &quot;CHILD&quot; na lista de processos locais (geralmente aquele com o PID mais alto).
 
 ![screen_shot_2012-03-26at114557am](assets/screen_shot_2012-03-26at114557am.png)
 
-### Conectando-se a um processo CRX remoto {#connecting-to-a-remote-crx-process}
+### Conexão com um processo remoto do CRX {#connecting-to-a-remote-crx-process}
 
-Para conectar-se a um processo CRX remoto, a JVM que hospeda o processo CRX remoto deve ser ativada para aceitar conexões JMX remotas.
+Para se conectar a um processo CRX remoto, a JVM que hospeda o processo CRX remoto deve ser ativada para aceitar conexões JMX remotas.
 
 Para ativar conexões JMX remotas, a seguinte propriedade do sistema deve ser definida ao iniciar a JVM:
 
 `com.sun.management.jmxremote.port=portNum`
 
-Na propriedade acima, `portNum` é o número da porta através da qual você deseja ativar as conexões JMX RMI. Certifique-se de especificar um número de porta não utilizado. Além de publicar um conector RMI para acesso local, a definição dessa propriedade publica um conector RMI adicional em um registro somente leitura privado na porta especificada usando um nome bem conhecido, &quot;jmxrmi&quot;.
+Na propriedade acima, `portNum` é o número da porta pela qual você deseja habilitar as conexões JMX RMI. Certifique-se de especificar um número de porta não utilizado. Além de publicar um conector RMI para acesso local, a definição dessa propriedade publica um conector RMI adicional em um registro somente leitura privado na porta especificada usando um nome bem conhecido, &quot;jmxrmi&quot;.
 
 Por padrão, quando você ativa o agente JMX para monitoramento remoto, ele usa a autenticação de senha com base em um arquivo de senha que precisa ser especificado usando a seguinte propriedade do sistema ao iniciar a Java VM:
 

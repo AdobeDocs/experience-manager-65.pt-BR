@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Glossário{#glossary}
 
-Este glossário lista (alfabeticamente) detalhes de todos os documentos do Material de entrega da [Lista de verificação do projeto](/help/managing/best-practices-checklist.md).
+Este glossário lista (em ordem alfabética) detalhes de todos os documentos da Entrega da [Lista de Verificação do Projeto](/help/managing/best-practices-checklist.md).
 
 ## Aceitação das partes interessadas {#acceptance-from-business-stakeholders}
 
@@ -46,7 +46,7 @@ Verifique se os níveis necessários de acesso ao sistema foram concedidos a tod
 
 ### Lista de verificação de segurança do Adobe {#adobe-security-checklist}
 
-A variável [Lista de verificação de segurança do Adobe](/help/sites-administering/security-checklist.md) é a lista de verificação oficial fornecida para garantir que o Adobe Experience Manager (AEM) seja seguro na instalação. Ele contém as medidas de segurança e as etapas de verificação que devem ser executadas para garantir a integridade da instância.
+A [Lista de Verificação de Segurança do Adobe](/help/sites-administering/security-checklist.md) é a lista de verificação oficial fornecida para garantir que o Adobe Experience Manager (AEM) seja seguro na instalação. Ele contém as medidas de segurança e as etapas de verificação que devem ser executadas para garantir a integridade da instância.
 
 ### Configuração de projeto do portal de suporte do Adobe {#adobe-support-portal-project-set-up}
 
@@ -56,19 +56,19 @@ O Portal de suporte do Adobe permite que os parceiros e clientes de implementaç
 
 ### Treinamento do administrador do AEM {#aem-administrator-training}
 
-Treinamento para a equipe administrativa da solução. Consulte a [Serviços de treinamento do Adobe](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager) para obter mais informações.
+Treinamento para a equipe administrativa da solução. Consulte os [Serviços de treinamento do Adobe](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager) para obter mais informações.
 
 ### Treinamento do autor do AEM {#aem-author-training}
 
-Treinamento para a equipe que produzirá (criará) conteúdo para a solução. Consulte a [Serviços de treinamento do Adobe](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager) para obter mais informações.
+Treinamento para a equipe que produzirá (criará) conteúdo para a solução. Consulte os [Serviços de treinamento do Adobe](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager) para obter mais informações.
 
 ### Exame de certificação AEM {#aem-certification-exam}
 
-Assegurar que as pessoas adequadas estão registradas para tomar as [exames de certificação](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager).
+Verifique se as pessoas apropriadas estão registradas para fazer os [exames de certificação](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager) relevantes.
 
 ### Certificado por AEM {#aem-certified}
 
-Garantir que a pessoa apropriada tenha passado no [exames de certificação](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager).
+Certifique-se de que o perfil apropriado tenha passado nos [exames de certificação](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager) relevantes.
 
 ### Treinamento técnico em AEM {#aem-technical-training}
 
@@ -92,7 +92,7 @@ O roteiro do cliente é composto por marcos de alto nível e metas de negócios.
 
 ### Definição da arquitetura do aplicativo {#application-architecture-definition}
 
-A variável [arquitetura do aplicativo](/help/managing/best-practices.md#development-preparation) deve definir claramente o comportamento dos pedidos propostos.
+A [arquitetura do aplicativo](/help/managing/best-practices.md#development-preparation) deve definir claramente o comportamento dos aplicativos propostos.
 
 Tem como foco:
 
@@ -109,7 +109,8 @@ Certifique-se de que sua equipe seja composta pela equipe com o treinamento adeq
 
 * pelo menos um desenvolvedor líder certificado para AEM
 * pelo menos um arquiteto com certificado AEM
-* pelo menos 75% dos desenvolvedores com certificação AEM; isso permite que os desenvolvedores certificados orientem desenvolvedores juniores e garante o compartilhamento de conhecimento e a transparência
+* pelo menos 75% dos seus desenvolvedores com certificação AEM;
+isso permite que os desenvolvedores certificados orientem desenvolvedores secundários e garante o compartilhamento de conhecimento e a transparência
 
 ### Diagrama da arquitetura {#architecture-diagram}
 
@@ -206,7 +207,8 @@ Os KPIs de negócios definem valores mensuráveis que demonstram com que eficiê
 
 Um documento de requisitos comerciais (BRD) detalha a solução de negócios de um projeto, fornecendo uma especificação clara das necessidades e expectativas dos negócios do cliente. O BRD também distingue entre a solução empresarial e a solução técnica.
 
-Ao examinar a solução de negócios, o BRD deve responder à pergunta: &quot;O que a empresa deseja fazer?&quot;
+Ao examinar a solução empresarial, o BRD deve responder à pergunta:
+&quot;O que a empresa quer fazer?&quot;
 
 ### Aprovação dos negócios em quaisquer ajustes necessários para a solução ou arquitetura identificada e alinhada às expectativas de ROI e KPI {#business-sign-off-on-any-required-adjustments-to-the-solution-or-architecture-identified-and-aligned-against-roi-and-kpi-expectations}
 
@@ -502,7 +504,7 @@ Resultados de um estudo de viabilidade para o AEM e o projeto de solução de al
 
 ### Contrato finalizado {#finalized-contract}
 
-É necessário um contrato finalizado e assinado antes de prosseguir com o projeto. Baseia-se no [Rascunho do Contrato](#contract-draft).
+É necessário um contrato finalizado e assinado antes de prosseguir com o projeto. Isto é baseado no [Rascunho do Contrato](#contract-draft).
 
 ### Funcionalidade da solução aceita pelas partes interessadas {#functionality-of-the-solution-accepted-by-stakeholders}
 
@@ -871,7 +873,7 @@ Geralmente, isso é usado em UAT (User Acceptance Testing, teste de aceitação 
 
 A Prova de conceito (POC) é avaliada em relação aos requisitos para garantir que ambos estejam alinhados.
 
-### Lista de verificação pós-implantação {#post-deployment-checklist}
+### Post - Lista de verificação de implantação {#post-deployment-checklist}
 
 Uma lista de verificação para definir a série de verificações e tarefas a serem executadas após cada implantação.
 
@@ -901,7 +903,7 @@ Definir o plano de comunicação para as partes interessadas da empresa e a equi
 
 ### Esforços do projeto - Estimativas finais {#project-efforts-final-estimates}
 
-A variável [estimativas iniciais](#project-efforts-initial-estimates) foram de alto nível e feitos de acordo com os requisitos de alto nível para a implementação.
+As [estimativas iniciais](#project-efforts-initial-estimates) foram de alto nível e foram feitas de acordo com os requisitos de alto nível para a implementação.
 
 Elas agora são revisadas, refinadas e expandidas para fornecer as estimativas finais. As estimativas devem ser fornecidas por cada líder de projeto apropriado, incluindo gerenciamento de projeto, consultoria, arquitetura, teste e desenvolvimento.
 
@@ -966,7 +968,7 @@ Ele é usado com o Runbook para executar etapas e verificações pré e pós-ins
 
 >[!NOTE]
 >
->Para obter um exemplo, consulte a [Notas de versão do AEM](/help/release-notes/release-notes.md).
+>Para ver um exemplo, consulte as [Notas de versão do AEM](/help/release-notes/release-notes.md).
 
 ### Versão em execução no ambiente de produção {#release-running-on-production-environment}
 
@@ -1285,7 +1287,7 @@ O Conceito de teste é o esboço de alto nível de teste para o projeto; incluin
 
 ### Planos de teste {#testing-plans}
 
-Esses planos descrevem com mais detalhes a execução de testes para cada fase de desenvolvimento e se baseiam no [Estratégia de testes](#testing-strategy).
+Esses planos descrevem com mais detalhes a execução de testes para cada fase de desenvolvimento e se baseiam na [Estratégia de testes](#testing-strategy).
 
 ### Escopo do teste {#testing-scope}
 

@@ -55,7 +55,7 @@ Expressão suportada para a cláusula Date Picture:
   </tr>
   <tr>
    <td>DD</td>
-   <td>Dia do mês com dois dígitos (01-31) preenchidos com zero.<br /> </td>
+   <td>Dia do mês com dois dígitos (01-31) preenchidos com zeros.<br /> </td>
   </tr>
   <tr>
    <td>S</td>
@@ -67,7 +67,7 @@ Expressão suportada para a cláusula Date Picture:
   </tr>
   <tr>
    <td>MMM</td>
-   <td>Nome abreviado do mês da localidade atual<br /> </td>
+   <td>Nome de mês abreviado da localidade atual<br /> </td>
   </tr>
   <tr>
    <td>MMMM</td>
@@ -94,23 +94,23 @@ Expressão suportada para a cláusula Date Picture:
 
 >[!NOTE]
 >
-> De acordo com o design, o campo Data no HTML5 Forms não é compatível com o `MM-YYYY` padrão no formato de edição. No entanto, o padrão é compatível com o formato de exibição.
+> De acordo com o design, o campo Data no HTML5 Forms não oferece suporte ao padrão `MM-YYYY` no formato de edição. No entanto, o padrão é compatível com o formato de exibição.
 
 ## Cláusula de Imagem Numérica {#numeric-picture-clause}
 
 Os formulários HTML5 suportam símbolos de figuras numéricas. No entanto, há uma diferença no suporte entre PDF forms e HTML Forms.
 
-Entrada **PDF forms**, um número é formatado independentemente do número de símbolos na cláusula Picture tem
+Em **PDF forms**, um número é formatado independentemente do número de símbolos na cláusula Picture
 
-Entrada **HTML Forms**, um número será formatado somente se o número tiver dígitos menores que o número de símbolos na cláusula Picture.
+Em **HTML Forms**, um número será formatado somente se o número tiver dígitos menores que o número de símbolos na cláusula Picture.
 
 **Exemplo**: Considere uma cláusula Picture: num{zzz,zzz,zz9}.
 
-O número **10000** é formatado como **10.000** tanto no HTML como no PDF forms.
+O número **10000** está formatado como **10.000** tanto em HTML quanto em PDF forms.
 
 O número 1000000 é formatado como 1.000.000 em PDF forms. No entanto, no HTML Forms, o número permanece sem formatação como 1000000.
 
-Expressões suportadas para a cláusula de Imagem Numérica em **HTML Forms** são:
+As expressões suportadas para a cláusula de Imagem Numérica em **HTML Forms** são:
 
 * num.integer{}
 * num.decimal{}

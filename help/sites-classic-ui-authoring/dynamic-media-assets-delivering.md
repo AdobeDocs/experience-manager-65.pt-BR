@@ -23,7 +23,7 @@ A maneira de fornecer os ativos do Dynamic Media — vídeo e imagens — depend
 Com o Dynamic Media, você tem várias opções:
 
 * Se o seu site estiver hospedado no Adobe Experience Manager, será necessário adicionar os ativos do Dynamic Media diretamente à sua página.
-* Se o site não estiver no Experience Manager, consulte [Entregar ativos do Dynamic Media](/help/assets/delivering-dynamic-media-assets.md) na interface habilitada para toque.
+* Se o seu site não estiver no Experience Manager, consulte [Entregar ativos do Dynamic Media](/help/assets/delivering-dynamic-media-assets.md) na interface habilitada para toque.
 
 Para obter mais informações, consulte os seguintes tópicos:
 

@@ -18,9 +18,9 @@ ht-degree: 2%
 
 Planeje a anatomia para sua comunicação interativa
 
-![02-criar-formulário-adaptável-imagem-principal](assets/02-create-adaptive-form-main-image.png)
+![02-criar-forma-adaptável-imagem-principal](assets/02-create-adaptive-form-main-image.png)
 
-Este tutorial é uma etapa da [Criar a primeira comunicação interativa](/help/forms/using/create-your-first-interactive-communication.md) série. É recomendável seguir a série em sequência cronológica para entender, executar e demonstrar o caso de uso completo do tutorial.
+Este tutorial é uma etapa da série [Criar sua primeira Comunicação Interativa](/help/forms/using/create-your-first-interactive-communication.md). É recomendável seguir a série em sequência cronológica para entender, executar e demonstrar o caso de uso completo do tutorial.
 
 A primeira etapa no planejamento de uma comunicação interativa é finalizar o conteúdo da comunicação interativa. Especialistas no assunto de departamentos como jurídico, financeiro, de suporte ou de marketing podem ajudar você a finalizar o conteúdo. Depois que o conteúdo for finalizado, você deverá analisá-lo para identificar os vários tipos de ativos necessários para criar a Comunicação interativa.
 
@@ -28,19 +28,19 @@ A primeira etapa no planejamento de uma comunicação interativa é finalizar o 
 
 Uma comunicação interativa inclui os seguintes elementos:
 
-* **Texto estático** na sua maioria, inclui as partes da comunicação interativa que são de natureza genérica e estão incluídas na comunicação com todos os clientes. Por exemplo, cabeçalho, rodapé, saudação ou avisos de isenção de responsabilidade.
-* **Dados obtidos de um sistema de back-end (modelo de dados de formulário)** é específico do cliente e é mesclado dinamicamente com a comunicação interativa. Por exemplo, o número da política ou o endereço pode ser originado usando o modelo de dados de formulário.
-* **Layout ou modelos** para a versão impressa e para Web da comunicação interativa.
-* **Pedido** nos quais os vários parágrafos de texto aparecem na Comunicação interativa.
-* **Dados inseridos por um funcionário de linha de frente (interface do agente)** que está personalizando a comunicação antes de enviá-la. Por exemplo, a data de pagamento.
+* **O texto estático** inclui principalmente as partes da comunicação interativa que são genéricas por natureza e estão incluídas na comunicação com todos os clientes. Por exemplo, cabeçalho, rodapé, saudação ou avisos de isenção de responsabilidade.
+* **Os dados provenientes de um sistema back-end (modelo de dados de formulário)** são específicos do cliente e são mesclados dinamicamente com a comunicação interativa. Por exemplo, o número da política ou o endereço pode ser originado usando o modelo de dados de formulário.
+* **Layout ou modelos** para a versão para impressão e para Web da Comunicação Interativa.
+* **Ordem** na qual os vários parágrafos de texto aparecem na Comunicação Interativa.
+* **Dados inseridos por um funcionário de linha de frente (Interface do usuário do agente)** que está personalizando a comunicação antes de enviá-la. Por exemplo, a data de pagamento.
 
-* **Dados condicionais** que é preenchida com base em condições predefinidas. Por exemplo, a data em que a comunicação interativa é gerada.
+* **Dados condicionais** que são preenchidos com base em condições predefinidas. Por exemplo, a data em que a comunicação interativa é gerada.
 * **Imagens armazenadas em um repositório**, como logotipos e imagens de assinatura. Imagens como logotipos corporativos apareceriam na maioria ou em todas as comunicações interativas.
-* **Gráficos e tabelas** para simplificar a representação de dados complexos numa comunicação interativa
+* **Gráficos e tabelas** necessários para simplificar a representação de dados complexos em uma Comunicação Interativa
 
 ## Anatomia da comunicação interativa {#anatomy-of-the-interactive-communication}
 
-Depois de finalizar o conteúdo e os elementos usados para criar a Comunicação interativa, você pode criar uma anatomia da Comunicação interativa. A anatomia deve ter os detalhes listados na [Considerações sobre o planejamento](/help/forms/using/planning-interactive-communications.md#planning-considerations) seção. Com base em nosso caso de uso, veja a seguir um exemplo de anatomia da conta mensal que uma operadora de telecomunicações envia aos seus clientes.
+Depois de finalizar o conteúdo e os elementos usados para criar a Comunicação interativa, você pode criar uma anatomia da Comunicação interativa. A anatomia deve ter os detalhes listados na seção [Considerações de Planejamento](/help/forms/using/planning-interactive-communications.md#planning-considerations). Com base em nosso caso de uso, veja a seguir um exemplo de anatomia da conta mensal que uma operadora de telecomunicações envia aos seus clientes.
 
 A anatomia inclui dados com os seguintes modos de entrada:
 
@@ -66,7 +66,7 @@ A tabela a seguir ilustra a fonte de dados de cada campo na anatomia da Comunica
   <tr>
    <td>Detalhes da Lista</td>
    <td><p>Número da Fatura</p> <p>Data de Cobrança</p> <p>Período de Cobrança</p> <p>Seu plano</p> </td>
-   <td><p>Valor para <strong>Seu plano </strong>campo</p> <p>Tabela: cliente</p> </td>
+   <td><p>Valor para o campo <strong>Seu plano </strong></p> <p>Tabela: cliente</p> </td>
    <td><p>Valores para os seguintes campos:</p>
     <ul>
      <li>Número da Fatura</li>
@@ -97,7 +97,7 @@ A tabela a seguir ilustra a fonte de dados de cada campo na anatomia da Comunica
   <tr>
    <td>Sumário da Lista</td>
    <td><p>Saldo Anterior</p> <p>Pagamentos</p> <p>Ajustes</p> <p>Cobra o período de faturamento atual</p> <p>Valor Devido</p> <p>Data de vencimento</p> </td>
-   <td><p>Valor para o <strong>Cobra o período de faturamento atual </strong> campo</p> <p>Tabela - listas</p> </td>
+   <td><p>Valor para o campo <strong>Período de cobrança atual de encargos </strong></p> <p>Tabela - listas</p> </td>
    <td><p>Valores para os seguintes campos:</p>
     <ul>
      <li>Saldo Anterior</li>

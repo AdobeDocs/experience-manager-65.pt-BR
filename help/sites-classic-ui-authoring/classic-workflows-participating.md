@@ -48,7 +48,7 @@ Você pode executar as seguintes ações para processar um item de trabalho:
 
 Quando um item de trabalho é atribuído a você (por exemplo, **Aprovar conteúdo**), vários alertas e/ou notificações são exibidos:
 
-* A variável **Status** A coluna do console Sites indica quando uma página está em um workflow:
+* A coluna **Status** do console Sites indica quando uma página está em um fluxo de trabalho:
 
   ![workflowstatus-1](assets/workflowstatus-1.png)
 
@@ -60,25 +60,25 @@ Quando um item de trabalho é atribuído a você (por exemplo, **Aprovar conteú
 
 Depois de executar a ação indicada, é possível concluir o item de trabalho, permitindo que o fluxo de trabalho continue. Use o procedimento a seguir para concluir o item de trabalho.
 
-1. Selecione a etapa do fluxo de trabalho e clique no link **Concluído** na barra de navegação superior.
-1. Na caixa de diálogo resultante, selecione o **Próxima etapa**; ou seja, a próxima etapa a ser executada. Uma lista suspensa mostra todos os destinos apropriados. A **Comentário** também podem ser inseridos.
+1. Selecione a etapa do fluxo de trabalho e clique no botão **Concluir** na barra de navegação superior.
+1. Na caixa de diálogo resultante, selecione a **Próxima etapa**; ou seja, a etapa a ser executada em seguida. Uma lista suspensa mostra todos os destinos apropriados. Um **Comentário** também pode ser inserido.
 
    ![workflowcomplete](assets/workflowcomplete.png)
 
    O número de etapas listadas depende do design do modelo de fluxo de trabalho.
 
-1. Clique em **OK** para confirmar a ação
+1. Clique em **OK** para confirmar a ação.
 
 ### Delegação de uma etapa do participante {#delegating-a-participant-step}
 
 Use o procedimento a seguir para delegar um item de trabalho.
 
-1. Clique em **Delegar** na barra de navegação superior.
-1. Na caixa de diálogo, use a lista suspensa para selecionar a variável **Usuário** para delegar o item de trabalho. Você também pode adicionar um **Comentário**.
+1. Clique no botão **Delegar** na barra de navegação superior.
+1. Na caixa de diálogo, use a lista suspensa para selecionar o **Usuário** ao qual delegar o item de trabalho. Você também pode adicionar um **Comentário**.
 
    ![workflowdelegate](assets/workflowdelegate.png)
 
-1. Clique em **OK** para confirmar a ação
+1. Clique em **OK** para confirmar a ação.
 
 ### Realização de um retrocesso em uma etapa do participante {#performing-step-back-on-a-participant-step}
 

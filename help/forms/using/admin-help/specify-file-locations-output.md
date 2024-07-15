@@ -26,23 +26,23 @@ Você pode especificar os locais onde a Saída procura determinados tipos de arq
 
 ## Configurações de locais {#locations-settings}
 
-**URI da raiz do conteúdo:** O URI ou local absoluto do repositório do qual os formulários são recuperados. Esse valor é combinado com o parâmetro sForm, especificado por meio da API, para construir o caminho absoluto para o formulário recuperado. Esse valor pode fazer referência a um diretório ou local da Web acessível por meio de HTTP.
+**URI da Raiz de Conteúdo:** o URI ou o local absoluto do repositório do qual os formulários são recuperados. Esse valor é combinado com o parâmetro sForm, especificado por meio da API, para construir o caminho absoluto para o formulário recuperado. Esse valor pode fazer referência a um diretório ou local da Web acessível por meio de HTTP.
 
 O valor padrão é uma string vazia.
 
-**Arquivo de configuração XCI:** O local relativo ou absoluto do arquivo de configuração XCI que o serviço de Saída usa para renderização. Para um valor relativo, presume-se que o arquivo XCI resida no arquivo EAR implantável dos formulários AEM.
+**Arquivo de Configuração XCI:** o local relativo ou absoluto do arquivo de configuração XCI que o serviço de Saída usa para renderização. Para um valor relativo, presume-se que o arquivo XCI resida no arquivo EAR implantável dos formulários AEM.
 
 O valor padrão é `com/adobe/formServer/PA/pa_output.xci`.
 
 **Local do Cache:** Especifica o local do cache do disco de Saída. Ao alterar essa configuração, todas as informações de cache existentes no local atual são redefinidas e um novo cache é criado no novo local. Selecione uma das seguintes opções:
 
-**Local padrão:** Esta é a seleção padrão. Quando essa opção é selecionada, o cache é criado em um local dependente do servidor de aplicativos que você está usando:
+**Local Padrão:** Esta é a seleção padrão. Quando essa opção é selecionada, o cache é criado em um local dependente do servidor de aplicativos que você está usando:
 
 * **JBoss:** `[JBoss Home]\server\[install type]\svcdata\Output\Cache`
 * **WebLogic:** `[WebLogic Home]\user_projects\domains\[aem-forms domain Name]\adobe\[Forms Server name]\Output\Cache`
 * **WebSphere:** `[IBM Home]\WebSphere\AppServer\installedApps\adobe\server1\Output\Cache`
 
-**Diretório Temp LC:** O cache é criado em um subdiretório do diretório temporário dos formulários AEM, que é especificado no console de administração em Settings > Core System Settings > Configurations > Location of Temp Diretory. O subdiretório é nomeado como `adobeoutput_[servername]`.
+**Diretório Temp da LC:** O cache é criado em um subdiretório do diretório temp de formulários AEM, que é especificado no console de administração em Configurações > Configurações do Sistema Principal > Configurações > Localização do Diretório Temp. O nome do subdiretório é `adobeoutput_[servername]`.
 
 >[!NOTE]
 >

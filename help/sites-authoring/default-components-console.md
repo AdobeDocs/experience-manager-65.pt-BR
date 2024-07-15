@@ -16,9 +16,9 @@ ht-degree: 43%
 
 O console Componentes permite navegar em todos os componentes definidos para a instância e visualizar as principais informações de cada componente.
 
-Ele pode ser acessado de **Ferramentas >** **Geral >** **Componentes**. No console, as visualizações em Cartão e Lista estão disponíveis. Como não há estrutura em árvore para componentes, a exibição em coluna não está disponível.
+Ele pode ser acessado em **Ferramentas >** **Geral >** **Componentes**. No console, as visualizações em Cartão e Lista estão disponíveis. Como não há estrutura em árvore para componentes, a exibição em coluna não está disponível.
 
-![screen-shot_2019-03-05at113145](assets/screen-shot_2019-03-05at113145.png)
+![captura de tela_2019-03-05at113145](assets/screen-shot_2019-03-05at113145.png)
 
 >[!NOTE]
 >
@@ -28,7 +28,7 @@ Ele pode ser acessado de **Ferramentas >** **Geral >** **Componentes**. No conso
 
 Com o ícone **Apenas conteúdo** (na parte superior esquerda), você pode abrir o painel **Pesquisar** para pesquisar e/ou filtrar os componentes: 
 
-![screen-shot_2019-03-05at113251](assets/screen-shot_2019-03-05at113251.png)
+![captura de tela_2019-03-05at113251](assets/screen-shot_2019-03-05at113251.png)
 
 ### Detalhes do componente {#component-details}
 
@@ -41,11 +41,11 @@ Para exibir detalhes sobre um componente específico, clique no recurso desejado
   Na guia Propriedades, é possível:
 
    * Veja as propriedades gerais do componente.
-   * Exibir como a [O ícone ou a abreviação foi definido](/help/sites-developing/components-basics.md#component-icon-in-touch-ui) para o componente.
+   * Visualizar como o [ícone ou abreviação foi definido](/help/sites-developing/components-basics.md#component-icon-in-touch-ui) para o componente.
 
       * Clicar na origem do ícone levará você ao componente.
 
-   * Exibir o **Tipo de recurso** e **Supertipo do recurso** (se definido) para o componente.
+   * Exiba o **Tipo de Recurso** e o **Supertipo de Recurso** (se definido) do componente.
 
       * Clicar no Supertipo de recurso levará você a esse componente.
 
@@ -67,6 +67,6 @@ Para exibir detalhes sobre um componente específico, clique no recurso desejado
 
 * **Documentação**
 
-  Se o desenvolvedor tiver fornecido [documentação do componente](/help/sites-developing/developing-components.md#documenting-your-component), ele aparecerá no **Documentação** guia. Se não houver documentação disponível, a variável **Documentação** não será exibida.
+  Se o desenvolvedor tiver fornecido a [documentação referente ao componente](/help/sites-developing/developing-components.md#documenting-your-component), ela aparecerá na guia **Documentação**. Se não houver documentação disponível, a guia **Documentação** não será exibida.
 
   ![Documentação](assets/chlimage_1-171.png)

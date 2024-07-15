@@ -1,5 +1,5 @@
 ---
-title: QuickStart da API Java do serviço de assinatura (SOAP)
+title: QuickStart(SOAP) da API Java do serviço de assinatura
 description: Use o serviço de Assinatura para adicionar um campo de assinatura a um documento PDF, recuperar nomes de campos de assinatura, modificar um campo de assinatura, assinar digitalmente um documento PDF, assinar digitalmente um formulário baseado em XFA, certificar um documento PDF, verificar uma assinatura digital, verificar várias assinaturas digitais e remover uma assinatura digital.
 contentOwner: admin
 content-type: reference
@@ -48,7 +48,7 @@ As operações do AEM Forms JEE podem ser executadas usando a API altamente tipa
 
 ## Início rápido (modo SOAP): adição de um campo de assinatura a um documento PDF usando a API Java {#quick-start-soap-mode-adding-a-signature-field-to-a-pdf-document-using-the-java-api}
 
-O exemplo de código Java a seguir adiciona um campo de assinatura chamado *CampoAssinatura1* para um documento PDF que é baseado em um arquivo PDF chamado *Loan.pdf*. O documento PDF que contém o novo campo de assinatura é salvo como um arquivo PDF chamado *LoanSig.pdf*. (Consulte [Adição de campos de assinatura](/help/forms/developing/digitally-signing-certifying-documents.md#adding-signature-fields).)
+O exemplo de código Java a seguir adiciona um campo de assinatura chamado *SignatureField1* a um documento PDF que é baseado em um arquivo PDF chamado *Loan.pdf*. O documento PDF que contém o novo campo de assinatura é salvo como um arquivo PDF chamado *LoanSig.pdf*. (Consulte [Adição De Campos De Assinatura](/help/forms/developing/digitally-signing-certifying-documents.md#adding-signature-fields).)
 
 ```java
  /*
@@ -164,7 +164,7 @@ O exemplo de código Java a seguir adiciona um campo de assinatura chamado *Camp
 
 ## Início rápido (modo SOAP): recuperação de nomes de campos de assinatura usando a API Java {#quick-start-soap-mode-retrieving-signature-field-names-using-the-java-api}
 
-O exemplo de código Java a seguir recupera os nomes dos campos de assinatura em um documento PDF chamado *LoanSig.pdf*. (Consulte [Recuperando nomes de campos de assinatura](/help/forms/developing/digitally-signing-certifying-documents.md#retrieving-signature-field-names).)
+O exemplo de código Java a seguir recupera os nomes dos campos de assinatura em um documento PDF denominado *LoanSig.pdf*. (Consulte [Recuperando Nomes de Campos de Assinatura](/help/forms/developing/digitally-signing-certifying-documents.md#retrieving-signature-field-names).)
 
 ```java
  /*
@@ -270,7 +270,7 @@ O exemplo de código Java a seguir recupera os nomes dos campos de assinatura em
 
 ## Início rápido (modo SOAP): modificação de um campo de assinatura usando a API do Java {#quick-start-soap-mode-modifying-a-signature-field-using-the-java-api}
 
-O exemplo de código Java a seguir modifica um campo de assinatura chamado SignatureField1, bloqueando todos os campos no formulário quando uma assinatura é aplicada ao campo de assinatura e garantindo que nenhuma alteração seja permitida. Depois que o serviço de Assinatura retorna o documento PDF que contém o campo de assinatura modificado, o documento PDF é salvo como um arquivo PDF chamado LoanSig.pdf. (Este exemplo substitui o arquivo PDF que é passado para o serviço de Assinatura.) (Consulte [Modificação de campos de assinatura](/help/forms/developing/digitally-signing-certifying-documents.md#modifying-signature-fields).)
+O exemplo de código Java a seguir modifica um campo de assinatura chamado SignatureField1, bloqueando todos os campos no formulário quando uma assinatura é aplicada ao campo de assinatura e garantindo que nenhuma alteração seja permitida. Depois que o serviço de Assinatura retorna o documento PDF que contém o campo de assinatura modificado, o documento PDF é salvo como um arquivo PDF chamado LoanSig.pdf. (Este exemplo substitui o arquivo PDF que é passado para o serviço de Assinatura.) (Consulte [Modificação De Campos De Assinatura](/help/forms/developing/digitally-signing-certifying-documents.md#modifying-signature-fields).)
 
 ```java
  /*
@@ -398,7 +398,7 @@ O exemplo de código Java a seguir modifica um campo de assinatura chamado Signa
 
 ## Início rápido (modo SOAP): assinatura digital de um documento PDF usando a API Java {#quick-start-soap-mode-digitally-signing-a-pdf-document-using-the-java-api}
 
-O seguinte exemplo de código Java assina digitalmente um documento PDF que é baseado em um arquivo PDF chamado *LoanSig.pdf*. O alias especificado para a credencial de segurança é seguro e a verificação de revogação é realizada. Como nenhuma informação do servidor CRL ou OCSP é especificada, as informações do servidor são obtidas do certificado usado para assinar digitalmente o documento PDF. O documento assinado é salvo como um arquivo de PDF chamado *LoanSigned.pdf*. (Consulte [Assinatura digital de documentos PDF](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents).)
+O exemplo de código Java a seguir assina digitalmente um documento PDF baseado em um arquivo PDF chamado *LoanSig.pdf*. O alias especificado para a credencial de segurança é seguro e a verificação de revogação é realizada. Como nenhuma informação do servidor CRL ou OCSP é especificada, as informações do servidor são obtidas do certificado usado para assinar digitalmente o documento PDF. O documento assinado é salvo como um arquivo PDF chamado *LoanSigned.pdf*. (Consulte [Assinatura digital de documentos PDF](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents).)
 
 ```java
  /*
@@ -547,7 +547,7 @@ O seguinte exemplo de código Java assina digitalmente um documento PDF que é b
 
 ## Início rápido (modo SOAP): assinar digitalmente um formulário baseado em XFA usando a API do Java {#quick-start-soap-mode-digitally-signing-a-xfa-based-form-using-the-java-api}
 
-O exemplo de código Java a seguir assina um formulário interativo que é renderizado pelo serviço Forms. A variável `com.adobe.idp.Document` A instância retornada pelo serviço Forms é passada para o serviço de Assinatura. O formulário interativo assinado é salvo como um arquivo de PDF chamado *LoanXFASigned.pdf*.
+O exemplo de código Java a seguir assina um formulário interativo que é renderizado pelo serviço Forms. A instância `com.adobe.idp.Document` retornada pelo serviço Forms é passada para o serviço Signature. O formulário interativo assinado é salvo como um arquivo PDF chamado *LoanXFASigned.pdf*.
 
 ```java
  /*
@@ -759,7 +759,7 @@ O exemplo de código Java a seguir assina um formulário interativo que é rende
 
 ## Início rápido (modo SOAP): certificar um documento PDF usando a API Java {#quick-start-soap-mode-certifying-a-pdf-document-using-the-java-api}
 
-O exemplo de código Java a seguir certifica um documento PDF que é baseado em um arquivo PDF chamado *LoanSig.pdf*. O alias especificado para a credencial de segurança é seguro e a verificação de revogação não é executada. O documento certificado é salvo como um arquivo PDF chamado *LoanCertified.pdf*. (Consulte [Documentos de PDF de certificação](/help/forms/developing/digitally-signing-certifying-documents.md#certifying-pdf-documents).)
+O exemplo de código Java a seguir certifica um documento PDF baseado em um arquivo PDF chamado *LoanSig.pdf*. O alias especificado para a credencial de segurança é seguro e a verificação de revogação não é executada. O documento certificado é salvo como um arquivo PDF chamado *LoanCertified.pdf*. (Consulte [Documentos de PDF de Certificação](/help/forms/developing/digitally-signing-certifying-documents.md#certifying-pdf-documents).)
 
 ```java
  /*
@@ -1234,7 +1234,7 @@ O exemplo de código Java a seguir verifica várias assinaturas digitais que est
 
 ## Início rápido (modo SOAP): remoção de uma assinatura digital usando a API Java {#quick-start-soap-mode-removing-a-digital-signature-using-the-java-api}
 
-O exemplo de código Java a seguir remove uma assinatura digital de um campo de assinatura chamado *CampoAssinatura1*. O nome do arquivo PDF que contém o campo de assinatura é *LoanSigned.pdf*. (Consulte [Remoção de assinaturas digitais](/help/forms/developing/digitally-signing-certifying-documents.md#removing-digital-signatures).)
+O exemplo de código Java a seguir remove uma assinatura digital de um campo de assinatura chamado *SignatureField1*. O nome do arquivo PDF que contém o campo de assinatura é *LoanSigned.pdf*. (Consulte [Remoção De Assinaturas Digitais](/help/forms/developing/digitally-signing-certifying-documents.md#removing-digital-signatures).)
 
 ```java
  /*

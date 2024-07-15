@@ -29,14 +29,14 @@ We.Finance é uma organização que permite que os candidatos se candidatem a em
 
 >[!NOTE]
 >
->Os casos de uso de recrutamento de funcionários estão disponíveis nos sites de referência We.Finance e We.Gov. Os exemplos, as imagens e as descrições usadas nas apresentações usam o site de referência We.Finance. No entanto, você pode executar esses casos de uso e revisar artefatos usando o We.Gov também. Para fazer isso, substitua **we-finance** com **we-gov** nos URLs mencionados.
+>Os casos de uso de recrutamento de funcionários estão disponíveis nos sites de referência We.Finance e We.Gov. Os exemplos, as imagens e as descrições usadas nas apresentações usam o site de referência We.Finance. No entanto, você pode executar esses casos de uso e revisar artefatos usando o We.Gov também. Para fazer isso, substitua **we-finance** por **we-gov** nas URLs mencionadas.
 
 ### Modelos de fluxo de trabalho envolvidos {#workflow-models-involved}
 
 O caso de uso de recrutamento de funcionários envolve dois workflows:
 
 * Antes da entrevista - Financiamos o fluxo de trabalho de recrutamento de funcionários
-* Após a entrevista - Financiamos o workflow Pós-Entrevista de Recrutamento de Funcionário
+* Após a entrevista - Financiamos o fluxo de trabalho de entrevista do Post de recrutamento de funcionários
 
 Esses workflows são criados no AEM e podem ser encontrados em:
 
@@ -48,11 +48,11 @@ A seguir está o modelo do fluxo de trabalho Recrutamento de Funcionário das Fi
 
 ![we-finance-employee-recruiting-workflow](assets/we-finance-employee-recruiting-workflow.png)
 
-#### Fluxo de trabalho de pós-entrevista do recrutamento de funcionários do We Finance {#we-finance-employee-recruiting-post-interview-workflow}
+#### Financiamos o fluxo de trabalho de entrevista do Post de recrutamento de funcionários {#we-finance-employee-recruiting-post-interview-workflow}
 
-A seguir está o modelo do fluxo de trabalho Recrutamento Pós-Entrevista de Funcionário das Finanças seguido neste documento.
+A seguir está o modelo do fluxo de trabalho We Finance Employee Post Interview Recruiting seguido neste documento.
 
-![we-finance-employee-recrutiting-post-entrevista-workflow](assets/we-finance-employee-recruiting-post-interview-workflow.png)
+![we-finance-employee-recruiting-post-entrevista-workflow](assets/we-finance-employee-recruiting-post-interview-workflow.png)
 
 ### Personas {#personas}
 
@@ -67,7 +67,7 @@ O cenário envolve os seguintes perfis:
 
 Sarah Rose está procurando uma oportunidade de trabalho na organização. Ela visita o portal da web e explora as vagas de emprego listadas na página Carreira. Ela encontra uma lista de empregos correspondente e se candidata a ela.
 
-![home-page](assets/home-page.png)
+![página inicial](assets/home-page.png)
 
 Página inicial do We.Finance
 
@@ -77,7 +77,7 @@ Página de carreira do We.Finance
 
 Sarah clica em Aplicar em uma publicação de trabalho. O formulário de solicitação de emprego é aberto. Ela preenche todos os detalhes do pedido e o envia.
 
-![job-application-form](assets/job-application-form.png)
+![formulário-aplicativo-trabalho](assets/job-application-form.png)
 
 ### Como funciona {#how-it-works}
 
@@ -85,7 +85,7 @@ A página inicial do We.Finance e a página de carreira são páginas do AEM Sit
 
 ### Veja você mesmo {#see-it-yourself}
 
-Ir para `https://[publishHost]:[publishPort]/content/we-finance/global/en.html` e clique em **[!UICONTROL Carreira]**. Clique em **[!UICONTROL Pesquisar]** para preencher a lista de trabalhos e, em seguida, clique em **[!UICONTROL Aplicar]** para um trabalho. Preencha os detalhes no formulário e envie a solicitação.
+Vá para `https://[publishHost]:[publishPort]/content/we-finance/global/en.html` e clique em **[!UICONTROL Carreira]**. Clique em **[!UICONTROL Pesquisar]** para preencher a lista de trabalhos e em **[!UICONTROL Aplicar]** para um trabalho. Preencha os detalhes no formulário e envie a solicitação.
 
 Certifique-se de especificar uma ID de e-mail válida no aplicativo, pois qualquer comunicação por meio dessa apresentação será enviada para a ID de e-mail especificada.
 
@@ -97,7 +97,7 @@ A organização recebe a requisição de cargo submetida por Sarah. John Jacobs,
 
 Caixa de entrada AEM de John
 
-![candidate-shortlist](assets/candidate-shortlist.png)
+![lista de candidatos selecionados](assets/candidate-shortlist.png)
 
 Perfil de Sarah Rose na lista de candidatos de John Jacobs para a triagem do gerente de contratação
 
@@ -107,7 +107,7 @@ A ação de submissão no form Requisição de Cargo aciona um workflow que cria
 
 ### Veja você mesmo {#see-it-yourself-1}
 
-Ir para `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html`e faça logon usando jacobs/password como nome de usuário/senha de John Jacobs. Abra a tarefa Revisão de Perfil do Candidato e selecione o candidato.
+Acesse `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html`e faça logon usando jacobs/password como nome de usuário/senha de John Jacobs. Abra a tarefa Revisão de Perfil do Candidato e selecione o candidato.
 
 ## Gloria analisa o pedido e aprova o candidato para uma entrevista {#gloria-reviews-the-application-and-approves-the-applicant-for-an-interview}
 
@@ -127,9 +127,9 @@ Quando Gloria aprova o candidato para uma entrevista, o workflow cria uma tarefa
 
 ### Veja você mesmo {#see-it-yourself-2}
 
-Ir para `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html` e faça logon usando jacobs/password como nome de usuário/senha de John Jacobs. Abra a tarefa Revisão de Perfil do Candidato e selecione o candidato.
+Vá para `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html` e faça logon usando jacobs/password como nome de usuário/senha de John Jacobs. Abra a tarefa Revisão de Perfil do Candidato e selecione o candidato.
 
-Ir para `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html` e faça login usando grios/password como nome de usuário/senha de Gloria Rios. Abra a tarefa Revisão de Perfil do Candidato e clique em Agendar Entrevista.
+Acesse `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html` e faça login usando grios/password como nome de usuário/senha de Gloria Rios. Abra a tarefa Revisão de Perfil do Candidato e clique em Agendar Entrevista.
 
 ## John Doe agenda uma entrevista {#john-doe-schedules-an-interview}
 
@@ -139,7 +139,7 @@ John Doe recebe a tarefa de agendar uma entrevista em sua caixa de entrada. John
 
 Caixa de entrada AEM de John Doe
 
-![johndoescheduleentrevista](assets/johndoescheduleinterview.png)
+![entrevista_agendada](assets/johndoescheduleinterview.png)
 
 John Doe agenda a entrevista e envia os detalhes para Sarah Rose
 

@@ -26,7 +26,7 @@ Você pode especificar a URL, o URI e os locais de atributos do arquivo, como a 
 
 ## Configurações de locais {#locations-settings}
 
-**URL base:** A URL base onde os recursos de formulário, como imagens e scripts, estão localizados. Esse valor é necessário para transformações de HTML que incluem referências HREF a dependências externas, como imagens ou scripts. Um desses scripts é o xfasubset.js, que é necessário para que os formulários HTML executem inteligência XFA. Este valor deve ser o equivalente HTTP do URI da raiz de conteúdo.
+**URL Base:** A URL base onde os recursos de formulário, como imagens e scripts, estão localizados. Esse valor é necessário para transformações de HTML que incluem referências HREF a dependências externas, como imagens ou scripts. Um desses scripts é o xfasubset.js, que é necessário para que os formulários HTML executem inteligência XFA. Este valor deve ser o equivalente HTTP do URI da raiz de conteúdo.
 
 >[!NOTE]
 >
@@ -42,29 +42,29 @@ O exemplo a seguir aponta para o mesmo conteúdo (usando o URI da raiz do conte�
 
 `(BaseURL)/subdir/image1.jpg`
 
-**URI da Raiz da Web FS:** O URL do aplicativo web do Forms. Você pode deixar essa caixa vazia se o aplicativo Web do Forms e o aplicativo cliente forem implantados no mesmo servidor de aplicativos; o URL da raiz da Web da API do Forms é usado.
+**URI da Raiz da Web de FS:** A URL do aplicativo Web do Forms. Você pode deixar essa caixa vazia se o aplicativo Web do Forms e o aplicativo cliente forem implantados no mesmo servidor de aplicativos; o URL da raiz da Web da API do Forms é usado.
 
 Se o aplicativo web do Forms e o aplicativo cliente não forem implantados no mesmo servidor de aplicativos, forneça o URL para o aplicativo web do Forms nesta caixa, como mostrado neste exemplo:
 
 `https://<host name>:<port>/FormServer`
 
-Onde `host name`e `port` são o nome do servidor e o número da porta do servidor que está hospedando o aplicativo web do Forms.
+Onde `host name`e `port` são o nome e o número da porta do servidor que está hospedando o aplicativo Web do Forms.
 
 O valor padrão é uma string vazia.
 
-**URI da raiz da Web:** A raiz da Web do aplicativo. Esse valor é combinado com o parâmetro sTargetURL (quando sTargetURL é fornecido como relativo), especificado por meio do SDK de formulários AEM, para construir um URL absoluto para acessar o conteúdo da Web específico do aplicativo.
+**URI da Raiz da Web:** A raiz da Web do aplicativo. Esse valor é combinado com o parâmetro sTargetURL (quando sTargetURL é fornecido como relativo), especificado por meio do SDK de formulários AEM, para construir um URL absoluto para acessar o conteúdo da Web específico do aplicativo.
 
 O valor padrão é uma string vazia.
 
-**URI da raiz do conteúdo:** O URI ou local absoluto onde os formulários são recuperados. Esse valor é combinado com o parâmetro sFormQuery, especificado por meio da API, para construir o caminho absoluto para o formulário que é recuperado. Esse valor pode fazer referência a um diretório ou local da Web acessível por meio de HTTP.
+**URI da Raiz de Conteúdo:** o URI ou o local absoluto do qual os formulários são recuperados. Esse valor é combinado com o parâmetro sFormQuery, especificado por meio da API, para construir o caminho absoluto para o formulário que é recuperado. Esse valor pode fazer referência a um diretório ou local da Web acessível por meio de HTTP.
 
 O valor padrão é uma string vazia.
 
-**URI de configuração XCI:** O local relativo ou absoluto no qual o arquivo XCI usado para renderização é encontrado. Para um valor relativo, presume-se que o arquivo XCI resida no arquivo EAR de formulários AEM implantáveis.
+**URI de Configuração XCI:** O local relativo ou absoluto no qual o arquivo XCI usado para renderização é encontrado. Para um valor relativo, presume-se que o arquivo XCI resida no arquivo EAR de formulários AEM implantáveis.
 
 O valor padrão é `com/adobe/formServer/PA/pa.xci`.
 
-**URI do Mapa de Fontes:** O local relativo ou absoluto do arquivo de mapeamento de fontes. Para um valor relativo, presume-se que esse arquivo resida no arquivo EAR de formulários AEM implantáveis.
+**URI do Mapa de Fontes:** o local relativo ou absoluto do arquivo de mapeamento de fontes. Para um valor relativo, presume-se que esse arquivo resida no arquivo EAR de formulários AEM implantáveis.
 
 O arquivo de mapeamento de fontes é usado para criar mapeamentos de fontes personalizados para transformações de HTML em formulários, permitindo especificar qual fonte será substituída quando uma fonte não estiver disponível no computador do cliente.
 
@@ -74,19 +74,19 @@ A entrada a seguir é um exemplo de uma entrada no arquivo de mapeamento de font
 
 `Arial=Arial,Helvetica,sans-serif`
 
-**Arquivo de PDF de propagação:** O arquivo PDF inicial usado em uma transformação de formulário PDF para otimizar a entrega. O arquivo de PDF de propagação especifica um arquivo de PDF personalizado (contendo apenas recursos de fluxo, imagem e fonte XFA) que é anexado com o design e os dados do formulário. O formulário é renderizado pelo Acrobat 7 ou posterior e se aplica à transformação de PDForm.
+**Arquivo de PDF de propagação:** o arquivo de PDF inicial usado em uma transformação PDFForm para otimizar a entrega. O arquivo de PDF de propagação especifica um arquivo de PDF personalizado (contendo apenas recursos de fluxo, imagem e fonte XFA) que é anexado com o design e os dados do formulário. O formulário é renderizado pelo Acrobat 7 ou posterior e se aplica à transformação de PDForm.
 
 O valor padrão é uma string vazia.
 
 **Local do Cache:** Especifica o local do cache de disco do Forms. Ao alterar essa configuração, todas as informações de cache existentes no local atual são redefinidas e um novo cache é criado no novo local. Selecione uma das seguintes opções:
 
-**Local padrão:** Esta é a seleção padrão. Quando essa opção é selecionada, o cache é criado em um local dependente do servidor de aplicativos que você está usando:
+**Local Padrão:** Esta é a seleção padrão. Quando essa opção é selecionada, o cache é criado em um local dependente do servidor de aplicativos que você está usando:
 
-* **JBoss:** [Início: JBoss]\server\[tipo de instalação]\svcdata\FormServer\Cache
-* **WebLogic:** [Página inicial do WebLogic]\user_projects\domains\[nome de domínio do aem-forms]\adobe\[nome de servidor do Forms]\FormServer\Cache
-* **WebSphere:** [Página inicial do IBM]\WebSphere\AppServer\installedApps\adobe\server1\FormServer\Cache
+* **JBoss:** [JBoss Home]\server\[instalar tipo]\svcdata\FormServer\Cache
+* **WebLogic:** [WebLogic Home]\user_projects\domains\[Nome de Domínio do aem-forms]\adobe\[Nome do Servidor do Forms]\FormServer\Cache
+* **WebSphere:** [IBM Home]\WebSphere\AppServer\installedApps\adobe\server1\FormServer\Cache
 
-**Diretório Temp LC:** O cache é criado em um subdiretório do diretório temporário dos formulários AEM, que é especificado no console de administração em Settings > Core System Settings > Configurations > Location of Temp Diretory. O subdiretório é nomeado como adobeform_[servername].
+**Diretório Temp da LC:** O cache é criado em um subdiretório do diretório temp de formulários AEM, que é especificado no console de administração em Configurações > Configurações do Sistema Principal > Configurações > Localização do Diretório Temp. O subdiretório é denominado adobeform_[servername].
 
 >[!NOTE]
 >

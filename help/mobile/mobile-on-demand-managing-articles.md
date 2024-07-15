@@ -32,22 +32,22 @@ Os artigos representam o texto com base na arte para transmitir informações.
 >
 >Consulte os seguintes recursos na Ajuda online para saber mais sobre os seguintes tópicos em aplicativos AEM Mobile:
 >
->* [Considerações de design](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html)
+>* [Considerações sobre o design](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html)
 >
->* [Gerenciamento de artigos](https://helpx.adobe.com/digital-publishing-solution/help/creating-articles.html)
+>* [Gerenciar artigos](https://helpx.adobe.com/digital-publishing-solution/help/creating-articles.html)
 >
 
 ## Criação de um artigo {#creating-an-article}
 
 O fluxo de trabalho geral para criar um artigo é o seguinte:
 
-1. Selecionar **Dispositivo móvel** do painel lateral.
+1. Selecione **Dispositivo móvel** no painel lateral.
 1. Em Dispositivo móvel, escolha seu aplicativo móvel por demanda no catálogo.
-1. Clique na seta para baixo no canto superior direito da **Gerenciar artigos** bloco.
-1. Escolha um modelo de artigo e clique em **Próxima**.
+1. Clique na seta para baixo no canto superior direito do bloco **Gerenciar artigos**.
+1. Escolha um modelo de artigo e clique em **Próximo**.
 1. Analise cada etapa do assistente para continuar criando seu novo artigo.
 1. Quando estiver pronto, clique em **Criar**.
-1. Seu novo artigo aparece na guia **Gerenciar artigos** bloco.
+1. O novo artigo aparece no bloco **Gerenciar artigos**.
 
 ## Importando um novo artigo {#importing-a-new-article}
 
@@ -60,9 +60,9 @@ O conteúdo do Mobile On-Demand existente pode ser baixado (importado) do Mobile
 O fluxo de trabalho para importar um novo artigo
 
 1. Em Dispositivo móvel, escolha seu aplicativo móvel por demanda no catálogo.
-1. Clique na seta para baixo no canto superior direito da **Gerenciar artigos** e selecione Importar artigos.
-1. Clique em **Importar artigos** na caixa de diálogo e, em seguida, em Fechar.
-1. Os artigos do Mobile On-Demand agora aparecem no **Gerenciar artigos** bloco.
+1. Clique na seta para baixo no canto superior direito do bloco **Gerenciar artigos** e selecione Importar artigos.
+1. Clique em **Importar artigos** na caixa de diálogo e em Fechar.
+1. Seus artigos do Mobile On-Demand agora aparecem no bloco **Gerenciar artigos**.
 
 >[!CAUTION]
 >
@@ -72,7 +72,7 @@ O fluxo de trabalho para importar um novo artigo
 
 ## Edição de um artigo {#editing-an-article}
 
-Use o editor de arrastar e soltar AEM integrado para adicionar ou alterar um artigo. Componentes como texto e imagens podem ser adicionados/removidos. As imagens dos ativos DAM podem ser inseridas.
+Use o editor de arrastar e soltar AEM integrado para adicionar ou alterar um artigo. Componentes como texto e imagens podem ser adicionados/removidos. As imagens do Assets do DAM podem ser inseridas.
 
 >[!CAUTION]
 >
@@ -81,7 +81,7 @@ Use o editor de arrastar e soltar AEM integrado para adicionar ou alterar um art
 O workflow para editar um artigo:
 
 1. Em Dispositivo móvel, escolha seu aplicativo móvel por demanda no catálogo.
-1. Selecione um artigo de origem AEM na **Gerenciar artigos** bloco.
+1. Selecione um artigo de origem AEM no bloco **Gerenciar artigos**.
 1. Clique no artigo destacado da exibição em lista para abri-lo no editor de conteúdo.
 1. Use o editor de conteúdo para arrastar o conteúdo do artigo (manuscritos, imagens, texto etc.).
 
@@ -92,11 +92,11 @@ Conteúdo como artigos, banners e assim por diante têm várias propriedades, co
 O workflow geral para exibir/editar um artigo:
 
 1. Em Dispositivo móvel, escolha seu aplicativo móvel por demanda no catálogo.
-1. Escolha um artigo na lista **Gerenciar artigos** bloco.
+1. Escolha um artigo no bloco **Gerenciar artigos**.
 
-1. Selecionar **Propriedades da exibição** na barra de ações.
+1. Selecione **Exibir Propriedades** na barra de ações.
 1. Visualize todos os metadados disponíveis para esse artigo.
-1. Edite os metadados se desejar e clique em **Salvar** quando terminar.
+1. Edite os metadados, se desejar, e clique em **Salvar** quando terminar.
 1. Como opção, carregue as alterações imediatamente no Mobile On-Demand.
 
 ## Carregamento de um artigo {#uploading-an-article}
@@ -105,10 +105,10 @@ A ação de upload copia o conteúdo selecionado e o adiciona a um projeto do Mo
 
 O fluxo de trabalho geral para carregar um artigo:
 
-1. De **Dispositivo móvel**, escolha seu aplicativo Mobile On-Demand no catálogo.
-1. No **Gerenciar artigos** selecione um artigo para fazer upload no Mobile On-Demand.
+1. Em **Mobile**, escolha seu aplicativo Mobile On-Demand no catálogo.
+1. No bloco **Gerenciar artigos**, selecione um artigo para carregar no Mobile On-Demand.
 1. Adicione mais artigos, se necessário, na exibição em lista.
-1. Selecionar **Carregar** na barra de ações e, em seguida, clique em Fazer upload na caixa de diálogo.
+1. Selecione **Carregar** na barra de ações e clique em Carregar na caixa de diálogo.
 1. Seus artigos foram carregados no Mobile On-Demand.
 
 ![chlimage_1-4](assets/chlimage_1-4.gif)
@@ -120,9 +120,9 @@ Essa operação exclui o conteúdo selecionado do Mobile On-Demand e, opcionalme
 O workflow geral para excluir um artigo:
 
 1. Em Dispositivo móvel, escolha seu aplicativo móvel por demanda no catálogo.
-1. Selecione o artigo a ser excluído na **Gerenciar artigos** bloco.
+1. Selecione o artigo a ser excluído no bloco **Gerenciar artigos**.
 1. Verifique se está selecionado na lista; selecione outras para excluir, conforme necessário.
-1. Clique em **Excluir** na barra de ações.
+1. Clique em **Excluir** da barra de ações.
 1. Marque se deseja excluir do AEM e do Mobile On-Demand.
 1. Clique em **Excluir**.
 1. O artigo foi removido da lista.

@@ -67,10 +67,10 @@ Um Modelo de fragmento de conteúdo descreve uma entidade.
 
 Dentro de um modelo:
 
-1. **Tipos de dados** permitem definir os atributos individuais.
+1. **Os Tipos de Dados** permitem definir os atributos individuais.
 Por exemplo, defina o campo com o nome de um professor como **Texto** e seus anos de serviço como **Número**.
-1. Os tipos de dados **Referência de conteúdo** e **Referência do fragmento** permitem criar relações com outro conteúdo no AEM.
-1. A variável **Referência do fragmento** O tipo de dados permite que você realize vários níveis de estrutura aninhando os fragmentos de conteúdo (de acordo com o tipo de modelo). Isso é essencial para a modelagem de conteúdo.
+1. Os tipos de dados **Referência de conteúdo** e **Referência de fragmento** permitem criar relações com outro conteúdo no AEM.
+1. O tipo de dados **Referência de fragmento** permite que você realize vários níveis de estrutura aninhando os Fragmentos de conteúdo (de acordo com o tipo de modelo). Isso é essencial para a modelagem de conteúdo.
 
 Por exemplo:
 
@@ -116,7 +116,7 @@ O tipo de dados pode ser configurado para permitir que os autores de fragmento:
 
 ## Níveis de estrutura (fragmentos aninhados) {#levels-of-structure-nested-fragments}
 
-Para modelagem de conteúdo, a variável **Referência do fragmento** O tipo de dados permite criar vários níveis de estrutura e relacionamentos.
+Para a modelagem de conteúdo, o tipo de dados **Referência de fragmento** permite criar vários níveis de estrutura e relações.
 
 Com essa referência, você pode *conectar* vários modelos de fragmentos de conteúdo para representar as inter-relações. Isso permite que o aplicativo headless siga as conexões e acesse o conteúdo conforme necessário.
 

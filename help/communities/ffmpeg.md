@@ -20,11 +20,11 @@ ht-degree: 1%
 
 ## Visão geral {#overview}
 
-O FFmpeg é uma solução para conversão e transmissão de áudio e vídeo e, quando instalado, é usado para transcodificação adequada de [ativos de vídeo](../../help/sites-authoring/default-components-foundation.md#video).
+O FFmpeg é uma solução para conversão e transmissão de áudio e vídeo e, quando instalado, é usado para a transcodificação adequada de [ativos de vídeo](../../help/sites-authoring/default-components-foundation.md#video).
 
 ## Instalando O FFmpeg {#installing-ffmpeg}
 
-O FFmpeg deve ser instalado nos servidores que hospedam o AEM *autor* instância(s).
+O FFmpeg deve ser instalado no(s) servidor(es) que hospeda(m) a(s) instância(s) *author* do AEM.
 
 1. Ir para [https://www.ffmpeg.org](https://www.ffmpeg.org/).
 1. Baixe a versão mais recente do FFmpeg para seu ambiente específico (Macintosh, Windows ou Linux).
@@ -41,26 +41,26 @@ O FFmpeg deve ser instalado nos servidores que hospedam o AEM *autor* instância
 
 ## Configurar Serviço de Transcodificação FFmpeg {#configure-ffmpeg-transcoding-service}
 
-Por padrão, quando o FFmpeg é instalado, várias representações são configuradas (transcodificações) de acordo com [!UICONTROL Ativo de atualização DAM] definição de fluxo de trabalho.
+Por padrão, quando o FFmpeg é instalado, várias representações são configuradas (transcodificações) de acordo com a definição de fluxo de trabalho [!UICONTROL Ativo de atualização do DAM].
 
 Como as transcodificações consomem muita CPU, é recomendável modificar a lista de representações de destino. Na maioria dos casos, a transcodificação não é necessária.
 
-Para modificar a variável [!UICONTROL Ativo de atualização DAM] e, neste exemplo, desativar a transcodificação:
+Para modificar o fluxo de trabalho do [!UICONTROL Ativo de atualização do DAM] e, neste exemplo, desativar a transcodificação:
 
 * Faça logon na instância do autor com privilégios administrativos.
 * Na navegação global, navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Fluxo de trabalho]** > **[!UICONTROL Modelos]**.
-* Localizar **[!UICONTROL Ativo de atualização DAM]**.
+* Localize o **[!UICONTROL Ativo de atualização do DAM]**.
 * Clique duas vezes para abrir o fluxo de trabalho para edição na interface clássica.
 
   Local resultante: [http://localhost:4502/cf#/etc/workflow/models/dam/update_asset.html](http://localhost:4502/cf#/etc/workflow/models/dam/update_asset.html)
 
-* Clique duas vezes no ícone **[!UICONTROL Transcodificação FFmpeg]** etapa para acessar a caixa de diálogo Propriedades da etapa.
-* No **[!UICONTROL Processo]** guia:
+* Clique duas vezes na etapa **[!UICONTROL Transcodificação de FFmpeg]** para acessar a caixa de diálogo Propriedades da etapa.
+* Na guia **[!UICONTROL Processo]**:
 
-   * **[!UICONTROL Argumentos]**: limpe todas as entradas para desativar a transcodificação. Valores padrão: `profile:format_ogg,profile:format_aac,profile:format_flv,profile:format_aac_ie`
+   * **[!UICONTROL Argumentos]**: Limpar todas as entradas para desabilitar a transcodificação Valores padrão: `profile:format_ogg,profile:format_aac,profile:format_flv,profile:format_aac_ie`
 
   ![configure-ffmpeg](assets/configure-ffmpeg.png)
 
-* Selecionar **[!UICONTROL OK]** para fechar o `Step Properties` diálogo.
+* Selecione **[!UICONTROL OK]** para fechar a caixa de diálogo `Step Properties`.
 
-* Selecionar **[!UICONTROL Salvar]** para salvar o `DAM Update Asset` fluxo de trabalho.
+* Selecione **[!UICONTROL Salvar]** para salvar o fluxo de trabalho `DAM Update Asset`.

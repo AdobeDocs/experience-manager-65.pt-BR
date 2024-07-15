@@ -1,6 +1,6 @@
 ---
 title: Personalização de modelos de pesquisa
-description: Você pode criar modelos de pesquisa a serem usados no Workspace para pesquisar instâncias de processos nas páginas Tarefas e Rastreamento. Também é possível editar ou excluir modelos de pesquisa existentes.
+description: Você pode criar modelos de pesquisa a serem usados no Workspace para procurar instâncias de processos nas páginas Tarefas e Rastreamento. Também é possível editar ou excluir modelos de pesquisa existentes.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_workspace
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Personalização de modelos de pesquisa {#customizing-search-templates}
 
-Você pode criar modelos de pesquisa a serem usados no Workspace para pesquisar instâncias de processos nas páginas Tarefas e Rastreamento. Também é possível editar ou excluir modelos de pesquisa existentes.
+Você pode criar modelos de pesquisa a serem usados no Workspace para procurar instâncias de processos nas páginas Tarefas e Rastreamento. Também é possível editar ou excluir modelos de pesquisa existentes.
 
 Ao criar ou editar um modelo de pesquisa, você pode especificar o layout e a ordem de classificação dos resultados da pesquisa. No entanto, os usuários podem modificar essas configurações no Workspace após a exibição dos resultados da pesquisa.
 
@@ -30,24 +30,24 @@ Você pode criar quantos modelos de pesquisa forem necessários.
 
 ## Criar um modelo de pesquisa simples {#create-a-simple-search-template}
 
-1. No console de administração, clique em Serviços > Espaço de trabalho > Pesquisar modelos.
+1. No console de administração, clique em Serviços > Workspace > Pesquisar modelos.
 1. Na guia Identificação, na caixa Pesquisar descrição do modelo, forneça a finalidade do modelo.
 1. (Opcional) Clique na guia Critérios e especifique os critérios de pesquisa para o modelo.
 1. Clique na guia Save, digite um nome exclusivo para o modelo e clique em Save.
 
 ## Criar ou editar um modelo de pesquisa {#create-or-edit-a-search-template}
 
-1. No console de administração, clique em Serviços > Espaço de trabalho > Pesquisar modelos.
+1. No console de administração, clique em Serviços > Workspace > Pesquisar modelos.
 1. (Opcional) Se você estiver editando um modelo existente ou usando um modelo existente como a base para um novo modelo, selecione o modelo na lista Nome do modelo de pesquisa.
 1. Na caixa Descrição do modelo de pesquisa, forneça a finalidade do modelo.
-1. (Opcional) Na caixa Instruções do usuário, forneça quaisquer instruções que possam ajudar no uso do modelo. Essas instruções são exibidas no Espaço de trabalho quando um usuário seleciona o modelo de pesquisa.
+1. (Opcional) Na caixa Instruções do usuário, forneça quaisquer instruções que possam ajudar no uso do modelo. Essas instruções são exibidas na Workspace quando um usuário seleciona o modelo de pesquisa.
 1. Clique na guia Critérios. É aqui que você define um ou mais critérios de pesquisa. Para adicionar um critério de pesquisa:
 
    * Na parte superior da guia Critérios, selecione um Elemento de Processo ou Elemento de Tarefa.
 
-     **Dica**: *Se você tiver selecionado anteriormente o elemento Nome do Processo e especificado um processo, quaisquer Variáveis do Processo definidas nesse processo também estarão disponíveis para seleção.*
+     **Dica**: *Se você tiver selecionado anteriormente o elemento Nome do Processo e especificado um processo, todas as Variáveis de Processo definidas nesse processo também estarão disponíveis para seleção.*
 
-     **Dica**: *Se você selecionar o elemento Tarefa visível, os usuários poderão remover tarefas concluídas dos resultados da pesquisa.*
+     **Dica**: *Se você selecionar o elemento Tarefa Visível, os usuários poderão remover tarefas concluídas dos resultados da pesquisa.*
 
      Os campos de critérios de pesquisa para o elemento selecionado aparecem na parte inferior da guia Critérios.
 
@@ -57,7 +57,7 @@ Você pode criar quantos modelos de pesquisa forem necessários.
       * (Opcional) Para permitir que os usuários alterem o valor do operando no Workspace, selecione Permitir que o usuário altere o operando.
       * (Opcional) Para permitir que os usuários alterem o operador relacional, selecione Permitir que o usuário selecione outro operador relacional. Na lista exibida, selecione os operadores que estarão disponíveis para o usuário.
 
-     **Dica**: *Se você selecionou Nome do processo como elemento, é possível clicar no ícone ao lado do campo de operando para exibir uma lista onde é possível selecionar um processo que está sendo executado no servidor do Forms. Depois de selecionar um processo, todas as variáveis de processo definidas nesse processo estarão disponíveis para seleção em Variáveis de processo, na seção superior da guia Critérios.*
+     **Dica**: *Se você selecionou Nome do Processo como elemento, é possível clicar no ícone ao lado do campo de operando para exibir uma lista onde você pode selecionar um processo em execução no Forms Server. Depois de selecionar um processo, todas as variáveis de processo definidas nesse processo estarão disponíveis para seleção em Variáveis de Processo, na seção superior da guia Critérios.*
 
      **Dica**: *Você pode excluir um elemento do modelo de pesquisa clicando no ícone Excluir ao lado dos critérios de pesquisa do elemento.*
 

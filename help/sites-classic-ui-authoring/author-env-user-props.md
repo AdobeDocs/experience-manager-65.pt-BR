@@ -21,26 +21,28 @@ ht-degree: 14%
 
 O Adobe Experience Manager (AEM) fornece a capacidade de configurar a sua conta e determinados aspectos do ambiente de Autor.
 
-Usar o [configurações da conta](#account-settings) e [preferências do usuário](#user-preferences) as seguintes opções e preferências podem ser definidas:
+Usando as [configurações da conta](#account-settings) e as [preferências do usuário](#user-preferences), as seguintes opções e preferências podem ser definidas:
 
-* **Edição da barra de ferramentas**
-Selecione se deseja ter a barra de ferramentas de edição global. Essa barra de ferramentas, que é mostrada na parte superior da janela do navegador, fornece **Copiar**, **Recortar**, **Colar**, **Excluir** botões para usar com os componentes de parágrafo nessa página:
+* **Barra de Ferramentas de Edição**
+Selecione se deseja ter a barra de ferramentas de edição global. Esta barra de ferramentas, que é mostrada na parte superior da janela do navegador, oferece botões **Copiar**, **Recortar**, **Colar**, **Excluir** para usar com os componentes de parágrafo desta página:
 
    * Mostrar quando necessário (Padrão)
    * Sempre mostrar
    * Manter oculto
 
 * **Representar como**
-A funcionalidade do [Representar como](/help/sites-administering/security.md#impersonating-another-user) permite que um usuário trabalhe em nome de outro usuário.
+A funcionalidade de [Representar como](/help/sites-administering/security.md#impersonating-another-user) permite que um usuário trabalhe em nome de outro usuário.
 
 * **Idioma**
 O idioma a ser usado para a interface do usuário do ambiente de criação. Selecione o idioma apropriado na lista.
 
-* **Gerenciamento de janelas**
+* **Gerenciamento de Janelas**
 Selecione:
 
-   * Várias páginas do Windows (padrão) são abertas em uma nova janela.
-   * Páginas de janela única são abertas na janela atual.
+   * Diversas Janelas (Padrão)
+As páginas são abertas em uma nova janela.
+   * Janela única
+As páginas são abertas na janela atual.
 
 ## Configurações de conta {#account-settings}
 
@@ -55,7 +57,7 @@ O ícone de usuário fornece acesso às seguintes opções:
 
 ### Preferências de usuário {#user-preferences}
 
-Cada usuário pode definir determinadas propriedades para si mesmo. Isso está disponível no **Preferências** no canto superior direito dos consoles.
+Cada usuário pode definir determinadas propriedades para si mesmo. Isso está disponível na caixa de diálogo **Preferências**, no canto superior direito dos consoles.
 
 ![screen_shot_2012-02-08at105033am](assets/screen_shot_2012-02-08at105033am.png)
 

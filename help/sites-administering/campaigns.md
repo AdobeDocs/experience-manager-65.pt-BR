@@ -23,8 +23,8 @@ O gerenciamento de campanhas oferece aos profissionais de marketing digital a op
 Se você estiver administrando campanhas (incluindo landing pages), talvez precise fazer o seguinte:
 
 * **Definir segmentos** - Você precisa definir segmentos e estratégias para o seu conteúdo direcionado.
-* **Preparar HTML para páginas de aterrissagem** - As landing pages permitem que os autores importem design e conteúdo diretamente para uma página do AEM de forma rápida e fácil. Você precisa preparar o HTML para que os ativos possam ser importados corretamente. As landing pages são úteis ao criar landing pages de marketing que só estão ativas por um tempo limitado e precisam ser criadas rapidamente.
-* **Integrar ao SiteCatalyst** - Você pode integrar páginas de aterrissagem ao SiteCatalyst.
+* **Preparar HTML para páginas de aterrissagem** - As páginas de aterrissagem permitem que os autores importem design e conteúdo diretamente para uma página AEM de forma rápida e fácil. Você precisa preparar o HTML para que os ativos possam ser importados corretamente. As landing pages são úteis ao criar landing pages de marketing que só estão ativas por um tempo limitado e precisam ser criadas rapidamente.
+* **Integrar com o SiteCatalyst** - Você pode integrar páginas de aterrissagem com o SiteCatalyst.
 
 Consulte as seguintes páginas:
 

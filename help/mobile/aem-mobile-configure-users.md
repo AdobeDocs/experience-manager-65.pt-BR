@@ -44,11 +44,11 @@ Os membros do grupo de autores do aplicativo são responsáveis pela criação d
 
    ![chlimage_1-167](assets/chlimage_1-167.png)
 
-1. Agora que você criou o Grupo de usuários de autores de aplicativos, é possível adicionar membros de equipe individuais a esse novo grupo por meio da [Admin Console do usuário](http://localhost:4502/libs/granite/security/content/useradmin.md).
+1. Agora que você criou o Grupo de usuários de autores de aplicativos, é possível adicionar membros de equipe individuais a este novo grupo por meio do [Admin Console de usuário](http://localhost:4502/libs/granite/security/content/useradmin.md).
 
    ![chlimage_1-168](assets/chlimage_1-168.png)
 
-1. O seguinte permite que você adicione ao grupo de autores de conteúdo AEM:
+1. O seguinte permite que você adicione ao grupo de autores de conteúdo do AEM:
 
    (Leitura) em
 
@@ -59,7 +59,7 @@ Os membros do grupo de autores do aplicativo são responsáveis pela criação d
 
 ### Grupo de administradores de aplicativos AEM Mobile (grupo de administradores de aplicativos) {#aem-mobile-application-administrators-group-app-admins-group}
 
-Os membros do grupo de administradores de aplicativos podem criar conteúdo de aplicativos com as mesmas permissões incluídas nos autores de aplicativos **E** além disso, são também responsáveis por:
+Os membros do grupo de administradores de aplicativos podem criar conteúdo de aplicativos com as mesmas permissões incluídas com os autores de aplicativos **E**, além disso, também são responsáveis por:
 
 * Preparando, publicando e limpando atualizações de OTA do ContentSync do aplicativo
 
@@ -83,7 +83,7 @@ Os membros do grupo de administradores de aplicativos podem criar conteúdo de a
    >
    >os usuários do workflow precisam criar remotamente com o serviço de PhoneGap Build
 
-1. Navegue até a [Console de permissões](http://localhost:4502/useradmin) e adicionar permissões para administrar o cloudservices
+1. Navegue até o [console Permissões](http://localhost:4502/useradmin) e adicione permissões para administrar o cloudservices
 
    * (Ler, modificar, criar, excluir, replicar) em /etc/cloudservices/mobileservices
 

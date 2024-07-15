@@ -35,7 +35,7 @@ Os lançamentos também podem ser:
 * Criados para várias ramificações raiz. Embora você possa criar o lançamento para todo o site (e fazer as alterações lá), isso pode ser inviável, pois todo o site precisaria ser copiado. Quando centenas ou até milhares de páginas estão envolvidas, os requisitos e o desempenho do sistema seriam afetados pela ação de cópia e, posteriormente, pelas comparações necessárias para as tarefas de promoção.
 * Aninhados (um lançamento dentro de outro) para oferecer a capacidade de criar um lançamento a partir de outro já existente, de modo que os autores possam aproveitar as alterações já feitas em vez de precisar fazer as mesmas alterações várias vezes para cada lançamento.
 
-Esta seção descreve como criar, editar e promover (e, se necessário, [excluir](/help/sites-authoring/launches-creating.md#deleting-a-launch)) iniciar páginas no console do Sites ou [o console Inicializações](#the-launches-console):
+Esta seção descreve como criar, editar e promover (e, se necessário, [excluir](/help/sites-authoring/launches-creating.md#deleting-a-launch)) as páginas de inicialização de dentro do console do Sites ou [do console Inicializações](#the-launches-console):
 
 * [Criação de Lançamentos](/help/sites-authoring/launches-creating.md)
 * [Edição de Lançamentos](/help/sites-authoring/launches-editing.md)
@@ -54,7 +54,7 @@ Os lançamentos permitem:
 
       * As páginas de origem podem ser obtidas de várias ramificações (separadas).
 
-  ![Visão geral das ações de lançamento](assets/chlimage_1-111.png)
+  ![Visão geral das ações de inicialização](assets/chlimage_1-111.png)
 
 * Edite a configuração do lançamento:
 
@@ -74,7 +74,7 @@ Os lançamentos permitem:
       * O campo **Data de lançamento** (**Data de ativação**):**** pode ser definida ao criar ou editar um lançamento.
 
       * O sinalizador **Pronto para produção** : só pode ser definido ao editar um lançamento.
-      * Se a variável **Pronto para produção** for definido, a inicialização será promovida automaticamente para as páginas de produção no **Launch**(**Ao vivo**) **data**. Após a promoção, as páginas de produção são publicadas automaticamente.\
+      * Se o sinalizador **Pronto para Produção** estiver definido, a inicialização será promovida automaticamente para as páginas de produção na **Inicialização**(**Ao Vivo**) **data** especificada. Após a promoção, as páginas de produção são publicadas automaticamente.\
         Se nenhuma data tiver sido definida, o sinalizador não terá efeito.
 
 * Atualize suas páginas de origem e de lançamento em paralelo:
@@ -120,10 +120,10 @@ O console Lançamentos fornece uma visão geral dos lançamentos e permite que v
 
 1. No console do **Sites** navegue até a origem do(s) lançamento(s).
 1. Abra o painel **Referências** e selecione a página de origem.
-1. Selecionar **Lançamentos**, os lançamentos existentes serão listados:
+1. Selecione **Lançamentos**. Os lançamentos existentes serão listados:
 
    ![Guia Referência - Inicializações](assets/screen-shot_2019-03-05at121901-1.png)
 
 1. Clique no lançamento apropriado. A lista de ações possíveis será exibida:
 
-   ![Selecione o lançamento para mostrar as ações possíveis](assets/screen-shot_2019-03-05at121952-1.png)
+   ![Selecione a inicialização para mostrar as ações possíveis](assets/screen-shot_2019-03-05at121952-1.png)

@@ -38,9 +38,9 @@ Você precisa do seguinte hardware, software e licenças para criar e implantar 
 
 ## Para dispositivos Android™ {#for-android-devices}
 
-* Android™ Development Toolkit (pacote ADT) que pode ser baixado em [https://developer.android.com/studio](https://developer.android.com/studio)
+* Android™ Development Toolkit (pacote ADT) que pode ser baixado de [https://developer.android.com/studio](https://developer.android.com/studio)
 * Se o ambiente estiver configurado em um sistema Mac, o ADT deverá ser instalado na pasta Aplicativos.
-* Se o ADT estiver instalado em qualquer outro local no Mac ou se o ambiente estiver configurado em um sistema Windows, o caminho do SDK do ADT deverá ser atualizado em `local.properties` arquivo. Esse arquivo está disponível no `src\android` pasta no arquivo de origem extraído `mobileworkspace-src.zip`. Neste arquivo, aponte para `sdk.dir` variável para o local do SDK do ADT no desktop.
+* Se o ADT estiver instalado em qualquer outro local no Mac ou se o ambiente estiver configurado em um sistema Windows, o caminho do SDK do ADT deverá ser atualizado no arquivo `local.properties`. Este arquivo está disponível na pasta `src\android` no arquivo morto de origem `mobileworkspace-src.zip` extraído. Neste arquivo, aponte a variável `sdk.dir` para o local do SDK do ADT na área de trabalho.
 
 >[!NOTE]
 >

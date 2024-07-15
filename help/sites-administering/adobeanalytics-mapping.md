@@ -19,15 +19,15 @@ ht-degree: 0%
 
 # Mapeamento de dados do componente com propriedades do Adobe Analytics{#mapping-component-data-with-adobe-analytics-properties}
 
-Adicione componentes à estrutura que coletam os dados para enviar ao Adobe Analytics. Componentes projetados para coletar dados de análise armazenam os dados na instância **Variável CQ**. Quando você adiciona esse componente a uma estrutura, ela exibe a lista de variáveis CQ para que cada uma delas possa ser direcionada às **Variável do Analytics**.
+Adicione componentes à estrutura que coletam os dados para enviar ao Adobe Analytics. Componentes projetados para coletar dados de análise e armazená-los na **variável CQ** apropriada. Ao adicionar esse componente a uma estrutura, ela exibe a lista de variáveis CQ para que cada uma delas possa ser adicionada à **variável do Analytics** apropriada.
 
 ![aa-11](assets/aa-11.png)
 
-Quando a variável **Visualização do AEM** é aberto as variáveis do Analytics aparecem no localizador de conteúdo.
+Quando a **exibição AEM** está aberta, as variáveis do Analytics são exibidas no localizador de conteúdo.
 
 ![aa-12](assets/aa-12.png)
 
-É possível mapear várias variáveis do Analytics com a mesma **Variável CQ**.
+Você pode mapear várias variáveis do Analytics com a mesma **variável CQ**.
 
 ![chlimage_1-68](assets/chlimage_1-68.png)
 
@@ -38,13 +38,13 @@ Os dados mapeados são enviados para o Adobe Analytics quando a página é carre
 
 Use o procedimento a seguir para mapear variáveis de componente CQ com propriedades de relatório do Adobe Analytics.
 
-1. No **Visualização do AEM**, arraste um componente de rastreamento do sidekick para a estrutura. Por exemplo, arraste o **Página** componente do **Geral** categoria.
+1. Na **exibição AEM**, arraste um componente de rastreamento do sidekick para a estrutura. Por exemplo, arraste o componente **Página** da categoria **Geral**.
 
    ![aa-13](assets/aa-13.png)
 
-   Há vários grupos de componentes padrão: **Geral**, **Commerce**, **Communities**, e **Outro**. A instância do AEM pode ser configurada para exibir grupos e componentes diferentes.
+   Há vários grupos de componentes padrão: **Geral**, **Commerce**, **Comunidades** e **Outros**. A instância do AEM pode ser configurada para exibir grupos e componentes diferentes.
 
-1. Para mapear variáveis do Adobe Analytics com variáveis definidas no componente, arraste uma **Variável do Analytics** do localizador de conteúdo para um campo no componente de rastreamento. Por exemplo, arrastar `Page Name (pageName)` para `pagedata.title`.
+1. Para mapear variáveis do Adobe Analytics com variáveis definidas no componente, arraste uma **variável do Analytics** do localizador de conteúdo para um campo no componente de rastreamento. Por exemplo, arraste `Page Name (pageName)` para `pagedata.title`.
 
    ![aa-14](assets/aa-14.png)
 
@@ -56,16 +56,16 @@ Use o procedimento a seguir para mapear variáveis de componente CQ com propried
 
    >[!NOTE]
    >
-   >É possível mapear várias variáveis do Analytics (por exemplo, `props`, `eVars`, `events`) para a mesma variável do CQ (por exemplo, `pagedata.title`)
+   >Você pode mapear várias variáveis do Analytics (por exemplo, `props`, `eVars`, `events`) para a mesma variável do CQ (por exemplo, `pagedata.title`)
 
    >[!CAUTION]
    >
    >É altamente recomendável que:
    >
-   >* `eVars` e `props` são mapeados para variáveis CQ começando com um `pagedata.X` ou `eventdata.X`
+   >* `eVars` e `props` estão mapeados para variáveis CQ começando com `pagedata.X` ou `eventdata.X`
    >* considerando que os eventos devem ser mapeados para variáveis que começam com `eventdata.events.X`
 
-1. Para disponibilizar a estrutura na instância de publicação do site, abra **Página** do sidekick e clique em **Ativar Framework.**
+1. Para disponibilizar a estrutura na instância de publicação do seu site, abra a guia **Página** do sidekick e clique em **Ativar Estrutura.**
 
 ## Mapeamento de variáveis relacionadas ao produto {#mapping-product-related-variables}
 
@@ -77,8 +77,8 @@ O AEM usa uma convenção para nomear variáveis e eventos relacionados a produt
 | `product.sku` | `product.sku` (variável de conversão) | O SKU do produto. |
 | `product.quantity` | `product.quantity` (variável de conversão) | O número de produtos sendo comprados. |
 | `product.price` | `product.price` (variável de conversão) | O preço do produto. |
-| `product.events.<eventName>` | Os eventos bem-sucedidos a serem associados ao produto em seu relatório. | `product.events` é o prefixo de eventos nomeados *eventName* |
-| `product.evars.<eVarName>` | As variáveis de conversão ( `eVar`) para associar ao produto. | `product.evars` é o prefixo das variáveis de eVar denominadas *eVarName.* |
+| `product.events.<eventName>` | Os eventos bem-sucedidos a serem associados ao produto em seu relatório. | `product.events` é o prefixo de eventos denominado *eventName.* |
+| `product.evars.<eVarName>` | As variáveis de conversão ( `eVar`) a serem associadas ao produto. | `product.evars` é o prefixo das variáveis de eVar denominadas *eVarName.* |
 
 Vários componentes do AEM Commerce usam esses nomes de variáveis.
 
@@ -90,7 +90,7 @@ Vários componentes do AEM Commerce usam esses nomes de variáveis.
 
 1. Faça logon no site da Adobe Analytics usando as mesmas credenciais fornecidas para o AEM.
 1. Certifique-se de que a RSID selecionada é a utilizada nas etapas anteriores.
-1. Entrada **Relatórios** (no lado esquerdo da página), selecione **Conversão personalizada**, depois **Conversão personalizada 1-10** e selecione a variável correspondente a `eVar7`
+1. Em **Relatórios** (no lado esquerdo da página), selecione **Conversão personalizada**, depois **Conversão personalizada 1-10** e selecione a variável correspondente a `eVar7`
 
 1. Dependendo da versão do Adobe Analytics que você está usando, é necessário aguardar em média 45 minutos para que o relatório seja atualizado com o termo de pesquisa usado; por exemplo, berinjela no exemplo
 
@@ -103,18 +103,18 @@ Inicialmente, ao abrir uma estrutura do Adobe Analytics, o localizador de conte�
 * Eventos
 
 Quando uma RSID é selecionada, todas as variáveis pertencentes a essa RSID são adicionadas à lista.\
-A variável `cf#` é necessário mapear variáveis do Analytics para as variáveis do CQ presentes nos diferentes componentes de rastreamento. Consulte Configuração de uma estrutura para rastreamento básico.
+O `cf#` é necessário para mapear variáveis do Analytics para as variáveis CQ presentes nos diferentes componentes de rastreamento. Consulte Configuração de uma estrutura para rastreamento básico.
 
 Dependendo da exibição selecionada para a estrutura, o localizador de conteúdo será preenchido pelas variáveis do Analytics (na exibição AEM) ou pelas variáveis CQ (na exibição do Analytics).
 
 A lista pode ser manipulada das seguintes maneiras:
 
-1. Quando em **Visualização do AEM**, a lista pode ser filtrada dependendo do tipo de variável selecionado com os três botões de filtro:
+1. Quando estiver no **modo de exibição AEM**, a lista poderá ser filtrada, dependendo do tipo de variável selecionado com os três botões de filtro:
 
-   * Se *nenhum botão* for selecionada, a lista mostrará a lista completa.
-   * Se a variável **Tráfego** for selecionada, a lista exibirá somente as variáveis pertencentes à seção Tráfego.
-   * Se a variável **Conversão** for selecionada, a lista exibirá somente as variáveis pertencentes à seção Conversion.
-   * Se a variável **Eventos** for selecionada, a lista mostrará somente as variáveis pertencentes à seção Eventos.
+   * Se *nenhum botão* for selecionado, a lista mostrará a lista completa.
+   * Se o botão **Tráfego** for selecionado, a lista mostrará somente as variáveis pertencentes à seção Tráfego.
+   * Se o botão **Conversão** for selecionado, a lista mostrará somente as variáveis pertencentes à seção Conversão.
+   * Se o botão **Eventos** estiver selecionado, a lista mostrará somente as variáveis pertencentes à seção Eventos.
 
    >[!NOTE]
    >
@@ -127,7 +127,7 @@ A lista pode ser manipulada das seguintes maneiras:
 
 1. Quando estiver na exibição do Adobe Analytics, o Localizador de conteúdo exibe todas as variáveis CQ pertencentes aos componentes de rastreamento arrastados na exibição do CQ.
 
-   * Por exemplo, caso a variável **Baixar componente** é o *somente um arrastado* na visualização CQ (que tem duas variáveis mapeáveis) *eventdata.downloadLink* e *eventdata.events.startDownload*), o Localizador de conteúdo terá esta aparência ao alternar para a exibição do Adobe Analytics:
+   * Por exemplo, caso o **componente de Download** seja o *único arrastado* na exibição do CQ (que tem duas variáveis mapeáveis *eventdata.downloadLink* e *eventdata.events.startDownload*), o Localizador de Conteúdo terá esta aparência ao alternar para a exibição do Adobe Analytics:
 
    ![aa-22](assets/aa-22.png)
 
@@ -147,13 +147,13 @@ A qualquer momento, os usuários podem alternar entre duas maneiras de visualiza
 
 ![aa-23](assets/aa-23.png)
 
-Tomando a imagem acima como exemplo, a variável **Visualização do AEM** tem as seguintes propriedades:
+Usando a imagem acima como exemplo, a **exibição do AEM** tem as seguintes propriedades:
 
 1. Essa é a exibição padrão quando a estrutura é aberta.
 1. Lado esquerdo: o localizador de conteúdo (cf#) é preenchido pelas variáveis do Adobe Analytics com base nas RSID(s) selecionadas.
-1. Cabeçalhos de guias (**Visualização do AEM** e **Exibição do Analytics**): use-os para alternar entre as duas exibições.
+1. Cabeçalhos de guia (**exibição de AEM** e **exibição do Analytics**): use-os para alternar entre as duas exibições.
 
-1. **Visualização do AEM**:
+1. **exibição do AEM**:
 
    1. Se a estrutura tiver componentes herdados de seu pai, eles serão listados aqui, juntamente com as variáveis mapeadas para os componentes.
 
@@ -161,7 +161,7 @@ Tomando a imagem acima como exemplo, a variável **Visualização do AEM** tem a
       1. Para desbloquear um componente herdado, clique duas vezes no cadeado ao lado do nome do componente
       1. Para reverter a herança, exclua o componente desbloqueado; depois disso, ele recuperará o status de bloqueado.
 
-   1. **Arraste componentes aqui para incluí-los no framework de análise**: os componentes podem ser arrastados do Sidekick e soltos aqui.
+   1. **Arraste componentes aqui para incluí-los na estrutura de análise**: os componentes podem ser arrastados do Sidekick e soltos aqui.
    1. Você pode encontrar todos os componentes incluídos atualmente na estrutura de análise:
 
       1. Para adicionar um componente, arraste um da guia Componentes do sidekick
@@ -172,35 +172,35 @@ Tomando a imagem acima como exemplo, a variável **Visualização do AEM** tem a
 
 ![aa-24](assets/aa-24.png)
 
-1. Essa visualização pode ser acessada alternando para o **Exibição do Analytics** no framework.
+1. Esta exibição pode ser acessada alternando para a guia **Exibição do Analytics** na estrutura.
 1. Lado esquerdo: Localizador de conteúdo (cf#) preenchido por variáveis do CQ com base nos componentes arrastados para a estrutura na exibição do CQ.
-1. Cabeçalhos de guias (**Visualização do AEM** e **Exibição do Analytics**): use-os para alternar entre as duas exibições.
+1. Cabeçalhos de guia (**exibição de AEM** e **exibição do Analytics**): use-os para alternar entre as duas exibições.
 
 1. As três tabelas (Tráfego, Conversão, Evento) listam todas as variáveis do Adobe Analytics disponíveis. pertencentes às RSIDs selecionadas. Os mapeamentos mostrados aqui devem ser os mesmos da exibição AEM:
 
    * **Tráfego**:
 
-      * Variável de tráfego ( `prop1`) mapeado para uma variável do CQ ( `eventdata.downloadLink`)
+      * Variável de tráfego ( `prop1`) mapeada para uma variável do CQ ( `eventdata.downloadLink`)
 
       * Quando o componente tem um Cadeado ao lado dele, significa que é herdado de uma estrutura principal e, portanto, não pode ser editado
 
    * **Conversão**:
 
-      * Variável de conversão ( `eVar1`) mapeado para uma variável do CQ ( `pagedata.title`)
+      * Variável de conversão ( `eVar1`) mapeada para uma variável do CQ ( `pagedata.title`)
 
-      * Variável de conversão ( `eVar3`) mapeado para uma expressão JavaScript adicionada em linha clicando duas vezes no campo de variável CQ e inserindo o código manualmente
+      * Variável de conversão ( `eVar3`) mapeada para uma expressão JavaScript adicionada em linha ao clicar duas vezes no campo de variável CQ e inserir o código manualmente
 
    * **Evento**:
 
-      * Variável de evento ( `event1`) mapeado para um evento CQ ( `eventdata.events.pageView`)
+      * Variável de evento ( `event1`) mapeada para um evento CQ ( `eventdata.events.pageView`)
 
 >[!NOTE]
 >
->A coluna da variável CQ de qualquer tabela também pode ser preenchida em linha, clicando duas vezes no campo e adicionando texto a ele. Esses campos aceitam JavaScript como uma entrada.
+>A coluna da variável CQ de qualquer tabela também pode ser preenchida em linha, clicando duas vezes no campo e adicionando texto a ele. Esses campos aceitam o JavaScript como uma entrada.
 >
->Por exemplo, ao lado de `prop3` você pode adicionar:
+>Por exemplo, próximo a `prop3` você pode adicionar:
 >     `'`* `Adobe:'+pagedata.title+':'+pagedata.sitesection`\
->para enviar o *título* de uma página concatenada com seu *sitesection* usar *:* (dois pontos) e com prefixo *Adobe* as `prop3`
+>para enviar o *título* de uma página concatenada com sua *seção de site* usando *:* (dois pontos) e com o prefixo *Adobe* como `prop3`
 >
 
 >[!CAUTION]

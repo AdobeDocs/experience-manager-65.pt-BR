@@ -26,7 +26,7 @@ Seus casos de teste devem se basear no:
 * Eles definem a funcionalidade necessária em termos da interação entre os Atores (funções que iniciam determinadas ações) e o sistema.
 * Os casos de uso devem ser definidos pelo cliente.
 
-**Especificação detalhada dos requisitos**
+**Especificação de requisitos detalhada**
 
 * Todos os requisitos funcionais e de desempenho devem ser testados.
 
@@ -52,16 +52,18 @@ No entanto, a automatização de casos de teste é um investimento significativo
 
 Ao testar o AEM, alguns detalhes específicos são de especial interesse:
 
-**Ambientes de criação e publicação**
+**Ambientes de Autor e Publish**
 
-Embora abrangido pelo [Ambientes](/help/sites-developing/the-basics.md#environments)No entanto, vale a pena destacar um fator decisivo do AEM em relação aos testes.
+Embora coberto em [Ambientes](/help/sites-developing/the-basics.md#environments), vale a pena destacar um fator decisivo do AEM em relação ao teste.
 
 Considere o AEM como dois aplicativos:
 
-* o *Autor* ambiente Essa instância permite que os autores insiram e publiquem conteúdo.
+* o ambiente *Author*
+Essa instância permite que os autores insiram e publiquem conteúdo.
 Ele tem um pequeno conjunto previsível de usuários, para os quais a funcionalidade e o desempenho específicos são cruciais.
 
-* o *Publish* ambiente Essa instância apresenta o site em seu formulário publicado para acesso dos visitantes.
+* o ambiente *Publish*
+Essa instância apresenta o site em seu formulário publicado para acesso dos visitantes.
 Isso geralmente tem um conjunto maior de usuários, em que o volume de tráfego nem sempre é 100% previsível. O desempenho ainda é crucial ao responder às solicitações. Considere também armazenamento em cache e balanceamento de carga.
 
 Embora sejam o mesmo software, eles:
@@ -80,7 +82,7 @@ Ao testar a personalização, cada caso de uso individual deve ser repetido usan
 
 Verifique o armazenamento em cache também para determinar o comportamento correto.
 
-**O Dispatcher**
+**A Dispatcher**
 
 A maioria dos projetos instala o Dispatcher para armazenamento em cache e balanceamento de carga.
 

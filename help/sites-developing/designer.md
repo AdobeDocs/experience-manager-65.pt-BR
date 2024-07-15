@@ -20,23 +20,23 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->Este artigo descreve como criar um site com base na interface clássica. A Adobe recomenda o uso das tecnologias mais recentes de AEM para seus sites, conforme descrito detalhadamente no artigo [Introdução ao desenvolvimento do AEM Sites](/help/sites-developing/getting-started.md).
+>Este artigo descreve como criar um site com base na interface clássica. A Adobe recomenda usar as tecnologias AEM mais recentes para seus sites, conforme descrito detalhadamente no artigo [Introdução ao desenvolvimento do AEM Sites](/help/sites-developing/getting-started.md).
 
-O Designer é usado para criar um design para o seu site usando o [Interface clássica](/help/release-notes/touch-ui-features-status.md) no AEM.
+O Designer é usado para criar um design para o seu site usando a [Interface clássica](/help/release-notes/touch-ui-features-status.md) no AEM.
 
 >[!NOTE]
 >
->Para obter mais informações sobre acessibilidade da Web, consulte [AEM e diretrizes de acessibilidade na Web](/help/managing/web-accessibility.md).
+>Para obter mais informações sobre acessibilidade da Web, consulte [AEM e as Diretrizes de Acessibilidade da Web](/help/managing/web-accessibility.md).
 
 ## Uso do Designer {#using-the-designer}
 
-Seu design pode ser definido na guia **designs** seção do **Ferramentas** guia:
+Seu design pode ser definido na seção **designs** da guia **Ferramentas**:
 
 ![screen_shot_2012-02-01at30237pm](assets/screen_shot_2012-02-01at30237pm.png)
 
 Aqui você pode criar a estrutura necessária para armazenar o design e, em seguida, fazer upload das folhas de estilos em cascata e imagens necessárias.
 
-Os designs são armazenados em `/apps/<your-project>`. O caminho para o design a ser usado para um site é especificado usando o `cq:designPath` propriedade do `jcr:content` nó.
+Os designs são armazenados em `/apps/<your-project>`. O caminho para o design a ser usado para um site é especificado usando a propriedade `cq:designPath` do nó `jcr:content`.
 
 ![chlimage_1-74](assets/chlimage_1-74a.png)
 
@@ -48,12 +48,12 @@ Os designs são armazenados em `/apps/<your-project>`. O caminho para o design a
 
 Para realizar seu design, você precisará:
 
-**CSS** - As Folhas de estilo em cascata definem os formatos de áreas específicas nas suas páginas.
+**CSS** - As Folhas de Estilo em Cascata definem os formatos de áreas específicas nas suas páginas.
 **Imagens** - Qualquer imagem que você use para recursos como planos de fundo, botões.
 
 ### Considerações Ao Projetar O Site {#considerations-when-designing-your-website}
 
-Ao desenvolver um site, é altamente recomendável armazenar imagens e arquivos CSS em `/apps/<your-project>` para que você possa fazer referência aos seus recursos com base no design atual, conforme descrito no trecho a seguir.
+Ao desenvolver um site, é altamente recomendável armazenar imagens e arquivos CSS em `/apps/<your-project>` para que você possa fazer referência aos seus recursos com base no design atual, conforme descrito pelo seguinte trecho.
 
 ```xml
 <%= currentDesign.getPath() + "/static/img/icon.gif %>
@@ -62,6 +62,6 @@ Ao desenvolver um site, é altamente recomendável armazenar imagens e arquivos 
 O exemplo anterior oferece vários benefícios:
 
 * Os componentes podem ter uma aparência diferente com base em cada site usando um caminho de design diferente.
-* O novo design do site pode ser feito simplesmente apontando o caminho de design para um nó diferente na raiz do site a partir de `design/v1` para `design/v2.`
+* A recriação do site pode ser feita simplesmente apontando o caminho de design para um nó diferente na raiz do site de `design/v1` para `design/v2.`
 
-* `/etc/designs` e `/content` são os únicos URLs externos que o navegador vê protegendo você de um usuário externo ficando curioso sobre o que está sob sua `/apps` árvore. Os benefícios do URL acima também ajudam o administrador do sistema a configurar uma segurança melhor, pois você está limitando a exposição dos ativos a alguns locais distintos.
+* `/etc/designs` e `/content` são os únicos URLs externos que o navegador vê protegendo você de um usuário externo ficar curioso sobre o que está sob a árvore `/apps`. Os benefícios do URL acima também ajudam o administrador do sistema a configurar uma segurança melhor, pois você está limitando a exposição dos ativos a alguns locais distintos.

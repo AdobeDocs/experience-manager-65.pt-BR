@@ -20,13 +20,13 @@ ht-degree: 3%
 
 As predefinições de imagem permitem que os ativos forneçam imagens dinamicamente em diferentes tamanhos, formatos ou com outras propriedades de imagem geradas dinamicamente. É possível escolher uma predefinição ao exportar imagens. A predefinição reformata imagens de acordo com as especificações especificadas pelo administrador.
 
-Além disso, é possível escolher uma predefinição de imagem que seja responsiva (designada pelo **[!UICONTROL RESS]** após selecioná-lo).
+Além disso, você pode escolher uma predefinição de imagem que seja responsiva (designada pelo botão **[!UICONTROL RESS]** depois de selecioná-la).
 
 Esta seção descreve como usar predefinições de imagens. [Os administradores podem criar e configurar predefinições de imagens](managing-image-presets.md).
 
 >[!NOTE]
 >
->A geração de imagens inteligentes funciona com suas predefinições de imagens existentes e usa inteligência nos últimos milissegundos do delivery para reduzir ainda mais o tamanho do arquivo de imagem com base na velocidade do navegador ou da conexão de rede. Consulte [Imagem inteligente](imaging-faq.md) para obter mais informações.
+>A geração de imagens inteligentes funciona com suas predefinições de imagens existentes e usa inteligência nos últimos milissegundos do delivery para reduzir ainda mais o tamanho do arquivo de imagem com base na velocidade do navegador ou da conexão de rede. Consulte [Smart Imaging](imaging-faq.md) para obter mais informações.
 
 É possível aplicar uma predefinição de imagem a uma imagem sempre que ela for visualizada.
 
@@ -40,7 +40,7 @@ Esta seção descreve como usar predefinições de imagens. [Os administradores 
 
    >[!NOTE]
    >
-   >* As representações estáticas aparecem na metade superior do painel. As representações dinâmicas aparecem na metade inferior. Somente com representações dinâmicas, é possível usar o URL para exibir a imagem. A variável **[!UICONTROL URL]** será exibido somente se você selecionar uma representação dinâmica. A variável **[!UICONTROL RESS]** O botão só será exibido se você selecionar uma predefinição de imagem responsiva.
+   >* As representações estáticas aparecem na metade superior do painel. As representações dinâmicas aparecem na metade inferior. Somente com representações dinâmicas, é possível usar o URL para exibir a imagem. O botão **[!UICONTROL URL]** só será exibido se você selecionar uma representação dinâmica. O botão **[!UICONTROL RESS]** só será exibido se você selecionar uma predefinição de imagem responsiva.
    >
    >* O sistema mostra várias execuções ao selecionar **[!UICONTROL Representações]** na exibição de Detalhes de um ativo. Você pode aumentar o número de predefinições vistas. Consulte [Aumentar o número de predefinições de imagens exibidas](managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display).
 
@@ -53,6 +53,6 @@ Esta seção descreve como usar predefinições de imagens. [Os administradores 
 
    >[!NOTE]
    >
-   >Se o ativo *e* a predefinição de imagem ainda não foi publicada, a variável **[!UICONTROL URL]** botão (ou **[!UICONTROL URL]** e **[!UICONTROL RESS]** (se aplicável) não estiver disponível.
+   >Se o ativo *e* a predefinição de imagem ainda não foi publicada, o botão **[!UICONTROL URL]** (ou os botões **[!UICONTROL URL]** e **[!UICONTROL RESS]**, se aplicável) não estará disponível.
    >
    >Observe também que as predefinições de imagem são publicadas automaticamente em um servidor do Dynamic Media.

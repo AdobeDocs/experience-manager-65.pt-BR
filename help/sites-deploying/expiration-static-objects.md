@@ -25,11 +25,11 @@ Isso tem o seguinte impacto:
 * Descarrega solicitações da infraestrutura do servidor.
 * Aumenta o desempenho do carregamento da página, à medida que o navegador armazena objetos em cache no cache do navegador.
 
-As expirações são especificadas pelo padrão HTTP em relação à &quot;expiração&quot; de arquivos (por exemplo, consulte o capítulo 14.21 de [RFC 2616](https://www.ietf.org/rfc/rfc2616.txt) &quot; Protocolo de Transferência de Hipertexto — HTTP 1.1&quot;). Esse padrão usa o cabeçalho para permitir que os clientes armazenem objetos em cache até que sejam considerados obsoletos; esses objetos são armazenados em cache pelo período especificado sem que nenhuma verificação de status seja feita no servidor de origem.
+As expirações são especificadas pelo padrão HTTP em relação à &quot;expiração&quot; de arquivos (por exemplo, consulte o capítulo 14.21 de [RFC 2616](https://www.ietf.org/rfc/rfc2616.txt) &quot; Hypertext Transfer Protocol — HTTP 1.1&quot;). Esse padrão usa o cabeçalho para permitir que os clientes armazenem objetos em cache até que sejam considerados obsoletos; esses objetos são armazenados em cache pelo período especificado sem que nenhuma verificação de status seja feita no servidor de origem.
 
 >[!NOTE]
 >
->Essa configuração é separada do (e não funcionará para) Dispatcher.
+>Essa configuração é separada da Dispatcher (e não funcionará para ela).
 >
 >A finalidade do Dispatcher é armazenar dados em cache na frente do Adobe Experience Manager (AEM).
 
@@ -37,7 +37,7 @@ Todos os arquivos, que não são dinâmicos e que não mudam com o tempo, podem 
 
 >[!CAUTION]
 >
->Tenha cuidado ao definir o período durante o qual um objeto é considerado atualizado. Como há *nenhuma verificação até que o período especificado tenha expirado*, o cliente pode acabar apresentando conteúdo antigo do cache.
+>Tenha cuidado ao definir o período durante o qual um objeto é considerado atualizado. Como não há *nenhuma verificação até que o período de tempo especificado expire*, o cliente pode acabar apresentando conteúdo antigo do cache.
 
 1. **Para uma instância de Autor:**
 
@@ -55,7 +55,7 @@ Todos os arquivos, que não são dinâmicos e que não mudam com o tempo, podem 
 
    Outras seções do site não devem ser armazenadas em cache em uma instância de autor, pois estão sujeitas a alterações a qualquer momento.
 
-1. **Para uma instância de publicação:**
+1. **Para uma instância do Publish:**
 
    ```xml
    LoadModule expires_module modules/mod_expires.so
@@ -73,7 +73,7 @@ Todos os arquivos, que não são dinâmicos e que não mudam com o tempo, podem 
    </Location>
    ```
 
-   Isso permite que o cache intermediário (por exemplo, o cache do navegador) armazene arquivos CSS, JavaScript, PNG e GIF por até um dia nos caches do cliente. Embora este exemplo ilustre as configurações globais para tudo abaixo `/content` e `/etc/designs`, você deve torná-lo mais granular.
+   Isso permite que o cache intermediário (por exemplo, o cache do navegador) armazene arquivos CSS, JavaScript, PNG e GIF por até um dia nos caches do cliente. Embora este exemplo ilustre as configurações globais para tudo abaixo de `/content` e `/etc/designs`, você deve torná-lo mais granular.
 
    Dependendo da frequência com que seu site é atualizado, você também pode considerar o armazenamento em cache de páginas de HTML. Um período de tempo razoável seria de uma hora:
 
@@ -83,4 +83,4 @@ Todos os arquivos, que não são dinâmicos e que não mudam com o tempo, podem 
    </Location>
    ```
 
-Após configurar os objetos estáticos, faça a varredura `request.log`, ao selecionar páginas que contêm esses objetos, para confirmar que nenhuma solicitação (desnecessária) está sendo feita para objetos estáticos.
+Após configurar os objetos estáticos, examine `request.log`, ao selecionar páginas que contêm esses objetos, para confirmar se nenhuma solicitação (desnecessária) está sendo feita para objetos estáticos.

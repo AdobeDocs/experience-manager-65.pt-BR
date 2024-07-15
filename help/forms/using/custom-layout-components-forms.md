@@ -20,7 +20,7 @@ ht-degree: 1%
 
 ## Pré-requisitos {#prerequisite}
 
-Conhecimento de layouts, que permite criar/usar um layout personalizado. Consulte [Alteração do layout do painel](../../forms/using/layout-capabilities-adaptive-forms.md).
+Conhecimento de layouts, que permite criar/usar um layout personalizado. Consulte [Alterando o Layout do Painel](../../forms/using/layout-capabilities-adaptive-forms.md).
 
 ## Componente Layout do painel de formulário adaptável {#adaptive-form-panel-layout-component}
 
@@ -29,19 +29,19 @@ O componente Layout do painel de formulário adaptável controla a forma como os
 ## Criação de um layout de painel personalizado {#creating-a-custom-panel-layout}
 
 1. Navegue até o local `/crx/de`.
-1. Copiar um layout de painel do local `/libs/fd/af/layouts/panel` (por exemplo, `tabbedPanelLayout`) para `/apps` (por exemplo, `/apps/af-custom-layout`).
-1. Renomear o layout copiado para `customPanelLayout`. Alterar as propriedades dos nós `qtip` e `jcr:description`. Por exemplo, altere para `Custom layout - Toggle tabs`.
+1. Copie um layout de painel do local `/libs/fd/af/layouts/panel` (por exemplo, `tabbedPanelLayout`) para `/apps` (por exemplo, `/apps/af-custom-layout`).
+1. Renomeie o layout copiado para `customPanelLayout`. Alterar as propriedades dos nós `qtip` e `jcr:description`. Por exemplo, altere para `Custom layout - Toggle tabs`.
 
 qtip
 
-![Instantâneo CRX DE de layout de painel personalizado](assets/custom_layout_new.png)
+![Instantâneo CRX DE de Layout de Painel Personalizado](assets/custom_layout_new.png)
 
 >[!NOTE]
 >
->Definição da propriedade `guideComponentType`ao valor `fd/af/layouts/panel` determina que o layout é um layout de painel.
+>Definir a propriedade `guideComponentType` com o valor `fd/af/layouts/panel` determina que o layout é um layout de painel.
 
-1. Renomear o arquivo `tabbedPanelLayout.jsp` no novo layout em customPanelLayout.jsp.
-1. Para introduzir novos estilos e comportamentos, crie uma biblioteca do cliente no `etc` nó. Por exemplo, no local /etc/af-custom-layout-clientlib, crie o nó client-library. Deixe o nó ter a propriedade de categorias af.panel.custom. Ele tem os seguintes arquivos .css e .js:
+1. Renomeie o arquivo `tabbedPanelLayout.jsp` no novo layout como customPanelLayout.jsp.
+1. Para introduzir novos estilos e comportamentos, crie uma biblioteca do cliente no nó `etc`. Por exemplo, no local /etc/af-custom-layout-clientlib, crie o nó client-library. Deixe o nó ter a propriedade de categorias af.panel.custom. Ele tem os seguintes arquivos .css e .js:
 
    ```css
    /** CSS defining new styles used by custom layout **/
@@ -113,9 +113,9 @@ qtip
    });
    ```
 
-1. Para aprimorar a aparência e o comportamento, você pode incluir uma `client library`.
+1. Para aprimorar a aparência e o comportamento, você pode incluir um `client library`.
 
-   Além disso, atualize os caminhos dos scripts incluídos nos arquivos .jsp. Por exemplo, atualize o `customPanelLayout.jsp` do seguinte modo:
+   Além disso, atualize os caminhos dos scripts incluídos nos arquivos .jsp. Por exemplo, atualize o arquivo `customPanelLayout.jsp` da seguinte maneira:
 
    ```html
    <%-- jsp encapsulating navigator container and panel container divs --%>
@@ -144,7 +144,7 @@ qtip
    </div>
    ```
 
-   A variável `/apps/af-custom-layout/customPanelLayout/defaultNavigatorLayout.jsp` arquivo:
+   O arquivo `/apps/af-custom-layout/customPanelLayout/defaultNavigatorLayout.jsp`:
 
    ```html
    <%-- jsp governing the navigation part --%>
@@ -173,7 +173,7 @@ qtip
    </ul>
    ```
 
-   A atualização `/apps/af-custom-layout/customPanelLayout/panelContainer.jsp`:
+   O `/apps/af-custom-layout/customPanelLayout/panelContainer.jsp` atualizado:
 
    ```html
    <%-- jsp governing the panel content --%>
@@ -202,7 +202,7 @@ qtip
 
 1. Abra um formulário adaptável no Modo de criação. O layout de painel definido é adicionado à lista para configurar layouts de painel.
 
-   ![O layout personalizado do painel é exibido na lista de layouts do painel](assets/auth-layt.png) ![Captura de tela do formulário adaptável, usando o layout de painel personalizado](assets/s1.png) ![Captura de tela que demonstra a funcionalidade de alternância do layout personalizado](assets/s2.png)
+   ![O layout de Painel personalizado é exibido na lista de layouts do painel](assets/auth-layt.png) ![Captura de tela de formulário adaptável, usando o layout de painel personalizado](assets/s1.png) ![Captura de tela demonstrando a funcionalidade de alternância do layout personalizado](assets/s2.png)
 
 Exemplo de ZIP para um layout de painel personalizado e um formulário adaptável usando-o.
 

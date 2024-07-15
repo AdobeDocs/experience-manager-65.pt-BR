@@ -17,7 +17,7 @@ ht-degree: 1%
 
 # Texto para espaço reservado no AEM Forms {#placeholder-text-in-aem-forms}
 
-<span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) para [criação de um novo Forms adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
+O <span class="preview"> Adobe recomenda o uso de [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adicionar o Forms Adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
 
 O texto de espaço reservado representa uma palavra ou frase curta. Tem como objetivo auxiliar o usuário com a entrada de dados quando o controle não tem valor. Um texto de espaço reservado pode ser um exemplo de valor ou uma breve descrição do formato esperado. O texto do espaço reservado é mostrado antes que o usuário insira um valor e é removido quando o usuário insere ou seleciona um valor.
 
@@ -32,10 +32,10 @@ O texto de espaço reservado representa uma palavra ou frase curta. Tem como obj
 O AEM Forms oferece suporte a texto de espaço reservado para campos de caixa de senha, seletor de data, caixa numérica e caixa de texto.\
 Os textos de marcadores de posição não são suportados para o widget de data nativo do HTML5. Para especificar um texto de Espaço Reservado:
 
-1. Clique com o botão direito do mouse em um componente que suporte Texto para espaço reservado e clique **Editar**. A caixa de diálogo Editar componente é exibida.
+1. Clique com o botão direito do mouse em um componente que ofereça suporte ao Texto do Espaço Reservado e clique em **Editar**. A caixa de diálogo Editar componente é exibida.
 
-1. Abra o **Título e texto** guia.
-1. Especifique uma palavra ou uma frase curta na variável **Caixa de texto Espaço reservado**. Clique em **OK**.
+1. Abra a guia **Título e texto**.
+1. Especifique uma palavra ou uma frase curta na **caixa de texto Espaço Reservado**. Clique em **OK**.
 
 >[!NOTE]
 >

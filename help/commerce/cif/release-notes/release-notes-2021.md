@@ -74,11 +74,11 @@ Revise os requisitos mínimos do sistema na tabela abaixo para a versão do CIF 
 
 * A nova guia &quot;conteúdo de comércio associado&quot; no editor de sites aumenta a eficiência do autor, obtendo rapidamente acesso ao conteúdo de produto AEM relevante para o contexto atual
 
-  ![Conteúdo de comércio associado](/help/assets/CIF/associated-commerce-content.png)
+  ![Conteúdo comercial associado](/help/assets/CIF/associated-commerce-content.png)
 
 * Interface aprimorada do seletor de produtos para obter melhor experiência do usuário, maior eficiência e suporte para catálogos de produtos complexos
 
-  ![Novo seletor de produtos](/help/assets/CIF/product-picker.png)
+  ![Novo Seletor de Produtos](/help/assets/CIF/product-picker.png)
 
 * Respeitar a propriedade &quot;include_in_menu&quot; no componente de navegação
 
@@ -131,7 +131,7 @@ Revise os requisitos mínimos do sistema na tabela abaixo para a versão do CIF 
    * Indicador visual para dados de produtos preparados no modo de criação para melhor visibilidade de alterações futuras
    * Novo componente de mapa de site para páginas de conteúdo e comércio
 
-* Suporte para [Recomendação de produto do Adobe Commerce Sensei, viabilizada pela Adobe Sensei](https://business.adobe.com/products/magento/product-recommendations.html) na Loja AEM usando recomendações predefinidas ou criadas dinamicamente
+* Suporte para a [Recomendação de produto do Adobe Commerce Sensei, habilitada pelo Adobe Sensei](https://business.adobe.com/products/magento/product-recommendations.html) na loja AEM usando recomendações predefinidas ou criadas dinamicamente
 
 ## Data de lançamento: junho de 2021
 
@@ -220,7 +220,7 @@ Revise os requisitos mínimos do sistema na tabela abaixo para a versão do CIF 
 
 * Gerenciamento de experiência do produto: enriqueça as páginas do catálogo de produtos individualmente com Fragmentos de experiência.
 
-* Propriedades do console do produto estendido para mostrar Ativos vinculados e Fragmentos de experiência, incluindo ações para navegar rapidamente até o conteúdo associado.
+* Propriedades do console do produto estendido para mostrar Assets vinculados e Fragmentos de experiência, incluindo ações para navegar rapidamente até o conteúdo associado.
 
 ### O que foi melhorado  {#what-is-improved-february}
 
@@ -238,7 +238,7 @@ Revise os requisitos mínimos do sistema na tabela abaixo para a versão do CIF 
 
 ### Novidades {#what-is-new-january}
 
-* Gerenciamento da experiência do produto: nova guia de propriedade &quot;Commerce&quot; para Ativos e Fragmentos de experiência. Essa guia permite vincular Ativos e Fragmentos de experiência a produtos e categorias. A guia também mostra dados em tempo real para objetos de comércio vinculados e um link para mostrar detalhes no console do produto.
+* Gerenciamento da experiência do produto: nova guia de propriedade &quot;Commerce&quot; para Assets e Fragmentos de experiência. Essa guia permite vincular Assets e Fragmentos de experiência a produtos e categorias. A guia também mostra dados em tempo real para objetos de comércio vinculados e um link para mostrar detalhes no console do produto.
 
 ### O que foi melhorado  {#what-is-improved-january}
 

@@ -19,7 +19,7 @@ ht-degree: 59%
 Se você estiver enfrentando o que acredita ser um comportamento incorreto ou um erro no MSM, antes de começar e solucionar problemas detalhados, certifique-se de:
 
 * Verificar as [Perguntas frequentes sobre o MSM](#faq), dado que os seus problemas ou dúvidas podem já ter sido abordados lá.
-* Verifique a [Artigo de práticas recomendadas do MSM](msm-best-practices.md) como várias dicas são oferecidas lá, juntamente com esclarecimentos sobre alguns equívocos.
+* Verifique o [artigo de práticas recomendadas do MSM](msm-best-practices.md), pois várias dicas são oferecidas lá, juntamente com esclarecimentos sobre alguns equívocos.
 
 ## Encontrar informações avançadas sobre seu blueprint e status da Live Copy {#advanced-info}
 
@@ -44,7 +44,7 @@ Os servlets anteriores retornavam informações computadas com base nos nós e m
 
 * Tipo de mixin `cq:LiveSync`
    * Isso é configurado em nós `jcr:content` e define páginas raiz da Live Copy.
-   * Essas páginas têm um `cq:LiveSyncConfig` nó filho do tipo `cq:LiveCopy` que contêm informações básicas e obrigatórias sobre a Live Copy por meio das seguintes propriedades:
+   * Essas páginas têm um nó filho `cq:LiveSyncConfig` do tipo `cq:LiveCopy`, que contém informações básicas e obrigatórias sobre a Live Copy por meio das seguintes propriedades:
       * `cq:master` aponta para a página de blueprint da Live Copy.
       * `cq:rolloutConfigs` indica as configurações de implementação ativas aplicadas à Live Copy.
       * `cq:isDeep` é verdadeiro se as páginas secundárias desta página raiz da Live Copy estiverem incluídas na Live Copy.
@@ -84,12 +84,12 @@ Como alternativa, você pode:
 
 Se uma página de blueprint for implantada, ela atualizará sua página da Live Copy ou criará uma nova página da Live Copy se ainda não existir. Por exemplo, quando ele é implantado pela primeira vez ou a página da Live Copy é excluída manualmente.
 
-Neste último caso, no entanto, se uma página sem `cq:LiveRelationship` existe com o mesmo nome, essa página é renomeada antes da página da Live Copy ser criada.
+Nesse último caso, no entanto, se uma página sem uma propriedade `cq:LiveRelationship` existir com o mesmo nome, ela será renomeada antes que a página da Live Copy seja criada.
 
 Por padrão, a implantação espera uma página vinculada da Live Copy, para a qual as atualizações dos blueprints são implantadas. Ou não espera nenhuma página quando uma página de Live Copy é criada.
 
 Se uma página “independente” for encontrada, o MSM optará por renomear esta página e criar uma página separada e vinculada da Live Copy.
 
-Essa página independente, em uma subárvore da Live Copy, geralmente é o resultado de uma **Desanexar** ou a antiga página da Live Copy foi excluída manualmente por um autor e depois recriada com o mesmo nome.
+Essa página independente, em uma subárvore da Live Copy, geralmente é o resultado de uma operação **Desconectar**, ou a antiga página da Live Copy foi excluída manualmente por um autor e depois recriada com o mesmo nome.
 
-Para evitar isso, use a Live Copy **Suspender** recurso em vez de **Desanexar**. Mais detalhes sobre o **Desanexar** a ação pode ser encontrada em [neste artigo.](msm-livecopy.md)
+Para evitar isso, use o recurso **Suspender** da Live Copy, em vez de **Desanexar**. Mais detalhes sobre a ação **Desconectar** podem ser encontrados em [este artigo.](msm-livecopy.md)

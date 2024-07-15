@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Configurando o conector para o EMC Documentum {#configuring-connector-for-emc-documentum}
 
-O Connector for EMC Documentum permite a comunicação entre formulários AEM e o EMC Documentum. Para obter informações adicionais, consulte &quot;Conectores para ECM&quot; em [Referência de serviços](https://www.adobe.com/go/learn_aemforms_services_63).
+O Connector for EMC Documentum permite a comunicação entre formulários AEM e o EMC Documentum. Para obter informações adicionais em segundo plano, consulte &quot;Conectores para ECM&quot; na [Referência de Serviços](https://www.adobe.com/go/learn_aemforms_services_63).
 
 A configuração do Connector for EMC Documentum envolve a configuração da conexão do servidor e das credenciais do repositório.
 
@@ -60,11 +60,11 @@ Se você digitar um nome de usuário ou senha incorretos, os resultados a seguir
 
 Você pode configurar qual provedor de serviços de repositório usar com a Documentum. As chamadas de serviço do repositório são delegadas ao provedor configurado. As opções disponíveis são as seguintes:
 
-**Nome do Provedor de Serviços do Repositório Atual:** O nome do provedor de serviços de repositório atual
+**Nome do Provedor de Serviço do Repositório Atual:** O nome do provedor de serviço do repositório atual
 
-**Provedor de repositório ECM Documentum:** Torna o provedor do repositório Documentum o provedor do repositório. Esta opção foi descontinuada
+**Provedor do repositório da Documentum ECM:** Transforma o provedor do repositório da Documentum no provedor do repositório. Esta opção foi descontinuada
 
-**provedor do repositório:** Torna o provedor do repositório nativo o provedor do repositório
+**provedor do repositório:** Transforma o provedor do repositório nativo no provedor do repositório
 
 >[!NOTE]
 >
@@ -102,7 +102,7 @@ Se o Content Repository Connector for EMC Documentum Service e/ou o Repository S
 
 Se o Content Repository Connector for EMC Documentum Service e/ou o Repository Service for EMC Documentum estiverem em execução, as informações de credencial serão verificadas em relação ao repositório especificado antes de serem armazenadas no banco de dados. Se as credenciais forem inválidas ou existirem, uma mensagem de erro será exibida.
 
-## Habilitar a solicitação para compartilhamento de filas de tarefas do Espaço de trabalho {#enable-the-request-for-sharing-of-workspace-task-queues}
+## Habilitar a solicitação para compartilhamento de filas de tarefas do Workspace {#enable-the-request-for-sharing-of-workspace-task-queues}
 
 Algumas etapas manuais são necessárias para garantir que o recurso Request for Sharing of Task Queue (Solicitação de compartilhamento de fila de tarefas) no Workspace funcione corretamente com o Connector for EMC Documentum.
 

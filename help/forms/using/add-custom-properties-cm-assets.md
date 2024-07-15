@@ -44,10 +44,10 @@ Esse cenário mostra como adicionar uma propriedade personalizada a todos os tip
 
 Conclua as etapas a seguir para adicionar uma propriedade personalizada a todos os tipos de ativos e cartas:
 
-1. Ir para `https://'[server]:[port]'/[ContextPath]/crx/de` e faça logon como Administrador.
+1. Vá para `https://'[server]:[port]'/[ContextPath]/crx/de` e faça logon como Administrador.
 1. Na pasta apps, crie uma pasta chamada css com caminho/estrutura semelhante à pasta css (na pasta ccrui) usando as seguintes etapas:
 
-   1. Clique com o botão direito do mouse na pasta items no seguinte caminho e selecione **Sobrepor nó**:
+   1. Clique com o botão direito do mouse na pasta de itens no seguinte caminho e selecione **Sobrepor Nó**:
 
       `/libs/fd/cm/ma/gui/content/cmmetadataproperties/commonproperties/col1/items`
 
@@ -57,9 +57,9 @@ Conclua as etapas a seguir para adicionar uma propriedade personalizada a todos 
 
       **Caminho:** /libs/fd/cm/ma/gui/content/cmmetadataproperties/commonproperties/col1/items
 
-      **Localização:** /apps/
+      **Local:** /apps/
 
-      **Corresponder Tipos de Nó:** Selecionado
+      **Corresponder Tipos De Nó:** Selecionados
 
       ![Sobrepor nó](assets/cmmetapropertiesoverlaynode.png)
 
@@ -69,11 +69,11 @@ Conclua as etapas a seguir para adicionar uma propriedade personalizada a todos 
 
 1. Na pasta de itens recém-criados, adicione um nó para a propriedade personalizada em todo o ativo (Exemplo: Geolocalização) usando as seguintes etapas:
 
-   1. Clique com o botão direito do mouse na pasta de itens e selecione **Criar** > **Criar nó**.
+   1. Clique com o botão direito na pasta de itens e selecione **Criar** > **Criar Nó**.
 
       ![Criar nó no CRX](assets/itemscreatenode.png)
 
-   1. Certifique-se de que o diálogo Criar nó tenha os seguintes valores e clique em **OK**:
+   1. Certifique-se de que a caixa de diálogo Criar Nó tenha os seguintes valores e clique em **OK**:
 
       **Nome:** Geolocalização (ou o nome que você deseja dar a esta propriedade)
 
@@ -87,19 +87,19 @@ Conclua as etapas a seguir para adicionar uma propriedade personalizada a todos 
       | **Nome** | **Tipo** | **Valor** |
       |---|---|---|
       | fieldLabel | String | O nome que você deseja dar ao campo/propriedade. (Aqui: Local dos destinatários) |
-      | name | String | `./extendedproperties/GeoLocation` (Mantenha o valor igual ao nome do campo que você criou no nó items) |
+      | name | String | `./extendedproperties/GeoLocation` (Mantenha o valor igual ao nome do campo criado no nó de itens) |
       | renderReadOnly | Booleano | verdadeiro |
       | sling:resourceType | String | `granite/ui/components/coral/foundation/form/textfield` |
 
    1. Clique em **Salvar tudo**.
 
-1. Para visualizar sua personalização, passe o mouse sobre um ativo (texto, lista, condição ou fragmento de layout) ou uma carta, clique em **Propriedades da exibição** e clique em **Editar**. O novo campo (Local dos destinatários) aparece na guia Básico nas propriedades do ativo/carta.
+1. Para exibir sua personalização, passe o mouse sobre um ativo (texto, lista, condição ou fragmento de layout) ou uma carta, clique em **Exibir Propriedades** e em **Editar**. O novo campo (Local dos destinatários) aparece na guia Básico nas propriedades do ativo/carta.
 
    >[!NOTE]
    >
    >Talvez seja necessário limpar o cache do navegador antes que a personalização apareça na interface do usuário.
 
-   ![Adição da propriedade personalizada a todos os ativos](assets/lcoationofrecipientsui-1.png)
+   ![Propriedade personalizada adicionada a todos os ativos](assets/lcoationofrecipientsui-1.png)
 
    >[!NOTE]
    >
@@ -109,11 +109,12 @@ Conclua as etapas a seguir para adicionar uma propriedade personalizada a todos 
 
 Esse cenário mostra como adicionar uma propriedade personalizada a todos os tipos de ativos e adicionar valores suspensos a ela.
 
-1. Clique com o botão direito do mouse na pasta items no seguinte caminho e selecione **Sobrepor nó**:
+1. Clique com o botão direito do mouse na pasta de itens no seguinte caminho e selecione **Sobrepor Nó**:
 
    `/libs/fd/cm/ma/gui/content/cmmetadataproperties/commonproperties/col1/items`
 
-1. No nó de sobreposição recém-criado (/apps/fd/cm/ma/gui/content/cmmetadataproperties/commonproperties/col1/items) Crie um nó para cada uma das propriedades (campos) para as quais você precisa criar uma lista suspensa (aqui `geographicallocation`) do tipo nt:unstructured.
+1. No nó de sobreposição recém-criado (/apps/fd/cm/ma/gui/content/cmmetadataproperties/commonproperties/col1/items)
+Crie um nó para cada uma das propriedades (campos) para as quais você precisa criar uma lista suspensa (aqui `geographicallocation`) do tipo nt:unstructured.
 1. Adicione as seguintes propriedades ao nó (aqui geograficamente alocação) e clique em **Salvar tudo**:
 
    <table>
@@ -146,10 +147,10 @@ Esse cenário mostra como adicionar uma propriedade personalizada a todos os tip
    </tbody>
    </table>
 
-1. No nó de propriedade (aqui, geograficamente alocação), adicione um novo nó com o nome `items`. No nó items, adicione um nó para cada um dos valores no menu suspenso. Como prática recomendada, adicione o primeiro nó como em branco para servir como o valor padrão do menu suspenso e uma opção para o usuário não especificar nenhum valor para o campo. Para adicionar várias opções/valores suspensos, repita as seguintes etapas:
+1. No nó de propriedade (aqui geographicallocation), adicione um novo nó com o nome `items`. No nó items, adicione um nó para cada um dos valores no menu suspenso. Como prática recomendada, adicione o primeiro nó como em branco para servir como o valor padrão do menu suspenso e uma opção para o usuário não especificar nenhum valor para o campo. Para adicionar várias opções/valores suspensos, repita as seguintes etapas:
 
-   1. Clique com o botão direito do mouse no nó da propriedade (aqui geograficamente alocação) e selecione **Criar** > **Criar nó**.
-   1. Inserir nome do campo como `item1,` retenha o tipo como nt:unstructured e clique em **OK**.
+   1. Clique com o botão direito do mouse no nó da propriedade (aqui geograficamente alocação) e selecione **Criar** > **Criar Nó**.
+   1. Insira o nome do campo, pois `item1,` retém o tipo como nt:unstructured, e clique em **OK**.
    1. Adicione as seguintes propriedades ao nó recém-criado (aqui item1) e clique em **Salvar tudo**:
 
       <table>
@@ -176,20 +177,20 @@ Esse cenário mostra como adicionar uma propriedade personalizada a todos os tip
 
 O menu suspenso personalizado é exibido da seguinte maneira nas propriedades do ativo:
 
-![drop-down_customization](assets/drop-down_customization.png)
+![personalização_suspensa](assets/drop-down_customization.png)
 
 ### Cenário: guia comum para todos os tipos de ativos {#scenario-common-tab-for-all-asset-types}
 
 Esse cenário mostra como adicionar uma guia personalizada, Recipients, a todos os tipos de ativos (texto, lista, condição e fragmentos de layout) e cartas. A guia Recipients é onde você pode planejar colocar todas as suas propriedades personalizadas relevantes para os recipients.
 
-![Guia Personalizada adicionada para todos os tipos de ativos](assets/recipientstab.png)
+![Guia personalizada adicionada para todos os tipos de ativos](assets/recipientstab.png)
 
 Usando o procedimento a seguir, é possível adicionar uma guia com um campo a todos os ativos:
 
-1. Ir para `https://'[server]:[port]'/[ContextPath]/crx/de` e faça logon como Administrador.
+1. Vá para `https://'[server]:[port]'/[ContextPath]/crx/de` e faça logon como Administrador.
 1. Na pasta de aplicativos, crie uma pasta chamada cmmetadataproperties com caminho/estrutura semelhante à pasta cmmetadataproperties (na pasta de conteúdo) usando as seguintes etapas:
 
-   1. Clique com o botão direito do mouse na pasta cmmetadataproperties no seguinte caminho e selecione **Sobrepor nó**:
+   1. Clique com o botão direito do mouse na pasta cmmetadataproperties no seguinte caminho e selecione **Sobrepor Nó**:
 
       `/libs/fd/cm/ma/gui/content/cmmetadataproperties`
 
@@ -199,9 +200,9 @@ Usando o procedimento a seguir, é possível adicionar uma guia com um campo a t
 
       **Caminho:** /libs/fd/cm/ma/gui/content/cmmetadataproperties
 
-      **Localização:** /apps/
+      **Local:** /apps/
 
-      **Corresponder Tipos de Nó:** Selecionado
+      **Corresponder Tipos De Nó:** Selecionados
 
    1. Clique em **OK**. A estrutura de pastas é criada na pasta de aplicativos.
 
@@ -211,13 +212,13 @@ Usando o procedimento a seguir, é possível adicionar uma guia com um campo a t
 
 1. Na pasta cmmetadataproperties, adicione um nó para criar uma guia personalizada para todos os ativos (Exemplo: commontab) usando as seguintes etapas:
 
-   1. Clique com o botão direito na pasta cmmetadataproperties e selecione **Criar** > **Criar nó**.
+   1. Clique com o botão direito na pasta cmmetadataproperties e selecione **Criar** > **Criar Nó**.
 
       ![Criar nó](assets/cmmetadatapropertiescreatenode.png)
 
-   1. Certifique-se de que o diálogo Criar nó tenha os seguintes valores e clique em **OK**:
+   1. Certifique-se de que a caixa de diálogo Criar Nó tenha os seguintes valores e clique em **OK**:
 
-      **Nome:** commontab (ou o nome que você deseja dar a essa propriedade)
+      **Guia comum de Nome:** (ou o nome que você deseja dar a esta propriedade)
 
       **Tipo:** nt:não estruturado
 
@@ -248,8 +249,8 @@ Usando o procedimento a seguir, é possível adicionar uma guia com um campo a t
 
 1. Para o nó de guia criado na última etapa (aqui, commontab), crie um nó chamado item usando a seguinte etapa:
 
-   1. Clique com o botão direito do mouse no nó relevante (aqui commontab) e selecione **Criar** > **Criar nó**.
-   1. Certifique-se de que o diálogo Criar nó tenha os seguintes valores e clique em **OK**:
+   1. Clique com o botão direito do mouse no nó relevante (aqui commontab) e selecione **Criar** > **Criar Nó**.
+   1. Certifique-se de que a caixa de diálogo Criar Nó tenha os seguintes valores e clique em **OK**:
 
       **Nome:** itens
 
@@ -259,14 +260,14 @@ Usando o procedimento a seguir, é possível adicionar uma guia com um campo a t
 
 1. No nó itens criado na etapa anterior (em commontab), adicione um nó para criar uma coluna (aqui Column1) na guia personalizada (commontab) usando as seguintes etapas (para adicionar mais colunas, repita esta etapa):
 
-   1. Clique com o botão direito do mouse no nó items e selecione **Criar** > **Criar nó**.
-   1. Certifique-se de que o diálogo Criar nó tenha os seguintes valores e clique em **OK**:
+   1. Clique com o botão direito do mouse no nó de itens e selecione **Criar** > **Criar Nó**.
+   1. Certifique-se de que a caixa de diálogo Criar Nó tenha os seguintes valores e clique em **OK**:
 
-      **Nome:** Coluna1 (Ou o nome que você deseja dar ao nó - esse nome não aparece na interface do usuário).
+      **Nome:** Coluna1 (Ou o nome que você deseja dar ao nó; esse nome não aparece na Interface do Usuário.)
 
       **Tipo:** nt:não estruturado
 
-   1. Adicione a seguinte propriedade ao nó (aqui Column1) e clique em **Salvar tudo**:
+   1. Adicione a seguinte propriedade ao nó (Aqui Coluna1) e clique em **Salvar tudo**:
 
       <table>
          <tbody>
@@ -285,8 +286,8 @@ Usando o procedimento a seguir, é possível adicionar uma guia com um campo a t
 
 1. No nó criado na etapa anterior (aqui Column1), adicione um nó chamado itens usando as seguintes etapas:
 
-   1. Clique com o botão direito do mouse no nó (aqui Column1) e selecione **Criar** > **Criar nó**.
-   1. Certifique-se de que o diálogo Criar nó tenha os seguintes valores e clique em **OK**:
+   1. Clique com o botão direito do mouse no nó (aqui Column1) e selecione **Criar** > **Criar Nó**.
+   1. Certifique-se de que a caixa de diálogo Criar Nó tenha os seguintes valores e clique em **OK**:
 
       **Nome:** itens
 
@@ -296,10 +297,10 @@ Usando o procedimento a seguir, é possível adicionar uma guia com um campo a t
 
 1. Para criar um campo na guia personalizada (aqui Recipients), adicione um nó (aqui GeographicLocation). Essa propriedade corresponde à coluna criada. Use as etapas a seguir para criar o campo (para criar mais campos/nós, repita essas etapas.):
 
-   1. Clique com o botão direito do mouse no nó items e selecione **Criar** > **Criar nó**.
-   1. Certifique-se de que o diálogo Criar nó tenha os seguintes valores e clique em **OK**:
+   1. Clique com o botão direito do mouse no nó de itens e selecione **Criar** > **Criar Nó**.
+   1. Certifique-se de que a caixa de diálogo Criar Nó tenha os seguintes valores e clique em **OK**:
 
-      **Nome:** Localização geográfica (ou outro nome para a propriedade do campo)
+      **Nome:** GeographicalLocation (ou outro nome para a propriedade do campo)
 
       **Tipo:** nt:não estruturado
 
@@ -316,11 +317,11 @@ Usando o procedimento a seguir, é possível adicionar uma guia com um campo a t
 
    `/libs/fd/cm/ma/gui/content/cmmetadataproperties/properties/letter/items/tabs/items`
 
-   Para criar sobreposição para cartas ou um ativo diferente, use o seguinte caminho substituindo [assettype] com texto, condição, lista, dicionário de dados ou fragmento:
+   Para criar uma sobreposição para uma correspondência ou um ativo diferente, use o seguinte caminho substituindo [assettype] por texto, condição, lista, datadictionary ou fragmento:
 
    `/libs/fd/cm/ma/gui/content/cmmetadataproperties/properties/[assettype]/items/tabs/items`
 
-   1. Clique com o botão direito do mouse na pasta items no seguinte caminho e selecione **Sobrepor nó**:
+   1. Clique com o botão direito do mouse na pasta de itens no seguinte caminho e selecione **Sobrepor Nó**:
 
       `/libs/fd/cm/ma/gui/content/cmmetadataproperties/properties/letter/items/tabs/items`
 
@@ -328,16 +329,16 @@ Usando o procedimento a seguir, é possível adicionar uma guia com um campo a t
 
       **Caminho:** `/libs/fd/cm/ma/gui/content/cmmetadataproperties/properties/letter/items/tabs/items`
 
-      **Localização:** /apps/
+      **Local:** /apps/
 
-      **Corresponder Tipos de Nó:** Selecionado
+      **Corresponder Tipos De Nó:** Selecionados
 
    1. Clique em **OK**. A pasta é criada. Clique em **Salvar tudo**.
 
 1. Na pasta de itens recém-criados, adicione um nó para a guia personalizada no ativo (aqui, mytab - esse nome não é exibido na interface do usuário) usando as seguintes etapas:
 
-   1. Clique com o botão direito do mouse na pasta de itens e selecione **Criar** > **Criar nó**.
-   1. Certifique-se de que o diálogo Criar nó tenha os seguintes valores e clique em **OK**:
+   1. Clique com o botão direito na pasta de itens e selecione **Criar** > **Criar Nó**.
+   1. Certifique-se de que a caixa de diálogo Criar Nó tenha os seguintes valores e clique em **OK**:
 
       **Nome:** mytab (ou o nome que você deseja dar a esta propriedade)
 
@@ -368,7 +369,7 @@ Usando o procedimento a seguir, é possível adicionar uma guia com um campo a t
 
    1. Clique em **Salvar tudo**.
 
-1. Para exibir sua personalização, passe o mouse sobre o ativo relevante (aqui, uma carta), clique em Propriedades da exibição e clique em **Editar**. A nova guia (Recipients) e o campo (Local dos Recipients) aparecem na interface do usuário.
+1. Para exibir sua personalização, passe o mouse sobre o ativo relevante (aqui, uma carta), clique em Propriedades da Exibição e em **Editar**. A nova guia (Recipients) e o campo (Local dos Recipients) aparecem na interface do usuário.
 
    >[!NOTE]
    >
@@ -391,7 +392,7 @@ Por exemplo, somente aos ativos de texto, é necessário adicionar uma proprieda
 
 Para adicionar uma propriedade a um tipo de ativo, conclua as seguintes etapas:
 
-1. Ir para `https://'[server]:[port]'/[ContextPath]/crx/de` e faça logon como Administrador.
+1. Vá para `https://'[server]:[port]'/[ContextPath]/crx/de` e faça logon como Administrador.
 1. Para criar uma guia em um tipo de ativo (como Texto), crie a seguinte estrutura de pastas na pasta de aplicativos:
 
    `/libs/fd/cm/ma/gui/content/cmmetadataproperties/properties/[AssetType]/items/tabs/items`
@@ -400,7 +401,7 @@ Para adicionar uma propriedade a um tipo de ativo, conclua as seguintes etapas:
 
    Veja a seguir as etapas para criar essa estrutura de pastas:
 
-   1. Clique com o botão direito do mouse na pasta items no seguinte caminho e selecione **Sobrepor nó**:
+   1. Clique com o botão direito do mouse na pasta de itens no seguinte caminho e selecione **Sobrepor Nó**:
 
       `/libs/fd/cm/ma/gui/content/cmmetadataproperties/properties/[AssetType]/items/tabs/items`
 
@@ -414,9 +415,9 @@ Para adicionar uma propriedade a um tipo de ativo, conclua as seguintes etapas:
 
       **Caminho:** /libs/fd/cm/ma/gui/content/cmmetadataproperties/properties/[AssetType]/items/tabs/items
 
-      **Localização:** /apps/
+      **Local:** /apps/
 
-      **Corresponder Tipos de Nó:** Selecionado
+      **Corresponder Tipos De Nó:** Selecionados
 
    1. Clique em **OK**. A estrutura de pastas é criada na pasta de aplicativos.
 
@@ -424,8 +425,8 @@ Para adicionar uma propriedade a um tipo de ativo, conclua as seguintes etapas:
 
 1. Na pasta de itens recém-criados, adicione um nó para a guia personalizada no ativo (Exemplo: guia personalizada) usando as seguintes etapas:
 
-   1. Clique com o botão direito do mouse na pasta de itens e selecione **Criar** > **Criar nó**.
-   1. Certifique-se de que o diálogo Criar nó tenha os seguintes valores e clique em **OK**:
+   1. Clique com o botão direito na pasta de itens e selecione **Criar** > **Criar Nó**.
+   1. Certifique-se de que a caixa de diálogo Criar Nó tenha os seguintes valores e clique em **OK**:
 
       **Nome:** customtab (ou o nome que você deseja dar a esta propriedade)
 
@@ -443,8 +444,8 @@ Para adicionar uma propriedade a um tipo de ativo, conclua as seguintes etapas:
 
 1. No nó criado na etapa anterior (aqui customtab), adicione um nó chamado itens usando as seguintes etapas:
 
-   1. Clique com o botão direito do mouse no nó (aqui customtab) e selecione **Criar** > **Criar nó**.
-   1. Certifique-se de que o diálogo Criar nó tenha os seguintes valores e clique em **OK**:
+   1. Clique com o botão direito do mouse no nó (aqui customtab) e selecione **Criar** > **Criar Nó**.
+   1. Certifique-se de que a caixa de diálogo Criar Nó tenha os seguintes valores e clique em **OK**:
 
       **Nome:** itens
 
@@ -454,14 +455,14 @@ Para adicionar uma propriedade a um tipo de ativo, conclua as seguintes etapas:
 
 1. No nó itens criado na etapa anterior (em customtab), adicione um nó para criar uma coluna (aqui Column1) na guia personalizada usando as seguintes etapas (para adicionar mais colunas, repita esta etapa):
 
-   1. Clique com o botão direito do mouse no nó items e selecione **Criar** > **Criar nó**.
-   1. Certifique-se de que o diálogo Criar nó tenha os seguintes valores e clique em **OK**:
+   1. Clique com o botão direito do mouse no nó de itens e selecione **Criar** > **Criar Nó**.
+   1. Certifique-se de que a caixa de diálogo Criar Nó tenha os seguintes valores e clique em **OK**:
 
-      **Nome:** Column1 (ou o nome que você deseja dar ao nó)
+      **Nome:** Coluna1 (ou o nome que você deseja dar ao nó)
 
       **Tipo:** nt:não estruturado
 
-   1. Adicione a seguinte propriedade ao nó (aqui Column1) e clique em **Salvar tudo**.
+   1. Adicione a seguinte propriedade ao nó (Aqui, Column1) e clique em **Salvar tudo**.
 
       <table>
          <tbody>
@@ -480,8 +481,8 @@ Para adicionar uma propriedade a um tipo de ativo, conclua as seguintes etapas:
 
 1. Para cada coluna criada (conforme especificado na etapa anterior - aqui Column1), crie um nó chamado item usando as seguintes etapas:
 
-   1. Clique com o botão direito do mouse no nó da coluna relevante (aqui Column1) e selecione **Criar** > **Criar nó**.
-   1. Certifique-se de que o diálogo Criar nó tenha os seguintes valores e clique em **OK**:
+   1. Clique com o botão direito do mouse no nó de coluna relevante (aqui Column1) e selecione **Criar** > **Criar Nó**.
+   1. Certifique-se de que a caixa de diálogo Criar Nó tenha os seguintes valores e clique em **OK**:
 
       **Nome:** itens
 
@@ -491,8 +492,8 @@ Para adicionar uma propriedade a um tipo de ativo, conclua as seguintes etapas:
 
 1. Para cada uma das colunas criadas, crie um nó sob o nó items para criar um campo na nova guia na Interface do usuário. Repita esta etapa para criar mais campos na coluna:
 
-   1. Clique com o botão direito do mouse no nó relevante (aqui itens em Column1) e selecione **Criar** > **Criar nó**.
-   1. Certifique-se de que o diálogo Criar nó tenha os seguintes valores e clique em **OK**:
+   1. Clique com o botão direito do mouse no nó relevante (aqui itens sob Column1) e selecione **Criar** > **Criar Nó**.
+   1. Certifique-se de que a caixa de diálogo Criar Nó tenha os seguintes valores e clique em **OK**:
 
       **Nome:** Um nome de sua escolha (aqui Geolocalização)
 
@@ -507,7 +508,7 @@ Para adicionar uma propriedade a um tipo de ativo, conclua as seguintes etapas:
       | renderReadOnly | Booleano | verdadeiro |
       | sling:resourceType | String | granite/ui/components/coral/foundation/form/textfield |
 
-1. Para exibir sua personalização, passe o mouse sobre o ativo relevante (aqui, um texto), clique em Propriedades da exibição e clique em **Editar**. A nova guia e o campo (Local dos destinatários) são exibidos na interface.
+1. Para exibir sua personalização, passe o mouse sobre o ativo relevante (aqui um texto), clique em Propriedades da Exibição e em **Editar**. A nova guia e o campo (Local dos destinatários) são exibidos na interface.
 
    >[!NOTE]
    >
@@ -519,17 +520,17 @@ Para adicionar uma propriedade a um tipo de ativo, conclua as seguintes etapas:
 
 Por padrão, as propriedades personalizadas adicionadas às novas guias ficam visíveis somente na página de propriedades e não na página de criação de ativos, pois a página de criação de ativos não tem o layout de guias. Para exibir as propriedades personalizadas na página de criação do ativo junto com outras propriedades, é necessário fazer o seguinte:
 
-1. Clique com o botão direito do mouse na pasta items no seguinte caminho e selecione **Sobrepor nó**:
+1. Clique com o botão direito do mouse na pasta de itens no seguinte caminho e selecione **Sobrepor Nó**:
 
    `/libs/fd/cm/ma/gui/content/createasset/createletter/jcr:content/body/items/form/items/letterWizard/items/properties/items/properties/items/letterproperties/items`
 
 1. Certifique-se de que a caixa de diálogo Sobrepor nó tenha os seguintes valores para letra. Para outros tipos de ativos, o caminho é fornecido na tabela a seguir:
 
-   **Caminho:** /libs/fd/cm/ma/gui/content/createasset/createletter/jcr:content/body/items/form/items/letterWizard/items/properties/items/items/letterproperties/items/items
+   **Caminho:** /libs/fd/cm/ma/gui/content/createasset/createletter/jcr:content/body/items/form/items/letterWizard/items/properties/items/items/letterproperties/items
 
-   **Localização:** /apps/
+   **Local:** /apps/
 
-   **Corresponder Tipos de Nó:** Selecionado
+   **Corresponder Tipos De Nó:** Selecionados
 
    Dependendo do tipo de ativo, o caminho precisa ser o seguinte:
 
@@ -543,7 +544,7 @@ Por padrão, as propriedades personalizadas adicionadas às novas guias ficam vi
 
 1. Clique em **OK**. A estrutura de pastas é criada na pasta de aplicativos.
 
-1. No nó itens de sobreposição que você criou, crie um nó do nome col4 (ou qualquer outro nome) e clique em **Salvar tudo**.
+1. No nó de itens de sobreposição que você criou, crie um nó do nome col4 (ou qualquer outro nome) e clique em **Salvar tudo**.
 
    Por exemplo, o nó de sobreposição criado para correspondências é o seguinte.
 
@@ -585,14 +586,14 @@ Depois de adicionar uma propriedade personalizada aos ativos do Gerenciamento de
 
 Conclua as seguintes etapas para exibir a propriedade personalizada na interface do usuário da lista de ativos do Gerenciamento de correspondência:
 
-1. Ir para `https://'[server]:[port]'/[ContextPath]/crx/de` e faça logon como Administrador.
+1. Vá para `https://'[server]:[port]'/[ContextPath]/crx/de` e faça logon como Administrador.
 1. Crie a seguinte estrutura de pastas na pasta de aplicativos:
 
    `/libs/fd/cm/ma/gui/content/cmassets/jcr:content/views/lists/columns`
 
    Veja a seguir as etapas para criar essa estrutura de pastas:
 
-   1. Clique com o botão direito do mouse na pasta de colunas no seguinte caminho e selecione **Sobrepor nó**:
+   1. Clique com o botão direito do mouse na pasta de colunas no seguinte caminho e selecione **Sobrepor Nó**:
 
       `/libs/fd/cm/ma/gui/content/cmassets/jcr:content/views/lists/columns`
 
@@ -600,9 +601,9 @@ Conclua as seguintes etapas para exibir a propriedade personalizada na interface
 
       **Caminho:** /libs/fd/cm/ma/gui/content/cmassets/jcr:content/views/lists/columns
 
-      **Localização:** /apps/
+      **Local:** /apps/
 
-      **Corresponder Tipos de Nó:** Selecionado
+      **Corresponder Tipos De Nó:** Selecionados
 
    1. Clique em **OK**. A estrutura de pastas é criada na pasta de aplicativos.
 
@@ -610,10 +611,10 @@ Conclua as seguintes etapas para exibir a propriedade personalizada na interface
 
 1. Para cada uma das propriedades criadas, crie um nó sob o nó de colunas para criar uma coluna na interface do usuário. Repita esta etapa para criar mais colunas na interface do usuário:
 
-   1. Clique com o botão direito do mouse no nó relevante (colunas) e selecione **Criar** > **Criar nó**.
-   1. Certifique-se de que o diálogo Criar nó tenha os seguintes valores e clique em **OK**:
+   1. Clique com o botão direito do mouse no nó relevante (colunas) e selecione **Criar** > **Criar Nó**.
+   1. Certifique-se de que a caixa de diálogo Criar Nó tenha os seguintes valores e clique em **OK**:
 
-      **Nome:** Um nome de sua escolha (aqui GeographicLocation)
+      **Nome:** Um nome de sua escolha (aqui GeographicalLocation)
 
       **Tipo:** nt:não estruturado
 
@@ -650,7 +651,7 @@ Conclua as seguintes etapas para exibir a propriedade personalizada na interface
 
    Veja a seguir as etapas para criar essa estrutura de pastas:
 
-   1. Clique com o botão direito do mouse na pasta de colunas no seguinte caminho e selecione **Sobrepor nó**:
+   1. Clique com o botão direito do mouse na pasta de colunas no seguinte caminho e selecione **Sobrepor Nó**:
 
       `/libs/fd/cm/ma/gui/components/admin/childpagerenderer/childlistpage`
 
@@ -658,9 +659,9 @@ Conclua as seguintes etapas para exibir a propriedade personalizada na interface
 
       **Caminho:** /libs/fd/cm/ma/gui/components/admin/childpagerenderer/childlistpage
 
-      **Localização:** /apps/
+      **Local:** /apps/
 
-      **Corresponder Tipos de Nó:** Selecionado
+      **Corresponder Tipos De Nó:** Selecionados
 
    1. Clique em **OK**. A estrutura de pastas é criada na pasta de aplicativos.
 
@@ -698,7 +699,7 @@ Conclua as seguintes etapas para exibir a propriedade personalizada na interface
       %>
       ```
 
-   1. Adicione o seguinte antes do início do &lt;tr> tag (&lt;tr attrs.build=&quot;&quot;>>):
+   1. Adicione o seguinte antes de iniciar a tag &lt;tr> (&lt;tr &lt;%= attrs.build() %>):
 
       ```jsp
       <%
@@ -714,7 +715,7 @@ Conclua as seguintes etapas para exibir a propriedade personalizada na interface
 
       No código, GeoLocation é o valor definido na propriedade name ao criar o nó/campo personalizado. Ao criar um nó/campo personalizado, você especificou o nome da propriedade com ./extendedproperties/ prefixo: ./extendedproperties/GeoLocation. No código, o prefixo não é necessário.
 
-   1. Para exibir a nova propriedade na interface do usuário, adicione uma tag TD como a seguir antes de fechar tr (&lt;/tr>) tag:
+   1. Para exibir a nova propriedade na interface do usuário, adicione uma tag TD como a seguir antes de fechar a tag tr (&lt;/tr>):
 
       ```jsp
       <td is="coral-td" value="<%= xssAPI.encodeForHTMLAttr(geographicalLocation) %>"><%= xssAPI.encodeForHTML(geographicalLocation) %></td>
@@ -749,7 +750,7 @@ Conclua as seguintes etapas para exibir a propriedade personalizada na interface
  </tbody>
 </table>
 
-Ao adicionar a propriedade sling:orderBefore para especificar o local da coluna, também é necessário atualizar a ordem dos segmentos correspondentes &lt;td> especificada na etapa 6.4 deste procedimento. Por exemplo, nesse caso, é necessário garantir que a variável &lt;td> da Localização Geográfica é colocada antes de &lt;td> tag da coluna Version:
+Ao adicionar a propriedade sling:orderBefore para especificar o local da coluna, também é necessário atualizar a ordem da tag &lt;td> correspondente especificada na etapa 6.4 deste procedimento. Por exemplo, nesse caso, você precisa garantir que a tag &lt;td> da Localização geográfica seja colocada antes da tag &lt;td> da coluna Version:
 
 ```xml
 <td is="coral-td" value="<%= xssAPI.encodeForHTMLAttr(geographicalLocation) %>"><%= xssAPI.encodeForHTML(geographicalLocation) %></td>
@@ -764,13 +765,13 @@ Para incluir as propriedades personalizadas na pesquisa, é necessário permitir
 
 Para permitir a indexação de propriedades personalizadas, conclua as seguintes etapas:
 
-1. Ir para `https://'[server]:[port]'/[ContextPath]/crx/de` e faça logon como Administrador.
-1. Ir para `/oak:index/cmLucene`e adicione um nó chamado **agregados** sob ele.
+1. Vá para `https://'[server]:[port]'/[ContextPath]/crx/de` e faça logon como Administrador.
+1. Vá para `/oak:index/cmLucene`e adicione um nó chamado **agregações** sob ele.
 
-   1. Clique com o botão direito na pasta cmLucene e selecione **Criar** > **Criar nó**.
-   1. Certifique-se de que o diálogo Criar nó tenha os seguintes valores e clique em **OK**:
+   1. Clique com o botão direito do mouse na pasta cmLucene e selecione **Criar** > **Criar nó**.
+   1. Certifique-se de que a caixa de diálogo Criar Nó tenha os seguintes valores e clique em **OK**:
 
-      **Nome:** agregados
+      **Nome:** agregações
 
       **Tipo:** nt:não estruturado
 
@@ -778,13 +779,13 @@ Para permitir a indexação de propriedades personalizadas, conclua as seguintes
 
 1. Na pasta de agregações recém-criada, adicione um nó cm:resource. E, em cm:resource, adicione um nó chamado include0.
 
-   1. Clique com o botão direito do mouse na pasta de agregações e selecione **Criar** > **Criar nó**. Certifique-se de que o diálogo Criar nó tenha os seguintes valores e clique em **OK**:
+   1. Clique com o botão direito do mouse na pasta de agregações e selecione **Criar** > **Criar Nó**. Certifique-se de que a caixa de diálogo Criar Nó tenha os seguintes valores e clique em **OK**:
 
       **Nome:** cm:recurso
 
       **Tipo:** nt:não estruturado
 
-   1. Clique com o botão direito na pasta cm:resource e selecione **Criar** > **Criar nó**. Certifique-se de que o diálogo Criar nó tenha os seguintes valores e clique em **OK**:
+   1. Clique com o botão direito do mouse na pasta cm:resource e selecione **Criar** > **Criar nó**. Certifique-se de que a caixa de diálogo Criar Nó tenha os seguintes valores e clique em **OK**:
 
       **Nome:** include0
 
@@ -810,12 +811,12 @@ Para permitir a indexação de propriedades personalizadas, conclua as seguintes
 
    1. Clique em **Salvar tudo**.
 
-1. Vá para propriedades no seguinte local e adicione um local de nó sob ele: `/oak:index/cmLucene/indexRules/cm:resource/properties`
+1. Ir para propriedades no seguinte local e adicionar um local de nó sob ele: `/oak:index/cmLucene/indexRules/cm:resource/properties`
 
    Repita essa etapa para cada uma das propriedades personalizadas que deseja adicionar à pesquisa.
 
-   1. Clique com o botão direito na pasta de propriedades e selecione **Criar** > **Criar nó**.
-   1. Certifique-se de que o diálogo Criar nó tenha os seguintes valores e clique em **OK**:
+   1. Clique com o botão direito do mouse na pasta de propriedades e selecione **Criar** > **Criar Nó**.
+   1. Certifique-se de que a caixa de diálogo Criar Nó tenha os seguintes valores e clique em **OK**:
 
       **Nome:** local (ou o nome da propriedade personalizada que você deseja adicionar à pesquisa)
 
@@ -843,10 +844,10 @@ Para permitir a indexação de propriedades personalizadas, conclua as seguintes
 
 ## Alterar exibição padrão da página de pesquisa {#change-default-view-of-the-search-page}
 
-1. Ir para `https://'[server]:[port]'/[ContextPath]/crx/de` e faça logon como Administrador.
+1. Vá para `https://'[server]:[port]'/[ContextPath]/crx/de` e faça logon como Administrador.
 1. Na pasta de aplicativos, crie uma pasta chamada lista com caminho/estrutura semelhante à pasta da lista em /libs/granite/ui/content/shell/omnisearch/searchresults/singleresults/views:
 
-   1. Clique com o botão direito do mouse na pasta items no seguinte caminho e selecione **Sobrepor nó**:
+   1. Clique com o botão direito do mouse na pasta de itens no seguinte caminho e selecione **Sobrepor Nó**:
 
       `/libs/granite/ui/content/shell/omnisearch/searchresults/singleresults/views/list`
 
@@ -854,15 +855,15 @@ Para permitir a indexação de propriedades personalizadas, conclua as seguintes
 
       **Caminho:** /libs/granite/ui/content/shell/omnisearch/searchresults/singleresults/views/list
 
-      **Localização:** /apps/
+      **Local:** /apps/
 
-      **Corresponder Tipos de Nó:** Selecionado
+      **Corresponder Tipos De Nó:** Selecionados
 
    1. Clique em **OK**. A estrutura de pastas é criada na pasta de aplicativos.
 
    1. Clique em **Salvar tudo**.
 
-1. No nó recém-criado, adicione a seguinte propriedade e clique em **Salvar tudo**:
+1. Na lista do nó recém-criado, adicione a seguinte propriedade e clique em **Salvar tudo**:
 
    <table>
    <tbody>
@@ -879,20 +880,20 @@ Para permitir a indexação de propriedades personalizadas, conclua as seguintes
    </tbody>
    </table>
 
-1. A personalização mostra os resultados da pesquisa na exibição de Lista para todos os consoles, incluindo Forms e Documentos, Ativos e Sites.
+1. A personalização mostra os resultados da pesquisa na exibição de Lista para todos os consoles, incluindo Forms e Documentos, Assets e Sites.
 
 ## Alterar exibição padrão da página de ativos {#change-default-view-of-the-assets-page}
 
 >[!NOTE]
 >
->Essas etapas alteram a exibição padrão de todos os consoles, como Forms e Documentos, Ativos e Sites.
+>Essas etapas alteram a exibição padrão de todos os consoles, como Forms e Documentos, Assets e Sites.
 
-1. Ir para `https://'[server]:[port]'/[ContextPath]/crx/de` e faça logon como Administrador.
+1. Vá para `https://'[server]:[port]'/[ContextPath]/crx/de` e faça logon como Administrador.
 1. Na pasta de aplicativos, crie uma pasta chamada lista com caminho/estrutura semelhante à pasta da lista em:
 
    /libs/fd/cm/ma/gui/content/cmassets/jcr:content/views/
 
-   1. Clique com o botão direito do mouse na pasta items no seguinte caminho e selecione **Sobrepor nó**:
+   1. Clique com o botão direito do mouse na pasta de itens no seguinte caminho e selecione **Sobrepor Nó**:
 
       `/libs/fd/cm/ma/gui/content/cmassets/jcr:content/views/list`
 
@@ -900,15 +901,15 @@ Para permitir a indexação de propriedades personalizadas, conclua as seguintes
 
       **Caminho:** /libs/fd/cm/ma/gui/content/cmassets/jcr:content/views/list
 
-      **Localização:** /apps/
+      **Local:** /apps/
 
-      **Corresponder Tipos de Nó:** Selecionado
+      **Corresponder Tipos De Nó:** Selecionados
 
    1. Clique em **OK**. A estrutura de pastas é criada na pasta de aplicativos.
 
    1. Clique em **Salvar tudo**.
 
-1. No nó recém-criado, adicione a seguinte propriedade e clique em **Salvar tudo**:
+1. Na lista do nó recém-criado, adicione a seguinte propriedade e clique em **Salvar tudo**:
 
    <table>
    <tbody>
@@ -949,7 +950,7 @@ Para mostrar ou ocultar as propriedades personalizadas, conclua as seguintes eta
    </tbody>
    </table>
 
-1. Para ocultar essa propriedade na página de criação do ativo, adicione a seguinte propriedade a ela e clique em **Salvar tudo**:
+1. Para ocultar esta propriedade na página de criação do ativo, adicione a seguinte propriedade a ela e clique em **Salvar tudo**:
 
    <table>
    <tbody>
@@ -961,12 +962,12 @@ Para mostrar ou ocultar as propriedades personalizadas, conclua as seguintes eta
    <tr>
       <td>hideOnCreate<br /> </td>
       <td>Booleano</td>
-      <td>true<br /> </td>
+      <td>verdadeiro<br /> </td>
    </tr>
    </tbody>
    </table>
 
-1. Para ocultar a propriedade personalizada na página de propriedades dos ativos, adicione a seguinte propriedade e clique em **Salvar tudo**:
+1. Para ocultar a propriedade personalizada na página de propriedades dos ativos, adicione a seguinte propriedade a ela e clique em **Salvar tudo**:
 
    <table>
    <tbody>
@@ -978,9 +979,9 @@ Para mostrar ou ocultar as propriedades personalizadas, conclua as seguintes eta
    <tr>
       <td>hideOnEdit<br /> </td>
       <td>Booleano</td>
-      <td>true<br /> </td>
+      <td>verdadeiro<br /> </td>
    </tr>
    </tbody>
    </table>
 
-   Para exibir os valores novamente, redefina os valores de propriedade para `false` ou excluir as entradas de propriedade.
+   Para exibir os valores novamente, redefina os valores de propriedade como `false` ou exclua as entradas de propriedade.

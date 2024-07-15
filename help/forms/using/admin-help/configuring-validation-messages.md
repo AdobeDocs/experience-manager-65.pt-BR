@@ -25,15 +25,15 @@ Para formulários renderizados como HTML, os erros de validação de formulário
 1. No console de administração, clique em Serviços > Formulários.
 1. Em Saída de Validação, na lista Relatório, selecione uma das seguintes opções:
 
-   **Caixa de mensagem:** Para exibir mensagens de validação em uma caixa de diálogo separada.
+   **Caixa de mensagem:** para exibir mensagens de validação em uma caixa de diálogo separada.
 
    **Quadro:** Para exibir mensagens de validação em um quadro da mesma janela.
 
-   **Sem quadro:** Para exibir mensagens de validação na mesma janela. Esse valor é o padrão.
+   **Sem Quadro:** Para exibir mensagens de validação na mesma janela. Esse valor é o padrão.
 
-   **Pela API (com dados):** Para retornar as mensagens de validação por meio da API (com dados). As mensagens de validação não são exibidas na tela.
+   **Via API (com dados):** Para retornar as mensagens de validação pela API (com dados). As mensagens de validação não são exibidas na tela.
 
-   **Pela API (com formulário):** Para retornar as mensagens de validação por meio da API (com o formulário ). As mensagens de validação não são exibidas na tela.
+   **Via API (com formulário):** Para retornar as mensagens de validação por meio da API (com o formulário). As mensagens de validação não são exibidas na tela.
 
    **Nenhum:** Para não exibir mensagens de validação.
 
@@ -47,11 +47,11 @@ Quando Relatórios estiver definido como Quadro ou Sem Quadro, você poderá esp
 
    **Esquerda:** Para exibir mensagens de validação no lado esquerdo do navegador da Web.
 
-   **Direita:** Para exibir mensagens de validação no lado direito do navegador da Web.
+   **Direito:** para exibir mensagens de validação no lado direito do navegador da Web.
 
-   **Topo**: Para exibir mensagens de validação na parte superior do navegador da Web. Esse valor é o padrão.
+   **Superior**: para exibir mensagens de validação na parte superior do navegador da Web. Esse valor é o padrão.
 
-   **Inferior**: Para exibir mensagens de validação na parte inferior do navegador da Web.
+   **Parte Inferior**: para exibir mensagens de validação na parte inferior do navegador da Web.
 
 1. Clique em Salvar.
 

@@ -245,7 +245,7 @@ It provides features such as syntax-highlighting, auto-complete, auto-suggest, t
 Antes de começar com as consultas de conteúdo, você precisa:
 
 * Habilitar o seu ponto de acesso
-   * Use Ferramentas > Ativos > GraphQL
+   * Use Ferramentas > Assets > GraphQL
    * [Habilitar seu ponto de acesso de GraphQL](/help/sites-developing/headless/graphql-api/graphql-endpoint.md#enabling-graphql-endpoint)
 
 * Acessar GraphiQL (se necessário)
@@ -272,7 +272,7 @@ Os modelos de fragmento são usados:
 
 ### Onde testar suas consultas {#where-to-test-your-queries}
 
-Os queries podem ser inseridos na variável [Interface GraphiQL](/help/sites-developing/headless/graphql-api/graphiql-ide.md), por exemplo, em:
+As consultas podem ser inseridas na [Interface GraphiQL](/help/sites-developing/headless/graphql-api/graphiql-ide.md), por exemplo, em:
 
 * `http://localhost:4502/aem/graphiql.html`
 

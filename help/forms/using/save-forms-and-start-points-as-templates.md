@@ -23,14 +23,14 @@ ht-degree: 0%
 Execute as seguintes etapas para criar um template:
 
 1. Abra um formulário e selecione ou preencha os campos que têm valores quase idênticos toda vez que você o usa. É possível incluir um anexo com o modelo que você normalmente adiciona ao preencher o formulário.
-1. Selecione o **Salvar como modelo** ![save_as_template](assets/save_as_template.png)ícone. Uma caixa de diálogo para especificar o nome do modelo é exibida.
+1. Selecione o ícone **Salvar como Modelo** ![save_as_template](assets/save_as_template.png). Uma caixa de diálogo para especificar o nome do modelo é exibida.
 1. Especifique o nome do modelo e selecione **Salvar**. O modelo aparece na pasta de modelo.
 
-   Se existir um modelo com o mesmo nome, será exibida uma caixa de diálogo para confirmar a substituição do modelo existente. Para substituir o modelo existente pelo novo modelo, selecione **Continuar** ou para salvar o modelo com um nome diferente, selecione **Cancelar**.
+   Se existir um modelo com o mesmo nome, será exibida uma caixa de diálogo para confirmar a substituição do modelo existente. Para substituir o modelo existente por um novo modelo, selecione **Continuar** ou para salvar o modelo com um nome diferente, selecione **Cancelar**.
 
 Agora, você pode abrir o modelo salvo. Toda vez que um modelo é aberto, um novo formulário ou tarefa é criada, e o formulário exibe os dados e opções salvos. Com modelos, é possível editar os dados pré-preenchidos, adicionar um anexo, salvar como rascunho, enviar a tarefa ou criar outro modelo usando-a. Os modelos são específicos para dispositivos móveis e não são sincronizados com o servidor do Adobe Experience Manager Forms.
 
-Você também pode excluir um modelo se ele não for mais necessário. Para excluir um modelo, navegue até a pasta de modelos, selecione as reticências e selecione **Excluir modelo**.
+Você também pode excluir um modelo se ele não for mais necessário. Para excluir um modelo, navegue até a pasta de modelos, selecione as reticências e **Excluir modelo**.
 
 >[!NOTE]
 >

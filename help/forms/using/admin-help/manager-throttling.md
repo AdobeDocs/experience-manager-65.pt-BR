@@ -52,23 +52,23 @@ Você pode configurar a limitação para o Work Manager, de modo que os itens de
  <tbody>
   <tr>
    <td><code> adobe.work-manager.queue-refill-interval</code></td>
-   <td><p>Especifica o intervalo de tempo, em milissegundos, que o Work Manager utiliza ao verificar novos itens em sua fila.</p><p>O valor dessa opção é um número inteiro. O valor padrão é <code>1000</code> milissegundos (1 segundo). </p><p>Se o volume de invocações assíncronas for baixo, você poderá aumentar esse valor. Por exemplo, você pode aumentá-lo para algo entre 2000 e 5000 (2-5 segundos). </p><p>Se o volume de invocações assíncronas for alto, o valor padrão deverá ser suficiente, mas você poderá usar um valor menor, se necessário. Diminuir muito esse valor (por exemplo, abaixo de 50, o que resulta em uma frequência de pesquisa de 20 vezes por segundo) causa uma sobrecarga substancial no sistema.</p></td>
+   <td><p>Especifica o intervalo de tempo, em milissegundos, que o Work Manager utiliza ao verificar novos itens em sua fila.</p><p>O valor dessa opção é um número inteiro. O valor padrão é de <code>1000</code> milissegundos (1 segundo). </p><p>Se o volume de invocações assíncronas for baixo, você poderá aumentar esse valor. Por exemplo, você pode aumentá-lo para algo entre 2000 e 5000 (2-5 segundos). </p><p>Se o volume de invocações assíncronas for alto, o valor padrão deverá ser suficiente, mas você poderá usar um valor menor, se necessário. Diminuir muito esse valor (por exemplo, abaixo de 50, o que resulta em uma frequência de pesquisa de 20 vezes por segundo) causa uma sobrecarga substancial no sistema.</p></td>
   </tr>
   <tr>
    <td><code> adobe.workmanager.debug-mode-enabled</code></td>
-   <td><p>Defina essa opção como <code>true</code> para ativar o modo de depuração, ou para falso para desativá-lo. </p><p>No modo de depuração, mensagens relacionadas a violações de política do Work Manager e ações de pausa/retomada do Work Manager são registradas. Defina essa opção como true somente ao solucionar problemas.</p></td>
+   <td><p>Defina esta opção como <code>true</code> para habilitar o modo de depuração, ou como false para desabilitá-lo. </p><p>No modo de depuração, mensagens relacionadas a violações de política do Work Manager e ações de pausa/retomada do Work Manager são registradas. Defina essa opção como true somente ao solucionar problemas.</p></td>
   </tr>
   <tr>
    <td><code> adobe.workmanager.memory-control.enabled</code></td>
-   <td><p>Defina essa opção como <code>true</code> para permitir a limitação com base nas configurações de controle de memória descritas abaixo, ou para <code>false</code> para desativar a limitação.</p></td>
+   <td><p>Defina esta opção como <code>true</code> para habilitar a limitação com base nas configurações de controle de memória descritas abaixo ou como <code>false</code> para desabilitar a limitação.</p></td>
   </tr>
   <tr>
    <td><code> adobe.workmanager.memory-control.high-limit</code></td>
-   <td><p>Especifica a porcentagem máxima de memória que pode estar em uso antes que o Work Manager limite trabalhos de entrada.</p><p>O valor padrão para essa opção é <code>95</code>. Esse valor deve ser adequado para a maioria dos sistemas. Aumente-o somente se o sistema precisar avançar para a capacidade máxima. Mas observe que, à medida que você aumenta esse valor, o risco de problemas de falta de memória também aumenta.</p><p>Se você estiver executando formulários AEM em um ambiente em cluster, convém definir as configurações de limite de controle de memória de forma diferente em diferentes nós do cluster. Por exemplo, você pode ter um limite superior mais baixo nos nós A e B, que são programados no balanceador de carga para trabalho interativo. E você pode ter limites superiores definidos nos nós C e D, que não são usados pelo balanceador de carga, mas reservados para trabalho assíncrono.</p></td>
+   <td><p>Especifica a porcentagem máxima de memória que pode estar em uso antes que o Work Manager limite trabalhos de entrada.</p><p>O valor padrão para esta opção é <code>95</code>. Esse valor deve ser adequado para a maioria dos sistemas. Aumente-o somente se o sistema precisar avançar para a capacidade máxima. Mas observe que, à medida que você aumenta esse valor, o risco de problemas de falta de memória também aumenta.</p><p>Se você estiver executando formulários AEM em um ambiente em cluster, convém definir as configurações de limite de controle de memória de forma diferente em diferentes nós do cluster. Por exemplo, você pode ter um limite superior mais baixo nos nós A e B, que são programados no balanceador de carga para trabalho interativo. E você pode ter limites superiores definidos nos nós C e D, que não são usados pelo balanceador de carga, mas reservados para trabalho assíncrono.</p></td>
   </tr>
   <tr>
    <td><code> adobe.workmanager.memory-control.low-limit</code></td>
-   <td><p>Especifica a porcentagem máxima de memória que pode estar em uso antes que o Work Manager pare de limitar trabalhos de entrada.</p><p>O valor padrão para essa opção é <code>20</code>. Esse valor deve ser adequado para a maioria dos sistemas.</p></td>
+   <td><p>Especifica a porcentagem máxima de memória que pode estar em uso antes que o Work Manager pare de limitar trabalhos de entrada.</p><p>O valor padrão para esta opção é <code>20</code>. Esse valor deve ser adequado para a maioria dos sistemas.</p></td>
   </tr>
   <tr>
    <td><code>Dadobe.workmanager.allocate.max-batch-size</code></td>
@@ -77,13 +77,13 @@ Você pode configurar a limitação para o Work Manager, de modo que os itens de
  </tbody>
 </table>
 
-**Adicionar opções Java ao JBoss**
+**Adicionar opções de Java ao JBoss**
 
 1. Interrompa o servidor da aplicação JBoss.
-1. Abra o *[raiz do appserver]*/bin/run.bat (Windows) ou run.sh (Linux ou UNIX) em um editor e adicione qualquer uma das opções de Java, conforme necessário, no formato `-Dproperty=value`.
+1. Abra a *[raiz do appserver]*/bin/run.bat (Windows) ou run.sh (Linux ou UNIX) em um editor e adicione qualquer uma das opções de Java, conforme necessário, no formato `-Dproperty=value`.
 1. Reinicie o servidor.
 
-**Adicionar opções Java ao WebLogic**
+**Adicionar opções de Java ao WebLogic**
 
 1. Inicie o Console de Administração do WebLogic digitando `https://[host name]:[port]/console` em um navegador da Web.
 1. Digite o nome de usuário e a senha criados para o domínio do WebLogic Server e clique em Registrar no Centro de Alterações, em Bloquear e Editar.
@@ -91,7 +91,7 @@ Você pode configurar a limitação para o Work Manager, de modo que os itens de
 1. Na próxima tela, clique na guia Configuração > na guia Início do servidor.
 1. Na caixa Argumentos, anexe os argumentos necessários ao final do conteúdo atual. Por exemplo, para desativar o Health Monitor, adicione:
 
-   `-Dadobe.healthmonitor.enabled=false` desabilita o Monitor de Integridade.
+   `-Dadobe.healthmonitor.enabled=false` desabilita o Health Monitor.
 
 1. Clique em Salvar e em Ativar alterações.
 1. Reinicie o servidor gerenciado WebLogic.

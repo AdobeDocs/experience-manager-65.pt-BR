@@ -19,7 +19,7 @@ ht-degree: 41%
 
 # Trabalhar com tarefas {#working-with-tasks}
 
-As tarefas representam itens de trabalho a serem executados em relação ao conteúdo. Quando uma tarefa é atribuída, ela aparece na Caixa de entrada do fluxo de trabalho. Os itens da tarefa podem ser diferenciados dos itens do fluxo de trabalho pelo valor que **Tipo** coluna.
+As tarefas representam itens de trabalho a serem executados em relação ao conteúdo. Quando uma tarefa é atribuída, ela aparece na Caixa de entrada do fluxo de trabalho. Os itens de tarefa podem ser diferenciados dos itens de fluxo de trabalho pelo valor da coluna **Tipo**.
 
 As tarefas também são usadas em projetos para determinar o nível de integridade do projeto.
 
@@ -27,9 +27,9 @@ As tarefas também são usadas em projetos para determinar o nível de integrida
 
 É possível acompanhar o progresso do projeto observando as tarefas ativas/concluídas dentro de um projeto representado pelo bloco de **Tarefas**. O progresso do projeto pode ser determinado por:
 
-* **Mosaico de tarefas:** Um progresso geral do projeto é representado no bloco de tarefas, disponível na página de detalhes do projeto.
+* **Bloco de Tarefas:** O progresso geral do projeto é representado no bloco de tarefas, disponível na página de detalhes do projeto.
 
-* **Lista de tarefas:** Ao clicar no bloco de tarefas, uma lista de tarefas é exibida. Essa lista contém informações detalhadas sobre todas as tarefas relacionadas ao projeto.
+* **Lista de Tarefas:** Ao clicar no bloco de tarefas, uma lista de tarefas é exibida. Essa lista contém informações detalhadas sobre todas as tarefas relacionadas ao projeto.
 
 Ambas as opções listam tarefas de fluxo de trabalho e tarefas que você cria diretamente no bloco de tarefas.
 
@@ -41,7 +41,7 @@ Se um projeto tiver tarefas relacionadas, um bloco de tarefas será exibido dent
 * Porcentagem de tarefas ativas
 * Porcentagem de tarefas atrasadas
 
-![Mosaico de tarefas](assets/project-tile-tasks.png)
+![Bloco de tarefas](assets/project-tile-tasks.png)
 
 ### Visualização ou modificação das tarefas em um projeto {#viewing-or-modifying-the-tasks-in-a-project}
 
@@ -51,11 +51,11 @@ Além de monitorar o progresso, é possível exibir mais informações sobre o p
 
 Clique no botão de reticências no canto inferior direito do bloco tarefas para exibir sua caixa de entrada filtrada nas tarefas relacionadas ao projeto. Os detalhes da tarefa são exibidos juntamente com metadados como prazo, responsável, prioridade e status.
 
-![Caixa de entrada de tarefas do projeto](assets/project-tasks.png)
+![Caixa de entrada de tarefa do projeto](assets/project-tasks.png)
 
 #### Detalhes da tarefa {#task-details}
 
-Para obter mais informações sobre uma tarefa específica, na caixa de entrada, clique na tarefa para selecioná-la e clique em **Abertura** na barra de ferramentas.
+Para obter mais informações sobre uma tarefa específica, na caixa de entrada, clique na tarefa para selecioná-la e em **Abrir** na barra de ferramentas.
 
 ![Detalhes da tarefa](assets/project-task-detail.png)
 
@@ -64,7 +64,7 @@ Para obter mais informações sobre uma tarefa específica, na caixa de entrada,
 * **Tarefa** - Informações gerais sobre a tarefa
 * **Informações do projeto** - Resumo do projeto ao qual a tarefa está associada
 * **Informações do fluxo de trabalho** - Resumo do fluxo de trabalho ao qual a tarefa está associada (se aplicável)
-* **Comentários** - Comentários gerais sobre a tarefa propriamente dita
+* **Comentários** - Comentários gerais sobre a própria tarefa
 
 ### Adição de tarefas {#adding-tasks}
 
@@ -72,11 +72,11 @@ Para obter mais informações sobre uma tarefa específica, na caixa de entrada,
 
 Para adicionar uma tarefa:
 
-1. No projeto, localize o **Tarefas** bloco
+1. No projeto, localize o bloco **Tarefas**
 1. Clique na divisa para baixo na parte superior direita do bloco e selecione **Criar tarefa**.
-1. No **Adicionar tarefa** , forneça os detalhes da tarefa, como prioridade, destinatário e data de vencimento.
+1. Na janela **Adicionar tarefa**, forneça os detalhes da tarefa, como prioridade, destinatário e data de vencimento.
 
-   ![Adicionar uma tarefa](assets/project-add-task.png)
+   ![Adicionando uma tarefa](assets/project-add-task.png)
 
 1. Clique em **Enviar**.
 
@@ -88,4 +88,4 @@ Na caixa de entrada, é possível abrir as tarefas e definir o status da tarefa.
 
 ![Caixa de entrada](assets/project-inbox.png)
 
-Para concluir uma tarefa, selecione-a e clique em **Concluído** na barra de ferramentas. Adicione informações à tarefa e clique em **Concluído**. Consulte [Sua Caixa de entrada](/help/sites-authoring/inbox.md) para obter mais informações.
+Para concluir uma tarefa, selecione-a e clique em **Concluir** na barra de ferramentas. Adicione informações à tarefa e clique em **Concluído**. Consulte [Sua Caixa de entrada](/help/sites-authoring/inbox.md) para obter mais informações.

@@ -54,41 +54,41 @@ Existem muitas ferramentas de teste de desempenho disponíveis comercialmente no
 
 #### Ferramentas de teste {#testing-tools}
 
-* Adobe **Dia difícil** A ferramenta pode ser usada para gerar carga em instâncias AEM e coletar dados de desempenho. A equipe de engenharia do Adobe AEM usa a ferramenta para fazer o teste de carga do próprio produto AEM. Os scripts executados no Dia Difícil são configurados por meio de arquivos de propriedade e arquivos XML JMX. Para obter mais informações, consulte [Documentação do Dia Difícil](/help/sites-developing/tough-day.md).
+* A ferramenta Adobe **Dia Difícil** pode ser usada para gerar carga em instâncias AEM e coletar dados de desempenho. A equipe de engenharia do Adobe AEM usa a ferramenta para fazer o teste de carga do próprio produto AEM. Os scripts executados no Dia Difícil são configurados por meio de arquivos de propriedade e arquivos XML JMX. Para obter mais informações, consulte a [documentação do Dia Difícil](/help/sites-developing/tough-day.md).
 
-* O AEM fornece ferramentas prontas para uso para ver rapidamente consultas, solicitações e mensagens de erro problemáticas. Para obter mais informações, consulte [Ferramentas de diagnóstico](/help/sites-administering/operations-dashboard.md#diagnosis-tools) seção da documentação do Painel de operações.
+* O AEM fornece ferramentas prontas para uso para ver rapidamente consultas, solicitações e mensagens de erro problemáticas. Para obter mais informações, consulte a seção [Ferramentas de Diagnóstico](/help/sites-administering/operations-dashboard.md#diagnosis-tools) da documentação do Painel de Operações.
 * O Apache fornece um produto chamado **JMeter** que pode ser usado para testes de desempenho e carga e comportamento funcional. É um software de código aberto e gratuito, mas tem um conjunto de recursos menor do que os produtos empresariais e uma curva de aprendizado mais acentuada. O JMeter pode ser encontrado no site do Apache em [https://jmeter.apache.org/](https://jmeter.apache.org/)
 
-* **Load Runner** O é um produto de teste de carga de nível empresarial. Uma versão de avaliação gratuita está disponível. Mais informações podem ser encontradas em [https://www.microfocus.com/en-us/portfolio/performance-engineering/overview](https://www.microfocus.com/en-us/portfolio/performance-engineering/overview)
+* **Load Runner** é um produto de teste de carga de nível empresarial. Uma versão de avaliação gratuita está disponível. Mais informações podem ser encontradas em [https://www.microfocus.com/en-us/portfolio/performance-engineering/overview](https://www.microfocus.com/en-us/portfolio/performance-engineering/overview)
 
-* Ferramentas de teste de carregamento de site como [Vercara](https://vercara.com/website-performance-management) também pode ser usado.
-* Ao testar sites móveis ou responsivos, um conjunto separado de ferramentas deve ser usado. Elas funcionam acelerando a largura de banda da rede, simulando conexões móveis mais lentas, como 3G ou EDGE. Entre as ferramentas mais usadas estão as seguintes:
+* Ferramentas de teste de carregamento de site como [Vercara](https://vercara.com/website-performance-management) também podem ser usadas.
+* Ao testar sites móveis ou responsivos, um conjunto separado de ferramentas deve ser usado. Elas funcionam ao aumentar a largura de banda da rede, simulando conexões móveis mais lentas, como 3G ou EDGE. Entre as ferramentas mais usadas estão as seguintes:
 
    * **[Condicionador de Link de Rede](https://nshipster.com/network-link-conditioner/)** - fornece uma interface fácil de usar e funciona em um nível relativamente baixo na pilha de rede. Ele inclui versões para OS X e iOS;
-   * [**Charles**](https://www.charlesproxy.com/) - um aplicativo proxy de depuração da web que, além de vários outros usos, fornece limitação de rede. São fornecidas versões para Windows, OS X e Linux®.
+   * [**Charles**](https://www.charlesproxy.com/) - um aplicativo proxy de depuração da Web que, além de vários outros usos, fornece limitação de rede. São fornecidas versões para Windows, OS X e Linux®.
 
 #### Ferramentas de otimização {#optimization-tools}
 
 **Monitoramento**
 
-A variável [Monitorando o desempenho](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance) A documentação do é um bom recurso para ferramentas e métodos que podem ser usados para diagnosticar problemas e identificar áreas para ajuste.
+A documentação de [Monitoramento de Desempenho](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance) é um bom recurso para ferramentas e métodos que podem ser usados para diagnosticar problemas e identificar áreas para ajuste.
 
-**Modo de desenvolvedor na interface para toque**
+**Modo de Desenvolvedor na Interface para Toque**
 
-Um dos novos recursos na interface de toque do AEM 6 é o Modo de desenvolvedor. Da mesma forma que os autores podem alternar entre os modos de edição e pré-visualização, os desenvolvedores podem alternar para o modo de desenvolvedor na interface do autor. Isso permite que você veja o tempo de renderização de cada um dos componentes na página e veja os rastreamentos de pilha de quaisquer erros. Para obter mais informações sobre o modo de desenvolvedor, consulte esta [Apresentação do CQ Gems](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-developer-mode.html).
+Um dos novos recursos na interface de toque do AEM 6 é o Modo de desenvolvedor. Da mesma forma que os autores podem alternar entre os modos de edição e pré-visualização, os desenvolvedores podem alternar para o modo de desenvolvedor na interface do autor. Isso permite que você veja o tempo de renderização de cada um dos componentes na página e veja os rastreamentos de pilha de quaisquer erros. Para obter mais informações sobre o modo de desenvolvedor, consulte esta [apresentação do CQ Gems](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-developer-mode.html).
 
-**Usar o rlog.jar para ler os logs de solicitação**
+**Usando o rlog.jar para ler os logs de solicitação**
 
-Para obter uma análise mais abrangente dos registros de solicitações em um sistema AEM, `rlog.jar` pode ser usado para pesquisar e classificar a variável `request.log` arquivos gerados pelo AEM. Esse arquivo jar está incluído com uma instalação AEM no `/crx-quickstart/opt/helpers` pasta. Para obter mais informações sobre a ferramenta rlog e o log de solicitação em geral, consulte [Monitoramento e manutenção](/help/sites-deploying/monitoring-and-maintaining.md) documentação.
+Para uma análise mais abrangente dos logs de solicitação em um sistema AEM, o `rlog.jar` pode ser usado para pesquisar e classificar os `request.log` arquivos gerados pelo AEM. Este arquivo jar está incluído com uma instalação AEM na pasta `/crx-quickstart/opt/helpers`. Para obter mais informações sobre a ferramenta rlog e o log de solicitação em geral, consulte a documentação de [Monitoramento e Manutenção](/help/sites-deploying/monitoring-and-maintaining.md).
 
-**A Ferramenta Explicar Consulta**
+**A Ferramenta de Consulta de Explicação**
 
-A variável [Ferramenta Explicar consulta](/help/sites-administering/operations-dashboard.md#explain-query) no ACS AEM, as Ferramentas podem ser usadas para exibir os índices usados ao executar um query. Essa ferramenta é útil ao otimizar consultas de execução lenta.
+A [ferramenta de Consulta Explicativa](/help/sites-administering/operations-dashboard.md#explain-query), em Ferramentas AEM ACS, pode ser usada para exibir os índices usados ao executar uma consulta. Essa ferramenta é útil ao otimizar consultas de execução lenta.
 
 **Ferramentas PageSpeed**
 
 As ferramentas do Google PageSpeed oferecem análise do site para adesão às práticas recomendadas para o desempenho da página e um plug-in que pode ser instalado junto com o Dispatcher em uma instância do Apache para otimizações adicionais.
-Consulte a [PageSpeed Tools Site](https://developers.google.com/speed).
+Consulte o [Site de Ferramentas do PageSpeed](https://developers.google.com/speed).
 
 ## Ambiente de criação {#author-environment}
 
@@ -98,29 +98,29 @@ Para realizar testes de desempenho no ambiente de criação, é necessário simu
 
 Há muitas estruturas de automação disponíveis que foram projetadas para testes de desempenho e carga. Os scripts personalizados podem ser registrados nessas ferramentas e reproduzidos para simular um número máximo de autores executando atividades semelhantes de criação e ativação de conteúdo simultaneamente. É recomendável usar a ferramenta Dia difícil para simular atividades como carregar milhares de ativos ou ativar um grande número de páginas.
 
-Para os tipos de ambientes que têm requisitos de carregamento pesado de ativos ou criação de página, é fundamental usar ferramentas como o Dia Difícil. Isso garante que o ambiente opere com eficiência no pico de carga. [WebDAV](/help/sites-administering/webdav-access.md) O é uma ferramenta que não requer script e também pode ser usada para carregar grandes quantidades de ativos.
+Para os tipos de ambientes que têm requisitos de carregamento pesado de ativos ou criação de página, é fundamental usar ferramentas como o Dia Difícil. Isso garante que o ambiente opere com eficiência no pico de carga. O [WebDAV](/help/sites-administering/webdav-access.md) é uma ferramenta que não requer script e também pode ser usada para carregar grandes quantidades de ativos.
 
 #### Etapas específicas do MongoDB {#mongodb-specific-steps}
 
-Em sistemas com back-ends MongoDB, AEM fornece vários [JMX](/help/sites-administering/jmx-console.md) MBeans que devem ser monitorados ao executar testes de carga ou desempenho:
+Em sistemas com back-end MongoDB, o AEM fornece vários [JMX](/help/sites-administering/jmx-console.md) MBeans que devem ser monitorados ao executar testes de carga ou desempenho:
 
-* A variável **Estatísticas consolidadas de cache** MBean. Ele pode ser acessado diretamente em:
+* O **MBean de Estatísticas de Cache Consolidadas**. Ele pode ser acessado diretamente em:
 
 `https://server:port/system/console/jmx/org.apache.jackrabbit.oak%3Aid%3D6%2Cname%3D%22Consolidated+Cache+statistics%22%2Ctype%3D%22ConsolidatedCacheStats%22`
 
-Para o cache chamado **Document-Diff**, a taxa de ocorrência deve estar acima de `.90`. Se a taxa de ocorrência ficar abaixo de 90%, é provável que você precise editar o `DocumentNodeStoreService` configuração. O suporte a produtos Adobe pode recomendar configurações ideais para seu ambiente.
+Para o cache chamado **Document-Diff**, a taxa de ocorrências deve ser superior a `.90`. Se a taxa de ocorrência ficar abaixo de 90%, é provável que você precise editar sua configuração `DocumentNodeStoreService`. O suporte a produtos Adobe pode recomendar configurações ideais para seu ambiente.
 
-* A variável **Estatísticas do repositório Oak** Mbean. Ele pode ser acessado diretamente em:
+* O Mbean De **Estatísticas Do Repositório Oak**. Ele pode ser acessado diretamente em:
 
 `https://server:port/system/console/jmx/org.apache.jackrabbit.oak%3Aid%3D16%2Cname%3D%22Oak+Repository+Statistics%22%2Ctype%3D%22RepositoryStats%22`
 
-A variável **ComprimentoMáxFilaObservação** A seção mostra o número de eventos na fila de observação do Oak nas últimas horas, minutos, segundos e semanas. Encontre o maior número de eventos na seção &quot;por hora&quot;. Compare esse número com o `oak.observation.queue-length` configuração. Se o número mais alto mostrado para a fila de observação exceder o `queue-length` configuração:
+A seção **ObservationQueueMaxLength** mostra o número de eventos na fila de observação do Oak nas últimas horas, minutos, segundos e semanas. Encontre o maior número de eventos na seção &quot;por hora&quot;. Comparar este número à configuração `oak.observation.queue-length`. Se o número mais alto mostrado para a fila de observação exceder a configuração `queue-length`:
 
-1. Crie um arquivo com o nome: `com.adobe.granite.repository.impl.SlingRepositoryManager.cfg` contendo o parâmetro `oak.observation.queue‐length=50000`
+1. Crie um arquivo chamado: `com.adobe.granite.repository.impl.SlingRepositoryManager.cfg` contendo o parâmetro `oak.observation.queue‐length=50000`
 1. Coloque-o na pasta /crx-quickstart/install.
 
 >[!NOTE]
->Consulte [AEM 6.x | Dicas para ajustar o desempenho](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=pt-BR)
+>Consulte [AEM 6.x | Dicas de Ajuste de Desempenho](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=pt-BR)
 
 A configuração padrão é 10.000, mas a maioria das implantações deve elevá-la para 20.000 ou 50.000.
 
@@ -142,16 +142,16 @@ Para testes básicos, o Apache Bench pode ser usado para medir os tempos de resp
 
 Após a execução dos testes de desempenho na instância do autor, todos os problemas devem ser investigados, diagnosticados e abordados. Você pode usar várias ferramentas e técnicas ao executar análises e resolver problemas:
 
-* Você pode inspecionar o [Log de desempenho da solicitação](/help/sites-administering/operations-dashboard.md#request-performance) no Painel de operações. Essa ferramenta pode ser usada para identificar solicitações de página lentas
-* Analise consultas de execução lenta com o [Ferramenta Desempenho da consulta](/help/sites-administering/operations-dashboard.md#query-performance)
+* Você pode inspecionar o [log de Desempenho da Solicitação](/help/sites-administering/operations-dashboard.md#request-performance) no Painel de Operações. Essa ferramenta pode ser usada para identificar solicitações de página lentas
+* Analisar consultas de execução lenta com a [Ferramenta de desempenho da consulta](/help/sites-administering/operations-dashboard.md#query-performance)
 
-* Verifique se há erros ou avisos no log de erros. Para obter mais informações, consulte [Logs](/help/sites-deploying/configure-logging.md).
+* Verifique se há erros ou avisos no log de erros. Para obter mais informações, consulte [Log](/help/sites-deploying/configure-logging.md).
 * Monitore recursos de hardware do sistema, como utilização de memória e CPU, E/S de disco ou E/S de rede. Esses recursos geralmente são as causas dos gargalos de desempenho.
 * Otimize a arquitetura das páginas e como elas são endereçadas para minimizar o uso de parâmetros de URL para permitir o máximo de armazenamento em cache possível.
-* Siga as [Otimização do desempenho](/help/sites-deploying/configuring-performance.md) e [Dicas para melhorar o desempenho](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=pt-BR) documentação.
+* Siga a documentação da [Otimização de Desempenho](/help/sites-deploying/configuring-performance.md) e das [Dicas de ajuste de desempenho](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=pt-BR).
 
 * Se houver problemas com a edição de determinadas páginas ou componentes em instâncias de autor, use o Modo de desenvolvedor da interface para toque para inspecionar a página em questão. Isso fornece um detalhamento de cada área de conteúdo na página e seu tempo de carregamento.
-* Reduza todos os JS e CSS no site. Veja isto [publicação do blog](https://blogs.adobe.com/foxes/enable-js-and-css-minification/).
+* Reduza todos os JS e CSS no site. Veja esta [postagem do blog](https://blogs.adobe.com/foxes/enable-js-and-css-minification/).
 * Elimine o CSS e o JS incorporados dos componentes. Eles devem ser incluídos e minificados com as bibliotecas do lado do cliente para minimizar o número de solicitações necessárias para renderizar a página.
 * Para inspecionar as solicitações do servidor e ver quais estão demorando mais, use ferramentas de navegador, como a guia Rede do Chrome.
 

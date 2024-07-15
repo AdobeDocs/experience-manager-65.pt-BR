@@ -32,7 +32,7 @@ Consulte o link a seguir:
 * [Criação do Adobe Campaign Forms no AEM](/help/sites-authoring/adobe-campaign-forms.md)
 * [Direcionamento do seu Adobe Campaign](/help/sites-authoring/target-adobe-campaign.md)
 
-Você deve ter [AEM integrado com Adobe Campaign](/help/sites-administering/campaign.md).
+Você deve ter [AEM integrado ao Adobe Campaign](/help/sites-administering/campaign.md) anteriormente.
 
 Além disso, se você quiser personalizar suas integrações, consulte os seguintes tópicos:
 

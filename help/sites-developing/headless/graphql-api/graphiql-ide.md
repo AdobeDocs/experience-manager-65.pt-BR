@@ -14,7 +14,7 @@ ht-degree: 86%
 
 # Uso do GraphiQL IDE {#graphiql-ide}
 
-Uma implementação da norma [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql) O IDE está disponível para uso com a API GraphQL do Adobe Experience Manager (AEM).
+Uma implementação do padrão [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql) IDE está disponível para uso com a API do GraphQL do Adobe Experience Manager (AEM).
 
 >[!NOTE]
 >
@@ -25,7 +25,7 @@ Uma implementação da norma [GraphiQL](https://graphql.org/learn/serving-over-h
 >[!NOTE]
 >Você deve [configurar os endpoints](/help/sites-developing/headless/graphql-api/graphql-endpoint.md) no [navegador de configuração](/help/assets/content-fragments/content-fragments-configuration-browser.md) antes de usar o GraphiQL IDE.
 
-A variável **GraphiQL** A ferramenta permite testar e depurar as consultas do GraphQL, possibilitando:
+A ferramenta **GraphiQL** permite testar e depurar as consultas do GraphQL, permitindo:
 
 * selecionar o **endpoint** apropriado à configuração de Sites que deseja usar para as consultas
 * inserir diretamente novas consultas
@@ -39,7 +39,7 @@ A variável **GraphiQL** A ferramenta permite testar e depurar as consultas do G
 
 É possível acessar o editor de consultas por meio de:
 
-* **Ferramentas** > **Geral** > **Editor de consultas GraphQL**
+* **Ferramentas** > **Geral** > **Editor de Consultas do GraphQL**
 * diretamente; por exemplo, `http://localhost:4502/aem/graphiql.html`
 
 ![Interface GraphiQL](assets/cfm-graphiql-interface.png "Interface GraphiQL")
@@ -85,14 +85,14 @@ Você pode executar uma nova consulta imediatamente ou pode carregar e executar 
 
 Em ambos os casos, a consulta exibida no painel do editor é a que será executada quando você:
 
-* clique na guia **Executar consulta** ícone
+* clique no ícone **Executar Consulta**
 * usar a combinação de teclado `Control-Enter`
 
 ## Variáveis de consulta {#query-variables}
 
 <!-- more details needed here? -->
 
-O GraphiQL IDE também permite gerenciar os [Variáveis de consulta](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#graphql-variables).
+O GraphiQL IDE também permite gerenciar suas [Variáveis de consulta](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#graphql-variables).
 
 Por exemplo:
 
@@ -135,7 +135,7 @@ Using GraphQL you can configure the HTTP Cache Headers  to control these paramet
 
 ## Publicação de consultas persistentes {#publishing-persisted-queries}
 
-Depois de selecionar o [consulta persistente](/help/sites-developing/headless/graphql-api/persisted-queries.md) na lista (painel esquerdo), é possível usar o **Publish** e **Cancelar publicação** ações. Isso as ativará no ambiente de publicação (por exemplo, `dev-publish`) para facilitar o acesso de seus aplicativos durante os testes.
+Depois de selecionar sua [consulta persistente](/help/sites-developing/headless/graphql-api/persisted-queries.md) na lista (painel esquerdo), você pode usar as ações **Publish** e **Cancelar publicação**. Isso as ativará no ambiente de publicação (por exemplo, `dev-publish`) para facilitar o acesso de seus aplicativos durante os testes.
 
 >[!NOTE]
 >
@@ -143,7 +143,7 @@ Depois de selecionar o [consulta persistente](/help/sites-developing/headless/gr
 
 ## Copiar o URL para acessar a consulta diretamente {#copy-url}
 
-A variável **Copiar URL** permite simular uma consulta copiando o URL usado para acessar diretamente a consulta persistente e ver os resultados. Essa opção pode ser usada para testes; por exemplo, acessando em um navegador:
+A opção **Copiar URL** permite simular uma consulta copiando a URL usada para acessar diretamente a consulta persistente e ver os resultados. Essa opção pode ser usada para testes; por exemplo, acessando em um navegador:
 
 <!--
   >[!NOTE]

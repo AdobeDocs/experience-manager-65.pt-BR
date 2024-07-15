@@ -18,17 +18,17 @@ ht-degree: 0%
 
 O gerenciamento de usuários é um componente do AEM Forms JEE que permite criar, gerenciar e autorizar usuários do AEM Forms a acessar o AEM Forms. O gerenciamento de usuários usa domínios como diretórios para obter informações do usuário. Os seguintes tipos de domínio são compatíveis:
 
-**Domínios locais**: esse tipo de domínio não está conectado a um sistema de armazenamento de terceiros. Em vez disso, os usuários e grupos são criados localmente e residem no banco de dados de Gerenciamento de usuários. As senhas são armazenadas localmente e a autenticação é feita usando um banco de dados local.
+**Domínios locais**: este tipo de domínio não está conectado a um sistema de armazenamento de terceiros. Em vez disso, os usuários e grupos são criados localmente e residem no banco de dados de Gerenciamento de usuários. As senhas são armazenadas localmente e a autenticação é feita usando um banco de dados local.
 
 **Domínios híbridos**: esse tipo de domínio não está conectado a um sistema de armazenamento de terceiros. Em vez disso, os usuários e grupos são criados localmente e residem no banco de dados de Gerenciamento de usuários. Diferentemente dos domínios locais, os domínios híbridos usam um provedor de autenticação externo, que pode ser LDAP, Kerberos, SAML ou um provedor de autenticação personalizado.
 
-**Domínios Enterprise**: consiste em usuários e grupos que residem em um sistema de armazenamento de terceiros, como um diretório LDAP. O gerenciamento de usuários não grava no sistema de armazenamento de terceiros. Em vez disso, o Gerenciamento de usuários sincroniza as informações do usuário e do grupo com o banco de dados do Gerenciamento de usuários. Domínios Enterprise também usam um provedor de autenticação externo, que pode ser LDAP, Kerberos, SAML ou um provedor de autenticação personalizado.
+**Domínios da empresa**: consiste em usuários e grupos que residem em um sistema de armazenamento de terceiros, como um diretório LDAP. O gerenciamento de usuários não grava no sistema de armazenamento de terceiros. Em vez disso, o Gerenciamento de usuários sincroniza as informações do usuário e do grupo com o banco de dados do Gerenciamento de usuários. Domínios Enterprise também usam um provedor de autenticação externo, que pode ser LDAP, Kerberos, SAML ou um provedor de autenticação personalizado.
 
 <!-- Fix broken links For more information about how user management works and configured, see AEM Forms JEE administration help. -->
 
 ## Dados do usuário e armazenamentos de dados {#user-data-and-data-stores}
 
-O gerenciamento de usuários armazena dados do usuário em um banco de dados como, por exemplo, My Sql, Oracle, MS® SQL Server e IBM® DB2®. Além disso, qualquer usuário que tenha feito logon pelo menos uma vez nos aplicativos do Forms no AEM é autor em `https://'[server]:[port]'lc`, o usuário é criado no repositório AEM. Portanto, o gerenciamento de usuários é armazenado nos seguintes armazenamentos de dados:
+O gerenciamento de usuários armazena dados do usuário em um banco de dados como, por exemplo, My Sql, Oracle, MS® SQL Server e IBM® DB2®. Além disso, qualquer usuário que tenha feito logon pelo menos uma vez nos aplicativos do Forms no AEM autor em `https://'[server]:[port]'lc`, o usuário é criado no repositório do AEM. Portanto, o gerenciamento de usuários é armazenado nos seguintes armazenamentos de dados:
 
 * Banco de dados
 * Repositório AEM
@@ -80,14 +80,14 @@ O gerenciamento de usuários armazena dados do usuário nas seguintes tabelas de
   </tr>
   <tr>
    <td><p><code>EdcPrincipalMappingEntity</code></p> <p><code>EdcPrincipalMappingEntit</code><br /> (Oracle e bancos de dados MS® SQL)</p> </td>
-   <td>Armazena valores de atributo antigos e novos correspondentes a um principal.<br /> </td>
+   <td>Armazena valores de atributos antigos e novos correspondentes a uma entidade de segurança.<br /> </td>
   </tr>
  </tbody>
 </table>
 
 ### Repositório AEM {#aem-repository}
 
-Dados de gerenciamento de usuários para usuários que acessaram pelo menos uma vez os aplicativos do Forms em `https://'[server]:[port]'lc` O também é armazenado no repositório do AEM.
+Os dados de gerenciamento de usuários para usuários que acessaram pelo menos uma vez os aplicativos da Forms em `https://'[server]:[port]'lc` também são armazenados no repositório AEM.
 
 ## Acessar e excluir dados do usuário {#access-and-delete-user-data}
 
@@ -95,9 +95,9 @@ Você pode acessar e exportar dados de gerenciamento de usuários para usuários
 
 ### Banco de dados {#database-1}
 
-Para exportar ou excluir dados do usuário do banco de dados de gerenciamento de usuários, você deve se conectar ao banco de dados usando um cliente de banco de dados e descobrir a ID principal com base em algumas PIIs do usuário. Por exemplo, para recuperar a ID principal de um usuário usando uma ID de logon, execute o seguinte `select` comando no banco de dados.
+Para exportar ou excluir dados do usuário do banco de dados de gerenciamento de usuários, você deve se conectar ao banco de dados usando um cliente de banco de dados e descobrir a ID principal com base em algumas PIIs do usuário. Por exemplo, para recuperar a ID da entidade de segurança de um usuário usando uma ID de logon, execute o seguinte comando `select` no banco de dados.
 
-No `select` , substitua o `<user_login_id>` com o ID de logon do usuário cuja ID principal você deseja recuperar.
+No comando `select`, substitua `<user_login_id>` pela ID de logon do usuário cuja ID principal você deseja recuperar.
 
 ```sql
 select refprincipalid from EdcPrincipalUserEntity where uidstring = <user_login_id>
@@ -107,19 +107,19 @@ Depois de saber a ID principal, é possível exportar ou excluir os dados do usu
 
 #### Exportar dados do usuário {#export-user-data}
 
-Execute os seguintes comandos de banco de dados para que você possa exportar dados de gerenciamento de usuários para uma ID principal de tabelas de banco de dados. No `select` comando, substituir `<principal_id>` com a ID principal do usuário cujos dados você deseja exportar.
+Execute os seguintes comandos de banco de dados para que você possa exportar dados de gerenciamento de usuários para uma ID principal de tabelas de banco de dados. No comando `select`, substitua `<principal_id>` pela ID principal do usuário cujos dados você deseja exportar.
 
 >[!NOTE]
 >
 >Os comandos a seguir usam nomes de tabelas de bancos de dados em My SQL e bancos de dados IBM® DB2®. Ao executar esses comandos em bancos de dados Oracle e MS® SQL, substitua os seguintes nomes de tabela nos comandos:
 >
->* Substituir `EdcPrincipalLocalAccountEntity` com `EdcPrincipalLocalAccount`
+>* Substituir `EdcPrincipalLocalAccountEntity` por `EdcPrincipalLocalAccount`
 >
->* Substituir `EdcPrincipalEmailAliasEntity` com `EdcPrincipalEmailAliasEn`
+>* Substituir `EdcPrincipalEmailAliasEntity` por `EdcPrincipalEmailAliasEn`
 >
->* Substituir `EdcPrincipalMappingEntity` com `EdcPrincipalMappingEntit`
+>* Substituir `EdcPrincipalMappingEntity` por `EdcPrincipalMappingEntit`
 >
->* Substituir `EdcPrincipalGrpCtmntEntity` com `EdcPrincipalGrpCtmntEnti`
+>* Substituir `EdcPrincipalGrpCtmntEntity` por `EdcPrincipalGrpCtmntEnti`
 >
 
 ```sql
@@ -146,7 +146,7 @@ Faça o seguinte para excluir das tabelas do banco de dados os dados de gerencia
 
 1. Exclua os dados do usuário do repositório AEM, se aplicável, conforme descrito em [Excluir dados do usuário](/help/forms/using/user-management-handling-user-data.md#delete-aem).
 1. Desligue o servidor do AEM Forms.
-1. Execute os seguintes comandos de banco de dados para que você possa excluir dados de gerenciamento de usuários de uma ID principal das tabelas de banco de dados. No `Delete` comando, substituir `<principal_id>` com a ID principal do usuário cujos dados você deseja excluir.
+1. Execute os seguintes comandos de banco de dados para que você possa excluir dados de gerenciamento de usuários de uma ID principal das tabelas de banco de dados. No comando `Delete`, substitua `<principal_id>` pela ID principal do usuário cujos dados você deseja excluir.
 
    ```sql
    Delete from EdcPrincipalLocalAccountEntity where refuserprincipalid in (Select id from EdcPrincipalUserEntity where refprincipalid in (select id from EdcPrincipalEntity where id='<principal_id>'));
@@ -174,13 +174,13 @@ Os usuários do Forms JEE têm seus dados no repositório AEM se acessaram a ins
 
 #### Acessar dados do usuário {#access-user-data}
 
-Para visualizar o usuário criado no repositório AEM, faça logon no `https://'[server]:[port]'/lc/useradmin` com credenciais de administrador do AEM. Observe que `server` e `port` no URL são os da instância do autor do AEM. Aqui, você pode procurar usuários com seus nomes de usuário. Clique duas vezes em um usuário para exibir informações como propriedades, permissões e grupos do usuário. A variável `Path` propriedade para um usuário especifica o caminho para o nó do usuário criado no repositório AEM.
+Para exibir o usuário criado no repositório AEM, faça logon em `https://'[server]:[port]'/lc/useradmin` com credenciais de administrador AEM. Observe que `server` e `port` no URL são os da instância de autor do AEM. Aqui, você pode procurar usuários com seus nomes de usuário. Clique duas vezes em um usuário para exibir informações como propriedades, permissões e grupos do usuário. A propriedade `Path` de um usuário especifica o caminho para o nó do usuário criado no repositório AEM.
 
 #### Excluir dados do usuário {#delete-aem}
 
 Para excluir um usuário:
 
-1. Ir para `https://'[server]:[port]'/lc/useradmin` com credenciais de administrador do AEM.
-1. Procure um usuário e clique duas vezes no nome de usuário para abrir as propriedades dele. Copie o `Path` propriedade.
-1. Ir para AEM CRXDE Lite em `https://'[server]:[port]'/lc/crx/de/index.jsp` e navegue ou pesquise o caminho do usuário.
+1. Vá para `https://'[server]:[port]'/lc/useradmin` com credenciais de administrador do AEM.
+1. Procure um usuário e clique duas vezes no nome de usuário para abrir as propriedades dele. Copie a propriedade `Path`.
+1. Vá para AEM CRXDE Lite em `https://'[server]:[port]'/lc/crx/de/index.jsp` e navegue ou pesquise o caminho do usuário.
 1. Exclua o caminho e clique em **[!UICONTROL Salvar tudo]** para excluir permanentemente o usuário do repositório AEM.

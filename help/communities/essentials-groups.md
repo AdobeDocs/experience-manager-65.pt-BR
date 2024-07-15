@@ -20,7 +20,7 @@ ht-degree: 1%
 
 O recurso de grupos da comunidade é a capacidade de uma subcomunidade ser criada dinamicamente em um site da comunidade por usuários autorizados nos ambientes de publicação e criação.
 
-A partir das comunidades [pacote de recursos 1](deploy-communities.md#latestfeaturepack), é possível que grupos sejam aninhados dentro de outros grupos.
+A partir do Communities [feature pack 1](deploy-communities.md#latestfeaturepack), é possível que grupos sejam aninhados dentro de outros grupos.
 
 ## Essentials para o lado do cliente {#essentials-for-client-side}
 
@@ -80,21 +80,21 @@ A partir das comunidades [pacote de recursos 1](deploy-communities.md#latestfeat
 
 * [API do grupo da comunidade](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/group/client/api/package-summary.html)
 
-* [Endpoints do grupo da comunidade](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/group/client/endpoints/package-summary.html)
+* [Pontos de Extremidade do Grupo da Comunidade](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/group/client/endpoints/package-summary.html)
 
 * [Personalizações do lado do servidor](server-customize.md)
 
 ### Função Grupos {#groups-function}
 
-Uma estrutura de site da comunidade que inclui uma [Função Grupos](functions.md#groups-function) apoia a criação de novas `community groups` nos ambientes de publicação e criação. O grupo da comunidade criado inclui uma `community groups member list` componente que lista os membros do grupo.
+Uma estrutura de site da comunidade que inclui uma [função de Grupos](functions.md#groups-function) dá suporte à criação de um novo `community groups` a partir dos ambientes de publicação e criação. O grupo da comunidade criado inclui um componente `community groups member list` que lista os membros do grupo.
 
-Um ou mais [modelos de grupo da comunidade](tools-groups.md), que fornecem o design das páginas dos grupos da comunidade, podem ser configuradas para a função Grupos. Isso é verdadeiro quando a função está sendo adicionada a um [modelo do site da comunidade](sites.md) ou aninhados em um modelo de grupo da comunidade.
+Um ou mais [modelos de grupo da comunidade](tools-groups.md), que fornecem o design das páginas de grupo da comunidade, podem ser configurados para a função Grupos. Isso é verdade quando a função está sendo adicionada a um [modelo de site de comunidade](sites.md) ou aninhada em um modelo de grupo de comunidade.
 
-A inclusão de vários modelos de grupo da comunidade resulta em uma escolha. Ou seja, a escolha do design que está sendo apresentado ao usuário autorizado no momento em que um grupo da comunidade é criado para o site da comunidade. Consulte a seção sobre [grupos da comunidade](creating-groups.md) para autores.
+A inclusão de vários modelos de grupo da comunidade resulta em uma escolha. Ou seja, a escolha do design que está sendo apresentado ao usuário autorizado no momento em que um grupo da comunidade é criado para o site da comunidade. Consulte a seção sobre [grupos da comunidade](creating-groups.md) para obter os autores.
 
 ### Grupos aninhados {#nested-groups}
 
-A partir das comunidades [FP1](deploy-communities.md#latestfeaturepack), é possível que uma função Grupos seja incluída em um modelo de grupo, permitindo assim grupos aninhados (subcomunidades).
+A partir de Communities [FP1](deploy-communities.md#latestfeaturepack), é possível que uma função Groups seja incluída em um modelo de grupo, permitindo assim grupos aninhados (subcomunidades).
 
 Quando um site da comunidade ou modelo de grupo inclui a função Grupos, é possível:
 

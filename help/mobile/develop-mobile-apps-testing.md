@@ -22,7 +22,7 @@ ht-degree: 0%
 >
 >A Adobe recomenda o uso do Editor SPA para projetos que exigem renderização no lado do cliente baseada em estrutura de aplicativo de página única (por exemplo, React). [Saiba mais](/help/sites-developing/spa-overview.md).
 
-Dada a ampla variedade de dispositivos no mercado e os dispositivos que estão sendo lançados, testar seus aplicativos se tornou imperativo. Essa é uma área em que a funcionalidade e a usabilidade podem receber avaliações baixas em uma loja de aplicativos, mas um único defeito pode resultar na desinstalação do aplicativo. Deve-se prestar muita atenção em seus planos de teste e na garantia de qualidade. O link a seguir aborda muitos dos tópicos que devem ser abordados em geral, como a identificação do ambiente, a definição de casos de teste, os tipos de testes, as suposições e o envolvimento do cliente. Também são discutidas ferramentas para ajudar no esforço de teste. Ferramentas internas, como [Hobbes](/help/sites-developing/hobbes.md)O pode ajudar com testes de interface do usuário baseados na Web. [Dia difícil](/help/sites-developing/tough-day.md) O pode sobrecarregar suas instâncias com uma carga simulada. Se o ambiente de testes já tiver experiência com ferramentas de terceiros, como o Selenium, elas também poderão ser usadas.
+Dada a ampla variedade de dispositivos no mercado e os dispositivos que estão sendo lançados, testar seus aplicativos se tornou imperativo. Essa é uma área em que a funcionalidade e a usabilidade podem receber avaliações baixas em uma loja de aplicativos, mas um único defeito pode resultar na desinstalação do aplicativo. Deve-se prestar muita atenção em seus planos de teste e na garantia de qualidade. O link a seguir aborda muitos dos tópicos que devem ser abordados em geral, como a identificação do ambiente, a definição de casos de teste, os tipos de testes, as suposições e o envolvimento do cliente. Também são discutidas ferramentas para ajudar no esforço de teste. Ferramentas internas, como [Hobbes](/help/sites-developing/hobbes.md), podem ajudar em testes de interface do usuário baseados na Web. [Dia Difícil](/help/sites-developing/tough-day.md) pode sobrecarregar suas instâncias com uma carga simulada. Se o ambiente de testes já tiver experiência com ferramentas de terceiros, como o Selenium, elas também poderão ser usadas.
 
 Ao desenvolver um aplicativo móvel, há muitas novas preocupações específicas para dispositivos que precisam ser abordadas juntamente com as de testes tradicionais.
 
@@ -45,7 +45,7 @@ Deve-se realizar algum grau de teste automático para abranger a variedade de ta
 
 ## Teste manual {#manual-testing}
 
-Além do teste automático, seu aplicativo deve passar por um ciclo de teste manual. Os clientes que executam o aplicativo em um dispositivo real não podem ser duplicados por um script. Aqui você também tem muitas opções. Você pode usar uma plataforma, como o HockeyApp, para definir quem tem acesso e coletar feedback. Ou você pode terceirizar todo o processo para um serviço como UTest, ElusiveStars ou Testin. Se você tiver um grupo de testadores internos, mas não tiver variação de dispositivos, há serviços em nuvem nos quais você pode executar testes manuais no pool de dispositivos. Um desses serviços que fornece isso é o SauceLabs. Você também pode criar aplicativos remotamente para o PhoneGap Enterprise e instalá-los em dispositivos locais como um nível de teste de aceitação ou demonstração. Consulte o PhoneGap (`https://phonegap.com/`) para obter os recursos e a documentação mais recentes. Qualquer que seja a abordagem, o teste manual deve fazer o seguinte:
+Além do teste automático, seu aplicativo deve passar por um ciclo de teste manual. Os clientes que executam o aplicativo em um dispositivo real não podem ser duplicados por um script. Aqui você também tem muitas opções. Você pode usar uma plataforma, como o HockeyApp, para definir quem tem acesso e coletar feedback. Ou você pode terceirizar todo o processo para um serviço como UTest, ElusiveStars ou Testin. Se você tiver um grupo de testadores internos, mas não tiver variação de dispositivos, há serviços em nuvem nos quais você pode executar testes manuais no pool de dispositivos. Um desses serviços que fornece isso é o SauceLabs. Você também pode criar aplicativos remotamente para o PhoneGap Enterprise e instalá-los em dispositivos locais como um nível de teste de aceitação ou demonstração. Consulte o site PhoneGap (`https://phonegap.com/`) para obter os recursos e a documentação mais recentes. Qualquer que seja a abordagem, o teste manual deve fazer o seguinte:
 
 * atingir um grande alvo de testadores,
 * testar contra um grande pool de dispositivos (idealmente dispositivos reais, mas simuladores/emuladores se dispositivos reais não estiverem disponíveis),
@@ -62,7 +62,7 @@ Além do teste automático, seu aplicativo deve passar por um ciclo de teste man
 
 Há uma grande variedade de ferramentas disponíveis para testar aplicativos móveis. A escolha das opções a serem usadas deve ser baseada em sua situação específica: recursos, preço, suporte, cobertura e assim por diante. Veja a seguir apenas uma pequena descrição de algumas ferramentas e serviços disponíveis.
 
-**Selênio**
+**Selenium**
 
 * Estrutura que inclui uma API para scripts de teste para alimentar WebDriver e controlar vários navegadores.
 * Você pode usar isso com o Appium para testar em dispositivos reais.
@@ -85,7 +85,7 @@ Para obter mais informações, consulte [https://testdroid.com/](https://testdro
 
 Para obter mais informações, consulte [https://appium.io/](https://appium.io/).
 
-**MolhoLabs**
+**LaboratóriosMolho**
 
 * O SauceLabs fornece testes baseados em nuvem e integra-se com integração contínua.
 * Os testes são executados automaticamente no ambiente de nuvem, ou você pode iniciar um dispositivo ou plataforma específica e executar testes manuais para ajudar a depurar problemas.

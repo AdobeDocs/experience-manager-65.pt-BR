@@ -46,7 +46,7 @@ Ao planejar uma atualização para o AEM 6.5, as seguintes páginas por soluçã
 * [Reestruturação de repositório do AEM Assets Dynamic Media](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md)
 * [Reestruturação de repositório do AEM Forms](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md)
 * [Reestruturação de repositório do AEM Communities](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md)
-* [Restruturação do repositório de comércio AEM](/help/sites-deploying/ecommerce-repository-restructuring-in-aem-6-5.md)
+* [Reestruturação de repositório do Commerce no AEM](/help/sites-deploying/ecommerce-repository-restructuring-in-aem-6-5.md)
 
 Cada página contém duas seções correspondentes à urgência das alterações necessárias. Qualquer coisa na seção &quot;Com atualização do 6.5&quot; deve ser abordada como parte do projeto de atualização do AEM 6.5. Qualquer item em &quot;Antes da atualização futura&quot; pode ser opcionalmente adiado até a pós-atualização.
 

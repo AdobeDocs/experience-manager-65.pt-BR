@@ -18,14 +18,14 @@ Você pode receber notificações de várias áreas do AEM, incluindo fluxos de 
 
 * Tarefas:
 
-   * também podem ser criadas em vários pontos da interface do usuário AEM, por exemplo, em **Projetos**,
-   * eles podem ser o produto de um workflow **Criar tarefa** ou **Criar tarefa de projeto** etapa.
+   * eles também podem ser criados em vários pontos da interface do AEM, por exemplo, em **Projetos**,
+   * estes podem ser o produto de uma etapa de fluxo de trabalho **Criar tarefa** ou **Criar tarefa do projeto**.
 
 * Fluxos de trabalhos:
 
    * itens de trabalho que representam as ações que devem ser executadas no conteúdo da página;
 
-      * estes são o produto de um fluxo de trabalho **Participante** etapas
+      * estes são o produto de etapas do fluxo de trabalho **Participante**
 
    * itens de falha, para permitir que os administradores tentem novamente a etapa que falhou.
 
@@ -70,10 +70,10 @@ Para abrir a caixa de entrada de notificação do AEM:
 
 1. Clique no indicador na barra de ferramentas.
 
-1. Selecione **Exibir todos**. A variável **Caixa de entrada AEM** é aberto. A caixa de entrada mostra itens de fluxos de trabalho, projetos e tarefas.
+1. Selecione **Exibir todos**. A **Caixa de Entrada do AEM** é aberta. A caixa de entrada mostra itens de fluxos de trabalho, projetos e tarefas.
 1. A exibição padrão é [Exibição em lista](#inbox-list-view), mas você também pode alternar para [Exibição de calendário](#inbox-calendar-view). Isso é feito com o seletor de visualização (barra de ferramentas, parte superior direita).
 
-   Para ambas as exibições também é possível definir [Configurações de exibição](#inbox-view-settings); as opções disponíveis dependem da exibição atual.
+   Para ambas as exibições você também pode definir [Configurações de Exibição](#inbox-view-settings); as opções disponíveis dependem da exibição atual.
 
    ![wf-79](assets/inbox-list-view.png)
 
@@ -95,9 +95,9 @@ Esta exibição apresenta os itens de acordo com sua posição no calendário e 
 
 É possível:
 
-* selecionar uma exibição específica; **Linha do tempo**, **Coluna**, **Lista**
+* selecione uma exibição específica; **Linha do Tempo**, **Coluna**, **Lista**
 
-* especificar as tarefas a serem exibidas de acordo com **Agendar**; **Todos**, **Planejado**, **Em andamento**, **Vencimento em breve**, **Vencido**
+* especifique as tarefas a serem exibidas de acordo com **Agendamento**; **Todos**, **Planejado**, **Em andamento**, **Vencimento em breve**, **Vencido**
 
 * fazer drill-down para obter informações mais detalhadas sobre um item
 * selecione um intervalo de datas para focalizar na exibição:
@@ -122,7 +122,7 @@ Para ambas as visualizações (Lista e Calendário), é possível definir certas
 
   Para a **visualização de Lista**, você pode configurar o mecanismo de classificação:
 
-   * **Classificar campo**
+   * **Classificar Campo**
    * **Ordem de classificação**
 
   ![wf-83](assets/inbox-settings.png)
@@ -137,25 +137,25 @@ A opção Admin Control permite que os administradores:
 
 * Controlar a exibição de links de navegação disponíveis no cabeçalho
 
-A opção Admin Control está visível somente para os membros da `administrators` ou `workflow-administrators` grupo.
+A opção Admin Control está visível somente para os membros do grupo `administrators` ou `workflow-administrators`.
 
-* **Personalização da coluna**: personalize uma caixa de entrada AEM para alterar o título padrão de uma coluna, reordenar a posição de uma coluna e exibir colunas adicionais com base nos dados de um fluxo de trabalho.
-   * **Adicionar coluna**: selecione uma coluna para adicionar à Caixa de entrada AEM.
-   * **Editar Coluna**: Passe o mouse sobre o título da coluna e selecione ![editar](assets/edit.svg) ícone para inserir um nome de exibição de coluna.
-   * **Excluir coluna**: selecione a variável ![excluir](assets/delete_updated.svg) ícone para excluir a coluna da Caixa de entrada AEM.
-   * **Mover Coluna**: arraste o ![mover](assets/move_updated.svg) ícone para mover uma coluna para uma nova posição na Caixa de entrada AEM.
+* **Personalização de coluna**: personalize uma caixa de entrada AEM para alterar o título padrão de uma coluna, reordenar a posição de uma coluna e exibir colunas adicionais com base nos dados de um fluxo de trabalho.
+   * **Adicionar Coluna**: selecione uma coluna para adicionar à Caixa de Entrada AEM.
+   * **Editar Coluna**: passe o mouse sobre o título da coluna e selecione o ícone ![editar](assets/edit.svg) para inserir um nome de exibição de coluna.
+   * **Excluir Coluna**: Selecione o ícone ![excluir](assets/delete_updated.svg) para excluir a coluna da Caixa de Entrada AEM.
+   * **Mover Coluna**: arraste o ícone ![mover](assets/move_updated.svg) para mover uma coluna para uma nova posição na Caixa de Entrada do AEM.
 
   ![admin-control](assets/admin-control-column-customize.png)
 
-* **Personalização da marca**
+* **Personalização de marca**
 
-   * **Personalizar texto de cabeçalho:** Especifique o texto a ser exibido no cabeçalho para substituir o padrão **Adobe Experience Manager** texto.
+   * **Personalizar texto de cabeçalho:** Especifique o texto a ser exibido no cabeçalho para substituir o texto padrão **Adobe Experience Manager**.
 
-   * **Personalizar logotipo:** Especifique a imagem a ser exibida no cabeçalho como logotipo. Carregue uma imagem no Gerenciamento de ativos digitais (DAM) e consulte essa imagem no campo.
+   * **Personalizar Logotipo:** Especifique a imagem a ser exibida no cabeçalho como logotipo. Carregue uma imagem no Gerenciamento de ativos digitais (DAM) e consulte essa imagem no campo.
 
 * **Navegação do usuário**
-   * **Ocultar opções de navegação:** Selecione essa opção para ocultar as opções de navegação disponíveis no cabeçalho. As opções de navegação incluem links para outras soluções, o link Ajuda e as opções de criação disponíveis ao tocar no logotipo ou texto do Adobe Experience Manager.
-* **Salvar:** Clique nessa opção para salvar as configurações.
+   * **Ocultar opções de navegação:** selecione esta opção para ocultar as opções de navegação disponíveis no cabeçalho. As opções de navegação incluem links para outras soluções, o link Ajuda e as opções de criação disponíveis ao tocar no logotipo ou texto do Adobe Experience Manager.
+* **Salvar:** Clique nesta opção para salvar as configurações.
 
 ## Realizar ação em um item {#taking-action-on-an-item}
 
@@ -170,15 +170,15 @@ A opção Admin Control está visível somente para os membros da `administrator
 
    As ações são apropriadas ao item e incluem:
 
-   * **Concluído** ação; por exemplo, uma tarefa ou item de workflow.
+   * **Concluir** ação; por exemplo, uma tarefa ou item de fluxo de trabalho.
    * **Reatribuir**/**Delegar** um item.
-   * **Abertura** um item; dependendo do tipo de item, essa ação pode:
+   * **Abrir** um item; dependendo do tipo de item, essa ação pode:
 
       * mostrar as propriedades do item
       * abrir um painel ou assistente apropriado para executar outras ações
       * abrir documentação relacionada
 
-   * **Retroceder** para uma etapa anterior.
+   * **Recuar** para uma etapa anterior.
    * Visualizar a carga de um fluxo de trabalho.
    * Crie um projeto a partir do item.
 
@@ -209,14 +209,14 @@ A opção Admin Control está visível somente para os membros da `administrator
 Na caixa de entrada, é possível criar tarefas:
 
 1. Selecione **Criar**, depois **Tarefa**.
-1. Preencha os campos necessários no **Básico** e **Avançado** guias; somente o **Título** é obrigatório, todos os outros são opcionais:
+1. Preencha os campos necessários nas guias **Básico** e **Avançado**; somente o **Título** é obrigatório, todos os outros são opcionais:
 
    * **Básico**:
 
       * **Título**
       * **Projeto**
       * **Destinatário**
-      * **Conteúdo**; semelhante a Carga, essa é uma referência da tarefa a um local no repositório
+      * **Conteúdo**; semelhante à Carga, esta é uma referência da tarefa a um local no repositório
       * **Descrição**
       * **Prioridade da tarefa**
       * **Data inicial**
@@ -226,7 +226,7 @@ Na caixa de entrada, é possível criar tarefas:
 
    * **Avançado**
 
-      * **Nome**: isso é usado para formar o URL; se estiver vazio, será baseado no **Título**.
+      * **Nome**: é usado para formar a URL; se estiver vazio, será baseado no **Título**.
 
    ![wf-87](assets/wf-87.png)
 

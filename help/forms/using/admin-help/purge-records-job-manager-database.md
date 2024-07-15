@@ -20,9 +20,9 @@ ht-degree: 0%
 
 Os dados de processo gerados quando um processo de longa duração é chamado podem se tornar muito grandes, resultando em menor desempenho dos formulários AEM e no uso de espaço em disco desnecessário. É uma boa prática limpar os dados do processo quando os registros não são mais necessários.
 
-Você pode usar a console de administração para executar uma expurgação única de registros obsoletos ou para programar expurgações automáticas regulares. Outros métodos para expurgar registros obsoletos são discutidos em [Limpando dados do processo](/help/forms/using/admin-help/purging-process-data.md#purging-process-data).
+Você pode usar a console de administração para executar uma expurgação única de registros obsoletos ou para programar expurgações automáticas regulares. Outros métodos para limpar registros obsoletos são discutidos em [Limpando dados do processo](/help/forms/using/admin-help/purging-process-data.md#purging-process-data).
 
-**Acessar a página Programador de Expurgação do Job**
+**Acessar a página Agendador de Limpeza de Trabalho**
 
 1. No Console de administração, clique em Monitor de integridade no canto superior direito da página.
 1. Clique na guia Agendador de Expurgação de Job.
@@ -33,7 +33,7 @@ As informações sobre expurgações programadas no momento são exibidas na cai
 >
 >Clicar em Interromper Scheduler interrompe todas as expurgações programadas no futuro, mas não interrompe um job de expurgação que já esteja em andamento.
 
-**Programar uma limpeza única**
+**Agendar uma limpeza única**
 
 1. Selecione Somente Uma Vez.
 1. Na área Filtro de Registros de Expurgação Concluída, especifique o número de dias ou semanas após os quais um registro será considerado obsoleto e pronto para expurgação.
@@ -53,7 +53,7 @@ As informações sobre expurgações programadas no momento são exibidas na cai
 **Configurar um agendamento de limpeza automática**
 
 1. Selecione Repetir a Cada e especifique o número de dias ou semanas entre expurgações.
-1. Na área Filtro de Registros de Expurgação Concluída, especifique o número de dias ou semanas após os quais um registro será considerado obsoleto e pronto para expurgação. Não é possível definir o valor como `0`.
+1. Na área Filtro de Registros de Expurgação Concluída, especifique o número de dias ou semanas após os quais um registro será considerado obsoleto e pronto para expurgação. Você não pode definir o valor como `0`.
 
    >[!NOTE]
    >

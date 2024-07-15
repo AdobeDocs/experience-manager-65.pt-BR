@@ -33,9 +33,9 @@ Este artigo lista as correções críticas implementadas para resolver problemas
     <td>quinta-feira, 10 de julho de 2024</td>
      <td>
      <ul>
-     <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/aemforms-6-5-0-0089/jboss/win/adobe-aem-forms-jee-service-pack-6.5.21.0-hotfix-windows-jboss.zip.zip">Hotfix do AEM Service Pack 6.5.21.0 no Windows para servidor JBoss JEE </a> </li>
-      <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/aemforms-6-5-0-0089/jboss/linux/adobe-aem-forms-jee-service-pack-6.5.21.0-hotfix-linux-jboss.tar.gz">Hotfix do AEM Service Pack 6.5.21.0 no Linux para servidor JBoss JEE </a> </li>
-       <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/aemforms-6-5-0-0089/websphere/win/adobe-aem-forms-jee-service-pack-6.5.21.0-hotfix-windows-websphere.zip.zip">Hotfix do AEM Service Pack 6.5.21.0 no Windows para servidor Webshpere JEE </a> </li>
+     <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/aemforms-6-5-0-0089/jboss/win/adobe-aem-forms-jee-service-pack-6.5.21.0-hotfix-windows-jboss.zip.zip">Hotfix do AEM Service Pack 6.5.21.0 no Windows para JBoss JEE Server </a> </li>
+      <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/aemforms-6-5-0-0089/jboss/linux/adobe-aem-forms-jee-service-pack-6.5.21.0-hotfix-linux-jboss.tar.gz">Hotfix do AEM Service Pack 6.5.21.0 no Linux para JBoss JEE server </a> </li>
+       <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/aemforms-6-5-0-0089/websphere/win/adobe-aem-forms-jee-service-pack-6.5.21.0-hotfix-windows-websphere.zip.zip">Hotfix do AEM Service Pack 6.5.21.0 no Windows para servidor Webspace JEE </a> </li>
         <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/aemforms-6-5-0-0089/websphere/linux/adobe-aem-forms-jee-service-pack-6.5.21.0-hotfix-linux-websphere.tar.gz">Hotfix do AEM Service Pack 6.5.21.0 no Linux para servidor Webshpere JEE</a> </li>
         <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/aemforms-6-5-0-0089/weblogic/win/adobe-aem-forms-jee-service-pack-6.5.21.0-hotfix-windows-weblogic.zip.zip">Hotfix do AEM Service Pack 6.5.21.0 no Windows para servidor Weblogic JEE </a> </li>
         <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/aemforms-6-5-0-0089/weblogic/linux/adobe-aem-forms-jee-service-pack-6.5.21.0-hotfix-linux-weblogic.tar.gz">Hotfix do AEM Service Pack 6.5.21.0 no Linux para servidor Weblogic JEE</a> </li>
@@ -58,7 +58,7 @@ Este artigo lista as correções críticas implementadas para resolver problemas
      </td>
     <td>
     <ul>
-    <li> Depois da atualização para o AEM Forms Service Pack 6.5.21.0, o serviço PaperCapture falha ao executar operações de OCR (Optical Character Recognition, reconhecimento ótico de caracteres) no PDF. Para obter instruções de instalação, consulte o <a href="/help/forms/using/papercapture-service-resolution.md"> solução de problemas</a> artigo.(CQDOC-21680) </li>
+    <li> Depois da atualização para o AEM Forms Service Pack 6.5.21.0, o serviço PaperCapture falha ao executar operações de OCR (Optical Character Recognition, reconhecimento ótico de caracteres) no PDF. Para obter instruções de instalação, consulte o artigo <a href="/help/forms/using/papercapture-service-resolution.md"> solução de problemas</a>.(CQDOC-21680) </li>
     </ul>
     </td>    
   </tr>
@@ -71,7 +71,7 @@ Este artigo lista as correções críticas implementadas para resolver problemas
      </td>
     <td>
     <ul>
-    <li>Cartas de rascunho com dados XML ficam presas no estado de carregamento durante a pré-visualização. Para obter instruções de download e instalação do hotfix, consulte<a href="#install-hotfix"> Baixar e instalar hotfix para problema de rascunho de carta</a> seção.(FORMS-14521)</li>
+    <li>Cartas de rascunho com dados XML ficam presas no estado de carregamento durante a pré-visualização. Para obter instruções de download e instalação da correção, consulte a seção <a href="#install-hotfix"> Baixar e instalar correção para problema de carta de rascunho</a>.(FORMS-14521)</li>
     </ul>
     </td>    
   </tr>
@@ -147,9 +147,9 @@ Este artigo lista as correções críticas implementadas para resolver problemas
 
 Execute as seguintes etapas para baixar e instalar o Hotfix:
 
-1. Baixar [Hotfix](#hotfix-for-adaptive-forms) no link Distribuição de software.
+1. Baixar [Hotfix](#hotfix-for-adaptive-forms) do link de Distribuição de Software.
 1. Extraia o arquivo de Hotfix para obter um pacote de Experience Manager (.zip) e arquivos de pacote (.jar).
-1. Carregue e instale o pacote (.zip) por meio do [Gerenciador de pacotes](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager.html?lang=es#accessing).
+1. Carregue e instale o pacote (.zip) por meio do [Gerenciador de Pacotes](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager.html?lang=es#accessing).
 1. Abra os pacotes do gerenciador de configurações `https://server:host/system/console/bundles`, carregue e instale o pacote (.jar). O hotfix do está instalado.
 
 
@@ -157,5 +157,5 @@ Execute as seguintes etapas para baixar e instalar o Hotfix:
 
 Para resolver o problema, execute as seguintes etapas:
 
-1. Baixe o [hotfix](#hotfix-for-adaptive-forms) no Portal de distribuição de software.
-2. Carregue e instale o pacote (.zip) usando o [Gerenciador de pacotes do CRX](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager.html?lang=es#accessing).
+1. Baixe o [hotfix](#hotfix-for-adaptive-forms) do Portal de Distribuição de Software.
+2. Carregue e instale o pacote (.zip) usando o [Gerenciador de Pacotes do CRX](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager.html?lang=es#accessing).
