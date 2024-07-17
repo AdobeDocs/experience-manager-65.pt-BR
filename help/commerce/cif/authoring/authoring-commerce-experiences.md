@@ -5,9 +5,9 @@ exl-id: 2db51bd7-8fc7-4ae8-8d6f-e5035fbe954d
 solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
-source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
+source-git-commit: a02724597338ee2451448c6c4188fc349dd47d01
 workflow-type: tm+mt
-source-wordcount: '713'
+source-wordcount: '711'
 ht-degree: 0%
 
 ---
@@ -72,9 +72,9 @@ Páginas de catálogo de produtos CIF são páginas virtuais que são renderizad
 
 ![RTE](/help/commerce/cif/assets/authoring/RTE.png)
 
-    >[!NOTE]
-    >
-    >Se a categoria e o produto forem selecionados, o produto será retirado.
+>[!NOTE]
+>
+>Se a categoria e o produto forem selecionados, o produto será retirado.
 
 Isso cria um link de espaço reservado que é substituído por um link real quando a página é renderizada.
 
@@ -102,6 +102,6 @@ Usar o Omnisearch é uma maneira fácil para os profissionais encontrarem dados 
 
 O resultado é agrupado por tipo.
 
-    >[!NOTE]
-    >
-    >A pesquisa de texto completo no Omnisearch não oferece suporte aos Fragmentos de Conteúdo associados. Use SKU ou UID para localizar Fragmentos de Conteúdo associados.
+>[!NOTE]
+>
+>A pesquisa de texto completo no Omnisearch não é compatível com Fragmentos de conteúdo associados. Use SKU ou UID para localizar fragmentos de conteúdo associados.
