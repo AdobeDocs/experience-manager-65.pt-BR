@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Use a documentação do Adobe Experience Manager 6.5 para saber como funciona e o que o software pode fazer por você.
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM 6.5
-source-git-commit: 721837590521aeaa82ab8a960098eba87c0ffb43
+source-git-commit: d5d1c3909a135de61d777c39ba60fbb897722e8e
 workflow-type: tm+mt
-source-wordcount: '7456'
+source-wordcount: '7445'
 ht-degree: 20%
 
 ---
@@ -50,7 +50,7 @@ ht-degree: 20%
    + [Administração e segurança do usuário](/help/sites-administering/security.md)
    + [Administração de direitos de usuário, grupo e acesso](/help/sites-administering/user-group-ac-admin.md)
    + [Lista de verificação de segurança](/help/sites-administering/security-checklist.md)
-   + [OWASP 10 melhores](/help/sites-administering/owasp-top10.md)
+   + [OWASP Top 10](/help/sites-administering/owasp-top10.md)
    + [Execução do AEM no modo de produção pronta](/help/sites-administering/production-ready.md)
    + [Gerenciamento de identidade](/help/sites-administering/identity-management.md)
    + [Autenticação do Adobe IMS e suporte de Admin Console para AEM Managed Services](/help/sites-administering/ims-config-and-admin-console.md)
@@ -809,7 +809,7 @@ ht-degree: 20%
       + [Criar correspondência](/help/forms/using/create-correspondence.md)
       + [Funções remotas no Construtor de expressões](/help/forms/using/expression-builder.md)
       + [Gerenciar imagens de assinatura do agente](/help/forms/using/manage-agent-signature-images.md)
-      + [Processamento de cartas Post e comunicações interativas](/help/forms/using/submit-letter-topostprocess.md)
+      + [Pós-processamento de cartas e comunicações interativas](/help/forms/using/submit-letter-topostprocess.md)
       + [Adicionar ação personalizada à exibição de Listagem de ativos](/help/forms/using/add-custom-action-asset-listing-view.md)
       + [Adicionar ação/botão personalizado na interface para Criar correspondência](/help/forms/using/add-action-button-in-create-correspondence-ui.md)
       + [Adicionar propriedades personalizadas aos ativos do Gerenciamento de correspondência](/help/forms/using/add-custom-properties-cm-assets.md)
@@ -1260,9 +1260,6 @@ ht-degree: 20%
          + [eCommerce](/help/commerce/cif-classic/developing/ecommerce.md)
          + [Desenvolvimento (genérico)](/help/commerce/cif-classic/developing/generic.md)
          + [Desenvolvimento com Commerce Cloud SAP](/help/commerce/cif-classic/developing/sap-commerce-cloud.md)
-+ Edge Delivery Services {#edge-delivery-services}
-   + [Introdução ao Edge Delivery](/help/edge/overview.md)
-   + [Utilização do Edge Delivery](/help/edge/using.md)
 + Headless {#headless}
    + [Jornadas do AEM Headless](/help/journey-headless/overview.md)
    + Jornada para Desenvolvedores AEM Headless {#developer}
@@ -1603,7 +1600,7 @@ ht-degree: 20%
          + [Migração de conteúdo lento](/help/sites-deploying/lazy-content-migration.md)
          + [Uso da Ferramenta de Migração CRX2Oak](/help/sites-deploying/using-crx2oak.md)
          + [Tarefas de Manutenção de Pré-Atualização](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)
-         + [Verificações de atualização e solução de problemas do Post](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md)
+         + [Verificações pós-atualização e solução de problemas](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md)
          + [Atualização do Forms de pesquisa personalizada](/help/sites-deploying/upgrading-custom-search-forms.md)
          + [Atualizações sustentáveis](/help/sites-deploying/sustainable-upgrades.md)
          + [Atualização de código e personalizações](/help/sites-deploying/upgrading-code-and-customizations.md)
