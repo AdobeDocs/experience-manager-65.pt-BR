@@ -6,7 +6,8 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 6b86212a2b3a86b2205714c802dc1581d30e7441
+exl-id: 3a9d7943-2c34-4e0a-9803-7ce1ef40f676
+source-git-commit: 0d491be4fb2605220b1558c8c877151ab4405978
 workflow-type: tm+mt
 source-wordcount: '11687'
 ht-degree: 0%
@@ -148,13 +149,15 @@ Pontos de verificação relacionados
 
 ## Fornecer rótulos adequados para controles de formulário{#provide-proper-labels}
 
-O rótulo ou a legenda de um controle de formulário identifica o que o controle de formulário deve representar. Por exemplo, o texto &quot;Nome&quot; informa aos usuários que eles devem inserir seu nome em um campo de texto. Para ser acessível por leitores de tela, o rótulo deve ser associado programaticamente ao controle de formulário ou o controle de formulário deve ser configurado com informações de acessibilidade adicionais usando a paleta Acessibilidade; não é suficiente apenas colocar um objeto de texto ao lado do controle. Para usuários com deficiências visuais, é importante que o rótulo esteja posicionado corretamente ao lado do controle. Ambas as técnicas serão discutidas nas seções a seguir.
+O rótulo ou legenda de um controle de formulário identifica o que o controle de formulário deve representar. Por exemplo, o texto &quot;Nome&quot; informa aos usuários que eles devem inserir seu nome em um campo de texto. Para ser acessível por leitores de tela, o rótulo deve ser associado programaticamente ao controle de formulário ou o controle de formulário deve ser configurado com informações de acessibilidade adicionais usando a paleta Acessibilidade; não é suficiente apenas colocar um objeto de texto ao lado do controle. Para usuários com deficiências visuais, é importante que o rótulo esteja posicionado corretamente ao lado do controle. Ambas as técnicas serão discutidas nas seções a seguir.
 
 ### Especificação de texto de rótulo acessível usando a paleta Acessibilidade
 
 O rótulo percebido pelos usuários de leitores de tela não precisa necessariamente ser o mesmo da legenda visual. Em alguns casos, talvez você queira ser mais específico sobre a finalidade do controle.
 Para cada objeto de campo em um formulário, a paleta Acessibilidade (veja a Figura 3) pode ser usada para especificar o que o leitor de tela anunciará para identificar o campo de formulário específico.
+
 Para usar a paleta Acessibilidade, siga estas etapas:
+
 1. Exiba a paleta Acessibilidade escolhendo Janela > Acessibilidade ou pressionando Shift+F6.
 1. Selecione um objeto no formulário. A paleta mostrará as propriedades de acessibilidade do objeto.
 
@@ -170,8 +173,8 @@ Quando o formulário é salvo como um PDF, o LiveCycle Designer pesquisa o formu
 
 As opções disponíveis são as seguintes:
 
-* **Texto personalizado**, que você define no campo Texto de Reader da tela personalizada da paleta de acessibilidade. Essa opção permite especificar qualquer texto que você deseja que a tecnologia assistiva, como leitores de tela, use. O uso da configuração de Legenda é melhor para a maioria das situações. Criar texto de Reader de tela personalizada deve ser considerado uma opção somente quando a Legenda ou uma dica de ferramenta não forem possíveis.
-* **Dica de Ferramenta**, que você definiu no campo Dica de Ferramenta da paleta Acessibilidade. Para a maioria dos objetos, as dicas de ferramentas aparecem em tempo de execução quando o usuário passa o ponteiro do mouse sobre o objeto. As dicas de ferramenta são exibidas para alguns objetos somente leitura, como o objeto de código de barras de um formulário de papel, somente quando um leitor de tela está em uso.
+* **Texto personalizado**, que você definiu no campo Texto de Reader da tela personalizada da paleta de acessibilidade. Essa opção permite especificar qualquer texto que você deseja que a tecnologia assistiva, como leitores de tela, use. O uso da configuração de Legenda é melhor para a maioria das situações. Criar texto de Reader de tela personalizada deve ser considerado uma opção somente quando a Legenda ou uma dica de ferramenta não forem possíveis.
+* **Dica de Ferramenta**, que você definiu no campo Dica de Ferramenta da paleta Acessibilidade. Para a maioria dos objetos, as dicas de ferramentas aparecem em tempo de execução quando o usuário passa o ponteiro do mouse sobre o objeto. As dicas de ferramentas são exibidas para alguns objetos somente leitura, como o objeto de código de barras de um formulário de papel, somente quando um leitor de tela está em uso.
 * **Legenda**, que fará com que o LiveCycle Designer use o rótulo associado (visual) do campo de formulário como texto de leitor de tela.
 * **Nome**, que você definiu no campo Nome da guia Associação. Observe que esse nome não pode conter espaços.
 * **Nenhum**, o que fará com que o objeto não tenha um nome. Isso nunca é recomendado para controles de formulário.
@@ -185,9 +188,9 @@ Considere o seguinte ao usar a paleta Acessibilidade para rotulagem de controle 
 * Se você precisar criar uma descrição usando as opções de Dica de ferramenta ou Texto de Reader de tela personalizado, sempre inclua a legenda que está visível no formulário, exceto quando a legenda visível não for significativa, por exemplo, quando a própria legenda estiver abreviada. Isso ajuda os usuários de leitores de tela a se comunicarem de maneira eficaz com outros usuários sobre os elementos da interface do usuário. Esses diferentes grupos de usuários têm dificuldade em identificar o mesmo elemento da interface do usuário se o texto da legenda for diferente da Dica de ferramenta ou do Texto de Reader da tela personalizada.
 * Para caixas de seleção e controles de lista suspensa em células de tabela, o leitor de tela anunciará qualquer legenda, dica de ferramenta ou texto personalizado de leitor de tela especificado para o objeto. Se quiser usar o cabeçalho da coluna como o texto alternativo para esses objetos quando colocados em uma tabela, não forneça uma legenda, dica de ferramenta ou texto de leitor de tela personalizado.
 * Se o controle exigir instruções adicionais, verifique se elas também estão incluídas na alternativa em texto. Inclua informações faladas suficientes para que os usuários saibam qual entrada é esperada e como preencher o campo corretamente, mas não sobrecarregue os usuários com informações redundantes.
-* Não forneça informações desnecessárias descrevendo como operar controles - permita que as tecnologias assistivas do usuário lidem com isso para o usuário. Os usuários podem configurar a verbosidade para se adequar aos seus níveis de conforto.
+* Não forneça informações desnecessárias descrevendo como operar controles - deixe as tecnologias de assistência do usuário lidarem com isso para o usuário. Os usuários podem configurar a verbosidade para se adequar aos seus níveis de conforto.
 
-A Figura 4 mostra um exemplo de um campo de texto com uma legenda visual que pode não estar clara para alguns usuários de leitores de tela. Neste exemplo, o Texto de Reader da tela personalizada está definido como &quot;Número de páginas&quot; e a Precedência de Reader da tela está definida como Texto personalizado. Como resultado, o texto da legenda real (visual) (&quot;# de páginas&quot;) não será usado pelo leitor de tela. Como alternativa, uma Dica de ferramenta pode ter sido especificada.
+A Figura 4 mostra um exemplo de um campo de texto com uma legenda visual que pode não estar clara para alguns usuários de leitores de tela. Neste exemplo, o Texto de Reader da tela personalizada está definido como &quot;Número de páginas&quot;, e a Precedência de Reader da tela está definida como Texto personalizado. Como resultado, o texto da legenda real (visual) (&quot;# de páginas&quot;) não será usado pelo leitor de tela. Como alternativa, uma Dica de ferramenta pode ter sido especificada.
 
 ![Especificando o Texto de Reader de Tela Personalizada quando o rótulo visível é inadequado](/help/forms/using/assets/image-4.png)
 
@@ -240,7 +243,7 @@ A tabela a seguir fornece uma visão geral das regras de posicionamento de rótu
 | Grupo de botões de opção | Crie um título visível para o grupo de botões de opção criando um elemento de texto estático e colocando-o à esquerda ou acima do grupo. Para cada botão de opção individual, coloque o rótulo à direita (padrão). |
 | Lista suspensa | Coloque a legenda à esquerda do objeto (padrão). Se isso não for possível, coloque-o imediatamente acima dele. Para controles de lista suspensa em células de tabela, o leitor de tela anunciará qualquer legenda, dica de ferramenta ou texto de leitor de tela personalizado que você especificar para o objeto. Se quiser usar o cabeçalho da coluna como texto alternativo para esses objetos em uma tabela, não forneça uma legenda, dica de ferramenta ou texto de leitor de tela personalizado. |
 | Caixa de listagem | A legenda é posicionada acima da caixa de listagem por padrão ao criá-la. |
-| Botão | A legenda é colocada automaticamente no botão e não precisa ser posicionada manualmente. Verifique se a finalidade do botão está descrita corretamente pelo texto da legenda. |
+| Botão | A legenda é colocada automaticamente no botão e não precisa ser posicionada manualmente. Verifique se a finalidade do botão está descrita corretamente no texto da legenda. |
 
 
 ### Preencher dinamicamente uma dica de ferramenta ou um texto de Reader de tela personalizado
@@ -350,7 +353,7 @@ Para ativar as ajudas visuais, use os seguintes métodos:
 
 ### Usar a posição para influenciar a ordem de tabulação padrão
 
-Para influenciar a ordem de tabulação padrão, é possível alterar as coordenadas de um objeto movendo-o para um local diferente. Por exemplo, na Figura 9, o campo Nome do produto ocorre na ordem de tabulação antes do campo Quantidade. Para alterar esse pedido, você pode mover o campo Nome do produto para que ele seja colocado abaixo ou à direita do campo Quantidade.
+Para influenciar a ordem de tabulação padrão, você pode alterar as coordenadas de um objeto movendo-o para um local diferente. Por exemplo, na Figura 9, o campo Nome do produto ocorre na ordem de tabulação antes do campo Quantidade. Para alterar esse pedido, você pode mover o campo Nome do produto para que ele seja colocado abaixo ou à direita do campo Quantidade.
 
 ![A ordem de tabulação padrão é da esquerda para a direita](/help/forms/using/assets/image-9.png)
 
@@ -390,7 +393,7 @@ Subformulários, botões de opção e áreas de conteúdo, juntamente com a posi
 ### Criação de uma ordem de tabulação personalizada usando a paleta Ordem de tabulação
 
 Você pode alterar a ordem de tabulação padrão quando precisar de uma sequência diferente no formulário e a alteração não puder ser obtida com o posicionamento ou agrupamento em subformulários. Para alterar a ordem de tabulação padrão, é possível criar uma ordem de tabulação personalizada usando a paleta Ordem de tabulação.
-A paleta Ordem de tabulação (veja a Figura 12) permite inspecionar e modificar a ordem em que os objetos no seu formulário são lidos pela tecnologia assistiva e navegados pela tecla Tab do usuário.
+A paleta Ordem de tabulação (veja a Figura 12) permite inspecionar e modificar a ordem em que os objetos em seu formulário são lidos pela tecnologia assistiva e navegados pela tecla Tab do usuário.
 
 ![A paleta Ordem de Tabulação](/help/forms/using/assets/image-12.png)
 
@@ -472,7 +475,7 @@ Por exemplo, a Figura 13 mostra um campo de formulário que tem uma legenda verm
 
 Figura 13: **Usando somente cor para transmitir informações**
 
-Para resolver esse problema, indique também o status obrigatório do formulário no texto alternativo do controle de formulário (conforme descrito na seção 2.5. Forneça rótulos adequados para controles de formulário). Por exemplo, você pode definir o texto do leitor de tela como &quot;Zip code (obrigatório)&quot;. Para usuários que têm dificuldades em ver a cor em determinadas combinações, é recomendável definir o tipo de campo de texto como Informado pelo usuário - Obrigatório na paleta Objeto, além de texto alternativo que indica que o campo é obrigatório. Como alternativa, você pode usar outras indicações além da cor, como texto visual, estilos de texto e estilos de borda. No entanto, para usuários de leitores de tela, ainda será necessário transmitir as informações necessárias usando a paleta Acessibilidade.
+Para resolver esse problema, indique também o status necessário do formulário no texto alternativo do controle de formulário (conforme descrito na seção 2.5. Forneça rótulos adequados para controles de formulário). Por exemplo, você pode definir o texto do leitor de tela como &quot;Zip code (obrigatório)&quot;. Para usuários que têm dificuldades em ver a cor em determinadas combinações, é recomendável definir o tipo de campo de texto como Informado pelo usuário - Obrigatório na paleta Objeto, além de texto alternativo que indica que o campo é obrigatório. Como alternativa, você pode usar outras indicações além da cor, como texto visual, estilos de texto e estilos de borda. No entanto, para usuários de leitores de tela, ainda será necessário transmitir as informações necessárias usando a paleta Acessibilidade.
 
 Além disso, ao fornecer descrições ou instruções ao usuário do formulário, lembre-se de que as declarações baseadas apenas em cores são insuficientes para usuários com deficiência visual. Por exemplo, em vez de uma instrução como &quot;Clique no botão verde para continuar&quot;, use uma descrição de texto para ações, como &quot;Clique no botão Avançar para continuar&quot;.
 
