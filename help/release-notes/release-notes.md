@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: fb689e86deaabcc4033ed75f615086b630a9a525
+source-git-commit: 447ff116c822c7ab0d5826103d6485e7d4ed13ce
 workflow-type: tm+mt
-source-wordcount: '4332'
+source-wordcount: '4390'
 ht-degree: 1%
 
 ---
@@ -64,7 +64,7 @@ Alguns dos principais recursos e aprimoramentos desta versão incluem:
 
 Veja a seguir uma lista das melhorias incluídas nesta versão:
 
-* A guia IPTC agora oferece suporte aos campos de texto [!UICONTROL Texto Alternativo] e [!UICONTROL Descrição Estendida]. (ASSETS-34918)
+* A guia IPTC agora oferece suporte aos campos de texto [!UICONTROL Texto Alt] e [!UICONTROL Descrição Estendida]. (ASSETS-34918)
 
 #### Correções de acessibilidade
 
@@ -550,6 +550,8 @@ Para garantir a operação correta, você deve adicionar as seguintes propriedad
    1. Navegue até o diretório `/libs/fd/aemforms/install/` no CRXDE.
    1. Exclua o pacote com o nome `com.adobe.granite.ui.commons-5.10.26.jar`.
    1. Reinicie o servidor AEM.
+
+* Quando um usuário atualiza para o AEM Forms Service Pack 20 (6.5.20.0) instalado com o complemento do Forms, as configurações que usam o serviço de nuvem herdado para o Adobe Analytics com autenticação baseada em credencial do usuário não funcionam corretamente, causando a falha da execução das regras do Analytics. Para baixar e instalar o hotfix, consulte o artigo [Adobe Experience Manager Forms Hotfixes](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms). (FORMS-15428)
 
 * Quando um usuário atualiza para o AEM Forms Service Pack 20 (6.5.20.0) no servidor JEE e gera PDF usando serviços de saída, os PDF são renderizados com problemas de acessibilidade. Para baixar e instalar o hotfix, consulte o artigo [Adobe Experience Manager Forms Hotfixes](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms). (LC-3922112)
 * Quando um usuário gera PDF com tags usando o serviço de saída no JEE, ele mostra &quot;Aviso de estrutura inadequada&quot;. Para baixar e instalar o hotfix, consulte o artigo [Adobe Experience Manager Forms Hotfixes](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms). (LC-3922038)
