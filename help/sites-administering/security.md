@@ -10,9 +10,9 @@ exl-id: 53d8c654-8017-4528-a44e-e362d8b59f82
 feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 84979bbb49d47ec47c898a6747f64048b577c365
+source-git-commit: 6f3c4f4aa4183552492c6ce5039816896bd67495
 workflow-type: tm+mt
-source-wordcount: '5409'
+source-wordcount: '5412'
 ht-degree: 1%
 
 ---
@@ -610,7 +610,7 @@ Para saber mais sobre a sincronização de usuários e como habilitá-la, consul
 
 >[!NOTE]
 >
->O Adobe apresentou uma nova visualização principal baseada na interface para toque para gerenciamento de permissões. Para obter mais detalhes sobre como usá-lo, consulte [esta página](/help/sites-administering/touch-ui-principal-view.md).
+>O Adobe apresentou uma nova visualização principal baseada na interface para toque para gerenciamento de permissões. Para obter mais detalhes sobre como usá-lo, consulte [Exibição principal para Gerenciamento de Permissões](/help/sites-administering/touch-ui-principal-view.md).
 
 Esta seção descreve como definir permissões, incluindo privilégios de replicação.
 

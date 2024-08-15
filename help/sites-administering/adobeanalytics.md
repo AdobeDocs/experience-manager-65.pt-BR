@@ -10,20 +10,14 @@ exl-id: 0a87ece4-57ed-4022-a78a-264c1edf4b4e
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '282'
-ht-degree: 58%
+source-wordcount: '267'
+ht-degree: 56%
 
 ---
 
 # Integração ao Adobe Analytics{#integrating-with-adobe-analytics}
-
-| Versão | Link do artigo |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/integrating-adobe-analytics.html) |
-| AEM 6.5 | Este artigo |
-
 
 Integrar o Adobe Analytics e o AEM permite rastrear a atividade da página da Web:
 

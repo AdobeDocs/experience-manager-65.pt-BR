@@ -10,9 +10,9 @@ exl-id: 5d51f898-b6d1-40ac-bdbf-127cda1dc777
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '1754'
+source-wordcount: '1758'
 ht-degree: 0%
 
 ---
@@ -379,7 +379,7 @@ Ao usar o método** legacy seconds**, as chamadas do Adobe Analytics são aciona
 
    ![lsegundos](assets/lseconds.png)
 
-   *A chamada é semelhante à chamada de Marcos herdados acima. Consulte as informações no pev3 **[fornecidas aqui](/help/sites-administering/adobeanalytics.md)**.*
+   *A chamada é semelhante à chamada de Marcos herdados acima. Consulte as informações sobre pev3 fornecidas em [Integração com o Adobe Analytics](/help/sites-administering/adobeanalytics.md).*
 
 **Referências usadas neste tutorial:**
 

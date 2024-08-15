@@ -10,9 +10,9 @@ exl-id: 0dc4a8ce-5b0e-4bc9-a6f5-df2a67149e22
 solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 3aa55b88f589749fb49d5ff46340b0912d490157
 workflow-type: tm+mt
-source-wordcount: '1892'
+source-wordcount: '1897'
 ht-degree: 0%
 
 ---
@@ -182,7 +182,7 @@ O comando curl retorna imediatamente.
 
 A verificação de consistência do armazenamento de dados relatará todos os binários de armazenamento de dados que estão ausentes, mas ainda são referenciados. Para iniciar uma verificação de consistência, siga estas etapas:
 
-1. Vá para o console JMX. Para obter informações sobre como usar o console JMX, consulte [este artigo](/help/sites-administering/jmx-console.md#using-the-jmx-console).
+1. Vá para o console JMX. Para obter informações sobre como usar o console JMX, consulte [Recursos do Monitoring Server Usando o Console JMX](/help/sites-administering/jmx-console.md#using-the-jmx-console).
 1. Procure o Mbean **BlobGarbageCollection** e clique nele.
 1. Clique no link `checkConsistency()`.
 

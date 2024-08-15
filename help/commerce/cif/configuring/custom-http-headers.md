@@ -5,9 +5,9 @@ exl-id: 834aadac-c3be-4e7a-a3cb-349608810b40
 solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
-source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '272'
 ht-degree: 3%
 
 ---
@@ -37,7 +37,7 @@ Os componentes que usam a configuração do Cloud Service acima enviam esses cab
 
 ## Restrições {#restrictions}
 
-Embora o serviço permita que qualquer nome de cabeçalho seja definido, incluindo os padrão, eles não estão disponíveis para configuração. Em outras palavras, não é possível substituir os cabeçalhos HTTP padrão usando esse recurso. Uma lista de nomes de cabeçalho restritos pode ser encontrada [aqui](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers). Além desses, há mais dois cabeçalhos que não podem ser usados:
+Embora o serviço permita que qualquer nome de cabeçalho seja definido, incluindo os padrão, eles não estão disponíveis para configuração. Em outras palavras, não é possível substituir os cabeçalhos HTTP padrão usando esse recurso. Uma lista de nomes de cabeçalho restritos pode ser encontrada em [mdn web docs - HTTP headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers). Além desses, há mais dois cabeçalhos que não podem ser usados:
 
 * &quot;Loja&quot; - usado pelo CIF para identificar a loja da Adobe Commerce
 * &quot;Versão de visualização&quot; - usado pelo CIF para recuperar produtos preparados

@@ -10,9 +10,9 @@ exl-id: baec7fc8-d48c-4bc6-b12b-4bf4eff695ea
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '1758'
+source-wordcount: '1756'
 ht-degree: 0%
 
 ---
@@ -123,7 +123,7 @@ Vantagens:
 
 >[!NOTE]
 >
->No diagrama acima, o Servidor AEM 3 e o Servidor AEM 4 são apresentados com um status de inativo supondo uma latência de rede entre os Servidores AEM no Data Center 2 e o nó primário MongoDB no Data Center 1 que é maior do que o requisito documentado [aqui](/help/sites-deploying/aem-with-mongodb.md#checklists). Se a latência máxima for compatível com os requisitos, por exemplo, por meio do uso de zonas de disponibilidade, os servidores AEM no Data Center 2 também poderão estar ativos, criando um cluster AEM ativo-ativo em vários data centers.
+>No diagrama acima, o Servidor AEM 3 e o Servidor AEM 4 são apresentados com um status de inativo supondo uma latência de rede entre os Servidores AEM no Data Center 2 e o nó primário MongoDB no Data Center 1 que é maior do que o requisito documentado em [Adobe Experience Manager com MongoDB - Listas de verificação](/help/sites-deploying/aem-with-mongodb.md#checklists). Se a latência máxima for compatível com os requisitos, por exemplo, por meio do uso de zonas de disponibilidade, os servidores AEM no Data Center 2 também poderão estar ativos, criando um cluster AEM ativo-ativo em vários data centers.
 
 >[!NOTE]
 >
@@ -151,7 +151,7 @@ O principal motivo para escolher o back-end de persistência MongoMK em vez do T
 
 >[!NOTE]
 >
->O Dia Difícil pode ser usado para avaliar o desempenho do aplicativo do cliente no contexto da configuração de hardware implantada. Mais informações sobre esta ferramenta estão disponíveis [aqui](/help/sites-developing/tough-day.md).
+>[Dia Difícil](/help/sites-developing/tough-day.md) pode ser usado para avaliar o desempenho do aplicativo do cliente no contexto da configuração de hardware implantada.
 
 Uma implantação mínima com MongoDB normalmente envolve a seguinte topologia:
 
@@ -184,9 +184,9 @@ Um conjunto de pré-requisitos e recomendações está disponível se você esti
 
 **Recomendações fortes para implantações do MongoDB:**
 
-* Consulte o MongoDB para Adobe Experience Manager [article](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager);
-* Revise a [lista de verificação](https://docs.mongodb.org/manual/administration/production-checklist/) da produção do MongoDB;
-* Participe de uma aula de certificação no MongoDB disponível online [aqui](https://university.mongodb.com/).
+* Consulte a [Análise da Implantação do MongoDB para o Adobe Experience Manager](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager);
+* Revise a [Lista de Verificação de Operações do MongoDB](https://docs.mongodb.org/manual/administration/production-checklist/);
+* Participe de uma [aula de certificação no MongoDB - disponível online](https://university.mongodb.com/).
 
 >[!NOTE]
 >

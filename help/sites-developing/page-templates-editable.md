@@ -10,9 +10,9 @@ exl-id: dcb66b6d-d731-493e-8936-12d529f6cbde
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '3186'
+source-wordcount: '3187'
 ht-degree: 4%
 
 ---
@@ -434,7 +434,7 @@ Ao criar um modelo editável, o valor é copiado do tipo de modelo para o modelo
 
 Se você tiver criado um modelo que possa servir como base de outros modelos, poderá copiá-lo como um tipo de modelo.
 
-1. Crie um modelo como você faria com qualquer modelo editável [conforme documentado aqui](/help/sites-authoring/templates.md#creating-a-new-template-template-author), que pode servir como base para o seu tipo de modelo.
+1. Crie um modelo como faria com qualquer modelo editável. Consulte [Criação de Modelos de Página](/help/sites-authoring/templates.md#creating-a-new-template-template-author). Isso pode servir como base para o tipo de template.
 1. Usando o CRXDE Lite, copie o modelo recém-criado do nó `templates` para o nó `template-types` na [pasta de modelo](/help/sites-developing/page-templates-editable.md#template-folders).
 1. Exclua o modelo do nó `templates` na [pasta de modelo](/help/sites-developing/page-templates-editable.md#template-folders).
 1. Na cópia do modelo que está sob o nó `template-types`, exclua todas as propriedades `cq:template` e `cq:templateType` de todos os nós `jcr:content`.

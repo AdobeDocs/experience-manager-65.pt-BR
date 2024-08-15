@@ -9,10 +9,10 @@ exl-id: d77e9e39-6117-4d09-b34b-a97ab347397e
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '140'
-ht-degree: 5%
+source-wordcount: '147'
+ht-degree: 4%
 
 ---
 
@@ -22,9 +22,9 @@ A Equipe de serviços da Adobe Consulting gerou uma série de amostras de códig
 
 Um tutorial em várias partes projetado para desenvolvedores novos no AEM que aborda tópicos fundamentais como configuração de projeto, Componentes principais, Modelos editáveis, Bibliotecas de clientes e desenvolvimento de componentes: [Introdução ao AEM Sites - Tutorial do WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=pt-BR)
 
-Um modelo Maven para criar um projeto AEM como ponto de partida para desenvolver sua própria funcionalidade está disponível [aqui](https://github.com/adobe/aem-project-archetype).
+Um modelo Maven para criar um projeto AEM como ponto de partida para desenvolver sua própria funcionalidade está disponível [no GitHub - Arquétipo de projeto AEM](https://github.com/adobe/aem-project-archetype).
 
-Amostras de código de interface do usuário padrão habilitadas para toque estão disponíveis [aqui](/help/sites-developing/developing-components.md).
+Amostras de código de interface do usuário padrão habilitadas para toque estão disponíveis em [Desenvolvendo componentes AEM](/help/sites-developing/developing-components.md).
 
 >[!NOTE]
 >

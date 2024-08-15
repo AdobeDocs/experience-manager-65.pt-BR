@@ -10,9 +10,9 @@ feature: Administering
 exl-id: dadde3ee-d60c-4b87-9af0-a12697148161
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: 3aa55b88f589749fb49d5ff46340b0912d490157
 workflow-type: tm+mt
-source-wordcount: '2666'
+source-wordcount: '2673'
 ht-degree: 0%
 
 ---
@@ -409,7 +409,7 @@ Como alternativa, o repositório principal pode ser copiado manualmente para o s
 1. Execute a manutenção do repositório em espera forçada conforme descrito na seção [acima](/help/sites-deploying/tarmk-cold-standby.md#cold-standby-repository-maintenance).
 1. Após a conclusão do processo de manutenção e a reinicialização das instâncias:
 
-   * No principal, execute a coleta de lixo do armazenamento de dados por meio do bean JMX relevante, conforme descrito em [este artigo](/help/sites-administering/data-store-garbage-collection.md#running-data-store-garbage-collection-via-the-jmx-console).
+   * Na principal, execute a coleta de lixo do armazenamento de dados por meio do bean JMX relevante, conforme descrito em [Executando a coleta de lixo do armazenamento de dados pelo Console JMX](/help/sites-administering/data-store-garbage-collection.md#running-data-store-garbage-collection-via-the-jmx-console).
    * No modo de espera, a coleta de lixo do armazenamento de dados está disponível somente por meio do **BlobGarbageCollection** MBean - `startBlobGC()`. O MBean **RepositoryManagement** não está disponível no modo de espera.
 
    >[!NOTE]

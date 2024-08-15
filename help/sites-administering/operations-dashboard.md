@@ -10,9 +10,9 @@ exl-id: f9a88156-91a2-4c85-9bc9-8f23700c2cbd
 feature: Operations
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: eef7849464540fa3d7bb705e1be9f6e0cf1c8cff
+source-git-commit: db7830895c8a2d1b7228dc4780296d43f15776df
 workflow-type: tm+mt
-source-wordcount: '5744'
+source-wordcount: '5743'
 ht-degree: 2%
 
 ---
@@ -507,7 +507,7 @@ Você também pode configurar os horários pressionando o ícone de engrenagem e
 
 ### Limpeza da revisão {#revision-clean-up}
 
-Para obter mais informações sobre como executar a Limpeza de Revisão, [consulte este artigo dedicado](/help/sites-deploying/revision-cleanup.md).
+Para obter mais informações, consulte [Limpeza de revisão](/help/sites-deploying/revision-cleanup.md).
 
 ### Limpeza de binários do Lucene {#lucene-binaries-cleanup}
 
@@ -522,7 +522,7 @@ Você pode acessar a tarefa Limpeza de binários Lucene em: **AEM > Ferramentas 
 
 ### Coleta de lixo do armazenamento de dados {#data-store-garbage-collection}
 
-Para obter detalhes sobre a Coleta de Lixo do Repositório de Dados, consulte a [página de documentação](/help/sites-administering/data-store-garbage-collection.md) dedicada.
+Para obter detalhes sobre a Coleta de Lixo do Armazenamento de Dados, consulte a página de documentação dedicada [Coleta de Lixo do Armazenamento de Dados](/help/sites-administering/data-store-garbage-collection.md).
 
 ### Limpeza do fluxo de trabalho {#workflow-purge}
 
@@ -533,7 +533,7 @@ Os workflows também podem ser removidos do Painel de manutenção. Para executa
 
 >[!NOTE]
 >
->Para obter informações mais detalhadas sobre a Manutenção de Fluxo de Trabalho, consulte [esta página](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances).
+>Para obter informações mais detalhadas sobre a Manutenção de Fluxo de Trabalho, consulte [Administrando Instâncias de Fluxo de Trabalho](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances).
 
 ### Manutenção do Log de Auditoria {#audit-log-maintenance}
 

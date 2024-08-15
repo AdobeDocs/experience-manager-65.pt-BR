@@ -1,5 +1,5 @@
 ---
-title: Verificações de atualização e solução de problemas do Post
+title: Verificações pós-atualização e solução de problemas
 description: Saiba como solucionar problemas que podem ocorrer após uma atualização.
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,16 +10,16 @@ feature: Upgrading
 exl-id: ceac2b52-6885-496d-9517-5fc7291ad070
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '1793'
+source-wordcount: '1798'
 ht-degree: 0%
 
 ---
 
-# Verificações de atualização e solução de problemas do Post{#post-upgrade-checks-and-troubleshooting}
+# Verificações pós-atualização e solução de problemas{#post-upgrade-checks-and-troubleshooting}
 
-## Verificações de atualização do Post {#post-upgrade-checks}
+## Verificações pós-atualização {#post-upgrade-checks}
 
 Após a [Atualização no Local](/help/sites-deploying/in-place-upgrade.md), as atividades a seguir devem ser executadas para finalizar a atualização. Pressupõe-se que o AEM tenha sido iniciado com o jar 6.5 e que a base de código atualizada tenha sido implantada.
 
@@ -103,7 +103,7 @@ Vários recursos no AEM exigem etapas adicionais após a atualização. Uma list
 
 #### Habilitar coleta de lixo do armazenamento de dados {#enable-data-store-garbage-collection}
 
-Se estiver usando um Armazenamento de dados de arquivo, verifique se a tarefa Coleta de lixo do armazenamento de dados está ativada e adicionada à lista de Manutenção semanal. As instruções estão descritas [aqui](/help/sites-administering/data-store-garbage-collection.md).
+Se estiver usando um Armazenamento de dados de arquivo, verifique se a tarefa Coleta de lixo do armazenamento de dados está ativada e adicionada à lista de Manutenção semanal. As instruções estão descritas em [Limpeza de revisão](/help/sites-administering/data-store-garbage-collection.md).
 
 >[!NOTE]
 >
@@ -111,7 +111,7 @@ Se estiver usando um Armazenamento de dados de arquivo, verifique se a tarefa Co
 
 #### Ativar limpeza de revisão online {#enable-online-revision-cleanup}
 
-Se estiver usando MongoMK ou o novo formato de segmento TarMK, verifique se a tarefa Revision Clean Up está ativada e adicionada à lista Daily Maintenance (Manutenção diária). Instruções descritas [aqui](/help/sites-deploying/revision-cleanup.md).
+Se estiver usando MongoMK ou o novo formato de segmento TarMK, verifique se a tarefa Revision Clean Up está ativada e adicionada à lista Daily Maintenance (Manutenção diária). As instruções estão descritas em [Limpeza de revisão](/help/sites-deploying/revision-cleanup.md).
 
 ### Executar plano de teste {#execute-test-plan}
 

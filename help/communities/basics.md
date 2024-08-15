@@ -9,7 +9,7 @@ exl-id: eb5ce76a-bf28-4540-bc2d-3b5ecb8286f2
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
 source-wordcount: '360'
 ht-degree: 1%
@@ -28,7 +28,7 @@ Os componentes podem ser explorados usando uma instância do AEM e o [guia inter
 
 Ao criar conteúdo da página, se o modelo subjacente permitir alterações no design da página, será possível habilitar componentes que ainda não estejam disponíveis no navegador de componentes como parte do design do site.
 
-Os componentes das Comunidades disponíveis estão listados [aqui](author-communities.md#available-communities-components).
+Consulte a lista em [Componentes de comunidades disponíveis](author-communities.md#available-communities-components).
 
 >[!NOTE]
 >

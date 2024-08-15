@@ -10,9 +10,9 @@ exl-id: 52437eb5-f9fb-4945-9950-5a1562fe878d
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: db7830895c8a2d1b7228dc4780296d43f15776df
 workflow-type: tm+mt
-source-wordcount: '706'
+source-wordcount: '729'
 ht-degree: 0%
 
 ---
@@ -118,8 +118,8 @@ O Red Hat® Linux® usa um algoritmo de gerenciamento de memória chamado THP (T
 >
 >Consulte os seguintes recursos:
 >
->* Para obter mais informações sobre o Transparent Huge Pages no Red Hat® Linux®, consulte este [artigo](https://access.redhat.com/solutions/46111).
->* Para obter dicas de ajuste do Linux®, consulte este [artigo](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=pt-BR).
+>* Para obter mais informações sobre o Transparent Huge Pages no Red Hat® Linux®, consulte o seguinte artigo no Red Hat® Customer Portal: [Como usar, monitorar e desativar páginas transparentes no Red Hat Enterprise Linux 6, 7 e 8?](https://access.redhat.com/solutions/46111)
+>* Para obter dicas de ajuste do Linux®, consulte [Otimização do Desempenho](/help/sites-deploying/configuring-performance.md).
 >
 
 ## Manutenção do repositório {#maintaining-the-repository}

@@ -10,9 +10,9 @@ exl-id: 9e88ca55-ac3d-4857-b6b2-aeb732562664
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Developer Tools
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '2118'
+source-wordcount: '2114'
 ht-degree: 1%
 
 ---
@@ -219,7 +219,7 @@ Ele cria uma caixa de diálogo com a seguinte estrutura:
 
 Agora você pode adaptar a caixa de diálogo às suas necessidades modificando propriedades ou criando nós.
 
-Você também pode usar o Editor de diálogo para editar um diálogo. Clicar duas vezes no nó da caixa de diálogo no CRXDE Lite exibe o editor. Mais informações sobre o Editor de Diálogo podem ser encontradas [aqui](/help/sites-developing/dialog-editor.md).
+Você também pode usar o Editor de diálogo para editar um diálogo. Clicar duas vezes no nó da caixa de diálogo no CRXDE Lite exibe o editor. Consulte [Editor da caixa de diálogo](/help/sites-developing/dialog-editor.md) para obter mais detalhes.
 
 ## Criando um nó {#creating-a-node}
 

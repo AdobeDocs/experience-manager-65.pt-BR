@@ -10,9 +10,9 @@ exl-id: 8c6ba22f-5555-4e3c-998a-9353bd44715b
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '887'
+source-wordcount: '891'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,9 @@ ht-degree: 1%
 
 Esta seção é para o Console de marcação da interface do usuário clássica.
 
-O Console de Marcação da Interface Otimizada para Toque está [aqui](/help/sites-administering/tags.md#tagging-console).
+>[!NOTE]
+>
+>Consulte [Administração de Tags](/help/sites-administering/tags.md#tagging-console) para obter detalhes do Console de Marcação da Interface do Usuário Otimizada para Toque.
 
 Para acessar o console de Marcação da Interface Clássica:
 

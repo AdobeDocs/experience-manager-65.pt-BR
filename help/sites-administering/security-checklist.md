@@ -10,7 +10,7 @@ exl-id: 314a6409-398c-470b-8799-0c4e6f745141
 feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
 source-wordcount: '2959'
 ht-degree: 1%
@@ -339,7 +339,7 @@ Para atenuar esse problema, você pode executar as seguintes etapas:
 
 O servlet de download de ativos padrão permite que usuários autenticados emitam arbitrariamente grandes solicitações simultâneas de download para criar arquivos ZIP de ativos. A criação de arquivos ZIP grandes pode sobrecarregar o servidor e a rede. Para mitigar um possível risco de Negação de Serviço (DoS) causado por esse comportamento, o componente OSGi `AssetDownloadServlet` é desabilitado por padrão na instância de publicação [!DNL Experience Manager]. Está habilitado na instância do autor [!DNL Experience Manager] por padrão.
 
-Se você não precisar do recurso de download, desative o servlet nas implantações de autor e publicação. Se a sua configuração exigir que o recurso de download de ativos esteja habilitado, consulte [este artigo](/help/assets/download-assets-from-aem.md) para obter mais informações. Além disso, é possível definir um limite máximo de download que sua implantação possa suportar.
+Se você não precisar do recurso de download, desative o servlet nas implantações de autor e publicação. Se a sua configuração exigir que o recurso de download de ativos esteja habilitado, consulte [Baixar ativos do Adobe Experience Manager](/help/assets/download-assets-from-aem.md) para obter mais informações. Além disso, é possível definir um limite máximo de download que sua implantação possa suportar.
 
 ### Desabilitar WebDAV {#disable-webdav}
 
@@ -395,7 +395,7 @@ Por padrão, o AEM armazena metadados do sistema, como `jcr:createdBy` ou `jcr:l
 
 Como todos os dados do repositório, essas propriedades são mediadas pela pilha de autorização do Oak. O acesso aos mesmos deverá ser restringido de acordo com o princípio do menor privilégio.
 
-Para respaldar isso, o Adobe fornece um pacote de fortalecimento de permissões como base para os clientes criarem. Ele funciona instalando uma entrada de controle de acesso &quot;negado&quot; na raiz do repositório, restringindo o acesso anônimo às propriedades do sistema usadas com frequência. O pacote está disponível para download [aqui](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/helper/anonymous-permissions-pkg-0.1.2.zip) e pode ser instalado em todas as versões do AEM com suporte.
+Para respaldar isso, o Adobe fornece um pacote de fortalecimento de permissões como base para os clientes criarem. Ele funciona instalando uma entrada de controle de acesso &quot;negado&quot; na raiz do repositório, restringindo o acesso anônimo às propriedades do sistema usadas com frequência. O pacote pode ser [baixado](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/helper/anonymous-permissions-pkg-0.1.2.zip) e instalado em todas as versões do AEM com suporte.
 
 Para ilustrar as alterações, podemos comparar as propriedades do nó que podem ser visualizadas anonimamente antes da instalação do pacote:
 

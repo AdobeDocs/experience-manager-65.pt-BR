@@ -10,9 +10,9 @@ exl-id: 9efba91d-45e8-42e1-9db6-490d21bf7412
 solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: 6f3c4f4aa4183552492c6ce5039816896bd67495
 workflow-type: tm+mt
-source-wordcount: '706'
+source-wordcount: '710'
 ht-degree: 1%
 
 ---
@@ -93,7 +93,7 @@ Isso é opcional; se deixado em branco, a página de logon padrão será usada.
    >
    >Observe que os CUGs na guia Permissões não podem ser implantados em Live Copies de blueprints. Planeje isso ao configurar a Live Copy.
    >
-   >Para obter mais informações, consulte [esta página](closed-user-groups.md#aem-livecopy).
+   >Para obter mais informações, consulte [Grupos de usuários fechados no AEM - Livecopy](closed-user-groups.md#aem-livecopy).
 
 1. A caixa de diálogo **Editar Grupo de Usuários Fechado** é aberta. Aqui você pode pesquisar e selecionar seu CUG, e confirmar a seleção do grupo com **Salvar**.
 

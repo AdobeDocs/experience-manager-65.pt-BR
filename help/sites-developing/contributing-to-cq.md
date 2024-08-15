@@ -9,9 +9,9 @@ exl-id: 43fb4fa3-269a-4635-b055-4b7d787da21f
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '2635'
+source-wordcount: '2642'
 ht-degree: 0%
 
 ---
@@ -120,7 +120,7 @@ A compatibilidade com versões anteriores também deve ser mantida em mente no q
 
 **Instância do autor** - Normalmente, por motivos de segurança, governança e outros, um site de produção divide as instâncias de AEM em instâncias do autor e do Publish. Para obter mais informações sobre a arquitetura de implantação (incluindo instâncias de Autor/Publish), consulte a documentação sobre Instâncias AEM.
 
-**Caching, fritura e panificação** - Tradicionalmente, os conceitos de panificação versus fritura são uma distinção importante entre diferentes Sistemas de Gerenciamento de Conteúdo na Web. No jargão do CMS, &quot;assar&quot; refere-se ao conceito de comprometer dados com arquivos estáticos em tempo de publicação, enquanto &quot;fritar&quot; refere-se ao conceito de processar dados para apresentação final no momento da solicitação (ou seja, apenas no tempo).
+**Caching, fritura e panificação** - Tradicionalmente, os conceitos de panificação versus fritura são uma distinção importante entre diferentes Sistemas de Gerenciamento de Conteúdo na Web. No jargão do CMS, &quot;assar&quot; refere-se ao conceito de confirmar dados em arquivos estáticos no tempo de publicação, enquanto &quot;fritar&quot; refere-se ao conceito de processar dados para a apresentação final no momento da solicitação (ou seja, apenas no tempo).
 
 **Clustering e balanceamento de carga** - Para aumentar a disponibilidade e melhorar o desempenho de um ambiente de Produção, é comum combinar várias instâncias do Author e/ou do Publish (em Clusters), disponibilizando-as para diferentes grupos de usuários ou balanceando-as em uma configuração do Dispatcher.
 
@@ -142,7 +142,7 @@ Em essência, o JCR é um sistema de nós e propriedades, no qual os nós podem 
 
 O JCR tem vários tipos de nó e tipos de propriedade predefinidos, mas em geral o sistema de digitação é flexível e (na verdade) um dos pontos fortes do JCR é que ele permite que o conteúdo estruturado e não estruturado seja armazenado/gerenciado com a mesma facilidade. Ou seja, o JCR pode acomodar dados altamente estruturados, mas também pode acomodar estruturas de dados dinâmicos arbitrárias sem restrições de esquema.
 
-O JavaDoc para a API Java™ do JCR está [aqui](https://jackrabbit.apache.org/jcr/jcr-api.html).
+O JavaDoc para a API Java™ do JCR está disponível na [Apache Software Foundation - API JCR](https://jackrabbit.apache.org/jcr/jcr-api.html).
 
 Antes de tentar ler o JavaDoc ou a especificação do JCR em si, você pode consultar [esta explicação de alto nível](/help/sites-developing/the-basics.md#java-content-repository) do JCR, conforme implementado pelos Adobe Experience Services.
 

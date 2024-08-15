@@ -10,9 +10,9 @@ exl-id: 1b8c6075-13c6-4277-b726-8dea7991efec
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '3441'
+source-wordcount: '3442'
 ht-degree: 0%
 
 ---
@@ -244,7 +244,7 @@ Você pode marcar parte da página de aterrissagem para importação como um &qu
 
 #### Link de Click Through {#click-through-link}
 
-Esse componente CTA pode ser usado para adicionar um link de texto na landing page.
+Esse componente do CTA pode ser usado para adicionar um link de texto na landing page.
 
 Propriedades suportadas
 
@@ -276,7 +276,7 @@ Esse componente pode ser usado em qualquer aplicativo independente ou pode ser i
 
 #### Vincular ao gráfico {#graphical-link}
 
-Esse componente CTA pode ser usado para adicionar qualquer imagem gráfica com link na página de destino. A imagem pode ser um botão simples ou qualquer imagem gráfica como plano de fundo. Quando a imagem é clicada, o usuário é levado para o URL de destino especificado nas propriedades do componente. Ele faz parte do grupo &quot;Plano de ação&quot;.
+Esse componente do CTA pode ser usado para adicionar qualquer imagem gráfica com link na página de aterrissagem. A imagem pode ser um botão simples ou qualquer imagem gráfica como plano de fundo. Quando a imagem é clicada, o usuário é levado para o URL de destino especificado nas propriedades do componente. Ele faz parte do grupo &quot;Plano de ação&quot;.
 
 Propriedades suportadas
 
@@ -318,15 +318,15 @@ tag HTML para incluir o componente de link gráfico no zip importado. Aqui, href
 
 ### Formulário de cliente em potencial {#lead-form}
 
-Um formulário de cliente potencial é um formulário usado para coletar informações de perfil de um visitante/cliente potencial. Essas informações podem ser armazenadas e usadas posteriormente para fazer um marketing eficaz com base nas informações. Essas informações geralmente incluem título, nome, email, data de nascimento, endereço, interesse e assim por diante. Faz parte do grupo &quot;Formulário de cliente potencial CTA&quot;.
+Um formulário de cliente potencial é um formulário usado para coletar informações de perfil de um visitante/cliente potencial. Essas informações podem ser armazenadas e usadas posteriormente para fazer um marketing eficaz com base nas informações. Essas informações geralmente incluem título, nome, email, data de nascimento, endereço, interesse e assim por diante. Faz parte do grupo &quot;Formulário de cliente potencial da CTA&quot;.
 
 **Recursos com suporte**
 
 * Campos de leads predefinidos - nome, sobrenome, endereço, data, gênero, sobre, userId, emailId, botão enviar estão disponíveis no sidekick. Basta arrastar/soltar o componente desejado em seu formulário de lead.
 * Com a ajuda desses componentes, o autor pode criar um formulário de cliente potencial independente, esses campos correspondem a campos de formulário de cliente potencial. Em aplicativos zip independentes ou importados, o usuário pode adicionar campos extras usando campos de formulário de cliente em potencial cq:form ou cta, nomeá-los e projetá-los de acordo com os requisitos.
-* Mapeie campos de formulário de cliente potencial usando nomes predefinidos específicos do formulário de cliente potencial CTA, por exemplo, - firstName para o nome no formulário de cliente potencial e assim por diante.
+* Mapeie campos de formulário de cliente potencial usando nomes predefinidos específicos do formulário de cliente potencial do CTA, por exemplo, - firstName para o nome no formulário de cliente potencial e assim por diante.
 * Os campos que não estão mapeados para formulários de cliente potencial são mapeados para cq:componentes de formulário - texto, rádio, caixa de seleção, lista suspensa, oculto, senha.
-* O usuário pode fornecer o título usando a tag &quot;label&quot; e o estilo usando o atributo de estilo &quot;class&quot; (disponível somente para componentes de formulário de lead CTA).
+* O usuário pode fornecer o título usando a tag &quot;rótulo&quot; e o estilo usando a &quot;classe&quot; de atributo de estilo (disponível somente para componentes de formulário de lead do CTA).
 * A página de agradecimento e a lista de assinaturas podem ser fornecidas como um parâmetro oculto do formulário (presente no index.htm) ou podem ser adicionadas/editadas na barra de edição do &quot;Início do formulário de cliente potencial&quot;
 
   &lt;input type=&quot;hidden&quot; name=&quot;redirectUrl&quot; value=&quot;/content/we-retail/en/user/register/thank_you&quot;/>
@@ -443,7 +443,7 @@ Se nenhuma codificação for especificada no HTML importado, a codificação pad
 
 O modelo de Página de Aterrissagem em Branco pode ser sobreposto criando um em: `/apps/<appName>/designimporter/templates/<templateName>`
 
-As etapas para criar um modelo no AEM são explicadas [aqui](/help/sites-developing/templates.md).
+As etapas para criar um modelo no AEM são explicadas em [Modelos](/help/sites-developing/templates.md).
 
 ### Referência a um componente da landing page {#referring-a-component-from-landing-page}
 

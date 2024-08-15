@@ -5,10 +5,10 @@ exl-id: 61144bbe-6710-4cae-a63e-e708936ff360
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: 6f3c4f4aa4183552492c6ce5039816896bd67495
 workflow-type: tm+mt
-source-wordcount: '1673'
-ht-degree: 65%
+source-wordcount: '1669'
+ht-degree: 64%
 
 ---
 
@@ -32,16 +32,14 @@ Você também pode publicar/desfazer a publicação de uma página imediatamente
 >
 >* **Replicar / Replicação**
 >  Esses são os termos técnicos que descrevem a movimentação de dados (por exemplo, conteúdo da página, arquivos, código, comentários do usuário) de um ambiente para outro, como ao publicar ou reverter a replicação de comentários do usuário.
->
 
->[!NOTE]
->
->Se você não tiver os privilégios necessários para publicar uma página específica:
->
->* Um fluxo de trabalho será acionado para notificar a pessoa apropriada sobre sua solicitação de publicação.
->* Este [fluxo de trabalho pode ter sido personalizado](/help/sites-developing/workflows-models.md#main-pars-procedure-6fe6) pela sua equipe de desenvolvimento.
->* Uma mensagem será exibida brevemente para notificar que o fluxo de trabalho foi disparado.
->
+## Privilégios Insuficientes {#insufficient-privileges}
+
+Se você não tiver os privilégios necessários para publicar uma página específica:
+
+* Um fluxo de trabalho será acionado para notificar a pessoa apropriada sobre sua solicitação de publicação.
+* Este [fluxo de trabalho pode ter sido personalizado](/help/sites-developing/workflows-models.md#main-pars-procedure-6fe6) pela sua equipe de desenvolvimento.
+* Uma mensagem será exibida brevemente para notificar que o fluxo de trabalho foi disparado.
 
 ## Publicar páginas {#publishing-pages-1}
 
@@ -185,7 +183,9 @@ Para publicar ou desfazer a publicação de uma página usando Gerenciar publica
 
    >[!NOTE]
    >
-   >A etapa **Fluxos de trabalho** é mostrada com base nos direitos que seu usuário pode ou não ter. Consulte a [observação anterior nesta página](/help/sites-authoring/publishing-pages.md#main-pars-note-0-ejsjqg-refd) sobre privilégios de publicação e [Gerenciamento de Acesso a Fluxos de Trabalho](/help/sites-administering/workflows-managing.md) e [Aplicação de Fluxos de Trabalho a Páginas](/help/sites-authoring/workflows-applying.md#main-pars-text-5-bvhbkh-refd) para obter detalhes.
+   >A etapa **Fluxos de trabalho** é mostrada com base em quais direitos seu usuário pode ou não ter.
+   >
+   >Consulte as seções [Privilégios Insuficientes](/help/sites-authoring/publishing-pages.md#insufficient-privileges), [Gerenciando o Acesso aos Fluxos de Trabalho](/help/sites-administering/workflows-managing.md) e [Aplicando Fluxos de Trabalho a Páginas](/help/sites-authoring/workflows-applying.md#main-pars-text-5-bvhbkh-refd) para obter detalhes.
 
    Os recursos são agrupados pelos workflows acionados e cada um recebe opções para:
 

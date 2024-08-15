@@ -8,9 +8,9 @@ feature: Configuring
 exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '3476'
+source-wordcount: '3461'
 ht-degree: 1%
 
 ---
@@ -46,11 +46,9 @@ Para configurar o armazenamento de nós e o armazenamento de dados, execute esta
 
 >[!CAUTION]
 >
->As versões mais recentes do Oak empregam um novo esquema de nomenclatura e formato para os arquivos de configuração OSGi. O novo esquema de nomenclatura exige que o arquivo de configuração seja nomeado como **.config** e o novo formato exige que os valores sejam digitados e está [documentado aqui](https://sling.apache.org/documentation/development/slingstart.html#default-configuration-format).
+>As versões mais recentes do Oak empregam um novo esquema de nomenclatura e formato para os arquivos de configuração OSGi. O novo esquema de nomenclatura exige que o arquivo de configuração seja nomeado como **.config** e o novo formato exige que os valores sejam digitados. Para obter detalhes, consulte [O Modelo de provisionamento do Apache Sling e Apache SlingStart - Formato de configuração padrão](https://sling.apache.org/documentation/development/slingstart.html#default-configuration-format).
 >
 >Se você atualizar de uma versão mais antiga do Oak, primeiro faça um backup da pasta `crx-quickstart/install`. Após a atualização, restaure o conteúdo da pasta para a instalação atualizada e modifique a extensão dos arquivos de configuração de **.cfg** para **.config**.
->
->Caso esteja lendo este artigo como preparação para uma atualização de uma instalação do **AEM 5.x**, consulte primeiro a documentação de [atualização](https://experienceleague.adobe.com/pt-br/docs).
 
 ### Armazenamento de nós do segmento {#segment-node-store}
 
@@ -372,7 +370,7 @@ Para configurar a replicação sem binários com o S3, as seguintes etapas são 
 
    * Se estiver usando S3 como o armazenamento de dados, crie um arquivo chamado para `rg.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore.config` na pasta `<aem-install>/crx-quickstart/install` como acima.
 
-1. Modifique os arquivos de configuração do armazenamento de dados em cada instância para que eles apontem para o mesmo armazenamento de dados. Para obter mais informações, consulte [este artigo](/help/sites-deploying/data-store-config.md#data-store-configurations).
+1. Modifique os arquivos de configuração do armazenamento de dados em cada instância para que eles apontem para o mesmo armazenamento de dados. Para obter mais informações, consulte [Configurações do armazenamento de dados](/help/sites-deploying/data-store-config.md#data-store-configurations).
 1. Se a instância tiver sido clonada de um servidor existente, remova o `clusterId` da nova instância usando a ferramenta oak-run mais recente enquanto o repositório estiver offline. O comando que você deve executar é:
 
    ```xml

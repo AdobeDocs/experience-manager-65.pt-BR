@@ -10,9 +10,9 @@ exl-id: 39e35a07-140f-4853-8f0d-8275bce27a65
 feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: 6f3c4f4aa4183552492c6ce5039816896bd67495
 workflow-type: tm+mt
-source-wordcount: '6650'
+source-wordcount: '6662'
 ht-degree: 0%
 
 ---
@@ -78,7 +78,7 @@ Ao contrário da implementação anterior, as novas políticas CUG são sempre r
 
 Além de um gerenciamento de controle de acesso dedicado para CUGs, o novo modelo de autorização permite que você ative condicionalmente a avaliação de permissões para suas políticas. Isso permite configurar políticas CUG em um ambiente de preparo e permite a avaliação das permissões efetivas apenas depois de replicadas no ambiente de produção.
 
-A avaliação de permissão para políticas CUG e a interação com o modelo de autorização padrão ou adicional seguem o padrão projetado para vários mecanismos de autorização no Apache Jackrabbit Oak. Ou seja, um determinado conjunto de permissões será concedido se e somente se todos os modelos concederem acesso. Consulte [esta página](https://jackrabbit.apache.org/oak/docs/security/authorization/composite.html) para obter mais detalhes.
+A avaliação de permissão para políticas CUG e a interação com o modelo de autorização padrão ou adicional seguem o padrão projetado para vários mecanismos de autorização no Apache Jackrabbit Oak. Ou seja, um determinado conjunto de permissões será concedido se e somente se todos os modelos concederem acesso. Consulte a [Documentação do Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/security/authorization/composite.html) para obter mais detalhes.
 
 As seguintes características se aplicam à avaliação de permissão associada ao modelo de autorização criado para manipular e avaliar as políticas CUG:
 
@@ -129,7 +129,7 @@ O mesmo se aplica à propriedade `granite:loginPath`. Somente é respeitado se f
 
 Como esse tipo de requisito de autenticação deve ser limitado a determinados modos de execução e a um pequeno subconjunto de árvores no repositório de conteúdo, o rastreamento do tipo de mixin do requisito e das propriedades do caminho de logon é condicional. E está vinculado a uma configuração correspondente que define os caminhos compatíveis (consulte Opções de configuração abaixo). Portanto, somente as alterações no escopo desses caminhos compatíveis acionam uma atualização do registro OSGi, em outro lugar, o tipo de mixin e a propriedade são ignorados.
 
-A configuração padrão do AEM agora usa essa configuração, permitindo definir o mixin no modo de execução do autor, mas apenas tem efeito após a replicação para a instância de publicação. Consulte [esta página](https://sling.apache.org/documentation/the-sling-engine/authentication/authenticationframework.html) para obter detalhes sobre como o Sling impõe o requisito de autenticação.
+A configuração padrão do AEM agora usa essa configuração, permitindo definir o mixin no modo de execução do autor, mas apenas tem efeito após a replicação para a instância de publicação. Consulte a documentação da [Autenticação Sling - Estrutura](https://sling.apache.org/documentation/the-sling-engine/authentication/authentication-framework.html) para obter detalhes sobre como o Sling impõe o requisito de autenticação.
 
 Adicionar o tipo de mixin `granite:AuthenticationRequired` nos caminhos com suporte configurados faz com que o registro OSGi do manipulador responsável seja atualizado contendo uma entrada nova e adicional com a propriedade `sling.auth.requirements`. Se um determinado requisito de autenticação especificar a propriedade `granite:loginPath` opcional, o valor também será registrado com o Autenticador com um prefixo &#39;-&#39; a ser excluído do requisito de autenticação.
 
@@ -187,7 +187,7 @@ As seguintes práticas recomendadas devem ser consideradas ao definir os requisi
 
 ### Representação de política CUG no repositório {#cug-policy-representation-in-the-repository}
 
-A documentação do Oak aborda a forma como as novas políticas CUG são refletidas no conteúdo do repositório. Para obter mais informações, consulte [esta página](https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html#Representation_in_the_Repository).
+A documentação do Oak aborda a forma como as novas políticas CUG são refletidas no conteúdo do repositório. Para obter mais informações, consulte a [Documentação do Jackrabbit Oak sobre Gerenciamento de Acesso com CUGs](https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html#Representation_in_the_Repository).
 
 ### Requisito de autenticação no repositório {#authentication-requirement-in-the-repository}
 
