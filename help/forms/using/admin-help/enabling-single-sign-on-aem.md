@@ -9,9 +9,9 @@ exl-id: 89561ed0-d094-4ef7-9bc1-bde11f3c5bc3
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Security
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: c941de0b069b5bea9edb822eca0ebbb5483ae9ed
 workflow-type: tm+mt
-source-wordcount: '1520'
+source-wordcount: '1704'
 ht-degree: 0%
 
 ---
@@ -24,9 +24,13 @@ Quando o SSO é implementado, as páginas de logon do usuário dos formulários 
 
 Se os formulários AEM não puderem autenticar um usuário usando um desses métodos, o usuário será redirecionado para uma página de logon.
 
+* [Habilitar SSO usando cabeçalhos HTTP](#enable-sso-using-http-headers)
+* [Habilitar SSO usando SPNEGO](#enable-sso-using-spnego)
+* [Atribuir funções a usuários e grupos](#assign-roles-to-users-groups)
+
 ## Habilitar SSO usando cabeçalhos HTTP {#enable-sso-using-http-headers}
 
-Você pode usar a página Configuração do Portal para habilitar o logon único (SSO) entre aplicativos e qualquer aplicativo que ofereça suporte à transmissão da identidade pelo cabeçalho HTTP. Quando o SSO é implementado, as páginas de logon do usuário dos formulários AEM não são necessárias e não aparecem se o usuário já estiver autenticado por meio do portal da empresa.
+Você pode usar a página Configuração do Portal para habilitar o logon único (SSO) entre aplicativos e qualquer aplicativo que suporte a transmissão da identidade por um cabeçalho HTTP. Quando o SSO é implementado, as páginas de logon do usuário dos formulários AEM não são necessárias e não aparecem se o usuário já estiver autenticado por meio do portal da empresa.
 
 Você também pode ativar o SSO usando o SPNEGO. (Consulte [Habilitar SSO usando SPNEGO](enabling-single-sign-on-aem.md#enable-sso-using-spnego).)
 
@@ -51,6 +55,10 @@ Você também pode ativar o SSO usando o SPNEGO. (Consulte [Habilitar SSO usando
 ### Configurar referenciadores permitidos {#configure-allowed-referers}
 
 Para obter as etapas para configurar referenciadores permitidos, consulte [Configurar referenciadores permitidos](/help/forms/using/admin-help/preventing-csrf-attacks.md#configure-allowed-referers).
+
+### Atribuir funções a usuários e grupos
+
+Clique para saber as etapas para [atribuir funções a usuários e grupos](/help/forms/using/admin-help/enabling-single-sign-on-aem.md#assign-roles-to-users-and-groups-assign-roles-to-users-groups).
 
 ## Habilitar SSO usando SPNEGO {#enable-sso-using-spnego}
 
@@ -141,7 +149,7 @@ ktpass -princ HTTP/lcserver.um.lc.com@UM.LC.COM -mapuser spnegodemo
 
 ### Definição das configurações do navegador do cliente SPNEGO {#configuring-spnego-client-browser-settings}
 
-Para que a autenticação baseada em SPNEGO funcione, o computador cliente deve fazer parte do domínio em que a conta de usuário é criada. Você também deve configurar o navegador do cliente para permitir a autenticação baseada em SPNEGO. Além disso, o site que requer autenticação baseada no SPNEGO deve ser um site confiável.
+Para que a autenticação baseada em SPNEGO funcione, o computador cliente deve fazer parte do domínio em que a conta de usuário é criada. Você também deve configurar o navegador do cliente para permitir a autenticação baseada em SPNEGO. Além disso, o site que requer autenticação baseada em SPNEGO deve ser um site confiável.
 
 Se o servidor for acessado usando o nome do computador, como https://lcserver:8080, nenhuma configuração será necessária para o Internet Explorer. Se você inserir um URL que não contenha pontos (&quot;.&quot;), o Internet Explorer tratará o site como um site da intranet local. Se você estiver usando um nome totalmente qualificado para o site, ele deverá ser adicionado como um site confiável.
 
@@ -167,3 +175,21 @@ Se o servidor for acessado usando o nome do computador, como https://lcserver:80
    `lcserver.um.lc.com` - Configura o Firefox para permitir o SPNEGO somente para seu servidor específico. Não inicie este valor com um ponto (&quot;.&quot;).
 
 1. Teste a configuração acessando o aplicativo. A página de boas-vindas do aplicativo de destino deve ser exibida.
+
+Clique para saber as etapas para [atribuir funções a usuários e grupos](/help/forms/using/admin-help/enabling-single-sign-on-aem.md#assign-roles-to-users-and-groups-assign-roles-to-users-groups).
+
+## Atribuir funções a usuários e grupos {#assign-roles-to-users-groups}
+
+1. Faça logon no AEM Forms no ambiente JEE.
+1. No console de administração, clique em Configurações > Gerenciamento de usuários > Gerenciamento de domínio.
+1. Selecione a configuração de domínio, por exemplo, LDAP, e clique nela. Você encontrará todos os usuários e grupos criados no Diretório. Se necessário, você pode criar novos usuários ou grupos.
+   ![Página de gerenciamento de domínio](/help/forms/using/assets/domain-mgmt-page.png)
+1. Clique em Autenticação. Na nova página, selecione um Provedor de autenticação, como LDAP.
+1. Navegue até a página Gerenciamento de Domínio, selecione LDAP e Clique em **Sincronizar Agora** para sincronizar o diretório com o esquema de autenticação configurado para acesso ao AEM.
+   ![Sincronizar ldap](/help/forms/using/assets/sync-ldap.png)
+1. Vá para Gerenciamento de usuários e clique em Usuários e grupos.
+1. Procure usuários ou grupos com seus nomes, como mostrado na imagem abaixo.
+   ![Pesquisar grupo de usuários](/help/forms/using/assets/search-user-group.png)
+1. Atribua as funções aos usuários ou grupos, conforme necessário.
+   ![Atribuição de função de usuário](/help/forms/using/assets/user-role-assign.png)
+
