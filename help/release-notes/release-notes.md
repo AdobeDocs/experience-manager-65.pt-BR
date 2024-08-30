@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: 447ff116c822c7ab0d5826103d6485e7d4ed13ce
+source-git-commit: 1fa3a56d2868cad0e1b54bf3fe1b018061b4b7a8
 workflow-type: tm+mt
-source-wordcount: '4390'
+source-wordcount: '4394'
 ht-degree: 1%
 
 ---
@@ -544,7 +544,7 @@ Para garantir a operação correta, você deve adicionar as seguintes propriedad
 
 * Depois de atualizar para o AEM Forms Service Pack 6.5.21.0, o serviço `PaperCapture` não executa operações de OCR (Reconhecimento Ótico de Caracteres) no PDF. O serviço não gera saída na forma de um PDF ou um arquivo de log. Para baixar e instalar o hotfix, consulte o artigo [Adobe Experience Manager Forms Hotfixes](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms). (CQDOC-21680)
 
-* Quando os usuários atualizam do AEM 6.5 Forms Service Pack 18 (6.5.18.0) ou do AEM 6.5 Forms Service Pack 19 (6.5.19.0) para o 6.5 Forms Service Pack 20 (6.5.20.0) ou 6.5 Forms AEM AEM Forms AEM Service Pack 21 (6.5.21.0), os usuários recebem um erro de compilação JSP, que impede a abertura ou criação de formulários adaptáveis e também causa erros com outras interfaces de rastreamento, como o editor da página, a interface do AEM e o editor da AEM. (FORMS-15256)
+* Quando usuários atualizam do AEM 6.5 Forms Service Pack 18 (6.5.18.0) ou do AEM 6.5 Forms Service Pack 19 (6.5.19.0) para o 6.5 Forms Service Pack 20 (6.5.20.0) ou 6.5 Forms AEM AEM Forms AEM AEM Service Pack 21 (6.5.21.0), uma compilação JSP impede a abertura ou a criação de formulários adaptáveis e também causa erros com outras interfaces de rastreamento como o editor, o AEM UI, o fluxo de trabalho da AEM, e o UI do sistema. (FORMS-15256)
 
   Se você enfrentar esse problema, execute as seguintes etapas para resolvê-lo:
    1. Navegue até o diretório `/libs/fd/aemforms/install/` no CRXDE.
