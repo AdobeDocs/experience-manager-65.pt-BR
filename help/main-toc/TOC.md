@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Use a documentação do Adobe Experience Manager 6.5 para saber como funciona e o que o software pode fazer por você.
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM 6.5
-source-git-commit: ab8248e9d0df67bed3c2d5ad3fadce08db2e9ba0
+source-git-commit: ca896466072225cc57d7c0c4f008294cc60f7b94
 workflow-type: tm+mt
 source-wordcount: '7448'
 ht-degree: 20%
@@ -536,7 +536,7 @@ ht-degree: 20%
          + [Referenciar fragmentos de formulário adaptáveis](/help/forms/using/reference-adaptive-form-fragments.md)
          + [Temas de referência](/help/forms/using/reference-themes.md)
          + [Modelos de carta de referência](/help/forms/using/reference-cm-layout-templates.md)
-         + [Configure o Microsoft Dynamics 365 para o fluxo de trabalho de hipoteca da página inicial do site de referência We.Finance](/help/forms/using/ms-dynamics-configuration-home-mortgage.md)
+         + [Configure o Microsoft Dynamics 365 para o fluxo de trabalho de hipoteca da página de referência do We.Finance](/help/forms/using/ms-dynamics-configuration-home-mortgage.md)
    + Instalar e configurar o AEM Forms {#install-aem-forms}
       + [Arquitetura e topologias de implantação do AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md)
       + [Escolha de um tipo de persistência para uma instalação do AEM Forms](/help/forms/using/choosing-persistence-type-for-aem-forms.md)
@@ -620,7 +620,6 @@ ht-degree: 20%
       + [Criar um formulário adaptável baseado nos Componentes principais](/help/forms/using/create-an-adaptive-form-core-components.md)
       + [Criar e usar fragmentos adaptáveis do Forms em um formulário adaptável](/help/forms/using/adaptive-form-fragment-core-components.md)
       + [Criar temas para Forms adaptável com base em Componentes principais](/help/forms/using/create-or-customize-themes-for-adaptive-forms-core-components.md)
-      + [Criar e usar função personalizada em um Formulário adaptável](/help/forms/using/create-and-use-custom-functions.md)
       + [Editor de regras](/help/forms/using/rule-editor-core-components.md)
       + [Criar e usar função personalizada em um componente principal do formulário adaptável](/help/forms/using/create-and-use-custom-functions-core-components.md)
       + [Criar e usar manipulador de erros personalizado para Componentes principais com base no Adaptive Forms](/help/forms/using/add-custom-error-handler-adaptive-forms-core-components.md)
@@ -677,6 +676,7 @@ ht-degree: 20%
       + [Integrar o Adobe Sign com o AEM Forms](/help/forms/using/adobe-sign-integration-adaptive-forms.md)
       + [Criação e gerenciamento de revisões para ativos em formulários](/help/forms/using/create-reviews-forms.md)
       + [Incorpore um formulário adaptável ou a Comunicação interativa no aplicativo de página única do AEM Sites](/help/forms/using/embed-adaptive-form-aem-sites-spa.md)
+      + [Criar e usar função personalizada em um Formulário adaptável](/help/forms/using/create-and-use-custom-functions.md)
       + [Criar e usar manipulador de erros personalizado para o Adaptive Forms](/help/forms/using/standard-validation-error-messages-adaptive-forms.md)
    + Comunicações Interativas {#interactive-communications}
       + [Introdução à interface de criação da comunicação interativa](/help/forms/using/introduction-interactive-communication-authoring.md)
