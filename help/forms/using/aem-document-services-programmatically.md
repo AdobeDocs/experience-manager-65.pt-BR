@@ -8,14 +8,14 @@ feature: Document Services,APIs & Integrations
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: f2e4f509-cca2-44a3-9231-e1954b0fefe3
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 60414285277281d9b1e0c9d93ddf04bc267fd0fb
 workflow-type: tm+mt
-source-wordcount: '6409'
+source-wordcount: '6388'
 ht-degree: 1%
 
 ---
 
-# Using AEM Document Services Programmatically  {#using-aem-document-services-programmatically}
+# Utilização programática de serviços de documento AEM  {#using-aem-document-services-programmatically}
 
 Amostras e exemplos neste documento ajudam você a entender e usar os Serviços de documento AEM em uma AEM Forms em um ambiente OSGi. Para obter amostras e exemplos para AEM Forms no ambiente JEE, consulte
 
@@ -274,15 +274,15 @@ public Document addSignatureField(Document inDoc,
   </tr>
   <tr>
    <td><code>signatureFieldName</code></td>
-   <td>Nome do campo de assinatura. This parameter is mandatory and cannot accept a null value.</td>
+   <td>Nome do campo de assinatura. Este parâmetro é obrigatório e não pode aceitar um valor nulo.</td>
   </tr>
   <tr>
    <td><code>pageNumber</code></td>
-   <td>O número da página na qual o campo de assinatura é adicionado. Valid values are 1 to the number of pages contained within the document. Este parâmetro é obrigatório e não pode aceitar um valor nulo.<br /> </td>
+   <td>O número da página na qual o campo de assinatura é adicionado. Os valores válidos são 1 para o número de páginas contidas no documento. Este parâmetro é obrigatório e não pode aceitar um valor nulo.<br /> </td>
   </tr>
   <tr>
    <td><code>positionRectangle</code></td>
-   <td><code>PositionRectangle object</code> Este parâmetro é obrigatório e não pode aceitar um valor nulo. Se o retângulo especificado não estiver pelo menos parcialmente na caixa de corte da página especificada, um <code>InvalidArgumentException</code> será lançado. Além disso, nem a altura nem a largura do retângulo especificado podem ser 0 ou negativas. As coordenadas X (inferior esquerdo) ou Y (inferior esquerdo) podem ser 0 ou maiores, mas não negativas, e são relativas à caixa de corte da página.</td>
+   <td>Um <code>PositionRectangle object</code> que especifica a posição do campo de assinatura. Este parâmetro é obrigatório e não pode aceitar um valor nulo. Se o retângulo especificado não estiver pelo menos parcialmente na caixa de corte da página especificada, um <code>InvalidArgumentException</code> será lançado. Além disso, nem a altura nem a largura do retângulo especificado podem ser 0 ou negativas. As coordenadas X (inferior esquerdo) ou Y (inferior esquerdo) podem ser 0 ou maiores, mas não negativas, e são relativas à caixa de corte da página.</td>
   </tr>
   <tr>
    <td><code>fieldMDPOptionsSpec</code></td>
@@ -903,7 +903,7 @@ Ao modificar um campo de assinatura existente, você pode editar o documento PDF
   </tr>
   <tr>
    <td><code>unlockOptions</code></td>
-   <td>Includes the parameters require to unlock an encrypted file. Isso é necessário somente se o arquivo estiver criptografado.</td>
+   <td>Inclui os parâmetros necessários para desbloquear um arquivo criptografado. Isso é necessário somente se o arquivo estiver criptografado.</td>
   </tr>
  </tbody>
 </table>
@@ -1396,7 +1396,7 @@ A chave pública é armazenada no certificado do usuário que deve estar dispon�
 >
 >A AEM Forms também oferece suporte à especificação *[CAdES](https://en.wikipedia.org/wiki/CAdES_%28computing%29)* para assinatura digital de documentos PDF.
 
-**Documentos de PDF de Certificação**
+**Certificação de documentos PDF**
 
 Você pode proteger um documento PDF certificando-o com um tipo específico de assinatura chamado assinatura certificada. Uma assinatura certificada distingue-se de uma assinatura digital das seguintes formas:
 
@@ -4654,7 +4654,7 @@ O serviço createPDF retorna um java.util.Map com resultados. As chaves do mapa 
 
 * ConvertedDoc: contém o documento de saída.
 
-O serviço createPDF gera as seguintes exceções:
+O serviço createPDF lança as seguintes exceções:
 
 * ExceçãoConversão
 * InvalidParameterException
@@ -5069,24 +5069,26 @@ A API PDF de marcação automática ajuda a tornar um documento PDF acessível a
 
 ![Documento PDF marcado automaticamente](assets/auto-tag-api.png)
 
-**Sintaxe**: `tag(Document inDoc)`
+<!--
 
-**Parâmetros de entrada**
+**Syntax**: `tag(Document inDoc)`
+
+**Input Parameters**
 
 <table>
  <tbody>
   <tr>
-   <th>Parâmetros</th>
-   <th>Descrição</th>
+   <th>Parameters</th>
+   <th>Description</th>
   </tr>
   <tr>
    <td><code>inDoc</code><br /> </td>
-   <td>Objeto de documento contendo PDF.<br /> </td>
+   <td>Document object containing PDF.<br /> </td>
   </tr>
  </tbody>
 </table>
 
-O código Java a seguir marca o documento PDF com listas e parágrafos.
+The following Java code tags the PDF document with lists and paragraphs.
 
 ```java
 /*************************************************************************
@@ -5167,4 +5169,6 @@ StructLib.AutoTagDoc(outDoc);
 }
         return outDoc;
 }
+
 ```
+-->
