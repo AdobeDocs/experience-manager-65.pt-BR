@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: 1fa3a56d2868cad0e1b54bf3fe1b018061b4b7a8
+source-git-commit: f87f762068992695ffd6e24f572281653cf9f75f
 workflow-type: tm+mt
-source-wordcount: '4394'
+source-wordcount: '4500'
 ht-degree: 1%
 
 ---
@@ -384,7 +384,7 @@ Para obter instruções sobre como instalar o Service Pack no Experience Manager
 
 >[!NOTE]
 >
->O recurso de formulários adaptáveis, disponível no [Início rápido do AEM 6.5](https://experienceleague.adobe.com/br/docs/experience-manager-65/content/implementing/deploying/deploying/deploy), foi projetado apenas para fins de exploração e avaliação. Para usá-lo na produção, é essencial obter uma licença válida para o AEM Forms, pois a funcionalidade de formulários adaptáveis requer uma licença adequada.
+>O recurso de formulários adaptáveis, disponível no [Início rápido do AEM 6.5](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/implementing/deploying/deploying/deploy), foi projetado apenas para fins de exploração e avaliação. Para usá-lo na produção, é essencial obter uma licença válida para o AEM Forms, pois a funcionalidade de formulários adaptáveis requer uma licença adequada.
 
 ### Instalar pacote de índice do GraphQL para fragmentos de conteúdo do Experience Manager{#install-aem-graphql-index-add-on-package}
 
@@ -559,6 +559,10 @@ Para garantir a operação correta, você deve adicionar as seguintes propriedad
 * Quando um usuário em um ambiente Linux renderiza um formulário adaptável (no JEE) no HTML, ele não é renderizado corretamente. Para baixar e instalar o hotfix, consulte o artigo [Adobe Experience Manager Forms Hotfixes](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms). (LC-3921957)
 * Quando um usuário converte um arquivo XTG no formato PostScript usando o Serviço de Saída no AEM Forms JEE, ocorre uma falha com o erro: `AEM_OUT_001_003: Unexpected Exception: PAExecute Failure: XFA_RENDER_FAILURE`. Para baixar e instalar o hotfix, consulte o artigo [Adobe Experience Manager Forms Hotfixes](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms). (LC-3921720)
 * Depois de atualizar para o AEM Forms Service Pack 18 (6.5.18.0) no servidor JEE, quando um usuário envia um formulário, ele falha ao renderizar HTML5 ou PDF forms e falhas XMLFM. Para baixar e instalar o hotfix, consulte o artigo [Adobe Experience Manager Forms Hotfixes](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms). (LC-3921718)
+* Na Visualização de impressão da interface do usuário do Agente de comunicações interativas, o símbolo de moeda (como cifrão $) é exibido de forma inconsistente para todos os valores do campo. Aparece para valores até 999, mas está ausente para valores de 1000 e superiores. (FORMS-16557)
+* Quaisquer modificações no XDP de fragmentos de layout aninhados em uma comunicação interativa não são refletidas no editor IC. (FORMS-16575)
+* Na Visualização de impressão da interface do usuário do Agente de comunicações interativas, alguns valores calculados não são exibidos corretamente. (FORMS-16603)
+* Quando a carta é exibida na Visualização de impressão, o conteúdo é alterado. Alguns espaços desaparecem e algumas letras são substituídas por &quot;x&quot;. (FORMS-15681)
 
 ## Pacotes OSGi e pacotes de conteúdo incluídos{#osgi-bundles-and-content-packages-included}
 
