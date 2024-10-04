@@ -1,15 +1,14 @@
 ---
 title: Configurar a marcação de ativos usando o Serviço de conteúdo inteligente
 description: Saiba como configurar a marcação inteligente e a marcação inteligente aprimorada no  [!DNL Adobe Experience Manager], usando o Serviço de Conteúdo Inteligente.
-contentOwner: AG
 role: Admin
 feature: Tagging,Smart Tags
 exl-id: 9f68804f-ba15-4f83-ab1b-c249424b1396
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 5aff321eb52c97e076c225b67c35e9c6d3371154
+source-git-commit: c4c85fe264b92c4591c78dbfb89ce2c20b679d93
 workflow-type: tm+mt
-source-wordcount: '2415'
-ht-degree: 19%
+source-wordcount: '1985'
+ht-degree: 15%
 
 ---
 
@@ -21,7 +20,10 @@ Antes de começar a marcar seus ativos usando os Serviços de Conteúdo Intelige
 >
 >* Os Serviços de Conteúdo Inteligente não estão mais disponíveis para novos [!DNL Experience Manager Assets] clientes locais. Os clientes locais existentes que já têm esse recurso ativado podem continuar usando os Serviços de conteúdo inteligente.
 >* Os Serviços de Conteúdo Inteligente estão disponíveis para [!DNL Experience Manager Assets] clientes atuais do Managed Services que já têm esse recurso habilitado.
->* Os novos clientes do Managed Services [!DNL Experience Manager Assets] podem seguir as instruções mencionadas neste artigo para configurar os Serviços de Conteúdo Inteligente.
+>* Os novos clientes do Experience Manager Assets Managed Services podem seguir as instruções mencionadas neste artigo para configurar os Serviços de conteúdo inteligente.
+>* Para o Service Pack 20 e posterior, é necessário executar as etapas alternativas para que o SCS seja compatível com a integração OAuth. Consulte [Solução de problemas de marcas inteligentes para credenciais do OAuth](#config-smart-tagging.md).
+>* Para oferecer suporte à integração Oauth no Service Pack 21, é necessário instalar o [hotfix](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?pack[...]pacotes/cq650/product/assets/cq-6.5.0-hotfix-40772-1.2.zip).
+>* Para a configuração do SCS existente, o processo é o mesmo que configurar uma nova integração OAuth. Qualquer configuração herdada será limpa automaticamente.
 
 Antes de usar o Serviço de conteúdo inteligente, verifique o seguinte:
 
@@ -36,159 +38,116 @@ Quando você integra com o Adobe Developer Console, o servidor do [!DNL Experien
 
 Para configurar o Serviço de conteúdo inteligente, siga estas etapas de nível superior:
 
-1. Para gerar uma chave pública, [Crie uma configuração do Serviço de Conteúdo Inteligente](#obtain-public-certificate) em [!DNL Experience Manager]. [Obtenha um certificado público](#obtain-public-certificate) para a integração OAuth.
+1. Crie uma integração no [Adobe Developer Console](#create-adobe-io-integration).
 
-1. [Crie uma integração no Console do desenvolvedor](#create-adobe-i-o-integration) e faça upload da chave pública gerada.
+1. Crie a [configuração de conta técnica IMS](#create-ims-account-config) usando a chave de API e outras credenciais da Adobe Developer Console.
 
-1. [Configure sua implantação](#configure-smart-content-service) usando a chave de API e outras credenciais da Adobe Developer Console.
+1. [Configurar o Serviço de Conteúdo Inteligente](#configure-smart-content-service).
 
 1. [Teste a configuração](#validate-the-configuration).
 
-1. Opcionalmente, [habilite a marcação automática no carregamento de ativos](#enable-smart-tagging-in-the-update-asset-workflow-optional).
+<!--
+To configure the Smart Content Service, follow these top-level steps:
 
-### Obter certificado público criando uma configuração do Serviço de conteúdo inteligente {#obtain-public-certificate}
+1. To generate a public key, [Create a Smart Content Service] (#obtain-public-certificate) configuration in [!DNL Experience Manager]. 
 
-Um certificado público permite autenticar seu perfil no Adobe Developer Console.
+1. Optionally, [enable auto-tagging on asset upload](#enable-smart-tagging-in-the-update-asset-workflow-optional).
 
-1. Na interface de usuário do [!DNL Experience Manager], acesse **[!UICONTROL Ferramentas]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Cloud Service herdados]**.
+   <!--1. [Obtain public certificate](#obtain-public-certificate) for OAuth integration.
+   1. [Create an integration in Adobe Developer Console](#create-adobe-i-o-integration) and upload the generated public key.
 
-1. Na página Cloud Service, clique em **[!UICONTROL Configurar agora]** em **[!UICONTROL Tags inteligentes da Assets]**.
+   1. [Configure your deployment](#configure-smart-content-service) using the API key and other credentials from Adobe Developer Console.
 
-1. Na caixa de diálogo **[!UICONTROL Criar Configuração]**, especifique um título e nome para a configuração de Tags Inteligentes. Clique em **[!UICONTROL Criar]**.
+   1. [Test the configuration](#validate-the-configuration).-->
 
-1. Na caixa de diálogo **[!UICONTROL Serviço de Conteúdo Inteligente do AEM]**, use os seguintes valores:
+### Criar integração do Adobe Developer Console {#create-adobe-io-integration}
 
-   **[!UICONTROL URL de Serviço]**: `https://smartcontent.adobe.io/<region where your Experience Manager author instance is hosted>`
+Para usar APIs do Serviço de Conteúdo Inteligente, crie uma integração no Adobe Developer Console para obter a [!UICONTROL Chave de API] (gerada no campo [!UICONTROL ID do CLIENTE] da integração com o Adobe Developer Console), a [!UICONTROL ID da ORGANIZAÇÃO] e o [!UICONTROL SEGREDO DO CLIENTE] para as [!UICONTROL Configurações do Serviço de Marcação Inteligente do Assets] da configuração de nuvem em [!DNL Experience Manager].
 
-   Por exemplo, `https://smartcontent.adobe.io/apac`. Você pode especificar `na`, `emea` ou `apac` como as regiões onde a instância do autor do Experience Manager está hospedada.
+1. Acesse [https://developer.adobe.com](https://developer.adobe.com/) em um navegador. Selecione a conta apropriada e verifique se a organização associada tem a função de **administrador** do sistema.
+
+1. Crie um projeto com o nome que quiser. Clique em **[!UICONTROL Adicionar API]**.
+
+1. Na página **[!UICONTROL Adicionar uma API]**, selecione **[!UICONTROL Experience Cloud]** e escolha **[!UICONTROL Conteúdo inteligente]**. Clique em **[!UICONTROL Avançar]**.
+
+1. Selecione **[!UICONTROL Servidor a servidor OAuth]**. Clique em **[!UICONTROL Avançar]**.
+Para obter detalhes sobre como fazer essa configuração, consulte a documentação do Developer Console, dependendo das suas necessidades:
+
+   * Visão geral:
+      * [Autenticação de Servidor para Servidor](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/)
+
+   * Criação de uma nova credencial OAuth:
+      * [Guia de implementação de credenciais de servidor para servidor do OAuth](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/)
+
+   * Migrar uma credencial JWT existente para uma credencial OAuth:
+      * [Migrando da credencial de conta de serviço (JWT) para a credencial de servidor para servidor OAuth](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/)
+
+
+1. Na página **[!UICONTROL Selecionar perfis de produtos]**, selecione **[!UICONTROL Serviços de Conteúdo Inteligente]**. Clique em **[!UICONTROL Salvar API configurada]**.
+
+   Uma página exibe mais informações sobre a configuração. Mantenha esta página aberta para copiar e adicionar esses valores nas [!UICONTROL Configurações do Serviço de Marcação Inteligente da Assets] da configuração de nuvem no [!DNL Experience Manager] para configurar marcas inteligentes.
+
+   ![Credencial OAuth na Developer Console](assets/ims-configuration-developer-console.png)
+
+### Criar configuração de conta técnica IMS {#create-ims-account-config}
+
+É necessário criar a configuração de conta técnica IMS usando as etapas abaixo:
+
+1. Na interface do [!DNL Experience Manager], acesse **[!UICONTROL Ferramentas]** > **[!UICONTROL Segurança]** > **[!UICONTROL Configurações do Adobe IMS]**.
+
+1. Clique em **[!UICONTROL Criar]**.
+
+1. Na caixa de diálogo Configuração de conta técnica IMS, use os seguintes valores:
+
+   ![Janela de configuração do Adobe IMS](assets/adobe-ims-config.png)
+
+   | Texto | Descrição |
+   | -------- | ---------------------------- |
+   | Solução em nuvem | Escolha **[!UICONTROL Tags inteligentes]** no menu suspenso. |
+   | Título | Adicione o título da conta IMS de configuração. |
+   | Servidor de autorização | Adicionar `https://ims-na1.adobelogin.com` |
+   | ID do cliente | A ser fornecido por meio do [console do Adobe Developer](https://developer.adobe.com/console/). |
+   | Senha do cliente | A ser fornecido por meio do [console do Adobe Developer](https://developer.adobe.com/console/). |
+   | Escopo | A ser fornecido por meio do [console do Adobe Developer](https://developer.adobe.com/console/). |
+   | ID da organização | A ser fornecido por meio do [console do Adobe Developer](https://developer.adobe.com/console/). |
+
+1. Selecione a configuração criada e clique em **[!UICONTROL Verificar integridade]**.
+
+1. Confirme a caixa de diálogo de verificação de integridade e clique em fechar assim que a configuração estiver no estado íntegro.
+
+### Criar uma nova configuração {#configure-smart-content-service}
+
+<!--
+>[!CAUTION]
+>
+>Previously, configurations that were made with JWT Credentials are now subject to deprecation in the Adobe Developer Console. You cannot create new JWT credentials after June 3, 2024. Such configurations can no longer be created or updated, but can be migrated to OAuth configurations.
+> See [Setting up IMS integrations for AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service)
+>See [Steps to configure OAuth for on-premise users](#config-oauth-onprem)
+> See [Troubleshooting smart tags for OAuth credentials](#config-smart-tagging.md)
+-->
+
+Para configurar a integração, use os valores dos campos [!UICONTROL ID DA CONTA TÉCNICA], [!UICONTROL ID DA ORGANIZAÇÃO], [!UICONTROL SEGREDO DO CLIENTE] e [!UICONTROL ID DO CLIENTE] da integração com o Adobe Developer Console. Criar uma configuração de nuvem de Tags Inteligentes permite a autenticação de solicitações de API da implantação [!DNL Experience Manager].
+
+1. Em [!DNL Experience Manager], navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Marca Inteligente]** para abrir as [!UICONTROL Configurações de Marca Inteligente].
+
+1. Clique em **[!UICONTROL Criar]** para criar uma nova configuração. Caso contrário, clique em **[!UICONTROL Propriedades]** para atualizar a configuração existente.
+
+1. Preencha os seguintes campos:
+
+   ![Configuração de Tags Inteligentes](assets/smart-tags-config.png)
+
+   | Texto | Descrição |
+   | -------- | ---------------------------- |
+   | Título | Adicione o título da conta IMS de configuração. |
+   | Configuração IMS da Adobe associada | Escolha a configuração na lista suspensa. |
+   | URL do serviço | `https://smartcontent.adobe.io/<region where your Experience Manager author instance is hosted>`. Por exemplo, `https://smartcontent.adobe.io/apac`. Você pode especificar `na`, `emea` ou `apac` como as regiões onde a instância do autor do Experience Manager está hospedada. |
 
    >[!NOTE]
    >
    >Se o Serviço gerenciado de Experience Manager for provisionado antes de 1° de setembro de 2022, use o seguinte URL de serviço:
    >`https://mc.adobe.io/marketingcloud/smartcontent`
 
-   **[!UICONTROL Servidor de autorização]**: `https://ims-na1.adobelogin.com`
-
-   Deixe os outros campos em branco por enquanto (a serem fornecidos posteriormente). Clique em **[!UICONTROL OK]**.
-
-   ![Caixa de diálogo do Serviço de Conteúdo Inteligente do Experience Manager para fornecer a URL do serviço de conteúdo](assets/aem_scs.png)
-
-
-   *Figura: caixa de diálogo Serviço de Conteúdo Inteligente para fornecer a URL do serviço de conteúdo*
-
-   >[!NOTE]
-   >
-   >A URL fornecida como [!UICONTROL URL de Serviço] não pode ser acessada pelo navegador e gera um erro 404. A configuração funciona bem com o mesmo valor do parâmetro [!UICONTROL URL de Serviço]. Para obter o status geral do serviço e o agendamento de manutenção, consulte [https://status.adobe.com](https://status.adobe.com).
-
-1. Clique em **[!UICONTROL Baixar Certificado Público para Integração com o OAuth]** e baixe o arquivo de certificado público `AEM-SmartTags.crt`.
-
-   ![Uma representação das configurações criadas para o serviço de marcação inteligente](assets/smart-tags-download-public-cert.png)
-
-
-   *Figura: Configurações do serviço de marcação inteligente.*
-
-#### Reconfigure quando um certificado expirar {#certrenew}
-
-Depois que um certificado expira, ele deixa de ser confiável. Não é possível renovar um certificado expirado. Para adicionar um certificado, siga estas etapas.
-
-1. Faça logon na implantação do [!DNL Experience Manager] como administrador. Clique em **[!UICONTROL Ferramentas]** > **[!UICONTROL Segurança]** > **[!UICONTROL Usuários]**.
-
-1. Localize o usuário **[!UICONTROL dam-update-service]** e clique nele. Clique na guia **[!UICONTROL Armazenamento de chaves]**.
-
-1. Exclua o armazenamento de chaves **[!UICONTROL similaritysearch]** existente com o certificado expirado. Clique em **[!UICONTROL Salvar e fechar]**.
-
-   ![Exclua a entrada de pesquisa de similaridade existente no Armazenamento de Chaves para adicionar um certificado de segurança](assets/smarttags_delete_similaritysearch_keystore.png)
-
-
-   *Figura: exclua a entrada `similaritysearch` existente no Armazenamento de Chaves para adicionar um certificado de segurança.*
-
-1. Navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Serviços da nuvem]** > **[!UICONTROL Serviços da nuvem herdados]**. Clique em **[!UICONTROL Tags inteligentes de ativos]** > **[!UICONTROL Mostrar configuração]** > **[!UICONTROL Configurações disponíveis]**. Clique na configuração necessária.
-
-1. Para baixar um certificado público, clique em **[!UICONTROL Baixar Certificado Público para Integração com o OAuth]**.
-
-1. Acesse [https://console.adobe.io](https://console.adobe.io) e navegue até os Serviços de Conteúdo Inteligente existentes na página **[!UICONTROL Integrações]**. Faça upload do novo certificado. Para obter mais informações, consulte as instruções em [Criar integração com o Adobe Developer Console](#create-adobe-i-o-integration).
-
-### Criar integração do Adobe Developer Console {#create-adobe-i-o-integration}
-
-Para usar APIs do Serviço de Conteúdo Inteligente, crie uma integração no Adobe Developer Console para obter a [!UICONTROL Chave de API] (gerada no campo [!UICONTROL ID do CLIENTE] da integração com o Adobe Developer Console), a [!UICONTROL ID da CONTA TÉCNICA], a [!UICONTROL ID DA ORGANIZAÇÃO] e o [!UICONTROL SEGREDO DO CLIENTE] para as [!UICONTROL Configurações do Serviço de Marcação Inteligente da Assets] da configuração de nuvem em [!DNL Experience Manager].
-
-1. Acesse [https://console.adobe.io](https://console.adobe.io/) em um navegador. Selecione a conta e verifique se a organização associada tem a função de administrador do sistema.
-
-1. Crie um projeto com o nome que quiser. Clique em **[!UICONTROL Adicionar API]**.
-
-1. Na página **[!UICONTROL Adicionar uma API]**, selecione **[!UICONTROL Experience Cloud]** e escolha **[!UICONTROL Conteúdo inteligente]**. Clique em **[!UICONTROL Avançar]**.
-
-1. Selecione **[!UICONTROL Fazer upload da sua chave pública]**. Forneça o arquivo de certificado baixado do [!DNL Experience Manager]. Será exibida a mensagem [!UICONTROL Chave(s) pública(s) carregada(s) com êxito]. Clique em **[!UICONTROL Avançar]**.
-
-   A página [!UICONTROL Criar uma nova credencial de conta de serviço (JWT)] exibe a chave pública da conta de serviço.
-
-1. Clique em **[!UICONTROL Avançar]**.
-
-1. Na página **[!UICONTROL Selecionar perfis de produtos]**, selecione **[!UICONTROL Serviços de conteúdo inteligente]**. Clique em **[!UICONTROL Salvar API configurada]**.
-
-   Uma página exibe mais informações sobre a configuração. Mantenha esta página aberta para copiar e adicionar esses valores nas [!UICONTROL Configurações do Serviço de Marcação Inteligente da Assets] da configuração de nuvem no [!DNL Experience Manager] para configurar marcas inteligentes.
-
-   ![Na guia Visão geral, é possível revisar as informações da integração.](assets/integration_details.png)
-
-
-   *Figura: Detalhes da integração no Adobe Developer Console*
-
-### Configurar o serviço de conteúdo inteligente {#configure-smart-content-service}
-
->[!CAUTION]
->
->Anteriormente, as configurações feitas com Credenciais JWT agora estavam sujeitas a desativação no Adobe Developer Console. Não será possível criar novas credenciais JWT após 3 de junho de 2024. Essas configurações não podem mais ser criadas ou atualizadas, mas podem ser migradas para configurações OAuth.
-> Consulte [Configuração de integrações IMS para AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service)
->Consulte [Etapas para configurar o OAuth para usuários locais](#config-oauth-onprem)
-> Consulte [Solução de problemas de tags inteligentes para credenciais do OAuth](#config-smart-tagging.md)
-
-Para configurar a integração, use os valores dos campos [!UICONTROL ID DA CONTA TÉCNICA], [!UICONTROL ID DA ORGANIZAÇÃO], [!UICONTROL SEGREDO DO CLIENTE] e [!UICONTROL ID DO CLIENTE] da integração com o Adobe Developer Console. Criar uma configuração de nuvem de Tags Inteligentes permite a autenticação de solicitações de API da implantação [!DNL Experience Manager].
-
-1. Em [!DNL Experience Manager], navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Cloud Services herdados]** para abrir o console [!UICONTROL Cloud Services].
-
-1. Nas **[!UICONTROL Tags inteligentes do Assets]**, abra a configuração criada acima. Na página de configurações do serviço, clique em **[!UICONTROL Editar]**.
-
-1. Na caixa de diálogo **[!UICONTROL Serviço de conteúdo inteligente do AEM]**, use os valores pré-preenchidos nos campos **[!UICONTROL URL do serviço]** e **[!UICONTROL Servidor de autorização]**.
-
-1. Para os campos [!UICONTROL Chave da API], [!UICONTROL ID da Conta Técnica], [!UICONTROL ID da Organização] e [!UICONTROL Segredo do Cliente], copie e use os seguintes valores gerados na [integração com o Adobe Developer Console](#create-adobe-i-o-integration).
-
-   | [!UICONTROL Configurações do Serviço de Marcação Inteligente do Assets] | Campos de integração do [!DNL Adobe Developer Console] |
-   |--- |--- |
-   | [!UICONTROL Chave de API] | [!UICONTROL ID DO CLIENTE] |
-   | [!UICONTROL ID da Conta Técnica] | [!UICONTROL ID DA CONTA TÉCNICA] |
-   | [!UICONTROL ID da Organização] | [!UICONTROL ID DA ORGANIZAÇÃO] |
-   | [!UICONTROL Segredo do cliente] | [!UICONTROL SEGREDO DO CLIENTE] |
-
-### Configurar OAuth para usuários locais {#config-oauth-onprem}
-
-#### Pré-requisitos {#prereqs-config-oauth-onprem}
-
-Um escopo de autorização é uma cadeia de caracteres OAuth que contém os seguintes pré-requisitos:
-
-* Crie uma nova integração OAuth no [Developer Console](https://developer.adobe.com/console/user/servicesandapis) usando o `ClientID`, `ClientSecretID` e `OrgID`.
-* Adicionar os seguintes arquivos no caminho `/apps/system/config in crx/de`:
-   * `com.adobe.granite.auth.oauth.accesstoken.provider.<randomnumbers>.config`
-   * `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl.<randomnumber>.config`
-
-#### Configurar OAuth para usuários locais {#steps-config-oauth-onprem}
-
-1. Adicionar ou atualizar as propriedades abaixo em `com.adobe.granite.auth.oauth.accesstoken.provider.<randomnumbers>.config`:
-
-   * `auth.token.provider.authorization.grants="client_credentials"`
-   * `auth.token.provider.orgId="<OrgID>"`
-   * `auth.token.provider.default.claims=("\"iss\"\ :\ \"<OrgID>\"")`
-   * `auth.token.provider.scope="read_pc.dma_smart_content,\ openid,\ AdobeID,\ additional_info.projectedProductContext"`
-     `auth.token.validator.type="adobe-ims-similaritysearch"`
-   * Atualize o `auth.token.provider.client.id` com a ID de cliente da nova configuração OAuth.
-   * Atualizar `auth.access.token.request` para `"https://ims-na1.adobelogin.com/ims/token/v3"`
-2. Renomeie o arquivo para `com.adobe.granite.auth.oauth.accesstoken.provider-<randomnumber>.config`.
-3. Execute as etapas abaixo em `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl.<randomnumber>.config`:
-   * Atualize a propriedade auth.ims.client.secret com o Segredo do cliente da nova integração OAuth.
-   * Renomear o arquivo para `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl-<randomnumber>.config`
-4. Salve todas as alterações no console de desenvolvimento do repositório de conteúdo, por exemplo, CRXDE.
-5. Navegue até `/system/console/configMgr` e substitua a configuração OSGi de `.<randomnumber>` até `-<randomnumber>`.
-6. Exclua a configuração antiga para `"Access Token provider name: adobe-ims-similaritysearch"` em `/system/console/configMgr`.
-7. Reinicie o console.
+1. Clique em **[!UICONTROL Salvar e fechar]**.
 
 ### Validar a configuração {#validate-the-configuration}
 
@@ -198,11 +157,176 @@ Após concluir a configuração, você pode usar um MBean JMX para validar a con
 
 1. Acesse **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > **[!UICONTROL Console da Web]** para abrir o console OSGi. Clique em **[!UICONTROL Principal] > [!UICONTROL JMX]**.
 
-1. Clique em `com.day.cq.dam.similaritysearch.internal.impl`. Ele abre **[!UICONTROL Tarefas Diversas de SimilaritySearch]**.
+<!--
+1. Click `com.day.cq.dam.similaritysearch.internal.impl`. It opens **[!UICONTROL SimilaritySearch Miscellaneous Tasks]**.-->
+
+1. Clique em `com.day.cq.dam.similaritysearch.internal.impl (SCS)`.
+
+   ![Janela do Mbean](assets/mbean.png)
 
 1. Clique em `validateConfigs()`. Na caixa de diálogo **[!UICONTROL Validar Configurações]**, clique em **[!UICONTROL Chamar]**.
 
 Os resultados da validação são exibidos no mesmo diálogo.
+
+<!--
+### Obtain public certificate by creating Smart Content Service configuration {#obtain-public-certificate}
+
+A public certificate lets you authenticate your profile on Adobe Developer Console.
+
+1. In the [!DNL Experience Manager] user interface, access **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Legacy Cloud Services]**.
+
+1. In the Cloud Services page, click **[!UICONTROL Configure Now]** under **[!UICONTROL Assets Smart Tags]**.
+
+1. In the **[!UICONTROL Create Configuration]** dialog, specify a title and name for the Smart Tags configuration. Click **[!UICONTROL Create]**.
+
+1. In the **[!UICONTROL AEM Smart Content Service]** dialog, use the following values:
+
+   **[!UICONTROL Service URL]**: `https://smartcontent.adobe.io/<region where your Experience Manager author instance is hosted>`
+
+   For example, `https://smartcontent.adobe.io/apac`. You can specify `na`, `emea`, or, `apac` as the regions where your Experience Manager author instance is hosted. 
+
+   >[!NOTE]
+   >
+   >If the Experience Manager Managed Service is provisioned before September 01, 2022, use the following Service URL:
+   >`https://mc.adobe.io/marketingcloud/smartcontent`
+
+   **[!UICONTROL Authorization Server]**: `https://ims-na1.adobelogin.com`
+
+   Leave the other fields blank for now (to be provided later). Click **[!UICONTROL OK]**.
+
+   ![Experience Manager Smart Content Service dialog to provide content service URL](assets/aem_scs.png)
+
+
+   *Figure: Smart Content Service dialog to provide content service URL*
+
+   >[!NOTE]
+   >
+   >The URL provided as [!UICONTROL Service URL] is not accessible via browser and generates a 404 error. The configuration works OK with the same value of the [!UICONTROL Service URL] parameter. For the overall service status and maintenance schedule, see [https://status.adobe.com](https://status.adobe.com).
+
+1. Click **[!UICONTROL Download Public Certificate for OAuth Integration]**, and download the public certificate file `AEM-SmartTags.crt`.
+
+   ![A representation of the settings created for the smart tagging service](assets/smart-tags-download-public-cert.png)
+
+
+   *Figure: Settings for smart tagging service.*
+
+#### Reconfigure when a certificate expires {#certrenew}
+
+After a certificate expires, it is no longer trusted. You cannot renew an expired certificate. To add a certificate, follow these steps.
+
+1. Log in your [!DNL Experience Manager] deployment as an administrator. Click **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Users]**.
+
+1. Locate and click **[!UICONTROL dam-update-service]** user. Click **[!UICONTROL Keystore]** tab.
+
+1. Delete the existing **[!UICONTROL similaritysearch]** keystore with the expired certificate. Click **[!UICONTROL Save & Close]**.
+
+   ![Delete the existing similarity search entry in Keystore to add a security certificate](assets/smarttags_delete_similaritysearch_keystore.png)
+
+
+   *Figure: Delete the existing `similaritysearch` entry in Keystore to add a security certificate.*
+
+1. Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Legacy Cloud Services]**. Click **[!UICONTROL Asset Smart Tags]** > **[!UICONTROL Show Configuration]** > **[!UICONTROL Available Configurations]**. Click the required configuration.  
+
+1. To download a public certificate, click **[!UICONTROL Download Public Certificate for OAuth Integration]**.
+
+1. Access [https://console.adobe.io](https://console.adobe.io) and navigate to the existing Smart Content Services on the **[!UICONTROL Integrations]** page. Upload the new certificate. For more information, see the instructions in [Create Adobe Developer Console integration](#create-adobe-i-o-integration).
+
+### Create Adobe Developer Console integration {#create-adobe-i-o-integration}
+
+To use Smart Content Service APIs, create an integration in Adobe Developer Console to obtain [!UICONTROL API Key] (generated in [!UICONTROL CLIENT ID] field of Adobe Developer Console integration), [!UICONTROL TECHNICAL ACCOUNT ID], [!UICONTROL ORGANIZATION ID], and [!UICONTROL CLIENT SECRET] for [!UICONTROL Assets Smart Tagging Service Settings] of cloud configuration in [!DNL Experience Manager].
+
+1. Access [https://console.adobe.io](https://console.adobe.io/) in a browser. Select the appropriate account and verify that the associated organization role is system administrator.
+
+1. Create a project with any desired name. Click **[!UICONTROL Add API]**.
+
+1. On the **[!UICONTROL Add an API]** page, select **[!UICONTROL Experience Cloud]** and select **[!UICONTROL Smart Content]**. Click **[!UICONTROL Next]**.
+
+1. Select **[!UICONTROL Upload your public key]**. Provide the certificate file downloaded from [!DNL Experience Manager]. A message [!UICONTROL Public key(s) uploaded successfully] is displayed. Click **[!UICONTROL Next]**.
+
+   [!UICONTROL Create a new Service Account (JWT) credential] page displays the public key for the service account.
+
+1. Click **[!UICONTROL Next]**.
+
+1. On the **[!UICONTROL Select product profiles]** page, select **[!UICONTROL Smart Content Services]**. Click **[!UICONTROL Save configured API]**.
+
+   A page displays more information about the configuration. Keep this page open to copy and add these values in [!UICONTROL Assets Smart Tagging Service Settings] of cloud configuration in [!DNL Experience Manager] to configure smart tags.
+
+   ![In the Overview tab, you can review the information provided for integration.](assets/integration_details.png)
+
+
+   *Figure: Details of integration in Adobe Developer Console*
+
+### Configure Smart Content Service {#configure-smart-content-service}
+
+>[!CAUTION]
+>
+>Previously, configurations that were made with JWT Credentials are now subject to deprecation in the Adobe Developer Console. You cannot create new JWT credentials after June 3, 2024. Such configurations can no longer be created or updated, but can be migrated to OAuth configurations.
+> See [Setting up IMS integrations for AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service)
+>See [Steps to configure OAuth for on-premise users](#config-oauth-onprem)
+> See [Troubleshooting smart tags for OAuth credentials](#config-smart-tagging.md)
+
+To configure the integration, use the values of [!UICONTROL TECHNICAL ACCOUNT ID], [!UICONTROL ORGANIZATION ID], [!UICONTROL CLIENT SECRET], and [!UICONTROL CLIENT ID] fields from the Adobe Developer Console integration. Creating a Smart Tags cloud configuration allows authentication of API requests from the [!DNL Experience Manager] deployment.
+
+1. In [!DNL Experience Manager], navigate to **[!UICONTROL Tools]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Legacy Cloud Services]** to open the [!UICONTROL Cloud Services] console.
+
+1. Under the **[!UICONTROL Assets Smart Tags]**, open the configuration created above. On the service settings page, click **[!UICONTROL Edit]**.
+
+1. In the **[!UICONTROL AEM Smart Content Service]** dialog, use the pre-populated values for the **[!UICONTROL Service URL]** and **[!UICONTROL Authorization Server]** fields.
+
+1. For the fields [!UICONTROL Api Key], [!UICONTROL Technical Account ID], [!UICONTROL Organization ID], and [!UICONTROL Client Secret], copy and use the following values generated in [Adobe Developer Console integration](#create-adobe-i-o-integration).
+
+   | [!UICONTROL Assets Smart Tagging Service Settings] | [!DNL Adobe Developer Console] integration fields |
+   |--- |--- |
+   | [!UICONTROL Api Key] | [!UICONTROL CLIENT ID] |
+   | [!UICONTROL Technical Account ID] | [!UICONTROL TECHNICAL ACCOUNT ID] |
+   | [!UICONTROL Organization ID] | [!UICONTROL ORGANIZATION ID] |
+   | [!UICONTROL Client Secret] | [!UICONTROL CLIENT SECRET] |
+
+### Configure OAuth for on-premise users {#config-oauth-onprem}
+
+#### Prerequisites {#prereqs-config-oauth-onprem}
+
+An authorization scope is an OAuth string that contains the following prerequisites:
+
+* Create a new OAuth integration in the [Developer Console](https://developer.adobe.com/console/user/servicesandapis) using `ClientID`, `ClientSecretID`, and `OrgID`.
+* Add the following files at this path `/apps/system/config in crx/de`:
+   * `com.adobe.granite.auth.oauth.accesstoken.provider.<randomnumbers>.config`
+   * `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl.<randomnumber>.config`
+
+#### Configure OAuth for on-premise users {#steps-config-oauth-onprem}
+
+1. Add or update the below properties in `com.adobe.granite.auth.oauth.accesstoken.provider.<randomnumbers>.config`:
+
+   * `auth.token.provider.authorization.grants="client_credentials"`
+   * `auth.token.provider.orgId="<OrgID>"`
+   * `auth.token.provider.default.claims=("\"iss\"\ :\ \"<OrgID>\"")`
+   * `auth.token.provider.scope="read_pc.dma_smart_content,\ openid,\ AdobeID,\ additional_info.projectedProductContext"`
+     `auth.token.validator.type="adobe-ims-similaritysearch"`
+   * Update the `auth.token.provider.client.id` with the Client ID of the new OAuth configuration.
+   * Update `auth.access.token.request` to `"https://ims-na1.adobelogin.com/ims/token/v3"`
+2. Rename the file to `com.adobe.granite.auth.oauth.accesstoken.provider-<randomnumber>.config`.
+3. Perform the steps below in `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl.<randomnumber>.config`:
+   * Update the property auth.ims.client.secret with the Client Secret from the new OAuth integration.
+   * Rename the file to `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl-<randomnumber>.config`
+4. Save all the changes in content repository development console, for example, CRXDE.
+5. Navigate to `/system/console/configMgr` and replace the OSGi configuration from `.<randomnumber>` to `-<randomnumber>`.
+6. Delete the old configuration for `"Access Token provider name: adobe-ims-similaritysearch"` in `/system/console/configMgr`.
+7. Restart the console.
+
+### Validate the configuration {#validate-the-configuration}
+
+After you have completed the configuration, you can use a JMX MBean to validate the configuration. To validate, follow these steps.
+
+1. Access your [!DNL Experience Manager] server at `https://[aem_server]:[port]`.
+
+1. Go to **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]** to open the OSGi console. Click **[!UICONTROL Main] > [!UICONTROL JMX]**.
+
+1. Click `com.day.cq.dam.similaritysearch.internal.impl`. It opens **[!UICONTROL SimilaritySearch Miscellaneous Tasks]**.
+
+1. Click `validateConfigs()`. In the **[!UICONTROL Validate Configurations]** dialog, click **[!UICONTROL Invoke]**.
+
+The validation results are displayed in the same dialog.
+-->
 
 ### Habilitar marcação inteligente no fluxo de trabalho [!UICONTROL Ativo de atualização do DAM] (opcional) {#enable-smart-tagging-in-the-update-asset-workflow-optional}
 
@@ -216,30 +340,19 @@ Os resultados da validação são exibidos no mesmo diálogo.
 
    ![Etapa para adicionar ativo de tag inteligente após a etapa de miniatura do processo no fluxo de trabalho Ativo de atualização DAM](assets/smart-tag-in-dam-update-asset-workflow.png)
 
-   *Figura: etapa para adicionar ativo de marca inteligente após a etapa de miniatura do processo no fluxo de trabalho [!UICONTROL Ativo de atualização DAM].*
-
-1. Abra a etapa no modo de edição. Em **[!UICONTROL Configurações avançadas]**, verifique se a opção **[!UICONTROL Avanço do manipulador]** está selecionada.
+1. Abra as propriedades da etapa para modificar os detalhes. Em **[!UICONTROL Configurações avançadas]**, verifique se a opção **[!UICONTROL Avanço do manipulador]** está selecionada.
 
    ![Configurar o fluxo de trabalho do Ativo de atualização do DAM e adicionar a etapa de marca inteligente](assets/smart-tag-step-properties-workflow1.png)
 
-
-   *Figura: configurar o fluxo de trabalho Atualizar ativo do DAM e adicionar a etapa de marca inteligente*
-
 1. Na guia **[!UICONTROL Argumentos]**, selecione **[!UICONTROL Ignorar erros]** se desejar que o fluxo de trabalho seja concluído mesmo se a etapa de marcação automática falhar.
+
+   Além disso, para marcar os ativos quando eles forem carregados independentemente de a marcação inteligente estar ativada nas pastas, selecione **[!UICONTROL Ignorar sinalizador de tag inteligente]**.
 
    ![Configurar o fluxo de trabalho do Ativo de atualização do DAM para adicionar a etapa de marca inteligente e selecionar o manipulador avançado](assets/smart-tag-step-properties-workflow2.png)
 
+1. Clique no ![ícone Concluído](assets/do-not-localize/check-ok-done-icon.png) para fechar a etapa do processo.
 
-   *Figura: configure o fluxo de trabalho do Ativo de atualização do DAM para adicionar a etapa de marca inteligente e selecione o manipulador avançado*
-
-   Para marcar os ativos quando eles forem carregados independentemente de a marcação inteligente estar ativada nas pastas, selecione **[!UICONTROL Ignorar sinalizador de tag inteligente]**.
-
-   ![Configurar o fluxo de trabalho do Ativo de atualização do DAM para adicionar a etapa de marca inteligente e selecionar ignorar sinalizador de Marca Inteligente](assets/smart-tag-step-properties-workflow3.png)
-
-
-   *Figura: configure o fluxo de trabalho do Ativo de atualização do DAM para adicionar a etapa de marca inteligente e selecione Ignorar sinalizador de Marca Inteligente.*
-
-1. Clique em **[!UICONTROL OK]** para fechar a etapa do processo e salve o fluxo de trabalho.
+1. Clique em **[!UICONTROL Sincronizar]** para salvar o fluxo de trabalho.
 
 ## Treinar o serviço de conteúdo inteligente {#training-the-smart-content-service}
 
