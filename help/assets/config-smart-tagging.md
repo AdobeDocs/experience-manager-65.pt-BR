@@ -5,7 +5,7 @@ role: Admin
 feature: Tagging,Smart Tags
 exl-id: 9f68804f-ba15-4f83-ab1b-c249424b1396
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: fed35f2b90e2b8fd9e7240abf3b25e3650fa31c2
+source-git-commit: 6729a2dbd8c761eb1bba84d8efba7393ac686190
 workflow-type: tm+mt
 source-wordcount: '1980'
 ht-degree: 16%
@@ -21,7 +21,7 @@ Antes de começar a marcar seus ativos usando os Serviços de Conteúdo Intelige
 >* Os Serviços de Conteúdo Inteligente não estão mais disponíveis para novos [!DNL Experience Manager Assets] clientes locais. Os clientes locais existentes que já têm esse recurso ativado podem continuar usando os Serviços de conteúdo inteligente.
 >* Os Serviços de Conteúdo Inteligente estão disponíveis para [!DNL Experience Manager Assets] clientes atuais do Managed Services que já têm esse recurso habilitado.
 >* Os novos clientes do Experience Manager Assets Managed Services podem seguir as instruções mencionadas neste artigo para configurar os Serviços de conteúdo inteligente.
->* Para o Service Pack 20 e posterior, é necessário executar as etapas alternativas para que o SCS seja compatível com a integração OAuth. Consulte [Solução de problemas de marcas inteligentes para credenciais do OAuth](#config-smart-tagging.md).
+>* Para o Service Pack 20 e posterior, é necessário executar as etapas alternativas para que o SCS seja compatível com a integração OAuth. Consulte [Solução de problemas de marcas inteligentes para credenciais do OAuth](config-oauth.md).
 >* Para oferecer suporte à integração Oauth no Service Pack 21, é necessário instalar o [Hotfix do SP 21](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-40772-1.2.zip).
 >* Para a configuração do SCS existente, o processo é o mesmo que configurar uma nova integração OAuth. Qualquer configuração herdada será limpa automaticamente.
 
