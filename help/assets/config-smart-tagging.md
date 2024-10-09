@@ -5,10 +5,10 @@ role: Admin
 feature: Tagging,Smart Tags
 exl-id: 9f68804f-ba15-4f83-ab1b-c249424b1396
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 6729a2dbd8c761eb1bba84d8efba7393ac686190
+source-git-commit: 7cc1722617b463fa5da5b965215cd91cc8ea8fb0
 workflow-type: tm+mt
-source-wordcount: '1980'
-ht-degree: 16%
+source-wordcount: '2193'
+ht-degree: 14%
 
 ---
 
@@ -31,6 +31,35 @@ Antes de usar o Serviço de conteúdo inteligente, verifique o seguinte:
 * [Treine o Serviço de Conteúdo Inteligente](#training-the-smart-content-service).
 
 * Instale o [[!DNL Experience Manager] Service Pack](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=pt-BR) mais recente.
+
+## Atualização do SCS para oferecer suporte a Oauth para Adobe Managed Services {#scs-upgrade-oauth-managed-services}
+
+**Novos usuários**
+
+Instale o Service Pack 21. Para oferecer suporte à integração Oauth no Service Pack 21, é necessário instalar o [Hotfix do SP 21](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-40772-1.2.zip).
+
+Siga as instruções mencionadas neste artigo para configurar os Serviços de conteúdo inteligente.
+
+**Usuários existentes**
+
+Se você atualizou para o Service Pack 21, instale o [Hotfix do SP 21](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-40772-1.2.zip) para oferecer suporte à integração Oauth. Qualquer configuração existente é excluída automaticamente. Siga as instruções mencionadas neste artigo para configurar os Serviços de conteúdo inteligente.
+
+Para o Service Pack 20 e posterior, é necessário executar as etapas alternativas para que o SCS seja compatível com a integração OAuth. Consulte [Solução de problemas de marcas inteligentes para credenciais do OAuth](config-oauth.md).
+
+## Atualização do SCS para oferecer suporte ao Oauth para usuários locais {#scs-upgrade-oauth-on-premise}
+
+**Novos usuários**
+
+Os Serviços de Conteúdo Inteligente não estão mais disponíveis para novos [!DNL Experience Manager Assets] usuários locais.
+
+**Usuários existentes**
+
+Os usuários locais existentes que já têm esse recurso ativado podem continuar usando os Serviços de conteúdo inteligente.
+
+Se você atualizou para o Service Pack 21, instale o [Hotfix do SP 21](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-40772-1.2.zip) para oferecer suporte à integração Oauth. Qualquer configuração existente é excluída automaticamente. Siga as instruções mencionadas neste artigo para configurar os Serviços de conteúdo inteligente.
+
+Para o Service Pack 20 e posterior, é necessário executar as etapas alternativas para que o SCS seja compatível com a integração OAuth. Consulte [Solução de problemas de marcas inteligentes para credenciais do OAuth](config-oauth.md).
+
 
 ## Integrar ao Adobe Developer Console {#integrate-adobe-io}
 
