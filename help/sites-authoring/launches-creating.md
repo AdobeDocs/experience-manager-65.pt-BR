@@ -10,10 +10,10 @@ exl-id: bc7897da-15f6-4de4-a9fd-9dd84e6c7eed
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Launches
 role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: 82597d52ed774f08ce7136d271148e720b56fcf1
 workflow-type: tm+mt
-source-wordcount: '1039'
-ht-degree: 81%
+source-wordcount: '1097'
+ht-degree: 77%
 
 ---
 
@@ -158,7 +158,16 @@ Para criar uma inicialização aninhada no console **Sites**, com base em uma in
 
    Ao selecionar **Concluído**, você retornará ao painel **Referências** do console **Sites**. Ao selecionar a página apropriada, a nova inicialização será exibida.
 
-### Exclusão de um lançamento {#deleting-a-launch}
+### Clonagem de uma inicialização {#cloning-a-launch}
+
+Você pode clonar uma inicialização no [console de inicializações](/help/sites-authoring/launches.md#the-launches-console):
+
+* Selecione o lançamento tocando/clicando na miniatura.
+* A barra de ferramentas aparecerá - selecione Clone (Clonar).
+   * O clone será criado e mostrado no console.
+   * O **Título da Inicialização** indicará que é um clone. Você pode atualizar o título editando a [Configuração do Launch](/help/sites-authoring/launches-editing.md#editing-a-launch-configuration) (**Propriedades**).
+
+## Exclusão de um lançamento {#deleting-a-launch}
 
 É possível excluir um lançamento a partir do [console do Lançamentos](/help/sites-authoring/launches.md#the-launches-console):
 
