@@ -9,9 +9,9 @@ feature: Asset Management,Renditions
 role: User, Admin
 exl-id: e427d4ee-d5c8-421b-9739-f3cf2de36e41
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 2d6b0129d28dba954f9854c641386c4c2ad32765
+source-git-commit: 7fb3ec9654b56605321f0d12a4c1e23d2e18dab9
 workflow-type: tm+mt
-source-wordcount: '3323'
+source-wordcount: '3322'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 A Smart Imaging aplica as características de visualização exclusivas de cada usuário para fornecer as imagens certas otimizadas automaticamente para sua experiência, resultando em melhor desempenho e envolvimento.
 
-## O que é &quot;Smart Imaging&quot;? {#what-is-smart-imaging}
+## Sobre imagens inteligentes {#what-is-smart-imaging}
 
 A tecnologia Smart Imaging aplica os recursos de IA do Adobe Sensei e funciona com as &quot;predefinições de imagem&quot; existentes. Ele funciona para aprimorar o desempenho do delivery de imagens, otimizando automaticamente o formato, o tamanho e a qualidade da imagem com base nos recursos do navegador do cliente.
 
@@ -136,7 +136,7 @@ Os valores de DPR e largura de banda da rede são baseados nos valores detectado
 * Anteriormente, as imagens originais e derivadas eram armazenadas em cache e era um processo de duas etapas para invalidar o cache. Na última geração do Smart Imaging, somente os derivados são armazenados em cache, permitindo um processo de invalidação de cache de etapa única.
 * Os clientes que usam cabeçalhos personalizados em seu conjunto de regras se beneficiam da geração de Smart Imaging mais recente, pois esses cabeçalhos não são bloqueados, ao contrário da versão anterior do Smart Imaging. Por exemplo, &quot;Origem de permissão de tempo&quot; e &quot;X-Robot&quot; como sugerido em [Adicionar um valor de cabeçalho personalizado às respostas da imagem|Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html).
 
-## Perguntas frequentes {#fag}
+## Perguntas frequentes
 
 +++Há custos de licenciamento associados ao Smart Imaging?
 
