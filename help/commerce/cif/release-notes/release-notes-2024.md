@@ -5,10 +5,10 @@ exl-id: 372e6a46-72bb-4db4-ad01-534ca723ae58
 solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
-source-git-commit: 573057b8e4c01b1c14f8c66b3da7b44e9d857760
+source-git-commit: 1788e5f77d4c46a548710361e9e5dae3c6daab28
 workflow-type: tm+mt
-source-wordcount: '148'
-ht-degree: 12%
+source-wordcount: '221'
+ht-degree: 11%
 
 ---
 
@@ -34,6 +34,24 @@ Revise os requisitos mínimos do sistema na tabela abaixo para a versão do CIF 
 
 * Correção dos testes de interface do usuário para funcionarem corretamente com os componentes principais do CIF.
 * Solução de um problema em que o formato de URL da categoria não funcionava como esperado na instância da nuvem.
+
+## Data de lançamento: setembro de 2024
+
+| Componente | Versão | Detalhes |
+|:-------|:-------:|-----------------------------------------------------------------------------------------------------------:|
+| Componentes principais do CIF | 2.14.2 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.14.2) |
+
+### Melhorias {#improvements-September}
+
+* Tornar o limite de categoria personalizável.
+
+### Correções de erros {#bug-fixes-September}
+
+* Os campos do Commerce não estão integrados corretamente ao editor de esquema de metadados do Assets.
+* Problema com o multicampo de produtos do carrossel para arrastar e soltar.
+* Problema com o multicampo de categoria do carrossel para arrastar e soltar
+* O clique não funciona para os menus nas Informações da página na página do editor de categoria e produto.
+* O número do pedido não está visível na página Confirmação do pedido.
 
 ## Data de lançamento: janeiro de 2024
 
