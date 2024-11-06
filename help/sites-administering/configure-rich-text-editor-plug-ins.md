@@ -6,7 +6,7 @@ exl-id: 6bfd6caa-a68a-40ba-9826-4ba02cd1dbfb
 solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: f64a1014dfd1155bcf815e75a27102244ef6c6de
 workflow-type: tm+mt
 source-wordcount: '4391'
 ht-degree: 2%
@@ -244,7 +244,7 @@ Em seguida, especifique os locais das folhas de estilos que você deseja referen
 
 >[!NOTE]
 >
->Ao usar o RTE em uma caixa de diálogo (interface clássica), talvez você queira especificar folhas de estilos otimizadas para edição de rich text. Devido a restrições técnicas, o contexto CSS é perdido no editor, portanto, convém emular esse contexto para melhorar a experiência WYSIWYG.
+>Ao usar o RTE em uma caixa de diálogo (interface clássica), talvez você queira especificar folhas de estilos otimizadas para edição de rich text. Devido a restrições técnicas, o contexto CSS é perdido no editor, portanto, convém emular esse contexto para melhorar a experiência do WYSIWYG.
 >
 >O Editor de Rich Text usa um elemento DOM de contêiner com uma ID de `CQrte` que pode ser usada para fornecer estilos diferentes para exibição e edição:
 >
@@ -721,7 +721,7 @@ Para configurar como os links são adicionados no AEM de outro programa, defina 
       * Especifique o modo de destino:
 
          * **Nome** `mode`
-         * **Tipo** `String`)
+         * **Tipo** `String`
          * **Valor**
 
             * `auto`: significa que um destino automático foi escolhido
