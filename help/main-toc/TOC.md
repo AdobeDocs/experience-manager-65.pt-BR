@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Use a documentação do Adobe Experience Manager 6.5 para saber como funciona e o que o software pode fazer por você.
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM 6.5
-source-git-commit: caf2d5b4f03823e57c579eafdd47b52ef9357493
+source-git-commit: 717c9ae2d6b0552ca5c6386247ef7504dc9785e9
 workflow-type: tm+mt
-source-wordcount: '7448'
+source-wordcount: '7450'
 ht-degree: 20%
 
 ---
@@ -19,6 +19,7 @@ ht-degree: 20%
 + Notas de versão {#release-notes}
    + [Notas de versão](/help/release-notes/release-notes.md)
    + Notas de versão anteriores {#service-pack}
+      + [6.5.21](/help/release-notes/previous/6-5-21.md)
       + [6.5.20](/help/release-notes/previous/6-5-20.md)
       + [6.5.19](/help/release-notes/previous/6-5-19.md)
       + [6.5.18](/help/release-notes/previous/6-5-18.md)
@@ -536,7 +537,7 @@ ht-degree: 20%
          + [Referenciar fragmentos de formulário adaptáveis](/help/forms/using/reference-adaptive-form-fragments.md)
          + [Temas de referência](/help/forms/using/reference-themes.md)
          + [Modelos de carta de referência](/help/forms/using/reference-cm-layout-templates.md)
-         + [Configure o Microsoft Dynamics 365 para o fluxo de trabalho de hipoteca da página de referência do We.Finance](/help/forms/using/ms-dynamics-configuration-home-mortgage.md)
+         + [Configure o Microsoft Dynamics 365 para o fluxo de trabalho de hipoteca da página de referência We.Finance](/help/forms/using/ms-dynamics-configuration-home-mortgage.md)
    + Instalar e configurar o AEM Forms {#install-aem-forms}
       + [Arquitetura e topologias de implantação do AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md)
       + [Escolha de um tipo de persistência para uma instalação do AEM Forms](/help/forms/using/choosing-persistence-type-for-aem-forms.md)
