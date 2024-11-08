@@ -5,9 +5,10 @@ mini-toc-levels: 4
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: bb6e843bfad3feb194dd00588dbb4a2d3539743a
+exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
+source-git-commit: 7939703fe7ef9382e9d1a426c0eb9f021b964d1a
 workflow-type: tm+mt
-source-wordcount: '4658'
+source-wordcount: '4672'
 ht-degree: 1%
 
 ---
@@ -38,7 +39,12 @@ O [!DNL Experience Manager] 6.5.22.0 inclui novos recursos, importantes melhoria
 
 ## Principais recursos e melhorias
 
-<!-- * _6.5.22.0 REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS THAT YOU WANT TO HIGHLIGHT IN THIS RELEASE?_ -->
+### Sites {#sites}
+
+[O Universal Editor](/help/sites-developing/universal-editor/introduction.md) agora está disponível no AEM 6.5 para casos de uso headless.
+
+
+### [!DNL Forms]
 
 Alguns dos principais recursos e aprimoramentos desta versão incluem:
 
