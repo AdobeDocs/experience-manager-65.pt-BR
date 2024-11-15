@@ -5,16 +5,16 @@ feature: Content Fragments
 role: User,Developer
 exl-id: c58a3cfd-6348-4a2e-996a-5fdb96415adb
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: 3648662306bb1e7ea27a9d74f42bfa321bf5b91f
 workflow-type: tm+mt
-source-wordcount: '113'
-ht-degree: 100%
+source-wordcount: '117'
+ht-degree: 70%
 
 ---
 
 # Visualização - Representação JSON {#preview-json-representation}
 
-Ao desenvolver os modelos para fragmentos de conteúdo como parte de sua implementação do AEM Headless, você pode querer visualizar uma amostra da saída em JSON para um fragmento de conteúdo, conforme baseada em um modelo. Por exemplo, para ter uma ideia de como a saída final será. Isso pode ser útil ao validar a estrutura JSON do modelo, talvez com conteúdo de amostra padrão por tipo de dados.
+Ao desenvolver os modelos para fragmentos de conteúdo como parte de sua implementação AEM headless, você pode usar o editor de fragmentos de conteúdo para exibir uma amostra da saída JSON para um fragmento de conteúdo, conforme baseada em um modelo. Por exemplo, para ter uma ideia de como a saída final será. Isso pode ser útil ao validar a estrutura JSON do modelo, talvez com conteúdo de amostra padrão por tipo de dados.
 
 Ao usar o ícone **Visualizar**:
 

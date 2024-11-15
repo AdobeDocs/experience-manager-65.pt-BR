@@ -5,16 +5,16 @@ feature: Content Fragments
 role: User
 exl-id: 8b93fd6e-47d1-46fd-901b-621caa25be7b
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 3648662306bb1e7ea27a9d74f42bfa321bf5b91f
 workflow-type: tm+mt
-source-wordcount: '246'
-ht-degree: 51%
+source-wordcount: '257'
+ht-degree: 49%
 
 ---
 
 # Conteúdo associado{#associated-content}
 
-O recurso de conteúdo associado do AEM fornece a conexão para que os ativos possam ser usados opcionalmente com o fragmento quando ele for adicionado a uma página de conteúdo. Isso proporciona flexibilidade para a entrega de conteúdo headless [fornecendo um intervalo de ativos para acessar ao usar o fragmento de conteúdo em uma página](/help/sites-authoring/content-fragments.md#using-associated-content), além de ajudar a reduzir o tempo necessário para pesquisar o ativo apropriado.
+O recurso de conteúdo associado do AEM fornece a conexão para que os ativos possam (opcionalmente) ser usados com o fragmento quando ele for adicionado a uma página de conteúdo. Isso proporciona flexibilidade para a entrega de conteúdo headless [fornecendo um intervalo de ativos para acessar ao usar o fragmento de conteúdo em uma página](/help/sites-authoring/content-fragments.md#using-associated-content), além de ajudar a reduzir o tempo necessário para pesquisar o ativo apropriado. Qualquer conteúdo associado pode ser configurado usando o editor de Fragmento de conteúdo.
 
 ## Adicionar conteúdo associado {#adding-associated-content}
 
