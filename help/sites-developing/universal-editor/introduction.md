@@ -3,9 +3,10 @@ title: O Editor universal
 description: Saiba mais sobre a flexibilidade do Universal Editor e como ele pode ajudar a potencializar suas experiências headless usando o AEM 6.5.
 feature: Developing
 role: Developer
-source-git-commit: a088fcb3069fae7e63c7238710534d817a308eff
+exl-id: 7bdf1fcc-02b9-40bc-8605-e6508a84d249
+source-git-commit: 6301f0fdba9f7a6fa8fa998759b9ebad6b4fa9a6
 workflow-type: tm+mt
-source-wordcount: '1082'
+source-wordcount: '1087'
 ht-degree: 1%
 
 ---
@@ -46,17 +47,17 @@ Após concluir a instalação, você pode [instrumentar seus aplicativos para us
 
 ### Atualizar AEM {#update-aem}
 
-O Service Pack 21 e um pacote de recursos para AEM são necessários para usar o Editor universal com AEM 6.5.
+O Service Pack 21 ou 22 e um pacote de recursos para AEM são necessários para usar o Editor universal com AEM 6.5.
 
 #### Aplicar Service Pack Mais Recente {#latest}
 
-Verifique se você está executando pelo menos o service pack 21 para AEM 6.5. Você pode baixar o service pack mais recente em [Distribuição de software.](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=pt-br)
+Verifique se você está executando pelo menos o service pack 21 ou 22 para AEM 6.5. Você pode baixar o service pack mais recente em [Distribuição de software.](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=pt-br)
 
 #### Instalar o Pacote de Recursos do Universal Editor {#feature-pack}
 
 Instale o **Pacote de Recursos do Universal Editor para AEM 6.5** [disponível na Distribuição de Software.](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/cq-6.5.21-universal-editor-1.0.0.zip)
 
-Se você já estiver executando o service pack 23 ou superior, essa etapa não será necessária.
+Se você já estiver executando o service pack 23 ou superior, o pacote de recursos não será necessário.
 
 ### Configurar serviços {#configure-services}
 
