@@ -4,7 +4,7 @@ description: Saiba mais sobre a flexibilidade do Universal Editor e como ele pod
 feature: Developing
 role: Developer
 exl-id: 7bdf1fcc-02b9-40bc-8605-e6508a84d249
-source-git-commit: 6301f0fdba9f7a6fa8fa998759b9ebad6b4fa9a6
+source-git-commit: c3af0befce5534891d45c2507684a2017f9363f8
 workflow-type: tm+mt
 source-wordcount: '1087'
 ht-degree: 1%
@@ -68,7 +68,7 @@ O pacote de recursos instala vários novos pacotes para os quais são necessári
 1. Abra o Gerenciador de configurações.
    * `http://<host>:<port>/system/console/configMgr`
 1. Localize o **Manipulador de autenticação de token do Adobe Granite** na lista e clique em **Alterar os valores de configuração**.
-1. Na caixa de diálogo, altere o atributo **SameSite do valor de cookie de token de logon** (`token.samesite.cookie.attr`) para `Partitioned`.
+1. Na caixa de diálogo, altere o atributo **SameSite do cookie de token de logon** (`token.samesite.cookie.attr`) para `Partitioned`.
 1. Clique em **Salvar**.
 
 #### Remova a opção X-Frame de cabeçalhos `SAMEORIGIN`. {#sameorigin}
