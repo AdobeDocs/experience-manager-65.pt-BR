@@ -10,9 +10,9 @@ role: Admin, User, Developer
 feature: Forms Designer,Designer
 exl-id: 90503d29-e079-43f4-a5dc-ce90ed7844c6
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 4ce52d90f9d3300e543563ce3dc242f28e00912e
 workflow-type: tm+mt
-source-wordcount: '787'
+source-wordcount: '811'
 ht-degree: 0%
 
 ---
@@ -39,6 +39,7 @@ ht-degree: 0%
 >
 >* A versão de 64 bits do designer foi introduzida com o AEM 6.5 Forms Service Pack 19 (6.5.19.0).
 >* A versão de 32 bits do designer está obsoleta desde o lançamento do [AEM Forms Service Pack 21 (6.5.21.0)](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases).
+> * As plataformas compatíveis com o Forms Designer estão alinhadas às plataformas compatíveis com o AEM Forms. Para saber mais sobre as plataformas compatíveis com o Forms Designer, [clique aqui](/help/forms/using/aem-forms-jee-supported-platforms.md).
 
 Para obter mais informações sobre a instalação do Forms Designer, visite [Perguntas frequentes](#fandq).
 
