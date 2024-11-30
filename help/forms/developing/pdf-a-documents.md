@@ -9,9 +9,9 @@ role: Developer
 exl-id: 966c3554-25df-4467-866e-11c43cc15b58
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 4df88fc37b86b6ff3b3a9b788c91b61e2aa7b07f
 workflow-type: tm+mt
-source-wordcount: '2331'
+source-wordcount: '2347'
 ht-degree: 1%
 
 ---
@@ -36,6 +36,8 @@ Você pode usar o serviço DocConverter para converter um documento PDF em um do
 A especificação PDF/A-1 consiste em dois níveis de conformidade, a saber, A e B. A principal diferença entre os dois é em relação ao suporte de estrutura lógica (acessibilidade), que não é necessário para o nível de conformidade B. Independentemente do nível de conformidade, o PDF/A-1 determina que todas as fontes sejam incorporadas no documento PDF/A gerado. No momento, somente o PDF/A-1b é suportado na validação (e na conversão).
 
 Embora PDF/A seja o padrão para o arquivamento de documentos de PDF, não é obrigatório usar PDF/A para arquivamento se um documento de PDF padrão atender aos requisitos de sua empresa. O objetivo do padrão PDF/A é estabelecer um arquivo PDF para as necessidades de arquivamento de longo prazo e preservação de documentos.
+
+Os padrões de conformidade com PDF/A suportados incluem PDF/A-1a, 1b, 2a, 2b, 3a e 3b.
 
 >[!NOTE]
 >

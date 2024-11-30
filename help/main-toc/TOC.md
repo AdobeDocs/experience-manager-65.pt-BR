@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Use a documentação do Adobe Experience Manager 6.5 para saber como funciona e o que o software pode fazer por você.
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM 6.5
-source-git-commit: f3dda5271c0d3bdd9d23bc26f3b5abe50fc1b90a
+source-git-commit: bf750ddc14ce083a949c57322e0bc45594e66311
 workflow-type: tm+mt
-source-wordcount: '7454'
+source-wordcount: '7477'
 ht-degree: 20%
 
 ---
@@ -624,6 +624,8 @@ ht-degree: 20%
       + [Editor de regras](/help/forms/using/rule-editor-core-components.md)
       + [Criar e usar função personalizada em um componente principal do formulário adaptável](/help/forms/using/create-and-use-custom-functions-core-components.md)
       + [Criar e usar manipulador de erros personalizado para Componentes principais com base no Adaptive Forms](/help/forms/using/add-custom-error-handler-adaptive-forms-core-components.md)
+      + [Adicionar versões, comentários e anotações a um Formulário adaptável](/help/forms/using/add-versioning-reviews-comments.md)
+      + [Comparar Forms adaptável](/help/forms/using/compare-forms-core-components.md)
    + Forms Adaptável - Criação Básica {#adaptive-forms-basic-authoring}
       + [Práticas recomendadas para trabalhar com formulários adaptáveis](/help/forms/using/adaptive-forms-best-practices.md)
       + [Criação de um formulário adaptável](/help/forms/using/creating-adaptive-form.md)
@@ -631,6 +633,8 @@ ht-degree: 20%
       + [Fragmentos de formulário adaptável](/help/forms/using/adaptive-form-fragments.md)
       + [Configuração da ação Enviar](/help/forms/using/configuring-submit-actions.md)
       + [Uso de CAPTCHA em formulários adaptáveis](/help/forms/using/captcha-adaptive-forms.md)
+      + [Uso do hCaptcha em formulários adaptáveis](/help/forms/using/integrate-adaptive-forms-hcaptcha.md)
+      + [Uso do Captcha com estrutura de rotação em formulários adaptáveis](/help/forms/using/integrate-adaptive-forms-turnstile.md)
       + [Palavras-chave de formulários adaptáveis](/help/forms/using/adaptive-forms-keywords.md)
       + [Tabelas em formulários adaptáveis](/help/forms/using/adaptive-forms-tables.md)
       + [Gráficos em formulários adaptáveis](/help/forms/using/adaptive-form-charts.md)
