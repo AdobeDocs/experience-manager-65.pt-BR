@@ -8,14 +8,14 @@ feature: Document Services,APIs & Integrations
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: f2e4f509-cca2-44a3-9231-e1954b0fefe3
-source-git-commit: 60414285277281d9b1e0c9d93ddf04bc267fd0fb
+source-git-commit: 9eb74c1b95837d977b8abe9614421a0a2c0be73e
 workflow-type: tm+mt
-source-wordcount: '6388'
+source-wordcount: '6448'
 ht-degree: 1%
 
 ---
 
-# Utilização programática de serviços de documento AEM  {#using-aem-document-services-programmatically}
+# Using AEM Document Services Programmatically  {#using-aem-document-services-programmatically}
 
 Amostras e exemplos neste documento ajudam você a entender e usar os Serviços de documento AEM em uma AEM Forms em um ambiente OSGi. Para obter amostras e exemplos para AEM Forms no ambiente JEE, consulte
 
@@ -270,11 +270,11 @@ public Document addSignatureField(Document inDoc,
   </tr>
   <tr>
    <td><code>inDoc</code></td>
-   <td>Objeto de documento que contém PDF</td>
+   <td>Document object containing PDF</td>
   </tr>
   <tr>
    <td><code>signatureFieldName</code></td>
-   <td>Nome do campo de assinatura. Este parâmetro é obrigatório e não pode aceitar um valor nulo.</td>
+   <td>Nome do campo de assinatura. This parameter is mandatory and cannot accept a null value.</td>
   </tr>
   <tr>
    <td><code>pageNumber</code></td>
@@ -282,7 +282,7 @@ public Document addSignatureField(Document inDoc,
   </tr>
   <tr>
    <td><code>positionRectangle</code></td>
-   <td>Um <code>PositionRectangle object</code> que especifica a posição do campo de assinatura. Este parâmetro é obrigatório e não pode aceitar um valor nulo. Se o retângulo especificado não estiver pelo menos parcialmente na caixa de corte da página especificada, um <code>InvalidArgumentException</code> será lançado. Além disso, nem a altura nem a largura do retângulo especificado podem ser 0 ou negativas. As coordenadas X (inferior esquerdo) ou Y (inferior esquerdo) podem ser 0 ou maiores, mas não negativas, e são relativas à caixa de corte da página.</td>
+   <td><code>PositionRectangle object</code> Este parâmetro é obrigatório e não pode aceitar um valor nulo. Se o retângulo especificado não estiver pelo menos parcialmente na caixa de corte da página especificada, um <code>InvalidArgumentException</code> será lançado. Além disso, nem a altura nem a largura do retângulo especificado podem ser 0 ou negativas. As coordenadas X (inferior esquerdo) ou Y (inferior esquerdo) podem ser 0 ou maiores, mas não negativas, e são relativas à caixa de corte da página.</td>
   </tr>
   <tr>
    <td><code>fieldMDPOptionsSpec</code></td>
@@ -1394,9 +1394,9 @@ A chave pública é armazenada no certificado do usuário que deve estar dispon�
 
 >[!NOTE]
 >
->A AEM Forms também oferece suporte à especificação *[CAdES](https://en.wikipedia.org/wiki/CAdES_%28computing%29)* para assinatura digital de documentos PDF.
+>*[](https://en.wikipedia.org/wiki/CAdES_%28computing%29)*
 
-**Certificação de documentos PDF**
+**Documentos de PDF de Certificação**
 
 Você pode proteger um documento PDF certificando-o com um tipo específico de assinatura chamado assinatura certificada. Uma assinatura certificada distingue-se de uma assinatura digital das seguintes formas:
 
@@ -4654,7 +4654,7 @@ O serviço createPDF retorna um java.util.Map com resultados. As chaves do mapa 
 
 * ConvertedDoc: contém o documento de saída.
 
-O serviço createPDF lança as seguintes exceções:
+O serviço createPDF gera as seguintes exceções:
 
 * ExceçãoConversão
 * InvalidParameterException
@@ -4924,7 +4924,7 @@ File htmlToPdf(String inputUrl, String fileTypeSettingsName, String securitySett
 
 ### DistillerService {#distillerservice}
 
-O serviço Distiller converte PostScript, Encapsulated PostScript (EPS) e arquivos de texto da impressora (PRN) em arquivos PDF. O serviço Distiller é frequentemente usado para converter grandes volumes de documentos impressos em documentos eletrônicos, como faturas e demonstrativos. A conversão de documentos em PDF também permite que as empresas enviem aos seus clientes uma versão em papel e uma versão eletrônica de um documento. Os formatos de arquivo suportados são .ps, .eps e .prn. O serviço oferece suporte à seguinte API:
+O serviço Distiller converte PostScript, Encapsulated PostScript (EPS) e arquivos de texto da impressora (PRN) em arquivos PDF. O serviço Distiller é frequentemente usado para converter grandes volumes de documentos impressos em documentos eletrônicos, como faturas e demonstrativos. A conversão de documentos em PDF também permite que as empresas enviem aos seus clientes uma versão em papel e uma versão eletrônica de um documento. The supported file formats are .ps, .eps, and .prn. O serviço oferece suporte à seguinte API:
 
 O serviço createPDF retorna um java.util.Map com resultados. As chaves do mapa são:
 
@@ -5065,110 +5065,67 @@ File createPDF(File inputFile, String inputFilename, String pdfSettings, String 
 
 #### Documentos PDF de marcação automática {#auto-tag-api}
 
-A API PDF de marcação automática ajuda a tornar um documento PDF acessível adicionando tags a ele. Ela oferece suporte à marcação de bloco de texto (parágrafos) e às listas com marcadores em um operador.
+A API PDF de marcação automática melhora a acessibilidade do PDF, adicionando tags aos documentos, garantindo a conformidade com os padrões de acessibilidade. Isso não só melhora a experiência do usuário, como também mantém a precisão e a consistência entre os documentos. A API de marcação automática oferece suporte à marcação dos seguintes elementos:
+
+* Blocos de texto (parágrafos)
+* Listas com marcadores em um operador
+* Sumário (TOC)
 
 ![Documento PDF marcado automaticamente](assets/auto-tag-api.png)
 
-<!--
+A amostra de código Java a seguir demonstra como converter um arquivo PDF em um documento PDF com tags.
 
-**Syntax**: `tag(Document inDoc)`
+**Sintaxe**: `Document tag(final Document inDoc)`
 
-**Input Parameters**
+**Parâmetros de entrada**
 
 <table>
  <tbody>
   <tr>
-   <th>Parameters</th>
-   <th>Description</th>
+   <th>Parâmetros</th>
+   <th>Descrição</th>
   </tr>
   <tr>
-   <td><code>inDoc</code><br /> </td>
-   <td>Document object containing PDF.<br /> </td>
+   <td><code>inDoc</code></td>
+   <td>Um documento fornecido como entrada a ser marcado. É um parâmetro obrigatório.<br /> </td>
   </tr>
  </tbody>
 </table>
 
-The following Java code tags the PDF document with lists and paragraphs.
-
 ```java
-/*************************************************************************
- *
- * ADOBE CONFIDENTIAL
- * ___________________
- *
- * Copyright 2014 Adobe Systems Incorporated
- * All Rights Reserved.
- *
- * NOTICE:  All information contained herein is, and remains
- * the property of Adobe Systems Incorporated and its suppliers,
- * if any.  The intellectual and technical concepts contained
- * herein are proprietary to Adobe Systems Incorporated and its
- * suppliers and are protected by trade secret or copyright law.
- * Dissemination of this information or reproduction of this material
- * is strictly forbidden unless prior written permission is obtained
- * from Adobe Systems Incorporated.
- **************************************************************************/
-package com.adobe.fd.pdfutility.services.impl;
-import com.adobe.aem.transaction.core.ITransactionRecorder;
-import com.adobe.aemfd.docmanager.Document;
-import com.adobe.fd.jbig2.wrapper.api.JBIG2Wrapper;
-import com.adobe.fd.pdfutility.services.PDFUtilityService;
-import com.adobe.fd.pdfutility.services.client.*;
-import com.adobe.internal.pdftoolkit.core.exceptions.PDFIOException;
-import com.adobe.internal.pdftoolkit.core.exceptions.PDFInvalidDocumentException;
-import com.adobe.internal.pdftoolkit.core.exceptions.PDFSecurityException;
-import com.adobe.internal.pdftoolkit.pdf.document.*;
-import com.adobe.internal.pdftoolkit.services.pdftagging.structlib.StructLib;
-import com.adobe.internal.pdfutil.util.IOUtils;
-import com.adobe.internal.pdfutil.util.JBIG2CustomFilter;
-import com.day.cq.dam.handler.gibson.fontmanager.FontManagerService;
-import org.apache.felix.scr.annotations.Component;
-import org.apache.felix.scr.annotations.Reference;
-import org.apache.felix.scr.annotations.Service;
-import org.osgi.service.component.ComponentContext;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import java.io.IOException;
-import java.util.List;
-
-/**
- * The following Java code example is used to tag the PDF document with lists and paragraphs.
- */
-
-public PDFDocument tag(final Document inDoc) throws PDFUtilityException {
-        if (LOGGER.isTraceEnabled()) {
-            LOGGER.trace(pdfUtilService, "tag");
+@Reference
+private PDFUtilityService pdfutilityService;
+private static final File outputFolder = new File("C:/Output/");
+void tag(File inputFile) throws Exception
+{
+    Document inDoc = null;
+    try
+    {
+        inDoc = new Document(inputFile);
+        if(inputFile.getName().trim().isEmpty()) {
+            throw new Exception("Input file name cannot be null");
+        }
+        String inputFileExtension = "";
+        int dotIndex = inputFile.getName().lastIndexOf('.');
+        if (dotIndex > 0 && dotIndex < inputFile.getName().length() - 1) {
+            inputFileExtension = inputFile.getName().substring(dotIndex + 1);
+        }
+        if(inputFileExtension.isEmpty()) {
+            throw new Exception("Input file should have an extension");
+        }
+        Document taggedDoc;
+        taggedDoc = pdfutilityService.tag(inDoc);
+        File outputFile = new File(outputFolder,"Output.pdf");
+        taggedDoc.copyToFile(outputFile);
+        taggedDoc.close();
+    } 
+    finally {
+        if (inDoc != null) {
+            inDoc.dispose();
+            inDoc = null;
+        }
+    }
 }
-        if (inDoc == null) {
-            LOGGER.info(PDFUtilityMsgSet.UTL_S00_001_MISSING_DOCUMENT);
-            throw new PDFUtilityException(PDFUtilityMsgSet.getMessage(PDFUtilityMsgSet.UTL_S00_001_MISSING_DOCUMENT, null));
-}
-PDFDocument outDoc;
-        try {
-PDFOpenOptions openOptions = PDFOpenOptions.newInstance();
-            openOptions.setFontSet(fontManagerService.getPdfFontSet());
-            outDoc = IOUtils.toPDFDocument(inDoc, openOptions);
-StructLib.AutoTagDoc(outDoc);
-            LOGGER.info("Successfully tagged the PDF document.");
-} catch (PDFSecurityException e) {
-            LOGGER.error(PDFUtilityMsgSet.UTL_S00_015_PDF_SECURITY_ERROR);
-            throw new PDFUtilityException(PDFUtilityMsgSet.getMessage(PDFUtilityMsgSet.UTL_S00_015_PDF_SECURITY_ERROR, null), e);
-} catch (PDFIOException e) {
-            LOGGER.error(PDFUtilityMsgSet.UTL_S00_011_PDF_IO_ERROR);
-            throw new PDFUtilityException(PDFUtilityMsgSet.getMessage(PDFUtilityMsgSet.UTL_S00_011_PDF_IO_ERROR, null), e);
-} catch (PDFInvalidDocumentException e) {
-            LOGGER.info(PDFUtilityMsgSet.UTL_S00_003_INVALID_PDF_DOCUMENT);
-            throw new PDFUtilityException(PDFUtilityMsgSet.getMessage(PDFUtilityMsgSet.UTL_S00_003_INVALID_PDF_DOCUMENT, null), e);
-} catch (IOException e) {
-            LOGGER.error(PDFUtilityMsgSet.UTL_S00_016_PDF_GENERAL_ERROR);
-            throw new PDFUtilityException(PDFUtilityMsgSet.getMessage(PDFUtilityMsgSet.UTL_S00_016_PDF_GENERAL_ERROR, null), e);
-} finally {
-            if (LOGGER.isTraceEnabled()) {
-                LOGGER.trace(pdfUtilService, "tag");
-}
-}
-        return outDoc;
-}
-
 ```
--->
+
+
