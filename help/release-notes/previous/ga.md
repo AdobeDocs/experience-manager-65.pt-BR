@@ -1,6 +1,6 @@
 ---
 title: Notas de versão gerais do  [!DNL Adobe Experience Manager] 6.5
-description: "[!DNL Adobe Experience Manager] 6.5 notas descrevendo as informações da versão, as novidades, como instalar e as listas de alterações detalhadas."
+description: Notas do [!DNL Adobe Experience Manager] 6.5 descrevendo as informações da versão, as novidades, como instalar e as listas de alterações detalhadas.
 exl-id: b3d4a527-44ca-4eb6-b393-f3e8117cf1a6
 solution: Experience Manager
 feature: Release Information

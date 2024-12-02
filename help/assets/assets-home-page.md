@@ -1,5 +1,5 @@
 ---
-title: "[!DNL Assets] experiência com a Página Inicial"
+title: Experiência da página inicial [!DNL Assets]
 description: Personalize a [!DNL Experience Manager Assets] Página inicial para obter uma experiência avançada de tela de boas-vindas, incluindo um instantâneo das atividades recentes relacionadas aos ativos.
 contentOwner: AG
 feature: Asset Management

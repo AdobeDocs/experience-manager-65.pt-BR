@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Planejar a Comunicação Interativa"
+title: 'Tutorial: Planejar a comunicação interativa'
 description: Planeje a anatomia para sua comunicação interativa
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS

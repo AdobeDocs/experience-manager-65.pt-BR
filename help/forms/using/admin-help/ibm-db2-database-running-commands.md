@@ -1,5 +1,5 @@
 ---
-title: "Banco de dados IBM DB2: execução de comandos para manutenção regular"
+title: 'Banco de dados IBM DB2: execução de comandos para manutenção regular'
 description: Este documento lista os comandos do IBM DB2 recomendados para a manutenção regular do banco de dados de formulários AEM.
 contentOwner: admin
 content-type: reference

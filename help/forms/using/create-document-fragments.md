@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Criar fragmentos de documento"
+title: 'Tutorial: Criar fragmentos de documento'
 description: Criar fragmentos de documento para comunicação interativa
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS

@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Criar a comunicação interativa"
+title: 'Tutorial: Criar a comunicação interativa '
 description: Criar uma comunicação interativa usando todos os elementos
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS

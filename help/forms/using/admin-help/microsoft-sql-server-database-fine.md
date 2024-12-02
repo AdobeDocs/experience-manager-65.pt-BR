@@ -1,5 +1,5 @@
 ---
-title: "Banco de dados Microsoft SQL Server: ajuste da configuração"
+title: 'Banco de dados Microsoft SQL Server: ajuste da configuração'
 description: Saiba como ajustar a configuração do banco de dados do Microsoft SQL Server.
 contentOwner: admin
 content-type: reference

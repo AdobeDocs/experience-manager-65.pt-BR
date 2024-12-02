@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Criar modelo de dados de formulário no AEM Forms"
+title: 'Tutorial: criar modelo de dados do formulário no AEM Forms'
 description: Criar modelo de dados de formulário para Comunicação Interativa
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS

@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Criar o primeiro formulário adaptável"
+title: 'Tutorial: criar o primeiro formulário adaptável'
 description: Saiba como criar formulários empresariais, interativos e responsivos.
 topic-tags: introduction
 docset: aem65
@@ -57,7 +57,7 @@ O site é executado no Adobe Experience Manager (AEM) e usa AEM [!DNL Forms] par
 
 ![03-criar-formulário-adaptável-imagem-principal_pequena](assets/03-create-adaptive-form-main-image_small.png)
 
-Os formulários adaptáveis são de nova geração, envolventes, responsivos, dinâmicos e de natureza adaptável. Usando formulários adaptáveis, você pode fornecer experiências personalizadas e direcionadas. O AEM [!DNL Forms] fornece um editor WYSIWYG de arrastar e soltar para criar formulários adaptáveis. Para obter mais informações sobre formulários adaptáveis, consulte [Introdução à criação de formulários adaptáveis](../../forms/using/introduction-forms-authoring.md).
+Os formulários adaptáveis são de nova geração, envolventes, responsivos, dinâmicos e de natureza adaptável. Usando formulários adaptáveis, você pode fornecer experiências personalizadas e direcionadas. O AEM [!DNL Forms] fornece um editor de WYSIWYG de arrastar e soltar para criar formulários adaptáveis. Para obter mais informações sobre formulários adaptáveis, consulte [Introdução à criação de formulários adaptáveis](../../forms/using/introduction-forms-authoring.md).
 
 Metas:
 

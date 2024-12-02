@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Criar modelo de dados de formulário"
+title: 'Tutorial: Criar modelo de dados do formulário '
 description: Saiba como configurar o MySQL como fonte de dados, criar o modelo de dados de formulário (FDM), configurá-lo e testar o AEM Forms.
 contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
@@ -76,7 +76,7 @@ Faça o seguinte para configurar o banco de dados do [!DNL MySQL]:
 
       >[!NOTE]
       >
-      > Quando o banco de dados está atrás de um firewall, o [!DNL MySQL] nome do host do banco de dados não é um DNS público. O endereço IP do banco de dados deve ser adicionado ao *arquivo /etc/hosts* da máquina AEM host.
+      > Quando o banco de dados está atrás de um firewall, o [!DNL MySQL] nome do host do banco de dados não é um DNS público. O endereço IP do banco de dados deve ser adicionado no *arquivo /etc/hosts* do AEM máquina host.
 
       * **Nome de usuário:** Nome de usuário do banco de dados. É necessário habilitar o driver JDBC para estabelecer uma conexão com o banco de dados.
       * **Senha:** Senha do banco de dados. É necessário habilitar o driver JDBC para estabelecer uma conexão com o banco de dados.
@@ -175,7 +175,7 @@ Faça o seguinte para configurar o modelo de dados de formulário:
 1. Vá para a guia **[!UICONTROL Serviços]** e configure os serviços **[!UICONTROL obter]** e **[!UICONTROL atualizar]**.
 
    1. Selecione o serviço **[!UICONTROL get]** e selecione **[!UICONTROL Editar Propriedades]**. A caixa de diálogo de propriedades é aberta.
-   1. Especifique o seguinte na caixa de diálogo Editar Propriedades:
+   1. Especifique o seguinte na caixa de diálogo Propriedades de Editar:
 
       * **** Título: especifique o título do serviço. Por exemplo: Recuperar endereço de envio.
       * **Descrição**: especifique a descrição que contém o funcionamento detalhado do serviço. Por exemplo:

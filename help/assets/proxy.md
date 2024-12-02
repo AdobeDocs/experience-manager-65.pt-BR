@@ -1,5 +1,5 @@
 ---
-title: "[!DNL Assets] desenvolvimento de proxy"
+title: Desenvolvimento de proxy [!DNL Assets]
 description: Um proxy é uma instância  [!DNL Experience Manager]  que usa trabalhadores proxy para processar trabalhos. Saiba como configurar um  [!DNL Experience Manager] proxy, operações com suporte, componentes proxy e como desenvolver um trabalhador proxy personalizado.
 contentOwner: AG
 role: Admin, Architect

@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Criar um formulário adaptável"
+title: 'Tutorial: Criar um formulário adaptável'
 description: Saiba como criar, fazer layout e pré-visualizar um formulário adaptável. Além disso, aprenda a configurar ações de envio.
 feature: Adaptive Forms
 exl-id: c0a2adcd-528a-41af-99b5-d8b423cd6605
@@ -8,7 +8,7 @@ role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
 source-wordcount: '1314'
-ht-degree: 8%
+ht-degree: 9%
 
 ---
 

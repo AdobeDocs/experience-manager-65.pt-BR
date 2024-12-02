@@ -1,6 +1,6 @@
 ---
 title: Aplicativos móveis
-description: "Aplicativos móveis"
+description: Aplicativos móveis
 contentOwner: msm-service
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE

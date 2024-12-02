@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Publish seu formulário adaptável"
+title: 'Tutorial: Publish seu formulário adaptável'
 description: Publish o formulário adaptável como uma página AEM, incorpore o formulário a uma página AEM Sites ou incorpore o formulário adaptável em uma página da Web externa
 contentOwner: khsingh
 topic-tags: introduction

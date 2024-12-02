@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Criar modelos"
+title: 'Tutorial: Criar modelos'
 description: Criar modelos de impressão e da Web para a comunicação interativa
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS

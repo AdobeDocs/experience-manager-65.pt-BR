@@ -1,5 +1,5 @@
 ---
-title: "Banco de dados DB2&reg;: execução semanal de um processo"
+title: 'Banco de dados DB2&reg;: Execução semanal de um processo'
 description: Saiba como você pode melhorar o desempenho do banco de dados do AEM Forms DB2&reg;.
 contentOwner: admin
 content-type: reference

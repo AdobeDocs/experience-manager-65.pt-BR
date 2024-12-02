@@ -1,5 +1,5 @@
 ---
-title: "Reutilizar conteúdo: gerenciador de vários sites e Live Copy"
+title: 'Reutilizar conteúdo: gerenciador de vários sites e Live Copy'
 description: Saiba mais sobre como reutilizar conteúdo com as Live Copies e o Gerenciador de vários sites.
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
