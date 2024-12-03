@@ -5,9 +5,10 @@ mini-toc-levels: 4
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: 36238364383c380269812641acc66e452e2362ba
+exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
+source-git-commit: 167d897cc5f44a2302a4ba932e238e6ba973635d
 workflow-type: tm+mt
-source-wordcount: '6089'
+source-wordcount: '6030'
 ht-degree: 1%
 
 ---
@@ -42,23 +43,23 @@ O [!DNL Experience Manager] 6.5.22.0 inclui novos recursos, importantes melhoria
 
 Os principais recursos e aprimoramentos desta versão incluem:
 
-* [hCaptcha](/help/forms/using/integrate-adaptive-forms-hcaptcha.md) e [Serviços de Captcha de Cupido de Borboleta](/help/forms/using/integrate-adaptive-forms-turnstile.md): o AEM Forms oferece suporte aos seguintes serviços de Captcha:
+* [hCaptcha](/help/forms/using/integrate-adaptive-forms-hcaptcha.md) e [serviços CAPTCHA de Cupons de Turnstile](/help/forms/using/integrate-adaptive-forms-turnstile.md): o AEM Forms oferece suporte aos seguintes serviços Captcha:
    * O Captcha protege os formulários contra bots, spam e abuso automatizado, desafiando os usuários com um widget de caixa de seleção. Ele garante que apenas os usuários humanos prossigam, melhorando a segurança das transações on-line.
    * O Cloudflare Turnstile oferece uma medida de segurança que visa proteger formulários contra bots automatizados, ataques mal-intencionados, spams e tráfego automatizado indesejado. Ele apresenta uma caixa de seleção no envio do formulário para verificar se ele é humano, antes de permitir que ele envie o formulário.
 
 * Versão do formulário adaptável:
-   * [Criar várias versões de um Formulário adaptável](/help/forms/using/add-versioning-reviews-comments.md): agora os usuários podem gerenciar facilmente variações de formulários existentes. Isso simplifica o controle de versões e facilita a comparação para a otimização de formulários, tudo em um único fluxo de trabalho simplificado.
+   * [Criar várias versões de um Formulário adaptável](/help/forms/using/add-versioning-reviews-comments.md) - Agora os usuários podem gerenciar facilmente variações de formulários existentes. Esse processo simplifica o controle de versões e facilita a comparação para a otimização de formulários, tudo em um único fluxo de trabalho simplificado.
    * [Comparar Forms Adaptável](/help/forms/using/compare-forms-core-components.md): agora os usuários podem facilmente comparar dois formulários para identificar diferenças. Ele facilita a colaboração perfeita, permitindo que os membros da equipe comparem revisões e discutam alterações com eficiência.
 
-* Adição de suporte para habilitar a incorporação de fontes nas [APIs em lote de Comunicações interativas](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/interactive-communications/create-interactive-communication#output-format-print-channel): as Comunicações interativas agora incluem suporte para a incorporação de fontes do Adobe Ming e do Adobe Myungjo em PDF gerados por meio da API em lote. Esse aprimoramento garante a renderização de texto preciso em documentos gerados, mesmo ao usar subconjuntos de fontes, fornecendo suporte aprimorado para conteúdo multilíngue em saídas de PDF.
+* Adição de suporte para habilitar a incorporação de fontes nas [APIs em lote de Comunicações interativas](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/interactive-communications/create-interactive-communication#output-format-print-channel) - As Comunicações interativas agora incluem suporte para a incorporação de fontes do Adobe Ming e do Adobe Myungjo em PDF gerados por meio da API em lote. Esse aprimoramento garante a renderização de texto preciso em documentos gerados, mesmo ao usar subconjuntos de fontes, fornecendo suporte aprimorado para conteúdo multilíngue em saídas de PDF.
 
-* [API de índice para acessibilidade de PDF](/help/forms/using/aem-document-services-programmatically.md#auto-tag-pdf-documents-auto-tag-api): o AEM Forms no OSGi agora oferece suporte à nova API de marca de índice para aprimorar o PDF para padrões de acessibilidade. Isso torna os PDF mais acessíveis para usuários com tecnologia assistiva.
+* [API de tabela de conteúdo para acessibilidade de PDF](/help/forms/using/aem-document-services-programmatically.md#auto-tag-pdf-documents-auto-tag-api) - O AEM Forms no OSGi agora oferece suporte à nova API de marca de índice para aprimorar o PDF para padrões de acessibilidade. Isso torna os PDF mais acessíveis para usuários com tecnologia assistiva.
 
-* [Resolução XDP de fragmento](/help/forms/using/assembler-service.md#resolve-references-on-crx-repository-resolve-references-on-crx-repository): o AEM Forms no OSGi agora resolve XDPs de fragmento referenciados em XDPs mestres e armazenados no Repositório AEM do CRX.
+* [Resolução XDP de fragmento](/help/forms/using/assembler-service.md#resolve-references-on-crx-repository-resolve-references-on-crx-repository) - O AEM Forms no OSGi agora resolve XDPs de fragmento referenciados em XDPs primários e armazenados no Repositório AEM do CRX.
 
-* [aprimoramentos na conformidade com PDF](/help/forms/developing/pdf-a-documents.md#converting-documents-to-pdfa-documents-converting-documents-to-pdf-a-documents): agora os usuários podem converter PDF para os formatos PDF (1a, 2a, 3a) para fins de arquivamento, garantindo a acessibilidade e verificando a conformidade com esses padrões.
+* [aprimoramentos na conformidade com PDF](/help/forms/developing/pdf-a-documents.md#converting-documents-to-pdfa-documents-converting-documents-to-pdf-a-documents) - Agora os usuários podem converter PDF para os formatos PDF (1a, 2a, 3a) para fins de arquivamento, garantindo a acessibilidade e verificando a conformidade com esses padrões.
 
-* **Suporte para Dimensionamento Automático de Fontes para documentos de PDF estáticos**: AEM Forms Designer, OutputService e FormsService agora oferecem suporte para dimensionamento automático de fontes para PDF estáticos. Se o usuário mencionar o tamanho da fonte 0 no modelo para campos como campo de texto, campo numérico, campo de senha ou campo de data e hora, o tamanho da fonte será ajustado automaticamente dentro desses campos sem qualquer alteração no tamanho do próprio campo. Para usar o recurso, os usuários passam um sinalizador no xci personalizado: `<behaviorOverride>patch-LC-3921991:1</behaviorOverride>`.
+* **Suporte para dimensionamento automático de fontes para documentos de PDF estáticos** - AEM Forms Designer, OutputService e FormsService agora oferecem suporte para dimensionamento automático de fontes para PDF estáticos. Se o usuário definir o tamanho da fonte 0 para campos de texto, numérico, de senha ou de data e hora, o tamanho da fonte será ajustado automaticamente nesses campos sem alterar o tamanho geral do campo. Para usar o recurso, os usuários passam um sinalizador no XCI personalizado: `<behaviorOverride>patch-LC-3921991:1</behaviorOverride>`.
 
 <!-- * _6.5.21.0 REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS THAT YOU WANT TO HIGHLIGHT IN THIS RELEASE?_ -->
 
@@ -102,7 +103,7 @@ A guia IPTC agora oferece suporte aos campos de texto [!UICONTROL Texto Alt] e [
    * **Problema de Comparação de Versões:** o recurso &quot;Comparar com Atual&quot; exibiu somente a versão atual, sem realçar diferenças entre as versões. (SITES-23988)
 
 * Uma marca inesperada do `<br>` aparece no campo Editor de Rich Text (RTE) ao usar o `defaultPasteMode` definido como `plaintext` durante uma ação de copiar e colar. Esse problema resulta em diferentes marcações para o mesmo conteúdo, resultando no mesmo conteúdo de texto sendo traduzido duas vezes na memória de tradução de um cliente. (SITES-23606)
-* No AEM 6.5.20.0, foi encontrado um problema de funcionalidade com o recurso **Gerenciar Publicação**. Ao selecionar um nó e agendá-lo para publicação futura, uma mensagem de erro — &quot;Falha ao recuperar recursos secundários de itens selecionados&quot; — pode ser exibida ao tentar incluir nós secundários. Esse problema bloqueava o uso da opção **Incluir Filhos**, impedindo a publicação completa da hierarquia de conteúdo desejada. (SITES-23000)
+* No AEM 6.5.20.0, foi encontrado um problema de funcionalidade com o recurso **Gerenciar Publicação**. Ao selecionar um nó e agendá-lo para publicação futura, uma mensagem de erro - &quot;Falha ao recuperar recursos secundários de itens selecionados&quot; - pode aparecer ao tentar incluir nós secundários. Esse problema bloqueava o uso da opção **Incluir Filhos**, impedindo a publicação completa da hierarquia de conteúdo desejada. (SITES-23000)
 * O carimbo de data e hora &quot;Publicado&quot; de um modelo não era atualizado no ambiente do autor, mesmo que o modelo tivesse sido replicado com êxito para as instâncias de publicação. O comportamento esperado era que o carimbo de data e hora na instância do autor refletisse a publicação mais recente, mas essa atualização não estava ocorrendo conforme o esperado. (SITES-21585)
 * Houve uma discrepância na contagem de Links recebidos no ambiente do autor do AEM. O painel lateral esquerdo mostrou menos links em comparação à interface clássica. Além disso, alguns Links de entrada que eram legítimos não funcionam. (SITES-24837)
 * Tempos de carregamento extremamente longos estavam sendo relatados ao visualizar versões de página na exibição da Linha do tempo do AEM. Levava até 19 minutos para exibir versões. Esse problema estava em andamento desde a atualização do AEM 6.4.8 para o 6.5.18, interrompendo significativamente a eficiência do fluxo de trabalho. (SITES-22468 E SITES-22467)
@@ -159,7 +160,7 @@ Ao usar Fragmentos de conteúdo com itens de campo de Texto de várias linhas, a
 
 * Os Fragmentos de experiência não são classificados por título conforme esperado quando o cabeçalho da coluna **Título** é clicado na Exibição de lista. Uma cintilação rápida da tela é observada, mas ela não é classificada. (SITES-23706)
 
-* No AEM 6.5.17, foi encontrado um problema ao converter um componente de página em um Fragmento de experiência usando o recurso pronto para uso. Após a conversão, o fragmento de experiência parecia vazio durante a edição, apesar de ser exibido corretamente na página em que era usado. O problema resultou da criação de nó incorreto: o nó do componente foi colocado fora do nó raiz/contêiner, violando a estrutura do modelo. Você precisava mover o nó do componente manualmente para o nó raiz/contêiner correto para restaurar a capacidade de edição do fragmento. (SITES-22974)
+* No AEM 6.5.17, foi encontrado um problema ao converter um componente de página em um Fragmento de experiência usando o recurso pronto para uso. Após a conversão, o fragmento de experiência parecia vazio durante a edição, apesar de ser exibido corretamente na página em que era usado. O problema resultou da criação incorreta do nó: o nó do componente foi colocado fora do nó raiz/contêiner, violando a estrutura do modelo. Você precisava mover o nó do componente manualmente para o nó raiz/contêiner correto para restaurar a capacidade de edição do fragmento. (SITES-22974)
 
 * Depois de migrar do AEM 6.5.11 para o 6.5.20, as configurações da nuvem nos fragmentos de experiência não eram salvas corretamente. Embora as configurações parecessem ser salvas em `crx/de`, elas não seriam exibidas ao reabrir o console de configurações, indicando um problema de persistência. (SITES-22287)
 
@@ -225,29 +226,29 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 ### Forms {#forms-bug-fixes-sp22}
 
 * Os URLs gerados para anexos de arquivo em rascunhos salvos no AEM Forms não refletem os mapeamentos configurados do Apache Sling Resource Resolver Fatory. (FORMS-16949)
-* Quando um usuário no AEM Forms Service Pack 19 (6.5.19.0) visualiza uma correspondência, o conteúdo não é alinhado corretamente, pois os espaços aparecem ausentes e o caractere ‘&#39;x&quot; aparece em alguns locais. (FORMS-16670)
+* Quando um usuário no AEM Forms Service Pack 19 (6.5.19.0) visualiza uma correspondência, o conteúdo não é alinhado corretamente, pois os espaços aparecem ausentes e o caractere `x` aparece em alguns locais. (FORMS-16670)
 * Quando um usuário no AEM Forms Service Pack 18 (6.5.18.0) tenta imprimir os arquivos usando o protocolo CIF, ocorre um erro: (FORMS-16629)
   `ALC-OUT-001-401: Unknown error while printing using CIFS on the Printer: \\\\\\\\NSMVPLUETEST01\\\\TH_Test`.
 * Quando um usuário atualiza do AEM Forms Service Pack 17 (6.5.17.0) para o AEM Forms Service Pack 20 (6.5.20.0), o ícone Editor de regras não é exibido no nível de Contêiner de formulário. (FORMS-16430)
-* Quando um usuário atualiza do AEM Forms Service Pack 17 (6.5.17.0) para o AEM Forms Service Pack 21 (6.5.21.0), o Caminho do URL de envio do Formulário adaptável modificado falha. (FORMS15894)
+* Quando um usuário atualiza do AEM Forms Service Pack 17 (6.5.17.0) para o AEM Forms Service Pack 21 (6.5.21.0), o Caminho do URL de envio do formulário adaptável modificado falha. (FORMS15894)
 * No AEM Forms Service Pack 19 (6.5.19.0), a validação de PDF/A do AEM Forms 6.5 falha para determinados arquivos com o erro `creation date and modification date mismatch with timezone`, enquanto é executada sem problemas na validação de PDF/A do Acrobat Pro para uma verificação de conformidade. (FORMS-15840)
 * Quando um usuário exclui rascunhos de formulário usando o componente &quot;Rascunhos e envios&quot; em uma página do site no AEM Forms Service Pack 15 (6.5.15.0) no OSGi, a exclusão falha. (FORMS-15755)
 * Quando um usuário tem uma lista do SharePoint com mais de 999 entradas e o formulário inclui um anexo, o envio do formulário falha. (FORMS-15057)
-* Quando um usuário emprega dois componentes do seletor de datas rotulados como Data inicial e Data final, após adicionar uma regra de validação para garantir que a data final não seja anterior à data inicial e definir uma mensagem de validação de script personalizado, a validação não será acionada se a data final for anterior à data inicial. (FORMS-14757)
-* Quando um usuário emprega a funcionalidade mostrar e ocultar em uma tabela em um formulário adaptável, o tamanho do campo fica menor. O tamanho do campo se corrige ao adicionar e remover uma linha. (FORMS-14756)
+* Uma regra de validação é adicionada para garantir que a Data final não seja anterior à Data inicial, juntamente com um script personalizado para a mensagem de validação. No entanto, a validação não aciona quando a Data Final é anterior à Data Inicial. (FORMS-14757)
+* Quando um usuário emprega a funcionalidade mostrar/ocultar em uma tabela em um formulário adaptável, o tamanho do campo fica reduzido. O tamanho do campo se corrige ao adicionar e remover uma linha. (FORMS-14756)
 * Quando um usuário imprime formulários no AEM Forms Service Pack 19 (6.5.19.0), alguns formulários não são renderizados corretamente no servidor, causando erros durante o processo de impressão. (FORMS14734)
-* Quando o usuário atualiza do AEM Forms Service Pack 15 (6.5.15.0) para o AEM Forms Service Pack 19 (6.5.19.0) e usa um formulário em que uma variável específica é definida como número e o padrão de exibição personalizado é definido como num{$zzz,zz9.99}, o padrão não é renderizado corretamente na visualização e na interface do usuário do agente. (FORMS-14694)
+* Quando um usuário atualiza do AEM Forms Service Pack 15 (6.5.15.0) para o Service Pack 19 (6.5.19.0), ocorre um problema. Um padrão de exibição personalizado definido como `num{$zzz,zz9.99}` não é renderizado corretamente na visualização e na interface do usuário do Agente. (FORMS-14694)
 * Quando um usuário visualiza uma correspondência em uma comunicação interativa com um xml de dados salvo, a correspondência fica presa no estado &quot;Carregando&quot; na interface do AEM. Visualizar a carta novamente com o mesmo XML funciona bem. (FORMS-14521)
-* Quando um usuário no AEM Forms Service Pack 20 (6.5.20.0) envia um email com um anexo usando um botão de ação de envio &quot;Enviar email&quot; em um formulário adaptável, o nome do anexo aparece na próxima linha em vez de em linha. (FORMS-14426)
-* Quando um usuário gera um PDF no AEM Forms com marcadores definidos para o estilo padrão &quot;Disco&quot;, o PDF falha na verificação de acessibilidade na ferramenta de acessibilidade do Adobe Acrobat. A lista com os estilos &quot;Marcador&quot; e &quot;Quadrado&quot; passa a verificação de acessibilidade. (FORMS-13802, LC-3922179)
-* Quando um usuário atualiza do AEMForms-6.5.0-0065 para o AEMForms-6.5.0-0087 na configuração Autônoma do JBoss RHEL8, ele não consegue se conectar ao contêiner de serviço do LiveCycle. (FORMS-15907) ·
-* No AEM Forms no JEE, no AEM Workspace, quando um usuário seleciona um formulário enviado anteriormente e inicia um novo processo de formulário, os formulários com processos de dados pré-preenchidos apagam todos os dados enviados anteriormente e os substituem pelos dados pré-preenchidos, sem reter nenhum campo que tenha sido preenchido manualmente no formulário anterior. (FORMS-15376)
+* No AEM Forms Service Pack 20 (6.5.20.0), os usuários que enviam emails com anexos usando o botão &quot;Enviar email&quot; em formulários adaptáveis notam um problema. O nome do anexo aparece na próxima linha em vez de em linha. (FORMS-14426)
+* Quando um usuário gera um PDF no AEM Forms com marcadores definidos para o estilo padrão &quot;Disco&quot;, o PDF falha na verificação de acessibilidade na ferramenta de acessibilidade do Adobe Acrobat. A lista com os estilos &quot;Marcador&quot; e &quot;Quadrado&quot; passa na Verificação de Acessibilidade. (FORMS-13802, LC-3922179)
+* Quando um usuário atualiza do AEMForms-6.5.0-0065 para o AEMForms-6.5.0-0087 na configuração Autônoma do JBoss® RHEL8, ocorre uma falha na conexão com o contêiner de serviço do LiveCycle. (FORMS-15907) *
+* No AEM Forms no JEE, no AEM Workspace, selecionar um formulário enviado anteriormente para iniciar um novo processo de formulário causa um problema. O Forms com dados pré-preenchidos substitui todos os dados enviados anteriormente, removendo campos preenchidos manualmente. (FORMS-15376)
 * No AEM Forms Service Pack 20 (6.5.20.0), quando um usuário converte o arquivo Tiff em PDF usando o serviço PDFG, ocorre um erro: (FORMS-14879) ALC-PDG-011-028-Error ao converter o arquivo de imagem de entrada em PDF. com/sun/image/codec/jpeg/JPEGCodec
 * Atualização no AEM Forms em arquivos jar JEE: a biblioteca `commons-collections:commons-collections:jar` agora está incluída para melhorar a resolução de dependência e a funcionalidade em vários trabalhos do AEM Forms JEE, como:
    * Aprimoramento de tarefa do Assembler para melhorar o processamento de tarefa e o tratamento de erros.
    * PDF Generator (PDFG) Aprimoramento de trabalho para garantir operações mais suaves para a geração e conversão de documentos.
    * Aprimoramento do LC-Upgrade Job para melhorar o processo de atualização, garantindo uma transição estável entre as versões.
-   * Aprimoramento de Rights Management para proteger o manuseio de documentos e aprimorar os recursos de gerenciamento de direitos.
+   * Rights Management Aprimoramento de tarefas para proteger o manuseio de documentos e os recursos aprimorados do Rights Management.
    * Gerenciamento de processos Aprimoramento de processos para um processamento de processos e gerenciamento do sistema mais confiáveis.
 
 
@@ -613,8 +614,8 @@ Para garantir a operação correta, você deve adicionar as seguintes propriedad
 * Na Visualização de impressão da interface do usuário do Agente de comunicações interativas, o símbolo de moeda (como cifrão $) é exibido de forma inconsistente para todos os valores do campo. Aparece para valores até 999, mas está ausente para valores de 1000 e superiores. (FORMS-16557)
 * Quaisquer modificações no XDP de fragmentos de layout aninhados em uma comunicação interativa não são refletidas no editor IC. (FORMS-16575)
 * Na Visualização de impressão da interface do usuário do Agente de comunicações interativas, alguns valores calculados não são exibidos corretamente. (FORMS-16603)
-* Quando a carta é exibida na Visualização de impressão, o conteúdo é alterado. Ou seja, alguns espaços desaparecem e certas letras são substituídas por &quot;x&quot;. (FORMS-15681)
-* Quando um usuário configura uma instância do WebLogic 14c, o serviço PDFG no AEM Forms Service Pack 21 (6.5.21.0) no JEE executado no JBoss falha devido a conflitos do carregador de classe envolvendo a biblioteca SLF4J. O erro é exibido da seguinte maneira (CQDOC-22178):
+* Quando a carta é exibida na Visualização de impressão, o conteúdo é alterado. Ou seja, alguns espaços desaparecem e determinadas letras são substituídas por `x`. (FORMS-15681)
+* Quando um usuário configura uma instância do WebLogic 14c, o serviço PDFG no AEM Forms Service Pack 21 (6.5.21.0) no JEE executado no JBoss® falha devido a conflitos do carregador de classe envolvendo a biblioteca SLF4J. O erro é exibido da seguinte maneira (CQDOC-22178):
 
   ```java
   Caused by: java.lang.LinkageError: loader constraint violation: when resolving method "org.slf4j.impl.StaticLoggerBinder.getLoggerFactory()Lorg/slf4j/ILoggerFactory;"
