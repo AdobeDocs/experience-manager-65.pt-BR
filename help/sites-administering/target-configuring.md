@@ -9,9 +9,9 @@ exl-id: 0f710685-dc4f-4333-9847-d002b2637d08
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
+source-git-commit: d2623c78e8c779b20303865d4bb40effd1e5fe59
 workflow-type: tm+mt
-source-wordcount: '2122'
+source-wordcount: '2125'
 ht-degree: 28%
 
 ---
@@ -140,7 +140,10 @@ Use o procedimento a seguir para criar uma configuração da nuvem do Target no 
 
    1. Forneça um **Título** à configuração.
    1. Selecione o modelo da **Configuração do Adobe Target**.
-   1. Clique em **Criar**.
+
+      ![Configuração do Adobe Target](assets/adobe-target-create-configuration.png)
+
+1. Clique em **Criar**.
 
    A caixa de diálogo de edição é aberta.
 
