@@ -4,22 +4,18 @@ description: Melhore a segurança dos formulários com o serviço de Tornição 
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
 exl-id: bed93ce3-89db-477a-8316-7598275e4bca
-source-git-commit: 525fd39a572d8f0ab93d70466918b4dd5792320d
+source-git-commit: ab92f0a4c89f6c523539ccc048ea2d88b930936c
 workflow-type: tm+mt
-source-wordcount: '860'
-ht-degree: 10%
+source-wordcount: '828'
+ht-degree: 11%
 
 ---
 
 # Conecte seu ambiente do AEM Forms com o Turnstile {#connect-your-forms-environment-with-turnstile-service}
 
 <!--
-
-<span class="preview"> This feature is under the Early Adopter Program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
-
+<span class="preview"> This feature is under the early adopter program. If you’re interested in joining our early access program for this feature, send an email from your official address to aem-forms-ea@adobe.com to request access </span>
 -->
-
-<span class="preview"> Este recurso está sob o programa de adoção antecipada. Se você estiver interessado em ingressar em nosso programa de acesso antecipado para este recurso, envie um email de seu endereço oficial para aem-forms-ea@adobe.com para solicitar acesso </span>
 
 O CAPTCHA (um teste de Turing público e completamente automatizado para diferenciar computadores e humanos) é um programa comumente usado em transações online para distinguir entre humanos e programas ou bots automatizados. O recurso apresenta um desafio e avalia a resposta do usuário para determinar se é um humano ou um bot interagindo com o site. O CAPTCHA impede que o usuário prossiga se o teste falhar e ajuda a tornar as transações online seguras, evitando que bots publiquem spam ou outro conteúdo mal-intencionado.
 
@@ -35,6 +31,8 @@ O AEM Forms 6.5 é compatível com as seguintes soluções CAPTCHA:
 ## Integrar o ambiente do AEM Forms com o Captcha de tartaruga
 
 O Captcha de torniquete da Cloudflare é uma medida de segurança que visa proteger formulários e sites contra bots automatizados, ataques mal-intencionados, spams e tráfego automatizado indesejado. Ele apresenta uma caixa de seleção no envio do formulário para verificar se ele é humano, antes de permitir que ele envie o formulário.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3440940/)
 
 ### Pré-requisitos para integrar o ambiente do AEM Forms com o Captcha giratório {#prerequisite}
 
