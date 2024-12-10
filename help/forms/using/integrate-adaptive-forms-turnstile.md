@@ -4,9 +4,9 @@ description: Melhore a segurança dos formulários com o serviço de Tornição 
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
 exl-id: bed93ce3-89db-477a-8316-7598275e4bca
-source-git-commit: 65425a4a779c6e7adffb1174c0076e03cbc54ac1
+source-git-commit: 4a0e8def5bafd4d90f50bf4b34a537c51e09ce27
 workflow-type: tm+mt
-source-wordcount: '846'
+source-wordcount: '842'
 ht-degree: 11%
 
 ---
@@ -77,13 +77,13 @@ Para integrar o AEM Forms ao serviço de Borboleta, execute as seguintes etapas:
 1. Selecione um formulário adaptável e clique em **[!UICONTROL Propriedades]**. Em **[!UICONTROL Contêiner de configuração]**, selecione a configuração de nuvem do Turnstile®.
 1. Clique em **[!UICONTROL Salvar e fechar]**.
 
-   Se você não tiver um Contêiner de Configuração como esse, consulte a seção [Conectar o ambiente do AEM Forms com o Turnstile](#connect-your-forms-environment-with-turnstile-service) para saber como criar um Contêiner de Configuração.
+   Se você não tiver um Contêiner de Configuração para configurar o serviço Captcha, consulte a seção [Configurar Turnstile](#configure-turnstile-steps-to-configure-hcaptcha) para saber como criar um Contêiner de Configuração.
 
    ![Selecionar Contêiner de Configuração](assets/captcha-properties.png)
 
 1. Selecione um Formulário adaptável e clique em **[!UICONTROL Editar]** para abrir o formulário adaptável no editor.
 1. No navegador de componentes, arraste e solte o componente **[!UICONTROL Captcha]** no Formulário adaptável.
-1. Selecione o componente **[!UICONTROL Estrutura de formulário adaptável]** e clique no ícone ![Propriedades](assets/configure-icon.svg). Ele abre a caixa de diálogo de propriedades. Especifique as seguintes propriedades:
+1. Selecione o componente **[!UICONTROL Captcha]** e clique no ícone ![Propriedades](assets/configure-icon.svg). Ele abre a caixa de diálogo de propriedades. Especifique as seguintes propriedades:
 
    <!--![Turnstile v2](assets/turnstile-settings-v2.png)-->
    ![Torniquete v1](assets/turnstile-setting-v1.png)
@@ -95,7 +95,8 @@ Para integrar o AEM Forms ao serviço de Borboleta, execute as seguintes etapas:
    * **[!UICONTROL Configurações]:** selecione a Configuração na Nuvem definida para Turnstile®.
      >[!NOTE]
      >Você pode ter várias configurações de nuvem no seu ambiente para uma finalidade semelhante. Então, escolha o serviço com cuidado. Se nenhum serviço estiver listado, consulte [Conectar seu ambiente do AEM Forms com o Turnstile](#connect-your-forms-environment-with-turnstile-service) para saber como criar um Cloud Service que conecta seu ambiente do AEM Forms com o serviço Turnstile.
-   * **Mensagem de Erro:** Forneça a mensagem de erro a ser exibida ao usuário quando o envio do Captcha falhar.
+
+   * **[!UICONTROL Mensagem de Erro]:** Forneça a mensagem de erro a ser exibida ao usuário quando o envio do Captcha falhar.
    * **Tamanho do Captcha:** Você pode selecionar o tamanho de exibição da caixa de diálogo de desafio do hCaptcha®. Use a opção **[!UICONTROL Compactar]** para exibir um tamanho pequeno e o **[!UICONTROL Normal]** para exibir uma caixa de diálogo de desafio hCaptcha® de tamanho relativamente grande.
 
 1. Selecione **[!UICONTROL Concluído]**.
