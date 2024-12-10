@@ -4,18 +4,16 @@ description: Melhore a segurança dos formulários com o serviço de Tornição 
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
 exl-id: bed93ce3-89db-477a-8316-7598275e4bca
-source-git-commit: ab92f0a4c89f6c523539ccc048ea2d88b930936c
+source-git-commit: 65425a4a779c6e7adffb1174c0076e03cbc54ac1
 workflow-type: tm+mt
-source-wordcount: '828'
+source-wordcount: '846'
 ht-degree: 11%
 
 ---
 
 # Conecte seu ambiente do AEM Forms com o Turnstile {#connect-your-forms-environment-with-turnstile-service}
 
-<!--
-<span class="preview"> This feature is under the early adopter program. If you’re interested in joining our early access program for this feature, send an email from your official address to aem-forms-ea@adobe.com to request access </span>
--->
+<span class="preview">Este recurso é baseado na identificação de alternância de recurso `FT_FORMS-12407`. Para habilitar o recurso, siga as etapas fornecidas no artigo [Habilitar alternância de recurso](/help/forms/using/enable-feature-toggle.md). </span>
 
 O CAPTCHA (um teste de Turing público e completamente automatizado para diferenciar computadores e humanos) é um programa comumente usado em transações online para distinguir entre humanos e programas ou bots automatizados. O recurso apresenta um desafio e avalia a resposta do usuário para determinar se é um humano ou um bot interagindo com o site. O CAPTCHA impede que o usuário prossiga se o teste falhar e ajuda a tornar as transações online seguras, evitando que bots publiquem spam ou outro conteúdo mal-intencionado.
 
@@ -84,7 +82,7 @@ Para integrar o AEM Forms ao serviço de Borboleta, execute as seguintes etapas:
    ![Selecionar Contêiner de Configuração](assets/captcha-properties.png)
 
 1. Selecione um Formulário adaptável e clique em **[!UICONTROL Editar]** para abrir o formulário adaptável no editor.
-1. No navegador de componentes, arraste e solte ou adicione o componente **[!UICONTROL EIXO do formulário adaptável]** no formulário adaptável.
+1. No navegador de componentes, arraste e solte o componente **[!UICONTROL Captcha]** no Formulário adaptável.
 1. Selecione o componente **[!UICONTROL Estrutura de formulário adaptável]** e clique no ícone ![Propriedades](assets/configure-icon.svg). Ele abre a caixa de diálogo de propriedades. Especifique as seguintes propriedades:
 
    <!--![Turnstile v2](assets/turnstile-settings-v2.png)-->

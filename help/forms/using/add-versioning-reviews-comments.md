@@ -3,10 +3,9 @@ title: Adicionar versões, comentários e anotações ao formulário adaptável 
 description: Use os componentes principais do formulário adaptável AEM 6.5 para adicionar comentários, anotações e versões a um formulário adaptável.
 feature: Adaptive Forms, Core Components
 role: User, Developer, Admin
-exl-id: 91e6fca2-60ba-45f1-98c3-7b3fb1d762f5
-source-git-commit: 525fd39a572d8f0ab93d70466918b4dd5792320d
+source-git-commit: 794d93d890ba752f9036a85831f7cbc8391fb545
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '593'
 ht-degree: 0%
 
 ---
@@ -14,10 +13,11 @@ ht-degree: 0%
 # Controle de versão, revisão e comentário em um Formulário adaptável
 
 <!--
-<span class="preview"> This feature is under the Early Adopter Program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
+
+<span class="preview"> This feature is under the early adopter program. If you’re interested in joining our early access program for this feature, send an email from your official address to aem-forms-ea@adobe.com to request access </span>
+
 -->
 
-<span class="preview"> Este recurso está sob o programa de adoção antecipada. Se você estiver interessado em ingressar em nosso programa de acesso antecipado para este recurso, envie um email de seu endereço oficial para aem-forms-ea@adobe.com para solicitar acesso </span>
 
 Os Componentes principais do formulário adaptável permitem que os autores do formulário adicionem versões, comentários e anotações aos formulários. Esses recursos simplificam o desenvolvimento de formulários permitindo que os usuários criem e gerenciem várias versões, colaborem por meio de comentários e adicionem notas a seções de formulário específicas, aprimorando a experiência de criação de formulários.
 

@@ -1,0 +1,52 @@
+---
+title: Ativar a alternância de recursos para integrar os recursos de pré-lançamento e de adesão antecipada
+description: O Feature Toggle é uma funcionalidade no AEM que permite que os administradores ativem novos recursos em um ambiente de tempo de execução.
+feature: Adaptive Forms, Foundation Components
+role: User, Developer
+hidefromtoc: true
+source-git-commit: 794d93d890ba752f9036a85831f7cbc8391fb545
+workflow-type: tm+mt
+source-wordcount: '293'
+ht-degree: 1%
+
+---
+
+# Alternância de recursos no Adobe Experience Manager (AEM) 6.5{#enable-feature-toggle-aem-forms-65}
+
+O Feature Toggle é uma funcionalidade no AEM que permite que os administradores ativem ou desativem recursos específicos dinamicamente. Esse recurso é particularmente útil para gerenciar os **recursos de Primeiros usuários** e os **recursos de Pré-lançamento** sem exigir grandes implantações ou alterações na base de código. Ele garante flexibilidade e controle sobre quais recursos estão acessíveis em um ambiente AEM.
+
+## Ativar alternância de recursos {#enable-feature-toggle-65}
+
+Os alternadores de recursos para os participantes iniciais ou novos recursos podem ser configurados por meio do **Console da Web do AEM** seguindo as etapas abaixo:
+
+1. Faça logon na sua instância do AEM Forms.
+2. Vá até `http://<author-instance-url>:portnumber/system/console/configMgr`.
+3. Procure por **Provedor de alternância dinâmica do Adobe Granite** no Gerenciador de configurações.
+4. Clique no ícone ![lápis-ícone](assets/illustratorcc_penciltool_cur_edit_2_17.png).
+5. Na seção [!UICONTROL Ativar alternâncias], clique em ![ícone-lápis](assets/aem6forms_add.png).
+6. Adicione a ID de alternância do recurso, como mostrado na imagem abaixo.
+   ![Adicionar alternância](assets/add_toggle_number_forms.png)
+
+   >[!NOTE]
+   >
+   >Você pode encontrar a ID de alternância de recurso no documento específica para os recursos do adotante inicial.
+
+7. Clique em Salvar.
+
+## Desativar alternância de recursos {#disable-feature-toggle-65}
+
+Para desativar os recursos para os recursos cujos alternadores estão ativados, siga as etapas abaixo:
+
+1. Faça logon na sua instância do AEM Forms.
+2. Vá até `http://<author-instance-url>:portnumber/system/console/configMgr`.
+3. Procure por **Provedor de alternância dinâmica do Adobe Granite** no Gerenciador de configurações.
+4. Clique no ícone ![lápis-ícone](assets/illustratorcc_penciltool_cur_edit_2_17.png).
+5. Na seção [!UICONTROL Alternâncias Desabilitadas], clique em ![ícone de lápis](assets/aem6forms_add.png).
+6. Adicione o número de alternância para que o recurso seja desativado.
+   ![Remover alternância](assets/remove_toggle_feature_forms.png)
+7. Clique em Salvar.
+
+## Consideração técnica
+
+Os alternadores de recursos são específicos do ambiente e gerenciados no tempo de execução, de modo que não exigem uma reinicialização do servidor. No entanto, alguns recursos podem exigir a atualização das páginas relevantes ou a limpeza do cache para refletir as alterações.
+Você pode acessar a lista de recursos habilitados por meio da alternância de recursos para o seu ambiente via `http://<author-instance-url>:4502/etc.clientlibs/toggles.json`.
