@@ -3,9 +3,10 @@ title: Compare dois formulários adaptáveis distintos.
 description: Compare dois formulários distintos com base nos campos, conteúdo e componentes de formulário.
 feature: Adaptive Forms, Core Components
 role: User, Developer, Admin
-source-git-commit: 794d93d890ba752f9036a85831f7cbc8391fb545
+exl-id: bcd6e9cf-b33b-4468-8b99-0da196f65eaa
+source-git-commit: 94a9f4087e36bfe5701ad9aafd4e8446ca643ddf
 workflow-type: tm+mt
-source-wordcount: '180'
+source-wordcount: '202'
 ht-degree: 1%
 
 ---
@@ -15,6 +16,8 @@ ht-degree: 1%
 <!--
 <span class="preview"> This feature is under the early adopter program. If you’re interested in joining our early access program for this feature, send an email from your official address to aem-forms-ea@adobe.com to request access </span>
 -->
+
+<span class="preview">Este recurso não está habilitado por padrão. Você pode escrever de seu endereço oficial para aem-forms-ea@adobe.com para solicitar acesso ao recurso.</span>
 
 O recurso Comparar nos Componentes principais do Forms adaptável ajuda os autores de formulários a identificar diferenças entre dois formulários, analisando campos, conteúdo e componentes.
 

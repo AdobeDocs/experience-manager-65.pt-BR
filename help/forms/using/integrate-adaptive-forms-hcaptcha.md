@@ -4,17 +4,20 @@ description: Melhore a segurança dos formulários com o serviço hCaptcha&reg; 
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
 exl-id: 6aa7a0a5-bd45-4628-abd0-312a9e6cf6fe
-source-git-commit: 96e6705349fc6969ab0c40c8c770c9a0d1967619
+source-git-commit: 94a9f4087e36bfe5701ad9aafd4e8446ca643ddf
 workflow-type: tm+mt
-source-wordcount: '863'
+source-wordcount: '872'
 ht-degree: 19%
 
 ---
 
 # Conecte seu ambiente AEM Forms com o hCaptcha® {#connect-your-forms-environment-with-hcaptcha-service}
 
-<span class="preview">Este recurso é baseado na identificação de alternância de recurso `FT_FORMS-12407`. Para habilitar o recurso, siga as etapas fornecidas no artigo [Habilitar alternância de recurso](/help/forms/using/enable-feature-toggle.md). </span>
+<!--
+<span class="preview">This feature is based on Feature Toggle id `FT_FORMS-12407`. To enable the feature, follow the steps given in the [Enable Feature Toggle](/help/forms/using/enable-feature-toggle.md) article. </span>
+-->
 
+<span class="preview">Este recurso não está habilitado por padrão. Você pode escrever de seu endereço oficial para aem-forms-ea@adobe.com para solicitar acesso ao recurso.</span>
 
 O CAPTCHA (um teste de Turing público e completamente automatizado para diferenciar computadores e humanos) é um programa comumente usado em transações online para distinguir entre humanos e programas ou bots automatizados. O recurso apresenta um desafio e avalia a resposta do usuário para determinar se é um humano ou um bot interagindo com o site. O CAPTCHA impede que o usuário prossiga se o teste falhar e ajuda a tornar as transações online seguras, evitando que bots publiquem spam ou outro conteúdo mal-intencionado.
 
@@ -68,12 +71,12 @@ Para integrar o AEM Forms com o serviço hCaptcha®, execute as seguintes etapas
 
    Depois que o serviço hCAPTCHA é configurado, ele é disponibilizado para uso no formulário adaptável.
 
-## Usar o hCaptcha® em um Forms adaptável {#using-hCaptcha-in-aem-6.5}
+## Usar o hCaptcha® em um formulário adaptável {#using-hCaptcha-in-aem-6.5}
 
 1. Abra o ambiente do AEM Forms.
 1. Ir para **[!UICONTROL Forms]** > **[!UICONTROL Forms e Documentos]**.
 1. Selecione um formulário adaptável e clique em **[!UICONTROL Propriedades]**.
-1. No **[!UICONTROL Contêiner de configuração]**, selecione a configuração de nuvem do hCaptcha®.
+1. No **[!UICONTROL Contêiner de Configuração]**, selecione o Contêiner de Configuração que contém a Configuração na Nuvem que conecta o AEM Forms com o hCaptcha.
 1. Clique em **[!UICONTROL Salvar e fechar]**.
 
    Se você não tiver um Contêiner de configuração para o hCaptcha, consulte a seção [Conecte seu ambiente AEM Forms com o hCaptcha®](#configure-hcaptcha-steps-to-configure-hcaptcha) para saber como criar um Contêiner de configuração.
