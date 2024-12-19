@@ -4,9 +4,9 @@ description: Saiba mais sobre a flexibilidade do Universal Editor e como ele pod
 feature: Developing
 role: Developer
 exl-id: 7bdf1fcc-02b9-40bc-8605-e6508a84d249
-source-git-commit: c3af0befce5534891d45c2507684a2017f9363f8
+source-git-commit: 773e398af5247a0de12143334ecfa44955ebbbcd
 workflow-type: tm+mt
-source-wordcount: '1087'
+source-wordcount: '1178'
 ht-degree: 1%
 
 ---
@@ -178,3 +178,11 @@ Observe que, ao seguir a documentação do Universal Editor com AEM as a Cloud S
 >[!TIP]
 >
 >Para obter um guia abrangente de introdução do Universal Editor para desenvolvedores, consulte o documento [Visão geral do Universal Editor para desenvolvedores do AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/developer-overview) na documentação do AEM as a Cloud Service, tendo em mente as alterações necessárias para o suporte ao AEM 6.5, conforme mencionado nesta seção.
+
+## Diferenças entre o AEM 6.5 e o AEM as a Cloud Service {#differences}
+
+O Editor universal no AEM 6.5 funciona amplamente da mesma forma que no AEM as a Cloud Service, incluindo a interface do usuário e grande parte da configuração. Há, no entanto, diferenças que devem ser observadas.
+
+* O Universal Editor no 6.5 é compatível apenas com o caso de uso headless.
+* A configuração do Editor Universal varia ligeiramente para 6.5 ([conforme descrito](#setup) no documento atual).
+* O Editor universal na versão 6.5 usa um seletor de ativos diferente e um seletor de Fragmento de conteúdo diferente do AEM as a Cloud Service.
