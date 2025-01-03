@@ -9,9 +9,9 @@ exl-id: e8015d59-7587-46dc-a672-e0f1108102ad
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '558'
 ht-degree: 0%
 
 ---
@@ -36,6 +36,10 @@ O armazenamento de confiança pode conter mais de uma credencial de extensões A
 >Você também pode importar e excluir credenciais de forma programática. (Consulte [Programação com formulários AEM](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=pt-BR).)
 
 ## Importar uma credencial de extensões do Acrobat Reader DC {#import-a-acrobat-reader-dc-extensions-credential}
+
+>[!NOTE]
+> 
+> Verifique se o usuário tem privilégios de administrador para acessar o console do administrador.
 
 1. No console de administração, clique em Configurações > Gerenciamento de armazenamento de confiança > Credenciais locais.
 1. Clique em Importar e, em Tipo de armazenamento de confiança, selecione Credencial de extensões do Acrobat Reader DC.

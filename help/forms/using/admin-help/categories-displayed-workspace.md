@@ -9,14 +9,18 @@ exl-id: 62621fe9-f69f-4bc0-aecc-d7bcc3064516
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '494'
 ht-degree: 0%
 
 ---
 
 # Gerenciamento das categorias exibidas no Workspace {#managing-the-categories-displayed-in-workspace}
+
+>[!NOTE]
+> 
+> Verifique se o usuário tem privilégios de administrador para acessar o console do administrador.
 
 No Workspace, os processos que um usuário pode iniciar são exibidos em categorias no painel de navegação esquerdo. Você pode configurar as categorias no console de administração ou os designers de processo podem configurá-las no Workbench. Quando os projetistas de processos criam processos, eles os atribuem a categorias.
 

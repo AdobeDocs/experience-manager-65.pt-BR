@@ -9,9 +9,9 @@ feature: PDF Generator
 exl-id: 402c1fd4-c6c8-494e-b452-b56a91c4a397
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '884'
+source-wordcount: '896'
 ht-degree: 0%
 
 ---
@@ -93,6 +93,10 @@ Se você estiver executando o OpenOffice, o Microsoft® Word ou o Microsoft® Po
 >O OpenOffice deve ser instalado em um local de diretório que todos os usuários de PDFG possam acessar. Você pode verificar isso fazendo logon como usuário PDFG e verificando se é possível iniciar o OpenOffice sem problemas.
 
 ### Adicionar uma conta de usuário {#add-a-user-account}
+
+>[!NOTE]
+> 
+> Verifique se o usuário tem privilégios de administrador para acessar o console do administrador.
 
 1. No console de administração, clique em Serviços > PDF Generator > Contas de usuário.
 1. Clique em Adicionar e digite o nome de usuário e a senha de um usuário que tenha privilégios administrativos no Forms Server. Se você estiver configurando usuários para o OpenOffice, ignore as caixas de diálogo de ativação iniciais do OpenOffice.

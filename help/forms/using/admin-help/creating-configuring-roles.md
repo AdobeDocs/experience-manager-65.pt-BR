@@ -9,9 +9,9 @@ exl-id: b447e545-f73e-4fde-a001-86e0e1cf4a12
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms
-source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '2483'
+source-wordcount: '2495'
 ht-degree: 0%
 
 ---
@@ -99,6 +99,10 @@ Rights Management **Gerenciar Usuários Convidados e Locais:** Pode executar tar
 >O espaço de trabalho do Flex está obsoleto para a versão do AEM forms.
 
 ## Criar uma função {#create-a-role}
+
+>[!NOTE]
+> 
+> Verifique se o usuário tem privilégios de administrador para acessar o console do administrador.
 
 1. No console de administração, clique em Configurações > Gerenciamento de usuários > Gerenciamento de funções e, em seguida, clique em Nova função.
 1. Na caixa Nome da função, digite um nome para a função e, opcionalmente, digite uma descrição da função e, em seguida, clique em Avançar.

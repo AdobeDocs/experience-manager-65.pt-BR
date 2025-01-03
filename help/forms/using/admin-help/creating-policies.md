@@ -9,14 +9,18 @@ feature: Document Security
 exl-id: 5e57451c-1a89-442c-8404-841e95d5ceff
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '4713'
+source-wordcount: '4725'
 ht-degree: 0%
 
 ---
 
 # Criação e gerenciamento de políticas {#creating-and-managing-policies}
+
+>[!NOTE]
+> 
+> Verifique se o usuário tem privilégios de administrador para acessar o console do administrador.
 
 Uma *política* define um conjunto de configurações de confidencialidade e usuários que podem acessar um documento ao qual a política é aplicada. Um *conjunto de políticas* é usado para agrupar um conjunto de políticas que têm uma finalidade comercial comum. Esses conjuntos de políticas são então disponibilizados a um subconjunto de usuários no sistema. Para obter detalhes sobre políticas, consulte [Políticas e documentos protegidos por política](/help/forms/using/admin-help/document-security.md#policies-and-policy-protected-documents).
 

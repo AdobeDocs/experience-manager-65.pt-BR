@@ -9,14 +9,18 @@ exl-id: 35f9acbf-7a82-43b1-9e17-9be4de666212
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '461'
 ht-degree: 0%
 
 ---
 
 # Pesquisando instâncias de processo{#searching-for-process-instances}
+
+>[!NOTE]
+> 
+> Verifique se o usuário tem privilégios de administrador para acessar o console do administrador.
 
 Utilize a página Pesquisa de Processo para informar critérios de pesquisa para localizar uma instância de processo. Você pode acessar a página Pesquisa de Processo na página de fluxo de trabalho de formulários ou clicando em Pesquisar na página Instância de Processo.
 

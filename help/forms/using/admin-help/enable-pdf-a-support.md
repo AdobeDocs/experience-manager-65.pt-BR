@@ -9,14 +9,18 @@ feature: PDF Generator
 exl-id: 0e83a208-aa8f-4ff1-b981-244d22a157f2
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '108'
+source-wordcount: '120'
 ht-degree: 0%
 
 ---
 
 # Habilitar suporte para PDF/A {#enable-pdf-a-support}
+
+>[!NOTE]
+> 
+> Verifique se o usuário tem privilégios de administrador para acessar o console do administrador.
 
 O PDF Generator é compatível com a criação de arquivos compatíveis com PDF/A a partir de arquivos do Microsoft Excel, Microsoft PowerPoint e Microsoft Word.
 

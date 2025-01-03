@@ -9,9 +9,9 @@ exl-id: 362b7b91-c58b-4e47-a6ef-56a4b54a100c
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '2631'
+source-wordcount: '2643'
 ht-degree: 0%
 
 ---
@@ -35,6 +35,10 @@ Para permitir que os formulários AEM recebam e lidem com as mensagens de email 
 Se seus processos forem projetados e implementados sem a necessidade de enviar um email, não será necessário configurar nenhuma das opções na página Configurações de email.
 
 ### Definir configurações de email de saída {#configure-outgoing-email-settings}
+
+>[!NOTE]
+> 
+> Verifique se o usuário tem privilégios de administrador para acessar o console do administrador.
 
 1. No console de administração, clique em Serviços > Fluxo de trabalho de formulários > Configurações do servidor > Configurações de email.
 1. Selecione Ativar mensagens de saída.

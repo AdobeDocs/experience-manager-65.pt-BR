@@ -9,12 +9,13 @@ exl-id: 30edcef2-e8fa-403a-9850-b8dfeeb9ac65
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: e9afc12af78140ae0ec12cc2ee95fc9e175f8d94
 workflow-type: tm+mt
-source-wordcount: '3229'
+source-wordcount: '3241'
 ht-degree: 0%
 
 ---
+
 
 # Configurando diretórios {#configuring-directories}
 
@@ -25,6 +26,10 @@ Para cada domínio enterprise que você configurar, especifique os diretórios q
 Para cada domínio enterprise que você configurar, especifique os diretórios que o provedor de autenticação consultará para obter informações do usuário. Você pode adicionar um diretório a um domínio enterprise existente ou a um novo domínio enterprise que está adicionando. Você pode configurar vários diretórios para um domínio. Você também pode configurar um domínio para usar uma SPI (Interface de provedor de serviços) personalizada para sincronização.
 
 ### Adicionar um diretório {#add-a-directory}
+
+>[!NOTE]
+>
+> Verifique se o usuário tem privilégios de administrador para acessar o console do administrador.
 
 1. No console de administração, clique em Configurações > Gerenciamento de usuários > Gerenciamento de domínio.
 1. Clique em Novo Domínio Enterprise ou selecione um domínio enterprise existente.

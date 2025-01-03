@@ -9,12 +9,13 @@ exl-id: cb642289-4137-4ba7-8bde-0e458c8c94fe
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 0835dca60d8011ce8660f1e7fdefb2b14ccd6129
 workflow-type: tm+mt
-source-wordcount: '1003'
+source-wordcount: '1015'
 ht-degree: 0%
 
 ---
+
 
 # Sincronização de diretórios {#synchronizing-directories}
 
@@ -50,11 +51,13 @@ O Gerenciamento de Usuários executa as seguintes etapas quando a sincronizaçã
 
 >[!NOTE]
 >
->Os usuários e grupos que foram removidos do diretório não são excluídos do banco de dados de Gerenciamento de Usuários até que você execute uma sincronização completa do diretório.
+> * Os usuários e grupos que foram removidos do diretório não são excluídos do banco de dados de Gerenciamento de Usuários até que você execute uma sincronização completa do diretório.
+> * Verifique se o usuário tem privilégios de administrador para acessar o console do administrador.
+
 
 1. No console de administração, clique em Configurações > Gerenciamento de usuários > Gerenciamento de domínio.
-1. Em Sincronização delta, marque a caixa de seleção e clique em Salvar.
-1. Edite as definições de diretório para cada um dos domínios enterprise que usarão o recurso de sincronização de diretório delta. Nas páginas Configurações de Usuário e Configurações de Grupo, localize a configuração Modificar Carimbo de Data/Hora e digite `modify TimeStamp` como o valor. Para obter detalhes sobre como editar domínios corporativos, consulte [Editar e converter domínios existentes](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains).
+2. Em Sincronização delta, marque a caixa de seleção e clique em Salvar.
+3. Edite as definições de diretório para cada um dos domínios enterprise que usarão o recurso de sincronização de diretório delta. Nas páginas Configurações de Usuário e Configurações de Grupo, localize a configuração Modificar Carimbo de Data/Hora e digite `modify TimeStamp` como o valor. Para obter detalhes sobre como editar domínios corporativos, consulte [Editar e converter domínios existentes](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains).
 
 ## Habilitar ou desabilitar o log detalhado durante a sincronização {#enable-or-disable-detailed-logging-during-synchronization}
 

@@ -9,14 +9,18 @@ exl-id: a6a10ff0-6f4d-42df-9b4e-f98a53cf1806
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Workbench
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '10824'
+source-wordcount: '10836'
 ht-degree: 0%
 
 ---
 
 # Definir configurações de serviço {#configure-service-settings}
+
+>[!NOTE]
+> 
+> Verifique se o usuário tem privilégios de administrador para acessar o console do administrador.
 
 Você pode usar a página Gerenciamento de Serviços para definir configurações para cada um dos serviços que fazem parte dos formulários AEM. As configurações disponíveis variam dependendo do serviço que está sendo configurado.
 
@@ -38,7 +42,7 @@ Você pode usar a página Gerenciamento de Serviços para definir configuraçõe
 
 ## Configurações do serviço de Fluxo de Trabalho de Auditoria {#audit-workflow-service-settings}
 
-O Workbench oferece a capacidade de registrar instâncias de processos como são executadas em tempo de execução e, em seguida, reproduzi-las para observar o comportamento do processo. (Consulte [Ajuda do Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).) Para conservar espaço no sistema de arquivos do Forms Server, você pode limitar a quantidade de dados de gravação de processo armazenados. Você pode configurar as seguintes propriedades do serviço de Fluxo de Trabalho de Auditoria ( `AuditWorkflowService`):
+O Workbench oferece a capacidade de registrar instâncias de processos como são executadas em tempo de execução e, em seguida, reproduzi-las para observar o comportamento do processo. (Consulte [Ajuda do Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).) Para conservar espaço no sistema de arquivos do Forms Server, você pode limitar a quantidade de dados de gravação de processos armazenados. Você pode configurar as seguintes propriedades do serviço de Fluxo de Trabalho de Auditoria ( `AuditWorkflowService`):
 
 **maxNumberOfRecordingInstances:** O número máximo de gravações armazenadas. Quando o número máximo é armazenado, a gravação mais antiga é removida do sistema de arquivos quando uma nova gravação é criada. Essa propriedade é útil se você tende a criar muitas gravações e deseja remover gravações antigas automaticamente. O valor padrão é 50.
 
@@ -692,7 +696,7 @@ Validação de Assinaturas:** Quando esta opção é selecionada, as informaçõ
 
 ## Configurações do serviço de pasta monitorada {#watched-folder-service-settings}
 
-O serviço Pasta Monitorada ( `WatchedFolder`) configura atributos que são comuns para todos os pontos de extremidade de pasta monitorada. Também fornece valores padrão para endpoints de pastas monitoradas. (Consulte [Configurando pontos de extremidade de pasta monitorada](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#configuring-watched-folder-endpoints).) Ele não é chamado por aplicativos clientes externos nem usado em processos criados no Workbench.
+O serviço Pasta Monitorada ( `WatchedFolder`) configura atributos que são comuns para todos os pontos de extremidade de pasta monitorada. Também fornece valores padrão para endpoints de pastas monitoradas. (Consulte [Configuração de pontos de extremidade de pastas monitoradas](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#configuring-watched-folder-endpoints).) Ele não é invocado por aplicativos clientes externos nem usado em processos criados no Workbench.
 
 As configurações a seguir estão disponíveis para o serviço Pasta monitorada.
 

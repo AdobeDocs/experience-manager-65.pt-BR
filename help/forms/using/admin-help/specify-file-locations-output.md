@@ -9,14 +9,18 @@ exl-id: 620c69d6-4fe1-46d6-b5d4-3b562142e547
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '327'
+source-wordcount: '339'
 ht-degree: 1%
 
 ---
 
 # Especificar locais de arquivos para Saída {#specify-file-locations-for-output}
+
+>[!NOTE]
+> 
+> Verifique se o usuário tem privilégios de administrador para acessar o console do administrador.
 
 Você pode especificar os locais onde a Saída procura determinados tipos de arquivos que ela requer.
 

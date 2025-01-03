@@ -9,21 +9,25 @@ exl-id: dd302cfb-eae1-4189-aa7b-9f2533ebd164
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '607'
 ht-degree: 0%
 
 ---
 
 # Definir configurações do provedor de serviços SAML{#configure-saml-service-provider-settings}
 
+>[!NOTE]
+> 
+> Verifique se o usuário tem privilégios de administrador para acessar o console do administrador.
+
 A SAML (Security Assertion Markup Language) é uma das opções que você pode selecionar ao configurar a autorização para um domínio corporativo ou híbrido. O SAML é usado principalmente para oferecer suporte a SSO em vários domínios. Quando o SAML é configurado como seu provedor de autenticação, os usuários fazem logon e se autenticam em formulários AEM por meio de um provedor de identidade de terceiros (IDP) especificado.
 
 Para obter uma explicação sobre SAML, consulte [Visão Geral Técnica da SAML (Security Assertion Markup Language) V2.0](https://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-tech-overview-2.0.html).
 
 1. No console de administração, clique em Configurações > Gerenciamento de usuários > Configuração > Configurações do Provedor de serviço SAML.
-1. Na caixa ID de entidade do provedor de serviços, digite um ID exclusivo para usar como um identificador para a implementação do provedor de serviços dos formulários AEM. Você também especifica esse identificador exclusivo ao configurar seu IDP (por exemplo, `um.lc.com`.) Você também pode usar a URL usada para acessar formulários AEM (por exemplo, `https://AEMformsserver`).
+1. Na caixa ID de entidade do provedor de serviços, digite um ID exclusivo para usar como um identificador para a implementação do provedor de serviços dos formulários AEM. Você também especifica essa ID exclusiva ao configurar seu IDP (por exemplo, `um.lc.com`.) Também é possível usar a URL usada para acessar formulários AEM (por exemplo, `https://AEMformsserver`).
 1. Na caixa URL Base do Provedor de Serviços, digite a URL base do seu Forms Server (por exemplo, `https://AEMformsserver:8080`).
 1. (Opcional) Para permitir que os formulários AEM enviem solicitações de autenticação assinadas ao IDP, execute as seguintes tarefas:
 

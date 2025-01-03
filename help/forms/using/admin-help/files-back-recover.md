@@ -9,14 +9,18 @@ exl-id: d2dd381d-a7d2-4fec-a8ba-7ca037fd9dc1
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '2017'
+source-wordcount: '2029'
 ht-degree: 0%
 
 ---
 
 # Arquivos para backup e recuperação {#files-to-back-up-and-recover}
+
+>[!NOTE]
+> 
+> Verifique se o usuário tem privilégios de administrador para acessar o console do administrador.
 
 Os arquivos de aplicativos e de dados dos quais deve ser feito backup são descritos com mais detalhes nas seções a seguir.
 
@@ -110,7 +114,7 @@ O DB2 tem recursos integrados para fazer backup de um banco de dados no Tivoli S
 
 ### Oracle {#oracle}
 
-Use backups de snapshot ou configure o banco de dados do Oracle para ser executado no modo de log de arquivamento. (Consulte [Backup Do Oracle: Uma Introdução](https://www.databasedesign-resource.com/oracle-backup.md).) Para obter mais informações sobre backup e recuperação do banco de dados do Oracle, acesse estes sites:
+Use backups de snapshot ou configure o banco de dados do Oracle para ser executado no modo de log de arquivamento. (Consulte [Backup do Oracle: uma introdução](https://www.databasedesign-resource.com/oracle-backup.md).) Para obter mais informações sobre backup e recuperação do banco de dados do Oracle, vá para estes sites:
 
 [Backup e Recuperação do Oracle:](https://www.oracle.com/technetwork/database/features/availability/br-overview-097160.html) explica com mais detalhes os conceitos de backup e recuperação e as técnicas mais comuns de uso do Recovery Manager (RMAN) para backup, recuperação e emissão de relatórios, além de fornecer mais informações sobre como planejar uma estratégia de backup e recuperação.
 
@@ -131,7 +135,7 @@ Para obter mais informações, consulte [Backup e restauração](https://msdn.mi
 
 ### MySQL {#mysql}
 
-Use MySQLAdmin ou modifique os arquivos INI no Windows para configurar seu banco de dados MySQL para ser executado no modo de log binário. (Consulte [log binário do MySQL](https://dev.mysql.com/doc/refman/5.1/en/binary-log.html).) Uma ferramenta de backup a quente para MySQL também está disponível no software InnoBase. (Consulte [Hot Backup Innobase](https://www.innodb.com/hot-backup/features.md).)
+Use MySQLAdmin ou modifique os arquivos INI no Windows para configurar seu banco de dados MySQL para ser executado no modo de log binário. (Consulte [Log binário do MySQL](https://dev.mysql.com/doc/refman/5.1/en/binary-log.html).) Uma ferramenta de backup dinâmico para MySQL também está disponível no software InnoBase. (Consulte [Hot Backup Innobase](https://www.innodb.com/hot-backup/features.md).)
 
 >[!NOTE]
 >

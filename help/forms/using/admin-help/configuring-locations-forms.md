@@ -9,14 +9,18 @@ exl-id: 0d9eb7fe-28a6-444e-957d-023687158c61
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '822'
+source-wordcount: '834'
 ht-degree: 0%
 
 ---
 
 # Configuração de locais para o Forms {#configuring-locations-for-forms}
+
+>[!NOTE]
+> 
+> Verifique se o usuário tem privilégios de administrador para acessar o console do administrador.
 
 Você pode especificar a URL, o URI e os locais de atributos do arquivo, como a raiz da Web, o local dos formulários a serem recuperados, o arquivo de PDF de propagação usado nas transformações de PDForm e o local do cache.
 
@@ -52,7 +56,7 @@ Onde `host name`e `port` são o nome e o número da porta do servidor que está 
 
 O valor padrão é uma string vazia.
 
-**URI da Raiz da Web:** A raiz da Web do aplicativo. Esse valor é combinado com o parâmetro sTargetURL (quando sTargetURL é fornecido como relativo), especificado por meio do SDK de formulários AEM, para construir um URL absoluto para acessar o conteúdo da Web específico do aplicativo.
+**URI da Raiz da Web:** A raiz da Web do aplicativo. Esse valor é combinado com o parâmetro sTargetURL (quando sTargetURL é fornecido como relativo), especificado por meio do AEM Forms SDK, para construir um URL absoluto para acessar o conteúdo da Web específico do aplicativo.
 
 O valor padrão é uma string vazia.
 

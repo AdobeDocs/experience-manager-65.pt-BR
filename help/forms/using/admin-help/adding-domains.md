@@ -9,7 +9,7 @@ exl-id: c708936d-7aa7-4b92-be2d-d97008f187d2
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: eac8a82c78d7f209512d32e7fcd7083bbebf1cb5
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
 source-wordcount: '941'
 ht-degree: 0%
@@ -18,7 +18,9 @@ ht-degree: 0%
 
 # Adicionar domínios {#adding-domains}
 
-Verifique se o usuário tem privilégios de administrador para acessar o console do administrador.
+>[!NOTE]
+> 
+> Verifique se o usuário tem privilégios de administrador para acessar o console do administrador.
 
 ## Adicionar um domínio enterprise {#add-an-enterprise-domain}
 

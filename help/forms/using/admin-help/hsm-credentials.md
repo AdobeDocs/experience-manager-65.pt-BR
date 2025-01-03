@@ -9,9 +9,9 @@ exl-id: facbeab2-de95-4778-894c-faa771d3391e
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Security
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '1322'
+source-wordcount: '1334'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,10 @@ As assinaturas digitais de formulários AEM podem usar credenciais armazenadas e
 >Depois de alterar a configuração do HSM, reinicie o AEM Forms Server.
 
 ## Criar um alias para uma credencial HSM quando o dispositivo HSM estiver online {#create-an-alias-for-an-hsm-credential-when-the-hsm-device-is-online}
+
+>[!NOTE]
+> 
+> Verifique se o usuário tem privilégios de administrador para acessar o console do administrador.
 
 1. No console de administração, clique em Configurações > Gerenciamento de armazenamento de confiança > Credenciais HSM e clique em Adicionar.
 1. Na caixa Nome do perfil, digite uma string usada para identificar o alias. Esse valor é usado como uma propriedade para algumas operações de Assinaturas digitais, como a operação Assinar campo de assinatura.
@@ -103,4 +107,4 @@ O AEM Forms usa um mecanismo IPC/RPC baseado em serviços da Web. Esse mecanismo
 Esse mecanismo não oferece suporte à criação online de perfis HSM ou verificações de status. No entanto, há duas maneiras de criar perfis HSM e executar verificações de status:
 
 * Crie uma credencial de cliente de formulários AEM ao passá-la para o Certificado do signatário. Siga as etapas em [Configurando o suporte HSM para formulários AEM ES usando o Sun JDK na plataforma Windows de 64 bits](https://kb2.adobe.com/cps/808/cpsid_80835.html). O local do serviço Web é passado como uma propriedade de credencial. Perfis HSM offline criados usando o certificado der ou o certificado SHA-1 hex também são compatíveis. No entanto, se você tiver atualizado para formulários AEM de uma versão anterior do AEM, faça alterações no cliente porque a credencial transportou informações de certificado e serviço da Web.
-* O local do Serviço Web está especificado no console de administração para o serviço de Assinatura. (Consulte [Configurações do serviço de assinatura](/help/forms/using/admin-help/configure-service-settings.md#signature-service-settings).) Aqui, o cliente carregava somente o alias do perfil HSM no armazenamento de confiança. Você pode usar essa opção sem interrupções sem nenhuma alteração no cliente, mesmo se tiver atualizado para formulários AEM de uma versão anterior dos formulários AEM. Essa opção não é compatível com perfis HSM que usam o certificado SHA-1.
+* O local do Serviço Web está especificado no console de administração para o serviço de Assinatura. (Consulte [Configurações do serviço de assinatura](/help/forms/using/admin-help/configure-service-settings.md#signature-service-settings).) Aqui, o cliente carregou apenas o alias do perfil HSM no armazenamento de confiança. Você pode usar essa opção sem interrupções sem nenhuma alteração no cliente, mesmo se tiver atualizado para formulários AEM de uma versão anterior dos formulários AEM. Essa opção não é compatível com perfis HSM que usam o certificado SHA-1.

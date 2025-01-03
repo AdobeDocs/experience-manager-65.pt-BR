@@ -9,14 +9,18 @@ exl-id: cfb81f5b-e018-43b1-b76e-bac56b8bd96d
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '99'
+source-wordcount: '111'
 ht-degree: 0%
 
 ---
 
 # Alterar o número de itens exibidos nas páginas Aplicativos e Serviços {#change-the-number-of-items-displayed-on-the-applications-and-services-pages}
+
+>[!NOTE]
+> 
+> Verifique se o usuário tem privilégios de administrador para acessar o console do administrador.
 
 Na página Preferências, você pode controlar o número de serviços, endpoints, categorias e arquivos exibidos em cada uma das páginas da Web Aplicativos e Serviços.
 

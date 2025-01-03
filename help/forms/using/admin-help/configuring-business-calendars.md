@@ -9,9 +9,9 @@ exl-id: 4282718a-41f1-411a-9cd7-8c470005107d
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '1889'
+source-wordcount: '1901'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ Se alguns usuários da organização tiverem dias não úteis diferentes, você 
 
    Se você estiver usando um domínio local ou híbrido, as informações sobre os usuários serão armazenadas somente no banco de dados do Gerenciamento de usuários. Para definir a chave do calendário comercial para esses usuários, informe uma string no campo Chave do Calendário Comercial ao adicionar ou editar um usuário no Gerenciamento de Usuários. (Consulte [Adicionar e configurar usuários](/help/forms/using/admin-help/adding-configuring-users.md#adding-and-configuring-users).) Em seguida, mapeie as chaves do calendário comercial (as cadeias de caracteres) para os calendários comerciais no fluxo de trabalho dos formulários. (Consulte [Mapear usuários e grupos para um calendário comercial](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar).)
 
-   Se você estiver usando um domínio enterprise, as informações sobre usuários residirão em um sistema de armazenamento de terceiros, como um diretório LDAP, que o User Management sincroniza com o banco de dados do User Management. Isso permite mapear uma chave de calendário comercial para um campo no diretório LDAP. Por exemplo, se cada registro de usuário no diretório contiver um campo &quot;país&quot; e você quiser atribuir calendários de negócios com base no país onde o usuário está localizado, especifique o nome do campo &quot;país&quot; no campo Chave do Calendário de Negócios ao especificar as configurações de usuário para o diretório. (Consulte [Configuração de diretórios](/help/forms/using/admin-help/configuring-directories.md#configuring-directories).) Em seguida, é possível mapear as chaves do calendário comercial (os valores definidos para o campo &quot;país&quot; no diretório LDAP) para calendários comerciais no fluxo de trabalho de formulários. (Consulte [Mapear usuários e grupos para um calendário comercial](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar).)
+   Se você estiver usando um domínio enterprise, as informações sobre usuários residirão em um sistema de armazenamento de terceiros, como um diretório LDAP, que o User Management sincroniza com o banco de dados do User Management. Isso permite mapear uma chave de calendário comercial para um campo no diretório LDAP. Por exemplo, se cada registro de usuário no diretório contiver um campo &quot;país&quot; e você quiser atribuir calendários de negócios com base no país onde o usuário está localizado, especifique o nome do campo &quot;país&quot; no campo Chave do Calendário de Negócios ao especificar as configurações de usuário para o diretório. (Consulte [Configurar diretórios](/help/forms/using/admin-help/configuring-directories.md#configuring-directories).) Em seguida, você pode mapear as chaves do calendário comercial (os valores definidos para o campo &quot;país&quot; no diretório LDAP) para calendários comerciais no fluxo de trabalho de formulários. (Consulte [Mapear usuários e grupos para um calendário comercial](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar).)
 
 1. No workflow de formulários, defina um calendário para cada conjunto de usuários que compartilham os mesmos dias não úteis. (Consulte [Criar ou atualizar um calendário comercial](configuring-business-calendars.md#create-or-update-a-business-calendar).)
 1. No workflow de formulários, mapeie as chaves do calendário comercial ou as associações de grupo para cada calendário. (Consulte [Mapear usuários e grupos para um calendário comercial](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar).)
@@ -64,26 +64,28 @@ Se sua organização contiver diferentes conjuntos de usuários com diferentes d
 
 >[!NOTE]
 >
->Se você não criar um calendário comercial, será usado o calendário padrão.
+> * Se você não criar um calendário comercial, será usado o calendário padrão.
+> * Verifique se o usuário tem privilégios de administrador para acessar o console do administrador.
+
 
 1. No console de administração, clique em Serviços > Fluxo de trabalho do Forms > Calendários de negócios.
-1. Para adicionar um novo calendário comercial, clique em ![bus_cal_plus](assets/bus_cal_plus.png). O texto *Novo Calendário* aparece na lista suspensa. Selecione o texto e digite outro nome para o calendário.
+2. Para adicionar um novo calendário comercial, clique em ![bus_cal_plus](assets/bus_cal_plus.png). O texto *Novo Calendário* aparece na lista suspensa. Selecione o texto e digite outro nome para o calendário.
 
    Para editar um calendário comercial existente, selecione-o na lista suspensa.
 
-1. Em Dias não-úteis padrão, selecione quaisquer dias não-úteis semanais, como fins de semana.
-1. [Opcional] Selecione Usar Horário Comercial e especifique os horários de início e término para os dias úteis.
+3. Em Dias não-úteis padrão, selecione quaisquer dias não-úteis semanais, como fins de semana.
+4. [Opcional] Selecione Usar Horário Comercial e especifique os horários de início e término para os dias úteis.
 
    Se você selecionar essa opção, um evento que ocorre antes do intervalo de tempo especificado será movido para o início do intervalo de tempo, e um evento que ocorre após o intervalo de tempo será movido para a hora inicial do próximo dia útil.
 
    Por exemplo, considere uma situação em que um usuário recebe uma tarefa às 2h de uma terça-feira e o lembrete dessa tarefa é definido como dois dias úteis. Sem horário comercial, o lembrete ocorreria às 2:00 da manhã da quinta-feira. Se o horário comercial estiver definido como 8h às 17h, o lembrete será encaminhado para 8h na quinta-feira. Sem horário comercial, se um evento de lembrete fosse criado às 18h de terça-feira, o lembrete ocorreria depois do horário comercial de quinta-feira. Com o horário comercial definido para 8:00 às 17:00, o lembrete ocorreria às 8:00 na sexta-feira.
 
-1. No calendário à esquerda, clique duas vezes em qualquer outro dia não útil, como feriados. Não é possível selecionar dias no passado. Os dias não-úteis selecionados são exibidos em uma lista à direita, com a data aparecendo duas vezes em uma linha. Selecione a data à esquerda para digitar o nome ou a descrição do dia não útil.
+5. No calendário à esquerda, clique duas vezes em qualquer outro dia não útil, como feriados. Não é possível selecionar dias no passado. Os dias não-úteis selecionados são exibidos em uma lista à direita, com a data aparecendo duas vezes em uma linha. Selecione a data à esquerda para digitar o nome ou a descrição do dia não útil.
 
    Para remover um dia não útil da lista, clique em ![bus_cal_trash](assets/bus_cal_trash.png) ao lado do dia.
 
-1. [Opcional] Se este calendário for o calendário padrão, selecione Calendário Padrão. O calendário padrão é usado quando nenhum outro mapeamento de calendário existe para eventos associados ao usuário ou nenhum calendário comercial é especificado para o Evento de Timer ou o Serviço de Espera. Não é possível excluir o calendário padrão.
-1. Quando terminar de definir os dias não-úteis, selecione Calendário Ativado para ativá-lo e clique em Salvar.
+6. [Opcional] Se este calendário for o calendário padrão, selecione Calendário Padrão. O calendário padrão é usado quando nenhum outro mapeamento de calendário existe para eventos associados ao usuário ou nenhum calendário comercial é especificado para o Evento de Timer ou o Serviço de Espera. Não é possível excluir o calendário padrão.
+7. Quando terminar de definir os dias não-úteis, selecione Calendário Ativado para ativá-lo e clique em Salvar.
 
    Se você estiver atualizando um calendário existente, a nova versão entrará em vigor imediatamente e será usada para todos os cálculos do calendário de negócios, inclusive para tarefas que já estão em execução.
 

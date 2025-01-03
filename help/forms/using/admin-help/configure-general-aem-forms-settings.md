@@ -9,9 +9,9 @@ exl-id: e1519477-b5a8-4947-8597-26b945a3b819
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 1b76b30d8db59e6ad98af1d29f17443442d5378e
 workflow-type: tm+mt
-source-wordcount: '1762'
+source-wordcount: '1774'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,8 @@ A página Configurações principais no console de administração fornece confi
 
 >[!NOTE]
 >
-> É recomendável usar o comando &quot;Ctrl + C&quot; para reiniciar o SDK. Reiniciar o SDK do AEM usando métodos alternativos, por exemplo, parar processos Java, pode levar a inconsistências no ambiente de desenvolvimento do AEM.
+> * Verifique se o usuário tem privilégios de administrador para acessar o console do administrador.
+> * É recomendável usar o comando &#39;Ctrl + C&#39; para reiniciar o SDK. Reiniciar o AEM SDK usando métodos alternativos, por exemplo, parar processos Java, pode levar a inconsistências no ambiente de desenvolvimento do AEM.
 
 Para obter informações sobre como habilitar o modo de backup seguro, consulte [Habilitação e desabilitação do modo de backup seguro](/help/forms/using/admin-help/enabling-disabling-safe-backup-mode.md#enabling-and-disabling-safe-backup-mode).
 
@@ -122,4 +123,4 @@ Habilite essa opção em ambientes de desenvolvimento, onde os desenvolvedores u
 
 **Permitir o carregamento de documentos não seguros de aplicativos Flex** *ndash; O servlet de carregamento de arquivos usado para carregar documentos de aplicativos Adobe Flex® AEM para formulários exige que os usuários sejam autenticados e autorizados antes que possam carregar documentos. O usuário deve ter a função Usuário do aplicativo de carregamento de documentos atribuída ou outra função que inclua a permissão Upload de documentos. Isso ajuda a impedir que usuários não autorizados façam upload de documentos no servidor do AEM Forms. Selecione essa opção se quiser desativar esse recurso de segurança em um ambiente de desenvolvimento ou para compatibilidade com versões anteriores de formulários AEM. Por padrão, essa opção não está selecionada. Para obter detalhes, consulte &quot;Invocar formulários AEM usando o AEM forms Remoting&quot; em Programação com formulários AEM.
 
-**Permitir carregamento de documento não seguro de aplicativos SDK Java** *ndash; os carregamentos do HTTP DocumentManager devem ser protegidos. Por padrão, os uploads de HTTP exigem que os usuários sejam autenticados e autorizados antes que possam carregar documentos. O usuário deve ter a função Usuário de Serviços atribuída ou outra função que contenha a permissão Chamar Serviços. Isso ajuda a impedir que usuários não autorizados façam upload de documentos no servidor do Forms. Selecione essa opção se quiser desativar esse recurso de segurança em um ambiente de desenvolvimento, para compatibilidade com versões anteriores de formulários AEM ou com base na configuração do firewall. Por padrão, essa opção não está selecionada. Para obter detalhes, consulte &quot;Chamar formulários AEM usando a API Java&quot; em Programação com formulários AEM.
+**Permitir carregamento de documento não seguro de aplicativos Java SDK** *ndash; os carregamentos HTTP DocumentManager devem ser protegidos. Por padrão, os uploads de HTTP exigem que os usuários sejam autenticados e autorizados antes que possam carregar documentos. O usuário deve ter a função Usuário de Serviços atribuída ou outra função que contenha a permissão Chamar Serviços. Isso ajuda a impedir que usuários não autorizados façam upload de documentos no servidor do Forms. Selecione essa opção se quiser desativar esse recurso de segurança em um ambiente de desenvolvimento, para compatibilidade com versões anteriores de formulários AEM ou com base na configuração do firewall. Por padrão, essa opção não está selecionada. Para obter detalhes, consulte &quot;Chamar formulários AEM usando a API Java&quot; em Programação com formulários AEM.

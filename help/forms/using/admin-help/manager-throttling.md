@@ -9,14 +9,18 @@ exl-id: 1f765de2-1362-4318-9302-c5036e6fa7d6
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '1030'
+source-wordcount: '1042'
 ht-degree: 0%
 
 ---
 
 # Gerenciador de trabalho e limitação{#work-manager-and-throttling}
+
+>[!NOTE]
+> 
+> Verifique se o usuário tem privilégios de administrador para acessar o console do administrador.
 
 Os formulários AEM (e versões anteriores) usavam filas JMS para executar operações de forma assíncrona. Nos formulários AEM, as filas JMS foram substituídas pelo Work Manager. Este documento fornece informações de fundo sobre o Work Manager e fornece instruções sobre a configuração das opções de limitação do Work Manager.
 
@@ -34,7 +38,7 @@ As operações assíncronas são tratadas da seguinte maneira:
 
 1. O Work Manager recebe um item de trabalho para execução.
 1. O Work Manager armazena o item de trabalho em uma tabela de banco de dados e atribui um identificador exclusivo ao item de trabalho. O registro do banco de dados contém todas as informações necessárias para executar o item de trabalho.
-1. As threads do Work Manager extraem itens de trabalho quando as threads se tornam livres. Antes de extrair os itens de trabalho, as threads podem verificar se os serviços necessários estão iniciados, se há tamanho de heap suficiente para extrair o próximo item de trabalho e se há ciclos de CPU suficientes para processar o item de trabalho. O Work Manager também avalia os atributos do item de trabalho (como sua prioridade) ao programar sua execução.
+1. As threads do Work Manager extraem itens de trabalho quando as threads se tornam livres. Antes de extrair os itens de trabalho, as threads podem verificar se os serviços necessários estão iniciados, se há tamanho de heap suficiente para extrair o próximo item de trabalho e se há ciclos do CPU suficientes para processar o item de trabalho. O Work Manager também avalia os atributos do item de trabalho (como sua prioridade) ao programar sua execução.
 
 Os administradores de formulários AEM podem usar o Health Monitor para verificar as estatísticas do Work Manager, como o número de itens de trabalho na fila e seus status. Você também pode usar o Monitor de Integridade para pausar, retomar, repetir ou excluir itens de trabalho. (Consulte [Exibir estatísticas relacionadas ao Gerenciador de Trabalho](/help/forms/using/admin-help/view-statistics-related-manager.md#view-statistics-related-to-work-manager).)
 

@@ -9,14 +9,18 @@ exl-id: 375376d1-60b3-49a4-8893-ba9336e6bf7b
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '840'
+source-wordcount: '852'
 ht-degree: 0%
 
 ---
 
 # Trabalhar com tarefas {#working-with-tasks}
+
+>[!NOTE]
+> 
+> Verifique se o usuário tem privilégios de administrador para acessar o console do administrador.
 
 Utilize a página Pesquisa de Tarefas para procurar tarefas por nome de usuário ou ID de tarefa. Os resultados da pesquisa são exibidos na página Lista de tarefas, onde você pode acessar o histórico de uma tarefa. Você também pode reatribuir uma tarefa se um usuário tiver muitas tarefas ou se um usuário tiver recebido uma atribuição de tarefa por engano.
 

@@ -9,14 +9,18 @@ feature: Document Security
 exl-id: fe132f13-5f9a-4c86-a385-0a0026c812e2
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '10266'
+source-wordcount: '10278'
 ht-degree: 0%
 
 ---
 
 # Configurar o servidor de segurança de documentos {#configure-the-document-security-server}
+
+>[!NOTE]
+> 
+> Verifique se o usuário tem privilégios de administrador para acessar o console do administrador.
 
 1. No console de administração, clique em Serviços > Segurança de documentos > Configuração > Configuração do servidor.
 1. Defina as configurações e clique em OK.
@@ -308,9 +312,9 @@ Você pode ativar e desativar a auditoria de eventos e especificar os tipos de e
 
 **Alternar Política no Documento:** Um usuário ou administrador alterna a política anexada a um documento.
 
-**Documento do Publish Como:** Um novo documento cujo documentName e licença são idênticos a um documento existente está registrado no servidor e os documentos não têm um relacionamento pai-filho. Esse evento pode ser acionado usando o SDK de formulários do AEM.
+**Documento do Publish Como:** Um novo documento cujo documentName e licença são idênticos a um documento existente está registrado no servidor e os documentos não têm um relacionamento pai-filho. Esse evento pode ser acionado usando o SDK de formulários AEM.
 
-**Iterar Documento:** Um novo documento cujo documentName e licença são idênticos a um documento existente está registrado no servidor e os documentos têm uma relação pai-filho. Esse evento pode ser acionado usando o SDK de formulários do AEM.
+**Iterar Documento:** Um novo documento cujo documentName e licença são idênticos a um documento existente está registrado no servidor e os documentos têm uma relação pai-filho. Esse evento pode ser acionado usando o SDK de formulários AEM.
 
 **Eventos de política**
 
@@ -366,7 +370,7 @@ Sincronização Concluída:** Essas informações não estão disponíveis na p�
 
 O aplicativo Cliente **Sincronizado** deve sincronizar informações com o servidor para permitir acesso offline.
 
-**Incompatibilidade de Versão:** Uma versão do SDK de formulários AEM incompatível com o servidor tentou se conectar ao servidor.
+**Incompatibilidade de Versão:** uma versão do AEM forma SDK incompatível com o servidor tentou se conectar ao servidor.
 
 **Informações de Sincronização de Diretórios:** essas informações não estão disponíveis na página Eventos. As informações de sincronização de diretórios atuais, incluindo o estado e o horário da última sincronização, são exibidas na página Gerenciamento de Domínio. Para acessar a página Gerenciamento de domínio no console de administração, clique em Configurações > Gerenciamento de usuário > Gerenciamento de domínio.
 
@@ -555,7 +559,7 @@ A Segurança de documentos gera automaticamente um email de convite de registro 
 
 O e-mail de registro contém um link para uma página de Registro e informações sobre como se registrar. Depois que o usuário convidado é registrado, a segurança de documentos emite um email de ativação com um link para uma página de Ativação. Quando ativada, a conta permanece válida até que você a desative ou exclua.
 
-Se você habilitar o registro integrado, especifique o servidor SMTP, os detalhes do email de registro, os recursos de acesso e redefina as informações de email da senha apenas uma vez. Antes de habilitar o registro incorporado, verifique se você criou um domínio local no Gerenciamento de usuários e se atribuiu a função &quot;Segurança de documentos Convidar usuário&quot; aos usuários e grupos apropriados em sua organização. (Consulte [Adicionar um domínio local](/help/forms/using/admin-help/adding-domains.md#add-a-local-domain) e [Criar e configurar funções](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles).) Se você não usar o registro integrado, deverá ter seu próprio sistema de registro de usuário criado usando o SDK de formulários do AEM. Consulte a ajuda em &quot;Desenvolvendo SPIs para formulários AEM&quot; em [Programando com formulários AEM](/help/forms/developing/introducing-java-api-soap-quick.md). Se você não usar a opção Registro interno, é recomendável configurar uma mensagem no email de ativação e na tela de logon do cliente para notificar os usuários sobre como entrar em contato com o administrador para obter uma nova senha ou outras informações.
+Se você habilitar o registro integrado, especifique o servidor SMTP, os detalhes do email de registro, os recursos de acesso e redefina as informações de email da senha apenas uma vez. Antes de habilitar o registro incorporado, verifique se você criou um domínio local no Gerenciamento de usuários e se atribuiu a função &quot;Segurança de documentos Convidar usuário&quot; aos usuários e grupos apropriados em sua organização. (Consulte [Adicionar um domínio local](/help/forms/using/admin-help/adding-domains.md#add-a-local-domain) e [Criar e configurar funções](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles).) Se você não usar o registro interno, deverá ter seu próprio sistema de registro de usuários criado usando o AEM Forms SDK. Consulte a ajuda em &quot;Desenvolvendo SPIs para formulários AEM&quot; em [Programando com formulários AEM](/help/forms/developing/introducing-java-api-soap-quick.md). Se você não usar a opção Registro interno, é recomendável configurar uma mensagem no email de ativação e na tela de logon do cliente para notificar os usuários sobre como entrar em contato com o administrador para obter uma nova senha ou outras informações.
 
 **Habilitar e configurar o registro de usuário convidado**
 
@@ -779,13 +783,13 @@ Quando os aplicativos clientes tentam estabelecer um link com a segurança de do
 
 As configurações de Negações podem conter vários conjuntos de condições de negação. Se todos os atributos de qualquer conjunto forem correspondentes, o aplicativo solicitante não terá acesso aos serviços de segurança de documentos.
 
-O recurso de negação de serviço exige que os aplicativos clientes usem o C++ Client SDK de segurança de documentos versão 8.2 ou posterior. Os seguintes produtos de Adobe fornecem informações sobre produtos ao solicitar serviços de segurança de documentos:
+O recurso de negação de serviço exige que os aplicativos clientes usem o documento de segurança C++ Client SDK versão 8.2 ou posterior. Os seguintes produtos de Adobe fornecem informações sobre produtos ao solicitar serviços de segurança de documentos:
 
 * Adobe Acrobat 9.0 Professional/Acrobat 9.0 Standard e posterior
 * Adobe Reader 9.0 e posterior
 * Extensões do Acrobat Reader DC para Microsoft Office 8.2 e posterior
 
-Os aplicativos clientes usam a API do cliente a partir do C++ Client SDK para segurança de documentos para solicitar serviços da segurança de documentos. As solicitações de API do cliente incluem informações de versão da plataforma e do SDK (pré-compiladas na API do cliente) e informações do produto obtidas do aplicativo do cliente.
+Os aplicativos clientes usam a API do cliente da segurança de documentos C++ Client SDK para solicitar serviços da segurança de documentos. As solicitações de API do cliente incluem informações de versão da plataforma e do SDK (pré-compiladas na API do cliente) e informações de produto obtidas do aplicativo do cliente.
 
 Aplicativos ou plug-ins clientes fornecem informações sobre o produto em sua implementação de uma função de retorno de chamada. O aplicativo fornece as seguintes informações:
 

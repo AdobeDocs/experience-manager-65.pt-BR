@@ -9,9 +9,9 @@ exl-id: 7a64a643-808b-4644-8fd3-0dafe83e8dd9
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '672'
+source-wordcount: '684'
 ht-degree: 1%
 
 ---
@@ -82,13 +82,15 @@ Você pode alterar a localização do GDS no console de administração após a 
 
 >[!NOTE]
 >
->Migre os dados da seguinte maneira ou ocorrerá perda de dados.
+> * Migre os dados da seguinte maneira ou ocorrerá perda de dados.
+> * Verifique se o usuário tem privilégios de administrador para acessar o console do administrador.
+
 
 1. Faça logon no console de administração e clique em Configurações > Configurações do sistema principal > Configurações.
-1. Na caixa Diretório de armazenamento de documentos global, digite o caminho completo para o novo diretório GDS e clique em OK.
-1. Desative imediatamente o servidor de aplicativos.
-1. Mova todos os arquivos do diretório GDS antigo para o novo local, mantendo a estrutura do diretório interno.
-1. Reinicie o servidor de aplicativos.
+2. Na caixa Diretório de armazenamento de documentos global, digite o caminho completo para o novo diretório GDS e clique em OK.
+3. Desative imediatamente o servidor de aplicativos.
+4. Mova todos os arquivos do diretório GDS antigo para o novo local, mantendo a estrutura do diretório interno.
+5. Reinicie o servidor de aplicativos.
 
 ## Sobre Arquivos de Implantação {#about-deployment-files}
 

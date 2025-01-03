@@ -9,9 +9,9 @@ exl-id: 6e2f3d4c-2ead-45b3-98e7-32cacc7e2985
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '1870'
+source-wordcount: '1882'
 ht-degree: 0%
 
 ---
@@ -100,6 +100,10 @@ Um documento maior que o tamanho máximo em linha é armazenado no sistema de ar
 Quando o conteúdo do documento é embutido (ou seja, menor que o tamanho máximo embutido), o conteúdo é armazenado no banco de dados como parte da carga de serialização do documento. Portanto, aumentar o tamanho máximo em linha pode afetar o tamanho do banco de dados.
 
 **Alterar o tamanho máximo incorporado**
+
+>[!NOTE]
+> 
+> Verifique se o usuário tem privilégios de administrador para acessar o console do administrador.
 
 1. No console de administração, clique em Configurações > Configurações do sistema principal > Configurações.
 1. Insira um valor na caixa Tamanho Inline Máximo do Documento Padrão e clique em OK.
