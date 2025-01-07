@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Use a documentação do Adobe Experience Manager 6.5 para saber como funciona e o que o software pode fazer por você.
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM 6.5
-source-git-commit: 5827cf69222962243cfebdc9c41eb73f90ac950a
+source-git-commit: 2fc6225887436685f598baf4ea2c4a01534d8704
 workflow-type: tm+mt
-source-wordcount: '7480'
+source-wordcount: '7475'
 ht-degree: 20%
 
 ---
@@ -1209,9 +1209,8 @@ ht-degree: 20%
       + [Reduzindo vulnerabilidades de RCE do Struts 2 para Experience Manager Forms](/help/forms/using/mitigating-struts-2-rce-vulnerabilities-for-experience-manager-manager-form.md)
       + [Falha ao fazer backup do banco de dados durante a atualização para 6.5.12.0 para MySQL](/help/forms/using/failed-to-back-up-the-database-on-upgrading-to-aem-forms-service-pack-6-5-12-0.md)
       + [A geração de PDF não imprime um grande número de PDF no WorkBench](/help/forms/using/pdf-generation-service-fails-to-print-a-large-number-of-pdfs-on-workbench.md)
-      + [Como reiniciar corretamente o SDK do AEM](/help/forms/using/restart-aem-sdk.md)
+      + [Como reiniciar corretamente o AEM SDK](/help/forms/using/restart-aem-sdk.md)
       + [O serviço PaperCapture não executa OCRs em PDF](/help/forms/using/papercapture-service-resolution.md)
-      + [Desinstalar pacote complementar do AEM Forms](/help/forms/using/uninstall-forms-addon-package.md)
    + Documentação herdada {#legacy-documentation}
       + [Usar o serviço de script de execução no AEM Forms no JEE Workbench para criar dados XML](/help/forms/developing/building-xml.md)
       + [Compactação e descompactação de arquivos usando um AEM Forms no DSC personalizado JEE](/help/forms/developing/compressing-decompressing-custom-dsc.md)
