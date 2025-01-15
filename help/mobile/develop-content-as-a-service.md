@@ -8,18 +8,16 @@ exl-id: 85e73679-684e-402f-8186-8b56d8bd9372
 solution: Experience Manager
 feature: Mobile
 role: User
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '976'
+source-wordcount: '955'
 ht-degree: 0%
 
 ---
 
 # Entrega de conteúdo{#content-delivery}
 
->[!NOTE]
->
->A Adobe recomenda o uso do Editor SPA para projetos que exigem renderização no lado do cliente baseada em estrutura de aplicativo de página única (por exemplo, React). [Saiba mais](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 Os aplicativos móveis devem poder usar todo o conteúdo no AEM conforme necessário para fornecer a experiência do aplicativo direcionado.
 
@@ -95,7 +93,7 @@ Vamos deixar de lado as etapas de como a página é disponibilizada por meio da 
 
 #### Obter uma lista de entidades de ativos disponíveis {#getting-a-list-of-available-asset-entities}
 
-Um desenvolvedor de aplicativos pode obter uma lista de quais ativos estão disponíveis, recuperando as entidades do ativo. O endpoint de espaço do Content Services pode fornecer essas informações por meio do SDK da API do serviço da Web.
+Um desenvolvedor de aplicativos pode obter uma lista de quais ativos estão disponíveis, recuperando as entidades do ativo. O endpoint de espaço do Content Services pode fornecer essas informações por meio da API SDK do serviço da Web.
 
 O resultado seria um objeto em formato JSON que forneceria uma lista dos ativos na pasta &quot;ícones&quot;.
 

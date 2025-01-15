@@ -9,18 +9,16 @@ exl-id: 8bcf70ef-94d2-4958-90b5-bc375b360916
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '1218'
+source-wordcount: '1197'
 ht-degree: 1%
 
 ---
 
 # Gerenciar mosaico do aplicativo{#manage-app-tile}
 
->[!NOTE]
->
->A Adobe recomenda o uso do Editor SPA para projetos que exigem renderização no lado do cliente baseada em estrutura de aplicativo de página única (por exemplo, React). [Saiba mais](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 O bloco **`Manage App`** no Painel de Aplicativos permite editar detalhes sobre o Aplicativo. Para abrir a página Detalhes, clique no link de detalhes do bloco **`Manage App`**. Na página **`Manage App`**, você pode editar as configurações do Aplicativo PhoneGap (config.xml) e preparar seu aplicativo para envio a várias lojas de aplicativos.
 

@@ -10,18 +10,16 @@ exl-id: 4625890c-2b76-4c78-88e8-23741bc09f5b
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '718'
+source-wordcount: '697'
 ht-degree: 0%
 
 ---
 
 # Seu aplicativo híbrido está pronto para o Adobe Experience Manager Mobile?{#is-your-hybrid-app-ready-for-aem-mobile}
 
->[!NOTE]
->
->A Adobe recomenda o uso do Editor SPA para projetos que exigem renderização no lado do cliente baseada em estrutura de aplicativo de página única (por exemplo, React). [Saiba mais](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 Então você importou seu aplicativo híbrido PhoneGap ou Cordova para AEM, agora o que? Provavelmente você deseja adicionar conteúdo autorável ao seu aplicativo. Para realizar essa tarefa, você precisa de uma compreensão geral da estrutura de um aplicativo AEM. Um aplicativo no AEM geralmente é dividido em duas partes. O &quot;shell&quot; e o &quot;conteúdo&quot;. A &quot;shell&quot; compreende as partes estáticas do aplicativo; como os arquivos de configuração do PhoneGap, a estrutura do aplicativo e os controles de navegação. O conteúdo do arquivo que você importou é armazenado como parte do shell. No contexto deste documento, o shell é todo o conteúdo não-AEM criado do seu aplicativo híbrido PhoneGap criado pelo desenvolvedor do aplicativo.
 

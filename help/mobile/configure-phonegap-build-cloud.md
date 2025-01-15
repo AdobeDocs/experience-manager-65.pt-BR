@@ -9,18 +9,16 @@ exl-id: d91a00d1-12fa-4c84-a426-49413f61c126
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '647'
+source-wordcount: '626'
 ht-degree: 0%
 
 ---
 
 # Configurar o Cloud Service Adobe PhoneGap Build {#configure-your-adobe-phonegap-build-cloud-service}
 
->[!NOTE]
->
->A Adobe recomenda o uso do Editor SPA para projetos que exigem renderização no lado do cliente baseada em estrutura de aplicativo de página única (por exemplo, React). [Saiba mais](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 O **Bloco de PhoneGap Build** no painel do aplicativo permite que você crie e distribua seu aplicativo para dispositivos móveis PhoneGap por meio do Serviço Adobe PhoneGap Build.
 
@@ -82,7 +80,7 @@ Compile o aplicativo PhoneGap em seu computador usando a CLI (Command-Line Inter
 
 Para aproveitar a CLI do PhoneGap, você deve configurar seu ambiente local para incluir:
 
-1. SDK da Platform (iOS, Android™, Windows Phone ...) e
+1. Platform SDK (iOS, Android™, Windows Phone, ...) e
 1. CLI do PhoneGap
 
 Você pode ler mais aqui em `https://docs.phonegap.com/references/phonegap-cli/`.

@@ -9,18 +9,16 @@ exl-id: 9d350935-129a-40d3-89f4-2e6f69676e5e
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '706'
+source-wordcount: '685'
 ht-degree: 0%
 
 ---
 
 # Criação e gerenciamento de conteúdo do aplicativo{#creating-and-managing-app-content}
 
->[!NOTE]
->
->A Adobe recomenda o uso do Editor SPA para projetos que exigem renderização no lado do cliente baseada em estrutura de aplicativo de página única (por exemplo, React). [Saiba mais](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 O gerenciamento de conteúdo do aplicativo requer um esforço coletivo de [desenvolvedores](#developer), [autores](#author) de conteúdo e [administradores](#administrator). Os autores manipulam páginas, que são baseadas em modelos e componentes gerados por desenvolvedores de aplicativos.
 

@@ -9,18 +9,16 @@ exl-id: dbe81ead-dfaa-4af0-9b66-a14917a1bcc7
 solution: Experience Manager
 feature: Mobile
 role: User
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '419'
 ht-degree: 0%
 
 ---
 
 # Ações de Criação e Configuração de Aplicativo{#application-create-and-configuration-actions}
 
->[!NOTE]
->
->A Adobe recomenda o uso do Editor SPA para projetos que exigem renderização no lado do cliente baseada em estrutura de aplicativo de página única (por exemplo, React). [Saiba mais](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 ## Criação de um aplicativo sob demanda {#creating-an-on-demand-application}
 

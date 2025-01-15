@@ -9,18 +9,16 @@ exl-id: 5a98eb3c-5c12-4a6c-8d76-eed44c7c3df5
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '367'
+source-wordcount: '346'
 ht-degree: 0%
 
 ---
 
 # Administração de conteúdo para o Adobe PhoneGap Enterprise com AEM {#administering-content-for-adobe-phonegap-enterprise-with-aem}
 
->[!NOTE]
->
->A Adobe recomenda o uso do Editor SPA para projetos que exigem renderização no lado do cliente baseada em estrutura de aplicativo de página única (por exemplo, React). [Saiba mais](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 Um ***administrador do AEM*** é responsável por adicionar um novo aplicativo ao catálogo do AEM Mobile, criando um aplicativo com o assistente de criação ou importando um aplicativo existente. Os administradores de AEM que criam um aplicativo usando o *assistente de criação* do AEM Mobile geralmente selecionam um dos modelos de aplicativo desejados em amostras de referência prontas para uso do Adobe AEM ou (geralmente) um modelo de aplicativo personalizado criado por *desenvolvedores do.*
 

@@ -9,20 +9,18 @@ exl-id: 8d965e94-c368-481d-b000-6e22456c34db
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '904'
+source-wordcount: '883'
 ht-degree: 0%
 
 ---
 
 # Adicionar o Adobe Analytics ao seu aplicativo para dispositivos móveis{#add-adobe-analytics-to-your-mobile-application}
 
->[!NOTE]
->
->A Adobe recomenda o uso do Editor SPA para projetos que exigem renderização no lado do cliente baseada em estrutura de aplicativo de página única (por exemplo, React). [Saiba mais](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
-Deseja criar experiências envolventes e relevantes para os usuários de aplicativos móveis? Se você não estiver usando o SDK do Adobe Mobile Services para monitorar e medir o ciclo de vida e o uso do aplicativo, em que você está baseando suas decisões? Onde estão seus clientes mais fiéis? Como você pode garantir que continua relevante e otimiza conversões?
+Deseja criar experiências envolventes e relevantes para os usuários de aplicativos móveis? Se você não estiver usando o Adobe Mobile Services SDK para monitorar e medir o ciclo de vida e o uso do aplicativo, em que você baseia suas decisões? Onde estão seus clientes mais fiéis? Como você pode garantir que continua relevante e otimiza conversões?
 
 Seus usuários estão acessando todo o conteúdo? Eles estão abandonando o aplicativo e, em caso afirmativo, onde? Com que frequência eles ficam no aplicativo e com que frequência voltam para usar o aplicativo? Que alterações você pode introduzir e, então, medir que aumentam a retenção? E as taxas de falha? Seu aplicativo está falhando para seus usuários?
 
@@ -50,7 +48,7 @@ Depois que a conta do Analytics for configurada, crie uma configuração de Sinc
 
 Para obter detalhes adicionais, consulte Configuração do conteúdo da sincronização de conteúdo. A configuração deve instruir a Sincronização de conteúdo a colocar o ADBMobileConfig no diretório /www. Por exemplo, no aplicativo Geometrixx Outdoors, a configuração de sincronização de conteúdo está em: */content/phonegap/geometrixx-outdoors/shell/jcr:content/page-app/app-config/ams-ADBMobileConfig*. Também há uma configuração para desenvolvimento. No entanto, é idêntica à configuração que não é de desenvolvimento, se houver Geometrixx Outdoors.
 
-Para obter mais detalhes sobre como baixar o ADBMobileConfig no painel de aplicativos do AEM para aplicativos móveis, consulte Analytics - Mobile Services - Adobe Mobile Services SDK Config File.
+Para obter mais detalhes sobre como baixar o ADBMobileConfig no painel de aplicativos do AEM para aplicativos móveis, consulte Analytics - Mobile Services - Adobe Mobile Services Arquivo de configuração do SDK.
 
 ```xml
 <jcr:root xmlns:jcr="https://www.jcp.org/jcr/1.0" xmlns:nt="https://www.jcp.org/jcr/nt/1.0"

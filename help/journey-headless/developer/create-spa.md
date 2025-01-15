@@ -1,20 +1,20 @@
 ---
 title: Opcional - Como criar aplicativos de página única (SPA) com o Adobe Experience Manager
-description: Nesta continuação opcional da Jornada de desenvolvedores headless do Adobe Experience Manager (AEM), você aprende como o AEM SPA AEM SPA pode combinar a entrega headless com recursos tradicionais de CMS de pilha completa e como criar editável usando a estrutura do editor da.
+description: Nesta continuação opcional da Jornada de desenvolvedores headless Adobe Experience Manager (AEM), você aprende como o AEM pode combinar a entrega headless com os recursos tradicionais de pilha completa do CMS SPA AEM SPA e como você pode criar editáveis usando a estrutura do editor do.
 exl-id: 91eadda2-b881-4e4a-867f-8c5c54e8f8b4
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
 role: Admin, Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: 984c0a25ea84588b430b3d82ef26d747d4ae5a14
 workflow-type: tm+mt
-source-wordcount: '1257'
+source-wordcount: '1248'
 ht-degree: 76%
 
 ---
 
 # Como criar aplicativos de página única (SPAs) com o AEM {#create-spa}
 
-Nesta continuação opcional da [Jornada para desenvolvedores sem periféricos do AEM](overview.md), você aprenderá como o Adobe Experience Manager AEM SPA AEM SPA SPA () pode combinar a entrega sem periféricos com os recursos tradicionais de CMS de pilha completa e como você pode criar editáveis usando a estrutura Editor da e integrar o externo, habilitando recursos de edição conforme necessário.
+Nesta Jornada opcional do desenvolvedor sem periféricos do [AEM](overview.md) você aprende como o Adobe Experience Manager AEM () pode combinar a entrega sem periféricos com os recursos tradicionais de pilha completa do CMS SPA AEM SPA SPA e como você pode criar editáveis usando a estrutura do editor do e integrar a continuação externa, habilitando recursos de edição conforme necessário.
 
 ## A história até agora {#story-so-far}
 
@@ -127,7 +127,6 @@ Veja a seguir alguns recursos adicionais que explicam melhor alguns conceitos me
 * [Introdução e passo a passo do SPA.](/help/sites-developing/spa-walkthrough.md): uma boa introdução a SPAs no AEM
 * [Desenvolvimento de SPAs para o AEM](/help/sites-developing/spa-architecture.md): diretrizes sobre como desenvolver SPAs para o AEM
 * [Visão geral do editor de SPA](/help/sites-developing/spa-overview.md): detalhes de como o editor de SPA funciona
-* [Renderização do lado do servidor](/help/sites-developing/spa-ssr.md) - como configurar o SSR para SPAs do AEM
 * [Documentos de referência de SPA](/help/sites-developing/spa-reference-materials.md): referências da API JavaScript e links para projetos de código aberto do GitHub para SPAs do AEM
 * [Fragmentos de conteúdo](/help/assets/content-fragments/content-fragments.md): como criar fragmentos de conteúdo
 * [Arquétipo de projeto do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR): modelo do Maven que cria um projeto simples do Adobe Experience Manager (AEM) com base em práticas recomendadas para ser usado como o ponto de partida do seu site

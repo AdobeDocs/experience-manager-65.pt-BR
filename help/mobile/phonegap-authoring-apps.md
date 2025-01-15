@@ -9,18 +9,16 @@ exl-id: 073daff7-0c1d-4715-bfd4-3e2336e4cb88
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '1003'
+source-wordcount: '982'
 ht-degree: 0%
 
 ---
 
 # Criação de aplicativos móveis{#authoring-mobile-applications}
 
->[!NOTE]
->
->A Adobe recomenda o uso do Editor SPA para projetos que exigem renderização no lado do cliente baseada em estrutura de aplicativo de página única (por exemplo, React). [Saiba mais](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 O Painel do AEM Mobile permite criar, construir e implantar o aplicativo móvel e criar, excluir e editar os metadados do aplicativo. Assim que o aplicativo estiver ativo, você poderá analisar as análises do aplicativo, incluindo as métricas de ciclo de vida e uso, para melhorar a conversão do cliente e a fidelidade à marca.
 
@@ -106,7 +104,7 @@ Como alternativa, baixe a origem do dispositivo para criar localmente por meio d
 >
 >Consulte [Configurar o Cloud Service do Adobe Mobile Services](/help/mobile/configure-adobe-mobile-cloud-service.md) para obter detalhes.
 
-O AEM Mobile integra-se ao Adobe Analytics por meio do [Adobe Mobile Services SDK](https://experienceleague.adobe.com/docs/mobile.html) (AMS).
+A AEM Mobile integra-se ao Adobe Analytics por meio do [Adobe Mobile Services SDK](https://experienceleague.adobe.com/docs/mobile.html) (AMS).
 
 O **Bloco de métricas** do Centro de controle exibe análises de resumo extraídas do AMS para o seu aplicativo. Você pode detalhar o painel do Analytics clicando em &quot;...&quot; na parte inferior direita.
 

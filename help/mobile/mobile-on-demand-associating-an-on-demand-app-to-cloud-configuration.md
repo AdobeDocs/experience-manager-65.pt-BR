@@ -9,18 +9,16 @@ exl-id: 37428543-c310-4712-a4ec-1f482579fb4b
 solution: Experience Manager
 feature: Mobile
 role: User
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '412'
+source-wordcount: '391'
 ht-degree: 2%
 
 ---
 
 # Configuração de nuvem{#cloud-configuration}
 
->[!NOTE]
->
->A Adobe recomenda o uso do Editor SPA para projetos que exigem renderização no lado do cliente baseada em estrutura de aplicativo de página única (por exemplo, React). [Saiba mais](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 Associar um aplicativo sob demanda a uma configuração na nuvem permite que o Adobe Experience Manager (AEM) se comunique diretamente com um projeto hospedado no Mobile On-Demand estabelecendo um link bidirecional. Ao vincular seu aplicativo a um projeto do Mobile On-Demand, você poderá criar conteúdo, como artigos, banners e coleções no AEM, mas também fornecerá esse conteúdo ao Mobile On-Demand.
 

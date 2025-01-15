@@ -5,9 +5,9 @@ exl-id: 25236af4-405a-4152-8308-34d983977e9a
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
+source-git-commit: 984c0a25ea84588b430b3d82ef26d747d4ae5a14
 workflow-type: tm+mt
-source-wordcount: '2391'
+source-wordcount: '2387'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Primeiro, você precisa carregar o SPA externo para seu projeto AEM.
 
 1. Substitua `src` na pasta do projeto `/ui.frontend` pela pasta `src` do aplicativo React.
 1. Inclua qualquer dependência adicional no `package.json` do aplicativo no arquivo `/ui.frontend/package.json`.
-   * Verifique se as dependências do SDK do SPA são de [versões recomendadas](spa-getting-started-react.md#dependencies).
+   * Verifique se as dependências do SPA SDK são de [versões recomendadas](spa-getting-started-react.md#dependencies).
 1. Incluir qualquer personalização na pasta `/public`.
 1. Inclua qualquer script ou estilo incorporado adicionado ao arquivo `/public/index.html`.
 
@@ -44,7 +44,7 @@ Primeiro, você precisa carregar o SPA externo para seu projeto AEM.
 
 Agora que o SPA externo é parte do projeto AEM, ele deve ser configurado dentro do AEM.
 
-### Incluir pacotes SDK do Adobe SPA {#include-spa-sdk-packages}
+### Incluir pacotes de SDK do Adobe SPA {#include-spa-sdk-packages}
 
 AEM Para aproveitar os recursos do SPA, há dependências nos três pacotes a seguir.
 
@@ -80,7 +80,7 @@ O `initializationAsync` pode, opcionalmente, aceitar um objeto `options` como pa
 
 * `path` - Na inicialização, o modelo no caminho definido é buscado e armazenado em `ModelStore`. Isso pode ser usado para buscar o `rootModel` na inicialização, se necessário.
 * `modelClient` - Permite fornecer um cliente personalizado responsável por buscar o modelo.
-* `model` - Um objeto `model` passado como parâmetro normalmente preenchido quando [usando SSR.](spa-ssr.md)
+* `model` - Um objeto `model` passado como parâmetro normalmente preenchido ao usar SSR.
 
 ### Componentes de folha autoráveis do AEM {#authorable-leaf-components}
 
@@ -375,4 +375,3 @@ O material de referência a seguir pode ser útil para entender o SPA no context
 * [Materiais de referência de SPA (referências de API)](spa-reference-materials.md)
 * [Blueprint SPA e PageModelManager](spa-blueprint.md#pagemodelmanager)
 * [Roteamento de modelo SPA](spa-routing.md)
-* [Renderização do SPA e do servidor](spa-ssr.md)

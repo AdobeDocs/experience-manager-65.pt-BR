@@ -9,9 +9,9 @@ exl-id: 5d2b9743-9601-46e6-9d73-3bf734e04a30
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '268'
+source-wordcount: '247'
 ht-degree: 0%
 
 ---
@@ -20,9 +20,7 @@ ht-degree: 0%
 
 Esta página explica a visualização com o aplicativo Comprovação.
 
->[!NOTE]
->
->A Adobe recomenda o uso do Editor SPA para projetos que exigem renderização no lado do cliente baseada em estrutura de aplicativo de página única (por exemplo, React). [Saiba mais](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 As ações a seguir são executadas no aplicativo como um todo.
 

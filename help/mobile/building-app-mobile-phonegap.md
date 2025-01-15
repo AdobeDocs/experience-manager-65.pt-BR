@@ -9,18 +9,16 @@ exl-id: 7c2e5ed8-9f8e-4a81-b736-589ef4089f29
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '1028'
+source-wordcount: '1007'
 ht-degree: 0%
 
 ---
 
 # Desenvolvimento de aplicativos móveis{#building-mobile-applications}
 
->[!NOTE]
->
->A Adobe recomenda o uso do Editor SPA para projetos que exigem renderização no lado do cliente baseada em estrutura de aplicativo de página única (por exemplo, React). [Saiba mais](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 Crie seu aplicativo para instalação em um dispositivo ou simulador para teste ou publicação em app stores. Você pode criar aplicativos localmente usando a interface de linha de comando do PhoneGap ou na nuvem usando o PhoneGap Build.
 
@@ -84,7 +82,7 @@ Para criar usando a CLI do PhoneGap, você precisa instalar o Node.js e o utilit
    └── cordova@3.3.0-0.1.1 (...)
    ```
 
-1. (Opcional) Obtenha o SDK para a plataforma móvel para a qual você está direcionando:
+1. (Opcional) Obtenha o SDK para a plataforma móvel que você está direcionando:
 
    * Para criar aplicativos para a plataforma iOS, instale a versão mais recente do [Xcode](https://developer.apple.com/xcode/).
    * Para criar aplicativos Android™, instale o [Android™ SDK](https://developer.android.com/).

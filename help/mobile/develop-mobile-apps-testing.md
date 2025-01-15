@@ -9,18 +9,16 @@ exl-id: e10e1904-7016-4eb0-9408-36297285f378
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '975'
+source-wordcount: '954'
 ht-degree: 0%
 
 ---
 
 # Teste de aplicativos móveis{#testing-mobile-apps}
 
->[!NOTE]
->
->A Adobe recomenda o uso do Editor SPA para projetos que exigem renderização no lado do cliente baseada em estrutura de aplicativo de página única (por exemplo, React). [Saiba mais](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 Dada a ampla variedade de dispositivos no mercado e os dispositivos que estão sendo lançados, testar seus aplicativos se tornou imperativo. Essa é uma área em que a funcionalidade e a usabilidade podem receber avaliações baixas em uma loja de aplicativos, mas um único defeito pode resultar na desinstalação do aplicativo. Deve-se prestar muita atenção em seus planos de teste e na garantia de qualidade. O link a seguir aborda muitos dos tópicos que devem ser abordados em geral, como a identificação do ambiente, a definição de casos de teste, os tipos de testes, as suposições e o envolvimento do cliente. Também são discutidas ferramentas para ajudar no esforço de teste. Ferramentas internas, como [Hobbes](/help/sites-developing/hobbes.md), podem ajudar em testes de interface do usuário baseados na Web. [Dia Difícil](/help/sites-developing/tough-day.md) pode sobrecarregar suas instâncias com uma carga simulada. Se o ambiente de testes já tiver experiência com ferramentas de terceiros, como o Selenium, elas também poderão ser usadas.
 

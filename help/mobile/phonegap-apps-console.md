@@ -9,18 +9,16 @@ exl-id: 49e0b3f6-7ac7-4417-9c31-cc3d3c2305f3
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '2675'
+source-wordcount: '2654'
 ht-degree: 0%
 
 ---
 
 # Criação e edição de aplicativos usando o console Aplicativos{#creating-and-editing-apps-using-the-apps-console}
 
->[!NOTE]
->
->A Adobe recomenda o uso do Editor SPA para projetos que exigem renderização no lado do cliente baseada em estrutura de aplicativo de página única (por exemplo, React). [Saiba mais](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 O processo de desenvolvimento de aplicativos móveis para AEM reconhece que usuários de diferentes especialidades contribuem para o desenvolvimento de aplicativos móveis. O mapa de processos a seguir ilustra a ordem geral na qual os autores de conteúdo e desenvolvedores de aplicativos executam tarefas.
 
@@ -76,10 +74,10 @@ Os aplicativos móveis são baseados em um blueprint que define a estrutura e as
 
 Você também pode fornecer um arquivo de imagem para usar como miniatura do aplicativo, selecionar a configuração de PhoneGap Build a ser usada e selecionar a configuração de análise do aplicativo móvel a ser usada. Essa imagem só é usada como uma miniatura para representar seu aplicativo móvel no console de aplicativos móveis no Experience Manager.
 
-Existem guias adicionais (e opcionais) para o serviço de nuvem de build e para integrar o plug-in SDK do Adobe Mobile Services ao seu aplicativo.
+Existem guias adicionais (e opcionais) para o serviço de nuvem de build e para integrar o plug-in Adobe Mobile Services SDK ao seu aplicativo.
 
 * Build: clique em gerenciar configurações e configure o serviço de build build.phonegap.com aqui. Em seguida, no menu suspenso, é possível selecionar o serviço de nuvem do PhoneGap Build recém-criado.
-* Analytics: clique em gerenciar configurações e configure o serviço de nuvem [SDK do Adobe Mobile Services](https://experienceleague.adobe.com/docs/mobile-services/using/home.html). Em seguida, no menu suspenso, é possível selecionar o Mobile Service recém-criado para integrar ao aplicativo móvel.
+* Analytics: clique em gerenciar configurações e configure o serviço de nuvem [Adobe Mobile Services SDK](https://experienceleague.adobe.com/docs/mobile-services/using/home.html). Em seguida, no menu suspenso, é possível selecionar o Mobile Service recém-criado para integrar ao aplicativo móvel.
 
 >[!NOTE]
 >

@@ -10,24 +10,22 @@ exl-id: 209c36f9-1a4b-4eea-8dde-22e0fc9718c1
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '428'
 ht-degree: 0%
 
 ---
 
 # Configurar o Cloud Service do Adobe Mobile Services {#configure-your-adobe-mobile-services-cloud-service}
 
->[!NOTE]
->
->A Adobe recomenda o uso do Editor SPA para projetos que exigem renderização no lado do cliente baseada em estrutura de aplicativo de página única (por exemplo, React). [Saiba mais](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 O **Bloco de Métricas do Mobile** no centro de comando fornece análises em tempo real para o seu aplicativo móvel.
 
 O SDK do [Adobe Mobile Analytics](https://www.adobe.com/ca/solutions/digital-analytics/mobile-web-apps-analytics.html) é disponibilizado por meio de um plug-in PhoneGap. As métricas são coletadas e armazenadas em cache no dispositivo até que o dispositivo seja conectado, momento em que os dados são enviados para a nuvem do Adobe Mobile Services para relatórios e análise.
 
-O SDK do Adobe Mobile Analytics fornece o seguinte:
+O Adobe Mobile Analytics SDK oferece o seguinte:
 
 1. **Coleta de dados para canais móveis** - Colete dados abrangentes para seus sites e aplicativos móveis em todos os principais sistemas operacionais.
 1. **Análise de engajamento móvel** - Entenda o engajamento do usuário no aplicativo móvel, site ou vídeo, incluindo a frequência com que os consumidores iniciam o canal, se fazem compras dele e muito mais.

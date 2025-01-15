@@ -9,18 +9,16 @@ exl-id: daf7bf39-a105-46eb-ab7b-1c59484949e2
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '951'
+source-wordcount: '930'
 ht-degree: 0%
 
 ---
 
 # Aplicativos de página única{#single-page-applications}
 
->[!NOTE]
->
->A Adobe recomenda o uso do Editor SPA para projetos que exigem renderização no lado do cliente baseada em estrutura de aplicativo de página única (por exemplo, React). [Saiba mais](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 [Aplicativos de Página Única](https://en.wikipedia.org/wiki/Single-page_application) (SPA) atingiram massa crítica, amplamente considerada como o padrão mais eficaz para a criação de experiências perfeitas com a tecnologia da Web. Seguindo um padrão SPA, você pode criar um aplicativo que tenha o mesmo desempenho de um aplicativo móvel ou desktop, mas que alcance uma variedade de plataformas de dispositivos e fatores de forma devido à sua base em padrões abertos da Web.
 

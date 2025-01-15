@@ -9,18 +9,16 @@ exl-id: d370d772-ef4d-4f38-826c-e90d07735822
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '1254'
+source-wordcount: '1233'
 ht-degree: 0%
 
 ---
 
 # Configuração do Cloud Service Adobe Target {#configuring-adobe-target-cloud-service}
 
->[!NOTE]
->
->A Adobe recomenda o uso do Editor SPA para projetos que exigem renderização no lado do cliente baseada em estrutura de aplicativo de página única (por exemplo, React). [Saiba mais](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 >[!NOTE]
 >
@@ -64,7 +62,7 @@ Após a conclusão do assistente, o bloco Gerenciar Cloud Service contém o serv
 
 ### Código do cliente {#client-code}
 
-Para fazer logon nos serviços AMS, visite [https://mobilemarketing.adobe.com](https://mobilemarketing.adobe.com/), selecione o aplicativo para dispositivos móveis e clique nas configurações. Localize o campo Opções de destino do SDK, coloque o código de cliente no campo e clique em Salvar.
+Para fazer logon nos serviços AMS, visite [https://mobilemarketing.adobe.com](https://mobilemarketing.adobe.com/), selecione o aplicativo para dispositivos móveis e clique nas configurações. Localize o campo Opções do SDK Target, coloque o código de cliente no campo e clique em Salvar.
 
 ![chlimage_1-11](assets/chlimage_1-11.png)
 

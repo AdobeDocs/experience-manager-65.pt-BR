@@ -9,18 +9,16 @@ exl-id: ea6c8aa3-f86e-4878-8550-fe1662f10696
 solution: Experience Manager
 feature: Mobile
 role: User
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '674'
+source-wordcount: '653'
 ht-degree: 0%
 
 ---
 
 # Gerenciamento de artigos{#managing-articles}
 
->[!NOTE]
->
->A Adobe recomenda o uso do Editor SPA para projetos que exigem renderização no lado do cliente baseada em estrutura de aplicativo de página única (por exemplo, React). [Saiba mais](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 As ações de Gestão de conteúdo são os blocos fundamentais que ajudam a criar e gerenciar artigos em um aplicativo. As ações a seguir são executadas em artigos do aplicativo.
 

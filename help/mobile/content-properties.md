@@ -9,18 +9,16 @@ exl-id: 05c8c846-69cc-4075-9149-33890b3d1e08
 solution: Experience Manager
 feature: Mobile
 role: User
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '354'
-ht-degree: 20%
+source-wordcount: '333'
+ht-degree: 21%
 
 ---
 
 # Nós e propriedades de conteúdo {#content-properties-and-nodes}
 
->[!NOTE]
->
->A Adobe recomenda o uso do Editor SPA para projetos que exigem renderização no lado do cliente baseada em estrutura de aplicativo de página única (por exemplo, React). [Saiba mais](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 Artigos, Banners e Coleções são representados como cq:Pages no AEM.
 

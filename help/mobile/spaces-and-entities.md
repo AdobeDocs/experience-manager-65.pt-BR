@@ -8,18 +8,16 @@ exl-id: 44591900-b01b-4a33-9910-839564477e7d
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '1206'
+source-wordcount: '1185'
 ht-degree: 0%
 
 ---
 
 # Espaços e entidades{#spaces-and-entities}
 
->[!NOTE]
->
->A Adobe recomenda o uso do Editor SPA para projetos que exigem renderização no lado do cliente baseada em estrutura de aplicativo de página única (por exemplo, React). [Saiba mais](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 Um espaço é um local conveniente para armazenar entidades que são expostas por meio da API REST do Content Services. Isso é especialmente útil porque um aplicativo (ou qualquer canal) pode ser associado a muitas entidades. Forçar entidades a estarem em um espaço força a prática recomendada de agrupar os requisitos de um aplicativo. Como opção, você pode associar um aplicativo no AEM a um pequeno número de Spaces.
 

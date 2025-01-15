@@ -9,18 +9,16 @@ exl-id: 897a04b9-e357-4f1c-8aa0-2c2528f8556d
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '377'
+source-wordcount: '356'
 ht-degree: 1%
 
 ---
 
 # Edição de metadados do aplicativo {#editing-app-metadata}
 
->[!NOTE]
->
->A Adobe recomenda o uso do Editor SPA para projetos que exigem renderização no lado do cliente baseada em estrutura de aplicativo de página única (por exemplo, React). [Saiba mais](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 O bloco **Gerenciar Aplicativo** e a página &quot;Gerenciar Aplicativo&quot; fornecem um meio de exibir e editar metadados do aplicativo. Os metadados do aplicativo são detalhes necessários para lançar um aplicativo na loja de um fornecedor. Isso pode incluir metadados comuns, metadados do iOS e capturas de tela. Consulte o [Gerenciar bloco do aplicativo](/help/mobile/phonegap-app-details-tile.md) para obter mais detalhes sobre metadados comuns e do iOS.
 

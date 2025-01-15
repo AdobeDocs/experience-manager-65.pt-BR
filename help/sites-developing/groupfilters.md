@@ -11,18 +11,16 @@ exl-id: 419d2e19-1198-4ab5-9aa0-02ad18fe171d
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '756'
+source-wordcount: '735'
 ht-degree: 0%
 
 ---
 
 # Criando filtros do grupo de dispositivos{#creating-device-group-filters}
 
->[!NOTE]
->
->A Adobe recomenda o uso do Editor SPA para projetos que exigem renderização no lado do cliente baseada em estrutura de aplicativo de página única (por exemplo, React). [Saiba mais](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 Crie um filtro de grupo de dispositivos para definir um conjunto de requisitos de recursos do dispositivo. Crie quantos filtros forem necessários para direcionar os grupos necessários de recursos do dispositivo.
 

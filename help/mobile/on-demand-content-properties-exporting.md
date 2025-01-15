@@ -9,18 +9,16 @@ exl-id: db1c33c9-8539-436d-b4d0-3d5e6fd688ed
 solution: Experience Manager
 feature: Mobile
 role: Developer
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '332'
+source-wordcount: '311'
 ht-degree: 3%
 
 ---
 
 # Uso das propriedades de conteúdo para exportar conteúdo{#using-content-properties-to-export-content}
 
->[!NOTE]
->
->A Adobe recomenda o uso do Editor SPA para projetos que exigem renderização no lado do cliente baseada em estrutura de aplicativo de página única (por exemplo, React). [Saiba mais](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 Os aplicativos são representados como *cq:Pages* no AEM.
 

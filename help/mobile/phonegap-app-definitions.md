@@ -9,18 +9,16 @@ exl-id: 4c1c44fd-e685-462c-83a0-3cd2f74ab5c7
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '230'
+source-wordcount: '209'
 ht-degree: 3%
 
 ---
 
 # Definições do aplicativo{#app-definitions}
 
->[!NOTE]
->
->A Adobe recomenda o uso do Editor SPA para projetos que exigem renderização no lado do cliente baseada em estrutura de aplicativo de página única (por exemplo, React). [Saiba mais](/help/sites-developing/spa-overview.md).
+{{ue-over-mobile}}
 
 As definições de aplicativo são uma maneira de identificar quais espaços e outras configurações são apropriados para o aplicativo. As definições do aplicativo permitem que o usuário adicione espaço, sem ter que recompilar o aplicativo. A definição do aplicativo é atualizada e incluirá as informações de todos os novos espaços.
 
