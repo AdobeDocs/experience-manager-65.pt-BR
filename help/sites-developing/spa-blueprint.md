@@ -9,20 +9,19 @@ exl-id: 383f84fd-455c-49a4-9e2b-1c4757cc188b
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: 6d961456e0e1f7a26121da9be493308a62c53e04
 workflow-type: tm+mt
-source-wordcount: '2043'
+source-wordcount: '2023'
 ht-degree: 0%
 
 ---
+
 
 # Blueprint do SPA{#spa-blueprint}
 
 Para permitir que o autor use o Editor de SPA AEM para editar o conteúdo de um SPA, há requisitos que o SPA deve atender, que são descritos neste documento.
 
->[!NOTE]
->
->O Editor de SPA é a solução recomendada para projetos que exigem renderização no lado do cliente baseada na estrutura SPA (por exemplo, React ou Angular).
+{{ue-over-spa}}
 
 ## Introdução {#introduction}
 
@@ -60,7 +59,7 @@ Cada item presente no modelo contém um campo `:type` que expõe um tipo de recu
 
 #### Modelo dinâmico para mapeamento de componentes {#dynamic-model-to-component-mapping}
 
-Para obter detalhes sobre como o modelo dinâmico para o mapeamento de componentes ocorre no SDK do JavaScript SPA para AEM, consulte o artigo [Modelo dinâmico para mapeamento de componentes para SPA](/help/sites-developing/spa-dynamic-model-to-component-mapping.md).
+Para obter detalhes sobre como o modelo dinâmico para o mapeamento de componentes ocorre no JavaScript SPA SDK para AEM SPA, consulte o artigo [Modelo dinâmico para mapeamento de componentes para](/help/sites-developing/spa-dynamic-model-to-component-mapping.md).
 
 ### Camada específica da estrutura {#framework-specific-layer}
 

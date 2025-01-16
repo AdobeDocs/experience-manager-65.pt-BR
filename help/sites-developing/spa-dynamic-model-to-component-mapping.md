@@ -1,6 +1,6 @@
 ---
 title: Modelo dinâmico para mapeamento de componentes para SPA
-description: Saiba como o modelo dinâmico para o mapeamento de componentes ocorre no SDK SPA do JavaScript para Adobe Experience Manager.
+description: Saiba como o modelo dinâmico para o mapeamento de componentes ocorre no JavaScript SPA SDK para Adobe Experience Manager.
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
@@ -9,20 +9,19 @@ exl-id: 5b2ccac0-bf1d-4f06-8743-7fce6fb68378
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: 6d961456e0e1f7a26121da9be493308a62c53e04
 workflow-type: tm+mt
-source-wordcount: '333'
+source-wordcount: '313'
 ht-degree: 0%
 
 ---
 
+
 # Modelo dinâmico para mapeamento de componentes para SPA{#dynamic-model-to-component-mapping-for-spas}
 
-Este documento descreve como ocorre o modelo dinâmico para o mapeamento de componentes no SDK do JavaScript SPA para Adobe Experience Manager (AEM).
+Este documento descreve como ocorre o modelo dinâmico de mapeamento de componentes no SDK SPA para Adobe Experience Manager AEM () do JavaScript.
 
->[!NOTE]
->
->O Editor de SPA é a solução recomendada para projetos que exigem renderização no lado do cliente baseada na estrutura SPA (por exemplo, React ou Angular).
+{{ue-over-spa}}
 
 ## Módulo ComponentMapping {#componentmapping-module}
 
@@ -36,7 +35,7 @@ Consulte também o pacote npm: [https://www.npmjs.com/package/@adobe/aem-spa-com
 
 ## Aplicativo de página única orientado por modelo {#model-driven-single-page-application}
 
-Aplicativos de página única que usam o SDK do JavaScript SPA para AEM são orientados por modelo:
+Os aplicativos de página única que usam o JavaScript SPA SDK para AEM são orientados por modelo:
 
 1. Os componentes front-end se registram no [Repositório de Mapeamentos de Componentes](/help/sites-developing/spa-dynamic-model-to-component-mapping.md#componentmapping-module).
 1. Em seguida, o [Contêiner](/help/sites-developing/spa-blueprint.md#container), uma vez fornecido com um modelo pelo [Provedor de Modelos](/help/sites-developing/spa-blueprint.md#the-model-provider), itera sobre seu conteúdo de modelo ( `:items`).

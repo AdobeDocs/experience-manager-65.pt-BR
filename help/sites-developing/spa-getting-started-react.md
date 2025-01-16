@@ -10,12 +10,13 @@ exl-id: 552649e7-6054-4ae8-b570-5ba7230e6f19
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
+source-git-commit: 6d961456e0e1f7a26121da9be493308a62c53e04
 workflow-type: tm+mt
-source-wordcount: '1147'
+source-wordcount: '1127'
 ht-degree: 4%
 
 ---
+
 
 # SPA Introdução ao AEM - React{#getting-started-with-spas-in-aem-react}
 
@@ -27,9 +28,7 @@ O recurso de criação do SPA oferece uma solução abrangente para oferecer sup
 >
 >Este artigo baseia-se no quadro do React. Para o documento correspondente para a estrutura do Angular, consulte [Introdução ao SPA no AEM - Angular](/help/sites-developing/spa-getting-started-angular.md).
 
->[!NOTE]
->
->O Editor de SPA é a solução recomendada para projetos que exigem renderização no lado do cliente baseada na estrutura SPA (por exemplo, React ou Angular).
+{{ue-over-spa}}
 
 ## Introdução {#introduction}
 
@@ -284,4 +283,4 @@ Para obter mais informações sobre como se organizar para desenvolver AEM para 
 
 SPA Para obter mais detalhes sobre o modelo dinâmico para o mapeamento de componentes e como ele funciona no AEM, consulte o artigo [Modelo dinâmico para mapeamento de componentes para SPA](/help/sites-developing/spa-dynamic-model-to-component-mapping.md).
 
-Se você quiser implementar o SPA no AEM para uma estrutura diferente do React ou do Angular SPA AEM SPA ou simplesmente quiser se aprofundar em como funciona o SDK do para o, consulte o artigo [Blueprint](/help/sites-developing/spa-blueprint.md).
+Se você quiser implementar o AEM no SPA para uma estrutura diferente do React ou do Angular SPA ou simplesmente quiser se aprofundar em como funciona o SDK AEM SPA para, consulte o artigo [Blueprint](/help/sites-developing/spa-blueprint.md).

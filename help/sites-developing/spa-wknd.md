@@ -9,16 +9,19 @@ exl-id: 59ada14e-3cb1-4f2c-b866-a2bb130db3fc
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: 6d961456e0e1f7a26121da9be493308a62c53e04
 workflow-type: tm+mt
 source-wordcount: '129'
 ht-degree: 5%
 
 ---
 
+
 # Tutorial WKND do SPA{#spa-wknd-tutorial}
 
 Mergulhe no desenvolvimento do SPA com este tutorial dividido em várias partes. Implemente seu próprio SPA que o orienta por meio da configuração do projeto, do mapeamento de componentes, das ferramentas de desenvolvimento de front-end e do roteamento de aplicativos.
+
+{{ue-over-spa}}
 
 ## Tutoriais {#tutorials}
 
