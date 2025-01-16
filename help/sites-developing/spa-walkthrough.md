@@ -7,7 +7,7 @@ exl-id: 95990112-2afc-420a-a7c7-9613f40d4c4a
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: d28019efcead89cb66edfa672d6b928cbb7bcc25
 workflow-type: tm+mt
 source-wordcount: '1945'
 ht-degree: 64%
@@ -49,7 +49,7 @@ O passo a passo é baseado na funcionalidade padrão do AEM e no aplicativo de e
 >
 >Este documento usa o [aplicativo WKND Spa Project](https://github.com/adobe/aem-guides-wknd-spa) somente para fins de demonstração. Não use para nenhum trabalho de projeto.
 >
->Qualquer projeto do AEM deve usar o [Arquétipo de projeto do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR), que oferece suporte a projetos do SPA usando o React ou o Angular SPA e usa o SDK do.
+>Qualquer projeto do AEM deve usar o [Arquétipo de projeto do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR), que oferece suporte a projetos do SPA usando o React ou o Angular SPA SDK e usa o.
 
 ### O que é um SPA? {#what-is-a-spa}
 
@@ -256,3 +256,4 @@ Agora que você entende a experiência de edição de SPA no AEM e como um SPA s
 * [Introdução ao SPA no AEM](/help/sites-developing/spa-getting-started-react.md) mostra como um SPA básico é criado para funcionar com o editor do SPA no AEM
 * A [Visão geral do editor de SPA](/help/sites-developing/spa-overview.md) aborda em detalhes o modelo de comunicação do AEM e do SPA.
 * [Desenvolvimento de SPAs para o AEM](/help/sites-developing/spa-architecture.md) descreve como engajar desenvolvedores de front-end no desenvolvimento de um SPA para o AEM e como os SPAs interagem com a arquitetura do AEM.
+
