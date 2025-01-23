@@ -7,10 +7,10 @@ feature: Adaptive Forms
 exl-id: 77a05f83-ac9a-4221-85ac-439e82623a28
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: f941782f9a4201e7bff898853d3fc18954418500
 workflow-type: tm+mt
-source-wordcount: '913'
-ht-degree: 6%
+source-wordcount: '908'
+ht-degree: 3%
 
 ---
 
@@ -66,7 +66,7 @@ Metas:
 * Crie uma ação de envio para enviar um email com conteúdo de formulário.
 * Pré-visualize e envie um formulário adaptável.
 
-[![Consulte o guia](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](create-adaptive-form.md)
+[![Consulte o Guia](assets/see-the-guide-sm.png)](create-adaptive-form.md)
 
 ## Etapa 2: Criar modelo de dados do formulário {#step-create-form-data-model}
 
@@ -82,7 +82,7 @@ Metas:
 * Configure os serviços de leitura e gravação para o modelo de dados de formulário.
 * Testar o modelo de dados do formulário e os serviços configurados com dados de teste.
 
-[![Consulte o guia](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](create-form-data-model.md)
+[![Consulte o Guia](assets/see-the-guide-sm.png)](create-form-data-model.md)
 
 ## Etapa 3: Aplicar regras a campos de formulário adaptáveis {#step-apply-rules-to-adaptive-form-fields}
 
@@ -95,7 +95,7 @@ Metas:
 * Crie e aplique regras a campos de formulário adaptáveis.
 * Use regras para acionar serviços de modelo de dados de formulário para atualizar os dados para o banco de dados.
 
-[![Consulte o guia](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](apply-rules-to-adaptive-form-fields.md)
+[![Consulte o Guia](assets/see-the-guide-sm.png)](apply-rules-to-adaptive-form-fields.md)
 
 ## Etapa 4: Crie o estilo do formulário adaptável {#step-style-your-adaptive-form}
 
@@ -109,7 +109,7 @@ Metas:
 * Crie um tema para formulário adaptável usando o editor de temas.
 * Use Web Fonts em um tema personalizado.
 
-[![Consulte o guia](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](style-your-adaptive-form.md)
+[![Consulte o Guia](assets/see-the-guide-sm.png)](style-your-adaptive-form.md)
 
 ## Etapa 5: Publish seu formulário adaptável {#step-publish-your-adaptive-form}
 
@@ -123,4 +123,4 @@ Metas:
 * Incorpore o formulário adaptável em uma página do AEM [!DNL Sites].
 * Incorpore o formulário adaptável em uma página da Web externa (uma página da Web não AEM hospedada fora do AEM).
 
-[![Consulte o guia](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](publish-your-adaptive-form.md)
+[![Consulte o Guia](assets/see-the-guide-sm.png)](publish-your-adaptive-form.md)
