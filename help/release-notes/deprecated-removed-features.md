@@ -5,9 +5,9 @@ exl-id: d9b6140a-c37d-4b90-a60c-01f471d65621
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
+source-git-commit: 191c4b02274ca7e3e9d4622b72cd585870581f47
 workflow-type: tm+mt
-source-wordcount: '1715'
+source-wordcount: '1747'
 ht-degree: 10%
 
 ---
@@ -68,10 +68,11 @@ Esta seção lista os recursos e funcionalidades removidos do AEM 6.5. As versõ
 
 | Área | Destaque | Substituição | Versão (SP) |
 |--- |--- |--- |--- |
+| Commerce | AEM O CIF Classic foi removido. | AEM Você deve migrar para o [CIF](/help/commerce/cif/migration.md). Se você ainda precisar do CIF Classic, um pacote de compatibilidade foi criado, [entre em contato com o Suporte ao Cliente do Adobe](https://experienceleague.adobe.com/pt-br?support-solution=General#support). | 6.5.22.0 |
 | Integração com [!DNL Experience Cloud] | Você pode sincronizar seus ativos com o [!DNL Experience Cloud] usando uma configuração via [!DNL Adobe I/O]. [!DNL Adobe Experience Cloud] era anteriormente chamado [!DNL Adobe Experience Cloud]. | Se tiver alguma dúvida, [contate o Suporte ao Cliente do Adobe](https://experienceleague.adobe.com/pt-br?support-solution=General#support). |  |
 | Activity Map do Analytics | A versão do Activity Map que está incluída no AEM. | Devido a alterações de segurança na API do Adobe Analytics, não é mais possível usar a versão do Activity Map incluída no AEM. Use o [plug-in do ActivityMap fornecido pela Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=pt-BR). |  |
 | Integrações | A integração do ExactTarget foi removida da distribuição padrão (Quickstart) e não está mais disponível. | Sem substituição. |  |
-| Integrações | A integração da API da Força do Salesforce foi removida da distribuição padrão (Quickstart) e agora é um pacote extra a ser instalado de [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/br/aem.html). | O recurso ainda está disponível. |
+| Integrações | A integração da API Salesforce Force foi removida da distribuição padrão (Quickstart) e agora é um pacote extra a ser instalado da [Distribuição de Software](https://experience.adobe.com/#/downloads/content/software-distribution/br/aem.html). | O recurso ainda está disponível. |
 | Forms | O suporte para o serviço Adobe Central Migration Bridge foi removido porque o produto Adobe Central não é mais suportado. | Sem substituição. |  |
 | Forms | `com.adobe.fd.df.fdinternal.model.ConfigurationInstance` | Sem substituição. |  |
 | Forms | `com.adobe.fd.ccm.channels.print.fdinternal.api.service.PrintDataTransformer` | Sem substituição |  |
