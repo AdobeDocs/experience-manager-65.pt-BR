@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Use a documentação do Adobe Experience Manager 6.5 para saber como funciona e o que o software pode fazer por você.
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM 6.5
-source-git-commit: 984c0a25ea84588b430b3d82ef26d747d4ae5a14
+source-git-commit: b5a87404435758d660f136d2e236de699ecad541
 workflow-type: tm+mt
-source-wordcount: '7471'
+source-wordcount: '7475'
 ht-degree: 20%
 
 ---
@@ -1217,6 +1217,8 @@ ht-degree: 20%
       + [Configuração e solução de problemas de um cluster de servidores AEM Forms no JEE](/help/forms/developing/configure-server-cluster.md)
       + [Gerar e trabalhar com hashes em PDF forms dinâmicos](/help/forms/developing/hashing-forms.md)
       + [Transmitindo credenciais usando cabeçalhos de Segurança WS](/help/forms/developing/passing-credentials.md)
+   + Glossário {#aem-forms-glossary}
++[Glossários do AEM Forms](/help/forms/using/aem-forms-glossary.md)
 + Content and Commerce {#commerce}
    + [Introdução e visão geral](/help/commerce/cif/introduction.md)
    + [Alterações importantes no conteúdo do AEM e no Commerce](/help/commerce/cif/changes.md)
