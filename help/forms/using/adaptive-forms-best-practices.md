@@ -7,9 +7,9 @@ feature: Adaptive Forms,Foundation Components,Core Components
 exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: c55c959123f7feaa6571835974f1ce6fe3ead22b
 workflow-type: tm+mt
-source-wordcount: '5538'
+source-wordcount: '5597'
 ht-degree: 0%
 
 ---
@@ -210,6 +210,7 @@ Considere as seguintes práticas recomendadas para superar problemas de desempen
 * Inclua apenas os campos e painéis em formulários adaptáveis que capturem informações do usuário. Considere manter o conteúdo estático mínimo ou use URLs para abri-los em uma janela separada.
 * Embora cada formulário seja projetado para uma finalidade específica, há alguns segmentos comuns na maioria dos formulários. Por exemplo, detalhes pessoais, endereço, detalhes de emprego e assim por diante. Crie [fragmentos de formulário adaptáveis](/help/forms/using/adaptive-form-fragments.md) para elementos de formulário e seções comuns e use-os em formulários. Também é possível salvar um painel em um formulário existente como um fragmento. Qualquer alteração em um fragmento é refletida em todos os formulários adaptáveis associados. Ele promove a criação colaborativa, pois vários autores podem trabalhar simultaneamente em diferentes fragmentos que compõem um formulário.
 
+   * Considere a criação de fragmentos de formulário mesmo para seções não reutilizáveis durante a criação do formulário. À medida que os formulários crescem em tamanho e complexidade, separá-los em fragmentos pode simplificar significativamente o processo de criação e facilitar a manutenção do formulário. Essa abordagem permite que você se concentre em partes menores e mais gerenciáveis do formulário, em vez de lidar com todo o formulário de uma só vez.
    * Semelhante aos formulários adaptáveis, é recomendável que todo o estilo específico do fragmento e os scripts personalizados sejam definidos na biblioteca do cliente usando a caixa de diálogo do contêiner do fragmento. Além disso, tente criar fragmentos autossuficientes que não dependam de objetos fora dele.
    * Evite usar script de fragmentos cruzados. Se houver algum objeto fora do fragmento ao qual você deve se referir, tente tornar esse objeto uma parte do formulário principal. Se o objeto ainda precisar residir em outro fragmento, consulte-o pelo seu nome no script.
 
