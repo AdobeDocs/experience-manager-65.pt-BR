@@ -10,20 +10,27 @@ exl-id: 61152b2d-4c0b-4cfd-9669-cf03d32cb7c7
 solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 17c4084d9ee93e5fe6652d63438eaf34cbc83c12
 workflow-type: tm+mt
-source-wordcount: '1275'
+source-wordcount: '1479'
 ht-degree: 2%
 
 ---
 
+
 # Configurar o contêiner de layout e o modo de layout{#configuring-layout-container-and-layout-mode}
 
-[Layout Responsivo](/help/sites-authoring/responsive-layout.md) é um mecanismo para realizar o [design responsivo da Web](https://en.wikipedia.org/wiki/Responsive_web_design). Isso permite que o usuário crie páginas da Web com um layout e dimensões dependentes dos dispositivos que seus usuários usam.
+Saiba como configurar o Contêiner de layout e o Modo de layout.
 
->[!NOTE]
+>[!TIP]
 >
->Isso pode ser comparado com os mecanismos da [Web móvel](/help/sites-developing/mobile-web.md), que usam web design adaptável (principalmente para a interface clássica).
+>Este documento fornece uma visão geral do design responsivo para administradores e desenvolvedores de site, descrevendo como os recursos são realizados no AEM.
+>
+>Para autores de conteúdo, os detalhes de como usar recursos de design responsivo em uma página de conteúdo estão disponíveis no documento [Layout responsivo para suas páginas de conteúdo.](/help/sites-authoring/responsive-layout.md)
+
+## Visão geral {#overview}
+
+[Layout Responsivo](/help/sites-authoring/responsive-layout.md) é um mecanismo para realizar o [design responsivo da Web](https://en.wikipedia.org/wiki/Responsive_web_design). Isso permite que o usuário crie páginas da Web com um layout e dimensões dependentes dos dispositivos que seus usuários usam.
 
 O AEM permite um layout responsivo para suas páginas usando uma combinação de mecanismos:
 
@@ -33,7 +40,7 @@ O AEM permite um layout responsivo para suas páginas usando uma combinação de
 
    * O componente **Contêiner de layout** padrão é definido em:
 
-     /libs/wcm/foundation/components/responvegrid
+     `/libs/wcm/foundation/components/responsivegrid`
 
    * É possível definir contêineres de layout:
 
@@ -49,10 +56,6 @@ Depois que o contêiner de layout é posicionado na página, você pode usar o m
 * [**Emulador**](/help/sites-authoring/responsive-layout.md#selecting-a-device-to-emulate)
 Isso permite criar e editar sites responsivos que reorganizam o layout de acordo com o tamanho do dispositivo ou da janela, redimensionando componentes interativamente. O usuário pode ver como o conteúdo é renderizado usando o Emulador.
 
->[!CAUTION]
->
->Embora o componente **Contêiner de layout** esteja disponível na interface clássica, sua funcionalidade completa está disponível somente na interface habilitada para toque.
-
 Com esses mecanismos de grade responsivos, você pode:
 
 * Use pontos de interrupção (que indicam o agrupamento de dispositivos) para definir comportamentos de conteúdo diferentes com base no layout do dispositivo.
@@ -60,9 +63,17 @@ Com esses mecanismos de grade responsivos, você pode:
 * Usar o alinhamento com a grade (colocar componentes na grade, redimensionar conforme necessário, definir quando eles devem ser recolhidos/refluir para ficarem lado a lado ou acima/abaixo).
 * Executar o controle da coluna.
 
+>[!TIP]
+>
+>O Adobe fornece a [documentação do GitHub](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) do layout responsivo como uma referência que pode ser fornecida para desenvolvedores front-end permitindo que usem a grade AEM fora do AEM, por exemplo, ao criar modelos de HTML AEM estáticos para um futuro site.
+
 >[!NOTE]
 >
 >Em uma instalação predefinida, o layout responsivo foi configurado para o [site de referência We.Retail](/help/sites-developing/we-retail.md). [Ativar o componente Contêiner de Layout](#enable-the-layout-container-component-for-page) para outras páginas.
+
+>[!CAUTION]
+>
+>Embora o componente **Contêiner de layout** esteja disponível na interface clássica, sua funcionalidade completa está disponível somente na interface habilitada para toque.
 
 ## Configurar o emulador responsivo {#configuring-the-responsive-emulator}
 
@@ -148,7 +159,7 @@ Os pontos de interrupção estão localizados dentro da seção `<jcr:content>` 
 
 Um exemplo de definição:
 
-```xml
+```html
 <cq:responsive jcr:primaryType="nt:unstructured">
   <breakpoints jcr:primaryType="nt:unstructured">
     <phone jcr:primaryType="nt:unstructured" title="{String}Phone" width="{Decimal}768"/>
@@ -186,13 +197,13 @@ Os dois exemplos a seguir ilustram a definição:
 
 * **HTL:**
 
-  ```xml
+  ```html
   <sly data-sly-resource="${'par' @ resourceType='wcm/foundation/components/responsivegrid'}/>
   ```
 
 * **JSP:**
 
-  ```
+  ```html
   <cq:include path="par" resourceType="wcm/foundation/components/responsivegrid" />
   ```
 
@@ -204,7 +215,7 @@ O AEM usa MENOS para gerar partes do CSS necessário, que precisam ser incluída
 
 Você também deverá criar uma [biblioteca do cliente](https://experienceleague.adobe.com/pt-br/docs) para fornecer configuração e chamadas de função adicionais. A seguinte extração MENOS é um exemplo do mínimo que você deve adicionar ao seu projeto:
 
-```java
+```css
 @import (once) "/libs/wcm/foundation/clientlibs/grid/grid_base.less";
 
 /* maximum amount of grid cells to be provided */
@@ -311,3 +322,61 @@ Você pode configurar o número de colunas disponíveis para cada instância esp
    * Componentes que podem ser adicionados ao componente atual:
 
       * `components="[/libs/wcm/foundation/components/responsivegrid, ...`
+
+## Grades Responsivas Aninhadas {#nested-responsive-grids}
+
+Pode haver ocasiões em que você ache necessário aninhar grades responsivas para suportar as necessidades do seu projeto. No entanto, lembre-se de que a prática recomendada para o Adobe é manter a estrutura o mais plana possível.
+
+Quando não for possível evitar o uso de grades responsivas aninhadas, verifique se:
+
+* Todos os contêineres (contêineres, guias, acordeões, etc.) têm a propriedade `layout = responsiveGrid`.
+* Não misture a propriedade `layout = simple` na hierarquia de contêiner.
+
+Isso inclui todos os containers estruturais do modelo de página.
+
+O número da coluna do contêiner interno nunca deve ser maior que o do contêiner externo. O exemplo a seguir satisfaz essa condição. Embora o número da coluna do contêiner externo seja 8 para a tela padrão (desktop), o número da coluna do contêiner interno é 4.
+
+>[!BEGINTABS]
+
+>[!TAB Exemplo de estrutura de nó]
+
+```text
+container
+  @layout = responsiveGrid
+  cq:responsive
+    default
+      @offset = 0
+      @width = 8
+  container
+  @layout = responsiveGrid
+    cq:responsive
+      default
+        @offset = 0
+        @width = 4
+    text
+      @text =" Text Column 1"
+```
+
+>[!TAB Exemplo de HTML resultante]
+
+```html
+<div class="container responsivegrid aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--8 aem-GridColumn--offset--default--0">
+  <div id="container-c9955c233c" class="cmp-container">
+    <div class="aem-Grid aem-Grid--8 aem-Grid--default--8 ">
+      <div class="container responsivegrid aem-GridColumn--default--none aem-GridColumn aem-GridColumn--offset--default--0 aem-GridColumn--default--4">
+        <div id="container-8414e95866" class="cmp-container">
+          <div class="aem-Grid aem-Grid--4 aem-Grid--default--4 ">
+            <div class="text aem-GridColumn aem-GridColumn--default--4">
+              <div data-cmp-data-layer="..." id="text-1234567890" class="cmp-text">
+                <p>Text Column 1</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+>[!ENDTABS]

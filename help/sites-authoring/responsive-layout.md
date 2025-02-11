@@ -1,6 +1,6 @@
 ---
 title: Layout responsivo para suas páginas de conteúdo
-description: O Adobe Experience Manager permite que você tenha um layout responsivo para suas páginas.
+description: O Adobe Experience Manager permite criar um layout responsivo para suas páginas usando o componente de Contêiner de layout.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
@@ -9,18 +9,27 @@ exl-id: 760b8419-5cf8-49c5-8d4f-6691f5256c53
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: 41da3aef16e650d8dc33e96991d0a997564c9224
 workflow-type: tm+mt
-source-wordcount: '1798'
-ht-degree: 59%
+source-wordcount: '1853'
+ht-degree: 58%
 
 ---
 
+
 # Layout responsivo{#responsive-layout}
 
-O AEM permite ter um layout responsivo para suas páginas usando o componente **Contêiner de layout**.
+O Adobe Experience Manager permite obter um layout responsivo para suas páginas usando o componente **Contêiner de layout**.
 
-Isso fornece um sistema de parágrafo que permite posicionar componentes em uma grade responsiva. Essa grade pode reorganizar o layout de acordo com o tamanho e o formato do dispositivo/janela. O componente é usado em conjunto com o modo [**Layout**](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode), que permite criar e editar seu layout responsivo dependendo do dispositivo.
+>[!TIP]
+>
+>Este documento fornece uma visão geral dos recursos do Contêiner de layout disponíveis para autores de conteúdo.
+>
+>Para administradores e desenvolvedores de site, os detalhes sobre como configurar o contêiner de layout para seus sites estão descritos no documento [Configurando o Contêiner de Layout e o Modo de Layout.](/help/sites-authoring/responsive-layout.md)
+
+## Visão geral {#overview}
+
+O componente **Contêiner de layout** fornece um sistema de parágrafo que permite posicionar componentes em uma grade responsiva. Essa grade pode reorganizar o layout de acordo com o tamanho e o formato do dispositivo/janela. O componente é usado em conjunto com o modo [**Layout**](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode), que permite criar e editar seu layout responsivo dependendo do dispositivo.
 
 O container de layout:
 
