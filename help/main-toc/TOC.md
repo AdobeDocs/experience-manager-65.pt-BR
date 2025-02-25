@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Use a documentação do Adobe Experience Manager 6.5 para saber como funciona e o que o software pode fazer por você.
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM 6.5
-source-git-commit: 236dac79430bc974b9cc95299a566283a748476a
+source-git-commit: 0109abf51045224912d130ee29f67d7274cfc4f4
 workflow-type: tm+mt
-source-wordcount: '7474'
+source-wordcount: '7471'
 ht-degree: 20%
 
 ---
@@ -884,7 +884,7 @@ ht-degree: 20%
       + [Referência de FormCalc do Designer](https://www.adobe.com/go/learn_aemforms_formCalc_65)
       + [Uso da Assinatura Escrita em Formulários HTML5](/help/forms/using/scribble-signature.md)
       + [Alteração do conteúdo da Página zero no Designer](/help/forms/using/changing-page-zero-content-designer.md)
-      + [Práticas recomendadas de acessibilidade]{#accessibility-best-practices}
+      + Práticas recomendadas de acessibilidade {#accessibility-best-practices}
          + [Introdução](/help/forms/using/introduction-accessibility-forms-designer.md)
          + [Práticas recomendadas para criar formulários](/help/forms/using/best-practices-for-creating-forms-in-designer.md)
          + [Técnicas para testar a acessibilidade do formulário](/help/forms/using/techniques-for-testing-form-accessibility.md)
@@ -1202,8 +1202,8 @@ ht-degree: 20%
       + [Não é possível converter o arquivo do Word ou Excel em PDF no Windows Server](/help/forms/using/disable-uac-for-pdfgconfiguration.md)
       + [Não é possível abrir o PDF forms baseado em XFA no Google Chrome, Firefox, Microsoft Edge, Microsoft Internet Explorer ou Apple Safari](/help/forms/using/xfa-based-forms-in-chrome-firefox-ie-internet-explorter-safari-edge.md)
       + [Não foi possível restaurar o repositório do CRX](/help/forms/using/restore-crx-repository.md)
-      + [Erros de serviço indisponível após a instalação do AEM 6.5.15.0 service pack](/help/forms/using/aem-service-pack-installation-solution.md)
-      + [Problema de instalação do pacote de serviços do AEM Forms JEE 6.5.15.0 no ambiente JBoss Linux](/help/forms/using/linux-jboss-installation-issue-on-sp15.md)
+      + [Erros de serviço indisponível após a instalação do service pack do AEM 6.5.15.0](/help/forms/using/aem-service-pack-installation-solution.md)
+      + [Problema de instalação do service pack 6.5.15.0 do AEM Forms JEE no ambiente JBoss Linux](/help/forms/using/linux-jboss-installation-issue-on-sp15.md)
       + [Processamento de documentos mesmo se o servidor do AEM Forms não estiver totalmente ativo e em execução](/help/forms/using/processing-documents-even-if-aem-forms-server-not-fully-up.md)
       + [Não é possível usar os serviços de Saída, Forms ou DoR (Documento de Registro)](/help/forms/using/connection-issues-with-output-forms-and-document-of-record-dor-services.md)
       + [Reduzindo vulnerabilidades de RCE do Struts 2 para Experience Manager Forms](/help/forms/using/mitigating-struts-2-rce-vulnerabilities-for-experience-manager-manager-form.md)
