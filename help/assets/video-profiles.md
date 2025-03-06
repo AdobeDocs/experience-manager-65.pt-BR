@@ -11,9 +11,9 @@ role: User, Admin
 mini-toc-levels: 3
 exl-id: b290fac2-7259-45d7-b733-70419d632b07
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 13c495b8b7e9824c5de8469df96bec00c74c8dbc
+source-git-commit: 54b508809733ed86798558aee50f8c7b5de00af9
 workflow-type: tm+mt
-source-wordcount: '3750'
+source-wordcount: '3730'
 ht-degree: 8%
 
 ---
@@ -301,7 +301,7 @@ Agora é possível aplicar o perfil às pastas que contêm vídeos. Consulte [Ap
    <td><code>audioBitrateCustom</code></td>
    <td>Defina o valor como <code>true</code> para forçar uma taxa de bits constante para o fluxo de áudio, se suportado pelo codec de áudio.</td>
    <td><code>String</code></td>
-   <td><p><code>true</code>/<code>false</code></p> <p>O padrão é <code>false</code>.</p> <p>O valor recomendado para DASH ou HLS é <code>false</code>. (Para usar o DASH em seus vídeos, primeiro ele deve estar ativado em sua conta. Consulte <a href="/help/assets/video.md#enable-dash">Habilitar DASH na sua conta</a>.)</p> <p> </p> </td>
+   <td><p><code>true</code>/<code>false</code></p> <p>O padrão é <code>false</code>.</p> <p>O valor recomendado para DASH ou HLS é <code>false</code>.</p> <p> </p> </td>
   </tr>
  </tbody>
 </table>

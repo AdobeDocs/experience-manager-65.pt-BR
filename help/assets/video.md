@@ -11,9 +11,9 @@ feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 13c495b8b7e9824c5de8469df96bec00c74c8dbc
+source-git-commit: 54b508809733ed86798558aee50f8c7b5de00af9
 workflow-type: tm+mt
-source-wordcount: '10517'
+source-wordcount: '10488'
 ht-degree: 1%
 
 ---
@@ -553,8 +553,6 @@ Alguns casos de uso a serem considerados para adicionar várias legendas e faixa
 |  | Áudio descritivo |
 
 Todos os [formatos de vídeo com suporte no Dynamic Media](/help/assets/assets-formats.md) e todos os visualizadores de vídeo do Dynamic Media, exceto o visualizador do *Video_360* do Dynamic Media, têm suporte para uso com várias legendas e faixas de áudio.
-
-O recurso de múltiplas legendas e faixas de áudio está disponível para sua conta do Dynamic Media por meio de um botão de recurso que deve ser ativado pelo Suporte ao cliente da Adobe.
 
 ### Adicionar várias legendas e faixas de áudio ao seu vídeo {#add-msma}
 
@@ -1389,7 +1387,7 @@ Você invoca o servlet executando uma operação `GET` em `/dmSample/dynamicmedi
 | `manifestType` | Opcional. O parâmetro pode ser DASH ou HLS. Se não for transmitido, o padrão será DASH. |
 | `onlyIfPublished` | Opcional. Se aprovado, o `manifestUrl` será retornado somente se o vídeo for publicado. |
 
-Neste exemplo, vamos supor a seguinte configuração:
+Neste exemplo, considere a seguinte configuração:
 
 * A empresa é `samplecompany`.
 * A instância de criação é `http://sample-aem-author.com`.

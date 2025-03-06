@@ -7,9 +7,9 @@ feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 01fe5b53-2244-445f-a4d0-bd58ea38b611
 solution: Experience Manager
-source-git-commit: a49af471c5fc2f799687173bff6cdcb21505740a
+source-git-commit: 54b508809733ed86798558aee50f8c7b5de00af9
 workflow-type: tm+mt
-source-wordcount: '2335'
+source-wordcount: '2308'
 ht-degree: 13%
 
 ---
@@ -22,7 +22,7 @@ Consulte também [Notas de versão mais recentes do Service Pack do Adobe Experi
 
 ## AEM 6.5, Service Pack 18 — 7 de dezembro de 2023
 
-* Ativação do usuário do Editor de páginas do Sites/Componente de imagem para fazer referência a ativos do Cloud Service Assets remoto. (SITES-13448, SITES-13433)
+* Ativação do usuário do Editor de páginas do Sites/Componente de imagem para fazer referência a ativos do Assets Cloud Service remoto. (SITES-13448, SITES-13433)
 * O AEM agora é compatível com a classificação do lado do servidor para agilizar a navegação do projeto na exibição em lista. Os nós de projeto são classificados com base na coluna selecionada pelo usuário antes de aparecer na interface.
 
 ### [!DNL Forms]
@@ -49,9 +49,9 @@ Consulte também [Notas de versão mais recentes do Service Pack do Adobe Experi
 * Assets, Dynamic Media - [Suporte a várias legendas e faixas de áudio para vídeos no Dynamic Media](/help/assets/video.md#about-msma)—Agora é possível adicionar facilmente várias legendas e faixas de áudio a um vídeo principal. Esse recurso significa que os vídeos estão acessíveis em um público-alvo global. Você pode personalizar um único vídeo principal publicado para um público-alvo global em vários idiomas e seguir as diretrizes de acessibilidade para diferentes regiões geográficas. Os autores também podem gerenciar as legendas e faixas de áudio em uma única guia na interface do usuário do.
 * Assets - Nos resultados da Pesquisa, agora é possível navegar até o local da pasta que contém um ativo para permitir que você execute várias tarefas de gerenciamento de ativos.
 * O Seletor de polaris de sites em fragmentos de conteúdo melhorou o desempenho.
-* Ativação do usuário do Editor de páginas do Sites/Componente de imagem para fazer referência a ativos do Cloud Service Assets remoto.
-* Para localizar rapidamente um projeto na exibição em Lista, onde você pode ter muitos projetos em seu sistema, o Adobe agora é compatível com a classificação do lado do servidor. Os nós de projeto são classificados no backend com base na coluna selecionada pelo usuário antes de renderizá-los na interface.
-* O AEM 6.5.18.0 é compatível com MongoDB 5.0 para 6.0.
+* Ativação do usuário do Editor de páginas do Sites/Componente de imagem para fazer referência a ativos do Assets Cloud Service remoto.
+* Para localizar rapidamente um projeto na exibição de Lista, onde você pode ter muitos projetos em seu sistema, o Adobe agora é compatível com a classificação do lado do servidor. Os nós de projeto são classificados no backend com base na coluna selecionada pelo usuário antes de renderizá-los na interface.
+* O AEM 6.5.18.0 oferece suporte ao MongoDB 5.0 para 6.0.
 
 ### [!DNL Forms]
 
@@ -59,7 +59,7 @@ Consulte também [Notas de versão mais recentes do Service Pack do Adobe Experi
 
 * **[Etapa aprimorada do fluxo de trabalho do Adobe Sign](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html#sign-document-step)** - A etapa do fluxo de trabalho do Adobe Sign nos fluxos de trabalho do AEM está disponível com as seguintes melhorias.
 
-   * **Segurança aprimorada com autenticação baseada em ID do governo para Adobe Sign** - A autenticação baseada em ID do governo da Adobe Acrobat Sign oferece uma camada adicional de verificação. Ele permite aos usuários autenticar sua identidade usando IDs emitidas pelo governo (CNH, identificação nacional, passaporte). Ao usar documentos de identificação confiáveis, esse aprimoramento adiciona um nível extra de confiança ao processo de assinatura, tornando-o ideal para cenários que exigem maior segurança, conformidade e validação do usuário.
+   * **Segurança aprimorada com autenticação baseada em ID do governo para o Adobe Sign** - A autenticação baseada em ID do governo da Adobe Acrobat Sign oferece uma camada adicional de verificação. Ele permite aos usuários autenticar sua identidade usando IDs emitidas pelo governo (CNH, identificação nacional, passaporte). Ao usar documentos de identificação confiáveis, esse aprimoramento adiciona um nível extra de confiança ao processo de assinatura, tornando-o ideal para cenários que exigem maior segurança, conformidade e validação do usuário.
 
    * **Transparência aprimorada com trilha de auditoria para documentos do Adobe Sign** - Use o recurso de trilha de auditoria para obter insights detalhados sobre o ciclo de vida dos documentos do Adobe Sign. Com a Trilha de auditoria, agora é possível manter um registro abrangente de todas as ações e interações relacionadas aos documentos. Isso inclui detalhes como quem visualizou, editou ou assinou o documento, além de carimbos de data e hora para cada evento. Esse aprimoramento é fundamental para manter a conformidade, resolver disputas e garantir a integridade de seus contratos digitais.
 
@@ -75,7 +75,7 @@ Consulte também [Notas de versão mais recentes do Service Pack do Adobe Experi
    * MongoDB 6.0 <!-- it was previously MongoDB 4.4 -->
    * Conector JDBC do MySQL 8
 
-Se você estiver instalando ou planejando usar o software mais recente para o seu Forms AEM 6.5 no ambiente JEE, o Adobe recomenda o uso do instalador completo do Forms AEM 6.5.18.0 no JEE. Para explorar a lista completa de softwares recém-adicionados e obsoletos, consulte a documentação do AEM Forms no JEE ou do AEM Forms no OSGi.
+Se você estiver instalando ou planejando usar o software mais recente para o ambiente AEM 6.5 Forms no JEE, a Adobe recomenda usar o instalador completo do AEM 6.5.18.0 Forms no JEE. Para explorar a lista completa de softwares recém-adicionados e obsoletos, consulte a documentação do AEM Forms no JEE ou do AEM Forms no OSGi.
 
 ## AEM 6.5, Service Pack 17 — 25 de maio de 2023
 
@@ -85,8 +85,8 @@ Se você estiver instalando ou planejando usar o software mais recente para o se
    * Criar ou remover relação de ativos
 
   Não é necessário navegar até o local do ativo e exibir suas propriedades para executar essas operações.
-* **Dynamic Media _Instantâneo_**- Experimente com imagens de teste ou URLs Dynamic Media, para ver a saída de diferentes modificadores de imagem, e otimizações de Imagem Inteligente para tamanho de arquivo (com entrega WebP e AVIF), largura de banda de rede e Proporção de Pixel de Dispositivo. Consulte [Instantâneo do Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot.html?lang=pt-BR).
-* **Transmissão DASH com Dynamic Media** - O suporte ao novo protocolo (DASH - Transmissão Adaptável Dinâmica via HTTP) foi iniciado para a transmissão Adaptável na entrega de vídeo do Dynamic Media (com o CMAF habilitado). Disponível agora para todas as regiões, [habilitado por meio de um tíquete de suporte](/help/assets/video.md#enable-dash-on-your-account-enable-dash).
+* **Instantâneo do Dynamic Media _2} - Experimente com imagens de teste ou URLs do Dynamic Media, para ver a saída de diferentes modificadores de imagem, e otimizações de Imagem Inteligente para tamanho de arquivo (com entrega WebP e AVIF), largura de banda de rede e Proporção de pixels do dispositivo._**Consulte [Instantâneo do Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot.html?lang=pt-BR).
+* **Streaming DASH com Dynamic Media** - Novo protocolo (DASH - Dynamic Adaptive Streaming por HTTP) iniciado para transmissão Adaptive na entrega de vídeo do Dynamic Media (com CMAF habilitado). Disponível agora para todas as regiões.
 * **Integração do Experience Manager Sites e dos fragmentos de conteúdo com o Assets Next-Generation Dynamic Media** - Os usuários do Experience Manager Assets as a Cloud Service Next-Generation Dynamic Media agora podem usar esses ativos hospedados na nuvem para criação e entrega com instâncias do Experience Manager Sites 6.5 no local ou no Managed Services.
 
 ### [!DNL Forms]
@@ -97,18 +97,16 @@ Se você estiver instalando ou planejando usar o software mais recente para o se
    * Adicionar vários formulários a uma página de site, simplificando a experiência do usuário e fornecendo maior flexibilidade.
 * **[Suporte ao reCAPTCHA Enterprise no Experience Manager Forms](/help/forms/using/captcha-adaptive-forms.md)**: adição de suporte ao reCAPTCHA Enterprise no Experience Manager Forms, fornecendo proteção aprimorada contra atividades fraudulentas e spam, além do suporte existente ao Google reCAPTCHA v2.
 * **[Suporte para Adobe Acrobat Sign para o Governo com Experience Manager Forms](/help/forms/using/adobe-sign-integration-adaptive-forms.md)**: o AEM Forms agora se integra ao Adobe Acrobat Sign para o Governo (compatível com FedRAMP). Essa integração oferece um nível avançado de conformidade e segurança para assinaturas eletrônicas com envios de formulários adaptáveis para contas associadas ao governo (departamentos e agências governamentais). A integração com o Adobe Acrobat Sign para órgãos governamentais permite que parceiros da Adobe e clientes governamentais usem assinaturas eletrônicas em formulários adaptáveis para alguns dos ramos de negócios mais essenciais e confidenciais. Essa camada adicional de segurança garante que todas as assinaturas eletrônicas sejam totalmente compatíveis com o nível moderado de conformidade do FedRAMP, proporcionando tranquilidade aos clientes governamentais da Adobe.
-* **Habilitar a integração do Salesforce com o Experience Manager Forms para troca de dados**: configure a integração entre o Experience Manager Forms e o aplicativo Salesforce usando o fluxo de credenciais do cliente OAuth 2.0. Essa capacidade permite a autenticação e autorização diretas e seguras do aplicativo e permite uma comunicação perfeita sem o envolvimento do usuário.
+* **Habilitar a integração do Salesforce com o Experience Manager Forms para troca de dados**: configure a integração entre o Experience Manager Forms e o aplicativo do Salesforce usando o fluxo de credenciais do cliente OAuth 2.0. Essa capacidade permite a autenticação e autorização diretas e seguras do aplicativo e permite uma comunicação perfeita sem o envolvimento do usuário.
 * **Otimização e funcionalidade aprimorada do mecanismo de fluxo de trabalho**: aumente o desempenho dos mecanismos de fluxo de trabalho minimizando o número de instâncias de fluxo de trabalho. Além dos valores de status `COMPLETED` e `RUNNING`, o fluxo de trabalho também aceita três novos valores de status: `ABORTED`, `SUSPENDED` e `FAILED`.
 
 ## AEM 6.5, Service Pack 16 — 23 de fevereiro de 2023
 
-O novo protocolo DASH (Dynamic Adaptive Streaming por HTTP) dá suporte a lançamentos para transmissão adaptável de taxa de bits na entrega de vídeo do Dynamic Media (com o CMAF [Common Media Application Format] habilitado).
+Novo protocolo DASH (Dynamic Adaptive Streaming por HTTP) iniciado para transmissão de taxa de bits adaptável na entrega de vídeo do Dynamic Media (com CMAF [Common Media Application Format] habilitado).
 
 * A transmissão adaptável (DASH/HLS) garante uma melhor experiência de visualização do usuário final para vídeos.
 * DASH é o protocolo padrão internacional para transmissão de vídeo adaptável e é amplamente adotado no setor.
-* Disponível agora na Ásia-Pacífico e na América do Norte (a ser ativado por meio de um tíquete de suporte); em breve na Europa-Oriente Médio-África.
-
-Consulte [Habilitar DASH na sua conta](/help/assets/video.md#enable-dash).
+* Disponível agora na Ásia-Pacífico e na América do Norte; em breve na Europa-Oriente Médio-África.
 
 ### [!DNL Forms]
 
@@ -116,7 +114,7 @@ Consulte [Habilitar DASH na sua conta](/help/assets/video.md#enable-dash).
 
 * [Os Componentes principais adaptáveis do Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#features) são um conjunto de 24 componentes de código aberto compatíveis com BEM que são criados na base dos Componentes principais do WCM no Adobe Experience Manager. Esses componentes são de código aberto e fornecem aos desenvolvedores a capacidade de personalizar e estender facilmente esses componentes para atender às necessidades específicas de sua organização. Qualquer pessoa com habilidades existentes para personalizar [Componentes principais do WCM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/authoring.html) pode personalizar e estilizar facilmente esses componentes.
 
-* O serviço de extensão de Reader no OSGi agora fornece opções separadas para habilitar direitos de uso de importação e exportação em um PDF para importar ou exportar dados no Adobe Acrobat Reader.
+* O serviço Reader Extension no OSGi agora fornece opções separadas para habilitar direitos de uso de importação e exportação em uma PDF para importar ou exportar dados no Adobe Acrobat Reader.
 
 ## AEM 6.5, Service Pack 15 — 24 de novembro de 2022
 
@@ -139,7 +137,7 @@ Somente correções de erros.
 
 * Agora, ao gerar um arquivo de tradução do Formulário adaptável, a mesma sequência de textos que o arquivo XLIFF gerado é idêntica à sequência de componentes no Formulário adaptável correspondente.
 
-* Quando você localiza um Formulário adaptável e faz até mesmo uma pequena alteração no texto do idioma base, a tradução completa fica ausente para todos os outros idiomas. O problema foi corrigido no [!DNL Experience Manager] 6.5.13.0.
+* Quando você localiza um Formulário adaptável e faz até mesmo uma pequena alteração no texto do idioma base, a tradução completa fica ausente para todos os outros idiomas. O problema foi corrigido em [!DNL Experience Manager] 6.5.13.0.
 
 * Melhorias de acessibilidade para o Forms:
 
