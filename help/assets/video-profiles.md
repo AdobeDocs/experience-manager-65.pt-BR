@@ -11,9 +11,9 @@ role: User, Admin
 mini-toc-levels: 3
 exl-id: b290fac2-7259-45d7-b733-70419d632b07
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 13c495b8b7e9824c5de8469df96bec00c74c8dbc
 workflow-type: tm+mt
-source-wordcount: '3770'
+source-wordcount: '3750'
 ht-degree: 8%
 
 ---
@@ -38,7 +38,7 @@ Consulte também [Práticas recomendadas para organizar sua Assets digital para 
 
 >[!NOTE]
 >
->Para gerar os metadados de um vídeo e as miniaturas de imagem de vídeo associadas, o próprio vídeo deve passar pelo processo de codificação no Dynamic Media. No Adobe Experience Manager, o fluxo de trabalho **[!UICONTROL Codificação de vídeo do Dynamic Media]** codifica o vídeo se você tiver habilitado o Dynamic Media e configurado os serviços da nuvem de vídeo. Esse fluxo de trabalho captura o histórico do processo de fluxo de trabalho e as informações de falha. Consulte [Monitorar o progresso da codificação de vídeo e da publicação no YouTube](/help/assets/video.md#monitoring-video-encoding-and-youtube-publishing-progress). Se você habilitou o Dynamic Media e configurou os serviços da nuvem de vídeo, o fluxo de trabalho **[!UICONTROL Codificação de vídeo do Dynamic Media]** será aplicado automaticamente quando você carregar um vídeo. (Se você não estiver usando o Dynamic Media, o fluxo de trabalho **[!UICONTROL Ativo de atualização do DAM]** entrará em vigor.)
+>Para gerar os metadados de um vídeo e as miniaturas de imagem de vídeo associadas, o próprio vídeo deve passar pelo processo de codificação no Dynamic Media. No Adobe Experience Manager, o fluxo de trabalho **[!UICONTROL Codificação de vídeo do Dynamic Media]** codifica o vídeo se você tiver habilitado o Dynamic Media e configurado os serviços da nuvem de vídeo. Esse fluxo de trabalho captura o histórico do processo de fluxo de trabalho e as informações de falha. Consulte [Monitorar o progresso da codificação de vídeo e da publicação no YouTube](/help/assets/video.md#monitoring-video-encoding-and-youtube-publishing-progress). Se você tiver habilitado o Dynamic Media e configurado os serviços da nuvem de vídeo, o fluxo de trabalho **[!UICONTROL Codificação de vídeo do Dynamic Media]** será aplicado automaticamente ao carregar um vídeo. (Se você não estiver usando o Dynamic Media, o fluxo de trabalho **[!UICONTROL Ativo de atualização do DAM]** entrará em vigor.)
 >
 >Os metadados são úteis ao pesquisar ativos. As miniaturas são imagens de vídeo estáticas geradas durante a codificação. Eles são exigidos pelo sistema Experience Manager e usados na interface do usuário para ajudar a identificar visualmente os vídeos na exibição Cartões, na exibição Resultados da pesquisa e na exibição da Lista de ativos. É possível ver as miniaturas geradas ao selecionar o ícone Representações (paleta de pintura) de um vídeo codificado.
 
@@ -131,7 +131,7 @@ Consulte também [Recorte inteligente para imagens](image-profiles.md).
 
 ## Criar um perfil de vídeo para transmissão adaptável da taxa de bits {#creating-a-video-encoding-profile-for-adaptive-streaming}
 
-O Dynamic Media já vem com um perfil de codificação de vídeo adaptável predefinido - um grupo de configurações de upload de vídeo para MP4 H.264 - que é otimizado para obter a melhor experiência de visualização. Você pode usar este perfil quando carregar seus vídeos.
+O Dynamic Media já vem com um perfil de Codificação de vídeo adaptável predefinido - um grupo de configurações de upload de vídeo para MP4 H.264 - que é otimizado para obter a melhor experiência de visualização. Você pode usar este perfil quando carregar seus vídeos.
 
 No entanto, se esse perfil predefinido não atender às suas necessidades, você pode optar por criar seu próprio perfil de codificação de vídeo adaptável. Ao usar a configuração **[!UICONTROL Codificar para transmissão adaptável]** - como prática recomendada - todas as predefinições de codificação adicionadas ao perfil são validadas para garantir que todos os vídeos tenham a mesma proporção. Além disso, os vídeos codificados são tratados como uma taxa de multi bits definidos para transmissão.
 
@@ -252,12 +252,12 @@ Agora é possível aplicar o perfil às pastas que contêm vídeos. Consulte [Ap
 
 ## Usar parâmetros de codificação de vídeo adicionados personalizados {#using-custom-added-video-encoding-parameters}
 
-É possível editar um perfil de codificação de vídeo existente para aproveitar os parâmetros avançados de codificação de vídeo que não são encontrados na interface do usuário ao criar ou editar um Perfil de vídeo no Experience Manager. Adicione um ou mais parâmetros avançados, como minBitrate e maxBitrate, ao perfil existente.
+É possível editar um perfil de codificação de vídeo existente para aproveitar os parâmetros avançados de codificação de vídeo não encontrados na interface do usuário ao criar ou editar um Perfil de vídeo no Experience Manager. Adicione um ou mais parâmetros avançados, como minBitrate e maxBitrate, ao perfil existente.
 
 **Para usar parâmetros de codificação de vídeo adicionados personalizados:**
 
 1. Selecione o logotipo do Experience Manager e navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Geral]** > **[!UICONTROL CRXDE Lite]**.
-1. Na página CRXDE Lite, no painel Explorer à esquerda, navegue até o seguinte:
+1. Na página do CRXDE Lite, no painel Explorer à esquerda, navegue até o seguinte:
 
    `/conf/global/settings/dam/dm/presets/video/*name_of_video_encoding_profile_to_edit`
 
@@ -283,7 +283,7 @@ Agora é possível aplicar o perfil às pastas que contêm vídeos. Consulte [Ap
    <td><code>keyframe</code></td>
    <td>O número alvo de quadros entre quadros-chave. Calcule esse valor para que ele possa gerar um quadro-chave a cada 2-10 segundos. Por exemplo, a 30 quadros por segundo, o intervalo do quadro principal deve ser de 60 a 300.<br /> <br /> Os intervalos de quadro-chave mais baixos melhoram a busca por transmissão e o comportamento de comutação de fluxo para codificações de vídeo adaptáveis e também podem melhorar a qualidade de vídeos com muito movimento. No entanto, como os quadros-chave aumentam o tamanho de um arquivo, um intervalo de quadro-chave menor geralmente resulta em uma qualidade geral de vídeo mais baixa em uma determinada taxa de bits.</td>
    <td><code>String</code></td>
-   <td><p>Número positivo.</p> <p>O padrão é 300.</p> <p>O valor recomendado para DASH ou HLS é 60-90. (Para usar o DASH em seus vídeos, primeiro ele deve estar ativado em sua conta. Consulte <a href="/help/assets/video.md#enable-dash">Habilitar DASH na sua conta</a>.)</p> </td>
+   <td><p>Número positivo.</p> <p>O padrão é 300.</p> <p>O valor recomendado para DASH ou HLS é 60-90.</p> </td>
   </tr>
   <tr>
    <td><code>minBitrate</code></td>
@@ -314,7 +314,7 @@ Agora é possível aplicar o perfil às pastas que contêm vídeos. Consulte [Ap
    * Repita as etapas 3 e 4 para adicionar outro parâmetro ao perfil de codificação de vídeo.
    * Próximo ao canto superior esquerdo da página, selecione **[!UICONTROL Salvar tudo]**.
 
-1. No canto superior esquerdo da página de CRXDE Lite, selecione o ícone **[!UICONTROL Voltar à página inicial]** para retornar ao Experience Manager.
+1. No canto superior esquerdo da página do CRXDE Lite, selecione o ícone **[!UICONTROL Voltar à página inicial]** para retornar ao Experience Manager.
 
 ### Editar um perfil de vídeo {#editing-a-video-encoding-profile}
 
@@ -435,6 +435,6 @@ Remova um perfil de vídeo de uma pasta no menu **[!UICONTROL Ferramentas]** ou,
 
 ### Remova um perfil de vídeo das pastas por meio de Propriedades {#removing-video-profiles-from-folders-by-way-of-properties}
 
-1. Selecione o logotipo do Experience Manager e navegue até o **[!UICONTROL Assets]** e, em seguida, acesse a pasta da qual deseja remover um perfil de vídeo.
+1. Selecione o logotipo do Experience Manager, navegue até o **[!UICONTROL Assets]** e, em seguida, acesse a pasta da qual deseja remover um perfil de vídeo.
 1. Na pasta, marque a marca de seleção e selecione **[!UICONTROL Propriedades]**.
 1. Selecione a guia **[!UICONTROL Perfis de Vídeo]**, selecione **[!UICONTROL Nenhum]** no menu suspenso e selecione **[!UICONTROL Salvar e Fechar]**. As pastas que têm um perfil já atribuído a elas são indicadas ao exibir do nome do perfil logo abaixo do nome da pasta.
