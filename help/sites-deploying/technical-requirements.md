@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 61f658fc4390610686a308d02a8d74505252434a
+source-git-commit: 07f45107bceee9e793a39f4167985da91fb51e4a
 workflow-type: tm+mt
-source-wordcount: '3638'
+source-wordcount: '3632'
 ht-degree: 1%
 
 ---
@@ -452,9 +452,9 @@ Para Windows x86:
 
 ### Requisitos para o AEM Forms PDF Generator {#requirements-for-aem-forms-pdf-generator}
 
-* Para testar as conversões do PDF no servidor SUSE® Linux®, verifique se você tem as seguintes configurações:
+* Para testar as conversões do PDF no servidor SUSE® Linux® (SLES 15 SP6 ou posterior), verifique se você tem as seguintes configurações:
    * Navegue até o arquivo `/etc/profile` e defina a variável de ambiente `OpenOffice_PATH` como `/opt/openoffice4` para configurá-lo globalmente.
-   * Instale a versão de 32 bits do OpenOffice no sistema operacional Linux®.
+   * Instale a versão de 32 bits do OpenOffice.
 
 ### Suporte de software para PDF Generator {#software-support-for-pdf-generator}
 
@@ -517,7 +517,7 @@ Para Windows x86:
 >
 >Além disso,
 >
->* O PDF Generator requer uma versão de 32 bits do [Acrobat 2020 classic track versão 20.004.30006](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) ou Acrobat 2017 versão 17.011.30078 para executar a conversão.
+>* O PDF Generator requer uma versão de 32 bits do [Acrobat 2020 classic track versão 20.004.30006](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) para executar a conversão.
 >* A PDF Generator suporta apenas a versão de 32 bits do Microsoft® Office Professional Plus e outros softwares necessários para a conversão.
 >* A instalação do Microsoft® Office Professional Plus pode usar o licenciamento por volume baseado em Varejo ou MAK/KMS/AD.
 >* Se uma instalação do Microsoft® Office for desativada ou não for licenciada por qualquer motivo, como uma instalação com licença de volume que não consegue localizar um host KMS em um período especificado, as conversões podem falhar até que a instalação seja relicenciada e reativada.
