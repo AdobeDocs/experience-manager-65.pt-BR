@@ -5,9 +5,9 @@ exl-id: 2ec57cd4-f41b-4e5c-849d-88ca3d2cfe19
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e67f19784abae1cd41819dd2a763ddd064beee08
+source-git-commit: 361f0a5f2d1484cf594edfda73250c5690ed7cab
 workflow-type: tm+mt
-source-wordcount: '1105'
+source-wordcount: '1043'
 ht-degree: 0%
 
 ---
@@ -52,9 +52,6 @@ Depois que um processo é criado com o serviço Executar script incluído, é po
 >
 > Se o código do script JAVA exceder 10 linhas, é recomendável adicionar o código aos DSCs personalizados (Componentes do serviço de documento) em vez de gravá-lo diretamente no processo. Os DSCs personalizados melhoram a capacidade de manutenção, a reutilização e o desempenho, mantendo os fluxos de trabalho leves. A referência a esses componentes em workflows garante melhor eficiência da execução e evita possíveis lentidões causadas pelo processamento de grandes blocos de código no fluxo de trabalho.
 
->[!NOTE]
->
-> Se o código do script JAVA exceder 10 linhas, é recomendável adicionar o código aos DSCs personalizados (Componentes do serviço de documento) em vez de gravá-lo diretamente no processo. Os DSCs personalizados melhoram a capacidade de manutenção, a reutilização e o desempenho, mantendo os fluxos de trabalho leves. A referência a esses componentes em workflows garante melhor eficiência da execução e evita possíveis lentidões causadas pelo processamento de grandes blocos de código no fluxo de trabalho.
 
 **Sobre a Tecnologia do Serviço Executar Script**
 
