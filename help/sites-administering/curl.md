@@ -1,5 +1,5 @@
 ---
-title: Uso do cURL com AEM
+title: Uso do cURL com o AEM
 description: Saiba como usar cURL para tarefas comuns do Adobe Experience Manager.
 contentOwner: Silviu Raiman
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,18 +9,18 @@ exl-id: e3f018e6-563e-456f-99d5-d232f1a4aa55
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: 12b370e3041ff179cd249f3d4e6ef584c4339909
 workflow-type: tm+mt
-source-wordcount: '884'
-ht-degree: 2%
+source-wordcount: '1061'
+ht-degree: 1%
 
 ---
 
-# Uso do cURL com AEM{#using-curl-with-aem}
+# Uso do cURL com o AEM{#using-curl-with-aem}
 
 Os administradores geralmente precisam automatizar ou simplificar tarefas comuns em qualquer sistema. No AEM, por exemplo, gerenciar usuários, instalar pacotes e gerenciar pacotes OSGi são tarefas que geralmente devem ser realizadas.
 
-Devido à natureza RESTful da estrutura do Sling no qual o AEM é criado, a maioria das tarefas pode ser feita com uma chamada de URL. O cURL pode ser usado para executar essas chamadas de URL e pode ser uma ferramenta útil para administradores de AEM.
+Devido à natureza RESTful da estrutura Sling na qual o AEM é criado, a maioria das tarefas pode ser feita com uma chamada de URL. O cURL pode ser usado para executar essas chamadas de URL e pode ser uma ferramenta útil para administradores do AEM.
 
 ## O que é cURL {#what-is-curl}
 
@@ -32,7 +32,7 @@ Devido à natureza RESTful da estrutura do Sling no qual o AEM é criado, a maio
 
 >[!NOTE]
 >
->Qualquer comando AEM executado por meio de cURL deve ser autorizado da mesma forma que qualquer usuário para AEM. Todas as ACLs e direitos de acesso são respeitados ao usar cURL para executar um comando AEM.
+>Qualquer comando do AEM executado por meio de cURL deve ser autorizado como qualquer usuário para o AEM. Todas as ACLs e direitos de acesso são respeitados ao usar cURL para executar um comando do AEM.
 
 ## Baixando cURL {#downloading-curl}
 
@@ -40,11 +40,11 @@ O cURL é uma parte padrão do macOS e de algumas distribuições Linux. No enta
 
 O repositório de origem do cURL também pode ser encontrado no GitHub.
 
-## Criação de um comando AEM cURL-Ready {#building-a-curl-ready-aem-command}
+## Criação de um comando do AEM pronto para cURL {#building-a-curl-ready-aem-command}
 
 Os comandos cURL podem ser criados para a maioria das operações no AEM, como acionar workflows, verificar configurações OSGi, acionar comandos JMX, criar agentes de replicação e muito mais.
 
-Para localizar o comando exato necessário para sua operação específica, é necessário usar as ferramentas do desenvolvedor em seu navegador para capturar a chamada de POST para o servidor quando você executa o comando AEM.
+Para localizar o comando exato necessário para sua operação específica, é necessário usar as ferramentas do desenvolvedor em seu navegador para capturar a chamada POST para o servidor ao executar o comando AEM.
 
 As etapas a seguir descrevem como fazer isso usando a criação de uma nova página no navegador Chrome como exemplo.
 
@@ -57,7 +57,7 @@ As etapas a seguir descrevem como fazer isso usando a criação de uma nova pág
    ![chlimage_1-67](assets/chlimage_1-67a.png)
 
 1. Clique em **Criar** no assistente **Criar página** para realmente criar o fluxo de trabalho.
-1. Clique com o botão direito do mouse na ação de POST resultante e selecione **Copiar** > **Copiar como cURL**.
+1. Clique com o botão direito do mouse na ação POST resultante e selecione **Copiar** > **Copiar como cURL**.
 
    ![chlimage_1-68](assets/chlimage_1-68a.png)
 
@@ -69,7 +69,7 @@ As etapas a seguir descrevem como fazer isso usando a criação de uma nova pág
 
    ![chlimage_1-70](assets/chlimage_1-70a.png)
 
-## Comandos comuns do AEM cURL operacional {#common-operational-aem-curl-commands}
+## Comandos Comuns do Operational AEM cURL {#common-operational-aem-curl-commands}
 
 Esta é uma lista de comandos cURL do AEM para tarefas administrativas e operacionais comuns.
 
@@ -318,7 +318,7 @@ Consulte [Logon único](/help/sites-deploying/single-sign-on.md) para obter deta
 
 ## Comandos cURL do AEM para manipulação de conteúdo comum {#common-content-manipulation-aem-curl-commands}
 
-Aqui está uma lista de comandos AEM cURL para manipulação de conteúdo.
+Esta é uma lista de comandos cURL do AEM para manipulação de conteúdo.
 
 >[!NOTE]
 >
@@ -361,6 +361,30 @@ curl -u <user>:<password> -X POST -F cmd="unlockPage" -F path="/content/path/to/
 ```shell
 curl -u <user>:<password> -F cmd=copyPage -F destParentPath=/path/to/destination/parent -F srcPath=/path/to/source/location http://localhost:4502/bin/wcmcommand
 ```
+
+### Como executar uma implantação superficial {#shallow-rollout}
+
+Ao usar o AEM as a Cloud Service, pode haver instâncias em que você precise implantar uma única página específica sem propagar suas subpáginas. Se não for configurado corretamente, o comando curl típico para implantar páginas pode, inadvertidamente, incluir subpáginas. Esta seção descreve como ajustar o comando curl para obter uma implantação superficial de uma página especificada e excluir quaisquer subpáginas adicionais.
+
+Para executar uma implantação superficial, siga estas etapas:
+
+1. Modifique o comando curl existente alterando o parâmetro de `type=deep` para `type=page`.
+1. Use a seguinte sintaxe para o comando curl:
+
+```shell
+curl -H "Authorization: Bearer <token>" "https://<instance-url>/bin/asynccommand" \
+   -d type=page \
+   -d operation=asyncRollout \
+   -d cmd=rollout \
+   -d path="/content/<your-path>"
+```
+
+Além disso, verifique o seguinte:
+
+1. Substitua `<token>` pelo token de autorização real e `<instance-url>` pela URL da instância específica.
+1. Substitua `/content/<your-path>` pelo caminho da página específica que você deseja implantar.
+
+Ao definir `type=page`, o comando é direcionado somente à página especificada, excluindo todas as subpáginas. Dessa forma, essa configuração permite o controle preciso da implantação de conteúdo, garantindo que somente as alterações desejadas sejam propagadas nos ambientes. Além disso, esse ajuste também se alinha à forma como as implantações são gerenciadas por meio da interface do AEM ao selecionar páginas individuais.
 
 ### Fluxos de trabalhos {#workflows}
 
