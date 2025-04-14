@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Use a documentação do Adobe Experience Manager 6.5 para saber como funciona e o que o software pode fazer por você.
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM 6.5
-source-git-commit: c0756980d0dc8ada7f6c352f68c4f41ecf15caa4
+source-git-commit: 47dc4ffa98d680970b72d488067c834123ea722b
 workflow-type: tm+mt
-source-wordcount: '7480'
+source-wordcount: '7487'
 ht-degree: 20%
 
 ---
@@ -1212,6 +1212,7 @@ ht-degree: 20%
       + [Como reiniciar corretamente o AEM SDK](/help/forms/using/restart-aem-sdk.md)
       + [O serviço PaperCapture não executa OCRs em PDFs](/help/forms/using/papercapture-service-resolution.md)
       + [Reduzindo vulnerabilidades do Spring Framework para AEM Forms no JEE](/help/forms/using/mitigating-spring-framework-vulnerabilities-for-aem-forms-on-jee.md)
+      + [Reduzindo vulnerabilidades do Log4j2 para o Experience Manager Forms](/help/forms/using/aem-forms-vulnerability-cve.md)
    + Documentação herdada {#legacy-documentation}
       + [Usar o serviço de script de execução no AEM Forms no JEE Workbench para criar dados XML](/help/forms/developing/building-xml.md)
       + [Compactação e descompactação de arquivos usando um AEM Forms no DSC personalizado JEE](/help/forms/developing/compressing-decompressing-custom-dsc.md)
