@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 07f45107bceee9e793a39f4167985da91fb51e4a
+source-git-commit: 5dbdce2d8e558e6bf26c6713fd44d58038d38152
 workflow-type: tm+mt
-source-wordcount: '3632'
+source-wordcount: '3593'
 ht-degree: 1%
 
 ---
@@ -115,7 +115,7 @@ Existem várias opções para implantar o repositório do Adobe Experience Manag
 | **Plataforma** | **Descrição** | **Nível de Suporte** |
 |---|---|---|
 | **Sistema de arquivos com arquivos TAR** `[1]` | Repositório | A: Suportado |
-| **Sistema de arquivos com Datastore** `[1]` | Binários | A: Suportado |
+| **Sistema de arquivos com Datastore** `[1]` | Binários | R: Suportado |
 | Armazenar binários em arquivos TAR no sistema de arquivos `[1]` | Binários | Z: Não suportado para produção |
 | Amazon S3 | Binários | R: Suportado |
 | Armazenamento do Microsoft® Azure Blob | Binários | A: Suportado |
@@ -310,7 +310,7 @@ A interface do usuário da AEM é otimizada para telas maiores (normalmente note
   <tr>
    <td>Mozilla Firefox last ESR [1]</td>
    <td>A: Suportado</td>
-   <td>R: Suportado</td>
+   <td>A: Suportado</td>
   </tr>
   <tr>
    <td>Apple Safari no macOS (Evergreen)</td>
@@ -340,7 +340,7 @@ A interface do usuário da AEM é otimizada para telas maiores (normalmente note
 
 ### Navegadores compatíveis com sites {#supported-browsers-for-websites}
 
-Geralmente, navegador suporte para sites renderizados por AEM Sites depende da implementação de AEM página modelos, design e saída dos componentes e, portanto, está no controle da parte que implementa essas partes.
+Geralmente, o suporte do navegador para sites renderizados pelo AEM Sites depende da implementação de modelos de página do AEM, design e saída de componentes e, portanto, está sob o controle da parte que implementa essas partes.
 
 ### Clientes WebDAV {#webdav-clients}
 
@@ -408,7 +408,7 @@ Se você estiver usando o Dynamic Media no Linux®, os seguintes pré-requisitos
 
 >[!NOTE]
 >
->**Desativando o SELinux:** Imagem veiculação não funciona com SELinux ativado. Essa opção está ativada por padrão. Para solucionar esse problema, edite o **arquivo /etc/selinux/config** e altere o valor DO SELinux de:
+>**Desativando o SELinux:** Imagem veiculação não funciona com SELinux ativado. Essa opção está habilitada por padrão. Para solucionar esse problema, edite o **arquivo /etc/selinux/config** e altere o valor DO SELinux de:
 >
 >`SELINUX=enforcing` **a** `SELINUX=disabled`
 
@@ -418,7 +418,7 @@ Se você estiver usando o Dynamic Media no Linux®, os seguintes pré-requisitos
 >
 >A construção de vários nós pode resultar no esgotamento da memória em um ou mais nós antes que outros nós se esgotem. Quando ocorre esgotamento da memória, o kernel pode decidir eliminar processos (por exemplo, o Servidor de imagens ou o Servidor da plataforma) mesmo que haja memória disponível.
 >
->Portanto, Adobe Systems recomenda que, se você estiver executando esse sistema, desative o NUMA usando a opção **numa=off** boot para evitar que o kernel mate esses processos.
+>Portanto, a Adobe recomenda que, se você estiver executando um sistema desse tipo, desative o NUMA usando a opção de inicialização **numa=off** para evitar que o kernel elimine esses processos.
 
 >[!NOTE]
 >
@@ -452,24 +452,20 @@ Para Windows x86:
 
 ### Requisitos para o AEM Forms PDF Generator {#requirements-for-aem-forms-pdf-generator}
 
-* Para testar as conversões do PDF no servidor SUSE® Linux® (SLES 15 SP6 ou posterior), verifique se você tem as seguintes configurações:
-   * Navegue até o arquivo `/etc/profile` e defina a variável de ambiente `OpenOffice_PATH` como `/opt/openoffice4` para configurá-lo globalmente.
-   * Instale a versão de 32 bits do OpenOffice.
-
 ### Suporte de software para PDF Generator {#software-support-for-pdf-generator}
 
 <table>
  <tbody>
   <tr>
    <th><p><strong>Produto</strong></p> </th>
-   <th><p><strong>Formatos compatíveis para conversão em PDF</strong></p> </th>
+   <th><p><strong>Formatos compatíveis com a conversão para o PDF</strong></p> </th>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">faixa clássica do Acrobat 2020</a> versão mais recente</td>
+   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">classic Acrobat 2020 faixa</a> versão mais recente</td>
    <td>XPS, formatos de imagem (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF e DWF</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat versão mais recente do classic faixa</a> de 2017 (obsoleta)</td>
+   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">faixa clássica do Acrobat 2017</a> versão mais recente (obsoleta)</td>
    <td>XPS, formatos de imagem (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF e DWF</td>
   </tr>
   <tr>
@@ -543,23 +539,23 @@ Para Windows x86:
 * Acrobat Pro DC, Acrobat Standard DC ou Adobe Acrobat Reader DC
 * Privilégios administrativos para instalar o Designer
 * Microsoft Visual C++ 2019 (VC 14.28 ou superior) tempo de execução de 32 bits para AEM Forms Designer de 32 bits
-* Microsoft Visual C++ 2019 (VC 14.28 ou superior) Tempo de execução de 64 bits para designer de AEM Forms de 64 bits (para pilha OSGI e JEE)
+* Microsoft Visual C++ 2019 (VC 14.28 ou superior) tempo de execução de 64 bits para AEM Forms Designer de 64 bits (para pilha OSGI e JEE)
 
-[Instalar e configurar AEM Forms designer](/help/forms/using/installing-configuring-designer.md)
+[Instalar e configurar o AEM Forms Designer](/help/forms/using/installing-configuring-designer.md)
 
 ### Requisitos para write-back de metadados do AEM Assets XMP {#requirements-for-aem-assets-xmp-metadata-write-back}
 
 O XMP write-back é compatível e habilitado para as seguintes plataformas e formatos de arquivo:
 
-* **Sistemas Operacionais:**
+* **Sistemas operacionais:**
 
    * Linux® (suporte para aplicativos de 32 e 32 bits em sistemas de 64 bits). Para obter as etapas para instalar bibliotecas de clientes de 32 bits, consulte [Como habilitar a extração e gravação do XMP no Red Hat® Linux® de 64 bits](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html).
 
    * Windows Server
    * macOS X (64 bits)
 
-* **Formatos** de Arquivo: JPEG, PNG, TIFF, PDF, INDD, IA e EPS.
+* **Formatos de Arquivo**: JPEG, PNG, TIFF, PDF, INDD, AI e EPS.
 
-### Requisitos para Ativos AEM processar ativos com metadados no Linux® {#assetsonlinux}
+### Requisitos para a AEM Assets processar ativos com muitos metadados no Linux® {#assetsonlinux}
 
-O processo XMPFilesProcessor requer a biblioteca GLIBC_2.14 para funcionar. Use um kernel Linux® que contenha GLIBC_2.14, por exemplo, kernel Linux® versão 3.1.x. Ele melhora o desempenho do processamento de ativos que contêm uma grande quantidade de metadados, como arquivos PSD. O uso de uma versão anterior de GLIBC leva a erros em logs que começam com `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP`.
+O processo XMPFilesProcessor exige que as biblioteca GLIBC_2.14 funcionem. Use um kernel do Linux® que contém GLIBC_2.14, por exemplo, o kernel do Linux® versão 3.1.x. Melhora o desempenho do processamento de ativos que contêm uma grande quantidade de metadados, curtir arquivos PSD. A utilização de uma versão anterior do GLIBC resulta em erros em logs que começam com `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP`.
