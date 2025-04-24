@@ -5,10 +5,10 @@ exl-id: cb7a9da2-7112-4ef0-b1cf-211a7df93625
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: d2e2f330dadb7c327324e53a17e8398ef3a473a9
 workflow-type: tm+mt
-source-wordcount: '1510'
-ht-degree: 63%
+source-wordcount: '1567'
+ht-degree: 61%
 
 ---
 
@@ -21,6 +21,13 @@ O controle de versão cria um “instantâneo” de uma página em um momento es
    * para desfazer uma alteração feita na página.
 * Comparar a versão atual de uma página com uma versão anterior:
    * para destacar diferenças no texto e nas imagens.
+
+>[!NOTE]
+>
+>Somente o conteúdo tem versão no repositório do AEM. Os recursos dinâmicos, como código, CSS e JavaScript, não têm controle de versão.
+>
+>* Ao visualizar versões, o conteúdo é exibido com o código atual, CSS e JavaScript do repositório.
+>* Ao restaurar versões, somente o conteúdo é restaurado e o código atual, CSS e JavaScript do repositório são aplicados a ele.
 
 ## Criar uma nova versão   {#creating-a-new-version}
 
