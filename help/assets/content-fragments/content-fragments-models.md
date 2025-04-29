@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User
 exl-id: 6fd1fdb2-d1d3-4f97-b119-ecfddcccec9e
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: c361d62beb93fc546f3ef2e53f52ff50bdcdc530
 workflow-type: tm+mt
-source-wordcount: '2310'
-ht-degree: 65%
+source-wordcount: '2343'
+ht-degree: 64%
 
 ---
 
@@ -105,6 +105,13 @@ Uma variedade de tipos de dados está disponível para a definição do seu mode
    * Adicionar um ou mais campos de uma única linha de texto; o comprimento máximo pode ser definido
 * **Texto multilinha**
    * Uma área de texto que pode ser Rich Text, Texto sem formatação ou Markdown
+
+     >[!NOTE]
+     >
+     Por motivos de desempenho, não é recomendável ter mais de dez campos de Rich Text em um modelo.
+     >
+     Se necessário, é recomendável usar [Fragmentos de conteúdo aninhados](#fragment-reference-nested-fragments) para distribuir a carga.
+
 * **Número**
    * Adicionar um ou mais campos numéricos
 * **Booleano**
