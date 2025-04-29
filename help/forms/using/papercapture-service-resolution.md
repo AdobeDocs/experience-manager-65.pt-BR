@@ -1,27 +1,28 @@
 ---
-title: Artigo de solução de problemas para resolver o problema quando o serviço PaperCapture falha ao executar operações de OCR (Optical Character Recognition, reconhecimento ótico de caracteres) no PDF.
-description: Saiba mais sobre as etapas para resolver o problema em que o serviço PaperCapture falha ao executar operações de OCR (Optical Character Recognition, reconhecimento ótico de caracteres) em PDF.
+title: Artigo de solução de problemas para resolver o problema de falha do serviço PaperCapture ao executar operações de OCR (Optical Character Recognition, reconhecimento ótico de caracteres) em PDFs.
+description: Saiba mais sobre as etapas para resolver o problema em que o serviço PaperCapture falha ao executar operações de OCR (Optical Character Recognition, reconhecimento ótico de caracteres) em PDFs.
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 exl-id: 64e120ee-5f16-4cd3-9ae9-95b165169e47
-source-git-commit: f9e98d7de24d516eab163d42f6c1c3155915856e
+source-git-commit: e030a71a0f52e22a803597122369cb111774f49b
 workflow-type: tm+mt
-source-wordcount: '196'
+source-wordcount: '200'
 ht-degree: 2%
 
 ---
 
 
-# O serviço PaperCature não executa a operação de OCRs em PDF
+# O serviço PaperCature não executa a operação de OCRs em PDFs
 
 ## Problema
 
-Depois de atualizar para o AEM Forms Service Pack 6.5.21.0, o serviço `PaperCapture` não executa operações de OCR (Reconhecimento Ótico de Caracteres) no PDF. O serviço não gera saída na forma de um PDF ou um arquivo de log.
+Depois de atualizar para o AEM Forms Service Pack 6.5.21.0 ou o AEM Forms Service Pack 6.5.22.0, o serviço `PaperCapture` falha ao executar operações de OCR (Reconhecimento Ótico de Caracteres) em PDFs. O serviço não gera saída na forma de um PDF ou um arquivo de log.
 
 ## Aplica-se a
 
 Esta solução aplica-se a:
+
 * AEM Forms em todos os servidores JEE (JBoss, Weblogic, Websphere)
 * AEM Forms em servidores OSGi
 
@@ -38,10 +39,10 @@ Esta solução aplica-se a:
      `..\Adobe\Adobe_Experience_Manager_Forms\crx-repository\bedrock\svcnative\PaperCaptureSvc`
    * **Configuração OSGi**:\
      `..\quickstart\crx-quickstart\bedrock\svcnative\PaperCaptureSvc`
-1. Pare o servidor de aplicativos AEM.
+1. Pare o servidor de aplicativos do AEM.
 1. Substituir o conteúdo existente da pasta `PaperCaptureSvc` pelo conteúdo copiado.
 1. Reinicie o servidor de aplicativos do AEM.
 
    >[!NOTE]
    >
-   > É recomendável usar o comando &quot;Ctrl + C&quot; para reiniciar o SDK. Reiniciar o SDK do AEM usando métodos alternativos, por exemplo, parar processos Java, pode levar a inconsistências no ambiente de desenvolvimento do AEM.
+   > É recomendável usar o comando &#39;Ctrl + C&#39; para reiniciar o SDK. Reiniciar o AEM SDK usando métodos alternativos, por exemplo, parar processos Java, pode levar a inconsistências no ambiente de desenvolvimento do AEM.
