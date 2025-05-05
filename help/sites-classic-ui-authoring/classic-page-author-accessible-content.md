@@ -312,7 +312,7 @@ Detalhes exatos de como criar um vídeo descrito por áudio estão fora do escop
 
 * [Noções sobre o Critério de sucesso 1.2.3](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc.html):
 * [Como cumprir o Critério de sucesso 1.2.3](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-media-equiv-audio-desc)
-* [Adobe Encore CS5](https://helpx.adobe.com/premiere-pro/using/whats-new.html)
+* [Adobe Encore CS5](https://helpx.adobe.com/br/premiere-pro/using/whats-new.html)
 
 ### Legendas (ao vivo) (1.2.4)        {#captions-live}
 

@@ -21,7 +21,7 @@ O <span class="preview"> Adobe recomenda o uso de [Componentes principais](https
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-components-to-an-adaptive-form/adaptive-forms-tables.html) |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-components-to-an-adaptive-form/adaptive-forms-tables.html?lang=pt-BR) |
 | AEM 6.5 | Este artigo |
 
 
@@ -173,7 +173,7 @@ Embora tabelas e linhas suportem apenas expressões de visibilidade para control
 
 A expressão de visibilidade de uma tabela ou linha pode ser definida na guia de propriedades Painel da caixa de diálogo Editar componente correspondente. As expressões de uma célula podem ser definidas na guia Script da caixa de diálogo Editar componente.
 
-Para obter a lista completa de classes de formulários adaptáveis, eventos, objetos e APIs públicas, consulte [Referência da API da biblioteca JavaScript para formulários adaptáveis](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html).
+Para obter a lista completa de classes de formulários adaptáveis, eventos, objetos e APIs públicas, consulte [Referência da API da biblioteca JavaScript para formulários adaptáveis](https://helpx.adobe.com/br/experience-manager/6-5/forms/javascript-api/index.html).
 
 ## Layouts móveis {#mobile-layouts}
 

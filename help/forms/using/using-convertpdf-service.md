@@ -34,9 +34,9 @@ Você pode usar o **Serviço ConvertPDF do AEMFD** no Console AEM para configura
 
 O serviço ConvertPDF fornece as duas APIs a seguir:
 
-* **[toPS](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/cpdf/api/ConvertPdfService.html#toPS)**: converte um documento PDF em um arquivo PostScript.
+* **[toPS](https://helpx.adobe.com/br/experience-manager/6-3/forms/javadocs/com/adobe/fd/cpdf/api/ConvertPdfService.html#toPS)**: converte um documento PDF em um arquivo PostScript.
 
-* **[toImage](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/cpdf/api/ConvertPdfService.html#toImage)**: converte um documento PDF em um arquivo de imagem. Os formatos de imagem compatíveis são JPEG, JPEG2000, PNG e TIFF.
+* **[toImage](https://helpx.adobe.com/br/experience-manager/6-3/forms/javadocs/com/adobe/fd/cpdf/api/ConvertPdfService.html#toImage)**: converte um documento PDF em um arquivo de imagem. Os formatos de imagem compatíveis são JPEG, JPEG2000, PNG e TIFF.
 
 ### Utilização da API toPS com um JSP ou Servlets {#using-tops-api-with-a-jsp-or-servlets}
 

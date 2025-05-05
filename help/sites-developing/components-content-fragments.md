@@ -32,7 +32,7 @@ Consulte a [API de gerenciamento de fragmento de conteúdo - lado do cliente](/h
 
 >[!CAUTION]
 >
->O [Componente principal do fragmento de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=pt-BR) agora é recomendado. Consulte [Desenvolvendo componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html) para obter mais detalhes.
+>O [Componente principal do fragmento de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=pt-BR) agora é recomendado. Consulte [Desenvolvendo componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=pt-BR) para obter mais detalhes.
 >
 >Esta seção detalha o componente original entregue para uso com fragmentos de conteúdo (**Fragmento de Conteúdo** no grupo **Geral**).
 

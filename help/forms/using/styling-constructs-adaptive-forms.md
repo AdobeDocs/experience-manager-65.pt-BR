@@ -25,7 +25,7 @@ Conhecimento de CSS e da estrutura LESS.
 
 ## O que pode ser personalizado {#what-can-be-customized}
 
-O artigo lista classes css de formulários adaptáveis disponíveis publicamente. Você pode usar essas classes para estilizar vários componentes de um formulário adaptável. O estilo dos componentes de criação, como caixas de diálogo e barras de status que exibem avisos, está fora do escopo deste artigo. Use estas construções de estilo para criar estilos (usando CSS ou Menos) somente quando não for possível estilizar componentes usando o [editor de temas](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html).
+O artigo lista classes css de formulários adaptáveis disponíveis publicamente. Você pode usar essas classes para estilizar vários componentes de um formulário adaptável. O estilo dos componentes de criação, como caixas de diálogo e barras de status que exibem avisos, está fora do escopo deste artigo. Use estas construções de estilo para criar estilos (usando CSS ou Menos) somente quando não for possível estilizar componentes usando o [editor de temas](https://helpx.adobe.com/br/experience-manager/6-3/forms/using/themes.html).
 
 ## Personalização de estilos em formulários adaptáveis {#customizing-styles-in-adaptive-forms}
 

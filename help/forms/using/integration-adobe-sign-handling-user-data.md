@@ -30,6 +30,6 @@ O formulário adaptável habilitado para [!DNL Adobe Sign] inclui informações 
 
 Os dados do usuário são coletados no contrato, mas não são salvos em nenhuma tabela de serviço. O [!DNL Adobe Sign] permite que os administradores façam suas próprias escolhas no gerenciamento dos dados que controlam no serviço. Os administradores de privacidade no serviço [!DNL Adobe Sign] podem listar ou remover contratos com base no endereço de email de um solicitante.
 
-[!DNL Adobe Sign] oferece um aplicativo Web que permite a pesquisa de contratos pelos participantes e, se necessário, a exclusão deles. Para obter mais informações, consulte [Adobe Sign - Recurso: Excluir Informações do Usuário](https://helpx.adobe.com/sign/help/adobesign_gdpr_user_deletion.html).
+[!DNL Adobe Sign] oferece um aplicativo Web que permite a pesquisa de contratos pelos participantes e, se necessário, a exclusão deles. Para obter mais informações, consulte [Adobe Sign - Recurso: Excluir Informações do Usuário](https://helpx.adobe.com/br/sign/help/adobesign_gdpr_user_deletion.html).
 
 Os dados de contratos para formulários adaptáveis configurados para usar a ação de envio do Forms Portal também são salvos no armazenamento de dados do Forms Portal. Para acessar e excluir dados do armazenamento de dados do Forms Portal, consulte [Forms Portal | Manipulando dados do usuário](/help/forms/using/forms-portal-handling-user-data.md).

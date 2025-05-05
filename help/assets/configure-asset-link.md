@@ -25,7 +25,7 @@ Para configurar o Experience Manager Assets para ser usado com o Asset Link, imp
 
 1. Para mapear usuários licenciados do Creative Cloud com usuários do Experience Manager, gerencie o [controle de acesso do usuário](#user-access).
 
-1. Crie o [índice de consulta personalizado](#create-custom-index), configure as [representações FPO](/help/assets/configure-fpo-renditions.md) para o InDesign, configure a [integração com o Adobe Stock](/help/assets/aem-assets-adobe-stock.md) e configure a [pesquisa visual ou de semelhança](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/search-assets.html#configvisualsearch).
+1. Crie o [índice de consulta personalizado](#create-custom-index), configure as [representações FPO](/help/assets/configure-fpo-renditions.md) para o InDesign, configure a [integração com o Adobe Stock](/help/assets/aem-assets-adobe-stock.md) e configure a [pesquisa visual ou de semelhança](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/search-assets.html?lang=pt-BR#configvisualsearch).
 
 ## Pré-requisitos e suporte para várias funcionalidades {#prerequisites}
 
@@ -54,7 +54,7 @@ A Adobe recomenda instalar o pacote de configuração [adobe-asset-link-config](
    Defina as propriedades a seguir e salve as alterações.
 
    * [!UICONTROL Mapeamentos de grupos]: deixe vazio, a menos que seja desejado. Para obter detalhes, consulte [Mapeamento de grupos](#group-mapping).
-   * [!UICONTROL Organização]: insira a ID da organização que você está usando na Adobe Admin Console. Para obter mais informações sobre IDs de organização, consulte [Criar grupo de usuários](https://helpx.adobe.com/enterprise/using/create-aal-user-group.html).
+   * [!UICONTROL Organização]: insira a ID da organização que você está usando na Adobe Admin Console. Para obter mais informações sobre IDs de organização, consulte [Criar grupo de usuários](https://helpx.adobe.com/br/enterprise/using/create-aal-user-group.html).
 
 1. Localize a configuração do **[!UICONTROL Manipulador de autenticação do portador do Adobe Granite]** e clique nele para editá-la.
 
@@ -116,7 +116,7 @@ Para configurar manualmente o Experience Manager:
 
 ## Configuração adicional após a migração para perfis empresariais {#configure-migration-activity}
 
-Os usuários do Adobe Asset Link podem se conectar ao Experience Manager para permitir o logon no IMS na organização principal do Creative Cloud para corporações (CCE). O Experience Manager usa as IDs do cliente para identificar a organização IMS permitida. Após a migração para Perfis comerciais, é necessário configurar a ID do cliente e a Chave secreta para a organização IMS no Experience Manager para o Manipulador de autenticação do portador. Para obter mais informações sobre Perfis comerciais, consulte [introdução aos Perfis Adobe](https://helpx.adobe.com/enterprise/kb/introducing-adobe-profiles.html).
+Os usuários do Adobe Asset Link podem se conectar ao Experience Manager para permitir o logon no IMS na organização principal do Creative Cloud para corporações (CCE). O Experience Manager usa as IDs do cliente para identificar a organização IMS permitida. Após a migração para Perfis comerciais, é necessário configurar a ID do cliente e a Chave secreta para a organização IMS no Experience Manager para o Manipulador de autenticação do portador. Para obter mais informações sobre Perfis comerciais, consulte [introdução aos Perfis Adobe](https://helpx.adobe.com/br/enterprise/kb/introducing-adobe-profiles.html).
 
 A configuração adicional é necessária somente se você estiver usando organizações diferentes do Adobe IMS para Experience Manager e Creative Cloud para corporações (CCE), e uma relação de confiança de domínio for estabelecida entre essas duas organizações.
 
@@ -243,7 +243,7 @@ No Experience Manager 6.4 e Experience Manager 6.5, os administradores podem con
 
 A configuração é útil para usuários e profissionais de marketing da linha de negócios, por exemplo, criar um fluxo de trabalho personalizado em algumas pastas específicas. Digamos que todos os ativos da sessão de fotos de uma agência possam ter uma marca d&#39;água ou que todos os ativos carregados por um freelancer possam ser processados para criar representações específicas.
 
-Para obter mais informações e para a configuração do Experience Manager, consulte [executar fluxo de trabalho automaticamente em ativos](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-workflow.html#auto-execute-workflow-on-some-assets).
+Para obter mais informações e para a configuração do Experience Manager, consulte [executar fluxo de trabalho automaticamente em ativos](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-workflow.html?lang=pt-BR#auto-execute-workflow-on-some-assets).
 
 
 ## Criar um índice personalizado nas versões do Experience Manager 6.4.x {#create-custom-index}
@@ -261,7 +261,7 @@ O Experience Manager contém índices que são usados para consulta. Crie o índ
 
 ## Configurar pesquisa visual ou por semelhança {#configure-visual-similarity-search}
 
-O recurso de pesquisa visual permite pesquisar ativos visualmente semelhantes no repositório do AEM Assets, usando o painel Adobe Asset Link. A funcionalidade está disponível na versão 6.5.0 ou posterior e somente os ativos indexados são pesquisados. Para obter mais informações, consulte [como configurar a pesquisa visual](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/search-assets.html#configvisualsearch).
+O recurso de pesquisa visual permite pesquisar ativos visualmente semelhantes no repositório do AEM Assets, usando o painel Adobe Asset Link. A funcionalidade está disponível na versão 6.5.0 ou posterior e somente os ativos indexados são pesquisados. Para obter mais informações, consulte [como configurar a pesquisa visual](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/search-assets.html?lang=pt-BR#configvisualsearch).
 
 ## Gerar para representações somente de posicionamento para o Adobe InDesign {#fpo-renditions}
 
@@ -283,7 +283,7 @@ Se você enfrentar problemas ao configurar ou usar o Adobe Asset Link, tente o s
 * Verifique se a implantação atende aos pré-requisitos. Especificamente, verifique se os pacotes ou pacotes de recursos apropriados estão instalados.
 * Entre em contato com o parceiro ou integrador de sistemas de sua organização.
 * Se os usuários do Creative Cloud não conseguirem verificar os ativos com check-out, verifique se há letras maiúsculas e minúsculas dos nomes de domínio nas IDs de email. Para corrigir, consulte [configuração manual](#manual-configuration).
-* Para obter mais informações, consulte [solucionar problemas do Asset Link](https://helpx.adobe.com/enterprise/kb/asset-link-troubleshooting.html).
+* Para obter mais informações, consulte [solucionar problemas do Asset Link](https://helpx.adobe.com/br/enterprise/kb/asset-link-troubleshooting.html).
 
 
 >[!MORELIKETHIS]

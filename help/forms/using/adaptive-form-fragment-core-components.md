@@ -207,4 +207,4 @@ Referencie fragmentos de formulário adaptável que você pode usar para criar s
 * [Criar ou personalizar temas de componentes principais com base em Forms adaptáveis](create-or-customize-themes-for-adaptive-forms-core-components.md)
 * [Criar um modelo de componentes principais baseado em Forms adaptativos](template-editor.md)
 * [Criar ou adicionar um formulário adaptável a um AEM Sites Página ou fragmento de experiência](create-or-add-an-adaptive-form-to-aem-sites-page.md)
-* [Modelos de temas de exemplo e modelos de dados de formulário](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
+* [Modelos de temas de exemplo e modelos de dados de formulário](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=pt-BR)

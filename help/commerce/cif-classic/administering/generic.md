@@ -168,7 +168,7 @@ Antes de criar produtos, defina um [scaffold](/help/sites-authoring/scaffolding.
 >
 >`/etc/commerce/products/...`
 >
->Isso significa que, por padrão, eles estão bloqueados pelo [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html), portanto, configure conforme necessário.
+>Isso significa que, por padrão, eles estão bloqueados pelo [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=pt-BR), portanto, configure conforme necessário.
 
 #### Edição de informações do produto - Interface otimizada para toque {#editing-product-information-touch-optimized-ui}
 

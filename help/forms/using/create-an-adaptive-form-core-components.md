@@ -43,13 +43,13 @@ Você precisará do seguinte para criar um formulário adaptável:
 
 * **Habilitar os Componentes Principais do Forms Adaptive para seu ambiente**: o projeto AEM Archetype versão 41 ou posterior é necessário para [habilitar os Componentes Principais para seu ambiente](/help/forms/using/enable-adaptive-forms-core-components.md). Ao habilitar os Componentes principais para o seu ambiente, o modelo **Forms adaptável (Componente principal)** e o tema da Tela são adicionados ao seu ambiente.
 
-* **Um modelo de formulário adaptável**: um modelo fornece uma estrutura básica e define a aparência (layouts e estilos) de um formulário adaptável. Ele tem componentes pré-formatados que contêm determinadas propriedades e estrutura de conteúdo. Também fornece as opções para definir um tema e uma ação de envio. O tema define a aparência, e a ação de envio define a ação a ser executada no envio de um formulário adaptável. Você também pode implantar [modelos de amostra](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) em seu ambiente. Isso o ajuda a começar a criar formulários rapidamente.
+* **Um modelo de formulário adaptável**: um modelo fornece uma estrutura básica e define a aparência (layouts e estilos) de um formulário adaptável. Ele tem componentes pré-formatados que contêm determinadas propriedades e estrutura de conteúdo. Também fornece as opções para definir um tema e uma ação de envio. O tema define a aparência, e a ação de envio define a ação a ser executada no envio de um formulário adaptável. Você também pode implantar [modelos de amostra](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=pt-BR) em seu ambiente. Isso o ajuda a começar a criar formulários rapidamente.
 
   >[!NOTE]
   >
   > Se você não tiver o modelo **Formulários adaptáveis (componente principal)** em seu ambiente, [Habilite os Componentes principais dos formulários adaptáveis para o seu ambiente](/help/forms/using/enable-adaptive-forms-core-components.md). Ao habilitar os componentes principais no seu ambiente, o modelo **Formulários adaptáveis (Componente principal)** será adicionado ao seu ambiente.
 
-* **Um tema de formulários adaptáveis**: um tema contém detalhes de estilo para os componentes e painéis. Os estilos incluem propriedades como cores de fundo, cores de estado, transparência, alinhamento e tamanho. Ao aplicar um tema, o estilo especificado é refletido nos componentes correspondentes.  O tema `Canvas` é adicionado por padrão quando você habilita os componentes principais para o seu ambiente. Você pode [baixar e personalizar os temas padrão](create-or-customize-themes-for-adaptive-forms-core-components.md). Para **temas prontos**, você pode implantar [temas de amostra](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) em seu ambiente. Isso o ajuda a começar a estilizar seus formulários e a fornecer uma estrutura básica para criar ou personalizar um tema de acordo com os requisitos da empresa.
+* **Um tema de formulários adaptáveis**: um tema contém detalhes de estilo para os componentes e painéis. Os estilos incluem propriedades como cores de fundo, cores de estado, transparência, alinhamento e tamanho. Ao aplicar um tema, o estilo especificado é refletido nos componentes correspondentes.  O tema `Canvas` é adicionado por padrão quando você habilita os componentes principais para o seu ambiente. Você pode [baixar e personalizar os temas padrão](create-or-customize-themes-for-adaptive-forms-core-components.md). Para **temas prontos**, você pode implantar [temas de amostra](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=pt-BR) em seu ambiente. Isso o ajuda a começar a estilizar seus formulários e a fornecer uma estrutura básica para criar ou personalizar um tema de acordo com os requisitos da empresa.
 
 * **Permissões**: adicionar usuários ao grupo [!DNL forms-users]. Os membros do grupo [!DNL forms-users] tem permissões para criar formulários adaptáveis. Para obter uma lista detalhada de grupos de usuários específicos de formulários, consulte [Grupos e permissões](forms-groups-privileges-tasks.md).
 
@@ -57,12 +57,12 @@ Você precisará do seguinte para criar um formulário adaptável:
 >[!NOTE]
 >
 >
-> In addition to the given themes and templates when you enable Core Components, you can also deploy the latest out-of-the box [sample themes and templates](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) to your AEM environment for use in Core Components based Adaptive Forms.
+> In addition to the given themes and templates when you enable Core Components, you can also deploy the latest out-of-the box [sample themes and templates](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=pt-BR) to your AEM environment for use in Core Components based Adaptive Forms.
 -->
 
 ## Criação de um Formulário adaptável {#create-an-adaptive-form}
 
-1. Faça logon na [instância de autor do AEM](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=en#author-and-publish-installs) local.
+1. Faça logon na [instância de autor do AEM](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=pt-BR#author-and-publish-installs) local.
 
 1. Insira suas credenciais na página de logon do Experience Manager. Depois de fazer logon, no canto superior esquerdo, selecione **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms e Documentos]**.
 
@@ -202,4 +202,4 @@ Para renomear um formulário adaptável, execute as seguintes etapas:
 
 * [Criar um formulário adaptável baseado nos Componentes principais](create-an-adaptive-form-core-components.md)
 * [Criar ou adicionar um formulário adaptável a uma página do AEM Sites ou a um fragmento de experiência](create-or-add-an-adaptive-form-to-aem-sites-page.md)
-* [Modelos de temas de exemplo e modelos de dados de formulário](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
+* [Modelos de temas de exemplo e modelos de dados de formulário](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=pt-BR)

@@ -92,9 +92,9 @@ Você pode encontrar o código desta página no GitHub
 
 Para obter mais detalhes, consulte o seguinte:
 
-* O [tópico Fragmentos de conteúdo no guia do usuário do Assets](https://helpx.adobe.com/experience-manager/6-4/assets/user-guide.html?topic=/experience-manager/6-4/assets/morehelp/content-fragments.ug.js)
+* O [tópico Fragmentos de conteúdo no guia do usuário do Assets](https://helpx.adobe.com/br/experience-manager/6-4/assets/user-guide.html?topic=/experience-manager/6-4/assets/morehelp/content-fragments.ug.js)
 
 * [Modelos de fragmentos do conteúdo](/help/assets/content-fragments/content-fragments-models.md)
 * [Criação com fragmentos de conteúdo](/help/sites-authoring/content-fragments.md)
 * [Exportador JSON para serviços de conteúdo](/help/sites-developing/json-exporter.md)
-* [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) e o [componente de Fragmento de Conteúdo](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html)
+* [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) e o [componente de Fragmento de Conteúdo](https://helpx.adobe.com/br/experience-manager/core-components/using/content-fragment-component.html)

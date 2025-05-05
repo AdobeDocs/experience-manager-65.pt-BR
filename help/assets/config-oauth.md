@@ -27,7 +27,7 @@ Consulte [configuração de serviços de conteúdo inteligente](#integrate-adobe
 
 >[!NOTE]
 >
->Se necessário, você pode enviar um tíquete de suporte seguindo o [processo de suporte](https://experienceleague.adobe.com/?lang=en&amp;support-tab=home#support).
+>Se necessário, você pode enviar um tíquete de suporte seguindo o [processo de suporte](https://experienceleague.adobe.com/pt-br?lang=en&amp;support-tab=home#support).
 
 ## Configuração do OAuth para os usuários existentes do AMS {#oauth-config-new-ams-users}
 
@@ -44,7 +44,7 @@ Uma configuração OAuth requer os seguintes pré-requisitos:
 
 ### Configuração do OAuth para o AMS existente e usuários locais {#steps-config-oauth-onprem}
 
-As etapas abaixo podem ser executadas pelo administrador do sistema no **CRXDE**. O cliente AMS pode entrar em contato com o representante da Adobe ou enviar um tíquete de suporte seguindo o [processo de suporte](https://experienceleague.adobe.com/?lang=en&amp;support-tab=home#support).
+As etapas abaixo podem ser executadas pelo administrador do sistema no **CRXDE**. O cliente AMS pode entrar em contato com o representante da Adobe ou enviar um tíquete de suporte seguindo o [processo de suporte](https://experienceleague.adobe.com/pt-br?lang=en&amp;support-tab=home#support).
 
 1. Adicionar ou atualizar as propriedades abaixo em `com.adobe.granite.auth.oauth.accesstoken.provider.<randomnumbers>.config`:
 
@@ -89,7 +89,7 @@ Os resultados da validação são exibidos no mesmo diálogo.
 
 >[!NOTE]
 >
->Se ocorrer o erro `unsupported_grant_type`, tente instalar o hotfix do Granite. Consulte [migração da conta de serviço (JWT) para as credenciais de servidor para servidor do OAuth](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-24660).
+>Se ocorrer o erro `unsupported_grant_type`, tente instalar o hotfix do Granite. Consulte [migração da conta de serviço (JWT) para as credenciais de servidor para servidor do OAuth](https://experienceleague.adobe.com/pt-br/docs/experience-cloud-kcs/kbarticles/ka-24660).
 
 ## Integrar ao Adobe Developer Console {#integrate-adobe-io}
 
@@ -198,4 +198,4 @@ Para configurar a integração, use os valores dos campos [!UICONTROL ID DA CONT
 >
 >* [Visão geral e como treinar Tags Inteligentes](enhanced-smart-tags.md)
 >* [Configurar marcação inteligente](config-smart-tagging.md)
->* [Tutorial em vídeo sobre marcas inteligentes](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)
+>* [Tutorial em vídeo sobre marcas inteligentes](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html?lang=pt-BR)

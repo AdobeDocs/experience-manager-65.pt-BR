@@ -23,7 +23,7 @@ Os Componentes principais do formulário adaptável permitem que os autores do f
 
 ## Pré-requisitos {#prerequisite-versioning}
 
-Para usar os recursos de controle de versão, comentário e anotação em um Formulário adaptável, verifique se os [Componentes principais do formulário adaptável](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components) estão habilitados no ambiente Forms do AEM 6.5.
+Para usar os recursos de controle de versão, comentário e anotação em um Formulário adaptável, verifique se os [Componentes principais do formulário adaptável](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components) estão habilitados no ambiente Forms do AEM 6.5.
 
 ## Versão do formulário adaptável {#adaptive-form-versioning}
 

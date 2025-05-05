@@ -43,7 +43,7 @@ Para carregar ativos para uso com o visualizador de Imagens panorâmicas, consul
 
 Para que o visualizador de imagens panorâmicas funcione corretamente no Adobe Experience Manager, sincronize as predefinições do visualizador de imagens panorâmicas com os metadados específicos do Dynamic Media Classic e do Dynamic Media Classic para que as predefinições do visualizador sejam atualizadas no JCR. Para fazer essa sincronização, configure o Dynamic Media Classic da seguinte maneira:
 
-1. Abra o [aplicativo de desktop do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) e entre na sua conta.
+1. Abra o [aplicativo de desktop do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=pt-BR#getting-started) e entre na sua conta.
 
 1. Próximo ao canto superior direito da página, selecione **[!UICONTROL Instalação]** > **[!UICONTROL Instalação do Aplicativo]** > **[!UICONTROL Instalação do Publish]** > **[!UICONTROL Servidor de Imagens]**.
 1. Na página Publish do Servidor de imagens, no menu suspenso **[!UICONTROL Publish Context]** próximo à parte superior, selecione **[!UICONTROL Servidor de imagens]**.

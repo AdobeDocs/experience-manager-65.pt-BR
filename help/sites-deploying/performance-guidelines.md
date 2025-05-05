@@ -304,7 +304,7 @@ No AEM, os dados binários podem ser armazenados independentemente dos nós de c
 
 >[!CAUTION]
 >
->O Micro Kernel do Banco de Dados Relacional está sob suporte restrito. Entre em contato com o [Atendimento ao cliente do Adobe](https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home#support) antes de usar esse tipo de Micro Kernel.
+>O Micro Kernel do Banco de Dados Relacional está sob suporte restrito. Entre em contato com o [Atendimento ao cliente do Adobe](https://experienceleague.adobe.com/pt-br?support-solution=General&amp;support-tab=home#support) antes de usar esse tipo de Micro Kernel.
 
 ![chlimage_1-3](assets/chlimage_1-3a.png)
 

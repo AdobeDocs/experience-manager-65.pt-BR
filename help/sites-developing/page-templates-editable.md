@@ -49,13 +49,13 @@ Este documento supõe que você já esteja familiarizado com a criação e ediç
 >[!NOTE]
 >
 >O tutorial a seguir também pode ser interessante para configurar um modelo de página editável em um novo projeto:
->[Introdução ao AEM Sites Parte 2 - Criação de uma Página Base e um Modelo](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/pages-templates.html)
+>[Introdução ao AEM Sites Parte 2 - Criação de uma Página Base e um Modelo](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/pages-templates.html?lang=pt-BR)
 
 ## Criação de um novo modelo {#creating-a-new-template}
 
 A criação de modelos editáveis é feita principalmente com o [console de modelo e o editor de modelo](/help/sites-authoring/templates.md), por um autor de modelo. Esta seção fornece uma visão geral desse processo e segue com uma descrição do que ocorre em nível técnico.
 
-Para obter informações sobre como usar modelos editáveis em um projeto AEM, consulte [Criação de um projeto AEM usando Lazybones](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/create-aem-project-structure-using-lazybones/m-p/186478).
+Para obter informações sobre como usar modelos editáveis em um projeto AEM, consulte [Criação de um projeto AEM usando Lazybones](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/create-aem-project-structure-using-lazybones/m-p/186478?profile.language=pt).
 
 Ao criar um modelo editável, você:
 
@@ -73,7 +73,7 @@ Ao criar um modelo editável, você:
    * A estrutura permite definir os componentes e o conteúdo para o modelo.
    * Os componentes definidos na estrutura do modelo não podem ser movidos em uma página resultante nem excluídos de qualquer página resultante.
 
-      * Se você estiver criando um modelo em uma pasta personalizada fora do conteúdo de exemplo do `We.Retail`, poderá escolher Componentes de base ou usar [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html).
+      * Se você estiver criando um modelo em uma pasta personalizada fora do conteúdo de exemplo do `We.Retail`, poderá escolher Componentes de base ou usar [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=pt-BR).
 
    * Se desejar que os autores de página possam adicionar e remover componentes, adicione um sistema de parágrafo ao modelo.
    * Os componentes podem ser desbloqueados e bloqueados novamente para permitir que você defina o conteúdo inicial.

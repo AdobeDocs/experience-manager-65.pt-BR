@@ -21,7 +21,7 @@ ht-degree: 3%
 
 >[!CAUTION]
 >
->Para uso da interface clássica, consulte a [documentação do AEM 6.3](https://helpx.adobe.com/experience-manager/6-3/help/sites-developing/workflows-models.html) para referência.
+>Para uso da interface clássica, consulte a [documentação do AEM 6.3](https://helpx.adobe.com/br/experience-manager/6-3/help/sites-developing/workflows-models.html) para referência.
 
 Você cria um [modelo de fluxo de trabalho](/help/sites-developing/workflows.md#model) para definir a série de etapas executadas quando um usuário inicia o fluxo de trabalho. Você também pode definir propriedades do modelo, como se o fluxo de trabalho é transitório ou usa vários recursos.
 

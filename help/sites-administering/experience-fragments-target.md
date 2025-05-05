@@ -48,7 +48,7 @@ Os fragmentos de experiência do AEM podem ser exportados para o espaço de trab
 >Para obter mais informações, consulte também:
 >
 >* [Desenvolvimento do Adobe Target](https://developers.adobetarget.com/)
->* [Componentes principais - Fragmentos de experiência](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/experience-fragment.html)
+>* [Componentes principais - Fragmentos de experiência](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/experience-fragment.html?lang=pt-BR)
 >
 
 ## Pré-requisitos {#prerequisites}
@@ -100,7 +100,7 @@ As opções necessárias podem ser selecionadas nas **Propriedades de página** 
    >
    >Consulte o componente principal:
    >
-   >[Componentes principais - Fragmentos de experiência](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/experience-fragment.html)
+   >[Componentes principais - Fragmentos de experiência](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/experience-fragment.html?lang=pt-BR)
 
    Em **Adobe Target**, selecione:
 
@@ -170,7 +170,7 @@ Para exportar um fragmento de experiência do AEM para o Target (depois de espec
 
 ## Usar os fragmentos de experiência no Adobe Target {#using-your-experience-fragments-in-adobe-target}
 
-Depois de executar as tarefas anteriores, o Fragmento de experiência é exibido na página Ofertas do Adobe Target. Consulte a [documentação específica do Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html) para saber mais sobre o que você pode realizar lá.
+Depois de executar as tarefas anteriores, o Fragmento de experiência é exibido na página Ofertas do Adobe Target. Consulte a [documentação específica do Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html?lang=pt-BR) para saber mais sobre o que você pode realizar lá.
 
 >[!NOTE]
 >

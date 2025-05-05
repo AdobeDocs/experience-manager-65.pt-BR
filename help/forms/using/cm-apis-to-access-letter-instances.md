@@ -40,7 +40,7 @@ O Gerenciamento de correspondências expõe as APIs para buscar instâncias de c
 
 ### Uso de getAllLetterInstances {#using-nbsp-getallletterinstances}
 
-A API a seguir encontra as instâncias de correspondência com base no objeto de consulta (Enviado e Rascunho). Se o objeto de consulta for nulo, ele retornará todas as instâncias de letras. Esta API retorna uma lista de objetos [LetterInstanceVO](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/dbforms/obj/LetterInstanceVO.html), que podem ser usados para extrair informações adicionais da instância de carta.
+A API a seguir encontra as instâncias de correspondência com base no objeto de consulta (Enviado e Rascunho). Se o objeto de consulta for nulo, ele retornará todas as instâncias de letras. Esta API retorna uma lista de objetos [LetterInstanceVO](https://helpx.adobe.com/br/aem-forms/6-2/javadocs/com/adobe/icc/dbforms/obj/LetterInstanceVO.html), que podem ser usados para extrair informações adicionais da instância de carta.
 
 **Sintaxe**: `List getAllLetterInstances(Query query) throws ICCException;`
 

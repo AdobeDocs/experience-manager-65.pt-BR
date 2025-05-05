@@ -105,7 +105,7 @@ Específico da loja:
 
 >[!NOTE]
 >
->Consulte também a [Referência da API do ContextHub](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/contexthub-api.html#ContextHubJavascriptAPIReference) completa
+>Consulte também a [Referência da API do ContextHub](https://helpx.adobe.com/br/experience-manager/6-5/sites/developing/using/contexthub-api.html#ContextHubJavascriptAPIReference) completa
 
 ## Adição de retornos de chamada de registro {#adding-record-callbacks}
 

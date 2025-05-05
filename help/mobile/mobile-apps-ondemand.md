@@ -22,7 +22,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->Se você não estiver usando o Adobe Experience Manager (AEM) como fonte de gerenciamento de conteúdo, consulte a [Ajuda do AEM Mobile On-demand Services](https://helpx.adobe.com/digital-publishing-solution/topics.html).
+>Se você não estiver usando o Adobe Experience Manager (AEM) como fonte de gerenciamento de conteúdo, consulte a [Ajuda do AEM Mobile On-demand Services](https://helpx.adobe.com/br/digital-publishing-solution/topics.html).
 
 >[!NOTE]
 >

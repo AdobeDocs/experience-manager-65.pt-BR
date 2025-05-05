@@ -18,7 +18,7 @@ ht-degree: 7%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-video-assets.html?lang=en) |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-video-assets.html?lang=pt-BR) |
 | AEM 6.5 | Este artigo |
 
 O formato de vídeo é uma parte essencial dos ativos digitais de uma organização. O [!DNL Adobe Experience Manager] oferece ofertas e recursos completos para gerenciar todo o ciclo de vida dos ativos de vídeo após sua criação.
@@ -44,7 +44,7 @@ Por padrão, o [!DNL Assets] não permite carregar nenhum ativo com mais de 2 GB
 Além da configuração do [!DNL Assets], altere as seguintes configurações para carregar ativos grandes:
 
 * Aumente o tempo de expiração do token. Consulte [!UICONTROL Servlet CSRF do Adobe Granite] no Console da Web em `https://[aem_server]:[port]/system/console/configMgr`. Para obter mais informações, consulte [Proteção CSRF](/help/sites-developing/csrf-protection.md).
-* Aumente o `receiveTimeout` na configuração do Dispatcher. Para obter mais informações, consulte [configuração do Experience Manager Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#renders-options).
+* Aumente o `receiveTimeout` na configuração do Dispatcher. Para obter mais informações, consulte [configuração do Experience Manager Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=pt-BR#renders-options).
 
 >[!NOTE]
 >
@@ -439,7 +439,7 @@ Agora você associa as tags adicionadas anteriormente aos ativos de vídeo. Esse
 1. No canto superior direito da página de propriedades do vídeo, clique em **[!UICONTROL Salvar e fechar]**.
 1. Na barra de ferramentas, clique em **[!UICONTROL Quick Publish]**.
 
-   Consulte também [Uso do Gerenciamento de Publicação com o Experience Manager Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/publication-management-feature-video-use.html).
+   Consulte também [Uso do Gerenciamento de Publicação com o Experience Manager Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/publication-management-feature-video-use.html?lang=pt-BR).
 
    Como opção, verifique o vídeo publicado no canal do YouTube.
 

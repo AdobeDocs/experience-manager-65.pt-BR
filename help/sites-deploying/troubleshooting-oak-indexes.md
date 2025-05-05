@@ -128,7 +128,7 @@ Para identificar e corrigir um processo de reindexação paralisado, faça o seg
 1. Depois de coletar todas as informações descritas na Etapa 1, reinicie o AEM.
 
    * Reiniciar o AEM pode resolver o problema se houver alta carga simultânea (estouro da fila de observação ou algo semelhante).
-   * Se uma reinicialização não resolver o problema, abra um problema no [Adobe Customer Care](https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home#support) e forneça todas as informações coletadas na Etapa 1.
+   * Se uma reinicialização não resolver o problema, abra um problema no [Adobe Customer Care](https://experienceleague.adobe.com/pt-br?support-solution=General&amp;support-tab=home#support) e forneça todas as informações coletadas na Etapa 1.
 
 ## Anular com segurança a reindexação assíncrona {#safely-aborting-asynchronous-re-indexing}
 

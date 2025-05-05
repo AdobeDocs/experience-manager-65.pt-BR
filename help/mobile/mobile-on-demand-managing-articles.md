@@ -30,9 +30,9 @@ Os artigos representam o texto com base na arte para transmitir informações.
 >
 >Consulte os seguintes recursos na Ajuda online para saber mais sobre os seguintes tópicos em aplicativos AEM Mobile:
 >
->* [Considerações sobre o design](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html)
+>* [Considerações sobre o design](https://helpx.adobe.com/br/digital-publishing-solution/help/design-app.html)
 >
->* [Gerenciar artigos](https://helpx.adobe.com/digital-publishing-solution/help/creating-articles.html)
+>* [Gerenciar artigos](https://helpx.adobe.com/br/digital-publishing-solution/help/creating-articles.html)
 >
 
 ## Criação de um artigo {#creating-an-article}

@@ -27,4 +27,4 @@ A solução se aplica ao AEM Forms no servidor JEE e ao AEM Forms no servidor OS
 
 ## Solução {#solution}
 
-Para resolver o problema, adicione um argumento `Dcom.adobe.livecycle.dsc.deferServiceStart=true` ao [arquivo de lote](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/command-line-start-and-stop.html#windows-platform-start-bat-script-example) durante a inicialização do servidor.
+Para resolver o problema, adicione um argumento `Dcom.adobe.livecycle.dsc.deferServiceStart=true` ao [arquivo de lote](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/command-line-start-and-stop.html?lang=pt-BR#windows-platform-start-bat-script-example) durante a inicialização do servidor.

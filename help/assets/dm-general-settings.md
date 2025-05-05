@@ -86,7 +86,7 @@ Na criação da conta, o Adobe Dynamic Media fornece automaticamente os servidor
 
   Controla a preservação de qualquer definição de corte manual existente.
 
-  Consulte também `preserveCrop` em [UploadPostJob](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-upload-post-job.html) e [ReprocessAssetsJob](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-reprocess-assets-job.html), ambos no Guia de Referência de Visualizadores do Dynamic Media.
+  Consulte também `preserveCrop` em [UploadPostJob](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-upload-post-job.html?lang=pt-BR) e [ReprocessAssetsJob](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-reprocess-assets-job.html?lang=pt-BR), ambos no Guia de Referência de Visualizadores do Dynamic Media.
 
 ## Opções de upload padrão {#default-upload-options}
 

@@ -22,7 +22,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Se você não estiver usando o Adobe Experience Manager (AEM) como fonte de gerenciamento de conteúdo, consulte a [Ajuda do AEM Mobile On-demand Services](https://helpx.adobe.com/digital-publishing-solution/topics.html).
+>Se você não estiver usando o Adobe Experience Manager (AEM) como fonte de gerenciamento de conteúdo, consulte a [Ajuda do AEM Mobile On-demand Services](https://helpx.adobe.com/br/digital-publishing-solution/topics.html).
 
 ## Admin do AEM {#aem-administrator}
 
@@ -36,7 +36,7 @@ Um ***administrador do AEM*** é responsável por adicionar um aplicativo ao cat
 
 >[!NOTE]
 >
->Para obter mais informações sobre como configurar grupos e permissões de AEM, clique em [Criar funções de usuário e conceder acesso](https://helpx.adobe.com/digital-publishing-solution/help/account-admin-dps.html) na Ajuda Online.
+>Para obter mais informações sobre como configurar grupos e permissões de AEM, clique em [Criar funções de usuário e conceder acesso](https://helpx.adobe.com/br/digital-publishing-solution/help/account-admin-dps.html) na Ajuda Online.
 
 Um administrador do AEM é responsável pelas seguintes tarefas ao criar um aplicativo usando o AEM Mobile On-demand Services:
 

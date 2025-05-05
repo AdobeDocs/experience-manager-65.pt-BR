@@ -22,7 +22,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Se você não estiver usando o Adobe Experience Manager (AEM) como fonte de gerenciamento de conteúdo, consulte a [Ajuda do AEM Mobile On-demand Services](https://helpx.adobe.com/digital-publishing-solution/topics.html).
+>Se você não estiver usando o Adobe Experience Manager (AEM) como fonte de gerenciamento de conteúdo, consulte a [Ajuda do AEM Mobile On-demand Services](https://helpx.adobe.com/br/digital-publishing-solution/topics.html).
 
 O AEM fornece várias ferramentas que permitem integrar seu conteúdo em aplicativos móveis.
 
@@ -32,7 +32,7 @@ O aplicativo AEM Preflight pode ser considerado um ambiente de teste para visual
 
 >[!NOTE]
 >
->Para saber mais detalhes sobre o aplicativo Comprovação, consulte [Usar o aplicativo Comprovação do AEM](https://helpx.adobe.com/digital-publishing-solution/help/preflight-app.html) na Ajuda do AEM Mobile On-demand Services.
+>Para saber mais detalhes sobre o aplicativo Comprovação, consulte [Usar o aplicativo Comprovação do AEM](https://helpx.adobe.com/br/digital-publishing-solution/help/preflight-app.html) na Ajuda do AEM Mobile On-demand Services.
 
 ![chlimage_1-171](assets/chlimage_1-171.png)
 
@@ -104,4 +104,4 @@ Para começar a usar as funções e responsabilidades de um Autor, consulte [Cri
 
 >[!NOTE]
 >
->Um autor de AEM também é responsável por configurar os direitos do, criar cartões e layouts e enviar notificações por push. Além disso, para obter mais informações sobre métodos de criação de conteúdo, gerenciamento de artigos e coleções, criação de banners, cartões e layouts no AEM Mobile, consulte o [AEM Mobile On-Demand Portal](https://helpx.adobe.com/digital-publishing-solution/topics.html#dynamicpod_reference_2).
+>Um autor de AEM também é responsável por configurar os direitos do, criar cartões e layouts e enviar notificações por push. Além disso, para obter mais informações sobre métodos de criação de conteúdo, gerenciamento de artigos e coleções, criação de banners, cartões e layouts no AEM Mobile, consulte o [AEM Mobile On-Demand Portal](https://helpx.adobe.com/br/digital-publishing-solution/topics.html#dynamicpod_reference_2).

@@ -50,7 +50,7 @@ Para um formulário adaptável, a opção de salvamento automático não é ativ
 
 1. (Somente salvamento automático baseado em evento) Execute as seguintes etapas para configurar opções para o salvamento automático baseado em evento.
 
-   1. Na caixa **Salvar automaticamente após este evento**, especifique um evento [GuideBridge](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html). O formulário é salvo sempre que a expressão é avaliada como TRUE.
+   1. Na caixa **Salvar automaticamente após este evento**, especifique um evento [GuideBridge](https://helpx.adobe.com/br/aem-forms/6/javascript-api/GuideBridge.html). O formulário é salvo sempre que a expressão é avaliada como TRUE.
 
 1. (Opcional) Para salvar automaticamente o conteúdo para usuários anônimos, selecione a opção **Habilitar salvamento automático para usuários anônimos** e clique em **[!UICONTROL OK]**.
 

@@ -18,7 +18,7 @@ ht-degree: 8%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/assets-insights.html?lang=en) |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/assets-insights.html?lang=pt-BR) |
 | AEM 6.5 | Este artigo |
 
 O recurso Assets Insights permite rastrear as classificações de usuários e as estatísticas de uso de imagens usadas em sites de terceiros, campanhas de marketing e soluções criativas de Adobe. Ele ajuda a obter insights sobre seu desempenho e popularidade.
@@ -27,7 +27,7 @@ O [!DNL Assets] Insights captura detalhes da atividade do usuário, como o núme
 
 Para que o [!DNL Assets] Insights capture estatísticas de uso de imagens de um site, você deve incluir o código de inserção da imagem no código do site.
 
-Para permitir que o Assets Insights exiba estatísticas de uso de ativos, primeiro configure o recurso para buscar dados de relatórios do Adobe Analytics. Para obter detalhes, consulte [Configurar o Assets Insights](/help/assets/configure-asset-insights.md). Para usar este recurso em uma instalação local, compre a licença do [!DNL Adobe Analytics] separadamente. Os clientes no [!DNL Managed Services] recebem a licença [!DNL Analytics] agrupada com o [!DNL Experience Manager]. Consulte [descrição do produto Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html).
+Para permitir que o Assets Insights exiba estatísticas de uso de ativos, primeiro configure o recurso para buscar dados de relatórios do Adobe Analytics. Para obter detalhes, consulte [Configurar o Assets Insights](/help/assets/configure-asset-insights.md). Para usar este recurso em uma instalação local, compre a licença do [!DNL Adobe Analytics] separadamente. Os clientes no [!DNL Managed Services] recebem a licença [!DNL Analytics] agrupada com o [!DNL Experience Manager]. Consulte [descrição do produto Managed Services](https://helpx.adobe.com/br/legal/product-descriptions/adobe-experience-manager-managed-services.html).
 
 >[!NOTE]
 >

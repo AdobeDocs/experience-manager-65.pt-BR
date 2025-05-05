@@ -200,7 +200,7 @@ O exemplo a seguir fornece as etapas para usar repetir para estruturar e renderi
    * Um arquivo de dados XML de amostra criado com base no dicionário de dados relevante ao visualizar a correspondência com dados de amostra.
    * Um arquivo de dados XML anexado ao dicionário de dados relevante.
 
-   Para obter mais informações, consulte [Dicionário de dados](https://helpx.adobe.com/aem-forms/6-2/data-dictionary.html).
+   Para obter mais informações, consulte [Dicionário de dados](https://helpx.adobe.com/br/aem-forms/6-2/data-dictionary.html).
 
    ![6_repetoutputpreview](assets/6_repeatoutputpreview.png)
 

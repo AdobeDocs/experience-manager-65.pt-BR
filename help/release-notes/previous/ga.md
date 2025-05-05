@@ -378,7 +378,7 @@ O [!DNL Experience Manager Sites] oferece recursos para criar páginas da Web e 
 
 O [!DNL Dynamic Media] fornece criação e entrega aprimoradas de mídia avançada no [!DNL Experience Manager Assets] para impulsionar experiências de última geração que são imersivas e personalizadas. Ao fazer upload de um único ativo principal de alta qualidade e usar a renderização de nuvem e visualizadores avançados do Adobe, você pode fornecer qualquer combinação de representações dinamicamente para oferecer suporte à estratégia de mídia de sua organização.
 
-Para obter mais detalhes sobre os novos recursos do [!DNL Dynamic Media], consulte as [Notas de Versão do Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/release-notes/s7rn2017.html).
+Para obter mais detalhes sobre os novos recursos do [!DNL Dynamic Media], consulte as [Notas de Versão do Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/release-notes/s7rn2017.html?lang=pt-BR).
 
 ##### Suporte a vídeo 360 {#video-support}
 
@@ -390,7 +390,7 @@ Agora é possível personalizar as miniaturas dos ativos de vídeo usando quadro
 
 ##### Aprimoramentos de acessibilidade {#accessibility-enhancements}
 
-[!DNL Dynamic Media] visualizadores agora oferecem suporte para recursos de acessibilidade aprimorados, como suporte para Aria, leitores de tela e texto alternativo. Para obter detalhes adicionais, consulte [Guia de Referência de Visualizadores](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html).
+[!DNL Dynamic Media] visualizadores agora oferecem suporte para recursos de acessibilidade aprimorados, como suporte para Aria, leitores de tela e texto alternativo. Para obter detalhes adicionais, consulte [Guia de Referência de Visualizadores](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html?lang=pt-BR).
 
 #### Aprimoramento da experiência de pesquisa {#experience-enhancement-for-searching}
 
@@ -437,7 +437,7 @@ Consulte o [Resumo dos novos recursos e melhorias no AEM 6.5 Forms](/help/forms/
 
 A Adobe está usando um modelo de desenvolvimento focado no cliente que permite que os clientes contribuam para todos os estágios do processo de desenvolvimento, durante a especificação, o desenvolvimento e o teste. Nossos agradecimentos vão para todos os clientes e parceiros que contribuíram neste processo.
 
-O Adobe tem os procedimentos e processos em vigor para permitir a coleta, a priorização e o rastreamento da resolução de erros focada no cliente e o desenvolvimento de solicitações de aprimoramento. O [Portal de suporte do Experience Manager](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;lang=pt-BR#support) está integrado ao Sistema de Aperfeiçoamento de Adobe e Rastreamento de Falhas. As dúvidas do cliente são identificadas e resolvidas pela equipe de Suporte ao cliente, quando possível. Quando encaminhadas para P&amp;D, todas as informações do cliente são capturadas e usadas para priorização e geração de relatórios. No desenvolvimento, é dada prioridade ao suporte pago, aos problemas de garantia e aos aprimoramentos pagos pelo cliente.
+O Adobe tem os procedimentos e processos em vigor para permitir a coleta, a priorização e o rastreamento da resolução de erros focada no cliente e o desenvolvimento de solicitações de aprimoramento. O [Portal de suporte do Experience Manager](https://experienceleague.adobe.com/pt-br?support-solution=Experience+Manager&amp;lang=pt-BR#support) está integrado ao Sistema de Aperfeiçoamento de Adobe e Rastreamento de Falhas. As dúvidas do cliente são identificadas e resolvidas pela equipe de Suporte ao cliente, quando possível. Quando encaminhadas para P&amp;D, todas as informações do cliente são capturadas e usadas para priorização e geração de relatórios. No desenvolvimento, é dada prioridade ao suporte pago, aos problemas de garantia e aos aprimoramentos pagos pelo cliente.
 
 Esse processo de priorização produziu mais de 750 alterações focadas no cliente corrigidas no AEM 6.5.
 
@@ -447,7 +447,7 @@ Esse processo de priorização produziu mais de 750 alterações focadas no clie
 
 * Quickstart Autônomo: `cq-quickstart-6.5.0.jar`.
 * Início Rápido do Servidor de Aplicativos: `cq-quickstart-6.5.0.war`.
-* Dispatcher 4.3.2 ou posterior para os vários servidores e plataformas da Web. Consulte [link de download](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html)
+* Dispatcher 4.3.2 ou posterior para os vários servidores e plataformas da Web. Consulte [link de download](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html?lang=pt-BR)
 * Plug-in para Eclipse IDE ([leia mais e baixe](/help/sites-developing/aem-eclipse.md))
 
 * Extensão para o Editor de Código de Colchetes ([leia mais e baixe](/help/sites-developing/aem-brackets.md))
@@ -480,7 +480,7 @@ Esse processo de priorização produziu mais de 750 alterações focadas no clie
 
 **Forms**
 
-* [Pacotes para recursos do AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
+* [Pacotes para recursos do AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=pt-BR)
 * [SDK do cliente OSGi do AEM Forms](https://repo1.maven.org/maven2/com/adobe/aemfd/aemfd-client-sdk/)
 
 ## Idiomas {#languages}
@@ -601,4 +601,4 @@ Os seguintes sites estão disponíveis somente para clientes do. Se você for um
 
 * Atualizações, patches e pacotes de produtos para funcionalidade adicional na [Distribuição de Software](https://experience.adobe.com/#/downloads/content/software-distribution/br/aem.html).
 
-* [Suporte ao Cliente via Admin Console](https://adminconsole.adobe.com/). Para obter mais informações, consulte [Nova experiência de suporte ao cliente do Adobe](https://experienceleague.adobe.com/docs/customer-one/using/home.html).
+* [Suporte ao Cliente via Admin Console](https://adminconsole.adobe.com/). Para obter mais informações, consulte [Nova experiência de suporte ao cliente do Adobe](https://experienceleague.adobe.com/docs/customer-one/using/home.html?lang=pt-BR).

@@ -180,7 +180,7 @@ Para o gerenciamento de usuários no AEM (incluindo a atribuição de direitos d
 
 O Dispatcher é a ferramenta de armazenamento em cache, balanceamento de carga ou ambos da Adobe Experience Manager. Ele pode ser usado com um servidor Web de classe empresarial.
 
-Consulte [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=pt-BR) para obter os detalhes completos, em particular [Configurando o Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html) para obter mais detalhes sobre a configuração.
+Consulte [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=pt-BR) para obter os detalhes completos, em particular [Configurando o Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=pt-BR) para obter mais detalhes sobre a configuração.
 
 ### Configuração do conector de LiveCycle AEM {#configuring-aem-livecycle-connector}
 

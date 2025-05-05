@@ -87,17 +87,17 @@ Para configurar os recursos do Analytics for Communities, é necessário trabalh
 
 ## Conjunto de relatórios Adobe Analytics para relatórios de vídeo {#adobe-analytics-report-suite-for-video-reporting}
 
-Usando o [Gerenciador de conjunto de relatórios](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/new-report-suite.html) da Adobe Experience Cloud, os conjuntos de relatórios do Analytics podem ser configurados para que um site da comunidade possa ser habilitado para fornecer relatórios para os recursos das Comunidades.
+Usando o [Gerenciador de conjunto de relatórios](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/new-report-suite.html?lang=pt-BR) da Adobe Experience Cloud, os conjuntos de relatórios do Analytics podem ser configurados para que um site da comunidade possa ser habilitado para fornecer relatórios para os recursos das Comunidades.
 
-Ao entrar no [Adobe Experience Cloud](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html) com [Nome da Empresa e Nome de Usuário](/help/communities/analytics.md#prerequisites), é possível configurar um conjunto de relatórios novo ou existente para ter:
+Ao entrar no [Adobe Experience Cloud](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=pt-BR) com [Nome da Empresa e Nome de Usuário](/help/communities/analytics.md#prerequisites), é possível configurar um conjunto de relatórios novo ou existente para ter:
 
-* [11 Variáveis de conversão](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/conversion-var-admin.html) (eVars)
+* [11 Variáveis de conversão](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/conversion-var-admin.html?lang=pt-BR) (eVars)
 
    * Habilitado de **`evar1`** a **`evar11`**
 
    * Pode redefinir (renomear) eVars existentes ou criar outras para usar nos recursos das comunidades
 
-* [Eventos bem-sucedidos](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/success-events/success-event.html) (eventos)
+* [Eventos bem-sucedidos](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/success-events/success-event.html?lang=pt-BR) (eventos)
 
    * Habilitado de **`event1`** a **`event7`**
 
@@ -107,7 +107,7 @@ Ao entrar no [Adobe Experience Cloud](https://experienceleague.adobe.com/docs/an
 
    * Pode redefinir (renomear) eventos existentes ou criar eventos para usar nos recursos das Comunidades
 
-* [Gerenciamento de vídeo](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html)
+* [Gerenciamento de vídeo](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=pt-BR)
 
    * Console de relatório de vídeo
 
@@ -659,6 +659,6 @@ O Adobe Analytics fornece APIs que permitem acessar, exportar e excluir dados do
 
 ## Recursos {#resources}
 
-* Adobe Experience Cloud: [Ajuda e referência do Analytics](https://experienceleague.adobe.com/docs/analytics.html)
+* Adobe Experience Cloud: [Ajuda e referência do Analytics](https://experienceleague.adobe.com/docs/analytics.html?lang=pt-BR)
 * AEM: [Integrando com o Adobe Analytics](/help/sites-administering/adobeanalytics.md)
 * AEM: [Analytics com provedores externos](/help/sites-administering/external-providers.md)

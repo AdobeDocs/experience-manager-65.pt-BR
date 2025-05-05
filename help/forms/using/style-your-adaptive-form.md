@@ -23,7 +23,7 @@ Este tutorial é uma etapa da série [Criar o primeiro formulário adaptável](h
 
 ## Sobre o tutorial  {#about-the-tutorial}
 
-É possível usar temas para fornecer uma aparência e um estilo exclusivos a um formulário adaptável. Você pode aplicar temas prontos para uso fornecidos com o editor de formulários adaptáveis ou criar temas personalizados próprios. O AEM [!DNL Forms] fornece um [editor de temas](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html) para criar temas personalizados. Um único tema pode fornecer a aparência diferente para o mesmo formulário adaptável aberto em dispositivos móveis, tablets ou áreas de trabalho. Qualquer conhecimento prévio de CSS ou MENOS não é necessário para usar o editor de temas, mas é desejável.
+É possível usar temas para fornecer uma aparência e um estilo exclusivos a um formulário adaptável. Você pode aplicar temas prontos para uso fornecidos com o editor de formulários adaptáveis ou criar temas personalizados próprios. O AEM [!DNL Forms] fornece um [editor de temas](https://helpx.adobe.com/br/experience-manager/6-3/forms/using/themes.html) para criar temas personalizados. Um único tema pode fornecer a aparência diferente para o mesmo formulário adaptável aberto em dispositivos móveis, tablets ou áreas de trabalho. Qualquer conhecimento prévio de CSS ou MENOS não é necessário para usar o editor de temas, mas é desejável.
 
 No final do tutorial, você poderá fazer o seguinte:
 

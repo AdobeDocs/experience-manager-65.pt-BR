@@ -70,7 +70,7 @@ Você pode aproveitar ao máximo esse recurso utilizando as seguintes opções:
 
 +++  Ativar os Componentes principais adaptáveis do Forms para o seu ambiente
 
-Verifique se os [Componentes principais adaptáveis do Forms estão habilitados para o seu ambiente](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/quick-setup/enable-headless-adaptive-forms-and-core-components.html?lang=en).
+Verifique se os [Componentes principais adaptáveis do Forms estão habilitados para o seu ambiente](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/quick-setup/enable-headless-adaptive-forms-and-core-components.html?lang=pt-BR).
 
 +++
 

@@ -51,4 +51,4 @@ Siga estas etapas para definir o URL da instância do Publish para o gerenciador
 
 1. Clique em **[!UICONTROL Salvar]**.
 
-Para obter mais informações sobre como configurar o Gerenciamento de Correspondências, consulte [Propriedades de Configuração do Gerenciamento de Correspondências](https://helpx.adobe.com/aem-forms/6-2/cm-configuration-properties.html).
+Para obter mais informações sobre como configurar o Gerenciamento de Correspondências, consulte [Propriedades de Configuração do Gerenciamento de Correspondências](https://helpx.adobe.com/br/aem-forms/6-2/cm-configuration-properties.html).

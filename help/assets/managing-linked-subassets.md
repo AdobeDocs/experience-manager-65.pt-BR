@@ -27,7 +27,7 @@ As referências são resolvidas com base no caminho, na ID do documento e na ID 
 
 Você pode fazer referência a ativos digitais existentes em um arquivo do [!DNL Adobe Illustrator].
 
-1. Usando o [[!DNL Experience Manager] aplicativo de desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html), busque os ativos digitais no sistema de arquivos local. Navegue até o local do sistema de arquivos do ativo que deseja referenciar.
+1. Usando o [[!DNL Experience Manager] aplicativo de desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=pt-BR), busque os ativos digitais no sistema de arquivos local. Navegue até o local do sistema de arquivos do ativo que deseja referenciar.
 1. Arraste o ativo da pasta local para o arquivo [!DNL Illustrator].
 
 1. Salve o arquivo [!DNL Illustrator] na unidade montada ou [carregue](/help/assets/manage-assets.md#uploading-assets) no repositório [!DNL Experience Manager].
@@ -65,14 +65,14 @@ Este procedimento é semelhante a [adicionar ativos digitais como referências n
 ### Criar referências a ativos exportando um arquivo ZIP {#create-references-to-aem-assets-by-exporting-a-zip-file}
 
 1. Execute as etapas em [Criar modelos de fluxo de trabalho](/help/sites-developing/workflows-models.md) para criar um fluxo de trabalho.
-1. Use o [recurso Pacote](https://helpx.adobe.com/indesign/how-to/indesign-package-files-for-handoff.html) de [!DNL Adobe InDesign] para exportar o documento. [!DNL Adobe InDesign] pode exportar um documento e os ativos vinculados como um pacote. Nesse caso, a pasta exportada contém uma pasta `Links` que contém subativos no arquivo [!DNL InDesign]. A pasta `Links` está presente na mesma pasta que o arquivo INDD.
+1. Use o [recurso Pacote](https://helpx.adobe.com/br/indesign/how-to/indesign-package-files-for-handoff.html) de [!DNL Adobe InDesign] para exportar o documento. [!DNL Adobe InDesign] pode exportar um documento e os ativos vinculados como um pacote. Nesse caso, a pasta exportada contém uma pasta `Links` que contém subativos no arquivo [!DNL InDesign]. A pasta `Links` está presente na mesma pasta que o arquivo INDD.
 1. Crie um arquivo ZIP e carregue-o no repositório [!DNL Experience Manager].
 1. Inicie o fluxo de trabalho `Unarchiver`.
 1. Quando o fluxo de trabalho é concluído, as referências na pasta Links são automaticamente referenciadas como subativos. Para exibir uma lista de ativos referenciados, navegue até a página de detalhes do ativo [!DNL InDesign] e feche o [Painel](/help/sites-authoring/basic-handling.md#rail-selector).
 
 ## [!DNL Adobe Photoshop]: adicionar ativos digitais como referências {#refps}
 
-1. Use o aplicativo de desktop [!DNL Experience Manager] para acessar [!DNL Experience Manager Assets]. Baixe e revele os ativos no sistema de arquivos local. Usar a funcionalidade [!UICONTROL Colocar Vinculado] em [!DNL Adobe Photoshop]. Consulte [colocar ativos no aplicativo de desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#place-assets-in-native-documents).
+1. Use o aplicativo de desktop [!DNL Experience Manager] para acessar [!DNL Experience Manager Assets]. Baixe e revele os ativos no sistema de arquivos local. Usar a funcionalidade [!UICONTROL Colocar Vinculado] em [!DNL Adobe Photoshop]. Consulte [colocar ativos no aplicativo de desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=pt-BR#place-assets-in-native-documents).
 
 1. Salve no arquivo [!DNL Photoshop] na unidade montada ou [carregue](/help/assets/manage-assets.md#uploading-assets) no repositório [!DNL Experience Manager].
 1. Após a conclusão do fluxo de trabalho, as referências aos [!DNL Experience Manager] ativos existentes são listadas na página de detalhes do ativo.
@@ -125,7 +125,7 @@ Para [!DNL InDesign], você pode extrair páginas usando [!DNL InDesign Server].
 
 As seguintes opções estão disponíveis na barra de ferramentas, no painel à esquerda e nos controles do Visualizador de páginas:
 
-* **[!UICONTROL Ações da área de trabalho]** para abrir ou revelar um subativo específico usando o aplicativo de desktop [!DNL Experience Manager]. Veja como [configurar ações da área de trabalho](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2) se estiver usando o aplicativo de área de trabalho [!DNL Experience Manager].
+* **[!UICONTROL Ações da área de trabalho]** para abrir ou revelar um subativo específico usando o aplicativo de desktop [!DNL Experience Manager]. Veja como [configurar ações da área de trabalho](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=pt-BR#desktopactions-v2) se estiver usando o aplicativo de área de trabalho [!DNL Experience Manager].
 
 * A opção **[!UICONTROL Propriedades]** abre a página [!UICONTROL Propriedades] do subativo específico.
 
@@ -141,7 +141,7 @@ As seguintes opções estão disponíveis na barra de ferramentas, no painel à 
 
 >[!MORELIKETHIS]
 >
->* [Usar o aplicativo de desktop do Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html)
->* [Configurar Ações da Área de Trabalho no Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2)
->* [Criar Objetos Inteligentes Vinculados no Adobe Photoshop](https://helpx.adobe.com/photoshop/using/create-smart-objects.html#create-linked-smart-objects)
->* [Inserir elementos gráficos no Adobe InDesign](https://helpx.adobe.com/indesign/using/placing-graphics.html)
+>* [Usar o aplicativo de desktop do Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=pt-BR)
+>* [Configurar Ações da Área de Trabalho no Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=pt-BR#desktopactions-v2)
+>* [Criar Objetos Inteligentes Vinculados no Adobe Photoshop](https://helpx.adobe.com/br/photoshop/using/create-smart-objects.html#create-linked-smart-objects)
+>* [Inserir elementos gráficos no Adobe InDesign](https://helpx.adobe.com/br/indesign/using/placing-graphics.html)

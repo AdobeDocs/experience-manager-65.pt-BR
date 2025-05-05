@@ -41,9 +41,9 @@ Para que o LDAP funcione com AEM, você deve criar três configurações OSGi:
 
 >[!NOTE]
 >
->Assista ao [Módulo de Logon Externo do Oak - Autenticação com LDAP e posterior](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-oak-external-login-module-authenticating-with-ldap-and-beyond.html) para aprofundar Módulos de Logon Externos.
+>Assista ao [Módulo de Logon Externo do Oak - Autenticação com LDAP e posterior](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-oak-external-login-module-authenticating-with-ldap-and-beyond.html?lang=pt-BR) para aprofundar Módulos de Logon Externos.
 >
->Para ler um exemplo de configuração do Experience Manager com o Apache DS, consulte [Configurando o Adobe Experience Manager 6.5 para usar o Apache Diretory Service.](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/configuring-adobe-experience-manager-6-to-use-apache-directory/m-p/183805)
+>Para ler um exemplo de configuração do Experience Manager com o Apache DS, consulte [Configurando o Adobe Experience Manager 6.5 para usar o Apache Diretory Service.](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/configuring-adobe-experience-manager-6-to-use-apache-directory/m-p/183805?profile.language=pt)
 
 ## Configuração do provedor de identidade LDAP {#configuring-the-ldap-identity-provider}
 

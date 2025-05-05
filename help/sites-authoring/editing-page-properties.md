@@ -98,7 +98,7 @@ As propriedades são distribuídas por várias guias.
   >* Não deve ser definido como uma página existente.
   >
 
-  Configure o Dispatcher para habilitar o acesso a URLs personalizados. Consulte [Habilitando o acesso a URLs personalizados](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-access-to-vanity-urls-vanity-urls) para obter mais detalhes.
+  Configure o Dispatcher para habilitar o acesso a URLs personalizados. Consulte [Habilitando o acesso a URLs personalizados](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=pt-BR#enabling-access-to-vanity-urls-vanity-urls) para obter mais detalhes.
 
 * **Redirecionar URL do Vanity**
 
@@ -190,7 +190,7 @@ Mostra a imagem em miniatura da página. É possível:
 
 * **Compartilhamento em rede social**
 
-  Define as opções de compartilhamento disponíveis na página. Expõe as opções disponíveis para o [Componente principal de Compartilhamento](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/sharing.html).
+  Define as opções de compartilhamento disponíveis na página. Expõe as opções disponíveis para o [Componente principal de Compartilhamento](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/sharing.html?lang=pt-BR).
 
    * **Habilitar compartilhamento de usuários para o Facebook**
    * **Habilitar compartilhamento de usuários para o Pinterest**

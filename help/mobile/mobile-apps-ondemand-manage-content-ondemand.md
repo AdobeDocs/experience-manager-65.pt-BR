@@ -34,7 +34,7 @@ Se você pensar em uma revista on-line, o conteúdo principal inclui artigos, an
 
 >[!NOTE]
 >
->Para saber mais sobre as considerações de design para aplicativos do AEM Mobile, consulte [Considerações de design para aplicativos do AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) na Ajuda Online.
+>Para saber mais sobre as considerações de design para aplicativos do AEM Mobile, consulte [Considerações de design para aplicativos do AEM Mobile](https://helpx.adobe.com/br/digital-publishing-solution/help/design-app.html) na Ajuda Online.
 
 ## Criação e gerenciamento de conteúdo {#creating-and-managing-content}
 

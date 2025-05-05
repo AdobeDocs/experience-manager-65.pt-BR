@@ -67,7 +67,7 @@ Para solucionar problemas, faça o seguinte:
 
 >[!NOTE]
 >
->Consulte também [Analisar problemas de memória](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html).
+>Consulte também [Analisar problemas de memória](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=pt-BR).
 
 
 O próprio CRX tem pouco espaço de memória. Se a aplicação em execução no CRX tiver requisitos de memória maiores ou solicitar operações com muita memória (por exemplo, transações grandes), a instância da JVM em que o CRX é executado deverá ser iniciada com configurações de memória apropriadas.

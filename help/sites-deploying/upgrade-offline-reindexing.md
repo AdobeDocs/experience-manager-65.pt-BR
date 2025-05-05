@@ -180,7 +180,7 @@ Abaixo você encontrará algumas dicas úteis e instruções para solução de p
 
 ### Preparar um Runbook e uma Execução de Avaliação {#prepare-a-runbook-and-trial-run}
 
-É recomendável preparar um [runbook](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/upgrade-planning.html#building-the-upgrade-and-rollback-runbook) e executar algumas avaliações antes de executar a atualização em produção.
+É recomendável preparar um [runbook](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/upgrade-planning.html?lang=pt-BR#building-the-upgrade-and-rollback-runbook) e executar algumas avaliações antes de executar a atualização em produção.
 
 ### Modo De Passagem De Documentos Com Indexação Offline {#doc-traversal-mode-with-offline-indexing}
 

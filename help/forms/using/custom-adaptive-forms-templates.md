@@ -24,7 +24,7 @@ ht-degree: 0%
 
 ## Pré-requisitos {#prerequisites}
 
-* Noções básicas sobre o AEM [Modelo de página](/help/sites-authoring/templates.md) e [Criação de formulário adaptável](https://helpx.adobe.com/aem-forms/6-1/introduction-forms-authoring.html)
+* Noções básicas sobre o AEM [Modelo de página](/help/sites-authoring/templates.md) e [Criação de formulário adaptável](https://helpx.adobe.com/br/aem-forms/6-1/introduction-forms-authoring.html)
 
 * Noções básicas sobre [Bibliotecas do lado do cliente](/help/sites-developing/clientlibs.md) do AEM
 

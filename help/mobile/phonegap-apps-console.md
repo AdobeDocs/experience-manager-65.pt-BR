@@ -77,7 +77,7 @@ Você também pode fornecer um arquivo de imagem para usar como miniatura do apl
 Existem guias adicionais (e opcionais) para o serviço de nuvem de build e para integrar o plug-in Adobe Mobile Services SDK ao seu aplicativo.
 
 * Build: clique em gerenciar configurações e configure o serviço de build build.phonegap.com aqui. Em seguida, no menu suspenso, é possível selecionar o serviço de nuvem do PhoneGap Build recém-criado.
-* Analytics: clique em gerenciar configurações e configure o serviço de nuvem [Adobe Mobile Services SDK](https://experienceleague.adobe.com/docs/mobile-services/using/home.html). Em seguida, no menu suspenso, é possível selecionar o Mobile Service recém-criado para integrar ao aplicativo móvel.
+* Analytics: clique em gerenciar configurações e configure o serviço de nuvem [Adobe Mobile Services SDK](https://experienceleague.adobe.com/docs/mobile-services/using/home.html?lang=pt-BR). Em seguida, no menu suspenso, é possível selecionar o Mobile Service recém-criado para integrar ao aplicativo móvel.
 
 >[!NOTE]
 >

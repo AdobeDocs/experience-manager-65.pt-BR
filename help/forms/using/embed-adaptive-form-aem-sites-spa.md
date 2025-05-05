@@ -34,7 +34,7 @@ Para incorporar um formulário adaptável ou a Comunicação interativa em um SP
 * Java SE Development Kit 8 ou mais recente
 * Apache Maven 3.3.1 ou mais recente
 * Instância de autor AEM
-* [pacote complementar do AEM Forms 6.4.2](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) na instância do autor
+* [pacote complementar do AEM Forms 6.4.2](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html) na instância do autor
 
 ## Instalar o componente de Contêiner do AEM Forms SPA {#install-aem-forms-spa-container-component}
 

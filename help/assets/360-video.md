@@ -40,7 +40,7 @@ Amostra de ![360 vídeos com a estação espacial internacional flutuando no esp
 
 Você pode usar o Adobe Premier Pro para visualizar e editar a gravação 360/VR. Por exemplo, você pode colocar logotipos e texto corretamente em uma cena e aplicar efeitos e transições projetados especificamente para mídia quadrretangular.
 
-Consulte [Editar vídeo 360/VR](https://helpx.adobe.com/premiere-pro/how-to/edit-360-vr-video.html).
+Consulte [Editar vídeo 360/VR](https://helpx.adobe.com/br/premiere-pro/how-to/edit-360-vr-video.html).
 
 ## Fazer upload de ativos para uso com o visualizador de vídeo 360 {#uploading-assets-for-use-with-the-video-viewer}
 

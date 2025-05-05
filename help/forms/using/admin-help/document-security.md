@@ -24,7 +24,7 @@ A segurança de documentos garante que somente usuários autorizados possam usar
 * Arquivos do Adobe PDF
 * Arquivos do Microsoft® Word, Excel e PowerPoint
 
-Para obter mais informações sobre como as políticas protegem os tipos de arquivos aceitos, consulte [mais informações de segurança de documentos](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-security/document-security-offerings.html?lang=en).
+Para obter mais informações sobre como as políticas protegem os tipos de arquivos aceitos, consulte [mais informações de segurança de documentos](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-security/document-security-offerings.html?lang=pt-BR).
 
 Usando a segurança de documentos, você pode criar, armazenar e aplicar facilmente configurações de confidencialidade predefinidas a seus documentos. Para evitar que as informações se espalhem além do seu alcance, você também pode monitorar e controlar como os recipients usam seus documentos depois de distribuí-los.
 

@@ -71,7 +71,7 @@ O CSS e o JavaScript responsáveis pela renderização de temas/estilos da loja 
 
 Estilos específicos da marca podem ser aplicados aos Componentes principais do AEM CIF adicionando e substituindo o CSS gerenciado por essas bibliotecas de clientes. Entender como as bibliotecas de clientes são estruturadas e incluídas na página é essencial.
 
-O [ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) é um [webpack](https://webpack.js.org/) dedicado para gerenciar todos os ativos de front-end de um projeto. Isso permite que desenvolvedores de front-end usem qualquer número de linguagens e tecnologias como [TypeScript](https://www.typescriptlang.org/), [Sass](https://sass-lang.com/) e muito mais.
+O [ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=pt-BR) é um [webpack](https://webpack.js.org/) dedicado para gerenciar todos os ativos de front-end de um projeto. Isso permite que desenvolvedores de front-end usem qualquer número de linguagens e tecnologias como [TypeScript](https://www.typescriptlang.org/), [Sass](https://sass-lang.com/) e muito mais.
 
 O módulo `ui.frontend` também é um módulo Maven e integrado ao projeto maior usando um módulo NPM, o [aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator). Durante uma compilação, o `aem-clientlib-generator` copia os arquivos CSS e JavaScript compilados para uma biblioteca do cliente no módulo `ui.apps`.
 
@@ -81,7 +81,7 @@ O módulo `ui.frontend` também é um módulo Maven e integrado ao projeto maior
 
 ## Atualizar o estilo do teaser {#ui-frontend-module}
 
-Em seguida, faça uma pequena alteração no estilo Teaser para ver como o módulo `ui.frontend` e as bibliotecas de clientes funcionam. Use [o IDE de sua escolha](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#set-up-the-development-ide) para importar o projeto Venia. As capturas de tela usadas são do [Visual Studio Code IDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#microsoft-visual-studio-code).
+Em seguida, faça uma pequena alteração no estilo Teaser para ver como o módulo `ui.frontend` e as bibliotecas de clientes funcionam. Use [o IDE de sua escolha](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=pt-BR#set-up-the-development-ide) para importar o projeto Venia. As capturas de tela usadas são do [Visual Studio Code IDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=pt-BR#microsoft-visual-studio-code).
 
 1. Navegue e expanda o módulo **ui.frontend** e expanda a hierarquia de pastas para: `ui.frontend/src/main/styles/commerce`:
 
@@ -445,7 +445,7 @@ Retorne ao IDE e ao projeto gerado.
    ```
 
    >[!NOTE]
-   >Há outras [Ferramentas e configurações do IDE](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html#set-up-an-integrated-development-environment) que podem sincronizar arquivos de projeto diretamente em uma instância do AEM local sem precisar executar uma compilação completa de Maven.
+   >Há outras [Ferramentas e configurações do IDE](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=pt-BR#set-up-an-integrated-development-environment) que podem sincronizar arquivos de projeto diretamente em uma instância do AEM local sem precisar executar uma compilação completa de Maven.
 
 ## Exibir Teaser do produto atualizado {#view-updated-product-teaser}
 

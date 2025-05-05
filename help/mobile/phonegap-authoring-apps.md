@@ -104,7 +104,7 @@ Como alternativa, baixe a origem do dispositivo para criar localmente por meio d
 >
 >Consulte [Configurar o Cloud Service do Adobe Mobile Services](/help/mobile/configure-adobe-mobile-cloud-service.md) para obter detalhes.
 
-A AEM Mobile integra-se ao Adobe Analytics por meio do [Adobe Mobile Services SDK](https://experienceleague.adobe.com/docs/mobile.html) (AMS).
+A AEM Mobile integra-se ao Adobe Analytics por meio do [Adobe Mobile Services SDK](https://experienceleague.adobe.com/docs/mobile.html?lang=pt-BR) (AMS).
 
 O **Bloco de métricas** do Centro de controle exibe análises de resumo extraídas do AMS para o seu aplicativo. Você pode detalhar o painel do Analytics clicando em &quot;...&quot; na parte inferior direita.
 

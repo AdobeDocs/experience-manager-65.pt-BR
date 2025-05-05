@@ -31,7 +31,7 @@ O código do cliente identifica a conta de cliente do Adobe Target ao chamar o s
 >
 >Sua conta também deve ser habilitada pela equipe do Target para usar a integração.
 >
->Se esse não for o caso, entre em contato com o [Atendimento ao cliente do Adobe](https://experienceleague.adobe.com/docs/target/using/cmp-resources-and-contact-information.html).
+>Se esse não for o caso, entre em contato com o [Atendimento ao cliente do Adobe](https://experienceleague.adobe.com/docs/target/using/cmp-resources-and-contact-information.html?lang=pt-BR).
 
 ## Habilitar o Agente de replicação de destino {#enabling-the-target-replication-agent}
 

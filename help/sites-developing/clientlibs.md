@@ -66,7 +66,7 @@ Como o HTL é a tecnologia preferida para desenvolver sites do AEM, o HTL deve s
 
 ### Uso do HTL {#using-htl}
 
-No HTL, as bibliotecas do cliente são carregadas por meio de um modelo auxiliar fornecido pela AEM, que pode ser acessado por meio de [`data-sly-use`](https://helpx.adobe.com/experience-manager/htl/using/block-statements.html#use). Três modelos estão disponíveis neste arquivo, que pode ser chamado por meio de [`data-sly-call`](https://helpx.adobe.com/experience-manager/htl/using/block-statements.html#template-call):
+No HTL, as bibliotecas do cliente são carregadas por meio de um modelo auxiliar fornecido pela AEM, que pode ser acessado por meio de [`data-sly-use`](https://helpx.adobe.com/br/experience-manager/htl/using/block-statements.html#use). Três modelos estão disponíveis neste arquivo, que pode ser chamado por meio de [`data-sly-call`](https://helpx.adobe.com/br/experience-manager/htl/using/block-statements.html#template-call):
 
 * **css** - Carrega somente os arquivos CSS das bibliotecas de clientes referenciadas.
 * **js** - Carrega somente os arquivos JavaScript das bibliotecas de clientes referenciadas.
@@ -74,7 +74,7 @@ No HTL, as bibliotecas do cliente são carregadas por meio de um modelo auxiliar
 
 Cada modelo auxiliar espera uma opção `categories` para fazer referência às bibliotecas de clientes desejadas. Essa opção pode ser uma matriz de valores de cadeias de caracteres ou uma cadeia contendo uma lista de valores separados por vírgula.
 
-Para obter mais detalhes e exemplos de uso, consulte o documento [Introdução à Linguagem de Modelo do HTML](https://helpx.adobe.com/experience-manager/htl/using/getting-started.html#loading-client-libraries).
+Para obter mais detalhes e exemplos de uso, consulte o documento [Introdução à Linguagem de Modelo do HTML](https://helpx.adobe.com/br/experience-manager/htl/using/getting-started.html#loading-client-libraries).
 
 ### Usando JSP {#using-jsp}
 

@@ -19,7 +19,7 @@ ht-degree: 0%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html) |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?lang=pt-BR) |
 | AEM 6.5 | Este artigo |
 
 Use modelos de fluxo de trabalho para converter uma lógica de negócios em um processo repetitivo automatizado. Um modelo ajuda a definir e executar uma série de etapas. Você também pode definir propriedades do modelo, como se o fluxo de trabalho é transitório ou usa vários recursos. Você pode [incluir várias etapas do fluxo de trabalho do AEM em um modelo para atingir a lógica de negócios](/help/sites-developing/workflows-models.md#extending-aem).
@@ -89,7 +89,7 @@ Você também pode usar o componente para controlar o comportamento da tarefa. P
    * **Salvar modelo de layout usando:** Salve o modelo de layout usando um caminho relativo à carga ou armazene-o em uma variável do tipo de dados Documento. O [modelo de layout](../../forms/using/layout-design-details.md) faz referência a um arquivo XDP criado com o Forms Designer. Essa opção estará disponível somente se você selecionar Interface do usuário do Agente de comunicação interativa na lista suspensa Tipo.
 
 * **Atribuído > Opções de atribuição:** especifique o método para atribuir a tarefa a um usuário. Você pode atribuir dinamicamente a tarefa a um usuário ou grupo usando o script Seletor de participante ou atribuir a tarefa a um usuário ou grupo AEM específico.
-* **Seletor de Participante:** a opção estará disponível quando a opção **Dinamicamente para um usuário ou grupo** estiver selecionada no campo Opções de atribuição. Você pode usar um ECMAScript ou um serviço para selecionar dinamicamente um usuário ou grupo. Para obter mais informações, consulte [Atribuir dinamicamente um fluxo de trabalho aos usuários](https://helpx.adobe.com/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) e [Criar uma etapa personalizada de Participante Dinâmico do Adobe Experience Manager.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=en&amp;CID=RedirectAEMCommunityKautuk)
+* **Seletor de Participante:** a opção estará disponível quando a opção **Dinamicamente para um usuário ou grupo** estiver selecionada no campo Opções de atribuição. Você pode usar um ECMAScript ou um serviço para selecionar dinamicamente um usuário ou grupo. Para obter mais informações, consulte [Atribuir dinamicamente um fluxo de trabalho aos usuários](https://helpx.adobe.com/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) e [Criar uma etapa personalizada de Participante Dinâmico do Adobe Experience Manager.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=pt-BR&amp;CID=RedirectAEMCommunityKautuk)
 
 * **Participantes:** o campo está disponível quando a opção **[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]** está selecionada no campo **Seletor de Participantes**. O campo permite selecionar usuários ou grupos para a opção RandomParticipantChooser.
 

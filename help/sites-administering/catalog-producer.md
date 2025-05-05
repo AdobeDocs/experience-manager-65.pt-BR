@@ -28,9 +28,9 @@ Como parte do processo de integração, configure o fluxo de trabalho **Ativo de
 
 >[!NOTE]
 >
->Você pode gerar modelos de InDesign a partir de arquivos InDesign antes de importá-los para o AEM Assets. Para obter detalhes, consulte [Trabalhando com arquivos e modelos](https://helpx.adobe.com/indesign/using/files-templates.html).
+>Você pode gerar modelos de InDesign a partir de arquivos InDesign antes de importá-los para o AEM Assets. Para obter detalhes, consulte [Trabalhando com arquivos e modelos](https://helpx.adobe.com/br/indesign/using/files-templates.html).
 >
->Você pode mapear os elementos nos modelos de InDesign para tags XML. As tags mapeadas são exibidas como propriedades quando você mapeia propriedades de produto com propriedades de modelo no Produtor de catálogo. Para saber mais sobre marcação XML em arquivos de InDesign, consulte [Marcação de conteúdo para XML](https://helpx.adobe.com/indesign/using/tagging-content-xml.html).
+>Você pode mapear os elementos nos modelos de InDesign para tags XML. As tags mapeadas são exibidas como propriedades quando você mapeia propriedades de produto com propriedades de modelo no Produtor de catálogo. Para saber mais sobre marcação XML em arquivos de InDesign, consulte [Marcação de conteúdo para XML](https://helpx.adobe.com/br/indesign/using/tagging-content-xml.html).
 
 >[!NOTE]
 >

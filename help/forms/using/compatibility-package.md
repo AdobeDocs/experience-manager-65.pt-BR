@@ -21,7 +21,7 @@ ht-degree: 1%
 
 ## Visão geral {#overview}
 
-A comunicação interativa é a abordagem padrão e recomendada para criar comunicações com o cliente no AEM Forms 6.5. Para continuar usando as letras no AEM Forms 6.5, é necessário instalar o [pacote de Compatibilidade do AEMFD](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) mais recente.
+A comunicação interativa é a abordagem padrão e recomendada para criar comunicações com o cliente no AEM Forms 6.5. Para continuar usando as letras no AEM Forms 6.5, é necessário instalar o [pacote de Compatibilidade do AEMFD](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html) mais recente.
 
 O pacote de Compatibilidade do AEMFD também permite [usar os seguintes ativos do AEM Forms 6.4, 6.3 e 6.2 no AEM Forms 6.5:](../../forms/using/compatibility-package.md#add-support-for-aem-forms-and-assets-in-aem-forms)
 
@@ -36,9 +36,9 @@ Para obter mais informações, consulte [Compatibilidade do Assets com o AEM For
 
 Depois de executar uma atualização, faça o seguinte para instalar o pacote de compatibilidade do AEMFD e tornar seus ativos compatíveis com o 6.5:
 
-Verifique se você tem o [pacote de Compatibilidade com AEM](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) pré-instalado.
+Verifique se você tem o [pacote de Compatibilidade com AEM](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html) pré-instalado.
 
-1. Instale o [Pacote de compatibilidade](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) do 6.5 mais recente.
+1. Instale o [Pacote de compatibilidade](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html) do 6.5 mais recente.
 
    Para obter mais informações sobre como carregar e instalar o pacote, consulte [Como trabalhar com pacotes](/help/sites-administering/package-manager.md).
 

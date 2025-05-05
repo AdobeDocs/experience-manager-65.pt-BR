@@ -197,7 +197,7 @@ Você também pode usar metadados personalizados em uma notificação por email.
 
 Você pode usar a interface Java WorkitemUserMetadataService para adicionar metadados personalizados a modelos de email. Você pode criar um pacote OSGi que use a interface Java WorkitemUserMetadataService e implantá-lo no servidor do AEM Forms. Ele disponibiliza os metadados para seleção na etapa Atribuir tarefa.
 
-Para criar um pacote OSGi com a interface Java, adicione os arquivos jar [AEM Forms Client SDK](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) e jar [granite](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) como dependências externas ao projeto de pacote OSGi. Você pode usar qualquer Java IDE para criar um pacote OSGi. O procedimento a seguir fornece etapas para usar o Eclipse para criar um pacote OSGi:
+Para criar um pacote OSGi com a interface Java, adicione os arquivos jar [AEM Forms Client SDK](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html) e jar [granite](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) como dependências externas ao projeto de pacote OSGi. Você pode usar qualquer Java IDE para criar um pacote OSGi. O procedimento a seguir fornece etapas para usar o Eclipse para criar um pacote OSGi:
 
 1. Abra o Eclipse IDE. Navegue até Arquivo > Novo projeto.
 

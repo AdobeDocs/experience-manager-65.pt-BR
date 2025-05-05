@@ -174,7 +174,7 @@ Como o mesmo parâmetro de configuração está em vários lugares, o sistema:
 
 >[!NOTE]
 >
->Leia também [como definir uma configuração baseada em repositório somente para uma instância específica](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17500.html).
+>Leia também [como definir uma configuração baseada em repositório somente para uma instância específica](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17500.html?lang=pt-BR).
 
 ### Adicionar uma nova configuração ao repositório {#adding-a-new-configuration-to-the-repository}
 

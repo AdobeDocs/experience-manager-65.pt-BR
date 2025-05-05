@@ -19,7 +19,7 @@ ht-degree: 3%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-digital-assets.html?lang=en) |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-digital-assets.html?lang=pt-BR) |
 | AEM 6.5 | Este artigo |
 
 No [!DNL Adobe Experience Manager Assets], você pode fazer mais do que armazenar e controlar seus ativos. O [!DNL Experience Manager] oferece recursos de gerenciamento de ativos de nível empresarial. Você pode editar e compartilhar ativos, executar pesquisas avançadas e criar várias representações de dezenas de formatos de arquivo compatíveis. Você também pode gerenciar versões e direitos digitais, automatizar o processamento de ativos, gerenciar e controlar metadados, colaborar usando anotações e muito mais.
@@ -103,7 +103,7 @@ Para configurar a tarefa de limpeza para os trabalhos de carregamento de partes 
 
 >[!CAUTION]
 >
->O upload de partes é acionado quando o valor padrão é 500 MB e o tamanho da parte é 50 MB. Se você editar o [Apache Jackrabbit Oak TokenConfiguration](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16464.html) e definir o `timeout configuration` como um tempo menor que o necessário para um ativo carregar, você encontrará uma situação de tempo limite de sessão enquanto o carregamento do ativo estiver em andamento. Portanto, altere o `chunkUploadMinFileSize` e o `chunksize` para que cada solicitação de segmento atualize a sessão.
+>O upload de partes é acionado quando o valor padrão é 500 MB e o tamanho da parte é 50 MB. Se você editar o [Apache Jackrabbit Oak TokenConfiguration](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16464.html?lang=pt-BR) e definir o `timeout configuration` como um tempo menor que o necessário para um ativo carregar, você encontrará uma situação de tempo limite de sessão enquanto o carregamento do ativo estiver em andamento. Portanto, altere o `chunkUploadMinFileSize` e o `chunksize` para que cada solicitação de segmento atualize a sessão.
 >
 >Considerando o tempo limite de expiração de credencial, a latência, a largura de banda e os uploads simultâneos esperados, o valor mais alto que permite garantir que o seguinte seja escolhido:
 >
@@ -178,7 +178,7 @@ O Dynamic Media permite o upload em lote de ativos por meio do servidor FTP. Se 
 
 1. Usando sua escolha de cliente FTP, faça logon no servidor FTP usando o nome de usuário e a senha FTP recebidos do email de provisionamento. No cliente FTP, carregue arquivos ou pastas para o servidor FTP.
 
-1. Abra o [aplicativo de desktop do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html#system-requirements-dmc-app) e entre na sua conta.
+1. Abra o [aplicativo de desktop do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=pt-BR#system-requirements-dmc-app) e entre na sua conta.
 
    Suas credenciais e logon foram fornecidos pelo Adobe no momento do provisionamento. Se você não tiver essas informações, entre em contato com o Suporte ao cliente da Adobe.
 
@@ -883,7 +883,7 @@ Você pode criar versões em [!DNL Experience Manager] nos seguintes cenários:
 * Faça upload de um ativo com o mesmo nome de arquivo que existe no mesmo local. Pode ser um novo ativo ou uma versão modificada do mesmo ativo.
 * Edite uma imagem em [!DNL Experience Manager] e salve as alterações.
 * Editar os metadados de um ativo.
-* Use o aplicativo de desktop [!DNL Experience Manager] para fazer check-out de um ativo existente, editá-lo e [carregar suas alterações](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#edit-assets-upload-updated-assets).
+* Use o aplicativo de desktop [!DNL Experience Manager] para fazer check-out de um ativo existente, editá-lo e [carregar suas alterações](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=pt-BR#edit-assets-upload-updated-assets).
 
 Você também pode ativar o controle automático de versão por meio de um fluxo de trabalho. Ao criar uma versão para um ativo, os metadados e as representações são salvos junto com a versão. As representações são alternativas renderizadas das mesmas imagens, por exemplo, uma representação PNG de um arquivo JPEG carregado.
 
@@ -958,4 +958,4 @@ curl -v -u admin:admin --location --request POST 'http://localhost:4502/conf/glo
 --data-urlencode '../../jcr:primaryType=sling:Folder'
 ```
 
-Para saber mais, veja como [procurar ativos DAM usando o aplicativo de desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) e [como usar o Adobe Asset Link](https://helpx.adobe.com/br/enterprise/using/manage-assets-using-adobe-asset-link.html).
+Para saber mais, veja como [procurar ativos DAM usando o aplicativo de desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=pt-BR#browse-search-preview-assets) e [como usar o Adobe Asset Link](https://helpx.adobe.com/br/enterprise/using/manage-assets-using-adobe-asset-link.html).

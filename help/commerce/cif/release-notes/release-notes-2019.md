@@ -52,7 +52,7 @@ ht-degree: 6%
 
 * Modelos totalmente autoráveis para a página de detalhes do produto e a página da lista de produtos. Os autores agora podem criar modelos e arrastar e soltar componentes de lista de produtos e detalhes do produto nesses modelos. Além de adicionar outros componentes, os autores agora podem alterar o layout desses modelos também, dando a eles liberdade ilimitada para criar experiências surpreendentes que combinam conteúdo de marketing e comércio.
 
-* Todos os componentes principais do CIF compatíveis com autoria foram aprimorados para oferecer suporte ao [Sistema de Estilos do AEM](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html). Estilos de exemplo foram fornecidos para o componente da lista de produtos.
+* Todos os componentes principais do CIF compatíveis com autoria foram aprimorados para oferecer suporte ao [Sistema de Estilos do AEM](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html?lang=pt-BR). Estilos de exemplo foram fornecidos para o componente da lista de produtos.
 
 * Componentes do lado do cliente baseados no React para gerenciamento de conta. Esta versão oferece suporte às seguintes funcionalidades: Fazer logon, Esqueceu a senha e Criar uma conta.
 

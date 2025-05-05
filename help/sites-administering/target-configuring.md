@@ -56,7 +56,7 @@ Os seguintes valores de propriedade são usados na configuração da nuvem da Co
 >* Melhores opções de implementação para aplicativos de página única
 >* A AT.js contém os componentes que foram incluídos na target.js, portanto, não é mais chamada para o target.
 
-<!-- OLD URL WHICH IS 404 https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html -->
+<!-- OLD URL WHICH IS 404 https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html?lang=pt-BR -->
 
 ### Propriedades da Estrutura de Destino Provisionada {#provisioned-target-framework-properties}
 
@@ -119,7 +119,7 @@ Integrar manualmente ao Adobe Target em vez de usar o assistente de aceitação.
 >
 >É possível selecionar AT.js ou mbox.js no menu suspenso **Biblioteca do cliente**.
 
-<!-- OLD URL from above was 404 https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html -->
+<!-- OLD URL from above was 404 https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html?lang=pt-BR -->
 
 ### Criação de uma configuração da nuvem do Target {#creating-a-target-cloud-configuration}
 
@@ -224,7 +224,7 @@ Sua estrutura foi criada. Para replicar a estrutura para a instância de publica
 
 ### Associação de atividades com a configuração de nuvem do Target  {#associating-activities-with-the-target-cloud-configuration}
 
-Associe suas [atividades de AEM](/help/sites-authoring/activitylib.md) à configuração de nuvem do Target para que você possa espelhar as atividades no [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html).
+Associe suas [atividades de AEM](/help/sites-authoring/activitylib.md) à configuração de nuvem do Target para que você possa espelhar as atividades no [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html?lang=pt-BR).
 
 >[!NOTE]
 >

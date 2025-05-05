@@ -26,7 +26,7 @@ O fragmento do documento de texto na Comunicação interativa é compatível com
 * **Objetos do modelo de dados**: as propriedades de dados usam uma fonte de dados back-end.
 * **Conteúdo baseado em regras**: partes do conteúdo em um texto que são exibidas ou ficam ocultas com base em uma regra. Uma regra também pode ser baseada nas propriedades e variáveis do modelo de dados de formulário.
 * **Variáveis**: no fragmento de documento de texto, as variáveis não estão associadas a uma fonte de dados de back-end. O agente preenche/seleciona valores nas variáveis ou vincula as variáveis às fontes de dados ao preparar a comunicação interativa para enviá-la a um processo de publicação.
-* **Repetir**: você pode ter informações dinâmicas em sua Comunicação Interativa, como transações em um demonstrativo de cartão de crédito, cujo número de ocorrências pode continuar mudando com cada Comunicação Interativa gerada. Usando a repetição, é possível formatar e estruturar essas informações dinâmicas. Para obter mais informações, consulte [Condição embutida e repetir](https://helpx.adobe.com/experience-manager/6-3/forms/using/cm-inline-condition.html).
+* **Repetir**: você pode ter informações dinâmicas em sua Comunicação Interativa, como transações em um demonstrativo de cartão de crédito, cujo número de ocorrências pode continuar mudando com cada Comunicação Interativa gerada. Usando a repetição, é possível formatar e estruturar essas informações dinâmicas. Para obter mais informações, consulte [Condição embutida e repetir](https://helpx.adobe.com/br/experience-manager/6-3/forms/using/cm-inline-condition.html).
 
 ## Criar texto {#createtext}
 

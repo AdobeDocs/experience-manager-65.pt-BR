@@ -18,7 +18,7 @@ ht-degree: 2%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/download-assets-from-aem.html?lang=en) |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/download-assets-from-aem.html?lang=pt-BR) |
 | AEM 6.5 | Este artigo |
 
 É possível baixar ativos, incluindo representações estáticas e dinâmicas. Como alternativa, você pode enviar emails com links para ativos diretamente do [!DNL Adobe Experience Manager Assets]. Os ativos baixados são incluídos em um arquivo ZIP. O arquivo ZIP compactado tem um tamanho máximo de arquivo de 1 GB para o trabalho de exportação. Um máximo de 500 ativos totais por trabalho de exportação são permitidos.
@@ -80,13 +80,13 @@ Por padrão, para `GET` solicitações de download de arquivos, [!DNL Experience
 
 O `Asset Download Servlet` pode ser desativado em uma instância do Publish [!DNL Experience Manager] ao atualizar a configuração do Dispatcher para bloquear qualquer solicitação de download de ativo. O servlet também pode ser desativado manualmente por meio do console OSGi diretamente.
 
-1. Para bloquear solicitações de download de ativos por meio de uma configuração de Dispatcher, edite a configuração `dispatcher.any` e adicione uma regra à [seção de filtro](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#defining-a-filter). `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
+1. Para bloquear solicitações de download de ativos por meio de uma configuração de Dispatcher, edite a configuração `dispatcher.any` e adicione uma regra à [seção de filtro](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=pt-BR#defining-a-filter). `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
 
 1. Para desativar o componente OSGi em uma instância do Publish, acesse o Console OSGi em `http://[aem_server]:[port]/system/console/components`. Localize `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet` e clique em **[!UICONTROL Desabilitar]**.
 
 >[!MORELIKETHIS]
 >
->* [Baixar ativos usando o Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html)
+>* [Baixar ativos usando o Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html?lang=pt-BR)
 >* [Baixar ativos protegidos por DRM](drm.md).
->* [Baixe ativos usando o aplicativo de desktop Experience Manager no Win ou no Mac desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#download-assets).
+>* [Baixe ativos usando o aplicativo de desktop Experience Manager no Win ou no Mac desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=pt-BR#download-assets).
 >* [Baixe ativos usando o Adobe Assets Link nos aplicativos Adobe Creative Cloud compatíveis](https://helpx.adobe.com/br/enterprise/using/manage-assets-using-adobe-asset-link.html).

@@ -60,7 +60,7 @@ O caminho para um recurso no repositório do AEM Forms é:
 
 >[!NOTE]
 >
->Applications/FormsApplication não existe por padrão. Para seguir as inicializações rápidas, crie este aplicativo usando o Workbench. Para obter informações sobre como criar um aplicativo usando o Workbench, consulte [Introdução ao design de processo](https://www.adobe.com/go/learn_aemforms_workbench_65).
+>Applications/FormsApplication não existe por padrão. Para seguir as inicializações rápidas, crie este aplicativo usando o Workbench. Para obter informações sobre como criar um aplicativo usando o Workbench, consulte [Introdução ao design de processo](https://www.adobe.com/go/learn_aemforms_workbench_65_br).
 
 ## Início rápido (modo SOAP): criação de uma pasta usando a API Java {#quick-start-soap-mode-creating-a-folder-using-the-java-api}
 

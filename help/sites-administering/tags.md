@@ -50,8 +50,8 @@ Alguns dos recursos das tags no AEM incluem:
    * Uma tag que não é uma tag container é chamada de tag folha
    * Um namespace de tag é uma tag folha ou container
 
-* As marcas são usadas pelo [componente de Pesquisa](https://helpx.adobe.com/experience-manager/core-components/using/quick-search.html) para facilitar a localização do conteúdo.
-* As marcas são usadas pelo [componente de Teaser](https://helpx.adobe.com/experience-manager/core-components/using/teaser.html), que monitora a nuvem de marcas de um usuário para fornecer conteúdo direcionado.
+* As marcas são usadas pelo [componente de Pesquisa](https://helpx.adobe.com/br/experience-manager/core-components/using/quick-search.html) para facilitar a localização do conteúdo.
+* As marcas são usadas pelo [componente de Teaser](https://helpx.adobe.com/br/experience-manager/core-components/using/teaser.html), que monitora a nuvem de marcas de um usuário para fornecer conteúdo direcionado.
 * Se a marcação for um aspecto importante do seu conteúdo
 
    * empacotar tags com as páginas que as usam

@@ -19,7 +19,7 @@ ht-degree: 2%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/medialibrary.html?lang=en) |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/medialibrary.html?lang=pt-BR) |
 | AEM 6.5 | Este artigo |
 
 A plataforma [!DNL Adobe Experience Manager] fornece diferentes recursos para gerenciar ativos. O Media Library permite que os usuários façam upload de um pequeno número de ativos no repositório, pesquisem e usem esses ativos nas páginas da Web e realizem tarefas simples de gerenciamento de ativos nos ativos.
@@ -94,6 +94,6 @@ Observe que você não pode usar marcas inteligentes, link [!DNL Asset], seletor
 
 >[!MORELIKETHIS]
 >
->* [recursos DAM em [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-65/assets/home.html)
->* [[!DNL Experience Manager] 6.5 Descrição do produto Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html)
->* [[!DNL Experience Manager] 6.5 descrição do produto no local](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html)
+>* [recursos DAM em [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-65/assets/home.html?lang=pt-BR)
+>* [[!DNL Experience Manager] 6.5 Descrição do produto Managed Services](https://helpx.adobe.com/br/legal/product-descriptions/adobe-experience-manager-managed-services.html)
+>* [[!DNL Experience Manager] 6.5 descrição do produto no local](https://helpx.adobe.com/br/legal/product-descriptions/adobe-experience-manager-on-premise.html)

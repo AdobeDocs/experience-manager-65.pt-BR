@@ -121,7 +121,7 @@ As caixas de diálogo são um fator importante ao migrar seus componentes:
 
    * Há uma camada de compatibilidade na interface para toque para abrir uma caixa de diálogo da interface clássica em um &quot;invólucro da interface para toque&quot;, mas essa funcionalidade é limitada e não é recomendada para longo prazo.
 
-* [Personalizando Campos de Caixa de Diálogo na Interface para Toque](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-customizing-dialog-fields-in-touch-ui.html)
+* [Personalizando Campos de Caixa de Diálogo na Interface para Toque](https://helpx.adobe.com/br/experience-manager/kt/eseminars/gems/aem-customizing-dialog-fields-in-touch-ui.html)
 * [Criação de um novo componente de campo da interface de usuário do Granite](/help/sites-developing/granite-ui-component.md)
 * [Personalizando a Criação de Página](/help/sites-developing/customizing-page-authoring-touch.md) (com a interface habilitada para toque)
 
@@ -149,9 +149,9 @@ Para obter informações completas sobre o desenvolvimento do AEM, consulte a co
 
 * [Guia do usuário para desenvolvimento](/help/sites-developing/getting-started.md)
 * [Documentação da interface do Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
-* [Vídeos e Tutorials de Sites do AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html)
+* [Vídeos e Tutorials de Sites do AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html?lang=pt-BR)
 * [Introdução ao desenvolvimento do AEM Sites - Tutorial de WKND](/help/sites-developing/getting-started.md)
-* [Gems AEM](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html)
+* [Gems AEM](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html?lang=pt-BR)
 * [Ferramentas de Modernização do AEM](https://opensource.adobe.com/aem-modernize-tools/)
 
 >[!CAUTION]

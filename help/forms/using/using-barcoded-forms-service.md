@@ -137,9 +137,9 @@ Você pode usar o **Serviço Forms com Códigos de Barras do AEMFD** no Console 
 
 O Serviço Forms com código de barras fornece as duas APIs a seguir:
 
-* **[decode](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode)**: decodifica todos os códigos de barras disponíveis em um documento de PDF de entrada ou imagem tiff. Ele retorna outro documento XML que contém dados recuperados de todos os códigos de barras disponíveis no documento ou na imagem de entrada.
+* **[decode](https://helpx.adobe.com/br/experience-manager/6-3/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode)**: decodifica todos os códigos de barras disponíveis em um documento de PDF de entrada ou imagem tiff. Ele retorna outro documento XML que contém dados recuperados de todos os códigos de barras disponíveis no documento ou na imagem de entrada.
 
-* **[extractToXML](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode)**: converter dados decodificados usando a API de decodificação em dados XML. Esses dados XML podem ser mesclados com um formulário XFA. Ele retorna uma lista de documentos XML, um para cada código de barras.
+* **[extractToXML](https://helpx.adobe.com/br/experience-manager/6-3/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode)**: converter dados decodificados usando a API de decodificação em dados XML. Esses dados XML podem ser mesclados com um formulário XFA. Ele retorna uma lista de documentos XML, um para cada código de barras.
 
 ### Usando o Serviço BCF com um JSP ou Servlets {#using-bcf-service-with-a-jsp-or-servlets}
 

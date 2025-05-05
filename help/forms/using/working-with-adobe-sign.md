@@ -140,7 +140,7 @@ Execute as seguintes etapas para adicionar campos a um formulário adaptável e 
 
 1. Selecione o ícone do **[!UICONTROL Campo do Adobe Sign]** ![aem_6_3_adobesign](assets/aem_6_3_adobesign.png). Ele exibe opções para selecionar e adicionar [!DNL Adobe Sign] campos.
 
-   Expanda o campo suspenso **[!UICONTROL Tipo]** para selecionar um campo [!DNL Adobe Sign] e selecione o ícone Concluído ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) para adicionar o campo selecionado ao bloco [!DNL Adobe Sign]. O campo suspenso **[!UICONTROL Tipo]** inclui os tipos de campo Assinatura, Informações do signatário e Dados. A integração [!DNL Adobe Sign] com AEM [!DNL Forms] oferece suporte aos campos listados somente na caixa suspensa [!UICONTROL Tipo]. Para obter informações detalhadas sobre os campos [!DNL Adobe Sign], consulte a [documentação do Adobe Sign](https://helpx.adobe.com/sign/help/field-types.html).
+   Expanda o campo suspenso **[!UICONTROL Tipo]** para selecionar um campo [!DNL Adobe Sign] e selecione o ícone Concluído ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) para adicionar o campo selecionado ao bloco [!DNL Adobe Sign]. O campo suspenso **[!UICONTROL Tipo]** inclui os tipos de campo Assinatura, Informações do signatário e Dados. A integração [!DNL Adobe Sign] com AEM [!DNL Forms] oferece suporte aos campos listados somente na caixa suspensa [!UICONTROL Tipo]. Para obter informações detalhadas sobre os campos [!DNL Adobe Sign], consulte a [documentação do Adobe Sign](https://helpx.adobe.com/br/sign/help/field-types.html).
 
    ![adobe-sign-block-fields-options](assets/adobe-sign-block-fields-options.png)
 
@@ -148,7 +148,7 @@ Execute as seguintes etapas para adicionar campos a um formulário adaptável e 
 
    Se você selecionar **[!UICONTROL Assinatura digital]** na lista suspensa, poderá aplicar assinaturas digitais ao formulário adaptável:
 
-   * Online usando assinaturas em nuvem para assinar com uma [ID digital](https://helpx.adobe.com/sign/kb/digital-certificate-providers.html) hospedada por um provedor de serviços de confiança.
+   * Online usando assinaturas em nuvem para assinar com uma [ID digital](https://helpx.adobe.com/br/sign/kb/digital-certificate-providers.html) hospedada por um provedor de serviços de confiança.
    * Localmente, baixando o documento com Adobe Acrobat ou Reader usando um cartão inteligente, token USB ou ID digital baseada em arquivo.
 
 ### Habilitar [!DNL Adobe Sign] para um formulário adaptável {#enableadobsignforanadaptiveform}
@@ -258,7 +258,7 @@ Depois de [editar as propriedades do formulário adaptável para o sinal de Adob
 
    Aplique assinaturas digitais ao formulário adaptável usando:
 
-   * Assinaturas na nuvem: assine com uma [ID digital](https://helpx.adobe.com/sign/kb/digital-certificate-providers.html) hospedada por um provedor de serviços de confiança. A opção Assinatura na nuvem não está disponível para o Adobe Acrobat Sign Solutions para o governo.
+   * Assinaturas na nuvem: assine com uma [ID digital](https://helpx.adobe.com/br/sign/kb/digital-certificate-providers.html) hospedada por um provedor de serviços de confiança. A opção Assinatura na nuvem não está disponível para o Adobe Acrobat Sign Solutions para o governo.
 
    * Adobe Acrobat ou Reader: baixe e abra o documento com o Adobe Acrobat ou Reader para assinar usando um cartão inteligente, token USB ou ID digital baseada em arquivo.
 
@@ -332,7 +332,7 @@ Agora, a experiência de assinatura no formulário está pronta. Você pode visu
 **Ans:** O formulário adaptável criado com o modelo avançado está configurado para usar [!DNL Adobe Sign]. Para resolver o erro, crie e selecione uma configuração de nuvem [!DNL Adobe Sign] e configure um signatário [!DNL Adobe Sign] para o formulário adaptável.
 
 **P:** Posso usar [!DNL Adobe Sign] marcas de texto em um componente de texto estático de um formulário adaptável?
-**Ans:** Sim, você pode usar marcas de texto em um componente de texto para adicionar campos [!DNL Adobe Sign] a um [Documento de Registro](../../forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md) (somente opção de documento de registro gerado automaticamente) formulário adaptável habilitado. Para saber mais sobre o procedimento e as regras para criar uma marca de texto, consulte a [Documentação do Adobe Sign](https://helpx.adobe.com/sign/using/text-tag.html). Observe também que os formulários adaptáveis têm suporte limitado para tags de texto. Você pode usar as marcas de texto para criar apenas os campos aceitos pelo [Bloco Adobe Sign](../../forms/using/working-with-adobe-sign.md#configure-cloud-signatures-for-an-adaptive-form).
+**Ans:** Sim, você pode usar marcas de texto em um componente de texto para adicionar campos [!DNL Adobe Sign] a um [Documento de Registro](../../forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md) (somente opção de documento de registro gerado automaticamente) formulário adaptável habilitado. Para saber mais sobre o procedimento e as regras para criar uma marca de texto, consulte a [Documentação do Adobe Sign](https://helpx.adobe.com/br/sign/using/text-tag.html). Observe também que os formulários adaptáveis têm suporte limitado para tags de texto. Você pode usar as marcas de texto para criar apenas os campos aceitos pelo [Bloco Adobe Sign](../../forms/using/working-with-adobe-sign.md#configure-cloud-signatures-for-an-adaptive-form).
 
 **Q:** AEM [!DNL Forms] fornece componentes de etapa de [!UICONTROL Bloco Adobe Sign] e Assinatura. Eles podem ser usados simultaneamente em um formulário adaptável?
 **Ans:** Você pode usar ambos os componentes simultaneamente em um formulário. Estas são algumas recomendações para usar esses componentes:

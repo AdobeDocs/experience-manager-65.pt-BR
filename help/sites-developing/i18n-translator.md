@@ -385,4 +385,4 @@ Da mesma forma, o teste de strings de dicionário deve ser executado como parte 
 
 >[!NOTE]
 >
->Ao usar o Dispatcher, você precisa [invalidar páginas em cache](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html) para incluir novas cadeias de caracteres de dicionário em cadeias de caracteres de componentes renderizadas.
+>Ao usar o Dispatcher, você precisa [invalidar páginas em cache](https://helpx.adobe.com/br/experience-manager/dispatcher/using/page-invalidate.html) para incluir novas cadeias de caracteres de dicionário em cadeias de caracteres de componentes renderizadas.

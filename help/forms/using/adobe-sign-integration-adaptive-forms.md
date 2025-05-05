@@ -22,7 +22,7 @@ O <span class="preview"> Adobe recomenda o uso de [Componentes principais](https
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/adobe-sign-integration-adaptive-forms.html?lang=en#adobe-acrobat-sign-for-government) |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/adobe-sign-integration-adaptive-forms.html?lang=pt-BR#adobe-acrobat-sign-for-government) |
 | AEM 6.5 | Este artigo |
 
 [!DNL Adobe Sign] habilita fluxos de trabalho de assinatura eletrônica para formulários adaptáveis. As assinaturas eletrônicas melhoram os fluxos de trabalho para processar documentos para áreas jurídicas, de vendas, de folha de pagamento, de gerenciamento de recursos humanos e muito mais.
@@ -91,7 +91,7 @@ Depois que os pré-requisitos estiverem em vigor, execute as seguintes etapas pa
 
    em que:
 
-   **na1** refere-se ao fragmento de banco de dados padrão. Você pode modificar o valor do fragmento de banco de dados. Verifique se as Configurações de Nuvem do [!DNL &#x200B; Adobe Acrobat Sign] apontam para o [Fragmento correto](https://helpx.adobe.com/sign/using/identify-account-shard.html).
+   **na1** refere-se ao fragmento de banco de dados padrão. Você pode modificar o valor do fragmento de banco de dados. Verifique se as Configurações de Nuvem do [!DNL &#x200B; Adobe Acrobat Sign] apontam para o [Fragmento correto](https://helpx.adobe.com/br/sign/using/identify-account-shard.html).
 
    >[!NOTE]
    >
@@ -147,7 +147,7 @@ Depois que os pré-requisitos estiverem em vigor, execute as seguintes etapas pa
 1. Abra o **[!UICONTROL Serviço de Configuração Comum do Forms].**
 1. No campo **[!UICONTROL Permitir]**, **selecionar** Todos os usuários - Todos os usuários, anônimos ou conectados, podem visualizar anexos, verificar e assinar formulários e clicar em **[!UICONTROL Salvar].A instância do Autor** está configurada para usar [!DNL Adobe Sign].
 1. Publish da configuração.
-1. Use a [replicação](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/replication.html) para criar configuração idêntica nas instâncias de publicação correspondentes.
+1. Use a [replicação](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/replication.html?lang=pt-BR) para criar configuração idêntica nas instâncias de publicação correspondentes.
 
 Agora, o [!DNL Adobe Sign] está integrado ao AEM [!DNL Forms] e pronto para uso em formulários adaptáveis. Para [usar o serviço Adobe Sign em um formulário adaptável](../../forms/using/working-with-adobe-sign.md#configure-adobe-sign-for-an-adaptive-form), especifique o contêiner de configuração criado acima nas propriedades do formulário adaptável.
 
@@ -240,7 +240,7 @@ O representante gera e compartilha credenciais com você. Na próxima seção, u
 
    em que:
 
-   **na1** refere-se ao fragmento de banco de dados padrão. Você pode modificar o valor do fragmento de banco de dados. Verifique se as Configurações de Nuvem do [!DNL &#x200B; Adobe Acrobat Sign] apontam para o [Fragmento correto](https://helpx.adobe.com/sign/using/identify-account-shard.html).
+   **na1** refere-se ao fragmento de banco de dados padrão. Você pode modificar o valor do fragmento de banco de dados. Verifique se as Configurações de Nuvem do [!DNL &#x200B; Adobe Acrobat Sign] apontam para o [Fragmento correto](https://helpx.adobe.com/br/sign/using/identify-account-shard.html).
 
    >[!NOTE]
    >
@@ -262,7 +262,7 @@ O representante gera e compartilha credenciais com você. Na próxima seção, u
 1. No campo **[!UICONTROL Permitir]**, **selecionar** Todos os usuários - Todos os usuários, anônimos ou conectados, podem visualizar anexos, verificar e assinar formulários e clicar em **[!UICONTROL Salvar].A instância do Autor** está configurada para usar [!DNL Adobe Sign].
 
 1. Publish da configuração.
-1. Use a [replicação](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/replication.html) para criar configuração idêntica nas instâncias de publicação correspondentes.
+1. Use a [replicação](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/replication.html?lang=pt-BR) para criar configuração idêntica nas instâncias de publicação correspondentes.
 
 Agora você pode [usar a opção adicionar campos do Adobe Acrobat Sign em um Formulário Adaptável](working-with-adobe-sign.md) ou o [Fluxo de Trabalho do AEM](/help/forms/using/aem-forms-workflow-step-reference.md#sign-document-step-sign-document-step). Adicione o contêiner de configuração usado para a configuração Cloud Service a todo o Forms adaptável que está sendo habilitado para [!DNL Adobe Acrobat Sign]. Você pode especificar um contêiner de configuração nas propriedades de um Formulário adaptável.
 

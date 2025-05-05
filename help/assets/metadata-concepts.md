@@ -123,7 +123,7 @@ Os metadados específicos do aplicativo incluem metadados técnicos e descritivo
 * CQ - Usado por [!DNL Experience Manager Assets].
 * DAM - Usado por [!DNL Experience Manager Assets].
 * DEX - [!DNL Optima SC Description explorer] é uma coleção de ferramentas para gerenciamento de metadados e arquivos de sistemas operacionais Windows.
-* CRS - [Adobe Photoshop Camera Raw](https://helpx.adobe.com/camera-raw/using/introduction-camera-raw.html).
+* CRS - [Adobe Photoshop Camera Raw](https://helpx.adobe.com/br/camera-raw/using/introduction-camera-raw.html).
 * LR - [!DNL Adobe Lightroom].
 * MediaPro - [iView MediaPro](https://en.wikipedia.org/wiki/Phase_One_Media_Pro).
 * MicrosoftPhoto e MP - Microsoft Photo.

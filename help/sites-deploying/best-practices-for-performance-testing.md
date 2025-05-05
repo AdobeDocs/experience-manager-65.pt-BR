@@ -75,7 +75,7 @@ A documentação de [Monitoramento de Desempenho](/help/sites-deploying/monitori
 
 **Modo de Desenvolvedor na Interface para Toque**
 
-Um dos novos recursos na interface de toque do AEM 6 é o Modo de desenvolvedor. Da mesma forma que os autores podem alternar entre os modos de edição e pré-visualização, os desenvolvedores podem alternar para o modo de desenvolvedor na interface do autor. Isso permite que você veja o tempo de renderização de cada um dos componentes na página e veja os rastreamentos de pilha de quaisquer erros. Para obter mais informações sobre o modo de desenvolvedor, consulte esta [apresentação do CQ Gems](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-developer-mode.html).
+Um dos novos recursos na interface de toque do AEM 6 é o Modo de desenvolvedor. Da mesma forma que os autores podem alternar entre os modos de edição e pré-visualização, os desenvolvedores podem alternar para o modo de desenvolvedor na interface do autor. Isso permite que você veja o tempo de renderização de cada um dos componentes na página e veja os rastreamentos de pilha de quaisquer erros. Para obter mais informações sobre o modo de desenvolvedor, consulte esta [apresentação do CQ Gems](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-developer-mode.html?lang=pt-BR).
 
 **Usando o rlog.jar para ler os logs de solicitação**
 

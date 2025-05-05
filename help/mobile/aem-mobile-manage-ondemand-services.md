@@ -42,7 +42,7 @@ Com o aplicativo Comprovação por demanda para dispositivos móveis, é possív
 
 >[!NOTE]
 >
->O aplicativo Comprovação do AEM é usado para visualizar conteúdo e navegar pelas páginas. Para saber mais detalhes sobre o Aplicativo de Comprovação, clique [aqui](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html).
+>O aplicativo Comprovação do AEM é usado para visualizar conteúdo e navegar pelas páginas. Para saber mais detalhes sobre o Aplicativo de Comprovação, clique [aqui](https://helpx.adobe.com/br/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html).
 >
 
 ### Avançando {#getting-ahead}

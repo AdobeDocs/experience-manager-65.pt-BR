@@ -18,7 +18,7 @@ ht-degree: 2%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| Adobe Experience Manager (AEM) as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/organize-assets.html?lang=en) |
+| Adobe Experience Manager (AEM) as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/organize-assets.html?lang=pt-BR) |
 | AEM 6.5 | Este artigo |
 
 Todos os ativos digitais, metadados e conteúdo dos documentos do Microsoft® Office e PDF são extraídos e tornados pesquisáveis. A pesquisa permite uma filtragem sofisticada de ativos e respeita totalmente as permissões apropriadas. Os metadados são abordados em detalhes nos metadados no Digital Asset Management.

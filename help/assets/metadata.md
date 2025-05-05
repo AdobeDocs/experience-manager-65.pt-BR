@@ -19,7 +19,7 @@ ht-degree: 10%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-metadata.html?lang=en) |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-metadata.html?lang=pt-BR) |
 | AEM 6.5 | Este artigo |
 
 <!-- Scope of metadata articles:
@@ -36,9 +36,9 @@ Os metadados são informações adicionais sobre o ativo que pode ser pesquisado
 
 Os métodos a seguir podem ser usados para adicionar metadados a ativos digitais:
 
-* Para começar, os aplicativos nativos que criam ativos adicionam alguns metadados a eles. Por exemplo, o [Acrobat adiciona alguns metadados](https://helpx.adobe.com/acrobat/using/pdf-properties-metadata.html) a arquivos PDF ou uma câmera adiciona alguns metadados básicos às fotografias. Ao gerar ativos, você pode adicionar os metadados nos próprios aplicativos nativos. Por exemplo, você pode [adicionar metadados IPTC no Adobe Lightroom](https://helpx.adobe.com/lightroom-classic/help/metadata-basics-actions.html).
+* Para começar, os aplicativos nativos que criam ativos adicionam alguns metadados a eles. Por exemplo, o [Acrobat adiciona alguns metadados](https://helpx.adobe.com/br/acrobat/using/pdf-properties-metadata.html) a arquivos PDF ou uma câmera adiciona alguns metadados básicos às fotografias. Ao gerar ativos, você pode adicionar os metadados nos próprios aplicativos nativos. Por exemplo, você pode [adicionar metadados IPTC no Adobe Lightroom](https://helpx.adobe.com/br/lightroom-classic/help/metadata-basics-actions.html).
 
-* Antes de carregar um ativo para [!DNL Experience Manager], você pode editar e modificar metadados usando o aplicativo nativo usado para criar um ativo ou usando algum outro aplicativo de edição de metadados. Ao fazer upload de um ativo para o Experience Manager, os metadados são processados. Por exemplo, veja como [trabalhar com metadados [!DNL Adobe Bridge]](https://helpx.adobe.com/bridge/user-guide.html/bridge/using/metadata-adobe-bridge.ug.html) e o painel [tags [!DNL Adobe Bridge]](https://exchange.adobe.com/creativecloud.details.20009.aem-tags-panel-for-bridge-cc.html) em [!DNL Adobe Exchange].
+* Antes de carregar um ativo para [!DNL Experience Manager], você pode editar e modificar metadados usando o aplicativo nativo usado para criar um ativo ou usando algum outro aplicativo de edição de metadados. Ao fazer upload de um ativo para o Experience Manager, os metadados são processados. Por exemplo, veja como [trabalhar com metadados [!DNL Adobe Bridge]](https://helpx.adobe.com/br/bridge/user-guide.html/bridge/using/metadata-adobe-bridge.ug.html) e o painel [tags [!DNL Adobe Bridge]](https://exchange.adobe.com/creativecloud.details.20009.aem-tags-panel-for-bridge-cc.html) em [!DNL Adobe Exchange].
 
 * Em [!DNL Experience Manager Assets], você pode adicionar ou editar manualmente metadados de ativos na página [!UICONTROL Propriedades].
 
@@ -241,7 +241,7 @@ Você pode remover um perfil de metadados de uma pasta no menu **[!UICONTROL Fer
 >
 >* [Conceitos e noções básicas sobre metadados](metadata-concepts.md).
 >* [Editar propriedades de metadados de várias coleções](manage-collections.md#editing-collection-metadata-in-bulk)
->* [Importação e exportação de metadados no Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html)
+>* [Importação e exportação de metadados no Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html?lang=pt-BR)
 
 <!-- TBD: Try filling the available information in these topics to the extent possible. As and when complete, publish the sections live.
 

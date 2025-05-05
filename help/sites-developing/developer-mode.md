@@ -57,7 +57,7 @@ Isso ajuda um desenvolvedor a:
 >Consulte:
 >
 >* Artigo da Base de Dados de Conhecimento, [Solução de problemas da interface para toque AEM](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html), para obter mais dicas e ferramentas.
->* Sessão Gems do AEM sobre [Modo de Desenvolvedor do AEM 6.0](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-developer-mode.html).
+>* Sessão Gems do AEM sobre [Modo de Desenvolvedor do AEM 6.0](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-developer-mode.html?lang=pt-BR).
 >
 
 ## Abrindo o Modo de Desenvolvedor {#opening-developer-mode}

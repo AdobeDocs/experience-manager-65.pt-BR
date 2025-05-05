@@ -87,7 +87,7 @@ O conector é compatível com o seguinte:
 
 ### Instalação padrão {#standard-installation}
 
-A Distribuição de software é usada para distribuir recursos, exemplos e hot fixes do produto. Para obter detalhes, consulte a [documentação de Distribuição de software](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html#software-distribution).
+A Distribuição de software é usada para distribuir recursos, exemplos e hot fixes do produto. Para obter detalhes, consulte a [documentação de Distribuição de software](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=pt-BR#software-distribution).
 
 
 #### Integração com o AEM {#integrating-with-aem}

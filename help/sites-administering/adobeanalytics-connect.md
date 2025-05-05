@@ -51,7 +51,7 @@ Antes de continuar, verifique se suas credenciais permitem fazer logon no Adobe 
 
 ### Configuração do AEM para usar seus data centers da Adobe Analytics {#configuring-aem-to-use-your-adobe-analytics-data-centers}
 
-Os [data centers](https://experienceleague.adobe.com/docs/analytics/analyze/reports-analytics/reporting-interface/overview-data-collection.html) da Adobe Analytics coletam, processam e armazenam dados associados ao conjunto de relatórios do Adobe Analytics. Configure o AEM para usar o data center que hospeda o conjunto de relatórios do Adobe Analytics. O data center é mencionado em seu contrato. Entre em contato com um administrador em sua organização para obter essas informações.
+Os [data centers](https://experienceleague.adobe.com/docs/analytics/analyze/reports-analytics/reporting-interface/overview-data-collection.html?lang=pt-BR) da Adobe Analytics coletam, processam e armazenam dados associados ao conjunto de relatórios do Adobe Analytics. Configure o AEM para usar o data center que hospeda o conjunto de relatórios do Adobe Analytics. O data center é mencionado em seu contrato. Entre em contato com um administrador em sua organização para obter essas informações.
 
 Se necessário, use o seguinte para ser roteado para o data center correto: `https://api.omniture.com/`.
 
@@ -183,7 +183,7 @@ Os descendentes da página herdam a associação com a estrutura. Por exemplo, a
 1. Selecione **Salvar e fechar**.
 1. Para ativar a página e quaisquer configurações/arquivos conectados, **[Publish](/help/sites-authoring/publishing-pages.md)** a página.
 1. A etapa final é visitar a página na instância de publicação e procurar uma palavra-chave (por exemplo, berinjela) usando o componente **Pesquisa**.
-1. Você pode verificar as chamadas feitas ao Adobe Analytics usando uma ferramenta apropriada; por exemplo, [Adobe Experience Cloud Debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html).
+1. Você pode verificar as chamadas feitas ao Adobe Analytics usando uma ferramenta apropriada; por exemplo, [Adobe Experience Cloud Debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html?lang=pt-BR).
 1. Usando o exemplo fornecido, a chamada deve conter o valor inserido (ou seja, berinjela) em eVar7 e a lista de eventos deve conter event3.
 
 ### Visualizações de página {#page-views}

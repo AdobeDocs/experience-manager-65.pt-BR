@@ -179,13 +179,13 @@ O componente **[!UICONTROL Imagem]** do Dynamic Media Classic permite adicionar 
 
 **[!UICONTROL Nitidez]** - Selecione como deseja nitidez da imagem. A nitidez é explicada detalhadamente nas [Práticas recomendadas de predefinição de imagem](/help/assets/managing-image-presets.md#image-preset-options) e [Práticas recomendadas de nitidez](/help/assets/assets/sharpening_images.pdf).
 
-**[!UICONTROL Modificadores de URL]** - Você pode alterar efeitos de imagem fornecendo comandos de imagem Dynamic Media Classic adicionais. Estes comandos estão descritos em [Predefinições de imagem](/help/assets/managing-image-presets.md) e na [Referência de comando](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html).
+**[!UICONTROL Modificadores de URL]** - Você pode alterar efeitos de imagem fornecendo comandos de imagem Dynamic Media Classic adicionais. Estes comandos estão descritos em [Predefinições de imagem](/help/assets/managing-image-presets.md) e na [Referência de comando](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=pt-BR).
 
 **[!UICONTROL Pontos de interrupção]** - Se o site for responsivo, ajuste os pontos de interrupção. Os pontos de interrupção devem ser separados por vírgulas ( , ).
 
 ### Modelo da imagem {#image-template}
 
-[Modelos de imagem do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics.html) são conteúdos em camadas do Photoshop que foram importados para o Dynamic Media Classic, onde o conteúdo e as propriedades foram parametrizados para fins de variabilidade. O componente **[!UICONTROL Modelo de imagem]** permite importar imagens e alterar o texto dinamicamente no Experience Manager. Além disso, você pode configurar o componente **[!UICONTROL Modelo de imagem]** para usar valores do contexto do cliente, para que cada usuário experimente a imagem de forma personalizada.
+[Modelos de imagem do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics.html?lang=pt-BR) são conteúdos em camadas do Photoshop que foram importados para o Dynamic Media Classic, onde o conteúdo e as propriedades foram parametrizados para fins de variabilidade. O componente **[!UICONTROL Modelo de imagem]** permite importar imagens e alterar o texto dinamicamente no Experience Manager. Além disso, você pode configurar o componente **[!UICONTROL Modelo de imagem]** para usar valores do contexto do cliente, para que cada usuário experimente a imagem de forma personalizada.
 
 Selecione **[!UICONTROL Editar]** se desejar configurar o componente. Você pode definir [configurações comuns a todos os componentes do Dynamic Media Classic](#settings-common-to-all-scene-components) e outras configurações descritas nesta seção.
 

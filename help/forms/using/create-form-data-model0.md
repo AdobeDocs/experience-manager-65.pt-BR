@@ -25,7 +25,7 @@ Este tutorial é uma etapa da série [Criar sua primeira Comunicação Interativ
 
 O módulo de integração de dados do AEM Forms permite criar um modelo de dados de formulário a partir de diferentes fontes de dados de back-end, como perfil de usuário AEM, serviços Web RESTful, serviços Web baseados em SOAP, serviços OData e bancos de dados relacionais. Você pode configurar serviços e objetos de modelo de dados em um modelo de dados de formulário e associá-lo a um formulário adaptável. Os campos de formulário adaptável são vinculados às propriedades do objeto de modelo de dados. Os serviços permitem preencher previamente o formulário adaptável e gravar dados do formulário enviado de volta no objeto de modelo de dados.
 
-Para obter mais informações sobre a integração de dados de formulário e o modelo de dados de formulário, consulte [Integração de dados do AEM Forms](https://helpx.adobe.com/experience-manager/6-3/forms/using/data-integration.html).
+Para obter mais informações sobre a integração de dados de formulário e o modelo de dados de formulário, consulte [Integração de dados do AEM Forms](https://helpx.adobe.com/br/experience-manager/6-3/forms/using/data-integration.html).
 
 Este tutorial percorre as etapas para preparar, criar, configurar e associar um modelo de dados de formulário a uma comunicação interativa. Ao final deste tutorial, você será capaz de:
 
@@ -46,7 +46,7 @@ O modelo de dados de formulário é semelhante ao seguinte:
 Antes de começar, verifique se você tem o seguinte:
 
 * Banco de dados MySQL com dados de exemplo, conforme declarado na seção [Configurar o banco de dados](../../forms/using/create-form-data-model0.md#step-set-up-the-database).
-* Pacote OSGi para o driver JDBC MySQL, conforme explicado em [Agrupando o driver do banco de dados JDBC](https://helpx.adobe.com/experience-manager/6-3/help/sites-developing/jdbc.html#bundling-the-jdbc-database-driver)
+* Pacote OSGi para o driver JDBC MySQL, conforme explicado em [Agrupando o driver do banco de dados JDBC](https://helpx.adobe.com/br/experience-manager/6-3/help/sites-developing/jdbc.html#bundling-the-jdbc-database-driver)
 
 ## Etapa 1: configurar o banco de dados {#step-set-up-the-database}
 
@@ -113,7 +113,7 @@ A tabela **faturas** inclui os detalhes da fatura, como data da fatura, período
 
 ## Etapa 2: configurar o banco de dados MySQL como fonte de dados {#step-configure-mysql-database-as-data-source}
 
-É possível configurar diferentes tipos de fontes de dados para criar um modelo de dados de formulário. Para este tutorial, você configurará o banco de dados MySQL que está configurado e preenchido com dados de amostra. Para obter informações sobre outras fontes de dados com suporte e como configurá-las, consulte [Integração de Dados do AEM Forms](https://helpx.adobe.com/experience-manager/6-3/forms/using/data-integration.html).
+É possível configurar diferentes tipos de fontes de dados para criar um modelo de dados de formulário. Para este tutorial, você configurará o banco de dados MySQL que está configurado e preenchido com dados de amostra. Para obter informações sobre outras fontes de dados com suporte e como configurá-las, consulte [Integração de Dados do AEM Forms](https://helpx.adobe.com/br/experience-manager/6-3/forms/using/data-integration.html).
 
 Faça o seguinte para configurar o banco de dados MySQL:
 
@@ -155,7 +155,7 @@ Faça o seguinte para configurar o banco de dados MySQL:
 
 ## Etapa 3: Criar modelo de dados de formulário {#step-create-form-data-model}
 
-O AEM Forms fornece uma interface de usuário intuitiva para [criar um modo de dados de formulário](https://helpx.adobe.com/experience-manager/6-3/forms/using/data-integration.html#main-pars_header_1524967585)l a partir de fontes de dados configuradas. É possível usar várias fontes de dados em um modelo de dados de formulário. Para o caso de uso deste tutorial, você usará o MySQL como fonte de dados.
+O AEM Forms fornece uma interface de usuário intuitiva para [criar um modo de dados de formulário](https://helpx.adobe.com/br/experience-manager/6-3/forms/using/data-integration.html#main-pars_header_1524967585)l a partir de fontes de dados configuradas. É possível usar várias fontes de dados em um modelo de dados de formulário. Para o caso de uso deste tutorial, você usará o MySQL como fonte de dados.
 
 Faça o seguinte para criar o modelo de dados de formulário:
 

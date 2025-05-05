@@ -24,7 +24,7 @@ ht-degree: 0%
 >
 >Este artigo se aplica aos componentes de email obsoletos do Foundation com base em AEM.
 >
->Os usuários são incentivados a usar os [Componentes principais de email.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html)
+>Os usuários são incentivados a usar os [Componentes principais de email.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html?lang=pt-BR)
 
 Este documento descreve algumas das práticas recomendadas para design de email, resultando em um modelo de campanha de email bem desenvolvido.
 

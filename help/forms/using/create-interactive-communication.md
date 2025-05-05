@@ -300,7 +300,7 @@ A tabela a seguir lista um exemplo dos valores exibidos como resultado da config
 | SocialSecurityNumber | 1234567 | texto{999-99-9999} | 1-23-4567 | O número de dígitos no campo de valor padrão é menor que o número de dígitos no campo Padrão. O padrão se aplica aos 7 dígitos disponíveis. |
 | SocialSecurityNumber | 1234567890 | texto{999-99-9999} | 1234567890 | O número de dígitos no campo de valor padrão é maior que o número de dígitos no campo Padrão. Como resultado, não há alteração no valor de exibição. |
 
-Se um padrão de exibição não for especificado para uma variável ou um elemento de modelo de dados de formulário, a [configuração global de fragmento de documento](https://helpx.adobe.com//experience-manager/6-5/forms/using/interactive-communication-configuration-properties.html) será usada por padrão.
+Se um padrão de exibição não for especificado para uma variável ou um elemento de modelo de dados de formulário, a [configuração global de fragmento de documento](https://helpx.adobe.com/br//experience-manager/6-5/forms/using/interactive-communication-configuration-properties.html) será usada por padrão.
 
 Se você não aplicar um padrão de exibição a uma variável do tipo de dados Number, a Visualização de impressão exibirá o padrão de acordo com a configuração global do fragmento do documento. Se você aplicar alterações à configuração padrão do fragmento de documento global, a interface do usuário do agente ainda exibirá o padrão de acordo com os separadores padrão definidos para o local.
 
@@ -618,7 +618,7 @@ PrintChannelRenderOptions renderOptions = new PrintChannelRenderOptions();
 PrintDocument printDocument = printChannel.render(renderOptions);
 ```
 
-Para gerar a saída em qualquer outro formato, especifique o tipo de formato de saída. Consulte [PrintChannel API](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/PrintConfig.html) para obter a lista de tipos de formato de saída com suporte.
+Para gerar a saída em qualquer outro formato, especifique o tipo de formato de saída. Consulte [PrintChannel API](https://helpx.adobe.com/br/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/PrintConfig.html) para obter a lista de tipos de formato de saída com suporte.
 
 Por exemplo, você pode usar a seguinte amostra para definir PCL como formato de saída para uma comunicação interativa:
 

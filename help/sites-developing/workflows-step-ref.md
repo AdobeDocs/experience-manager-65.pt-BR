@@ -188,7 +188,7 @@ A **OU Split** cria uma divisão no fluxo de trabalho, depois da qual apenas uma
 
 >[!NOTE]
 >
->Consulte [OU Split step](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/using-variables-in-aem-workflows.html#use-a-variable)
+>Consulte [OU Split step](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/using-variables-in-aem-workflows.html?lang=pt-BR#use-a-variable)
 
 ![Ramificação usando OU Split](assets/variables_orsplit_new.png)
 

@@ -166,7 +166,7 @@ Esse problema pode ter várias causas:
 Você pode experimentar as seguintes soluções:
 
 * Verifique se o código do cliente que carrega as bibliotecas do tipo DTM (que por sua vez carregam as bibliotecas do Target) é executado de forma síncrona no [cabeçalho da página](/help/sites-developing/target.md#enabling-targeting-with-adobe-target-on-your-pages).
-* se o site estiver configurado para usar o DTM para entregar bibliotecas do Target, verifique se a opção **Clientlib entregue pelo DTM** está marcada na [Configuração do Target](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/target-configuring.html) para o site.
+* se o site estiver configurado para usar o DTM para entregar bibliotecas do Target, verifique se a opção **Clientlib entregue pelo DTM** está marcada na [Configuração do Target](https://helpx.adobe.com/br/experience-manager/6-3/sites/administering/using/target-configuring.html) para o site.
 
 ### Uma oferta padrão é sempre exibida em vez da oferta correta ao usar AT.js 1.3+ {#a-default-offer-is-always-displayed-instead-of-correct-offer-when-using-at-js}
 
@@ -211,7 +211,7 @@ http://localhost:4502/etc/cloudservices/testandtarget/<YOUR-CONFIG>/jcr:content.
 }
 ```
 
-Se a resposta contiver a linha `a4tEnabled:false`, entre em contato com o [Atendimento ao cliente do Adobe](https://helpx.adobe.com/contact.html) para obter a configuração correta da sua conta.
+Se a resposta contiver a linha `a4tEnabled:false`, entre em contato com o [Atendimento ao cliente do Adobe](https://helpx.adobe.com/br/contact.html) para obter a configuração correta da sua conta.
 
 ### APIs úteis do Target {#helpful-target-apis}
 

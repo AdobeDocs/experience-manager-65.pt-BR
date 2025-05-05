@@ -92,7 +92,7 @@ A seção de resumo no nível do formulário fornece informações sobre o desem
 * **Rascunhos**: Número de vezes que o formulário foi salvo como rascunho
 * **Envios**: número de vezes que o formulário foi enviado
 * **Abortar**: número de vezes que os usuários começaram a preencher o formulário e depois saíram sem preenchê-lo
-* **Visitantes únicos**: número de vezes que o formulário é renderizado por visitantes únicos. Para obter mais informações sobre visitantes únicos, consulte [Visitantes únicos, Visitas e comportamento do cliente](https://helpx.adobe.com/analytics/kb/unique-visitors-visitor-behavior.html).
+* **Visitantes únicos**: número de vezes que o formulário é renderizado por visitantes únicos. Para obter mais informações sobre visitantes únicos, consulte [Visitantes únicos, Visitas e comportamento do cliente](https://helpx.adobe.com/br/analytics/kb/unique-visitors-visitor-behavior.html).
 
 ![Relatório de análise resumida em nível de formulário expandido](assets/analytics-report.png)
 

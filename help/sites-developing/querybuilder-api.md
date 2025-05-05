@@ -32,15 +32,15 @@ A API REST fornece acesso aos mesmos recursos por meio do HTTP, com respostas se
 
 >[!NOTE]
 >
->A API do QueryBuilder é criada usando a API JCR. Você também pode consultar o JCR do Adobe Experience Manager usando a API JCR de um pacote OSGi. Para obter informações, consulte [Adobe Experience Manager usando a API JCR](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/access-jcr.html).
+>A API do QueryBuilder é criada usando a API JCR. Você também pode consultar o JCR do Adobe Experience Manager usando a API JCR de um pacote OSGi. Para obter informações, consulte [Adobe Experience Manager usando a API JCR](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/access-jcr.html?lang=pt-BR).
 
 ## Sessão Gem {#gem-session}
 
-[Gems do Adobe Experience Manager (AEM Adobe Experience Manager)](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/overview.html) é uma série de aprofundamentos técnicos fornecidos por especialistas em Adobe. Essa sessão dedicada ao construtor de consultas é útil para obter uma visão geral e usar a ferramenta.
+[Gems do Adobe Experience Manager (AEM Adobe Experience Manager)](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/overview.html?lang=pt-BR) é uma série de aprofundamentos técnicos fornecidos por especialistas em Adobe. Essa sessão dedicada ao construtor de consultas é útil para obter uma visão geral e usar a ferramenta.
 
 >[!NOTE]
 >
->Sessão de Gem AEM [Os formulários de pesquisa ficaram simples com o construtor de consultas AEM](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-search-forms-using-querybuilder.html) para obter uma visão geral detalhada do construtor de consultas.
+>Sessão de Gem AEM [Os formulários de pesquisa ficaram simples com o construtor de consultas AEM](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-search-forms-using-querybuilder.html?lang=pt-BR) para obter uma visão geral detalhada do construtor de consultas.
 
 ## Exemplos de consulta {#sample-queries}
 

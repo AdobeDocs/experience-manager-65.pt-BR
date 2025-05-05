@@ -153,8 +153,8 @@ Se a API REST do Assets for usada em um ambiente sem requisitos de autenticaçã
 >
 >Para obter mais informações, consulte:
 >
->* [Explicação sobre o CORS/AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html)
->* [Vídeo - Desenvolvimento do CORS com o AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html)
+>* [Explicação sobre o CORS/AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=pt-BR)
+>* [Vídeo - Desenvolvimento do CORS com o AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html?lang=pt-BR)
 >
 
 Em ambientes com requisitos de autenticação específicos, o OAuth é recomendado.
@@ -395,4 +395,4 @@ Consulte esta página para obter referências detalhadas de API:
 Para obter mais informações, consulte:
 
 * [Documentação da API HTTP do Assets](/help/assets/mac-api-assets.md)
-* [Sessão de Gem do AEM: OAuth](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-oauth-server-functionality-in-aem.html)
+* [Sessão de Gem do AEM: OAuth](https://helpx.adobe.com/br/experience-manager/kt/eseminars/gems/aem-oauth-server-functionality-in-aem.html)

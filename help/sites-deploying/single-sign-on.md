@@ -86,7 +86,7 @@ Para configurar o SSO para uma instância AEM, configure o [Manipulador de Auten
 >* IIS
 >
 >No conjunto `disp_iis.ini`:
->(consulte [instalando o Dispatcher com o Microsoft® Internet Information Server](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html#microsoft-internet-information-server) para obter detalhes completos)
+>(consulte [instalando o Dispatcher com o Microsoft® Internet Information Server](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=pt-BR#microsoft-internet-information-server) para obter detalhes completos)
 >
 >* `servervariables=1` (encaminha variáveis do servidor IIS como cabeçalhos de solicitação para a instância remota)
 >* `replaceauthorization=1` (substitui qualquer cabeçalho chamado &quot;Autorização&quot;, diferente de &quot;Básica&quot;, por seu equivalente &quot;Básica&quot;)

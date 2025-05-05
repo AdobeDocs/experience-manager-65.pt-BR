@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Temas de referência{#reference-themes}
 
-[Os temas](../../forms/using/themes.md) permitem estilizar os formulários sem um conhecimento profundo de CSS. Além do tema padrão, você pode obter os seguintes temas instalando o [pacote complementar do AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en):
+[Os temas](../../forms/using/themes.md) permitem estilizar os formulários sem um conhecimento profundo de CSS. Além do tema padrão, você pode obter os seguintes temas instalando o [pacote complementar do AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=pt-BR):
 
 * Berilo
 * Exec

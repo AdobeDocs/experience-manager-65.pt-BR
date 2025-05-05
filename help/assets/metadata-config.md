@@ -18,7 +18,7 @@ ht-degree: 3%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-profiles.html?lang=en) |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-profiles.html?lang=pt-BR) |
 | AEM 6.5 | Este artigo |
 
 <!-- Scope of metadata articles:
@@ -118,7 +118,7 @@ Um perfil de metadados permite aplicar metadados padrão a ativos em uma pasta. 
 1. Na caixa de diálogo, clique em **[!UICONTROL Excluir]** para confirmar a operação de exclusão. O perfil de metadados é excluído da lista.
 
 <!-- TBD: Revisit to find out the correct config. and update these steps. When fixed, also o
-These steps have been carried forward from old AEM versions. See https://helpx.adobe.com/experience-manager/6-2/assets/using/metadata-profiles.html#ApplyingaMetadataProfiletoFolders
+These steps have been carried forward from old AEM versions. See https://helpx.adobe.com/br/experience-manager/6-2/assets/using/metadata-profiles.html#ApplyingaMetadataProfiletoFolders
 
 ### Configuration to apply a metadata profile globally {#apply-a-metadata-profile-globally}
 
@@ -278,7 +278,7 @@ Insira os valores de metadados nos vários campos e clique em **[!UICONTROL Salv
 >
 >* [Conceitos e noções básicas sobre metadados](metadata-concepts.md).
 >* [Editar propriedades de metadados de várias coleções](manage-collections.md#editing-collection-metadata-in-bulk).
->* [Importação e exportação de metadados no Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-export.html).
+>* [Importação e exportação de metadados no Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-export.html?lang=pt-BR).
 >* [Perfis para processar metadados, imagens e vídeos](processing-profiles.md).
 >* [Práticas recomendadas para organizar seus ativos digitais para usar perfis de processamento](/help/assets/organize-assets.md).
 >* [Writeback XMP](/help/assets/xmp-writeback.md).

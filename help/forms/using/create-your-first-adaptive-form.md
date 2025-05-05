@@ -45,7 +45,7 @@ O site é executado no Adobe Experience Manager (AEM) e usa AEM [!DNL Forms] par
 
 ### Pré-requisitos {#prerequisite}
 
-* Configurar uma [instância de autor do AEM](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/deploying/deploy.html#author-and-publish-installs)
+* Configurar uma [instância de autor do AEM](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/deploying/deploy.html?lang=pt-BR#author-and-publish-installs)
 * Instale o [complemento do AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md) na instância do autor.
 * Obter o driver de banco de dados JDBC (arquivo JAR) do provedor de banco de dados. Exemplos no tutorial são baseados no banco de dados [!DNL MySQL] e usam o [!DNL Oracle's] [driver do banco de dados JDBC do MySQL](https://dev.mysql.com/downloads/connector/j/5.1.html).
 

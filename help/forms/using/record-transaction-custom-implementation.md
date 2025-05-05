@@ -19,14 +19,14 @@ ht-degree: 6%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/record-transaction-custom-implementation) |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/forms/using-communications/record-transaction-custom-implementation) |
 | AEM 6.5 | Este artigo |
 
 Usar a API TransactionRecorder para registrar ações que não são contabilizadas como transações automaticamente
 
 Você pode usar o código personalizado para enviar um Formulário PDF ou enviar o URL de visualização da interface do usuário do agente para os usuários finais visualizarem uma comunicação interativa. Ou você envia um formulário usando métodos personalizados em vez de usar os métodos de envio fornecidos com o AEM Forms. Todas as ações mencionadas anteriormente e implementações personalizadas de APIs do AEM Forms não são contabilizadas como transações. A AEM Forms fornece uma API, [TransactionRecorder](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/aem/transaction/core/ITransactionRecorder.html), para registrar essas ações, como transações.
 
-Para registrar uma transação, escreva o [servlet sling padrão](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/store-and-retrieve-af-with-2fa/create-servlet.html?lang=en) e chame o servlet de um cliente para registrar uma transação. Você pode chamar o servlet usando AJAX ou qualquer outro método padrão.
+Para registrar uma transação, escreva o [servlet sling padrão](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/store-and-retrieve-af-with-2fa/create-servlet.html?lang=pt-BR) e chame o servlet de um cliente para registrar uma transação. Você pode chamar o servlet usando AJAX ou qualquer outro método padrão.
 
 ## Código de exemplo do lado do servidor {#sample-server-sided-code}
 

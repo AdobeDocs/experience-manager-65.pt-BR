@@ -151,7 +151,7 @@ Agora, configure o serviço de e-mail no servidor JEE mais recente fazendo logon
 
    >[!NOTE]
    >
-   > Para saber mais informações relacionadas às notificações de tarefas, [clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/administrator-help/configuring-email-endpoints.html#create-an-email-endpoint-for-the-complete-task-service).
+   > Para saber mais informações relacionadas às notificações de tarefas, [clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/administrator-help/configuring-email-endpoints.html?lang=pt-BR#create-an-email-endpoint-for-the-complete-task-service).
 
 ## Para configurar o terminal de email {#configure_email_endpoint}
 
@@ -165,7 +165,7 @@ Agora, configure o serviço de e-mail no servidor JEE mais recente fazendo logon
 
    >[!NOTE]
    >
-   > Para saber mais sobre como configurar pontos de extremidade de email, clique em [Configurar um ponto de extremidade de email](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/administrator-help/configuring-email-endpoints.html).
+   > Para saber mais sobre como configurar pontos de extremidade de email, clique em [Configurar um ponto de extremidade de email](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/administrator-help/configuring-email-endpoints.html?lang=pt-BR).
 
 ## Resolução de problemas {#troubleshooting}
 

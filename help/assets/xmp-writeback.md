@@ -18,7 +18,7 @@ ht-degree: 6%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/xmp-metadata.html?lang=en) |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/xmp-metadata.html?lang=pt-BR) |
 | AEM 6.5 | Este artigo |
 
 Esse recurso de writeback XMP no [!DNL Adobe Experience Manager Assets] replica as alterações de metadados nas representações do ativo original. Ao alterar os metadados de um ativo no Assets ou ao fazer upload do ativo, as alterações são inicialmente armazenadas no nó de metadados na hierarquia do ativo.

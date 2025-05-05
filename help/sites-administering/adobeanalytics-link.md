@@ -141,7 +141,7 @@ s.linkTrackVars= 'prop4';
 
 ## Exemplo de configuração de rastreamento de link {#example-link-tracking-configuration}
 
-Execute os procedimentos a seguir para explorar o comportamento de rastreamento de link da integração do Adobe Analytics. Os procedimentos mostram resultados do [Adobe Marketing Cloud Debugger](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html).
+Execute os procedimentos a seguir para explorar o comportamento de rastreamento de link da integração do Adobe Analytics. Os procedimentos mostram resultados do [Adobe Marketing Cloud Debugger](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html?lang=pt-BR).
 
 ### Configuração geral {#general-configuration}
 

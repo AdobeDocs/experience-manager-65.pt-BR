@@ -19,7 +19,7 @@ O Adobe Dynamic Tag Management é uma ferramenta que ativa as ferramentas de mar
 
 >[!CAUTION]
 >
->O DTM do Adobe foi descontinuado em favor do [!DNL Adobe Experience Platform] e logo chegará ao [fim da vida útil](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f). A Adobe recomenda que você [use [!DNL Adobe Experience Platform] para insights de ativos](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html).
+>O DTM do Adobe foi descontinuado em favor do [!DNL Adobe Experience Platform] e logo chegará ao [fim da vida útil](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f). A Adobe recomenda que você [use [!DNL Adobe Experience Platform] para insights de ativos](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html?lang=pt-BR).
 
 Execute essas etapas para ativar o Assets Insights por meio do DTM.
 

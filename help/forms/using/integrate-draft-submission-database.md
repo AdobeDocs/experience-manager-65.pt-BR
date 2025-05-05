@@ -26,7 +26,7 @@ A amostra, discutida neste documento, é uma implementação de referência de d
 >[!NOTE]
 >
 >* Os exemplos e as configurações explicadas neste documento são de acordo com o MySQL 5.6.24 e você deve substituí-los apropriadamente pelo seu sistema de banco de dados.
->* Verifique se você instalou a versão mais recente do pacote complementar do AEM Forms. Para obter a lista de pacotes disponíveis, consulte o artigo [versões do AEM Forms](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html).
+>* Verifique se você instalou a versão mais recente do pacote complementar do AEM Forms. Para obter a lista de pacotes disponíveis, consulte o artigo [versões do AEM Forms](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html).
 >* O pacote de amostra funciona somente com ações de envio do Adaptive Forms.
 
 ## Definir e configurar a amostra {#set-up-and-configure-the-sample}

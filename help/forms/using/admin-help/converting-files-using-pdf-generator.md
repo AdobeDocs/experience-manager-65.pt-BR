@@ -116,7 +116,7 @@ Você pode exportar arquivos PDF para vários formatos de arquivo, conforme desc
 
    O Tempo de conversão exibido quando o arquivo é convertido pode ser maior que o valor especificado aqui. O Tempo de conversão inclui o tempo gasto aguardando o thread ou processo, o tempo gasto para converter o arquivo e o tempo gasto pelo conversor de fallback (se aplicável). hora. O valor de Especificar um tempo limite é apenas o tempo necessário para converter o arquivo.
 
-1. (Opcional) Na opção **Especificar perfil de comprovação personalizado**, clique em Procurar e selecione um [perfil de comprovação personalizado](https://helpx.adobe.com/acrobat/using/preflight-profiles-acrobat-pro.html). Os perfis de comprovação são usados somente ao converter documentos no formato de arquivo PDF (PDF/A).
+1. (Opcional) Na opção **Especificar perfil de comprovação personalizado**, clique em Procurar e selecione um [perfil de comprovação personalizado](https://helpx.adobe.com/br/acrobat/using/preflight-profiles-acrobat-pro.html). Os perfis de comprovação são usados somente ao converter documentos no formato de arquivo PDF (PDF/A).
 1. Clique em Exportar. Quando a conversão estiver concluída, um link para o arquivo exportado será exibido.
 1. Clique no link para exibir o arquivo convertido.
 

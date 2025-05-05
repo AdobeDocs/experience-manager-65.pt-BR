@@ -37,11 +37,11 @@ Os recursos nesta tabela podem ajudar você a saber mais sobre o e começar a us
   </tr>
   <tr>
    <td><p>Informações gerais sobre a AEM Forms e como ela se integra a outros produtos Adobe</p> </td>
-   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-aem-forms.html?lang=en">Visão geral do AEM Forms</a><br /> <br /> </p> </td>
+   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-aem-forms.html?lang=pt-BR">Visão geral do AEM Forms</a><br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>Toda a documentação disponível para o AEM Forms</p> </td>
-   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-aem-forms.html?lang=en">Documentação do AEM Forms</a><br /> <br /> </p> </td>
+   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-aem-forms.html?lang=pt-BR">Documentação do AEM Forms</a><br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>Atualizações de patches, notas técnicas e informações adicionais sobre esta versão do produto</p> </td>
@@ -100,7 +100,7 @@ Espaço em disco para instalação:
 
 ### Plataformas compatíveis {#supported-platforms}
 
-Consulte a lista completa de plataformas com suporte para o Workbench em [Plataformas com Suporte da AEM Forms](https://www.adobe.com/go/learn_aemforms_supportedplatforms_65).
+Consulte a lista completa de plataformas com suporte para o Workbench em [Plataformas com Suporte da AEM Forms](https://www.adobe.com/go/learn_aemforms_supportedplatforms_65_br).
 
 ## Considerações sobre a instalação do Designer {#designer-installation-considerations}
 
@@ -191,7 +191,7 @@ Para usar o Workbench, você deve ter uma instância do AEM Forms em execução,
 
 ### Definição das configurações de tempo limite {#configuring-timeout-settings}
 
-Por padrão, o Workbench expira após duas horas, independentemente da atividade ou inatividade. Para editar a configuração de tempo limite, consulte &quot;Configurando Gerenciamento de Usuário > Configurar atributos avançados do sistema&quot; na <a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/configure-user-management/configure-advanced-system-attributes.html">Ajuda do console de administração</a>.
+Por padrão, o Workbench expira após duas horas, independentemente da atividade ou inatividade. Para editar a configuração de tempo limite, consulte &quot;Configurando Gerenciamento de Usuário > Configurar atributos avançados do sistema&quot; na <a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/configure-user-management/configure-advanced-system-attributes.html?lang=pt-BR">Ajuda do console de administração</a>.
 
 ### Configuração do Workbench para se conectar via HTTPS {#configuring-workbench-to-connect-over-HTTPS}
 

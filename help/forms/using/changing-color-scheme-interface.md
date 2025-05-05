@@ -31,7 +31,7 @@ Para atualizar a barra de navegação na parte superior do Workspace do AEM Form
 
    >[!NOTE]
    >
-   >Para obter mais informações, consulte [Acesso ao WebDAV](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/webdav-access.html?lang=en).
+   >Para obter mais informações, consulte [Acesso ao WebDAV](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/webdav-access.html?lang=pt-BR).
 
 1. Referencie a nova imagem de fundo em /apps/ws/css/newStyle.css adicionando o estilo a seguir.
 

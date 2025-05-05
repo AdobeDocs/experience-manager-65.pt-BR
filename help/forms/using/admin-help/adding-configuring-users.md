@@ -176,4 +176,4 @@ Se um usuário sem os formulários AEM e as permissões do CQ necessários tenta
 
 O CQ fornece um mecanismo para substituir o jsp do manipulador 404 padrão.
 
-Para obter detalhes sobre como personalizar a página de tratamento de erros, consulte [Personalizando páginas mostradas pelo Manipulador de erros](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/customizing-errorhandler-pages.html?lang=en) na documentação do Adobe Experience Manager.
+Para obter detalhes sobre como personalizar a página de tratamento de erros, consulte [Personalizando páginas mostradas pelo Manipulador de erros](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/customizing-errorhandler-pages.html?lang=pt-BR) na documentação do Adobe Experience Manager.

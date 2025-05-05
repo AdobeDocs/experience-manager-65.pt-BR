@@ -372,7 +372,7 @@ Veja a seguir os detalhes de possíveis problemas, juntamente com as resoluçõe
    * Se isso não resolver o problema e as exceções `AsyncIndexUpdate` persistirem:
 
       1. [Reindexar](#how-to-re-index) o índice de erros
-      1. Registre também um tíquete de [Suporte a Adobe](https://helpx.adobe.com/support.html)
+      1. Registre também um tíquete de [Suporte a Adobe](https://helpx.adobe.com/br/support.html)
 
 ### Como reindexar {#how-to-re-index}
 

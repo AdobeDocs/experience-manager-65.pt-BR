@@ -239,7 +239,7 @@ O planejamento do desenvolvimento é fundamental para garantir que seu projeto s
 
   Antes do desenvolvimento, todos os processos de suporte necessários para implantar, liberar, testar e relatar problemas devem ser estabelecidos.
 
-  Consulte também o [Portal de suporte do Adobe](https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home#support).
+  Consulte também o [Portal de suporte do Adobe](https://experienceleague.adobe.com/pt-br?support-solution=General&amp;support-tab=home#support).
 
 ### Planejamento e operações de operações {#operations-planning-and-operations}
 
@@ -632,4 +632,4 @@ Além disso, as seguintes seções da documentação do AEM são de especial int
 
 * Documentação relacionada
 
-   * Adobe Experience Cloud - [Planejamento para a Adobe Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/services/core-services.html)
+   * Adobe Experience Cloud - [Planejamento para a Adobe Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/services/core-services.html?lang=pt-BR)

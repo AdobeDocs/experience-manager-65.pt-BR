@@ -404,7 +404,7 @@ Ao criar ou editar predefinições de imagens, você tem as opções descritas n
     </ul>
     <div>
       A nitidez é descrita em
-     <a href="https://experienceleague.adobe.com/docs/experience-manager-65/assets/sharpening_images.pdf">Nitidez de imagens</a>.
+     <a href="https://experienceleague.adobe.com/docs/experience-manager-65/assets/sharpening_images.pdf?lang=pt-BR">Nitidez de imagens</a>.
     </div> </td>
   </tr>
   <tr>
@@ -424,7 +424,7 @@ Ao criar ou editar predefinições de imagens, você tem as opções descritas n
   </tr>
   <tr>
    <td><strong>Modificador de imagem</strong></td>
-   <td><p>Além das configurações de imagem comuns disponíveis na interface, o Dynamic Media oferece suporte a várias modificações de imagem avançadas que você pode especificar no campo <strong>Modificadores de imagem</strong>. Estes parâmetros são definidos na <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html#image-serving-api">referência de comando do Protocolo do Servidor de Imagens</a>.</p> <p>Importante: a seguinte funcionalidade listada na API não é compatível:</p>
+   <td><p>Além das configurações de imagem comuns disponíveis na interface, o Dynamic Media oferece suporte a várias modificações de imagem avançadas que você pode especificar no campo <strong>Modificadores de imagem</strong>. Estes parâmetros são definidos na <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=pt-BR#image-serving-api">referência de comando do Protocolo do Servidor de Imagens</a>.</p> <p>Importante: a seguinte funcionalidade listada na API não é compatível:</p>
     <ul>
      <li>Modelos básicos e comandos de renderização de texto: <code>text= textAngle= textAttr= textFlowPath= textFlowXPath= textPath=</code> e <code>textPs=</code></li>
      <li>Comandos de localização: <code>locale=</code> e <code>req=xlate</code></li>
@@ -441,7 +441,7 @@ Ao criar ou editar predefinições de imagens, você tem as opções descritas n
 
 ## Definição de opções de predefinição de imagem com Modificadores de imagem {#defining-image-preset-options-with-image-modifiers}
 
-Além das opções disponíveis nas guias Básico e Avançado, é possível definir modificadores de imagem para oferecer mais opções ao definir predefinições de imagens. A Renderização de Imagem depende da API de renderização de imagem que está definida em detalhes na [Referência do Protocolo HTTP](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html#image-serving-api).
+Além das opções disponíveis nas guias Básico e Avançado, é possível definir modificadores de imagem para oferecer mais opções ao definir predefinições de imagens. A Renderização de Imagem depende da API de renderização de imagem que está definida em detalhes na [Referência do Protocolo HTTP](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=pt-BR#image-serving-api).
 
 A seguir estão alguns exemplos básicos do que você pode fazer com modificadores de imagem.
 
@@ -449,7 +449,7 @@ A seguir estão alguns exemplos básicos do que você pode fazer com modificador
 >
 >Alguns modificadores de imagem [ não podem ser usados em Experience Manager](#advanced-tab-options).
 
-* [op_invert](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-invert.html#image-serving-api) - Inverte cada componente de cor para um efeito de imagem negativo.
+* [op_invert](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-invert.html?lang=pt-BR#image-serving-api) - Inverte cada componente de cor para um efeito de imagem negativo.
 
   ```xml
   &op_invert=1
@@ -457,7 +457,7 @@ A seguir estão alguns exemplos básicos do que você pode fazer com modificador
 
   ![6_5_imagepreset-edit-invert](assets/6_5_imagepreset-edit-invert.png)
 
-* [op_blur](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-blur.html#image-serving-api) - Aplica um filtro de desfoque à imagem.
+* [op_blur](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-blur.html?lang=pt-BR#image-serving-api) - Aplica um filtro de desfoque à imagem.
 
   ```xml
   &op_blur=7
@@ -473,7 +473,7 @@ A seguir estão alguns exemplos básicos do que você pode fazer com modificador
 
   ![chlimage_1-80](assets/chlimage_1-501.png)
 
-* [op_brightness](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-brightness.html#image-serving-api) - Diminui ou aumenta o brilho.
+* [op_brightness](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-brightness.html?lang=pt-BR#image-serving-api) - Diminui ou aumenta o brilho.
 
   ```xml
   &op_brightness=58
@@ -481,7 +481,7 @@ A seguir estão alguns exemplos básicos do que você pode fazer com modificador
 
   ![6_5_imagepreset-edit-brightness](assets/6_5_imagepreset-edit-brightness.png)
 
-* [opac](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-opac.html#image-serving-api) - Ajusta a opacidade da imagem. Permite diminuir a opacidade do primeiro plano.
+* [opac](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-opac.html?lang=pt-BR#image-serving-api) - Ajusta a opacidade da imagem. Permite diminuir a opacidade do primeiro plano.
 
   ```xml
   opac=29

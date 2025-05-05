@@ -18,7 +18,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->O [Seletor de ativos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-selector.html?lang=en) foi chamado [Seletor de ativos](https://helpx.adobe.com/experience-manager/6-2/assets/using/asset-picker.html) em versões anteriores do [!DNL Experience Manager].
+>O [Seletor de ativos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-selector.html?lang=pt-BR) foi chamado [Seletor de ativos](https://helpx.adobe.com/br/experience-manager/6-2/assets/using/asset-picker.html) em versões anteriores do [!DNL Experience Manager].
 
 O seletor de ativos permite procurar, pesquisar e filtrar ativos no Assets [!DNL Adobe Experience Manager]. Também é possível buscar os metadados dos ativos selecionados usando o seletor de ativos. Para personalizar a interface do seletor de ativos, você pode iniciá-lo com parâmetros de solicitação compatíveis. Esses parâmetros definem o contexto do seletor de ativos para um cenário específico.
 
@@ -63,4 +63,4 @@ Você pode passar os seguintes parâmetros de solicitação em um URL para inici
 
 >[!MORELIKETHIS]
 >
->* [Seletor de ativos de micro front-end no AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-selector.html?lang=en)
+>* [Seletor de ativos de micro front-end no AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-selector.html?lang=pt-BR)

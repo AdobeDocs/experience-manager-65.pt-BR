@@ -35,7 +35,7 @@ Este artigo fornece instruções detalhadas para configurar e implantar o Arqué
 
 Antes de ativar os Componentes principais do Adaptive Forms em um ambiente AEM 6.5 Forms:
 
-* [Atualize para AEM 6.5 Forms Service Pack 16 (6.5.16.0) ou posterior](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html).
+* [Atualize para AEM 6.5 Forms Service Pack 16 (6.5.16.0) ou posterior](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=pt-BR).
 
 * Instale a última versão do [Apache Maven](https://maven.apache.org/download.cgi).
 
@@ -106,11 +106,11 @@ Para criar um projeto com base no Arquétipo AEM 41 ou [posterior](https://githu
 1. Atualize o projeto para incluir a versão mais recente dos Componentes principais do Forms:
 
    1. Abra a [Pasta do Projeto do Arquétipo AEM]/pom.xml para edição.
-   1. Defina as versões de `core.forms.components.version` e `core.forms.components.af.version` com a versão [mais recente dos Componentes Principais do Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/version.html#aem-as-form-version-history) e verifique se ambas têm a mesma versão que os **Componentes Principais do Forms** mencionados na tabela, e defina a versão de `core.wcm.components.version` conforme fornecido nos [Componentes Principais do WCM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/versions.html).
+   1. Defina as versões de `core.forms.components.version` e `core.forms.components.af.version` com a versão [mais recente dos Componentes Principais do Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/version.html?lang=pt-BR#aem-as-form-version-history) e verifique se ambas têm a mesma versão que os **Componentes Principais do Forms** mencionados na tabela, e defina a versão de `core.wcm.components.version` conforme fornecido nos [Componentes Principais do WCM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/versions.html?lang=pt-BR).
 
       >[!WARNING]
       >
-      >* Ao criar um projeto do Arquétipo com versão 45, o `[AEM Archetype Project Folder]/pom.xml` define inicialmente a versão dos componentes principais de formulários como 1.1.28. Antes de criar ou implantar o projeto Arquétipo, atualize a versão dos componentes principais de formulários para 1.1.26. Você pode encontrar a última versão no [histórico de versões do Forms do AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/version.html#aem-as-form-version-history).
+      >* Ao criar um projeto do Arquétipo com versão 45, o `[AEM Archetype Project Folder]/pom.xml` define inicialmente a versão dos componentes principais de formulários como 1.1.28. Antes de criar ou implantar o projeto Arquétipo, atualize a versão dos componentes principais de formulários para 1.1.26. Você pode encontrar a última versão no [histórico de versões do Forms do AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/version.html?lang=pt-BR#aem-as-form-version-history).
 
       >[!NOTE]
       >
@@ -134,7 +134,7 @@ Para criar um projeto com base no Arquétipo AEM 41 ou [posterior](https://githu
 
    Depois que o projeto do Arquétipo AEM é criado com êxito, um pacote AEM é gerado. Você pode encontrar o pacote em [Pasta de Projeto do Arquétipo AEM]\all\target\[appid].all-[version].zip
 
-1. Use o [Gerenciador de Pacotes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=en) para implantar o pacote [Pasta do Projeto do Arquétipo AEM]\all\target\[appid].all-[version].zip em todas as instâncias do Autor e do Publish.
+1. Use o [Gerenciador de Pacotes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=pt-BR) para implantar o pacote [Pasta do Projeto do Arquétipo AEM]\all\target\[appid].all-[version].zip em todas as instâncias do Autor e do Publish.
 
 >[!NOTE]
 >

@@ -19,7 +19,7 @@ ht-degree: 1%
 
 O [fragmento de formulário adaptável](../../forms/using/adaptive-form-fragments.md) é um grupo de campos ou um painel que contém um grupo de campos que você pode usar ao criar um formulário. Ele permite criar um formulário de maneira fácil e rápida. Você pode arrastar e soltar um fragmento de formulário adaptável em um formulário usando o navegador de ativos na barra lateral e editá-lo no editor de formulários.
 
-Para autores de formulários adaptáveis, os fragmentos de referência são fornecidos no [pacote complementar do AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en). Inclui os seguintes fragmentos:
+Para autores de formulários adaptáveis, os fragmentos de referência são fornecidos no [pacote complementar do AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=pt-BR). Inclui os seguintes fragmentos:
 
 * Endereço
 * Informações de contato
