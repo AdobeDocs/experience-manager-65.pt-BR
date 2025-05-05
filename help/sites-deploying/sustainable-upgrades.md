@@ -89,7 +89,7 @@ Os mixins aplicados no CRXDE Lite mostram nós de conteúdo e árvores marcados 
 
 O AEM 6.5 é enviado com uma verificação de integridade para alertar os clientes se o conteúdo sobreposto ou referenciado for usado de forma inconsistente com a classificação do conteúdo.
 
-A ** Verificação de acesso de conteúdo do Sling/Granite** é uma nova verificação de integridade que monitora o repositório para ver se o código do cliente está acessando incorretamente os nós protegidos no AEM.
+A **&#x200B; Verificação de acesso de conteúdo do Sling/Granite** é uma nova verificação de integridade que monitora o repositório para ver se o código do cliente está acessando incorretamente os nós protegidos no AEM.
 
 Isso verifica **/aplicativos** e geralmente leva alguns segundos para ser concluído.
 

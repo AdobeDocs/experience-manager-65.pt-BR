@@ -60,8 +60,8 @@ O Apache pode se comunicar com o JBoss usando HTTP ou o protocolo AJP.
    >Quando você usa um proxy, as seguintes alterações de configuração são necessárias:
    >
    >* Acesso: *https://&lt;servidor>:&lt;porta>/system/console/configMgr*
-   * Editar a configuração do Filtro referenciador do Apache Sling
-   * Em Permitir hosts, adicione a entrada para o servidor proxy
+   >* Editar a configuração do Filtro referenciador do Apache Sling
+   >* Em Permitir hosts, adicione a entrada para o servidor proxy
 
 1. Ative a compactação.
 

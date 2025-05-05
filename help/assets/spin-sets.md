@@ -226,6 +226,7 @@ Se você excluir a imagem que o Experience Manager usa para a miniatura substitu
    * Para excluir um ativo, selecione-o e selecione **[!UICONTROL Excluir ativo]**.
    * Para aplicar uma predefinição, selecione o ícone Predefinição e selecione uma predefinição.
    * Para excluir um Conjunto de rotação inteiro, navegue até o Conjunto de rotação, selecione-o e **[!UICONTROL Excluir]**
+
    >[!NOTE]
    >
    >Edite as imagens em um Conjunto de imagens ao navegar até o conjunto, selecionar **[!UICONTROL Definir membros]** no painel à esquerda e selecionar o ícone Lápis em um ativo individual para abrir a janela de edição.

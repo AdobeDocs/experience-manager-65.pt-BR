@@ -75,6 +75,7 @@ Saiba mais sobre as [Práticas recomendadas para organizar ativos digitais para 
    * Pré-visualizar e publicar ativos de vídeo
 
       * Visualize o vídeo de origem e as representações codificadas do vídeo, juntamente com suas miniaturas associadas:
+
         [Visualizar vídeos](managing-video-assets.md#upload-and-preview-video-assets) ou [Visualizar ativos](previewing-assets.md)
         [Exibir representações de vídeo](video-renditions.md)
         [Gerenciar representações de vídeo](manage-assets.md#managing-renditions)
@@ -85,9 +86,11 @@ Saiba mais sobre as [Práticas recomendadas para organizar ativos digitais para 
    * Trabalhar com metadados de vídeo
 
       * Visualize as propriedades de uma representação de vídeo codificada, como taxa de quadros, taxa de bits de áudio e vídeo e codec:
+
         [Exibir propriedades de representação de vídeo](video-renditions.md)
 
       * Edite as propriedades do vídeo, como título, descrição, tags e campos de metadados personalizados:
+
         [Editar propriedades do vídeo](manage-assets.md#editing-properties)
 
       * [Gerenciar metadados para ativos digitais](metadata.md)
@@ -112,9 +115,11 @@ Saiba mais sobre as [Práticas recomendadas para organizar ativos digitais para 
    * Se você estiver usando um sistema de gerenciamento de conteúdo da Web de terceiros, é possível vincular ou incorporar vídeos às suas páginas da Web.
 
       * Integrar vídeo usando o URL:
+
         [Vincular URLs ao aplicativo Web](linking-urls-to-yourwebapplication.md).
 
       * Integrar vídeo usando o código integrado em uma página da Web:
+
         [Incorporar o visualizador de vídeo em uma página da Web](embed-code.md).
 
    * [Gerar relatórios de vídeo](#viewing-video-reports).

@@ -73,7 +73,7 @@ Os lançamentos permitem:
 
    * Automaticamente - isso envolve o seguinte:
 
-      * O campo **Data de lançamento** (**Data de ativação**):**** pode ser definida ao criar ou editar um lançamento.
+      * O campo **Data de lançamento** (**Data de ativação**):**&#x200B;** pode ser definida ao criar ou editar um lançamento.
 
       * O sinalizador **Pronto para produção** : só pode ser definido ao editar um lançamento.
       * Se o sinalizador **Pronto para Produção** estiver definido, a inicialização será promovida automaticamente para as páginas de produção na **Inicialização**(**Ao Vivo**) **data** especificada. Após a promoção, as páginas de produção são publicadas automaticamente.\

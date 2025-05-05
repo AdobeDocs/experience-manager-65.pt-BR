@@ -130,9 +130,9 @@ Depois que o modelo do projeto for criado, faça as seguintes alterações, conf
   </tr>
   <tr>
    <td><code>getEventMap</code></td>
-   <td>Retorna um mapa para converter eventos HTML em eventos XFA. <br /> <code class="code">{
+   <td>Retorna um mapa para converter eventos HTML em eventos XFA. <br /> <code class="code">&lbrace;
       blur: XFA_EXIT_EVENT,
-      }</code><br /> Este exemplo mostra que <code>blur</code> é um evento HTML e <code>XFA_EXIT_EVENT</code> é o evento XFA correspondente. </td>
+      &rbrace;</code><br /> Este exemplo mostra que <code>blur</code> é um evento HTML e <code>XFA_EXIT_EVENT</code> é o evento XFA correspondente. </td>
   </tr>
   <tr>
    <td><code>getOptionsMap</code></td>

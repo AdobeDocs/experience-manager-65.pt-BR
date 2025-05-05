@@ -80,10 +80,10 @@ Um aplicativo HTML existente pode usar a API FormBridge para interagir com um fo
    >A marca &lt;div id=&quot;rightdiv&quot;> na **linha 18** contém o trecho de HTML do formulário XFA.
    >
    >
-   A página tem o estilo de dois contêineres: **esquerda** e **direita**. O contêiner direito tem o formulário. O container esquerdo tem dois campos de entrada e parte da página de HTML externa.
+   >A página tem o estilo de dois contêineres: **esquerda** e **direita**. O contêiner direito tem o formulário. O container esquerdo tem dois campos de entrada e parte da página de HTML externa.
    >
    >
-   A captura de tela a seguir mostra como o formulário é exibido em um navegador.
+   >A captura de tela a seguir mostra como o formulário é exibido em um navegador.
 
    ![portal](assets/portal.jpg)
 

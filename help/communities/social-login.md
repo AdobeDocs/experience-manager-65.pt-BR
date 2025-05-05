@@ -474,17 +474,17 @@ Em uma instância de autor, conectado com privilégios administrativos:
 1. Modifique as propriedades do nó ntBaseLucene-oauth:
 
    * **[!UICONTROL indexPath]**: `/oak:index/ntBaseLucene-oauth`
-   * **[!UICONTROL nome]**: `oauthid-123****`
+   * **[!UICONTROL nome]**: `oauthid-123&#x200B;**&#x200B;**`
    * **[!UICONTROL reindexar]**: `true`
    * **[!UICONTROL reindexCount]**: `1`
 
 1. No nó /oak:index/ntBaseLucene-oauth/indexRules/nt:base/properties:
 
    * Exclua todos os nós filhos, exceto cqTags.
-   * Renomear cqTags para `oauthid-123****`
-   * Modificar as propriedades do nó `oauthid-123****`
+   * Renomear cqTags para `oauthid-123**&#x200B;**`
+   * Modificar as propriedades do nó `oauthid-123**&#x200B;**`
 
-      * **[!UICONTROL nome]**: `oauthid-123****`
+      * **[!UICONTROL nome]**: `oauthid-123&#x200B;**&#x200B;**`
 
    * Selecione **[!UICONTROL Salvar tudo]**.
 

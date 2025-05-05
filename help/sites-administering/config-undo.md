@@ -111,7 +111,7 @@ A seguir estão as propriedades conforme exibidas no console da Web, seguidas pe
 * **Bons componentes**
 ( `cq.wcm.undo.whitelist`)
 
-   * **Descrição**: uma lista de componentes que você deseja que sejam afetados pelos comandos desfazer e refazer. Adicionar caminhos de componentes a esta lista quando eles funcionarem corretamente com undo/redo. Anexe um asterisco (&amp;ast;) para especificar um grupo de componentes:
+   * **Descrição**: uma lista de componentes que você deseja que sejam afetados pelos comandos desfazer e refazer. Adicionar caminhos de componentes a esta lista quando eles funcionarem corretamente com undo/redo. Anexe um asterisco (&ast;) para especificar um grupo de componentes:
 
       * O valor a seguir especifica o componente de texto de base:
 

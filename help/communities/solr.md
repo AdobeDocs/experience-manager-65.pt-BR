@@ -294,7 +294,7 @@ Depois que o conteúdo do pacote for extraído para o servidor que hospeda o ser
 * Execute o script de instalação: Instalar [-v 4|5] [-d solrhome] [-c collectionpath]
 em que:
 
-   * - d solrhome
+   * &#x200B;- d solrhome
 
      Diretório de instalação Solr
 

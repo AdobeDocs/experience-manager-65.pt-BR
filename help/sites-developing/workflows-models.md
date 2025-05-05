@@ -415,6 +415,7 @@ Para definir uma regra OR, proceda da seguinte maneira:
    * Defina esta como a **Rota Padrão** definindo o **Valor** como `true`.
 
    * Como **Regra**, defina o caminho para o script. Por exemplo:
+
      `/apps/myapp/workflow/scripts/myscript1.ecma`
 
    >[!NOTE]
@@ -424,6 +425,7 @@ Para definir uma regra OR, proceda da seguinte maneira:
 1. Edite as propriedades da **Ramificação 2** de **OU Divisão**.
 
    * Como **Regra**, defina o caminho para o outro script. Por exemplo:
+
      `/apps/myapp/workflow/scripts/myscript2.ecma`
 
 1. Defina as propriedades das etapas individuais em cada ramificação. Verifique se o **Usuário/Grupo** está definido.

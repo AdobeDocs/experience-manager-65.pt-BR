@@ -66,7 +66,7 @@ Adicione o grupo que você cria como membro do grupo de usuários predefinido: *
 Para associar grupos de usuários a um formulário adaptável:
 
 1. No modo de criação, navegue até **Forms** > **Forms e Documentos**.
-1. Use a opção **Selecionar **para selecionar um formulário adaptável e clique em **Exibir propriedades**.
+1. Use a opção **Selecionar &#x200B;** para selecionar um formulário adaptável e clique em **Exibir propriedades**.
 1. Na janela Propriedades do formulário, clique em **Editar** e em **AVANÇADO**.
 1. Insira o grupo no campo de grupo de revisores de envio e clique em **Concluído**.
 

@@ -59,13 +59,13 @@ Para ver como a concessão e a sincronização offline funcionam, consulte [Prim
 
 A seleção dessa opção permite que os aplicativos clientes usem autenticação estendida. A autenticação estendida oferece processos de autenticação personalizados e diferentes opções de autenticação configuradas no servidor do AEM Forms. Por exemplo, agora os usuários podem experimentar a autenticação baseada em SAML em vez de nome de usuário/senha de formulários AEM do Acrobat e do Reader Client. Por padrão, a URL de aterrissagem contém *localhost* como o nome do servidor. Substitua o nome do servidor por um nome de host totalmente qualificado. O nome do host no URL de aterrissagem é preenchido automaticamente a partir do URL base, se a Autenticação estendida ainda não estiver ativada. Consulte [Adicionar o provedor de autenticação estendida](configuring-client-server-options.md#add-the-extended-authentication-provider).
 
-***observação **: a autenticação estendida é suportada no Apple Mac OS X com Adobe Acrobat versão 11.0.6 e superior.*
+***observação &#x200B;**: a autenticação estendida é suportada no Apple Mac OS X com Adobe Acrobat versão 11.0.6 e superior.*
 
 **Largura do Controle de HTML Preferencial para Autenticação Estendida** Especifique a largura da caixa de diálogo de autenticação estendida que é aberta no Acrobat para inserir credenciais de usuário.
 
 **Altura preferencial do controle de HTML para autenticação estendida** Especifique a altura da caixa de diálogo de autenticação estendida que é aberta no Acrobat para inserir credenciais de usuário.
 
-***observação **: os limites de largura e altura desta caixa de diálogo são os seguintes:*
+***observação &#x200B;**: os limites de largura e altura desta caixa de diálogo são os seguintes:*
 Largura: Mínimo = 400, máximo = 900
 
 Altura: mínimo = 450; máximo = 800
@@ -88,7 +88,7 @@ A lista de usuários e grupos visíveis é visível para o coordenador de conjun
 
 1. Depois de instalar e configurar o ambiente de formulários AEM com segurança de documentos, configure todos os domínios apropriados no Gerenciamento de usuários. <!-- Fix broken link (See Setting up and managing domains) -->
 
-   ***observação **: a criação de domínios deve ser feita antes que qualquer política possa ser criada.*
+   ***observação &#x200B;**: a criação de domínios deve ser feita antes que qualquer política possa ser criada.*
 
 1. No console de administração, clique em Serviços > Gerenciamento de documentos > Políticas e, em seguida, clique na guia Conjuntos de políticas.
 1. Selecione Conjunto de Políticas Globais e clique na guia Usuários e Grupos Visíveis.
@@ -489,7 +489,7 @@ Alguns aplicativos clientes podem não suportar marcas d&#39;água dinâmicas. C
 1. Clique em Novo.
 1. Na caixa Nome, digite um nome para a nova marca d&#39;água.
 
-   ***observação **: não é possível usar alguns caracteres especiais nos nomes ou descrições de marcas d&#39;água ou elementos de marca d&#39;água. Consulte as restrições listadas em [Considerações para editar políticas](/help/forms/using/admin-help/creating-policies.md#considerations-for-editing-policies).*
+   ***observação &#x200B;**: não é possível usar alguns caracteres especiais nos nomes ou descrições de marcas d&#39;água ou elementos de marca d&#39;água. Consulte as restrições listadas em [Considerações para editar políticas](/help/forms/using/admin-help/creating-policies.md#considerations-for-editing-policies).*
 
 1. Em Nome, ao lado do sinal de mais, insira um nome significativo para o elemento de marca d&#39;água, como Cabeçalho, adicione uma descrição e expanda o sinal de mais para exibir as opções.
 1. Em Source, selecione o tipo de marca d&#39;água como Texto ou PDF.
@@ -498,11 +498,11 @@ Alguns aplicativos clientes podem não suportar marcas d&#39;água dinâmicas. C
    * Selecione os tipos de marca d&#39;água a serem incluídos. Se você selecionar Texto personalizado, na caixa adjacente, digite o texto a ser exibido para a marca d&#39;água. Lembre-se do comprimento do texto que será exibido como marca d&#39;água.
    * Especifique as propriedades de formatação do texto, como nome da fonte, tamanho da fonte, cor do primeiro plano e cor do plano de fundo, para o conteúdo do texto da marca d&#39;água. Especifique a cor do primeiro plano e do plano de fundo como valores hexadecimais.
 
-     ***observação **: se você selecionar a opção de dimensionamento como Ajustar à Página, a propriedade de tamanho da fonte não estará disponível para edição.*
+     ***observação &#x200B;**: se você selecionar a opção de dimensionamento como Ajustar à Página, a propriedade de tamanho da fonte não estará disponível para edição.*
 
 1. Se você selecionou PDF para opções de marca d&#39;água avançada, clique em **Procurar** ao lado de Selecionar PDF de Marca D&#39;Água para selecionar o documento PDF que deseja usar como marca d&#39;água.
 
-   ***observação **: não use um documento de PDF protegido por senha. Se você especificar um PDF protegido por senha como o elemento de marca d&#39;água, a marca d&#39;água não será aplicada.*
+   ***observação &#x200B;**: não use um documento de PDF protegido por senha. Se você especificar um PDF protegido por senha como o elemento de marca d&#39;água, a marca d&#39;água não será aplicada.*
 
 1. Em Usar como Plano de Fundo, selecione Sim ou Não.
 
@@ -584,9 +584,9 @@ Por padrão, o processo de registro do usuário convidado é desativado. Você p
 
 As configurações a seguir estão na área Filtro de restrição de email da página Registro de usuário convidado.
 
-**Exclusão:** digite o endereço de email de um usuário ou grupo a ser excluído. Para excluir vários usuários ou grupos, digite cada endereço de email em uma nova linha. Para excluir todos os usuários que pertencem a um domínio específico, digite um curinga e o nome do domínio. Por exemplo, para excluir todos os usuários no domínio example.com, digite &amp;ast;.example.com.
+**Exclusão:** digite o endereço de email de um usuário ou grupo a ser excluído. Para excluir vários usuários ou grupos, digite cada endereço de email em uma nova linha. Para excluir todos os usuários que pertencem a um domínio específico, digite um curinga e o nome do domínio. Por exemplo, para excluir todos os usuários no domínio example.com, digite &ast;.example.com.
 
-**Inclusão:** digite o endereço de email de um usuário ou grupo para incluir. Para incluir vários usuários ou grupos, digite cada endereço de email em uma nova linha. Para incluir todos os usuários que pertencem a um domínio específico, digite um curinga e o nome do domínio. Por exemplo, para incluir todos os usuários no domínio example.com, digite &amp;ast;.example.com.
+**Inclusão:** digite o endereço de email de um usuário ou grupo para incluir. Para incluir vários usuários ou grupos, digite cada endereço de email em uma nova linha. Para incluir todos os usuários que pertencem a um domínio específico, digite um curinga e o nome do domínio. Por exemplo, para incluir todos os usuários no domínio example.com, digite &ast;.example.com.
 
 ### Parâmetros da conta de registro e do servidor {#server-and-registration-account-parameters}
 
@@ -951,7 +951,7 @@ Neste exemplo, todas as solicitações de uma instalação do Microsoft PowerPoi
 
 Por padrão, você pode especificar no máximo cinco elementos em uma marca d&#39;água. Além disso, o tamanho máximo de arquivo do documento PDF que você deseja usar como marca d&#39;água é limitado a 100 KB. Você pode alterar esses parâmetros no arquivo config.xml.
 
-***observação **: você deve alterar esses parâmetros com cuidado.*
+***observação &#x200B;**: você deve alterar esses parâmetros com cuidado.*
 
 1. Exporte o arquivo de configuração de segurança de documentos. (Consulte [Editar manualmente o arquivo de configuração de segurança de documentos](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
 1. Abra o arquivo de configuração em um editor e localize o nó `ServerSettings`.

@@ -143,6 +143,7 @@ Execute as seguintes etapas para configurar um novo [!DNL Adobe Stock IMS config
    * **[!UICONTROL Escopo]**: Navegue até o painel do projeto, clique na opção **[!UICONTROL Servidor para Servidor OAuth]** disponível no painel esquerdo, selecione **[!UICONTROL Detalhes da credencial]**, copie o **[!UICONTROL Escopo]** e cole-o aqui (consulte a [etapa 7](#set-up-a-program-in-developer-console)).
 
    * **[!UICONTROL ID da Organização]**: Navegue até o painel do projeto, clique na opção **[!UICONTROL Servidor para Servidor OAuth]** disponível no painel esquerdo, selecione **[!UICONTROL Detalhes da credencial]**, copie a **[!UICONTROL ID da Organização]** e cole-a aqui (consulte a [etapa 7](#set-up-a-program-in-developer-console)).
+
      ![aem assets e adobe stock](/help/assets/assets/adobe-ims-technical-account-configuration.png)
 1. Clique em **[!UICONTROL Criar]**, a página **[!UICONTROL Configurações do Adobe IMS]** será aberta e exibirá a integração [!DNL Adobe Stock] criada.
 

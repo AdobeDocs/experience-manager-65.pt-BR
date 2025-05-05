@@ -108,9 +108,11 @@ As configurações definidas por um usuário ou administrador do sistema podem s
 * Ao criar páginas:
 
    * O uso do editor clássico é forçado ao acessar a página usando `cf#` na URL. Por exemplo:
+
      `https://localhost:4502/cf#/content/geometrixx/en/products/triangle.html`
 
    * O uso do editor habilitado para toque é forçado ao usar `/editor.html` na URL ou ao usar um dispositivo de toque. Por exemplo:
+
      `https://localhost:4502/editor.html/content/geometrixx/en/products/triangle.html`
 
 * Qualquer imposição é temporária e válida somente para a sessão do navegador

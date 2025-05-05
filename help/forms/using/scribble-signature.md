@@ -72,7 +72,7 @@ Clicar no ícone de localização geográfica ao criar o rabisco faz com que as 
 
 >[!NOTE]
 >
-No iPad, por padrão, a incorporação de informações de geolocalização é obrigatória.
+>No iPad, por padrão, a incorporação de informações de geolocalização é obrigatória.
 
 Na iPad, o ícone de geolocalização não é exibido por padrão, e as informações de geolocalização são inseridas automaticamente, quando você clica em **OK**.
 

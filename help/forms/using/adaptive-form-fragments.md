@@ -91,6 +91,7 @@ Além disso, se você selecionou um esquema XML ou modelo de formulário XDP com
 1. Na caixa de diálogo Criação de fragmento, especifique as seguintes informações:
 
    * **Nome**: nome do fragmento. O valor padrão é o nome do elemento do painel. É um campo obrigatório.
+
      >[!NOTE]
      >
      >Certifique-se de especificar um nome exclusivo para o fragmento. Se existir outro fragmento com o mesmo nome, o fragmento não será criado.

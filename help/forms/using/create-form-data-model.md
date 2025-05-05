@@ -177,7 +177,7 @@ Faça o seguinte para configurar o modelo de dados de formulário:
    1. Selecione o serviço **[!UICONTROL get]** e selecione **[!UICONTROL Editar Propriedades]**. A caixa de diálogo de propriedades é aberta.
    1. Especifique o seguinte na caixa de diálogo Propriedades de Editar:
 
-      * **** Título: especifique o título do serviço. Por exemplo: Recuperar endereço de envio.
+      * **&#x200B;**&#x200B;Título: especifique o título do serviço. Por exemplo: Recuperar endereço de envio.
       * **Descrição**: especifique a descrição que contém o funcionamento detalhado do serviço. Por exemplo:
 
         Este serviço recupera o endereço de entrega e outros detalhes do cliente do banco de dados [!DNL MySQL]

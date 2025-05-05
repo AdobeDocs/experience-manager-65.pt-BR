@@ -452,7 +452,7 @@ Marcar a caixa **Incluir tempo de execução** antes de executar a consulta tamb
 
 A finalidade do Gerenciador de índice é facilitar o gerenciamento de índice, como manter índices ou exibir seu status.
 
-Ele pode ser acessado indo até **Ferramentas - Operações - Diagnóstico **na Tela de Boas-vindas e clicando no botão **Gerenciador de Índice**.
+Ele pode ser acessado indo até **Ferramentas - Operações - Diagnóstico &#x200B;** na Tela de Boas-vindas e clicando no botão **Gerenciador de Índice**.
 
 Ele também pode ser acessado diretamente nesta URL: `https://serveraddress:port/libs/granite/operations/content/diagnosistools/indexManager.html`
 

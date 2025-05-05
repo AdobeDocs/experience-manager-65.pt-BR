@@ -63,7 +63,7 @@ Desde o AEM 6.0, foram feitas alterações no modo como as sobreposições são 
 
 Sobreposições são o método recomendado para muitas alterações, como [configurar seus consoles](/help/sites-developing/customizing-consoles-touch.md#create-a-custom-console) ou [criar a categoria de seleção para o navegador de ativos no painel lateral](/help/sites-developing/customizing-page-authoring-touch.md#add-new-selection-category-to-asset-browser) (usado ao criar páginas). Elas são necessárias como:
 
-* ***Não* fazer alterações na `/libs` ramificação **As alterações feitas podem ser perdidas, pois essa ramificação pode sofrer alterações sempre que você:
+* ***Não* fazer alterações na `/libs` ramificação &#x200B;** As alterações feitas podem ser perdidas, pois essa ramificação pode sofrer alterações sempre que você:
 
    * atualizar na sua instância
    * aplicar um hotfix

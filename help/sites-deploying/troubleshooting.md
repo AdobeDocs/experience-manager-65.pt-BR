@@ -72,7 +72,7 @@ Para solucionar problemas, faça o seguinte:
 
 O próprio CRX tem pouco espaço de memória. Se a aplicação em execução no CRX tiver requisitos de memória maiores ou solicitar operações com muita memória (por exemplo, transações grandes), a instância da JVM em que o CRX é executado deverá ser iniciada com configurações de memória apropriadas.
 
-Use as opções de comando do Java™ para definir as configurações de memória da JVM (por exemplo, java -Xmx512m -jar crx&amp;ast;.jar para definir heapsize como 512 MB).
+Use as opções de comando do Java™ para definir as configurações de memória da JVM (por exemplo, java -Xmx512m -jar crx&ast;.jar para definir heapsize como 512 MB).
 
 Especifique a opção de configuração de memória ao iniciar o WCM do AEM a partir da linha de comando. Os scripts de inicialização/parada do WCM do AEM ou os scripts personalizados para gerenciar a inicialização do WCM do AEM também podem ser modificados para definir as configurações de memória necessárias.
 
@@ -80,7 +80,7 @@ Se você já tiver definido o tamanho do heap como 512 MB, convém analisar mais
 
 Para criar automaticamente um despejo de heap ao ficar sem memória, use o seguinte comando:
 
-java -Xmx256m -XX:+HeapDumpOnOutOfMemoryError -jar &amp;ast;.jar
+java -Xmx256m -XX:+HeapDumpOnOutOfMemoryError -jar &ast;.jar
 
 Este método gera um arquivo de despejo de heap (**java_...hprof**) sempre que o processo fica sem memória. O processo pode continuar a ser executado após a geração do despejo de heap.
 

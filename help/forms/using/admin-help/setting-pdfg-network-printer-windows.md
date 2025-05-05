@@ -69,6 +69,6 @@ Usuários que possuem as funções de Administrador do PDFG ou Usuário do PDFG 
 
 1. Em Instalação da impressora de rede PDFG, clique no link. Quando forem solicitadas informações da conta do usuário, especifique o nome de usuário e a senha usados na etapa 1 para efetuar login. Será exibida uma mensagem informando que a impressora foi instalada com êxito.
 
-   ***observação **: se a senha do usuário for alterada, os usuários deverão reinstalar a Impressora de Rede PDFG em seus computadores. Não é possível atualizar a senha no console de administração.*
+   ***observação &#x200B;**: se a senha do usuário for alterada, os usuários deverão reinstalar a Impressora de Rede PDFG em seus computadores. Não é possível atualizar a senha no console de administração.*
 
 1. Clique em OK.

@@ -121,8 +121,8 @@ Estas pastas são do tipo `nt:folder` e devem conter o pacote apropriado.
 Se você tiver definido as configurações para vários modos de execução, será necessário definir qual será usado na inicialização. Existem vários métodos para especificar qual modo de execução usar; a ordem da resolução é:
 
 1. [propriedades do sistema (](#using-a-system-property-in-the-start-script)
-1. [](#using-the-sling-properties-file)
-1. [](#using-the-r-option)
+1. [&#128279;](#using-the-sling-properties-file)
+1. [&#128279;](#using-the-r-option)
 1. [Detecção de nome de arquivo](#filename-detection-renaming-the-jar-file)
 
 Quando estiver usando um servidor de aplicativos, você também pode [definir o modo de execução em web.xml](#defining-the-run-mode-in-web-xml-with-application-server).

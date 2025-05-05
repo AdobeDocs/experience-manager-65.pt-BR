@@ -219,7 +219,7 @@ Na guia **Campo de marca**, as marcas que podem ser aplicadas, se permitidas na 
 
 * **Limite sugerido**
 
-  Insira o número de tags a serem exibidas como sugestão para a publicação do membro no fórum. O padrão é **-**1 (sem limites).
+  Insira o número de tags a serem exibidas como sugestão para a publicação do membro no fórum. O padrão é **-**&#x200B;1 (sem limites).
 
 #### Guia Tradução {#translation-tab}
 

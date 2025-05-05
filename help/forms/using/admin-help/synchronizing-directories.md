@@ -73,7 +73,7 @@ Você pode configurar o Gerenciamento de Usuários para verificar periodicamente
 1. No console de administração, clique em Configurações > Gerenciamento de usuários > Configuração > Configurar atributos avançados do sistema.
 1. Em Sincronizar Expressão Cron do Terminador de Sincronização, insira uma expressão cron que represente o intervalo em que o Gerenciamento de Usuários tenta novamente sincronizações com falha. O uso da expressão cron é baseado no sistema de agendamento de tarefas de código aberto Quartz, versão 1.4.0.
 
-   O padrão é 0 0/13 &amp;ast; ? &amp;ast; , que significa que a verificação ocorre a cada 13 minutos.
+   O padrão é 0 0/13 &ast; ? &ast; , que significa que a verificação ocorre a cada 13 minutos.
 
 ## Sincronizar diretórios manualmente {#manually-synchronize-directories}
 

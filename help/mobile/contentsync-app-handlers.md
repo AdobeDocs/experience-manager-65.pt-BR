@@ -63,8 +63,8 @@ Esse manipulador deve ser adicionado a qualquer configuração AEM Apps ContentS
 
 * ***tipo - Cadeia de caracteres - mobilecontentlisting***
 * ***caminho*** - Cadeia de caracteres - manter vazio, deve estar presente para ser visto como um manipulador válido, mas o caminho é inferido como o cache ContentSync atual. Esse valor é ignorado.
-* ***targetRootDirectory* -**Cadeia de caracteres - o prefixo a ser adicionado a caminhos como uma raiz de destino para atualização de conteúdo para este manipulador.
-* ***pedir - Longo* -**Ordenar que o ContentSync execute este manipulador. Esse número deve ser definido como maior do que todos os outros manipuladores, como 100. Ela deve ser executada após os manipuladores de conteúdo tradicionais.
+* ***targetRootDirectory* -**&#x200B;Cadeia de caracteres - o prefixo a ser adicionado a caminhos como uma raiz de destino para atualização de conteúdo para este manipulador.
+* ***pedir - Longo* -**&#x200B;Ordenar que o ContentSync execute este manipulador. Esse número deve ser definido como maior do que todos os outros manipuladores, como 100. Ela deve ser executada após os manipuladores de conteúdo tradicionais.
 
 ```xml
 {
@@ -89,9 +89,9 @@ Esse manipulador deve ser adicionado a qualquer configuração AEM Apps ContentS
 O manipulador deve ser usado na configuração ContentSync do shell do aplicativo AEM (nó com pge-type=app-instance)
 
 * ***tipo - Cadeia de caracteres - mobilecontentpackageslisting***
-* ***caminho **-**Cadeia de caracteres*** - Caminho para um shell de aplicativo (nó com pge-type=app-instance).
+* ***caminho &#x200B;**-**Cadeia de caracteres*** - Caminho para um shell de aplicativo (nó com pge-type=app-instance).
 * ***targetRootDirectory - String*** - o prefixo a ser adicionado aos caminhos como uma raiz de destino para atualização de conteúdo para este manipulador.
-* ***pedir - Longo* -**Ordenar que o ContentSync execute este manipulador. Esse número deve ser definido como maior do que todos os outros manipuladores, como 100. Ela deve ser executada após os manipuladores de conteúdo tradicionais.
+* ***pedir - Longo* -**&#x200B;Ordenar que o ContentSync execute este manipulador. Esse número deve ser definido como maior do que todos os outros manipuladores, como 100. Ela deve ser executada após os manipuladores de conteúdo tradicionais.
 
 >[!NOTE]
 >
@@ -123,8 +123,8 @@ O manipulador deve ser usado na configuração ContentSync do shell do aplicativ
 
 Este manipulador deve ser usado em uma configuração ContentSync do Shell do aplicativo AEM (nó com pge-type=[app-instance]).
 
-* ***tipo - Cadeia de caracteres* - **widgetconfig
-* ***caminho **-**Cadeia de caracteres*** - Caminho para qualquer nó filho do shell do aplicativo (nó com pge-type=[app-instance]).
+* ***tipo - Cadeia de caracteres* - &#x200B;** widgetconfig
+* ***caminho &#x200B;**-**Cadeia de caracteres*** - Caminho para qualquer nó filho do shell do aplicativo (nó com pge-type=[app-instance]).
 * ***targetRootDirectory - String*** - o prefixo a ser adicionado aos caminhos como uma raiz de destino para atualização de conteúdo para este manipulador.
 * ***targetIconDirectory - Cadeia de caracteres*** - o diretório no qual colocar os ícones do aplicativo
 
@@ -165,7 +165,7 @@ As propriedades AEM são aquelas com espaçamento de nome &quot;cq&quot;, &quot;
 
 * ***tipo - Cadeia de caracteres*** - app-assets
 
-* ***caminho **-**Cadeia de caracteres*** - caminho para um local em uma instância do aplicativo onde os ativos do aplicativo são armazenados
+* ***caminho &#x200B;**-**Cadeia de caracteres*** - caminho para um local em uma instância do aplicativo onde os ativos do aplicativo são armazenados
 
 **mobileapproffers** Um novo manipulador de sincronização de conteúdo foi introduzido para o caso de uso do Personalization para renderizar o conteúdo direcionado. O manipulador &quot;mobileapproffers&quot; sabe como renderizar as ofertas de público-alvo associadas que foram criadas pelo autor de conteúdo. O manipulador mobileapproffers estende o manipulador de atualização de páginas abstratas, portanto, muitas das propriedades são semelhantes. Os detalhes do manipulador mobileapproffers têm as seguintes propriedades.
 
@@ -178,7 +178,7 @@ O manipulador mobileappsoffers estende o manipulador mobileappspages e adiciona 
 
 **mobileappconfig** O manipulador de sincronização de conteúdo mobileappconfig fornece uma maneira de injetar dados JSON no MobileAppsConfig.json. Para registrar uma classe de provedor, os desenvolvedores adicionarão sua classe MobileAppsInfoProvider à lista de provedores. O manipulador iterará sobre a lista de MobileAppsInfoProviders e permitirá que o provedor insira dados no arquivo json resultante. As listas de propriedades que este manipulador aceita são:
 
-* ***caminho **-**Cadeia de caracteres*** - o caminho para um nó de instância de aplicativo com pge-type=app-instance ou um RT que estende /libs/mobileapps/core/components/instance
+* ***caminho &#x200B;**-**Cadeia de caracteres*** - o caminho para um nó de instância de aplicativo com pge-type=app-instance ou um RT que estende /libs/mobileapps/core/components/instance
 * ***provedores - Cadeia de caracteres*** `[]` - a lista de MobileAppsInfoProviders totalmente qualificados
 * ***targetRootDirectory - Cadeia de caracteres*** - o diretório no qual gravar o arquivo MobileAppsConfig.json.
 * **fileName - String** - nome opcional do arquivo no qual gravar o JSON; o padrão é MobileAppsConfig.json

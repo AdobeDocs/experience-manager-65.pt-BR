@@ -56,7 +56,7 @@ A planilha **Pulsação do projeto** fornece uma visão geral gráfica das métr
 
 ## Status por Função {#status-by-role}
 
-A planilha **Status por Função** mostra o detalhamento de [**Integridade**, **Qualidade e **Integridade**](#projectheartbeat) por **[Fase](#phases-and-milestones)** e **[Pessoa](#persona)**.
+A planilha **Status por Função** mostra o detalhamento de [**Integridade**, **Qualidade e &#x200B;** Integridade&#x200B;**](#projectheartbeat) por &#x200B;** [Fase](#phases-and-milestones)**&#x200B; e &#x200B;** [Pessoa](#persona)**.
 
 ## Fases e etapas {#phases-and-milestones}
 

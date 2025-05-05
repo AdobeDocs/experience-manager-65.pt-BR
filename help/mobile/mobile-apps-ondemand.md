@@ -32,7 +32,7 @@ ht-degree: 3%
 
 ## Autor do AEM Mobile {#aem-mobile-author}
 
-Um ***Autor do AEM* (ou *Profissional de marketing*)**usa modelos e componentes personalizados ou prontos para uso para adicionar e editar páginas, arrastar e soltar componentes e adicionar mídia de todos os tipos do DAM, incluindo imagens, vídeos e fragmentos de texto (fragmentos de conteúdo). O editor de conteúdo integrado do AEM é usado pelos *Autores do AEM* para criar experiências avançadas e relevantes no aplicativo, incluindo a integração com o restante da Adobe Experience Cloud.
+Um ***Autor do AEM* (ou *Profissional de marketing*)**&#x200B;usa modelos e componentes personalizados ou prontos para uso para adicionar e editar páginas, arrastar e soltar componentes e adicionar mídia de todos os tipos do DAM, incluindo imagens, vídeos e fragmentos de texto (fragmentos de conteúdo). O editor de conteúdo integrado do AEM é usado pelos *Autores do AEM* para criar experiências avançadas e relevantes no aplicativo, incluindo a integração com o restante da Adobe Experience Cloud.
 
 Um autor de AEM é responsável pelas seguintes tarefas ao criar um aplicativo usando o AEM Mobile On-demand Services.
 

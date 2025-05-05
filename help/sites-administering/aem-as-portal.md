@@ -171,7 +171,7 @@ Você pode implantar este pacote em tempo de execução ou adicioná-lo ao aplic
 Depois que o cache é implantado, o portlet armazena em cache o conteúdo da instância de publicação. O cache do portlet pode ser invalidado com uma liberação do dispatcher do AEM. Para configurar o portlet para usar seu próprio cache:
 
 1. Configure um agente de replicação no autor que se destina ao servidor do portal.
-1. Supondo que o servidor do portal esteja em execução no host **localhost**, **porta 8080 **e o aplicativo Web do portlet AEM esteja montado no contexto **cqportlet**, a URL para liberar o cache é `https://localhost:8080/cqportlet/cqbridge/cqpcache?Path=$(path)`. Use GET como método.
+1. Supondo que o servidor do portal esteja em execução no host **localhost**, **porta 8080 &#x200B;** e o aplicativo Web do portlet AEM esteja montado no contexto **cqportlet**, a URL para liberar o cache é `https://localhost:8080/cqportlet/cqbridge/cqpcache?Path=$(path)`. Use GET como método.
    **Observação:** Em vez de usar um parâmetro de solicitação, você pode enviar um cabeçalho http chamado **Caminho**.
 
 #### Liberando o cache pelo Agente de Replicação {#flushing-the-cache-via-replication-agent}
@@ -610,7 +610,7 @@ Os serviços OSGi opcionais podem ser implementados para personalizar várias pa
 
 Os serviços a seguir têm uma implementação padrão no portlet de conteúdo (com uma interface Java correspondente). Para personalizar, um pacote contendo a nova implementação do serviço precisa ser implantado no aplicativo do portlet.
 
-Ao implementar esse serviço, defina a propriedade **service.ranking** do serviço com um valor positivo. A implementação padrão usa a classificação** 0** e o portlet usa o serviço com a classificação mais alta.
+Ao implementar esse serviço, defina a propriedade **service.ranking** do serviço com um valor positivo. A implementação padrão usa a classificação **&#x200B; 0** e o portlet usa o serviço com a classificação mais alta.
 
 | **Nome** | **Descrição** | **Comportamento padrão** |
 |---|---|---|

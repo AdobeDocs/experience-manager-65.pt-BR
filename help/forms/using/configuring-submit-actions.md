@@ -77,7 +77,7 @@ Configurar Ação De Envio De Ponto De Extremidade Rest
 
 >[!NOTE]
 >
-Para passar os campos como parâmetros em um URL REST, todos os campos devem ter nomes de elemento diferentes, mesmo se os campos forem colocados em painéis diferentes.
+>Para passar os campos como parâmetros em um URL REST, todos os campos devem ter nomes de elemento diferentes, mesmo se os campos forem colocados em painéis diferentes.
 
 ### A Post enviou dados para um recurso ou ponto de extremidade rest externo  {#post-submitted-data-to-a-resource-or-external-rest-end-point-nbsp}
 
@@ -108,7 +108,7 @@ A ação de envio **Enviar Email** envia um email para um ou mais destinatários
 
 >[!NOTE]
 >
-Todos os campos de formulário devem ter nomes de elementos diferentes, mesmo que sejam colocados em painéis diferentes), para incluir dados de formulário em um email.
+>Todos os campos de formulário devem ter nomes de elementos diferentes, mesmo que sejam colocados em painéis diferentes), para incluir dados de formulário em um email.
 
 ## Enviar PDF por e-mail {#send-pdf-via-email}
 
@@ -116,7 +116,7 @@ A ação de envio **Enviar PDF via Email** envia um email com um PDF contendo da
 
 >[!NOTE]
 >
-Essa ação de envio está disponível para formulários adaptáveis baseados em XFA e formulários de adaptação baseados em XSD que têm o modelo Documento de registro.
+>Essa ação de envio está disponível para formulários adaptáveis baseados em XFA e formulários de adaptação baseados em XSD que têm o modelo Documento de registro.
 
 ## Chamar um Forms Workflow {#invoke-a-forms-workflow}
 
@@ -150,7 +150,7 @@ A ação enviar coloca o seguinte no local da carga útil do fluxo de trabalho. 
 
 >[!NOTE]
 >
-As variáveis podem ser usadas independentemente de o modelo de fluxo de trabalho estar ou não marcado para armazenamento de dados externo.
+>As variáveis podem ser usadas independentemente de o modelo de fluxo de trabalho estar ou não marcado para armazenamento de dados externo.
 
 * **Anexos**: você pode usar a opção **[!UICONTROL Caminho do Anexo]** para especificar o nome da pasta para armazenar os anexos carregados no Formulário Adaptável. A pasta é criada em relação à carga útil. Se o workflow estiver marcado para armazenamento de dados externo, use a opção variable e selecione a variável na lista de variáveis disponíveis para o modelo de workflow.
 
@@ -173,7 +173,7 @@ Após uma configuração bem-sucedida, use a ação de envio [Chamar um fluxo do
 
 >[!NOTE]
 >
-O recurso Enviar para a lista do Microsoft® SharePoint foi introduzido com o AEM 6.5 Forms Service Pack 19 (6.5.19.0).
+>O recurso Enviar para a lista do Microsoft® SharePoint foi introduzido com o AEM 6.5 Forms Service Pack 19 (6.5.19.0).
 
 A ação de envio **[!UICONTROL Enviar para o SharePoint]** conecta um Formulário adaptável com um Armazenamento Microsoft® SharePoint. É possível enviar o arquivo de dados de formulário, os anexos ou o Documento de Registro para o Armazenamento do Microsoft® Sharepoint conectado.
 
@@ -199,7 +199,7 @@ Para conectar o AEM Forms à sua lista do Microsoft® Sharepoint:
 
      >[!NOTE]
      >
-     O campo **segredo do cliente** é obrigatório ou opcional, depende da configuração do aplicativo do Azure Ative Diretory. Se o aplicativo estiver configurado para usar um segredo do cliente, é obrigatório fornecer o segredo do cliente.
+     >O campo **segredo do cliente** é obrigatório ou opcional, depende da configuração do aplicativo do Azure Ative Diretory. Se o aplicativo estiver configurado para usar um segredo do cliente, é obrigatório fornecer o segredo do cliente.
 
 1. Clique em **[!UICONTROL Conectar]**. Em uma conexão bem-sucedida, a mensagem `Connection Successful` é exibida.
 1. Selecione **[!UICONTROL Site do SharePoint]** e **[!UICONTROL Lista do SharePoint]** na lista suspensa.
@@ -218,16 +218,16 @@ Ao enviar o formulário, os dados são salvos no Armazenamento de Lista do Micro
 
 >[!NOTE]
 >
-Na Lista do Microsoft® SharePoint, os seguintes tipos de coluna não são suportados:
-* coluna de imagem
-* coluna de metadados
-* coluna de pessoa
-* coluna de dados externos
+>Na Lista do Microsoft® SharePoint, os seguintes tipos de coluna não são suportados:
+>* coluna de imagem
+>* coluna de metadados
+>* coluna de pessoa
+>* coluna de dados externos
 
 
 >[!NOTE]
 >
-Para definir valores de uma configuração, [Gere Configurações OSGi usando o SDK do AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart) e [implante a configuração](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) na instância do Cloud Service.
+>Para definir valores de uma configuração, [Gere Configurações OSGi usando o SDK do AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart) e [implante a configuração](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) na instância do Cloud Service.
 
 ## Revalidação do lado do servidor no formulário adaptável {#server-side-revalidation-in-adaptive-form}
 
@@ -255,7 +255,7 @@ Se o usuário final ignorar essas validações e enviar os formulários, o servi
 
 >[!NOTE]
 >
-A validação do lado do servidor valida o modelo de formulário. É recomendável criar uma biblioteca do cliente separada para validações e não misturá-la com outras coisas, como estilo de HTML e manipulação de DOM na mesma biblioteca do cliente.
+>A validação do lado do servidor valida o modelo de formulário. É recomendável criar uma biblioteca do cliente separada para validações e não misturá-la com outras coisas, como estilo de HTML e manipulação de DOM na mesma biblioteca do cliente.
 
 ### Suporte a funções personalizadas em expressões de validação {#supporting-custom-functions-in-validation-expressions-br}
 

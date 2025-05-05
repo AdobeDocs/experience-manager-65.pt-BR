@@ -29,7 +29,7 @@ Integre o AEM Sites com o Adobe Target para personalizar o conteúdo em suas pá
 
 Para integrar com o Target, execute as seguintes tarefas:
 
-1. [Execute as tarefas de pré-requisito](/help/sites-administering/target-requirements.md): registre-se no Adobe Target e configure determinados aspectos da instância de autor do AEM. Sua conta do Adobe Target deve ter no mínimo **o aprovador **permissões de nível. Além disso, você deve proteger as configurações de atividade no nó de publicação para que elas fiquem inacessíveis aos usuários.
+1. [Execute as tarefas de pré-requisito](/help/sites-administering/target-requirements.md): registre-se no Adobe Target e configure determinados aspectos da instância de autor do AEM. Sua conta do Adobe Target deve ter no mínimo **o aprovador &#x200B;** permissões de nível. Além disso, você deve proteger as configurações de atividade no nó de publicação para que elas fiquem inacessíveis aos usuários.
 
 1. Ou:
 

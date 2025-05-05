@@ -303,17 +303,17 @@ Para criar um modelo com base em um modelo existente:
    >As alterações feitas no nó **/apps/&lt;site>/templates/&lt;nome-modelo>** afetam a instância do modelo (como na lista de seleção).
    >
    >
-   As alterações feitas no nó **/apps/&lt;site>/components/&lt;nome-do-componente>** afetam a página de conteúdo criada quando o modelo é usado.
+   >As alterações feitas no nó **/apps/&lt;site>/components/&lt;nome-do-componente>** afetam a página de conteúdo criada quando o modelo é usado.
 
    Agora você pode criar uma página em seu site usando o novo modelo.
 
 >[!NOTE]
 >
-A biblioteca cliente do editor presume a presença do namespace `cq.shared` nas páginas de conteúdo e, se estiver ausente, o erro de JavaScript `Uncaught TypeError: Cannot read property 'shared' of undefined` ocorrerá.
+>A biblioteca cliente do editor presume a presença do namespace `cq.shared` nas páginas de conteúdo e, se estiver ausente, o erro de JavaScript `Uncaught TypeError: Cannot read property 'shared' of undefined` ocorrerá.
 >
-Todas as páginas de conteúdo de exemplo contêm `cq.shared`, portanto, qualquer conteúdo baseado nelas inclui automaticamente `cq.shared`. No entanto, se você decidir criar suas próprias páginas de conteúdo do zero sem baseá-las no conteúdo de exemplo, certifique-se de incluir o namespace `cq.shared`.
+>Todas as páginas de conteúdo de exemplo contêm `cq.shared`, portanto, qualquer conteúdo baseado nelas inclui automaticamente `cq.shared`. No entanto, se você decidir criar suas próprias páginas de conteúdo do zero sem baseá-las no conteúdo de exemplo, certifique-se de incluir o namespace `cq.shared`.
 >
-Consulte [Usando bibliotecas do lado do cliente](/help/sites-developing/clientlibs.md) para obter mais informações.
+>Consulte [Usando bibliotecas do lado do cliente](/help/sites-developing/clientlibs.md) para obter mais informações.
 
 ## Disponibilizar um modelo existente {#making-an-existing-template-available}
 

@@ -62,7 +62,7 @@ Faça o seguinte para atualizar do AEM 6.3 Forms ou do AEM 6.4 Forms AEM para o 
 
    >[!NOTE]
    >
-   É recomendável usar o comando &quot;Ctrl + C&quot; para reiniciar o SDK. Reiniciar o SDK do AEM usando métodos alternativos, por exemplo, parar processos Java, pode levar a inconsistências no ambiente de desenvolvimento do AEM.
+   >É recomendável usar o comando &quot;Ctrl + C&quot; para reiniciar o SDK. Reiniciar o SDK do AEM usando métodos alternativos, por exemplo, parar processos Java, pode levar a inconsistências no ambiente de desenvolvimento do AEM.
 
 1. Executar atividades de pós-instalação.
 
@@ -111,4 +111,4 @@ Faça o seguinte para atualizar do AEM 6.3 Forms ou do AEM 6.4 Forms AEM para o 
 
    >[!NOTE]
    >
-   No AEM 6.4 Forms, a estrutura do repositório crx mudou. Se você atualizar do Forms 6.3 para o AEM 6.5 Forms, use os caminhos alterados para a personalização que você cria novamente. Para obter a lista completa de caminhos alterados, consulte [Reestruturação do repositório do Forms no AEM](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md).
+   >No AEM 6.4 Forms, a estrutura do repositório crx mudou. Se você atualizar do Forms 6.3 para o AEM 6.5 Forms, use os caminhos alterados para a personalização que você cria novamente. Para obter a lista completa de caminhos alterados, consulte [Reestruturação do repositório do Forms no AEM](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md).

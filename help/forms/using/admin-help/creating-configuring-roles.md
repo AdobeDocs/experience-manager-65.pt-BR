@@ -78,7 +78,7 @@ Rights Management **Gerenciar Usuários Convidados e Locais:** Pode executar tar
 
 **Administrador do AEM Forms Workspace:** pode exibir e modificar configurações na página Workspace no Console de Administração
 
-***observação **: o Flex Workspace foi descontinuado para a versão de formulários AEM.*
+***observação &#x200B;**: o Flex Workspace foi descontinuado para a versão de formulários AEM.*
 
 **Usuário do Workspace:** pode fazer logon no aplicativo de usuário final do Workspace
 

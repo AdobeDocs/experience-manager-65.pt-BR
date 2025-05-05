@@ -120,6 +120,7 @@ Consulte [Instalar o pacote de recursos 18912 para migração de ativos em massa
 1. Quando a conexão for bem-sucedida, defina o seguinte. Cabeçalhos com um asterisco (*) são obrigatórios:
 
    * **[!UICONTROL Empresa]** - o nome da conta do Dynamic Media.
+
      >[!IMPORTANT]
      >
      >Somente uma configuração Dynamic Media no Cloud Service é suportada em uma instância de Experience Manager; não adicione mais de uma configuração. Várias Configurações do Dynamic Media em uma instância Experience Manager _não_ suportadas ou recomendadas pelo Adobe.
@@ -146,7 +147,7 @@ A menos que você tenha uma organização especial para usar o servidor de sua p
    * **[!UICONTROL Modo de sincronização do Dynamic Media]**
       * **[!UICONTROL Habilitado por padrão]** - A configuração é aplicada a todas as pastas por padrão, a menos que você marque uma pasta especificamente para exclusão. <!-- you can then deselect the folders that you do not want the configuration applied to.-->
       * **[!UICONTROL Desabilitado por padrão]** - A configuração não é aplicada a nenhuma pasta até que você marque explicitamente uma pasta selecionada para sincronização com o Dynamic Media.
-Para marcar uma pasta selecionada para sincronização com o Dynamic Media, selecione uma pasta de ativos e, na barra de ferramentas, selecione **[!UICONTROL Propriedades]**. Na guia **[!UICONTROL Detalhes]**, na lista suspensa **[!UICONTROL Modo de sincronização do Dynamic Media]**, escolha uma das três opções a seguir. Quando terminar, selecione **[!UICONTROL Salvar]**. *Lembre-se: estas três opções não estarão disponíveis se você tiver selecionado **[!UICONTROL Sincronizar todo o conteúdo]**anteriormente.* Consulte também [Trabalhar com Publish seletiva no nível da pasta no Dynamic Media](/help/assets/selective-publishing.md).
+Para marcar uma pasta selecionada para sincronização com o Dynamic Media, selecione uma pasta de ativos e, na barra de ferramentas, selecione **[!UICONTROL Propriedades]**. Na guia **[!UICONTROL Detalhes]**, na lista suspensa **[!UICONTROL Modo de sincronização do Dynamic Media]**, escolha uma das três opções a seguir. Quando terminar, selecione **[!UICONTROL Salvar]**. *Lembre-se: estas três opções não estarão disponíveis se você tiver selecionado **[!UICONTROL Sincronizar todo o conteúdo]**&#x200B;anteriormente.* Consulte também [Trabalhar com Publish seletiva no nível da pasta no Dynamic Media](/help/assets/selective-publishing.md).
          * **[!UICONTROL Herdado]** - Nenhum valor de sincronização explícito na pasta; em vez disso, a pasta herda o valor de sincronização de uma de suas pastas ancestrais ou o modo padrão na configuração de nuvem. O status detalhado de herdado é exibido por meio de uma dica de ferramenta.
          * **[!UICONTROL Habilitar para subpastas]** - Incluir tudo nesta subárvore para sincronização com o Dynamic Media. As configurações específicas da pasta substituem o modo padrão na configuração da nuvem.
          * **[!UICONTROL Desabilitado para subpastas]** - Exclua tudo nesta subárvore da sincronização com o Dynamic Media.

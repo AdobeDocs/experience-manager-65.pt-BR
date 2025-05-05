@@ -60,7 +60,7 @@ Quando você testa um certificado, o Gerenciamento de usuários faz upload das v
    Você pode usar os seguintes caracteres no regex:
 
    * . (qualquer caractere)
-   * &amp;ast; (0 ou mais ocorrências)
+   * &ast; (0 ou mais ocorrências)
    * () (especifique o grupo entre parênteses)
    * \ (usado para passar um caractere regex para um caractere regular)
    * $n (usado para se referir ao enésimo grupo)
@@ -69,21 +69,21 @@ Quando você testa um certificado, o Gerenciamento de usuários faz upload das v
 
    * Para extrair &quot;Alex Pink&quot; de &quot;Alex Pink (Autenticação)&quot;
 
-     **Regex:** (.&amp;ast;) \(Autenticação\)
+     **Regex:** (.&ast;) \(Autenticação\)
 
    * Para extrair &quot;Alex Pink&quot; de &quot;Alex (Autenticação) Pink&quot;
 
-     **Regex:** (.&amp;ast;)\(Autenticação\) (.&amp;ast;)
+     **Regex:** (.&ast;)\(Autenticação\) (.&ast;)
 
    * Para extrair &quot;Pink Alex&quot; de &quot;Alex (Autenticação) Pink&quot;
 
-     **Regex:** (.&amp;ast;)\(Autenticação\) (.&amp;ast;)
+     **Regex:** (.&ast;)\(Autenticação\) (.&ast;)
 
      Ordem personalizada: $2 $1 (retorna o segundo grupo, concatenado com o primeiro grupo, capturado por caractere de espaço em branco)
 
    * Para extrair &quot;apink@sampleorg.com&quot; de &quot;smtp:apink@sampleorg.com&quot;
 
-     **Regex:** smtp:(.&amp;ast;)
+     **Regex:** smtp:(.&ast;)
 
    Para obter detalhes sobre o uso de expressões regulares, consulte [Tutorial Java sobre expressões regulares](https://java.sun.com/docs/books/tutorial/essential/regex/).
 

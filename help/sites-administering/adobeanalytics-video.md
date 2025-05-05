@@ -227,7 +227,7 @@ As chamadas para o Adobe Analytics usando o exemplo fornecido devem ter esta apa
 
 ![chlimage_1-128](assets/chlimage_1-128.png)
 
-*Esta é a **primeira chamada**feita para o Adobe Analytics contendo os seguintes valores:*
+*Esta é a **primeira chamada**&#x200B;feita para o Adobe Analytics contendo os seguintes valores:*
 
 * *prop1 e eVar 1 para eventdata.a.media.name,*
 * *props2-4, juntamente com eVar 2 e eVar 3 contendo contentType (vídeo) e segmento (1:O:1-4)*
@@ -235,7 +235,7 @@ As chamadas para o Adobe Analytics usando o exemplo fornecido devem ter esta apa
 
 ![chlimage_1-129](assets/chlimage_1-129.png)
 
-*Esta é a **terceira chamada**feita para o Adobe Analytics:*
+*Esta é a **terceira chamada**&#x200B;feita para o Adobe Analytics:*
 
 * *prop1 e eVar 1 contêm a.media.name;*
 * *event1 porque um segmento foi visualizado*
@@ -322,7 +322,7 @@ Este método é semelhante ao método de Marcos com a diferença de que os marco
 
    ![marcos1](assets/lmilestones1.png)
 
-   *A variável **pev3**enviada na chamada contém as seguintes informações:*
+   *A variável **pev3**&#x200B;enviada na chamada contém as seguintes informações:*
 
    * *Nome* - O nome do arquivo de vídeo (*film.avi*)
 
@@ -338,7 +338,7 @@ Este método é semelhante ao método de Marcos com a diferença de que os marco
 
 ## Segundos herdados {#legacy-seconds}
 
-Ao usar o método** legacy seconds**, as chamadas do Adobe Analytics são acionadas a cada N-ésimo segundo, em que N é especificado no campo Track offset.
+Ao usar o método **&#x200B; legacy seconds**, as chamadas do Adobe Analytics são acionadas a cada N-ésimo segundo, em que N é especificado no campo Track offset.
 
 1. Defina o deslocamento da faixa para qualquer número de segundos,
 

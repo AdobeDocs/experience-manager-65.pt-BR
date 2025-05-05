@@ -268,6 +268,7 @@ Você pode usar a **[!UICONTROL Linha do Tempo]** com a **[!UICONTROL Exibição
 Quando você usa a **[!UICONTROL Exibição de Lista]**, uma coluna extra para o estado de publicação do **[!UICONTROL Dynamic Media]** é exibida.
    * Uma pasta configurada para sincronização com o Dynamic Media exibe a coluna **[!UICONTROL Dynamic Media]** por padrão.
    * Uma pasta *não* configurada para sincronização com o Dynamic Media não exibe a coluna Dynamic Media.
+
      ![Modo de Exibição de Lista e Linha do Tempo](/help/assets/assets-dm/selective-publish-status-timeline.png)
 
 ## Solução de problemas de Publish seletivo {#selective-publish-troubleshoot}

@@ -52,6 +52,7 @@ As etapas abaixo podem ser executadas pelo administrador do sistema no **CRXDE**
    * `auth.token.provider.orgId="<OrgID>"`
    * `auth.token.provider.default.claims=("\"iss\"\ :\ \"<OrgID>\"")`
    * `auth.token.provider.scope="read_pc.dma_smart_content,\ openid,\ AdobeID,\ additional_info.projectedProductContext"`
+
      `auth.token.validator.type="adobe-ims-similaritysearch"`
    * Atualize o `auth.token.provider.client.id` com a ID de cliente da nova configuração OAuth.
    * Atualizar `auth.access.token.request` para `"https://ims-na1.adobelogin.com/ims/token/v3"`

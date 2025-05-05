@@ -109,7 +109,7 @@ Você pode selecionar o público-alvo ao configurar o teste A/B para um formulá
 1. Clique na ferramenta **Selecionar** na barra de ferramentas e selecione o formulário adaptável.
 1. Clique em **Mais** na barra de ferramentas e selecione **Configurar teste A/B**. A página Configurar teste A/B é aberta.
 
-[](assets/ab-test-configure-1.png)
+[&#128279;](assets/ab-test-configure-1.png)
 
 1. Especifique um **Nome da atividade** para o teste A/B.
 
@@ -153,7 +153,7 @@ Para exibir e analisar o relatório de teste A/B:
 
 1. Selecione o formulário adaptável, clique em **Mais** e em **Relatório de Teste A/B**. O relatório é exibido.
 
-[](assets/ab-test-report-3.png)
+[&#128279;](assets/ab-test-report-3.png)
 
 1. Analise o relatório e veja se você tem pontos de dados suficientes para declarar uma das experiências de melhor desempenho como vencedora. Você pode optar por continuar com o mesmo teste A/B por mais tempo ou declarar um vencedor e terminar o teste A/B.
 1. Para declarar um vencedor e finalizar o teste A/B, clique no botão **Encerrar teste A/B** no painel de relatórios. Uma caixa de diálogo solicita que você declare uma das duas experiências como vencedora. Escolha um vencedor e confirme a finalização do teste A/B.

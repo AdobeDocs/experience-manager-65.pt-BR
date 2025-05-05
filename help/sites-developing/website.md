@@ -329,7 +329,7 @@ Nesta seção, você cria vários scripts que geram, cada um, uma parte do corpo
 
 1. No CRXDE Lite, crie o arquivo `left.jsp` em `/apps/mywebsite/components/contentpage`:
 
-   1. Clique com o botão direito do mouse no nó `/apps/mywebsite/components/contentpage` e selecione **Criar **depois **Criar arquivo**.
+   1. Clique com o botão direito do mouse no nó `/apps/mywebsite/components/contentpage` e selecione **Criar &#x200B;** depois **Criar arquivo**.
 
    1. Na janela, digite `left.jsp` como o **Nome** e clique em **OK**.
 
@@ -1530,6 +1530,6 @@ Para este componente, você pode definir vários parâmetros nos modos de ediç�
    ```
 
 1. Salve as alterações.
-1. No navegador, recarregue a página ** Produtos **. A página inteira se parece com o seguinte:
+1. No navegador, recarregue a página **&#x200B; Produtos &#x200B;**. A página inteira se parece com o seguinte:
 
    ![chlimage_1-5](assets/chlimage_1-5.jpeg)

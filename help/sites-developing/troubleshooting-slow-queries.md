@@ -48,7 +48,7 @@ No AEM 6.3, por padrão, quando um percurso de 100.000 é atingido, o query falh
 
 #### Durante o desenvolvimento {#during-development}
 
-Explique **todas** as consultas e certifique-se de que seus planos de consulta não contenham a explicação **/&amp;ast; traverse**. Exemplo de plano de consulta de passagem:
+Explique **todas** as consultas e certifique-se de que seus planos de consulta não contenham a explicação **/&ast; traverse**. Exemplo de plano de consulta de passagem:
 
 * **PLANO:** `[nt:unstructured] as [a] /* traverse "/content//*" where ([a].[unindexedProperty] = 'some value') and (isdescendantnode([a], [/content])) */`
 

@@ -22,7 +22,7 @@ ht-degree: 0%
 As **[!UICONTROL Configurações Gerais do Dynamic Media]** estão disponíveis apenas se:
 
 * Você está executando o Dynamic Media no modo Scene7. Consulte [Habilitar o Dynamic Media no modo Scene7](/help/assets/config-dms7.md#enabling-dynamic-media-in-scene-mode).
-* Você tem uma *Configuração **[!UICONTROL Dynamic Media* {existente]** (em **[!UICONTROL Cloud Service]**) no Adobe Experience Manager 6.5.11 ou superior. Consulte [Criar uma configuração do Dynamic Media em Cloud Service](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services).
+* Você tem uma *Configuração **[!UICONTROL Dynamic Media* &lbrace;existente]** (em **[!UICONTROL Cloud Service]**) no Adobe Experience Manager 6.5.11 ou superior. Consulte [Criar uma configuração do Dynamic Media em Cloud Service](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services).
 * Você é um administrador de sistema do Experience Manager com privilégios de administrador.
 
 As Configurações gerais do Dynamic Media devem ser usadas por desenvolvedores e programadores experientes de sites. O Adobe Dynamic Media recomenda que os usuários que alteram essas configurações de publicação estejam familiarizados com o Dynamic Media no Adobe Experience Manager e com a tecnologia básica de geração de imagens.
@@ -52,7 +52,7 @@ Consulte também [Opcional - Configuração e configuração do Dynamic Media - 
    * Guia [Illustrator](#illustrator-tab)
 
    ![Página Configurações Gerais do Dynamic Media](/help/assets/assets-dm/dm-general-settings.png)
-   *Página Configurações Gerais do Dynamic Media, com a guia **[!UICONTROL Edição de Imagem]**selecionada.*<br><br>
+   *Página Configurações Gerais do Dynamic Media, com a guia **[!UICONTROL Edição de Imagem]**&#x200B;selecionada.*<br><br>
 
 1. Quando terminar, próximo ao canto superior direito da página, selecione **[!UICONTROL Salvar]**.
 

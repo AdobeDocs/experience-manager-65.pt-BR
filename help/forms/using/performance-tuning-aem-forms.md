@@ -171,5 +171,5 @@ Para melhorar o desempenho, você pode direcionar o software antivírus para exc
 >
 >* Se você estiver usando um local diferente para GDS e diretório temporário, abra AdminUI em `https://'[server]:[port]'/adminui`, vá até **Início > Configurações > Configurações do Sistema Principal > Configurações Principais** para confirmar o local em uso.
 >
-* Se o servidor do AEM Forms funcionar lentamente mesmo após a exclusão dos diretórios sugeridos, exclua também o arquivo executável Java™ (java.exe).
+>* Se o servidor do AEM Forms funcionar lentamente mesmo após a exclusão dos diretórios sugeridos, exclua também o arquivo executável Java™ (java.exe).
 >

@@ -66,10 +66,10 @@ A parte padrão de uma regra é usada para corresponder aos nomes dos arquivos a
 | Prefixo | Efeito |
 |---|---|
 | / | Indica um caminho JCR. Portanto, este prefixo corresponde a arquivos abaixo do diretório jcr_root. |
-| &amp;ast; | Indica um arquivo regular no sistema de arquivos. |
+| &ast; | Indica um arquivo regular no sistema de arquivos. |
 | nenhum | Nenhum prefixo ou padrão que comece com uma pasta ou nome de arquivo indica um arquivo regular no sistema de arquivos. |
 
-Quando usado dentro de um padrão, o caractere / indica um subdiretório e o caractere &amp;ast; corresponde a todos. A tabela a seguir lista várias regras de exemplo.
+Quando usado dentro de um padrão, o caractere / indica um subdiretório e o caractere &ast; corresponde a todos. A tabela a seguir lista várias regras de exemplo.
 
 <table>
  <tbody>

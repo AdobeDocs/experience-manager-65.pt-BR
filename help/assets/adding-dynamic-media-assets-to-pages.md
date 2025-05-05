@@ -49,7 +49,7 @@ Adicionar um componente de Mídia 3D, Dynamic Media, Mídia interativa, Mídia p
 
 1. Dependendo do componente do Dynamic Media que você soltou na página, uma caixa de diálogo de configuração se abre. [Defina as opções do componente](/help/assets/adding-dynamic-media-assets-to-pages.md#dynamic-media-components) conforme necessário.
 
-   O exemplo abaixo mostra a caixa de diálogo do componente de Mídia ]**de Vídeo 360 do Dynamic Media e as opções disponíveis na lista suspensa Predefinição do Visualizador.**[!UICONTROL 
+   O exemplo abaixo mostra a caixa de diálogo do componente de Mídia **de Vídeo 360 do Dynamic Media e as opções disponíveis na lista suspensa Predefinição do Visualizador.**
 
    ![Componente de mídia de vídeo 360](assets/6_5_360video_wcmcomponentviewerpreset.png)
 

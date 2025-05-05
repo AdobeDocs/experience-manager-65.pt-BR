@@ -159,7 +159,7 @@ Sem o provisionamento just-in-time, quando um usuário é autenticado com êxito
 1. Para criar um domínio, clique em Novo domínio corporativo ou Novo domínio híbrido. Para editar um domínio existente, clique no nome do domínio.
 1. Selecione Ativar provisionamento just-in-time.
 
-   ***observação **: se a caixa de seleção Habilitar Provisionamento Just In Time estiver ausente, clique em Início > Configurações > Gerenciamento de Usuários> Configuração > Atributos Avançados do Sistema e clique em Recarregar.*
+   ***observação &#x200B;**: se a caixa de seleção Habilitar Provisionamento Just In Time estiver ausente, clique em Início > Configurações > Gerenciamento de Usuários> Configuração > Atributos Avançados do Sistema e clique em Recarregar.*
 
 1. Adicionar provedores de autenticação. Ao adicionar provedores de autenticação, na tela Nova autenticação, selecione um Criador de identidade e um Provedor de atribuição registrados. (Consulte [Configuração de provedores de autenticação](configuring-authentication-providers.md#configuring-authentication-providers).)
 1. Salve o domínio.

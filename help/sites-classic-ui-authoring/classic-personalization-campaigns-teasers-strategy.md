@@ -111,7 +111,7 @@ E usamos as seguintes definições de teaser:
 
 Em seguida, se aplicarmos isso a um visitante em que:
 
-* **S1**, **S2 e **S6** resolvidos com êxito
+* **S1**, **S2 e &#x200B;** S6** resolvidos com êxito
 
 * a marca **marketing** tem três ocorrências
 * a tag **business** tem seis ocorrências

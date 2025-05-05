@@ -88,9 +88,9 @@ Para fazer isso, você especifica com qual configuração de nuvem do A4T deve s
    >Ao configurar o A4T com AEM, você pode ver uma entrada ausente na referência Configuração. Para poder selecionar a estrutura de análise, faça o seguinte:
    >
    >1. Navegue até **Ferramentas** > **Geral** > **CRXDE Lite**.
-   1. Navegue até a [Caixa de diálogo de configuração do A4T Analytics](#a4t-analytics-config-dialog) (veja abaixo)
-   1. Defina a propriedade **disable** como **false**.
-   1. Clique em **Salvar tudo**.
+   >1. Navegue até a [Caixa de diálogo de configuração do A4T Analytics](#a4t-analytics-config-dialog) (veja abaixo)
+   >1. Defina a propriedade **disable** como **false**.
+   >1. Clique em **Salvar tudo**.
 
 #### Caixa de diálogo Configuração do A4T Analytics {#a4t-analytics-config-dialog}
 
@@ -108,16 +108,16 @@ Integrar manualmente ao Adobe Target em vez de usar o assistente de aceitação.
 
 >[!NOTE]
 >
-O arquivo da Biblioteca de Destino, [AT.JS](https://developer.adobe.com/target/implement/client-side/atjs/atjs-functions/mboxcreate-atjs/), é uma nova biblioteca de implementação do Adobe Target, projetada para implementações típicas da Web e aplicativos de página única. A Adobe recomenda usar a AT.js como a biblioteca de cliente, em vez da mbox.js.
+>O arquivo da Biblioteca de Destino, [AT.JS](https://developer.adobe.com/target/implement/client-side/atjs/atjs-functions/mboxcreate-atjs/), é uma nova biblioteca de implementação do Adobe Target, projetada para implementações típicas da Web e aplicativos de página única. A Adobe recomenda usar a AT.js como a biblioteca de cliente, em vez da mbox.js.
 >
-A AT.js oferece várias melhorias em relação à biblioteca mbox.js:
+>A AT.js oferece várias melhorias em relação à biblioteca mbox.js:
 >
-* Tempos de carregamento de página aprimorados para implementações da Web
-* Segurança aprimorada
-* Melhores opções de implementação para aplicativos de página única
-* A AT.js contém os componentes que foram incluídos na target.js, portanto, a target.js não é mais chamada
+>* Tempos de carregamento de página aprimorados para implementações da Web
+>* Segurança aprimorada
+>* Melhores opções de implementação para aplicativos de página única
+>* A AT.js contém os componentes que foram incluídos na target.js, portanto, a target.js não é mais chamada
 >
-É possível selecionar AT.js ou mbox.js no menu suspenso **Biblioteca do cliente**.
+>É possível selecionar AT.js ou mbox.js no menu suspenso **Biblioteca do cliente**.
 
 <!-- OLD URL from above was 404 https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html -->
 
@@ -151,12 +151,12 @@ Use o procedimento a seguir para criar uma configuração da nuvem do Target no 
 
    >[!NOTE]
    >
-   Ao configurar o A4T com AEM, você pode ver uma entrada ausente na referência Configuração. Para poder selecionar a estrutura de análise, faça o seguinte:
+   >Ao configurar o A4T com AEM, você pode ver uma entrada ausente na referência Configuração. Para poder selecionar a estrutura de análise, faça o seguinte:
    >
-   1. Navegue até **Ferramentas** > **Geral** > **CRXDE Lite**.
-   1. Navegue até **/libs/cq/analytics/components/testandtargetpage/dialog/items/tabs/items/tab1_general/items/a4tAnalyticsConfig**
-   1. Defina a propriedade **disable** como **false**.
-   1. Clique em **Salvar tudo**.
+   >1. Navegue até **Ferramentas** > **Geral** > **CRXDE Lite**.
+   >1. Navegue até **/libs/cq/analytics/components/testandtargetpage/dialog/items/tabs/items/tab1_general/items/a4tAnalyticsConfig**
+   >1. Defina a propriedade **disable** como **false**.
+   >1. Clique em **Salvar tudo**.
 
 1. Na caixa de diálogo, forneça valores para essas propriedades.
 
@@ -175,13 +175,13 @@ Use o procedimento a seguir para criar uma configuração da nuvem do Target no 
 
    >[!NOTE]
    >
-   Por padrão, quando você opta pelo assistente de configuração do Adobe Target, o Direcionamento preciso é ativado.
+   >Por padrão, quando você opta pelo assistente de configuração do Adobe Target, o Direcionamento preciso é ativado.
    >
-   Direcionamento preciso significa que a configuração do Cloud Service aguarda o contexto ser carregado antes de carregar o conteúdo. Como resultado, em termos de desempenho, o direcionamento preciso pode criar um atraso de alguns milissegundos antes de carregar o conteúdo.
+   >Direcionamento preciso significa que a configuração do Cloud Service aguarda o contexto ser carregado antes de carregar o conteúdo. Como resultado, em termos de desempenho, o direcionamento preciso pode criar um atraso de alguns milissegundos antes de carregar o conteúdo.
    >
-   O direcionamento preciso é sempre ativado na instância do autor. No entanto, na instância de publicação, é possível desativar o direcionamento preciso globalmente, limpando a marca de seleção ao lado de Direcionamento preciso na configuração do Cloud Service (**http://localhost:4502/etc/cloudservices.html**). Você também pode ativar e desativar o direcionamento preciso para componentes individuais, independentemente das suas definições na configuração do Cloud Service.
+   >O direcionamento preciso é sempre ativado na instância do autor. No entanto, na instância de publicação, é possível desativar o direcionamento preciso globalmente, limpando a marca de seleção ao lado de Direcionamento preciso na configuração do Cloud Service (**http://localhost:4502/etc/cloudservices.html**). Você também pode ativar e desativar o direcionamento preciso para componentes individuais, independentemente das suas definições na configuração do Cloud Service.
    >
-   Se você ***já*** tiver criado componentes direcionados e alterar essa configuração, suas alterações não afetarão esses componentes. Altere esses componentes diretamente.
+   >Se você ***já*** tiver criado componentes direcionados e alterar essa configuração, suas alterações não afetarão esses componentes. Altere esses componentes diretamente.
 
 1. Clique em **Conectar ao Destino** para inicializar a conexão com o Destino. Se a conexão for bem-sucedida, a mensagem **Conexão bem-sucedida** será exibida. Clique em **OK** na mensagem e, em seguida, em **OK** na caixa de diálogo.
 
@@ -206,7 +206,7 @@ Você pode criar várias estruturas para uma única configuração do Target. V�
 
    >[!NOTE]
    >
-   Ao mapear, os parâmetros são enviados para uma mbox por meio de sequências de caracteres simples. Não é possível mapear matrizes do ContextHub.
+   >Ao mapear, os parâmetros são enviados para uma mbox por meio de sequências de caracteres simples. Não é possível mapear matrizes do ContextHub.
 
    Por exemplo, para usar os **Dados de perfil** sobre os visitantes do seu site para controlar sua campanha do Target, arraste o componente **Dados de perfil** para a página. As variáveis de dados de perfil disponíveis para mapeamento para parâmetros do Target são exibidas.
 
@@ -218,7 +218,7 @@ Você pode criar várias estruturas para uma única configuração do Target. V�
 
    >[!NOTE]
    >
-   A sincronização de parâmetros é uma via de mão única - do AEM para o Adobe Target.
+   >A sincronização de parâmetros é uma via de mão única - do AEM para o Adobe Target.
 
 Sua estrutura foi criada. Para replicar a estrutura para a instância de publicação, use a opção **Ativar estrutura** no sidekick.
 
@@ -228,14 +228,14 @@ Associe suas [atividades de AEM](/help/sites-authoring/activitylib.md) à config
 
 >[!NOTE]
 >
-Os tipos de atividades disponíveis são determinados pelo seguinte:
+>Os tipos de atividades disponíveis são determinados pelo seguinte:
 >
 >
-* Se a opção **xt_only** estiver habilitada no locatário do Adobe Target (clientcode) usado no lado do AEM para se conectar ao Adobe Target AEM, você poderá criar atividades de XT **somente** no.
+>* Se a opção **xt_only** estiver habilitada no locatário do Adobe Target (clientcode) usado no lado do AEM para se conectar ao Adobe Target AEM, você poderá criar atividades de XT **somente** no.
 >
-* Se a opção **xt_only** estiver **not** habilitada no locatário do Adobe Target (clientcode), você poderá criar **ambas** atividades XT e A/B no AEM.
+>* Se a opção **xt_only** estiver **not** habilitada no locatário do Adobe Target (clientcode), você poderá criar **ambas** atividades XT e A/B no AEM.
 >
-**Observação adicional:** a opção **xt_only** é uma configuração aplicada a um determinado locatário do Target (clientcode) e só pode ser modificada diretamente no Adobe Target. Não é possível ativar ou desativar essa opção no AEM.
+>**Observação adicional:** a opção **xt_only** é uma configuração aplicada a um determinado locatário do Target (clientcode) e só pode ser modificada diretamente no Adobe Target. Não é possível ativar ou desativar essa opção no AEM.
 
 ### Associar a estrutura do Target ao seu site {#associating-the-target-framework-with-your-site}
 
@@ -255,14 +255,14 @@ Quando você associa uma página à estrutura, as páginas secundárias herdam a
 
    >[!NOTE]
    >
-   Selecione a **estrutura** específica que você criou e não a configuração de nuvem do Target sob a qual ela foi criada.
+   >Selecione a **estrutura** específica que você criou e não a configuração de nuvem do Target sob a qual ela foi criada.
 
 1. Clique em **Concluído**.
 1. Ative a página raiz do site para replicá-la no servidor de publicação. (Consulte [Como Acessar Páginas Do Publish](/help/sites-authoring/publishing-pages.md).)
 
    >[!NOTE]
    >
-   Se a estrutura anexada à página ainda não tiver sido ativada, um assistente será aberto, permitindo que você também a publique.
+   >Se a estrutura anexada à página ainda não tiver sido ativada, um assistente será aberto, permitindo que você também a publique.
 
 ## Resolução de Problemas de Conexão do Target {#troubleshooting-target-connection-problems}
 

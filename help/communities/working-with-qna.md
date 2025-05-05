@@ -210,7 +210,7 @@ Na guia **Campo de marca**, as marcas que podem ser aplicadas, se permitidas na 
 
 * **Limite sugerido**
 
-  Insira o número de tags a serem exibidas como sugestão para a publicação do membro no fórum. Um valor de **-**1 significa sem limites. O padrão é 0.
+  Insira o número de tags a serem exibidas como sugestão para a publicação do membro no fórum. Um valor de **-**&#x200B;1 significa sem limites. O padrão é 0.
 
 #### Guia Configurações de classificação {#sort-settings-tab}
 

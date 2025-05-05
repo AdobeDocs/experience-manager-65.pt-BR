@@ -395,6 +395,7 @@ A caixa de diálogo baseada no widget **Multicampo Personalizado**:
 * O widget `multifield` tem um fieldconfig (tipo de nó = `nt:unstructured`, xtype = `ejstcustom`, optionsProvider = `Ejst.x3.provideOptions`) que é baseado no xtype personalizado &#39; `ejstcustom`&#39;:
    * &#39; `fieldconfig`&#39; é uma opção de configuração do objeto ` [CQ.form.MultiField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.MultiField)`.
    * &#39; `optionsProvider`&#39; é uma configuração do widget `ejstcustom`. Está definido com o método `Ejst.x3.provideOptions`, que está definido em `exercises.js` às:
+
      `/apps/extjstraining/clientlib/js/exercises.js`
 e retorna duas opções.
 * É definido pelo nó `multifield` em:
@@ -412,7 +413,7 @@ O widget personalizado `multifield` (xtype = `ejstcustom`):
 * Substitui `CQ.Ext.Component#initComponent` para adicionar os três campos:
    * `allowField` é um objeto [CQ.form.Selection](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.Selection) do tipo &#39;select&#39;. optionsProvider é uma configuração do objeto Selection que é instanciada com a configuração optionsProvider do CustomWidget definido na caixa de diálogo
    * `otherField` é um objeto [CQ.Ext.form.TextField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.form.TextField)
-* Substitui os métodos `setValue`e `getValue``getRawValue` o [CQ.form.CompositeField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.CompositeField) para definir e recuperar o valor de CustomWidget com o formato:
+* Substitui os métodos `setValue`e `getValue` `getRawValue` o [CQ.form.CompositeField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.CompositeField) para definir e recuperar o valor de CustomWidget com o formato:
   `<allowField value>/<otherField value>, for example: 'Bla1/hello'`.
 * Registra-se como &#39; `ejstcustom`&#39; xtype:
   `CQ.Ext.reg('ejstcustom', Ejst.CustomWidget);`
@@ -514,7 +515,7 @@ O objeto ` [CQ.Ext.tree.TreePanel](https://developer.adobe.com/experience-manage
 
 Para incluir o **componente Visão geral** da árvore ao página de amostra:
 
-1. Adicione o **4. Componente de Visão geral** da árvore para o página de amostra usando widgets **** ExtJS guia no **Sidekick**.
+1. Adicione o **4. Componente de Visão geral** da árvore para o página de amostra usando widgets **&#x200B;**&#x200B;ExtJS guia no **Sidekick**.
 1. O componente é exibido:
    * um título, com algum texto
    * um link **PROPERTIES**: clique em para exibir as propriedades do parágrafo armazenado no repositório. Clique novamente para ocultar as propriedades.
@@ -545,6 +546,7 @@ O código JavaScript incorporado no componente jsp:
 * Se a janela que exibe a árvore não existir, `treePanel` ([CQ.Ext.tree.TreePanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.tree.TreePanel)) será criado:
    * `treePanel` contém os dados usados para criar a janela.
    * Os dados são recuperados chamando o servlet registrado em:
+
      `/bin/wcm/siteadmin/tree.json`
 * O ouvinte `beforeload` verifica se o nó selecionado está carregado.
 * O objeto `root` define o caminho `apps/extjstraining` como a raiz da árvore.
@@ -631,8 +633,10 @@ O arquivo JavaScript ( `defaultgrid.js`) referenciado no componente jsp define o
   `store.load();`
 * `gridPanel` é um objeto ` [CQ.Ext.grid.GridPanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)` que consome `store`:
    * as larguras das colunas são sempre reproporcionadas:
+
      `forceFit: true`
    * somente uma linha por vez pode ser selecionada:
+
      `singleSelect:true`
 
 #### Exemplo 2: Grade de Pesquisa de Referência {#example-reference-search-grid}
@@ -643,7 +647,7 @@ Quando você instala o pacote, a `content.jsp` do componente **Visão Geral da G
 * É baseado em dados recuperados do repositório ao chamar um servlet.
 * As células da última coluna podem ser editadas. O valor é mantido em uma propriedade `test` abaixo do nó definido pelo caminho exibido na primeira coluna.
 
-Como explicado na seção anterior, o objeto da janela obtém seu objeto ` [CQ.Ext.grid.GridPanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)` chamando o método `getGridPanel()` definido no arquivo `defaultgrid.js` em `/apps/extjstraining/components/gridoverview/defaultgrid.js`. O componente **Visão geral da grade **fornece uma implementação diferente para o método `getGridPanel()`, definido no arquivo `referencesearch.js` em `/apps/extjstraining/components/gridoverview/referencesearch.js`. Ao alternar o arquivo .js referenciado no componente jsp, a grade é baseada nos dados recuperados do repositório.
+Como explicado na seção anterior, o objeto da janela obtém seu objeto ` [CQ.Ext.grid.GridPanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)` chamando o método `getGridPanel()` definido no arquivo `defaultgrid.js` em `/apps/extjstraining/components/gridoverview/defaultgrid.js`. O componente **Visão geral da grade &#x200B;** fornece uma implementação diferente para o método `getGridPanel()`, definido no arquivo `referencesearch.js` em `/apps/extjstraining/components/gridoverview/referencesearch.js`. Ao alternar o arquivo .js referenciado no componente jsp, a grade é baseada nos dados recuperados do repositório.
 
 Troque o arquivo .js referenciado no componente jsp:
 
@@ -673,6 +677,7 @@ As células da coluna &quot;Test&quot; podem ser editadas conforme são definida
 * `gridPanel` é um objeto ` [CQ.Ext.grid.EditorGridPanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.EditorGridPanel)` que pode ser editado:
    * baseia-se no `store` predefinido e no modelo de coluna `cm`
    * somente uma linha por vez pode ser selecionada:
+
      `sm: new [CQ.Ext.grid.RowSelectionModel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.RowSelectionModel)({singleSelect:true})`
    * o ouvinte `afteredit` verifica se, após uma célula na coluna &quot;**Test**&quot;, ela foi editada:
       * a propriedade &#39; `test`&#39; do nó no caminho definido pela coluna &quot;**jcr:path**&quot; está definida no repositório com o valor da célula

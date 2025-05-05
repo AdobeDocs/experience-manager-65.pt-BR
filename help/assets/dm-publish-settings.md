@@ -22,7 +22,7 @@ ht-degree: 0%
 As opções de Configuração do Dynamic Media Publish estarão disponíveis somente se o seguinte for verdadeiro:
 
 * Você está executando o Dynamic Media no modo Scene7. Consulte [Habilitar o Dynamic Media no modo Scene7](/help/assets/config-dms7.md#enabling-dynamic-media-in-scene-mode).
-* Você tem uma *Configuração **[!UICONTROL Dynamic Media* {existente]** (em **[!UICONTROL Cloud Service]**) no Adobe Experience Manager 6.5.11 ou superior. Consulte [Criar uma configuração do Dynamic Media em Cloud Service](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services).
+* Você tem uma *Configuração **[!UICONTROL Dynamic Media* &lbrace;existente]** (em **[!UICONTROL Cloud Service]**) no Adobe Experience Manager 6.5.11 ou superior. Consulte [Criar uma configuração do Dynamic Media em Cloud Service](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services).
 * Você é um administrador de sistema do Experience Manager com privilégios de administrador.
 
 Desenvolvedores e programadores experientes do site devem usar a Configuração do Dynamic Media Publish. O Adobe Dynamic Media recomenda que os usuários que alteram as configurações de publicação estejam familiarizados com o Adobe Dynamic Media, padrões e convenções de protocolo HTTP e tecnologia básica de geração de imagens.
@@ -55,7 +55,7 @@ Consulte também [Opcional - Configuração e configuração do Dynamic Media - 
    * Guia [Atributos de gerenciamento de cores](#color-management-attributes-tab)
 
    ![Página de Instalação do Dynamic Media Publish](/help/assets/assets-dm/dm-publish-setup.png)
-   *Página de Instalação do Dynamic Media Publish, com a guia **[!UICONTROL Atributos de Solicitação]**selecionada.*<br><br>
+   *Página de Instalação do Dynamic Media Publish, com a guia **[!UICONTROL Atributos de Solicitação]**&#x200B;selecionada.*<br><br>
 
 1. Quando terminar, próximo ao canto superior direito da página, clique em **[!UICONTROL Salvar]**.
 

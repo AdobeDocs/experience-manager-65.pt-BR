@@ -93,7 +93,7 @@ Os scripts de formulário que estão no evento form:ready são executados apenas
 
 >[!NOTE]
 >
-Em um formulário multipáginas, as alterações feitas pelo JavaScript em uma página não serão mantidas se você for para uma página diferente.
+>Em um formulário multipáginas, as alterações feitas pelo JavaScript em uma página não serão mantidas se você for para uma página diferente.
 
 Você pode chamar scripts personalizados antes de enviar um formulário. Esse recurso funciona em todos os navegadores disponíveis. No entanto, ele pode ser usado somente quando os usuários renderizam o formulário HTML que tem sua propriedade `Output Type` definida como `Form Body`. Ele não funcionará quando o `Output Type` for `Full HTML`. Consulte Configuração de formulários na ajuda de administração para ver as etapas de configuração desse recurso.
 
@@ -167,7 +167,7 @@ O script a seguir mantém o `fillColor` de um campo com base no valor de `hidden
 
 >[!NOTE]
 >
-Os objetos estáticos não são exibidos em um formulário HTML renderizado quando aninhados dentro de uma célula da tabela. Por exemplo, um círculo e um retângulo aninhados dentro de uma célula de tabela não são exibidos em uma forma de HTML de renderização. No entanto, esses mesmos objetos estáticos são exibidos corretamente quando localizados fora da tabela.
+>Os objetos estáticos não são exibidos em um formulário HTML renderizado quando aninhados dentro de uma célula da tabela. Por exemplo, um círculo e um retângulo aninhados dentro de uma célula de tabela não são exibidos em uma forma de HTML de renderização. No entanto, esses mesmos objetos estáticos são exibidos corretamente quando localizados fora da tabela.
 
 ## Assinatura digital de formulários de HTML {#digitally-signing-html-forms}
 
@@ -190,7 +190,7 @@ Você pode renderizar um formulário de HTML completo que esteja em conformidade
 
 >[!NOTE]
 >
-Para obter mais informações sobre o serviço Forms, consulte [Referência de serviços para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Para obter mais informações sobre o serviço Forms, consulte [Referência de serviços para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Resumo das etapas {#summary-of-steps}
 
@@ -226,11 +226,11 @@ Os URLs HTTP para onde os dados de formulário são publicados podem ser especif
 
 >[!NOTE]
 >
-A renderização de um formulário HTML com uma barra de ferramentas é opcional.
+>A renderização de um formulário HTML com uma barra de ferramentas é opcional.
 
 >[!NOTE]
 >
-Se você renderizar um formulário AHTML, é recomendável não adicionar uma barra de ferramentas ao formulário.
+>Se você renderizar um formulário AHTML, é recomendável não adicionar uma barra de ferramentas ao formulário.
 
 **Renderizar um formulário de HTML**
 
@@ -282,7 +282,7 @@ Renderize um formulário HTML usando a API do Forms (Java):
 
    >[!NOTE]
    >
-   Os Forms não são renderizados com êxito no HTML quando a opção `StandAlone` é `true` e o `ApplicationWebRoot` faz referência a um servidor diferente do servidor de aplicativos J2EE que hospeda o AEM Forms (o valor `ApplicationWebRoot` é especificado usando o objeto `URLSpec` passado para o método `(Deprecated) renderHTMLForm` do objeto `FormsServiceClient`). Quando o `ApplicationWebRoot` é outro servidor de um que hospeda o AEM Forms, o valor do URI raiz da Web no console de administração precisa ser definido como o valor do URI do aplicativo Web do Formulário. Isso pode ser feito fazendo logon no console de administração, clicando em Serviços > Forms e definindo o URI da raiz da Web como https://server-name:port/FormServer. Em seguida, salve as configurações.
+   >Os Forms não são renderizados com êxito no HTML quando a opção `StandAlone` é `true` e o `ApplicationWebRoot` faz referência a um servidor diferente do servidor de aplicativos J2EE que hospeda o AEM Forms (o valor `ApplicationWebRoot` é especificado usando o objeto `URLSpec` passado para o método `(Deprecated) renderHTMLForm` do objeto `FormsServiceClient`). Quando o `ApplicationWebRoot` é outro servidor de um que hospeda o AEM Forms, o valor do URI raiz da Web no console de administração precisa ser definido como o valor do URI do aplicativo Web do Formulário. Isso pode ser feito fazendo logon no console de administração, clicando em Serviços > Forms e definindo o URI da raiz da Web como https://server-name:port/FormServer. Em seguida, salve as configurações.
 
 1. Renderizar um formulário HTML
 
@@ -340,7 +340,7 @@ Renderize um formulário HTML usando a API (serviço da Web) do Forms:
 
    >[!NOTE]
    >
-   Os Forms não são renderizados com êxito no HTML quando a opção `StandAlone` é `true` e o `ApplicationWebRoot` faz referência a um servidor diferente do servidor de aplicativos J2EE que hospeda o AEM Forms (o valor `ApplicationWebRoot` é especificado usando o objeto `URLSpec` passado para o método `(Deprecated) renderHTMLForm` do objeto `FormsServiceClient`). Quando o `ApplicationWebRoot` é outro servidor de um que hospeda o AEM Forms, o valor do URI raiz da Web no console de administração precisa ser definido como o valor do URI do aplicativo Web do Formulário. Isso pode ser feito fazendo logon no console de administração, clicando em Serviços > Forms e definindo o URI da raiz da Web como https://server-name:port/FormServer. Em seguida, salve as configurações.
+   >Os Forms não são renderizados com êxito no HTML quando a opção `StandAlone` é `true` e o `ApplicationWebRoot` faz referência a um servidor diferente do servidor de aplicativos J2EE que hospeda o AEM Forms (o valor `ApplicationWebRoot` é especificado usando o objeto `URLSpec` passado para o método `(Deprecated) renderHTMLForm` do objeto `FormsServiceClient`). Quando o `ApplicationWebRoot` é outro servidor de um que hospeda o AEM Forms, o valor do URI raiz da Web no console de administração precisa ser definido como o valor do URI do aplicativo Web do Formulário. Isso pode ser feito fazendo logon no console de administração, clicando em Serviços > Forms e definindo o URI da raiz da Web como https://server-name:port/FormServer. Em seguida, salve as configurações.
 
 1. Renderizar um formulário HTML
 

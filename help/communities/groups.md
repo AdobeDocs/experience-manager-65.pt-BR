@@ -99,6 +99,7 @@ A raiz padrão é o site pai, mas a raiz pode ser movida para qualquer local no 
    * Verifique novamente o nome, pois ele não pode ser facilmente alterado após a criação do grupo.
    * A URL base é exibida abaixo de `Community Group Name`.
    * Para um URL válido, anexe &quot;.html&quot;
+
      *por exemplo*, `https://localhost:4502/content/sites/mysight/en/mygroup.html`.
 
 * Menu **Modelo do grupo da comunidade**

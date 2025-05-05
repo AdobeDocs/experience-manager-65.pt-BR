@@ -285,6 +285,7 @@ Você pode armazenar dados do widget na carga do fluxo de trabalho ou nos metada
 * **Armazenar dados com a carga**
 
    * Para armazenar dados do widget como uma propriedade da carga do fluxo de trabalho, use o seguinte formato para o valor da propriedade name do nó do widget:
+
      `./jcr:content/nodename`
 
    * Os dados são armazenados na propriedade `nodename` do nó de carga. Se o nó não contiver essa propriedade, a propriedade será criada.
@@ -293,6 +294,7 @@ Você pode armazenar dados do widget na carga do fluxo de trabalho ou nos metada
 * **Armazenar dados com o item de trabalho**
 
    * Para armazenar dados do widget como uma propriedade dos metadados do item de trabalho, use o seguinte formato para o valor da propriedade name:
+
      `nodename`
 
    * Os dados são armazenados na propriedade `nodename` do item de trabalho `metadata`. Os dados são preservados se a caixa de diálogo for usada posteriormente com a mesma carga.
@@ -555,8 +557,7 @@ Para configurar a etapa, edite e use as seguintes guias:
 
    * **Participantes**: especifica a lista de usuários disponíveis para seleção. Para adicionar um usuário à lista, clique em **Adicionar item** e digite o caminho inicial do nó do usuário ou da ID do usuário. A ordem dos usuários não afeta a probabilidade de receber um item de trabalho.
 
-### Seletor do participante iniciador do fluxo de trabalho
-  {#workflow-initiator-participant-chooser}
+### Seletor do participante iniciador do fluxo de trabalho  {#workflow-initiator-participant-chooser}
 
 A etapa **Seletor de Participante Iniciador do Fluxo de Trabalho** é um seletor de participantes que atribui o item de trabalho gerado ao usuário que iniciou o fluxo de trabalho. Não há propriedades a serem configuradas diferentes das propriedades **Common**.
 

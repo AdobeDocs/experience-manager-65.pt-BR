@@ -106,7 +106,7 @@ Se você fornecer apenas uma página **Título** ao criar uma página, o AEM der
 | Título | Nome derivado |
 |---|---|
 | Schön | schoen.html |
-| SC%&amp;&amp;ast;ç+ | sc---c-.html |
+| SC%&amp;&ast;ç+ | sc---c-.html |
 
 #### Nome {#name}
 

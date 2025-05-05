@@ -26,7 +26,7 @@ O recurso Relatórios de transação está disponível como parte do pacote comp
 * Habilitar replicação reversa em todas as instâncias de publicação
 * Ativar relatórios de transações
 * Fornecer direitos para visualizar um relatório de transações
-* (Opcional) Configurar Período de Liberação da Transação e Caixas de Saída [](/help/forms/using/installing-configuring-aem-forms-osgi.md)
+* (Opcional) Configurar Período de Liberação da Transação e Caixas de Saída [&#128279;](/help/forms/using/installing-configuring-aem-forms-osgi.md)
 
 >[!NOTE]
 >

@@ -130,7 +130,7 @@ Este processo inicia um servidor HTTP Solr usando a porta padrão 8983. Você po
 >
 >Se o Console Solr não estiver disponível, verifique os logs em &lt;solrinstall>/example/logs. Verifique se o SOLR está tentando se vincular a um nome de host específico que não pode ser resolvido (por exemplo, &quot;user-macbook-pro&quot;).
 >
-Em caso afirmativo, atualize o arquivo `etc/hosts` com uma nova entrada para esse nome de host (por exemplo, 127.0.0.1 user-macbook-pro) para iniciar Solr corretamente.
+>Em caso afirmativo, atualize o arquivo `etc/hosts` com uma nova entrada para esse nome de host (por exemplo, 127.0.0.1 user-macbook-pro) para iniciar Solr corretamente.
 
 ### SolrCloud {#solrcloud}
 

@@ -421,6 +421,7 @@ Para obter informações sobre como aplicar quebras de página e aplicar várias
 
 * **[!UICONTROL BÁSICO]**
    * **Modelo:** Você pode selecionar o modelo Padrão ou Personalizado.
+
      ![alt texto](image.png)
    * **Cor de Ênfase:** Você pode predefinir a Cor do modelo do [!UICONTROL Documento de Registro].
    * **Família da Fonte:** Selecione o tipo de fonte para os textos do [!UICONTROL Documento de Registro].
@@ -433,6 +434,7 @@ Para obter informações sobre como aplicar quebras de página e aplicar várias
       * Vertical
       * Horizontal
       * O mesmo que o formulário adaptável
+
      >[!NOTE]
      > O alinhamento vertical e horizontal é aplicável apenas a     Botão de opção e caixa de seleção
 * **[!UICONTROL PROPRIEDADES DA PÁGINA MESTRA]** Clique para obter mais informações sobre [propriedades da Página Mestra](#master-page-properties-master-page-properties)

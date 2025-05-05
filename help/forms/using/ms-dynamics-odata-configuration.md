@@ -103,6 +103,7 @@ Faça o seguinte para registrar um cliente OAuth em um computador do Ative Diret
 
    * `Client-ID` é uma ID de cliente que você pode gerar usando qualquer gerador de GUID.
    * `redirect-uri` é a URL para o serviço de nuvem OData do Microsoft Dynamics no AEM Forms. O serviço de nuvem padrão instalado com o pacote do AEM Forms é implantado no seguinte URL:
+
      `https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html`
 
 1. Execute o seguinte comando para conceder acesso à máquina do AD FS:

@@ -118,7 +118,7 @@ O recurso **Cópia de idioma** permite que os autores copiem sua Cópia de idiom
    >
    >Os nós de Cópia de idioma só podem existir como um filho direto do Espaço.
 
-1. Escolha **Idioma do Pacote de Conteúdo&amp;ast;** e insira o **Título&amp;ast;** na caixa de diálogo **Criar Cópia de Idioma**.
+1. Escolha **Idioma do Pacote de Conteúdo&ast;** e insira o **Título&ast;** na caixa de diálogo **Criar Cópia de Idioma**.
 
    Clique em **Criar**.
 

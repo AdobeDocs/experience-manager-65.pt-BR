@@ -123,9 +123,9 @@ Você pode configurar o firewall interno para permitir que determinados componen
 
 Por padrão, os ativos disponíveis nos nós de publicação estão acessíveis a todos. O acesso somente leitura está ativado para todos os ativos. É necessário para habilitar o acesso anônimo. Se você planeja restringir a visualização do formulário e enviar o acesso somente a usuários autenticados, use um grupo comum para permitir que somente usuários autenticados tenham acesso somente leitura aos ativos disponíveis nos nós de publicação. Os seguintes locais/diretórios contêm ativos de formulários que exigem proteção (acesso somente leitura para usuários autenticados):
 
-* /content/&amp;ast;
-* /etc.clientlibs/fd/&amp;ast;
-* /libs/fd/&amp;ast;
+* /content/&ast;
+* /etc.clientlibs/fd/&ast;
+* /libs/fd/&ast;
 
 ## Manipule com segurança os dados de formulários  {#securely-handle-forms-data}
 

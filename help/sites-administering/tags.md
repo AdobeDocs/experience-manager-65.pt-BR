@@ -258,7 +258,7 @@ As permissões de tag são [&#39;seguras (por padrão)&#39;](/help/sites-adminis
       * por exemplo, navegue até http://localhost:4502/useradmin
 
    * no painel esquerdo, selecione o grupo (ou usuário) para o qual a [permissão de leitura](/help/sites-administering/security.md#permissions) será concedida
-   * no painel direito, localize o **Caminho **para o namespace da tag
+   * no painel direito, localize o **Caminho &#x200B;** para o namespace da tag
 
       * por exemplo, `/content/cq:tags/mycommunity`
 

@@ -53,7 +53,7 @@ Você pode usar vários métodos para verificar a saída do Detector de padrões
    ![screenshot-2018-2-5detector-padrão](assets/screenshot-2018-2-5pattern-detector.png)
 
 * **Por meio de uma interface JSON reativa baseada em texto ou regular**
-* **Por meio de uma interface de linhas JSON reativa, **que gera um documento JSON separado em cada linha.
+* **Por meio de uma interface de linhas JSON reativa, &#x200B;** que gera um documento JSON separado em cada linha.
 
 Ambos os métodos são detalhados abaixo:
 

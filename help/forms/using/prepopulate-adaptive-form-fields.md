@@ -391,9 +391,11 @@ Você pode configurar o servidor do AEM Forms para executar a ação de mesclage
    1. Habilitar a opção Configuration.af.clientside.datamerge.enabled.name
 * Para ativar ou desativar o na linha de comando:
    * Para habilitar, execute o seguinte comando cURL:
+
      `curl -u admin:admin -X POST -d apply=true \ -d propertylist=af.clientside.datamerge.enabled \ -d af.clientside.datamerge.enabled=true \ http://${crx.host}:${crx.port}/system/console/configMgr/Adaptive%20Form%20and%20Interactive%20Communication%20Web%20Channel%20Configuration`
 
    * Para desativar, execute o seguinte comando cURL:
+
      `curl -u admin:admin -X POST -d apply=true \ -d propertylist=af.clientside.datamerge.enabled \ -d af.clientside.datamerge.enabled=false \ http://${crx.host}:${crx.port}/system/console/configMgr/Adaptive%20Form%20and%20Interactive%20Communication%20Web%20Channel%20Configuration`
 
   Para aproveitar ao máximo os dados pré-preenchidos na opção do cliente, atualize o serviço de preenchimento para retornar [FileAttachmentMap](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) e [CustomContext](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html)

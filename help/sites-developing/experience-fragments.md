@@ -110,9 +110,11 @@ Para criar um modelo de fragmento de experiência detectado pelo assistente **Cr
 1. Ambos:
 
    1. O tipo de recurso do template (o nó inicial) deve herdar de:
+
       `cq/experience-fragments/components/xfpage`
 
    1. E o nome do template deve começar com:
+
       `experience-fragments`
 Isso permite que os usuários criem fragmentos de experiência em /content/experience-fragments, pois a propriedade `cq:allowedTemplates` dessa pasta inclui todos os modelos com nomes que começam com `experience-fragment`. Os clientes podem atualizar essa propriedade para incluir seu próprio esquema de nomenclatura ou locais do modelo.
 

@@ -182,9 +182,9 @@ Para que o email seja trazido para o repositório, é necessário configurar um 
 
 * **[!UICONTROL URL]**
 
-  *(Obrigatório)* O servidor de email de saída. Por exemplo, `pop.gmail.com:995/INBOX?username=community-emailgmail.com&password=****`.
+  *(Obrigatório)* O servidor de email de saída. Por exemplo, `pop.gmail.com:995/INBOX?username=community-emailgmail.com&password=**&#x200B;**`.
 
-* **[!UICONTROL Importar para Caminho]**&amp;ast;
+* **[!UICONTROL Importar para Caminho]**&ast;
 
   *(Obrigatório)* Definido como `/content/usergenerated/mailFolder/postEmails`
 navegando até a pasta `postEmails` e selecionando **OK**.

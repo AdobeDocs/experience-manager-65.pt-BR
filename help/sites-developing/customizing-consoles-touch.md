@@ -151,6 +151,7 @@ Para personalizar as colunas na exibição de lista:
 1. Opcionalmente:
 
    * Se quiser conectar dados adicionais, você precisará gravar um [PageInforProvider](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageInfoProvider.html) com um
+
      Propriedade `pageInfoProviderType`.
 
    Por exemplo, consulte a classe/pacote anexado (do GitHub) abaixo.

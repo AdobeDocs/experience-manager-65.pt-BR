@@ -28,12 +28,14 @@ O MSM registra vários servlets que podem ser solicitados com seletores nos URLs
 1. `http://<host>:<port>/content/path/to/bluprint/page.blueprint.json?&maxSize=500&advancedStatus=true&returnRelationships=true&msm%3Atrigger=ROLLOUT`
    * Use isso em uma página de blueprint para recuperar a lista de todas as Live Copies vinculadas a ela, com informações adicionais sobre o status da Live Copy.
    * por exemplo:
+
      `http://localhost:4502/content/wknd/language-masters/en.blueprint.json?&maxSize=500&advancedStatus=true&returnRelationships=true&msm%3Atrigger=ROLLOUT`
 
 
 1. `http://<host>:<port>/content/path/to/livecopy/page.msm.json`
    * Use isso nas páginas de Live Copy para recuperar informações avançadas sobre suas conexões com as páginas de blueprint. Se a página não for uma Live Copy, nada será retornado.
    * por exemplo:
+
      `http://localhost:4502/content/wknd/ca/en.msm.json`
 
 Esses servlets geram mensagens de log DEBUG por meio do logger `com.day.cq.wcm.msm`, que também pode ser útil.

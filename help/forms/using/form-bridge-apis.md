@@ -88,7 +88,7 @@ Retorna o número da versão da biblioteca de Scripts
 
       * **widgetConfig:** permite que o usuário substitua os widgets padrão do formulário por widgets personalizados. A configuração é substituída da seguinte maneira:
 
-        *formBridge.registerConfig(&quot;widgetConfig&quot;:{/&amp;ast;configuration&amp;ast;/})*
+        *formBridge.registerConfig(&quot;widgetConfig&quot;:{/&ast;configuration&ast;/})*
 
       * **pagingConfig:** permite que o usuário substitua o comportamento padrão de renderizar somente a primeira página. A configuração é substituída da seguinte maneira:
 

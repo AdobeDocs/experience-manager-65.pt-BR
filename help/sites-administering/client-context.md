@@ -117,7 +117,7 @@ Por exemplo, se o mouse estiver sobre a parte esquerda ou direita da janela. Ess
 
 >[!NOTE]
 >
-As tags definidas nos ativos DAM exibidos nas páginas visitadas não serão contadas.
+>As tags definidas nos ativos DAM exibidos nas páginas visitadas não serão contadas.
 
 **Loja de tecnográficos** Esse componente depende da sua instalação.
 
@@ -129,7 +129,7 @@ Para obter informações adicionais, consulte [Contexto do Cliente em Detalhes](
 
 >[!NOTE]
 >
-Os dados de página não estão mais no contexto do cliente como um componente padrão. Se necessário, você pode adicionar isso editando o contexto do cliente, adicionando o componente **Propriedades de Repositório Genérico** e configurando para definir o **Repositório** como `pagedata`.
+>Os dados de página não estão mais no contexto do cliente como um componente padrão. Se necessário, você pode adicionar isso editando o contexto do cliente, adicionando o componente **Propriedades de Repositório Genérico** e configurando para definir o **Repositório** como `pagedata`.
 
 ## Alterar o perfil do Client Context {#changing-the-client-context-profile}
 

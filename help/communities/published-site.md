@@ -76,7 +76,7 @@ Para proteger o conteúdo do site da comunidade do acesso de usuários anônimos
 
 ## Membro de comunidade confiável {#trusted-community-member}
 
-Esta experiência supõe que Aaron McDonald](/help/communities/tutorials.md#demo-users) recebeu as funções de [gerente e moderador da comunidade](/help/communities/create-site.md#roles). [ Caso contrário, retorne ao ambiente de criação para [modificar as configurações do site](/help/communities/sites-console.md#modifying-site-properties) e selecione Aaron McDonald como gerente e moderador da comunidade.
+Esta experiência supõe que Aaron McDonald[&#128279;](/help/communities/tutorials.md#demo-users) recebeu as funções de [gerente e moderador da comunidade](/help/communities/create-site.md#roles).  Caso contrário, retorne ao ambiente de criação para [modificar as configurações do site](/help/communities/sites-console.md#modifying-site-properties) e selecione Aaron McDonald como gerente e moderador da comunidade.
 
 No canto superior direito, selecione `Log in` e faça logon com nome de usuário (aaron.mcdonald@mailinator.com) e senha (senha). Observe a capacidade de fazer logon com as credenciais do Twitter ou da Facebook.
 

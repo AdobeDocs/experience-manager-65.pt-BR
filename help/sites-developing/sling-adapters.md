@@ -338,7 +338,7 @@ Ainda sem destinos, mas implementa Adaptable e pode ser usado como origem em um 
 
 #### Segurança {#security}
 
-**Autorizável**, **Usuário e **Grupo** adaptam-se a:
+**Autorizável**, **Usuário e &#x200B;** Grupo** adaptam-se a:
 
 | [Nó](https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | Retorna o nó inicial do usuário/grupo. |
 |---|---|

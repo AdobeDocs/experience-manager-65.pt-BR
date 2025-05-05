@@ -174,7 +174,7 @@ Os descendentes da página herdam a associação com a estrutura. Por exemplo, a
 
 1. No console **Sites**, selecione a página que deseja configurar com rastreamento.
 1. Abra as **[Propriedades da Página](/help/sites-authoring/editing-page-properties.md)**, diretamente do console ou do editor de páginas.
-1. Abra a guia ** Cloud Service**.
+1. Abra a guia **&#x200B; Cloud Service**.
 
 1. Use o menu suspenso **Adicionar configuração** para selecionar **Adobe Analytics** entre as opções disponíveis. Se a herança for colocada, desative-a antes que o seletor fique disponível.
 

@@ -27,7 +27,7 @@ Amostras e exemplos neste documento ajudam você a entender e usar os Serviços 
 
 ## Pré-requisitos {#prerequisite}
 
-* [](/help/forms/using/install-configure-document-services.md)
+* [&#128279;](/help/forms/using/install-configure-document-services.md)
 
 * Baixe e configure o [AEM Forms Client SDK](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) com o projeto AEM maven. As classes de cliente necessárias para compilar Projetos Maven usando Serviços de documento AEM estão disponíveis no [AEM Forms Client SDK](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)
 
@@ -1394,7 +1394,7 @@ A chave pública é armazenada no certificado do usuário que deve estar dispon�
 
 >[!NOTE]
 >
->*[](https://en.wikipedia.org/wiki/CAdES_%28computing%29)*
+>*[&#128279;](https://en.wikipedia.org/wiki/CAdES_%28computing%29)*
 
 **Documentos de PDF de Certificação**
 

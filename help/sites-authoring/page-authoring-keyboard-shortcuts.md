@@ -42,13 +42,13 @@ Vários atalhos de teclado estão disponíveis em todo o AEM. Alguns são aplic�
 
 >[!NOTE]
 >
->&amp;ast; Assim que o usuário começa a interagir com a página no Modo de visualização, o atalho `Ctrl-Shift-m` não fica mais disponível. O usuário deve clicar na barra superior do editor ou voltar para o modo Editar para que o atalho fique disponível novamente.
+>&ast; Assim que o usuário começa a interagir com a página no Modo de visualização, o atalho `Ctrl-Shift-m` não fica mais disponível. O usuário deve clicar na barra superior do editor ou voltar para o modo Editar para que o atalho fique disponível novamente.
 
 Vários atalhos de teclado também estão disponíveis para os usuários de desktop ao usar os [consoles](/help/sites-authoring/keyboard-shortcuts.md).
 
 >[!NOTE]
 >
-Os atalhos de teclado do editor ficam sempre ativos, independentemente se os [atalhos do console tenham sido desativados](/help/sites-authoring/keyboard-shortcuts.md#deactivating-keyboard-shortcuts).
+>Os atalhos de teclado do editor ficam sempre ativos, independentemente se os [atalhos do console tenham sido desativados](/help/sites-authoring/keyboard-shortcuts.md#deactivating-keyboard-shortcuts).
 
 ## Teclas modificadoras específicas do sistema operacional {#os-specific-modifier-keys}
 

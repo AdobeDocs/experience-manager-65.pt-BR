@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # Integração com o Adobe Sign | Manuseio de dados do usuário {#integration-with-adobe-sign-handling-user-data}
 
-[!DNL AEM Forms] integra-se com [!DNL  Adobe Sign] para habilitar fluxos de trabalho de assinatura eletrônica em formulários adaptáveis para processar formulários ou contratos para fluxos de trabalho jurídicos, de vendas, de folha de pagamento e de gerenciamento de recursos humanos. Ele permite assinar formulários com um único usuário e vários usuários, fluxos de trabalho de assinatura sequenciais e simultâneas, assinar formulários como um usuário anônimo ou conectado e várias maneiras de autenticar usuários.
+[!DNL AEM Forms] integra-se com [!DNL &#x200B; Adobe Sign] para habilitar fluxos de trabalho de assinatura eletrônica em formulários adaptáveis para processar formulários ou contratos para fluxos de trabalho jurídicos, de vendas, de folha de pagamento e de gerenciamento de recursos humanos. Ele permite assinar formulários com um único usuário e vários usuários, fluxos de trabalho de assinatura sequenciais e simultâneas, assinar formulários como um usuário anônimo ou conectado e várias maneiras de autenticar usuários.
 
 Quando um signatário ou vários signatários assinam e enviam um formulário adaptável, é gerado um contrato [!DNL Adobe Sign] que inclui informações sobre os signatários.
 

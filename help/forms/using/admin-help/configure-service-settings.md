@@ -74,11 +74,11 @@ As configurações a seguir estão disponíveis para o serviço de formulários 
 
 O serviço Bridge de Migração Central ( `CentralMigrationBridge`) invoca um subconjunto da funcionalidade Adobe Central Pro Output Server (Central), que inclui os comandos JFMERGE, JFTRANS e XMLIMPORT. As operações do serviço Bridge de migração central permitem reutilizar os seguintes ativos centrais em formulários AEM:
 
-* design do modelo (&amp;ast;.ifd)
-* modelos de saída (&amp;ast;.mdf)
-* arquivos de dados (&amp;ast;.dat)
-* arquivos preâmbulo (&amp;ast;.pre)
-* arquivos de definição de dados (&amp;ast;.tdf)
+* design do modelo (&ast;.ifd)
+* modelos de saída (&ast;.mdf)
+* arquivos de dados (&ast;.dat)
+* arquivos preâmbulo (&ast;.pre)
+* arquivos de definição de dados (&ast;.tdf)
 
 A configuração a seguir está disponível para o serviço Central Migration Bridge.
 

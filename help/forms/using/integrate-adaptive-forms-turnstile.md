@@ -59,8 +59,10 @@ Para integrar o AEM Forms ao serviço de Borboleta, execute as seguintes etapas:
 
 1. Configurar os Cloud Service:
    1. Na instância do autor do AEM, vá para ![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Service]** e clique em **[!UICONTROL Turnstile]**.
+
       ![Borboleta em Cloud Service](assets/turnstile-in-ui.png)
    1. Selecione um Contêiner de configuração, criado ou atualizado, conforme descrito na seção anterior. Clique em **[!UICONTROL Criar]**.
+
       ![Estrutura de configuração](assets/config-hcaptcha.png)
    1. Especifique **[!UICONTROL Tipo de Widget]** como gerenciado, não interativo ou invisível.
    1. Forneça outros detalhes, como **[!UICONTROL Título]**, **[!UICONTROL Nome]**.
@@ -97,6 +99,7 @@ Para integrar o AEM Forms ao serviço de Borboleta, execute as seguintes etapas:
    * **[!UICONTROL Mensagem de Validação]:** Forneça uma mensagem de validação para validar o Captcha no envio do formulário ou em uma ação do usuário.
    * **[!UICONTROL Serviço de Captcha]:** Selecione o Serviço de CAPTCHA para envio de formulário e selecione Turnstile®.
    * **[!UICONTROL Configurações]:** selecione a Configuração na Nuvem definida para Turnstile®.
+
      >[!NOTE]
      >Você pode ter várias configurações de nuvem no seu ambiente para uma finalidade semelhante. Então, escolha o serviço com cuidado. Se nenhum serviço estiver listado, consulte [Conectar seu ambiente do AEM Forms com o Turnstile](#connect-your-forms-environment-with-turnstile-service) para saber como criar um Cloud Service que conecta seu ambiente do AEM Forms com o serviço Turnstile.
 

@@ -395,7 +395,7 @@ Por padrão, o Experience Manager pesquisa a pasta selecionada e todas as subpas
 >* Na interface clássica, você também pode procurar por **Flash** e **FXG**. Não há suporte para a filtragem desses dois termos na interface otimizada para toque.
 >
 >* Ao pesquisar vídeos, você pesquisa uma única representação. Os resultados retornam a representação original (somente &#42;.mp4) e a representação codificada.
-* Ao pesquisar um conjunto de vídeos adaptáveis, você está pesquisando a pasta e todas as subpastas, mas somente se tiver adicionado uma palavra-chave à pesquisa. Se você não tiver adicionado uma palavra-chave, o Experience Manager não pesquisará nas subpastas.
+>* Ao pesquisar um conjunto de vídeos adaptáveis, você está pesquisando a pasta e todas as subpastas, mas somente se tiver adicionado uma palavra-chave à pesquisa. Se você não tiver adicionado uma palavra-chave, o Experience Manager não pesquisará nas subpastas.
 >
 
 **Status do Publish** - Você pode filtrar por ativos com base no status da publicação: Não publicado ou Publicado. Se você não selecionar nenhum Status do Publish, o Experience Manager, por padrão, pesquisará todos os status de publicação.

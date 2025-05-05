@@ -27,7 +27,7 @@ Você pode fazer upload, pré-visualizar e enviar anexos com formulários HTML5.
    | multiSelect | verdadeiro ou falso (verdadeiro por padrão) |
    | fileSizeLimit | Número em MBs (2 MB por padrão). Por exemplo, 5. |
    | buttonText | Texto do botão para a janela pop-up (&quot;Anexar&quot; por padrão) |
-   | Aceitar | lista separada por vírgulas de tipos de arquivos a serem aceitos (&quot;audio/&amp;ast;, video/&amp;ast;, image/&amp;ast;, text/&amp;ast;, .pdf&quot; por padrão) |
+   | Aceitar | lista separada por vírgulas de tipos de arquivos a serem aceitos (&quot;audio/&ast;, video/&ast;, image/&ast;, text/&ast;, .pdf&quot; por padrão) |
 
    Por exemplo:
 

@@ -479,7 +479,7 @@ Alguns estilos se aplicam a apenas um componente específico. Esses componentes 
 9. Vá para a pasta `clientlibs` recém-criada e adicione as propriedades `allowProxy` e `categories`.
 10. Navegue até `/apps/[fontslibrary]/[customlibrary(clientlibrary)]` e crie uma pasta css.
 11. Vá para a pasta CSS criada e crie um arquivo. Por exemplo, crie um arquivo como `fonts.css` e cole o código incorporado junto com a URL.
-   ![Estrutura de pastas](/help/forms/using/assets/fonts-add-in-crxde.png)
+    ![Estrutura de pastas](/help/forms/using/assets/fonts-add-in-crxde.png)
 12. Salve as alterações.
 
 >[!NOTE]

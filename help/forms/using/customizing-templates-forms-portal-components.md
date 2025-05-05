@@ -88,11 +88,11 @@ O Forms Portal fornece uma sintaxe para que os marcadores de posição exibam me
 
 Para incluir uma entrada repetível, configure o valor do atributo **data-Repeatable** para **true**.
 
-*No exemplo discutido, dois elementos Div estão presentes na parte superior do modelo personalizado. O primeiro, com a classe CSS &quot;__FP_boxes-container&quot;, funciona como um elemento de contêiner para os formulários listados. O segundo, com a classe CSS &quot;__FP_boxes&quot;, é um modelo para as entidades básicas, neste caso um Formulário. O atributo **data-Repeable**presente no elemento Div tem o valor **true**.*
+*No exemplo discutido, dois elementos Div estão presentes na parte superior do modelo personalizado. O primeiro, com a classe CSS &quot;__FP_boxes-container&quot;, funciona como um elemento de contêiner para os formulários listados. O segundo, com a classe CSS &quot;__FP_boxes&quot;, é um modelo para as entidades básicas, neste caso um Formulário. O atributo **data-Repeable**&#x200B;presente no elemento Div tem o valor **true**.*
 
 Cada espaço reservado tem um conjunto exclusivo de metadados prontos para uso. Para exibir metadados personalizados em um local específico do formulário, adicione a propriedade **${metadata_prop}** no local.
 
-*No exemplo, a propriedade de metadados é usada em várias instâncias. Por exemplo, ele é usado na **descrição**,**nome**,**formUrl**,**htmlStyle**,**pdfUrl**,**pdfStyle**e **caminho**da maneira prescrita.*
+*No exemplo, a propriedade de metadados é usada em várias instâncias. Por exemplo, ele é usado na **descrição**,**nome**,**formUrl**,**htmlStyle**,**pdfUrl**,**pdfStyle**&#x200B;e **caminho**&#x200B;da maneira prescrita.*
 
 ## Metadados prontos para uso {#out-of-the-box-metadata}
 

@@ -49,6 +49,7 @@ Para instalar o conector, siga estas etapas:
 1. Crie `wf-workfront-users` no Grupo de Usuários [!DNL Experience Manager] e atribua a permissão `jcr:all` a `/content/dam`.
 1. Adicione uma propriedade personalizada à definição de índice pronta para uso para **`ntFolderDamLucene(/oak:index/ntFolderDamLucene)`**. Execute as etapas abaixo:
    * Adicionar uma propriedade **`nt:unstructured`** chamada **`wfReferenceNumber`** a:
+
      `/oak:index/ntFolderDamLucene/indexRules/nt:folder/properties/wfReferenceNumber`.
    * Reindexe o `index /oak:index/ntFolderDamLucene` invertendo o sinalizador de reindexação para `true`.
 

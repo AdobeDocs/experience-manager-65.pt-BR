@@ -169,7 +169,7 @@ Se um usuário sem os formulários AEM e as permissões do CQ necessários tenta
 * Solução de gerenciamento de correspondência
 * AEM Forms Workspace
 
-  ***observação **: o Flex Workspace foi descontinuado para a versão de formulários AEM.*
+  ***observação &#x200B;**: o Flex Workspace foi descontinuado para a versão de formulários AEM.*
 
 * gerenciador de formulários
 * Relatório de processo

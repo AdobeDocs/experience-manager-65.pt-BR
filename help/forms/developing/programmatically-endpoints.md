@@ -331,7 +331,7 @@ A lista a seguir especifica os valores de configuração que são definidos quan
 * **userName**: o nome de usuário usado ao invocar um serviço de destino da Pasta monitorada. Esse valor é obrigatório. O valor padrão é SuperAdmin.
 * **domainName**: o domínio do usuário. Esse valor é obrigatório. O valor padrão é DefaultDom.
 * **batchSize**: o número de arquivos ou pastas a serem selecionados por verificação. Use esse valor para evitar uma sobrecarga no sistema; a varredura de muitos arquivos de uma vez pode resultar em falha. O valor padrão é 2.
-* **waitTime**: o tempo, em milissegundos, de espera antes de verificar uma pasta ou um arquivo após a criação. Por exemplo, se o tempo de espera for de 36.000.000 milissegundos (uma hora) e o arquivo tiver sido criado há um minuto, esse arquivo será selecionado após 59 minutos ou mais. Esse atributo é útil para garantir que um arquivo ou pasta seja copiado completamente para a pasta de entrada. Por exemplo, se você tiver um arquivo grande para processar e o download demorar dez minutos, defina o tempo de espera como 10&amp;ast;60 &amp;ast;1000 milissegundos. Essa configuração impede que a pasta monitorada verifique o arquivo se ele não estiver aguardando dez minutos. O valor padrão é 0.
+* **waitTime**: o tempo, em milissegundos, de espera antes de verificar uma pasta ou um arquivo após a criação. Por exemplo, se o tempo de espera for de 36.000.000 milissegundos (uma hora) e o arquivo tiver sido criado há um minuto, esse arquivo será selecionado após 59 minutos ou mais. Esse atributo é útil para garantir que um arquivo ou pasta seja copiado completamente para a pasta de entrada. Por exemplo, se você tiver um arquivo grande para processar e o download demorar dez minutos, defina o tempo de espera como 10&ast;60 &ast;1000 milissegundos. Essa configuração impede que a pasta monitorada verifique o arquivo se ele não estiver aguardando dez minutos. O valor padrão é 0.
 * **excludeFilePattern**: o padrão usado por uma pasta monitorada para determinar quais arquivos e pastas serão verificados e selecionados. Qualquer arquivo ou pasta que tenha esse padrão não será examinado para processamento. Essa configuração é útil quando a entrada é uma pasta que contém vários arquivos. O conteúdo da pasta pode ser copiado para uma pasta que tenha um nome que será selecionado pela pasta monitorada. Esta etapa impede que a pasta monitorada selecione uma pasta para processamento antes que ela seja completamente copiada para a pasta de entrada. Por exemplo, se o valor excludeFilePattern for `data*`, todos os arquivos e pastas que correspondam a `data*` não serão selecionados. Isso inclui arquivos e pastas chamados `data1`, `data2` e assim por diante. Além disso, o padrão pode ser complementado com padrões curingas para especificar padrões de arquivo. A pasta monitorada modifica a expressão regular para oferecer suporte a padrões curingas como `*.*` e `*.pdf`. Esses padrões curingas não são suportados por expressões regulares.
 * **includeFilePattern**: o padrão que a pasta monitorada usa para determinar quais pastas e arquivos examinar e coletar. Por exemplo, se o valor for `*`, todos os arquivos e pastas que corresponderem a `input*` serão selecionados. Isso inclui arquivos e pastas chamados `input1`, `input2` e assim por diante. O valor padrão é `*`. Esse valor indica todos os arquivos e pastas. Além disso, o padrão pode ser complementado com padrões curingas para especificar padrões de arquivo. A pasta monitorada modifica a expressão regular para oferecer suporte a padrões curingas como `*.*` e `*.pdf`. Esses padrões curingas não são suportados por expressões regulares. Esse valor é obrigatório.
 * **resultFolderName**: A pasta onde os resultados salvos são armazenados. Esse local pode ser um caminho de diretório absoluto ou relativo. Se os resultados não aparecerem nessa pasta, verifique a pasta de falha. Arquivos somente leitura não são processados e serão salvos na pasta de falha. O valor padrão é `result/%Y/%M/%D/`. Esta é a pasta de resultados dentro da pasta monitorada.
@@ -429,7 +429,7 @@ Adicione um endpoint de Pasta monitorada usando a API Java do AEM Forms:
    * Um valor de string que especifica o nome do parâmetro de entrada. Por exemplo, o nome do parâmetro de entrada para o serviço EncryptDocument é `InDoc`.
    * Um valor de string que especifica o tipo de dados do parâmetro de entrada. Por exemplo, o tipo de dados do parâmetro de entrada `InDoc` é `com.adobe.idp.Document`.
    * Um valor de string que especifica o tipo de mapeamento. Por exemplo, você pode especificar `variable`.
-   * Um valor de string que especifica o valor do tipo de mapeamento. Por exemplo, você pode especificar &amp;ast;.pdf como o padrão do arquivo.
+   * Um valor de string que especifica o valor do tipo de mapeamento. Por exemplo, você pode especificar &ast;.pdf como o padrão do arquivo.
 
    >[!NOTE]
    >
@@ -566,7 +566,7 @@ Os seguintes valores de configuração são definidos ao adicionar programaticam
 * **userName**: o nome de usuário usado ao invocar um serviço de destino do email. O valor padrão é `SuperAdmin`.
 * **domainName**: um valor de configuração obrigatório. O valor padrão é `DefaultDom`.
 * **domainPattern**: especifica os padrões de domínio de emails de entrada que o provedor aceita. Por exemplo, se `adobe.com` for usado, somente o email do adobe.com será processado, o email de outros domínios será ignorado.
-* **filePattern**: especifica os padrões de anexo de arquivo de entrada que o provedor aceita. Isso inclui arquivos que têm extensões de nome de arquivo específicas (&amp;ast;.dat, &amp;ast;.xml), arquivos que têm nomes específicos (dados) e arquivos que têm expressões compostas no nome e na extensão (&amp;ast;.[dD][aA]&#39;port&#39;). O valor padrão é `*`.
+* **filePattern**: especifica os padrões de anexo de arquivo de entrada que o provedor aceita. Isso inclui arquivos que têm extensões de nome de arquivo específicas (&ast;.dat, &ast;.xml), arquivos que têm nomes específicos (dados) e arquivos que têm expressões compostas no nome e na extensão (&ast;.[dD][aA]&#39;port&#39;). O valor padrão é `*`.
 * **recipientSuccessfulJob**: um endereço de email para o qual as mensagens são enviadas para indicar trabalhos bem-sucedidos. Por padrão, uma mensagem de tarefa bem-sucedida é sempre enviada ao remetente. Se você digitar `sender`, os resultados do email serão enviados ao remetente. Até 100 recipients são suportados. Especifique recipients adicionais com endereços de email, cada um separado por vírgula. Para desativar essa opção, deixe esse valor em branco. Em alguns casos, você pode acionar um processo e não quiser uma notificação por email sobre o resultado. O valor padrão é `sender`.
 * **recipientFailedJob**: um endereço de email para o qual as mensagens são enviadas para indicar trabalhos com falha. Por padrão, uma mensagem de tarefa com falha é sempre enviada ao remetente. Se você digitar `sender`, os resultados do email serão enviados ao remetente. Até 100 recipients são suportados. Especifique recipients adicionais com endereços de email, cada um separado por vírgula. Para desativar essa opção, deixe esse valor em branco. O valor padrão é `sender`.
 * **inboxHost**: o nome do host da caixa de entrada ou o endereço IP do provedor de email a ser verificado.
@@ -674,7 +674,7 @@ Adicionar um endpoint de email usando a API Java:
    * Um valor de string que especifica o nome do parâmetro de entrada. Por exemplo, o nome do parâmetro de entrada para o serviço EncryptDocument é `InDoc`.
    * Um valor de string que especifica o tipo de dados do parâmetro de entrada. Por exemplo, o tipo de dados do parâmetro de entrada `InDoc` é `com.adobe.idp.Document`.
    * Um valor de string que especifica o tipo de mapeamento. Por exemplo, você pode especificar `variable`.
-   * Um valor de string que especifica o valor do tipo de mapeamento. Por exemplo, você pode especificar &amp;ast;.pdf como o padrão do arquivo.
+   * Um valor de string que especifica o valor do tipo de mapeamento. Por exemplo, você pode especificar &ast;.pdf como o padrão do arquivo.
 
    >[!NOTE]
    >
@@ -801,7 +801,7 @@ Para criar um ponto de extremidade de Comunicação Remota para um serviço, esp
 * **Descrição**: especifica a descrição do ponto de extremidade.
 * **Nome**: especifica o nome do ponto de extremidade.
 * **Valor do identificador de serviço**: especifica o serviço ao qual o ponto de extremidade pertence. Por exemplo, para adicionar um ponto de extremidade de Comunicação Remota ao processo introduzido nesta seção (um processo se torna um serviço quando é ativado no Workbench), especifique `EncryptDocument`.
-* **Nome da operação**: especifica o nome da operação que é invocada usando o ponto de extremidade. Ao criar um ponto de extremidade de Comunicação Remota, especifique um caractere curinga (&amp;ast;).
+* **Nome da operação**: especifica o nome da operação que é invocada usando o ponto de extremidade. Ao criar um ponto de extremidade de Comunicação Remota, especifique um caractere curinga (&ast;).
 
 **Criar um ponto de extremidade de Comunicação Remota**
 
@@ -839,7 +839,7 @@ Adicionar um endpoint de Comunicação Remota usando a API Java:
    * Especifique a descrição do ponto de extremidade invocando o método `setDescription` do objeto `CreateEndpointInfo` e transmitindo um valor de cadeia de caracteres que descreve o ponto de extremidade.
    * Especifique o nome do ponto de extremidade invocando o método `setName` do objeto `CreateEndpointInfo` e transmitindo um valor de cadeia de caracteres que especifique o nome.
    * Especifique o serviço ao qual o ponto de extremidade pertence, chamando o método `setServiceId` do objeto `CreateEndpointInfo` e transmitindo um valor de cadeia de caracteres que especifica o nome do serviço.
-   * Especifique a operação que é invocada pelo método `setOperationName` do objeto `CreateEndpointInfo` e transmitindo um valor de cadeia de caracteres que especifica o nome da operação. Para um ponto de extremidade de Comunicação Remota, especifique um caractere curinga (&amp;ast;).
+   * Especifique a operação que é invocada pelo método `setOperationName` do objeto `CreateEndpointInfo` e transmitindo um valor de cadeia de caracteres que especifica o nome da operação. Para um ponto de extremidade de Comunicação Remota, especifique um caractere curinga (&ast;).
 
 1. Criar um ponto de extremidade de Comunicação Remota.
 

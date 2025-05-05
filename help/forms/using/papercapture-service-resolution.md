@@ -32,8 +32,10 @@ Esta solução aplica-se a:
 1. Extraia e copie o conteúdo da pasta baixada.
 1. Navegue até os caminhos abaixo para os servidores de aplicativos correspondentes:
    * **jboss**:
+
      `..\Adobe\Adobe_Experience_Manager_Forms\jboss\standalone\svcnative\PaperCaptureSvc`
    * **weblogic**:
+
      `..\Adobe\Adobe_Experience_Manager_Forms\crx-repository\bedrock\svcnative\PaperCaptureSvc`
    * **websphere**:\
      `..\Adobe\Adobe_Experience_Manager_Forms\crx-repository\bedrock\svcnative\PaperCaptureSvc`

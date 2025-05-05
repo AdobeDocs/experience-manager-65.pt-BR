@@ -174,7 +174,7 @@ Um pacote de workflow:
      Esta propriedade do inicializador é uma lista de itens separados por vírgulas: &quot;
 
       * `property-name` ignorar qualquer evento `jcr` disparado no nome de propriedade especificado. &quot;
-      * `event-user-data:<*someValue*>` ignora qualquer evento que contenha `*<someValue*`> `user-data` definido por meio da API [`ObservationManager` ](https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String).
+      * `event-user-data:<*someValue*>` ignora qualquer evento que contenha `*<someValue*`> `user-data` definido por meio da API [`ObservationManager` ] (https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String).
 
      Por exemplo:
 

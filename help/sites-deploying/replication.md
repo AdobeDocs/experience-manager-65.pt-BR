@@ -433,6 +433,7 @@ Para configurar a replicação de conteúdo para uma instância adicional do Pub
    * Na guia **Transporte**:
 
       * Insira o URI necessário para a nova instância do Publish; por exemplo,
+
         `https://localhost:4504/bin/receive`.
 
       * Insira a conta de usuário específica do site usada para replicação.
@@ -476,6 +477,7 @@ Os agentes padrão estão incluídos na instalação. No entanto, uma determinad
    * Na guia **Transporte**:
 
       * Insira o URI necessário para a nova instância do Publish; por exemplo,
+
         `https://localhost:80/dispatcher/invalidate.cache`.
 
       * Insira a conta de usuário específica do site usada para replicação.

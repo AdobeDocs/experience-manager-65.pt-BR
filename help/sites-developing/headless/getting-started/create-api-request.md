@@ -37,6 +37,7 @@ Os arquitetos da informação devem projetar consultas para seus endpoints de ca
    * O painel esquerdo permite criar a consulta.
    * O painel direito exibe os resultados.
    * O Editor de consultas tem recursos de autocompletar código e teclas de atalho para executar a consulta com facilidade.
+
      ![Editor do GraphiQL](assets/graphiql.png)
 
 1. Supondo que o modelo criado era chamado `person` com os campos `firstName`, `lastName` e `position`, podemos criar uma consulta simples para recuperar o conteúdo do Fragmento de conteúdo.
@@ -67,6 +68,7 @@ Os arquitetos da informação devem projetar consultas para seus endpoints de ca
    * **Documentação** na parte superior direita da página para mostrar a documentação contextual para ajudá-lo a criar suas consultas que se adaptam aos seus próprios modelos.
    * **Histórico** na barra de ferramentas superior para mostrar consultas anteriores.
    * **Salvar como** e **Salvar** para salvar suas consultas. Depois disso, você poderá listá-las e recuperá-las do painel **Consultas Persistentes** e do **Publish**.
+
      ![Documentação do GraphiQL](assets/graphiql-documentation.png)
 
 O GraphQL permite consultas estruturadas que podem direcionar não apenas conjuntos de dados específicos ou objetos de dados individuais, mas também fornecer elementos específicos dos objetos, resultados aninhados, oferecer suporte para variáveis de consulta e muito mais.
