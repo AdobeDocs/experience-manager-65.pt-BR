@@ -92,7 +92,7 @@ Na guia **Configurações**, especifique se deseja permitir a aplicação de mar
 
 * **Tamanho máx. do arquivo de imagem a ser anexado**
 
-  Relevante somente se Permitir uploads de arquivo estiver marcado. Número máximo de bytes que um arquivo de imagem carregado pode ter. O padrão é 2097152 **&#x200B; ** (2 Mb).
+  Relevante somente se Permitir uploads de arquivo estiver marcado. Número máximo de bytes que um arquivo de imagem carregado pode ter. O padrão é 2097152 **&#x200B; &#x200B;** (2 Mb).
 
 * **Tipos de imagem de capa permitidos**
 
