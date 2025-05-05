@@ -19,19 +19,19 @@ Saiba como os profissionais de marketing podem enriquecer dados de produtos com 
 
 ## Ativos digitais
 
->[!VIDEO](https://video.tv.adobe.com/v/339121/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3447314/?quality=12&learn=on&captions=por_br)
 
 Os ativos digitais podem ser associados a uma ou mais SKUs do produto. Depois de associado, o ativo digital pode ser descoberto com pesquisas por palavras-chave com base no SKU. O ativo também aparecerá automaticamente como conteúdo associado ao editar uma página que inclui o produto relevante, facilitando ainda mais a criação da próxima experiência digital
 
 ## Fragmentos de experiência
 
->[!VIDEO](https://video.tv.adobe.com/v/333205/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343341/?quality=12&learn=on&captions=por_br)
 
 Os Fragmentos de experiência são um recurso do Adobe Experience Manager que permite ao profissional de marketing criar conteúdo **não estruturado** reutilizável. Os Fragmentos de experiência podem ser associados a uma SKU de produto ou ID de catálogo. Depois de associados, os profissionais de marketing podem descobrir facilmente fragmentos relacionados com base em produtos exibidos em uma página. Os Fragmentos de experiência também podem ser incluídos dinamicamente em uma página de catálogo de produtos por meio do uso de um espaço reservado e uma associação.
 
 ## Fragmentos de conteúdo
 
->[!VIDEO](https://video.tv.adobe.com/v/339182/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3452162/?quality=12&learn=on&captions=por_br)
 
 Os fragmentos de conteúdo são um recurso do Adobe Experience Manager que permite ao profissional de marketing criar conteúdo **estruturado** reutilizável. Os fragmentos de conteúdo podem ser associados a uma SKU do produto ou ID do catálogo. Depois de associados, os profissionais de marketing podem descobrir facilmente fragmentos relacionados com base em produtos exibidos em uma página. Os fragmentos de conteúdo também podem ser incluídos dinamicamente em uma página de catálogo de produtos por meio do uso de um espaço reservado e uma associação.
 

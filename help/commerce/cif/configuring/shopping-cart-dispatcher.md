@@ -13,7 +13,7 @@ ht-degree: 68%
 
 Os [Componentes principais da CIF do AEM](https://github.com/adobe/aem-core-cif-components) vêm com um [carrinho de compras](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/minicart/v1/minicart) pronto para uso que renderiza um carrinho e um formulário de check-out. O carrinho de compras exige uma configuração de roteamento do [AEM Dispatcher com GraphQL](https://github.com/adobe/aem-core-cif-components/blob/master/dispatcher). O vídeo a seguir detalha uma configuração local e uma configuração usando uma imagem Docker.
 
->[!VIDEO](https://video.tv.adobe.com/v/29656/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/32907/?quality=12&captions=por_br)
 
 Você pode encontrar mais informações sobre esse tópico nos seguintes recursos:
 

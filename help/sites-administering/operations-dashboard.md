@@ -660,7 +660,7 @@ O **Painel de Visão Geral do Sistema** exibe uma visão geral de alto nível da
 
 >[!NOTE]
 >
->Você também pode [assistir a este vídeo](https://video.tv.adobe.com/v/21340) para obter uma introdução ao Painel de Visão Geral do Sistema.
+>Você também pode [assistir a este vídeo](https://video.tv.adobe.com/v/35618?captions=por_br) para obter uma introdução ao Painel de Visão Geral do Sistema.
 
 ### Como Acessar {#how-to-access}
 

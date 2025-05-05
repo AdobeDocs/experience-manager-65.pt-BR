@@ -34,7 +34,7 @@ O AEM Forms 6.5 é compatível com as seguintes soluções CAPTCHA:
 
 O Captcha de torniquete da Cloudflare é uma medida de segurança que visa proteger formulários e sites contra bots automatizados, ataques mal-intencionados, spams e tráfego automatizado indesejado. Ele apresenta uma caixa de seleção no envio do formulário para verificar se ele é humano, antes de permitir que ele envie o formulário.
 
->[!VIDEO](https://video.tv.adobe.com/v/3440940/)
+>[!VIDEO](https://video.tv.adobe.com/v/3440945?captions=por_br)
 
 ### Pré-requisitos para integrar o ambiente do AEM Forms com o Captcha giratório {#prerequisite}
 

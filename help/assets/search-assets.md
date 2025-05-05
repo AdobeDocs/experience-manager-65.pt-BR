@@ -126,7 +126,7 @@ Você pode melhorar a relevância de palavras-chave para ativos específicos par
 
 Você pode usar isso a seu favor aumentando a classificação de alguns ativos nos resultados da pesquisa para a palavra-chave direcionada. Veja o vídeo de exemplo abaixo. Para obter informações detalhadas, consulte [pesquisar em [!DNL Experience Manager]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html?lang=pt-BR).
 
->[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6)
+>[!VIDEO](https://video.tv.adobe.com/v/3418848/?quality=6&captions=por_br)
 
 *Vídeo: Entenda como os resultados da pesquisa são classificados e como a classificação pode ser influenciada.*
 
