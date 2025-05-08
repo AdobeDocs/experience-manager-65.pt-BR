@@ -250,7 +250,7 @@ Para obter recomendações sobre como implantar o AEM no Azure ou no AWS, fora d
 
 ### Plataformas Dispatcher (servidores da Web) {#dispatcher-platforms-web-servers}
 
-O Dispatcher é o componente de balanceamento de carga e cache. [Baixe a versão mais recente do Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html). O Experience Manager 6.5 exige a versão 4.3.2 ou superior do Dispatcher.
+O Dispatcher é o componente de balanceamento de carga e cache. [Baixe a versão mais recente do Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html?lang=pt-BR). O Experience Manager 6.5 exige a versão 4.3.2 ou superior do Dispatcher.
 
 Os seguintes servidores da Web são compatíveis para uso com o Dispatcher versão 4.3.2:
 
@@ -462,11 +462,11 @@ Para Windows x86:
    <th><p><strong>Formatos compatíveis com a conversão para o PDF</strong></p> </th>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">faixa clássica do Acrobat 2020</a> versão mais recente</td>
+   <td><a href="https://helpx.adobe.com/br/acrobat/release-note/release-notes-acrobat-reader.html">faixa clássica do Acrobat 2020</a> versão mais recente</td>
    <td>XPS, formatos de imagem (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF e DWF</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">faixa clássica do Acrobat 2017</a> versão mais recente (obsoleta)</td>
+   <td><a href="https://helpx.adobe.com/br/acrobat/release-note/release-notes-acrobat-reader.html">faixa clássica do Acrobat 2017</a> versão mais recente (obsoleta)</td>
    <td>XPS, formatos de imagem (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF e DWF</td>
   </tr>
   <tr>
@@ -514,7 +514,7 @@ Para Windows x86:
 >
 >Além disso,
 >
->* O PDF Generator requer uma versão de 32 bits do [Acrobat 2020 classic track versão 20.004.30006](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) para executar a conversão.
+>* O PDF Generator requer uma versão de 32 bits do [Acrobat 2020 classic track versão 20.004.30006](https://helpx.adobe.com/br/acrobat/release-note/release-notes-acrobat-reader.html) para executar a conversão.
 >* A PDF Generator suporta apenas a versão de 32 bits do Microsoft® Office Professional Plus e outros softwares necessários para a conversão.
 >* A instalação do Microsoft® Office Professional Plus pode usar o licenciamento por volume baseado em Varejo ou MAK/KMS/AD.
 >* Se uma instalação do Microsoft® Office for desativada ou não for licenciada por qualquer motivo, como uma instalação com licença de volume que não consegue localizar um host KMS em um período especificado, as conversões podem falhar até que a instalação seja relicenciada e reativada.
@@ -522,7 +522,7 @@ Para Windows x86:
 >* A PDF Generator não oferece suporte ao Microsoft® Office 365.
 >* As conversões do PDF Generator para OpenOffice são suportadas apenas no Windows e no Linux®.
 >* Os recursos OCR PDF, Otimizar PDF e Export PDF são suportados apenas no Windows.
->* Uma versão do Acrobat é fornecida com o AEM Forms para ativar a funcionalidade do PDF Generator. Acesse programaticamente a versão fornecida somente com o AEM Forms, durante o prazo da licença do AEM Forms, para uso com o AEM Forms PDF Generator. Para obter mais informações, consulte a descrição do produto AEM Forms de acordo com sua implantação ([No local](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) ou [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))
+>* Uma versão do Acrobat é fornecida com o AEM Forms para ativar a funcionalidade do PDF Generator. Acesse programaticamente a versão fornecida somente com o AEM Forms, durante o prazo da licença do AEM Forms, para uso com o AEM Forms PDF Generator. Para obter mais informações, consulte a descrição do produto AEM Forms de acordo com sua implantação ([No local](https://helpx.adobe.com/br/legal/product-descriptions/adobe-experience-manager-on-premise.html) ou [Managed Services](https://helpx.adobe.com/br/legal/product-descriptions/adobe-experience-manager-managed-services.html))
 >* O serviço PDF Generator não oferece suporte ao Microsoft® Windows 10.
 >* Falha da PDF Generator ao converter arquivos usando o Microsoft® Visio 2019.
 >* Falha da PDF Generator ao converter arquivos usando o Microsoft® Project 2019.
