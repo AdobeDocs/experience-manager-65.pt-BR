@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 5dbdce2d8e558e6bf26c6713fd44d58038d38152
+source-git-commit: 6be26e991da6d53f2433991cb9e4919b46c494a8
 workflow-type: tm+mt
-source-wordcount: '3593'
+source-wordcount: '3600'
 ht-degree: 1%
 
 ---
@@ -115,10 +115,10 @@ Existem várias opções para implantar o repositório do Adobe Experience Manag
 | **Plataforma** | **Descrição** | **Nível de Suporte** |
 |---|---|---|
 | **Sistema de arquivos com arquivos TAR** `[1]` | Repositório | A: Suportado |
-| **Sistema de arquivos com Datastore** `[1]` | Binários | R: Suportado |
+| **Sistema de arquivos com Datastore** `[1]` | Binários | A: Suportado |
 | Armazenar binários em arquivos TAR no sistema de arquivos `[1]` | Binários | Z: Não suportado para produção |
-| Amazon S3 | Binários | R: Suportado |
-| Armazenamento do Microsoft® Azure Blob | Binários | A: Suportado |
+| Amazon S3 | Binários | A: Suportado |
+| Armazenamento Microsoft® Azure Blob | Binários | A: Suportado |
 | MongoDB Enterprise 6.0 | Repositório | A: Suportado `[3, 4]` |
 | MongoDB Enterprise 5.0 | Repositório | A: Suportado `[3, 4]` |
 | MongoDB Enterprise 4.4 | Repositório | A: Suportado `[2, 3, 4, 7]` |
@@ -148,9 +148,9 @@ Existem várias opções para implantar o repositório do Adobe Experience Manag
 
 >[!NOTE]
 >
->MongoDB é um programa de software de terceiros e não está incluído no pacote de licenciamento da AEM. Para obter mais informações, consulte o política[&#128279;](https://www.mongodb.com/licensing/server-side-public-license/faq) de licenciamento do MongoDB página.
+>MongoDB é um programa de software de terceiros e não está incluído no pacote de licenciamento da AEM. Para obter mais informações, consulte a página [Política de licenciamento do MongoDB](https://www.mongodb.com/licensing/server-side-public-license/faq).
 >
->Para aproveitar ao máximo seus AEM implantação com o MongoDB, Adobe Systems recomenda o licenciamento da versão MongoDB Enterprise para se beneficiar do suporte profissional. Consulte [Implantações recomendadas](/help/sites-deploying/recommended-deploys.md#prerequisites-and-recommendations-when-deploying-aem-with-mongomk) para obter mais informações.
+>Para aproveitar ao máximo a implantação do AEM com o MongoDB, a Adobe recomenda licenciar a versão MongoDB Enterprise para se beneficiar de suporte profissional. Consulte [Implantações recomendadas](/help/sites-deploying/recommended-deploys.md#prerequisites-and-recommendations-when-deploying-aem-with-mongomk) para obter mais informações.
 >
 >A licença inclui um conjunto de réplicas padrão, que é composto por uma instância primária e duas secundárias que podem ser usadas para as implantações do autor ou de publicação.
 >
@@ -171,9 +171,9 @@ Existem várias opções para implantar o repositório do Adobe Experience Manag
 
 ### Mecanismos de Servlet / Servidores de Aplicativos {#servlet-engines-application-servers}
 
-Adobe Experience Manager podem ser executados como um servidor independente (o arquivo JAR de início rápido) ou como um aplicativo web em um servidor de aplicativo de terceiros (o arquivo WAR).
+O Adobe Experience Manager pode ser executado como um servidor independente (o arquivo JAR de início rápido) ou como um aplicativo da Web em um servidor de aplicativos de terceiros (o arquivo WAR).
 
-A API Servlet mínima Versão necessária é o Servlet 3.1
+A versão mínima da API de Servlet necessária é a 3.1
 
 | Platform | Nível de compatibilidade |
 |---|---|
@@ -200,6 +200,7 @@ O Adobe Experience Manager funciona com as seguintes plataformas de servidor par
 | **Linux®, baseado na distribuição Red Hat®** | A: Suportado `[1]` `[3]` |
 | Linux®, baseado na distribuição Debian incl. Ubuntu | A: Suportado `[1]` `[2]` |
 | Linux®, baseado na distribuição SUSE® | A: Suportado `[1]` |
+| Microsoft® Windows Server 2022 | R: Suporte restrito |
 | Microsoft® Windows Server 2019 `[4]` | R: Suporte restrito para novos contratos `[5]` |
 | Microsoft® Windows Server 2016 `[4]` | R: Suporte restrito para novos contratos `[5]` |
 | Microsoft® Windows Server 2012 R2 | Z: Não suportado |
@@ -207,8 +208,8 @@ O Adobe Experience Manager funciona com as seguintes plataformas de servidor par
 | IBM® AIX® 7.2 | Z: Não suportado |
 
 1. Kernel Linux® 2.6, 3. x, 4. x, 5. x e 6. x inclui derivados da distribuição Red Hat®, incluindo Red Hat® Enterprise Linux®, CentOS, Oracle Linux® e Amazon Linux®. Os recursos complementares da AEM Forms são suportados apenas no CentOS 7, Red Hat® Enterprise Linux® 7, Red Hat® Enterprise Linux® 8 e Red Hat® Enterprise Linux® 9.
-1. O AEM Forms é compatível com o Ubuntu 20.04 LTS.
-1. Distribuição Linux® suportada pela Adobe Managed Services.
+2. O AEM Forms é compatível com o Ubuntu 20.04 LTS.
+3. Distribuição Linux® suportada pela Adobe Managed Services.
 
    >[!NOTE]
    >
@@ -220,15 +221,15 @@ O Adobe Experience Manager funciona com as seguintes plataformas de servidor par
    >* libXau.x86_64 (1.0.8-2.1.el7)
    >* glibc-locale.x86_64 (2.17 ou posterior)
 
-1. As implantações de produção do Microsoft® Windows são suportadas para clientes que estão atualizando para a versão 6.5 e para uso fora da produção. Novas implantações são feitas sob solicitação para o AEM Sites e o Assets.
-1. O AEM Forms é suportado no Microsoft® Windows Server sem as restrições do nível de suporte R.
-1. AEM Forms remoção do suporte ao Microsoft® Windows Server 2016.
+4. As implantações de produção do Microsoft® Windows são suportadas para clientes que estão atualizando para a versão 6.5 e para uso fora da produção. Novas implantações são feitas sob solicitação para o AEM Sites e o Assets.
+5. O AEM Forms é suportado no Microsoft® Windows Server sem as restrições do nível de suporte R.
+6. A AEM Forms removeu o suporte ao Microsoft® Windows Server 2016.
 
 >[!NOTE]
 >
->Se você estiver instalando o AEM Forms 6.5, verifique se instalou a seguinte redistributável do Microsoft® Visual C++ de 32 bits.
+>Se estiver instalando o AEM Forms 6.5, certifique-se de ter instalado o seguinte Microsoft® Visual C++ de 32 bits redistribuível.
 >
->* Redistribuível do Microsoft® Visual C++ 2008
+>* Microsoft® Visual C++ 2008 redistribuível
 >* Microsoft® Visual C++ 2010 redistribuível
 >* Microsoft® Visual C++ 2012 redistribuível
 >* Microsoft® Visual C++ 2013 redistribuível
@@ -249,7 +250,7 @@ Para obter recomendações sobre como implantar o AEM no Azure ou no AWS, fora d
 
 ### Plataformas Dispatcher (servidores da Web) {#dispatcher-platforms-web-servers}
 
-O Dispatcher é o componente de balanceamento de carga e cache. [Baixe a versão mais recente do Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html?lang=pt-BR). O Experience Manager 6.5 exige a versão 4.3.2 ou superior do Dispatcher.
+O Dispatcher é o componente de balanceamento de carga e cache. [Baixe a versão mais recente do Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html). O Experience Manager 6.5 exige a versão 4.3.2 ou superior do Dispatcher.
 
 Os seguintes servidores da Web são compatíveis para uso com o Dispatcher versão 4.3.2:
 
@@ -259,9 +260,9 @@ Os seguintes servidores da Web são compatíveis para uso com o Dispatcher vers�
 | Microsoft® IIS 10 (Servidor de Informações da Internet) | A: Suportado |
 | Microsoft® IIS 8.5 (Servidor de Informações da Internet) | Z: Não suportado |
 
-1. Os servidores web criados com base no código-fonte httpd do Apache têm tanto suporte quanto a versão do httpd na qual se baseia. Em caso de dúvida, solicite Adobe Systems confirmação do nível de suporte relacionado ao respectivo produto de servidor. Os seguintes casos:
+1. Os servidores da Web criados com base no código-fonte Apache httpd têm tanto suporte quanto a versão do httpd na qual se baseia. Em caso de dúvida, peça à Adobe a confirmação do nível de suporte relacionado ao respectivo produto de servidor. Os seguintes casos:
 
-   1. O servidor HTTP foi criado usando somente distribuições oficiais de origem do Apache, ou
+   1. O servidor HTTP foi criado usando apenas distribuições de origem oficiais do Apache, ou
    1. O servidor HTTP foi entregue como parte do sistema operacional no qual está sendo executado. Exemplos: IBM® HTTP Server, Oracle HTTP Server
 
 1. O Dispatcher não está disponível para o Apache 2.4.x para sistemas operacionais Windows.
@@ -314,8 +315,8 @@ A interface do usuário da AEM é otimizada para telas maiores (normalmente note
   </tr>
   <tr>
    <td>Apple Safari no macOS (Evergreen)</td>
-   <td>R: Suportado</td>
-   <td>R: Suportado</td>
+   <td>A: Suportado</td>
+   <td>A: Suportado</td>
   </tr>
   <tr>
    <td>Apple Safari 11.x no macOS</td>
@@ -352,7 +353,7 @@ Ao conectar com o Microsoft® Windows 7+ a uma instância do AEM que não é pro
 
    * HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WebClient\Parameters
 
-1. Adicione a entrada do registro BasicAuthLevel a essa subchapira usando um valor de 2 ou mais.
+1. Adicione a entrada de registro BasicAuthLevel a esta subchave usando um valor de 2 ou mais.
 
 ## Notas adicionais da plataforma {#additional-platform-notes}
 
@@ -362,9 +363,9 @@ Esta seção fornece notas especiais e informações mais detalhadas sobre a exe
 
 Todos os elementos do Adobe Experience Manager (Instância, Dispatcher) podem ser instalados em redes IPv4 e IPv6.
 
-A operação é perfeita, pois nenhuma configuração especial é necessária. Você especifica um endereço IP usando o formato apropriado ao seu tipo de rede, se necessário.
+A operação é contínua, pois nenhuma configuração especial é necessária. Se necessário, especifique um endereço IP usando o formato apropriado ao seu tipo de rede.
 
-Quando um endereço IP deve ser especificado, você pode selecionar (conforme necessário) a seguir:
+Quando for necessário especificar um endereço IP, você poderá selecionar (conforme necessário) uma das seguintes opções:
 
 * Um endereço IPv6. Por exemplo, `https://[ab12::34c5:6d7:8e90:1234]:4502`
 
@@ -408,7 +409,7 @@ Se você estiver usando o Dynamic Media no Linux®, os seguintes pré-requisitos
 
 >[!NOTE]
 >
->**Desativando o SELinux:** Imagem veiculação não funciona com SELinux ativado. Essa opção está habilitada por padrão. Para solucionar esse problema, edite o **arquivo /etc/selinux/config** e altere o valor DO SELinux de:
+>**Desabilitar SELinux:** O Servidor de Imagens não funciona com o SELinux ativado. Essa opção está ativada por padrão. Para solucionar esse problema, edite o arquivo **/etc/selinux/config** e altere o valor de SELinux de:
 >
 >`SELINUX=enforcing` **a** `SELINUX=disabled`
 
@@ -422,7 +423,7 @@ Se você estiver usando o Dynamic Media no Linux®, os seguintes pré-requisitos
 
 >[!NOTE]
 >
->**O host nome do servidor deve resolver:** verifique se o host nome do servidor pode ser resolvido em um endereço IP. Se isso não for possível, adicione o nome da host totalmente qualificado e o endereço IP em **/etc/hosts**:
+>**O nome do host do servidor deve resolver:** Verifique se o nome do host do servidor pode ser resolvido como um endereço IP. Se isso não for possível, adicione o nome de host totalmente qualificado e o endereço IP a **/etc/hosts**:
 >
 >`<ip address> <fully qualified hostname>`
 
@@ -448,7 +449,7 @@ Para Windows x86:
 #### macOS {#macos}
 
 * 10.9.x e posterior
-* Suportado somente para fins de avaliação e demonstração
+* Compatível somente com fins de avaliação e demonstração
 
 ### Requisitos para o AEM Forms PDF Generator {#requirements-for-aem-forms-pdf-generator}
 
@@ -461,11 +462,11 @@ Para Windows x86:
    <th><p><strong>Formatos compatíveis com a conversão para o PDF</strong></p> </th>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/br/acrobat/release-note/release-notes-acrobat-reader.html">classic Acrobat 2020 faixa</a> versão mais recente</td>
+   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">faixa clássica do Acrobat 2020</a> versão mais recente</td>
    <td>XPS, formatos de imagem (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF e DWF</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/br/acrobat/release-note/release-notes-acrobat-reader.html">faixa clássica do Acrobat 2017</a> versão mais recente (obsoleta)</td>
+   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">faixa clássica do Acrobat 2017</a> versão mais recente (obsoleta)</td>
    <td>XPS, formatos de imagem (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF e DWF</td>
   </tr>
   <tr>
@@ -513,7 +514,7 @@ Para Windows x86:
 >
 >Além disso,
 >
->* O PDF Generator requer uma versão de 32 bits do [Acrobat 2020 classic track versão 20.004.30006](https://helpx.adobe.com/br/acrobat/release-note/release-notes-acrobat-reader.html) para executar a conversão.
+>* O PDF Generator requer uma versão de 32 bits do [Acrobat 2020 classic track versão 20.004.30006](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) para executar a conversão.
 >* A PDF Generator suporta apenas a versão de 32 bits do Microsoft® Office Professional Plus e outros softwares necessários para a conversão.
 >* A instalação do Microsoft® Office Professional Plus pode usar o licenciamento por volume baseado em Varejo ou MAK/KMS/AD.
 >* Se uma instalação do Microsoft® Office for desativada ou não for licenciada por qualquer motivo, como uma instalação com licença de volume que não consegue localizar um host KMS em um período especificado, as conversões podem falhar até que a instalação seja relicenciada e reativada.
@@ -521,7 +522,7 @@ Para Windows x86:
 >* A PDF Generator não oferece suporte ao Microsoft® Office 365.
 >* As conversões do PDF Generator para OpenOffice são suportadas apenas no Windows e no Linux®.
 >* Os recursos OCR PDF, Otimizar PDF e Export PDF são suportados apenas no Windows.
->* Uma versão do Acrobat é fornecida com o AEM Forms para ativar a funcionalidade do PDF Generator. Acesse programaticamente a versão fornecida somente com o AEM Forms, durante o prazo da licença do AEM Forms, para uso com o AEM Forms PDF Generator. Para obter mais informações, consulte a descrição do produto AEM Forms de acordo com sua implantação ([No local](https://helpx.adobe.com/br/legal/product-descriptions/adobe-experience-manager-on-premise.html) ou [Managed Services](https://helpx.adobe.com/br/legal/product-descriptions/adobe-experience-manager-managed-services.html))
+>* Uma versão do Acrobat é fornecida com o AEM Forms para ativar a funcionalidade do PDF Generator. Acesse programaticamente a versão fornecida somente com o AEM Forms, durante o prazo da licença do AEM Forms, para uso com o AEM Forms PDF Generator. Para obter mais informações, consulte a descrição do produto AEM Forms de acordo com sua implantação ([No local](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) ou [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))
 >* O serviço PDF Generator não oferece suporte ao Microsoft® Windows 10.
 >* Falha da PDF Generator ao converter arquivos usando o Microsoft® Visio 2019.
 >* Falha da PDF Generator ao converter arquivos usando o Microsoft® Project 2019.
@@ -547,7 +548,7 @@ Para Windows x86:
 
 O XMP write-back é compatível e habilitado para as seguintes plataformas e formatos de arquivo:
 
-* **Sistemas operacionais:**
+* **Sistemas Operacionais:**
 
    * Linux® (suporte para aplicativos de 32 e 32 bits em sistemas de 64 bits). Para obter as etapas para instalar bibliotecas de clientes de 32 bits, consulte [Como habilitar a extração e gravação do XMP no Red Hat® Linux® de 64 bits](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html).
 
@@ -558,4 +559,4 @@ O XMP write-back é compatível e habilitado para as seguintes plataformas e for
 
 ### Requisitos para a AEM Assets processar ativos com muitos metadados no Linux® {#assetsonlinux}
 
-O processo XMPFilesProcessor exige que as biblioteca GLIBC_2.14 funcionem. Use um kernel do Linux® que contém GLIBC_2.14, por exemplo, o kernel do Linux® versão 3.1.x. Melhora o desempenho do processamento de ativos que contêm uma grande quantidade de metadados, curtir arquivos PSD. A utilização de uma versão anterior do GLIBC resulta em erros em logs que começam com `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP`.
+O processo XMPFilesProcessor requer a biblioteca GLIBC_2.14 para funcionar. Use um kernel Linux® que contenha GLIBC_2.14, por exemplo, kernel Linux® versão 3.1.x. Ele melhora o desempenho do processamento de ativos que contêm uma grande quantidade de metadados, como arquivos PSD. O uso de uma versão anterior de GLIBC leva a erros em logs que começam com `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP`.
