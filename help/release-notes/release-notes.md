@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: d66d1a535ed4b1b8964139ffc5b110a5b52e32f1
+source-git-commit: 1b2ee697ddde1b9a137a5cb47f0c2a3a1a2724a3
 workflow-type: tm+mt
-source-wordcount: '5315'
+source-wordcount: '5310'
 ht-degree: 1%
 
 ---
@@ -193,11 +193,11 @@ Corrigir marcas inesperadas `<br>` no Editor de Rich Text com modo de colagem de
 
 ### [!DNL Assets]{#assets-6523}
 
-* Os seguintes problemas ocorrem na página Navegação no Local [!DNL AEM] (6.5.22.0) depois de selecionar ![Assets](/help/assets/assets/Smock_Asset_18_N.svg)**[!UICONTROL Assets &#x200B;]**, navegar até a pasta&#x200B;**[!UICONTROL &#x200B; Pesquisar Adobe Stock &#x200B;]**&#x200B;e selecionar uma imagem de estoque:
+* Os seguintes problemas ocorrem na página Navegação no Local [!DNL AEM] (6.5.22.0) depois de selecionar ![Assets](/help/assets/assets/Smock_Asset_18_N.svg)**[!UICONTROL Assets ]**, navegar até a pasta**[!UICONTROL  Pesquisar Adobe Stock ]**e selecionar uma imagem de estoque:
    * A imagem de estoque selecionada não pode ser licenciada e salva porque clicar em **[!UICONTROL Licenciar e salvar]** exibe uma lista suspensa vazia.
    * Selecionar a imagem do Stock ou inserir novamente a URL da página de estoque redireciona para a página inicial [!DNL AEM], impedindo o acesso à imagem do Adobe Stock. (ASSETS-48687)
 * Problemas ao gerenciar pastas se o nome da pasta incluir um `/` em seu nome na página de Navegação no Local [!DNL AEM] (6.5.22.0). (ASSETS-46740)
-* Em [!DNL AEM] 6.5, a página de detalhes do ativo não é carregada da exibição ![Coleção](/help/assets/assets/Smock_Collection_18_N.svg)**[!UICONTROL Coleções &#x200B;]**&#x200B;devido ao alto uso de memória. (ASSETS-46738)
+* Em [!DNL AEM] 6.5, a página de detalhes do ativo não é carregada da exibição ![Coleção](/help/assets/assets/Smock_Collection_18_N.svg)**[!UICONTROL Coleções ]**devido ao alto uso de memória. (ASSETS-46738)
 * Problemas de integração com o serviço [!DNL InDesign] as `Day CQ DAM Mime Type OSGI` identificam incorretamente [!DNL InDesign] arquivos como `x-adobe-indesign` em vez de `x-indesign`. (ASSETS-45953)
 * Vazamento de sessão [!DNL AEM 6.5.21] rastreado até a etapa de fluxo de trabalho predefinida **[!UICONTROL Publicação agendada no Brand Portal]**. (ASSETS-44104)
 * **[!UICONTROL Erros de Falta de Memória (OOM)]** são exibidos em [!DNL AEM] ao processar e publicar imagens. Esse problema ocorreu devido a métodos obsoletos em fluxos de trabalho, como **[!DNL Dam Asset update]** e **[!DNL Dynamic Media: Reprocess assets]**. (ASSETS-43343)
@@ -475,7 +475,7 @@ Os editores preferidos para gerenciar conteúdo headless no AEM agora são:
 <!-- THESE KNOWN ISSUES CARRY OVER EACH RELEASE. THE "PRODUCT UPDATES TEAM" IS SUPPOSED TO VERIFY EACH ISSUE AND LET YOU KNOW IF ANYTHING NEEDS TO BE ADDED, DELETED, OR CHANGED IN THIS LIST. -->
 
 * **Problema com o pacote de scripts JSP no AEM 6.5.21-6.5.23 e AEM 6.5 LTS GA**
-O AEM 6.5.21, 6.5.22, 6.5.23 e o AEM 6.5 LTS GA incluem o pacote `org.apache.sling.scripting.jsp:2.6.0`, que é afetado por um problema conhecido. Normalmente, esse problema é visto em condições de carga alta, quando muitas solicitações simultâneas são processadas pela instância do AEM.
+AEM 6.5.21, 6.5.22, 6.5.23 e AEM 6.5 LTS GA são fornecidos com o pacote `org.apache.sling.scripting.jsp:2.6.0`, que contém um problema conhecido. O problema normalmente ocorre em carga alta quando a instância do AEM lida com muitas solicitações simultâneas.
 
 Quando esse problema ocorrer, uma das seguintes exceções poderá aparecer nos logs de erros junto com referências a `org.apache.sling.scripting.jsp:2.6.0`:
 
@@ -567,7 +567,7 @@ Para garantir a operação correta, você deve adicionar as seguintes propriedad
 
 ### Problema conhecido do AEM Sites {#known-issues-aem-sites-6523}
 
-* A visualização dos fragmentos de conteúdo falha devido à proteção do DoS para uma grande árvore de fragmentos. Consulte o artigo [KB sobre as opções de configuração padrão do GraphQL Query Executor](https://experienceleague.adobe.com/pt-br/docs/experience-cloud-kcs/kbarticles/ka-23945) (SITES-17934)
+* A visualização dos fragmentos de conteúdo falha devido à proteção do DoS para uma grande árvore de fragmentos. Consulte o artigo [KB sobre as opções de configuração padrão do GraphQL Query Executor](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-23945) (SITES-17934)
 
 
 
@@ -637,10 +637,10 @@ Os seguintes documentos de texto listam os pacotes OSGi e os Pacotes de Conteúd
 Esses sites estão disponíveis somente para clientes do. Se você for um cliente do e precisar de acesso, entre em contato com o gerente de conta da Adobe.
 
 * [Download do produto em licensing.adobe.com](https://licensing.adobe.com/)
-* [Contate o Suporte ao Cliente da Adobe](https://experienceleague.adobe.com/pt-br/docs/customer-one/using/home).
+* [Contate o Suporte ao Cliente da Adobe](https://experienceleague.adobe.com/en/docs/customer-one/using/home).
 
 >[!MORELIKETHIS]
 >
 >* [[!DNL Experience Manager] página do produto](https://business.adobe.com/br/products/experience-manager/adobe-experience-manager.html)
->* [[!DNL Experience Manager] Documentação do 6.5](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65)
+>* [[!DNL Experience Manager] Documentação do 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65)
 >* [Inscreva-se para obter atualizações de produto prioritárias da Adobe](https://www.adobe.com/subscription/priority-product-update.html)
