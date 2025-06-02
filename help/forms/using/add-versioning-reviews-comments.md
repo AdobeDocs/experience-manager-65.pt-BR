@@ -1,12 +1,12 @@
 ---
-title: Adicionar versões, comentários e anotações ao formulário adaptável am AEM 6.5.
-description: Use os componentes principais do formulário adaptável AEM 6.5 para adicionar comentários, anotações e versões a um formulário adaptável.
+title: Adicionar versões, comentários e anotações ao formulário adaptável do am AEM 6.5.
+description: Use os componentes principais do formulário adaptável do AEM 6.5 para adicionar comentários, anotações e versões a um formulário adaptável.
 feature: Adaptive Forms, Core Components
 role: User, Developer, Admin
 exl-id: 91e6fca2-60ba-45f1-98c3-7b3fb1d762f5
-source-git-commit: 94a9f4087e36bfe5701ad9aafd4e8446ca643ddf
+source-git-commit: 130d900a9c268362b75ffa947606c7145a1f8c9d
 workflow-type: tm+mt
-source-wordcount: '615'
+source-wordcount: '631'
 ht-degree: 0%
 
 ---
@@ -14,16 +14,20 @@ ht-degree: 0%
 # Controle de versão, revisão e comentário em um Formulário adaptável
 
 <!--
-<span class="preview"> This feature is under the early adopter program. If you’re interested in joining our early access program for this feature, send an email from your official address to aem-forms-ea@adobe.com to request access </span>
+<span class="preview"> This feature is under the early adopter program. If you're interested in joining our early access program for this feature, send an email from your official address to aem-forms-ea@adobe.com to request access </span>
 -->
 
 <span class="preview">Este recurso não está habilitado por padrão. Você pode escrever de seu endereço oficial para aem-forms-ea@adobe.com para solicitar acesso ao recurso.</span>
 
 Os Componentes principais do formulário adaptável permitem que os autores do formulário adicionem versões, comentários e anotações aos formulários. Esses recursos simplificam o desenvolvimento de formulários permitindo que os usuários criem e gerenciem várias versões, colaborem por meio de comentários e adicionem notas a seções de formulário específicas, aprimorando a experiência de criação de formulários.
 
+Assista a este vídeo passo a passo para ver os recursos de controle de versão, comentário e anotação em um Formulário adaptável.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3463265)
+
 ## Pré-requisitos {#prerequisite-versioning}
 
-Para usar os recursos de controle de versão, comentário e anotação em um Formulário adaptável, verifique se os [Componentes principais do formulário adaptável](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components) estão habilitados no ambiente Forms do AEM 6.5.
+Para usar os recursos de controle de versão, comentário e anotação em um Formulário adaptável, verifique se os [Componentes principais do formulário adaptável](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components) estão habilitados no ambiente do Forms do AEM 6.5.
 
 ## Versão do formulário adaptável {#adaptive-form-versioning}
 
