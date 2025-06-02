@@ -10,9 +10,9 @@ feature: Configuring
 exl-id: d9ec7728-84f7-42c8-9c80-e59e029840da
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: eeeb31d81c22f8dace7a170953bf45a709f5ac73
 workflow-type: tm+mt
-source-wordcount: '3034'
+source-wordcount: '3051'
 ht-degree: 0%
 
 ---
@@ -107,7 +107,7 @@ O índice Ordenado é uma extensão do índice Propriedade. No entanto, foi desc
 
 ### Índice de texto completo Lucene {#the-lucene-full-text-index}
 
-Um indexador de texto completo baseado no Apache Lucene está disponível no AEM 6.
+Um indexador de texto completo com base no Apache Lucene está disponível no AEM 6.
 
 Se um índice de texto completo for configurado, todas as consultas que têm uma condição de texto completo usarão o índice de texto completo, independentemente de haver outras condições indexadas e independentemente de haver uma restrição de caminho.
 
@@ -136,7 +136,7 @@ O Índice Lucene tem as seguintes opções de configuração:
 
 ### Compreensão da pesquisa de texto completo {#understanding-fulltext-search}
 
-A documentação desta seção se aplica aos índices Apache Lucene, Elasticsearch e fulltext do PostgreSQL, SQLite e MySQL, por exemplo. O exemplo a seguir é para AEM / Oak / Lucene.
+A documentação desta seção se aplica aos índices Apache Lucene, Elasticsearch e texto completo do PostgreSQL, SQLite e MySQL, por exemplo. O exemplo a seguir é para AEM / Oak / Lucene.
 
 <b>Dados a serem indexados</b>
 
@@ -211,6 +211,10 @@ O único documento encontrado que contém ambos os termos é 200, como no exempl
 | --- | --- | --- |
 
 Quando várias entradas são encontradas, elas são classificadas por pontuação.
+
+>[!NOTE]
+>
+>O mecanismo de pesquisa descrito nesta seção usa a indexação Lucene, não a correspondência parcial como o comando `grep` do Linux.
 
 ### O índice de propriedade Lucene {#the-lucene-property-index}
 
@@ -362,7 +366,7 @@ Para casos como o carregamento de palavras de interrupção em que o conteúdo d
 
 A finalidade do índice Solr é a pesquisa de texto completo, mas ele também pode ser usado para indexar a pesquisa por caminho, restrições de propriedade e restrições de tipo principal. Isso significa que o índice Solr no Oak pode ser usado para qualquer tipo de consulta JCR.
 
-A integração no AEM acontece no nível do repositório, de modo que o Solr é um dos possíveis índices que podem ser usados no Oak, a nova implementação de repositório fornecida com o AEM.
+A integração no AEM acontece no nível do repositório, de modo que Solr é um dos possíveis índices que podem ser usados no Oak, a nova implementação de repositório fornecida com o AEM.
 
 Ele pode ser configurado para funcionar como um servidor remoto com a instância do AEM.
 
@@ -413,7 +417,7 @@ O AEM também pode ser configurado para funcionar com uma instância remota do s
    ```
 
 1. Depois que ambos os fragmentos forem iniciados, teste se tudo está funcionando, conectando-se à interface Solr em `http://localhost:8983/solr/#/`
-1. Iniciar AEM e ir para o Console da Web em `http://localhost:4502/system/console/configMgr`
+1. Inicie o AEM e acesse o Console da Web em `http://localhost:4502/system/console/configMgr`
 1. Defina a seguinte configuração em **Configuração do servidor remoto Oak Solr**:
 
    * URL HTTP Solr: `http://localhost:8983/solr/`
@@ -446,7 +450,7 @@ O AEM 6.1 também integra duas ferramentas de indexação presentes no AEM 6.0 c
 1. **Explicar consulta**, uma ferramenta projetada para ajudar os administradores a entender como as consultas são executadas;
 1. **Oak Index Manager**, uma interface de usuário da Web para manter índices existentes.
 
-Agora você pode acessá-las indo até **Ferramentas - Operações - Painel - Diagnóstico** na tela de Boas-vindas do AEM.
+Agora você pode contatá-los acessando **Ferramentas - Operações - Painel - Diagnóstico** na tela de boas-vindas do AEM.
 
 Para obter mais informações sobre como usá-los, consulte a [documentação do Painel de Operações](/help/sites-administering/operations-dashboard.md).
 
@@ -478,7 +482,7 @@ Para habilitar o log, você deve habilitar logs de nível **DEBUG** para as cate
 * org.apache.jackrabbit.oak.query
 * com.day.cq.search
 
-A categoria **com.day.cq.search** só será aplicável se você estiver usando o utilitário QueryBuilder fornecido pelo AEM.
+A categoria **com.day.cq.search** só será aplicável se você estiver usando o utilitário QueryBuilder fornecido pela AEM.
 
 >[!NOTE]
 >
