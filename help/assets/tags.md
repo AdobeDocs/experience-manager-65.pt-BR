@@ -726,7 +726,7 @@ A configuração do Experience Manager consiste nas duas etapas principais a seg
 
    ![07-25_14-16-33-2019](assets/2019-07-25_14-16-33.png)
 
-1. Uma página de detalhes das Integrações é exibida, **** semelhante ao seguinte:
+1. Uma página de detalhes das Integrações é exibida, **&#x200B;**&#x200B;semelhante ao seguinte:
 
    >[!NOTE]
    >

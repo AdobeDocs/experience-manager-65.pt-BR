@@ -336,9 +336,9 @@ Esse cabeçalho informa o seguinte:
 >**X-Adobe-Smart-Imaging = -1 com o WebP sendo entregue**
 >
 >Se o valor de `X-Adobe-Smart-Imaging` for -1 e o WebP ainda estiver sendo entregue, o Smart Imaging estará ativo. No entanto, os benefícios de tamanho não foram calculados devido ao cache desatualizado. Você pode usar `cache=update` (apenas uma vez) na URL da imagem para corrigir esse problema.
->>Um exemplo de uso do modificador:
->>`https://smartimaging.scene7.com/is/image/SmartImaging/sample1?cache=update`
->>Para invalidar todo o cache, você deve criar um caso de suporte.
+>&#x200B;>Um exemplo de uso do modificador:
+>&#x200B;>`https://smartimaging.scene7.com/is/image/SmartImaging/sample1?cache=update`
+>&#x200B;>Para invalidar todo o cache, você deve criar um caso de suporte.
 
 +++
 
