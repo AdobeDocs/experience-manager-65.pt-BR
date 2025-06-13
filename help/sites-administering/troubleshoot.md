@@ -101,7 +101,7 @@ O despejo de thread é uma lista de todas as threads do Java™ que estão ativa
 >
 >`jstack <pid> >> /path/to/logfile.log`
 
-Consulte a documentação [Como remover despejos de thread de uma JVM](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html) para obter mais informações
+Consulte a documentação [Como remover despejos de thread de uma JVM](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=pt-BR) para obter mais informações
 
 ### Verificando sessões JCR não fechadas {#checking-for-unclosed-jcr-sessions}
 
@@ -111,7 +111,7 @@ Quando a funcionalidade é desenvolvida para o AEM WCM, as sessões JCR podem se
 * Você pode ver grande parte das entradas do CacheManager: resizeAll no arquivo de log; o seguinte número (size=&lt;x>) mostra o número de caches, cada sessão abre vários caches.
 * Periodicamente, o sistema fica sem memória (após algumas horas, dias ou semanas - dependendo da gravidade).
 
-Para começar a analisar sessões não fechadas, consulte o artigo da Base de Dados de Conhecimento [Unclosed Resource Resolver](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-23761).
+Para começar a analisar sessões não fechadas, consulte o artigo da Base de Dados de Conhecimento [Unclosed Resource Resolver](https://experienceleague.adobe.com/pt-br/docs/experience-cloud-kcs/kbarticles/ka-23761).
 
 ### Uso do console da Web do Adobe Experience Manager {#using-the-adobe-experience-manager-web-console}
 

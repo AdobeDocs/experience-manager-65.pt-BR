@@ -56,8 +56,8 @@ Isso ajuda um desenvolvedor a:
 >
 >Consulte:
 >
->* Artigo da Base de Dados de Conhecimento, [Solução de problemas da interface para toque do AEM](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-16935), para obter mais dicas e ferramentas.
->* Sessão do AEM Gems sobre o [Modo de Desenvolvedor do AEM 6.0](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-developer-mode.html).
+>* Artigo da Base de Dados de Conhecimento, [Solução de problemas da interface para toque do AEM](https://experienceleague.adobe.com/pt-br/docs/experience-cloud-kcs/kbarticles/ka-16935), para obter mais dicas e ferramentas.
+>* Sessão do AEM Gems sobre o [Modo de Desenvolvedor do AEM 6.0](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-developer-mode.html?lang=pt-BR).
 >
 
 ## Abrindo o Modo de Desenvolvedor {#opening-developer-mode}

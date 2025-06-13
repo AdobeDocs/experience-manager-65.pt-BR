@@ -64,7 +64,7 @@ Por exemplo, o seguinte local dentro da estrutura `/libs` pode ser sobreposto:
 
 >[!NOTE]
 >
->Consulte o artigo da Base de Dados de Conhecimento, [Solução de problemas da interface para toque do AEM](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-16935), para obter mais dicas e ferramentas.
+>Consulte o artigo da Base de Dados de Conhecimento, [Solução de problemas da interface para toque do AEM](https://experienceleague.adobe.com/pt-br/docs/experience-cloud-kcs/kbarticles/ka-16935), para obter mais dicas e ferramentas.
 
 ## Personalizando a View Default para uma Console {#customizing-the-default-view-for-a-console}
 
