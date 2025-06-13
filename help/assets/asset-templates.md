@@ -6,9 +6,9 @@ role: User
 feature: Asset Management,Developer Tools
 exl-id: 12c92aad-3a1d-486e-a830-31de2fc6d07b
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 0b90fdd13efc5408ef94ee1966f04a80810b515e
 workflow-type: tm+mt
-source-wordcount: '1576'
+source-wordcount: '1558'
 ht-degree: 0%
 
 ---
@@ -17,9 +17,9 @@ ht-degree: 0%
 
 Os modelos de ativos são uma classe especial de ativos que facilitam a redefinição rápida de objetivos de conteúdo visualmente avançado para mídia digital e impressa. Um modelo de ativo inclui duas partes, a seção de mensagens fixas e a seção editável. A seção de mensagem fixa pode conter conteúdo proprietário, como logotipo da marca e informações de copyright que estão desativadas para edição. A seção editável pode conter conteúdo visual e textual em campos que podem ser editados para personalizar as mensagens.
 
-A flexibilidade de fazer edições limitadas e, ao mesmo tempo, proteger a sinalização global torna os modelos de ativos os componentes ideais para a rápida adaptação e distribuição de conteúdo como artefatos de conteúdo para várias funções. A redefinição de objetivos do conteúdo ajuda a reduzir o custo de gerenciamento de canais impressos e digitais e a fornecer experiências holísticas e consistentes nesses canais.
+Os modelos de ativos oferecem a flexibilidade de fazer edições limitadas, mantendo a sinalização global segura. Essa capacidade os torna os blocos fundamentais ideais para adaptar e distribuir rapidamente o conteúdo em várias funções. A redefinição de objetivos do conteúdo ajuda a reduzir o custo de gerenciamento de canais impressos e digitais e a fornecer experiências holísticas e consistentes nesses canais.
 
-Como profissional de marketing, você pode armazenar e gerenciar modelos no [!DNL Experience Manager Assets] e usar um único modelo base para criar várias experiências de impressão personalizadas com facilidade. Você pode criar vários tipos de material de apoio de marketing, incluindo folhetos, panfletos, cartões postais, cartões de visita e assim por diante, para transmitir com lucidez sua mensagem de marketing aos clientes. Você também pode reunir saídas de impressão de várias páginas a partir de saídas de impressão existentes ou novas. Acima de tudo, você pode oferecer simultaneamente experiências digitais e de impressão com facilidade para fornecer uma experiência consistente e integrada para os usuários.
+Como profissional de marketing, você pode armazenar e gerenciar modelos no [!DNL Experience Manager Assets] e usar um único modelo base para criar várias experiências de impressão personalizadas com facilidade. Você pode criar vários tipos de material de apoio de marketing, incluindo folhetos, panfletos, cartões postais, cartões de visita e assim por diante, para transmitir sua mensagem de marketing com lucidez aos clientes. Você também pode reunir saídas de impressão de várias páginas a partir de saídas de impressão existentes ou novas. Acima de tudo, você pode oferecer simultaneamente experiências digitais e de impressão com facilidade para fornecer uma experiência consistente e integrada para os usuários.
 
 Embora os modelos de ativos sejam, em sua maioria, arquivos [!DNL Adobe InDesign], a proficiência em [!DNL Adobe InDesign] não é uma barreira à criação de artefatos estelares. Você não precisa mapear os campos do seu modelo do [!DNL Adobe InDesign] com os campos de produto que seriam necessários ao criar catálogos. É possível editar os modelos no modo WYSIWYG diretamente na interface da Web. No entanto, para que o [!DNL Adobe InDesign] processe suas alterações de edição, primeiro você deve configurar o [!DNL Experience Manager Assets] para integrar-se com o [!DNL Adobe InDesign Server].
 
@@ -35,7 +35,7 @@ A capacidade de editar modelos do [!DNL Adobe InDesign] na interface da Web ajud
 
 Quando você escolhe um modelo para o material de apoio, o [!DNL Experience Manager Assets] cria uma cópia do modelo que você pode editar. O modelo original é preservado, o que garante que sua sinalização global permaneça intacta e possa ser reutilizada para impor a consistência da marca.
 
-Você pode exportar o arquivo atualizado para a pasta pai nos formatos INDD, PDF ou JPG. Você também pode baixar a saída nesses formatos para o sistema de arquivos local.
+É possível exportar o arquivo atualizado na pasta pai nos formatos INDD, PDF ou JPG. Você também pode baixar a saída nesses formatos para o sistema de arquivos local.
 
 ## Criar uma peça colateral {#creating-a-collateral}
 
@@ -67,7 +67,7 @@ Considere um cenário em que você deseja criar materiais de apoio digitais impr
 
 ## Editar uma peça de material de apoio {#editing-a-collateral}
 
-Você pode editar um material de apoio imediatamente após criá-lo. Como alternativa, você pode abri-lo na página [!UICONTROL Modelos] ou na página do ativo.
+Você pode editar um material de apoio imediatamente após criá-lo. Como alternativa, você pode abri-lo a partir da página [!UICONTROL Modelos] ou da página Ativo.
 
 1. Para abrir o material de apoio para edição, siga um destes procedimentos:
 
@@ -90,7 +90,7 @@ Você pode editar um material de apoio imediatamente após criá-lo. Como altern
 
    >[!NOTE]
    >
-   >Verifique se a implantação do [!DNL Experience Manager] está integrada a um [!DNL InDesign Server] para permitir que o [!DNL Experience Manager Assets] extraia dados do modelo [!DNL InDesign] e os disponibilize para edição. Para obter detalhes, consulte [Integrar o Experience Manager Assets com o InDesign Server](/help/assets/indesign.md).
+   >Integre sua implantação do [!DNL Experience Manager] com um [!DNL InDesign Server] para que o [!DNL Experience Manager Assets] possa extrair dados do modelo [!DNL InDesign] e disponibilizá-los para edição. Para obter detalhes, consulte [Integrar o Experience Manager Assets com o InDesign Server](/help/assets/indesign.md).
 
 1. Para modificar o texto em um campo editável, clique no campo de texto da lista de campos editáveis e edite o texto no campo.
 
@@ -124,17 +124,16 @@ Você pode editar um material de apoio imediatamente após criá-lo. Como altern
    >
    >Para habilitar [!DNL Experience Manager] para resolver imagens, faça o seguinte:
    >
-   >* Inserir imagens ao criar modelos [!DNL InDesign] (Consulte [Sobre links e elementos gráficos inseridos](https://helpx.adobe.com/br/indesign/using/graphics-links.html)).
-   >* Monte [!DNL Experience Manager] no seu sistema de arquivos local e mapeie os ícones ausentes com os ativos existentes no [!DNL Experience Manager].
+   >* Inserir imagens ao criar modelos [!DNL InDesign] (Consulte [Sobre links e elementos gráficos inseridos](https://helpx.adobe.com/indesign/using/graphics-links.html)).
+   >* Monte o [!DNL Experience Manager] no seu sistema de arquivos local e mapeie os ícones ausentes com os ativos existentes no [!DNL Experience Manager].
    >
-   >Para obter mais informações sobre como trabalhar com documentos do [!DNL InDesign], consulte as [práticas recomendadas para trabalhar com documentos do InDesign no Experience Manager](https://helpx.adobe.com/experience-manager/kb/best-practices-idd-docs-aem.html).
 
-1. Para gerar uma representação de PDF para o folheto, selecione a opção Acrobat na caixa de diálogo e clique em **[!UICONTROL Continuar]**.
+1. Para gerar uma representação PDF para o folheto, selecione a opção Acrobat na caixa de diálogo e clique em **[!UICONTROL Continuar]**.
 1. O material de apoio é criado na pasta em que você começou. Para exibir as representações, abra o material de apoio e escolha **[!UICONTROL Representações]** na lista GlobalNav.
 
    ![chlimage_1-118](assets/chlimage_1-323.png)
 
-1. Selecione a representação de PDF na lista de representações para baixar o arquivo de PDF. Abra o arquivo PDF para revisar o material de apoio.
+1. Selecione a representação do PDF na lista de representações para baixar o arquivo do PDF. Abra o arquivo PDF para revisar o material de apoio.
 
    ![chlimage_1-119](assets/chlimage_1-324.png)
 
@@ -165,7 +164,7 @@ Você pode editar um material de apoio imediatamente após criá-lo. Como altern
 
    ![chlimage_1-126](assets/chlimage_1-331.png)
 
-1. Na tela [!UICONTROL Configurar Modelo], especifique um nome para o material de apoio. Como opção, especifique as tags que você considerar apropriadas. Se desejar exportar a saída no formato PDF, selecione **[!UICONTROL Acrobat (.PDF)]**. Por padrão, o material é exportado no formato JPG e [!DNL InDesign]. Para alterar a miniatura de exibição do material de apoio de várias páginas, clique em **[!UICONTROL Alterar Miniatura]**.
+1. Na tela [!UICONTROL Configurar Modelo], especifique um nome para o material de apoio. Como opção, especifique as tags que você considerar apropriadas. Para exportar a saída no formato PDF, selecione **[!UICONTROL Acrobat (.PDF)]**. Por padrão, a garantia é exportada no formato JPG e [!DNL InDesign]. Para alterar a miniatura de exibição do material de apoio de várias páginas, clique em **[!UICONTROL Alterar Miniatura]**.
 
    ![chlimage_1-127](assets/chlimage_1-332.png)
 

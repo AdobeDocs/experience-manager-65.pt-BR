@@ -5,10 +5,10 @@ role: Admin
 feature: Tagging,Smart Tags
 exl-id: 9f68804f-ba15-4f83-ab1b-c249424b1396
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 917723f89c037756a74fef9a54df9237d4283c1d
+source-git-commit: 0b90fdd13efc5408ef94ee1966f04a80810b515e
 workflow-type: tm+mt
-source-wordcount: '2098'
-ht-degree: 15%
+source-wordcount: '2129'
+ht-degree: 13%
 
 ---
 
@@ -32,9 +32,9 @@ Antes de usar o Serviço de conteúdo inteligente, verifique o seguinte:
 * [Integrar ao Adobe Developer Console](#integrate-adobe-io).
 * [Treine o Serviço de Conteúdo Inteligente](#training-the-smart-content-service).
 
-* Instale o [[!DNL Experience Manager] Service Pack](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=pt-BR) mais recente.
+* Instale o [[!DNL Experience Manager] Service Pack](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates) mais recente.
 
-## Atualização do SCS para oferecer suporte a Oauth para Adobe Managed Services {#scs-upgrade-oauth-managed-services}
+## Atualização do SCS para oferecer suporte ao Oauth para Adobe Managed Services {#scs-upgrade-oauth-managed-services}
 
 **Novos usuários**
 
@@ -65,13 +65,13 @@ Para o Service Pack 20 e posterior, é necessário executar as etapas alternativ
 
 ## Integrar ao Adobe Developer Console {#integrate-adobe-io}
 
-Quando você integra com o Adobe Developer Console, o servidor do [!DNL Experience Manager] autentica suas credenciais de serviço no gateway do Adobe Developer Console antes de encaminhar sua solicitação ao Serviço de Conteúdo Inteligente. Para integrar o, é necessário ter uma conta do Adobe ID com privilégios de administrador para a organização e uma licença do Serviço de conteúdo inteligente adquirida e ativada para a organização.
+Quando você integra com o Adobe Developer Console, o servidor do [!DNL Experience Manager] autentica suas credenciais de serviço no gateway do Adobe Developer Console antes de encaminhar sua solicitação ao Serviço de Conteúdo Inteligente. Para integrar o, você precisa de uma conta do Adobe ID com privilégios de administrador para a organização e uma licença do Serviço de conteúdo inteligente adquirida e ativada para a organização.
 
 Para configurar o Serviço de conteúdo inteligente, siga estas etapas de nível superior:
 
 1. Crie uma integração no [Adobe Developer Console](#create-adobe-io-integration).
 
-1. Crie a [configuração de conta técnica IMS](#create-ims-account-config) usando a chave de API e outras credenciais da Adobe Developer Console.
+1. Crie uma [Configuração de conta técnica IMS](#create-ims-account-config) usando a chave de API e outras credenciais da Adobe Developer Console.
 
 1. [Configurar o Serviço de Conteúdo Inteligente](#configure-smart-content-service).
 
@@ -93,7 +93,11 @@ To configure the Smart Content Service, follow these top-level steps:
 
 ### Criar integração do Adobe Developer Console {#create-adobe-io-integration}
 
-Para usar APIs do Serviço de Conteúdo Inteligente, crie uma integração no Adobe Developer Console para obter a [!UICONTROL Chave de API] (gerada no campo [!UICONTROL ID do CLIENTE] da integração com o Adobe Developer Console), a [!UICONTROL ID da ORGANIZAÇÃO] e o [!UICONTROL SEGREDO DO CLIENTE] para as [!UICONTROL Configurações do Serviço de Marcação Inteligente do Assets] da configuração de nuvem em [!DNL Experience Manager].
+Para usar as APIs do Serviço de conteúdo inteligente, crie uma integração no Adobe Developer Console para obter o seguinte:
+
+* [!UICONTROL CHAVE DE API] (gerada no campo [!UICONTROL ID DO CLIENTE] da integração com o Adobe Developer Console),
+* [!UICONTROL ID DA ORGANIZAÇÃO],
+* e [!UICONTROL CLIENT SECRET], para [!UICONTROL Configurações do Serviço de Marcação Inteligente da Assets] da configuração de nuvem em [!DNL Experience Manager].
 
 1. Acesse [https://developer.adobe.com](https://developer.adobe.com/) em um navegador. Selecione a conta apropriada e verifique se a organização associada tem a função de **administrador** do sistema.
 
@@ -104,17 +108,12 @@ Para usar APIs do Serviço de Conteúdo Inteligente, crie uma integração no Ad
 1. Selecione **[!UICONTROL Servidor a servidor OAuth]**. Clique em **[!UICONTROL Avançar]**.
 Para obter detalhes sobre como fazer essa configuração, consulte a documentação do Developer Console, dependendo das suas necessidades:
 
-   * Visão geral:
-      * [Autenticação de Servidor para Servidor](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/)
-
-   * Criação de uma nova credencial OAuth:
-      * [Guia de implementação de credenciais de servidor para servidor do OAuth](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/)
-
-   * Migrar uma credencial JWT existente para uma credencial OAuth:
-      * [Migrando da credencial de conta de serviço (JWT) para a credencial de servidor para servidor OAuth](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/)
+   * Para obter uma visão geral, consulte *Autenticação de Servidor para Servidor* em developer.adobe.com.
+   * Para criar uma nova credencial OAuth, consulte o *guia de implementação de credenciais de servidor para servidor do OAuth* em developer.adobe.com.
+   * Para migrar uma credencial JWT existente para uma credencial OAuth, consulte *Migração da credencial de conta de serviço (JWT) para a credencial de servidor para servidor OAuth* em developer.adobe.com.
 
 
-1. Na página **[!UICONTROL Selecionar perfis de produtos]**, selecione **[!UICONTROL Serviços de Conteúdo Inteligente]**. Clique em **[!UICONTROL Salvar API configurada]**.
+1. Na página **[!UICONTROL Selecionar perfis de produto]**, selecione **[!UICONTROL Serviços de Conteúdo Inteligente]** e clique na opção **[!UICONTROL Salvar API configurada]**.
 
    Uma página exibe mais informações sobre a configuração. Mantenha esta página aberta para copiar e adicionar esses valores nas [!UICONTROL Configurações do Serviço de Marcação Inteligente da Assets] da configuração de nuvem no [!DNL Experience Manager] para configurar marcas inteligentes.
 
@@ -122,7 +121,7 @@ Para obter detalhes sobre como fazer essa configuração, consulte a documentaç
 
 ### Criar configuração de conta técnica IMS {#create-ims-account-config}
 
-É necessário criar a configuração de conta técnica IMS usando as etapas abaixo:
+É necessário criar uma configuração de conta técnica IMS usando as etapas abaixo:
 
 1. Na interface do [!DNL Experience Manager], acesse **[!UICONTROL Ferramentas]** > **[!UICONTROL Segurança]** > **[!UICONTROL Configurações do Adobe IMS]**.
 
@@ -137,10 +136,10 @@ Para obter detalhes sobre como fazer essa configuração, consulte a documentaç
    | Solução em nuvem | Escolha **[!UICONTROL Tags inteligentes]** no menu suspenso. |
    | Título | Adicione o título da conta IMS de configuração. |
    | Servidor de autorização | Adicionar `https://ims-na1.adobelogin.com` |
-   | ID do cliente | A ser fornecido por meio do [console do Adobe Developer](https://developer.adobe.com/console/). |
-   | Senha do cliente | A ser fornecido por meio do [console do Adobe Developer](https://developer.adobe.com/console/). |
-   | Escopo | A ser fornecido por meio do [console do Adobe Developer](https://developer.adobe.com/console/). |
-   | ID da organização | A ser fornecido por meio do [console do Adobe Developer](https://developer.adobe.com/console/). |
+   | ID do cliente | A ser fornecido por meio do [console Adobe Developer](https://developer.adobe.com/console/). |
+   | Senha do cliente | A ser fornecido por meio do [console Adobe Developer](https://developer.adobe.com/console/). |
+   | Escopo | A ser fornecido por meio do [console Adobe Developer](https://developer.adobe.com/console/). |
+   | ID da organização | A ser fornecido por meio do [console Adobe Developer](https://developer.adobe.com/console/). |
 
 1. Selecione a configuração criada e clique em **[!UICONTROL Verificar integridade]**.
 
@@ -152,7 +151,7 @@ Para obter detalhes sobre como fazer essa configuração, consulte a documentaç
 >[!CAUTION]
 >
 >Previously, configurations that were made with JWT Credentials are now subject to deprecation in the Adobe Developer Console. You cannot create new JWT credentials after June 3, 2024. Such configurations can no longer be created or updated, but can be migrated to OAuth configurations.
-> See [Setting up IMS integrations for AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service)
+> See [Setting up IMS integrations for AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service)
 >See [Steps to configure OAuth for on-premise users](#config-oauth-onprem)
 > See [Troubleshooting smart tags for OAuth credentials](#config-smart-tagging.md)
 -->
@@ -170,12 +169,12 @@ Para configurar a integração, use os valores dos campos [!UICONTROL ID DA CONT
    | Texto | Descrição |
    | -------- | ---------------------------- |
    | Título | Adicione o título da conta IMS de configuração. |
-   | Configuração IMS da Adobe associada | Escolha a configuração na lista suspensa. |
-   | URL do serviço | `https://smartcontent.adobe.io/<region where your Experience Manager author instance is hosted>`. Por exemplo, `https://smartcontent.adobe.io/apac`. Você pode especificar `na`, `emea` ou `apac` como as regiões onde a instância do autor do Experience Manager está hospedada. |
+   | Configuração IMS da Adobe associada | Escolha uma configuração no menu suspenso. |
+   | URL do serviço | `https://smartcontent.adobe.io/<region where your Experience Manager author instance is hosted>`. Por exemplo, `https://smartcontent.adobe.io/apac`. Você pode especificar `na`, `emea` ou `apac` como as regiões em que sua instância de autor do Experience Manager está hospedada. |
 
    >[!NOTE]
    >
-   >Se o Serviço gerenciado de Experience Manager for provisionado antes de 1° de setembro de 2022, use o seguinte URL de serviço:
+   >Se o Experience Manager Managed Service for provisionado antes de 1º de setembro de 2022, use o seguinte URL de serviço:
    >`https://mc.adobe.io/marketingcloud/smartcontent`
 
 1. Clique em **[!UICONTROL Salvar e fechar]**.
@@ -292,7 +291,7 @@ To use Smart Content Service APIs, create an integration in Adobe Developer Cons
 >[!CAUTION]
 >
 >Previously, configurations that were made with JWT Credentials are now subject to deprecation in the Adobe Developer Console. You cannot create new JWT credentials after June 3, 2024. Such configurations can no longer be created or updated, but can be migrated to OAuth configurations.
-> See [Setting up IMS integrations for AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service)
+> See [Setting up IMS integrations for AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service)
 >See [Steps to configure OAuth for on-premise users](#config-oauth-onprem)
 > See [Troubleshooting smart tags for OAuth credentials](#config-smart-tagging.md)
 
@@ -363,7 +362,7 @@ The validation results are displayed in the same dialog.
 
 1. Em [!DNL Experience Manager], vá para **[!UICONTROL Ferramentas]** > **[!UICONTROL Fluxo de Trabalho]** > **[!UICONTROL Modelos]**.
 
-1. Na página **[!UICONTROL Modelos de fluxo de trabalho]**, selecione o modelo de fluxo de trabalho **[!UICONTROL Ativo de atualização DAM]**.
+1. Na página **[!UICONTROL Modelos de fluxo de trabalho]**, selecione o modelo de fluxo de trabalho **[!UICONTROL Ativo de atualização do DAM]**.
 
 1. Clique em **[!UICONTROL Editar]** na barra de ferramentas.
 
@@ -387,7 +386,7 @@ The validation results are displayed in the same dialog.
 
 ## Treinar o serviço de conteúdo inteligente {#training-the-smart-content-service}
 
-Para que o Serviço de conteúdo inteligente reconheça sua taxonomia comercial, execute-a em um conjunto de ativos que já incluem tags relevantes para sua empresa. Para marcar com eficiência as imagens da sua marca, o Serviço de conteúdo inteligente exige que as imagens de treinamento estejam em conformidade com determinadas diretrizes. Após o treinamento, o serviço pode aplicar a mesma taxonomia a um conjunto semelhante de ativos.
+Para que o Serviço de conteúdo inteligente reconheça sua taxonomia comercial, execute-a em um conjunto de ativos que já incluem tags relevantes para sua empresa. Para marcar as imagens da sua marca de maneira eficaz, o Serviço de conteúdo inteligente exige que as imagens de treinamento estejam em conformidade com determinadas diretrizes. Após o treinamento, o serviço pode aplicar a mesma taxonomia a um conjunto semelhante de ativos.
 
 Você pode treinar o serviço várias vezes para melhorar sua capacidade de aplicar tags relevantes. Após cada ciclo de treinamento, execute um fluxo de trabalho de marcação e verifique se os ativos estão marcados corretamente.
 
@@ -409,7 +408,7 @@ Por exemplo, não é uma boa ideia marcar todas essas imagens como `my-party` (p
 
 ![Imagens ilustrativas para exemplificar as diretrizes de treinamento](/help/assets/assets/do-not-localize/coherence.png)
 
-**Cobertura**: use variedade suficiente nas imagens do treinamento. A ideia é fornecer alguns exemplos, mas razoavelmente diversos, para que o Experience Manager aprenda a focar nas coisas certas. Se você estiver aplicando a mesma tag em imagens visualmente diferentes, inclua pelo menos cinco exemplos de cada tipo.
+**Cobertura**: use variedade suficiente nas imagens do treinamento. A ideia é fornecer alguns exemplos razoavelmente diversos para que o Experience Manager aprenda a focar nas coisas certas. Se você estiver aplicando a mesma tag em imagens visualmente diferentes, inclua pelo menos cinco exemplos de cada tipo.
 
 Por exemplo, para a tag *model-down-pose*, inclua mais imagens de treinamento semelhantes à imagem destacada abaixo para que o serviço identifique imagens semelhantes com mais precisão durante a marcação.
 
@@ -441,7 +440,7 @@ Depois que essa opção é selecionada para uma pasta, o [!DNL Experience Manage
 
 Você pode treinar o Serviço de conteúdo inteligente sempre que necessário no console Fluxo de trabalho.
 
-1. Na interface do [!DNL Experience Manager], vá para **[!UICONTROL Ferramentas]** > **[!UICONTROL Fluxo de Trabalho]** > **[!UICONTROL Modelos]**.
+1. Na interface [!DNL Experience Manager], vá para **[!UICONTROL Ferramentas]** > **[!UICONTROL Fluxo de Trabalho]** > **[!UICONTROL Modelos]**.
 1. Na página **[!UICONTROL Modelos de Fluxo de Trabalho]**, selecione o fluxo de trabalho **[!UICONTROL Treinamento de Tags Inteligentes]** e clique em **[!UICONTROL Iniciar Fluxo de Trabalho]** na barra de ferramentas.
 1. Na caixa de diálogo **[!UICONTROL Executar Fluxo de Trabalho]**, navegue até a pasta de carga que inclui os ativos marcados para treinar o serviço.
 1. Especifique um título para o fluxo de trabalho e adicione um comentário. Em seguida, clique em **[!UICONTROL Executar]**. Os ativos e as tags são enviados para treinamento.
@@ -456,7 +455,7 @@ Você pode treinar o Serviço de conteúdo inteligente sempre que necessário no
 
 Para verificar se o Serviço de conteúdo inteligente é treinado em suas tags no conjunto de ativos de treinamento, revise o relatório de fluxo de trabalho de treinamento no console Relatórios.
 
-1. Na interface do [!DNL Experience Manager], vá para **[!UICONTROL Ferramentas]** > **[!UICONTROL Assets]** > **[!UICONTROL Relatórios]**.
+1. Na interface [!DNL Experience Manager], vá para **[!UICONTROL Ferramentas]** > **[!UICONTROL Assets]** > **[!UICONTROL Relatórios]**.
 1. Na página **[!UICONTROL Relatórios de ativos]**, clique em **[!UICONTROL Criar]**.
 1. Selecione o relatório **[!UICONTROL Treinamento de Tags Inteligentes]** e clique em **[!UICONTROL Avançar]** na barra de ferramentas.
 1. Especifique um título e uma descrição para o relatório. Em **[!UICONTROL Agendar relatório]**, deixe a opção **[!UICONTROL Agora]** selecionada. Se desejar agendar o relatório para posteriormente, selecione **[!UICONTROL Posteriormente]** e especifique uma data e hora. Em seguida, clique em **[!UICONTROL Criar]** na barra de ferramentas.
@@ -483,4 +482,4 @@ Para verificar se o Serviço de conteúdo inteligente é treinado em suas tags n
 >
 >* [Visão geral e como treinar Tags Inteligentes](enhanced-smart-tags.md)
 >* [Solução de problemas de marcas inteligentes para credenciais do OAuth](config-oauth.md)
->* [Tutorial em vídeo sobre marcas inteligentes](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html?lang=pt-BR)
+>* [Tutorial em vídeo sobre marcas inteligentes](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/metadata/image-smart-tags)

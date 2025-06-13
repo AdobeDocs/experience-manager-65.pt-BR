@@ -1,5 +1,5 @@
 ---
-title: Ajuste de desempenho [!DNL Assets].
+title: Ajuste de desempenho [!DNL Assets]
 description: Sugestões e orientações sobre [!DNL Experience Manager] configuração, alterações de hardware, software e componentes de rede para remover gargalos e otimizar o desempenho do [!DNL Experience Manager Assets].
 contentOwner: AG
 mini-toc-levels: 1
@@ -7,9 +7,9 @@ role: Architect, Admin
 feature: Asset Management
 exl-id: 1d9388de-f601-42bf-885b-6a7c3236b97e
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 0b90fdd13efc5408ef94ee1966f04a80810b515e
 workflow-type: tm+mt
-source-wordcount: '2728'
+source-wordcount: '2729'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Uma instalação do [!DNL Experience Manager Assets] contém vários componentes
 
 Além disso, identificar e seguir determinadas diretrizes de otimização de hardware e software ajuda a criar uma base sólida que permita que a implantação do [!DNL Experience Manager Assets] atenda às expectativas de desempenho, escalabilidade e confiabilidade.
 
-Um desempenho insatisfatório no [!DNL Experience Manager Assets] pode afetar a experiência do usuário em relação ao desempenho interativo, processamento de ativos, velocidade de download e outras áreas.
+Um desempenho insatisfatório no [!DNL Experience Manager Assets] pode afetar a experiência do usuário em desempenho interativo, processamento de ativos, velocidade de download e outras áreas.
 
 Na verdade, a otimização de desempenho é uma tarefa fundamental executada antes de estabelecer métricas de direcionamento para qualquer projeto.
 
@@ -30,13 +30,13 @@ Estas são algumas das principais áreas de foco nas quais você descobre e corr
 
 ## Platform {#platform}
 
-Embora o Experience Manager seja suportado em várias plataformas, o Adobe encontrou o maior suporte para ferramentas nativas no Linux e no Windows, o que contribui para um desempenho ideal e para a facilidade de implementação. Idealmente, você deve implantar um sistema operacional de 64 bits para atender aos requisitos de alta memória de uma implantação do [!DNL Experience Manager Assets]. Como em qualquer implantação de Experience Manager, você deve implementar o TarMK sempre que possível. Embora o TarMK não possa ser dimensionado além de uma única instância de autor, seu desempenho é melhor do que o MongoMK. Você pode adicionar instâncias de descarregamento TarMK para aumentar o poder de processamento do fluxo de trabalho da sua implantação [!DNL Experience Manager Assets].
+Embora o Experience Manager seja suportado em várias plataformas, a Adobe encontrou o maior suporte para ferramentas nativas no Linux® e no Windows, o que contribui para um desempenho ideal e para a facilidade de implementação. Idealmente, você deve implantar um sistema operacional de 64 bits para atender aos requisitos de alta memória de uma implantação do [!DNL Experience Manager Assets]. Como em qualquer implantação do Experience Manager, você deve implementar o TarMK sempre que possível. Embora o TarMK não possa ser dimensionado além de uma única instância de autor, seu desempenho é melhor do que o MongoMK. Você pode adicionar instâncias de descarregamento TarMK para aumentar o poder de processamento do fluxo de trabalho da sua implantação [!DNL Experience Manager Assets].
 
 ### Pasta temporária {#temp-folder}
 
-Para melhorar os tempos de upload de ativos, use o armazenamento de alto desempenho para o diretório temporário Java. No Linux e no Windows, uma unidade RAM ou SSD pode ser usada. Em ambientes baseados em nuvem, um tipo equivalente de armazenamento de alta velocidade pode ser usado. Por exemplo, no Amazon EC2, uma [unidade efêmera](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html) unidade pode ser usada para a pasta temporária.
+Para melhorar os tempos de upload de ativos, use o armazenamento de alto desempenho para o diretório temporário Java. No Linux® e no Windows, uma unidade RAM ou SSD pode ser usada. Em ambientes baseados em nuvem, um tipo equivalente de armazenamento de alta velocidade pode ser usado. Por exemplo, no Amazon EC2, uma [unidade efêmera](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html) pode ser usada para a pasta temporária.
 
-Supondo que o servidor tenha memória suficiente, configure uma unidade RAM. No Linux, execute estes comandos para criar uma unidade RAM de 8 GB:
+Supondo que o servidor tenha memória suficiente, configure uma unidade RAM. No Linux®, execute estes comandos para criar uma unidade RAM de 8 GB:
 
 ```shell
 mkfs -q /dev/ram1 800000
@@ -55,7 +55,7 @@ Quando o volume temporário de alto desempenho estiver pronto, defina o parâmet
 
 ### Versão do Java {#java-version}
 
-A Adobe recomenda a implantação do [!DNL Experience Manager Assets] no Java 8 para obter o desempenho ideal.
+A Adobe recomenda implantar o [!DNL Experience Manager Assets] no Java 8 para obter o desempenho ideal.
 
 <!-- TBD: Link to the latest official word around Java.
 -->
@@ -74,7 +74,7 @@ Defina os seguintes parâmetros JVM:
 
 ### Configuração do armazenamento de dados do arquivo {#file-data-store-configuration}
 
-É recomendável separar o armazenamento de dados do armazenamento de segmentos para todos os usuários [!DNL Experience Manager Assets]. Além disso, configurar os parâmetros `maxCachedBinarySize` e `cacheSizeInMB` pode ajudar a maximizar o desempenho. Defina `maxCachedBinarySize` com o menor tamanho de arquivo que possa ser mantido no cache. Especifique o tamanho do cache de memória a ser usado para o armazenamento de dados em `cacheSizeInMB`. A Adobe recomenda que você defina esse valor entre 2 e 10 por cento do tamanho total do heap. No entanto, o teste de carga/desempenho pode ajudar a determinar a configuração ideal.
+É recomendável separar o armazenamento de dados do armazenamento de segmentos para todos os usuários [!DNL Experience Manager Assets]. Além disso, configurar os parâmetros `maxCachedBinarySize` e `cacheSizeInMB` pode ajudar a maximizar o desempenho. Defina `maxCachedBinarySize` com o menor tamanho de arquivo que possa ser mantido no cache. Especifique o tamanho do cache de memória a ser usado para o armazenamento de dados em `cacheSizeInMB`. A Adobe recomenda que você defina esse valor entre 2 e 10% do tamanho total do heap. No entanto, o teste de carga/desempenho pode ajudar a determinar a configuração ideal.
 
 ### Configurar o tamanho máximo do cache de imagens armazenadas em buffer {#configure-the-maximum-size-of-the-buffered-image-cache}
 
@@ -82,7 +82,7 @@ Ao fazer upload de grandes quantidades de ativos para [!DNL Adobe Experience Man
 
 Configure o tamanho do cache em buffer no Console da Web do OSGi. Em `https://host:port/system/console/configMgr/com.day.cq.dam.core.impl.cache.CQBufferedImageCache`, defina a propriedade `cq.dam.image.cache.max.memory` em bytes. Por exemplo, 1073741824 é de 1 GB (1024 x 1024 x 1024 = 1 GB).
 
-No Experience Manager 6.1 SP1, se estiver usando um nó `sling:osgiConfig` para configurar essa propriedade, defina o tipo de dados como Longo. Para obter mais detalhes, consulte [CQBufferedImageCache consome heap durante os uploads de ativos](https://helpx.adobe.com/experience-manager/kb/cqbufferedimagecache-consumes-heap-during-asset-uploads.html).
+No Experience Manager 6.1 SP1, se estiver usando um nó `sling:osgiConfig` para configurar essa propriedade, defina o tipo de dados como Longo.
 
 ### Armazenamento de dados compartilhado {#shared-data-stores}
 
@@ -90,7 +90,7 @@ A implementação de um armazenamento de dados S3 ou de arquivo compartilhado po
 
 ### Armazenamento de dados S3 {#s-data-store}
 
-A configuração do Repositório de Dados S3 a seguir ( `org.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore.cfg`) ajudou a Adobe a extrair 12,8 TB de BLOBs (objetos binários grandes) de um repositório de dados de arquivo existente em um repositório de dados S3 em um site do cliente:
+A seguinte configuração do S3 Data Store ( `org.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore.cfg`) ajudou a Adobe a extrair 12,8 TB de BLOBs (objetos binários grandes) de um armazenamento de dados de arquivo existente em um armazenamento de dados S3 em um site do cliente:
 
 ```conf
 accessKey=<snip>
@@ -119,8 +119,8 @@ A Adobe recomenda ativar o HTTPS porque muitas empresas têm firewalls que farej
 
 Basicamente, sua estratégia de otimização de rede depende da quantidade de largura de banda disponível e da carga na instância do [!DNL Experience Manager]. Opções comuns de configuração, incluindo firewalls ou proxies, podem ajudar a melhorar o desempenho da rede. Alguns pontos importantes a serem considerados:
 
-* Dependendo do tipo de instância (pequena, moderada, grande), verifique se você tem largura de banda de rede suficiente para a instância do Experience Manager. A alocação adequada de largura de banda é especialmente importante se [!DNL Experience Manager] estiver hospedado no AWS.
-* Se sua instância do [!DNL Experience Manager] estiver hospedada no AWS, você poderá se beneficiar com uma política de dimensionamento versátil. Faça upload da instância se os usuários esperarem alta carga. Faça downsize para carga moderada/baixa.
+* Dependendo do tipo de instância (pequena, moderada, grande), verifique se você tem largura de banda de rede suficiente para sua instância do Experience Manager. A alocação adequada de largura de banda é especialmente importante se [!DNL Experience Manager] estiver hospedado no AWS.
+* Se sua instância do [!DNL Experience Manager] estiver hospedada no AWS, você poderá se beneficiar com uma política de dimensionamento versátil. Faça upload da instância se os usuários esperarem uma carga alta. Faça downsize para carga moderada/baixa.
 * HTTPS: a maioria dos usuários tem firewalls que sniff tráfego HTTP, que pode afetar negativamente o upload de arquivos ou até mesmo arquivos corrompidos durante a operação de upload.
 * Carregamentos de arquivos grandes: verifique se os usuários têm conexões com fio à rede (as conexões WiFi ficam saturadas rapidamente).
 
@@ -146,11 +146,11 @@ Nos casos em que não é possível usar fluxos de trabalho transitórios, execut
 
 Normalmente, execute os workflows de limpeza semanalmente. No entanto, em cenários de uso intensivo de recursos, como durante a assimilação de ativos em larga escala, é possível executá-los com mais frequência.
 
-Para configurar a limpeza de fluxos de trabalho, adicione uma nova configuração de limpeza de fluxos de trabalho do Adobe Granite por meio do console OSGi. Em seguida, configure e programe o workflow como parte da janela de manutenção semanal.
+Para configurar a limpeza de fluxo de trabalho, adicione uma nova configuração de limpeza de fluxo de trabalho do Adobe Granite por meio do console OSGi. Em seguida, configure e programe o workflow como parte da janela de manutenção semanal.
 
 Se a limpeza for executada por muito tempo, o tempo limite expirará. Portanto, você deve garantir que seus trabalhos de limpeza sejam concluídos para evitar situações em que a limpeza de workflows falhe devido ao alto número de workflows.
 
-Por exemplo, após executar vários fluxos de trabalho não transitórios (que criam nós de instância de fluxo de trabalho), você pode executar o [Removedor de fluxo de trabalho ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/features/workflow-remover.html) de forma ad hoc. Ele remove instâncias de fluxo de trabalho redundantes e concluídas imediatamente em vez de esperar que o programador de Limpeza de fluxo de trabalho do Adobe Granite seja executado.
+Por exemplo, após executar vários fluxos de trabalho não transitórios (que criam nós de instância de fluxo de trabalho), você pode executar o [AEM Commons Workflow Remover](https://adobe-consulting-services.github.io/acs-aem-commons/features/workflow-remover.html) do ACS de forma ad hoc. Ele remove instâncias de fluxo de trabalho redundantes e concluídas imediatamente em vez de esperar que o programador de Limpeza de fluxo de trabalho do Adobe Granite seja executado.
 
 ### Máximo de trabalhos paralelos {#maximum-parallel-jobs}
 
@@ -166,9 +166,9 @@ Para começar, definir uma fila como metade dos processadores disponíveis é um
 
 ### Configuração do ativo de atualização DAM {#dam-update-asset-configuration}
 
-O fluxo de trabalho [!UICONTROL Ativo de atualização do DAM] contém um conjunto completo de etapas configuradas para tarefas, como a geração de PTIFF do Dynamic Media e a integração do [!DNL Adobe InDesign Server]. No entanto, a maioria dos usuários pode não exigir várias dessas etapas. A Adobe recomenda criar uma cópia personalizada do modelo de fluxo de trabalho [!UICONTROL Ativo de atualização do DAM] e remover as etapas desnecessárias. Nesse caso, atualize os inicializadores do [!UICONTROL Ativo de atualização do DAM] para apontar para o novo modelo.
+O fluxo de trabalho do [!UICONTROL Ativo de atualização do DAM] contém um conjunto completo de etapas configuradas para tarefas, como a geração de PTIFF do Dynamic Media e a integração do [!DNL Adobe InDesign Server]. No entanto, a maioria dos usuários pode não exigir várias dessas etapas. A Adobe recomenda criar uma cópia personalizada do modelo de fluxo de trabalho [!UICONTROL Ativo de atualização do DAM] e remover as etapas desnecessárias. Nesse caso, atualize os inicializadores do [!UICONTROL Ativo de atualização do DAM] para apontar para o novo modelo.
 
-A execução intensiva do fluxo de trabalho [!UICONTROL Ativo de atualização do DAM] pode aumentar bastante o tamanho do armazenamento de dados do seu arquivo. Os resultados de um experimento executado pelo Adobe mostraram que o tamanho do armazenamento de dados pode aumentar em aproximadamente 400 GB se cerca de 5.500 workflows forem executados em 8 horas.
+A execução intensiva do fluxo de trabalho [!UICONTROL Ativo de atualização do DAM] pode aumentar bastante o tamanho do armazenamento de dados do seu arquivo. Os resultados de um experimento realizado pela Adobe mostraram que o tamanho do armazenamento de dados pode aumentar em aproximadamente 400 GB se cerca de 5.500 workflows forem executados em 8 horas.
 
 É um aumento temporário e o armazenamento de dados é restaurado ao seu tamanho original após a execução da tarefa de coleta de lixo do armazenamento de dados.
 
@@ -182,11 +182,11 @@ Os clientes usam imagens de vários tamanhos e formatos em todo o site ou para d
 
 Muitos clientes do Sites implementam um servlet de imagem que redimensiona e recorta imagens no momento em que são solicitadas, o que impõe carga adicional na instância de publicação. No entanto, desde que essas imagens possam ser armazenadas em cache, o desafio pode ser atenuado.
 
-Uma abordagem alternativa é usar a tecnologia Dynamic Media para transmitir completamente a manipulação de imagem. Além disso, você pode implantar o Brand Portal que não apenas assume as responsabilidades de geração de representação da infraestrutura [!DNL Experience Manager], mas também todo o nível de publicação.
+Uma abordagem alternativa é usar a tecnologia Dynamic Media para transmitir totalmente a manipulação de imagem. Além disso, você pode implantar uma Brand Portal que não apenas assuma as responsabilidades de geração de representação da infraestrutura [!DNL Experience Manager], mas também todo o nível de publicação.
 
 #### ImageMagick {#imagemagick}
 
-Se você personalizar o fluxo de trabalho do [!UICONTROL Ativo de atualização do DAM] para gerar representações usando o ImageMagick, o Adobe recomenda modificar o arquivo `policy.xml` em `/etc/ImageMagick/`. Por padrão, o ImageMagick usa todo o espaço em disco disponível no volume do SO e a memória disponível. Faça as seguintes alterações de configuração na seção `policymap` de `policy.xml` para limitar esses recursos.
+Se você personalizar o fluxo de trabalho do [!UICONTROL Ativo de atualização do DAM] para gerar representações usando o ImageMagick, a Adobe recomenda modificar o arquivo `policy.xml` em `/etc/ImageMagick/`. Por padrão, o ImageMagick usa todo o espaço em disco disponível no volume do SO e a memória disponível. Faça as seguintes alterações de configuração na seção `policymap` de `policy.xml` para limitar esses recursos.
 
 ```xml
 <policymap>
@@ -211,25 +211,25 @@ Além disso, defina o caminho da pasta temporária do ImageMagick no arquivo `co
 
 >[!NOTE]
 >
->Os arquivos `policy.xml` e `configure.xml` do ImageMagick estão disponíveis em `/usr/lib64/ImageMagick-&#42;/config/` em vez de `/etc/ImageMagick/`. Consulte a [documentação do ImageMagick](https://www.imagemagick.org/script/resources.php) para saber o local dos arquivos de configuração.
+>Os arquivos `policy.xml` e `configure.xml` do ImageMagick estão disponíveis em `/usr/lib64/ImageMagick-&#42;/config/` em vez de `/etc/ImageMagick/`. Consulte a [documentação do ImageMagick](https://www.imagemagick.org/script/resources.php) para obter o local dos arquivos de configuração.
 
-Se você estiver usando o [!DNL Experience Manager] no Adobe Managed Services (AMS), entre em contato com o Suporte ao cliente do Adobe se planejar processar muitos arquivos PSD ou PSB grandes. Trabalhe com o representante do Suporte ao cliente da Adobe para implementar essas práticas recomendadas para a implantação do AMS e escolher as melhores ferramentas e modelos possíveis para os formatos proprietários do Adobe. O [!DNL Experience Manager] pode não processar arquivos PSB de resolução muito alta com mais de 30.000 x 23.000 pixels.
+Se você estiver usando o [!DNL Experience Manager] no Adobe Managed Services (AMS), entre em contato com o Suporte ao Cliente da Adobe se planejar processar muitos arquivos PSD ou PSB grandes. Trabalhe com um representante do Suporte ao cliente da Adobe para implementar essas práticas recomendadas para a implantação do AMS e escolher as melhores ferramentas e modelos possíveis para os formatos proprietários da Adobe. O [!DNL Experience Manager] pode não processar arquivos PSB de resolução muito alta com mais de 30.000 x 23.000 pixels.
 
 ### Writeback XMP {#xmp-writeback}
 
-O writeback XMP atualiza o ativo original sempre que os metadados forem modificados em [!DNL Experience Manager], o que resulta no seguinte:
+O write-back do XMP atualiza o ativo original sempre que os metadados são modificados em [!DNL Experience Manager], o que resulta no seguinte:
 
 * O ativo em si é modificado
 * Uma versão do ativo é criada
 * [!UICONTROL Ativo de atualização do DAM] executado no ativo
 
-Os resultados listados consomem recursos consideráveis. Portanto, o Adobe recomenda desativar o writeback XMP se não for necessário. Para obter mais informações, consulte [writeback de XMP](/help/assets/xmp-writeback.md).
+Os resultados listados consomem recursos consideráveis. Portanto, a Adobe recomenda desabilitar o write-back do XMP se ele não for necessário. Para obter mais informações, consulte o [Writeback XMP](/help/assets/xmp-writeback.md).
 
-A importação de uma grande quantidade de metadados pode resultar em uma atividade de writeback XMP com muitos recursos se o sinalizador executar workflows estiver marcado. Planejar essa importação durante o uso do servidor enxuto para que o desempenho de outros usuários não seja afetado.
+A importação de uma grande quantidade de metadados pode resultar em uma atividade de writeback XMP com muitos recursos se o sinalizador de execução de workflows estiver marcado. Planejar essa importação durante o uso do servidor enxuto para que o desempenho de outros usuários não seja afetado.
 
 ## Replicação {#replication}
 
-Ao replicar ativos para um grande número de instâncias de publicação, por exemplo, em uma implementação do Sites, o Adobe recomenda usar a replicação em cadeia. Nesse caso, a instância do autor é replicada para uma única instância de publicação que, por sua vez, é replicada para as outras instâncias de publicação, liberando a instância do autor.
+Ao replicar ativos para um grande número de instâncias de publicação, por exemplo, em uma implementação do Sites, a Adobe recomenda usar a replicação em cadeia. Nesse caso, a instância do autor é replicada para uma única instância de publicação que, por sua vez, é replicada para as outras instâncias de publicação, liberando a instância do autor.
 
 ### Configurar replicação em cadeia {#configure-chain-replication}
 
@@ -239,13 +239,13 @@ Ao replicar ativos para um grande número de instâncias de publicação, por ex
 
 >[!NOTE]
 >
->O Adobe não recomenda a ativação automática de ativos. No entanto, se necessário, o Adobe recomenda fazer isso como a etapa final em um fluxo de trabalho, geralmente Atualizar ativo do DAM.
+>A Adobe não recomenda a ativação automática de ativos. No entanto, se necessário, a Adobe recomenda fazer isso como a etapa final em um fluxo de trabalho, geralmente Atualizar ativo do DAM.
 
 ## Pesquisar índices {#search-indexes}
 
-Instale os [Service Packs mais recentes](/help/release-notes/release-notes.md) e hotfixes relacionados ao desempenho, pois esses geralmente incluem atualizações de índices do sistema. Consulte [dicas de ajuste de desempenho](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/performance-tuning-guidelines.html?lang=pt-BR) para algumas otimizações de índice.
+Instale os [Service Packs mais recentes](/help/release-notes/release-notes.md) e hotfixes relacionados ao desempenho, pois esses geralmente incluem atualizações de índices do sistema. Consulte [dicas de ajuste de desempenho](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/administer/performance-tuning-guidelines) para algumas otimizações de índice.
 
-Crie índices personalizados para consultas executadas com frequência. Para obter detalhes, consulte [metodologia para analisar consultas lentas](https://aemfaq.blogspot.com/2014/08/oak-query-log-file-analyzer-tool.html) e [criação de índices personalizados](/help/sites-deploying/queries-and-indexing.md). Para obter insights adicionais sobre as práticas recomendadas de consulta e índice, consulte [Práticas recomendadas de consultas e indexação](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
+Crie índices personalizados para consultas executadas com frequência. Para obter detalhes, consulte a [metodologia de análise de consultas lentas](https://aemfaq.blogspot.com/2014/08/oak-query-log-file-analyzer-tool.html) e [criação de índices personalizados](/help/sites-deploying/queries-and-indexing.md). Para obter insights adicionais sobre as práticas recomendadas de consulta e índice, consulte [Práticas recomendadas de consultas e indexação](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 
 ### Configurações de índice Lucene {#lucene-index-configurations}
 
@@ -256,9 +256,9 @@ Algumas otimizações podem ser feitas nas configurações de índice do Oak que
 1. Adicione uma propriedade `String[]` `excludedPaths` com valores `/var`, `/etc/workflow/instances` e `/etc/replication`.
 1. Navegue até `/oak:index/damAssetLucene`. Adicione uma propriedade `String[]` `includedPaths` com valor `/content/dam`. Salve as alterações.
 
-Se os usuários não precisarem fazer uma pesquisa de texto completo de ativos, por exemplo, pesquisar texto em documentos do PDF e desativá-la. Você melhora o desempenho do índice desabilitando a indexação de texto completo. Para desabilitar a extração de texto [!DNL Apache Lucene], siga estas etapas:
+Se os usuários não precisarem fazer uma pesquisa de texto completo de ativos, por exemplo, pesquisar texto em documentos do PDF, e desabilitá-la. Você melhora o desempenho do índice desabilitando a indexação de texto completo. Para desabilitar a extração de texto [!DNL Apache Lucene], siga estas etapas:
 
-1. Na interface [!DNL Experience Manager], acesse o [!UICONTROL Gerenciador de Pacotes].
+1. Na interface [!DNL Experience Manager], acesse [!UICONTROL Gerenciador de Pacotes].
 1. Carregue e instale o pacote disponível em [disable_indexingbinarytextextraction-10.zip](assets/disable_indexingbinarytextextraction-10.zip).
 
 ### Estimar Total {#guess-total}
@@ -279,17 +279,17 @@ Para cada implantação do [!DNL Experience Manager], estabeleça um regime de t
 
 ### Teste de rede {#network-testing}
 
-Para todas as questões de desempenho de rede do cliente, execute as seguintes tarefas:
+Para resolver todas as questões de desempenho da rede do cliente, execute as seguintes tarefas:
 
 * Testar o desempenho da rede na rede do cliente
-* Teste o desempenho da rede na rede Adobe. Para clientes do AMS, trabalhe com seu CSE para testar na rede Adobe.
+* Teste o desempenho da rede na rede Adobe. Para clientes do AMS, trabalhe com seu CSE para testar na rede da Adobe.
 * Testar o desempenho da rede de outro ponto de acesso
 * Ao usar uma ferramenta de referencial de rede
-* Testar no dispatcher
+* Teste com o Dispatcher
 
 ### Teste de implantação do [!DNL Experience Manager] {#aem-deployment-testing}
 
-Para minimizar a latência e alcançar alta taxa de transferência por meio da utilização eficiente da CPU e do compartilhamento de carga, monitore o desempenho da sua implantação do [!DNL Experience Manager] regularmente. Em especial:
+Para minimizar a latência e alcançar alta taxa de transferência por meio da utilização eficiente do CPU e do compartilhamento de carga, monitore o desempenho da sua implantação do [!DNL Experience Manager] regularmente. Em especial:
 
 * Executar testes de carga na implantação [!DNL Experience Manager].
 * Monitore o desempenho do upload e a capacidade de resposta da interface.
@@ -307,6 +307,6 @@ Para minimizar a latência e alcançar alta taxa de transferência por meio da u
 * Configure [!DNL ImageMagick] para limitar o consumo de recursos.
 * Remova etapas desnecessárias do fluxo de trabalho [!UICONTROL Ativo de atualização do DAM].
 * Configure a limpeza de fluxo de trabalho e versão.
-* Otimize índices com os Service Packs e hotfixes mais recentes. Consulte o Suporte ao cliente do Adobe para obter as otimizações de índice adicionais que podem estar disponíveis.
+* Otimize índices com os Service Packs e hotfixes mais recentes. Consulte o Suporte ao cliente da Adobe para obter as otimizações de índice adicionais que podem estar disponíveis.
 * Use guessTotal para otimizar o desempenho da consulta.
 * Se você configurar o [!DNL Experience Manager] para detectar tipos de arquivos a partir do conteúdo dos arquivos (habilitando o **[!UICONTROL Day CQ DAM Mime Type Service]** no **[!UICONTROL Console da Web do AEM]**), carregue muitos arquivos em massa durante horas que não sejam de pico, pois ele consome muitos recursos.
