@@ -243,7 +243,7 @@ Ao replicar ativos para um grande número de instâncias de publicação, por ex
 
 ## Pesquisar índices {#search-indexes}
 
-Instale os [Service Packs mais recentes](/help/release-notes/release-notes.md) e hotfixes relacionados ao desempenho, pois esses geralmente incluem atualizações de índices do sistema. Consulte [dicas de ajuste de desempenho](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/administer/performance-tuning-guidelines) para algumas otimizações de índice.
+Instale os [Service Packs mais recentes](/help/release-notes/release-notes.md) e hotfixes relacionados ao desempenho, pois esses geralmente incluem atualizações de índices do sistema. Consulte [dicas de ajuste de desempenho](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/assets/administer/performance-tuning-guidelines) para algumas otimizações de índice.
 
 Crie índices personalizados para consultas executadas com frequência. Para obter detalhes, consulte a [metodologia de análise de consultas lentas](https://aemfaq.blogspot.com/2014/08/oak-query-log-file-analyzer-tool.html) e [criação de índices personalizados](/help/sites-deploying/queries-and-indexing.md). Para obter insights adicionais sobre as práticas recomendadas de consulta e índice, consulte [Práticas recomendadas de consultas e indexação](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 

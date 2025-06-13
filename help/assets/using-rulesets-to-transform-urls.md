@@ -41,14 +41,14 @@ No contexto do Dynamic Media, os sites que usam um sistema baseado em XML para g
 >Tenha cuidado ao usar conjuntos de regras; eles podem impedir que o conteúdo do Dynamic Media seja exibido no seu site.
 
 Há exemplos de conjuntos de regras disponíveis que podem ajudar você a criar seu próprio conjunto de regras.
-Consulte [Referência do conjunto de regras](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/rule-set-reference/c-rule-set-reference).
+Consulte [Referência do conjunto de regras](https://experienceleague.adobe.com/pt-br/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/rule-set-reference/c-rule-set-reference).
 
 Assim como em toda a criação de conjunto de regras, verifique se o arquivo XML é válido antes de fazer upload usando um programa de validação XML, como xmlvalid.
 
 Além disso, primeiro teste seu conjunto de regras em um ambiente de preparo que não afete seu ambiente de produção em tempo real.
 Os ambientes de produção e de preparo normalmente exigem logons diferentes.
 
-Consulte o [aplicativo de desktop do Adobe Dynamic Media Classic para obter informações de entrada](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/getting-started/signing-out#sign-in-dmc-app).
+Consulte o [aplicativo de desktop do Adobe Dynamic Media Classic para obter informações de entrada](https://experienceleague.adobe.com/pt-br/docs/dynamic-media-classic/using/getting-started/signing-out#sign-in-dmc-app).
 
 <!-- OBSOLETE INFORMATION * **NA staging environment** login page: [https://s7sps1-staging.scene7.com/IpsWeb/](https://s7sps1-staging.scene7.com/IpsWeb/)
 * **EMEA staging environment** login page: [https://s7sps3-staging.scene7.com/IpsWeb/](https://s7sps3-staging.scene7.com/IpsWeb/)
@@ -56,7 +56,7 @@ Consulte o [aplicativo de desktop do Adobe Dynamic Media Classic para obter info
 
 **Para implantar conjuntos de regras XML:**
 
-1. Entre no seu [aplicativo de desktop do Dynamic Media Classic](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/getting-started/signing-out#sign-in-dmc-app).
+1. Entre no seu [aplicativo de desktop do Dynamic Media Classic](https://experienceleague.adobe.com/pt-br/docs/dynamic-media-classic/using/getting-started/signing-out#sign-in-dmc-app).
 
    Suas credenciais e detalhes de logon foram fornecidos pela Adobe no momento do provisionamento. Se você não tiver essas informações, entre em contato com o Suporte ao cliente da Adobe.
 
