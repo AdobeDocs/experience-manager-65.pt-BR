@@ -430,7 +430,7 @@ Ao conceber estes testes, deve-se lembrar que nem todos os cenários ocorrem reg
 
 | Cenário de erro | Tipo de erro | Não. de usuários | Tx/s (esperado) | Tx/s (testado) | Descrição |
 |---|---|---|---|---|---|
-| Sobrecarga do componente de pesquisa | Pesquisar no curinga global (asterisco) | 10 | 1 |  | Somente &amp;ast;&amp;ast;&amp;ast; são pesquisados. |
+| Sobrecarga do componente de pesquisa | Pesquisar no curinga global (asterisco) | 10 | 1 |  | Somente &ast;&ast;&ast; são pesquisados. |
 |   | Palavra de interrupção | 20 | 2 |  | Procurando uma palavra de interrupção. |
 |   | String vazia | 10 | 1 |  | Procurando uma cadeia de caracteres vazia. |
 |   | Caracteres especiais | 10 | 1 |  | Procurando caracteres especiais. |
