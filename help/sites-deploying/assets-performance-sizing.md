@@ -9,9 +9,9 @@ exl-id: fbe15e1b-830b-4752-bd02-0d239a90bc68
 solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
 workflow-type: tm+mt
-source-wordcount: '1213'
+source-wordcount: '1205'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ O desempenho do processamento de ativos é medido em termos de tempo médio de c
 * abaixo de um minuto para imagens menores que 100 MB usando representações padrão
 * abaixo de cinco minutos para vídeos de alta definição com menos de um minuto
 
-**3. Velocidade de download** Um problema de taxa de transferência ocorre ao baixar do DAM do AEM que demora e as miniaturas não são exibidas imediatamente ao navegar pelo Administrador do DAM ou pelo Localizador do DAM.
+**3. Velocidade de download** Um problema de taxa de transferência ocorre ao baixar do AEM DAM, que demora muito e as miniaturas não são exibidas imediatamente ao navegar pelo Administrador do DAM ou pelo Localizador do DAM.
 
 O desempenho da taxa de transferência é medido em termos de taxa de transferência, em kilobits por segundo. O desempenho normal é de 300 Kbps para 100 downloads simultâneos.
 
@@ -48,7 +48,7 @@ O desempenho da taxa de transferência é medido em termos de taxa de transferê
 Para estimar qual hardware é necessário para processar ativos, os seguintes aspectos devem ser considerados:
 
 * A resolução de imagens no número de pixels
-* A pilha atribuída ao processo de AEM
+* O heap atribuído ao processo do AEM
 
 O número de pixels contidos na imagem determina o tempo de processamento - mais pixels significa que o processamento leva mais tempo.
 O tipo de imagem, a taxa de compactação ou o tamanho relacionado do arquivo em que a imagem está armazenada não influenciam significativamente o desempenho geral.
@@ -61,7 +61,7 @@ Os processos DAM são adequados para serem executados em paralelo para grandes q
 
 O processamento extensivo de ativos digitais requer recursos de hardware otimizados. Os fatores mais relevantes são o tamanho da imagem e a taxa de transferência máxima das imagens processadas.
 
-Aloque pelo menos 16 GB de heap e configure o fluxo de trabalho do [!UICONTROL Ativo de atualização do DAM] para usar o [pacote Camera Raw](/help/assets/camera-raw.md) para a assimilação de imagens brutas.
+Aloque pelo menos 16 GB de heap e configure o fluxo de trabalho do [!UICONTROL Ativo de atualização do DAM] para usar o [pacote do Camera Raw](/help/assets/camera-raw.md) para a assimilação de imagens brutas.
 
 ## Noções básicas do sistema {#understanding-the-system}
 
@@ -73,9 +73,9 @@ A legenda a seguir descreve as possíveis áreas de armadilha de desempenho com 
 
 **Sistema de Arquivos Temporário** Um sistema de arquivos local lento pode causar problemas de desempenho interativos, especialmente durante a pesquisa, pois os índices de pesquisa são armazenados no disco local. Isso também poderá causar problemas no processamento de ativos se o processo de linha de comando estiver sendo usado.
 
-**Localizador de DAM do AEM** Problemas de desempenho interativos, geralmente enfrentados em pesquisas, são causados pela alta utilização da CPU devido a muitos usuários simultâneos ou outros processos que consomem a CPU na mesma instância. Migrar de máquinas virtuais para máquinas dedicadas e garantir que nenhum outro serviço seja executado na máquina pode ajudar a melhorar o desempenho. Se a alta carga da CPU for causada pelo processamento de ativos e por muitos usuários simultâneos, Day recomenda adicionar outros nós de cluster.
+**Localizador de DAM do AEM** Problemas de desempenho interativos, geralmente enfrentados em pesquisas, são causados pela alta utilização do CPU devido a muitos usuários simultâneos ou outros processos que consomem o CPU na mesma instância. Migrar de máquinas virtuais para máquinas dedicadas e garantir que nenhum outro serviço seja executado na máquina pode ajudar a melhorar o desempenho. Se a alta carga do CPU for causada pelo processamento de ativos e muitos usuários simultâneos, Day recomenda adicionar outros nós de cluster.
 
-**Fluxo de trabalho do DAM para AEM** Processos de fluxo de trabalho de longa duração durante a assimilação de ativos causam problemas de desempenho no processamento de ativos. Dependendo do tipo de ativos que está sendo processado, isso pode indicar a superutilização da CPU. Day recomenda que você reduza o número de outros processos em execução no sistema e aumente o número de CPUs disponíveis adicionando nós de cluster.
+**Fluxo de trabalho do AEM DAM** Processos de fluxo de trabalho de longa duração durante a assimilação de ativos causam problemas de desempenho no processamento de ativos. Dependendo do tipo de ativos que está sendo processado, isso pode indicar a superutilização do CPU. Day recomenda que você reduza o número de outros processos em execução no sistema e aumente o número de CPUs disponíveis adicionando nós de cluster.
 
 **Conectividade NAS** A baixa conectividade de rede com o NAS causa problemas de desempenho interativos, pois o acesso a novos nós durante o processamento de ativos fica lento devido à latência de rede. Além disso, o throughput lento da rede afeta negativamente o throughput, mas também o desempenho do processamento de ativos, pois o carregamento e o salvamento de representações ficam lentos.
 
@@ -105,7 +105,3 @@ Os seguintes ajustes de desempenho foram usados em projetos até o momento:
 
 * Geração de representação seletiva: gere apenas as representações necessárias adicionando condições ao fluxo de trabalho de processamento de ativos, para que representações mais caras sejam geradas apenas para ativos selecionados.
 * Armazenamento de dados compartilhado entre instâncias: quando há pouco espaço em disco, isso pode reduzir consideravelmente a quantidade de espaço em disco necessária, ao custo de maiores esforços de configuração e da perda da limpeza automática do armazenamento de dados.
-
-## Leitura adicional {#further-reading}
-
-* [Analisando Processos Lentos e Bloqueados](https://helpx.adobe.com/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)

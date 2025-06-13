@@ -9,9 +9,9 @@ exl-id: 6ce6a204-db59-4ed2-8383-00c6afba82b4
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
 workflow-type: tm+mt
-source-wordcount: '1775'
+source-wordcount: '1767'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Os detalhes a seguir são ideias e comentários expressos por David Nuescheler.
 
-David foi cofundador e CTO da Day Software AG, líder no fornecimento de software global de gerenciamento de conteúdo e infraestrutura de conteúdo, adquirido pela Adobe em 2010. Agora David é bolsista e VP de Tecnologia Empresarial na Adobe e também lidera o desenvolvimento da JSR-170, a API (Application Programming Interface, interface de programação de aplicativo) do Java™ Content Repository (JCR), o padrão de tecnologia para gerenciamento de conteúdo.
+David foi cofundador e CTO da Day Software AG, líder no fornecimento de software global de gerenciamento de conteúdo e infraestrutura de conteúdo, adquirido pela Adobe em 2010. Agora David é bolsista e VP de Tecnologia Empresarial na Adobe e também lidera o desenvolvimento da JSR-170, a API (Application Programming Interface, interface de programação de aplicativos) do Java™ Content Repository (JCR), o padrão de tecnologia para gerenciamento de conteúdo.
 
 Atualizações adicionais também podem ser vistas em [https://cwiki.apache.org/confluence/display/jackrabbit/DavidsModel](https://cwiki.apache.org/confluence/display/jackrabbit/DavidsModel).
 
@@ -73,8 +73,6 @@ Pessoalmente, prefiro convenções de hierarquia em vez do sistema de digitaçã
 >[!CAUTION]
 >
 >A forma como um repositório de conteúdo é estruturado também pode afetar o desempenho. Para obter o melhor desempenho, o número de nós secundários anexados a nós individuais em um repositório de conteúdo não deve exceder 1.000.
->
->Ver [Quantos dados o CRX pode manipular?](https://helpx.adobe.com/experience-manager/kb/CrxLimitation.html)
 
 #### Exemplo {#example-2}
 
@@ -175,7 +173,7 @@ Eu acho que há casos de uso em que um sistema realmente não pode funcionar se 
 
 Se um modelo de conteúdo expor algo que mesmo remotamente cheira a um arquivo ou pasta, tento usar (ou estender de) `nt:file`, `nt:folder` e `nt:resource`.
 
-Em minha experiência, muitos aplicativos genéricos permitem a interação implícita com nt:folder e nt:files e sabem como lidar e exibir esses eventos se eles forem enriquecidos com metainformações adicionais. Por exemplo, uma interação direta com implementações de servidor de arquivos como CIF ou WebDAV que assenta sobre o JCR fica implícita.
+Em minha experiência, muitos aplicativos genéricos permitem a interação implícita com nt:folder e nt:files e sabem como lidar e exibir esses eventos se eles forem enriquecidos com metainformações adicionais. Por exemplo, uma interação direta com implementações de servidor de arquivos, como CIFS ou WebDAV sobre JCR, torna-se implícita.
 
 Eu acho que como boa regra geral você poderia usar o seguinte: Se você deve armazenar o nome do arquivo e o tipo MIME então `nt:file`/ `nt:resource` é uma boa correspondência. Se você tiver vários &quot;arquivos&quot;, nt:folder é um bom lugar para armazená-los.
 

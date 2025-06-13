@@ -9,9 +9,9 @@ feature: Configuring
 exl-id: b32001a1-0078-43f6-89d6-781d6d2e9c94
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
 workflow-type: tm+mt
-source-wordcount: '650'
+source-wordcount: '636'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Estas são todas as [configurações de OSGi](/help/sites-deploying/configuring-
 
 >[!NOTE]
 >
->O logon no AEM é baseado em princípios Sling. Consulte [Sling Logging](https://sling.apache.org/site/logging.html) para obter mais informações.
+>O logon no AEM é baseado nos princípios do Sling. Consulte [Sling Logging](https://sling.apache.org/site/logging.html) para obter mais informações.
 
 ## Log global {#global-logging}
 
@@ -39,10 +39,6 @@ A [Configuração de log do Apache Sling](/help/sites-deploying/osgi-configurati
 * número de versões a manter
 * rotação de versão; tamanho máximo ou um intervalo de tempo
 * o formato a ser usado ao gravar as mensagens de log
-
->[!NOTE]
->
->Este [artigo da Base de Dados de Conhecimento](https://helpx.adobe.com/experience-manager/kb/HowToRotateRequestAndAccessLog.html) explica como girar os arquivos request.log e access.log.
 
 ## Registradores e Gravadores para Serviços Individuais {#loggers-and-writers-for-individual-services}
 

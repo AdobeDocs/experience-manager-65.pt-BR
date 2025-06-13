@@ -9,9 +9,9 @@ exl-id: fcac75e1-15c1-4a37-8d43-93c95267b903
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
 workflow-type: tm+mt
-source-wordcount: '1790'
+source-wordcount: '1767'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 O teste de desempenho é uma parte importante de qualquer implantação do AEM. Dependendo dos requisitos do cliente, o teste de desempenho pode ser executado nas instâncias de publicação, instâncias de autor ou ambas.
 
-Esta documentação descreve as estratégias e metodologias gerais de execução de testes de desempenho e algumas das ferramentas disponibilizadas pelo Adobe para ajudar no processo. Por fim, leia uma análise das ferramentas disponíveis no AEM 6 para auxiliar no ajuste do desempenho, tanto da perspectiva da análise de código quanto da configuração do sistema.
+Esta documentação descreve as estratégias e metodologias gerais de execução de testes de desempenho e algumas das ferramentas disponibilizadas pela Adobe para ajudar no processo. Por fim, leia uma análise das ferramentas disponíveis no AEM 6 para auxiliar no ajuste de desempenho, tanto da perspectiva da análise de código quanto da configuração do sistema.
 
 ### Simulação da realidade {#simulating-reality}
 
@@ -54,12 +54,10 @@ Existem muitas ferramentas de teste de desempenho disponíveis comercialmente no
 
 #### Ferramentas de teste {#testing-tools}
 
-* A ferramenta Adobe **Dia Difícil** pode ser usada para gerar carga em instâncias AEM e coletar dados de desempenho. A equipe de engenharia do Adobe AEM usa a ferramenta para fazer o teste de carga do próprio produto AEM. Os scripts executados no Dia Difícil são configurados por meio de arquivos de propriedade e arquivos XML JMX. Para obter mais informações, consulte a [documentação do Dia Difícil](/help/sites-developing/tough-day.md).
+* A ferramenta **Dia Difícil** do Adobe pode ser usada para gerar carga em instâncias do AEM e coletar dados de desempenho. A equipe de engenharia do AEM da Adobe usa a ferramenta para fazer testes de carga do próprio produto AEM. Os scripts executados no Dia Difícil são configurados por meio de arquivos de propriedade e arquivos XML JMX. Para obter mais informações, consulte a [documentação do Dia Difícil](/help/sites-developing/tough-day.md).
 
 * O AEM fornece ferramentas prontas para uso para ver rapidamente consultas, solicitações e mensagens de erro problemáticas. Para obter mais informações, consulte a seção [Ferramentas de Diagnóstico](/help/sites-administering/operations-dashboard.md#diagnosis-tools) da documentação do Painel de Operações.
 * O Apache fornece um produto chamado **JMeter** que pode ser usado para testes de desempenho e carga e comportamento funcional. É um software de código aberto e gratuito, mas tem um conjunto de recursos menor do que os produtos empresariais e uma curva de aprendizado mais acentuada. O JMeter pode ser encontrado no site do Apache em [https://jmeter.apache.org/](https://jmeter.apache.org/)
-
-* **Load Runner** é um produto de teste de carga de nível empresarial. Uma versão de avaliação gratuita está disponível. Mais informações podem ser encontradas em [https://www.microfocus.com/en-us/portfolio/performance-engineering/overview](https://www.microfocus.com/en-us/portfolio/performance-engineering/overview)
 
 * Ferramentas de teste de carregamento de site como [Vercara](https://vercara.com/website-performance-management) também podem ser usadas.
 * Ao testar sites móveis ou responsivos, um conjunto separado de ferramentas deve ser usado. Elas funcionam ao aumentar a largura de banda da rede, simulando conexões móveis mais lentas, como 3G ou EDGE. Entre as ferramentas mais usadas estão as seguintes:
@@ -75,15 +73,15 @@ A documentação de [Monitoramento de Desempenho](/help/sites-deploying/monitori
 
 **Modo de Desenvolvedor na Interface para Toque**
 
-Um dos novos recursos na interface de toque do AEM 6 é o Modo de desenvolvedor. Da mesma forma que os autores podem alternar entre os modos de edição e pré-visualização, os desenvolvedores podem alternar para o modo de desenvolvedor na interface do autor. Isso permite que você veja o tempo de renderização de cada um dos componentes na página e veja os rastreamentos de pilha de quaisquer erros. Para obter mais informações sobre o modo de desenvolvedor, consulte esta [apresentação do CQ Gems](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-developer-mode.html?lang=pt-BR).
+Um dos novos recursos na interface para toque do AEM 6 é o Modo de desenvolvedor. Da mesma forma que os autores podem alternar entre os modos de edição e pré-visualização, os desenvolvedores podem alternar para o modo de desenvolvedor na interface do autor. Isso permite que você veja o tempo de renderização de cada um dos componentes na página e veja os rastreamentos de pilha de quaisquer erros. Para obter mais informações sobre o modo de desenvolvedor, consulte esta [apresentação do CQ Gems](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-developer-mode.html).
 
 **Usando o rlog.jar para ler os logs de solicitação**
 
-Para uma análise mais abrangente dos logs de solicitação em um sistema AEM, o `rlog.jar` pode ser usado para pesquisar e classificar os `request.log` arquivos gerados pelo AEM. Este arquivo jar está incluído com uma instalação AEM na pasta `/crx-quickstart/opt/helpers`. Para obter mais informações sobre a ferramenta rlog e o log de solicitação em geral, consulte a documentação de [Monitoramento e Manutenção](/help/sites-deploying/monitoring-and-maintaining.md).
+Para uma análise mais abrangente dos logs de solicitação em um sistema AEM, o `rlog.jar` pode ser usado para pesquisar e classificar os arquivos `request.log` gerados pelo AEM. Este arquivo jar está incluído com uma instalação do AEM na pasta `/crx-quickstart/opt/helpers`. Para obter mais informações sobre a ferramenta rlog e o log de solicitação em geral, consulte a documentação de [Monitoramento e Manutenção](/help/sites-deploying/monitoring-and-maintaining.md).
 
 **A Ferramenta de Consulta de Explicação**
 
-A [ferramenta de Consulta Explicativa](/help/sites-administering/operations-dashboard.md#explain-query), em Ferramentas AEM ACS, pode ser usada para exibir os índices usados ao executar uma consulta. Essa ferramenta é útil ao otimizar consultas de execução lenta.
+A [ferramenta de Consulta Explicativa](/help/sites-administering/operations-dashboard.md#explain-query) nas Ferramentas AEM do ACS pode ser usada para exibir os índices usados ao executar uma consulta. Essa ferramenta é útil ao otimizar consultas de execução lenta.
 
 **Ferramentas PageSpeed**
 
@@ -108,7 +106,7 @@ Em sistemas com back-end MongoDB, o AEM fornece vários [JMX](/help/sites-admini
 
 `https://server:port/system/console/jmx/org.apache.jackrabbit.oak%3Aid%3D6%2Cname%3D%22Consolidated+Cache+statistics%22%2Ctype%3D%22ConsolidatedCacheStats%22`
 
-Para o cache chamado **Document-Diff**, a taxa de ocorrências deve ser superior a `.90`. Se a taxa de ocorrência ficar abaixo de 90%, é provável que você precise editar sua configuração `DocumentNodeStoreService`. O suporte a produtos Adobe pode recomendar configurações ideais para seu ambiente.
+Para o cache chamado **Document-Diff**, a taxa de ocorrências deve ser superior a `.90`. Se a taxa de ocorrência ficar abaixo de 90%, é provável que você precise editar sua configuração `DocumentNodeStoreService`. O suporte ao produto Adobe pode recomendar configurações ideais para seu ambiente.
 
 * O Mbean De **Estatísticas Do Repositório Oak**. Ele pode ser acessado diretamente em:
 
@@ -134,7 +132,7 @@ Ferramentas de teste automatizado de terceiros podem ser usadas para testar o de
 
 A maioria dos sites de produção tem otimizações em vigor, como o armazenamento em cache do Dispatcher e uma rede de entrega de conteúdo em vigor. Ao testar, verifique se essas otimizações também estão disponíveis para o ambiente de teste. Além de monitorar os tempos de resposta para os usuários finais, monitore as métricas do sistema nos servidores de publicação e nos dispatchers para garantir que o sistema não seja restringido pelos recursos de hardware.
 
-Em um sistema que não requer um alto nível de personalização, o Dispatcher deve armazenar em cache a maioria das solicitações. Como resultado, a carga na instância de publicação deve permanecer relativamente plana. Se um alto nível de personalização for necessário, é recomendável usar tecnologias como iFrames ou solicitações de AJAX para o conteúdo personalizado a fim de permitir o máximo possível de armazenamento em cache do Dispatcher.
+Em um sistema que não requer um alto nível de personalização, o Dispatcher deve armazenar em cache a maioria das solicitações. Como resultado, a carga na instância de publicação deve permanecer relativamente plana. Se um alto nível de personalização for necessário, é recomendável usar tecnologias como iFrames ou solicitações do AJAX para o conteúdo personalizado, a fim de permitir o máximo possível de armazenamento em cache do Dispatcher.
 
 Para testes básicos, o Apache Bench pode ser usado para medir os tempos de resposta do servidor da Web e ajudar a criar carga para medir coisas como vazamentos de memória. Veja o exemplo na [Documentação de monitoramento](/help/sites-deploying/monitoring-and-maintaining.md#apache-bench).
 
@@ -155,4 +153,4 @@ Após a execução dos testes de desempenho na instância do autor, todos os pro
 * Elimine o CSS e o JS incorporados dos componentes. Eles devem ser incluídos e minificados com as bibliotecas do lado do cliente para minimizar o número de solicitações necessárias para renderizar a página.
 * Para inspecionar as solicitações do servidor e ver quais estão demorando mais, use ferramentas de navegador, como a guia Rede do Chrome.
 
-Depois que as áreas problemáticas são identificadas, o código do aplicativo pode ser inspecionado quanto a otimizações de desempenho. Qualquer recurso de AEM pronto para uso que não esteja funcionando corretamente pode ser tratado com Suporte para Adobe.
+Depois que as áreas problemáticas são identificadas, o código do aplicativo pode ser inspecionado quanto a otimizações de desempenho. Qualquer recurso pronto para uso do AEM que não esteja funcionando corretamente pode ser resolvido com o Suporte da Adobe.

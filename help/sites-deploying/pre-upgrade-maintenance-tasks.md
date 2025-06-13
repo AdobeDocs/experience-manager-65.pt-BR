@@ -10,9 +10,9 @@ feature: Upgrading
 exl-id: 37d4aee4-15eb-41ab-ad71-dfbd5c7910f8
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
 workflow-type: tm+mt
-source-wordcount: '2014'
+source-wordcount: '1991'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Ao executar a atualização, além das atividades de atualização de conteúdo 
 
 ## Fazer backup completo do AEM {#fully-back-up-aem}
 
-O AEM deve ter backup completo antes de iniciar a atualização. Faça backup do repositório, da instalação do aplicativo, do armazenamento de dados e das instâncias Mongo, se aplicável. Para obter mais informações sobre como fazer backup e restaurar uma instância do AEM, consulte [Backup e Restauração](/help/sites-administering/backup-and-restore.md).
+O backup do AEM deve ser concluído antes do início da atualização. Faça backup do repositório, da instalação do aplicativo, do armazenamento de dados e das instâncias Mongo, se aplicável. Para obter mais informações sobre como fazer backup e restaurar uma instância do AEM, consulte [Backup e Restauração](/help/sites-administering/backup-and-restore.md).
 
 ## Fazer backup de alterações em /etc {#backup-changes-etc}
 
@@ -52,21 +52,19 @@ O processo de atualização faz um bom trabalho de manutenção e mesclagem do c
 
 ## Gerar o arquivo quickstart.properties {#generate-quickstart-properties}
 
-Ao iniciar o AEM do arquivo jar, um arquivo `quickstart.properties` é gerado em `crx-quickstart/conf`. Se o AEM tiver sido iniciado apenas com o script de inicialização no passado, esse arquivo não estará presente e a atualização falhará. Verifique a existência desse arquivo e reinicie o AEM a partir do arquivo jar, se ele não estiver presente.
+Ao iniciar o AEM do arquivo jar, um arquivo `quickstart.properties` é gerado em `crx-quickstart/conf`. Se o AEM só tiver sido iniciado com o script de inicialização no passado, esse arquivo não estará presente e a atualização falhará. Verifique a existência desse arquivo e reinicie o AEM a partir do arquivo jar, se ele não estiver presente.
 
 ## Configurar a limpeza do fluxo de trabalho e do log de auditoria {#configure-wf-audit-purging}
 
 As tarefas `WorkflowPurgeTask` e `com.day.cq.audit.impl.AuditLogMaintenanceTask` exigem configurações OSGi separadas e não podem funcionar sem elas. Se eles falharem durante a execução da tarefa de pré-atualização, a falta de configurações será o motivo mais provável. Portanto, adicione configurações OSGi para essas tarefas ou remova-as completamente da lista de tarefas de otimização de pré-atualização se não quiser executá-las. A documentação para configurar tarefas de limpeza de fluxo de trabalho pode ser encontrada em [Administrando Instâncias de Fluxo de Trabalho](/help/sites-administering/workflows-administering.md) e a configuração da tarefa de manutenção de log de auditoria pode ser encontrada em [Manutenção de Log de Auditoria no AEM 6](/help/sites-administering/operations-audit-log.md).
 
-Para limpeza de fluxo de trabalho e log de auditoria no CQ 5.6 e limpeza de log de auditoria no AEM 6.0, consulte [Limpar fluxo de trabalho e nós de auditoria](https://helpx.adobe.com/experience-manager/kb/howtopurgewf.html).
-
 ## Instalar, Configurar e Executar as Tarefas de Pré-Atualização {#install-configure-run-pre-upgrade-tasks}
 
 Devido ao nível de personalização permitido pelo AEM, os ambientes geralmente não seguem uma maneira uniforme de executar atualizações. Assim, a criação de um procedimento padronizado para atualizações é um processo difícil.
 
-Em versões anteriores, também era difícil para atualizações de AEM que eram interrompidas ou que não eram retomadas com segurança. Esse problema levou a situações em que era necessário reiniciar o procedimento de atualização completo ou em que atualizações com defeito eram realizadas sem disparar avisos.
+Em versões anteriores, também era difícil para atualizações do AEM que eram interrompidas ou que não eram retomadas com segurança. Esse problema levou a situações em que era necessário reiniciar o procedimento de atualização completo ou em que atualizações com defeito eram realizadas sem disparar avisos.
 
-Para resolver esses problemas, o Adobe adicionou vários aprimoramentos ao processo de atualização, tornando-o mais resiliente e fácil de usar. As tarefas de manutenção pré-atualização que antes tinham de ser realizadas manualmente estão sendo otimizadas e automatizadas. Além disso, foram adicionados relatórios pós-atualização para que o processo possa ser totalmente analisado, na esperança de que quaisquer problemas sejam encontrados mais facilmente.
+Para resolver esses problemas, a Adobe adicionou vários aprimoramentos ao processo de atualização, tornando-o mais resiliente e fácil de usar. As tarefas de manutenção pré-atualização que antes tinham de ser realizadas manualmente estão sendo otimizadas e automatizadas. Além disso, foram adicionados relatórios pós-atualização para que o processo possa ser totalmente analisado, na esperança de que quaisquer problemas sejam encontrados mais facilmente.
 
 Atualmente, as tarefas de manutenção pré-atualização estão distribuídas por várias interfaces que são parcial ou totalmente executadas manualmente. A otimização de manutenção de pré-atualização introduzida no AEM 6.3 permite uma maneira unificada de acionar essas tarefas e inspecionar seus resultados sob demanda.
 
@@ -229,7 +227,7 @@ Abaixo está uma lista de todos os métodos disponíveis que `PreUpgradeTasksMBe
   <tr>
    <td><code>detectUsageOfUnavailableAPI(aemVersion)</code></td>
    <td>AÇÃO</td>
-   <td>Lista todos os pacotes importados que não são mais satisfeitos quando <br /> é atualizado para a versão do AEM especificada. A versão do AEM de destino deve ser <br /> fornecida como parâmetro.</td>
+   <td>Lista todos os pacotes importados que não são mais satisfeitos quando <br /> é atualizado para a versão do AEM especificada. A versão de destino do AEM deve ser <br /> fornecida como parâmetro.</td>
   </tr>
  </tbody>
 </table>
@@ -247,11 +245,11 @@ Abaixo está uma lista de todos os métodos disponíveis que `PreUpgradeTasksMBe
 
 >[!NOTE]
 >
->Esta etapa só é necessária se você estiver atualizando de uma versão AEM 5. Ele pode ser ignorado totalmente para atualizações de versões mais antigas do AEM 6.
+>Esta etapa só será necessária se você estiver atualizando de uma versão do AEM 5. Ele pode ser ignorado totalmente para atualizações de versões mais antigas do AEM 6.
 
 A forma como os `LoginModules` personalizados são configurados para autenticação no nível do repositório mudou radicalmente no Apache Oak.
 
-Nas versões do AEM que usavam a configuração do CRX2, ela era colocada no arquivo `repository.xml`, enquanto do AEM 6 em diante ela era feita no serviço Apache Felix JAAS Configuration Fatory, por meio do Console da Web.
+Nas versões do AEM que usavam a configuração do CRX2, ela era colocada no arquivo `repository.xml`, enquanto do AEM 6 em diante ela era feita no serviço de fábrica de configuração do Apache Felix JAAS através do console da Web.
 
 Portanto, todas as configurações existentes precisarão ser desativadas e recriadas para o Apache Oak após a atualização.
 
@@ -284,9 +282,9 @@ Para desabilitar os módulos personalizados definidos na configuração JAAS de 
 
 >[!NOTE]
 >
->Remova os pacotes somente do diretório crx-quickstart/install DEPOIS de desligar a instância AEM. Esta etapa é uma das últimas antes de iniciar o procedimento de atualização no local.
+>Remova pacotes somente do diretório crx-quickstart/install APÓS desligar a instância do AEM. Esta etapa é uma das últimas antes de iniciar o procedimento de atualização no local.
 
-Remova service packs, pacotes de recursos ou hotfixes que foram implantados por meio do diretório `crx-quickstart/install` no sistema de arquivos local. Isso impede a instalação inadvertida de hotfixes e service packs antigos sobre a nova versão do AEM após a conclusão da atualização.
+Remova service packs, pacotes de recursos ou hotfixes que foram implantados por meio do diretório `crx-quickstart/install` no sistema de arquivos local. Isso impede a instalação inadvertida de hotfixes e service packs antigos na nova versão do AEM, após a conclusão da atualização.
 
 ## Interromper Quaisquer Instâncias De Modo De Espera Por Frio {#stop-tarmk-coldstandby-instance}
 
@@ -314,9 +312,9 @@ Depois de executar a limpeza de revisão nas instâncias do CRX3, você deve exe
 
 ## Fazer Upgrade do Esquema de Banco de Dados, Se Necessário {#upgrade-the-database-schema-if-needed}
 
-Normalmente, a pilha subjacente do Apache Oak que o AEM usa para persistência cuida do upgrade do esquema do banco de dados, se necessário.
+Normalmente, a pilha subjacente do Apache Oak que o AEM usa para persistência cuida da atualização do esquema do banco de dados, se necessário.
 
-No entanto, podem surgir casos em que o esquema não pode ser atualizado automaticamente. Esses casos são, em sua maioria, ambientes de alta segurança nos quais o banco de dados é executado sob um usuário com privilégios limitados. Se tal situação ocorrer, o AEM continuará a usar o esquema antigo.
+No entanto, podem surgir casos em que o esquema não pode ser atualizado automaticamente. Esses casos são, em sua maioria, ambientes de alta segurança nos quais o banco de dados é executado sob um usuário com privilégios limitados. Se essa situação ocorrer, o AEM continuará a usar o esquema antigo.
 
 Para evitar que esse cenário aconteça, atualize o esquema fazendo o seguinte:
 
@@ -361,4 +359,4 @@ Para contornar esse problema, faça o seguinte:
 
 ## Girar arquivos de registro {#rotate-log-files}
 
-O Adobe recomenda arquivar seus arquivos de log atuais antes de iniciar a atualização. Isso facilita a monitoração e a varredura dos arquivos de registro durante e após a atualização para identificar e resolver quaisquer problemas que possam ocorrer.
+A Adobe recomenda arquivar seus arquivos de log atuais antes de iniciar a atualização. Isso facilita a monitoração e a varredura dos arquivos de registro durante e após a atualização para identificar e resolver quaisquer problemas que possam ocorrer.

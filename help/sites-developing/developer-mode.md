@@ -10,7 +10,7 @@ exl-id: aef0350f-4d3d-47f4-9c7e-5675efef65d9
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
 workflow-type: tm+mt
 source-wordcount: '683'
 ht-degree: 1%
@@ -56,8 +56,8 @@ Isso ajuda um desenvolvedor a:
 >
 >Consulte:
 >
->* Artigo da Base de Dados de Conhecimento, [Solução de problemas da interface para toque AEM](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html), para obter mais dicas e ferramentas.
->* Sessão Gems do AEM sobre [Modo de Desenvolvedor do AEM 6.0](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-developer-mode.html?lang=pt-BR).
+>* Artigo da Base de Dados de Conhecimento, [Solução de problemas da interface para toque do AEM](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-16935), para obter mais dicas e ferramentas.
+>* Sessão do AEM Gems sobre o [Modo de Desenvolvedor do AEM 6.0](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-developer-mode.html).
 >
 
 ## Abrindo o Modo de Desenvolvedor {#opening-developer-mode}
@@ -83,7 +83,7 @@ Isso mostra uma árvore de componentes que:
 * Permite expandir a árvore e selecionar componentes específicos dentro dela. A seleção fornece acesso aos detalhes do componente; como:
 
    * Caminho do repositório
-   * Links para scripts (acessados em CRXDE Lite)
+   * Links para scripts (acessados no CRXDE Lite)
 
 * Os componentes selecionados (no fluxo de conteúdo, indicados por uma borda azul) serão destacados na árvore de conteúdo (e vice-versa).
 
@@ -106,7 +106,7 @@ Cada entrada de componente pode mostrar (por exemplo):
 
 * **Editar Script**: um link que:
 
-   * abre o script do componente no CRXDE Lite.
+   * abre o script de componentes no CRXDE Lite.
 
 * A expansão de uma entrada de componente (ponta de seta) também pode mostrar:
 
@@ -138,6 +138,6 @@ A entrada de componente na árvore da guia Componentes também será marcada com
 
 >[!CAUTION]
 >
->No AEM 6.2, os recursos de teste do modo de Desenvolvedor foram reimplementados como uma aplicação de Ferramentas independente.
+>No AEM 6.2, os recursos de teste do modo de Desenvolvedor foram reimplementados como um aplicativo de Ferramentas independente.
 >
 >Para obter detalhes completos, consulte [Testando sua interface](/help/sites-developing/hobbes.md).

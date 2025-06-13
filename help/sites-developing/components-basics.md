@@ -10,9 +10,9 @@ exl-id: 7ff92872-697c-4e66-b654-15314a8cb429
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
 workflow-type: tm+mt
-source-wordcount: '4843'
+source-wordcount: '4828'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Quando você começa a desenvolver novos componentes, é necessário entender as noções básicas de sua estrutura e configuração.
 
-Esse processo envolve a leitura da teoria e a análise da ampla gama de implementações de componentes em uma instância padrão do AEM. Essa última abordagem é um pouco complicada pelo fato de que, embora o AEM tenha mudado para uma nova interface padrão, moderna e habilitada para toque, ela continua a ser compatível com a interface clássica.
+Esse processo envolve a leitura da teoria e a análise da ampla variedade de implementações de componentes em uma instância padrão do AEM. Essa última abordagem é um pouco complicada pelo fato de que, embora o AEM tenha mudado para uma nova interface padrão, moderna e habilitada para toque, ela continua a ser compatível com a interface clássica.
 
 ## Visão geral {#overview}
 
@@ -35,11 +35,11 @@ Antes de começar a realmente configurar ou codificar seu componente, você deve
    * Uma especificação clara ajuda em todos os estágios de desenvolvimento, teste e entrega. Os detalhes podem mudar com o tempo, mas a especificação pode ser atualizada (embora as alterações também devam ser documentadas).
 * Você precisa criar seu componente do zero ou pode herdar as noções básicas de um componente existente?
    * Não há necessidade de reinventar a roda.
-   * Há vários mecanismos fornecidos pelo AEM que permitem herdar e estender detalhes de outra definição de componente, incluindo substituição, sobreposição e o [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md).
+   * Há vários mecanismos fornecidos pela AEM que permitem herdar e estender detalhes de outra definição de componente, incluindo substituição, sobreposição e o [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md).
 * O componente requer lógica para selecionar ou manipular o conteúdo?
    * A lógica deve ser mantida separada da camada da interface do usuário. O HTL foi projetado para ajudar a garantir que isso aconteça.
 * Seu componente precisa de formatação CSS?
-   * A formatação CSS deve ser mantida separada das definições de componentes. Defina convenções para nomear seus elementos de HTML para que você possa modificá-los por meio de arquivos CSS externos.
+   * A formatação CSS deve ser mantida separada das definições de componentes. Defina convenções para nomear seus elementos HTML de modo que você possa modificá-los por meio de arquivos CSS externos.
 * Quais aspectos de segurança devo considerar?
    * Consulte [Lista de verificação de segurança - Práticas recomendadas de desenvolvimento](/help/sites-administering/security-checklist.md#development-best-practices) para obter mais detalhes.
 
@@ -50,9 +50,9 @@ Antes de qualquer discussão séria começar sobre o desenvolvimento de componen
 * **Interface Habilitada para Toque**
   [A interface de usuário padrão](/help/sites-developing/touch-ui-concepts.md) é baseada na experiência de usuário unificada da Adobe Experience Cloud, usando as tecnologias subjacentes da [Interface do usuário do Coral](/help/sites-developing/touch-ui-concepts.md#coral-ui) e da [Interface do usuário do Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui).
 * **Interface clássica**
-Interface do usuário baseada na tecnologia ExtJS que foi descontinuada com o AEM 6.4.
+Interface do usuário baseada na tecnologia ExtJS, que foi descontinuada com o AEM 6.4.
 
-Consulte [Interface de Usuário do Recommendations para Clientes](/help/sites-deploying/ui-recommendations.md) para obter mais detalhes.
+Consulte [Recomendações da interface do usuário para clientes](/help/sites-deploying/ui-recommendations.md) para obter mais detalhes.
 
 Os componentes podem ser implementados para suportar a interface habilitada para toque, a interface clássica ou ambas. Ao observar uma instância padrão, você também verá componentes prontos para uso que foram originalmente projetados para a interface clássica, para a interface habilitada para toque ou para ambas.
 
@@ -60,7 +60,7 @@ As noções básicas de ambos são abordadas nesta página e como reconhecê-las
 
 >[!NOTE]
 >
->A Adobe recomenda o uso da interface habilitada para toque para se beneficiar da tecnologia mais recente. As [Ferramentas de Modernização do AEM](modernization-tools.md) podem facilitar a migração.
+>A Adobe recomenda usar a interface habilitada para toque para se beneficiar da tecnologia mais recente. As [Ferramentas de Modernização do AEM](modernization-tools.md) podem facilitar a migração.
 
 ### Lógica de conteúdo e marcação de renderização  {#content-logic-and-rendering-markup}
 
@@ -70,7 +70,7 @@ Esta filosofia é suportada pelo [HTL](https://experienceleague.adobe.com/docs/e
 
 ### HTL vs JSP {#htl-vs-jsp}
 
-HTL é uma linguagem de modelo de HTML introduzida com AEM 6.0.
+HTL é uma linguagem de modelo do HTML introduzida com o AEM 6.0.
 
 A discussão sobre o uso de [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=pt-BR) ou JSP (Java™ Server Pages) ao desenvolver seus próprios componentes deve ser direta, pois o HTL agora é a linguagem de script recomendada para o AEM.
 
@@ -91,13 +91,13 @@ Uma maneira rápida de começar é copiar um componente existente e fazer as alt
 
 * [Desenvolvendo componentes](/help/sites-developing/developing-components-samples.md) (com foco na interface habilitada para toque)
 
-### Mover componentes para a instância do Publish {#moving-components-to-the-publish-instance}
+### Mover componentes para a instância de publicação {#moving-components-to-the-publish-instance}
 
 Os componentes que renderizam conteúdo devem ser implantados na mesma instância do AEM que o conteúdo. Portanto, todos os componentes usados para criar e renderizar páginas na instância do autor devem ser implantados na instância de publicação. Quando implantados, os componentes ficam disponíveis para renderizar páginas ativadas.
 
 Use as seguintes ferramentas para mover seus componentes para a instância de publicação:
 
-* [Use o Gerenciador de Pacotes](/help/sites-administering/package-manager.md) para adicionar seus componentes a um pacote e movê-los para outra instância de AEM.
+* [Use o Gerenciador de Pacotes](/help/sites-administering/package-manager.md) para adicionar seus componentes a um pacote e movê-los para outra instância do AEM.
 * [Use a ferramenta de replicação Ativar Árvore](/help/sites-authoring/publishing-pages.md#manage-publication) para replicar os componentes.
 
 >[!NOTE]
@@ -108,7 +108,7 @@ Use as seguintes ferramentas para mover seus componentes para a instância de pu
 
 * Página:
 
-   * AEM tem o componente *página* ( `cq:Page`).
+   * O AEM tem o componente *página* ( `cq:Page`).
    * Esse é um tipo específico de recurso importante para o gerenciamento de conteúdo.
       * Uma página corresponde a uma página da Web com conteúdo para o seu site.
 
@@ -121,7 +121,7 @@ Use as seguintes ferramentas para mover seus componentes para a instância de pu
 
 ## Estrutura {#structure}
 
-A estrutura de um componente AEM é poderosa e flexível. As principais considerações são:
+A estrutura de um componente do AEM é poderosa e flexível. As principais considerações são:
 
 * Tipo de recurso
 * Definição de componente
@@ -146,7 +146,7 @@ Essa é uma abstração que ajuda a garantir que, mesmo quando a aparência muda
 
 A definição de um componente pode ser dividida da seguinte forma:
 
-* Componentes de AEM baseados em [Sling](https://sling.apache.org/documentation.html).
+* Os componentes do AEM são baseados em [Sling](https://sling.apache.org/documentation.html).
 * Os componentes do AEM estão (geralmente) localizados em:
 
    * HTL: `/libs/wcm/foundation/components`
@@ -189,9 +189,9 @@ A definição de um componente pode ser dividida da seguinte forma:
 
 * **Nós-Filhos Vitais**:
 
-   * `cq:editConfig (cq:EditConfig)` - Define as propriedades de edição do componente e habilita o componente para aparecer no navegador de Componentes ou Sidekick.
+   * `cq:editConfig (cq:EditConfig)` - Define as propriedades de edição do componente e habilita o componente para aparecer no navegador de Componentes ou no Sidekick.
 
-     Observação: se o componente tiver uma caixa de diálogo, ele aparecerá automaticamente no navegador de Componentes ou Sidekick, mesmo se cq:editConfig não existir.
+     Observação: se o componente tiver uma caixa de diálogo, ele será exibido automaticamente no navegador Componentes ou no Sidekick, mesmo se cq:editConfig não existir.
 
    * `cq:childEditConfig (cq:EditConfig)` - Controla os aspectos da interface do usuário do autor para componentes filho que não definem seu próprio `cq:editConfig`.
    * Interface habilitada para toque:
@@ -269,7 +269,7 @@ Um componente é um nó do tipo `cq:Component` e tem as seguintes propriedades e
   <tr>
    <td><code>componentGroup</code></td>
    <td><code>String</code></td>
-   <td>Grupo no qual o componente pode ser selecionado no navegador Componentes (interface habilitada para toque) ou Sidekick (interface clássica).<br /> Um valor de <code>.hidden</code> é usado para componentes que não estão disponíveis para seleção na interface do usuário, como os sistemas de parágrafos reais.</td>
+   <td>Grupo no qual o componente pode ser selecionado no navegador Componentes (interface habilitada para toque) ou no Sidekick (interface clássica).<br /> Um valor de <code>.hidden</code> é usado para componentes que não estão disponíveis para seleção na interface do usuário, como os sistemas de parágrafos reais.</td>
   </tr>
   <tr>
    <td><code>cq:isContainer</code></td>
@@ -314,7 +314,7 @@ Um componente é um nó do tipo `cq:Component` e tem as seguintes propriedades e
   <tr>
    <td><code>cq:cellName</code></td>
    <td><code>String</code></td>
-   <td>Se definida, essa propriedade será tomada como ID da célula. Para obter mais informações, consulte o artigo da Base de Dados de Conhecimento <a href="https://helpx.adobe.com/experience-manager/kb/DesigneCellId.html">Como as IDs de Células de Design são criadas</a>.<br /> </td>
+   <td>Se definida, esta propriedade será tomada como ID da Célula.<br /> </td>
   </tr>
   <tr>
    <td><code>cq:childEditConfig</code></td>
@@ -339,12 +339,12 @@ Um componente é um nó do tipo `cq:Component` e tem as seguintes propriedades e
   <tr>
    <td><code>cq:template</code></td>
    <td><code>nt:unstructured</code></td>
-   <td>Se encontrado, esse nó será usado como um template de conteúdo quando o componente for adicionado do Navegador de componentes ou Sidekick.</td>
+   <td>Se encontrado, esse nó será usado como um modelo de conteúdo quando o componente for adicionado do Navegador de componentes ou do Sidekick.</td>
   </tr>
   <tr>
    <td><code>cq:templatePath</code></td>
    <td><code>String</code></td>
-   <td>Caminho para um nó a ser usado como modelo de conteúdo quando o componente for adicionado do navegador de Componentes ou Sidekick. Deve ser um caminho absoluto, não relativo ao nó do componente.<br /> A menos que você queira reutilizar o conteúdo já disponível em outro lugar, isso não é necessário e <code>cq:template</code> é suficiente (veja abaixo).</td>
+   <td>Caminho para um nó a ser usado como modelo de conteúdo quando o componente for adicionado do navegador Componentes ou do Sidekick. Deve ser um caminho absoluto, não relativo ao nó do componente.<br /> A menos que você queira reutilizar o conteúdo já disponível em outro lugar, isso não é necessário e <code>cq:template</code> é suficiente (veja abaixo).</td>
   </tr>
   <tr>
    <td><code>jcr:created</code></td>
@@ -384,7 +384,7 @@ Um componente é um nó do tipo `cq:Component` e tem as seguintes propriedades e
   <tr>
    <td><code>thumbnail.png</code></td>
    <td><code>nt:file</code></td>
-   <td>Miniatura opcional que é mostrada enquanto o componente é arrastado para o lugar do Sidekick.<br /> </td>
+   <td>Miniatura opcional que é mostrada enquanto o componente é arrastado para o local do Sidekick.<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -415,7 +415,7 @@ Os nós filhos de interesse específico incluem:
 * Interface clássica:
    * `dialog` ( `cq:Dialog`) - define a caixa de diálogo para editar o conteúdo deste componente (específico da interface clássica)
    * `design_dialog` ( `cq:Dialog`) - especifica as opções de edição de design deste componente
-   * `icon.png` - arquivo gráfico a ser usado como um ícone para o componente no Sidekick
+   * `icon.png` - arquivo gráfico a ser usado como ícone para o componente na Sidekick
    * `thumbnail.png` - arquivo gráfico a ser usado como miniatura do componente ao arrastá-lo do Sidekick
 
 ### Caixas de diálogo {#dialogs}
@@ -429,7 +429,7 @@ As definições de caixa de diálogo são específicas da interface do usuário:
 >[!NOTE]
 >
 >* Para fins de compatibilidade, a interface habilitada para toque pode usar a definição de uma caixa de diálogo da interface clássica, quando nenhuma caixa de diálogo foi definida para a interface habilitada para toque.
->* As [Ferramentas de Modernização do AEM](/help/sites-developing/modernization-tools.md) também são fornecidas para ajudar a estender/converter componentes que têm apenas caixas de diálogo definidas para a interface clássica.
+>* As [Ferramentas de Modernização do AEM](/help/sites-developing/modernization-tools.md) também são fornecidas para ajudar a estender/converter componentes que tenham apenas caixas de diálogo definidas para a interface clássica.
 >
 
 * Interface de usuário habilitada para toque
@@ -521,7 +521,7 @@ As propriedades definidas dependem das definições individuais. Embora possam s
 
 ## Hierarquia e herança do componente {#component-hierarchy-and-inheritance}
 
-Os componentes dentro do AEM estão sujeitos a três hierarquias diferentes:
+Os componentes no AEM estão sujeitos a três hierarquias diferentes:
 
 * **Hierarquia de Tipo de Recurso**
 
@@ -595,11 +595,11 @@ O comportamento de edição de um componente é configurado adicionando um nó `
 
 Há muitas configurações existentes no repositório. Você pode pesquisar facilmente por propriedades específicas ou nós secundários:
 
-* Para procurar uma propriedade do nó `cq:editConfig`, por exemplo, `cq:actions`, você pode usar a ferramenta Query em **CRXDE Lite** e pesquisar com a seguinte sequência de consulta XPath:
+* Para procurar uma propriedade do nó `cq:editConfig`, por exemplo, `cq:actions`, você pode usar a ferramenta Query no **CRXDE Lite** e pesquisar com a seguinte sequência de consulta XPath:
 
   `//element(cq:editConfig, cq:EditConfig)[@cq:actions]`
 
-* Para procurar um nó filho de `cq:editConfig`, por exemplo, você pode procurar por `cq:dropTargets`, que é do tipo `cq:DropTargetConfig`; você pode usar a ferramenta Consulta em** CRXDE Lite* e pesquisar com a seguinte sequência de consulta XPath:
+* Para procurar um nó filho de `cq:editConfig`, por exemplo, você pode procurar por `cq:dropTargets`, que é do tipo `cq:DropTargetConfig`; você pode usar a ferramenta Consulta no** CRXDE Lite** e pesquisar com a seguinte sequência de consulta XPath:
 
   `//element(cq:dropTargets, cq:DropTargetConfig)`
 
@@ -608,7 +608,7 @@ Há muitas configurações existentes no repositório. Você pode pesquisar faci
 Os componentes sempre devem renderizar algum HTML que esteja visível para o autor, mesmo quando o componente não tiver conteúdo. Caso contrário, ela poderá desaparecer visualmente da interface do editor, tornando-se tecnicamente presente, mas invisível na página e no editor. Nesse caso, os autores não podem selecionar e interagir com o componente vazio.
 
 Por esse motivo, os componentes devem renderizar um espaço reservado, desde que não renderizem nenhuma saída visível quando a página for renderizada no editor de páginas (quando o modo WCM for `edit` ou `preview`).
-A marcação de HTML típica de um espaço reservado é a seguinte:
+A marcação típica do HTML para um espaço reservado é a seguinte:
 
 ```HTML
 <div class="cq-placeholder" data-emptytext="Component Name"></div>
@@ -623,7 +623,7 @@ O script HTL típico que renderiza o HTML de espaço reservado acima é o seguin
 
 No exemplo anterior, `isEmpty` é uma variável que só é verdadeira quando o componente não tem conteúdo e está invisível para o autor.
 
-Para evitar repetição, o Adobe recomenda que os implementadores de componentes usem um modelo HTL para esses espaços reservados, [como o fornecido pelos Componentes Principais.](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/commons/v1/templates.html)
+Para evitar repetição, a Adobe recomenda que os implementadores de componentes usem um modelo HTL para esses espaços reservados, [como o fornecido pelos Componentes Principais.](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/commons/v1/templates.html)
 
 O uso do modelo no link anterior é feito com a seguinte linha de HTL:
 
@@ -923,9 +923,9 @@ O nó `cq:inplaceEditing` (tipo de nó `cq:InplaceEditingConfig`) define uma con
    <td><code>editorType</code></td>
    <td><p>(<code>String</code>) Tipo de editor. Os tipos disponíveis são:</p>
     <ul>
-     <li>texto sem formatação: para ser usado para conteúdo não-HTML.<br /> </li>
-     <li>título: é um editor de texto sem formatação aprimorado que converte títulos gráficos em texto sem formatação antes de começar a edição. Usado pelo componente Geometrixx title.<br /> </li>
-     <li>text: a ser usado para conteúdo de HTML (usa o Editor de Rich Text).<br /> </li>
+     <li>texto sem formatação: a ser usado para conteúdo não-HTML.<br /> </li>
+     <li>título: é um editor de texto sem formatação aprimorado que converte títulos gráficos em texto sem formatação antes de começar a edição. Usado pelo componente de título Geometrixx.<br /> </li>
+     <li>text: a ser usado para conteúdo HTML (usa o Editor de Rich Text).<br /> </li>
     </ul> </td>
   </tr>
  </tbody>

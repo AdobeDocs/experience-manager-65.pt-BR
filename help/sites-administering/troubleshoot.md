@@ -10,9 +10,9 @@ exl-id: d2d351e7-87a5-4895-b4ec-391fb0b66798
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
 workflow-type: tm+mt
-source-wordcount: '536'
+source-wordcount: '527'
 ht-degree: 2%
 
 ---
@@ -74,18 +74,18 @@ Consulte [Problemas Comuns de Instalação](/help/sites-deploying/troubleshootin
 
 ### Fazendo um despejo de encadeamento {#making-a-thread-dump}
 
-O despejo de thread é uma lista de todas as threads do Java™ que estão ativas no momento. Se o AEM não responder corretamente, o despejo de encadeamento pode ajudar a identificar bloqueios ou outros problemas.
+O despejo de thread é uma lista de todas as threads do Java™ que estão ativas no momento. Se o AEM não responder corretamente, o despejo de thread poderá ajudar a identificar bloqueios ou outros problemas.
 
 ### Uso do Sling Thread Dumper {#using-sling-thread-dumper}
 
-1. Abra o **Console da Web do AEM**; por exemplo, em `https://localhost:4502/system/console/`.
+1. Abra o **AEM Web Console**; por exemplo, em `https://localhost:4502/system/console/`.
 1. Selecione a guia **Threads** em **Status**.
 
 ![screen_shot_2012-02-13at43925pm](assets/screen_shot_2012-02-13at43925pm.png)
 
 ### Usando jstack (linha de comando) {#using-jstack-command-line}
 
-1. Localize o PID (ID do processo) da instância do Java™ AEM.
+1. Localize o PID (ID do processo) da instância do AEM Java™.
 
    Por exemplo, você pode usar `ps -ef` ou `jps`.
 
@@ -101,23 +101,23 @@ O despejo de thread é uma lista de todas as threads do Java™ que estão ativa
 >
 >`jstack <pid> >> /path/to/logfile.log`
 
-Consulte a documentação [Como remover despejos de thread de uma JVM](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=pt-BR) para obter mais informações
+Consulte a documentação [Como remover despejos de thread de uma JVM](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html) para obter mais informações
 
 ### Verificando sessões JCR não fechadas {#checking-for-unclosed-jcr-sessions}
 
-Quando a funcionalidade é desenvolvida para o WCM do AEM, as sessões JCR podem ser abertas (comparável à abertura de uma conexão de banco de dados). Se as sessões abertas nunca forem fechadas, o sistema pode apresentar os seguintes sintomas:
+Quando a funcionalidade é desenvolvida para o AEM WCM, as sessões JCR podem ser abertas (comparável à abertura de uma conexão de banco de dados). Se as sessões abertas nunca forem fechadas, o sistema pode apresentar os seguintes sintomas:
 
 * O sistema fica mais lento.
 * Você pode ver grande parte das entradas do CacheManager: resizeAll no arquivo de log; o seguinte número (size=&lt;x>) mostra o número de caches, cada sessão abre vários caches.
 * Periodicamente, o sistema fica sem memória (após algumas horas, dias ou semanas - dependendo da gravidade).
 
-Para analisar sessões não fechadas e descobrir qual código não está fechando uma sessão, consulte o artigo da Base de Dados de Conhecimento [Analisar sessões não fechadas](https://helpx.adobe.com/experience-manager/kb/AnalyzeUnclosedSessions.html).
+Para começar a analisar sessões não fechadas, consulte o artigo da Base de Dados de Conhecimento [Unclosed Resource Resolver](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-23761).
 
 ### Uso do console da Web do Adobe Experience Manager {#using-the-adobe-experience-manager-web-console}
 
 O status dos pacotes OSGi também pode fornecer uma indicação antecipada de possíveis problemas.
 
-1. Abra o **Console da Web do AEM**; por exemplo, em `https://localhost:4502/system/console/`.
+1. Abra o **AEM Web Console**; por exemplo, em `https://localhost:4502/system/console/`.
 1. Selecione **Pacotes** na guia **OSGI**.
 1. Verificar:
 

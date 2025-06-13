@@ -1,5 +1,5 @@
 ---
-title: Criação de conteúdo acessível (Conformidade com a WCAG 2.0)
+title: 'Criação de conteúdo acessível (Conformidade com a WCAG 2.0)  '
 description: A WCAG 2.0 consiste em um conjunto de diretrizes de tecnologia independentes e critérios de sucesso para ajudar a tornar o conteúdo da Web acessível e utilizável para pessoas com necessidades especiais.
 page-status-flag: de-activated
 contentOwner: Chris Bohnert
@@ -10,9 +10,9 @@ exl-id: 01c69aa9-2623-42dc-9e2d-62bc5e01cf0e
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
 workflow-type: tm+mt
-source-wordcount: '9070'
+source-wordcount: '9057'
 ht-degree: 60%
 
 ---
@@ -87,13 +87,13 @@ Para gráficos estáticos, o requisito básico é o de proporcionar uma alternat
 
 >[!NOTE]
 >
->Alguns componentes prontos para uso, como o **Carrossel** e a **Apresentação de slides**, não fornecem um meio de adicionar descrições de texto alternativas a imagens. Ao implementar as versões desses componentes para a instância do AEM, sua equipe de desenvolvimento deve configurá-los para suportar o atributo `alt`. Isso garante que os autores possam adicioná-lo ao conteúdo (consulte [Adicionar compatibilidade com elementos e atributos de HTML adicionais](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
+>Alguns componentes prontos para uso, como o **Carrossel** e a **Apresentação de slides**, não fornecem um meio de adicionar descrições de texto alternativas a imagens. Ao implementar as versões desses componentes para a instância do AEM, a equipe de desenvolvimento deve configurá-los para suportar o atributo `alt`. Isso garante que os autores possam adicioná-lo ao conteúdo (consulte [Adicionar compatibilidade com elementos e atributos de HTML adicionais](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
 
 O campo **Texto Alt** está disponível na guia de propriedades de imagem **Avançado** da caixa de diálogo do componente **Imagem**:
 
 ![A caixa de diálogo de edição do componente de Imagem na interface clássica; mostra o campo Texto Alternativo.](assets/chlimage_1-17a.png)
 
-AEM adiciona um **Texto alternativo** às suas imagens por padrão. Para a interface clássica, há dois cenários diferentes para como o atributo padrão é criado, embora o valor padrão possa não ser suficiente como alternativa e provavelmente deva ser editado na guia de propriedades da imagem **Avançado**:
+Por padrão, o AEM adiciona um **Texto alternativo** às suas imagens. Para a interface clássica, há dois cenários diferentes para como o atributo padrão é criado, embora o valor padrão possa não ser suficiente como alternativa e provavelmente deva ser editado na guia de propriedades da imagem **Avançado**:
 
 * Arquivo:
 
@@ -126,7 +126,7 @@ Existem várias formas de conteúdo não textual, portanto, o valor da alternati
 * Se o conteúdo não textual estiver contido em um elemento de botão e não houver texto fazendo parte do mesmo botão, o texto alternativo da imagem deverá indicar a funcionalidade do botão, não descrever a imagem.
 * É aceitável disponibilizar um texto alternativo vazio (nulo) para uma imagem, mas somente se ela não tiver um texto alternativo. Por exemplo, é um gráfico meramente decorativo. Ou, se o texto equivalente já existir no texto da página.
 
-O [Rascunho do W3C: Técnicas HTML5 para fornecer alternativas em texto úteis](https://html.spec.whatwg.org/multipage/images.html#alt) tem mais detalhes e exemplos de provisionamento em texto alternativo apropriado para imagens de diferentes tipos.
+O [Rascunho do W3C: Técnicas da HTML5 para fornecer alternativas em texto úteis](https://html.spec.whatwg.org/multipage/images.html#alt) tem mais detalhes e exemplos de provisionamento em texto alternativo apropriado para imagens de diferentes tipos.
 
 Tipos específicos de conteúdo não textual que necessitam de alternativas em texto podem incluir:
 
@@ -174,7 +174,7 @@ Tipos específicos de conteúdo não textual que necessitam de alternativas em t
 
 * Imagens de fundo:
 
-  Essas imagens são obtidas usando as Folhas de estilo em cascata (CSS), em vez de em HTML. Não é possível especificar um valor de texto alternativo. Portanto, as imagens de fundo não devem fornecer informações textuais importantes; caso forneçam, essas informações também devem ser fornecidas no texto da página.
+  Essas imagens são obtidas usando as Folhas de estilo em cascata (CSS), em vez do HTML. Não é possível especificar um valor de texto alternativo. Portanto, as imagens de fundo não devem fornecer informações textuais importantes; caso forneçam, essas informações também devem ser fornecidas no texto da página.
 
   No entanto, é importante que um plano de fundo alternativo seja exibido quando a imagem não puder ser exibida.
 
@@ -186,7 +186,7 @@ Tipos específicos de conteúdo não textual que necessitam de alternativas em t
 
 * [Noções sobre o Critério de sucesso 1.1.1](https://www.w3.org/TR/UNDERSTANDING-WCAG20/text-equiv-all.html)
 * [Como cumprir o Critério de sucesso 1.1.1](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#text-alternatives)
-* [W3C: técnicas de HTML5 para fornecer alternativas em texto úteis](https://html.spec.whatwg.org/multipage/images.html#alt)
+* [W3C: técnicas do HTML5 para fornecer alternativas em texto úteis](https://html.spec.whatwg.org/multipage/images.html#alt)
 * [Explicação do W3C sobre as alternativas para CAPTCHAs](https://www.w3.org/TR/turingtest/)
 
 ### Mídia com base no tempo (1.2)       {#time-based-media}
@@ -222,7 +222,7 @@ Fornecer essas informações em um formato diferente, como texto (ou áudio para
 
    * Forneça um link imediatamente antes ou depois do conteúdo para obter uma transcrição do texto do conteúdo de áudio.
 
-     A transcrição deve ser uma página de HTML com um equivalente em texto de todo o conteúdo falado e não-falado importante. Ele também deve indicar quem está falando, uma descrição do cenário, expressões vocais e uma descrição de qualquer outro áudio significativo.
+     A transcrição deve ser uma página do HTML com um equivalente em texto de todo o conteúdo falado e não falado importante. Ele também deve indicar quem está falando, uma descrição do cenário, expressões vocais e uma descrição de qualquer outro áudio significativo.
 
 * Se o conteúdo for uma animação ou vídeo pré-gravado sem áudio:
 
@@ -233,7 +233,7 @@ Fornecer essas informações em um formato diferente, como texto (ou áudio para
 >
 >Se o conteúdo de áudio ou vídeo for fornecido como uma alternativa ao conteúdo que existe em outro formato em uma página da Web, não será necessário seguir os requisitos acima. Por exemplo, se um vídeo ilustra uma lista de instruções de texto, ele não exigirá uma alternativa, pois as instruções de texto já agem como uma alternativa ao vídeo.
 
-Inserir multimídia, especificamente conteúdo de Flash, nas páginas da Web do AEM é semelhante a inserir uma imagem. No entanto, como o conteúdo multimídia é muito mais do que uma imagem estática, há várias configurações e opções diferentes para controlar como a multimídia é reproduzida.
+Inserir multimídia, especificamente conteúdo Flash, nas páginas da Web do AEM é semelhante a inserir uma imagem. No entanto, como o conteúdo multimídia é muito mais do que uma imagem estática, há várias configurações e opções diferentes para controlar como a multimídia é reproduzida.
 
 >[!NOTE]
 >
@@ -306,13 +306,13 @@ Há duas abordagens que podem ser adotadas para atender a esse critério de suce
 
 1. Forneça uma transcrição de texto que seja um equivalente de texto adequado dos elementos visuais e de áudio do vídeo ou da animação. Ele deve incluir, quando apropriado, uma indicação de quem está falando, uma descrição do cenário, expressões vocais. Dependendo do tamanho, você pode colocar a transcrição na mesma página do vídeo ou animação ou em uma página separada; caso escolha a última opção, forneça um link para a transcrição ao lado do vídeo ou animação.
 
-Detalhes exatos de como criar um vídeo descrito por áudio estão fora do escopo desse guia. A criação de descrições de vídeo e áudio pode ser demorada, mas outros produtos de Adobe podem ajudar a realizar essas tarefas. Se você criar o conteúdo no Adobe Flash Professional, também será necessário criar um script para solicitar que o usuário baixe o plug-in adequado e fornecer uma alternativa em texto por meio do elemento `<noscript>`.
+Detalhes exatos de como criar um vídeo descrito por áudio estão fora do escopo desse guia. A criação de descrições de vídeo e áudio pode ser demorada, mas outros produtos da Adobe podem ajudar a realizar essas tarefas. Se você criar o conteúdo no Adobe Flash Professional, também será necessário criar um script para solicitar que o usuário baixe o plug-in adequado e fornecer uma alternativa em texto por meio do elemento `<noscript>`.
 
 #### Mais informações - Descrição de áudio ou alternativa de mídia (pré-gravada) (1.2.3) {#more-information-audio-description-or-media-alternative-pre-recorded}
 
 * [Noções sobre o Critério de sucesso 1.2.3](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc.html):
 * [Como cumprir o Critério de sucesso 1.2.3](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-media-equiv-audio-desc)
-* [Adobe Encore CS5](https://helpx.adobe.com/br/premiere-pro/using/whats-new.html)
+* [Adobe Encore CS5](https://helpx.adobe.com/premiere-pro/using/whats-new.html)
 
 ### Legendas (ao vivo) (1.2.4)        {#captions-live}
 
@@ -328,12 +328,11 @@ Esse critério de sucesso é idêntico às [Legendas (pré-gravadas)](#captions-
 
 Siga as orientações fornecidas para [Legendas (pré-gravadas)](#captions-pre-recorded) acima. No entanto, devido à natureza viva dos meios de comunicação social, a disposição da legenda tem de ser criada o mais rapidamente possível e em resposta ao que está a acontecer. Portanto, você deve considerar o uso de legendas em tempo real ou ferramentas de fala para texto.
 
-Instruções detalhadas estão além do escopo desse documento, mas os seguintes recursos disponibilizam informações úteis:
+As instruções detalhadas estão além do escopo deste documento, mas o recurso a seguir fornece informações úteis:
 
 * [WebAIM: legendagem em tempo real](https://webaim.org/techniques/captions/realtime)
-* [AccessIT (University of Washington): as legendas podem ser geradas automaticamente usando reconhecimento de voz?](https://www.washington.edu/doit/programs/accessit?1209)
 
-#### Mais informações - Legendas (ao vivo) (1.2.4)    {#more-information-captions-live}
+#### Mais informações - Legendas (ao vivo) (1.2.4)     {#more-information-captions-live}
 
 * [Noções sobre o Critério de sucesso 1.2.4](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-real-time-captions.html)
 * [Como cumprir o Critério de sucesso 1.2.4](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-media-equiv-real-time-captions)
@@ -377,7 +376,7 @@ Esta diretriz abrange os requisitos necessários para fornecer suporte a pessoas
 
 Muitas tecnologias de assistência utilizadas por indivíduos com deficiência contam com informações estruturais para exibir ou produzir conteúdo de forma eficiente. Essas informações estruturais podem assumir a forma de cabeçalhos de página, cabeçalhos de linha e coluna de tabela e tipos de lista. Por exemplo, um leitor de tela pode permitir que um usuário navegue por uma página de cabeçalho em cabeçalho. No entanto, caso a estrutura do conteúdo da página pareça depender exclusivamente do estilo visual, em vez do HTML subjacente, não haverá informações estruturais disponíveis para as tecnologias de acessibilidade e sua capacidade de facilitar a navegação será limitada.
 
-Esse critério de sucesso existe para garantir que a informação estrutural seja fornecida por meio do HTML, para que os navegadores e as tecnologias assistivas possam acessar e aproveitar as informações.
+Esse critério de sucesso existe para garantir que as informações estruturais sejam fornecidas por meio do HTML, para que os navegadores e as tecnologias de assistência possam acessar e aproveitar as informações.
 
 #### Como cumprir - Informações e Relações (1.3.1)     {#how-to-meet-info-and-relationships}
 
@@ -423,7 +422,7 @@ Verifique se as suas páginas da Web têm a estrutura apropriada ao:
 
      No RTE, use o ícone **Lista numerada**.
 
-  Se desejar alterar o conteúdo existente em um tipo de lista específica, destaque o texto e selecione o tipo de lista apropriado. Como no exemplo anterior, que mostra como o texto de parágrafo é inserido, os elementos da lista apropriados são adicionados automaticamente ao HTML, mas você pode visualizá-los na exibição de edição de origem.
+  Se desejar alterar o conteúdo existente em um tipo de lista específica, destaque o texto e selecione o tipo de lista apropriado. Como no exemplo anterior, que mostra como o texto de parágrafo é inserido, os elementos de lista apropriados são adicionados automaticamente ao HTML, mas você pode exibi-los na exibição de edição de origem.
 
   >[!NOTE]
   >
@@ -431,7 +430,7 @@ Verifique se as suas páginas da Web têm a estrutura apropriada ao:
 
 * **Usar tabelas**:
 
-  As tabelas de dados devem ser identificadas usando os elementos da tabela de HTML:
+  As tabelas de dados devem ser identificadas usando os elementos da tabela do HTML:
 
    * um elemento `<table>`
    * um elemento `<tr>` para cada linha da tabela
@@ -506,7 +505,7 @@ Verifique se as suas páginas da Web têm a estrutura apropriada ao:
 
   >[!NOTE]
   >
-  >Essa funcionalidade não está imediatamente disponível em uma instalação padrão. Ela requer a configuração das regras de HTML RTE; e do serializador.
+  >Essa funcionalidade não está imediatamente disponível em uma instalação padrão. Ela requer a configuração das regras e do serializador RTE; HTML.
 
 #### Mais informações - Informações e Relações (1.3.1) {#more-information-info-and-relationships}
 

@@ -8,7 +8,7 @@ feature: Configuring
 exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
+source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
 workflow-type: tm+mt
 source-wordcount: '3461'
 ht-degree: 1%
@@ -27,7 +27,7 @@ Os armazenamentos de dados e os armazenamentos de nó podem ser configurados usa
 
 Para configurar o armazenamento de nós e o armazenamento de dados, execute estas etapas:
 
-1. Copie o arquivo JAR AEM quickstart para seu diretório de instalação.
+1. Copie o arquivo JAR do AEM quickstart para seu diretório de instalação.
 1. Crie uma pasta `crx-quickstart/install` no diretório de instalação.
 1. Primeiro, configure o armazenamento de nós criando um arquivo de configuração com o nome da opção de armazenamento de nós que você deseja usar no diretório `crx-quickstart/install`.
 
@@ -52,18 +52,18 @@ Para configurar o armazenamento de nós e o armazenamento de dados, execute esta
 
 ### Armazenamento de nós do segmento {#segment-node-store}
 
-O armazenamento de nós de segmentos é a base da implementação do Adobe TarMK no AEM6. Ele usa o PID `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService` para configuração.
+O armazenamento de nós de segmento é a base da implementação TarMK da Adobe no AEM6. Ele usa o PID `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService` para configuração.
 
 >[!CAUTION]
 >
->O PID para o armazenamento do nó do Segmento foi alterado de `org.apache.jackrabbit.oak.plugins.segment.SegmentNodeStoreService in previous versions` do AEM 6 para `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService` no AEM 6.3. Certifique-se de fazer os ajustes de configuração necessários para refletir essa alteração.
+>O PID para o armazenamento do nó de Segmento foi alterado de `org.apache.jackrabbit.oak.plugins.segment.SegmentNodeStoreService in previous versions` do AEM 6 para `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService` no AEM 6.3. Certifique-se de fazer os ajustes de configuração necessários para refletir essa alteração.
 
 Você pode configurar as seguintes opções:
 
 * `repository.home`: Caminho para a página inicial do repositório em que os dados relacionados ao repositório são armazenados. Por padrão, os arquivos de segmento são armazenados no diretório `crx-quickstart/segmentstore`.
 
 * `tarmk.size`: Tamanho máximo de um segmento em MB. O máximo padrão é 256 MB.
-* `customBlobStore`: valor booleano indicando que um armazenamento de dados personalizado está sendo usado. O valor padrão é true para AEM 6.3 e versões posteriores. Antes do AEM 6.3, o padrão era falso.
+* `customBlobStore`: valor booleano indicando que um armazenamento de dados personalizado está sendo usado. O valor padrão é true para o AEM 6.3 e versões posteriores. Antes do AEM 6.3, o padrão era falso.
 
 Este é um exemplo de arquivo `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config`:
 
@@ -141,13 +141,13 @@ O AEM pode ser configurado para armazenar dados no S3 (Simple Storage Service, s
 
 >[!NOTE]
 >
->O AEM 6.5 é compatível com o armazenamento de dados no S3 da Amazon, no entanto, o suporte não se estende ao armazenamento de dados em outras plataformas, cujos fornecedores podem ter suas próprias implementações das APIs S3 da Amazon.
+>O AEM 6.5 é compatível com o armazenamento de dados no S3 da Amazon. No entanto, o suporte não se estende ao armazenamento de dados em outras plataformas, cujos fornecedores podem ter suas próprias implementações das APIs S3 da Amazon.
 
-Para ativar a funcionalidade de armazenamento de dados do S3, um pacote de recursos contendo o Conector de armazenamento de dados do S3 deve ser baixado e instalado. Vá para o [Repositório de Adobe](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/) e baixe a versão mais recente das versões 1.10.x do pacote de recursos (por exemplo, com.adobe.granite.oak.s3connector-1.10.0.zip). Além disso, você deve baixar e instalar o service pack AEM mais recente conforme listado na página [Notas de versão do AEM 6.5](/help/release-notes/release-notes.md).
+Para ativar a funcionalidade de armazenamento de dados do S3, um pacote de recursos contendo o Conector de armazenamento de dados do S3 deve ser baixado e instalado. Acesse o [Repositório do Adobe](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/) e baixe a versão mais recente das versões 1.10.x do pacote de recursos (por exemplo, com.adobe.granite.oak.s3connector-1.10.0.zip). Além disso, baixe e instale o service pack mais recente da AEM, conforme listado na página [Notas de versão do AEM 6.5](/help/release-notes/release-notes.md).
 
 >[!NOTE]
 >
->Ao usar AEM com TarMK, os binários serão armazenados por padrão no `FileDataStore`. Para usar TarMK com o S3 Datastore, você deve iniciar o AEM usando o modo de execução `crx3tar-nofds`, por exemplo:
+>Ao usar o AEM com TarMK, os binários serão armazenados por padrão no `FileDataStore`. Para usar TarMK com o S3 Datastore, você deve iniciar o AEM usando o modo de execução `crx3tar-nofds`, por exemplo:
 
 ```shell
 java -jar <aem-jar-file>.jar -r crx3tar-nofds
@@ -203,7 +203,7 @@ Para atualizar para uma nova versão do conector S3 1.10.x (por exemplo, de 1.10
    >
    >Os nomes de arquivo apresentados acima são usados apenas para fins ilustrativos.
 
-1. Baixe a versão mais recente do pacote de recursos 1.10.x do [Repositório de Adobe](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/).
+1. Baixe a versão mais recente do pacote de recursos 1.10.x do [Repositório do Adobe](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/).
 1. Descompacte o conteúdo em uma pasta separada e navegue até `jcr_root/libs/system/install/15`.
 1. Copie os arquivos jar para **&lt;aem-install>**/crx-quickstart/install/15 na pasta de instalação do AEM.
 1. Inicie o AEM e verifique a funcionalidade do conector.
@@ -242,7 +242,7 @@ Você pode usar o arquivo de configuração com as opções detalhadas abaixo.
 | maxConnections | Defina o número máximo de conexões HTTP abertas permitidas. | 50 | Não. |
 | maxErrorRetry | Defina o número máximo de tentativas de repetição para solicitações com falha (recuperáveis). | 3 | Não. |
 | minRecordLength | O tamanho mínimo de um objeto (em bytes) que deve ser armazenado no armazenamento de dados. | 16384 | Não. |
-| caminho | O caminho local do armazenamento de dados AEM. | `crx-quickstart/repository/datastore` | Não. |
+| caminho | O caminho local do armazenamento de dados do AEM. | `crx-quickstart/repository/datastore` | Não. |
 | proxyHost | Defina o host do proxy opcional pelo qual o cliente se conecta. | | Não. |
 | proxyPort | Defina a porta de proxy opcional pela qual o cliente se conecta. | | Não. |
 | s3Bucket | Nome do bucket do S3. | | Sim |
@@ -359,7 +359,7 @@ Para configurar a replicação sem binários com o S3, as seguintes etapas são 
 
    `java -Xmx1024m -jar cq-quickstart.jar -r crx3,crx3mongo`
 
-1. Repita as etapas de 1 a 4 para a segunda instância de AEM.
+1. Repita as etapas de 1 a 4 para a segunda instância do AEM.
 1. Inicie a segunda instância do AEM.
 
 #### Configurar um armazenamento de dados compartilhado {#configuring-a-shared-data-store}
@@ -389,12 +389,12 @@ Para configurar a replicação sem binários com o S3, as seguintes etapas são 
    >[https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-run/](https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-run/)
    >
    >
-   >Devem ser usadas diferentes versões da ferramenta, dependendo da versão do Oak usada com a instalação do AEM. Verifique a lista de requisitos de versão abaixo antes de usar a ferramenta:
+   >Devem ser usadas diferentes versões da ferramenta, dependendo da versão do Oak usada na instalação do AEM. Verifique a lista de requisitos de versão abaixo antes de usar a ferramenta:
    >
    >
    >
    >    * Para versões do Oak **1.2.x**, use o **1.2.12 ou mais recente** de execução do Oak
-   >    * Para versões do Oak **mais recentes do que a acima**, use a versão do Oak-run que corresponda ao núcleo do Oak da sua instalação do AEM.
+   >    * Para versões do Oak **mais recentes que a acima**, use a versão do Oak-run que corresponda ao núcleo do Oak da sua instalação do AEM.
    >
    >
 
@@ -411,11 +411,11 @@ Para configurar a replicação sem binários com o S3, as seguintes etapas são 
 
 O AEM pode ser configurado para armazenar dados no serviço de armazenamento Azure da Microsoft®. Ele usa o PID `org.apache.jackrabbit.oak.plugins.blob.datastore.AzureDataStore.config` para configuração.
 
-Para habilitar a funcionalidade de armazenamento de dados do Azure, um pacote de recursos contendo o Azure Connector deve ser baixado e instalado. Acesse o [Repositório de Adobe](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.azureblobconnector/) e baixe a versão mais recente das versões 1.6.x do pacote de recursos (por exemplo, com.adobe.granite.oak.azureblobconnector-1.6.3.zip).
+Para habilitar a funcionalidade de armazenamento de dados do Azure, um pacote de recursos contendo o Azure Connector deve ser baixado e instalado. Acesse o [Repositório do Adobe](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.azureblobconnector/) e baixe a versão mais recente das versões 1.6.x do pacote de recursos (por exemplo, com.adobe.granite.oak.azureblobconnector-1.6.3.zip).
 
 >[!NOTE]
 >
->Ao usar AEM com TarMK, os binários são armazenados por padrão no FileDataStore. Para usar TarMK com o Azure DataStore, você deve iniciar o AEM usando o modo de execução `crx3tar-nofds`, por exemplo:
+>Ao usar o AEM com TarMK, os binários são armazenados por padrão no FileDataStore. Para usar TarMK com o Azure DataStore, você deve iniciar o AEM usando o modo de execução `crx3tar-nofds`, por exemplo:
 
 ```shell
 java -jar <aem-jar-file>.jar -r crx3tar-nofds
@@ -445,7 +445,7 @@ Você pode usar o arquivo de configuração com as seguintes opções:
 * azureSas=&quot;&quot;: na versão 1.6.3 do conector, o suporte à Assinatura de Acesso Compartilhado (SAS) do Azure foi adicionado. **Se as credenciais SAS e de armazenamento existirem no arquivo de configuração, a SAS terá prioridade.** Para obter mais informações sobre a SAS, consulte a [documentação oficial](https://learn.microsoft.com/en-us/azure/storage/common/storage-sas-overview). Verifique se o caractere &#39;=&#39; tem escape como &#39;\=&#39;.
 
 * azureBlobEndpoint=&quot;&quot;: O ponto de extremidade do Azure Blob. Por exemplo, https://&lt;storage-account>.blob.core.windows.net.
-* accessKey=&quot;&quot;: O nome da conta de armazenamento. Para obter mais detalhes sobre as credenciais de autenticação do Microsoft® Azure, consulte a [documentação oficial](https://azure.microsoft.com/en-us/documentation/articles/storage-create-storage-account).
+* accessKey=&quot;&quot;: O nome da conta de armazenamento. Para obter mais detalhes sobre as credenciais de autenticação do Microsoft® Azure, consulte a [documentação oficial](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-create).
 
 * secretKey=&quot;&quot;: A chave de acesso de armazenamento. Verifique se o caractere &#39;=&#39; tem escape como &#39;\=&#39;.
 * container=&quot;&quot;: o nome do container do Microsoft® Azure blob Storage. O container é um agrupamento de um conjunto de blobs. Para obter detalhes adicionais, leia a [documentação oficial](https://learn.microsoft.com/en-us/rest/api/storageservices/Naming-and-Referencing-Containers--Blobs--and-Metadata?redirectedfrom=MSDN).

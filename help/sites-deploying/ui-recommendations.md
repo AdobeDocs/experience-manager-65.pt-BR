@@ -1,5 +1,5 @@
 ---
-title: Interface do usuário do Recommendations para clientes
+title: Recomendações da interface do usuário para clientes
 description: Uma lista de recomendações relacionadas às interfaces do usuário clássicas e otimizadas para toque.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,14 @@ exl-id: 7b71119a-ff58-47c0-aeef-a705ed8c40e0
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
 workflow-type: tm+mt
-source-wordcount: '788'
+source-wordcount: '764'
 ht-degree: 0%
 
 ---
 
-# Interface do usuário do Recommendations para clientes{#user-interface-recommendations-for-customers}
+# Recomendações da interface do usuário para clientes{#user-interface-recommendations-for-customers}
 
 O Adobe Experience Manager vem com duas interfaces: a interface unificada do Experience Cloud (também conhecida como interface habilitada para toque) e a interface clássica.
 
@@ -45,15 +45,15 @@ Recursos para agregar informações sobre o visitante e usá-las para vários pr
 
 ## Geral {#general}
 
-Nos últimos anos, a Adobe atualizou todas as soluções da Adobe Experience Cloud com uma interface unificada. Os usuários nas soluções Experience Cloud desfrutam de uma experiência consistente com padrões comuns sobre como usar e operar os aplicativos. Com cada versão, o Adobe refinou sua interface do usuário com base no feedback dos clientes que trabalham nas várias soluções.
+Nos últimos anos, a Adobe atualizou todas as soluções da Adobe Experience Cloud com uma interface de usuário unificada. Os usuários nas soluções da Experience Cloud desfrutam de uma experiência consistente com padrões comuns sobre como usar e operar os aplicativos. A cada versão, a Adobe refinou sua interface do usuário com base no feedback dos clientes que trabalham nas várias soluções.
 
-A interface de usuário original do Adobe Experience Manager (anteriormente conhecida como CQ5), introduzida em 2008 e usada por clientes que executam as versões 5.0 a 5.6.1, está presente no AEM 6.5. Isso garante que os clientes possam atualizar para o 6.5 e se beneficiar de uma plataforma atualizada com novos recursos, usando a mesma interface do usuário.
+A interface original do Adobe Experience Manager (anteriormente conhecida como CQ5), introduzida em 2008 e usada por clientes que executam as versões 5.0 a 5.6.1, está presente no AEM 6.5. Isso garante que os clientes possam atualizar para o 6.5 e se beneficiar de uma plataforma atualizada com novos recursos, usando a mesma interface do usuário.
 
 A Adobe recomenda que os clientes planejem mudar para a nova interface em 2018/19. Isso pode ser feito durante a atualização para a versão 6.5 ou em projetos separados após a atualização, o que incluiria os ajustes necessários nas personalizações e nas caixas de diálogo de componentes.
 
-A interface clássica foi descontinuada com o AEM 6.4 e o Adobe não planeja fazer mais melhorias na interface clássica. Observe que a interface clássica permanece totalmente compatível enquanto estiver sendo descontinuada.
+A interface clássica foi descontinuada pelo AEM 6.4 e a Adobe não planeja fazer mais melhorias na interface clássica. Observe que a interface clássica permanece totalmente compatível enquanto estiver sendo descontinuada.
 
-### Regras e Recommendations {#rules-and-recommendations}
+### Regras e recomendações {#rules-and-recommendations}
 
 Esta é uma lista de recomendações do Gerenciamento de produtos do Adobe Experience Manager 6.5:
 
@@ -68,7 +68,7 @@ Esta é uma lista de recomendações do Gerenciamento de produtos do Adobe Exper
    <td>Use a interface padrão.</td>
   </tr>
   <tr>
-   <td><p>Já usa AEM há algum tempo.</p> <p>Usou a interface do usuário do produto pronta para uso e desenvolveu componentes personalizados para os sites.<br /> </p> </td>
+   <td><p>Usa o AEM há algum tempo.</p> <p>Usou a interface do usuário do produto pronta para uso e desenvolveu componentes personalizados para os sites.<br /> </p> </td>
    <td>
     <ol>
      <li>Atualização para 6.5</li>
@@ -76,7 +76,7 @@ Esta é uma lista de recomendações do Gerenciamento de produtos do Adobe Exper
      <li>Configure a ação "Editar página" para abrir o Editor de páginas da interface clássica. Consulte <a href="#selecting-your-ui">Selecionando sua interface</a>.</li>
     </ol> <p>Em seguida, em uma segunda fase:</p>
     <ol>
-     <li>Atualize as caixas de diálogo dos componentes para usar o formato da caixa de diálogo Coral 3. A Adobe recomenda o uso das <a href="/help/sites-developing/modernization-tools.md">Ferramentas de Modernização de AEM</a> para atualizar os componentes.</li>
+     <li>Atualize as caixas de diálogo dos componentes para usar o formato da caixa de diálogo Coral 3. A Adobe recomenda usar as <a href="/help/sites-developing/modernization-tools.md">Ferramentas de Modernização do AEM</a> para atualizar os componentes.</li>
     </ol> </td>
   </tr>
   <tr>
@@ -88,20 +88,16 @@ Esta é uma lista de recomendações do Gerenciamento de produtos do Adobe Exper
      <li>Configure a ação "Editar página" para abrir o Editor de páginas da interface clássica. Consulte <a href="#selecting-your-ui">Selecionando sua interface</a>.</li>
     </ol> <p>Em seguida, em uma segunda fase:</p>
     <ol>
-     <li>Atualize as caixas de diálogo dos componentes para usar o formato da caixa de diálogo Coral 3. A Adobe recomenda o uso das <a href="/help/sites-developing/modernization-tools.md">Ferramentas de Modernização de AEM</a> para atualizar os componentes.</li>
-     <li>Configure o ContextHub (a substituição do ClientContext) e atualize os modelos de página para usar o ContextHub. O ContextHub tem um modo de compatibilidade que permite carregar armazenamentos de ClientContexts personalizados.</li>
+     <li>Atualize as caixas de diálogo dos componentes para usar o formato da caixa de diálogo Coral 3. A Adobe recomenda usar as <a href="/help/sites-developing/modernization-tools.md">Ferramentas de Modernização do AEM</a> para atualizar os componentes.</li>
+     <li>Configure o ContextHub (a substituição do ClientContext) e atualize os modelos de página para usar o ContextHub. O ContextHub tem um modo de compatibilidade que permite carregar lojas ClientContext personalizadas.</li>
     </ol> </td>
   </tr>
   <tr>
-   <td><p>Tem usado CQ/AEM por muitos anos.</p> <p>O estendeu a interface do usuário do produto (por exemplo, Administrador do site) e criou componentes com caixas de diálogo de edição abrangentes.</p> </td>
+   <td><p>A usa o CQ/AEM há muitos anos.</p> <p>O estendeu a interface do usuário do produto (por exemplo, Administrador do site) e criou componentes com caixas de diálogo de edição abrangentes.</p> </td>
    <td><p>Atualize para a versão 6.5 e configure a interface clássica como padrão para a criação de página para todos os usuários. Consulte <a href="#selecting-your-ui">Selecionando sua interface</a>.</p> <p>Em seguida, inicie um projeto para aplicar a personalização e otimizar as caixas de diálogo do componente no formato Coral 3. Consulte <a href="#resources-to-help">Recursos para obter ajuda</a>.<br /> </p> </td>
   </tr>
  </tbody>
 </table>
-
-### Perguntas frequentes {#faq}
-
-Consulte o artigo da Base de Dados de Conhecimento, [Perguntas frequentes sobre a criação da interface para toque](https://helpx.adobe.com/experience-manager/kb/index/touchui_faq.html), para obter detalhes; incluindo informações sobre o agendamento de desativação da interface clássica.
 
 ### Seleção da interface do usuário {#selecting-your-ui}
 
@@ -109,7 +105,7 @@ Consulte [Selecionando a Interface do Usuário](/help/sites-authoring/select-ui.
 
 ### Status da interface de usuário habilitada para toque {#touch-enabled-ui-status}
 
-Para obter detalhes sobre as melhorias feitas na interface habilitada para toque no AEM 6.5, consulte [Novidades](/help/release-notes/release-notes.md#what-s-new) nas Notas de versão.
+Para obter detalhes sobre os aprimoramentos feitos na interface habilitada para toque no AEM 6.5, consulte [Novidades](/help/release-notes/release-notes.md#what-s-new) nas Notas de versão.
 
 Uma visão geral completa veja a página [Status do Recurso da Interface para Toque](/help/release-notes/touch-ui-features-status.md)
 

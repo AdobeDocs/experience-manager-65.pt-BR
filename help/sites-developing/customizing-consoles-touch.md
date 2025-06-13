@@ -1,6 +1,6 @@
 ---
 title: Personalização dos Consoles
-description: O AEM fornece vários mecanismos que permitem personalizar os consoles da sua instância de criação
+description: O AEM fornece vários mecanismos para permitir personalizar os consoles da sua instância de criação
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
@@ -10,7 +10,7 @@ exl-id: 6e67f2b3-78b9-45f2-b496-61776b9fd9cc
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 3aa55b88f589749fb49d5ff46340b0912d490157
+source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
 workflow-type: tm+mt
 source-wordcount: '649'
 ht-degree: 0%
@@ -31,7 +31,7 @@ As clientlibs permitem estender a implementação padrão para obter uma nova fu
 * Sobreposições
 As sobreposições são baseadas nas definições de nó e permitem sobrepor a funcionalidade padrão (em `/libs`) com sua própria funcionalidade personalizada (em `/apps`). Ao criar uma sobreposição, uma cópia 1:1 do original não é necessária, pois a fusão de recursos do sling permite a herança.
 
-Eles podem ser usados de várias maneiras para estender os consoles AEM. Uma pequena seleção é abordada abaixo (em um nível alto).
+Eles podem ser usados de várias maneiras para estender os consoles do AEM. Uma pequena seleção é abordada abaixo (em um nível alto).
 
 >[!NOTE]
 >
@@ -64,7 +64,7 @@ Por exemplo, o seguinte local dentro da estrutura `/libs` pode ser sobreposto:
 
 >[!NOTE]
 >
->Consulte o artigo da Base de Dados de Conhecimento, [Solução de problemas da interface para toque do AEM](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html), para obter mais dicas e ferramentas.
+>Consulte o artigo da Base de Dados de Conhecimento, [Solução de problemas da interface para toque do AEM](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-16935), para obter mais dicas e ferramentas.
 
 ## Personalizando a View Default para uma Console {#customizing-the-default-view-for-a-console}
 
@@ -89,12 +89,12 @@ Por exemplo, o seguinte local dentro da estrutura `/libs` pode ser sobreposto:
    Defina a seguinte propriedade:
 
    * **Nome**: `sling:orderBefore`
-   * **Tipo**: `String`
+   * **Tipo**: `String`
    * **Valor**: `column`
 
 ### Adicionar nova ação à barra de ferramentas {#add-new-action-to-the-toolbar}
 
-1. Você pode criar seus próprios componentes e incluir as bibliotecas de clientes correspondentes para ações personalizadas. Por exemplo, uma ação **Promover para Twitter** em:
+1. Você pode criar seus próprios componentes e incluir as bibliotecas de clientes correspondentes para ações personalizadas. Por exemplo, uma ação **Promover para o Twitter** em:
 
    `/apps/wcm/core/clientlibs/sites/js/twitter.js`
 
@@ -151,7 +151,6 @@ Para personalizar as colunas na exibição de lista:
 1. Opcionalmente:
 
    * Se quiser conectar dados adicionais, você precisará gravar um [PageInforProvider](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageInfoProvider.html) com um
-
      Propriedade `pageInfoProviderType`.
 
    Por exemplo, consulte a classe/pacote anexado (do GitHub) abaixo.
