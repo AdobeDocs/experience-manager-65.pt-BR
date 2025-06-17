@@ -9,7 +9,8 @@ exl-id: 3d66e861-aaf4-4227-b31a-3545bb3561d0
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: 6d961456e0e1f7a26121da9be493308a62c53e04
+index: false
+source-git-commit: 1509ca884e2f9eb931fc7cd416801957459cc4a0
 workflow-type: tm+mt
 source-wordcount: '92'
 ht-degree: 1%
@@ -21,9 +22,9 @@ ht-degree: 1%
 
 {{ue-over-spa}}
 
-## Referências da API do JavaScript do SPA{#spa-javascript-api-references}
+## Referências da API do SPA JavaScript{#spa-javascript-api-references}
 
-A seguir estão as referências de API do JavaScript AEM disponíveis dos módulos NPM para a estrutura SDK do editor do SPA.
+A seguir estão as referências disponíveis da API do JavaScript dos módulos NPM para a estrutura SDK do editor SPA do AEM.
 
 * [Mapeamento de componentes](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping)
 * [Gerenciador de Modelos de Página](https://www.npmjs.com/package/@adobe/aem-spa-model-manager)

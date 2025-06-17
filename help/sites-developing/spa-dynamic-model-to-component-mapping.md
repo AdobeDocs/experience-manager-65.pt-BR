@@ -1,6 +1,6 @@
 ---
-title: Modelo dinâmico para mapeamento de componentes para SPA
-description: Saiba como o modelo dinâmico para o mapeamento de componentes ocorre no JavaScript SPA SDK para Adobe Experience Manager.
+title: Modelo dinâmico para mapeamento de componentes para SPAs
+description: Saiba como o modelo dinâmico para mapeamento de componentes ocorre no JavaScript SPA SDK for Adobe Experience Manager.
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
@@ -9,7 +9,8 @@ exl-id: 5b2ccac0-bf1d-4f06-8743-7fce6fb68378
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: 6d961456e0e1f7a26121da9be493308a62c53e04
+index: false
+source-git-commit: 1509ca884e2f9eb931fc7cd416801957459cc4a0
 workflow-type: tm+mt
 source-wordcount: '313'
 ht-degree: 0%
@@ -17,15 +18,15 @@ ht-degree: 0%
 ---
 
 
-# Modelo dinâmico para mapeamento de componentes para SPA{#dynamic-model-to-component-mapping-for-spas}
+# Modelo dinâmico para mapeamento de componentes para SPAs{#dynamic-model-to-component-mapping-for-spas}
 
-Este documento descreve como ocorre o modelo dinâmico de mapeamento de componentes no SDK SPA para Adobe Experience Manager AEM () do JavaScript.
+Este documento descreve como o modelo dinâmico para mapeamento de componentes ocorre no JavaScript SPA SDK for Adobe Experience Manager (AEM).
 
 {{ue-over-spa}}
 
 ## Módulo ComponentMapping {#componentmapping-module}
 
-O módulo `ComponentMapping` é fornecido como um pacote NPM para o projeto front-end. Ele armazena componentes de front-end e fornece uma maneira para o Aplicativo de página única mapear componentes de front-end para tipos de recursos de AEM. Isso permite uma resolução dinâmica de componentes ao analisar o modelo JSON do aplicativo.
+O módulo `ComponentMapping` é fornecido como um pacote NPM para o projeto front-end. Ele armazena componentes de front-end e fornece uma maneira para o Aplicativo de página única mapear componentes de front-end para tipos de recursos do AEM. Isso permite uma resolução dinâmica de componentes ao analisar o modelo JSON do aplicativo.
 
 Cada item presente no modelo contém um campo `:type` que expõe um tipo de recurso AEM. Quando montado, o componente de front-end pode ser renderizado usando o fragmento de modelo que recebeu das bibliotecas subjacentes.
 

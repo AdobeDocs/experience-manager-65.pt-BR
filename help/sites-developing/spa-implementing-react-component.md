@@ -1,6 +1,6 @@
 ---
 title: Implementação de um componente de reação para SPA
-description: Este artigo apresenta um exemplo de como adaptar um componente React simples e existente para funcionar com o editor do SPA no Adobe Experience Manager (AEM).
+description: Este artigo apresenta um exemplo de como adaptar um componente React simples e existente para trabalhar com o Editor de SPA do Adobe Experience Manager (AEM).
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
@@ -10,7 +10,8 @@ exl-id: f4959c12-54c5-403a-9973-7a4ab5f16bed
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: 6d961456e0e1f7a26121da9be493308a62c53e04
+index: false
+source-git-commit: 1509ca884e2f9eb931fc7cd416801957459cc4a0
 workflow-type: tm+mt
 source-wordcount: '523'
 ht-degree: 9%
@@ -20,24 +21,24 @@ ht-degree: 9%
 
 # Implementação de um componente de reação para SPA{#implementing-a-react-component-for-spa}
 
-Aplicativos de página única (SPAs) podem oferecer experiências interessantes para usuários de sites. Os desenvolvedores desejam criar sites usando estruturas SPA, e os autores desejam editar o conteúdo no Adobe Experience Manager (AEM) para um site criado usando estruturas SPA.
+Aplicativos de página única (SPAs) podem oferecer experiências interessantes para usuários de sites. Os desenvolvedores desejam criar sites usando estruturas SPA, e os autores desejam editar o conteúdo no Adobe Experience Manager (AEM) para um site criado com o uso de estruturas SPA.
 
-O recurso de criação do SPA oferece uma solução abrangente para oferecer suporte ao SPA no AEM. Este artigo apresenta um exemplo de como adaptar um componente React simples e existente para funcionar com o Editor de SPA AEM.
+O recurso de criação de SPA oferece uma solução abrangente para suporte a SPAs no AEM. Este artigo apresenta um exemplo de como adaptar um componente React simples e existente para funcionar com o Editor SPA do AEM.
 
 {{ue-over-spa}}
 
 ## Introdução {#introduction}
 
-Graças ao contrato simples e leve que é exigido pelo AEM e estabelecido entre o SPA e o editor do SPA, pegar um aplicativo existente do JavaScript SPA AEM e adaptá-lo para uso com um é uma questão simples.
+Graças ao contrato simples e leve exigido pela AEM e estabelecido entre o SPA e o Editor SPA, pegar um aplicativo JavaScript existente e adaptá-lo para uso com um SPA no AEM é uma questão simples.
 
-Este artigo ilustra o exemplo do componente de tempo no SPA da amostra We.Retail Journal.
+Este artigo ilustra o exemplo do componente de tempo no We.Retail Journal de amostra SPA.
 
 Familiarize-se com a [estrutura de um aplicativo SPA para AEM](/help/sites-developing/spa-getting-started-react.md) antes de ler este artigo.
 
 >[!CAUTION]
 >Este documento usa o [aplicativo We.Retail Journal](https://github.com/adobe/aem-sample-we-retail-journal) somente para fins de demonstração. Não o use para nenhum trabalho de projeto.
 >
->Qualquer projeto do AEM deve utilizar o [Arquétipo de projeto do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR), que aceita projetos SPA que usam o React ou o Angular e utiliza o SDK de SPA.
+>Qualquer projeto do AEM deve utilizar o [Arquétipo de projeto do AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/developing/archetype/overview), que aceita projetos SPA que usam o React ou o Angular e utiliza o SDK de SPA.
 
 ## O componente de Tempo {#the-weather-component}
 
@@ -47,11 +48,11 @@ O componente de meteorologia é encontrado no canto superior esquerdo do aplicat
 
 ![screen_shot_2018-06-08at143224](assets/screen_shot_2018-06-08at143224.png)
 
-Ao criar conteúdo do SPA no Editor de SPA, o componente de tempo aparece como qualquer outro componente de AEM, completo com uma barra de ferramentas e editável.
+Ao criar conteúdo do SPA no Editor de SPA, o componente meteorológico aparece como qualquer outro componente do AEM, completo com uma barra de ferramentas e editável.
 
 ![screen_shot_2018-06-08at143304](assets/screen_shot_2018-06-08at143304.png)
 
-A cidade pode ser atualizada em um diálogo como qualquer outro componente AEM.
+A cidade pode ser atualizada em uma caixa de diálogo, como qualquer outro componente do AEM.
 
 ![screen_shot_2018-06-08at143446](assets/screen_shot_2018-06-08at143446.png)
 
@@ -61,7 +62,7 @@ A alteração é persistente e o componente se atualiza automaticamente com os n
 
 ### Implementação do componente de tempo {#weather-component-implementation}
 
-O componente meteorológico é baseado em um componente do React disponível publicamente, chamado [React Open Weather](https://www.npmjs.com/package/react-open-weather). Ele foi adaptado para funcionar como um componente no aplicativo de SPA de amostra We.Retail Journal.
+O componente meteorológico é baseado em um componente do React disponível publicamente, chamado [React Open Weather](https://www.npmjs.com/package/react-open-weather). Ele foi adaptado para funcionar como um componente no aplicativo We.Retail Journal de SPA de amostra.
 
 A seguir estão trechos da documentação do NPM sobre o uso do componente de tempo aberto do React.
 
@@ -70,7 +71,7 @@ A seguir estão trechos da documentação do NPM sobre o uso do componente de te
 Examinando o código do componente de clima personalizado ( `Weather.js`) no aplicativo We.Retail Journal:
 
 * **Linha 16**: o widget do React Open Weather foi carregado conforme necessário.
-* **Linha 46**: a função `MapTo` relaciona esse componente do React a um componente do AEM correspondente para que ele possa ser editado no Editor de SPA.
+* **Linha 46**: a função `MapTo` relaciona este componente React a um componente AEM correspondente para que ele possa ser editado no Editor SPA.
 
 * **Linhas 22-29**: A `EditConfig` está definida, verificando se a cidade foi preenchida e definindo o valor se estiver vazia.
 
@@ -129,4 +130,4 @@ Embora um componente de back-end já deva existir, o desenvolvedor de front-end 
 
 ## Próxima etapa {#next-step}
 
-Para obter mais informações sobre o desenvolvimento do AEM para SPA, consulte o artigo [Desenvolvimento do SPA para AEM](/help/sites-developing/spa-architecture.md).
+Para obter mais informações sobre como desenvolver SPAs para AEM, consulte o artigo [Desenvolvimento de SPAs para AEM](/help/sites-developing/spa-architecture.md).

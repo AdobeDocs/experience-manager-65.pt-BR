@@ -1,11 +1,12 @@
 ---
 title: O componente RemotePage
-description: O componente RemotePage é um componente de página personalizado para editar o SPA React remoto dentro do AEM.
+description: O componente RemotePage é um componente de página personalizado para editar o React SPA remoto no AEM.
 exl-id: 3f015997-0d42-4241-a890-0f16a19c5e34
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: 6d961456e0e1f7a26121da9be493308a62c53e04
+index: false
+source-git-commit: 1509ca884e2f9eb931fc7cd416801957459cc4a0
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 3%
@@ -15,25 +16,25 @@ ht-degree: 3%
 
 # O componente RemotePage {#remote-page-component}
 
-Ao decidir qual nível de integração você gostaria de ter entre seu SPA externo e AEM, geralmente fica claro que você precisa ser capaz de visualizar e editar o SPA dentro do AEM. O componente RemotePage é um componente de página personalizado apenas para esta finalidade.
+Ao decidir qual nível de integração você gostaria de ter entre seu SPA externo e o AEM, geralmente fica claro que você precisa visualizar e editar o SPA no AEM. O componente RemotePage é um componente de página personalizado apenas para esta finalidade.
 
 {{ue-over-spa}}
 
 ## Visão geral {#overview}
 
-O componente RemotePage busca todos os ativos necessários do `asset-manifest.json` gerado pelo aplicativo e usa isso para renderizar o SPA dentro do AEM.
+O componente RemotePage busca todos os ativos necessários do `asset-manifest.json` gerado pelo aplicativo e usa isso para renderizar o SPA no AEM.
 
-* A RemotePage permite inserir os scripts e folhas de estilos de um SPA no corpo de um componente AEM Page.
-* Os Componentes de front-end virtuais permitem marcar seções como editáveis no Editor SPA AEM.
+* A RemotePage permite inserir os scripts e folhas de estilos de um SPA no corpo de um componente Página do AEM.
+* Os Componentes de front-end virtuais permitem marcar seções como editáveis no AEM SPA Editor.
 * Juntos, um SPA hospedado em um domínio diferente pode se tornar editável no AEM.
 
-Consulte o artigo [Edição de um AEM externo no SPA](spa-edit-external.md) para obter mais detalhes sobre SPA externo editável no AEM.
+Consulte o artigo [Edição de um SPA externo no AEM](spa-edit-external.md) para obter mais detalhes sobre SPAs externos editáveis no AEM.
 
 ## Requisitos {#requirements}
 
 * Ativar o CORS em desenvolvimento
 * Configurar o URL remoto nas Propriedades da página
-* Renderizar o AEM no SPA
+* Renderize o SPA no AEM
 * O aplicativo da Web deve usar um manifesto de ativo de pacote como um dos seguintes e expor um arquivo asset-manifest.json na raiz do domínio que lista, em uma propriedade de pontos de entrada, todos os arquivos CSS e JS que devem ser carregados:
    * https://github.com/shellscape/webpack-manifest-plugin
    * https://github.com/webdeveric/webpack-assets-manifest
@@ -46,8 +47,8 @@ Consulte o artigo [Edição de um AEM externo no SPA](spa-edit-external.md) para
 ## Limitações {#limitations}
 
 * O componente RemotePage espera que a implementação forneça um manifesto de ativo como o [ encontrado aqui.](https://github.com/shellscape/webpack-manifest-plugin) O componente RemotePage, no entanto, só foi testado para funcionar com a estrutura React (e Next.js por meio do componente remote-page-next) e, portanto, não oferece suporte ao carregamento remoto de aplicativos de outras estruturas, como o Angular.
-* O CSS interno definido no arquivo de HTML raiz do aplicativo e o CSS em linha no nó DOM raiz não estarão disponíveis ao fazer renderização remota no AEM.
+* O CSS interno definido no arquivo HTML raiz do aplicativo e o CSS em linha no nó DOM raiz não estarão disponíveis ao fazer renderização remota no AEM.
 
 ## Detalhes técnicos {#technical-details}
 
-AEM Como o restante do projeto SPA, o componente RemotePage é de código aberto. Para obter os detalhes técnicos completos do componente RemotePage, [consulte o repositório do GitHub.](https://github.com/adobe/aem-spa-project-core/tree/master/ui.apps/src/main/content/jcr_root/apps/spa-project-core/components/remotepage)
+Como o restante do projeto SPA do AEM, o componente RemotePage é de código aberto. Para obter os detalhes técnicos completos do componente RemotePage, [consulte o repositório do GitHub.](https://github.com/adobe/aem-spa-project-core/tree/master/ui.apps/src/main/content/jcr_root/apps/spa-project-core/components/remotepage)

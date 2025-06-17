@@ -10,7 +10,8 @@ exl-id: 7b34be66-bb61-4697-8cc8-428f7c63a887
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: 6d961456e0e1f7a26121da9be493308a62c53e04
+index: false
+source-git-commit: 1509ca884e2f9eb931fc7cd416801957459cc4a0
 workflow-type: tm+mt
 source-wordcount: '1626'
 ht-degree: 85%
@@ -37,15 +38,15 @@ A compatibilidade com SPA no AEM apresenta uma camada de JS sutil que interage c
 Para obter mais detalhes sobre SPAs no AEM, consulte os seguintes documentos:
 
 * [Blueprint do SPA](/help/sites-developing/spa-blueprint.md) para os requisitos técnicos de um SPA
-* [Introdução ao SPA no AEM](/help/sites-developing/spa-getting-started-react.md) para um tour rápido de um SPA simples
+* [Introdução a SPAs no AEM](/help/sites-developing/spa-getting-started-react.md) para obter um tour rápido de um SPA simples
 
 ## Design {#design}
 
-O componente de página para um SPA não fornece os elementos HTML de seus componentes secundários por meio do arquivo JSP ou HTL. Esta operação é delegada na estrutura de SPA. A representação de componentes ou modelos filhos é buscada como uma estrutura de dados JSON do JCR. Os componentes do SPA são adicionados à página de acordo com essa estrutura. Esse comportamento diferencia a composição do corpo inicial do componente de página de contrapartes não SPA.
+O componente de página para um SPA não fornece os elementos HTML de seus componentes filhos por meio do arquivo JSP ou HTL. Esta operação é delegada na estrutura de SPA. A representação de componentes ou modelos filhos é buscada como uma estrutura de dados JSON do JCR. Os componentes do SPA são adicionados à página de acordo com essa estrutura. Esse comportamento diferencia a composição do corpo inicial do componente de página de contrapartes não SPA.
 
 ### Gerenciamento do modelo de página {#page-model-management}
 
-A resolução e o gerenciamento do modelo de página são delegados a uma biblioteca `PageModel`. O SPA deve usar a biblioteca Modelo de página para ser inicializado e criado pelo editor de SPA. A biblioteca de Modelos de página fornecida indiretamente ao componente Página de AEM por meio do npm `aem-react-editable-components`. O Modelo de página é um interpretador entre o AEM e o SPA e, portanto, sempre deve estar presente. Quando a página é criada, uma biblioteca adicional `cq.authoring.pagemodel.messaging` deve ser adicionada para habilitar a comunicação com o editor de páginas.
+A resolução e o gerenciamento do modelo de página são delegados a uma biblioteca `PageModel`. O SPA deve usar a biblioteca de Modelo de página para ser inicializado e criado pelo Editor de SPA. A biblioteca de Modelos de página fornecida indiretamente ao componente Página de AEM por meio do npm `aem-react-editable-components`. O Modelo de página é um interpretador entre o AEM e o SPA e, portanto, sempre deve estar presente. Quando a página é criada, uma biblioteca adicional `cq.authoring.pagemodel.messaging` deve ser adicionada para habilitar a comunicação com o editor de páginas.
 
 Se o componente Página de SPA herda do componente principal da página, há duas opções para criar a categoria de biblioteca de clientes `cq.authoring.pagemodel.messaging` disponível:
 
@@ -157,7 +158,7 @@ Lembrando os elementos principais do editor de SPA, o fluxo de trabalho de alto 
 
 ## Requisitos e limitações {#requirements-limitations}
 
-Para permitir que o autor use o editor de páginas para editar o conteúdo de um SPA, o aplicativo SPA deve ser implementado para interagir com o SDK do Editor de SPA do AEM. Consulte a [Introdução ao SPA no AEM](/help/sites-developing/spa-getting-started-react.md) para obter o mínimo necessário para que o seu funcione.
+Para permitir que o autor use o editor de páginas para editar o conteúdo de um SPA, o aplicativo SPA deve ser implementado para interagir com o SDK do Editor de SPA do AEM. Consulte [Introdução a SPAs no AEM](/help/sites-developing/spa-getting-started-react.md) para saber o mínimo necessário para que o seu funcione.
 
 ### Estruturas compatíveis {#supported-frameworks}
 
@@ -170,7 +171,7 @@ As versões anteriores dessas estruturas podem funcionar com o SDK do Editor de 
 
 ### Estruturas adicionais {#additional-frameworks}
 
-Estruturas de SPA adicionais podem ser implementadas para funcionar com o SDK do Editor de SPA de AEM. Consulte o [Blueprint do SPA](/help/sites-developing/spa-blueprint.md) para conhecer os requisitos que uma estrutura deve atender para criar uma camada específica da estrutura composta por módulos, componentes e serviços para trabalhar com o editor SPA do AEM.
+Estruturas de SPA adicionais podem ser implementadas para funcionar com o SDK do Editor de SPA de AEM. Consulte o [Blueprint de SPA](/help/sites-developing/spa-blueprint.md) para conhecer os requisitos que uma estrutura deve atender para criar uma camada específica da estrutura composta por módulos, componentes e serviços para trabalhar com o Editor de SPA do AEM.
 
 ### Uso de vários seletores {#multiple-selectors}
 
@@ -189,7 +190,7 @@ Para obter mais informações sobre a propriedade `editElementQuery` e a configu
 
 ### Limitações {#limitations}
 
-O SPA Editor SDK AEM foi introduzido com o AEM 6.4 service pack 2. Ele é totalmente suportado pelo Adobe e continua sendo aprimorado e expandido. Os seguintes recursos do AEM ainda não são compatíveis com o Editor de SPA:
+O SDK do Editor SPA do AEM foi introduzido com o AEM 6.4 service pack 2. Ele é totalmente compatível com o Adobe e continua sendo aprimorado e expandido. Os seguintes recursos do AEM ainda não são compatíveis com o Editor de SPA:
 
 * Modo de Direcionamento
 * ContextHub
@@ -197,6 +198,6 @@ O SPA Editor SDK AEM foi introduzido com o AEM 6.4 service pack 2. Ele é totalm
 * Editar configurações (por exemplo, ouvintes)
 * Desfazer / Refazer
 * Distorção temporal e Diferencial de páginas
-* Recursos que executam reescrita de HTML no lado do servidor, como Verificador de links, serviço de reescrita CDN, redução de URL e assim por diante.
+* Recursos que executam a reescrita do HTML no lado do servidor, como o Verificador de links, o serviço de reescrita CDN, a redução de URL etc.
 * Modo de desenvolvedor
 * Inicializações do AEM
