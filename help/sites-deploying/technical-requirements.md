@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
+source-git-commit: b5ee4815f981aa32faab24ff5e80a7ad9541e45e
 workflow-type: tm+mt
-source-wordcount: '3630'
+source-wordcount: '3688'
 ht-degree: 1%
 
 ---
@@ -129,19 +129,21 @@ Existem várias opções para implantar o repositório do Adobe Experience Manag
 | MongoDB Enterprise 3.4 | Repositório | Z: Não suportado |
 | IBM® DB2® 10.5 | Repositório e banco de dados Forms | R: Suporte Restrito `[5]` |
 | Oracle Database 12c (12.1.x) | Repositório e banco de dados Forms | R: Suporte restrito |
+| Oracle Database 19c | Repositório e banco de dados Forms | R: Suporte restrito |
 | Microsoft® SQL Server 2016 | Banco de dados Forms | A: Suportado |
+| Microsoft® SQL Server 2019 (obsoleto) | Banco de dados Forms | A: Suportado |
+| Microsoft® SQL Server 2022 | Banco de dados Forms | A: Suportado |
 | **Apache Lucene (Quickstart interno)** | Serviço de pesquisa | A: Suportado |
 | Apache Solr | Serviço de pesquisa | A: Suportado |
 
 1. &#39;Sistema de Arquivos&#39; inclui armazenamento em bloco compatível com POSIX. Inclui tecnologia de armazenamento em rede. Lembre-se de que o desempenho do sistema de arquivos pode variar e influencia o desempenho geral. Teste de carga do AEM com o sistema de arquivos remoto/de rede.
-1. As versões 4.2 e 4.4 do MongoDB Enterprise exigem o AEM 6.5 SP9 como mínimo.
-1. A fragmentação MongoDB não é compatível com o AEM.
-1. O WiredTiger do Mecanismo de Armazenamento MongoDB é compatível somente.
-1. Compatível com clientes de atualização do AEM Forms. Não suportado para novas instalações.
-1. Aplicável somente ao AEM Forms:
+2. As versões 4.2 e 4.4 do MongoDB Enterprise exigem o AEM 6.5 SP9 como mínimo.
+3. A fragmentação MongoDB não é compatível com o AEM.
+4. O WiredTiger do Mecanismo de Armazenamento MongoDB é compatível somente.
+5. Compatível com clientes de atualização do AEM Forms. Não suportado para novas instalações.
+6. Aplicável somente ao AEM Forms:
    * Remoção do suporte ao Oracle Database 12c e adição do suporte ao Oracle Database 19c.
-   * Remoção do suporte ao Microsoft® SQL Server 2016 e adição de suporte ao Microsoft® SQL Server 2019.
-1. Não compatível com o AEM Forms.
+   * Remoção do suporte ao Microsoft® SQL Server 2016 e adição de suporte ao Microsoft® SQL Server 2019 e Microsoft® SQL Server 2022.
 
 >[!NOTE]
 >
@@ -182,14 +184,16 @@ A versão mínima da API de Servlet necessária é a 3.1
 | Oracle WebLogic Server 12.2 (12cR2) | Z: Não suportado |
 | Entrega contínua do IBM® WebSphere® Application Server (LibertyProfile) com Web Profile 7.0 e IBM® JRE 1.8 | R: Suporte restrito para novos contratos `[2]` |
 | IBM® WebSphere® Application Server 9.0 e IBM® JRE 1.8 | R: Suporte restrito para novos contratos `[1]` `[2]` |
+| Servidor de Aplicativos IBM® WebSphere® 9.0.0.10 | R: Suporte restrito para novos contratos `[1]` `[2]` |
 | Apache Tomcat 8.5.x | R: Suporte restrito para novos contratos `[2]` |
 | JBoss® EAP 7.2.x com JBoss® Application Server | Z: Não suportado |
 | JBoss® EAP 7.1.4 com JBoss® Application Server | R: Suporte restrito para novos contratos `[1]` `[2]` |
 | JBoss® EAP 7.0.x com JBoss® Application Server | Z: Não suportado |
+| JBoss® EAP 7.4 com JBoss® Application Server <sup>[2] [3] [7] | A: Suportado |
 
 1. Recomendado para implantações com o AEM Forms.
-1. A partir das implantações do AEM 6.5 em servidores de aplicativos, você mudará para Suporte restrito. Os clientes existentes podem atualizar para o AEM 6.5 e continuar usando servidores de aplicativos. Para novos clientes, ele vem com critérios de suporte e um programa de suporte, conforme declarado na descrição do Nível-R acima.
-1. Somente AEM Forms aplicável:
+2. A partir das implantações do AEM 6.5 em servidores de aplicativos, você mudará para Suporte restrito. Os clientes existentes podem atualizar para o AEM 6.5 e continuar usando servidores de aplicativos. Para novos clientes, ele vem com critérios de suporte e um programa de suporte, conforme declarado na descrição do Nível-R acima.
+3. Somente AEM Forms aplicável:
    * Remoção do suporte para JBoss® EAP 7.1.4 e adição do suporte para JBoss® EAP 7.4.10.
 
 ### Sistemas operacionais de servidor {#server-operating-systems}
@@ -202,15 +206,15 @@ O Adobe Experience Manager funciona com as seguintes plataformas de servidor par
 | Linux®, baseado na distribuição Debian incl. Ubuntu | A: Suportado `[1]` `[2]` |
 | Linux®, baseado na distribuição SUSE® | A: Suportado `[1]` |
 | Microsoft® Windows Server 2022 | R: Suporte restrito |
-| Microsoft® Windows Server 2019 `[4]` | R: Suporte restrito para novos contratos `[5]` |
+| Microsoft® Windows Server 2019 `[4]` (obsoleto) | R: Suporte restrito para novos contratos `[5]` |
 | Microsoft® Windows Server 2016 `[4]` | R: Suporte restrito para novos contratos `[5]` |
 | Microsoft® Windows Server 2012 R2 | Z: Não suportado |
 | Oracle Solaris™ 11 | Z: Não suportado |
 | IBM® AIX® 7.2 | Z: Não suportado |
 
-1. Kernel Linux® 2.6, 3. x, 4. x, 5. x e 6. x inclui derivados da distribuição Red Hat®, incluindo Red Hat® Enterprise Linux®, Oracle Linux® e Amazon Linux®. Os recursos complementares da AEM Forms são suportados apenas no Red Hat® Enterprise Linux® 7, Red Hat® Enterprise Linux® 8 e Red Hat® Enterprise Linux® 9.
-1. O AEM Forms é compatível com o Ubuntu 20.04 LTS.
-1. Distribuição Linux® suportada pela Adobe Managed Services.
+1. Kernel Linux® 2.6, 3. x, 4. x, 5. x, 6. x e 9. x inclui derivados da distribuição Red Hat®, incluindo Red Hat® Enterprise Linux®, Oracle Linux® e Amazon Linux®. Os recursos complementares da AEM Forms são suportados apenas no Red Hat® Enterprise Linux® 7, Red Hat® Enterprise Linux® 8 e Red Hat® Enterprise Linux® 9.
+2. O AEM Forms é compatível com Ubuntu 20.04 e SUSE® Linux® Enterprise Server 15 SP6 (64 bits).
+3. Distribuição Linux® suportada pela Adobe Managed Services.
 
    >[!NOTE]
    >
@@ -225,9 +229,9 @@ O Adobe Experience Manager funciona com as seguintes plataformas de servidor par
 
    *Para instalação do OpenSSL 3: As bibliotecas libcrypto.so.3 e libssl.so.3 devem estar disponíveis no caminho da biblioteca padrão representado pela variável de ambiente LD_LIBRARY_PATH. Se estiverem instalados em um local não padrão, verifique se esse caminho foi adicionado a LD_LIBRARY_PATH antes de iniciar o servidor.*
 
-1. As implantações de produção do Microsoft® Windows são suportadas para clientes que estão atualizando para a versão 6.5 e para uso fora da produção. Novas implantações são feitas sob solicitação para o AEM Sites e o Assets.
-1. O AEM Forms é suportado no Microsoft® Windows Server sem as restrições do nível de suporte R.
-1. A AEM Forms removeu o suporte ao Microsoft® Windows Server 2016.
+4. As implantações de produção do Microsoft® Windows são suportadas para clientes que estão atualizando para a versão 6.5 e para uso fora da produção. Novas implantações são feitas sob solicitação para o AEM Sites e o Assets.
+5. O AEM Forms é suportado no Microsoft® Windows Server sem as restrições do nível de suporte R.
+6. A AEM Forms removeu o suporte ao Microsoft® Windows Server 2016.
 
 >[!NOTE]
 >
@@ -254,7 +258,7 @@ Para obter recomendações sobre como implantar o AEM no Azure ou no AWS, fora d
 
 ### Plataformas Dispatcher (servidores da Web) {#dispatcher-platforms-web-servers}
 
-O Dispatcher é o componente de balanceamento de carga e cache. [Baixe a versão mais recente do Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html?lang=pt-BR). O Experience Manager 6.5 exige a versão 4.3.2 ou superior do Dispatcher.
+O Dispatcher é o componente de balanceamento de carga e cache. [Baixe a versão mais recente do Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html). O Experience Manager 6.5 exige a versão 4.3.2 ou superior do Dispatcher.
 
 Os seguintes servidores da Web são compatíveis para uso com o Dispatcher versão 4.3.2:
 
@@ -466,11 +470,11 @@ Para Windows x86:
    <th><p><strong>Formatos compatíveis com a conversão para o PDF</strong></p> </th>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/br/acrobat/release-note/release-notes-acrobat-reader.html">faixa clássica do Acrobat 2020</a> versão mais recente</td>
+   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">faixa clássica do Acrobat 2020</a> versão mais recente</td>
    <td>XPS, formatos de imagem (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF e DWF</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/br/acrobat/release-note/release-notes-acrobat-reader.html">faixa clássica do Acrobat 2017</a> versão mais recente (obsoleta)</td>
+   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">faixa clássica do Acrobat 2017</a> versão mais recente (obsoleta)</td>
    <td>XPS, formatos de imagem (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF e DWF</td>
   </tr>
   <tr>
@@ -518,7 +522,7 @@ Para Windows x86:
 >
 >Além disso,
 >
->* O PDF Generator requer uma versão de 32 bits do [Acrobat 2020 classic track versão 20.004.30006](https://helpx.adobe.com/br/acrobat/release-note/release-notes-acrobat-reader.html) para executar a conversão.
+>* O PDF Generator requer uma versão de 32 bits do [Acrobat 2020 classic track versão 20.004.30006](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) para executar a conversão.
 >* A PDF Generator suporta apenas a versão de 32 bits do Microsoft® Office Professional Plus e outros softwares necessários para a conversão.
 >* A instalação do Microsoft® Office Professional Plus pode usar o licenciamento por volume baseado em Varejo ou MAK/KMS/AD.
 >* Se uma instalação do Microsoft® Office for desativada ou não for licenciada por qualquer motivo, como uma instalação com licença de volume que não consegue localizar um host KMS em um período especificado, as conversões podem falhar até que a instalação seja relicenciada e reativada.
@@ -526,7 +530,7 @@ Para Windows x86:
 >* A PDF Generator não oferece suporte ao Microsoft® Office 365.
 >* As conversões do PDF Generator para OpenOffice são suportadas apenas no Windows e no Linux®.
 >* Os recursos OCR PDF, Otimizar PDF e Export PDF são suportados apenas no Windows.
->* Uma versão do Acrobat é fornecida com o AEM Forms para ativar a funcionalidade do PDF Generator. Acesse programaticamente a versão fornecida somente com o AEM Forms, durante o prazo da licença do AEM Forms, para uso com o AEM Forms PDF Generator. Para obter mais informações, consulte a descrição do produto AEM Forms de acordo com sua implantação ([No local](https://helpx.adobe.com/br/legal/product-descriptions/adobe-experience-manager-on-premise.html) ou [Managed Services](https://helpx.adobe.com/br/legal/product-descriptions/adobe-experience-manager-managed-services.html))
+>* Uma versão do Acrobat é fornecida com o AEM Forms para ativar a funcionalidade do PDF Generator. Acesse programaticamente a versão fornecida somente com o AEM Forms, durante o prazo da licença do AEM Forms, para uso com o AEM Forms PDF Generator. Para obter mais informações, consulte a descrição do produto AEM Forms de acordo com sua implantação ([No local](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) ou [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))
 >* O serviço PDF Generator não oferece suporte ao Microsoft® Windows 10.
 >* Falha da PDF Generator ao converter arquivos usando o Microsoft® Visio 2019.
 >* Falha da PDF Generator ao converter arquivos usando o Microsoft® Project 2019.
