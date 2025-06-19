@@ -9,9 +9,9 @@ exl-id: 10eecfb8-d43d-4f01-9778-87c752dee64c
 solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: f1eb41d08bb35adb93237f0ad09daa5bcd07fac8
 workflow-type: tm+mt
-source-wordcount: '779'
+source-wordcount: '782'
 ht-degree: 2%
 
 ---
@@ -24,10 +24,10 @@ Os workflows permitem automatizar as atividades do Adobe Experience Manager (AEM
 
    * Cada etapa executa uma atividade distinta; como aguardar a entrada do usuário, ativar uma página ou enviar uma mensagem de email.
 
-* Pode interagir com ativos no repositório, contas de usuário e serviços AEM.
+* Pode interagir com ativos no repositório, contas de usuário e serviços da AEM.
 * Pode coordenar atividades complicadas que envolvem qualquer aspecto do AEM.
 
-Os processos de negócios que sua organização estabeleceu podem ser representados como workflows. Por exemplo, o processo de publicação do conteúdo do site normalmente inclui etapas como aprovação e aprovação por vários participantes. Esses processos podem ser implementados como fluxos de trabalho de AEM e aplicados a páginas de conteúdo e ativos.
+Os processos de negócios que sua organização estabeleceu podem ser representados como workflows. Por exemplo, o processo de publicação do conteúdo do site normalmente inclui etapas como aprovação e aprovação por vários participantes. Esses processos podem ser implementados como fluxos de trabalho do AEM e aplicados a páginas de conteúdo e ativos.
 
 * [Inicialização de workflows](/help/sites-administering/workflows-starting.md)
 * [Administração de instâncias do fluxo de trabalho](/help/sites-administering/workflows-administering.md)
@@ -55,7 +55,7 @@ Quando um modelo de fluxo de trabalho é iniciado (executado), uma instância de
 
 >[!CAUTION]
 >
->As etapas executadas são aquelas definidas pelo modelo de fluxo de trabalho *no momento em que a instância é gerada*. Consulte [Desenvolvendo fluxos de trabalho](/help/sites-developing/workflows.md#model) para obter mais detalhes.
+>As etapas executadas são aquelas definidas pelo modelo de fluxo de trabalho *no momento em que a instância é gerada*. Consulte [Desenvolvimento e extensão de Fluxos de Trabalho - Modelos](/help/sites-developing/workflows.md#model) para obter mais detalhes.
 
 As instâncias de fluxo de trabalho avançam pelo seguinte ciclo de vida:
 
@@ -63,14 +63,14 @@ As instâncias de fluxo de trabalho avançam pelo seguinte ciclo de vida:
 
    1. A carga da instância do fluxo de trabalho é identificada quando o modelo é iniciado.
    1. A instância é efetivamente uma cópia do modelo (como no momento da criação).
-   1. Autores, administradores ou serviços de AEM podem iniciar modelos de fluxo de trabalho.
+   1. Autores, administradores ou serviços da AEM podem iniciar modelos de fluxo de trabalho.
 
 1. A primeira etapa do modelo de fluxo de trabalho é executada.
 1. A etapa é concluída e o motor de workflow usa o modelo para determinar a próxima etapa a ser executada.
 1. As etapas subsequentes do modelo de fluxo de trabalho são executadas e concluídas.
 1. Quando a etapa final é concluída, a instância do workflow é concluída e, portanto, arquivada.
 
-Muitos modelos úteis de fluxo de trabalho são fornecidos com AEM. Além disso, os desenvolvedores em sua organização podem criar modelos de fluxo de trabalho personalizados, adaptados às necessidades específicas de seus processos comerciais.
+Muitos modelos de fluxo de trabalho úteis são fornecidos com o AEM. Além disso, os desenvolvedores em sua organização podem criar modelos de fluxo de trabalho personalizados, adaptados às necessidades específicas de seus processos comerciais.
 
 ## Etapas do fluxo de trabalho {#workflow-steps}
 
