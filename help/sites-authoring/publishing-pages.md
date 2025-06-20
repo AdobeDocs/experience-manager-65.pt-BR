@@ -5,10 +5,10 @@ exl-id: 61144bbe-6710-4cae-a63e-e708936ff360
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
-source-git-commit: 6f3c4f4aa4183552492c6ce5039816896bd67495
+source-git-commit: 2a843cefdd881e3cab60b2ddba12a26d0a498d13
 workflow-type: tm+mt
-source-wordcount: '1669'
-ht-degree: 64%
+source-wordcount: '1701'
+ht-degree: 63%
 
 ---
 
@@ -25,13 +25,13 @@ Você também pode publicar/desfazer a publicação de uma página imediatamente
 >Alguns termos relacionados à publicação podem ser confundidos:
 >
 >* **Publicar/Desfazer a publicação**
->  Esses são os termos principais para as ações que tornam o conteúdo publicamente disponível no ambiente de publicação (ou não).
+>  >  Esses são os termos principais para as ações que tornam o conteúdo publicamente disponível no ambiente de publicação (ou não).
 >
 >* **Ativar / Desativar**
->  Estes termos são sinônimos de publicar/desfazer a publicação.
+>  >  Estes termos são sinônimos de publicar/desfazer a publicação.
 >
 >* **Replicar / Replicação**
->  Esses são os termos técnicos que descrevem a movimentação de dados (por exemplo, conteúdo da página, arquivos, código, comentários do usuário) de um ambiente para outro, como ao publicar ou reverter a replicação de comentários do usuário.
+>  >  Esses são os termos técnicos que descrevem a movimentação de dados (por exemplo, conteúdo da página, arquivos, código, comentários do usuário) de um ambiente para outro, como ao publicar ou reverter a replicação de comentários do usuário.
 
 ## Privilégios Insuficientes {#insufficient-privileges}
 
@@ -61,7 +61,7 @@ Se você estiver editando uma página, ela poderá ser publicada diretamente do 
    * A página será publicada diretamente se não existirem referências a serem publicadas.
    * Caso a página tenha referências que precisam ser publicadas, elas serão listadas no **Assistente de publicação,** onde é possível:
 
-      * Especifique quais dos ativos ou tags você deseja publicar junto com a página e, em seguida, use o **Publish** para concluir o processo.
+      * Especifique quais dos ativos ou tags você deseja publicar junto com a página e use **Publicar** para concluir o processo.
 
       * Usar a opção **Cancelar** para suspender a ação.
 
@@ -96,11 +96,11 @@ A **Publicação rápida** serve para casos simples e publica as páginas seleci
 
 Para publicar uma página com a Publicação rápida:
 
-1. Selecione as páginas no console de sites e clique no botão **Publish Rápido**.
+1. Selecione as páginas no console de sites e clique no botão **Publicação rápida**.
 
    ![pp-02](assets/pp-02.png)
 
-1. Na caixa de diálogo Quick Publish, confirme a publicação clicando em **Publish** ou cancele clicando em **Cancelar**. Lembre-se de que todas as referências não publicadas também serão publicadas automaticamente.
+1. Na caixa de diálogo Publicação rápida, confirme a publicação clicando em **Publicar** ou cancele clicando em **Cancelar**. Lembre-se de que todas as referências não publicadas também serão publicadas automaticamente.
 
    ![chlimage_1-1](assets/chlimage_1-1.png)
 
@@ -108,11 +108,11 @@ Para publicar uma página com a Publicação rápida:
 
 >[!NOTE]
 >
->A Publicação rápida é uma publicação superficial, ou seja, somente a(s) página(s) selecionada(s) é(são) publicada(s), mas qualquer página secundária que houver não será.
+>A Publicação rápida é uma publicação superficial, ou seja, somente a(s) página(s) selecionada(s) é(são) publicada(s), mas qualquer página filha que houver não será.
 
 #### Gerenciar publicação    {#manage-publication}
 
-**Gerenciar Publicação** oferece mais opções do que o Quick Publish, permitindo a inclusão de páginas secundárias, a personalização das referências e o início de qualquer fluxo de trabalho aplicável, além de oferecer a opção de publicação em uma data posterior.
+**Gerenciar Publicação** oferece mais opções do que a Publicação Rápida, permitindo a inclusão de páginas filhas, a personalização das referências e o início de qualquer fluxo de trabalho aplicável, além de oferecer a opção de publicação em uma data posterior.
 
 Para publicar ou desfazer a publicação de uma página usando Gerenciar publicação:
 
@@ -153,7 +153,7 @@ Para publicar ou desfazer a publicação de uma página usando Gerenciar publica
 
    Clicar em **Incluir filhos** abre uma caixa de diálogo que permite:
 
-   * Incluir somente tarefas derivadas imediatas.
+   * Incluir somente filhos imediatas.
    * Incluir somente as páginas modificadas.
    * Incluir somente páginas já publicadas.
 
@@ -197,6 +197,10 @@ Para publicar ou desfazer a publicação de uma página usando Gerenciar publica
 
    ![chlimage_1-4](assets/chlimage_1-4.png)
 
+>[!TIP]
+>
+>O agendamento de conteúdo para publicação replica o conteúdo e respeita os workflows de publicação. Se quiser ocultar temporariamente o conteúdo já publicado sem desfazer a publicação, considere o [**Momento da ativação** e o **Momento da desativação** disponíveis nas propriedades da página.](/help/sites-authoring/editing-page-properties.md#on-time)
+
 ## Desfazer a publicação de páginas {#unpublishing-pages}
 
 Desfazer a publicação de uma página fará com que ela seja removida do seu ambiente de publicação, deixando de estar disponível aos seus leitores.
@@ -237,7 +241,7 @@ Quando você tiver inserido ou atualizado um número considerável de páginas d
 
 1. No console do Sites, selecione a página raiz da árvore que deseja publicar ou desfazer a publicação e selecione **Gerenciar publicação**.
 1. O assistente para **Gerenciar publicação** é iniciado. Escolha publicar ou desfazer a publicação e quando isso deve ocorrer e selecione **Próximo** para continuar.
-1. Na etapa **Escopo**, selecione a página raiz e selecione **Incluir tarefas derivadas**.
+1. Na etapa **Escopo**, selecione a página raiz e selecione **Incluir filhas**.
 
    ![chlimage_1-6](assets/chlimage_1-6.png)
 
