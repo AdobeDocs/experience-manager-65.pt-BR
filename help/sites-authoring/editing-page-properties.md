@@ -95,7 +95,7 @@ Por exemplo, se a URL personalizada estiver definida como `welcome` para a pági
 >* Não é compatível com padrões de regex.
 >* Não deve ser definido como uma página existente.
 
-Configure o Dispatcher para habilitar o acesso a URLs personalizados. Consulte [Habilitando o acesso a URLs personalizados](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-access-to-vanity-urls-vanity-urls) para obter mais detalhes.
+Configure o Dispatcher para habilitar o acesso a URLs personalizados. Consulte [Habilitando o acesso a URLs personalizados](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=pt-BR#enabling-access-to-vanity-urls-vanity-urls) para obter mais detalhes.
 
 * **Adicionar** - Toque ou clique para adicionar uma URL personalizada.
 * **Remover** - Toque ou clique para remover uma URL personalizada.
