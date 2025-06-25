@@ -124,6 +124,7 @@ Se você estiver usando um instalador independente do AEM Forms Designer, execut
    * Há duas maneiras de verificar a versão do Forms Designer:
 
       1. Abra o Designer, vá para Ajuda, clique em Sobre o designer e você verá as informações da versão do designer junto com as informações de bits. Por exemplo, você verá que 64 bits é gravado no final da versão, como mostrado aqui:
+
          `6.5.21.20240522.1.161 | 64 bit`
       1. Abra o Designer. No canto superior esquerdo, você verá um ícone de marca contendo informações de 64 bits com o nome do produto.
 
