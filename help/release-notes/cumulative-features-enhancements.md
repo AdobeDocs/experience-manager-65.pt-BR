@@ -43,7 +43,7 @@ Consulte também [Notas de versão mais recentes do Service Pack do Adobe Experi
 
    * Red Hat® Enterprise Linux® 9 (Kernel 4.x, 64 bits)
 
-* [Componente de anexo de arquivo protegido](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment): como medida de segurança, o componente agora impede o envio de arquivos com extensões modificadas que tentam ignorar as verificações de tipo de arquivo permitidas. Esses arquivos são bloqueados durante o envio para garantir que somente tipos de arquivos válidos sejam aceitos.
+* [Componente de anexo de arquivo protegido](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment): como medida de segurança, o componente agora impede o envio de arquivos com extensões modificadas que tentam ignorar as verificações de tipo de arquivo permitidas. Esses arquivos são bloqueados durante o envio para garantir que somente tipos de arquivos válidos sejam aceitos.
 
 ## AEM 6.5, Service Pack 22 — 21 de novembro de 2024
 
@@ -59,7 +59,7 @@ A guia IPTC agora oferece suporte aos campos de texto [!UICONTROL Texto Alt] e [
 
 #### Novos recursos do GA no AEM Forms {#ga-aem-forms-sp22}
 
-* Adição de suporte para habilitar a incorporação de fontes nas [APIs em lote de comunicações interativas](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/interactive-communications/create-interactive-communication#output-format-print-channel) - As Comunicações interativas agora incluem suporte para a incorporação de fontes do Adobe Ming e do Adobe Myungjo em PDFs gerados por meio da API em lote. Esse aprimoramento garante a renderização de texto preciso em documentos gerados, mesmo ao usar subconjuntos de fontes, fornecendo suporte aprimorado para conteúdo multilíngue em saídas do PDF.
+* Adição de suporte para habilitar a incorporação de fontes nas [APIs em lote de comunicações interativas](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/forms/interactive-communications/create-interactive-communication#output-format-print-channel) - As Comunicações interativas agora incluem suporte para a incorporação de fontes do Adobe Ming e do Adobe Myungjo em PDFs gerados por meio da API em lote. Esse aprimoramento garante a renderização de texto preciso em documentos gerados, mesmo ao usar subconjuntos de fontes, fornecendo suporte aprimorado para conteúdo multilíngue em saídas do PDF.
 
 * [API de índice para acessibilidade do PDF](/help/forms/using/aem-document-services-programmatically.md#auto-tag-pdf-documents-auto-tag-api) - O AEM Forms no OSGi agora oferece suporte à nova API de marca de índice para aprimorar o PDF para padrões de acessibilidade. Ele torna os PDFs mais acessíveis para usuários com tecnologia assistiva.
 
@@ -116,7 +116,7 @@ Alguns dos principais recursos e aprimoramentos desta versão incluem:
 
 ### [!DNL Assets]
 
-* O Dynamic Media agora é compatível com o formato de imagem HEIC sem perdas para Apple iOS/iPadOS. Consulte [fmt](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt) na API de disponibilização e renderização de imagens do Dynamic Media.
+* O Dynamic Media agora é compatível com o formato de imagem HEIC sem perdas para Apple iOS/iPadOS. Consulte [fmt](https://experienceleague.adobe.com/pt-br/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt) na API de disponibilização e renderização de imagens do Dynamic Media.
 * O Gerenciador de vários sites (MSM) agora é compatível com estruturas de Fragmento de experiência, incluindo pastas e subpastas, para a implantação eficiente em massa de Fragmentos de experiência em Live Copies.
 
 ### [!DNL Forms]
@@ -137,13 +137,13 @@ Alguns dos principais recursos e aprimoramentos desta versão incluem:
 ### [!DNL Forms]
 
 * **Novos componentes principais do formulário adaptável**: guias Verticais, Termos e condições e Caixa de seleção são adicionados para aprimorar a escalabilidade dos formulários.
-   * **[Componente de caixa de seleção](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox)**: o Forms adaptável baseado em Componentes principais agora pode incluir um componente de caixa de seleção. Permite que os usuários façam escolhas binárias, selecionando ou desmarcando uma opção específica. Normalmente, ela aparece como uma pequena caixa que pode ser clicada ou tocada para alternar entre dois estados: marcado e desmarcado. A caixa de seleção é um elemento de formulário comum usado para apresentar uma opção sim/não ou verdadeira/falsa.
+   * **[Componente de caixa de seleção](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox)**: o Forms adaptável baseado em Componentes principais agora pode incluir um componente de caixa de seleção. Permite que os usuários façam escolhas binárias, selecionando ou desmarcando uma opção específica. Normalmente, ela aparece como uma pequena caixa que pode ser clicada ou tocada para alternar entre dois estados: marcado e desmarcado. A caixa de seleção é um elemento de formulário comum usado para apresentar uma opção sim/não ou verdadeira/falsa.
 
-   * **[Componente de Termos e Condições](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/terms-and-conditions)**: o Forms Adaptável baseado em Componentes Principais agora inclui um componente de Termos e Condições. Os autores de formulários adicionam esta seção para mostrar aos usuários os termos, condições ou contratos legais do serviço, produto ou plataforma. Esse componente foi projetado para informar os usuários sobre as regras, regulamentos e obrigações aos quais eles estão concordando ao enviar o formulário.
+   * **[Componente de Termos e Condições](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/terms-and-conditions)**: o Forms Adaptável baseado em Componentes Principais agora inclui um componente de Termos e Condições. Os autores de formulários adicionam esta seção para mostrar aos usuários os termos, condições ou contratos legais do serviço, produto ou plataforma. Esse componente foi projetado para informar os usuários sobre as regras, regulamentos e obrigações aos quais eles estão concordando ao enviar o formulário.
 
      ![Guias verticais, Termos e condições e componentes da Caixa de seleção](/help/forms/using/assets/forms-components.png)
 
-   * **[Componente de guias verticais](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs)**: o Forms adaptável baseado em Componentes principais agora pode organizar o conteúdo do formulário em uma lista vertical de guias, fornecendo um layout estruturado e navegável. Guias verticais em um formulário melhoram a experiência do usuário simplificando a navegação e organizando o conteúdo. Eles são especialmente úteis quando o formulário contém várias seções ou informações complexas.
+   * **[Componente de guias verticais](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs)**: o Forms adaptável baseado em Componentes principais agora pode organizar o conteúdo do formulário em uma lista vertical de guias, fornecendo um layout estruturado e navegável. Guias verticais em um formulário melhoram a experiência do usuário simplificando a navegação e organizando o conteúdo. Eles são especialmente úteis quando o formulário contém várias seções ou informações complexas.
 
 * **[Versão de 64 bits do AEM Forms Designer](/help/forms/using/installing-configuring-designer.md)**: a versão de 64 bits do AEM Forms Designer oferece desempenho aprimorado, escalabilidade e gerenciamento de memória para potencializar sua experiência em criação de formulários. Com a arquitetura de 64 bits, você pode executar projetos ainda maiores e mais complexos com facilidade, garantindo fluxos de trabalho de design ininterruptos e eficiência otimizada. Aumente os recursos de design de formulários e abrace o futuro do AEM Forms Designer com esta versão de última geração.
 
@@ -164,9 +164,9 @@ Alguns dos principais recursos e aprimoramentos desta versão incluem:
 
 ### [!DNL Forms]
 
-* **[Tratamento de erros aprimorado com manipuladores de erros personalizados no editor de regras](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-advanced-authoring/standard-validation-error-messages-adaptive-forms)** - Agora é possível invocar uma função personalizada (usando a Biblioteca do Cliente) em resposta a um erro retornado por um serviço externo. Além disso, você pode fornecer uma resposta personalizada aos usuários finais. Como alternativa, você pode realizar ações específicas para erros retornados por um serviço. Por exemplo, você pode chamar um fluxo de trabalho personalizado no backend para códigos de erro específicos ou informar ao cliente que o serviço está inativo
+* **[Tratamento de erros aprimorado com manipuladores de erros personalizados no editor de regras](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/forms/adaptive-forms-advanced-authoring/standard-validation-error-messages-adaptive-forms)** - Agora é possível invocar uma função personalizada (usando a Biblioteca do Cliente) em resposta a um erro retornado por um serviço externo. Além disso, você pode fornecer uma resposta personalizada aos usuários finais. Como alternativa, você pode realizar ações específicas para erros retornados por um serviço. Por exemplo, você pode chamar um fluxo de trabalho personalizado no backend para códigos de erro específicos ou informar ao cliente que o serviço está inativo
 
-* **[Etapa aprimorada do fluxo de trabalho do Adobe Sign](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/workflows/aem-forms-workflow-step-reference#sign-document-step)** - A etapa do fluxo de trabalho do Adobe Sign nos fluxos de trabalho do AEM está disponível com as seguintes melhorias.
+* **[Etapa aprimorada do fluxo de trabalho do Adobe Sign](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/forms/workflows/aem-forms-workflow-step-reference#sign-document-step)** - A etapa do fluxo de trabalho do Adobe Sign nos fluxos de trabalho do AEM está disponível com as seguintes melhorias.
 
    * **Segurança aprimorada com autenticação baseada em ID do governo para o Adobe Sign** - A autenticação baseada em ID do governo da Adobe Acrobat Sign oferece uma camada adicional de verificação. Ele permite aos usuários autenticar sua identidade usando IDs emitidas pelo governo (CNH, identificação nacional, passaporte). Ao usar documentos de identificação confiáveis, esse aprimoramento adiciona um nível extra de confiança ao processo de assinatura, tornando-o ideal para cenários que exigem maior segurança, conformidade e validação do usuário.
 
@@ -176,7 +176,7 @@ Alguns dos principais recursos e aprimoramentos desta versão incluem:
    * **As funções dos destinatários do Contrato foram estendidas além apenas do Signatário** - o Adobe Acrobat Sign permite que você expanda as funções dos destinatários do Contrato além apenas do Signatário, para melhor corresponder aos requisitos de fluxo de trabalho. Quando habilitado, cada recipient em um Contrato tem sua função configurável individualmente, sendo que Signatário é o padrão.
 
 
-* **[Instalador completo do AEM Forms no JEE](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/install-aem-forms/jee-installation/aem-forms-jee-supported-platforms)** - O service pack traz um instalador completo do AEM Forms no JEE que oferece suporte para várias combinações de software novas, incluindo:
+* **[Instalador completo do AEM Forms no JEE](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/forms/install-aem-forms/jee-installation/aem-forms-jee-supported-platforms)** - O service pack traz um instalador completo do AEM Forms no JEE que oferece suporte para várias combinações de software novas, incluindo:
    * Microsoft® Windows Server 2022
    * Diretório ativo Microsoft® 2022
    * Oracle WebLogic 14C no Windows Server 2022
@@ -196,7 +196,7 @@ Se você estiver instalando ou planejando usar o software mais recente para o am
   Não é necessário navegar até o local do ativo e exibir suas propriedades para executar essas operações.
 
 * **O _Instantâneo_**&#x200B;do Dynamic Media permite que você visualize modificadores de imagens e otimizações de Imagem Inteligente — como saída WebP ou AVIF, compactação com reconhecimento de largura de banda e dimensionamento de Proporção de Pixel de Dispositivo — usando imagens de teste ou URLs de Mídia Dinâmica. Você pode comparar imediatamente como cada configuração afeta a qualidade e o tamanho do arquivo.
-Consulte [Instantâneo do Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot).
+Consulte [Instantâneo do Dynamic Media](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot).
 * **Streaming DASH com Dynamic Media** - Novo protocolo (DASH - Dynamic Adaptive Streaming por HTTP) iniciado para transmissão Adaptive Streaming na entrega de vídeo de Dynamic Media (com CMAF habilitado). Disponível agora para todas as regiões.
 * **Integração do Experience Manager Sites e dos fragmentos de conteúdo com o Assets Next-Generation Dynamic Media** - Os usuários agora podem usar seus ativos hospedados na nuvem no Experience Manager Sites 6.5. Eles podem criar e entregar esses ativos em instâncias locais ou do Managed Services.
 
@@ -221,8 +221,8 @@ Novo protocolo DASH (Dynamic Adaptive Streaming por HTTP) iniciado para transmis
 
 ### [!DNL Forms]
 
-* [O Headless Adaptive Forms](https://experienceleague.adobe.com/en/docs/experience-manager-headless-adaptive-forms/using/overview) permite que seus desenvolvedores criem, publiquem e gerenciem formulários interativos que podem ser acessados e interagidos por meio de APIs, em vez de uma interface gráfica tradicional.
+* [O Headless Adaptive Forms](https://experienceleague.adobe.com/pt-br/docs/experience-manager-headless-adaptive-forms/using/overview) permite que seus desenvolvedores criem, publiquem e gerenciem formulários interativos que podem ser acessados e interagidos por meio de APIs, em vez de uma interface gráfica tradicional.
 
-* [Os Componentes principais adaptáveis do Forms](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction#features) são um conjunto de 24 componentes de código aberto compatíveis com BEM que são criados na base dos Componentes principais do WCM no Adobe Experience Manager. Esses componentes são de código aberto e fornecem aos desenvolvedores a capacidade de personalizar e estender esses componentes facilmente para atender às necessidades específicas de sua organização. Qualquer pessoa com habilidades existentes para personalizar [Componentes principais do WCM](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/get-started/authoring) pode personalizar e estilizar facilmente esses componentes.
+* [Os Componentes principais adaptáveis do Forms](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/introduction#features) são um conjunto de 24 componentes de código aberto compatíveis com BEM que são criados na base dos Componentes principais do WCM no Adobe Experience Manager. Esses componentes são de código aberto e fornecem aos desenvolvedores a capacidade de personalizar e estender esses componentes facilmente para atender às necessidades específicas de sua organização. Qualquer pessoa com habilidades existentes para personalizar [Componentes principais do WCM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/get-started/authoring) pode personalizar e estilizar facilmente esses componentes.
 
 * O serviço Reader Extension no OSGi agora fornece opções separadas para habilitar direitos de uso de importação e exportação em uma PDF para importar ou exportar dados no Adobe Acrobat Reader.
