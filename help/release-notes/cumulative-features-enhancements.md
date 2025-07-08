@@ -195,7 +195,7 @@ Se você estiver instalando ou planejando usar o software mais recente para o am
 
   Não é necessário navegar até o local do ativo e exibir suas propriedades para executar essas operações.
 
-* **O _Instantâneo_**do Dynamic Media permite que você visualize modificadores de imagens e otimizações de Imagem Inteligente — como saída WebP ou AVIF, compactação com reconhecimento de largura de banda e dimensionamento de Proporção de Pixel de Dispositivo — usando imagens de teste ou URLs de Mídia Dinâmica. Você pode comparar imediatamente como cada configuração afeta a qualidade e o tamanho do arquivo.
+* **O _Instantâneo_**&#x200B;do Dynamic Media permite que você visualize modificadores de imagens e otimizações de Imagem Inteligente — como saída WebP ou AVIF, compactação com reconhecimento de largura de banda e dimensionamento de Proporção de Pixel de Dispositivo — usando imagens de teste ou URLs de Mídia Dinâmica. Você pode comparar imediatamente como cada configuração afeta a qualidade e o tamanho do arquivo.
 Consulte [Instantâneo do Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot).
 * **Streaming DASH com Dynamic Media** - Novo protocolo (DASH - Dynamic Adaptive Streaming por HTTP) iniciado para transmissão Adaptive Streaming na entrega de vídeo de Dynamic Media (com CMAF habilitado). Disponível agora para todas as regiões.
 * **Integração do Experience Manager Sites e dos fragmentos de conteúdo com o Assets Next-Generation Dynamic Media** - Os usuários agora podem usar seus ativos hospedados na nuvem no Experience Manager Sites 6.5. Eles podem criar e entregar esses ativos em instâncias locais ou do Managed Services.
