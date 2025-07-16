@@ -5,9 +5,9 @@ exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: 80482da847b86c91963dbb0d37375e370a503588
+source-git-commit: 59d667004bb41a973847e9c53333afaa188ccac1
 workflow-type: tm+mt
-source-wordcount: '1163'
+source-wordcount: '1160'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Este artigo lista as correções críticas implementadas para resolver problemas
     <td><strong>Problemas corrigidos</strong></td>
   </tr>
   <tr>
-    <td>Hotfix do SP23 carregado no SD-</td>
+    <td>Hotfix do SP23-</td>
     <td>
     <ul>
     <li><strong>Jboss:</strong></li>
