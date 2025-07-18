@@ -10,9 +10,9 @@ exl-id: 5d7b6b2e-d1d8-4efe-b9ff-c9542b4e67d7
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 25bf0d64b6839afec0112ea8c9fde0510e56ccf4
 workflow-type: tm+mt
-source-wordcount: '892'
+source-wordcount: '931'
 ht-degree: 5%
 
 ---
@@ -37,7 +37,7 @@ Há um editor de página separado com a interface clássica, usando o localizado
 
 ## Acessar ajuda   {#accessing-help}
 
-Vários recursos da **Ajuda** podem ser acessados diretamente do AEM:
+Vários recursos da **Ajuda** podem ser acessados diretamente de dentro do AEM:
 
 Além de acessar a [ajuda das barras de ferramentas do console](/help/sites-classic-ui-authoring/author-env-basic-handling.md#accessing-help), você também pode acessar a ajuda do sidekick (usando o ? ícone) ao editar uma página:
 
@@ -60,7 +60,7 @@ Você pode usar o localizador de conteúdo para localizar um intervalo de recurs
 * [Imagens](#finding-images)
 * [Documentos](#finding-documents)
 * [Filmes](#finding-movies)
-* [Navegador Dynamic Media](/help/sites-administering/scene7.md#scene7contentbrowser)
+* [Navegador do Dynamic Media](/help/sites-administering/scene7.md#scene7contentbrowser)
 * [Páginas](#finding-pages)
 
 * [Parágrafos](#referencing-paragraphs-from-other-pages)
@@ -156,15 +156,19 @@ você pode usar qualquer número de curingas em uma query.
 
 O AEM permite visualizar quais páginas estão vinculadas à página em que você está trabalhando no momento.
 
-Para mostrar referências diretas à página:
+Para mostrar referências de página:
 
 1. No sidekick, selecione o ícone de guia **Página**.
 
    ![screen_shot_2012-02-16at83127pm](assets/screen_shot_2012-02-16at83127pm.png)
 
-1. Selecionar **Mostrar Referências...** O AEM abre a janela Referências e exibe quais páginas se referem à página selecionada, incluindo seus caminhos.
+1. Selecionar **Mostrar referências...** O AEM abre a janela Referências e exibe quais páginas se referem à página selecionada, incluindo seus caminhos.
 
    ![screen_shot_2012-02-16at83311pm](assets/screen_shot_2012-02-16at83311pm.png)
+
+O AEM mostra todas as páginas que fazem referência direta à página selecionada, bem como qualquer referência indireta. É útil compreender todos os links que serão atualizados se você precisar mover ou excluir a página.
+
+## Ações adicionais do Sidekick {#additional-actions}
 
 Em determinadas situações, outras ações estão disponíveis no Sidekick, incluindo:
 
@@ -191,7 +195,7 @@ Ao editar uma página com a interface clássica, existem vários modos que podem
 
 ![Modos de Página](do-not-localize/chlimage_1-12.png)
 
-A linha de ícones na parte inferior do Sidekick é usada para alternar os modos de trabalho com as páginas:
+A linha de ícones na parte inferior do Sidekick é usada para alternar modos para trabalhar com as páginas:
 
 * [Editar](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md)
 Esse é o modo padrão e permite editar a página, adicionar ou excluir componentes e fazer outras alterações.

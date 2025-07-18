@@ -1,14 +1,14 @@
 ---
-title: Criação e organização de páginas com AEM
+title: Criação e organização de páginas com o AEM
 description: Saiba como criar e gerenciar páginas com o Adobe Experience Manager.
 exl-id: 74576e51-4b4e-464e-a0b8-0fae748a505d
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: 383192083ec84176f67882a869550374f6074eef
 workflow-type: tm+mt
-source-wordcount: '2417'
-ht-degree: 64%
+source-wordcount: '2476'
+ht-degree: 62%
 
 ---
 
@@ -42,7 +42,7 @@ O exemplo a seguir mostra o site We.Retail, onde uma página de shorts de caminh
 * Ambiente de autor
   `https://localhost:4502/editor.html/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
 
-* Ambiente do Publish
+* Ambiente de publicação
   `https://localhost:4503/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
 
 Dependendo da configuração da sua instância, o uso de `/content` pode ser opcional no ambiente de publicação.
@@ -107,7 +107,7 @@ O **Título** da página e o **Nome** podem ser criados separadamente, mas estã
 >
 >Lembre-se também de que alguns navegadores (por exemplo, versões mais antigas do IE) só podem aceitar URLs com um limite de comprimento, por isso também há um motivo técnico para manter os nomes de página curtos.
 
-Ao criar uma página, AEM [valida o nome da página de acordo com as convenções](/help/sites-developing/naming-conventions.md) impostas pelo AEM e JCR.
+Ao criar uma página, o AEM [valida o nome da página de acordo com as convenções](/help/sites-developing/naming-conventions.md) impostas pelo AEM e JCR.
 
 Os caracteres mínimos permitidos são:
 
@@ -121,11 +121,11 @@ Detalhes completos sobre todos os caracteres permitidos podem ser encontrados na
 
 >[!NOTE]
 >
->Se o AEM estiver sendo executado em uma [implantação do gerenciador de persistência MongoMK](/help/sites-deploying/recommended-deploys.md), os nomes de página serão limitados a 150 caracteres.
+>Se o AEM estiver em execução em uma [implantação do gerenciador de persistência MongoMK](/help/sites-deploying/recommended-deploys.md), os nomes de página serão limitados a 150 caracteres.
 
 #### Título {#title}
 
-Se você fornecer apenas uma página **Título** ao criar uma página, o AEM derivará a página **Nome** desta cadeia de caracteres e [validará o nome de acordo com as convenções](/help/sites-developing/naming-conventions.md) impostas pelo AEM e JCR. Um campo de **Título** que contém caracteres inválidos será aceito, mas o nome derivado terá os caracteres inválidos substituídos. Por exemplo:
+Se você fornecer apenas uma página **Título** ao criar uma página, a AEM derivará a página **Nome** desta cadeia de caracteres e [validará o nome de acordo com as convenções](/help/sites-developing/naming-conventions.md) impostas pelo AEM e JCR. Um campo de **Título** que contém caracteres inválidos será aceito, mas o nome derivado terá os caracteres inválidos substituídos. Por exemplo:
 
 | Título | Nome derivado |
 |---|---|
@@ -286,8 +286,8 @@ Você pode copiar uma página e todas as suas subpáginas para um novo local:
    ![Colar](assets/paste-without-children.png)
 
    Você pode:
-   * Selecionar o próprio ícone **Colar**: uma cópia da página original e qualquer página secundária serão criadas neste local.
-   * Selecione a seta suspensa para revelar a opção **Colar sem filhos**. Será criada uma cópia da página original neste local; páginas secundárias não serão copiadas.
+   * Selecionar o próprio ícone **Colar**: uma cópia da página original e qualquer página filha serão criadas neste local.
+   * Selecione a seta suspensa para revelar a opção **Colar sem filhos**. Será criada uma cópia da página original neste local; páginas filhas não serão copiadas.
 
    >[!NOTE]
    >
@@ -323,10 +323,9 @@ O AEM oferece a funcionalidade de atualizar todos os links internos que se refer
 
    Isso abre o assistente para mover página.
 
-1. No estágio **Renomear** do assistente, é possível:
+1. A etapa **Renomear** do assistente fornece **Informações** sobre a página, incluindo a data de criação, o caminho e o número de referências diretas. Aqui, é possível:
 
    * Especifique o nome que deseja para a página após movê-la, em seguida, clique em **Avançar** para prosseguir.
-
    * **Cancelar** para suspender o processo.
 
    ![caop-07](assets/caop-07.png)
@@ -362,7 +361,8 @@ O AEM oferece a funcionalidade de atualizar todos os links internos que se refer
 
    >[!NOTE]
    >
-   >Se a página não estiver vinculada nem referenciada, essa etapa não estará disponível.
+   >* Se a página não estiver vinculada nem referenciada, essa etapa não estará disponível.
+   >* Esta etapa lista referências diretas e indiretas. Isso pode ser diferente do valor relatado na etapa **Renomear** do assistente, bem como das referências relatadas pelo painel de referências, que relatam apenas referências diretas por motivos de desempenho.
 
    ![caop-09](assets/caop-09.png)
 
@@ -394,7 +394,7 @@ O status de trabalhos assíncronos pode ser verificado no painel [**Status de Tr
 
 >[!NOTE]
 >
->O processamento assíncrono de movimentação de página requer AEM 6.5.3.0 ou superior.
+>O processamento assíncrono de movimentação de página requer o AEM 6.5.3.0 ou superior.
 
 ### Excluir uma página {#deleting-a-page}
 

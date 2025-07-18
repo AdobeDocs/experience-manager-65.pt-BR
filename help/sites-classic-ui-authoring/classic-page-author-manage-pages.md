@@ -1,6 +1,6 @@
 ---
 title: Criação e organização de páginas
-description: Esta seção descreve como criar e gerenciar páginas com AEM para depois criar o conteúdo nessas páginas.
+description: Esta seção descreve como criar e gerenciar páginas com o AEM para depois criar o conteúdo nessas páginas.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
@@ -9,9 +9,9 @@ exl-id: bd2636d1-6f13-4c6c-b8cd-3bed9e83a101
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 25bf0d64b6839afec0112ea8c9fde0510e56ccf4
 workflow-type: tm+mt
-source-wordcount: '1895'
+source-wordcount: '1898'
 ht-degree: 16%
 
 ---
@@ -28,7 +28,7 @@ Esta seção descreve como criar e gerenciar páginas com o Adobe Experience Man
 
 ## Organizar seu site {#organizing-your-website}
 
-Como autor, você deve organizar seu site dentro do AEM. Isso envolve criar e nomear suas páginas de conteúdo de modo que:
+Como autor, você deve organizar seu site no AEM. Isso envolve criar e nomear suas páginas de conteúdo de modo que:
 
 * você pode encontrá-los facilmente no ambiente de criação
 * os visitantes do seu site podem navegá-los facilmente no ambiente de publicação
@@ -43,7 +43,7 @@ A seguir, uma extração do site do Geometrixx; onde, por exemplo, a página `Tr
 
   `http://localhost:4502/cf#/content/geometrixx/en/products/triangle.html`
 
-* Ambiente do Publish
+* Ambiente de publicação
 
   `http://localhost:4503/content/geometrixx/en/products/triangle.html`
 
@@ -87,7 +87,7 @@ Ao criar uma página, há dois campos principais:
    * Usado para gerar o URI.
    * A entrada do usuário para este campo é opcional. Se não especificado, o nome é derivado do título.
 
-Ao criar uma página, AEM [valida o nome da página de acordo com as convenções](/help/sites-developing/naming-conventions.md) impostas pelo AEM e JCR.
+Ao criar uma página, o AEM [valida o nome da página de acordo com as convenções](/help/sites-developing/naming-conventions.md) impostas pelo AEM e JCR.
 
 A implementação e a lista de caracteres permitidos diferem ligeiramente de acordo com a interface do usuário (é mais extensa para a interface habilitada para toque), mas o mínimo permitido é:
 
@@ -101,12 +101,12 @@ Use apenas estes caracteres se quiser ter certeza de que eles serão aceitos/usa
 
 #### Título {#title}
 
-Se você fornecer apenas uma página **Título** ao criar uma página, o AEM derivará a página **Nome** desta cadeia de caracteres e [validará o nome de acordo com as convenções](/help/sites-developing/naming-conventions.md) impostas pelo AEM e JCR. Em ambas as interfaces, um campo **Título** contendo caracteres inválidos será aceito, mas o nome derivado terá os caracteres inválidos substituídos. Por exemplo:
+Se você fornecer apenas uma página **Título** ao criar uma página, a AEM derivará a página **Nome** desta cadeia de caracteres e [validará o nome de acordo com as convenções](/help/sites-developing/naming-conventions.md) impostas pelo AEM e JCR. Em ambas as interfaces, um campo **Título** contendo caracteres inválidos será aceito, mas o nome derivado terá os caracteres inválidos substituídos. Por exemplo:
 
 | Título | Nome derivado |
 |---|---|
 | Schön | schoen.html |
-| SC%&amp;&ast;ç+ | sc---c-.html |
+| SC%&amp;&amp;ast;ç+ | sc---c-.html |
 
 #### Nome {#name}
 
@@ -249,7 +249,7 @@ O procedimento para mover ou renomear uma página é o mesmo. Com a mesma ação
 * renomear uma página no mesmo local
 * mover uma página para um novo local e renomeá-la ao mesmo tempo
 
-O AEM oferece a funcionalidade de atualizar links internos para a página que está sendo renomeada ou movida. Isso pode ser feito página por página para proporcionar total flexibilidade.
+A AEM oferece a funcionalidade de atualizar links internos para a página que está sendo renomeada ou movida. Isso pode ser feito página por página para proporcionar total flexibilidade.
 
 Para mover ou renomear uma página:
 
@@ -263,7 +263,7 @@ Para mover ou renomear uma página:
 
    ![screen_shot_2012-02-15at121336pm](assets/screen_shot_2012-02-15at121336pm.png)
 
-   A página também lista todas as páginas que fazem referência à página que está sendo movida. Dependendo do status da página de referência, talvez seja possível ajustar esses links e/ou republicar as páginas.
+   A página também lista todas as páginas que fazem referência direta ou indiretamente à página que está sendo movida. Dependendo do status da página de referência, talvez seja possível ajustar esses links e/ou republicar as páginas.
 
 1. Preencha os seguintes campos, conforme apropriado:
 

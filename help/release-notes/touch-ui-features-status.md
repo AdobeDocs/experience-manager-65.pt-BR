@@ -5,24 +5,24 @@ exl-id: 7b71e8db-e8c6-4470-bc22-db3d4600b7fc
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
+source-git-commit: 25bf0d64b6839afec0112ea8c9fde0510e56ccf4
 workflow-type: tm+mt
-source-wordcount: '1076'
+source-wordcount: '1087'
 ht-degree: 15%
 
 ---
 
 # Status do recurso da interface de toque {#touch-ui-feature-status}
 
-Adobe Experience Manager (AEM) 6.4 em diante [A interface clássica está obsoleta](../release-notes/deprecated-removed-features.md). A Adobe não está fazendo mais aprimoramentos na interface clássica, e os usuários são incentivados a usar os novos recursos avançados disponíveis na interface habilitada para toque.
+Adobe Experience Manager (AEM) 6.4 em diante [A interface clássica está obsoleta](../release-notes/deprecated-removed-features.md). A Adobe não está mais fazendo aprimoramentos na interface clássica, e os usuários são incentivados a usar os novos recursos avançados disponíveis na interface habilitada para toque.
 
-A partir da versão 6.0, o AEM apresentou uma nova interface chamada de &quot;interface habilitada para toque&quot; (chamada de &quot;interface de toque&quot;), alinhada ao [!DNL Adobe Experience Cloud] e às diretrizes gerais da interface de usuário do Adobe. Com paridade de recursos quase atingida, isso se tornou a interface padrão no AEM com a interface herdada, orientada para desktop, conhecida como &quot;interface clássica&quot;.
+A partir da versão 6.0, o AEM apresentou uma nova interface chamada de &quot;interface habilitada para toque&quot; (chamada de &quot;interface de toque&quot;), alinhada ao [!DNL Adobe Experience Cloud] e às diretrizes gerais da interface do usuário do Adobe. Com a paridade de recursos quase atingida, isso se tornou a interface padrão no AEM com a interface herdada e orientada para desktop chamada de &quot;interface clássica&quot;.
 
 Embora a maioria dos recursos esteja presente na interface habilitada para toque, há recursos que ainda não estão completos e serão adicionados em versões futuras.
 
 A lista a seguir mostra o status dos recursos conforme implementados no AEM 6.5.
 
-Para obter recomendações para clientes que atualizam para AEM 6.5, consulte [Recomendações da interface de usuário para clientes](/help/sites-deploying/ui-recommendations.md).
+Para obter recomendações para clientes que atualizaram para o AEM 6.5, consulte [Recomendações da interface de usuário para clientes](/help/sites-deploying/ui-recommendations.md).
 
 >[!NOTE]
 >
@@ -57,10 +57,10 @@ Esta é uma lista de recursos que o Administrador do Site da interface clássica
 | Pesquisar | Concluído |  |
 | Copiar e colar página (Duplicado) | Concluído |  |
 | Mover páginas | Concluído |  |
-| Páginas do Publish | Concluído |  |
-| Páginas do Publish sem direitos de replicação | Concluído |  |
+| Publicar páginas | Concluído |  |
+| Publicar páginas sem direitos de replicação | Concluído |  |
 | Publicar mais tarde | Concluído |  |
-| árvore do Publish | Concluído |  |
+| Publicar árvore | Concluído |  |
 | Cancelar publicação de páginas | Concluído |  |
 | Cancelar publicação de páginas sem direitos de replicação | Concluído |  |
 | Desfazer a publicação mais tarde | Concluído |  |
@@ -76,7 +76,7 @@ Esta é uma lista de recursos que o Administrador do Site da interface clássica
 | Consulte cópias de idioma | Concluído |  |
 | Localizar e substituir | Ausente | Use a interface clássica. |
 | Caixa de entrada de notificações (eventos JCR) | Ausente | Use a interface clássica. Substituído por uma implementação diferente no futuro. |
-| Referências | Concluído | Exibição de links de página de entrada adicionados ao AEM 6.5. |
+| Referências | Concluído | Exibição de links de página de entrada adicionados ao AEM 6.5. Por motivos de desempenho, somente links diretos para a página são exibidos. |
 
 ## Status do recurso: editor de páginas {#feature-status-page-editor}
 
@@ -145,7 +145,7 @@ Esta é uma lista de recursos que o Texto da interface clássica, a Tabela e o E
 | Plug-in RTE: listas (marcadores/números) | Concluído |  |
 | Plug-in RTE: Formato de parágrafo | Concluído |  |
 | Plug-in RTE: Estilos de texto | Concluído |  |
-| Plug-in RTE: Editor de Source (Editar HTML) | Concluído | Disponível somente na caixa de diálogo e em tela cheia. |
+| Plug-in RTE: Editor do Source (Editar HTML) | Concluído | Disponível somente na caixa de diálogo e em tela cheia. |
 | Plug-in RTE: verificador ortográfico | Concluído |  |
 | Plug-in do RTE: Tabela (Editor de tabela incorporado) | Concluído |  |
 | Plug-in RTE: Desfazer/Refazer | Concluído |  |

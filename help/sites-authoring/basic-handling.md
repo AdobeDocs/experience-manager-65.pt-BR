@@ -10,9 +10,9 @@ exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: 25bf0d64b6839afec0112ea8c9fde0510e56ccf4
 workflow-type: tm+mt
-source-wordcount: '2964'
+source-wordcount: '2965'
 ht-degree: 41%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 41%
 >* Esta página foi projetada para fornecer uma visão geral do manuseio básico ao usar o ambiente de autor do Adobe Experience Manager (AEM). Usa o console **Sites** como base.
 >
 >* Algumas funcionalidades podem ou não estar disponíveis dependendo do console. Informações específicas sobre os consoles individuais e suas funcionalidades relacionadas são abordadas com mais detalhes em outras páginas.
->* Atalhos de teclado estão disponíveis em todo o AEM. Principalmente ao [usar consoles](/help/sites-authoring/keyboard-shortcuts.md) e [editar páginas](/help/sites-authoring/page-authoring-keyboard-shortcuts.md).
+>* Os atalhos de teclado estão disponíveis em todo o AEM. Principalmente ao [usar consoles](/help/sites-authoring/keyboard-shortcuts.md) e [editar páginas](/help/sites-authoring/page-authoring-keyboard-shortcuts.md).
 >
 
 ## Introdução {#getting-started}
@@ -78,7 +78,7 @@ As opções disponíveis nesses painéis estão descritas abaixo.
 
 ### Painel Navegação   {#navigation-panel}
 
-O painel Navegação fornece acesso aos consoles AEM:
+O painel Navegação fornece acesso aos consoles do AEM:
 
 ![Navegação](assets/bh-01.png)
 
@@ -122,7 +122,7 @@ Em Navegação, os consoles disponíveis são:
   </tr>
   <tr>
    <td>Screens</td>
-   <td>O <a href="https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/authoring/setting-up-projects/creating-a-screens-project.html?lang=pt-BR">Screens</a> permite que você gerencie todas as suas telas direcionadas aos clientes, de qualquer tamanho e local.</td>
+   <td>O <a href="https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/authoring/setting-up-projects/creating-a-screens-project.html">Screens</a> permite que você gerencie todas as suas telas direcionadas aos clientes, de qualquer tamanho e local.</td>
   </tr>
   <tr>
    <td>Sites</td>
@@ -237,7 +237,7 @@ Há vários recursos de ajuda disponíveis:
 
 * **Navegação**
 
-  Na primeira vez que você navega pelo sistema, [uma série de slides apresenta a navegação por AEM](/help/sites-authoring/basic-handling.md#product-navigation).
+  Na primeira vez que você navega pelo sistema, [uma série de slides apresenta a navegação no AEM](/help/sites-authoring/basic-handling.md#product-navigation).
 
 * **Editor de página**
 
@@ -412,7 +412,7 @@ Selecionar um recurso na coluna mais à esquerda exibe os recursos secundários 
 
      ![Exibição de coluna](assets/bh-17.png)
 
-   * Os secundários do recurso clicado/tocado são exibidos na coluna à direita do recurso clicado/tocado.
+   * Os filhos do recurso clicado/tocado são exibidos na coluna à direita do recurso clicado/tocado.
    * Se você clicar em um nome de recurso que não tenha filhos, seus detalhes serão exibidos na coluna final.
 
 * Tocar ou clicar na miniatura seleciona o recurso.
@@ -568,15 +568,16 @@ Essas opções são acessíveis por meio da divisa ao lado do campo **Comentári
 
 ### Referências {#references}
 
-**Referências** mostra todas as conexões com o recurso selecionado. Por exemplo, no console **Sites**, são mostradas [referências](/help/sites-authoring/author-environment-tools.md#showingpagereferences) para as páginas:
+**Referências** mostram conexões com o recurso selecionado. Por exemplo, no console **Sites**, são mostradas [referências](/help/sites-authoring/author-environment-tools.md#showingpagereferences) para as páginas:
 
+* [Blueprints](/help/sites-administering/msm.md)
 * [Lançamentos](/help/sites-authoring/launches.md#launches-in-references-sites-console)
 * [Live copies](/help/sites-administering/msm-livecopy-overview.md#openingthelivecopyoverviewfromreferences)
 * [Cópias de idioma](/help/sites-administering/tc-prep.md#seeing-the-status-of-language-roots)
 * Referência de conteúdo:
 
-   * links de outras páginas para a página selecionada
-   * conteúdo emprestado de, concedido ou ambos à página selecionada pelo componente Referência
+   * Links diretos de outras páginas para a página selecionada
+   * Conteúdo emprestado de, concedido a ou ambos à página selecionada pelo componente Referência
 
 ![bh-28](assets/bh-28.png)
 
