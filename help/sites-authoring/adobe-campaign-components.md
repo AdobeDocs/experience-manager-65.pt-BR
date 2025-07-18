@@ -10,12 +10,14 @@ exl-id: d1132fcd-e6a0-44a2-8753-d250f68fbd78
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Integration
 role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+index: false
+source-git-commit: 389d5fa8de320a7237fc8290992a33743b15db99
 workflow-type: tm+mt
-source-wordcount: '2859'
+source-wordcount: '2857'
 ht-degree: 4%
 
 ---
+
 
 # Componentes do Adobe Campaign{#adobe-campaign-components}
 
@@ -25,7 +27,7 @@ Ao integrar com o Adobe Campaign, você tem componentes disponíveis para o ao t
 >
 >Os componentes de email do AEM foram descontinuados. Devido à natureza do email, que mescla conteúdo e estilo, os componentes de email fornecidos prontos para uso pelo AEM tornam-se de reutilização limitada para os clientes, devido à necessidade de implementar estilos personalizados em quaisquer componentes que sejam necessários para projetos.
 >
->Os componentes de email podem ser implementados no nível do projeto, e os componentes de email do AEM obsoletos ilustram como isso pode ser feito. No entanto, não use esses componentes obsoletos em projetos.
+>Os componentes de email podem ser implementados no nível do projeto, e os componentes de email obsoletos do AEM ilustram como isso pode ser feito. No entanto, não use esses componentes obsoletos em projetos.
 
 ## Componentes do informativo do Adobe Campaign {#adobe-campaign-newsletter-components}
 
@@ -64,7 +66,7 @@ Você pode configurar o seguinte:
 Se quiser usar um nome diferente do título da página, insira-o aqui.
 
 * **Nível do cabeçalho (1, 2, 3, 4)**
-O nível do cabeçalho com base nos tamanhos dos cabeçalhos HTML 1-4.
+O nível do cabeçalho com base nos tamanhos 1 a 4 do cabeçalho do HTML.
 
 O exemplo a seguir mostra um componente de Cabeçalho (Campanha) sendo exibido.
 
@@ -171,11 +173,11 @@ O exemplo a seguir mostra um componente Link (Campanha) sendo exibido.
 
 ### Modelo de imagem do Dynamic Media Classic (Scene7) (Campanha) {#scene-image-template-campaign}
 
-Os Modelos de imagem do Dynamic Media Classic (Scene7) são arquivos de imagem em camadas, nos quais o conteúdo e as propriedades podem ser parametrizados para fins de variabilidade. O componente **[!UICONTROL modelo de imagem]** permite usar modelos do Scene7 em boletins informativos e alterar os valores dos parâmetros do modelo. Além disso, você pode usar as variáveis de metadados do Adobe Campaign dentro dos parâmetros, para que cada usuário experimente a imagem de forma personalizada.
+Os modelos de imagem do Dynamic Media Classic (Scene7) são arquivos de imagem em camadas, em que o conteúdo e as propriedades podem ser parametrizados para fins de variabilidade. O componente **[!UICONTROL modelo de imagem]** permite que você use modelos do Scene7 em boletins informativos e altere os valores dos parâmetros do modelo. Além disso, você pode usar as variáveis de metadados do Adobe Campaign dentro dos parâmetros, para que cada usuário experimente a imagem de forma personalizada.
 
 ![chlimage_1-49](assets/chlimage_1-49.png)
 
-Clique em **Editar** para configurar o componente. Você pode definir as configurações descritas nesta seção. Este modelo de Imagem Scene7 é descrito detalhadamente no [componente de Modelo de Imagem Scene7](/help/assets/scene7.md#image-template).
+Clique em **Editar** para configurar o componente. Você pode definir as configurações descritas nesta seção. Este modelo de Imagem do Scene7 é descrito detalhadamente no [componente de Modelo de Imagem do Scene7](/help/assets/scene7.md#image-template).
 
 Além disso, o painel de parâmetros lista todos os parâmetros de modelo que foram definidos para o modelo no Scene7. Para cada um desses parâmetros, você pode adaptar o valor, inserir variáveis ou redefini-las para o valor padrão.
 
@@ -320,7 +322,7 @@ A tabela a seguir descreve os componentes que estão disponíveis para exibir e 
   <tr>
    <td><p>Campo de opções (Campanha)</p> </td>
    <td><p>byte com valores associados</p> </td>
-   <td><p>Sexo</p> </td>
+   <td><p>Gênero</p> </td>
   </tr>
   <tr>
    <td><p>Campo de texto (Campanha)</p> </td>

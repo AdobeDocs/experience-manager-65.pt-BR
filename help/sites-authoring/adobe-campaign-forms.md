@@ -9,20 +9,20 @@ exl-id: 7d60673e-484a-4447-83cf-d62a0d7ad745
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Integration
 role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: 389d5fa8de320a7237fc8290992a33743b15db99
 workflow-type: tm+mt
-source-wordcount: '1281'
+source-wordcount: '1280'
 ht-degree: 0%
 
 ---
 
 # Criação do Adobe Campaign Forms no AEM {#creating-adobe-campaign-forms-in-aem}
 
-O AEM permite criar e usar formulários que interagem com o Adobe Campaign em seu site. Campos específicos podem ser inseridos em seus formulários e mapeados para o banco de dados do Adobe Campaign.
+O AEM permite criar e usar formulários que interagem com o Adobe Campaign no seu site. Campos específicos podem ser inseridos em seus formulários e mapeados para o banco de dados do Adobe Campaign.
 
 É possível gerenciar novas assinaturas de contatos, assinaturas canceladas e dados de perfil do usuário, tudo isso enquanto integra os dados dessas assinaturas ao banco de dados do Adobe Campaign.
 
-Para usar os formulários do Adobe Campaign no AEM, é necessário seguir estas etapas, descritas neste documento:
+Para usar o Adobe Campaign Forms no AEM, você precisa seguir estas etapas, descritas neste documento:
 
 1. Disponibilize um modelo.
 1. Crie um formulário.
@@ -42,7 +42,7 @@ O formulário é atualizado automaticamente com base no usuário. Consulte [Edit
 
 ## Disponibilizar um modelo {#making-a-template-available}
 
-Antes de criar formulários específicos para o Adobe Campaign, você deve disponibilizar os diferentes modelos no aplicativo AEM.
+Antes de criar formulários específicos do Adobe Campaign, você deve disponibilizar os diferentes modelos no aplicativo do AEM.
 
 Para fazer isso, consulte a [documentação sobre modelos](/help/sites-developing/templates.md#template-availability).
 
@@ -66,7 +66,7 @@ Primeiro, verifique se a conexão entre as instâncias de autor e publicação e
 
 1. No campo **Nome**, adicione o nome da página. Deve ser um nome válido de JCR.
 1. No campo **Título**, insira um título e clique em **Criar**.
-1. Abra a página e selecione **Abrir propriedades** e, em Cloud Service, adicione a configuração do Adobe Campaign e marque a marca de seleção para salvar as alterações.
+1. Abra a página e selecione **Abrir propriedades**. Nos Serviços em Nuvem, adicione a configuração do Adobe Campaign e marque a marca de seleção para salvar as alterações.
 
    ![chlimage_1-44](assets/chlimage_1-44a.png)
 
@@ -78,11 +78,11 @@ O Forms dedicado ao Adobe Campaign tem componentes específicos. Esses component
 
 >[!NOTE]
 >
->Se o modelo desejado não estiver disponível, consulte [Disponibilizando um modelo](/help/sites-authoring/adobe-campaign.md).
+>Se o modelo desejado não estiver disponível, consulte [Disponibilizando um modelo.](/help/sites-authoring/campaign.md)
 
 Esta seção só detalha links específicos para o Adobe Campaign. Para obter mais informações sobre uma visão geral de como usar formulários no Adobe Experience Manager, consulte [Componentes do modo de edição](/help/sites-authoring/default-components-foundation.md).
 
-1. Selecione **Abrir propriedades** e, no Cloud Service, adicione a configuração do Adobe Campaign e marque a marca de seleção para salvar as alterações.
+1. Selecione **Abrir propriedades** e, nos Serviços em nuvem, adicione a configuração do Adobe Campaign e marque a marca de seleção para salvar as alterações.
 
    ![chlimage_1-45](assets/chlimage_1-45a.png)
 
@@ -114,7 +114,7 @@ Esta seção só detalha links específicos para o Adobe Campaign. Para obter ma
    >
    >Você pode adicionar/remover campos exibidos na tabela de destinatários seguindo as instruções aqui: [https://blogs.adobe.com/experiencedelivers/experience-management/aem-campaign-integration/](https://blogs.adobe.com/experiencedelivers/experience-management/aem-campaign-integration/)
 
-1. Clique em **Página do Publish**. A página é ativada no site. Você pode visualizá-lo acessando a instância de publicação do AEM. Você também pode [testar um formulário](#testing-a-form).
+1. Clique em **Publicar página**. A página é ativada no site. Você pode visualizá-lo acessando a instância de publicação do AEM. Você também pode [testar um formulário](#testing-a-form).
 
    >[!CAUTION]
    >

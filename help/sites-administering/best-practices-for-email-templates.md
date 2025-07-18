@@ -1,6 +1,6 @@
 ---
 title: Práticas recomendadas para modelos de email
-description: Encontre as práticas recomendadas para criar modelos de email no AEM.
+description: Encontre práticas recomendadas para a criação de modelos de email no AEM.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration, best-practices
@@ -10,9 +10,10 @@ exl-id: 6666eddc-dc17-4bd4-9d55-e6522f40a680
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+index: false
+source-git-commit: 389d5fa8de320a7237fc8290992a33743b15db99
 workflow-type: tm+mt
-source-wordcount: '1073'
+source-wordcount: '1072'
 ht-degree: 0%
 
 ---
@@ -22,9 +23,9 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->Este artigo se aplica aos componentes de email obsoletos do Foundation com base em AEM.
+>Este artigo se aplica aos componentes de email obsoletos do Foundation com base nos componentes de email do AEM.
 >
->Os usuários são incentivados a usar os [Componentes principais de email.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html?lang=pt-BR)
+>Os usuários são incentivados a usar os [Componentes principais de email.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html)
 
 Este documento descreve algumas das práticas recomendadas para design de email, resultando em um modelo de campanha de email bem desenvolvido.
 
@@ -46,7 +47,7 @@ Use essas práticas recomendadas ao criar seu próprio informativo.
 
 >[!NOTE]
 >
->Ao criar um modelo de email para o Adobe Campaign, você deve incluir a propriedade **acMapping** com o valor **mapRecipient** no nó **jcr:content** do modelo. Caso contrário, você não poderá selecionar o modelo Adobe Campaign em **Propriedades da página** de Experience Manager (o campo está desabilitado).
+>Ao criar um modelo de email para o Adobe Campaign, você deve incluir a propriedade **acMapping** com o valor **mapRecipient** no nó **jcr:content** do modelo. Caso contrário, você não poderá selecionar o modelo Adobe Campaign em **Propriedades da página** do Experience Manager (o campo está desabilitado).
 
 ## Componente de modelo/página {#template-page-component}
 
@@ -80,7 +81,7 @@ Use essas práticas recomendadas ao criar seu próprio informativo.
   </tr>
   <tr>
    <td>O CSS em linha é melhor do que colocar todo o CSS no início.</td>
-   <td><p>Para demonstrar melhor a estrutura de HTML subjacente e facilitar a possibilidade de personalizar a estrutura do informativo, apenas algumas definições de CSS foram incorporadas.</p> <p>Os estilos base e as variações de modelo foram extraídos para um bloco de estilos no &lt;head&gt; da página. No envio final do informativo, essas definições de CSS são embutidas no HTML. Um mecanismo integrado automático está planejado, mas não está disponível no momento.</p> </td>
+   <td><p>Para demonstrar melhor a estrutura subjacente do HTML e facilitar a possibilidade de personalizar a estrutura do informativo, somente algumas definições de CSS foram incorporadas.</p> <p>Os estilos base e as variações de modelo foram extraídos para um bloco de estilos no &lt;head&gt; da página. No envio final do informativo, essas definições de CSS são incorporadas ao HTML. Um mecanismo integrado automático está planejado, mas não está disponível no momento.</p> </td>
   </tr>
   <tr>
    <td>Mantenha seu CSS simples. Evite declarações de estilo composto, código abreviado, propriedades de layout CSS, seletores complexos e pseudoelementos.</td>
@@ -130,7 +131,7 @@ Use essas práticas recomendadas ao criar seu próprio informativo.
 | **Prática recomendada** | **Implementação** |
 |---|---|
 | Use o validador W3C para corrigir o código HTML. Certifique-se de que todas as tags abertas estejam fechadas corretamente. | Código validado. Somente para Doctype de transição XHTML, o atributo xmlns ausente para o elemento `<html>` está ausente. |
-| Evite usar o JavaScript ou o Flash - essas tecnologias geralmente não são compatíveis com os clientes de email. | O JavaScript ou o Flash não é usado no modelo de boletim informativo. |
+| Evite usar JavaScript ou Flash - essas tecnologias geralmente não são compatíveis com clientes de email. | O JavaScript ou Flash não é usado no modelo de boletim informativo. |
 | Adicione uma versão de texto sem formatação para envio de várias partes. | Um novo widget foi incorporado às propriedades da página para extrair facilmente uma versão de texto simples do conteúdo da página. Você pode usá-lo como ponto de partida para a versão final do texto sem formatação. |
 
 ## Modelos e exemplos do informativo da campanha {#campaign-newsletter-templates-and-examples}
@@ -147,7 +148,7 @@ Todos têm uma seção **cabeçalho**, um **rodapé** e uma seção **corpo**. A
 
 ### Componentes {#components}
 
-Atualmente, há [sete componentes disponíveis para uso nos modelos de campanha](/help/sites-authoring/adobe-campaign-components.md). Todos esses componentes são baseados na linguagem de marcação Adobe **HTL**.
+Atualmente, há [sete componentes disponíveis para uso nos modelos de campanha](/help/sites-authoring/adobe-campaign-components.md). Todos esses componentes são baseados na linguagem de marcação do Adobe **HTL**.
 
 | **Nome do componente** | **Caminho do componente** |
 |---|---|

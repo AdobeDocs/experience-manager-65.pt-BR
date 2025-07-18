@@ -1,5 +1,5 @@
 ---
-title: Criação de um modelo de página AEM personalizado com componentes de formulário do Adobe Campaign
+title: Criação de um modelo de página personalizado do AEM com componentes de formulário do Adobe Campaign
 description: Criar um modelo de página personalizado que use componentes do Adobe Campaign Form
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,29 +9,27 @@ exl-id: de5c634a-c0d7-4e69-b941-d2fbfe83117d
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: ad8f849384e58511de97611d1b26c4fc96022062
+index: false
+source-git-commit: 389d5fa8de320a7237fc8290992a33743b15db99
 workflow-type: tm+mt
-source-wordcount: '313'
+source-wordcount: '297'
 ht-degree: 0%
 
 ---
 
-# Criação de um modelo de página AEM personalizado com componentes de formulário do Adobe Campaign{#creating-custom-aem-page-template-with-adobe-campaign-form-components}
 
-Esta página explica como criar um modelo de página personalizado que usa componentes do [Formulário do Adobe Campaign](/help/sites-authoring/adobe-campaign-components.md) examinando como o modelo Geometrixx-outdoors (`/apps/geometrixx-outdoors/components/page_campaign_profile`) é implementado e aponta para informações importantes que você pode precisar ao criar seu próprio modelo personalizado.
+# Criação de um modelo de página personalizado do AEM com componentes de formulário do Adobe Campaign{#creating-custom-aem-page-template-with-adobe-campaign-form-components}
 
->[!NOTE]
->
->[Amostras de email e formulário só estão disponíveis em Geometrixx](/help/sites-developing/we-retail.md). Baixe o conteúdo de Geometrixx de amostra do Compartilhamento de pacotes.
+Esta página explica como criar um modelo de página personalizado que usa componentes do [Formulário do Adobe Campaign](/help/sites-authoring/adobe-campaign-components.md) examinando como o modelo do Geometrixx-outdoors (`/apps/geometrixx-outdoors/components/page_campaign_profile`) é implementado e aponta para informações importantes que você pode precisar ao criar seu próprio modelo personalizado.
 
 >[!CAUTION]
 >
 >Os componentes de email do AEM foram descontinuados. Devido à natureza do email, que mescla conteúdo e estilo, os componentes de email fornecidos prontos para uso pelo AEM tornam-se de reutilização limitada para os clientes, devido à necessidade de implementar estilos personalizados em quaisquer componentes que sejam necessários para projetos.
 >
->Os componentes de email podem ser implementados no nível do projeto, e os componentes de email do AEM obsoletos ilustram como isso pode ser feito. No entanto, não use esses componentes obsoletos em projetos.
+>Os componentes de email podem ser implementados no nível do projeto, e os componentes de email obsoletos do AEM ilustram como isso pode ser feito. No entanto, não use esses componentes obsoletos em projetos.
 
 
-Para criar um modelo de página do AEM personalizado usando componentes do Adobe Campaign Form, verifique se você tem o seguinte:
+Para criar um modelo de página personalizado do AEM usando componentes do Adobe Campaign Form, verifique se você tem o seguinte:
 
 1. **Corrigir resourceSuperType**
 
@@ -48,7 +46,7 @@ Para criar um modelo de página do AEM personalizado usando componentes do Adobe
 
    Ao examinar as configurações de clientcontext ( `/etc/designs/geometrixx-outdoors/jcr:content/page_campaign_profile`), você verá as seguintes configurações:
 
-   * O ClientContext aponta para `/etc/clientcontext/campaign`
+   * ClientContext aponta para `/etc/clientcontext/campaign`
    * Também há um nó *config* extra.
 
    ![chlimage_1-202](assets/chlimage_1-202.png)
