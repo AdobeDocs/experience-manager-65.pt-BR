@@ -265,4 +265,4 @@ Se você estiver usando a Segurança de documentos (antigo Rights Management), d
 - [CWE-611: Restrição Inadequada de Referência de Entidade Externa XML](https://cwe.mitre.org/data/definitions/611.html)
 - [CWE-16: Configuração](https://cwe.mitre.org/data/definitions/16.html)
 - [Folha de características de prevenção do OWASP XXE](https://owasp.org/www-community/vulnerabilities/XML_External_Entity_XXE_Processing)
-- [Práticas recomendadas de segurança da Adobe Experience Manager Forms](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html)
+- [Práticas recomendadas de segurança da Adobe Experience Manager Forms](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=pt-BR)
