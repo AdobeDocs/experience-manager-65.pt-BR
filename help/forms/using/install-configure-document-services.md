@@ -6,9 +6,9 @@ role: Admin, Developer
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
-source-git-commit: b5e44b78659f0cb1b8b0025be30143b98c0bf8df
+source-git-commit: 62baf682b75823f52f968a70960aff2388d49cad
 workflow-type: tm+mt
-source-wordcount: '10051'
+source-wordcount: '10085'
 ht-degree: 1%
 
 ---
@@ -253,6 +253,12 @@ O processo de instalação do Adobe Acrobat Pro DC para instalação do Microsof
 * **Tipo de Implantação**: Um ou Vários Usuários
 
 Cada guia contém instruções personalizadas otimizadas para sua configuração específica, ajudando você a evitar problemas de configuração e garantir a conformidade adequada com o licenciamento.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3469669)
+
+>[!NOTE]
+>
+>O vídeo demonstra o processo de instalação de uma licença de varejo - configuração de usuário único. Para outros cenários de implantação (Varejo - Vários usuários, Licença por volume - Usuário único ou Licença por volume - Vários usuários), consulte as instruções específicas da etapa 9 nas guias correspondentes abaixo para garantir a inicialização correta do servidor e a ativação da licença para seu tipo de implantação.
 
 >[!BEGINTABS]
 
@@ -701,7 +707,7 @@ Após desinstalar a versão anterior, é necessário baixar e instalar uma vers�
 Após concluir todos os processos, execute um teste de ação rápida para confirmar se a instalação é válida:
 
 1. Use a Área de Trabalho Remota (RDP) para fazer logon no servidor e iniciar o servidor do AEM Forms usando serviços.
-2. Use a Área de Trabalho Remota (RDP) para fazer logon no servidor e iniciar o servidor do AEM Forms usando os Serviços do Windows. Depois que o servidor estiver em execução, não feche a janela do RDP. Em vez disso, saia normalmente fazendo logoff do usuário do — isso garante que a sessão termine sem problemas enquanto o serviço continua a ser executado em segundo plano.
+2. Depois que o servidor estiver em execução, não feche a janela do RDP. Em vez disso, saia normalmente fazendo logoff do usuário do — isso garante que a sessão termine sem problemas enquanto o serviço continua a ser executado em segundo plano.
 
 ###### Etapa 10: testar o serviço PDF Generator
 
