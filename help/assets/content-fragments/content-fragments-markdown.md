@@ -130,7 +130,7 @@ Você pode ter citações de bloco aninhadas. Por exemplo:
 
 É possível criar listas ordenadas e não ordenadas.
 
-Para criar uma lista não ordenada, use o símbolo &amp;ast; antes dos itens na lista. Por exemplo:
+Para criar uma lista não ordenada, use o símbolo &ast; antes dos itens na lista. Por exemplo:
 
     `* item in list`
 
