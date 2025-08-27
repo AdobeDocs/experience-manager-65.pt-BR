@@ -5,9 +5,9 @@ landing-page-description: Saiba mais sobre o Adobe Experience Hub, um ponto de p
 solution: Experience Manager, Experience Manager 6.5
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: fe1d00d1a3587cc768abeba6f995969c35203bad
+source-git-commit: b7977fcc76a3d8b4ec9e8d9e8ae8622ff13a441a
 workflow-type: tm+mt
-source-wordcount: '590'
+source-wordcount: '589'
 ht-degree: 2%
 
 ---
@@ -75,7 +75,7 @@ A seção **Recentes**, vista na imagem abaixo, lista páginas visitadas recente
 
 ![Atalhos rápidos do Experience Hub](/help/assets/assets-experience-hub/experience-hub-quick-shortcuts-ams.png)
 
-Se não houver ambientes de produção do AEM Cloud Service ou do Managed Services, as opções de seleção aparecerão esmaecidas e indisponíveis.
+Se não houver ambientes de produção do AEM Cloud Service ou do Managed Services, as opções de seleção aparecerão esmaecidas (indisponíveis).
 
 ![Experience Hub sem ambientes de produção](/help/assets/assets-experience-hub/experience-hub-no-prod-environs-ams.png)
 
