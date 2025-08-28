@@ -1,23 +1,22 @@
 ---
-title: Assistente de IA no AEM
+title: Assistente de IA no AEM 6.5
 description: Use o Assistente de IA para ajudar você a encontrar respostas e solucionar problemas das soluções disponíveis no Adobe Experience Manager.
-solution: Experience Manager
+solution: Experience Manager, Experience Manager 6.5
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 3b4a484e-55b5-4924-82dd-56735f6ed46d
-source-git-commit: 78ba3c9a8c2636eebdeac08c54ad3d0b1d0e8249
+source-git-commit: c98a66a4b4be23145334b339a793ded1716e9889
 workflow-type: tm+mt
-source-wordcount: '1294'
+source-wordcount: '1296'
 ht-degree: 1%
 
 ---
 
-# Assistente de IA no AEM {#about-ai-assistant-in-aem}
+# Assistente de IA no AEM 6.5 {#about-ai-assistant-in-aem}
 
 >[!IMPORTANT]
 >
 >Os clientes do AEM 6.5 e do AEM 6.5 LTS que não usam o Cloud Manager/Experience Hub devem entrar em contato com o engenheiro de sucesso do cliente da Adobe para solicitar acesso ao Assistente de IA.
-
 
 O Assistente de IA no AEM 6.5/AEM 6.5 LTS oferece uma interface conversacional projetada para simplificar a busca de respostas para suas dúvidas relacionadas ao Adobe Experience Manager. Ele ajuda você a obter respostas instantâneas para suas perguntas sobre produtos da AEM (*disponíveis para todos os usuários*) e a automatizar a criação de tíquetes de suporte (*disponíveis para Administradores de Suporte*).
 
@@ -36,7 +35,7 @@ Ele é diretamente incorporado ao AEM e acessível no AEM Experience Hub, Cloud 
 
 O vídeo de 39 segundos a seguir, com duração de 3 minutos, fornece uma apresentação passo a passo do Assistente de IA no AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/3470360?learn=on&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/3470354?learn=on)
 
 ## Obter acesso ao Assistente de IA no AEM{#get-access}
 
@@ -94,7 +93,7 @@ O conhecimento do produto abrange conceitos e tópicos derivados da documentaç�
 | Aprendizado apontado | <ul><li>O que é o Editor Universal?</li><li>Como criar um programa no Cloud Manager?</li></ul> |
 | Abrir descoberta | <ul><li>Como usar o Universal Editor?</li><li>Existe uma maneira de copiar o conteúdo de um ambiente para outro?</li></ul> |
 | Resolução de problemas | <ul><li>Por que não posso acessar o Universal Editor?</li><li>Por que meu pipeline está falhando?</li></ul> |
-| **Criação do tíquete de suporte** | **Disponível somente para Administradores de Suporte &#x200B;**<br>**Exemplos** |
+| **Criação do tíquete de suporte** | **Disponível somente para Administradores de Suporte **<br>**Exemplos** |
 | Criação automatizada de tíquetes de suporte, capturando o histórico e o contexto do bate-papo do Assistente de IA | <ul><li>Crie um tíquete de suporte para mim.</li></ul> |
 | Recuperar status do tíquete de suporte | <ul><li>Mostre-me todos os tíquetes de suporte que abri.</li><li>Mostre-me o status do tíquete &quot;E—&quot;</li></ul> |
 
@@ -134,7 +133,7 @@ Administrators should keep normal Cloud Manager governance in mind. Hold product
 
 ![Technical support ticket creation in the AI Assistant in AEM of the Admin Console](/help/implementing/cloud-manager/assets/ai-assistant-admin-console-support-ticket.png)
 
-For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/accessing/overview). 
+For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/overview). 
 
 See also [Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md). -->
 
