@@ -62,7 +62,7 @@ Para usar HTTP/2, você deve atender aos seguintes requisitos:
 
 Você inicia a solicitação para mudar para HTTP/2; isso não é feito automaticamente para você.
 
-1. Para mudar para HTTP/2, inicie uma solicitação de Suporte ao cliente da Adobe. Consulte [Abrir um tíquete de suporte](https://experienceleague.adobe.com/?support-solution=General&lang=en&support-tab=home#support).
+1. Para mudar para HTTP/2, inicie uma solicitação de Suporte ao cliente da Adobe. Consulte [Abrir um tíquete de suporte](https://experienceleague.adobe.com/pt-br?support-solution=General&lang=en&support-tab=home#support).
 
    1. Forneça as seguintes informações em sua solicitação de suporte:
 
