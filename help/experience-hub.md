@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager 6.5
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 8193e420-2e37-45a6-a1fc-01873fed539b
-source-git-commit: 276b7bb5462e4dd0dfbb27c94f759a89afb815cf
+source-git-commit: 25c154fb310902079e6cd116e29a8e7f9a88e157
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '588'
 ht-degree: 2%
 
 ---
@@ -19,7 +19,7 @@ O Experience Hub apresenta um ponto de partida centralizado para o gerenciamento
 
 Assista a um rápido tour pelo espaço de trabalho recriado do AEM Experience Hub (4 minutos, 9 segundos).
 
->[!VIDEO](https://video.tv.adobe.com/v/3471446?learn=on&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/3471396?learn=on)
 
 <!--
 Available as a private beta, Experience Hub offers an optimized experience focused on improving workflows, prioritizing goals, and delivering results. Opting in lets you influence Experience Hub's development by providing feedback that helps shape its future and enhances its value for the entire AEM community. -->
@@ -82,4 +82,4 @@ Se não houver ambientes de produção do AEM Cloud Service ou do Managed Servic
 
 ## Assistente de IA no AEM
 
-Para clientes que possuem [critérios de pré-requisito concluídos](/help/ai-assistant-in-aem.md#get-access), o Assistente de IA do AEM está disponível para usuários de suas organizações. Consulte [Assistente de IA no AEM](/help/ai-assistant-in-aem.md).
+Para clientes que possuem [critérios de pré-requisito concluídos](/help/ai-assistant-in-aem.md#get-access), o Assistente de IA no AEM está disponível para usuários de suas organizações. Consulte [Assistente de IA no AEM](/help/ai-assistant-in-aem.md).
