@@ -5,9 +5,9 @@ solution: Experience Manager, Experience Manager 6.5
 feature: Authoring, AI Assistant, AI Tools
 role: Admin, Architect, Developer, User
 exl-id: 3b4a484e-55b5-4924-82dd-56735f6ed46d
-source-git-commit: 646816ab50c432c86772c228878f8114854c320f
+source-git-commit: 4ec42cee96cbedfc70db8a5272ceff64658a22a3
 workflow-type: tm+mt
-source-wordcount: '1278'
+source-wordcount: '1311'
 ht-degree: 3%
 
 ---
@@ -35,32 +35,27 @@ Ele é diretamente incorporado ao AEM e acessível no AEM Experience Hub, Cloud 
 
 O vídeo de 39 segundos de 3 minutos a seguir fornece uma apresentação passo a passo do Assistente de IA no AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/3470360?learn=on&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/3470354?learn=on)
 
 ## Obter acesso ao Assistente de IA no AEM{#get-access}
 
-Para conceder aos usuários acesso ao Assistente de IA no AEM, o Administrador do Adobe deve configurar as seguintes permissões personalizadas para os perfis que exigem acesso no **Adobe Admin Console**:
+Para obter acesso ao Assistente de IA no AEM, os clientes devem ter o seguinte:
 
-* **Acesso ao Assistente de IA** - Permissão para usar o Assistente de IA no AEM para obter conhecimento sobre o produto, permitindo que os usuários façam perguntas relacionadas ao produto no bate-papo do Assistente de IA. Essa permissão deve ser ativada.
-* **Acesso ao suporte** - Os usuários também devem ter permissão para abrir tíquetes de suporte, o que requer a função de **Administrador de Suporte**.
+* Permissão para usar o Assistente de IA no AEM para Conhecimento do produto. Essa permissão permite que você faça perguntas relacionadas ao produto no bate-papo do Assistente de IA. Essa permissão deve ser ativada.
+* Permissão para abrir tíquetes de suporte, o que requer a função de **Administrador de Suporte**.
 
-As solicitações do Assistente de IA no AEM são autenticadas por meio do Adobe Identity Management Services (IMS). Para obter detalhes, consulte a [visão geral dos Serviços Identity Management da Adobe](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/corporate/adobe-identity-management-services-security-overview.pdf).
+>[!NOTE]
+>
+>As solicitações do Assistente de IA no AEM são autenticadas por meio do Adobe Identity Management Services (IMS). Para obter detalhes, consulte a [visão geral dos Serviços Identity Management da Adobe](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/corporate/adobe-identity-management-services-security-overview.pdf).
 
 **Para obter acesso ao Assistente de IA no AEM:**
 
 1. Os clientes devem ter um contrato adicional em vigor para acessar a maioria dos recursos de IA e agentes no Adobe Experience Manager. Entre em contato com seu representante da Adobe para obter mais detalhes.
 
-<!-- OLD STEP 1 [Customers must sign the Gen AI rider with Adobe](https://fieldreadiness-adobe.highspot.com/items/665f831c9f831b011aeda057#1). 
+1. Para usar o Assistente de IA no AEM, é obrigatória a permissão para acessar o Conhecimento do produto por meio do Assistente de IA. Essa permissão está ativada por padrão.
 
-    The GenAI Rider is a legal agreement between a customer and Adobe, required to use most AI and agentic capabilities. Contact Adobe Customer Care to learn more. -->
+   Para controlar quem pode acessar os Conhecimentos do Produto, envie um email para [aemaiassistant@adobe.com](mailto:aemaiassistant@adobe.com) a partir do seu endereço de email associado à sua Adobe ID. O Adobe pode ativar o controle de acesso no nível do usuário. Quando estiver habilitado, seu Administrador poderá conceder acesso de nível de usuário seguindo as etapas em [Configurar o Assistente de IA no AEM](/help/ai-assistant-in-aem-admin.md).
 
-1. O administrador do AEM configura o Assistente de IA para uso em sua organização. Consulte [Configurar o Assistente de IA no AEM](/help/ai-assistant-in-aem-admin.md).
-
-<!--
->[!IMPORTANT]
->Be sure you have reviewed and submitted the user agreement so Adobe can enable AI Assistant feature for you to test out and participate in the private beta program.
->
->For any questions, send an email to [Grp-AEMAIASSISTANT@adobe.com](mailto:Grp-AEMAIASSISTANT@adobe.com) from your email address associated with your Adobe ID. -->
 
 ## Escopo {#scope}
 
@@ -93,7 +88,7 @@ O conhecimento do produto abrange conceitos e tópicos derivados da documentaç�
 | Aprendizado apontado | <ul><li>O que é o Editor Universal?</li><li>Como criar um programa no Cloud Manager?</li></ul> |
 | Abrir descoberta | <ul><li>Como usar o Universal Editor?</li><li>Existe uma maneira de copiar o conteúdo de um ambiente para outro?</li></ul> |
 | Resolução de problemas | <ul><li>Por que não posso acessar o Universal Editor?</li><li>Por que meu pipeline está falhando?</li></ul> |
-| **Criação do tíquete de suporte** | **Disponível somente para Administradores de Suporte &#x200B;**<br>**Exemplos** |
+| **Criação do tíquete de suporte** | **Disponível somente para Administradores de Suporte **<br>**Exemplos** |
 | Criação automatizada de tíquetes de suporte, capturando o histórico e o contexto do bate-papo do Assistente de IA | <ul><li>Crie um tíquete de suporte para mim.</li></ul> |
 | Recuperar status do tíquete de suporte | <ul><li>Mostre-me todos os tíquetes de suporte que abri.</li><li>Mostre-me o status do tíquete &quot;E—&quot;</li></ul> |
 
@@ -133,7 +128,7 @@ Administrators should keep normal Cloud Manager governance in mind. Hold product
 
 ![Technical support ticket creation in AI Assistant in AEM of the Admin Console](/help/implementing/cloud-manager/assets/ai-assistant-admin-console-support-ticket.png)
 
-For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/accessing/overview). 
+For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/overview). 
 
 See also [Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md). -->
 
