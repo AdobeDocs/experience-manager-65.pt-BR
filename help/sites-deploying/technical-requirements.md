@@ -6,7 +6,7 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: f202069d2fb8cbb942dad06974636592279fe245
+source-git-commit: f7e0cc48dbee90af2440e83ba82316d8237dcbe4
 workflow-type: tm+mt
 source-wordcount: '3534'
 ht-degree: 1%
@@ -102,7 +102,7 @@ O Adobe Experience Manager opera com as seguintes versões das Máquinas Virtuai
 | Azul Zulu OpenJDK 8 - 64 bits | A: Suportado `[3]` | |
 
 1. A Oracle migrou para um modelo de &quot;Suporte a longo prazo&quot; (LTS, Long Term Support) para produtos Oracle Java™ SE. O Java™ 9, o Java™ 10 e o Java™ 12 são versões não LTS da Oracle (consulte o [roteiro de suporte do Oracle Java™ SE](https://www.oracle.com/technetwork/java/eol-135779.html)). Para implantar o AEM em um ambiente de produção, a Adobe fornece suporte somente para as versões LTS do Java™. O suporte e a distribuição do JDK do Oracle Java™ SE, incluindo todas as atualizações de manutenção de versões LTS além do fim das atualizações públicas, são compatíveis pela Adobe diretamente para todos os clientes da AEM que usam a tecnologia Oracle Java™ SE. Consulte a [Política de suporte do Java™ para Adobe Experience Manager](assets/Java_Policy_for_Adobe_Experience_Manager.pdf).
-   **Importante: o Oracle Java™ 11 é compatível no mínimo até setembro de 2026. O Oracle Java™ 17 e 21 é compatível com o [AEM 6.5 LTS](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65-lts/content/implementing/deploying/introduction/technical-requirements).**
+   **Importante: o Oracle Java™ 11 é compatível no mínimo até setembro de 2026. O Oracle Java™ 17 e 21 é compatível com o [AEM 6.5 LTS](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/implementing/deploying/introduction/technical-requirements).**
 
 1. O IBM® JRE só é suportado com o WebSphere® Application Server.
 
@@ -245,7 +245,6 @@ O Adobe Experience Manager funciona com as seguintes plataformas de servidor par
 >* Microsoft® Visual C++ 2013 redistribuível
 >* Microsoft® Visual C++ 2019(VC14.28 ou superior) redistribuível
 
-
 ### Ambientes de computação virtual e em nuvem {#virtual-cloud-computing-environments}
 
 O Adobe Experience Manager é compatível com a execução em uma máquina virtual em ambientes de computação em nuvem. Esses ambientes incluem o Microsoft® Azure e o Amazon Web Services (AWS), executados em conformidade com os requisitos técnicos listados nesta página e de acordo com os termos de suporte padrão da Adobe.
@@ -260,7 +259,7 @@ Para obter recomendações sobre como implantar o AEM no Azure ou no AWS, fora d
 
 ### Plataformas Dispatcher (servidores da Web) {#dispatcher-platforms-web-servers}
 
-O Dispatcher é o componente de balanceamento de carga e cache. [Baixe a versão mais recente do Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html?lang=pt-BR). O Experience Manager 6.5 exige a versão 4.3.2 ou superior do Dispatcher.
+O Dispatcher é o componente de balanceamento de carga e cache. [Baixe a versão mais recente do Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html). O Experience Manager 6.5 exige a versão 4.3.2 ou superior do Dispatcher.
 
 Os seguintes servidores da Web são compatíveis para uso com o Dispatcher versão 4.3.2:
 
@@ -470,7 +469,7 @@ Para Windows x86:
    <th><p><strong>Formatos compatíveis com a conversão para o PDF</strong></p> </th>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/br/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat Pro DC</a> versão mais recente</td>
+   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat Pro DC</a> versão mais recente</td>
    <td>XPS, formatos de imagem (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML e HTM</td>
   </tr>
 
@@ -498,7 +497,7 @@ Para Windows x86:
 >* A PDF Generator não oferece suporte ao Microsoft® Office 365.
 >* As conversões do PDF Generator para OpenOffice são suportadas apenas no Windows e no Linux®.
 >* Os recursos OCR PDF, Otimizar PDF e Export PDF são suportados apenas no Windows.
->* Uma versão do Acrobat é fornecida com o AEM Forms para ativar a funcionalidade do PDF Generator. A versão agrupada só deve ser acessada programaticamente com o AEM Forms, durante o prazo da licença do AEM Forms, para uso somente com o AEM Forms PDF Generator. Para obter mais informações, consulte a descrição do produto AEM Forms de acordo com sua implantação ([No local](https://helpx.adobe.com/br/legal/product-descriptions/adobe-experience-manager-on-premise.html) ou [Managed Services](https://helpx.adobe.com/br/legal/product-descriptions/adobe-experience-manager-managed-services.html)).
+>* Uma versão do Acrobat é fornecida com o AEM Forms para ativar a funcionalidade do PDF Generator. A versão agrupada só deve ser acessada programaticamente com o AEM Forms, durante o prazo da licença do AEM Forms, para uso somente com o AEM Forms PDF Generator. Para obter mais informações, consulte a descrição do produto AEM Forms de acordo com sua implantação ([No local](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) ou [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html)).
 >* O serviço PDF Generator não oferece suporte ao Microsoft® Windows 11.
 
 ### Requisitos para o AEM Forms Designer {#requirements-for-aem-forms-designer}
