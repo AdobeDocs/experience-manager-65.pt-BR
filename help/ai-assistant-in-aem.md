@@ -5,7 +5,7 @@ solution: Experience Manager, Experience Manager 6.5
 feature: Authoring, AI Assistant, AI Tools
 role: Admin, Architect, Developer, User
 exl-id: 3b4a484e-55b5-4924-82dd-56735f6ed46d
-source-git-commit: 4ec42cee96cbedfc70db8a5272ceff64658a22a3
+source-git-commit: 773a3e1ce6365589c968dd56a44d7adc9a4ec447
 workflow-type: tm+mt
 source-wordcount: '1311'
 ht-degree: 3%
@@ -33,9 +33,9 @@ O Assistente de IA é compatível com o AEM as a Cloud Service, incluindo as seg
 
 Ele é diretamente incorporado ao AEM e acessível no AEM Experience Hub, Cloud Manager e na interface do usuário do autor.
 
-O vídeo de 39 segundos de 3 minutos a seguir fornece uma apresentação passo a passo do Assistente de IA no AEM.
+O vídeo de 25 segundos com duração de 3 minutos apresenta uma apresentação passo a passo do Assistente de IA no AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/3470360?learn=on&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/3475357/?learn=on&enablevpops)
 
 ## Obter acesso ao Assistente de IA no AEM{#get-access}
 
@@ -59,7 +59,7 @@ Para obter acesso ao Assistente de IA no AEM, os clientes devem ter o seguinte:
 
 ## Escopo {#scope}
 
-O escopo atual do Assistente de IA no AEM se concentra em abordar questões de conhecimento do produto para o AEMr. as a Cloud Service. Esse escopo inclui suporte abrangente para áreas importantes. <!--, such as Sites, Assets, Forms, Edge Delivery Services, Dynamic Media, and Cloud Manager. -->
+O escopo atual do Assistente de IA no AEM se concentra em abordar perguntas de conhecimento do produto para o AEMr. as a Cloud Service. Esse escopo inclui suporte abrangente para áreas importantes. <!--, such as Sites, Assets, Forms, Edge Delivery Services, Dynamic Media, and Cloud Manager. -->
 
 * **Superfícies**: disponível no AEM Experience Hub, IU do autor, Cloud Manager.
 * **Recursos**: conhecimento sobre produtos e primeira parada para solução de problemas e orientação, criação automática de tíquetes de suporte e pesquisa.
@@ -88,7 +88,7 @@ O conhecimento do produto abrange conceitos e tópicos derivados da documentaç�
 | Aprendizado apontado | <ul><li>O que é o Editor Universal?</li><li>Como criar um programa no Cloud Manager?</li></ul> |
 | Abrir descoberta | <ul><li>Como usar o Universal Editor?</li><li>Existe uma maneira de copiar o conteúdo de um ambiente para outro?</li></ul> |
 | Resolução de problemas | <ul><li>Por que não posso acessar o Universal Editor?</li><li>Por que meu pipeline está falhando?</li></ul> |
-| **Criação do tíquete de suporte** | **Disponível somente para Administradores de Suporte &#x200B;**<br>**Exemplos** |
+| **Criação do tíquete de suporte** | **Disponível somente para Administradores de Suporte **<br>**Exemplos** |
 | Criação automatizada de tíquetes de suporte, capturando o histórico e o contexto do bate-papo do Assistente de IA | <ul><li>Crie um tíquete de suporte para mim.</li></ul> |
 | Recuperar status do tíquete de suporte | <ul><li>Mostre-me todos os tíquetes de suporte que abri.</li><li>Mostre-me o status do tíquete &quot;E—&quot;</li></ul> |
 
@@ -128,7 +128,7 @@ Administrators should keep normal Cloud Manager governance in mind. Hold product
 
 ![Technical support ticket creation in AI Assistant in AEM of the Admin Console](/help/implementing/cloud-manager/assets/ai-assistant-admin-console-support-ticket.png)
 
-For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/accessing/overview). 
+For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/overview). 
 
 See also [Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md). -->
 
@@ -192,7 +192,7 @@ Estas são as respostas para algumas perguntas comuns sobre o Assistente de IA:
 * **As informações fornecidas pelo Assistente de IA no AEM são em tempo real?**\
   Não. O Assistente de IA origina seu conteúdo da documentação da Adobe Experience League. As atualizações do conteúdo podem levar algum tempo para refletir em suas respostas.
 * **A quais aplicativos do Adobe o Assistente de IA oferece suporte no AEM?**\
-  Atualmente, o Assistente de IA oferece suporte a consultas de conhecimento de produtos na AEM as a Cloud Service, incluindo Sites, Assets, Dynamic Media, Cloud Manager e Forms.
+  Atualmente, o Assistente de IA é compatível com consultas de conhecimento de produto no AEM as a Cloud Service, incluindo Sites, Assets, Dynamic Media, Cloud Manager e Forms.
 * **Quais são os recursos do Assistente de IA no AEM?**\
   O Assistente de IA do AEM foi projetado para responder a consultas relacionadas ao conhecimento do produto Adobe.
 * **O Assistente de IA no AEM usa informações pessoais para dados de treinamento?**\
