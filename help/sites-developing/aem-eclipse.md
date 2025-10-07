@@ -126,7 +126,7 @@ Siga estas etapas para criar o projeto de amostra:
 
    >[!TIP]
    >
-   >Para obter mais detalhes sobre como depurar seu projeto em execução em um AEM SDK local, consulte o documento [Depuração remota do AEM SDK.](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-sdk/remote-debugging)
+   >Para obter mais detalhes sobre como depurar seu projeto em execução em um AEM SDK local, consulte o documento [Depuração remota do AEM SDK.](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-sdk/remote-debugging)
 
 1. Clique em **Concluir**.
 
