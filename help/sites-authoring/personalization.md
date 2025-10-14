@@ -20,7 +20,7 @@ O AEM fornece uma estrutura de ferramentas para a criação de conteúdo direcio
 
 ## Modo de direcionamento {#targeting-mode}
 
-[Crie conteúdo direcionado usando o modo Direcionar do AEM. ](/help/sites-authoring/content-targeting-touch.md) O modo de direcionamento e o componente do Target fornecem ferramentas para criar conteúdo para as experiências das suas atividades de marketing.
+[Crie conteúdo direcionado usando o modo Direcionar do AEM. &#x200B;](/help/sites-authoring/content-targeting-touch.md) O modo de direcionamento e o componente do Target fornecem ferramentas para criar conteúdo para as experiências das suas atividades de marketing.
 
 ## Atividades {#activities}
 

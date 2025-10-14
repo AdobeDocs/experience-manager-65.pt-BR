@@ -642,7 +642,7 @@ Os pré-requisitos para criar uma interface de usuário separada para exibir res
    * **descrição**- Especifica a descrição de uma linha do relatório. Você pode deixar o campo de descrição vazio.
    * **ícone**- Especifica a imagem que deve representar o relatório de forma visual. Você pode deixar o campo de ícone vazio.
 
-   ![Propriedades do nó ](assets/node_properties_new.png)
+   ![Propriedades do nó &#x200B;](assets/node_properties_new.png)
 
    Propriedades do nó
 

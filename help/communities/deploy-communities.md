@@ -301,7 +301,7 @@ por exemplo,
 
 >[!CAUTION]
 >
->Se outro recurso de segurança já tiver sido configurado com base nas chaves de criptografia, a replicação dessas chaves poderá danificar a configuração. Para obter ajuda, [entre em contato com o atendimento ao cliente](https://experienceleague.adobe.com/pt-br?support-solution=General&amp;support-tab=home#support).
+>Se outro recurso de segurança já tiver sido configurado com base nas chaves de criptografia, a replicação dessas chaves poderá danificar a configuração. Para obter ajuda, [entre em contato com o atendimento ao cliente](https://experienceleague.adobe.com/pt-br?support-solution=General&support-tab=home#support).
 
 #### Replicação do repositório {#repository-replication}
 

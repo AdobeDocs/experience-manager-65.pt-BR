@@ -46,7 +46,7 @@ Consulte o artigo [Edição de um SPA externo no AEM](spa-edit-external.md) para
 
 ## Limitações {#limitations}
 
-* O componente RemotePage espera que a implementação forneça um manifesto de ativo como o [ encontrado aqui.](https://github.com/shellscape/webpack-manifest-plugin) O componente RemotePage, no entanto, só foi testado para funcionar com a estrutura React (e Next.js por meio do componente remote-page-next) e, portanto, não oferece suporte ao carregamento remoto de aplicativos de outras estruturas, como o Angular.
+* O componente RemotePage espera que a implementação forneça um manifesto de ativo como o [&#x200B; encontrado aqui.](https://github.com/shellscape/webpack-manifest-plugin) O componente RemotePage, no entanto, só foi testado para funcionar com a estrutura React (e Next.js por meio do componente remote-page-next) e, portanto, não oferece suporte ao carregamento remoto de aplicativos de outras estruturas, como o Angular.
 * O CSS interno definido no arquivo HTML raiz do aplicativo e o CSS em linha no nó DOM raiz não estarão disponíveis ao fazer renderização remota no AEM.
 
 ## Detalhes técnicos {#technical-details}

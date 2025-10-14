@@ -295,7 +295,7 @@ Depois que todas as traduções forem inseridas, selecione **Salvar** para sair 
 
 ![chlimage_1-205](assets/chlimage_1-205.png)
 
-Em geral, o idioma escolhido para a tag é retirado do idioma da página, quando disponível. Quando o widget [`tag` ](/help/sites-developing/building.md#tagging-on-the-client-side) é usado em outros casos (por exemplo, em formulários ou caixas de diálogo), o idioma da marca depende do contexto.
+Em geral, o idioma escolhido para a tag é retirado do idioma da página, quando disponível. Quando o widget [`tag` &#x200B;](/help/sites-developing/building.md#tagging-on-the-client-side) é usado em outros casos (por exemplo, em formulários ou caixas de diálogo), o idioma da marca depende do contexto.
 
 Em vez de usar a configuração de idioma da página, o console Marcação usa a configuração de idioma do usuário. No console de marcação, para a tag &quot;Animais&quot;, &quot;Animaux&quot; seria exibido para um usuário que define o idioma para francês em suas propriedades de usuário.
 

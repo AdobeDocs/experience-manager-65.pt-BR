@@ -126,7 +126,7 @@ As tabelas Distribuição do navegador, Distribuição do sistema operacional e 
 
 Para filtrar ainda mais os dados de análise, você pode clicar em uma entrada em qualquer uma das tabelas. Por exemplo, se você clicar em Google Chrome na tabela Distribuição de navegador, o relatório será renderizado novamente com dados relevantes para o navegador Google Chrome, da seguinte maneira:
 
-![Filtro aplicado ao relatório do Analytics - Google Chrome ](assets/filter-1.png)
+![Filtro aplicado ao relatório do Analytics - Google Chrome &#x200B;](assets/filter-1.png)
 
 Se você exibir o relatório do painel depois de aplicar um filtro, os dados do relatório do painel também serão exibidos de acordo com o filtro aplicado.
 

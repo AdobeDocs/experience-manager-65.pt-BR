@@ -533,7 +533,7 @@ Como membro do grupo `administrators`, o usuário autorizado deve ter os seguint
 
 Se a ID do Sling corresponder entre duas ou mais instâncias do Publish, a sincronização do grupo de usuários falhará.
 
-Consulte a seção [9. Identificador exclusivo do Sling ](#unique-sling-id)
+Consulte a seção [9. Identificador exclusivo do Sling &#x200B;](#unique-sling-id)
 
 ### Sincronizando usuários e grupos de usuários manualmente {#manually-syncing-users-and-user-groups}
 

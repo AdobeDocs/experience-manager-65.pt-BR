@@ -160,7 +160,7 @@ O AEM vem com vários modelos prontos para uso. Os modelos disponíveis dependem
 
 >[!NOTE]
 >
->Se configurado na instância,[ os autores de modelo poderão criá-los com o Editor de modelo](/help/sites-authoring/templates.md).
+>Se configurado na instância,[&#x200B; os autores de modelo poderão criá-los com o Editor de modelo](/help/sites-authoring/templates.md).
 
 ### Componentes {#components}
 

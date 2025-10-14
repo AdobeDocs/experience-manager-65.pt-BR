@@ -19,7 +19,7 @@ ht-degree: 17%
 
 >[!NOTE]
 >
->[Contate o Suporte](https://experienceleague.adobe.com/pt-br?support-solution=General&amp;support-tab=home#support) para obter mais informações ou obter o patch.
+>[Contate o Suporte](https://experienceleague.adobe.com/pt-br?support-solution=General&support-tab=home#support) para obter mais informações ou obter o patch.
 
 ## Sobre o instalador de patch {#about-the-patch-installer}
 
@@ -97,4 +97,4 @@ Se você tiver a autenticação SAML configurada e estiver enfrentando problemas
 * Segurança de documentos
 * Foundation JEE
 
-[Contate o Suporte](https://experienceleague.adobe.com/pt-br?support-solution=General&amp;support-tab=home#support)
+[Contate o Suporte](https://experienceleague.adobe.com/pt-br?support-solution=General&support-tab=home#support)

@@ -49,7 +49,7 @@ Para usar o PDF forms baseado em XFA no Firefox e no Chrome, execute as seguinte
 
 1. Clique em Desativar no Visualizador do Chrome PDF e em Ativar no Plug-in do Adobe PDF.
    ![chrome-pdf-viewer](/help/forms/using/assets/chrome-image.png)
-Para obter mais informações, consulte a documentação do [plug-in do Adobe PDF](https://support.google.com/chrome/?hl=en&amp;visit_id=638803785294106945-2276548125&amp;rd=4&amp;topic=3421431#topic=7439538) da Google.
+Para obter mais informações, consulte a documentação do [plug-in do Adobe PDF](https://support.google.com/chrome/?hl=en&visit_id=638803785294106945-2276548125&rd=4&topic=3421431#topic=7439538) da Google.
 
 >[!NOTE]
 > 

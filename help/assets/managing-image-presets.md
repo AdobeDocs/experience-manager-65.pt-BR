@@ -447,7 +447,7 @@ A seguir estão alguns exemplos básicos do que você pode fazer com modificador
 
 >[!NOTE]
 >
->Alguns modificadores de imagem [ não podem ser usados em Experience Manager](#advanced-tab-options).
+>Alguns modificadores de imagem [&#x200B; não podem ser usados em Experience Manager](#advanced-tab-options).
 
 * [op_invert](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-invert.html?lang=pt-BR#image-serving-api) - Inverte cada componente de cor para um efeito de imagem negativo.
 

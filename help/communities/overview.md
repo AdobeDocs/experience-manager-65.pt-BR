@@ -214,7 +214,7 @@ A máquina de demonstração AEM requer uma licença AEM válida.
 
 >[!NOTE]
 >
->Assista a uma [introdução ao vídeo](https://www.youtube.com/watch?v=zEE_zkR9fVQ&amp;feature=youtu.be) da máquina de demonstração do AEM (13:26).
+>Assista a uma [introdução ao vídeo](https://www.youtube.com/watch?v=zEE_zkR9fVQ&feature=youtu.be) da máquina de demonstração do AEM (13:26).
 
 ## Documentação do AEM Communities {#aem-communities-documentation}
 

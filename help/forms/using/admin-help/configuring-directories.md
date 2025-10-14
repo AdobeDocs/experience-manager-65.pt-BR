@@ -279,7 +279,7 @@ Este é um exemplo de script LDIF para entrada VLV para usuários:
 
    >[!NOTE]
    >
-   >Como convenção, o nome da entrada vlvIndex também é definido como `lcuser`, mas você pode dar a ele um nome diferente. Use o mesmo nome na ferramenta vlvindex. (Consulte [Criar o Índice de Servidor de Diretório para VLV ](configuring-directories.md#create-the-directory-server-index-for-vlv)*.)*
+   >Como convenção, o nome da entrada vlvIndex também é definido como `lcuser`, mas você pode dar a ele um nome diferente. Use o mesmo nome na ferramenta vlvindex. (Consulte [Criar o Índice de Servidor de Diretório para VLV &#x200B;](configuring-directories.md#create-the-directory-server-index-for-vlv)*.)*
 
 1. Usando a ferramenta `ldapmodify` fornecida com o Sun ONE Server, crie uma entrada semelhante para grupos usando o DN Base, o Filtro de Pesquisa e o Campo de Classificação do grupo, respectivamente:
 

@@ -239,7 +239,7 @@ O planejamento do desenvolvimento é fundamental para garantir que seu projeto s
 
   Antes do desenvolvimento, todos os processos de suporte necessários para implantar, liberar, testar e relatar problemas devem ser estabelecidos.
 
-  Consulte também o [Portal de suporte do Adobe](https://experienceleague.adobe.com/pt-br?support-solution=General&amp;support-tab=home#support).
+  Consulte também o [Portal de suporte do Adobe](https://experienceleague.adobe.com/pt-br?support-solution=General&support-tab=home#support).
 
 ### Planejamento e operações de operações {#operations-planning-and-operations}
 
@@ -607,7 +607,7 @@ Para obter as práticas recomendadas sobre implantação, administração, desen
 
 * Outras práticas recomendadas e diretrizes relacionadas ao gerenciamento de um projeto AEM:
    * [Diretrizes de dimensionamento de hardware](/help/managing/hardware-sizing-guidelines.md)
-   * [DevOps empresarial ](/help/managing/enterprise-devops.md)
+   * [DevOps empresarial &#x200B;](/help/managing/enterprise-devops.md)
    * [Práticas recomendadas de gerenciamento de SEO e URL](/help/managing/seo-and-url-management.md)
    * [AEM e diretrizes de acessibilidade na Web](/help/managing/web-accessibility.md)
    * [Regulamento Geral sobre a Proteção de Dados](/help/managing/data-protection-and-privacy.md)* [Implantação e Manutenção de Práticas Recomendadas](/help/sites-deploying/best-practices.md)
@@ -622,7 +622,7 @@ Além disso, as seguintes seções da documentação do AEM são de especial int
 
    * [Segurança](/help/sites-developing/security.md)
    * [Implantações recomendadas](/help/sites-deploying/recommended-deploys.md)
-   * [DevOps empresarial ](/help/managing/enterprise-devops.md)
+   * [DevOps empresarial &#x200B;](/help/managing/enterprise-devops.md)
    * [Dimensionamento de hardware](/help/managing/hardware-sizing-guidelines.md)
    * Conceitos de AEM:
 

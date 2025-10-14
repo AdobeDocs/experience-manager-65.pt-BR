@@ -22,7 +22,7 @@ ht-degree: 9%
 
 O [!DNL Adobe Workfront] é um aplicativo de gerenciamento de trabalho que ajuda você a gerenciar todo o ciclo de vida do trabalho em um único local. A integração entre o [!DNL Workfront] e o [!DNL Adobe Experience Manager Assets] permite que as organizações melhorem a velocidade do conteúdo e o prazo para comercialização, conectando intrinsecamente o gerenciamento de trabalho e de ativos digitais. No contexto do gerenciamento de trabalho no Workfront, os usuários têm acesso aos documentos e imagens necessários.
 
-O [!DNL Workfront for Experience Manager enhanced connector] permite processos de negócios aprimorados com fluxos de trabalho completos e fornece experiências personalizadas e armazenamento central completos para o cliente. O Adobe oferece um conector padrão e um conector aprimorado para integrar as duas soluções. Consulte os recursos com suporte abaixo para obter uma comparação e consulte [novidades no [!DNL enhanced connector]](https://one.workfront.com/s/csh?context=2467&amp;pubname=the-new-workfront-experience).
+O [!DNL Workfront for Experience Manager enhanced connector] permite processos de negócios aprimorados com fluxos de trabalho completos e fornece experiências personalizadas e armazenamento central completos para o cliente. O Adobe oferece um conector padrão e um conector aprimorado para integrar as duas soluções. Consulte os recursos com suporte abaixo para obter uma comparação e consulte [novidades no [!DNL enhanced connector]](https://one.workfront.com/s/csh?context=2467&pubname=the-new-workfront-experience).
 
 [!DNL Workfront for Experience Manage enhanced connector] permite que sua organização:
 
@@ -32,7 +32,7 @@ O [!DNL Workfront for Experience Manager enhanced connector] permite processos d
 * Defina os status dos objetos do Workfront com base nas condições configuráveis usando workflows Experience Manager.
 * Ativos do Publish para o ambiente de publicação do Experience Manager ou para o Brand Portal.
 
-Consulte o suporte à plataforma e os [pré-requisitos do conector aprimorado](https://one.workfront.com/s/csh?context=2467&amp;pubname=the-new-workfront-experience).
+Consulte o suporte à plataforma e os [pré-requisitos do conector aprimorado](https://one.workfront.com/s/csh?context=2467&pubname=the-new-workfront-experience).
 
 >[!IMPORTANT]
 >

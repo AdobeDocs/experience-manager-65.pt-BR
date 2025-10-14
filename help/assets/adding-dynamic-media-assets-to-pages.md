@@ -113,7 +113,7 @@ Os componentes do Dynamic Media disponíveis incluem o seguinte:
 
 >[!NOTE]
 >
->Esses componentes não estão disponíveis por padrão. Eles devem ser disponibilizados por meio do editor de modelo antes de você usá-los. [Depois que eles forem disponibilizados no ](/help/sites-authoring/templates.md#editing-templates-template-authors)n editor de modelo, você poderá adicionar os componentes à sua página como faria com qualquer outro componente Experience Manager.
+>Esses componentes não estão disponíveis por padrão. Eles devem ser disponibilizados por meio do editor de modelo antes de você usá-los. [Depois que eles forem disponibilizados no &#x200B;](/help/sites-authoring/templates.md#editing-templates-template-authors)n editor de modelo, você poderá adicionar os componentes à sua página como faria com qualquer outro componente Experience Manager.
 
 ![6_5_dynamicmediawcmcomponents](assets/6_5_dynamicmediawcmcomponents.png)
 

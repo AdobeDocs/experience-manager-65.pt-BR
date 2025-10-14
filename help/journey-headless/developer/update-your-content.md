@@ -326,7 +326,7 @@ Você deve continuar sua jornada sem periféricos de AEM revisando a seguir o do
 
 * [API HTTP de ativos](/help/assets/mac-api-assets.md)
 * [API REST de fragmentos de conteúdo](/help/assets/assets-api-content-fragments.md)
-   * [Referência da API ](/help/assets/assets-api-content-fragments.md#api-reference)
+   * [Referência da API &#x200B;](/help/assets/assets-api-content-fragments.md#api-reference)
 * [API do Adobe Experience Manager Assets - Fragmentos de conteúdo](https://www.adobe.io/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html)
 * [Trabalho com fragmentos de conteúdo](/help/assets/content-fragments/content-fragments.md)
 * [Componentes principais do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR)

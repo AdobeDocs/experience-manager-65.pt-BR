@@ -391,7 +391,7 @@ Além disso, verifique se o código de implementação de vários campos e a est
 
 **As configurações disponíveis para administradores não estão disponíveis para autores**
 
-Se as atualizações das configurações de interface forem refletidas para administradores, mas não para contas de autor, verifique se o nó de configuração não é nomeado como `config`. Use a propriedade [`configPath` ](/help/sites-developing/components-basics.md#cq-inplaceediting).
+Se as atualizações das configurações de interface forem refletidas para administradores, mas não para contas de autor, verifique se o nó de configuração não é nomeado como `config`. Use a propriedade [`configPath` &#x200B;](/help/sites-developing/components-basics.md#cq-inplaceediting).
 
 >[!MORELIKETHIS]
 >

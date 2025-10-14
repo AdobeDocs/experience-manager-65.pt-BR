@@ -17,7 +17,7 @@ ht-degree: 2%
 
 # eCommerce{#ecommerce}
 
-* [Conceitos ](/help/commerce/cif-classic/administering/concepts.md)
+* [Conceitos &#x200B;](/help/commerce/cif-classic/administering/concepts.md)
 * [Administração (genérico)](/help/commerce/cif-classic/administering/generic.md)
 
 O Adobe fornece duas versões do Commerce integration framework:

@@ -27,7 +27,7 @@ Execute as seguintes etapas para configurar registros do lado do servidor:
 
 1. Ir para `https://'[server]:[port]'/system/console/configMgr`. Localize e abra a opção *Configuração do log do Apace Sling*. Uma caixa de diálogo é exibida:
 
-   ![ Caixa de diálogo de opção de configuração do agente de log do Apace Sling ](assets/logconfig.png)
+   ![&#x200B; Caixa de diálogo de opção de configuração do agente de log do Apace Sling &#x200B;](assets/logconfig.png)
 
    Opção de configuração do logger de log do Apace Sling
 

@@ -11,7 +11,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->O Editor de SPA [ foi descontinuado para novos projetos.](/help/sites-developing/spa-editor-deprecation.md) Ele ainda é suportado pela Adobe para projetos existentes, mas não deve ser usado para novos projetos. Os editores preferidos para gerenciar conteúdo headless no AEM agora são:
+>O Editor de SPA [&#x200B; foi descontinuado para novos projetos.](/help/sites-developing/spa-editor-deprecation.md) Ele ainda é suportado pela Adobe para projetos existentes, mas não deve ser usado para novos projetos. Os editores preferidos para gerenciar conteúdo headless no AEM agora são:
 >
 >* [O Editor Universal](/help/sites-developing/universal-editor/introduction.md) para editar visualmente o conteúdo headless.
 >* [O Editor de Fragmento de Conteúdo](/help/sites-developing/universal-editor/introduction.md) para edição baseada em formulário de conteúdo headless.

@@ -578,7 +578,7 @@ Além disso, as seguintes seções são de especial interesse:
 O Adobe fornece práticas recomendadas adicionais para todas as fases e públicos-alvo:
 
 * [Implantar](/help/sites-deploying/best-practices.md)
-* [Criação  ](/help/sites-authoring/best-practices.md)
+* [Criação  &#x200B;](/help/sites-authoring/best-practices.md)
 * [Administração](/help/sites-administering/administer-best-practices.md)
 * [Desenvolvimento](/help/sites-developing/best-practices.md)
 * [Gerenciamento de projeto](/help/managing/best-practices.md)

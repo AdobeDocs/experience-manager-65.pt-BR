@@ -87,7 +87,7 @@ O [modo protegido](../../forms/using/get-xdp-pdf-documents-aem.md) está ativado
    >
    >Verifique se o servidor do AEM Forms está ativo e em execução. A visualização do HTML se conecta ao servidor do CRX para *gerar* uma visualização.
 
-   ![Opções do AEM Forms Designer ](assets/server_options.png)
+   ![Opções do AEM Forms Designer &#x200B;](assets/server_options.png)
 
    Opções do AEM Forms Designer
 

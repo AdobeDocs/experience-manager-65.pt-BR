@@ -30,7 +30,7 @@ Exemplo de layout da barra de ferramentas
 
 Os formulários adaptáveis fornecem um conjunto de layouts prontos para uso:
 
-![Layouts de barra de ferramentas disponíveis prontamente ](assets/toolbar1.png)
+![Layouts de barra de ferramentas disponíveis prontamente &#x200B;](assets/toolbar1.png)
 
 Layouts de barra de ferramentas disponíveis prontos para uso
 

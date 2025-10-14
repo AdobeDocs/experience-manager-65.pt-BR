@@ -207,7 +207,7 @@ As convenções recomendadas a seguir para definir e usar classes CSS:
 Para personalizar a aparência e o comportamento de um componente Communities no lado do cliente, consulte [Personalizações do lado do cliente](client-customize.md), que inclui informações sobre:
 
 * [Sobreposições](client-customize.md#overlays)
-* [Extensões ](client-customize.md#extensions)
+* [Extensões &#x200B;](client-customize.md#extensions)
 * [Marcação HTML](client-customize.md#htmlmarkup)
 * [Aplicação de capa a CSS](client-customize.md#skinning-css)
 * [Extensão do JavaScript](client-customize.md#extending-javascript)

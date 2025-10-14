@@ -53,7 +53,7 @@ Se sua instância já tem páginas existentes ou se você mesmo criou uma nova p
 * [Recortar/copiar/colar um componente](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#cut-copy-paste-a-component)
 * [Desfazer e refazer edições de página](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#undoing-and-redoing-page-edits)
 * [Usando o Modo de Visualização](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#previewing-pages) (para ver como será sua aparência quando publicado)
-* [Bloquear uma página  ](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#locking-a-page)
+* [Bloquear uma página  &#x200B;](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#locking-a-page)
 * [Desbloquear uma página](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#unlocking-a-page)
 
 ### Publicar uma página {#publishing-a-page}

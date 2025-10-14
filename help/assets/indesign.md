@@ -94,7 +94,7 @@ Para instalar e iniciar o [!DNL InDesign Server] para uso com [!DNL Experience M
 
 [!DNL Experience Manager Assets] tem um fluxo de trabalho pré-configurado **[!UICONTROL Ativo de atualização do DAM]**, que tem várias etapas de processo especificamente para [!DNL InDesign]:
 
-* [Extração de mídia ](#media-extraction)
+* [Extração de mídia &#x200B;](#media-extraction)
 * [Extração de página](#page-extraction)
 
 Este fluxo de trabalho é configurado com valores padrão que podem ser adaptados para sua configuração nas várias instâncias do autor (este é um fluxo de trabalho padrão, portanto, mais informações estão disponíveis em [Editando um Fluxo de Trabalho](/help/sites-developing/workflows-models.md#configuring-a-workflow-step)). Se estiver usando os valores padrão (incluindo a porta SOAP), nenhuma configuração será necessária.

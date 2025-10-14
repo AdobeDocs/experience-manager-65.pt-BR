@@ -296,7 +296,7 @@ No modo de seleção única, é possível:
 * Visualize a publicação no contexto, selecionando o link para a publicação.
 * [Responder](#reply)
 * [Permitir](#allow)
-* [Negar ](#deny)
+* [Negar &#x200B;](#deny)
 * [Excluir](#delete)
 * [Fechar](#close)
 * Exibir [Histórico de moderação](#moderation-history)

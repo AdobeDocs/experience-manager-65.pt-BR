@@ -179,7 +179,7 @@ Por padrão, a tag `titles` nas propriedades da página é exibida no idioma da 
 
 Por padrão, a caixa de diálogo Propriedades da página exibe a tag `titles` de acordo com o idioma da página.
 
-Em geral, o idioma da tag é retirado do idioma da página se o idioma da página estiver disponível. Quando o widget [`tag` ](/help/sites-developing/building.md#tagging-on-the-client-side) é usado em outros casos (por exemplo, em formulários ou caixas de diálogo), o idioma da marca depende do contexto.
+Em geral, o idioma da tag é retirado do idioma da página se o idioma da página estiver disponível. Quando o widget [`tag` &#x200B;](/help/sites-developing/building.md#tagging-on-the-client-side) é usado em outros casos (por exemplo, em formulários ou caixas de diálogo), o idioma da marca depende do contexto.
 
 >[!NOTE]
 >

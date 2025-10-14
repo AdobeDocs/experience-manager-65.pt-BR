@@ -32,7 +32,7 @@ Navegue até a página do Forms Portal publicada. Para obter mais informações 
 
 O componente de Pesquisa e Lister do Forms Portal exibe os formulários disponíveis na instância do Publish do servidor AEM. Essa lista inclui todos os formulários ou os formulários definidos no filtro no momento da criação da página do Forms Portal. Uma página do Forms Portal é semelhante à exibida na imagem a seguir:
 
-![Um exemplo de página de portal de formulários ](assets/forms-portal-page.png)
+![Um exemplo de página de portal de formulários &#x200B;](assets/forms-portal-page.png)
 
 Um exemplo de página do Forms Portal
 

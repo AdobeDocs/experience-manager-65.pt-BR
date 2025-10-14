@@ -172,7 +172,7 @@ O código Java a seguir cria um documento PDF chamado *Loan.pdf*. Este documento
 
 >[!NOTE]
 >
->Antes de executar esse início rápido, crie um aplicativo do AEM Forms chamado Applications/FormsApplication. Crie uma pasta no aplicativo chamado FormsFolder e coloque o arquivo XDP na pasta. Para obter mais informações, consulte [Gerar um documento PDF ](/help/forms/developing/creating-document-output-streams.md)*.*
+>Antes de executar esse início rápido, crie um aplicativo do AEM Forms chamado Applications/FormsApplication. Crie uma pasta no aplicativo chamado FormsFolder e coloque o arquivo XDP na pasta. Para obter mais informações, consulte [Gerar um documento PDF &#x200B;](/help/forms/developing/creating-document-output-streams.md)*.*
 
 ```java
  /*

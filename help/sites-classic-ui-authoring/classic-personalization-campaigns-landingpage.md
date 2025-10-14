@@ -32,7 +32,7 @@ A preparação do pacote de design para importação é abordada em [Extensão e
 
 >[!CAUTION]
 >
->O Importador de Design, usado para importar páginas de aterrissagem, [ foi descontinuado com o AEM 6.5](/help/release-notes/deprecated-removed-features.md#deprecated-features).
+>O Importador de Design, usado para importar páginas de aterrissagem, [&#x200B; foi descontinuado com o AEM 6.5](/help/release-notes/deprecated-removed-features.md#deprecated-features).
 
 >[!CAUTION]
 >

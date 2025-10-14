@@ -677,7 +677,7 @@ Para contornar esse problema, certifique-se de executar a instalação com um ú
 
 ### Comprimento do nome da página {#page-name-length}
 
-Se o AEM estiver sendo executado em uma implantação do gerenciador de persistência MongoMK, os nomes de [ página serão limitados a 150 caracteres.](/help/sites-authoring/managing-pages.md)
+Se o AEM estiver sendo executado em uma implantação do gerenciador de persistência MongoMK, os nomes de [&#x200B; página serão limitados a 150 caracteres.](/help/sites-authoring/managing-pages.md)
 
 >[!NOTE]
 >

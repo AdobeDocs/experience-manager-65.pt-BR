@@ -251,7 +251,7 @@ workflowSession.startWorkflow(model, wfData, metaData);
 ## Editar uma variável {#edit-a-variable}
 
 1. Na página Editar workflow, selecione o ícone Variáveis disponível no sidekick do modelo de workflow. A seção Variáveis, no painel esquerdo, exibe todas as variáveis existentes.
-1. Selecione o ícone ![Editar indicado por um lápis.Ícone ](assets/edit.png) (Editar) ao lado do nome da variável que você deseja editar.
+1. Selecione o ícone ![Editar indicado por um lápis.Ícone &#x200B;](assets/edit.png) (Editar) ao lado do nome da variável que você deseja editar.
 1. Edite as informações da variável e selecione ![Ícone Salvar indicado por uma marca de seleção.](assets/Done_Icon.png) para salvar as alterações. Não é possível editar os campos **[!UICONTROL Nome]** e **[!UICONTROL Tipo]** para uma variável.
 
 ## Excluir uma variável {#delete-a-variable}

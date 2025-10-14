@@ -69,7 +69,7 @@ Quando o *Servidor de imagens de teste* estiver definido como contexto de public
 
 **[!UICONTROL Endereço do cliente]** - Permite especificar um ou mais endereços IP ou intervalos de endereços IP. Quando especificado, as solicitações para este catálogo de imagens originadas de um cliente em um endereço IP não listado são rejeitadas. Essa regra se aplica à entrega de imagens e imagens renderizadas.
 
-![Guia Segurança ](/help/assets/assets-dm/dm-ipallowlist.png)<br>*A guia Segurança mostrando o campo &quot;permitir&quot; IP.*
+![Guia Segurança &#x200B;](/help/assets/assets-dm/dm-ipallowlist.png)<br>*A guia Segurança mostrando o campo &quot;permitir&quot; IP.*
 
 ## Guia Gerenciamento de catálogo {#catalog-management-tab}
 

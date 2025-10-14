@@ -57,7 +57,7 @@ A descrição do fluxo de trabalho passo a passo a seguir foi projetada para aju
 
 Antes de trabalhar com ativos 3D no Dynamic Media, verifique se o administrador do Experience Manager já ativou e configurou o Dynamic Media Cloud Service no modo Dynamic Media - Scene7.
 
-Consulte [Configurar Dynamic Media Cloud Service ](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services) em Configuração do Dynamic Media - Modo Scene7 e [Solução de problemas do Dynamic Media - Modo Scene7](/help/assets/troubleshoot-dms7.md).
+Consulte [Configurar Dynamic Media Cloud Service &#x200B;](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services) em Configuração do Dynamic Media - Modo Scene7 e [Solução de problemas do Dynamic Media - Modo Scene7](/help/assets/troubleshoot-dms7.md).
 
 1. **Carregar ativos 3D**
 

@@ -41,7 +41,7 @@ Ao administrar workflows, você pode iniciá-los usando vários métodos:
 
 ## Modelos do fluxo de trabalho {#workflow-models}
 
-Você pode iniciar um fluxo de trabalho [ com base em um dos modelos](/help/sites-administering/workflows.md#workflow-models-and-instances) listados no console Modelos de Fluxo de Trabalho. As únicas informações obrigatórias são o conteúdo, embora um título e/ou comentário também possa ser adicionado.
+Você pode iniciar um fluxo de trabalho [&#x200B; com base em um dos modelos](/help/sites-administering/workflows.md#workflow-models-and-instances) listados no console Modelos de Fluxo de Trabalho. As únicas informações obrigatórias são o conteúdo, embora um título e/ou comentário também possa ser adicionado.
 
 ## Iniciadores de fluxos de trabalho {#workflows-launchers}
 

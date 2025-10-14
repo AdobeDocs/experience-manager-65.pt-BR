@@ -31,13 +31,13 @@ Essa integração permite que o AEM e o Adobe Campaign Standard sejam usados de 
 
 A configuração da integração entre AEM e Adobe Campaign Standard requer várias etapas em ambas as soluções.
 
-1. [Configure o ](#aemserver-user)
-1. [Verifique se ](#resource-type-filter)
+1. [Configure o &#x200B;](#aemserver-user)
+1. [Verifique se &#x200B;](#resource-type-filter)
 1. [Criar um template do delivery de email específico para AEM no Campaign](#aem-email-delivery-template)
 1. [Configurar a integração do Campaign no AEM](#campaign-integration)
 1. [Configurar Replicação para Instância AEM Publish](#replication)
 1. [Configurar o externalizador do AEM](#externalizer)
-1. [Configure o ](#campaign-remote-user)
+1. [Configure o &#x200B;](#campaign-remote-user)
 1. [Configurar a conta externa do AEM no Campaign](#acc-external-user)
 
 Este documento aborda detalhadamente cada uma dessas etapas.
@@ -66,7 +66,7 @@ Por padrão, o Adobe Campaign Standard vem com um usuário `aemserver` que o AEM
 
 O usuário `aemserver` agora tem os direitos necessários para que o AEM possa usá-lo para se comunicar com o Adobe Campaign.
 
-No entanto, antes que o AEM possa usar o usuário `aemserver`, sua senha deve ser definida. Isso não pode ser feito por meio do Adobe Campaign. Deve ser executado por um engenheiro de suporte de Adobe. [Envie um tíquete ao Atendimento ao cliente do Adobe](https://experienceleague.adobe.com/pt-br?support-tab=home&amp;lang=pt-BR#support) para solicitar a redefinição da senha `aemserver`. Depois de obter a senha do Atendimento ao cliente do Adobe, mantenha-a em um local seguro.
+No entanto, antes que o AEM possa usar o usuário `aemserver`, sua senha deve ser definida. Isso não pode ser feito por meio do Adobe Campaign. Deve ser executado por um engenheiro de suporte de Adobe. [Envie um tíquete ao Atendimento ao cliente do Adobe](https://experienceleague.adobe.com/pt-br?support-tab=home&lang=pt-BR#support) para solicitar a redefinição da senha `aemserver`. Depois de obter a senha do Atendimento ao cliente do Adobe, mantenha-a em um local seguro.
 
 ## Verificar o AEMResourceTypeFilter no Campaign {#resource-type-filter}
 

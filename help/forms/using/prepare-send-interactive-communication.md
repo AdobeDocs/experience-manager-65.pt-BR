@@ -146,7 +146,7 @@ A interface do usuário do agente tem suporte integrado para 210 caracteres espe
 
 ### Fragmentos do documento {#document-fragments}
 
-![ ](do-not-localize/contentoptionsdocfragments.png)
+![&#x200B; &#x200B;](do-not-localize/contentoptionsdocfragments.png)
 
 * **Setas para cima/para baixo**: setas para mover fragmentos de documento para cima ou para baixo na Comunicação Interativa.
 * **Excluir**: se permitido, exclua o fragmento do documento da Comunicação Interativa.

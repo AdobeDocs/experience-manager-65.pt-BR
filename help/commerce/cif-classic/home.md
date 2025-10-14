@@ -26,7 +26,7 @@ Esta página lista os recursos de autoajuda sobre CIF AEM Classic.
 
 ## Artigos principais do CIF Classic {#key-articles}
 
-* [Conceitos ](administering/concepts.md)
+* [Conceitos &#x200B;](administering/concepts.md)
 * [Administração](administering/generic.md)
 * [Implantando](deploying/ecommerce.md)
 * [Desenvolvimento](developing/ecommerce.md)
