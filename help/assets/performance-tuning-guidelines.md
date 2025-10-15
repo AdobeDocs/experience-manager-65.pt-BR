@@ -7,7 +7,7 @@ role: Architect, Admin
 feature: Asset Management
 exl-id: 1d9388de-f601-42bf-885b-6a7c3236b97e
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 0b90fdd13efc5408ef94ee1966f04a80810b515e
+source-git-commit: f8588ef353bd08b41202350072728d80ee51f565
 workflow-type: tm+mt
 source-wordcount: '2729'
 ht-degree: 0%
@@ -211,7 +211,7 @@ Além disso, defina o caminho da pasta temporária do ImageMagick no arquivo `co
 
 >[!NOTE]
 >
->Os arquivos `policy.xml` e `configure.xml` do ImageMagick estão disponíveis em `/usr/lib64/ImageMagick-&#42;/config/` em vez de `/etc/ImageMagick/`. Consulte a [documentação do ImageMagick](https://www.imagemagick.org/script/resources.php) para obter o local dos arquivos de configuração.
+>Os arquivos `policy.xml` e `configure.xml` do ImageMagick estão disponíveis em `/usr/lib64/ImageMagick-&#42;/config/` em vez de `/etc/ImageMagick/`. Consulte a documentação do ImageMagick (`https://www.imagemagick.org/script/resources.php` site) para obter o local dos arquivos de configuração.
 
 Se você estiver usando o [!DNL Experience Manager] no Adobe Managed Services (AMS), entre em contato com o Suporte ao Cliente da Adobe se planejar processar muitos arquivos PSD ou PSB grandes. Trabalhe com um representante do Suporte ao cliente da Adobe para implementar essas práticas recomendadas para a implantação do AMS e escolher as melhores ferramentas e modelos possíveis para os formatos proprietários da Adobe. O [!DNL Experience Manager] pode não processar arquivos PSB de resolução muito alta com mais de 30.000 x 23.000 pixels.
 
@@ -243,7 +243,7 @@ Ao replicar ativos para um grande número de instâncias de publicação, por ex
 
 ## Pesquisar índices {#search-indexes}
 
-Instale os [Service Packs mais recentes](/help/release-notes/release-notes.md) e hotfixes relacionados ao desempenho, pois esses geralmente incluem atualizações de índices do sistema. Consulte [dicas de ajuste de desempenho](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/assets/administer/performance-tuning-guidelines) para algumas otimizações de índice.
+Instale os [Service Packs mais recentes](/help/release-notes/release-notes.md) e hotfixes relacionados ao desempenho, pois esses geralmente incluem atualizações de índices do sistema. Consulte [dicas de ajuste de desempenho](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/administer/performance-tuning-guidelines) para algumas otimizações de índice.
 
 Crie índices personalizados para consultas executadas com frequência. Para obter detalhes, consulte a [metodologia de análise de consultas lentas](https://aemfaq.blogspot.com/2014/08/oak-query-log-file-analyzer-tool.html) e [criação de índices personalizados](/help/sites-deploying/queries-and-indexing.md). Para obter insights adicionais sobre as práticas recomendadas de consulta e índice, consulte [Práticas recomendadas de consultas e indexação](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 

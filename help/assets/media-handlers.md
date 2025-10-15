@@ -7,9 +7,9 @@ role: User
 feature: Workflow,Renditions
 exl-id: cfd6c981-1a35-4327-82d7-cf373d842cc3
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+source-git-commit: f8588ef353bd08b41202350072728d80ee51f565
 workflow-type: tm+mt
-source-wordcount: '2113'
+source-wordcount: '2109'
 ht-degree: 3%
 
 ---
@@ -123,7 +123,7 @@ Os seguintes métodos devem ser implementados:
 
 Este é um exemplo de template:
 
-empacotar my.own.stuff; /&ast;&ast; &ast; @scr.component inherit=&quot;true&quot; &ast; @scr.service &ast;/ public class MyMediaHandler extends com.day.cq.dam.core.AbstractAssetHandler { // implementar as partes relevantes }
+empacotar my.own.stuff; /&amp;ast;&amp;ast; &amp;ast; @scr.component inherit=&quot;true&quot; &amp;ast; @scr.service &amp;ast;/ public class MyMediaHandler extends com.day.cq.dam.core.AbstractAssetHandler { // implementar as partes relevantes }
 
 A interface e as classes incluem:
 
@@ -449,7 +449,7 @@ O [!DNL Experience Manager] permite executar qualquer ferramenta de linha de com
 
 As seguintes conversões podem ser executadas e armazenadas automaticamente em [!DNL Assets]:
 
-* Transformação de EPS e IA usando [ImageMagick](https://www.imagemagick.org/script/index.php) e [Ghostscript](https://www.ghostscript.com/).
+* Transformação de EPS e IA usando `https://www.imagemagick.org/script/index.php` e [Ghostscript](https://www.ghostscript.com/).
 * Transcodificação de vídeo FLV usando [FFmpeg](https://ffmpeg.org/).
 * Codificação de MP3 usando [LAME](https://lame.sourceforge.io/).
 * Processamento de áudio usando [SOX](https://sourceforge.net/projects/sox/).
@@ -470,13 +470,13 @@ O processo `CommandLineProcess` executa as seguintes operações na ordem listad
 
 ### Um exemplo usando [!DNL ImageMagick] {#an-example-using-imagemagick}
 
-O exemplo a seguir mostra como configurar a etapa do processo da linha de comando para que, sempre que um ativo com o GIF ou TIFF miMIME e-type for adicionado a `/content/dam` no servidor [!DNL Experience Manager], uma imagem invertida do original será criada. Também são criadas mais três miniaturas: 140x100, 48x48 e 10x250.
+O exemplo a seguir mostra como configurar a etapa do processo da linha de comando para que, sempre que um ativo com o GIF ou TIFF do tipo e miMIME for adicionado a `/content/dam` no servidor [!DNL Experience Manager], uma imagem invertida do original será criada. Também são criadas mais três miniaturas: 140x100, 48x48 e 10x250.
 
 Para fazer isso, use [!DNL ImageMagick]. [!DNL ImageMagick] é um software de linha de comando gratuito usado para criar, editar e compor imagens bitmap.
 
 Instalar [!DNL ImageMagick] no disco que hospeda o servidor [!DNL Experience Manager]:
 
-1. Instalar [!DNL ImageMagick]: consulte a [documentação do ImageMagick](https://www.imagemagick.org/script/download.php).
+1. Instalar [!DNL ImageMagick]: consulte o site `https://www.imagemagick.org/script/download.php`.
 1. Configure a ferramenta de forma que uma linha de comando, você possa executar `convert`.
 1. Para verificar se a ferramenta está instalada corretamente, execute o seguinte comando `convert -h` na linha de comando.
 
@@ -486,7 +486,7 @@ Instalar [!DNL ImageMagick] no disco que hospeda o servidor [!DNL Experience Man
    >
    >Em algumas versões do Windows, o comando convert pode falhar ao ser executado por estar em conflito com o utilitário de conversão nativo que faz parte da instalação do [!DNL Windows]. Nesse caso, mencione o caminho completo do software [!DNL ImageMagick] usado para converter arquivos de imagem em miniaturas. Por exemplo, `"C:\Program Files\ImageMagick-6.8.9-Q16\convert.exe" -define jpeg:size=319x319 ${filename} -thumbnail 319x319 cq5dam.thumbnail.319.319.png`.
 
-1. Para ver se a ferramenta é executada corretamente, adicione uma imagem de JPG ao diretório de trabalho e execute o comando convert `<image-name>.jpg -flip <image-name>-flipped.jpg` na linha de comando. Uma imagem invertida é adicionada ao diretório. Em seguida, adicione a etapa do processo da linha de comando ao fluxo de trabalho **[!UICONTROL Atualizar ativo do DAM]**.
+1. Para ver se a ferramenta é executada corretamente, adicione uma imagem JPG ao diretório de trabalho e execute o comando convert `<image-name>.jpg -flip <image-name>-flipped.jpg` na linha de comando. Uma imagem invertida é adicionada ao diretório. Em seguida, adicione a etapa do processo da linha de comando ao fluxo de trabalho **[!UICONTROL Atualizar ativo do DAM]**.
 1. Vá para o console **[!UICONTROL Fluxo de trabalho]**.
 1. Na guia **[!UICONTROL Modelos]**, edite o **[!UICONTROL modelo de Ativo de atualização DAM]**.
 1. Altere os [!UICONTROL Argumentos] da etapa de **[!UICONTROL representação habilitada para a Web]** para: `mime:image/gif,mime:image/tiff,tn:140:100,tn:48:48,tn:10:250,cmd:convert ${directory}/${filename} -flip ${directory}/${basename}.flipped.jpg`.
@@ -514,7 +514,7 @@ Por exemplo, se [!DNL ImageMagick] estiver instalado no disco que hospeda o serv
 
 `mime:image/gif,mime:image/tiff,tn:140:100,tn:48:48,tn:10:250,cmd:convert ${directory}/${filename} -flip ${directory}/${basename}.flipped.jpg`
 
-Em seguida, quando o fluxo de trabalho é executado, a etapa se aplica somente aos ativos que têm `image/gif` ou `mime:image/tiff` como `mime-types`. Ele cria uma imagem invertida do original, converte-o em JPG e cria três miniaturas com as dimensões 140x100, 48x48 e 10x250.
+Em seguida, quando o fluxo de trabalho é executado, a etapa se aplica somente aos ativos que têm `image/gif` ou `mime:image/tiff` como `mime-types`. Ele cria uma imagem invertida do original, converte-a em JPG e cria três miniaturas com as dimensões 140x100, 48x48 e 10x250.
 
 Use os [!UICONTROL Argumentos de processo] a seguir para criar as três miniaturas padrão usando [!DNL ImageMagick]:
 

@@ -10,9 +10,9 @@ feature: Interactive Videos
 role: User, Admin
 exl-id: d118879d-c17b-43f3-9cc8-0405531b4d9f
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+source-git-commit: f8588ef353bd08b41202350072728d80ee51f565
 workflow-type: tm+mt
-source-wordcount: '5927'
+source-wordcount: '5914'
 ht-degree: 2%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 2%
 
 Você pode criar vídeos interativos com facilidade (também conhecidos como vídeos que podem ser comprados), que impulsionam a conversão diretamente do vídeo. O envolvimento do cliente com o vídeo ocorre em um painel ao lado do reprodutor de vídeo, onde as miniaturas de serviços, informações ou produtos relacionados são roladas para a exibição com base no que é apresentado no vídeo. Os clientes podem selecionar a miniatura e ser vinculados diretamente ao serviço, adicionar o item a um carrinho de compras para compra imediata ou ser vinculados a uma página da Web para obter mais informações.
 
-Quando o vídeo termina, um resumo visual de todas as ofertas é exibido para orientar um plano de ação. Os clientes têm outra oportunidade de selecionar o item que desejam. Experiências acionáveis e específicas como essas aumentam os envolvimentos e as conversões do cliente.
+Quando o vídeo termina, um resumo visual de todas as ofertas é exibido para orientar um call to action. Os clientes têm outra oportunidade de selecionar o item que desejam. Experiências acionáveis e específicas como essas aumentam os envolvimentos e as conversões do cliente.
 
 Consulte também [Imagens interativas](/help/assets/interactive-images.md).
 
@@ -33,7 +33,7 @@ Para ver um vídeo interativo e que pode ser comprado, selecione [Demonstraçõe
 
 * Selecione a miniatura se desejar pausar o vídeo e abrir a exibição rápida do produto. Por exemplo, selecione a imagem em miniatura KitchenAid no vídeo para ver uma exibição de rotação de 360 graus do mixer ou amplie para ver os detalhes do mixer.
 
-<!-- There was a link here that showed the video frame of an interactive video and when the reader selected the frame the video would play https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/AXIS/index.html?lang=pt-BR. This now needs to call a new interactive video-->
+<!-- There was a link here that showed the video frame of an interactive video and when the reader selected the frame the video would play https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/AXIS/index.html. This now needs to call a new interactive video-->
 
 ![Um quadro de um vídeo interativo que pode ser comprado](assets/chlimage_1-126.png) *Uma captura de quadro de vídeo de um vídeo interativo que pode ser comprado.*
 
@@ -46,13 +46,15 @@ Para ver um vídeo interativo e que pode ser comprado, selecione [Demonstraçõe
 Reproduza uma apresentação sobre [como os vídeos interativos são criados](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&emailurl=https://s7d5.scene7.com/s7/emailFriend&serverUrl=https://s7d5.scene7.com/is/image/&config=Scene7SharedAssets/Universal_HTML5_Video_social&contenturl=https://s7d5.scene7.com/skins/&asset=S7tutorials/InteractiveVideo) (7 minutos e 30 segundos).
 Embora a apresentação em vídeo tenha a marca Assets on Demand, os princípios e etapas ainda se aplicam a Vídeo interativo no Adobe Experience Manager Assets.
 
-### Webinário de soluções para o cliente do Adobe {#adobe-customer-success-webinar}
+### Webinário de soluções ao cliente da Adobe {#adobe-customer-success-webinar}
 
 O webinário &quot;Uso de vídeo interativo, compartilhamento de links e compartilhamento do YouTube no Experience Manager Assets&quot; ensina como usar vídeo interativo e outros recursos para vincular eventos orientados por conversão ao conteúdo de marketing em vídeo.
 
+<!-- NOT FOUND; FIND REPLACEMENT
 >[!NOTE]
 >
->[Usando Vídeo Interativo, Compartilhamento de Links e Compartilhamento do YouTube no Experience Manager Assets](https://adobecustomersuccess.adobeconnect.com/p1yxzdo4aec/).
+>[Using Interactive Video, Link Sharing, and YouTube sharing in Experience Manager Assets](https://adobecustomersuccess.adobeconnect.com/p1yxzdo4aec/). 
+-->
 
 ## Início rápido: vídeos interativos {#quick-start-interactive-videos}
 
@@ -60,20 +62,20 @@ A descrição do fluxo de trabalho passo a passo a seguir foi projetada para aju
 
 Procure o cabeçalho **Exemplo** em algumas tarefas do Início rápido. Ele contém um breve tutorial baseado nesta página de demonstração inicial que *não* ainda tem interatividade adicionada:
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html?lang=pt-BR](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html?lang=pt-BR)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html)
 
 Os **Exemplos** ajudam a ilustrar as etapas da integração de vídeos interativos em seu próprio site.
 
 Ao concluir o tutorial na última seção de Exemplo, a página da Web de demonstração final com o vídeo interativo totalmente integrado será semelhante ao seguinte:
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html?lang=pt-BR](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html?lang=pt-BR)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html)
 
 Etapas de vídeo interativo:
 
 1. **(Opcional) Identificar variáveis do Quickview** - Comece identificando variáveis dinâmicas usadas pela implementação do Quickview existente. As variáveis são usadas para mapear miniaturas de produtos ao Quickview do produto correspondente quando você cria o vídeo interativo. Consulte [(Opcional) Identificar as variáveis do Quickview](#optional-identifying-quickview-variables).
    *Esta etapa só será necessária se todos os itens a seguir forem verdadeiros*:
    * Você deseja adicionar interatividade ao vídeo acionando o Quickview.
-   * Sua implementação do Experience Manager *não* usa uma estrutura de integração de comércio eletrônico para obter dados do produto para o Experience Manager de qualquer solução de comércio eletrônico, como IBM® WebSphere® Commerce, Elastic Path, Hybris ou Intershop. Consulte [conceitos de comércio eletrônico no Experience Manager Assets](/help/commerce/cif-classic/administering/concepts.md).
+   * Sua implementação do Experience Manager *não* usa uma estrutura de integração de comércio eletrônico para obter dados do produto no Experience Manager de qualquer solução de comércio eletrônico, como o IBM® WebSphere® Commerce, Elastic Path, Hybris ou Intershop. Consulte [conceitos de comércio eletrônico no Experience Manager Assets](/help/commerce/cif-classic/administering/concepts.md).
 
 1. **(Opcional) Criar uma predefinição do visualizador de Vídeo Interativo** - Personalize a aparência e o comportamento de vários componentes que compõem o reprodutor, como o depurador de vídeo e as miniaturas interativas.
 Criar sua própria predefinição do visualizador de Vídeo interativo não é necessário se você pretende usar as predefinições do visualizador de Vídeo interativo predefinidas `Shoppable_Video_Light` ou `Shoppable_Video_Dark`.
@@ -84,14 +86,14 @@ Consulte [Carregar um vídeo e seus ativos em miniatura associados](#uploading-a
 
    >[!NOTE]
    >
-   >O formato de vídeo MXF ainda não é compatível com vídeos interativos no Dynamic Media.
+   >O formato de vídeo MXF ainda não é compatível com o uso de vídeos interativos no Dynamic Media.
 
 1. **Adicionar interatividade ao vídeo** - Adicione um ou mais segmentos de tempo ao vídeo. Em seguida, associe as miniaturas de imagem nesses segmentos de tempo. Atribua cada miniatura de imagem a uma ação, como um hiperlink, um Quickview ou um Fragmento de experiência.
 (O método de vinculação baseado em URL não é possível se o conteúdo interativo tiver links com URLs relativos, especialmente links para páginas do Experience Manager Sites.)
 Conclua o publicando os ativos de vídeo interativos. A publicação cria o código incorporado ou o URL que você eventualmente copia e aplica à página de aterrissagem do site. Consulte [Adicionar interatividade ao seu vídeo](#adding-interactivity-to-your-video).
-Consulte [Publish Assets](/help/assets/publishing-dynamicmedia-assets.md).
+Consulte [Publicar Assets](/help/assets/publishing-dynamicmedia-assets.md).
 
-1. **Adicionar um vídeo interativo ao seu site ou a ele no Experience Manager** - Se você usa o Experience Manager Sites, o eCommerce ou ambos, é possível adicionar o vídeo interativo a uma página da Web. Arraste o componente Mídia interativa para a página no Experience Manager. Consulte [Adicionar o Dynamic Media Assets às páginas](/help/assets/adding-dynamic-media-assets-to-pages.md).
+1. **Adicionar um vídeo interativo ao seu site ou ao seu site no Experience Manager** - Se você usa o Experience Manager Sites, o eCommerce ou ambos, é possível adicionar o vídeo interativo a uma página da Web. Arraste o componente Mídia interativa para a página no Experience Manager. Consulte [Adicionar o Dynamic Media Assets às páginas](/help/assets/adding-dynamic-media-assets-to-pages.md).
 Use o código incorporado ou o URL para integrar o vídeo interativo às experiências do site. Consulte [Integrar um vídeo interativo ao seu site](#integrating-an-interactive-video-with-your-website).
 Se você estiver usando um WCM (Web Content Manager, gerenciador de conteúdo da Web) de terceiros, é necessário integrar o novo vídeo interativo à implementação existente do Quickview usada em seu site. Consulte [Integrar um vídeo interativo a um Quickview existente](#integrating-an-interactive-video-with-an-existing-quickview).
    [Adicionar o Dynamic Media Assets às páginas](/help/assets/adding-dynamic-media-assets-to-pages.md)
@@ -103,9 +105,9 @@ Se você estiver usando um WCM (Web Content Manager, gerenciador de conteúdo da
 >Essa tarefa só será necessária se o seguinte for verdadeiro:
 >
 >* Você deseja adicionar interatividade ao vídeo acionando o Quickview.
->* Sua implementação do Experience Manager *não* usa uma estrutura de integração de comércio eletrônico para obter dados do produto para o Experience Manager de qualquer solução de comércio eletrônico, como IBM® WebSphere® Commerce, Elastic Path, Hybris ou Intershop. Consulte [conceitos de comércio eletrônico no Experience Manager Assets](/help/commerce/cif-classic/administering/concepts.md).
+>* Sua implementação do Experience Manager *não* usa uma estrutura de integração de comércio eletrônico para obter dados do produto no Experience Manager de qualquer solução de comércio eletrônico, como o IBM® WebSphere® Commerce, Elastic Path, Hybris ou Intershop. Consulte [conceitos de comércio eletrônico no Experience Manager Assets](/help/commerce/cif-classic/administering/concepts.md).
 >
->Se sua implementação do Experience Manager usar eCommerce, você poderá ignorar essa tarefa e prosseguir para a próxima tarefa.
+>Se sua implementação do Experience Manager usar comércio eletrônico, você poderá ignorar essa tarefa e prosseguir para a próxima tarefa.
 
 Comece identificando as variáveis dinâmicas usadas pela sua implementação do Quickview existente, para que você possa mapear as miniaturas de produtos para o Quickview do produto correspondente durante o processo de criação interativo de vídeos.
 
@@ -138,7 +140,7 @@ Agora, localize o URL do Ajax Quickview no log de rede e copie o URL gravado par
 
 Durante esse processo, é importante visitar diferentes áreas do site, com diferentes categorias e tipos de produtos. O motivo é que os URLs do Quickview podem ter partes comuns para uma determinada categoria de site, mas só podem ser alteradas se você visitar uma área diferente do site.
 
-No caso mais simples, a única parte variável no URL do Quickview é o SKU do produto. Nesse caso, o valor do SKU do produto é o único dado necessário para adicionar miniaturas a um segmento de tempo no vídeo interativo no Experience Manager.
+No caso mais simples, a única parte variável no URL do Quickview é o SKU do produto. Nesse caso, o valor do SKU do produto é a única parte de dados necessária para adicionar miniaturas a um segmento de tempo no vídeo interativo no Experience Manager.
 
 No entanto, em casos complexos, o URL do Quickview tem vários elementos diferentes, além do SKU do produto, como ID de categoria, código de cor e código de tamanho. Nesses casos, cada elemento se torna uma variável separada na definição de dados em miniatura no Experience Manager.
 
@@ -150,10 +152,10 @@ Considere os seguintes exemplos de URLs do Quickview e as variáveis de miniatur
     <td><p>SKU única, encontrada na cadeia de caracteres de consulta.</p> </td>
     <td><p>Os URLs de Quickview gravados incluem o seguinte:</p>
     <ul>
-      <li><p><code>https://server/json?productId=866558&source=100</code></p> </li>
-      <li><p><code>https://server/json?productId=1196184&source=100</code></p> </li>
-      <li><p><code>https://server/json?productId=1081492&source=100</code></p> </li>
-      <li><p><code>https://server/json?productId=1898294&source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=866558&amp;source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=1196184&amp;source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=1081492&amp;source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=1898294&amp;source=100</code></p> </li>
     </ul> <p>A única parte variável na URL é o valor do parâmetro da cadeia de caracteres de consulta <code>productId=</code>, e é claramente um valor de SKU. Portanto, suas miniaturas só precisam de campos de SKU preenchidos com valores como <strong><code>866558</code></strong>, <strong><code>1196184</code></strong>, <strong><code>1081492</code></strong>, <strong><code>1898294</code></strong>.</p> </td>
   </tr>
   <tr>
@@ -163,15 +165,15 @@ Considere os seguintes exemplos de URLs do Quickview e as variáveis de miniatur
       <li><p><code>https://server/product/6422350843</code></p> </li>
       <li><p><code>https://server/product/1607745002</code></p> </li>
       <li><p><code>https://server/product/0086724882</code></p> </li>
-    </ul> <p>A parte variável está na última parte do caminho e se torna o valor SKU das miniaturas de Experience Manager: <strong><code>6422350843</code></strong>, <strong><code>1607745002</code></strong>, <strong><code>0086724882</code></strong>.</p> </td>
+    </ul> <p>A parte variável está na última parte do caminho e se torna o valor SKU das miniaturas do Experience Manager: <strong><code>6422350843</code></strong>, <strong><code>1607745002</code></strong>, <strong><code>0086724882</code></strong>.</p> </td>
   </tr>
   <tr>
     <td><p>SKU e ID de categoria na cadeia de caracteres de consulta.</p> </td>
     <td><p>Os URLs de Quickview gravados incluem o seguinte:</p>
     <ul>
-      <li><p><code>https://server/quickView/product/?category=1100004&prodId=305466</code></p> </li>
-      <li><p><code>https://server/quickView/product/?category=1100004&prodId=310181</code></p> </li>
-      <li><p><code>https://server/quickView/product/?category=1740148&prodId=308706</code></p> </li>
+      <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=305466</code></p> </li>
+      <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=310181</code></p> </li>
+      <li><p><code>https://server/quickView/product/?category=1740148&amp;prodId=308706</code></p> </li>
     </ul> <p>Nesse caso, há duas partes variáveis no URL. A SKU está armazenada no parâmetro <code>prodId</code> e a ID da categoria está armazenada no parâmetro <code>category=</code>.</p> <p>Dessa forma, as definições de miniatura são pares. Isto é, um valor de SKU e uma variável extra chamada <code>categoryId</code>. Os pares resultantes são os seguintes:</p>
     <ul>
       <li>A SKU é <code>305466</code> e <code>categoryId</code> é <code>1100004</code></li>
@@ -186,7 +188,7 @@ Considere os seguintes exemplos de URLs do Quickview e as variáveis de miniatur
 
 Quando a abordagem acima é aplicada ao site Exemplo, você tem uma página da Web com várias miniaturas de produtos, cada uma com um botão &quot;VEJA MAIS&quot;:
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html?lang=pt-BR](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html?lang=pt-BR)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html)
 
 Depois de ativar todas as exibições rápidas de produtos disponíveis na página, você obtém a seguinte lista de solicitações do QuickView feitas no back-end:
 
@@ -498,11 +500,11 @@ Depois de salvar o vídeo interativo, ele é aberto imediatamente na Pré-visual
    >
    >Ao salvar o vídeo interativo, um arquivo associado é automaticamente salvo com ele. `.vtt` O arquivo `.vtt` está salvo na pasta `_VTT`, na raiz da **[!UICONTROL Assets]**. O arquivo e a pasta são necessários para que o vídeo interativo seja reproduzido corretamente no site. Sendo assim, não mova, edite ou exclua a pasta `_VTT` ou seu conteúdo.
 
-1. Publish o vídeo interativo. A publicação cria o código incorporado ou o URL que você eventualmente copia e cola nas experiências do site.
+1. Publique o vídeo interativo. A publicação cria o código incorporado ou o URL que você eventualmente copia e cola nas experiências do site.
 
    Se você adicionou interatividade com o Quickview, use apenas o código incorporado; se adicionou interatividade com páginas da Web com hiperlink, você também pode usar o URL publicado. Observe, no entanto, que o método de vinculação baseado em URL não é possível se o conteúdo interativo tiver links com URLs relativos, principalmente links para páginas do Experience Manager Sites.
 
-   Consulte [ativos do Publish](publishing-dynamicmedia-assets.md).
+   Consulte [Publicar ativos](publishing-dynamicmedia-assets.md).
 
    >[!NOTE]
    >
@@ -510,9 +512,9 @@ Depois de salvar o vídeo interativo, ele é aberto imediatamente na Pré-visual
 
    Depois de adicionar segmentos de linha do tempo e publicar o vídeo interativo, você está pronto para adicioná-lo à página de aterrissagem existente do site. Consulte [Integrar um vídeo interativo ao seu site](#integrating-an-interactive-video-with-your-website).
 
-## ativos de vídeo interativos do Publish {#publishing-interactive-video-assets}
+## Publicar ativos de vídeo interativos {#publishing-interactive-video-assets}
 
-Consulte [ativos do Publish](/help/assets/publishing-dynamicmedia-assets.md) para obter detalhes sobre como publicar ativos de vídeo interativos.
+Consulte [Publicar ativos](/help/assets/publishing-dynamicmedia-assets.md) para obter detalhes sobre como publicar ativos de vídeo interativos.
 
 ## Integre um vídeo interativo ao seu site {#integrating-an-interactive-video-with-your-website}
 
@@ -540,7 +542,7 @@ O código incorporado copiado é definido para um ambiente responsivo, de modo q
 
 Usando o site de demonstração como exemplo:
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html?lang=pt-BR](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html?lang=pt-BR)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html)
 
 Observe que o código incorporado é padrão:
 
@@ -571,7 +573,7 @@ Observe que o código incorporado é padrão:
 
 A integração é tão simples quanto remover o código de inserção do vídeo e substituí-lo pelo código de inserção interativo do vídeo do Experience Manager. Você pode ver os resultados no URL a seguir. Embora ele mostre um Vídeo interativo presente na página, ainda não está integrado à exibição rápida existente:
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html?lang=pt-BR](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html?lang=pt-BR)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html)
 
 ## Integrar um vídeo interativo a uma visualização rápida existente {#integrating-an-interactive-video-with-an-existing-quickview}
 
@@ -585,11 +587,11 @@ A implementação existente do Quickview normalmente representa uma cadeia de a�
 
 1. Um usuário aciona um elemento na interface do usuário do seu site.
 1. O código de front-end obtém um URL do Quickview com base no elemento de interface do usuário que foi acionado na etapa 1.
-1. O código de front-end envia uma solicitação de AJAX usando o URL obtido na etapa 2.
+1. O código de front-end envia uma solicitação AJAX usando o URL obtido na etapa 2.
 1. A lógica de back-end retorna os dados ou o conteúdo correspondentes do Quickview ao código de front-end.
 1. O código de front-end carrega os dados ou o conteúdo da visualização rápida.
-1. Como opção, o código de front-end converte os dados do Quickview carregados em uma representação HTML.
-1. O código de front-end exibe uma caixa de diálogo ou painel modal e renderiza o conteúdo de HTML na tela para o usuário final.
+1. Como opção, o código de front-end converte os dados do Quickview carregados em uma representação do HTML.
+1. O código de front-end exibe uma caixa de diálogo ou painel modal e renderiza o conteúdo do HTML na tela para o usuário final.
 
 Essas chamadas não representam chamadas de API públicas independentes que podem ser chamadas pela lógica da página da Web de uma etapa arbitrária. Em vez disso, é uma chamada encadeada em que cada próxima etapa é ocultada na última fase (retorno de chamada) da etapa anterior.
 
@@ -660,27 +662,27 @@ O processo de construção do URL do Quickview é oposto ao processo de identifi
   <tbody>
   <tr>
     <td><p>SKU única, encontrada na sequência de consulta</p> </td>
-    <td><code class="code">s7interactivevideoviewer.setHandlers(&lbrace;
-      "quickViewActivate": function(inData) &lbrace;
+    <td><code class="code">s7interactivevideoviewer.setHandlers({
+      "quickViewActivate": function(inData) {
       var quickViewUrl = "https://server/json?productId=" + inData.sku + "&amp;source=100";
-      &rbrace;,
-      &rbrace;);</code></td>
+      },
+      });</code></td>
   </tr>
   <tr>
     <td>SKU única, encontrada no caminho do URL</td>
-    <td><code class="code">s7interactivevideoviewer.setHandlers(&lbrace;
-      "quickViewActivate": function(inData) &lbrace;
+    <td><code class="code">s7interactivevideoviewer.setHandlers({
+      "quickViewActivate": function(inData) {
       var quickViewUrl = "https://server/product/" + inData.sku;
-      &rbrace;,
-      &rbrace;);</code></td>
+      },
+      });</code></td>
   </tr>
   <tr>
     <td><p>SKU e ID de categoria na cadeia de caracteres de consulta</p> </td>
-    <td><code class="code">s7interactivevideoviewer.setHandlers(&lbrace;
-      "quickViewActivate": function(inData) &lbrace;
+    <td><code class="code">s7interactivevideoviewer.setHandlers({
+      "quickViewActivate": function(inData) {
       var quickViewUrl = "https://server/quickView/product/?category=" + inData.categoryId + "&amp;prodId=" + inData.sku;
-      &rbrace;,
-      &rbrace;);</code></td>
+      },
+      });</code></td>
   </tr>
   </tbody>
 </table>
@@ -771,7 +773,7 @@ O código-fonte completo é o seguinte:
 
 O site final de demonstração com vídeo interativo totalmente integrado é semelhante ao seguinte:
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html?lang=pt-BR](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html?lang=pt-BR)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html)
 
 ## Criar pop-ups personalizados usando o Quickview {#using-quickviews-to-create-custom-pop-ups}
 
