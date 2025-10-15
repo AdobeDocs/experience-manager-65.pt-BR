@@ -29,7 +29,7 @@ A AEM Mobile está pronta para ajudar os clientes com suas obrigações de confo
 
 ## Adobe Digital Publishing Suite {#adobe-digital-publishing-suite}
 
-O produto de publicação digital do Adobe (que precede o AEM Mobile) é compatível com as iniciativas de preparação do GDPR do Adobe. Consulte [https://business.adobe.com/privacy/general-data-protection-regulation.html](https://business.adobe.com/privacy/general-data-protection-regulation.html). A seguir são fornecidos detalhes específicos sobre o suporte a funções relevantes do GDPR no produto do Digital Publishing Suite, incluindo como trabalhar com o Adobe para iniciar solicitações do GDPR.
+O produto de publicação digital do Adobe (que precede o AEM Mobile) é compatível com as iniciativas de preparação do GDPR do Adobe. Consulte [https://business.adobe.com/br/privacy/general-data-protection-regulation.html](https://business.adobe.com/br/privacy/general-data-protection-regulation.html). A seguir são fornecidos detalhes específicos sobre o suporte a funções relevantes do GDPR no produto do Digital Publishing Suite, incluindo como trabalhar com o Adobe para iniciar solicitações do GDPR.
 
 Para não confundir o AEM Mobile com o produto mais antigo do Digital Publishing Suite, é possível fazer logon no produto do Digital Publishing Suite aqui:
 

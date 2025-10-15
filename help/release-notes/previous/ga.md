@@ -248,12 +248,12 @@ Para obter mais detalhes sobre as alterações no AEM Screens, consulte as Notas
 
 * A integração do Adobe Target agora usa a API do Target Standard. As versões anteriores do AEM usam a API HTTP do Target Classic, que agora está obsoleta.
 * O Adobe Target `mbox.js` versão 63 está incluído. A Adobe recomenda que você alterne a implementação para `at.js` v1.x.
-* A versão 1.5.0 de `at.js` foi incluída. A Adobe recomenda que você use o [Adobe Experience Platform Launch](https://business.adobe.com/products/experience-platform/launch.html) para provisionar o `at.js` v1.x para o site.
+* A versão 1.5.0 de `at.js` foi incluída. A Adobe recomenda que você use o [Adobe Experience Platform Launch](https://business.adobe.com/br/products/experience-platform/launch.html) para provisionar o `at.js` v1.x para o site.
 
 #### AEM e ADOBE ANALYTICS {#aem-amp-adobe-analytics}
 
 * `s_code.js` H.27.5 está incluído. A Adobe recomenda que você alterne a implementação para `AppMeasurement.js`
-* `AppMeasurement.js` v1.8.0 está incluído. A Adobe recomenda que você use o [Adobe Experience Platform Launch](https://business.adobe.com/products/experience-platform/launch.html) para provisionar o AppMeasurement.js para o site.
+* `AppMeasurement.js` v1.8.0 está incluído. A Adobe recomenda que você use o [Adobe Experience Platform Launch](https://business.adobe.com/br/products/experience-platform/launch.html) para provisionar o AppMeasurement.js para o site.
 
 #### AEM e COMMERCE {#aem-commerce}
 

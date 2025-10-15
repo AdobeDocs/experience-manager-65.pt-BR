@@ -48,7 +48,7 @@ Com a nova arquitetura, o Experience Manager é responsável pelos ativos de ori
 
 ## Ativar o Dynamic Media no modo Scene7 {#enabling-dynamic-media-in-scene-mode}
 
-O [Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) está desabilitado por padrão. Para aproveitar os recursos do Dynamic Media, é necessário ativá-lo.
+O [Dynamic Media](https://business.adobe.com/br/products/experience-manager/assets/dynamic-media.html) está desabilitado por padrão. Para aproveitar os recursos do Dynamic Media, é necessário ativá-lo.
 
 >[!WARNING]
 >
@@ -80,7 +80,7 @@ Para migrar qualquer predefinição e configuração personalizada do visualizad
 
 A instalação do pacote de recursos 18912 é *opcional*.
 
-O Feature Pack 18912 permite assimilar ativos em massa por meio do FTP ou migrar ativos do Dynamic Media - modo híbrido ou do Dynamic Media Classic para o Dynamic Media - modo Scene7 no Experience Manager. Ele está disponível em [Adobe Professional Services](https://business.adobe.com/customers/consulting-services/main.html).
+O Feature Pack 18912 permite assimilar ativos em massa por meio do FTP ou migrar ativos do Dynamic Media - modo híbrido ou do Dynamic Media Classic para o Dynamic Media - modo Scene7 no Experience Manager. Ele está disponível em [Adobe Professional Services](https://business.adobe.com/br/customers/consulting-services/main.html).
 
 Consulte [Instalar o pacote de recursos 18912 para migração de ativos em massa](/help/assets/bulk-ingest-migrate.md) para obter mais informações.
 
@@ -252,7 +252,7 @@ No modo Dynamic Media - Scene7, o tamanho padrão do arquivo de upload de ativos
 Se você pretende usar esse recurso, esteja ciente dos seguintes pré-requisitos e pontos:
 
 * Você deve executar o Experience Manager 6.5 com o Service Pack 6.5.4.0 ou posterior no modo Dynamic Media - Scene7.
-* Este grande recurso de carregamento só tem suporte para clientes do [*Managed Services*](https://business.adobe.com/products/experience-manager/managed-services.html).
+* Este grande recurso de carregamento só tem suporte para clientes do [*Managed Services*](https://business.adobe.com/br/products/experience-manager/managed-services.html).
 * Verifique se a instância do Experience Manager está configurada com o armazenamento Amazon S3 ou Microsoft® Azure Blob.
 
   >[!NOTE]

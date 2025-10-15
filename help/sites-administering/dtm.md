@@ -18,7 +18,7 @@ ht-degree: 2%
 
 # Integração com o Adobe Dynamic Tag Management {#integrating-with-adobe-dynamic-tag-management}
 
-Integre o [Adobe Dynamic Tag Management](https://business.adobe.com/products/experience-platform/adobe-experience-platform.html) com o AEM para que você possa usar suas propriedades da Web do Dynamic Tag Management AEM para rastrear os sites do. O Dynamic Tag Management permite que os profissionais de marketing gerenciem tags para coleta de dados e distribuam dados nos sistemas de marketing digital. Por exemplo, use o Dynamic Tag Management para coletar dados de uso do site AEM e distribuir os dados para análise no Adobe Analytics ou no Adobe Target.
+Integre o [Adobe Dynamic Tag Management](https://business.adobe.com/br/products/experience-platform/adobe-experience-platform.html) com o AEM para que você possa usar suas propriedades da Web do Dynamic Tag Management AEM para rastrear os sites do. O Dynamic Tag Management permite que os profissionais de marketing gerenciem tags para coleta de dados e distribuam dados nos sistemas de marketing digital. Por exemplo, use o Dynamic Tag Management para coletar dados de uso do site AEM e distribuir os dados para análise no Adobe Analytics ou no Adobe Target.
 
 Antes de integrar, crie a [propriedade da Web](https://microsite.omniture.com/t2/help/en_US/dtm/#Web_Properties) do Dynamic Tag Management que rastreia o domínio do seu site AEM. As [opções de hospedagem](https://microsite.omniture.com/t2/help/en_US/dtm/#Hosting__Embed_Tab) da propriedade da Web devem ser configuradas para que você possa configurar o AEM para acessar as bibliotecas Tag Management Dinâmicas.
 

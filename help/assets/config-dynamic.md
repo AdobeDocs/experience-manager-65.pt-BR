@@ -194,7 +194,7 @@ Você pode optar por implementar o Dynamic Media apenas para criação de imagen
 
 ## Ativar Dynamic Media {#enabling-dynamic-media}
 
-A [Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) está desabilitada por padrão. Para aproveitar os recursos do Dynamic Media, habilite o Dynamic Media usando o modo de execução `dynamicmedia` da mesma maneira que você faria, por exemplo, com o modo de execução `publish`. Antes de habilitar, verifique os [requisitos técnicos](/help/sites-deploying/technical-requirements.md#requirements-for-aem-dynamic-media-add-on).
+A [Dynamic Media](https://business.adobe.com/br/products/experience-manager/assets/dynamic-media.html) está desabilitada por padrão. Para aproveitar os recursos do Dynamic Media, habilite o Dynamic Media usando o modo de execução `dynamicmedia` da mesma maneira que você faria, por exemplo, com o modo de execução `publish`. Antes de habilitar, verifique os [requisitos técnicos](/help/sites-deploying/technical-requirements.md#requirements-for-aem-dynamic-media-add-on).
 
 >[!NOTE]
 >

@@ -131,7 +131,7 @@ Revise os requisitos mínimos do sistema na tabela abaixo para a versão do CIF 
    * Indicador visual para dados de produtos preparados no modo de criação para melhor visibilidade de alterações futuras
    * Novo componente de mapa de site para páginas de conteúdo e comércio
 
-* Suporte para a [Recomendação de produto do Adobe Commerce Sensei, habilitada pelo Adobe Sensei](https://business.adobe.com/products/magento/product-recommendations.html) na loja AEM usando recomendações predefinidas ou criadas dinamicamente
+* Suporte para a [Recomendação de produto do Adobe Commerce Sensei, habilitada pelo Adobe Sensei](https://business.adobe.com/br/products/magento/product-recommendations.html) na loja AEM usando recomendações predefinidas ou criadas dinamicamente
 
 ## Data de lançamento: junho de 2021
 

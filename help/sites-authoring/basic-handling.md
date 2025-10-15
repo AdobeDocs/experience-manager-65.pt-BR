@@ -155,7 +155,7 @@ O cabeçalho está sempre presente na parte superior da tela. Embora a maioria d
 
   Você também pode usar a [tecla de atalho](/help/sites-authoring/keyboard-shortcuts.md) `/` (barra) para invocar a pesquisa em qualquer console.
 
-* [Soluções](https://business.adobe.com/)
+* [Soluções](https://business.adobe.com/br/)
 
   ![Soluções](do-not-localize/screen_shot_2018-03-23at103552.png)
 

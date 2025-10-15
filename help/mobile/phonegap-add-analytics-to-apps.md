@@ -24,7 +24,7 @@ Deseja criar experiências envolventes e relevantes para os usuários de aplicat
 
 Seus usuários estão acessando todo o conteúdo? Eles estão abandonando o aplicativo e, em caso afirmativo, onde? Com que frequência eles ficam no aplicativo e com que frequência voltam para usar o aplicativo? Que alterações você pode introduzir e, então, medir que aumentam a retenção? E as taxas de falha? Seu aplicativo está falhando para seus usuários?
 
-Aproveite as vantagens do [Mobile App Analytics](https://business.adobe.com/products/analytics/mobile-marketing.html) nos seus aplicativos Adobe Experience Manager (AEM) ao integrar com o [Adobe Mobile Services](https://business.adobe.com/products/campaign/mobile-marketing.html).
+Aproveite as vantagens do [Mobile App Analytics](https://business.adobe.com/br/products/analytics/mobile-marketing.html) nos seus aplicativos Adobe Experience Manager (AEM) ao integrar com o [Adobe Mobile Services](https://business.adobe.com/br/products/campaign/mobile-marketing.html).
 
 Instrumente seus aplicativos AEM para rastrear, relatar e entender como seus usuários se envolvem com seu aplicativo móvel e conteúdo e para medir as principais métricas de ciclo de vida, como inicializações, tempo no aplicativo e taxa de falha.
 

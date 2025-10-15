@@ -31,7 +31,7 @@ A finalidade dessa camada de integração é mapear APIs e esquemas de terceiros
 
 >[!TIP]
 >
->Se nenhuma API em tempo real estiver disponível, um cache de produto externo com APIs deverá ser usado para a integração. Exemplo [Magento open-source](https://business.adobe.com/products/magento/open-source.html).
+>Se nenhuma API em tempo real estiver disponível, um cache de produto externo com APIs deverá ser usado para a integração. Exemplo [Magento open-source](https://business.adobe.com/br/products/magento/open-source.html).
 
 Não há necessidade de implementar o esquema completo do GraphQL, apenas os objetos do esquema para ativar os casos de uso desejados.
 
