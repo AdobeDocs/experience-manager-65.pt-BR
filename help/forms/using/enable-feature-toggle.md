@@ -5,9 +5,9 @@ feature: Adaptive Forms, Foundation Components
 role: User, Developer
 hidefromtoc: true
 exl-id: 08815c2b-23b3-4545-a3ab-ba47ba1c3c55
-source-git-commit: 9b28ab12422743cd7849d2761aef9916ec6710f5
+source-git-commit: 0e80096b6b49372765b04a3bc1438b93d9cccf6e
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '396'
 ht-degree: 1%
 
 ---
@@ -34,9 +34,13 @@ Antes de habilitar a alternância de recursos na configuração do AEM 6.5, veri
 
 * O usuário é membro do grupo `forms-users`.
 
-* Navegue até `http://<author-instance-url>:portnumber/system/console/bundles` e verifique se o pacote **(com.adobe.granite.toggle.impl.dev-1.1.2.jar)** está presente ou não. Caso não esteja presente, [baixe o pacote do link](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/com.adobe.granite.toggle.impl.dev-1.1.2%20.jar).
+* Navegue até `http://<author-instance-url>:portnumber/system/console/bundles` e verifique se o pacote **(com.adobe.granite.toggle.impl.dev-1.1.8.jar)** está presente ou não. Caso não esteja presente, [baixe o pacote do link](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2Fcom.adobe.granite.toggle.impl.dev-1.1.8.jar).
 
-  ![Alternância de recursos](/help/forms/using/assets/feature-toggle-6.5.png)
+![Alternância de recursos](/help/forms/using/assets/feature-toggle-1.1.8.png)
+
+>[!NOTE]
+>
+>Você pode ativar a alternância de recursos no ambiente do AEM 6.5 ou em versões anteriores, conforme necessário.
 
 ## Ativar alternância de recursos {#enable-feature-toggle-65}
 
