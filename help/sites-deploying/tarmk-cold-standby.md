@@ -1,5 +1,5 @@
 ---
-title: Como executar AEM com TarMK Cold Standby
+title: Como executar o AEM com o modo de espera a frio TarMK
 description: Saiba como criar, configurar e manter uma configuração de Modo de espera forçado TarMK.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,26 +10,26 @@ feature: Administering
 exl-id: dadde3ee-d60c-4b87-9af0-a12697148161
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 3aa55b88f589749fb49d5ff46340b0912d490157
+source-git-commit: 5575628c54e2e588dfae4c34383af7d6d55ce859
 workflow-type: tm+mt
-source-wordcount: '2673'
+source-wordcount: '2680'
 ht-degree: 0%
 
 ---
 
-# Como executar AEM com TarMK Cold Standby{#how-to-run-aem-with-tarmk-cold-standby}
+# Como executar o AEM com o modo de espera a frio TarMK{#how-to-run-aem-with-tarmk-cold-standby}
 
 ## Introdução {#introduction}
 
-A capacidade de espera a frio do Tar Micro Kernel permite que uma ou mais instâncias de Adobe Experience Manager em standby (AEM) se conectem a uma instância primária. O processo de sincronização é apenas unidirecional, o que significa que ele só é feito das instâncias principal para as stand-by.
+A capacidade de Espera a frio do Tar Micro Kernel permite que uma ou mais instâncias de Adobe Experience Manager em espera (AEM) se conectem a uma instância primária. O processo de sincronização é apenas unidirecional, o que significa que ele só é feito das instâncias principal para as stand-by.
 
-A finalidade das instâncias em standby é garantir uma cópia de dados em tempo real do repositório mestre e garantir uma troca rápida sem perda de dados, caso o mestre não esteja disponível por algum motivo.
+A finalidade das instâncias em standby é garantir uma cópia de dados em tempo real do repositório principal e garantir uma troca rápida sem perda de dados, caso a instância principal não esteja disponível por algum motivo.
 
 O conteúdo é sincronizado linearmente entre a instância principal e as instâncias standby sem qualquer verificação de integridade para corrupção de arquivos ou repositórios. Por causa desse design, as instâncias em espera são cópias exatas da instância principal e não podem ajudar a atenuar inconsistências nas instâncias principais.
 
 >[!NOTE]
 >
->O recurso de Espera a Frio destina-se a proteger cenários em que a alta disponibilidade é necessária em instâncias do **Author**. Para situações em que a alta disponibilidade é necessária em instâncias do **Publish** usando o Tar Micro Kernel, a Adobe recomenda o uso de um farm de publicação.
+>O recurso de Espera a Frio destina-se a proteger cenários em que a alta disponibilidade é necessária em instâncias do **Author**. Para situações em que a alta disponibilidade é necessária em instâncias de **Publicação** usando o Tar Micro Kernel, a Adobe recomenda o uso de um farm de publicação.
 >
 >Para obter informações sobre mais implantações disponíveis, consulte a página [Implantações Recomendadas](/help/sites-deploying/recommended-deploys.md).
 
@@ -43,7 +43,7 @@ O conteúdo é sincronizado linearmente entre a instância principal e as instâ
 
 ## Como funciona {#how-it-works}
 
-Na instância primária do AEM, uma porta TCP é aberta e está escutando as mensagens recebidas. Atualmente, há dois tipos de mensagens que os escravos enviam ao mestre:
+Na instância primária do AEM, uma porta TCP é aberta e escuta as mensagens recebidas. Atualmente, há dois tipos de mensagens que o standby envia para o principal:
 
 * uma mensagem solicitando a ID de segmento do cabeçalho atual
 * uma mensagem solicitando dados de segmento com uma ID especificada
@@ -72,7 +72,7 @@ No standby, você pode esperar um alto consumo de CPU durante o processo de sinc
 
 #### Segurança {#security}
 
-Supondo que todas as instâncias sejam executadas na mesma zona de segurança da intranet, o risco de violação de segurança é bastante reduzido. No entanto, você pode adicionar uma camada de segurança extra, habilitando conexões SSL entre os subordinados e o principal. Isso reduz a possibilidade de os dados serem comprometidos por um homem no meio.
+Supondo que todas as instâncias sejam executadas na mesma zona de segurança da intranet, o risco de violação de segurança é bastante reduzido. No entanto, você pode adicionar uma camada de segurança extra ativando conexões SSL entre as instâncias stand-by e principal. Isso reduz a possibilidade de os dados serem comprometidos por um homem no meio.
 
 Além disso, você pode especificar as instâncias em standby que têm permissão para se conectar, restringindo o endereço IP das solicitações recebidas. Isso deve ajudar a garantir que ninguém na intranet possa copiar o repositório.
 
@@ -80,11 +80,11 @@ Além disso, você pode especificar as instâncias em standby que têm permissã
 >
 >É recomendável que um balanceador de carga seja adicionado entre o Dispatcher e os servidores que fazem parte da configuração de Espera a frio. O balanceador de carga deve ser configurado para direcionar o tráfego de usuários somente para a instância **principal**. Isso é necessário para garantir a consistência e impedir que o conteúdo seja copiado na instância em espera por outros meios que não o mecanismo de Espera Interrompida.
 
-## Criação de uma configuração de espera a frio AEM TarMK {#creating-an-aem-tarmk-cold-standby-setup}
+## Criação de uma configuração de espera a frio do AEM TarMK {#creating-an-aem-tarmk-cold-standby-setup}
 
 >[!CAUTION]
 >
->O PID para o armazenamento de nó de segmento e o serviço de armazenamento em espera foi alterado no AEM 6.3 em comparação às versões anteriores, da seguinte maneira:
+>O PID para o armazenamento de nós Segmento e o serviço de armazenamento em standby foi alterado no AEM 6.3 em comparação às versões anteriores, da seguinte maneira:
 >
 >* de org.apache.jackrabbit.oak.**plugins**.segment.standby.store.StandbyStoreService para org.apache.jackrabbit.oak.segment.standby.store.StandbyStoreService
 >* de org.apache.jackrabbit.oak.**plugins**.segment.SegmentNodeStoreService para org.apache.jackrabbit.oak.segment.SegmentNodeStoreService
@@ -93,7 +93,7 @@ Além disso, você pode especificar as instâncias em standby que têm permissã
 
 Para criar uma configuração de standby frio do TarMK, primeiro crie as instâncias de standby executando uma cópia do sistema de arquivos de toda a pasta de instalação do principal para um novo local. Você pode iniciar cada instância com um modo de execução que especifique sua função ( `primary` ou `standby`).
 
-Abaixo está o procedimento que deve ser seguido para criar uma configuração com uma instância mestre e uma instância standby:
+Abaixo está o procedimento que deve ser seguido para criar uma configuração com uma instância principal e uma standby:
 
 1. Instale o AEM.
 
@@ -107,7 +107,7 @@ Abaixo está o procedimento que deve ser seguido para criar uma configuração c
    1. Crie as configurações necessárias para o armazenamento de nó preferencial e o armazenamento de dados em `aem-primary/crx-quickstart/install/install.primary`
    1. Crie um arquivo chamado `org.apache.jackrabbit.oak.segment.standby.store.StandbyStoreService.config` no mesmo local e configure-o adequadamente. Para obter mais informações sobre as opções de configuração, consulte [Configuração](/help/sites-deploying/tarmk-cold-standby.md#configuration).
 
-   1. Se você estiver usando uma instância AEM TarMK com um armazenamento de dados externo, crie uma pasta chamada `crx3` em `aem-primary/crx-quickstart/install` chamada `crx3`
+   1. Se você estiver usando uma instância do AEM TarMK com um armazenamento de dados externo, crie uma pasta chamada `crx3` em `aem-primary/crx-quickstart/install` chamada `crx3`
 
    1. Coloque o arquivo de configuração do armazenamento de dados na pasta `crx3`.
 
@@ -317,7 +317,7 @@ Caso a instância principal falhe por algum motivo, você poderá definir uma da
    ```
 
 1. Adicione o novo principal ao balanceador de carga.
-1. Crie e inicie uma nova instância standby. Para obter mais informações, consulte o procedimento acima em [Criando uma Instalação de Espera a Frio AEM TarMK](/help/sites-deploying/tarmk-cold-standby.md#creating-an-aem-tarmk-cold-standby-setup).
+1. Crie e inicie uma nova instância standby. Para obter mais informações, consulte o procedimento acima em [Criando uma Instalação de Espera a Frio do AEM TarMK](/help/sites-deploying/tarmk-cold-standby.md#creating-an-aem-tarmk-cold-standby-setup).
 
 ## Aplicando Hotfixes a uma Configuração de Modo de Espera a Frio {#applying-hotfixes-to-a-cold-standby-setup}
 
@@ -331,12 +331,12 @@ Você pode fazer isso seguindo as etapas descritas abaixo:
 1. Teste a instância em busca de problemas após a instalação.
 1. Remova a instância em espera ativa excluindo sua pasta de instalação.
 1. Interrompa a instância principal e clone-a executando uma cópia do sistema de arquivos de toda a pasta de instalação no local do standby frio.
-1. Reconfigure o clone recém-criado para que ele atue como uma instância em espera inativa. Consulte [Criando uma Instalação de Modo de Espera a Frio AEM TarMK.](/help/sites-deploying/tarmk-cold-standby.md#creating-an-aem-tarmk-cold-standby-setup)
+1. Reconfigure o clone recém-criado para que ele atue como uma instância em espera inativa. Consulte [Criando uma Instalação de Modo de Espera a Frio do AEM TarMK.](/help/sites-deploying/tarmk-cold-standby.md#creating-an-aem-tarmk-cold-standby-setup)
 1. Inicie as instâncias principal e stand-by frio.
 
 ## Monitoramento {#monitoring}
 
-O recurso expõe informações usando JMX ou MBeans. Dessa forma, você pode inspecionar o estado atual do standby e do master usando o [console JMX](/help/sites-administering/jmx-console.md). As informações podem ser encontradas em um MBean de `type org.apache.jackrabbit.oak:type="Standby"`chamado `Status`.
+O recurso expõe informações usando JMX ou MBeans. Dessa forma, você pode inspecionar o estado atual do standby e do primário usando o [console JMX](/help/sites-administering/jmx-console.md). As informações podem ser encontradas em um MBean de `type org.apache.jackrabbit.oak:type="Standby"`chamado `Status`.
 
 **Em Espera**
 
@@ -365,7 +365,7 @@ A observação do principal expõe algumas informações gerais por meio de um M
 
 * `Mode:` sempre mostra o valor `primary`.
 
-Além disso, é possível recuperar informações para até dez clientes (instâncias stand-by) conectados ao mestre. A ID do MBean é a UUID da instância. Não há métodos chamáveis para esses MBeans, mas alguns atributos úteis somente leitura:
+Além disso, as informações para até dez clientes (instâncias stand-by) conectados ao principal podem ser recuperadas. A ID do MBean é a UUID da instância. Não há métodos chamáveis para esses MBeans, mas alguns atributos úteis somente leitura:
 
 * `Name:` a ID do cliente.
 * `LastSeenTimestamp:` o carimbo de data/hora da última solicitação em uma representação textual.
@@ -391,7 +391,7 @@ A Adobe recomenda executar a manutenção regularmente para evitar o crescimento
 
 1. Interrompa o processo em espera na instância em espera acessando o Console JMX e usando o bean **org.apache.jackrabbit.oak: Status (&quot;Standby&quot;)**. Para obter mais informações sobre como fazer isso, consulte a seção acima em [Monitoramento](/help/sites-deploying/tarmk-cold-standby.md#monitoring).
 
-1. Interrompa a instância primária do AEM.
+1. Pare a instância primária do AEM.
 1. Execute a ferramenta de compactação Oak na instância primária. Para obter mais detalhes, consulte [Manutenção do Repositório](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository).
 1. Inicie a instância primária.
 1. Inicie o processo standby na instância standby usando o mesmo bean JMX, conforme descrito na primeira etapa.
