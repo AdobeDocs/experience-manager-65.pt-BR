@@ -30,7 +30,7 @@ A meta deste tutorial de várias partes é ensinar a um desenvolvedor novo no AE
 
 ![WKND](assets/screen_shot_2018-11-23at152453.png)
 
-[O Tutorial do desenvolvedor do WKND está disponível aqui](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html). Ele orienta você na criação de um projeto do AEM usando as práticas recomendadas e tecnologias mais recentes.
+[O Tutorial do desenvolvedor do WKND está disponível aqui](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=pt-BR). Ele orienta você na criação de um projeto do AEM usando as práticas recomendadas e tecnologias mais recentes.
 
 ## Conceitos principais {#core-concepts}
 
