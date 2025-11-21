@@ -25,7 +25,7 @@ O AEM [!DNL Assets] é uma ferramenta de Gerenciamento de Ativos Digitais (DAM) 
 
 ## O que é o Gerenciamento de ativos digitais? {#what-is-digital-asset-management}
 
-O [!DNL Assets] fornece compartilhamento e distribuição em toda a empresa dos principais ativos digitais de uma organização. Os usuários em uma organização podem armazenar, gerenciar e acessar ativos digitais como imagens, gráficos, áudio, vídeo e documentos por meio de uma interface da Web (ou uma pasta CIF ou WebDAV).
+O [!DNL Assets] fornece compartilhamento e distribuição em toda a empresa dos principais ativos digitais de uma organização. Os usuários em uma organização podem armazenar, gerenciar e acessar ativos digitais como imagens, gráficos, áudio, vídeo e documentos por meio de uma interface da Web (ou uma pasta CIFS ou WebDAV).
 
 A funcionalidade [!DNL Assets] de [!DNL Experience Manager] permite que você faça o seguinte:
 
@@ -33,7 +33,7 @@ A funcionalidade [!DNL Assets] de [!DNL Experience Manager] permite que você fa
 * Gerencie ativos agrupando-os por tags, lightbox ou estrelas (seus favoritos). Adicionar anotações aos ativos.
 * Localize ativos pesquisando nomes de arquivos, texto completo de documentos e pesquisando datas, tipo de documento e tags.
 * Adicione ou edite informações de metadados para ativos. Os metadados são versionados automaticamente junto com o ativo correspondente. É possível importar ou exportar metadados de ativos.
-* Execute funções de edição de imagens, como dimensionamento e adição de filtros de imagem. Importe e exporte vários ativos digitais simultaneamente usando uma pasta WebDAV ou CIF.
+* Execute funções de edição de imagens, como dimensionamento e adição de filtros de imagem. Importe e exporte vários ativos digitais simultaneamente usando uma pasta WebDAV ou CIFS.
 * Use fluxos de trabalho e notificações para permitir o processamento e o download em conjunto de qualquer conjunto de ativos e gerenciar direitos de acesso a ativos.
 
 ### [!DNL Experience Manager Assets] está integrado com [!DNL Experience Manager Sites] {#aem-assets-fully-integrated-in-cq-wcm}
@@ -68,7 +68,7 @@ Ao trabalhar com ativos digitais no [!DNL Experience Manager], é útil compreen
 * **Os metadados** [!DNL Assets] têm metadados; por exemplo, autor, data de expiração e Informações DRM (Digital Rights Management). Os metadados estão sob controle de acesso. [!DNL Assets] oferece suporte aos seguintes vários esquemas de metadados comuns prontos para uso:
 
    * Dublin Core: incluindo autor, descrição, data, assunto e assim por diante.
-   * IPTC: incluindo evento, modelo, localização, etc.
+   * IPTC: incluindo evento, modelo, localização e assim por diante.
    * WCM: incluindo propriedades de página, [!UICONTROL Momento da ativação] e [!UICONTROL Momento da desativação], e assim por diante.
 
 * **Marcação**: [!DNL Assets] pode ser marcada e classificada. Consulte [organização de ativos](/help/assets/organize-assets.md).
@@ -77,7 +77,7 @@ Ao trabalhar com ativos digitais no [!DNL Experience Manager], é útil compreen
 
 * **Versões**: o controle de versão cria um instantâneo de ativos digitais em um ponto específico no tempo. Você pode restaurar ativos para versões anteriores. Consulte [controle de versão em [!DNL Assets]](manage-assets.md#asset-versioning).
 
-* **Subativos**: os subativos são ativos que compõem um ativo, por exemplo, camadas em um arquivo [!DNL Adobe Photoshop] ou páginas em um arquivo PDF. Em [!DNL Assets], é possível gerenciar ativos secundários da mesma maneira que você faria com os ativos.
+* **Subativos**: subativos são ativos que compõem um ativo, por exemplo, camadas em um arquivo [!DNL Adobe Photoshop] ou páginas em um arquivo PDF. Em [!DNL Assets], é possível gerenciar ativos secundários da mesma maneira que você faria com os ativos.
 
 ### Como trabalhar com ativos digitais {#how-to-work-with-assets}
 
@@ -94,7 +94,7 @@ Também é possível aplicar workflows manualmente. Consulte [Assets Media Handl
 
 ## [!DNL Experience Manager Assets] e [!DNL Media Library] {#cq-dam-vs-cq-medialibrary}
 
-Consulte [Assets e Media Library](medialibrary.md) para obter informações sobre as diferenças.
+Consulte [Assets e Biblioteca de Mídia](medialibrary.md) para obter informações sobre as diferenças.
 
 >[!MORELIKETHIS]
 >

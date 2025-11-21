@@ -1,5 +1,5 @@
 ---
-title: Primeiros passos para autores ao criar conteúdo no AEM
+title: Primeiras etapas para autores ao criar conteúdo no AEM
 description: Explore os principais conceitos de criação de conteúdo no AEM 6.5. Você também encontrará informações sobre o uso de tags, modelos e outros recursos da página.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -57,7 +57,7 @@ Se sua instância já tem páginas existentes ou se você mesmo criou uma nova p
 
 * [Desfazer e refazer edições de página](/help/sites-authoring/editing-content.md#undoing-and-redoing-page-edits)
 * [Usando o Modo de Visualização](/help/sites-authoring/editing-content.md#preview-mode) (para ver como será sua aparência quando publicado)
-* [Bloquear uma página  &#x200B;](/help/sites-authoring/editing-content.md#locking-a-page)
+* [Bloquear uma página  ](/help/sites-authoring/editing-content.md#locking-a-page)
 
 ### Publicar uma página {#publishing-a-page}
 

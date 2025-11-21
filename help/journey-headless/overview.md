@@ -18,7 +18,7 @@ Comece aqui para obter uma visão geral das jornadas guiadas disponíveis para e
 
 ## Introdução {#introduction}
 
-A implementação headless está se tornando cada vez mais importante para fornecer experiências ao seu público, onde quer que ele esteja e independentemente do canal.
+A implementação headless está se tornando cada vez mais importante para fornecer experiências ao seu público-alvo, onde quer que ele esteja e independentemente do canal.
 
 A implementação headless dispensa o gerenciamento de páginas e componentes tradicional utilizado em soluções de pilha completa e se concentra na criação de fragmentos de conteúdo reutilizáveis e neutros em relação ao canal, assim como na entrega entre canais. É um padrão de desenvolvimento moderno e dinâmico para implementação de experiências digitais.
 
@@ -36,7 +36,7 @@ Se quiser saber como a Adobe recomenda resolver casos de negócios headless com 
 
 As Jornadas headless foram projetadas para diversos perfis, apresentando os requisitos, etapas e abordagem para implementar soluções headless a partir de diferentes perspectivas.
 
-A jornada individual é definida para um perfil ou público específico, mas também define perfis adicionais com os quais o leitor interage.
+A jornada individual é definida para um perfil ou público-alvo específico, mas também define perfis adicionais com os quais o leitor interage.
 
 As informações nas jornadas podem ser úteis para vários perfis, mas uma jornada é direcionada a um perfil específico e algumas informações podem ser supérfluas para determinadas funções.
 
@@ -44,7 +44,7 @@ As informações nas jornadas podem ser úteis para vários perfis, mas uma jorn
 
 As seguintes Jornadas de documentação estão disponíveis para tópicos headless.
 
-| Título | Descrição | Público principal |
+| Título | Descrição | Público-alvo principal |
 |---|---|---|
 | [Jornada de desenvolvedores headless](/help/journey-headless/developer/overview.md) | Saiba mais sobre as tecnologias headless, o que elas trazem para a experiência do usuário, como o AEM oferece suporte a modelos headless e como implementar seu próprio projeto de desenvolvimento headless, de A a Z. | Desenvolvedores |
 | [Jornada de tradução headless](/help/journey-headless/translation/overview.md) | Saiba mais sobre as tecnologias headless, por que elas podem ser usadas em seu projeto e como criar e atualizar projetos de tradução no AEM, de A a Z. | Especialistas em tradução |

@@ -20,32 +20,32 @@ ht-degree: 15%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/home.html?lang=pt-BR) |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/home.html) |
 | AEM 6.5 | Este artigo |
 
 Para obter informações sobre os recursos e aprimoramentos mais recentes do AEM Forms, consulte [Novidades no AEM Forms](../../forms/using/whats-new.md).
 
 ## Sobre o AEM Forms {#about-aem-forms}
 
-O Adobe Experience Manager (AEM) fornece uma solução fácil de usar para criar, gerenciar, publicar e atualizar formulários digitais complexos e, ao mesmo tempo, integrar-se a processos de back-end, regras de negócios e dados.
+O Adobe Experience Manager (AEM) fornece uma solução fácil de usar para criar, gerenciar, publicar e atualizar formulários digitais complexos enquanto se integra a processos de back-end, regras de negócios e dados.
 
 O AEM Forms combina criação, gerenciamento e publicação de formulários, juntamente com recursos de gerenciamento de correspondência, segurança de documentos e análise integrada para criar experiências envolventes de ponta a ponta. Projetado para funcionar em canais móveis e da Web, o AEM Forms pode ser integrado com eficiência aos seus processos de negócios, reduzindo processos e erros de papel e, ao mesmo tempo, melhorando a eficiência.
 
-Frequentemente em grandes empresas, os formulários são criados uma vez e reutilizados, por meio de uma cópia enviada para um sistema de gerenciamento de conteúdo. Manter um grande banco de dados de formulários atualizado e torná-los detectáveis pode ser um desafio considerável. O AEM fornece um Forms Portal personalizável que garante que os clientes encontrem e acessem os formulários de que precisam, tanto na Web quanto em canais móveis.
+Frequentemente em grandes empresas, os formulários são criados uma vez e reutilizados, por meio de uma cópia enviada para um sistema de gerenciamento de conteúdo. Manter um grande banco de dados de formulários atualizado e torná-los detectáveis pode ser um desafio considerável. O AEM fornece um Forms Portal personalizável que garante que os clientes encontrem e acessem os formulários necessários nos canais da Web e móveis.
 
-O AEM Forms fornece ferramentas de gerenciamento de formulários que permitem não apenas gerenciar formulários adaptáveis, mas também formulários XFA, PDF forms e ativos relacionados. Para obter mais informações, consulte [Introdução ao gerenciamento de formulários](../../forms/using/introduction-managing-forms.md).
+O AEM Forms fornece ferramentas de gerenciamento de formulários que permitem gerenciar não apenas formulários adaptáveis, mas também formulários XFA, PDF forms e ativos relacionados. Para obter mais informações, consulte [Introdução ao gerenciamento de formulários](../../forms/using/introduction-managing-forms.md).
 
 >[!NOTE]
 >
 >O recurso de formulários adaptáveis, disponível no [Início rápido do AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=pt-BR), foi projetado apenas para fins de exploração e avaliação. Para usá-lo na produção, é essencial obter uma licença válida para o AEM Forms, pois a funcionalidade de formulários adaptáveis requer uma licença adequada.
 
-![recursos de formulários AEM](do-not-localize/4th-draft-updated.gif)
+![recursos de formulários do AEM](do-not-localize/4th-draft-updated.gif)
 
 ### Principais recursos {#key-capabilities}
 
 Resumindo, a AEM Forms fornece recursos avançados de gerenciamento de formulários, como os descritos a seguir, que reduzem os processos manuais e aumentam a satisfação do cliente.
 
-* Um portal centralizado do Forms para criação e implantação de formulários dinâmicos, incluindo PDF, HTML e formulários adaptáveis
+* Um portal centralizado do Forms para projetar e implantar formulários dinâmicos, incluindo PDF, HTML5 e formulários adaptáveis
 * Uma interface gráfica de usuário fácil de usar que permite aos usuários empresariais importar, gerenciar, visualizar e publicar formulários com facilidade
 * Um diretório responsivo de formulários com recursos avançados de pesquisa usando palavras-chave, tags e metadados
 * Detecção dinâmica do dispositivo e do local de um usuário para renderizar o formulário adequadamente na Web e em canais móveis
@@ -53,7 +53,7 @@ Resumindo, a AEM Forms fornece recursos avançados de gerenciamento de formulár
 * Integração com os serviços do Adobe Document Cloud eSign ou Rabiscar para assinar eletronicamente documentos contendo informações confidenciais
 * Recursos automatizados de publicação de formulários e capacidade de fornecer comunicação pontual, personalizada e consistente por meio de vários canais
 
-## Tipos de formulário AEM {#aem-form-types}
+## Tipos de formulário do AEM {#aem-form-types}
 
 O AEM Forms permite estender formulários novos e existentes para criar:
 
@@ -62,15 +62,15 @@ O AEM Forms permite estender formulários novos e existentes para criar:
 
 **PDF forms**
 
-Os PDF forms podem ser preenchidos off-line, salvos localmente e os dados do formulário podem ser enviados quando você estiver on-line. Você pode usar códigos de barras 2D para capturar dados de formulário e usar assinaturas digitais para validar a autenticidade para os usuários.
+O PDF forms pode ser preenchido offline, salvo localmente e os dados do formulário podem ser enviados na próxima vez que você estiver online. Você pode usar códigos de barras 2D para capturar dados de formulário e usar assinaturas digitais para validar a autenticidade para os usuários.
 
-**formulários de HTML**
+**Formulários do HTML**
 
-Os formulários baseados em navegador do HTML5 podem ser visualizados em dispositivos móveis e navegadores de desktop. Você pode assinar eletronicamente os formulários HTML usando os serviços Scribble ou eSign.
+Os formulários baseados em navegador do HTML5 podem ser visualizados em dispositivos móveis e navegadores de desktop. Você pode assinar eletronicamente os formulários do HTML usando os serviços de Rabisco ou eSign.
 
 **Formulários adaptáveis**
 
-Os formulários adaptáveis podem se adaptar dinamicamente às respostas do usuário, adicionando ou removendo campos ou seções, conforme necessário. O AEM permite que você reutilize modelos de formulário Adobe XML para criar formulários adaptáveis.
+Os formulários adaptáveis podem se adaptar dinamicamente às respostas do usuário, adicionando ou removendo campos ou seções, conforme necessário. O AEM permite reutilizar modelos de formulário XML do Adobe para criar formulários adaptáveis.
 
 ### Recursos compatíveis {#supported-features}
 
@@ -95,12 +95,12 @@ Capturar dados offline e sincronizá-los na próxima vez que você voltar online
 
 **Vantagens de usar o Forms Workspace para a coleta de dados offline**
 
-* Aplicativo de espaço de trabalho HTML fácil de usar para atribuição e rastreamento de tarefas
+* Aplicativo de espaço de trabalho do HTML fácil de usar para atribuição e rastreamento de tarefas
 * Arrastar e soltar o ambiente de design do fluxo de trabalho
 * Conectores de gerenciamento de conteúdo corporativo (ECM)
 * Suporte a padrões abertos, incluindo XML e SOAP para conectar dados de formulários a sistemas corporativos
-* Relatórios de HTML prontos para uso monitoram backlogs, filas de trabalho e Indicadores-chave de desempenho (KPIs)
-* Painéis personalizáveis para obter insights em tempo real sobre as operações de negócios
+* Os relatórios prontos para uso do HTML monitoram backlogs, filas de trabalho e Indicadores-chave de desempenho (KPIs)
+* Painéis personalizáveis para o insight em tempo real em operações de negócios
 * API para conexão com ferramentas de relatórios de terceiros
 
 ![Terceiro rascunho](do-not-localize/3rd-draft.gif)

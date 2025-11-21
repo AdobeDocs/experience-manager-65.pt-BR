@@ -14,7 +14,7 @@ ht-degree: 35%
 
 # Guia do usuário de gerenciamento do AEM 6.5
 
-Descubra como gerenciar um projeto AEM com sucesso, com o suporte de recursos importantes, juntamente com práticas recomendadas e diretrizes.
+Saiba como gerenciar um projeto do AEM com sucesso, com suporte de recursos importantes, junto com práticas recomendadas e diretrizes.
 
 ## Artigos principais
 

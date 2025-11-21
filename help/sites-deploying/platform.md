@@ -20,7 +20,7 @@ ht-degree: 4%
 
 # Introdução à plataforma AEM{#introduction-to-the-aem-platform}
 
-A plataforma AEM no AEM 6 é baseada no Apache Jackrabbit Oak.
+A plataforma do AEM no AEM 6 é baseada no Apache Jackrabbit Oak.
 
 O Apache Jackrabbit Oak é um esforço para implementar um repositório de conteúdo hierárquico dimensionável e eficiente para uso como base de sites modernos de classe mundial e outros aplicativos de conteúdo exigentes.
 
@@ -116,13 +116,13 @@ O armazenamento MongoDB adiciona dados a um documento com cada modificação. No
 
 Os dados sobre nós de cluster ativos e inativos são mantidos no banco de dados para facilitar as operações de cluster.
 
-Uma configuração típica de cluster AEM com armazenamento MongoDB:
+Uma configuração típica de cluster do AEM com armazenamento MongoDB:
 
 ![chlimage_1-85](assets/chlimage_1-85.png)
 
 ## O que é diferente de Jackrabbit 2? {#what-is-different-from-jackrabbit}
 
-Como o Oak é compatível com versões anteriores do JCR 1.0, quase não há alterações no nível do usuário. No entanto, há algumas diferenças notáveis que você deve levar em conta ao configurar uma instalação de AEM baseada no Oak:
+Como o Oak é compatível com versões anteriores do JCR 1.0, quase não há alterações no nível do usuário. No entanto, há algumas diferenças notáveis que você deve considerar ao configurar uma instalação do AEM baseada no Oak:
 
 * O Oak não cria índices automaticamente. Dessa forma, os índices personalizados devem ser criados quando necessário.
 * Ao contrário do Jackrabbit 2, onde as sessões sempre refletem o estado mais recente do repositório, com o Oak, uma sessão reflete uma exibição estável do repositório a partir do momento em que a sessão foi adquirida. O motivo é devido ao modelo MVCC no qual o Oak se baseia.
@@ -132,7 +132,7 @@ Como o Oak é compatível com versões anteriores do JCR 1.0, quase não há alt
 
 Para obter mais informações sobre a plataforma AEM, consulte também os artigos abaixo:
 
-* [Configuração de armazenamento de nós e armazenamento de dados no AEM 6](/help/sites-deploying/data-store-config.md)
+* [Configuração de armazenamentos de nós e armazenamentos de dados no AEM 6](/help/sites-deploying/data-store-config.md)
 * [Consultas e indexação do Oak](/help/sites-deploying/queries-and-indexing.md)
 * [Elementos de armazenamento no AEM 6](/help/sites-deploying/storage-elements-in-aem-6.md)
 * [AEM com MongoDB](/help/sites-deploying/aem-with-mongodb.md)
