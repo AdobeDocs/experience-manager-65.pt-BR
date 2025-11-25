@@ -474,7 +474,7 @@ Ao editar uma variação, você tem acesso à ação para sincronizar o elemento
 
 >[!CAUTION]
 >
->A sincronização só está disponível para copiar alterações *do **Principal**para a variação*.
+>A sincronização só está disponível para copiar alterações *do **Principal**&#x200B;para a variação*.
 >
 >Somente o elemento atual da variação será sincronizado.
 >
