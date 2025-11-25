@@ -9,9 +9,9 @@ exl-id: beb2b83e-e8db-40bb-915f-cb6ba3140947
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
+source-git-commit: 704a815e961dc2c690e034a1b1cbe60800c643ae
 workflow-type: tm+mt
-source-wordcount: '2080'
+source-wordcount: '2087'
 ht-degree: 1%
 
 ---
@@ -20,22 +20,22 @@ ht-degree: 1%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/variable-in-aem-workflows.html?lang=pt-BR) |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/variable-in-aem-workflows.html) |
 | AEM 6.5 | Este artigo |
 
 Uma variável em um modelo de fluxo de trabalho é uma maneira de armazenar um valor com base em seu tipo de dados. Em seguida, você pode usar o nome da variável em qualquer etapa do fluxo de trabalho para recuperar o valor armazenado na variável. Você também pode usar nomes de variáveis para definir expressões para tomar decisões de roteamento.
 
-Em modelos de fluxo de trabalho AEM, é possível:
+Nos modelos de fluxo de trabalho do AEM, é possível:
 
 * [Crie uma variável](../../forms/using/variable-in-aem-workflows.md#create-a-variable) de um tipo de dados com base no tipo de informações que você deseja armazenar nela.
 * [Defina um valor para a variável](../../forms/using/variable-in-aem-workflows.md#set-a-variable) usando a etapa de fluxo de trabalho Definir Variável.
 * [Use a variável](../../forms/using/variable-in-aem-workflows.md#use-a-variable) em todas as etapas do fluxo de trabalho do AEM Forms para recuperar o valor armazenado e nas etapas OR Split e Goto para definir uma expressão de roteamento.
 
-O vídeo a seguir demonstra como criar, definir e usar variáveis em modelos de fluxo de trabalho de AEM:
+O vídeo a seguir demonstra como criar, definir e usar variáveis em modelos de fluxo de trabalho do AEM:
 
 <!-- FUTURE ERROR: YouTube and mp4 videos are not supported -->
 
->[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_introduction_1_1.mp4)
+[Vídeo de introdução às variáveis](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_introduction_1_1.mp4)
 
 As variáveis são uma extensão da interface [MetaDataMap](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) existente. Você pode usar [MetaDataMap](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) no ECMAScript para acessar metadados salvos usando variáveis.
 
@@ -44,13 +44,13 @@ As variáveis são uma extensão da interface [MetaDataMap](https://helpx.adobe.
 Você cria variáveis usando a seção Variáveis disponível no sidekick do modelo de fluxo de trabalho. As variáveis de fluxo de trabalho do AEM são compatíveis com os seguintes tipos de dados:
 
 * **Tipos de dados primitivos**: Long, Double, Boolean, Date e String
-* **Tipos de dados complexos**: [Documento](https://helpx.adobe.com/br/experience-manager/6-5/forms/javadocs/com/adobe/aemfd/docmanager/Document.html), [XML](https://docs.oracle.com/javase/8/docs/api/org/w3c/dom/Document.html), [JSON](https://static.javadoc.io/com.google.code.gson/gson/2.3/com/google/gson/JsonObject.html) e instância do Modelo de Dados de Formulário.
+* **Tipos de dados complexos**: [Documento](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/aemfd/docmanager/Document.html), [XML](https://docs.oracle.com/javase/8/docs/api/org/w3c/dom/Document.html), [JSON](https://static.javadoc.io/com.google.code.gson/gson/2.3/com/google/gson/JsonObject.html) e instância do Modelo de Dados de Formulário.
 
 >[!NOTE]
 >
 >Os fluxos de trabalho são compatíveis apenas com o formato ISO8601 para variáveis do tipo Date.
 
-Você precisa do [pacote complementar do AEM Forms](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html) para os tipos de dados Documento e Modelo de dados de formulário.  Use o tipo de dados ArrayList para criar coleções de variáveis. Você pode criar uma variável ArrayList para todos os tipos de dados primitivos e complexos. Por exemplo, crie uma variável ArrayList e selecione String como subtipo para armazenar vários valores de string usando a variável.
+Você precisa do [pacote complementar do AEM Forms](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) para os tipos de dados Documento e Modelo de dados de formulário.  Use o tipo de dados ArrayList para criar coleções de variáveis. Você pode criar uma variável ArrayList para todos os tipos de dados primitivos e complexos. Por exemplo, crie uma variável ArrayList e selecione String como subtipo para armazenar vários valores de string usando a variável.
 
 Execute as seguintes etapas para criar uma variável:
 
@@ -113,7 +113,7 @@ Selecione uma variável do tipo XML para armazenar um arquivo XML. Consulte a va
 
 Neste exemplo, selecione uma variável XML **formdata** para armazenar o arquivo **cc-app.xml**. Consulte a variável **formdata** para definir o valor da variável de cadeia de caracteres **emailaddress** e armazenar o valor da propriedade **emailAddress** disponível no arquivo **cc-app.xml**.
 
->[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/set_variable_example1.mp4 "Definir o valor de uma variável")
+[Definir vídeo variável](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/set_variable_example1.mp4)
 
 ### Exemplo 2: usar uma expressão para armazenar valor com base em outras variáveis {#example2}
 
@@ -123,7 +123,7 @@ Neste exemplo, use o editor de expressão para definir uma expressão para calcu
 
 <!-- FUTURE ERROR: YouTube and mp4 videos are not supported -->
 
->[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_expression.mp4)
+[Vídeo de expressão de variáveis](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_expression.mp4)
 
 ## Usar editor de expressão {#use-expression-editor}
 
@@ -170,9 +170,7 @@ Você pode usar variáveis para definir a expressão de roteamento usando o edit
 
 Neste exemplo, antes de definir a expressão de roteamento, use o [exemplo 2](../../forms/using/variable-in-aem-workflows.md#example2) para definir o valor da variável **totalvalue**. A ramificação 1 estará ativa se o valor da variável **totalvalue** for maior que 50000. Da mesma forma, é possível definir uma regra para tornar a Ramificação 2 ativa se o valor da variável **totalvalue** for menor que 50000.
 
-<!-- FUTURE ERROR: YouTube and mp4 videos are not supported -->
-
->[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_orsplit_example.mp4)
+[OU dividir vídeo](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_orsplit_example.mp4)
 
 Da mesma forma, selecione um caminho de script externo ou especifique o script ECMA para expressões de roteamento para avaliar a ramificação ativa. Selecione **[!UICONTROL Renomear ramificação]** para especificar um nome alternativo para a ramificação.
 
@@ -209,10 +207,10 @@ Use as seguintes APIs no Script ECMA para recuperar valores para variáveis exis
 | Primitiva (Longa, Dupla, Booleana, Data e String) | workItem.getWorkflowData().getMetaDataMap().get(variableName, type) |
 | Documento | Packages.com.adobe.aemfd.docmanager.Document doc = workItem.getWorkflowData().getMetaDataMap().get(&quot;docVar&quot;, Packages.com.adobe.aemfd.docmanager.Document.class); |
 | XML | Packages.org.w3c.dom.Document xmlObject = workItem.getWorkflowData().getMetaDataMap().get(variableName, Packages.org.w3c.dom.Document.class); |
-| Modelo de dados do formulário | Packages.com.adobe.aem.dermis.api.FormDataModelInstance fdmObject = workItem.getWorkflowData().getMetaDataMap().get(variableName, Packages.com.adobe.aem.dermis.api.FormDataModelInstance.class); |
+| Modelo de dados de formulário | Packages.com.adobe.aem.dermis.api.FormDataModelInstance fdmObject = workItem.getWorkflowData().getMetaDataMap().get(variableName, Packages.com.adobe.aem.dermis.api.FormDataModelInstance.class); |
 | JSON | Packages.com.google.gson.JsonObject jsonObject = workItem.getWorkflowData().getMetaDataMap().get(variableName, Packages.com.google.gson.JsonObject.class); |
 
-Você precisa do [pacote complementar do AEM Forms](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html) para os tipos de dados de variáveis Documento e Modelo de dados de formulário.
+Você precisa do [pacote complementar do AEM Forms](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) para os tipos de dados de variáveis Documento e Modelo de dados de formulário.
 
 **Exemplo**
 
@@ -302,4 +300,4 @@ Execute as seguintes etapas para excluir uma variável:
 
 ## Referências {#references}
 
-Para obter mais exemplos sobre como usar variáveis nas etapas do fluxo de trabalho do AEM Forms, consulte [Variáveis em fluxos de trabalho de AEM](https://helpx.adobe.com/experience-manager/kt/forms/using/authoring_variables_in_aem_forms-workflow1.html).
+Para obter mais exemplos sobre como usar variáveis nas etapas do fluxo de trabalho do AEM Forms, consulte [Variáveis nos fluxos de trabalho do AEM](https://helpx.adobe.com/experience-manager/kt/forms/using/authoring_variables_in_aem_forms-workflow1.html).
