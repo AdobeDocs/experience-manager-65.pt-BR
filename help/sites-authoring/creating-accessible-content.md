@@ -455,7 +455,7 @@ Certifique-se de que todas as informações que dependem das características vi
 
 ### Discernível (1.4)       {#distinguishable}
 
-[Diretriz 1.4 Discernível: facilitar a visualização e a audição de conteúdos aos usuários, incluindo a separação do primeiro plano e do plano de fundo. ](https://www.w3.org/TR/WCAG/#distinguishable)
+[Diretriz 1.4 Discernível: facilitar a visualização e a audição de conteúdos aos usuários, incluindo a separação do primeiro plano e do plano de fundo. &#x200B;](https://www.w3.org/TR/WCAG/#distinguishable)
 
 ### Utilização de cor (1.4.1)              {#use-of-color}
 

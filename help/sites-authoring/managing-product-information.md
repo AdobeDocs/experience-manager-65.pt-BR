@@ -195,7 +195,7 @@ A tarefa **Criar Lista de Captura** permite que o proprietário do projeto selec
 
    ![Exibir lista de captura](assets/chlimage_1-148a.png)
 
-   Para editar os dados existentes ou adicionar novos dados, clique em **Editar** na barra de ferramentas. Somente os campos **Produto **e **Descrição** são editáveis.
+   Para editar os dados existentes ou adicionar novos dados, clique em **Editar** na barra de ferramentas. Somente os campos **Produto &#x200B;** e **Descrição** são editáveis.
 
    ![Editar lista de captura](assets/chlimage_1-149a.png)
 

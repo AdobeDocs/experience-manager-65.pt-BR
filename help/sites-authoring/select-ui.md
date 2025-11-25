@@ -31,7 +31,7 @@ Isso define a interface como o padrão ao editar páginas, embora o usuário pos
 * [Alternando para a interface clássica da sessão atual](#switching-to-classic-ui-for-the-current-session)
 Alterna para a interface clássica da sessão atual.
 
-* No caso da criação de [ páginas, o sistema faz determinadas substituições na relação com a interface ](#ui-overrides-for-the-editor).
+* No caso da criação de [&#x200B; páginas, o sistema faz determinadas substituições na relação com a interface &#x200B;](#ui-overrides-for-the-editor).
 
 >[!CAUTION]
 >

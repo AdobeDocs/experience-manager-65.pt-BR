@@ -65,7 +65,7 @@ Quando você usa mais de uma regra, elas são combinadas pelo operador boolean A
 
 >[!NOTE]
 >
->Se você não vir **Criar público-alvo **no menu **Criar**, não terá as permissões necessárias para criar um público-alvo. Você precisa de permissões de gravação em **/etc/segmentation** para criar públicos-alvo. Por padrão, os autores de conteúdo do grupo têm permissões de gravação.
+>Se você não vir **Criar público-alvo &#x200B;** no menu **Criar**, não terá as permissões necessárias para criar um público-alvo. Você precisa de permissões de gravação em **/etc/segmentation** para criar públicos-alvo. Por padrão, os autores de conteúdo do grupo têm permissões de gravação.
 
 Para criar um público-alvo do Adobe Target:
 
@@ -73,7 +73,7 @@ Para criar um público-alvo do Adobe Target:
 
    ![captura de tela_2019-03-05at124139](assets/screen-shot_2019-03-05at124139.png)
 
-1. No console Públicos-alvo, clique em **Criar** e** Criar público-alvo**.
+1. No console Públicos-alvo, clique em **Criar** e **&#x200B; Criar público-alvo**.
 
    ![chlimage_1-168](assets/chlimage_1-168.png)
 

@@ -80,7 +80,7 @@ Adicione uma atividade ou edite uma atividade já existente para concentrar seus
 * **Mecanismo de direcionamento:** o [AEM](/help/sites-authoring/personalization.md#aem) ou o [Adobe Target](/help/sites-authoring/personalization.md#adobe-target) como mecanismo de conteúdo direcionado.
 
 * **Selecionar uma configuração de destino:** (somente no Adobe Target) a configuração em nuvem que essa atividade deve usar para se conectar ao Adobe Target. Essa opção aparece somente quando o Adobe Target é selecionado para o Mecanismo de direcionamento.
-* **Tipo de atividade: **o tipo de atividade — teste A/B ou direcionamento de experiência
+* **Tipo de atividade: &#x200B;** o tipo de atividade — teste A/B ou direcionamento de experiência
 * **Objetivo:** (opcional) uma descrição da atividade.
 * **Experiências:** mapeamentos entre os nomes de público-alvo e os segmentos de marketing que você está direcionando.
 * **Porcentagens de tráfego:** se o teste A/B for selecionado, você poderá alterar a quantidade de tráfego (em porcentagem) de cada experiência.
@@ -108,7 +108,7 @@ Para adicionar uma atividade:
 1. Adicione uma ou mais experiências à atividade. Clique em **Adicionar experiência**.
 1. Se estiver usando o direcionamento do AEM ou o direcionamento de experiência do Adobe Target:
 
-   1. Clique em **Selecionar público-alvo **e selecione o segmento ao qual a sua experiência está direcionado.
+   1. Clique em **Selecionar público-alvo &#x200B;** e selecione o segmento ao qual a sua experiência está direcionado.
    1. Clique em **Adicionar experiência**, digite um nome e clique em **OK**.
 
    1. Clique em **Avançar**.

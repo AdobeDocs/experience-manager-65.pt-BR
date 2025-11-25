@@ -472,7 +472,7 @@ No modo **Estrutura** do editor de modelo:
 
   Para remover uma configuração, clique no botão **Excluir** localizado à direita da configuração.
 
-  Para remover uma configuração, clique no botão ** Excluir **.
+  Para remover uma configuração, clique no botão **&#x200B; Excluir &#x200B;**.
 
   ![chlimage_1-142](assets/chlimage_1-142.png)
 
@@ -490,7 +490,7 @@ No modo **Estrutura** do editor de modelo:
 
   >[!NOTE]
   >
-  >[As políticas de conteúdo para componentes que implementam o editor de rich text](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638) só podem ser definidas para opções disponibilizadas pelo RTE, por meio das configurações da interface. [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638) [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638)
+  >[As políticas de conteúdo para componentes que implementam o editor de rich text](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638) só podem ser definidas para opções disponibilizadas pelo RTE, por meio das configurações da interface. [&#128279;](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638) [&#128279;](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638)
 
 * **Política e Propriedades (Contêiner de Layout)**
 
