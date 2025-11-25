@@ -293,7 +293,7 @@ Por exemplo:
 1. Adicionar novas imagens em `/apps/livecycle/core/content/login`. Para adicionar uma imagem:
 
    1. Instale o cliente WebDAV.
-   1. Navegue até a pasta `/apps/livecycle/core/content/login`, usando o cliente webDAV. Para obter mais informações, consulte [Acesso ao WebDAV](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/webdav-access.html?lang=en).
+   1. Navegue até a pasta `/apps/livecycle/core/content/login`, usando o cliente webDAV. Para obter mais informações, consulte [Acesso ao WebDAV](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/webdav-access.html?lang=pt-BR).
 
    1. Adicione novas imagens.
 

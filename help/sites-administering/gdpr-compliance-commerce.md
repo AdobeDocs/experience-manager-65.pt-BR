@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >O GDPR é usado como exemplo nas seções abaixo, mas os detalhes abordados se aplicam a todas as regulamentações de proteção e privacidade de dados; como o GDPR e o CCPA.
 
-O Regulamento Geral sobre a Proteção de Dados da União Europeia entra em vigor em maio de 2018. Consulte a [página do GDPR no Centro de privacidade da Adobe](https://business.adobe.com/privacy/general-data-protection-regulation.html).
+O Regulamento Geral sobre a Proteção de Dados da União Europeia entra em vigor em maio de 2018. Consulte a [página do GDPR no Centro de privacidade da Adobe](https://business.adobe.com/br/privacy/general-data-protection-regulation.html).
 
 >[!NOTE]
 >

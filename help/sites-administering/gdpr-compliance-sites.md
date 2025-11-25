@@ -50,7 +50,7 @@ A AEM tem um [serviço de cookie de recusa](/help/sites-developing/cookie-optout
 
 O AEM Sites inclui uma integração opcional com o Enhanced Insights by Analytics que usa a funcionalidade no Adobe Analytics On-demand Service.
 
-Para obter mais informações sobre como gerenciar solicitações de titulares de dados do GDPR relacionadas ao Adobe Analytics, consulte [Adobe Analytics e GDPR](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-overview.html).
+Para obter mais informações sobre como gerenciar solicitações de titulares de dados do GDPR relacionadas ao Adobe Analytics, consulte [Adobe Analytics e GDPR](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-overview.html?lang=pt-BR).
 
 ## Personalization aprimorado por Target {#enhanced-personalization-by-target}
 
