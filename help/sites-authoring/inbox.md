@@ -4,8 +4,8 @@ description: Gerenciamento de tarefas com a caixa de entrada no Adobe Experience
 exl-id: 80b7f179-b011-4f90-b5ab-9ef8a669d271
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '1155'
 ht-degree: 39%
@@ -18,7 +18,7 @@ Você pode receber notificações de várias áreas do AEM, incluindo fluxos de 
 
 * Tarefas:
 
-   * eles também podem ser criados em vários pontos da interface do AEM, por exemplo, em **Projetos**,
+   * eles também podem ser criados em vários pontos da interface do usuário do AEM, por exemplo, em **Projetos**,
    * estes podem ser o produto de uma etapa de fluxo de trabalho **Criar tarefa** ou **Criar tarefa do projeto**.
 
 * Fluxos de trabalhos:
@@ -42,7 +42,7 @@ Você recebe essas notificações em sua própria caixa de entrada, onde pode vi
 >* [Projetos](/help/sites-authoring/touch-ui-managing-projects.md)
 >* [Projetos: trabalhar com tarefas](/help/sites-authoring/task-content.md)
 >* [Fluxos de trabalhos](/help/sites-authoring/workflows.md)
->* [Forms](/help/forms/using/introduction-aem-forms.md)
+>* [Formulários](/help/forms/using/introduction-aem-forms.md)
 >
 
 ## Caixa de entrada no cabeçalho {#inbox-in-the-header}
@@ -139,10 +139,10 @@ A opção Admin Control permite que os administradores:
 
 A opção Admin Control está visível somente para os membros do grupo `administrators` ou `workflow-administrators`.
 
-* **Personalização de coluna**: personalize uma caixa de entrada AEM para alterar o título padrão de uma coluna, reordenar a posição de uma coluna e exibir colunas adicionais com base nos dados de um fluxo de trabalho.
-   * **Adicionar Coluna**: selecione uma coluna para adicionar à Caixa de Entrada AEM.
+* **Personalização de coluna**: personalize uma Caixa de Entrada do AEM para alterar o título padrão de uma coluna, reordenar a posição de uma coluna e exibir colunas adicionais com base nos dados de um fluxo de trabalho.
+   * **Adicionar Coluna**: selecione uma coluna para adicionar à Caixa de Entrada do AEM.
    * **Editar Coluna**: passe o mouse sobre o título da coluna e selecione o ícone ![editar](assets/edit.svg) para inserir um nome de exibição de coluna.
-   * **Excluir Coluna**: Selecione o ícone ![excluir](assets/delete_updated.svg) para excluir a coluna da Caixa de Entrada AEM.
+   * **Excluir Coluna**: selecione o ícone ![excluir](assets/delete_updated.svg) para excluir a coluna da Caixa de Entrada do AEM.
    * **Mover Coluna**: arraste o ícone ![mover](assets/move_updated.svg) para mover uma coluna para uma nova posição na Caixa de Entrada do AEM.
 
   ![admin-control](assets/admin-control-column-customize.png)

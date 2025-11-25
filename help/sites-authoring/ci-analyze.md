@@ -1,6 +1,6 @@
 ---
 title: Análise do desempenho da página
-description: Use a página Content Insight para analisar o desempenho da página que você está criando
+description: Use a página Insight de conteúdo para analisar o desempenho da página que você está criando
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -9,8 +9,8 @@ docset: aem65
 exl-id: 14484a90-4e44-4c85-9411-b78ed11dc70d
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Integration
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '661'
 ht-degree: 0%
@@ -19,9 +19,9 @@ ht-degree: 0%
 
 # Análise do desempenho da página{#analyzing-page-performance}
 
-Abra a página [Content Insight](/help/sites-authoring/content-insights.md) para analisar o desempenho da página que você está criando. Configure o período do relatório para focalizar sua análise.
+Abra a página [Insight de Conteúdo](/help/sites-authoring/content-insights.md) para analisar o desempenho da página que você está criando. Configure o período do relatório para focalizar sua análise.
 
-## Abrir o Analytics e o Recommendations em uma página {#opening-analytics-and-recommendations-for-a-page}
+## Abrindo o Analytics e o Recommendations em uma página {#opening-analytics-and-recommendations-for-a-page}
 
 Use o procedimento a seguir para ver o Analytics e o Recommendations de uma página:
 
@@ -30,7 +30,7 @@ Use o procedimento a seguir para ver o Analytics e o Recommendations de uma pág
 
    >[!NOTE]
    >
-   >O Analytics e o Recommendations de uma página só aparecerão se você tiver configurado o AEM para [integrar com o Adobe Analytics](/help/sites-administering/adobeanalytics-connect.md).
+   >O Analytics e o Recommendations para uma página só aparecerão se você tiver configurado o AEM para [integrar com o Adobe Analytics](/help/sites-administering/adobeanalytics-connect.md).
 
    ![captura de tela_2019-03-05at115319](assets/screen-shot_2019-03-05at115319.png)
 
@@ -41,15 +41,15 @@ Altere os seguintes aspectos relacionados ao tempo dos relatórios de análise:
 * O período no qual o relatório será gerado.
 * A granularidade dos dados.
 
-As ferramentas para alterar os aspectos relacionados ao tempo dos relatórios aparecem na parte superior da página Content Insight. ![chlimage_1-126](assets/chlimage_1-126.png)
+As ferramentas para alterar os aspectos relacionados ao tempo dos relatórios aparecem na parte superior da página Insight de conteúdo. ![chlimage_1-126](assets/chlimage_1-126.png)
 
 #### Alteração do Período de Geração de Relatórios {#changing-the-reporting-period-1}
 
-Altere o período de geração de relatório da página Content Insight para focalizar sua análise da atividade da página em um período específico. Quando você altera o período do relatório, os relatórios são atualizados automaticamente. A área sombreada no período representa o período do relatório. As datas no período aumentam da esquerda para a direita.
+Altere o período de geração de relatórios da página Insight de conteúdo para focalizar sua análise da atividade da página em um período específico. Quando você altera o período do relatório, os relatórios são atualizados automaticamente. A área sombreada no período representa o período do relatório. As datas no período aumentam da esquerda para a direita.
 
 ![chlimage_1-127](assets/chlimage_1-127.png)
 
-Para alterar o período de geração de relatório de uma página de Content Insight:
+Para alterar o período de geração de relatórios de uma página do Insight de conteúdo:
 
 1. Se o período de tempo não for exibido na parte superior da página, clique no ícone Alternar período de tempo.
 
@@ -75,9 +75,9 @@ A granularidade afeta os relatórios que plotam dados em relação ao tempo, com
 
 1. Clique na granularidade desejada. Depois de selecionado, o relatório é atualizado automaticamente para refletir a granularidade.
 
-### Atribuição de tarefas para SEO Recommendations {#assigning-tasks-for-seo-recommendations}
+### Atribuindo Tarefas para Recomendações de SEO {#assigning-tasks-for-seo-recommendations}
 
-Use o relatório SEO Recommendations para criar tarefas a fim de melhorar a visibilidade da página para mecanismos de pesquisa. Para cada recomendação no relatório que não tem uma marca de seleção, você pode criar uma tarefa atribuída a um usuário para executar o trabalho necessário.
+Use o relatório Recomendações de SEO para criar tarefas para melhorar a visibilidade da página para mecanismos de pesquisa. Para cada recomendação no relatório que não tem uma marca de seleção, você pode criar uma tarefa atribuída a um usuário para executar o trabalho necessário.
 
 ![chlimage_1-129](assets/chlimage_1-129.png)
 

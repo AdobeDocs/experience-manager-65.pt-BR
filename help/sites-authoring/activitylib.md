@@ -9,10 +9,10 @@ docset: aem65
 exl-id: f510ca08-977d-45d5-86af-c4b7634b01ba
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
-source-wordcount: '1937'
+source-wordcount: '1936'
 ht-degree: 75%
 
 ---
@@ -31,7 +31,7 @@ O console Atividades permite criar, organizar e gerenciar as [atividades](/help/
 
 No console Atividades, as atividades são organizadas por marca. Você pode usar marcas e pastas para estruturar a organização de suas atividades. Navegue até o console Atividades tocando/clicando em **Personalização** e em **Atividades**.
 
-As atividades estão disponíveis no modo Direcionar para a [criação de conteúdo direcionado](/help/sites-authoring/content-targeting-touch.md), onde você também pode criar atividades. As atividades criadas no modo Direcionamento são exibidas no console Atividades.
+As atividades estão disponíveis no modo Direcionamento para a [criação de conteúdo direcionado](/help/sites-authoring/content-targeting-touch.md), onde você também pode criar atividades. As atividades criadas no modo Direcionamento são exibidas no console Atividades.
 
 As atividades são exibidas com um rótulo descrevendo que tipo de atividade foi definida:
 
@@ -45,15 +45,15 @@ As atividades são exibidas com um rótulo descrevendo que tipo de atividade foi
 >
 >Os tipos de atividades disponíveis são determinados pelo seguinte:
 >
->* Se a opção **xt_only** estiver habilitada no locatário do Adobe Target (clientcode) usado no lado do AEM para se conectar ao Adobe Target AEM, você poderá criar atividades de XT **somente** no.
+>* Se a opção **xt_only** estiver habilitada no locatário do Adobe Target (clientcode) usado no AEM para se conectar ao Adobe Target, você poderá criar atividades de XT **somente** no AEM.
 >
->* Se as opções **xt_only** estiverem **not** habilitadas no locatário do Adobe Target (clientcode), você poderá criar **ambas** atividades XT e A/B no AEM.
+>* Se as opções **xt_only** estiverem **not** habilitadas no locatário do Adobe Target (clientcode), você poderá criar **atividades XT e A/B** no AEM.
 >
->**Observação adicional:** as opções **xt_only** são uma configuração aplicada a um determinado locatário do Target (clientcode) e só podem ser modificadas diretamente no Adobe Target. Não é possível ativar ou desativar essa opção no AEM.
+>**Observação adicional:** as opções **xt_only** são uma configuração aplicada a um determinado locatário do Target (clientcode) e só podem ser modificadas diretamente no Adobe Target. Não é possível habilitar ou desabilitar essa opção no AEM.
 
 >[!CAUTION]
 >
->Proteja o nó de configurações de atividade **cq:ActivitySettings** na instância de publicação para que não possa ser acessado por usuários normais. O nó de configurações de atividade só deve estar acessível ao serviço que lida com a sincronização de atividades com o Adobe Target.
+>Proteja o nó de configurações de atividade **cq:ActivitySettings** na instância de publicação para que ele fique inacessível aos usuários normais. O nó de configurações de atividade só deve estar acessível ao serviço que lida com a sincronização de atividades com o Adobe Target.
 >
 >Consulte [Pré-requisitos para integração com o Adobe Target](/help/sites-administering/target-requirements.md#securingtheactivitysettings) para obter informações detalhadas.
 
@@ -77,16 +77,16 @@ Ao criar uma marca usando o console Atividades, ela também aparece no [console 
 Adicione uma atividade ou edite uma atividade já existente para concentrar seus esforços de marketing em públicos-alvo específicos. Ao criar/editar uma atividade, especifique as seguintes informações:
 
 * **Nome:** o nome da atividade.
-* **Mecanismo de definição de metas:** o [AEM](/help/sites-authoring/personalization.md#aem) ou o [Adobe Target](/help/sites-authoring/personalization.md#adobe-target) como mecanismo de conteúdo direcionado.
+* **Mecanismo de direcionamento:** o [AEM](/help/sites-authoring/personalization.md#aem) ou o [Adobe Target](/help/sites-authoring/personalization.md#adobe-target) como mecanismo de conteúdo direcionado.
 
 * **Selecionar uma configuração de destino:** (somente no Adobe Target) a configuração em nuvem que essa atividade deve usar para se conectar ao Adobe Target. Essa opção aparece somente quando o Adobe Target é selecionado para o Mecanismo de direcionamento.
-* **Tipo de atividade: &#x200B;** o tipo de atividade — teste A/B ou direcionamento de experiência
+* **Tipo de atividade: **o tipo de atividade — teste A/B ou direcionamento de experiência
 * **Objetivo:** (opcional) uma descrição da atividade.
 * **Experiências:** mapeamentos entre os nomes de público-alvo e os segmentos de marketing que você está direcionando.
 * **Porcentagens de tráfego:** se o teste A/B for selecionado, você poderá alterar a quantidade de tráfego (em porcentagem) de cada experiência.
 * **Duração:** o período em que a atividade é aplicada.
 * **Prioridade**: a prioridade relativa da atividade. Quando as atividades fornecem conteúdo para os mesmos segmentos de usuários, a atividade de maior prioridade é priorizada.
-* **Métrica de meta:** se o Adobe Target for selecionado como o mecanismo de definição de metas, você poderá adicionar métricas de sucesso à atividade. É necessária uma métrica de sucesso.
+* **Métrica de meta:** se o Adobe Target for selecionado como o mecanismo de direcionamento, você poderá adicionar métricas de sucesso à atividade. É necessária uma métrica de sucesso.
 
 >[!NOTE]
 >
@@ -108,7 +108,7 @@ Para adicionar uma atividade:
 1. Adicione uma ou mais experiências à atividade. Clique em **Adicionar experiência**.
 1. Se estiver usando o direcionamento do AEM ou o direcionamento de experiência do Adobe Target:
 
-   1. Clique em **Selecionar público-alvo &#x200B;** e selecione o segmento ao qual a sua experiência está direcionado.
+   1. Clique em **Selecionar público-alvo **e selecione o segmento ao qual a sua experiência está direcionado.
    1. Clique em **Adicionar experiência**, digite um nome e clique em **OK**.
 
    1. Clique em **Avançar**.
@@ -154,13 +154,13 @@ Para publicar ou desfazer a publicação de atividades:
 
    ![captura de tela_2019-03-05at123846](assets/screen-shot_2019-03-05at123846.png)
 
-1. Para publicar, clique em **Publish**. Para desfazer a publicação, clique em **Desfazer publicação**. Sua atividade ou atividades serão publicadas ou desfarão a publicação, e o status é alterado no console Atividades (pode ser necessário atualizar a página).
+1. Para publicar, clique em **Publicar**. Para desfazer a publicação, clique em **Desfazer publicação**. Sua atividade ou atividades serão publicadas ou desfarão a publicação, e o status é alterado no console Atividades (pode ser necessário atualizar a página).
 
 ## Atividades em instâncias de Autor e de Publicação {#activities-on-author-and-publish-instances}
 
 Quando uma atividade que usa o mecanismo direcionado do Adobe Target é ativada, uma segunda atividade é criada na instância de publicação:
 
-* A atividade na instância do autor rastreia a atividade na instância do autor e é útil para simular a experiência do visitante. A análise gravada para essa atividade reflete somente o que ocorre na instância do autor.
+* A atividade na instância de criação rastreia a atividade na instância de criação e é útil para simular a experiência do visitante. A análise gravada para essa atividade reflete somente o que ocorre na instância de criação.
 * A atividade na instância de publicação reflete e responde à atividade no servidor de publicação. Esta é a atividade executada no site público. Somente a atividade de publicação é relevante para rastrear e analisar o uso do site público real.
 
 ## Visualização de desempenho e conversão de experiências vencedoras (teste A/B) {#viewing-performance-and-converting-winning-experiences-a-b-test}
@@ -201,7 +201,7 @@ Essas condições se aplicam às atividades nas instâncias de autor e publicaç
 Quando uma atividade é sincronizada, uma campanha correspondente é criada no Adobe Target:
 
 * As atividades na instância de publicação têm o mesmo nome que a campanha correspondente do Adobe Target.
-* As atividades na instância do autor correspondem às campanhas do Target com o mesmo nome, mais o sufixo `_author`.
+* As atividades na instância de criação correspondem às campanhas do Target com o mesmo nome, mais o sufixo `_author`.
 
 ![chlimage_1-117](assets/chlimage_1-117.png)
 

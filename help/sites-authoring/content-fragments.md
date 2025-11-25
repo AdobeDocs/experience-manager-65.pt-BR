@@ -1,6 +1,6 @@
 ---
 title: Criação de página de conteúdo com fragmentos de conteúdo
-description: Fragmentos de conteúdo AEM permitem projetar, criar, preparar e usar conteúdo independente de página.
+description: Os fragmentos de conteúdo do AEM permitem projetar, criar, preparar e usar conteúdo independente de página.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
@@ -9,8 +9,8 @@ docset: aem65
 exl-id: d5dad844-80ca-4ace-a082-38d892d9ffe2
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Content Fragments
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '1138'
 ht-degree: 63%

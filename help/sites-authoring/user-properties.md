@@ -1,5 +1,5 @@
 ---
-title: Configurar o ambiente da sua conta
+title: 'Configurar o ambiente da sua conta  '
 description: O AEM fornece a capacidade de configurar a sua conta e determinados aspectos do ambiente de criação
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,8 +9,8 @@ docset: aem65
 exl-id: 6079431d-7d08-4973-8bb4-a8d10626a795
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '521'
 ht-degree: 63%
@@ -71,7 +71,7 @@ Cada usuário pode definir determinadas propriedades para si mesmo.
 
 * **Mostrar ações do desktop para Ativos**
 
-  Essa opção requer um aplicativo de desktop AEM para uso.
+  Esta opção requer um aplicativo de desktop AEM para uso.
 
 * **Cor da anotação**
 
@@ -110,7 +110,7 @@ Cada usuário pode definir determinadas propriedades para si mesmo.
 
   Esta opção habilita a criação de página baseada na [interface clássica](/help/sites-classic-ui-authoring/classic-page-author-first-steps.md). Por padrão, a interface do usuário é usada.
 
-* **Ativar a Página inicial dos ativos**
+* **Habilitar a Página inicial dos ativos**
 
   Essa opção só estará disponível se o administrador do sistema tiver ativado a experiência da Página inicial da Assets para toda a organização.
 

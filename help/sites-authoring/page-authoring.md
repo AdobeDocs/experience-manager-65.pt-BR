@@ -4,8 +4,8 @@ description: As tarefas envolvidas na criação de uma página de conteúdo no A
 exl-id: 07528cf0-e67a-46b5-a3b2-d1b74ad2228f
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Criação de páginas{#authoring-pages}
 
-Os itens a seguir fornecem dois tipos de visão geral para a criação com AEM:
+Os itens a seguir fornecem dois tipos de visão geral para criação com o AEM:
 
 * [Primeiras etapas para autores](/help/sites-authoring/first-steps.md) - uma introdução para novos autores
 
@@ -50,4 +50,4 @@ Um clique duplo único ou lento revelará a barra de ferramentas apropriada (ún
 Isso fornece um sistema de parágrafo que permite posicionar componentes em uma grade responsiva.
 
 * **Pesquisar enquanto você digita**
-Em determinados cenários (por exemplo, seleção de caminho em caixas de diálogo de edição), a pesquisa de conteúdo por meio da interface AEM apresenta correspondências dinâmicas à medida que você digita a consulta.
+Em determinados cenários (por exemplo, seleção de caminho em caixas de diálogo de edição), a pesquisa de conteúdo por meio da interface do AEM apresenta correspondências dinâmicas à medida que você digita a consulta.

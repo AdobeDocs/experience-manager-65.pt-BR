@@ -4,15 +4,15 @@ description: Conceitos de criação e publicação no Adobe Experience Manager 6
 exl-id: dcda537a-1bb2-4ce3-9904-40d158b47556
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '547'
 ht-degree: 28%
 
 ---
 
-# Criação  {#authoring}
+# Criação{#authoring}
 
 ## Conceito de criação (e publicação) {#concept-of-authoring-and-publishing}
 
@@ -30,7 +30,7 @@ O ambiente de criação oferece os mecanismos para criação, atualização e an
 
 ![Visão Geral dos Ambientes](assets/chlimage_1-132.png)
 
-No ambiente de criação, a funcionalidade do AEM é disponibilizada por meio de duas interfaces do usuário. No ambiente de publicação, você projeta toda a aparência da interface disponibilizada aos usuários.
+No ambiente de criação, a funcionalidade do AEM é disponibilizada por meio de duas interfaces. No ambiente de publicação, você projeta toda a aparência da interface disponibilizada aos usuários.
 
 ### Ambiente de criação {#author-environment}
 
@@ -58,15 +58,15 @@ Além disso, há tarefas administrativas que ajudam a gerenciar o conteúdo:
 
 >[!NOTE]
 >
->O AEM também é [administrado](/help/sites-administering/home.md) (para a maioria das tarefas) do ambiente do autor.
+>O AEM também é [administrado](/help/sites-administering/home.md) (para a maioria das tarefas) do ambiente de criação.
 
 #### Ambiente de publicação {#publish-environment}
 
-Quando pronto, o conteúdo do site AEM é publicado no **ambiente de publicação**. Aqui, as páginas do site são disponibilizadas para o público desejado de acordo com a aparência da interface projetada.
+Quando pronto, o conteúdo do site do AEM é publicado no **ambiente de publicação**. Aqui, as páginas do site são disponibilizadas para o público-alvo desejado de acordo com a aparência da interface projetada.
 
 Normalmente, o ambiente de publicação está localizado dentro da zona desmilitarizada; em outras palavras, disponível para a Internet, mas não mais sob a proteção total da rede interna.
 
-Quando o site AEM é um [site da comunidade](/help/communities/overview.md) ou inclui [componentes das Comunidades](/help/communities/author-communities.md), os visitantes (membros) do site conectados podem interagir com os recursos das Comunidades. Por exemplo, eles podem postar em um fórum, postar um comentário ou seguir outros membros. Os membros podem receber permissão para realizar atividades normalmente limitadas ao ambiente de criação, como criar novas páginas (grupos da comunidade), artigos de blog e moderar as publicações de outros membros.
+Quando o site do AEM é um [site da comunidade](/help/communities/overview.md) ou inclui [componentes das Comunidades](/help/communities/author-communities.md), os visitantes (membros) do site conectados podem interagir com os recursos das Comunidades. Por exemplo, eles podem postar em um fórum, postar um comentário ou seguir outros membros. Os membros podem receber permissão para realizar atividades normalmente limitadas ao ambiente de criação, como criar novas páginas (grupos da comunidade), artigos de blog e moderar as publicações de outros membros.
 
 >[!NOTE]
 >

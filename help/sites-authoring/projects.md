@@ -4,8 +4,8 @@ description: Os projetos permitem agrupar recursos em uma entidade cujo ambiente
 exl-id: 632c0608-2ab8-4a5b-8251-cd747535449b
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Projects
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '1360'
 ht-degree: 26%
@@ -15,7 +15,7 @@ ht-degree: 26%
 
 # Projetos {#projects}
 
-Os projetos permitem agrupar recursos em uma entidade. Um ambiente comum e compartilhado facilita o gerenciamento de projetos. Os tipos de recursos que podem ser associados a um projeto são chamados no AEM de Blocos. Blocos podem incluir informações do projeto e da equipe, ativos, workflows e outros tipos de informações, conforme descrito detalhadamente em [Blocos de projeto.](#project-tiles)
+Os projetos permitem agrupar recursos em uma entidade. Um ambiente comum e compartilhado facilita o gerenciamento de projetos. Os tipos de recursos que podem ser associados a um projeto são chamados no AEM de Blocos. Blocos podem incluir informações do projeto e da equipe, ativos, fluxos de trabalho e outros tipos de informações, conforme descrito detalhadamente em [Blocos de projeto.](#project-tiles)
 
 Como usuário, você pode:
 
@@ -25,7 +25,7 @@ Como usuário, você pode:
 
 ## Requisitos de acesso {#access-requirements}
 
-Projeta um recurso AEM padrão e não requer nenhuma configuração adicional.
+Projeta um recurso padrão do AEM e não requer configuração adicional.
 
 No entanto, para que os usuários em projetos possam ver outros usuários/grupos enquanto usam Projetos, como ao criar projetos, criar tarefas/fluxos de trabalho ou exibir e gerenciar a equipe, eles precisam ter acesso de leitura a `/home/users` e `/home/groups`.
 
@@ -140,7 +140,7 @@ O bloco **Informações do Projeto** fornece informações gerais sobre o projet
 
 ![Bloco de informações do projeto](assets/project-tile-info.png)
 
-### Tarefa de tradução {#translation-job}
+### Trabalho de tradução {#translation-job}
 
 O bloco **Trabalho de Tradução** é onde você inicia uma tradução e também onde você vê o status das suas traduções.
 
@@ -196,12 +196,12 @@ O bloco Tarefas permite monitorar o status de qualquer tarefa relacionada ao pro
 
 ## Modelos de projeto {#project-templates}
 
-Os modelos servem como base para iniciar o projeto. O AEM fornece esses modelos de projeto padrão.
+Os modelos servem como base para iniciar o projeto. A AEM fornece esses modelos de projeto padrão.
 
 * **Projeto de mídia** - Este é um projeto de exemplo de referência para atividades de mídia. Ele inclui várias funções de projeto relacionadas à mídia e também fluxos de trabalho relacionados ao conteúdo de mídia.
 * **[Projeto de sessão fotográfica do produto](/help/sites-authoring/managing-product-information.md)** - Esta é uma amostra de referência para o gerenciamento de fotografias de produtos relacionadas a comércio eletrônico.
 * **[Projeto de tradução](/help/sites-administering/translation.md)** - Esta é uma amostra de referência para o gerenciamento de atividades relacionadas a tradução. Ele inclui funções básicas e fluxos de trabalho para gerenciar a tradução.
-* **Projeto simples** - Esta é uma amostra de referência para qualquer projeto que não se encaixe em outras categorias. Ele inclui três funções básicas e quatro fluxos de trabalho gerais de AEM.
+* **Projeto simples** - Esta é uma amostra de referência para qualquer projeto que não se encaixe em outras categorias. Ele inclui três funções básicas e quatro fluxos de trabalho gerais do AEM.
 
 Com base no modelo selecionado, você tem opções diferentes disponíveis no projeto, como as funções de usuário e os fluxos de trabalho fornecidos.
 
@@ -237,4 +237,4 @@ Para obter mais detalhes sobre o uso de projetos, consulte os seguintes document
 * [Gerenciamento de projetos](/help/sites-authoring/touch-ui-managing-projects.md)
 * [Trabalhar com tarefas](/help/sites-authoring/task-content.md)
 * [Trabalhar com fluxos de trabalho de projeto](/help/sites-authoring/projects-with-workflows.md)
-* [Integração do Creative Project e do PIM](/help/sites-authoring/managing-product-information.md)
+* [Integração do Projeto Creative e do PIM](/help/sites-authoring/managing-product-information.md)

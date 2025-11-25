@@ -8,8 +8,8 @@ topic-tags: personalization
 exl-id: 61a5875f-ad09-4971-a886-b0d88e0c9967
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Integration
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 46%
@@ -59,7 +59,7 @@ Ao discutir segmentação, a seguinte terminologia é usada:
 * Receita
 * Tamanho da família
 * Estado civil
-* Sexo
+* Gênero
 * Local
 
 **Características derivadas** - Algumas características demográficas são difíceis de determinar sem registro, mas podem ser derivadas pela combinação de características comportamentais e demográficas.

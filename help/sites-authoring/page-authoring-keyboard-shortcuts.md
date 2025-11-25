@@ -8,8 +8,8 @@ content-type: reference
 exl-id: f4ca5c11-e3ff-4da5-bc4a-fd7e0aefffb5
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '220'
 ht-degree: 52%
@@ -42,7 +42,7 @@ Vários atalhos de teclado estão disponíveis em todo o AEM. Alguns são aplic�
 
 >[!NOTE]
 >
->&ast; Assim que o usuário começa a interagir com a página no Modo de visualização, o atalho `Ctrl-Shift-m` não fica mais disponível. O usuário deve clicar na barra superior do editor ou voltar para o modo Editar para que o atalho fique disponível novamente.
+>&amp;ast; Assim que o usuário começa a interagir com a página no Modo de visualização, o atalho `Ctrl-Shift-m` não fica mais disponível. O usuário deve clicar na barra superior do editor ou voltar para o modo Editar para que o atalho fique disponível novamente.
 
 Vários atalhos de teclado também estão disponíveis para os usuários de desktop ao usar os [consoles](/help/sites-authoring/keyboard-shortcuts.md).
 

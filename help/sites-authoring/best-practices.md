@@ -1,5 +1,5 @@
 ---
-title: Práticas recomendadas para usar a criação de AEM
+title: Práticas recomendadas para usar a criação no AEM
 description: Como usar o AEM da maneira mais eficiente e eficaz possível.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -8,8 +8,8 @@ content-type: reference
 exl-id: 9994c63b-65ca-4974-a48d-992f5f8f3f01
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '291'
 ht-degree: 4%
@@ -36,7 +36,7 @@ Os documentos específicos são descritos e vinculados nas tabelas seguintes.
 
 ## Ativos {#assets}
 
-As práticas recomendadas relacionadas ao Assets, incluindo o recurso Dynamic Media e a integração do Dynamic Media Classic, estão descritas nos seguintes tópicos:
+As práticas recomendadas do Assets, incluindo o recurso Dynamic Media e a integração do Dynamic Media Classic, estão descritas nos seguintes tópicos:
 
 <table>
  <tbody>
@@ -58,7 +58,7 @@ As práticas recomendadas relacionadas ao Assets, incluindo o recurso Dynamic Me
   <tr>
    <td>Assets multilíngue</td>
    <td><a href="/help/assets/best-practices-for-translating-assets-efficiently.md">Práticas recomendadas de tradução</a></td>
-   <td>Descreve as práticas recomendadas para traduzir ativos AEM com eficiência.</td>
+   <td>Descreve as práticas recomendadas para a tradução eficiente de ativos do AEM.</td>
   </tr>
  </tbody>
 </table>
@@ -77,4 +77,4 @@ O gerenciamento e a criação do conteúdo do seu site têm algumas práticas re
 |  |  |  |
 |---|---|---|
 | Formulários adaptáveis | [Práticas recomendadas para trabalhar com formulários adaptáveis](/help/forms/using/adaptive-forms-best-practices.md) | Descreve as práticas recomendadas para configurar, criar e personalizar formulários adaptáveis. |
-| formulários HTML5 | [Práticas recomendadas para criar formulários HTML5](/help/forms/using/best-practices-for-html5-forms.md) | Descreve as práticas recomendadas para trabalhar no layout e design de formulários HTML5. |
+| Formulários HTML5 | [Práticas recomendadas para criar formulários HTML5](/help/forms/using/best-practices-for-html5-forms.md) | Descreve as práticas recomendadas para trabalhar no layout e no design dos formulários HTML5. |

@@ -7,10 +7,10 @@ topic-tags: site-features
 exl-id: 1772368a-f5c9-440c-a92a-0f1d34cc4bf8
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
-source-wordcount: '1297'
+source-wordcount: '1296'
 ht-degree: 83%
 
 ---
@@ -125,11 +125,11 @@ Para que um componente funcione com o Sistema de estilos do AEM e mostre a guia 
 * `path = "/mnt/overlay/cq/gui/components/authoring/dialog/style/tab_design/styletab"`
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
-Com o componente configurado, os estilos configurados pelos autores da página serão inseridos automaticamente pelo AEM no elemento de decoração que AEM envolve automaticamente cada componente editável. O componente em si não precisa fazer mais nada para que isso aconteça.
+Com o componente configurado, os estilos configurados pelos autores da página serão inseridos automaticamente pelo AEM no elemento de decoração que o AEM envolve automaticamente cada componente editável. O componente em si não precisa fazer mais nada para que isso aconteça.
 
 ### Habilitar a guia Estilos na caixa de diálogo Editar {#enable-styles-tab-edit}
 
-A partir do AEM versão 6.5.3.0, uma guia Estilos opcional na caixa de diálogo Editar agora está disponível. Diferentemente da guia Design, a guia Editar não é essencial para o funcionamento do sistema de estilos, mas é uma interface alternativa e opcional para um autor de conteúdo definir estilos.
+A partir da versão 6.5.3.0 do AEM, uma guia Estilos opcional na Caixa de Diálogo de Edição agora está disponível. Diferentemente da guia Design, a guia Editar não é essencial para o funcionamento do sistema de estilos, mas é uma interface alternativa e opcional para um autor de conteúdo definir estilos.
 
 A guia Editar pode ser incluída de maneira semelhante na guia Design:
 

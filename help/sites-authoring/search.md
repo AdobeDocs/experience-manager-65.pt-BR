@@ -9,8 +9,8 @@ docset: aem65
 exl-id: dd65b308-c449-4f64-9f46-0797b922910f
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '517'
 ht-degree: 57%
@@ -23,7 +23,7 @@ O ambiente de criação do AEM fornece vários mecanismos de pesquisa de conteú
 
 >[!NOTE]
 >
->Fora do ambiente de criação, outros mecanismos também estão disponíveis para pesquisa, como o [Construtor de consultas](/help/sites-developing/querybuilder-api.md) e o [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
+>Fora do ambiente de criação, outros mecanismos também estão disponíveis para pesquisa, como o [Construtor de Consultas](/help/sites-developing/querybuilder-api.md) e o [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
 
 ## Noções básicas de pesquisa {#search-basics}
 
@@ -71,7 +71,7 @@ Para pesquisar e filtrar os recursos:
    * Pesquisas salvas
    * Diretório de pesquisa
    * Tags
-   * Critérios de pesquisa; por exemplo, Datas modificadas, Status do Publish, Status da Live Copy.
+   * Critérios de pesquisa; por exemplo, Datas modificadas, Status de publicação, Status da Live Copy.
 
    >[!NOTE]
    >
@@ -80,7 +80,7 @@ Para pesquisar e filtrar os recursos:
    >
    >
    >    * Dependendo do tipo de recurso selecionado; por exemplo, os critérios de Ativos e comunidades são compreensivelmente especializados.
-   >    * Sua instância como o [Forms de Pesquisa](/help/sites-administering/search-forms.md) pode ser personalizada (adequada ao local dentro do AEM).
+   >    * Sua instância como o [Forms de Pesquisa](/help/sites-administering/search-forms.md) pode ser personalizada (adequada ao local no AEM).
    >
    >
 

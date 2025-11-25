@@ -8,8 +8,8 @@ topic-tags: site-features
 exl-id: e3488c9d-035f-4165-ad32-21103ec7e581
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '151'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Andaime{#scaffolding}
 
-Às vezes, pode ser necessário criar um grande conjunto de páginas que compartilham a mesma estrutura, mas têm conteúdo diferente. Por meio da interface AEM padrão, seria necessário criar cada página, arrastar os componentes apropriados para a página e preencher cada um deles individualmente.
+Às vezes, pode ser necessário criar um grande conjunto de páginas que compartilham a mesma estrutura, mas têm conteúdo diferente. Por meio da interface padrão do AEM, seria necessário criar cada página, arrastar os componentes apropriados para a página e preencher cada um deles individualmente.
 
 Com o andaime, você pode criar um formulário (um andaime) com campos que refletem a estrutura desejada para as páginas e, em seguida, usar este formulário para criar facilmente páginas com base nessa estrutura.
 

@@ -8,10 +8,10 @@ topic-tags: site-features
 exl-id: 554b10c2-6157-4821-a6a7-f2fb6666cdff
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Integration
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '640'
 ht-degree: 4%
 
 ---
@@ -74,7 +74,7 @@ Os membros do grupo de usuários de administradores de análises podem configura
 
 ### Abrindo insights de conteúdo em sites {#opening-content-insights-from-sites}
 
-Abra o [Content Insight](/help/sites-authoring/content-insights.md) do console Sites para investigar mais a eficácia da página.
+Abra o [Insight de Conteúdo](/help/sites-authoring/content-insights.md) no console de Sites para investigar mais a eficácia da página.
 
 1. No console do Sites, selecione a página da qual deseja ver os Insights de conteúdo.
 1. Na barra de ferramentas, clique no ícone Analytics e Recommendations.
@@ -91,13 +91,13 @@ Abra o [Content Insight](/help/sites-authoring/content-insights.md) do console S
 >
 >Os dados da Activity Map são obtidos do Adobe Analytics.
 
-Quando seu site tiver sido [configurado para Adobe Analytics](/help/sites-administering/adobeanalytics-connect.md), você poderá usar o [Activity Map de modo](/help/sites-authoring/author-environment-tools.md#page-modes) para exibir dados relevantes. Por exemplo:
+Quando seu site tiver sido [configurado para o Adobe Analytics](/help/sites-administering/adobeanalytics-connect.md), você poderá usar o [modo Activity Map](/help/sites-authoring/author-environment-tools.md#page-modes) para exibir dados relevantes. Por exemplo:
 
 ![aa-07](assets/aa-07.png)
 
-### Acessar o Activity Map {#accessing-the-activity-map}
+### Acesso ao Activity Map {#accessing-the-activity-map}
 
-Após selecionar o modo [Activity Map](/help/sites-authoring/author-environment-tools.md#page-modes), você será solicitado a inserir suas credenciais do Adobe Analytics.
+Depois de selecionar o modo [Activity Map](/help/sites-authoring/author-environment-tools.md#page-modes), você será solicitado a inserir suas credenciais do Adobe Analytics.
 
 ![aa-03](assets/aa-03.png)
 
@@ -105,7 +105,7 @@ A barra de ferramentas flutuante do **Analytics** é exibida; aqui você pode:
 
 * alterar o formato da barra de ferramentas usando as setas duplas (**>>**)
 * Alternar Detalhes da página (ícone de olho)
-* Defina as configurações de Activity Map ( ícone cog)
+* Definir as configurações do Activity Map ( ícone de cog)
 * Selecione a análise que será exibida (vários seletores suspensos)
 * Saia do Activity Map e feche a barra de ferramentas (x)
 
@@ -127,11 +127,11 @@ Você pode selecionar os dados analíticos a serem mostrados e como eles devem s
 
 ### Configuração do Activity Map {#configuring-the-activity-map}
 
-Use o ícone **Mostrar Configurações** para abrir a caixa de diálogo **Configurações de Activity Map**.
+Use o ícone **Mostrar Configurações** para abrir a caixa de diálogo **Configurações do Activity Map**.
 
 ![aa-04-1](assets/aa-04-1.png)
 
-A caixa de diálogo **Configurações de Activity Map** fornece um intervalo de opções em três guias:
+A caixa de diálogo **Configurações do Activity Map** fornece um intervalo de opções em três guias:
 
 ![aa-06](assets/aa-06.png)
 
@@ -152,7 +152,7 @@ A caixa de diálogo **Configurações de Activity Map** fornece um intervalo de 
    * Exibição (tipo e número de links)
    * Ocultar as sobreposições para links que não receberam visitas
 
-* Em tempo real
+* Ativo
 
    * Exibir os principais (ganhadores ou perdedores)
    * Excluir % inferior

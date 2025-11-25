@@ -4,8 +4,8 @@ description: Configuração de componentes do Adobe Experience Manager no modo d
 exl-id: 5e232886-75c1-4f0f-b359-4739ae035fd3
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '905'
 ht-degree: 10%
@@ -14,7 +14,7 @@ ht-degree: 10%
 
 # Configuração de componentes padrão no modo de design{#configuring-components-in-design-mode}
 
-Quando a instância do AEM é instalada imediatamente, uma seleção de componentes é disponibilizada imediatamente no navegador de componentes.
+Quando a instância do AEM é instalada pronta para uso, uma seleção de componentes é disponibilizada imediatamente no navegador de componentes.
 
 Além desses, vários outros componentes também estão disponíveis. Você pode usar o modo Design para [habilitar/desabilitar esses componentes](#enable-disable-components). Quando habilitado e localizado na sua página, você pode usar o modo de Design para [configurar aspectos do design do componente](#configuring-the-design-of-a-component) editando os parâmetros do atributo.
 

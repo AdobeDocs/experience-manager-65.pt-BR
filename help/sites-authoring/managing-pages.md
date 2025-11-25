@@ -4,8 +4,8 @@ description: Saiba como criar e gerenciar páginas com o Adobe Experience Manage
 exl-id: 74576e51-4b4e-464e-a0b8-0fae748a505d
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 383192083ec84176f67882a869550374f6074eef
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '2476'
 ht-degree: 62%
@@ -148,7 +148,7 @@ Quando você fornece uma página **Nome** ao criar uma página, o AEM [valida o 
 
 No AEM, um modelo especifica um tipo especializado de página. Um modelo é usado como a base para qualquer nova página que está sendo criada.
 
-O modelo define a estrutura de uma página, incluindo uma imagem em miniatura e outras propriedades. Por exemplo, você pode ter modelos separados para páginas de produtos, mapas de site e informações de contato. Os modelos são compostos de [componentes](#components).
+O modelo define a estrutura de uma página, incluindo uma imagem em miniatura e outras propriedades. Por exemplo, você pode ter modelos separados para páginas do produtos, mapas de site e informações de contato. Os modelos são compostos de [componentes](#components).
 
 O AEM vem com vários modelos prontos para uso. Os modelos disponíveis dependem do site individual. Os campos principais são:
 
@@ -160,7 +160,7 @@ O AEM vem com vários modelos prontos para uso. Os modelos disponíveis dependem
 
 >[!NOTE]
 >
->Se configurado na instância,[&#x200B; os autores de modelo poderão criá-los com o Editor de modelo](/help/sites-authoring/templates.md).
+>Se configurado na instância,[ os autores de modelo poderão criá-los com o Editor de modelo](/help/sites-authoring/templates.md).
 
 ### Componentes {#components}
 
@@ -381,8 +381,8 @@ O AEM oferece a funcionalidade de atualizar todos os links internos que se refer
 As ações de movimentação de página são sempre processadas de forma assíncrona, permitindo que o usuário continue a criação na interface do usuário desimpedida.
 
 * O usuário deve definir quando a operação assíncrona deve ser executada
-   * **Agora** a execução do trabalho assíncrono começa imediatamente.
-   * **Mais tarde** permite que o usuário defina quando o trabalho assíncrono será iniciado.
+   * **Agora** a execução do processo assíncrono começa imediatamente.
+   * **Mais tarde** permite que o usuário defina quando o processo assíncrono será iniciado.
 
   ![Mover página assíncrona](assets/asynchronous-page-move.png)
 

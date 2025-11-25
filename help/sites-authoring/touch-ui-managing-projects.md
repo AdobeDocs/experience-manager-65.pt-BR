@@ -8,8 +8,8 @@ content-type: reference
 exl-id: 62586c8e-dab4-4be9-a44a-2c072effe3c0
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '965'
 ht-degree: 18%
@@ -27,7 +27,7 @@ Usando o console, você pode criar um projeto, associar recursos ao projeto e ta
 
 ## Requisitos de acesso {#access-requirements}
 
-Projeta um recurso AEM padrão e não requer nenhuma configuração adicional.
+Projeta um recurso padrão do AEM e não requer configuração adicional.
 
 No entanto, para que os usuários em projetos possam ver outros usuários/grupos enquanto usam Projetos, como ao criar projetos, criar tarefas/fluxos de trabalho ou exibir e gerenciar a equipe, eles precisam ter acesso de leitura a `/home/users` e `/home/groups`.
 
@@ -153,7 +153,7 @@ Siga estas etapas para excluir um projeto.
 1. Navegue até o nível superior do console **Projetos**.
 1. Selecionar o projeto no console.
 1. Clique em **Excluir** na barra de ferramentas.
-1. O AEM pode remover/modificar dados de projetos associados após a exclusão do projeto. Selecione quais opções são necessárias na caixa de diálogo **Excluir projeto**.
+1. O AEM pode remover/modificar dados de projeto associados ao excluir o projeto. Selecione quais opções são necessárias na caixa de diálogo **Excluir projeto**.
    * Remover os grupos e as funções do projeto
    * Excluir a pasta do Assets do projeto
    * Encerrar fluxos de trabalho do projeto

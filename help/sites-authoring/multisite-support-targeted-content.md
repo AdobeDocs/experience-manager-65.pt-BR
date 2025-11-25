@@ -8,8 +8,8 @@ topic-tags: personalization
 exl-id: 5e345ffd-4e9c-467f-8ebb-c798eeb61dea
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Multi Site Manager
-role: User,Admin,Architect,Developer
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '2838'
 ht-degree: 82%
@@ -43,7 +43,7 @@ A qualquer momento, é possível suspender ou restaurar a herança. Além disso,
 
 O suporte a vários sites para conteúdo direcionado está disponível imediatamente e permite enviar o conteúdo direcionado da página principal que você gerencia através do MSM para uma live copy local ou gerenciar modificações globais e locais desse conteúdo.
 
-Esse gerenciamento é feito em uma **Área**. Áreas separam o conteúdo direcionado (atividades, experiências e ofertas) usado em diferentes sites e fornecem um mecanismo baseado no MSM para criar e gerenciar a herança do conteúdo direcionado junto com a herança do site. Isso evita que você tenha que recriar o conteúdo direcionado em sites herdados, como era necessário no AEM antes do 6.2.
+Esse gerenciamento é feito em uma **Área**. Áreas separam o conteúdo direcionado (atividades, experiências e ofertas) usado em diferentes sites e fornecem um mecanismo baseado no MSM para criar e gerenciar a herança do conteúdo direcionado junto com a herança do site. Isso evita que você tenha que recriar o conteúdo direcionado em sites herdados, como era necessário no AEM antes da versão 6.2.
 
 Em uma área, somente as atividades vinculadas a ela são enviadas para live copies. Por padrão, a Área principal é selecionada. Após criar áreas adicionais, é possível vinculá-las aos seus sites ou páginas para indicar qual conteúdo direcionado é enviado.
 

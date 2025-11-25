@@ -8,8 +8,8 @@ content-type: reference
 exl-id: de1ae7e3-db3a-4b5e-8a4f-ae111227181f
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '633'
 ht-degree: 31%
@@ -85,7 +85,7 @@ O modo Anotar permite criar, editar, mover ou excluir anotações do seu conteú
 
      O cursor se transformará em um fio cruzado ao criar um rascunho. Você pode desenhar várias linhas distintas. A linha de rascunho reflete a cor da anotação e pode ser uma seta, círculo ou forma oval.
 
-     ![Sketch](do-not-localize/screen_shot_2018-03-22at110640.png)
+     ![Esboço](do-not-localize/screen_shot_2018-03-22at110640.png)
 
    * Escolher/alterar a cor:
 

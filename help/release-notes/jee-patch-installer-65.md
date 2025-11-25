@@ -7,8 +7,8 @@ hide: true
 hidefromtoc: true
 solution: Experience Manager
 feature: Release Information
-role: User,Admin,Architect,Developer
-source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '562'
 ht-degree: 17%
@@ -19,7 +19,7 @@ ht-degree: 17%
 
 >[!NOTE]
 >
->[Contate o Suporte](https://experienceleague.adobe.com/pt-br?support-solution=General&support-tab=home#support) para obter mais informações ou obter o patch.
+>[Contate o Suporte](https://experienceleague.adobe.com/?support-solution=General&support-tab=home#support) para obter mais informações ou obter o patch.
 
 ## Sobre o instalador de patch {#about-the-patch-installer}
 
@@ -50,7 +50,7 @@ Navegue até o diretório apropriado e, em um prompt de comando, digite `./aem65
    Isso inicia um assistente de instalação que o guiará durante a instalação.
 
 1. No painel de Introdução, clique em **[!UICONTROL Próximo]**.
-1. Na tela **Escolher Pasta de Instalação**, verifique se o local padrão exibido está correto para sua instalação existente ou clique em **[!UICONTROL Procurar]** para selecionar a pasta alternativa em que os formulários AEM estão instalados e clique em **[!UICONTROL Avançar]**.
+1. Na tela **Escolher Pasta de Instalação**, verifique se o local padrão exibido está correto para sua instalação existente ou clique em **[!UICONTROL Procurar]** para selecionar a pasta alternativa em que o AEM Forms está instalado e clique em **[!UICONTROL Avançar]**.
 1. Leia as informações no Resumo de correção rápida e clique em **[!UICONTROL Próximo]**.
 1. Leia as informações no Resumo de pré-instalação e clique em **[!UICONTROL Instalar]**.
 1. Quando a instalação estiver concluída, clique em **[!UICONTROL Próximo]** para aplicar as atualizações de correção rápida aos arquivos instalados.
@@ -58,7 +58,7 @@ Navegue até o diretório apropriado e, em um prompt de comando, digite `./aem65
 1. **[Somente para Windows]:** Faça o seguinte:
    * Desmarque a opção **Iniciar Gerenciador de Configurações** antes de clicar em **[!UICONTROL Concluído]**. Execute o **Configuration Manager** usando o arquivo **ConfigurationManager.bat** em `[aem-forms root]\configurationManager\bin`.
 
-   * Ou desmarque a opção **Iniciar Gerenciador de Configurações** antes de clicar em **[!UICONTROL Concluído]**. Antes de executar o **Configuration Manager** usando o **ConfigurationManager.exe** ou o **ConfigurationManager_IPv6.exe**, navegue até o diretório *`<AEMForms_Install_Dir>\configurationManager\bin`* e substitua os arquivos **ConfigurationManager.lax** e **ConfigurationManager_IPV6.lax** pelos arquivos [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) e [ConfigurationManager_IPV6.lax](/help/assets/ConfigurationManager_IPv6.lax) mais recentes, pesquise e substitua o **axis-1.4.1.1.1 .jar** com **axis-1.4.1.2.jar** nesses dois arquivos.
+   * Ou desmarque a opção **Iniciar Gerenciador de Configurações** antes de clicar em **[!UICONTROL Concluído]**. Antes de executar o **Configuration Manager** usando o **ConfigurationManager.exe** ou o **ConfigurationManager_IPv6.exe**, navegue até o diretório *`<AEMForms_Install_Dir>\configurationManager\bin`* e substitua os arquivos **ConfigurationManager.lax** e **ConfigurationManager_IPV6.lax** mais recentes por [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) e [ConfigurationManager_IPV6.lax](/help/assets/ConfigurationManager_IPv6.lax), Pesquise e substitua **axis-1.4.1.1.jar** com **axis-1.4.1.2.jar** nesses dois arquivos.
 
    >[!NOTE]
    >
@@ -69,14 +69,14 @@ Navegue até o diretório apropriado e, em um prompt de comando, digite `./aem65
 
    * A caixa de seleção **Iniciar Configuration Manager** está selecionada por padrão. Clique em **[!UICONTROL Concluído]** para executar o Gerenciador de Configurações instantaneamente ou para executar o **Gerenciador de Configurações** mais tarde, desmarque a opção **Iniciar Gerenciador de Configurações** antes de clicar em **[!UICONTROL Concluído]**. Você pode iniciar o **Configuration Manager** posteriormente usando o script apropriado no diretório `[AEM_forms_root]/configurationManager/bin`.
 
-1. Dependendo do servidor de aplicativos, escolha um dos seguintes documentos e siga as instruções na seção *Configuração e implantação de formulários AEM*.
+1. Dependendo do servidor de aplicativos, escolha um dos seguintes documentos e siga as instruções na seção *Configuração e implantação do AEM Forms*.
 
-   * [Instalando e implantando formulários AEM para JBoss®](https://www.adobe.com/go/learn_aemforms_installJBoss_65_br)
-   * [Instalando e implantando formulários AEM para WebSphere®](https://www.adobe.com/go/learn_aemforms_installWebSphere_65_br)
+   * [Instalando e implantando formulários AEM para JBoss®](https://www.adobe.com/go/learn_aemforms_installJBoss_65)
+   * [Instalando e implantando formulários AEM para WebSphere®](https://www.adobe.com/go/learn_aemforms_installWebSphere_65)
 
 1. (Somente JBoss®) Após instalar o patch e configurar o servidor, exclua tmp e diretórios de trabalho do servidor de aplicativos JBoss®.
 
-## Post - configurações de implantação {#post-deployment-configurations}
+## Configurações pós-implantação {#post-deployment-configurations}
 
 ### Configurações de SAML {#saml-configurations}
 
@@ -89,7 +89,7 @@ Se você tiver a autenticação SAML configurada e estiver enfrentando problemas
 
 >[!NOTE]
 >
-> É recomendável usar o comando &quot;Ctrl + C&quot; para reiniciar o SDK. Reiniciar o SDK do AEM usando métodos alternativos, por exemplo, parar processos Java, pode levar a inconsistências no ambiente de desenvolvimento do AEM.
+> É recomendável usar o comando &#39;Ctrl + C&#39; para reiniciar o SDK. Reiniciar o AEM SDK usando métodos alternativos, por exemplo, parar processos Java, pode levar a inconsistências no ambiente de desenvolvimento do AEM.
 
 ## Módulos afetados {#impacted-modules}
 
@@ -97,4 +97,4 @@ Se você tiver a autenticação SAML configurada e estiver enfrentando problemas
 * Segurança de documentos
 * Foundation JEE
 
-[Contate o Suporte](https://experienceleague.adobe.com/pt-br?support-solution=General&support-tab=home#support)
+[Contate o Suporte](https://experienceleague.adobe.com/?support-solution=General&support-tab=home#support)

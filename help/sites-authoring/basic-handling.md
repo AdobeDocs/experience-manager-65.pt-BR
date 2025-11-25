@@ -9,8 +9,8 @@ docset: aem65
 exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 25bf0d64b6839afec0112ea8c9fde0510e56ccf4
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '2965'
 ht-degree: 41%
@@ -122,7 +122,7 @@ Em Navegação, os consoles disponíveis são:
   </tr>
   <tr>
    <td>Screens</td>
-   <td>O <a href="https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/authoring/setting-up-projects/creating-a-screens-project.html?lang=pt-BR">Screens</a> permite que você gerencie todas as suas telas direcionadas aos clientes, de qualquer tamanho e local.</td>
+   <td>O <a href="https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/authoring/setting-up-projects/creating-a-screens-project.html">Screens</a> permite que você gerencie todas as suas telas direcionadas aos clientes, de qualquer tamanho e local.</td>
   </tr>
   <tr>
    <td>Sites</td>
@@ -155,7 +155,7 @@ O cabeçalho está sempre presente na parte superior da tela. Embora a maioria d
 
   Você também pode usar a [tecla de atalho](/help/sites-authoring/keyboard-shortcuts.md) `/` (barra) para invocar a pesquisa em qualquer console.
 
-* [Soluções](https://business.adobe.com/br/)
+* [Soluções](https://business.adobe.com/)
 
   ![Soluções](do-not-localize/screen_shot_2018-03-23at103552.png)
 

@@ -4,11 +4,11 @@ description: Usar o AEM para ajudar a tornar o conteúdo da Web acessível e uti
 exl-id: 2145d761-f51d-482b-a0e7-ef7500c4872f
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
-source-wordcount: '13636'
-ht-degree: 82%
+source-wordcount: '13630'
+ht-degree: 81%
 
 ---
 
@@ -191,7 +191,7 @@ As legendas podem ser:
 
 Use legendas ocultas sempre que possível, pois elas oferecem ao usuário a opção de visualizar legendas. 
 
-Para as legendas ocultas, crie e forneça um arquivo de legenda sincronizada em um formato apropriado (como [SMIL](https://www.w3.org/AudioVideo/)), junto com o arquivo de vídeo (os detalhes sobre como proceder estão fora do escopo desse guia, mas fornecemos links para alguns tutoriais em [Mais informações - Legendas (pré-gravadas) (1.2.2)](#more-information-captions-prerecorded)). Certifique-se de fornecer uma nota ou ativar o recurso de legenda no player de vídeo para informar aos usuários que legendas estão disponíveis para o vídeo.
+Para as legendas ocultas, crie e forneça um arquivo de legenda sincronizada em um formato apropriado (como [SMIL](https://www.w3.org/AudioVideo/)), junto com o arquivo de vídeo (os detalhes sobre como proceder estão fora do escopo desse guia, mas fornecemos links para alguns tutoriais em [Mais informações - Legendas (pré-gravadas) (1.2.2)](#more-information-captions-prerecorded)). Certifique-se de fornecer uma nota ou habilitar o recurso de legenda no player de vídeo para informar aos usuários que legendas estão disponíveis para o vídeo.
 
 Se você precisar usar legendas abertas, incorpore o texto à faixa de vídeo. Isso pode ser feito usando aplicativos de edição de vídeo que permitem a sobreposição de títulos no vídeo.
 
@@ -310,7 +310,7 @@ O AEM facilita a criação de um conteúdo da web semanticamente significativo u
 
 É possível verificar se as suas páginas da web têm a estrutura adequada usando os seguintes elementos, quando aplicável:
 
-* **Cabeçalhos:** contanto que os recursos de acessibilidade do RTE estejam ativados, o AEM oferece três níveis de cabeçalho de página. É possível usá-los para identificar seções e subseções de conteúdo. O cabeçalho 1 é o nível mais alto, o Cabeçalho 3 o mais baixo. O administrador do sistema pode configurar o sistema para permitir o uso de mais níveis de cabeçalho.
+* **Cabeçalhos:** contanto que os recursos de acessibilidade do RTE estejam habilitados, o AEM oferece três níveis de cabeçalho de página. É possível usá-los para identificar seções e subseções de conteúdo. O cabeçalho 1 é o nível mais alto, o Cabeçalho 3 o mais baixo. O administrador do sistema pode configurar o sistema para permitir o uso de mais níveis de cabeçalho.
 
 * **Listas**: você pode usar HTML para especificar três tipos diferentes de listas:
    * O elemento `<ul>` é usado para listas *desordenadas* (com marcadores). Os itens da lista individual são identificados usando o elemento `<li>`. No RTE, use o ícone **Lista de marcadores**.
@@ -334,7 +334,7 @@ O AEM facilita a criação de um conteúdo da web semanticamente significativo u
 
   >[!NOTE]
   >
-  >Por padrão, esses elementos e atributos não estão diretamente disponíveis, embora o administrador do sistema possa adicionar suporte a esses valores na caixa de diálogo **Propriedades da tabela** (consulte [Adicionando suporte a elementos e atributos de HTML adicionais](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes).
+  >Por padrão, esses elementos e atributos não estão diretamente disponíveis, embora o administrador do sistema possa adicionar o suporte para esses valores na caixa de diálogo **Propriedades da tabela** (consulte [Adicionar suporte para outros elementos e atributos do HTML](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes).
 
   Para abrir a caixa de diálogo **Tabela** onde é possível selecionar a guia **Propriedades da tabela**:
 
@@ -360,7 +360,7 @@ O AEM facilita a criação de um conteúdo da web semanticamente significativo u
 
   >[!NOTE]
   >
-  >O atributo de ID não está disponível em uma instalação predefinida. Ele pode ser ativado configurando regras de HTML e o serializador no RTE.
+  >O atributo de ID não está disponível em uma instalação predefinida. Ele pode ser habilitado configurando regras de HTML e o serializador no RTE.
 
   Por exemplo, na tabela abaixo os cabeçalhos e IDs são combinados para fazer uma associação programática para usuários de tecnologia assistiva.
 
@@ -455,7 +455,7 @@ Certifique-se de que todas as informações que dependem das características vi
 
 ### Discernível (1.4)       {#distinguishable}
 
-[Diretriz 1.4 Discernível: facilitar a visualização e a audição de conteúdos aos usuários, incluindo a separação do primeiro plano e do plano de fundo. &#x200B;](https://www.w3.org/TR/WCAG/#distinguishable)
+[Diretriz 1.4 Discernível: facilitar a visualização e a audição de conteúdos aos usuários, incluindo a separação do primeiro plano e do plano de fundo. ](https://www.w3.org/TR/WCAG/#distinguishable)
 
 ### Utilização de cor (1.4.1)              {#use-of-color}
 
@@ -498,7 +498,7 @@ Se a cor for usada como uma indicação para fornecer as informações, você de
 
 #### Propósito - Controle de áudio (1.4.2) {#purpose-audio-control}
 
-Os indivíduos que usam software de leitura de tela podem achar difícil ouvir a saída da fala se houver outra reprodução de áudio ao mesmo tempo. Essa dificuldade é exacerbada quando a saída de voz do leitor de tela é baseada em software (como a maioria é hoje) e é regulada pelo mesmo controle de volume do som. Além disso, algumas pessoas com deficiências cognitivas e neurodivergentes podem ter sensibilidade ao som. Para essas pessoas, a incapacidade de alterar o volume do conteúdo de áudio é um fator bastante incômodo.
+As pessoas que usam software de leitura de tela podem achar difícil ouvir a saída da fala se houver outra reprodução de áudio ao mesmo tempo. Essa dificuldade é exacerbada quando a saída de voz do leitor de tela é baseada em software (como a maioria é hoje) e é regulada pelo mesmo controle de volume do som. Além disso, algumas pessoas com deficiências cognitivas e neurodivergentes podem ter sensibilidade ao som. Para essas pessoas, a incapacidade de alterar o volume do conteúdo de áudio é um fator bastante incômodo.
 
 Portanto, é importante que o usuário possa desligar o som de fundo.
 
@@ -519,8 +519,8 @@ Siga as orientações em [Como cumprir o Critério de sucesso 1.4.2](https://www
 
 * Critério de Sucesso 1.4.3
 * Nível AA
-* Contraste (mínimo): a apresentação visual de texto e imagens de texto tem uma relação de contraste de pelo menos 4.5:1, exceto nos seguintes casos:
-   * Texto grande: os textos e imagens de texto em grande escala têm uma relação de contraste de pelo menos 3:1.
+* Contraste (Mínimo): a apresentação visual de texto e imagens de texto tem uma taxa de contraste de pelo menos 4,5:1, exceto para o seguinte:
+   * Texto Grande: o texto em grande escala e as imagens de texto em grande escala têm uma taxa de contraste de pelo menos 3:1.
    * Incidental: o texto ou as imagens de texto que fazem parte de um componente de interface de usuário inativo, [decoração pura](https://www.w3.org/TR/WCAG/#dfn-pure-decoration), não está visível para ninguém ou que fazem parte de uma imagem que contém outro conteúdo visual significativo, não têm requisito de contraste.
    * Logotipos: o texto que faz parte de um logotipo ou marca comercial não tem requisito de contraste.
 
@@ -543,9 +543,9 @@ Indivíduos com certas deficiências visuais podem não conseguir distinguir ent
 
 Verifique se o texto está suficientemente contrastado com o plano de fundo. As relações de contraste dependem do tamanho e do estilo do texto em questão:
 
-* Para texto com menos de 18 pontos (ou 14 pontos em negrito) em tamanho, a relação de contraste entre o texto/imagens de texto e o plano de fundo deve ser, pelo menos, 4.5:1.
-* Para textos com pelo menos 18 pontos (ou 14 pontos em negrito) de tamanho, a relação de contraste deve ser de pelo menos 3:1.
-* Se um plano de fundo for estampado, a área ao redor de qualquer texto deverá ser sombreada para que a proporção de 4.5:1 ou 3:1 seja mantida.
+* Para texto com menos de 18 pontos (ou 14 pontos em negrito) em tamanho, a relação de contraste entre o texto/imagens de texto e o plano de fundo deve ser de pelo menos 4,5:1.
+* Para texto com pelo menos 18 pontos (ou 14 pontos em negrito) em tamanho, a taxa de contraste deve ser de pelo menos 3:1.
+* Se um plano de fundo for padronizado, o plano de fundo ao redor de qualquer texto deverá ser sombreado para que a proporção 4.5:1 ou 3:1 seja mantida.
 
 >[!NOTE]
 >
@@ -634,7 +634,7 @@ Isso garante que os usuários possam acessar toda a funcionalidade usando um tec
 
 #### Propósito - Teclado (2.1.1) {#purpose-keyboard}
 
-O objetivo desse Critério de sucesso é garantir que, sempre que possível, o conteúdo possa ser operado por meio de um teclado ou a interface de teclado (para que um teclado alternativo possa ser usado). Quando o conteúdo pode ser operado por meio de um teclado ou teclado alternativo, ele é operável por pessoas sem visão (que não podem usar dispositivos como mouses, pois exigem coordenação entre olho e mão), bem como por pessoas que precisam usar teclados alternativos ou dispositivos de entrada que atuam como emuladores de teclado. Os emuladores de teclado incluem software de entrada de fala, software “sip-and-puff”, teclados virtuais, software de digitalização e uma variedade de tecnologias assistivas e teclados alternativos. Os indivíduos com baixa visão também podem ter dificuldade em rastrear um ponteiro e consideram o uso do software muito mais fácil (ou apenas possível) se puderem controlá-lo pelo teclado.
+O objetivo desse Critério de sucesso é garantir que, sempre que possível, o conteúdo possa ser operado por meio de um teclado ou a interface de teclado (para que um teclado alternativo possa ser usado). Quando o conteúdo pode ser operado por meio de um teclado ou teclado alternativo, ele é operável por pessoas sem visão (que não podem usar dispositivos como mouses, pois exigem coordenação entre olho e mão), bem como por pessoas que precisam usar teclados alternativos ou dispositivos de entrada que atuam como emuladores de teclado. Os emuladores de teclado incluem software de entrada de fala, software “sip-and-puff”, teclados virtuais, software de digitalização e uma variedade de tecnologias assistivas e teclados alternativos. As pessoas com baixa visão também podem ter dificuldade em rastrear um ponteiro e consideram o uso do software muito mais fácil (ou apenas possível) se puderem controlá-lo pelo teclado.
 
 #### Como cumprir - Teclado (2.1.1) {#how-to-meet-keyboard}
 
@@ -835,7 +835,7 @@ Siga as orientações em [Como cumprir o Critério de sucesso 2.4.3](https://www
 
 #### Finalidade - Finalidade do link (Em contexto) (2.4.4)       {#purpose-link-purpose-in-context}
 
-Para todos os usuários, independentemente de deficiências, é essencial indicar claramente a direção de um link por meio de um texto de link apropriado. Isso ajuda os usuários a decidir se querem ou não seguir um link. Para usuários deficientes visuais, um texto de link significativo é extremamente útil quando há vários links em uma página (principalmente se a página tiver muito texto), já que textos de link significativos fornecem uma indicação mais clara da funcionalidade da página de destino. Os usuários de algumas tecnologias de assistência, que podem gerar uma lista de todos os links em uma única página, poderão entender mais facilmente o texto do link fora do contexto se o texto do link for exclusivo e informativo. No entanto, indivíduos com deficiências cognitivas poderão se confundir se um link não fornecer informações suficientes para descrever com precisão onde o link os levará.
+Para todos os usuários, independentemente de deficiências, é essencial indicar claramente a direção de um link por meio de um texto de link apropriado. Isso ajuda os usuários a decidir se querem ou não seguir um link. Para usuários deficientes visuais, um texto de link significativo é extremamente útil quando há vários links em uma página (principalmente se a página tiver muito texto), já que textos de link significativos fornecem uma indicação mais clara da funcionalidade da página de destino. Os usuários de algumas tecnologias de assistência, que podem gerar uma lista de todos os links em uma única página, poderão entender mais facilmente o texto do link fora do contexto se o texto do link for exclusivo e informativo. No entanto, pessoas com deficiências cognitivas poderão se confundir se um link não fornecer informações suficientes para descrever com precisão onde o link os levará.
 
 #### Como cumprir - Finalidade do link (Em contexto) (2.4.4)       {#how-to-meet-link-purpose-in-context}
 
@@ -853,7 +853,7 @@ Os links devem ser redigidos de forma consistente ao longo das páginas, especia
 No momento da escrita, há algumas questões relacionadas ao uso de atributos de título para garantir que links semelhantes apresentados em uma página forneçam informações exclusivas sobre o destino (por exemplo, “leia mais” geralmente se refere a vários destinos diferentes):
 
 * O texto contido no atributo de título só está disponível para usuários do mouse como um pop-up de dica de ferramenta e não pode ser acessado de forma consistente usando o teclado ou por usuários móveis.
-* Os leitores de tela podem ler atributos de título, mas essa funcionalidade pode não estar ativada por padrão. Portanto, os usuários podem não estar cientes de que existe um atributo de título.
+* Os leitores de tela podem ler atributos de título, mas essa funcionalidade pode não estar habilitada por padrão. Portanto, os usuários podem não estar cientes de que existe um atributo de título.
 * É complicado alterar a aparência do texto do título, o que significa que, para algumas pessoas, ele pode ser difícil ou impossível de ler.
 
 Portanto, embora o atributo de título possa ser usado para fornecer contexto adicional a um link, esteja ciente de suas limitações e não o use como alternativa para um texto de link apropriado.
@@ -1102,7 +1102,7 @@ Siga as orientações em [Como cumprir o Critério de sucesso 3.2.2](https://www
 
 #### Propósito - Navegação consistente (3.2.3) {#purpose-consistent-navigation}
 
-O propósito deste Critério de sucesso é incentivar o uso de apresentação e layout consistentes para usuários que interagem com conteúdo repetido em um conjunto de páginas da Web e devem localizar informações ou funcionalidades específicas mais de uma vez. Os indivíduos com pouca visão que usam ampliação de tela para exibir uma pequena parte da tela por vez geralmente usam dicas visuais e limites de página para localizar rapidamente o conteúdo repetido. Apresentar conteúdo repetido na mesma ordem também é importante para os usuários visuais que usam memória espacial ou dicas visuais no design para localizar conteúdo repetido.
+O propósito deste Critério de sucesso é incentivar o uso de apresentação e layout consistentes para usuários que interagem com conteúdo repetido em um conjunto de páginas da Web e devem localizar informações ou funcionalidades específicas mais de uma vez. As pessoas com pouca visão que usam ampliação de tela para exibir uma pequena parte da tela por vez geralmente usam dicas visuais e limites de página para localizar rapidamente o conteúdo repetido. Apresentar conteúdo repetido na mesma ordem também é importante para os usuários visuais que usam memória espacial ou dicas visuais no design para localizar conteúdo repetido.
 
 O uso da frase &quot;mesma ordem&quot; nesta seção não significa que os menus de subnavegação não possam ser usados ou que blocos de navegação secundária ou estrutura de página não possam ser usados. Em vez disso, este Critério de sucesso destina-se a ajudar os usuários que interagem com conteúdo repetido em várias páginas da Web a prever a localização do conteúdo que estão procurando. E, para encontrá-lo mais rapidamente quando o encontrarem novamente.
 

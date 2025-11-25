@@ -9,8 +9,8 @@ docset: aem65
 exl-id: b2103774-1876-4bf8-a29a-2ba0d51e7914
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 12%
@@ -57,7 +57,7 @@ Se sua instância já tem páginas existentes ou se você mesmo criou uma nova p
 
 * [Desfazer e refazer edições de página](/help/sites-authoring/editing-content.md#undoing-and-redoing-page-edits)
 * [Usando o Modo de Visualização](/help/sites-authoring/editing-content.md#preview-mode) (para ver como será sua aparência quando publicado)
-* [Bloquear uma página  &#x200B;](/help/sites-authoring/editing-content.md#locking-a-page)
+* [Bloquear uma página  ](/help/sites-authoring/editing-content.md#locking-a-page)
 
 ### Publicar uma página {#publishing-a-page}
 

@@ -4,9 +4,9 @@ description: Defina as propriedades necessárias para uma página no Adobe Exper
 exl-id: 3cd9374f-6f16-40fb-97cf-5f9a750b8dd2
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 mini-toc-levels: 2
-source-git-commit: d0515a6a3d08e181eada4a22e0d128305148e6ea
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '2477'
 ht-degree: 37%
@@ -81,7 +81,7 @@ Deixe esses campos (**Momento da ativação** e **Momento da desativação**) va
 >
 >Se quiser publicar conteúdo novo com todos os fluxos de trabalho associados ou remover totalmente (cancelar a publicação do conteúdo) do site, considere [gerenciar sua publicação.](/help/sites-authoring/publishing-pages.md#manage-publication)
 
-#### URL do Vanity {#vanity-url}
+#### URL personalizado {#vanity-url}
 
 Insira um URL personalizado para esta página, o que pode permitir que você tenha um URL mais curto e/ou mais expressivo.
 
@@ -89,24 +89,24 @@ Por exemplo, se a URL personalizada estiver definida como `welcome` para a pági
 
 >[!CAUTION]
 >
->URLs personalizadas:
+>URLs personalizados:
 >
 >* Deve ser única.
 >* Não é compatível com padrões de regex.
 >* Não deve ser definido como uma página existente.
 
-Configure o Dispatcher para habilitar o acesso a URLs personalizados. Consulte [Habilitando o acesso a URLs personalizados](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=pt-BR#enabling-access-to-vanity-urls-vanity-urls) para obter mais detalhes.
+Configure o Dispatcher para habilitar o acesso a URLs personalizados. Consulte [Habilitando o acesso a URLs personalizados](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-access-to-vanity-urls-vanity-urls) para obter mais detalhes.
 
 * **Adicionar** - Toque ou clique para adicionar uma URL personalizada.
 * **Remover** - Toque ou clique para remover uma URL personalizada.
   **Redirecionar URL personalizado** - Indica se você deseja que a página use a URL personalizado ou redirecione para a URL real da página
 
-### Avançado  {#advanced}
+### Avançado {#advanced}
 
 #### Configurações {#settings}
 
 * **Idioma** - o idioma da página
-* **Raiz de idioma** - deve ser marcado se a página for a raiz de uma cópia de idioma
+* **Raiz de idioma** - deve ser marcado se a página for a raiz de uma cópia no idioma de destino
 * **Redirecionar** - indica a página de redirecionamento automático para a página atual. 
 * **Design** - Indica o [design](/help/sites-developing/designer.md) a ser usado para esta página.
 * **Pseudônimo** - especifica um pseudônimo para ser usado com esta página

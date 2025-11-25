@@ -1,5 +1,5 @@
 ---
-title: Integração do Creative Project e do PIM
+title: Integração do Projeto Creative e do PIM
 description: O Creative Project simplifica todo o fluxo de trabalho de sessão fotográfica, incluindo a geração de uma solicitação de sessão fotográfica, o upload de uma sessão fotográfica, a colaboração em uma sessão fotográfica e a embalagem de ativos aprovados
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -8,8 +8,8 @@ content-type: reference
 exl-id: c4eff50e-0d55-4a61-98fd-cc42138656cb
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '2888'
 ht-degree: 2%
@@ -17,9 +17,9 @@ ht-degree: 2%
 ---
 
 
-# Integração do Creative Project e do PIM {#creative-project-and-pim-integration}
+# Integração do Projeto Creative e do PIM {#creative-project-and-pim-integration}
 
-Se você é um profissional de marketing ou criativo, pode usar as ferramentas do Creative Project no Adobe Experience Manager (AEM) para gerenciar fotografias de produtos relacionadas ao comércio eletrônico e processos criativos associados na organização.
+Se você for um profissional de marketing ou criativo, poderá usar as ferramentas do Projeto do Creative no Adobe Experience Manager (AEM) para gerenciar fotografias de produtos relacionadas a comércio eletrônico e processos criativos associados na organização.
 
 Você pode usar o Creative Project para simplificar as seguintes tarefas no fluxo de trabalho da sessão de fotos:
 
@@ -34,7 +34,7 @@ Você pode usar o Creative Project para simplificar as seguintes tarefas no flux
 
 ## Fluxos de trabalho de sessão fotográfica do produto  {#exploring-product-photo-shoot-workflows}
 
-O Creative Project fornece vários modelos de projeto para atender a diversos requisitos do projeto. O modelo do **Projeto de sessão fotográfica do produto** está disponível imediatamente. Esse modelo inclui fluxos de trabalho de sessão fotográfica que permitem iniciar e gerenciar solicitações de sessão fotográfica do produto. Ele também inclui uma série de tarefas que permitem obter imagens digitais para produtos por meio de processos apropriados de revisão e aprovação.
+O Creative Project fornece vários modelos de projeto para atender a diversos requisitos de projeto. O modelo do **Projeto de sessão fotográfica do produto** está disponível imediatamente. Esse modelo inclui fluxos de trabalho de sessão fotográfica que permitem iniciar e gerenciar solicitações de sessão fotográfica do produto. Ele também inclui uma série de tarefas que permitem obter imagens digitais para produtos por meio de processos apropriados de revisão e aprovação.
 
 ## Criar um projeto de sessão fotográfica do produto {#create-a-product-photo-shoot-project}
 
@@ -195,7 +195,7 @@ A tarefa **Criar Lista de Captura** permite que o proprietário do projeto selec
 
    ![Exibir lista de captura](assets/chlimage_1-148a.png)
 
-   Para editar os dados existentes ou adicionar novos dados, clique em **Editar** na barra de ferramentas. Somente os campos **Produto &#x200B;** e **Descrição** são editáveis.
+   Para editar os dados existentes ou adicionar novos dados, clique em **Editar** na barra de ferramentas. Somente os campos **Produto **e **Descrição** são editáveis.
 
    ![Editar lista de captura](assets/chlimage_1-149a.png)
 
@@ -211,7 +211,7 @@ A conclusão da tarefa introduz as seguintes alterações no projeto:
 
 ### Carregar tarefa da lista de captura {#upload-shot-list-task}
 
-Essa tarefa faz parte do fluxo de trabalho da Sessão fotográfica do produto. Você executa esta tarefa se as informações do produto não estiverem disponíveis no AEM. Nesse caso, você faz upload de uma lista de produtos em um arquivo CSV para o qual os ativos de imagem são necessários. Com base nos detalhes no arquivo CSV, você mapeia ativos de imagem com os produtos. O arquivo deve ser um arquivo CSV chamado `shotlist.csv`.
+Essa tarefa faz parte do fluxo de trabalho da Sessão fotográfica do produto. Execute esta tarefa se as informações do produto não estiverem disponíveis no AEM. Nesse caso, você faz upload de uma lista de produtos em um arquivo CSV para o qual os ativos de imagem são necessários. Com base nos detalhes no arquivo CSV, você mapeia ativos de imagem com os produtos. O arquivo deve ser um arquivo CSV chamado `shotlist.csv`.
 
 Use o link **Exibir Lista de Captura** no cartão do projeto no procedimento anterior para baixar um arquivo CSV de amostra. Revise o arquivo de amostra para saber o conteúdo normal de um arquivo CSV.
 
@@ -297,7 +297,7 @@ Você pode navegar até os ativos do projeto usando a interface do usuário do A
 
 Clique no próximo nível para exibir os produtos de acordo com a hierarquia de dados do produto.
 
-O Creative Project associa ativos aprovados ao produto referenciado. Os metadados do ativo são atualizados com a referência do produto e as informações básicas na guia **Dados do produto**, em propriedades do ativo. Eles são exibidos na seção Metadados do ativo AEM.
+O Creative Project associa ativos aprovados ao produto referenciado. Os metadados do ativo são atualizados com a referência do produto e as informações básicas na guia **Dados do produto**, em propriedades do ativo. Eles são exibidos na seção Metadados do ativo do AEM.
 
 >[!NOTE]
 >

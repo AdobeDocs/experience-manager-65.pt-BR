@@ -1,6 +1,6 @@
 ---
 title: Content Insight
-description: O Content Insight fornece informações sobre o desempenho da página usando a análise da Web e a recomendação de SEO
+description: O Insight de conteúdo fornece informações sobre o desempenho da página usando a análise da Web e a recomendação de SEO
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -8,29 +8,29 @@ topic-tags: site-features
 exl-id: 187f3cde-a0db-4c02-9e8b-08272987a67d
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '537'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 # Content Insight{#content-insight}
 
-O Content Insight fornece informações sobre o desempenho da página usando análises da Web e recomendações de SEO. Use o Content Insight para tomar decisões sobre como modificar páginas ou saber como as alterações anteriores alteraram o desempenho. Para cada página criada, você pode abrir o Content Insight para analisar a página.
+O Insight de conteúdo fornece informações sobre o desempenho da página usando análises da Web e recomendações de SEO. Use o Insight de conteúdo para tomar decisões sobre como modificar páginas ou saber como as alterações anteriores alteraram o desempenho. Para cada página criada, você pode abrir o Insight de conteúdo para analisar a página.
 
 ![chlimage_1-311](assets/chlimage_1-311.png)
 
-O layout da página Content Insight muda para se adequar às dimensões e à orientação da tela do dispositivo que você está usando.
+O layout da página Insight de conteúdo é alterado para se adequar às dimensões e à orientação da tela do dispositivo que você está usando.
 
 ## Dados do relatório
 
-A página Content Insight inclui relatórios que usam dados do Adobe SiteCatalyst, Adobe Target, Adobe Social e BrightEdge:
+A página Insight de conteúdo inclui relatórios que usam dados do Adobe SiteCatalyst, Adobe Target, Adobe Social e BrightEdge:
 
-* SiteCatalyst: Relatórios para as seguintes métricas estão disponíveis:
+* SiteCatalyst: estão disponíveis relatórios para as seguintes métricas:
 
-   * Exibições de página
+   * Exibições da página
    * Tempo médio gasto na página
    * Fontes
 
@@ -39,13 +39,13 @@ A página Content Insight inclui relatórios que usam dados do Adobe SiteCatalys
 
 Consulte [Abrindo o Analytics e o Recommendations para uma Página](/help/sites-authoring/ci-analyze.md#opening-analytics-and-recommendations-for-a-page).
 
-## Período do relatório
+## Período da geração de relatórios
 
 Os relatórios mostram dados de um período de tempo que você controla. Quando você ajusta o período do relatório, os relatórios são atualizados automaticamente com os dados desse período. As dicas visuais indicam o tempo em que as versões da página foram alteradas, para que você possa comparar o desempenho de cada versão.
 
 >[!NOTE]
 >
->A linha do tempo do painel Content Insight está em `GMT`.
+>A linha do tempo do painel Insight de Conteúdo está em `GMT`.
 
 Você também pode especificar a granularidade dos dados relatados, por exemplo, ver dados diários, semanais, mensais ou anuais.
 
@@ -94,10 +94,10 @@ Para cada campanha para a qual a página está ativa, aparece um relatório cham
 
 ![chlimage_1-316](assets/chlimage_1-316.png)
 
-## O relatório do SEO Recommendations {#the-seo-recommendations-report}
+## O Relatório de Recomendações da SEO {#the-seo-recommendations-report}
 
-O relatório Recommendations da SEO contém os resultados da análise BrightEdge para a página. O relatório é uma lista de verificação de recursos da página que indica quais recursos a página inclui ou não para maximizar a localizabilidade usando mecanismos de pesquisa.
+O relatório Recomendações de SEO contém os resultados da análise do BrightEdge para a página. O relatório é uma lista de verificação de recursos da página que indica quais recursos a página inclui ou não para maximizar a localizabilidade usando mecanismos de pesquisa.
 
-O relatório permite criar tarefas para que sejam feitos aprimoramentos a fim de melhorar a localização da página. O Recommendations indica que as tarefas foram criadas para implementar a recomendação. Consulte [Atribuir tarefas para SEO Recommendations](/help/sites-authoring/ci-analyze.md#assigning-tasks-for-seo-recommendations).
+O relatório permite criar tarefas para que sejam feitos aprimoramentos a fim de melhorar a localização da página. As recomendações indicam que foram criadas tarefas para implementá-las. Consulte [Atribuição de Tarefas para Recomendações de SEO](/help/sites-authoring/ci-analyze.md#assigning-tasks-for-seo-recommendations).
 
 ![chlimage_1-317](assets/chlimage_1-317.png)

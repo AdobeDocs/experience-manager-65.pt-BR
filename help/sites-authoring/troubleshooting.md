@@ -1,5 +1,5 @@
 ---
-title: Solução de problemas ao criar no AEM
+title: Solução de problemas ao criar páginas no AEM
 description: Alguns problemas que você pode encontrar ao usar o AEM.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -8,8 +8,8 @@ content-type: reference
 exl-id: 05586b17-35d4-496e-8f0e-293c755eb066
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '294'
 ht-degree: 41%
@@ -26,7 +26,7 @@ A seção a seguir aborda alguns problemas que você poderá enfrentar ao usar o
 
 >[!NOTE]
 >
->Os usuários que têm privilégios de administrador e que desejam solucionar problemas com AEM podem usar os métodos de solução de problemas descritos em [Solução de problemas com AEM (para Administradores)](/help/sites-administering/troubleshoot.md). Se você não tiver privilégios suficientes, consulte o administrador do sistema para obter informações sobre como solucionar problemas de AEM.
+>Os usuários que têm privilégios de administrador e que desejam solucionar problemas com o AEM podem usar os métodos de solução de problemas descritos em [Solução de problemas do AEM (para Administradores)](/help/sites-administering/troubleshoot.md). Se você não tiver privilégios suficientes, consulte o administrador do sistema para obter informações sobre como solucionar problemas do AEM.
 
 ## A versão antiga da página ainda está no site publicado {#old-page-version-still-on-published-site}
 

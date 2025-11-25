@@ -8,8 +8,8 @@ content-type: reference
 exl-id: c58981a0-cdde-4593-b633-7f6898f8f5f5
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 48%
@@ -64,7 +64,7 @@ As teclas modificadoras usadas para os atalhos de teclado variam de acordo com o
 
 ## Atalhos de teclado e dos navegadores {#browsers-and-keyboard-shortcuts}
 
-O AEM evita atalhos comuns já usados por navegadores populares, no entanto, o comportamento padrão do navegador não é substituído por atalhos AEM.
+O AEM evita atalhos comuns já usados por navegadores populares, no entanto, o comportamento padrão do navegador não é substituído pelos atalhos do AEM.
 
 Além disso, os atalhos de teclado são os mesmos para todos os locais e layouts de teclado.
 
@@ -76,7 +76,7 @@ Além disso, os atalhos de teclado são os mesmos para todos os locais e layouts
 
 >[!CAUTION]
 >
->Atalhos de teclado do AEM podem interferir com leitores de tela, alguns recursos do navegador e outras ferramentas de acessibilidade.
+>Os atalhos de teclado do AEM podem interferir em leitores de tela, alguns recursos do navegador e outras ferramentas de acessibilidade.
 >
 >A Adobe recomenda [desabilitar os atalhos de teclado do AEM](/help/sites-authoring/keyboard-shortcuts.md#deactivating-keyboard-shortcuts) ao usar um leitor de tela.
 

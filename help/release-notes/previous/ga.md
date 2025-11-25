@@ -4,11 +4,11 @@ description: Notas do [!DNL Adobe Experience Manager] 6.5 descrevendo as informa
 exl-id: b3d4a527-44ca-4eb6-b393-f3e8117cf1a6
 solution: Experience Manager
 feature: Release Information
-role: User,Admin,Architect,Developer
-source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '4477'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
 
@@ -35,7 +35,7 @@ O [!DNL Adobe Experience Manager] 6.5 está disponível ao público desde 8 de a
 
 O [!DNL Adobe Experience Manager] 6.5 é uma versão de atualização para a base de código [!DNL Adobe Experience Manager] 6.4. Ele fornece funcionalidades novas e aprimoradas, correções essenciais para o cliente, melhorias de alta prioridade para o cliente e correções gerais de erros voltadas para a estabilização do produto. Ele também inclui versões do Service Pack do [!DNL Adobe Experience Manager] 6.4 até o SP4.
 
-A lista abaixo fornece uma visão geral, enquanto as páginas subsequentes listam os detalhes completos.
+A lista abaixo fornece uma visão geral, enquanto as páginas seguintes listam todos os detalhes.
 
 ### [!DNL Experience Manager Foundation] {#experience-manager-foundation}
 
@@ -43,7 +43,7 @@ A plataforma do [!DNL Adobe Experience Manager] 6.5 se baseia nas versões atual
 
 O Quickstart usa o Eclipse Jetty 9.4.15 como mecanismo de servlet.
 
-#### Suporte para Java™  {#java-support}
+#### Compatibilidade com Java™  {#java-support}
 
 * Novo suporte para Java™ 11 e o já compatível Java™ 8.
 * Para obter o desempenho ideal, substitua os valores de GC padrão por outros valores. Para obter mais informações, consulte a seção [instalar e atualizar](/help/sites-deploying/custom-standalone-install.md).
@@ -157,11 +157,9 @@ Para obter mais detalhes sobre as alterações no AEM Screens, consulte as Notas
      ```
 
    * Declarações de variável com data-sly-set :
-
      `<sly data-sly-set.title="${currentPage.title}"/>${title}`
 
    * Listar e repetir parâmetros de controle: início, etapa, fim:
-
      `<h2 data-sly-repeat="${currentPage.listChildren @ begin = 1, step=2}">${item.title}</h2>`
 
    * Identificadores para data-sly-unwrap:
@@ -248,12 +246,12 @@ Para obter mais detalhes sobre as alterações no AEM Screens, consulte as Notas
 
 * A integração do Adobe Target agora usa a API do Target Standard. As versões anteriores do AEM usam a API HTTP do Target Classic, que agora está obsoleta.
 * O Adobe Target `mbox.js` versão 63 está incluído. A Adobe recomenda que você alterne a implementação para `at.js` v1.x.
-* A versão 1.5.0 de `at.js` foi incluída. A Adobe recomenda que você use o [Adobe Experience Platform Launch](https://business.adobe.com/br/products/experience-platform/launch.html) para provisionar o `at.js` v1.x para o site.
+* A versão 1.5.0 de `at.js` foi incluída. A Adobe recomenda que você use o [Adobe Experience Platform Launch](https://business.adobe.com/products/experience-platform/launch.html) para provisionar o `at.js` v1.x para o site.
 
 #### AEM e ADOBE ANALYTICS {#aem-amp-adobe-analytics}
 
 * `s_code.js` H.27.5 está incluído. A Adobe recomenda que você alterne a implementação para `AppMeasurement.js`
-* `AppMeasurement.js` v1.8.0 está incluído. A Adobe recomenda que você use o [Adobe Experience Platform Launch](https://business.adobe.com/br/products/experience-platform/launch.html) para provisionar o AppMeasurement.js para o site.
+* `AppMeasurement.js` v1.8.0 está incluído. A Adobe recomenda que você use o [Adobe Experience Platform Launch](https://business.adobe.com/products/experience-platform/launch.html) para provisionar o AppMeasurement.js para o site.
 
 #### AEM e COMMERCE {#aem-commerce}
 
@@ -378,7 +376,7 @@ O [!DNL Experience Manager Sites] oferece recursos para criar páginas da Web e 
 
 O [!DNL Dynamic Media] fornece criação e entrega aprimoradas de mídia avançada no [!DNL Experience Manager Assets] para impulsionar experiências de última geração que são imersivas e personalizadas. Ao fazer upload de um único ativo principal de alta qualidade e usar a renderização de nuvem e os visualizadores avançados da Adobe, você pode fornecer qualquer combinação de representações dinamicamente para oferecer suporte à estratégia de mídia de sua organização.
 
-Para obter mais detalhes sobre os novos recursos do [!DNL Dynamic Media], consulte as [Notas de Versão do Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/release-notes/s7rn2017.html?lang=pt-BR).
+Para obter mais detalhes sobre os novos recursos do [!DNL Dynamic Media], consulte as [Notas de Versão do Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/release-notes/s7rn2017.html).
 
 ##### Suporte a vídeo 360 {#video-support}
 
@@ -390,7 +388,7 @@ Agora é possível personalizar as miniaturas dos ativos de vídeo usando quadro
 
 ##### Aprimoramentos de acessibilidade {#accessibility-enhancements}
 
-[!DNL Dynamic Media] visualizadores agora oferecem suporte para recursos de acessibilidade aprimorados, como suporte para Aria, leitores de tela e texto alternativo. Para obter detalhes adicionais, consulte [Guia de Referência de Visualizadores](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html?lang=pt-BR).
+[!DNL Dynamic Media] visualizadores agora oferecem suporte para recursos de acessibilidade aprimorados, como suporte para Aria, leitores de tela e texto alternativo. Para obter detalhes adicionais, consulte [Guia de Referência de Visualizadores](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html).
 
 #### Aprimoramento da experiência de pesquisa {#experience-enhancement-for-searching}
 
@@ -437,7 +435,7 @@ Consulte o [Resumo dos novos recursos e aprimoramentos no AEM 6.5 Forms](/help/f
 
 A Adobe está usando um modelo de desenvolvimento com foco no cliente que permite que os clientes contribuam para todos os estágios do processo de desenvolvimento, durante a especificação, o desenvolvimento e o teste. Nossos agradecimentos vão para todos os clientes e parceiros que contribuíram neste processo.
 
-A Adobe tem os procedimentos e processos em vigor para permitir a coleta, a priorização e o rastreamento da resolução de bugs focados no cliente e o desenvolvimento de solicitações de aprimoramento. O [Portal de suporte do Experience Manager](https://experienceleague.adobe.com/pt-br?support-solution=Experience+Manager&lang=pt-BR#support) está integrado ao Sistema de Aperfeiçoamento e Rastreamento de Defeitos do Adobe. As dúvidas do cliente são identificadas e resolvidas pela equipe de Suporte ao cliente, quando possível. Quando encaminhadas para P&amp;D, todas as informações do cliente são capturadas e usadas para priorização e geração de relatórios. No desenvolvimento, é dada prioridade ao suporte pago, aos problemas de garantia e aos aprimoramentos pagos pelo cliente.
+A Adobe tem os procedimentos e processos em vigor para permitir a coleta, a priorização e o rastreamento da resolução de bugs focados no cliente e o desenvolvimento de solicitações de aprimoramento. O [Portal de suporte do Experience Manager](https://experienceleague.adobe.com/?support-solution=Experience+Manager&lang=pt-BR#support) está integrado ao Sistema de Aperfeiçoamento e Rastreamento de Defeitos do Adobe. As dúvidas do cliente são identificadas e resolvidas pela equipe de Suporte ao cliente, quando possível. Quando encaminhadas para P&amp;D, todas as informações do cliente são capturadas e usadas para priorização e geração de relatórios. No desenvolvimento, é dada prioridade ao suporte pago, aos problemas de garantia e aos aprimoramentos pagos pelo cliente.
 
 Esse processo de priorização produziu mais de 750 alterações voltadas para o cliente corrigidas no AEM 6.5.
 
@@ -447,7 +445,7 @@ Esse processo de priorização produziu mais de 750 alterações voltadas para o
 
 * Quickstart Autônomo: `cq-quickstart-6.5.0.jar`.
 * Início Rápido do Servidor de Aplicativos: `cq-quickstart-6.5.0.war`.
-* Dispatcher 4.3.2 ou posterior para os vários servidores e plataformas da Web. Consulte [link de download](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html?lang=pt-BR)
+* Dispatcher 4.3.2 ou posterior para os vários servidores e plataformas da Web. Consulte [link de download](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html)
 * Plug-in para Eclipse IDE ([leia mais e baixe](/help/sites-developing/aem-eclipse.md))
 
 * Extensão para o Editor de Código de Colchetes ([leia mais e baixe](/help/sites-developing/aem-brackets.md))
@@ -480,7 +478,7 @@ Esse processo de priorização produziu mais de 750 alterações voltadas para o
 
 **Formulários**
 
-* [Pacotes para recursos do AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=pt-BR)
+* [Pacotes para recursos do AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
 * [AEM Forms OSGi Client SDK](https://repo1.maven.org/maven2/com/adobe/aemfd/aemfd-client-sdk/)
 
 ## Idiomas {#languages}
@@ -502,7 +500,7 @@ O [!DNL Experience Manager] 6.5 foi certificado para CITS GB18030-2005 para usar
 
 ## Instalar e atualizar {#install-update}
 
-Para obter os requisitos de instalação, consulte [instruções de instalação](/help/sites-deploying/custom-standalone-install.md).
+Para conferir os requisitos de instalação, consulte as [instruções de instalação](/help/sites-deploying/custom-standalone-install.md).
 
 Para obter instruções detalhadas, consulte [documentação de atualização](/help/sites-deploying/upgrade.md).
 
@@ -593,10 +591,10 @@ org.osgi.framework.bootdelegation=sun.*,com.sun.*,jdk.internal.reflect,jdk.inter
 
 ## Download e suporte do produto (sites restritos) {#product-download-and-support-restricted-sites}
 
-Os seguintes sites estão disponíveis somente para clientes do. Se você for um cliente do e precisar de acesso, entre em contato com o gerente de conta da Adobe.
+Os seguintes sites estão disponíveis somente para clientes do. Se você for cliente e precisar de acesso, entre em contato com o seu gerente de conta da Adobe.
 
 * [Download do Produto em licensing.adobe.com](https://licensing.adobe.com/).
 
 * Atualizações, patches e pacotes de produtos para funcionalidade adicional na [Distribuição de Software](https://experience.adobe.com/#/downloads/content/software-distribution/br/aem.html).
 
-* [Suporte ao Cliente via Admin Console](https://adminconsole.adobe.com/). Para obter mais informações, consulte [Nova experiência de suporte ao cliente da Adobe](https://experienceleague.adobe.com/docs/customer-one/using/home.html?lang=pt-BR).
+* [Suporte ao Cliente via Admin Console](https://adminconsole.adobe.com/). Para obter mais informações, consulte [Nova experiência de suporte ao cliente da Adobe](https://experienceleague.adobe.com/docs/customer-one/using/home.html).

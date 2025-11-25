@@ -9,8 +9,8 @@ docset: aem65
 exl-id: a7e16555-9bbe-4da2-817c-4495a0193f3f
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '1540'
 ht-degree: 61%
@@ -19,7 +19,7 @@ ht-degree: 61%
 
 # Guia rápido para a criação de páginas{#quick-guide-to-authoring-pages}
 
-Esses procedimentos são destinados como um guia rápido (alto nível) para as principais ações de criação de conteúdo de página no AEM.
+Esses procedimentos servem como um guia rápido (alto nível) para as principais ações de criação de conteúdo de página no AEM.
 
 Eles:
 

@@ -9,10 +9,10 @@ legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: bc7897da-15f6-4de4-a9fd-9dd84e6c7eed
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Launches
-role: User,Admin,Architect,Developer
-source-git-commit: 82597d52ed774f08ce7136d271148e720b56fcf1
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
-source-wordcount: '1097'
+source-wordcount: '1096'
 ht-degree: 77%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 77%
 Crie um lançamento para permitir a atualização de uma nova versão de páginas da Web para ativação futura. Ao criar a inicialização, especifique um título e a página de origem:
 
 * O título é exibido no painel [Referências](/help/sites-authoring/author-environment-tools.md#references), onde os autores podem acessá-lo para trabalhar nele.
-* As páginas secundárias da página de origem são incluídas no lançamento por padrão. Você pode usar somente a página de origem, se desejar.
+* As páginas filhas da página de origem são incluídas no lançamento por padrão. Você pode usar somente a página de origem, se desejar.
 * Por padrão, [Live Copy](/help/sites-administering/msm.md) atualiza automaticamente as páginas de lançamento à medida que as páginas de origem são alteradas. É possível especificar que uma cópia estática seja criada para impedir alterações automáticas.
 
 Como opção, especifique a **Data de inicialização** (e a hora) para definir quando as páginas de inicialização devem ser promovidas e ativadas. No entanto, a **Data de inicialização** só funciona em combinação com o sinalizador **Pronto para produção** (consulte [Editar uma configuração de inicialização](/help/sites-authoring/launches-editing.md#editing-a-launch-configuration)); para que as ações realmente ocorram automaticamente, ambas devem ser definidas.
@@ -69,13 +69,13 @@ Como opção, especifique a **Data de inicialização** (e a hora) para definir 
    >
    >Se um site contiver raízes de idioma abaixo do nível superior, as páginas e ramificações de uma inicialização deverão estar abaixo de uma raiz de idioma comum.
    >
-   >Se você tentar criar uma inicialização com uma página principal ou secundária no caminho de origem, ela falhará e retornará o erro &quot;O destino já existe em :path para a página&quot;.
+   >Se você tentar criar uma inicialização com uma página pai ou filho no caminho de origem, ela falhará e retornará o erro &quot;O destino já existe em :path para a página&quot;.
 
 1. Para cada entrada, é necessário especificar se deseja:
 
    * **Incluir subpáginas**:
 
-      * Especifique se você deseja criar a inicialização com ou sem as páginas secundárias.  Por padrão, essas subpáginas são incluídas.
+      * Especifique se você deseja criar a inicialização com ou sem as páginas filhas.  Por padrão, essas subpáginas são incluídas.
 
    Continue clicando em **Próximo**.
 

@@ -1,5 +1,5 @@
 ---
-title: Gerenciamento de públicos
+title: Gerenciamento de públicos-alvos
 description: O console Públicos permite criar, organizar e gerenciar públicos para sua conta do Adobe Target ou gerenciar segmentos do ContextHub ou do Client Context
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,15 +9,15 @@ docset: aem65
 exl-id: 97e02986-049f-4747-a67a-6aa0677b281e
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '903'
 ht-degree: 63%
 
 ---
 
-# Gerenciamento de públicos{#managing-audiences}
+# Gerenciamento de públicos-alvos{#managing-audiences}
 
 O console Públicos permite criar, organizar e gerenciar públicos para sua conta do Adobe Target ou gerenciar segmentos do ContextHub ou do Client Context:
 
@@ -51,7 +51,7 @@ Para criar um segmento do ContextHub no console Públicos-alvo:
 
    >[!NOTE]
    >
-   >Classifique a lista modificada ao tocar ou clicar em **Modificado** para classificar por ordem decrescente para ver qualquer público recém-criado.
+   >Classifique a lista modificada ao tocar ou clicar em **Modificado** para classificar por ordem decrescente para ver qualquer público-alvo recém-criado.
 
 Para obter mais detalhes sobre como criar segmentos usando o ContextHub, consulte a [Configuração da segmentação com o ContextHub](/help/sites-administering/segmentation.md) documentação.
 
@@ -65,7 +65,7 @@ Quando você usa mais de uma regra, elas são combinadas pelo operador boolean A
 
 >[!NOTE]
 >
->Se você não vir **Criar público-alvo &#x200B;** no menu **Criar**, não terá as permissões necessárias para criar um público-alvo. Você precisa de permissões de gravação em **/etc/segmentation** para criar públicos-alvo. Por padrão, os autores de conteúdo do grupo têm permissões de gravação.
+>Se você não vir **Criar público-alvo **no menu **Criar**, não terá as permissões necessárias para criar um público-alvo. Você precisa de permissões de gravação em **/etc/segmentation** para criar públicos-alvo. Por padrão, os autores de conteúdo do grupo têm permissões de gravação.
 
 Para criar um público-alvo do Adobe Target:
 
@@ -73,7 +73,7 @@ Para criar um público-alvo do Adobe Target:
 
    ![captura de tela_2019-03-05at124139](assets/screen-shot_2019-03-05at124139.png)
 
-1. No console Públicos-alvo, clique em **Criar** e **&#x200B; Criar público-alvo**.
+1. No console Públicos-alvo, clique em **Criar** e** Criar público-alvo**.
 
    ![chlimage_1-168](assets/chlimage_1-168.png)
 
@@ -104,7 +104,7 @@ Para criar um público-alvo do Adobe Target:
 >
 >Só é possível editar públicos-alvo do Adobe Target que foram criados na mesma instância do AEM na qual você está editando. Públicos-alvo criados em ambientes do AEM diferentes não podem ser editados.
 
-Você pode editar qualquer público do ContextHub ou do Client Context no console de Públicos. Você também pode editar os públicos do Adobe Target, mas somente aqueles que foram criados no AEM:
+Você pode editar qualquer público do ContextHub ou do Client Context no console de Públicos. Você também pode editar públicos da Adobe Target, mas somente os que foram criados no AEM:
 
 1. No console Navegação, clique em **Personalization**. Clique em **Públicos**.
 1. Clique no ícone ao lado do segmento ContextHub ou Client Context que você deseja editar e clique em **Editar**.

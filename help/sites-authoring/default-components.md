@@ -4,8 +4,8 @@ description: O Adobe Experience Manager vem com vários componentes prontos para
 exl-id: 85463610-8461-4c1f-bfe7-72229a31ea40
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '420'
 ht-degree: 34%
@@ -46,17 +46,17 @@ Os componentes são classificados de acordo com várias categorias chamadas grup
 
 ## Visão geral de todos os componentes {#overview-of-all-components}
 
-O [Console de Componentes](/help/sites-authoring/default-components-console.md) fornece uma visão geral dos grupos de componentes e dos componentes que são fornecidos por sua instalação do AEM. É possível visualizar as principais informações sobre os componentes individuais e seu uso.
+O [Console de Componentes](/help/sites-authoring/default-components-console.md) fornece uma visão geral dos grupos de componentes e dos componentes fornecidos por sua instalação do AEM. É possível visualizar as principais informações sobre os componentes individuais e seu uso.
 
 ## Componentes - Áreas principais {#components-major-areas}
 
 As páginas a seguir fornecem links para algumas das informações adicionais importantes sobre os componentes do:
 
-* [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) - Os Componentes principais oferecem funcionalidade de criação flexível e repleta de recursos, que fornecem tipos de conteúdo essenciais para criar páginas.
+* [Componentes principais](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/introduction) - Os Componentes principais oferecem funcionalidade de criação flexível e repleta de recursos, que fornecem tipos de conteúdo essenciais para criar páginas.
 
 * [Comunidades](/help/communities/author-communities.md) - Os componentes fornecem recursos interativos para um site, como fóruns e comentários. Muitos desses componentes são incluídos quando um [Site da Comunidade](/help/communities/overview.md) é criado.
 
-* [eCommerce](/help/commerce/cif-classic/administering/ecommerce.md) - A funcionalidade de eCommerce dentro do AEM também inclui vários componentes. O uso real pode depender do mecanismo de comércio sendo usado.
+* [eCommerce](/help/commerce/cif-classic/administering/ecommerce.md) - A funcionalidade de eCommerce do AEM também inclui vários componentes. O uso real pode depender do mecanismo de comércio sendo usado.
 
 ### Configurar componentes {#configuring-components}
 

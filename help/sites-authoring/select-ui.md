@@ -4,8 +4,8 @@ description: Configure qual interface você usa para trabalhar no Adobe Experien
 exl-id: 01cab3c3-4c0d-44d9-b47c-034de9a08cb1
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '738'
 ht-degree: 1%
@@ -31,7 +31,7 @@ Isso define a interface como o padrão ao editar páginas, embora o usuário pos
 * [Alternando para a interface clássica da sessão atual](#switching-to-classic-ui-for-the-current-session)
 Alterna para a interface clássica da sessão atual.
 
-* No caso da criação de [&#x200B; páginas, o sistema faz determinadas substituições na relação com a interface &#x200B;](#ui-overrides-for-the-editor).
+* No caso da criação de [ páginas, o sistema faz determinadas substituições na relação com a interface ](#ui-overrides-for-the-editor).
 
 >[!CAUTION]
 >
@@ -108,11 +108,9 @@ As configurações definidas por um usuário ou administrador do sistema podem s
 * Ao criar páginas:
 
    * O uso do editor clássico é forçado ao acessar a página usando `cf#` na URL. Por exemplo:
-
      `https://localhost:4502/cf#/content/geometrixx/en/products/triangle.html`
 
    * O uso do editor habilitado para toque é forçado ao usar `/editor.html` na URL ou ao usar um dispositivo de toque. Por exemplo:
-
      `https://localhost:4502/editor.html/content/geometrixx/en/products/triangle.html`
 
 * Qualquer imposição é temporária e válida somente para a sessão do navegador

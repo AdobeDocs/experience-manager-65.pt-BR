@@ -9,8 +9,8 @@ docset: aem65
 exl-id: d5cf4478-51e4-4ca8-b3f8-6d7caed7d515
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '3015'
 ht-degree: 46%
@@ -27,7 +27,7 @@ O conteúdo é adicionado usando [componentes](/help/sites-authoring/default-com
 >
 >Sua conta precisa de [direitos de acesso apropriados](/help/sites-administering/security.md) e [permissões](/help/sites-administering/security.md#permissions) para editar páginas.
 >
->Se você encontrar algum problema, o Adobe sugere que você entre em contato com o administrador do sistema.
+>Se encontrar algum problema, a Adobe sugere que você entre em contato com o administrador do sistema.
 
 >[!NOTE]
 >
@@ -422,7 +422,7 @@ Componentes herdados podem ser o resultado de vários cenários, incluindo:
 * [Lançamentos](/help/sites-authoring/launches.md) (quando com base na live copy).
 * Componentes específicos, como o Sistema de parágrafo herdado no Geometrixx.
 
-Você pode cancelar (e depois reativar) a herança. Dependendo do componente, isso pode estar disponível em:
+Você pode cancelar (e depois reabilitar) a herança. Dependendo do componente, isso pode estar disponível em:
 
 * **Live Copy**
 
