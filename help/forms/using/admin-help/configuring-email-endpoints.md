@@ -9,9 +9,9 @@ exl-id: 33583a12-4f20-4146-baa4-c9854e454bbf
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '3808'
+source-wordcount: '3805'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Os endpoints de email permitem que os usuários chamem um serviço enviando um o
 
 Para um endpoint de email, os usuários autorizados podem chamar um processo enviando arquivos por email para a conta apropriada. Os resultados serão retornados ao usuário remetente (por padrão) ou ao usuário definido nas configurações de endpoint.
 
-Antes de configurar um endpoint de email, crie uma conta de email POP3 ou IMAP para ser usada pelo endpoint. Configure uma conta separada para cada tipo de conversão. Por exemplo, uma conta pode ser configurada para gerar documentos PDF padrão a partir de anexos de arquivos recebidos, e outra conta pode ser configurada para gerar documentos PDF seguros.
+Antes de configurar um endpoint de email, crie uma conta de email POP3 ou IMAP para ser usada pelo endpoint. Configure uma conta separada para cada tipo de conversão. Por exemplo, uma conta pode ser configurada para gerar documentos padrão do PDF a partir de anexos de arquivo recebidos, e outra conta pode ser configurada para gerar documentos seguros do PDF.
 
 >[!NOTE]
 >
@@ -34,7 +34,7 @@ Antes de configurar um endpoint de email, crie uma conta de email POP3 ou IMAP p
 
 Todos os endpoints de email são configurados com um nome de usuário autorizado e uma senha para a caixa de entrada de email, que são necessários ao invocar o serviço. A conta de e-mail está protegida pelo sistema do servidor de e-mail no qual está configurada.
 
-Se os usuários enviarem documentos com caracteres de idioma europeu ocidental em nomes de caminho de conversão e arquivo, eles deverão usar um aplicativo de email que ofereça suporte aos tipos de codificação necessários (Latin1 [ISO-8859-1], Western European [Windows] ou UTF-8). Para obter mais informações, consulte o documento *Instalando e implantando formulários AEM* para o servidor de aplicativos.
+Se os usuários enviarem documentos com caracteres de idioma europeu ocidental em nomes de caminho de conversão e arquivo, eles deverão usar um aplicativo de email que ofereça suporte aos tipos de codificação necessários (Latin1 [ISO-8859-1], Western European [Windows] ou UTF-8). Para obter mais informações, consulte o documento *Instalação e implantação do AEM Forms* para o servidor de aplicativos.
 
 Antes de configurar um endpoint de email, configure o Serviço de email. (Consulte [Definir configurações padrão de ponto de extremidade de email](configuring-email-endpoints.md#configure-default-email-endpoint-settings).) Os parâmetros de configuração do serviço de email têm duas finalidades:
 
@@ -89,7 +89,7 @@ Para que o fluxo de trabalho de formulários receba e manipule mensagens de emai
 
 **Padrão do Domínio:** O padrão do nome de domínio usado para filtrar emails de entrada. Por exemplo, se adobe.com for usado, somente o email do adobe.com será processado; o email de outros domínios será ignorado.
 
-**Padrão de Arquivo:** Os padrões de anexo de arquivo de entrada aceitos pelo provedor. Isso inclui arquivos com extensões específicas (&ast;.dat, &ast;.xml), nomes específicos (dados) e expressões compostas no nome e na extensão (.[dD][aA]&#39;port&#39;). O valor padrão é &ast;.&ast;.
+**Padrão de Arquivo:** Os padrões de anexo de arquivo de entrada aceitos pelo provedor. Isso inclui arquivos com extensões específicas (&amp;ast;.dat, &amp;ast;.xml), nomes específicos (dados) e expressões compostas no nome e na extensão (.``[dD][aA]``&#39;porta&#39;). O valor padrão é &amp;ast;.&amp;ast;.
 
 **Destinatários do Trabalho Bem-sucedido:** Um ou mais endereços de email que são usados para enviar emails para indicar trabalhos bem-sucedidos. Por padrão, uma mensagem de tarefa bem-sucedida é sempre enviada ao remetente da tarefa inicial. Até 100 recipients são suportados. Para desativar essa configuração, deixe esse campo em branco.
 
@@ -167,7 +167,7 @@ Use as configurações a seguir para configurar um endpoint de email.
 
 **Padrão de Domínio:** Especifica os padrões de domínio do email de entrada que o provedor aceita. Por exemplo, se adobe.com for usado, somente o email do adobe.com será processado; o email de outros domínios será ignorado.
 
-**Padrão de Arquivo:** Especifica os padrões de anexo de arquivo de entrada aceitos pelo provedor. Isso inclui arquivos com extensões específicas (&ast;.dat, &ast;.xml), nomes específicos (dados) ou expressões compostas no nome e na extensão (&ast;.[dD][aA]&#39;port&#39;).
+**Padrão de Arquivo:** Especifica os padrões de anexo de arquivo de entrada aceitos pelo provedor. Isso inclui arquivos com extensões específicas (&amp;ast;.dat, &amp;ast;.xml), nomes específicos (dados) ou expressões compostas no nome e na extensão (&amp;ast;.`[dD][aA]`&#39;porta&#39;).
 
 **Destinatários do Trabalho Bem-sucedido:** Um endereço de email para o qual as mensagens são enviadas para indicar trabalhos bem-sucedidos. Por padrão, uma mensagem de tarefa bem-sucedida é sempre enviada ao remetente. Se você digitar remetente, os resultados do email serão enviados para ele. Até 100 recipients são suportados. Especifique recipients adicionais com endereços de email, separados por vírgulas (,).
 
@@ -199,7 +199,7 @@ Para desativar essa configuração, deixe a configuração em branco. Em alguns 
 
 **Senha SMTP:** A senha da conta SMTP. Alguns servidores de email não exigem uma senha SMTP.
 
-**Enviar de:** O endereço de email (por exemplo, user@company.com) usado para enviar notificações por email sobre resultados e erros. Se você não especificar um valor Enviar de, o servidor de email tentará determinar o endereço de email combinando o valor especificado na configuração Usuário SMTP com um domínio padrão configurado no servidor de email. Se o servidor de email não tiver um domínio padrão e você não especificar um valor para Enviar de, poderão ocorrer erros. Para garantir que as mensagens de email tenham o endereço &quot;de&quot; correto, especifique um valor para a configuração &quot;Enviar de&quot;.
+**Enviar de:** O endereço de email (por exemplo, `user@company.com`) usado para enviar notificações por email sobre resultados e erros. Se você não especificar um valor Enviar de, o servidor de email tentará determinar o endereço de email combinando o valor especificado na configuração Usuário SMTP com um domínio padrão configurado no servidor de email. Se o servidor de email não tiver um domínio padrão e você não especificar um valor para Enviar de, poderão ocorrer erros. Para garantir que as mensagens de email tenham o endereço &quot;de&quot; correto, especifique um valor para a configuração &quot;Enviar de&quot;.
 
 **SMTP SSL Habilitado:** selecione esta configuração para forçar o provedor de email a usar SSL para verificar a caixa de entrada. Certifique-se de que seu servidor de e-mail suporta SSL.
 
@@ -207,7 +207,7 @@ Para desativar essa configuração, deixe a configuração em branco. Em alguns 
 
 **assíncrono:** quando definido como síncrono, todos os documentos de entrada são processados e uma única resposta é retornada. Quando definido como assíncrono, uma resposta é enviada para cada documento processado.
 
-Por exemplo, um terminal de email é criado para um serviço que pega um único documento do Word e retorna esse documento como um arquivo PDF. Um email pode ser enviado para a caixa de entrada do ponto de extremidade que contém vários (3) documentos do Word. Quando todos os três documentos forem processados, se o endpoint estiver configurado como síncrono, um único email de resposta será enviado com todos os três documentos anexados. Se o endpoint for assíncrono, um email de resposta será enviado depois que cada documento do Word for convertido em PDF. O resultado são três emails, cada um com um único anexo PDF.
+Por exemplo, um terminal de email é criado para um serviço que pega um único documento do Word e retorna esse documento como um arquivo do PDF. Um email pode ser enviado para a caixa de entrada do endpoint que contém vários (3) documentos do Word. Quando todos os três documentos forem processados, se o endpoint estiver configurado como síncrono, um único email de resposta será enviado com todos os três documentos anexados. Se o endpoint for assíncrono, um email de resposta será enviado depois que cada documento do Word for convertido em PDF. O resultado é três emails, cada um com um único anexo do PDF.
 
 O valor padrão é assíncrono.
 
@@ -235,7 +235,7 @@ O valor padrão é assíncrono.
 
 **Literal:** O email usa o valor inserido no campo como ele é exibido.
 
-**Variável:** é possível mapear uma cadeia de caracteres do assunto do email, corpo, cabeçalho ou endereço de email do remetente. Para fazer isso, use uma das seguintes palavras-chave: %SUBJECT%, %BODY%, %HEADER% ou %SENDER%. Por exemplo, se você usar %SUBJECT%, o conteúdo do assunto do email será usado como parâmetro de entrada. Para selecionar anexos, insira um padrão de arquivo que o terminal de email possa usar para selecionar os documentos anexados. Por exemplo, inserir &ast;.pdf seleciona qualquer documento anexado que tenha uma extensão de nome de arquivo .pdf. Inserir &ast; seleciona qualquer documento anexado. Inserir example.pdf seleciona qualquer documento anexado chamado example.pdf.
+**Variável:** é possível mapear uma cadeia de caracteres do assunto do email, corpo, cabeçalho ou endereço de email do remetente. Para fazer isso, use uma das seguintes palavras-chave: %SUBJECT%, %BODY%, %HEADER% ou %SENDER%. Por exemplo, se você usar %SUBJECT%, o conteúdo do assunto do email será usado como parâmetro de entrada. Para selecionar anexos, insira um padrão de arquivo que o terminal de email possa usar para selecionar os documentos anexados. Por exemplo, inserir &amp;ast;.pdf seleciona qualquer documento anexado que tenha uma extensão de nome de arquivo .pdf. Inserir &amp;ast; seleciona qualquer documento anexado. Inserir example.pdf seleciona qualquer documento anexado chamado example.pdf.
 
 **Mapeamentos do Parâmetro de Saída:** Usado para configurar a saída do serviço e da operação. Os seguintes caracteres nos valores de mapeamento do parâmetro de saída são expandidos no nome do arquivo de anexo:
 
@@ -245,7 +245,7 @@ O valor padrão é assíncrono.
 
 Qualquer ocorrência da barra invertida (\) é substituída por %%.
 
-***observação &#x200B;**: se a mensagem de solicitação de serviço incluir vários anexos de arquivo, você não poderá usar os parâmetros %F e %E para a propriedade Mapeamentos de Parâmetros de Saída do ponto de extremidade. Se a resposta do serviço retornar vários anexos de arquivo, você não poderá especificar o mesmo nome de arquivo para mais de um anexo. Se você não seguir essas recomendações, o serviço chamado criará os nomes dos arquivos retornados, e os nomes não serão previsíveis.*
+***observação **: se a mensagem de solicitação de serviço incluir vários anexos de arquivo, você não poderá usar os parâmetros %F e %E para a propriedade Mapeamentos de Parâmetros de Saída do ponto de extremidade. Se a resposta do serviço retornar vários anexos de arquivo, você não poderá especificar o mesmo nome de arquivo para mais de um anexo. Se você não seguir essas recomendações, o serviço chamado criará os nomes dos arquivos retornados, e os nomes não serão previsíveis.*
 
 Os seguintes valores estão disponíveis:
 

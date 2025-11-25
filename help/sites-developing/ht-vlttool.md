@@ -9,7 +9,7 @@ exl-id: efbba312-9fc8-4670-b8f1-d2a86162d075
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Developer Tools
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '2687'
 ht-degree: 1%
@@ -389,7 +389,7 @@ vlt import http://localhost:4502/crx . /
 
 ### Check-out (co) {#checkout-co}
 
-Executa uma verificação inicial de um repositório JCR no sistema de arquivos local, iniciando em &lt;uri> para o sistema de arquivos local em &lt;local-path>. Você também pode adicionar um argumento &lt;jcrPath> para verificar um subdiretório da árvore remota. É possível especificar filtros Workspace que são copiados para o diretório META-INF.
+Executa uma verificação inicial de um repositório JCR no sistema de arquivos local, iniciando em &lt;uri> para o sistema de arquivos local em &lt;local-path>. Você também pode adicionar um argumento &lt;jcrPath> para verificar um subdiretório da árvore remota. É possível especificar filtros do Workspace que são copiados para o diretório META-INF.
 
 #### Sintaxe {#syntax-2}
 
@@ -443,7 +443,7 @@ analyze -l <format>|-v|-q <localPaths1> [<localPaths2> ...]
 
 |  |  |
 |--- |--- |
-| `-l (--linkFormat) <format>` | formato printf para links de hotfix (name,id), por exemplo, `[CQ520_HF_%s|%s]` |
+| `-l (--linkFormat) <format>` | formato printf para links de hotfix (name,id), por exemplo, `[CQ520_HF_%s\|%s]` |
 | `-v (--verbose)` | saída detalhada |
 | `-q (--quiet)` | imprime o mínimo possível |
 | `<localPaths> [<localPaths> ...]` | caminho local |
@@ -857,7 +857,7 @@ Quando o serviço estiver em execução, ele poderá ser configurado com os segu
 >
 >O serviço pode ser configurado com o console da Web ou um nó `sling:OsgiConfig` (com o nome `com.day.jcr.sync.impl.VaultSyncServiceImpl`) no repositório.
 >
->Ao trabalhar com AEM, há vários métodos de gerenciamento das definições de configuração desses serviços; consulte [Configurar OSGi](/help/sites-deploying/configuring-osgi.md) para obter detalhes completos.
+>Ao trabalhar com o AEM, há vários métodos de gerenciamento das definições de configuração desses serviços; consulte [Configurar OSGi](/help/sites-deploying/configuring-osgi.md) para obter detalhes completos.
 
 #### Sincronizar configuração da pasta {#sync-folder-configuration}
 

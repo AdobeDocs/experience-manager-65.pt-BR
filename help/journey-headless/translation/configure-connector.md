@@ -4,8 +4,8 @@ description: Saiba como conectar o AEM a um serviço de tradução.
 exl-id: a1a4b1ca-d353-46e2-a992-f38be6be338e
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,Language Copy
-role: Admin, Architect,Data Architect,Developer,User,Leader
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin, Developer, User, Leader
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '1143'
 ht-degree: 88%
@@ -73,7 +73,7 @@ Depois que o pacote do conector do seu serviço de tradução de preferência fo
 
 Para criar uma configuração de tradução:
 
-1. No menu de navegação global, clique em **Ferramentas** > **Cloud Service** > **Cloud Service de tradução**.
+1. No menu de navegação global, clique em **Ferramentas** > **Serviços em nuvem** > **Serviços de tradução em nuvem**.
 1. Navegue até o local em que deseja criar a configuração na estrutura do conteúdo. Geralmente, ela é baseada em um projeto específico, mas também pode ser global.
    * Por exemplo, nesse caso, pode-se criar uma configuração global que se aplique a todo o conteúdo ou uma configuração específica para o projeto WKND.
 
@@ -119,7 +119,7 @@ Para fazer isso, navegue até a raiz do idioma do conteúdo. Para os fins do nos
 
 1. Vá para a navegação global e vá para **Navegação** > **Assets** > **Arquivos**.
 1. No console de ativos, selecione a raiz do idioma a ser configurada e clique em **Propriedades**.
-1. Clique na guia **Cloud Service**.
+1. Clique na guia **Cloud Services**.
 1. Em **Configurações do Cloud Service**, na lista suspensa **Adicionar configuração**, selecione o conector. Ele deve aparecer na lista suspensa quando você tiver instalado o pacote, conforme [descrito anteriormente.](#connect-translation-provider)
 1. Em **Configurações do Cloud Service**, na lista suspensa **Adicionar configuração**, selecione também a configuração.
 1. Clique em **Salvar e fechar**.
@@ -133,11 +133,11 @@ Agora que você concluiu esta parte da jornada de tradução headless, você dev
 * Compreender os parâmetros fundamentais da estrutura de integração de tradução no AEM.
 * Ser capaz de configurar sua própria conexão com o serviço de tradução.
 
-Desenvolva esse conhecimento e continue sua jornada de tradução AEM headless revisando a seguir o documento [Configurar regras de tradução](translation-rules.md), onde você aprenderá a definir qual conteúdo traduzir.
+Desenvolva esse conhecimento e continue sua jornada de tradução headless do AEM revisando a seguir o documento [Configurar regras de tradução](translation-rules.md), onde você aprenderá a definir qual conteúdo traduzir.
 
 ## Recursos adicionais {#additional-resources}
 
 Embora seja recomendável seguir para a próxima parte da jornada de tradução headless revisando o documento [Configurar regras de tradução](translation-rules.md), veja a seguir alguns recursos adicionais e opcionais que aprofundam alguns conceitos mencionados neste documento, mas que não são necessários para continuar na jornada.
 
-* [Configuração da estrutura de integração de tradução](/help/sites-administering/tc-tic.md) - revise uma lista de conectores de tradução selecionados e saiba como configurar a estrutura de integração de tradução para integrar-se a serviços de tradução de terceiros.
+*  [Configuração da estrutura de integração de tradução](/help/sites-administering/tc-tic.md) - revise uma lista de conectores de tradução selecionados e saiba como configurar a estrutura de integração de tradução para integrar-se a serviços de tradução de terceiros.
 * [Conexão com o Microsoft Translator](/help/sites-administering/tc-msconf.md) - o AEM fornece uma conta de avaliação do Microsoft Translation para fins de teste.

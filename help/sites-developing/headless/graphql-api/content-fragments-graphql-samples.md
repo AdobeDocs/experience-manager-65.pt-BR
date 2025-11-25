@@ -1,20 +1,20 @@
 ---
-title: Saiba como usar o GraphQL com AEM - Exemplos de conteúdo e consultas
-description: Saiba como usar o GraphQL com AEM para fornecer conteúdo em headless, explorando exemplos de conteúdo e consultas.
+title: Saiba como usar o GraphQL com o AEM - Exemplos de conteúdo e consultas
+description: Saiba como usar o GraphQL com o AEM para fornecer conteúdo em headless, explorando exemplos de conteúdo e consultas.
 feature: Content Fragments,GraphQL API
 exl-id: 91c5f61c-9c15-4d72-9b9b-0c23f31e7cdc
 solution: Experience Manager, Experience Manager Sites
 role: Developer
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '1588'
-ht-degree: 83%
+source-wordcount: '1577'
+ht-degree: 82%
 
 ---
 
 # Saiba como usar o GraphQL com o AEM - Exemplos de conteúdo e consultas {#learn-graphql-with-aem-sample-content-queries}
 
-Saiba como usar o GraphQL com AEM para fornecer conteúdo em headless, explorando exemplos de conteúdo e consultas.
+Saiba como usar o GraphQL com o AEM para fornecer conteúdo em headless, explorando exemplos de conteúdo e consultas.
 
 >[!NOTE]
 >
@@ -24,7 +24,7 @@ Saiba como usar o GraphQL com AEM para fornecer conteúdo em headless, explorand
 >* [Modelos de fragmentos do conteúdo](/help/assets/content-fragments/content-fragments-models.md)
 >* [API GraphQL do AEM para uso com Fragmentos de conteúdo](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)
 
-Para começar a usar consultas do GraphQL e saber como elas funcionam com Fragmentos de conteúdo AEM, seria de ajuda ver alguns exemplos práticos.
+Para começar a usar consultas do GraphQL e saber como elas funcionam com Fragmentos de conteúdo do AEM, seria de ajuda ver alguns exemplos práticos.
 
 Para isso, consulte:
 
@@ -1622,7 +1622,7 @@ Esta consulta interroga:
 
 Esta consulta interroga:
 
-* por Fragmentos de conteúdo do tipo `article` no local `fr`
+* por Fragmentos de conteúdo do tipo `article` na localidade `fr`
 
 **Exemplo de consulta**
 
@@ -1720,7 +1720,7 @@ Os fragmentos a seguir são usados para o modelo apropriado.
 | Lincoln |  Abe | |
 | Smith | Adam |   |
 | Slade |  Cutter |  Gameblitz<br>Gamestar |
-| Marsh |  Duke |   |   |
+| Marsh |  Duke |   |
 |  Smith |  Joe |   |
 | Croft |  Lara | Gamestar |
 | Caulfield |  Max |  Gameblitz |
@@ -1738,10 +1738,10 @@ Os fragmentos a seguir são usados para o modelo apropriado.
 
 | Nome | País | População | Categorias |
 |--- |--- |--- |--- |
-| Basileia | Suíça | 172258 | city:emea |
-| Berlim | Alemanha | 3669491 | city:capital<br>city:emea |
-| Bucareste | Romênia | 1821000 |  city:capital<br>city:emea |
-| São Francisco |  EUA |  883306 |  city:beach<br>city:na |
-| San Jose |  EUA |  102635 |  city:na |
-| Stuttgart |  Alemanha |  634830 |  city:emea |
-|  Zurique |  Suíça |  415367 |  city:capital<br>city:emea |
+| Basileia | Suíça | 172258 | cidade:emea |
+| Berlim | Alemanha | 3669491 | cidade:capital<br>cidade:emea |
+| Bucareste | Romênia | 1821000 |  cidade:capital<br>cidade:emea |
+| São Francisco |  EUA |  883306 |  cidade:beach<br>cidade:na |
+| San Jose |  EUA |  102635 |  cidade:na |
+| Stuttgart |  Alemanha |  634830 |  cidade:emea |
+|  Zurique |  Suíça |  415367 |  cidade:capital<br>cidade:emea |

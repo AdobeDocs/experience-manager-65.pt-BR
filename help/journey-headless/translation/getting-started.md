@@ -4,8 +4,8 @@ description: Saiba como organizar seu conteúdo headless e como funcionam as fer
 exl-id: 764f78a7-1d3d-4406-85b1-b80dffae2350
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,Language Copy
-role: Admin, Architect,Data Architect,Developer,User,Leader
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin, Developer, User, Leader
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '1472'
 ht-degree: 85%
@@ -35,7 +35,7 @@ Este documento ajuda você a entender como começar a traduzir conteúdo headles
 
 ## Requisitos e pré-requisitos {#requirements-prerequisites}
 
-Há vários requisitos antes de começar a traduzir o conteúdo do AEM headless.
+Há vários requisitos antes de começar a traduzir o conteúdo headless do AEM.
 
 ### Conhecimento {#knowledge}
 
@@ -88,12 +88,11 @@ Como os Modelos de conteúdo definem a estrutura do seu conteúdo, é necessári
 1. O **Editor do modelo de fragmento de conteúdo** abre.
    1. A coluna esquerda contém os campos do modelo. Essa coluna nos interessa.
    1. A coluna direita contém os campos que podem ser adicionados ao modelo. Essa coluna pode ser ignorada.
-
       ![Editor de modelos de fragmentos do conteúdo](assets/content-fragment-model-editor.png)
 1. Clique em um dos campos do modelo. O AEM o marca e os detalhes desse campo são mostrados na coluna direita.
    ![Detalhe do Editor de modelo de fragmento de conteúdo](assets/content-fragment-model-editor-detail.png)
 
-Anote o campo **Nome da Propriedade** para todos os campos que devem ser traduzidos. Essas informações serão necessárias posteriormente na jornada. Esses **Nome da propriedade** s são necessários para informar ao AEM quais campos do seu conteúdo devem ser traduzidos.
+Anote o campo **Nome da Propriedade** para todos os campos que devem ser traduzidos. Essas informações serão necessárias posteriormente na jornada. Esses **Nomes de propriedade** s são necessários para informar à AEM quais campos do seu conteúdo devem ser traduzidos.
 
 >[!TIP]
 >
@@ -184,7 +183,7 @@ Agora que você concluiu esta parte da jornada de tradução headless, você dev
 * Entenda como o AEM armazena conteúdo headless.
 * Se familiarizar com as ferramentas de tradução do AEM.
 
-Desenvolva esse conhecimento e continue sua jornada de tradução AEM headless revisando a seguir o documento [Configurar a integração de tradução](configure-connector.md), onde você aprenderá a conectar o AEM a um serviço de tradução.|
+Desenvolva esse conhecimento e continue sua jornada de tradução headless do AEM revisando a seguir o documento [Configurar a integração de tradução](configure-connector.md), onde você aprenderá a conectar o AEM a um serviço de tradução.|
 
 ## Recursos adicionais {#additional-resources}
 
@@ -196,4 +195,4 @@ Embora seja recomendável que você passe para a próxima parte da jornada de tr
 * [Gerenciamento de projetos de tradução](/help/sites-administering/tc-manage.md) - Saiba como criar e gerenciar projetos de tradução automática e humana no AEM.
 * Uma [Introdução ao AEM as a Headless CMS](/help/sites-developing/headless/introduction.md)
 * O [Portal do Desenvolvedor do AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=pt-BR)
-* [Tutorials para Headless no AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=pt-BR)
+* [Tutoriais do Headless no AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/getting-started-with-aem-headless/overview)

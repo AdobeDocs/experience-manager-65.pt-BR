@@ -4,8 +4,8 @@ description: Os Projetos do AEM podem ser implementados em um modelo headful ou 
 exl-id: c9597c78-be05-42ff-84fe-f7451119e83d
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
-role: Admin,Architect,Data Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin,Developer
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '1023'
 ht-degree: 88%
@@ -14,11 +14,11 @@ ht-degree: 88%
 
 # Headful e Headless no AEM {#headful-headless}
 
-Os projetos do Adobe Experience Manager podem ser implementados em modelos headful ou headless, mas a escolha não precisa ser binária. O AEM oferece a flexibilidade para explorar as vantagens de ambos os modelos em um projeto. Este documento fornece uma visão geral dos diferentes modelos e descreve os níveis de integração do SPA.
+Os projetos do Adobe Experience Manager podem ser implementados em modelos headful ou headless, mas a escolha não precisa ser binária. O AEM oferece a flexibilidade para explorar as vantagens de ambos os modelos em um projeto. Este documento fornece uma visão geral dos diferentes modelos e descreve os níveis de integração de SPA.
 
 ## Visão geral {#overview}
 
-O AEM oferece ferramentas eficientes para gerenciar a criação de conteúdo e sua entrega em uma única plataforma. É um modelo “headful” tradicional de gestão de conteúdo, em que os autores e desenvolvedores de conteúdo trabalham na mesma plataforma para fornecer as experiências aos consumidores de conteúdo.
+O AEM oferece ferramentas eficientes para gerenciar a criação de conteúdo e sua entrega em uma única plataforma. É um modelo “headful” tradicional de gerenciamento de conteúdo, em que os autores e desenvolvedores de conteúdo trabalham na mesma plataforma para fornecer as experiências aos consumidores de conteúdo.
 
 O AEM também pode ser usado para simplesmente gerenciar o conteúdo, permitindo que a apresentação e a entrega do conteúdo sejam gerenciadas por outra plataforma. Esse é o modelo “headless” de gerenciamento de conteúdo, em que os autores e desenvolvedores de conteúdo trabalham em plataformas diferentes para fornecer experiência aos consumidores de conteúdo.
 
@@ -26,11 +26,11 @@ Mas essa não precisa ser uma escolha binária. O AEM oferece flexibilidade sem 
 
 ![Modelos de implementação do AEM](/help/sites-developing/headless/getting-started/assets/aem-implementation-models.png)
 
-Em um modelo headful ou de pilha completa, o conteúdo é gerenciado no repositório AEM e os componentes AEM com base em Java, HTL e assim por diante são usados para renderizar o conteúdo para a experiência do usuário. Neste modelo, a criação de conteúdo, o estilo, a apresentação e a entrega acontecem no AEM.
+Em um modelo com cabeçalho ou de pilha completa, o conteúdo é gerenciado no repositório do AEM e os componentes do AEM com base em Java, HTL e assim por diante são usados para renderizar o conteúdo para a experiência do usuário. Neste modelo, a criação de conteúdo, o estilo, a apresentação e a entrega acontecem no AEM.
 
 Em um modelo headless, o conteúdo é gerenciado no repositório do AEM, mas entregue por APIs, como REST e GraphQL, a outro sistema para renderizar o conteúdo da experiência do usuário. Neste modelo, o conteúdo é criado no AEM, mas a estilização, a apresentação e a entrega acontecem em outra plataforma.
 
-Aplicativos de página única (SPAs) geralmente são o destino para o conteúdo entregue de forma headless pelo AEM. No entanto, esses SPA não precisam ser totalmente externos ao AEM. AEM permite que você decida em que grau seu SPA é integrado ao AEM. Vamos ver um exemplo.
+Aplicativos de página única (SPAs) geralmente são o destino para o conteúdo entregue de forma headless pelo AEM. No entanto, esses SPAs não precisam ser totalmente externos ao AEM. O AEM permite decidir em que grau seus SPAs são integrados ao AEM. Vamos ver um exemplo.
 
 ## Exemplo de loja virtual {#web-shop-example}
 
@@ -39,14 +39,14 @@ Digamos que você tem uma loja virtual para sua empresa como SPA. Nela, você te
 * **Permite que os sistemas funcionem de forma independente.**
 * **Forneça conteúdo limitado à loja virtual do AEM via GraphQL.** O conteúdo pode ser criado por autores no AEM, mas pode ser visto apenas por meio do SPA da loja virtual.
 * **Incorpore o SPA da loja virtual no AEM.** O conteúdo pode ser criado por autores no AEM e visualizado no AEM no contexto da loja virtual, mas não pode ser manipulado.
-* **Incorpore o SPA da loja virtual no AEM e ative pontos editáveis.** O conteúdo pode ser criado por autores no AEM e visualizado no AEM no contexto da loja virtual, e os autores têm capacidade limitada de manipular o conteúdo do SPA da loja virtual no AEM.
-* **Incorpore o SPA da loja virtual no AEM e ative zonas inteiras para edição.** O conteúdo pode ser criado por autores no AEM e visualizado no AEM no contexto da loja virtual, e os autores têm capacidade limitada de manipular o conteúdo do SPA da loja virtual no AEM.
+* **Incorpore o SPA da loja virtual no AEM e habilite pontos editáveis.** O conteúdo pode ser criado por autores no AEM e visualizado no AEM no contexto da loja virtual, e os autores têm capacidade limitada de manipular o conteúdo do SPA da loja virtual no AEM.
+* **Incorpore o SPA da loja virtual no AEM e habilite zonas inteiras para edição.** O conteúdo pode ser criado por autores no AEM e visualizado no AEM no contexto da loja virtual, e os autores têm capacidade limitada de manipular o conteúdo do SPA da loja virtual no AEM.
 
 A próxima seção explora esses níveis de integração com mais detalhes.
 
 >[!NOTE]
 >
->É claro que você também poderia reimplementar o SPA da loja virtual como um SPA totalmente funcional do AEM [usando a estrutura do Editor de SPA do AEM.](/help/sites-developing/spa-walkthrough.md) Se você já tem AEM e deseja criar uma loja na web ou outro SPA, este é o método recomendado, mas está fora do escopo deste documento.
+>É claro que você também poderia reimplementar o SPA da loja virtual como um SPA totalmente funcional do AEM [usando a estrutura do Editor de SPA do AEM.](/help/sites-developing/spa-walkthrough.md) Se você já tiver o AEM e quiser criar uma loja na Web ou outro SPA, este é o método recomendado, mas está fora do escopo deste documento.
 
 ## Níveis de integração de SPA {#integration-levels}
 
@@ -66,7 +66,7 @@ A integração de SPA se enquadra em quatro níveis no AEM.
    * Alguns conteúdos são gerenciados no AEM e outros em um sistema externo.
    * O conteúdo pode ser visualizado em contexto no AEM.
    * Conteúdo limitado pode ser editado no AEM.
-* **Nível 3: incorporar e ativar totalmente o SPA no AEM**
+* **Nível 3: incorporar e habilitar totalmente o SPA no AEM**
    * [Fragmentos de conteúdo](/help/assets/content-fragments/content-fragments.md) são usados no AEM para criar e gerenciar conteúdo para o SPA.
    * O SPA recupera esse conteúdo por meio da [API GraphQL](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) do AEM.
    * O conteúdo pode ser visualizado em contexto no AEM.

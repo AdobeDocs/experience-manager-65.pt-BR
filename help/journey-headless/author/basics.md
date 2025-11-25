@@ -4,8 +4,8 @@ description: Saiba mais sobre os conceitos e os mecanismos de criação de conte
 exl-id: 125c4d0b-1572-4dba-823d-cdef2778f275
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
-role: Admin, Architect,Data Architect,Developer,User,Leader
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin, Developer, User, Leader
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '1694'
 ht-degree: 73%
@@ -58,12 +58,12 @@ A primeira vez que você efetuar o logon, um pequeno tutorial online destacará 
 
 Em seguida, você pode usar o Painel de navegação para acessar as áreas-chave do AEM. Para fragmentos de conteúdo, você usará o **Console do Assets**.
 
-O Painel de navegação pode ser aberto selecionando o ícone Adobe no canto superior esquerdo, seguido pelo ícone de bússola pequeno:
+O Painel de navegação pode ser aberto selecionando o ícone Adobe na parte superior esquerda, seguido pelo ícone de bússola pequena:
 
 ![Painel Navegação](/help/journey-headless/author/assets/headless-journey-author-navigation-01.png)
 
 >[!NOTE]
->Embora os Fragmentos de Conteúdo sejam um recurso do AEM **Sites**, eles são encontrados no console **Assets**. Este é um detalhe técnico que não deve afetar você, mas que pode ser útil.
+>Embora os Fragmentos de Conteúdo sejam um recurso do AEM **Sites**, eles foram encontrados no console **Assets**. Este é um detalhe técnico que não deve afetar você, mas que pode ser útil.
 
 No console, é possível selecionar pastas para navegar até o fragmento de conteúdo ou as navegações estruturais (no cabeçalho) para navegar de volta até a árvore.
 
@@ -129,7 +129,7 @@ Em seguida, navegue por essas pastas para criar e editar os Fragmentos de conte�
 
 Por segurança...
 
-Você provavelmente receberá uma pasta inicial em que poderá criar suas pastas. Isso ocorre porque alguns detalhes de configuração devem ser aplicados (geralmente por um Desenvolvedor ou Administrador do Sistema) à pasta raiz. Isso provavelmente não é de seu interesse, mas se necessário você pode verificar a **Configuração** nos **Cloud Service** da pasta **Propriedades**:
+Você provavelmente receberá uma pasta inicial em que poderá criar suas pastas. Isso ocorre porque alguns detalhes de configuração devem ser aplicados (geralmente por um Desenvolvedor ou Administrador do Sistema) à pasta raiz. Isso provavelmente não é de seu interesse, mas se necessário você pode verificar a **Configuração** nos **Serviços da Nuvem** da pasta **Propriedades**:
 
 ![Criar propriedades de pasta - Configuração](/help/journey-headless/author/assets/headless-journey-author-folder-03.png)
 

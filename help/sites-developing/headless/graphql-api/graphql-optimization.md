@@ -4,8 +4,8 @@ description: Saiba como otimizar suas consultas do GraphQL ao filtrar, paginar e
 exl-id: 47d0570b-224e-4109-b94e-ccc369d7ac5f
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
-role: Admin,Architect,Data Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin,Developer
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '1949'
 ht-degree: 57%
@@ -22,7 +22,7 @@ Essas diretrizes são fornecidas para ajudar a evitar problemas de desempenho co
 
 ## Lista de verificação do GraphQL {#graphql-checklist}
 
-A lista de verificação a seguir tem como objetivo ajudar você a otimizar a configuração e o uso do GraphQL no as a Cloud Service do Adobe Experience Manager (AEM).
+A lista de verificação a seguir tem como objetivo ajudar você a otimizar a configuração e o uso do GraphQL no Adobe Experience Manager (AEM) as a Cloud Service.
 
 ### Primeiros princípios {#first-principles}
 
@@ -32,7 +32,7 @@ A lista de verificação a seguir tem como objetivo ajudar você a otimizar a co
 
 O uso de consultas persistentes do GraphQL é altamente recomendado.
 
-As consultas persistentes do GraphQL ajudam a reduzir o desempenho da execução da consulta utilizando a Rede de entrega de conteúdo (CDN). Os aplicativos clientes solicitam consultas persistentes com solicitações GET para execução habilitada para fast edge.
+As consultas persistentes do GraphQL ajudam a reduzir o desempenho da execução da consulta utilizando a Rede de entrega de conteúdo (CDN). Os aplicativos clientes solicitam consultas persistentes com solicitações do GET para execução habilitada para fast edge.
 
 **Mais referências**
 
@@ -45,7 +45,7 @@ Consulte:
 
 **Recomendação**
 
-Clientes usando o GraphQL *must* instalam o Fragmento de conteúdo do Experience Manager com o pacote de índice GraphQL. Isso permite adicionar a definição de índice necessária com base nos recursos que eles realmente usam. A falha na instalação deste pacote pode resultar em consultas lentas ou com falha do GraphQL.
+Os clientes que usam o GraphQL *devem* instalar o Pacote de Índice do Fragmento de Conteúdo do Experience Manager com GraphQL. Isso permite adicionar a definição de índice necessária com base nos recursos que eles realmente usam. A falha na instalação deste pacote pode resultar em consultas lentas ou com falha do GraphQL.
 
 Consulte as Notas de versão da versão apropriada para seu Service Pack. Por exemplo, para obter o Service Pack mais recente, consulte [Instalar pacote de índice do GraphQL para fragmentos de conteúdo do Experience Manager](/help/release-notes/release-notes.md#install-aem-graphql-index-add-on-package).
 
@@ -62,7 +62,7 @@ Consulte:
 
 Vários métodos de armazenamento em cache também podem ser usados para otimização.
 
-#### Ativar o armazenamento em cache do AEM Dispatcher {#enable-aem-dispatcher-caching}
+#### Ativar o cache do AEM Dispatcher {#enable-aem-dispatcher-caching}
 
 **Recomendação**
 
@@ -84,7 +84,7 @@ As consultas do GraphQL e suas respostas JSON podem ser armazenadas em cache se 
 
 Consulte:
 
-* [Usando CDN no AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=pt-BR#using-dispatcher-with-a-cdn)
+* [Usando a CDN no AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=pt-BR#using-dispatcher-with-a-cdn)
 
 #### Definir cabeçalhos de controle de cache HTTP {#set-http-cache-control-headers}
 
@@ -149,7 +149,7 @@ O AEM fornece duas abordagens para a otimização de consultas de GraphQL:
 
 Cada abordagem tem seus próprios casos de uso e limitações. Esta seção fornece informações sobre a Filtragem e Paginação Híbridas, juntamente com algumas das [práticas recomendadas](#best-practices) para uso na otimização de consultas do GraphQL.
 
-#### Usar filtragem híbrida do AEM GraphQL {#use-aem-graphql-hybrid-filtering}
+#### Usar a filtragem híbrida do AEM GraphQL {#use-aem-graphql-hybrid-filtering}
 
 **Recomendação**
 
@@ -165,7 +165,7 @@ Essa técnica mantém a flexibilidade que os filtros de GraphQL oferecem e deleg
 
 >[!NOTE]
 >
->A filtragem híbrida de AEM requer a atualização dos fragmentos de conteúdo existentes
+>A Filtragem híbrida do AEM exige a atualização dos fragmentos de conteúdo existentes
 
 **Mais referências**
 
@@ -180,7 +180,7 @@ Consulte:
 
 O tempo de resposta de consultas complexas, com grandes conjuntos de resultados, pode ser melhorado ao segmentar respostas em partes usando paginação, um padrão do GraphQL.
 
-O GraphQL no AEM suporta dois tipos de paginação:
+O GraphQL no AEM oferece suporte a dois tipos de paginação:
 
 * [paginação baseada em limite/deslocamento](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#list-offset-limit)
 Isso é usado para consultas de lista; elas terminam com `List`; por exemplo, `articleList`.
@@ -337,6 +337,6 @@ Modifique somente os Fragmentos de conteúdo e seus recursos, usando a interface
 
 ### Testar suas consultas {#test-your-queries}
 
-O processamento de consultas do GraphQL GET é semelhante ao processamento de consultas de pesquisa, e é significativamente mais complexo do que as simples solicitações de API de conteúdo completo.
+O processamento de consultas do GraphQL é semelhante ao processamento de consultas de pesquisa, e é significativamente mais complexo do que as simples solicitações de API de todo o conteúdo do GET.
 
 Planejar, testar e otimizar cuidadosamente suas consultas em um ambiente controlado não relacionado à produção é fundamental para o sucesso posterior, quando usado na produção.

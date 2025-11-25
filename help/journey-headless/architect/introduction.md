@@ -4,8 +4,8 @@ description: Uma introdução aos recursos headless avançados e flexíveis do A
 exl-id: 49ba0d6d-dde4-42e2-92fd-c7655c0eebc0
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
-role: Admin, Architect,Data Architect
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin, Developer
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '720'
 ht-degree: 76%
@@ -23,7 +23,7 @@ Este documento ajuda você a entender a entrega de conteúdo headless, como o AE
 
 ## Objetivo {#objective}
 
-* **Público**: iniciante
+* **Público-alvo**: iniciante
 * **Objetivo**: apresentar os conceitos e a terminologia relevantes para a Modelagem de conteúdo headless.
 
 ## Entregar conteúdo em pilha completa {#full-stack}
@@ -32,7 +32,7 @@ Desde a ascensão dos sistemas de gerenciamento de conteúdo (CMS) de larga esca
 
 ![O CMS clássico de pilha completa](/help/journey-headless/developer/assets/full-stack.png)
 
-Em um CMS de pilha completa, toda a funcionalidade para manipular conteúdo está no CMS. Os recursos do sistema constituem componentes diferentes da pilha do CMS. A solução de pilha completa tem muitas vantagens.
+Em uma CMS de pilha completa, toda a funcionalidade para manipular conteúdo está no CMS. Os recursos do sistema constituem componentes diferentes da pilha do CMS. A solução de pilha completa tem muitas vantagens.
 
 * Há um sistema para manter.
 * O conteúdo é gerenciado centralmente.
@@ -53,7 +53,7 @@ Quando falamos de um CMS headless, o CMS gerencia o conteúdo e continua a entre
 
 ![CMS headless](/help/journey-headless/developer/assets/headless-cms.png)
 
-Os serviços de consumo, sejam experiências de RA, uma loja na Web, experiências móveis, aplicativos web progressivos (PWA) e assim por diante, recebem conteúdo do CMS headless e fornecem sua própria renderização. Eles fornecem suas próprias interfaces para o conteúdo.
+Os serviços de consumo, sejam experiências de RA, um webshop, experiências móveis, aplicativos web progressivos (PWAs) e assim por diante, recebem conteúdo do CMS headless e fornecem sua própria renderização. Eles fornecem suas próprias interfaces para o conteúdo.
 
 Omitir a interface simplifica o CMS ao remover a complexidade. Isso também altera a responsabilidade de renderizar o conteúdo para os serviços que realmente precisam do conteúdo e que geralmente são mais adequados para essa renderização.
 
@@ -71,7 +71,7 @@ Isso é mais um detalhe de desenvolvimento, mas pode interessar a você, apenas 
 
 Depois de criar os modelos de fragmento de conteúdo e de os autores os usarem para gerar o conteúdo, os aplicativos headless devem acessar esse conteúdo.
 
-O Adobe Experience Manager (AEM) pode acessar seletivamente os fragmentos de conteúdo usando a API do GraphQL do AEM para retornar somente o conteúdo necessário. Usando a API, um desenvolvedor pode formular consultas que selecionam conteúdo específico. Esse processo de seleção se baseia em *seus* Modelos de fragmentos de conteúdo.
+O Adobe Experience Manager (AEM) pode acessar seletivamente os fragmentos de conteúdo usando a API GraphQL do AEM para retornar somente o conteúdo necessário. Usando a API, um desenvolvedor pode formular consultas que selecionam conteúdo específico. Esse processo de seleção se baseia em *seus* Modelos de fragmentos de conteúdo.
 
 Isso significa que seu projeto pode realizar a entrega headless de conteúdo estruturado para uso em seus aplicativos.
 
@@ -85,5 +85,5 @@ Agora que você aprendeu os conceitos e a terminologia, o próximo passo é [Sab
    * [Saiba mais sobre o desenvolvimento headless do CMS](/help/journey-headless/developer/learn-about.md)
    * [Saiba como modelar seu conteúdo](/help/journey-headless/developer/model-your-content.md)
 * [Introdução ao AEM as a Headless CMS](/help/sites-developing/headless/introduction.md)
-* [Portal do desenvolvedor do AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=pt-BR)
-* [Tutorials para Headless no AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=pt-BR)
+* [Portal do Desenvolvedor do AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=pt-BR)
+* [Tutoriais do Headless no AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/getting-started-with-aem-headless/overview)

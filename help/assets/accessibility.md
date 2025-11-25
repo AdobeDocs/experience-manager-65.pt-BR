@@ -3,10 +3,10 @@ title: Recursos e interfaces acessíveis do  [!DNL Experience Manager Assets]
 description: Saiba como os recursos de acessibilidade do  [!DNL Adobe Experience Manager] 6.5 [!DNL Assets] ajudam usuários portadores de deficiências.
 contentOwner: AG
 feature: Asset Management
-role: User, Architect, Leader
+role: User, Developer, Leader
 exl-id: 15555941-99a2-4586-8d7b-b22f3ec17805
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '1898'
 ht-degree: 0%
@@ -31,7 +31,7 @@ Possible topics to cover in this article are below.
 
 # Recursos de acessibilidade em [!DNL Adobe Experience Manager Assets] {#accessibility-in-aem-assets}
 
-O [!DNL Adobe Experience Manager] permite que criadores e editores de conteúdo ofereçam experiências surpreendentes na Web. O Adobe se esforça para incluir os criadores com deficiência, melhorando a acessibilidade do [!DNL Experience Manager]. O software é aprimorado continuamente para atender às necessidades de todos os tipos de usuários e aderir aos padrões mundiais que incluem indivíduos com deficiências visuais, auditivas, de mobilidade ou outras.
+O [!DNL Adobe Experience Manager] permite que criadores e editores de conteúdo ofereçam experiências surpreendentes na Web. A Adobe se esforça para incluir os criadores com deficiência melhorando a acessibilidade do [!DNL Experience Manager]. O software é aprimorado continuamente para atender às necessidades de todos os tipos de usuários e aderir aos padrões mundiais que incluem indivíduos com deficiências visuais, auditivas, de mobilidade ou outras.
 
 O [!DNL Experience Manager] publica informações de conformidade que descrevem os padrões aos quais segue, descreve os recursos de acessibilidade no produto e o nível de conformidade. Os relatórios de conformidade de acessibilidade ajudam [!DNL Experience Manager] usuários a entender o nível de adesão a vários padrões. Os aprimoramentos feitos no [!DNL Assets] permitem que todos os usuários usem as interfaces facilmente por meio de teclado, leitor de tela, ampliadores e outras tecnologias de assistência.
 
@@ -228,4 +228,4 @@ Para fornecer feedback, fazer perguntas e solicitar aprimoramentos do produto re
 >* [Recursos de acessibilidade em [!DNL Dynamic Media]](/help/assets/accessibility-dm.md).
 >* [Notas de versão das melhorias feitas em cada versão do Service Pack](/help/release-notes/release-notes.md).
 >* [[!DNL Adobe Experience Manager] orientação de acessibilidade](/help/managing/web-accessibility.md).
->* [Relatórios de conformidade (ACR) e listagem VPAT para soluções Adobe](https://www.adobe.com/accessibility/compliance.html).
+>* [Relatórios de conformidade (ACR) e listagem VPAT para soluções da Adobe](https://www.adobe.com/accessibility/compliance.html).

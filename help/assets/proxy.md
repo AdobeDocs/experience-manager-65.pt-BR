@@ -2,11 +2,11 @@
 title: Desenvolvimento de proxy [!DNL Assets]
 description: Um proxy é uma instância  [!DNL Experience Manager]  que usa trabalhadores proxy para processar trabalhos. Saiba como configurar um  [!DNL Experience Manager] proxy, operações com suporte, componentes proxy e como desenvolver um trabalhador proxy personalizado.
 contentOwner: AG
-role: Admin, Architect
+role: Admin, Developer
 exl-id: 42fff236-b4e1-4f42-922c-97da32a933cf
 solution: Experience Manager, Experience Manager Assets
 feature: Proxy Workers
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '824'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 [!DNL Adobe Experience Manager Assets] usa um proxy para distribuir o processamento de determinadas tarefas.
 
-Um proxy é uma instância de Experience Manager específica (e às vezes separada) que usa trabalhadores proxy como processadores responsáveis por lidar com um trabalho e criar um resultado. Um trabalhador proxy pode ser usado para uma grande variedade de tarefas. Se houver um proxy [!DNL Assets], ele poderá ser usado para carregar ativos para renderização no Assets. Por exemplo, o [trabalhador de proxy de IDS](indesign.md) usa um Servidor [!DNL Adobe InDesign] para processar arquivos para uso no Assets.
+Um proxy é uma instância específica (e às vezes separada) do Experience Manager que usa trabalhadores proxy como processadores responsáveis por lidar com um trabalho e criar um resultado. Um trabalhador proxy pode ser usado para uma grande variedade de tarefas. Se houver um proxy [!DNL Assets], ele poderá ser usado para carregar ativos para renderização no Assets. Por exemplo, o [trabalhador de proxy de IDS](indesign.md) usa um Servidor [!DNL Adobe InDesign] para processar arquivos para uso no Assets.
 
 Quando o proxy é uma instância [!DNL Experience Manager] separada, isso ajuda a reduzir a carga na(s) instância(s) de criação [!DNL Experience Manager]. Por padrão, o [!DNL Assets] executa as tarefas de processamento de ativos na mesma JVM (externalizada via Proxy) para reduzir a carga na instância de criação [!DNL Experience Manager].
 
@@ -105,7 +105,7 @@ Veja a seguir um exemplo de uso da API:
  proxyJobService.removeJob(jobId);
 ```
 
-### configurações de Cloud Service {#cloud-service-configurations}
+### Configurações do Cloud Service {#cloud-service-configurations}
 
 <!-- TBD: Cannot find com.day.cq.dam.api.proxy at https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html which were generated in May 2020. Hiding this broken link for now.
 >[!NOTE]
@@ -117,7 +117,7 @@ As configurações de proxy e de trabalho de proxy estão disponíveis por meio 
 
 >[!NOTE]
 >
->Consulte [Configuração de Trabalho de Proxy de InDesign Server](indesign.md#configuring-the-proxy-worker-for-indesign-server) e [Configuração de Cloud Service](../sites-developing/extending-cloud-config.md) para obter mais informações.
+>Consulte [Configuração do InDesign Server Proxy Worker](indesign.md#configuring-the-proxy-worker-for-indesign-server) e [Configuração do Cloud Services](../sites-developing/extending-cloud-config.md) para obter mais informações.
 
 Veja a seguir um exemplo de uso da API:
 
@@ -136,7 +136,7 @@ Veja a seguir um exemplo de uso da API:
 
 ### Desenvolvimento de um Worker de proxy personalizado {#developing-a-customized-proxy-worker}
 
-O [trabalhador de proxy de IDS](indesign.md) é um exemplo de um trabalhador de proxy [!DNL Assets] que já foi fornecido pronto para uso para terceirizar o processamento de ativos de InDesign.
+O [trabalhador proxy de IDS](indesign.md) é um exemplo de um trabalhador proxy [!DNL Assets] que já foi fornecido pronto para uso para terceirizar o processamento de ativos do InDesign.
 
 Você também pode desenvolver e configurar seu próprio [!DNL Assets] proxy worker para criar um worker especializado para despachar e terceirizar suas tarefas de processamento de [!DNL Assets].
 
@@ -188,4 +188,4 @@ O diagrama e as etapas a seguir detalham como proceder:
 >
 >Sincronização dos resultados:
 >
->Com n instâncias usando o mesmo proxy, o resultado do processamento permanece com o proxy. É o trabalho do cliente (Experience Manager Author) solicitar o resultado usando a mesma ID de trabalho exclusiva fornecida ao cliente na criação do trabalho. O proxy simplesmente faz o trabalho e mantém o resultado pronto para ser solicitado.
+>Com n instâncias usando o mesmo proxy, o resultado do processamento permanece com o proxy. É o trabalho do cliente (Autor do Experience Manager) solicitar o resultado usando a mesma ID de trabalho exclusiva fornecida ao cliente na criação do trabalho. O proxy simplesmente faz o trabalho e mantém o resultado pronto para ser solicitado.

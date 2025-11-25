@@ -9,8 +9,8 @@ docset: aem65
 exl-id: 9672f7a4-82b7-4175-874d-181846115442
 solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
-role: Admin,Architect,Data Architect,Developer,Leader
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin,Developer,Leader
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '6926'
 ht-degree: 0%
@@ -36,7 +36,7 @@ Os testes de aceitação são usados para confirmar que:
 * Os usuários aceitam a solução e podem considerar trabalhar com ela.
 * O cliente aceita o projeto.
 
-Quanto mais cedo você planejar e projetar seus testes de aceitação, mais fácil será a implantação final. Eles devem ser definidos juntamente com o cliente e sua equipe de Controle de qualidade.
+Quanto mais cedo você planejar e projetar seus testes de aceitação, mais fácil será a implantação final. Eles devem ser definidos juntamente com o cliente e sua equipe do Quality Assurance.
 
 Embora talvez não seja possível definir todos os detalhes no início do projeto, as definições iniciais devem ser discutidas e acordadas. Os testes de aceitação provavelmente serão baseados nos requisitos fundamentais (funcional e de desempenho).
 
@@ -52,25 +52,25 @@ A [Lista de Verificação de Segurança do Adobe](/help/sites-administering/secu
 
 O Portal de suporte do Adobe permite que os parceiros e clientes de implementação configurem a implementação do AEM como um projeto no Portal de suporte.
 
-É possível registrar detalhes; por exemplo, sobre as tecnologias e versões implementadas. Elas proporcionam transparência entre o cliente e o Adobe.
+É possível registrar detalhes; por exemplo, sobre as tecnologias e versões implementadas. Elas proporcionam transparência entre o cliente e a Adobe.
 
 ### Treinamento do administrador do AEM {#aem-administrator-training}
 
-Treinamento para a equipe administrativa da solução. Consulte os [Serviços de treinamento do Adobe](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager) para obter mais informações.
+Treinamento para a equipe administrativa da solução. Consulte os [Serviços de Treinamento da Adobe](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager) para obter mais informações.
 
 ### Treinamento do autor do AEM {#aem-author-training}
 
-Treinamento para a equipe que produzirá (criará) conteúdo para a solução. Consulte os [Serviços de treinamento do Adobe](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager) para obter mais informações.
+Treinamento para a equipe que produzirá (criará) conteúdo para a solução. Consulte os [Serviços de Treinamento da Adobe](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager) para obter mais informações.
 
 ### Exame de certificação AEM {#aem-certification-exam}
 
-Verifique se as pessoas apropriadas estão registradas para fazer os [exames de certificação](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager) relevantes.
+Verifique se as pessoas apropriadas estão registradas para fazer os [exames de certificação](https://training.adobe.com/certification/exams.html#p=1&solution=adobeExperienceManager) relevantes.
 
-### Certificado por AEM {#aem-certified}
+### AEM Certified {#aem-certified}
 
-Certifique-se de que o perfil apropriado tenha passado nos [exames de certificação](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager) relevantes.
+Certifique-se de que o perfil apropriado tenha passado nos [exames de certificação](https://training.adobe.com/certification/exams.html#p=1&solution=adobeExperienceManager) relevantes.
 
-### Treinamento técnico em AEM {#aem-technical-training}
+### Treinamento técnico da AEM {#aem-technical-training}
 
 Fornecer treinamento técnico para a pessoa apropriada; por exemplo, desenvolvedores, arquitetos, engenheiros e profissionais de negócios.
 
@@ -101,15 +101,15 @@ Tem como foco:
 
 ### Tarefas de manutenção específicas do aplicativo definidas {#application-specific-maintenance-tasks-defined}
 
-Além das tarefas de manutenção padrão do Adobe Experience Manager (AEM), é necessário definir outras tarefas operacionais que devem ser executadas para a manutenção contínua da solução.
+Além das tarefas de manutenção padrão do Adobe Experience Manager (AEM), você deve definir outras tarefas operacionais que devem ser executadas para a manutenção contínua da solução.
 
 ### Equipe devidamente treinada {#appropriately-trained-staff}
 
 Certifique-se de que sua equipe seja composta pela equipe com o treinamento adequado. Para equipes de projeto, a recomendação é ter todos os seguintes itens:
 
-* pelo menos um desenvolvedor líder certificado para AEM
-* pelo menos um arquiteto com certificado AEM
-* pelo menos 75% dos seus desenvolvedores com certificação AEM;
+* pelo menos um desenvolvedor líder certificado pela AEM
+* pelo menos um arquiteto certificado da AEM
+* pelo menos 75% dos desenvolvedores certificados pela AEM;
 isso permite que os desenvolvedores certificados orientem desenvolvedores secundários e garante o compartilhamento de conhecimento e a transparência
 
 ### Diagrama da arquitetura {#architecture-diagram}
@@ -142,7 +142,7 @@ Scripts de automação e casos de uso automatizados básicos:
 
 ### Estratégia de teste automatizado {#automated-testing-strategy}
 
-Essa estratégia define uma estrutura para scripts automatizados reutilizáveis, juntamente com a abordagem planejada pela equipe de Controle de qualidade (QA). Ele descreve o plano geral de teste de automação para ajudar a garantir:
+Essa estratégia define uma estrutura para scripts automatizados reutilizáveis, juntamente com a abordagem planejada pela equipe de QA (Quality Assurance). Ele descreve o plano geral de teste de automação para ajudar a garantir:
 
 * maior retorno sobre o investimento (ROI)
 * mais cobertura de teste
@@ -372,7 +372,7 @@ Relatórios ou reuniões resultantes do Teste de aceitação do usuário (UAT). 
 
 ### Segurança Padrão Habilitada {#default-security-enabled}
 
-Verifique se as configurações de segurança padrão para AEM foram ativadas/implementadas.
+Verifique se as configurações de segurança padrão do AEM foram habilitadas/implementadas.
 
 ### Políticas e processos de implantação/liberação {#deployment-release-policies-and-processes}
 
@@ -500,7 +500,7 @@ Aprovação, junto às partes interessadas, de que o sistema de fallback e os pr
 
 ### Confirmação de viabilidade em KPIs {#feasibility-confirmation-on-kpis}
 
-Resultados de um estudo de viabilidade para o AEM e o projeto de solução de alto nível. Eles devem ser medidos em relação aos KPIs para garantir que possam ser atendidos.
+Resultados de um estudo de viabilidade para o AEM e o design da solução de alto nível. Eles devem ser medidos em relação aos KPIs para garantir que possam ser atendidos.
 
 ### Contrato finalizado {#finalized-contract}
 
@@ -602,7 +602,7 @@ Implementação de funções e direitos, usuários e grupos.
 
 ### Implementação - Conceito de segurança {#implementation-security-concept}
 
-Implementação de todas as medidas de segurança, incluindo padrões AEM.
+Implementação de todas as medidas de segurança, incluindo os padrões do AEM.
 
 ### Implementação - Software de segurança {#implementation-security-software}
 
@@ -633,9 +633,9 @@ O conceito de implementação fornece os princípios orientadores para toda a im
 
 Esse conceito também descreve as estruturas, bibliotecas e outros artefatos usados na solução.
 
-### Informe o suporte do Adobe sobre o cronograma de ativação {#inform-adobe-support-about-the-go-live-schedule}
+### Informar ao suporte da Adobe sobre a programação de ativação {#inform-adobe-support-about-the-go-live-schedule}
 
-Entre em contato com o Suporte Adobe para garantir que qualquer suporte necessário possa ser ativado durante a ativação.
+Entre em contato com o Suporte da Adobe para garantir que qualquer suporte necessário possa ser ativado durante a ativação.
 
 ### Designs iniciais de experiência {#initial-experience-designs}
 
@@ -678,7 +678,7 @@ Uma descrição das ferramentas usadas na implementação; as ferramentas devem 
 * ferramentas de implantação
 * ferramentas de build
 
-### Lista de usuários que precisam de acesso ao portal de suporte do Adobe {#list-of-users-that-require-access-to-adobe-support-portal}
+### Lista de usuários que exigem acesso ao portal de suporte do Adobe {#list-of-users-that-require-access-to-adobe-support-portal}
 
 Uma lista de todos os usuários e funções que precisam de acesso ao Portal de suporte do Adobe.
 
@@ -692,9 +692,9 @@ Uma análise, juntamente com as recomendações resultantes, definindo o que dev
 * nível de granularidade
 * informações registradas para cada atividade
 
-### Tarefas de manutenção (específicas ao AEM) testadas e ativadas {#maintenance-tasks-aem-specific-tested-and-enabled}
+### Tarefas de manutenção (específicas do AEM) testadas e ativadas {#maintenance-tasks-aem-specific-tested-and-enabled}
 
-Testar e habilitar tarefas de manutenção do AEM, como:
+Teste e ative as tarefas de manutenção do AEM, como:
 
 * compactação
 * limpeza do sistema
@@ -718,7 +718,7 @@ Ele também deve recomendar como manter o conteúdo atualizado (ou o mais atuali
 
 ### Monitoramento - CPU {#monitoring-cpu}
 
-Monitorar o uso da CPU do sistema pela solução:
+Monitorar o uso do sistema CPU pela solução:
 
 * média
 * picos
@@ -873,7 +873,7 @@ Geralmente, isso é usado em UAT (User Acceptance Testing, teste de aceitação 
 
 A Prova de conceito (POC) é avaliada em relação aos requisitos para garantir que ambos estejam alinhados.
 
-### Post - Lista de verificação de implantação {#post-deployment-checklist}
+### Lista de verificação pós-implantação {#post-deployment-checklist}
 
 Uma lista de verificação para definir a série de verificações e tarefas a serem executadas após cada implantação.
 
@@ -988,7 +988,7 @@ Os dados nunca são sobregravados em um arquivo tar, o uso do disco aumenta mesm
 
 Para neutralizar o tamanho cada vez maior do repositório, uma estratégia de otimização é implementada para remover dados obsoletos.
 
-### Seção Solicitação de configuração de projeto no portal de suporte do Adobe {#request-for-setting-up-project-section-in-adobe-support-portal}
+### Seção Solicitação de configuração de projeto no Portal de suporte do Adobe {#request-for-setting-up-project-section-in-adobe-support-portal}
 
 A solicitação oficial para configurar seu projeto no Portal de suporte do Adobe.
 
@@ -1037,9 +1037,9 @@ Revisão do conceito de Funções e Direitos para garantir que ele atenda às po
 
 Uma especificação detalhada com base nas Funções e no Conceito de direitos.
 
-### Arquitetura de segurança Recommendations {#security-architecture-recommendations}
+### Recomendações da arquitetura de segurança {#security-architecture-recommendations}
 
-Recommendations relacionado à segurança da arquitetura de software e hardware.
+Recomendações relacionadas à segurança da arquitetura de software e hardware.
 
 ### Diretrizes de codificação com base em segurança {#security-based-coding-guidelines}
 
@@ -1104,7 +1104,7 @@ O Solution Review Board é composto pelas partes interessadas do cliente.
 
 O conselho realiza reuniões regulares para analisar os requisitos atualmente previstos e as especificações relevantes de forma contínua. O objetivo é garantir o alinhamento com a definição de sucesso e os critérios, bem como contribuir para o desenvolvimento dos requisitos.
 
-### Runbook de soluções {#solution-runbook}
+### Solução Runbook {#solution-runbook}
 
 Instruções de instalação da solução, juntamente com as tarefas operacionais básicas a serem executadas na instalação.
 
@@ -1116,11 +1116,11 @@ Também pode servir como um marco contratual.
 
 ### Conceito especial de funcionalidade {#special-functionality-concept}
 
-O conceito inicial para qualquer funcionalidade especial que seja considerada fora do escopo normal de desenvolvimento na plataforma AEM.
+O conceito inicial de qualquer funcionalidade especial considerada fora do escopo normal de desenvolvimento na plataforma do AEM.
 
 ### Especificação de funcionalidade especial {#special-functionality-specification}
 
-Detalhes de qualquer funcionalidade especial considerada fora do escopo normal de desenvolvimento na plataforma AEM.
+Detalhes de qualquer funcionalidade especial considerada fora do escopo normal de desenvolvimento na plataforma do AEM.
 
 ### Diretrizes de especificação {#specification-guidelines}
 
@@ -1130,7 +1130,7 @@ Quaisquer diretrizes do cliente sobre como a especificação deve ser feita.
 
 Deve ser posto em prática um processo claro para a aprovação das especificações pelo cliente. Esse processo garante clareza e firmeza no escopo dos requisitos.
 
-### Equipe selecionada para treinamento de administrador do AEM {#staff-selected-for-aem-administrator-training}
+### Equipe selecionada para o treinamento de administrador do AEM {#staff-selected-for-aem-administrator-training}
 
 Equipe interna que precisa de treinamento para administrar a solução.
 
@@ -1412,7 +1412,7 @@ A especificação de cada workflow deve incluir (no mínimo):
 
 ### Conceito de fluxos de trabalho {#workflows-concept}
 
-Os workflows permitem automatizar atividades do AEM. O Conceito de fluxos de trabalho descreve:
+Os workflows permitem automatizar as atividades do AEM. O Conceito de fluxos de trabalho descreve:
 
 * os processos que precisam de automação
-* os serviços e as funções no AEM que serão afetados
+* os serviços e as funções na AEM que serão afetados

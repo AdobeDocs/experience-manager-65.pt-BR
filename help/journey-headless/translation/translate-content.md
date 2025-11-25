@@ -4,8 +4,8 @@ description: Use o conector e as regras de tradução para traduzir o seu conte�
 exl-id: a2c2bb9f-97b9-42fd-9bd1-e75c113fb514
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,Language Copy
-role: Admin, Architect,Data Architect,Developer,User,Leader
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin, Developer, User, Leader
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '2115'
 ht-degree: 66%
@@ -18,7 +18,7 @@ Use a integração e as regras de tradução para traduzir o conteúdo headless.
 
 ## A história até agora {#story-so-far}
 
-No documento anterior da jornada de tradução do AEM headless, [Configurar regras de tradução](translation-rules.md), você aprendeu a usar as regras de tradução do AEM para identificar seu conteúdo de tradução. Agora você deve:
+No documento anterior da jornada de tradução headless do AEM, [Configurar regras de tradução](translation-rules.md), você aprendeu a usar as regras de tradução do AEM para identificar seu conteúdo de tradução. Agora você deve:
 
 * Entenda o que as regras de tradução fazem.
 * Ser capaz de definir suas próprias regras de tradução.
@@ -153,7 +153,7 @@ As traduções automáticas retornam automaticamente com um estado de **Aprovado
 
 ### Usar um projeto de tradução criado manualmente {#using-manual-project}
 
-Ao criar manualmente um projeto de tradução, o AEM cria as tarefas necessárias, mas não seleciona automaticamente qualquer conteúdo para incluir nessas tarefas. Isso permite que o gerente do projeto de tradução tenha flexibilidade para escolher qual conteúdo traduzir.
+Ao criar manualmente um projeto de tradução, o AEM cria os processos necessários, mas não seleciona automaticamente qualquer conteúdo a ser incluído. Isso permite que o gerente do projeto de tradução tenha flexibilidade para escolher qual conteúdo traduzir.
 
 Para adicionar conteúdo a uma tarefa de tradução:
 
@@ -167,9 +167,9 @@ Para adicionar conteúdo a uma tarefa de tradução:
    ![Navegador de caminho](assets/path-browser.png)
 
 1. Clique em **Selecionar** para adicionar o conteúdo selecionado ao trabalho.
-1. Na caixa de diálogo **Traduzir**, especifique que deseja **Criar cópia de idioma**.
+1. Na caixa de diálogo **Traduzir**, especifique que deseja **Criar cópia no idioma de destino**.
 
-   ![Criar cópia de idioma](assets/translate-copy-master.png)
+   ![Criar cópia no idioma de destino](assets/translate-copy-master.png)
 
 1. O conteúdo agora está incluído na tarefa.
 
@@ -242,7 +242,7 @@ Agora que concluiu esta parte da jornada de tradução headless, você pode faze
 * Criar projetos de tradução.
 * Usar os projetos de tradução para traduzir o conteúdo headless.
 
-Desenvolva esse conhecimento e continue sua jornada de tradução AEM headless revisando a seguir o documento [Conteúdo traduzido do Publish](publish-content.md), onde você aprende a publicar seu conteúdo traduzido e como atualizar essas traduções conforme o conteúdo da raiz do idioma mudar.
+Desenvolva esse conhecimento e continue sua jornada de tradução headless do AEM revisando a seguir o documento [Publicar conteúdo traduzido](publish-content.md), onde você aprende a publicar seu conteúdo traduzido e como atualizar essas traduções conforme o conteúdo da raiz do idioma mudar.
 
 ## Recursos adicionais {#additional-resources}
 

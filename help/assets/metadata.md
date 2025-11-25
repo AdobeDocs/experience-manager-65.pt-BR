@@ -4,11 +4,11 @@ description: Saiba mais sobre os tipos de metadados e como gerenciar metadados p
 contentOwner: AG
 mini-toc-levels: 1
 feature: Tagging, Metadata
-role: Architect, Leader
+role: Developer, Leader
 exl-id: c630709a-7e8b-417c-83a4-35ca9be832a0
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '2332'
 ht-degree: 10%
@@ -19,7 +19,7 @@ ht-degree: 10%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-metadata.html?lang=pt-BR) |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-metadata.html?lang=en) |
 | AEM 6.5 | Este artigo |
 
 <!-- Scope of metadata articles:
@@ -36,9 +36,9 @@ Os metadados são informações adicionais sobre o ativo que pode ser pesquisado
 
 Os métodos a seguir podem ser usados para adicionar metadados a ativos digitais:
 
-* Para começar, os aplicativos nativos que criam ativos adicionam alguns metadados a eles. Por exemplo, o [Acrobat adiciona alguns metadados](https://helpx.adobe.com/br/acrobat/using/pdf-properties-metadata.html) a arquivos PDF ou uma câmera adiciona alguns metadados básicos às fotografias. Ao gerar ativos, você pode adicionar os metadados nos próprios aplicativos nativos. Por exemplo, você pode [adicionar metadados IPTC no Adobe Lightroom](https://helpx.adobe.com/br/lightroom-classic/help/metadata-basics-actions.html).
+* Para começar, os aplicativos nativos que criam ativos adicionam alguns metadados a eles. Por exemplo, o [Acrobat adiciona alguns metadados](https://helpx.adobe.com/acrobat/using/pdf-properties-metadata.html) a arquivos PDF ou uma câmera adiciona alguns metadados básicos às fotografias. Ao gerar ativos, você pode adicionar os metadados nos próprios aplicativos nativos. Por exemplo, você pode [adicionar metadados do IPTC no Adobe Lightroom](https://helpx.adobe.com/lightroom-classic/help/metadata-basics-actions.html).
 
-* Antes de carregar um ativo para [!DNL Experience Manager], você pode editar e modificar metadados usando o aplicativo nativo usado para criar um ativo ou usando algum outro aplicativo de edição de metadados. Ao fazer upload de um ativo para o Experience Manager, os metadados são processados. Por exemplo, veja como [trabalhar com metadados [!DNL Adobe Bridge]](https://helpx.adobe.com/br/bridge/user-guide.html/bridge/using/metadata-adobe-bridge.ug.html) e o painel [tags [!DNL Adobe Bridge]](https://exchange.adobe.com/creativecloud.details.20009.aem-tags-panel-for-bridge-cc.html) em [!DNL Adobe Exchange].
+* Antes de carregar um ativo para [!DNL Experience Manager], você pode editar e modificar metadados usando o aplicativo nativo usado para criar um ativo ou usando algum outro aplicativo de edição de metadados. Ao fazer upload de um ativo para o Experience Manager, os metadados são processados. Por exemplo, veja como [trabalhar com metadados [!DNL Adobe Bridge]](https://helpx.adobe.com/bridge/user-guide.html/bridge/using/metadata-adobe-bridge.ug.html) e o painel [tags [!DNL Adobe Bridge]](https://exchange.adobe.com/creativecloud.details.20009.aem-tags-panel-for-bridge-cc.html) em [!DNL Adobe Exchange].
 
 * Em [!DNL Experience Manager Assets], você pode adicionar ou editar manualmente metadados de ativos na página [!UICONTROL Propriedades].
 
@@ -66,9 +66,9 @@ Para editar os metadados de um ativo na interface do usuário do [!DNL Assets], 
    >
    >Se um campo de texto estiver vazio, não há conjunto de metadados existente. Você pode inserir um valor no campo e salvá-lo para adicionar essa propriedade de metadados.
 
-Quaisquer alterações nos metadados de um ativo são gravadas no binário original como parte de seus dados de XMP. O fluxo de trabalho de gravação de metadados adiciona os metadados ao binário original. As alterações feitas nas propriedades existentes (como `dc:title`) são substituídas e novas propriedades (incluindo propriedades personalizadas como `cq:tags`) são adicionadas com o esquema.
+Quaisquer alterações nos metadados de um ativo são gravadas no binário original como parte de seus dados do XMP. O fluxo de trabalho de gravação de metadados adiciona os metadados ao binário original. As alterações feitas nas propriedades existentes (como `dc:title`) são substituídas e novas propriedades (incluindo propriedades personalizadas como `cq:tags`) são adicionadas com o esquema.
 
-O write-back de XMP é suportado e habilitado para as plataformas e formatos de arquivo descritos nos [requisitos técnicos.](/help/sites-deploying/technical-requirements.md)
+O write-back do XMP tem suporte e está habilitado para as plataformas e formatos de arquivo descritos em [requisitos técnicos.](/help/sites-deploying/technical-requirements.md)
 
 ## Editar propriedades de metadados de vários ativos {#editing-metadata-properties-of-multiple-assets}
 
@@ -101,7 +101,7 @@ Para personalizar a página de propriedades de metadados, incluindo adição, mo
 
 O [!DNL Assets] permite importar metadados de ativos em massa usando um arquivo CSV. Você pode fazer atualizações em massa para os ativos carregados recentemente ou os ativos existentes importando um arquivo CSV. Você também pode assimilar metadados de ativos em massa de sistemas de terceiros no formato CSV.
 
-A importação de metadados é assíncrona e não impede o desempenho do sistema. A atualização simultânea dos metadados de vários ativos pode consumir muitos recursos devido à atividade de writeback XMP se o sinalizador de fluxo de trabalho estiver marcado. Planejar essa importação durante o uso do servidor enxuto para que o desempenho de outros usuários não seja afetado.
+A importação de metadados é assíncrona e não impede o desempenho do sistema. A atualização simultânea dos metadados de vários ativos pode consumir muitos recursos devido à atividade de write-back do XMP, se o sinalizador de fluxo de trabalho estiver marcado. Planejar essa importação durante o uso do servidor enxuto para que o desempenho de outros usuários não seja afetado.
 
 >[!NOTE]
 >
@@ -116,8 +116,8 @@ A importação de metadados é assíncrona e não impede o desempenho do sistema
    |:---|:---|
    | [!UICONTROL Tamanho do Lote] | Número de ativos em um lote para o qual os metadados devem ser importados. O valor padrão é 50. O valor máximo é 100. |
    | [!UICONTROL Separador de campos] | O valor padrão é `,` (uma vírgula). Você pode especificar qualquer outro caractere. |
-   | [!UICONTROL Delimitador de vários valores] | Separador para valores de metadados. O valor padrão é `|`. |
-   | [!UICONTROL Iniciar Fluxos de Trabalho] | Falso por padrão. Quando definido como `true` e as configurações padrão estão em vigor para o fluxo de trabalho [!UICONTROL WriteBack de Metadados do DAM] (que grava metadados nos dados binários do XMP). Habilitar os fluxos de trabalho torna o sistema lento. |
+   | [!UICONTROL Delimitador de vários valores] | Separador para valores de metadados. O valor padrão é `\|`. |
+   | [!UICONTROL Iniciar Fluxos de Trabalho] | Falso por padrão. Quando definido como `true` e as configurações padrão estão em vigor para o fluxo de trabalho [!UICONTROL WriteBack de Metadados DAM] (que grava metadados nos dados binários do XMP). Habilitar os fluxos de trabalho torna o sistema lento. |
    | [!UICONTROL Nome da coluna do caminho do ativo] | Define o nome da coluna do arquivo CSV com ativos. |
 
 1. Clique em **[!UICONTROL Importar]** na barra de ferramentas. Após a importação dos metadados, uma notificação é exibida na caixa de entrada [!UICONTROL Notificação].
@@ -153,7 +153,7 @@ Alguns casos de uso para exportar metadados em massa são:
 
 1. Na barra de ferramentas, clique em **[!UICONTROL Exportar]**. Uma mensagem confirma que os metadados foram exportados. Feche a mensagem.
 
-1. Abra a notificação da caixa de entrada do trabalho de exportação. Selecione o trabalho e clique em **[!UICONTROL Abrir]** na barra de ferramentas. Para baixar o arquivo CSV com os metadados, clique em **[!UICONTROL Download de CSV]** na barra de ferramentas. Clique em **[!UICONTROL Fechar]**.
+1. Abra a notificação da caixa de entrada do processo de exportação. Selecione o processo e clique em **[!UICONTROL Abrir]** na barra de ferramentas. Para baixar o arquivo CSV com os metadados, clique em **[!UICONTROL Download de CSV]** na barra de ferramentas. Clique em **[!UICONTROL Fechar]**.
 
    ![Caixa de diálogo para baixar o arquivo CSV contendo metadados exportados em massa](assets/csv_download.png)
 
@@ -241,7 +241,7 @@ Você pode remover um perfil de metadados de uma pasta no menu **[!UICONTROL Fer
 >
 >* [Conceitos e noções básicas sobre metadados](metadata-concepts.md).
 >* [Editar propriedades de metadados de várias coleções](manage-collections.md#editing-collection-metadata-in-bulk)
->* [Importação e exportação de metadados no Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html?lang=pt-BR)
+>* [Importação e exportação de metadados no Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html)
 
 <!-- TBD: Try filling the available information in these topics to the extent possible. As and when complete, publish the sections live.
 

@@ -7,7 +7,7 @@ role: User, Admin
 exl-id: 8ec597df-bb64-4768-bf9c-e8cca4fea25b
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 18dd655887293188224f51fa713d0345991d20d7
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '2191'
 ht-degree: 2%
@@ -18,7 +18,7 @@ ht-degree: 2%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/aem-assets-adobe-stock.html?lang=pt-BR) |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/aem-assets-adobe-stock.html?lang=en) |
 | AEM 6.5 | Este artigo |
 
 <!-- old content
@@ -104,7 +104,7 @@ To allow communication between [!DNL Experience Manager] and [!DNL Adobe Stock],
 Como desenvolvedor, execute as etapas a seguir para integrar o [!DNL Adobe Experience Manager] e o [!DNL Adobe Stock].
 
 1. [Configurar um programa em [!DNL Developer Console]](#set-up-a-program-in-developer-console)
-1. [Adicionar configuração na instância do autor  [!DNL AEM] &#x200B;](#add-configuration-in-the-aem-author-instance)
+1. [Adicionar configuração na instância do autor  [!DNL AEM] ](#add-configuration-in-the-aem-author-instance)
 
 ### Configurar um programa em [!DNL Developer Console] {#set-up-a-program-in-developer-console}
 
@@ -143,7 +143,6 @@ Execute as seguintes etapas para configurar um novo [!DNL Adobe Stock IMS config
    * **[!UICONTROL Escopo]**: Navegue até o painel do projeto, clique na opção **[!UICONTROL Servidor para Servidor OAuth]** disponível no painel esquerdo, selecione **[!UICONTROL Detalhes da credencial]**, copie o **[!UICONTROL Escopo]** e cole-o aqui (consulte a [etapa 7](#set-up-a-program-in-developer-console)).
 
    * **[!UICONTROL ID da Organização]**: Navegue até o painel do projeto, clique na opção **[!UICONTROL Servidor para Servidor OAuth]** disponível no painel esquerdo, selecione **[!UICONTROL Detalhes da credencial]**, copie a **[!UICONTROL ID da Organização]** e cole-a aqui (consulte a [etapa 7](#set-up-a-program-in-developer-console)).
-
      ![aem assets e adobe stock](/help/assets/assets/adobe-ims-technical-account-configuration.png)
 1. Clique em **[!UICONTROL Criar]**, a página **[!UICONTROL Configurações do Adobe IMS]** será aberta e exibirá a integração [!DNL Adobe Stock] criada.
 
@@ -468,9 +467,9 @@ Os usuários podem ver as propriedades de ativos licenciados e não licenciados.
 
 >[!MORELIKETHIS]
 >
->* [Tutorial em vídeo sobre o uso de [!DNL Adobe Stock] ativos com [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html?lang=pt-BR)
->* [[!DNL Adobe Stock] ajuda do plano da empresa](https://helpx.adobe.com/br/enterprise/using/adobe-stock-enterprise.html)
->* [[!DNL Adobe Stock] Perguntas frequentes](https://helpx.adobe.com/br/stock/faq.html)
+>* [Tutorial em vídeo sobre o uso de [!DNL Adobe Stock] ativos com [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html)
+>* [[!DNL Adobe Stock] ajuda do plano da empresa](https://helpx.adobe.com/enterprise/using/adobe-stock-enterprise.html)
+>* [[!DNL Adobe Stock] Perguntas frequentes](https://helpx.adobe.com/stock/faq.html)
 
 
 <!--old content

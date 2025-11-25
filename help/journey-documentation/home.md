@@ -3,9 +3,9 @@ title: Jornadas de documentação do AEM
 description: As Jornadas de documentação fornecem uma estrutura narrativa dentro da documentação do AEM, unindo recursos complexos e diferentes para resolver uma meta comercial da maneira recomendada. As jornadas foram desenvolvidas para auxiliar os iniciantes no AEM, apresentando os conceitos e recursos que permitem atingir uma meta de A a Z.
 exl-id: bb0a26e2-5686-4fb7-bb6e-231dafc8268b
 solution: Experience Manager, Experience Manager Sites
-role: Admin, Architect,Data Architect,Developer,User,Leader
+role: Admin, Developer, User, Leader
 feature: Administering
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '1222'
 ht-degree: 87%
@@ -75,7 +75,7 @@ Cada jornada começa informando claramente sobre o público-alvo da jornada. Com
 
 As jornadas de documentação são um complemento da documentação técnica e dos tutoriais existentes do AEM. Por exemplo, uma jornada apresenta a você um conceito e, em seguida, os documentos técnicos explicam as opções de configuração detalhadas que podem ser necessárias, enquanto um tutorial o guia pelas configurações específicas.
 
-| Tipo de documentação | Propósito | Público | Assume | Omite | Tipo de conteúdo | Comprimento |
+| Tipo de documentação | Propósito | Público-alvo | Assume | Omite | Tipo de conteúdo | Comprimento |
 |---|---|---|---|---|---|---|
 | Jornada de documentação | Uma jornada define como o AEM pode resolver um problema geral de negócios por meio de uma narrativa que orienta os leitores por processos e recursos complexos e inter-relacionados. Ela ilustra como vários recursos trabalham juntos para resolver uma necessidade empresarial de acordo com as práticas recomendadas. | Leitores novos no AEM | Familiaridade geral do CMS | Opções e configurações detalhadas | Texto | Ca. 1 hora |
 | Documentação técnica | A documentação técnica se concentra em recursos individuais, detalhando o funcionamento técnico do recurso e cada opção disponível para o usuário. | Usuários experientes do AEM | Experiência do AEM | Contexto e histórico | Texto | Varia |

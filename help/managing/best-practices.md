@@ -9,17 +9,17 @@ docset: aem65
 exl-id: 94b91996-d2b2-4d4a-b770-334cfa2dc0b7
 solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
-role: Admin,Architect,Data Architect,Developer,Leader
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin,Developer,Leader
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '3214'
+source-wordcount: '3212'
 ht-degree: 0%
 
 ---
 
 # Gerenciamento de projetos - Lista de verificação de práticas recomendadas{#managing-projects-best-practices-checklist}
 
-O gerenciamento de um projeto para implementar o Adobe Experience Manager (AEM) requer planejamento e compreensão, para que você esteja ciente dos problemas e decisões (relacionadas) que devem ser tomados antes e durante a implementação do projeto.
+O gerenciamento de um projeto para implementar o Adobe Experience Manager (AEM) requer planejamento e compreensão, para que você esteja ciente dos problemas e decisões (relacionadas) que devem ser tomadas antes e durante a implementação do projeto.
 
 Para ajudá-lo, as práticas recomendadas consistem em:
 
@@ -56,7 +56,7 @@ A planilha **Pulsação do projeto** fornece uma visão geral gráfica das métr
 
 ## Status por Função {#status-by-role}
 
-A planilha **Status por Função** mostra o detalhamento de [**Integridade**, **Qualidade e &#x200B;** Integridade&#x200B;**](#projectheartbeat) por &#x200B;** [Fase](#phases-and-milestones)**&#x200B; e &#x200B;** [Pessoa](#persona)**.
+A planilha **Status por Função** mostra o detalhamento de [**Integridade**, **Qualidade e **Integridade**](#projectheartbeat) por **[Fase](#phases-and-milestones)** e **[Pessoa](#persona)**.
 
 ## Fases e etapas {#phases-and-milestones}
 
@@ -66,7 +66,7 @@ Cada fase contém seus próprios marcos. Para cada [persona](#persona) (ou funç
 
 >[!NOTE]
 >
->Não há uma relação direta 1:1 entre os documentos necessários individuais e os materiais de entrega.
+>Não há uma relação 1:1 direta entre os documentos necessários individuais e os materiais para entrega.
 
 ### Preparação {#preparation}
 
@@ -189,7 +189,7 @@ O planejamento do desenvolvimento é fundamental para garantir que seu projeto s
    * Processos para cada ambiente; por exemplo, requisitos de implantação e manutenção
    * Atividades de manutenção (Datastore GC, otimização de TarPM e assim por diante)
    * Cache do [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=pt-BR)
-   * [Clustering](/help/sites-deploying/recommended-deploys.md#deployment-scenarios) Publish/Authorshare
+   * [Publicação/Compartilhamento de Autor](/help/sites-deploying/recommended-deploys.md#deployment-scenarios)
    * Desempenho para o lado do cliente (minificação JS, concat, sprites css, número total de solicitações http e outros)
 
 * **Arquitetura de Aplicativo**
@@ -227,11 +227,11 @@ O planejamento do desenvolvimento é fundamental para garantir que seu projeto s
    * Preparação de qualquer conteúdo necessário para esses testes
    * Informações sobre as ferramentas de ensaio a utilizar
    * Indicação de alto nível de quem estará envolvido em testes; especialmente grupos fora da equipe de controle de qualidade
-   * Detalhes da automação de testes; por exemplo, com o modo de desenvolvedor Selenium ou AEM
+   * Detalhes da automação de teste; por exemplo, com o modo de Desenvolvedor Selenium ou AEM
 
 * **Design da experiência**
 
-  O Experience Design (XD) envolve projetar a experiência do usuário para sua solução.
+  O Experience Design (XD) envolve a criação da experiência do usuário para sua solução.
 
   A experiência do usuário deve ser analisada e desenvolvida para os autores e usuários finais do site.
 
@@ -239,7 +239,7 @@ O planejamento do desenvolvimento é fundamental para garantir que seu projeto s
 
   Antes do desenvolvimento, todos os processos de suporte necessários para implantar, liberar, testar e relatar problemas devem ser estabelecidos.
 
-  Consulte também o [Portal de suporte do Adobe](https://experienceleague.adobe.com/pt-br?support-solution=General&support-tab=home#support).
+  Consulte também o [Portal de Suporte do Adobe](https://experienceleague.adobe.com/?support-solution=General&support-tab=home#support).
 
 ### Planejamento e operações de operações {#operations-planning-and-operations}
 
@@ -276,7 +276,7 @@ Da mesma forma, as operações devem ser planejadas corretamente para garantir q
 
 * **Plano de Recuperação**
 
-  Certifique-se de que você tenha um plano de recuperação em vigor. Em uma situação de emergência, isso deve estar disponível para garantir o uso da produção de AEM. Isso deve abranger situações como backup, restauração, failover e outras.
+  Certifique-se de que você tenha um plano de recuperação em vigor. Em uma situação de emergência, isso deve estar disponível para proteger o uso de produção do AEM. Isso deve abranger situações como backup, restauração, failover e outras.
 
 ### Desenvolvimento {#development}
 
@@ -323,7 +323,7 @@ O desenvolvimento é uma fase crucial que requer mais do que apenas codificaçã
    * Integração/dependências de software de terceiros
    * Configuração de segurança
    * Desempenho da linha de base verificado ao executar os [Testes do Dia Difícil](/help/sites-developing/tough-day.md) na configuração de produção
-   * Requisitos para testes de desempenho; consulte [Práticas recomendadas de controle de qualidade](/help/sites-deploying/configuring-performance.md#best-practices-for-quality-assurance)
+   * Requisitos para testes de desempenho; consulte [Práticas recomendadas para o Quality Assurance](/help/sites-deploying/configuring-performance.md#best-practices-for-quality-assurance)
 
 * **Integração**
 
@@ -579,7 +579,7 @@ O líder de segurança:
 
 As listas de verificação abrangem os **Documentos Necessários** e **Entregáveis** para cada marco.
 
-* Não há relação 1:1 entre eles; por exemplo, um grupo de documentos necessários pode resultar em um único material para entrega.
+* Não há nenhuma relação 1:1 entre elas; por exemplo, um grupo de documentos necessários pode resultar em uma única entrega.
 * Um produto de uma pessoa pode ser um documento necessário para outra pessoa durante o mesmo marco.
 
 ### Documentos necessários {#required-documents}
@@ -605,9 +605,9 @@ Os resultados finais geralmente são usados como **Documentos Necessários** par
 
 Para obter as práticas recomendadas sobre implantação, administração, desenvolvimento ou criação, consulte o seguinte:
 
-* Outras práticas recomendadas e diretrizes relacionadas ao gerenciamento de um projeto AEM:
+* Outras práticas recomendadas e diretrizes relacionadas ao gerenciamento de um projeto do AEM:
    * [Diretrizes de dimensionamento de hardware](/help/managing/hardware-sizing-guidelines.md)
-   * [DevOps empresarial &#x200B;](/help/managing/enterprise-devops.md)
+   * [DevOps empresarial ](/help/managing/enterprise-devops.md)
    * [Práticas recomendadas de gerenciamento de SEO e URL](/help/managing/seo-and-url-management.md)
    * [AEM e diretrizes de acessibilidade na Web](/help/managing/web-accessibility.md)
    * [Regulamento Geral sobre a Proteção de Dados](/help/managing/data-protection-and-privacy.md)* [Implantação e Manutenção de Práticas Recomendadas](/help/sites-deploying/best-practices.md)
@@ -622,14 +622,14 @@ Além disso, as seguintes seções da documentação do AEM são de especial int
 
    * [Segurança](/help/sites-developing/security.md)
    * [Implantações recomendadas](/help/sites-deploying/recommended-deploys.md)
-   * [DevOps empresarial &#x200B;](/help/managing/enterprise-devops.md)
+   * [DevOps empresarial ](/help/managing/enterprise-devops.md)
    * [Dimensionamento de hardware](/help/managing/hardware-sizing-guidelines.md)
-   * Conceitos de AEM:
+   * Conceitos do AEM:
 
       * [Desenvolvimento - noções básicas](/help/sites-developing/the-basics.md)
       * [Conceitos do MSM](/help/sites-administering/msm.md)
-      * [Linguagem de Modelo de HTML (HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=pt-BR)
+      * [Linguagem de Modelo do HTML (HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=pt-BR)
 
 * Documentação relacionada
 
-   * Adobe Experience Cloud - [Planejamento para a Adobe Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/services/core-services.html?lang=pt-BR)
+   * Adobe Experience Cloud - [Planejamento para a Adobe Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/services/core-services.html)

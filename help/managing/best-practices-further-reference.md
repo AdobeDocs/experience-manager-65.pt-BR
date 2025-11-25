@@ -8,8 +8,8 @@ content-type: reference
 exl-id: 36620e3e-ecdf-4062-bbef-65513362d691
 solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
-role: Admin,Architect,Data Architect,Developer,Leader
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin,Developer,Leader
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '3699'
 ht-degree: 1%
@@ -44,7 +44,7 @@ Além disso, verifique as [Notas de Versão](/help/release-notes/release-notes.m
 
 ### Integrações {#integrations}
 
-O AEM pode ser integrado a outros produtos de Adobe, ou a serviços de terceiros, ou ambos. Esses workflows podem aumentar a potência e a funcionalidade à sua disposição.
+O AEM pode ser integrado a outros produtos da Adobe ou a serviços de terceiros, ou ambos. Esses workflows podem aumentar a potência e a funcionalidade à sua disposição.
 
 Consulte [Integração de soluções](/help/sites-administering/integration.md) para obter informações completas.
 
@@ -191,14 +191,14 @@ Todas as métricas medidas são afetadas pelo design do seu projeto. Por outro l
 
 Portanto, defina suas métricas de direcionamento *antes* de decidir seu design. Isso permite otimizar seu design com base nesses fatores. Depois que seu projeto é desenvolvido, para os princípios básicos de design é desafiador.
 
-Ao criar a estrutura do site, siga a estrutura recomendada para sites com AEM. Compreenda os seguintes problemas e/ou princípios:
+Ao criar a estrutura do site, siga a estrutura recomendada para sites da AEM. Compreenda os seguintes problemas e/ou princípios:
 
 * Como estruturar o conteúdo do site.
 * Como os modelos e componentes funcionam.
 * Como funciona o armazenamento em cache?
 * Os impactos do conteúdo personalizado.
 * Como a função de pesquisa funciona.
-* Como você pode usar o CSS e tecnologias relacionadas para criar código de HTML compacto e não redundante.
+* Como você pode usar o CSS e tecnologias relacionadas para criar código HTML compacto e não redundante.
 
 Se você achar que o seu design não segue as diretrizes ou se não tiver certeza sobre algumas das implicações, esclareça esses problemas. Faça isso antes de iniciar a fase de programação ou de preencher o conteúdo.
 
@@ -246,7 +246,7 @@ Os tempos de resposta almejados são diferentes nos ambientes de criação e pub
    * Atender a alguns usuários que geram um alto número de solicitações ao atualizar páginas de conteúdo e os elementos individuais nessas páginas
    * seja o mais rápido possível para maximizar a produtividade e colocar seu conteúdo em seu site
 
-* **Ambiente Publish**
+* **Ambiente de publicação**
 
   Esse ambiente contém conteúdo que você disponibiliza para os usuários:
 
@@ -261,7 +261,7 @@ Os tempos de resposta almejados são diferentes nos ambientes de criação e pub
 Como você pode decidir sobre tempos de resposta viáveis (médios)? A pergunta e a resposta geralmente são uma questão de experiência:
 
 * experiência no seu site
-* experiência com AEM
+* experiência com o AEM
 * reconhecer páginas complexas que têm tempos de resposta acima da média (se possível, essas páginas devem ser otimizadas individualmente)
 
 No entanto, em circunstâncias controladas, as seguintes diretrizes podem ser aplicadas:
@@ -276,19 +276,19 @@ Os números acima assumem as seguintes condições:
 
 * medido na publicação (sem ambiente de criação e/ou sobrecarga do CFC)
 * medido no servidor (sem sobrecarga da rede)
-* não armazenado em cache (sem cache de saída AEM, sem cache do Dispatcher)
+* não armazenado em cache (sem cache de saída AEM, sem cache Dispatcher)
 * somente para itens complexos com muitas dependências (HTML, JS, PDF, ...)
 * nenhuma outra carga no sistema
 
 Há vários mecanismos que você pode usar para monitorar os tempos de resposta:
 
-* **Monitorando os tempos de resposta com a solicitação de AEM.log**
+* **Monitorar tempos de resposta com o request.log do AEM**
 
   Um bom ponto de partida para a análise de desempenho é o registro de solicitações. Entre outras informações, você pode ver os tempos de resposta de solicitações individuais. Consulte [Otimização de desempenho](/help/sites-deploying/configuring-performance.md) para obter mais detalhes.
 
-* **Monitorar tempos de resposta com comentários de HTML**
+* **Monitorar tempos de resposta com comentários do HTML**
 
-  Os comentários de HTML podem ser usados para incluir informações de tempo de resposta na fonte de cada página:
+  Os comentários do HTML podem ser usados para incluir informações de tempo de resposta na fonte de cada página:
 
   `</body> </html>v <-- Page took 58 milliseconds to be rendered by the server --> Response times for search requests`
 
@@ -332,7 +332,7 @@ As metas para o número de usuários simultâneos dependem do tipo de ambiente:
 
    * Normalmente, o número de usuários simultâneos pode ser estimado com precisão. Você pode saber quantos autores você tem no total, embora (provavelmente) nem todos estejam ativos ao mesmo tempo.
 
-* **Ambiente Publish**
+* **Ambiente de publicação**
 
    * O ambiente de publicação é mais difícil de prever, portanto, você deve selecionar um valor de destino. Novamente, deve se basear na experiência do seu site atual, juntamente com expectativas realistas do seu novo site.
    * Eventos especiais (por exemplo, quando você publica conteúdo novo e popular) podem exceder as expectativas - ou até mesmo os recursos (como às vezes relatado na imprensa, quando os ingressos para certos eventos são disponibilizados para venda).
@@ -374,7 +374,7 @@ No entanto, é preferível ter um pequeno conjunto de métricas principais e pre
 
 A segurança é crucial e um desafio cada vez maior. Ele ***deve*** ser considerado e planejado nos estágios iniciais do seu projeto.
 
-A [Lista de Verificação de Segurança](/help/sites-administering/security-checklist.md) detalha as etapas que você deve seguir para garantir que a instalação do AEM esteja segura quando implantada. Outros aspectos de segurança são abordados em [Segurança (durante o desenvolvimento)](/help/sites-developing/security.md) e [Administração e Segurança do Usuário](/help/sites-administering/security.md).
+A [Lista de Verificação de Segurança](/help/sites-administering/security-checklist.md) detalha as etapas que você deve seguir para garantir que sua instalação do AEM esteja segura quando for implantada. Outros aspectos de segurança são abordados em [Segurança (durante o desenvolvimento)](/help/sites-developing/security.md) e [Administração e Segurança do Usuário](/help/sites-administering/security.md).
 
 ## Tarefas Paralelas e Iterativas {#parallel-and-iterative-tasks}
 
@@ -382,12 +382,12 @@ A [Lista de Verificação de Segurança](/help/sites-administering/security-chec
 >
 >O seguinte:
 >
->* Oferece uma visão geral relacionada à implementação *primeiro* de um projeto AEM.
+>* Oferece uma visão geral relacionada à implementação *first* de um projeto do AEM.
 >* É uma visão geral abstrata; consulte a [Lista de Verificação do Projeto](/help/managing/best-practices.md) para ver as fases/etapas/tarefas específicas.
 >* Qualquer escala de tempo é teórica.
 >
 
-Para uma nova implementação de um projeto AEM padrão, considere tarefas como:
+Para uma nova implementação de um projeto padrão do AEM, considere tarefas como:
 
 * Transferência do processo de vendas.
 * Implementação do aplicativo do cliente (**Desenvolvimento**).
@@ -422,7 +422,7 @@ Alguns pontos a observar para cada categoria são:
       * Cada sprint tem um resultado executável.
       * Cada sprint recebe uma aprovação do cliente (mínimo de teste estruturado com feedback).
 
-   * Planeje a eventualidade de uma atualização da versão disponível do AEM durante o projeto.
+   * Planeje a eventualidade de uma atualização da versão do AEM disponível durante o projeto.
    * Planejar testes e otimização durante sprints.
    * Plano para as fases de estabilização e otimização.
    * Criar um log de itens a serem planejados para outras versões.
@@ -473,7 +473,7 @@ A lista a seguir mostra as aproximações padrão e as inter-relações de esfor
 
 >[!CAUTION]
 >
->Esses números só podem ser usados para estimativas iniciais. Um desenvolvedor de AEM experiente deve fazer a análise detalhada.
+>Esses números só podem ser usados para estimativas iniciais. Um desenvolvedor experiente do AEM deve fazer a análise detalhada.
 
 | Fase | Esforço |
 |---|---|
@@ -489,7 +489,7 @@ O planejamento detalhado pode então relacionar recursos disponíveis ou necess�
 
 ## Arquitetura de referência {#reference-architecture}
 
-A arquitetura de referência é fornecida para fornecer uma solução de modelo para a arquitetura AEM. A arquitetura de referência aborda problemas comuns encontrados em sistemas corporativos, incluindo dimensionamento, confiabilidade e segurança.
+A arquitetura de referência é fornecida para fornecer uma solução de modelo para a arquitetura do AEM. A arquitetura de referência aborda problemas comuns encontrados em sistemas corporativos, incluindo dimensionamento, confiabilidade e segurança.
 
 As seguintes métricas do site devem ser definidas:
 
@@ -552,7 +552,7 @@ A lista a seguir é fornecida para informá-lo sobre as ferramentas que podem se
   </tr>
   <tr>
    <td>Eclipse</td>
-   <td><p>Eclipse é um Open Source IDE, composto por vários projetos. Ele se concentra na criação de uma plataforma de desenvolvimento aberta composta de estruturas, ferramentas e tempos de execução extensíveis para a criação, implantação e gerenciamento de software durante todo o ciclo de vida.</p> <p>Consulte <a href="/help/sites-developing/howto-projects-eclipse.md">Como desenvolver projetos de AEM usando o Eclipse</a> para obter mais informações.</p> </td>
+   <td><p>Eclipse é um Open Source IDE, composto por vários projetos. Ele se concentra na criação de uma plataforma de desenvolvimento aberta composta de estruturas, ferramentas e tempos de execução extensíveis para a criação, implantação e gerenciamento de software durante todo o ciclo de vida.</p> <p>Consulte <a href="/help/sites-developing/howto-projects-eclipse.md">Como desenvolver projetos do AEM usando o Eclipse</a> para obter mais informações.</p> </td>
   </tr>
   <tr>
    <td>IntelliJ</td>
@@ -575,10 +575,10 @@ Além disso, as seguintes seções são de especial interesse:
 
 ### Práticas recomendadas {#best-practices}
 
-O Adobe fornece práticas recomendadas adicionais para todas as fases e públicos-alvo:
+A Adobe fornece práticas recomendadas adicionais para todas as fases e públicos-alvo:
 
-* [Implantar](/help/sites-deploying/best-practices.md)
-* [Criação  &#x200B;](/help/sites-authoring/best-practices.md)
+* [Implantando](/help/sites-deploying/best-practices.md)
+* [Criação](/help/sites-authoring/best-practices.md)
 * [Administração](/help/sites-administering/administer-best-practices.md)
-* [Desenvolvimento](/help/sites-developing/best-practices.md)
+* [Desenvolver](/help/sites-developing/best-practices.md)
 * [Gerenciamento de projeto](/help/managing/best-practices.md)

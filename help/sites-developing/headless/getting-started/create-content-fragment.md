@@ -4,8 +4,8 @@ description: Saiba como usar fragmentos de conteúdo do AEM para projetar, criar
 exl-id: 5787204d-bcce-447e-b98c-2bc1c0d744c3
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
-role: Admin,Architect,Data Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin,Developer
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '375'
 ht-degree: 73%

@@ -10,9 +10,9 @@ exl-id: 39e35a07-140f-4853-8f0d-8275bce27a65
 feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 6f3c4f4aa4183552492c6ce5039816896bd67495
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '6662'
+source-wordcount: '6654'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## Introdução {#introduction}
 
-Desde o AEM 6.3, há uma nova implementação de Grupo de usuários fechado destinada a abordar os problemas de desempenho, escalabilidade e segurança presentes na implementação existente.
+A partir do AEM 6.3, há uma nova implementação de Grupo de usuários fechado destinada a abordar os problemas de desempenho, escalabilidade e segurança presentes na implementação existente.
 
 >[!NOTE]
 >
@@ -68,7 +68,7 @@ A implementação de PrincipalSetPolicy usada para representar CUGs também defi
 * Políticas CUG podem ser aninhadas, um CUG aninhado inicia um novo CUG sem herdar o conjunto principal do CUG &#39;pai&#39;;
 * O efeito da política, se a avaliação estiver ativada, é herdado para toda a subárvore até o próximo CUG aninhado.
 
-Essas políticas CUG são implantadas em uma instância AEM por meio de um módulo de autorização separado chamado oak-authorization-cug. Este módulo vem com seu próprio gerenciamento de controle de acesso e avaliação de permissão. Em outras palavras, a configuração padrão do AEM envia uma configuração do repositório de conteúdo do Oak que combina vários mecanismos de autorização. Para obter mais informações, consulte [esta página na Documentação do Apache Oak](https://jackrabbit.apache.org/oak/docs/security/authorization/composite.html).
+Essas políticas CUG são implantadas em uma instância do AEM por meio de um módulo de autorização separado chamado oak-authorization-cug. Este módulo vem com seu próprio gerenciamento de controle de acesso e avaliação de permissão. Em outras palavras, a configuração padrão do AEM fornece uma configuração de repositório de conteúdo do Oak que combina vários mecanismos de autorização. Para obter mais informações, consulte [esta página na Documentação do Apache Oak](https://jackrabbit.apache.org/oak/docs/security/authorization/composite.html).
 
 Nesta configuração composta, um novo CUG não substitui o conteúdo de controle de acesso existente anexado ao nó de destino. Em vez disso, é um suplemento que também pode ser removido posteriormente sem afetar o controle de acesso original, que por padrão no AEM seria uma lista de controle de acesso.
 
@@ -106,7 +106,7 @@ As seguintes práticas recomendadas devem levar em conta a definição de acesso
    * A necessidade excessiva de CUGs aninhados pode potencialmente destacar problemas no design de conteúdo
    * A necessidade excessiva de CUGs (por exemplo, em cada página) pode indicar a necessidade de um modelo de autorização personalizado potencialmente mais adequado para atender às necessidades específicas de segurança do aplicativo e do conteúdo em questão.
 
-* Limite os caminhos compatíveis com políticas CUG a algumas árvores no repositório para permitir um desempenho otimizado. Por exemplo, permita apenas CUGs abaixo do nó /content como enviado como o valor padrão desde o AEM 6.3.
+* Limite os caminhos compatíveis com políticas CUG a algumas árvores no repositório para permitir um desempenho otimizado. Por exemplo, permita apenas CUGs abaixo do nó /content como o valor padrão desde o AEM 6.3.
 * As políticas CUG são projetadas para conceder acesso de leitura a um pequeno conjunto de princípios. A necessidade de um grande número de princípios pode destacar problemas no design de conteúdo ou aplicativo e deve ser reconsiderada.
 
 ### Autenticação: definição do requisito de autenticação {#authentication-defining-the-auth-requirement}
@@ -129,7 +129,7 @@ O mesmo se aplica à propriedade `granite:loginPath`. Somente é respeitado se f
 
 Como esse tipo de requisito de autenticação deve ser limitado a determinados modos de execução e a um pequeno subconjunto de árvores no repositório de conteúdo, o rastreamento do tipo de mixin do requisito e das propriedades do caminho de logon é condicional. E está vinculado a uma configuração correspondente que define os caminhos compatíveis (consulte Opções de configuração abaixo). Portanto, somente as alterações no escopo desses caminhos compatíveis acionam uma atualização do registro OSGi, em outro lugar, o tipo de mixin e a propriedade são ignorados.
 
-A configuração padrão do AEM agora usa essa configuração, permitindo definir o mixin no modo de execução do autor, mas apenas tem efeito após a replicação para a instância de publicação. Consulte a documentação da [Autenticação Sling - Estrutura](https://sling.apache.org/documentation/the-sling-engine/authentication/authentication-framework.html) para obter detalhes sobre como o Sling impõe o requisito de autenticação.
+A configuração padrão do AEM agora usa essa configuração ao permitir definir o mixin no modo de execução do autor, mas apenas tem efeito sobre a replicação para a instância de publicação. Consulte a documentação da [Autenticação Sling - Estrutura](https://sling.apache.org/documentation/the-sling-engine/authentication/authentication-framework.html) para obter detalhes sobre como o Sling impõe o requisito de autenticação.
 
 Adicionar o tipo de mixin `granite:AuthenticationRequired` nos caminhos com suporte configurados faz com que o registro OSGi do manipulador responsável seja atualizado contendo uma entrada nova e adicional com a propriedade `sling.auth.requirements`. Se um determinado requisito de autenticação especificar a propriedade `granite:loginPath` opcional, o valor também será registrado com o Autenticador com um prefixo &#39;-&#39; a ser excluído do requisito de autenticação.
 
@@ -139,7 +139,7 @@ Os requisitos de autenticação do Apache Sling são herdados por meio da págin
 
 #### Avaliação do caminho de login {#evaluation-of-login-path}
 
-A avaliação do caminho de logon e o redirecionamento para o recurso correspondente na autenticação são um detalhe de implementação do Manipulador de autenticação do seletor de logon do Adobe Granite ( `com.day.cq.auth.impl.LoginSelectorHandler`), que é um Apache Sling AuthenticationHandler configurado com AEM por padrão.
+A avaliação do caminho de logon e o redirecionamento para o recurso correspondente na autenticação são um detalhe de implementação do Manipulador de autenticação do seletor de logon do Adobe Granite ( `com.day.cq.auth.impl.LoginSelectorHandler`), que é um Apache Sling AuthenticationHandler configurado com o AEM por padrão.
 
 Chamando `AuthenticationHandler.requestCredentials`, esse manipulador tenta determinar a página de logon de mapeamento para a qual o usuário é redirecionado. Isso inclui as seguintes etapas:
 
@@ -336,7 +336,7 @@ A criação, modificação ou remoção de um novo requisito de autenticação �
 >
 >As modificações em um determinado nó de destino mencionado acima só serão refletidas no Apache Sling Authenticator se o `RequirementHandler` tiver sido configurado e o destino estiver contido nas árvores definidas pelos caminhos compatíveis (consulte a seção Opções de configuração).
 >
->Para obter mais informações, consulte [Atribuição de tipos de nós de mixin](https://docs.adobe.com/docs/en/spec/jcr/2.0/10_Writing.html#10.10.3 Atribuição de tipos de nós de mixin) e [Adição de nós e configuração de propriedades](https://docs.adobe.com/docs/en/spec/jcr/2.0/10_Writing.html#10.4 Adição de nós e configuração de propriedades)
+>Para obter mais informações, consulte [Atribuição de tipos de nós de mixin]&#x200B;(https://docs.adobe.com/docs/en/spec/jcr/2.0/10_Writing.html#10.10.3 Atribuição de tipos de nós de mixin) e [Adição de nós e configuração de propriedades]&#x200B;(https://docs.adobe.com/docs/en/spec/jcr/2.0/10_Writing.html#10.4 Adição de nós e configuração de propriedades)
 
 #### Adicionando um Novo Requisito de Autenticação {#adding-a-new-auth-requirement}
 
@@ -466,7 +466,7 @@ while (isSupported(node)) {
 
 ### Combinando políticas CUG e o requisito de autenticação {#combining-cug-policies-and-the-authentication-requirement}
 
-A tabela a seguir lista as combinações válidas de políticas CUG e o requisito de autenticação em uma instância AEM que tenha ambos os módulos ativados por meio de configuração.
+A tabela a seguir lista as combinações válidas de políticas CUG e o requisito de autenticação em uma instância do AEM que tenha ambos os módulos ativados por meio da configuração.
 
 | **Autenticação necessária** | **Caminho de Login** | **Acesso de Leitura Restrito** | **Efeito Esperado** |
 |---|---|---|---|
@@ -584,9 +584,9 @@ As opções de configuração disponíveis associadas ao módulo de autorizaçã
 
 #### Excluindo entidades da avaliação CUG {#excluding-principals-from-cug-evaluation}
 
-A isenção de princípios individuais da avaliação CUG foi adotada a partir da implementação anterior. A nova autorização CUG cobre isso com uma interface dedicada chamada CugExclude. O Apache Jackrabbit Oak 1.4 vem com uma implementação padrão que exclui um conjunto fixo de principais e uma implementação estendida que permite configurar nomes principais individuais. O último é configurado em instâncias de publicação do AEM.
+A isenção de princípios individuais da avaliação CUG foi adotada a partir da implementação anterior. A nova autorização CUG cobre isso com uma interface dedicada chamada CugExclude. O Apache Jackrabbit Oak 1.4 vem com uma implementação padrão que exclui um conjunto fixo de principais e uma implementação estendida que permite configurar nomes principais individuais. O último é configurado nas instâncias de publicação do AEM.
 
-O padrão desde o AEM 6.3 impede que os seguintes principais sejam afetados pelas políticas CUG:
+O padrão desde o AEM 6.3 impede que as seguintes entidades sejam afetadas pelas políticas CUG:
 
 * entidades administrativas (usuário administrador, grupo de administradores)
 * principais de usuário do serviço
@@ -600,7 +600,7 @@ Como alternativa, é possível fornecer e implantar uma implementação personal
 
 ### Autenticação: instalação e configuração {#authentication-setup-and-configuration}
 
-As novas partes relacionadas à autenticação estão contidas no pacote **Manipulador de autenticação do Adobe Granite** ( `com.adobe.granite.auth.authhandler` versão 5.6.48). Este pacote faz parte da instalação padrão do AEM.
+As novas partes relacionadas à autenticação estão contidas no **pacote do Manipulador de Autenticação do Adobe Granite** ( `com.adobe.granite.auth.authhandler` versão 5.6.48). Esse pacote faz parte da instalação padrão do AEM.
 
 Para configurar a substituição do requisito de autenticação para o suporte CUG obsoleto, alguns componentes OSGi devem estar presentes e ativos em uma determinada instalação do AEM. Para obter mais detalhes, consulte **Características dos componentes OSGi** abaixo.
 
@@ -648,7 +648,7 @@ Os dois componentes OSGi a seguir foram introduzidos para definir requisitos de 
 
 **com.adobe.granite.auth.requirements.impl.DefaultRequirementHandler**
 
-| Rótulo | Requisito de autenticação do Adobe Granite e manipulador de caminho de logon |
+| Rótulo | Requisitos de autenticação do Adobe Granite e manipulador de caminho de logon |
 |---|---|
 | Descrição | Implementação do `RequirementHandler` que atualiza os requisitos de autenticação do Apache Sling e a exclusão correspondente para os caminhos de logon associados. |
 | Propriedades de configuração | `supportedPaths` |
@@ -657,7 +657,7 @@ Os dois componentes OSGi a seguir foram introduzidos para definir requisitos de 
 
 #### Opções de configuração {#configuration-options-1}
 
-As partes relacionadas à autenticação da regravação do CUG vêm apenas com uma única opção de configuração associada ao Requisito de autenticação do Adobe Granite e ao Manipulador de caminho de logon:
+As partes relacionadas à autenticação da regravação do CUG vêm apenas com uma única opção de configuração associada ao requisito de autenticação do Adobe Granite e ao manipulador de caminho de logon:
 
 **&quot;Requisito de autenticação e Manipulador de caminho de logon&quot;**
 
@@ -680,7 +680,7 @@ As partes relacionadas à autenticação da regravação do CUG vêm apenas com 
 
 ## Configuração padrão desde o AEM 6.3 {#default-configuration-since-aem}
 
-As novas instalações do AEM usarão, por padrão, as novas implementações para as partes relacionadas à autorização e à autenticação do recurso CUG. A implementação antiga &quot;Suporte ao grupo de usuários fechado (CUG) do Adobe Granite&quot; foi descontinuada e será desativada por padrão em todas as instalações de AEM. Em vez disso, as novas implementações serão habilitadas da seguinte maneira:
+As novas instalações do AEM usarão, por padrão, as novas implementações para as partes relacionadas à autorização e à autenticação do recurso CUG. A implementação antiga &quot;Suporte ao grupo de usuários fechado (CUG) do Adobe Granite&quot; foi descontinuada e será desabilitada por padrão em todas as instalações do AEM. Em vez disso, as novas implementações serão habilitadas da seguinte maneira:
 
 ### Instâncias do autor {#author-instances}
 
@@ -688,19 +688,19 @@ As novas instalações do AEM usarão, por padrão, as novas implementações pa
 |---|---|
 | Caminhos com Suporte `/content` | O gerenciamento de controle de acesso para políticas CUG está habilitado. |
 | Avaliação de CUG habilitada FALSE | A avaliação de permissões está desabilitada. As políticas CUG não têm efeito. |
-| Classificação | 200 | Consulte a documentação do Oak. |
+| Classificação \|200 | Consulte a documentação do Oak. |
 
 >[!NOTE]
 >
 >Nenhuma configuração da **Lista de Exclusões do Apache Jackrabbit Oak CUG** e do **Requisito de Autenticação do Adobe Granite e Manipulador de Caminho de Logon** está presente nas instâncias de criação padrão.
 
-### Instâncias do Publish {#publish-instances}
+### Publicar instâncias {#publish-instances}
 
 | **&quot;Configuração CUG do Apache Jackrabbit Oak&quot;** | **Explicação** |
 |---|---|
 | Caminhos com Suporte `/content` | O gerenciamento de controle de acesso para políticas CUG está habilitado abaixo dos caminhos configurados. |
 | CUG Evaluation Enabled TRUE (Avaliação de CUG ativada TRUE) | A avaliação de permissões está habilitada abaixo dos caminhos configurados. As políticas CUG entram em vigor em `Session.save()`. |
-| Classificação | 200 | Consulte a documentação do Oak. |
+| Classificação \|200 | Consulte a documentação do Oak. |
 
 | **&quot;Lista de Exclusões do Apache Jackrabbit Oak CUG&quot;** | **Explicação** |
 |---|---|
@@ -742,7 +742,7 @@ Consulte a seção [Apache Jackrabbit FileVault](/help/sites-administering/close
 
 ### Replicação do Adobe Granite {#adobe-granite-replication}
 
-O módulo de replicação foi levemente ajustado para poder replicar as políticas CUG entre instâncias AEM diferentes:
+O módulo de replicação foi levemente ajustado para poder replicar as políticas CUG entre diferentes instâncias do AEM:
 
 * `DurboImportConfiguration.isImportAcl()` é interpretado literalmente e afetará somente as políticas de controle de acesso que implementam `javax.jcr.security.AccessControlList`
 
@@ -755,13 +755,13 @@ Há uma limitação da replicação de políticas CUG. Se uma determinada polít
 
 O manipulador de autenticação **Manipulador de Autenticação do Cabeçalho HTTP do Adobe Granite** enviado com o pacote `com.adobe.granite.auth.authhandler` contém uma referência à interface `CugSupport` definida pelo mesmo módulo. É usado para calcular o &quot;realm&quot; em determinadas circunstâncias, recorrendo ao realm configurado com o manipulador.
 
-Isso foi ajustado para tornar a referência a `CugSupport` opcional para garantir o máximo de compatibilidade com versões anteriores se uma determinada configuração decidir reativar a implementação obsoleta. As instalações que usam a implementação não obterão mais o realm extraído da implementação CUG, mas sempre exibirão o realm como definido com o **Manipulador de Autenticação do Cabeçalho HTTP do Adobe Granite**.
+Isso foi ajustado para tornar a referência a `CugSupport` opcional para garantir o máximo de compatibilidade com versões anteriores se uma determinada configuração decidir reativar a implementação obsoleta. As instalações que usam a implementação não obterão mais o território extraído da implementação CUG, mas sempre exibirão o território conforme definido com o **Manipulador de Autenticação do Cabeçalho HTTP do Adobe Granite**.
 
 >[!NOTE]
 >
 >Por padrão, o **Manipulador de autenticação do cabeçalho HTTP do Adobe Granite** só é configurado no modo de execução de publicação com a opção &quot;Desabilitar página de logon&quot; ( `auth.http.nologin`) habilitada.
 
-### Live Copy do AEM {#aem-livecopy}
+### AEM LiveCopy {#aem-livecopy}
 
 A configuração de CUGs com Live Copy é representada no repositório pela adição de um nó extra e uma propriedade extra, da seguinte maneira:
 
@@ -800,15 +800,15 @@ Essa mudança de propriedades residuais do JCR para uma política dedicada de co
 
 **Nó De Destino Definido Pela Política**
 
-Crie políticas CUG no nó JCR definindo a subárvore para estar sujeita a acesso restrito de leitura. Essa provavelmente será uma página AEM caso o CUG afete toda a árvore.
+Crie políticas CUG no nó JCR definindo a subárvore para estar sujeita a acesso restrito de leitura. Essa provavelmente será uma página do AEM caso o CUG afete toda a árvore.
 
-Colocar a política CUG somente no nó jcr:content localizado abaixo de uma determinada página restringe o acesso ao conteúdo s.str de uma determinada página, mas não terá efeito em nenhum irmão ou página secundária. Esse pode ser um caso de uso válido e é possível obtê-lo com um editor de repositório que permite a aplicação de conteúdo de acesso refinado. No entanto, contrasta com a implementação anterior, em que a inserção de uma propriedade cq:cugEnabled no nó jcr:content era remapeada internamente para o nó da página. Esse mapeamento não é mais executado.
+Colocar a política CUG somente no nó jcr:content localizado abaixo de uma determinada página restringe somente o acesso ao conteúdo s.str de uma determinada página, mas não terá efeito em nenhum irmão ou página secundária. Esse pode ser um caso de uso válido e é possível obtê-lo com um editor de repositório que permite a aplicação de conteúdo de acesso refinado. No entanto, contrasta com a implementação anterior, em que a inserção de uma propriedade cq:cugEnabled no nó jcr:content era remapeada internamente para o nó da página. Esse mapeamento não é mais executado.
 
 **Avaliação de Permissão com Políticas CUG**
 
 A mudança do suporte ao CUG antigo para um modelo de autorização adicional altera a maneira como as permissões de leitura eficazes são avaliadas. Conforme descrito na [Documentação do Jackrabbit](https://jackrabbit.apache.org/oak/docs/security/authorization/composite.html), um determinado principal com permissão para exibir `CUGcontent` só receberá acesso de leitura se a avaliação de permissão de todos os modelos configurados no repositório do Oak conceder acesso de leitura.
 
-Em outras palavras, para a avaliação das permissões efetivas, as entradas de controle de acesso `CUGPolicy` e padrão são consideradas e o acesso de leitura no conteúdo CUG só é concedido se for concedido por ambos os tipos de políticas. Em uma instalação de publicação padrão do AEM em que o acesso de leitura à árvore completa do `/content` é concedido a todos, o efeito das políticas CUG é o mesmo da implementação antiga.
+Em outras palavras, para a avaliação das permissões efetivas, as entradas de controle de acesso `CUGPolicy` e padrão são consideradas e o acesso de leitura no conteúdo CUG só é concedido se for concedido por ambos os tipos de políticas. Em uma instalação de publicação padrão do AEM, onde o acesso de leitura à árvore completa do `/content` é concedido a todos, o efeito das políticas CUG é o mesmo da implementação antiga.
 
 **Avaliação sob demanda**
 
@@ -817,7 +817,7 @@ O modelo de autorização CUG permite ativar individualmente o gerenciamento de 
 * o gerenciamento de controle de acesso será ativado se o módulo tiver um ou vários caminhos suportados onde os CUGs possam ser criados
 * a avaliação de permissão só será habilitada se a opção **Avaliação CUG Habilitada** também estiver marcada.
 
-Na nova avaliação da configuração padrão do AEM das políticas CUG, ela só é ativada com o modo de execução &quot;publicar&quot;. Consulte os detalhes na [configuração padrão desde o AEM 6.3](#default-configuration-since-aem) para obter mais detalhes. Isso pode ser verificado comparando as políticas eficazes de um determinado caminho com as políticas armazenadas no conteúdo. As políticas efetivas só serão exibidas caso a avaliação de permissão para CUGs esteja ativada.
+Na nova avaliação da configuração padrão do AEM das políticas CUG, ela só é ativada com o modo de execução &quot;publicar&quot;. Consulte os detalhes da [configuração padrão desde a AEM 6.3](#default-configuration-since-aem) para obter mais detalhes. Isso pode ser verificado comparando as políticas eficazes de um determinado caminho com as políticas armazenadas no conteúdo. As políticas efetivas só serão exibidas caso a avaliação de permissão para CUGs esteja ativada.
 
 Como explicado acima, as políticas de controle de acesso CUG agora são sempre armazenadas no conteúdo, mas a avaliação das permissões efetivas resultantes dessas políticas só será aplicada se **Avaliação CUG Habilitada** estiver ativada no console do sistema na Configuração **CUG do Apache Jackrabbit Oak.** Por padrão, está habilitado somente com o modo de execução &#39;publicar&#39;.
 
@@ -841,7 +841,7 @@ No que diz respeito a `granite:loginPath`, o mesmo privilégio é necessário pa
 
 #### Nó de Destino Definido pelo Tipo de Mixin {#target-node-defined-by-mixin-type}
 
-Crie requisitos de autenticação no nó JCR definindo a subárvore para estar sujeita a logon imposto. Essa provavelmente será uma página AEM caso o CUG afete toda a árvore e a interface do usuário para a nova implementação, portanto, adiciona o tipo de mixin de requisito de autenticação no nó da página.
+Crie requisitos de autenticação no nó JCR definindo a subárvore para estar sujeita a logon imposto. Essa provavelmente será uma Página do AEM, caso o CUG afete toda a árvore e a interface do usuário para a nova implementação, portanto, adiciona o tipo de mixin de requisito de autenticação no nó da página.
 
 Colocar a política CUG somente no nó jcr:content localizado abaixo de uma determinada página restringe somente o acesso ao conteúdo. No entanto, isso não afeta o próprio nó da página nem as páginas secundárias.
 
@@ -849,7 +849,7 @@ Esse cenário pode ser válido e é possível com um editor de repositório que 
 
 #### Caminhos suportados configurados {#configured-supported-paths}
 
-O tipo de mixin `granite:AuthenticationRequired` e a propriedade granite:loginPath somente serão respeitados no escopo definido pelo conjunto da opção de configuração **Caminhos com Suporte** presente no **Requisito de Autenticação do Granite para Adobe e Manipulador de Caminho de Logon**. Se nenhum caminho for especificado, o recurso de requisito de autenticação será completamente desabilitado. Nesse caso, o tipo de mixin ou a propriedade têm efeito quando são adicionados ou definidos para um determinado nó JCR.
+O tipo de mixin `granite:AuthenticationRequired` e a propriedade granite:loginPath só serão respeitados no escopo definido pelo conjunto da opção de configuração **Caminhos com Suporte** presente no **Requisito de Autenticação do Adobe Granite e Manipulador de Caminho de Logon**. Se nenhum caminho for especificado, o recurso de requisito de autenticação será completamente desabilitado. Nesse caso, o tipo de mixin ou a propriedade têm efeito quando são adicionados ou definidos para um determinado nó JCR.
 
 ### Mapeamento de conteúdo JCR, serviços OSGi e configurações {#mapping-of-jcr-content-osgi-services-and-configurations}
 
@@ -872,7 +872,7 @@ Para uma instalação atualizada do AEM, é importante garantir que apenas uma i
 
 ### Migração de conteúdo CUG existente {#migrating-existing-cug-content}
 
-O Adobe fornece uma ferramenta para migrar para a nova implementação CUG. Para usá-lo, execute as seguintes etapas:
+O Adobe fornece uma ferramenta para migrar para a nova implementação do CUG. Para usá-lo, execute as seguintes etapas:
 
 1. Vá para `https://<serveraddress>:<serverport>/system/console/cug-migration` para acessar a ferramenta.
 1. Digite o caminho raiz que você deseja verificar CUGs e pressione o botão **Executar simulação**. Isso verifica os CUGs qualificados para conversão no local selecionado.

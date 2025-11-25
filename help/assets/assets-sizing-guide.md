@@ -2,11 +2,11 @@
 title: Guia de dimensionamento de [!DNL Assets]
 description: Práticas recomendadas para determinar métricas eficientes para estimar a infraestrutura e os recursos necessários para implantar [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
-role: Architect, Admin
+role: Developer, Admin
 feature: Asset Management
 exl-id: fd58ead9-5e18-4f55-8d20-1cf4402fad97
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '1619'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Guia de dimensionamento de [!DNL Assets] {#assets-sizing-guide}
 
-Ao dimensionar o ambiente para uma implementação do [!DNL Adobe Experience Manager Assets], é importante garantir que haja recursos suficientes disponíveis em termos de disco, CPU, memória, E/S e taxa de transferência da rede. O dimensionamento de muitos desses recursos requer a compreensão de quantos ativos estão sendo carregados no sistema. Se uma métrica melhor não estiver disponível, você poderá dividir o tamanho da biblioteca existente pela idade da biblioteca para encontrar a taxa em que os ativos são criados.
+Ao dimensionar o ambiente para uma implementação do [!DNL Adobe Experience Manager Assets], é importante garantir que haja recursos suficientes disponíveis em termos de disco, CPU, memória, E/S e taxa de transferência de rede. O dimensionamento de muitos desses recursos requer a compreensão de quantos ativos estão sendo carregados no sistema. Se uma métrica melhor não estiver disponível, você poderá dividir o tamanho da biblioteca existente pela idade da biblioteca para encontrar a taxa em que os ativos são criados.
 
 ## Disco {#disk}
 
@@ -30,7 +30,7 @@ Finalmente, os recursos de controle de versão de [!DNL Experience Manager] arma
 Considerando esses fatores, você precisa de uma metodologia para calcular um espaço de armazenamento aceitável e preciso para armazenar os ativos do usuário.
 
 1. Determine o tamanho e o número de ativos carregados no sistema.
-1. Obtenha uma amostra representativa dos ativos a serem carregados no [!DNL Experience Manager]. Por exemplo, se você planeja carregar arquivos de PSD, JPG de IA e PDF no sistema, serão necessárias várias imagens de amostra de cada formato de arquivo. Além disso, essas amostras devem ser representativas dos diferentes tamanhos de arquivo e complexidades de imagens.
+1. Obtenha uma amostra representativa dos ativos a serem carregados no [!DNL Experience Manager]. Por exemplo, se você planeja carregar arquivos do PSD, JPG, AI e PDF no sistema, são necessárias várias imagens de amostra de cada formato de arquivo. Além disso, essas amostras devem ser representativas dos diferentes tamanhos de arquivo e complexidades de imagens.
 1. Defina as representações que serão usadas.
 1. Criar as representações em [!DNL Experience Manager] usando [!DNL ImageMagick] ou [!DNL Adobe Creative Cloud] aplicativos. Além das representações especificadas pelos usuários, crie representações predefinidas. Para usuários que implementam o Dynamic Media, é possível usar o binário IC para gerar as representações PTIFF a serem armazenadas no Experience Manager.
 1. Se você planeja usar subativos, gere-os para os tipos de arquivos apropriados.
@@ -98,7 +98,7 @@ A latência em implementações S3 é introduzida pelas threads de gravação em
 
 Como os binários são armazenados no armazenamento de dados, cada binário ocupa algum espaço. A maioria dos repositórios tem menos de 100 GB. No entanto, pode haver repositórios maiores de até 1 TB. Além disso, para executar a compactação offline, é necessário espaço livre suficiente no volume para regravar o repositório compactado junto com a versão pré-compactada. Uma boa regra geral é dimensionar o disco para 1,5 vez o tamanho esperado para o repositório.
 
-Para o repositório, use SSDs ou discos com um nível de IOPS superior a 3000. Para eliminar as chances de IOPS introduzirem gargalos de desempenho, monitore os níveis de espera de E/S da CPU para detectar os primeiros sinais de problemas.
+Para o repositório, use SSDs ou discos com um nível de IOPS superior a 3000. Para eliminar as chances de IOPS introduzirem gargalos de desempenho, monitore os níveis de espera do CPU IO para detectar os primeiros sinais de problemas.
 
 [Obter arquivo](assets/aem_environment_sizingtool.xlsx)
 
@@ -118,9 +118,9 @@ Além disso, você pode editar a propriedade de tamanho limite do componente `co
 
 O limite para o número de arquivos que podem existir em um armazenamento de dados pode ser de 2,1 bilhões devido às limitações do sistema de arquivos. É provável que o repositório encontre problemas devido ao grande número de nós muito antes de atingir o limite do armazenamento de dados.
 
-Se as representações forem geradas incorretamente, use a biblioteca Camera Raw. No entanto, nesse caso, o lado mais longo da imagem não deve ser superior a 65000 pixels. Além disso, a imagem não deve conter mais de 512 MP (512 x 1024 x 1024 pixels). O tamanho do ativo não importa.
+Se as representações forem geradas incorretamente, use a biblioteca do Camera Raw. No entanto, nesse caso, o lado mais longo da imagem não deve ser superior a 65000 pixels. Além disso, a imagem não deve conter mais de 512 MP (512 x 1024 x 1024 pixels). O tamanho do ativo não importa.
 
-É difícil estimar com precisão o tamanho do arquivo de TIFF com suporte pronto para uso com um heap específico para [!DNL Experience Manager] porque fatores adicionais, como o tamanho do pixel, influenciam o processamento. É possível que o [!DNL Experience Manager] possa processar um arquivo com tamanho de 255 MB pronto para uso, mas não possa processar um tamanho de arquivo de 18 MB porque o último é composto por um número de pixels excepcionalmente maior em comparação ao primeiro.
+É difícil estimar com precisão o tamanho do arquivo TIFF com suporte pronto para uso com um heap específico para [!DNL Experience Manager] porque fatores adicionais, como o tamanho do pixel, influenciam o processamento. É possível que o [!DNL Experience Manager] possa processar um arquivo com tamanho de 255 MB pronto para uso, mas não possa processar um tamanho de arquivo de 18 MB porque o último é composto por um número de pixels excepcionalmente maior em comparação ao primeiro.
 
 ## Tamanho dos ativos {#size-of-assets}
 

@@ -1,11 +1,11 @@
 ---
 title: Criação de modelos de fragmento de conteúdo - Guia de início rápido do Headless
-description: Defina a estrutura do conteúdo que você cria e veicula usando os recursos headless do Adobe Experience Manager (AEM) por meio dos modelos de fragmento de conteúdo.
+description: Defina a estrutura do conteúdo que você cria e veicula usando os recursos headless do Adobe Experience Manager (AEM), por meio dos modelos de fragmento de conteúdo.
 exl-id: 653e35c9-7b6a-49ae-b55d-af2ec40e257d
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
-role: Admin,Architect,Data Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin,Developer
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '478'
 ht-degree: 51%
@@ -14,7 +14,7 @@ ht-degree: 51%
 
 # Criação de modelos de fragmento de conteúdo - Guia de início rápido do Headless {#creating-content-fragment-models}
 
-Defina a estrutura do conteúdo que você cria e veicula usando os recursos headless do Adobe Experience Manager (AEM) por meio dos modelos de fragmento de conteúdo.
+Defina a estrutura do conteúdo que você cria e veicula usando os recursos headless do Adobe Experience Manager (AEM), por meio dos modelos de fragmento de conteúdo.
 
 ## O que são modelos de fragmento de conteúdo? {#what-are-content-fragment-models}
 
@@ -26,7 +26,7 @@ Os Modelos de fragmento de conteúdo definem a estrutura dos dados e do conteúd
 
 Um arquiteto de informações executaria essas tarefas apenas esporadicamente, à medida que novos modelos se tornassem necessários. Para os propósitos deste guia de introdução, você está criando apenas um modelo.
 
-1. Faça logon no AEM e, no menu principal, selecione **Ferramentas > Assets > Modelos de fragmentos de conteúdo**.
+1. Faça logon no AEM e, no menu principal, selecione **Ferramentas > Assets > Modelos de fragmento de conteúdo**.
 1. Clique na pasta que foi criada com sua configuração.
 
    ![A pasta de modelos](assets/models-folder.png)

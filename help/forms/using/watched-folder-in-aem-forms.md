@@ -9,16 +9,16 @@ exl-id: fbf5c7c3-cb01-4fda-8e5d-11d56792d4bf
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
-source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '7164'
+source-wordcount: '7136'
 ht-degree: 0%
 
 ---
 
 # Pasta monitorada no AEM Forms{#watched-folder-in-aem-forms}
 
-Um administrador pode configurar uma pasta de rede, conhecida como Pasta monitorada, para que, quando um usuário colocar um arquivo (como um arquivo PDF) na Pasta monitorada, um fluxo de trabalho, serviço ou operação de script pré-configurado seja iniciado para processar o arquivo adicionado. Depois que o serviço executa a operação especificada, ele salva o arquivo de resultado em uma pasta de saída especificada. Para obter mais informações sobre fluxo de trabalho, serviço e script, consulte [Vários métodos para processamento de arquivos](#variousmethodsforprocessingfiles).
+Um administrador pode configurar uma pasta de rede, conhecida como Pasta monitorada, para que, quando um usuário colocar um arquivo (como um arquivo do PDF) na Pasta monitorada, um fluxo de trabalho, serviço ou operação de script pré-configurado seja iniciado para processar o arquivo adicionado. Depois que o serviço executa a operação especificada, ele salva o arquivo de resultado em uma pasta de saída especificada. Para obter mais informações sobre fluxo de trabalho, serviço e script, consulte [Vários métodos para processamento de arquivos](#variousmethodsforprocessingfiles).
 
 ## Criar uma pasta monitorada {#create-a-watched-folder}
 
@@ -102,9 +102,9 @@ Você pode usar [padrões de arquivo](../../forms/using/watched-folder-in-aem-fo
    * Arquivos com nomes específicos; por exemplo, dados&#42; excluiriam arquivos e pastas denominados dados1, dados2 e assim por diante.
    * Arquivos com expressões compostas no nome e na extensão, como nestes exemplos:
 
-      * Dados[0-9][0-9][0-9].[dD][aA]&#39;port&#39;
-      * &#42;.[dD][Aa]&#39;port&#39;
-      * &#42;.[Xx][Mm][Ll]
+      * Dados `[0-9][0-9][0-9]`.`[dD][aA]`&#39;porta&#39;
+      * &#42;.`[dD][aA]`&#39;porta&#39;
+      * &#42;.`[Xx][Mm][Ll]`
 
 Para obter mais informações sobre padrões de arquivo, consulte [Sobre padrões de arquivo](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p).
 
@@ -115,10 +115,10 @@ Para obter mais informações sobre padrões de arquivo, consulte [Sobre padrõe
 
 * Arquivos com expressões compostas no nome e na extensão, como nestes exemplos:
 
-   * Dados[0-9][0-9][0-9].[dD][aA]&#39;port&#39;
+   * Dados `[0-9][0-9][0-9]`.`[dD][aA]`&#39;porta&#39;
 
-      * &#42;.[dD][Aa]&#39;port&#39;
-      * &#42;.[Xx][Mm][Ll]
+      * &#42;.`[dD][aA]`&#39;porta&#39;
+      * &#42;.`[Xx][Mm][Ll]`
 
 Para obter mais informações sobre padrões de arquivo, consulte [Sobre padrões de arquivo](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p)
 
@@ -163,7 +163,7 @@ Para obter mais informações sobre padrões de arquivo, consulte [Sobre padrõe
 
 * **overwriteDuplicateFilename (Booleano)**: quando definido como Verdadeiro, os arquivos na pasta de resultados e na pasta de preservação são substituídos. Quando definido como False, os arquivos e as pastas com um sufixo de índice numérico são usados para o nome. O valor padrão é Falso.
 * **preserveOnFailure (Booleano)**: preserva os arquivos de entrada se houver falha ao executar a operação em um serviço. O valor padrão é true.
-* **inputFilePattern (String)**: especifica o padrão dos arquivos de entrada para uma Pasta monitorada. Cria um arquivo de inclui na lista de permissões dos arquivos.
+* **inputFilePattern (String)**: especifica o padrão dos arquivos de entrada para uma Pasta monitorada. Cria um incluo na lista de permissões dos arquivos.
 * **assíncrono (Booleano)**: identifica o tipo de invocação como assíncrono ou síncrono. O valor padrão é true (assíncrono). O processamento de arquivos é uma tarefa que consome recursos, mantenha o valor do sinalizador assíncrono como verdadeiro para evitar a obstrução do thread principal do trabalho de verificação. Em um ambiente em cluster, é essencial manter o sinalizador true para permitir o balanceamento de carga para os arquivos que estão sendo processados nos servidores disponíveis. Se o sinalizador for falso, o trabalho de verificação tentará executar o processamento para cada arquivo/pasta de nível superior sequencialmente em seu próprio thread. Não defina o sinalizador como false sem um motivo específico, como processamento baseado em fluxo de trabalho em uma configuração de servidor único.
 
 >[!NOTE]
@@ -297,13 +297,13 @@ Se você planeja colocar seus scripts em um local personalizado, é provável qu
 1. Crie um usuário do sistema de forma programática ou por meio do console https://&#39;[server]:[port]&#39;/crx/explorer. Você também pode usar um usuário do sistema existente. É importante trabalhar com os usuários do sistema aqui em vez de com os usuários normais.
 1. Forneça permissões de leitura ao usuário do sistema recém-criado ou existente no local personalizado onde os scripts são armazenados. Você pode ter vários locais personalizados. Forneça pelo menos permissões de leitura a todos os locais personalizados.
 1. No console de configuração Felix (/system/console/configMgr), localize o mapeamento de usuário de serviço para as pastas de observação. Esse mapeamento se parece com &quot;Mapeamento: adobe-aemds-core-watch-folder=...&quot;.
-1. Clique no mapeamento. Para a entrada &quot;adobe-aemds-core-watch-folder:scripts=fd-service&quot;, altere fd-service para a ID do usuário de sistema personalizado. Clique em Salvar.
+1. Clique no mapeamento. Para a entrada &#39;adobe-aemds-core-watch-folder:scripts=fd-service&#39;, altere fd-service para a ID do usuário de sistema personalizado. Clique em Salvar.
 
 Agora, você pode usar o local personalizado configurado para salvar os scripts.
 
 ### Utilização de um fluxo de trabalho para processar arquivos de uma pasta monitorada {#using-a-workflow-to-process-files-of-a-watched-folder}
 
-Os workflows permitem automatizar atividades de Experience Manager. Os workflows consistem em uma série de etapas executadas em uma ordem específica. Cada etapa executa uma atividade distinta, como ativar uma página ou enviar uma mensagem de email. Os workflows podem interagir com ativos no repositório, contas de usuário e serviços Experience Manager. Portanto, os workflows podem coordenar-se de forma complicada.
+Os workflows permitem automatizar as atividades do Experience Manager. Os workflows consistem em uma série de etapas executadas em uma ordem específica. Cada etapa executa uma atividade distinta, como ativar uma página ou enviar uma mensagem de email. Os workflows podem interagir com ativos no repositório, contas de usuário e serviços da Experience Manager. Portanto, os workflows podem coordenar-se de forma complicada.
 
 * Antes de criar um workflow, considere os seguintes pontos:
 * A saída de uma etapa deve estar disponível para todas as etapas subsequentes.
@@ -327,7 +327,7 @@ Execute as seguintes etapas para processar arquivos usando workflows:
 
 Se você usar a linguagem de programação Java para implementar o fluxo de trabalho, o mecanismo de fluxo de trabalho AEM fornecerá valor para as variáveis de item de trabalho, sessão do fluxo de trabalho e metadados. Essas variáveis são passadas como argumentos para o método execute() da implementação personalizada do WorkflowProcess.
 
-Se você usar o ECMAScript para implementar o workflow, o mecanismo de workflow AEM fornecerá valor para as variáveis graniteWorkItem, graniteWorkflowSession e de metadados. Essas variáveis são passadas como argumentos para o método WorkflowContextService.execute().
+Se você usar o ECMAScript para implementar o workflow, o mecanismo de workflow do AEM fornecerá valor para as variáveis graniteWorkItem, graniteWorkflowSession e metadata. Essas variáveis são passadas como argumentos para o método WorkflowContextService.execute().
 
 O argumento para processWorkflowContext() é um objeto do tipo com.adobe.aemfd.watchfolder.workflow.api.WorkflowContext. A interface WorkflowContext tem as seguintes APIs para facilitar as considerações específicas do fluxo de trabalho mencionadas acima:
 
@@ -403,12 +403,12 @@ Se a estrutura de um payload for diferente da estrutura da pasta monitorada, voc
 #### Criação de um filtro personalizado do mapeador de carga {#creating-a-custom-payload-mapper-filter}
 
 1. Baixe o [Adobe Client SDK](https://repo1.maven.org/maven2/com/adobe/aemfd/aemfd-client-sdk/).
-1. Configure o SDK do cliente no caminho de compilação do projeto baseado em maven. Para começar, você pode baixar e abrir o seguinte projeto baseado em Maven no IDE de sua escolha.
+1. Configure o SDK do cliente no caminho de criação do projeto baseado em maven. Para começar, você pode baixar e abrir o seguinte projeto baseado em Maven no IDE de sua escolha.
 1. Edite o código de filtro do mapeador de carga disponível no pacote de amostra para atender aos seus requisitos.
 1. Use o Maven para criar um pacote do Filtro do mapeador de carga personalizado.
 1. Use o [console de pacotes do AEM](https://localhost:4502/system/console/bundles) para instalar o pacote.
 
-   Agora, o Filtro do mapeador de carga personalizado está listado na interface do usuário da pasta monitorada pelo AEM. Você pode usá-lo com seu workflow.
+   Agora, o Filtro personalizado do mapeador de carga está listado na Interface do usuário da pasta monitorada do AEM. Você pode usá-lo com seu workflow.
 
    O código de exemplo a seguir implementa um mapeador simples baseado em arquivo para os arquivos salvos em relação a uma carga. Você pode usá-lo para começar.
 
@@ -568,9 +568,9 @@ Os administradores podem especificar o tipo de arquivo que pode chamar um servi�
 * Arquivos com nomes específicos; por exemplo, dados.&#42;
 * Arquivos com expressões compostas no nome e na extensão, como nestes exemplos:
 
-   * Dados[0-9][0-9][0-9].[dD][aA]&#39;port&#39;
-   * &#42;.[dD][Aa]&#39;port&#39;
-   * &#42;.[Xx][Mm][Ll]
+   * Dados `[0-9][0-9][0-9]`.`[dD][aA]`&#39;porta&#39;
+   * &#42;.`[dD][aA]`&#39;porta&#39;
+   * &#42;.`[Xx][Mm][Ll]`
 
 * O administrador pode definir o padrão de arquivo da pasta de saída na qual os resultados serão armazenados. Para as pastas de saída (resultado, preservação e falha), o administrador pode especificar qualquer um destes padrões de arquivo:
 * %Y = ano (completo)
@@ -595,9 +595,9 @@ Se o padrão de mapeamento do parâmetro de saída terminar com &quot;File.separ
 
 ## Uso do PDF Generator com uma pasta monitorada {#using-pdf-generator-with-a-watched-folder}
 
-Você pode configurar uma Pasta monitorada para iniciar um fluxo de trabalho, serviço ou script para processar os arquivos de entrada. Na seção a seguir, configuraremos uma Pasta monitorada para iniciar um ECMAScript. O ECMAScript usaria o PDF Generator para converter documentos do Microsoft Word (.docx) em documentos PDF.
+Você pode configurar uma Pasta monitorada para iniciar um fluxo de trabalho, serviço ou script para processar os arquivos de entrada. Na seção a seguir, configuraremos uma Pasta monitorada para iniciar um ECMAScript. O ECMAScript usaria o PDF Generator para converter documentos do Microsoft Word (.docx) em documentos do PDF.
 
-Execute as seguintes etapas para configurar uma Pasta monitorada com PDF Generator:
+Execute as seguintes etapas para configurar uma Pasta monitorada com o PDF Generator:
 
 1. [Criar um ECMAScript](../../forms/using/watched-folder-in-aem-forms.md#p-create-an-ecmascript-p)
 1. [Criar um fluxo de trabalho](../../forms/using/watched-folder-in-aem-forms.md#p-create-a-workflow-p)
@@ -605,7 +605,7 @@ Execute as seguintes etapas para configurar uma Pasta monitorada com PDF Generat
 
 ### Criar um ECMAScript {#create-an-ecmascript}
 
-O ECMAScript usaria a API PDF Generator createPDF para converter documentos do Microsoft Word (.docx) em documentos PDF. Execute as seguintes etapas para criar o script:
+O ECMAScript usaria a API createPDF do PDF Generator para converter documentos do Microsoft Word (.docx) em documentos do PDF. Execute as seguintes etapas para criar o script:
 
 1. Abra o CRXDE lite em uma janela do navegador. A URL é https://&#39;[server]:[port]&#39;/crx/de.
 
@@ -649,7 +649,7 @@ O ECMAScript usaria a API PDF Generator createPDF para converter documentos do M
 
 1. Selecione o fluxo de trabalho recém-criado e clique em **Editar**. O workflow é aberto em uma nova janela.
 
-1. Exclua a etapa do fluxo de trabalho padrão. Arraste e solte a Etapa do processo do Sidekick para o fluxo de trabalho.
+1. Exclua a etapa do fluxo de trabalho padrão. Arraste e solte a Etapa do processo do Sidekick no fluxo de trabalho.
 
    ![criar-um-fluxo-de-trabalho-pdf2](assets/create-a-workflow-pdf2.png)
 
@@ -672,7 +672,7 @@ O ECMAScript usaria a API PDF Generator createPDF para converter documentos do M
    * folderPath (String): o caminho da pasta a ser examinada em intervalos de tempo definidos. A pasta deve estar em um local compartilhado com todos os servidores com acesso total ao servidor.
 inputProcessorType (String): o tipo do processo a ser iniciado. Neste tutorial, especifique o workflow.
 
-   * inputProcessorId (String): o comportamento da propriedade inputProcessorId é baseado no valor especificado para a propriedade inputProcessorType. Neste exemplo, o valor da propriedade inputProcessorType é workflow. Portanto, para a propriedade inputProcessorId, especifique o seguinte caminho do workflow PDFG: /etc/workflow/models/pdfg/jcr:content/model
+   * inputProcessorId (String): o comportamento da propriedade inputProcessorId é baseado no valor especificado para a propriedade inputProcessorType. Neste exemplo, o valor da propriedade inputProcessorType é workflow. Portanto, para a propriedade inputProcessorId, especifique o seguinte caminho do fluxo de trabalho do PDFG: /etc/workflow/models/pdfg/jcr:content/model
 
    * outputFilePattern (String): padrão do arquivo de saída. Você pode especificar uma pasta ou um padrão de arquivo. Se um padrão de pasta for especificado, os arquivos de saída terão os nomes conforme descrito em workflows. Se um padrão de arquivo for especificado, os arquivos de saída terão nomes conforme descrito no padrão de arquivo.
 

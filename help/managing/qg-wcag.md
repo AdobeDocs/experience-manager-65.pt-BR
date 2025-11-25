@@ -4,8 +4,8 @@ description: Um Guia rápido para as Diretrizes de acessibilidade de conteúdo d
 exl-id: 9cd37f5a-ff59-4617-a0f3-cd8994fbf4ab
 solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
-role: Developer,Leader,Architect,Data Architect,User
-source-git-commit: a4ccee3e8256c098339fb5308b1b4214e67b8b74
+role: Developer, Leader, User
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '1744'
 ht-degree: 90%
@@ -131,13 +131,13 @@ A lista de técnicas não está completa e a WAI atualiza constantemente a lista
 
 Trata-se de uma série de documentos que fornecem conselhos para ajudar os leitores a compreender o objetivo de diretrizes e critérios de sucesso específicos. Você pode [baixar uma introdução, além de links para informações mais detalhadas](https://www.w3.org/WAI/WCAG21/Understanding/).
 
-Cada diretriz e critério de sucesso tem também sua própria página de &quot;Noções básicas&quot;, que fornece informações sobre:
+Cada diretriz e critério de sucesso tem também sua própria página de “Noções básicas”, que fornece informações sobre:
 
 * A intenção da diretriz;
 * Critérios de sucesso específicos;
 * Técnicas de aconselhamento, que ajudam a cumprir os requisitos da diretriz, mas que não se enquadram em nenhum critério de sucesso específico.
 
-A página de &quot;noções básicas&quot; de cada critério de sucesso fornece informações sobre:
+Cada página de “noções básicas” de critério de sucesso fornece informações sobre:
 
 * A intenção do critério de sucesso;
 * Exemplos gerais de como o critério de sucesso pode ser cumprido;
@@ -149,7 +149,7 @@ Um exemplo pode ser encontrado em: [Noções sobre o critério de sucesso 1.1.1 
 
 ### Como cumprir a WCAG 2.1 {#how-to-meet-wcag}
 
-A seção &quot;Como cumprir&quot; está disponível na página [Como cumprir a WCAG 2.1](https://www.w3.org/WAI/WCAG21/quickref/). Esta seção fornece uma apresentação alternativa da WCAG, permitindo que os leitores refinem o conteúdo das diretrizes para os mais relevantes para os próprios interesses e/ou circunstâncias do leitor. Os leitores podem filtrar as técnicas de critérios de sucesso que desejam visualização, especificando tecnologias específicas de conteúdo na Web, como folhas de estilos em cascata ou scripts, ou especificando um ou mais níveis de prioridade específicos.
+A seção “Como cumprir” está disponível na página [Como cumprir a WCAG 2.1](https://www.w3.org/WAI/WCAG21/quickref/) . Esta seção fornece uma apresentação alternativa da WCAG, permitindo que os leitores refinem o conteúdo das diretrizes para os mais relevantes para os próprios interesses e/ou circunstâncias do leitor. Os leitores podem filtrar as técnicas de critérios de sucesso que desejam visualização, especificando tecnologias específicas de conteúdo na Web, como folhas de estilos em cascata ou scripts, ou especificando um ou mais níveis de prioridade específicos.
 
 Sem filtragem, esse recurso fornece todos os critérios de sucesso agrupados por diretriz. Para cada critério de sucesso, é fornecido o seguinte:
 

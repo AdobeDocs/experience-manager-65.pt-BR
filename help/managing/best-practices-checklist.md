@@ -8,10 +8,10 @@ content-type: reference
 exl-id: 16851d65-df55-471a-8848-c73c28db8ac0
 solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
-role: Admin,Architect,Data Architect,Developer,Leader
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin,Developer,Leader
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '318'
+source-wordcount: '317'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Há listas de verificação para cada persona (função) envolvida em seu projet
 
 ## Download {#download}
 
-Lista de verificação de práticas recomendadas do projeto AEM v2
+Lista de verificação de práticas recomendadas do projeto do AEM v2
 
 [Obter arquivo](assets/aem_project_bp_checklistv2-65.xlsx)
 
@@ -51,6 +51,6 @@ Para entregar com êxito um projeto de alta qualidade, você precisa concluir to
 
    >[!NOTE]
    >
-   >Não há uma relação direta 1:1 entre os documentos necessários individuais e os materiais de entrega.
+   >Não há uma relação 1:1 direta entre os documentos necessários individuais e os materiais para entrega.
 
 1. Com base nos status dos **[Documentos Necessários](/help/managing/best-practices.md#required-documents)** e **[Resultados Finais](/help/managing/best-practices.md#deliverables)**, as planilhas **[Pulsação do Projeto](/help/managing/best-practices.md#project-heartbeat-dashboard)** e **[Status por Função](/help/managing/best-practices.md#status-by-role)** são atualizadas automaticamente para fornecer uma indicação atualizada do progresso e da integridade do seu projeto.

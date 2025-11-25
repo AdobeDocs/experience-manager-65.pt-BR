@@ -8,8 +8,8 @@ topic-tags: best-practices
 exl-id: 8c1ea483-7319-4e5c-be4c-d43a2b67d316
 solution: Experience Manager, Experience Manager Sites
 feature: Compliance
-role: Admin, Architect, Developer, Leader, User, Data Architect, Data Engineer
-source-git-commit: 207c6bcc25eca05d128115f7235e83a6965009c5
+role: Admin, Developer, Leader, User
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '837'
 ht-degree: 54%
@@ -26,17 +26,17 @@ O Regulamento Geral sobre a Proteção de Dados da União Europeia entra em vigo
 
 A AEM Sites está pronta para ajudar os clientes em suas obrigações de conformidade com o GDPR. Esta página orienta os clientes por meio de procedimentos para lidar com solicitações do GDPR na AEM Sites. Ele descreve a localização dos dados privados armazenados e como removê-los manualmente ou com um código.
 
-Para obter mais informações, consulte a [página do GDPR no Centro de Privacidade Adobe](https://www.adobe.com/privacy/general-data-protection-regulation.html).
+Para obter mais informações, consulte a [página do GDPR no Centro de Privacidade da Adobe](https://www.adobe.com/privacy/general-data-protection-regulation.html).
 
 >[!NOTE]
 >
->Consulte [Preparação para o GDPR do AEM](/help/managing/data-protection-and-privacy.md) para obter mais detalhes.
+>Consulte [Preparação do GDPR da AEM](/help/managing/data-protection-and-privacy.md) para obter mais detalhes.
 
 ## Servidor do autor {#author-server}
 
 As contas de usuário e o conteúdo UGC no servidor do autor são abordados na [documentação do GDPR da plataforma](/help/managing/data-protection-and-privacy.md).
 
-## Publish Server {#publish-server}
+## Servidor de publicação {#publish-server}
 
 As contas de usuário usadas para autenticar visitantes no site e o conteúdo UGC no servidor de publicação são abordados na [Documentação do GDPR da plataforma](/help/managing/data-protection-and-privacy.md).
 
@@ -44,13 +44,13 @@ Por padrão, os componentes dos AEM Sites não armazenam dados de formulário in
 
 ## Aceitar/Recusar {#opt-in-opt-out}
 
-O AEM tem um [serviço de cookie de recusa](/help/sites-developing/cookie-optout.md) que pode ser usado para gerenciar a aceitação/recusa dos usuários.
+A AEM tem um [serviço de cookie de recusa](/help/sites-developing/cookie-optout.md) que pode ser usado para gerenciar a aceitação/recusa dos usuários.
 
 ## Insights aprimorados pelo Analytics {#enhanced-insights-by-analytics}
 
 O AEM Sites inclui uma integração opcional com o Enhanced Insights by Analytics que usa a funcionalidade no Adobe Analytics On-demand Service.
 
-Para obter mais informações sobre como gerenciar solicitações de titulares de dados do GDPR relacionadas ao Adobe Analytics, consulte [Adobe Analytics e GDPR](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-overview.html?lang=pt-BR).
+Para obter mais informações sobre como gerenciar solicitações de titulares de dados do GDPR relacionadas ao Adobe Analytics, consulte [Adobe Analytics e GDPR](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-overview.html).
 
 ## Personalization aprimorado por Target {#enhanced-personalization-by-target}
 
@@ -60,7 +60,7 @@ Para obter mais informações sobre como gerenciar solicitações de titulares d
 
 ## ContextHub {#contexthub}
 
-O AEM fornece uma camada de dados opcional com [ContextHub](/help/sites-developing/contexthub.md). Isto mantém os dados específicos do visitante no navegador, para serem usados para personalização baseada em regras.
+A AEM fornece uma camada de dados opcional com [ContextHub](/help/sites-developing/contexthub.md). Isto mantém os dados específicos do visitante no navegador, para serem usados para personalização baseada em regras.
 
 Por padrão, esses dados do visitante não são armazenados no AEM; o AEM envia as regras para a camada de dados para tomar decisões de personalização no navegador.
 
@@ -68,7 +68,7 @@ Por padrão, esses dados do visitante não são armazenados no AEM; o AEM envia 
 >
 >Antes do Adobe AEM (CQ) 5.6, o ClientContext (uma versão anterior do ContextHub) enviava os dados para o servidor, mas não os armazenava.
 >
->O Adobe AEM 6.4 e versões anteriores estão agora em final de vida útil e não são cobertos por esta documentação. Consulte [Documentação das versões anteriores do Adobe Experience Manager, CQ e CRX](https://experienceleague.adobe.com/br/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions).
+>O Adobe AEM 6.4 e versões anteriores agora estão em final de vida útil e não são cobertos por esta documentação. Consulte [Documentação das versões anteriores do Adobe Experience Manager, CQ e CRX](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions).
 
 ### Implementação do Opt-in/Opt-out (Aceitar/Recusar) {#implementing-opt-in-opt-out}
 

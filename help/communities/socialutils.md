@@ -9,9 +9,9 @@ exl-id: 0f731ec6-a12e-4098-a1ec-ee4cd4dc1432
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '295'
+source-wordcount: '297'
 ht-degree: 1%
 
 ---
@@ -20,14 +20,14 @@ ht-degree: 1%
 
 ## Pacote SocialUtils obsoleto {#socialutils-package-deprecated}
 
-O pacote `com.adobe.cq.social.ugcbase.SocialUtils` foi descontinuado no AEM 6.1.
+O pacote `com.adobe.cq.social.ugcbase.SocialUtils` foi substituído no AEM 6.1.
 
 As tabelas a seguir listam os métodos a serem usados no lugar dos métodos `SocialUtils`.
 
 ## Pacote SocialResourceUtilities  {#socialresourceutilities-package}
 
-| Métodos em com.adobe.cq.social.srp.utilities.api.SocialResourceUtilities |
-|---|
+| Métodos em com.adobe.cq.social.srp.utilities.api.SocialResourceUtilities | Notas |
+|---|---|
 | CheckPermission booleano (Resolvedor ResourceResolver, Caminho da string, Ação da string) |  |
 | SocialResourceProvider getSocialResourceProvider (recurso do recurso) |  |
 | SocialResourceConfiguration getStorageConfig(Recurso) |  |
@@ -42,8 +42,8 @@ As tabelas a seguir listam os métodos a serem usados no lugar dos métodos `Soc
 | Cadeia de caracteres UGCToResourcePath(Cadeia de caracteres ugcPath) | assinatura de método alterada |
 | Cadeia de caracteres UGCToResourcePath(Cadeia de caracteres ugcPath, resolvedor ResourceResolver) | novo |
 
-| Métodos em `com.adobe.cq.social.`utilities.resource.api.SocialResourceUtilities |
-|---|
+| Métodos em `com.adobe.cq.social.`utilities.resource.api.SocialResourceUtilities | Notas |
+|---|---|
 | SocialResourceProvider getSocialResourceProvider (recurso do recurso) | substitui SocialResourceProvider getConfiguredProvider(recurso do recurso) |
 
 ## Pacote SCFUtilities {#scfutilities-package}

@@ -4,8 +4,8 @@ description: Uma introdução ao Adobe Experience Manager (AEM) e às diretrizes
 exl-id: db8785b9-09eb-444a-addc-74c520e710a9
 solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
-role: Developer,Leader,Architect,Data Architect,User
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Developer, Leader, User
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '397'
 ht-degree: 65%
@@ -14,9 +14,9 @@ ht-degree: 65%
 
 # AEM e diretrizes de acessibilidade na Web{#aem-and-the-web-accessibility-guidelines}
 
-Existem muitas motivações sociais, econômicas e legais para garantir que o conteúdo da Web seja criado para ser o mais acessível possível ao público alvo, independentemente de qualquer deficiência ou limitação que possa ter. A acessibilidade da Web com o Adobe Experience Manager (AEM) é, portanto, um aspecto cada vez mais importante do bom design da Web.
+Existem muitas motivações sociais, econômicas e legais para garantir que o conteúdo da Web seja criado para ser o mais acessível possível ao público-alvo, independentemente de qualquer deficiência ou limitação que possa ter. A acessibilidade da Web com o Adobe Experience Manager (AEM) é, portanto, um aspecto cada vez mais importante do bom design da Web.
 
-Criar sites e conteúdo acessíveis com impactos do AEM:
+A criação de sites e conteúdo acessíveis com o AEM afeta:
 
 * Os administradores são responsáveis pela configuração do AEM para garantir que os recursos de acessibilidade estejam habilitados corretamente.
 
@@ -54,7 +54,7 @@ Usando o Adobe Experience Manager, os criadores de conteúdo e/ou proprietários
 Diretrizes sobre como os administradores podem configurar o AEM para produzir conteúdo acessível.
 
 * [Criando Forms Adaptável Acessível](/help/forms/using/creating-accessible-adaptive-forms.md)
-O Adobe Experience Manager (AEM) inclui vários recursos e funcionalidades que melhoram a usabilidade de formulários adaptáveis para usuários com diferentes habilidades. A solução também auxilia os autores de formulários na criação de formulários adaptáveis acessíveis.
+O Adobe Experience Manager (AEM) inclui vários recursos e funcionalidades que melhoram a usabilidade de formulários adaptáveis para usuários com habilidades diferentes. A solução também auxilia os autores de formulários na criação de formulários adaptáveis acessíveis.
 
 >[!NOTE]
 >
@@ -62,4 +62,4 @@ O Adobe Experience Manager (AEM) inclui vários recursos e funcionalidades que m
 
 ## Acessibilidade na Adobe {#accessibility-at-adobe}
 
-Para obter informações adicionais, visite o [Centro de Recursos de Acessibilidade do Adobe](https://www.adobe.com/accessibility/).
+Para obter informações adicionais, visite o [Centro de Recursos de Acessibilidade da Adobe](https://www.adobe.com/accessibility/).

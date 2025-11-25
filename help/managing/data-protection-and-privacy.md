@@ -1,6 +1,6 @@
 ---
 title: Regulamentos de proteção e privacidade de dados - Disponibilidade do Adobe Experience Manager
-description: Saiba mais sobre o suporte do Adobe Experience Manager para os vários Regulamentos de proteção e privacidade de dados. Ele inclui o Regulamento Geral sobre a Proteção de Dados da UE (GDPR), a Lei de Privacidade do Consumidor da Califórnia e como estar em conformidade ao implementar um novo projeto AEM.
+description: Saiba mais sobre o suporte do Adobe Experience Manager para os vários Regulamentos de proteção e privacidade de dados. Ele inclui o Regulamento Geral sobre a Proteção de Dados da UE (GDPR), a Lei de Privacidade do Consumidor da Califórnia e como estar em conformidade ao implementar um novo projeto do AEM.
 contentOwner: AEM Docs
 topic-tags: introduction, grdp
 content-type: reference
@@ -9,8 +9,8 @@ docset: aem65
 exl-id: 46c1ca14-78f6-4b33-9fdf-1b90a9875f66
 solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
-role: Developer,Leader,Architect,Data Architect,User
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Developer, Leader, User
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '890'
 ht-degree: 37%
@@ -29,7 +29,7 @@ ht-degree: 37%
 >
 >Para obter mais informações sobre a resposta da Adobe a questões de privacidade, e o que isso significa para você como cliente da Adobe, consulte o [Centro de privacidade da Adobe](https://www.adobe.com/br/privacy.html).
 
-O Adobe está fornecendo documentação e procedimentos (com APIs, quando disponíveis), para o administrador de privacidade do cliente ou administrador de AEM lidar com solicitações de proteção e privacidade de dados. Ela pode ajudá-lo a cumprir esses regulamentos. Os procedimentos documentados permitem que os clientes executem as solicitações normativas manualmente ou chamando APIs, quando disponíveis, de um portal ou serviço externo.
+A Adobe está fornecendo documentação e procedimentos (com APIs, quando disponíveis), para o administrador de privacidade do cliente ou o administrador do AEM lidar com solicitações de proteção e privacidade de dados. Ela pode ajudá-lo a cumprir esses regulamentos. Os procedimentos documentados permitem que os clientes executem as solicitações normativas manualmente ou chamando APIs, quando disponíveis, de um portal ou serviço externo.
 
 >[!CAUTION]
 >
@@ -43,13 +43,13 @@ O Adobe está fornecendo documentação e procedimentos (com APIs, quando dispon
 
 As instâncias do Adobe Experience Manager e os aplicativos executados nelas pertencem e são operadas por clientes do Adobe.
 
-Como consequência, as regulamentações de proteção de dados, como GDPR, CCPA e outras, são em grande parte de responsabilidade dos clientes.
+Como consequência, as regulamentações de proteção de dados, como RGPD, CCPA e outras, são em grande parte de responsabilidade dos clientes.
 
 Como uma breve introdução, os regulamentos relativos à privacidade e proteção de dados incluem novas regras que devem ser seguidas pelas funções de:
 
-* Entidades de Negócios (CCPA) e/ou Controladores de Dados (GDPR)
+* Entidades de Negócios (CCPA) e/ou Controladores de Dados (RGPD)
 
-* Fornecedores de serviços (CCPA) e/ou Processadores de dados (GDPR)
+* Fornecedores de serviços (CCPA) e/ou Processadores de dados (RGPD)
 
 As principais disposições desses regulamentos são as seguintes:
 
@@ -77,9 +77,9 @@ Para o Adobe Experience Manager:
 
 * O AEM não inclui nenhuma ferramenta pronta para uso para dar suporte a fluxos de trabalho de solicitações de privacidade.
 
-   * o Adobe fornece documentação e procedimentos para o administrador de privacidade do cliente e o administrador de AEM, permitindo que eles executem manualmente solicitações relacionadas a regulamentos de privacidade.
+   * A Adobe fornece documentação e procedimentos para o administrador de privacidade do cliente e o administrador do AEM, permitindo que eles executem manualmente solicitações relacionadas a regulamentos de privacidade.
 
-O Adobe está fornecendo procedimentos para lidar com solicitações de privacidade relacionadas a Acesso, Exclusão e Não participação no Adobe Experience Manager. Às vezes, há APIs disponíveis que podem ser chamadas de um portal desenvolvido pelo cliente ou scripts para ajudar na automação.
+A Adobe está fornecendo procedimentos para lidar com solicitações de privacidade relacionadas ao Acesso, Exclusão e Não participação no Adobe Experience Manager. Às vezes, há APIs disponíveis que podem ser chamadas de um portal desenvolvido pelo cliente ou scripts para ajudar na automação.
 
 O diagrama a seguir ilustra um fluxo de trabalho de solicitação de privacidade (ilustrado com o Adobe Experience Manager 6.5):
 
@@ -89,11 +89,11 @@ O diagrama a seguir ilustra um fluxo de trabalho de solicitação de privacidade
 
 Consulte as seções abaixo para obter a documentação regulamentar para as áreas de produtos do AEM.
 
-## Fundação AEM {#aem-foundation}
+## AEM Foundation {#aem-foundation}
 
-Consulte [Manipulando solicitações de proteção e privacidade de dados para o AEM Foundation](/help/sites-administering/handling-gdpr-requests-for-aem-platform.md).
+Consulte [Lidar com solicitações de proteção e privacidade de dados para o AEM Foundation](/help/sites-administering/handling-gdpr-requests-for-aem-platform.md).
 
-## AEM Optando por uma coleta de dados estatísticos de uso agregados {#aem-opting-into-aggregate-usage-statistics-collection}
+## AEM Optando Pela Coleta De Estatísticas De Uso Agregado {#aem-opting-into-aggregate-usage-statistics-collection}
 
 Consulte [Coleção de Estatísticas de Uso Agregado](/help/sites-deploying/opt-in-aggregated-usage-statistics.md).
 
@@ -121,7 +121,7 @@ Para obter mais informações, consulte o seguinte:
 
 ## AEM Communities {#aem-communities}
 
-A AEM Communities concede aos titulares de dados o direito à portabilidade dos dados, o direito de acesso e o direito de serem esquecidos pelas [APIs predefinidas](/help/communities/user-ugc-management-service.md). Essas APIs permitem a exclusão e a exportação em massa de conteúdo gerado pelo usuário e a desativação de contas de usuário identificadas por meio de suas IDs autorizáveis. No entanto, a exclusão permanente da conta de usuário é realizável por meio da exclusão do nó do usuário no CRXDE Lite, que atende à necessidade de uma recusa fácil do sistema.
+A AEM Communities concede aos titulares de dados o direito à portabilidade dos dados, o direito de acesso e o direito de serem esquecidos pelas [APIs predefinidas](/help/communities/user-ugc-management-service.md). Essas APIs permitem a exclusão e a exportação em massa de conteúdo gerado pelo usuário e a desativação de contas de usuário identificadas por meio de suas IDs autorizáveis. No entanto, a exclusão permanente da conta de usuário é realizável por meio da exclusão do nó de usuário no CRXDE Lite, que atende à necessidade de um Opt-out fácil do sistema.
 
 Além disso, o AEM Communities oferece privacidade por design devido ao seu console Moderação em massa, que permite que membros privilegiados encontrem e excluam as contribuições e os detalhes dos usuários. O console de gerenciamento de Membros permite limitar ao ponto de banir um colaborador. Além disso, autoriza os titulares dos dados a excluir as contribuições criadas por eles.
 

@@ -2,11 +2,11 @@
 title: Considerações e requisitos de rede
 description: Discute considerações de rede ao criar uma implantação do  [!DNL Adobe Experience Manager Assets] .
 contentOwner: AG
-role: Architect, Admin
+role: Developer, Admin
 feature: Developer Tools
 exl-id: 1313842c-18b1-4727-ba63-b454d0f5a2cc
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '1010'
 ht-degree: 0%
@@ -52,7 +52,7 @@ O diagrama exibe velocidades de uplink mais altas na rede corporativa do que as 
 
 ![chlimage_1-355](assets/chlimage_1-355.png)
 
-É importante considerar fatores desconhecidos na Internet e na conexão VPC, pois a largura de banda na Internet pode ser prejudicada devido ao pico de carga ou interrupções do provedor em larga escala. Em geral, a conectividade com a Internet é confiável. No entanto, às vezes pode introduzir pontos de estrangulamento.
+É importante considerar fatores desconhecidos na conexão com a Internet e o VPC, pois a largura de banda na Internet pode ser prejudicada devido ao pico de carga ou a interrupções do provedor em larga escala. Em geral, a conectividade com a Internet é confiável. No entanto, às vezes pode introduzir pontos de estrangulamento.
 
 No uplink de uma rede corporativa para a Internet, pode haver outros serviços usando a largura de banda. É importante entender quanto da largura de banda pode ser dedicada ou priorizada para o Assets. Por exemplo, se um link de 1 Gbps já estiver com 80% de utilização, você só poderá alocar um máximo de 20% da largura de banda para [!DNL Experience Manager Assets].
 
@@ -92,7 +92,7 @@ Ao avaliar a topologia interna do fluxo de trabalho, você deve analisar o segui
 
 Estes são alguns itens a serem considerados:
 
-* Leitura/gravação de metadados de XMP
+* Leitura/gravação de metadados do XMP
 * Ativação e replicação automáticas
 * Marca d&#39;água
 * Assimilação de subativos/extração de página

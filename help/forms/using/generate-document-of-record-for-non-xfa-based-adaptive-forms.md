@@ -9,16 +9,16 @@ feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '4308'
+source-wordcount: '4307'
 ht-degree: 2%
 
 ---
 
 # Gerar documento de registro para formulários adaptáveis ou fragmentos de formulário adaptáveis {#generate-document-of-record-for-adaptive-forms}
 
-O <span class="preview"> Adobe recomenda o uso de [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adicionar o Forms Adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
+A Adobe <span class="preview"> recomenda usar os [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adicionar o Forms Adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
@@ -34,7 +34,7 @@ Este artigo explica como gerar um documento de registro para o Forms adaptável 
 
 >[!NOTE]
 >
-> O suporte para personalizar os fragmentos de formulário adaptável e seus campos no editor de formulário adaptável foi introduzido com o AEM 6.5 Forms Service Pack 19 (6.5.19.0).
+> O suporte para personalizar os fragmentos de Formulário adaptável e seus campos no editor de Formulário adaptável foi introduzido com o AEM 6.5 Forms Service Pack 19 (6.5.19.0).
 
 
 >[!NOTE]
@@ -163,7 +163,7 @@ As seções a seguir descrevem como os elementos de formulário adaptáveis apar
   </tr>
   <tr>
    <td>Botão de redefinição</td>
-   <td>Botão Redefinir</td>
+   <td>Botão de redefinir</td>
    <td>falso</td>
    <td> </td>
   </tr>
@@ -180,7 +180,7 @@ As seções a seguir descrevem como os elementos de formulário adaptáveis apar
    <td> </td>
   </tr>
   <tr>
-   <td>Anexo de arquivo</td>
+   <td>Arquivo em anexo</td>
    <td> </td>
    <td>falso</td>
    <td>Não disponível no documento de modelo de registro. Disponível somente no documento de registro por meio de anexos.</td>
@@ -210,7 +210,7 @@ As seções a seguir descrevem como os elementos de formulário adaptáveis apar
 | Componente de formulário adaptável | Componente XFA correspondente | Notas |
 |---|---|---|
 | Imagem | Imagem | Os componentes TextDraw e Image, vinculados ou não, sempre aparecem no documento de registro para um formulário adaptável baseado em XSD, a menos que sejam excluídos usando o documento de configurações de registro. |
-| Texto | Texto |
+| Texto | Texto |  |
 
 >[!NOTE]
 >
@@ -268,13 +268,13 @@ Não modifique ou remova scripts presentes no modelo base.
 >
 >Modelo de base de design usando convenções e seguindo estritamente as etapas acima.
 
-## Documento de configuração modelo de registro {#document-of-record-template-configuration}
+## Configuração do modelo de documento de registro {#document-of-record-template-configuration}
 
 Configure o documento de modelo de registro do seu formulário para permitir que os clientes baixem uma cópia impressa do formulário enviado. Um arquivo XDP serve como o documento do modelo de registro. O documento de download dos clientes do registro é formatado de acordo com o layout especificado no arquivo XDP.
 
 Execute as seguintes etapas para configurar um documento de registro para formulários adaptáveis:
 
-1. Na instância do autor AEM, clique em **Forms > Forms e Documentos.**
+1. Na instância do autor do AEM, clique em **Forms > Forms e Documentos.**
 1. Selecione um formulário e clique em **Exibir Propriedades**.
 1. Na janela Propriedades, selecione **Modelo de formulário**.
 Você também pode selecionar um modelo de formulário ao criar um formulário.
@@ -367,7 +367,7 @@ Se você selecionar um modelo padrão ou personalizado, algumas ou todas as prop
 
 ## Layouts de tabela e coluna para painéis no documento de registro {#table-and-column-layouts-for-panels-in-document-of-record}
 
-O formulário adaptável pode ser longo, com vários campos de formulário. Talvez você não queira salvar um documento de registro como uma cópia exata do formulário adaptável. Agora é possível escolher um layout de tabela ou coluna para salvar um ou mais painéis de formulário adaptáveis no documento de PDF de registro.
+O formulário adaptável pode ser longo, com vários campos de formulário. Talvez você não queira salvar um documento de registro como uma cópia exata do formulário adaptável. Agora é possível escolher um layout de tabela ou coluna para salvar um ou mais painéis de formulário adaptáveis no documento de registro do PDF.
 
 Antes de gerar um documento de registro, nas configurações de um painel, selecione Layout do documento de registro desse painel como Tabela ou Coluna. Os campos no painel são organizados de acordo no documento de registro.
 
@@ -421,7 +421,6 @@ Para obter informações sobre como aplicar quebras de página e aplicar várias
 
 * **[!UICONTROL BÁSICO]**
    * **Modelo:** Você pode selecionar o modelo Padrão ou Personalizado.
-
      ![alt texto](image.png)
    * **Cor de Ênfase:** Você pode predefinir a Cor do modelo do [!UICONTROL Documento de Registro].
    * **Família da Fonte:** Selecione o tipo de fonte para os textos do [!UICONTROL Documento de Registro].
@@ -434,7 +433,6 @@ Para obter informações sobre como aplicar quebras de página e aplicar várias
       * Vertical
       * Horizontal
       * O mesmo que o formulário adaptável
-
      >[!NOTE]
      > O alinhamento vertical e horizontal é aplicável apenas a     Botão de opção e caixa de seleção
 * **[!UICONTROL PROPRIEDADES DA PÁGINA MESTRA]** Clique para obter mais informações sobre [propriedades da Página Mestra](#master-page-properties-master-page-properties)
@@ -493,8 +491,8 @@ Um arquivo XCI ajuda a definir várias propriedades de um documento. <!-- Forms 
 
 | Opção XCI | Descrição |
 |--- |--- |
-| config/present/pdf/creator | Identifica o criador do documento usando a entrada Criador no dicionário de Informações do Documento. Para obter informações sobre este dicionário, consulte o [guia de Referência de PDF](https://opensource.adobe.com/dc-acrobat-sdk-docs/acrobatsdk/). |
-| config/present/pdf/producer | Identifica o produtor do documento usando a entrada Produtor no dicionário de Informações do documento. Para obter informações sobre este dicionário, consulte o [guia de Referência de PDF](https://opensource.adobe.com/dc-acrobat-sdk-docs/acrobatsdk/). |
+| config/present/pdf/creator | Identifica o criador do documento usando a entrada Criador no dicionário de Informações do Documento. Para obter informações sobre este dicionário, consulte o [Guia de referência do PDF](https://opensource.adobe.com/dc-acrobat-sdk-docs/acrobatsdk/). |
+| config/present/pdf/producer | Identifica o produtor do documento usando a entrada Produtor no dicionário de Informações do documento. Para obter informações sobre este dicionário, consulte o [Guia de referência do PDF](https://opensource.adobe.com/dc-acrobat-sdk-docs/acrobatsdk/). |
 | config/present/layout | Controla se a saída é um painel único ou paginada. |
 | config/present/pdf/compression/level | Especifica o grau de compactação a ser usado ao gerar um documento PDF. |
 | config/present/pdf/fontInfo/embed | Controla a incorporação de fontes no documento de saída. |
@@ -509,16 +507,16 @@ Um arquivo XCI ajuda a definir várias propriedades de um documento. <!-- Forms 
 | config/present/common/log/to | Controla o local onde os dados de log ou de saída são gravados. |
 | config/present/output/to | Controla o local onde os dados de log ou de saída são gravados. |
 | config/present/script/currentPage | Especifica a página inicial quando o documento é aberto. |
-| config/present/script/exclude | Informa o Forms as a Cloud Service sobre quais eventos ignorar. |
-| config/present/pdf/linearized | Controla se o documento de PDF de saída está linearizado. |
+| config/present/script/exclude | Informa ao Forms as a Cloud Service quais eventos devem ser ignorados. |
+| config/present/pdf/linearized | Controla se o documento PDF de saída está linearizado. |
 | config/present/script/runScripts | Controla qual conjunto de scripts o Forms as a Cloud Service executa. |
-| config/present/pdf/tagged | Controla a inclusão de tags no documento de PDF de saída. As tags, no contexto de PDF, são informações adicionais incluídas em um documento para expor a estrutura lógica do documento. As tags auxiliam na acessibilidade e na reformatação. Por exemplo, um número de página pode ser marcado como um artefato para que um leitor de tela não o enuncie no meio do texto. Embora as tags tornem um documento mais útil, elas também aumentam o tamanho do documento e o tempo de processamento para criá-lo. |
+| config/present/pdf/tagged | Controla a inclusão de tags no documento PDF de saída. As tags, no contexto do PDF, são informações adicionais incluídas em um documento para expor a estrutura lógica do documento. As tags auxiliam na acessibilidade e na reformatação. Por exemplo, um número de página pode ser marcado como um artefato para que um leitor de tela não o enuncie no meio do texto. Embora as tags tornem um documento mais útil, elas também aumentam o tamanho do documento e o tempo de processamento para criá-lo. |
 | config/present/pdf/fontInfo/alwaysEmbed | Especifica uma fonte que está incorporada no documento de saída. |
 | config/present/pdf/fontInfo/neverEmbed | Especifica uma fonte que nunca deve ser incorporada ao documento de saída. |
-| config/present/pdf/pdfa/part | Especifica o número da versão da especificação de PDF/A com a qual o documento está em conformidade. |
-| config/present/pdf/pdfa/amd | Especifica o nível de alteração da especificação PDF/A. |
+| config/present/pdf/pdfa/part | Especifica o número da versão da especificação do PDF/A com a qual o documento está em conformidade. |
+| config/present/pdf/pdfa/amd | Especifica o nível de correção da especificação PDF/A. |
 | config/present/pdf/pdfa/conformance | Especifica o nível de conformidade com a especificação PDF/A. |
-| config/present/pdf/version | Especifica a versão do documento PDF a ser gerada |
+| config/present/pdf/version | Especifica a versão do documento do PDF a ser gerada |
 | config/present/pdf/version/map | Especifica as fontes de fallback do documento |
 
 

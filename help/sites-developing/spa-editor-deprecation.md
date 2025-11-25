@@ -1,18 +1,18 @@
 ---
-title: Descontinuação do Editor SPA
+title: Descontinuação do editor de SPA
 description: Embora o Editor de SPA continue sendo compatível com o Adobe, saiba o que sua desativação significa para o seu projeto e quais opções você tem para projetos futuros.
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Leader, User, Developer
 exl-id: ea6e46ee-4a90-4236-8d93-292a4dda4dc0
-source-git-commit: d619c969604119a8686050fdc34d77c0ffee33cf
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '910'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
 
-# Descontinuação do Editor SPA {#spa-editor-deprecation}
+# Descontinuação do editor de SPA {#spa-editor-deprecation}
 
 Embora o Editor de SPA continue sendo compatível com o Adobe, saiba o que sua desativação significa para o seu projeto e quais opções você tem para projetos futuros.
 
@@ -51,7 +51,7 @@ O substituto mais adequado para o Editor de SPA depende das necessidades dos pro
 
 * **[O Editor Universal](/help/sites-developing/universal-editor/introduction.md)** é a melhor substituição direta para o Editor SPA.
    * O Editor universal também é um editor visual e foi projetado especificamente para implementações dissociadas, incorporando toda a experiência do Adobe no Editor SPA.
-   * O Editor Universal também foi [lançado para AEM as a Cloud Service](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) e, portanto, é compatível com AMS e casos de uso no local, além dos Serviços em Nuvem.
+   * O Editor Universal também foi [lançado para AEM as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) e, portanto, é compatível com AMS e casos de uso no local, além dos Serviços em Nuvem.
 * **[O Editor de Fragmento de Conteúdo](/help/sites-developing/universal-editor/introduction.md)** é uma alternativa para aqueles que preferem um editor baseado em formulário.
    * O Editor de fragmento de conteúdo é mais adequado quando o conteúdo é estruturado como fragmentos de conteúdo do que como páginas.
 
@@ -65,7 +65,7 @@ O Editor universal oferece muitas vantagens, tornando a migração para ele uma 
 * **À prova de obsolescência:** o roteiro do AEM prioriza o Editor universal como editor visual. A sua adoção garante o acesso às mais recentes inovações e melhorias.
 * **Integração mais simples**: nenhuma SDK específica do AEM é necessária para usar o Editor Universal, reduzindo o bloqueio da pilha técnica.
 * **Traga Seu Próprio Aplicativo:** O Universal Editor oferece suporte a qualquer estrutura ou arquitetura da Web, permitindo a adoção sem a necessidade de refatoração complexa.
-* **Extensibilidade:** o Editor Universal se beneficia de uma [estrutura de extensão](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/extending) robusta, que inclui integrações com GenAI, Workfront e muito mais.
+* **Extensibilidade:** o Editor Universal se beneficia de uma [estrutura de extensão](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/extending) robusta, que inclui integrações com GenAI, Workfront e muito mais.
 
 Não há caminho de migração direto do Editor de SPA para o Editor universal. Isso se deve a diferenças fundamentais nas duas tecnologias.
 

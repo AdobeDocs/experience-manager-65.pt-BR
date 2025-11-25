@@ -1,6 +1,6 @@
 ---
 title: Gerenciando Endpoints Programaticamente
-description: Use o serviço Endpoint Registry para adicionar endpoints EJB, adicionar endpoint SOAP, adicionar endpoints de Pasta monitorada, adicionar endpoints de email, adicionar endpoints de comunicação remota, adicionar endpoints do Gerenciador de tarefas, modificar endpoints, remover endpoints e recuperar informações do conector de endpoint.
+description: Use o serviço Endpoint Registry para adicionar endpoints EJB, adicionar endpoints do SOAP, adicionar endpoints do Watched Folder, adicionar endpoints do Email, adicionar endpoints do Remoting, adicionar endpoints do Task Manager, modificar endpoints, remover endpoints e recuperar informações do conector de endpoint.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,9 +9,9 @@ role: Developer
 exl-id: b94dcca2-136b-4b7d-b5ce-544804575876
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '10800'
+source-wordcount: '10799'
 ht-degree: 1%
 
 ---
@@ -28,12 +28,12 @@ O serviço Registro de Ponto de Extremidade fornece a capacidade de gerenciar po
 * SOAP
 * Pasta monitorada
 * Email
-* (Obsoleto para formulários AEM) Comunicação remota
+* (Obsoleto para formulários do AEM) Comunicação remota
 * Gerenciador de tarefas
 
 >[!NOTE]
 >
->SOAP, EJB e (obsoleto para formulários AEM no JEE) endpoints de comunicação remota são criados automaticamente para cada serviço ativado. Os endpoints de SOAP e EJB ativam SOAP e EJB para todas as operações de serviço.
+>SOAP, EJB e (obsoleto para o AEM Forms no JEE) Os endpoints de comunicação remota são criados automaticamente para cada serviço ativado. Os endpoints do SOAP e do EJB ativam o SOAP e o EJB para todas as operações de serviço.
 
 Um endpoint de Comunicação Remota permite que os clientes Flex chamem operações no serviço AEM Forms ao qual o endpoint é adicionado. Um destino do Flex com o mesmo nome do ponto de extremidade é criado, e os clientes do Flex podem criar RemoteObjects que apontem para esse destino para chamar operações no serviço relevante.
 
@@ -44,7 +44,7 @@ Você pode organizar pontos de extremidade do TaskManager em grupos chamados *ca
 Você pode realizar essas tarefas usando o serviço Registro de Ponto de Extremidade:
 
 * Adicionar pontos finais EJB. (Consulte [Adicionando pontos de extremidade EJB](programmatically-endpoints.md#adding-ejb-endpoints).)
-* Adicionar pontos de extremidade SOAP. (Consulte [Adicionar Pontos De Extremidade SOAP](programmatically-endpoints.md#adding-soap-endpoints).)
+* Adicione endpoints do SOAP. (Consulte [Adicionando Pontos De Extremidade Do SOAP](programmatically-endpoints.md#adding-soap-endpoints).)
 * Adicionar pontos de extremidade de Pasta monitorada (Consulte [Adicionando Pontos de Extremidade de Pasta Monitorada](programmatically-endpoints.md#adding-watched-folder-endpoints).)
 * Adicionar pontos de extremidade de email. (Consulte [Adicionando Pontos De Extremidade De Email](programmatically-endpoints.md#adding-email-endpoints).)
 * Adicionar pontos de extremidade de Comunicação Remota. (Consulte [Adicionando Pontos De Extremidade De Comunicação Remota](programmatically-endpoints.md#adding-remoting-endpoints).)
@@ -132,15 +132,15 @@ Adicionar um ponto final EJB usando a API Java:
 1. Definir atributos de ponto final EJB.
 
    * Crie um objeto `CreateEndpointInfo` usando seu construtor.
-   * Especifique o valor do identificador do conector chamando o método `setConnectorId` do objeto `CreateEndpointInfo` e passando o valor da cadeia de caracteres `EJB`.
-   * Especifique a descrição do ponto de extremidade invocando o método `setDescription` do objeto `CreateEndpointInfo` e transmitindo um valor de cadeia de caracteres que descreve o ponto de extremidade.
-   * Especifique o nome do ponto de extremidade invocando o método `setName` do objeto `CreateEndpointInfo` e transmitindo um valor de cadeia de caracteres que especifique o nome.
-   * Especifique o serviço ao qual o ponto de extremidade pertence, chamando o método `setServiceId` do objeto `CreateEndpointInfo` e transmitindo um valor de cadeia de caracteres que especifica o nome do serviço.
-   * Especifique a operação que é invocada invocando o método `setOperationName` do objeto `CreateEndpointInfo` e passe um valor de cadeia de caracteres que especifique o nome da operação. Para pontos de extremidade SOAP e EJB, especifique um caractere curinga ( `*`), o que implica todas as operações.
+   * Especifique o valor do identificador do conector chamando o método `CreateEndpointInfo` do objeto `setConnectorId` e passando o valor da cadeia de caracteres `EJB`.
+   * Especifique a descrição do ponto de extremidade invocando o método `CreateEndpointInfo` do objeto `setDescription` e transmitindo um valor de cadeia de caracteres que descreve o ponto de extremidade.
+   * Especifique o nome do ponto de extremidade invocando o método `CreateEndpointInfo` do objeto `setName` e transmitindo um valor de cadeia de caracteres que especifique o nome.
+   * Especifique o serviço ao qual o ponto de extremidade pertence, chamando o método `CreateEndpointInfo` do objeto `setServiceId` e transmitindo um valor de cadeia de caracteres que especifica o nome do serviço.
+   * Especifique a operação que é invocada invocando o método `CreateEndpointInfo` do objeto `setOperationName` e passe um valor de cadeia de caracteres que especifique o nome da operação. Para pontos de extremidade SOAP e EJB, especifique um caractere curinga ( `*`), o que implica todas as operações.
 
 1. Criar um ponto final EJB.
 
-   Crie o ponto de extremidade invocando o método `createEndpoint` do objeto `EndpointRegistryClient` e transmitindo o objeto `CreateEndpointInfo`. Este método retorna um objeto `Endpoint` que representa o novo ponto de extremidade EJB.
+   Crie o ponto de extremidade invocando o método `EndpointRegistryClient` do objeto `createEndpoint` e transmitindo o objeto `CreateEndpointInfo`. Este método retorna um objeto `Endpoint` que representa o novo ponto de extremidade EJB.
 
 1. Ative o endpoint.
 
@@ -156,17 +156,17 @@ Adicionar um ponto final EJB usando a API Java:
 
 [Definindo propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-## Adicionar pontos de extremidade SOAP {#adding-soap-endpoints}
+## Adição de endpoints do SOAP {#adding-soap-endpoints}
 
-Você pode adicionar programaticamente um endpoint SOAP a um serviço usando a API Java do AEM Forms. Ao adicionar um ponto de extremidade SOAP, você habilita um aplicativo cliente a chamar o serviço usando o modo SOAP. Ou seja, ao definir as propriedades de conexão necessárias para chamar o AEM Forms, é possível selecionar o modo SOAP.
-
->[!NOTE]
->
->Não é possível adicionar um terminal SOAP usando serviços da Web.
+Você pode adicionar programaticamente um endpoint do SOAP a um serviço usando a API Java do AEM Forms. Ao adicionar um endpoint do SOAP, você permite que um aplicativo cliente chame o serviço usando o modo SOAP. Ou seja, ao definir as propriedades de conexão necessárias para chamar o AEM Forms, você pode selecionar o modo SOAP.
 
 >[!NOTE]
 >
->Normalmente, um endpoint SOAP é adicionado a um serviço por padrão. No entanto, um endpoint SOAP pode ser adicionado a um processo que é implantado de forma programática ou quando um endpoint SOAP é removido e deve ser adicionado novamente.
+>Não é possível adicionar um terminal SOAP usando serviços Web.
+
+>[!NOTE]
+>
+>Normalmente, um endpoint do SOAP é adicionado a um serviço por padrão. No entanto, um endpoint do SOAP pode ser adicionado a um processo que é implantado de forma programática ou quando um endpoint do SOAP foi removido e precisa ser adicionado novamente.
 
 ### Resumo das etapas {#summary_of_steps-1}
 
@@ -174,8 +174,8 @@ Para adicionar um terminal SOAP a um serviço, execute as seguintes tarefas:
 
 1. Incluir arquivos de projeto.
 1. Criar um objeto `EndpointRegistryClient`.
-1. Defina atributos de ponto de extremidade SOAP.
-1. Criar um terminal SOAP.
+1. Defina atributos de endpoint do SOAP.
+1. Crie um terminal SOAP.
 1. Ative o endpoint.
 
 **Incluir arquivos de projeto**
@@ -189,25 +189,25 @@ Os seguintes arquivos JAR devem ser adicionados ao caminho de classe do projeto:
 * adobe-utilities.jar (necessário se o AEM Forms for implantado no JBoss Application Server)
 * jbossall-client.jar (necessário se o AEM Forms for implantado no JBoss Application Server)
 
-Esses arquivos JAR são necessários para criar um terminal SOAP. No entanto, você precisará adicionar arquivos JAR se usar o terminal SOAP para chamar o serviço. Para obter informações sobre arquivos JAR do AEM Forms, consulte [Incluindo arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Esses arquivos JAR são necessários para criar um terminal SOAP. No entanto, você precisará adicionar arquivos JAR se usar o endpoint do SOAP para chamar o serviço. Para obter informações sobre arquivos JAR do AEM Forms, consulte [Incluindo arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **Criar um objeto de Cliente EndpointRegistry**
 
-Para adicionar programaticamente um ponto de extremidade SOAP a um serviço, é necessário criar um objeto `EndpointRegistryClient`.
+Para adicionar programaticamente um ponto de extremidade SOAP a um serviço, você deve criar um objeto `EndpointRegistryClient`.
 
-**Definir atributos de ponto de extremidade SOAP**
+**Definir atributos de ponto de extremidade do SOAP**
 
 Para adicionar um terminal SOAP a um serviço, especifique os seguintes valores:
 
-* **Valor do identificador do conector**: especifica o tipo de ponto de extremidade a ser criado. Para criar um ponto de extremidade SOAP, especifique `SOAP`.
+* **Valor do identificador do conector**: especifica o tipo de ponto de extremidade a ser criado. Para criar um ponto de extremidade do SOAP, especifique `SOAP`.
 * **Descrição**: especifica a descrição do ponto de extremidade.
 * **Nome**: especifica o nome do ponto de extremidade.
 * **Valor do identificador de serviço**: especifica o serviço ao qual o ponto de extremidade pertence.
-* **Nome da operação**: especifica o nome da operação que é invocada usando o ponto de extremidade. Ao criar um ponto de extremidade SOAP, especifique um caractere curinga ( `*`). No entanto, se você quiser especificar uma operação específica em vez de invocar todas as operações de serviço, especifique o nome da operação em vez de usar o caractere curinga ( `*`).
+* **Nome da operação**: especifica o nome da operação que é invocada usando o ponto de extremidade. Ao criar um ponto de extremidade do SOAP, especifique um caractere curinga ( `*`). No entanto, se você quiser especificar uma operação específica em vez de invocar todas as operações de serviço, especifique o nome da operação em vez de usar o caractere curinga ( `*`).
 
-**Criar um ponto de extremidade SOAP**
+**Criar um ponto de extremidade do SOAP**
 
-Depois de definir os atributos do endpoint de SOAP, é possível criar um endpoint de SOAP.
+Depois de definir os atributos do endpoint do SOAP, você pode criar um endpoint do SOAP.
 
 **Habilitar o ponto de extremidade**
 
@@ -234,18 +234,18 @@ Adicionar um terminal SOAP a um serviço usando a API Java:
    * Crie um objeto `ServiceClientFactory` que contenha propriedades de conexão.
    * Crie um objeto `EndpointRegistryClient` usando seu construtor e transmitindo o objeto `ServiceClientFactory`.
 
-1. Defina atributos de ponto de extremidade SOAP.
+1. Defina atributos de endpoint do SOAP.
 
    * Crie um objeto `CreateEndpointInfo` usando seu construtor.
-   * Especifique o valor do identificador do conector chamando o método `setConnectorId` do objeto `CreateEndpointInfo` e passando o valor da cadeia de caracteres `SOAP`.
-   * Especifique a descrição do ponto de extremidade invocando o método `setDescription` do objeto `CreateEndpointInfo` e transmitindo um valor de cadeia de caracteres que descreve o ponto de extremidade.
-   * Especifique o nome do ponto de extremidade invocando o método `setName` do objeto `CreateEndpointInfo` e transmitindo um valor de cadeia de caracteres que especifique o nome.
-   * Especifique o serviço ao qual o ponto de extremidade pertence, chamando o método `setServiceId` do objeto `CreateEndpointInfo` e transmitindo um valor de cadeia de caracteres que especifica o nome do serviço.
-   * Especifique a operação que é invocada chamando o método `setOperationName` do objeto `CreateEndpointInfo` e transmitindo um valor de cadeia de caracteres que especifica o nome da operação. Para pontos de extremidade SOAP e EJB, especifique um caractere curinga ( `*`), o que implica todas as operações.
+   * Especifique o valor do identificador do conector chamando o método `CreateEndpointInfo` do objeto `setConnectorId` e passando o valor da cadeia de caracteres `SOAP`.
+   * Especifique a descrição do ponto de extremidade invocando o método `CreateEndpointInfo` do objeto `setDescription` e transmitindo um valor de cadeia de caracteres que descreve o ponto de extremidade.
+   * Especifique o nome do ponto de extremidade invocando o método `CreateEndpointInfo` do objeto `setName` e transmitindo um valor de cadeia de caracteres que especifique o nome.
+   * Especifique o serviço ao qual o ponto de extremidade pertence, chamando o método `CreateEndpointInfo` do objeto `setServiceId` e transmitindo um valor de cadeia de caracteres que especifica o nome do serviço.
+   * Especifique a operação que é invocada chamando o método `CreateEndpointInfo` do objeto `setOperationName` e transmitindo um valor de cadeia de caracteres que especifica o nome da operação. Para pontos de extremidade SOAP e EJB, especifique um caractere curinga ( `*`), o que implica todas as operações.
 
-1. Criar um terminal SOAP.
+1. Crie um terminal SOAP.
 
-   Crie o ponto de extremidade invocando o método `createEndpoint` do objeto `EndpointRegistryClient` e transmitindo o objeto `CreateEndpointInfo`. Esse método retorna um objeto `Endpoint` que representa o novo ponto de extremidade SOAP.
+   Crie o ponto de extremidade invocando o método `EndpointRegistryClient` do objeto `createEndpoint` e transmitindo o objeto `CreateEndpointInfo`. Este método retorna um objeto `Endpoint` que representa o novo ponto de extremidade do SOAP.
 
 1. Ative o endpoint.
 
@@ -255,7 +255,7 @@ Adicionar um terminal SOAP a um serviço usando a API Java:
 
 [Resumo das etapas](programmatically-endpoints.md#summary-of-steps)
 
-[QuickStart: adicionando um endpoint SOAP usando a API Java](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-a-soap-endpoint-using-the-java-api)
+[QuickStart: adicionando um terminal SOAP usando a API Java](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-a-soap-endpoint-using-the-java-api)
 
 [Inclusão de arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -263,13 +263,13 @@ Adicionar um terminal SOAP a um serviço usando a API Java:
 
 ## Adicionar pontos de extremidade da pasta monitorada {#adding-watched-folder-endpoints}
 
-Você pode adicionar programaticamente um endpoint de Pasta monitorada a um serviço usando a API Java do AEM Forms. Ao adicionar um endpoint de Pasta monitorada, você permite que os usuários coloquem um arquivo (como um arquivo de PDF) em uma pasta. Quando o arquivo é colocado na pasta, o serviço configurado é chamado e manipula o arquivo. Depois que o serviço executa a operação especificada, ele salva o arquivo modificado em uma pasta de saída especificada. Uma pasta monitorada é configurada para ser digitalizada em um intervalo de taxa fixa ou com uma programação cron, como toda segunda, quarta e sexta ao meio-dia.
+Você pode adicionar programaticamente um endpoint de Pasta monitorada a um serviço usando a API Java do AEM Forms. Ao adicionar um endpoint de Pasta monitorada, você permite que os usuários coloquem um arquivo (como um arquivo do PDF) em uma pasta. Quando o arquivo é colocado na pasta, o serviço configurado é chamado e manipula o arquivo. Depois que o serviço executa a operação especificada, ele salva o arquivo modificado em uma pasta de saída especificada. Uma pasta monitorada é configurada para ser digitalizada em um intervalo de taxa fixa ou com uma programação cron, como toda segunda, quarta e sexta ao meio-dia.
 
 Para adicionar programaticamente um ponto de extremidade de Pasta monitorada a um serviço, considere o seguinte processo de vida curta chamado *EncryptDocument*. (Consulte [Noções básicas sobre processos do AEM Forms](/help/forms/developing/aem-forms-processes.md#understanding-aem-forms-processes).)
 
 ![aw_aw_encryptdocumentprocess](assets/aw_aw_encryptdocumentprocess.png)
 
-Este processo aceita um documento PDF não seguro como valor de entrada e passa o documento PDF não seguro para a operação `EncryptPDFUsingPassword` do serviço de Criptografia. O documento PDF é criptografado com uma senha e o documento PDF criptografado com senha é o valor de saída desse processo. O nome do valor de entrada (o documento PDF não seguro) é `InDoc` e o tipo de dados é `com.adobe.idp.Document`. O nome do valor de saída (o documento PDF criptografado por senha) é `SecuredDoc` e o tipo de dados é `com.adobe.idp.Document`.
+Este processo aceita um documento PDF não seguro como valor de entrada e passa o documento PDF não seguro para a operação `EncryptPDFUsingPassword` do serviço de Criptografia. O documento PDF é criptografado com uma senha, e o documento PDF criptografado com senha é o valor de saída desse processo. O nome do valor de entrada (o documento PDF não seguro) é `InDoc` e o tipo de dados é `com.adobe.idp.Document`. O nome do valor de saída (o documento PDF criptografado por senha) é `SecuredDoc` e o tipo de dados é `com.adobe.idp.Document`.
 
 >[!NOTE]
 >
@@ -331,7 +331,7 @@ A lista a seguir especifica os valores de configuração que são definidos quan
 * **userName**: o nome de usuário usado ao invocar um serviço de destino da Pasta monitorada. Esse valor é obrigatório. O valor padrão é SuperAdmin.
 * **domainName**: o domínio do usuário. Esse valor é obrigatório. O valor padrão é DefaultDom.
 * **batchSize**: o número de arquivos ou pastas a serem selecionados por verificação. Use esse valor para evitar uma sobrecarga no sistema; a varredura de muitos arquivos de uma vez pode resultar em falha. O valor padrão é 2.
-* **waitTime**: o tempo, em milissegundos, de espera antes de verificar uma pasta ou um arquivo após a criação. Por exemplo, se o tempo de espera for de 36.000.000 milissegundos (uma hora) e o arquivo tiver sido criado há um minuto, esse arquivo será selecionado após 59 minutos ou mais. Esse atributo é útil para garantir que um arquivo ou pasta seja copiado completamente para a pasta de entrada. Por exemplo, se você tiver um arquivo grande para processar e o download demorar dez minutos, defina o tempo de espera como 10&ast;60 &ast;1000 milissegundos. Essa configuração impede que a pasta monitorada verifique o arquivo se ele não estiver aguardando dez minutos. O valor padrão é 0.
+* **waitTime**: o tempo, em milissegundos, de espera antes de verificar uma pasta ou um arquivo após a criação. Por exemplo, se o tempo de espera for de 36.000.000 milissegundos (uma hora) e o arquivo tiver sido criado há um minuto, esse arquivo será selecionado após 59 minutos ou mais. Esse atributo é útil para garantir que um arquivo ou pasta seja copiado completamente para a pasta de entrada. Por exemplo, se você tiver um arquivo grande para processar e o download demorar dez minutos, defina o tempo de espera como 10&amp;ast;60 &amp;ast;1000 milissegundos. Essa configuração impede que a pasta monitorada verifique o arquivo se ele não estiver aguardando dez minutos. O valor padrão é 0.
 * **excludeFilePattern**: o padrão usado por uma pasta monitorada para determinar quais arquivos e pastas serão verificados e selecionados. Qualquer arquivo ou pasta que tenha esse padrão não será examinado para processamento. Essa configuração é útil quando a entrada é uma pasta que contém vários arquivos. O conteúdo da pasta pode ser copiado para uma pasta que tenha um nome que será selecionado pela pasta monitorada. Esta etapa impede que a pasta monitorada selecione uma pasta para processamento antes que ela seja completamente copiada para a pasta de entrada. Por exemplo, se o valor excludeFilePattern for `data*`, todos os arquivos e pastas que correspondam a `data*` não serão selecionados. Isso inclui arquivos e pastas chamados `data1`, `data2` e assim por diante. Além disso, o padrão pode ser complementado com padrões curingas para especificar padrões de arquivo. A pasta monitorada modifica a expressão regular para oferecer suporte a padrões curingas como `*.*` e `*.pdf`. Esses padrões curingas não são suportados por expressões regulares.
 * **includeFilePattern**: o padrão que a pasta monitorada usa para determinar quais pastas e arquivos examinar e coletar. Por exemplo, se o valor for `*`, todos os arquivos e pastas que corresponderem a `input*` serão selecionados. Isso inclui arquivos e pastas chamados `input1`, `input2` e assim por diante. O valor padrão é `*`. Esse valor indica todos os arquivos e pastas. Além disso, o padrão pode ser complementado com padrões curingas para especificar padrões de arquivo. A pasta monitorada modifica a expressão regular para oferecer suporte a padrões curingas como `*.*` e `*.pdf`. Esses padrões curingas não são suportados por expressões regulares. Esse valor é obrigatório.
 * **resultFolderName**: A pasta onde os resultados salvos são armazenados. Esse local pode ser um caminho de diretório absoluto ou relativo. Se os resultados não aparecerem nessa pasta, verifique a pasta de falha. Arquivos somente leitura não são processados e serão salvos na pasta de falha. O valor padrão é `result/%Y/%M/%D/`. Esta é a pasta de resultados dentro da pasta monitorada.
@@ -405,15 +405,15 @@ Adicione um endpoint de Pasta monitorada usando a API Java do AEM Forms:
 1. Defina atributos de ponto de extremidade da Pasta monitorada.
 
    * Crie um objeto `CreateEndpointInfo` usando seu construtor.
-   * Especifique o valor do identificador do conector chamando o método `setConnectorId` do objeto `CreateEndpointInfo` e passando o valor da cadeia de caracteres `WatchedFolder`.
-   * Especifique a descrição do ponto de extremidade invocando o método `setDescription` do objeto `CreateEndpointInfo` e transmitindo um valor de cadeia de caracteres que descreve o ponto de extremidade.
-   * Especifique o nome do ponto de extremidade invocando o método `setName` do objeto `CreateEndpointInfo` e transmitindo um valor de cadeia de caracteres que especifique o nome.
-   * Especifique o serviço ao qual o ponto de extremidade pertence, chamando o método `setServiceId` do objeto `CreateEndpointInfo` e transmitindo um valor de cadeia de caracteres que especifica o nome do serviço.
-   * Especifique a operação que é invocada chamando o método `setOperationName` do objeto `CreateEndpointInfo` e transmitindo um valor de cadeia de caracteres que especifica o nome da operação. Normalmente, ao criar um endpoint de Pasta monitorada para um serviço que se originou de um processo criado no Workbench, o nome da operação é chamado.
+   * Especifique o valor do identificador do conector chamando o método `CreateEndpointInfo` do objeto `setConnectorId` e passando o valor da cadeia de caracteres `WatchedFolder`.
+   * Especifique a descrição do ponto de extremidade invocando o método `CreateEndpointInfo` do objeto `setDescription` e transmitindo um valor de cadeia de caracteres que descreve o ponto de extremidade.
+   * Especifique o nome do ponto de extremidade invocando o método `CreateEndpointInfo` do objeto `setName` e transmitindo um valor de cadeia de caracteres que especifique o nome.
+   * Especifique o serviço ao qual o ponto de extremidade pertence, chamando o método `CreateEndpointInfo` do objeto `setServiceId` e transmitindo um valor de cadeia de caracteres que especifica o nome do serviço.
+   * Especifique a operação que é invocada chamando o método `CreateEndpointInfo` do objeto `setOperationName` e transmitindo um valor de cadeia de caracteres que especifica o nome da operação. Normalmente, ao criar um endpoint de Pasta monitorada para um serviço que se originou de um processo criado no Workbench, o nome da operação é chamado.
 
 1. Especifique os valores de configuração.
 
-   Para cada valor de configuração a ser definido para o ponto de extremidade da Pasta monitorada, você deve invocar o método `setConfigParameterAsText` do objeto `CreateEndpointInfo`. Por exemplo, para definir o valor de configuração `url`, chame o método `setConfigParameterAsText` do objeto `CreateEndpointInfo` e passe os seguintes valores de cadeia de caracteres:
+   Para cada valor de configuração a ser definido para o ponto de extremidade da Pasta monitorada, você deve invocar o método `CreateEndpointInfo` do objeto `setConfigParameterAsText`. Por exemplo, para definir o valor de configuração `url`, chame o método `CreateEndpointInfo` do objeto `setConfigParameterAsText` e passe os seguintes valores de cadeia de caracteres:
 
    * Um valor de string que especifica o nome do valor de configuração. Ao definir o valor de configuração `url`, especifique `url`.
    * Um valor de string que especifica o valor do valor de configuração. Ao definir o valor de configuração `url`, especifique o local da pasta monitorada.
@@ -424,12 +424,12 @@ Adicione um endpoint de Pasta monitorada usando a API Java do AEM Forms:
 
 1. Defina os valores do parâmetro de entrada.
 
-   Defina um valor de parâmetro de entrada chamando o método `setInputParameterMapping` do objeto `CreateEndpointInfo` e passe os seguintes valores:
+   Defina um valor de parâmetro de entrada chamando o método `CreateEndpointInfo` do objeto `setInputParameterMapping` e passe os seguintes valores:
 
    * Um valor de string que especifica o nome do parâmetro de entrada. Por exemplo, o nome do parâmetro de entrada para o serviço EncryptDocument é `InDoc`.
    * Um valor de string que especifica o tipo de dados do parâmetro de entrada. Por exemplo, o tipo de dados do parâmetro de entrada `InDoc` é `com.adobe.idp.Document`.
    * Um valor de string que especifica o tipo de mapeamento. Por exemplo, você pode especificar `variable`.
-   * Um valor de string que especifica o valor do tipo de mapeamento. Por exemplo, você pode especificar &ast;.pdf como o padrão do arquivo.
+   * Um valor de string que especifica o valor do tipo de mapeamento. Por exemplo, você pode especificar &amp;ast;.pdf como o padrão do arquivo.
 
    >[!NOTE]
    >
@@ -437,7 +437,7 @@ Adicione um endpoint de Pasta monitorada usando a API Java do AEM Forms:
 
 1. Defina um valor de parâmetro de saída.
 
-   Defina um valor de parâmetro de saída invocando o método `setOutputParameterMapping` do objeto `CreateEndpointInfo` e passe os seguintes valores:
+   Defina um valor de parâmetro de saída invocando o método `CreateEndpointInfo` do objeto `setOutputParameterMapping` e passe os seguintes valores:
 
    * Um valor de string que especifica o nome do parâmetro de saída. Por exemplo, o nome do parâmetro de saída para o serviço EncryptDocument é `SecuredDoc`.
    * Um valor de string que especifica o tipo de dados do parâmetro de saída. Por exemplo, o tipo de dados do parâmetro de saída `SecuredDoc` é `com.adobe.idp.Document`.
@@ -445,11 +445,11 @@ Adicione um endpoint de Pasta monitorada usando a API Java do AEM Forms:
 
 1. Crie um ponto de extremidade de Pasta monitorada.
 
-   Crie o ponto de extremidade invocando o método `createEndpoint` do objeto `EndpointRegistryClient` e transmitindo o objeto `CreateEndpointInfo`. Este método retorna um objeto `Endpoint` que representa o ponto de extremidade da Pasta monitorada.
+   Crie o ponto de extremidade invocando o método `EndpointRegistryClient` do objeto `createEndpoint` e transmitindo o objeto `CreateEndpointInfo`. Este método retorna um objeto `Endpoint` que representa o ponto de extremidade da Pasta monitorada.
 
 1. Ative o endpoint.
 
-   Habilite o ponto de extremidade invocando o método `enable` do objeto `EndpointRegistryClient` e transmitindo o objeto `Endpoint` retornado pelo método `createEndpoint`.
+   Habilite o ponto de extremidade invocando o método `EndpointRegistryClient` do objeto `enable` e transmitindo o objeto `Endpoint` retornado pelo método `createEndpoint`.
 
 **Consulte também**
 
@@ -566,7 +566,7 @@ Os seguintes valores de configuração são definidos ao adicionar programaticam
 * **userName**: o nome de usuário usado ao invocar um serviço de destino do email. O valor padrão é `SuperAdmin`.
 * **domainName**: um valor de configuração obrigatório. O valor padrão é `DefaultDom`.
 * **domainPattern**: especifica os padrões de domínio de emails de entrada que o provedor aceita. Por exemplo, se `adobe.com` for usado, somente o email do adobe.com será processado, o email de outros domínios será ignorado.
-* **filePattern**: especifica os padrões de anexo de arquivo de entrada que o provedor aceita. Isso inclui arquivos que têm extensões de nome de arquivo específicas (&ast;.dat, &ast;.xml), arquivos que têm nomes específicos (dados) e arquivos que têm expressões compostas no nome e na extensão (&ast;.[dD][aA]&#39;port&#39;). O valor padrão é `*`.
+* **filePattern**: especifica os padrões de anexo de arquivo de entrada que o provedor aceita. Isso inclui arquivos que têm extensões de nome de arquivo específicas (&amp;ast;.dat, &amp;ast;.xml), arquivos que têm nomes específicos (dados) e arquivos que têm expressões compostas no nome e na extensão (&amp;ast;.``[dD][aA]``&#39;porta&#39;). O valor padrão é `*`.
 * **recipientSuccessfulJob**: um endereço de email para o qual as mensagens são enviadas para indicar trabalhos bem-sucedidos. Por padrão, uma mensagem de tarefa bem-sucedida é sempre enviada ao remetente. Se você digitar `sender`, os resultados do email serão enviados ao remetente. Até 100 recipients são suportados. Especifique recipients adicionais com endereços de email, cada um separado por vírgula. Para desativar essa opção, deixe esse valor em branco. Em alguns casos, você pode acionar um processo e não quiser uma notificação por email sobre o resultado. O valor padrão é `sender`.
 * **recipientFailedJob**: um endereço de email para o qual as mensagens são enviadas para indicar trabalhos com falha. Por padrão, uma mensagem de tarefa com falha é sempre enviada ao remetente. Se você digitar `sender`, os resultados do email serão enviados ao remetente. Até 100 recipients são suportados. Especifique recipients adicionais com endereços de email, cada um separado por vírgula. Para desativar essa opção, deixe esse valor em branco. O valor padrão é `sender`.
 * **inboxHost**: o nome do host da caixa de entrada ou o endereço IP do provedor de email a ser verificado.
@@ -583,7 +583,7 @@ Os seguintes valores de configuração são definidos ao adicionar programaticam
 * **charSet**: o conjunto de caracteres usado pelo provedor de email. O valor padrão é `UTF-8`.
 * **smtpSSLEnabled**: defina esse valor para forçar o provedor de email a usar SSL ao enviar mensagens de notificação de resultados ou erros. Verifique se o host SMTP oferece suporte a SSL.
 * **failedJobFolder**: especifica um diretório no qual armazenar resultados quando o servidor de email SMTP não está operacional.
-* **assíncrono**: quando definido como síncrono, todos os documentos de entrada são processados e uma única resposta é retornada. Quando definido como assíncrono, uma resposta é enviada para cada documento de entrada processado. Por exemplo, um endpoint de email é criado para o processo introduzido neste tópico e uma mensagem de email é enviada para a caixa de entrada do endpoint que contém vários documentos PDF não seguros. Quando todos os documentos de PDF são criptografados com uma senha e se o endpoint é configurado como síncrono, uma única mensagem de e-mail de resposta é enviada com todos os documentos de PDF seguros anexados. Se o endpoint for configurado como assíncrono, uma mensagem de email de resposta separada será enviada para cada documento de PDF protegido. Cada mensagem de email contém um único documento PDF como anexo. O valor padrão é assíncrono.
+* **assíncrono**: quando definido como síncrono, todos os documentos de entrada são processados e uma única resposta é retornada. Quando definido como assíncrono, uma resposta é enviada para cada documento de entrada processado. Por exemplo, um endpoint de email é criado para o processo introduzido neste tópico e uma mensagem de email é enviada para a caixa de entrada do endpoint que contém vários documentos não seguros do PDF. Quando todos os documentos do PDF são criptografados com uma senha e se o endpoint é configurado como síncrono, uma única mensagem de email de resposta é enviada com todos os documentos protegidos do PDF anexados. Se o endpoint for configurado como assíncrono, uma mensagem de email de resposta separada será enviada para cada documento PDF protegido. Cada mensagem de email contém um único documento do PDF como anexo. O valor padrão é assíncrono.
 
 **Definir valores de parâmetro de entrada**
 
@@ -650,15 +650,15 @@ Adicionar um endpoint de email usando a API Java:
 1. Defina atributos de endpoint de email.
 
    * Crie um objeto `CreateEndpointInfo` usando seu construtor.
-   * Especifique o valor do identificador do conector chamando o método `setConnectorId` do objeto `CreateEndpointInfo` e passando o valor da cadeia de caracteres `Email`.
-   * Especifique a descrição do ponto de extremidade invocando o método `setDescription` do objeto `CreateEndpointInfo` e transmitindo um valor de cadeia de caracteres que descreve o ponto de extremidade.
-   * Especifique o nome do ponto de extremidade invocando o método `setName` do objeto `CreateEndpointInfo` e transmitindo um valor de cadeia de caracteres que especifique o nome.
-   * Especifique o serviço ao qual o ponto de extremidade pertence, chamando o método `setServiceId` do objeto `CreateEndpointInfo` e transmitindo um valor de cadeia de caracteres que especifica o nome do serviço.
-   * Especifique a operação que é invocada chamando o método `setOperationName` do objeto `CreateEndpointInfo` e transmitindo um valor de cadeia de caracteres que especifica o nome da operação. Normalmente, ao criar um endpoint de email para um serviço que se originou de um processo criado no Workbench, o nome da operação é chamado.
+   * Especifique o valor do identificador do conector chamando o método `CreateEndpointInfo` do objeto `setConnectorId` e passando o valor da cadeia de caracteres `Email`.
+   * Especifique a descrição do ponto de extremidade invocando o método `CreateEndpointInfo` do objeto `setDescription` e transmitindo um valor de cadeia de caracteres que descreve o ponto de extremidade.
+   * Especifique o nome do ponto de extremidade invocando o método `CreateEndpointInfo` do objeto `setName` e transmitindo um valor de cadeia de caracteres que especifique o nome.
+   * Especifique o serviço ao qual o ponto de extremidade pertence, chamando o método `CreateEndpointInfo` do objeto `setServiceId` e transmitindo um valor de cadeia de caracteres que especifica o nome do serviço.
+   * Especifique a operação que é invocada chamando o método `CreateEndpointInfo` do objeto `setOperationName` e transmitindo um valor de cadeia de caracteres que especifica o nome da operação. Normalmente, ao criar um endpoint de email para um serviço que se originou de um processo criado no Workbench, o nome da operação é chamado.
 
 1. Especifique os valores de configuração.
 
-   Para cada valor de configuração a ser definido para o ponto de extremidade de email, você deve invocar o método `setConfigParameterAsText` do objeto `CreateEndpointInfo`. Por exemplo, para definir o valor de configuração `smtpHost`, chame o método `setConfigParameterAsText` do objeto `CreateEndpointInfo` e passe os seguintes valores:
+   Para cada valor de configuração a ser definido para o ponto de extremidade de email, você deve invocar o método `CreateEndpointInfo` do objeto `setConfigParameterAsText`. Por exemplo, para definir o valor de configuração `smtpHost`, chame o método `CreateEndpointInfo` do objeto `setConfigParameterAsText` e passe os seguintes valores:
 
    * Um valor de string que especifica o nome do valor de configuração. Ao definir o valor de configuração `smtpHost`, especifique `smtpHost`.
    * Um valor de string que especifica o valor do valor de configuração. Ao definir o valor de configuração `smtpHost`, especifique um valor de cadeia de caracteres que especifique o nome do servidor SMTP.
@@ -669,12 +669,12 @@ Adicionar um endpoint de email usando a API Java:
 
 1. Defina os valores do parâmetro de entrada.
 
-   Defina um valor de parâmetro de entrada chamando o método `setInputParameterMapping` do objeto `CreateEndpointInfo` e passe os seguintes valores:
+   Defina um valor de parâmetro de entrada chamando o método `CreateEndpointInfo` do objeto `setInputParameterMapping` e passe os seguintes valores:
 
    * Um valor de string que especifica o nome do parâmetro de entrada. Por exemplo, o nome do parâmetro de entrada para o serviço EncryptDocument é `InDoc`.
    * Um valor de string que especifica o tipo de dados do parâmetro de entrada. Por exemplo, o tipo de dados do parâmetro de entrada `InDoc` é `com.adobe.idp.Document`.
    * Um valor de string que especifica o tipo de mapeamento. Por exemplo, você pode especificar `variable`.
-   * Um valor de string que especifica o valor do tipo de mapeamento. Por exemplo, você pode especificar &ast;.pdf como o padrão do arquivo.
+   * Um valor de string que especifica o valor do tipo de mapeamento. Por exemplo, você pode especificar &amp;ast;.pdf como o padrão do arquivo.
 
    >[!NOTE]
    >
@@ -682,7 +682,7 @@ Adicionar um endpoint de email usando a API Java:
 
 1. Defina um valor de parâmetro de saída.
 
-   Defina um valor de parâmetro de saída invocando o método `setOutputParameterMapping` do objeto `CreateEndpointInfo` e transmitindo os seguintes valores:
+   Defina um valor de parâmetro de saída invocando o método `CreateEndpointInfo` do objeto `setOutputParameterMapping` e transmitindo os seguintes valores:
 
    * Um valor de string que especifica o nome do parâmetro de saída. Por exemplo, o nome do parâmetro de saída para o serviço EncryptDocument é `SecuredDoc`.
    * Um valor de string que especifica o tipo de dados do parâmetro de saída. Por exemplo, o tipo de dados do parâmetro de saída `SecuredDoc` é `com.adobe.idp.Document`.
@@ -690,11 +690,11 @@ Adicionar um endpoint de email usando a API Java:
 
 1. Crie o endpoint de email.
 
-   Crie o ponto de extremidade invocando o método `createEndpoint` do objeto `EndpointRegistryClient` e transmitindo o objeto `CreateEndpointInfo`. Este método retorna um objeto `Endpoint` que representa o ponto de extremidade de email.
+   Crie o ponto de extremidade invocando o método `EndpointRegistryClient` do objeto `createEndpoint` e transmitindo o objeto `CreateEndpointInfo`. Este método retorna um objeto `Endpoint` que representa o ponto de extremidade de email.
 
 1. Ative o endpoint.
 
-   Habilite o ponto de extremidade invocando o método `enable` do objeto `EndpointRegistryClient` e transmitindo o objeto `Endpoint` retornado pelo método `createEndpoint`.
+   Habilite o ponto de extremidade invocando o método `EndpointRegistryClient` do objeto `enable` e transmitindo o objeto `Endpoint` retornado pelo método `createEndpoint`.
 
 **Consulte também**
 
@@ -750,15 +750,15 @@ O [QuickStart: Adicionar um terminal de email usando a API Java](/help/forms/dev
 
 >[!NOTE]
 >
->APIs do LiveCycle Remoting descontinuadas para formulários AEM no JEE.
+>APIs do LiveCycle Remoting descontinuadas para o AEM Forms no JEE.
 
-Você pode adicionar programaticamente um endpoint de comunicação remota a um serviço usando a API Java do AEM Forms. Ao adicionar um endpoint de Comunicação Remota, você está habilitando um aplicativo do Flex a chamar o serviço usando comunicação remota. (Consulte [Chamar o AEM Forms usando (obsoleto para formulários AEM) AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting).)
+Você pode adicionar programaticamente um endpoint de comunicação remota a um serviço usando a API Java do AEM Forms. Ao adicionar um endpoint de Comunicação Remota, você está habilitando um aplicativo do Flex a chamar o serviço usando comunicação remota. (Consulte [Chamar o AEM Forms usando (obsoleto para o AEM Forms) Comunicação Remota do AEM Forms](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting).)
 
 Para adicionar programaticamente um ponto de extremidade de Comunicação Remota a um serviço, considere o seguinte processo de vida curta chamado *EncryptDocument*.
 
 ![ar_ar_encryptdocumentprocess](assets/ar_ar_encryptdocumentprocess.png)
 
-Este processo aceita um documento PDF não seguro como valor de entrada e passa o documento PDF não seguro para a operação `EncryptPDFUsingPassword` do serviço de Criptografia. O documento PDF é criptografado com uma senha e o documento PDF criptografado com senha é o valor de saída desse processo. O nome do valor de entrada (o documento PDF não seguro) é `InDoc` e o tipo de dados é `com.adobe.idp.Document`. O nome do valor de saída (o documento PDF criptografado por senha) é `SecuredDoc` e o tipo de dados é `com.adobe.idp.Document`.
+Este processo aceita um documento PDF não seguro como valor de entrada e passa o documento PDF não seguro para a operação `EncryptPDFUsingPassword` do serviço de Criptografia. O documento PDF é criptografado com uma senha, e o documento PDF criptografado com senha é o valor de saída desse processo. O nome do valor de entrada (o documento PDF não seguro) é `InDoc` e o tipo de dados é `com.adobe.idp.Document`. O nome do valor de saída (o documento PDF criptografado por senha) é `SecuredDoc` e o tipo de dados é `com.adobe.idp.Document`.
 
 Para demonstrar como adicionar um ponto de extremidade de Comunicação Remota a um serviço, esta seção adiciona um ponto de extremidade de Comunicação Remota a um serviço chamado EncryptDocument.
 
@@ -801,7 +801,7 @@ Para criar um ponto de extremidade de Comunicação Remota para um serviço, esp
 * **Descrição**: especifica a descrição do ponto de extremidade.
 * **Nome**: especifica o nome do ponto de extremidade.
 * **Valor do identificador de serviço**: especifica o serviço ao qual o ponto de extremidade pertence. Por exemplo, para adicionar um ponto de extremidade de Comunicação Remota ao processo introduzido nesta seção (um processo se torna um serviço quando é ativado no Workbench), especifique `EncryptDocument`.
-* **Nome da operação**: especifica o nome da operação que é invocada usando o ponto de extremidade. Ao criar um ponto de extremidade de Comunicação Remota, especifique um caractere curinga (&ast;).
+* **Nome da operação**: especifica o nome da operação que é invocada usando o ponto de extremidade. Ao criar um ponto de extremidade de Comunicação Remota, especifique um caractere curinga (&amp;ast;).
 
 **Criar um ponto de extremidade de Comunicação Remota**
 
@@ -835,19 +835,19 @@ Adicionar um endpoint de Comunicação Remota usando a API Java:
 1. Defina atributos de ponto de extremidade de Comunicação Remota.
 
    * Crie um objeto `CreateEndpointInfo` usando seu construtor.
-   * Especifique o valor do identificador do conector chamando o método `setConnectorId` do objeto `CreateEndpointInfo` e passando o valor da cadeia de caracteres `Remoting`.
-   * Especifique a descrição do ponto de extremidade invocando o método `setDescription` do objeto `CreateEndpointInfo` e transmitindo um valor de cadeia de caracteres que descreve o ponto de extremidade.
-   * Especifique o nome do ponto de extremidade invocando o método `setName` do objeto `CreateEndpointInfo` e transmitindo um valor de cadeia de caracteres que especifique o nome.
-   * Especifique o serviço ao qual o ponto de extremidade pertence, chamando o método `setServiceId` do objeto `CreateEndpointInfo` e transmitindo um valor de cadeia de caracteres que especifica o nome do serviço.
-   * Especifique a operação que é invocada pelo método `setOperationName` do objeto `CreateEndpointInfo` e transmitindo um valor de cadeia de caracteres que especifica o nome da operação. Para um ponto de extremidade de Comunicação Remota, especifique um caractere curinga (&ast;).
+   * Especifique o valor do identificador do conector chamando o método `CreateEndpointInfo` do objeto `setConnectorId` e passando o valor da cadeia de caracteres `Remoting`.
+   * Especifique a descrição do ponto de extremidade invocando o método `CreateEndpointInfo` do objeto `setDescription` e transmitindo um valor de cadeia de caracteres que descreve o ponto de extremidade.
+   * Especifique o nome do ponto de extremidade invocando o método `CreateEndpointInfo` do objeto `setName` e transmitindo um valor de cadeia de caracteres que especifique o nome.
+   * Especifique o serviço ao qual o ponto de extremidade pertence, chamando o método `CreateEndpointInfo` do objeto `setServiceId` e transmitindo um valor de cadeia de caracteres que especifica o nome do serviço.
+   * Especifique a operação que é invocada pelo método `CreateEndpointInfo` do objeto `setOperationName` e transmitindo um valor de cadeia de caracteres que especifica o nome da operação. Para um ponto de extremidade de Comunicação Remota, especifique um caractere curinga (&amp;ast;).
 
 1. Criar um ponto de extremidade de Comunicação Remota.
 
-   Crie o ponto de extremidade invocando o método `createEndpoint` do objeto `EndpointRegistryClient` e transmitindo o objeto `CreateEndpointInfo`. Este método retorna um objeto `Endpoint` que representa o novo ponto de extremidade de Comunicação Remota.
+   Crie o ponto de extremidade invocando o método `EndpointRegistryClient` do objeto `createEndpoint` e transmitindo o objeto `CreateEndpointInfo`. Este método retorna um objeto `Endpoint` que representa o novo ponto de extremidade de Comunicação Remota.
 
 1. Ative o endpoint.
 
-   Habilite o ponto de extremidade invocando o método `enable` do objeto `EndpointRegistryClient` e transmitindo o objeto `Endpoint` retornado pelo método `createEndpoint`.
+   Habilite o ponto de extremidade invocando o método `EndpointRegistryClient` do objeto `enable` e transmitindo o objeto `Endpoint` retornado pelo método `createEndpoint`.
 
 **Consulte também**
 
@@ -950,25 +950,25 @@ Adicione um endpoint TaskManager usando a API Java:
       * Um valor de string que especifica o valor do identificador da categoria
       * Um valor de string que especifica a descrição da categoria
 
-   * Crie a categoria invocando o método `createEndpointCategory` do objeto `EndpointRegistryClient` e transmitindo o objeto `CreateEndpointCategoryInfo`. Este método retorna um objeto `EndpointCategory` que representa a nova categoria.
+   * Crie a categoria invocando o método `EndpointRegistryClient` do objeto `createEndpointCategory` e transmitindo o objeto `CreateEndpointCategoryInfo`. Este método retorna um objeto `EndpointCategory` que representa a nova categoria.
 
 1. Defina os atributos do ponto de extremidade do TaskManager.
 
    * Crie um objeto `CreateEndpointInfo` usando seu construtor.
-   * Especifique o valor do identificador do conector chamando o método `setConnectorId` do objeto `CreateEndpointInfo` e passando o valor da cadeia de caracteres `TaskManagerConnector`.
-   * Especifique a descrição do ponto de extremidade invocando o método `setDescription` do objeto `CreateEndpointInfo` e transmitindo um valor de cadeia de caracteres que descreve o ponto de extremidade.
-   * Especifique o nome do ponto de extremidade invocando o método `setName` do objeto `CreateEndpointInfo` e transmitindo um valor de cadeia de caracteres que especifique o nome.
-   * Especifique o serviço ao qual o ponto de extremidade pertence, chamando o método `setServiceId` do objeto `CreateEndpointInfo` e transmitindo um valor de cadeia de caracteres que especifica o nome do serviço.
-   * Especifique a categoria à qual o ponto de extremidade pertence, chamando o método `setCategoryId` do objeto `CreateEndpointInfo` e transmitindo um valor de cadeia de caracteres que especifica o valor do identificador de categoria. Você pode invocar o método `getId` do objeto `EndpointCategory` para obter o valor identificador desta categoria.
-   * Especifique a operação que é invocada chamando o método `setOperationName` do objeto `CreateEndpointInfo` e transmitindo um valor de cadeia de caracteres que especifica o nome da operação. Normalmente, ao criar um terminal `TaskManager` para um serviço que se originou de um processo criado no Workbench, o nome da operação é `invoke`.
+   * Especifique o valor do identificador do conector chamando o método `CreateEndpointInfo` do objeto `setConnectorId` e passando o valor da cadeia de caracteres `TaskManagerConnector`.
+   * Especifique a descrição do ponto de extremidade invocando o método `CreateEndpointInfo` do objeto `setDescription` e transmitindo um valor de cadeia de caracteres que descreve o ponto de extremidade.
+   * Especifique o nome do ponto de extremidade invocando o método `CreateEndpointInfo` do objeto `setName` e transmitindo um valor de cadeia de caracteres que especifique o nome.
+   * Especifique o serviço ao qual o ponto de extremidade pertence, chamando o método `CreateEndpointInfo` do objeto `setServiceId` e transmitindo um valor de cadeia de caracteres que especifica o nome do serviço.
+   * Especifique a categoria à qual o ponto de extremidade pertence, chamando o método `CreateEndpointInfo` do objeto `setCategoryId` e transmitindo um valor de cadeia de caracteres que especifica o valor do identificador de categoria. Você pode invocar o método `EndpointCategory` do objeto `getId` para obter o valor identificador desta categoria.
+   * Especifique a operação que é invocada chamando o método `CreateEndpointInfo` do objeto `setOperationName` e transmitindo um valor de cadeia de caracteres que especifica o nome da operação. Normalmente, ao criar um terminal `TaskManager` para um serviço que se originou de um processo criado no Workbench, o nome da operação é `invoke`.
 
 1. Crie um ponto de extremidade TaskManager.
 
-   Crie o ponto de extremidade invocando o método `createEndpoint` do objeto `EndpointRegistryClient` e transmitindo o objeto `CreateEndpointInfo`. Este método retorna um objeto `Endpoint` que representa o novo ponto de extremidade do TaskManager.
+   Crie o ponto de extremidade invocando o método `EndpointRegistryClient` do objeto `createEndpoint` e transmitindo o objeto `CreateEndpointInfo`. Este método retorna um objeto `Endpoint` que representa o novo ponto de extremidade do TaskManager.
 
 1. Ative o endpoint.
 
-   Habilite o ponto de extremidade invocando o método `enable` do objeto `EndpointRegistryClient` e transmitindo o objeto `Endpoint` retornado pelo método `createEndpoint`.
+   Habilite o ponto de extremidade invocando o método `EndpointRegistryClient` do objeto `enable` e transmitindo o objeto `Endpoint` retornado pelo método `createEndpoint`.
 
 **Consulte também**
 
@@ -1057,20 +1057,20 @@ Modifique um endpoint usando a API Java:
 
 1. Recupere o ponto de extremidade a ser modificado.
 
-   * Recupere uma lista de todos os pontos de extremidade aos quais o usuário atual (especificado nas propriedades de conexão) pode acessar invocando o método `getEndpoints` do objeto `EndpointRegistryClient` e transmitindo um objeto `PagingFilter` que atue como filtro. Você pode passar um valor `(PagingFilter)null` para retornar todos os pontos de extremidade. Este método retorna um objeto `java.util.List` em que cada elemento é um objeto `Endpoint`. Para obter informações sobre um objeto `PagingFilter`, consulte [Referência da API AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+   * Recupere uma lista de todos os pontos de extremidade aos quais o usuário atual (especificado nas propriedades de conexão) pode acessar invocando o método `EndpointRegistryClient` do objeto `getEndpoints` e transmitindo um objeto `PagingFilter` que atue como filtro. Você pode passar um valor `(PagingFilter)null` para retornar todos os pontos de extremidade. Este método retorna um objeto `java.util.List` em que cada elemento é um objeto `Endpoint`. Para obter informações sobre um objeto `PagingFilter`, consulte [Referência da API AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
    * Repita através do objeto `java.util.List` para determinar se ele tem pontos de extremidade. Se existirem pontos de extremidade, cada elemento será uma instância `EndPoint`.
-   * Determine o serviço que corresponde a um ponto de extremidade invocando o método `getServiceId` do objeto `EndPoint`. Este método retorna um valor de string que especifica o nome do serviço.
-   * Determine o tipo de ponto de extremidade chamando o método `getConnectorId` do objeto `EndPoint`. Esse método retorna um valor de string que especifica o tipo de endpoint. Por exemplo, se o ponto de extremidade for um ponto de extremidade de Pasta monitorada, esse método retornará `WatchedFolder`.
+   * Determine o serviço que corresponde a um ponto de extremidade invocando o método `EndPoint` do objeto `getServiceId`. Este método retorna um valor de string que especifica o nome do serviço.
+   * Determine o tipo de ponto de extremidade chamando o método `EndPoint` do objeto `getConnectorId`. Esse método retorna um valor de string que especifica o tipo de endpoint. Por exemplo, se o ponto de extremidade for um ponto de extremidade de Pasta monitorada, esse método retornará `WatchedFolder`.
 
 1. Especifique novos valores de configuração.
 
    * Crie um objeto `ModifyEndpointInfo` invocando seu construtor.
-   * Para cada valor de configuração a ser definido, chame o método `setConfigParameterAsText` do objeto `ModifyEndpointInfo`. Por exemplo, para definir o valor de configuração da url, chame o método `setConfigParameterAsText` do objeto `ModifyEndpointInfo` e passe os seguintes valores:
+   * Para cada valor de configuração a ser definido, chame o método `ModifyEndpointInfo` do objeto `setConfigParameterAsText`. Por exemplo, para definir o valor de configuração da url, chame o método `ModifyEndpointInfo` do objeto `setConfigParameterAsText` e passe os seguintes valores:
 
       * Um valor de string que especifica o nome do valor de configuração. Por exemplo, para definir o valor de configuração `url`, especifique `url`.
       * Um valor de string que especifica o valor do valor de configuração. Para definir um valor para o valor de configuração `url`, especifique o local da pasta monitorada.
 
-   * Invoque o método `modifyEndpoint` do objeto `EndpointRegistryClient` e passe o objeto `ModifyEndpointInfo`.
+   * Invoque o método `EndpointRegistryClient` do objeto `modifyEndpoint` e passe o objeto `ModifyEndpointInfo`.
 
 **Consulte também**
 
@@ -1151,14 +1151,14 @@ Remova um endpoint usando a API Java:
 
 1. Recupere o ponto de extremidade a ser removido.
 
-   * Recupere uma lista de todos os pontos de extremidade aos quais o usuário atual (especificado nas propriedades de conexão) tem acesso invocando o método `getEndpoints` do objeto `EndpointRegistryClient` e transmitindo um objeto `PagingFilter` que atua como filtro. Você pode passar `(PagingFilter)null` para retornar todos os pontos de extremidade. Este método retorna um objeto `java.util.List` em que cada elemento é um objeto `Endpoint`.
+   * Recupere uma lista de todos os pontos de extremidade aos quais o usuário atual (especificado nas propriedades de conexão) tem acesso invocando o método `EndpointRegistryClient` do objeto `getEndpoints` e transmitindo um objeto `PagingFilter` que atua como filtro. Você pode passar `(PagingFilter)null` para retornar todos os pontos de extremidade. Este método retorna um objeto `java.util.List` em que cada elemento é um objeto `Endpoint`.
    * Repita através do objeto `java.util.List` para determinar se ele tem pontos de extremidade. Se existirem pontos de extremidade, cada elemento será uma instância `EndPoint`.
-   * Determine o serviço que corresponde a um ponto de extremidade invocando o método `getServiceId` do objeto `EndPoint`. Este método retorna um valor de string que especifica o nome do serviço.
-   * Determine o tipo de ponto de extremidade chamando o método `getConnectorId` do objeto `EndPoint`. Esse método retorna um valor de string que especifica o tipo de endpoint. Por exemplo, se o ponto de extremidade for um ponto de extremidade EJB, este método retornará `EJB`.
+   * Determine o serviço que corresponde a um ponto de extremidade invocando o método `EndPoint` do objeto `getServiceId`. Este método retorna um valor de string que especifica o nome do serviço.
+   * Determine o tipo de ponto de extremidade chamando o método `EndPoint` do objeto `getConnectorId`. Esse método retorna um valor de string que especifica o tipo de endpoint. Por exemplo, se o ponto de extremidade for um ponto de extremidade EJB, este método retornará `EJB`.
 
 1. Remova o endpoint.
 
-   Remova o ponto de extremidade invocando o método `remove` do objeto `EndpointRegistryClient` e transmitindo o objeto `EndPoint` que representa o ponto de extremidade a ser removido.
+   Remova o ponto de extremidade invocando o método `EndpointRegistryClient` do objeto `remove` e transmitindo o objeto `EndPoint` que representa o ponto de extremidade a ser removido.
 
 **Consulte também**
 
@@ -1248,12 +1248,12 @@ Recupere informações do conector de ponto de extremidade usando a API Java:
 
 1. Especifique o tipo de conector.
 
-   Especifique o tipo de conector chamando o método `getEndpointDefinition` do objeto `ConnectorRegistryClient` e transmitindo um valor de cadeia de caracteres que especifica o tipo de conector. Por exemplo, para especificar o tipo de conector Pasta monitorada, passe o valor da cadeia de caracteres `WatchedFolder`. Este método retorna um objeto `Endpoint` que corresponde ao tipo de conector.
+   Especifique o tipo de conector chamando o método `ConnectorRegistryClient` do objeto `getEndpointDefinition` e transmitindo um valor de cadeia de caracteres que especifica o tipo de conector. Por exemplo, para especificar o tipo de conector Pasta monitorada, passe o valor da cadeia de caracteres `WatchedFolder`. Este método retorna um objeto `Endpoint` que corresponde ao tipo de conector.
 
 1. Recupere valores de configuração.
 
-   * Recupere os valores de configuração associados a este ponto de extremidade invocando o método `getConfigParameters` do objeto `Endpoint`. Este método retorna uma matriz de `ConfigParameter` objetos.
-   * Recupere informações sobre cada valor de configuração recuperando cada elemento na matriz. Cada elemento é um objeto `ConfigParameter`. Você pode, por exemplo, determinar se o valor de configuração é obrigatório ou opcional, chamando o método `isRequired` do objeto `ConfigParameter`. Se o valor de configuração for necessário, esse método retornará `true`.
+   * Recupere os valores de configuração associados a este ponto de extremidade invocando o método `Endpoint` do objeto `getConfigParameters`. Este método retorna uma matriz de `ConfigParameter` objetos.
+   * Recupere informações sobre cada valor de configuração recuperando cada elemento na matriz. Cada elemento é um objeto `ConfigParameter`. Você pode, por exemplo, determinar se o valor de configuração é obrigatório ou opcional, chamando o método `ConfigParameter` do objeto `isRequired`. Se o valor de configuração for necessário, esse método retornará `true`.
 
 **Consulte também**
 

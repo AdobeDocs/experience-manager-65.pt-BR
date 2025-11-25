@@ -2,11 +2,11 @@
 title: Migrar ativos em massa
 description: Descreve como trazer ativos para  [!DNL Adobe Experience Manager], aplicar metadados, gerar representações e ativá-los para publicar instâncias.
 contentOwner: AG
-role: Architect, Admin
+role: Developer, Admin
 feature: Migration,Renditions,Asset Management
 exl-id: 184f1645-894a-43c1-85f5-8e0d2d77aa73
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '1739'
 ht-degree: 6%
@@ -23,10 +23,10 @@ Antes de executar qualquer etapa desta metodologia, revise e implemente a orient
 
 >[!NOTE]
 >
->As seguintes ferramentas de migração de ativos não fazem parte de [!DNL Experience Manager] e não têm suporte do Adobe:
+>As seguintes ferramentas de migração de ativos não fazem parte do [!DNL Experience Manager] e não têm suporte da Adobe:
 >
->* ACS AEM Tools Tag Maker
->* Importador de ativos CSV de ferramentas AEM do ACS
+>* Criador de tags de ferramentas do ACS AEM
+>* Importador de ativos CSV de ferramentas do AEM do ACS
 >* ACS Commons Bulk Workflow Manager
 >* ACS Commons Fast Action Manager
 >* Fluxo de trabalho sintético
@@ -52,7 +52,7 @@ Antes de iniciar a migração, desabilite os iniciadores para o fluxo de trabalh
 
 ### Carregar tags {#loading-tags}
 
-Talvez você já tenha uma taxonomia de tags em vigor que está aplicando às suas imagens. Embora ferramentas como o Importador de ativos CSV e o suporte [!DNL Experience Manager] para perfis de metadados possam automatizar o processo de aplicação de tags a ativos, as tags precisam ser carregadas no sistema. O recurso [ACS AEM Tools Tag Maker](https://adobe-consulting-services.github.io/acs-aem-tools/features/tag-maker/index.html) permite preencher tags usando uma planilha do Microsoft Excel carregada no sistema.
+Talvez você já tenha uma taxonomia de tags em vigor que está aplicando às suas imagens. Embora ferramentas como o Importador de ativos CSV e o suporte [!DNL Experience Manager] para perfis de metadados possam automatizar o processo de aplicação de tags a ativos, as tags precisam ser carregadas no sistema. O recurso [Criador de marcas de ferramentas do AEM do ACS](https://adobe-consulting-services.github.io/acs-aem-tools/features/tag-maker/index.html) permite preencher marcas usando uma planilha do Microsoft Excel carregada no sistema.
 
 ### Assimilar ativos {#ingesting-assets}
 
@@ -62,7 +62,7 @@ Há duas abordagens para carregar os ativos no sistema: uma abordagem baseada em
 
 #### Enviar por HTTP {#pushing-through-http}
 
-A equipe do Adobe Managed Services usa uma ferramenta chamada Glutton para carregar dados em ambientes do cliente. Glutton é um pequeno aplicativo Java que carrega todos os ativos de um diretório para outro diretório em uma implantação do [!DNL Experience Manager]. Em vez de Glutton, você também pode usar ferramentas como scripts Perl para publicar os ativos no repositório.
+A equipe do Managed Services da Adobe usa uma ferramenta chamada Glutton para carregar dados em ambientes do cliente. Glutton é um pequeno aplicativo Java que carrega todos os ativos de um diretório para outro diretório em uma implantação do [!DNL Experience Manager]. Em vez de Glutton, você também pode usar ferramentas como scripts Perl para publicar os ativos no repositório.
 
 Há duas desvantagens principais em usar a abordagem de envio por https:
 
@@ -73,13 +73,13 @@ A outra abordagem para assimilar ativos é extrair ativos do sistema de arquivos
 
 #### Buscar no sistema de arquivos local {#pulling-from-the-local-filesystem}
 
-O [Importador de ativos CSV de Ferramentas AEM do ACS](https://adobe-consulting-services.github.io/acs-aem-tools/features/csv-asset-importer/index.html) extrai ativos do sistema de arquivos e metadados de ativos de um arquivo CSV para a importação de ativos. A API do Experience Manager Asset Manager é usada para importar os ativos para o sistema e aplicar as propriedades de metadados configuradas. Idealmente, os ativos são montados no servidor por meio de uma montagem de arquivo de rede ou por meio de uma unidade externa.
+O [Importador de ativos CSV de Ferramentas do AEM do ACS](https://adobe-consulting-services.github.io/acs-aem-tools/features/csv-asset-importer/index.html) extrai ativos do sistema de arquivos e metadados de ativos de um arquivo CSV para a importação de ativos. A API do Experience Manager Asset Manager é usada para importar os ativos para o sistema e aplicar as propriedades de metadados configuradas. Idealmente, os ativos são montados no servidor por meio de uma montagem de arquivo de rede ou por meio de uma unidade externa.
 
 Como os ativos não precisam ser transmitidos por uma rede, o desempenho geral melhora consideravelmente, e esse método geralmente é considerado a maneira mais eficiente de carregar ativos no repositório. Além disso, como a ferramenta é compatível com a assimilação de metadados, você pode importar todos os ativos e metadados em uma única etapa, em vez de criar uma segunda etapa para aplicar os metadados por meio de uma ferramenta separada.
 
 ### Processar representações {#processing-renditions}
 
-Após carregar os ativos no sistema, é necessário processá-los por meio do fluxo de trabalho [!UICONTROL Ativo de atualização do DAM] para extrair metadados e gerar representações. Antes de executar esta etapa, você precisa duplicar e modificar o fluxo de trabalho do [!UICONTROL Ativo de atualização do DAM] para atender às suas necessidades. O fluxo de trabalho pronto para uso contém muitas etapas que podem não ser necessárias para você, como a geração de PTIFF do Dynamic Media ou a integração do [!DNL InDesign Server].
+Após carregar os ativos no sistema, é necessário processá-los por meio do fluxo de trabalho [!UICONTROL Ativo de atualização do DAM] para extrair metadados e gerar representações. Antes de executar esta etapa, você precisa duplicar e modificar o fluxo de trabalho do [!UICONTROL Ativo de atualização do DAM] para atender às suas necessidades. O fluxo de trabalho pronto para uso contém muitas etapas que podem não ser necessárias para você, como a geração de PTIFF do Dynamic Media ou a integração de [!DNL InDesign Server].
 
 Após configurar o workflow de acordo com suas necessidades, você tem duas opções para executá-lo:
 
@@ -88,7 +88,7 @@ Após configurar o workflow de acordo com suas necessidades, você tem duas opç
 
 ### Ativar ativos {#activating-assets}
 
-Para implantações com um nível de publicação, é necessário ativar os ativos no farm de publicação. Embora o Adobe recomende executar mais de uma única instância de publicação, é mais eficiente replicar todos os ativos em uma única instância de publicação e clonar essa instância. Ao ativar um grande número de ativos, depois de acionar uma ativação em árvore, talvez seja necessário intervir. Veja por que: ao desativar ativações, os itens são adicionados à fila de trabalhos/eventos do Sling. Quando o tamanho dessa fila começar a exceder aproximadamente 40.000 itens, o processamento ficará muito lento. Depois que o tamanho dessa fila exceder 100.000 itens, a estabilidade do sistema começará a sofrer.
+Para implantações com um nível de publicação, é necessário ativar os ativos no farm de publicação. Embora a Adobe recomende executar mais de uma única instância de publicação, é mais eficiente replicar todos os ativos em uma única instância de publicação e clonar essa instância. Ao ativar um grande número de ativos, depois de acionar uma ativação em árvore, talvez seja necessário intervir. Veja por que: ao desativar ativações, os itens são adicionados à fila de trabalhos/eventos do Sling. Quando o tamanho dessa fila começar a exceder aproximadamente 40.000 itens, o processamento ficará muito lento. Depois que o tamanho dessa fila exceder 100.000 itens, a estabilidade do sistema começará a sofrer.
 
 Para contornar esse problema, você pode usar o [Gerenciador de Ações Rápidas](https://adobe-consulting-services.github.io/acs-aem-commons/features/fast-action-manager.html) para gerenciar a replicação de ativos. Isso funciona sem usar as filas Sling, reduzindo a sobrecarga e, ao mesmo tempo, limitando a carga de trabalho para evitar que o servidor fique sobrecarregado. Um exemplo de uso do FAM para gerenciar a replicação é mostrado na página de documentação do recurso.
 
@@ -98,9 +98,9 @@ Para qualquer uma dessas abordagens, o problema é que os ativos na instância d
 
 >[!NOTE]
 >
->O Adobe não mantém ou não suporta Grabbit.
+>A Adobe não mantém nem oferece suporte ao Grabbit.
 
-### Clonar Publish {#cloning-publish}
+### Clonar publicação {#cloning-publish}
 
 Depois que os ativos forem ativados, você poderá clonar a instância de publicação para criar quantas cópias forem necessárias para a implantação. A clonagem de um servidor é bastante simples, mas há algumas etapas importantes a serem lembradas. Para clonar a publicação:
 
@@ -133,6 +133,6 @@ Nesse caso, os ativos já estão preenchidos com metadados e as representações
 
 1. Ativar ativos: Siga as instruções para [ativar ativos](#activating-assets) documentadas para a migração inicial para [!DNL Experience Manager].
 
-1. Clonar publicação: assim como em uma nova migração, carregar uma única instância de publicação e cloná-la é mais eficiente do que ativar o conteúdo em ambos os nós. Consulte [Clonagem de Publish.](#cloning-publish)
+1. Clonar publicação: assim como em uma nova migração, carregar uma única instância de publicação e cloná-la é mais eficiente do que ativar o conteúdo em ambos os nós. Consulte [Publicação de clonagem.](#cloning-publish)
 
 1. Habilitar fluxos de trabalho: após concluir a migração, habilite novamente os iniciadores do fluxo de trabalho [!UICONTROL Ativo de atualização do DAM] para oferecer suporte à geração de representação e extração de metadados para o uso diário contínuo do sistema.

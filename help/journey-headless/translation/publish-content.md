@@ -4,8 +4,8 @@ description: Saiba como publicar seu conteúdo traduzido e atualizar as traduç�
 exl-id: 32c387fe-fa1b-499b-861f-b4822f5e139e
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,Language Copy
-role: Admin, Architect,Data Architect,Developer,User,Leader
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin, Developer, User, Leader
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '1336'
 ht-degree: 77%
@@ -46,7 +46,7 @@ Portanto, o AEM é fisicamente separado em duas instâncias.
 1. A instância do **autor** é o sistema no qual os autores e administradores de conteúdo trabalham para criar e gerenciar conteúdo.
 1. A instância de **publicação** é o sistema que entrega o conteúdo para os consumidores.
 
-Depois que o conteúdo é criado na instância do autor, ele deve ser transferido para a instância de publicação para que esteja disponível para consumo. O processo de transferência do autor para a publicação é chamado de **publicação**.
+Depois que o conteúdo é criado na instância de criação, ele deve ser transferido para a instância de publicação para que esteja disponível para consumo. O processo de transferência do autor para a publicação é chamado de **publicação**.
 
 ## Publicar seu conteúdo traduzido {#publishing}
 
@@ -121,7 +121,7 @@ You see that a new job card was added to the project. In this example, another S
 ![Additional translation job added](assets/additional-translation-job.png)
 -->
 
-Observe que as estatísticas listadas no novo cartão (número de ativos e fragmentos de conteúdo) são diferentes. Isso ocorre porque o AEM reconhece o que mudou desde a última tradução e inclui apenas o conteúdo que deve ser traduzido. Isso inclui a nova tradução de conteúdo atualizado e a primeira tradução de conteúdo novo.
+Observe que as estatísticas listadas no novo cartão (número de ativos e fragmentos de conteúdo) são diferentes. Isso ocorre porque o AEM reconhece o que mudou desde a última tradução e inclui somente o conteúdo que deve ser traduzido. Isso inclui a nova tradução de conteúdo atualizado e a primeira tradução de conteúdo novo.
 
 A partir deste ponto, você [inicia e gerencia seu trabalho de tradução da mesma forma que fazia com o original.](translate-content.md#using-translation-project)
 

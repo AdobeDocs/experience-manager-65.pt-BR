@@ -4,8 +4,8 @@ description: Saiba como definir regras de tradução para identificar o conteúd
 exl-id: 262503af-361b-491c-8639-0bb32f0a4c0e
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,Language Copy
-role: Admin, Architect,Data Architect,Developer,User,Leader
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin, Developer, User, Leader
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '847'
 ht-degree: 68%
@@ -18,7 +18,7 @@ Saiba como definir regras de tradução para identificar o conteúdo a ser tradu
 
 ## A história até agora {#story-so-far}
 
-No documento anterior da jornada de tradução do AEM headless, [Configurar integração de tradução](configure-connector.md), você aprendeu a instalar e configurar sua integração de tradução e agora deve:
+No documento anterior da jornada de tradução headless do AEM, [Configurar integração de tradução](configure-connector.md), você aprendeu a instalar e configurar sua integração de tradução e agora deve:
 
 * Compreender os parâmetros fundamentais da estrutura de integração de tradução no AEM.
 * Ser capaz de configurar sua própria conexão com o serviço de tradução.
@@ -78,7 +78,6 @@ Na interface de usuário da **Configuração de tradução**, há várias opçõ
    1. Clique em **Adicionar**.
    1. Repita essas etapas para todos os campos que devem ser traduzidos.
    1. Clique em **Salvar**.
-
       ![Adicionar propriedade](assets/add-property.png)
 
 Agora, você configurou as regras de tradução.
@@ -96,7 +95,7 @@ Agora que você concluiu esta parte da jornada de tradução headless, você dev
 * Entenda o que as regras de tradução fazem.
 * Ser capaz de definir suas próprias regras de tradução.
 
-Desenvolva esse conhecimento e continue sua jornada de tradução AEM headless revisando a seguir o documento [Traduzir conteúdo](translate-content.md), onde você aprenderá como a integração e as regras funcionam juntas para traduzir conteúdo headless.
+Desenvolva esse conhecimento e prossiga com sua jornada de tradução headless do AEM, revisando a seguir o documento [Traduzir conteúdo](translate-content.md), onde você aprenderá como a integração e as regras funcionam juntas para traduzir conteúdo headless.
 
 ## Recursos adicionais {#additional-resources}
 

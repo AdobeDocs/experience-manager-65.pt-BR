@@ -9,10 +9,10 @@ exl-id: 05c8c846-69cc-4075-9149-33890b3d1e08
 solution: Experience Manager
 feature: Mobile
 role: User
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '333'
-ht-degree: 21%
+source-wordcount: '312'
+ht-degree: 20%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 21%
 
 Artigos, Banners e Coleções são representados como cq:Pages no AEM.
 
-Eles compartilham as mesmas propriedades comuns encontradas em qualquer cq:Page, além de várias outras mostradas abaixo que representam os metadados dos serviços por demanda do Adobe Experience Manager (AEM) Mobile e as propriedades de suporte à integração.
+Eles compartilham as mesmas propriedades comuns encontradas em qualquer cq:Page, além de várias outras mostradas abaixo que representam metadados de serviços por demanda do Adobe Experience Manager (AEM) Mobile e propriedades de suporte à integração.
 
 As tabelas a seguir descrevem as propriedades de conteúdo e os nós.
 
@@ -31,11 +31,11 @@ As tabelas a seguir descrevem as propriedades de conteúdo e os nós.
 | **Nome da Propriedade** | **Tipo** | **Valores Padrões ou Esperados** | **Descrição** |
 |---|---|---|---|
 | dps-id | String |  | atribuído pelo AEM Mobile e armazenado pelo AEM depois de carregado no AEM Mobile ou importado do AEM Mobile |
-| dps-resourceType | String | dps:Article | dps:Banner | dps:Collection | propriedade de tipo de entidade |
+| dps-resourceType | String | dps:Article | `dps:Banner` `dps:Collection` \| `entity type property` |
 | dps-version | String |  | versão da entidade AEM Mobile (também contida na aemm-id completa) |
 | dps-lastSynced | Data |  | data da última sincronização/importação do AEM Mobile para o AEM |
 | dps-lastUploaded | Data |  | data do último upload do AEM para o AEM Mobile |
-| dps-lastUploadedBy | Cadeia de caracteres:ID do usuário |  | usuário da id que executou a última solicitação de upload do AEM para o AEM Mobile |
+| dps-lastUploadedBy | Cadeia de caracteres:userid |  | usuário da id que executou a última solicitação de upload do AEM para o AEM Mobile |
 
 ## Propriedades dos metadados principais {#core-metadata-properties}
 

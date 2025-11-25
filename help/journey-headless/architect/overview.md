@@ -4,8 +4,8 @@ description: Comece aqui para obter uma jornada guiada pelos recursos headless a
 exl-id: 44c58ece-225e-4361-929c-faa110fe2842
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
-role: Admin, Architect,Data Architect
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin, Developer
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '784'
 ht-degree: 88%
@@ -18,7 +18,7 @@ Comece aqui para obter uma jornada guiada pelos recursos headless avançados e f
 
 ## Introdução {#introduction}
 
-A implementação headless está se tornando cada vez mais importante para fornecer experiências ao seu público, onde quer que ele esteja e independentemente do canal.
+A implementação headless está se tornando cada vez mais importante para fornecer experiências ao seu público-alvo, onde quer que ele esteja e independentemente do canal.
 
 A implementação headless dispensa o gerenciamento de páginas e componentes tradicional utilizado em soluções de pilha completa e se concentra na criação de fragmentos de conteúdo reutilizáveis e neutros em relação ao canal, assim como na entrega entre canais. É um padrão de desenvolvimento moderno e dinâmico para implementação de experiências digitais.
 
@@ -36,7 +36,7 @@ As Jornadas de documentação foram projetadas com princípios de práticas reco
 
 Se quiser saber como a Adobe recomenda resolver casos de negócios headless com o AEM, inicie com as [Jornadas headless do AEM](/help/journey-headless/overview.md).
 
-## Público {#audience}
+## Público-alvo {#audience}
 
 Essa jornada foi projetada para o perfil do arquiteto de conteúdo. Como um arquiteto de conteúdo, você definirá a estrutura do conteúdo. Essas definições serão usadas pelos autores de conteúdo quando criarem o conteúdo real.
 
@@ -48,7 +48,7 @@ As informações nesta jornada podem ser úteis para outros perfis, mas algumas 
 
 Muitos tópicos serão explorados nesta jornada. Os artigos a seguir fornecem conhecimento básico sobre headless no AEM e oferecem links para a documentação técnica detalhada.
 
-Embora seja possível ir diretamente para uma parte específica da jornada, muitos conceitos baseiam-se em artigos anteriores. Portanto, se você é novo no headless no AEM, a Adobe recomenda que você comece do início e avance sequencialmente.
+Embora seja possível ir diretamente para uma parte específica da jornada, muitos conceitos baseiam-se em artigos anteriores. Portanto, se você é novo no headless no AEM, a Adobe recomenda começar do início e avançar sequencialmente.
 
 | # | Artigo | Descrição |
 |---|---|---|
@@ -70,7 +70,7 @@ Como tal, as jornadas são projetadas para se manterem sozinhas. No entanto, vá
 * [Jornada de tradução do AEM headless](/help/journey-headless/translation/overview.md) - essa jornada de documentação oferece uma ampla compreensão sobre a tecnologia headless, como o AEM fornece conteúdo headless e como você pode traduzi-lo.
 * [Jornada de criação headless](/help/journey-headless/author/overview.md) - comece aqui para obter uma jornada guiada pelos recursos headless avançados e flexíveis do AEM, suas funcionalidades e aprenda a modelar o conteúdo em seu primeiro projeto headless.
 * [Jornada de desenvolvedores headless do AEM](/help/journey-headless/developer/overview.md): comece aqui para uma jornada guiada pelos recursos headless avançados e flexíveis do AEM, suas funções e como usá-las em seu primeiro projeto de desenvolvimento.
-* [Documentação técnica do AEM](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=pt-BR) - Se você já conhece bem as tecnologias headless e de AEM, poderá consultar diretamente os nossos documentos técnicos detalhados.
+* [Documentação técnica do AEM](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=pt-BR) - Se você já conhece bem as tecnologias headless e do AEM, poderá consultar diretamente os nossos documentos técnicos detalhados.
    * [Introdução ao AEM as a Headless CMS](/help/sites-developing/headless/introduction.md)
-* [Tutoriais do AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=pt-BR) - se você prefere aprender na prática e tem conhecimento técnico, utilize nossos tutoriais práticos organizados por API e estrutura, que exploram a criação e o uso de aplicativos incorporados no AEM Headless.
-* [Portal do desenvolvedor do AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=pt-BR)
+* [Tutoriais do AEM Headless](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/getting-started-with-aem-headless/overview) - se você prefere aprender na prática e tem conhecimento técnico, utilize nossos tutoriais práticos organizados por API e estrutura, que exploram a criação e o uso de aplicativos incorporados no AEM Headless.
+* [Portal do Desenvolvedor do AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=pt-BR)

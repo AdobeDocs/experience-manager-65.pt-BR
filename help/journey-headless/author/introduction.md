@@ -4,8 +4,8 @@ description: Uma introdução aos recursos headless avançados e flexíveis do A
 exl-id: 39d2218a-4f11-459d-8514-cfd312246be5
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
-role: Admin, Architect,Data Architect,Developer,User,Leader
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin, Developer, User, Leader
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '649'
 ht-degree: 85%
@@ -14,11 +14,11 @@ ht-degree: 85%
 
 # Criação para headless com AEM - uma introdução {#author-headless-introduction}
 
-Nesta parte da [Jornada do autor de conteúdo sem periféricos do AEM](overview.md), você pode aprender os conceitos e a terminologia (básicos) necessários para entender o conteúdo de criação para entrega de conteúdo sem periféricos com o Adobe Experience Manager (AEM).
+Nesta parte da [Jornada do autor de conteúdo headless do AEM](overview.md), você pode aprender os conceitos e a terminologia (básicos) necessários para entender a criação de conteúdo para a entrega de conteúdo headless com o Adobe Experience Manager (AEM).
 
 ## Objetivo {#objective}
 
-* **Público**: iniciante
+* **Público-alvo**: iniciante
 * **Objetivo**: apresentar os conceitos e terminologias relevantes para a criação headless.
 
 ## Sistema de gerenciamento de conteúdo (CMS) {#content-management-system}
@@ -87,6 +87,6 @@ Agora que você aprendeu os conceitos e a terminologia, o próximo passo é [Sab
 
 * [Introdução ao AEM as a Headless CMS](/help/sites-developing/headless/introduction.md)
 
-* [Portal do desenvolvedor do AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=pt-BR)
+* [Portal do Desenvolvedor do AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=pt-BR)
 
-* [Tutorials para Headless no AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=pt-BR)
+* [Tutoriais do Headless no AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/getting-started-with-aem-headless/overview)

@@ -2,11 +2,11 @@
 title: Criar projetos de tradução
 description: Saiba como criar projetos de tradução no [!DNL Adobe Experience Manager].
 contentOwner: AG
-role: Architect, Admin
+role: Developer, Admin
 feature: Translation
 exl-id: 8990feca-cfda-4974-915e-27aa9d8f2ee1
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '1889'
 ht-degree: 13%
@@ -174,7 +174,7 @@ Se você usar essa opção, um projeto de tradução será criado para o conjunt
 
 1. Na interface do usuário do [!DNL Assets], selecione a pasta de origem em que você adicionou um ativo.
 1. Abra o painel **[!UICONTROL Referências]** e clique em **[!UICONTROL Cópias de idioma]** em **[!UICONTROL Cópias]** para exibir a lista de cópias de idioma.
-1. Marque a caixa de seleção ao lado de **[!UICONTROL Cópias de idioma]** e selecione a pasta de destino correspondente ao local adequado.
+1. Marque a caixa de seleção ao lado de **[!UICONTROL Cópias de idioma]** e selecione a pasta de destino correspondente à localidade adequada.
 
    ![selecionar cópia de idioma](assets/lang-copy1.png)
 
@@ -220,7 +220,7 @@ Se você usar essa opção, o conjunto de ativos será adicionado a um projeto d
 
    ![chlimage_1-94](assets/chlimage_1-94.png)
 
-1. Marque a caixa de seleção ao lado de **[!UICONTROL Cópias de idioma]**, que seleciona todas as cópias de idioma. Desmarque as outras cópias, exceto a cópia de idioma (cópias) correspondente às localidades para as quais você deseja traduzir.
+1. Marque a caixa de seleção ao lado de **[!UICONTROL Cópias de idioma]**, que seleciona todas as cópias de idioma. Desmarque as outras cópias, exceto a cópia no idioma de destino (cópias) correspondente às localidades para as quais você deseja traduzir.
 
    ![selecionar cópia de idioma](assets/lang-copy1.png)
 
@@ -261,5 +261,5 @@ Ao executar um fluxo de trabalho de tradução para atualizar uma cópia de idio
 
 ## Dicas e limitações {#tips-limitations}
 
-* Se você iniciar um fluxo de trabalho de tradução para ativos complexos, como arquivos PDF e [!DNL Adobe InDesign], seus subativos ou representações (se houver) não serão enviados para tradução.
+* Se você iniciar um fluxo de trabalho de tradução para ativos complexos, como arquivos do PDF e do [!DNL Adobe InDesign], os subativos ou representações (se houver) não serão enviados para tradução.
 * Se você usar a tradução automática, os binários de ativos não serão traduzidos.
