@@ -139,5 +139,5 @@ Desenvolva esse conhecimento e continue sua jornada de tradução headless do AE
 
 Embora seja recomendável seguir para a próxima parte da jornada de tradução headless revisando o documento [Configurar regras de tradução](translation-rules.md), veja a seguir alguns recursos adicionais e opcionais que aprofundam alguns conceitos mencionados neste documento, mas que não são necessários para continuar na jornada.
 
-*  [Configuração da estrutura de integração de tradução](/help/sites-administering/tc-tic.md) - revise uma lista de conectores de tradução selecionados e saiba como configurar a estrutura de integração de tradução para integrar-se a serviços de tradução de terceiros.
+* [Configuração da estrutura de integração de tradução](/help/sites-administering/tc-tic.md) - revise uma lista de conectores de tradução selecionados e saiba como configurar a estrutura de integração de tradução para integrar-se a serviços de tradução de terceiros.
 * [Conexão com o Microsoft Translator](/help/sites-administering/tc-msconf.md) - o AEM fornece uma conta de avaliação do Microsoft Translation para fins de teste.

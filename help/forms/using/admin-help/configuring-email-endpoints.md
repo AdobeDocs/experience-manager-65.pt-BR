@@ -89,7 +89,7 @@ Para que o fluxo de trabalho de formulários receba e manipule mensagens de emai
 
 **Padrão do Domínio:** O padrão do nome de domínio usado para filtrar emails de entrada. Por exemplo, se adobe.com for usado, somente o email do adobe.com será processado; o email de outros domínios será ignorado.
 
-**Padrão de Arquivo:** Os padrões de anexo de arquivo de entrada aceitos pelo provedor. Isso inclui arquivos com extensões específicas (&amp;ast;.dat, &amp;ast;.xml), nomes específicos (dados) e expressões compostas no nome e na extensão (.``[dD][aA]``&#39;porta&#39;). O valor padrão é &amp;ast;.&amp;ast;.
+**Padrão de Arquivo:** Os padrões de anexo de arquivo de entrada aceitos pelo provedor. Isso inclui arquivos com extensões específicas (&ast;.dat, &ast;.xml), nomes específicos (dados) e expressões compostas no nome e na extensão (.``[dD][aA]``&#39;porta&#39;). O valor padrão é &ast;.&ast;.
 
 **Destinatários do Trabalho Bem-sucedido:** Um ou mais endereços de email que são usados para enviar emails para indicar trabalhos bem-sucedidos. Por padrão, uma mensagem de tarefa bem-sucedida é sempre enviada ao remetente da tarefa inicial. Até 100 recipients são suportados. Para desativar essa configuração, deixe esse campo em branco.
 
@@ -167,7 +167,7 @@ Use as configurações a seguir para configurar um endpoint de email.
 
 **Padrão de Domínio:** Especifica os padrões de domínio do email de entrada que o provedor aceita. Por exemplo, se adobe.com for usado, somente o email do adobe.com será processado; o email de outros domínios será ignorado.
 
-**Padrão de Arquivo:** Especifica os padrões de anexo de arquivo de entrada aceitos pelo provedor. Isso inclui arquivos com extensões específicas (&amp;ast;.dat, &amp;ast;.xml), nomes específicos (dados) ou expressões compostas no nome e na extensão (&amp;ast;.`[dD][aA]`&#39;porta&#39;).
+**Padrão de Arquivo:** Especifica os padrões de anexo de arquivo de entrada aceitos pelo provedor. Isso inclui arquivos com extensões específicas (&ast;.dat, &ast;.xml), nomes específicos (dados) ou expressões compostas no nome e na extensão (&ast;.`[dD][aA]`&#39;porta&#39;).
 
 **Destinatários do Trabalho Bem-sucedido:** Um endereço de email para o qual as mensagens são enviadas para indicar trabalhos bem-sucedidos. Por padrão, uma mensagem de tarefa bem-sucedida é sempre enviada ao remetente. Se você digitar remetente, os resultados do email serão enviados para ele. Até 100 recipients são suportados. Especifique recipients adicionais com endereços de email, separados por vírgulas (,).
 
@@ -235,7 +235,7 @@ O valor padrão é assíncrono.
 
 **Literal:** O email usa o valor inserido no campo como ele é exibido.
 
-**Variável:** é possível mapear uma cadeia de caracteres do assunto do email, corpo, cabeçalho ou endereço de email do remetente. Para fazer isso, use uma das seguintes palavras-chave: %SUBJECT%, %BODY%, %HEADER% ou %SENDER%. Por exemplo, se você usar %SUBJECT%, o conteúdo do assunto do email será usado como parâmetro de entrada. Para selecionar anexos, insira um padrão de arquivo que o terminal de email possa usar para selecionar os documentos anexados. Por exemplo, inserir &amp;ast;.pdf seleciona qualquer documento anexado que tenha uma extensão de nome de arquivo .pdf. Inserir &amp;ast; seleciona qualquer documento anexado. Inserir example.pdf seleciona qualquer documento anexado chamado example.pdf.
+**Variável:** é possível mapear uma cadeia de caracteres do assunto do email, corpo, cabeçalho ou endereço de email do remetente. Para fazer isso, use uma das seguintes palavras-chave: %SUBJECT%, %BODY%, %HEADER% ou %SENDER%. Por exemplo, se você usar %SUBJECT%, o conteúdo do assunto do email será usado como parâmetro de entrada. Para selecionar anexos, insira um padrão de arquivo que o terminal de email possa usar para selecionar os documentos anexados. Por exemplo, inserir &ast;.pdf seleciona qualquer documento anexado que tenha uma extensão de nome de arquivo .pdf. Inserir &ast; seleciona qualquer documento anexado. Inserir example.pdf seleciona qualquer documento anexado chamado example.pdf.
 
 **Mapeamentos do Parâmetro de Saída:** Usado para configurar a saída do serviço e da operação. Os seguintes caracteres nos valores de mapeamento do parâmetro de saída são expandidos no nome do arquivo de anexo:
 
@@ -245,7 +245,7 @@ O valor padrão é assíncrono.
 
 Qualquer ocorrência da barra invertida (\) é substituída por %%.
 
-***observação **: se a mensagem de solicitação de serviço incluir vários anexos de arquivo, você não poderá usar os parâmetros %F e %E para a propriedade Mapeamentos de Parâmetros de Saída do ponto de extremidade. Se a resposta do serviço retornar vários anexos de arquivo, você não poderá especificar o mesmo nome de arquivo para mais de um anexo. Se você não seguir essas recomendações, o serviço chamado criará os nomes dos arquivos retornados, e os nomes não serão previsíveis.*
+***observação &#x200B;**: se a mensagem de solicitação de serviço incluir vários anexos de arquivo, você não poderá usar os parâmetros %F e %E para a propriedade Mapeamentos de Parâmetros de Saída do ponto de extremidade. Se a resposta do serviço retornar vários anexos de arquivo, você não poderá especificar o mesmo nome de arquivo para mais de um anexo. Se você não seguir essas recomendações, o serviço chamado criará os nomes dos arquivos retornados, e os nomes não serão previsíveis.*
 
 Os seguintes valores estão disponíveis:
 

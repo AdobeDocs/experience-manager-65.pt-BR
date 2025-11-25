@@ -146,7 +146,7 @@ Quando os arquivos são colocados na pasta monitorada, ela lista os arquivos na 
 
 **Tempo de Espera:** O tempo, em milissegundos, que deve ser aguardado antes que você verifique uma pasta ou um arquivo após sua criação. Por exemplo, se o tempo de espera for de 3.600.000 milissegundos (uma hora) e o arquivo tiver sido criado há um minuto, esse arquivo será selecionado após 59 minutos ou mais. O valor padrão é 0.
 
-Essa configuração é útil para garantir que um arquivo ou pasta seja copiado completamente para a pasta de entrada. Por exemplo, se você tiver um arquivo grande para processar e o download demorar dez minutos, defina o tempo de espera como 10&amp;ast;60 &amp;ast;1000 milissegundos. Isso impede que a pasta monitorada verifique o arquivo se ele não tiver dez minutos.
+Essa configuração é útil para garantir que um arquivo ou pasta seja copiado completamente para a pasta de entrada. Por exemplo, se você tiver um arquivo grande para processar e o download demorar dez minutos, defina o tempo de espera como 10&ast;60 &ast;1000 milissegundos. Isso impede que a pasta monitorada verifique o arquivo se ele não tiver dez minutos.
 
 **Excluir Padrão de Arquivo:** Uma lista delimitada por ponto-e-vírgula **;** de padrões que uma pasta monitorada usa para determinar quais arquivos e pastas serão verificados e selecionados. Qualquer arquivo ou pasta com este padrão não será examinado para processamento.
 
@@ -154,29 +154,29 @@ Essa configuração é útil quando a entrada é uma pasta com vários arquivos.
 
 Você pode usar padrões de arquivo para excluir:
 
-* Arquivos com extensões de nome de arquivo específicas; por exemplo, &amp;ast;.dat, &amp;ast;.xml, &amp;ast;.pdf.
-* Arquivos com nomes específicos; por exemplo, dados.&amp;ast; excluiria arquivos e pastas nomeados como *dados1*, *dados2*, e assim por diante.
+* Arquivos com extensões de nome de arquivo específicas; por exemplo, &ast;.dat, &ast;.xml, &ast;.pdf.
+* Arquivos com nomes específicos; por exemplo, dados.&ast; excluiria arquivos e pastas nomeados como *dados1*, *dados2*, e assim por diante.
 * Arquivos com expressões compostas no nome e na extensão, como nestes exemplos:
 
    * Dados `[0-9][0-9][0-9]`.`[dD][aA]`&#39;porta&#39;
-   * &amp;ast;.`[dD][aA]`&#39;porta&#39;
-   * &amp;ast;.`[Xx][Mm][Ll]`
+   * &ast;.`[dD][aA]`&#39;porta&#39;
+   * &ast;.`[Xx][Mm][Ll]`
 
 Para obter mais informações sobre padrões de arquivo, consulte [Sobre padrões de arquivo](configuring-watched-folder-endpoints.md#about-file-patterns).
 
-**Incluir Padrão de Arquivo:** (Obrigatório) Uma lista delimitada por ponto-e-vírgula **;** de padrões que a pasta monitorada usa para determinar quais pastas e arquivos serão verificados e selecionados. Por exemplo, se o Padrão do arquivo de inclusão for input&amp;ast;, todos os arquivos e pastas que corresponderem a input&amp;ast; serão selecionados. Isso inclui arquivos e pastas chamados input1, input2 e assim por diante.
+**Incluir Padrão de Arquivo:** (Obrigatório) Uma lista delimitada por ponto-e-vírgula **;** de padrões que a pasta monitorada usa para determinar quais pastas e arquivos serão verificados e selecionados. Por exemplo, se o Padrão do arquivo de inclusão for input&ast;, todos os arquivos e pastas que corresponderem a input&ast; serão selecionados. Isso inclui arquivos e pastas chamados input1, input2 e assim por diante.
 
-O valor padrão é &amp;ast; e indica todos os arquivos e pastas.
+O valor padrão é &ast; e indica todos os arquivos e pastas.
 
 Você pode usar padrões de arquivo para incluir:
 
-* Arquivos com extensões de nome de arquivo específicas; por exemplo, &amp;ast;.dat, &amp;ast;.xml, &amp;ast;.pdf.
-* Arquivos com nomes específicos; por exemplo, dados.&amp;ast; incluiria arquivos e pastas nomeados como *dados1*, *dados2*, e assim por diante.
+* Arquivos com extensões de nome de arquivo específicas; por exemplo, &ast;.dat, &ast;.xml, &ast;.pdf.
+* Arquivos com nomes específicos; por exemplo, dados.&ast; incluiria arquivos e pastas nomeados como *dados1*, *dados2*, e assim por diante.
 * Arquivos com expressões compostas no nome e na extensão, como nestes exemplos:
 
    * Dados `[0-9][0-9][0-9]`.`[dD][aA]`&#39;porta&#39;
-   * &amp;ast;.`[dD][aA]`&#39;porta&#39;
-   * &amp;ast;.`[Xx][Mm][Ll]`
+   * &ast;.`[dD][aA]`&#39;porta&#39;
+   * &ast;.`[Xx][Mm][Ll]`
 
 Para obter mais informações sobre padrões de arquivo, consulte [Sobre padrões de arquivo](configuring-watched-folder-endpoints.md#about-file-patterns).
 
@@ -228,7 +228,7 @@ Um valor de -1 dias indica que a pasta de resultados nunca deve ser excluída. O
 
 **Literal:** A pasta monitorada usa o valor inserido no campo como ele é exibido. Todos os tipos básicos de Java são compatíveis. Por exemplo, se uma API usar entradas como String, long, int e Boolean, a cadeia de caracteres será convertida no tipo adequado e o serviço será chamado.
 
-**Variável:** o valor inserido é um padrão de arquivo que a pasta monitorada usa para escolher a entrada. Por exemplo, se houver o serviço de criptografia de senhas, em que o documento de entrada deve ser um arquivo PDF, o usuário poderá usar &amp;ast;.pdf como padrão de arquivo. A pasta monitorada capturará todos os arquivos na pasta monitorada que correspondam a este padrão e chamará o serviço para cada arquivo. Quando uma variável é usada, todos os arquivos de entrada são convertidos em documentos. Somente APIs que usam Documento como tipo de entrada são compatíveis.
+**Variável:** o valor inserido é um padrão de arquivo que a pasta monitorada usa para escolher a entrada. Por exemplo, se houver o serviço de criptografia de senhas, em que o documento de entrada deve ser um arquivo PDF, o usuário poderá usar &ast;.pdf como padrão de arquivo. A pasta monitorada capturará todos os arquivos na pasta monitorada que correspondam a este padrão e chamará o serviço para cada arquivo. Quando uma variável é usada, todos os arquivos de entrada são convertidos em documentos. Somente APIs que usam Documento como tipo de entrada são compatíveis.
 
 **Mapeamentos de Parâmetros de Saída:** Usados para configurar as saídas do serviço e da operação. As configurações disponíveis dependem do serviço que está usando o ponto de extremidade da pasta monitorada.
 
@@ -242,13 +242,13 @@ A saída da pasta monitorada pode ser um único documento, uma lista de document
 
 Os administradores podem especificar o tipo de arquivo que pode chamar um serviço. Vários padrões de arquivo podem ser estabelecidos para cada pasta monitorada. Um padrão de arquivo pode ser uma das seguintes propriedades de arquivo:
 
-* Arquivos com extensões de nome de arquivo específicas. Por exemplo, &amp;ast;.dat, &amp;ast;.xml, &amp;ast;.pdf
-* Arquivos com nomes específicos. Por exemplo, dados.&amp;ast;
+* Arquivos com extensões de nome de arquivo específicas. Por exemplo, &ast;.dat, &ast;.xml, &ast;.pdf
+* Arquivos com nomes específicos. Por exemplo, dados.&ast;
 * Arquivos com expressões compostas no nome e na extensão, como nestes exemplos:
 
    * Dados `[0-9][0-9][0-9]`.`[dD][aA]`&#39;porta&#39;
-   * &amp;ast;.`[dD][aA]`&#39;porta&#39;
-   * &amp;ast;.`[Xx][Mm][Ll]`
+   * &ast;.`[dD][aA]`&#39;porta&#39;
+   * &ast;.`[Xx][Mm][Ll]`
 
 O administrador pode definir o padrão de arquivo da pasta de saída na qual os resultados serão armazenados. Para as pastas de saída (resultado, preservação e falha), o administrador pode especificar qualquer um destes padrões de arquivo:
 
@@ -374,11 +374,11 @@ Estas são algumas dicas e truques ao configurar o endpoint da Pasta monitorada:
 * Se você tiver uma pasta monitorada no Windows que esteja processando arquivos de imagem, especifique valores para a opção Incluir padrão do arquivo ou Excluir padrão do arquivo para impedir que o arquivo Thumbs.db gerado automaticamente pelo Windows seja sondado pela pasta monitorada.
 * Se uma expressão CRON for especificada, o intervalo de repetição será ignorado. O uso da expressão cron é baseado no sistema de agendamento de tarefas de código aberto Quartz, versão 1.4.0.
 * O tamanho do lote é o número de arquivos ou pastas que serão selecionados em cada varredura da pasta monitorada. Se o tamanho do lote estiver definido como dois e dez arquivos ou pastas forem descartados na pasta de entrada da pasta monitorada, apenas dois serão coletados em cada verificação. Na próxima verificação, que ocorrerá após o tempo especificado no intervalo de repetição, os próximos dois arquivos serão coletados.
-* Para padrões de arquivo, os administradores podem especificar expressões regulares com suporte adicionado de padrões curinga para especificar padrões de arquivo. A Pasta monitorada modifica a expressão regular para suportar padrões curinga, como &amp;ast;.&amp;ast; ou &amp;ast;.pdf. Esses padrões curingas não são suportados pelas expressões regulares.
+* Para padrões de arquivo, os administradores podem especificar expressões regulares com suporte adicionado de padrões curinga para especificar padrões de arquivo. A Pasta monitorada modifica a expressão regular para suportar padrões curinga, como &ast;.&ast; ou &ast;.pdf. Esses padrões curingas não são suportados pelas expressões regulares.
 * A Pasta monitorada verifica a pasta de entrada em busca da entrada e não sabe se o arquivo ou a pasta de origem foi completamente copiada para a pasta de entrada antes de iniciar o processamento do arquivo ou da pasta. Para garantir que o arquivo ou pasta de origem seja completamente copiado para a pasta de entrada da pasta monitorada antes que o arquivo ou pasta seja selecionado, execute estas tarefas:
 
-   * Use o Tempo de espera, que é o tempo em milissegundos que a Pasta monitorada aguarda desde a última modificação. Use esse recurso se você tiver arquivos grandes para processar. Por exemplo, se o download de um arquivo levar 10 minutos, especifique o tempo de espera como 10&amp;ast;60 &amp;ast;1000 milissegundos. Isso impedirá que a Pasta monitorada selecione o arquivo, se ele não tiver 10 minutos de idade.
-   * Use o padrão de exclusão de arquivo e o padrão de inclusão de arquivo. Por exemplo, se o padrão de exclusão de arquivo for `ex*` e o padrão de inclusão de arquivo for `in*`, a Pasta monitorada selecionará os arquivos que começam com &quot;in&quot; e não selecionará os arquivos que começam com &quot;ex&quot;. Para copiar arquivos ou pastas grandes, primeiro renomeie o arquivo ou pasta de modo que o nome comece com &quot;ex&quot;. Depois que o arquivo ou pasta chamado &quot;ex&quot; for completamente copiado para a pasta monitorada, renomeie-o para &quot;in&amp;ast;&quot;.
+   * Use o Tempo de espera, que é o tempo em milissegundos que a Pasta monitorada aguarda desde a última modificação. Use esse recurso se você tiver arquivos grandes para processar. Por exemplo, se o download de um arquivo levar 10 minutos, especifique o tempo de espera como 10&ast;60 &ast;1000 milissegundos. Isso impedirá que a Pasta monitorada selecione o arquivo, se ele não tiver 10 minutos de idade.
+   * Use o padrão de exclusão de arquivo e o padrão de inclusão de arquivo. Por exemplo, se o padrão de exclusão de arquivo for `ex*` e o padrão de inclusão de arquivo for `in*`, a Pasta monitorada selecionará os arquivos que começam com &quot;in&quot; e não selecionará os arquivos que começam com &quot;ex&quot;. Para copiar arquivos ou pastas grandes, primeiro renomeie o arquivo ou pasta de modo que o nome comece com &quot;ex&quot;. Depois que o arquivo ou pasta chamado &quot;ex&quot; for completamente copiado para a pasta monitorada, renomeie-o para &quot;in&ast;&quot;.
 
 * Use a duração da limpeza para manter a pasta de resultados limpa. A Pasta monitorada limpa todos os arquivos mais antigos que a duração mencionada na duração da limpeza. A duração é em dias.
 * Ao adicionar um endpoint de Pasta monitorada, após selecionar o nome da operação, o mapeamento do parâmetro de entrada é preenchido. Para cada entrada da operação, um campo de mapeamento de parâmetro de entrada é gerado. Estes são exemplos de mapeamentos de parâmetro de entrada:
@@ -397,7 +397,7 @@ Estas são algumas dicas e truques ao configurar o endpoint da Pasta monitorada:
 
    * Solução alternativa 1
 
-      1. Especifique um padrão para Excluir padrão de arquivo, como temp&amp;ast;.ps.
+      1. Especifique um padrão para Excluir padrão de arquivo, como temp&ast;.ps.
       1. Copie os arquivos que começam com temp (por exemplo, temp1.ps) para a pasta monitorada.
       1. Depois que o arquivo tiver sido completamente copiado para a pasta monitorada, renomeie-o para corresponder ao padrão especificado em Incluir padrão de arquivo. A Pasta monitorada move o arquivo concluído para o estágio.
 

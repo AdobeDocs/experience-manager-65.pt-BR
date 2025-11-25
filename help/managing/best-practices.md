@@ -56,7 +56,7 @@ A planilha **Pulsação do projeto** fornece uma visão geral gráfica das métr
 
 ## Status por Função {#status-by-role}
 
-A planilha **Status por Função** mostra o detalhamento de [**Integridade**, **Qualidade e **Integridade**](#projectheartbeat) por **[Fase](#phases-and-milestones)** e **[Pessoa](#persona)**.
+A planilha **Status por Função** mostra o detalhamento de [**Integridade**, **Qualidade e &#x200B;** Integridade&#x200B;**](#projectheartbeat) por &#x200B;** [Fase](#phases-and-milestones)**&#x200B; e &#x200B;** [Pessoa](#persona)**.
 
 ## Fases e etapas {#phases-and-milestones}
 
@@ -607,7 +607,7 @@ Para obter as práticas recomendadas sobre implantação, administração, desen
 
 * Outras práticas recomendadas e diretrizes relacionadas ao gerenciamento de um projeto do AEM:
    * [Diretrizes de dimensionamento de hardware](/help/managing/hardware-sizing-guidelines.md)
-   * [DevOps empresarial ](/help/managing/enterprise-devops.md)
+   * [DevOps empresarial &#x200B;](/help/managing/enterprise-devops.md)
    * [Práticas recomendadas de gerenciamento de SEO e URL](/help/managing/seo-and-url-management.md)
    * [AEM e diretrizes de acessibilidade na Web](/help/managing/web-accessibility.md)
    * [Regulamento Geral sobre a Proteção de Dados](/help/managing/data-protection-and-privacy.md)* [Implantação e Manutenção de Práticas Recomendadas](/help/sites-deploying/best-practices.md)
@@ -622,7 +622,7 @@ Além disso, as seguintes seções da documentação do AEM são de especial int
 
    * [Segurança](/help/sites-developing/security.md)
    * [Implantações recomendadas](/help/sites-deploying/recommended-deploys.md)
-   * [DevOps empresarial ](/help/managing/enterprise-devops.md)
+   * [DevOps empresarial &#x200B;](/help/managing/enterprise-devops.md)
    * [Dimensionamento de hardware](/help/managing/hardware-sizing-guidelines.md)
    * Conceitos do AEM:
 
