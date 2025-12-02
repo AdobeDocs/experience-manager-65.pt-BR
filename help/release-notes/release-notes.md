@@ -637,7 +637,7 @@ Para garantir a operação correta, você deve adicionar as seguintes propriedad
 
 ### Problema conhecido do AEM Sites {#known-issues-aem-sites-6524}
 
-A visualização dos fragmentos de conteúdo falha devido à proteção do DoS para uma grande árvore de fragmentos. Consulte o artigo [KB sobre as opções de configuração padrão do GraphQL Query Executor](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-23945) (SITES-17934)
+A visualização dos fragmentos de conteúdo falha devido à proteção do DoS para uma grande árvore de fragmentos. Consulte o artigo [KB sobre as opções de configuração padrão do GraphQL Query Executor](https://experienceleague.adobe.com/pt-br/docs/experience-cloud-kcs/kbarticles/ka-23945) (SITES-17934)
 
 ### Problemas conhecidos do AEM Forms {#known-issues-aem-forms-6524}
 
@@ -715,5 +715,5 @@ Esses sites estão disponíveis somente para clientes do. Se você for cliente e
 >[!MORELIKETHIS]
 >
 >* [[!DNL Experience Manager] página do produto](https://business.adobe.com/br/products/experience-manager/adobe-experience-manager.html)
->* [[!DNL Experience Manager] Documentação do 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65)
+>* [[!DNL Experience Manager] Documentação do 6.5](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65)
 >* [Inscreva-se para obter atualizações de produto prioritárias da Adobe](https://www.adobe.com/subscription/priority-product-update.html)
