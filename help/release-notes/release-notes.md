@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 6eccdab5cd492686dda2aca3fee4df171a2d9011
+source-git-commit: 2580bb494bb81da0a923a34c88d37933d7575bec
 workflow-type: tm+mt
-source-wordcount: '8932'
+source-wordcount: '8905'
 ht-degree: 5%
 
 ---
@@ -393,11 +393,9 @@ A publicação das atividades do AEM Target não falha mais quando os autores de
 #### Security{#foundation-security-6524}
 -->
 
-
 #### Sling{#foundation-sling-6524}
 
-* Correção do comportamento de cache em páginas protegidas por SAML. O AEM adiciona o controle de cache correto e varia os metadados para sessões autenticadas, de modo que os proxies e a Dispatcher ignoram o armazenamento em cache de respostas personalizadas. O conteúdo anônimo ainda armazena em cache normalmente, enquanto as exibições conectadas permanecem específicas do usuário. (NPR-42640)
-
+* Correção de um erro inesperado de compilação JSP com o pacote `org.apache.sling.scripting.jsp:2.6.0`. (SLING-12442)
 * A plataforma atualiza o mecanismo principal do Sling de 2.16.2 para 2.16.6. O mecanismo mais recente endurece a validação de entrada e estabiliza o processamento de solicitações sob carga. (NPR-43105)
 
 #### Editor SPA {#foundation-spa-editor-6524}
@@ -637,7 +635,7 @@ Para garantir a operação correta, você deve adicionar as seguintes propriedad
 
 ### Problema conhecido do AEM Sites {#known-issues-aem-sites-6524}
 
-A visualização dos fragmentos de conteúdo falha devido à proteção do DoS para uma grande árvore de fragmentos. Consulte o artigo [KB sobre as opções de configuração padrão do GraphQL Query Executor](https://experienceleague.adobe.com/pt-br/docs/experience-cloud-kcs/kbarticles/ka-23945) (SITES-17934)
+A visualização dos fragmentos de conteúdo falha devido à proteção do DoS para uma grande árvore de fragmentos. Consulte o artigo [KB sobre as opções de configuração padrão do GraphQL Query Executor](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-23945) (SITES-17934)
 
 ### Problemas conhecidos do AEM Forms {#known-issues-aem-forms-6524}
 
@@ -715,5 +713,5 @@ Esses sites estão disponíveis somente para clientes do. Se você for cliente e
 >[!MORELIKETHIS]
 >
 >* [[!DNL Experience Manager] página do produto](https://business.adobe.com/br/products/experience-manager/adobe-experience-manager.html)
->* [[!DNL Experience Manager] Documentação do 6.5](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65)
+>* [[!DNL Experience Manager] Documentação do 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65)
 >* [Inscreva-se para obter atualizações de produto prioritárias da Adobe](https://www.adobe.com/subscription/priority-product-update.html)
