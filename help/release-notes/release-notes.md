@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: f852fa8d682241ffdddc60148fcd9dce7b89fed4
+source-git-commit: ae66b28497bfb12686152b324e1758ad2d8592ee
 workflow-type: tm+mt
-source-wordcount: '8809'
+source-wordcount: '9451'
 ht-degree: 5%
 
 ---
@@ -40,11 +40,12 @@ ht-degree: 5%
 
 <!-- UPDATE FOR EACH NEW RELEASE -->
 
-<!--
-## Key features and enhancements
--->
 
+## Principais recursos e melhorias
 
+### Forms
+
+* **Suporte para transmitir XCI personalizado:** adição de suporte para transmitir XCI personalizado em parâmetros do aplicativo cmdline xmlformcmd. Isso permite que os usuários especifiquem arquivos XCI personalizados para testes, melhorando a flexibilidade e o controle sobre o processo de testes. (LC-3923248)
 
 
 ## Correção de problemas no Service Pack 24 {#fixed-issues}
@@ -302,25 +303,40 @@ A configuração do Manipulador de autenticação de token de consulta confundiu
 
 ### [!DNL Forms]{#forms-6524}
 
+<!--
 >[!NOTE]
 >
->As correções no Forms [!DNL Experience Manager] são entregues por meio de um pacote complementar separado uma semana após a data programada de lançamento do Service Pack [!DNL Experience Manager]. Nesse caso, os pacotes complementares serão lançados quinta-feira, 4 de dezembro de 2025. Além disso, uma lista de correções e aprimoramentos do Forms foi adicionada a esta seção.
-
-<!--
-#### Forms Designer 
-
-#### Forms
-
-#### Forms JEE 
-
-#### Forms Captcha {#forms-captcha-6524} 
-
-#### XMLFM {#forms-xmlfm-6524}
-
-#### [!DNL Forms Designer] {#forms-designer-6524}
-
+>Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the add-on packages release Thursday, December 4, 2025. In addition, a list of Forms fixes and enhancements is added to this section.
 -->
 
+#### Designer do Forms
+
+* Os usuários tiveram problemas com hiperlinks que não eram clicáveis em casos de teste específicos, afetando sua capacidade de navegar e verificar links no aplicativo. (LC-3923505)
+* Os usuários tiveram problemas de acessibilidade com PDFs gerados usando o AEM Forms Designer 6.5.23 para idiomas não latinos. As tags de caminho não eram colocadas dentro de um contêiner de artefato, causando falhas nas verificações de PAC e leitor de tela. (LC-3923295)
+* Os usuários experimentaram hiperlinks corrompidos em caixas de texto Portable Document Format (PDF) após a aplicação de patches da versão 6.5.21 para 6.5.23 usando o Serviço de saída. (LC-3923290)
+* Os usuários tiveram problemas de acessibilidade com formulários do Documento de registro (DoR). Quando os campos de entrada estavam vazios, os leitores de tela só liam as legendas dos campos, não os valores, dificultando a navegação eficaz dos formulários para usuários com deficiência. (LC-3923234)
+* Os usuários enfrentavam problemas de acessibilidade no DoR PDF forms, onde o NVDA lia incorretamente &quot;indisponível&quot; para caixas de seleção, botões de opção e campos de texto, geralmente repetindo a mensagem e criando confusão para os usuários de leitores de tela. (LC-3923201)
+* Os usuários experimentaram uma discrepância de ordem de tabulação no XDP ao adicionar novos campos. A ordem de tabulação existente foi alterada inesperadamente, afetando a navegação do formulário. (LC-3923183, LC-3922630)
+* Os usuários tiveram problemas com a renderização do HTML. Ao usar o evento `docReady`, ele não era acionado corretamente no HTML, fazendo com que os scripts não fossem executados como esperado. (LC-3923118)
+* Os usuários tiveram problemas com scripts de renderização do PDF que não funcionavam no ambiente de produção da AEM Forms Cloud. (LC-3923082 )
+* Os usuários tiveram problemas com campos flutuantes em formulários. Ao usar arquivos de dados diferentes, os campos flutuantes são renderizados corretamente com um arquivo, mas não com o outro, apesar de pequenas diferenças não relacionadas aos campos. (LC-3923056)
+* Os usuários experimentaram uma página principal em espanhol em branco quando apenas o conteúdo em inglês foi selecionado em um XDP (Pacote de dados XML) com várias páginas principais. (LC-3923009)
+* Os usuários observaram informações desatualizadas de ano de direitos autorais no AEM Designer. Isso ocorreu na caixa pop-up na inicialização, na seção &quot;Sobre&quot; e na seção &quot;Avisos legais&quot;, exibindo &quot;2003-2024&quot; em vez de &quot;2003-2025&quot;. (LC-3923005)
+* Os usuários encontraram uma página em branco do PDF ao usar paginação no AEM Forms Designer. O problema ocorria ao selecionar &quot;Início da próxima página/Início da página&quot; para o WireAdviceHeader, interrompendo o layout das iterações de dados. (LC-3922997, LC-3922830)
+* Os usuários tiveram um problema em que o valor filedigest da XSD (Extensible Markup Language) não persistia na versão de 64 bits do AEM Forms Designer. (LC-3922924)
+* Os usuários experimentaram a formatação instável de hiperlinks no AEM Designer 6.5.19, onde os hiperlinks dentro de uma caixa de texto adotavam incorretamente os estilos do texto ao redor, como a formatação do primeiro caractere. (LC-3922376)
+* Os usuários tiveram problemas ao renderizar formulários do HTML por meio da Renderização móvel no MAC com o AEM Forms OSGI v6.5.22. (LC-3923058)
+* Os usuários experienciaram erros de &quot;objeto de caminho não marcado&quot; em arquivos do Portable Document Format (PDF) ao usar campos com bordas ou em segundo plano em modelos XDP criados com o Designer 6.5.23 e analisados com o PAC 2024. (LC-3923013)
+* Os usuários apresentaram um erro com a cor de fundo do cabeçalho &quot;Dati Richiedente&quot; no Portable Application Component (PAC), recebendo a mensagem &quot;objeto de caminho não marcado&quot;. (LC-3922912)
+* Os usuários tiveram um problema em que modelos específicos substituíam a fonte desejada por uma fonte condensada. (LC-3922330)
+
+#### Formulários adaptáveis
+
+* Os usuários experienciaram opções ausentes no Editor de regras. Quando os autores escreveram regras nas entradas numéricas, as opções Query, UTM e Browser details não estavam disponíveis. (FORMS-21660)
+* Os usuários tiveram falhas de aplicativo ao interagir com o OdataResponse devido a uma exceção de ponteiro nulo. (FORMS-20344)
+* Os usuários tiveram problemas ao criar regras para mostrar um painel e definir o foco em um elemento dentro dele. A regra setFocus foi executada antes da atualização de visibilidade, causando falha na ação de foco. (FORMS-19563)
+* Os usuários tiveram problemas com a seleção de componentes no AEM Forms Author. Ao navegar entre guias no modo de edição, alguns contêineres se tornaram inselecionáveis, impedindo uma fácil identificação e interação. (FORMS-18525)
+* Os usuários experimentaram um erro de &quot;URL inválido&quot; ao tentar anotar ativos no AEM 6.5.22. (NPR-42684)
 
 ### Foundation {#foundation-6524}
 
@@ -621,7 +637,7 @@ Para garantir a operação correta, você deve adicionar as seguintes propriedad
 
 ### Problema conhecido do AEM Sites {#known-issues-aem-sites-6524}
 
-A visualização dos fragmentos de conteúdo falha devido à proteção do DoS para uma grande árvore de fragmentos. Consulte o artigo [KB sobre as opções de configuração padrão do GraphQL Query Executor](https://experienceleague.adobe.com/pt-br/docs/experience-cloud-kcs/kbarticles/ka-23945) (SITES-17934)
+A visualização dos fragmentos de conteúdo falha devido à proteção do DoS para uma grande árvore de fragmentos. Consulte o artigo [KB sobre as opções de configuração padrão do GraphQL Query Executor](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-23945) (SITES-17934)
 
 ### Problemas conhecidos do AEM Forms {#known-issues-aem-forms-6524}
 
@@ -699,5 +715,5 @@ Esses sites estão disponíveis somente para clientes do. Se você for cliente e
 >[!MORELIKETHIS]
 >
 >* [[!DNL Experience Manager] página do produto](https://business.adobe.com/br/products/experience-manager/adobe-experience-manager.html)
->* [[!DNL Experience Manager] Documentação do 6.5](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65)
+>* [[!DNL Experience Manager] Documentação do 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65)
 >* [Inscreva-se para obter atualizações de produto prioritárias da Adobe](https://www.adobe.com/subscription/priority-product-update.html)
