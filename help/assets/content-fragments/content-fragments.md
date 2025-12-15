@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User
 exl-id: 0ee883c5-0cea-46b7-a759-600b8ea3bc3e
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 11a8181e860c724c817dd549b351df079c8227e2
+source-git-commit: 73ec9a0420206ef2cc60a12d316073a443c1d20d
 workflow-type: tm+mt
-source-wordcount: '2295'
+source-wordcount: '2329'
 ht-degree: 59%
 
 ---
@@ -321,7 +321,7 @@ Evite o aninhamento profundo ou excessivo de fragmentos de conteúdo usando Refe
 
 O uso intenso de referências de Fragmento de conteúdo pode afetar significativamente o desempenho do sistema, a capacidade de resposta da interface do usuário e a execução de consultas do GraphQL. Faça com que o aninhamento seja mantido em não mais de dez níveis.
 
-### Número de Campos e Tipos de Dados por Modelo {#number-of-data-fields-and-types-per-model}
+### Número de campos de dados e tipos por modelo {#number-of-data-fields-and-types-per-model}
 
 Inclua apenas os campos e tipos de dados que um modelo realmente precisa.
 
@@ -329,9 +329,15 @@ Modelos muito complexos levam a fragmentos muito complexos que podem dificultar 
 
 ### Campos de Rich Text {#rich-text-fields}
 
-Use campos Rich Text (o Tipo de Dados **Texto de várias linhas**) levando em consideração.
+Use campos Rich Text (o Tipo de Dados **Texto de várias linhas**) considerando:
 
-Limitar o número de campos Rich Text por modelo. Além disso, a quantidade de texto armazenado em cada fragmento e a quantidade de formatação do HTML. Um conteúdo de rich text muito grande pode afetar negativamente o desempenho do sistema.
+* Campos
+
+  Limitar o número de campos Rich Text por modelo. Por motivos de desempenho, não é recomendável ter mais de dez campos de Rich Text em um modelo. Se necessário, é recomendável usar [fragmentos de conteúdo aninhados](/help/assets/content-fragments/content-fragments-models.md#using-references-to-form-nested-content).
+
+* Conteúdo
+
+  Você também deve limitar a quantidade de texto armazenado em cada fragmento e a quantidade de formatação do HTML. Um conteúdo de rich text muito grande pode afetar negativamente o desempenho do sistema.
 
 ### Número de variações {#number-of-variations}
 
