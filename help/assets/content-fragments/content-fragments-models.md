@@ -1,18 +1,18 @@
 ---
-title: Modelos de fragmentos do conteúdo
+title: Modelos de fragmentos de conteúdo
 description: Saiba como os modelos de fragmento de conteúdo servem como base para o conteúdo headless no AEM e como criar fragmentos de conteúdo com conteúdo estruturado.
 feature: Content Fragments
 role: User
 exl-id: 6fd1fdb2-d1d3-4f97-b119-ecfddcccec9e
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: e3a35099a48088d5746aa23be45c3e81a1a8b02e
+source-git-commit: 11a8181e860c724c817dd549b351df079c8227e2
 workflow-type: tm+mt
-source-wordcount: '2339'
+source-wordcount: '2355'
 ht-degree: 64%
 
 ---
 
-# Modelos de fragmentos do conteúdo {#content-fragment-models}
+# Modelos de fragmentos de conteúdo {#content-fragment-models}
 
 Os modelos de fragmento de conteúdo no AEM definem a estrutura do conteúdo para os seus [fragmentos de conteúdo](/help/assets/content-fragments/content-fragments.md), servindo como base para o seu conteúdo headless.
 
@@ -22,6 +22,10 @@ Para usar modelos de fragmento de conteúdo, é possível:
 1. [Crie](#creating-a-content-fragment-model) e [configure](#defining-your-content-fragment-model) seus Modelos de fragmentos de conteúdo.
 1. [Habilite os Modelos de fragmento de conteúdo](#enabling-disabling-a-content-fragment-model) para uso ao criar Fragmentos de conteúdo.
 1. [Autorizar os modelos de fragmento de conteúdo nas pastas de ativos necessárias](#allowing-content-fragment-models-assets-folder) ao configurar as **Políticas**.
+
+>[!NOTE]
+>
+>Esteja ciente das [Práticas recomendadas](/help/assets/content-fragments/content-fragments.md#best-practices) ao trabalhar com os modelos de fragmento de conteúdo e fragmentos de conteúdo.
 
 ## Criação de um modelo de fragmento de conteúdo {#creating-a-content-fragment-model}
 
@@ -239,11 +243,11 @@ Os fragmentos de conteúdo podem formar conteúdo aninhado, usando um dos seguin
 >
 >O AEM tem proteção de recorrência para:
 >
->* Referências de conteúdo
->Isso impede que o usuário adicione uma referência ao fragmento atual. Isso pode resultar em uma caixa de diálogo vazia do seletor de referência de fragmento.
+>* Referências do conteúdo
+>  Isso impede que o usuário adicione uma referência ao fragmento atual. Isso pode resultar em uma caixa de diálogo vazia do seletor de referência de fragmento.
 >
 >* Referências de fragmento no GraphQL
->Se você criar uma consulta profunda que retorna vários Fragmentos de conteúdo referenciados entre si, ela retornará um valor nulo na primeira ocorrência.
+>  Se você criar uma consulta profunda que retorna vários Fragmentos de conteúdo referenciados entre si, ela retornará um valor nulo na primeira ocorrência.
 
 ### Referência de conteúdo {#content-reference}
 
@@ -315,11 +319,11 @@ Especifica um caminho raiz para qualquer fragmento referenciado.
 >
 >Também há uma proteção de recorrência para referências de fragmento em GraphQL. Se você criar uma consulta profunda em dois Fragmentos de conteúdo que fazem referência um ao outro, ela retornará um valor nulo.
 
-## Ativar ou desativar um Modelo de fragmento de conteúdo {#enabling-disabling-a-content-fragment-model}
+## Habilitar ou desabilitar um Modelo de fragmento de conteúdo {#enabling-disabling-a-content-fragment-model}
 
 Para ter controle total sobre o uso dos modelos de fragmento de conteúdo, eles têm um status que pode ser definido.
 
-### Ativar um modelo de fragmento de conteúdo {#enabling-a-content-fragment-model}
+### Habilitar um modelo de fragmento de conteúdo {#enabling-a-content-fragment-model}
 
 Depois que um modelo é criado, ele deve ser ativado para que:
 
@@ -327,9 +331,9 @@ Depois que um modelo é criado, ele deve ser ativado para que:
 * Ela pode ser referenciada a partir de um modelo de fragmento de conteúdo.
 * Ele está disponível para o GraphQL; portanto, o esquema é gerado.
 
-Para ativar um modelo que esteja sinalizado como:
+Para habilitar um modelo que esteja sinalizado como:
 
-* **Rascunho**: novo (nunca ativado).
+* **Rascunho**: novo (nunca habilitado).
 * **Desabilitado** : foi desabilitado.
 
 Você pode usar a opção **Habilitar** a partir:
@@ -337,7 +341,7 @@ Você pode usar a opção **Habilitar** a partir:
 * Da barra de ferramentas superior, quando o modelo necessário estiver selecionado.
 * Da ação rápida correspondente (passa o mouse sobre o modelo necessário).
 
-![Ativar um rascunho ou modelo desativado](assets/cfm-status-enable.png)
+![Habilitar um rascunho ou modelo desabilitado](assets/cfm-status-enable.png)
 
 ### Desativar um modelo de fragmento de conteúdo {#disabling-a-content-fragment-model}
 
@@ -354,7 +358,7 @@ Para desabilitar um Modelo que esteja sinalizado como **Habilitado**, use a opç
 * Da barra de ferramentas superior, quando o modelo necessário estiver selecionado.
 * Da ação rápida correspondente (passa o mouse sobre o modelo necessário).
 
-![Desativar um modelo ativado](assets/cfm-status-disable.png)
+![Desabilitar um modelo habilitado](assets/cfm-status-disable.png)
 
 ## Permitir modelos de fragmentos de conteúdo na pasta de ativos {#allowing-content-fragment-models-assets-folder}
 
@@ -388,7 +392,7 @@ Para configurar as **políticas** para **modelos de fragmento de conteúdo permi
 
 Os modelos de fragmento de conteúdo permitidos para uma pasta são resolvidos da seguinte maneira:
 
-* As **políticas** para **modelos de fragmento do conteúdo permitidos**.
+* As **políticas** para **modelos de fragmento de conteúdo permitidos**.
 * Se estiver vazia, tente determinar a política usando as regras de herança.
 * Se a cadeia de herança não fornecer um resultado, verifique a configuração de **Cloud Services** dessa pasta (diretamente e, em seguida, por herança).
 * Se nenhuma das opções acima fornecer resultados, então não há modelos permitidos para essa pasta.

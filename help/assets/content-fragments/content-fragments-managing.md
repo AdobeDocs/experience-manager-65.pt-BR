@@ -1,20 +1,20 @@
 ---
 title: Gerenciamento dos Fragmentos de conteúdo
-description: Saiba como usar o console do Assets para gerenciar os fragmentos de conteúdo do AEM, a base do seu conteúdo headless.
+description: Saiba como usar o console Assets para gerenciar os fragmentos de conteúdo do AEM, a base do conteúdo headless.
 feature: Content Fragments
 role: User
 exl-id: 25c91a85-06ff-4666-a809-46778a689e25
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 11a8181e860c724c817dd549b351df079c8227e2
 workflow-type: tm+mt
-source-wordcount: '1712'
-ht-degree: 75%
+source-wordcount: '1728'
+ht-degree: 74%
 
 ---
 
 # Gerenciamento dos Fragmentos de conteúdo {#managing-content-fragments}
 
-Saiba como usar o console do Assets para gerenciar os fragmentos de conteúdo do AEM, a base do seu conteúdo headless.
+Saiba como usar o console Assets para gerenciar os fragmentos de conteúdo do AEM, a base do conteúdo headless.
 
 Depois de definir os [Modelos de fragmentos de conteúdo](#creating-a-content-model), você pode usá-los para [criar fragmentos de conteúdo](#creating-a-content-fragment).
 
@@ -37,13 +37,17 @@ O [Editor de fragmentos de conteúdo](#opening-the-fragment-editor) fornece vár
 
 >[!NOTE]
 >
+>Esteja ciente das [Práticas recomendadas](/help/assets/content-fragments/content-fragments.md#best-practices) ao trabalhar com os modelos de fragmento de conteúdo e fragmentos de conteúdo.
+
+>[!NOTE]
+>
 >Os fragmentos de conteúdo são armazenados como **Assets**, portanto, são gerenciados principalmente no console **Assets**.
 
 ## Criação de fragmentos de conteúdo {#creating-content-fragments}
 
 ### Criação de um modelo de conteúdo {#creating-a-content-model}
 
-Os [modelos de fragmento de conteúdo](/help/assets/content-fragments/content-fragments-models.md) podem ser ativados e criados antes da criação de fragmentos de conteúdo com conteúdo estruturado.
+Os [modelos de fragmento de conteúdo](/help/assets/content-fragments/content-fragments-models.md) podem ser habilitados e criados antes da criação de fragmentos de conteúdo com conteúdo estruturado.
 
 ### Criação de um fragmento de conteúdo {#creating-a-content-fragment}
 
@@ -123,7 +127,7 @@ Selecione o fragmento para revelar a barra de ferramentas com ações aplicávei
 
 >[!NOTE]
 >
->Muitas delas são [ações padrão para o Assets](/help/assets/manage-assets.md) e/ou o [aplicativo de desktop AEM](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=pt-BR).
+>Muitas delas são [ações padrão para o Assets](/help/assets/manage-assets.md) e/ou o [aplicativo de desktop da AEM](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=pt-BR).
 
 ## Abrir o editor de fragmentos {#opening-the-fragment-editor}
 

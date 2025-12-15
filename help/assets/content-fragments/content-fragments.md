@@ -1,14 +1,14 @@
 ---
 title: Trabalho com fragmentos de conteúdo
-description: Saiba como os Fragmentos de conteúdo no Adobe Experience Manager (AEM) permitem projetar, criar, preparar e usar conteúdo independente de página, ideal para entrega headless.
+description: Saiba como os fragmentos de conteúdo no Adobe Experience Manager (AEM) permitem projetar, criar, preparar e usar conteúdo independente de página, ideal para entrega headless.
 feature: Content Fragments
 role: User
 exl-id: 0ee883c5-0cea-46b7-a759-600b8ea3bc3e
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 11a8181e860c724c817dd549b351df079c8227e2
 workflow-type: tm+mt
-source-wordcount: '1966'
-ht-degree: 69%
+source-wordcount: '2295'
+ht-degree: 59%
 
 ---
 
@@ -37,7 +37,7 @@ Os fragmentos de conteúdo também podem ser entregues no formato JSON, usando o
 
 Esta e as seguintes páginas abordam as tarefas de criação, configuração, manutenção e uso dos fragmentos de conteúdo:
 
-* [Ativar a funcionalidade de fragmento de conteúdo para sua instância](/help/assets/content-fragments/content-fragments-configuration-browser.md)
+* [Habilitar a funcionalidade de fragmento de conteúdo para sua instância](/help/assets/content-fragments/content-fragments-configuration-browser.md)
 * [Modelos de fragmentos do conteúdo](/help/assets/content-fragments/content-fragments-models.md) - habilitando, criando e definindo seus modelos
 * [Gerenciamento de fragmentos de conteúdo](/help/assets/content-fragments/content-fragments-managing.md) - crie fragmentos de conteúdo; em seguida, edite, publique e faça referência
 * [Variações - Criação do conteúdo dos fragmentos](/help/assets/content-fragments/content-fragments-variations.md) — crie o conteúdo do fragmento e variações do Principal
@@ -193,7 +193,7 @@ Os ativos do fragmento de conteúdo são compostos das seguintes partes (direta 
 
    * Nos modos [Rich Text](/help/assets/content-fragments/content-fragments-variations.md#rich-text) e [Markdown](/help/assets/content-fragments/content-fragments-variations.md#markdown), um parágrafo pode ser formatado como um cabeçalho. Nesse caso, ele e o parágrafo a seguir pertencem como uma unidade.
 
-   * Ativam o controle de conteúdo durante a criação da página.
+   * Habilitam o controle de conteúdo durante a criação da página.
 
 * **Ativos inseridos em um fragmento (fragmentos de mídia mista)**
 
@@ -278,7 +278,7 @@ Para criar fragmentos de conteúdo, considere o seguinte:
 
 * **Modelo de conteúdo**
 
-   * É [ativado usando o Navegador de configuração](/help/assets/content-fragments/content-fragments-configuration-browser.md).
+   * É [habilitado usando o Navegador de configuração](/help/assets/content-fragments/content-fragments-configuration-browser.md).
    * É [criado usando Ferramentas](/help/assets/content-fragments/content-fragments-models.md).
    * Obrigatório para [criar um fragmento](/help/assets/content-fragments/content-fragments-managing.md#creating-content-fragments).
    * Define a estrutura de um fragmento (título, elementos de conteúdo, definições de tag).
@@ -300,3 +300,47 @@ Para usar os Fragmentos de conteúdo para a criação de páginas, também é ne
 ## Exemplo de uso {#example-usage}
 
 Um fragmento, com seus elementos e variações, pode ser usado para criar conteúdo coerente para vários canais. Ao projetar o fragmento, você deve considerar o que é usado e onde é usado.
+
+## Práticas recomendadas {#best-practices}
+
+Os fragmentos de conteúdo podem ser usados para formar estruturas complexas. O Adobe oferece recomendações para práticas recomendadas ao definir e usar modelos e fragmentos.
+
+### Mantenha a simplicidade {#keep-it-simple}
+
+Ao modelar conteúdo estruturado no AEM, mantenha as estruturas de conteúdo o mais simples possível para garantir um desempenho sólido do sistema e governança simplificada.
+
+### Número de Modelos {#number-of-models}
+
+Crie quantos modelos de conteúdo forem necessários, mas não mais.
+
+Muitos modelos complicam a governança e podem retardar as consultas do GraphQL. Um pequeno conjunto de modelos, máximo de baixas dezenas, é geralmente suficiente. Se você se aproximar das altas dezenas ou mais, reconsidere sua estratégia de modelagem.
+
+### Aninhamento de modelos e fragmentos (muito importante) {#nesting-models-and-fragments}
+
+Evite o aninhamento profundo ou excessivo de fragmentos de conteúdo usando Referências do fragmento de conteúdo, que permitem que os fragmentos façam referência a outros fragmentos, às vezes em vários níveis.
+
+O uso intenso de referências de Fragmento de conteúdo pode afetar significativamente o desempenho do sistema, a capacidade de resposta da interface do usuário e a execução de consultas do GraphQL. Faça com que o aninhamento seja mantido em não mais de dez níveis.
+
+### Número de Campos e Tipos de Dados por Modelo {#number-of-data-fields-and-types-per-model}
+
+Inclua apenas os campos e tipos de dados que um modelo realmente precisa.
+
+Modelos muito complexos levam a fragmentos muito complexos que podem dificultar a criação e reduzir o desempenho do editor.
+
+### Campos de Rich Text {#rich-text-fields}
+
+Use campos Rich Text (o Tipo de Dados **Texto de várias linhas**) levando em consideração.
+
+Limitar o número de campos Rich Text por modelo. Além disso, a quantidade de texto armazenado em cada fragmento e a quantidade de formatação do HTML. Um conteúdo de rich text muito grande pode afetar negativamente o desempenho do sistema.
+
+### Número de variações {#number-of-variations}
+
+Crie quantas variações de fragmento forem necessárias, mas não mais.
+
+As variações adicionam tempo de processamento a um Fragmento de conteúdo, no ambiente de criação e no momento da entrega também. É recomendável manter o número de variações em um mínimo gerenciável.
+
+Uma prática recomendada é não exceder dez variações por Fragmento de conteúdo.
+
+### Teste antes da produção {#test-before-production}
+
+Na dúvida, crie um protótipo das estruturas de conteúdo desejadas antes de implantá-las na produção. A prova de conceito antecipada, juntamente com testes adequados, técnicos e de aceitação do usuário, podem ajudar a evitar problemas posteriormente ao enfrentar prazos na produção.
