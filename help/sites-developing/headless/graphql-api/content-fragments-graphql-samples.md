@@ -5,7 +5,7 @@ feature: Content Fragments,GraphQL API
 exl-id: 91c5f61c-9c15-4d72-9b9b-0c23f31e7cdc
 solution: Experience Manager, Experience Manager Sites
 role: Developer
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+source-git-commit: 3a38a2f1e753e33d9d3d4d4e7ebc24f16f795966
 workflow-type: tm+mt
 source-wordcount: '1577'
 ht-degree: 82%
@@ -21,7 +21,7 @@ Saiba como usar o GraphQL com o AEM para fornecer conteúdo em headless, explora
 >Esta página deve ser lida junto com:
 >
 >* [Fragmentos de conteúdo](/help/assets/content-fragments/content-fragments.md)
->* [Modelos de fragmentos do conteúdo](/help/assets/content-fragments/content-fragments-models.md)
+>* [Modelos de fragmentos de conteúdo](/help/assets/content-fragments/content-fragments-models.md)
 >* [API GraphQL do AEM para uso com Fragmentos de conteúdo](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)
 
 Para começar a usar consultas do GraphQL e saber como elas funcionam com Fragmentos de conteúdo do AEM, seria de ajuda ver alguns exemplos práticos.
@@ -229,7 +229,7 @@ Este exemplo de consulta é uma consulta simples para retornar o `name` de todas
 
 **Exemplo de consulta**
 
-```xmgraphqll
+```graphql
 query {
   cityList {
     items {
