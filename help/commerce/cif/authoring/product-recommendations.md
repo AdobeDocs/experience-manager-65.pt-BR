@@ -22,4 +22,4 @@ ht-degree: 7%
 
 O Adobe Commerce apresenta um mecanismo de recomendação desenvolvido pela IA do Adobe. Saiba como inserir dinamicamente essas recomendações de produto em uma vitrine do Adobe Experience Manager (AEM).
 
->[!VIDEO](https://video.tv.adobe.com/v/340130/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/342998/?captions=por_br&learn=on)
