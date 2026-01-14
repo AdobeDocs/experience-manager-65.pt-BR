@@ -5,14 +5,14 @@ exl-id: ec47c5f8-d4dd-469f-94df-5ee28f25d696
 solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
-source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
+source-git-commit: 7c1aeec18f35b019a63d0385ada248b26a0df9de
 workflow-type: tm+mt
-source-wordcount: '1088'
-ht-degree: 12%
+source-wordcount: '1087'
+ht-degree: 13%
 
 ---
 
-# Visão geral da versão do GitHub do Commerce integration framework
+# Visão geral da versão do Commerce integration framework GitHub
 
 ## Visão geral dos requisitos de sistema
 
@@ -20,7 +20,7 @@ Revise os requisitos mínimos do sistema na tabela abaixo para a versão do CIF 
 
 | Componente | Requisitos do sistema |
 |:-------|:-----:|
-| complemento CIF | Mínimo: esquemas do Adobe Experience Manager (AEM) 6.5.7, Adobe Commerce 2.3.5 GraphQL |
+| Complemento do CIF | Mínimo: esquemas do GraphQL do Adobe Experience Manager (AEM) 6.5.7, Adobe Commerce 2.3.5 |
 | Componentes principais do CIF | [Requisitos do sistema](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
 | Arquétipo de projeto do AEM | [Requisitos do sistema](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
 
@@ -28,7 +28,7 @@ Revise os requisitos mínimos do sistema na tabela abaixo para a versão do CIF 
 
 | Componente | Versão | Detalhes |
 |:-------|:-----:|---------------------:|
-| complemento CIF | 2021.11.18.00 | [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.11.18.00.zip) |
+| Complemento do CIF | 2021.11.18.00 | [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.11.18.00.zip) |
 | Componentes principais do CIF | 2.4.2 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.4.2) |
 | Site de referência CIF Venia | 2021.12.01 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.12.01) |
 
@@ -40,13 +40,13 @@ Revise os requisitos mínimos do sistema na tabela abaixo para a versão do CIF 
 
 * Os autores podem criar Commerce Product Recommendations ad-hoc usando tipos de recomendações adicionais
 
-* Suporte a cartões-presente na AEM Storefront
+* Suporte a cartões-presente na vitrine do AEM
 
 ## Data de lançamento: outubro de 2021
 
 | Componente | Versão | Detalhes |
 |:-------|:-----:|---------------------:|
-| complemento CIF | 2021.10.20.02 | [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.10.20.02.zip) |
+| Complemento do CIF | 2021.10.20.02 | [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.10.20.02.zip) |
 | Componentes principais do CIF | 2.4.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.4.0) |
 | Site de referência CIF Venia | 2021.11.01 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.11.01) |
 
@@ -54,25 +54,25 @@ Revise os requisitos mínimos do sistema na tabela abaixo para a versão do CIF 
 
 * O complemento CIF é compatível com a versão mais recente do Commerce v2.4.3 com novas APIs e esquemas do GraphQL
 
-* Os autores podem adicionar links para páginas de produtos e catálogos em campos de texto usando o editor de rich text (RTE). Um ícone CIF foi adicionado à barra de ferramentas do RTE, que abre os seletores para pesquisar e selecionar rapidamente o produto ou categoria sem sair do contexto.
+* Os autores podem adicionar links para páginas de produtos e catálogos em campos de texto usando o editor de rich text (RTE). Um ícone do CIF foi adicionado à barra de ferramentas do RTE que abre os seletores para pesquisar e selecionar rapidamente o produto ou categoria sem sair do contexto.
 
-* O carrinho de compras pop-up e o check-out foram substituídos por páginas dedicadas de carrinho de compras e check-out para AEM. Os componentes nessas páginas são criados usando os componentes Peregrine extensíveis do Adobe Commerce
+* O carrinho de compras pop-up e o check-out foram substituídos por páginas dedicadas de carrinho de compras e check-out do AEM. Os componentes nessas páginas são criados usando os componentes Peregrine extensíveis do Adobe Commerce
 
 * Os comerciantes podem ocultar determinadas categorias de catálogo de produtos na navegação usando o back-end do Commerce. O componente principal de Navegação do CIF respeita a configuração de backend de comércio &quot;incluir no menu&quot; para mostrar/ocultar categorias na navegação
 
-* AEM Storefront Venia retorna o erro HTTP 404 se a página de categoria ou produto não for encontrada
+* O AEM Storefront Venia retorna o erro HTTP 404 se a página de categoria ou produto não for encontrada
 
 ## Data de lançamento: setembro de 2021
 
 | Componente | Versão | Detalhes |
 |:-------|:-----:|---------------------:|
-| complemento CIF | 2021.09.27 | [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.09.27.zip) |
+| Complemento do CIF | 2021.09.27 | [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.09.27.zip) |
 | Componentes principais do CIF | 2.2.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.2.0) |
 | Site de referência CIF Venia | 2021.09.23 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.09.23) |
 
 ### Novidades {#what-is-new-september}
 
-* A nova guia &quot;conteúdo de comércio associado&quot; no editor de sites aumenta a eficiência do autor, obtendo rapidamente acesso ao conteúdo de produto AEM relevante para o contexto atual
+* A nova guia &quot;conteúdo de comércio associado&quot; no editor de sites aumenta a eficiência do autor, obtendo rapidamente acesso ao conteúdo de produto relevante do AEM para o contexto atual
 
   ![Conteúdo comercial associado](/help/assets/CIF/associated-commerce-content.png)
 
@@ -94,7 +94,7 @@ Revise os requisitos mínimos do sistema na tabela abaixo para a versão do CIF 
 
 | Componente | Versão | Detalhes |
 |:-------|:-----:|---------------------:|
-| complemento CIF | 09.02.2021 | [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.09.02.zip) |
+| Complemento do CIF | 09.02.2021 | [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.09.02.zip) |
 | Componentes principais do CIF | 2.1.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.1.0) |
 | Site de referência CIF Venia | 2021.08.27 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.08.27) |
 
@@ -110,9 +110,9 @@ Revise os requisitos mínimos do sistema na tabela abaixo para a versão do CIF 
 
 * Não é possível fechar a opção de filtro de categoria depois que ela está aberta
 
-* A propriedade &quot;Texto de chamada para ação&quot; foi quebrada no teaser do produto
+* A propriedade &quot;Call to action text&quot; foi quebrada no teaser do produto
 
-* Erros de JS do CIF durante a etapa de implantação do AEM CS
+* Erros do CIF JS durante a etapa de implantação do AEM CS
 
 * Corrigir acesso a produto bruto para itens de lista de produtos mapeados
 
@@ -120,7 +120,7 @@ Revise os requisitos mínimos do sistema na tabela abaixo para a versão do CIF 
 
 | Componente | Versão | Detalhes |
 |:-------|:-----:|---------------------:|
-| complemento CIF | 07.21.2021 | [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.07.21.zip) |
+| Complemento do CIF | 07.21.2021 | [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.07.21.zip) |
 | Componentes principais do CIF | 2.0.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.0.0) |
 | Site de referência CIF Venia | 07.22.2021 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.07.22) |
 
@@ -131,22 +131,22 @@ Revise os requisitos mínimos do sistema na tabela abaixo para a versão do CIF 
    * Indicador visual para dados de produtos preparados no modo de criação para melhor visibilidade de alterações futuras
    * Novo componente de mapa de site para páginas de conteúdo e comércio
 
-* Suporte para a [Recomendação de produto do Adobe Commerce Sensei, habilitada pelo Adobe Sensei](https://business.adobe.com/br/products/magento/product-recommendations.html) na loja AEM usando recomendações predefinidas ou criadas dinamicamente
+* Suporte para a [Recomendação de Produto da IA do Adobe Commerce, habilitada pela IA do Adobe](https://business.adobe.com/ai/adobe-genai.html) na AEM Storefront usando recomendações predefinidas ou criadas dinamicamente
 
 ## Data de lançamento: junho de 2021
 
 | Componente | Versão | Detalhes |
 |:-------|:-----:|---------------------:|
-| complemento CIF | 2021.06.18 | [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.06.18.zip) |
+| Complemento do CIF | 2021.06.18 | [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.06.18.zip) |
 | Componentes principais do CIF | 1.12.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.12.0) |
 | Site de referência CIF Venia | 06.12.2021 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.06.17) |
 
 ### Novidades {#what-is-new-june}
 
-* Novos tipos de dados de referência de produto e categoria de CIF para Fragmentos de conteúdo (Incl. suporte à interface do seletor de produto/categoria)
+* Novos tipos de dados de referência de produto e categoria do CIF para Fragmentos de conteúdo (inclui suporte à interface do seletor de produto/categoria)
 * Novo componente principal do fragmento de conteúdo do Commerce
-* Pesquisa de comércio de texto completo compatível com o back-end AEM
-* Os Componentes principais do Commerce são compatíveis com a coleta de dados do Adobe Commerce Sensei Recs
+* Pesquisa de comércio de texto completo compatível com o back-end do AEM
+* Os Componentes principais do Commerce são compatíveis com a coleta de dados dos registros de IA da Adobe Commerce
 * URLs otimizados e compatíveis com SEO para páginas de categoria
 * Suporte para cabeçalhos HTTP personalizados por site/configuração
 
@@ -154,7 +154,7 @@ Revise os requisitos mínimos do sistema na tabela abaixo para a versão do CIF 
 
 | Componente | Versão | Detalhes |
 |:-------|:-----:|---------------------:|
-| complemento CIF | 2021.05.26 | [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.05.26.zip) |
+| Complemento do CIF | 2021.05.26 | [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.05.26.zip) |
 | Componentes principais do CIF | 1.11.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.11.0) |
 | Site de referência CIF Venia | 05.2021 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.05.24) |
 
@@ -172,15 +172,15 @@ Revise os requisitos mínimos do sistema na tabela abaixo para a versão do CIF 
 
 | Componente | Versão | Detalhes |
 |:-------|:-----:|---------------------:|
-| complemento CIF | 04.22.2021 | [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.04.22.zip) |
+| Complemento do CIF | 04.22.2021 | [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.04.22.zip) |
 | Componentes principais do CIF | 1.10.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases) |
 | Site de referência CIF Venia | 04.22.2021 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases) |
 
 ### Novidades {#what-is-new-april}
 
-* Suporte para UID de categoria - Isso desbloqueia integrações comerciais de terceiros para sistemas que usam Strings para IDs de categoria
+* Suporte para UID de categoria - desbloqueia integrações comerciais de terceiros para sistemas que usam Strings para IDs de categoria
 
-* Extensão AEM para PWA Studio incl. exemplo de integração
+* Extensão do AEM para PWA Studio incl. exemplo de integração
 
 * Novo componente principal de navegação do CIF que estende o componente principal de navegação do WCM
 
@@ -192,7 +192,7 @@ Revise os requisitos mínimos do sistema na tabela abaixo para a versão do CIF 
 
 | GitHub | Versão | Notas de versão detalhadas |
 |:-------|:-----:|---------------------:|
-| Conector CIF | 1.9.0 | [Notas de versão](https://github.com/adobe/commerce-cif-connector/releases) |
+| CIF Connector | 1.9.0 | [Notas de versão](https://github.com/adobe/commerce-cif-connector/releases) |
 | Componentes principais do CIF | 1.9.0 | [Notas de versão](https://github.com/adobe/aem-core-cif-components/releases) |
 | Site de referência CIF Venia | 2021.03.25 | [Notas de versão](https://github.com/adobe/aem-cif-guides-venia/releases) |
 
@@ -212,7 +212,7 @@ Revise os requisitos mínimos do sistema na tabela abaixo para a versão do CIF 
 
 | GitHub | Versão | Notas de versão detalhadas |
 |:-------|:-----:|---------------------:|
-| Conector CIF | 1.8.0 | [Notas de versão](https://github.com/adobe/commerce-cif-connector/releases) |
+| CIF Connector | 1.8.0 | [Notas de versão](https://github.com/adobe/commerce-cif-connector/releases) |
 | Componentes principais do CIF | 1.8.0 | [Notas de versão](https://github.com/adobe/aem-core-cif-components/releases) |
 | Site de referência CIF Venia | 2021.02.24 | [Notas de versão](https://github.com/adobe/aem-cif-guides-venia/releases) |
 
@@ -232,7 +232,7 @@ Revise os requisitos mínimos do sistema na tabela abaixo para a versão do CIF 
 
 | GitHub | Versão | Notas de versão detalhadas |
 |:-------|:-----:|---------------------:|
-| Conector CIF | 1.7.0 | [Notas de versão](https://github.com/adobe/commerce-cif-connector/releases) |
+| CIF Connector | 1.7.0 | [Notas de versão](https://github.com/adobe/commerce-cif-connector/releases) |
 | Componentes principais do CIF | 1.7.0 | [Notas de versão](https://github.com/adobe/aem-core-cif-components/releases) |
 | Site de referência CIF Venia | 2021.02.02 | [Notas de versão](https://github.com/adobe/aem-cif-guides-venia/releases) |
 
@@ -242,6 +242,6 @@ Revise os requisitos mínimos do sistema na tabela abaixo para a versão do CIF 
 
 ### O que foi melhorado  {#what-is-improved-january}
 
-* Enviar dados do usuário após autenticação para a Camada de dados do cliente Adobe.
+* Enviar dados do usuário após autenticação para a Camada de dados de clientes Adobe.
 
 * Várias correções de erros.

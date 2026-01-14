@@ -7,7 +7,7 @@ role: User
 exl-id: 5eff4a0f-30b1-4753-ad0b-002656eed972
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 5aff321eb52c97e076c225b67c35e9c6d3371154
+source-git-commit: 7c1aeec18f35b019a63d0385ada248b26a0df9de
 workflow-type: tm+mt
 source-wordcount: '1581'
 ht-degree: 1%
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/smart-tags.html?lang=pt-BR) |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/smart-tags.html?lang=en) |
 | AEM 6.5 | Este artigo |
 
 As organizações que lidam com ativos digitais usam cada vez mais vocabulário controlado por taxonomia em metadados de ativos. Basicamente, ele inclui uma lista de palavras-chave que funcionários, parceiros e clientes normalmente usam para consultar e pesquisar ativos digitais de uma classe específica. Marcar ativos com um vocabulário controlado por taxonomia garante que eles sejam facilmente identificados e recuperados.
@@ -31,7 +31,7 @@ Para que o Serviço de conteúdo inteligente aplique as tags certas, treine-o pa
 
 Depois que uma tag é treinada e preparada, o serviço agora pode aplicá-las a ativos por meio de um fluxo de trabalho de marcação.
 
-Em segundo plano, o Serviço de conteúdo inteligente usa a estrutura da IA do Adobe Sensei para treinar o algoritmo de reconhecimento de imagem de acordo com sua estrutura de tags e sua taxonomia comercial. Essa inteligência de conteúdo é usada para aplicar tags relevantes em um conjunto diferente de ativos.
+Em segundo plano, o Serviço de conteúdo inteligente usa a estrutura da IA do Adobe para treinar o algoritmo de reconhecimento de imagem de acordo com sua estrutura de tags e sua taxonomia comercial. Essa inteligência de conteúdo é usada para aplicar tags relevantes em um conjunto diferente de ativos.
 
 O Serviço de Conteúdo Inteligente é um serviço de nuvem hospedado em [!DNL Adobe Developer Console]. Para usá-lo no [!DNL Adobe Experience Manager], o administrador do sistema deve integrar sua implantação do [!DNL Experience Manager] com o [!DNL Adobe Developer Console].
 
@@ -133,7 +133,7 @@ Você pode executar o fluxo de trabalho de marcação periodicamente ou sempre q
 
 Você pode ativar o Serviço de conteúdo inteligente para marcar ativos periodicamente em uma pasta. Abra a página de propriedades da sua pasta de ativos, selecione **[!UICONTROL Habilitar Tags inteligentes]** na guia **[!UICONTROL Detalhes]** e salve as alterações.
 
-Depois que essa opção é selecionada para uma pasta, o Serviço de conteúdo inteligente marca automaticamente os ativos dentro da pasta. Por padrão, o workflow de marcação é executado todos os dias às 12h.
+Depois que essa opção é selecionada para uma pasta, o Serviço de conteúdo inteligente marca automaticamente os ativos dentro da pasta. Por padrão, o fluxo de trabalho de marcação é executado todos os dias às 12:00 AM.
 
 ### Marcação sob demanda {#on-demand-tagging}
 
@@ -200,4 +200,4 @@ Também é possível atribuir uma classificação mais alta a uma tag para aumen
 >* [Visão geral e como treinar Tags Inteligentes](enhanced-smart-tags.md)
 >* [Configurar marcação inteligente](config-smart-tagging.md)
 >* [Solução de problemas de marcas inteligentes para credenciais do OAuth](config-oauth.md)
->* [Tutorial em vídeo sobre marcas inteligentes](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html?lang=pt-BR)
+>* [Tutorial em vídeo sobre marcas inteligentes](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)

@@ -1,13 +1,13 @@
 ---
 title: Organize seus ativos digitais
-description: Organize seus ativos digitais, imagens, arquivos, pastas e assim por diante usando o Experience Manager.
+description: Organize ativos digitais, imagens, arquivos, pastas e assim por diante usando o Experience Manager.
 contentOwner: AG
 role: User
 feature: Asset Management,Search
 exl-id: d6f815b5-e4fc-4f8c-a6c1-9e50035ab9f2
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 7c1aeec18f35b019a63d0385ada248b26a0df9de
 workflow-type: tm+mt
 source-wordcount: '795'
 ht-degree: 2%
@@ -18,10 +18,10 @@ ht-degree: 2%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| Adobe Experience Manager (AEM) as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/organize-assets.html?lang=pt-BR) |
+| Adobe Experience Manager (AEM) as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/organize-assets.html?lang=en) |
 | AEM 6.5 | Este artigo |
 
-Todos os ativos digitais, metadados e conteúdo dos documentos do Microsoft® Office e PDF são extraídos e tornados pesquisáveis. A pesquisa permite uma filtragem sofisticada de ativos e respeita totalmente as permissões apropriadas. Os metadados são abordados em detalhes nos metadados no Digital Asset Management.
+Todos os ativos digitais, metadados e conteúdo dos documentos do Microsoft® Office e do PDF são extraídos e tornados pesquisáveis. A pesquisa permite uma filtragem sofisticada de ativos e respeita totalmente as permissões apropriadas. Os metadados são abordados em detalhes nos metadados no Digital Asset Management.
 
 O [!DNL Experience Manager Assets] oferece suporte a várias formas de organização de conteúdo. Você pode organizá-los de maneira hierárquica usando pastas ou de maneira não ordenada e ad hoc, usando, por exemplo, tags. Os usuários podem editar tags no Editor de ativos DAM, onde subativos, representações e metadados são exibidos.
 
@@ -47,13 +47,13 @@ A maneira mais básica de organizar ativos é salvá-los em pastas. É análogo 
 
 ## Organizar ativos usando tags {#use-tags-to-organize-assets}
 
-Usando tags como metadados, você pode pesquisar ativos facilmente, criar coleções usando os resultados da pesquisa, aumentar a classificação de pesquisa para alguns ativos e usar algoritmos de inteligência artificial do Adobe Sensei para a descoberta de ativos.
+Usando tags como metadados, você pode pesquisar ativos facilmente, criar coleções usando os resultados da pesquisa, aumentar a classificação de pesquisa para alguns ativos e usar algoritmos de inteligência artificial da IA do Adobe para descoberta de ativos.
 
-O [!DNL Adobe Experience Manager Assets] usa um algoritmo de autoaprendizado para criar marcas altamente descritivas que permitem encontrar o ativo correto com apenas alguns cliques. A marcação inteligente usa o Adobe Sensei, a inteligência artificial de Adobe e a estrutura de aprendizado de máquina, que podem ser treinadas para reconhecer e aplicar tags padrão e específicas de negócios a imagens. As Tags inteligentes também podem identificar conteúdo, palavras individuais ou frases e aplicar automaticamente tags descritivas aos ativos
+O [!DNL Adobe Experience Manager Assets] usa um algoritmo de autoaprendizado para criar marcas altamente descritivas que permitem encontrar o ativo correto com apenas alguns cliques. A marcação inteligente usa a IA do Adobe, a inteligência artificial e a estrutura de aprendizado de máquina da Adobe, que podem ser treinadas para reconhecer e aplicar tags padrão e específicas de negócios a imagens. As Tags inteligentes também podem identificar conteúdo, palavras individuais ou frases e aplicar automaticamente tags descritivas aos ativos
 
 Para obter mais informações, consulte os seguintes artigos:
 
-* [Sobre tags no Experience Manager](/help/sites-authoring/tags.md)
+* [Sobre tags na Experience Manager](/help/sites-authoring/tags.md)
 * [Editar metadados de ativos](metadata.md)
 * [Tags inteligentes aprimoradas no Assets](enhanced-smart-tags.md)
 
@@ -79,4 +79,4 @@ A padronização do uso de metadados, da nomeação de arquivos e da estrutura d
 >* [Perfis para processar metadados, imagens e vídeos](processing-profiles.md).
 >* [Perfis de metadados](/help/assets/metadata-config.md#metadata-profiles).
 >* [Perfis de vídeo](video-profiles.md).
->* [perfis de imagem do Dynamic Media](image-profiles.md).
+>* [Perfis de imagem do Dynamic Media](image-profiles.md).

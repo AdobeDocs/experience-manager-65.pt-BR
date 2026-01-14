@@ -5,16 +5,16 @@ role: Admin
 feature: Tagging,Smart Tags
 exl-id: 9f68804f-ba15-4f83-ab1b-c249424b1396
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 0b90fdd13efc5408ef94ee1966f04a80810b515e
+source-git-commit: 7c1aeec18f35b019a63d0385ada248b26a0df9de
 workflow-type: tm+mt
-source-wordcount: '2129'
+source-wordcount: '2130'
 ht-degree: 13%
 
 ---
 
 # Preparar [!DNL Assets] para marcação inteligente {#configure-asset-tagging-using-the-smart-content-service}
 
-Antes de começar a marcar seus ativos usando os Serviços de Conteúdo Inteligente, integre o [!DNL Experience Manager Assets] ao Adobe Developer Console para usar o serviço inteligente do [!DNL Adobe Sensei]. Depois de configurado, treine o serviço usando algumas imagens e uma tag.
+Antes de começar a marcar seus ativos usando os Serviços de Conteúdo Inteligente, integre o [!DNL Experience Manager Assets] ao Adobe Developer Console para usar o serviço inteligente do [!DNL Adobe AI]. Depois de configurado, treine o serviço usando algumas imagens e uma tag.
 
 <!--
 >[!NOTE]
@@ -137,7 +137,7 @@ Para obter detalhes sobre como fazer essa configuração, consulte a documentaç
    | Título | Adicione o título da conta IMS de configuração. |
    | Servidor de autorização | Adicionar `https://ims-na1.adobelogin.com` |
    | ID do cliente | A ser fornecido por meio do [console Adobe Developer](https://developer.adobe.com/console/). |
-   | Senha do cliente | A ser fornecido por meio do [console Adobe Developer](https://developer.adobe.com/console/). |
+   | Segredo do cliente | A ser fornecido por meio do [console Adobe Developer](https://developer.adobe.com/console/). |
    | Escopo | A ser fornecido por meio do [console Adobe Developer](https://developer.adobe.com/console/). |
    | ID da organização | A ser fornecido por meio do [console Adobe Developer](https://developer.adobe.com/console/). |
 
@@ -151,7 +151,7 @@ Para obter detalhes sobre como fazer essa configuração, consulte a documentaç
 >[!CAUTION]
 >
 >Previously, configurations that were made with JWT Credentials are now subject to deprecation in the Adobe Developer Console. You cannot create new JWT credentials after June 3, 2024. Such configurations can no longer be created or updated, but can be migrated to OAuth configurations.
-> See [Setting up IMS integrations for AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service)
+> See [Setting up IMS integrations for AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service)
 >See [Steps to configure OAuth for on-premise users](#config-oauth-onprem)
 > See [Troubleshooting smart tags for OAuth credentials](#config-smart-tagging.md)
 -->
@@ -291,7 +291,7 @@ To use Smart Content Service APIs, create an integration in Adobe Developer Cons
 >[!CAUTION]
 >
 >Previously, configurations that were made with JWT Credentials are now subject to deprecation in the Adobe Developer Console. You cannot create new JWT credentials after June 3, 2024. Such configurations can no longer be created or updated, but can be migrated to OAuth configurations.
-> See [Setting up IMS integrations for AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service)
+> See [Setting up IMS integrations for AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service)
 >See [Steps to configure OAuth for on-premise users](#config-oauth-onprem)
 > See [Troubleshooting smart tags for OAuth credentials](#config-smart-tagging.md)
 
@@ -434,7 +434,7 @@ Você pode ativar o Serviço de conteúdo inteligente para treinar periodicament
 
 ![habilitar_marcas_inteligentes](assets/enable_smart_tags.png)
 
-Depois que essa opção é selecionada para uma pasta, o [!DNL Experience Manager] executa automaticamente um fluxo de trabalho de treinamento para treinar o Serviço de Conteúdo Inteligente nos ativos da pasta e suas marcas. Por padrão, o fluxo de trabalho de treinamento é executado semanalmente às 12h30 aos sábados.
+Depois que essa opção é selecionada para uma pasta, o [!DNL Experience Manager] executa automaticamente um fluxo de trabalho de treinamento para treinar o Serviço de Conteúdo Inteligente nos ativos da pasta e suas marcas. Por padrão, o fluxo de trabalho de treinamento é executado semanalmente às 12:30 aos sábados.
 
 ### Treinamento sob demanda {#on-demand-training}
 
@@ -482,4 +482,4 @@ Para verificar se o Serviço de conteúdo inteligente é treinado em suas tags n
 >
 >* [Visão geral e como treinar Tags Inteligentes](enhanced-smart-tags.md)
 >* [Solução de problemas de marcas inteligentes para credenciais do OAuth](config-oauth.md)
->* [Tutorial em vídeo sobre marcas inteligentes](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/assets/metadata/image-smart-tags)
+>* [Tutorial em vídeo sobre marcas inteligentes](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/metadata/image-smart-tags)

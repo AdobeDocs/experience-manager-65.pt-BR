@@ -11,7 +11,7 @@ role: User, Admin
 mini-toc-levels: 3
 exl-id: b290fac2-7259-45d7-b733-70419d632b07
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 54b508809733ed86798558aee50f8c7b5de00af9
+source-git-commit: 7c1aeec18f35b019a63d0385ada248b26a0df9de
 workflow-type: tm+mt
 source-wordcount: '3730'
 ht-degree: 8%
@@ -99,7 +99,7 @@ A tabela a seguir identifica os perfis de codificação de práticas recomendada
 
 ## Sobre o uso de recorte inteligente em perfis de vídeo {#about-smart-crop-video}
 
-Recorte inteligente para vídeo - um recurso opcional disponível em Perfis de vídeo - é uma ferramenta que usa o poder da inteligência artificial do Adobe Sensei. Ele detecta e recorta automaticamente o ponto focal em qualquer vídeo adaptável ou progressivo que você tenha carregado, independentemente do tamanho.
+O Corte inteligente para vídeo (um recurso opcional disponível em Perfis de vídeo) é uma ferramenta que usa o potencial da inteligência artificial do Adobe AI. Ele detecta e recorta automaticamente o ponto focal em qualquer vídeo adaptável ou progressivo que você tenha carregado, independentemente do tamanho.
 
 Os formatos de vídeo compatíveis com o corte inteligente incluem MP4, MKV, MOV, AVI, FLV e WMV.
 
@@ -109,7 +109,7 @@ O tamanho máximo suportado do arquivo de vídeo para corte inteligente é o seg
 * 30 quadros por segundo (FPS).
 * Tamanho de arquivo de 300 MB.
 
-O Adobe Sensei é limitado a 9000 quadros. Isto é, cinco minutos a 30 FPS. Se o vídeo tiver um FPS mais alto, a duração máxima de vídeo compatível diminui. Por exemplo, um vídeo de 60 FPS deve ter dois minutos e meio de duração para ser compatível com o Adobe Sensei e o recorte inteligente.
+A IA do Adobe é limitada a 9000 quadros. Isto é, cinco minutos a 30 FPS. Se o vídeo tiver um FPS mais alto, a duração máxima de vídeo compatível diminui. Por exemplo, um vídeo de 60 FPS deve ter dois minutos e meio de duração para ser compatível com a IA do Adobe e o recorte inteligente.
 
 ![Recorte inteligente para vídeo](assets/smart-crop-video.png)
 
