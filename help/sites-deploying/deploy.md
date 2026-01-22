@@ -10,7 +10,7 @@ exl-id: 3df0662a-0768-4b56-8b94-c517657b4bd9
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
+source-git-commit: 36cb540cda7faeca5949028c9c14ab2ecf860402
 workflow-type: tm+mt
 source-wordcount: '1779'
 ht-degree: 3%
@@ -140,7 +140,7 @@ Enquanto as instâncias de produção são executadas em máquinas dedicadas que
 
 Para fins de familiarização e para desenvolver no AEM, é comum usar uma instância instalada em seu computador local que executa o Apple OS X ou versões de desktop do Microsoft® Windows ou Linux®.
 
-No lado do cliente, o AEM funciona com todos os navegadores modernos (**Microsoft® Edge**, **Internet Explorer** 11, **Chrome &#x200B;** 51+**&#x200B; &#x200B;**, **Firefox &#x200B;** 47+, **Safari** 8+) nos sistemas operacionais desktop e tablet. Consulte [Plataformas de Clientes com Suporte](/help/sites-deploying/technical-requirements.md#supported-client-platforms) para obter detalhes.
+No lado do cliente, o AEM funciona com todos os navegadores modernos (**Microsoft® Edge**, **Internet Explorer** 11, **Chrome **51+** **, **Firefox **47+, **Safari** 8+) nos sistemas operacionais desktop e tablet. Consulte [Plataformas de Clientes com Suporte](/help/sites-deploying/technical-requirements.md#supported-client-platforms) para obter detalhes.
 
 ### Obtendo o software {#getting-the-software}
 
@@ -160,7 +160,7 @@ Na seção a seguir, descrevemos a **instalação independente**. Para obter det
 
    Local de instalação do UNIX®: **/opt/aem**
 
-   Local de instalação do Windows: **`C:\Program Files\aem`**
+   Local de instalação do Windows: **`C:\aem`**
 
    Da mesma forma, é comum instalar instâncias de amostra em uma pasta logo na área de trabalho. Em qualquer caso, a Adobe se refere a esse local genericamente como:
 
@@ -286,7 +286,7 @@ O AEM inicia e redireciona automaticamente o navegador da Web para a página apr
 
 Depois de fazer logon, você terá acesso ao AEM. Para obter mais informações, dependendo da sua função, consulte o seguinte:
 
-* [Criação  &#x200B;](/help/sites-authoring/first-steps.md)
+* [Criação](/help/sites-authoring/first-steps.md)
 * [Administração](/help/sites-administering/home.md)
 * [Desenvolver](/help/sites-developing/getting-started.md)
 * [Gerenciamento](/help/managing/best-practices.md)
