@@ -5,22 +5,25 @@ feature: Transaction Reports
 exl-id: 77e95631-6b0d-406e-a1b8-78f8d9cceb63
 role: Admin, User, Developer
 solution: "Experience Manager, Experience Manager Forms"
-source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
+source-git-commit: eb059bc4c9f4b5064b8038a2b037670086a9139b
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '632'
 ht-degree: 0%
 
 ---
 
+
 # Ativação e visualização de relatórios de transações para o AEM Forms no JEE {#transaction-reports-overview}
 
-<!--Transaction reports in AEM Forms on JEE let you keep a count of all transactions taken place on your AEM Forms deployment. The objective is to provide information about product usage and helps business stakeholders understand their digital processing volumes. Examples of a transaction include:
+<span> O recurso de Relatório de Transações foi introduzido para o AEM Forms no JEE a partir do AEM Forms 6.5.20.0. Este recurso está desabilitado por padrão e pode ser habilitado na Interface do Usuário do Administrador.</span>
 
-* Submission of a document
-* Rendition of a document
-* Conversion of a document from one file format to another 
+Os relatórios de transações no AEM Forms no JEE permitem que você mantenha uma contagem de todas as transações realizadas na implantação do AEM Forms. O objetivo é fornecer informações sobre o uso do produto e ajudar as partes interessadas a entender seus volumes de processamento digital. Exemplos de uma transação incluem:
 
-For more information on what is considered a transaction, see [Billable APIs](../../forms/using/transaction-reports-billable-apis-jee.md). Transaction log helps you to gain information about the number of documents submitted, rendered, and converted.-->
+* Apresentação de um documento
+* Representação de um documento
+* Conversão de um documento de um formato de arquivo para outro
+
+Para obter mais informações sobre o que é considerado uma transação, consulte [APIs faturáveis](../../forms/using/transaction-reports-billable-apis-jee.md).
 
 ## Habilitar relatório de transações {#enable-transaction-reporting}
 
@@ -53,7 +56,7 @@ O relatório de transações via painel fornece o número total de contagens de 
 1. Navegue até o `/adminui` no seu AEM Forms no JEE, por exemplo: `http://10.13.15.08:8080/adminui`.
 1. Fazer logon como **Administrador**.
 1. Clique em Monitor de integridade.
-1. Navegue até a guia **Repórter de Transações**, clique em **Calcular Total de Transações**. Agora você verá que um gráfico de pizza representa o número de PDF forms - enviados, renderizados ou convertidos.
+1. Navegue até a guia **Repórter de Transações**, clique em **Calcular Total de Transações**. Agora você verá que um gráfico de pizza representa o número de PDF forms - enviadas, renderizadas ou convertidas.
 
 ![exemplo-transação-relatório-jee](assets/transaction-piechart.png)
 
