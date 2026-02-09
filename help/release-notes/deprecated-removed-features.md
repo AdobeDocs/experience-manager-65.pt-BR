@@ -5,9 +5,9 @@ exl-id: d9b6140a-c37d-4b90-a60c-01f471d65621
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+source-git-commit: 30137e36b60c3ada70240e1442390f9fdd26f3b9
 workflow-type: tm+mt
-source-wordcount: '1765'
+source-wordcount: '1771'
 ht-degree: 13%
 
 ---
@@ -61,6 +61,7 @@ Clientes devem analisar se usam o recurso/funcionalidade em sua implementação 
 | Forms | A integração do AEM Forms com o AEM Mobile está obsoleta. | Não há Substituição disponível. |  |
 | Desenvolvedores | Editor de diálogo da interface clássica no CRXDE Lite. A Adobe não planeja aprimorar ainda mais o Editor de diálogo da interface clássica fornecido como parte da distribuição (Início rápido) | Nenhuma substituição disponível. |  |
 | Desenvolvedores | Biblioteca cliente Lodash/underscore. A Adobe não planeja fazer mais manutenção e atualização da biblioteca do cliente Lodash/underscore fornecida como parte da distribuição (Início rápido). | A Adobe recomenda que os clientes que ainda exigem Lodash/sublinhado para seu código o adicionem à base de código do projeto. |  |
+| [!DNL Foundation] | Suporte para com.adobe.granite.oauth.server | Integração do Adobe IMS |  |
 
 ## Recursos removidos {#removed-features}
 
