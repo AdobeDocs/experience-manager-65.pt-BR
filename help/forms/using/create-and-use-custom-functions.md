@@ -3,9 +3,10 @@ title: Criar e adicionar funções personalizadas em um Formulário adaptável
 description: O AEM Forms é compatível com funções personalizadas que permitem aos usuários criar e usar suas próprias funções no editor de regras.
 feature: Adaptive Forms, Foundation Components
 role: Admin, User, Developer
-source-git-commit: f63dcd7edca640cee47c8f615d1675ef5052953c
+exl-id: 14a52bc1-c1b4-4a12-b8e1-54523e5f30bd
+source-git-commit: a0ef9925d1bcb84ea5bf733221875d0322cc6df1
 workflow-type: tm+mt
-source-wordcount: '1084'
+source-wordcount: '1116'
 ht-degree: 0%
 
 ---
@@ -13,6 +14,10 @@ ht-degree: 0%
 # Funções personalizadas no Adaptive Forms
 
 ## Introdução
+
+>[!NOTE]
+>
+> As funções personalizadas devem ser compatíveis com o ECMAScript 5 (ES5). O Foundation Forms é compatível apenas com ES5; o uso de versões mais recentes do ECMAScript (ES6 e superior) não é compatível e pode resultar em erros ou comportamento inesperado.
 
 O AEM Forms 6.5 apresentou a capacidade de definir funções do JavaScript que podem ser usadas na definição de regras de negócios complexas usando o editor de regras. O AEM Forms fornece várias dessas funções personalizadas prontas para uso, mas você terá a necessidade de definir suas próprias funções personalizadas e usá-las em vários formulários.
 
@@ -87,7 +92,7 @@ Mostra os parâmetros usados pela função. Uma função pode ter várias tags d
 Sintaxe: `@return {type}`
 Como alternativa, você pode usar `@returns {type}`.
 Adiciona informações sobre a função, como seu objetivo.
-{type} representa o tipo de retorno da função. Os tipos de retorno permitidos são:
+  {type} representa o tipo de retorno da função. Os tipos de retorno permitidos são:
 
    1. string
    1. número
