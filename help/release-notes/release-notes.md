@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: a750a6093ae8ba6b43c46af52077ed3773d59a20
+source-git-commit: 71e85d8d140d0d478c9ef27daf90960747df295f
 workflow-type: tm+mt
-source-wordcount: '9595'
+source-wordcount: '9567'
 ht-degree: 5%
 
 ---
@@ -637,7 +637,7 @@ Para garantir a operação correta, você deve adicionar as seguintes propriedad
 
 ### Problema conhecido do AEM Sites {#known-issues-aem-sites-6524}
 
-A visualização dos fragmentos de conteúdo falha devido à proteção do DoS para uma grande árvore de fragmentos. Consulte o artigo [KB sobre as opções de configuração padrão do GraphQL Query Executor](https://experienceleague.adobe.com/pt-br/docs/experience-cloud-kcs/kbarticles/ka-23945) (SITES-17934)
+A visualização dos fragmentos de conteúdo falha devido à proteção do DoS para uma grande árvore de fragmentos. Consulte o artigo [KB sobre as opções de configuração padrão do GraphQL Query Executor](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-23945) (SITES-17934)
 
 ### Problemas conhecidos do AEM Forms {#known-issues-aem-forms-6524}
 
@@ -652,9 +652,10 @@ A visualização dos fragmentos de conteúdo falha devido à proteção do DoS p
 
 #### Problemas com Hotfixes disponíveis {#aem-forms-issues-with-hotfixes}
 
+<!-- 
 >[!NOTE]
 >
->Evite atualizar para o Service Pack 6.5.24.0 por problemas sem um hotfix disponível. Pode levar a erros inesperados. Atualize para o Service Pack 6.5.24.0 somente após os hotfixes necessários serem lançados.
+>Avoid upgrading to Service Pack 6.5.24.0 for issues without an available hotfix. It may lead to unexpected errors. Upgrade to Service Pack 6.5.24.0 only after the required hotfixes are released. -->
 
 Os seguintes problemas têm uma correção disponível para download e instalação. Você pode [baixar e instalar o Hotfix](/help/release-notes/aem-forms-hotfix.md) para resolver estes problemas:
 
@@ -676,7 +677,7 @@ Os seguintes problemas têm uma correção disponível para download e instalaç
    2. Exclua o pacote com o nome `com.adobe.granite.ui.commons-5.10.26.jar`.
    3. Reinicie o servidor do AEM.
 
-* **FORMS-23703** Quando a regra `contains` é configurada sem um valor padrão, a validação do Server Side para um formulário adaptável falha. Você pode instalar a última versão do [AEM Forms 6.5.24.0 Service Pack](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases) para corrigir o problema.
+* **FORMS-23703** Quando a regra `contains` é configurada sem um valor padrão, a validação do Server Side para um formulário adaptável falha. Você pode instalar a última versão do [AEM Forms 6.5.24.0 Service Pack](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases) para corrigir o problema.
 
 * Os conectores do modelo de dados de formulário podem não ser autenticados porque as palavras-chave e o padrão regex necessários não são permitidos por padrão. Para resolver o problema, adicione o seguinte por meio do Gerenciador de Configurações (`/system/console/configmgr`):
 
@@ -685,7 +686,7 @@ Os seguintes problemas têm uma correção disponível para download e instalaç
 
      >[!VIDEO](https://video.tv.adobe.com/v/3479697)
 
-* A **conversão de FORMS-23979** de HTML para PDF (PDFG) pode apresentar tempos limite intermitentes. Posteriormente, uma versão mais recente do complemento do Forms para SP24 foi lançada, que inclui a correção. Se você encontrar esse problema, atualize seu ambiente para o [complemento mais recente do Forms lançado para 6.5.24.0](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases).
+* A **conversão de FORMS-23979** de HTML para PDF (PDFG) pode apresentar tempos limite intermitentes. Posteriormente, uma versão mais recente do complemento do Forms para SP24 foi lançada, que inclui a correção. Se você encontrar esse problema, atualize seu ambiente para o [complemento mais recente do Forms lançado para 6.5.24.0](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases).
 
 * **FORMS-23717** Depois de atualizar para o **AEM Forms6.5.24.0**, o `server.log` e o `error.log` podem ser inundados com mensagens de AVISO repetidas, como *Falha na criação de fábrica do analisador seguro* ou *Não há suporte para o atributo de segurança ...*. Os logs podem aumentar em cerca de **5-10 linhas por segundo** (centenas de MB por hora), o que pode preencher o disco e bloquear a implantação da produção. **Correção:** Incluído no AEM Forms **6.5.25.0**. **Até lá:**
 
@@ -710,5 +711,5 @@ Esses sites estão disponíveis somente para clientes do. Se você for cliente e
 >[!MORELIKETHIS]
 >
 >* [[!DNL Experience Manager] página do produto](https://business.adobe.com/br/products/experience-manager/adobe-experience-manager.html)
->* [[!DNL Experience Manager] Documentação do 6.5](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65)
+>* [[!DNL Experience Manager] Documentação do 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65)
 >* [Inscreva-se para obter atualizações de produto prioritárias da Adobe](https://www.adobe.com/subscription/priority-product-update.html)
