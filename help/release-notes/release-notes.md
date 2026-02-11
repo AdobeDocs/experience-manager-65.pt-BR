@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: a0ef9925d1bcb84ea5bf733221875d0322cc6df1
+source-git-commit: a750a6093ae8ba6b43c46af52077ed3773d59a20
 workflow-type: tm+mt
-source-wordcount: '9732'
+source-wordcount: '9595'
 ht-degree: 5%
 
 ---
@@ -637,30 +637,30 @@ Para garantir a operação correta, você deve adicionar as seguintes propriedad
 
 ### Problema conhecido do AEM Sites {#known-issues-aem-sites-6524}
 
-A visualização dos fragmentos de conteúdo falha devido à proteção do DoS para uma grande árvore de fragmentos. Consulte o artigo [KB sobre as opções de configuração padrão do GraphQL Query Executor](https://experienceleague.adobe.com/pt-br/docs/experience-cloud-kcs/kbarticles/ka-23945) (SITES-17934)
+A visualização dos fragmentos de conteúdo falha devido à proteção do DoS para uma grande árvore de fragmentos. Consulte o artigo [KB sobre as opções de configuração padrão do GraphQL Query Executor](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-23945) (SITES-17934)
 
 ### Problemas conhecidos do AEM Forms {#known-issues-aem-forms-6524}
+
+* **FORMS-14521** Se um usuário tentar visualizar um rascunho de carta com dados XML salvos, ele ficará preso no estado `Loading` para algumas cartas específicas.
+* **FORMS-16603** Na Visualização de Impressão da Interface do Usuário do Agente de Comunicações Interativas, alguns valores calculados não são exibidos corretamente.
+* **FORMS-15681** Quando a correspondência é exibida na Visualização de impressão, o conteúdo é alterado. Ou seja, alguns espaços desaparecem e determinadas letras são substituídas por `x`.
+* **FORMS-15428**: depois de atualizar para o AEM Forms Service Pack 20 (6.5.20.0) com o Complemento do Forms, as configurações que dependem do Adobe Analytics Cloud Service herdado usando a autenticação baseada em credencial param de funcionar. Esse problema impedia que as regras do Analytics fossem executadas corretamente.
+* **FORMS-16557** Na Visualização de Impressão da Interface do Usuário do Agente de Comunicações Interativas, o símbolo de moeda (como cifrão $) é exibido de forma inconsistente para todos os valores de campo. Aparece para valores até 999, mas está ausente para valores de 1000 e superiores.
+* **FORMS-16575** Quaisquer modificações no XDP de fragmentos de layout aninhados em uma Comunicação Interativa não são refletidas no editor IC.
+* **FORMS-21378** Quando a validação no lado do servidor (SSV) estiver habilitada, os envios de formulários poderão falhar. Se você encontrar esse problema, entre em contato com o Suporte da Adobe para obter assistência.
+* **FORMS-23722** (Anexos de arquivo ausentes em Atribuir Tarefa): quando um formulário com um campo **Anexo de Arquivo** que usa bindref é enviado a um Fluxo de Trabalho do AEM que usa uma etapa **Atribuir Tarefa**, os anexos não aparecem quando a tarefa é aberta da Caixa de Entrada. Os arquivos são salvos corretamente no repositório, mas a interface do usuário da etapa Atribuir tarefa não exibe os anexos.
+
+#### Problemas com Hotfixes disponíveis {#aem-forms-issues-with-hotfixes}
 
 >[!NOTE]
 >
 >Evite atualizar para o Service Pack 6.5.24.0 por problemas sem um hotfix disponível. Pode levar a erros inesperados. Atualize para o Service Pack 6.5.24.0 somente após os hotfixes necessários serem lançados.
 
-#### Problemas com Hotfixes disponíveis {#aem-forms-issues-with-hotfixes}
-
 Os seguintes problemas têm uma correção disponível para download e instalação. Você pode [baixar e instalar o Hotfix](/help/release-notes/aem-forms-hotfix.md) para resolver estes problemas:
-
-* **FORMS-20203**: quando um usuário atualiza a estrutura do Struts da versão 2.5.x para 6.x, a interface do usuário Políticas no AEM Forms não exibe todas as configurações, como a opção de adicionar uma marca d&#39;água.
-
-* **FORMS-20360**: depois de atualizar para o AEM Forms Service Pack 6.5.24.0, o serviço de conversão ImageToPDF falha com o erro:
-  ```17:15:44,468 ERROR [com.adobe.pdfg.GeneratePDFImpl] (default task-49) ALC-PDG-001-000-ALC-PDG-011-028-Error occurred while converting the input image file to PDF. com/adobe/internal/pdftoolkit/core/encryption/EncryptionImp```
-
-* **FORMS-20478**: ao tentar converter arquivos TIFF do tipo 7/8 para o PDF, o processo de conversão falha com o erro &quot;Falha na conversão ALC-PDG-001-000-Image2Pdf, causada por: com/sun/image/codec/jpeg/JPEGCodec&quot; e &quot;ALC-PDG-016-003-Ocorreu um erro desconhecido/inesperado durante o pós-processamento do PDF.&quot; O sistema tenta novamente usando o decodificador TM ImageIO TIFF, mas não conclui o trabalho.
-
-* **FORMS-14521**: se um usuário tentar visualizar um rascunho de carta com dados XML salvos, ele ficará preso no estado `Loading` para algumas cartas específicas.
 
 * O AEM Forms agora inclui uma atualização da versão do Struts 2.5.33 para 6.x para o componente de formulários. Essa atualização fornece alterações do Struts que não foram incluídas no SP24. O suporte foi adicionado por meio de um [Hotfix](/help/release-notes/aem-forms-hotfix.md) que você pode baixar e instalar para adicionar suporte à versão mais recente do Struts.
 
-* Depois de instalar o AEM Forms JEE Service Pack 21 (6.5.21.0), se você encontrar entradas duplicadas de Geode jars `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)` na pasta `<AEM_Forms_Installation>/lib/caching/lib` (FORMS-14926), execute as seguintes etapas para resolver o problema:
+* **FORMS-14926** Depois de instalar o AEM Forms JEE Service Pack 21 (6.5.21.0), se você encontrar entradas duplicadas de Geode jars `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)` na pasta `<AEM_Forms_Installation>/lib/caching/lib`, execute as seguintes etapas para resolver o problema:
 
    1. Pare os localizadores, se eles estiverem em execução.
    2. Pare o servidor do AEM.
@@ -669,32 +669,14 @@ Os seguintes problemas têm uma correção disponível para download e instalaç
    5. Abra o prompt de comando no modo de administrador.
    6. Instale o patch Geode usando o arquivo `geode-*-1.15.1.2.jar`.
 
-* Quando os usuários atualizaram do AEM 6.5 Forms Service Pack 18 ou 19 para o Service Pack 20 ou 21, encontraram um erro de compilação JSP. Esse erro os impedia de abrir ou criar formulários adaptáveis. Isso também causava problemas com outras interfaces do AEM. Essas interfaces incluíam o Editor de páginas, a interface do AEM Forms, o editor de fluxo de trabalho e a interface da Visão geral do sistema. (FORMS-15256)
+* **FORMS-15256** Quando os usuários atualizaram do AEM 6.5 Forms Service Pack 18 ou 19 para o Service Pack 20 ou 21, eles encontraram um erro de compilação de JSP. Esse erro os impedia de abrir ou criar formulários adaptáveis. Isso também causava problemas com outras interfaces do AEM. Essas interfaces incluíam o Editor de páginas, a interface do AEM Forms, o editor de fluxo de trabalho e a interface da Visão geral do sistema.
 
   Se você enfrentar esse problema, execute as seguintes etapas para resolvê-lo:
    1. Navegue até o diretório `/libs/fd/aemforms/install/` no CRXDE.
    2. Exclua o pacote com o nome `com.adobe.granite.ui.commons-5.10.26.jar`.
    3. Reinicie o servidor do AEM.
 
-* Na Visualização de impressão da interface do usuário do Agente de comunicações interativas, o símbolo de moeda (como cifrão $) é exibido de forma inconsistente para todos os valores do campo. Aparece para valores até 999, mas está ausente para valores de 1000 e superiores. (FORMS-16557)
-* Quaisquer modificações no XDP de fragmentos de layout aninhados em uma comunicação interativa não são refletidas no editor IC. (FORMS-16575)
-* Na Visualização de impressão da interface do usuário do Agente de comunicações interativas, alguns valores calculados não são exibidos corretamente. (FORMS-16603)
-* Quando a carta é exibida na Visualização de impressão, o conteúdo é alterado. Ou seja, alguns espaços desaparecem e determinadas letras são substituídas por `x`. (FORMS-15681)
-* **FORMS-15428**: depois de atualizar para o AEM Forms Service Pack 20 (6.5.20.0) com o Complemento do Forms, as configurações que dependem do Adobe Analytics Cloud Service herdado usando a autenticação baseada em credencial param de funcionar. Esse problema impedia que as regras do Analytics fossem executadas corretamente.
-
-* Quando um usuário configura uma instância do WebLogic 14c, o serviço PDFG no AEM Forms Service Pack 21 (6.5.21.0) no JEE executado no JBoss® falha devido a conflitos do carregador de classe envolvendo a biblioteca SLF4J. O erro é exibido da seguinte maneira (CQDOC-22178):
-
-  ```java
-  Caused by: java.lang.LinkageError: loader constraint violation: when resolving method "org.slf4j.impl.StaticLoggerBinder.getLoggerFactory()Lorg/slf4j/ILoggerFactory;"
-  the class loader org.ungoverned.moduleloader.ModuleClassLoader @404a2f79 (instance of org.ungoverned.moduleloader.ModuleClassLoader, child of 'deployment.adobe-livecycle-jboss.ear'
-  @7e313f80 org.jboss.modules.ModuleClassLoader) of the current class, org/slf4j/LoggerFactory, and the class loader 'org.slf4j.impl@1.1.0.Final-redhat-00001' @506ab52
-  (instance of org.jboss.modules.ModuleClassLoader, child of 'app' jdk.internal.loader.ClassLoaders$AppClassLoader) for the method's defining class, org/slf4j/impl/StaticLoggerBinder,
-  have different Class objects for the type org/slf4j/ILoggerFactory used in the signature.
-  ```
-
-* **FORMS-21378**: quando a validação do lado do servidor (SSV) está habilitada, os envios de formulários podem falhar. Se você encontrar esse problema, entre em contato com o Suporte da Adobe para obter assistência.
-
-* **FORMS-23703**: quando a regra `contains` é configurada sem um valor padrão, a validação do Server Side para um formulário adaptável falha. Você pode instalar a última versão do [AEM Forms 6.5.24.0 Service Pack](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases) para corrigir o problema.
+* **FORMS-23703** Quando a regra `contains` é configurada sem um valor padrão, a validação do Server Side para um formulário adaptável falha. Você pode instalar a última versão do [AEM Forms 6.5.24.0 Service Pack](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases) para corrigir o problema.
 
 * Os conectores do modelo de dados de formulário podem não ser autenticados porque as palavras-chave e o padrão regex necessários não são permitidos por padrão. Para resolver o problema, adicione o seguinte por meio do Gerenciador de Configurações (`/system/console/configmgr`):
 
@@ -703,15 +685,13 @@ Os seguintes problemas têm uma correção disponível para download e instalaç
 
      >[!VIDEO](https://video.tv.adobe.com/v/3479697)
 
-* **FORMS-23979.**: a conversão de HTML em PDF (PDFG) pode experimentar tempos limite intermitentes. Posteriormente, uma versão mais recente do complemento do Forms para SP24 foi lançada, que inclui a correção. Se você encontrar esse problema, atualize seu ambiente para o [complemento mais recente do Forms lançado para 6.5.24.0](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases).
-
-* **FORMS-23722** (Anexos de arquivo ausentes em Atribuir Tarefa): quando um formulário com um campo **Anexo de Arquivo** é enviado a um Fluxo de Trabalho do AEM que usa uma etapa **Atribuir Tarefa**, os anexos não aparecem quando a tarefa é aberta da Caixa de Entrada. Os arquivos são salvos corretamente no repositório e ficam visíveis no CRX; somente a interface do usuário da etapa Atribuir tarefa não os mostra.
-
-* **FORMS-23717** Na pesquisa do Modelo de Dados de Formulário, uma marca HTML é exibida na interface do usuário mesmo quando uma entidade relevante não está presente.
+* A **conversão de FORMS-23979** de HTML para PDF (PDFG) pode apresentar tempos limite intermitentes. Posteriormente, uma versão mais recente do complemento do Forms para SP24 foi lançada, que inclui a correção. Se você encontrar esse problema, atualize seu ambiente para o [complemento mais recente do Forms lançado para 6.5.24.0](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases).
 
 * **FORMS-23717** Depois de atualizar para o **AEM Forms6.5.24.0**, o `server.log` e o `error.log` podem ser inundados com mensagens de AVISO repetidas, como *Falha na criação de fábrica do analisador seguro* ou *Não há suporte para o atributo de segurança ...*. Os logs podem aumentar em cerca de **5-10 linhas por segundo** (centenas de MB por hora), o que pode preencher o disco e bloquear a implantação da produção. **Correção:** Incluído no AEM Forms **6.5.25.0**. **Até lá:**
 
   Para reduzir o volume de log, defina o nível de log de `com.adobe.util.XMLSecurityUtil` como `ERROR` na configuração do servidor de aplicativos ou por meio do argumento JVM `-Dlogging.level.com.adobe.util.XMLSecurityUtil=ERROR`. Isso apenas oculta as mensagens e não corrige a causa subjacente.
+
+* **FORMS-23875** Na pesquisa do Modelo de Dados de Formulário, uma marca HTML é exibida na interface do usuário mesmo quando uma entidade relevante não está presente. Para resolver o problema, baixe e instale o hotfix do [link](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/bb-expressionmanager-pkg-10.0.48.zip).
 
 ## Pacotes da OSGi e pacotes de conteúdo inclusos{#osgi-bundles-and-content-packages-included}
 
@@ -730,5 +710,5 @@ Esses sites estão disponíveis somente para clientes do. Se você for cliente e
 >[!MORELIKETHIS]
 >
 >* [[!DNL Experience Manager] página do produto](https://business.adobe.com/br/products/experience-manager/adobe-experience-manager.html)
->* [[!DNL Experience Manager] Documentação do 6.5](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65)
+>* [[!DNL Experience Manager] Documentação do 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65)
 >* [Inscreva-se para obter atualizações de produto prioritárias da Adobe](https://www.adobe.com/subscription/priority-product-update.html)
