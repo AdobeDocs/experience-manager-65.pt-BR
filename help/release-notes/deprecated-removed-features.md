@@ -5,10 +5,10 @@ exl-id: d9b6140a-c37d-4b90-a60c-01f471d65621
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
-source-git-commit: 30137e36b60c3ada70240e1442390f9fdd26f3b9
+source-git-commit: 5a851bf013a4ef7e6097bf32bd3fa8fe4d635f28
 workflow-type: tm+mt
-source-wordcount: '1771'
-ht-degree: 13%
+source-wordcount: '1834'
+ht-degree: 12%
 
 ---
 
@@ -34,6 +34,7 @@ Clientes devem analisar se usam o recurso/funcionalidade em sua implementação 
 
 | Área | Destaque | Substituição | Versão (SP) |
 |---|---|---|---|
+| Sites | Suporte a Fragmento de conteúdo na API REST do AEM Assets | O AEM 6.5 LTS SP2 fornece OpenAPIs modernas para gerenciamento de fragmentos de conteúdo e modelos. Portanto, os endpoints mais antigos de suporte a fragmentos de conteúdo na API REST do AEM Assets agora estão obsoletos.<br>A Adobe pretende manter esses endpoints mais antigos disponíveis até um anúncio do fim da vida útil. A Adobe não planeja melhorias adicionais para os endpoints obsoletos. | 6.5.24 |
 | Sites | [Editor SPA](/help/sites-developing/spa-editor-deprecation.md) | Para casos de uso headless, utilize o [Editor universal](/help/sites-developing/universal-editor/introduction.md) para edição visual ou o [Editor de fragmentos de conteúdo](/help/sites-developing/universal-editor/introduction.md) para edição baseada em formulário. | 6.5.23 |
 | Sites | O serviço **Configuração de Sondagem Gerenciada do Adobe AEM**: `com.day.cq.polling.importer.impl.ManagedPollConfigImpl` | O serviço **Importador de Sling de Relatórios do Adobe AEM Analytics**. Consulte Conectando ao Adobe Analytics e Criando Estruturas - [Configurando o Intervalo de Importação](/help/sites-administering/adobeanalytics-connect.md#configuring-the-import-interval) | 6.5.19.0 |
 | Screens | AtiveMQ no Adobe Experience Manager (AEM). O AtiveMQ foi usado para comunicação entre duas instâncias de publicação do AEM. | A Adobe recomenda que os clientes agora usem um balanceador de carga. | 6.5.18.0 |
