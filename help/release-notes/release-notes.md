@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 5a851bf013a4ef7e6097bf32bd3fa8fe4d635f28
+source-git-commit: 7fdfcc9964bccfea03304e6cae3b5569421720ed
 workflow-type: tm+mt
-source-wordcount: '9627'
+source-wordcount: '9628'
 ht-degree: 5%
 
 ---
@@ -643,7 +643,7 @@ Para garantir a operação correta, você deve adicionar as seguintes propriedad
 
 ### Problema conhecido do AEM Sites {#known-issues-aem-sites-6524}
 
-A visualização dos fragmentos de conteúdo falha devido à proteção do DoS para uma grande árvore de fragmentos. Consulte o artigo [KB sobre as opções de configuração padrão do GraphQL Query Executor](https://experienceleague.adobe.com/pt-br/docs/experience-cloud-kcs/kbarticles/ka-23945) (SITES-17934)
+A visualização dos fragmentos de conteúdo falha devido à proteção do DoS para uma grande árvore de fragmentos. Consulte o artigo [KB sobre as opções de configuração padrão do GraphQL Query Executor](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-23945) (SITES-17934)
 
 ### Problemas conhecidos do AEM Forms {#known-issues-aem-forms-6524}
 
@@ -665,6 +665,8 @@ A visualização dos fragmentos de conteúdo falha devido à proteção do DoS p
 
 Os seguintes problemas têm uma correção disponível para download e instalação. Você pode [baixar e instalar o Hotfix](/help/release-notes/aem-forms-hotfix.md) para resolver estes problemas:
 
+<!--* **FORMS-23881** On AEM Forms JEE deployments set up using the 6.5.23.0 full installer, Output Service fails to process requests when a custom XCI file is supplied in the invocation. To resolve this issue, install the latest AEM 6.5.24.0 Forms Service Pack from the [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) portal.-->
+
 * O AEM Forms agora inclui uma atualização da versão do Struts 2.5.33 para 6.x para o componente de formulários. Essa atualização fornece alterações do Struts que não foram incluídas no SP24. O suporte foi adicionado por meio de um [Hotfix](/help/release-notes/aem-forms-hotfix.md) que você pode baixar e instalar para adicionar suporte à versão mais recente do Struts.
 
 * **FORMS-14926** Depois de instalar o AEM Forms JEE Service Pack 21 (6.5.21.0), se você encontrar entradas duplicadas de Geode jars `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)` na pasta `<AEM_Forms_Installation>/lib/caching/lib`, execute as seguintes etapas para resolver o problema:
@@ -683,16 +685,18 @@ Os seguintes problemas têm uma correção disponível para download e instalaç
    2. Exclua o pacote com o nome `com.adobe.granite.ui.commons-5.10.26.jar`.
    3. Reinicie o servidor do AEM.
 
-* **FORMS-23703** Quando a regra `contains` é configurada sem um valor padrão, a validação do Server Side para um formulário adaptável falha. Você pode instalar a última versão do [AEM Forms 6.5.24.0 Service Pack](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases) para corrigir o problema.
+* **FORMS-23703** Quando a regra `contains` é configurada sem um valor padrão, a validação do Server Side para um formulário adaptável falha. Você pode instalar a última versão do [AEM Forms 6.5.24.0 Service Pack](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases) para corrigir o problema.
 
-* Os conectores do modelo de dados de formulário podem não ser autenticados porque as palavras-chave e o padrão regex necessários não são permitidos por padrão. Para resolver o problema, adicione o seguinte por meio do Gerenciador de Configurações (`/system/console/configmgr`):
+* **Os conectores do Modelo de Dados de Formulário do GRANITE-63681** podem não ser autenticados porque as palavras-chave e o padrão regex necessários não são permitidos por padrão. Para resolver o problema, baixe e instale o hotfix do [link](/help/release-notes/aem-forms-hotfix.md).
 
-   * **Palavras-chave:** `fdm-client-secret`, `oauth-client-secret`
-   * **Regex:** `^\[/conf/[^/]+(/[^/]+)?/settings/dam/cfm/models/[^,\]]+(?:,/conf/[^/]+(/[^/]+)?/settings/dam/cfm/models/[^,\]]+)*\]$`
+  <!--To resolve the issue, add the following via the Configuration Manager (`/system/console/configmgr`):
 
-     >[!VIDEO](https://video.tv.adobe.com/v/3479697)
+  * **Keywords:** `fdm-client-secret`, `oauth-client-secret`
+  * **Regex:** `^\[/conf/[^/]+(/[^/]+)?/settings/dam/cfm/models/[^,\]]+(?:,/conf/[^/]+(/[^/]+)?/settings/dam/cfm/models/[^,\]]+)*\]$`
 
-* A **conversão de FORMS-23979** de HTML para PDF (PDFG) pode apresentar tempos limite intermitentes. Posteriormente, uma versão mais recente do complemento do Forms para SP24 foi lançada, que inclui a correção. Se você encontrar esse problema, atualize seu ambiente para o [complemento mais recente do Forms lançado para 6.5.24.0](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases).
+    >[!VIDEO](https://video.tv.adobe.com/v/3479697)-->
+
+* A **conversão de FORMS-23979** de HTML para PDF (PDFG) pode apresentar tempos limite intermitentes. Posteriormente, uma versão mais recente do complemento do Forms para SP24 foi lançada, que inclui a correção. Se você encontrar esse problema, atualize seu ambiente para o [complemento mais recente do Forms lançado para 6.5.24.0](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases).
 
 * **FORMS-23717** Depois de atualizar para o **AEM Forms6.5.24.0**, o `server.log` e o `error.log` podem ser inundados com mensagens de AVISO repetidas, como *Falha na criação de fábrica do analisador seguro* ou *Não há suporte para o atributo de segurança ...*. Os logs podem aumentar em cerca de **5-10 linhas por segundo** (centenas de MB por hora), o que pode preencher o disco e bloquear a implantação da produção. **Correção:** Incluído no AEM Forms **6.5.25.0**. **Até lá:**
 
@@ -717,5 +721,6 @@ Esses sites estão disponíveis somente para clientes do. Se você for cliente e
 >[!MORELIKETHIS]
 >
 >* [[!DNL Experience Manager] página do produto](https://business.adobe.com/br/products/experience-manager/adobe-experience-manager.html)
->* [[!DNL Experience Manager] Documentação do 6.5](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65)
+>* [[!DNL Experience Manager] Documentação do 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65)
 >* [Inscreva-se para obter atualizações de produto prioritárias da Adobe](https://www.adobe.com/subscription/priority-product-update.html)
+
