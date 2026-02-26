@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 7fdfcc9964bccfea03304e6cae3b5569421720ed
+source-git-commit: 3e1f704d1d0e64deefe157338ab5081521a45c3c
 workflow-type: tm+mt
-source-wordcount: '9628'
+source-wordcount: '9855'
 ht-degree: 5%
 
 ---
@@ -643,7 +643,7 @@ Para garantir a operação correta, você deve adicionar as seguintes propriedad
 
 ### Problema conhecido do AEM Sites {#known-issues-aem-sites-6524}
 
-A visualização dos fragmentos de conteúdo falha devido à proteção do DoS para uma grande árvore de fragmentos. Consulte o artigo [KB sobre as opções de configuração padrão do GraphQL Query Executor](https://experienceleague.adobe.com/pt-br/docs/experience-cloud-kcs/kbarticles/ka-23945) (SITES-17934)
+A visualização dos fragmentos de conteúdo falha devido à proteção do DoS para uma grande árvore de fragmentos. Consulte o artigo [KB sobre as opções de configuração padrão do GraphQL Query Executor](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-23945) (SITES-17934)
 
 ### Problemas conhecidos do AEM Forms {#known-issues-aem-forms-6524}
 
@@ -654,9 +654,12 @@ A visualização dos fragmentos de conteúdo falha devido à proteção do DoS p
 * **FORMS-16557** Na Visualização de Impressão da Interface do Usuário do Agente de Comunicações Interativas, o símbolo de moeda (como cifrão $) é exibido de forma inconsistente para todos os valores de campo. Aparece para valores até 999, mas está ausente para valores de 1000 e superiores.
 * **FORMS-16575** Quaisquer modificações no XDP de fragmentos de layout aninhados em uma Comunicação Interativa não são refletidas no editor IC.
 * **FORMS-21378** Quando a validação no lado do servidor (SSV) estiver habilitada, os envios de formulários poderão falhar. Se você encontrar esse problema, entre em contato com o Suporte da Adobe para obter assistência.
+
 * **FORMS-23722** (Anexos de arquivo ausentes em Atribuir Tarefa): quando um formulário com um campo **Anexo de Arquivo** que usa bindref é enviado a um Fluxo de Trabalho do AEM que usa uma etapa **Atribuir Tarefa**, os anexos não aparecem quando a tarefa é aberta da Caixa de Entrada. Os arquivos são salvos corretamente no repositório, mas a interface do usuário da etapa Atribuir tarefa não exibe os anexos.
 
-#### Problemas com Hotfixes disponíveis {#aem-forms-issues-with-hotfixes}
+* **FORMS-23802** (Funções personalizadas não carregam quando o formulário está na página Sites): as funções personalizadas não funcionam na pré-visualização ou publicação quando o Formulário adaptável está incorporado em uma página Sites e a versão da biblioteca aem-forms-core-component é inferior a 1.1.76. Você pode ver um erro como `InvalidFormContainerException: No form container found` nos logs. Para resolver esse problema, [baixe e instale o hotfix](/help/release-notes/aem-forms-hotfix.md) para AEM Forms SP24 (AddOn 6.0.1454).
+
+#### Problemas conhecidos com Hotfixes disponíveis {#aem-forms-issues-with-hotfixes}
 
 <!-- 
 >[!NOTE]
@@ -665,7 +668,15 @@ A visualização dos fragmentos de conteúdo falha devido à proteção do DoS p
 
 Os seguintes problemas têm uma correção disponível para download e instalação. Você pode [baixar e instalar o Hotfix](/help/release-notes/aem-forms-hotfix.md) para resolver estes problemas:
 
-<!--* **FORMS-23881** On AEM Forms JEE deployments set up using the 6.5.23.0 full installer, Output Service fails to process requests when a custom XCI file is supplied in the invocation. To resolve this issue, install the latest AEM 6.5.24.0 Forms Service Pack from the [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) portal.-->
+<!--* FORMS-23881 On AEM Forms JEE deployments set up using the 6.5.23.0 full installer, Output Service fails to process requests when a custom XCI file is supplied in the invocation. To resolve this issue, install the latest AEM 6.5.24.0 Forms Service Pack from the [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) portal.-->
+
+* **FORMS-23789** (somente AEM Forms no JEE): os usuários tiveram problemas com o Log4j no AEM Forms no JEE SP24, causando interrupções no registro e monitoramento para clientes corporativos. Para resolver esse problema, [baixe e instale o hotfix](/help/release-notes/aem-forms-hotfix.md) para AEM Forms no JEE Service Pack 6.5.24.0.
+
+* **FORMS-23802** As funções personalizadas não são carregadas na visualização ou publicação quando o formulário está em uma página do Sites com uma versão mais antiga do componente principal do aem Forms (&lt;1.1.76). Para resolver esse problema, instale o [AEM Forms AddOn hotfix 6.0.1454](/help/release-notes/aem-forms-hotfix.md) para SP24.
+
+* **FORMS-23789** (somente AEM Forms no JEE): os usuários tiveram problemas com o Log4j no AEM Forms no JEE SP24, causando interrupções no registro e monitoramento para clientes corporativos. Para resolver esse problema, [baixe e instale o hotfix](/help/release-notes/aem-forms-hotfix.md) para AEM Forms no JEE Service Pack 6.5.24.0.
+
+* **FORMS-23802** As funções personalizadas não são carregadas na visualização ou publicação quando o formulário está em uma página do Sites com uma versão mais antiga do componente principal do aem Forms (&lt;1.1.76). Para resolver esse problema, instale o [AEM Forms AddOn hotfix 6.0.1454](/help/release-notes/aem-forms-hotfix.md) para SP24.
 
 * O AEM Forms agora inclui uma atualização da versão do Struts 2.5.33 para 6.x para o componente de formulários. Essa atualização fornece alterações do Struts que não foram incluídas no SP24. O suporte foi adicionado por meio de um [Hotfix](/help/release-notes/aem-forms-hotfix.md) que você pode baixar e instalar para adicionar suporte à versão mais recente do Struts.
 
@@ -685,7 +696,7 @@ Os seguintes problemas têm uma correção disponível para download e instalaç
    2. Exclua o pacote com o nome `com.adobe.granite.ui.commons-5.10.26.jar`.
    3. Reinicie o servidor do AEM.
 
-* **FORMS-23703** Quando a regra `contains` é configurada sem um valor padrão, a validação do Server Side para um formulário adaptável falha. Você pode instalar a última versão do [AEM Forms 6.5.24.0 Service Pack](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases) para corrigir o problema.
+* **FORMS-23703** Quando a regra `contains` é configurada sem um valor padrão, a validação do Server Side para um formulário adaptável falha. Você pode instalar a última versão do [AEM Forms 6.5.24.0 Service Pack](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases) para corrigir o problema.
 
 * **Os conectores do Modelo de Dados de Formulário do GRANITE-63681** podem não ser autenticados porque as palavras-chave e o padrão regex necessários não são permitidos por padrão. Para resolver o problema, baixe e instale o hotfix do [link](/help/release-notes/aem-forms-hotfix.md).
 
@@ -696,11 +707,11 @@ Os seguintes problemas têm uma correção disponível para download e instalaç
 
     >[!VIDEO](https://video.tv.adobe.com/v/3479697)-->
 
-* A **conversão de FORMS-23979** de HTML para PDF (PDFG) pode apresentar tempos limite intermitentes. Posteriormente, uma versão mais recente do complemento do Forms para SP24 foi lançada, que inclui a correção. Se você encontrar esse problema, atualize seu ambiente para o [complemento mais recente do Forms lançado para 6.5.24.0](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases).
+* A **conversão de FORMS-23979** de HTML para PDF (PDFG) pode apresentar tempos limite intermitentes. Posteriormente, uma versão mais recente do complemento do Forms para SP24 foi lançada, que inclui a correção. Se você encontrar esse problema, atualize seu ambiente para o [complemento mais recente do Forms lançado para 6.5.24.0](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases).
 
-* **FORMS-23717** Depois de atualizar para o **AEM Forms6.5.24.0**, o `server.log` e o `error.log` podem ser inundados com mensagens de AVISO repetidas, como *Falha na criação de fábrica do analisador seguro* ou *Não há suporte para o atributo de segurança ...*. Os logs podem aumentar em cerca de **5-10 linhas por segundo** (centenas de MB por hora), o que pode preencher o disco e bloquear a implantação da produção. **Correção:** Incluído no AEM Forms **6.5.25.0**. **Até lá:**
+* **FORMS-23717** Depois de atualizar para o **AEM Forms6.5.24.0**, o `server.log` e o `error.log` podem ser inundados com mensagens de AVISO repetidas, como *Falha na criação de fábrica do analisador seguro* ou *Não há suporte para o atributo de segurança ...*. Os logs podem aumentar em cerca de **5-10 linhas por segundo** (centenas de MB por hora), o que pode preencher o disco e bloquear a implantação da produção.
 
-  Para reduzir o volume de log, defina o nível de log de `com.adobe.util.XMLSecurityUtil` como `ERROR` na configuração do servidor de aplicativos ou por meio do argumento JVM `-Dlogging.level.com.adobe.util.XMLSecurityUtil=ERROR`. Isso apenas oculta as mensagens e não corrige a causa subjacente.
+Para reduzir o volume de log, defina o nível de log de `com.adobe.util.XMLSecurityUtil` como `ERROR` na configuração do servidor de aplicativos ou por meio do argumento JVM `-Dlogging.level.com.adobe.util.XMLSecurityUtil=ERROR`. Isso apenas oculta as mensagens e não corrige a causa subjacente.
 
 * **FORMS-23875** Na pesquisa do Modelo de Dados de Formulário, uma marca HTML é exibida na interface do usuário mesmo quando uma entidade relevante não está presente. Para resolver o problema, baixe e instale o hotfix do [link](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/bb-expressionmanager-pkg-10.0.48.zip).
 
@@ -721,6 +732,6 @@ Esses sites estão disponíveis somente para clientes do. Se você for cliente e
 >[!MORELIKETHIS]
 >
 >* [[!DNL Experience Manager] página do produto](https://business.adobe.com/br/products/experience-manager/adobe-experience-manager.html)
->* [[!DNL Experience Manager] Documentação do 6.5](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65)
+>* [[!DNL Experience Manager] Documentação do 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65)
 >* [Inscreva-se para obter atualizações de produto prioritárias da Adobe](https://www.adobe.com/subscription/priority-product-update.html)
 
