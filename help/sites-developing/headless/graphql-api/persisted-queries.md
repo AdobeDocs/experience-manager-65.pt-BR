@@ -1,11 +1,11 @@
 ---
 title: Consultas persistentes de GraphQL
-description: Saiba como criar consultas persistentes do GraphQL no Adobe Experience Manager para otimizar o desempenho. As consultas persistentes podem ser solicitadas por aplicativos clientes usando o método HTTP GET e a resposta pode ser armazenada em cache nas camadas do Dispatcher e do CDN, melhorando, em última análise, o desempenho dos aplicativos clientes.
+description: Saiba como criar consultas persistentes do GraphQL no Adobe Experience Manager para otimizar o desempenho. As consultas persistentes podem ser solicitadas por aplicativos clientes usando o método GET do HTTP e a resposta pode ser armazenada em cache nas camadas Dispatcher e CDN, melhorando, em última análise, o desempenho dos aplicativos clientes.
 exl-id: d7a1955d-b754-4700-b863-e9f66396cbe1
 solution: Experience Manager, Experience Manager Sites
 feature: Content Fragments,GraphQL API
 role: Developer
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 9278eb7dab4a764403fa0769f6e80dd7e8fb0cb9
 workflow-type: tm+mt
 source-wordcount: '1401'
 ht-degree: 85%
@@ -14,7 +14,7 @@ ht-degree: 85%
 
 # Consultas persistentes de GraphQL {#persisted-queries-caching}
 
-Consultas persistentes são consultas GraphQL criadas e armazenadas no servidor Adobe Experience Manager (AEM). Elas podem ser solicitadas com uma solicitação GET por aplicativos clientes. A resposta de uma solicitação do GET pode ser armazenada em cache nas camadas do Dispatcher e da Rede de entrega de conteúdo (CDN), melhorando, em última análise, o desempenho do aplicativo cliente solicitante. Isso é diferente das consultas de GraphQL padrão, que são executadas usando solicitações POST, onde a resposta não pode ser facilmente armazenada em cache.
+As consultas persistentes são consultas do GraphQL criadas e armazenadas no servidor do Adobe Experience Manager (AEM). Elas podem ser solicitadas com uma solicitação GET por aplicativos clientes. A resposta de uma solicitação do GET pode ser armazenada em cache nas camadas do Dispatcher e da Rede de entrega de conteúdo (CDN), melhorando, em última análise, o desempenho do aplicativo cliente solicitante. Isso é diferente das consultas de GraphQL padrão, que são executadas usando solicitações POST, onde a resposta não pode ser facilmente armazenada em cache.
 
 <!--
 >[!NOTE]
@@ -71,7 +71,7 @@ O GraphiQL IDE é o método **preferencial** para consultas persistentes. Para c
 
    ```shell
    $ curl -X PUT \
-       -H 'authorization: Basic YWRtaW46YWRtaW4=' \
+       -H 'authorization: Basic yourauthorizationcode' \
        -H "Content-Type: application/json" \
        "http://localhost:4502/graphql/persist.json/wknd/plain-article-query" \
        -d \
@@ -117,7 +117,7 @@ O GraphiQL IDE é o método **preferencial** para consultas persistentes. Para c
 
    ```shell
    $ curl -X POST \
-       -H 'authorization: Basic YWRtaW46YWRtaW4=' \
+       -H 'authorization: Basic yourauthorizationcode' \
        -H "Content-Type: application/json" \
        "http://localhost:4502/graphql/persist.json/wknd/plain-article-query" \
        -d \
@@ -143,7 +143,7 @@ O GraphiQL IDE é o método **preferencial** para consultas persistentes. Para c
 
    ```shell
    $ curl -X PUT \
-       -H 'authorization: Basic YWRtaW46YWRtaW4=' \
+       -H 'authorization: Basic yourauthorizationcode' \
        -H "Content-Type: application/json" \
        "http://localhost:4502/graphql/persist.json/wknd/plain-article-query-wrapped" \
        -d \
@@ -156,7 +156,7 @@ O GraphiQL IDE é o método **preferencial** para consultas persistentes. Para c
 
    ```shell
    $ curl -X PUT \
-       -H 'authorization: Basic YWRtaW46YWRtaW4=' \
+       -H 'authorization: Basic yourauthorizationcode' \
        -H "Content-Type: application/json" \
        "http://localhost:4502/graphql/persist.json/wknd/plain-article-query-max-age" \
        -d \
@@ -169,7 +169,7 @@ O GraphiQL IDE é o método **preferencial** para consultas persistentes. Para c
 
    ```shell
    $ curl -X PUT \
-       -H 'authorization: Basic YWRtaW46YWRtaW4=' \
+       -H 'authorization: Basic yourauthorizationcode' \
        -H "Content-Type: application/json" \
        "http://localhost:4502/graphql/persist.json/wknd/plain-article-query-parameters" \
        -d \
@@ -278,9 +278,9 @@ Por padrão, o AEM invalidará o cache com base em uma definição de Time To Li
 
 {style="table-layout:auto"}
 
-### Instâncias do autor {#author-instances}
+### Instâncias de criação {#author-instances}
 
-Para instâncias de autor, os valores padrão são:
+Para instâncias de criação, os valores padrão são:
 
 * `max-age`  : 60
 * `s-maxage` : 60
@@ -357,7 +357,7 @@ Para gerenciar o cache globalmente, você pode [definir as configurações de OS
 
 >[!NOTE]
 >
->A configuração OSGi é adequada apenas para instâncias de publicação. A configuração existe nas instâncias do autor, mas é ignorada.
+>A configuração OSGi é adequada apenas para instâncias de publicação. A configuração existe nas instâncias de criação, mas é ignorada.
 
 ## Codificação do URL de consulta para uso por um aplicativo {#encoding-query-url}
 
