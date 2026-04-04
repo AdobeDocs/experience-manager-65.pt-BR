@@ -25,7 +25,7 @@ Para carregar arquivos totalmente para [!DNL Experience Manager Assets] que voc�
 
 >[!NOTE]
 >
->[!DNL Adobe InDesign] é oferecido como duas ofertas separadas. Aplicativo de desktop [Adobe InDesign](https://www.adobe.com/products/indesign.html) usado para criar layouts de página para distribuição digital e impressa. O [Adobe InDesign Server](https://www.adobe.com/products/indesignserver.html) permite criar documentos automatizados de forma programática com base no que você criou com o [!DNL InDesign]. Ela opera como um serviço que oferece uma interface para o mecanismo ExtendScript. Os scripts são gravados em [!DNL ExtendScript], que é semelhante a [!DNL JavaScript].
+>[!DNL Adobe InDesign] é oferecido como duas ofertas separadas. Aplicativo de desktop [Adobe InDesign](https://www.adobe.com/br/products/indesign.html) usado para criar layouts de página para distribuição digital e impressa. O [Adobe InDesign Server](https://www.adobe.com/br/products/indesignserver.html) permite criar documentos automatizados de forma programática com base no que você criou com o [!DNL InDesign]. Ela opera como um serviço que oferece uma interface para o mecanismo ExtendScript. Os scripts são gravados em [!DNL ExtendScript], que é semelhante a [!DNL JavaScript].
 
 ## Como a extração funciona {#how-the-extraction-works}
 
@@ -239,4 +239,4 @@ Você pode alterar as credenciais de administrador padrão (nome de usuário e s
 
 >[!MORELIKETHIS]
 >
->* [Sobre o Adobe InDesign Server](https://www.adobe.com/products/indesignserver/faq.html)
+>* [Sobre o Adobe InDesign Server](https://www.adobe.com/br/products/indesignserver/faq.html)
