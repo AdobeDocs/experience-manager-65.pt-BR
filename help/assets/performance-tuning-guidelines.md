@@ -7,9 +7,9 @@ role: Developer, Admin
 feature: Asset Management
 exl-id: 1d9388de-f601-42bf-885b-6a7c3236b97e
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+source-git-commit: 02649ffea62200b472b4f3c446489a9dd974d21c
 workflow-type: tm+mt
-source-wordcount: '2729'
+source-wordcount: '2721'
 ht-degree: 0%
 
 ---
@@ -221,7 +221,6 @@ O write-back do XMP atualiza o ativo original sempre que os metadados são modif
 
 * O ativo em si é modificado
 * Uma versão do ativo é criada
-* [!UICONTROL Ativo de atualização do DAM] executado no ativo
 
 Os resultados listados consomem recursos consideráveis. Portanto, a Adobe recomenda desabilitar o write-back do XMP se ele não for necessário. Para obter mais informações, consulte o [Writeback XMP](/help/assets/xmp-writeback.md).
 
@@ -243,7 +242,7 @@ Ao replicar ativos para um grande número de instâncias de publicação, por ex
 
 ## Pesquisar índices {#search-indexes}
 
-Instale os [Service Packs mais recentes](/help/release-notes/release-notes.md) e hotfixes relacionados ao desempenho, pois esses geralmente incluem atualizações de índices do sistema. Consulte [dicas de ajuste de desempenho](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/assets/administer/performance-tuning-guidelines) para algumas otimizações de índice.
+Instale os [Service Packs mais recentes](/help/release-notes/release-notes.md) e hotfixes relacionados ao desempenho, pois esses geralmente incluem atualizações de índices do sistema. Consulte [dicas de ajuste de desempenho](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/administer/performance-tuning-guidelines) para algumas otimizações de índice.
 
 Crie índices personalizados para consultas executadas com frequência. Para obter detalhes, consulte a [metodologia de análise de consultas lentas](https://aemfaq.blogspot.com/2014/08/oak-query-log-file-analyzer-tool.html) e [criação de índices personalizados](/help/sites-deploying/queries-and-indexing.md). Para obter insights adicionais sobre as práticas recomendadas de consulta e índice, consulte [Práticas recomendadas de consultas e indexação](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 
