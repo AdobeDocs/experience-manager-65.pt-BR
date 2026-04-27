@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 index: false
-source-git-commit: 1509ca884e2f9eb931fc7cd416801957459cc4a0
+source-git-commit: 147b0efb32609c05949c9fe374fa4fca6a9dbfb1
 workflow-type: tm+mt
-source-wordcount: '364'
-ht-degree: 3%
+source-wordcount: '409'
+ht-degree: 2%
 
 ---
 
@@ -46,7 +46,7 @@ Consulte o artigo [Edição de um SPA externo no AEM](spa-edit-external.md) para
 
 ## Limitações {#limitations}
 
-* O componente RemotePage espera que a implementação forneça um manifesto de ativo como o [&#x200B; encontrado aqui.](https://github.com/shellscape/webpack-manifest-plugin) O componente RemotePage, no entanto, só foi testado para funcionar com a estrutura React (e Next.js por meio do componente remote-page-next) e, portanto, não oferece suporte ao carregamento remoto de aplicativos de outras estruturas, como o Angular.
+* O componente RemotePage espera que a implementação forneça um manifesto de ativo como o [encontrado aqui.](https://github.com/shellscape/webpack-manifest-plugin) No entanto, o componente RemotePage só foi testado para funcionar com a estrutura React (e o Next.js por meio do componente remote-page-next) e, portanto, não oferece suporte ao carregamento remoto de aplicativos de outras estruturas, como o Angular.
 * O CSS interno definido no arquivo HTML raiz do aplicativo e o CSS em linha no nó DOM raiz não estarão disponíveis ao fazer renderização remota no AEM.
 
 ## Detalhes técnicos {#technical-details}

@@ -8,9 +8,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 index: false
-source-git-commit: cbdb64772f66e5e69de5e4e7ae1cd0d023276b34
+source-git-commit: 147b0efb32609c05949c9fe374fa4fca6a9dbfb1
 workflow-type: tm+mt
-source-wordcount: '1925'
+source-wordcount: '1983'
 ht-degree: 66%
 
 ---
@@ -38,8 +38,8 @@ O passo a passo é baseado na funcionalidade padrão do AEM e no aplicativo de e
 
 * [AEM versão 6.5.4 ou mais recente](/help/release-notes/release-notes.md)
    * Você deve ter direitos de administrador no sistema.
-* [O aplicativo de exemplo Projeto SPA WKND está disponível no GitHub](https://github.com/adobe/aem-guides-wknd-spa)
-   * Baixe a [versão mais recente do aplicativo React.](https://github.com/adobe/aem-guides-wknd-spa/releases) Será nomeado de forma semelhante a `wknd-spa-react.all.classic-X.Y.Z-SNAPSHOT.zip`.
+* [O aplicativo de amostra Projeto WKND SPA está disponível no GitHub](https://github.com/adobe/aem-guides-wknd-spa)
+   * Baixe a [última versão do aplicativo React.](https://github.com/adobe/aem-guides-wknd-spa/releases) Ele será nomeado de forma semelhante a `wknd-spa-react.all.classic-X.Y.Z-SNAPSHOT.zip`.
    * Baixe as [imagens de exemplo mais recentes](https://github.com/adobe/aem-guides-wknd-spa/releases) para o aplicativo. Ele será nomeado de forma semelhante a `wknd-spa-sample-images-X.Y.Z.zip`.
    * [Use o gerenciador de pacotes](/help/sites-administering/package-manager.md) para instalar os pacotes como você faria com qualquer outro pacote no AEM.
    * O aplicativo não precisa ser instalado usando o Maven para fins deste passo a passo.
@@ -93,7 +93,7 @@ Ao renderizar no lado do cliente, o elemento de página reage mais rápido e as 
 
 >[!NOTE]
 >
->Para obter detalhes técnicos sobre como o SPA funciona no AEM, consulte o artigo [Introdução ao SPA no AEM](/help/sites-developing/spa-getting-started-react.md).
+>Para obter detalhes técnicos sobre como os SPAs funcionam no AEM, consulte o artigo [Introdução aos SPAs no AEM](/help/sites-developing/spa-getting-started-react.md).
 >
 >Para obter mais informações sobre o design, a arquitetura e o fluxo de trabalho técnico do Editor de SPA, consulte o artigo [Visão geral do Editor de SPA](/help/sites-developing/spa-overview.md).
 
@@ -137,7 +137,7 @@ Ferramentas de criação adicionais, como arrastar e soltar componentes adiciona
 
 ## SPAs e o editor de SPA do AEM {#spa-apps-and-the-aem-spa-editor}
 
-Experimentar como um SPA se comporta para o usuário final e, em seguida, inspecionar a página SPA ajuda a entender melhor como um aplicativo SAP funciona com o Editor de SPA no AEM.
+Experimentar como um SPA se comporta para o usuário final e, em seguida, inspecionar a página de SPA ajuda a entender melhor como um aplicativo SAP funciona com o Editor de SPA no AEM.
 
 ### Usando um SPA {#using-an-spa-application}
 

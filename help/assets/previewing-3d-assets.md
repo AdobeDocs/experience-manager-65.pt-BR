@@ -8,9 +8,9 @@ role: User
 exl-id: fdebbc2b-c04d-4cdd-b7c2-8e9a2a854e79
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '568'
+source-wordcount: '595'
 ht-degree: 9%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 9%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/previewing-3d-assets.html?lang=pt-BR) |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/previewing-3d-assets.html?lang=en) |
 | AEM 6.5 | Este artigo |
 
 O Experience Manager é compatível com upload, entrega e pré-visualização interativa de ativos 3D como parte do processo de criação.
@@ -52,7 +52,7 @@ A visualização 3D interativa é compatível com os seguintes formatos de arqui
     material_0_baseColor.jpeg
     material_0_normal.jpeg
 
-## Considerações de desempenho ao pré-visualizar ativos 3D no Experience Manager{#performance-3d-previewing-assets}
+## Considerações de desempenho ao visualizar ativos 3D no Experience Manager{#performance-3d-previewing-assets}
 
 O tempo necessário para abrir um ativo 3D na página de visualização de detalhes do ativo depende de vários fatores, como largura de banda, complexidade da imagem e latências para o servidor.
 

@@ -11,10 +11,10 @@ feature: Viewers
 role: User, Admin, Developer
 exl-id: 161dfe22-bc1c-4b60-8ab6-a19407a39e2e
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '6677'
-ht-degree: 5%
+source-wordcount: '6951'
+ht-degree: 6%
 
 ---
 
@@ -28,7 +28,7 @@ A extensão *Visualizadores do Dynamic Media* para Tags do Experience Platform e
 
 Essa integração significa que você pode rastrear o uso dos Visualizadores do Dynamic Media em seu site com o Adobe Analytics. Ao mesmo tempo, você pode usar os eventos e os dados expostos pelos visualizadores com qualquer outra extensão de Tags do Experience Platform que venha do Adobe ou de terceiros.
 
-Para saber mais sobre extensões do Adobe ou extensões de terceiros, consulte [extensões do Adobe](https://experienceleague.adobe.com/pt-br/docs/experience-platform/tags/extensions/overview) no Guia do Usuário de Tags da Experience Platform.
+Para saber mais sobre extensões do Adobe ou extensões de terceiros, consulte [extensões do Adobe](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/overview) no Guia do Usuário de Tags da Experience Platform.
 
 **Este tópico é destinado ao seguinte:** administradores de site, desenvolvedores na Experience Platform e pessoas em Operações.
 
@@ -37,7 +37,7 @@ Para saber mais sobre extensões do Adobe ou extensões de terceiros, consulte [
 * A integração de tags do Experience Platform para visualizadores do Dynamic Media não funciona no nó do autor do Experience Manager. Não é possível ver nenhum rastreamento de uma página WCM até que ela seja publicada.
 * A integração de tags do Experience Platform para visualizadores do Dynamic Media não é compatível com o modo de operação &quot;pop-up&quot;, no qual o URL do visualizador é obtido usando o botão &quot;URL&quot; na página Detalhes do ativo.
 * A integração das Tags do Experience Platform não pode ser usada simultaneamente com visualizadores herdados integração do Analytics (por meio do parâmetro `config2=`).
-* O suporte ao rastreamento de vídeo está limitado apenas ao rastreamento de &quot;reprodução principal&quot;, conforme descrito em [Visão geral do rastreamento](https://experienceleague.adobe.com/pt-br/docs/media-analytics/using/tracking/track-core-overview). Especificamente, o rastreamento de QoS, Anúncios, Capítulo/Segmentos ou Erros não é compatível.
+* O suporte ao rastreamento de vídeo está limitado apenas ao rastreamento de &quot;reprodução principal&quot;, conforme descrito em [Visão geral do rastreamento](https://experienceleague.adobe.com/en/docs/media-analytics/using/tracking/track-core-overview). Especificamente, o rastreamento de QoS, Anúncios, Capítulo/Segmentos ou Erros não é compatível.
 * A configuração da Duração de Armazenamento para Elementos de Dados não é suportada para Elementos de Dados que usam a extensão *Visualizadores do Dynamic Media*. A Duração do Armazenamento deve ser definida como **[!UICONTROL Nenhuma]**.
 
 ### Casos de uso para a integração do {#use-cases-for-the-integration}
@@ -74,7 +74,7 @@ A extensão do Visualizador do Dynamic Media mantém os valores de seus Elemento
 
 Depois de defini-lo, um Elemento de dados pode ser usado em outros locais da interface do usuário de Tags do Experience Platform, usando o widget Seletor de elementos de dados. Especificamente, os Elementos de dados definidos para fins de rastreamento dos Visualizadores do Dynamic Media são referenciados pela Ação Definir variáveis da extensão Adobe Analytics na Regra (veja abaixo).
 
-Consulte [Elementos de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/tags/ui/data-elements).
+Consulte [Elementos de dados](https://experienceleague.adobe.com/en/docs/experience-platform/tags/ui/data-elements).
 
 #### Sobre regras em tags do Experience Platform {#about-rules-in-adobe-launch}
 
@@ -100,7 +100,7 @@ Na seção Ações, é necessário que você tenha uma ação *Definir Variávei
 
 A ação *Definir Variáveis* deve ser seguida por uma ação *Enviar Beacon*. A ação *Enviar sinal* envia dados para o servidor de rastreamento de análise. Ambas as ações, *Definir Variáveis* e *Enviar Beacon*, vêm da extensão do Adobe Analytics.
 
-Consulte [Regras](https://experienceleague.adobe.com/pt-br/docs/experience-platform/tags/ui/rules).
+Consulte [Regras](https://experienceleague.adobe.com/en/docs/experience-platform/tags/ui/rules).
 
 #### Exemplo de configuração {#sample-configuration}
 
@@ -134,7 +134,7 @@ Quando uma conta do Experience Cloud é assinada para usar o Adobe Analytics par
 
 Consulte [Instalação e configuração de extensões](#installing-and-setup-of-extensions).
 
-Atualmente, o suporte para rastreamento de vídeo está limitado apenas ao rastreamento de &quot;reprodução principal&quot;, conforme descrito na [Visão geral do rastreamento](https://experienceleague.adobe.com/pt-br/docs/media-analytics/using/tracking/track-core-overview). Especificamente, o rastreamento de QoS, Anúncios, Capítulo/Segmentos ou Erros não é compatível.
+Atualmente, o suporte para rastreamento de vídeo está limitado apenas ao rastreamento de &quot;reprodução principal&quot;, conforme descrito na [Visão geral do rastreamento](https://experienceleague.adobe.com/en/docs/media-analytics/using/tracking/track-core-overview). Especificamente, o rastreamento de QoS, Anúncios, Capítulo/Segmentos ou Erros não é compatível.
 
 ## Usar a extensão Visualizadores do Dynamic Media {#using-the-dynamic-media-viewers-extension}
 
@@ -146,7 +146,8 @@ Para rastrear visualizadores do Dynamic Media no Experience Manager Sites, todas
 
 Após a configuração adequada, qualquer visualizador do Dynamic Media adicionado a uma página do Sites, usando um componente WCM compatível com o Dynamic Media, rastreia automaticamente os dados para o Adobe Analytics, o Adobe Analytics para vídeo ou ambos.
 
-<!-- To be reviewed and updated although this is found live in the Experience ManageraaCS version:
+<!--
+To be reviewed and updated although this is found live in the Experience ManageraaCS version:
 See [Adding Dynamic Media Assets to Pages using Adobe Sites](https://helpx.adobe.com/experience-manager/6-5/help/assets/adding-dynamic-media-assets-to-pages.html).
 -->
 
@@ -158,9 +159,10 @@ Conclua as etapas de configuração das seções [Configurar Adobe Analytics](#c
 
 Após a configuração adequada, é possível adicionar o suporte a Tags da Experience Platform a uma página da Web com um visualizador do Dynamic Media.
 
-Consulte [Adicionar o código de inserção das marcas do Experience Platform](https://experienceleague.adobe.com/pt-br/docs/platform-learn/implement-in-websites/configure-tags/add-embed-code) para saber mais sobre como usar o código de inserção da biblioteca de marcas do Experience Platform.
+Consulte [Adicionar o código de inserção das marcas do Experience Platform](https://experienceleague.adobe.com/en/docs/platform-learn/implement-in-websites/configure-tags/add-embed-code) para saber mais sobre como usar o código de inserção da biblioteca de marcas do Experience Platform.
 
-<!-- To be reviewed and updated although this is found live in the Experience ManageraaCS version:
+<!--
+To be reviewed and updated although this is found live in the Experience ManageraaCS version:
 See [Embedding the Video or Image Viewer on a Web Page](https://helpx.adobe.com/experience-manager/6-5/help/assets/embed-code.html) to learn more about how to use the embed code feature of Experience Manager Dynamic Media.
 -->
 
@@ -206,7 +208,7 @@ Quando selecionado, o editor de Elemento de dados renderiza um formulário com d
 
 ![image2019-7-22_12-5-46](assets/image2019-7-22_12-5-46.png)
 
-Consulte o [guia de referência de Visualizadores do Dynamic Media](https://experienceleague.adobe.com/pt-br/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers#viewers-aem-assets-dmc) para obter a lista de eventos compatíveis com cada tipo de visualizador; vá para a seção de visualizador específica e selecione a subseção Suporte para rastreamento do Adobe Analytics. Atualmente, o guia de referência Visualizadores do Dynamic Media não documenta argumentos de evento.
+Consulte o [guia de referência de Visualizadores do Dynamic Media](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers#viewers-aem-assets-dmc) para obter a lista de eventos compatíveis com cada tipo de visualizador; vá para a seção de visualizador específica e selecione a subseção Suporte para rastreamento do Adobe Analytics. Atualmente, o guia de referência Visualizadores do Dynamic Media não documenta argumentos de evento.
 
 Agora, considere o ciclo de vida do *Elemento de dados* dos Visualizadores do Dynamic Media. O valor desse Elemento de dados é preenchido depois que o evento correspondente do visualizador do Dynamic Media ocorre na página. Por exemplo, suponha que o Elemento de Dados aponte para o evento **[!UICONTROL LOAD]** e seu argumento &quot;asset&quot;. Nesse caso, o valor desse Elemento de dados recebe dados válidos depois que o visualizador executa o evento **[!UICONTROL LOAD]** pela primeira vez. Se o Elemento de Dados apontar para o evento **[!UICONTROL ZOOM]** e seu argumento de &quot;escala&quot;, o valor desse Elemento de Dados permanecerá vazio até que o visualizador envie um evento **[!UICONTROL ZOOM]** pela primeira vez.
 
@@ -242,7 +244,7 @@ A amostra configurada acima também afeta a duração do valor do Elemento de da
 
 Em qualquer caso, os valores de Elementos de dados orientados por Visualizadores do Dynamic Media não são armazenados no armazenamento local ou no servidor; em vez disso, são mantidos somente na biblioteca de Tags da Experience Platform do lado do cliente. Os valores desse Elemento de dados desaparecem quando a página da Web é recarregada.
 
-Geralmente, o editor de Elemento de Dados oferece suporte a [seleção de duração de armazenamento](https://experienceleague.adobe.com/pt-br/docs/experience-platform/tags/ui/data-elements#create-a-data-element). No entanto, os Elementos de Dados que usam a extensão Visualizadores do Dynamic Media só oferecem suporte à opção de duração de armazenamento de **[!UICONTROL Nenhum]**. É possível definir qualquer outro valor na interface do usuário, mas o comportamento do Elemento de dados não é definido nesse caso. A extensão gerencia o valor do Elemento de dados por conta própria: o Elemento de dados que mantém o valor do argumento de evento do visualizador durante todo o ciclo de vida do visualizador.
+Geralmente, o editor de Elemento de Dados oferece suporte a [seleção de duração de armazenamento](https://experienceleague.adobe.com/en/docs/experience-platform/tags/ui/data-elements#create-a-data-element). No entanto, os Elementos de Dados que usam a extensão Visualizadores do Dynamic Media só oferecem suporte à opção de duração de armazenamento de **[!UICONTROL Nenhum]**. É possível definir qualquer outro valor na interface do usuário, mas o comportamento do Elemento de dados não é definido nesse caso. A extensão gerencia o valor do Elemento de dados por conta própria: o Elemento de dados que mantém o valor do argumento de evento do visualizador durante todo o ciclo de vida do visualizador.
 
 ### Sobre regras na extensão Visualizadores do Dynamic Media {#about-rules-in-the-dynamic-media-viewers-extension}
 
@@ -436,7 +438,7 @@ Após configurar o Adobe Analytics, o seguinte é configurado para a integraçã
 * As variáveis do Analytics estão disponíveis para receber dados de rastreamento.
 * Os relatórios estão disponíveis para exibir dados coletados do Adobe Analytics.
 
-Consulte também o [Guia de implementação do Analytics](https://experienceleague.adobe.com/pt-br/docs/analytics/implementation/home).
+Consulte também o [Guia de implementação do Analytics](https://experienceleague.adobe.com/en/docs/analytics/implementation/home).
 
 **Para configurar o Adobe Analytics para a integração:**
 
@@ -454,11 +456,11 @@ Consulte também o [Guia de implementação do Analytics](https://experienceleag
 
    Se nenhum conjunto de relatórios estiver disponível, você ou o administrador do Adobe Analytics deverá criar um antes de continuar com a configuração.
 
-   Consulte [Relatórios e Conjuntos de Relatórios](https://experienceleague.adobe.com/pt-br/docs/analytics/admin/admin-tools/manage-report-suites/report-suites-admin) e [Criar um conjunto de relatórios](https://experienceleague.adobe.com/pt-br/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
+   Consulte [Relatórios e Conjuntos de Relatórios](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/report-suites-admin) e [Criar um conjunto de relatórios](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
 
    No Adobe Analytics, os conjuntos de relatórios são gerenciados em **[!UICONTROL Administrador]** > **[!UICONTROL Conjuntos de relatórios]**.
 
-   ![07-22_18-09-49-2019](assets/2019-07-22_18-09-49.png)
+   ![2019-07-22_18-09-49](assets/2019-07-22_18-09-49.png)
 
    Agora, configure as variáveis do Adobe Analytics.
 
@@ -468,7 +470,7 @@ Consulte também o [Guia de implementação do Analytics](https://experienceleag
 
    É possível usar qualquer tipo de variável compatível com o Adobe Analytics. A decisão sobre o tipo de variável (como Tráfego personalizado [props], Conversão [eVar]) é orientada pelas necessidades específicas da implementação do Analytics.
 
-   Consulte [Visão geral de props e eVars](https://experienceleague.adobe.com/pt-br/docs/analytics/implementation/vars/page-vars/evar#vars).
+   Consulte [Visão geral de props e eVars](https://experienceleague.adobe.com/en/docs/analytics/implementation/vars/page-vars/evar#vars).
 
    Para os fins desta documentação, somente uma variável de Tráfego personalizado (props) é usada porque ela fica disponível em um Relatório do Analytics dentro de alguns minutos após uma ação ocorrer em uma página da Web.
 
@@ -514,7 +516,7 @@ Após configurar as Tags do Experience Platform, você deve configurar as seguin
 
 Uma propriedade nas Tags do Experience Platform é uma configuração nomeada que mantém todas as configurações unidas. Uma biblioteca de definições de configuração é gerada e publicada em diferentes níveis de ambiente (desenvolvimento, armazenamento temporário e produção).
 
-Consulte também [Criar uma propriedade de marcas](https://experienceleague.adobe.com/pt-br/docs/platform-learn/implement-mobile-sdk/initial-configuration/configure-tags).
+Consulte também [Criar uma propriedade de marcas](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/initial-configuration/configure-tags).
 
 1. Em Tags do Experience Platform, selecione **[!UICONTROL Nova Propriedade]**.
 1. Na caixa de diálogo **[!UICONTROL Criar propriedade]**, no campo **[!UICONTROL Nome]**, digite um nome descritivo, como o título do site. Por exemplo, `DynamicMediaViewersProp.`
@@ -539,7 +541,7 @@ Quando necessário, as seguintes extensões devem ser instaladas e configuradas:
 
 Nenhuma configuração adicional é necessária, aceite para quaisquer valores propostos. Quando terminar, certifique-se de selecionar **[!UICONTROL Salvar]**.
 
-Consulte [Extensão do Adobe Experience Cloud Identity Service](https://experienceleague.adobe.com/pt-br/docs/experience-platform/tags/extensions/client/id-service/overview).
+Consulte [Extensão do Adobe Experience Cloud Identity Service](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/id-service/overview).
 
 * (Obrigatório) Extensão *Adobe Analytics*
 
@@ -559,7 +561,7 @@ Na página **[!UICONTROL Instalar Extensão]**, expanda **[!UICONTROL Geral]** e
 
 Selecione **[!UICONTROL Salvar]**.
 
-Consulte [extensão do Adobe Analytics](https://experienceleague.adobe.com/pt-br/docs/experience-platform/tags/extensions/client/analytics/overview).
+Consulte [extensão do Adobe Analytics](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/analytics/overview).
 
 * (Opcional; necessário somente se o rastreamento de vídeo for necessário) *Extensão do Adobe Media Analytics para áudio e vídeo*
 
@@ -567,7 +569,7 @@ Preencha o campo servidor de rastreamento. O servidor de rastreamento da extens�
 
 Todos os outros campos são opcionais.
 
-Consulte a [Extensão Adobe Media Analytics para áudio e vídeo](https://experienceleague.adobe.com/pt-br/docs/experience-platform/tags/extensions/client/media-analytics/overview).
+Consulte a [Extensão Adobe Media Analytics para áudio e vídeo](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/media-analytics/overview).
 
 * (Obrigatório) Extensão *Visualizadores do Dynamic Media*
 
@@ -597,7 +599,7 @@ Para alterar a configuração das Tags do Experience Platform (incluindo Proprie
 
 As tags da Experience Platform podem ter vários ambientes de desenvolvimento, um ambiente de preparo e um ambiente de produção. Por padrão, a Configuração da nuvem de tags do Experience Platform no Experience Manager aponta o nó do autor do Experience Manager para o ambiente de preparo de tags do Experience Platform. O nó Publicação do Experience Manager aponta para o ambiente de Produção das tags do Experience Platform. Essa organização significa que, com as configurações padrão do Experience Manager, é necessário publicar a biblioteca de tags do Experience Platform no ambiente de preparo. Isso permite que você o use no autor do Experience Manager. Em seguida, você pode publicá-lo no ambiente de Produção para que ele possa ser usado na publicação do Experience Manager.
 
-Consulte [Ambientes](https://experienceleague.adobe.com/pt-br/docs/experience-platform/tags/publish/environments/environments) para obter mais informações sobre ambientes de Tags do Experience Platform.
+Consulte [Ambientes](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/environments/environments) para obter mais informações sobre ambientes de Tags do Experience Platform.
 
 A publicação de uma biblioteca envolve estas duas etapas:
 
@@ -655,7 +657,7 @@ A publicação de uma biblioteca envolve estas duas etapas:
 
    ![image2019-7-15_16-8-9](assets/image2019-7-15_16-8-9.png)
 
-   Consulte [Publicação](https://experienceleague.adobe.com/pt-br/docs/experience-platform/tags/publish/overview) para obter mais informações sobre o processo de publicação nas Tags do Experience Platform.
+   Consulte [Publicação](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview) para obter mais informações sobre o processo de publicação nas Tags do Experience Platform.
 
 ## Configurar o Adobe Experience Manager para a integração {#configuring-adobe-experience-manager-for-the-integration}
 
@@ -674,7 +676,7 @@ A configuração do Experience Manager consiste nas duas etapas principais a seg
 
 1. No autor do Experience Manager, selecione o ícone (martelo) **[!UICONTROL Ferramentas]** e vá para **[!UICONTROL Segurança]** > **[!UICONTROL Configurações do Adobe IMS]**.
 
-   ![07-25_11-52-58-2019](assets/2019-07-25_11-52-58.png)
+   ![2019-07-25_11-52-58](assets/2019-07-25_11-52-58.png)
 
 1. Na página Configuração IMC do Adobe, próximo ao canto superior esquerdo, selecione **[!UICONTROL Criar]**.
 1. Na página **[!UICONTROL Configuração de conta técnica do Adobe IMS]**, na lista suspensa **[!UICONTROL Solução da nuvem]**, selecione **[!UICONTROL Tags do Experience Platform]**.
@@ -705,7 +707,7 @@ A configuração do Experience Manager consiste nas duas etapas principais a seg
 
 1. Na segunda página **[!UICONTROL Criar uma nova integração]**, habilite (ative) o botão de opção **[!UICONTROL API de Tags do Experience Platform]**. No canto inferior direito da página, selecione **[!UICONTROL Continuar]**.
 
-   ![07-25_13-13-54](assets/2019-07-25_13-13-54.png)
+   ![2019-07-25_13-13-54](assets/2019-07-25_13-13-54.png)
 
 1. Na terceira página **[!UICONTROL Criar uma nova integração]**, faça o seguinte:
 
@@ -724,15 +726,15 @@ A configuração do Experience Manager consiste nas duas etapas principais a seg
 1. Selecione **[!UICONTROL Criar integração]**.
 1. Na página **[!UICONTROL Integração criada]**, selecione **[!UICONTROL Continuar com os detalhes da integração]**.
 
-   ![07-25_14-16-33-2019](assets/2019-07-25_14-16-33.png)
+   ![2019-07-25_14-16-33](assets/2019-07-25_14-16-33.png)
 
-1. Uma página de detalhes das Integrações é exibida, **&#x200B;**&#x200B;semelhante ao seguinte:
+1. Uma página de detalhes das Integrações é exibida, **** semelhante ao seguinte:
 
    >[!NOTE]
    >
    >***Deixe aberta esta página de Detalhes da integração***. Você logo precisará de várias informações nas guias **[!UICONTROL Visão geral]** e **[!UICONTROL JWT]**.
 
-   ![25_14-35-30-2019-07](assets/2019-07-25_14-35-30.png)
+   ![2019-07-25_14-35-30](assets/2019-07-25_14-35-30.png)
 
    Página de detalhes da integração.
 
@@ -759,7 +761,7 @@ A configuração do Experience Manager consiste nas duas etapas principais a seg
 Por exemplo, `https://ims-na1.adobelogin.com/`
 (o nome do servidor é apenas um exemplo)
 
-   ![07-25_15-01-53-2019](assets/2019-07-25_15-01-53.png)
+   ![2019-07-25_15-01-53](assets/2019-07-25_15-01-53.png)
 
    Página de detalhes da integração - guia JWT
 
@@ -767,7 +769,7 @@ Por exemplo, `https://ims-na1.adobelogin.com/`
 
    Retorne à página **[!UICONTROL Conta]** e cole a chave no respectivo campo.
 
-   ![25_14-35-333-07-2019](assets/2019-07-25_14-35-333.png)
+   ![2019-07-25_14-35-333](assets/2019-07-25_14-35-333.png)
 
    Página de detalhes da integração.
 
@@ -854,4 +856,4 @@ No entanto, ela é compatível com o nó de publicação do Experience Manager. 
 
 É possível contornar essa limitação. Especifique o URL de desenvolvimento ou de preparo da biblioteca de tags da Platform na configuração da nuvem de tags da Experience Platform para o nó de publicação do Experience Manager acima. Isso faz com que o nó de publicação do Experience Manager use a versão de Desenvolvimento ou Preparo da biblioteca de tags da Experience Platform.
 
-Consulte [Integrar o Experience Manager com Tags do Experience Platform por meio de [!DNL Adobe Developer Console]](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview) para obter mais informações sobre como configurar a Nuvem de Tags do Experience Platform.
+Consulte [Integrar o Experience Manager com Tags do Experience Platform por meio de [!DNL Adobe Developer Console]](https://experienceleague.adobe.com/en/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview) para obter mais informações sobre como configurar a Nuvem de Tags do Experience Platform.

@@ -7,10 +7,10 @@ feature: Metadata
 exl-id: 56c92b7f-e687-4ab5-a376-afa58bdb6ee0
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '1978'
-ht-degree: 3%
+source-wordcount: '2005'
+ht-degree: 4%
 
 ---
 
@@ -18,16 +18,17 @@ ht-degree: 3%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-profiles.html?lang=pt-BR) |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-profiles.html?lang=en) |
 | AEM 6.5 | Este artigo |
 
-<!-- Scope of metadata articles:
+<!--
+Scope of metadata articles:
 * metadata.md: The scope of this article is basic metadata updates, changes, and so on, operations that end-users can do.
 * metadata-concepts.md: All conceptual information. Minor instructions are OK but it is an FYI article about support and standards.
 * metadata-config.md: New article. Contains all configuration and administration how-to info related to metadata of assets.
 -->
 
-[!DNL Adobe Experience Manager Assets] mantém metadados para cada ativo. Ele facilita a categorização e a organização de ativos e ajuda as pessoas que estão procurando um ativo específico. Com a capacidade de manter e gerenciar metadados com seus ativos, você pode organizar e processar ativos automaticamente com base nos metadados. O [!DNL Adobe Experience Manager Assets] permite que os administradores configurem e personalizem a funcionalidade de metadados para modificar a oferta de Adobe padrão.
+[!DNL Adobe Experience Manager Assets] mantém metadados para cada ativo. Ele facilita a categorização e a organização de ativos e ajuda as pessoas que estão procurando um ativo específico. Com a capacidade de manter e gerenciar metadados com seus ativos, você pode organizar e processar ativos automaticamente com base nos metadados. O [!DNL Adobe Experience Manager Assets] permite que os administradores configurem e personalizem a funcionalidade de metadados para modificar a oferta padrão do Adobe.
 
 ## Editar esquema de metadados {#metadata-schema}
 
@@ -48,7 +49,7 @@ Para evitar uma situação como DOS (negação de serviço), [!DNL Enterprise Ma
 
 `org.apache.sling.engine.impl.parameters.Util Too many name/value pairs, stopped processing after 10000 entries`
 
-Para alterar o limite, acesse **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > **[!UICONTROL Console da Web]** e altere o valor de **[!UICONTROL Parâmetros de POST máximo]** na **[!UICONTROL Manipulação de parâmetro da solicitação do Apache]** Configuração OSGi.
+Para alterar o limite, acesse **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > **[!UICONTROL Console da Web]** e altere o valor de **[!UICONTROL Parâmetros de POST máximo]** na **[!UICONTROL Manipulação de parâmetro da solicitação do Apache]** configuração OSGi.
 
 ## Perfis de metadados {#metadata-profiles}
 
@@ -106,7 +107,7 @@ Um perfil de metadados permite aplicar metadados padrão a ativos em uma pasta. 
 
 1. Clique em **[!UICONTROL Copiar]** na barra de ferramentas.
 1. Na caixa de diálogo **[!UICONTROL Copiar Perfil de Metadados]**, insira um título para a nova cópia do Perfil de Metadados.
-1. Clique em **[!UICONTROL Copiar]**. A cópia do Perfil de metadados aparece na lista de perfis na página **[!UICONTROL Perfis de metadados]**.
+1. Clique em **[!UICONTROL Copiar]**. A cópia do Perfil de metadados aparece na lista de perfis na página **[!UICONTROL Perfis de metadados]**.
 
    ![Uma cópia do perfil de metadados foi adicionada na página Perfis de Metadados](assets/copy-metadata-profile.png)
 
@@ -117,8 +118,9 @@ Um perfil de metadados permite aplicar metadados padrão a ativos em uma pasta. 
 1. Clique em **[!UICONTROL Excluir Perfis de Metadados]** na barra de ferramentas.
 1. Na caixa de diálogo, clique em **[!UICONTROL Excluir]** para confirmar a operação de exclusão. O perfil de metadados é excluído da lista.
 
-<!-- TBD: Revisit to find out the correct config. and update these steps. When fixed, also o
-These steps have been carried forward from old AEM versions. See https://helpx.adobe.com/br/experience-manager/6-2/assets/using/metadata-profiles.html#ApplyingaMetadataProfiletoFolders
+<!--
+TBD: Revisit to find out the correct config. and update these steps. When fixed, also o
+These steps have been carried forward from old AEM versions. See https://helpx.adobe.com/experience-manager/6-2/assets/using/metadata-profiles.html#ApplyingaMetadataProfiletoFolders
 
 ### Configuration to apply a metadata profile globally {#apply-a-metadata-profile-globally}
 
@@ -186,8 +188,8 @@ A guia **[!UICONTROL Criar Formulário]** lista itens de formulário que você u
 | Nome do componente | Descrição |
 |---|---|
 | [!UICONTROL Cabeçalho da seção] | Adicione um cabeçalho de seção para obter uma lista de componentes comuns. |
-| [!UICONTROL Texto em linha única] | Adicione uma propriedade de texto de linha única. Ele é armazenado como uma string. |
-| [!UICONTROL Texto de vários valores] | Adicione uma propriedade de texto de vários valores. Ele é armazenado como uma matriz de sequência. |
+| [!UICONTROL Texto em linha única] | Adiciona uma propriedade de texto em linha única. Ele é armazenado como uma string. |
+| [!UICONTROL Texto de vários valores] | Adiciona uma propriedade de texto multivalor. Ele é armazenado como uma matriz de sequência. |
 | [!UICONTROL Número] | Adiciona um componente de número. |
 | [!UICONTROL Data] | Adiciona um componente de data. |
 | [!UICONTROL Lista suspensa] | Adiciona uma lista suspensa. |
@@ -278,7 +280,7 @@ Insira os valores de metadados nos vários campos e clique em **[!UICONTROL Salv
 >
 >* [Conceitos e noções básicas sobre metadados](metadata-concepts.md).
 >* [Editar propriedades de metadados de várias coleções](manage-collections.md#editing-collection-metadata-in-bulk).
->* [Importação e exportação de metadados no Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-export.html?lang=pt-BR).
+>* [Importação e exportação de metadados no Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-export.html).
 >* [Perfis para processar metadados, imagens e vídeos](processing-profiles.md).
 >* [Práticas recomendadas para organizar seus ativos digitais para usar perfis de processamento](/help/assets/organize-assets.md).
 >* [Writeback XMP](/help/assets/xmp-writeback.md).

@@ -7,9 +7,9 @@ feature: DRM,Asset Management
 exl-id: a49cfd25-e8d9-492f-be5e-acab0cf67a28
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '1425'
+source-wordcount: '1440'
 ht-degree: 6%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 6%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/drm.html?lang=pt-BR) |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/drm.html?lang=en) |
 | AEM 6.5 | Este artigo |
 
 Os ativos digitais são frequentemente associados a uma licença que especifica os termos e a duração do uso. Como o [!DNL Adobe Experience Manager Assets] é totalmente integrado à plataforma [!DNL Experience Manager], você pode gerenciar com eficiência as informações de expiração de ativos e os estados dos ativos. Você também pode associar informações de licenciamento a ativos.
@@ -71,10 +71,10 @@ Se você modificar a data de expiração de um ativo publicado para uma data ant
 
 Além disso, se uma falha ou erro impedir que o scheduler detecte ativos expirados no ciclo atual, o scheduler reexamina esses ativos no próximo ciclo e detecta seu status expirado.
 
-Para permitir que o console [!DNL Assets] exiba os ativos compostos de referência junto com os ativos secundários expirados, configure um fluxo de trabalho de **[!UICONTROL Notificação de expiração do Adobe CQ DAM]** no Configuration Manager [!DNL Experience Manager].
+Para permitir que o console [!DNL Assets] exiba os ativos compostos de referência junto com os ativos secundários expirados, configure um fluxo de trabalho **[!UICONTROL Notificação de expiração do Adobe CQ DAM]** no Configuration Manager [!DNL Experience Manager].
 
 1. Abra o Configuration Manager [!DNL Experience Manager].
-1. Escolha **[!UICONTROL Notificação de expiração do DAM do Adobe CQ]**. Por padrão, o **[!UICONTROL Agendador baseado em tempo]** está selecionado, o que agenda um trabalho para verificar em um momento específico se um ativo expirou subativos. Após a conclusão do trabalho, os ativos que expiraram subativos e os ativos referenciados são exibidos como expirados nos resultados da pesquisa.
+1. Escolha **[!UICONTROL Notificação de expiração do Adobe CQ DAM]**. Por padrão, o **[!UICONTROL Agendador baseado em tempo]** está selecionado, o que agenda um trabalho para verificar em um momento específico se um ativo expirou subativos. Após a conclusão do trabalho, os ativos que expiraram subativos e os ativos referenciados são exibidos como expirados nos resultados da pesquisa.
 
 1. Para executar o trabalho periodicamente, desmarque o campo **[!UICONTROL Regra do agendador com base na hora]** e modifique o tempo em segundos no campo **[!UICONTROL Agendador periódico]**. Por exemplo, a expressão de exemplo `0 0 0 * * ?` aciona o trabalho às 00 horas.
 1. Selecione **[!UICONTROL enviar email]** para receber emails quando um ativo expirar.
@@ -92,8 +92,8 @@ Para permitir que o console [!DNL Assets] exiba os ativos compostos de referênc
 O console [!DNL Assets] pode exibir vários estados para ativos. Dependendo do estado atual de um ativo específico, a exibição de cartão exibe um rótulo que descreve seu estado, por exemplo, Expirado, Publicado, Aprovado, Rejeitado etc.
 
 1. Na interface do usuário do [!DNL Assets], selecione um ativo.
-1. Clique em **[!UICONTROL Publish]** na barra de ferramentas. Se você não vir **Publish** na barra de ferramentas, clique em **[!UICONTROL Mais]** na barra de ferramentas e localize a opção **[!UICONTROL Publish]** ![publicar](assets/do-not-localize/publish-globe.png).
-1. Escolha **[!UICONTROL Publish]** no menu e feche a caixa de diálogo de confirmação.
+1. Clique em **[!UICONTROL Publicar]** na barra de ferramentas. Se você não vir **Publicar** na barra de ferramentas, clique em **[!UICONTROL Mais]** na barra de ferramentas e localize a opção **[!UICONTROL Publicar]** ![publicar](assets/do-not-localize/publish-globe.png).
+1. Escolha **[!UICONTROL Publicar]** no menu e feche a caixa de diálogo de confirmação.
 1. Saia do modo de seleção. O status de publicação do ativo aparece na parte inferior da miniatura do ativo na exibição de cartão. Na exibição em lista, a coluna Publicado exibe a hora em que o ativo foi publicado.
 
    ![chlimage_1-157](assets/chlimage_1-157.png)
@@ -119,7 +119,7 @@ O console [!DNL Assets] pode exibir vários estados para ativos. Dependendo do e
 
 1. Para pesquisar ativos com base em seu status, clique em **[!UICONTROL Pesquisar]** ![opção de pesquisa](assets/do-not-localize/search_icon.png) para exibir a barra Omnisearch.
 1. Selecione `Return` e clique em [!DNL Experience Manager] para exibir o painel de pesquisa.
-1. No painel de pesquisa, clique em **[!UICONTROL Status do Publish]** e selecione **[!UICONTROL Publicado]** para procurar ativos publicados em [!DNL Assets].
+1. No painel de pesquisa, clique em **[!UICONTROL Publicar status]** e selecione **[!UICONTROL Publicado]** para procurar ativos publicados em [!DNL Assets].
 
    ![chlimage_1-163](assets/chlimage_1-163.png)
 

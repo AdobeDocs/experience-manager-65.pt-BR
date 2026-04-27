@@ -9,10 +9,10 @@ feature: Adaptive Forms
 exl-id: 935b734c-6fb1-45e8-8515-e98c8b85286c
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '3142'
-ht-degree: 54%
+source-wordcount: '3206'
+ht-degree: 52%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 54%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/introduction-forms-authoring.html?lang=pt-BR) |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/introduction-forms-authoring.html) |
 | AEM 6.5 | Este artigo |
 
 
@@ -28,14 +28,14 @@ ht-degree: 54%
 
 Os formulários adaptáveis permitem criar formulários envolventes, responsivos, dinâmicos e adaptáveis. O AEM Forms fornece uma interface de usuário intuitiva e componentes prontos para uso para criar e trabalhar com formulários adaptáveis. Você pode optar por criar um formulário adaptável com base em um modelo de formulário ou esquema ou sem um modelo de formulário. É importante escolher cuidadosamente o modelo de formulário que atenda não apenas às suas necessidades, mas que amplie seus investimentos de infraestrutura e ativos. Escolha entre as seguintes opções para criar um formulário adaptável:
 
-* **Usar um modelo de dados de formulário**
+* **Usando um modelo de dados de formulário**
   A [integração de dados](../../forms/using/data-integration.md) permite integrar entidades e serviços de diferentes fontes de dados em um modelo de dados de formulário que você pode usar para criar formulários adaptáveis. Escolha o modelo de dados de formulário se o formulário adaptável que você está criando envolver a busca e gravação de dados de e para várias fontes de dados.
 
-* **Usar um modelo de formulário XDP**
-Esse é um modelo de formulário ideal se você tiver investido em formulários baseados em XFA ou XDP. Ele fornece uma maneira direta de converter seus formulários baseados em XFA em formulários adaptáveis. Quaisquer regras XFA existentes são mantidas nos formulários adaptáveis associados. Os formulários adaptáveis resultantes são compatíveis com construções XFA, como validações, eventos, propriedades e padrões.
+* **Usando um Modelo de Formulário XDP**
+É um modelo de formulário ideal se você tiver investimentos em formulários XFA ou XDP. Ele fornece uma maneira direta de converter seus formulários baseados em XFA em formulários adaptáveis. Quaisquer regras XFA existentes são mantidas nos formulários adaptáveis associados. Os formulários adaptáveis resultantes são compatíveis com construções XFA, como validações, eventos, propriedades e padrões.
 
-* **Usar uma definição de esquema XML (XSD) ou um esquema JSON**
-Os esquemas XML e JSON representam a estrutura na qual os dados são produzidos ou consumidos pelo sistema de back-end na sua organização. Você pode associar o esquema a um formulário adaptável e usar seus elementos para adicionar conteúdo dinâmico ao formulário adaptável. Os elementos do esquema estarão disponíveis para uso na guia Objetos do modelo de dados do navegador de conteúdo ao criar formulários adaptáveis.
+* **Usando uma Definição de Esquema XML (XSD) ou um Esquema JSON**
+Os esquemas XML e JSON representam a estrutura em que os dados são produzidos ou consumidos pelo sistema de back-end em sua organização. Você pode associar o esquema a um formulário adaptável e usar seus elementos para adicionar conteúdo dinâmico ao formulário adaptável. Os elementos do esquema estarão disponíveis para uso na guia Objetos do modelo de dados do navegador de conteúdo ao criar formulários adaptáveis.
 
 * **Usando nenhum ou sem um modelo de formulário**
 Os formulários adaptáveis criados com essa opção não usam nenhum modelo de formulário. O XML de dados gerado desses formulários tem uma estrutura simples com campos e valores correspondentes.
@@ -74,9 +74,11 @@ A barra lateral permite
 
 **A.** Navegador de conteúdo **B.** Navegador de propriedades **C.** Navegador de ativos **D.** Navegador de componentes
 
-<!--Click to enlarge
+<!--
+Click to enlarge
 
-](assets/sidebar-comps-1.png) -->
+](assets/sidebar-comps-1.png)
+-->
 
 A barra lateral inclui os seguintes navegadores:
 
@@ -84,7 +86,7 @@ A barra lateral inclui os seguintes navegadores:
 No navegador de conteúdo, é possível ver
 
    * **Objetos de formulário**
-Mostra a hierarquia de objetos do formulário. O autor pode navegar até um componente de formulário específico selecionando esse elemento na Árvore de objetos de formulário. O autor pode pesquisar objetos e reorganizá-los a partir dessa árvore.
+Mostra a hierarquia de objetos do Formulário. O autor pode navegar até um componente de formulário específico selecionando esse elemento na Árvore de objetos de formulário. O autor pode pesquisar objetos e reorganizá-los a partir dessa árvore.
 
    * **Objetos do modelo de dados**
 Permite ver a hierarquia do modelo de formulário.
@@ -120,7 +122,7 @@ Ela permite arrastar e soltar elementos do modelo de formulário no formulário 
   </tr>
   <tr>
    <td>Captcha</td>
-   <td>Adiciona a validação CAPTCHA usando o serviço reCAPTCHA do Google. Para obter detalhes, consulte <a href="../../forms/using/captcha-adaptive-forms.md" target="_blank">Usando CAPTCHA em formulários adaptáveis</a>.</td>
+   <td>Adiciona a validação CAPTCHA usando o serviço Google reCAPTCHA. Para obter detalhes, consulte <a href="../../forms/using/captcha-adaptive-forms.md" target="_blank">Usando CAPTCHA em formulários adaptáveis</a>.</td>
   </tr>
   <tr>
    <td>Gráfico</td>
@@ -152,11 +154,11 @@ Ela permite arrastar e soltar elementos do modelo de formulário no formulário 
   </tr>
   <tr>
    <td>Email</td>
-   <td><p>Adicione um campo para capturar o endereço de email. O componente Email, por padrão, valida endereços de email usando a seguinte expressão regular.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;'*+/=?^_&grave;{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
+   <td><p>Adicione um campo para capturar o endereço de email. O componente Email, por padrão, valida endereços de email usando a seguinte expressão regular.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
   </tr>
   <tr>
    <td>Anexo de arquivo</td>
-   <td><p>Adiciona um botão que permite aos usuários navegar e anexar documentos de suporte a um formulário. Você pode anexar vários arquivos a um componente de anexo de arquivo. Você também pode especificar o **[!UICONTROL Tamanho Máximo do Arquivo]** e **[!UICONTROL Tipos de Arquivos Suportados]** para os anexos no navegador de propriedades do componente. </p> <p><strong> Observação: </strong><ul> <li> O componente não oferece suporte à anexação de arquivos com nomes de arquivo que comecem com caracteres (.), contendo os caracteres \ / : * ? " &lt; &gt; | ; % $ ou contendo nomes de arquivo especiais reservados para o sistema operacional Windows, como nul, prn, con, lpt ou com. </li> <li> Para anexar vários arquivos a um componente de anexo de arquivo aberto no navegador Apple Safari, selecione e anexe arquivos um por um. Não é possível selecionar e anexar vários arquivos de uma só vez.</li> <li>O componente de Anexo de arquivo é compatível com um conjunto predefinido de formatos de arquivo em formulários adaptáveis habilitados para o Adobe Sign. Para obter mais informações, consulte <a href="https://helpx.adobe.com/br/document-cloud/help/supported-file-formats-fill-sign.html#main-pars_text">Formatos de arquivo compatíveis</a>. </li></ul></p> </td>
+   <td><p>Adiciona um botão que permite aos usuários navegar e anexar documentos compatíveis a um formulário. Você pode anexar vários arquivos a um componente de anexo de arquivo. Você também pode especificar o **[!UICONTROL Tamanho Máximo do Arquivo]** e **[!UICONTROL Tipos de Arquivos Suportados]** para os anexos no navegador de propriedades do componente. </p> <p><strong> Observação: </strong><ul> <li> O componente não oferece suporte à anexação de arquivos com nomes de arquivo que comecem com caracteres (.), contendo os caracteres \ / : * ? " &lt; &gt; | ; % $ ou contendo nomes de arquivo especiais reservados para o sistema operacional Windows, como nul, prn, con, lpt ou com. </li> <li> Para anexar vários arquivos a um componente de anexo de arquivo aberto no navegador Apple Safari, selecione e anexe arquivos um por um. Não é possível selecionar e anexar vários arquivos de uma só vez.</li> <li>O componente de Anexo de arquivo é compatível com um conjunto predefinido de formatos de arquivo em formulários adaptáveis habilitados para o Adobe Sign. Para obter mais informações, consulte <a href="https://helpx.adobe.com/br/document-cloud/help/supported-file-formats-fill-sign.html#main-pars_text">Formatos de arquivo compatíveis</a>. </li></ul></p> </td>
   </tr>
   <tr>
    <td>Listagem de Anexo de arquivo</td>
@@ -192,7 +194,7 @@ Ela permite arrastar e soltar elementos do modelo de formulário no formulário 
   </tr>
   <tr>
    <td>Painel</td>
-   <td><p>Adiciona um painel ou subpainel.</p> <p>Você também pode adicionar um componente de painel da barra de ferramentas do painel principal usando o botão <span class="uicontrol">Adicionar painel secundário</code> botão. Da mesma forma, é possível adicionar uma barra de ferramentas específica do painel usando o botão <span class="uicontrol">Adicionar barra de ferramentas do painel</code> botão. É possível configurar a posição da barra de ferramentas do painel usando a caixa de diálogo Editar painel.</p> </td>
+   <td><p>Adiciona um painel ou subpainel.</p> <p>Você também pode adicionar um componente de painel da barra de ferramentas do painel pai usando o botão <span class="uicontrol">Adicionar painel filho</code> botão. Da mesma forma, é possível adicionar uma barra de ferramentas específica do painel usando o botão <span class="uicontrol">Adicionar barra de ferramentas do painel</code> botão. É possível configurar a posição da barra de ferramentas do painel usando a caixa de diálogo Editar painel.</p> </td>
   </tr>
   <tr>
    <td>Caixa de senha</td>
@@ -240,7 +242,7 @@ Ela permite arrastar e soltar elementos do modelo de formulário no formulário 
   </tr>
   <tr>
    <td>Alternar</td>
-   <td>Adiciona um botão que executa uma ação de alternância ou ativação/desativação. Não é possível adicionar mais de duas opções no componente Alternar. Como um botão de alternância pode ter apenas dois valores: ligado ou desligado, não é possível torná-lo obrigatório. Pelo menos um valor é salvo independentemente da entrada do usuário. <br /> </td>
+   <td>Adiciona um botão que executa um botão de alternância ou habilitação/desabilitação. Não é possível adicionar mais de duas opções no componente Alternar. Como um botão de alternância pode ter apenas dois valores: ligado ou desligado, não é possível torná-lo obrigatório. Pelo menos um valor é salvo independentemente da entrada do usuário. <br /> </td>
   </tr>
   <tr>
    <td>Tabela</td>
@@ -262,7 +264,7 @@ Ela permite arrastar e soltar elementos do modelo de formulário no formulário 
   </tr>
   <tr>
    <td>Caixa de texto </td>
-   <td><p>Adiciona uma caixa de texto na qual o usuário pode especificar as informações necessárias. </p> <p>Por padrão, o componente Caixa de texto apenas aceita texto sem formatação. Você pode ativar um componente Caixa de texto para aceitar rich text. Um componente de texto Rich text habilitado fornece opções para adicionar cabeçalhos, alterar estilos de caracteres (negrito, itálico, sublinhar os caracteres), criar listas ordenadas e não ordenadas, alterar o plano de fundo do texto e a cor do texto e adicionar hiperlinks. Para ativar o rich text de uma caixa de texto, ative a opção<strong> Permitir Rich text</strong> nas propriedades do componente.</p> </td>
+   <td><p>Adiciona uma caixa de texto na qual o usuário pode especificar as informações necessárias. </p> <p>Por padrão, o componente Caixa de texto apenas aceita texto sem formatação. Você pode habilitar um componente Caixa de texto para aceitar rich text. Um componente de texto Rich text habilitado fornece opções para adicionar cabeçalhos, alterar estilos de caracteres (negrito, itálico, sublinhar os caracteres), criar listas ordenadas e não ordenadas, alterar o plano de fundo do texto e a cor do texto e adicionar hiperlinks. Para ativar o rich text de uma caixa de texto, ative a opção<strong> Permitir Rich text</strong> nas propriedades do componente.</p> </td>
   </tr>
   <tr>
    <td>Título</td>
@@ -292,9 +294,9 @@ Algumas práticas recomendadas e pontos principais a serem lembrados ao trabalha
 
 * Alguns componentes de formulário adaptáveis, como Email e Telefone, incluem padrões de validação prontos para uso. No entanto, você pode especificar a validação personalizada atualizando o campo **[!UICONTROL Padrão de Validação]** na opção Padrões nas propriedades do componente. Consulte descrições de componentes na tabela acima para obter mais informações sobre validações padrão.
 
-* Campos de formulários adaptáveis, como Caixa numérica e Email podem ser configurados para incluir tipos de entrada de HTML5 especializados. Quando esses campos estão em foco em dispositivos móveis e tablets, o teclado exibe inicialmente o alfabeto, os números e os caracteres específicos que são normalmente usados para inserir informações nos campos. Isso ajuda os usuários a inserir informações rapidamente, sem precisar alternar entre conjuntos de caracteres no teclado numérico. Para permitir entrada especializada para um componente, habilite a caixa de seleção **[!UICONTROL Usar número do tipo de HTML]** nas propriedades do componente.
+* Campos de formulários adaptáveis, como Caixa numérica e Email podem ser configurados para incluir tipos de entrada HTML5 especializados. Quando esses campos estão em foco em dispositivos móveis e tablets, o teclado exibe inicialmente o alfabeto, os números e os caracteres específicos que são normalmente usados para inserir informações nos campos. Isso ajuda os usuários a inserir informações rapidamente, sem precisar alternar entre conjuntos de caracteres no teclado numérico. Para permitir entrada especializada para um componente, habilite a caixa de seleção **[!UICONTROL Usar Número de Tipo de HTML]** nas propriedades do componente.
 
-* Você pode ativar um componente Caixa de texto para aceitar rich text. Para habilitar rich text para uma caixa de texto, habilite a caixa de seleção **[!UICONTROL Permitir rich text]** nas propriedades do componente.
+* Você pode habilitar um componente Caixa de texto para aceitar rich text. Para habilitar rich text para uma caixa de texto, habilite a caixa de seleção **[!UICONTROL Permitir rich text]** nas propriedades do componente.
 
 * Você pode ativar os componentes Caixa de texto, Email e Telefone para preencher automaticamente valores para campos como nome, endereço, cartão de crédito, telefone e email a partir das informações armazenadas nas configurações de preenchimento automático do navegador. Para habilitar este recurso, selecione **[!UICONTROL Habilitar Preenchimento Automático]** nas propriedades do componente e selecione um **[!UICONTROL Atributo de Preenchimento Automático]**. Quando um usuário preenche um formulário adaptável, os valores são sugeridos pelo perfil de preenchimento automático no navegador ou com base nos valores preenchidos anteriormente pelo usuário. Observe que o preenchimento automático funciona se as configurações de preenchimento automático no navegador do usuário estiverem ativadas.
 

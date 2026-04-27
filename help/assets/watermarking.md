@@ -7,9 +7,9 @@ feature: Asset Management
 exl-id: bc0cfb0e-3f70-4377-8831-326a7cae73bd
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '333'
 ht-degree: 4%
 
 ---
@@ -18,10 +18,10 @@ ht-degree: 4%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/watermark-assets.html?lang=pt-BR) |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/watermark-assets.html?lang=en) |
 | AEM 6.5 | Este artigo |
 
-O [!DNL Adobe Experience Manager Assets] permite adicionar uma marca d&#39;água digital aos ativos que ajuda os usuários a verificar a autenticidade e os direitos autorais dos ativos. [!DNL Experience Manager Assets] dá suporte para texto a ser usado como marca d&#39;água em arquivos PNG e JPEG.
+O [!DNL Adobe Experience Manager Assets] permite adicionar uma marca d&#39;água digital aos ativos que ajuda os usuários a verificar a autenticidade e os direitos autorais dos ativos. O [!DNL Experience Manager Assets] oferece suporte para que o texto seja usado como marca d&#39;água em arquivos PNG e JPEG.
 
 Para poder aplicar a marca d&#39;água em ativos, adicione a etapa de marca d&#39;água no fluxo de trabalho [!UICONTROL Ativo de atualização do DAM].
 
@@ -48,7 +48,7 @@ Para poder aplicar a marca d&#39;água em ativos, adicione a etapa de marca d&#3
 1. Salve o fluxo de trabalho do **[!UICONTROL Ativo de atualização do DAM]** com a etapa de marca d&#39;água.
 1. Na interface de usuário do [!DNL Assets], carregue um ativo de amostra. A marca d&#39;água é exibida com o tamanho da fonte, cor e assim por diante, na posição configurada nas etapas acima.
 
-Para criar uma marca d&#39;água para documentos PDF de forma programática ou com informações dinâmicas, considere usar a oferta [Serviços de Documentos Experience Manager](/help/forms/using/overview-aem-document-services.md).
+Para criar uma marca d&#39;água nos documentos do PDF de forma programática ou com informações dinâmicas, considere usar a oferta [Serviços de Documentos da Experience Manager](/help/forms/using/overview-aem-document-services.md).
 
 ## Dicas e limitações {#tips-limitations}
 

@@ -6,10 +6,10 @@ content-type: reference
 feature: Adaptive Forms, Core Components
 role: Admin, User, Developer
 exl-id: 00073e3a-f1b5-4c42-9fea-4a14b8a22c81
-source-git-commit: 7f1283898cbeebdedb7bdea6f0a8d9db567617ee
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '3385'
-ht-degree: 0%
+source-wordcount: '3498'
+ht-degree: 1%
 
 ---
 
@@ -346,16 +346,16 @@ Antes de começar a adicionar uma função personalizada ao Adaptive Forms, veri
 ## Criar uma função personalizada {#create-custom-function}
 
 As etapas para criar funções personalizadas são:
-1. [Crie uma biblioteca do lado do cliente usando o Arquétipo de Projeto AEM e adicione uma função personalizada](#create-client-library-archetype)
+1. [Crie uma biblioteca do lado do cliente usando o Arquétipo de Projeto do AEM e adicione uma função personalizada](#create-client-library-archetype)
 OU
    [Criar funções personalizadas através do CRXDE](#create-add-custom-function)
 1. [Adicionar a biblioteca do cliente a um Formulário adaptável](#add-client-library)
 1. [Usar função personalizada em um formulário adaptável](#use-custom-functions)
 
 
-### Criar uma biblioteca do cliente usando o Arquétipo de projeto AEM{#create-client-library-archetype}
+### Criar uma biblioteca do cliente usando o Arquétipo de projeto do AEM{#create-client-library-archetype}
 
-Você pode adicionar funções personalizadas adicionando uma biblioteca do cliente ao projeto criado [usando o Arquétipo de Projeto AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/developing/archetype/using#getting-started).
+Você pode adicionar funções personalizadas adicionando uma biblioteca do cliente ao projeto criado [usando o Arquétipo de Projetos AEM](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/using#getting-started).
 Se você tiver um projeto existente <!--and have already the project structure as shown in the image below,-->, poderá adicionar diretamente [funções personalizadas](#create-add-custom-function) ao seu projeto local.
 
 <!--![custom fuction folder structure](assets/custom-library-folder-structure.png)-->
@@ -364,7 +364,7 @@ Depois de criar um Projeto do Arquétipo ou usar um projeto existente, crie uma 
 
 **Adicionar uma pasta da biblioteca do cliente**
 
-Para adicionar uma nova pasta da biblioteca do cliente ao seu [diretório do projeto AEM], siga estas etapas:
+Para adicionar uma nova pasta da biblioteca do cliente ao seu [diretório do projeto AEM], siga as etapas abaixo:
 
 1. Abra o [diretório do projeto AEM] em um editor.
 
@@ -572,7 +572,7 @@ Vamos visualizar o formulário para observar como as funções personalizadas s�
 
 >[!NOTE]
 >
-> Você pode consultar a seguinte pasta [funções personalizadas](/help/forms/using/assets/customfunctions.zip). Baixe e instale esta pasta na instância do AEM usando o [Gerenciador de Pacotes](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager).
+> Você pode consultar a seguinte pasta [funções personalizadas](/help/forms/using/assets/customfunctions.zip). Baixe e instale esta pasta na instância do AEM usando o [Gerenciador de Pacotes](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager).
 
 ### Suporte para funções assíncronas em funções personalizadas {#support-of-async-functions}
 
@@ -615,7 +615,7 @@ Para ver seu funcionamento, vamos adicionar um botão e criar uma regra para o b
 
 ![criando regra para função assíncrona](/help/forms/using/assets/rule-for-async-funct.png)
 
-Consulte a ilustração da janela de console abaixo para demonstrar que, quando o usuário clica no botão `Fetch`, a função personalizada `callAsyncFunction` é invocada, o que, por sua vez, chama uma função assíncrona `asyncFunction`. Inspect na janela do console para exibir a resposta ao clicar no botão:
+Consulte a ilustração da janela de console abaixo para demonstrar que, quando o usuário clica no botão `Fetch`, a função personalizada `callAsyncFunction` é invocada, o que, por sua vez, chama uma função assíncrona `asyncFunction`. Inspecione a janela do console para exibir a resposta ao clicar no botão:
 
 ![Janela de console](/help/forms/using/assets/async-custom-funct-console.png)
 
@@ -633,7 +633,8 @@ Objetos de campo referem-se aos componentes ou elementos individuais em um formu
 >
 > O `param {scope} globals` deve ser o último parâmetro e não é exibido no editor de regras de um Formulário adaptável.
 
-<!-- Let us look at the following code snippet:
+<!--
+Let us look at the following code snippet:
 
 ```JavaScript
    
@@ -653,7 +654,8 @@ Objetos de campo referem-se aos componentes ou elementos individuais em um formu
     }
 ```
 
-In the above code snippet, a custom function named `updateDateTime` takes parameters such as a field object and a global object. The field represents the textbox object where the formatted date and time value is displayed within the form. -->
+In the above code snippet, a custom function named `updateDateTime` takes parameters such as a field object and a global object. The field represents the textbox object where the formatted date and time value is displayed within the form.
+-->
 
 Saiba como as funções personalizadas usam campos e objetos globais com a ajuda de um formulário `Contact Us` usando diferentes casos de uso.
 
@@ -774,14 +776,14 @@ Consulte a ilustração abaixo para mostrar que, se o usuário clicar no botão 
 
 #### **Caso de uso**: para exibir uma mensagem personalizada no nível do campo e marcar o campo como inválido
 
-Você pode usar a função `markFieldAsInvalid()` para definir um campo como inválido e definir uma mensagem de erro personalizada em nível de campo. O valor `fieldIdentifier` pode ser `fieldId`, `field qualifiedName` ou `field dataRef`. O valor do objeto nomeado `option` pode ser `{useId: true}`, `{useQualifiedName: true}` ou `{useDataRef: true}`.
-As sintaxes usadas para marcar o campo como inválido e definir uma mensagem personalizada são:
+You can use the `markFieldAsInvalid()` function to define a field as invalid and set custom error message at a field level. The `fieldIdentifier` value can be `fieldId`, or `field qualifiedName`, or `field dataRef`. The value of the object named `option` can be `{useId: true}`, `{useQualifiedName: true}`, or `{useDataRef: true}`.
+The syntaxes used to mark field as invalid and set custom message are:
 
 * `globals.functions.markFieldAsInvalid(field.$id,"[custom message]",{useId: true});`
 * `globals.functions.markFieldAsInvalid(field.$qualifiedName, "[custom message]", {useQualifiedName: true});`
 * `globals.functions.markFieldAsInvalid(field.$dataRef, "[custom message]", {useDataRef: true});`
 
-Adicione o seguinte código na função personalizada conforme explicado na seção [create-custom-function](#create-custom-function) para habilitar a mensagem personalizada no nível do campo.
+Add the following code in the custom function as explained in the [create-custom-function](#create-custom-function) section, to enable custom message at the field level.
 
 ```javascript
     /**
@@ -799,30 +801,30 @@ Adicione o seguinte código na função personalizada conforme explicado na seç
 }
 ```
 
-Neste exemplo, se o usuário inserir menos de 15 caracteres na caixa de texto comentários, uma mensagem personalizada será exibida no nível do campo.
+In this example, if the user enters less than 15 characters in the comments textbox, a custom message appears at the field level.
 
-A próxima etapa é criar uma regra para o campo `comments`:
+Next step is to create a rule for the `comments` field:
 
-![Marcar campo como Inválido](/help/forms/using/assets/custom-function-invalid-field.png)
+![Mark field as Invalid](/help/forms/using/assets/custom-function-invalid-field.png)
 
-Veja a demonstração abaixo para mostrar que inserir comentários negativos no campo `comments` aciona a exibição de uma mensagem personalizada no nível do campo:
+See the demonstration below to display that entering negative feedback in the `comments` field triggers the display of a custom message at the field level:
 
-![Marcar campo como Formulário de visualização inválido](/help/forms/using/assets/custom-function-invalidfield-form.png)
+![Mark field as Invalid Preview form](/help/forms/using/assets/custom-function-invalidfield-form.png)
 
-Se o usuário inserir mais de 15 caracteres na caixa de texto de comentários, o campo será validado e o formulário será enviado:
+If the user enters more than 15 characters in commments textbox, the field gets validated and form is submitted:
 
-![Marcar campo como formulário de Visualização válido](/help/forms/using/assets/custom-function-validfield-form.png)
+![Mark field as valid Preview form](/help/forms/using/assets/custom-function-validfield-form.png)
 
 
-#### **Caso de uso**: enviar dados alterados para o servidor
+#### **Use Case**: Submit altered data to the server
 
-A seguinte linha de código:
-`globals.functions.submitForm(globals.functions.exportData(), false);` é usado para enviar os dados do formulário após manipulação.
-* O primeiro argumento diz respeito aos dados a apresentar.
-* O segundo argumento representa se o formulário deve ser validado antes do envio. Ele é `optional` e definido como `true` por padrão.
-* O terceiro argumento é o `contentType` do envio, que também é opcional com o valor padrão como `multipart/form-data`. Os outros valores podem ser `application/json` e `application/x-www-form-urlencoded`.
+The following line of code:
+`globals.functions.submitForm(globals.functions.exportData(), false);` is used to submit the form data after manipulation.
+* The first argument is the data to be submitted.
+* The second argument represents whether the form is to be validated before submission. It is `optional` and set as `true` by default.
+* The third argument is the `contentType` of the submission, which is also optional with the default value as `multipart/form-data`. The other values can be `application/json` and `application/x-www-form-urlencoded`.
 
-Adicione o seguinte código na função personalizada, conforme explicado na seção [create-custom-function](#create-custom-function), para enviar os dados manipulados no servidor:
+Add the following code in the custom function as explained in the [create-custom-function](#create-custom-function) section, to submit the manipulated data at the server:
 
 ```javascript
     /**
@@ -843,19 +845,19 @@ Adicione o seguinte código na função personalizada, conforme explicado na se�
     }
 ```
 
-Neste exemplo, se o usuário deixar a caixa de texto `comments` vazia, o `NA` será enviado ao servidor no envio do formulário.
+In this example, if the user leaves the `comments` textbox empty, the `NA` is submitted to the server at form submission.
 
-Agora crie uma regra para o botão `Submit` que envia dados:
+Now create a rule for the `Submit` button which submits data:
 
-![Enviar dados](/help/forms/using/assets/custom-function-submit-data.png)
+![Submit data](/help/forms/using/assets/custom-function-submit-data.png)
 
-Consulte a ilustração da `console window` abaixo para demonstrar que, se o usuário deixar a caixa de texto `comments` vazia, o valor como `NA` será enviado ao servidor:
+Refer to the illustration of the `console window` below to demonstrate that if the user leaves the `comments` textbox empty, then the value as `NA` is submitted at the server:
 
 ![Enviar dados na janela do console](/help/forms/using/assets/custom-function-submit-data-form.png)
 
 Você também pode inspecionar a janela do console para visualizar os dados enviados para o servidor:
 
-![Dados do Inspect na janela do console](/help/forms/using/assets/custom-function-submit-data-console-data.png)
+![Inspecionar dados na janela do console](/help/forms/using/assets/custom-function-submit-data-console-data.png)
 
 <!--
 
@@ -980,7 +982,7 @@ Caso as funções personalizadas sejam modificadas, o armazenamento em cache é 
 
 ## Resolução de problemas {#troubleshooting}
 
-* O usuário precisa garantir que o [componente principal e a versão da especificação estejam definidos com a versão mais recente](https://github.com/adobe/aem-core-forms-components/tree/release/650). No entanto, para projetos e formulários de AEM existentes, há etapas adicionais a seguir:
+* O usuário precisa garantir que o [componente principal e a versão da especificação estejam definidos com a versão mais recente](https://github.com/adobe/aem-core-forms-components/tree/release/650). No entanto, para projetos e formulários existentes do AEM, há etapas adicionais a seguir:
 
    * Para o projeto AEM, o usuário deve substituir todas as instâncias de `submitForm('custom:submitSuccess', 'custom:submitError')` por `submitForm()` e implantar o projeto.
 

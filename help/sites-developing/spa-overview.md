@@ -11,9 +11,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 index: false
-source-git-commit: 1509ca884e2f9eb931fc7cd416801957459cc4a0
+source-git-commit: 147b0efb32609c05949c9fe374fa4fca6a9dbfb1
 workflow-type: tm+mt
-source-wordcount: '1626'
+source-wordcount: '1648'
 ht-degree: 85%
 
 ---
@@ -53,8 +53,8 @@ Se o componente Página de SPA herda do componente principal da página, há dua
 * Se o modelo for editável, adicione-o à política de página.
 * Ou adicione as categorias utilizando o `customfooterlibs.html`.
 
-Para cada recurso no modelo exportado, o SPA mapeia um componente real que faz a
-renderização. O modelo, representado como JSON, é renderizado usando os mapeamentos de componente em um contêiner.
+Para cada recurso no modelo exportado, o SPA mapeará um componente real que fará o
+renderização. O modelo, representado como JSON, é renderizado utilizando os mapeamentos de componente em um container.
 ![screen_shot_2018-08-20at144152](assets/screen_shot_2018-08-20at144152.png)
 
 >[!CAUTION]

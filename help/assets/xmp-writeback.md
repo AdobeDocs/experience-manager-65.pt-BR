@@ -7,10 +7,10 @@ feature: Metadata
 exl-id: 82148ae5-37e9-4fc5-ada9-db3d91b29c33
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 0b90fdd13efc5408ef94ee1966f04a80810b515e
+source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '780'
-ht-degree: 6%
+source-wordcount: '801'
+ht-degree: 5%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 6%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/assets/admin/xmp-metadata) |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/xmp-metadata) |
 | AEM 6.5 | Este artigo |
 
 Esse recurso de write-back do XMP em [!DNL Adobe Experience Manager Assets] replica as alterações de metadados nas representações do ativo original. Ao alterar os metadados de um ativo no Assets ou ao fazer upload do ativo, as alterações são inicialmente armazenadas no nó de metadados na hierarquia do ativo.
@@ -86,7 +86,7 @@ A filtragem de metadados do XMP por meio do lista de permissões resolve esse pr
 
 1. Para abrir o Configuration Manager, acesse `https://[aem_server]:[port]/system/console/configMgr`.
 1. Abra a configuração **[!UICONTROL Adobe CQ DAM XmpFilter]**.
-1. Para aplicar a filtragem por meio de uma lista de permissões, selecione **[!UICONTROL Aplicar Inclui na lista de permissões às Propriedades da XMP]** e especifique as propriedades a serem importadas na caixa **[!UICONTROL Nomes XML permitidos para filtragem da XMP]**.
+1. Para aplicar a filtragem por meio de uma lista de permissões, selecione **[!UICONTROL Aplicar Incluo na lista de permissões às Propriedades do XMP]** e especifique as propriedades a serem importadas na caixa **[!UICONTROL Nomes XML permitidos para filtragem do XMP]**.
 
    ![chlimage_1-136](assets/chlimage_1-347.png)
 

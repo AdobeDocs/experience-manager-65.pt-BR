@@ -1,27 +1,29 @@
 ---
-title: A geração de PDF não imprime um grande número de PDF com o WorkBench
-description: Quando um cliente gera um grande número de PDF por meio de serviços implementados pelo WorkBench, ocorre uma falha no serviço de impressão.
+title: A geração PDF não imprime um grande número de PDFs com o WorkBench
+description: Quando um cliente gera um grande número de PDFs por meio de serviços implementados pelo WorkBench, o serviço de impressão falha.
 exl-id: f3746b8e-4c38-447a-b5bf-d11fc77556f7
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '775'
+source-wordcount: '787'
 ht-degree: 0%
 
 ---
 
-# A geração de PDF não imprime um grande número de PDF através do WorkBench {#PDF-generation-fails-to-print-a-large-number-of-PDFs-via-WorkBench}
+# A geração PDF não imprime um grande número de PDFs pelo WorkBench {#PDF-generation-fails-to-print-a-large-number-of-PDFs-via-WorkBench}
 
 ## Problema {#issue}
 
-Quando um cliente gera um grande número de PDF por meio de serviços implementados pelo WorkBench. Falha no serviço devido à memória insuficiente. O erro é exibido como:
+Quando um cliente gera um grande número de PDFs por meio de serviços implementados pelo WorkBench. Falha no serviço devido à memória insuficiente. O erro é exibido como:
 
 `ALC-OUT-002-013: XMLFormFactory, PAexecute failure: "0: Out of Memory"`
 
-<!-- Attached is a simplified template (BollatoRiservatiLandscape_table_simple.xdp) that simulates the problem.
-Using the Designer, if we associate the template "BollatoRiservatiLandscape_table_semplice.xdp" with the XML file "BollatoRiservati.xml" during the generation of the pdf, the process comes to occupy 1.6 Gb of RAM. On the server side, with the complete template, the pdf generation process breaks down, occupying 2 GB of RAM.-->
+<!--
+Attached is a simplified template (BollatoRiservatiLandscape_table_simple.xdp) that simulates the problem.
+Using the Designer, if we associate the template "BollatoRiservatiLandscape_table_semplice.xdp" with the XML file "BollatoRiservati.xml" during the generation of the pdf, the process comes to occupy 1.6 Gb of RAM. On the server side, with the complete template, the pdf generation process breaks down, occupying 2 GB of RAM.
+-->
 
 Isso ocorre porque o número máximo de páginas em uma solicitação de impressão é limitado a aproximadamente 1000 páginas no Windows. Quando uma saída de impressão está sendo gerada, o modelo e os dados precisam ser carregados na memória e o layout resultante é construído na memória. Isso significa que há limites para o tamanho da saída final. O processo que gera a saída de impressão é uma tarefa de 32 bits, o que significa que está limitada a 2 GB de RAM no Windows <!--and 4 GB on UNIX-->.
 
@@ -56,7 +58,7 @@ Como somos limitados pela memória máxima do processo, a memória consumida pel
 
 Se o formulário tiver muitos nós pequenos com dados pequenos, o processo consumirá mais memória (e, portanto, ficará sem memória mais rápido) do que um formulário que tenha menos nós (mesmo) com dados grandes.
 
-Leia o [Apêndice abaixo](#appendix) para obter mais informações, onde os resultados dos testes são baseados em formulário de Impressão (PDF não marcado). O uso de requisitos de memória de processo de PDF marcado aumenta. Também depende do número de campos no formulário - aproximadamente, o requisito de memória do processo seria um pouco mais de 1,5 vez de PDF não marcado.
+Leia o [Apêndice abaixo](#appendix) para obter mais informações, em que os resultados dos testes são baseados no formulário Imprimir (PDF Não Marcado). O uso de requisitos de memória de processo do PDF marcado aumenta. Também depende do número de campos no formulário - aproximadamente, o requisito de memória do processo seria um pouco mais de 1,5 vez de PDF não marcado.
 
 ### Forms interativo {#interactive-forms}
 
@@ -64,7 +66,7 @@ Os formulários interativos consumiriam mais memória do que o Print Forms, já 
 
 ### Formatos de imagem {#image-formats}
 
-O Adobe não recomenda nenhum formato de imagem específico. Mas seria bom ter um tamanho menor de imagem, por exemplo, PNG (Portable Network Graphics). Também não é aconselhável usar imagens de alta resolução cujos tamanhos variam várias centenas de MegaBytes. Além disso, não é aconselhável usar imagens compactadas cujo tamanho, após a descompactação, se expande para várias centenas de Megabytes de dados.
+A Adobe não recomenda nenhum formato de imagem específico. Mas seria bom ter um tamanho menor de imagem, por exemplo, PNG (Portable Network Graphics). Também não é aconselhável usar imagens de alta resolução cujos tamanhos variam várias centenas de MegaBytes. Além disso, não é aconselhável usar imagens compactadas cujo tamanho, após a descompactação, se expande para várias centenas de Megabytes de dados.
 
 ### Apêndice {#appendix}
 
@@ -72,15 +74,15 @@ O Adobe não recomenda nenhum formato de imagem específico. Mas seria bom ter u
 
 São mostradas abaixo diferentes variantes de tabelas que mostram a renderização do número de páginas em comparação ao tamanho dos dados de uma tabela simples e de uma tabela complexa.
 
-1. Uma Tabela com uma única coluna onde são geradas 5.000 páginas de PDF, com tamanho de arquivo de dados de 24 MB e registros de 30 K.
+1. Uma Tabela com uma única coluna onde são geradas 5.000 páginas de PDFs, o tamanho do arquivo de dados é de 24 MB e registros de 30 K.
 
    ![tabela_coluna_única](/help/forms/using/assets/table_single_column.png)
 
-1. Uma tabela com muitas colunas pequenas onde são geradas 800 páginas de PDF, o tamanho do arquivo de dados é de 4,6 MB e registros de 20 K.
+1. Uma tabela com muitas colunas pequenas onde são geradas 800 páginas de PDFs, o tamanho do arquivo de dados é de 4,6 MB e 20 K registros.
    ![table_many_small_columns](/help/forms/using/assets/table_many_small_columns.png)
 
 1. Uma tabela com muitas colunas pequenas, mas arquivos de dados maiores devido ao uso de nomes xmlTag maiores.
-Aqui, tudo é igual ao anterior, mas os nomes das tags xml ficaram grandes (para que o tamanho do arquivo de dados aumente sem qualquer aumento nos dados efetivos reais), o resultado final (limite superior) é quase o mesmo. Embora o tamanho do arquivo de dados tenha aumentado de 4,6 MB para 44,6 MB. Aqui são geradas 800 páginas de PDF, o tamanho do arquivo de dados é de 44,6 MB e registros de 20 K.
+Aqui, tudo é igual ao anterior, mas os nomes das tags xml ficaram grandes (para que o tamanho do arquivo de dados aumente sem qualquer aumento nos dados efetivos reais), o resultado final (limite superior) é quase o mesmo. Embora o tamanho do arquivo de dados tenha aumentado de 4,6 MB para 44,6 MB. Aqui são geradas 800 páginas de PDFs, o tamanho do arquivo de dados é de 44,6 MB e registros de 20 K.
 
    ![table_greater_xml_tagname](/help/forms/using/assets/table_bigger_xml_tagname.png)
 

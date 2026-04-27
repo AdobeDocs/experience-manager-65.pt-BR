@@ -7,9 +7,9 @@ role: User
 feature: Workflow,Renditions
 exl-id: cfd6c981-1a35-4327-82d7-cf373d842cc3
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: f8588ef353bd08b41202350072728d80ee51f565
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '2109'
+source-wordcount: '2152'
 ht-degree: 3%
 
 ---
@@ -30,7 +30,8 @@ Os manipuladores de mídia são serviços no [!DNL Assets] que executam ações 
 
 Os seguintes manipuladores de mídia estão disponíveis em [!DNL Assets] e tratam dos tipos MIME mais comuns:
 
-<!-- TBD: Java versions should not be set to 1.5. Must be updated.
+<!--
+TBD: Java versions should not be set to 1.5. Must be updated.
 -->
 
 | Nome do manipulador | Nome do serviço (no console do sistema) | Tipos MIME suportados |
@@ -123,7 +124,7 @@ Os seguintes métodos devem ser implementados:
 
 Este é um exemplo de template:
 
-empacotar my.own.stuff; /&ast;&ast; &ast; @scr.component inherit=&quot;true&quot; &ast; @scr.service &ast;/ public class MyMediaHandler extends com.day.cq.dam.core.AbstractAssetHandler { // implementar as partes relevantes }
+empacotar my.own.stuff; /&amp;ast;&amp;ast; &amp;ast; @scr.component inherit=&quot;true&quot; &amp;ast; @scr.service &amp;ast;/ public class MyMediaHandler extends com.day.cq.dam.core.AbstractAssetHandler { // implementar as partes relevantes }
 
 A interface e as classes incluem:
 

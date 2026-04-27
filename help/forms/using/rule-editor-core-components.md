@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User
 level: Beginner, Intermediate
 exl-id: 107ad23b-53df-41d4-ab97-b09d189abc1b
-source-git-commit: 7b6b2adaf4dfc843aeb054c7db834cebd211f2ed
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '5588'
+source-wordcount: '5734'
 ht-degree: 0%
 
 ---
@@ -95,7 +95,8 @@ O editor de regras fornece os seguintes operadores lógicos e eventos com os qua
 * **Navigation(event):** Returns true when the user clicks a navigation object. Navigation objects are used to move between panels. 
 * **Step Completion(event):** Returns true when a step of a rule completes.
 * **Successful Submission(event):** Returns true on successful submission of data to a form data model.
-* **Error in Submission(event):**  Returns true on unsuccessful submission of data to a form data model. -->
+* **Error in Submission(event):**  Returns true on unsuccessful submission of data to a form data model.
+-->
 
 ## Tipos de regras disponíveis no editor de regras {#available-rule-types-in-rule-editor}
 
@@ -184,7 +185,8 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 1. Add the **key** and **value** pair as follows:
    * key: fd:changeEventBehaviour
    * value: deps
-1. Click **[!UICONTROL Done]**. -->
+1. Click **[!UICONTROL Done]**.
+-->
 
 Se os vários campos permitidos no recurso Quando condição encontrarem problemas, siga as etapas de solução de problemas como:
 
@@ -256,7 +258,9 @@ A figura a seguir representa um exemplo de ativação dinâmica da caixa de sele
 
 **[!UICONTROL Saída de Função]** Define uma regra baseada em funções predefinidas ou funções personalizadas.
 
-**[!UICONTROL Navegar até]** Navega até outro <!--Interactive Communications,--> Forms Adaptive, outros ativos, como imagens ou fragmentos de documentos, ou uma URL externa. <!-- For more information, see [Add button to the Interactive Communication](create-interactive-communication.md#addbuttontothewebchannel). -->
+**[!UICONTROL Navegar até]** Navega até outro Forms adaptável, outros ativos, como imagens ou fragmentos de documentos, ou uma URL externa.
+<!--Interactive Communications,-->
+<!-- For more information, see [Add button to the Interactive Communication](create-interactive-communication.md#addbuttontothewebchannel). -->
 
 **[!UICONTROL Evento de expedição]** aciona as ações ou comportamentos específicos com base em condições ou eventos predefinidos.
 
@@ -277,13 +281,13 @@ Defina o valor do Objeto A como:
 
 Quando (opcional):
 
-(Condição 1 E Condição 2 E Condição 3) é VERDADEIRA;
+(Condição 1 E Condição 2 E Condição 3) é VERDADEIRO;
 
 O exemplo a seguir seleciona o valor de `Question2` como `True` e define o valor de `Result` como `correct`.
 
-![Definir valor-serviço da Web](assets/set-value-web-service.png)
+![Serviço-Web-valor-definição](assets/set-value-web-service.png)
 
-Exemplo de Definir Valor regra usando o serviço de modelo de dados de formulário.
+Exemplo de regra Definir valor usando o serviço de Modelo de dados de formulário.
 
 ### [!UICONTROL Programa] {#show}
 
@@ -385,7 +389,8 @@ To define a rule based on a form data model:
 1. Select a data model object property from the **[!UICONTROL Display Value]** drop-down list. The number of checkboxes in the Adaptive Form is derived from the number of instances defined for that property in the database.
 1. Select a data model object property from the **[!UICONTROL Save Value]** drop-down list.
 
-![FDM set options](assets/fdm_set_options_new.png) -->
+![FDM set options](assets/fdm_set_options_new.png)
+-->
 
 ## Noções básicas sobre a interface do usuário do editor de regras {#understanding-the-rule-editor-user-interface}
 
@@ -455,13 +460,13 @@ Users in the forms-power-users group can access code editor. For other users, co
 
 ### E. Botões Concluído e Cancelar {#done-and-cancel-buttons}
 
-O botão **[!UICONTROL Concluído]** é usado para salvar uma regra. Você pode salvar uma regra incompleta. No entanto, estão incompletos inválido e não são executados. As regras salvas em um objeto de formulário são listadas quando você iniciar o regra editor na próxima vez do mesmo objeto de formulário. Você pode gerenciar regras existentes nesse visualização. Para obter mais informações, consulte [Gerenciar regras](rule-editor.md#p-manage-rules-p).
+O botão **[!UICONTROL Concluído]** é usado para salvar uma regra. Você pode salvar uma regra incompleta. No entanto, incompletos são inválidos e não são executados. As regras salvas em um objeto de formulário são listadas na próxima vez que você iniciar o editor de regras a partir do mesmo objeto de formulário. Você pode gerenciar as regras existentes nessa visualização. Para obter mais informações, consulte [Gerenciar regras](rule-editor.md#p-manage-rules-p).
 
-A **[!UICONTROL Cancelar]** botão descarta as alterações feitas em uma regra e fecha a regra editor.
+O botão **[!UICONTROL Cancelar]** descarta todas as alterações feitas em uma regra e fecha o editor de regras.
 
 ## Regras de gravação {#write-rules}
 
-É possível criar regras usando o visual regra editor <!-- or the code editor. When you launch the rule editor the first time, it opens in the visual editor mode. You can switch to the code editor mode and write rules. However, if you write or modify a rule in code editor, you cannot switch to the visual editor for that rule unless you clear the code editor. When you launch the rule editor next time, it opens in the mode that you used last to create rule. -->
+Você pode escrever regras usando o editor visual de regras <!-- or the code editor. When you launch the rule editor the first time, it opens in the visual editor mode. You can switch to the code editor mode and write rules. However, if you write or modify a rule in code editor, you cannot switch to the visual editor for that rule unless you clear the code editor. When you launch the rule editor next time, it opens in the mode that you used last to create rule. -->
 
 Primeiro, vamos analisar como escrever regras usando o editor visual.
 
@@ -471,7 +476,7 @@ Vamos entender como criar uma regra no editor visual usando o seguinte formulár
 
 ![Criar-regra-exemplo](assets/create-rule-example.png)
 
-A seção Requisitos de empréstimo no formulário de aplicativo de empréstimo por exemplo exige que os requerentes especifiquem seu estado civil, salário e, se casados, o salário de seu cônjuge. Com base nas entradas do usuário, a regra calcula o valor de qualificação de empréstimo e é exibida no campo Elegibilidade do empréstimo. Aplique as seguintes regras para implementar o cenário:
+A seção Requisitos de Empréstimo no formulário de solicitação de empréstimo de exemplo exige que os candidatos especifiquem seu estado civil, salário e, se forem casados, o salário de seus cônjuges. Com base nas entradas do usuário, a regra calcula o valor de qualificação de empréstimo e é exibida no campo Elegibilidade do empréstimo. Aplique as seguintes regras para implementar o cenário:
 
 * O campo Salário do Cônjuge é exibido somente quando o Estado Civil é Casado.
 * O valor de qualificação de empréstimo é de 50% do salário total.
@@ -492,9 +497,11 @@ Para gravar regras, execute as seguintes etapas:
 
    ![write-rules-visual-editor-2](assets/write-rules-visual-editor-2-cc.png)
 
-<!--  In the Marital Status radio button, **[!UICONTROL Married]** and **[!UICONTROL Single]** options are assigned **0** and **1** values, respectively. You can verify assigned values in the Title tab of the Edit radio button dialog as shown below.
+<!--
+In the Marital Status radio button, **[!UICONTROL Married]** and **[!UICONTROL Single]** options are assigned **0** and **1** values, respectively. You can verify assigned values in the Title tab of the Edit radio button dialog as shown below.
 
-   ![Radio button values from rule editor](assets/radio-button-values.png)-->
+   ![Radio button values from rule editor](assets/radio-button-values.png)
+   -->
 
 1. No campo **[!UICONTROL Inserir uma Cadeia de Caracteres]** na regra, selecione **Casado** no menu suspenso.
 
@@ -532,7 +539,8 @@ Para gravar regras, execute as seguintes etapas:
 <!--
 1. Repeat steps 1 through 5 to define another rule to hide the Spouse Salary field if the marital Status is Single. The rule appears as follows in the rule editor.
 
-   ![write-rules-visual-editor-8](assets/write-rules-visual-editor-8-cc.png) -->
+   ![write-rules-visual-editor-8](assets/write-rules-visual-editor-8-cc.png)
+   -->
 
 >[!NOTE]
 >
@@ -572,11 +580,11 @@ Para gravar regras, execute as seguintes etapas:
 
    >[!NOTE]
    >
-   >É possível criar expressões complexas usando componentes, funções, expressões matemáticas e valores propriedade do campo Selecionar opção.
+   >Você pode criar expressões complexas usando componentes, funções, expressões matemáticas e valores de propriedade no campo Selecionar opção.
 
-   Próximo, crie uma condição que, quando retornar True, a expressão for executada.
+   Em seguida, crie uma condição, que quando retorna True, a expressão é executada.
 
-1. Selecione **[!UICONTROL Adicionar condição]** para adicionar uma declaração Quando.
+1. Selecione **[!UICONTROL Adicionar Condição]** para adicionar uma instrução When.
 
    ![write-rules-visual-editor-15](assets/write-rules-visual-editor-15-cc.png)
 
@@ -605,11 +613,12 @@ Você pode escrever uma regra combinada para controlar a visibilidade do campo S
 ![write-rules-visual-editor-19](assets/write-rules-visual-editor-19-cc.png)
 
 
-<!-- ### Using code editor {#using-code-editor}
+<!--
+### Using code editor {#using-code-editor}
 
 Users added to the forms-power-users group can use code editor. The rule editor auto generates the JavaScript code for any rule you create using visual editor. You can switch from visual editor to the code editor to view the generated code. However, if you modify the rule code in the code editor, you cannot switch back to the visual editor. If you prefer writing rules in code editor rather than visual editor, you can write rules afresh in the code editor. The visual-code editors switcher helps you switch between the two modes.
 
-The code editor JavaScript is the expression language of Adaptive Forms. All the expressions are valid JavaScript expressions and use Adaptive Forms scripting model APIs. These expressions return values of certain types. For the complete list of Adaptive Forms classes, events, objects, and public APIs, see [JavaScript Library API reference for Adaptive Forms](https://helpx.adobe.com/br/experience-manager/6-5/forms/javascript-api/index.html).
+The code editor JavaScript is the expression language of Adaptive Forms. All the expressions are valid JavaScript expressions and use Adaptive Forms scripting model APIs. These expressions return values of certain types. For the complete list of Adaptive Forms classes, events, objects, and public APIs, see [JavaScript Library API reference for Adaptive Forms](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html).
 
 For more information about guidelines to write rules in the code editor, see [Adaptive Form Expressions](adaptive-form-expressions.md).
 
@@ -711,7 +720,7 @@ For example, you want to add a custom function which calculates area of a square
 
 To create a client library and add it in the CRX repository, perform the following steps:
 
-1. Create a client library. For more information, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html?lang=pt-BR#developing).
+1. Create a client library. For more information, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html#developing).
 2. In CRXDE, add a property `categories`with string type value as `customfunction` to the `clientlib` folder.
 
    >[!NOTE]
@@ -862,11 +871,11 @@ Também é possível arrastar e soltar condições em uma regra para editá-la. 
 
 ## Condições de expressão de data {#dateexpression}
 
-A editor de regras permite usar comparações de datas para criar condições.
+O editor de regras permite usar comparações de datas para criar condições.
 
-A seguir, uma condição de exemplo que exibe um objeto de texto estático se a hipoteca da casa já for tomada, o que o usuário significa preenchendo o campo de data.
+A seguir está um exemplo de condição que exibe um objeto de texto estático se a hipoteca da casa já estiver sendo feita, o que o usuário significa preenchendo o campo de data.
 
-Quando a data da hipoteca da propriedade como preenchida pela usuário estiver no passado, o Formulário Adaptável exibirá uma nota sobre o cálculo de renda. A regra a seguir compara a data preenchida pela usuário com a data atual e se a data preenchida pelo usuário for anterior à data atual, o formulário exibe a mensagem de texto (chamada Renda).
+Quando a data de hipoteca do imóvel conforme preenchido pelo usuário estiver no passado, o Formulário adaptável exibirá uma nota sobre o cálculo de renda. A regra a seguir compara a data preenchida pelo usuário com a data atual e, se a data preenchida pelo usuário for anterior à data atual, o formulário exibirá a mensagem de texto (chamada de Receita).
 
 ![Condição de expressão de data](assets/dateexpressioncondition.png)
 
@@ -878,7 +887,7 @@ Quando a data de preenchimento for anterior à data atual, o formulário exibir�
 
 O editor de regras permite criar condições que comparam dois números.
 
-A seguir, uma condição de exemplo que exibe um objeto de texto estático se o número de meses em que um solicitante está hospedado no endereço atual for menor que 36.
+A seguir, há uma condição de exemplo que exibe um objeto de texto estático se o número de meses em que um candidato está hospedado no endereço atual for inferior a 36.
 
 ![Condição de comparação de número](assets/numbercomparisoncondition.png)
 
@@ -886,11 +895,13 @@ Quando o usuário indica que está morando no endereço residencial atual por me
 
 ![Mais provas solicitadas](assets/additionalproofrequested.png)
 
-<!-- ## Impact of rule editor on existing scripts {#impact-of-rule-editor-on-existing-scripts}
+<!--
+## Impact of rule editor on existing scripts {#impact-of-rule-editor-on-existing-scripts}
 
 In [!DNL Experience Manager Forms] versions prior to [!DNL Experience Manager 6.1 Forms] feature pack 1, form authors and developers used to write expressions in the Scripts tab of the Edit component dialog to add dynamic behavior to Adaptive Forms. The Scripts tab is now replaced by the rule editor.
 
-Any scripts or expressions that you must have written in the Scripts tab are available in the rule editor. While you cannot view or edit them in visual editor, if you are a part of the forms-power-users group you can edit scripts in code editor. -->
+Any scripts or expressions that you must have written in the Scripts tab are available in the rule editor. While you cannot view or edit them in visual editor, if you are a part of the forms-power-users group you can edit scripts in code editor.
+-->
 
 ## Exemplo de regras {#example}
 
@@ -910,9 +921,9 @@ A regra a seguir mostra como configurar a ação Chamar serviço para realizar o
 
 Em um formulário de solicitação de empréstimo, você deseja registrar se o candidato ao empréstimo é um cliente existente ou não. Com base nas informações fornecidas pelo usuário, o campo ID do cliente deve mostrar ou ocultar. Além disso, é possível definir o foco no campo ID do cliente se o usuário for um cliente existente. O formulário de pedido de empréstimo tem os seguintes componentes:
 
-* Um botão de opção, **[!UICONTROL Você já é cliente do Geometrixx?]**, que fornece as opções [!UICONTROL Sim] e [!UICONTROL Não]. O valor de Sim é **0** e Não é **1**.
+* Um botão de opção, **[!UICONTROL Você é um cliente existente do Geometrixx?]**, que fornece as opções [!UICONTROL Sim] e [!UICONTROL Não]. O valor de Sim é **0** e Não é **1**.
 
-* Geometrixx Um campo de texto, **[!UICONTROL ID do cliente]**, para especificar a ID do cliente.
+* Um campo de texto, **[!UICONTROL ID do cliente do Geometrixx]**, para especificar a ID do cliente.
 
 Quando você escreve uma regra Quando no botão de opção para implementar esse comportamento, a regra é exibida da seguinte maneira no editor visual de regras.
 
@@ -922,11 +933,13 @@ Regra no editor visual
 
 Na regra de exemplo, a instrução na seção When é a condição, que quando retorna True, executa as ações especificadas na seção Then.
 
-<!-- The rule appears as follows in the code editor.
+<!--
+The rule appears as follows in the code editor.
 
 ![when-rule-example-code](assets/when-rule-example-code.png) 
 
-Rule in the code editor -->
+Rule in the code editor
+-->
 
 ### Uso de uma saída de função em uma regra {#using-a-function-output-in-a-rule}
 
@@ -936,31 +949,35 @@ Em um formulário de ordem de compra, você tem a tabela a seguir, na qual os us
 * O título da célula na coluna Quantidade do Produto da linha repetível é Quantidade. O nome do elemento desta célula é `productquantity`.
 * A segunda linha da tabela não pode ser repetida e o título da célula na coluna Quantidade do Produto nesta linha é Quantidade Total.
 
-![Tabela-função-exemplo](assets/example-function-table.png)
+![Example-function-table](assets/example-function-table.png)
 
 **A.** Linha1 **B.** Quantidade **C.** Quantidade Total
 
-Agora, você deseja adicionar quantidades especificadas na coluna Quantidade do Produto para todos os produtos e exibir a soma na célula Quantidade Total. Você pode obter essa soma gravando uma regra Definir Valor de na célula Quantidade total, como mostrado abaixo.
+Now, you want to add specified quantities in the Product Quantity column for all products and display the sum in the Total Quantity cell. You can achieve this sum by writing a Set Value Of rule on the Total Quantity cell as shown below.
 
-![Exemplo-saída-função](assets/example-function-output.png)
+![Example-function-output](assets/example-function-output.png)
 
 Regra no editor visual
 
-<!-- he rule appears as follows in the code editor.
+<!--
+he rule appears as follows in the code editor.
 
 ![example-function-output-code](assets/example-function-output-code.png)
 
-Rule in the code editor -->
+Rule in the code editor
+-->
 
-### Validação de um valor de campo usando expressão {#validating-a-field-value-using-expression}
+### Validating a field value using expression {#validating-a-field-value-using-expression}
 
-No form ordem de compra explicado no exemplo anterior, você deseja impedir que o usuário faça pedidos de mais de uma quantidade de qualquer produto com preço superior a 10000. Para fazer essa validação, você pode gravar uma regra Validate como mostrado abaixo.
+In the purchase order form explained in the previous example, you want to restrict user from ordering more than one quantity of any product that is priced more that 10000. To do this validation, you can write a Validate rule as shown below.
 
-![Exemplo-validação](assets/example-validate.png)
+![Example-validate](assets/example-validate.png)
 Regra no editor visual
 
-<!-- The rule appears as follows in the code editor.
+<!--
+The rule appears as follows in the code editor.
 
 ![example-validate-code](assets/example-validate-code.png)
 
-Rule in the code editor -->
+Rule in the code editor
+-->

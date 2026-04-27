@@ -10,10 +10,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 index: false
-source-git-commit: 1509ca884e2f9eb931fc7cd416801957459cc4a0
+source-git-commit: 147b0efb32609c05949c9fe374fa4fca6a9dbfb1
 workflow-type: tm+mt
-source-wordcount: '92'
-ht-degree: 1%
+source-wordcount: '152'
+ht-degree: 5%
 
 ---
 
@@ -36,7 +36,7 @@ A seguir estão as referências disponíveis da API do JavaScript dos módulos N
 A seguir estão os repositórios de código aberto no GitHub para as bibliotecas SPA.
 
 * [Mapeamento de componentes](https://github.com/adobe/aem-spa-component-mapping)
-* [Gerenciador de Modelos de Página](https://github.com/adobe/aem-spa-page-model-manager)
-* [Reagir Componentes Editáveis](https://github.com/adobe/aem-react-editable-components)
+* [Gerenciador de modelo da página](https://github.com/adobe/aem-spa-page-model-manager)
+* [Componentes editáveis do React](https://github.com/adobe/aem-react-editable-components)
 * [Componentes editáveis do Angular](https://github.com/adobe/aem-angular-editable-components)
-* [Núcleo do projeto do SPA](https://github.com/adobe/aem-spa-project-core)
+* [Núcleo de projeto do SPA](https://github.com/adobe/aem-spa-project-core)

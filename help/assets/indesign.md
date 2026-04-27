@@ -6,9 +6,9 @@ role: Admin
 feature: Publishing
 exl-id: 5ba020a3-c36c-402b-a11b-d6b0426b03bf
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 75c15b0f0e4de2ea7fff339ae46b88ce8f6af83f
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '1550'
+source-wordcount: '1579'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ Para carregar arquivos totalmente para [!DNL Experience Manager Assets] que voc�
 
 >[!NOTE]
 >
->[!DNL Adobe InDesign] é oferecido como duas ofertas separadas. Aplicativo de desktop [Adobe InDesign](https://www.adobe.com/br/products/indesign.html) usado para criar layouts de página para distribuição digital e impressa. O [Adobe InDesign Server](https://www.adobe.com/br/products/indesignserver.html) permite criar documentos automatizados de forma programática com base no que você criou com o [!DNL InDesign]. Ela opera como um serviço que oferece uma interface para o mecanismo ExtendScript. Os scripts são gravados em [!DNL ExtendScript], que é semelhante a [!DNL JavaScript].
+>[!DNL Adobe InDesign] é oferecido como duas ofertas separadas. Aplicativo de desktop [Adobe InDesign](https://www.adobe.com/products/indesign.html) usado para criar layouts de página para distribuição digital e impressa. O [Adobe InDesign Server](https://www.adobe.com/products/indesignserver.html) permite criar documentos automatizados de forma programática com base no que você criou com o [!DNL InDesign]. Ela opera como um serviço que oferece uma interface para o mecanismo ExtendScript. Os scripts são gravados em [!DNL ExtendScript], que é semelhante a [!DNL JavaScript].
 
 ## Como a extração funciona {#how-the-extraction-works}
 
@@ -94,7 +94,7 @@ Para instalar e iniciar o [!DNL InDesign Server] para uso com [!DNL Experience M
 
 [!DNL Experience Manager Assets] tem um fluxo de trabalho pré-configurado **[!UICONTROL Ativo de atualização do DAM]**, que tem várias etapas de processo especificamente para [!DNL InDesign]:
 
-* [Extração de mídia &#x200B;](#media-extraction)
+* [Extração de mídia](#media-extraction)
 * [Extração de página](#page-extraction)
 
 Este fluxo de trabalho é configurado com valores padrão que podem ser adaptados para sua configuração nas várias instâncias do autor (este é um fluxo de trabalho padrão, portanto, mais informações estão disponíveis em [Editando um Fluxo de Trabalho](/help/sites-developing/workflows-models.md#configuring-a-workflow-step)). Se estiver usando os valores padrão (incluindo a porta SOAP), nenhuma configuração será necessária.
@@ -115,7 +115,8 @@ Argumentos de extração de mídia e caminhos de script
 
 * **Scripts Estendidos**: você pode especificar diferentes combinações de scripts aqui. Se quiser que seus próprios scripts sejam executados em [!DNL InDesign Server], salve os scripts em `/apps/settings/dam/indesign/scripts`.
 
-<!-- TBD: Hiding this link since ADC is not available anymore. 
+<!--
+TBD: Hiding this link since ADC is not available anymore. 
 For information about [!DNL Adobe InDesign] scripts, see [InDesign developer documentation](https://www.adobe.com/devnet/indesign/documentation.html#idscripting).
 -->
 
@@ -239,4 +240,4 @@ Você pode alterar as credenciais de administrador padrão (nome de usuário e s
 
 >[!MORELIKETHIS]
 >
->* [Sobre o Adobe InDesign Server](https://www.adobe.com/br/products/indesignserver/faq.html)
+>* [Sobre o Adobe InDesign Server](https://www.adobe.com/products/indesignserver/faq.html)

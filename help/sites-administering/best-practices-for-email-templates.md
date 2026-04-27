@@ -11,9 +11,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 index: false
-source-git-commit: 389d5fa8de320a7237fc8290992a33743b15db99
+source-git-commit: 147b0efb32609c05949c9fe374fa4fca6a9dbfb1
 workflow-type: tm+mt
-source-wordcount: '1072'
+source-wordcount: '1106'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 >
 >Este artigo se aplica aos componentes de email obsoletos do Foundation com base nos componentes de email do AEM.
 >
->Os usuários são incentivados a usar os [Componentes principais de email.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html?lang=pt-BR)
+>Os usuários são incentivados a usar os [Componentes principais de email.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html)
 
 Este documento descreve algumas das práticas recomendadas para design de email, resultando em um modelo de campanha de email bem desenvolvido.
 

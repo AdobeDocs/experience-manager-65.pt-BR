@@ -8,9 +8,9 @@ role: Developer, Leader
 exl-id: c630709a-7e8b-417c-83a4-35ca9be832a0
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '2332'
+source-wordcount: '2400'
 ht-degree: 10%
 
 ---
@@ -19,10 +19,11 @@ ht-degree: 10%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-metadata.html?lang=pt-BR) |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-metadata.html?lang=en) |
 | AEM 6.5 | Este artigo |
 
-<!-- Scope of metadata articles:
+<!--
+Scope of metadata articles:
 * metadata.md: The scope of this article is basic metadata updates, changes, and so on, operations that end-users can do.
 * metadata-concepts.md: All conceptual information. Minor instructions are OK but it is an FYI article about support and standards.
 * metadata-config.md: New article. Contains all configuration and administration how-to info related to metadata of assets.
@@ -36,9 +37,9 @@ Os metadados são informações adicionais sobre o ativo que pode ser pesquisado
 
 Os métodos a seguir podem ser usados para adicionar metadados a ativos digitais:
 
-* Para começar, os aplicativos nativos que criam ativos adicionam alguns metadados a eles. Por exemplo, o [Acrobat adiciona alguns metadados](https://helpx.adobe.com/br/acrobat/using/pdf-properties-metadata.html) a arquivos PDF ou uma câmera adiciona alguns metadados básicos às fotografias. Ao gerar ativos, você pode adicionar os metadados nos próprios aplicativos nativos. Por exemplo, você pode [adicionar metadados do IPTC no Adobe Lightroom](https://helpx.adobe.com/br/lightroom-classic/help/metadata-basics-actions.html).
+* Para começar, os aplicativos nativos que criam ativos adicionam alguns metadados a eles. Por exemplo, o [Acrobat adiciona alguns metadados](https://helpx.adobe.com/acrobat/using/pdf-properties-metadata.html) a arquivos PDF ou uma câmera adiciona alguns metadados básicos às fotografias. Ao gerar ativos, você pode adicionar os metadados nos próprios aplicativos nativos. Por exemplo, você pode [adicionar metadados do IPTC no Adobe Lightroom](https://helpx.adobe.com/lightroom-classic/help/metadata-basics-actions.html).
 
-* Antes de carregar um ativo para [!DNL Experience Manager], você pode editar e modificar metadados usando o aplicativo nativo usado para criar um ativo ou usando algum outro aplicativo de edição de metadados. Ao fazer upload de um ativo para o Experience Manager, os metadados são processados. Por exemplo, veja como [trabalhar com metadados [!DNL Adobe Bridge]](https://helpx.adobe.com/br/bridge/user-guide.html/bridge/using/metadata-adobe-bridge.ug.html) e o painel [tags [!DNL Adobe Bridge]](https://exchange.adobe.com/creativecloud.details.20009.aem-tags-panel-for-bridge-cc.html) em [!DNL Adobe Exchange].
+* Antes de carregar um ativo para [!DNL Experience Manager], você pode editar e modificar metadados usando o aplicativo nativo usado para criar um ativo ou usando algum outro aplicativo de edição de metadados. Ao fazer upload de um ativo para o Experience Manager, os metadados são processados. Por exemplo, veja como [trabalhar com metadados [!DNL Adobe Bridge]](https://helpx.adobe.com/bridge/user-guide.html/bridge/using/metadata-adobe-bridge.ug.html) e o painel [tags [!DNL Adobe Bridge]](https://exchange.adobe.com/creativecloud.details.20009.aem-tags-panel-for-bridge-cc.html) em [!DNL Adobe Exchange].
 
 * Em [!DNL Experience Manager Assets], você pode adicionar ou editar manualmente metadados de ativos na página [!UICONTROL Propriedades].
 
@@ -165,7 +166,8 @@ Para obter detalhes, consulte [exibir e editar metadados da coleção](/help/ass
 
 ## Aplicar um perfil de metadados a pastas {#applying-a-metadata-profile-to-folders}
 
-<!-- TBD: Review this overview.
+<!--
+TBD: Review this overview.
 -->
 
 Ao atribuir um perfil de metadados a uma pasta, qualquer subpasta herda automaticamente o perfil da pasta principal. Isso significa que só é possível atribuir um perfil de metadados a uma pasta. Dessa forma, considere cuidadosamente a estrutura de pastas de onde você faz upload, armazena, usa e arquiva ativos.
@@ -203,11 +205,13 @@ Siga as etapas para aplicar o perfil de metadados:
 
 As pastas que têm um perfil já atribuído a elas são indicadas ao exibir do nome do perfil logo abaixo do nome da pasta.
 
-<!-- TBD: Commenting as the topic in metadata-config.md is incomplete.
+<!--
+TBD: Commenting as the topic in metadata-config.md is incomplete.
 
 ### Apply metadata profile globally {#metadata-profile-global}
 
-For details, see [configuration to apply metadata profile globally](/help/assets/metadata-config.md#apply-a-metadata-profile-globally). -->
+For details, see [configuration to apply metadata profile globally](/help/assets/metadata-config.md#apply-a-metadata-profile-globally).
+-->
 
 ### Remover um perfil de metadados das pastas {#removing-a-metadata-profile-from-folders}
 
@@ -241,9 +245,10 @@ Você pode remover um perfil de metadados de uma pasta no menu **[!UICONTROL Fer
 >
 >* [Conceitos e noções básicas sobre metadados](metadata-concepts.md).
 >* [Editar propriedades de metadados de várias coleções](manage-collections.md#editing-collection-metadata-in-bulk)
->* [Importação e exportação de metadados no Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html?lang=pt-BR)
+>* [Importação e exportação de metadados no Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html)
 
-<!-- TBD: Try filling the available information in these topics to the extent possible. As and when complete, publish the sections live.
+<!--
+TBD: Try filling the available information in these topics to the extent possible. As and when complete, publish the sections live.
 
 ## Where to find metadata of an asset or folder {#find-metadata}
 

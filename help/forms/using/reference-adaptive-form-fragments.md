@@ -8,9 +8,9 @@ exl-id: 933c164e-7c39-4d2e-834b-53a3c2b4ec90
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '399'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 O [fragmento de formulário adaptável](../../forms/using/adaptive-form-fragments.md) é um grupo de campos ou um painel que contém um grupo de campos que você pode usar ao criar um formulário. Ele permite criar um formulário de maneira fácil e rápida. Você pode arrastar e soltar um fragmento de formulário adaptável em um formulário usando o navegador de ativos na barra lateral e editá-lo no editor de formulários.
 
-Para autores de formulários adaptáveis, os fragmentos de referência são fornecidos no [pacote complementar do AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=pt-BR). Inclui os seguintes fragmentos:
+Para autores de formulários adaptáveis, os fragmentos de referência são fornecidos no [pacote complementar do AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en). Inclui os seguintes fragmentos:
 
 * Endereço
 * Informações de contato
@@ -42,9 +42,11 @@ Inclui campos para especificar o endereço para correspondência. Os campos disp
 
 ![Fragmento do endereço](assets/address.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/address-1.png)-->
+](assets/address-1.png)
+-->
 
 ## Informações de contato {#contact-information}
 
@@ -52,9 +54,11 @@ Inclui campos para capturar número de telefone e endereço de email.
 
 ![Fragmento de informações de contato](assets/contact-info.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/contact-info-1.png)-->
+](assets/contact-info-1.png)
+-->
 
 ## Informações de cartão de crédito {#credit-card-information}
 
@@ -67,9 +71,11 @@ Inclui campos para capturar detalhes do emprego atual, como status do emprego, c
 
 ![Fragmento de emprego atual](assets/current-emp.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/current-emp-1.png)-->
+](assets/current-emp-1.png)
+-->
 
 ## Informações de Dependentes {#dependents-information}
 
@@ -77,9 +83,11 @@ Inclui campos para especificar informações sobre um ou mais dependentes, como 
 
 ![Fragmento de informações de dependentes](assets/dependents-info.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/dependents-info-1.png)-->
+](assets/dependents-info-1.png)
+-->
 
 ## Histórico de Emprego {#employment-history}
 
@@ -87,9 +95,11 @@ Inclui campos para capturar o histórico de emprego. Permite adicionar várias o
 
 ![Fragmento do histórico de emprego](assets/emp-history.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/emp-history-1.png)-->
+](assets/emp-history-1.png)
+-->
 
 ## Receita e Despesas {#income-expenditure}
 
@@ -97,9 +107,11 @@ Inclui campos para registrar fluxo de caixa e despesas mensais. O Forms que exig
 
 ![Fragmento de receita e despesa](assets/income.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/income-1.png)-->
+](assets/income-1.png)
+-->
 
 ## Nome {#name}
 
@@ -107,9 +119,11 @@ Inclui campos para especificar título, nome, nome do meio e sobrenome.
 
 ![Nomear fragmento](assets/name.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/name-1.png)-->
+](assets/name-1.png)
+-->
 
 ## Termos e condições {#terms-conditions}
 
@@ -117,16 +131,20 @@ Especifica os termos e condições que os usuários devem aceitar antes de envia
 
 ![Fragmento dos Termos e Condições](assets/tnc.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/tnc-1.png)-->
+](assets/tnc-1.png)
+-->
 
 ## Termos e condições com assinatura {#terms-conditions-with-scribble}
 
-Especifica os termos e condições que os usuários devem aceitar e assinar antes de enviar um formulário.
+Specifies terms and conditions for users to accept and sign before submitting a form.
 
-![Termos e condições com assinatura](assets/tnc-scribble.png)
+![Terms &amp; Conditions with Scribble](assets/tnc-scribble.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/tnc-scribble-1.png)-->
+](assets/tnc-scribble-1.png)
+-->

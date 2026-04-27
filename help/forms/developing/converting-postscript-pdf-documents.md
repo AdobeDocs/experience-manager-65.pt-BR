@@ -1,6 +1,6 @@
 ---
-title: Conversão de Postscript em documentos PDF
-description: Use o serviço Distiller para converter arquivos PostScript®, Encapsulated PostScript (EPS) e PRN para arquivos PDF compactos, confiáveis e mais seguros em uma rede. O serviço Distiller converte grandes volumes de documentos impressos em documentos eletrônicos, como faturas e declarações usando a API Java e a API de serviço da Web.
+title: Conversão de Postscript em documentos do PDF
+description: Use o serviço Distiller para converter arquivos PostScript®, Encapsulated PostScript (EPS) e PRN em arquivos PDF compactos, confiáveis e mais seguros em uma rede. O serviço Distiller converte grandes volumes de documentos impressos em documentos eletrônicos, como faturas e declarações usando a API Java e a API de serviço da Web.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,28 +9,28 @@ role: Developer
 exl-id: 744df8b2-0c61-410f-89e9-20b8adddbf45
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '1315'
+source-wordcount: '1323'
 ht-degree: 0%
 
 ---
 
-# Conversão de Postscript em documentos PDF {#converting-postscript-to-pdf-documents}
+# Conversão de Postscript em documentos do PDF {#converting-postscript-to-pdf-documents}
 
 **Exemplos e exemplos neste documento são somente para AEM Forms no ambiente JEE.**
 
 ## Sobre o serviço Distiller {#about-the-distiller-service}
 
-O serviço Distiller® converte arquivos PostScript®, Encapsulated PostScript (EPS) e PRN para arquivos PDF compactos, confiáveis e mais seguros em uma rede. O serviço Distiller é frequentemente usado para converter grandes volumes de documentos impressos em documentos eletrônicos, como faturas e demonstrativos. A conversão de documentos em PDF também permite que as empresas enviem aos seus clientes uma versão em papel e uma versão eletrônica de um documento.
+O serviço Distiller® converte arquivos PostScript®, Encapsulated PostScript (EPS) e PRN para arquivos PDF compactos, confiáveis e mais seguros em uma rede. O serviço Distiller é frequentemente usado para converter grandes volumes de documentos impressos em documentos eletrônicos, como faturas e demonstrativos. A conversão de documentos para o PDF também permite que as empresas enviem aos clientes uma versão em papel e uma versão eletrônica de um documento.
 
 >[!NOTE]
 >
 >Para obter mais informações sobre o serviço Distiller, consulte [Referência de serviços para AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
-## Conversão de PostScript em documentos PDF {#converting-postscript-to-pdf-documents-inner}
+## Conversão de documentos do PostScript para o PDF {#converting-postscript-to-pdf-documents-inner}
 
-Este tópico descreve como você pode usar a API de serviço do Distiller (Java e serviço da Web) para converter programaticamente arquivos PostScript (PS), Encapsulated PostScript (EPS) e PRN em documentos PDF.
+Este tópico descreve como você pode usar a API de serviço do Distiller (Java e serviço da Web) para converter programaticamente arquivos PostScript (PS), Encapsulated PostScript (EPS) e PRN em documentos do PDF.
 
 >[!NOTE]
 >
@@ -38,17 +38,17 @@ Este tópico descreve como você pode usar a API de serviço do Distiller (Java 
 
 >[!NOTE]
 >
->Para converter arquivos PostScript em documentos PDF, um dos seguintes itens precisa ser instalado no servidor que hospeda o AEM Forms: Acrobat 9 ou Microsoft Visual C++ 2005 pacote redistribuível.
+>Para converter arquivos do PostScript em documentos do PDF, um dos itens a seguir precisa ser instalado no servidor que hospeda o AEM Forms: Acrobat 9 ou pacote redistribuível do Microsoft Visual C++ 2005.
 
 ### Resumo das etapas {#summary-of-steps}
 
-Para converter qualquer um dos tipos suportados em um documento PDF, execute as seguintes etapas:
+Para converter qualquer um dos tipos compatíveis em um documento do PDF, execute as seguintes etapas:
 
 1. Incluir arquivos de projeto.
 1. Crie um cliente de serviço Distiller.
 1. Recupere o arquivo a ser convertido.
-1. Chame a operação de criação de PDF.
-1. Salve o documento PDF.
+1. Chame a operação de criação do PDF.
+1. Salve o documento do PDF.
 
 **Incluir arquivos de projeto**
 
@@ -62,9 +62,9 @@ Antes de executar programaticamente uma operação de serviço Distiller, você 
 
 Recupere o arquivo que deseja converter. Por exemplo, para converter um arquivo PS em um documento PDF, você deve recuperar o arquivo PS.
 
-**Invocar a operação de criação de PDF**
+**Invocar a operação de criação do PDF**
 
-Depois de criar o cliente de serviço, você pode chamar a operação de criação de PDF. Esta operação precisará de informações sobre o documento a ser convertido, incluindo o caminho para o documento de destino.
+Depois de criar o cliente de serviço, você pode chamar a operação de criação do PDF. Esta operação precisará de informações sobre o documento a ser convertido, incluindo o caminho para o documento de destino.
 
 **Salvar o documento do PDF**
 
@@ -74,7 +74,7 @@ Você pode salvar o documento PDF como um arquivo PDF.
 
 [Converter um arquivo PostScript em PDF usando a API Java](converting-postscript-pdf-documents.md#convert-a-postscript-file-to-pdf-using-the-java-api)
 
-[Conversão de um arquivo PostScript em PDF usando a API do serviço Web](converting-postscript-pdf-documents.md#converting-a-postscript-file-to-pdf-using-the-web-service-api)
+[Conversão de um arquivo do PostScript para o PDF usando a API do serviço Web](converting-postscript-pdf-documents.md#converting-a-postscript-file-to-pdf-using-the-web-service-api)
 
 [Inclusão de arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -84,7 +84,7 @@ Você pode salvar o documento PDF como um arquivo PDF.
 
 ### Converter um arquivo PostScript em PDF usando a API Java {#convert-a-postscript-file-to-pdf-using-the-java-api}
 
-Converta um arquivo PostScript em um documento PDF usando a API de serviço do Distiller (Java):
+Converta um arquivo do PostScript em um documento do PDF usando a API de serviço do Distiller (Java):
 
 1. Incluir arquivos de projeto.
 
@@ -100,7 +100,7 @@ Converta um arquivo PostScript em um documento PDF usando a API de serviço do D
    * Crie um objeto `java.io.FileInputStream` que represente o arquivo a ser convertido usando seu construtor e transmitindo um valor de cadeia de caracteres que especifique o local do arquivo.
    * Crie um objeto `com.adobe.idp.Document` usando seu construtor e transmitindo o objeto `java.io.FileInputStream`.
 
-1. Chame a operação de criação de PDF.
+1. Chame a operação de criação do PDF.
 
    Chame o método `createPDF` do objeto `DistillerServiceClient` e passe os seguintes valores:
 
@@ -109,16 +109,16 @@ Converta um arquivo PostScript em um documento PDF usando a API de serviço do D
    * Um objeto `java.lang.String` que contém o nome das configurações do Adobe PDF a serem usadas
    * Um objeto `java.lang.String` que contém o nome das configurações de segurança a serem usadas
    * Um objeto `com.adobe.idp.Document` opcional que contém configurações a serem aplicadas durante a geração do documento PDF
-   * Um objeto `com.adobe.idp.Document` opcional que contém informações de metadados a serem aplicadas ao documento PDF
+   * Um objeto `com.adobe.idp.Document` opcional que contém informações de metadados a serem aplicadas ao documento do PDF
 
-   O método `createPDF` retorna um objeto `CreatePDFResult` que contém o novo documento PDF e um arquivo de log que pode ser gerado. O arquivo de log geralmente contém mensagens de erro ou aviso que são geradas pela solicitação de conversão.
+   O método `createPDF` retorna um objeto `CreatePDFResult` que contém o novo documento do PDF e um arquivo de log que pode ser gerado. O arquivo de log geralmente contém mensagens de erro ou aviso que são geradas pela solicitação de conversão.
 
-1. Salve o documento PDF.
+1. Salve o documento do PDF.
 
    Para obter o documento PDF recém-criado, execute as seguintes ações:
 
    * Invoque o método `getCreatedDocument` do objeto `CreatePDFResult`. Isso retorna um objeto `com.adobe.idp.Document`.
-   * Invoque o método `copyToFile` do objeto `com.adobe.idp.Document` para extrair o documento PDF.
+   * Invoque o método `copyToFile` do objeto `com.adobe.idp.Document` para extrair o documento do PDF.
 
    Da mesma forma, para obter o documento de log, execute as ações a seguir.
 
@@ -135,9 +135,9 @@ Converta um arquivo PostScript em um documento PDF usando a API de serviço do D
 
 [Definindo propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Conversão de um arquivo PostScript em PDF usando a API do serviço Web {#converting-a-postscript-file-to-pdf-using-the-web-service-api}
+### Conversão de um arquivo do PostScript para o PDF usando a API do serviço Web {#converting-a-postscript-file-to-pdf-using-the-web-service-api}
 
-Converta um arquivo PostScript em um documento PDF usando a API de serviço do Distiller (serviço da Web):
+Converta um arquivo do PostScript em um documento do PDF usando a API de serviço do Distiller (serviço da Web):
 
 1. Incluir arquivos de projeto.
 
@@ -162,13 +162,13 @@ Converta um arquivo PostScript em um documento PDF usando a API de serviço do D
 
 1. Recupere o arquivo a ser convertido.
 
-   * Crie um objeto `BLOB` usando seu construtor. Este objeto `BLOB` é usado para armazenar o arquivo a ser convertido em um documento PDF.
+   * Crie um objeto `BLOB` usando seu construtor. Este objeto `BLOB` é usado para armazenar o arquivo a ser convertido em um documento do PDF.
    * Crie um objeto `System.IO.FileStream` chamando seu construtor e transmitindo um valor de cadeia de caracteres que representa o local do arquivo e o modo em que o arquivo será aberto.
    * Crie uma matriz de bytes que armazene o conteúdo do objeto `System.IO.FileStream`. Você pode determinar o tamanho da matriz de bytes obtendo a propriedade `Length` do objeto `System.IO.FileStream`.
    * Preencha a matriz de bytes com os dados de fluxo invocando o método `Read` do objeto `System.IO.FileStream` e transmitindo a matriz de bytes, a posição inicial e o comprimento do fluxo para leitura.
    * Preencha o objeto `BLOB` atribuindo sua propriedade `MTOM` com o conteúdo da matriz de bytes.
 
-1. Chame a operação de criação de PDF.
+1. Chame a operação de criação do PDF.
 
    Chame o método `CreatePDF2` do objeto `DistillerServiceService` e passe os seguintes valores obrigatórios:
 
@@ -177,22 +177,23 @@ Converta um arquivo PostScript em um documento PDF usando a API de serviço do D
    * Um objeto de cadeia de caracteres que contém as configurações de Adobe PDF a serem usadas (por exemplo, `Standard`)
    * Um objeto de cadeia de caracteres que contém as configurações de segurança a serem usadas (por exemplo, `No Securit`a)
    * Um objeto `BLOB` opcional que contém configurações a serem aplicadas durante a geração do documento PDF
-   * Um objeto `BLOB` opcional que contém informações de metadados a serem aplicadas ao documento PDF
+   * Um objeto `BLOB` opcional que contém informações de metadados a serem aplicadas ao documento do PDF
    * Um parâmetro de saída `BLOB` usado para armazenar o documento PDF
    * Um parâmetro de saída `BLOB` usado para armazenar o log
 
-1. Salve o documento PDF.
+1. Salve o documento do PDF.
 
-   * Crie um objeto `System.IO.FileStream` invocando seu construtor. Transmita um valor de string que represente o local do arquivo do documento de PDF assinado e o modo no qual o arquivo será aberto.
+   * Crie um objeto `System.IO.FileStream` invocando seu construtor. Transmita um valor de string que represente o local do arquivo do documento PDF assinado e o modo no qual o arquivo será aberto.
    * Crie uma matriz de bytes que armazene o conteúdo do objeto `BLOB` retornado pelo método `CreatePDF2` (o parâmetro de saída). Popular a matriz de bytes obtendo o valor do membro de dados `MTOM` do objeto `BLOB`.
    * Crie um objeto `System.IO.BinaryWriter` invocando seu construtor e transmitindo o objeto `System.IO.FileStream`.
-   * Grave o conteúdo da matriz de bytes em um arquivo PDF, chamando o método `Write` do objeto `System.IO.BinaryWriter` e transmitindo a matriz de bytes.
+   * Grave o conteúdo da matriz de bytes em um arquivo PDF chamando o método `Write` do objeto `System.IO.BinaryWriter` e transmitindo a matriz de bytes.
 
 **Consulte também**
 
 [Resumo das etapas](converting-postscript-pdf-documents.md#summary-of-steps)
 
-<!-- UNRESOLVED LINKS
+<!--
+UNRESOLVED LINKS
 [Quick Start (MTOM): Converting a PostScript file to a PDF document using the web service API](unresolvedlink-lc-qs-distiller-di.xml#ws624e3cba99b79e12e69a9941333732bac8-7f01.2)
 
 [Quick Start (SwaRef): Converting a PostScript file to a PDF document using the web service API](unresolvedlink-lc-qs-distiller-di.xml#ws624e3cba99b79e12e69a9941333732bac8-7eff.2)

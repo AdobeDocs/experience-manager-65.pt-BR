@@ -5,10 +5,10 @@ exl-id: d4b01485-658b-4245-b2e6-04be8abc8ecf
 solution: Experience Manager, Experience Manager Sites
 feature: Content Fragments,GraphQL API
 role: Developer
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '783'
-ht-degree: 86%
+source-wordcount: '792'
+ht-degree: 83%
 
 ---
 
@@ -135,7 +135,7 @@ Using GraphQL you can configure the HTTP Cache Headers  to control these paramet
 
 ## Publicação de consultas persistentes {#publishing-persisted-queries}
 
-Depois de selecionar sua [consulta persistente](/help/sites-developing/headless/graphql-api/persisted-queries.md) na lista (painel esquerdo), você pode usar as ações **Publish** e **Cancelar publicação**. Isso as ativará no ambiente de publicação (por exemplo, `dev-publish`) para facilitar o acesso de seus aplicativos durante os testes.
+Depois de selecionar sua [consulta persistente](/help/sites-developing/headless/graphql-api/persisted-queries.md) na lista (painel esquerdo), você pode usar as ações **Publicar** e **Cancelar publicação**. Isso as ativará no ambiente de publicação (por exemplo, `dev-publish`) para facilitar o acesso de seus aplicativos durante os testes.
 
 >[!NOTE]
 >
@@ -146,7 +146,7 @@ Depois de selecionar sua [consulta persistente](/help/sites-developing/headless/
 A opção **Copiar URL** permite simular uma consulta copiando a URL usada para acessar diretamente a consulta persistente e ver os resultados. Essa opção pode ser usada para testes; por exemplo, acessando em um navegador:
 
 <!--
-  >[!NOTE]
+>[!NOTE]
   >
   >The URL will need [encoding before using programmatically](/help/headless/graphql-api/persisted-queries.md#encoding-query-url).
   >

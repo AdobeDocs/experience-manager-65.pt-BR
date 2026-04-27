@@ -1,13 +1,13 @@
 ---
 title: O exportador da página
-description: Saiba como usar o Exportador de página do Adobe Experience Manager (AEM).
+description: Saiba como usar o Exportador de páginas do Adobe Experience Manager (AEM).
 exl-id: 15d08758-cf75-43c0-9818-98a579d64183
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '997'
+source-wordcount: '1060'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,7 @@ O exportador da página é baseado na [estrutura de sincronização de conteúdo
 
 Quando uma exportação de página é acionada, o modelo de exportação é referenciado. O caminho da página e o caminho de design são aplicados dinamicamente. O arquivo zip é então criado usando a funcionalidade padrão Sincronização de conteúdo.
 
-Uma instalação pronta para uso do AEM inclui um modelo padrão em `/etc/contentsync/templates/default`.
+Uma instalação predefinida do AEM inclui um modelo padrão em `/etc/contentsync/templates/default`.
 
 * Esse é o modelo de fallback quando nenhum modelo de exportação é encontrado no repositório.
 
@@ -110,7 +110,8 @@ Quando seu template estiver configurado, disponibilize-o:
 
 O modelo consiste em uma estrutura de nó, pois usa a [estrutura de sincronização de conteúdo](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/contentsync/package-summary.html). Cada nó tem uma propriedade `type` que define uma ação específica no processo de criação do arquivo zip.
 
-<!-- For more details about the type property, see the Overview of configuration types section in the Content Sync framework page.
+<!--
+For more details about the type property, see the Overview of configuration types section in the Content Sync framework page.
 -->
 
 Os seguintes nós podem ser usados para criar um template de exportação:
@@ -180,7 +181,8 @@ As you may have noticed in the node structure, the **Geometrixx** page export te
 
 Para atender a alguns requisitos específicos, implemente um [manipulador de atualização personalizado](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/contentsync/handler/package-summary.html).
 
-<!-- To meet some specific requirements, you may need to implement a custom `type` property. To do so, see the Implementing a custom update handler section in the Content Sync page.
+<!--
+To meet some specific requirements, you may need to implement a custom `type` property. To do so, see the Implementing a custom update handler section in the Content Sync page.
 -->
 
 ## Exportar programaticamente uma página {#programmatically-exporting-a-page}

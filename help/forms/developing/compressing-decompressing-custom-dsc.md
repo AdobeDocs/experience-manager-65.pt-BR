@@ -5,9 +5,9 @@ exl-id: 1b950d8f-6b54-452a-831b-f5644370691d
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '486'
 ht-degree: 0%
 
 ---
@@ -142,9 +142,11 @@ O arquivo component.xml é mostrado aqui:
 
 <!-- Start of the Service definition -->
    <services>
-<!-- Unique name for service descriptor.
+<!--
+Unique name for service descriptor.
            The value is used as the default name for
-           deployed services -->
+           deployed services
+           -->
       <service name="ZipService">
 <!-- service implementation class definition -->
         <implementation-class>nith.lces2.dsc.ZIPService</implementation-class>
@@ -218,9 +220,9 @@ Você pode usar esse serviço ZIP para os seguintes casos de uso:
 
 * Localizar todos os arquivos em uma determinada pasta e retornar os arquivos como um documento compactado.
 
-* Forneça um arquivo ZIP contendo vários documentos PDF que podem ser estendidos pelo leitor após descompactá-los. Isso requer o AEM Forms no módulo de extensões Reader JEE.
+* Forneça um arquivo ZIP contendo vários documentos PDF que podem ser estendidos por leitura após descompactá-los. Isso requer o módulo AEM Forms no JEE Reader Extensions.
 
-* Forneça um arquivo ZIP contendo um tipo heterogêneo de documento que pode ser descompactado e convertido como documento PDF usando o serviço Generate PDF.
+* Forneça um arquivo ZIP contendo um tipo heterogêneo de documento que pode ser descompactado e convertido como documento do PDF usando o serviço Generate PDF.
 
 * A política protege uma lista de documentos e retorna como um arquivo ZIP.
 

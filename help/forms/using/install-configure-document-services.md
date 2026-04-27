@@ -6,9 +6,9 @@ role: Admin, Developer
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
-source-git-commit: c6d38c682dc45e3dcebef194b3b80510ab10f9e2
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '10086'
+source-wordcount: '10489'
 ht-degree: 1%
 
 ---
@@ -210,7 +210,7 @@ Se você for usar o serviço PDF Generator para converter formatos de arquivo na
 >* Adobe Acrobat, Microsoft® Word, Excel e Powerpoint estão disponíveis apenas para Microsoft® Windows. Se você estiver usando o sistema operacional baseado em UNIX, instale o OpenOffice para converter arquivos rich text e arquivos suportados do Microsoft® Office em documentos PDF.
 >* Ignore todas as caixas de diálogo exibidas após a instalação do Adobe Acrobat e de softwares de terceiros para todos os usuários configurados para usar o serviço PDF Generator.
 >* Inicie todos os softwares instalados pelo menos uma vez. Ignore todas as caixas de diálogo de todos os usuários configurados para usar o serviço PDF Generator.
->* [Verifique a data de expiração de seus números de série da Adobe Acrobat](https://helpx.adobe.com/br/enterprise/kb/volume-license-expiration-check.html) e defina uma data para atualizar a licença ou [migre seu número de série](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) com base na data de expiração.
+>* [Verifique a data de expiração de seus números de série da Adobe Acrobat](https://helpx.adobe.com/enterprise/kb/volume-license-expiration-check.html) e defina uma data para atualizar a licença ou [migre seu número de série](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) com base na data de expiração.
 
 ### Instale o Adobe Acrobat Pro DC
 
@@ -226,8 +226,10 @@ Antes de instalar o Acrobat, reveja esses requisitos essenciais. Você deve ter:
 * Privilégios de administrador local na máquina que executa o AEM Forms
 * Sistema operacional Windows de 64 bits
 * Conexão estável com a Internet para ativação de licença
-<!-- Backup solution for existing Acrobat settings
- Supported version of Adobe Acrobat (see [Adobe documentation](https://helpx.adobe.com/acrobat/kb/acrobat-dc-compatibility-with-windows-macos.html) for details) -->
+<!--
+Backup solution for existing Acrobat settings
+ Supported version of Adobe Acrobat (see [Adobe documentation](https://helpx.adobe.com/acrobat/kb/acrobat-dc-compatibility-with-windows-macos.html) for details)
+ -->
 
 
 #### Fluxo de trabalho e linha do tempo da implementação
@@ -240,7 +242,7 @@ O processo completo normalmente leva de 1 a 2 horas, dependendo do seu ambiente:
 | &#x200B;2. Conceder permissões de download | 5-10 minutos | [Acesso ao Admin Console](https://helpx.adobe.com/in/enterprise/global-admin-console/manage-administrators.html) |
 | &#x200B;3. Desinstalar o Acrobat anterior | 10-15 minutos | Acesso de administrador do servidor |
 | &#x200B;4. Baixe e instale o Adobe Acrobat Pro | 10-15 minutos | Acesso de administrador do servidor |
-| &#x200B;5. Baixar e implantar o pacote de FRL | 20-30 minutos | Acesso de administrador do servidor |
+| &#x200B;5. Baixar e implantar pacote de FRL | 20-30 minutos | Acesso de administrador do servidor |
 | &#x200B;6. Verificar instalação | 5-10 minutos | Acesso ao servidor |
 
 <!-- ![Workflow diagram showing the FRL implementation process](/help/forms/using/assets/frl.svg) -->
@@ -905,7 +907,7 @@ Siga estas etapas:
 >
 >A desativação do Modo protegido é necessária para cenários de automação do lado do servidor, como o AEM Forms PDF Generator. Essa configuração só deve ser alterada em ambientes de servidor dedicados, não em desktops de usuários finais.
 
-Para obter mais informações, consulte [documentação do Adobe sobre Modo Protegido](https://helpx.adobe.com/br/acrobat/kb/protected-mode-troubleshooting-reader.html).
+Para obter mais informações, consulte [documentação do Adobe sobre Modo Protegido](https://helpx.adobe.com/acrobat/kb/protected-mode-troubleshooting-reader.html).
 
 
 
@@ -1033,7 +1035,7 @@ Você pode permitir que um usuário não administrador use o serviço do PDF Gen
 
    1. A Microsoft® recomenda fazer backup do registro antes de modificá-lo. Para obter etapas detalhadas, consulte [Como fazer backup e restaurar o Registro no Windows](https://support.microsoft.com/en-us/help/322756).
    1. Abra o editor de Registro do Microsoft® Windows. Para abrir o editor de registro, vá para Iniciar > Executar, digite regedit e clique em OK.
-   1. Navegue até `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\system\`. Verifique se o valor de EnableLUA está definido como 0 (zero).
+   1. Vá até `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\system\`. Verifique se o valor de EnableLUA está definido como 0 (zero).
    1. Verifique se o valor de **EnableLUA** está definido como 0 (zero). Se o valor não for 0, altere o valor para 0. Feche o editor de Registro.
 
 1. Reinicie o computador.
@@ -1088,12 +1090,12 @@ O pacote complementar do AEM Forms é um aplicativo implantado no AEM. O pacote 
    1. Selecione **[!UICONTROL Forms]** na lista suspensa **[!UICONTROL Solução]**.
    2. Selecione a versão e o tipo do pacote. Você também pode usar a opção **[!UICONTROL Downloads de Pesquisa]** para filtrar os resultados.
 1. Selecione o nome do pacote aplicável ao seu sistema operacional, selecione **[!UICONTROL Aceitar termos do EULA]** e selecione **[!UICONTROL Baixar]**.
-1. Abra o [Gerenciador de Pacotes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=pt-BR) e clique em **[!UICONTROL Carregar Pacote]** para carregar o pacote.
+1. Abra o [Gerenciador de Pacotes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html) e clique em **[!UICONTROL Carregar Pacote]** para carregar o pacote.
 1. Selecione o pacote e clique em **[!UICONTROL Instalar]**.
 
-   Você também pode baixar o pacote através do link direto listado no artigo [versões do AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=pt-BR).
+   Você também pode baixar o pacote através do link direto listado no artigo [versões do AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
 
-1. Depois que o pacote for instalado, você será solicitado a reiniciar a instância do AEM. **Não interromper imediatamente o servidor.** Antes de parar o AEM Forms Server, aguarde até que as mensagens ServiceEvent REGISTERED e ServiceEvent UNREGISTERED parem de aparecer no arquivo `[AEM-Installation-Directory]/crx-quickstart/logs/error`.log e o log fique estável.
+1. Depois que o pacote for instalado, você será solicitado a reiniciar a instância do AEM. **Não parar o servidor imediatamente.** Antes de parar o AEM Forms Server, aguarde até que as mensagens ServiceEvent REGISTERED e ServiceEvent UNREGISTERED parem de aparecer no arquivo `[AEM-Installation-Directory]/crx-quickstart/logs/error`.log e o log fique estável.
 
 ## Configurações pós-instalação {#post-installation-configurations}
 
@@ -1156,7 +1158,7 @@ Uma conta de usuário local é necessária para executar o serviço PDF Generato
    <td>Valor padrão</td>
   </tr>
   <tr>
-   <td>Tempo limite da conversão do servidor</td>
+   <td>Tempo-limite da conversão do servidor</td>
    <td>Uma conversão PDFG permanece ativa pelo número de segundos definidos no tempo limite de Conversão do servidor</td>
    <td>270 segundos<br /> </td>
   </tr>
@@ -1267,11 +1269,11 @@ O serviço do Assembler depende do serviço Reader Extensions, do serviço Signa
   </tr>
   <tr>
    <td>Serviço do Forms</td>
-   <td>com.adobe.livecycle.adobe-lc-forms-bedrock-connector<br /> </td>
+   <td>com.adobe.livecycle.adobe-lc-forms-rosck-connector<br /> </td>
   </tr>
   <tr>
    <td>Serviço de saída</td>
-   <td>com.adobe.livecycle.adobe-lc-forms-bedrock-connector</td>
+   <td>com.adobe.livecycle.adobe-lc-forms-rosck-connector</td>
   </tr>
  </tbody>
 </table>
@@ -1320,7 +1322,7 @@ A [Ferramenta de Preparação do Sistema](#srt-configuration) verifica se o comp
    >
    >* Se a Ferramenta de preparação do sistema relatar que o arquivo pdfgen.api não está disponível na pasta de plug-ins do Acrobat, copie o arquivo pdfgen.api do diretório `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]\plugins\x86_win32` para o diretório `[Acrobat_root]\Acrobat\plug_ins`.
 
-1. Navegue até `[Path_of_reports_folder]`. Abra o arquivo SystemReadinessTool.html. Verifique o relatório e corrija os problemas mencionados.
+1. Vá até `[Path_of_reports_folder]`. Abra o arquivo SystemReadinessTool.html. Verifique o relatório e corrija os problemas mencionados.
 
 ### Configuração de opções para a ferramenta SRT {#srt-configuration}
 
@@ -1453,7 +1455,8 @@ Antes de executar as seguintes verificações, verifique se a [Ferramenta de Pre
 
 +++
 
-<!-- +++ Unable to add a PDF Generator (PDFG) user
+<!--
++++ Unable to add a PDF Generator (PDFG) user
 
 * (Acrobat 2020 only) Ensure Microsoft&reg; Visual C++ 2012 x86 and Microsoft&reg; Visual C++ 2013 x86 (32-bit) redistributable are installed on Windows.
 
@@ -1467,7 +1470,8 @@ Antes de executar as seguintes verificações, verifique se a [Ferramenta de Pre
 
 +++
 
-<!-- +++ (Acrobat 2020 only) Multiple user conversion failures 
+<!--
++++ (Acrobat 2020 only) Multiple user conversion failures 
 
 * Verify the server logs to check if the conversion is failing for a particular user.(Process Explorer can help you check running process for different users)
 
@@ -1479,9 +1483,11 @@ Antes de executar as seguintes verificações, verifique se a [Ferramenta de Pre
 
 * Perform a sample conversion.
 
-+++ -->
++++
+-->
 
-<!-- (Acrobat 2020 only) License of Adobe Acrobat installed on AEM Forms Server expires
+<!--
+(Acrobat 2020 only) License of Adobe Acrobat installed on AEM Forms Server expires
 
 * If you have an existing license of Adobe Acrobat and it has expired, [Download the latest version of Adobe Application Manager](https://helpx.adobe.com/in/creative-suite/kb/aam-troubleshoot-download-install.html), and migrating your serial number. Before [migrating your serial number](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number).
 
@@ -1506,7 +1512,8 @@ Antes de executar as seguintes verificações, verifique se a [Ferramenta de Pre
 
 * You can go online within 7 days of the first launch of your Adobe product to complete an online activation and registration or use an internet-enabled device and your product's serial number to complete this process. For detailed instructions, see [Offline Activation](https://exception.licenses.adobe.com/aoes/aoes/v1/t1?locale=en).
 
-+++ -->
++++
+-->
 
 +++ Não é possível converter o arquivo do Word ou Excel em PDF no Windows Server
 

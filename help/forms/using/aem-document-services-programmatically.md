@@ -1,5 +1,5 @@
 ---
-title: Utilização programática de serviços de documento AEM
+title: Uso dos serviços de documento da AEM de forma programática
 description: Saiba como usar APIs de serviços de documentos para assinar, criptografar, marcar e gerar documentos do PDF digitalmente.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -8,30 +8,30 @@ feature: Document Services,APIs & Integrations
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: f2e4f509-cca2-44a3-9231-e1954b0fefe3
-source-git-commit: 9eb74c1b95837d977b8abe9614421a0a2c0be73e
+source-git-commit: f2c92b990a5c09cbcf532e0800e264620d98af77
 workflow-type: tm+mt
-source-wordcount: '6448'
+source-wordcount: '6595'
 ht-degree: 1%
 
 ---
 
-# Using AEM Document Services Programmatically  {#using-aem-document-services-programmatically}
+# Uso dos serviços de documento da AEM de forma programática  {#using-aem-document-services-programmatically}
 
-Amostras e exemplos neste documento ajudam você a entender e usar os Serviços de documento AEM em uma AEM Forms em um ambiente OSGi. Para obter amostras e exemplos para AEM Forms no ambiente JEE, consulte
+Amostras e exemplos neste documento ajudam você a entender e usar os Serviços de documento da AEM em uma AEM Forms em um ambiente OSGi. Para obter amostras e exemplos para AEM Forms no ambiente JEE, consulte
 
-* [Início Rápido da API Java do Serviço de Assinatura](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/signature-service-java-api-quick.html?lang=pt-BR&#programming-aem-forms-jee)
+* [Início rápido da API Java do serviço de assinatura](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/signature-service-java-api-quick.html?#programming-aem-forms-jee)
 
-* [Início Rápido da API Java do Serviço de Criptografia](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/encryption-service-java-api-quick.html?lang=pt-BR&#developer-reference)
+* [Início Rápido da API Java do Serviço de Criptografia](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/encryption-service-java-api-quick.html?#developer-reference)
 
-* [Início Rápido da API Java de Serviço de extensões da Acrobat Reader](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/acrobat-reader-dc-extensions-service.html?lang=pt-BR&#developer-reference)
+* [Início rápido da API Java de serviço de extensões do Acrobat Reader](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/acrobat-reader-dc-extensions-service.html?#developer-reference)
 
 ## Pré-requisitos {#prerequisite}
 
-* [&#128279;](/help/forms/using/install-configure-document-services.md)
+* Antes de usar as APIs de serviço DocAssurance, [configure o serviço DocAssurance](/help/forms/using/install-configure-document-services.md).
 
-* Baixe e configure o [AEM Forms Client SDK](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html) com o projeto AEM maven. As classes de cliente necessárias para compilar Projetos Maven usando Serviços de documento AEM estão disponíveis no [AEM Forms Client SDK](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html)
+* Baixe e configure o [AEM Forms Client SDK](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) com seu projeto maven do AEM. As classes de cliente necessárias para compilar Projetos Maven usando os Serviços de documento da AEM estão disponíveis no [AEM Forms Client SDK](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)
 
-* Saiba [como criar seu projeto AEM usando o Maven](/help/sites-developing/ht-projects-maven.md)
+* Saiba [como criar seu projeto do AEM usando o Maven](/help/sites-developing/ht-projects-maven.md)
 
 ## Serviço DocAssurance {#docassurance-service}
 
@@ -46,7 +46,7 @@ Você pode executar as seguintes operações usando o serviço DocAssurance:
 * [Adicionar assinatura invisível](/help/forms/using/aem-document-services-programmatically.md#p-adding-an-invisible-signature-field-p)
 
 * [Adicionar campo de assinatura](/help/forms/using/aem-document-services-programmatically.md#p-adding-a-signature-field-nbsp-p)
-* [Aplicar carimbo data e hora do documento](/help/forms/using/aem-document-services-programmatically.md#apply-document-timestamp)
+* [Aplicar carimbo de data e hora do documento](/help/forms/using/aem-document-services-programmatically.md#apply-document-timestamp)
 
 * [Obter assinatura](/help/forms/using/aem-document-services-programmatically.md#p-getting-signature-p)
 * [Obter Lista de Campos de Assinatura](/help/forms/using/aem-document-services-programmatically.md#p-getting-signature-field-list-nbsp-p)
@@ -64,18 +64,18 @@ Você pode executar as seguintes operações usando o serviço DocAssurance:
 * [Remover assinaturas digitais](/help/forms/using/aem-document-services-programmatically.md#p-removing-digital-signatures-p)
 
 * [Obter campo de assinatura de certificação](/help/forms/using/aem-document-services-programmatically.md#p-getting-certifying-signature-field-p)
-* [Obter Tipo de Criptografia PDF](/help/forms/using/aem-document-services-programmatically.md#p-getting-pdf-encryption-type-p)
+* [Obter tipo de criptografia do PDF](/help/forms/using/aem-document-services-programmatically.md#p-getting-pdf-encryption-type-p)
 * [Remover Criptografia de Senha](/help/forms/using/aem-document-services-programmatically.md#p-removing-password-encryption-from-pdf-p)
 
 * [Remover Criptografia de Certificado](/help/forms/using/aem-document-services-programmatically.md#p-removing-certificate-encryption-p)
 
 >[!NOTE]
 >
->Todos esses serviços usam o objeto Documento como parâmetro de entrada para o qual o Javadoc pode ser encontrado na URL [https://helpx.adobe.com/br/experience-manager/6-3/forms/javadocs/index.html](https://helpx.adobe.com/br/experience-manager/6-3/forms/javadocs/index.html)
+>Todos esses serviços usam o objeto Documento como parâmetro de entrada para o qual o Javadoc pode ser encontrado na URL [https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/index.html](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/index.html)
 
 ### Adicionar um campo de assinatura invisível {#adding-an-invisible-signature-field}
 
-As assinaturas digitais aparecem em campos de assinatura, que são campos de formulário que contêm uma representação gráfica da assinatura. Os campos de assinatura podem ser visíveis ou invisíveis. Os assinantes podem usar um campo de assinatura pré-existente ou um campo de assinatura pode ser adicionado programaticamente. Em ambos os casos, o campo de assinatura deve existir antes que um documento PDF possa ser assinado. Você pode adicionar programaticamente um campo de assinatura usando a API Java do serviço de assinatura ou a API do serviço Web de assinatura. Você pode adicionar mais de um campo de assinatura a um documento PDF. No entanto, cada nome de campo de assinatura deve ser exclusivo.
+As assinaturas digitais aparecem em campos de assinatura, que são campos de formulário que contêm uma representação gráfica da assinatura. Os campos de assinatura podem ser visíveis ou invisíveis. Os assinantes podem usar um campo de assinatura pré-existente ou um campo de assinatura pode ser adicionado programaticamente. Em ambos os casos, o campo de assinatura deve existir para que um documento do PDF possa ser assinado. Você pode adicionar programaticamente um campo de assinatura usando a API Java do serviço de assinatura ou a API do serviço Web de assinatura. É possível adicionar mais de um campo de assinatura a um documento do PDF. No entanto, cada nome de campo de assinatura deve ser exclusivo.
 
 **Sintaxe**: `addInvisibleSignatureField(Document inDoc, String signatureFieldName, FieldMDPOptionSpec fieldMDPOptionsSpec, PDFSeedValueOptionSpec seedValueOptionsSpec, UnlockOptions unlockOptions)`
 
@@ -97,7 +97,7 @@ As assinaturas digitais aparecem em campos de assinatura, que são campos de for
   </tr>
   <tr>
    <td><code>fieldMDPOptionsSpec</code></td>
-   <td>Um objeto <code>FieldMDPOptionSpec</code> que especifica os campos de documento de PDF que são bloqueados após a assinatura do campo de assinatura. Este parâmetro é opcional e pode aceitar um valor nulo.</td>
+   <td>Um objeto <code>FieldMDPOptionSpec</code> que especifica os campos de documento do PDF bloqueados após a assinatura do campo de assinatura. Este parâmetro é opcional e pode aceitar um valor nulo.</td>
   </tr>
   <tr>
    <td><code>seedValueOptionsSpec</code></td>
@@ -110,7 +110,7 @@ As assinaturas digitais aparecem em campos de assinatura, que são campos de for
  </tbody>
 </table>
 
-Esta é uma amostra de código Java que adiciona um campo de assinatura invisível a um documento PDF.
+Esta é uma amostra de código Java que adiciona um campo de assinatura invisível a um documento do PDF.
 
 ```java
 /*************************************************************************
@@ -247,7 +247,7 @@ signOptions.setSigAppearence(sigAppearence);
 
 ### Adição de um campo de assinatura  {#adding-a-signature-field-nbsp}
 
-Você pode adicionar programaticamente um campo de assinatura usando a API Java do serviço de assinatura ou a API do serviço Web de assinatura. É possível adicionar vários campos de assinatura a um documento PDF. No entanto, cada nome de campo de assinatura deve ser exclusivo.
+Você pode adicionar programaticamente um campo de assinatura usando a API Java do serviço de assinatura ou a API do serviço Web de assinatura. É possível adicionar vários campos de assinatura a um documento do PDF. No entanto, cada nome de campo de assinatura deve ser exclusivo.
 
 **Sintaxe**:
 
@@ -270,11 +270,11 @@ public Document addSignatureField(Document inDoc,
   </tr>
   <tr>
    <td><code>inDoc</code></td>
-   <td>Document object containing PDF</td>
+   <td>Objeto do documento que contém o PDF</td>
   </tr>
   <tr>
    <td><code>signatureFieldName</code></td>
-   <td>Nome do campo de assinatura. This parameter is mandatory and cannot accept a null value.</td>
+   <td>Nome do campo de assinatura. Este parâmetro é obrigatório e não pode aceitar um valor nulo.</td>
   </tr>
   <tr>
    <td><code>pageNumber</code></td>
@@ -282,11 +282,11 @@ public Document addSignatureField(Document inDoc,
   </tr>
   <tr>
    <td><code>positionRectangle</code></td>
-   <td><code>PositionRectangle object</code> Este parâmetro é obrigatório e não pode aceitar um valor nulo. Se o retângulo especificado não estiver pelo menos parcialmente na caixa de corte da página especificada, um <code>InvalidArgumentException</code> será lançado. Além disso, nem a altura nem a largura do retângulo especificado podem ser 0 ou negativas. As coordenadas X (inferior esquerdo) ou Y (inferior esquerdo) podem ser 0 ou maiores, mas não negativas, e são relativas à caixa de corte da página.</td>
+   <td>Um <code>PositionRectangle object</code> que especifica a posição do campo de assinatura. Este parâmetro é obrigatório e não pode aceitar um valor nulo. Se o retângulo especificado não estiver pelo menos parcialmente na caixa de corte da página especificada, um <code>InvalidArgumentException</code> será lançado. Além disso, nem a altura nem a largura do retângulo especificado podem ser 0 ou negativas. As coordenadas X (inferior esquerdo) ou Y (inferior esquerdo) podem ser 0 ou maiores, mas não negativas, e são relativas à caixa de corte da página.</td>
   </tr>
   <tr>
    <td><code>fieldMDPOptionsSpec</code></td>
-   <td><code>FieldMDPOptionSpec</code> This is an optional parameter and can be null.</td>
+   <td>Um objeto <code>FieldMDPOptionSpec</code> que especifica os campos de documento do PDF bloqueados após a assinatura do campo de assinatura. Este é um parâmetro opcional e pode ser nulo.</td>
   </tr>
   <tr>
    <td><code>seedValueOptionsSpec</code></td>
@@ -299,7 +299,7 @@ public Document addSignatureField(Document inDoc,
  </tbody>
 </table>
 
-Este é um exemplo de código Java que adiciona um campo de assinatura a um documento PDF.
+Esta é uma amostra de código Java que adiciona um campo de assinatura a um documento do PDF.
 
 ```java
 /*************************************************************************
@@ -425,7 +425,7 @@ public class AddSignatureField {
 }
 ```
 
-### Aplicar carimbo data e hora do documento {#apply-document-timestamp}
+### Aplicar carimbo de data e hora do documento {#apply-document-timestamp}
 
 Você pode programaticamente carimbar um documento de acordo com as especificações do [PAdES 4](https://en.wikipedia.org/wiki/PAdES). Você também pode usar a especificação [CAdES](https://en.wikipedia.org/wiki/CAdES_%28computing%29) para documentos relacionados a transações.
 
@@ -634,7 +634,7 @@ import com.adobe.fd.signatures.pki.client.types.prefs.TSPPreferencesImpl;
 
 ### Obtendo assinatura {#getting-signature}
 
-Você pode recuperar os nomes de todos os campos de assinatura que estão em um documento PDF que você deseja assinar ou certificar. Se você não tiver certeza dos nomes dos campos de assinatura em um documento PDF ou para verificar os nomes, recupere os nomes de forma programática. O serviço de Assinatura retorna o nome totalmente qualificado do campo de assinatura, como `form1[0].grantApplication[0].page1[0].SignatureField1[0]`.
+É possível recuperar os nomes de todos os campos de assinatura que estão em um documento do PDF que você deseja assinar ou certificar. Se não tiver certeza dos nomes dos campos de assinatura em um documento do PDF ou para verificar os nomes, recupere-os programaticamente. O serviço de Assinatura retorna o nome totalmente qualificado do campo de assinatura, como `form1[0].grantApplication[0].page1[0].SignatureField1[0]`.
 
 **Sintaxe**: `getSignature(Document doc, String signatureFieldName, UnlockOptions unlockOptions)`
 
@@ -652,7 +652,7 @@ Você pode recuperar os nomes de todos os campos de assinatura que estão em um 
   </tr>
   <tr>
    <td><code>signatureFieldName</code></td>
-   <td>O nome do campo de assinatura que contém uma assinatura. Especifique o nome totalmente qualificado do campo de assinatura. Ao usar um documento PDF baseado em um formulário XFA, o nome parcial do campo de assinatura pode ser usado. Por exemplo, <code>form1[0].#subform[1].SignatureField3[3]</code> pode ser especificado como <code>SignatureField3[3]</code>.</td>
+   <td>O nome do campo de assinatura que contém uma assinatura. Especifique o nome totalmente qualificado do campo de assinatura. Ao usar um documento do PDF baseado em um formulário XFA, o nome parcial do campo de assinatura pode ser usado. Por exemplo, <code>form1[0].#subform[1].SignatureField3[3]</code> pode ser especificado como <code>SignatureField3[3]</code>.</td>
   </tr>
   <tr>
    <td><code>UnlockOptions</code></td>
@@ -661,7 +661,7 @@ Você pode recuperar os nomes de todos os campos de assinatura que estão em um 
  </tbody>
 </table>
 
-O exemplo de código Java a seguir recupera as informações de assinatura para o campo de assinatura fornecido em um documento PDF.
+O exemplo de código Java a seguir recupera as informações de assinatura de um determinado campo de assinatura em um documento PDF.
 
 ```java
 /*************************************************************************
@@ -758,7 +758,7 @@ public class GetSignature {
 
 ### Obtendo lista de campos de assinatura  {#getting-signature-field-list-nbsp}
 
-Você pode recuperar os nomes de todos os campos de assinatura que estão em um documento PDF que você deseja assinar ou certificar. Se não tiver certeza dos nomes dos campos de assinatura em um documento PDF, você poderá recuperá-los e verificá-los de forma programática. O serviço de Assinatura retorna o nome totalmente qualificado do campo de assinatura, como `form1[0].grantApplication[0].page1[0].SignatureField1[0]`.
+É possível recuperar os nomes de todos os campos de assinatura que estão em um documento do PDF que você deseja assinar ou certificar. Se não tiver certeza dos nomes dos campos de assinatura em um documento do PDF, você poderá recuperá-los e verificá-los de forma programática. O serviço de Assinatura retorna o nome totalmente qualificado do campo de assinatura, como `form1[0].grantApplication[0].page1[0].SignatureField1[0]`.
 
 **Sintaxe**: `public List <PDFSignatureField> getSignatureFieldList (Document inDoc, UnlockOptions unlockOptions)`
 
@@ -766,7 +766,7 @@ Você pode recuperar os nomes de todos os campos de assinatura que estão em um 
 
 | Parâmetros | Descrição |
 |---|---|
-| `inDoc` | Objeto de documento que contém PDF |
+| `inDoc` | Objeto do documento que contém o PDF |
 | `unlockOptions` | Inclui os parâmetros necessários para desbloquear um arquivo criptografado. Isso é necessário somente se o arquivo estiver criptografado. |
 
 O exemplo de código Java a seguir recupera os nomes dos campos de assinatura em um documento PDF.
@@ -873,11 +873,11 @@ public class GetSignatureFields {
 
 ### Modificação de campos de assinatura  {#modifying-signature-fields-nbsp}
 
-Você pode modificar campos de assinatura que estão em um documento PDF. A modificação de um campo de assinatura envolve a manipulação de seus valores de dicionário de bloqueio de campo de assinatura ou valores de dicionário de valor de seed.
+Você pode modificar campos de assinatura que estão em um documento do PDF. A modificação de um campo de assinatura envolve a manipulação de seus valores de dicionário de bloqueio de campo de assinatura ou valores de dicionário de valor de seed.
 
 Um dicionário de bloqueio de campo especifica uma lista de campos que são bloqueados quando o campo de assinatura é assinado. Um campo bloqueado impede que os usuários editem o campo. Um dicionário de valor de seed contém informações de restrição que são usadas no momento em que a assinatura é aplicada. Por exemplo, você pode alterar permissões que controlam as ações que podem ocorrer sem invalidar uma assinatura.
 
-Ao modificar um campo de assinatura existente, você pode editar o documento PDF para refletir as necessidades comerciais em constante mudança. Por exemplo, um novo requisito comercial exige o bloqueio de todos os campos do documento depois que ele for assinado.
+Ao modificar um campo de assinatura existente, você pode editar o documento do PDF para refletir as necessidades comerciais em constante mudança. Por exemplo, um novo requisito comercial exige o bloqueio de todos os campos do documento depois que ele for assinado.
 
 **Sintaxe**: `public Document modifySignatureField(Document inDoc, String signatureFieldName, PDFSignatureFieldProperties pdfSignatureFieldProperties, UnlockOptions unlockOptions)`
 
@@ -891,7 +891,7 @@ Ao modificar um campo de assinatura existente, você pode editar o documento PDF
   </tr>
   <tr>
    <td><code>inDoc</code></td>
-   <td>Objeto de documento que contém PDF</td>
+   <td>Objeto do documento que contém o PDF</td>
   </tr>
   <tr>
    <td><code>signatureFieldName</code></td>
@@ -1038,11 +1038,11 @@ public class ModifySignatureField {
 }
 ```
 
-### Certificar documentos do PDF  {#certifying-pdf-documents-nbsp}
+### Certificação de documentos do PDF  {#certifying-pdf-documents-nbsp}
 
-Você pode proteger um documento PDF certificando-o com um tipo específico de assinatura chamado assinatura certificada. Uma assinatura certificada distingue-se de uma assinatura digital das seguintes formas:
+Você pode proteger um documento do PDF certificando-o com um tipo específico de assinatura chamado assinatura certificada. Uma assinatura certificada distingue-se de uma assinatura digital das seguintes formas:
 
-* It must be the first signature applied to the PDF document. Em outras palavras, quando a assinatura certificada é aplicada, outros campos de assinatura no documento devem ser não assinados. Apenas uma assinatura certificada é permitida em um documento PDF. Para assinar e certificar um documento PDF, certifique-o antes de assiná-lo. Após certificar um documento PDF, é possível assinar digitalmente campos de assinatura adicionais.
+* Deve ser a primeira assinatura aplicada ao documento do PDF. Em outras palavras, quando a assinatura certificada é aplicada, outros campos de assinatura no documento devem ser não assinados. Somente uma assinatura certificada é permitida em um documento do PDF. Para assinar e certificar um documento do PDF, certifique-o antes de assiná-lo. Após certificar um documento PDF, é possível assinar digitalmente campos de assinatura adicionais.
 * O autor ou o originador do documento pode especificar que o documento pode ser modificado de determinadas maneiras sem invalidar a assinatura certificada. Por exemplo, o documento pode permitir o preenchimento de formulários ou comentários. Se o autor especificar que uma determinada modificação não é permitida, o Acrobat restringirá os usuários de modificar o documento dessa maneira. Se tais modificações forem feitas, a assinatura certificada é inválida. Além disso, o Acrobat emite um aviso quando um usuário abre o documento. (Com assinaturas não certificadas, as modificações não são impedidas e as operações normais de edição não invalidam a assinatura original.)
 * No momento da assinatura, o documento é digitalizado em busca de tipos específicos de conteúdo que possam tornar o conteúdo de um documento ambíguo ou enganoso. Por exemplo, uma anotação pode obscurecer algum texto em uma página que é importante para entender o que está sendo certificado. Pode ser fornecida uma explicação (atestado legal) sobre esse conteúdo.
 
@@ -1071,11 +1071,11 @@ secureDocument(Document inDoc, EncryptionOptions encryptionOptions,
   </tr>
   <tr>
    <td><code>signatureOptions</code></td>
-   <td>Inclui as opções necessárias para Assinar/Certificar um documento PDF</td>
+   <td>Inclui as opções necessárias para Assinar/Certificar um documento do PDF</td>
   </tr>
   <tr>
    <td><code>readerExtensionOptions</code></td>
-   <td>Inclui as opções necessárias para estender um documento do Reader PDF</td>
+   <td>Inclui as opções necessárias para o Reader Extensão de um documento do PDF</td>
   </tr>
   <tr>
    <td><code>unlockOptions</code></td>
@@ -1084,7 +1084,7 @@ secureDocument(Document inDoc, EncryptionOptions encryptionOptions,
  </tbody>
 </table>
 
-A amostra de código a seguir certifica um documento PDF que é baseado em um arquivo PDF.
+A amostra de código a seguir certifica um documento do PDF baseado em um arquivo do PDF.
 
 ```java
 /*************************************************************************
@@ -1345,13 +1345,13 @@ public class Certify {
 
 ### Protegendo documentos {#securing-documents}
 
-O secureDocument permite criptografar, assinar/certificar e estender um Documento PDF individualmente ou em qualquer combinação em uma ordem específica. Para acessar qualquer uma dessas funcionalidades, passe o argumento correspondente. Se for nulo, presume-se que o processamento específico não é necessário.
+O secureDocument permite criptografar, assinar/certificar e ler um Documento do PDF individualmente ou em qualquer combinação em uma ordem específica. Para acessar qualquer uma dessas funcionalidades, passe o argumento correspondente. Se for nulo, presume-se que o processamento específico não é necessário.
 
-**Criptografando documentos PDF com senha**
+**Criptografando documentos do PDF com a senha**
 
-Quando você criptografa um documento PDF com uma senha, um usuário deve especificar a senha para abrir o documento PDF no Adobe Reader ou Acrobat. Além disso, antes que outra operação dos Serviços de documento da AEM Forms use o documento, um documento PDF criptografado por senha deve ser desbloqueado.
+Quando você criptografa um documento do PDF com uma senha, um usuário deve especificar a senha para abrir o documento do PDF no Adobe Reader ou no Acrobat. Além disso, antes que outra operação do AEM Forms Document Services use o documento, um documento PDF criptografado por senha deve ser desbloqueado.
 
-**Criptografando documentos PDF com certificados**
+**Criptografando documentos do PDF com certificados**
 
 A criptografia baseada em certificado permite criptografar um documento para recipients específicos usando tecnologia de chave pública.
 
@@ -1370,39 +1370,39 @@ Além disso, as listas de certificados revogados (CRLs) fornecem informações s
 
 >[!NOTE]
 >
->Antes de criptografar um documento PDF com um certificado, você deve garantir que adicione o certificado ao AEM Trust Store.
+>Antes de criptografar um documento do PDF com um certificado, você deve garantir que adicionou o certificado ao AEM Trust Store.
 
 **Aplicando direitos de uso a documentos do PDF**
 
-Você pode aplicar direitos de uso a documentos do PDF usando a API de cliente Java de extensões do Reader e o serviço da Web. Os direitos de uso pertencem à funcionalidade que está disponível por padrão no Acrobat, mas não no Adobe Reader, como a capacidade de adicionar comentários a um formulário ou preencher campos de formulário e salvar o formulário. os documentos PDF que têm direitos de uso aplicados a eles são chamados de documentos habilitados por direitos. Um usuário que abre um documento com direitos ativados no Adobe Reader pode executar operações ativadas para esse documento específico.
+Você pode aplicar direitos de uso a documentos do PDF usando a API do cliente Java das extensões da Reader e o serviço da Web. Os direitos de uso pertencem à funcionalidade que está disponível por padrão no Acrobat, mas não no Adobe Reader, como a capacidade de adicionar comentários a um formulário ou preencher campos de formulário e salvar o formulário. Os documentos do PDF que têm direitos de uso aplicados a eles são chamados de documentos habilitados por direitos. Um usuário que abre um documento habilitado para direitos no Adobe Reader pode executar operações que estão habilitadas para esse documento específico.
 
-Antes de estender um documento PDF com um certificado do Reader, você deve garantir que adiciona o certificado ao AEM Keystore.
+Antes de estender um documento do PDF com um certificado do Reader, você deve garantir que adicionou o certificado ao AEM Keystore.
 
-**Assinando documentos PDF digitalmente**
+**Assinatura digital de documentos do PDF**
 
-As assinaturas digitais podem ser aplicadas a documentos PDF para fornecer um nível de segurança. As assinaturas digitais, como as assinaturas manuscritas, fornecem um meio pelo qual os signatários se identificam e fazem declarações sobre um documento.
+As assinaturas digitais podem ser aplicadas a documentos do PDF para fornecer um nível de segurança. As assinaturas digitais, como as assinaturas manuscritas, fornecem um meio pelo qual os signatários se identificam e fazem declarações sobre um documento.
 
 A tecnologia usada para assinar documentos digitalmente ajuda a garantir que tanto o signatário quanto os recipients estejam claros sobre o que foi assinado e confiantes de que o documento não foi alterado desde que foi assinado.
 
-Os documentos PDF são assinados por meio de tecnologia de chave pública. Um signatário tem duas chaves: uma chave pública e uma chave privada. A chave privada é armazenada na credencial de um usuário que deve estar disponível no momento da assinatura.
+Os documentos do PDF são assinados por meio de tecnologia de chave pública. Um signatário tem duas chaves: uma chave pública e uma chave privada. A chave privada é armazenada na credencial de um usuário que deve estar disponível no momento da assinatura.
 
 A chave pública é armazenada no certificado do usuário que deve estar disponível para os recipients validarem a assinatura. Informações sobre certificados revogados são encontradas nas listas de certificados revogados (CRLs) e respostas do Protocolo de Status de Certificados Online (OCSP) distribuídas pelas Autoridades de Certificação (CAs). A hora da assinatura pode ser obtida de uma fonte confiável conhecida como Autoridade de carimbo de data e hora.
 
 >[!NOTE]
 >
->Antes de assinar digitalmente um documento PDF, você deve garantir que adiciona a credencial no AEM Keystore. A credencial é a chave privada usada para assinatura.
+>Antes de assinar digitalmente um documento do PDF, você deve garantir a adição da credencial no AEM Keystore. A credencial é a chave privada usada para assinatura.
 
 >[!NOTE]
 >
->*[&#128279;](https://en.wikipedia.org/wiki/CAdES_%28computing%29)*
+>O AEM Forms também oferece suporte à especificação *[CAdES](https://en.wikipedia.org/wiki/CAdES_%28computing%29)* para assinatura digital de documentos do PDF.
 
-**Documentos de PDF de Certificação**
+**Certificando Documentos do PDF**
 
-Você pode proteger um documento PDF certificando-o com um tipo específico de assinatura chamado assinatura certificada. Uma assinatura certificada distingue-se de uma assinatura digital das seguintes formas:
+Você pode proteger um documento do PDF certificando-o com um tipo específico de assinatura chamado assinatura certificada. Uma assinatura certificada distingue-se de uma assinatura digital das seguintes formas:
 
 Deve ser a primeira assinatura aplicada ao documento PDF; ou seja, no momento em que a assinatura certificada é aplicada, todos os outros campos de assinatura no documento devem ser não assinados.
 
-Apenas uma assinatura certificada é permitida em um documento PDF. Se você quiser assinar e certificar um documento PDF, deverá certificá-lo antes de assiná-lo.
+Somente uma assinatura certificada é permitida em um documento do PDF. Se quiser assinar e certificar um documento do PDF, você deverá certificá-lo antes de assiná-lo.
 
 Após certificar um documento PDF, é possível assinar digitalmente campos de assinatura adicionais.
 
@@ -1418,7 +1418,7 @@ Por exemplo, uma anotação pode obscurecer algum texto em uma página que é im
 
 >[!NOTE]
 >
->Antes de assinar digitalmente um documento PDF, você deve garantir que adiciona a credencial no AEM Keystore. A credencial é a chave privada usada para assinatura.
+>Antes de assinar digitalmente um documento do PDF, você deve garantir a adição da credencial no AEM Keystore. A credencial é a chave privada usada para assinatura.
 
 **Sintaxe**:
 
@@ -1440,19 +1440,19 @@ secureDocument(Document inDoc,
   </tr>
   <tr>
    <td><code>inDoc</code><br /> </td>
-   <td>PDF de entrada de documento Documento<br /> </td>
+   <td>Documento PDF de entrada de documento<br /> </td>
   </tr>
   <tr>
    <td><code>encryptionOptions</code><br /> </td>
-   <td>Inclui os argumentos necessários para Criptografar um PDF Doc<br /> </td>
+   <td>Inclui os argumentos necessários para Criptografar um Documento PDF<br /> </td>
   </tr>
   <tr>
    <td><code>signatureOptions</code></td>
-   <td>Inclui as opções necessárias para Assinar/Certificar um PDF Doc</td>
+   <td>Inclui as opções necessárias para Assinar/Certificar um Documento da PDF</td>
   </tr>
   <tr>
    <td><code>readerExtensionOptions</code></td>
-   <td>Reader Inclui as opções necessárias para estender um PDF Doc</td>
+   <td>Inclui as opções necessárias para estender um documento do Reader</td>
   </tr>
   <tr>
    <td><code>unlockOptions</code></td>
@@ -1461,7 +1461,7 @@ secureDocument(Document inDoc,
  </tbody>
 </table>
 
-**Amostra 1**: esta amostra é usada para executar a criptografia de senha, certificando um campo de assinatura e Reader Estendendo o documento PDF.
+**Amostra 1**: esta amostra é usada para executar a criptografia de senha, certificando um campo de assinatura e o Reader Estendendo o documento do PDF.
 
 ```java
 /*************************************************************************
@@ -1763,7 +1763,7 @@ public class PassEncryptCertifyExtend {
 }
 ```
 
-**Amostra 2**: esta amostra é usada para executar a criptografia PKI, assinando um campo de assinatura e Reader Estendendo o documento PDF.
+**Amostra 2**: esta amostra é usada para executar a criptografia PKI, assinar um campo de assinatura e estender o documento do Reader.
 
 ```java
 /*************************************************************************
@@ -2086,13 +2086,13 @@ public class PassEncryptSignExtend {
 }
 ```
 
-Se a seguinte mensagem de erro for exibida enquanto o leitor estiver estendendo um documento PDF:
+Se a seguinte mensagem de erro for exibida durante a extensão de um documento do PDF pelo Reader:
 
 ```javascript
 org.apache.sling.engine.impl.SlingRequestProcessorImpl service: Uncaught Throwable java.lang.ThreadDeath: null at com.adobe.internal.pdftoolkit.services.javascript.GibsonContextFactory.observeInstructionCount(GibsonContextFactory.java:138)
 ```
 
-Isso significa que o serviço de Extensão de Reader não pode executar os JavaScripts usados no documento dentro do intervalo de tempo limite definido.
+Isso significa que o serviço Reader Extension não pode executar os JavaScripts usados no documento dentro do intervalo de tempo limite definido.
 
 Gerencie o intervalo de tempo limite definido para os JavaScripts no documento PDF usando:
 
@@ -2441,7 +2441,7 @@ public void removeDocumentUsageRights() {
 
 #### Verificação de assinaturas digitais {#verifying-digital-signatures}
 
-As assinaturas digitais podem ser verificadas para garantir que um documento PDF assinado não foi modificado e que a assinatura digital é válida. Ao verificar uma assinatura digital, você pode verificar o status da assinatura e suas propriedades, como a identidade do assinante. Antes de confiar em uma assinatura digital, é recomendável verificá-la. Ao verificar uma assinatura digital, consulte um documento PDF que contenha uma assinatura digital.
+As assinaturas digitais podem ser verificadas para garantir que um documento PDF assinado não tenha sido modificado e que a assinatura digital seja válida. Ao verificar uma assinatura digital, você pode verificar o status da assinatura e suas propriedades, como a identidade do assinante. Antes de confiar em uma assinatura digital, é recomendável verificá-la. Ao verificar uma assinatura digital, consulte um documento do PDF que contenha uma assinatura digital.
 
 **Sintaxe**: `verify( inDoc, signatureFieldName, revocationCheckStyle, verificationTime, dssPrefs, ResourceResolver resourceResolver)`
 
@@ -2481,7 +2481,7 @@ As assinaturas digitais podem ser verificadas para garantir que um documento PDF
  </tbody>
 </table>
 
-Este exemplo de código usa `DocAssuranceService` para verificar um campo de assinatura em um documento PDF criptografado.
+Este código de exemplo usa `DocAssuranceService` para verificar um campo de assinatura em um documento PDF criptografado.
 
 ```java
 /*************************************************************************
@@ -2759,7 +2759,7 @@ public class VerifyFieldEncryptedPDF {
 
 ### Verificação de várias assinaturas digitais {#verifying-multiple-digital-signatures}
 
-O AEM permite verificar assinaturas digitais em documentos PDF. Um documento PDF pode conter várias assinaturas digitais se estiver sujeito a um processo comercial que exija assinaturas de vários signatários. Por exemplo, uma transação financeira requer assinaturas do gerente de empréstimo e do gerente. Você pode usar a API do serviço de assinatura para verificar todas as assinaturas no documento PDF. Ao verificar várias assinaturas digitais, você pode verificar o status e as propriedades de cada assinatura. Antes de confiar em uma assinatura digital, o Adobe recomenda verificá-la.
+O AEM permite verificar assinaturas digitais em documentos do PDF. Um documento do PDF pode conter várias assinaturas digitais se estiver sujeito a um processo comercial que exija assinaturas de vários signatários. Por exemplo, uma transação financeira requer assinaturas do gerente de empréstimo e do gerente. Você pode usar a API do serviço de assinatura para verificar todas as assinaturas no documento do PDF. Ao verificar várias assinaturas digitais, você pode verificar o status e as propriedades de cada assinatura. Antes de confiar em uma assinatura digital, a Adobe recomenda verificá-la.
 
 **Sintaxe**: `verifyDocument(Document doc, RevocationCheckStyle revocationCheckStyle, VerificationTime verificationTime, ValidationPreferences prefStore, ResourceResolver resourceResolver)`
 
@@ -2794,7 +2794,7 @@ O AEM permite verificar assinaturas digitais em documentos PDF. Um documento PDF
  </tbody>
 </table>
 
-O código de exemplo a seguir usa DocAssuranceService para verificar os campos de assinatura em um documento PDF já criptografado.
+O código de exemplo a seguir usa DocAssuranceService para verificar os campos de assinatura em um documento do PDF já criptografado.
 
 ```java
 /*************************************************************************
@@ -3178,7 +3178,7 @@ public class ClearSignatureField {
 
 ### Obtendo campo de assinatura de certificação {#getting-certifying-signature-field}
 
-Você pode recuperar os nomes de todos os campos de assinatura que estão em um documento PDF que você deseja assinar ou certificar. Se não tiver certeza dos nomes dos campos de assinatura que estão em um documento PDF ou se quiser verificar os nomes, você poderá recuperá-los programaticamente. O serviço de Assinatura retorna o nome totalmente qualificado do campo de assinatura, como `form1[0].grantApplication[0].page1[0].SignatureField1[0]`.
+É possível recuperar os nomes de todos os campos de assinatura que estão em um documento do PDF que você deseja assinar ou certificar. Se não tiver certeza dos nomes dos campos de assinatura que estão em um documento do PDF ou se quiser verificar os nomes, você poderá recuperá-los programaticamente. O serviço de Assinatura retorna o nome totalmente qualificado do campo de assinatura, como `form1[0].grantApplication[0].page1[0].SignatureField1[0]`.
 
 **Sintaxe**: `getCertifyingSignatureField(Document inDoc, UnlockOptions unlockOptions)`
 
@@ -3295,9 +3295,9 @@ public class GetCertifyingSignatureField {
 }
 ```
 
-### Obtendo tipo de criptografia de PDF {#getting-pdf-encryption-type}
+### Obtenção do tipo de criptografia do PDF {#getting-pdf-encryption-type}
 
-Você pode recuperar os nomes de todos os campos de assinatura que estão em um documento PDF que você deseja assinar ou certificar. Se não tiver certeza dos nomes dos campos de assinatura que estão em um documento PDF ou se quiser verificar os nomes, você poderá recuperá-los programaticamente. O serviço de Assinatura retorna o nome totalmente qualificado do campo de assinatura, como `asform1[0].grantApplication[0].page1[0].SignatureField1[0]`.
+É possível recuperar os nomes de todos os campos de assinatura que estão em um documento do PDF que você deseja assinar ou certificar. Se não tiver certeza dos nomes dos campos de assinatura que estão em um documento do PDF ou se quiser verificar os nomes, você poderá recuperá-los programaticamente. O serviço de Assinatura retorna o nome totalmente qualificado do campo de assinatura, como `asform1[0].grantApplication[0].page1[0].SignatureField1[0]`.
 
 **Sintaxe**: `void getPDFEncryption(Document inDoc)`
 
@@ -3316,7 +3316,7 @@ Você pode recuperar os nomes de todos os campos de assinatura que estão em um 
  </tbody>
 </table>
 
-O exemplo de código Java a seguir recupera as informações de assinatura para o campo de assinatura fornecido em um documento PDF.
+O exemplo de código Java a seguir recupera as informações de assinatura de um determinado campo de assinatura em um documento PDF.
 
 ```java
 /*************************************************************************
@@ -3411,9 +3411,9 @@ public class GetPDFEncryption {
 }
 ```
 
-### Removendo criptografia de senha do PDF {#removing-password-encryption-from-pdf}
+### Remoção da criptografia de senha do PDF {#removing-password-encryption-from-pdf}
 
-Remova a criptografia baseada em senha de um documento PDF para permitir que os usuários abram o documento PDF no Adobe Reader ou Acrobat sem precisar especificar uma senha. Após remover a criptografia baseada em senha de um documento PDF, o documento não é mais seguro.
+Remova a criptografia baseada em senha de um documento PDF para permitir que os usuários abram o documento PDF no Adobe Reader ou no Acrobat sem precisar especificar uma senha. Depois de remover a criptografia baseada em senha de um documento do PDF, o documento não é mais seguro.
 
 **Sintaxe**: `Document removePDFPasswordSecurity (Document inDoc,String password)`
 
@@ -3436,7 +3436,7 @@ Remova a criptografia baseada em senha de um documento PDF para permitir que os 
  </tbody>
 </table>
 
-A amostra de código a seguir remove a criptografia baseada em senha de um documento PDF.
+A amostra de código a seguir remove a criptografia baseada em senha de um documento do PDF.
 
 ```java
     package com.adobe.docassurance.samples;
@@ -3512,7 +3512,7 @@ A amostra de código a seguir remove a criptografia baseada em senha de um docum
 
 ### Removendo criptografia de certificado {#removing-certificate-encryption}
 
-Você pode remover a criptografia baseada em certificado de um documento PDF para que os usuários possam abrir o documento PDF no Adobe Reader ou Acrobat. Para remover a criptografia de um documento PDF que está criptografado com um certificado, consulte uma chave privada. Após remover a criptografia de um documento PDF, ele não é mais seguro.
+Você pode remover a criptografia baseada em certificado de um documento do PDF para que os usuários possam abrir o documento do PDF no Adobe Reader ou no Acrobat. Para remover a criptografia de um documento do PDF que está criptografado com um certificado, consulte uma chave privada. Depois de remover a criptografia de um documento PDF, ele não é mais seguro.
 
 **Sintaxe**: `removePDFCertificateSecurity(Document inDoc, String alias, ResourceResolver resourceResolver)`
 
@@ -3539,7 +3539,7 @@ Você pode remover a criptografia baseada em certificado de um documento PDF par
  </tbody>
 </table>
 
-A amostra de código Java a seguir remove a criptografia baseada em certificado de um documento PDF.
+A amostra de código Java a seguir remove a criptografia baseada em certificado de um documento do PDF.
 
 ```java
     package com.adobe.docassurance.samples;
@@ -3636,17 +3636,17 @@ A amostra de código Java a seguir remove a criptografia baseada em certificado 
 
 O serviço de Saída fornece APIs para renderizar um arquivo XDP nos formatos .pdf, .pcl, .zpl e .ps. O serviço oferece suporte às seguintes APIs:
 
-* **[generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p):** gera um documento PDF mesclando um design de formulário com dados armazenados em um local de rede, sistema de arquivos local ou local HTTP como valores literais.
+* **[generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p):** gera um documento do PDF mesclando um design de formulário com dados armazenados em um local de rede, sistema de arquivos local ou local HTTP como valores literais.
 
-* **[generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p):** gera um documento PDF mesclando um design de formulário com dados armazenados em um aplicativo.
-* **[generatePDFOutputBatch](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutputbatch-p):** Mescla um design de formulário com dados para criar um documento PDF. Opcionalmente, gera um arquivo de metadados para cada registro ou salva a saída em um arquivo PDF.
+* **[generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p):** gera um documento do PDF mesclando um design de formulário com dados armazenados em um aplicativo.
+* **[generatePDFOutputBatch](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutputbatch-p):** Mescla um design de formulário com dados para criar um documento do PDF. Opcionalmente, o gera um arquivo de metadados para cada registro ou salva a saída em um arquivo do PDF.
 * **[generatePrintedOutput](/help/forms/using/aem-document-services-programmatically.md#p-generateprintedoutput-p):** gera uma saída PCL, PostScript ou ZPL de um design de formulário e arquivo de dados armazenados em um local de rede, sistema de arquivos local ou local HTTP como valores literais.
 
 * **[generatePrintedOutput](/help/forms/using/aem-document-services-programmatically.md#p-generateprintedoutput-p):** gera uma saída PCL, PostScript e ZPL de um design de formulário e arquivo de dados armazenados em um aplicativo.
 
 ### generatePDFOutput {#generatepdfoutput}
 
-A API generatePDFOutput gera um documento PDF ao mesclar um design de formulário com dados. Opcionalmente, gera um arquivo de metadados para cada registro ou salva a saída em um arquivo PDF. Use a API generatePDFOutput para os designs de formulário ou dados armazenados em um local de rede, sistema de arquivos local ou local HTTP como valores literais. Se o design do formulário e os dados XML estiverem armazenados em um aplicativo, use a API [generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p).
+A API generatePDFOutput gera um documento do PDF ao mesclar um design de formulário com dados. Opcionalmente, o gera um arquivo de metadados para cada registro ou salva a saída em um arquivo do PDF. Use a API generatePDFOutput para os designs de formulário ou dados armazenados em um local de rede, sistema de arquivos local ou local HTTP como valores literais. Se o design do formulário e os dados XML estiverem armazenados em um aplicativo, use a API [generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p).
 
 **Sintaxe:** `Document generatePDFOutput(String uriOrFileName, Document data, PDFOutputOptions options);`
 
@@ -3753,7 +3753,7 @@ A amostra de código Java a seguir gera um documento PDF ao mesclar um design de
 
 ### generatePDFOutput {#generatepdfoutput-1}
 
-A API generatePDFOutput gera um documento PDF ao mesclar um design de formulário com dados. Opcionalmente, gere um arquivo de metadados para cada registro ou salve a saída em um arquivo PDF. Use a API generatePrintedOutput para os designs de formulário ou dados armazenados em um aplicativo. Se o design do formulário e os dados XML forem armazenados em um local de rede, localmente ou em um local HTTP como valores literais, use a API [generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p).
+A API generatePDFOutput gera um documento do PDF ao mesclar um design de formulário com dados. Opcionalmente, gere um arquivo de metadados para cada registro ou salve a saída em um arquivo do PDF. Use a API generatePrintedOutput para os designs de formulário ou dados armazenados em um aplicativo. Se o design do formulário e os dados XML forem armazenados em um local de rede, localmente ou em um local HTTP como valores literais, use a API [generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p).
 
 **Sintaxe:** `Document generatePDFOutput(Document inputdocument, Document data, PDFOutputOptions options)`
 
@@ -3863,7 +3863,7 @@ A amostra de código Java a seguir gera um documento PDF ao mesclar um design de
 
 ### generatePDFOutputBatch {#generatepdfoutputbatch}
 
-Mescla um design de formulário com dados para criar um documento PDF. Opcionalmente, gera um arquivo de metadados para cada registro ou salva a saída em um arquivo PDF. Use a API generatePDFOutputBatch para designs de formulário ou dados armazenados em um local de rede, sistema de arquivos local ou local HTTP como valores literais.
+Mescla um design de formulário com dados para criar um documento do PDF. Opcionalmente, o gera um arquivo de metadados para cada registro ou salva a saída em um arquivo do PDF. Use a API generatePDFOutputBatch para designs de formulário ou dados armazenados em um local de rede, sistema de arquivos local ou local HTTP como valores literais.
 
 **Sintaxe:** `BatchResult generatePDFOutputBatch(Map templates, Map data, PDFOutputOptions options, BatchOptions batchOptions);`
 
@@ -3894,7 +3894,7 @@ Mescla um design de formulário com dados para criar um documento PDF. Opcionalm
  </tbody>
 </table>
 
-A amostra de código Java a seguir gera documentos PDF ao mesclar designs de formulário com dados armazenados em um arquivo XML.
+A amostra de código Java a seguir gera documentos do PDF ao mesclar designs de formulário com dados armazenados em um arquivo XML.
 
 ```java
 private ArrayList generatePDFBatch(String contentRoot,String multipleFiles) {
@@ -3998,7 +3998,7 @@ Gera uma saída PCL, PostScript e ZPL de um design de formulário e arquivo de d
   </tr>
   <tr>
    <td>dados</td>
-   <td>Um arquivo XML que contém dados mesclados com documentos PDF.<br /> </td>
+   <td>Um arquivo XML que contém dados mesclados com documentos do PDF.<br /> </td>
   </tr>
   <tr>
    <td>opções</td>
@@ -4089,7 +4089,7 @@ Gera uma saída PCL, PostScript e ZPL considerando um design de formulário e um
   </tr>
   <tr>
    <td>dados</td>
-   <td>Um arquivo XML que contém dados mesclados com documentos PDF.<br /> </td>
+   <td>Um arquivo XML que contém dados mesclados com documentos do PDF.<br /> </td>
   </tr>
   <tr>
    <td>opções</td>
@@ -4156,7 +4156,7 @@ Document doc=null;
 
 ### generatePrintedOutputBatch {#generateprintedoutputbatch}
 
-Gera um documento dos formatos PS, PCL e ZPL ao mesclar um design de formulário com os dados. Opcionalmente, gere um arquivo de metadados para cada registro ou salve a saída em um arquivo PDF. Use a API generatePrintedOutputBatch para designs de formulário ou dados armazenados em um local de rede, sistema de arquivos local ou local HTTP como valores literais.
+Gera um documento dos formatos PS, PCL e ZPL ao mesclar um design de formulário com os dados. Opcionalmente, gere um arquivo de metadados para cada registro ou salve a saída em um arquivo do PDF. Use a API generatePrintedOutputBatch para designs de formulário ou dados armazenados em um local de rede, sistema de arquivos local ou local HTTP como valores literais.
 
 **Sintaxe`:`** `BatchResult generatePrintedOutputBatch(Map templates, Map data, PrintedOutputOptions options, BatchOptions batchOptions);`
 
@@ -4293,14 +4293,14 @@ String outputFolder="C:/Output";
 
 ## Serviço do Forms {#forms-service}
 
-O serviço Forms fornece APIs para importar e exportar dados de e para um formulário PDF interativo. Um formulário PDF interativo é um documento PDF que contém um ou mais campos usados para exibir e coletar informações dos usuários. O serviço oferece suporte às seguintes APIs:
+O serviço Forms fornece APIs para importar e exportar dados de e para um formulário interativo do PDF. Um formulário interativo do PDF é um documento do PDF que contém um ou mais campos usados para exibir e coletar informações dos usuários. O serviço oferece suporte às seguintes APIs:
 
-* **[exportData](/help/forms/using/aem-document-services-programmatically.md#p-exportdata-p):** exporta dados de um formulário PDF.
-* **[importData](/help/forms/using/aem-document-services-programmatically.md#p-importdata-p):** importa dados em um Formulário PDF interativo.
+* **[exportData](/help/forms/using/aem-document-services-programmatically.md#p-exportdata-p):** exporta dados de um formulário do PDF.
+* **[importData](/help/forms/using/aem-document-services-programmatically.md#p-importdata-p):** importa dados em um PDF Form interativo.
 
 ### exportData {#exportdata}
 
-Exporta dados de formulário de um formulário PDF interativo nos formatos XML e XDP.
+Exporta dados de formulário de um formulário interativo do PDF nos formatos XML e XDP.
 
 **Sintaxe:** `Document exportData(Document xdpOrPdf, DataFormat dataFormat)`
 
@@ -4323,7 +4323,7 @@ Exporta dados de formulário de um formulário PDF interativo nos formatos XML e
  </tbody>
 </table>
 
-A amostra de código Java a seguir exporta dados de formulário de um formulário PDF interativo nos formatos XML e XDP.
+A amostra de código Java a seguir exporta dados de formulário de um formulário interativo do PDF nos formatos XML e XDP.
 
 #### Amostra {#sample}
 
@@ -4384,7 +4384,7 @@ try {
 
 ### importData {#importdata}
 
-Importa dados de formulário em um formulário PDF interativo.
+Importa dados de formulário em um formulário interativo do PDF.
 
 **Sintaxe:** `Document importData(Document PDF, Document data)`
 
@@ -4407,7 +4407,7 @@ Importa dados de formulário em um formulário PDF interativo.
  </tbody>
 </table>
 
-A amostra de código Java a seguir importa dados de formulário em um formulário PDF interativo.
+A amostra de código Java a seguir importa dados de formulário para um formulário interativo do PDF.
 
 #### Amostra {#sample-1}
 
@@ -4459,23 +4459,23 @@ private File importData(File inDoc, File inXML)
 
 ## Serviço PDF Generator {#pdfgeneratorservice}
 
-O serviço PDF Generator fornece APIs para converter formatos de arquivo nativos em PDF. Ele também converte o PDF para outros formatos de arquivo e otimiza o tamanho dos documentos PDF.
+O serviço PDF Generator fornece APIs para converter formatos de arquivo nativos em PDF. Também converte o PDF em outros formatos de arquivo e otimiza o tamanho dos documentos do PDF.
 
 ### GeneratePDFService {#generatepdfservice}
 
-O GeneratePDFService fornece APIs para converter vários formatos de arquivo, como .doc, .docx, .ppt, .pptx, .xls, .xlsx, .odp, .odt, .ods, .swf (obsoleto), .jpg, .bmp, .tif, .png, .html e muitos outros formatos de arquivo para PDF. Ele também fornece APIs para exportar PDF para vários formatos de arquivo e otimizar PDF. O serviço oferece suporte às seguintes APIs:
+O GeneratePDFService fornece APIs para converter vários formatos de arquivo, como .doc, .docx, .ppt, .pptx, .xls, .xlsx, .odp, .odt, .ods, .swf (obsoleto), .jpg, .bmp, .tif, .png, .html e muitos outros formatos de arquivo para o PDF. Ela também fornece APIs para exportar o PDF para vários formatos de arquivo e otimizar PDFs. O serviço oferece suporte às seguintes APIs:
 
-* **createPDF**: converte um tipo de arquivo suportado para um documento PDF. É compatível com formatos de arquivo como Microsoft Word, Microsoft PowerPoint, Microsoft Excel e Microsoft Project. Além desses aplicativos, qualquer tipo de aplicativo de geração de PDF genérico de terceiros também pode ser conectado à API.
-* **exportPDF**: converte um documento PDF em um tipo de arquivo suportado. O método aceita um PDF como entrada e exporta o conteúdo do PDF no formato de tipo de arquivo especificado. Você pode exportar um documento PDF em Encapsulated PostScript( eps), HTML 3.2( htm, html), HTML 4.01 com CSS 1.0( htm, html), JPEG( jpg, jpeg, jpe), JPEG2000( jpf, jpx, jp2, j2k, j2c, jpc), Documento do Microsoft Word( doc, docx) Pasta de trabalho do Microsoft Excel( xlsx), Apresentação do Microsoft PowerPoint( pptx), PNG( png), PostScript( ps) , Rich Text Format( rtf), Text(Accessible)( txt), Text(Plain)( txt) TIFF( tif, tiff), XML 1.0( xml), PDF/A-1a(sRGB), PDF/A-1b, PDF/A-2a(sRGB), PDF/A-2b(sRGB), PDF/A-3a(sRGB), PDF/A-3b(sRGB). Você também pode especificar [perfis de comprovação personalizados](https://helpx.adobe.com/br/acrobat/using/preflight-profiles-acrobat-pro.html) para as saídas de PDF.
+* **createPDF**: converte um tipo de arquivo suportado para um documento PDF. É compatível com formatos de arquivo como Microsoft Word, Microsoft PowerPoint, Microsoft Excel e Microsoft Project. Além desses aplicativos, qualquer tipo de aplicativo genérico de terceiros que gere o PDF também pode ser conectado à API.
+* **exportPDF**: converte um documento do PDF em um tipo de arquivo compatível. O método aceita uma PDF como entrada e exporta o conteúdo da PDF no formato de tipo de arquivo especificado. Você pode exportar um documento do PDF em Encapsulated PostScript( eps), HTML 3.2( htm, html), HTML 4.01 com CSS 1.0( htm, html), JPEG( jpg, jpeg, jpe), JPEG2000( jpf, jpx, jp2, j2k, j2c, jpc), Documento do Microsoft Word( doc, docx) Pasta de trabalho do Microsoft Excel( xlsx), Apresentação do Microsoft PowerPoint( pptx), PNG( png), PostScript( ps), Rich Text( ps) rtf), Texto (acessível)( txt), Texto (simples)( txt) TIFF( tif, tiff), XML 1.0( xml), PDF/A-1a(sRGB), PDF/A-1b, PDF/A-2a(sRGB), PDF/A-2b(sRGB), PDF/A-3a(sRGB), PDF/A-3b(sRGB) formatos. Você também pode especificar [perfis de Comprovação personalizados](https://helpx.adobe.com/acrobat/using/preflight-profiles-acrobat-pro.html) para as saídas do PDF.
 
-* **otimizePDF**: otimiza o documento de PDF e também converte um documento de PDF de um tipo para outro. O método aceita um documento PDF como entrada.
-* **htmlToPdf2**: converte uma página de HTML em um documento PDF. Ele aceita o URL da página de HTML como entrada.
+* **otimizePDF**: otimiza o documento do PDF e também converte um documento do PDF de um tipo para outro. O método aceita um documento PDF como entrada.
+* **htmlToPdf2**: converte uma página do HTML em um documento do PDF. Ele aceita o URL da página do HTML como entrada.
 
 >[!NOTE]
 >
 >A API HTMLtoPDF está obsoleta para o servidor do AEM Forms em execução no sistema operacional AIX.
 
-#### API PDF Generator disponível no Microsoft Windows e Linux {#pdf-generator-api-available-on-microsoft-windows-and-linux}
+#### API do PDF Generator disponível no Microsoft Windows e Linux {#pdf-generator-api-available-on-microsoft-windows-and-linux}
 
 <table>
  <tbody>
@@ -4504,7 +4504,7 @@ O GeneratePDFService fornece APIs para converter vários formatos de arquivo, co
    <td>✖</td>
   </tr>
   <tr>
-   <td>PDF de OCR (PDF pesquisável)</td>
+   <td>OCR PDF (PDF pesquisável)</td>
    <td><strong>✓</strong></td>
    <td>✖</td>
   </tr>
@@ -4513,9 +4513,9 @@ O GeneratePDFService fornece APIs para converter vários formatos de arquivo, co
 
 #### createPDF {#createpdf}
 
-A API createPDF converte um tipo de arquivo compatível em um documento PDF. É compatível com vários formatos de arquivo, como Microsoft Word, Microsoft PowerPoint, Microsoft Excel e Microsoft Project. Além desses aplicativos, qualquer tipo de aplicativo de geração de PDF genérico de terceiros também pode ser conectado à API.
+A API createPDF converte um tipo de arquivo compatível em um documento PDF. É compatível com vários formatos de arquivo, como Microsoft Word, Microsoft PowerPoint, Microsoft Excel e Microsoft Project. Além desses aplicativos, qualquer tipo de aplicativo genérico de terceiros que gere o PDF também pode ser conectado à API.
 
-Para a conversão, somente alguns parâmetros são obrigatórios. Um documento de entrada é um parâmetro obrigatório. Posteriormente, você poderá aplicar as permissões de segurança, as Configurações de saída de PDF e as informações de metadados ao documento de PDF de saída.
+Para a conversão, somente alguns parâmetros são obrigatórios. Um documento de entrada é um parâmetro obrigatório. Posteriormente, você poderá aplicar as permissões de segurança, as Configurações de saída do PDF e as informações de metadados ao documento de saída do PDF.
 
 O serviço createPDF retorna um java.util.Map com resultados. As chaves do mapa são:
 
@@ -4552,7 +4552,7 @@ O serviço createPDF gera as seguintes exceções:
   </tr>
   <tr>
    <td>pdfSettings</td>
-   <td><p>Saída de PDF para o documento convertido. Você pode aplicar somente as seguintes configurações:</p>
+   <td><p>Saída do PDF para o documento convertido. Você pode aplicar somente as seguintes configurações:</p>
     <ul>
      <li>Impressão_de_Alta_Qualidade<br /> </li>
      <li>PDFA1b_2005_RGB<br /> </li>
@@ -4570,21 +4570,21 @@ O serviço createPDF gera as seguintes exceções:
      <li>Sem segurança</li>
      <li>Segurança de Senha<br /> </li>
      <li>Segurança de certificado<br /> </li>
-     <li>Servidor de políticas Adobe</li>
+     <li>Servidor de políticas do Adobe</li>
     </ul> <p>É um parâmetro opcional.</p> </td>
   </tr>
   <tr>
    <td>settingsDoc</td>
-   <td>O arquivo contém as configurações aplicadas durante a geração do documento PDF (como, Otimizando o documento PDF para Exibição na Web) e as configurações aplicadas após a criação do documento PDF (como, Exibição inicial e Segurança). É um parâmetro opcional.<br /> </td>
+   <td>O arquivo contém as configurações aplicadas ao gerar o documento PDF (Como, Otimização do documento PDF para exibição na Web) e as configurações aplicadas após criar o documento PDF (Como, Exibição inicial e Segurança). É um parâmetro opcional.<br /> </td>
   </tr>
   <tr>
    <td>xmpDoc </td>
-   <td>O arquivo contém informações de metadados aplicadas ao Documento PDF gerado. Este parâmetro é opcional.<br /> </td>
+   <td>O arquivo contém informações de metadados aplicadas ao Documento do PDF gerado. Este parâmetro é opcional.<br /> </td>
   </tr>
  </tbody>
 </table>
 
-O código Java a seguir converte um documento do tipo de arquivo compatível em um documento PDF.
+O código Java a seguir converte um documento do tipo de arquivo compatível em um documento do PDF.
 
 ```java
 @Reference GeneratePDFService generatePdfService;
@@ -4648,7 +4648,7 @@ File createPDF(File inputFile, String inputFilename, String fileTypeSettings, St
 
 #### exportPDF {#exportpdf}
 
-Converte um documento PDF em um tipo de arquivo compatível. O método aceita um PDF como entrada e exporta o conteúdo do PDF no formato de tipo de arquivo especificado.
+Converte um documento do PDF em um tipo de arquivo compatível. O método aceita uma PDF como entrada e exporta o conteúdo da PDF no formato de tipo de arquivo especificado.
 
 O serviço createPDF retorna um java.util.Map com resultados. As chaves do mapa são:
 
@@ -4745,7 +4745,7 @@ finally {
 
 #### otimizarPDF {#optimizepdf}
 
-A API OtimizePDF otimiza os arquivos PDF reduzindo seu tamanho. O resultado dessa conversão são arquivos PDF que podem ser menores que suas versões originais. Essa operação também converte documentos de PDF para a versão de PDF especificada nos parâmetros de otimização. Ele retorna o objeto OtimizePDFResult que contém o PDF otimizado.
+A API OtimizePDF otimiza os arquivos PDF reduzindo seu tamanho. O resultado dessa conversão são arquivos PDF que podem ser menores que suas versões originais. Essa operação também converte documentos do PDF para a versão do PDF especificada nos parâmetros de otimização. Ele retorna o objeto OtimizePDFResult que contém o PDF otimizado.
 
 O serviço createPDF gera as seguintes exceções:
 
@@ -4777,12 +4777,12 @@ OptimizePDFResult optimizePDF(Document inputDoc, String fileTypeSettings, Docume
   </tr>
   <tr>
    <td>settingsDoc </td>
-   <td>O arquivo contém as configurações aplicadas durante a geração do documento PDF (como, Otimizando o documento PDF para Exibição na Web) e as configurações aplicadas após a criação do documento PDF (como, Exibição inicial e Segurança). É um parâmetro opcional.<br /> </td>
+   <td>O arquivo contém as configurações aplicadas ao gerar o documento PDF (Como, Otimização do documento PDF para exibição na Web) e as configurações aplicadas após criar o documento PDF (Como, Exibição inicial e Segurança). É um parâmetro opcional.<br /> </td>
   </tr>
  </tbody>
 </table>
 
-A amostra de código Java a seguir otimiza o arquivo PDF de entrada ao reduzir seu tamanho.
+A amostra de código Java a seguir otimiza o arquivo de entrada do PDF, reduzindo seu tamanho.
 
 ```java
 @Reference GeneratePDFService generatePdfService;
@@ -4833,7 +4833,7 @@ File optimizePDF(File inputFile, String fileTypeSettings, File settingsFile) thr
 
 #### htmlToPdf2 {#htmltopdf}
 
-Converte uma página de HTML em um documento PDF. Ele aceita o URL da página de HTML como entrada.
+Converte uma página HTML em um documento PDF. Ele aceita o URL da página do HTML como entrada.
 
 O serviço htmlToPdf2 retorna um objeto HtmlToPdfResult. Você pode obter o PDF convertido via result.getConvertedDocument().
 
@@ -4867,12 +4867,12 @@ HtmlToPdfResult htmlToPdf2(String inputUrl, String fileTypeSettingsName, String 
   </tr>
   <tr>
    <td>settingsDoc </td>
-   <td>O arquivo contém as configurações aplicadas durante a geração do documento PDF (como, Otimizando o documento PDF para Exibição na Web) e as configurações aplicadas após a criação do documento PDF (como, Exibição inicial e Segurança). É um parâmetro opcional.<br /> </td>
+   <td>O arquivo contém as configurações aplicadas ao gerar o documento PDF (Como, Otimização do documento PDF para exibição na Web) e as configurações aplicadas após criar o documento PDF (Como, Exibição inicial e Segurança). É um parâmetro opcional.<br /> </td>
   </tr>
  </tbody>
 </table>
 
-A amostra de código Java a seguir converte uma página de HTML em um documento PDF.
+A amostra de código Java a seguir converte uma página do HTML em um documento do PDF.
 
 ```java
 Reference GeneratePDFService generatePdfService;
@@ -4924,7 +4924,7 @@ File htmlToPdf(String inputUrl, String fileTypeSettingsName, String securitySett
 
 ### DistillerService {#distillerservice}
 
-O serviço Distiller converte PostScript, Encapsulated PostScript (EPS) e arquivos de texto da impressora (PRN) em arquivos PDF. O serviço Distiller é frequentemente usado para converter grandes volumes de documentos impressos em documentos eletrônicos, como faturas e demonstrativos. A conversão de documentos em PDF também permite que as empresas enviem aos seus clientes uma versão em papel e uma versão eletrônica de um documento. The supported file formats are .ps, .eps, and .prn. O serviço oferece suporte à seguinte API:
+O serviço Distiller converte PostScript, Encapsulated PostScript (EPS) e arquivos de texto da impressora (PRN) em arquivos PDF. O serviço Distiller é frequentemente usado para converter grandes volumes de documentos impressos em documentos eletrônicos, como faturas e demonstrativos. A conversão de documentos para o PDF também permite que as empresas enviem aos clientes uma versão em papel e uma versão eletrônica de um documento. Os formatos de arquivo suportados são .ps, .eps e .prn. O serviço oferece suporte à seguinte API:
 
 O serviço createPDF retorna um java.util.Map com resultados. As chaves do mapa são:
 
@@ -4939,7 +4939,7 @@ O serviço createPDF gera as seguintes exceções:
 
 #### createPDF {#createpdf-1}
 
-Converte os formatos compatíveis em documentos PDF. O método aceita arquivos com formatos .ps, .eps e .prn como entrada. Você pode aplicar permissões de segurança específicas, configurações de saída e informações de metadados ao documento de PDF de saída.
+Converte os formatos compatíveis em documentos do PDF. O método aceita arquivos com formatos .ps, .eps e .prn como entrada. Você pode aplicar permissões de segurança específicas, configurações de saída e informações de metadados ao documento PDF de saída.
 
 **Sintaxe:**
 
@@ -4965,7 +4965,7 @@ Map createPDF(Document inputDoc, String inputFileName, String pdfSettings, Strin
   </tr>
   <tr>
    <td>pdfSettings</td>
-   <td><p>Configurações de saída de PDF para o documento convertido. Você pode aplicar somente as seguintes configurações:</p>
+   <td><p>Configurações de saída do PDF para o documento convertido. Você pode aplicar somente as seguintes configurações:</p>
     <ul>
      <li>Impressão_de_Alta_Qualidade<br /> </li>
      <li>PDFA1b_2005_RGB<br /> </li>
@@ -4983,16 +4983,16 @@ Map createPDF(Document inputDoc, String inputFileName, String pdfSettings, Strin
      <li>Sem segurança</li>
      <li>Segurança de Senha<br /> </li>
      <li>Segurança de certificado<br /> </li>
-     <li>Servidor de políticas Adobe</li>
+     <li>Servidor de políticas do Adobe</li>
     </ul> <p>É um parâmetro opcional.</p> </td>
   </tr>
   <tr>
    <td>settingsDoc </td>
-   <td>O arquivo contém as configurações aplicadas durante a geração do documento PDF (como, Otimizando o documento PDF para Exibição na Web) e as configurações aplicadas após a criação do documento PDF (como, Exibição inicial e Segurança). É um parâmetro opcional.<br /> </td>
+   <td>O arquivo contém as configurações aplicadas ao gerar o documento PDF (Como, Otimização do documento PDF para exibição na Web) e as configurações aplicadas após criar o documento PDF (Como, Exibição inicial e Segurança). É um parâmetro opcional.<br /> </td>
   </tr>
   <tr>
    <td>xmpDoc </td>
-   <td>O arquivo contém informações de metadados para o documento de PDF gerado. É um parâmetro opcional.</td>
+   <td>O arquivo contém informações de metadados para o documento do PDF gerado. É um parâmetro opcional.</td>
   </tr>
  </tbody>
 </table>
@@ -5061,19 +5061,19 @@ File createPDF(File inputFile, String inputFilename, String pdfSettings, String 
 
 ### Serviços do Utilitário Doc {#doc-utility-services}
 
-<!-- Document utilities with synchronous APIs help you <!--convert documents from PDF to XDP file format, Clone a PDF, Retrieve PDF properties (Redact), Multiclone PDF, Sanitise PDF for retrieving uninteneded hidden information, and tag PDF documents with lists and paragraphs. Details of each APIs are given below: -->
+<!-- Document utilities with synchronous APIs help you convert documents from PDF to XDP file format, Clone a PDF, Retrieve PDF properties (Redact), Multiclone PDF, Sanitise PDF for retrieving uninteneded hidden information, and tag PDF documents with lists and paragraphs. Details of each APIs are given below: -->
 
-#### Documentos PDF de marcação automática {#auto-tag-api}
+#### Adicionar tag automática a documentos do PDF {#auto-tag-api}
 
-A API PDF de marcação automática melhora a acessibilidade do PDF, adicionando tags aos documentos, garantindo a conformidade com os padrões de acessibilidade. Isso não só melhora a experiência do usuário, como também mantém a precisão e a consistência entre os documentos. A API de marcação automática oferece suporte à marcação dos seguintes elementos:
+A API do PDF de marcação automática melhora a acessibilidade do PDF adicionando tags a documentos, garantindo a conformidade com os padrões de acessibilidade. Isso não só melhora a experiência do usuário, como também mantém a precisão e a consistência entre os documentos. A API de marcação automática oferece suporte à marcação dos seguintes elementos:
 
 * Blocos de texto (parágrafos)
 * Listas com marcadores em um operador
 * Sumário (TOC)
 
-![Documento PDF marcado automaticamente](assets/auto-tag-api.png)
+![Documento do PDF com Marcação Automática](assets/auto-tag-api.png)
 
-A amostra de código Java a seguir demonstra como converter um arquivo PDF em um documento PDF com tags.
+A amostra de código Java a seguir demonstra como converter um arquivo PDF em um documento PDF marcado.
 
 **Sintaxe**: `Document tag(final Document inDoc)`
 

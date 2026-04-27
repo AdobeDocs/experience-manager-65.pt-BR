@@ -11,9 +11,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Integration
 role: User,Admin,Developer
 index: false
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+source-git-commit: 147b0efb32609c05949c9fe374fa4fca6a9dbfb1
 workflow-type: tm+mt
-source-wordcount: '2857'
+source-wordcount: '2879'
 ht-degree: 4%
 
 ---
@@ -326,7 +326,7 @@ A tabela a seguir descreve os componentes que estão disponíveis para exibir e 
   </tr>
   <tr>
    <td><p>Campo de texto (Campanha)</p> </td>
-   <td><p>string</p> </td>
+   <td><p>sequência de caracteres</p> </td>
    <td><p>Email</p> </td>
   </tr>
  </tbody>

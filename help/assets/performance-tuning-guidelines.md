@@ -7,9 +7,9 @@ role: Developer, Admin
 feature: Asset Management
 exl-id: 1d9388de-f601-42bf-885b-6a7c3236b97e
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 02649ffea62200b472b4f3c446489a9dd974d21c
+source-git-commit: f2c92b990a5c09cbcf532e0800e264620d98af77
 workflow-type: tm+mt
-source-wordcount: '2721'
+source-wordcount: '2794'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,8 @@ Quando o volume temporário de alto desempenho estiver pronto, defina o parâmet
 
 A Adobe recomenda implantar o [!DNL Experience Manager Assets] no Java 8 para obter o desempenho ideal.
 
-<!-- TBD: Link to the latest official word around Java.
+<!--
+TBD: Link to the latest official word around Java.
 -->
 
 ### Parâmetros JVM {#jvm-parameters}
@@ -242,7 +243,7 @@ Ao replicar ativos para um grande número de instâncias de publicação, por ex
 
 ## Pesquisar índices {#search-indexes}
 
-Instale os [Service Packs mais recentes](/help/release-notes/release-notes.md) e hotfixes relacionados ao desempenho, pois esses geralmente incluem atualizações de índices do sistema. Consulte [dicas de ajuste de desempenho](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/assets/administer/performance-tuning-guidelines) para algumas otimizações de índice.
+Instale os [Service Packs mais recentes](/help/release-notes/release-notes.md) e hotfixes relacionados ao desempenho, pois esses geralmente incluem atualizações de índices do sistema. Consulte [dicas de ajuste de desempenho](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/administer/performance-tuning-guidelines) para algumas otimizações de índice.
 
 Crie índices personalizados para consultas executadas com frequência. Para obter detalhes, consulte a [metodologia de análise de consultas lentas](https://aemfaq.blogspot.com/2014/08/oak-query-log-file-analyzer-tool.html) e [criação de índices personalizados](/help/sites-deploying/queries-and-indexing.md). Para obter insights adicionais sobre as práticas recomendadas de consulta e índice, consulte [Práticas recomendadas de consultas e indexação](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 

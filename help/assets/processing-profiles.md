@@ -10,9 +10,9 @@ role: User, Admin
 feature: Workflow,Asset Management,Renditions
 exl-id: 3d9367ed-5a02-43aa-abd9-24fae457d4c5
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '1392'
+source-wordcount: '1398'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Ao usar estratégias consistentes e apropriadas de nomenclatura de arquivos e pa
 
 >[!NOTE]
 >
->Aplica-se a *Dynamic Media - modo Scene7* somente no Experience Manager 6.4.6.0 ou posterior.
+>Aplicável ao *Dynamic Media - Modo Scene7* somente no Experience Manager 6.4.6.0 ou posterior.
 
 Você pode reprocessar ativos em uma pasta que já tenha um perfil de processamento existente que você alterou posteriormente.
 
@@ -52,7 +52,7 @@ Por exemplo, suponha que você criou um perfil de imagem e o atribuiu a uma past
 
 Você pode executar o fluxo de trabalho de reprocessamento em um ativo cujo processamento falhou pela primeira vez. Dessa forma, mesmo que você não tenha editado um perfil de processamento ou aplicado um perfil de processamento, ainda será possível executar o fluxo de trabalho de reprocessamento em uma pasta de ativos a qualquer momento.
 
-Como opção, é possível ajustar o tamanho do lote do fluxo de trabalho de reprocessamento de um padrão de 50 ativos até 1000 ativos. Ao executar o fluxo de trabalho _Scene7: Reprocessar Assets_ em uma pasta, os ativos são agrupados em lotes e depois enviados ao servidor do Dynamic Media para processamento. Após o processamento, os metadados de cada ativo em todo o conjunto de lotes são atualizados no Experience Manager. Se o tamanho do lote for grande, você pode enfrentar um atraso no processamento. Ou, se o tamanho do lote for muito pequeno, poderá causar muitas viagens de ida e volta para o servidor do Dynamic Media.
+Como opção, é possível ajustar o tamanho do lote do fluxo de trabalho de reprocessamento de um padrão de 50 ativos até 1000 ativos. Ao executar o fluxo de trabalho _Scene7: Reprocessar Assets_ em uma pasta, os ativos são agrupados em lotes e, em seguida, enviados ao servidor do Dynamic Media para processamento. Após o processamento, os metadados de cada ativo em todo o conjunto de lotes são atualizados no Experience Manager. Se o tamanho do lote for grande, você pode enfrentar um atraso no processamento. Ou, se o tamanho do lote for muito pequeno, isso poderá causar muitas viagens de ida e volta para o servidor do Dynamic Media.
 
 Consulte [Ajustar o tamanho do lote do fluxo de trabalho de reprocessamento](#adjusting-load).
 
@@ -66,7 +66,7 @@ Consulte [Ajustar o tamanho do lote do fluxo de trabalho de reprocessamento](#ad
 
 **Para reprocessar ativos em uma pasta:**
 
-1. No Experience Manager, na página do Assets, navegue até uma pasta de ativos que tenha um perfil de processamento atribuído a ele e à qual você deseja aplicar o fluxo de trabalho **[!UICONTROL Reprocessamento do Dynamic Media]**,
+1. No Experience Manager, na página Assets, navegue até uma pasta de ativos que tenha um perfil de processamento atribuído a ele e à qual você deseja aplicar o fluxo de trabalho **[!UICONTROL Reprocessamento do Dynamic Media]**,
 
    As pastas que têm um perfil de processamento já atribuído a elas são indicadas ao exibir do nome do perfil logo abaixo do nome da pasta na Exibição de cartão.
 
@@ -82,29 +82,29 @@ Consulte [Ajustar o tamanho do lote do fluxo de trabalho de reprocessamento](#ad
    ![Reprocessar fluxo de trabalho de ativos 1](/help/assets/assets/reprocess-assets1.png)
 
 1. Selecione **[!UICONTROL Iniciar Fluxo de Trabalho]**.
-1. Na lista suspensa **[!UICONTROL Iniciar Fluxo de Trabalho]**, escolha **[!UICONTROL Reprocessar Dynamic Media]**.
+1. Na lista suspensa **[!UICONTROL Iniciar Fluxo de Trabalho]**, escolha **[!UICONTROL Reprocessamento do Dynamic Media]**.
 1. (Opcional) No campo de texto **Inserir título do fluxo de trabalho**, digite um nome para o fluxo de trabalho. Você pode usar o nome para fazer referência à instância do workflow, se necessário.
 
    ![Reprocessar ativos 2](/help/assets/assets/reprocess-assets2.png)
 
 1. Selecione **[!UICONTROL Iniciar]** e **[!UICONTROL Confirmar]**.
 
-   Para monitorar o fluxo de trabalho ou verificar seu progresso, na página do console principal do Experience Manager, selecione **[!UICONTROL Ferramentas]** > **[!UICONTROL Fluxo de trabalho]**. Na página Instâncias do fluxo de trabalho, selecione um fluxo de trabalho. Na barra de menus, selecione **[!UICONTROL Abrir Histórico]**. Você também pode encerrar, suspender ou renomear um workflow selecionado na mesma página Instâncias do workflow.
+   Para monitorar o fluxo de trabalho ou verificar seu progresso, na página principal do console do Experience Manager, selecione **[!UICONTROL Ferramentas]** > **[!UICONTROL Fluxo de trabalho]**. Na página Instâncias do fluxo de trabalho, selecione um fluxo de trabalho. Na barra de menus, selecione **[!UICONTROL Abrir Histórico]**. Você também pode encerrar, suspender ou renomear um workflow selecionado na mesma página Instâncias do workflow.
 
 ### Ajustar o tamanho do lote do fluxo de trabalho de reprocessamento {#adjusting-load}
 
-(Opcional) O tamanho de lote padrão no fluxo de trabalho de reprocessamento é de 50 ativos por trabalho. Esse tamanho ideal do lote é determinado pelo tamanho médio do ativo e pelos tipos MIME de ativos nos quais o reprocessamento é executado. Um valor mais alto significa que você tem muitos arquivos em um único trabalho de reprocessamento. Portanto, o banner de processamento permanece nos ativos do Experience Manager por mais tempo. No entanto, se o tamanho médio do arquivo for pequeno - 1 MB ou menos - o Adobe recomenda aumentar o valor para vários 100, mas nunca mais de 1000. Se o tamanho médio do arquivo for grande, como centenas de megabytes, a Adobe recomenda que você reduza o tamanho do lote para 10.
+(Opcional) O tamanho de lote padrão no fluxo de trabalho de reprocessamento é de 50 ativos por trabalho. Esse tamanho ideal do lote é determinado pelo tamanho médio do ativo e pelos tipos MIME de ativos nos quais o reprocessamento é executado. Um valor mais alto significa que você tem muitos arquivos em um único trabalho de reprocessamento. Portanto, o banner de processamento permanece nos ativos do Experience Manager por mais tempo. No entanto, se o tamanho médio do arquivo for pequeno - 1 MB ou menos - a Adobe recomenda aumentar o valor para vários 100, mas nunca mais de 1000. Se o tamanho médio do arquivo for grande, como centenas de megabytes, a Adobe recomenda reduzir o tamanho do lote para 10.
 
 **Para ajustar opcionalmente o tamanho do lote do fluxo de trabalho de reprocessamento:**
 
 1. No Experience Manager, selecione **[!UICONTROL Adobe Experience Manager]** para acessar o console de navegação global e, em seguida, selecione o ícone **[!UICONTROL Ferramentas]** (martelo) > **[!UICONTROL Fluxo de trabalho]** > **[!UICONTROL Modelos]**.
-1. Na página Modelos de fluxo de trabalho, na Exibição de cartão ou na Exibição de lista, selecione **[!UICONTROL Reprocessamento do Dynamic Media]**.
+1. Na página Modelos de fluxo de trabalho, no Modo de exibição de cartão ou no Modo de exibição de lista, selecione **[!UICONTROL Reprocessamento do Dynamic Media]**.
 
    ![Página de Modelos de Fluxo de Trabalho com Fluxo de Trabalho de Reprocessamento do Dynamic Media selecionado na Exibição de Cartão](/help/assets/assets-dm/reprocess-assets7.png)
 
-1. Na barra de ferramentas, selecione **[!UICONTROL Editar]**. Uma nova guia do navegador abre a página do modelo de fluxo de trabalho de Reprocessamento do Dynamic Media.
-1. Na página do fluxo de trabalho Reprocessamento do Dynamic Media, próximo ao canto superior direito, selecione **[!UICONTROL Editar]** para &quot;desbloquear&quot; o fluxo de trabalho.
-1. No fluxo de trabalho, selecione o componente Scene7 Batch Upload para abrir a barra de ferramentas e selecione **[!UICONTROL Configurar]** na barra de ferramentas.
+1. Na barra de ferramentas, selecione **[!UICONTROL Editar]**. Uma nova guia do navegador abre a página de modelo de fluxo de trabalho de Reprocessamento do Dynamic Media.
+1. Na página de fluxo de trabalho Reprocessamento de Dynamic Media, próximo ao canto superior direito, selecione **[!UICONTROL Editar]** para &quot;desbloquear&quot; o fluxo de trabalho.
+1. No fluxo de trabalho, selecione o componente de Carregamento em lote do Scene7 para abrir a barra de ferramentas e selecione **[!UICONTROL Configurar]** na barra de ferramentas.
 
    ![Componente de carregamento em lote do Scene7](/help/assets/assets-dm/reprocess-assets8.png)
 
@@ -113,20 +113,21 @@ Consulte [Ajustar o tamanho do lote do fluxo de trabalho de reprocessamento](#ad
    * Selecione **[!UICONTROL Avanço do manipulador]** se o seu manipulador avançar para a próxima etapa.
    * No campo **[!UICONTROL Tempo limite]**, insira o tempo limite do processo externo (segundos).
    * No campo **[!UICONTROL Período]**, insira um intervalo de sondagem (segundos) para testar a conclusão do processo externo.
-   * No **[!UICONTROL Campo de lote]**, insira o número máximo de ativos (50-1000) a serem processados em um trabalho de carregamento de processamento em lotes do servidor Dynamic Media.
+   * No **[!UICONTROL Campo de lote]**, insira o número máximo de ativos (50-1000) a serem processados em um trabalho de carregamento de processamento em massa do servidor Dynamic Media.
    * Selecione **[!UICONTROL Avançar no tempo limite]** se desejar avançar quando o tempo limite for atingido. Cancele a seleção se desejar continuar com a caixa de entrada quando o tempo limite for atingido.
 
    ![Caixa de diálogo Propriedades](/help/assets/assets-dm/reprocess-assets3.png)
 
 1. No canto superior direito da caixa de diálogo **[!UICONTROL Carregamento em lote para o Scene7 - Propriedades da etapa]**, selecione **[!UICONTROL Concluído]**.
 
-1. No canto superior direito da página do modelo de fluxo de trabalho Reprocessamento do Dynamic Media, selecione **[!UICONTROL Sincronizar]**. Quando você vê **[!UICONTROL Sincronizado]**, o modelo de tempo de execução de fluxo de trabalho foi sincronizado com êxito e está pronto para reprocessar ativos em uma pasta.
+1. No canto superior direito da página do modelo de fluxo de trabalho de Reprocessamento do Dynamic Media, selecione **[!UICONTROL Sincronizar]**. Quando você vê **[!UICONTROL Sincronizado]**, o modelo de tempo de execução de fluxo de trabalho foi sincronizado com êxito e está pronto para reprocessar ativos em uma pasta.
 
    ![Sincronizar o modelo de fluxo de trabalho](/help/assets/assets-dm/reprocess-assets1.png)
 
 1. Feche a guia do navegador que mostra o modelo de fluxo de trabalho de Reprocessamento do Dynamic Media.
 
-<!--1. Return to the browser tab that has the open Workflow Models page, then press **Esc** to exit the selection.
+<!--
+1. Return to the browser tab that has the open Workflow Models page, then press **Esc** to exit the selection.
 1. In the upper-left corner of the page, select **[!UICONTROL Adobe Experience Manager]** to access the global navigation console, then select the **[!UICONTROL Tools]** (hammer) icon > **[!UICONTROL General > CRXDE Lite]**.
 1. In the folder tree on the left side of the CRXDE Lite page, navigate to the following location:
 
@@ -144,4 +145,5 @@ Consulte [Ajustar o tamanho do lote do fluxo de trabalho de reprocessamento](#ad
 
 1. On the menu bar of the CRXDE Lite page, select **[!UICONTROL Save All]**.
 1. In the upper-left corner of the page, select **[!UICONTROL CRXDE Lite]** to return to the main Experience Manager console
-1. Repeat steps 1-7 to re-synchronize the new batch size to the Dynamic Media Reprocess workflow model.-->
+1. Repeat steps 1-7 to re-synchronize the new batch size to the Dynamic Media Reprocess workflow model.
+-->

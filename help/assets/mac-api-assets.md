@@ -7,9 +7,9 @@ feature: Assets HTTP API,Developer Tools
 exl-id: 6bc10f4e-a951-49ba-9c71-f568a7f2e40d
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '1775'
+source-wordcount: '1798'
 ht-degree: 1%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets.html?lang=pt-BR) |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets.html?lang=en) |
 | AEM 6.5 | Este artigo |
 
 ## Visão geral {#overview}
@@ -36,7 +36,7 @@ Após o [!UICONTROL Tempo Desativado], um ativo e suas representações não est
 
 >[!CAUTION]
 >
->A [API HTTP atualiza as propriedades de metadados](#update-asset-metadata) no namespace `jcr`. No entanto, a interface do usuário Experience Manager atualiza as propriedades de metadados no namespace `dc`.
+>A [API HTTP atualiza as propriedades de metadados](#update-asset-metadata) no namespace `jcr`. No entanto, a interface do usuário do Experience Manager atualiza as propriedades de metadados no namespace `dc`.
 
 ## Fragmentos de conteúdo {#content-fragments}
 
@@ -108,7 +108,7 @@ A API HTTP [!DNL Assets] inclui os seguintes recursos:
 **Pré-requisitos**
 
 * Acessar `https://[aem_server]:[port]/system/console/configMgr`.
-* Navegue até **[!UICONTROL Filtro CSRF do Adobe Granite]**.
+* Navegue até **[!UICONTROL Adobe Granite CSRF Filter]**.
 * Verifique se a propriedade **[!UICONTROL Métodos de Filtro]** inclui: `POST`, `PUT`, `DELETE`.
 
 ## Recuperar uma listagem de pastas {#retrieve-a-folder-listing}
@@ -127,7 +127,7 @@ Recupera uma representação Sirene de uma pasta existente e de suas entidades f
 
 ## Criar uma pasta {#create-a-folder}
 
-Cria um novo `sling`: `OrderedFolder` no caminho especificado. Se um `*` for fornecido em vez de um nome de nó, o servlet usará o nome do parâmetro como nome do nó. Aceita como dados de solicitação é uma representação Sirene da nova pasta ou um conjunto de pares nome-valor, codificados como `application/www-form-urlencoded` ou `multipart`/ `form`- `data`, úteis para criar uma pasta diretamente de um formulário HTML. Além disso, as propriedades da pasta podem ser especificadas como parâmetros de consulta de URL.
+Cria um novo `sling`: `OrderedFolder` no caminho especificado. Se um `*` for fornecido em vez de um nome de nó, o servlet usará o nome do parâmetro como nome do nó. Aceitos como dados de solicitação são uma representação Sirene da nova pasta ou um conjunto de pares de nome-valor, codificados como `application/www-form-urlencoded` ou `multipart`/ `form`- `data`, úteis para criar uma pasta diretamente de um formulário HTML. Além disso, as propriedades da pasta podem ser especificadas como parâmetros de consulta de URL.
 
 Uma chamada de API falhará com um código de resposta `500` se o nó pai do caminho fornecido não existir. Uma chamada retornará um código de resposta `409` se a pasta já existir.
 
@@ -191,7 +191,7 @@ Atualiza as propriedades dos metadados do ativo. Se você atualizar qualquer pro
 
 ### Sincronizar atualização de metadados entre o namespace `dc` e `jcr` {#sync-metadata-between-namespaces}
 
-O método da API atualiza as propriedades de metadados no namespace `jcr`. As atualizações feitas usando a interface alteram as propriedades de metadados no namespace `dc`. Para sincronizar os valores de metadados entre o namespace `dc` e `jcr`, você pode criar um fluxo de trabalho e configurar o Experience Manager para executar o fluxo de trabalho na edição do ativo. Use um script ECMA para sincronizar as propriedades de metadados necessárias. O exemplo de script a seguir sincroniza a cadeia de caracteres de título entre `dc:title` e `jcr:title`.
+O método da API atualiza as propriedades de metadados no namespace `jcr`. As atualizações feitas usando a interface alteram as propriedades de metadados no namespace `dc`. Para sincronizar os valores de metadados entre o namespace `dc` e `jcr`, você pode criar um fluxo de trabalho e configurar o Experience Manager para executar o fluxo de trabalho após a edição do ativo. Use um script ECMA para sincronizar as propriedades de metadados necessárias. O exemplo de script a seguir sincroniza a cadeia de caracteres de título entre `dc:title` e `jcr:title`.
 
 ```javascript
 var workflowData = workItem.getWorkflowData();
@@ -318,6 +318,6 @@ Exclui um recurso (-tree) no caminho fornecido.
 
 ## Dicas e limitações {#tips-best-practices-limitations}
 
-* A [API HTTP atualiza as propriedades de metadados](#update-asset-metadata) no namespace `jcr`. No entanto, a interface do usuário Experience Manager atualiza as propriedades de metadados no namespace `dc`.
+* A [API HTTP atualiza as propriedades de metadados](#update-asset-metadata) no namespace `jcr`. No entanto, a interface do usuário do Experience Manager atualiza as propriedades de metadados no namespace `dc`.
 
 * A API HTTP do Assets não retorna os metadados completos. Os namespaces são codificados e somente esses namespaces são retornados. Para obter metadados completos, consulte o caminho do ativo `/jcr_content/metadata.json`.

@@ -11,9 +11,9 @@ role: Admin
 exl-id: ef371ff8-6b4f-4e5a-98fb-d7c274927c46
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '1698'
+source-wordcount: '1727'
 ht-degree: 1%
 
 ---
@@ -34,7 +34,8 @@ As diferentes facetas dos grupos da comunidade são:
 * **Controle**: o grupo pode ser aberto ou secreto.
 * **Aninhamento**: o grupo pode conter zero ou mais grupos.
 
-<!-- This is a 404 on helpx. Update or remove.
+<!--
+This is a 404 on helpx. Update or remove.
 >[!NOTE]
 >
 >Community groups, created in the publish environment before the [existence of the Community Groups console](/help/communities/version-history.md#featurepack1fp1), is not listed in the Community Groups console, and thus, are not modifiable using the console.
@@ -62,7 +63,7 @@ Para acessar o console Grupos:
 
 * Selecione a **pasta Grupos** para abri-la.
 
-  Quando abertos, todos os grupos existentes, sejam eles criados em Autor ou Publish, são exibidos.
+  Quando abertos, todos os grupos existentes, sejam eles criados em Autor ou Publicação, são exibidos.
 
   Nesse console Grupos, é possível criar novos grupos.
 
@@ -99,7 +100,6 @@ A raiz padrão é o site pai, mas a raiz pode ser movida para qualquer local no 
    * Verifique novamente o nome, pois ele não pode ser facilmente alterado após a criação do grupo.
    * A URL base é exibida abaixo de `Community Group Name`.
    * Para um URL válido, anexe &quot;.html&quot;
-
      *por exemplo*, `https://localhost:4502/content/sites/mysight/en/mygroup.html`.
 
 * Menu **Modelo do grupo da comunidade**
@@ -112,7 +112,7 @@ A raiz padrão é o site pai, mas a raiz pode ser movida para qualquer local no 
 
 ![communitygrouptheme](assets/communitygrouptheme.png)
 
-A estrutura usa o `Twitter Bootstrap` para trazer um design responsivo e flexível para o site. Um dos muitos temas de Bootstrap pré-carregados pode ser selecionado para estilizar o modelo de grupo da comunidade selecionado, ou um tema de Bootstrap pode ser carregado.
+A estrutura usa o `Twitter Bootstrap` para trazer um design responsivo e flexível para o site. Um dos muitos temas pré-carregados do Bootstrap pode ser selecionado para estilizar o modelo de grupo da comunidade selecionado, ou um tema do Bootstrap pode ser carregado.
 
 Quando selecionado, o tema é sobreposto por uma marca de seleção azul opaca.
 
@@ -207,7 +207,7 @@ Quando o processo for concluído, o cartão do novo site da subcomunidade (grupo
 
 ![open-site](assets/open-site.png)
 
-O conteúdo da página de um grupo pode ser criado com as mesmas ferramentas de qualquer outra página AEM. Para abrir o grupo para criação, selecione o ícone Abrir site que aparece ao passar o mouse sobre o cartão de grupo.
+O conteúdo da página de um grupo pode ser criado com as mesmas ferramentas de qualquer outra página do AEM. Para abrir o grupo para criação, selecione o ícone Abrir site que aparece ao passar o mouse sobre o cartão de grupo.
 
 ## Modificar propriedades do grupo {#modify-group-properties}
 
@@ -283,9 +283,9 @@ O painel [ASSOCIAÇÃO](#membership) é apenas informativo. Não é possível al
 
 ### Modificar miniatura {#modify-thumbnail}
 
-O painel [MINIATURA](#thumbnail) permite que uma imagem seja carregada para representar o grupo da comunidade para os visitantes do site no ambiente Publish e no console Grupos do Site de Comunidades no ambiente de criação.
+O painel [MINIATURA](#thumbnail) permite que uma imagem seja carregada para representar o grupo da comunidade para os visitantes do site no ambiente de Publicação e no console Grupos do Site de Comunidades no ambiente de criação.
 
-## Publish o grupo {#publish-the-group}
+## Publicar o grupo {#publish-the-group}
 
 ![publicar-site](assets/publish-site.png)
 

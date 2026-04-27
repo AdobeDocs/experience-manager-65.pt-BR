@@ -7,9 +7,9 @@ role: User
 hide: true
 exl-id: c84ce84a-1e52-48fd-a16c-38c7769df9af
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '498'
+source-wordcount: '534'
 ht-degree: 1%
 
 ---
@@ -18,13 +18,13 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->O [Seletor de ativos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-selector.html?lang=pt-BR) foi chamado [Seletor de ativos](https://helpx.adobe.com/br/experience-manager/6-2/assets/using/asset-picker.html) em versões anteriores do [!DNL Experience Manager].
+>O [Seletor de ativos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-selector.html?lang=en) foi chamado [Seletor de ativos](https://helpx.adobe.com/experience-manager/6-2/assets/using/asset-picker.html) em versões anteriores do [!DNL Experience Manager].
 
 O seletor de ativos permite procurar, pesquisar e filtrar ativos no Assets [!DNL Adobe Experience Manager]. Também é possível buscar os metadados dos ativos selecionados usando o seletor de ativos. Para personalizar a interface do seletor de ativos, você pode iniciá-lo com parâmetros de solicitação compatíveis. Esses parâmetros definem o contexto do seletor de ativos para um cenário específico.
 
 Atualmente, você pode transmitir os parâmetros de solicitação `assettype` (*Image/Video/Text*) e a seleção `mode` (*Single/Multiple*) como informações contextuais para o seletor de ativos, que permanece intacto durante toda a seleção.
 
-O seletor de ativos usa a mensagem HTML5 **Window.postMessage** para enviar dados do ativo selecionado para o destinatário.
+O seletor de ativos usa a mensagem **Window.postMessage** da HTML5 para enviar dados do ativo selecionado para o destinatário.
 
 O seletor de ativos é baseado no vocabulário do Granite. Por padrão, o seletor de ativos opera no modo de navegação. No entanto, você pode aplicar filtros usando a experiência do Omnisearch para refinar sua pesquisa por ativos específicos.
 
@@ -63,4 +63,4 @@ Você pode passar os seguintes parâmetros de solicitação em um URL para inici
 
 >[!MORELIKETHIS]
 >
->* [Seletor de ativos de micro front-end no AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-selector.html?lang=pt-BR)
+>* [Seletor de ativos de micro front-end no AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-selector.html?lang=en)

@@ -6,16 +6,16 @@ level: Beginner
 feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 exl-id: 2c25a8b7-73f7-40fb-a303-9446a708c8eb
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '1984'
-ht-degree: 6%
+source-wordcount: '2048'
+ht-degree: 7%
 
 ---
 
 # Criação de um formulário adaptável {#creating-an-adaptive-form}
 
-O <span class="preview"> Adobe recomenda o uso de [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adicionar o Forms Adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
+A Adobe <span class="preview"> recomenda usar os [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adicionar o Forms Adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
@@ -94,7 +94,8 @@ Para usar um modelo de dados de formulário para criar um formulário adaptável
 
 Você pode redefinir os modelos de formulário XFA para criar formulários adaptáveis. Para redefinir objetivos, carregue e associe um modelo de formulário XFA a um formulário adaptável. Os elementos do Modelo de formulário (formulário XFA) são disponibilizados para uso no localizador de conteúdo no momento da criação do formulário adaptável. No Localizador de conteúdo, você pode arrastar e soltar os elementos do modelo de formulário no formulário.
 
-<!-- >>[!NOTE]
+<!--
+>>[!NOTE]
 >
 >[Upload the XFA Form Template](get-xdp-pdf-documents-aem.md) to AEM Forms before you start creating an adaptive form based on the form template.
 
@@ -108,7 +109,8 @@ Do the following to use an XFA form template as form model for your adaptive for
 
    >[!NOTE]
    >
-   >You can also change the form template for an adaptive form. For detailed steps, see [Edit Form Model properties of an adaptive form](#edit-form-model). -->
+   >You can also change the form template for an adaptive form. For detailed steps, see [Edit Form Model properties of an adaptive form](#edit-form-model).
+   -->
 
 ## Criar um formulário adaptável com base em um esquema XML ou JSON {#create-an-adaptive-form-based-on-xml-or-json-schema}
 
@@ -133,7 +135,7 @@ Faça o seguinte para usar o esquema XML ou JSON como modelo de formulário para
    >
    >Verifique se o nome do arquivo do esquema JSON termina com **.schema.json**. Por exemplo: mySchema.schema.json
 
-   ![Selecionando esquema XML ou JSON](assets/upload-schema.png)
+   ![Seleção de esquema XML ou JSON](assets/upload-schema.png)
    **Figura:** *Selecionando esquema XML ou JSON*
 
 1. (Somente para esquema XML) Depois de selecionar ou fazer upload de um esquema XML, especifique um elemento raiz do arquivo XSD selecionado para mapear com o formulário adaptável.
@@ -201,7 +203,7 @@ Por padrão, a opção de salvamento automático não está habilitada. Você po
 
 1. (Somente salvamento automático baseado em evento) Execute as seguintes etapas para configurar opções para o salvamento automático baseado em evento.
 
-   1. Na caixa **[!UICONTROL Salvar automaticamente após este evento]**, especifique um evento [GuideBridge](https://helpx.adobe.com/br/aem-forms/6/javascript-api/GuideBridge.html). O formulário é salvo sempre que a expressão é avaliada como TRUE.
+   1. Na caixa **[!UICONTROL Salvar automaticamente após este evento]**, especifique um evento [GuideBridge](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html). O formulário é salvo sempre que a expressão é avaliada como TRUE.
 
 1. (Opcional) Para salvar automaticamente o conteúdo para usuários anônimos, selecione a opção **[!UICONTROL Habilitar salvamento automático para usuários anônimos]** e clique em **[!UICONTROL OK]**.
 
@@ -212,7 +214,7 @@ Por padrão, a opção de salvamento automático não está habilitada. Você po
    >Para configurar o serviço, vá para Configuração do Console da Web do Adobe Experience Manager em `https://'[server]:[port]'system/console/configMgr` e edite o **[!UICONTROL Serviço de Configuração Comum do Forms]** para escolher a opção **[!UICONTROL Todos os Usuários]** no campo **[!UICONTROL Permitir]** e salve a configuração.
 
 
-## Como renomear um formulário adaptável para AEM? {#rename-an-AEM-Adaptive-Form}
+## Como renomear um Formulário adaptável do AEM? {#rename-an-AEM-Adaptive-Form}
 
 Para renomear um formulário adaptável, execute as seguintes etapas:
 
@@ -224,4 +226,4 @@ Para renomear um formulário adaptável, execute as seguintes etapas:
 1. Altere o nome do formulário na guia **Título**, conforme mostrado na imagem abaixo.
 1. Clique em **Salvar e fechar**.
 
-   ![Renomear um Formulário adaptável de AEM](/help/forms/using/assets/rename-form-title.png)
+   ![Renomear um Formulário adaptável do AEM](/help/forms/using/assets/rename-form-title.png)

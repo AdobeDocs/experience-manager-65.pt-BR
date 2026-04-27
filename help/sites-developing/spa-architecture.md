@@ -11,10 +11,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 index: false
-source-git-commit: 1509ca884e2f9eb931fc7cd416801957459cc4a0
+source-git-commit: 147b0efb32609c05949c9fe374fa4fca6a9dbfb1
 workflow-type: tm+mt
-source-wordcount: '2018'
-ht-degree: 5%
+source-wordcount: '2074'
+ht-degree: 6%
 
 ---
 
@@ -66,7 +66,7 @@ Qualquer roteamento estático funciona contra o [princípio de portabilidade](/h
 
 ## Arquétipo de projeto do AEM {#aem-project-archetype}
 
-Qualquer projeto do AEM deve utilizar o [Arquétipo de projeto do AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/developing/archetype/overview), que aceita projetos SPA que usam o React ou o Angular e utiliza o SDK de SPA.
+Qualquer projeto do AEM deve utilizar o [Arquétipo de projeto do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html), que aceita projetos SPA que usam o React ou o Angular e utiliza o SDK de SPA.
 
 ## Modelos de design de SPA {#spa-design-models}
 

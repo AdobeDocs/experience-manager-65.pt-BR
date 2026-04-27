@@ -1,43 +1,43 @@
 ---
-title: Expiração dos certificados de extensões Reader e seu impacto
-description: Expiração dos certificados de extensões Reader e seu impacto
+title: Expiração de certificados de extensões do Reader e seu impacto
+description: Expiração de certificados de extensões do Reader e seu impacto
 exl-id: 4e14e0dc-f248-4f6e-a075-6012b6792d9d
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '1088'
-ht-degree: 0%
+source-wordcount: '1189'
+ht-degree: 2%
 
 ---
 
 
-# Expiração dos certificados de extensões Reader e seu impacto {#expiration-of-reader-extensions-certificates-and-its-impact}
+# Expiração de certificados de extensões do Reader e seu impacto {#expiration-of-reader-extensions-certificates-and-its-impact}
 
-Os clientes do Adobe Experience Manager Forms (AEM Forms) com licenças Adobe Managed Services ou Enterprise Base no local estão autorizados a usar o serviço Acrobat Reader DC Extensions. O serviço permite que uma organização compartilhe facilmente documentos PDF interativos, estendendo a funcionalidade do Acrobat Reader com direitos de uso adicionais. O serviço adiciona direitos de uso a um documento PDF e ativa recursos que não estão disponíveis quando um documento PDF é aberto usando o Adobe Acrobat Reader, como adicionar comentários a um documento, preencher formulários e salvar o documento. Usuários de terceiros não precisam de software ou plug-ins adicionais para trabalhar com documentos habilitados por direitos. Os documentos PDF que possuem direitos de uso adicionados são chamados de documentos habilitados para direitos. Um usuário que abre um documento PDF habilitado para direitos no Acrobat Reader pode executar as operações habilitadas para esse documento.
+Os clientes do Adobe Experience Manager Forms (AEM Forms) com licenças Adobe Managed Services ou Enterprise Base no local estão autorizados a usar o serviço de extensões Acrobat Reader DC. O serviço permite que uma organização compartilhe facilmente documentos interativos do PDF, estendendo a funcionalidade do Acrobat Reader com direitos de uso adicionais. O serviço adiciona direitos de uso a um documento do PDF e ativa recursos que não estão disponíveis quando um documento do PDF é aberto usando o Adobe Acrobat Reader, como adicionar comentários a um documento, preencher formulários e salvar o documento. Usuários de terceiros não precisam de software ou plug-ins adicionais para trabalhar com documentos habilitados por direitos. Os documentos do PDF com direitos de uso adicionados são chamados de documentos habilitados para direitos. Um usuário que abre um documento do PDF com direitos ativados no Acrobat Reader pode executar as operações ativadas para esse documento.
 
-O Adobe usa uma infraestrutura de chave pública (PKI) para emitir certificados digitais para uso no licenciamento e na ativação de recursos. O Adobe está emitindo certificados sob a autoridade de certificação **Adobe Root CA**, que está definida para expirar em 7 de janeiro de 2023. A expiração do certificado não afeta documentos de PDF estendidos usando certificados de produção emitidos pela **Autoridade de Certificação Raiz de Adobe** (certificados antigos). Todos os documentos de PDF, Reader estendidos usando os certificados antigos antes de 7 de janeiro de 2023, incluindo os baixados pelos clientes, continuariam a funcionar com todos os direitos de uso aplicados a eles e não exigem atualizações.
+O Adobe usa uma infraestrutura de chave pública (PKI) para emitir certificados digitais para uso no licenciamento e na ativação de recursos. A Adobe está emitindo certificados sob a autoridade de certificação **Adobe Root CA**, que está definida para expirar em 7 de janeiro de 2023. A expiração do certificado não afeta documentos do PDF estendidos usando certificados de produção emitidos pela **Autoridade de Certificação Raiz do Adobe** (certificados antigos). Todos os documentos do PDF, Reader estendidos usando os certificados antigos antes de 7 de janeiro de 2023, incluindo os baixados pelos clientes, continuariam a funcionar com todos os direitos de uso aplicados a eles e não exigem atualizações.
 
-Uma nova autoridade de certificação, **Adobe AC G2** raiz, e certificados baseados na nova autoridade de certificação estão agora disponíveis. Em ou antes de 7 de janeiro de 2023, comece a usar os novos certificados — aqueles baseados em **Raiz de Adobe Reader CA G2** — para estender os novos documentos de PDF.  Você pode [obter novos certificados do site de Licenciamento Adobe](https://licensing.adobe.com/) ou do Suporte Adobe.
+Uma nova autoridade de certificação, **Adobe Root CA G2**, e certificados baseados na nova autoridade de certificação agora estão disponíveis. Em ou antes de 7 de janeiro de 2023, comece a usar os novos certificados — aqueles baseados na **CA raiz do Adobe G2** — para o Reader estender seus novos documentos do PDF.  Você pode [obter novos certificados do Site de Licenciamento da Adobe](https://licensing.adobe.com/) ou do Suporte da Adobe.
 
 ## Perguntas frequentes
 
-**T. Qual é a diferença entre um certificado Adobe Root e um certificado de extensões do Acrobat Reader? O certificado Adobe Root depende de um certificado de extensões da Acrobat Reader? Ambos os certificados estão expirando em janeiro de 2023?**
+**T. Qual é a diferença entre um certificado raiz do Adobe e um certificado de extensões do Acrobat Reader? O certificado raiz do Adobe depende de um certificado de extensões do Acrobat Reader? Ambos os certificados estão expirando em janeiro de 2023?**
 
 A. A CA raiz do Adobe é a autoridade de certificação da qual um certificado de extensões do Acrobat Reader é emitido. Em 7 de janeiro de 2023, &quot;Adobe Root CA&quot; e todos os certificados emitidos a partir dele estão expirando.
 
-**T. Houve uma comunicação anterior do Adobe sobre a expiração de certificados e o impacto no uso/abertura de documentos PDF. Essa comunicação deve ser ignorada?**
+**T. Houve uma comunicação anterior da Adobe sobre a expiração de certificados e o impacto no uso/abertura de documentos do PDF. Essa comunicação deve ser ignorada?**
 
-A. Com base na reavaliação da situação, todos os documentos de PDF estendidos usando certificados de produção emitidos da antiga &quot;Adobe Root CA&quot; antes de 7 de janeiro de 2023 continuam a funcionar sem nenhuma alteração após 7 de janeiro de 2023. Se você já atualizou seus documentos PDF, não há alteração na experiência.
+A. Com base na reavaliação da situação, todos os documentos do PDF estendidos usando certificados de produção emitidos da antiga &quot;Adobe Root CA&quot; antes de 7 de janeiro de 2023 continuam a funcionar sem nenhuma alteração após 7 de janeiro de 2023. Se você já atualizou seus documentos do PDF, não há alteração na experiência.
 
 **T. Com quem devo entrar em contato se tiver mais dúvidas?**
 
-R. Você pode entrar em contato com o [Suporte para Adobe](https://experienceleague.adobe.com/pt-br?support-solution=Experience+Manager&lang=pt-BR#support) ou criar um tíquete de suporte.
+R. Você pode entrar em contato com o [Suporte da Adobe](https://experienceleague.adobe.com/?support-solution=Experience+Manager&lang=pt-BR#support) ou criar um tíquete de suporte.
 
 **T. O que acontece se eu não atualizar meu certificado antes de 7 de janeiro de 2023?**
 
-A. Todos os documentos de PDF estendidos usando certificados de produção emitidos da antiga &#39;Adobe Root CA&#39; antes de 7 de janeiro de 2023 continuam a funcionar sem qualquer alteração após 7 de janeiro de 2023. Os PDF estendidos com certificados de avaliação não funcionam após a data de expiração.
+A. Todos os documentos do PDF estendidos usando certificados de produção emitidos da antiga &quot;AC raiz do Adobe&quot; antes de 7 de janeiro de 2023 continuam a funcionar sem qualquer alteração após 7 de janeiro de 2023. Os PDFs estendidos com certificados de avaliação não funcionam após a data de expiração.
 
 **T. A descrição de novos certificados é diferente dos certificados antigos?**
 
@@ -45,19 +45,19 @@ A. A descrição dos novos certificados de extensões do Acrobat Reader menciona
 
 **T. Como obter os certificados mais recentes?**
 
-R. Todos os Clientes da Forms qualificados (com licença ativa) podem baixar os novos certificados (certificados baseados em &quot;Adobe Root CA G2&quot;) do [Site de Licenciamento Adobe](https://licensing.adobe.com/). Se você não conseguir encontrar o certificado no site de licenciamento de Adobe, contate o [Suporte de Adobe](https://experienceleague.adobe.com/pt-br?support-solution=Experience+Manager&lang=en#support) ou crie um tíquete de suporte.
+R. Todos os Clientes da Forms qualificados (com licença ativa) podem baixar os novos certificados (certificados baseados na &quot;Adobe Root CA G2&quot;) do [Site de Licenciamento da Adobe](https://licensing.adobe.com/). Se não conseguir encontrar o certificado no site de licenciamento da Adobe, contate o [Suporte da Adobe](https://experienceleague.adobe.com/?support-solution=Experience+Manager&lang=en#support) ou crie um tíquete de suporte.
 
-**T. Meus documentos PDF estendidos usando certificados emitidos pela &quot;Autoridade de Certificação Raiz Adobe&quot; (a antiga autoridade de certificação) continuam a funcionar após 7 de janeiro de 2023?**
+**T. Meus documentos do PDF estendidos usando certificados emitidos da &quot;Adobe Root CA&quot; (a antiga autoridade de certificação) continuam a funcionar após 7 de janeiro de 2023?**
 
-R. Sim, todos os documentos de PDF estendidos usando certificados de produção emitidos pela &quot;Autoridade de Certificação Raiz do Adobe&quot; (a antiga autoridade de certificação) antes de 7 de janeiro de 2023 continuarão funcionando sem nenhuma alteração após 7 de janeiro de 2023. Os documentos PDF estendidos com certificados de avaliação deixam de funcionar após a data de expiração.
+R. Sim, todos os documentos do PDF estendidos usando certificados de produção emitidos pela &quot;Adobe Root CA&quot; (a antiga autoridade de certificação) antes de 7 de janeiro de 2023 continuarão a funcionar sem nenhuma alteração após 7 de janeiro de 2023. Os documentos do PDF estendidos com certificados de avaliação deixam de funcionar após a data de expiração.
 
 **T. Qual versão do Adobe Acrobat Reader é necessária para continuar usando documentos do PDF estendidos com certificados emitidos da &quot;Autoridade de Certificação Raiz do Adobe&quot; (a autoridade de certificação antiga)?**
 
-R. O Adobe Acrobat Reader 2020 ou posterior é necessário para usar documentos PDF estendidos com &quot;Autoridade de certificação raiz Adobe&quot; (a autoridade de certificação antiga). É a versão compatível do Acrobat Reader no momento da publicação deste documento. Se você estiver usando uma [versão não suportada do Adobe Acrobat](https://helpx.adobe.com/br/support/programs/eol-matrix.html), a Adobe recomenda que você [baixe e instale a última versão do Adobe Acrobat Reader](https://get.adobe.com/reader/).
+R. O Adobe Acrobat Reader 2020 ou posterior é necessário para usar documentos do PDF estendidos com a &quot;Autoridade de certificação raiz do Adobe&quot; (a autoridade de certificação antiga). É a versão compatível do Acrobat Reader no momento da publicação deste documento. Se você estiver usando uma [versão não suportada do Adobe Acrobat](https://helpx.adobe.com/br/support/programs/eol-matrix.html), a Adobe recomenda que você [baixe e instale a última versão do Adobe Acrobat Reader](https://get.adobe.com/reader/).
 
-**T. Qual versão do Adobe Acrobat Reader é necessária para continuar usando documentos do PDF estendidos com certificados emitidos da &quot;Autoridade de Certificação Raiz Adobe 2&quot; (a nova autoridade de certificação)?**
+**T. Qual versão do Adobe Acrobat Reader é necessária para continuar usando documentos do PDF estendidos com certificados emitidos da &quot;Autoridade de Certificação Raiz do Adobe 2&quot; (a nova autoridade de certificação)?**
 
-R. O Adobe Acrobat Reader 2020 ou posterior é necessário para usar documentos PDF estendidos com &quot;Adobe Root CA 2&quot; (a nova autoridade de certificação). Se você estiver usando uma [versão não suportada do Adobe Acrobat Reader](https://helpx.adobe.com/br/support/programs/eol-matrix.html), a Adobe recomenda que você [baixe e instale a última versão do Adobe Acrobat Reader](https://get.adobe.com/reader/).
+A. O Adobe Acrobat Reader 2020 ou posterior é necessário para usar documentos do PDF estendidos com &quot;Adobe Root CA 2&quot; (a nova autoridade de certificação). Se você estiver usando uma [versão não suportada do Adobe Acrobat Reader](https://helpx.adobe.com/br/support/programs/eol-matrix.html), a Adobe recomenda que você [baixe e instale a última versão do Adobe Acrobat Reader](https://get.adobe.com/reader/).
 
 **T. Posso excluir um certificado antigo de Extensões da Acrobat Reader e adicionar um novo em um Adobe Experience Manager Forms Server enquanto continuo a usar o alias existente?**
 
@@ -65,15 +65,15 @@ R. Sim, você pode excluir um certificado antigo de extensões da Acrobat Reader
 
 **T. Posso manter certificados de extensões novas e antigas do Acrobat Reader em um Adobe Experience Manager Forms Server?**
 
-R. Sim, você pode manter ambos os certificados, mas com aliases diferentes em um Adobe Experience Manager Forms Server. Post Reader 7 de janeiro de 2023, você pode usar somente o novo certificado para estender um documento de PDF.
+R. Sim, você pode manter ambos os certificados, mas com aliases diferentes em um Adobe Experience Manager Forms Server. Após 7 de janeiro de 2023, você poderá usar somente o novo certificado para que o Reader estenda um documento do PDF.
 
 **T. Posso importar o mesmo certificado de Acrobat Reader Extensions para todos os ambientes do Adobe Experience Manager Forms?**
 
 R. Sim, o mesmo certificado de Extensões da Acrobat Reader pode ser usado em vários ambientes.
 
-**T. Como verificar os direitos de uso aplicados a um documento PDF?**
+**T. Como verificar os direitos de uso aplicados a um documento do PDF?**
 
-R. Você pode usar a API [getDocumentUsageRights](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/acrobat-reader-dc-extensions-service.html?lang=pt-BR#quick-start-soap-mode-retrieving-credential-information-using-the-java-api) para recuperar as informações sobre os direitos de uso aplicados a um documento PDF.
+R. Você pode usar a API [getDocumentUsageRights](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/acrobat-reader-dc-extensions-service.html?lang=en#quick-start-soap-mode-retrieving-credential-information-using-the-java-api) para recuperar as informações sobre os direitos de uso aplicados a um documento do PDF.
 
 **T. Como alterar a senha de um arquivo de certificado de extensões da Acrobat Reader?**
 
@@ -97,7 +97,7 @@ You can choose one of the following paths to apply latest certificates:
 Updating the certificates requires using actions available on AEM Forms administrator console and Reader Extension APIs provided by AEM Forms. The document is intended for users and administrators with knowledge of using Adobe Experience Manger Forms APIs. Before you start, ensure that: 
 
 * the user has administrator rights on underlying AEM Forms environment. 
-* the user has setup the [development environment](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/howto-projects-eclipse.html?lang=pt-BR) and has access to it.
+* the user has setup the [development environment](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/howto-projects-eclipse.html) and has access to it.
 * [obtain the certificates](#obtain-the-certificates).
 
 
@@ -189,4 +189,5 @@ Remove usage rights from existing rights-enabled PDF documents before applying u
 
 #### Apply the usage rights to PDF documents 
 
-To apply usage rights in an AEM Forms on OSGi environment, Create custom OSGi service to usage rights to the documents. You can also create a servlet with a POST method to return the reader extended PDF to the user. For detailed instructions, see [Applying Reader Extensions](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/apply-reader-extension-rights-to-pdf.html?lang=pt-BR).  -->
+To apply usage rights in an AEM Forms on OSGi environment, Create custom OSGi service to usage rights to the documents. You can also create a servlet with a POST method to return the reader extended PDF to the user. For detailed instructions, see [Applying Reader Extensions](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/apply-reader-extension-rights-to-pdf.html).
+-->

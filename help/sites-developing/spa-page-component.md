@@ -11,10 +11,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 index: false
-source-git-commit: 1509ca884e2f9eb931fc7cd416801957459cc4a0
+source-git-commit: 147b0efb32609c05949c9fe374fa4fca6a9dbfb1
 workflow-type: tm+mt
-source-wordcount: '707'
-ht-degree: 6%
+source-wordcount: '718'
+ht-degree: 7%
 
 ---
 
@@ -92,7 +92,7 @@ As propriedades do metrecursos que descrevem o conteúdo do SPA:
 >
 >Este documento usa o aplicativo We.Retail Journal somente para fins de demonstração. Não use para nenhum trabalho de projeto.
 >
->Qualquer projeto do AEM deve usar o [Arquétipo de projeto do AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/developing/archetype/overview), que oferece suporte a projetos de SPA usando o React ou o Angular e usa o SPA SDK. Todos os projetos de SPA no AEM devem ser baseados no Arquétipo Maven para SPA Starter Kit.
+>Qualquer projeto do AEM deve usar o [Arquétipo de projeto do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html), que oferece suporte a projetos de SPA usando o React ou o Angular e usa o SPA SDK. Todos os projetos de SPA no AEM devem ser baseados no Arquétipo Maven para SPA Starter Kit.
 
 ## Sincronização de sobreposição do editor de páginas {#page-editor-overlay-synchronization}
 

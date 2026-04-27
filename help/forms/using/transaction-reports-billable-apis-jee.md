@@ -1,27 +1,27 @@
 ---
-title: APIs faturáveis de relatórios de transação para o AEM Forms no JEE.
-description: Lista de todas as APIs que são contabilizadas como transações para o AEM Forms no JEE.
+title: Transaction Reports Billable APIs for AEM Forms on JEE.
+description: List of all the APIs that are accounted as transactions for AEM Forms on JEE.
 topic-tags: forms-manager
 feature: Transaction Reports
 exl-id: dbb22369-c0a2-4cf6-b01b-096b4de13a14
 role: Admin, User, Developer
 solution: "Experience Manager, Experience Manager Forms"
-source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '803'
+source-wordcount: '805'
 ht-degree: 3%
 
 ---
 
-# APIs faturáveis de relatórios de transações para o AEM Forms no JEE {#transaction-reports-billable-apis}
+# Transaction reporting Billable APIs for AEM Forms on JEE {#transaction-reports-billable-apis}
 
-O AEM Forms no JEE fornece várias APIs para enviar, processar e renderizar documentos. Algumas APIs são contabilizadas como transações e outras são livres para uso. Este documento fornece uma lista de todas as APIs contabilizadas como transações. Estes são alguns cenários comuns em que uma API faturável é usada:
+AEM Forms on JEE provide several APIs to submit, process, and render documents. Some APIs are accounted as transactions and others are free to use. This document provides a list of all the APIs that are accounted as transactions. Here are a few common scenarios where a billable API is used:
 
-* Conversão de um documento de um formato para outro
-* Nivelamento de um documento PDF dinâmico
-* Mesclar um documento PDF interativo com outro documento PDF
+* Converting a document from one format to another
+* Flattening a dynamic PDF document
+* Merging an interactive PDF document with another PDF document
 
-As APIs de faturamento não levam em conta o número de páginas, o comprimento de um documento ou formulário ou o formato final do documento renderizado.
+Billing APIs does not account for the number of pages, the length of a document or form, or final format of the rendered document.
 <!--
 
 * **Forms Submitted:** When data is submitted from any type of form created with AEM Forms and the data is submitted to any data storage repository or database is considered form submission. For example, submitting an HTML5 Form, PDF Forms are accounted as forms submitted. Each form in a form set is considered a submission. For example, if a form set has 5 forms, when the form set is submitted, transaction reporting service counts it as 5 submissions.
@@ -30,57 +30,57 @@ As APIs de faturamento não levam em conta o número de páginas, o comprimento 
 
 -->
 
-Abaixo está a lista de APIs faturáveis do JEE. Encontre a lista de [APIs faturáveis para o AEM Forms no OSGi](/help/forms/using/transaction-reports-billable-apis.md).
+Below is the list of JEE billable APIs. Find the list of [billable APIs for AEM Forms on OSGi](/help/forms/using/transaction-reports-billable-apis.md).
 
-## APIs de serviços de documento faturáveis {#billable-document-services-apis}
+## Billable Document Services APIs {#billable-document-services-apis}
 
-### Gerar serviço de PDF {#generate-pdf-service}
+### Generate PDF Service {#generate-pdf-service}
 
 <table>
  <tbody>
   <tr>
    <td><p>API</p> </td>
    <td>Descrição</td>
-   <td>Categoria do relatório de transações</td>
+   <td>Transaction report category</td>
   </tr>
    <tr>
-   <td><a>CriarPDF</a></td>
-   <td>Cria Adobe PDF para tipos de arquivos compatíveis.</td>
-   <td>Conversão<br /> </td>
+   <td><a>CreatePDF</a></td>
+   <td>Creates Adobe PDF to supported file types.</td>
+   <td>Conversion<br /> </td>
   </tr>
   <tr>
-   <td><a>CriarPDF3</a></td>
-   <td>Cria Adobe PDF para tipos de arquivos compatíveis. </td>
-   <td>Conversão<br /> </td>
+   <td><a>CreatePDF3</a></td>
+   <td>Creates Adobe PDF to supported file types. </td>
+   <td>Conversion<br /> </td>
   </tr>
   <tr>
    <td><a> HtmlToPDF</a></td>
-   <td>Converte o arquivo HTML em Adobe PDF. </td>
+   <td>Converts HTML file to Adobe PDF. </td>
    <td>Conversão<br /> </td>
   </tr>
   <tr>
    <td><a>ExportPDF</a></td>
-   <td>Exporta PDF para tipos de arquivos suportados. </td>
+   <td>Exporta o PDF para tipos de arquivos compatíveis. </td>
    <td>Conversão<br /> </td>
   </tr>
   <tr>
    <td><a>EXPORTPDF2</a></td>
-   <td><p>Exporta PDF para tipos de arquivos suportados.</p> </td>
+   <td><p>Exporta o PDF para tipos de arquivos compatíveis.</p> </td>
    <td>Conversão<br /> </td>
   </tr>
   <tr>
    <td><a>EXPORTPDF3</a></td>
-   <td>Exporta PDF para tipos de arquivos suportados.</td>
+   <td>Exporta o PDF para tipos de arquivos compatíveis.</td>
    <td>Conversão<br /> </td>
   </tr>
   <tr>
    <td><a>ArquivoHtmlParaPDF</a></td>
-   <td>Converte o arquivo de HTML em PDF.</td>
+   <td>Converte o arquivo do HTML em PDF.</td>
    <td>Conversão<br /> </td>
   </tr>
   <tr>
    <td><a>HtmlToPDF2</a></td>
-   <td>Converte o arquivo de HTML em PDF.</td>
+   <td>Converte o arquivo do HTML em PDF.</td>
    <td>Conversão<br /> </td>
   </tr>
   <tr>
@@ -102,7 +102,7 @@ Abaixo está a lista de APIs faturáveis do JEE. Encontre a lista de [APIs fatur
   </tr>
   <tr>
    <td><a>Assinar/Certificar</a><br /> </td>
-   <td>Essa API permite que você proteja seu documento. Você pode usar a API para assinar e certificar um documento PDF.</td>
+   <td>Essa API permite que você proteja seu documento. Você pode usar a API para assinar e certificar um documento do PDF.</td>
    <td>Conversão</td>
   </tr>
  </tbody>
@@ -145,7 +145,7 @@ Abaixo está a lista de APIs faturáveis do JEE. Encontre a lista de [APIs fatur
    <td>Additional Information</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/br/experience-manager/6-5/forms/javadocs/com/adobe/aemds/guide/addon/dor/DoRService.html#render-com.adobe.aemds.guide.addon.dor.DoROptions-" target="_blank">render</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/aemds/guide/addon/dor/DoRService.html#render-com.adobe.aemds.guide.addon.dor.DoROptions-" target="_blank">render</a></td>
    <td>Invokes the specified render method to generate a document of record using provided parameters.</td>
    <td>Documents Processed</td>
    <td> </td>
@@ -166,17 +166,17 @@ Abaixo está a lista de APIs faturáveis do JEE. Encontre a lista de [APIs fatur
   </tr>
   <tr>
    <td><a>generateOutput</a></td>
-   <td>Mescla dados e modelos para criar um documento PDF.</td>
+   <td>Mescla dados e modelos para criar um documento do PDF.</td>
    <td>Documentos renderizados</td>
   </tr>
   <tr>
    <td><a>generatePDFOutput</a></td>
-   <td>Mescla dados e modelos para criar um documento PDF.</td>
+   <td>Mescla dados e modelos para criar um documento do PDF.</td>
    <td>Documentos renderizados</td>
   </tr>
   <tr>
    <td><a>generatePDFOutput2</a></td>
-   <td>Mescla dados e modelos para criar um documento PDF.</td>
+   <td>Mescla dados e modelos para criar um documento do PDF.</td>
    <td>Documentos renderizados</td>
   </tr>
   <tr>
@@ -197,7 +197,8 @@ Abaixo está a lista de APIs faturáveis do JEE. Encontre a lista de [APIs fatur
  </tbody>
 </table>
 
-<!-- ### Forms Service {#forms-service}
+<!--
+### Forms Service {#forms-service}
 
 <table>
  <tbody>
@@ -208,13 +209,13 @@ Abaixo está a lista de APIs faturáveis do JEE. Encontre a lista de [APIs fatur
    <td>Additional Information</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/br/experience-manager/6-5/forms/javadocs/com/adobe/fd/forms/api/FormsService.html#renderPDFForm-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.fd.forms.api.PDFFormRenderOptions-" target="_blank">renderPDFForm</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/forms/api/FormsService.html#renderPDFForm-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.fd.forms.api.PDFFormRenderOptions-" target="_blank">renderPDFForm</a></td>
    <td>Renders PDF Form from XDP templates. The XDP templates are created in Forms Designer.</td>
    <td>Documents Processed</td>
    <td> </td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/br/experience-manager/6-5/forms/javadocs/com/adobe/fd/forms/api/FormsService.html#exportData-com.adobe.aemfd.docmanager.Document-com.adobe.fd.forms.api.DataFormat-" target="_blank">exportData</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/forms/api/FormsService.html#exportData-com.adobe.aemfd.docmanager.Document-com.adobe.fd.forms.api.DataFormat-" target="_blank">exportData</a></td>
    <td>Extracts data from a PDF Form or XDP templates</td>
    <td>Documents Processed</td>
    <td> </td>
@@ -224,7 +225,7 @@ Abaixo está a lista de APIs faturáveis do JEE. Encontre a lista de [APIs fatur
 
 -->
 
-### Converter serviço de PDF {#convert-pdf-service}
+### Converter serviço PDF {#convert-pdf-service}
 
 <table>
  <tbody>
@@ -235,17 +236,17 @@ Abaixo está a lista de APIs faturáveis do JEE. Encontre a lista de [APIs fatur
   </tr>
   <tr>
    <td><a>toImage2</a></td>
-   <td>Converte um documento PDF em uma lista de documentos de imagem. Os formatos de imagem compatíveis são JPEG, JPEG2K, PNG e TIFF.</td>
+   <td>Converte um documento do PDF em uma lista de documentos de imagem. Os formatos de imagem compatíveis são JPEG, JPEG2K, PNG e TIFF.</td>
    <td>Conversão de documentos</td>
   </tr>
   <tr>
    <td><a>toPS2</a></td>
-   <td>Converte um arquivo de PDF simples em formato PostScript usando as opções especificadas na especificação de opções.</td>
+   <td>Converte um arquivo Flat PDF para o formato PostScript usando as opções especificadas na especificação de opções.</td>
    <td>Conversão de documentos</td>
   </tr>
   <tr>
    <td><a>toSWF</a></td>
-   <td>Converte um arquivo de PDF simples em formato SWF usando as opções especificadas na especificação de opções.</td>
+   <td>Converte um arquivo Flat PDF para o formato SWF usando as opções especificadas na especificação de opções.</td>
    <td>Conversão de documentos</td>
   </tr>
  </tbody>
@@ -268,7 +269,7 @@ Abaixo está a lista de APIs faturáveis do JEE. Encontre a lista de [APIs fatur
  </tbody>
 </table>
 
-### Serviço de Assembler {#assembler-service}
+### Serviço Assembler {#assembler-service}
 
 <table>
  <tbody>
@@ -306,14 +307,14 @@ Abaixo está a lista de APIs faturáveis do JEE. Encontre a lista de [APIs fatur
 </table>
 
 O uso da API de chamada é contado como uma transação, quando você executa uma ou mais das seguintes operações:
-1. Conversão de formatos sem PDF para formatos PDF. Por exemplo, a conversão do formato XDP para o formato PDF.<!-- catering to both interactive and non-interactive forms of communication, and the conversion from Word to PDF.-->
+1. Conversão de formatos que não sejam PDF para formatos PDF. Por exemplo, a conversão do formato XDP para o formato PDF.<!-- catering to both interactive and non-interactive forms of communication, and the conversion from Word to PDF.-->
 1. Conversão do formato PDF para o formato PDF/A.
-1. Conversão do formato PDF para formatos não PDF. Os exemplos englobam a transformação do formato PDF para o formato Imagem ou a conversão do formato PDF para Texto.
+1. Conversão do formato PDF para formatos não PDF. Os exemplos englobam a transformação do PDF para o formato Imagem ou a conversão do PDF para o formato Texto.
 
 >[!NOTE]
 >
 >* A API de chamada do serviço do montador pode chamar internamente uma API faturável de outro serviço, dependendo da entrada. Portanto, o `invoke API` pode ser contabilizado como nenhuma, uma única ou várias transações. O número de transações contadas depende da entrada e das APIs internas chamadas.
->* Um único documento de PDF produzido usando o serviço de assembler, como `invoke` e `invokeDDX`, pode ser contabilizado como nenhuma, única ou várias transações. O número de transações contadas depende do código <!--DDX--> fornecido.
+>* Um único documento do PDF produzido usando o serviço de assembler, como `invoke` e `invokeDDX`, pode ser contabilizado como nenhuma, única ou várias transações. O número de transações contadas depende do código <!--DDX--> fornecido.
 
 <!--
 ### PDF Utility Service  {#pdf-utility-service}
@@ -367,7 +368,8 @@ O uso da API de chamada é contado como uma transação, quando você executa um
 
 -->
 
-<!--### HTML5 Forms {#html-forms}
+<!--
+### HTML5 Forms {#html-forms}
 
 <table>
  <tbody>
@@ -440,7 +442,8 @@ O uso da API de chamada é contado como uma transação, quando você executa um
  </tbody>
 </table>
 
-<!-- ## Billable Interactive Communication and Form-centric AEM Workflows on OSGi APIs {#billable-interactive-communication-and-form-centric-aem-workflows-on-osgi-apis}
+<!--
+## Billable Interactive Communication and Form-centric AEM Workflows on OSGi APIs {#billable-interactive-communication-and-form-centric-aem-workflows-on-osgi-apis}
 
 Assign task and document services steps of Form-centric AEM Workflows on OSGi and all the renditions of interactive communication and are accounted as transactions. Previewing an interactive communication on the author instance and previewing on the publish instance using Agent UI are not accounted as transactions. If a workflow step accounts a transaction and the workflow fails to complete, the transaction count is not reversed.
 
@@ -478,7 +481,7 @@ Assign task and document services steps of Form-centric AEM Workflows on OSGi an
    <td>Additional Information</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/br/experience-manager/6-5/forms/javadocs/com/adobe/fd/ccm/channels/print/api/model/PrintChannel.html" target="_blank">render</a> (convert to PDF)</td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/ccm/channels/print/api/model/PrintChannel.html" target="_blank">render</a> (convert to PDF)</td>
    <td>Generates the PDF version of an interactive communication.</td>
    <td>Documents Rendered</td>
    <td>

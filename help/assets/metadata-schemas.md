@@ -8,9 +8,9 @@ feature: Metadata
 exl-id: 0dd322cd-ce97-4335-825d-71f72a5e438c
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '3595'
+source-wordcount: '3637'
 ht-degree: 8%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 8%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-schemas.html?lang=pt-BR) |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-schemas.html?lang=en) |
 | AEM 6.5 | Este artigo |
 
 As organizações apresentam um modelo de metadados que aprimora a detecção de ativos, a utilização, a interoperabilidade e assim por diante. A aplicação correta de metadados é imperceptível para manter fluxos de trabalho e processos orientados por metadados. Para aderir à estratégia e aos padrões de metadados de toda a organização, você pode usar esquemas de metadados que ajudam os usuários do DAM a se alinharem. O [!DNL Adobe Experience Manager] permite métodos fáceis e flexíveis para criar, manter e aplicar esquemas de metadados.
@@ -51,13 +51,13 @@ Para exibir uma lista de formulários ou modelos, na interface do [!DNL Experien
 | [!UICONTROL padrão] | | O formulário básico de esquema de metadados para ativos. |
 | | Os seguintes formulários filhos herdam as propriedades do formulário [!UICONTROL padrão]: | |
 | | <ul><li>[!UICONTROL dm_video]</li></ul> | Formulário de esquema para vídeos do Dynamic Media. |
-| | <ul><li>[!UICONTROL imagem]</li></ul> | Formulário de esquema de imagens com o tipo MIME, como `image/jpeg` e `image/png`. <br> O formulário [!UICONTROL image] tem os seguintes modelos de formulário filho: <ul><li> [!UICONTROL jpeg]: formulário de esquema para ativos com subtipo [!UICONTROL jpeg].</li> <li>[!UICONTROL tiff]: formulário de esquema dos ativos com TIFF de subtipo.</li></ul> |
-| | <ul><li>[!UICONTROL aplicativo]</li></ul> | Formulário de esquema para ativos com tipo MIME, como `application/pdf` e `application/zip`. <br>[!UICONTROL pdf]: formulário de esquema para ativos com PDF de subtipo. |
+| | <ul><li>[!UICONTROL imagem]</li></ul> | Formulário de esquema de imagens com o tipo MIME, como `image/jpeg` e `image/png`. <br> O formulário [!UICONTROL image] tem os seguintes modelos de formulário filho: <ul><li> [!UICONTROL jpeg]: formulário de esquema para ativos com subtipo [!UICONTROL jpeg].</li> <li>[!UICONTROL tiff]: formulário de esquema dos ativos com subtipo TIFF.</li></ul> |
+| | <ul><li>[!UICONTROL aplicativo]</li></ul> | Formulário de esquema para ativos com tipo MIME, como `application/pdf` e `application/zip`. <br>[!UICONTROL pdf]: formulário de esquema para ativos com subtipo PDF. |
 | | <ul><li>[!UICONTROL vídeo]</li></ul> | Formulário de esquema para ativos de vídeo com tipo MIME, como `video/avi` e `video/mp4`. |
 | [!UICONTROL coleção] | | Formulário de esquema para coleções. |
 | [!UICONTROL contentfragment] | | [Formulário de esquema dos fragmentos de conteúdo](/help/sites-developing/customizing-content-fragments.md). |
 | [!UICONTROL formulários] | | Este formulário de esquema está relacionado a [Adobe Experience Manager Forms](/help/forms/using/introduction-aem-forms.md). |
-| [!UICONTROL ugc_contentfragment] | | Formulário de esquema para partes de conteúdo gerado pelo usuário e ativos integrados no Experience Manager de redes sociais. |
+| [!UICONTROL ugc_contentfragment] | | Formulário de esquema para partes de conteúdo e ativos gerados pelo usuário integrados ao Experience Manager a partir de redes sociais. |
 
 >[!NOTE]
 >
@@ -93,7 +93,7 @@ A guia **[!UICONTROL Criar Formulário]** lista itens de formulário que você u
 | -------------------------------- | ----------------------------------------------------------------------------------- |
 | [!UICONTROL Cabeçalho da seção] | Adicione um cabeçalho de seção para obter uma lista de componentes comuns. |
 | [!UICONTROL Texto em linha única] | Adicione uma propriedade de texto de linha única. Ele é armazenado como uma string. |
-| [!UICONTROL Texto de vários valores] | Adicione uma propriedade de texto de vários valores. Ele é armazenado como uma matriz de sequência. |
+| [!UICONTROL Texto de vários valores] | Adiciona uma propriedade de texto multivalor. Ele é armazenado como uma matriz de sequência. |
 | [!UICONTROL Número] | Adiciona um componente de número. |
 | [!UICONTROL Data] | Adiciona um componente de data. |
 | [!UICONTROL Lista suspensa] | Adiciona uma lista suspensa. |
@@ -118,7 +118,7 @@ Veja a seguir exemplos de valores válidos para uma propriedade:
 
 * `./jcr:content/metadata/dc:title`: armazena o valor no nó de metadados do ativo como a propriedade `dc:title`.
 
-* `./jcr:created`: armazena a data e a hora de criação de um ativo. É uma propriedade protegida. Se você configurar essas propriedades, o Adobe recomenda marcá-las como Desativar edição. Caso contrário, o erro &quot;Os ativos falharam ao serem modificados&quot; ocorre ao salvar as propriedades do ativo.
+* `./jcr:created`: armazena a data e a hora de criação de um ativo. É uma propriedade protegida. Se você configurar essas propriedades, a Adobe recomenda marcá-las como Desativar edição. Caso contrário, o erro &quot;Os ativos falharam ao serem modificados&quot; ocorre ao salvar as propriedades do ativo.
 
 Para garantir que o componente seja exibido corretamente no formulário de esquema de metadados, o caminho da propriedade não deve incluir espaços.
 
@@ -156,7 +156,7 @@ Em vez de especificar propriedades para as opções na guia **[!UICONTROL Config
 
 #### Adicionar ou excluir uma guia no formulário de esquema {#adding-deleting-a-tab-in-the-schema-form}
 
-O editor de esquema permite adicionar ou excluir uma guia. O formulário de esquema padrão inclui as guias **[!UICONTROL Básico]**, **[!UICONTROL Avançado]**, **[!UICONTROL IPTC]** e **[!UICONTROL Extensão IPTC]**.
+O editor de esquema permite adicionar ou excluir uma guia. O formulário de esquema padrão inclui as guias **[!UICONTROL Básico]**, **[!UICONTROL Avançado]**, **[!UICONTROL IPTC]** e **[!UICONTROL Extensão do IPTC]**.
 
 Clique em `+` para adicionar uma guia em um formulário de esquema. Por padrão, a nova guia tem o nome `Unnamed-1`. Você pode modificar o nome na guia **[!UICONTROL Configurações]**. Clique em `X` para excluir uma guia.
 
@@ -225,7 +225,7 @@ Independentemente do tipo de ativo escolhido, exiba as informações de direitos
 
 1. (Opcional) Adicione os outros campos obrigatórios. Por exemplo, formato, codec e duração do vídeo do tipo de ativo.
 
-   Da mesma forma, adicione campos dependentes para outros tipos de ativos. Por exemplo, adicione campos contagem de páginas e autor para ativos de documento, como arquivos PDF e Word.
+   Da mesma forma, adicione campos dependentes para outros tipos de ativos. Por exemplo, adicione campos contagem de páginas e autor para ativos de documento, como arquivos do PDF e do Word.
 
    ![campos_dependentes_do_vídeo](assets/video_dependent_fields.png)
 
@@ -257,7 +257,7 @@ Independentemente do tipo de ativo escolhido, exiba as informações de direitos
    >É possível aplicar as condições de **[!UICONTROL Requisito]** e **[!UICONTROL Visibilidade]** independentemente umas das outras.
 
 1. Da mesma forma, crie uma dependência entre o valor Vídeo no campo Tipo de ativo e outros campos, como Codec e Duração.
-1. Repita as etapas para criar dependência entre ativos de documentos (PDF e Word) no campo [!UICONTROL Tipo de ativo] e em campos como [!UICONTROL Contagem de páginas] e [!UICONTROL Autor].
+1. Repita as etapas para criar dependência entre ativos de documento (PDF e Word) no campo [!UICONTROL Tipo de ativo] e em campos como [!UICONTROL Contagem de páginas] e [!UICONTROL Autor].
 1. Clique em **[!UICONTROL Salvar]**. Aplicar o esquema de metadados a uma pasta.
 
 1. Navegue até a pasta à qual você aplicou o esquema de metadados e abra a página de propriedades de um ativo. Dependendo da sua escolha no campo Tipo de ativo, os campos de metadados em cascata pertinentes são exibidos.
@@ -302,7 +302,7 @@ Nesse caso, crie um nó em `/etc/dam/metadataeditor/mimetypemappings` no reposit
 
 [!DNL Assets] mapeia os seguintes tipos MIME e formulários de esquema:
 
-| Formulário de esquema | Tipos MIME |
+| Formulário de esquema | Tipos de MIME |
 |---|---|
 | image/jpeg | image/pjpeg |
 | image/tiff | image/x-tiff |
@@ -381,5 +381,6 @@ Você pode definir campos obrigatórios no nível da pasta, que é aplicado aos 
    >
    >As verificações de validação de metadados consomem muitos recursos e podem afetar o desempenho do sistema. Agende as verificações de acordo. Se o servidor não conseguir lidar com a carga, tente desabilitar esse trabalho.
 
-<!-- TBD: Add this method to find invalid metadata in the metadata.md article later when it is published as a top-level metadata article.
+<!--
+TBD: Add this method to find invalid metadata in the metadata.md article later when it is published as a top-level metadata article.
 -->

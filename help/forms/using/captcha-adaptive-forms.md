@@ -9,10 +9,10 @@ feature: Adaptive Forms,Foundation Components
 exl-id: 9b4219b8-d5eb-4099-b205-d98d84e0c249
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '1832'
-ht-degree: 5%
+source-wordcount: '1959'
+ht-degree: 6%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 5%
 | AEM 6.5 | Este artigo |
 
 
-O <span class="preview"> Adobe recomenda o uso de [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adicionar o Forms Adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
+A Adobe <span class="preview"> recomenda usar os [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adicionar o Forms Adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
 
 O CAPTCHA (um teste de Turing público e completamente automatizado para diferenciar computadores e humanos) é um programa comumente usado em transações online para distinguir entre humanos e programas ou bots automatizados. O recurso apresenta um desafio e avalia a resposta do usuário para determinar se é um humano ou um bot interagindo com o site. O CAPTCHA impede que o usuário prossiga se o teste falhar e ajuda a tornar as transações online seguras, evitando que bots publiquem spam ou outro conteúdo mal-intencionado.
 
@@ -62,7 +62,7 @@ Os usuários do AEM Forms podem usar o serviço reCAPTCHA pelo Google para imple
    1. Selecione **[!UICONTROL Criar]** para criar a pasta habilitada para configurações do serviço de nuvem.
 1. Configure o serviço de nuvem para o reCAPTCHA Enterprise.
 
-   1. Na instância do autor do Experience Manager, vá para ![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Service]**.
+   1. Na instância do autor do Experience Manager, vá para ![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Services]**.
    1. Selecione **[!UICONTROL reCAPTCHA]**. A página Configurações é aberta. Selecione o container de configuração criado na etapa anterior e selecione **[!UICONTROL Criar]**.
    1. Selecione a versão como reCAPTCHA Enterprise e especifique o Nome; ID do Projeto, Chave do Site e Chave de API (Obtido nas Etapas 2 e 3) para o serviço reCAPTCHA Enterprise.
    1. Selecione o tipo de chave; o tipo de chave deve ser igual à chave do site configurada no projeto na nuvem do Google, por exemplo, **Chave do site da caixa de seleção** ou **Chave do site baseada em pontuação**.
@@ -99,7 +99,7 @@ Quando o serviço reCAPTCHA Enterprise estiver ativado, ele estará disponível 
 
 1. Configure o serviço de nuvem para o reCAPTCHA v2.
 
-   1. Na instância do autor AEM, vá para ![tools-1](assets/tools-1.png) > **Cloud Service**.
+   1. Na instância do autor do AEM, vá para ![tools-1](assets/tools-1.png) > **Cloud Services**.
    1. Selecione **[!UICONTROL reCAPTCHA]**. A página Configurações é aberta. Selecione o container de configuração criado na etapa anterior e selecione **[!UICONTROL Criar]**.
    1. Selecione a versão como reCAPTCHA v2, especifique o Nome; a Chave do Site e a Chave Secreta para o serviço reCAPTCHA (Obtido na Etapa 1) e selecione **[!UICONTROL Criar]** para criar a configuração do serviço de nuvem.
    1. Na caixa de diálogo Editar componente, especifique o site e as chaves secretas obtidas na etapa 1. Selecione **[!UICONTROL Salvar configurações]** e **OK** para concluir a configuração.
@@ -342,4 +342,5 @@ public interface GuideCaptchaValidator {
 
 `captchaPropertyNodePath` Refers to the resource path of the CAPTCHA component in the Sling repository. Use this property to include details specific to the CAPTCHA component. For example, `captchaPropertyNodePath` includes information for the reCAPTCHA cloud configuration configured on the CAPTCHA component. The cloud configuration information provides **[!UICONTROL Site Key]** and **[!UICONTROL Secret Key]** settings for implementing the reCAPTCHA service.
 
-`userResponseToken` Refers to the `g_reCAPTCHA_response` that gets generated after solving a CAPTCHA in a form. -->
+`userResponseToken` Refers to the `g_reCAPTCHA_response` that gets generated after solving a CAPTCHA in a form.
+-->

@@ -8,16 +8,17 @@ feature: Transaction Reports
 exl-id: bb812614-f4d8-4f57-bea2-8f7d31457039
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '476'
+source-wordcount: '490'
 ht-degree: 0%
 
 ---
 
 # Relatórios de transação para o AEM Forms no OSGi {#transaction-reports-overview}
 
-<!--## Introduction {#introduction}
+<!--
+## Introduction {#introduction}
 
 Transaction reports in AEM Forms let you keep a count of all transactions taken place since a specified date on your AEM Forms deployment. The objective is to provide information about product usage and help business stakeholders understand their digital processing volumes. Examples of a transaction include:
 
@@ -25,9 +26,10 @@ Transaction reports in AEM Forms let you keep a count of all transactions taken 
 * Rendition of a print or a web version of an interactive communication
 * Conversion of a document from one file format to another
 
-For more information on what is considered a transaction, see [Billable APIs](../../forms/using/transaction-reports-billable-apis.md).-->
+For more information on what is considered a transaction, see [Billable APIs](../../forms/using/transaction-reports-billable-apis.md).
+-->
 
-A gravação de transação está desabilitada por padrão. Você pode [habilitar a gravação de transações](../../forms/using/viewing-and-understanding-transaction-reports.md#setting-up-transaction-reports) do Console da Web AEM. Você pode exibir relatórios de transações nas instâncias de autor, processamento ou publicação. Exiba relatórios de transações nas instâncias de autor ou de processamento para obter uma soma agregada de todas as transações. Exiba relatórios de transações nas instâncias de publicação para obter uma contagem de todas as transações que ocorrem somente nessa instância de publicação de onde o relatório é executado.
+A gravação de transação está desabilitada por padrão. Você pode [habilitar a gravação de transações](../../forms/using/viewing-and-understanding-transaction-reports.md#setting-up-transaction-reports) no Console da Web do AEM. Você pode exibir relatórios de transações nas instâncias de autor, processamento ou publicação. Exiba relatórios de transações nas instâncias de autor ou de processamento para obter uma soma agregada de todas as transações. Exiba relatórios de transações nas instâncias de publicação para obter uma contagem de todas as transações que ocorrem somente nessa instância de publicação de onde o relatório é executado.
 
 Não crie conteúdo (crie formulários adaptáveis, comunicação interativa, temas e outras atividades de criação) e processe documentos (use fluxos de trabalho, serviços de documentos e outras atividades de processamento) na mesma instância do AEM. Mantenha a gravação da transação desativada para os servidores do AEM Forms usados para criar conteúdo. Mantenha a gravação da transação ativada para os servidores do AEM Forms usados para processar documentos.
 
@@ -35,7 +37,7 @@ Não crie conteúdo (crie formulários adaptáveis, comunicação interativa, te
 
 Uma transação permanece no buffer por um período especificado (Tempo do Buffer de Liberação + Tempo de replicação reversa). Por padrão, leva aproximadamente 90 segundos para a contagem de transações ser refletida no relatório de transações.
 
-Ações como enviar um Formulário PDF, usar a interface do usuário do agente para visualizar uma comunicação interativa ou usar métodos de envio de formulário não padrão não são contabilizadas como transações. O AEM Forms fornece uma API para registrar essas transações. Chame a API a partir das implementações personalizadas para registrar uma transação.
+Ações como enviar um formulário do PDF, usar a interface do usuário do agente para visualizar uma comunicação interativa ou usar métodos de envio de formulário não padrão não são contabilizadas como transações. O AEM Forms fornece uma API para registrar essas transações. Chame a API a partir das implementações personalizadas para registrar uma transação.
 
 ## Topologia suportada {#supported-topology}
 

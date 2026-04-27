@@ -7,9 +7,9 @@ feature: Renditions
 exl-id: 1e4ddd73-a31c-4ddd-94eb-1dac6a4835b3
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: f8588ef353bd08b41202350072728d80ee51f565
+source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '1062'
+source-wordcount: '1098'
 ht-degree: 1%
 
 ---
@@ -18,10 +18,10 @@ ht-degree: 1%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/configure-fpo-renditions.html?lang=pt-BR) |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/configure-fpo-renditions.html?lang=en) |
 | AEM 6.5 | Este artigo |
 
-Ao inserir ativos de grande porte do Experience Manager em documentos do Adobe InDesign, um profissional criativo deve aguardar um tempo considerável depois de [colocar um ativo](https://helpx.adobe.com/br/indesign/using/placing-graphics.html). Enquanto isso, o usuário não pode mais usar o InDesign. Isso interrompe o fluxo de criação e afeta negativamente a experiência do usuário. O Adobe permite colocar temporariamente representações de pequeno porte em documentos do InDesign para começar. Quando a saída final é necessária, digamos para workflows de impressão e publicação, os ativos originais e de resolução completa substituem a representação temporária em segundo plano. Essa atualização assíncrona em segundo plano acelera o processo de design para melhorar a produtividade e não dificulta o processo criativo.
+Ao inserir ativos de grande porte do Experience Manager em documentos do Adobe InDesign, um profissional criativo deve aguardar um tempo considerável depois de [colocar um ativo](https://helpx.adobe.com/indesign/using/placing-graphics.html). Enquanto isso, o usuário não pode mais usar o InDesign. Isso interrompe o fluxo de criação e afeta negativamente a experiência do usuário. O Adobe permite colocar temporariamente representações de pequeno porte em documentos do InDesign para começar. Quando a saída final é necessária, digamos para workflows de impressão e publicação, os ativos originais e de resolução completa substituem a representação temporária em segundo plano. Essa atualização assíncrona em segundo plano acelera o processo de design para melhorar a produtividade e não dificulta o processo criativo.
 
 O Adobe Experience Manager (AEM) fornece representações usadas somente para posicionamento (FPO). Essas representações FPO têm um tamanho de arquivo pequeno, mas têm a mesma proporção. Se uma representação FPO não estiver disponível para um ativo, a Adobe InDesign usará o ativo original. Esse mecanismo de fallback garante que o workflow criativo continue sem interrupções.
 
@@ -121,7 +121,7 @@ Para usar os recursos de processamento do ImageMagick para gerar a representaç�
 
 1. Siga a etapa 1 a etapa 3 da configuração [para gerar a representação de ativos existentes usando a seção de fluxo de trabalho do Experience Manager](#generate-renditions-of-existing-assets-using-aem-workflow).
 
-1. Siga a etapa 4 a etapa 8 da configuração [&#x200B; para gerar a representação de novos ativos usando a seção ImageMagick](#generate-renditions-of-new-assets-using-imagemagick).
+1. Siga a etapa 4 a etapa 8 da configuração [ para gerar a representação de novos ativos usando a seção ImageMagick](#generate-renditions-of-new-assets-using-imagemagick).
 
 
 ## Exibir representações FPO {#view-fpo-renditions}

@@ -5,17 +5,19 @@ exl-id: d9b6140a-c37d-4b90-a60c-01f471d65621
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
-source-git-commit: 5a851bf013a4ef7e6097bf32bd3fa8fe4d635f28
+source-git-commit: f2c92b990a5c09cbcf532e0800e264620d98af77
 workflow-type: tm+mt
-source-wordcount: '1834'
-ht-degree: 12%
+source-wordcount: '1900'
+ht-degree: 15%
 
 ---
 
 # Recursos obsoletos e removidos {#deprecated-and-removed-features}
 
-<!-- Search&Promote is end-of-life September 1, 2022 | Assets | If a user does not have sufficient (read and write) permissions on `/content/dam/collections`, the user cannot create a Collection. | Honor the access control setup of user and ensure appropriate permissions. ||
-|Adobe Search & Promote|The integration with Adobe Search & Promote is deprecated. Adobe does not plan to make further enhancements to the Search & Promote integration. Adobe Search & Promote integration remains fully supported while being deprecated.||| -->
+<!--
+Search&Promote is end-of-life September 1, 2022 | Assets | If a user does not have sufficient (read and write) permissions on `/content/dam/collections`, the user cannot create a Collection. | Honor the access control setup of user and ensure appropriate permissions. ||
+|Adobe Search & Promote|The integration with Adobe Search & Promote is deprecated. Adobe does not plan to make further enhancements to the Search & Promote integration. Adobe Search & Promote integration remains fully supported while being deprecated.|||
+-->
 
 A Adobe avalia as funcionalidades do produto constantemente, para reinventar ou substituir recursos mais antigos por alternativas mais modernas, de forma a melhorar o valor do cliente em geral, sempre sob considerações cuidadosas de compatibilidade com versões anteriores.
 
@@ -66,7 +68,7 @@ Clientes devem analisar se usam o recurso/funcionalidade em sua implementação 
 
 ## Recursos removidos {#removed-features}
 
-Esta seção lista os recursos e funcionalidades removidos do AEM 6.5. As versões anteriores tinham esses recursos marcados como obsoletos.
+Esta seção lista os recursos e funcionalidades removidos do AEM 6.5. Nas versões anteriores, esses recursos estavam marcados como descontinuados.
 
 | Área | Destaque | Substituição | Versão (SP) |
 |--- |--- |--- |--- |
@@ -86,7 +88,8 @@ Esta seção lista os recursos e funcionalidades removidos do AEM 6.5. As versõ
 | Cache | `system/console/slingjsp` foi removido e não está mais disponível no AEM 6.5. | As classes e o cache Slightly são armazenados no pacote Apache Sling Commons FileSystem ClassLoader. Você pode verificar o número do pacote no Console da Web do AEM e remover a pasta de cache diretamente do sistema de arquivos (`crx-quickstart/launchpad/felix/bundle<ID>`). |  |
 | Screens | Remoção do suporte ao pacote ativemq e de suas configurações relacionadas. |  |  |
 
-<!-- ## Pre-announcement for next release {#pre-announcement-for-next-release}
+<!--
+## Pre-announcement for next release {#pre-announcement-for-next-release}
 
 This section is used to pre-announce the upcoming changes in the future releases. The announced changes are not yet effective but will impact customers. For example, the features are not yet deprecated but impacts the users after deprecation. These updates are provided for planning purpose.
 

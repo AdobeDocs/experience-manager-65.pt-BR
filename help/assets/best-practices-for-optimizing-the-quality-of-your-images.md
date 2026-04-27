@@ -9,9 +9,9 @@ feature: Asset Management
 role: User, Admin
 exl-id: 7a568cae-e505-4b3a-abc5-8aae723460c3
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '1497'
+source-wordcount: '1504'
 ht-degree: 4%
 
 ---
@@ -20,16 +20,16 @@ ht-degree: 4%
 
 A otimização da qualidade da imagem pode ser um processo demorado, pois muitos fatores contribuem para a obtenção de resultados aceitáveis. O resultado é parcialmente subjetivo porque os indivíduos percebem a qualidade da imagem de forma diferente. A experimentação estruturada é fundamental.
 
-O Adobe Experience Manager inclui mais de 100 comandos de entrega de imagens do Dynamic Media para ajustar e otimizar imagens e renderizar resultados. As diretrizes a seguir podem ajudar você a simplificar o processo e obter bons resultados rapidamente usando alguns comandos essenciais e práticas recomendadas.
+O Adobe Experience Manager inclui mais de 100 comandos de entrega de imagem do Dynamic Media para ajustar e otimizar imagens e renderizar resultados. As diretrizes a seguir podem ajudar você a simplificar o processo e obter bons resultados rapidamente usando alguns comandos essenciais e práticas recomendadas.
 
-## Práticas recomendadas para o formato de imagem (`&fmt=`) {#best-practices-for-image-format-fmt}
+## Práticas recomendadas para formato de imagem (`&fmt=`) {#best-practices-for-image-format-fmt}
 
 * JPG ou PNG são as melhores opções para fornecer imagens em boa qualidade e com tamanho e peso gerenciáveis.
 * Se nenhum comando format for fornecido no URL, o padrão do Dynamic Media Image Delivery é JPG para entrega.
-* O JPG faz a compactação a uma proporção de 10:1 e geralmente produz arquivos de imagem menores. O PNG é compactado em uma proporção de aproximadamente 2:1, exceto às vezes, como quando as imagens contêm um fundo branco. Geralmente, porém, os tamanhos dos arquivos PNG são maiores que os arquivos JPG.
-* O JPG usa compactação com perdas, o que significa que os elementos da imagem (pixels) são descartados durante a compactação. Por outro lado, o PNG usa compactação sem perdas.
+* A JPG compacta a uma proporção de 10:1 e geralmente produz arquivos de imagem menores. O PNG é compactado em uma proporção de aproximadamente 2:1, exceto às vezes, como quando as imagens contêm um fundo branco. Geralmente, porém, os tamanhos dos arquivos PNG são maiores que os arquivos JPG.
+* O JPG usa compactação com perdas, o que significa que os elementos de imagem (pixels) são soltos durante a compactação. Por outro lado, o PNG usa compactação sem perdas.
 * O JPG geralmente compacta imagens fotográficas com melhor fidelidade do que imagens sintéticas com bordas nítidas e contraste.
-* Se suas imagens contiverem transparência, use PNG porque JPG não suporta transparência.
+* Se as imagens contiverem transparência, use PNG, pois o JPG não oferece suporte a essa transparência.
 
 Como prática recomendada para o formato de imagem, comece com a configuração mais comum `&fmt=JPG`.
 
@@ -44,12 +44,14 @@ Como prática recomendada para dimensionamento de imagem, use `&wid=<value>&hei=
 
 ## Práticas recomendadas para nitidez de imagem {#best-practices-for-image-sharpening}
 
-A nitidez de imagem é o aspecto mais complexo de controlar imagens no seu site e no qual muitos erros são cometidos. Reserve tempo para saber mais sobre como a nitidez e a nitidez do mascaramento funcionam no Experience Manager, consultando os seguintes recursos úteis:
+A nitidez de imagem é o aspecto mais complexo de controlar imagens no seu site e no qual muitos erros são cometidos. Reserve tempo para saber mais sobre como a nitidez e o mascaramento sem nitidez funcionam no Experience Manager, consultando os seguintes recursos úteis:
 
 Informe oficial de práticas recomendadas [Nitidez de imagens no Adobe Dynamic Media Classic](/help/assets/assets/sharpening_images.pdf), que também se aplica ao Experience Manager.
 
-<!-- To be reviewed and updated: Broken link.
-See also [Sharpening an image with unsharp mask](https://helpx.adobe.com/photoshop/atv/cs6-tutorials/sharpening-an-image-with-unsharp-mask.html). -->
+<!--
+To be reviewed and updated: Broken link.
+See also [Sharpening an image with unsharp mask](https://helpx.adobe.com/photoshop/atv/cs6-tutorials/sharpening-an-image-with-unsharp-mask.html).
+-->
 
 Com o Experience Manager, você pode ajustar a nitidez de imagens na assimilação, no delivery ou em ambos. No entanto, geralmente, ajuste a nitidez de imagens usando apenas um método ou outro, mas não ambos. A nitidez de imagens no delivery, em um URL, normalmente fornece os melhores resultados.
 
@@ -71,11 +73,11 @@ Há dois métodos de nitidez de imagem que podem ser usados:
         
         Para obter mais informações sobre como você define esses três parâmetros, incluindo as práticas recomendadas para usar com o filtro, consulte os seguintes recursos:
 
-        Experience Manager Tópico da Ajuda sobre Nitidez de uma imagem.
+        Tópico da Ajuda do Experience Manager sobre Nitidez de uma imagem.
 
         Informe oficial de práticas recomendadas [Nitidez de imagens no Adobe Dynamic Media Classic](/help/assets/assets/sharpening_images.pdf).
 
-      * Experience Manager também permite controlar um quarto parâmetro: monocromático (0,1). Esse parâmetro determina se a máscara de nitidez é aplicada separadamente a cada componente de cor usando o valor 0 ou ao brilho/intensidade da imagem usando o valor 1.
+      * O Experience Manager também permite controlar um quarto parâmetro: monocromático (0,1). Esse parâmetro determina se a máscara de nitidez é aplicada separadamente a cada componente de cor usando o valor 0 ou ao brilho/intensidade da imagem usando o valor 1.
 
 Como prática recomendada, comece com o parâmetro Tirar nitidez do raio da máscara. As configurações de raio com as quais você pode começar são as seguintes:
 
@@ -90,25 +92,25 @@ Deixe a configuração de parâmetro monocromático em 0.
 
 ### Práticas recomendadas para compactação JPEG (`&qlt=`) {#best-practices-for-jpeg-compression-qlt}
 
-* Esse parâmetro controla a qualidade da codificação JPG. Um valor mais alto significa uma imagem de qualidade superior, mas um tamanho de arquivo grande; como alternativa, um valor mais baixo significa uma imagem de qualidade inferior, mas um tamanho de arquivo menor. O intervalo desse parâmetro é de 0 a 100.
+* Esse parâmetro controla a qualidade da codificação do JPG. Um valor mais alto significa uma imagem de qualidade superior, mas um tamanho de arquivo grande; como alternativa, um valor mais baixo significa uma imagem de qualidade inferior, mas um tamanho de arquivo menor. O intervalo desse parâmetro é de 0 a 100.
 * Para otimizar a qualidade, não defina o valor do parâmetro como 100. A diferença entre uma configuração de 90 ou 95 e 100 é quase imperceptível, mas 100 aumenta desnecessariamente o tamanho do arquivo de imagem. Portanto, para otimizar a qualidade, mas evitar que os arquivos de imagem fiquem muito grandes, defina o `qlt= value` como 90 ou 95.
 * Para otimizar um tamanho de arquivo de imagem pequeno, mas manter a qualidade da imagem em um nível aceitável, defina o `qlt= value` como 80. Valores abaixo de 70 a 75 resultam em degradação significativa da qualidade da imagem.
 * Como prática recomendada, para ficar no meio, defina o `qlt= value` como 85 para ficar no meio.
 * Usando o sinalizador de croma em `qlt=`
 
-   * O parâmetro `qlt=` tem uma segunda configuração que permite ativar a redução de resolução de cromaticidade de RGB usando o valor `,1` ou desativar usando o valor `,0`.
-   * Para simplificar, comece com a redução de resolução de cromaticidade de RGB desativada (`,0`). Essa configuração geralmente resulta em melhor qualidade de imagem, especialmente para imagens sintéticas com muitas bordas e contraste nítidos.
+   * O parâmetro `qlt=` tem uma segunda configuração que permite ativar a redução de resolução de cromaticidade de RGB usando o valor `,1` ou desativado usando o valor `,0`.
+   * Para simplificar, comece com a redução de resolução de cromaticidade do RGB desativada (`,0`). Essa configuração geralmente resulta em melhor qualidade de imagem, especialmente para imagens sintéticas com muitas bordas e contraste nítidos.
 
 Como prática recomendada para a compactação JPG, use `&qlt=85,0`.
 
-## Práticas recomendadas para o dimensionamento de JPEG (`&jpegSize=`) {#best-practices-for-jpeg-sizing-jpegsize}
+## Práticas recomendadas para dimensionamento do JPEG (`&jpegSize=`) {#best-practices-for-jpeg-sizing-jpegsize}
 
 jpegSize é um parâmetro útil se você quiser garantir que uma imagem não exceda um determinado tamanho para ser entregue a dispositivos que tenham memória limitada.
 
 * Este parâmetro está definido em quilobytes (`jpegSize=&lt;size_in_kilobytes&gt;`). Ele define o tamanho máximo permitido para a entrega de imagens.
-* `&jpegSize=` interage com o parâmetro de compactação JPG `&qlt=`. Se a resposta do JPG com o parâmetro de compactação JPG especificado (`&qlt=`) não exceder o valor jpegSize, a imagem será retornada com `&qlt=`, conforme definido. Caso contrário, `&qlt=` é diminuído gradualmente até que a imagem se ajuste ao tamanho máximo permitido ou até que o sistema determine que não é possível ajustá-la e retorne um erro.
+* `&jpegSize=` interage com o parâmetro de compactação JPG `&qlt=`. Se a resposta do JPG com o parâmetro de compactação JPG especificado (`&qlt=`) não exceder o valor jpegSize, a imagem será retornada com `&qlt=` conforme definido. Caso contrário, `&qlt=` é diminuído gradualmente até que a imagem se ajuste ao tamanho máximo permitido ou até que o sistema determine que não é possível ajustá-la e retorne um erro.
 
-Como prática recomendada, defina `&jpegSize=` e adicione o parâmetro `&qlt=` se estiver fornecendo imagens de JPG para dispositivos com memória limitada.
+Como prática recomendada, defina `&jpegSize=` e adicione o parâmetro `&qlt=` se estiver entregando imagens do JPG a dispositivos com memória limitada.
 
 ## Resumo de práticas recomendadas {#best-practices-summary}
 
@@ -125,5 +127,5 @@ Se os resultados da nitidez ainda não forem satisfatórios, aumente o raio em i
 À medida que você experimenta, as seguintes sugestões gerais podem ser úteis para otimizar ainda mais seu fluxo de trabalho:
 
 * Experimente e teste diferentes parâmetros em tempo real, diretamente em um URL.
-* Como prática recomendada, lembre-se de que é possível agrupar comandos do Servidor de imagens do Dynamic Media em uma predefinição de imagem. Uma predefinição de imagem é basicamente uma macro de comando de URL com nomes predefinidos personalizados como `$thumb_low$` e `&product_high$`. O nome da predefinição personalizada em um caminho de URL chama essas predefinições. Essa funcionalidade ajuda a gerenciar comandos e configurações de qualidade para diferentes padrões de uso de imagens no site e reduz o comprimento geral dos URLs.
-* O Experience Manager também oferece maneiras mais avançadas de ajustar a qualidade da imagem, como aplicar nitidez às imagens na assimilação. Para casos de uso avançados em que há opções para ajustar e otimizar os resultados da renderização, o [Adobe Professional Services](https://business.adobe.com/br/customers/consulting-services/main.html) pode ajudá-lo com insights personalizados e práticas recomendadas.
+* Como prática recomendada, lembre-se de agrupar comandos do Servidor de imagens do Dynamic Media em uma predefinição de imagem. Uma predefinição de imagem é basicamente uma macro de comando de URL com nomes predefinidos personalizados como `$thumb_low$` e `&product_high$`. O nome da predefinição personalizada em um caminho de URL chama essas predefinições. Essa funcionalidade ajuda a gerenciar comandos e configurações de qualidade para diferentes padrões de uso de imagens no site e reduz o comprimento geral dos URLs.
+* O Experience Manager também oferece maneiras mais avançadas de ajustar a qualidade da imagem, como aplicar nitidez às imagens na assimilação. Para casos de uso avançados em que há opções para ajustar e otimizar os resultados de renderização, o [Adobe Professional Services](https://business.adobe.com/customers/consulting-services/main.html) pode ajudá-lo com insight personalizado e práticas recomendadas.

@@ -9,9 +9,9 @@ docset: aem65
 exl-id: c611a1f8-9d94-47f3-bed3-59eef722bf98
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: a0ef9925d1bcb84ea5bf733221875d0322cc6df1
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '6639'
+source-wordcount: '6846'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ A Adobe <span class="preview"> recomenda usar os [Componentes principais](https:
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html?lang=pt-BR) |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html) |
 | AEM 6.5 | Este artigo |
 
 ## Visão geral {#overview}
@@ -30,7 +30,8 @@ A Adobe <span class="preview"> recomenda usar os [Componentes principais](https:
 O recurso do editor de regras no Adobe Experience Manager Forms permite que usuários e desenvolvedores de negócios de formulários gravem regras em objetos de formulário adaptáveis. Essas regras definem as ações a serem acionadas nos objetos de formulário com base nas condições predefinidas, entradas do usuário e ações do usuário no formulário. Isso ajuda a simplificar ainda mais a experiência de preenchimento de formulário, garantindo precisão e velocidade.
 
 O editor de regras fornece uma interface de usuário intuitiva e simplificada para escrever regras. O editor de regras oferece um editor visual para todos os usuários. Além disso, somente para usuários avançados de formulários, o editor de regras fornece um editor de código para escrever regras e scripts.
-<!-- Some of the key actions that you can perform on adaptive form objects using rules are:
+<!--
+Some of the key actions that you can perform on adaptive form objects using rules are:
 
 * Show or hide an object
 * Enable or disable an object
@@ -38,7 +39,8 @@ O editor de regras fornece uma interface de usuário intuitiva e simplificada pa
 * Validate the value of an object
 * Execute functions to compute the value of an object
 * Invoke a form data model service and perform an operation
-* Set property of an object -->
+* Set property of an object
+-->
 
 O editor de regras substitui os recursos de script no AEM 6.1 Forms e em versões anteriores. No entanto, os scripts existentes são preservados no novo editor de regras. Para obter mais informações sobre como trabalhar com scripts existentes no editor de regras, consulte [Impacto do editor de regras nos scripts existentes](#impact-of-rule-editor-on-existing-scripts).
 
@@ -168,47 +170,47 @@ O tipo de regra **[!UICONTROL Definir Propriedade]** permite que você defina o 
 
 Ela permite definir regras para adicionar caixas de seleção dinamicamente ao formulário adaptável. Você pode usar uma função personalizada, um objeto de formulário ou uma propriedade de objeto para definir uma regra.
 
-![Definir Propriedade](assets/set_property_rule_new.png)
+![Set Property](assets/set_property_rule_new.png)
 
-Para definir uma regra com base em uma função personalizada, selecione **Saída da Função** na lista suspensa e arraste e solte uma função personalizada na guia **Funções**. Se a ação de condição for atendida, o número de caixas de seleção definidas na função personalizada será adicionado ao formulário adaptável.
+To define a rule based on a custom function, select **Function Output** from the drop-down list, and drag-and-drop a custom function from the **Functions** tab. If the condition action is met, the number of checkboxes defined in the custom function are added to the adaptive form.
 
-Para definir uma regra baseada em um objeto de formulário, selecione **Objeto de formulário** na lista suspensa e arraste e solte um objeto de formulário da guia **Objetos de formulário**. Se a ação de condição for atendida, o número de caixas de seleção definidas no objeto de formulário será adicionado ao formulário adaptável.
+To define a rule based on a form object, select **Form Object** from the drop-down list, and drag-and-drop a form object from the **Form Objects** tab. If the condition action is met, the number of checkboxes defined in the form object are added to the adaptive form.
 
-Uma regra Definir propriedade com base em uma propriedade de objeto permite adicionar o número de caixas de seleção em um formulário adaptável com base em outra propriedade de objeto incluída no formulário adaptável.
+A Set Property rule based on an object property lets you add the number of checkboxes in an adaptive form based on another object property that is included in the adaptive form.
 
-A figura a seguir mostra um exemplo de adição dinâmica de caixas de seleção com base no número de listas suspensas no formulário adaptável:
+The following figure depicts an example of dynamically adding checkboxes based on the number of drop-down lists in the adaptive form:
 
-![Propriedade do objeto](assets/object_property_set_property_new.png)
+![Object Property](assets/object_property_set_property_new.png)
 
-**Limpar Valor de** Limpa o valor do objeto especificado.
+**Clear Value Of** Clears the value of the specified object.
 
-**Definir Foco** Define o foco no objeto especificado.
+**Set Focus** Sets focus on the specified object.
 
-**Salvar formulário** Salva o formulário.
+**Save Form** Saves the form.
 
-**Enviar Forms** Envia o formulário.
+**Submit Forms** Submits the form.
 
-**Redefinir formulário** Redefine o formulário.
+**Reset Form** Resets the form.
 
-**Validar formulário** Valida o formulário.
+**Validate Form** Validates the form.
 
-**Adicionar instância** Adiciona uma instância do painel ou linha de tabela repetível especificado.
+**Add Instance** Adds an instance of the specified repeatable panel or table row.
 
-**Remover instância** Remove uma instância do painel ou linha de tabela repetível especificado.
+**Remove Instance** Removes an instance of the specified repeatable panel or table row.
 
-**Navegar até** Navega até outras Comunicações interativas, formulários adaptáveis, outros ativos, como imagens ou fragmentos de documentos, ou uma URL externa. Para obter mais informações, consulte [Adicionar botão à Comunicação Interativa](../../forms/using/create-interactive-communication.md#addbuttontothewebchannel).
+**Navigate to** Navigates to other Interactive Communications, adaptive forms, other assets such as images or document fragments, or an external URL. For more information, see [Add button to the Interactive Communication](../../forms/using/create-interactive-communication.md#addbuttontothewebchannel).
 
 ### Definir valor de {#set-value-of}
 
-O tipo de regra **[!UICONTROL Definir Valor de]** permite que você defina o valor de um objeto de formulário, dependendo se a condição especificada é atendida ou não. O valor pode ser definido como um valor de outro objeto, uma string literal, um valor derivado de uma expressão matemática ou de uma função, um valor de uma propriedade de outro objeto ou a saída de um serviço de modelo de dados de formulário. Da mesma forma, você pode verificar uma condição em um componente, string, propriedade ou valores derivados de uma função ou expressão matemática.
+The **[!UICONTROL Set Value of]** rule type lets you set the value of a form object depending on whether the specified condition is satisfied or not. The value can be set to a value of another object, a literal string, a value derived from a mathematical expression or a function, a value of a property of another object, or the output of a form data model service. Similarly, you can check for a condition on a component, string, property, or values derived from a function or mathematical expression.
 
-O tipo de regra Definir valor de não está disponível para todos os objetos de formulário, como painéis e botões da barra de ferramentas. Uma regra padrão Definir valor de tem a seguinte estrutura:
+The Set Value Of rule type is not available for all form objects, such as panels and toolbar buttons. A standard Set Value Of rule has the following structure:
 
 
 
-Defina o valor do Objeto A como:
+Set value of Object A to:
 
-(cadeia de caracteres ABC) OU
+(string ABC) OR
 (propriedade de objeto X do Objeto C) OU
 (valor de uma função) OR
 (valor de uma expressão matemática) OR
@@ -549,7 +551,7 @@ Execute as seguintes etapas para escrever regras:
 
 Os usuários adicionados ao grupo forms-power-users podem usar o editor de código. O editor de regras gera automaticamente o código JavaScript para qualquer regra criada usando o editor visual. Você pode alternar do editor visual para o editor de código para exibir o código gerado. No entanto, se você modificar o código da regra no editor de código, não poderá voltar para o editor visual. Se preferir escrever regras no editor de código em vez do editor visual, você pode escrever regras novamente no editor de código. O alternador de editores de código visual ajuda você a alternar entre os dois modos.
 
-O editor de código JavaScript é a linguagem de expressão de formulários adaptáveis. Todas as expressões são expressões JavaScript válidas e usam APIs de modelo de script de formulários adaptáveis. Essas expressões retornam valores de determinados tipos. Para obter a lista completa de classes de formulários adaptáveis, eventos, objetos e APIs públicas, consulte [Referência da API da biblioteca JavaScript para formulários adaptáveis](https://helpx.adobe.com/br/experience-manager/6-5/forms/javascript-api/index.html).
+O editor de código JavaScript é a linguagem de expressão de formulários adaptáveis. Todas as expressões são expressões JavaScript válidas e usam APIs de modelo de script de formulários adaptáveis. Essas expressões retornam valores de determinados tipos. Para obter a lista completa de classes de formulários adaptáveis, eventos, objetos e APIs públicas, consulte [Referência da API da biblioteca JavaScript para formulários adaptáveis](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html).
 
 Para obter mais informações sobre diretrizes para escrever regras no editor de código, consulte [Expressões de formulários adaptáveis](/help/forms/using/adaptive-form-expressions.md).
 
@@ -585,7 +587,7 @@ Uma função privada não está incluída como uma função personalizada.
 
 * **Nome**
 Sintaxe: `@name funcName <Function Name>`
-Alternativamente, o `,` é possível usar o `@function funcName <Function Name>` **ou o** `@func` `funcName <Function Name>`.
+Alternativamente `,` você pode usar: `@function funcName <Function Name>` **ou** `@func` `funcName <Function Name>`.
   `funcName` é o nome da função (nenhum espaço é permitido).
   `<Function Name>` é o nome para exibição da função.
 

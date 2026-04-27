@@ -7,9 +7,9 @@ feature: Asset Management,Search
 exl-id: d6f815b5-e4fc-4f8c-a6c1-9e50035ab9f2
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 7c1aeec18f35b019a63d0385ada248b26a0df9de
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '795'
+source-wordcount: '813'
 ht-degree: 2%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 2%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| Adobe Experience Manager (AEM) as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/organize-assets.html?lang=pt-BR) |
+| Adobe Experience Manager (AEM) as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/organize-assets.html?lang=en) |
 | AEM 6.5 | Este artigo |
 
 Todos os ativos digitais, metadados e conteúdo dos documentos do Microsoft® Office e do PDF são extraídos e tornados pesquisáveis. A pesquisa permite uma filtragem sofisticada de ativos e respeita totalmente as permissões apropriadas. Os metadados são abordados em detalhes nos metadados no Digital Asset Management.
@@ -47,9 +47,9 @@ A maneira mais básica de organizar ativos é salvá-los em pastas. É análogo 
 
 ## Organizar ativos usando tags {#use-tags-to-organize-assets}
 
-Usando tags como metadados, você pode pesquisar ativos facilmente, criar coleções usando os resultados da pesquisa, aumentar a classificação de pesquisa para alguns ativos e usar algoritmos de inteligência artificial da IA do Adobe para descoberta de ativos.
+Usando tags como metadados, você pode pesquisar ativos facilmente, criar coleções usando os resultados da pesquisa, aumentar a classificação de pesquisa para alguns ativos e usar algoritmos de inteligência artificial do Adobe AI para a descoberta de ativos.
 
-O [!DNL Adobe Experience Manager Assets] usa um algoritmo de autoaprendizado para criar marcas altamente descritivas que permitem encontrar o ativo correto com apenas alguns cliques. A marcação inteligente usa a IA do Adobe, a inteligência artificial e a estrutura de aprendizado de máquina da Adobe, que podem ser treinadas para reconhecer e aplicar tags padrão e específicas de negócios a imagens. As Tags inteligentes também podem identificar conteúdo, palavras individuais ou frases e aplicar automaticamente tags descritivas aos ativos
+O [!DNL Adobe Experience Manager Assets] usa um algoritmo de autoaprendizado para criar marcas altamente descritivas que permitem encontrar o ativo correto com apenas alguns cliques. A marcação inteligente usa o Adobe AI, a inteligência artificial da Adobe e a estrutura de aprendizado de máquina, que pode ser treinada para reconhecer e aplicar tags padrão e específicas de negócios a imagens. As Tags inteligentes também podem identificar conteúdo, palavras individuais ou frases e aplicar automaticamente tags descritivas aos ativos
 
 Para obter mais informações, consulte os seguintes artigos:
 
@@ -63,7 +63,8 @@ Com as coleções de ativos no [!DNL Experience Manager Assets], você pode simp
 
 Para obter mais informações, consulte [gerenciar coleções](manage-collections.md).
 
-<!-- TBD items: add screenshots where applicable
+<!--
+TBD items: add screenshots where applicable
 Any hints/recommendations of when to use what method of organizing? Some examples of how organizing helps towards a better taxonomy and improved content velocity.
 Add back links to blog posts by marketing?
 -->

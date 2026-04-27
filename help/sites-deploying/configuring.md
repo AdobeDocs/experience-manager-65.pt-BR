@@ -9,9 +9,9 @@ feature: Configuring
 exl-id: 3777a1ba-cc4e-41b9-9098-236f8141925f
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '2085'
+source-wordcount: '2116'
 ht-degree: 0%
 
 ---
@@ -180,7 +180,7 @@ Para obter o gerenciamento de usuários no AEM (incluindo a atribuição de dire
 
 O Dispatcher é a ferramenta de armazenamento em cache, balanceamento de carga ou ambos da Adobe Experience Manager. Ele pode ser usado com um servidor Web de classe empresarial.
 
-Consulte [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=pt-BR) para obter os detalhes completos, em particular [Configurando o Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=pt-BR) para obter mais detalhes sobre a configuração.
+Consulte [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=pt-BR) para obter os detalhes completos, em particular [Configurando o Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html) para obter mais detalhes sobre a configuração.
 
 ### Configuração do AEM LiveCycle Connector {#configuring-aem-livecycle-connector}
 
@@ -206,9 +206,11 @@ O [Desempenho](/help/sites-deploying/configuring-performance.md) é a chave do s
 
 Consulte [Configuração para Desempenho](/help/sites-deploying/configuring-performance.md#configuring-for-performance) para obter mais detalhes.
 
-<!--delete ### Scaling {#scaling}
+<!--
+delete ### Scaling {#scaling}
 
-Scaling a CQ installation correctly depends greatly on the details of your particular use case. A detailed discussion of solution patterns for various situations can be found in [Scaling CQ](/help/sites-deploying/scaling.md).-->
+Scaling a CQ installation correctly depends greatly on the details of your particular use case. A detailed discussion of solution patterns for various situations can be found in [Scaling CQ](/help/sites-deploying/scaling.md).
+-->
 
 ### Armazenamento de dados compartilhado {#shared-data-store}
 
@@ -301,12 +303,12 @@ As impressões de página são exibidas na coluna **Impressões** do console sit
 
 * Na instância de publicação:
 
-   * [Estatísticas de página WCM CQ do dia](/help/sites-deploying/osgi-configuration-settings.md)
+   * [Day CQ WCM Page Statistics](/help/sites-deploying/osgi-configuration-settings.md)
 
-* Na instância do autor:
+* On the author instance:
 
-   * [Rastreador de impressões de página do Adobe](/help/sites-deploying/osgi-configuration-settings.md)
+   * [Adobe Page Impressions Tracker](/help/sites-deploying/osgi-configuration-settings.md)
 
 >[!CAUTION]
 >
->A configuração do Rastreador de impressões de página do Adobe no ambiente de criação permite solicitações anônimas ao serviço de rastreamento.
+>The configuration of Adobe Page Impressions Tracker on the author environment allows anonymous requests to the tracking service.

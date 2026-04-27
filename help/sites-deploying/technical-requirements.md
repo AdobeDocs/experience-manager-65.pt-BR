@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: bafa8061d73a5c82ba012457fb1133d99341fcd9
+source-git-commit: f2c92b990a5c09cbcf532e0800e264620d98af77
 workflow-type: tm+mt
-source-wordcount: '3472'
+source-wordcount: '3736'
 ht-degree: 1%
 
 ---
@@ -30,51 +30,51 @@ Requisitos mínimos para a instalação do Adobe Experience Manager:
 * Plataforma Java™, JDK Standard Edition ou outras [Máquinas Virtuais Java™](#java-virtual-machines) com suporte
 * Arquivo Experience Manager Quickstart (JAR independente ou WAR de implantação de aplicativo da Web)
 
-### Requisitos mínimos de dimensionamento {#minimum-sizing-requirements}
+### Minimum Sizing Requirements {#minimum-sizing-requirements}
 
-Requisitos mínimos para executar o Adobe Experience Manager:
+Minimum requirements for running Adobe Experience Manager:
 
-* 5 GB de espaço livre no diretório de instalação
-* 2 GB de memória
+* 5 GB free disk space in the installation directory
+* 2 GB memory
 
 >[!NOTE]
 >
->* Os casos de uso de ativos digitais precisam de mais memória básica. Consulte [Implantando e Mantendo](/help/sites-deploying/deploy.md#default-local-install) para obter detalhes.
->* O [pacote complementar do AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md) requer 15 GB de espaço temporário.
+>* Digital asset use cases need more base memory. See [Deploying and Maintaining](/help/sites-deploying/deploy.md#default-local-install) for details.
+>* [AEM Forms add-on package](/help/forms/using/installing-configuring-aem-forms-osgi.md) requires 15 GB of temporary space.
 >
 
-Para obter mais informações, consulte as [Diretrizes de dimensionamento de hardware](/help/managing/hardware-sizing-guidelines.md).
+For further information, see the [Hardware Sizing Guidelines](/help/managing/hardware-sizing-guidelines.md).
 
-### Níveis de suporte {#support-levels}
+### Support Levels {#support-levels}
 
-Este documento lista as plataformas de cliente e servidor compatíveis com o Adobe Experience Manager. A Adobe fornece vários níveis de suporte, tanto para configurações recomendadas quanto para outras configurações.
+This document lists the supported client and server platforms for Adobe Experience Manager. Adobe provides several levels of support, both for recommended configurations and other configurations.
 
-### Configurações suportadas {#supported-configurations}
+### Supported Configurations {#supported-configurations}
 
-A Adobe recomenda essas configurações e fornece suporte total como parte do contrato padrão de manutenção de software.
+Adobe recommends these configurations and provides full support as part of the standard software maintenance agreement.
 
 <table>
  <tbody>
   <tr>
    <td>Nível de compatibilidade</td>
-   <td>Descrição<br /> </td>
+   <td>Description<br /> </td>
   </tr>
   <tr>
-   <td><strong>A: Suportado</strong></td>
-   <td>A Adobe oferece suporte e manutenção completos para essa configuração. Essa configuração é coberta pelo processo de controle de qualidade da Adobe.</td>
+   <td><strong>A: Supported</strong></td>
+   <td>Adobe provides full support and maintenance for this configuration. This configuration is covered by Adobe's quality assurance process.</td>
   </tr>
   <tr>
-   <td><strong>R: Suporte restrito</strong></td>
-   <td>Para garantir o sucesso do projeto do cliente, a Adobe fornece suporte total em um programa de suporte restrito, o que requer que condições específicas sejam atendidas. O suporte no nível R exige uma solicitação formal do cliente e a confirmação pela Adobe. Para obter mais informações, entre em contato com o Atendimento ao cliente da Adobe.</td>
+   <td><strong>R: Restricted Support</strong></td>
+   <td>To ensure customers project success, Adobe provides full support within a restricted support program, which requires that specific conditions are met. R-level support requires a formal customer request and confirmation by Adobe. For more information, contact Adobe Customer Care.</td>
   </tr>
  </tbody>
 </table>
 
-### Configurações não suportadas {#unsupported-configurations}
+### Unsupported Configurations {#unsupported-configurations}
 
 | Nível de compatibilidade | Descrição |
 |---|---|
-| **Z: sem suporte** | A configuração não é compatível. A Adobe não faz declarações sobre se a configuração funciona e não oferece suporte a ela. |
+| **Z: Not supported** | The configuration is not supported. Adobe does not make statements about whether the configuration works, and does not support it. |
 
 ## Plataformas compatíveis {#supported-platforms}
 
@@ -102,7 +102,7 @@ O Adobe Experience Manager opera com as seguintes versões das Máquinas Virtuai
 | Azul Zulu OpenJDK 8 - 64 bits | A: Suportado `[3]` | |
 
 1. A Oracle migrou para um modelo de &quot;Suporte a longo prazo&quot; (LTS, Long Term Support) para produtos Oracle Java™ SE. O Java™ 9, o Java™ 10 e o Java™ 12 são versões não LTS da Oracle (consulte o [roteiro de suporte do Oracle Java™ SE](https://www.oracle.com/technetwork/java/eol-135779.html)). Para implantar o AEM em um ambiente de produção, a Adobe fornece suporte somente para as versões LTS do Java™. O suporte e a distribuição do JDK do Oracle Java™ SE, incluindo todas as atualizações de manutenção de versões LTS, são suportados pela Adobe diretamente para todos os clientes da AEM que usam a tecnologia Oracle Java™ SE. Consulte a [Política de suporte do Java™ para Adobe Experience Manager](assets/Java_Policy_for_Adobe_Experience_Manager.pdf).
-   **Importante: o Oracle Java™ 17 e 21 é compatível com o [AEM 6.5 LTS](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65-lts/content/implementing/deploying/introduction/technical-requirements).**
+   **Importante: o Oracle Java™ 17 e 21 é compatível com o [AEM 6.5 LTS](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/implementing/deploying/introduction/technical-requirements).**
 
 1. O IBM® JRE só é suportado com o WebSphere® Application Server.
 
@@ -119,7 +119,7 @@ Existem várias opções para implantar o repositório do Adobe Experience Manag
 | **Sistema de arquivos com Datastore** `[1]` | Binários | A: Suportado |
 | Armazenar binários em arquivos TAR no sistema de arquivos `[1]` | Binários | Z: Não suportado para produção |
 | Amazon S3 | Binários | A: Suportado |
-| Armazenamento Microsoft® Azure Blob | Binários | A: Suportado |
+| Microsoft® Azure Blob Storage | Binários | A: Suportado |
 | MongoDB Enterprise 8.0 | Repositório | A: Suportado `[3, 4]` |
 | MongoDB Enterprise 7.0 | Repositório | A: Suportado `[3, 4]` |
 | MongoDB Enterprise 6.0 | Repositório | A: Suportado `[3, 4]` |
@@ -172,7 +172,8 @@ Existem várias opções para implantar o repositório do Adobe Experience Manag
 >
 >To run AEM 6.5 with a supported relational database, a separate support contract with a database vendor is required. Adobe Customer Care assists qualifying issues related to the usage of relational databases with AEM 6.5.
 >
->**Most relational databases are currently supported within Level-R on AEM 6.5, which comes with support criteria and a support program as stated in the Level-R description above.**-->
+>**Most relational databases are currently supported within Level-R on AEM 6.5, which comes with support criteria and a support program as stated in the Level-R description above.**
+-->
 
 ### Mecanismos de Servlet / Servidores de Aplicativos {#servlet-engines-application-servers}
 
@@ -204,17 +205,17 @@ O Adobe Experience Manager funciona com as seguintes plataformas de servidor par
 
 | **Plataforma** | **Nível de Suporte** |
 |---|---|
-| **Linux®, baseado na distribuição Red Hat®** | A: Suportado `[1]` `[3]` |
-| Linux®, baseado na distribuição Debian incl. Ubuntu | A: Suportado `[1]` `[2]` |
-| Linux®, baseado na distribuição SUSE® | A: Suportado `[1]` |
+| **Linux®, based on the Red Hat® distribution** | A: Supported `[1]` `[3]` |
+| Linux®, based on Debian distribution incl. Ubuntu | A: Supported `[1]` `[2]` |
+| Linux®, based on SUSE® distribution | A: Suportado `[1]` |
 | Microsoft® Windows Server 2022 | R: Suporte restrito |
-| Microsoft® Windows Server 2019 `[4]` (obsoleto) | R: Suporte restrito para novos contratos `[5]` |
+| Microsoft® Windows Server 2019 `[4]` (Deprecated) | R: Suporte restrito para novos contratos `[5]` |
 | Microsoft® Windows Server 2016 `[4]` | R: Suporte restrito para novos contratos `[5]` |
 | Microsoft® Windows Server 2012 R2 | Z: Não suportado |
 | Oracle Solaris™ 11 | Z: Não suportado |
 | IBM® AIX® 7.2 | Z: Não suportado |
 
-1. Kernel Linux® 2.6, 3. x, 4. x, 5. x, 6. x e 9. x inclui derivados da distribuição Red Hat®, incluindo Red Hat® Enterprise Linux®, Oracle Linux® e Amazon Linux®. Os recursos complementares da AEM Forms só são suportados no Red Hat® Enterprise Linux® 8 e no Red Hat® Enterprise Linux® 9.
+1. Linux® Kernel 2.6, 3. x, 4. x, 5. x, 6. x e 9. x inclui derivados da distribuição Red Hat®, incluindo Red Hat® Enterprise Linux®, Oracle Linux® e Amazon Linux®. Os recursos complementares da AEM Forms só são suportados no Red Hat® Enterprise Linux® 8 e no Red Hat® Enterprise Linux® 9.
 2. O AEM Forms é compatível com Ubuntu 20.04 e SUSE® Linux® Enterprise Server 15 SP6 (64 bits).
 3. Distribuição Linux® suportada pela Adobe Managed Services.
 
@@ -247,19 +248,19 @@ O Adobe Experience Manager funciona com as seguintes plataformas de servidor par
 
 ### Ambientes de computação virtual e em nuvem {#virtual-cloud-computing-environments}
 
-O Adobe Experience Manager é compatível com a execução em uma máquina virtual em ambientes de computação em nuvem. Esses ambientes incluem o Microsoft® Azure e o Amazon Web Services (AWS), executados em conformidade com os requisitos técnicos listados nesta página e de acordo com os termos de suporte padrão da Adobe.
+O Adobe Experience Manager é compatível com a execução em uma máquina virtual em ambientes de computação em nuvem. Esses ambientes incluem o Microsoft® Azure e o Amazon Web Services (AWS), operando em conformidade com os requisitos técnicos listados nesta página e de acordo com os termos de suporte padrão da Adobe.
 
 Para um ambiente nativo em nuvem, analise a oferta mais recente da linha de produtos da AEM: o Adobe Experience Manager as a Cloud Service. Consulte a [Documentação do Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=pt-BR) para obter mais detalhes.
 
-A Adobe também oferece o Adobe Managed Services para implantar o AEM no Azure ou AWS. O Adobe Managed Services fornece aos especialistas experiência e habilidades de implantação e operação do AEM nesses ambientes de computação em nuvem. Consulte [documentação adicional sobre o Adobe Managed Services](https://business.adobe.com/br/products/experience-manager/managed-services.html?aemClk=t).
+A Adobe também oferece o Adobe Managed Services para implantar o AEM no Azure ou AWS. O Adobe Managed Services fornece aos especialistas experiência e habilidades de implantação e operação do AEM nesses ambientes de computação em nuvem. Consulte [documentação adicional sobre o Adobe Managed Services](https://business.adobe.com/products/experience-manager/managed-services.html?aemClk=t).
 
-Em todos os outros casos de implantação do AEM no Azure ou no AWS, ou em qualquer outro ambiente de computação em nuvem, o suporte da Adobe está contido no ambiente de computação virtual. Esse ambiente virtual deve ser executado em conformidade com as especificações técnicas listadas nesta página. Qualquer problema relatado relacionado ao AEM em execução em qualquer um desses ambientes de nuvem deve ser reproduzível independentemente de qualquer serviço de nuvem específico do ambiente de computação em nuvem. Ou seja, a menos que o serviço em nuvem seja compatível como parte dos requisitos técnicos listados nesta página, por exemplo, armazenamento Azure Blob ou AWS S3.
+Em todos os outros casos de implantação do AEM no Azure ou no AWS, ou em qualquer outro ambiente de computação em nuvem, o suporte do Adobe está contido no ambiente de computação virtual. Esse ambiente virtual deve ser executado em conformidade com as especificações técnicas listadas nesta página. Qualquer problema relatado relacionado ao AEM em execução em qualquer um desses ambientes de nuvem deve ser reproduzível independentemente de qualquer serviço de nuvem específico do ambiente de computação em nuvem. Ou seja, a menos que o serviço em nuvem seja compatível como parte dos requisitos técnicos listados nesta página, por exemplo, armazenamento Azure Blob ou AWS S3.
 
-Para obter recomendações sobre como implantar o AEM no Azure ou no AWS, fora do Adobe Managed Services, a Adobe recomenda trabalhar diretamente com o provedor de nuvem. Ou trabalhar com parceiros da Adobe que oferecem suporte à implantação do AEM no ambiente de nuvem de sua escolha. O provedor ou parceiro de nuvem selecionado é responsável pelas especificações de dimensionamento, design e implementação da arquitetura, para atender aos seus requisitos específicos de desempenho, carga, escalabilidade e segurança.
+Para obter recomendações sobre como implantar o AEM no Azure ou AWS, fora do Adobe Managed Services, a Adobe recomenda trabalhar diretamente com o provedor de nuvem. Ou trabalhar com parceiros da Adobe que oferecem suporte à implantação do AEM no ambiente de nuvem de sua escolha. O provedor ou parceiro de nuvem selecionado é responsável pelas especificações de dimensionamento, design e implementação da arquitetura, para atender aos seus requisitos específicos de desempenho, carga, escalabilidade e segurança.
 
 ### Plataformas Dispatcher (servidores da Web) {#dispatcher-platforms-web-servers}
 
-O Dispatcher é o componente de balanceamento de carga e cache. [Baixe a versão mais recente do Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html?lang=pt-BR). O Experience Manager 6.5 exige a versão 4.3.2 ou superior do Dispatcher.
+O Dispatcher é o componente de balanceamento de carga e cache. [Baixe a versão mais recente do Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html). O Experience Manager 6.5 exige a versão 4.3.2 ou superior do Dispatcher.
 
 Os seguintes servidores da Web são compatíveis para uso com o Dispatcher versão 4.3.2:
 
@@ -469,7 +470,7 @@ Para Windows x86:
    <th><p><strong>Formatos compatíveis com a conversão para o PDF</strong></p> </th>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/br/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat Pro DC</a> versão mais recente</td>
+   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat Pro DC</a> versão mais recente</td>
    <td>XPS, formatos de imagem (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML e HTM</td>
   </tr>
 
@@ -531,6 +532,6 @@ O XMP write-back é compatível e habilitado para as seguintes plataformas e for
 
 ### Requisitos para a AEM Assets processar ativos com muitos metadados no Linux® {#assetsonlinux}
 
-O processo XMPFilesProcessor requer a biblioteca GLIBC_2.14 para funcionar. Use um kernel Linux® que contenha GLIBC_2.14, por exemplo, kernel Linux® versão 3.1.x. Ele melhora o desempenho do processamento de ativos que contêm uma grande quantidade de metadados, como arquivos PSD. O uso de uma versão anterior de GLIBC leva a erros em logs que começam com `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP`.
+The XMPFilesProcessor process requires the library GLIBC_2.14 to work. Use a Linux® kernel that contains GLIBC_2.14, for example, Linux® kernel version 3.1.x. It improves performance for processing assets that contain a large amount of metadata, like PSD files. Using a previous version of GLIBC leads to error in logs starting with `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP`.
 
-Para qualquer consulta relacionada a formatos ou versões de plataforma compatíveis, entre em contato com o [suporte da AEM Forms](https://business.adobe.com/in/support/main.html)
+For any query related to supported formats or platform versions, contact [AEM Forms support](https://business.adobe.com/in/support/main.html)

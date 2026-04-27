@@ -6,9 +6,10 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 6b86212a2b3a86b2205714c802dc1581d30e7441
+exl-id: 77fd3bc5-9a05-4442-af2b-238169d8061a
+source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '356'
+source-wordcount: '359'
 ht-degree: 0%
 
 ---
@@ -33,6 +34,3 @@ Muitos usuários com deficiências visuais dependem de alto contraste entre o te
 * Partes do formulário se tornam invisíveis, irreconhecíveis ou difíceis de usar?
 * Alguma área continua a aparecer em preto sobre um fundo branco?
 * Algum elemento está dimensionado ou truncado incorretamente?
-
-
-

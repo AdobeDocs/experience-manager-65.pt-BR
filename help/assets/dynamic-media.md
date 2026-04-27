@@ -9,22 +9,24 @@ role: User, Admin
 exl-id: f8a80b22-b1a6-475f-b3f1-b2f47822f21d
 feature: Collaboration,Asset Management
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: d6b9dde5201198cb073293b2b8527a458836ff0b
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '416'
+source-wordcount: '429'
 ht-degree: 8%
 
 ---
 
 # Trabalhar com o Dynamic Media {#working-with-dynamic-media}
 
-O [Dynamic Media](https://business.adobe.com/br/products/experience-manager/assets/dynamic-media.html) ajuda a fornecer ativos avançados de marketing e merchandising visual sob demanda, dimensionados automaticamente para consumo em sites da Web, móveis e sociais. Usando um conjunto de ativos de origem primária, o software gera e fornece várias variações de conteúdo avançado em tempo real por meio de sua rede global, dimensionável e com desempenho otimizado.
+[Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) ajuda a fornecer ativos avançados de merchandising e marketing visuais sob demanda, dimensionados automaticamente para consumo em sites da Web, móveis e sociais. Usando um conjunto de ativos de origem primária, o software gera e fornece várias variações de conteúdo avançado em tempo real por meio de sua rede global, dimensionável e com desempenho otimizado.
 
 O software proporciona experiências de visualização interativa, incluindo zoom, rotação de 360 graus e vídeo. Ele incorpora de maneira exclusiva os fluxos de trabalho da solução Adobe Experience Manager digital asset management (Assets) para simplificar e simplificar o processo de gerenciamento de campanhas digitais.
 
-<!-- >ARTICLE IS MISSING. GIVES 404 [!NOTE]
+<!--
+>ARTICLE IS MISSING. GIVES 404 [!NOTE]
 >
->A Community article is available on [Working with Adobe Experience Manager and Dynamic Media](https://helpx.adobe.com/experience-manager/using/aem_dynamic_media.html). -->
+>A Community article is available on [Working with Adobe Experience Manager and Dynamic Media](https://helpx.adobe.com/experience-manager/using/aem_dynamic_media.html).
+-->
 
 ## O que você pode fazer com o software {#what-you-can-do-with-dynamic-media}
 
@@ -49,9 +51,9 @@ Consulte também [Configurar Dynamic Media](administering-dynamic-media.md).
 
 >[!NOTE]
 >
->Para entender as diferenças entre usar o Dynamic Media e integrar o Dynamic Media Classic com o Adobe Experience Manager, consulte [integração do Dynamic Media Classic versus o Dynamic Media](/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media).
+>Para entender as diferenças entre o uso do Dynamic Media e a integração do Dynamic Media Classic com o Adobe Experience Manager, consulte [Integração do Dynamic Media Classic com o Dynamic Media](/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media).
 
-## Dynamic Media ativado versus Dynamic Media desativado {#dynamic-media-on-versus-dynamic-media-off}
+## Dynamic Media ativada ou Dynamic Media desativada {#dynamic-media-on-versus-dynamic-media-off}
 
 Você pode saber se o software está ativado pelas seguintes características:
 
@@ -59,7 +61,7 @@ Você pode saber se o software está ativado pelas seguintes características:
 * Conjuntos de imagens, conjuntos de rotação e conjuntos de mídia mista estão disponíveis.
 * As representações PTIFF são criadas.
 
-Ao selecionar um ativo de imagem, a exibição do ativo é diferente com o software [habilitado](config-dynamic.md#enabling-dynamic-media). Ele usa os visualizadores HTML5 sob demanda.
+Ao selecionar um ativo de imagem, a exibição do ativo é diferente com o software [habilitado](config-dynamic.md#enabling-dynamic-media). Ele usa visualizadores HTML5 sob demanda.
 
 ### Representações dinâmicas {#dynamic-renditions}
 

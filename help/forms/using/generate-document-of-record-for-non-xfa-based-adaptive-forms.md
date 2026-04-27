@@ -9,9 +9,9 @@ feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+source-git-commit: f2c92b990a5c09cbcf532e0800e264620d98af77
 workflow-type: tm+mt
-source-wordcount: '4307'
+source-wordcount: '4370'
 ht-degree: 2%
 
 ---
@@ -400,7 +400,7 @@ O documento de configurações de registro de um componente está disponível em
    * **[!UICONTROL Colocar]** > **[!UICONTROL Na página]** > Nome da página mestra: coloca o painel na página especificada. Se uma quebra de página não for inserida automaticamente, [!DNL AEM Forms] adicionará uma quebra de página.
    * **[!UICONTROL Inserir]** > **[!UICONTROL Início da Próxima Página]**: coloca o painel no topo da próxima página. Se uma quebra de página não for inserida automaticamente, [!DNL AEM Forms] adicionará uma quebra de página.
    * **[!UICONTROL Local]** > **[!UICONTROL Início da Página]** > Nome da página mestra: coloca o painel na parte superior da página quando a página especificada é renderizada. Se uma quebra de página não for inserida automaticamente, [!DNL AEM Forms] adicionará uma quebra de página.
-* **[!UICONTROL Paginação]** > **[!UICONTROL Depois]**: determina qual área deve ser preenchida depois que um painel é colocado. Os seguintes campos estão disponíveis na seção **[!UICONTROL Depois]**:
+* **[!UICONTROL Paginação]** > **[!UICONTROL Depois]**: determina qual área deve ser preenchida depois que um painel é colocado.Os seguintes campos estão disponíveis na seção **[!UICONTROL Após]**:
    * **[!UICONTROL Depois]** > **[!UICONTROL Continuar Preenchendo Pai]**: continua mesclando dados para todos os objetos restantes a serem preenchidos no painel pai.
    * **[!UICONTROL Depois]** > **[!UICONTROL Ir para a próxima área de conteúdo]**: começa a preencher a próxima área de conteúdo depois de posicionar o painel.
    * **[!UICONTROL Depois]** > **[!UICONTROL Ir para a área de conteúdo]** > Nome da área de conteúdo: começa a preencher a área de conteúdo especificada após posicionar o painel.
@@ -450,38 +450,38 @@ Para aplicar uma quebra de página a um documento de registro:
 1. Selecione **[!UICONTROL Início da Próxima página]** e selecione **[!UICONTROL Selecionar]**. Você também pode selecionar **[!UICONTROL Início da página]**, selecionar a página mestra e **[!UICONTROL Selecionar]** para aplicar a quebra de página.
 1. Selecione ![Salvar](/help/forms/using/assets/save_icon.png) para salvar as propriedades.
 
-O painel selecionado é movido para a próxima página.
+The selected panel moves to the next page.
 
-## Aplicar várias páginas-mestre a um documento de registro {#apply-multiple-master-pages-dor}
+## Apply multiple master pages to a Document of Record {#apply-multiple-master-pages-dor}
 
-Se o modelo XDP personalizado selecionado incluir várias páginas mestras, as propriedades dessas páginas aparecerão na seção [!UICONTROL conteúdo] da guia [!UICONTROL Documento de Registro]. Para obter mais informações, consulte [Personalizar as informações de marca no documento de registro](#customize-the-branding-information-in-document-of-record).
+Se o modelo XDP personalizado selecionado incluir várias páginas mestras, as propriedades dessas páginas aparecerão na seção [!UICONTROL conteúdo] da guia [!UICONTROL Documento de Registro]. For more information, see [Customize the branding information in document of record](#customize-the-branding-information-in-document-of-record).
 
-Você pode aplicar várias páginas-mestre a um documento de registro aplicando páginas-mestre diferentes aos componentes de um formulário adaptável. Use a seção [Paginação](#document-of-record-settings) do documento de propriedades de registro para aplicar várias páginas mestras.
+You can apply multiple master pages to a Document of Record by applying different master pages to the components of an adaptive form. Use the [Pagination](#document-of-record-settings) section of the Document of Record properties to apply multiple master pages.
 
-Este é um exemplo de como aplicar várias páginas-mestre a um documento de registro:
-Você carrega um modelo XDP que inclui quatro páginas mestras no servidor [!DNL AEM Forms]. [!DNL AEM Forms] aplica as propriedades do modelo ao Documento de Registro por padrão. [!DNL AEM Forms] também aplica as propriedades da primeira página mestra no modelo ao documento de registro.
+The following is an example of how to apply multiple master pages to a Document of Record:
+You upload an XDP template that includes four master pages to the [!DNL AEM Forms] server. [!DNL AEM Forms] applies the template properties to the Document of Record by default. [!DNL AEM Forms] also applies the first master page properties in the template to the Document of Record.
 
-Para aplicar as propriedades da segunda página-mestre a um painel e as propriedades da terceira página-mestre aos painéis seguintes, execute as seguintes etapas:
+To apply the second master page properties to a panel and the third master page properties to the panels that follow, execute the following steps:
 
-1. Selecione o painel para aplicar a segunda página mestra e selecione ![Configurar](assets/cmppr.png).
+1. Select the panel to apply the second master page and select ![Configure](assets/cmppr.png).
 1. Na seção **[!UICONTROL Paginação]**, selecione ![Pasta](/help/forms/using/assets/folder-icon.png) no campo **[!UICONTROL Local]**.
-1. Selecione **[!UICONTROL Na página]**, selecione a segunda página mestra e selecione **[!UICONTROL Selecionar]**.
-O AEM Forms aplica a segunda página-mestre ao painel e a todos os painéis subsequentes no formulário adaptável.
-1. Na seção **[!UICONTROL Paginação]**, selecione ![Pasta](/help/forms/using/assets/folder-icon.png) no campo **[!UICONTROL Depois]**.
-1. Selecione **[!UICONTROL Ir para página]**, selecione a terceira página mestra e selecione **[!UICONTROL Selecionar]**.
+1. Select **[!UICONTROL On page]**, select the second master page and select **[!UICONTROL Select]**.
+AEM Forms applies second master page to the panel and all subsequent panels in the adaptive form.
+1. In the **[!UICONTROL Pagination]** section, select ![Folder](/help/forms/using/assets/folder-icon.png) in the **[!UICONTROL After]** field.
+1. Select **[!UICONTROL Go To page]**, select the third master page and select **[!UICONTROL Select]**.
 1. Selecione ![Salvar](/help/forms/using/assets/save_icon.png) para salvar as propriedades.
-O AEM Forms aplica a terceira página-mestre ao painel e a todos os painéis subsequentes no formulário adaptável.
+AEM Forms applies third master page to the panel and all subsequent panels in the adaptive form.
 
 >[!NOTE]
 >
-> Não é possível aplicar várias páginas-mestre a um documento de registro para um fragmento de formulário adaptável.
+> You cannot apply multiple master pages to a Document of Record for an adaptive form Fragment.
 
-## Considerações principais ao trabalhar com documento de registro {#key-considerations-when-working-with-document-of-record}
+## Key considerations when working with document of record {#key-considerations-when-working-with-document-of-record}
 
-Lembre-se das seguintes considerações e limitações ao trabalhar em um documento de registro para formulários adaptáveis.
+Keep in mind the following considerations and limitations when working on document of record for adaptive forms.
 
-* Os modelos de documento de registro não dão suporte a rich text. Portanto, qualquer rich text no formulário adaptável estático ou nas informações preenchidas pelo usuário final aparece como texto simples no documento de registro.
-* Fragmentos de documento em um formulário adaptável não aparecem no documento de registro. No entanto, os fragmentos de formulário adaptáveis são compatíveis.
+* Document of record templates do not support rich text. Therefore, any rich text in the static adaptive form or in the information filled in by the end user appears as plain text in the document of record.
+* Document fragments in an adaptive form do not appear in the document of record. No entanto, os fragmentos de formulário adaptáveis são compatíveis.
 * Não há suporte para a associação de conteúdo no documento de registro gerado para o formulário adaptável baseado em esquema XML.
 * A versão localizada do documento de registro é criada sob demanda para um local quando o usuário solicita a renderização do documento de registro. A localização do documento de registro ocorre juntamente com a localização do formulário adaptável. Para obter mais informações sobre a localização do documento de registro e formulários adaptáveis, consulte [Usar o fluxo de trabalho de tradução do AEM para localizar formulários adaptáveis e documento de registro](/help/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.md).
 
@@ -533,6 +533,8 @@ Um arquivo XCI ajuda a definir várias propriedades de um documento. <!-- Forms 
 ### Usar um arquivo XCI personalizado no ambiente de desenvolvimento do Forms local
 
 1. Carregue o arquivo XCI no ambiente de desenvolvimento local.
-1. Abra o gerenciador de configurações <!--Cloud Service SDK-->. <!--The default URL is: <http://localhost:4502/system/console/configMgr>.-->
+1. Abra o gerenciador de configurações.
+   <!--Cloud Service SDK-->
+   <!--The default URL is: <http://localhost:4502/system/console/configMgr>.-->
 1. Localize e abra a configuração **[!UICONTROL Forms adaptável e Canal da Web de comunicação interativa]**.
 1. Especifique o caminho do arquivo XCI e clique em **[!UICONTROL Salvar]**.

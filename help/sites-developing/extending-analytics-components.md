@@ -9,9 +9,9 @@ exl-id: e6c1258c-81d5-48e4-bdf1-90d7cc13a22d
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Developer
-source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '1244'
+source-wordcount: '1277'
 ht-degree: 0%
 
 ---
@@ -20,9 +20,9 @@ ht-degree: 0%
 
 ## Inclusão do módulo Adobe Analytics em um componente de Página {#including-the-adobe-analytics-module-in-a-page-component}
 
-Os componentes do modelo de página (por exemplo, `head.jsp, body.jsp`) precisam de inclusões JSP para carregar o ContextHub e a integração do Adobe Analytics (que faz parte do Cloud Service). Tudo inclui carregar arquivos JavaScript.
+Os componentes do modelo de página (por exemplo, `head.jsp, body.jsp`) precisam de inclusões JSP para carregar o ContextHub e a integração do Adobe Analytics (que faz parte do Cloud Services). Tudo inclui carregar arquivos JavaScript.
 
-A entrada do ContextHub deve ser incluída imediatamente abaixo da tag `<head>`, enquanto Cloud Service deve ser incluído na seção `<head>` e antes da seção `</body>`; por exemplo:
+A entrada do ContextHub deve ser incluída imediatamente abaixo da tag `<head>`, enquanto os Serviços em Nuvem devem ser incluídos na seção `<head>` e antes da seção `</body>`; por exemplo:
 
 ```xml
 <head>
@@ -39,7 +39,7 @@ A entrada do ContextHub deve ser incluída imediatamente abaixo da tag `<head>`,
 
 O script `contexthub` que você insere após o elemento `<head>` adiciona os recursos do ContextHub à página.
 
-Os scripts `cloudservices` que você adiciona nas seções `<head>` e `<body>` se aplicam às configurações de serviços em nuvem adicionadas à página. (Se a página usar mais de uma configuração Cloud Service, você deverá incluir a jsp do ContextHub e a jsp Cloud Service apenas uma vez.)
+Os scripts `cloudservices` que você adiciona nas seções `<head>` e `<body>` se aplicam às configurações de serviços em nuvem adicionadas à página. (Se a página usar mais de uma configuração do Cloud Services, você deverá incluir a jsp do ContextHub e a jsp do Cloud Services apenas uma vez.)
 
 Quando uma estrutura Adobe Analytics é adicionada à página, os scripts `cloudservices` geram JavaScript relacionada ao Adobe Analytics e referências a bibliotecas do lado do cliente, semelhantes ao seguinte exemplo:
 
@@ -84,12 +84,14 @@ CQ_Analytics.CCM.addListener("storesinitialize", function(e) {
      $CQ(document).trigger("sitecatalystAfterCollect");
     }
 });
-//-->
+//
+-->
 </script>
 <script type="text/javascript">
 <!--
 if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
-//-->
+//
+-->
 </script>
 <noscript><img src="https://daydocumentation.112.2o7.net/b/ss/daydocumentation/1/H.25--NS/1380120772954?cdp=3&gn=content%3Ageometrixx-outdoors%3Aen" height="1" width="1" border="0" alt=""/></noscript>
 <span data-tracking="{event:'pageView', values:{}, componentPath:'foundation/components/page'}"></span>
@@ -109,7 +111,7 @@ $CQ(function(){
 </div>
 ```
 
-Todos os sites de amostra de AEM, como Geometrixx Outdoors, têm esse código incluído.
+Todos os sites de amostra do AEM, como o Geometrixx Outdoors, têm esse código incluído.
 
 ### O evento sitecatalystAfterCollect {#the-sitecatalystaftercollect-event}
 
@@ -135,8 +137,8 @@ Os componentes podem interagir com a estrutura do Adobe Analytics quando o compo
 
 * `cq:trackevents`: identifica os eventos CQ que o componente expõe. (Consulte Eventos personalizados.)
 * `cq:trackvars`: nomeia as variáveis do CQ mapeadas com propriedades do Adobe Analytics.
-* `cq:componentName`: O nome do componente que aparece no Sidekick.
-* `cq:componentGroup`: O grupo em Sidekick que inclui o componente.
+* `cq:componentName`: o nome do componente que aparece no Sidekick.
+* `cq:componentGroup`: o grupo no Sidekick que inclui o componente.
 
 O código no componente JSP adiciona o JavaScript à página que aciona o rastreamento e define os dados que são rastreados. O nome do evento e os nomes de dados usados no JavaScript devem corresponder aos valores correspondentes das propriedades do nó `analytics`.
 
@@ -189,7 +191,7 @@ Configure o componente de navegação superior e edite o arquivo JSP para defini
    * Tipo: String
    * Value: topnav (tracking)
 
-1. Adicione a seguinte propriedade ao nó do Analytics para nomear o grupo de componentes para o Sidekick:
+1. Adicione a seguinte propriedade ao nó analytics para nomear o grupo de componentes para o Sidekick:
 
    * Nome: cq:componentGroup
    * Tipo: String
@@ -292,7 +294,7 @@ O conteúdo do arquivo `topnav.jsp` deve aparecer da seguinte maneira:
 
 #### Adição do componente de rastreamento ao Sidekick {#adding-the-tracking-component-to-sidekick}
 
-Adicione componentes habilitados para rastreamento com o Adobe Analytics ao Sidekick para poder adicioná-los à estrutura.
+Adicione componentes habilitados para rastreamento com o Adobe Analytics ao Sidekick para que você possa adicioná-los à sua estrutura.
 
 1. Abra a estrutura do Adobe Analytics na configuração do Adobe Analytics. ([http://localhost:4502/etc/cloudservices/sitecatalyst.html](http://localhost:4502/etc/cloudservices/sitecatalyst.html))
 1. No Sidekick, clique no botão Design.
@@ -327,7 +329,7 @@ A variável s.products do Adobe Analytics usa a seguinte sintaxe:
 s.products="category;product;quantity;price;eventY={value}|eventZ={value};evarA={value}|evarB={value}"
 ```
 
-O módulo de integração do Adobe Analytics constrói a variável `s.products` usando os valores `product` gerados pelos componentes AEM. O valor `product` no JavaScript gerado pelos componentes AEM é uma matriz de valores que tem a seguinte estrutura:
+O módulo de integração do Adobe Analytics constrói a variável `s.products` usando os valores `product` gerados pelos componentes do AEM. O valor `product` no JavaScript gerado pelos componentes AEM é uma matriz de valores que tem a seguinte estrutura:
 
 ```
 "product": [{
@@ -354,9 +356,9 @@ Quando um item de dados é omitido do valor `product`, ele é enviado como uma c
 
 O nó `analytics` do componente deve expor os nomes de variáveis usando a propriedade `cq:trackvars`:
 
-* product.category
+* categoria.produto
 * product.sku
-* product.quantity
+* quantidade.produto
 * product.price
 * product.events.eventName1
 * product.events.eventName_n
@@ -439,6 +441,6 @@ O módulo de comércio eletrônico fornece vários componentes que geram dados v
 
 #### Limitar o tamanho das chamadas de rastreamento {#limiting-the-size-of-tracking-calls}
 
-Geralmente, os navegadores da Web limitam o tamanho de solicitações do GET. Como os valores de produto CQ e SKU são caminhos de repositório, os arrays de produtos que incluem vários valores podem exceder o limite de tamanho da solicitação. Portanto, seus componentes devem limitar o número de itens na matriz `product` de cada `CQ_Analytics.record function`. Crie várias funções se o número de itens que você deve rastrear puder exceder o limite.
+Geralmente, os navegadores da Web limitam o tamanho das solicitações do GET. Como os valores de produto CQ e SKU são caminhos de repositório, os arrays de produtos que incluem vários valores podem exceder o limite de tamanho da solicitação. Portanto, seus componentes devem limitar o número de itens na matriz `product` de cada `CQ_Analytics.record function`. Crie várias funções se o número de itens que você deve rastrear puder exceder o limite.
 
 Por exemplo, o componente `submitorder` de comércio eletrônico limita o número de `product` itens em uma chamada a quatro. Quando o carrinho contém mais de quatro produtos, ele gera várias funções do `CQ_Analytics.record`.

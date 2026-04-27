@@ -1,6 +1,6 @@
 ---
-title: Temas de referência
-description: O AEM Forms fornece temas de formulários adaptáveis que você pode obter da Distribuição de software e usar para criar um estilo de formulário.
+title: Reference Themes
+description: AEM Forms provides adaptive forms themes that you can get from Software Distribution and use to style a form.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 docset: aem65
@@ -8,43 +8,45 @@ exl-id: f6c24894-c322-4c44-b001-8978954d6e53
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '548'
 ht-degree: 0%
 
 ---
 
-# Temas de referência{#reference-themes}
+# Reference Themes{#reference-themes}
 
-[Os temas](../../forms/using/themes.md) permitem estilizar os formulários sem um conhecimento profundo de CSS. Além do tema padrão, você pode obter os seguintes temas instalando o [pacote complementar do AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=pt-BR):
+[Themes](../../forms/using/themes.md) let you style your forms without deep knowledge of CSS. In addition to the default theme, you can get the following themes by installing the [AEM Forms add-on package](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en):
 
-* Berilo
+* Beryl
 * Exec
 * Exec-Light
 * Liberty
-* Ultramarina
-* Urbana
-* Padrões de design da Web nos EUA
-* Tranquilo
+* Ultramarine
+* Urbane
+* U.S. Web Design Standards
+* Tranquil
 
-Cada tema contém um estilo único e elegante que você pode usar para criar formulários adaptáveis deliciosos para seus usuários. Ele contém um estilo exclusivo para seletores, como painel, caixa de texto, caixa numérica, botão de opção, tabela e switch. Os estilos nesses temas são baseados na exigência. Por exemplo, em um cenário específico, você precisa de um tema minimalista com fontes limpas. O tema da liberdade permite que você realize esse olhar.
+Each theme contains a unique and elegant style that you can use to create delightful adaptive forms for your users. It contains unique styling for selectors such as panel, text box, numeric box, radio button, table, and switch. Stylings in these themes are based on requirement. For example, in a particular scenario you require a minimalist theme with clean fonts. Liberty theme lets you achieve that look.
 
-![Temas de Referência](assets/ref-themes.png)
+![Reference Themes](assets/ref-themes.png)
 
-Os temas incluídos neste pacote são responsivos e o estilo nesses temas são definidos para exibições móveis e em desktop. A maioria dos navegadores modernos em uma variedade de dispositivos pode renderizar formulários aplicados com um desses temas sem qualquer problema.
+Themes included in this package are responsive, and styling in these themes are defined for mobile and desktop displays. Most modern browsers on a variety of devices can render forms applied with one of these themes without any hassle.
 
-Para obter mais informações sobre como instalar o pacote, consulte [Como trabalhar com pacotes](/help/sites-administering/package-manager.md).
+For more information on installing the package, see [How to Work With Packages](/help/sites-administering/package-manager.md).
 
-## Berilo {#beryl}
+## Beryl {#beryl}
 
-O tema Beryl é usado pela forma adaptativa We.Gov e enfatiza o uso da imagem de fundo, transparência e ícones grandes e planos. Na captura de tela abaixo, você pode ver como o tema Beryl aparece e como ele pode melhorar o estilo do seu formulário.
+Beryl theme is used by We.Gov adaptive form, and emphasizes use of background image, transparency, and large, flat icons. Na captura de tela abaixo, você pode ver como o tema Beryl aparece e como ele pode melhorar o estilo do seu formulário.
 
 ![Tema berilo](assets/beryl.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/beryl-1.png)-->
+](assets/beryl-1.png)
+-->
 
 ## Exec {#exec}
 
@@ -52,9 +54,11 @@ O tema de execução evita preenchimentos de plano de fundo sólidos para enfati
 
 ![Tema Exec](assets/exec.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/exec-1.png)-->
+](assets/exec-1.png)
+-->
 
 ## Luz de execução {#exec-light}
 
@@ -62,9 +66,11 @@ O tema Exec Light usa espaço em branco para criar uma experiência contínua. O
 
 ![Tema claro do Exec](assets/exec-light.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/exec-light-1.png)-->
+](assets/exec-light-1.png)
+-->
 
 ## Liberty {#liberty}
 
@@ -72,9 +78,11 @@ O tema Liberdade usa uma abordagem minimalista para destacar o importante. Por e
 
 ![Tema da liberdade](assets/liberty.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/liberty-1.png)-->
+](assets/liberty-1.png)
+-->
 
 ## Tranquilo {#tranquil}
 
@@ -82,9 +90,11 @@ O tema Tranquil fornece tons claros e escuros do esquema de cores Tranquil para 
 
 ![Tema simples](assets/tranquil.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/tranquil-1.png)-->
+](assets/tranquil-1.png)
+-->
 
 ## Ultramarina {#ultramarine}
 
@@ -100,9 +110,11 @@ O tema Urbane enfatiza uma aparência minimalista e funcional para o seu formul�
 
 ![Tema urbano](assets/urbane.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/urbane-1.png)-->
+](assets/urbane-1.png)
+-->
 
 ## Padrões de design da Web nos EUA {#u-s-web-design-standards}
 
@@ -110,6 +122,8 @@ O tema de padrões de design da Web dos EUA, como o nome sugere, usa faces de te
 
 ![EUA Tema de Padrões de Design da Web](assets/us-web-standards.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/usgov.png)-->
+](assets/usgov.png)
+-->

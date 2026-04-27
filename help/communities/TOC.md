@@ -8,9 +8,9 @@ user-guide-description: Crie experiências online, como fóruns, grupos de usuá
 feature: Communities
 role: User
 hide: true
-source-git-commit: e0db340b4fd4e4f7fe7ed623fb2ee9f1b789e39e
+source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '423'
+source-wordcount: '427'
 ht-degree: 11%
 
 ---
@@ -44,7 +44,7 @@ ht-degree: 11%
    + [Pontuação e medalhas das comunidades](implementing-scoring.md)
    + [Gerenciar usuários e grupos de usuários](users.md)
    + [Console de grupos da comunidade](groups.md)
-   + [Logon social com o Facebook e o Twitter](social-login.md)
+   + [Logon social com Facebook e Twitter](social-login.md)
    + [SRP - Armazenamento de conteúdo da comunidade](working-with-srp.md)
    + [Console de sites das comunidades](sites-console.md)
    + [Consoles de gerenciamento de membros e grupos](members.md)
@@ -59,7 +59,7 @@ ht-degree: 11%
    + [FFmpeg para comunidades](ffmpeg.md)
    + [Moderação do contexto interno](in-context.md)
    + [Pontuação avançada e medalhas](advanced.md)
-   + [ASRP - Provedor de recurso de armazenamento de Adobe](asrp.md)
+   + [ASRP - Provedor de recurso de armazenamento da Adobe](asrp.md)
    + [MSRP - Provedor de Recurso de Armazenamento MongoDB](msrp.md)
    + [Como configurar o MongoDB para demonstração](demo-mongo.md)
    + [DSRP - Provedor de Recurso de Armazenamento de Banco de Dados Relacional](dsrp.md)
@@ -70,7 +70,7 @@ ht-degree: 11%
    + [Tradução de conteúdo gerado pelo usuário](translate-ugc.md)
    + [Sincronização de usuários das comunidades](sync.md)
    + [Limites de contribuição do membro](limits.md)
-+ Desenvolvimento {#develop}
++ Desenvolver {#develop}
    + [Comunidades de desenvolvimento](communities.md)
    + [Estrutura do componente social](scf.md)
    + [Guia de componentes da comunidade](components-guide.md)

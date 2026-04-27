@@ -8,10 +8,10 @@ hidefromtoc: true
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '562'
-ht-degree: 17%
+source-wordcount: '593'
+ht-degree: 19%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 17%
 
 >[!NOTE]
 >
->[Contate o Suporte](https://experienceleague.adobe.com/pt-br?support-solution=General&support-tab=home#support) para obter mais informações ou obter o patch.
+>[Contate o Suporte](https://experienceleague.adobe.com/?support-solution=General&support-tab=home#support) para obter mais informações ou obter o patch.
 
 ## Sobre o instalador de patch {#about-the-patch-installer}
 
@@ -36,7 +36,7 @@ O instalador de patch do AEM 6.5 Forms JEE inclui todos os problemas corrigidos 
 1. Extraia o arquivo do instalador de correção para o disco rígido.
 1. No diretório nomeado de acordo com o seu sistema operacional:
 
-   * **Janelas**
+   * **Windows**
 Navegue até o diretório apropriado na mídia ou pasta de instalação no disco rígido em que o instalador foi copiado e clique duas vezes no arquivo aemforms65_cfp_install.exe.
 
       * (Windows de 32 bits) `Windows\Disk1\InstData\VM`
@@ -71,8 +71,8 @@ Navegue até o diretório apropriado e, em um prompt de comando, digite `./aem65
 
 1. Dependendo do servidor de aplicativos, escolha um dos seguintes documentos e siga as instruções na seção *Configuração e implantação do AEM Forms*.
 
-   * [Instalando e implantando formulários AEM para JBoss®](https://www.adobe.com/go/learn_aemforms_installJBoss_65_br)
-   * [Instalando e implantando formulários AEM para WebSphere®](https://www.adobe.com/go/learn_aemforms_installWebSphere_65_br)
+   * [Instalação e implantação do AEM Forms para JBoss®](https://www.adobe.com/go/learn_aemforms_installJBoss_65)
+   * [Instalação e implantação do AEM Forms para WebSphere®](https://www.adobe.com/go/learn_aemforms_installWebSphere_65)
 
 1. (Somente JBoss®) Após instalar o patch e configurar o servidor, exclua tmp e diretórios de trabalho do servidor de aplicativos JBoss®.
 
@@ -97,4 +97,4 @@ Se você tiver a autenticação SAML configurada e estiver enfrentando problemas
 * Segurança de documentos
 * Foundation JEE
 
-[Contate o Suporte](https://experienceleague.adobe.com/pt-br?support-solution=General&support-tab=home#support)
+[Entrar em contato com o suporte](https://experienceleague.adobe.com/?support-solution=General&support-tab=home#support)

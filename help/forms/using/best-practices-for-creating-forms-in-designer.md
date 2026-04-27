@@ -7,9 +7,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: 3a9d7943-2c34-4e0a-9803-7ce1ef40f676
-source-git-commit: 712693e4be9b8f357e4fc27ecc30a39a9850680c
+source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '11685'
+source-wordcount: '11719'
 ht-degree: 0%
 
 ---
@@ -64,39 +64,39 @@ Pontos de verificação relacionados
 * WCAG 2.0
    * 2.2.2 Pausar, Interromper, Ocultar: para mover, piscar, rolar ou atualizar automaticamente as informações, todos os itens a seguir são verdadeiros: (Nível A)
    * 2.3.1 Três flashes ou Abaixo do limite: as páginas da Web não contêm nada que pisque mais de três vezes em um período de um segundo, ou o flash está abaixo dos limites gerais de flash e flash vermelho. (Nível A)
-   * 2.3.2 Três flashes: as páginas da Web não contêm nada que pisque mais de três vezes em um período de um segundo. (Nível AAA)
+   * 2.3.2 Três flashes: as páginas da Web não contêm nada que pisque mais de três vezes em um período de um segundo. (Level AAA)
 
 
 ## Configurar propriedades do formulário para gerar informações de acessibilidade {#configure-form-properties}
 
-Para que um formulário seja acessível, ele deve ser [perceptível](https://www.w3.org/TR/WCAG20/#perceivable) pela tecnologia assistiva. Por exemplo, a maioria dos leitores de tela não considera o layout visual do formulário, mas a estrutura subjacente.
+For a form to be accessible, it must be [perceivable](https://www.w3.org/TR/WCAG20/#perceivable) by assistive technology. For example, most screen readers will not consider the visual layout of your form, but rather the underlying structure.
 
-Para implementar essa estrutura subjacente usando o LiveCycle Designer, você deve criar um formulário do PDF com informações de acessibilidade (às vezes chamadas de tags) incluídas, para que o leitor de tela ou outra tecnologia de assistência possa ler o texto e os componentes do formulário. Em um formulário com informações de acessibilidade, cada elemento contém informações sobre sua própria estrutura, além de informações sobre como ele está relacionado ou depende de outros elementos. Somente em arquivos PDF com informações de acessibilidade incluídas os leitores de tela podem identificar e descrever o conteúdo de um documento com precisão.
+To implement this underlying structure using LiveCycle Designer, you must create a PDF form with accessibility information (sometimes referred to as tags) included so that the screen reader or other assistive technology can read the form&#39;s text and components. In a form with accessibility information, each element contains information about its own structure, plus information about how it is related to or dependent on other elements. Only in PDF files with accessibility information included can screen readers identify and describe the content of a document accurately.
 
-Para criar um formulário acessível, você deve configurar as propriedades do formulário para que o LiveCycle Designer gere informações de acessibilidade ao salvar o design do formulário como um arquivo do PDF:
-1. Escolha Arquivo > Propriedades do formulário.
-1. Clique na guia Salvar opções e, na área PDF, verifique se a opção Gerar informações de acessibilidade (tags) para o Acrobat está selecionada.
-1. Clique em OK.
+To create an accessible form, you must configure form properties to have LiveCycle Designer generate accessibility information when saving the form design as a PDF file:
+1. Choose File > Form Properties.
+1. Click the Save Options tab and, in the PDF area, ensure that Generate Accessibility Information (Tags) For Acrobat is selected.
+1. Click OK.
 
-No LiveCycle Designer, essa opção é selecionada por padrão.
+In LiveCycle Designer, this option is selected by default.
 
 >[!NOTE]
-> Essas opções só se aplicam ao salvar o design do formulário como um arquivo PDF. Eles não se aplicam a arquivos PDF criados com o LiveCycle Forms, que tem opções de configuração independentes dessa opção no LiveCycle Designer.
+> These options only apply when saving the form design as a PDF file. They do not apply to PDF files created with LiveCycle Forms which has configuration options that are independent of this option in LiveCycle Designer.
 
-**Pontos de verificação relacionados**
+**Related checkpoints**
 
-* Seção 508 §1194.21
-   * d) As tecnologias de assistência devem dispor de informações suficientes sobre um elemento da interface do utilizador, incluindo a identidade, o funcionamento e o estado do elemento. Quando uma imagem representa um elemento de programa, as informações transmitidas pela imagem também devem estar disponíveis no texto.
-   * l) Quando forem utilizados formulários eletrônicos, o formulário deve permitir que as pessoas que utilizam a tecnologia assistiva tenham acesso às informações, aos elementos de campo e à funcionalidade necessários para o preenchimento e envio do formulário, incluindo todas as direções e indicações.
-* Seção 508 §1194.22
-   * n) Quando os formulários eletrônicos são concebidos para serem preenchidos em linha, o formulário deve permitir que as pessoas que utilizam a tecnologia de assistência acedam às informações, aos elementos de campo e à funcionalidade necessários para o preenchimento e envio do formulário, incluindo todas as direções e indicações.
+* Section 508 §1194.21
+   * (d) Sufficient information about a user interface element including the identity, operation and state of the element shall be available to assistive technology. Quando uma imagem representa um elemento de programa, as informações transmitidas pela imagem também devem estar disponíveis no texto.
+   * (l) When electronic forms are used, the form shall allow people using assistive technology to access the information, field elements, and functionality required for completion and submission of the form, including all directions and cues.
+* Section 508 §1194.22
+   * (n) When electronic forms are designed to be completed on-line, the form shall allow people using assistive technology to access the information, field elements, and functionality required for completion and submission of the form, including all directions and cues.
 
 
 ## Escolha os controles certos {#choose-right-controls}
 
-Ao criar seus formulários, use objetos de desenvolvimento nas guias disponíveis na Biblioteca de objetos do LiveCycle Designer. Para exibir esse painel, escolha Janela > Biblioteca de objetos ou pressione Shift+F12 (veja a Figura 1).
+When you design your forms, use development objects from the tabs available in LiveCycle Designer&#39;s Object Library. You can display this panel by choosing Window > Object Library or by pressing Shift+F12 (see Figure 1).
 
-![Painel da Biblioteca de Objetos](/help/forms/using/assets/image-1.png)
+![Object Library Panel](/help/forms/using/assets/image-1.png)
 
 Figura 1: **Painel da biblioteca de objetos**
 
@@ -163,29 +163,29 @@ Para usar a paleta Acessibilidade, siga estas etapas:
 
 ![A paleta de Acessibilidade](/help/forms/using/assets/image-3.png)
 
-Figura 3: **Paleta de acessibilidade**
+Figure 3: **The Accessibility palette**
 
-Quando o formulário é salvo como um PDF, o LiveCycle Designer pesquisa o formulário por Texto personalizado, Dica de ferramenta, Legenda e Propriedades de nome, nessa ordem, para encontrar o texto a ser lido por leitores de tela. Você pode substituir essa ordem padrão usando a opção Precedência de Reader da tela na paleta Acessibilidade:
+When the form is saved as a PDF, LiveCycle Designer searches the form for Custom Text, Tool Tip, Caption, and Name properties, in that order, to find text to be read by screen readers. You can override this default order by using the Screen Reader Precedence option in the Accessibility palette:
 
-1. Selecione o objeto no design do formulário.
-1. Clique na paleta Acessibilidade.
-1. Selecione qualquer opção de Precedência de Screen Reader diferente de Nenhum.
+1. Select the object on the form design.
+1. Click the Accessibility palette.
+1. Select any Screen Reader Precedence option other than None.
 
 As opções disponíveis são as seguintes:
 
-* **Texto personalizado**, que você definiu no campo Texto Reader de tela personalizada da paleta de acessibilidade. Essa opção permite especificar qualquer texto que você deseja que a tecnologia assistiva, como leitores de tela, use. O uso da configuração de Legenda é melhor para a maioria das situações. Criar texto Reader de tela personalizada deve ser considerado uma opção somente quando a Legenda ou uma dica de ferramenta não forem possíveis.
-* **Dica de Ferramenta**, que você definiu no campo Dica de Ferramenta da paleta Acessibilidade. Para a maioria dos objetos, as dicas de ferramentas aparecem em tempo de execução quando o usuário passa o ponteiro do mouse sobre o objeto. As dicas de ferramentas são exibidas para alguns objetos somente leitura, como o objeto de código de barras de um formulário de papel, somente quando um leitor de tela está em uso.
-* **Legenda**, que fará com que o LiveCycle Designer use o rótulo associado (visual) do campo de formulário como texto de leitor de tela.
-* **Nome**, que você definiu no campo Nome da guia Associação. Observe que esse nome não pode conter espaços.
-* **Nenhum**, o que fará com que o objeto não tenha um nome. Isso nunca é recomendado para controles de formulário.
+* **Custom Text**, which you set in the Accessibility palette&#39;s Custom Screen Reader Text field. This option lets you specify any text you want assistive technology, such as screen readers, to use. Using the Caption setting is best for most situations – creating Custom Screen Reader Text should be considered an option only when using the Caption or a toolTip is not possible.
+* **Tool Tip**, which you set in the Accessibility palette&#39;s Tool Tip field. For most objects, tool tips appear at run time when the user hovers the pointer over the object. Tool tips appear for some read-only objects, such as a paper form&#39;s barcode object, only when a screen reader is in use.
+* **Caption**, which will cause LiveCycle Designer to use the form field&#39;s associated (visual) label as screen reader text.
+* **Name**, which you set in the Binding tab&#39;s Name field. Note that this name cannot contain any spaces.
+* **None**, which will cause the object to not have a name. This is never recommended for form controls.
 
-Considere o seguinte ao usar a paleta Acessibilidade para rotulagem de controle de formulário:
+Consider the following when using the Accessibility palette for form control labeling:
 
-* Se a legenda do controle de formulário descrever o controle corretamente, ele poderá ser acessado por leitores de tela. Nesse caso, deixe os campos Texto personalizado e Dica de ferramenta vazios na paleta Acessibilidade ou altere a Precedência de Reader de tela para Legenda.
-* Ao direcionar leitores de tela, não adianta especificar descrições de texto diferentes para o mesmo controle de formulário, pois somente uma será usada: o primeiro campo não vazio na ordem de Precedência de Reader de tela. Por exemplo, não há motivo para especificar Texto personalizado e Texto de dica de ferramenta para um leitor de tela.
-* Por padrão, o leitor de tela lê a legenda se nada for especificado na caixa Dica de ferramenta ou Texto de Reader de tela personalizado.
-* Não use a paleta Acessibilidade para criar descrições de campos ou áreas invisíveis.
-* Se você precisar criar uma descrição usando as opções de Dica de ferramenta ou Texto de Reader da tela personalizada, sempre inclua a legenda que está visível no formulário, exceto quando a legenda visível não for significativa, por exemplo, quando a própria legenda estiver abreviada. Isso ajuda os usuários de leitores de tela a se comunicarem de maneira eficaz com outros usuários sobre os elementos da interface do usuário. Esses diferentes grupos de usuários têm dificuldade em identificar o mesmo elemento da interface do usuário se o texto da legenda for diferente da Dica de ferramenta ou do Texto Reader da tela personalizada.
+* If your form control&#39;s caption properly describes the control, then it is accessible for screen readers. In this case, either leave both Custom Text and Tool Tip fields empty in the Accessibility palette, or change the Screen Reader Precedence to Caption.
+* When targeting screen readers, there is no point in specifying different text descriptions for the same form control, as only one will be used: The first non-empty field in the Screen Reader Precedence order. For example, there is no reason to specify both Custom Text and Tool Tip text for a screen reader.
+* By default, the screen reader reads the caption if nothing is specified in the Tool Tip box or the Custom Screen Reader Text box.
+* Do not use the Accessibility palette to create descriptions for any invisible fields or areas.
+* If you have to create a description using the Tool Tip or Custom Screen Reader Text options, always include the caption that is visible on the form, except when the visible caption is not meaningful, for example when the caption itself is abbreviated. Isso ajuda os usuários de leitores de tela a se comunicarem de maneira eficaz com outros usuários sobre os elementos da interface do usuário. Esses diferentes grupos de usuários têm dificuldade em identificar o mesmo elemento da interface do usuário se o texto da legenda for diferente da Dica de ferramenta ou do Texto Reader da tela personalizada.
 * Para caixas de seleção e controles de lista suspensa em células de tabela, o leitor de tela anunciará qualquer legenda, dica de ferramenta ou texto personalizado de leitor de tela especificado para o objeto. Se quiser usar o cabeçalho da coluna como o texto alternativo para esses objetos quando colocados em uma tabela, não forneça uma legenda, dica de ferramenta ou texto de leitor de tela personalizado.
 * Se o controle exigir instruções adicionais, verifique se elas também estão incluídas na alternativa em texto. Inclua informações faladas suficientes para que os usuários saibam qual entrada é esperada e como preencher o campo corretamente, mas não sobrecarregue os usuários com informações redundantes.
 * Não forneça informações desnecessárias descrevendo como operar controles - deixe as tecnologias de assistência do usuário lidarem com isso para o usuário. Os usuários podem configurar a verbosidade para se adequar aos seus níveis de conforto.
@@ -598,7 +598,7 @@ Os campos inteligentes podem ser uma maneira eficaz de facilitar o preenchimento
 
 Você pode usar a paleta Acessibilidade para atribuir funções a objetos com base na utilização do objeto. Essas funções podem ser aplicadas para criar cabeçalhos em diferentes níveis.
 
-![Especificando uma função de cabeçalho na paleta de Acessibilidade](/help/forms/using/assets/image-15.png)
+![Especificação de uma função de cabeçalho na paleta de Acessibilidade](/help/forms/using/assets/image-15.png)
 Figura 15: **Especificando uma função de cabeçalho na paleta de Acessibilidade**
 
 Siga estas etapas para criar um cabeçalho no formulário:
@@ -624,30 +624,30 @@ Esses cabeçalhos são apenas elementos de texto estáticos que receberam um tam
 >[!NOTE]
 > Simplesmente alterar a aparência visual de um rótulo de texto para parecer um cabeçalho não fará com que os leitores de tela o reconheçam como um cabeçalho. É necessário aplicar uma função de cabeçalho.
 
-Sempre verifique se a ordem dos níveis de cabeçalho é lógica. Por exemplo, uma subseção de um cabeçalho de nível 2 deve ser sempre um cabeçalho de nível 3; você nunca deve pular níveis ao marcar subseções. Os usuários de leitores de tela usam os diferentes níveis para obter uma melhor compreensão da estrutura do formulário. Por exemplo, depois de encontrar um cabeçalho de nível 2, o usuário pode usar um atalho para procurar cabeçalhos de nível 3 e determinar se há subseções. Se você pular os níveis, o usuário terá dificuldades em identificar essas subseções.
+Sempre verifique se a ordem dos níveis de cabeçalho é lógica. Por exemplo, uma subseção de um cabeçalho de nível 2 deve ser sempre um cabeçalho de nível 3; você nunca deve pular níveis ao marcar subseções. Os usuários de leitores de tela usam os diferentes níveis para obter uma melhor compreensão da estrutura do formulário. Por exemplo, depois de encontrar um cabeçalho de nível 2, o usuário pode usar um atalho para procurar cabeçalhos de nível 3 e determinar se há subseções. If you skip levels, the user will have difficulties identifying these subsections.
 
-### Listas de marcação
+### Marking up lists
 
-Às vezes, também pode ser útil adicionar conteúdo de lista ao formulário. As listas são úteis para agrupar itens relacionados, e permitem que os usuários de leitores de tela saibam quantos itens há em uma lista e naveguem rapidamente além dela. A marcação correta de listas torna a estrutura do formulário mais clara para os usuários de leitores de tela.
+Sometimes it may also be useful to add list content to your form. Lists are useful to group related items together, and they allow screen reader users to know how many items there are in a list and quickly navigate past it. Properly marking up lists makes your form&#39;s structure more clear to screen reader users.
 
-No LiveCycle Designer, você cria listas usando subformulários com as seguintes etapas:
+In LiveCycle Designer you create lists using subforms with the following steps:
 
-1. Selecione um subformulário que contenha o conteúdo que será marcado como itens de lista.
-1. Na paleta Acessibilidade, selecione Lista como a Função.
-1. Selecione cada subformulário aninhado dentro do subformulário Lista e defina sua Função como Item de lista.
+1. Select a subform that contains the content that will be marked as list items.
+1. In the Accessibility palette, select List as the Role.
+1. Select each nested subform within the List subform, and set its Role to List Item.
 
 >[!NOTE]
-> Uma função de Item de Lista só pode ser atribuída a um subformulário contido em um subformulário que tenha uma função de Lista especificada. Você não pode definir uma tabela ou linha de tabela como uma lista ou item de lista; no entanto, um item de lista pode conter uma tabela.
+> A List Item role can only be assigned to a subform that is contained in a subform that has a List role specified. You cannot define a table or table row as a list or list item; however, a list item can contain a table.
 
 **Pontos de verificação relacionados**
 * Seção 508 §11934.22
-   * o) Deve ser previsto um método que permita aos utilizadores pular ligações de navegação repetitivas.
+   * (o) A method shall be provided that permits users to skip repetitive navigation links.
 * WCAG 1.0
-   * 3.5 Use elementos de cabeçalho para transmitir a estrutura do documento e usá-los de acordo com a especificação (P2).
-   * 3.6 Marque listas e itens de lista corretamente. (P2).
-   * 12.3 Divida grandes blocos de informações em grupos mais gerenciáveis onde for natural e apropriado. (P2).
-   * 13.3 Forneça informações sobre o layout geral de um site (por exemplo, um mapa do site ou índice).
-   * 13.4 Use os mecanismos de navegação de maneira consistente (P2).
+   * 3.5 Use header elements to convey document structure and use them according to specification (P2).
+   * 3.6 Mark up lists and list items properly. (P2).
+   * 12.3 Divide large blocks of information into more manageable groups where natural and appropriate. (P2).
+   * 13.3 Provide information about the general layout of a site (e.g., a site map or table of contents).
+   * 13.4 Use navigation mechanisms in a consistent manner (P2).
 * WCAG 2.0
    * 1.3.2 Sequência significativa: quando a sequência na qual o conteúdo é apresentado afeta seu significado, uma sequência de leitura correta pode ser determinada programaticamente. (Nível A)
    * 2.4.1 Ignorar blocos: um mecanismo está disponível para ignorar blocos de conteúdo que são repetidos em várias páginas da Web. (Nível A)
