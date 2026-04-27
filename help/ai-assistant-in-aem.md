@@ -35,7 +35,7 @@ Ele é diretamente incorporado ao AEM e acessível no AEM Experience Hub, Cloud 
 
 O vídeo de 25 segundos com duração de 3 minutos apresenta uma apresentação passo a passo do Assistente de IA no AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/3475357/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3475363/?captions=por_br&learn=on&enablevpops)
 
 ## Obter acesso ao Assistente de IA no AEM{#get-access}
 
