@@ -1274,28 +1274,28 @@ Consulte [Delivery de Dynamic Media Assets](/help/assets/delivering-dynamic-medi
   </tr>
   <tr>
    <td>Copiar um URL do visualizador</td>
-   <td><p>A caixa de diálogo Copiar URL exibe um URL semelhante ao seguinte (o URL é somente para fins de demonstração):</p> <p><code>https://PUBLISHNODE/etc/dam/viewers/s7viewers/html5/BasicZoomViewer.html?asset=/content/dam/path/to/Image.jpg&amp;config=/conf/global/settings/dam/dm/presets/viewer/Zoom_dark&amp;serverUrl=https://IMAGESERVICEPUBLISHNODE/is/image/&amp;contentRoot=%2F</code></p> <p>Onde <code>PUBLISHNODE</code> refere-se ao nó de publicação normal do Experience Manager e <code>IMAGESERVICEPUBLISHNODE</code> refere-se à URL do Serviço de Imagem.</p> <p>Consulte também <a href="/help/assets/delivering-dynamic-media-assets.md">Delivery de Dynamic Media Assets</a>.</p> </td>
+   <td><p>A caixa de diálogo Copiar URL exibe um URL semelhante ao seguinte (o URL é somente para fins de demonstração):</p> <p><code>https://PUBLISHNODE/etc/dam/viewers/s7viewers/html5/BasicZoomViewer.html?asset=/content/dam/path/to/Image.jpg&config=/conf/global/settings/dam/dm/presets/viewer/Zoom_dark&serverUrl=https://IMAGESERVICEPUBLISHNODE/is/image/&contentRoot=%2F</code></p> <p>Onde <code>PUBLISHNODE</code> refere-se ao nó de publicação normal do Experience Manager e <code>IMAGESERVICEPUBLISHNODE</code> refere-se à URL do Serviço de Imagem.</p> <p>Consulte também <a href="/help/assets/delivering-dynamic-media-assets.md">Delivery de Dynamic Media Assets</a>.</p> </td>
   </tr>
   <tr>
    <td>Copiar um código incorporado do visualizador</td>
    <td><p>A caixa de diálogo Copiar código incorporado exibe um trecho de código semelhante ao seguinte (o exemplo de código é somente para fins de demonstração):</p> <p><code class="code">&lt;style type="text/css"&gt;
-       #s7basiczoom_div.s7basiczoomviewer{
+       &#x200B;#s7basiczoom_div.s7basiczoomviewer&lbrace;
        width:100%;
        height:auto;
-       }
+       &rbrace;
        &lt;/style&gt;
        &lt;script
        type="text/javascript" src="https://PUBLISHNODE/etc/dam/viewers/s7viewers/html5/js/BasicZoomViewer.js"&gt;&lt;/script&gt;
        &lt;div id="s7basiczoom_div"&gt;&lt;/div&gt;
        &lt;script type="text/javascript"&gt;
-       var s7basiczoomviewer = new s7viewers.BasicZoomViewer({
+       var s7basiczoomviewer = new s7viewers.BasicZoomViewer(&lbrace;
        "containerId" : "s7basiczoom_div",
-       "params" : {
+       "params" : &lbrace;
        "serverurl" : "https://IMAGESERVICEPUBLISHNODE/is/image/",
        "contenturl" : "https://PUBLISHNODE/",
        "config" : "/conf/global/settings/dam/dm/presets/viewer/Zoom_dark",
-       "asset" : "/content/dam/path/to/Image.jpg" }
-       }).init();
+       "asset" : "/content/dam/path/to/Image.jpg" &rbrace;
+       &rbrace;).init();
        &lt;/script&gt;</code></p> <p>Onde <code>PUBLISHNODE</code> refere-se ao nó de publicação normal do Experience Manager e <code>IMAGESERVICEPUBLISHNODE</code> refere-se à URL do Serviço de Imagem.</p> <p>Consulte também <a href="/help/assets/delivering-dynamic-media-assets.md">Delivery de Dynamic Media Assets</a>.</p> </td>
   </tr>
  </tbody>

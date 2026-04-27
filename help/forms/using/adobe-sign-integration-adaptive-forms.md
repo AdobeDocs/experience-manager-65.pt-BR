@@ -91,7 +91,7 @@ Depois que os pré-requisitos estiverem em vigor, execute as seguintes etapas pa
 
    em que:
 
-   **na1** refere-se ao fragmento de banco de dados padrão. Você pode modificar o valor do fragmento de banco de dados. Verifique se as Configurações de Nuvem do [!DNL  Adobe Acrobat Sign] apontam para o [Fragmento correto](https://helpx.adobe.com/sign/using/identify-account-shard.html).
+   **na1** refere-se ao fragmento de banco de dados padrão. Você pode modificar o valor do fragmento de banco de dados. Verifique se as Configurações de Nuvem do [!DNL &#x200B; Adobe Acrobat Sign] apontam para o [Fragmento correto](https://helpx.adobe.com/sign/using/identify-account-shard.html).
 
    >[!NOTE]
    >
@@ -241,7 +241,7 @@ O representante gera e compartilha credenciais com você. Na próxima seção, u
 
    em que:
 
-   **na1** refere-se ao fragmento de banco de dados padrão. Você pode modificar o valor do fragmento de banco de dados. Verifique se as Configurações de Nuvem do [!DNL  Adobe Acrobat Sign] apontam para o [Fragmento correto](https://helpx.adobe.com/sign/using/identify-account-shard.html).
+   **na1** refere-se ao fragmento de banco de dados padrão. Você pode modificar o valor do fragmento de banco de dados. Verifique se as Configurações de Nuvem do [!DNL &#x200B; Adobe Acrobat Sign] apontam para o [Fragmento correto](https://helpx.adobe.com/sign/using/identify-account-shard.html).
 
    >[!NOTE]
    >
