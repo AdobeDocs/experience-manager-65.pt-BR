@@ -24,7 +24,7 @@ Depois de conhecer as ações de gerenciamento de conteúdo em artigos, banners 
 
 >[!NOTE]
 >
->Para saber mais sobre as considerações de design para aplicativos do AEM Mobile, consulte [Considerações de design para aplicativos do AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html) na Ajuda Online.
+>Para saber mais sobre as considerações de design para aplicativos do AEM Mobile, consulte [Considerações de design para aplicativos do AEM Mobile](https://helpx.adobe.com/br/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html) na Ajuda Online.
 
 ## Publicar/desfazer publicação do conteúdo {#publishing-unpublishing-the-content}
 
