@@ -4,11 +4,10 @@ description: Saiba como usar o Instalador de patch do AEM Forms JEE para corrigi
 content-type: reference
 exl-id: 6b17472b-9226-4319-b305-4dba862d21af
 hide: true
-hidefromtoc: true
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
-source-git-commit: bca6156727dca11b2e09be549f3def6130827193
+source-git-commit: 63b9494700aaafaa503216d037e2ad6efc8c5eac
 workflow-type: tm+mt
 source-wordcount: '593'
 ht-degree: 19%
@@ -19,7 +18,7 @@ ht-degree: 19%
 
 >[!NOTE]
 >
->[Contate o Suporte](https://experienceleague.adobe.com/pt-br?support-solution=General&support-tab=home#support) para obter mais informações ou obter o patch.
+>[Contate o Suporte](https://experienceleague.adobe.com/?support-solution=General&support-tab=home#support) para obter mais informações ou obter o patch.
 
 ## Sobre o instalador de patch {#about-the-patch-installer}
 
@@ -71,8 +70,8 @@ Navegue até o diretório apropriado e, em um prompt de comando, digite `./aem65
 
 1. Dependendo do servidor de aplicativos, escolha um dos seguintes documentos e siga as instruções na seção *Configuração e implantação do AEM Forms*.
 
-   * [Instalação e implantação do AEM Forms para JBoss®](https://www.adobe.com/go/learn_aemforms_installJBoss_65_br)
-   * [Instalação e implantação do AEM Forms para WebSphere®](https://www.adobe.com/go/learn_aemforms_installWebSphere_65_br)
+   * [Instalação e implantação do AEM Forms para JBoss®](https://www.adobe.com/go/learn_aemforms_installJBoss_65)
+   * [Instalação e implantação do AEM Forms para WebSphere®](https://www.adobe.com/go/learn_aemforms_installWebSphere_65)
 
 1. (Somente JBoss®) Após instalar o patch e configurar o servidor, exclua tmp e diretórios de trabalho do servidor de aplicativos JBoss®.
 
@@ -97,4 +96,4 @@ Se você tiver a autenticação SAML configurada e estiver enfrentando problemas
 * Segurança de documentos
 * Foundation JEE
 
-[Entrar em contato com o suporte](https://experienceleague.adobe.com/pt-br?support-solution=General&support-tab=home#support)
+[Entrar em contato com o suporte](https://experienceleague.adobe.com/?support-solution=General&support-tab=home#support)
