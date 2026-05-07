@@ -3,10 +3,9 @@ title: Glossário do AEM Forms
 description: O Glossário do AEM Forms fornece uma lista abrangente dos principais termos, definições e conceitos usados no Adobe Experience Manager Forms (AEM Forms), ajudando os usuários a entender e trabalhar com formulários adaptáveis e recursos relacionados.
 feature: Adaptive Forms
 role: Admin, User, Developer
-hidefromtoc: true
 hide: true
 exl-id: 1b327871-c861-48c8-aac6-cff864398bee
-source-git-commit: bca6156727dca11b2e09be549f3def6130827193
+source-git-commit: 63b9494700aaafaa503216d037e2ad6efc8c5eac
 workflow-type: tm+mt
 source-wordcount: '2818'
 ht-degree: 4%
@@ -172,47 +171,47 @@ Uma implementação personalizada para gerenciar comunicações altamente person
 
 ## [JCR (Java Content Repository)](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-jcr)
 
-A hierarchical, standards-based repository for storing content, configurations, and metadata in AEM, supporting structured and unstructured data storage.
+Um repositório hierárquico, baseado em padrões, para armazenamento de conteúdo, configurações e metadados na AEM, que oferece suporte ao armazenamento de dados estruturados e não estruturados.
 
 ## [Cartas](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/forms/letters-correspondences/create-letter#create-a-letter-template)
 
-Generated customer communications leveraging AEM Forms Document Services. Letters are created using a combination of XDP templates, data models, and reusable fragments, ensuring scalability in high-volume scenarios.
+Comunicações geradas pelo cliente aproveitando os Serviços de documento da AEM Forms. As cartas são criadas usando uma combinação de modelos XDP, modelos de dados e fragmentos reutilizáveis, garantindo a escalabilidade em cenários de alto volume.
 
-## [Metadata in AEM Forms](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/forms/manage-administer-aem-forms/manage-form-metadata)
+## [Metadados no AEM Forms](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/forms/manage-administer-aem-forms/manage-form-metadata)
 
-Metadata enables efficient asset categorization and retrieval. AEM Forms includes predefined metadata for each asset type and allows customization. It also provides tools to create, manage, and exchange metadata seamlessly.
+Os metadados permitem a categorização e a recuperação eficientes de ativos. O AEM Forms inclui metadados predefinidos para cada tipo de ativo e permite personalização. Ele também fornece ferramentas para criar, gerenciar e trocar metadados sem interrupções.
 
 ## [Gerador de PDF](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/forms/document-services/using-pdfg-in-aem-forms)
 
-A tool in AEM Forms that converts various file formats (for example: Word, Excel, PowerPoint) into PDF documents and provides features like encryption, watermarking, and merging.
+Uma ferramenta no AEM Forms que converte vários formatos de arquivo (por exemplo: Word, Excel, PowerPoint) em documentos do PDF e fornece recursos como criptografia, marca d&#39;água e mesclagem.
 
-## [Publish Instance](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/forms/publish-process-aem-forms/publishing-unpublishing-forms)
+## [Publicar Instância](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/forms/publish-process-aem-forms/publishing-unpublishing-forms)
 
-The environment in AEM that serves live content to end-users. It delivers forms, pages, and other digital experiences with optimized performance.
+O ambiente no AEM que fornece conteúdo ao vivo aos usuários finais. Ele fornece formulários, páginas e outras experiências digitais com desempenho otimizado.
 
-## [Rule Editor](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/rule-editor-core-components/rule-editor-core-components)
+## [Editor de regras](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/rule-editor-core-components/rule-editor-core-components)
 
-A visual tool in Adaptive Forms that allows authors to define custom rules and logic for form fields, such as visibility, validation, and data prepopulation, without requiring coding expertise.
+Uma ferramenta visual no Adaptive Forms que permite aos autores definir regras e lógica personalizadas para campos de formulário, como visibilidade, validação e pré-preenchimento de dados, sem exigir conhecimento em codificação.
 
-## [Scribble Signatures](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-components-to-an-adaptive-form/signing-forms-using-scribble)
+## [Assinaturas Escritas](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-components-to-an-adaptive-form/signing-forms-using-scribble)
 
-A feature in AEM Forms that allows users to electronically sign forms by drawing their signature directly on the form using a mouse or touch-enabled device.
+Um recurso no AEM Forms que permite que os usuários assinem formulários eletronicamente desenhando sua assinatura diretamente no formulário com o uso de um mouse ou dispositivo habilitado para toque.
 
-## [Submit Action in AEM Forms](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/forms/adaptive-forms-basic-authoring/configuring-submit-actions)
+## [Enviar Ação no AEM Forms](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/forms/adaptive-forms-basic-authoring/configuring-submit-actions)
 
-Server-side or client-side actions executed upon form submission. Examples include REST API calls, invoking a workflow, or writing data to a JCR (Java Content Repository).
+Ações do lado do servidor ou do lado do cliente executadas no envio do formulário. Os exemplos incluem chamadas de API REST, chamar um fluxo de trabalho ou gravar dados em um JCR (Java Content Repository).
 
-## [Themes](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components)
+## [Temas](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components)
 
-CSS-driven styling frameworks applied to adaptive forms, utilizing LESS/SASS for preprocessors. Themes ensure compliance with branding guidelines and accessibility standards, you can customize a theme, change its design elements, layout, colors, typography, and sometimes the underlying code.
+Estruturas de estilo orientadas por CSS aplicadas a formulários adaptáveis, utilizando MENOS/SASS para pré-processadores. Os temas garantem a conformidade com as diretrizes de marca e os padrões de acessibilidade. Você pode personalizar um tema, alterar seus elementos de design, layout, cores, tipografia e, às vezes, o código subjacente.
 
 ## [Modelo](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components)
 
-Blueprints for adaptive forms, comprising structural elements (fields, layouts) and pre-configured scripts, you can create and customize new templates or use existing out-of-the-box templates.
+Blueprints para formulários adaptáveis, incluindo elementos estruturais (campos, layouts) e scripts pré-configurados, você pode criar e personalizar novos modelos ou usar modelos prontos para uso existentes.
 
-## [Web Layer](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/forms/install-aem-forms/aem-forms-architecture-deployment#architecture)
+## [Camada da Web](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/forms/install-aem-forms/aem-forms-architecture-deployment#architecture)
 
-Comprises JSPs or servlets built over common and forms services, providing functionalities such as authoring front-end, form rendition and submission front-end, and REST APIs.
+Inclui JSPs ou servlets criados em serviços comuns da e de formulários, fornecendo funcionalidades como front-end de criação, front-end de representação e envio de formulários e APIs REST.
 
 ## [XDP (Pacote de Dados XML)](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/forms/manage-administer-aem-forms/get-xdp-pdf-documents-aem)
 

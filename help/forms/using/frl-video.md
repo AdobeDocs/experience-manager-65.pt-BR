@@ -1,10 +1,13 @@
 ---
-source-git-commit: b5e44b78659f0cb1b8b0025be30143b98c0bf8df
+title: 'Script de vídeo: Configuração do FRL (Feature Restricted Licensing) para o Adobe Acrobat no AEM Forms'
+description: Configuração do FRL (Feature Restricted Licensing) para o Adobe Acrobat no AEM Forms
+source-git-commit: 5477c768542b65750945dc9789224c0eb223f3c4
 workflow-type: tm+mt
-source-wordcount: '1065'
+source-wordcount: '1095'
 ht-degree: 0%
 
 ---
+
 # Script de vídeo: Configuração do FRL (Feature Restricted Licensing) para o Adobe Acrobat no AEM Forms
 
 | Visual | Título | Script do alto-falante |
