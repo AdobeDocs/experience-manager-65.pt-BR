@@ -11,9 +11,9 @@ feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+source-git-commit: 0c3d9e95f2b1942392cd269891360dd8552e2715
 workflow-type: tm+mt
-source-wordcount: '10813'
+source-wordcount: '10724'
 ht-degree: 2%
 
 ---
@@ -150,7 +150,7 @@ Para gerenciar vídeos únicos e Conjuntos de vídeos adaptados, o seguinte é s
 * Organize, navegue e pesquise vídeos com suporte completo a metadados para obter um gerenciamento eficiente dos ativos de vídeo.
 * Forneça Conjuntos de vídeos adaptados para a Web e para desktops e dispositivos móveis, incluindo iPhone, iPad, Android™, BlackBerry® e Windows phone.
 
-O streaming de vídeo adaptável é suportado em várias plataformas iOS. Consulte o [Guia de Referência de Visualizadores do Dynamic Media](https://experienceleague.adobe.com/pt-br/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference#video).
+O streaming de vídeo adaptável é suportado em várias plataformas iOS. Consulte o [Guia de Referência de Visualizadores do Dynamic Media](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference#video).
 
 O Dynamic Media suporta reprodução de vídeo móvel para vídeo MP4 H.264. <!-- LINK IS 404 WITH NO SUITABLE REPLACEMENT You can find BlackBerry&reg; devices that support this video format at the following: [Supported video formats on BlackBerry&reg;](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482). -->
 
@@ -166,7 +166,7 @@ Você pode encontrar dispositivos Windows compatíveis com este formato de víde
 
 <!-- See [Dynamic video playback](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&config=GeoRetail/Universal_Video1&stageSize=640,480) sample. -->
 
-Consulte também [Visualizadores para Experience Manager Assets e Dynamic Media Classic](https://experienceleague.adobe.com/pt-br/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers#viewers-aem-assets-dmc) e [Visualizadores somente para ativos do Experience Manager](https://experienceleague.adobe.com/pt-br/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only).
+Consulte também [Visualizadores para Experience Manager Assets e Dynamic Media Classic](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers#viewers-aem-assets-dmc) e [Visualizadores somente para ativos do Experience Manager](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only).
 
 ## Prática recomendada: uso do visualizador de vídeo HTML5 {#best-practice-using-the-html-video-viewer}
 
@@ -184,7 +184,7 @@ Ao combinar em um único player o seguinte:
 
 Estenda o alcance do seu conteúdo de mídia avançada para usuários de desktop e dispositivos móveis e garanta uma experiência em vídeo simplificada.
 
-Consulte também [Sobre visualizadores do HTML5](https://experienceleague.adobe.com/pt-br/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only).
+Consulte também [Sobre visualizadores do HTML5](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only).
 
 ### Reprodução de vídeo em computadores desktop e dispositivos móveis usando o visualizador de vídeo do HTML5 {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
 
@@ -476,7 +476,7 @@ Especifique o intervalo de datas inicial e final para o qual deseja dados de ví
 
 Se você usar um visualizador de vídeo pronto para uso fornecido pelo Dynamic Media ou se criar uma predefinição do visualizador personalizado com base em um visualizador de vídeo pronto para uso, nenhuma etapa adicional será necessária para visualizar os Relatórios de vídeo. No entanto, se você tiver criado seu próprio visualizador de vídeo com base na API do SDK do visualizador do HTML5, use as seguintes etapas para garantir que seu visualizador de vídeo esteja enviando eventos de rastreamento para os Relatórios de vídeo do Dynamic Media.
 
-Use o [Guia de Referência de Visualizadores do Adobe Dynamic Media](https://experienceleague.adobe.com/pt-br/docs/dynamic-media-developer-resources) e a [API do SDK do Visualizador do HTML5](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html) para criar seus próprios visualizadores de vídeo.
+Use o [Guia de Referência de Visualizadores do Adobe Dynamic Media](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources) e a [API do SDK do Visualizador do HTML5](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html) para criar seus próprios visualizadores de vídeo.
 
 **Para exibir relatórios de vídeo com base em um visualizador de vídeo criado usando a SDK do Visualizador do Dynamic Media HTML5:**
 
@@ -806,7 +806,7 @@ Consulte também [Acessibilidade no Dynamic Media](/help/assets/accessibility-dm
 
 O Dynamic Media converte arquivos de legenda para o formato JSON (JavaScript Object Notation). Essa conversão significa que você pode incorporar o texto JSON em uma página da Web como uma transcrição oculta, mas completa, do vídeo. Os mecanismos de pesquisa podem rastrear e indexar o conteúdo para facilitar a descoberta dos vídeos e fornecer aos clientes detalhes adicionais sobre o conteúdo do vídeo.
 
-Consulte [Conteúdo estático (não de imagem) do servidor](https://experienceleague.adobe.com/pt-br/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents#image-serving-api) para obter mais informações sobre como usar a função JSON em uma URL.
+Consulte [Conteúdo estático (não de imagem) do servidor](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents#image-serving-api) para obter mais informações sobre como usar a função JSON em uma URL.
 
 **Para adicionar legendas ocultas a um vídeo:**
 
@@ -819,20 +819,20 @@ Consulte [Conteúdo estático (não de imagem) do servidor](https://experiencele
    Há muitos sites que oferecem ferramentas e serviços gratuitos e premium que você pode usar para criar arquivos de legenda/legenda WebVTT fora do Dynamic Media. <!-- THE FOLLOWING LINK IS NO LONGER LIVE. CHECKED DECEMBER 13, 2023 For example, to create a simple video caption file with no styling, you can use the following free online caption authoring and editing tool: -->
 
    <!--
-[Criador de legendas WebVTT](https://testdrive-archive.azurewebsites.net/Graphics/CaptionMaker/Default.html)
+   [WebVTT Caption Maker](https://testdrive-archive.azurewebsites.net/Graphics/CaptionMaker/Default.html)
 
-Para obter melhores resultados, use a ferramenta no Internet Explorer 9 ou superior, Google Chrome ou Safari.
+   For best results, use the tool in Internet Explorer 9 or above, Google Chrome, or Safari.
 
-Na ferramenta, no campo **[!UICONTROL Inserir URL do arquivo de vídeo]**, cole a URL copiada do arquivo de vídeo e clique em **[!UICONTROL Carregar]**. Consulte [Obter uma URL para um ativo](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset) para obter a URL para o próprio arquivo de vídeo, que você pode colar no **[!UICONTROL campo Inserir URL do arquivo de vídeo]**. O Internet Explorer, Chrome ou Safari podem reproduzir nativamente o vídeo.
--->
+   In the tool, in the **[!UICONTROL Enter URL of video file]** field, paste the copied URL of your video file and then click **[!UICONTROL Load]**. See [Obtain a URL for an Asset](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset) to get the URL to the video file itself which you can then paste into the **[!UICONTROL Enter URL of video file field]**. Internet Explorer, Chrome, or Safari can then natively play back the video.
+   -->
 
-Siga as instruções na tela de um site para criar e salvar o arquivo WebVTT. Quando terminar, copie o conteúdo do arquivo de legenda e cole-o em um editor de texto sem formatação e salve-o com uma extensão de nome de arquivo `.vtt`.
+   Siga as instruções na tela de um site para criar e salvar o arquivo WebVTT. Quando terminar, copie o conteúdo do arquivo de legenda e cole-o em um editor de texto sem formatação e salve-o com uma extensão de nome de arquivo `.vtt`.
 
->[!NOTE]
->
->Para o suporte global de legendas de vídeo em vários idiomas, o padrão WebVTT exige a criação de `.vtt` arquivos e chamadas separados para cada idioma ao qual você deseja oferecer suporte.
+   >[!NOTE]
+   >
+   >Para o suporte global de legendas de vídeo em vários idiomas, o padrão WebVTT exige a criação de `.vtt` arquivos e chamadas separados para cada idioma ao qual você deseja oferecer suporte.
 
-Geralmente, você deseja nomear o arquivo de legenda `.vtt` com o mesmo nome do arquivo de vídeo e anexá-lo com a localidade do idioma, como -EN, -FR ou -DE. Ao fazer isso, ele pode ajudar você a automatizar a geração dos URLs de vídeo usando seu sistema existente de gerenciamento de conteúdo na Web.
+   Geralmente, você deseja nomear o arquivo de legenda `.vtt` com o mesmo nome do arquivo de vídeo e anexá-lo com a localidade do idioma, como -EN, -FR ou -DE. Ao fazer isso, ele pode ajudar você a automatizar a geração dos URLs de vídeo usando seu sistema existente de gerenciamento de conteúdo na Web.
 
 1. No Experience Manager, carregue seu arquivo de legenda WebVTT no DAM.
 1. Navegue até o ativo de vídeo *publicado* que você deseja associar ao arquivo de legenda carregado.
@@ -1451,7 +1451,7 @@ When you create an Adobe Support case to enable DASH on your account, multiple c
 
 1. Select **[!UICONTROL Save]**.
 
-1. Now, use the Admin Console to start the [creation of a new support case](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html).
+1. Now, use the Admin Console to start the [creation of a new support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 1. To create a support case, follow the instructions while ensuring you provide the following information:
 
     * Primary contact name, email, phone.

@@ -5,7 +5,7 @@ feature: Adaptive Forms, Core Components
 role: User
 level: Beginner, Intermediate
 exl-id: 107ad23b-53df-41d4-ab97-b09d189abc1b
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+source-git-commit: 0c3d9e95f2b1942392cd269891360dd8552e2715
 workflow-type: tm+mt
 source-wordcount: '5734'
 ht-degree: 0%
@@ -497,8 +497,8 @@ Para gravar regras, execute as seguintes etapas:
 
    ![write-rules-visual-editor-2](assets/write-rules-visual-editor-2-cc.png)
 
-<!--
-In the Marital Status radio button, **[!UICONTROL Married]** and **[!UICONTROL Single]** options are assigned **0** and **1** values, respectively. You can verify assigned values in the Title tab of the Edit radio button dialog as shown below.
+   <!--
+   In the Marital Status radio button, **[!UICONTROL Married]** and **[!UICONTROL Single]** options are assigned **0** and **1** values, respectively. You can verify assigned values in the Title tab of the Edit radio button dialog as shown below.
 
    ![Radio button values from rule editor](assets/radio-button-values.png)
    -->
@@ -618,7 +618,7 @@ Você pode escrever uma regra combinada para controlar a visibilidade do campo S
 
 Users added to the forms-power-users group can use code editor. The rule editor auto generates the JavaScript code for any rule you create using visual editor. You can switch from visual editor to the code editor to view the generated code. However, if you modify the rule code in the code editor, you cannot switch back to the visual editor. If you prefer writing rules in code editor rather than visual editor, you can write rules afresh in the code editor. The visual-code editors switcher helps you switch between the two modes.
 
-The code editor JavaScript is the expression language of Adaptive Forms. All the expressions are valid JavaScript expressions and use Adaptive Forms scripting model APIs. These expressions return values of certain types. For the complete list of Adaptive Forms classes, events, objects, and public APIs, see [JavaScript Library API reference for Adaptive Forms](https://helpx.adobe.com/br/experience-manager/6-5/forms/javascript-api/index.html).
+The code editor JavaScript is the expression language of Adaptive Forms. All the expressions are valid JavaScript expressions and use Adaptive Forms scripting model APIs. These expressions return values of certain types. For the complete list of Adaptive Forms classes, events, objects, and public APIs, see [JavaScript Library API reference for Adaptive Forms](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html).
 
 For more information about guidelines to write rules in the code editor, see [Adaptive Form Expressions](adaptive-form-expressions.md).
 
@@ -720,7 +720,7 @@ For example, you want to add a custom function which calculates area of a square
 
 To create a client library and add it in the CRX repository, perform the following steps:
 
-1. Create a client library. For more information, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html?lang=pt-BR#developing).
+1. Create a client library. For more information, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html#developing).
 2. In CRXDE, add a property `categories`with string type value as `customfunction` to the `clientlib` folder.
 
    >[!NOTE]
@@ -949,13 +949,13 @@ Em um formulário de ordem de compra, você tem a tabela a seguir, na qual os us
 * O título da célula na coluna Quantidade do Produto da linha repetível é Quantidade. O nome do elemento desta célula é `productquantity`.
 * A segunda linha da tabela não pode ser repetida e o título da célula na coluna Quantidade do Produto nesta linha é Quantidade Total.
 
-![Example-function-table](assets/example-function-table.png)
+![Tabela-função-exemplo](assets/example-function-table.png)
 
 **A.** Linha1 **B.** Quantidade **C.** Quantidade Total
 
-Now, you want to add specified quantities in the Product Quantity column for all products and display the sum in the Total Quantity cell. You can achieve this sum by writing a Set Value Of rule on the Total Quantity cell as shown below.
+Agora, você deseja adicionar quantidades especificadas na coluna Quantidade do Produto para todos os produtos e exibir a soma na célula Quantidade Total. Você pode obter essa soma gravando uma regra Definir Valor de na célula Quantidade total, como mostrado abaixo.
 
-![Example-function-output](assets/example-function-output.png)
+![Exemplo-saída-função](assets/example-function-output.png)
 
 Regra no editor visual
 
@@ -967,11 +967,11 @@ he rule appears as follows in the code editor.
 Rule in the code editor
 -->
 
-### Validating a field value using expression {#validating-a-field-value-using-expression}
+### Validação de um valor de campo usando expressão {#validating-a-field-value-using-expression}
 
-In the purchase order form explained in the previous example, you want to restrict user from ordering more than one quantity of any product that is priced more that 10000. To do this validation, you can write a Validate rule as shown below.
+No form ordem de compra explicado no exemplo anterior, você deseja impedir que o usuário faça pedidos de mais de uma quantidade de qualquer produto com preço superior a 10000. Para fazer essa validação, você pode gravar uma regra Validate como mostrado abaixo.
 
-![Example-validate](assets/example-validate.png)
+![Exemplo-validação](assets/example-validate.png)
 Regra no editor visual
 
 <!--
