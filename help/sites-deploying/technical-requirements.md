@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: f2c92b990a5c09cbcf532e0800e264620d98af77
+source-git-commit: bbbbf1549f1a44f4613f6c02c33bada5a0980179
 workflow-type: tm+mt
-source-wordcount: '3736'
+source-wordcount: '3755'
 ht-degree: 1%
 
 ---
@@ -30,51 +30,51 @@ Requisitos mínimos para a instalação do Adobe Experience Manager:
 * Plataforma Java™, JDK Standard Edition ou outras [Máquinas Virtuais Java™](#java-virtual-machines) com suporte
 * Arquivo Experience Manager Quickstart (JAR independente ou WAR de implantação de aplicativo da Web)
 
-### Minimum Sizing Requirements {#minimum-sizing-requirements}
+### Requisitos mínimos de dimensionamento {#minimum-sizing-requirements}
 
-Minimum requirements for running Adobe Experience Manager:
+Requisitos mínimos para executar o Adobe Experience Manager:
 
-* 5 GB free disk space in the installation directory
-* 2 GB memory
+* 5 GB de espaço livre no diretório de instalação
+* 2 GB de memória
 
 >[!NOTE]
 >
->* Digital asset use cases need more base memory. See [Deploying and Maintaining](/help/sites-deploying/deploy.md#default-local-install) for details.
->* [AEM Forms add-on package](/help/forms/using/installing-configuring-aem-forms-osgi.md) requires 15 GB of temporary space.
+>* Os casos de uso de ativos digitais precisam de mais memória básica. Consulte [Implantando e Mantendo](/help/sites-deploying/deploy.md#default-local-install) para obter detalhes.
+>* O [pacote complementar do AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md) requer 15 GB de espaço temporário.
 >
 
-For further information, see the [Hardware Sizing Guidelines](/help/managing/hardware-sizing-guidelines.md).
+Para obter mais informações, consulte as [Diretrizes de dimensionamento de hardware](/help/managing/hardware-sizing-guidelines.md).
 
-### Support Levels {#support-levels}
+### Níveis de suporte {#support-levels}
 
-This document lists the supported client and server platforms for Adobe Experience Manager. Adobe provides several levels of support, both for recommended configurations and other configurations.
+Este documento lista as plataformas de cliente e servidor compatíveis com o Adobe Experience Manager. A Adobe fornece vários níveis de suporte, tanto para configurações recomendadas quanto para outras configurações.
 
-### Supported Configurations {#supported-configurations}
+### Configurações suportadas {#supported-configurations}
 
-Adobe recommends these configurations and provides full support as part of the standard software maintenance agreement.
+A Adobe recomenda essas configurações e fornece suporte total como parte do contrato padrão de manutenção de software.
 
 <table>
  <tbody>
   <tr>
    <td>Nível de compatibilidade</td>
-   <td>Description<br /> </td>
+   <td>Descrição<br /> </td>
   </tr>
   <tr>
-   <td><strong>A: Supported</strong></td>
-   <td>Adobe provides full support and maintenance for this configuration. This configuration is covered by Adobe's quality assurance process.</td>
+   <td><strong>A: Suportado</strong></td>
+   <td>A Adobe oferece suporte e manutenção completos para essa configuração. Essa configuração é coberta pelo processo de controle de qualidade da Adobe.</td>
   </tr>
   <tr>
-   <td><strong>R: Restricted Support</strong></td>
-   <td>To ensure customers project success, Adobe provides full support within a restricted support program, which requires that specific conditions are met. R-level support requires a formal customer request and confirmation by Adobe. For more information, contact Adobe Customer Care.</td>
+   <td><strong>R: Suporte restrito</strong></td>
+   <td>Para garantir o sucesso do projeto do cliente, a Adobe fornece suporte total em um programa de suporte restrito, o que requer que condições específicas sejam atendidas. O suporte no nível R exige uma solicitação formal do cliente e a confirmação pela Adobe. Para obter mais informações, entre em contato com o Atendimento ao cliente da Adobe.</td>
   </tr>
  </tbody>
 </table>
 
-### Unsupported Configurations {#unsupported-configurations}
+### Configurações não suportadas {#unsupported-configurations}
 
 | Nível de compatibilidade | Descrição |
 |---|---|
-| **Z: Not supported** | The configuration is not supported. Adobe does not make statements about whether the configuration works, and does not support it. |
+| **Z: sem suporte** | A configuração não é compatível. A Adobe não faz declarações sobre se a configuração funciona e não oferece suporte a ela. |
 
 ## Plataformas compatíveis {#supported-platforms}
 
@@ -205,17 +205,17 @@ O Adobe Experience Manager funciona com as seguintes plataformas de servidor par
 
 | **Plataforma** | **Nível de Suporte** |
 |---|---|
-| **Linux®, based on the Red Hat® distribution** | A: Supported `[1]` `[3]` |
-| Linux®, based on Debian distribution incl. Ubuntu | A: Supported `[1]` `[2]` |
-| Linux®, based on SUSE® distribution | A: Suportado `[1]` |
+| **Linux®, baseado na distribuição Red Hat®** | A: Suportado `[1]` `[3]` |
+| Linux®, baseado na distribuição Debian incl. Ubuntu | A: Suportado `[1]` `[2]` |
+| Linux®, baseado na distribuição SUSE® | A: Suportado `[1]` |
 | Microsoft® Windows Server 2022 | R: Suporte restrito |
-| Microsoft® Windows Server 2019 `[4]` (Deprecated) | R: Suporte restrito para novos contratos `[5]` |
+| Microsoft® Windows Server 2019 `[4]` (obsoleto) | R: Suporte restrito para novos contratos `[5]` |
 | Microsoft® Windows Server 2016 `[4]` | R: Suporte restrito para novos contratos `[5]` |
 | Microsoft® Windows Server 2012 R2 | Z: Não suportado |
 | Oracle Solaris™ 11 | Z: Não suportado |
 | IBM® AIX® 7.2 | Z: Não suportado |
 
-1. Linux® Kernel 2.6, 3. x, 4. x, 5. x, 6. x e 9. x inclui derivados da distribuição Red Hat®, incluindo Red Hat® Enterprise Linux®, Oracle Linux® e Amazon Linux®. Os recursos complementares da AEM Forms só são suportados no Red Hat® Enterprise Linux® 8 e no Red Hat® Enterprise Linux® 9.
+1. Kernel Linux® 2.6, 3. x, 4. x, 5. x, 6. x e 9. x inclui derivados da distribuição Red Hat®, incluindo Red Hat® Enterprise Linux®, Oracle Linux® e Amazon Linux®. Os recursos complementares da AEM Forms só são suportados no Red Hat® Enterprise Linux® 8 e no Red Hat® Enterprise Linux® 9.
 2. O AEM Forms é compatível com Ubuntu 20.04 e SUSE® Linux® Enterprise Server 15 SP6 (64 bits).
 3. Distribuição Linux® suportada pela Adobe Managed Services.
 
@@ -491,6 +491,8 @@ Para Windows x86:
 
 >[!NOTE]
 >
+>* A PDF Generator oferece suporte ao Microsoft® Office 2024.
+>* O PDF Generator exige o Adobe Acrobat Pro DC (32 bits) para executar a conversão.
 >* O PDF Generator suporta apenas as versões em inglês, francês, alemão e japonês dos sistemas operacionais e aplicativos compatíveis.
 >* O PDF Generator exige o Adobe Acrobat Pro DC (32 bits) para executar a conversão.
 >* A PDF Generator suporta apenas a versão de 32 bits do Microsoft® Office Professional Plus e outros softwares necessários para a conversão.
@@ -532,6 +534,6 @@ O XMP write-back é compatível e habilitado para as seguintes plataformas e for
 
 ### Requisitos para a AEM Assets processar ativos com muitos metadados no Linux® {#assetsonlinux}
 
-The XMPFilesProcessor process requires the library GLIBC_2.14 to work. Use a Linux® kernel that contains GLIBC_2.14, for example, Linux® kernel version 3.1.x. It improves performance for processing assets that contain a large amount of metadata, like PSD files. Using a previous version of GLIBC leads to error in logs starting with `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP`.
+O processo XMPFilesProcessor requer a biblioteca GLIBC_2.14 para funcionar. Use um kernel Linux® que contenha GLIBC_2.14, por exemplo, kernel Linux® versão 3.1.x. Ele melhora o desempenho do processamento de ativos que contêm uma grande quantidade de metadados, como arquivos PSD. O uso de uma versão anterior de GLIBC leva a erros em logs que começam com `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP`.
 
-For any query related to supported formats or platform versions, contact [AEM Forms support](https://business.adobe.com/in/support/main.html)
+Para qualquer consulta relacionada a formatos ou versões de plataforma compatíveis, entre em contato com o [suporte da AEM Forms](https://business.adobe.com/in/support/main.html)
