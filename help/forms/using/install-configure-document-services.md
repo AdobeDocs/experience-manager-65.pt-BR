@@ -6,7 +6,7 @@ role: Admin, Developer
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
-source-git-commit: d2e16ff36c5910e43f647a68330ae82e3dd61456
+source-git-commit: 7df2debfd24bb6caca27ecea2f1b98966095a553
 workflow-type: tm+mt
 source-wordcount: '10489'
 ht-degree: 1%
@@ -81,11 +81,11 @@ Antes de começar a instalar e configurar os serviços de documento do AEM Forms
 >
 >* No Microsoft® Windows, a PDF Generator suporta as rotas de conversão WebKit, Acrobat WebCapture e WebToPDF para converter arquivos HTML em documentos PDF.
 >* Em sistemas operacionais baseados em UNIX, o PDF Generator suporta rotas de conversão WebKit e WebToPDF para converter arquivos HTML em documentos PDF.
->
 
 ### Requisitos adicionais para o sistema operacional baseado em UNIX {#extrarequirements}
 
 Se você estiver usando um sistema operacional baseado em UNIX, instale os seguintes pacotes de 32 bits a partir da mídia de instalação do respectivo sistema operacional:
+
 <table>
  <tbody>
   <tr>
@@ -188,8 +188,10 @@ Se você estiver usando um sistema operacional baseado em UNIX, instale os segui
 
 * (Somente no PDF Generator) Se a conversão WebToPDF falhar em um servidor Unix® com o seguinte erro:
 
-  ```Auto configuration failed 4143511872:error:0E079065:configuration file routines:DEF_LOAD_BIO:missing equal sign:conf_def.c:362:line 57```
-em seguida, defina a seguinte variável de ambiente e reinicie o servidor:
+  `Auto configuration failed 4143511872:error:0E079065:configuration file routines:DEF_LOAD_BIO:missing equal sign:conf_def.c:362:line 57`
+
+  em seguida, defina a seguinte variável de ambiente e reinicie o servidor:
+
   `OPENSSL_CONF=/etc/ssl`
 
 >[!NOTE]
@@ -210,7 +212,7 @@ Se você for usar o serviço PDF Generator para converter formatos de arquivo na
 >* Adobe Acrobat, Microsoft® Word, Excel e Powerpoint estão disponíveis apenas para Microsoft® Windows. Se você estiver usando o sistema operacional baseado em UNIX, instale o OpenOffice para converter arquivos rich text e arquivos suportados do Microsoft® Office em documentos PDF.
 >* Ignore todas as caixas de diálogo exibidas após a instalação do Adobe Acrobat e de softwares de terceiros para todos os usuários configurados para usar o serviço PDF Generator.
 >* Inicie todos os softwares instalados pelo menos uma vez. Ignore todas as caixas de diálogo de todos os usuários configurados para usar o serviço PDF Generator.
->* [Verifique a data de expiração de seus números de série da Adobe Acrobat](https://helpx.adobe.com/br/enterprise/kb/volume-license-expiration-check.html) e defina uma data para atualizar a licença ou [migre seu número de série](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) com base na data de expiração.
+>* [Verifique a data de expiração de seus números de série da Adobe Acrobat](https://helpx.adobe.com/enterprise/kb/volume-license-expiration-check.html) e defina uma data para atualizar a licença ou [migre seu número de série](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) com base na data de expiração.
 
 ### Instale o Adobe Acrobat Pro DC
 
@@ -905,7 +907,7 @@ Siga estas etapas:
 >
 >A desativação do Modo protegido é necessária para cenários de automação do lado do servidor, como o AEM Forms PDF Generator. Essa configuração só deve ser alterada em ambientes de servidor dedicados, não em desktops de usuários finais.
 
-Para obter mais informações, consulte [documentação do Adobe sobre Modo Protegido](https://helpx.adobe.com/br/acrobat/kb/protected-mode-troubleshooting-reader.html).
+Para obter mais informações, consulte [documentação do Adobe sobre Modo Protegido](https://helpx.adobe.com/acrobat/kb/protected-mode-troubleshooting-reader.html).
 
 
 
@@ -1088,10 +1090,10 @@ O pacote complementar do AEM Forms é um aplicativo implantado no AEM. O pacote 
    1. Selecione **[!UICONTROL Forms]** na lista suspensa **[!UICONTROL Solução]**.
    2. Selecione a versão e o tipo do pacote. Você também pode usar a opção **[!UICONTROL Downloads de Pesquisa]** para filtrar os resultados.
 1. Selecione o nome do pacote aplicável ao seu sistema operacional, selecione **[!UICONTROL Aceitar termos do EULA]** e selecione **[!UICONTROL Baixar]**.
-1. Abra o [Gerenciador de Pacotes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=pt-BR) e clique em **[!UICONTROL Carregar Pacote]** para carregar o pacote.
+1. Abra o [Gerenciador de Pacotes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html) e clique em **[!UICONTROL Carregar Pacote]** para carregar o pacote.
 1. Selecione o pacote e clique em **[!UICONTROL Instalar]**.
 
-   Você também pode baixar o pacote através do link direto listado no artigo [versões do AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=pt-BR).
+   Você também pode baixar o pacote através do link direto listado no artigo [versões do AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
 
 1. Depois que o pacote for instalado, você será solicitado a reiniciar a instância do AEM. **Não parar o servidor imediatamente.** Antes de parar o AEM Forms Server, aguarde até que as mensagens ServiceEvent REGISTERED e ServiceEvent UNREGISTERED parem de aparecer no arquivo `[AEM-Installation-Directory]/crx-quickstart/logs/error`.log e o log fique estável.
 
