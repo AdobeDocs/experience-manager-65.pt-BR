@@ -5,7 +5,7 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+source-git-commit: 0c3d9e95f2b1942392cd269891360dd8552e2715
 workflow-type: tm+mt
 source-wordcount: '2149'
 ht-degree: 8%
@@ -95,7 +95,7 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 1. Extraia o **arquivo do instalador do AEM Forms no JEE Service Pack** para o disco rígido:
 
    * **Windows**
-Navegue até o diretório apropriado na mídia ou pasta de instalação no disco rígido em que você copiou     instalador e clique duas vezes no arquivo `aemforms65_cfp_install.exe`.
+Navegue até o diretório apropriado na mídia ou pasta de instalação no disco rígido em que você copiou o instalador e clique duas vezes no arquivo `aemforms65_cfp_install.exe`.
 
       * (Windows de 32 bits) `Windows\Disk1\InstData\VM`
       * (Windows 64-bit) `Windows_64Bit`\ `Disk1\InstData\VM`
@@ -177,7 +177,7 @@ Para baixar e instalar o fragmento de servlet:
 Há dois métodos diferentes que você pode usar para instalar automaticamente o [!DNL ExperienceManager] service pack.<!--       UPDATE FOR EACH NEW RELEASE -->
 
 * Coloque o pacote na pasta `../crx-quickstart/install` quando o servidor estiver disponível online.
-O pacote é      instalado automaticamente.
+O pacote é instalado automaticamente.
 
 * Use a [API HTTP do Gerenciador de Pacotes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=pt-BR). Use `cmd=install&recursive=true` para que os pacotes aninhados sejam instalados.
 
@@ -190,7 +190,7 @@ O pacote é      instalado automaticamente.
   Para conhecer as plataformas certificadas para trabalhar com esta versão, consulte os [requisitos técnicos](/help/sites-deploying/technical-requirements.md).
 
    1. A página de informações do produto (`/system/console/productinfo`) exibe a cadeia de caracteres da versão atualizada `Adobe Experience Manager (spversion)` em [!UICONTROL Produtos Instalados].<!-- UPDATE FOR EACH NEW RELEASE -->
-   1. Todos os pacotes OSGi estão **[!UICONTROL ATIVOS]** ou **[!UICONTROL FRAGMENTOS]** no Console OSGi (Use a Web     Console: `/system/console/bundles`).
+   1. Todos os pacotes OSGi estão **[!UICONTROL ATIVOS]** ou **[!UICONTROL FRAGMENTOS]** no Console OSGi (Use o Console da Web: `/system/console/bundles`).
    1. O pacote OSGi `org.apache.jackrabbit.oak-core` é versão 1.22.14 ou posterior (Use WebConsole: `/system/console/bundles`).
 
 +++
@@ -251,7 +251,7 @@ O pacote é      instalado automaticamente.
 
 Há dois métodos diferentes que você pode usar para instalar automaticamente o [!DNL Experience Manager] service pack.<!--  UPDATE FOR EACH NEW RELEASE -->
 
-* Coloque o pacote na pasta `../crx-quickstart/install` quando o servidor estiver disponível online. O pacote é      instalado automaticamente.
+* Coloque o pacote na pasta `../crx-quickstart/install` quando o servidor estiver disponível online. O pacote é instalado automaticamente.
 * Use a [API HTTP do Gerenciador de Pacotes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=pt-BR). Use `cmd=install&recursive=true` para que os pacotes aninhados sejam instalados.
 
   >[!NOTE]

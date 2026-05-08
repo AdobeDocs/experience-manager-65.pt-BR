@@ -5,7 +5,7 @@ feature: Adaptive Forms, Core Components
 role: User
 level: Beginner, Intermediate
 exl-id: 107ad23b-53df-41d4-ab97-b09d189abc1b
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+source-git-commit: 0c3d9e95f2b1942392cd269891360dd8552e2715
 workflow-type: tm+mt
 source-wordcount: '5734'
 ht-degree: 0%
@@ -497,8 +497,8 @@ Para gravar regras, execute as seguintes etapas:
 
    ![write-rules-visual-editor-2](assets/write-rules-visual-editor-2-cc.png)
 
-<!--
-In the Marital Status radio button, **[!UICONTROL Married]** and **[!UICONTROL Single]** options are assigned **0** and **1** values, respectively. You can verify assigned values in the Title tab of the Edit radio button dialog as shown below.
+   <!--
+   In the Marital Status radio button, **[!UICONTROL Married]** and **[!UICONTROL Single]** options are assigned **0** and **1** values, respectively. You can verify assigned values in the Title tab of the Edit radio button dialog as shown below.
 
    ![Radio button values from rule editor](assets/radio-button-values.png)
    -->
@@ -949,13 +949,13 @@ Em um formulário de ordem de compra, você tem a tabela a seguir, na qual os us
 * O título da célula na coluna Quantidade do Produto da linha repetível é Quantidade. O nome do elemento desta célula é `productquantity`.
 * A segunda linha da tabela não pode ser repetida e o título da célula na coluna Quantidade do Produto nesta linha é Quantidade Total.
 
-![Example-function-table](assets/example-function-table.png)
+![Tabela-função-exemplo](assets/example-function-table.png)
 
 **A.** Linha1 **B.** Quantidade **C.** Quantidade Total
 
-Now, you want to add specified quantities in the Product Quantity column for all products and display the sum in the Total Quantity cell. You can achieve this sum by writing a Set Value Of rule on the Total Quantity cell as shown below.
+Agora, você deseja adicionar quantidades especificadas na coluna Quantidade do Produto para todos os produtos e exibir a soma na célula Quantidade Total. Você pode obter essa soma gravando uma regra Definir Valor de na célula Quantidade total, como mostrado abaixo.
 
-![Example-function-output](assets/example-function-output.png)
+![Exemplo-saída-função](assets/example-function-output.png)
 
 Regra no editor visual
 
@@ -967,11 +967,11 @@ he rule appears as follows in the code editor.
 Rule in the code editor
 -->
 
-### Validating a field value using expression {#validating-a-field-value-using-expression}
+### Validação de um valor de campo usando expressão {#validating-a-field-value-using-expression}
 
-In the purchase order form explained in the previous example, you want to restrict user from ordering more than one quantity of any product that is priced more that 10000. To do this validation, you can write a Validate rule as shown below.
+No form ordem de compra explicado no exemplo anterior, você deseja impedir que o usuário faça pedidos de mais de uma quantidade de qualquer produto com preço superior a 10000. Para fazer essa validação, você pode gravar uma regra Validate como mostrado abaixo.
 
-![Example-validate](assets/example-validate.png)
+![Exemplo-validação](assets/example-validate.png)
 Regra no editor visual
 
 <!--
