@@ -9,14 +9,18 @@ exl-id: 171754a2-1ba5-42dc-b6d2-3d730807cc31
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '2410'
-ht-degree: 0%
+source-wordcount: '2485'
+ht-degree: 1%
 
 ---
 
 # Introdução ao aplicativo AEM Forms {#aem-forms-app}
+
+>[!NOTE]
+>
+>O aplicativo AEM Forms está obsoleto no momento. Para perguntas ou ajuda, contate [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
 
 ## Visão geral {#overview}
 
@@ -26,11 +30,11 @@ O código-fonte do aplicativo AEM Forms está disponível para os clientes por m
 
 O aplicativo AEM Forms é compatível com dispositivos iOS, Android e Windows. Você pode instalar o aplicativo AEM Forms para Android do Google Play, iOS do App Store e Windows da Windows Store.
 
-    [&#x200B; ![google_play](assets/google_play.png)](https://play.google.com/store/apps/details?id=com.adobe.aem.forms)
+    [ ![google_play](assets/google_play.png)](https://play.google.com/store/apps/details?id=com.adobe.aem.forms)
     
-    [&#x200B; ![app_store](assets/app_store.png)](https://itunes.apple.com/us/app/adobe-experience-manager-forms/id1129625976?ls=1&mt=8)
+    [ ![app_store](assets/app_store.png)](https://itunes.apple.com/us/app/adobe-experience-manager-forms/id1129625976?ls=1&amp;mt=8)
     
-    [&#x200B; ![microsoft-badge-icon](assets/microsoft-badge-icon.png)](https://www.microsoft.com/en-us/store/p/adobe-experience-manager-forms/9nd12rlxtgtt)
+    [ ![microsoft-badge-icon](assets/microsoft-badge-icon.png)](https://www.microsoft.com/en-us/store/p/adobe-experience-manager-forms/9nd12rlxtgtt))
 
 Para instalar, personalizar e distribuir o aplicativo em dispositivos iOS, Android ou Windows, consulte [Personalizar, compilar e distribuir o aplicativo AEM Forms](#customize-build-distribute).
 
@@ -45,7 +49,7 @@ Se você tiver um servidor do AEM Forms Workflow, poderá renderizar formulário
 
 ### Aplicativo AEM Forms com servidores usando fluxo de trabalho centrado no Forms no OSGi {#aem-forms-app-with-servers-using-forms-centric-workflow-on-osgi}
 
-Se você tiver um servidor AEM Forms, poderá renderizar formulários adaptáveis como o aplicativo Caixa de entrada AEM e tarefas no aplicativo AEM Forms. Por exemplo, você executa uma empresa bancária e o cliente preenche um aplicativo para usar seus serviços. O aplicativo é associado a um formulário adaptável que aceita informações de seus clientes e as armazena como um envio para revisão. O administrador revisa a tarefa e aprova a solicitação de verificação ao trabalhador de campo. Seu trabalhador de campo carrega o dispositivo móvel para seu cliente e verifica os detalhes.
+Se você tiver um servidor AEM Forms, poderá renderizar formulários adaptáveis como aplicativo da Caixa de entrada do AEM e tarefas no aplicativo AEM Forms. Por exemplo, você executa uma empresa bancária e o cliente preenche um aplicativo para usar seus serviços. O aplicativo é associado a um formulário adaptável que aceita informações de seus clientes e as armazena como um envio para revisão. O administrador revisa a tarefa e aprova a solicitação de verificação ao trabalhador de campo. Seu trabalhador de campo carrega o dispositivo móvel para seu cliente e verifica os detalhes.
 
 ### Formulários autônomos ou aplicativo AEM Forms com servidores sem fluxo de trabalho AEM Forms {#standalone-forms-or-aem-forms-app-with-servers-without-aem-forms-workflow}
 
@@ -72,7 +76,7 @@ Consulte [aplicativo AEM Forms (anteriormente conhecido como Workspace móvel)](
 
 Você pode sincronizar seu aplicativo com o servidor do AEM Forms e trabalhar com formulários em seu dispositivo móvel.
 
-Com o servidor do AEM Forms Workflow, um formulário pode ser associado a um ponto inicial em um processo do workbench e em um aplicativo da Caixa de entrada AEM. Um aplicativo da Caixa de entrada AEM pode ter um formulário adaptável associado a ele. Um ponto inicial pode ter um formulário adaptável, formulário HTML5 ou um conjunto de formulários associado a ele. Um ponto de partida pode ser enviado como uma tarefa ou a tarefa pode ser salva como um rascunho. Para obter mais informações sobre as diferenças entre um aplicativo de Caixa de Entrada AEM e um ponto de partida, consulte [Ações e recursos de fluxos de trabalho de AEM centrados em formulário em fluxos de trabalho OSGi e AEM Forms JEE](capabilities-osgi-jee-workflows.md).
+Com o servidor do AEM Forms Workflow, um formulário pode ser associado a um ponto inicial em um processo do Workbench e em um aplicativo da Caixa de entrada do AEM. Um aplicativo da Caixa de entrada do AEM pode ter um formulário adaptável associado a ele. Um ponto inicial pode ter um formulário adaptável, formulário HTML5 ou um conjunto de formulários associado a ele. Um ponto de partida pode ser enviado como uma tarefa ou a tarefa pode ser salva como um rascunho. Para obter mais informações sobre as diferenças entre um aplicativo da Caixa de Entrada do AEM e um ponto de partida, consulte [Ações e recursos de fluxos de trabalho do AEM centrados em formulário em fluxos de trabalho OSGi e AEM Forms JEE](capabilities-osgi-jee-workflows.md).
 
 Com o servidor do AEM Forms sem fluxo de trabalho do AEM Forms, um formulário habilitado para sincronização no aplicativo é renderizado no aplicativo do AEM Forms. Os Forms estão disponíveis na guia Forms do aplicativo e podem ser enviados ou salvos como rascunho. Formulários adaptáveis e formulários móveis são compatíveis com o aplicativo.
 
@@ -123,7 +127,7 @@ Consulte [Usar salvamento automático no aplicativo AEM Forms](/help/forms/using
 
 ## Diferenças entre a Caixa de entrada do AEM e os recursos do aplicativo AEM Forms {#differences-between-aem-inbox-and-aem-forms-app-features}
 
-Duas das principais maneiras de iniciar um fluxo de trabalho centrado no Forms são usar a [Caixa de entrada AEM](/help/forms/using/manage-applications-inbox.md) e o aplicativo AEM Forms. No entanto, os recursos da Caixa de entrada AEM e do aplicativo AEM Forms são diferentes. A Caixa de entrada AEM funciona somente com [fluxos de trabalho centrados no Forms](/help/forms/using/aem-forms-workflow.md), enquanto o aplicativo AEM Forms funciona com fluxos de trabalho centrados no Forms e gerenciamento de processos. Para obter mais informações sobre as diferenças entre os recursos da Caixa de Entrada do AEM e do aplicativo AEM Forms, consulte [Ações e recursos de fluxos de trabalho do AEM centrados no formulário em fluxos de trabalho OSGi e AEM Forms JEE](capabilities-osgi-jee-workflows.md).
+Duas das principais maneiras de iniciar um fluxo de trabalho centrado no Forms são usando a [Caixa de Entrada do AEM](/help/forms/using/manage-applications-inbox.md) e o aplicativo AEM Forms. No entanto, os recursos da Caixa de entrada do AEM e do aplicativo AEM Forms são diferentes. A Caixa de entrada do AEM funciona somente com [fluxos de trabalho centrados no Forms](/help/forms/using/aem-forms-workflow.md), enquanto o aplicativo AEM Forms funciona com fluxos de trabalho centrados no Forms e gerenciamento de processos. Para obter mais informações sobre as diferenças entre os recursos da Caixa de Entrada do AEM e do aplicativo AEM Forms, consulte [Ações e recursos de fluxos de trabalho do AEM centrados em formulário em fluxos de trabalho OSGi e AEM Forms JEE](capabilities-osgi-jee-workflows.md).
 
 ## Formulários suportados {#supported-forms}
 
@@ -135,7 +139,7 @@ Um formulário adaptável que se adapta dinamicamente às entradas do usuário �
 
 ### Formulário móvel {#mobile-form}
 
-Você pode criar formulários para dispositivos móveis no AEM Forms. Os formulários móveis são renderizados como formulários HTML em dispositivos móveis que se adaptam de acordo com os dispositivos de exibição.
+Você pode criar formulários para dispositivos móveis no AEM Forms. Os formulários móveis são renderizados como formulários do HTML em dispositivos móveis que se adaptam de acordo com os dispositivos de exibição.
 
 ### Formset {#formset}
 
@@ -188,7 +192,7 @@ Para obter a origem do aplicativo AEM Forms, execute as seguintes etapas:
    1. Selecione **[!UICONTROL Forms]** na lista suspensa **[!UICONTROL Solução]**.
    2. Selecione a versão e o tipo do pacote. Você também pode usar a opção **[!UICONTROL Downloads de Pesquisa]** para filtrar os resultados.
 1. Selecione o nome do pacote aplicável ao seu sistema operacional, selecione **[!UICONTROL Aceitar termos do EULA]** e selecione **[!UICONTROL Baixar]**.
-1. Abra o [Gerenciador de Pacotes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=pt-BR) e clique em **[!UICONTROL Carregar Pacote]** para carregar o pacote.
+1. Abra o [Gerenciador de Pacotes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html) e clique em **[!UICONTROL Carregar Pacote]** para carregar o pacote.
 1. Selecione o pacote e clique em **[!UICONTROL Instalar]**.
 
 **Para iOS**:
@@ -209,7 +213,7 @@ Para obter detalhes sobre como criar um aplicativo Windows (.appx), consulte [Co
 
 Para obter detalhes sobre como distribuir o aplicativo via MDM, consulte [Distribuir aplicativo AEM Forms](/help/forms/using/distribute-mobile-workspace-app.md). A distribuição de aplicativos via MDM é aplicável somente para iOS e Android.
 
-## Recommendations para atualizar o Workspace móvel para o aplicativo AEM Forms {#recommendations-to-upgrade-mobile-workspace-to-aem-forms-app}
+## Recomendações para atualizar o Mobile Workspace para o aplicativo AEM Forms {#recommendations-to-upgrade-mobile-workspace-to-aem-forms-app}
 
 Se estiver atualizando para a versão mais recente do aplicativo AEM Forms, leia os seguintes pontos:
 

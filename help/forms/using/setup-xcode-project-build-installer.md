@@ -9,14 +9,18 @@ exl-id: 78ce6107-8821-47d6-86ab-7ab968945e7c
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '773'
+source-wordcount: '839'
 ht-degree: 2%
 
 ---
 
 # Configurar o projeto Xcode e criar o aplicativo iOS{#set-up-the-xcode-project-and-build-the-ios-app}
+
+>[!NOTE]
+>
+>O aplicativo AEM Forms está obsoleto no momento. Para perguntas ou ajuda, contate [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
 
 O AEM Forms fornece o código-fonte completo do aplicativo AEM Forms. A origem contém todos os componentes para criar um aplicativo AEM Forms personalizado. O arquivo morto de código-fonte, `adobe-lc-mobileworkspace-src-<version>.zip`, é parte do pacote `adobe-aemfd-forms-app-src-pkg-<version>.zip` na Distribuição de Software.
 
@@ -28,7 +32,7 @@ Para obter a origem do aplicativo AEM Forms, execute as seguintes etapas:
    1. Selecione **[!UICONTROL Forms]** na lista suspensa **[!UICONTROL Solução]**.
    2. Selecione a versão e o tipo do pacote. Você também pode usar a opção **[!UICONTROL Downloads de Pesquisa]** para filtrar os resultados.
 1. Selecione o nome do pacote aplicável ao seu sistema operacional, selecione **[!UICONTROL Aceitar termos do EULA]** e selecione **[!UICONTROL Baixar]**.
-1. Abra o [Gerenciador de Pacotes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=pt-BR) e clique em **[!UICONTROL Carregar Pacote]** para carregar o pacote.
+1. Abra o [Gerenciador de Pacotes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html) e clique em **[!UICONTROL Carregar Pacote]** para carregar o pacote.
 1. Selecione o pacote e clique em **[!UICONTROL Instalar]**.
 
 1. Para baixar o arquivo morto do código-fonte, abra `https://<server>:<port>/crx/de/content/forms/mobileapps/src/adobe-lc-mobileworkspace-src-<version>.zip` no navegador.
@@ -60,7 +64,7 @@ A tabela a seguir detalha o conteúdo da pasta `adobe-lc-mobileworkspace-src-[ve
   </tr>
   <tr>
    <td><p><code>www</code></p> </td>
-   <td><p>Arquivos HTML, CSS, imagens e JavaScript para o projeto de aplicativo do AEM Forms</p> </td>
+   <td><p>Arquivos HTML, CSS, imagens e JavaScript para o projeto de aplicativo AEM Forms</p> </td>
   </tr>
  </tbody>
 </table>
@@ -85,7 +89,7 @@ Para obter informações detalhadas sobre Assinatura de Código e adicionar disp
 1. Na guia **Configurações de Compilação**, clique em **Todos** e em **Combinados**.
 1. Na lista **Configurações**, expanda **Assinatura de Código**.
 1. Para a **Identidade de Assinatura do Código**, selecione a assinatura apropriada. Para obter informações detalhadas sobre como criar novas assinaturas, consulte [Criação e download de perfis de provisionamento de desenvolvimento](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/CreatingYourTeamProvisioningProfile/CreatingYourTeamProvisioningProfile.html).
-1. Verifique se a mesma assinatura está selecionada para **Depuração**, **Versão** e **Qualquer SDK do iOS**.
+1. Verifique se a mesma assinatura está selecionada para **Depuração**, **Versão** e **Qualquer iOS SDK**.
 1. Substitua o seguinte código no arquivo `AEM Forms-info.plist`:
 
    ```xml
@@ -126,7 +130,7 @@ Para obter informações detalhadas sobre Assinatura de Código e adicionar disp
    >
    >Esta etapa é necessária somente se o aplicativo AEM Forms precisar se conectar a um servidor que não siga os requisitos do App Transport Security.
 
-1. Em **PROJETO**, selecione **AEM Forms** e verifique se a assinatura apropriada está selecionada para **Identidade de Assinatura de Código**, **Depuração**, **Versão** e **Qualquer SDK do iOS**.
+1. Em **PROJETO**, selecione **AEM Forms** e verifique se a assinatura apropriada está selecionada para a **Identidade de Assinatura do Código**, **Depuração**, **Versão** e **Qualquer iOS SDK**.
 1. Conectar um iPad provisionado a um computador Mac.
 1. Selecione o dispositivo provisionado para o projeto **AEM Forms**.
 

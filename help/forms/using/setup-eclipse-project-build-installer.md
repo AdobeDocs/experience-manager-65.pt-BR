@@ -8,14 +8,18 @@ exl-id: 3fb069cf-d3ed-47b0-b6bf-82e110b3b059
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '704'
+source-wordcount: '752'
 ht-degree: 2%
 
 ---
 
 # Criar o aplicativo AEM Forms Android {#build-the-aem-forms-android-app}
+
+>[!NOTE]
+>
+>O aplicativo AEM Forms está obsoleto no momento. Para perguntas ou ajuda, contate [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
 
 Para criar o aplicativo Android para AEM Forms, execute as seguintes etapas na sequência recomendada.
 
@@ -35,7 +39,7 @@ Para baixar o arquivo `adobe-aemfd-forms-app-src-pkg-<version>.zip`, execute as 
    1. Selecione **[!UICONTROL Forms]** na lista suspensa **[!UICONTROL Solução]**.
    2. Selecione a versão e o tipo do pacote. Você também pode usar a opção **[!UICONTROL Downloads de Pesquisa]** para filtrar os resultados.
 1. Selecione o nome do pacote aplicável ao seu sistema operacional, selecione **[!UICONTROL Aceitar termos do EULA]** e selecione **[!UICONTROL Baixar]**.
-1. Abra o [Gerenciador de Pacotes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=pt-BR) e clique em **[!UICONTROL Carregar Pacote]** para carregar o pacote.
+1. Abra o [Gerenciador de Pacotes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html) e clique em **[!UICONTROL Carregar Pacote]** para carregar o pacote.
 1. Selecione o pacote e clique em **[!UICONTROL Instalar]**.
 1. Para baixar o arquivo de código-fonte, abra **https://&lt;server>:&lt;port>/crx/de/content/forms/mobileapps/src/adobe-lc-mobileworkspace-src-&lt;version>.zip** no navegador. O arquivo .zip do aplicativo Android é baixado no dispositivo.
 1. Extraia o conteúdo do arquivo .zip para uma pasta no sistema de arquivos local. Por exemplo, *C:\&lt;Estrutura de Pastas>\adobe-lc-mobileworkspace-src-2.4.20*
@@ -49,8 +53,8 @@ A imagem a seguir exibe a estrutura da pasta `adobe-lc-mobileworkspace-src-<vers
 Defina as seguintes variáveis de ambiente antes de iniciar o processo de compilação para o aplicativo AEM Forms:
 
 * Defina a variável de ambiente JAVA_HOME para o local do software JDK no sistema de arquivos local. Por exemplo, C:\Program Files\Java\jdk1.8.0_181
-* Defina a variável de ambiente do sistema `ANDROID_SDK_ROOT` como o local do SDK para o Android. Por exemplo, C:\Users\&amp;lt;username>\AppData\Local\Android\Sdk
-* Defina a variável de ambiente do sistema `Path` para incluir os locais da pasta de ferramentas e ferramentas da plataforma do Android. Por exemplo, C:\Users\&amp;lt;username>\AppData\Local\Android\Sdk\platform-tools e C:\Users\&amp;lt;username>\AppData\Local\Android\Sdk\tools.
+* Defina a variável de ambiente do sistema `ANDROID_SDK_ROOT` como o local do SDK para o Android. Por exemplo, C:\Users\&lt;username>\AppData\Local\Android\Sdk
+* Defina a variável de ambiente do sistema `Path` para incluir os locais da pasta de ferramentas e ferramentas da plataforma do Android. Por exemplo, C:\Users\&lt;username>\AppData\Local\Android\Sdk\platform-tools e C:\Users\&lt;username>\AppData\Local\Android\Sdk\tools.
 
 ## Criar um aplicativo AEM Forms padrão {#set-up-the-xcode-project}
 

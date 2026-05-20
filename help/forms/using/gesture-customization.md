@@ -9,14 +9,18 @@ exl-id: 6debb1a7-7889-4fdd-87c7-ecb87cc0b1f5
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '309'
+source-wordcount: '328'
 ht-degree: 0%
 
 ---
 
 # Personalização de gesto {#gesture-customization}
+
+>[!NOTE]
+>
+>O aplicativo AEM Forms está obsoleto no momento. Para perguntas ou ajuda, contate [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
 
 É possível personalizar os gestos do aplicativo AEM Forms para fornecer um método distinto de interação com o aplicativo. Por exemplo, é possível adicionar novos gestos para abrir ou fechar uma tarefa ou um ponto inicial.
 
@@ -46,7 +50,7 @@ No aplicativo AEM Forms, o deslizamento para a esquerda abre uma nova tarefa ou 
 
    `"EventName Selector": "Function"`
 
-   Quando você aciona um evento JavaScript chamado `EventName` em um elemento HTML especificado por `Selector`, `Function` é chamado.
+   Quando você aciona um evento do JavaScript chamado `EventName` em um elemento do HTML especificado por `Selector`, o `Function` é chamado.
 
 1. Localizar
 
@@ -71,4 +75,4 @@ No aplicativo AEM Forms, o deslizamento para a esquerda abre uma nova tarefa ou 
 1. Salvar e fechar o arquivo `task.js`.
 1. Crie e execute o aplicativo AEM Forms. Agora você pode abrir um usando o com o deslizamento para a esquerda e para a direita.
 
-Da mesma forma, é possível fazer alterações em outras exibições para várias combinações de gestos, elementos HTML e funções.
+Da mesma forma, é possível fazer alterações em outras exibições para várias combinações de gestos, elementos do HTML e funções.

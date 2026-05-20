@@ -9,14 +9,18 @@ exl-id: 9b8c5933-b783-48f9-b463-15a01e06ee98
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '238'
+source-wordcount: '254'
 ht-degree: 0%
 
 ---
 
 # Personalização de tema {#theme-customization}
+
+>[!NOTE]
+>
+>O aplicativo AEM Forms está obsoleto no momento. Para perguntas ou ajuda, contate [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
 
 Você pode personalizar o código HTML e o arquivo CSS para fornecer uma aparência distinta específica da organização para o aplicativo AEM Forms. Por exemplo, é possível alterar a cor do plano de fundo e a altura das tarefas ou dos pontos iniciais. O exemplo a seguir fornece instruções para alteração:
 

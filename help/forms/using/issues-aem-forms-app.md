@@ -8,22 +8,26 @@ exl-id: caec5fc3-db52-4bf5-8eb2-17e5189ab819
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '675'
+source-wordcount: '697'
 ht-degree: 0%
 
 ---
 
 # Solução de problemas do aplicativo AEM Forms {#troubleshoot-aem-forms-app}
 
+>[!NOTE]
+>
+>O aplicativo AEM Forms está obsoleto no momento. Para perguntas ou ajuda, contate [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
+
 Este artigo descreve as mensagens de erro que podem ser exibidas ao criar o aplicativo AEM Forms e as etapas para resolvê-las.
 
 As seções neste artigo incluem:
 
 * [Perda de anexos para usuários do iOS](/help/forms/using/issues-aem-forms-app.md#attachment-loss-for-ios-users)
-* [os rascunhos do formulário HTML5 enviados pelos usuários do espaço de trabalho não estão visíveis no portal](/help/forms/using/issues-aem-forms-app.md#html-form-drafts-submitted-by-workspace-users-are-not-visible-on-the-portal)
-* [Falha ao carregar formulários HTML5 (não em cache) no aplicativo AEM Forms](/help/forms/using/issues-aem-forms-app.md#html-forms-not-cached-fail-to-load-in-aem-forms-app)
+* [Os rascunhos do formulário do HTML5 enviados pelos usuários do espaço de trabalho não estão visíveis no portal](/help/forms/using/issues-aem-forms-app.md#html-form-drafts-submitted-by-workspace-users-are-not-visible-on-the-portal)
+* [Falha ao carregar os formulários do HTML5 (não armazenados em cache) no aplicativo AEM Forms](/help/forms/using/issues-aem-forms-app.md#html-forms-not-cached-fail-to-load-in-aem-forms-app)
 * [O AEM Forms não é sincronizado no Windows](/help/forms/using/issues-aem-forms-app.md#aem-forms-do-not-sync-on-windows)
 * [Versão do Gradle não suportada](/help/forms/using/issues-aem-forms-app.md#unsupported-version-of-gradle)
 * [Problemas de compatibilidade do plug-in Gradle e Android Gradle](/help/forms/using/issues-aem-forms-app.md#gradle-and-android-gradle-plug-in-compatibility-issues)
@@ -40,9 +44,9 @@ O aplicativo AEM Forms para iOS configurado para sincronização com o AEM Forms
 
 1. Clique em **Salvar**.
 
-## os rascunhos do formulário HTML5 enviados pelos usuários do espaço de trabalho não estão visíveis no portal {#html-form-drafts-submitted-by-workspace-users-are-not-visible-on-the-portal}
+## Os rascunhos do formulário do HTML5 enviados pelos usuários do espaço de trabalho não estão visíveis no portal {#html-form-drafts-submitted-by-workspace-users-are-not-visible-on-the-portal}
 
-Para formulários HTML5 habilitados no aplicativo AEM Forms com **Salvar como rascunho** Perfil de Renderização de HTML, os rascunhos salvos não ficam visíveis para usuários do espaço de trabalho. Para exibir os rascunhos salvos de formulários do HTML5 enviados pelos usuários do espaço de trabalho no portal, execute as seguintes etapas:
+Para formulários HTML5 habilitados no aplicativo AEM Forms com **Salvar como rascunho** Perfil de Renderização do HTML, os rascunhos salvos não ficam visíveis para usuários do espaço de trabalho. Para exibir rascunhos salvos de formulários do HTML5 enviados por usuários do espaço de trabalho no portal, execute as seguintes etapas:
 
 1. Abra o CRXDE e faça logon com credenciais de administrador.
 
@@ -58,7 +62,7 @@ Para formulários HTML5 habilitados no aplicativo AEM Forms com **Salvar como ra
 
 1. Clique em **OK**.
 
-## Falha ao carregar formulários HTML5 (não em cache) no aplicativo AEM Forms {#html-forms-not-cached-fail-to-load-in-aem-forms-app}
+## Falha ao carregar os formulários do HTML5 (não armazenados em cache) no aplicativo AEM Forms {#html-forms-not-cached-fail-to-load-in-aem-forms-app}
 
 Quando o aplicativo AEM Forms é conectado a uma versão mais antiga do servidor AEM Forms, os formulários HTML5 não armazenados em cache não são carregados no aplicativo AEM Forms.
 
