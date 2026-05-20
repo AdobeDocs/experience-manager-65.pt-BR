@@ -8,14 +8,18 @@ exl-id: adff5339-e026-4924-a401-f249f37fc6e6
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '428'
 ht-degree: 0%
 
 ---
 
 # Trabalhar com um formulário {#working-with-a-form}
+
+>[!NOTE]
+>
+>O aplicativo AEM Forms está obsoleto no momento. Para perguntas ou ajuda, contate [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
 
 Se um formulário estiver ativado para sincronização no aplicativo de formulários, ele será baixado e você poderá trabalhar diretamente com ele.
 
@@ -29,10 +33,10 @@ Para sincronizar o formulário no aplicativo AEM Forms:
 
 Para sincronizar vários formulários, na instância do autor, selecione vários formulários no gerenciador de formulários e selecione **Sincronizar com o aplicativo AEM Forms**. Quando o formulário é publicado, o aplicativo AEM Forms pode se conectar ao servidor de publicação e buscar os formulários.
 
-Se o aplicativo Android AFA (AEM Form Application) falhar na sincronização, execute as seguintes etapas para corrigir o problema de sincronização:
+Se o aplicativo Android AFA (AEM Form Application) não for sincronizado, execute as seguintes etapas para corrigir o problema de sincronização:
 
 1. Vá para o **https://[server]:[port]/system/console/configMgr**.
-1. Procure o **[!UICONTROL Manipulador de autenticação de token do Adobe Granite]** e clique em **[!UICONTROL Editar]**.
+1. Pesquise o **[!UICONTROL Manipulador de autenticação de token do Adobe Granite]** e clique em **[!UICONTROL Editar]**.
 1. Selecione a opção **[!UICONTROL Nenhum]** no menu suspenso para o atributo **[!UICONTROL SameSite do atributo cookie de token de logon]**.
 1. Clique em **[!UICONTROL Salvar]**.
 

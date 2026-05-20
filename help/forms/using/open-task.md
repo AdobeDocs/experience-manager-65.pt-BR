@@ -8,16 +8,20 @@ exl-id: 08e267f3-7f90-4e75-aea0-2128e8eb7b30
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '296'
 ht-degree: 0%
 
 ---
 
 # Abrindo uma tarefa {#opening-a-task}
 
-Se o aplicativo Forms do Adobe Experience Manager (AEM) for sincronizado com um AEM Forms Server, você poderá trabalhar com as tarefas atribuídas a você. Tarefas são etapas no Fluxo de trabalho definido no Workbench ou no editor de fluxo de trabalho AEM.
+>[!NOTE]
+>
+>O aplicativo AEM Forms está obsoleto no momento. Para perguntas ou ajuda, contate [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
+
+Se o aplicativo Adobe Experience Manager (AEM) Forms for sincronizado com um AEM Forms Server, você poderá trabalhar com as tarefas atribuídas a você. Tarefas são etapas no Fluxo de trabalho definido no Workbench ou no editor de fluxo de trabalho do AEM.
 
 Outros formulários são salvos como rascunho na guia Rascunhos. Consulte [Salvando um rascunho](/help/forms/using/save-as-draft.md).
 

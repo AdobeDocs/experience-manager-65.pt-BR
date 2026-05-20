@@ -8,20 +8,24 @@ exl-id: b4a23b2e-ab18-402c-8dfa-2533ee692912
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '492'
+source-wordcount: '511'
 ht-degree: 0%
 
 ---
 
 # Salvamento de uma tarefa ou formulário como rascunho {#saving-a-task-or-form-as-a-draft}
 
+>[!NOTE]
+>
+>O aplicativo AEM Forms está obsoleto no momento. Para perguntas ou ajuda, contate [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
+
 A opção salvar como rascunho salva um instantâneo de uma tarefa ou formulário junto com os dados preenchidos no formulário associado. Você também pode criar um rascunho de um modelo. Os rascunhos são salvos no dispositivo móvel e sincronizados com o servidor do Adobe Experience Manager Forms para uma recuperação posterior.
 
 Você pode [atualizar o formulário](/help/forms/using/working-with-form.md), [anotá-lo](/help/forms/using/add-attachments.md) com fotografias e anotações à mão. À medida que você continua a atualizar um formulário, é recomendável salvá-lo como rascunho. Para situações em que você decide enviar um formulário preenchido posteriormente, é útil salvá-lo como rascunho.
 
-Para habilitar o recurso salvar como rascunho para formulários salvos no portal de formulários, consulte [Salvar um formulário HTML como rascunho](/help/forms/using/saving-html5-form-draft.md).
+Para habilitar o recurso salvar como rascunho para formulários salvos no portal de formulários, consulte [Salvando um formulário do HTML5 como rascunho](/help/forms/using/saving-html5-form-draft.md).
 Para configurar o envio de formulários adaptáveis, consulte [Componente de rascunhos e envios](/help/forms/using/draft-submission-component.md). (Não válido para formulários sincronizados com o servidor AEM Forms JEE.)
 
 Para criar um rascunho, abra o formulário e selecione **Salvar como rascunho** ![salvar como rascunho](assets/save-as-draft.png). Forneça o nome do rascunho e selecione **Salvar**. O rascunho é salvo na pasta Rascunhos e sincronizado com o servidor. Ele é salvo na pasta Caixa de saída se o aplicativo estiver offline.

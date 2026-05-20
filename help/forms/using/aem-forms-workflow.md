@@ -8,10 +8,10 @@ exl-id: c3e5f8fc-d2b9-4f76-9a3d-4bc5733f5a5c
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '3667'
-ht-degree: 1%
+source-wordcount: '3742'
+ht-degree: 2%
 
 ---
 
@@ -21,19 +21,19 @@ ht-degree: 1%
 
 As empresas coletam dados de centenas e milhares de formulários, vários sistemas de back-end e fontes de dados online ou offline. Eles também têm um conjunto dinâmico de usuários para tomar decisões sobre os dados, o que envolve processos iterativos de revisão e aprovação.
 
-Juntamente com os fluxos de trabalho de revisão e aprovação para públicos internos e externos, grandes organizações e empresas têm tarefas repetitivas. Por exemplo, converter um documento PDF em outro formato. Quando realizadas manualmente, essas tarefas consomem muito tempo e recursos. As empresas também têm requisitos legais para assinar digitalmente um documento e arquivar dados de formulário para uso posterior em formatos predefinidos.
+Juntamente com os fluxos de trabalho de revisão e aprovação para públicos internos e externos, grandes organizações e empresas têm tarefas repetitivas. Por exemplo, converter um documento do PDF em outro formato. Quando realizadas manualmente, essas tarefas consomem muito tempo e recursos. As empresas também têm requisitos legais para assinar digitalmente um documento e arquivar dados de formulário para uso posterior em formatos predefinidos.
 
 ## Introdução ao fluxo de trabalho centrado no Forms no OSGi {#introduction-to-forms-centric-workflow-on-osgi}
 
-Você pode usar fluxos de trabalho do AEM para criar rapidamente fluxos de trabalho baseados em formulários adaptáveis. Esses workflows podem ser usados para revisão e aprovações, fluxos de processo comercial, para iniciar serviços de documento, integrar ao fluxo de trabalho de assinatura do Adobe Sign e operações semelhantes. Por exemplo, processamento de aplicativo de cartão de crédito, saída de funcionários de fluxos de trabalho de aprovação, salvamento de um formulário como um documento PDF. Além disso, esses workflows podem ser usados em uma organização ou através do firewall de rede.
+Você pode usar fluxos de trabalho do AEM para criar rapidamente fluxos de trabalho baseados em formulários adaptáveis. Esses workflows podem ser usados para revisão e aprovações, fluxos de processo comercial, para iniciar serviços de documentos, integrar ao fluxo de trabalho de assinatura do Adobe Sign e operações semelhantes. Por exemplo, processamento de aplicativo de cartão de crédito, fluxos de trabalho de aprovação de saída de funcionário, salvamento de um formulário como um documento do PDF. Além disso, esses workflows podem ser usados em uma organização ou através do firewall de rede.
 
-Com um fluxo de trabalho centrado na Forms no OSGi, você pode criar e implantar rapidamente fluxos de trabalho para várias tarefas na pilha do OSGi, sem precisar instalar o recurso completo de Gerenciamento de processos na pilha do JEE. O desenvolvimento e o gerenciamento de workflows usam os familiares recursos da Caixa de entrada AEM Workflow e AEM. Os fluxos de trabalho formam a base da automatização de processos de negócios reais que abrangem vários sistemas de software, redes, departamentos e até mesmo organizações.
+Com um fluxo de trabalho centrado na Forms no OSGi, você pode criar e implantar rapidamente fluxos de trabalho para várias tarefas na pilha do OSGi, sem precisar instalar o recurso completo de Gerenciamento de processos na pilha do JEE. O desenvolvimento e o gerenciamento de workflows usam os recursos familiares do fluxo de trabalho do AEM e da caixa de entrada do AEM. Os fluxos de trabalho formam a base da automatização de processos de negócios reais que abrangem vários sistemas de software, redes, departamentos e até mesmo organizações.
 
-Após configurados, esses fluxos de trabalho podem ser acionados manualmente para concluir um processo definido ou executar programaticamente quando os usuários enviarem um formulário ou uma carta de [gerenciamento de correspondência](/help/forms/using/cm-overview.md). Com esses recursos aprimorados do fluxo de trabalho do AEM, a AEM Forms oferece dois recursos distintos, mas semelhantes. Como parte de sua estratégia de implantação, você precisa decidir qual delas funciona para você. Veja uma [comparação](capabilities-osgi-jee-workflows.md) dos fluxos de trabalho AEM centrados no Forms no OSGi e no Gerenciamento de processos no JEE. Além disso, para a topologia de implantação, consulte [Arquitetura e topologias de implantação para o AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md).
+Após configurados, esses fluxos de trabalho podem ser acionados manualmente para concluir um processo definido ou executar programaticamente quando os usuários enviarem um formulário ou uma carta de [gerenciamento de correspondência](/help/forms/using/cm-overview.md). Com esses recursos aprimorados do fluxo de trabalho do AEM, a AEM Forms oferece dois recursos distintos, mas semelhantes. Como parte de sua estratégia de implantação, você precisa decidir qual delas funciona para você. Veja uma [comparação](capabilities-osgi-jee-workflows.md) dos fluxos de trabalho do AEM centrados na Forms no OSGi e no Gerenciamento de processos no JEE. Além disso, para a topologia de implantação, consulte [Arquitetura e topologias de implantação para o AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md).
 
-O fluxo de trabalho centrado no Forms no OSGi estende a [Caixa de entrada do AEM](/help/sites-authoring/inbox.md) e fornece componentes extras (etapas) para o editor de fluxo de trabalho do AEM para adicionar suporte a fluxos de trabalho centrados no AEM Forms. A Caixa de Entrada AEM estendida tem funcionalidades semelhantes ao [AEM Forms Workspace](introduction-html-workspace.md). Juntamente com o gerenciamento de fluxos de trabalho centrados em pessoas (Aprovação, Revisão etc.), é possível usar fluxos de trabalho do AEM para automatizar [operações relacionadas a serviços de documentos](/help/sites-developing/workflows-step-ref.md) (por exemplo, Gerar PDF) e assinar eletronicamente documentos (Adobe Sign).
+O fluxo de trabalho centrado no Forms no OSGi estende a [Caixa de Entrada do AEM](/help/sites-authoring/inbox.md) e fornece componentes extras (etapas) para o editor de fluxo de trabalho do AEM para adicionar suporte a fluxos de trabalho centrados no AEM Forms. A Caixa de Entrada do AEM estendida tem funcionalidades semelhantes ao [AEM Forms Workspace](introduction-html-workspace.md). Além do gerenciamento de fluxos de trabalho centrados em pessoas (Aprovação, Revisão etc.), você pode usar fluxos de trabalho do AEM para automatizar [operações relacionadas a serviços de documentos](/help/sites-developing/workflows-step-ref.md) (por exemplo, Gerar PDF) e assinar eletronicamente documentos (Adobe Sign).
 
-Todas as etapas do fluxo de trabalho do AEM Forms oferecem suporte ao uso de variáveis. As variáveis permitem que as etapas do fluxo de trabalho retenham e transmitam metadados pelas etapas no tempo de execução. É possível criar diferentes tipos de variáveis para armazenar diferentes tipos de dados. Você também pode criar coleções de variáveis (matriz) para armazenar várias instâncias de dados relacionados do mesmo tipo. Normalmente, você usa uma variável ou uma coleção de variáveis quando precisa tomar uma decisão com base no valor que ela contém ou armazenar informações necessárias posteriormente em um processo. Para obter mais informações sobre como usar variáveis nesses componentes de fluxo de trabalho centrados na Forms (etapas), consulte [Fluxo de trabalho centrado na Forms no OSGi - Referência da etapa](../../forms/using/aem-forms-workflow-step-reference.md). Para obter informações sobre como criar e gerenciar variáveis, consulte [Variáveis em fluxos de trabalho de AEM](../../forms/using/variable-in-aem-workflows.md).
+Todas as etapas do fluxo de trabalho do AEM Forms oferecem suporte ao uso de variáveis. As variáveis permitem que as etapas do fluxo de trabalho retenham e transmitam metadados pelas etapas no tempo de execução. É possível criar diferentes tipos de variáveis para armazenar diferentes tipos de dados. Você também pode criar coleções de variáveis (matriz) para armazenar várias instâncias de dados relacionados do mesmo tipo. Normalmente, você usa uma variável ou uma coleção de variáveis quando precisa tomar uma decisão com base no valor que ela contém ou armazenar informações necessárias posteriormente em um processo. Para obter mais informações sobre como usar variáveis nesses componentes de fluxo de trabalho centrados na Forms (etapas), consulte [Fluxo de trabalho centrado na Forms no OSGi - Referência da etapa](../../forms/using/aem-forms-workflow-step-reference.md). Para obter informações sobre como criar e gerenciar variáveis, consulte [Variáveis em fluxos de trabalho do AEM](../../forms/using/variable-in-aem-workflows.md).
 
 O diagrama a seguir representa um procedimento completo para criar, executar e monitorar um fluxo de trabalho centrado no Forms no OSGi.
 
@@ -41,14 +41,14 @@ O diagrama a seguir representa um procedimento completo para criar, executar e m
 
 ## Antes de começar {#before-you-start}
 
-* Um fluxo de trabalho é uma representação de um processo de negócios real. Mantenha o processo de negócios real e a lista dos participantes do processo de negócios prontos. Além disso, mantenha o material de apoio (formulários adaptáveis, documentos PDF e muito mais) pronto antes de começar a criar um fluxo de trabalho.
-* Um fluxo de trabalho pode ter vários estágios. Esses estágios são exibidos na Caixa de entrada do AEM e ajudam a relatar o progresso do fluxo de trabalho. Divida o processo de negócios em estágios lógicos.
-* Você pode configurar a etapa atribuir tarefa de fluxos de trabalho AEM para enviar notificações por email aos usuários ou atribuídos. Portanto, [habilite as notificações por email](#configure-email-service).
-* Um workflow também pode usar o sinal de Adobe para assinaturas digitais. Se você planeja usar o Adobe Sign em um fluxo de trabalho, o [configure o Adobe Sign para o AEM Forms](../../forms/using/adobe-sign-integration-adaptive-forms.md) antes de usá-lo em um fluxo de trabalho.
+* Um fluxo de trabalho é uma representação de um processo de negócios real. Mantenha o processo de negócios real e a lista dos participantes do processo de negócios prontos. Além disso, mantenha o material de apoio (formulários adaptáveis, documentos do PDF e muito mais) pronto antes de começar a criar um fluxo de trabalho.
+* Um fluxo de trabalho pode ter vários estágios. Esses estágios são exibidos na Caixa de entrada do AEM e ajudam a relatar o progresso do workflow. Divida o processo de negócios em estágios lógicos.
+* Você pode configurar a etapa atribuir tarefa dos fluxos de trabalho do AEM para enviar notificações por email aos usuários ou atribuídos. Portanto, [habilite as notificações por email](#configure-email-service).
+* Um fluxo de trabalho também pode usar o Adobe Sign para assinaturas digitais. Se você planeja usar o Adobe Sign em um fluxo de trabalho, o [configure o Adobe Sign para o AEM Forms](../../forms/using/adobe-sign-integration-adaptive-forms.md) antes de usá-lo em um fluxo de trabalho.
 
 ## Criar um modelo de fluxo de trabalho {#create-a-workflow-model}
 
-Um modelo de fluxo de trabalho consiste na lógica e no fluxo de um processo de negócios. Ele é composto por uma série de etapas. Essas etapas são componentes do AEM. É possível estender as etapas do fluxo de trabalho com parâmetros e scripts para fornecer mais funcionalidade e controle, conforme necessário. O AEM Forms fornece algumas etapas além das etapas AEM disponíveis prontas para uso. Para obter uma lista detalhada das etapas do AEM e do AEM Forms, consulte [Referência da etapa do fluxo de trabalho do AEM](/help/sites-developing/workflows-step-ref.md) e [Fluxo de trabalho centrado no Forms no OSGi - Referência da etapa](../../forms/using/aem-forms-workflow.md).
+Um modelo de fluxo de trabalho consiste na lógica e no fluxo de um processo de negócios. Ele é composto por uma série de etapas. Essas etapas são componentes do AEM. É possível estender as etapas do fluxo de trabalho com parâmetros e scripts para fornecer mais funcionalidade e controle, conforme necessário. O AEM Forms fornece algumas etapas além das etapas do AEM disponíveis imediatamente. Para obter uma lista detalhada das etapas do AEM e do AEM Forms, consulte a [Referência da etapa do fluxo de trabalho do AEM](/help/sites-developing/workflows-step-ref.md) e o [fluxo de trabalho centrado no Forms no OSGi - Referência da etapa](../../forms/using/aem-forms-workflow.md).
 
 O AEM fornece uma interface de usuário intuitiva para criar um modelo de fluxo de trabalho usando as etapas de fluxo de trabalho fornecidas. Para obter instruções passo a passo sobre como criar um modelo de fluxo de trabalho, consulte [Criando Modelos de Fluxo de Trabalho](/help/sites-developing/workflows-models.md). O exemplo a seguir fornece instruções passo a passo para criar um modelo de fluxo de trabalho para um fluxo de trabalho de aprovação e revisão:
 
@@ -76,7 +76,7 @@ O exemplo cria um modelo de fluxo de trabalho para uma solicitação de hipoteca
 
 1. Ativar notificações por email. Você pode configurar um fluxo de trabalho centrado no Forms no OSGi para enviar notificações por email aos usuários ou atribuídos. Execute as seguintes configurações para ativar notificações por email:
 
-   1. Vá para o gerenciador de configuração do AEM em `https://[server]:[port]/system/console/configMgr`.
+   1. Vá para o gerenciador de configurações do AEM em `https://[server]:[port]/system/console/configMgr`.
    1. Abra a configuração **[!UICONTROL Day CQ Mail Service]**. Especifique um valor para os campos **[!UICONTROL Nome do host do servidor SMTP]**, **[!UICONTROL Porta do servidor SMTP,]** e **[!UICONTROL &quot;Do&quot; endereço]**. Clique em **[!UICONTROL Salvar]**.
    1. Abra a configuração **[!UICONTROL Day CQ Link Externalizer]**. No campo **[!UICONTROL Domínios]**, especifique o nome do host/endereço IP real e o número da porta para as instâncias locais, de criação e de publicação. Clique em **[!UICONTROL Salvar]**.
 
@@ -86,13 +86,13 @@ O exemplo cria um modelo de fluxo de trabalho para uma solicitação de hipoteca
 
 1. Arraste e solte o navegador de etapas **Atribuir tarefa** no modelo de fluxo de trabalho. Faça dela a primeira etapa do modelo.
 
-   O componente Atribuir tarefa atribui a tarefa, criada por fluxo de trabalho, a um usuário ou grupo. Junto com a atribuição da tarefa, você pode usar o componente para especificar um formulário adaptável ou um PDF não interativo para a tarefa. O formulário adaptável é necessário para aceitar entradas de usuários e PDF não interativos ou um formulário adaptável somente leitura é usado para workflows somente revisão.
+   O componente Atribuir tarefa atribui a tarefa, criada por fluxo de trabalho, a um usuário ou grupo. Junto com a atribuição da tarefa, você pode usar o componente para especificar um formulário adaptável ou um PDF não interativo para a tarefa. O formulário adaptável é necessário para aceitar a entrada de usuários e o PDF não interativo, ou um formulário adaptável somente leitura é usado para fluxos de trabalho somente revisão.
 
    Você também pode usar a etapa para controlar o comportamento da tarefa. Por exemplo, criar um documento de registro automático, atribuir a tarefa a um usuário ou grupo específico, o caminho dos dados enviados, o caminho dos dados a serem pré-preenchidos e as ações padrão. Para obter informações detalhadas sobre as opções da etapa atribuir tarefa, consulte o [fluxo de trabalho centrado no Forms no OSGi - Referência da etapa](../../forms/using/aem-forms-workflow.md).
 
    ![editor de fluxo de trabalho](assets/workflow-editor.png)
 
-   Para o exemplo de aplicativo de hipoteca, configure a etapa atribuir tarefa para usar um formulário adaptável somente leitura e exibir o Documento de PDF quando a tarefa for concluída. Além disso, selecione para o grupo de usuários que tem permissão para aprovar a solicitação de empréstimo. Na guia **Ações**, desabilite a opção **Enviar**. Crie uma variável **actionTaken** do tipo de dados String e especifique a variável como a **Variável de Rota**. Por exemplo, actionTaken. Além disso, adicione as rotas Approve e Reject. As rotas são exibidas como ações separadas (botões) na Caixa de entrada do AEM. O fluxo de trabalho seleciona uma ramificação com base na ação (botão) tocada pelo usuário.
+   Para o exemplo de aplicativo de hipoteca, configure a etapa atribuir tarefa para usar um formulário adaptável Somente leitura e exibir o Documento do PDF após a conclusão da tarefa. Além disso, selecione para o grupo de usuários que tem permissão para aprovar a solicitação de empréstimo. Na guia **Ações**, desabilite a opção **Enviar**. Crie uma variável **actionTaken** do tipo de dados String e especifique a variável como a **Variável de Rota**. Por exemplo, actionTaken. Além disso, adicione as rotas Approve e Reject. As rotas são exibidas como ações separadas (botões) na Caixa de entrada do AEM. O fluxo de trabalho seleciona uma ramificação com base na ação (botão) tocada pelo usuário.
 
    É possível importar o pacote de exemplo, disponível para download no início da seção, para o conjunto completo de valores de todos os campos da etapa atribuir tarefa configurada, por exemplo, aplicativo de hipoteca.
 
@@ -100,7 +100,7 @@ O exemplo cria um modelo de fluxo de trabalho para uma solicitação de hipoteca
 
    Você pode definir a expressão de roteamento para uma ramificação usando uma definição de regra, um script ECMA ou um script externo.
 
-   Use o editor de expressão para criar expressões de roteamento para Ramificação 1 e Ramificação 2. Essas expressões de roteamento ajudam a escolher uma ramificação com base na ação do usuário na Caixa de entrada AEM.
+   Use o editor de expressão para criar expressões de roteamento para Ramificação 1 e Ramificação 2. Essas expressões de roteamento ajudam a escolher uma ramificação com base na ação do usuário na Caixa de entrada do AEM.
 
    **Expressão de roteamento para a Ramificação 1**
 
@@ -118,7 +118,7 @@ O exemplo cria um modelo de fluxo de trabalho para uma solicitação de hipoteca
 
 1. Adicione outras etapas do fluxo de trabalho para criar a lógica de negócios.
 
-   Para o exemplo de hipoteca, adicione um gerar documento de registro, duas etapas atribuir tarefa e uma etapa assinar documento à Ramificação 1 do modelo, conforme exibido na imagem abaixo. Uma etapa da tarefa de atribuição é exibir e enviar **documentos de empréstimo a serem assinados ao candidato** e outra componente da tarefa de atribuição é **exibir documentos assinados**. Além disso, adicione um componente Atribuir tarefa à ramificação 2. Ela é ativada quando um usuário toca em Rejeitar na Caixa de entrada do AEM.
+   Para o exemplo de hipoteca, adicione um gerar documento de registro, duas etapas atribuir tarefa e uma etapa assinar documento à Ramificação 1 do modelo, conforme exibido na imagem abaixo. Uma etapa da tarefa de atribuição é exibir e enviar **documentos de empréstimo a serem assinados ao candidato** e outra componente da tarefa de atribuição é **exibir documentos assinados**. Além disso, adicione um componente Atribuir tarefa à ramificação 2. Está ativado quando um usuário toca em Rejeitar na Caixa de entrada do AEM.
 
    Para o conjunto completo de valores de todos os campos das etapas atribuir tarefa, etapa documento de registro e etapa assinar documento configuradas, por exemplo, aplicativo de hipoteca, importar o pacote de exemplo, disponível para download no início desta seção.
 
@@ -128,7 +128,7 @@ O exemplo cria um modelo de fluxo de trabalho para uma solicitação de hipoteca
 
 ## Criar um aplicativo de fluxo de trabalho centrado no Forms {#create-a-forms-centric-workflow-application}
 
-O aplicativo é o formulário adaptável associado ao fluxo de trabalho. Quando um aplicativo é enviado por meio da Caixa de entrada, ele inicia o fluxo de trabalho associado. Para disponibilizar um fluxo de trabalho do Forms como um aplicativo na Caixa de entrada AEM e no aplicativo AEM Forms, faça o seguinte para criar um aplicativo de fluxo de trabalho:
+O aplicativo é o formulário adaptável associado ao fluxo de trabalho. Quando um aplicativo é enviado por meio da Caixa de entrada, ele inicia o fluxo de trabalho associado. Para disponibilizar um fluxo de trabalho do Forms como um aplicativo na Caixa de entrada do AEM e no aplicativo do AEM Forms, faça o seguinte para criar um aplicativo de fluxo de trabalho:
 
 >[!NOTE]
 >
@@ -145,7 +145,7 @@ O aplicativo é o formulário adaptável associado ao fluxo de trabalho. Quando 
   </tr>
   <tr>
    <td>Título</td>
-   <td>O título é visível na Caixa de entrada AEM e ajuda os usuários a escolher um aplicativo. Mantenha-o descritivo. Por exemplo, Aplicativo de Abertura de Conta de Poupança.<br /> </td>
+   <td>O título é visível na Caixa de entrada do AEM e ajuda os usuários a escolher um aplicativo. Mantenha-o descritivo. Por exemplo, Aplicativo de Abertura de Conta de Poupança.<br /> </td>
   </tr>
   <tr>
    <td>Nome </td>
@@ -157,11 +157,11 @@ O aplicativo é o formulário adaptável associado ao fluxo de trabalho. Quando 
   </tr>
   <tr>
    <td>Formulário adaptável</td>
-   <td><p>Especifique o caminho de um formulário adaptável. Quando um usuário inicia um aplicativo, o formulário adaptável especificado é exibido.</p> <p><strong>Observação</strong>: os aplicativos de fluxo de trabalho não oferecem suporte a formulários e documentos de PDF que tenham mais de uma página ou exigem rolagem no Apple iPad. Quando um aplicativo é aberto no Apple iPad e o formulário adaptável ou o documento PDF é maior do que uma página, os campos de formulário e o conteúdo da segunda página são perdidos.</p> </td>
+   <td><p>Especifique o caminho de um formulário adaptável. Quando um usuário inicia um aplicativo, o formulário adaptável especificado é exibido.</p> <p><strong>Observação</strong>: os aplicativos de fluxo de trabalho não oferecem suporte a formulários e documentos do PDF com mais de uma página ou exigem rolagem no Apple iPad. Quando um aplicativo é aberto no Apple iPad e o formulário adaptável ou o documento do PDF é maior que uma página, os campos de formulário e o conteúdo da segunda página são perdidos.</p> </td>
   </tr>
   <tr>
    <td>Grupo de acesso</td>
-   <td><p>Selecione um grupo. O aplicativo está visível na Caixa de entrada AEM somente para os membros do grupo selecionado. A opção access group disponibiliza todos os grupos do grupo workflow-users para seleção. </p> <br /> </td>
+   <td><p>Selecione um grupo. O aplicativo está visível na Caixa de Entrada do AEM somente para os membros do grupo selecionado. A opção access group disponibiliza todos os grupos do grupo workflow-users para seleção. </p> <br /> </td>
   </tr>
   <tr>
    <td>Preencher Serviço</td>
@@ -190,7 +190,7 @@ O aplicativo é o formulário adaptável associado ao fluxo de trabalho. Quando 
 
 É possível iniciar ou acionar um fluxo de trabalho centrado no Forms ao:
 
-* [Envio de um aplicativo da Caixa de entrada AEM](#inbox)
+* [Envio de um aplicativo da Caixa de entrada do AEM](#inbox)
 * [Envio de um aplicativo do aplicativo AEM Forms](#afa)
 
 * [Envio de um formulário adaptável](#af)
@@ -198,7 +198,7 @@ O aplicativo é o formulário adaptável associado ao fluxo de trabalho. Quando 
 
 * [Enviar uma comunicação interativa ou uma carta](#letter)
 
-### Envio de um aplicativo da Caixa de entrada AEM {#inbox}
+### Envio de um aplicativo da Caixa de entrada do AEM {#inbox}
 
 O aplicativo de workflow que você criou está disponível como um aplicativo na Caixa de entrada. Os usuários que são membros do grupo de usuários do fluxo de trabalho podem preencher e enviar o aplicativo que aciona o fluxo de trabalho associado. Para obter informações sobre como usar a Caixa de Entrada do AEM para enviar aplicativos e gerenciar tarefas, consulte [Gerenciar aplicativos e tarefas do Forms na Caixa de Entrada do AEM](../../forms/using/manage-applications-inbox.md).
 
@@ -208,13 +208,13 @@ O aplicativo AEM Forms é sincronizado com um servidor do AEM Forms e permite al
 
 ### Envio de um formulário adaptável {#af}
 
-É possível configurar as ações de envio de um formulário adaptável para iniciar um fluxo de trabalho no envio do formulário adaptável. Formulários adaptáveis fornecem a ação de envio **Chamar um Fluxo de Trabalho AEM** para iniciar um fluxo de trabalho no envio de um formulário adaptável. Para obter informações detalhadas sobre a ação de envio, consulte [Configuração da ação de envio](../../forms/using/configuring-submit-actions.md). Para enviar um formulário adaptável por meio do aplicativo AEM Forms, habilite Sincronizar com o aplicativo AEM Forms nas propriedades do formulário adaptável.
+É possível configurar as ações de envio de um formulário adaptável para iniciar um fluxo de trabalho no envio do formulário adaptável. Formulários adaptáveis fornecem a ação de envio **Chamar um Fluxo de Trabalho do AEM** para iniciar um fluxo de trabalho no envio de um formulário adaptável. Para obter informações detalhadas sobre a ação de envio, consulte [Configuração da ação de envio](../../forms/using/configuring-submit-actions.md). Para enviar um formulário adaptável por meio do aplicativo AEM Forms, habilite Sincronizar com o aplicativo AEM Forms nas propriedades do formulário adaptável.
 
-É possível configurar um formulário adaptável para sincronizar, enviar e acionar um fluxo de trabalho do aplicativo AEM Forms. Para obter detalhes, consulte [trabalhando com um formulário](/help/forms/using/working-with-form.md).
+<!-- You can configure an adaptive form to sync, submit, and trigger a workflow from AEM Forms app. For details, see [working with a form](/help/forms/using/working-with-form.md).-->
 
 ### Uso de uma pasta monitorada {#watched}
 
-Um administrador (um membro do grupo de administradores de fd) pode configurar uma pasta de rede para executar um fluxo de trabalho pré-configurado quando um usuário coloca um arquivo (como um arquivo de PDF) na pasta. Após a conclusão do workflow, ele pode salvar o arquivo de resultado em uma pasta de saída especificada. Essa pasta é conhecida como [Pasta monitorada](../../forms/using/watched-folder-in-aem-forms.md). Execute o seguinte procedimento para configurar uma pasta monitorada para iniciar um workflow:
+Um administrador (um membro do grupo fd-administrator) pode configurar uma pasta de rede para executar um fluxo de trabalho pré-configurado quando um usuário coloca um arquivo (como um arquivo do PDF) na pasta. Após a conclusão do workflow, ele pode salvar o arquivo de resultado em uma pasta de saída especificada. Essa pasta é conhecida como [Pasta monitorada](../../forms/using/watched-folder-in-aem-forms.md). Execute o seguinte procedimento para configurar uma pasta monitorada para iniciar um workflow:
 
 1. Na instância do autor do AEM, vá para ![tools-1](assets/tools-1.png) > **[!UICONTROL Forms]** > **[!UICONTROL Configurar a pasta monitorada]**. Uma lista de pastas monitoradas já configuradas é exibida.
 1. Selecione **[!UICONTROL Novo]**. Uma lista de campos é exibida. Especifique um valor para os seguintes campos a fim de configurar uma Pasta monitorada para um fluxo de trabalho:
@@ -231,7 +231,7 @@ Um administrador (um membro do grupo de administradores de fd) pode configurar u
   </tr>
   <tr>
    <td><span class="uicontrol">Caminho</code></td>
-   <td>Especifique o local físico da Pasta monitorada. Em um ambiente em cluster, use uma pasta de rede compartilhada que seja acessível a partir do nó de cluster AEM.</td>
+   <td>Especifique o local físico da Pasta monitorada. Em um ambiente em cluster, use uma pasta de rede compartilhada que possa ser acessada a partir do nó de cluster do AEM.</td>
   </tr>
   <tr>
    <td><span class="uicontrol">Processar arquivos usando</code></td>
@@ -252,13 +252,13 @@ Um administrador (um membro do grupo de administradores de fd) pode configurar u
 
    | Texto | Descrição |
    |---|---|
-   | Filtro do mapeador de carga útil | Quando você cria uma pasta monitorada, ela cria uma estrutura de pastas no repositório crx. A estrutura de pastas pode servir como uma carga para o fluxo de trabalho. Você pode escrever um script para mapear um fluxo de trabalho AEM para aceitar entradas da estrutura de pastas monitoradas. Uma implementação pronta para uso está disponível e listada no Filtro do mapeador de carga útil. Se você não tiver uma implementação personalizada, selecione a implementação padrão. |
+   | Filtro do mapeador de carga útil | Quando você cria uma pasta monitorada, ela cria uma estrutura de pastas no repositório crx. A estrutura de pastas pode servir como uma carga para o fluxo de trabalho. Você pode gravar um script para mapear um fluxo de trabalho do AEM para aceitar entradas da estrutura de pastas monitoradas. Uma implementação pronta para uso está disponível e listada no Filtro do mapeador de carga útil. Se você não tiver uma implementação personalizada, selecione a implementação padrão. |
 
    A guia Advanced contém mais campos. A maioria desses campos contém um valor padrão. Para saber mais sobre todos os campos, consulte o artigo [Criar ou Configurar uma pasta monitorada](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md).
 
 ### Enviar uma comunicação interativa ou uma carta {#letter}
 
-Você pode associar e executar um fluxo de trabalho centrado no Forms no OSGi no envio de uma comunicação interativa ou de uma carta. No gerenciamento de correspondências, os fluxos de trabalho são usados para comunicações e cartas interativas de pós-processamento. Por exemplo, envio por email, impressão, fax ou arquivamento de cartas finais. Para obter etapas detalhadas, consulte [processamento de comunicações e cartas interativas no Post](../../forms/using/submit-letter-topostprocess.md).
+Você pode associar e executar um fluxo de trabalho centrado no Forms no OSGi no envio de uma comunicação interativa ou de uma carta. No gerenciamento de correspondências, os fluxos de trabalho são usados para comunicações e cartas interativas de pós-processamento. Por exemplo, envio por email, impressão, fax ou arquivamento de cartas finais. Para obter etapas detalhadas, consulte [Pós-processamento de comunicações e cartas interativas](../../forms/using/submit-letter-topostprocess.md).
 
 ## Configurações adicionais {#additional-configurations}
 
@@ -266,17 +266,17 @@ Você pode associar e executar um fluxo de trabalho centrado no Forms no OSGi no
 
 Você pode usar as etapas Atribuir tarefa e Enviar email dos fluxos de trabalho do AEM para enviar um email. Execute as seguintes etapas para especificar servidores de e-mail e outras configurações necessárias para enviar e-mails:
 
-1. Vá para o gerenciador de configuração do AEM em `https://[server]:[port]/system/console/configMgr`.
+1. Vá para o gerenciador de configurações do AEM em `https://[server]:[port]/system/console/configMgr`.
 1. Abra a configuração **[!UICONTROL Day CQ Mail Service]**. Especifique um valor para os campos **[!UICONTROL Nome do host do servidor SMTP]**, **[!UICONTROL Porta do servidor SMTP,]** e **[!UICONTROL &quot;Do&quot; endereço]**. Clique em **[!UICONTROL Salvar]**.
 1. Abra a configuração **[!UICONTROL Day CQ Link Externalizer]**. No campo **[!UICONTROL Domínios]**, especifique o nome do host/endereço IP real e o número da porta para as instâncias locais, de criação e de publicação. Clique em **[!UICONTROL Salvar]**.
 
 ### Limpar instâncias de fluxo de trabalho {#purge-workflow-instances}
 
-Minimizar o número de instâncias de fluxo de trabalho aumenta o desempenho do mecanismo de fluxo de trabalho, para que você possa remover regularmente do repositório as instâncias de fluxo de trabalho concluídas ou em execução. Para obter informações detalhadas, consulte [Limpeza regular de instâncias de fluxo de trabalho](/help/sites-administering/workflows-administering.md#regular) limpeza de instâncias de fluxo de trabalho.
+Minimizar o número de instâncias de fluxo de trabalho aumenta o desempenho do motor de workflow. Portanto, você pode remover regularmente do repositório as instâncias de fluxo de trabalho concluídas ou em execução. Para obter informações detalhadas, consulte [Limpeza regular de instâncias de fluxo de trabalho](/help/sites-administering/workflows-administering.md#regular) limpeza de instâncias de fluxo de trabalho.
 
 ## Parametrizar dados sigilosos para variáveis de fluxo de trabalho e armazená-los em armazenamentos de dados externos {#externalize-wf-variables}
 
-Quaisquer dados enviados de formulários adaptáveis para fluxos de trabalho do [!DNL Experience Manager] podem ter PII (Informações de identificação pessoal) ou SPD (Dados pessoais confidenciais) dos usuários finais de sua empresa. No entanto, não é obrigatório armazenar seus dados no [!DNL Adobe Experience Manager] [repositório JCR](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-jcr.html?lang=pt-BR). Você pode externalizar o armazenamento de dados do usuário final para seu armazenamento de dados gerenciado (por exemplo, armazenamento Azure Blob) parametrizando as informações em [variáveis de fluxo de trabalho](/help/forms/using/variable-in-aem-workflows.md).
+Quaisquer dados enviados de formulários adaptáveis para fluxos de trabalho do [!DNL Experience Manager] podem ter PII (Informações de identificação pessoal) ou SPD (Dados pessoais confidenciais) dos usuários finais de sua empresa. No entanto, não é obrigatório armazenar seus dados no [!DNL Adobe Experience Manager] [repositório JCR](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-jcr.html?lang=pt-BR). Você pode externalizar o armazenamento de dados do usuário final para seu armazenamento de dados gerenciado (por exemplo, armazenamento Azure blob) parametrizando as informações em [variáveis de fluxo de trabalho](/help/forms/using/variable-in-aem-workflows.md).
 
 Em um fluxo de trabalho do Forms [!DNL Adobe Experience Manager], os dados são processados e transmitidos por uma série de etapas do fluxo de trabalho por meio de variáveis de fluxo de trabalho. Essas variáveis são propriedades nomeadas ou pares de valores chave que são armazenados no nó de metadados das instâncias de fluxo de trabalho; por exemplo, `/var/workflow/instances/<serverid>/<datebucket>/<uniquenameof model>_<id>/data/metaData`. Essas variáveis de fluxo de trabalho podem ser externalizadas para um repositório separado que não seja o JCR e processadas por [!DNL Adobe Experience Manager] fluxos de trabalho. [!DNL Adobe Experience Manager] fornece a API `[!UICONTROL UserMetaDataPersistenceProvider]` para armazenar as variáveis de fluxo de trabalho no armazenamento externo gerenciado. Para saber mais sobre como Usar variáveis de fluxo de trabalho para armazenamentos de dados de propriedade do cliente no [!DNL Adobe Experience Manager], consulte [Administrar variáveis de fluxo de trabalho para armazenamentos de dados externos](/help/sites-administering/workflows-administering.md#using-workflow-variables-customer-datastore).
 [!DNL Adobe] fornece a seguinte [amostra](https://github.com/adobe/workflow-variable-externalizer) para armazenar variáveis do mapa de metadados do fluxo de trabalho para o armazenamento de blobs do Azure, usando a API [UserMetaDataPersistenceProvider](https://github.com/adobe/workflow-variable-externalizer/blob/master/README.md). Nas linhas semelhantes, você pode usar a amostra como guia para usar a API [UserMetaDataPersistenceProvider] para externalizar as variáveis de fluxo de trabalho em qualquer outro armazenamento de dados externo a [!DNL Adobe Experience Manager] e gerenciar as mesmas.
@@ -336,11 +336,11 @@ Para configurar um modelo de fluxo de trabalho do AEM para um armazenamento de d
 
 ### Diretrizes para fluxos de trabalho do AEM para armazenamento de dados externo {#guidelines-workflows-external-data-storage}
 
-Estas são as diretrizes quando você usa fluxos de trabalho do [!DNL Adobe Experience Manager] e armazena dados em armazenamentos de dados externos (por exemplo, servidor de armazenamento do Microsoft Azure):
+Estas são as diretrizes ao usar fluxos de trabalho do [!DNL Adobe Experience Manager] e armazenar dados em armazenamentos de dados externos (por exemplo, servidor de armazenamento Microsoft Azure):
 
 * Use variáveis para armazenar dados enquanto define arquivos de dados de entrada e saída e anexos em etapas de modelo de fluxo de trabalho. Não selecione as opções **[!UICONTROL Relativo à Carga]** e **[!UICONTROL Disponível em um caminho absoluto]**. As opções **[!UICONTROL Relativo à Carga]** e **[!UICONTROL Disponível em um caminho absoluto]** não são exibidas automaticamente após [configurar um  [!DNL Adobe Experience Manager] modelo de fluxo de trabalho para armazenamento de dados externo](#configure-aem-wf-model).
 
-* Use variáveis para armazenar arquivos de dados e anexos ao enviar um formulário adaptável a um fluxo de trabalho do AEM. Não selecione a opção **[!UICONTROL Relativo à Carga]** ao enviar um formulário adaptável para um fluxo de trabalho [!DNL Adobe Experience Manager]. A opção **[!UICONTROL Relativo à carga]** não é exibida automaticamente depois que você [configura um  [!DNL Adobe Experience Manager] modelo de fluxo de trabalho para armazenamento de dados externo](#configure-aem-wf-model).
+* Use variáveis para armazenar arquivos de dados e anexos ao enviar um formulário adaptável para um fluxo de trabalho do AEM. Não selecione a opção **[!UICONTROL Relativo à Carga]** ao enviar um formulário adaptável para um fluxo de trabalho [!DNL Adobe Experience Manager]. A opção **[!UICONTROL Relativo à carga]** não é exibida automaticamente depois que você [configura um  [!DNL Adobe Experience Manager] modelo de fluxo de trabalho para armazenamento de dados externo](#configure-aem-wf-model).
 
 * Não use uma etapa de fluxo de trabalho [!DNL Adobe Experience Manager] personalizada em um modelo de fluxo de trabalho para armazenar dados no repositório [!UICONTROL CRX DE].
 

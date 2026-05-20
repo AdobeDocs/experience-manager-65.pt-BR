@@ -9,14 +9,18 @@ exl-id: 9333705b-9944-4a74-a30f-7d9ec85fd824
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '910'
 ht-degree: 1%
 
 ---
 
 # Personalização da marca {#branding-customization}
+
+>[!NOTE]
+>
+>O aplicativo AEM Forms está obsoleto no momento. Para perguntas ou ajuda, contate [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
 
 É possível personalizar o ícone do aplicativo, o nome do aplicativo, as imagens de inicialização e a página de logon para fornecer uma aparência distinta e específica da organização para o aplicativo AEM Forms. Por exemplo, você pode alterar as imagens para usar logotipos da sua organização. O aplicativo AEM Forms é compatível com as seguintes personalizações:
 

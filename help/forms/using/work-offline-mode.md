@@ -8,14 +8,18 @@ exl-id: ba4ceef1-510d-41ef-94b8-4834fb7de804
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '532'
+source-wordcount: '549'
 ht-degree: 0%
 
 ---
 
 # Trabalhar no modo offline {#working-in-the-offline-mode}
+
+>[!NOTE]
+>
+>O aplicativo AEM Forms está obsoleto no momento. Para perguntas ou ajuda, contate [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
 
 O modo offline do aplicativo AEM Forms permite que você trabalhe sem interrupções, mesmo que o aplicativo fique offline. Você pode abrir, atualizar e enviar um formulário sem precisar de conectividade de rede.
 

@@ -8,14 +8,18 @@ exl-id: 3fb069cf-d3ed-47b0-b6bf-82e110b3b059
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '704'
+source-wordcount: '752'
 ht-degree: 2%
 
 ---
 
 # Criar o aplicativo AEM Forms Android {#build-the-aem-forms-android-app}
+
+>[!NOTE]
+>
+>O aplicativo AEM Forms está obsoleto no momento. Para perguntas ou ajuda, contate [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
 
 Para criar o aplicativo Android para AEM Forms, execute as seguintes etapas na sequência recomendada.
 
@@ -49,8 +53,8 @@ A imagem a seguir exibe a estrutura da pasta `adobe-lc-mobileworkspace-src-<vers
 Defina as seguintes variáveis de ambiente antes de iniciar o processo de compilação para o aplicativo AEM Forms:
 
 * Defina a variável de ambiente JAVA_HOME para o local do software JDK no sistema de arquivos local. Por exemplo, C:\Program Files\Java\jdk1.8.0_181
-* Defina a variável de ambiente do sistema `ANDROID_SDK_ROOT` como o local do SDK para o Android. Por exemplo, C:\Users\&amp;lt;username>\AppData\Local\Android\Sdk
-* Defina a variável de ambiente do sistema `Path` para incluir os locais da pasta de ferramentas e ferramentas da plataforma do Android. Por exemplo, C:\Users\&amp;lt;username>\AppData\Local\Android\Sdk\platform-tools e C:\Users\&amp;lt;username>\AppData\Local\Android\Sdk\tools.
+* Defina a variável de ambiente do sistema `ANDROID_SDK_ROOT` como o local do SDK para o Android. Por exemplo, C:\Users\&lt;username>\AppData\Local\Android\Sdk
+* Defina a variável de ambiente do sistema `Path` para incluir os locais da pasta de ferramentas e ferramentas da plataforma do Android. Por exemplo, C:\Users\&lt;username>\AppData\Local\Android\Sdk\platform-tools e C:\Users\&lt;username>\AppData\Local\Android\Sdk\tools.
 
 ## Criar um aplicativo AEM Forms padrão {#set-up-the-xcode-project}
 

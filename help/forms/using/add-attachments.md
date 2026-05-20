@@ -9,14 +9,18 @@ exl-id: 82282e2d-63a1-47e9-b2ec-f50a4bd32bd3
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '562'
+source-wordcount: '583'
 ht-degree: 0%
 
 ---
 
 # Adicionando anexos{#adding-attachments}
+
+>[!NOTE]
+>
+>O aplicativo AEM Forms está obsoleto no momento. Para perguntas ou ajuda, contate [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
 
 ## Adicionar anexos em formulários sincronizados com o servidor do AEM Forms Workflow (AEM Forms no JEE) {#adding-annotations}
 
@@ -71,7 +75,7 @@ A opção **Notas** permite adicionar rabiscos à mão livre e anexos de texto e
 
    ![Interface de assinatura](assets/scribble-ui.png)
 
-   Rabiscar
+   Rabisco
 
    Você pode usar as seguintes opções na interface Rabiscar:
 

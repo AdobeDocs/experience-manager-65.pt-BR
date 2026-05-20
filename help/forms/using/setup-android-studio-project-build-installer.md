@@ -1,6 +1,6 @@
 ---
-title: Configurar o projeto do Android&trade; studio e criar o aplicativo do Android&trade;
-description: Etapas para configurar o projeto Android&trade; Studio e criar o instalador do aplicativo Adobe Experience Manager (AEM) Forms
+title: Configurar o projeto do Android&trade; studio e criar o aplicativo Android&trade;
+description: Etapas para configurar o projeto do Android&trade; Studio e criar o instalador para o aplicativo do Adobe Experience Manager (AEM) Forms
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: forms-app
@@ -8,16 +8,20 @@ exl-id: 47d6af00-34d8-4e5d-8117-86fc1b6f58cb
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '584'
+source-wordcount: '613'
 ht-degree: 2%
 
 ---
 
 # Configure o projeto Android™ studio e crie o aplicativo Android™ {#set-up-the-android-studio-project-and-build-the-android-app}
 
-Este artigo é para a criação do aplicativo AEM Forms 6.3.1.1 e versões posteriores. Para criar um aplicativo a partir do código-fonte do Aplicativo AEM Forms 6.3, consulte [Configurar o projeto Eclipse e criar o aplicativo Android™](/help/forms/using/setup-eclipse-project-build-installer.md).
+>[!NOTE]
+>
+>O aplicativo AEM Forms está obsoleto no momento. Para perguntas ou ajuda, contate [aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com).
+
+Este artigo é para a criação do Aplicativo AEM Forms 6.3.1.1 e versões posteriores. Para criar um aplicativo a partir do código-fonte do Aplicativo AEM Forms 6.3, consulte [Configurar o projeto Eclipse e criar o aplicativo Android™](/help/forms/using/setup-eclipse-project-build-installer.md).
 
 A AEM Forms fornece o código-fonte completo do aplicativo AEM Forms. A origem contém todos os componentes para criar um aplicativo AEM Forms personalizado. O arquivo morto de código-fonte, `adobe-lc-mobileworkspace-src-<version>.zip`, é parte do pacote `adobe-aemfd-forms-app-src-pkg-<version>.zip` na Distribuição de Software.
 
