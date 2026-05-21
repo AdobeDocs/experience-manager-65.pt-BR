@@ -6,7 +6,7 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 7eafeae8f504ab27a27ec54a0fc1e29cc881bcf7
+source-git-commit: cc10229ca767a803fe0b24b1b4b47111e6c88cdd
 workflow-type: tm+mt
 source-wordcount: '7111'
 ht-degree: 3%
@@ -623,16 +623,6 @@ Os seguintes problemas têm uma correção disponível para download e instalaç
 
 * **FORMS-23703** Quando a regra `contains` é configurada sem um valor padrão, a validação do Server Side para um Formulário adaptável falha. Você pode instalar a última versão do [AEM Forms 6.5.25.0 Service Pack](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases) para corrigir o problema.
 * **Os conectores do Modelo de Dados de Formulário do GRANITE-63681** podem não ser autenticados porque as palavras-chave e o padrão regex necessários não são permitidos por padrão. Para resolver o problema, baixe e instale o hotfix do [link](/help/release-notes/aem-forms-hotfix.md).
-
-  <!--
-  To resolve the issue, add the following via the Configuration Manager (`/system/console/configmgr`):
-
-  * **Keywords:** `fdm-client-secret`, `oauth-client-secret`
-  * **Regex:** `^\[/conf/[^/]+(/[^/]+)?/settings/dam/cfm/models/[^,\]]+(?:,/conf/[^/]+(/[^/]+)?/settings/dam/cfm/models/[^,\]]+)*\]$`
-
-    >[!VIDEO](https://video.tv.adobe.com/v/3479697)
-  -->
-
 * A **conversão de FORMS-23979** de HTML para PDF (PDFG) pode apresentar tempos limite intermitentes. Posteriormente, uma versão mais recente do complemento do Forms para SP24 foi lançada, que inclui a correção. Se você encontrar esse problema, atualize seu ambiente para o [complemento mais recente do Forms lançado para 6.5.25.0](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases).
 * **FORMS-23717** Depois de atualizar para o **AEM Forms6.5.25.0**, o `server.log` e o `error.log` podem ser inundados com mensagens de AVISO repetidas, como *Falha na criação de fábrica do analisador seguro* ou *Não há suporte para o atributo de segurança ...*. Os logs podem aumentar em cerca de **5-10 linhas por segundo** (centenas de MB por hora), o que pode preencher o disco e bloquear a implantação da produção.
 
