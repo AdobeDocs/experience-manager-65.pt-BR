@@ -10,9 +10,14 @@ feature: 360 VR Video
 role: User, Admin
 exl-id: 0c2077a7-bd16-484b-980f-4d4a1a681491
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: beef1f49b7563d824357043f4ed78fdaf70015cd
+autotag-review: '2026-05-18T18:33:16.243Z'
+TQID: 'https://experienceleague.adobe.com/t3-PFZjnQPbbgNMFEjG7SDwG1Pt1TkvD9wNNYYgaEyE'
+product_v2: id: e14eb250-3c22-4a07-9061-a78112b2b826id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+source-git-commit: 9c96b6744c7af2f061b4dfbf403560047485f9b5
 workflow-type: tm+mt
-source-wordcount: '1145'
+source-wordcount: 1191
 ht-degree: 0%
 
 ---
@@ -21,7 +26,7 @@ ht-degree: 0%
 
 Vídeos de 360 graus gravam uma vista em todas as direções ao mesmo tempo. Elas são filmadas usando uma câmera onidirecional ou uma coleção de câmeras. Durante a reprodução em uma tela plana, o usuário tem controle do ângulo de visão; as reproduções em dispositivos móveis geralmente usam seus controles giroscópicos incorporados.
 
-Dynamic Media - o modo Scene7 inclui suporte nativo para a entrega de 360 ativos de vídeo. Por padrão, nenhuma configuração adicional é necessária para exibir ou reproduzir. Você fornece vídeo 360 usando extensões de vídeo padrão, como .mp4, .mkv e .mov. O codec mais comum é o H.264.
+O modo Dynamic Media - Scene7 inclui suporte nativo para a entrega de 360 ativos de vídeo. Por padrão, nenhuma configuração adicional é necessária para exibir ou reproduzir. Você fornece vídeo 360 usando extensões de vídeo padrão, como .mp4, .mkv e .mov. O codec mais comum é o H.264.
 
 Esta seção descreve como trabalhar com o visualizador de vídeo 360/VR para renderizar vídeos equiretangulares para obter uma experiência de visualização imersiva de uma sala, propriedade, localização, paisagem, procedimento médico e assim por diante.
 
@@ -40,7 +45,7 @@ Amostra de ![360 vídeos com a estação espacial internacional flutuando no esp
 
 Você pode usar o Adobe Premier Pro para visualizar e editar a gravação 360/VR. Por exemplo, você pode colocar logotipos e texto corretamente em uma cena e aplicar efeitos e transições projetados especificamente para mídia quadrretangular.
 
-Consulte [Editar vídeo 360/VR](https://helpx.adobe.com/br/premiere-pro/how-to/edit-360-vr-video.html).
+Consulte [Editar vídeo 360/VR](https://helpx.adobe.com/premiere-pro/how-to/edit-360-vr-video.html).
 
 ## Fazer upload de ativos para uso com o visualizador de vídeo 360 {#uploading-assets-for-use-with-the-video-viewer}
 
@@ -61,7 +66,7 @@ Consulte [Editar vídeo 360/VR](https://helpx.adobe.com/br/premiere-pro/how-to/e
    * Idealmente, o conteúdo original de 360 vídeos é melhor ter uma das seguintes resoluções:
 
       * 1080p - 1920 x 1080, conhecido como resolução Full HD ou FHD ou
-      * 2160p - 3840 x 2160, conhecido como 4k, UHD ou resolução de alta definição Ultra. Essa grande resolução de tela é mais frequentemente encontrada em televisores premium e monitores de computador. A resolução de 2160p é frequentemente chamada de &quot;4k&quot; porque a largura é próxima a 4000 pixels. Em outras palavras, oferece quatro vezes mais pixels do que 1080p.
+      * 2160p - 3840 x 2160, conhecido como resolução 4k, UHD ou Ultra HD. Essa grande resolução de tela é mais frequentemente encontrada em televisores premium e monitores de computador. A resolução de 2160p é frequentemente chamada de &quot;4k&quot; porque a largura é próxima a 4000 pixels. Em outras palavras, oferece quatro vezes mais pixels do que 1080p.
 
    * [Crie um Perfil de Vídeo Adaptável personalizado](/help/assets/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming) com representações de maior qualidade. Por exemplo, crie um Perfil de vídeo adaptável que contenha as três configurações a seguir:
 
@@ -71,7 +76,7 @@ Consulte [Editar vídeo 360/VR](https://helpx.adobe.com/br/premiere-pro/how-to/e
 
    * Processe conteúdo de 360 vídeos em uma pasta dedicada exclusivamente a 360 ativos de vídeo.
 
-   Essa abordagem exige mais da rede e da CPU do usuário final.
+   Essa abordagem exige mais da rede e do CPU do usuário final.
 
 1. [Carregue seu vídeo na pasta](/help/assets/managing-video-assets.md#upload-and-preview-video-assets).
 
@@ -79,7 +84,7 @@ Consulte [Editar vídeo 360/VR](https://helpx.adobe.com/br/premiere-pro/how-to/e
 
 Para que um ativo carregado se qualifique como um vídeo 360 que você pretende usar com o visualizador de vídeo 360, o ativo deve ter uma taxa de proporção de 2.
 
-Por padrão, o Experience Manager detecta o vídeo como &quot;360&quot; se sua proporção (largura/altura) for 2,0. Se você for um Administrador, poderá substituir a configuração de taxa de proporção padrão de 2 definindo a propriedade `s7video360AR` opcional em CRXDE Lite no seguinte local:
+Por padrão, o Experience Manager detecta o vídeo como &quot;360&quot; se sua proporção (largura/altura) for 2,0. Se você for um Administrador, poderá substituir a configuração de taxa de proporção padrão de 2 definindo a propriedade `s7video360AR` opcional no CRXDE Lite da seguinte maneira:
 
 * `/conf/global/settings/cloudconfigs/dmscene7/jcr:content`
 
@@ -121,7 +126,7 @@ Consulte [Adicionar o Dynamic Media Assets às páginas](/help/assets/adding-dyn
    * Arraste o ponteiro do mouse pelo vídeo se desejar alterar o ângulo de visão da cena estática.
    * Selecione o botão **[!UICONTROL Reproduzir]** do vídeo se desejar iniciar a reprodução. Enquanto o vídeo é reproduzido, arraste o ponteiro do mouse sobre ele para alterar seu ângulo de visão.
 
-   ![Uma captura de tela da estação espacial internacional flutuando no espaço sideral com a Terra e o Sol em segundo plano &#x200B;](assets/6_5_360video-preview-video360-social.png)*Uma captura de tela com 360 vídeos.*
+   ![Uma captura de tela da estação espacial internacional flutuando no espaço sideral com a Terra e o Sol em segundo plano ](assets/6_5_360video-preview-video360-social.png)*Uma captura de tela com 360 vídeos.*
 
    * Na lista Visualizadores, selecione **[!UICONTROL Video360VR]**.
 
@@ -134,9 +139,9 @@ Consulte [Adicionar o Dynamic Media Assets às páginas](/help/assets/adding-dyn
 
 ## Publicando vídeo 360 {#publishing-video}
 
-Publish o vídeo 360 para que você possa usá-lo. A publicação de um Vídeo 360 ativa o URL e o Código incorporado. Ele também publica o vídeo 360 na nuvem do Dynamic Media, que é integrada a um CDN para entrega escalável e eficiente.
+Publique o vídeo 360 para poder usá-lo. A publicação de um Vídeo 360 ativa o URL e o Código incorporado. Ele também publica o vídeo 360 na nuvem do Dynamic Media, que é integrada a um CDN para entrega escalável e eficiente.
 
-Consulte [Publish Dynamic Media assets](/help/assets/publishing-dynamicmedia-assets.md) para obter detalhes sobre como publicar vídeo 360.
+Consulte [Publicar ativos do Dynamic Media](/help/assets/publishing-dynamicmedia-assets.md) para obter detalhes sobre como publicar vídeo 360.
 Consulte também [Incorporar o Visualizador de Vídeo ou Imagem em uma página da Web](/help/assets/embed-code.md).
 Consulte também [Vincular URLs ao aplicativo Web](/help/assets/linking-urls-to-yourwebapplication.md). O método de vinculação baseado em URL não é possível se o conteúdo interativo tiver links com URLs relativos, principalmente links para páginas do Experience Manager Sites.
 Consulte também [Adicionar ativos do Dynamic Media a páginas](/help/assets/adding-dynamic-media-assets-to-pages.md).
