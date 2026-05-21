@@ -1,17 +1,13 @@
 ---
 title: Práticas recomendadas de workflow
 description: Conheça as práticas recomendadas para trabalhar com fluxos de trabalho no Adobe Experience Manager.
-contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: extending-aem
-content-type: reference
 exl-id: 14775476-6fe5-4583-8ab5-b55fef892174
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: b3af1a140abc1c202fa58704440c5660f1d43123
 workflow-type: tm+mt
-source-wordcount: '1925'
+source-wordcount: '1962'
 ht-degree: 1%
 
 ---
@@ -28,7 +24,7 @@ Portanto, é altamente recomendável planejar as implementações dos workflows 
 
 Ao configurar processos de fluxo de trabalho (personalizados e/ou prontos para uso), há algumas coisas que devem ser lembradas.
 
-### Workflows transitórios {#transient-workflows}
+### Fluxos de trabalho transitórios {#transient-workflows}
 
 Para otimizar altas cargas de assimilação, você pode definir um [fluxo de trabalho como transitório](/help/sites-developing/workflows.md#transient-workflows).
 
@@ -36,9 +32,9 @@ Quando um workflow é transitório, os dados de tempo de execução relacionados
 
 As vantagens podem incluir:
 
-* Uma redução no tempo de processamento do fluxo de trabalho de até 10%.
+* Uma redução no tempo de processamento do workflow de até 10%.
 * Reduzir significativamente o crescimento do repositório.
-* Não são necessários mais workflows CRUD para limpar.
+* Não é necessário remover mais fluxos de trabalho CRUD.
 * Além disso, reduz o número de arquivos TAR para compactar.
 
 >[!CAUTION]
@@ -59,9 +55,9 @@ Para resolver esse problema, a Adobe recomenda configurar o número de **Máximo
 
 Para configurar o **Máximo de Trabalhos Paralelos**, você pode:
 
-* Configure a **[Configuração OSGi](/help/sites-deploying/configuring-osgi.md)** no console da Web AEM; para **Fila: Fila de Fluxo de Trabalho Granite** (uma **Configuração de Fila de Trabalho Apache Sling**).
+* Configure a **[Configuração OSGi](/help/sites-deploying/configuring-osgi.md)** no console da Web do AEM; para **Fila: Fila de Fluxo de Trabalho do Granite** (uma **Configuração de Fila de Trabalho do Apache Sling**).
 
-* Configure a fila com a opção **Trabalhos do Sling** do console da Web AEM; para **Configuração da fila de trabalhos: Fila de fluxos de trabalho do Granite**, em `http://localhost:4502/system/console/slingevent`.
+* Configure a fila com a opção **Trabalhos do Sling** do console da Web do AEM; para **Configuração da fila de trabalhos: Fila de fluxos de trabalho do Granite**, em `http://localhost:4502/system/console/slingevent`.
 
 Além disso, há uma configuração separada para a **Fila de trabalhos do processo externo do fluxo de trabalho do Granite**. Isso é usado para processos de fluxo de trabalho que iniciam binários externos, como **InDesign Server** ou **Image Magick**.
 
@@ -126,7 +122,7 @@ Os modelos de fluxo de trabalho são armazenados no repositório de acordo com o
 
   >[!NOTE]
   >
-  >Se esses designs forem editados *usando a interface do usuário AEM*, os detalhes serão copiados para os novos locais.
+  >Se esses designs forem editados *usando a interface do usuário do AEM*, os detalhes serão copiados para os novos locais.
 
 #### Locais - Iniciadores de fluxo de trabalho {#locations-workflow-launchers}
 
@@ -157,7 +153,7 @@ As definições do iniciador de fluxo de trabalho também são armazenadas no re
 
   >[!NOTE]
   >
-  >Se essas definições forem editadas *usando a interface do usuário AEM*, os detalhes serão copiados para os novos locais.
+  >Se essas definições forem editadas *usando a interface do usuário do AEM*, os detalhes serão copiados para os novos locais.
 
 #### Locais - Scripts de fluxo de trabalho {#locations-workflow-scripts}
 
@@ -231,7 +227,7 @@ Ao implementar um processo de workflow:
 
 * Uma sessão de fluxo de trabalho será fornecida e deverá ser usada, a menos que haja um motivo convincente para não ser fornecida.
 * Novas sessões não devem ser criadas a partir de etapas do fluxo de trabalho, pois isso causa inconsistências no(s) estado(s), juntamente com possíveis problemas de simultaneidade no mecanismo do fluxo de trabalho.
-* Você não deve adquirir uma nova sessão JCR de dentro de uma etapa do processo em um fluxo de trabalho; você deve adaptar a sessão do fluxo de trabalho fornecida pela API de etapas do processo a uma sessão jcr. Por exemplo:
+* Você não deve adquirir uma nova sessão JCR de dentro de uma etapa do processo em um fluxo de trabalho; você deve adaptar a sessão do fluxo de trabalho fornecida pela API de etapas do processo a uma sessão JCR. Por exemplo:
 
 ```
 public void execute(WorkItem item, WorkflowSession workflowSession, MetaDataMap args) throws WorkflowException {
@@ -247,14 +243,14 @@ Salvando uma sessão:
 * Em um processo de fluxo de trabalho, se o `WorkflowSession` estiver sendo usado para modificar o repositório, não salve explicitamente a sessão. O fluxo de trabalho salvará a sessão quando ela for concluída.
 * `Session.Save` não deve ser chamado de dentro de uma etapa do fluxo de trabalho:
 
-   * é recomendável adaptar a sessão jcr do fluxo de trabalho; então, `save` não é necessário, pois o mecanismo de fluxo de trabalho salva a sessão automaticamente após a conclusão da execução do fluxo de trabalho.
-   * não é recomendável que uma etapa do processo crie sua própria sessão jcr.
+   * é recomendável adaptar a sessão JCR do fluxo de trabalho; então, `save` não é necessário, pois o mecanismo de fluxo de trabalho salva a sessão automaticamente após a conclusão da execução do fluxo de trabalho.
+   * não é recomendado que uma etapa do processo crie sua própria sessão JCR.
 
 * Ao eliminar salvamentos desnecessários, você pode reduzir a sobrecarga e, assim, tornar os workflows mais eficientes.
 
 >[!CAUTION]
 >
->Se, apesar das recomendações aqui, você criar sua própria sessão jcr, ela deverá ser salva.
+>Se, apesar das recomendações aqui, você criar sua própria sessão JCR, ela deverá ser salva.
 
 ### Minimizar o número/escopo de iniciadores {#minimize-the-number-scope-of-launchers}
 
@@ -346,5 +342,5 @@ Para obter mais informações, consulte:
 
 * [Trabalhar com fluxos de trabalho](/help/sites-authoring/workflows.md)
 * [Administração de fluxos de trabalho](/help/sites-administering/workflows.md)
-* [Desenvolvimento e extensão de workflows](/help/sites-developing/workflows.md)
+* [Desenvolvimento e extensão de fluxos de trabalho](/help/sites-developing/workflows.md)
 * [Otimização do desempenho](/help/sites-deploying/configuring-performance.md)
