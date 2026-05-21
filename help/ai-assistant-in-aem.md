@@ -5,10 +5,28 @@ solution: Experience Manager, Experience Manager 6.5
 feature: Authoring, AI Assistant, AI Tools
 role: Admin, Developer, User
 exl-id: 3b4a484e-55b5-4924-82dd-56735f6ed46d
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+autotag-review: '2026-05-18T18:36:07.915Z'
+TQID: 'https://experienceleague.adobe.com/dlFmrtn05S20z96wtAfkpGliITeVJhVkofqPix6QMxk'
+product_v2:
+  - id: e14eb250-3c22-4a07-9061-a78112b2b826
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2:
+  - id: ac5ecfc1-cc78-4ecc-a90a-0362685062ce
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 9c96b6744c7af2f061b4dfbf403560047485f9b5
 workflow-type: tm+mt
-source-wordcount: '1379'
-ht-degree: 3%
+source-wordcount: 1379
+ht-degree: 93%
 
 ---
 
@@ -18,7 +36,7 @@ ht-degree: 3%
 >
 >Os clientes do AEM 6.5 e do AEM 6.5 LTS que não usam o Cloud Manager/Experience Hub devem entrar em contato com o engenheiro de sucesso do cliente da Adobe para solicitar acesso ao Assistente de IA.
 
-O AI Assistant no AEM 6.5/AEM 6.5 LTS oferece uma interface conversacional projetada para simplificar a localização de respostas para suas consultas relacionadas ao Adobe Experience Manager. Ele ajuda você a obter respostas instantâneas para suas perguntas sobre produtos da AEM (*disponíveis para todos os usuários*) e a automatizar a criação de tíquetes de suporte (*disponíveis para Administradores de Suporte*).
+O AI Assistant no AEM 6.5/AEM 6.5 LTS oferece uma interface conversacional projetada para simplificar a localização de respostas para suas consultas relacionadas ao Adobe Experience Manager. Ele ajuda a obter respostas instantâneas para perguntas sobre produtos do AEM (*disponíveis para todos os usuários*) e a automatizar a criação de tíquetes de suporte (*disponíveis para Admins de suporte*).
 
 O Assistente de IA é compatível com o AEM as a Cloud Service, incluindo as seguintes soluções:
 
@@ -31,9 +49,9 @@ O Assistente de IA é compatível com o AEM as a Cloud Service, incluindo as seg
 * Cloud Manager
 
 
-Ele é diretamente incorporado ao AEM e acessível no AEM Experience Hub, Cloud Manager e na interface do usuário do autor.
+Ele é incorporado diretamente no AEM e acessível a partir do AEM Experience Hub, Cloud Manager e da interface do autor.
 
-O vídeo de 25 segundos com duração de 3 minutos apresenta uma apresentação passo a passo do Assistente de IA no AEM.
+O vídeo a seguir de 3 minutos e 25 segundos oferece uma apresentação passo-a-passo do Assistente de IA no AEM.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3475363/?captions=por_br&learn=on&enablevpops)
 
@@ -41,35 +59,35 @@ O vídeo de 25 segundos com duração de 3 minutos apresenta uma apresentação 
 
 Para obter acesso ao Assistente de IA no AEM, os clientes devem ter o seguinte:
 
-* Permissão para usar o Assistente de IA no AEM para Conhecimento do produto. Essa permissão permite que você faça perguntas relacionadas ao produto no bate-papo do Assistente de IA. Essa permissão deve ser ativada.
-* Permissão para abrir tíquetes de suporte, o que requer a função de **Administrador de Suporte**.
+* Permissão para usar o Assistente de IA no AEM para conhecimento sobre produtos. Essa permissão possibilita fazer perguntas relacionadas ao produto no chat do Assistente de IA. Essa permissão deve ser habilitada.
+* Permissão para abrir tíquetes de suporte, o que requer a função de **Admin de suporte**.
 
 >[!NOTE]
 >
->As solicitações do Assistente de IA no AEM são autenticadas por meio do Adobe Identity Management Services (IMS). Para obter detalhes, consulte a [visão geral dos Serviços Identity Management da Adobe](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/corporate/adobe-identity-management-services-security-overview.pdf).
+>As solicitações do Assistente de IA no AEM são autenticadas por meio dos Serviços de gerenciamento de identidade da Adobe (IMS). Para obter detalhes, consulte a [visão geral dos Serviços de gerenciamento de identidade da Adobe](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/corporate/adobe-identity-management-services-security-overview.pdf).
 
 **Para obter acesso ao Assistente de IA no AEM:**
 
-1. Os clientes devem ter um contrato adicional em vigor para acessar a maioria dos recursos de IA e agentes no Adobe Experience Manager. Entre em contato com seu representante da Adobe para obter mais detalhes.
+1. Os clientes devem ter um contrato adicional em vigor para acessar a maioria dos recursos agênticos e viabilizados por IA no Adobe Experience Manager. Entre em contato com o representante da Adobe para obter mais detalhes.
 
-1. Para usar o Assistente de IA no AEM, é obrigatória a permissão para acessar o Conhecimento do produto por meio do Assistente de IA. Essa permissão está ativada por padrão.
+1. Para usar o Assistente de IA no AEM, é obrigatória a permissão para acessar o conhecimento sobre produtos por meio do Assistente de IA. Essa permissão está ativada por padrão.
 
-   Para controlar quem pode acessar os Conhecimentos do Produto, envie um email para [aemaiassistant@adobe.com](mailto:aemaiassistant@adobe.com) a partir do seu endereço de email associado à sua Adobe ID. O Adobe pode ativar o controle de acesso no nível do usuário. Quando estiver habilitado, seu Administrador poderá conceder acesso de nível de usuário seguindo as etapas em [Configurar o Assistente de IA no AEM](/help/ai-assistant-in-aem-admin.md).
+   Para controlar quem pode acessar o conhecimento do produto, envie um email para [aemaiassistant@adobe.com](mailto:aemaiassistant@adobe.com) a partir do endereço de email associado à sua Adobe ID. A Adobe pode habilitar o controle de acesso no nível do usuário. Quando estiver habilitado, o Admin poderá conceder acesso de nível de usuário seguindo as etapas em [Configurar o Assistente de IA no AEM](/help/ai-assistant-in-aem-admin.md).
 
 
 ## Escopo {#scope}
 
 O escopo atual do Assistente de IA no AEM se concentra em abordar perguntas de conhecimento do produto para o AEMr. as a Cloud Service. Esse escopo inclui suporte abrangente para áreas importantes. <!--, such as Sites, Assets, Forms, Edge Delivery Services, Dynamic Media, and Cloud Manager. -->
 
-* **Superfícies**: disponível no AEM Experience Hub, IU do autor, Cloud Manager.
-* **Recursos**: conhecimento sobre produtos e primeira parada para solução de problemas e orientação, criação automática de tíquetes de suporte e pesquisa.
-* **Valor**: economiza tempo, acelera o aprendizado e o tempo de retorno, reduz a necessidade de criar tíquetes de suporte manualmente e melhora a eficiência na criação de tíquetes de suporte.
+* **Superfícies**: disponível no AEM Experience Hub, interface do autor, Cloud Manager.
+* **Recursos**: conhecimento do produto e a primeira parada para solução de problemas e orientação, criação automatizada de tíquetes de suporte e pesquisa.
+* **Valor**: economiza tempo, acelera o aprendizado e o tempo para obtenção de valor, reduz a necessidade de criar tíquetes de suporte manualmente e melhora a eficiência na criação de tíquetes de suporte.
 
 ## Privacidade, segurança e governança{#privacy-security-governance}
 
-O Assistente de IA do AEM foi projetado com forte ênfase em privacidade, segurança e governança.
+O Assistente de IA no AEM foi projetado com forte ênfase em privacidade, segurança e governança.
 
-Este artigo descreve os recursos centralizados na confiança que você pode esperar do Assistente de IA no AEM:
+Este artigo descreve os recursos baseados na confiança que você pode esperar do Assistente de IA no AEM:
 
 * Nenhum dado pessoal é usado pelo Assistente de IA no AEM, inclusive para fins de treinamento.
 * O Assistente de IA no AEM não tem acesso aos dados do consumidor.
@@ -80,40 +98,40 @@ Este artigo descreve os recursos centralizados na confiança que você pode espe
 
 ## Conheça o Assistente de IA no AEM para obter conhecimento sobre produtos e criação automatizada de tíquetes de suporte {#ai-prod-insights}
 
-O conhecimento do produto abrange conceitos e tópicos derivados da documentação da Adobe Experience League. Essas perguntas podem ser categorizadas nos seguintes subgrupos:
+O conhecimento sobre produtos abrange conceitos e tópicos derivados da documentação da Adobe Experience League. Essas perguntas podem ser categorizadas nos seguintes subgrupos:
 
 
-| Conhecimento do produto | Disponível para todos os usuários<br>Exemplos |
+| Conhecimento sobre produtos | Disponível para todos os usuários<br>Exemplos |
 | :--- | :--- |
-| Aprendizado apontado | <ul><li>O que é o Editor Universal?</li><li>Como criar um programa no Cloud Manager?</li></ul> |
-| Abrir descoberta | <ul><li>Como usar o Universal Editor?</li><li>Existe uma maneira de copiar o conteúdo de um ambiente para outro?</li></ul> |
-| Resolução de problemas | <ul><li>Por que não posso acessar o Universal Editor?</li><li>Por que meu pipeline está falhando?</li></ul> |
-| **Criação do tíquete de suporte** | **Disponível somente para Administradores de Suporte &#x200B;**<br>**Exemplos** |
-| Criação automatizada de tíquetes de suporte, capturando o histórico e o contexto do bate-papo do Assistente de IA | <ul><li>Crie um tíquete de suporte para mim.</li></ul> |
-| Recuperar status do tíquete de suporte | <ul><li>Mostre-me todos os tíquetes de suporte que abri.</li><li>Mostre-me o status do tíquete &quot;E—&quot;</li></ul> |
+| Aprendizado direcionado | <ul><li>O que é o editor universal?</li><li>Como criar um programa no Cloud Manager?</li></ul> |
+| Abrir descoberta | <ul><li>Como usar o editor universal?</li><li>Existe uma maneira de copiar o conteúdo de um ambiente para outro?</li></ul> |
+| Resolução de problemas | <ul><li>Por que não posso acessar o editor universal?</li><li>Por que meu pipeline está falhando?</li></ul> |
+| **Criação de tíquetes de suporte** | **Disponível somente para Admins de suporte &#x200B;**<br>**Exemplos** |
+| Criação automatizada de tíquetes de suporte, capturando o histórico e o contexto do chat do Assistente de IA | <ul><li>Crie um tíquete de suporte para mim.</li></ul> |
+| Obtenha o status do tíquete de suporte | <ul><li>Mostre-me todos os tíquetes de suporte que abri.</li><li>Mostre-me o status do tíquete &quot;E-----------&quot;</li></ul> |
 
 {style="table-layout:auto"}
 
 
 ## Como criar perguntas eficazes {#ai-craft-questions}
 
-Para receber as respostas mais precisas do Assistente de IA no AEM, é importante formular suas perguntas com clareza e contexto. Use as seguintes dicas para garantir que suas consultas sejam claras e bem estruturadas:
+Para receber as respostas mais precisas do Assistente de IA no AEM, é importante formular as perguntas com clareza e contexto. Use as seguintes dicas para garantir que as consultas sejam claras e bem estruturadas:
 
-* Indique claramente a sua tarefa ou pergunta de maneira concisa.
-* Evite textos ambíguos ou sintaxes excessivamente complexas para melhorar a compreensão.
-* Inclua um contexto relevante sobre sua tarefa ou pergunta, pois essa abordagem ajuda o Assistente de IA do AEM a fornecer respostas mais precisas e relevantes.
-Por exemplo, no seu prompt, é útil nomear a solução da AEM em que você está trabalhando - Sites, Assets, Dynamic Media, Edge Delivery Services, Cloud Manager ou Forms.
+* Indique claramente a tarefa ou pergunta de forma concisa.
+* Evite textos e palavras ambíguos ou sintaxes excessivamente complexas para melhorar a compreensão.
+* Inclua um contexto relevante para a tarefa ou pergunta, pois essa abordagem ajuda o Assistente de IA no AEM a fornecer respostas mais precisas e relevantes.
+Por exemplo, no prompt, é útil nomear a solução do AEM em que você está trabalhando - Sites, Assets, Dynamic Media, Edge Delivery Services, Cloud Manager ou Forms.
 
-### Exemplos de perguntas não suportadas {#ai-unsupported-questions}
+### Exemplos de perguntas incompatíveis {#ai-unsupported-questions}
 
 | Área | Exemplos |
 | --- | --- |
-| Insights operacionais | <ul><li>Quantos ambientes de desenvolvimento existem no meu locatário?</li><li>Quem iniciou o último pipeline de produção?</li></ul> |
+| Insights operacionais | <ul><li>Quantos ambientes de desenvolvimento existem no meu locatário?</li><li>Quem iniciou o mais recente pipeline de produção?</li></ul> |
 | Resolução de problemas | <ul><li>Por que meu pipeline de produção está falhando?</li></ul> |
-| Tarefa e automação | <ul><li>Configurar um pipeline de qualidade de código de uma ramificação dev para mim.</li></ul> |
+| Tarefa e automação | <ul><li>Configure um pipeline de qualidade de código de uma ramificação de desenvolvimento para mim.</li></ul> |
 
 
-## Usar o assistente de IA no AEM {#ai-use}
+## Usar o Assistente de IA no AEM {#ai-use}
 
 <!--
 UNHIDE AFTER BETA or at GA
@@ -135,65 +153,65 @@ See also [Custom Permissions](/help/implementing/cloud-manager/custom-permission
 -->
 
 
-### Iniciar um assistente de IA em uma conversa no AEM
+### Iniciar uma conversa com o Assistente de IA no AEM
 
-Você pode redefinir o Assistente de IA no AEM e iniciar uma nova conversa quando quiser alterar tópicos. Essa capacidade é especialmente útil ao solucionar problemas de consultas que estão falhando ou ao fornecer informações incorretas.
+É possível redefinir o Assistente de IA no AEM e iniciar uma nova conversa quando quiser trocar de tópico. Essa capacidade é especialmente útil ao solucionar problemas de consultas que estão falhando ou fornecendo informações incorretas.
 
-**Para iniciar um Assistente de IA em uma conversa do AEM:**
+**Para iniciar uma conversa com o Assistente de IA no AEM:**
 
-1. Próximo ao canto superior direito da interface do usuário do AEM (nas páginas do Cloud Manager ou na instância de autor dos ambientes do AEM), clique no ícone **Assistente de IA**.
+1. Próximo ao canto superior direito da interface do AEM (nas páginas do Cloud Manager ou na instância de criação dos ambientes do AEM), clique no ícone **Assistente de IA**.
 
    ![Ícone do Assistente de IA na barra de ferramentas](/help/assets/assets-ai/ai-assistant-icon.png)
 
-1. Na caixa de texto do painel **Assistente de IA** próxima à parte inferior, digite a pergunta ou o prompt e pressione `Enter` ou clique em ![Ícone Enviar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Send_18_N.svg).
+1. Na caixa de texto do painel **Assistente de IA** próxima à parte inferior, digite a pergunta ou o prompt e pressione `Enter` ou clique no ![ícone Enviar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Send_18_N.svg).
 
    >[!NOTE]
    >
-   >Dados pessoais não devem ser incluídos em suas entradas, pois são desnecessários para usar essa ferramenta.
+   >Dados pessoais não devem ser incluídos nas entradas, pois são desnecessários para usar essa ferramenta.
 
-   ![Caixa de texto na parte inferior do painel do Assistente de IA](/help/assets/assets-ai/ai-assistant-prompt-text-box.png)
+   ![Caixa de texto na parte inferior do painel Assistente de IA](/help/assets/assets-ai/ai-assistant-prompt-text-box.png)
 
-1. Para iniciar uma nova conversa (novo tópico ou uma alteração no tópico), clique em ![Ícone de Mais](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) > **Iniciar nova conversa**.
+1. Para iniciar uma nova conversa (novo tópico ou uma mudança no tópico), clique em ![Ícone de mais](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) > **Iniciar nova conversa**.
 
    ![Iniciar uma nova conversa no Assistente de IA a partir do ícone de reticências](/help/assets/assets-ai/ai-assistant-start-new-conversation.png)
 
 ### Descobrir prompts por categoria
 
-O Assistente de IA no AEM inclui um recurso de descoberta para ajudar você a explorar tópicos e categorias compatíveis.
+O Assistente de IA no AEM inclui um recurso de descoberta para ajudar a explorar tópicos e categorias compatíveis.
 
-**Descobrir prompts por categoria:**
+**Para descobrir prompts por categoria:**
 
 1. No painel Assistente de IA, clique no ![ícone Aprender](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Learn_18_N.svg) para ativar o painel de descoberta de prompts.
 
    ![Painel que permite explorar prompts por categoria no Assistente de IA](/help/assets/assets-ai/ai-assistant-discover-prompts.png)
-   *Painel mostrando as categorias de prompt no Assistente do AI.*
+   *Painel mostrando categorias de prompts no Assistente de AI.*
 
 1. Selecione uma categoria para exibir uma lista de prompts relacionados.
 1. Selecione um prompt para ver exemplos dos tipos de perguntas que o Assistente de IA pode responder.
 
 1. Para ocultar o painel de descoberta de prompts, clique novamente no ![ícone Aprender](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Learn_18_N.svg).
 
-### Compartilhe seu feedback sobre o Assistente de IA no AEM
+### Compartilhe feedback sobre o Assistente de IA no AEM
 
 Sua entrada ajuda a Adobe a melhorar o Assistente de IA para obter melhor desempenho e precisão.
 
-Compartilhe seu feedback sobre a sua experiência com o Assistente de IA no AEM usando as seguintes opções:
+Compartilhe feedback sobre a sua experiência com o Assistente de IA no AEM usando as seguintes opções:
 
 ![Polegar para cima, polegar para baixo e ícones de sinalizador](/help/assets/assets-ai/ai-assistant-feedback-icons.png)
 
 | Clique em | Descrição |
 | --- | --- |
-| ![Ícone de estrutura de tópicos para cima](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ThumbUpOutline_18_N.svg) | Indique o que deu certo e compartilhe feedback positivo. |
-| ![Ícone de estrutura de tópicos com miniaturas](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ThumbDownOutline_18_N.svg) | Forneça sugestões para aprimoramento. Adicione comentários específicos sobre sua experiência, que são revisados diariamente. |
-| ![Ícone de sinalizador](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Flag_18_N.svg) | Relate dúvidas ou forneça feedback detalhado sobre sua interação com o Assistente de IA no AEM. |
+| ![Ícone de contorno de polegar para cima](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ThumbUpOutline_18_N.svg) | Indique o que deu certo e compartilhe feedback positivo. |
+| ![Ícone de contorno de polegar para baixo](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ThumbDownOutline_18_N.svg) | Forneça sugestões para aprimoramento. Adicione comentários específicos sobre sua experiência, que são revisados diariamente. |
+| ![Ícone de sinalizador](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Flag_18_N.svg) | Relate preocupações ou forneça feedback detalhado sobre a interação com o Assistente de IA no AEM. |
 
 ## Perguntas frequentes sobre o Assistente de IA no AEM {#ai-faq}
 
 Estas são as respostas para algumas perguntas comuns sobre o Assistente de IA:
 
 * **As informações fornecidas pelo Assistente de IA no AEM são em tempo real?**\
-  Não. O Assistente de IA origina seu conteúdo da documentação da Adobe Experience League. As atualizações do conteúdo podem levar algum tempo para refletir em suas respostas.
-* **A quais aplicativos do Adobe o Assistente de IA oferece suporte no AEM?**\
+  Não. O Assistente de IA origina seu conteúdo da documentação da Adobe Experience League. As atualizações do conteúdo podem levar algum tempo para gerar efeito nas respostas.
+* **A quais aplicativos da Adobe o Assistente de IA no AEM oferece suporte?**\
   Atualmente, o Assistente de IA é compatível com consultas de conhecimento de produto no AEM as a Cloud Service, incluindo Sites, Assets, Dynamic Media, Cloud Manager e Forms.
 * **Quais são os recursos do Assistente de IA no AEM?**\
   O Assistente de IA do AEM foi projetado para responder a consultas relacionadas ao conhecimento do produto Adobe.

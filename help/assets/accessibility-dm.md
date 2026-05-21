@@ -1,6 +1,6 @@
 ---
 title: Acessibilidade no Dynamic Media
-description: Saiba mais sobre o suporte à acessibilidade no Dynamic Media e Dynamic Media Viewers.
+description: Saiba mais sobre o suporte de acessibilidade no Dynamic Media e em Visualizadores do Dynamic Media.
 contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
@@ -8,9 +8,20 @@ feature: Accessibility
 role: User, Admin
 exl-id: bbdb800c-b6f8-4506-b8ac-daf64edcd6c0
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: ed7183efa57db6d97941e3acc99d126c2fc0f6c5
+autotag-review: '2026-05-18T18:39:42.457Z'
+TQID: 'https://experienceleague.adobe.com/f9-0rO4QHX7kbx7xwptmuOW1W7WzduM3tOlL2YgHXxI'
+product_v2:
+  - id: e14eb250-3c22-4a07-9061-a78112b2b826
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2:
+  - id: cc72dcf1-72e1-48cc-b434-e7c27d62d67c
+source-git-commit: 9c96b6744c7af2f061b4dfbf403560047485f9b5
 workflow-type: tm+mt
-source-wordcount: '583'
+source-wordcount: 647
 ht-degree: 0%
 
 ---
@@ -54,7 +65,7 @@ Consulte [Editar o recorte inteligente ou a amostra inteligente de uma única im
 
 Todos os componentes de visualizadores do [!DNL Dynamic Media] prontos para uso oferecem suporte à acessibilidade do teclado para seus clientes.
 
-Consulte [Acessibilidade e navegação do teclado](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html?lang=pt-BR) no Guia de Referência do Dynamic Media Viewers.
+Consulte [Acessibilidade e navegação do teclado](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html?lang=pt-BR) no Guia de Referência de Visualizadores do Dynamic Media.
 
 ## Suporte de tecnologia assistiva em [!DNL Dynamic Media] visualizadores {#assistive-technology-support-for-dm-viewers}
 
@@ -69,5 +80,5 @@ Consulte [Vídeo no Dynamic Media - Adicionar legendas ocultas ao vídeo](/help/
 
 >[!MORELIKETHIS]
 >
->* [Acessibilidade para soluções Adobe](https://www.adobe.com/accessibility.html)
+>* [Acessibilidade para soluções da Adobe](https://www.adobe.com/accessibility.html)
 >* [Acessibilidade em [!DNL Experience Manager Assets]](/help/assets/accessibility.md)
