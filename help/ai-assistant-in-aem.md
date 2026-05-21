@@ -53,7 +53,7 @@ Ele é incorporado diretamente no AEM e acessível a partir do AEM Experience Hu
 
 O vídeo a seguir de 3 minutos e 25 segundos oferece uma apresentação passo-a-passo do Assistente de IA no AEM.
 
->[!VIDEO](https://video.tv.adobe.com/v/3475357/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3475363/?captions=por_br&learn=on&enablevpops)
 
 ## Obter acesso ao Assistente de IA no AEM{#get-access}
 
