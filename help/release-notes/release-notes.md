@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 2a9799e386889d240d15f7e2621814bfd41bda3a
+source-git-commit: d60ff7278e62833c732c55d328882a2976bfd964
 workflow-type: tm+mt
-source-wordcount: '7111'
+source-wordcount: '7116'
 ht-degree: 3%
 
 ---
@@ -632,11 +632,11 @@ Para reduzir o volume de log, defina o nível de log de `com.adobe.util.XMLSecur
 
 ## Pacotes da OSGi e pacotes de conteúdo inclusos{#osgi-bundles-and-content-packages-included}
 
-Os seguintes documentos de texto listam os pacotes OSGi e os Pacotes de Conteúdo incluídos nesta versão do Service Pack do [!DNL Experience Manager] 6.5:
+Os arquivos zip a seguir contêm os documentos de texto que listam os pacotes OSGi e os Pacotes de Conteúdo incluídos nesta versão do Service Pack do [!DNL Experience Manager] 6.5:
 
-* [Lista de pacotes OSGi incluídos no Experience Manager 6.5.25.0](/help/release-notes/assets/65250-bundles.txt)
+* [Lista de pacotes OSGi incluídos no Experience Manager 6.5.25.0](/help/release-notes/assets/65250-bundles.zip)
 <!-- UPDATE FOR EACH NEW RELEASE -->
-* [Lista de Pacotes de Conteúdo incluídos no Experience Manager 6.5.25.0](/help/release-notes/assets/65250-packages.txt)
+* [Lista de Pacotes de Conteúdo incluídos no Experience Manager 6.5.25.0](/help/release-notes/assets/65250-packages.zip)
 <!-- UPDATE FOR EACH NEW RELEASE -->
 
 ## Sites restritos{#restricted-sites}
