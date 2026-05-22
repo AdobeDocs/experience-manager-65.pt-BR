@@ -6,7 +6,7 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: cc10229ca767a803fe0b24b1b4b47111e6c88cdd
+source-git-commit: 2a9799e386889d240d15f7e2621814bfd41bda3a
 workflow-type: tm+mt
 source-wordcount: '7111'
 ht-degree: 3%
@@ -651,4 +651,6 @@ Esses sites estão disponíveis somente para clientes do. Se você for cliente e
 >* [[!DNL Experience Manager] página do produto](https://business.adobe.com/br/products/experience-manager/adobe-experience-manager.html)
 >* [[!DNL Experience Manager] Documentação do 6.5](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65)
 >* [Inscreva-se para obter atualizações de produto prioritárias da Adobe](https://www.adobe.com/subscription/priority-product-update.html)
+
+
 
