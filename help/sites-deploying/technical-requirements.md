@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: b8be2ca14bdc6c6f21a2a33c893841a9aa201112
+source-git-commit: 4cdf38284c195122307926f759fa6c60c5cd62af
 workflow-type: tm+mt
-source-wordcount: '3746'
+source-wordcount: '3790'
 ht-degree: 1%
 
 ---
@@ -102,7 +102,7 @@ O Adobe Experience Manager opera com as seguintes versões das Máquinas Virtuai
 | Azul Zulu OpenJDK 8 - 64 bits | A: Suportado `[3]` | |
 
 1. A Oracle migrou para um modelo de &quot;Suporte a longo prazo&quot; (LTS, Long Term Support) para produtos Oracle Java™ SE. O Java™ 9, o Java™ 10 e o Java™ 12 são versões não LTS da Oracle (consulte o [roteiro de suporte do Oracle Java™ SE](https://www.oracle.com/technetwork/java/eol-135779.html)). Para implantar o AEM em um ambiente de produção, a Adobe fornece suporte somente para as versões LTS do Java™. O suporte e a distribuição do JDK do Oracle Java™ SE, incluindo todas as atualizações de manutenção de versões LTS, são suportados pela Adobe diretamente para todos os clientes da AEM que usam a tecnologia Oracle Java™ SE. Consulte a [Política de suporte do Java™ para Adobe Experience Manager](assets/Java_Policy_for_Adobe_Experience_Manager.pdf).
-   **Importante: o Oracle Java™ 17 e 21 é compatível com o [AEM 6.5 LTS](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65-lts/content/implementing/deploying/introduction/technical-requirements).**
+   **Importante: o Oracle Java™ 17 e 21 é compatível com o [AEM 6.5 LTS](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/implementing/deploying/introduction/technical-requirements).**
 
 1. O IBM® JRE só é suportado com o WebSphere® Application Server.
 
@@ -252,7 +252,7 @@ O Adobe Experience Manager é compatível com a execução em uma máquina virtu
 
 Para um ambiente nativo em nuvem, analise a oferta mais recente da linha de produtos da AEM: o Adobe Experience Manager as a Cloud Service. Consulte a [Documentação do Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=pt-BR) para obter mais detalhes.
 
-A Adobe também oferece o Adobe Managed Services para implantar o AEM no Azure ou AWS. O Adobe Managed Services fornece aos especialistas experiência e habilidades de implantação e operação do AEM nesses ambientes de computação em nuvem. Consulte [documentação adicional sobre o Adobe Managed Services](https://business.adobe.com/br/products/experience-manager/managed-services.html?aemClk=t).
+A Adobe também oferece o Adobe Managed Services para implantar o AEM no Azure ou AWS. O Adobe Managed Services fornece aos especialistas experiência e habilidades de implantação e operação do AEM nesses ambientes de computação em nuvem. Consulte [documentação adicional sobre o Adobe Managed Services](https://business.adobe.com/products/experience-manager/managed-services.html?aemClk=t).
 
 Em todos os outros casos de implantação do AEM no Azure ou no AWS, ou em qualquer outro ambiente de computação em nuvem, o suporte do Adobe está contido no ambiente de computação virtual. Esse ambiente virtual deve ser executado em conformidade com as especificações técnicas listadas nesta página. Qualquer problema relatado relacionado ao AEM em execução em qualquer um desses ambientes de nuvem deve ser reproduzível independentemente de qualquer serviço de nuvem específico do ambiente de computação em nuvem. Ou seja, a menos que o serviço em nuvem seja compatível como parte dos requisitos técnicos listados nesta página, por exemplo, armazenamento Azure Blob ou AWS S3.
 
@@ -260,7 +260,7 @@ Para obter recomendações sobre como implantar o AEM no Azure ou AWS, fora do A
 
 ### Plataformas Dispatcher (servidores da Web) {#dispatcher-platforms-web-servers}
 
-O Dispatcher é o componente de balanceamento de carga e cache. [Baixe a versão mais recente do Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html?lang=pt-BR). O Experience Manager 6.5 exige a versão 4.3.2 ou superior do Dispatcher.
+O Dispatcher é o componente de balanceamento de carga e cache. [Baixe a versão mais recente do Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html). O Experience Manager 6.5 exige a versão 4.3.2 ou superior do Dispatcher.
 
 Os seguintes servidores da Web são compatíveis para uso com o Dispatcher versão 4.3.2:
 
@@ -470,7 +470,7 @@ Para Windows x86:
    <th><p><strong>Formatos compatíveis com a conversão para o PDF</strong></p> </th>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/br/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat Pro DC</a> versão mais recente</td>
+   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat Pro DC</a> (faixa contínua, versão mais recente)</td>
    <td>XPS, formatos de imagem (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML e HTM</td>
   </tr>
 
@@ -492,7 +492,7 @@ OpenOffice 4.1.15 </td>
 >[!NOTE]
 >
 >* O PDF Generator suporta apenas as versões em inglês, francês, alemão e japonês dos sistemas operacionais e aplicativos compatíveis.
->* A PDF Generator requer o Adobe Acrobat Pro DC de 32 bits e o Microsoft® Office Professional Plus para executar a conversão.
+>* A PDF Generator exige uma build de 32 bits do Windows do Adobe Acrobat Pro DC (Continuous track, versão mais recente) para conversões nativas orientadas pela Acrobat e uma build de 32 bits do Microsoft® Office Professional Plus para conversões baseadas no Office no Microsoft® Windows. Para obter informações sobre instalação e o Feature Restricted Licensing (FRL) para o Acrobat Pro DC, consulte [Instalar o Adobe Acrobat Pro DC](../forms/using/install-configure-document-services.md#install-adobe-acrobat-pro-dc) no artigo sobre instalação de serviços de documento.
 >* A instalação do Microsoft® Office Professional Plus pode usar o licenciamento por volume baseado em Varejo ou MAK/KMS/AD.
 >* Se a instalação do Microsoft® Office se tornar desativada ou não licenciada por qualquer motivo, como uma instalação com licença de volume que não consegue localizar um host KMS em um período especificado, as conversões podem falhar até que a instalação seja relicenciada e reativada.
 >* A PDF Generator não oferece suporte ao Microsoft® Office 365.

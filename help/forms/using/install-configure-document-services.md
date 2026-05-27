@@ -6,9 +6,9 @@ role: Admin, Developer
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
-source-git-commit: 7df2debfd24bb6caca27ecea2f1b98966095a553
+source-git-commit: 4cdf38284c195122307926f759fa6c60c5cd62af
 workflow-type: tm+mt
-source-wordcount: '10489'
+source-wordcount: '10527'
 ht-degree: 1%
 
 ---
@@ -74,8 +74,8 @@ Antes de começar a instalar e configurar os serviços de documento do AEM Forms
 
 * O software cliente necessário para o gerador de PDF executar a conversão no Microsoft® Windows e Linux® está instalado:
 
-   * **Microsoft® Windows**: instalar o [Microsoft® Office](/help/forms/using/aem-forms-jee-supported-platforms.md#p-software-support-for-pdf-generator-p) ou o [Apache OpenOffice](/help/forms/using/aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator)
-   * **Linux®**: instalar o [Apache OpenOffice](/help/forms/using/aem-forms-jee-supported-platforms.md#p-software-support-for-pdf-generator-p)
+   * **Microsoft® Windows**: instalar o [Microsoft® Office](/help/forms/using/aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) ou o [Apache OpenOffice](/help/forms/using/aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator)
+   * **Linux®**: instalar o [Apache OpenOffice](/help/forms/using/aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator)
 
 >[!NOTE]
 >
@@ -212,9 +212,11 @@ Se você for usar o serviço PDF Generator para converter formatos de arquivo na
 >* Adobe Acrobat, Microsoft® Word, Excel e Powerpoint estão disponíveis apenas para Microsoft® Windows. Se você estiver usando o sistema operacional baseado em UNIX, instale o OpenOffice para converter arquivos rich text e arquivos suportados do Microsoft® Office em documentos PDF.
 >* Ignore todas as caixas de diálogo exibidas após a instalação do Adobe Acrobat e de softwares de terceiros para todos os usuários configurados para usar o serviço PDF Generator.
 >* Inicie todos os softwares instalados pelo menos uma vez. Ignore todas as caixas de diálogo de todos os usuários configurados para usar o serviço PDF Generator.
->* [Verifique a data de expiração de seus números de série da Adobe Acrobat](https://helpx.adobe.com/br/enterprise/kb/volume-license-expiration-check.html) e defina uma data para atualizar a licença ou [migre seu número de série](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) com base na data de expiração.
+>* [Verifique a data de expiração de seus números de série da Adobe Acrobat](https://helpx.adobe.com/enterprise/kb/volume-license-expiration-check.html) e defina uma data para atualizar a licença ou [migre seu número de série](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) com base na data de expiração.
 
-### Instale o Adobe Acrobat Pro DC
+### Instale o Adobe Acrobat Pro DC {#install-adobe-acrobat-pro-dc}
+
+Para obter informações sobre produtos e versões do Acrobat com suporte para o PDF Generator, consulte [Considerações sobre o PDF Generator](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) no artigo sobre plataformas com suporte para AEM Forms em JEE. Os procedimentos nesta seção descrevem o Feature Restricted Licensing (FRL) para o **Adobe Acrobat Pro DC**.
 
 #### Pré-requisitos
 
@@ -907,7 +909,7 @@ Siga estas etapas:
 >
 >A desativação do Modo protegido é necessária para cenários de automação do lado do servidor, como o AEM Forms PDF Generator. Essa configuração só deve ser alterada em ambientes de servidor dedicados, não em desktops de usuários finais.
 
-Para obter mais informações, consulte [documentação do Adobe sobre Modo Protegido](https://helpx.adobe.com/br/acrobat/kb/protected-mode-troubleshooting-reader.html).
+Para obter mais informações, consulte [documentação do Adobe sobre Modo Protegido](https://helpx.adobe.com/acrobat/kb/protected-mode-troubleshooting-reader.html).
 
 
 
@@ -1090,10 +1092,10 @@ O pacote complementar do AEM Forms é um aplicativo implantado no AEM. O pacote 
    1. Selecione **[!UICONTROL Forms]** na lista suspensa **[!UICONTROL Solução]**.
    2. Selecione a versão e o tipo do pacote. Você também pode usar a opção **[!UICONTROL Downloads de Pesquisa]** para filtrar os resultados.
 1. Selecione o nome do pacote aplicável ao seu sistema operacional, selecione **[!UICONTROL Aceitar termos do EULA]** e selecione **[!UICONTROL Baixar]**.
-1. Abra o [Gerenciador de Pacotes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=pt-BR) e clique em **[!UICONTROL Carregar Pacote]** para carregar o pacote.
+1. Abra o [Gerenciador de Pacotes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html) e clique em **[!UICONTROL Carregar Pacote]** para carregar o pacote.
 1. Selecione o pacote e clique em **[!UICONTROL Instalar]**.
 
-   Você também pode baixar o pacote através do link direto listado no artigo [versões do AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=pt-BR).
+   Você também pode baixar o pacote através do link direto listado no artigo [versões do AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
 
 1. Depois que o pacote for instalado, você será solicitado a reiniciar a instância do AEM. **Não parar o servidor imediatamente.** Antes de parar o AEM Forms Server, aguarde até que as mensagens ServiceEvent REGISTERED e ServiceEvent UNREGISTERED parem de aparecer no arquivo `[AEM-Installation-Directory]/crx-quickstart/logs/error`.log e o log fique estável.
 
@@ -1367,7 +1369,6 @@ Antes de executar as seguintes verificações, verifique se a [Ferramenta de Pre
 +++ Adobe Acrobat
 
 * Verifique se apenas a [versão com suporte](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) do Microsoft® Office (32 bits) e do Adobe Acrobat está instalada e se as caixas de diálogo de abertura foram canceladas.
-<!-- (Acrobat 2020 only) Ensure that Adobe Acrobat Update Service is disabled. -->
 * Verifique se o arquivo de lote [Acrobat_for_PDFG_Configuration.bat](#configure-acrobat-for-the-pdf-generator-service) foi executado com privilégios de administrador.
 * Verifique se um usuário do PDF Generator foi adicionado na interface de configuração do PDF.
 * Verifique se a permissão [Substituir um token de nível de processo](#grant-the-replace-a-process-level-token-privilege) foi adicionada para o usuário do PDF Generator.
@@ -1458,7 +1459,7 @@ Antes de executar as seguintes verificações, verifique se a [Ferramenta de Pre
 <!--
 +++ Unable to add a PDF Generator (PDFG) user
 
-* (Acrobat 2020 only) Ensure Microsoft&reg; Visual C++ 2012 x86 and Microsoft&reg; Visual C++ 2013 x86 (32-bit) redistributable are installed on Windows.
+* (Legacy Acrobat guidance — retained for reference only) Ensure Microsoft&reg; Visual C++ 2012 x86 and Microsoft&reg; Visual C++ 2013 x86 (32-bit) redistributable are installed on Windows.
 
 +++
 -->
@@ -1471,7 +1472,7 @@ Antes de executar as seguintes verificações, verifique se a [Ferramenta de Pre
 +++
 
 <!--
-+++ (Acrobat 2020 only) Multiple user conversion failures 
++++ (Legacy Acrobat guidance — retained for reference only) Multiple user conversion failures 
 
 * Verify the server logs to check if the conversion is failing for a particular user.(Process Explorer can help you check running process for different users)
 
@@ -1487,7 +1488,7 @@ Antes de executar as seguintes verificações, verifique se a [Ferramenta de Pre
 -->
 
 <!--
-(Acrobat 2020 only) License of Adobe Acrobat installed on AEM Forms Server expires
+(Legacy Acrobat guidance — retained for reference only) License of Adobe Acrobat installed on AEM Forms Server expires
 
 * If you have an existing license of Adobe Acrobat and it has expired, [Download the latest version of Adobe Application Manager](https://helpx.adobe.com/in/creative-suite/kb/aam-troubleshoot-download-install.html), and migrating your serial number. Before [migrating your serial number](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number).
 
@@ -1508,7 +1509,7 @@ Antes de executar as seguintes verificações, verifique se a [Ferramenta de Pre
 
 * For large-scale installations, use the [Acrobat Customization Wizard](https://www.adobe.com/devnet-docs/acrobatetk/tools/Wizard/index.html) to remove previous versions of Reader and Acrobat. Customize the installer and deploy it to all the machines of your organization.
 
-(Acrobat 2020 only) AEM Forms Server is in an offline or secure environment and internet is not available to activate Acrobat.
+(Legacy Acrobat guidance — retained for reference only) AEM Forms Server is in an offline or secure environment and internet is not available to activate Acrobat.
 
 * You can go online within 7 days of the first launch of your Adobe product to complete an online activation and registration or use an internet-enabled device and your product's serial number to complete this process. For detailed instructions, see [Offline Activation](https://exception.licenses.adobe.com/aoes/aoes/v1/t1?locale=en).
 
