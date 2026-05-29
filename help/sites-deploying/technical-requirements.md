@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: b8be2ca14bdc6c6f21a2a33c893841a9aa201112
+source-git-commit: 4cdf38284c195122307926f759fa6c60c5cd62af
 workflow-type: tm+mt
-source-wordcount: '3746'
+source-wordcount: '3790'
 ht-degree: 1%
 
 ---
@@ -470,7 +470,7 @@ Para Windows x86:
    <th><p><strong>Formatos compatíveis com a conversão para o PDF</strong></p> </th>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/br/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat Pro DC</a> versão mais recente</td>
+   <td><a href="https://helpx.adobe.com/br/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat Pro DC</a> (faixa contínua, versão mais recente)</td>
    <td>XPS, formatos de imagem (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML e HTM</td>
   </tr>
 
@@ -492,7 +492,7 @@ OpenOffice 4.1.15 </td>
 >[!NOTE]
 >
 >* O PDF Generator suporta apenas as versões em inglês, francês, alemão e japonês dos sistemas operacionais e aplicativos compatíveis.
->* A PDF Generator requer o Adobe Acrobat Pro DC de 32 bits e o Microsoft® Office Professional Plus para executar a conversão.
+>* A PDF Generator exige uma build de 32 bits do Windows do Adobe Acrobat Pro DC (Continuous track, versão mais recente) para conversões nativas orientadas pela Acrobat e uma build de 32 bits do Microsoft® Office Professional Plus para conversões baseadas no Office no Microsoft® Windows. Para obter informações sobre instalação e o Feature Restricted Licensing (FRL) para o Acrobat Pro DC, consulte [Instalar o Adobe Acrobat Pro DC](../forms/using/install-configure-document-services.md#install-adobe-acrobat-pro-dc) no artigo sobre instalação de serviços de documento.
 >* A instalação do Microsoft® Office Professional Plus pode usar o licenciamento por volume baseado em Varejo ou MAK/KMS/AD.
 >* Se a instalação do Microsoft® Office se tornar desativada ou não licenciada por qualquer motivo, como uma instalação com licença de volume que não consegue localizar um host KMS em um período especificado, as conversões podem falhar até que a instalação seja relicenciada e reativada.
 >* A PDF Generator não oferece suporte ao Microsoft® Office 365.

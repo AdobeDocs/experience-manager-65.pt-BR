@@ -6,9 +6,9 @@ role: Admin, Developer
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
-source-git-commit: 7df2debfd24bb6caca27ecea2f1b98966095a553
+source-git-commit: 4cdf38284c195122307926f759fa6c60c5cd62af
 workflow-type: tm+mt
-source-wordcount: '10489'
+source-wordcount: '10527'
 ht-degree: 1%
 
 ---
@@ -74,8 +74,8 @@ Antes de começar a instalar e configurar os serviços de documento do AEM Forms
 
 * O software cliente necessário para o gerador de PDF executar a conversão no Microsoft® Windows e Linux® está instalado:
 
-   * **Microsoft® Windows**: instalar o [Microsoft® Office](/help/forms/using/aem-forms-jee-supported-platforms.md#p-software-support-for-pdf-generator-p) ou o [Apache OpenOffice](/help/forms/using/aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator)
-   * **Linux®**: instalar o [Apache OpenOffice](/help/forms/using/aem-forms-jee-supported-platforms.md#p-software-support-for-pdf-generator-p)
+   * **Microsoft® Windows**: instalar o [Microsoft® Office](/help/forms/using/aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) ou o [Apache OpenOffice](/help/forms/using/aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator)
+   * **Linux®**: instalar o [Apache OpenOffice](/help/forms/using/aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator)
 
 >[!NOTE]
 >
@@ -214,7 +214,9 @@ Se você for usar o serviço PDF Generator para converter formatos de arquivo na
 >* Inicie todos os softwares instalados pelo menos uma vez. Ignore todas as caixas de diálogo de todos os usuários configurados para usar o serviço PDF Generator.
 >* [Verifique a data de expiração de seus números de série da Adobe Acrobat](https://helpx.adobe.com/br/enterprise/kb/volume-license-expiration-check.html) e defina uma data para atualizar a licença ou [migre seu número de série](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) com base na data de expiração.
 
-### Instale o Adobe Acrobat Pro DC
+### Instale o Adobe Acrobat Pro DC {#install-adobe-acrobat-pro-dc}
+
+Para obter informações sobre produtos e versões do Acrobat com suporte para o PDF Generator, consulte [Considerações sobre o PDF Generator](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) no artigo sobre plataformas com suporte para AEM Forms em JEE. Os procedimentos nesta seção descrevem o Feature Restricted Licensing (FRL) para o **Adobe Acrobat Pro DC**.
 
 #### Pré-requisitos
 
@@ -1367,7 +1369,6 @@ Antes de executar as seguintes verificações, verifique se a [Ferramenta de Pre
 +++ Adobe Acrobat
 
 * Verifique se apenas a [versão com suporte](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) do Microsoft® Office (32 bits) e do Adobe Acrobat está instalada e se as caixas de diálogo de abertura foram canceladas.
-<!-- (Acrobat 2020 only) Ensure that Adobe Acrobat Update Service is disabled. -->
 * Verifique se o arquivo de lote [Acrobat_for_PDFG_Configuration.bat](#configure-acrobat-for-the-pdf-generator-service) foi executado com privilégios de administrador.
 * Verifique se um usuário do PDF Generator foi adicionado na interface de configuração do PDF.
 * Verifique se a permissão [Substituir um token de nível de processo](#grant-the-replace-a-process-level-token-privilege) foi adicionada para o usuário do PDF Generator.
@@ -1458,7 +1459,7 @@ Antes de executar as seguintes verificações, verifique se a [Ferramenta de Pre
 <!--
 +++ Unable to add a PDF Generator (PDFG) user
 
-* (Acrobat 2020 only) Ensure Microsoft&reg; Visual C++ 2012 x86 and Microsoft&reg; Visual C++ 2013 x86 (32-bit) redistributable are installed on Windows.
+* (Legacy Acrobat guidance — retained for reference only) Ensure Microsoft&reg; Visual C++ 2012 x86 and Microsoft&reg; Visual C++ 2013 x86 (32-bit) redistributable are installed on Windows.
 
 +++
 -->
@@ -1471,7 +1472,7 @@ Antes de executar as seguintes verificações, verifique se a [Ferramenta de Pre
 +++
 
 <!--
-+++ (Acrobat 2020 only) Multiple user conversion failures 
++++ (Legacy Acrobat guidance — retained for reference only) Multiple user conversion failures 
 
 * Verify the server logs to check if the conversion is failing for a particular user.(Process Explorer can help you check running process for different users)
 
@@ -1487,7 +1488,7 @@ Antes de executar as seguintes verificações, verifique se a [Ferramenta de Pre
 -->
 
 <!--
-(Acrobat 2020 only) License of Adobe Acrobat installed on AEM Forms Server expires
+(Legacy Acrobat guidance — retained for reference only) License of Adobe Acrobat installed on AEM Forms Server expires
 
 * If you have an existing license of Adobe Acrobat and it has expired, [Download the latest version of Adobe Application Manager](https://helpx.adobe.com/in/creative-suite/kb/aam-troubleshoot-download-install.html), and migrating your serial number. Before [migrating your serial number](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number).
 
@@ -1508,7 +1509,7 @@ Antes de executar as seguintes verificações, verifique se a [Ferramenta de Pre
 
 * For large-scale installations, use the [Acrobat Customization Wizard](https://www.adobe.com/devnet-docs/acrobatetk/tools/Wizard/index.html) to remove previous versions of Reader and Acrobat. Customize the installer and deploy it to all the machines of your organization.
 
-(Acrobat 2020 only) AEM Forms Server is in an offline or secure environment and internet is not available to activate Acrobat.
+(Legacy Acrobat guidance — retained for reference only) AEM Forms Server is in an offline or secure environment and internet is not available to activate Acrobat.
 
 * You can go online within 7 days of the first launch of your Adobe product to complete an online activation and registration or use an internet-enabled device and your product's serial number to complete this process. For detailed instructions, see [Offline Activation](https://exception.licenses.adobe.com/aoes/aoes/v1/t1?locale=en).
 
