@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: e12267324516982a654ce61ff6c11554f8c87d8a
+source-git-commit: 7e225038e925468f6e4dbdcf1d3dce6eceee9292
 workflow-type: tm+mt
-source-wordcount: '7116'
+source-wordcount: '7156'
 ht-degree: 3%
 
 ---
@@ -24,7 +24,7 @@ DO NOT DELETE THIS HIDDEN NOTE!      DO NOT DELETE THIS HIDDEN NOTE!
 >Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the add-on packages release Thursday, May 29, 2025. In addition, a list of Forms fixes and enhancements is added to this section.
 -->
 
-## Informações da versão {#release-information}
+## Resumo da versão {#release-information}
 
 | Produto | [!DNL Adobe Experience Manager] 6.5 |
 | -------- | ---------------------------- |
@@ -33,14 +33,15 @@ DO NOT DELETE THIS HIDDEN NOTE!      DO NOT DELETE THIS HIDDEN NOTE!
 | Data | 21 de maio de 2026 <!-- UPDATE FOR EACH NEW RELEASE --> |
 | URL de download | [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.25.0.zip) <!-- UPDATE FOR EACH NEW RELEASE --> |
 
-<!--
-OLD DOWNLOAD URL
-(https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.23.0.zip)
--->
+O Experience Manager 6.5.25.0 inclui novos recursos, importantes melhorias solicitadas por clientes e correções de erros. Ele também inclui melhorias de desempenho, estabilidade e segurança incorporadas à base 6.5, disponível desde abril de 2019.
 
-## O que está incluído em [!DNL Experience Manager] 6.5.25.0 {#what-is-included-in-aem-6525}
+Esta versão do service pack oferece 275 portas traseiras em Sites, Assets e Foundation, incluindo correções críticas de erros e fortalecimento da segurança. A versão também aprimora a acessibilidade na criação de sites com navegação extensa pelo teclado, gerenciamento de foco, semântica ARIA, melhorias no contraste de cores e dimensionamento do target de toque que se alinham aos padrões WCAG.
 
-[!DNL Experience Manager] 6.5.25.0 inclui novos recursos, importantes melhorias solicitadas por clientes e correções de erros. Ele também inclui melhorias de desempenho, estabilidade e segurança lançadas desde a disponibilização inicial do 6.5, em abril de 2019. [Instalar este Service Pack](#install) em [!DNL Experience Manager] 6.5.
+O Crosswalk está disponível por padrão nesta versão, eliminando a necessidade de um pacote ou configuração separados após a instalação.
+
+As portas traseiras de segurança solucionam as vulnerabilidades XSS e melhoram o manuseio de metadados de ativos compartilhados.
+
+Os fragmentos de conteúdo e a API do GraphQL também recebem melhorias de confiabilidade, abrangendo referências de imagens incorporadas, tratamento de consultas persistentes e localização do editor.
 
 <!-- UPDATE FOR EACH NEW RELEASE -->
 
@@ -222,7 +223,7 @@ O AEM agora carrega os modelos corretos quando os autores criam variações de F
 * As descrições da Política da página agora são renderizadas corretamente no Editor de modelo. Os usuários podem ler a orientação completa de Classes CSS padrão sem texto truncado na guia Estilos. (SITES-29724)
 * O Editor de modelo agora exibe um erro localizado quando um autor tenta arrastar um componente para um modelo excluído. A mensagem não é mais exibida como uma string não traduzida &quot;durante o processamento&quot;. (SITES-19313)
 * O rótulo &quot;Direcionado&quot; na janela Configuração do teaser agora é exibido com texto localizado. A seção Hiperlink não mostra mais a cadeia de caracteres em inglês em locais que não sejam em inglês. (SITES-18622)
-* A caixa de diálogo Iniciar fluxo de trabalho no Editor de páginas agora exibe rótulos de ação de fluxo de trabalho localizados. Os autores não veem mais cadeias de caracteres em inglês para opções de fluxo de trabalho, como aprovação, publicação, solicitação e ações de cancelamento de publicação. (SITES-18103)
+* A caixa de diálogo Iniciar fluxo de trabalho no Editor de páginas agora exibe rótulos de ação de fluxo de trabalho localizados. Os autores não veem mais cadeias de caracteres em inglês para opções de fluxo de trabalho. As opções incluem ações de aprovação, publicação, solicitação e cancelamento da publicação. (SITES-18103)
 * O menu suspenso Pai no painel de edição Separador agora exibe cadeias de caracteres localizadas sem truncamento. Os autores podem revisar o rótulo completo ao configurar o componente. (SITES-17480)
 * O Editor de páginas agora exibe rótulos localizados para &quot;Largura total&quot; e &quot;Largura fixa&quot; no menu Estilos do componente de Contêiner. Os autores que usam localidades compatíveis não verão mais essas cadeias de caracteres em inglês. (SITES-17478)
 * Os autores agora podem ler a dica de ferramenta completa na área Propriedades de navegação do console Modelos. A interface do usuário mantém a dica de ferramenta alinhada e impede o truncamento de texto durante a edição do modelo. (SITES-15480)
@@ -365,7 +366,7 @@ As contagens de status do projeto de tradução agora são atualizadas corretame
 #### Interface do usuário{#foundation-ui-6525}
 
 * Os URLs de console do Sites inseridos manualmente agora são resolvidos para a página ou o caminho da pasta desejado. A hierarquia de conteúdo permanece consistente após a atualização e não retorna mais ao URL de base. (NPR-43688)
-* O conjunto de testes do CRX Package Manager não falha mais após uma instância do AEM 6.5 LTS SP1 ser atualizada para o LTS SP2. O teste do servlet de lista de miniaturas agora é concluído conforme esperado. (NPR-43534)
+* O conjunto de testes do Adobe CRX Package Manager não falha mais após uma instância do AEM 6.5 LTS SP1 ser atualizada para o LTS SP2. O teste do servlet de lista de miniaturas agora é concluído conforme esperado. (NPR-43534)
 
 * A árvore de conteúdo do console Sites agora é carregada de forma consistente após cada atualização do navegador. Os autores não verão mais um painel em branco à esquerda ou uma mensagem &quot;Não há item&quot; quando o conteúdo existir. (NPR-43442)
 
@@ -569,13 +570,13 @@ Para garantir a operação correta, você deve adicionar as seguintes propriedad
    * O ponto de acesso em uma imagem interativa do Dynamic Media não é visível ao visualizar o ativo por meio do visualizador de banner de compra.
    * `com.adobe.cq.social.cq-social-jcr-provider bundle com.adobe.cq.social.cq-social-jcr-provider:1.3.5 (395)[com.adobe.cq.social.provider.jcr.impl.SpiSocialJcrResourceProviderImpl(2302)]` : Tempo limite atingido ao aguardar a conclusão da alteração de registro não registrada.
 
-* A partir do AEM 6.5.15, o Mecanismo Rhino JavaScript fornecido pelo pacote ```org.apache.servicemix.bundles.rhino``` tem um novo comportamento de elevação. Os scripts que usam o modo estrito (```use strict;```) devem declarar suas variáveis corretas. Caso contrário, eles não serão executados e acabarão gerando um erro de tempo de execução.
+* A partir do AEM 6.5.15, o Mecanismo Rhino JavaScript fornecido pelo pacote `org.apache.servicemix.bundles.rhino` tem um novo comportamento de elevação. Os scripts que usam o modo estrito (`use strict;`) devem declarar suas variáveis corretas. Caso contrário, eles não serão executados e acabarão gerando um erro de tempo de execução.
 
 * A instalação de marcação relacionada ao conteúdo pronto para uso por meio de um pacote de atualização oficial redefine a propriedade languages do nó `/content/cq:tags` para o padrão. Essa ação é verdadeira para Service Packs, Service Packs de segurança, Pacotes de recursos estendidos, Pacotes de recursos cumulativos, patches e assim por diante. Portanto, é necessário adicioná-lo das propriedades antes da instalação.
 
 ### Problema conhecido do AEM Sites {#known-issues-aem-sites-6525}
 
-A visualização dos fragmentos de conteúdo falha devido à proteção do DoS para uma grande árvore de fragmentos. Consulte o artigo [KB sobre as opções de configuração padrão do GraphQL Query Executor](https://experienceleague.adobe.com/pt-br/docs/experience-cloud-kcs/kbarticles/ka-23945) (SITES-17934)
+A visualização dos fragmentos de conteúdo falha devido à proteção do DoS para uma grande árvore de fragmentos. Consulte o artigo [KB sobre as opções de configuração padrão do GraphQL Query Executor](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-23945) (SITES-17934)
 
 ### Problemas conhecidos do AEM Forms {#known-issues-aem-forms-6525}
 
@@ -621,14 +622,14 @@ Os seguintes problemas têm uma correção disponível para download e instalaç
    2. Exclua o pacote com o nome `com.adobe.granite.ui.commons-5.10.26.jar`.
    3. Reinicie o servidor do AEM.
 
-* **FORMS-23703** Quando a regra `contains` é configurada sem um valor padrão, a validação do Server Side para um Formulário adaptável falha. Você pode instalar a última versão do [AEM Forms 6.5.25.0 Service Pack](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases) para corrigir o problema.
-* **Os conectores do Modelo de Dados de Formulário do GRANITE-63681** podem não ser autenticados porque as palavras-chave e o padrão regex necessários não são permitidos por padrão. Para resolver o problema, baixe e instale o hotfix do [link](/help/release-notes/aem-forms-hotfix.md).
-* A **conversão de FORMS-23979** de HTML para PDF (PDFG) pode apresentar tempos limite intermitentes. Posteriormente, uma versão mais recente do complemento do Forms para SP24 foi lançada, que inclui a correção. Se você encontrar esse problema, atualize seu ambiente para o [complemento mais recente do Forms lançado para 6.5.25.0](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases).
+* **FORMS-23703** Quando a regra `contains` é configurada sem um valor padrão, a validação do Server Side para um Formulário adaptável falha. Você pode instalar a última versão do [AEM Forms 6.5.25.0 Service Pack](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases) para corrigir o problema.
+* **GRANITE-63681** A configuração padrão do sistema bloqueia as palavras-chave e os padrões regex necessários, o que impede a autenticação dos conectores do Modelo de Dados de Formulário. Para resolver o problema, baixe e instale o hotfix do [link](/help/release-notes/aem-forms-hotfix.md).
+* A **conversão de FORMS-23979** de HTML para PDF (PDFG) pode apresentar tempos limite intermitentes. Posteriormente, uma versão mais recente do complemento do Forms para SP24 foi lançada, que inclui a correção. Se você encontrar esse problema, atualize seu ambiente para o [complemento mais recente do Forms lançado para 6.5.25.0](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases).
 * **FORMS-23717** Depois de atualizar para o **AEM Forms6.5.25.0**, o `server.log` e o `error.log` podem ser inundados com mensagens de AVISO repetidas, como *Falha na criação de fábrica do analisador seguro* ou *Não há suporte para o atributo de segurança ...*. Os logs podem aumentar em cerca de **5-10 linhas por segundo** (centenas de MB por hora), o que pode preencher o disco e bloquear a implantação da produção.
 
 Para reduzir o volume de log, defina o nível de log de `com.adobe.util.XMLSecurityUtil` como `ERROR` na configuração do servidor de aplicativos ou por meio do argumento JVM `-Dlogging.level.com.adobe.util.XMLSecurityUtil=ERROR`. Essa funcionalidade apenas oculta as mensagens e não corrige a causa subjacente.
 
-* **FORMS-23875** Na pesquisa do Modelo de Dados de Formulário, uma marca HTML é exibida na interface do usuário mesmo quando uma entidade relevante não está presente. Para resolver o problema, baixe e instale o hotfix do [link](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/bb-expressionmanager-pkg-10.0.48.zip).
+* **FORMS-23875** Na pesquisa do Modelo de dados de formulário, a interface do usuário exibe uma marca HTML mesmo quando uma entidade relevante está ausente. Para resolver o problema, baixe e instale o hotfix do [link](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/bb-expressionmanager-pkg-10.0.48.zip).
 
 ## Pacotes da OSGi e pacotes de conteúdo inclusos{#osgi-bundles-and-content-packages-included}
 
@@ -644,12 +645,12 @@ Os arquivos zip a seguir contêm os documentos de texto que listam os pacotes OS
 Esses sites estão disponíveis somente para clientes do. Se você for cliente e precisar de acesso, entre em contato com o seu gerente de conta da Adobe.
 
 * [Download do produto em licensing.adobe.com](https://licensing.adobe.com/)
-* [Fale com o suporte ao cliente da Adobe](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#).
+* [Fale com o suporte ao cliente da Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#).
 
 >[!MORELIKETHIS]
 >
 >* [[!DNL Experience Manager] página do produto](https://business.adobe.com/br/products/experience-manager/adobe-experience-manager.html)
->* [[!DNL Experience Manager] Documentação do 6.5](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65)
+>* [[!DNL Experience Manager] Documentação do 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65)
 >* [Inscreva-se para obter atualizações de produto prioritárias da Adobe](https://www.adobe.com/subscription/priority-product-update.html)
 
 
