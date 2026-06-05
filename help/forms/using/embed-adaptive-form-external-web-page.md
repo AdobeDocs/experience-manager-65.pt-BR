@@ -8,7 +8,7 @@ feature: Adaptive Forms,Foundation Components
 exl-id: 2a237f74-fdfc-4e28-841c-f69afb7b99cf
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 17a9c95166644a2a4e665e97c71b5fb744af6362
+source-git-commit: 20ee89572d58ade43d899b9292497717cb82c8b2
 workflow-type: tm+mt
 source-wordcount: '1388'
 ht-degree: 3%
@@ -19,7 +19,7 @@ ht-degree: 3%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/forms/integrate/services/embed-adaptive-form-core-components-external-web-page) |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/services/embed-adaptive-form-core-components-external-web-page) |
 | AEM 6.5 | Este artigo |
 
 
@@ -193,8 +193,8 @@ Ao incorporar um formulário adaptável em uma página da Web, considere as segu
 
 * Certifique-se de que as regras de estilo definidas no CSS da página da Web não estejam em conflito com o CSS do objeto de formulário. Para evitar os conflitos, você pode reutilizar o CSS da página da Web no tema de formulário adaptável usando a biblioteca de cliente do AEM. Para obter informações sobre como usar a biblioteca do cliente em temas de formulário adaptável, consulte [Temas no AEM Forms](../../forms/using/themes.md).
 * Faça com que o container do formulário na página da Web use toda a largura da janela. Ela garante que as regras CSS configuradas para dispositivos móveis funcionem sem alterações. Se o contêiner de formulário não ocupa toda a largura da janela, você deve gravar CSS personalizado para fazer o formulário se adaptar a diferentes dispositivos móveis.
-* Use a API `[getData](https://helpx.adobe.com/br/experience-manager/6-3/forms/javascript-api/GuideBridge.html)` para obter a representação XML ou JSON dos dados de formulário no cliente.
-* Use a API `[unloadAdaptiveForm](https://helpx.adobe.com/br/experience-manager/6-3/forms/javascript-api/GuideBridge.html)` para descarregar o formulário adaptável do DOM do HTML.
+* Use a API `[getData](https://helpx.adobe.com/experience-manager/6-3/forms/javascript-api/GuideBridge.html)` para obter a representação XML ou JSON dos dados de formulário no cliente.
+* Use a API `[unloadAdaptiveForm](https://helpx.adobe.com/experience-manager/6-3/forms/javascript-api/GuideBridge.html)` para descarregar o formulário adaptável do DOM do HTML.
 * Configure o cabeçalho access-control-origin ao enviar uma resposta de um servidor do AEM.
 
 ## Permitir que o AEM Forms forneça formulários adaptáveis a um site entre domínios {#cross-site}
@@ -205,7 +205,7 @@ Quando o servidor do AEM e a página da Web estiverem em domínios diferentes, c
 
 >[!TAB Usando a configuração de baseUrl do GuideBridge]
 
-Ao usar a [configuração &#x200B;](#configure-base-url) do GuideBridge `baseUrl`, configure o CORS na instância de publicação do AEM para que o servidor do AEM retorne os cabeçalhos apropriados para os pontos de extremidade de envio, preenchimento prévio e Documento de Registro.
+Ao usar a [configuração ](#configure-base-url) do GuideBridge `baseUrl`, configure o CORS na instância de publicação do AEM para que o servidor do AEM retorne os cabeçalhos apropriados para os pontos de extremidade de envio, preenchimento prévio e Documento de Registro.
 
 1. Na instância de publicação do AEM, vá para o Gerenciador de Configuração do Console da Web do AEM em `https://'[server]:[port]'/system/console/configMgr`.
 1. Localize e abra a **configuração da Política de Compartilhamento de Recursos entre Origens do Adobe Granite** (`com.adobe.granite.cors.impl.CORSPolicyImpl`).
