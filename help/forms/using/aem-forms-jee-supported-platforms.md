@@ -9,9 +9,9 @@ role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
-source-git-commit: 4cdf38284c195122307926f759fa6c60c5cd62af
+source-git-commit: ca3f909f4085537a085fd4c8d92f4dcef66f1cab
 workflow-type: tm+mt
-source-wordcount: '3958'
+source-wordcount: '3839'
 ht-degree: 1%
 
 ---
@@ -107,7 +107,7 @@ A Adobe recomenda essas configurações e fornece suporte total ou restrito como
 >[!NOTE]
 >
 >Para ajudar os clientes da AEM Forms a reduzir o custo de propriedade, simplificar a arquitetura de implantação e modernizar a pilha de desenvolvimento, a plataforma corporativa da Adobe Experience Manager está se afastando das implantações baseadas em servidor de aplicativos em favor das implantações independentes baseadas em OSGi. A Adobe continua a oferecer suporte à pilha do AEM Forms JEE com uma matriz reduzida de componentes de infraestrutura.
-><br>>Com o lançamento da versão 6.5, os componentes de infraestrutura com o menor uso entre os clientes da Adobe não serão mais compatíveis, como demonstrado a seguir:
+><br>>Com o lançamento do 6.5, os componentes de infraestrutura com uso mais baixo entre os clientes do Adobe não terão mais suporte, como mostrado a seguir:
 >
 > - banco de dados IBM® DB2®
 > - Sistemas operacionais IBM® AIX® e Sun Solaris™
@@ -126,7 +126,7 @@ O Adobe Experience Manager Forms requer uma máquina virtual Java™ para ser ex
 <table>
 <tbody>
  <tr>
-  <th><p><strong>Plataforma</strong></p> </th>
+  <th><p><strong>Platform</strong></p> </th>
   <th><p><strong>Nível de compatibilidade</strong></p> </th>
   <th><p><strong>Definições de patch compatíveis</strong></p> </th>
  </tr>
@@ -175,7 +175,7 @@ O Adobe Experience Manager Forms requer uma máquina virtual Java™ para ser ex
 <table>
 <tbody>
  <tr>
-  <td><p><strong>Plataforma</strong></p> </td>
+  <td><p><strong>Platform</strong></p> </td>
   <td><p><strong> Descrição</strong></p> </td>
   <td><p><strong>Nível de compatibilidade</strong></p> </td>
  </tr>
@@ -250,7 +250,7 @@ O Adobe Experience Manager Forms requer uma máquina virtual Java™ para ser ex
 <tbody>
  <tr>
   <th>Banco de dados </th>
-  <th><p><strong>Plataforma</strong></p> </th>
+  <th><p><strong>Platform</strong></p> </th>
   <th><p><strong>Definições de patch compatíveis</strong></p> </th>
  </tr>
   <tr>
@@ -288,7 +288,7 @@ O Adobe Experience Manager Forms requer uma máquina virtual Java™ para ser ex
 <table>
 <tbody>
  <tr>
-  <td><p><strong> Plataforma</strong></p> </td>
+  <td><p><strong> Platform</strong></p> </td>
   <td><p><strong>Nível de compatibilidade</strong></p> </td>
   <td><p><strong>Definições de patch compatíveis</strong></p> </td>
  </tr>
