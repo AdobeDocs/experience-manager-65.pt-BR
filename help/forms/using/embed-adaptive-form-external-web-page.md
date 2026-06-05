@@ -205,7 +205,7 @@ Quando o servidor do AEM e a página da Web estiverem em domínios diferentes, c
 
 >[!TAB Usando a configuração de baseUrl do GuideBridge]
 
-Ao usar a [configuração ](#configure-base-url) do GuideBridge `baseUrl`, configure o CORS na instância de publicação do AEM para que o servidor do AEM retorne os cabeçalhos apropriados para os pontos de extremidade de envio, preenchimento prévio e Documento de Registro.
+Ao usar a [configuração &#x200B;](#configure-base-url) do GuideBridge `baseUrl`, configure o CORS na instância de publicação do AEM para que o servidor do AEM retorne os cabeçalhos apropriados para os pontos de extremidade de envio, preenchimento prévio e Documento de Registro.
 
 1. Na instância de publicação do AEM, vá para o Gerenciador de Configuração do Console da Web do AEM em `https://'[server]:[port]'/system/console/configMgr`.
 1. Localize e abra a **configuração da Política de Compartilhamento de Recursos entre Origens do Adobe Granite** (`com.adobe.granite.cors.impl.CORSPolicyImpl`).
