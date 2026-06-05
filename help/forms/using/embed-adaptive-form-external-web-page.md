@@ -8,7 +8,7 @@ feature: Adaptive Forms,Foundation Components
 exl-id: 2a237f74-fdfc-4e28-841c-f69afb7b99cf
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 20ee89572d58ade43d899b9292497717cb82c8b2
+source-git-commit: fb26d0c08644f8b84e406adeb7fb14496e8e9fd0
 workflow-type: tm+mt
 source-wordcount: '1388'
 ht-degree: 3%
@@ -39,7 +39,7 @@ Execute as seguintes etapas antes de incorporar um formulário adaptável a um s
 
 Você pode incorporar um formulário adaptável inserindo algumas linhas de JavaScript na página da Web. A API no código envia uma solicitação HTTP ao servidor do AEM para recursos de formulários adaptáveis e injeta o formulário adaptável no contêiner de formulários especificado.
 
-Para incorporar o formulário adaptável:
+Para incorporar o Formulário adaptável:
 
 1. Crie uma página da Web em seu site com o seguinte código:
 
@@ -144,7 +144,7 @@ Com essa configuração, um URL de solicitação semelhante ao seguinte exemplo:
 https://publish.example.com/content/forms/af/my-form/jcr:content/guideContainer.af.submit.jsp
 ```
 
-Quando o servidor do AEM e a página da Web estão em domínios diferentes, você também deve configurar o CORS na instância de publicação do AEM. Execute as etapas listadas na seção [habilitar o AEM Forms para fornecer formulários adaptáveis a um site entre domínios](#cross-site).
+Quando o servidor do AEM e a página da Web estão em domínios diferentes, você também deve configurar o CORS na instância de publicação do AEM. Execute as etapas listadas na seção [habilitar o AEM Forms para fornecer formulários adaptáveis a um site entre domínios](#enable-aem-forms-to-serve-adaptive-forms-to-a-cross-domain-site-cross-site).
 
 ## Topologia de exemplo {#sample-topology}
 
@@ -221,3 +221,4 @@ Ao usar um proxy reverso ou incorporar o formulário adaptável sem a configura�
 1. No campo Hosts permitidos, especifique o domínio em que reside a página da Web. Ele permite que o host faça solicitações de POST para o servidor do AEM. Você também pode usar expressões regulares para especificar uma série de domínios de aplicativos externos.
 
 >[!ENDTABS]
+
