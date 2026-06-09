@@ -7,9 +7,9 @@ feature: Asset Reports,Asset Management
 exl-id: b4963a03-3496-4c6c-9d30-8812304d0e9f
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: bca6156727dca11b2e09be549f3def6130827193
+source-git-commit: 555cb326a4a554d98904cf1a2b27b609ba67c806
 workflow-type: tm+mt
-source-wordcount: '1171'
+source-wordcount: '1173'
 ht-degree: 8%
 
 ---
@@ -99,7 +99,7 @@ Os administradores do [!DNL Adobe Experience Manager] podem facilmente gerar e p
 
    O relatório **[!UICONTROL Compartilhamento de links]** exibe URLs de ativos que são compartilhados com usuários externos a partir do [!DNL Assets]. Inclui IDs de email do usuário que compartilhou os ativos, IDs de email de usuários com os quais os ativos são compartilhados, data de compartilhamento e data de expiração do link. As colunas não são personalizáveis.
 
-   O relatório **[!UICONTROL Compartilhamento de links]** não inclui opções para subpastas e representações porque apenas publica as URLs compartilhadas que aparecem em `/var/dam/share`.
+   O relatório **[!UICONTROL Compartilhamento de Links]** não inclui opções para subpastas e representações porque apenas publica as URLs compartilhadas que aparecem em `/var/dam/share`.
 
    ![Página de detalhes do relatório de Compartilhamento de links](assets/link_share.png)
 
@@ -164,8 +164,8 @@ Para remover relatórios desnecessários, configure o serviço de Limpeza de rel
 
 ## Informações sobre solução de problemas, dicas e limitações {#best-practices-and-limitations}
 
-* Se alguns relatórios ou números nos relatórios não estiverem disponíveis ou como esperado, verifique se o serviço [!UICONTROL Gravador de eventos DAM do DAM do Day] está habilitado.
+* Se alguns relatórios ou números nos relatórios não estiverem disponíveis ou como esperado, verifique se o serviço [!UICONTROL Gravador de Eventos DAM do CQ de &#x200B;] está habilitado.
 
 * Remova os relatórios que não são mais necessários. Use as opções de configuração no serviço de Limpeza de relatório do DAM para configurar os critérios para limpar relatórios.
 
-* Se o Relatório de Uso de Disco não for gerado e você estiver usando o [!DNL Dynamic Media], verifique se todos os ativos estão funcionando corretamente. Para resolver, reprocesse os ativos e gere o relatório novamente.
+* Se o Relatório de Uso de Disco não for gerado e você estiver usando o [!DNL Dynamic Media], verifique se todos os ativos foram processados corretamente. Para resolver, reprocesse os ativos e gere o relatório novamente.

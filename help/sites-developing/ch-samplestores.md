@@ -9,9 +9,9 @@ exl-id: d8d9a799-3e30-442a-843b-d4d7ba70c557
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Personalization
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: ab939c3928068a0836674db6207d9774d6033e79
 workflow-type: tm+mt
-source-wordcount: '464'
+source-wordcount: '475'
 ht-degree: 1%
 
 ---
@@ -110,7 +110,7 @@ O armazenamento usa uma árvore de dados semelhante ao seguinte exemplo:
 
 >[!NOTE]
 >
->Uma política de segurança introduzida no Chrome 50.x exige que todas as chamadas relacionadas à geolocalização sejam feitas em uma conexão segura. Portanto, o AEM força o uso de https para chamadas de API de geolocalização se o AEM também estiver em execução em https. Caso contrário, o http é usado para estar em conformidade com a política da mesma origem. Consulte [esta publicação do blog do Google](https://developers.google.com/web/updates/2016/04/geolocation-on-secure-contexts-only) para obter mais detalhes sobre a alteração no Chrome.
+>Uma política de segurança introduzida no Chrome 50.x exige que todas as chamadas relacionadas à geolocalização sejam feitas em uma conexão segura. Portanto, a AEM força o uso de https para chamadas de API de geolocalização se o AEM também estiver sendo executado em https. Caso contrário, o http é usado para estar em conformidade com a política da mesma origem. Consulte [esta publicação do blog do Google](https://developers.google.com/web/updates/2016/04/geolocation-on-secure-contexts-only) para obter mais detalhes sobre a alteração no Chrome.
 
 ## contexthub.surferinfo Candidato da loja de amostra {#contexthub-surferinfo-sample-store-candidate}
 
@@ -351,3 +351,4 @@ Os armazenamentos que usam esse candidato a armazenamento têm uma árvore de da
    "authorizableId":"anonymous"
 }
 ```
+

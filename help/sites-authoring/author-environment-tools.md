@@ -10,10 +10,10 @@ exl-id: 3b3c118b-ca35-484b-a62e-7bec98953123
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+source-git-commit: 33bf1d9f64c32691f6a9c0568c1c5cb2150f331a
 workflow-type: tm+mt
-source-wordcount: '2246'
-ht-degree: 47%
+source-wordcount: '2262'
+ht-degree: 42%
 
 ---
 
@@ -43,7 +43,7 @@ Por exemplo, exibição de coluna:
 >
 >Se desejar, é possível ignorar o tour e repeti-lo a qualquer momento, selecionando-o no menu **Informações da página**.
 
-## Acessar ajuda   {#accessing-help}
+## Acessar ajuda {#accessing-help}
 
 Ao editar uma página, a **Ajuda** pode ser acessada de:
 
@@ -52,7 +52,7 @@ Ao editar uma página, a **Ajuda** pode ser acessada de:
 
 Mais [recursos relacionados à ajuda estão disponíveis nos consoles](/help/sites-authoring/basic-handling.md#accessing-help).
 
-## Navegador de componentes   {#components-browser}
+## Navegador de componentes {#components-browser}
 
 O navegador de componentes mostra todos os componentes que estão disponíveis para uso em sua página atual. Elas podem ser arrastadas para o local apropriado e, em seguida, editadas para adicionar o conteúdo.
 
@@ -153,7 +153,7 @@ A aparência e o manuseio real dependem do tipo de dispositivo que você está u
 
   O navegador de arquivos cobre completamente a página que está sendo editada.
 
-  Para adicionar um ativo à página, toque e segure o ativo necessário e mova-o para a direita: o navegador de ativos é fechado para mostrar a página novamente, onde é possível adicionar o ativo ao componente necessário.
+  Para adicionar um ativo à página, toque e segure o ativo necessário e mova-o para a direita: o navegador de ativos é fechado para mostrar a página novamente, onde você pode adicionar o ativo ao componente necessário.
 
   ![ateat-09](assets/ateat-09.png)
 
@@ -177,7 +177,7 @@ A Árvore de conteúdo é uma guia dentro do painel lateral (junto com o navegad
 
 ![Árvore de conteúdo](do-not-localize/screen_shot_2018-03-22at142042.png)
 
-Ao abrir o painel lateral, ele desliza para abrir (do lado esquerdo). Selecione a guia **Árvore de conteúdo**, se necessário. Ao abrir, é possível ver uma representação em exibição de árvore da página ou do modelo, para que seja mais fácil entender como o conteúdo é estruturado hierarquicamente. Além disso, em uma página complexa, facilita a alternância entre componentes da página.
+Ao abrir o painel lateral, ele desliza para abrir (do lado esquerdo). Selecione a guia **Árvore de conteúdo**, se necessário. Quando aberto, você pode ver uma representação de exibição em árvore da sua página ou modelo, para que seja mais fácil entender como o conteúdo é estruturado hierarquicamente. Além disso, em uma página complexa, facilita a alternância entre componentes da página.
 
 ![ateat-11](assets/ateat-11.png)
 
@@ -255,7 +255,7 @@ Por exemplo, você pode corrigir uma referência quebrada em um componente Refer
 
 ## Eventos - Linha do tempo {#events-timeline}
 
-Para os recursos adequados (por exemplo, as páginas no console **Sites** ou os ativos no console **Ativos**), a [linha do tempo pode ser usada para mostrar a atividade recente de qualquer item selecionado](/help/sites-authoring/basic-handling.md#timeline).
+Para os recursos adequados (por exemplo, as páginas do console **Sites** ou os ativos do console **Assets**), a linha do tempo [&#x200B; pode ser usada para mostrar a atividade recente de qualquer item selecionado](/help/sites-authoring/basic-handling.md#timeline).
 
 Abra o console e navegue até o recurso desejado, e abra **Linha do tempo** usando:
 
@@ -267,7 +267,7 @@ Abra o console e navegue até o recurso desejado, e abra **Linha do tempo** usan
 
 ## Informações da página {#page-information}
 
-O botão Informações da página (ícone de equalizador) abre um menu que também fornece detalhes sobre a última edição e a última publicação. Dependendo das características da página, de seu site e instância, mais ou menos opções podem estar disponíveis:
+O botão Informações da página (ícone de equalizador) abre um menu que também fornece detalhes sobre a última edição e a última publicação. Dependendo das características da página, seu site, sua instância e suas permissões, mais ou menos opções podem estar disponíveis:
 
 ![ateat-17](assets/ateat-17.png)
 
@@ -290,12 +290,12 @@ Por exemplo, quando apropriado, as **Informações da página** também têm as 
 
 Além disso, as **Informações da página** podem fornecer acesso a análises e recomendações, quando apropriado.
 
-## Modos de página   {#page-modes}
+## Modos de página {#page-modes}
 
 Há vários modos ao editar uma página o que permite diversas ações:
 
 * [Editar](/help/sites-authoring/editing-content.md) - use este modo ao editar o conteúdo da página.
-* [Layout](/help/sites-authoring/responsive-layout.md) - permite que você crie e edite seu layout responsivo dependente do dispositivo (se a página for baseada em um contêiner de layout)
+* [Layout](/help/sites-authoring/responsive-layout.md) - permite que você crie e edite seu layout responsivo dependente do dispositivo (se a página for baseada em um contêiner de layout).
 
 * [Andaime](/help/sites-authoring/scaffolding.md) - ajuda a criar um grande conjunto de páginas que compartilham estrutura, mas têm conteúdo diferente.
 * [Desenvolvedor](/help/sites-developing/developer-mode.md) - permite executar várias ações (requer privilégios). Isso inclui a inspeção dos detalhes técnicos de uma página e seus componentes.
@@ -307,7 +307,7 @@ Há vários modos ao editar uma página o que permite diversas ações:
 
 * [Timewarp](/help/sites-authoring/working-with-page-versions.md#timewarp) - permite exibir um estado de páginas em um momento específico.
 * [Status da Live Copy](/help/sites-authoring/editing-content.md#live-copy-status): permite uma visão geral rápida do status da live copy e de quais componentes são, ou não, herdados.
-* [Visualização](/help/sites-authoring/editing-content.md#previewing-pages): usado para visualizar a página da forma que será exibida no ambiente de publicação ou navegar usando os links no conteúdo.
+* [Visualizar](/help/sites-authoring/editing-content.md#previewing-pages) - é usado para exibir a página como ela é mostrada no ambiente de publicação ou navegar usando os links no conteúdo.
 
 * [Anotar](/help/sites-authoring/annotations.md) - usado para adicionar ou exibir anotações na página.
 
@@ -327,7 +327,7 @@ Você pode acessá-los usando os ícones no canto superior direito. O ícone rea
 
 Geralmente, durante a criação, é necessário selecionar outro recurso, como ao definir um link para outra página ou recurso ou ao selecionar uma imagem. Para selecionar facilmente um caminho, os [campos de caminho](/help/sites-authoring/author-environment-tools.md#path-fields) oferecem preenchimento automático e o [navegador de caminhos](/help/sites-authoring/author-environment-tools.md#path-browser) permite uma seleção mais robusta.
 
-### Campos de caminho   {#path-fields}
+### Campos de caminho {#path-fields}
 
 O exemplo usado aqui para ilustrar é o componente de imagem. Para obter mais informações sobre o uso e a edição de componentes, consulte [Componentes para Criação de Página](/help/sites-authoring/default-components.md).
 

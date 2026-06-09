@@ -10,10 +10,10 @@ exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+source-git-commit: 8cb06cb2240f4ba460493dda1615cb64006d4646
 workflow-type: tm+mt
-source-wordcount: '2965'
-ht-degree: 41%
+source-wordcount: '3016'
+ht-degree: 40%
 
 ---
 
@@ -43,11 +43,11 @@ Logo após o logon, você acessa o [painel de Navegação](#navigation-panel). S
 
 >[!NOTE]
 >
->Para obter uma boa compreensão do uso básico do AEM, este documento se baseia no console **Sites**.
+>Para obter uma boa compreensão do uso básico do AEM, este documento se baseia no console de **Sites.**
 >
 >Para começar, clique em **Sites**.
 
-### Navegação do produto   {#product-navigation}
+### Navegação do produto {#product-navigation}
 
 Sempre que um usuário acessa um console pela primeira vez, um tutorial de navegação de produto é iniciado. Clique aqui para obter uma boa visão geral do manuseio básico do AEM.
 
@@ -71,12 +71,12 @@ Você pode fechar o painel de navegação global clicando ou tocando em **Fechar
 
 A navegação global possui dois painéis, representados por ícones na margem esquerda da tela:
 
-* **[Navegação](/help/sites-authoring/basic-handling.md#navigation-panel)** - Representado por uma bússola  
+* **[Navegação](/help/sites-authoring/basic-handling.md#navigation-panel)** - Representado por uma bússola
 * **[Ferramentas](/help/sites-authoring/basic-handling.md#tools-panel)**: representadas por um martelo
 
 As opções disponíveis nesses painéis estão descritas abaixo.
 
-### Painel Navegação   {#navigation-panel}
+### Painel Navegação {#navigation-panel}
 
 O painel Navegação fornece acesso aos consoles do AEM:
 
@@ -189,7 +189,7 @@ O cabeçalho está sempre presente na parte superior da tela. Embora a maioria d
 
   ![Navegações estruturais](assets/bh-05.png)
 
-  Aparece no meio do painel e sempre mostra a descrição do item selecionado no momento, as navegações estruturais permitem que você navegue dentro de um console específico. No console Sites, você pode navegar pelos níveis do seu site.
+  As navegações estruturais são exibidas no meio do painel e, sempre mostrando a descrição do item selecionado no momento, elas permitem navegar em um console específico. No console Sites, você pode navegar pelos níveis do seu site.
 
   Clicar no texto de navegação estrutural abre uma lista suspensa que lista os níveis da hierarquia do item selecionado no momento. Para ir para esse local, clique em uma entrada.
 
@@ -209,7 +209,7 @@ O cabeçalho está sempre presente na parte superior da tela. Embora a maioria d
 
 * [Exibições](/help/sites-authoring/basic-handling.md#viewingandselectingyourresourcescardlistcolumn)
 
-  O ícone de exibição está na extrema direita da barra de ferramentas do AEM. Como também indica a exibição atual, ele muda. Por exemplo, no modo de exibição padrão, e **Exibição de coluna** ele aparece da seguinte forma:
+  O ícone de exibição está na extrema direita da barra de ferramentas do AEM. Como também indica a exibição atual, sua aparência muda. Por exemplo, no modo de exibição padrão **Exibição de coluna** ele aparece da seguinte forma:
 
   ![Exibição de coluna](assets/bh-07.png)
 
@@ -225,7 +225,7 @@ O cabeçalho está sempre presente na parte superior da tela. Embora a maioria d
 
   ![Ir para o conteúdo principal](assets/bh-30.png)
 
-## Acessar ajuda   {#accessing-help}
+## Acessar ajuda {#accessing-help}
 
 Há vários recursos de ajuda disponíveis:
 
@@ -280,7 +280,7 @@ As ações disponíveis na barra de ferramentas mudam para refletir as ações q
 
 A forma como você [seleciona um recurso](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) depende da exibição.
 
-Devido às restrições de espaço em algumas janelas, a barra de ferramentas pode tornar-se rapidamente maior do que o espaço disponível. Quando isso acontecer, opções adicionais serão exibidas. Clicar ou tocar nas reticências (três pontos ou **...**) abre um seletor suspenso com todas as ações restantes. Por exemplo, após selecionar uma página no console **Sites**:
+Devido às restrições de espaço em algumas janelas, a barra de ferramentas pode tornar-se rapidamente maior do que o espaço disponível. Quando isso acontecer, opções adicionais serão exibidas. Ao clicar ou tocar nas reticências (três pontos ou **...**) abre um seletor suspenso com todas as ações restantes. Por exemplo, após selecionar uma página no console **Sites**:
 
 ![Barra de ferramentas de Ações](assets/bh-12.png)
 
@@ -311,7 +311,7 @@ Visualizar, navegar e selecionar são conceitualmente iguais em todas as exibiç
 >
 >Por padrão, o AEM Assets não exibe as representações originais de ativos na interface como miniaturas em nenhuma das exibições. Se você for um administrador, poderá usar sobreposições para configurar o AEM Assets e exibir representações originais como miniaturas.
 
-### Seleção de recursos   {#selecting-resources}
+### Seleção de recursos {#selecting-resources}
 
 Selecionar um recurso específico depende de uma combinação da exibição e do dispositivo:
 
@@ -441,7 +441,7 @@ Selecionar um recurso na coluna mais à esquerda exibe os recursos secundários 
    * Uma representação visual do conteúdo da página.
    * O título da página.
    * Datas importantes (como a última edição e publicação).
-   * A página está bloqueada, oculta ou faz parte de uma live copy.
+   * Se a página estiver bloqueada, oculta ou fizer parte de uma live copy.
    * Se apropriado, quando é necessário tomar medidas como parte de um fluxo de trabalho.
 
       * Marcadores que indicam ações necessárias podem estar relacionados a itens em sua [caixa de entrada](/help/sites-authoring/inbox.md).
