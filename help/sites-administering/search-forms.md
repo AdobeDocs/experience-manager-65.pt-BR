@@ -1,6 +1,6 @@
 ---
 title: Configuração de formulários de pesquisa
-description: Saiba como usar o Search Forms para personalizar a seleção de predicados de pesquisa usados nos painéis de pesquisa disponíveis nos consoles AEM e painéis do ambiente de criação.
+description: Saiba como usar o Search Forms para personalizar a seleção de predicados de pesquisa usados nos painéis de pesquisa disponíveis nos consoles do AEM e painéis do ambiente de criação.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
@@ -9,9 +9,9 @@ exl-id: f82391d7-e30d-48d2-8f66-88fcae3dfb5f
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: d4b1cd8bc04ea21378c8084f4fac8cd66d6c1d3c
 workflow-type: tm+mt
-source-wordcount: '2072'
+source-wordcount: '2079'
 ht-degree: 7%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 7%
 
 # Configuração de formulários de pesquisa{#configuring-search-forms}
 
-Use a **Forms de Pesquisa** para personalizar a seleção de predicados de pesquisa usados nos painéis de pesquisa disponíveis em vários consoles AEM e/ou painéis do ambiente de criação. A personalização desses painéis torna a funcionalidade de pesquisa versátil, de acordo com suas necessidades específicas.
+Use o **Search Forms** para personalizar a seleção de predicados de pesquisa usados nos painéis de pesquisa disponíveis em vários consoles do AEM e/ou painéis do ambiente de criação. A personalização desses painéis torna a funcionalidade de pesquisa versátil, de acordo com suas necessidades específicas.
 
 Um [intervalo do predicado](#predicates-and-their-settings)s está disponível e pronto para uso. Você pode adicionar vários predicados, incluindo (entre outros) o predicado Propriedade, para pesquisar ativos que correspondam a uma única propriedade especificada por você. Ou, no predicado Opções, para pesquisar ativos que correspondem a um ou mais valores especificados para uma propriedade específica.
 
@@ -41,7 +41,7 @@ As configurações padrão disponíveis são:
 
 * **Editor de páginas (Pesquisa de documentos):**
 
-  Essa configuração define as opções disponíveis ao pesquisar por um documento no navegador de ativos (ao editar uma página).
+  Essa configuração define as opções disponíveis ao pesquisar documentos no navegador de ativos (ao editar uma página).
 
 * **Editor de páginas (Pesquisa de imagens):**
 
@@ -63,7 +63,7 @@ As configurações padrão disponíveis são:
 
   Essa configuração define as opções disponíveis ao pesquisar produtos no navegador de ativos (ao editar uma página).
 
-* **Editor de páginas (Dynamic Media Classic [pesquisa anterior do Scene7])**:
+* **Editor de páginas (pesquisa do Dynamic Media Classic [anteriormente Scene7])**:
 
   Essa configuração define as opções disponíveis ao pesquisar recursos do Scene7 no navegador de ativos (ao editar uma página).
 
@@ -385,16 +385,16 @@ Dependendo do predicado, uma seleção de configurações está disponível para
 
   `(jcr:primaryType = nt:unstructured, value (String), jcr:title (String))`
 
-* **Caminho do nó de opções**
+* Caminho do nó **Opções**
 Efetivamente igual ao **Caminho de opções**, somente isso está no campo de predicado comum, o outro é específico para ativos.
 
 * **Seleção única**
 Se marcadas, as opções são renderizadas como caixas de seleção que permitem apenas uma única seleção. Se for marcada por engano, uma caixa de seleção pode ser desmarcada.
 
-* **Nomes de propriedades do Publish e da Live Copy**
+* **Nomes de propriedades de publicação e Live Copy**
 Os rótulos das caixas de seleção Publicar e Live Copy para o predicado específico do Sites.
 
-* O &ast; nos rótulos de campo na guia **Configurações** significa que os campos são obrigatórios e, se deixado em branco, uma mensagem de erro será exibida.
+* O &amp;ast; nos rótulos de campo na guia **Configurações** significa que os campos são obrigatórios e, se deixado em branco, uma mensagem de erro será exibida.
 
 ## Configuração do Forms de pesquisa {#configuring-your-search-forms}
 
@@ -553,7 +553,7 @@ A tabela a seguir lista as permissões necessárias para executar ações de edi
   </tr>
   <tr>
    <td>Visualização</td>
-   <td>Permissões de leitura, gravação e exclusão no nó <code>/var/dam/content</code>.<br /> permissões de Leitura e Gravação no nó <code>/apps</code>.</td>
+   <td>Permissões de Leitura, Gravação e Exclusão no nó <code>/var/dam/content</code>.<br /> Permissões de leitura e gravação no nó <code>/apps</code>.</td>
   </tr>
  </tbody>
 </table>

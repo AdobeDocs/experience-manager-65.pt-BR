@@ -10,9 +10,9 @@ role: Admin
 exl-id: 22276580-e6bc-41c5-9ac3-e8f291f676b7
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 9c0089e1305ffba72d88842a07bf36b6f923834c
 workflow-type: tm+mt
-source-wordcount: '1519'
+source-wordcount: '1538'
 ht-degree: 2%
 
 ---
@@ -42,7 +42,7 @@ A moderação de UGC é útil para reconhecer contribuições positivas e limita
 
 * [Moderação no contexto](in-context.md)
 
-  A moderação no ambiente do Publish pode ser executada por administradores e moderadores da comunidade diretamente na página em que o conteúdo foi publicado.
+  A moderação no ambiente de publicação pode ser executada por administradores e moderadores da comunidade diretamente na página em que o conteúdo foi publicado.
 
 ## Ações de moderação {#moderation-actions}
 
@@ -72,7 +72,7 @@ As ações que podem ser executadas no conteúdo postado (UGC) variam dependendo
  <tbody>
   <tr>
    <td> </td>
-   <td><strong>Admin.</strong></td>
+   <td><strong>Administrador</strong></td>
    <td><strong>Moderador</strong></td>
    <td><strong>Criador</strong></td>
    <td><strong>Membro</strong></td>
@@ -101,7 +101,7 @@ As ações que podem ser executadas no conteúdo postado (UGC) variam dependendo
    <td> </td>
   </tr>
   <tr>
-   <td><strong>Negar </strong></td>
+   <td><strong>Negar</strong></td>
    <td>X</td>
    <td>X</td>
    <td> </td>
@@ -159,13 +159,13 @@ Ao selecionar a ação Recortar, o conteúdo é copiado para a área de transfer
 
 ![putbackugc](assets/putbackugc.png)
 
-No outro local, quando o conteúdo estiver presente na área de transferência, um botão Colar ficará visível ao lado de Novo Post com um número que identifica o número de publicações que serão coladas. O botão Colar inclui uma opção para limpar a área de transferência em vez de colar.
+No outro local, quando o conteúdo estiver presente na área de transferência, um botão Colar ficará visível ao lado de Nova publicação com um número que identifica o número de publicações que serão coladas. O botão Colar inclui uma opção para limpar a área de transferência em vez de colar.
 
 ![pasteugc](assets/pasteugc.png)
 
 ![pasteugc1](assets/pasteugc1.png)
 
-### Negar  {#deny}
+### Negar {#deny}
 
 Um moderador pode impedir que o UGC permaneça visível no site publicado. Para administradores e moderadores da comunidade, a publicação ainda está disponível e é anotada como spam.
 
@@ -173,7 +173,7 @@ Um moderador pode impedir que o UGC permaneça visível no site publicado. Para 
 
 A ação Fechar opera em todo o thread da conversa (um tópico do fórum ou o comentário inicial) e inclui todas as postagens ou respostas subsequentes.
 
-Quando encerradas, não só não são possíveis mais respostas, como também não são permitidas ações de moderação.
+Quando encerrado, não serão permitidas mais respostas ou ações de moderação.
 
 Para executar qualquer operação, o tópico ou comentário deve ser Reaberto.
 
@@ -211,9 +211,9 @@ A detecção de spam é uma funcionalidade de moderação automática que filtra
 
 No entanto, para personalizar ou estender as palavras de spam padrão, crie um conjunto de palavras no diretório /apps seguindo a estrutura das palavras de spam padrão com [sobreposição](/help/communities/overlay-comments.md).
 
-Uma publicação gerada pelo usuário (em todos os tipos de conteúdo, por exemplo, blogs, fóruns e comentários) contendo palavras de spam é marcada com o texto &quot;Esta publicação foi classificada como spam&quot; acima da publicação.
+Uma publicação gerada pelo usuário (em todos os tipos de conteúdo, como blogs, fóruns e comentários) contendo palavras de spam é marcada com o texto &quot;Esta publicação foi classificada como spam&quot; acima da publicação.
 
-O moderador pode visualizar essa publicação e marcar o mesmo para permitir ou negar a exibição no site. As ações de moderação nessas publicações podem ser executadas no contexto ou pela interface de moderação em massa.
+Os moderadores podem visualizar essa publicação e marcá-la como não exibida no site. As ações de moderação nessas publicações podem ser executadas no contexto ou pela interface de moderação em massa.
 
 ![detecção de spam](assets/spamdetection.png)
 
@@ -232,9 +232,9 @@ Para ativar o mecanismo de detecção de spam, siga estas etapas:
 
 ### Sentimento {#sentiment}
 
-A impressão é calculada com base no número de palavras-chave positivas e negativas ([watchwords](#configuringwatchwords)) presentes em uma publicação (UGC).
+O sentimento é calculado com base no número de palavras-chave positivas e negativas ([watchwords](#configuringwatchwords)) presentes em uma postagem (UGC).
 
-A análise de sentimentos usa um conjunto de regras pré-configuradas e calcula o sentimento do UGC. As regras padrão estão em `/libs/cq/workflow/components/workflow/social/sentiments/rules`.
+A análise de sentimento usa um conjunto de regras pré-configuradas e calcula o sentimento do UGC. As regras padrão estão em `/libs/cq/workflow/components/workflow/social/sentiments/rules`.
 
 O valor que as regras geram é de 1 (todas negativas, sem palavras positivas) a 10 (todas positivas, sem palavras negativas). Um valor de sentimento de 5 é um sentimento neutro e é o padrão.
 
@@ -253,9 +253,9 @@ No [console de moderação em massa](/help/communities/moderation.md), é possí
 
 #### Watchwords {#watchwords}
 
-A AEM Communities fornece um *analisador de palavras-chave* como uma etapa no processo para avaliar o [sentimento](#sentiment). A contribuição para o valor do sentimento fornecida pelas palavras de observação é devido a uma comparação de palavras de observação negativas e positivas usadas no conteúdo publicado e palavras proibidas.
+A AEM Communities fornece um *analisador de palavras-chave* como uma etapa no processo para avaliar o [sentimento](#sentiment). A contribuição para o valor do sentimento fornecida pelas palavras de observação deve-se a uma comparação de palavras de observação negativas e positivas usadas no conteúdo publicado e palavras proibidas.
 
-#### Configurar o sentimento e as palavras-chave {#configure-sentiment-and-watchwords}
+#### Configurar Sentimento e Watchwords {#configure-sentiment-and-watchwords}
 
 A lista de palavras de ordem positivas e negativas pode ser personalizada como as regras de sentimento.
 
@@ -263,7 +263,7 @@ A lista padrão de palavras de ordem pode ser inserida como propriedades de um n
 
 O **sentimentprocess.name** também pode ser modificado para fazer referência ao local de um conjunto personalizado de regras de sentimento.
 
-Para configurar o sentimento e as palavras de observação:
+Para configurar o sentimento e as palavras-chave:
 
 * Faça logon na instância do autor como administrador.
 * Abra o [Console da Web](https://localhost:4502/system/console/configMgr).
@@ -286,7 +286,7 @@ Para configurar o sentimento e as palavras de observação:
 
 * **Regras de Sentimento**
 
-  A localização no repositório das regras para calcular o sentimento com base em palavras de observação positivas e negativas. O padrão é `/libs/cq/workflow/components/workflow/social/sentiments/rules` (no entanto, não há mais nenhum fluxo de trabalho envolvido).
+  O local de repositório das regras para calcular o sentimento com base em palavras de observação positivas e negativas. O padrão é `/libs/cq/workflow/components/workflow/social/sentiments/rules` (no entanto, não há mais nenhum fluxo de trabalho envolvido).
 
 Veja a seguir um exemplo de uma entrada personalizada para as palavras de ordem padrão, quando `Explicit Path to Watchwords Node` está definido como `/libs/settings/community/watchwords/default`.
 

@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User
 exl-id: 6212457e-a171-4c33-8d19-54c26516e981
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a77b577341050316ce60ae809a4912bbbbce974c
 workflow-type: tm+mt
-source-wordcount: '510'
-ht-degree: 79%
+source-wordcount: '517'
+ht-degree: 72%
 
 ---
 
@@ -22,7 +22,7 @@ A capacidade de excluir conteúdo é uma ferramenta poderosa, mas também perigo
 
 Com relação às permissões de exclusão, os fragmentos de conteúdo devem ser considerados em dois níveis:
 
-1. **O fragmento do conteúdo como uma única entidade.**
+1. **O fragmento de conteúdo como uma única entidade.**
 
    * **Caso de uso**: um usuário que precisa editar/atualizar um fragmento de conteúdo **e excluir um fragmento inteiro**.
    * **Permissões**: a permissão [Excluir](/help/sites-administering/security.md#actions) pode ser [atribuída por meio do Gerenciamento de Usuários e/ou Grupos](/help/sites-administering/security.md#managing-permissions).
@@ -46,7 +46,7 @@ Com relação às permissões de exclusão, os fragmentos de conteúdo devem ser
 
 Para usuários que precisam editar/atualizar um fragmento de conteúdo, **sem permitir que excluam um fragmento inteiro**, permissões específicas devem ser atribuídas, já que a operação básica do editor de fragmentos de conteúdo requer que elementos transitórios secundários possam ser excluídos.
 
-Por exemplo, ao manipular variações; também ao editar metadados ou gerenciar conteúdo associado.
+Por exemplo, ao manipular variações, ao editar metadados ou ao gerenciar conteúdo associado.
 
 >[!NOTE]
 >
@@ -62,7 +62,7 @@ Por exemplo, uma pasta que manterá todos os fragmentos de conteúdo, como:
 >
 >Definir as permissões em `/content/dam` também é possível, pois todos os fragmentos de conteúdo são armazenados aqui.
 >
->No entanto, essa ação aplica as mesmas permissões de exclusão a *todos* os outros tipos de ativos também.
+>No entanto, esta ação aplica as mesmas permissões de exclusão a *todos* outros tipos de ativos também.
 
 Os pré-requisitos de permissões para permitir que um usuário e/ou grupo específico edite/atualize um fragmento de conteúdo são:
 

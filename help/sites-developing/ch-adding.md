@@ -5,9 +5,9 @@ exl-id: ae745af9-b49f-46b9-ab48-2fd256e9a681
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Personalization
 role: Developer
-source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
+source-git-commit: 2b39796a6ede351258adaa28e6a3f1f54f83ec92
 workflow-type: tm+mt
-source-wordcount: '901'
+source-wordcount: '924'
 ht-degree: 0%
 
 ---
@@ -44,12 +44,12 @@ Todos os tipos de armazenamento são extensões da classe [`ContextHub.Store.Cor
 Os armazenamentos do Context Hub usam um dos seguintes modos de persistência:
 
 * **Local:** usa o HTML5 localStorage para manter os dados. O armazenamento local é mantido no navegador em todas as sessões.
-* **Sessão:** usa HTML5 sessionStorage para manter os dados. O armazenamento de sessão é mantido pela duração da sessão do navegador e está disponível em todas as janelas do navegador.
+* **Sessão:** usa sessionStorage HTML5 para manter os dados. O armazenamento de sessão é mantido pela duração da sessão do navegador e está disponível em todas as janelas do navegador.
 * **Cookie:** usa o suporte nativo de cookies do navegador para armazenamento de dados. Os dados de cookie são enviados de e para o servidor em solicitações HTTP.
 * **Window.name:** usa a propriedade window.name para manter os dados.
 * **Memória:** usa um objeto JavaScript para persistir dados.
 
-Por padrão, o Context Hub usa o modo de persistência local. Se o navegador não suportar ou permitir HTML5 localStorage, a persistência de sessão será usada. Se o navegador não suportar ou permitir HTML5 sessionStorage, a persistência Window.name será usada.
+Por padrão, o Context Hub usa o modo de persistência local. Se o navegador não suportar ou permitir HTML5 localStorage, a persistência de sessão será usada. Se o navegador não suportar ou permitir sessionStorage HTML5, a persistência Window.name será usada.
 
 ### Armazenamento de dados {#store-data}
 
@@ -92,7 +92,7 @@ Além disso, a classe [`ContextHub.Utils.JSON`](contexthub-api.md#contexthub-uti
 
 ## Interagir com lojas ContextHub {#interacting-with-contexthub-stores}
 
-Use o objeto JavaScript [`ContextHub`](contexthub-api.md#ui-event-constants) para obter um armazenamento como um objeto JavaScript. Depois de obter o objeto de armazenamento, você pode manipular os dados que ele contém. Use a função [`getAllStores`](contexthub-api.md#getallstores) ou [`getStore`](contexthub-api.md#getstore-name) para obter o armazenamento.
+Use o objeto JavaScript [`ContextHub`](contexthub-api.md#ui-event-constants) para obter um armazenamento como um objeto JavaScript. Depois de obter o objeto de armazenamento, você poderá manipular os dados que ele contém. Use a função [`getAllStores`](contexthub-api.md#getallstores) ou [`getStore`](contexthub-api.md#getstore-name) para obter o armazenamento.
 
 ### Acessar dados da loja {#accessing-store-data}
 
@@ -110,7 +110,7 @@ Observe que os candidatos de armazenamento personalizado podem definir funções
 
 >[!NOTE]
 >
->Por padrão, o ContextHub não reconhece o logon atual usado em servidores de publicação e esses usuários são considerados pelo ContextHub como &quot;Anônimos&quot;.
+>Por padrão, o ContextHub não reconhece o usuário conectado no momento nos servidores de publicação e esses usuários são considerados &quot;Anônimos&quot;.
 >
 >Você pode tornar o ContextHub ciente dos usuários conectados ao carregar o armazenamento de perfil. Consulte [código de amostra no GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/blob/master/ui.apps/src/main/content/jcr_root/apps/weretail/components/structure/header/clientlib/js/utilities.js).
 

@@ -1,6 +1,6 @@
 ---
 title: Administração e segurança do usuário
-description: Saiba mais sobre a administração e a segurança de usuários no AEM.
+description: Saiba mais sobre Administração e segurança de usuários no AEM.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
@@ -10,9 +10,9 @@ exl-id: 53d8c654-8017-4528-a44e-e362d8b59f82
 feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 6f3c4f4aa4183552492c6ce5039816896bd67495
+source-git-commit: 2cc34ce568fc533d41f53d8007825264ca9baad3
 workflow-type: tm+mt
-source-wordcount: '5412'
+source-wordcount: '5471'
 ht-degree: 1%
 
 ---
@@ -42,7 +42,7 @@ Seu objetivo principal é simplificar o processo de manutenção, reduzindo o n�
 
 Portanto, os grupos tendem a permanecer estáveis, enquanto os usuários vêm e vão com mais frequência.
 
-Com um planejamento e uma estrutura limpa, o uso de grupos pode refletir sua estrutura, fornecendo uma visão geral clara e um mecanismo eficiente para atualizações.
+Com um planejamento e um design limpo, o uso de grupos pode refletir sua estrutura, fornecendo uma visão geral clara e um mecanismo eficiente para atualizações.
 
 ### Usuários e grupos integrados {#built-in-users-and-groups}
 
@@ -78,7 +78,7 @@ As tabelas a seguir listam cada item junto com:
   <tr>
    <td><p>autor</p> <p>Senha padrão: autor</p> </td>
    <td>Usuário</td>
-   <td><p>Uma conta de autor tem permissão para gravar em /content. Abrange privilégios de colaborador e surfer.</p> <p>Pode ser usado como um webmaster, pois tem acesso a toda a árvore /content.</p> <p>Esta conta não é um usuário incorporado, mas outro usuário de demonstração do Geometrixx</p> </td>
+   <td><p>Uma conta de autor tem permissão para gravar em /content. Abrange privilégios de colaborador e surfer.</p> <p>Pode ser usado como um webmaster, pois tem acesso a toda a árvore /content.</p> <p>Esta conta não é um usuário integrado, mas outro usuário de demonstração do Geometrixx.</p> </td>
    <td><p>A Adobe recomenda que a conta seja completamente excluída ou que a senha padrão seja alterada.</p> <p>De preferência na instalação, embora possa ser feito posteriormente.</p> </td>
   </tr>
   <tr>
@@ -139,15 +139,15 @@ As tabelas a seguir listam cada item junto com:
 
 ## Permissões no AEM {#permissions-in-aem}
 
-O AEM usa ACLs para determinar quais ações um usuário ou grupo pode realizar e onde pode realizar essas ações.
+O AEM usa ACLs para determinar quais ações um usuário ou grupo e onde ele pode realizar essas ações.
 
 ### Permissões e ACLs {#permissions-and-acls}
 
 As permissões definem quem pode executar quais ações em um recurso. As permissões são o resultado de [avaliações de controle de acesso](#access-control-lists-and-how-they-are-evaluated).
 
-Você pode alterar as permissões concedidas/negadas a um determinado usuário marcando ou desmarcando as caixas de seleção de [ações](security.md#actions) do AEM individuais. Uma marca de seleção indica que uma ação é permitida. Nenhuma marca de seleção indica que uma ação foi negada.
+Você pode alterar as permissões concedidas/negadas a um determinado usuário marcando ou desmarcando as caixas de seleção de [ações](security.md#actions) individuais do AEM. Uma marca de seleção indica que uma ação é permitida. Nenhuma marca de seleção indica que uma ação foi negada.
 
-O local em que a marca de seleção está na grade também indica quais permissões os usuários têm em quais locais dentro do AEM (ou seja, quais caminhos).
+O local em que a marca de seleção está na grade também indica quais permissões os usuários têm em quais locais no AEM (ou seja, quais caminhos).
 
 ### Ações {#actions}
 
@@ -169,7 +169,7 @@ As ações podem ser executadas em uma página (recurso). Para cada página na h
     <ul>
      <li>modificar o conteúdo existente na página e em qualquer página secundária.</li>
      <li>crie parágrafos na página ou em qualquer página secundária.</li>
-    </ul> <p>No nível do JCR, os usuários podem editar um recurso editando suas propriedades, bloqueando, versionando, nt-modified e têm permissão de gravação completa nos nós que definem um nó filho jcr:content. Por exemplo, cq:Page, nt:file, cq:Asset.</p> </td>
+    </ul> <p>No nível do JCR, os usuários podem editar um recurso editando suas propriedades, bloqueando, versionando, nt-modified e têm permissão de gravação completa nos nós que definem um nó filho jcr:content. Por exemplo, cq:Page, nt:file, cq:Asset, dam:Asset.</p> </td>
   </tr>
   <tr>
    <td>Criar</td>
@@ -196,14 +196,14 @@ As ações podem ser executadas em uma página (recurso). Para cada página na h
   </tr>
   <tr>
    <td>Replicar</td>
-   <td>O usuário pode replicar o conteúdo para outro ambiente (por exemplo, o ambiente Publish). O privilégio também é aplicado a qualquer página secundária.</td>
+   <td>O usuário pode replicar o conteúdo para outro ambiente (por exemplo, o ambiente de Publicação). O privilégio também é aplicado a qualquer página secundária.</td>
   </tr>
  </tbody>
 </table>
 
 >[!NOTE]
 >
->O AEM gera automaticamente grupos de usuários para atribuição de função (Proprietário, Editor, Visualizador) em [Coleções](/help/assets/manage-collections.md). No entanto, a adição manual de ACLs para esses grupos pode introduzir vulnerabilidades de segurança no AEM. O Adobe recomenda que você evite adicionar ACLs manualmente.
+>O AEM gera automaticamente grupos de usuários para atribuição de função (Proprietário, Editor, Visualizador) em [Coleções](/help/assets/manage-collections.md). No entanto, adicionar ACLs manualmente para esses grupos pode gerar vulnerabilidades de segurança no AEM. A Adobe recomenda que você evite adicionar ACLs manualmente.
 
 ### Listas de controle de acesso e como são avaliadas {#access-control-lists-and-how-they-are-evaluated}
 
@@ -238,7 +238,7 @@ As Listas de controle de acesso são compostas por permissões individuais e sã
 | **Ação** | **Descrição** |
 |---|---|
 | Permitir (marca de seleção) | O AEM WCM permite que o usuário execute a ação nesta página ou em qualquer página secundária. |
-| Negar (sem marca de seleção) | O WCM do AEM não permite que o usuário execute a ação nesta página ou em qualquer página secundária. |
+| Negar (sem marca de seleção) | O AEM WCM não permite que o usuário execute a ação nesta página ou em qualquer página secundária. |
 
 As permissões também são aplicadas a qualquer página secundária.
 
@@ -284,20 +284,20 @@ Veja a seguir recomendações sobre o gerenciamento de listas de controle de ace
 
 * Não atribua permissões diretamente aos usuários. Atribuí-los somente a grupos.
 
-  Isso simplifica a manutenção, pois o número de grupos é muito menor do que o número de usuários e também menos volátil.
+  Isso simplifica a manutenção, pois o número de grupos é muito menor do que o número de usuários e também é menos volátil.
 
 * Se quiser que um grupo/usuário possa modificar apenas páginas, não conceda a ele direitos de criação ou negação. Conceda a eles apenas direitos de modificação e leitura.
-* Use Negar com moderação. Na medida do possível, use somente Permitir.
+* Use Negar com moderação. Prefira Permitir o máximo possível.
 
   O uso de negar pode causar efeitos inesperados se as permissões forem aplicadas em uma ordem diferente da ordem esperada. Se um usuário for membro de mais de um grupo, as instruções Deny de um grupo poderão cancelar a instrução Allow de outro grupo ou o oposto. É difícil manter uma visão geral quando tal coisa acontece e pode facilmente levar a resultados imprevistos, enquanto Permitir atribuições não causa esses conflitos.
 
-  A Adobe recomenda que você trabalhe com Permitir, em vez de Negar, para ver [Práticas recomendadas](#best-practices).
+  A Adobe recomenda que você trabalhe com Permitir em vez de Negar. Consulte [Práticas recomendadas](#best-practices).
 
-Antes de modificar qualquer uma das permissões, compreenda como elas funcionam e se relacionam entre si. Consulte a documentação do CRX que ilustra como o AEM WCM [avalia os direitos de acesso](/help/sites-administering/user-group-ac-admin.md#how-access-rights-are-evaluated), além de exemplos sobre a configuração de listas de controle de acesso.
+Antes de modificar qualquer uma das permissões, compreenda como elas funcionam e se relacionam entre si. Consulte a documentação do CRX que ilustra como o AEM WCM [avalia os direitos de acesso](/help/sites-administering/user-group-ac-admin.md#how-access-rights-are-evaluated), além de exemplos sobre como configurar listas de controle de acesso.
 
 ### Permissões {#permissions}
 
-As permissões dão aos usuários e grupos acesso à funcionalidade AEM em páginas AEM.
+As permissões dão aos usuários e grupos acesso à funcionalidade do AEM nas páginas do AEM.
 
 As permissões são pesquisadas por caminho, expandindo/recolhendo os nós, e é possível rastrear a herança de permissões até o nó raiz.
 
@@ -359,7 +359,7 @@ Essa funcionalidade permite que contas de representantes concluam tarefas como s
 
 >[!CAUTION]
 >
->O bloqueio de uma página pode ser executado quando se representa um usuário. No entanto, uma página bloqueada dessa maneira só pode ser desbloqueada como o usuário que foi representado ou um usuário com privilégios de administrador.
+>O bloqueio de uma página pode ser executado quando se representa um usuário. No entanto, uma página bloqueada dessa maneira só poderá ser desbloqueada como o usuário que foi representado ou um usuário com privilégios de administrador.
 >
 >Páginas não podem ser desbloqueadas representando o usuário que as bloqueou.
 
@@ -389,9 +389,9 @@ Você acessa todos os usuários, grupos e permissões associadas usando o consol
 
 Para acessar a segurança WCM do AEM, siga um destes procedimentos:
 
-* Na tela Welcome (Bem-vindo) ou em vários locais no AEM, clique no ícone de segurança:
+* Na tela Bem-vindo ou em vários locais no AEM, clique no ícone de segurança:
 
-![Guia Segurança do WCM no AEM](do-not-localize/wcmtoolbar.png)
+![Guia Segurança do AEM WCM](do-not-localize/wcmtoolbar.png)
 
 * Navegue diretamente para `https://<server>:<port>/useradmin`. Certifique-se de fazer logon no AEM como administrador.
 
@@ -416,7 +416,7 @@ As guias fornecem acesso a várias configurações:
 | Propriedades | Lista informações sobre o usuário ou grupo que podem incluir informações de email, uma descrição e informações de nome. Também permite alterar a senha de um usuário. Consulte [Criando Usuários e Grupos](#creating-users-and-groups), [Modificando Propriedades de Usuários e Grupos](#modifying-user-and-group-properties) e [Alterando uma Senha de Usuário](#changing-a-user-password). |
 | Grupos | Lista todos os grupos aos quais o usuário ou grupo selecionado pertence. Você pode atribuir o(s) usuário(s) selecionado(s) a grupos adicionais ou removê-los de grupos. Consulte [Grupos](#adding-users-or-groups-to-a-group). |
 | Membros | Disponível somente para grupos. Lista os membros de um grupo específico. Consulte [Membros](#members-adding-users-or-groups-to-a-group). |
-| Permissões | Você pode alocar permissões a um usuário ou grupo. Permite controlar o seguinte:<ul><li>Permissões relacionadas a páginas/nós específicos. Consulte [Definindo Permissões](#setting-permissions). </li><li>Permissões relacionadas à criação e exclusão de páginas e modificação de hierarquia. ??? permite [alocar privilégios](#settingprivileges), como modificação de hierarquia, que permite criar e excluir páginas,</li><li>Permissões relacionadas a [privilégios de replicação](#setting-replication-privileges) (geralmente do autor para a publicação) de acordo com um caminho.</li></ul> |
+| Permissões | É possível alocar permissões para um usuário ou grupo, o que permite controlar o seguinte:<ul><li>Permissões relacionadas a páginas/nós específicos. Consulte [Definindo Permissões](#setting-permissions). </li><li>Permissões relacionadas à criação e exclusão de páginas e modificação de hierarquia, que permitem [alocar privilégios](#settingprivileges), como modificação de hierarquia, que permite criar e excluir páginas,</li><li>Permissões relacionadas a [privilégios de replicação](#setting-replication-privileges) (geralmente do autor para a publicação) de acordo com um caminho.</li></ul> |
 | Personificadores | Permite que outro usuário personifique a conta. Útil quando você precisa que um usuário atue em nome de outro usuário. Consulte [Representando Usuários](#impersonating-another-user). |
 | Preferências | Define [preferências para o grupo ou usuário](#setting-user-and-group-preferences). Por exemplo, preferências de idioma. |
 
@@ -470,7 +470,7 @@ Para criar um usuário ou grupo:
 Para excluir um usuário ou grupo:
 
 1. No console **Segurança**, selecione o usuário ou grupo que deseja excluir. Se desejar excluir vários itens, Shift+clique ou Control+clique para selecioná-los.
-1. Clique em **Editar** e selecione Excluir. O WCM do AEM pergunta se você deseja excluir o usuário ou grupo.
+1. Clique em **Editar** e selecione Excluir. O AEM WCM pergunta se você deseja excluir o usuário ou grupo.
 1. Clique em **OK** para confirmar ou cancelar.
 
 ### Modificando Propriedades de Usuários e Grupos {#modifying-user-and-group-properties}
@@ -499,7 +499,7 @@ Use o procedimento a seguir para modificar a senha de um usuário.
 
 1. No console **Segurança**, clique duas vezes no nome de usuário para o qual deseja alterar a senha.
 1. Clique na guia **Propriedades** (se ainda não estiver ativa).
-1. Clique em **Definir senha**. A janela Definir senha é aberta, onde você pode alterar sua senha.
+1. Clique em **Definir senha**. A janela Definir senha é aberta, onde você pode alterar a senha.
 
    ![cqsecurityuserpassword](assets/cqsecurityuserpassword.png)
 
@@ -540,7 +540,7 @@ A guia **Membros** só funciona para grupos e mostra a você quais usuários e g
 
 ### Adicionar usuários ou grupos ao adicionar permissões {#adding-users-or-groups-while-adding-permissions}
 
-Para adicionar membros a um grupo em em um determinado caminho:
+Para adicionar membros a um grupo em um determinado caminho:
 
 1. Clique duas vezes no nome do grupo ou usuário ao qual deseja adicionar usuários.
 
@@ -610,7 +610,7 @@ Para saber mais sobre a sincronização de usuários e como habilitá-la, consul
 
 >[!NOTE]
 >
->O Adobe apresentou uma nova visualização principal baseada na interface para toque para gerenciamento de permissões. Para obter mais detalhes sobre como usá-lo, consulte [Exibição principal para Gerenciamento de Permissões](/help/sites-administering/touch-ui-principal-view.md).
+>A Adobe apresentou uma nova visualização principal baseada na interface para toque para gerenciamento de permissões. Para obter mais detalhes sobre como usá-lo, consulte [Exibição principal para Gerenciamento de Permissões](/help/sites-administering/touch-ui-principal-view.md).
 
 Esta seção descreve como definir permissões, incluindo privilégios de replicação.
 

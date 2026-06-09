@@ -10,10 +10,10 @@ exl-id: d5cf4478-51e4-4ca8-b3f8-6d7caed7d515
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+source-git-commit: ed9b9f3835af2dc40ed4c5d3f9e3209dfc6bed90
 workflow-type: tm+mt
-source-wordcount: '3015'
-ht-degree: 46%
+source-wordcount: '3030'
+ht-degree: 45%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 46%
 
 Depois que a página é criada (nova ou como parte de um lançamento ou uma live copy), você pode editar o conteúdo para fazer as atualizações necessárias.
 
-O conteúdo é adicionado usando [componentes](/help/sites-authoring/default-components-console.md) (apropriado ao tipo de conteúdo) que podem ser arrastados para a página. Estes podem então ser editados no local, movidos ou excluídos. 
+O conteúdo é adicionado usando [componentes](/help/sites-authoring/default-components-console.md) (apropriado ao tipo de conteúdo) que podem ser arrastados para a página. Estes podem então ser editados no local, movidos ou excluídos.
 
 >[!NOTE]
 >
@@ -164,7 +164,7 @@ Você pode adicionar um componente usando a caixa **Arraste componentes aqui** d
 
 1. O componente selecionado será adicionado à parte inferior da página. [Edite-o](#editmovecopypastedelete), conforme necessário.
 
-### Inserir um componente usando o Navegador de ativos   {#inserting-a-component-using-the-assets-browser}
+### Inserir um componente usando o Navegador de ativos {#inserting-a-component-using-the-assets-browser}
 
 Você também pode adicionar um componente à página arrastando um ativo do [navegador de ativos](/help/sites-authoring/author-environment-tools.md#assets-browser). Isso cria automaticamente um componente do tipo apropriado (e que contém o ativo).
 
@@ -310,7 +310,7 @@ Há dois métodos de adição ou edição do conteúdo dos componentes:
 * Abra a [caixa de diálogo do componente para edição](#component-edit-dialog).
 * [Arraste e solte um ativo](#draganddropintocomponent) do navegador de ativos para adicionar conteúdo diretamente.
 
-### Caixa de diálogo de edição de componente   {#component-edit-dialog}
+### Caixa de diálogo de edição de componente {#component-edit-dialog}
 
 Abra um componente para editar o conteúdo usando o ícone de [Editar (lápis) da barra de ferramentas do componente](#edit-configure-copy-cut-delete-paste).
 
@@ -372,7 +372,7 @@ Por exemplo, o componente de **Texto:**
 Para mover um componente de parágrafo:
 
 1. Selecione o parágrafo a ser movido com select-and-hold ou click-and-hold.
-1. Arraste o parágrafo para o novo local. AEM indicará onde o parágrafo pode ser colocado. Solte-o no local desejado.
+1. Arraste o parágrafo para o novo local. O AEM indica onde o parágrafo pode ser colocado. Solte-o no local desejado.
 
    ![movendo componente de parágrafo](assets/screen_shot_2018-03-22at121821.png)
 
@@ -456,7 +456,7 @@ Se a página for baseada em um [modelo estático](/help/sites-authoring/template
 
 É possível ver em qual modelo a página é baseada ao selecionar a página na [Exibição de coluna](/help/sites-authoring/basic-handling.md#column-view) ou na [Exibição de lista](/help/sites-authoring/basic-handling.md#list-view).
 
-## Status da Live Copy   {#live-copy-status}
+## Status da Live Copy {#live-copy-status}
 
 O [Modo de página Status da Live Copy](/help/sites-authoring/author-environment-tools.md#page-modes) permite ter uma visão geral rápida do status da live copy e de quais componentes são, ou não, herdados:
 
@@ -471,7 +471,7 @@ Por exemplo:
 
 As [anotações](/help/sites-authoring/annotations.md) permitem que revisores e outros autores forneçam feedback sobre o seu conteúdo. Eles são usados com frequência para fins de revisão e validação.
 
-## Visualizar páginas   {#previewing-pages}
+## Visualizar páginas {#previewing-pages}
 
 Existem duas opções para a visualização de uma página:
 
@@ -481,7 +481,7 @@ Existem duas opções para a visualização de uma página:
 
 >[!NOTE]
 >
->* Os links no conteúdo estarão visíveis, mas não poderão ser acessados no modo Editar.
+>* Os links no conteúdo estão visíveis, mas não estão acessíveis no modo Editar.
 >* Use qualquer uma das opções de visualização, caso deseje navegar usando os links.
 >* Use o [atalho de teclado](/help/sites-authoring/keyboard-shortcuts.md) `Ctrl-Shift-M` para alternar entre a visualização e o último modo selecionado.
 >
@@ -506,7 +506,7 @@ Ao criar, o modo de visualização está disponível usando o ícone na parte su
 
 A opção **Exibir como publicado** está disponível no menu [Informações da página](/help/sites-authoring/author-environment-tools.md#page-information). Isso abre a página em uma nova guia, atualiza o conteúdo e mostra a página exatamente como aparece quando é publicada.
 
-## Bloquear uma página   {#locking-a-page}
+## Bloquear uma página {#locking-a-page}
 
 O AEM permite bloquear uma página, de modo que ninguém mais possa modificar o conteúdo. Isso é útil quando você está fazendo várias edições em uma página específica ou quando precisa congelar uma página por pouco tempo.
 
@@ -524,7 +524,7 @@ Uma página pode ser bloqueada a partir do:
    1. Para abrir o menu, selecione o ícone **Informações da página**.
    1. Selecione a opção **Bloquear página**.
 
-Uma vez bloqueadas, as informações de exibição do console são atualizadas e, ao editar, um símbolo de cadeado é apresentado na barra de ferramentas.
+Uma vez bloqueadas, as informações de exibição do console são atualizadas e, ao editar, um símbolo de cadeado é exibido na barra de ferramentas.
 
 ![Símbolo de bloqueio](assets/screen_shot_2018-03-22at135010.png)
 
@@ -599,4 +599,4 @@ Os campos de formulário que os componentes de formulário renderizam não devem
 
 >[!NOTE]
 >
->O histórico de alterações em arquivos e imagens dura no mínimo dez horas. No entanto, para além deste período, a reversão de alterações não é garantida. Seu administrador pode alterar o tempo padrão de dez horas.
+>O histórico de alterações em arquivos e imagens dura no mínimo dez horas. Para além deste período, contudo, a reversão de alterações não é garantida. Seu administrador pode alterar o tempo padrão de dez horas.

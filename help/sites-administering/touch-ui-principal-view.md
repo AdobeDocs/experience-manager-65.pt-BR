@@ -10,9 +10,9 @@ exl-id: 4ce19c95-32cb-4bb8-9d6f-a5bc08a3688d
 solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
-source-git-commit: 6f3c4f4aa4183552492c6ce5039816896bd67495
+source-git-commit: 8adc566113beedc408698dccc3a4c072349af5dc
 workflow-type: tm+mt
-source-wordcount: '763'
+source-wordcount: '777'
 ht-degree: 1%
 
 ---
@@ -94,7 +94,7 @@ Além da lista de privilégios e do Tipo de permissão em um determinado caminho
 
 ![Adicionar o tipo de restrição](assets/sapte-1.png) ![Adicionar o tipo de restrição](assets/opt-1.png)
 
-O novo ACE é refletido na Lista de controle de acesso conforme mostrado abaixo. Observe que `jcr:write` é um privilégio agregado que inclui `jcr:removeNode` que foi adicionado acima, mas não é mostrado abaixo como coberto por `jcr:write`.
+O novo ACE é refletido na Lista de controle de acesso conforme mostrado abaixo. Observe que `jcr:write` é um privilégio agregado que inclui `jcr:removeNode` que foi adicionado acima, mas não é mostrado abaixo pois é tratado em `jcr:write`.
 
 ### Edição de ACEs {#editing-aces}
 
@@ -112,7 +112,7 @@ Aqui o privilégio `addChildNodes` é adicionado para **dam-users** no caminho e
 
 ![Adicionar privilégio](assets/image2019-3-21_0-45-35.png)
 
-As alterações podem ser salvas clicando no botão **Salvar** na parte superior direita, e são refletidas nas novas permissões para **dam-users**, conforme mostrado abaixo:
+As alterações podem ser salvas clicando no botão **Salvar** na parte superior direita e são refletidas nas novas permissões para **dam-users**, conforme mostrado abaixo:
 
 ![Salvar alterações](assets/zece-1.png)
 

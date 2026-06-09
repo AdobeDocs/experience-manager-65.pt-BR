@@ -9,10 +9,10 @@ exl-id: 62586c8e-dab4-4be9-a44a-2c072effe3c0
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+source-git-commit: 2b2c54f2a59c73747fd9cdd982aa8b059e554c23
 workflow-type: tm+mt
-source-wordcount: '965'
-ht-degree: 18%
+source-wordcount: '971'
+ht-degree: 20%
 
 ---
 
@@ -27,7 +27,7 @@ Usando o console, você pode criar um projeto, associar recursos ao projeto e ta
 
 ## Requisitos de acesso {#access-requirements}
 
-Projeta um recurso padrão do AEM e não requer configuração adicional.
+Os projetos são um recurso padrão do AEM e não exigem configuração adicional.
 
 No entanto, para que os usuários em projetos possam ver outros usuários/grupos enquanto usam Projetos, como ao criar projetos, criar tarefas/fluxos de trabalho ou exibir e gerenciar a equipe, eles precisam ter acesso de leitura a `/home/users` e `/home/groups`.
 
@@ -42,7 +42,7 @@ Siga estas etapas para criar um projeto.
 
    ![Assistente para criação de projeto](assets/create-project-wizard.png)
 
-1. Defina o **Título** e a **Descrição** e adicione uma imagem de **Miniatura**, se necessário. Também é possível adicionar ou excluir usuários e a qual grupo eles pertencem.
+1. Defina o **Título** e a **Descrição** e adicione uma imagem de **Miniatura**, se necessário. Também é possível adicionar ou excluir usuários, bem como sua associação com um grupo.
 
    ![Etapa de propriedades do assistente](assets/create-project-wizard-properties.png)
 
@@ -134,7 +134,7 @@ Agora você pode criar projetos dentro da pasta. É possível criar várias past
 
 ### Desativação de projetos {#making-projects-inactive-or-active}
 
-Você pode marcar um projeto como inativo se ele for concluído, mas ainda assim manter as informações sobre ele. [Os projetos inativos agora mostram](#viewing-active-inactive-projects) por padrão no console **Projetos**.
+Você pode marcar um projeto como inativo se ele for concluído, mas ainda deseja manter as informações sobre ele. [Os projetos inativos agora mostram](#viewing-active-inactive-projects) por padrão no console **Projetos**.
 
 Para tornar um projeto inativo, siga estas etapas.
 
@@ -161,4 +161,4 @@ Siga estas etapas para excluir um projeto.
    ![Opções de exclusão do projeto](assets/project-delete-options.png)
 1. Clique em **Excluir** para excluir o projeto com as opções selecionadas.
 
-Para saber mais sobre os grupos criados automaticamente pelos projetos, consulte [Criação automática de grupos](/help/sites-authoring/projects.md#auto-group-creation) para obter detalhes.
+Para saber mais sobre grupos criados automaticamente por projetos, consulte [Criação automática de grupos](/help/sites-authoring/projects.md#auto-group-creation) para obter detalhes.

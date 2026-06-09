@@ -5,10 +5,10 @@ exl-id: 632c0608-2ab8-4a5b-8251-cd747535449b
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Projects
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+source-git-commit: 35042bcda42d01a9f21afc2230556475cb2983d8
 workflow-type: tm+mt
-source-wordcount: '1360'
-ht-degree: 26%
+source-wordcount: '1373'
+ht-degree: 29%
 
 ---
 
@@ -25,7 +25,7 @@ Como usuário, você pode:
 
 ## Requisitos de acesso {#access-requirements}
 
-Projeta um recurso padrão do AEM e não requer configuração adicional.
+Os projetos são um recurso padrão do AEM e não exigem configuração adicional.
 
 No entanto, para que os usuários em projetos possam ver outros usuários/grupos enquanto usam Projetos, como ao criar projetos, criar tarefas/fluxos de trabalho ou exibir e gerenciar a equipe, eles precisam ter acesso de leitura a `/home/users` e `/home/groups`.
 
@@ -37,7 +37,7 @@ O console de projetos é onde você acessa e gerencia os projetos no AEM.
 
 ![O Console de Projetos](assets/screen-shot_2019-03-05at125110.png)
 
-O console de Projetos é semelhante a outros consoles no AEM, permite várias ações em projetos individuais e ajusta a visualização dos projetos.
+O console de Projetos é semelhante a outros consoles no AEM. Ela permite várias ações em projetos individuais e ajustar a visualização dos projetos.
 
 ### Alternar o modo {#modes}
 
@@ -81,7 +81,7 @@ Clique em **Criar** para adicionar um novo projeto.
 
 Os projetos são compostos de diferentes tipos de informações que você deseja gerenciar em conjunto. Estas informações são representadas por **Blocos** diferentes.
 
-Você pode ter os seguintes mosaicos associados ao seu projeto.
+É possível ter os seguintes blocos associados ao seu projeto.
 
 * [Ativos](#assets)
 * [Coleções de ativos](#asset-collections)
@@ -162,7 +162,7 @@ O bloco **Páginas de Aterrissagem** permite solicitar uma nova página de aterr
 
 ![Bloco de página de aterrissagem](assets/project-tile-landing.png)
 
-Este fluxo de trabalho está descrito no documento[Criar um fluxo de trabalho de página de aterrissagem.](/help/sites-authoring/projects-with-workflows.md#request-landing-page-workflow)
+Este fluxo de trabalho está descrito no documento [Criar um fluxo de trabalho de página de aterrissagem.](/help/sites-authoring/projects-with-workflows.md#request-landing-page-workflow)
 
 ### Emails {#emails}
 
@@ -203,14 +203,14 @@ Os modelos servem como base para iniciar o projeto. A AEM fornece esses modelos 
 * **[Projeto de tradução](/help/sites-administering/translation.md)** - Esta é uma amostra de referência para o gerenciamento de atividades relacionadas a tradução. Ele inclui funções básicas e fluxos de trabalho para gerenciar a tradução.
 * **Projeto simples** - Esta é uma amostra de referência para qualquer projeto que não se encaixe em outras categorias. Ele inclui três funções básicas e quatro fluxos de trabalho gerais do AEM.
 
-Com base no modelo selecionado, você tem opções diferentes disponíveis no projeto, como as funções de usuário e os fluxos de trabalho fornecidos.
+Com base no modelo selecionado, há diferentes opções disponíveis para o no projeto, como as funções de usuário e os fluxos de trabalho fornecidos.
 
 ## Funções de usuário em um projeto {#user-roles-in-a-project}
 
 As diferentes funções de usuário são definidas no modelo de projeto e são usadas por dois motivos principais:
 
 1. Permissões: as funções do usuário se encaixam em uma das três categorias listadas: observador, editor, proprietário. Por exemplo, um fotógrafo ou redator terá os mesmos privilégios de um editor. As permissões determinam o que um usuário pode fazer com o conteúdo de um projeto.
-1. Fluxos de trabalho: os fluxos de trabalho determinam quem recebe as tarefas em um projeto. As tarefas podem ser associadas a uma função de projeto. Por exemplo, uma tarefa pode ser atribuída a fotógrafos para que todos os membros da equipe com a função de fotógrafo recebam a tarefa.
+1. Fluxos de trabalho: os fluxos de trabalho determinam quem recebe as tarefas em um projeto. As tarefas podem ser associadas a uma função de projeto. Por exemplo, uma tarefa pode ser atribuída a fotógrafos para que todos os membros da equipe com a função de fotógrafo tenham a tarefa atribuída a eles.
 
 Todos os projetos oferecem suporte às seguintes funções padrão para permitir que você administre permissões de segurança e controle.
 
