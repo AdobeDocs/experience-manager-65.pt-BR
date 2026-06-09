@@ -255,7 +255,7 @@ Por exemplo, você pode corrigir uma referência quebrada em um componente Refer
 
 ## Eventos - Linha do tempo {#events-timeline}
 
-Para os recursos adequados (por exemplo, as páginas do console **Sites** ou os ativos do console **Assets**), a linha do tempo [ pode ser usada para mostrar a atividade recente de qualquer item selecionado](/help/sites-authoring/basic-handling.md#timeline).
+Para os recursos adequados (por exemplo, as páginas do console **Sites** ou os ativos do console **Assets**), a linha do tempo [&#x200B; pode ser usada para mostrar a atividade recente de qualquer item selecionado](/help/sites-authoring/basic-handling.md#timeline).
 
 Abra o console e navegue até o recurso desejado, e abra **Linha do tempo** usando:
 

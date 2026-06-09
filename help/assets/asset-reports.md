@@ -164,7 +164,7 @@ Para remover relatórios desnecessários, configure o serviço de Limpeza de rel
 
 ## Informações sobre solução de problemas, dicas e limitações {#best-practices-and-limitations}
 
-* Se alguns relatórios ou números nos relatórios não estiverem disponíveis ou como esperado, verifique se o serviço [!UICONTROL Gravador de Eventos DAM do CQ de ] está habilitado.
+* Se alguns relatórios ou números nos relatórios não estiverem disponíveis ou como esperado, verifique se o serviço [!UICONTROL Gravador de Eventos DAM do CQ de &#x200B;] está habilitado.
 
 * Remova os relatórios que não são mais necessários. Use as opções de configuração no serviço de Limpeza de relatório do DAM para configurar os critérios para limpar relatórios.
 
