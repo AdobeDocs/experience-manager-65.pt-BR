@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Configurando Filas Compartilhadas{#configuring-shared-queues}
 
-As Filas compartilhadas permitem configurar e gerenciar as filas de usuários com eficiência. Uma fila de usuários é simplesmente todas as tarefas atribuídas a um usuário. Consulte [Listas de Tarefas Pendentes](https://help.adobe.com/en_US/livecycle/11.0/WorkspaceHelp/WS92d06802c76abadb-2b6ab502126beb6ba2f-7ffc.2.html) para obter mais informações. É possível atribuir, cancelar atribuições e reatribuir filas de usuários dependendo das necessidades organizacionais. Você pode gerenciar Filas compartilhadas de duas maneiras:
+As Filas compartilhadas permitem configurar e gerenciar as filas de usuários com eficiência. Uma fila de usuários é simplesmente todas as tarefas atribuídas a um usuário. Consulte [Listas de Tarefas Pendentes](https://help.adobe.com/pt_BR/livecycle/11.0/WorkspaceHelp/WS92d06802c76abadb-2b6ab502126beb6ba2f-7ffc.2.html) para obter mais informações. É possível atribuir, cancelar atribuições e reatribuir filas de usuários dependendo das necessidades organizacionais. Você pode gerenciar Filas compartilhadas de duas maneiras:
 
 **Gerenciar Acesso A Um Usuário**
 

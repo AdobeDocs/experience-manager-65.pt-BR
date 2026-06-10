@@ -86,7 +86,7 @@ Crie ou edite uma configuração de tipo de arquivo para especificar como o apli
 
 1. Após concluir todas as seções, clique em **[!UICONTROL Salvar]** ou **[!UICONTROL Salvar como]** e forneça um nome para a configuração.
 
-O suporte para vários tipos de arquivos pode ser personalizado. (Consulte &quot; [Adicionar suporte para formatos de arquivo nativos adicionais](https://help.adobe.com/en_US/AEMForms/6.1/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-7756.2.html)&quot; em [Programação com formulários AEM](https://www.adobe.com/go/learn_lc_programming_11).)
+O suporte para vários tipos de arquivos pode ser personalizado. (Consulte &quot; [Adicionar suporte para formatos de arquivo nativos adicionais](https://help.adobe.com/pt_BR/AEMForms/6.1/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-7756.2.html)&quot; em [Programação com formulários AEM](https://www.adobe.com/go/learn_lc_programming_11).)
 
 ## Alterar as configurações padrão {#change-the-default-settings}
 
@@ -620,7 +620,7 @@ Você também pode especificar como os formulários são enviados. As opções s
 
 ## Outras configurações do aplicativo (somente Windows) {#other-applications-settings-windows-only}
 
-Não é possível alterar as configurações de outros aplicativos por meio do console de administração; elas exibem as extensões de nome de arquivo dos tipos de arquivos compatíveis. Para obter instruções sobre como acessar essas configurações, consulte [Criar ou editar configurações de tipo de arquivo](https://help.adobe.com/en_US/AEMForms/6.1/AdminHelp/WS92d06802c76abadb-5145d5d12905ce07e7-7e42.2.html).
+Não é possível alterar as configurações de outros aplicativos por meio do console de administração; elas exibem as extensões de nome de arquivo dos tipos de arquivos compatíveis. Para obter instruções sobre como acessar essas configurações, consulte [Criar ou editar configurações de tipo de arquivo](https://help.adobe.com/pt_BR/AEMForms/6.1/AdminHelp/WS92d06802c76abadb-5145d5d12905ce07e7-7e42.2.html).
 
 * Corel WordPerfect: `wpd`
 * PageMaker Adobe: `pmd, pm6, p65, pm`

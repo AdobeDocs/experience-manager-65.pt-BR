@@ -25,7 +25,7 @@ A integração de vídeo do Dynamic Media Classic estende o alcance do vídeo ot
 
 * O componente de **[!UICONTROL Vídeo do Scene7]** executa automaticamente a detecção de dispositivo e largura de banda para reproduzir o formato e a qualidade de vídeo corretos em computadores, tablets e dispositivos móveis.
 * Assets - É possível incluir conjuntos de vídeos adaptáveis em vez de apenas ativos de vídeo únicos. Um conjunto de vídeos adaptáveis contém todas as representações de vídeo necessárias para reproduzir vídeo de forma contínua em várias telas. Um Conjunto de vídeos adaptados agrupa versões do mesmo vídeo codificadas em taxas de bits e formatos diferentes, como 400 kbps, 800 kbps e 1000 kbps. Use um Conjunto de vídeos adaptados, juntamente com o componente de vídeo S7, para transmissão de vídeo adaptado em várias telas, incluindo dispositivos móveis para desktop, iOS, Android™, BlackBerry® e Windows.
-<!-- See [Scene7 documentation about adaptive video sets for more information](https://help.adobe.com/en_US/scene7/using/WS53492AE1-6029-45d8-BF80-F4B5CF33EB08.html). -->
+<!-- See [Scene7 documentation about adaptive video sets for more information](https://help.adobe.com/pt_BR/scene7/using/WS53492AE1-6029-45d8-BF80-F4B5CF33EB08.html). -->
 
 ## Sobre FFMPEG e Dynamic Media Classic {#about-ffmpeg-and-scene}
 
