@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 4cdf38284c195122307926f759fa6c60c5cd62af
+source-git-commit: 2493f25c9f22a165360107e9f642ef3f8c07e957
 workflow-type: tm+mt
-source-wordcount: '3790'
+source-wordcount: '3772'
 ht-degree: 1%
 
 ---
@@ -198,6 +198,7 @@ A versão mínima da API de Servlet necessária é a 3.1
 2. A partir das implantações do AEM 6.5 em servidores de aplicativos, você mudará para Suporte restrito. Os clientes existentes podem atualizar para o AEM 6.5 e continuar usando servidores de aplicativos. Para novos clientes, ele vem com critérios de suporte e um programa de suporte, conforme declarado na descrição do Nível-R acima.
 3. Somente AEM Forms aplicável:
    * Remoção do suporte para JBoss® EAP 7.1.4 e adição do suporte para JBoss® EAP 7.4.10.
+   * A partir do AEM Forms Service Pack 6.5.25.0, o suporte para JBoss® EAP 7.4.23 é adicionado. Você pode baixar o JBoss® EAP 7.4.23 do Portal de Distribuição de Software usando este [link](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/jboss-eap-7.4.23-1.0.16.zip).
 
 ### Sistemas operacionais de servidor {#server-operating-systems}
 
@@ -206,7 +207,7 @@ O Adobe Experience Manager funciona com as seguintes plataformas de servidor par
 | **Plataforma** | **Nível de Suporte** |
 |---|---|
 | **Linux®, baseado na distribuição Red Hat®** | A: Suportado `[1]` `[3]` |
-| Linux®, baseado na distribuição Debian incl. Ubuntu | A: Suportado `[1]` `[2]` |
+| Linux®, baseado na distribuição Debian, incluindo Ubuntu | A: Suportado `[1]` `[2]` |
 | Linux®, baseado na distribuição SUSE® | A: Suportado `[1]` |
 | Microsoft® Windows Server 2022 | R: Suporte restrito |
 | Microsoft® Windows Server 2019 `[4]` (obsoleto) | R: Suporte restrito para novos contratos `[5]` |
@@ -503,7 +504,7 @@ OpenOffice 4.1.15 </td>
 
 ### Requisitos para o AEM Forms Designer {#requirements-for-aem-forms-designer}
 
-* Microsoft® Windows® 2016 Server, Microsoft® Windows® 2019 Server, Microsoft® Windows® 10 ou Windows® 11
+* Microsoft® Windows® 2016 Server, Microsoft® Windows® 2019 Server, Microsoft® Windows® 10, Windows® 11 ou Microsoft® Windows Terminal Server 2025
 * 1 GHz ou mais rápido com suporte para PAE, NX e SSE2.
 * 1 GB de RAM para 32 bits ou 2 GB de RAM para SO de 64 bits
 * 16 GB de espaço em disco para 32 ou 20 GB de espaço em disco para SO de 64 bits

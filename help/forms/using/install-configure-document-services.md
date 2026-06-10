@@ -6,9 +6,9 @@ role: Admin, Developer
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
-source-git-commit: 4cdf38284c195122307926f759fa6c60c5cd62af
+source-git-commit: 2b097caa05ec889ae445d74a905fb6c3f8457cee
 workflow-type: tm+mt
-source-wordcount: '10527'
+source-wordcount: '10688'
 ht-degree: 1%
 
 ---
@@ -1139,6 +1139,27 @@ Uma conta de usuário local é necessária para executar o serviço PDF Generato
 1. Abra a página [Configuração do AEM Forms PDF Generator](http://localhost:4502/libs/fd/pdfg/config/ui.html).
 
 1. Na guia **[!UICONTROL Contas de Usuário]**, forneça as credenciais de uma conta de usuário local e clique em **[!UICONTROL Enviar]**. Se o Microsoft® Windows solicitar, permita o acesso ao usuário. Quando adicionado com êxito, o usuário configurado é exibido na seção **[!UICONTROL Suas contas de usuário]** da guia **[!UICONTROL Contas de Usuário]**.
+
+### (Somente para Windows) Ativar conversões de PDF Generator com vários threads
+
+Para executar conversões de documentos multithread enquanto o AEM Forms é executado como um serviço do Windows, o PDF Generator processa as conversões em uma única conta de usuário configurada.
+
+>[!NOTE]
+>
+> Neste modo, várias instâncias do **Microsoft® Word** (doc/docx) e do **Excel** (xls/xlsx) são executadas com o mesmo usuário e lidam com conversões simultaneamente. **O Microsoft® PowerPoint** (ppt/pptx) não oferece suporte a este modo. O PDF Generator inicia somente uma instância do PowerPoint por vez, portanto, as conversões multithread não são compatíveis com o PowerPoint.
+
+Para ativar conversões multithread para Word e Excel:
+
+1. Configure uma [conta de usuário local](#configure-a-local-user-account-to-run-the-pdf-generator-service) para o PDF Generator.
+1. Faça logon na instância de autor do AEM e navegue até **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Ferramentas]** > **[!UICONTROL Forms]** > **[!UICONTROL Configurar PDF Generator]**. A URL padrão é <http://localhost:4502/libs/fd/pdfg/config/ui.html>.
+1. Na guia **[!UICONTROL Configuração Geral]**, defina as seguintes opções (configure o PDFMaker para Word e o Native2PDF para Excel):
+
+   * **Habilitar Modo de Usuário Único para PDFMaker:** **true**
+   * **Tamanho do Pool de Processo de Usuário Único do PDFMaker:** Defina como desejado. Esse valor é o número máximo de instâncias do Word que podem executar conversões ao mesmo tempo.
+   * **Habilitar Modo de Usuário Único para Native2PDF:** **true**
+   * **Tamanho do Pool de Processo de Usuário Único do Native2PDF:** Defina como desejado. Esse valor é o número máximo de instâncias do Excel que podem executar conversões ao mesmo tempo.
+
+1. Reinicie o servidor do AEM Forms.
 
 ### Definir as configurações de tempo limite {#configure-the-time-out-settings}
 
