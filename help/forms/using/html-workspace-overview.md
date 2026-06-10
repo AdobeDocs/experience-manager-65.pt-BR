@@ -28,7 +28,7 @@ Para obter mais informações, consulte [Introdução ao AEM Forms workspace](/h
 
 ## Familiarizando-se {#getting-familiar}
 
-Para conhecer o processo completo de criação de aplicativos de formulários para automatizar um processo de negócios, siga o passo a passo. Você pode criar, gerenciar e testar um aplicativo usando o espaço de trabalho do Workbench, Designer e AEM Forms depois de seguir a apresentação. Para obter detalhes sobre a implementação, consulte [Criando seu Primeiro Aplicativo AEM Forms](https://help.adobe.com/en_US/livecycle/11.0/CreateFirstApp/index.html).
+Para conhecer o processo completo de criação de aplicativos de formulários para automatizar um processo de negócios, siga o passo a passo. Você pode criar, gerenciar e testar um aplicativo usando o espaço de trabalho do Workbench, Designer e AEM Forms depois de seguir a apresentação. Para obter detalhes sobre a implementação, consulte [Criando seu Primeiro Aplicativo AEM Forms](https://help.adobe.com/pt_BR/livecycle/11.0/CreateFirstApp/index.html).
 
 ## Visão geral funcional {#functional-overview}
 
