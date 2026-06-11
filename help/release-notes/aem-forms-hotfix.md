@@ -5,9 +5,9 @@ exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
-source-git-commit: 1b8290b3e1b7e5f62cda1dd45561bc4e3c09703f
+source-git-commit: fddc5a648d8945e84283ce87725e64da57f1daed
 workflow-type: tm+mt
-source-wordcount: '2259'
+source-wordcount: '4289'
 ht-degree: 1%
 
 ---
@@ -28,6 +28,22 @@ Este artigo lista as correções críticas implementadas para resolver problemas
     <td><strong>Data</strong></td>
     <td><strong>Link de download do Hotfix (link de Distribuição de software da AEM)</strong></td>
     <td><strong>Problemas corrigidos</strong></td>
+  </tr>
+  <tr>
+    <td>
+      <strong>8 de junho de 2026</strong><br>
+      <em>Aplica-se a:</em> implantações WAR/JEE do AEM 6.5.25.0 (incluindo AEM Forms no JEE)<br>
+    </td>
+    <td>
+    <ul>
+    <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-service-pkg-6.5.25-NPR-44100-B0002.zip">Hotfix do AEM Service Pack 6.5.25.0 (NPR-44100)</a></li>
+    </ul>
+    </td>
+    <td>
+    <ul>
+    <li><b>NPR-44100</b> Depois de instalar o AEM 6.5 Service Pack 25.0 em implantações WAR/JEE, o pacote <code>com.adobe.cq.screens.sessions</code> permanece no estado Instalado e nunca se torna Ativo.</li>
+    </ul>
+    </td>
   </tr>
   <tr>
     <td>
@@ -291,7 +307,7 @@ Este artigo lista as correções críticas implementadas para resolver problemas
      </td>
     <td>
     <ul>
-    <li>Cartas de rascunho com dados XML ficam presas no estado de carregamento durante a pré-visualização. Para obter instruções de download e instalação da correção, consulte a seção <a href="#install-hotfix"> Baixar e instalar correção para problema de carta de rascunho</a>.(FORMS-14521)</li>
+    <li>Cartas de rascunho com dados XML ficam presas no estado de carregamento durante a pré-visualização. Para obter instruções de download e instalação do hotfix, consulte a seção <a href="#install-hotfix"> Hotfix de download e instalação para carta de rascunho</a>.(FORMS-14521)</li>
     </ul>
     </td>    
   </tr>
