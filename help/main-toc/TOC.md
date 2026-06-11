@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Use a documentação do Adobe Experience Manager 6.5 para saber como funciona e o que o software pode fazer por você.
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM 6.5
-source-git-commit: 8f8aed4c653cc286b32c83a38382f2b10370cdc8
+source-git-commit: 652162941dd716ae797ce50709e91757dad99054
 workflow-type: tm+mt
-source-wordcount: '8275'
+source-wordcount: '8272'
 ht-degree: 20%
 
 ---
@@ -587,9 +587,8 @@ ht-degree: 20%
          + [Atualização para AEM Forms no JEE para JBoss Turnkey](https://www.adobe.com/go/learn_aemforms_upgradeTurnkey_65_br)
          + [Atualização para Adobe Experience Manager Forms no JEE para WebSphere](https://www.adobe.com/go/learn_aemforms_upgradeWebSphere_65_br)
          + [Atualização para Adobe Experience Manager Forms no JEE para WebLogic](https://www.adobe.com/go/learn_aemforms_upgradeWebLogic_65_br)
-         + Artigos da knowledge base {#aem-forms-jee-knowledge-base-articles}
-            + [Atualização do JBoss EAP da 7.4.10 para 7.4.23 para AEM Forms no JEE](/help/forms/using/upgrade-jboss-eap-from-7-4-10-to-7-4-23.md)
-            + [Atualização do cluster JBoss EAP de 7.4.10 para 7.4.23 para AEM Forms no JEE](/help/forms/using/upgrade-jboss-eap-cluster-from-7-4-10-to-7-4-23.md)
+         + [Atualização do JBoss EAP da 7.4.10 para 7.4.23 para AEM Forms no JEE](/help/forms/using/upgrade-jboss-eap-from-7-4-10-to-7-4-23.md)
+         + [Atualização do cluster JBoss EAP de 7.4.10 para 7.4.23 para AEM Forms no JEE](/help/forms/using/upgrade-jboss-eap-cluster-from-7-4-10-to-7-4-23.md)
    + Gerenciar o AEM Forms {#manage-administer-aem-forms}
       + [AEM Forms em grupos e privilégios OSGi](/help/forms/using/forms-groups-privileges-tasks.md)
       + [Criar novas pastas para categorizar formulários](/help/forms/using/creating-new-folders-categorize-forms.md)
