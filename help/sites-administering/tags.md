@@ -9,9 +9,9 @@ exl-id: ff041ef0-e566-4373-818e-76680ff668d8
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 3545595dd67b5703d357964a752bf8979a38ea55
 workflow-type: tm+mt
-source-wordcount: '1769'
+source-wordcount: '1795'
 ht-degree: 2%
 
 ---
@@ -34,9 +34,9 @@ Além de páginas e ativos, as tags são usadas para recursos do AEM Communities
 
 ## Recursos de tag {#tag-features}
 
-Alguns dos recursos das tags no AEM incluem:
+Alguns recursos de tags na AEM incluem:
 
-* As tags podem ser agrupadas em vários namespaces. Essas hierarquias permitem que taxonomias sejam criadas. Essas taxonomias são globais por todo o AEM.
+* As tags podem ser agrupadas em vários namespaces. Essas hierarquias permitem que taxonomias sejam criadas. Essas taxonomias são globais no AEM.
 * A restrição principal para tags recém-criadas é que elas devem ser exclusivas em um namespace específico.
 * O título de uma tag não deve incluir caracteres de separação de caminho de tag (nem eles serão exibidos, se presentes)
 
@@ -107,7 +107,7 @@ Selecionar um namespace ou outra tag disponibiliza as seguintes operações:
 * [Mover](#moving-tags)
 * [Mesclar](#merging-tags)
 * [Publicação](#publishing-tags)
-* [Desfazer publicação](#unpublishing-tags)
+* [Desfazer a publicação](#unpublishing-tags)
 * [Excluir](#deleting-tags)
 
 ![chlimage_1-184](assets/chlimage_1-184.png)
@@ -200,7 +200,7 @@ Quando um namespace ou outra marca é selecionada, selecionar o ícone **`Move`*
 Navegue até o novo caminho no qual mover a tag.
 
 * **Renomear para**
-Exibe inicialmente a `name` atual da marca. Um novo `name`pode ser inserido.
+Inicialmente exibe o `name` atual da tag. Um novo `name`pode ser inserido.
 
 * selecione **Salvar**
 
@@ -230,7 +230,7 @@ Procure para selecionar o caminho da tag na qual mesclar.
 
 ![chlimage_1-201](assets/chlimage_1-201.png)
 
-Quando um namespace ou outra marca é selecionada, selecionando o ícone **Publish** para ativar a marca no ambiente de publicação. Similar ao conteúdo da página, somente a tag selecionada é publicada, independentemente de ser uma tag container ou não.
+Quando um namespace ou outra marca é selecionada, selecionando o ícone **Publicar** para ativar a marca no ambiente de publicação. Similar ao conteúdo da página, somente a tag selecionada é publicada, independentemente de ser uma tag container ou não.
 
 Para publicar uma taxonomia (um namespace e subtags), a prática recomendada é criar um [pacote](/help/sites-administering/package-manager.md) do namespace (consulte [Nó Raiz da Taxonomia](/help/sites-developing/framework.md#taxonomy-root-node)). Certifique-se de [aplicar permissões](#setting-tag-permissions) ao namespace antes de criar o pacote.
 
@@ -255,7 +255,7 @@ As permissões de tag são [&#39;seguras (por padrão)&#39;](/help/sites-adminis
    * entrar com privilégios administrativos
    * acessar o [Console de Segurança](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console),
 
-      * por exemplo, navegue até http://localhost:4502/useradmin
+      * por exemplo, vá até http://localhost:4502/useradmin
 
    * no painel esquerdo, selecione o grupo (ou usuário) para o qual a [permissão de leitura](/help/sites-administering/security.md#permissions) será concedida
    * no painel direito, localize o **Caminho &#x200B;** para o namespace da tag
@@ -283,9 +283,9 @@ A propriedade `title`de uma marca pode ser traduzida em vários idiomas. Depois 
 
 ### Definição de títulos de tag em vários idiomas {#defining-tag-titles-in-multiple-languages}
 
-A tabela a seguir descreve como traduzir os `title`da marca **Animais** do inglês para o alemão e o francês.
+A tabela a seguir descreve como traduzir os `title` da marca **Animais** do inglês para o alemão e o francês.
 
-Comece selecionando a marca no namespace **Stock Photography** e selecionando o ícone **`Edit`* (consulte a seção [Edição de Marcas](#editing-tags)).
+Comece selecionando a marca no namespace **Stock Photography** e selecionando o ícone **`Edit`** (consulte a seção [Edição de Marcas](#editing-tags)).
 
 O painel Editar tag apresenta a capacidade de escolher idiomas nos quais o título da tag deve ser localizado.
 
@@ -303,7 +303,7 @@ Para adicionar um novo idioma à caixa de diálogo, consulte [Adicionando um Nov
 
 >[!NOTE]
 >
->A nuvem de tags e as metapalavras-chave no componente de página padrão usam a tag localizada `titles` com base no idioma da página, se disponível.
+>A nuvem de marcas e as metapalavras-chave no componente de página padrão usam a marca localizada `titles` com base no idioma da página, se disponível.
 
 ## Recursos {#resources}
 
@@ -312,3 +312,4 @@ Para adicionar um novo idioma à caixa de diálogo, consulte [Adicionando um Nov
   Informações sobre a estrutura de marcação e a extensão e inclusão de tags em aplicativos personalizados.
 
 * [Console de marcação da interface clássica](/help/sites-administering/classic-console.md)
+
