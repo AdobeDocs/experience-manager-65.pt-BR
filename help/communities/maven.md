@@ -9,9 +9,9 @@ exl-id: 3df90511-e43e-442b-bf73-44c22c1886b7
 solution: Experience Manager
 feature: Communities
 role: Developer
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 1c2c350e91fe9a0a67618ea4ec00d4a8b4e3f0ca
 workflow-type: tm+mt
-source-wordcount: '118'
+source-wordcount: '123'
 ht-degree: 0%
 
 ---
@@ -20,9 +20,9 @@ ht-degree: 0%
 
 ## Visão geral {#overview}
 
-Esta seção da documentação das Comunidades Adobe Experience Manager (AEM) é adicionada a:
+Esta seção da documentação das Comunidades do Adobe Experience Manager (AEM) é adicionada a:
 
-* [Compilando Projetos AEM usando o Apache Maven](../../help/sites-developing/ht-projects-maven.md).
+* [Compilando Projetos AEM usando Apache Maven](../../help/sites-developing/ht-projects-maven.md).
 
 Há apenas um artefato &quot;uber&quot; que substitui artefatos individuais:
 
@@ -36,7 +36,7 @@ Há apenas um artefato &quot;uber&quot; que substitui artefatos individuais:
 >
 >Consulte a seção [Versões mais recentes](deploy-communities.md#latest-releases), onde é possível identificar a versão mais recente.
 
-## Exemplo de dependência do Maven {#maven-dependency-example}
+## Exemplo de dependência do Maven
 
 ```xml
 <dependency>
@@ -49,7 +49,7 @@ Há apenas um artefato &quot;uber&quot; que substitui artefatos individuais:
 
 >[!NOTE]
 >
->Consulte o [repositório AEM Uber jar](https://mvnrepository.com/artifact/com.adobe.aem/uber-jar), onde é possível identificar o artefato Uber jar mais recente.
+>Consulte o [repositório Uber jar do AEM](https://mvnrepository.com/artifact/com.adobe.aem/uber-jar), onde é possível identificar o artefato Uber jar mais recente.
 
 <!--
 There are now two "uber" artifacts that replace individual artifacts:
@@ -87,7 +87,7 @@ Ensure thet the version specified corresponds with the Communities package versi
 >
 >Visit the [Latest Releases](deploy-communities.md#latest-releases) section to identify the most recent version.
 
-## Maven Dependency Example {#maven-dependency-example}
+## Maven Dependency Example
 
 The Communities API jar must be specified before the Uber API jar.
 
