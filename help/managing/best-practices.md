@@ -10,10 +10,10 @@ exl-id: 94b91996-d2b2-4d4a-b770-334cfa2dc0b7
 solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
 role: Admin,Developer,Leader
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+source-git-commit: f6e1e28d6fbfc240a46c2c69f02c9c5fda1d0d0d
 workflow-type: tm+mt
-source-wordcount: '3212'
-ht-degree: 0%
+source-wordcount: '3275'
+ht-degree: 1%
 
 ---
 
@@ -56,7 +56,7 @@ A planilha **Pulsação do projeto** fornece uma visão geral gráfica das métr
 
 ## Status por Função {#status-by-role}
 
-A planilha **Status por Função** mostra o detalhamento de [**Integridade**, **Qualidade e &#x200B;** Integridade&#x200B;**](#projectheartbeat) por &#x200B;** [Fase](#phases-and-milestones)**&#x200B; e &#x200B;** [Pessoa](#persona)**.
+A planilha **Status por Função** mostra o detalhamento de [**Integridade**, **Qualidade** e **Integridade**](#projectheartbeat) por **[Fase](#phases-and-milestones)** e **[Pessoa](#persona)**.
 
 ## Fases e etapas {#phases-and-milestones}
 
@@ -607,10 +607,11 @@ Para obter as práticas recomendadas sobre implantação, administração, desen
 
 * Outras práticas recomendadas e diretrizes relacionadas ao gerenciamento de um projeto do AEM:
    * [Diretrizes de dimensionamento de hardware](/help/managing/hardware-sizing-guidelines.md)
-   * [DevOps empresarial &#x200B;](/help/managing/enterprise-devops.md)
+   * [DevOps empresarial](/help/managing/enterprise-devops.md)
    * [Práticas recomendadas de gerenciamento de SEO e URL](/help/managing/seo-and-url-management.md)
    * [AEM e diretrizes de acessibilidade na Web](/help/managing/web-accessibility.md)
-   * [Regulamento Geral sobre a Proteção de Dados](/help/managing/data-protection-and-privacy.md)* [Implantação e Manutenção de Práticas Recomendadas](/help/sites-deploying/best-practices.md)
+   * [Regulamento Geral sobre a Proteção de Dados](/help/managing/data-protection-and-privacy.md)
+* [Implantação e manutenção de práticas recomendadas](/help/sites-deploying/best-practices.md)
 * [Administração de práticas recomendadas](/help/sites-administering/administer-best-practices.md)
 * [Desenvolvimento de práticas recomendadas](/help/sites-developing/best-practices.md)
 * [Práticas recomendadas de criação](/help/sites-authoring/best-practices.md)
@@ -622,14 +623,14 @@ Além disso, as seguintes seções da documentação do AEM são de especial int
 
    * [Segurança](/help/sites-developing/security.md)
    * [Implantações recomendadas](/help/sites-deploying/recommended-deploys.md)
-   * [DevOps empresarial &#x200B;](/help/managing/enterprise-devops.md)
+   * [DevOps empresarial](/help/managing/enterprise-devops.md)
    * [Dimensionamento de hardware](/help/managing/hardware-sizing-guidelines.md)
    * Conceitos do AEM:
 
       * [Desenvolvimento - noções básicas](/help/sites-developing/the-basics.md)
       * [Conceitos do MSM](/help/sites-administering/msm.md)
-      * [Linguagem de Modelo do HTML (HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=pt-BR)
+      * [Linguagem de modelo do HTML (HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=pt-BR)
 
 * Documentação relacionada
 
-   * Adobe Experience Cloud - [Planejamento para a Adobe Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/services/core-services.html?lang=pt-BR)
+   * Adobe Experience Cloud - [Planejamento para a Adobe Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/services/core-services.html)

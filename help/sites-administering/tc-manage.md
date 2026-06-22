@@ -5,10 +5,10 @@ exl-id: 968bba02-98fe-4eaf-9937-ce5cfdf5b413
 solution: Experience Manager, Experience Manager Sites
 feature: Language Copy
 role: Admin
-source-git-commit: 26ac50aa27501fe6a80b38a474e9811338c4fb56
+source-git-commit: f6e1e28d6fbfc240a46c2c69f02c9c5fda1d0d0d
 workflow-type: tm+mt
-source-wordcount: '3519'
-ht-degree: 39%
+source-wordcount: '3546'
+ht-degree: 40%
 
 ---
 
@@ -40,13 +40,13 @@ Os projetos e os trabalhos de tradução são criados com fluxos de trabalho de 
 
 O AEM detecta se um projeto de tradução está sendo criado para a tradução inicial do conteúdo ou para atualizar cópias de idioma já traduzidas. Ao criar um projeto de tradução para uma página e indicar as cópias de idioma para as quais você está traduzindo, o AEM detecta se a página de origem já existe nas cópias de idioma escolhidas:
 
-* **A cópia de idioma não inclui a página:** o AEM trata essa situação como a tradução inicial. A página é copiada imediatamente para a cópia de idioma e incluída no projeto. Quando a página traduzida é importada para o AEM, ele a copia diretamente para a cópia de idioma.
-* **A cópia de idioma já inclui a página:** o AEM trata essa situação como uma tradução atualizada. Uma inicialização é criada, uma cópia da página é adicionada a ela e incluída no projeto. Inicializações permitem revisar as traduções atualizadas antes de confirmá-las na cópia de idioma:
+* **A cópia no idioma de destino não inclui a página:** o AEM trata essa situação como a tradução inicial. A página é copiada imediatamente para a cópia no idioma de destino e incluída no projeto. Quando a página traduzida é importada para o AEM, ele a copia diretamente para a cópia no idioma de destino.
+* **A cópia no idioma de destino já inclui a página:** o AEM trata essa situação como uma tradução atualizada. Uma inicialização é criada, uma cópia da página é adicionada a ela e incluída no projeto. Inicializações permitem revisar as traduções atualizadas antes de confirmá-las na cópia no idioma de destino:
 
    * Quando a página traduzida é importada para o AEM, ela substitui a página na inicialização.
-   * A página traduzida substitui a cópia de idioma somente quando a inicialização é promovida.
+   * A página traduzida substitui a cópia no idioma de destino somente quando a inicialização é promovida.
 
-Por exemplo, a raiz de idioma /content/geometrixx/fr é criada para a tradução em francês do idioma principal /content/geometrixx/en. Não há outras páginas na cópia de idioma em francês.
+Por exemplo, a raiz de idioma /content/geometrixx/fr é criada para a tradução em francês do idioma principal /content/geometrixx/en. Não há outras páginas na cópia em francês.
 
 * Um projeto de tradução é criado para a página /content/geometrixx/en/products e todas as páginas secundárias, direcionado para a cópia de idioma em francês. Como a cópia de idioma não inclui a página /content/geometrixx/fr/products, o AEM copia imediatamente a página /content/geometrixx/en/products e todas as páginas secundárias para a cópia de idioma em francês. As cópias também são incluídas no projeto de tradução.
 * Um projeto de tradução é criado para a página /content/geometrixx/en e todas as páginas secundárias, direcionado para a cópia de idioma em francês. Como a cópia de idioma inclui a página que corresponde à página /content/geometrixx/en (a raiz de idioma), o AEM copia a página /content/geometrixx/en e todas as páginas secundárias e as adiciona a uma inicialização. As cópias também são incluídas no projeto de tradução.
@@ -56,10 +56,10 @@ Por exemplo, a raiz de idioma /content/geometrixx/fr é criada para a tradução
 Crie projetos de tradução para poder executar e gerenciar o fluxo de trabalho de tradução dos recursos do seu idioma principal. Ao criar projetos, você especifica a página no idioma principal que está traduzindo e as cópias de idioma para as quais está executando a tradução:
 
 * A configuração da nuvem da estrutura de integração de tradução associada à página selecionada determina muitas propriedades dos projetos de tradução, como o fluxo de trabalho de tradução a ser usado.
-* Um projeto é criado para cada cópia de idioma selecionada.
+* Um projeto é criado para cada cópia no idioma de destino selecionada.
 * Uma cópia da página selecionada e dos ativos associados é criada e adicionada a cada projeto. Essas cópias são enviadas posteriormente ao provedor para tradução.
 
-É possível especificar que as páginas secundárias da página selecionada também sejam selecionadas. Neste caso, cópias das páginas secundárias também são adicionadas a cada projeto para serem traduzidas. Quando qualquer página secundária é associada a diferentes configurações da estrutura de integração de tradução, o AEM cria projetos adicionais.
+É possível especificar que as páginas filhas da página selecionada também sejam selecionadas. Neste caso, cópias das páginas filhas também são adicionadas a cada projeto para serem traduzidas. Quando qualquer página filha é associada a diferentes configurações da estrutura de integração de tradução, o AEM cria projetos adicionais.
 
 Também é possível [criar projetos de tradução manualmente](#creating-a-translation-project-using-the-projects-console).
 
@@ -69,15 +69,15 @@ Também é possível [criar projetos de tradução manualmente](#creating-a-tran
 
 **Traduções iniciais e atualização de traduções**
 
-O painel de Referências indica se você está atualizando cópias de idioma existentes ou criando a primeira versão das cópias de idioma. Quando existe uma cópia de idioma para a página selecionada, a guia Atualizar cópias de idioma aparece para fornecer acesso aos comandos relacionados ao projeto.
+O painel de Referências indica se você está atualizando cópias de idioma existentes ou criando a primeira versão das cópias de idioma. Quando existe uma cópia no idioma de destino para a página selecionada, a guia Atualizar cópias no idioma de destino aparece para fornecer acesso aos comandos relacionados ao projeto.
 
 ![chlimage_1-239](assets/chlimage_1-239.png)
 
-Depois de traduzir, é possível [revisar a tradução](#reviewing-and-promoting-updated-content) antes de substituir a cópia de idioma por ela. Quando não existe uma cópia de idioma para a página selecionada, a guia Criar e traduzir aparece para fornecer acesso aos comandos relacionados ao projeto.
+Depois de traduzir, é possível [revisar a tradução](#reviewing-and-promoting-updated-content) antes de substituir a cópia no idioma de destino por ela. Quando não existe uma cópia no idioma de destino para a página selecionada, a guia Criar e traduzir aparece para fornecer acesso aos comandos relacionados ao projeto.
 
 ![chlimage_1-240](assets/chlimage_1-240.png)
 
-### Criar projetos de tradução para uma nova cópia de idioma {#create-translation-projects-for-a-new-language-copy}
+### Criar projetos de tradução para uma nova cópia no idioma de destino {#create-translation-projects-for-a-new-language-copy}
 
 1. Use o console de sites para selecionar a página que você está adicionando aos projetos de tradução.
 
@@ -99,7 +99,7 @@ Depois de traduzir, é possível [revisar a tradução](#reviewing-and-promoting
 
 1. Clique em Criar.
 
-### Criar projetos de tradução para uma cópia de idioma existente {#create-translation-projects-for-an-existing-language-copy}
+### Criar projetos de tradução para uma cópia no idioma de destino existente {#create-translation-projects-for-an-existing-language-copy}
 
 1. Use o console de sites para selecionar a página que você está adicionando aos projetos de tradução.
 
@@ -353,7 +353,7 @@ Rejeitar o conteúdo o envia de volta ao fornecedor de tradução, onde ele pode
 
 ## Revisar e promover conteúdo atualizado {#reviewing-and-promoting-updated-content}
 
-Quando o conteúdo for traduzido para uma cópia de idioma existente, revise as traduções, faça alterações se necessário e promova as traduções para movê-lo para a cópia de idioma. É possível revisar arquivos traduzidos quando o trabalho de tradução mostra o status Pronto para revisão.
+Quando o conteúdo for traduzido para uma cópia no idioma de destino existente, revise as traduções, faça alterações se necessário e promova as traduções para movê-lo para a cópia no idioma de destino. É possível revisar arquivos traduzidos quando o trabalho de tradução mostra o status Pronto para revisão.
 
 ![chlimage_1-269](assets/chlimage_1-269.png)
 
@@ -393,11 +393,11 @@ Após concluir o job, ele terá o status Concluído.
 
 ![chlimage_1-272](assets/chlimage_1-272.png)
 
-Arquive um trabalho de tradução depois que ele estiver concluído e você não precisar mais ver os detalhes de status do trabalho. Ao arquivar o trabalho, o bloco Tarefa de tradução é removido do projeto.
+Arquive um trabalho de tradução depois que ele estiver concluído e você não precisar mais ver os detalhes de status. Ao arquivar o trabalho, o bloco Tarefa de tradução é removido do projeto.
 
-## Criar a estrutura de uma cópia de idioma {#creating-the-structure-of-a-language-copy}
+## Criar a estrutura de uma cópia no idioma de destino {#creating-the-structure-of-a-language-copy}
 
-Preencha sua cópia de idioma para que ela tenha conteúdo do idioma principal que você está traduzindo. Antes de preencher a cópia de idioma, é necessário ter [criado a raiz de idioma](/help/sites-administering/tc-prep.md#creating-a-language-root) da cópia do idioma.
+Preencha sua cópia no idioma de destino para que ela tenha conteúdo do idioma principal que você está traduzindo. Antes de preencher a cópia no idioma de destino, é necessário ter [criado a raiz de idioma](/help/sites-administering/tc-prep.md#creating-a-language-root) da cópia do idioma.
 
 1. Use o console Sites para selecionar a raiz do idioma principal que você está usando como a origem. Por exemplo, para traduzir as páginas em inglês do Site de demonstração do Geometrixx, selecione Conteúdo > Site de demonstração do Geometrixx > Inglês.
 1. Na barra de ferramentas, clique em Referências.
@@ -471,7 +471,7 @@ Ao criar manualmente um projeto de tradução, você deve fornecer valores para 
 
 ## Importar um trabalho de tradução {#importing-a-translation-job}
 
-Você pode importar conteúdo traduzido para AEM, por exemplo, quando seu provedor de tradução o envia para você porque não está integrado ao AEM por meio de um conector.
+Você pode importar conteúdo traduzido para o AEM, por exemplo, quando seu provedor de tradução o envia para você porque não está integrado ao AEM por meio de um conector.
 
 1. No menu suspenso do bloco Tarefa de tradução, clique em Importar.
 1. Use a caixa de diálogo do navegador da web para selecionar o arquivo a ser importado.
