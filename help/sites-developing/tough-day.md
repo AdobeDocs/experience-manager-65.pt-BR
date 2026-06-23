@@ -7,9 +7,9 @@ exl-id: ceb9671c-57f9-4d81-94c0-0dbccd4d90a2
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 0dc83f7613a7202658d2d2eda421cb58c7e0092a
 workflow-type: tm+mt
-source-wordcount: '1825'
+source-wordcount: '1838'
 ht-degree: 1%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 ## O que é difícil dia 2 {#what-is-tough-day}
 
-&quot;Dia difícil 2&quot; é um aplicativo que permite testar os limites da sua instância de AEM. Ele pode ser executado imediatamente com o conjunto de testes padrão ou pode ser configurado para atender às suas necessidades de teste. Você pode assistir a [esta gravação](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2017/aem-toughday2-stress-testing-benchmarking-tool.html?lang=pt-BR) para uma apresentação do aplicativo.
+&quot;Dia difícil 2&quot; é um aplicativo que permite testar os limites da sua instância do AEM. Ele pode ser executado imediatamente com o conjunto de testes padrão ou pode ser configurado para atender às suas necessidades de teste.
 
 >[!CAUTION]
 >
@@ -26,7 +26,7 @@ ht-degree: 1%
 
 ## Como executar difícil dia 2 {#how-to-run-tough-day}
 
-Baixe a versão mais recente do Dia Difícil 2 do [Repositório Adobe](https://repo1.maven.org/maven2/com/adobe/qe/toughday2/). Após baixar o aplicativo, é possível executá-lo imediatamente, fornecendo o parâmetro `host`. No exemplo a seguir, a instância AEM é executada localmente para que o valor `localhost` seja usado:
+Baixe a versão mais recente do Dia Difícil 2 do [Repositório do Adobe](https://repo1.maven.org/maven2/com/adobe/qe/toughday2/). Após baixar o aplicativo, é possível executá-lo imediatamente, fornecendo o parâmetro `host`. No exemplo a seguir, a instância do AEM é executada localmente para que o valor `localhost` seja usado:
 
 ```xml
 java -jar toughday2.jar --host=localhost
@@ -363,7 +363,7 @@ Atualmente, o Dia difícil 2 relata nove métricas de teste que você pode avali
 | StdDev&#42; | O desvio padrão. |
 | 90p&#42; | 90 por cento. |
 | 99p&#42; | 99 por cento. |
-| 99,9p&#42; | 99,9 por cento. |
+| 99.9p&#42; | 99,9 por cento. |
 | Taxa de transferência real&#42; | Número de execuções dividido pelo tempo de execução decorrido. |
 
 Essas métricas são gravadas com a ajuda de editores que podem ser adicionados com o parâmetro `add` (de forma semelhante à adição de testes). Atualmente, há duas opções:
