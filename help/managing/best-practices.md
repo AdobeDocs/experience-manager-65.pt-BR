@@ -633,4 +633,4 @@ Além disso, as seguintes seções da documentação do AEM são de especial int
 
 * Documentação relacionada
 
-   * Adobe Experience Cloud - [Planejamento para a Adobe Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/services/core-services.html)
+   * Adobe Experience Cloud - [Planejamento para a Adobe Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/services/core-services.html?lang=pt-BR)
