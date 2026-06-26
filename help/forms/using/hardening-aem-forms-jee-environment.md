@@ -8,9 +8,9 @@ role: Admin,User
 exl-id: 6fb260f9-d0f8-431e-8d4e-535b451e4124
 solution: Experience Manager, Experience Manager Forms
 feature: Document Security,Adaptive Forms
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: b6714ae8f3464ef600c252c7ae5dcc75cbe6610b
 workflow-type: tm+mt
-source-wordcount: '7608'
+source-wordcount: '7949'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ O artigo descreve técnicas de proteção que devem ser aplicadas durante os seg
 
 * **Pré-instalação:** use essas técnicas antes de instalar o AEM Forms no JEE.
 * **Instalação:** use essas técnicas durante o processo de instalação do AEM Forms no JEE.
-* **Post-installation:** Use essas técnicas após a instalação e periodicamente a partir de então.
+* **Pós-instalação:** Use essas técnicas após a instalação e periodicamente a partir de então.
 
 O AEM Forms no JEE é altamente personalizável e pode funcionar em vários ambientes diferentes. Algumas recomendações podem não se ajustar às necessidades de sua organização.
 
@@ -126,7 +126,7 @@ Esta seção descreve técnicas que você pode usar durante o processo de instal
   </tr> 
   <tr> 
    <td><p>Fonte de software</p> </td> 
-   <td><p>Não baixe nem execute o AEM Forms no JEE a partir de fontes não confiáveis.</p> <p>Programas mal-intencionados podem conter código para violar a segurança de várias maneiras, incluindo roubo, modificação e exclusão de dados e negação de serviço. Instale o AEM Forms no JEE a partir do DVD de Adobe ou somente a partir de uma fonte confiável.</p> </td> 
+   <td><p>Não baixe nem execute o AEM Forms no JEE a partir de fontes não confiáveis.</p> <p>Programas mal-intencionados podem conter código para violar a segurança de várias maneiras, incluindo roubo, modificação e exclusão de dados e negação de serviço. Instale o AEM Forms no JEE a partir do DVD do Adobe ou somente a partir de uma fonte confiável.</p> </td> 
   </tr> 
   <tr> 
    <td><p>Partições de disco</p> </td> 
@@ -147,7 +147,7 @@ Esta seção descreve técnicas que você pode usar durante o processo de instal
  </tbody> 
 </table>
 
-## Etapas de instalação do Post {#post-installation-steps}
+## Etapas de pós-instalação {#post-installation-steps}
 
 Depois de instalar o AEM Forms no JEE com êxito, é importante manter o ambiente periodicamente de uma perspectiva de segurança.
 
@@ -174,7 +174,7 @@ Para executar o servidor de aplicativos no qual o AEM Forms no JEE é implantado
 
    >[!NOTE]
    >
-   >Não é possível alterar essa configuração para PDF Generator.
+   >Não é possível alterar essa configuração para o PDF Generator.
 
 1. Selecione **Iniciar** > **Configurações** > **Ferramentas Administrativas** > **Serviços**.
 1. Clique duas vezes no JBoss para AEM Forms no JEE e interrompa o serviço.
@@ -266,7 +266,7 @@ O Configuration Manager usou um servlet implantado em seu servidor de aplicativo
 
 **Bloquear acesso remoto ao Armazenamento Confiável**
 
-O Configuration Manager permite que você carregue uma credencial de extensões do Acrobat Reader DC na loja de confiança do AEM Forms no JEE. Isso significa que o acesso ao Serviço de Credenciais do Armazenamento de Confiança em protocolos remotos (SOAP e EJB) foi habilitado por padrão. Esse acesso não será mais necessário depois que você tiver carregado a credencial de Direitos usando o Configuration Manager ou se decidir usar o Console de Administração posteriormente para gerenciar credenciais.
+O Configuration Manager permite que você faça upload de uma credencial de extensões do Acrobat Reader DC para o AEM Forms no armazenamento de confiança JEE. Isso significa que o acesso ao Serviço de Credenciais do Armazenamento de Confiança em protocolos remotos (SOAP e EJB) foi habilitado por padrão. Esse acesso não será mais necessário depois que você tiver carregado a credencial de Direitos usando o Configuration Manager ou se decidir usar o Console de Administração posteriormente para gerenciar credenciais.
 
 Você pode desabilitar o acesso remoto a todos os serviços de Armazenamento Confiável seguindo as etapas da seção [Desabilitando o acesso remoto não essencial aos serviços](https://helpx.adobe.com/br/aem-forms/6-1/hardening-security/configuring-secure-administration-settings-aem.html#disabling_non_essential_remote_access_to_services).
 
@@ -351,7 +351,7 @@ A tabela a seguir descreve algumas técnicas para proteger o servidor de aplicat
 
 Ao proteger seu banco de dados, você deve implementar as medidas descritas pelo fornecedor do banco de dados. Você deve alocar um usuário do banco de dados com as permissões de banco de dados mínimas necessárias concedidas para uso pelo AEM Forms no JEE. Por exemplo, não use uma conta com privilégios de administrador de banco de dados.
 
-No Oracle, a conta do banco de dados que você usa precisa apenas dos privilégios CONNECT, RESOURCE e CREATE VIEW. Para requisitos semelhantes em outros bancos de dados, consulte [Preparando para instalar o AEM Forms no JEE (Servidor Único)](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_64_br).
+No Oracle, a conta de banco de dados usada precisa apenas dos privilégios CONNECT, RESOURCE e CREATE VIEW. Para requisitos semelhantes em outros bancos de dados, consulte [Preparando para instalar o AEM Forms no JEE (Servidor Único)](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_64_br).
 
 #### Configurando segurança integrada para SQL Server no Windows para JBoss {#configuring-integrated-security-for-sql-server-on-windows-for-jboss}
 
@@ -404,7 +404,7 @@ O schema do banco de dados do AEM Forms contém informações confidenciais sobr
 
 Como precaução adicional, você deve considerar o uso de ferramentas específicas do fornecedor do banco de dados para criptografar colunas em tabelas que contenham os seguintes dados:
 
-* Chaves do documento Rights Management
+* Chaves do documento do Rights Management
 * Chave de criptografia do PIN HSM do armazenamento de confiança
 * Hashes de Senha de Usuário Local
 
@@ -470,7 +470,7 @@ Você pode permitir que um usuário não administrador use o PDF Generator. Norm
 
 >[!NOTE]
 >
-> É recomendável usar o comando &quot;Ctrl + C&quot; para reiniciar o SDK. Reiniciar o SDK do AEM usando métodos alternativos, por exemplo, parar processos Java, pode levar a inconsistências no ambiente de desenvolvimento do AEM.
+> É recomendável usar o comando &#39;Ctrl + C&#39; para reiniciar o SDK. Reiniciar o AEM SDK usando métodos alternativos, por exemplo, parar processos Java, pode levar a inconsistências no ambiente de desenvolvimento do AEM.
 
 ## Configuração do AEM Forms no JEE para acesso fora da empresa {#configuring-aem-forms-on-jee-for-access-beyond-the-enterprise}
 
@@ -498,13 +498,13 @@ Determinados URLs são destacados como aplicações Web voltadas para o usuário
  <tbody>
   <tr> 
    <td><p>/ReaderExtensions/*</p> </td> 
-   <td><p>aplicativo web do usuário final de extensões do Acrobat Reader DC para aplicar direitos de uso a documentos do PDF</p> </td> 
+   <td><p>Aplicativo web do usuário final de extensões do Acrobat Reader DC para aplicar direitos de uso a documentos do PDF</p> </td> 
    <td><p>Sim</p> </td> 
    <td><p>Sim</p> </td> 
   </tr> 
   <tr> 
    <td><p>/edc/*</p> </td> 
-   <td><p>aplicativo web de usuário final do Rights Management</p> </td> 
+   <td><p>aplicativo web do usuário final do Rights Management</p> </td> 
    <td><p>Sim</p> </td> 
    <td><p>Sim</p> </td> 
   </tr> 
@@ -516,7 +516,7 @@ Determinados URLs são destacados como aplicações Web voltadas para o usuário
   </tr> 
   <tr> 
    <td><p>/pdfgui/*</p> </td> 
-   <td><p>aplicativo web de administração de PDF Generator</p> </td> 
+   <td><p>aplicativo web de administração do PDF Generator</p> </td> 
    <td><p>Sim</p> </td> 
    <td><p>Sim</p> </td> 
   </tr> 
@@ -552,7 +552,7 @@ Determinados URLs são destacados como aplicações Web voltadas para o usuário
   </tr> 
   <tr> 
    <td><p>/edc/admin/*</p> </td> 
-   <td><p>aplicativo web de administração de Rights Management</p> </td> 
+   <td><p>aplicativo web de administração do Rights Management</p> </td> 
    <td><p>Sim</p> </td> 
    <td><p>Não</p> </td> 
   </tr> 
@@ -600,7 +600,7 @@ Determinados URLs são destacados como aplicações Web voltadas para o usuário
   </tr> 
   <tr> 
    <td><p>/FormServer/GetImage</p> <p>Servlet</p> </td> 
-   <td><p>Usado para obter o JavaScript durante a transformação de HTML</p> </td> 
+   <td><p>Usado para buscar JavaScript durante a transformação do HTML</p> </td> 
    <td><p>Não</p> </td> 
    <td><p>Não</p> </td> 
   </tr> 
@@ -654,7 +654,7 @@ Determinados URLs são destacados como aplicações Web voltadas para o usuário
   </tr> 
   <tr> 
    <td><p>/DocumentManager/*</p> </td> 
-   <td><p>Upload e download de documentos que devem ser processados ao acessar endpoints remotos, endpoints WSDL de SOAP e o SDK do Java sobre transporte SOAP ou transporte EJB com documentos HTTP ativados.</p> </td> 
+   <td><p>Upload e download de documentos que devem ser processados ao acessar endpoints remotos, endpoints WSDL do SOAP e o transporte do Java SDK sobre SOAP ou transporte EJB com documentos HTTP ativados.</p> </td> 
    <td><p>Sim</p> </td> 
    <td><p>Sim</p> </td> 
   </tr> 
@@ -665,7 +665,7 @@ Determinados URLs são destacados como aplicações Web voltadas para o usuário
 
 Um ataque de falsificação de solicitação entre sites (CSRF) explora a confiança que um site tem para o usuário, para transmitir comandos não autorizados e não intencionais pelo usuário. O ataque é configurado incluindo um link ou um script em uma página da Web, ou um URL em uma mensagem de email, para acessar outro site para o qual o usuário já foi autenticado.
 
-Por exemplo, você pode estar conectado ao Console de administração enquanto navega simultaneamente por outro site. Uma das páginas da Web pode incluir uma tag de imagem de HTML com um atributo `src` direcionado a um script do lado do servidor no site da vítima. Ao usar o mecanismo de autenticação de sessão baseado em cookies fornecido pelos navegadores da Web, o site de ataque pode enviar solicitações mal-intencionadas para esse script do lado do servidor vítima, disfarçado de usuário legítimo. Para obter mais exemplos, consulte [https://owasp.org/www-community/attacks/csrf#Examples](https://owasp.org/www-community/attacks/csrf#Examples).
+Por exemplo, você pode estar conectado ao Console de administração enquanto navega simultaneamente por outro site. Uma das páginas da Web pode incluir uma tag de imagem do HTML com um atributo `src` direcionado a um script do lado do servidor no site da vítima. Ao usar o mecanismo de autenticação de sessão baseado em cookies fornecido pelos navegadores da Web, o site de ataque pode enviar solicitações mal-intencionadas para esse script do lado do servidor vítima, disfarçado de usuário legítimo. Para obter mais exemplos, consulte [https://owasp.org/www-community/attacks/csrf#Examples](https://owasp.org/www-community/attacks/csrf#Examples).
 
 As seguintes características são comuns ao CSRF:
 
@@ -690,10 +690,10 @@ O processo de Filtragem de referenciador pode ser descrito da seguinte maneira:
    1. Se for POST, o Forms Server executará a verificação do cabeçalho do Referenciador.
    1. Se for GET, o Forms Server ignorará a verificação do Referenciador, a menos que *CSRF_CHECK_GETS* esteja definido como true, nesse caso, ele executará a verificação do cabeçalho do Referenciador. O *CSRF_CHECK_GETS* está especificado no arquivo *web.xml* do seu aplicativo.
 
-1. O Forms Server verifica se o URI solicitado existe na inclui na lista de permissões:
+1. O Forms Server verifica se o URI solicitado existe no incluo na lista de permissões:
 
-   1. Incluir na lista de permissões Se o URI for selecionado, o servidor aceitará a solicitação.
-   1. Incluir na lista de permissões Se o URI solicitado não for reconhecido, o servidor recuperará o Referenciador da solicitação.
+   1. Se o URI for selecionado, o servidor aceitará a solicitação.
+   1. Se o URI solicitado não for reconhecido, o servidor recuperará o Referenciador da solicitação.
 
 1. Se houver um Referenciador na solicitação, o servidor verificará se ele é um Referenciador permitido. Se for permitido, o servidor verificará uma Exceção do referenciador:
 
@@ -707,13 +707,13 @@ O processo de Filtragem de referenciador pode ser descrito da seguinte maneira:
 
 ### Gerenciando a filtragem do referenciador {#managing-referer-filtering}
 
-O AEM Forms no JEE fornece um Filtro referenciador para especificar o Referenciador que tem acesso permitido aos recursos do servidor. Por padrão, o filtro Referenciador não filtra solicitações que usam um método HTTP seguro, por exemplo, GET, a menos que *CSRF_CHECK_GETS* esteja definido como verdadeiro. Se o número da porta de uma entrada Referenciador permitido for definido como 0, o AEM Forms no JEE permitirá todas as solicitações com Referenciador desse host, independentemente do número da porta. Se nenhum número de porta for especificado, somente as solicitações da porta padrão 80 (HTTP) ou porta 443 (HTTPS) serão permitidas. A Filtragem de referenciador será desativada se todas as entradas na lista Referenciador permitido forem excluídas.
+O AEM Forms no JEE fornece um Filtro referenciador para especificar o Referenciador que tem acesso permitido aos recursos do servidor. Por padrão, o filtro Referenciador não filtra solicitações que usam um método HTTP seguro, por exemplo, GET, a menos que *CSRF_CHECK_GETS* esteja definido como true. Se o número da porta de uma entrada Referenciador permitido for definido como 0, o AEM Forms no JEE permitirá todas as solicitações com Referenciador desse host, independentemente do número da porta. Se nenhum número de porta for especificado, somente as solicitações da porta padrão 80 (HTTP) ou porta 443 (HTTPS) serão permitidas. A Filtragem de referenciador será desativada se todas as entradas na lista Referenciador permitido forem excluídas.
 
-Quando você instala os Serviços de documento pela primeira vez, a lista Referenciador permitido é atualizada com o endereço do servidor no qual os Serviços de documento estão instalados. As entradas do servidor incluem o nome do servidor, o endereço IPv4, o endereço IPv6, se IPv6 estiver habilitado, o endereço de loopback e uma entrada de host local. Os nomes adicionados à lista Referenciador permitido são retornados pelo sistema operacional Host. Por exemplo, um servidor com endereço IP 10.40.54.187 incluirá as seguintes entradas: `https://server-name:0, https://10.40.54.187:0, https://127.0.0.1:0, http://localhost:0`. Para qualquer nome não qualificado retornado pelo sistema operacional do Host (nomes que não têm endereço IPv4, endereço IPv6 ou nome de domínio qualificado), a inclui na lista de permissões não é atualizada. Modifique a lista Referenciador permitido para se adequar ao seu ambiente empresarial. Não implante o Forms Server no ambiente de produção com a lista de Referenciadores permitidos padrão. Após modificar qualquer um dos Referenciadores Permitidos, Exceções de Referenciador ou URIs, reinicie o servidor para que as alterações entrem em vigor.
+Quando você instala os Serviços de documento pela primeira vez, a lista Referenciador permitido é atualizada com o endereço do servidor no qual os Serviços de documento estão instalados. As entradas do servidor incluem o nome do servidor, o endereço IPv4, o endereço IPv6, se IPv6 estiver habilitado, o endereço de loopback e uma entrada de host local. Os nomes adicionados à lista Referenciador permitido são retornados pelo sistema operacional Host. Por exemplo, um servidor com endereço IP 10.40.54.187 incluirá as seguintes entradas: `https://server-name:0, https://10.40.54.187:0, https://127.0.0.1:0, http://localhost:0`. Para qualquer nome não qualificado retornado pelo sistema operacional Host (nomes que não têm endereço IPv4, endereço IPv6 ou nome de domínio qualificado), o incluo na lista de permissões não é atualizado. Modifique a lista Referenciador permitido para se adequar ao seu ambiente empresarial. Não implante o Forms Server no ambiente de produção com a lista de Referenciadores permitidos padrão. Após modificar qualquer um dos Referenciadores Permitidos, Exceções de Referenciador ou URIs, reinicie o servidor para que as alterações entrem em vigor.
 
 **Gerenciando a lista de Referenciadores Permitidos**
 
-Você pode gerenciar a lista Referenciador permitido na Interface de gerenciamento de usuários do Console de administração. A Interface de gerenciamento de usuários fornece a funcionalidade de criar, editar ou excluir a lista. Consulte a seção * [Impedindo ataques CSRF](/help/forms/using/admin-help/preventing-csrf-attacks.md)* da *ajuda administrativa* para obter mais informações sobre como trabalhar com a lista de Referenciadores permitidos.
+Você pode gerenciar a lista Referenciador permitido na Interface de gerenciamento de usuários do Console de administração. A Interface de gerenciamento de usuários fornece a funcionalidade de criar, editar ou excluir a lista. Consulte a seção *[Impedindo ataques CSRF](/help/forms/using/admin-help/preventing-csrf-attacks.md)* da *ajuda administrativa* para obter mais informações sobre como trabalhar com a lista de Referenciadores permitidos.
 
 **Gerenciando Exceção de Referenciador Permitido e listas de URI Permitido**
 
@@ -750,7 +750,7 @@ Inclua o argumento JAVA `-Dlc.um.csrffilter.disabled=true` no script de iniciali
 
 Você pode ter criado arquivos WAR personalizados para trabalhar com o AEM Forms no JEE para atender aos requisitos da sua empresa. Para ativar a Filtragem de referenciador para seus arquivos WAR personalizados, inclua ***adobe-usermanager-client.jar*** no caminho de classe para o WAR e inclua uma entrada de filtro no arquivo * web.xml* com os seguintes parâmetros:
 
-**CSRF_CHECK_GETS** controla a verificação do Referenciador em solicitações GET. Se esse parâmetro não estiver definido, o valor padrão será definido como false. Inclua esse parâmetro somente se desejar filtrar suas solicitações do GET.
+**CSRF_CHECK_GETS** controla a verificação do Referenciador nas solicitações GET. Se esse parâmetro não estiver definido, o valor padrão será definido como false. Inclua esse parâmetro somente se desejar filtrar suas solicitações GET.
 
 **CSRF_ALLOWED_REFERER_EXCEPTIONS** é a identificação da lista de Exceções de Referenciador Permitidas. O Filtro referenciador impede que as solicitações originadas de referenciadores na lista identificada pela ID da lista chamem qualquer recurso no Forms Server.
 
@@ -808,6 +808,20 @@ Se solicitações legítimas do servidor estiverem sendo bloqueadas pelo filtro 
 * Se o cliente puder trabalhar em um navegador, experimente esse modelo de implantação.
 * Como último recurso, é possível adicionar o recurso à lista de URIs permitidos. Essa não é uma configuração recomendada.
 
+### Reduzindo problemas de serialização {#mitigating-serialization-issues}
+
+Os ataques de desserialização Java exploram aplicativos que desserializam dados não confiáveis, potencialmente permitindo a execução remota de código no servidor. O AEM Forms no JEE inclui um firewall de desserialização que executa uma verificação de comprovação antes de qualquer tentativa de desserializar um objeto. A verificação testa nomes de classe em relação a um incluo na lista de permissões de estilo de firewall, ou ambos, e rejeita classes conhecidas como exploráveis por meio de ataques de desserialização.
+
+Em instalações que executam o **JDK 11 ou posterior**, essa proteção é ativada pela filtragem de serialização nativa da plataforma e não requer etapas manuais. Nas instalações que executam o **JDK 8**, a filtragem de serialização nativa não é eficaz, portanto, o agente NotSoSerial deve ser anexado explicitamente ao JVM na inicialização.
+
+Verifique se a proteção está ativa navegando até a verificação de integridade do filtro de desserialização:
+
+```text
+https://<server>:<port>/system/console/healthcheck?tags=deserialization
+```
+
+Se a verificação de integridade relatar falha em uma instância do JDK 8, anexe e configure o agente conforme descrito em [Reduzindo problemas de serialização no AEM Forms JEE](/help/forms/using/mitigating-serialization-issues-forms-jee.md).
+
 ## Configuração de rede segura {#secure-network-configuration}
 
 Esta seção descreve os protocolos e portas exigidos pelo AEM Forms no JEE e fornece recomendações para implantar o AEM Forms no JEE em uma configuração de rede segura.
@@ -829,7 +843,7 @@ Ao configurar uma arquitetura de rede segura conforme descrito na seção anteri
    <td> 
     <ul> 
      <li><p>O navegador exibe o Configuration Manager e os aplicativos Web do usuário final</p> </li> 
-     <li><p>Todas as conexões SOAP</p> </li> 
+     <li><p>Todas as conexões do SOAP</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -837,15 +851,15 @@ Ao configurar uma arquitetura de rede segura conforme descrito na seção anteri
    <td> 
     <ul> 
      <li><p>Aplicativos cliente de serviços Web, como aplicativos .NET</p> </li> 
-     <li><p>A Adobe Reader® usa SOAP para os serviços Web do AEM Forms no servidor JEE</p> </li> 
-     <li><p>aplicativos Adobe Flash® usam SOAP para serviços Web do Forms Server</p> </li> 
-     <li><p>Chamadas de SDK do AEM Forms no JEE quando usadas no modo SOAP</p> </li> 
+     <li><p>O Adobe Reader® usa o SOAP para AEM Forms em serviços da Web de servidor JEE</p> </li> 
+     <li><p>Os aplicativos Adobe Flash® usam SOAP para os serviços Web do Forms Server</p> </li> 
+     <li><p>Chamadas de AEM Forms no JEE SDK quando usadas no modo SOAP</p> </li> 
      <li><p>Ambiente de design do Workbench</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td><p>RMI</p> </td> 
-   <td><p>Chamadas de AEM Forms no SDK JEE quando usadas no modo Enterprise JavaBeans (EJB)</p> </td> 
+   <td><p>Chamadas AEM Forms em SDK JEE quando usadas no modo Enterprise JavaBeans (EJB)</p> </td> 
   </tr> 
   <tr> 
    <td><p>IMAP/POP3</p> </td> 
@@ -881,7 +895,7 @@ Ao configurar uma arquitetura de rede segura conforme descrito na seção anteri
   </tr> 
   <tr> 
    <td><p>AMF</p> </td> 
-   <td><p>aplicativos de Flash Adobe, em que os serviços do servidor AEM Forms em JEE são configurados com um terminal Remoting</p> </td> 
+   <td><p>Aplicativos Adobe Flash, em que os serviços de servidor do AEM Forms no JEE são configurados com um endpoint de comunicação remota</p> </td> 
   </tr> 
   <tr> 
    <td><p>JMX</p> </td> 
