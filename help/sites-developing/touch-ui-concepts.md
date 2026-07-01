@@ -1,6 +1,6 @@
 ---
 title: Conceitos da interface do usuário habilitada para toque do Adobe Experience Manager
-description: Com o Adobe Experience Manager 5.6, o Adobe apresentou uma nova interface otimizada para toque com design responsivo para o ambiente de criação
+description: Com o Adobe Experience Manager 5.6, a Adobe apresentou uma nova interface otimizada para toque com design responsivo para o ambiente de criação
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
@@ -12,7 +12,7 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '2147'
+source-wordcount: '2238'
 ht-degree: 0%
 
 ---
@@ -23,14 +23,14 @@ O Adobe Experience Manager (AEM) apresenta uma interface habilitada para toque c
 
 >[!NOTE]
 >
->A interface habilitada para toque é a interface padrão para AEM. A interface clássica foi descontinuada com o AEM 6.4.
+>A interface habilitada para toque é a interface padrão do AEM. A interface clássica foi descontinuada pelo AEM 6.4.
 
 A interface habilitada para toque inclui:
 
 * O cabeçalho do conjunto que:
    * Mostra o logotipo
    * Fornece um link para a Navegação global
-   * Fornece link para outras ações genéricas, como Pesquisa, Ajuda, Soluções Experience Cloud, Notificações e Configurações do Usuário.
+   * Fornece link para outras ações genéricas, como Pesquisa, Ajuda, Soluções da Experience Cloud, Notificações e Configurações do usuário.
 * O painel esquerdo (exibido quando necessário e oculto), que pode mostrar:
    * Linha do tempo
    * Referências
@@ -53,9 +53,9 @@ A interface habilitada para toque inclui:
 >
 >Quase toda a funcionalidade do AEM foi transferida para a interface habilitada para toque. No entanto, em alguns casos limitados, a funcionalidade reverte para a interface clássica. Consulte [Status do Recurso da Interface para Toque](/help/release-notes/touch-ui-features-status.md) para obter mais informações.
 
-A interface habilitada para toque foi projetada pelo Adobe para fornecer consistência na experiência do usuário em vários produtos. Tem por base:
+A interface habilitada para toque foi projetada pela Adobe para fornecer consistência na experiência do usuário em vários produtos. Tem por base:
 
-* **Interface do usuário do Coral** (CUI) uma implementação do estilo visual de Adobe para a interface do usuário habilitada para toque. A interface Coral fornece tudo o que seu produto/projeto/aplicativo Web precisa para adotar o estilo visual da interface.
+* **Interface do usuário do Coral** (CUI) uma implementação do estilo visual do Adobe para a interface do usuário habilitada para toque. A interface Coral fornece tudo o que seu produto/projeto/aplicativo Web precisa para adotar o estilo visual da interface.
 * Os componentes da **interface do Granite** são criados com a interface do Coral.
 
 Os princípios básicos da interface habilitada para toque são:
@@ -68,17 +68,17 @@ Os princípios básicos da interface habilitada para toque são:
 * Incluir testes incorporados
 * Design ascendente para garantir que esses princípios sejam aplicados a todos os elementos e componentes
 
-Para obter mais uma visão geral da estrutura da interface habilitada para toque, consulte [Estrutura da interface habilitada para toque por AEM](/help/sites-developing/touch-ui-structure.md).
+Para obter mais uma visão geral da estrutura da interface habilitada para toque, consulte [Estrutura da interface habilitada para toque do AEM](/help/sites-developing/touch-ui-structure.md).
 
 ## Pilha de tecnologia AEM {#aem-technology-stack}
 
-O AEM usa a plataforma Granite como base e a plataforma Granite inclui, entre outras coisas, o repositório de conteúdo Java™.
+O AEM usa a plataforma Granite como base e a plataforma Granite inclui, entre outras coisas, o Repositório de conteúdo Java™.
 
 ![chlimage_1-80](assets/chlimage_1-80.png)
 
 ## Granite {#granite}
 
-O Granite é uma pilha da Web aberta do Adobe, que fornece vários componentes, incluindo:
+O Granite é a pilha da Web aberta do Adobe, que fornece vários componentes, incluindo:
 
 * Um inicializador de aplicativos
 * Uma estrutura OSGi na qual tudo é implantado
@@ -92,7 +92,7 @@ O Granite é uma pilha da Web aberta do Adobe, que fornece vários componentes, 
 >
 >O Granite é executado como um projeto de desenvolvimento aberto no Adobe: contribuições para o código, discussões e problemas são feitas em toda a empresa.
 >
->No entanto, o Granite **não** é um projeto de código aberto. É fortemente baseado em vários projetos de código aberto (Apache Sling, Felix, Jackrabbit, e Lucene em particular), mas Adobe traça uma linha clara entre o que é público e o que é interno.
+>No entanto, o Granite **não** é um projeto de código aberto. É fortemente baseado em vários projetos de código aberto (Apache Sling, Felix, Jackrabbit, e Lucene em particular), mas o Adobe estabelece uma linha clara entre o que é público e o que é interno.
 
 ## Interface do Granite {#granite-ui}
 
@@ -124,7 +124,7 @@ A interface do Granite:
 
 ![chlimage_1-82](assets/chlimage_1-82.png)
 
-* [Componentes de base da interface do Granite](#granite-ui-foundation-components)
+* [Componentes do Granite UI Foundation](#granite-ui-foundation-components)
 Essa biblioteca de componentes de base pode ser usada ou estendida por outras bibliotecas.
 * [Componentes de administração da interface de usuário do Granite](#granite-ui-administration-components)
 
@@ -139,7 +139,7 @@ A comunicação cliente-servidor na interface do Granite consiste em hipertexto,
 
 #### Lado do cliente {#client-side}
 
-Isso usa uma extensão do vocabulário HTML, fornecida para que o autor possa expressar sua intenção de criar um aplicativo web interativo. Esta é uma abordagem semelhante para [WAI-ARIA](https://www.w3.org/TR/wai-aria/) e [microformatos](https://microformats.org/).
+Isso usa uma extensão do vocabulário do HTML, fornecida para que o autor possa expressar sua intenção de criar um aplicativo Web interativo. Esta é uma abordagem semelhante para [WAI-ARIA](https://www.w3.org/TR/wai-aria/) e [microformatos](https://microformats.org/).
 
 Consiste principalmente em uma coleção de padrões de interação (por exemplo, envio assíncrono de um formulário) que são interpretados por códigos JS e CSS, executados no lado do cliente. A função do lado do cliente é aprimorar a marcação (fornecida como o custo de hipermídia pelo servidor) para interatividade.
 
@@ -210,11 +210,11 @@ Os componentes de base podem ser encontrados em:
 
 `/libs/granite/ui/components/foundation`
 
-Esta biblioteca contém um componente de interface do usuário do Granite para cada elemento Coral. Um componente é orientado por conteúdo e sua configuração fica no repositório. Isso permite compor um aplicativo de interface do usuário do Granite sem gravar a marcação HTML manualmente.
+Esta biblioteca contém um componente de interface do usuário do Granite para cada elemento Coral. Um componente é orientado por conteúdo e sua configuração fica no repositório. Isso permite compor um aplicativo de interface do usuário do Granite sem gravar a marcação do HTML manualmente.
 
 Finalidade:
 
-* Modelo de componente para elementos de HTML
+* Modelo de componentes para HTML Elements
 * Composição do componente
 * Teste automático de unidade e funcionalidade
 
@@ -245,14 +245,14 @@ Ao atualizar o código ExtJS para usar a interface do Granite, a lista a seguir 
 | `pathfield, paragraphreference` | `granite/ui/components/foundation/form/pathbrowser` |
 | `selection` | `granite/ui/components/foundation/form/select` |
 | `sizefield` | `cq/gui/components/authoring/dialog/sizefield` |
-| `tags` | `granite/ui/components/foundation/form/autocomplete` `cq/gui/components/common/datasources/tags` |
+| `tags` | `granite/ui/components/foundation/form/autocomplete`&#x200B;`cq/gui/components/common/datasources/tags` |
 | `textarea` | `granite/ui/components/foundation/form/textarea` |
 | `textfield` | `granite/ui/components/foundation/form/textfield` |
 
 | **Tipo de nó** | **Tipo de recurso de interface do Granite** |
 |---|---|
 | `cq:WidgetCollection` | `granite/ui/components/foundation/container` |
-| `cq:TabPanel` | `granite/ui/components/foundation/container` `granite/ui/components/foundation/layouts/tabs` |
+| `cq:TabPanel` | `granite/ui/components/foundation/container`&#x200B;`granite/ui/components/foundation/layouts/tabs` |
 | `cq:panel` | `granite/ui/components/foundation/container` |
 
 ### Componentes de administração da interface de usuário do Granite {#granite-ui-administration-components}
@@ -278,18 +278,18 @@ Implementação:
 CoralUI.pdf
 
 [Obter arquivo](assets/coralui.pdf)
-A CUI (Coral UI) é uma implementação do estilo visual Adobe para a interface habilitada para toque projetada para fornecer consistência na experiência do usuário em vários produtos. A interface do usuário do Coral fornece tudo o que é necessário para adotar o estilo visual usado no ambiente de criação.
+A interface do usuário Coral (CUI) é uma implementação do estilo visual do Adobe para interface habilitada para toque projetada para fornecer consistência na experiência do usuário em vários produtos. A interface do usuário do Coral fornece tudo o que é necessário para adotar o estilo visual usado no ambiente de criação.
 
 >[!CAUTION]
 >
->A Coral UI é uma biblioteca de interface do usuário disponibilizada para clientes AEM para a criação de aplicativos e interfaces da Web dentro dos limites do uso licenciado do produto.
+>A Coral UI é uma biblioteca de interface do usuário disponibilizada para clientes do AEM para a criação de aplicativos e interfaces da Web dentro dos limites do uso licenciado do produto.
 >
 >O uso da interface do Coral só é permitido:
 >
 >
->* Quando tiver sido enviado e empacotado com AEM.
+>* Quando tiver sido enviado e fornecido com o AEM.
 >* Para uso ao estender a interface do usuário existente do ambiente de criação.
->* material de apoio, anúncios e apresentações da Adobe Corporate.
+>* material de apoio, anúncios e apresentações corporativos da Adobe.
 >* A interface do usuário dos aplicativos da marca Adobe (a fonte não deve estar prontamente disponível para outros usos).
 >* Com pequenas personalizações.
 >
@@ -297,20 +297,20 @@ A CUI (Coral UI) é uma implementação do estilo visual Adobe para a interface 
 >
 >* Documentos e outros itens não relacionados ao Adobe.
 >* Ambientes de criação de conteúdo (em que os itens anteriores possam ser gerados por outros).
->* Aplicativos/componentes/páginas da Web que não estão claramente conectados ao Adobe.
+>* Aplicativos/componentes/páginas da Web que não estejam claramente conectados ao Adobe.
 >
 
 A interface do Coral é uma coleção de blocos fundamentais para o desenvolvimento de aplicativos web.
 
 ![chlimage_1-84](assets/chlimage_1-84.png)
 
-Projetado para ser modular desde o início, cada módulo forma uma camada distinta com base em sua função principal. Embora as camadas tenham sido projetadas para suportar umas às outras, elas também podem ser usadas independentemente, se necessário. Isso permite implementar a experiência do usuário do Coral em qualquer ambiente com capacidade para HTML.
+Projetado para ser modular desde o início, cada módulo forma uma camada distinta com base em sua função principal. Embora as camadas tenham sido projetadas para suportar umas às outras, elas também podem ser usadas independentemente, se necessário. Isso permite implementar a experiência do usuário do Coral em qualquer ambiente compatível com o HTML.
 
-Com a interface do Coral, não é obrigatório usar um modelo e/ou plataforma de desenvolvimento específico. O objetivo principal do Coral é fornecer marcação de HTML5 unificada e limpa, independentemente do método real usado para emitir essa marcação. Isso pode ser usado para renderização do lado do cliente ou do servidor, templates, JSP, PHP ou até mesmo aplicativos RIA de Flash de Adobe - para citar apenas alguns.
+Com a interface do Coral, não é obrigatório usar um modelo e/ou plataforma de desenvolvimento específico. O objetivo principal do Coral é fornecer marcação HTML5 unificada e limpa, independentemente do método real usado para emitir essa marcação. Isso pode ser usado para renderização no cliente ou no servidor, templates, JSP, PHP ou até mesmo aplicativos Adobe Flash RIA - para citar apenas alguns.
 
-### Elementos de HTML - A Camada de Marcação {#html-elements-the-markup-layer}
+### Elementos HTML - A Camada de Marcação {#html-elements-the-markup-layer}
 
-Os elementos HTML fornecem uma aparência comum para todos os elementos básicos da interface do usuário (incluindo barra de navegação, botão, menu, painel, entre outros).
+Os elementos do HTML fornecem uma aparência comum para todos os elementos básicos da interface do usuário (incluindo barra de navegação, botão, menu, painel, entre outros).
 
 No nível mais básico, um elemento HTML é uma tag HTML com um nome de classe dedicado. Elementos mais complexos podem ser compostos de várias tags, aninhadas entre si (de uma maneira específica).
 
@@ -360,7 +360,7 @@ Os valores reais são definidos em um arquivo de variável LESS (a seguinte extr
 
 ### Plug-ins de elementos {#element-plugins}
 
-Muitos dos elementos de HTML precisam exibir algum tipo de comportamento dinâmico, como menus pop-up de abertura e fechamento. Essa é a função dos plug-ins de elementos, que realizam essas tarefas manipulando o DOM usando o JavaScript.
+Muitos dos elementos do HTML precisam exibir algum tipo de comportamento dinâmico, como menus pop-up de abertura e fechamento. Essa é a função dos plug-ins de elementos, que realizam essas tarefas manipulando o DOM usando o JavaScript.
 
 Um plug-in pode ser:
 
@@ -385,7 +385,7 @@ O mesmo conceito é usado para implementar a validação de formulários. Para u
 
 Finalidade:
 
-* Fornecer comportamento dinâmico para elementos de HTML
+* Fornecer comportamento dinâmico para Elementos do HTML
 * Não é possível fornecer layouts personalizados com CSS puro
 * Executar validação
 * Executar manipulação de DOM avançada
@@ -435,7 +435,7 @@ O plug-in `cardLayout` apresenta os elementos `UL` incluídos com base em suas r
 
 Um widget combina um ou mais elementos básicos com um plug-in do JavaScript para formar elementos de interface do usuário de &quot;nível superior&quot;. Eles podem implementar comportamentos mais complexos e também uma aparência mais complexa do que um único elemento pode oferecer. Bons exemplos são o seletor de tags ou os widgets do painel.
 
-Um widget pode acionar e ouvir eventos personalizados para cooperar com outros widgets na página. Alguns widgets são widgets nativos do jQuery que usam os elementos HTML Coral.
+Um widget pode acionar e ouvir eventos personalizados para cooperar com outros widgets na página. Alguns widgets são widgets nativos do jQuery que usam os elementos Coral HTML.
 
 Finalidade:
 
@@ -489,7 +489,7 @@ Esta biblioteca é uma coleção de plug-ins auxiliares e/ou funções do JavaSc
 
 Isso inclui a manipulação de XSS e o barramento de evento.
 
-Embora os plug-ins e widgets do elemento HTML possam depender da funcionalidade fornecida pela biblioteca de utilitários, esta não pode ter nenhuma dependência rígida em relação aos elementos nem aos próprios widgets.
+Embora os plug-ins e widgets do elemento HTML possam depender da funcionalidade fornecida pela biblioteca de utilitários, a biblioteca de utilitários não pode ter nenhuma dependência rígida nos elementos nem nos próprios widgets.
 
 Finalidade:
 

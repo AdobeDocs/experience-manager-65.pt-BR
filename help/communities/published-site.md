@@ -12,19 +12,19 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1195'
+source-wordcount: '1210'
 ht-degree: 0%
 
 ---
 
 # Experimente o site publicado {#experience-the-published-site}
 
-## Navegar até o novo site no Publish {#browse-to-new-site-on-publish}
+## Navegar até o novo site em Publicar {#browse-to-new-site-on-publish}
 
 Agora que o site de comunidades recém-criado foi publicado, navegue até o URL exibido ao criar o site, mas no servidor de publicação, por exemplo:
 
 * URL do autor = https://localhost:4502/content/sites/engage/en.html
-* URL do Publish = https://localhost:4503/content/sites/engage/en.html
+* Publicar URL = https://localhost:4503/content/sites/engage/en.html
 
 Para minimizar a confusão sobre qual membro está conectado no autor e na publicação, é recomendável usar navegadores diferentes para cada instância.
 
@@ -55,7 +55,7 @@ Uma limitação conhecida expõe o conteúdo do site da comunidade para visitant
 
 Para proteger o conteúdo do site da comunidade do acesso de usuários anônimos por meio de conteúdo jcr e json, siga estas etapas:
 
-1. Na instância do autor do AEM, acesse https:// hostname:port/editor.html/content/site/sitename.html.
+1. Na instância do AEM Author, acesse https:// hostname:port/editor.html/content/site/sitename.html.
 
    >[!NOTE]
    >
@@ -72,13 +72,13 @@ Para proteger o conteúdo do site da comunidade do acesso de usuários anônimos
    ![autenticação de site](assets/site-authentication.png)
 
 1. Adicione o caminho da página de logon. Por exemplo, **/content/....../GetStarted**.
-1. Publish na página.
+1. Publique a página.
 
 ## Membro de comunidade confiável {#trusted-community-member}
 
-Esta experiência supõe que Aaron McDonald[&#128279;](/help/communities/tutorials.md#demo-users) recebeu as funções de [gerente e moderador da comunidade](/help/communities/create-site.md#roles).  Caso contrário, retorne ao ambiente de criação para [modificar as configurações do site](/help/communities/sites-console.md#modifying-site-properties) e selecione Aaron McDonald como gerente e moderador da comunidade.
+Esta experiência supõe que Aaron McDonald[&#128279;](/help/communities/tutorials.md#demo-users) recebeu as funções de [gerente e moderador da comunidade](/help/communities/create-site.md#roles). Caso contrário, retorne ao ambiente de criação para [modificar as configurações do site](/help/communities/sites-console.md#modifying-site-properties) e selecione Aaron McDonald como gerente e moderador da comunidade.
 
-No canto superior direito, selecione `Log in` e faça logon com nome de usuário (aaron.mcdonald@mailinator.com) e senha (senha). Observe a capacidade de fazer logon com as credenciais do Twitter ou da Facebook.
+No canto superior direito, selecione `Log in` e faça logon com nome de usuário (aaron.mcdonald@mailinator.com) e senha (senha). Observe a capacidade de fazer logon com credenciais do Twitter ou do Facebook.
 
 ![logon](assets/login.png)
 

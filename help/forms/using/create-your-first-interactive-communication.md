@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '976'
+source-wordcount: '1046'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Saiba como criar sua primeira Comunicação interativa.
 
 ![01-criar-primeiro-formulário-adaptável-imagem-herói](assets/01-create-first-adaptive-form-hero-image.png)
 
-As Comunicações interativas centralizam e gerenciam a criação, montagem e delivery de correspondências seguras, personalizadas e interativas, como correspondência comercial, documentos, declarações, emails de marketing, contas e kits de boas-vindas. As Comunicações interativas podem ser fornecidas usando dois canais: Impressão e Web. O canal de impressão é usado para criar PDF e comunicações em papel, enquanto o canal da Web é usado para oferecer experiências online.
+As Comunicações interativas centralizam e gerenciam a criação, montagem e delivery de correspondências seguras, personalizadas e interativas, como correspondência comercial, documentos, declarações, emails de marketing, contas e kits de boas-vindas. As Comunicações interativas podem ser fornecidas usando dois canais: Impressão e Web. O canal de impressão é usado para criar PDFs e comunicações em papel, enquanto o canal da Web é usado para oferecer experiências online.
 
 Este tutorial fornece uma estrutura completa para criar uma comunicação interativa. O tutorial é organizado em um caso de uso e em vários guias. Cada guia ajuda a criar recursos que são usados como blocos de construção para criar uma Comunicação interativa.
 
@@ -41,8 +41,8 @@ A jornada começa aprendendo o caso de uso:
 
 Uma operadora de telecomunicações envia faturas mensais aos clientes por email. A lei é uma comunicação interativa. O e-mail inclui:
 
-* Um PDF protegido por senha, conhecido como Canal de impressão neste tutorial. Inclui detalhes do cliente, detalhes da fatura, sumário de encargos, modos convenientes de pagamento da fatura e detalhes de uso.
-* Um link para a versão da lista da Web, conhecido como canal da Web neste tutorial. A versão da conta na web, além dos detalhes abordados na versão PDF, fornece uma representação gráfica dos detalhes de uso e ofertas personalizadas com base no Adobe Target. A versão da Web também contém um formulário de pagamento online. Ajuda a fazer pagamentos on-line sem sair da IC.
+* Uma PDF protegida por senha, chamada de Canal de impressão neste tutorial. Inclui detalhes do cliente, detalhes da fatura, sumário de encargos, modos convenientes de pagamento da fatura e detalhes de uso.
+* Um link para a versão da lista da Web, conhecido como canal da Web neste tutorial. A versão da fatura na web, além dos detalhes cobertos na versão do PDF, fornece uma representação gráfica dos detalhes de uso e ofertas personalizadas com base no Adobe Target. A versão da Web também contém um formulário de pagamento online. Ajuda a fazer pagamentos on-line sem sair da IC.
 * Um link para serviços de valor agregado, como armazenamento online, assinaturas de música e assinaturas de vídeo sob demanda.
 
 ## Pré-requisitos {#prerequisites}
@@ -50,7 +50,7 @@ Uma operadora de telecomunicações envia faturas mensais aos clientes por email
 * Configure uma instância de autor do AEM.
 * Instalar [complemento do AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md) na instância do autor
 * Configurar o banco de dados MYSQL
-* Obter o driver de banco de dados JDBC (arquivo JAR) do provedor de banco de dados. Exemplos no tutorial são baseados no banco de dados MySQL e usam o [driver do banco de dados MySQL JDBC](https://dev.mysql.com/downloads/connector/j/5.1.html) do Oracle.
+* Obter o driver de banco de dados JDBC (arquivo JAR) do provedor de banco de dados. Exemplos no tutorial são baseados no banco de dados MySQL e usam o [driver de banco de dados MySQL JDBC](https://dev.mysql.com/downloads/connector/j/5.1.html) da Oracle.
 
 ## Etapa 1: Planejar a comunicação interativa {#step-plan-the-interactive-communication}
 
@@ -68,13 +68,13 @@ Para criar uma anatomia para a Comunicação interativa com os seguintes modos d
 * Dados condicionais
 * Imagens
 
-[&#128279;](/help/forms/using/planning-interactive-communications.md)
+  [![see-the-guide-sm](assets/see-the-guide-sm.png)](/help/forms/using/planning-interactive-communications.md)
 
 ## Etapa 2: Criar modelo de dados de formulário {#step-create-form-data-model}
 
 ![03-criar-formulário-adaptável-imagem-principal_pequena](assets/03-create-adaptive-form-main-image_small.png)
 
-Um modelo de dados de formulário permite conectar uma Comunicação interativa a fontes de dados diferentes. Por exemplo, perfil de usuário AEM, serviços Web RESTful, serviços Web baseados em SOAP, serviços OData e bancos de dados relacionais. Um modelo de dados de formulário é um esquema de representação de dados unificada de entidades e serviços comerciais disponíveis em fontes de dados conectadas. Você pode usar o modelo de dados de formulário com uma Comunicação interativa para recuperar dados de fontes de dados conectadas. Para obter mais informações sobre o modelo de dados de formulário, consulte [Integração de dados do AEM Forms](/help/forms/using/data-integration.md).
+Um modelo de dados de formulário permite conectar uma Comunicação interativa a fontes de dados diferentes. Por exemplo, o perfil de usuário do AEM, os serviços Web RESTful, os serviços Web baseados no SOAP, os serviços OData e os bancos de dados relacionais. Um modelo de dados de formulário é um esquema de representação de dados unificada de entidades e serviços comerciais disponíveis em fontes de dados conectadas. Você pode usar o modelo de dados de formulário com uma Comunicação interativa para recuperar dados de fontes de dados conectadas. Para obter mais informações sobre o modelo de dados de formulário, consulte [Integração de dados do AEM Forms](/help/forms/using/data-integration.md).
 
 **Metas:**
 
@@ -87,7 +87,7 @@ Um modelo de dados de formulário permite conectar uma Comunicação interativa 
 * Editar dados de amostra
 * Testar o modelo de dados do formulário e os serviços configurados com dados de teste
 
-[&#128279;](/help/forms/using/create-form-data-model0.md)
+  [![see-the-guide-sm](assets/see-the-guide-sm.png)](/help/forms/using/create-form-data-model0.md)
 
 ## Etapa 3: Criar fragmentos de documento {#step-create-document-fragments}
 
@@ -101,17 +101,17 @@ Os fragmentos de documento são componentes reutilizáveis de uma correspondênc
 * Criar variáveis
 * Criar e aplicar regras
 
-[&#128279;](/help/forms/using/create-document-fragments.md)
+  [![see-the-guide-sm](assets/see-the-guide-sm.png)](/help/forms/using/create-document-fragments.md)
 
 ## Etapa 4: criar modelos {#step-create-templates}
 
 ![07-aplicar-regras-ao-formulário-adaptável_pequeno](assets/07-apply-rules-to-adaptive-form_small.png)
 
-Para criar uma comunicação interativa, você deve ter modelos disponíveis no servidor AEM para impressão e canais da Web.
+Para criar uma comunicação interativa, você deve ter modelos disponíveis no servidor do AEM para impressão e canais da Web.
 
-Os modelos para o canal de impressão são criados no Adobe Forms Designer e carregados no servidor de AEM. Esses modelos ficam disponíveis para uso ao criar uma Comunicação interativa.
+Os modelos para o canal de impressão são criados no Adobe Forms Designer e carregados no servidor do AEM. Esses modelos ficam disponíveis para uso ao criar uma Comunicação interativa.
 
-Os templates para o canal da Web são criados no AEM. Os autores e administradores de modelos podem criar, editar e ativar modelos da Web. Depois de criados e ativados, esses modelos ficam disponíveis para uso ao criar uma Comunicação interativa.
+Os modelos para o canal da Web são criados no AEM. Os autores e administradores de modelos podem criar, editar e ativar modelos da Web. Depois de criados e ativados, esses modelos ficam disponíveis para uso ao criar uma Comunicação interativa.
 
 **Metas:**
 
@@ -119,7 +119,7 @@ Os templates para o canal da Web são criados no AEM. Os autores e administrador
 * Fazer upload dos modelos XDP para o servidor do AEM Forms
 * Criar e habilitar modelos para o canal da Web
 
-[&#128279;](/help/forms/using/create-templates-print-web.md)
+  [![see-the-guide-sm](assets/see-the-guide-sm.png)](/help/forms/using/create-templates-print-web.md)
 
 ## Etapa 5: Criar uma comunicação interativa {#step-create-an-interactive-communication}
 
@@ -138,9 +138,9 @@ As Comunicações interativas podem ser fornecidas por meio de dois canais: Impr
 * Criar um gráfico na versão da Web da Comunicação Interativa
 * Criar hiperlinks na versão da Web da comunicação interativa
 
-[&#128279;](/help/forms/using/create-interactive-communication0.md)
+  [![see-the-guide-sm](assets/see-the-guide-sm.png)](/help/forms/using/create-interactive-communication0.md)
 
-## Etapa 6: Publish sua comunicação interativa {#step-publish-your-interactive-communication}
+## Etapa 6: publicar a comunicação interativa {#step-publish-your-interactive-communication}
 
 ![12-publicar-seu-formulário-adaptável-pequeno_pequeno](assets/12-publish-your-adaptive-form-_small.png)
 
@@ -149,5 +149,5 @@ Depois de criar e testar as Comunicações interativas usando canais de impress�
 **Metas:**
 
 * Integre as Comunicações interativas a um cliente de email para poder enviar uma comunicação aos clientes
-* Incluir um documento PDF como anexo (Comunicação interativa criada no canal de impressão)
+* Incluir um documento do PDF como anexo (Comunicação interativa criada no canal de impressão)
 * Incluir um link para a versão da Web da comunicação interativa

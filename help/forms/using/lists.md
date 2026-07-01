@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '6905'
+source-wordcount: '6946'
 ht-degree: 0%
 
 ---
@@ -82,7 +82,7 @@ A Solução de gerenciamento de correspondência é compatível com dois tipos d
 
    Barra de ferramentas de listagem (clique para abrir a imagem em tamanho real)
 
-1. Para reutilizar um ou mais parágrafos de texto existentes em outro aplicativo, como páginas do MS Word ou HTML, copie e cole o texto no editor de texto. A formatação do texto copiado é mantida no editor de texto.
+1. Para reutilizar um ou mais parágrafos de texto existentes em outro aplicativo, como de páginas do MS Word ou HTML, copie e cole o texto no editor de texto. A formatação do texto copiado é mantida no editor de texto.
 
    Você pode copiar e colar um ou mais parágrafos de texto em um módulo de texto editável. Por exemplo, você pode ter um documento do MS Word com uma lista com marcadores de provas de residência aceitáveis, como as seguintes:
 
@@ -227,8 +227,8 @@ Uma lista é um grupo de conteúdo relacionado que pode ser usado em um modelo d
 * Ao criar uma lista, você pode especificar um tipo, como:
 * **Simples**: nenhuma formatação de estilo adicional é aplicada à lista.
 * **Marcadores**: uma lista formatada com um marcador simples.
-* **Numerado**: uma lista numérica com a opção de numerais Padrão (1,2,...), Romano Superior (I, II, ...) e Romano Inferior (i, ii,...).
-* **Carta**: uma lista alfabética com a opção de letras minúsculas (a,b,...) e maiúsculas (A,B,...).
+* **Numerado**: uma lista numérica com as opções Padrão (1,2,...), Romano Superior (I, II, ...) e Romano Inferior (i, ii,...) numerais.
+* **Carta**: uma lista alfabética com a opção de minúsculas (a,b,...) e maiúsculas (A, B,...) cartas.
 * **Personalizado**: você pode criar qualquer tipo Numerado/Letterado e valores de prefixo e sufixo de sua escolha.
 
 1. Selecione **Forms** > **Fragmentos de documento**.
@@ -249,8 +249,7 @@ Uma lista é um grupo de conteúdo relacionado que pode ser usado em um modelo d
 
    ![Selecionar ativos para adicionar à lista](assets/selectassets.png)
 
-1. Os ativos são adicionados à página Itens de lista.
-Para alterar a ordem dos ativos na lista, selecione e mantenha pressionado o ícone de setas ( ![arrastar e soltar](assets/dragndrop.png) ) e arraste e solte. Quando o usuário abre um modelo de correspondência na interface do usuário Criar correspondência, o conteúdo é montado na ordem definida aqui.
+1. Os ativos são adicionados à página Itens de lista.Para alterar a ordem dos ativos na lista, selecione e mantenha pressionado o ícone de setas ( ![arrastar e soltar](assets/dragndrop.png) ) e arraste e solte. Quando o usuário abre um modelo de correspondência na interface do usuário Criar correspondência, o conteúdo é montado na ordem definida aqui.
 
    ![Reordenar e configurar ativos em uma lista](assets/listitems.png)
 
@@ -320,7 +319,7 @@ O Editor de condições permite especificar uma condição padrão. Se o valor d
 1. Para adicionar um ativo à Condição, selecione-o na página Selecionar Assets e selecione **Concluído**. Os ativos são adicionados ao painel Expressão.
 1. Você pode selecionar as seguintes opções para especificar como a condição se comporta no tempo de execução:
 
-   * **Desabilitar Avaliação de Vários Resultados\Habilitar Avaliação de Vários Resultados**: Quando esta opção está habilitada (aparece como &quot;Habilitar Vários...&quot;), todas as condições são avaliadas e o resultado é a soma de todas as condições verdadeiras. Se essa opção estiver desativada (aparecer como &quot;Desativar várias...&quot;), então somente a primeira condição que for considerada verdadeira será avaliada e se tornará a saída da condição.
+   * **Desabilitar Avaliação de Vários Resultados\Habilitar Avaliação de Vários Resultados**: Quando esta opção está habilitada (aparece como &quot;Habilitar Vários...&quot;), todas as condições são avaliadas e o resultado é a soma de todas as condições verdadeiras. Se essa opção estiver desativada (aparece como &quot;Desativar várias...&quot;) então, somente a primeira condição que for considerada verdadeira será avaliada e se tornará a saída da condição.
    * **Quebra de Página**: selecione esta opção ( ![break](assets/break.png)) para adicionar uma quebra de página entre os módulos das condições. Quando esta opção não está selecionada ( ![nobreak](assets/nobreak.png)), se uma condição estiver estourando na próxima página, toda a condição será deslocada para a próxima página em vez de ser quebrada na página entre a condição.
 
 1. Para alterar a ordem dos ativos na condição, selecione e mantenha pressionado o ícone de setas ( ![arrastar e soltar](assets/dragndrop.png) ) e arraste e solte. Quando o usuário abre um modelo de correspondência na interface do usuário Criar correspondência, o conteúdo é montado na ordem definida aqui.
@@ -405,7 +404,7 @@ Para obter um exemplo detalhado do uso de tabelas estáticas e dinâmicas em fra
 
 1. Selecione a guia **Tabela** e especifique as seguintes informações para o layout:
 
-   * **Configuração de**: selecione a tabela que está sendo configurada. Como um sufixo para o nome da tabela na lista suspensa é (Estático) se a tabela for estática ou (Dinâmico) se a tabela for dinâmica. As tabelas estáticas contêm um número fixo de linhas. As tabelas estáticas podem conter áreas de destino e campos. Esses campos e área de destino não podem ser vinculados a DDEs repetitivos. Os dados vinculados às células da tabela determinam o número de linhas das tabelas dinâmicas.
+   * **Configuração de**: selecione a tabela que está sendo configurada.Como um sufixo para o nome da tabela na lista suspensa é (Estático), se a tabela for estática, ou (Dinâmico), se a tabela for dinâmica. As tabelas estáticas contêm um número fixo de linhas. As tabelas estáticas podem conter áreas de destino e campos. Esses campos e área de destino não podem ser vinculados a DDEs repetitivos. Os dados vinculados às células da tabela determinam o número de linhas das tabelas dinâmicas.
 
    * **Linhas**: selecione o número de linhas para o layout. A contagem de linhas configurada deve ser maior ou igual à contagem de linhas original.
    * **Colunas**: selecione o número de colunas para o layout. A contagem de colunas configurada deve ser maior ou igual à contagem de colunas original.
@@ -441,7 +440,7 @@ Isso garante que os subformulários inseridos usando o comando Inserir > Subform
 
 #### Conformidade com a Seção 508 {#section-compliance}
 
-Se a carta finalizada criada na interface do usuário Criar correspondência for usada para preencher um fluxo de trabalho posterior. Siga estas recomendações relacionadas à Seção 508 ao criar o layout. Caso contrário, a letra PDF será para exibição e você poderá ignorar essas recomendações:
+Se a carta finalizada criada na interface do usuário Criar correspondência for usada para preencher um fluxo de trabalho posterior. Siga estas recomendações relacionadas à Seção 508 ao criar o layout. Caso contrário, a carta PDF será exibida e você poderá ignorar essas recomendações:
 
 * Todos os subformulários de área de destino e todos os campos em um layout têm uma ordem de tabulação.
 * Os campos com legendas são compatíveis com 508 por padrão. O atributo /field/assist/speak@priority do campo é definido como &quot;personalizado&quot; por padrão, o que significa que, a menos que o texto do leitor de tela personalizado seja fornecido, o leitor de tela lerá a legenda do campo.
@@ -484,8 +483,7 @@ Muitos modelos de correspondência contêm tabelas. As tabelas podem ser estáti
 * **Tabelas estáticas**: às vezes, tabelas são criadas com linhas que têm um número diferente de colunas, como para uma tabela de termos e condições. Onde cada linha representa uma condição e cada condição pode ter subpartes diferentes. Cada parte é mostrada em uma coluna separada.
 * **Tabelas dinâmicas**: os fragmentos de layout fornecem a capacidade de associar campos de uma tabela dinâmica a DDEs de coleção. No momento da geração da correspondência, as linhas da tabela são geradas de acordo com o tamanho da coleção DDEs.
 
-O DD tem um elemento de coleta Nominee_details que tem um elemento composto com três elementos primitivos: Nominee_name, Nominee_address e Nominee_gender.
-O XDP dinâmico também tem os mesmos cabeçalhos. Assim, você pode mapear os campos XDP dinâmicos com os campos de DD mencionados acima.
+O DD tem um elemento de coleta Nominee_details que tem um elemento composto com três elementos primitivos: Nominee_name, Nominee_address e Nominee_gender.O XDP dinâmico também tem os mesmos cabeçalhos. Assim, você pode mapear os campos XDP dinâmicos com os campos de DD mencionados acima.
 
 ### Exemplo com arquivos de amostra: Uso de tabelas estáticas e dinâmicas em uma correspondência {#examplewithsamplefiles}
 
@@ -499,7 +497,7 @@ Este exemplo mostra como criar uma tabela dinâmica e uma tabela estática, vinc
 
    ![Estrutura do dicionário de dados](assets/dd.jpeg)
 
-[Obter arquivo](assets/exportpackage_1431709897770.cmp.zip)
+   [Obter arquivo](assets/exportpackage_1431709897770.cmp.zip)
 
 1. No Designer, crie dois XDPs (fragmentos de layout): uma tabela dinâmica e uma tabela estática. Para ambos os layouts:
 
@@ -508,12 +506,11 @@ Este exemplo mostra como criar uma tabela dinâmica e uma tabela estática, vinc
 
    Ou use os XDPs estáticos e dinâmicos anexados a esta etapa.
 
-   Para obter mais informações sobre como trabalhar com fragmentos de layout, consulte [Fragmentos de layout](#layoutfragments).
-Para obter mais informações sobre design de layouts, consulte a [Ajuda do Designer](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/).
+   Para obter mais informações sobre como trabalhar com fragmentos de layout, consulte [Fragmentos de layout](#layoutfragments).Para obter mais informações sobre design de layouts, consulte a [Ajuda do Designer](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/).
 
-[Obter arquivo](assets/static.xdp.zip)
+   [Obter arquivo](assets/static.xdp.zip)
 
-[Obter arquivo](assets/dynamic.xdp.zip)
+   [Obter arquivo](assets/dynamic.xdp.zip)
 
 1. Faça upload dos XDPs para o AEM Forms.
 1. Crie um fragmento de layout com base no XDP dinâmico. A guia Table das propriedades exibe que a tabela é dinâmica (campo Configuration For ). O número de linhas (1) e colunas (3) é derivado do XDP/Fragmento de layout.
@@ -526,8 +523,7 @@ Para obter mais informações sobre design de layouts, consulte a [Ajuda do Desi
 
 1. Crie um fragmento de layout com base no XDP estático. A guia Table das propriedades exibe que a tabela é estática (campo Configuration For ). O número de linhas (1) e colunas (3) é derivado do XDP/Fragmento de layout.
 
-   Você pode alterar o número de colunas e linhas aqui. De acordo com o que você escolhe nesta tela, o número de linhas e colunas de uma tabela estática permanece fixo na letra criada com este layout.
-   [![Criar uma tela de fragmento de layout](assets/statictableproperties.png)](assets/statictableproperties-1.png)
+   Você pode alterar o número de colunas e linhas aqui. De acordo com o que você escolhe nesta tela, o número de linhas e colunas de uma tabela estática permanece fixo na letra criada com este layout.   [![Criar uma tela de fragmento de layout](assets/statictableproperties.png)](assets/statictableproperties-1.png)
 
 1. Criar uma correspondência usando ambos os fragmentos de layout nela. Ao inserir o XDP dinâmico na correspondência, defina a vinculação de seus campos para os elementos de coleção do dicionário de dados.
 

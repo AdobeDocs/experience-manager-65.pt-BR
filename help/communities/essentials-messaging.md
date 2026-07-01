@@ -12,7 +12,7 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '362'
+source-wordcount: '419'
 ht-degree: 1%
 
 ---
@@ -94,7 +94,7 @@ Consulte também [Personalizações do lado do cliente](/help/communities/client
 * [Configuração de mensagens](/help/communities/configure-messaging.md)
 * [APIs de cliente de mensagens](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/messaging/client/api/package-summary.html) para componentes SCF
 * [APIs de mensagens](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/messaging/api/package-summary.html) para o serviço
-* [Pontos de Extremidade de Mensagens](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/messaging/client/endpoints/package-summary.html)
+* [Endpoints de mensagens](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/messaging/client/endpoints/package-summary.html)
 * [Personalizações do lado do servidor](/help/communities/server-customize.md)
 
 >[!CAUTION]

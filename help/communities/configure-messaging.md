@@ -12,7 +12,7 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '952'
+source-wordcount: '967'
 ht-degree: 0%
 
 ---
@@ -63,8 +63,7 @@ Para modificar a configuração da lista de mensagens para as páginas **Caixa d
 1. No modo `Preview`, selecione o link **Mensagens** para abrir a página de mensagens principal. Em seguida, selecione **Caixa de entrada**, **Itens enviados** ou **Lixeira** para configurar o componente para essa lista de mensagens.
 
 1. No modo `Edit`, selecione o componente na página.
-1. Para acessar o diálogo de configuração, cancele a herança selecionando o ícone `link`.
-Quando a herança for cancelada, é possível selecionar o ícone de configuração para abrir a caixa de diálogo de configuração.
+1. Para acessar o diálogo de configuração, cancele a herança selecionando o ícone `link`.Quando a herança for cancelada, é possível selecionar o ícone de configuração para abrir a caixa de diálogo de configuração.
 
 1. Quando a configuração for concluída, será necessário restaurar a herança selecionando o ícone `broken link`.
 
@@ -137,8 +136,7 @@ Para modificar a configuração da página para redigir mensagem, abra o site no
 * No modo `Preview`, selecione o link **Mensagens** para abrir a página de mensagens principal. Em seguida, clique no botão Nova Mensagem para abrir a página `Compose Message`.
 
 * No modo `Edit`, selecione o componente principal na página que contém o corpo da Mensagem.
-* Para acessar o diálogo de configuração, cancele a herança selecionando o ícone `link`.
-Quando a herança for cancelada, é possível selecionar o ícone de configuração para abrir a caixa de diálogo de configuração.
+* Para acessar o diálogo de configuração, cancele a herança selecionando o ícone `link`.Quando a herança for cancelada, é possível selecionar o ícone de configuração para abrir a caixa de diálogo de configuração.
 
 * Quando a configuração for concluída, será necessário restaurar a herança selecionando o ícone `broken link`.
 

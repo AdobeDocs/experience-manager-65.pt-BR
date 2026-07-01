@@ -7,8 +7,8 @@ feature: Release Information
 role: User,Admin,Developer
 source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
-source-wordcount: '4477'
-ht-degree: 4%
+source-wordcount: '4980'
+ht-degree: 8%
 
 ---
 
@@ -263,7 +263,7 @@ Para obter a versão mais recente, consulte a seção [Implantação de comunida
 
 ##### Melhorias no engajamento da comunidade {#enhancements-to-community-engagement}
 
-**Suporte a @Mentions**
+Suporte a **@Mentions**
 O AEM Communities agora permite que os usuários registrados marquem (mencionem) outros membros registrados para chamar a atenção deles, no Conteúdo gerado pelo usuário. Os membros marcados (mencionados) são notificados, com deep link para o Conteúdo Gerado pelo Usuário correspondente. Os usuários podem, no entanto, optar por desativar/ativar as notificações da Web e por email.
 
 ![No suporte para menções](/help/release-notes/assets/at-mentions.png)
