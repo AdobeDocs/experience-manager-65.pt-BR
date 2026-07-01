@@ -1,6 +1,6 @@
 ---
 title: Componentes das comunidades
-description: Saiba mais sobre quando o AEM Communities é licenciado, é possível adicionar recursos do Communities a qualquer site AEM usando ferramentas de criação padrão do AEM.
+description: Saiba mais sobre quando o AEM Communities é licenciado, é possível adicionar recursos do Communities a qualquer site do AEM usando ferramentas de criação padrão do AEM.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
@@ -13,7 +13,7 @@ role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '293'
-ht-degree: 15%
+ht-degree: 17%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 15%
 
 ## Introdução {#introduction}
 
-Quando o AEM Communities é licenciado, além de criar sites da comunidade, é possível adicionar recursos do Communities a qualquer site AEM usando ferramentas de criação padrão do AEM.
+Quando o AEM Communities é licenciado, além de criar sites da comunidade, é possível adicionar recursos das Comunidades a qualquer site do AEM usando ferramentas de criação padrão do AEM.
 
 Para saber mais sobre como criar uma visita a um site da comunidade:
 
@@ -61,7 +61,7 @@ Consulte também o [guia de Componentes da Comunidade](/help/communities/compone
 | Placar de líderes | [Pontuação e medalhas](/help/communities/enabling-leaderboard.md) |
 | Curtir | [Curtindo](/help/communities/liking.md) |
 | Mensagem | [Mensagens](/help/communities/configure-messaging.md) |
-| Lista de mensagens | [Mensagens](/help/communities/configure-messaging.md) |
+| Lista de mensagem | [Mensagens](/help/communities/configure-messaging.md) |
 | QnA | [Perguntas e respostas](/help/communities/working-with-qna.md) |
 | Busca rápida | [Pesquisar](/help/communities/search.md) |
 | Avaliação | [Classificação](/help/communities/rating.md) |

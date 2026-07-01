@@ -12,7 +12,7 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '840'
+source-wordcount: '864'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ Como mostrado abaixo, existe uma configuração do serviço para sites criados c
 
 Para adicionar uma configuração, selecione o ícone de adição &#39;**+**&#39; ao lado do nome do serviço:
 
-* **Inclui na lista de permissões de Campos de Mensagem**
+* **Incluo na lista de permissões de Campos de Mensagem**
 
   Especifica as propriedades do componente Compor mensagem que os usuários podem editar e manter. Se novos elementos de formulário forem adicionados, a ID do elemento deverá ser adicionada se desejar que seja armazenada em SRP. O padrão é duas entradas: *assunto* e *conteúdo*.
 
@@ -109,13 +109,13 @@ Para adicionar uma configuração, selecione o ícone de adição &#39;**+**&#39
 
   Se supportAttachments estiver marcado, este valor especifica o tamanho total máximo permitido (em bytes) de todos os anexos. O padrão é *104857600* (100 MB).
 
-* incluir na lista de bloqueios **Pesquisa de tipo de anexo**
+* **Pesquisa de tipo de anexo**
 
-  Um incluo na lista de bloqueios de extensões de nome de arquivo com o prefixo &#39;**.**&#39;, que foi rejeitado pelo sistema. Incluir na lista de bloqueios Se não houver alteração, a extensão será permitida. É possível adicionar ou remover extensões usando os ícones &#39;**+**&#39; e &#39;**-**&#39;.
+  Um incluo na lista de bloqueios de extensões de nome de arquivo, prefixado com &#39;**.**&#39;, rejeitado pelo sistema. Se não houver alteração, a extensão será permitida. É possível adicionar ou remover extensões usando os ícones &#39;**+**&#39; e &#39;**-**&#39;.
 
 * **Tipos de anexo permitidos**
 
-  incluir na lista de permissões incluir na lista de bloqueios **(*Ação necessária*)** Uma pesquisa de extensões de nome de arquivo, o oposto do arquivo de pesquisa. Incluir na lista de bloqueios Para permitir todas as extensões de nome de arquivo, exceto as realçadas, use o ícone &#39;**-**&#39; para remover a única entrada vazia.
+  **(*Ação necessária*)** Um incluo na lista de permissões de extensões de nome de arquivo, o oposto do arquivo de. Para permitir todas as extensões de nome de arquivo, exceto as realçadas, use o ícone &#39;**-**&#39; para remover a única entrada vazia.
 
 * **Seletor de serviços**
 
@@ -123,15 +123,15 @@ Para adicionar uma configuração, selecione o ícone de adição &#39;**+**&#39
 
   O padrão é */bin/messaging*.
 
-* **Inclui na lista de permissões de campo**
+* **Incluo na lista de permissões de campos**
 
-  Usar **Inclui na lista de permissões de Campos de Mensagem**.
+  Use **Incluo na lista de permissões de Campos de Mensagem**.
 
 >[!CAUTION]
 >
 >Cada vez que uma configuração `Messaging Operations Service` é aberta para edição, se `allowedAttachmentTypes.name` tiver sido removido, uma entrada vazia será lida para tornar a propriedade configurável. Uma única entrada vazia efetivamente desativa os anexos de arquivo.
 >
->Incluir na lista de bloqueios Para permitir todas as extensões de nome de arquivo, exceto as realçadas, use o ícone &#39;**-**&#39; para (novamente) remover a única entrada vazia antes de clicar em **Salvar**.
+>Para permitir todas as extensões de nome de arquivo, exceto as realçadas, use o ícone &#39;**-**&#39; para (novamente) remover a única entrada vazia antes de clicar em **Salvar**.
 
 ## Mensagens de grupo {#group-messaging}
 

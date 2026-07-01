@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '3982'
+source-wordcount: '4013'
 ht-degree: 2%
 
 ---
@@ -92,8 +92,8 @@ A correspondência final pode ser enviada a um processo de back-end para pós-pr
 1. Processado para impressão de e-mail, fax ou lote ou colocado em uma pasta para impressão ou e-mail.
 1. Enviado para revisão e aprovação.
 1. Protegido por assinatura digital, certificação, criptografia ou gerenciamento de direitos.
-1. Convertido em um documento de PDF pesquisável que contém todos os metadados necessários para fins de arquivamento e auditoria.
-1. Incluído em um Portfolio PDF que inclua mais documentos, como material de marketing. O Portfolio PDF pode então ser enviado como a correspondência final.
+1. Convertido em um documento pesquisável do PDF que contém todos os metadados necessários para fins de arquivamento e auditoria.
+1. Incluído em uma Portfolio do PDF que inclui mais documentos, como material de marketing. A Portfolio do PDF pode ser enviada como a correspondência final.
 
 ### Arquitetura da solução de gerenciamento de correspondência {#correspondence-management-solution-architecture}
 
@@ -137,7 +137,7 @@ Este documento de Aviso de cancelamento é um exemplo de uma correspondência t�
   <tr> 
    <td><br /> Imagens Armazenadas do Repositório Central</td> 
    <td>Imagens, como logotipos e imagens de assinatura. Imagens como logotipos corporativos apareceriam na maioria ou em toda a correspondência. As imagens de assinatura são específicas da carta e da pessoa em nome da qual a carta é enviada.</td> 
-   <td><p>Imagens armazenadas em ativos AEM (DAM)<br /> </p> <p> </p> </td> 
+   <td><p>Imagens armazenadas no AEM Assets (DAM)<br /> </p> <p> </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -159,7 +159,7 @@ Analise cada letra para descobrir as várias partes que compõem a letra. O espe
 
 * As condições sob as quais os usuários empresariais, como ajustadores de sinistros ou trabalhadores de processos, modificam o conteúdo ou partes na carta.
 * Os cenários são narrativas que descrevem a experiência do usuário, os requisitos e os benefícios de usar a solução Letters.
-* Os cenários também fornecem:Os conjuntos de habilidades e as ferramentas necessárias para o projeto.
+* Os cenários também fornecem:The conjuntos de habilidades e ferramentas necessários para o seu projeto.
 * Práticas recomendadas para planejar sua implementação do. &quot;Visão geral da implementação de alto nível.
 
 ## Benefícios da execução da análise {#benefits-of-performing-the-analysis}
@@ -254,7 +254,7 @@ Você precisa do seguinte em vigor primeiro para criar uma correspondência:
    * **Descrição (Opcional):** Descreva a letra da sua referência.
    * **Dicionário de Dados (Opcional)**: o Dicionário de Dados pode ser associado à correspondência. Os ativos inseridos posteriormente nesta correspondência devem ter o mesmo dicionário de dados que você escolheu para a correspondência aqui ou nenhum dicionário de dados.
    * **Marcas (Opcional):** Selecione as marcas a serem aplicadas à correspondência. Você também pode digitar um nome de tag novo/personalizado e pressionar Enter para criá-lo.
-   * **Processo do Post (Opcional):** Selecione o pós-processo a ser aplicado ao modelo de carta. Existem processos de postagem prontos para uso e aqueles que você criou usando AEM, como email e impressão.
+   * **Pós-processamento (Opcional):** Selecione o pós-processamento a ser aplicado ao modelo de carta. Existem processos de postagem prontos para uso e aqueles que você criou usando o AEM, como email e impressão.
 
    ![Propriedades de correspondência](assets/createcorrespondenceproperties.png)
 

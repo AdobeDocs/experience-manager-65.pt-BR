@@ -1,6 +1,6 @@
 ---
 title: Recurso de blog
-description: Saiba como o recurso de blog permite o fornecimento de informações da comunidade em um formato de registro no diário. As entradas são feitas no ambiente Publish por usuários autorizados.
+description: Saiba como o recurso de blog permite o fornecimento de informações da comunidade em um formato de registro no diário. As entradas são feitas no ambiente de Publicação por usuários autorizados.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
@@ -12,7 +12,7 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1696'
+source-wordcount: '1719'
 ht-degree: 0%
 
 ---
@@ -21,13 +21,13 @@ ht-degree: 0%
 
 ## Introdução {#introduction}
 
-O recurso de blog do AEM Communities foi transformado de uma atividade de criação para uma verdadeira atividade de comunidade, que ocorre no ambiente do Publish.
+O recurso de blog do AEM Communities foi transformado de uma atividade de criação para uma verdadeira atividade da comunidade, que ocorre no ambiente de publicação.
 
-O recurso de blog permite o fornecimento de informações da comunidade em um formato de registro no diário. Entradas de blog são feitas no ambiente do Publish por membros autorizados (usuários registrados e conectados).
+O recurso de blog permite o fornecimento de informações da comunidade em um formato de registro no diário. Entradas de blog são feitas no ambiente de publicação por membros autorizados (usuários registrados e conectados).
 
 O recurso de blog fornece :
 
-* Criação de artigos e comentários no Publish
+* Criação do lado da publicação de artigos e comentários do blog
 * Edição de rich text
 * Imagens integradas (com suporte para arrastar e soltar)
 * Conteúdo de rede social inserido ([oSuporte incorporado](/help/communities/blog-developer-basics.md#allowing-rich-media))
@@ -38,7 +38,7 @@ O recurso de blog fornece :
 
 Esta seção da documentação descreve:
 
-* Adicionar o recurso de blog a um site AEM
+* Adicionar o recurso de blog a um site do AEM
 * Configurações para componentes de blog
 
 >[!NOTE]
@@ -290,9 +290,9 @@ Outras habilidades dependem se o visitante do site é moderador, administrador, 
 
 Ao criar um artigo de blog, existe a opção de fazer o seguinte:
 
-1. Publish imediatamente
-1. Publish um rascunho
-1. Publish em uma data e hora programadas
+1. Publicar imediatamente
+1. Publicar um rascunho
+1. Publicar em uma data e hora programadas
 
 Os artigos do blog aparecem na guia apropriada (Publicado, Rascunhos ou Agendado) para membros que podem ser autores em publicações.
 
@@ -309,8 +309,8 @@ Quando o usuário conectado é um membro da comunidade ou [membro privilegiado](
 Especificamente, eles podem:
 
 * Criar um artigo de blog
-* Post um novo artigo de blog em nome de outro membro
-* Post um comentário para um artigo de blog
+* Publicar um novo artigo de blog em nome de outro membro
+* Publicar um comentário em um artigo do blog
 * Editar seu próprio artigo de blog ou comentário
 * Excluir seu próprio artigo de blog ou comentário
 * Sinalizar artigos ou comentários de outras pessoas
