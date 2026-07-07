@@ -12,7 +12,7 @@ feature: Developing,Operations
 role: Admin
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '4830'
+source-wordcount: '4974'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 A Console JMX permite que você monitore e gerencie serviços no servidor do CRX. As seções a seguir resumem os atributos e operações que são expostos por meio da estrutura JMX.
 
-Para obter informações sobre como usar os controles do console, consulte [Usando o Console JMX](#using-the-jmx-console). Para obter informações de fundo sobre JMX, consulte a página [Tecnologia Java Management Extensions (JMX)](https://www.oracle.com/technetwork/java/javase/tech/javamanagement-140525.html) no site do Oracle.
+Para obter informações sobre como usar os controles do console, consulte [Usando o Console JMX](#using-the-jmx-console). Para obter informações de fundo sobre JMX, consulte a página [Tecnologia Java Management Extensions (JMX)](https://www.oracle.com/technetwork/java/javase/tech/javamanagement-140525.html) no site da Oracle.
 
 Para obter informações sobre como criar MBeans para gerenciar seus serviços usando o Console JMX, consulte [Integrando serviços com o Console JMX](/help/sites-developing/jmx-integration.md).
 
@@ -107,7 +107,7 @@ Operações para administrar instâncias de fluxos de trabalho em execução, co
    * Iniciador
    * InstanceId
    * ModelId
-   * Carga útil
+   * Conteúdo
    * IniciarComentário
    * WorkflowTitle
 
@@ -125,7 +125,7 @@ Operações para administrar instâncias de fluxos de trabalho em execução, co
    * Iniciador
    * InstanceId
    * ModelId
-   * Carga útil
+   * Conteúdo
    * IniciarComentário
    * WorkflowTitle
 
@@ -144,7 +144,7 @@ Operações para administrar instâncias de fluxos de trabalho em execução, co
    * Iniciador
    * InstanceId
    * ModelId
-   * Carga útil
+   * Conteúdo
    * IniciarComentário
    * WorkflowTitle
 
@@ -209,7 +209,7 @@ Operações para administrar instâncias de fluxos de trabalho em execução, co
    * Iniciador
    * InstanceId
    * ModelId
-   * Carga útil
+   * Conteúdo
    * IniciarComentário
    * WorkflowTitle
 
@@ -251,9 +251,8 @@ Informações sobre o repositório do CRX
    <td>Indica se um nó e uma propriedade do nó podem ter o mesmo nome. true indica que há suporte para os mesmos nomes, false indica que não há suporte. </td>
   </tr>
   <tr>
-   <td>identifier.stability</td>
-   <td>Indica a estabilidade de identificadores de nó não referenciáveis. Os seguintes valores são possíveis:
-    <ul>
+   <td>identifier.stable</td>
+   <td>Indica a estabilidade de identificadores de nó não referenciáveis. Os seguintes valores são possíveis:<ul>
      <li>identifier.stable.indefinite.duration: os identificadores não são alterados.</li>
      <li>identifier.stable.method.duration: os identificadores podem ser alterados entre chamadas de método.</li>
      <li>identifier.stable.save.duration: os identificadores não são alterados em um ciclo de salvar/atualizar.</li>
@@ -289,7 +288,7 @@ Informações sobre o repositório do CRX
    <td>Indica se você pode substituir a propriedade herdada ou a definição de nó filho de um tipo de nó. true indica que há suporte para substituições e false indica que não há substituições.</td>
   </tr>
   <tr>
-   <td>option.observation.supported</td>
+   <td>option.observed.supported</td>
    <td>true indica que a observação assíncrona de alterações no repositório é suportada. O suporte à observação assíncrona permite que os aplicativos recebam e respondam a notificações sobre cada alteração à medida que elas ocorrem.</td>
   </tr>
   <tr>
@@ -329,7 +328,7 @@ Informações sobre o repositório do CRX
    <td>A versão da especificação do JCR que o repositório implementa.</td>
   </tr>
   <tr>
-   <td>option.journaled.observation.supported</td>
+   <td>option.journaled.observed.supported</td>
    <td>true indica que os aplicativos podem executar a observação registrada do repositório. com a observação registrada, um conjunto de notificações de alteração pode ser obtido por um período específico. </td>
   </tr>
   <tr>
@@ -385,7 +384,7 @@ Informações sobre o repositório do CRX
    <td>O URL do fornecedor do repositório.</td>
   </tr>
   <tr>
-   <td>node.type.management.value.constraints.supported</td>
+   <td>node.type.management.value.restrictions.supported</td>
    <td>true indica que o repositório aceita restrições de valor para propriedades do nó.</td>
   </tr>
   <tr>
@@ -446,7 +445,7 @@ Informações sobre o repositório do CRX
    <td>true indica que option.xml.export.support é true e query.languages tem comprimento diferente de zero.</td>
   </tr>
   <tr>
-   <td>option.unfiled.content.supported</td>
+   <td>option.unfield.content.supported</td>
    <td>true indica que o repositório suporta conteúdo não arquivado. Nós não arquivados não fazem parte da hierarquia do repositório.</td>
   </tr>
   <tr>
@@ -691,7 +690,7 @@ Monitore os serviços para cada agente de replicação. Quando você cria um age
 * **Domínio:** com.adobe.granite.replication
 * **Tipo:** agente
 * **Nome:** nenhum valor
-* **Propriedades:** {id=&quot;*Name*&quot;}, onde *Name* é o valor da propriedade Name do agente.
+* **Propriedades:** {id="*Name*"}, onde *Nome* é o valor da propriedade Name do agente.
 
 ### Atributos {#attributes-3}
 

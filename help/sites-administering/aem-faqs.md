@@ -1,5 +1,5 @@
 ---
-title: Perguntas frequentes sobre AEM
+title: Perguntas frequentes sobre o AEM
 description: Use essas Perguntas frequentes para entender, configurar e solucionar problemas ou fluxos de trabalho comuns no AEM.
 exl-id: 182c464a-ff7a-467b-9eb5-8ffac335a87a
 solution: Experience Manager, Experience Manager Sites
@@ -7,12 +7,12 @@ feature: Configuring
 role: Admin
 source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
 workflow-type: tm+mt
-source-wordcount: '936'
+source-wordcount: '1088'
 ht-degree: 0%
 
 ---
 
-# Perguntas frequentes sobre AEM {#aem-faqs}
+# Perguntas frequentes sobre o AEM {#aem-faqs}
 
 Saber as respostas para alguns problemas de solução de problemas e configuração do AEM.
 
@@ -26,8 +26,7 @@ Com o modo sem binários ativado, os pacotes de conteúdo distribuídos contêm 
 
 #### Como habilitar a distribuição sem binários? {#how-do-i-enable-binary-less-distribution}
 
-Para habilitar a distribuição sem binários, implante com um armazenamento de blob compartilhado.
-Verifique a propriedade `useBinaryReferences` na configuração OSGI com o PID de fábrica ( `org.apache.sling.distribution.serialization.impl.vlt.VaultDistributionPackageBuilderFactory`*)* que seu agente está usando.
+Para habilitar a distribuição sem binários, implante com um armazenamento de blob compartilhado.Verifique a propriedade `useBinaryReferences` na configuração OSGI com o PID de fábrica ( `org.apache.sling.distribution.serialization.impl.vlt.VaultDistributionPackageBuilderFactory`*)* que seu agente está usando.
 
 #### Como ativar permissões ao criar uma Cópia de idioma para autores de conteúdo no AEM? {#how-to-enable-permissions-while-creating-language-copy-for-content-authors-in-aem}
 
@@ -49,20 +48,19 @@ Para obter detalhes, consulte os recursos adicionais abaixo:
 
 #### Como auditar recursos do AEM, como tentativas de logon e ACL ou alterações de permissão? {#how-to-audit-aem-capabilities-such-as-login-attempts-and-acl-or-permission-changes}
 
-O AEM introduziu a capacidade de registrar alterações administrativas para melhorar a solução de problemas e a auditoria. Por padrão, as informações são registradas no arquivo `error.log`. Para facilitar o monitoramento, é recomendável que eles sejam redirecionados para um arquivo de log separado.
-Para redirecionar a saída para um arquivo de log separado, consulte [Como auditar operações de gerenciamento de usuários no AEM](/help/sites-administering/audit-user-management-operations.md).
+A AEM introduziu a capacidade de registrar alterações administrativas para melhorar a solução de problemas e a auditoria. Por padrão, as informações são registradas no arquivo `error.log`. Para facilitar o monitoramento, é recomendável que eles sejam redirecionados para um arquivo de log separado.Para redirecionar a saída para um arquivo de log separado, consulte [Como auditar operações de gerenciamento de usuários no AEM](/help/sites-administering/audit-user-management-operations.md).
 
 #### Como habilitar o SSL por padrão? {#how-to-enable-ssl-by-default}
 
-O Adobe Experience Manager (AEM) 6.4 é fornecido com o assistente para SSL e oferece uma interface do usuário para configurar o suporte a Jetty e Granite Jetty SSL.
+O Adobe Experience Manager (AEM) 6.4 vem com o assistente para SSL e oferece uma interface de usuário para configurar o suporte a Jetty e Granite Jetty SSL.
 
 Para habilitar o SSL por padrão, consulte [SSL por padrão](/help/sites-administering/ssl-by-default.md).
 
-#### Qual é a arquitetura recomendada ao usar os Serviços de conteúdo do AEM de um aplicativo móvel, idealmente o React Native? {#what-is-the-recommended-architecture-when-using-aem-s-content-services-from-a-mobile-app-ideally-react-native}
+#### Qual é a arquitetura recomendada ao usar os Serviços de conteúdo da AEM a partir de um aplicativo móvel, idealmente o React Native? {#what-is-the-recommended-architecture-when-using-aem-s-content-services-from-a-mobile-app-ideally-react-native}
 
 Os Content Services são baseados nos Modelos Sling e os desenvolvedores do AEM devem fornecer um pojo Modelo Sling para cada componente exportado.
 
-Para entender como consumir serviços de conteúdo AEM por meio de um aplicativo React, consulte o [Tutorial de Introdução ao AEM Content Services](https://helpx.adobe.com/experience-manager/kt/sites/using/content-services-tutorial-use.html).
+Para entender como consumir serviços de conteúdo do AEM a partir de um aplicativo React, consulte o [tutorial Introdução aos serviços de conteúdo do AEM](https://helpx.adobe.com/experience-manager/kt/sites/using/content-services-tutorial-use.html).
 
 Além disso, se os desenvolvedores quiserem exportar uma árvore de componentes, eles também poderão implementar as interfaces `ComponentExporter` e `ContainerExporter` e usar o `ModelFactory` para iterar sobre os componentes filhos e retornar sua representação de modelo. Consulte os recursos abaixo:
 
@@ -70,7 +68,7 @@ Além disso, se os desenvolvedores quiserem exportar uma árvore de componentes,
 
 [2] [Apache Sling :: Modelos Sling](https://sling.apache.org/documentation/bundles/models.html)
 
-#### Como desativar o pop-up de pesquisa AEM 6.4? {#how-to-disable-aem-survey-pop-up}
+#### Como desativar o pop-up de pesquisa do AEM 6.4? {#how-to-disable-aem-survey-pop-up}
 
 Você pode aderir à coleção de estatísticas de uso usando a interface para toque ou o Console da Web. Para obter instruções detalhadas, consulte [Aceitar a coleção de estatísticas de uso agregadas](/help/sites-deploying/opt-in-aggregated-usage-statistics.md).
 
@@ -88,10 +86,9 @@ Se o usuário, que faz upload dos arquivos de filme, não tiver permissões de e
 
 Ao criar uma cópia de idioma por meio da interface para toque (**Referências** > **Atualizar cópia de idioma**), uma nova pasta do DAM é criada no novo idioma e os ativos são referenciados a partir daí.
 
-Essa é a configuração padrão para configurações iniciais. Você pode definir **Traduzir Página Assets** = **Não traduzir** em Configurações de tradução.
-Para AEM 6.4, **Ferramentas** > **Cloud Service** > **Serviços de tradução em nuvem**.
+Essa é a configuração padrão para configurações iniciais. Você pode definir **Traduzir Página Assets** = **Não traduzir** em Configurações de tradução.Para o AEM 6.4, **Ferramentas** > **Serviços em Nuvem** > **Serviços de Tradução em Nuvem**.
 
-#### Como desativar um componente AEM que causa crescimento exponencial do AEM SegmentStore (AEM 6.3.1.1)? {#how-to-disable-an-aem-component-causing-exponential-growth-for-the-aem-segmentstore-aem}
+#### Como desabilitar um componente do AEM que causa crescimento exponencial para o AEM SegmentStore (AEM 6.3.1.1)? {#how-to-disable-an-aem-component-causing-exponential-growth-for-the-aem-segmentstore-aem}
 
 Você pode desativar o Desativador de componentes OSGi. Para usar este serviço, consulte [Desabilitador de Componente OSGi](https://adobe-consulting-services.github.io/acs-aem-commons/features/osgi-disablers/component-disabler/index.html).
 
@@ -101,7 +98,7 @@ Como solução alternativa, você também pode desabilitar manualmente o compone
 
 #### Como personalizar o admin consoles? {#how-to-customize-admin-consoles}
 
-O AEM fornece vários mecanismos para permitir que você personalize os consoles e a funcionalidade de criação de página da sua instância de criação. Para saber como criar um console personalizado e personalizar um modo de exibição padrão para um console, consulte [Personalizando os Consoles](/help/sites-developing/customizing-consoles-touch.md).
+O AEM fornece vários mecanismos para permitir personalizar os consoles e a funcionalidade de criação de página da sua instância de criação. Para saber como criar um console personalizado e personalizar um modo de exibição padrão para um console, consulte [Personalizando os Consoles](/help/sites-developing/customizing-consoles-touch.md).
 
 #### Qual é a diferença entre os componentes baseados em CoralUI 2 e CoralUI 3? {#what-is-the-difference-between-coralui-and-coralui-based-components}
 
@@ -115,8 +112,8 @@ Para saber mais sobre o aumento/classificação de pesquisa e outras informaçõ
 
 A implementação de pesquisa simples são os materiais do laboratório AEM Search Demystified de 2017.
 
-#### É possível criar um plug-in para WordPress que permite que um cliente acesse o Seletor de ativos Adobe para selecionar imagens? {#is-it-possible-to-build-plugin-for-wordpress-that-allows-a-customer-to-access-adobe-asset-picker-to-select-images}
+#### É possível criar um plug-in para o WordPress que permita que um cliente acesse o Seletor de ativos da Adobe para selecionar imagens? {#is-it-possible-to-build-plugin-for-wordpress-that-allows-a-customer-to-access-adobe-asset-picker-to-select-images}
 
-Sim, um cliente usando WordPress pode usar o Seletor de ativos Adobe para selecionar imagens de seu servidor AEM Assets para adicionar a publicações em seu site WordPress.
+Sim, um cliente usando o WordPress pode usar o Adobe Asset Picker para selecionar imagens de seu servidor AEM Assets para adicionar a publicações em seu site WordPress.
 
 Consulte [Seletor de ativos](../assets/search-assets.md#assetpicker) para obter mais informações.

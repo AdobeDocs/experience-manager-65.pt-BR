@@ -12,7 +12,7 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: db7830895c8a2d1b7228dc4780296d43f15776df
 workflow-type: tm+mt
-source-wordcount: '5743'
+source-wordcount: '6018'
 ht-degree: 2%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 2%
 
 ## Introdução {#introduction}
 
-O Painel de operações no AEM 6 ajuda os operadores do sistema a monitorar rapidamente a integridade do sistema AEM. Ele também fornece informações de diagnóstico geradas automaticamente sobre aspectos relevantes do AEM e permite configurar e executar automação de manutenção independente para reduzir significativamente as operações do projeto e os casos de suporte. O Painel de operações pode ser estendido com verificações de integridade personalizadas e tarefas de manutenção. Além disso, os dados do Painel de operações podem ser acessados a partir de ferramentas de monitoramento externas por meio do JMX.
+O Painel de operações no AEM 6 ajuda os operadores de sistema a monitorar a integridade do sistema do AEM imediatamente. Ele também fornece informações de diagnóstico geradas automaticamente sobre aspectos relevantes do AEM e permite configurar e executar a automação de manutenção independente para reduzir significativamente as operações do projeto e os casos de suporte. O Painel de operações pode ser estendido com verificações de integridade personalizadas e tarefas de manutenção. Além disso, os dados do Painel de operações podem ser acessados a partir de ferramentas de monitoramento externas por meio do JMX.
 
 **O Painel de Operações:**
 
@@ -30,7 +30,7 @@ O Painel de operações no AEM 6 ajuda os operadores do sistema a monitorar rapi
 * Reduz o tempo para localizar, analisar e corrigir problemas
 * Oferece automação de manutenção autossuficiente que ajuda a reduzir significativamente os custos operacionais do projeto
 
-Ele pode ser acessado indo até **Ferramentas** - **Operações** da tela de Boas-vindas do AEM.
+Ele pode ser acessado indo até **Ferramentas** - **Operações** na tela de Boas-vindas do AEM.
 
 >[!NOTE]
 >
@@ -46,7 +46,7 @@ Ele tem vários recursos, descritos abaixo.
 
 Os **Relatórios de Integridade** são um sistema de cartões que indicam integridade boa ou ruim sobre uma área de produto específica. Esses cartões são visualizações das Verificações de integridade do Sling, que agregam dados de JMX e outras fontes e expõem as informações processadas novamente como MBeans. Esses MBeans também podem ser inspecionados no [console da Web JMX](/help/sites-administering/jmx-console.md), no domínio **org.apache.sling.healthy**.
 
-A interface de Relatórios de Integridade pode ser acessada por meio do menu **Ferramentas** - **Operações** - **Relatórios de Integridade** na tela de Boas-vindas do AEM ou diretamente por meio da seguinte URL:
+A interface de Relatórios de Integridade pode ser acessada através do menu **Ferramentas** - **Operações** - **Relatórios de Integridade** na tela de Boas-vindas do AEM ou diretamente através da seguinte URL:
 
 `https://<serveraddress>:port/libs/granite/operations/content/healthreports/healthreportlist.html`
 
@@ -184,7 +184,7 @@ A função de uma Verificação de integridade composta é agregar várias Verif
    >
    >Por exemplo, se você criar uma verificação de integridade de segurança individual, atribua a ela a marca de &quot;**segurança**&quot; e ela será instalada. Ele aparece automaticamente na verificação composta Verificações de segurança no Painel de operações.
 
-### Verificações de integridade fornecidas com AEM {#health-checks-provided-with-aem}
+### Verificações de integridade fornecidas com o AEM {#health-checks-provided-with-aem}
 
 <table>
  <tbody>
@@ -202,7 +202,7 @@ A função de uma Verificação de integridade composta é agregar várias Verif
     <ul>
      <li>retorna o status Crítico se o valor <code>queueSize</code> exceder o valor <code>maxQueueSize</code> (isto é, quando os eventos serão descartados)</li>
      <li>retorna um Aviso se o valor de <code>queueSize</code> estiver acima de <code>maxQueueSize * WARN_THRESHOLD</code> (o valor padrão é 0,75) </li>
-    </ul> <p>O comprimento máximo de cada fila vem de configurações separadas (Oak e AEM) e não é configurável nesta verificação de integridade. O MBean para esta verificação de integridade é <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DObservationQueueLengthHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.healthy:name=ObservationQueueLengthHealthCheck,type=HealthCheck</a>.</p> </td>
+    </ul> <p>O comprimento máximo de cada fila vem de configurações separadas (Oak e AEM) e não pode ser configurado nesta verificação de integridade. O MBean para esta verificação de integridade é <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DObservationQueueLengthHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.healthy:name=ObservationQueueLengthHealthCheck,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
    <td>Limites de cruzamento da consulta</td>
@@ -233,7 +233,7 @@ A função de uma Verificação de integridade composta é agregar várias Verif
        <li>retorna um status OK se houver menos de 45 minutos atrás </li>
       </ul> </li>
      <li>se nenhuma dessas condições for atendida, retornará o status OK</li>
-    </ul> <p>Os limites de status Crítico e Aviso são configuráveis. O Mbean para esta verificação de integridade é <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DasyncIndexHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=asyncIndexHealthCheck,type=HealthCheck</a>.</p> <p><strong>Observação: </strong>Esta verificação de integridade está disponível com AEM 6.4 e foi revertida para AEM 6.3.0.1.</p> </td>
+    </ul> <p>Os limites de status Crítico e Aviso são configuráveis. O Mbean para esta verificação de integridade é <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DasyncIndexHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=asyncIndexHealthCheck,type=HealthCheck</a>.</p> <p><strong>Observação: </strong>esta verificação de integridade está disponível com o AEM 6.4 e passou por uma porta de backup para o AEM 6.3.0.1.</p> </td>
   </tr>
   <tr>
    <td>Índices Lucene grandes</td>
@@ -241,7 +241,7 @@ A função de uma Verificação de integridade composta é agregar várias Verif
     <ul>
      <li>um Status de aviso se houver um índice com mais de 1 bilhão de documentos</li>
      <li>um Status crítico se houver um índice com mais de 1,5 bilhão de documentos</li>
-    </ul> <p>Os limites podem ser configurados e o MBean para a verificação de integridade é <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DlargeIndexHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=largeIndexHealthCheck,type=HealthCheck.</a></p> <p><strong>Observação: </strong>Esta verificação está disponível com AEM 6.4 e foi revertida para AEM 6.3.2.0.</p> </td>
+    </ul> <p>Os limites podem ser configurados e o MBean para a verificação de integridade é <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DlargeIndexHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=largeIndexHealthCheck,type=HealthCheck.</a></p> <p><strong>Observação: </strong>esta verificação está disponível com o AEM 6.4 e passou pela porta de backup para o AEM 6.3.2.0.</p> </td>
   </tr>
   <tr>
    <td>Manutenção do sistema</td>
@@ -251,7 +251,7 @@ A função de uma Verificação de integridade composta é agregar várias Verif
      <li>se uma tarefa não for adicionada a uma janela de manutenção, sua verificação de integridade retornará Critical</li>
      <li>configure as tarefas de manutenção Audit Log e Workflow Purge ou remova-as das janelas de manutenção. Se não configuradas, essas tarefas falharão na primeira tentativa de execução, portanto, a verificação de Manutenção do sistema retornará o status Crítico.</li>
      <li><strong>Com o AEM 6.4</strong>, também há uma verificação para a tarefa <a href="/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks">Manutenção de Binários Lucene</a></li>
-     <li>no AEM 6.2 e inferior, a verificação de manutenção do sistema retorna um status de Aviso logo após a inicialização porque as tarefas nunca são executadas. A partir do 6.3, eles retornarão OK se a primeira janela de manutenção ainda não tiver sido atingida.</li>
+     <li>no AEM 6.2 e versões anteriores, a verificação de manutenção do sistema retorna um status de Aviso logo após a inicialização porque as tarefas nunca são executadas. A partir do 6.3, eles retornarão OK se a primeira janela de manutenção ainda não tiver sido atingida.</li>
     </ul> <p>O MBean para esta verificação de integridade é <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsystemchecks%2Ctype%3DHealthCheck">org.apache.sling.health check:name=systemchecked,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
@@ -263,8 +263,7 @@ A função de uma Verificação de integridade composta é agregar várias Verif
    <td>
     <div>
       O Sling Jobs verifica o número de trabalhos em fila no JobManager, compara-o com o
-     Limite de <code>maxNumQueueJobs</code> e:
-    </div>
+     Limite de <code>maxNumQueueJobs</code> e:</div>
     <ul>
      <li>retorna uma Critical se mais de <code>maxNumQueueJobs</code> estiverem na fila</li>
      <li>retorna Crítico se houver jobs ativos de longa duração com mais de 1 hora</li>
@@ -297,10 +296,10 @@ A função de uma Verificação de integridade composta é agregar várias Verif
   </tr>
   <tr>
    <td>Verificações de segurança</td>
-   <td><p>A verificação de segurança é um composto que agrega os resultados de várias verificações relacionadas à segurança. Essas verificações de integridade individuais solucionam problemas diferentes da lista de verificação de segurança disponível na página <a href="/help/sites-administering/security-checklist.md">Lista de verificação de segurança.</a> A verificação é útil como um teste de fumaça de segurança quando a instância é iniciada. </p> <p>O MBean para esta verificação de integridade é <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=securitycheck,type=HealthCheck</a></p> </td>
+   <td><p>A verificação de segurança é um composto que agrega os resultados de várias verificações relacionadas à segurança. Essas verificações de integridade individuais abordam diferentes preocupações da lista de verificação de segurança disponível na <a href="/help/sites-administering/security-checklist.md">página de documentação da Lista de Verificação de Segurança.</a> A verificação é útil como um teste de fumaça de segurança quando a instância é iniciada. </p> <p>O MBean para esta verificação de integridade é <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=securitycheck,type=HealthCheck</a></p> </td>
   </tr>
   <tr>
-   <td>Grupos ativos</td>
+   <td>Pacotes ativos</td>
    <td><p>Grupos ativos verifica o estado de todos os pacotes e:</p>
     <ul>
      <li>retorna o status Aviso se qualquer um dos pacotes não estiver ativo ou (iniciando, com ativação lenta)</li>
@@ -327,7 +326,7 @@ A função de uma Verificação de integridade composta é agregar várias Verif
 
 ### Configuração de verificação de integridade {#health-check-configuration}
 
-Por padrão, para uma instância de AEM pronta para uso, as verificações de integridade são executadas a cada 60 segundos.
+Por padrão, para uma instância do AEM pronta para uso, as verificações de integridade são executadas a cada 60 segundos.
 
 Você pode configurar o **Período** com a [configuração OSGi](/help/sites-deploying/configuring-osgi.md) **Configuração de Verificação de Integridade da Consulta** (com.adobe.granite.queries.impl.hc.QueryHealthCheckMetrics).
 
@@ -345,7 +344,7 @@ Entre suas características mais importantes estão:
 * A capacidade de acessar despejos de heap e thread
 * Solicitações e analisadores de desempenho de consulta
 
-Você pode acessar a tela Ferramentas de Diagnóstico acessando **Ferramentas - Operações - Diagnóstico** na tela de Boas-vindas do AEM. Você também pode acessar a tela acessando diretamente a seguinte URL: `https://serveraddress:port/libs/granite/operations/content/diagnosis.html`
+Você pode acessar a tela Ferramentas de Diagnóstico acessando **Ferramentas - Operações - Diagnóstico** na tela de boas-vindas do AEM. Você também pode acessar a tela acessando diretamente a seguinte URL: `https://serveraddress:port/libs/granite/operations/content/diagnosis.html`
 
 ![chlimage_1-120](assets/chlimage_1-120.png)
 
@@ -452,7 +451,7 @@ Marcar a caixa **Incluir tempo de execução** antes de executar a consulta tamb
 
 A finalidade do Gerenciador de índice é facilitar o gerenciamento de índice, como manter índices ou exibir seu status.
 
-Ele pode ser acessado indo até **Ferramentas - Operações - Diagnóstico &#x200B;** na Tela de Boas-vindas e clicando no botão **Gerenciador de Índice**.
+Ele pode ser acessado indo até **Ferramentas - Operações - Diagnóstico** na Tela de Boas-vindas e clicando no botão **Gerenciador de Índice**.
 
 Ele também pode ser acessado diretamente nesta URL: `https://serveraddress:port/libs/granite/operations/content/diagnosistools/indexManager.html`
 
@@ -495,7 +494,7 @@ As seguintes tarefas estão disponíveis no Painel de operações:
 1. A tarefa de manutenção **Limpeza de Projeto**, localizada no menu **Janela de Manutenção Semanal**; usando a opção **Adicionar**.
 1. A tarefa de manutenção **Limpeza de tarefas ad-hoc**, localizada no menu **Janela de Manutenção Semanal**; usando a opção **Adicionar**.
 
-O tempo padrão para a janela de manutenção diária é de 2h às 5h. As tarefas configuradas para serem executadas na janela de manutenção semanal são executadas entre 1:00 e 2:00 aos sábados.
+O tempo padrão para a janela de manutenção diária é de 2:00 às 5:00. As tarefas configuradas para serem executadas na janela de manutenção semanal são executadas entre 1:00 e 2:00 da manhã aos sábados.
 
 Você também pode configurar os horários pressionando o ícone de engrenagem em qualquer uma das duas placas de manutenção:
 
@@ -503,7 +502,7 @@ Você também pode configurar os horários pressionando o ícone de engrenagem e
 
 >[!NOTE]
 >
->Desde o AEM 6.1, as janelas de manutenção existentes também podem ser configuradas para serem executadas mensalmente.
+>A partir do AEM 6.1, as janelas de manutenção existentes também podem ser configuradas para serem executadas mensalmente.
 
 ### Limpeza da revisão {#revision-clean-up}
 
@@ -516,9 +515,9 @@ Ao usar a tarefa Limpeza de binários do Lucene, você pode limpar os binários 
 Embora a tarefa de manutenção tenha sido desenvolvida para reduzir o lixo de revisão relacionado ao Lucene, há ganhos gerais de eficiência ao executar a tarefa:
 
 * A execução semanal da tarefa de coleta de lixo do armazenamento de dados pode ser concluída mais rapidamente.
-* Também pode melhorar ligeiramente o desempenho geral do AEM.
+* Isso também pode melhorar um pouco o desempenho geral do AEM.
 
-Você pode acessar a tarefa Limpeza de binários Lucene em: **AEM > Ferramentas > Operações > Manutenção > Janela de manutenção diária > Limpeza de binários Lucene**.
+Você pode acessar a tarefa Limpeza de Binários Lucene em: **AEM > Ferramentas > Operações > Manutenção > Janela de Manutenção Diária > Limpeza de Binários Lucene**.
 
 ### Coleta de lixo do armazenamento de dados {#data-store-garbage-collection}
 
@@ -622,7 +621,7 @@ As tarefas de manutenção personalizadas podem ser implementadas como serviços
    <td>Obrigatório</td>
   </tr>
   <tr>
-   <td>job.topics</td>
+   <td>tarefa.tópicos</td>
    <td>Um tópico exclusivo da tarefa de manutenção.<br /> A manipulação de trabalhos do Apache Sling inicia um trabalho com exatamente este tópico para executar a tarefa de manutenção e, conforme a tarefa é registrada para este tópico, ela é executada.<br /> O tópico deve começar com <i>com/adobe/granite/maintenance/job/</i></td>
    <td>com/adobe/granite/maintenance/job/MyMaintenanceTask</td>
    <td>Obrigatório</td>
@@ -660,7 +659,7 @@ O **Painel de Visão Geral do Sistema** exibe uma visão geral de alto nível da
 
 >[!NOTE]
 >
->Você também pode [assistir a este vídeo](https://video.tv.adobe.com/v/35618?captions=por_br) para obter uma introdução ao Painel de Visão Geral do Sistema.
+>Você também pode [assistir a este vídeo](https://video.tv.adobe.com/v/21340) para obter uma introdução ao Painel de Visão Geral do Sistema.
 
 ### Como Acessar {#how-to-access}
 
@@ -689,7 +688,7 @@ Você também pode baixar um arquivo `JSON` resumindo as informações do painel
      <li>uma lista de verificações com status Crítico</li>
      <li>uma lista de verificações com status de Aviso</li>
     </ul> </td>
-   <td>Indicado visualmente:<br />
+   <td>Indicado visualmente:
     <ul>
      <li>uma tag vermelha para verificações críticas</li>
      <li>uma tag laranja para verificações de Aviso</li>
@@ -736,7 +735,7 @@ Você também pode baixar um arquivo `JSON` resumindo as informações do painel
    <td>Instância</td>
    <td>
     <ul>
-     <li>a versão AEM</li>
+     <li>a versão do AEM</li>
      <li>lista de modos de execução</li>
      <li>a data em que a instância foi iniciada</li>
     </ul> </td>

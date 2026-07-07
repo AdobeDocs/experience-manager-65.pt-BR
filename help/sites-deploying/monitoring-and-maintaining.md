@@ -12,7 +12,7 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
 workflow-type: tm+mt
-source-wordcount: '5755'
+source-wordcount: '5999'
 ht-degree: 0%
 
 ---
@@ -228,13 +228,13 @@ As ações de moderação são registradas aqui.
    * `error.log`
 Mensagens de erro (de vários níveis de gravidade) são registradas aqui.
 
-   * [`ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-image-server-log.html?lang=pt-BR)
+   * [`ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-image-server-log.html)
 Este log só será usado se [!DNL Dynamic Media] estiver habilitado. Ele fornece estatísticas e informações analíticas usadas para analisar o comportamento do processo interno do ImageServer.
 
    * `request.log`
 Cada solicitação de acesso é registrada aqui junto com a resposta.
 
-   * [`s7access-<yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-access-log.html?lang=pt-BR)
+   * [`s7access-<yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-access-log.html)
 Este log só será usado se [!DNL Dynamic Media] estiver habilitado. O log de acesso s7registra cada solicitação feita a [!DNL Dynamic Media] até `/is/image` e `/is/content`.
 
    * `stderr.log`
@@ -340,13 +340,13 @@ Em determinadas circunstâncias, talvez você queira criar um arquivo de log per
    >
    >`org.apache.sling.commons.log.pattern` dá suporte a até seis argumentos.
    >
-   >{0} O carimbo de data/hora do tipo `java.util.Date`
+   >`java.util.Date` O carimbo de data/hora do tipo {0}
    >
    >{1} o marcador de log
    >
    >{2} o nome do thread atual
    >
-   >{3} o nome do agente de log
+   >{3} o nome do agente
    >
    >{4} o nível de log
    >
@@ -435,7 +435,7 @@ Em determinadas circunstâncias, talvez você queira criar um arquivo de log per
    >* Um limite de tamanho pode ser especificado com um número. Se nenhum indicador de tamanho for fornecido, ele será tomado como o número de bytes ou você poderá adicionar um dos indicadores de tamanho - `KB`, `MB` ou `GB` (maiúsculas e minúsculas são ignoradas).
    >* Um cronograma de data/hora pode ser especificado como um padrão `java.util.SimpleDateFormat`. Ele define o período após o qual o arquivo é girado. Além disso, o sufixo anexado ao arquivo girado (para identificação).
    >
-   >O padrão é &#39;.&#39;dd/MM/yyyy (para rotação diária de logs).
+   >O padrão é &#39;.&#39;aaaa-MM-dd (para rotação diária do log).
    >
    >Por exemplo, à meia-noite de 20 de janeiro de 2010 (ou quando a primeira mensagem de log após essa data ocorrer para ser precisa), ../logs/error.log será renomeado para ../logs/error.log.2010-01-20. Os registros de 21 de janeiro são enviados para (um novo e vazio) ../logs/error.log até serem transferidos na próxima alteração do dia.
    >
@@ -591,7 +591,7 @@ Algumas dessas ferramentas dependem do sistema operacional.
 <table>
  <tbody>
   <tr>
-   <td>Ferramenta </td>
+   <td>Ferramenta</td>
    <td>Usado para analisar...</td>
    <td>Uso / Mais informações...</td>
   </tr>
@@ -695,7 +695,7 @@ O log de solicitação registra cada solicitação feita, juntamente com a respo
 09:43:41 [66] <- 200 text/html 797ms
 ```
 
-Ao totalizar todas as entradas do GET em períodos específicos (por exemplo, em vários períodos de 24 horas), você pode fazer declarações sobre o tráfego médio no seu site.
+Ao totalizar todas as entradas GET em períodos específicos (por exemplo, em vários períodos de 24 horas), você pode fazer declarações sobre o tráfego médio no seu site.
 
 #### Monitoramento dos tempos de resposta com o request.log {#monitoring-response-times-with-the-request-log}
 
@@ -769,7 +769,7 @@ Testes devem ser feitos para determinar quantos usuários simultâneos o sistema
 ### Usar rlog.jar para encontrar solicitações com tempos de longa duração {#using-rlog-jar-to-find-requests-with-long-duration-times}
 
 O AEM inclui várias ferramentas auxiliares no seguinte:
-`<cq-installation-dir>/crx-quickstart/opt/helpers`
+
 
 Uma dessas ferramentas, `rlog.jar`, pode ser usada para classificar rapidamente `request.log` de modo que as solicitações sejam exibidas por duração, do mais longo ao menor tempo.
 
@@ -1098,9 +1098,9 @@ Veja a seguir uma lista de sugestões sobre o que verificar se você começa a e
 >
 >Consulte também os seguintes artigos para obter mais informações:
 >
->* [Despejos de thread](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=pt-BR)
->* [Analisar problemas de memória](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=pt-BR)
->* [Analisar usando o criador de perfil interno](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html?lang=pt-BR)
+>* [Despejos de thread](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html)
+>* [Analisar problemas de memória](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html)
+>* [Analisar usando o criador de perfil interno](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html)
 >
 
 ### Memória insuficiente {#out-of-memory}
@@ -1116,7 +1116,7 @@ Nesses casos, verifique:
 * As configurações JVM usadas para [iniciar o AEM](/help/sites-deploying/deploy.md#getting-started)
 * Base de conhecimento:
 
-* [Analisar problemas de memória](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=pt-BR)
+* [Analisar problemas de memória](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html)
 
 ### E/S de disco {#disk-i-o}
 
@@ -1134,7 +1134,7 @@ Se o sistema estiver ficando sem espaço em disco ou se você notar hash no disc
 * Se e como você configurou a [Limpeza de Versão](/help/sites-deploying/version-purging.md)
 * Base de conhecimento:
 
-   * [Muitos Arquivos Abertos]&#x200B;(https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html?lang=pt-BR
+   * [Muitos Arquivos Abertos]&#x200B;(https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html
 
 ### Degradação regular do desempenho {#regular-performance-degradation}
 
@@ -1143,7 +1143,7 @@ Se você observar o desempenho da sua instância se deteriorando após cada rein
 * [Memória insuficiente](#outofmemory)
 * Base de conhecimento:
 
-   * [Resolvedor de Recursos Não Fechados](https://experienceleague.adobe.com/pt-br/docs/experience-cloud-kcs/kbarticles/ka-23761)
+   * [Resolvedor de Recursos Não Fechados](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-23761)
 
 ### Ajuste de JVM {#jvm-tuning}
 

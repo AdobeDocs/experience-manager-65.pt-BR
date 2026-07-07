@@ -9,8 +9,8 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f941782f9a4201e7bff898853d3fc18954418500
 workflow-type: tm+mt
-source-wordcount: '908'
-ht-degree: 3%
+source-wordcount: '997'
+ht-degree: 7%
 
 ---
 
@@ -41,11 +41,11 @@ A jornada começa aprendendo o caso de uso:
 
 Um site oferece uma variedade de produtos para clientes diversos. Os clientes navegam pelo portal, selecionam e solicitam os produtos. Cada cliente cria uma conta e fornece endereços de entrega e cobrança. Uma cliente existente, Sara Rose, está procurando adicionar seu endereço de entrega ao site. O site fornece um formulário online para adicionar e atualizar endereços de envio.
 
-O site é executado no Adobe Experience Manager (AEM) e usa AEM [!DNL Forms] para captura e processamento de dados. O formulário de adição e atualização de endereço é um formulário adaptável. O site armazena os detalhes do cliente em um banco de dados. Eles usam o formulário de adição e atualização de endereço para recuperar e exibir os endereços disponíveis. Eles também usam o formulário adaptável para aceitar endereços atualizados e novos.
+O site é executado no Adobe Experience Manager (AEM) e usa o AEM [!DNL Forms] para captura e processamento de dados. O formulário de adição e atualização de endereço é um formulário adaptável. O site armazena os detalhes do cliente em um banco de dados. Eles usam o formulário de adição e atualização de endereço para recuperar e exibir os endereços disponíveis. Eles também usam o formulário adaptável para aceitar endereços atualizados e novos.
 
 ### Pré-requisitos {#prerequisite}
 
-* Configurar uma [instância de autor do AEM](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/deploying/deploy.html?lang=pt-BR#author-and-publish-installs)
+* Configurar uma [instância do autor do AEM](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/deploying/deploy.html#author-and-publish-installs)
 * Instale o [complemento do AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md) na instância do autor.
 * Obter o driver de banco de dados JDBC (arquivo JAR) do provedor de banco de dados. Exemplos no tutorial são baseados no banco de dados [!DNL MySQL] e usam o [!DNL Oracle's] [driver do banco de dados JDBC do MySQL](https://dev.mysql.com/downloads/connector/j/5.1.html).
 
@@ -66,13 +66,13 @@ Metas:
 * Crie uma ação de envio para enviar um email com conteúdo de formulário.
 * Pré-visualize e envie um formulário adaptável.
 
-[![Consulte o Guia](assets/see-the-guide-sm.png)](create-adaptive-form.md)
+[![Consulte o guia](assets/see-the-guide-sm.png)](create-adaptive-form.md)
 
 ## Etapa 2: Criar modelo de dados do formulário {#step-create-form-data-model}
 
 ![05-criar-formulário-modelo-dados-principal_pequeno](assets/05-create-form-data-model-main_small.png)
 
-Um modelo de dados de formulário permite conectar um formulário adaptável a fontes de dados diferentes. Por exemplo, perfil de usuário AEM, serviços Web RESTful, serviços Web baseados em SOAP, serviços OData e bancos de dados relacionais. Um modelo de dados de formulário é um esquema de representação de dados unificada de entidades e serviços comerciais disponíveis em fontes de dados conectadas. Você pode usar o modelo de dados de formulário com um formulário adaptável para recuperar, atualizar, excluir e adicionar dados às fontes de dados conectadas.
+Um modelo de dados de formulário permite conectar um formulário adaptável a fontes de dados diferentes. Por exemplo, o perfil de usuário do AEM, os serviços Web RESTful, os serviços Web baseados no SOAP, os serviços OData e os bancos de dados relacionais. Um modelo de dados de formulário é um esquema de representação de dados unificada de entidades e serviços comerciais disponíveis em fontes de dados conectadas. Você pode usar o modelo de dados de formulário com um formulário adaptável para recuperar, atualizar, excluir e adicionar dados às fontes de dados conectadas.
 
 Metas:
 
@@ -82,7 +82,7 @@ Metas:
 * Configure os serviços de leitura e gravação para o modelo de dados de formulário.
 * Testar o modelo de dados do formulário e os serviços configurados com dados de teste.
 
-[![Consulte o Guia](assets/see-the-guide-sm.png)](create-form-data-model.md)
+[![Consulte o guia](assets/see-the-guide-sm.png)](create-form-data-model.md)
 
 ## Etapa 3: Aplicar regras a campos de formulário adaptáveis {#step-apply-rules-to-adaptive-form-fields}
 
@@ -95,7 +95,7 @@ Metas:
 * Crie e aplique regras a campos de formulário adaptáveis.
 * Use regras para acionar serviços de modelo de dados de formulário para atualizar os dados para o banco de dados.
 
-[![Consulte o Guia](assets/see-the-guide-sm.png)](apply-rules-to-adaptive-form-fields.md)
+[![Consulte o guia](assets/see-the-guide-sm.png)](apply-rules-to-adaptive-form-fields.md)
 
 ## Etapa 4: Crie o estilo do formulário adaptável {#step-style-your-adaptive-form}
 
@@ -107,20 +107,20 @@ Metas:
 
 * Aplique um tema pronto para uso a um formulário adaptável.
 * Crie um tema para formulário adaptável usando o editor de temas.
-* Use Web Fonts em um tema personalizado.
+* Use o Web Fonts em um tema personalizado.
 
-[![Consulte o Guia](assets/see-the-guide-sm.png)](style-your-adaptive-form.md)
+[![Consulte o guia](assets/see-the-guide-sm.png)](style-your-adaptive-form.md)
 
-## Etapa 5: Publish seu formulário adaptável {#step-publish-your-adaptive-form}
+## Etapa 5: publique seu formulário adaptável {#step-publish-your-adaptive-form}
 
 ![12-publicar-seu-formulário-adaptável-pequeno_pequeno](assets/12-publish-your-adaptive-form-_small.png)
 
-Você pode publicar formulários adaptáveis como um formulário independente (aplicativo de página única), incluir na [página Sites](/help/forms/using/embed-adaptive-form-aem-sites.md) do AEM ou listar em um [!DNL Site] AEM usando o [Portal Forms](../../forms/using/introduction-publishing-forms.md).
+Você pode publicar formulários adaptáveis como um formulário independente (aplicativo de página única), incluir na [página Sites](/help/forms/using/embed-adaptive-form-aem-sites.md) do AEM ou listar em um [!DNL Site] do AEM usando o [Portal do Forms](../../forms/using/introduction-publishing-forms.md).
 
 Metas:
 
-* Publish o formulário adaptável como uma página AEM.
+* Publique o formulário adaptável como uma página do AEM.
 * Incorpore o formulário adaptável em uma página do AEM [!DNL Sites].
-* Incorpore o formulário adaptável em uma página da Web externa (uma página da Web não AEM hospedada fora do AEM).
+* Incorpore o formulário adaptável em uma página da Web externa (uma página da Web que não seja do AEM hospedada fora do AEM).
 
-[![Consulte o Guia](assets/see-the-guide-sm.png)](publish-your-adaptive-form.md)
+[![Consulte o guia](assets/see-the-guide-sm.png)](publish-your-adaptive-form.md)

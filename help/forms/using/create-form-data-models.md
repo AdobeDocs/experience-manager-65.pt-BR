@@ -10,8 +10,8 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '952'
-ht-degree: 1%
+source-wordcount: '974'
+ht-degree: 3%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models.html?lang=pt-BR) |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models.html) |
 | AEM 6.5 | Este artigo |
 
 
@@ -39,13 +39,13 @@ A integração de dados do AEM Forms fornece uma interface de usuário intuitiva
 
 Verifique se você configurou as fontes de dados que pretende usar no modelo de dados de formulário conforme descrito em [Configurar fontes de dados](../../forms/using/configure-data-sources.md). Faça o seguinte para criar um modelo de dados de formulário com base nas fontes de dados configuradas:
 
-1. Na instância do autor AEM, navegue até **[!UICONTROL Forms > Integrações de dados]**.
+1. Na instância do autor do AEM, navegue até **[!UICONTROL Forms > Integrações de dados]**.
 1. Selecione **[!UICONTROL Criar > Modelo de dados de formulário]**.
 1. Na caixa de diálogo Criar modelo de dados de formulário:
 
    * Especifique um nome para o modelo de dados de formulário.
    * (**Opcional**) Especifique o título, a descrição e as marcas para o modelo de dados de formulário.
-   * (**Opcional e aplicável somente se as fontes de dados estiverem configuradas**) Selecione o ícone de marca de verificação ao lado do campo **[!UICONTROL Configuração do Data Source]** e selecione o nó de configuração onde residem os serviços em nuvem para as fontes de dados que você deseja usar. Ele restringe a lista de origens de dados disponíveis para seleção na próxima página às disponíveis no nó de configuração selecionado. No entanto, qualquer banco de dados JDBC e origens de dados de perfil de usuário AEM são listados por padrão. Se você não selecionar um nó de configuração, as origens de dados de todos os nós de configuração serão listadas.
+   * (**Opcional e aplicável somente se as fontes de dados estiverem configuradas**) Selecione o ícone de marca de verificação ao lado do campo **[!UICONTROL Configuração do Data Source]** e selecione o nó de configuração onde residem os serviços em nuvem para as fontes de dados que você deseja usar. Ele restringe a lista de origens de dados disponíveis para seleção na próxima página às disponíveis no nó de configuração selecionado. No entanto, qualquer banco de dados JDBC e origens de dados de perfil de usuário do AEM são listados por padrão. Se você não selecionar um nó de configuração, as origens de dados de todos os nós de configuração serão listadas.
 
    Selecione **[!UICONTROL Próximo]**.
 
@@ -54,7 +54,7 @@ Verifique se você configurou as fontes de dados que pretende usar no modelo de 
 
 Vamos revisar os diferentes componentes da interface do editor do modelo de dados de formulário.
 
-![Um modelo de dados de formulário com três fontes de dados - um serviço RESTful, um perfil de usuário AEM e um RDBMS](assets/fdm-ui.png)
+![Um modelo de dados de formulário com três fontes de dados - um serviço RESTful, um perfil de usuário do AEM e um RDBMS](assets/fdm-ui.png)
 
 **A Fontes de Dados** Lista fontes de dados em um modelo de dados de formulário. Expanda uma fonte de dados para exibir seus objetos de modelo de dados e serviços.
 

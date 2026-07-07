@@ -11,7 +11,7 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '959'
+source-wordcount: '969'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 1%
 
 Os recursos do AEM Communities geralmente exigem que os visitantes do site sejam registrados e conectados antes de participar de uma comunidade no ambiente de publicação. O registro do usuário só precisa existir no ambiente de publicação, e eles são comumente chamados de *membros* para diferenciá-los de *usuários* registrados no ambiente de criação.
 
-### Membros (usuários) no Publish {#members-users-on-publish}
+### Membros (usuários) na publicação {#members-users-on-publish}
 
 Usando os consoles Membros e Grupos de Comunidades, membros e grupos de membros registrados no ambiente *publicar* podem ser criados e gerenciados no ambiente *autor*. Isso só é possível quando o [serviço de túnel](deploy-communities.md#tunnel-service-on-author) está habilitado.
 
@@ -85,14 +85,11 @@ A maioria dos campos são campos opcionais que o membro pode preencher posterior
 
 * **[!UICONTROL ID]**
 
-(*Obrigatório*) A ID autorizável é a ID de entrada do membro.
-Por padrão, a ID é definida como o valor do endereço de email necessário.
-*Uma vez criada, a ID não pode ser modificada*.
+(*Obrigatório*) A ID autorizável é a ID de entrada do membro.Por padrão, a ID é definida como o valor do endereço de email necessário.*Uma vez criada, a ID não pode ser modificada*.
 
 * **[!UICONTROL Endereço de email]**
 
-(*Obrigatório*) O endereço de email do membro.
-O membro pode alterar seu endereço de e-mail ao atualizar seu perfil.
+(*Obrigatório*) O endereço de email do membro.O membro pode alterar seu endereço de e-mail ao atualizar seu perfil.
 Se a ID tiver assumido como padrão o endereço de email, a ID *não* será alterada quando o endereço de email for alterado.
 
 * **[!UICONTROL Senha]**
@@ -128,9 +125,7 @@ Um membro tem acesso total ao site da comunidade.
 
 * **[!UICONTROL Limites de contribuição]**
 
-  Se marcada, a capacidade do membro de publicar conteúdo é limitada.
-O padrão depende da configuração dos limites de contribuição.
-Consulte [Limites de contribuição de membros](limits.md).
+  Se marcada, a capacidade do membro de publicar conteúdo é limitada.O padrão depende da configuração dos limites de contribuição.Consulte [Limites de contribuição de membros](limits.md).
 
 * **[!UICONTROL Alterar senha]**
 
