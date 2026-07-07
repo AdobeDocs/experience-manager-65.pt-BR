@@ -24,7 +24,7 @@ ht-degree: 13%
 >
 >Para obter mais informações sobre como solucionar e corrigir problemas de desempenho, consulte também a [Árvore de desempenho](/help/sites-deploying/performance-tree.md).
 >
->Além disso, você pode consultar um artigo da Base de Dados de Conhecimento sobre [Dicas de Ajuste de Desempenho](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-17466).
+>Além disso, você pode consultar um artigo da Base de Dados de Conhecimento sobre [Dicas de Ajuste de Desempenho](https://experienceleague.adobe.com/pt-br/docs/experience-cloud-kcs/kbarticles/ka-17466).
 
 Um problema importante é o tempo que o site leva para responder às solicitações do visitante. Embora esse valor varie para cada solicitação, um valor de target médio pode ser definido. Quando esse valor puder ser obtido e mantido, ele poderá ser usado para monitorar o desempenho do site e indicar o desenvolvimento de possíveis problemas.
 
@@ -41,7 +41,7 @@ Esse ambiente contém conteúdo que você disponibiliza para os usuários. Aqui,
 >[!NOTE]
 >
 >* Depois de configurar para otimização de desempenho, siga os procedimentos em [Dia difícil](/help/sites-developing/tough-day.md) para testar o ambiente sob carga pesada.
->* Consulte também [Dicas de ajuste de desempenho.](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-17466)
+>* Consulte também [Dicas de ajuste de desempenho.](https://experienceleague.adobe.com/pt-br/docs/experience-cloud-kcs/kbarticles/ka-17466)
 
 ## Metodologia de otimização de desempenho {#performance-optimization-methodology}
 
@@ -493,7 +493,7 @@ O Dispatcher oferece vários mecanismos integrados que você pode usar para otim
 >
 >Em geral, várias estratégias de armazenamento em cache envolvem selecionar bons URLs e não depender desses dados adicionais.
 >
->Com a versão 4.1.11 do Dispatcher, também é possível armazenar cabeçalhos de resposta em cache. Consulte [Armazenamento em cache de cabeçalhos de resposta HTTP](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache).
+>Com a versão 4.1.11 do Dispatcher, também é possível armazenar cabeçalhos de resposta em cache. Consulte [Armazenamento em cache de cabeçalhos de resposta HTTP](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=pt-BR#configuring-the-dispatcher-cache-cache).
 >
 
 ### Cálculo da taxa de cache do Dispatcher {#calculating-the-dispatcher-cache-ratio}
@@ -529,7 +529,7 @@ Com a versão 4.1.11 do Dispatcher, você pode armazenar em cache cabeçalhos de
 
 #### Evitar parâmetros de URL {#avoid-url-parameters}
 
-Se possível, evite parâmetros de URL para páginas que você deseja armazenar em cache. Por exemplo, se você tiver uma galeria de imagens, o URL a seguir nunca será armazenado em cache (a menos que o Dispatcher esteja [configurado adequadamente](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache)):
+Se possível, evite parâmetros de URL para páginas que você deseja armazenar em cache. Por exemplo, se você tiver uma galeria de imagens, o URL a seguir nunca será armazenado em cache (a menos que o Dispatcher esteja [configurado adequadamente](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=pt-BR#configuring-the-dispatcher-cache-cache)):
 
 ```xml
 www.myCompany.com/pictures/gallery.html?event=christmas&amp;page=1
@@ -602,7 +602,7 @@ Para páginas que não são modificadas, as imagens ainda permanecem no cache, e
 * Se, por outro lado, você oferecer a opção de dez páginas iniciais diferentes, poderá armazenar em cache cada uma delas para melhorar o desempenho.
 
 >[!TIP]
->Para obter mais detalhes sobre como configurar o cache do Dispatcher, consulte o [Tutorial de cache do AEM Dispatcher](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/dispatcher-tutorial/overview) e sua seção sobre [Armazenamento em cache de conteúdo protegido.](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/chapter-1.html#dispatcher-tips-and-tricks)
+>Para obter mais detalhes sobre como configurar o cache do Dispatcher, consulte o [Tutorial de cache do AEM Dispatcher](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/dispatcher-tutorial/overview) e sua seção sobre [Armazenamento em cache de conteúdo protegido.](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/chapter-1.html?lang=pt-BR#dispatcher-tips-and-tricks)
 
 Se você personalizar cada página colocando o nome do usuário na barra de título (por exemplo), isso terá um impacto no desempenho.
 
@@ -613,11 +613,11 @@ Em relação à combinação de conteúdo restrito e público em uma página, co
 
 >[!TIP]
 >
->Para gerenciar conteúdo misto público e restrito, consulte [Configurar Sling Dynamic Include.](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-sling-dynamic-include.html)
+>Para gerenciar conteúdo misto público e restrito, consulte [Configurar Sling Dynamic Include.](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-sling-dynamic-include.html?lang=pt-BR)
 
 #### Conexões adesivas {#sticky-connections}
 
-As [conexões adesivas](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html#the-benefits-of-load-balancing) garantem que os documentos de um usuário sejam todos compostos no mesmo servidor. Se um usuário sair dessa pasta e posteriormente retornar a ela, a conexão ainda permanecerá. Para armazenar todos os documentos que exigem conexões adesivas para o site, defina uma pasta. Tente não manter outros documentos nela. Esse cenário afeta o balanceamento de carga se você usar páginas personalizadas e dados de sessão.
+As [conexões adesivas](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=pt-BR#the-benefits-of-load-balancing) garantem que os documentos de um usuário sejam todos compostos no mesmo servidor. Se um usuário sair dessa pasta e posteriormente retornar a ela, a conexão ainda permanecerá. Para armazenar todos os documentos que exigem conexões adesivas para o site, defina uma pasta. Tente não manter outros documentos nela. Esse cenário afeta o balanceamento de carga se você usar páginas personalizadas e dados de sessão.
 
 #### Tipos MIME {#mime-types}
 

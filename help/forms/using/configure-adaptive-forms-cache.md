@@ -60,10 +60,10 @@ Você também pode configurar o cache de formulários adaptáveis no Dispatcher 
 
 Para ativar e configurar o armazenamento em cache de formulários adaptáveis no Dispatcher, execute as seguintes etapas:
 
-1. Abra a seguinte URL para cada instância de publicação do seu ambiente e [habilite o agente de limpeza para instâncias de publicação do seu ambiente](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance):
+1. Abra a seguinte URL para cada instância de publicação do seu ambiente e [habilite o agente de limpeza para instâncias de publicação do seu ambiente](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=pt-BR#invalidating-dispatcher-cache-from-a-publishing-instance):
    `http://[server]:[port]]/etc/replication/agents.publish/flush.html`
 
-1. [Adicione o seguinte ao arquivo dispatcher.any](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#automatically-invalidating-cached-files):
+1. [Adicione o seguinte ao arquivo dispatcher.any](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=pt-BR#automatically-invalidating-cached-files):
 
    ```JSON
       /invalidate
@@ -92,7 +92,7 @@ Para ativar e configurar o armazenamento em cache de formulários adaptáveis no
    * Um formulário adaptável permanece no cache até que uma versão atualizada do formulário não seja publicada.
 
    * Quando uma versão mais recente de um recurso referenciado em um formulário adaptável é publicada, os formulários adaptáveis afetados são invalidados automaticamente. Há algumas exceções à invalidação automática de recursos referenciados. Para obter uma solução alternativa para as exceções, consulte a seção [solução de problemas](#troubleshooting).
-1. [Adicione o arquivo de regras dispatcher.any abaixo ou o arquivo de regras personalizado](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#specifying-the-documents-to-cache). Ela exclui os URLs que não oferecem suporte ao armazenamento em cache. Por exemplo, Comunicação interativa.
+1. [Adicione o arquivo de regras dispatcher.any abaixo ou o arquivo de regras personalizado](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=pt-BR#specifying-the-documents-to-cache). Ela exclui os URLs que não oferecem suporte ao armazenamento em cache. Por exemplo, Comunicação interativa.
 
    ```JSON
       /0000 {
@@ -116,7 +116,7 @@ Para ativar e configurar o armazenamento em cache de formulários adaptáveis no
       }
    ```
 
-1. [Adicionar os seguintes parâmetros à lista de parâmetros de URL ignorados](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#ignoring-url-parameters):
+1. [Adicionar os seguintes parâmetros à lista de parâmetros de URL ignorados](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=pt-BR#ignoring-url-parameters):
 
    ```JSON
       /ignoreUrlParams {

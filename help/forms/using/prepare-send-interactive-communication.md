@@ -180,7 +180,7 @@ A Adobe recomenda executar essas instruções em sequência para salvar com êxi
 
 Por padrão, o recurso Salvar como rascunho não está ativado. Execute as seguintes etapas para ativar o recurso:
 
-1. Implemente a SPI (Interface do Provedor de Serviços) [ccrDocumentInstance](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/ccm/ccr/ccrDocumentInstance/api/services/CCRDocumentInstanceService.html).
+1. Implemente a SPI (Interface do Provedor de Serviços) [ccrDocumentInstance](https://helpx.adobe.com/br/experience-manager/6-5/forms/javadocs/com/adobe/fd/ccm/ccr/ccrDocumentInstance/api/services/CCRDocumentInstanceService.html).
 
    A SPI permite salvar a versão de rascunho da Comunicação interativa no banco de dados com uma ID de rascunho como o identificador exclusivo. Essas instruções pressupõem que você tenha conhecimento prévio sobre como criar um pacote OSGi usando um projeto Maven.
 
