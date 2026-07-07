@@ -609,7 +609,7 @@ Os serviços OSGi opcionais podem ser implementados para personalizar várias pa
 
 Os serviços a seguir têm uma implementação padrão no portlet de conteúdo (com uma interface Java correspondente). Para personalizar, um pacote contendo a nova implementação do serviço precisa ser implantado no aplicativo do portlet.
 
-Ao implementar esse serviço, defina a propriedade **service.ranking** do serviço com um valor positivo. A implementação padrão usa a classificação** 0** e o portlet usa o serviço com a classificação mais alta.
+Ao implementar esse serviço, defina a propriedade **service.ranking** do serviço com um valor positivo. A implementação padrão usa a classificação **&#x200B; 0** e o portlet usa o serviço com a classificação mais alta.
 
 | **Nome** | **Descrição** | **Comportamento padrão** |
 |---|---|---|

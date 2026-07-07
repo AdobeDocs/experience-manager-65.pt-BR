@@ -47,7 +47,7 @@ Ao preparar a Comunicação interativa usando a interface do agente, o agente ge
 
 ### Inserir dados {#enter-data}
 
-1. Na guia Dados, insira os dados de variáveis, propriedades do modelo de dados de formulário e campos do modelo de impressão (XDP), conforme necessário. Preencha todos os campos obrigatórios marcados com um asterisco (&amp;ast;) para habilitar o botão **Enviar**.
+1. Na guia Dados, insira os dados de variáveis, propriedades do modelo de dados de formulário e campos do modelo de impressão (XDP), conforme necessário. Preencha todos os campos obrigatórios marcados com um asterisco (&ast;) para habilitar o botão **Enviar**.
 
    Selecione um valor de campo de dados na visualização de Comunicação interativa para realçar o campo de dados correspondente na guia Dados ou vice-versa.
 
@@ -146,7 +146,7 @@ A interface do usuário do agente tem suporte integrado para 210 caracteres espe
 
 ### Fragmentos do documento {#document-fragments}
 
-![ ](do-not-localize/contentoptionsdocfragments.png)
+![&#x200B; &#x200B;](do-not-localize/contentoptionsdocfragments.png)
 
 * **Setas para cima/para baixo**: setas para mover fragmentos de documento para cima ou para baixo na Comunicação Interativa.
 * **Excluir**: se permitido, exclua o fragmento do documento da Comunicação Interativa.

@@ -117,10 +117,10 @@ Considere os seguintes exemplos de URLs do Quickview e as variáveis de ponto de
     <td><p>SKU única, encontrada na cadeia de caracteres de consulta.</p> </td>
     <td><p>Os URLs de Quickview gravados incluem o seguinte:</p>
     <ul>
-      <li><p><code>https://server/json?productId=866558&amp;source=100</code></p> </li>
-      <li><p><code>https://server/json?productId=1196184&amp;source=100</code></p> </li>
-      <li><p><code>https://server/json?productId=1081492&amp;source=100</code></p> </li>
-      <li><p><code>https://server/json?productId=1898294&amp;source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=866558&source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=1196184&source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=1081492&source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=1898294&source=100</code></p> </li>
     </ul> <p>A única parte variável no URL é o valor do parâmetro da string de consulta productId=, e é claramente um valor de SKU. Portanto, seus pontos de acesso só precisam de campos de SKU preenchidos com valores como <strong><code>866558</code></strong>, <strong><code>1196184</code></strong>, <strong><code>1081492</code></strong>, <strong><code>1898294</code></strong>.</p> </td>
   </tr>
   <tr>
@@ -136,9 +136,9 @@ Considere os seguintes exemplos de URLs do Quickview e as variáveis de ponto de
     <td><p>SKU e ID de categoria na cadeia de caracteres de consulta.</p> </td>
     <td><p>Os URLs de Quickview gravados incluem o seguinte:</p>
     <ul>
-      <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=305466</code></p> </li>
-      <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=310181</code></p> </li>
-      <li><p><code>https://server/quickView/product/?category=1740148&amp;prodId=308706</code></p> </li>
+      <li><p><code>https://server/quickView/product/?category=1100004&prodId=305466</code></p> </li>
+      <li><p><code>https://server/quickView/product/?category=1100004&prodId=310181</code></p> </li>
+      <li><p><code>https://server/quickView/product/?category=1740148&prodId=308706</code></p> </li>
     </ul> <p>Nesse caso, há duas partes variáveis no URL. A SKU está armazenada no parâmetro <code>prodId</code> e a ID de categoria <code></code> está armazenada no parâmetro <code>category=</code>.</p> <p>Sendo assim, as definições dos pontos de acesso são pares. Isto é, um valor de SKU e uma variável extra chamada <code>categoryId</code>. Os pares resultantes são os seguintes:</p>
     <ul>
       <li><p>A SKU é <strong><code>305466</code></strong> e <code>categoryId</code> é <code>1100004</code>.</p> </li>
@@ -433,27 +433,27 @@ Usando os exemplos de URL do Quickview anterior, você pode ver nos exemplos a s
  <tbody>
   <tr>
    <td><p>SKU única, encontrada na sequência de consulta</p> </td>
-   <td><code class="code">s7interactiveimageviewer.setHandlers({
-      "quickViewActivate": function(inData) {
-      var quickViewUrl = "https://server/json?productId=" + inData.sku + "&amp;amp;source=100";
-      },
-      });</code></td>
+   <td><code class="code">s7interactiveimageviewer.setHandlers(&lbrace;
+      "quickViewActivate": function(inData) &lbrace;
+      var quickViewUrl = "https://server/json?productId=" + inData.sku + "&amp;source=100";
+      &rbrace;,
+      &rbrace;);</code></td>
   </tr>
   <tr>
    <td><p>SKU única, encontrada no caminho do URL</p> </td>
-   <td><code class="code">s7interactiveimageviewer.setHandlers({
-      "quickViewActivate": function(inData) {
+   <td><code class="code">s7interactiveimageviewer.setHandlers(&lbrace;
+      "quickViewActivate": function(inData) &lbrace;
       var quickViewUrl = "https://server/product/" + inData.sku;
-      },
-      });</code></td>
+      &rbrace;,
+      &rbrace;);</code></td>
   </tr>
   <tr>
    <td><p>SKU e ID de categoria na cadeia de caracteres de consulta</p> </td>
-   <td><code class="code">s7interactiveimageviewer.setHandlers({
-      "quickViewActivate": function(inData) {
-      var quickViewUrl = "https://server/quickView/product/?category=" + inData.categoryId + "&amp;amp;prodId=" + inData.sku;
-      },
-      });</code></td>
+   <td><code class="code">s7interactiveimageviewer.setHandlers(&lbrace;
+      "quickViewActivate": function(inData) &lbrace;
+      var quickViewUrl = "https://server/quickView/product/?category=" + inData.categoryId + "&amp;prodId=" + inData.sku;
+      &rbrace;,
+      &rbrace;);</code></td>
   </tr>
  </tbody>
 </table>
