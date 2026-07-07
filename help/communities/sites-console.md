@@ -12,7 +12,7 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '3084'
+source-wordcount: '3185'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Consulte [Introdução ao AEM Communities](/help/communities/getting-started.md)
 
 Antes de criar um site da comunidade, é *necessário*:
 
-* Verifique se uma ou mais instâncias do Publish estão em execução.
+* Verifique se uma ou mais instâncias de publicação estão em execução.
 * Habilite o [serviço de túnel](/help/communities/deploy-communities.md#tunnel-service-on-author) para gerenciar membros e grupos de membros.
 * Identifique o [publicador principal](/help/communities/deploy-communities.md#primary-publisher).
 * [Configure a replicação](/help/communities/deploy-communities.md#replication-agents-on-author) quando a porta do publicador primário não for o padrão (4503).
@@ -124,7 +124,7 @@ O painel Design contém dois subpainéis para selecionar o tema e o banner da ma
 
 ![sitetheme](assets/sitetheme.png)
 
-A estrutura usa o `Twitter Bootstrap` para trazer um design responsivo e flexível para o site. Um dos muitos temas de Bootstrap pré-carregados pode ser selecionado para criar um estilo para o modelo de site de comunidade selecionado, ou um tema de Bootstrap pode ser carregado.
+A estrutura usa o `Twitter Bootstrap` para trazer um design responsivo e flexível para o site. Um dos muitos temas pré-carregados do Bootstrap pode ser selecionado para estilizar o modelo de site de comunidade selecionado, ou um tema do Bootstrap pode ser carregado.
 
 Quando selecionado, o tema é sobreposto por uma marca de seleção azul opaca.
 
@@ -178,39 +178,29 @@ O painel Configurações contém vários subpainéis que apresentam recursos a s
 
 * **Permitir Registro de Usuário**
 
-  Se marcado, os visitantes do site podem se tornar membros da comunidade por meio do autorregistro.
-Se desmarcado, o site da comunidade é *restrito* e os visitantes do site devem ser atribuídos ao grupo de membros do site da comunidade, fazer uma solicitação ou receber um convite por email. Se desmarcado, o acesso anônimo não deverá ser permitido.
-Desmarque para um site de comunidade *privado*. O padrão está marcado.
+  Se marcado, os visitantes do site podem se tornar membros da comunidade por meio do autorregistro.Se desmarcado, o site da comunidade é *restrito* e os visitantes do site devem ser atribuídos ao grupo de membros do site da comunidade, fazer uma solicitação ou receber um convite por email. Se desmarcado, o acesso anônimo não deverá ser permitido.Desmarque para um site de comunidade *privado*. O padrão está marcado.
 
 * **Permitir acesso anônimo**
 
-  Se marcado, o site da comunidade será *aberto* e qualquer visitante do site poderá acessá-lo.
-Se a opção estiver desmarcada, somente os membros conectados poderão acessar o site.
-Desmarque para um site de comunidade *privado*. O padrão está marcado.
+  Se marcado, o site da comunidade será *aberto* e qualquer visitante do site poderá acessá-lo.Se a opção estiver desmarcada, somente os membros conectados poderão acessar o site.Desmarque para um site de comunidade *privado*. O padrão está marcado.
 
 * **Permitir mensagens**
 
-  Se marcados, os membros poderão enviar mensagens entre si e para o grupo no site da comunidade.
-Se desmarcada, as mensagens não estão configuradas para a comunidade.
-O padrão está desmarcado.
+  Se marcados, os membros poderão enviar mensagens entre si e para o grupo no site da comunidade.Se desmarcada, as mensagens não estão configuradas para a comunidade.O padrão está desmarcado.
 
 * **Permitir logons sociais: Facebook**
 
-  Se marcado, permitirá que os visitantes do site façam logon com suas credenciais de conta da Facebook. A [configuração de nuvem do Facebook](/help/communities/social-login.md#create-a-facebook-connect-cloud-service) selecionada deve ser configurada para adicionar usuários ao grupo de membros do site da comunidade após a criação do site.
-Se desmarcada, nenhum logon do Facebook será apresentado.
-Deixe desmarcado para um site da comunidade *privado*. O padrão está desmarcado.
+  Se marcado, permitirá que os visitantes do site façam logon com suas credenciais de conta do Facebook. A [configuração de nuvem do Facebook](/help/communities/social-login.md#create-a-facebook-connect-cloud-service) selecionada deve ser configurada para adicionar usuários ao grupo de membros do site da comunidade depois que o site da comunidade for criado.Se desmarcada, nenhum logon do Facebook será apresentado.Deixe desmarcado para um site da comunidade *privado*. O padrão está desmarcado.
 
 * **Permitir logons sociais: Twitter**
 
-  Se marcado, permitirá que os visitantes do site façam logon com suas credenciais de conta do Twitter. A [configuração da nuvem do Twitter](/help/communities/social-login.md#create-a-twitter-connect-cloud-service) selecionada deve ser configurada para adicionar usuários ao grupo de membros do site da comunidade depois que o site da comunidade for criado.
-Se desmarcada, nenhum login do Twitter será apresentado.
-Deixe desmarcado para um site da comunidade *privado*. O padrão está desmarcado.
+  Se marcado, permitirá que os visitantes do site façam logon com suas credenciais de conta do Twitter. A [configuração de nuvem do Twitter](/help/communities/social-login.md#create-a-twitter-connect-cloud-service) selecionada deve ser configurada para adicionar usuários ao grupo de membros do site da comunidade depois que o site da comunidade for criado.Se desmarcada, nenhum login do Twitter será apresentado.Deixe desmarcado para um site da comunidade *privado*. O padrão está desmarcado.
 
 >[!NOTE]
 >
 >**Permitindo logons sociais**
 >
->Embora possam existir exemplos de configurações do Facebook e do Twitter que possam ser selecionadas para um [ambiente de produção](/help/sites-administering/production-ready.md), é necessário criar aplicativos personalizados do Facebook e do Twitter. Consulte [Logon social com o Facebook e o Twitter](/help/communities/social-login.md).
+>Embora possam existir exemplos de configurações do Facebook e do Twitter que podem ser selecionadas para um [ambiente de produção](/help/sites-administering/production-ready.md), é necessário criar aplicativos personalizados do Facebook e do Twitter. Consulte [Logon social com Facebook e Twitter](/help/communities/social-login.md).
 
 #### MARCAÇÃO {#tagging}
 
@@ -266,8 +256,7 @@ A configuração global para moderar conteúdo gerado pelo usuário (UGC) é con
 
 * **Habilitar Analytics**
 
-  Disponível somente quando o Adobe Analytics foi [configurado](/help/communities/analytics.md) para os recursos das Comunidades.
-O padrão está desmarcado. Quando marcado, um menu de seleção adicional é exibido:
+  Disponível somente quando o Adobe Analytics foi [configurado](/help/communities/analytics.md) para os recursos das Comunidades.O padrão está desmarcado. Quando marcado, um menu de seleção adicional é exibido:
 
 ![site-analytics-enable](assets/site-analytics-enable.png)
 
@@ -312,12 +301,11 @@ O padrão está desmarcado. Quando marcado, um menu de seleção adicional é ex
 
    * **Traduzir somente a seleção**
 
-     Se selecionada, uma opção de tradução é exibida ao lado de cada postagem, permitindo que postagens individuais sejam traduzidas para o idioma base da página.
-O padrão é *seleted*.
+     Se selecionada, uma opção de tradução é exibida ao lado de cada postagem, permitindo que postagens individuais sejam traduzidas para o idioma base da página.O padrão é *seleted*.
 
 * **Selecionar Opções de Persistência**
 
-   * **Traduzir as contribuições sob solicitação do usuário e continuar posteriormente**
+   * **Traduzir as contribuições a pedido do usuário e continuar posteriormente**
 Se selecionado, o conteúdo não é traduzido até que uma solicitação seja feita. Depois de traduzida, a tradução é armazenada no repositório.
 
      O padrão é *não selecionado*.
@@ -371,7 +359,7 @@ Ao passar o mouse sobre um site ou tocar em um cartão de site, são exibidos í
 
 ## Criação de conteúdo do site {#authoring-site-content}
 
-O conteúdo de um site pode ser criado com as mesmas ferramentas de qualquer outro site de AEM. Para abrir o site para criação, selecione o ícone `Open Site` que aparece ao passar o mouse sobre o site. O site é aberto em uma nova guia, de modo que o console Sites de comunidades permaneça acessível.
+O conteúdo de um site pode ser criado com as mesmas ferramentas de qualquer outro site do AEM. Para abrir o site para criação, selecione o ícone `Open Site` que aparece ao passar o mouse sobre o site. O site é aberto em uma nova guia, de modo que o console Sites de comunidades permaneça acessível.
 
 ![conteúdo-site](assets/site-content.png)
 
@@ -510,8 +498,7 @@ Para obter detalhes, consulte [Gerenciamento de usuários e grupos de usuários]
 
 >[!NOTE]
 >
->Se [Permitir Logon Social: Facebook](#user-management) estiver habilitado, depois que o grupo de usuários `community-<site-name>-<uid>-members`
->for criado, o [serviço de nuvem do Facebook](/help/communities/social-login.md#createafacebookcloudservice) aplicado deverá ser configurado para adicionar usuários a esse grupo.
+>Se [Permitir logon social: Facebook](#user-management) estiver habilitado, depois que o grupo de usuários for criado, o [serviço de nuvem do Facebook](/help/communities/social-login.md#createafacebookcloudservice) aplicado deverá ser configurado para adicionar usuários a esse grupo.
 
 ## Configurar para erro de autenticação {#configure-for-authentication-error}
 

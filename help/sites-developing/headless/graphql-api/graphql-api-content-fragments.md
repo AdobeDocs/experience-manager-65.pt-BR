@@ -1,22 +1,22 @@
 ---
 title: API GraphQL do AEM para uso com Fragmentos de conteúdo
-description: Saiba como usar Fragmentos de conteúdo no Adobe Experience Manager (AEM) com a API do AEM GraphQL para entrega de conteúdo headless.
+description: Saiba como usar fragmentos de conteúdo no Adobe Experience Manager (AEM) com a API do AEM GraphQL para entrega de conteúdo headless.
 feature: Content Fragments,GraphQL API
 exl-id: beae1f1f-0a76-4186-9e58-9cab8de4236d
 solution: Experience Manager, Experience Manager Sites
 role: Developer
 source-git-commit: 47aac4b19bfbd29395fb09f3c27c981e7aa908f6
 workflow-type: tm+mt
-source-wordcount: '4984'
-ht-degree: 50%
+source-wordcount: '5154'
+ht-degree: 51%
 
 ---
 
 # API GraphQL do AEM para uso com Fragmentos de conteúdo {#graphql-api-for-use-with-content-fragments}
 
-Saiba como usar Fragmentos de conteúdo no Adobe Experience Manager (AEM) com a API do AEM GraphQL para entrega de conteúdo headless.
+Saiba como usar fragmentos de conteúdo no Adobe Experience Manager (AEM) com a API do AEM GraphQL para entrega de conteúdo headless.
 
-A API do GraphQL do AEM usada com Fragmentos de conteúdo é altamente baseada na API padrão de código aberto do GraphQL.
+A API do AEM GraphQL usada com fragmentos de conteúdo é altamente baseada na API padrão de código aberto do GraphQL.
 
 Usar a API GraphQL no AEM permite a entrega eficiente dos Fragmentos de conteúdo aos clientes JavaScript em implementações CMS headless:
 
@@ -47,7 +47,7 @@ O GraphQL é:
 
   Consulte [Explorar GraphQL](https://graphql.com/).
 
-* *&quot;...uma linguagem de consulta de dados e especificação desenvolvidas internamente pela Facebook em 2012, antes de serem disponibilizadas publicamente em 2015. Ele oferece uma alternativa às arquiteturas baseadas em REST, com o objetivo de aumentar a produtividade do desenvolvedor e minimizar as quantidades de dados transferidos. O GraphQL é usado na produção por centenas de organizações de todos os tamanhos...&quot;*
+* *&quot;...uma linguagem de consulta de dados e especificação desenvolvidas internamente pelo Facebook em 2012, antes de serem disponibilizadas publicamente em 2015. Ele oferece uma alternativa às arquiteturas baseadas em REST, com o objetivo de aumentar a produtividade do desenvolvedor e minimizar as quantidades de dados transferidos. O GraphQL é usado na produção por centenas de organizações de todos os tamanhos...&quot;*
 
   Consulte [Fundação GraphQL](https://graphql.org/foundation).
 
@@ -61,7 +61,7 @@ Para obter mais informações sobre a API do GraphQL, consulte as seguintes seç
 
    * [Introdução ao GraphQL](https://graphql.org/learn)
 
-   * [A especificação GraphQL](https://spec.graphql.org/)
+   * [A especificação do GraphQL](https://spec.graphql.org/)
 
 * Em [graphql.com](https://graphql.com):
 
@@ -109,7 +109,7 @@ O AEM fornece recursos para converter consultas (ambos os tipos) em [Consultas P
 [Consultas persistentes](/help/sites-developing/headless/graphql-api/persisted-queries.md) são o método recomendado para serem usadas em instâncias de publicação como:
 
 * são armazenadas em cache
-* eles são gerenciados centralmente pelo AEM
+* são gerenciados centralmente pela AEM
 
 <!-- is this fully accurate? -->
 >[!NOTE]
@@ -132,7 +132,7 @@ Uma implementação da interface padrão [GraphiQL](https://graphql.org/learn/se
 
 >[!NOTE]
 >
->O GraphiQL é incluído em todos os ambientes de AEM (mas só é acessível/visível quando você configura os endpoints).
+>O GraphiQL é incluído em todos os ambientes do AEM (mas só é acessível/visível quando você configura os endpoints).
 >
 >Em versões anteriores, você precisava de um pacote para instalar o GraphiQL IDE. Se você tiver esse pacote instalado, ele poderá ser removido.
 
@@ -152,7 +152,7 @@ Ele fornece recursos como realce de sintaxe, preenchimento automático e sugest�
 
 ## Casos de uso para ambientes de Autor e Publicação {#use-cases-author-publish-environments}
 
-Os casos de uso podem depender do tipo de ambiente AEM:
+Os casos de uso podem depender do tipo de ambiente do AEM:
 
 * Ambiente de publicação; usado para:
    * Consultar dados para o aplicativo JS (caso de uso padrão)
@@ -166,7 +166,7 @@ Os casos de uso podem depender do tipo de ambiente AEM:
 
 As permissões são necessárias para acessar o Assets.
 
-As consultas do GraphQL são executadas com a permissão do usuário AEM da solicitação subjacente. Se o usuário não tiver acesso de leitura a alguns fragmentos (armazenados como Assets), eles não se tornarão parte do conjunto de resultados.
+As consultas do GraphQL são executadas com a permissão do usuário do AEM da solicitação subjacente. Se o usuário não tiver acesso de leitura a alguns fragmentos (armazenados como Assets), eles não se tornarão parte do conjunto de resultados.
 
 Além disso, o usuário deve ter acesso a um endpoint do GraphQL para executar consultas do GraphQL.
 
@@ -230,7 +230,7 @@ Quando os fragmentos de conteúdo são aninhados, pode acontecer que um modelo d
 
 >[!NOTE]
 >
->A interface de usuário do AEM impede que isso aconteça, mas se a publicação for feita de forma programática ou com pacotes de conteúdo, isso poderá ocorrer.
+>A interface do usuário do AEM impede que isso aconteça, mas se a publicação for feita de forma programática ou com pacotes de conteúdo, isso poderá ocorrer.
 
 Quando isso acontece, o AEM gera um esquema *incompleto* para o modelo de fragmento de conteúdo principal. Isso significa que a referência do fragmento, que depende do modelo não publicado, é removida do esquema.
 
@@ -260,7 +260,7 @@ O GraphQL do AEM oferece suporte a uma lista de tipos. Todos os tipos de dados d
 | Booleano |  `Boolean` |  Usado para exibir caixas de seleção → declarações simples de verdadeiro/falso |
 | Data e hora | `Calendar` |  Usado para exibir data e hora em um formato ISO 8086. Dependendo do tipo selecionado, há três opções disponíveis para uso no GraphQL do AEM: `onlyDate`, `onlyTime` e `dateTime` |
 | Enumeração |  `String` |  Usado para exibir uma opção de uma lista de opções definidas na criação do modelo |
-|  Tags |  `[String]` |  Usado para exibir uma lista de sequências de caracteres que representam tags usadas no AEM |
+|  Tags |  `[String]` |  Usado para exibir uma lista de strings que representam tags usadas no AEM |
 | Referência de conteúdo |  `String` |  Usado para exibir o caminho para outro ativo no AEM |
 | Referência do fragmento |  *Um tipo de modelo* <br><br>Campo único: `Model` - Tipo de modelo, referenciado diretamente <br><br>Multicampo, com um tipo referenciado: `[Model]` - Matriz do tipo `Model`, referenciado diretamente da matriz <br><br>Multicampo, com vários tipos referenciados: `[AllFragmentModels]` - Matriz de todos os tipos de modelo, referenciado da matriz com tipo de união |  Usado para fazer referência a um ou mais Fragmentos de conteúdo de determinados Tipos de modelo, definidos quando o modelo foi criado |
 
@@ -357,8 +357,7 @@ Para consultar metadados:
 
 >[!NOTE]
 >
->**Diferença entre metadados normais e de matriz**
->Lembre-se que `StringMetadata` e `StringArrayMetadata` se referem ao que é armazenado no repositório, não a como você os recupera.
+>**Diferença entre metadados normais e de matrizLembre-se que `StringMetadata` e `StringArrayMetadata` se referem ao que é armazenado no repositório, não a como você os recupera.
 >
 >Por exemplo, ao chamar o campo `stringMetadata`, você recebe uma matriz de todos os metadados armazenados no repositório como um `String`. E se você chamar `stringArrayMetadata`, receberá uma matriz de todos os metadados armazenados no repositório como `String[]`.
 
@@ -706,9 +705,7 @@ query {
 
 O tipo de consulta `...Paginated` reutiliza a maioria dos recursos do tipo de consulta `...List` (filtragem, classificação), mas, em vez de usar os argumentos `offset`/`limit`, ele usa os argumentos `first`/`after`, definidos pela [Especificação de conexões do cursor GraphQL](https://relay.dev/graphql/connections.htm). Você pode encontrar uma introdução mais simplificada na [Introdução ao GraphQL](https://graphql.org/learn/pagination/#pagination-and-edges).
 
-* `first`: os primeiros `n` itens a serem retornados.
-O padrão é `50`.
-O máximo é `100`.
+* `first`: os primeiros `n` itens a serem retornados.O padrão é `50`.O máximo é `100`.
 * `after`: o cursor que determina o início da página solicitada. O item representado pelo cursor não está incluído no conjunto de resultados. O cursor de um item é determinado pelo campo `cursor` da estrutura `edges`.
 
 Por exemplo, exibe uma página de resultados contendo até cinco aventuras, começando pelo item de cursor especificado na lista de resultados *completa*:
@@ -782,7 +779,7 @@ Para habilitar o armazenamento em cache de consultas persistentes, as seguintes 
 
 Clientes que usam solicitações do CORS podem precisar revisar e atualizar sua configuração do CORS no Dispatcher.
 
-* O cabeçalho `Origin` não deve ser transmitido para a publicação do AEM por meio da Dispatcher:
+* O cabeçalho `Origin` não deve ser passado para a publicação do AEM por meio da Dispatcher:
    * Verifique o arquivo `clientheaders.any`.
 * Em vez disso, as solicitações do CORS devem ser avaliadas para as origens permitidas no nível da Dispatcher. Essa abordagem também garante que os cabeçalhos relacionados ao CORS sejam definidos corretamente, em um local, em todos os casos.
    * Essa configuração deve ser adicionada ao arquivo `vhost`. Um exemplo de configuração é fornecido abaixo; para simplificar, somente a parte relacionada ao CORS foi fornecida. Você pode adaptá-la aos seus casos de uso específicos.
@@ -855,7 +852,7 @@ Clientes que usam solicitações do CORS podem precisar revisar e atualizar sua 
 
 ## GraphQL para AEM - resumo das extensões {#graphql-extensions}
 
-A operação básica de consultas com o GraphQL para AEM adere à especificação GraphQL padrão. Para consultas do GraphQL com AEM, há algumas extensões:
+A operação básica de consultas com o GraphQL para AEM adere à especificação GraphQL padrão. Para consultas do GraphQL com o AEM, há algumas extensões:
 
 * Se você precisar de um único resultado:
    * use o nome do modelo; por exemplo, cidade
@@ -959,7 +956,7 @@ A operação básica de consultas com o GraphQL para AEM adere à especificaçã
 
 >[!NOTE]
 >
->Para obter uma visão geral detalhada da política de compartilhamento de recursos do CORS no AEM, consulte [Entender o CORS (Cross-Origin Resource Sharing, Compartilhamento de recursos entre origens)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=pt-BR#understand-cross-origin-resource-sharing-(cors)).
+>Para obter uma visão geral detalhada da política de compartilhamento de recursos do CORS no AEM, consulte [Entenda o CORS (Cross-Origin Resource Sharing)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=pt-BR#understand-cross-origin-resource-sharing-(cors)).
 
 Para acessar o endpoint do GraphQL, configure uma política do CORS no repositório Git do cliente. Essa configuração é feita adicionando um arquivo de configuração OSGi CORS apropriado para um ou mais endpoints desejados.
 
@@ -1076,8 +1073,7 @@ Você também precisa estar ciente de:
    * Por exemplo:
 
       * Quando dois (ou mais) fragmentos com modelos diferentes (por exemplo, `M1`, `M2`) são usados como possíveis referências (Referência de conteúdo ou Referência de fragmento) de outro fragmento; por exemplo, `Fragment1` `MultiField/List`
-      * E esses dois fragmentos com modelos diferentes (`M1`, `M2`) têm campos com o mesmo nome, mas tipos diferentes.
-Para ilustrar:
+      * E esses dois fragmentos com modelos diferentes (`M1`, `M2`) têm campos com o mesmo nome, mas tipos diferentes.Para ilustrar:
          * `M1.Title` como `Text`
          * `M2.Title` como `Text/MultiField`
       * Um erro de conflito de campo ocorrerá se a consulta GraphQL contiver o campo `Title`.
@@ -1092,8 +1088,8 @@ Perguntas que surgiram:
 
 1. **P**: “*Qual a diferença entre a API GraphQL do AEM e a API do Construtor de consultas?*”
 
-   * **R**: “*A API GraphQL do AEM oferece controle total sobre a saída em JSON e é um padrão do setor para consulta de conteúdo.
-No futuro, o AEM planeja investir na API AEM GraphQL.*&quot;
+   * **A**:
+&quot;*A API do GraphQL do AEM oferece controle total sobre a saída em JSON e é um padrão do setor para consulta de conteúdo.No futuro, a AEM planeja investir na API GraphQL do AEM.*&quot;
 
 ## Tutorial - Introdução ao AEM Headless e GraphQL {#tutorial}
 

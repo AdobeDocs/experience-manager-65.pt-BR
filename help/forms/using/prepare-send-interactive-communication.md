@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '2010'
+source-wordcount: '2029'
 ht-degree: 0%
 
 ---
@@ -138,9 +138,9 @@ A interface do usuário do agente tem suporte integrado para 210 caracteres espe
 
 #### Entrega do anexo {#attachmentdelivery}
 
-* Quando a Comunicação interativa é renderizada usando APIs do lado do servidor como um PDF interativo ou não interativo, o PDF renderizado contém anexos como anexos de PDF.
+* Quando a Comunicação interativa é renderizada usando APIs do lado do servidor como um PDF interativo ou não interativo, o PDF renderizado contém anexos como anexos do PDF.
 * Quando um processo de publicação associado a uma Comunicação interativa é carregado como parte do Enviar usando a interface do usuário do agente, os anexos são passados como o parâmetro List&lt;com.adobe.idp.Document> inAttachmentDocs.
-* Os workflows do mecanismo de entrega, como email e impressão, também fornecem anexos junto com a versão PDF da Comunicação interativa.
+* Os workflows do mecanismo de entrega, como email e impressão, também fornecem anexos junto com a versão do PDF da Comunicação interativa.
 
 ## Ações e informações disponíveis na interface do usuário do agente {#actionsagentui}
 
@@ -324,7 +324,7 @@ A tabela a seguir explica a implementação da SPI `ccrDocumentInstance` de exem
    </tr>
   <tr>
    <td><p>Você pode criar um rascunho para uma Comunicação interativa ou enviá-lo diretamente. A API para a operação de salvamento verifica se a Comunicação interativa é enviada como um rascunho e inclui um nome de rascunho. A API chama o serviço mySQLDataBaseServiceCRUD com Salvar como o método de entrada.</p></br><img src="assets/save-as-draft-save-operation.png"/></td>
-   <td><p>O serviço mySQLDataBaseServiceCRUD verifica Salvar como o método de entrada e gera uma ID de rascunho gerada automaticamente e a retorna ao AEM. A lógica para gerar uma ID de rascunho pode variar com base no banco de dados.</p></br><img src="assets/save-operation-service.png"/></td>
+   <td><p>O serviço mySQLDataBaseServiceCRUD verifica Salvar como o método de entrada, gera uma ID de rascunho gerada automaticamente e a retorna ao AEM. A lógica para gerar uma ID de rascunho pode variar com base no banco de dados.</p></br><img src="assets/save-operation-service.png"/></td>
    </tr>
   <tr>
    <td><p>A API da operação de atualização recupera o status do rascunho da Comunicação interativa e verifica se a Comunicação interativa inclui um nome de rascunho. A API chama o serviço mySQLDataBaseServiceCRUD para atualizar esse status no Banco de Dados.</p></br><img src="assets/save-as-draft-update-operation.png"/></td>

@@ -11,8 +11,8 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '931'
-ht-degree: 0%
+source-wordcount: '952'
+ht-degree: 1%
 
 ---
 
@@ -28,7 +28,7 @@ http://localhost:4502/libs/wcm/core/content/pageinfo.json?path=/content/we-retai
 
 >[!NOTE]
 >
->Se você precisar de informações de página no formato JSON para fornecer a entrega de conteúdo para canais que não são páginas da Web AEM tradicionais, como:
+>Se você precisar de informações de página no formato JSON para fornecer a entrega de conteúdo para canais que não são páginas da Web tradicionais do AEM, como:
 >
 >* Aplicativos de página única
 >* Aplicativos nativos para dispositivos móveis
@@ -498,7 +498,7 @@ O serviço aplica o resultado cumulativo de todos os filtros. Por exemplo, os se
 
 Por exemplo, para configurar o serviço usando o CRXDE Lite:
 
-1. Abrir CRXDE Lite ([http://localhost:4502/crx/de](http://localhost:4502/crx/de)).
+1. Abra o CRXDE Lite ([http://localhost:4502/crx/de](http://localhost:4502/crx/de)).
 1. Na pasta de configuração do aplicativo, crie um nó:
 
    * Nome: `com.day.cq.wcm.workflow.impl.WorkflowPackageInfoProvider`

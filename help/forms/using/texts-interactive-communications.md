@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '2474'
+source-wordcount: '2501'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ O fragmento do documento de texto na Comunicação interativa é compatível com
 
 1. Digite o texto e use as seguintes opções para formatar, condicionar e inserir propriedades e variáveis do modelo de dados de formulário no texto:
 
-   * [Modelo de dados do formulário](#formdatamodel)
+   * [Modelo de dados de formulário](#formdatamodel)
    * [Variáveis](#variables)
    * [Editor de regras](#rules)
    * [Opções de formatação](#formatting)
@@ -229,7 +229,7 @@ Como opção, você também pode ir para a guia Avançado para selecionar o Mati
 
 ### Colar texto formatado {#paste}
 
-Para reutilizar um ou mais parágrafos de texto existentes em outro aplicativo, como páginas do Microsoft® Word ou HTML, copie e cole o texto no editor de texto. A formatação do texto copiado é mantida no editor de texto.
+Para reutilizar um ou mais parágrafos de texto existentes em outro aplicativo, como de páginas do Microsoft® Word ou HTML, copie e cole o texto no editor de texto. A formatação do texto copiado é mantida no editor de texto.
 
 É possível copiar e colar um ou mais parágrafos de texto em um fragmento de documento de texto editável. Por exemplo, você pode ter um documento do Microsoft® Word com uma lista com marcadores de provas de residência aceitáveis, como as seguintes:
 

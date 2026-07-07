@@ -12,7 +12,7 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
 workflow-type: tm+mt
-source-wordcount: '5755'
+source-wordcount: '5999'
 ht-degree: 0%
 
 ---
@@ -340,13 +340,13 @@ Em determinadas circunstâncias, talvez você queira criar um arquivo de log per
    >
    >`org.apache.sling.commons.log.pattern` dá suporte a até seis argumentos.
    >
-   >{0} O carimbo de data/hora do tipo `java.util.Date`
+   >`java.util.Date` O carimbo de data/hora do tipo {0}
    >
    >{1} o marcador de log
    >
    >{2} o nome do thread atual
    >
-   >{3} o nome do agente de log
+   >{3} o nome do agente
    >
    >{4} o nível de log
    >
@@ -435,7 +435,7 @@ Em determinadas circunstâncias, talvez você queira criar um arquivo de log per
    >* Um limite de tamanho pode ser especificado com um número. Se nenhum indicador de tamanho for fornecido, ele será tomado como o número de bytes ou você poderá adicionar um dos indicadores de tamanho - `KB`, `MB` ou `GB` (maiúsculas e minúsculas são ignoradas).
    >* Um cronograma de data/hora pode ser especificado como um padrão `java.util.SimpleDateFormat`. Ele define o período após o qual o arquivo é girado. Além disso, o sufixo anexado ao arquivo girado (para identificação).
    >
-   >O padrão é &#39;.&#39;dd/MM/yyyy (para rotação diária de logs).
+   >O padrão é &#39;.&#39;aaaa-MM-dd (para rotação diária do log).
    >
    >Por exemplo, à meia-noite de 20 de janeiro de 2010 (ou quando a primeira mensagem de log após essa data ocorrer para ser precisa), ../logs/error.log será renomeado para ../logs/error.log.2010-01-20. Os registros de 21 de janeiro são enviados para (um novo e vazio) ../logs/error.log até serem transferidos na próxima alteração do dia.
    >
@@ -591,7 +591,7 @@ Algumas dessas ferramentas dependem do sistema operacional.
 <table>
  <tbody>
   <tr>
-   <td>Ferramenta </td>
+   <td>Ferramenta</td>
    <td>Usado para analisar...</td>
    <td>Uso / Mais informações...</td>
   </tr>
@@ -695,7 +695,7 @@ O log de solicitação registra cada solicitação feita, juntamente com a respo
 09:43:41 [66] <- 200 text/html 797ms
 ```
 
-Ao totalizar todas as entradas do GET em períodos específicos (por exemplo, em vários períodos de 24 horas), você pode fazer declarações sobre o tráfego médio no seu site.
+Ao totalizar todas as entradas GET em períodos específicos (por exemplo, em vários períodos de 24 horas), você pode fazer declarações sobre o tráfego médio no seu site.
 
 #### Monitoramento dos tempos de resposta com o request.log {#monitoring-response-times-with-the-request-log}
 
@@ -769,7 +769,7 @@ Testes devem ser feitos para determinar quantos usuários simultâneos o sistema
 ### Usar rlog.jar para encontrar solicitações com tempos de longa duração {#using-rlog-jar-to-find-requests-with-long-duration-times}
 
 O AEM inclui várias ferramentas auxiliares no seguinte:
-`<cq-installation-dir>/crx-quickstart/opt/helpers`
+
 
 Uma dessas ferramentas, `rlog.jar`, pode ser usada para classificar rapidamente `request.log` de modo que as solicitações sejam exibidas por duração, do mais longo ao menor tempo.
 

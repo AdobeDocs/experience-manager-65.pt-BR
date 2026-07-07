@@ -10,7 +10,7 @@ feature: Interactive Communication
 role: Admin, User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '499'
 ht-degree: 7%
 
 ---
@@ -70,7 +70,7 @@ A seguir estão os componentes necessários para criar uma Comunicação interat
 
 ## Comunicações Interativas Vs Gerenciamento De Correspondência {#interactive-communications-vs-correspondence-management}
 
-A comunicação interativa é a abordagem padrão e recomendada para criar comunicações com o cliente. Para continuar usando as letras que criam no Forms AEM 6.3 e no Forms AEM 6.2, é necessário [instalar um pacote de compatibilidade](/help/forms/using/compatibility-package.md). Veja a seguir uma comparação entre os recursos de Comunicação interativa e cartas.
+A comunicação interativa é a abordagem padrão e recomendada para criar comunicações com o cliente. Para continuar usando as letras criando no AEM 6.3 Forms e no AEM 6.2 Forms, você precisa [instalar um pacote de compatibilidade](/help/forms/using/compatibility-package.md). Veja a seguir uma comparação entre os recursos de Comunicação interativa e cartas.
 
 <table>
  <tbody>
@@ -104,7 +104,7 @@ A comunicação interativa é a abordagem padrão e recomendada para criar comun
    <td>Nenhuma interface para a criação de expressão condicional</td>
   </tr>
   <tr>
-   <td>Criação  </td>
+   <td>Criação</td>
    <td>Interface de arrastar e soltar para construir canais de impressão e da Web</td>
    <td>Nenhum mecanismo de arrastar e soltar </td>
   </tr>
