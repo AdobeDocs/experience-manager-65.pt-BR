@@ -12,8 +12,8 @@ feature: Developing
 role: Developer
 source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
 workflow-type: tm+mt
-source-wordcount: '4828'
-ht-degree: 0%
+source-wordcount: '4961'
+ht-degree: 1%
 
 ---
 
@@ -47,9 +47,9 @@ Antes de começar a realmente configurar ou codificar seu componente, você deve
 
 Antes de qualquer discussão séria começar sobre o desenvolvimento de componentes, você deve saber qual interface do usuário seus autores estão usando:
 
-* **Interface Habilitada para Toque**
-  [A interface de usuário padrão](/help/sites-developing/touch-ui-concepts.md) é baseada na experiência de usuário unificada da Adobe Experience Cloud, usando as tecnologias subjacentes da [Interface do usuário do Coral](/help/sites-developing/touch-ui-concepts.md#coral-ui) e da [Interface do usuário do Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui).
-* **Interface clássica**
+* **Interface do usuário habilitada para toque
+  [A interface de usuário padrão](/help/sites-developing/touch-ui-concepts.md) é baseada na experiência de usuário unificada da Adobe Experience Cloud, usando as tecnologias subjacentes da [Interface de usuário do Coral](/help/sites-developing/touch-ui-concepts.md#coral-ui) e da [Interface de usuário do Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui).
+* Interface clássica do **&#x200B;**
 Interface do usuário baseada na tecnologia ExtJS, que foi descontinuada com o AEM 6.4.
 
 Consulte [Recomendações da interface do usuário para clientes](/help/sites-deploying/ui-recommendations.md) para obter mais detalhes.
@@ -142,7 +142,7 @@ Essa é uma abstração que ajuda a garantir que, mesmo quando a aparência muda
 
 ### Definição de componente {#component-definition}
 
-#### Noções básicas sobre componentes {#component-basics}
+#### Noções básicas dos componentes {#component-basics}
 
 A definição de um componente pode ser dividida da seguinte forma:
 
@@ -191,7 +191,7 @@ A definição de um componente pode ser dividida da seguinte forma:
 
    * `cq:editConfig (cq:EditConfig)` - Define as propriedades de edição do componente e habilita o componente para aparecer no navegador de Componentes ou no Sidekick.
 
-     Observação: se o componente tiver uma caixa de diálogo, ele será exibido automaticamente no navegador Componentes ou no Sidekick, mesmo se cq:editConfig não existir.
+     Observação: se o componente tiver uma caixa de diálogo, ele será exibido automaticamente no navegador Componentes ou no Sidekick, mesmo se o cq:editConfig não existir.
 
    * `cq:childEditConfig (cq:EditConfig)` - Controla os aspectos da interface do usuário do autor para componentes filho que não definem seu próprio `cq:editConfig`.
    * Interface habilitada para toque:
@@ -269,7 +269,7 @@ Um componente é um nó do tipo `cq:Component` e tem as seguintes propriedades e
   <tr>
    <td><code>componentGroup</code></td>
    <td><code>String</code></td>
-   <td>Grupo no qual o componente pode ser selecionado no navegador Componentes (interface habilitada para toque) ou no Sidekick (interface clássica).<br /> Um valor de <code>.hidden</code> é usado para componentes que não estão disponíveis para seleção na interface do usuário, como os sistemas de parágrafos reais.</td>
+   <td>Grupo no qual o componente pode ser selecionado no navegador Componentes (interface habilitada para toque) ou no Sidekick (interface clássica).<br /> O valor <code>.hidden</code> é usado para componentes que não estão disponíveis para seleção na interface do usuário, como os sistemas de parágrafos reais.</td>
   </tr>
   <tr>
    <td><code>cq:isContainer</code></td>
@@ -344,7 +344,7 @@ Um componente é um nó do tipo `cq:Component` e tem as seguintes propriedades e
   <tr>
    <td><code>cq:templatePath</code></td>
    <td><code>String</code></td>
-   <td>Caminho para um nó a ser usado como modelo de conteúdo quando o componente for adicionado do navegador Componentes ou do Sidekick. Deve ser um caminho absoluto, não relativo ao nó do componente.<br /> A menos que você queira reutilizar o conteúdo já disponível em outro lugar, isso não é necessário e <code>cq:template</code> é suficiente (veja abaixo).</td>
+   <td>Caminho para um nó a ser usado como modelo de conteúdo quando o componente for adicionado do navegador Componentes ou do Sidekick. Este deve ser um caminho absoluto, não relativo ao nó do componente.<br /> A menos que você queira reutilizar o conteúdo já disponível em outro lugar, isso não é necessário e <code>cq:template</code> é suficiente (veja abaixo).</td>
   </tr>
   <tr>
    <td><code>jcr:created</code></td>
@@ -607,8 +607,7 @@ Há muitas configurações existentes no repositório. Você pode pesquisar faci
 
 Os componentes sempre devem renderizar algum HTML que esteja visível para o autor, mesmo quando o componente não tiver conteúdo. Caso contrário, ela poderá desaparecer visualmente da interface do editor, tornando-se tecnicamente presente, mas invisível na página e no editor. Nesse caso, os autores não podem selecionar e interagir com o componente vazio.
 
-Por esse motivo, os componentes devem renderizar um espaço reservado, desde que não renderizem nenhuma saída visível quando a página for renderizada no editor de páginas (quando o modo WCM for `edit` ou `preview`).
-A marcação típica do HTML para um espaço reservado é a seguinte:
+Por esse motivo, os componentes devem renderizar um espaço reservado, desde que não renderizem nenhuma saída visível quando a página for renderizada no editor de páginas (quando o modo WCM for `edit` ou `preview`).A marcação típica do HTML para um espaço reservado é a seguinte:
 
 ```HTML
 <div class="cq-placeholder" data-emptytext="Component Name"></div>
@@ -636,7 +635,7 @@ No exemplo anterior, `model.text` é a variável que só é verdadeira quando o 
 
 Um exemplo de uso deste modelo pode ser visto nos Componentes Principais, [como no Componente de Título.](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/title/v2/title/title.html#L27)
 
-### Configuração com propriedades cq:EditConfig {#configuring-with-cq-editconfig-properties}
+### Configurando com Propriedades cq:EditConfig {#configuring-with-cq-editconfig-properties}
 
 ### cq:actions {#cq-actions}
 
@@ -697,7 +696,7 @@ A configuração a seguir adiciona o texto &quot;Configurações herdadas da est
     jcr:primaryType="cq:EditConfig"/>
 ```
 
-### cq:layout (somente interface clássica) {#cq-layout-classic-ui-only}
+### cq:layout (somente IU Clássica) {#cq-layout-classic-ui-only}
 
 A propriedade `cq:layout` ( `String`) define como o componente pode ser editado na interface clássica. Os seguintes valores estão disponíveis:
 
@@ -709,11 +708,11 @@ A propriedade `cq:layout` ( `String`) define como o componente pode ser editado 
   </tr>
   <tr>
    <td><code>rollover</code></td>
-   <td>Valor padrão. A edição do componente é acessível "ao passar o mouse" por meio de cliques e/ou menu de contexto.<br /> Para uso avançado, o objeto correspondente do lado do cliente é: <code>CQ.wcm.EditRollover</code>.</td>
+   <td>Valor padrão. A edição do componente pode ser acessada "ao passar o mouse" por meio de cliques e/ou menu de contexto.<br /> Para uso avançado, o objeto correspondente do lado do cliente é: <code>CQ.wcm.EditRollover</code>.</td>
   </tr>
   <tr>
    <td><code>editbar</code></td>
-   <td>A edição do componente é acessível por meio de uma barra de ferramentas.<br /> Para uso avançado, o objeto correspondente do lado do cliente é: <code>CQ.wcm.EditBar</code>.</td>
+   <td>A edição do componente pode ser acessada por meio de uma barra de ferramentas.<br /> Para uso avançado, o objeto correspondente do lado do cliente é: <code>CQ.wcm.EditBar</code>.</td>
   </tr>
   <tr>
    <td><code>auto</code></td>
@@ -736,7 +735,7 @@ A configuração a seguir adiciona um botão de edição à barra de edição do
 </jcr:root>
 ```
 
-### cq:dialogMode (somente interface clássica) {#cq-dialogmode-classic-ui-only}
+### cq:dialogMode (somente IU Clássica) {#cq-dialogmode-classic-ui-only}
 
 O componente pode ser vinculado a uma caixa de diálogo de edição. A propriedade `cq:dialogMode` ( `String`) define como a caixa de diálogo do componente é aberta na interface clássica. Os seguintes valores estão disponíveis:
 
@@ -793,9 +792,9 @@ A propriedade `dialogLayout` define como uma caixa de diálogo deve ser aberta p
 * O usuário sempre pode alternar o modo de tela cheia na caixa de diálogo.
 * Não se aplica à interface clássica.
 
-### Configuração com nós filhos cq:EditConfig {#configuring-with-cq-editconfig-child-nodes}
+### Configurando com nós filhos cq:EditConfig {#configuring-with-cq-editconfig-child-nodes}
 
-### cq:dropTarget {#cq-droptargets}
+### cq:dropTargets {#cq-droptargets}
 
 O nó `cq:dropTargets` (tipo de nó `nt:unstructured`) define uma lista de destinos de lançamento que podem aceitar o descarte de um ativo arrastado do localizador de conteúdo. Ele serve como uma coleção de nós do tipo `cq:DropTargetConfig`.
 
@@ -856,7 +855,7 @@ A configuração a seguir é retirada do componente de Download. Ela habilita qu
     </cq:dropTargets>
 ```
 
-### cq:actionConfigs (somente interface clássica) {#cq-actionconfigs-classic-ui-only}
+### cq:actionConfigs (somente IU Clássica) {#cq-actionconfigs-classic-ui-only}
 
 O nó `cq:actionConfigs` (tipo de nó `nt:unstructured`) define uma lista de novas ações que são anexadas à lista definida pela propriedade `cq:actions`. Cada nó filho de `cq:actionConfigs` define uma nova ação definindo um widget.
 
