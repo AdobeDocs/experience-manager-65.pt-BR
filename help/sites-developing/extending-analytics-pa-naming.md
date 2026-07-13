@@ -11,7 +11,7 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '847'
+source-wordcount: '866'
 ht-degree: 0%
 
 ---
@@ -24,11 +24,11 @@ O Adobe Analytics usa a propriedade `s.pageName` para identificar páginas de ma
 
 * Crie o componente de página para que ele inclua a variável CQ que você mapeia para a propriedade `s.pageName`. (Consulte [Implementação do Adobe Analytics Tracking para componentes personalizados](/help/sites-developing/extending-analytics-components.md).)
 
-Para expor os dados de relatório do Analytics no console do Sites e no Content Insight, o AEM requer o valor da propriedade `s.pageName` para cada página. A API Java do AEM Analytics define a interface `AnalyticsPageNameProvider` que você implementa para fornecer ao console de Sites e aos Insights de Conteúdo o valor da propriedade `s.pageName`. Seu serviço `AnaltyicsPageNameProvider` resolve a propriedade pageName no servidor para fins de relatório, pois ela pode ser definida dinamicamente com o uso do JavaScript no cliente para fins de rastreamento.
+Para expor os dados de relatório do Analytics no console de Sites e no Insight de conteúdo, o AEM exige o valor da propriedade `s.pageName` para cada página. A API Java do AEM Analytics define a interface `AnalyticsPageNameProvider` que você implementa para fornecer ao console de Sites e aos Insights de Conteúdo o valor da propriedade `s.pageName`. Seu serviço `AnaltyicsPageNameProvider` resolve a propriedade pageName no servidor para fins de relatório, pois ela pode ser definida dinamicamente com o uso do JavaScript no cliente para fins de rastreamento.
 
 ## O Serviço do provedor de nome de página padrão do Analytics {#the-default-analytics-page-name-provider-service}
 
-O serviço `DefaultPageNameProvider` é o serviço padrão que determina o valor da propriedade `s.pageName` a ser usada para recuperar dados do Analytics para uma página. O serviço funciona em conjunto com o componente de página de base AEM ( `/libs/foundation/components/page`). Esse componente de página define as seguintes variáveis do CQ que devem ser mapeadas para a propriedade `s.pageName`:
+O serviço `DefaultPageNameProvider` é o serviço padrão que determina o valor da propriedade `s.pageName` a ser usada para recuperar dados do Analytics para uma página. O serviço funciona em conjunto com o componente de página de base do AEM ( `/libs/foundation/components/page`). Esse componente de página define as seguintes variáveis do CQ que devem ser mapeadas para a propriedade `s.pageName`:
 
 * `pagedata.path`: O valor está definido para o caminho da página.
 * `pagedata.title`: O valor está definido como o título da página.
@@ -75,7 +75,7 @@ Por exemplo, um componente de página personalizado pode incluir uma propriedade
 
 ### Implementação de um serviço de provedor de nome de página do Analytics {#implementing-an-analytics-page-name-provider-service}
 
-Implemente a interface `com.day.cq.analytics.sitecatalyst.AnalyticsPageNameProvider` como um serviço OSGi para personalizar a lógica que recupera o valor da propriedade `s.pageName`. A análise de página do Sites e o Content Insight usam o serviço para recuperar dados de relatório do Analytics.
+Implemente a interface `com.day.cq.analytics.sitecatalyst.AnalyticsPageNameProvider` como um serviço OSGi para personalizar a lógica que recupera o valor da propriedade `s.pageName`. A análise de página Sites e o Insight de conteúdo usam o serviço para recuperar dados de relatório do Analytics.
 
 A interface do AnalyticsPageNameProvider define dois métodos que devem ser implementados:
 

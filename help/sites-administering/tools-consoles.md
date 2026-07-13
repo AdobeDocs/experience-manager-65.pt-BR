@@ -12,8 +12,8 @@ feature: Administering
 role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '594'
-ht-degree: 26%
+source-wordcount: '597'
+ht-degree: 25%
 
 ---
 
@@ -190,7 +190,7 @@ Os consoles **Ferramentas** fornecem acesso a várias ferramentas especializadas
   </tr>
   <tr>
    <td> </td>
-   <td>Modelos de fragmentos do conteúdo<br /> </td>
+   <td>Modelos de fragmentos de conteúdo<br /> </td>
   </tr>
   <tr>
    <td> </td>
@@ -306,7 +306,7 @@ Os consoles **Ferramentas** fornecem acesso a várias ferramentas especializadas
   </tr>
   <tr>
    <td> </td>
-   <td>Configuração de logon social do facebook<br /> </td>
+   <td>Configuração de logon social do Facebook<br /> </td>
   </tr>
   <tr>
    <td> </td>
@@ -314,7 +314,7 @@ Os consoles **Ferramentas** fornecem acesso a várias ferramentas especializadas
   </tr>
   <tr>
    <td> </td>
-   <td>Configuração de logon social do pinterest<br /> </td>
+   <td>Configuração de logon social do Pinterest<br /> </td>
   </tr>
   <tr>
    <td>Communities</td>
@@ -373,10 +373,10 @@ Os consoles **Ferramentas** fornecem acesso a várias ferramentas especializadas
   </tr>
   <tr>
    <td>Configurações de Contexto de Cliente<br /> </td>
-   <td>O Client Context representa uma coleção de dados do usuário montada dinamicamente. As configurações padrão e Experience Cloud são mantidas aqui.<br /> </td>
+   <td>O Client Context representa uma coleção de dados do usuário montada dinamicamente. As configurações padrão e da Experience Cloud são mantidas aqui.<br /> </td>
   </tr>
   <tr>
-   <td>Configurações do Cloud Service<br /> </td>
+   <td>Configurações de Cloud Services<br /> </td>
    <td>Contém configurações relacionadas à integração com a Adobe Experience Cloud.</td>
   </tr>
   <tr>
@@ -416,23 +416,23 @@ Os consoles **Ferramentas** fornecem acesso a várias ferramentas especializadas
    <td>Linkchecker externo.</td>
   </tr>
   <tr>
-   <td>Mobile</td>
+   <td>Dispositivos móveis</td>
    <td>Ajuda a criar sites criados para dispositivos móveis.</td>
   </tr>
   <tr>
    <td>Pacotes</td>
-   <td>Um link alternativo para o Gerenciador de pacotes que mostra os pacotes que foram carregados para AEM WCM. Semelhante às informações mostradas no Gerenciador de pacotes da CRX.</td>
+   <td>Um link alternativo para o Gerenciador de pacotes que mostra os pacotes que foram carregados para o AEM WCM. Semelhante às informações mostradas no Gerenciador de pacotes da CRX.</td>
   </tr>
   <tr>
    <td>Replicação - Agentes de replicação</td>
-   <td>Usado para replicar dados da instância do autor para o Publish ao publicar páginas, ou com replicação reversa para retornar os comentários do usuário do ambiente de publicação para o autor.</td>
+   <td>Usado para replicar dados da instância do autor para publicação ao publicar páginas, ou com replicação reversa para retornar os comentários do usuário do ambiente de publicação para o autor.</td>
   </tr>
   <tr>
    <td>Relatórios</td>
    <td>O AEM fornece uma variedade de relatórios personalizados, permitindo que você crie relatórios personalizados ou desenvolva os seus próprios.</td>
   </tr>
   <tr>
-   <td>Scaffolding da página padrão </td>
+   <td>Scaffolding da página padrão</td>
    <td>Com o andaime, você pode criar um formulário (um andaime) com campos que refletem a estrutura desejada para as páginas e, em seguida, usar este formulário para criar facilmente páginas com base nessa estrutura.</td>
   </tr>
   <tr>
