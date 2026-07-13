@@ -1,6 +1,6 @@
 ---
 title: Estrutura de aparência para formulários adaptáveis e HTML5
-description: O Mobile Forms renderiza Modelos de formulário como formulários HTML5. Esses formulários usam os arquivos jQuery, Backbone.js e Underscore.js para a aparência e para ativar os scripts.
+description: O Mobile Forms renderiza Modelos de formulário como formulários do HTML5. Esses formulários usam os arquivos jQuery, Backbone.js e Underscore.js para a aparência e para ativar os scripts.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
@@ -10,7 +10,7 @@ feature: HTML5 Forms,Mobile Forms
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1152'
+source-wordcount: '1165'
 ht-degree: 2%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 2%
 
 O Forms (formulários adaptáveis e formulários HTML5) usa as bibliotecas [jQuery](https://jquery.com/), [Backbone.js](https://backbonejs.org/) e [Underscore.js](https://underscorejs.org/) para aparência e scripts. Os formulários também usam a arquitetura [jQuery UI](https://jqueryui.com/) **Widgets** para todos os elementos interativos (como campos e botões) no formulário. Essa arquitetura permite que o desenvolvedor de formulários use um conjunto avançado de widgets e plug-ins jQuery disponíveis no Forms. Você também pode implementar a lógica específica do formulário enquanto captura dados de usuários como restrições leadDigits/trailDigits ou implementa cláusulas de figura. Os desenvolvedores de formulários podem criar e usar aparências personalizadas para melhorar a experiência de captura de dados e torná-la mais fácil de usar.
 
-Este artigo é para desenvolvedores com conhecimento suficiente de widgets jQuery e jQuery. Ele fornece informações sobre a estrutura de aparência e permite que os desenvolvedores criem uma aparência alternativa para um campo de formulário.
+Este artigo é para desenvolvedores com conhecimento suficiente de widgets jQuery e jQuery. Ele fornece o insight para a estrutura de aparência e permite que os desenvolvedores criem uma aparência alternativa para um campo de formulário.
 
 A estrutura de aparência depende de várias opções, eventos (acionadores) e funções para capturar as interações do usuário com o formulário e responde às alterações do modelo para informar o usuário final. Além disso:
 
@@ -51,7 +51,7 @@ Veja a seguir o conjunto de opções globais. Essas opções estão disponíveis
   </tr>
   <tr>
    <td>screenReaderText</td>
-   <td>Os Reader de tela usam esse valor para narrar informações sobre o campo. O formulário fornece o valor e você pode substituí-lo.<br /> </td>
+   <td>Os leitores de tela usam esse valor para narrar informações sobre o campo. O formulário fornece o valor e você pode substituí-lo.<br /> </td>
   </tr>
   <tr>
    <td>tabIndex</td>
@@ -167,7 +167,7 @@ Todos os widgets personalizados devem estar em conformidade com as especificaç�
    <td>Número máximo de caracteres que podem ser inseridos no campo.</td>
   </tr>
   <tr>
-   <td><p>limitLengthToVisibleArea</p> <p><strong>Observação</strong>: Aplicável somente a formulários HTML5</p> </td>
+   <td><p>limitLengthToVisibleArea</p> <p><strong>Observação</strong>: aplicável somente para formulários HTML5</p> </td>
    <td>Especifica o comportamento do campo de texto quando a largura do texto excede a largura do widget.</td>
   </tr>
  </tbody>
@@ -190,7 +190,7 @@ Todos os widgets personalizados devem estar em conformidade com as especificaç�
    <td>Matriz de objetos a serem exibidos como opções. Cada objeto contém duas propriedades -<br /> save: valor a ser salvo, exibição: valor a ser exibido.<br /> <br /> </td>
   </tr>
   <tr>
-   <td><p>editável</p> <p><strong>Observação</strong>: Aplicável somente a formulários HTML5.<br /> </p> </td>
+   <td><p>editável</p> <p><strong>Observação</strong>: aplicável somente para formulários HTML5.<br /> </p> </td>
    <td>Se o valor for true, a entrada de texto personalizado será habilitada no widget.<br /> </td>
   </tr>
   <tr>
