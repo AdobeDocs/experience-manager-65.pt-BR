@@ -1,6 +1,6 @@
 ---
 title: Suporte de criptografia para propriedades de configuração
-description: Saiba mais sobre o suporte de criptografia para propriedades de configuração fornecido no AEM.
+description: Saiba mais sobre o suporte à criptografia para propriedades de configuração fornecidas no AEM.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,7 +11,7 @@ feature: Security
 role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
-source-wordcount: '279'
+source-wordcount: '280'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ O suporte ao OSGi Configuration Plugin foi adicionado para descriptografar a pro
 
 Essas etapas mostram como criptografar a senha SMTP para o serviço de email. Você pode concluir essas etapas para uma propriedade OSGI que deseja criptografar.
 
-1. Acesse o Console da Web do AEM em *https://&lt;serveraddress>:&lt;serverport>/system/console/configMgr*
+1. Vá para o Console da Web do AEM em *https://&lt;serveraddress>:&lt;serverport>/system/console/configMgr*
 1. No canto superior esquerdo, vá para **Principal - Suporte a criptografia**
 
    ![chlimage_1-325](assets/chlimage_1-325.png)
@@ -42,7 +42,7 @@ Essas etapas mostram como criptografar a senha SMTP para o serviço de email. Vo
    ![screen_shot_2018-08-01at113417am](assets/screen_shot_2018-08-01at113417am.png)
 
 1. No campo **Texto sem formatação**, digite o texto dos dados confidenciais que deseja proteger.
-1. Selecione **Protect**. O texto protegido é exibido como texto criptografado.
+1. Selecione **Proteger**. O texto protegido é exibido como texto criptografado.
 
    ![screen_shot_2018-08-01at113844am](assets/screen_shot_2018-08-01at113844am.png)
 
@@ -54,4 +54,4 @@ Essas etapas mostram como criptografar a senha SMTP para o serviço de email. Vo
 
 ## Suporte para descriptografia {#decryption-support}
 
-O AEM agora fornece um Plug-in de configuração para descriptografar propriedades de configuração. Este plug-in AEM descriptografará e recuperará automaticamente as propriedades de texto não criptografado.
+O AEM agora fornece um Plug-in de configuração para descriptografar propriedades de configuração. Este plug-in do AEM descriptografará e recuperará automaticamente as propriedades de texto não criptografado.
