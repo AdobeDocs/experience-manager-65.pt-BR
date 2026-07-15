@@ -9,7 +9,7 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1445'
+source-wordcount: '1531'
 ht-degree: 2%
 
 ---
@@ -154,7 +154,7 @@ Um auxiliar para retornar uma string de data formatada.
 // returns "03-18-2015"
 ```
 
-## Igual a {#equals}
+## Igual {#equals}
 
 Um auxiliar para retornar o conteúdo dependendo de uma condição de igualdade.
 
@@ -275,9 +275,9 @@ Inclui um novo componente de comentários em `this.id` + /comments.
 
 ## IncludeClientLib {#includeclientlib}
 
-Um auxiliar que inclui uma biblioteca cliente AEM html, que pode ser um js, um css ou uma biblioteca de temas. Para várias inclusões de tipos diferentes, por exemplo, js e css, essa tag deve ser usada várias vezes no script Handlebars.
+Um auxiliar que inclui uma biblioteca do cliente html do AEM, que pode ser um js, um css ou uma biblioteca de temas. Para várias inclusões de tipos diferentes, por exemplo, js e css, essa tag deve ser usada várias vezes no script Handlebars.
 
-Este auxiliar, apropriado somente no lado do servidor, fornece funcionalidade semelhante a [ui:includeClientLib](../../help/sites-developing/taglib.md) para scripts JSP.
+Este auxiliar, apropriado somente no lado do servidor, fornece funcionalidade semelhante à [ui:includeClientLib](../../help/sites-developing/taglib.md) para scripts JSP.
 
 ### Parâmetros {#parameters-7}
 
@@ -374,7 +374,7 @@ Depending on how long in the past, may return
 
 ## Xss-html {#xss-html}
 
-Um auxiliar que codifica uma cadeia de caracteres de origem para o conteúdo do elemento de HTML para ajudar a proteger contra XSS.
+Um auxiliar que codifica uma cadeia de caracteres de origem para o conteúdo do elemento HTML para ajudar a proteger contra XSS.
 
 OBSERVAÇÃO: este auxiliar não é um validador e não deve ser usado para gravar valores de atributo.
 
@@ -392,7 +392,7 @@ OBSERVAÇÃO: este auxiliar não é um validador e não deve ser usado para grav
 
 ## Xss-htmlAttr {#xss-htmlattr}
 
-Um auxiliar que codifica uma cadeia de caracteres de origem para gravar em um valor de atributo HTML para ajudar a proteger contra XSS.
+Um auxiliar que codifica uma cadeia de caracteres de origem para gravação em um valor de atributo do HTML para ajudar a proteger contra XSS.
 
 OBSERVAÇÃO: este auxiliar não é um validador e não deve ser usado para gravar atributos acionáveis (href, src, manipuladores de eventos).
 
@@ -428,7 +428,7 @@ var input = {{xss-jsString topic-title}}
 
 ## Xss-validHref {#xss-validhref}
 
-Um auxiliar que limpa um URL para gravar como um valor de atributo HTML href ou srce para ajudar a proteger contra XSS.
+Um auxiliar que limpa um URL para gravar como um href do HTML ou valor de atributo de origem para ajudar a proteger contra XSS.
 
 OBSERVAÇÃO: este auxiliar pode retornar uma cadeia de caracteres vazia.
 
@@ -463,7 +463,7 @@ OBSERVAÇÃO: este auxiliar pode retornar uma cadeia de caracteres vazia.
    * Capacidade de chamar a si mesmo (options.fn())
    * Capacidade de invocar o inverso de si mesmo (options.inverse())
 
-* Recomenda-se que o conteúdo da Cadeia de HTML retornado de um auxiliar seja um SafeString.
+* Recomenda-se que o conteúdo do HTML String retornado de um auxiliar seja um SafeString.
 
 ### Um exemplo de um assistente simples da documentação do Handlebars.js: {#an-example-of-a-simple-helper-from-handlebars-js-documentation}
 
@@ -488,7 +488,7 @@ template(context);
 Renderizaria:
 
 &lt;ul>
-&lt;li>&lt;a href=&quot;/posts/hello-world&quot;>Post!&lt;/a>&lt;/li>
+&lt;li>&lt;a href=&quot;/posts/hello-world&quot;>Publicar!&lt;/a>&lt;/li>
 &lt;/ul>
 
 ### Um exemplo de um assistente de bloco da documentação do Handlebars.js: {#an-example-of-a-block-helper-from-handlebars-js-documentation}
@@ -519,7 +519,7 @@ Renderizaria:
 
 ## Auxiliares de SCF personalizados {#custom-scf-helpers}
 
-Os auxiliares personalizados devem ser implementados no lado do servidor e no lado do cliente, especialmente ao transmitir dados. Para o SCF, a maioria dos modelos é compilada e renderizada no lado do servidor, pois o servidor gera o HTML para um determinado componente quando a página é solicitada.
+Os auxiliares personalizados devem ser implementados no lado do servidor e no lado do cliente, especialmente ao transmitir dados. Para o SCF, a maioria dos modelos é compilada e renderizada no lado do servidor, à medida que o servidor gera o HTML para determinado componente quando a página é solicitada.
 
 ### Auxiliares personalizados do lado do servidor {#server-side-custom-helpers}
 

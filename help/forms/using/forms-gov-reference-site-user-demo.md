@@ -9,7 +9,7 @@ feature: Adaptive Forms,Foundation Components
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '2478'
+source-wordcount: '2522'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ Configure o site de referência conforme descrito em [Configurar o site de refer
 * AEM Forms
 
    * Conversão automática dos formulários
-   * Criação  
+   * Criação
    * Modelos de dados de formulário/Fontes de dados
 
 * AEM Forms
@@ -81,28 +81,28 @@ Os seguintes grupos também estão incluídos:
 1. **Links**: na parte superior do menu principal do site We.Gov.
 1. **Instruções do usuário**: um conjunto de etapas numéricas a serem seguidas ao navegar pela história do usuário.
 1. **Portal do Forms**: *https://&lt;aemserver>:&lt;port>/content/we-gov/formsportal.html*
-1. **Exibição do Mobile**:Usuário do We.Gov para replicar uma exibição do Mobile com um navegador redimensionado.
+1. **Exibição Móvel**:We.Desenvolva o usuário para replicar uma exibição móvel com um navegador redimensionado.
 1. **Exibição da Área de Trabalho**: We.gov usuário para ver a demonstração em um laptop ou área de trabalho.
 1. **Formulário pré-filtragem**: formulário na página inicial do site We.Gov.
 1. **Formulário adaptável**: formulário de aplicativo de inscrição para demonstração do We.gov.
 
    *https://&lt;aemserver>:&lt;port>/content/forms/af/adobe-gov-forms/enrollment-application-for-health-benefits.html*
 
-1. **Site Adobe We.Gov**: *https://&lt;aemserver>:&lt;port>/content/we-gov/home.html*
-1. **Caixa de Entrada do Adobe**: barra de menu superior localizada [Ícone de sino](assets/bell.svg) no back-end do AEM.
+1. **Site do Adobe We.Gov**: *https://&lt;aemserver>:&lt;port>/content/we-gov/home.html*
+1. **Caixa de Entrada do Adobe**: barra de menu superior localizada [ícone de Campainha](assets/bell.svg) no back-end do AEM.
 
    *https://&lt;aemserver>:&lt;port>/aem/start.html*
 
 1. **Cliente de email**: maneira preferencial de exibir seus emails (Gmail, Outlook)
-1. **CTA**: Chamada para ação
+1. **CTA**: Call to action
 1. **Navegar**: para localizar um ponto de referência específico na página do navegador.
-1. **AFC**: Automated forms conversion
+1. **AFC**: conversão automática de formulários
 
-## Automated forms conversion (Camila) {#automated-forms-conversion}
+## Conversão automática de formulários (Camila) {#automated-forms-conversion}
 
-**Esta seção**: Camila, o Líder do CX, tem um formulário existente baseado em PDF que foi usado como parte de um processo baseado em papel. Como parte de um esforço de modernização, Camila quer usar este formulário de PDF para criar automaticamente um Forms adaptável moderno.
+**Esta seção**: Camila, o Líder do CX, tem um formulário existente baseado no PDF que foi usado como parte de um processo baseado em papel. Como parte de um esforço de modernização, Camila quer usar este formulário do PDF para criar automaticamente uma Forms adaptável moderna.
 
-### Automated forms conversion - We.Gov (Camila) {#automated-forms-conversion-wegov}
+### Conversão automática de formulários - We.Gov (Camila) {#automated-forms-conversion-wegov}
 
 1. Navegue até *https://&lt;aemserver>:&lt;port>/aem/start.html*
 
@@ -110,11 +110,11 @@ Os seguintes grupos também estão incluídos:
    * **Usuário**: camila.santos
    * **Senha**: senha
 1. Na página principal, selecione Forms > Forms &amp; Documents > AEM Forms We.gov Forms > AFC.
-1. Camila faz o upload do PDF para o AEM Forms.
+1. Camila faz o upload da PDF para o AEM Forms.
 
    ![Carregar formulário](assets/aftia-upload-form.jpg)
 
-1. Camilla, então, seleciona o formulário PDF e clica em **Iniciar conversão automática** para iniciar o processo de conversão. Talvez seja necessário clicar em **Substituir conversão** se você tiver convertido o formulário.
+1. Camilla, então, seleciona o formulário do PDF e clica em **Iniciar conversão automática** para iniciar o processo de conversão. Talvez seja necessário clicar em **Substituir conversão** se você tiver convertido o formulário.
 
    >[!NOTE]
    >
@@ -144,7 +144,7 @@ Os seguintes grupos também estão incluídos:
 
 **Esta seção**: depois que o documento é convertido e produz um Formulário adaptável, Camila deve conectar o Formulário adaptável a uma fonte de dados.
 
-1. Camila abre as Propriedades no formulário convertido em [Automated forms conversion - We.Gov](#automated-forms-conversion-wegov).
+1. Camila abre as Propriedades no formulário que foi convertido em [Conversão automática de formulários - We.Gov](#automated-forms-conversion-wegov).
 
 1. Camila seleciona Modelo de formulário > Seleciona modelo de dados de formulário na lista suspensa Selecionar de > Seleciona We.gov Inscrição FDM na lista de opções.
 
@@ -227,7 +227,7 @@ Aya precisa revisar alguns documentos em casa antes de concluir a solicitação 
    1. **Casado**: mostrar painel dependente conjugal
    1. **Divorciado**: mostrar próximo do painel parente
    1. **Viúvo**: mostrar próximo do painel parente
-   1. **Você tem Filhos?**: Botão de opção (Sim/Não) para mostrar o painel dependente filho.
+   1. **Você tem Filhos?**: botão de opção (Sim/Não) para mostrar o painel dependente filho.
 
       1. Botão (Adicionar/Remover) para adicionar/remover vários painéis dependentes filhos.
 
@@ -272,10 +272,10 @@ Aya precisa revisar alguns documentos em casa antes de concluir a solicitação 
 
 **Instruções do Usuário:**
 
-1. Navegue até seu Cliente de e-mail e localize o e-mail do Adobe Sign.
+1. Navegue até seu Cliente de email e localize o email do Adobe Sign.
 1. Clique no link para o Adobe Sign.
 
-   ![link do sinal de Adobe](/help/forms/using/assets/adobe_sign_link.png)
+   ![Link do Adobe Sign](/help/forms/using/assets/adobe_sign_link.png)
 
 **Instruções do Usuário:**
 
@@ -292,7 +292,7 @@ Aya precisa revisar alguns documentos em casa antes de concluir a solicitação 
 
 **Esta seção:** George é um analista comercial da agência governamental Aya e está solicitando um serviço da. George tem um único painel de controle no qual pode ver todos os aplicativos de solicitação de serviço que foram atribuídos a ele para análise.
 
-### Caixa de entrada AEM (George) {#george-user-story-aem-inbox}
+### Caixa de entrada do AEM (George) {#george-user-story-aem-inbox}
 
 **Instruções do Usuário:**
 
@@ -316,7 +316,7 @@ Aya precisa revisar alguns documentos em casa antes de concluir a solicitação 
 
    ![Revisão do Aplicativo de Benefícios de Integridade](/help/forms/using/assets/health_benefits.png)
 
-### Opcional: Caixa de entrada AEM e MS® Dynamics (George) {#george-user-story-aem-inbox-and-ms-dynamics}
+### Opcional: Caixa de entrada do AEM e MS® Dynamics (George) {#george-user-story-aem-inbox-and-ms-dynamics}
 
 Graças às integrações de dados e aos fluxos de trabalho automatizados, o aplicativo de Aya é exibido junto com um registro CRM que foi gerado automaticamente quando os dados foram enviados.
 
@@ -332,7 +332,7 @@ Graças às integrações de dados e aos fluxos de trabalho automatizados, o apl
 
    ![Registro do MS Dynamics](/help/forms/using/assets/ms_dynamics.png)
 
-### Voltar para a caixa de entrada AEM (George) {#george-user-story-back-to-aem-inbox}
+### Voltar para a Caixa de entrada do AEM (George) {#george-user-story-back-to-aem-inbox}
 
 George aprova a inscrição de Aya e, graças a um fluxo de trabalho automatizado existente, um email de confirmação também é enviado a Aya.
 
@@ -351,7 +351,7 @@ George aprova a inscrição de Aya e, graças a um fluxo de trabalho automatizad
 
 **Esta seção:** Camila, a Líder do CX, configura uma chamada telefônica de boas-vindas com Aya para explicar como usar os serviços governamentais para os quais ela é aprovada.
 
-### (Opcional) Caixa de entrada de AEM e MS® Dynamics {#camila-user-story-aem-inbox-ms-dynamics}
+### (Opcional) Caixa de entrada do AEM e MS® Dynamics {#camila-user-story-aem-inbox-ms-dynamics}
 
 **Instruções do Usuário:**
 
@@ -395,20 +395,20 @@ George aprova a inscrição de Aya e, graças a um fluxo de trabalho automatizad
 
 ## (Opcional) Welcome Kit Citizen (Aya) {#welcome-kit-citizen-aya}
 
-**Esta seção:** Aya recebe um email contendo um link para uma comunicação interativa que resume seus benefícios e também inclui campos de formulário a serem preenchidos. Com a declaração de benefícios do PDF anexada e o link para a carta de comunicação interativa no e-mail (com o mesmo tema/marca como a comunicação interativa).
+**Esta seção:** Aya recebe um email contendo um link para uma comunicação interativa que resume seus benefícios e também inclui campos de formulário a serem preenchidos. Com a declaração de benefícios do PDF anexada e o link para a carta de comunicação interativa no e-mail (com o mesmo tema/marca da comunicação interativa).
 
 ### Notificação De Cliente De Email (Aya) {#aya-user-story-email-client}
 
 **Instruções do Usuário:**
 
 1. Localize e abra o email do kit de boas-vindas.
-1. Role até o anexo PDF na parte inferior da página.
-1. Clique em para abrir o anexo PDF.
+1. Role até o anexo do PDF na parte inferior da página.
+1. Clique em para abrir o anexo do PDF.
 1. Role para trás em seu cliente de email e clique em **Exibir kit de boas-vindas online**.
 
    1. Essa ação abre a versão do canal da Web do mesmo documento.
 
-1. Para uma referência rápida ao PDF diretamente:
+1. Para obter uma referência rápida diretamente ao PDF:
 
    *https://&lt;aemserver>:&lt;port>/aem/formdetails.html/content/dam/formsanddocuments/adobe-gov-forms/welcome-handbook/we-gov-welcome-handbook*
 
@@ -486,7 +486,7 @@ George aprova a inscrição de Aya e, graças a um fluxo de trabalho automatizad
 
 1. Navegue até *https://&lt;aemserver>:&lt;port>/sites.html/content*
 1. Selecione **Site do AEM Forms We.Gov** para exibir as páginas do site.
-1. Selecione uma das páginas do site (por exemplo, Início) e escolha **Analytics &amp; Recommendations**.
+1. Selecione uma das páginas do site (por exemplo, Página Inicial) e escolha **Analytics &amp; Recommendations**.
 
    ![Análise e recomendação](/help/forms/using/assets/analytics_recommendation.jpg)
 

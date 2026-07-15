@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '217'
+source-wordcount: '226'
 ht-degree: 1%
 
 ---
@@ -35,7 +35,7 @@ Ele simplifica o processamento, permitindo:
 Ele fornece comunicações de maior qualidade, permitindo que você:
 
 * Gerenciar regras de negócios e conteúdo aprovado em um repositório de conteúdo centralizado
-* Usar o DAM do AEM para gerenciamento de imagens
+* Usar o DAM do AEM para gerenciar imagens
 * Criar arquivos Adobe PDF para arquivamento e auditoria
 * Crie mensagens em conformidade com a organização usando conteúdo pré-aprovado por meio de regras de negócios incorporadas.
 
@@ -44,5 +44,5 @@ Ele fornece comunicações de maior qualidade, permitindo que você:
 Isso melhora o engajamento do cliente, permitindo que você:
 
 * Adicione tecnologias interativas para habilitar um canal bidirecional, reduzindo o envio de papel
-* Informações confidenciais do Protect com segurança de documentos integrada e completa
+* Proteja informações confidenciais com segurança de documentos integrada e completa
 * Envie correspondência pelo canal de comunicação preferido do cliente, seja eletrônico, por correio, celular ou fax.

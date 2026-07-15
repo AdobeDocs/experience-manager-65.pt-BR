@@ -7,7 +7,7 @@ feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin, Developer
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
-source-wordcount: '1601'
+source-wordcount: '1639'
 ht-degree: 82%
 
 ---
@@ -30,7 +30,7 @@ Desde a ascensão dos sistemas de gerenciamento de conteúdo (CMS) de larga esca
 
 ![O CMS clássico de pilha completa](assets/full-stack.png)
 
-Em um CMS de pilha completa, toda a funcionalidade para manipular o conteúdo está no CMS. Os recursos do sistema constituem componentes diferentes da pilha do CMS. A solução de pilha completa tem muitas vantagens.
+Em uma CMS de pilha completa, toda a funcionalidade para manipular o conteúdo está no CMS. Os recursos do sistema constituem componentes diferentes da pilha do CMS. A solução de pilha completa tem muitas vantagens.
 
 * Você tem um sistema para manter.
 * O conteúdo é gerenciado centralmente.
@@ -65,7 +65,7 @@ Quando falamos de um CMS headless, o CMS gerencia o conteúdo e continua a entre
 
 ![CMS headless](assets/headless-cms.png)
 
-Os serviços de consumo, sejam experiências de RA, uma loja na Web, experiências móveis, aplicativos web progressivos (PWA) e assim por diante, recebem conteúdo do CMS headless e fornecem sua própria renderização. Eles fornecem suas próprias interfaces para o conteúdo.
+Os serviços de consumo, sejam experiências de RA, um webshop, experiências móveis, aplicativos web progressivos (PWAs) e assim por diante, recebem conteúdo do CMS headless e fornecem sua própria renderização. Eles fornecem suas próprias interfaces para o conteúdo.
 
 Omitir a interface simplifica o CMS ao remover a complexidade. Isso também altera a responsabilidade de renderizar o conteúdo para os serviços que realmente precisam do conteúdo e que geralmente são mais adequados para essa renderização.
 
@@ -89,9 +89,9 @@ A entrega de conteúdo headless geralmente usa APIs GraphQL. O GraphQL permite u
 
 Independentemente da API escolhida, ao definir um sistema headless com base em APIs comuns, você pode aproveitar o navegador mais recente e outras tecnologias da web, como aplicativos web progressivos (PWA). As APIs criam uma interface padrão que é facilmente extensível e adaptável.
 
-Normalmente, o conteúdo é renderizado no lado do cliente. Isso normalmente significa que alguém chama seu conteúdo em um dispositivo móvel, seu CMS entrega o conteúdo e, em seguida, o dispositivo móvel (o cliente) é responsável pela renderização do conteúdo que você serviu. Se o dispositivo for antigo ou estiver lento, sua experiência digital também será lenta.
+Normalmente, o conteúdo é renderizado no lado do cliente. Isso normalmente significa que alguém chama seu conteúdo em um dispositivo móvel, sua entrega do CMS o conteúdo e, em seguida, o dispositivo móvel (o cliente) é responsável pela renderização do conteúdo que você forneceu. Se o dispositivo for antigo ou estiver lento, sua experiência digital também será lenta.
 
-A dissociação do conteúdo da apresentação significa que pode haver mais controle sobre essas preocupações de desempenho do lado do cliente. A renderização do lado do servidor (SSR) transfere a responsabilidade de renderizar o conteúdo do navegador do cliente para o servidor. Isso permite que você, como provedor do conteúdo, possa oferecer um nível de desempenho garantido para o seu público, se isso for necessário.
+A dissociação do conteúdo da apresentação significa que pode haver mais controle sobre essas preocupações de desempenho do lado do cliente. A renderização do lado do servidor (SSR) transfere a responsabilidade de renderizar o conteúdo do navegador do cliente para o servidor. Isso permite que você, como provedor do conteúdo, possa oferecer um nível de desempenho garantido para o seu público-alvo, se isso for necessário.
 
 ## Desafios organizacionais {#organization}
 
@@ -123,11 +123,11 @@ Obrigado por começar a sua jornada headless do AEM. Agora que leu este document
 * Entender por que e quando o headless é necessário.
 * Possuir um conhecimento de alto nível sobre o uso dos conceitos headless e como eles se relacionam.
 
-Desenvolva esse conhecimento e prossiga com sua jornada AEM headless revisando a seguir o documento [Introdução ao AEM AEM headless](getting-started.md), no qual você aprenderá a configurar as ferramentas necessárias e como começar a pensar sobre como o aborda a entrega de conteúdo headless e seus pré-requisitos.
+Desenvolva esse conhecimento e prossiga com sua jornada do AEM headless revisando a seguir o documento [Introdução ao AEM headless](getting-started.md), onde você aprenderá a configurar as ferramentas necessárias e como começar a pensar sobre como o AEM aborda a entrega de conteúdo headless e seus pré-requisitos.
 
 ## Recursos adicionais {#additional-resources}
 
-Embora seja recomendável seguir para a próxima parte da jornada de desenvolvimento headless revisando o documento [Introdução ao AEM headless](getting-started.md), a seguir estão alguns recursos adicionais e opcionais que aprofundam alguns conceitos mencionados neste documento, mas não são necessários para continuar na jornada headless.
+Embora seja recomendável seguir para a próxima parte da jornada de desenvolvimento headless revisando o documento [Introdução ao AEM Headless](getting-started.md), a seguir estão alguns recursos adicionais e opcionais que aprofundam alguns conceitos mencionados neste documento, mas não são necessários para continuar na jornada headless.
 
 * Uma [Introdução ao AEM as a Headless CMS](/help/sites-developing/headless/introduction.md)
 * O [Portal do Desenvolvedor do AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=pt-BR)

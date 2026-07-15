@@ -11,21 +11,21 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '684'
+source-wordcount: '692'
 ht-degree: 1%
 
 ---
 
 # Configuração inicial {#initial-setup}
 
-## Iniciar instâncias de autor e do Publish {#start-author-and-publish-instances}
+## Iniciar instâncias de criação e publicação {#start-author-and-publish-instances}
 
 Para fins de desenvolvimento e demonstração, é necessário executar um autor e uma instância de publicação.
 
 Para fazer isso, siga as instruções básicas do Adobe Experience Manager (AEM) [Introdução](../../help/sites-deploying/deploy.md#getting-started), que resultam no seguinte:
 
 * Ambiente de autor em [localhost:4502](http://localhost:4502/)
-* Ambiente do Publish em [localhost:4503](http://localhost:4503/)
+* Ambiente de publicação em [localhost:4503](http://localhost:4503/)
 
 Para o AEM Communities,
 
@@ -34,7 +34,7 @@ Para o AEM Communities,
    * Desenvolvimento de sites, modelos e componentes.
    * Tarefas administrativas e de configuração.
 
-* O ambiente do Publish é para:
+* O ambiente de publicação é para:
 
    * A experiência da comunidade na publicação e moderação de conteúdo.
    * Criação de grupos da comunidade, membros e grupos de membros.
@@ -67,9 +67,9 @@ Consulte [Configurando Email](email.md).
 
 ## Habilitar o serviço de túnel {#enable-the-tunnel-service}
 
-Ao criar um site da comunidade no ambiente do Autor, o serviço de túnel possibilita atribuir funções a membros confiáveis da comunidade registrados no ambiente do Publish. O serviço de túnel também permite acesso aos membros da comunidade a partir dos [consoles Membros e Grupos](members.md) no ambiente de criação.
+Ao criar um site da comunidade no ambiente do Autor, o serviço de túnel possibilita atribuir funções a membros confiáveis da comunidade registrados no ambiente de Publicação. O serviço de túnel também permite acesso aos membros da comunidade a partir dos [consoles Membros e Grupos](members.md) no ambiente de criação.
 
-A convenção é para membros e grupos de membros criados no ambiente Publish para *não* serem recriados no ambiente de autor. Para obter mais informações, consulte [Gerenciando usuários e grupos de usuários](users.md).
+A convenção é para membros e grupos de membros criados no ambiente de Publicação para *não* serem recriados no ambiente de criação. Para obter mais informações, consulte [Gerenciando usuários e grupos de usuários](users.md).
 
 Para obter instruções simples para habilitar o serviço de túnel em uma instância do **Author**, consulte [Serviço de Túnel](deploy-communities.md#tunnel-service-on-author).
 
@@ -97,7 +97,7 @@ Crie um usuário no *autor*, ao qual foi atribuída a função de Administrador 
    * **[!UICONTROL ID]**: sirius
    * **[!UICONTROL Endereço de email]**: sirius.nilson@mailinator.com
    * **[!UICONTROL Senha]**: senha
-   * **[!UICONTROL Confirmar Senha&ast;]**: senha
+   * **[!UICONTROL Confirmar Senha&amp;ast;]**: senha
    * **[!UICONTROL Nome]**: Sirius
    * **[!UICONTROL Sobrenome]**: Nilson
 
@@ -116,14 +116,14 @@ Role para baixo até `Add User to Groups`:
 
 ## Ativar logon social {#enable-social-login}
 
-Antes que as versões de demonstração do logon social com Facebook e Twitter possam ser usadas, é necessário
+Antes que as versões de demonstração do logon social com o Facebook e o Twitter possam ser usadas, é necessário
 
-1. Instale um fix pack ou o [último feature pack](deploy-communities.md#latestfeaturepack) (para alterações na API do Facebook em março de 2017).
+1. Instale um fix pack ou o [último pacote de recursos](deploy-communities.md#latestfeaturepack) (para alterações na API do Facebook em março de 2017).
 1. [Habilite o provedor OAuth](social-login.md#adobe-granite-oauth-authentication-handler) no ambiente de publicação.
 
 Para servidores de produção, é necessário criar os serviços em nuvem necessários para fornecer logon social.
 
-Consulte [Logon social com o Facebook e o Twitter](social-login.md).
+Consulte [Logon social com Facebook e Twitter](social-login.md).
 
 ## Criar tags do tutorial {#create-tutorial-tags}
 
@@ -143,9 +143,9 @@ Use o [console de Marcação](../../help/sites-administering/tags.md#tagging-con
 Em seguida, siga as instruções para:
 
 1. [Definir as permissões de marca](../../help/sites-administering/tags.md#setting-tag-permissions).
-1. [Publish as marcas](../../help/sites-administering/tags.md#publishing-tags).
+1. [Publicar as marcas](../../help/sites-administering/tags.md#publishing-tags).
 
-Exemplo de pacote de tags criado para os Tutorials de introdução do AEM Communities
+Exemplo de pacote de tags criado para os Tutoriais de introdução do AEM Communities
 
 [Obter arquivo](assets/tutorial_tags-v63.zip)
 
@@ -155,4 +155,4 @@ Exemplo de pacote de tags criado para os Tutorials de introdução do AEM Commun
 
 Para obter instruções, visite [Como configurar o MongoDB para demonstração](demo-mongo.md).
 
-Por padrão, a instalação das instâncias AEM do autor e de publicação resulta no armazenamento do conteúdo gerado pelo usuário (UGC) no [armazenamento JCR Tar](../../help/sites-deploying/platform.md), que é acessado usando [JSRP](jsrp.md). JSRP não é um armazenamento comum, o que significa que o UGC é visível somente na instância em que foi inserido. Normalmente, o UGC é inserido em uma instância de publicação e não estaria visível no ambiente de criação, resultando em todas as tarefas de moderação que precisam usar a instância de publicação.
+Por padrão, a instalação das instâncias do AEM de criação e publicação resulta no armazenamento do conteúdo gerado pelo usuário (UGC) no [armazenamento JCR Tar](../../help/sites-deploying/platform.md), que é acessado usando [JSRP](jsrp.md). JSRP não é um armazenamento comum, o que significa que o UGC é visível somente na instância em que foi inserido. Normalmente, o UGC é inserido em uma instância de publicação e não estaria visível no ambiente de criação, resultando em todas as tarefas de moderação que precisam usar a instância de publicação.
