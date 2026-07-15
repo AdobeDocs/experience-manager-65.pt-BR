@@ -11,8 +11,8 @@ feature: Adaptive Forms
 role: Admin, User, Developer
 source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
-source-wordcount: '1558'
-ht-degree: 0%
+source-wordcount: '1613'
+ht-degree: 1%
 
 ---
 
@@ -42,7 +42,7 @@ O código do cliente identifica a conta de cliente do Adobe Target e é usado co
 
 ### Integrar um servidor do Target em execução ao AEM Forms {#integrate-target-in-aem-forms}
 
-1. No servidor AEM, vá para https://&lt;*hostname*>:&lt;*port*>/libs/cq/core/content/tools/cloudservices.html.
+1. No servidor do AEM, vá para https://&lt;*hostname*>:&lt;*port*>/libs/cq/core/content/tools/cloudservices.html.
 
 1. Na seção **Adobe Target**, clique em **Mostrar Configurações** e no ícone **+** para adicionar uma configuração.
 Se você estiver configurando um destino pela primeira vez, clique em **Configurar Agora.**
@@ -53,7 +53,7 @@ Se você estiver configurando um destino pela primeira vez, clique em **Configur
 1. Especifique os detalhes da conta do Target, como código do cliente, email e senha.
 1. Selecione **Rest** na lista suspensa Tipo de API.
 
-1. Clique em **Conectar-se ao Adobe Target** para poder inicializar a conexão com o Target. Se a conexão for bem-sucedida, a mensagem Conexão bem-sucedida será exibida. Clique em **OK** na mensagem e em **OK** na caixa de diálogo. A conta do Target está configurada.
+1. Clique em **Conectar-se ao Adobe Target** para poder inicializar a conexão com o Target. Se a conexão for bem-sucedida, a mensagem Conexão bem-sucedida será exibida. Clique em **OK** na mensagem e, em seguida, em **OK** na caixa de diálogo. A conta do Target está configurada.
 
 1. Crie uma estrutura Target conforme descrito em [Adicionar uma estrutura](/help/sites-administering/target.md).
 
@@ -62,7 +62,7 @@ Se você estiver configurando um destino pela primeira vez, clique em **Configur
 1. Clique em **Configuração do AEM Forms Target**.
 1. Selecione uma **Estrutura de Destino**.
 1. No campo **URLs de destino**, especifique todas as URLs nas quais os testes A/B serão executados. Por exemplo, https://&lt;*hostname*>:&lt;*port*>/ para o AEM Forms Server no OSGi ou https://&lt;*hostname*>:&lt;*port*>/lc/ para o AEM Forms Server no JEE.
-Considere que você deseja configurar um URL do Target para uma instância do Publish e que seus clientes podem acessá-lo usando o nome do host ou o endereço IP. Nesse caso, você deve configurar ambos como URLs do Target, usando o nome do host e o endereço IP. Se você configurar apenas um dos URLs, seu teste A/B não será executado para clientes provenientes do outro URL. Clique em **+** para especificar várias URLs.
+Considere que você deseja configurar um URL de destino para uma instância de publicação e que seus clientes podem acessá-lo usando o nome do host ou o endereço IP. Nesse caso, você deve configurar ambos como URLs do Target, usando o nome do host e o endereço IP. Se você configurar apenas um dos URLs, seu teste A/B não será executado para clientes provenientes do outro URL. Clique em **+** para especificar várias URLs.
 
 1. Clique em **Salvar**.
 
@@ -85,7 +85,7 @@ Além do servidor JBoss®, você pode adicionar o argumento -Dabtesting.enabled=
 
 ## Criar públicos-alvo no AEM {#create-audiences-within-aem}
 
-O AEM permite criar um público-alvo e usá-lo para um teste A/B. O público-alvo que você cria no AEM está disponível no AEM Forms. Para criar públicos-alvo no AEM, faça o seguinte:
+O AEM permite criar um público-alvo e usá-lo para um teste A/B. O público-alvo criado no AEM está disponível no AEM Forms. Para criar públicos-alvo no AEM, faça o seguinte:
 
 1. Na instância de criação, selecione **Adobe Experience Manager** > **Personalization** > **Públicos-alvo**.
 
@@ -109,7 +109,7 @@ Você pode selecionar o público-alvo ao configurar o teste A/B para um formulá
 1. Clique na ferramenta **Selecionar** na barra de ferramentas e selecione o formulário adaptável.
 1. Clique em **Mais** na barra de ferramentas e selecione **Configurar teste A/B**. A página Configurar teste A/B é aberta.
 
-[&#128279;](assets/ab-test-configure-1.png)
+[![Página de configuração de teste A/B para formulários adaptáveis](assets/ab-test-configure.png)](assets/ab-test-configure-1.png)
 
 1. Especifique um **Nome da atividade** para o teste A/B.
 
@@ -126,7 +126,7 @@ Você pode selecionar o público-alvo ao configurar o teste A/B para um formulá
    * Descrição, rótulo e texto de ajuda de um campo
    * Scripts que não afetam ou interrompem o fluxo de envio
    * Validações (cliente e servidor)
-   * Tema para experiência B. (Você pode selecionar um tema alternativo para a experiência B)
+   * Tema para a experiência B. (Você pode selecionar um tema alternativo para a experiência B)
 
 1. Vá para a interface do Forms e Documentos, selecione o formulário adaptável, clique em **Mais** e selecione **Iniciar teste A/B**.
 
@@ -153,7 +153,7 @@ Para exibir e analisar o relatório de teste A/B:
 
 1. Selecione o formulário adaptável, clique em **Mais** e em **Relatório de Teste A/B**. O relatório é exibido.
 
-[&#128279;](assets/ab-test-report-3.png)
+[![Relatório de teste A/B](assets/ab-test-report-2.png)](assets/ab-test-report-3.png)
 
 1. Analise o relatório e veja se você tem pontos de dados suficientes para declarar uma das experiências de melhor desempenho como vencedora. Você pode optar por continuar com o mesmo teste A/B por mais tempo ou declarar um vencedor e terminar o teste A/B.
 1. Para declarar um vencedor e finalizar o teste A/B, clique no botão **Encerrar teste A/B** no painel de relatórios. Uma caixa de diálogo solicita que você declare uma das duas experiências como vencedora. Escolha um vencedor e confirme a finalização do teste A/B.

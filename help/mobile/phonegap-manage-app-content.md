@@ -11,7 +11,7 @@ feature: Mobile
 role: Admin
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '685'
+source-wordcount: '692'
 ht-degree: 0%
 
 ---
@@ -50,17 +50,17 @@ Selecione um dos pacotes de conteúdo listados para criar ou editar conteúdo, c
 
 Observe que *tudo é conteúdo*, o que significa que os estilos de aplicativo, cópia (texto), mídia, páginas, navegação e direcionamento de conteúdo podem ser editados e atualizados OTA, sem precisar ir para uma loja de aplicativos.
 
-Para editar conteúdo do AEM Mobile, *autores de AEM *precisarão de uma sólida compreensão da interface de edição de conteúdo do AEM: [Criação de páginas no AEM.](/help/sites-authoring/qg-page-authoring.md)
+Para editar conteúdo do AEM Mobile, *autores do AEM *precisarão ter uma sólida compreensão da interface de edição de conteúdo do AEM: [Criação de páginas no AEM.](/help/sites-authoring/qg-page-authoring.md)
 
 ## O Bloco Gerenciar Pacotes De Conteúdo {#the-manage-content-packages-tile}
 
-Aqui, os *Administradores de AEM* podem atualizar seus aplicativos de forma rápida e fácil, a fim de fornecer experiências envolventes e conteúdo atualizado para impulsionar o engajamento com a marca e atender às metas comerciais, tudo sem precisar de um reenvio de desenvolvedor ou de uma loja de aplicativos.
+Aqui, os *Administradores do AEM* podem atualizar seus aplicativos de forma rápida e fácil, a fim de fornecer experiências envolventes e conteúdo atualizado para impulsionar o engajamento com a marca e atender às metas comerciais, tudo sem precisar de um reenvio de desenvolvedor ou de uma loja de aplicativos.
 
 ![chlimage_1-162](assets/chlimage_1-162.png)
 
-Depois que os *Autores de AEM* adicionarem ou modificarem conteúdo por meio do Bloco Gerenciar Conteúdo, os *Administradores de AEM* poderão enviar essas alterações para os clientes com uma atualização de Pacotes de Conteúdo.
+Depois que os *Autores do AEM* adicionarem ou modificarem conteúdo por meio do Bloco Gerenciar Conteúdo, os *Administradores do AEM* poderão enviar essas alterações para os clientes com uma atualização de Pacotes de Conteúdo.
 
-A ação Pacote de Conteúdo permite que o *Autor de AEM* crie e edite o conteúdo da página enquanto a equipe de desenvolvimento faz alterações no design e na implementação de um Aplicativo de Host, incluindo navegação, estilo, lógica do lado do servidor, modelos e componentes. Em seguida, envia essas alterações do OTA para os clientes sem precisar reenviá-las para distribuição nas várias lojas.
+A ação Pacote de Conteúdo permite que o *AEM Author* crie e edite o conteúdo da página, enquanto a equipe de desenvolvimento faz alterações no design e na implementação de um Aplicativo de Host, incluindo navegação, estilo, lógica do lado do servidor, modelos e componentes, e depois envia essas alterações para o OTA dos clientes, sem precisar reenviar para as várias lojas para distribuição.
 
 **Para publicar conteúdo novo ou atualizado**
 
@@ -78,13 +78,13 @@ A preparação de uma atualização do conteúdo permite que várias atualizaç�
 
 >[!NOTE]
 >
->O conteúdo dividido pode ser verificado usando o aplicativo AEM Verify antes da publicação.
+>O conteúdo dividido pode ser verificado usando o aplicativo AEM Verify antes de publicar.
 >
 >Consulte [Quickstart móvel para verificação de AEM](/help/mobile/phonegap-mobile-quickstart.md) para obter mais detalhes sobre o aplicativo AEM Verify.
 
 ![chlimage_1-165](assets/chlimage_1-165.png)
 
-Quando estiver pronto para fornecer novo conteúdo aos usuários do aplicativo com o OTA de sincronização de conteúdo, selecione **Publish** conforme mostrado abaixo.
+Quando estiver pronto para fornecer novo conteúdo aos usuários do aplicativo com o OTA de sincronização de conteúdo, selecione **Publicar** conforme mostrado abaixo.
 
 ![chlimage_1-166](assets/chlimage_1-166.png)
 
@@ -102,5 +102,5 @@ Depois de aprender sobre como Criar e gerenciar conteúdo do aplicativo no paine
 
 Para saber mais sobre as funções e responsabilidades de um Administrador e Desenvolvedor, consulte os recursos abaixo:
 
-* [Desenvolvimento do Adobe PhoneGap Enterprise com AEM](/help/mobile/developing-in-phonegap.md)
-* [Administração de conteúdo para o Adobe PhoneGap Enterprise com AEM](/help/mobile/administer-phonegap.md)
+* [Desenvolvimento para o Adobe PhoneGap Enterprise com o AEM](/help/mobile/developing-in-phonegap.md)
+* [Administração de conteúdo para o Adobe PhoneGap Enterprise com o AEM](/help/mobile/administer-phonegap.md)

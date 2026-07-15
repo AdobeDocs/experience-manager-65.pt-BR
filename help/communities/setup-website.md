@@ -11,7 +11,7 @@ feature: Communities
 role: Developer
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '566'
 ht-degree: 1%
 
 ---
@@ -79,7 +79,7 @@ O diretório /apps está protegido e não está acessível publicamente, assim c
 
    Como em qualquer processo de edição, você deve salvar com frequência. Se você tiver problemas ao inserir dados, talvez o tempo limite do seu logon tenha expirado ou você precise salvar as edições anteriores.
 
-1. A estrutura no painel do explorador do CRXDE Lite agora deve ser semelhante a esta:
+1. A estrutura no painel do explorador do CRXDE Lite agora deve ser semelhante a:
 
    ![modelo-crxde](assets/crxde-template.png)
 
