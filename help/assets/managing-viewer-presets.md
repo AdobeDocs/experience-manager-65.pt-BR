@@ -13,7 +13,7 @@ exl-id: 0899e497-88e9-4fc3-a6be-b3a149fb5b32
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 13c495b8b7e9824c5de8469df96bec00c74c8dbc
 workflow-type: tm+mt
-source-wordcount: '4397'
+source-wordcount: '4654'
 ht-degree: 8%
 
 ---
@@ -27,7 +27,7 @@ Para obter instruções sobre como criar e personalizar suas próprias predefini
 Caminho: `<scene7_domain>/s7sdk/<library_version>/docs/jsdocs/index.html`.\
 Por exemplo, 3.10 SDK: [https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html)
 
-Consulte também o [Guia de referência de visualizadores do Adobe Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html?lang=pt-BR).
+Consulte também o [Guia de referência de visualizadores do Adobe Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html).
 
 Esta seção descreve como criar, editar e gerenciar predefinições do visualizador. É possível aplicar uma predefinição do visualizador a um ativo sempre que você o visualiza. Consulte [Aplicando as Predefinições do Visualizador](#applying-a-viewer-preset-to-an-asset).
 
@@ -39,7 +39,7 @@ Esta seção descreve como criar, editar e gerenciar predefinições do visualiz
 
 Todos os visualizadores prontos para uso oferecem suporte à acessibilidade do teclado.
 
-Consulte também [Acessibilidade e navegação do teclado](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html?lang=pt-BR).
+Consulte também [Acessibilidade e navegação do teclado](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html).
 
 ## Gerenciar predefinições do visualizador {#managing-viewer-presets-1}
 
@@ -55,7 +55,7 @@ Adicione, edite, exclua, publique, cancele a publicação e visualize predefini�
 
 Páginas da Web diferentes têm necessidades diferentes. Por exemplo, às vezes você deseja uma página da Web que forneça um link que abra o Visualizador do HTML5 em uma janela separada do navegador. Em outros casos, pode ser necessário incorporar o Visualizador do HTML5 diretamente na página de hospedagem. Nesse último caso, a página da Web pode ter um layout estático. Ou ele pode ser &quot;responsivo&quot; e ser exibido de forma diferente em diferentes dispositivos ou para diferentes tamanhos de janela de navegador. Para acomodar essas necessidades, todos os visualizadores HTML5 predefinidos e prontos para uso que acompanham o Dynamic Media são compatíveis com páginas da Web estáticas e páginas da Web com design responsivo.
 
-Consulte [Biblioteca de imagens responsiva](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html?lang=pt-BR) para obter mais informações sobre como incorporar visualizadores responsivos nas suas páginas da Web.
+Consulte [Biblioteca de imagens responsiva](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html) para obter mais informações sobre como incorporar visualizadores responsivos nas suas páginas da Web.
 
 >[!NOTE]
 >
@@ -139,7 +139,7 @@ Os administradores podem adicionar e personalizar os seguintes tipos de mídia a
    <td><strong>Zoom vertical</strong></td>
    <td><p>O visualizador de zoom vertical permite maximizar uma experiência de visualização de imagens do produto para fornecer aos usuários a melhor representação de um produto. A localização vertical das amostras faz o seguinte:</p>
     <ul>
-     <li>Garante que as amostras estejam "acima da dobra".<br/> Com amostras horizontais, dependendo do tamanho da tela de desktop do usuário, elas não ficam visíveis até que o usuário role a página para baixo. Ao inserir as amostras verticalmente no visualizador, elas garantem a visibilidade independentemente do tamanho da tela do usuário.</li>
+     <li>Garante que as amostras estejam "acima da dobra".<br/> Com as amostras horizontais, dependendo do tamanho da tela do desktop do usuário, elas não ficam visíveis até que o usuário role a página para baixo. Ao inserir as amostras verticalmente no visualizador, elas garantem a visibilidade independentemente do tamanho da tela do usuário.</li>
      <li>Maximiza o tamanho da imagem principal.<br /> Com amostras horizontais, é necessário reservar espaço na página para garantir que elas estejam visíveis. Esse posicionamento diminuiu o tamanho da imagem principal. No entanto, com um layout de amostra vertical, não é necessário alocar esse espaço. Dessa forma, você pode maximizar o tamanho da imagem principal.</li>
     </ul> </td>
   </tr>
@@ -158,7 +158,7 @@ Veja também [Demonstrações em tempo real](https://landing.adobe.com/en/na/dyn
 
 Para obter informações sobre o navegador da Web e as versões do sistema operacional compatíveis para Visualizadores, consulte as Notas de versão dos Visualizadores.
 
-Consulte &quot;Notas de versão de visualizadores&quot; no sumário do [Guia de Referência de Visualizadores](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html?lang=pt-BR).
+Consulte &quot;Notas de versão de visualizadores&quot; no sumário do [Guia de Referência de Visualizadores](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html).
 
 >[!NOTE]
 >
@@ -440,13 +440,13 @@ Consulte [Considerações especiais para criar uma predefinição do Visualizado
 
      O editor visual permite ver o efeito que uma determinada propriedade tem em um estilo. Defina ou ajuste qualquer propriedade para ver instantaneamente o efeito sobre o visualizador usando a amostra à esquerda do editor.
 
-     As propriedades de estilo CSS para cada tipo de predefinição do visualizador são descritas no tópico da Ajuda &quot;Personalizando o Visualizador do *`<viewer name>`*&quot; no [Guia de Referência do Visualizador](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html?lang=pt-BR). Por exemplo, se você estiver criando uma predefinição do visualizador do tipo `Mixed_Media`, consulte [Personalizando o Visualizador de Mídia Mista](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html?lang=pt-BR) para obter uma lista e uma descrição de cada propriedade.
+     As propriedades de estilo CSS para cada tipo de predefinição do visualizador são descritas no tópico da Ajuda &quot;Personalizando o Visualizador do *`<viewer name>`*&quot; no [Guia de Referência do Visualizador](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html). Por exemplo, se você estiver criando uma predefinição do visualizador do tipo `Mixed_Media`, consulte [Personalizando o Visualizador de Mídia Mista](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html) para obter uma lista e uma descrição de cada propriedade.
 
    * Se você tiver definido as configurações de estilo em um arquivo CSS separado, é possível fazer upload do arquivo CSS para o AEM Assets. Selecione **[!UICONTROL Importar CSS]** abaixo do menu suspenso **[!UICONTROL Tipo Selecionado]** (se necessário, role o editor visual para cima para vê-lo) para que você possa encontrar o arquivo CSS carregado e associá-lo à predefinição do visualizador.
 
      Ao importar um arquivo CSS, o editor visual verifica se o CSS usa os marcadores de visualização corretos. Por exemplo, se você estiver criando um visualizador de Zoom, todas as regras de CSS importadas deverão ser definidas usando o nome de classe do visualizador `.s7mixedmediaviewer` definido em um elemento de visualizador pai.
 
-     Você pode importar CSS arbitrário e artesanal, desde que ele defina corretamente os marcadores CSS de um determinado visualizador. (Os marcadores CSS são descritos em qualquer tópico da Ajuda &quot;Personalizando o *&lt;nome do visualizador>*&quot; no [Guia de Referência do Visualizador](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html?lang=pt-BR). Por exemplo, se você quiser ler sobre marcadores CSS para o Visualizador de Zoom, consulte [Personalização do Visualizador de Zoom](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html?lang=pt-BR).) No entanto, é possível que o editor visual não entenda alguns valores CSS. Nesses casos, o editor visual tenta substituir os erros para que o CSS ainda possa funcionar.
+     Você pode importar CSS arbitrário e artesanal, desde que ele defina corretamente os marcadores CSS de um determinado visualizador. (Os marcadores CSS são descritos em qualquer tópico da Ajuda &quot;Personalizando o *&lt;nome do visualizador>*&quot; no [Guia de Referência do Visualizador](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html). Por exemplo, se você deseja ler sobre marcadores CSS para o Visualizador de Zoom, consulte [Personalizando o Visualizador de Zoom](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html).) Entretanto, é possível que o editor visual não entenda alguns valores CSS. Nesses casos, o editor visual tenta substituir os erros para que o CSS ainda possa funcionar.
 
    >[!NOTE]
    >
@@ -464,15 +464,15 @@ Por exemplo, para o tipo *VideoPlayer*, em **[!UICONTROL Modificadores]** > **[!
    * **[!UICONTROL traço]** - Fluxo de vídeos somente como traço. No entanto, em dispositivos Safari/iOS, você deve selecionar **[!UICONTROL hls]** como o tipo.
    * **[!UICONTROL hls]** - Fluxo de vídeos somente como hls.
    * **[!UICONTROL auto]** - Prática recomendada. A criação de fluxos DASH e HLS é otimizada para armazenamento. Portanto, a Adobe recomenda que você sempre selecione **[!UICONTROL auto]** como o tipo de reprodução. Fluxo de vídeos como traço, hls ou progressivo, como na seguinte ordem de reprodução:
-      * Se o navegador suportar DASH, a transmissão DASH será usada primeiro.
-      * Se o navegador não for compatível com DASH, a transmissão do HLS será usada, depois.
-      * Se o navegador não for compatível com DASH ou HLS, a reprodução progressiva será usada por último.
+     * Se o navegador suportar DASH, a transmissão DASH será usada primeiro.
+     * Se o navegador não for compatível com DASH, a transmissão do HLS será usada, depois.
+     * Se o navegador não for compatível com DASH ou HLS, a reprodução progressiva será usada por último.
 
 1. No menu suspenso **[!UICONTROL Tipo selecionado]**, selecione um componente cujos comportamentos você deseja alterar.
 
    Muitos componentes no editor visual têm uma descrição detalhada associada a ele. Essas descrições aparecem em caixas azuis quando você expande um componente para revelar seus parâmetros associados.
 
-   Alguns tipos de Visualizador têm componentes que permitem especificar comandos do Servidor de imagens em um campo de texto **[!UICONTROL Comando IS]**. Para obter uma lista de comandos que podem ser usados, consulte a [Referência da API de disponibilização de imagens](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-is-home.html?lang=pt-BR).
+   Alguns tipos de Visualizador têm componentes que permitem especificar comandos do Servidor de imagens em um campo de texto **[!UICONTROL Comando IS]**. Para obter uma lista de comandos que podem ser usados, consulte a [Referência da API de disponibilização de imagens](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-is-home.html).
 
    >[!NOTE]
    >
@@ -521,7 +521,7 @@ Ao criar ou editar uma predefinição interativa do visualizador de vídeo, voc�
 
 Se desativar a opção **[!UICONTROL Rolagem automática]** (desmarcar a caixa de seleção) na predefinição do visualizador, durante a reprodução do vídeo pelo usuário, o painel exibirá apenas a primeira imagem em miniatura em toda a duração do vídeo. Entretanto, um usuário pode rolar manualmente pelas miniaturas usando os ícones de seta para cima e para baixo, se desejar.
 
-Ao ativar (selecionar) a **[!UICONTROL Rolagem automática]** na predefinição do visualizador as imagens em miniatura atribuídas a um segmento de vídeo são roladas para exibição no início de um segmento durante a reprodução do vídeo. Entretanto, há instâncias em que determinadas miniaturas em um segmento são exibidas com duas vezes mais comprimento no início ou no final delas. Esse comportamento ocorre porque a quantidade de miniaturas em um segmento é maior que o número visível no painel e não é divisível uniformemente.
+Ao habilitar (selecionar) a **[!UICONTROL Rolagem automática]** na predefinição do visualizador as imagens em miniatura atribuídas a um segmento de vídeo são roladas para exibição no início de um segmento durante a reprodução do vídeo. Entretanto, há instâncias em que determinadas miniaturas em um segmento são exibidas com duas vezes mais comprimento no início ou no final delas. Esse comportamento ocorre porque a quantidade de miniaturas em um segmento é maior que o número visível no painel e não é divisível uniformemente.
 
 Para ilustrar, suponha que você tenha um segmento de vídeo de 30 segundos. E há um total de nove miniaturas para exibir durante os 30 segundos. Seu navegador é dimensionado de forma que haja quatro posições de miniatura visíveis no painel de exibição. O segmento de tempo do vídeo de 30 segundos é dividido em três subsegmentos. A tabela a seguir mostra o detalhamento de quais miniaturas são exibidas para um determinado subsegmento de tempo:
 
