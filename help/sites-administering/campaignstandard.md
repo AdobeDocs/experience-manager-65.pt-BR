@@ -233,7 +233,7 @@ Ao [criar um modelo de entrega de email específico do AEM](#aem-email-delivery-
 1. Na seção **Conexão**, defina os seguintes campos:
 
    1. Servidor: este é o URL do seu servidor de criação do AEM. Isso não deve terminar com uma barra.
-   1. Conta: Este é o `campaign-remote` usuário que você [ configurou anteriormente no AEM.](#campaign-remote-user)
+   1. Conta: Este é o `campaign-remote` usuário que você [&#x200B; configurou anteriormente no AEM.](#campaign-remote-user)
    1. Senha: esta é a senha do `campaign-remote`usuário que você [configurou anteriormente no AEM.](#campaign-remote-user)
 
    ![Editando o usuário aemInstance](assets/acs-external-acount-editor.png)
