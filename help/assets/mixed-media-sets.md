@@ -12,7 +12,7 @@ exl-id: 70a72fb9-a289-4eda-abcc-300edf9f1961
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1500'
+source-wordcount: '1506'
 ht-degree: 14%
 
 ---
@@ -57,7 +57,7 @@ Para começar a usar rapidamente os Conjuntos de mídias mistas, siga estas etap
 
    Selecione o Conjunto de mídias mistas e você poderá visualizá-lo. Selecione os ícones de miniatura para examinar o Conjunto de mídias mistas no Visualizador selecionado. Você pode escolher diferentes Visualizadores no menu **[!UICONTROL Visualizadores]**, disponível no menu suspenso do painel à esquerda.
 
-1. [Conjuntos de mídias mistas do Publish](#publishing-mixed-media-sets).
+1. [Publicar Conjuntos de Mídias Mistas](#publishing-mixed-media-sets).
 
    A publicação de um Conjunto de mídias mistas ativa o URL e a string incorporada. Além disso, você deve [publicar a predefinição do visualizador](/help/assets/managing-viewer-presets.md#publishing-viewer-presets).
 
@@ -73,7 +73,7 @@ Se necessário, você poderá editar [Conjuntos de mídias mistas](#editing-mixe
 
 >[!NOTE]
 >
->Se tiver problemas ao criar conjuntos, consulte [Solução de problemas do Dynamic Media - modo Scene7](/help/assets/troubleshoot-dms7.md).
+>Se tiver problemas ao criar conjuntos, consulte [Solucionar problemas do Dynamic Media - Modo Scene7](/help/assets/troubleshoot-dms7.md).
 
 ## Carregar ativos {#uploading-assets}
 
@@ -163,7 +163,7 @@ Ao adicionar ativos ao conjunto, eles são automaticamente adicionados em ordem 
 
    >[!NOTE]
    >
-   >* Para editar os ativos em um Conjunto de mídias mistas - Navegue até o Conjunto de mídias mistas. Selecione (não selecione) o conjunto para que ele seja aberto na página Visualização do conjunto de Experience Manager. No painel à esquerda, selecione o sinal de seta para baixo para abrir a lista suspensa e selecione **[!UICONTROL Definir membros]**. Na página Definir membros, passe o mouse sobre um ativo e selecione **[!UICONTROL Editar]** (ícone de lápis) para abrir a página de edição.
+   >* Para editar os ativos em um Conjunto de mídias mistas - Navegue até o Conjunto de mídias mistas. Selecione (não selecione) o conjunto para que ele seja aberto na página Visualização do conjunto do Experience Manager. No painel à esquerda, selecione o sinal de seta para baixo para abrir a lista suspensa e selecione **[!UICONTROL Definir membros]**. Na página Definir membros, passe o mouse sobre um ativo e selecione **[!UICONTROL Editar]** (ícone de lápis) para abrir a página de edição.
    >
    >* Para excluir um Conjunto de mídias mistas inteiro - A partir de qualquer modo de exibição (como a Exibição de cartão ou em Coluna), navegue até o Conjunto de mídias mistas. Passe o mouse sobre o conjunto e selecione **Selecionar** (ícone de marca de seleção). Pressione **[!UICONTROL Espaço]** no teclado ou selecione **[!UICONTROL Mais]** (linha de três pontos) e **[!UICONTROL Excluir]**.
 
@@ -171,9 +171,9 @@ Ao adicionar ativos ao conjunto, eles são automaticamente adicionados em ordem 
 
 Consulte [Visualizar Assets](/help/assets/previewing-assets.md) para obter detalhes sobre como visualizar Conjuntos de mídias mistas.
 
-## Publish um conjunto de mix de mídia {#publishing-mixed-media-sets}
+## Publicar um conjunto de mix de mídia {#publishing-mixed-media-sets}
 
-Consulte [Publish Assets](/help/assets/publishing-dynamicmedia-assets.md) para obter detalhes sobre como publicar Conjuntos de Mídias Mistas.
+Consulte [Publicar Assets](/help/assets/publishing-dynamicmedia-assets.md) para obter detalhes sobre como publicar conjuntos de mídias mistas.
 
 >[!NOTE]
 >

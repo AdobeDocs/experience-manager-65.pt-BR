@@ -1,6 +1,6 @@
 ---
-title: Iniciar APIs de Serviços de documento a partir do fluxo de trabalho do AEM
-description: Saiba como invocar serviços de documento AEM no DDX ou nas entradas fornecidas. Veja também como converter PDF em PDF/A
+title: Iniciar APIs de serviços de documento a partir do fluxo de trabalho do AEM
+description: Saiba como chamar os serviços de documento do AEM no DDX ou nas entradas fornecidas. Veja também como converter PDF para PDF/A
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
@@ -10,23 +10,23 @@ feature: Interactive Communication
 role: User, Developer
 source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
-source-wordcount: '1167'
+source-wordcount: '1173'
 ht-degree: 0%
 
 ---
 
-# Iniciar APIs de Serviços de documento a partir do fluxo de trabalho do AEM  {#initiate-document-services-apis-from-aem-workflow}
+# Iniciar APIs de serviços de documento a partir do fluxo de trabalho do AEM  {#initiate-document-services-apis-from-aem-workflow}
 
 ## Assembler {#assembler}
 
 O AEM Forms fornece fluxos de trabalho personalizados para chamar as seguintes APIs de serviço do Assembler:
 
 * **invoke**: invoca operações especificadas no DDX de entrada nas entradas fornecidas.
-* **toPDFA**: converte o documento PDF de entrada em documento PDF/A.
+* **toPDFA**: converte o documento PDF de entrada em um documento PDF/A.
 
 ### Chamar fluxo de trabalho DDX {#invoke-ddx-workflow}
 
-O fluxo de trabalho **Invocar DDX** invoca a API de serviço do Assembler `Invoke`, que você pode usar para montar ou desmontar documentos, adicionar marca d&#39;água a um PDF e assim por diante.
+O fluxo de trabalho **Invocar DDX** invoca a API de serviço do Assembler `Invoke`, que você pode usar para reunir ou desmontar documentos, adicionar marca d&#39;água a uma PDF e assim por diante.
 
 1. Arraste a etapa de fluxo de trabalho **[!UICONTROL Invocar DDX]** para a guia Forms Workflow no Sidekick.
 1. Clique duas vezes na etapa de fluxo de trabalho adicionada para editar o componente.
@@ -38,9 +38,9 @@ O fluxo de trabalho Chamar DDX requer os seguintes documentos de entrada:
 
 * **DDX**: é uma entrada obrigatória para a etapa de fluxo de trabalho Chamar DDX e pode ser especificada selecionando uma das seguintes opções no menu suspenso de entrada DDX.
 
-   * *Relativo à Carga*: o arquivo de entrada DDX é relativo à pasta de carga do item de fluxo de trabalho.
-   * *Usar carga*: a carga do item de fluxo de trabalho é usada como o documento DDX de entrada.
-   * *Caminho absoluto*: o caminho absoluto para o documento DDX no repositório do CRX.
+  * *Relativo à Carga*: o arquivo de entrada DDX é relativo à pasta de carga do item de fluxo de trabalho.
+  * *Usar carga*: a carga do item de fluxo de trabalho é usada como o documento DDX de entrada.
+  * *Caminho absoluto*: o caminho absoluto para o documento DDX no repositório do CRX.
 
 * **Criar mapa a partir de carga**: quando selecionado, todos os documentos na pasta de carga são adicionados ao Mapa do documento de entrada para a API `invoke` no Assembler. O nome do nó de cada documento é usado como uma chave no mapa.
 
@@ -66,7 +66,7 @@ Dependendo do DDX de entrada, a API invoke pode produzir vários documentos de s
 
 ### Converter em fluxo de trabalho do PDF/A {#convert-to-pdf-a-workflow}
 
-A etapa de fluxo de trabalho Converter em PDF/A invoca a API de serviço do Assembler `toPDFA`. Ele é usado para converter documentos PDF em documentos compatíveis com PDF/A.
+A etapa de fluxo de trabalho Converter em PDF/A chama a API de serviço do Assembler `toPDFA`. Ele é usado para converter documentos do PDF em documentos compatíveis com o PDF/A.
 
 1. Arraste a etapa de fluxo de trabalho **[!UICONTROL ConvertToPDFA]** para a guia Forms Workflow no Sidekick.
 
@@ -83,13 +83,13 @@ Especifique a origem do documento a ser convertido em um documento compatível c
 
 #### Opções de conversão {#conversion-options}
 
-As Opções de conversão permitem especificar opções que alteram o processo de conversão de PDF/A.
+As Opções de conversão permitem especificar opções que alteram o processo de conversão do PDF/A.
 
 * *Conformidade* : especifica o padrão PDF/A que o PDF/A de saída deve atender.
-* *Nível de Resultado* : especifica o nível de log a ser usado para logs de conversão de PDF/A.
+* *Nível de Resultado* : especifica o nível de log a ser usado para logs de conversão do PDF/A.
 * *Assinaturas* : especifica como as assinaturas no documento de entrada devem ser processadas durante a conversão.
-* *Espaço de Cor* : especifica o espaço de cor predefinido a ser usado para o documento de PDF/A de saída.
-* *Verificar* Conversão: especifica se o documento PDF/A convertido deve ser verificado para conformidade com PDF/A após a conversão.
+* *Espaço de Cor* : especifica o espaço de cor predefinido a ser usado para o documento PDF/A de saída.
+* *Verificar* Conversão: especifica se o documento PDF/A convertido deve ser verificado quanto à conformidade com o PDF/A após a conversão.
 * *Nível de Log do Trabalho* : especifica o nível de log a ser usado para processar logs.
 
 * *Esquema de Extensão de Metadados* : especifica o caminho para o esquema de extensão de metadados a ser usado para propriedades XMP nos metadados do documento PDF.
@@ -103,11 +103,11 @@ A guia Documentos de saída permite especificar o destino dos documentos de saí
 
 ## Forms {#forms}
 
-O fluxo de trabalho Renderizar Formulário de PDF é um wrapper em torno da API de serviço do Forms `renderPDFForm` para criar um formulário de PDF usando um modelo XDP e um xml de dados.
+O fluxo de trabalho Renderizar formulário PDF é um invólucro sobre a API de serviço do Forms `renderPDFForm` para criar um formulário PDF usando um modelo XDP e dados xml.
 
-### Renderizar fluxo de trabalho do Formulário de PDF {#render-pdf-form-workflow}
+### Renderizar fluxo de trabalho do PDF Form {#render-pdf-form-workflow}
 
-1. Arraste a etapa Renderizar fluxo de trabalho de PDF para a guia Forms Workflow no Sidekick.
+1. Arraste a etapa Renderizar fluxo de trabalho do PDF Form na guia Forms Workflow no Sidekick.
 1. Clique duas vezes na etapa de fluxo de trabalho adicionada para editar o componente.
 1. Na caixa de diálogo Editar componente, configure documentos de entrada, documentos de saída e parâmetros adicionais e clique em **[!UICONTROL OK]**.
 
@@ -119,24 +119,24 @@ O fluxo de trabalho Renderizar Formulário de PDF é um wrapper em torno da API 
 
 #### Documentos de saída {#output-documents-2}
 
-* *Documento de saída*: - especifica o nome do formulário de PDF gerado.
+* *Documento de saída*: - especifica o nome do formulário PDF gerado.
 
 #### Parâmetros adicionais {#additional-parameters}
 
 * *Raiz de Conteúdo*: especifica o caminho para a pasta no repositório onde os fragmentos ou imagens usados no modelo XDP de entrada são armazenados.
-* *Enviar URL*: especifica a URL de envio padrão para o formulário de PDF gerado.
-* *Localidade*: especifica a localidade padrão para o formulário de PDF gerado.
-* *Versão do Acrobat*: especifica a versão do Acrobat de destino para o formulário de PDF gerado.
-* *PDF marcado*: especifica se o PDF gerado deve ficar acessível.
+* *Enviar URL*: especifica a URL de envio padrão para o formulário PDF gerado.
+* *Localidade*: especifica a localidade padrão para o formulário PDF gerado.
+* *Versão do Acrobat*: especifica a versão do Acrobat de destino para o formulário do PDF gerado.
+* *PDF Marcado*: especifica se o PDF gerado deve ficar acessível.
 * *Documento XCI*: especifica o caminho para o arquivo XCI.
 
 ## Saída {#output}
 
-O Fluxo de Trabalho de PDF de Geração Não Interativa é um wrapper em torno da API de serviço de Saída `generatePDFOutput`. Ele é usado para gerar documentos de PDF não interativos do modelo XDP e do xml de dados.
+O Fluxo de Trabalho de Geração de PDF Não Interativo é um wrapper em torno da API de serviço de Saída `generatePDFOutput`. É usado para gerar documentos não interativos do PDF a partir de modelo XDP e xml de dados.
 
-### Gerar fluxo de trabalho de saída de PDF não interativo   {#generate-non-interactive-pdf-output-workflow-nbsp}
+### Gerar fluxo de trabalho de saída do PDF não interativo   {#generate-non-interactive-pdf-output-workflow-nbsp}
 
-1. Arraste o workflow Gerar saída de PDF não interativa para a guia Forms Workflow no Sidekick.
+1. Arraste o workflow Gerar saída do PDF não interativa para a guia Forms Workflow no Sidekick.
 1. Clique duas vezes na etapa de fluxo de trabalho adicionada para editar o componente.
 1. Na caixa de diálogo Editar componente, configure documentos de entrada, documentos de saída e parâmetros adicionais e clique em **[!UICONTROL OK]**.
 
@@ -148,13 +148,13 @@ O Fluxo de Trabalho de PDF de Geração Não Interativa é um wrapper em torno d
 
 #### Documento de saída {#output-document}
 
-*Documento de saída*: especifica o nome do formulário de PDF gerado.
+*Documento de saída*: especifica o nome do formulário PDF gerado.
 
 #### Parâmetros adicionais {#additional-parameters-1}
 
 * *Raiz de Conteúdo*: especifica o caminho para a pasta no repositório onde os fragmentos ou imagens usados no modelo XDP de entrada são armazenados.
-* *Localidade*: especifica a localidade padrão para o formulário de PDF gerado.
-* *Versão do Acrobat*: especifica a versão do Acrobat de destino para o formulário de PDF gerado.
+* *Localidade*: especifica a localidade padrão para o formulário PDF gerado.
+* *Versão do Acrobat*: especifica a versão do Acrobat de destino para o formulário do PDF gerado.
 * PDF linearizado: especifica se o PDF gerado deve ser otimizado para visualização na Web.
-* *PDF marcado*: especifica se o PDF gerado deve ficar acessível.
+* *PDF Marcado*: especifica se o PDF gerado deve ficar acessível.
 * *Documento XCI*: especifica o caminho para o arquivo XCI.
