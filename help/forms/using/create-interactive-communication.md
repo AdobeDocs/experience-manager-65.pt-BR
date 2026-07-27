@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '6130'
+source-wordcount: '6132'
 ht-degree: 1%
 
 ---
@@ -45,12 +45,12 @@ A seguir estão os pré-requisitos para criar uma Comunicação interativa:
    * **[!UICONTROL Modelo de dados de formulário]**: procure e selecione o modelo de dados de formulário. Para obter mais informações sobre o Modelo de dados de formulário, consulte [Integração de dados do AEM Forms](/help/forms/using/data-integration.md).
 
    * **[!UICONTROL Serviço de preenchimento prévio]**: selecione o serviço de preenchimento prévio para recuperar os dados e preencher previamente a comunicação interativa.
-   * **[!UICONTROL Tipo de processo do Post]**: é possível selecionar o fluxo de trabalho AEM ou Forms a ser acionado quando a comunicação interativa for enviada. Selecione o tipo de workflow a ser acionado.
+   * **[!UICONTROL Tipo de pós-processamento]**: é possível selecionar o fluxo de trabalho do AEM ou do Forms a ser acionado quando a comunicação interativa for enviada. Selecione o tipo de workflow a ser acionado.
 
-   * **[!UICONTROL Processo do Post]**: selecione o nome do fluxo de trabalho a ser acionado. Ao selecionar o fluxo de trabalho do AEM, forneça o Caminho do anexo, o Caminho do layout, o Caminho do PDF, o Caminho dos dados de impressão e o Caminho dos dados da Web.
+   * **[!UICONTROL Pós-processamento]**: selecione o nome do fluxo de trabalho a ser acionado. Ao selecionar o fluxo de trabalho do AEM, forneça o Caminho do anexo, o Caminho do layout, o Caminho do PDF, o Caminho dos dados de impressão e o Caminho dos dados da Web.
    * **[!UICONTROL Marcas]**: selecione as marcas a serem aplicadas à Comunicação Interativa. Você também pode digitar um nome de tag novo/personalizado e pressionar Enter para criá-lo.
-   * **[!UICONTROL Author]**:O nome do autor é automaticamente retirado do nome de usuário do usuário conectado.
-   * **[!UICONTROL Data do Publish:]** Insira a data para publicar a Comunicação Interativa.
+   * O nome de autor **[!UICONTROL Autor]**:The é automaticamente retirado do nome de usuário do usuário logado.
+   * **[!UICONTROL Data de Publicação:]** Insira a data para publicar a Comunicação Interativa.
    * **[!UICONTROL Data de cancelamento da publicação]**: insira a data para cancelar a publicação da Comunicação Interativa.
 
 1. Selecione **[!UICONTROL Próximo]**. A tela para especificar os detalhes do canal da Web e de impressão é exibida.
@@ -63,10 +63,10 @@ A seguir estão os pré-requisitos para criar uma Comunicação interativa:
    * **[!UICONTROL Tema]** e **[!UICONTROL Selecionar Tema]**: procure e selecione o tema para estilizar o canal da Web da Comunicação Interativa. Para obter mais informações, consulte [Temas no AEM Forms](/help/forms/using/themes.md).
 
    * **[!UICONTROL Usar impressão como principal para o canal da Web]**: selecione essa opção para criar o canal da Web sincronizado com o canal de impressão. Usar o canal de impressão como mestre para o canal da Web garante que o conteúdo e a vinculação de dados do canal da Web sejam derivados do canal de impressão, e as alterações feitas no canal de impressão sejam refletidas no canal da Web ao selecionar Sincronizar. Os autores podem, no entanto, interromper a herança de componentes específicos no canal da Web, conforme necessário. Para obter mais informações, consulte [Sincronizar canal da Web com canal de impressão](../../forms/using/create-interactive-communication.md#synchronize).
-Se você selecionar a opção **[!UICONTROL Usar impressão como principal para canal da Web]**, poderá selecionar qualquer um dos seguintes modos para gerar canal da Web:
+     Se você selecionar a opção **[!UICONTROL Usar impressão como principal para canal da Web]**, poderá selecionar qualquer um dos seguintes modos para gerar canal da Web:
 
-      * **[!UICONTROL Layout automático]**: selecione este modo para gerar automaticamente espaços reservados, conteúdo e associação de dados para o canal da Web a partir do canal de impressão.
-      * **[!UICONTROL Organizar manualmente]**: selecione este modo para selecionar e adicionar manualmente elementos do canal de impressão ao canal da Web usando o conteúdo mestre disponível na guia **[!UICONTROL Fontes de Dados]**. Para obter mais informações, consulte [Selecionar elementos do canal de impressão para criar conteúdo do canal da Web](#selectprintchannelelements).
+     * **[!UICONTROL Layout automático]**: selecione este modo para gerar automaticamente espaços reservados, conteúdo e associação de dados para o canal da Web a partir do canal de impressão.
+     * **[!UICONTROL Organizar manualmente]**: selecione este modo para selecionar e adicionar manualmente elementos do canal de impressão ao canal da Web usando o conteúdo mestre disponível na guia **[!UICONTROL Fontes de Dados]**. Para obter mais informações, consulte [Selecionar elementos do canal de impressão para criar conteúdo do canal da Web](#selectprintchannelelements).
 
    Para obter mais informações sobre canal de impressão e canal Web, consulte [Canal de impressão e canal Web](/help/forms/using/web-channel-print-channel.md).
 
@@ -170,10 +170,10 @@ Selecione o fragmento do documento, selecione ![configure_icon](assets/configure
    * [Adição e configuração de gráficos](/help/forms/using/chart-component-interactive-communications.md)
    * [Sincronização do canal da Web com o canal de impressão](../../forms/using/create-interactive-communication.md#synchronize)
 
-      * Sincronização automática
-      * Cancelar herança
-      * Reativar herança
-      * Sincronizar
+     * Sincronização automática
+     * Cancelar herança
+     * Reativar herança
+     * Sincronizar
 
    * [Anexos e acesso à biblioteca](../../forms/using/create-interactive-communication.md#attachmentslibrary)
    * [Propriedades do campo XDP/Layout](../../forms/using/create-interactive-communication.md#xdplayoutfieldproperties)
@@ -242,8 +242,8 @@ No canal de impressão, é possível configurar os anexos e o acesso à bibliote
    * **[!UICONTROL Número Máximo de Anexos Permitidos]**: especifique o número máximo de anexos permitidos com a Comunicação Interativa.
    * **[!UICONTROL Arquivos a Serem Anexados]**: Selecione **[!UICONTROL Adicionar]** e procure arquivos a serem anexados e especifique o seguinte:
 
-      * **[!UICONTROL Anexar este arquivo ao documento por padrão]**: você pode alterar esta opção se apenas o anexo não for obrigatório.
-      * **[!UICONTROL Obrigatório:]** o agente não poderá remover o anexo na interface do usuário do Agente.
+     * **[!UICONTROL Anexar este arquivo ao documento por padrão]**: você pode alterar esta opção se apenas o anexo não for obrigatório.
+     * **[!UICONTROL Obrigatório:]** o agente não poderá remover o anexo na interface do usuário do Agente.
 
    ![arquivos de anexos](assets/attachfiles.png)
 
@@ -263,9 +263,9 @@ No canal de impressão, é possível configurar os anexos e o acesso à bibliote
    * **[!UICONTROL Título]**: insira um título que ficará visível para o Agente na interface do usuário do Agente e na árvore do Contêiner de Documentos.
    * **[!UICONTROL Tipo de Associação]**: selecione um dos seguintes tipos de associação para o campo.
 
-      * Nenhum: o agente preencherá o valor da propriedade.
-      * Fragmento de texto: se selecionado, você pode procurar e selecionar um fragmento de documento de texto cujo conteúdo é renderizado no campo. Como alternativa, arraste e solte o fragmento do documento de texto no nome do campo para configurar a vinculação entre eles. O fragmento do documento de texto não deve conter nenhuma variável.
-      * Objeto de modelo de dados: selecione uma propriedade de modelo de dados de formulário cujo valor esteja preenchido no campo. Como alternativa, selecione a guia **Fontes de Dados** e arraste e solte a propriedade no campo.
+     * Nenhum: o agente preencherá o valor da propriedade.
+     * Fragmento de texto: se selecionado, você pode procurar e selecionar um fragmento de documento de texto cujo conteúdo é renderizado no campo. Como alternativa, arraste e solte o fragmento do documento de texto no nome do campo para configurar a vinculação entre eles. O fragmento do documento de texto não deve conter nenhuma variável.
+     * Objeto de modelo de dados: selecione uma propriedade de modelo de dados de formulário cujo valor esteja preenchido no campo. Como alternativa, selecione a guia **Fontes de Dados** e arraste e solte a propriedade no campo.
 
    * **[!UICONTROL Valores Padrão]**: o valor padrão garante que o campo não fique vazio quando não houver valor fornecido pelo objeto de modelo de dados ou fragmento de texto especificado. Se o tipo de vínculo de dados for none, o valor padrão será pré-preenchido no campo.
    * **[!UICONTROL Padrão de Exibição]**: você também pode definir um formato de exibição para um campo. Selecione qualquer uma das opções predefinidas da lista suspensa **Tipo** para aplicar um formato de exibição a um campo. Selecione **Personalizado** para definir um padrão de exibição que não esteja disponível na lista. Para obter mais informações, consulte [Padrões de exibição de dados](../../forms/using/create-interactive-communication.md#datadisplaypatterns)
@@ -294,13 +294,13 @@ Alterne para o modo **Visualização** ou abra a interface do usuário do Agente
 
 A tabela a seguir lista um exemplo dos valores exibidos como resultado da configuração do padrão de exibição de dados de uma variável:
 
-| Tipo | Valor padrão | Padrão de exibição | Exibir valor | Descrição |
+| Tipo | Valor padrão | Exibir padrão | Exibir valor | Descrição |
 |---|---|---|---|---|
 | SocialSecurityNumber | 123456789 | texto{999-99-9999} | 123-45-6789 | O número de dígitos no campo de valor padrão corresponde ao número de dígitos no campo Padrão. O valor com base no padrão é exibido com sucesso. |
 | SocialSecurityNumber | 1234567 | texto{999-99-9999} | 1-23-4567 | O número de dígitos no campo de valor padrão é menor que o número de dígitos no campo Padrão. O padrão se aplica aos 7 dígitos disponíveis. |
 | SocialSecurityNumber | 1234567890 | texto{999-99-9999} | 1234567890 | O número de dígitos no campo de valor padrão é maior que o número de dígitos no campo Padrão. Como resultado, não há alteração no valor de exibição. |
 
-Se um padrão de exibição não for especificado para uma variável ou um elemento de modelo de dados de formulário, a [configuração global de fragmento de documento](https://helpx.adobe.com/br//experience-manager/6-5/forms/using/interactive-communication-configuration-properties.html) será usada por padrão.
+Se um padrão de exibição não for especificado para uma variável ou um elemento de modelo de dados de formulário, a [configuração global de fragmento de documento](https://helpx.adobe.com//experience-manager/6-5/forms/using/interactive-communication-configuration-properties.html) será usada por padrão.
 
 Se você não aplicar um padrão de exibição a uma variável do tipo de dados Number, a Visualização de impressão exibirá o padrão de acordo com a configuração global do fragmento do documento. Se você aplicar alterações à configuração padrão do fragmento de documento global, a interface do usuário do agente ainda exibirá o padrão de acordo com os separadores padrão definidos para o local.
 
@@ -346,8 +346,8 @@ Você pode adicionar tabelas dinâmicas na Comunicação interativa usando fragm
       * **[!UICONTROL Título]**: insira um título que ficará visível no editor de Comunicação Interativa.
       * **[!UICONTROL Tipo de Associação]**: selecione um dos seguintes tipos de associação para o campo.
 
-         * **[!UICONTROL Nenhum]**
-         * **[!UICONTROL Objeto de modelo de dados]**: o valor de uma propriedade de modelo de dados de formulário está preenchido no campo. Como alternativa, selecione a guia **Fontes de Dados** e arraste e solte a propriedade no campo.
+        * **[!UICONTROL Nenhum]**
+        * **[!UICONTROL Objeto de modelo de dados]**: o valor de uma propriedade de modelo de dados de formulário está preenchido no campo. Como alternativa, selecione a guia **Fontes de Dados** e arraste e solte a propriedade no campo.
 
       * **[!UICONTROL Objeto de Modelo de Dados]**: a propriedade do modelo de dados de formulário cujo valor está preenchido no campo.
       * **[!UICONTROL Valor Padrão]**: o valor padrão garante que o campo não fique vazio quando não houver valor fornecido pelo objeto de modelo de dados especificado. O valor padrão é pré-preenchido no campo.
@@ -546,7 +546,7 @@ Passe o mouse sobre a área ou variável de destino relevante no canal da Web, s
 
 A herança dos componentes na área de destino é cancelada e agora você pode editá-los conforme necessário.
 
-### Reativar herança {#re-enable-inheritance}
+### Reabilitar herança {#re-enable-inheritance}
 
 No canal da Web, se você tiver cancelado a herança de um componente, será possível reativá-lo. Para reativar a herança, passe o mouse sobre o limite da área de destino relevante, que inclui o componente, e selecione ![reenableinheritance](assets/reenableinheritance.png).
 
@@ -618,7 +618,7 @@ PrintChannelRenderOptions renderOptions = new PrintChannelRenderOptions();
 PrintDocument printDocument = printChannel.render(renderOptions);
 ```
 
-Para gerar a saída em qualquer outro formato, especifique o tipo de formato de saída. Consulte [PrintChannel API](https://helpx.adobe.com/br/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/PrintConfig.html) para obter a lista de tipos de formato de saída com suporte.
+Para gerar a saída em qualquer outro formato, especifique o tipo de formato de saída. Consulte [PrintChannel API](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/PrintConfig.html) para obter a lista de tipos de formato de saída com suporte.
 
 Por exemplo, você pode usar a seguinte amostra para definir PCL como formato de saída para uma comunicação interativa:
 

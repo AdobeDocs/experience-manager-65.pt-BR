@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '4434'
+source-wordcount: '4415'
 ht-degree: 3%
 
 ---
@@ -77,7 +77,7 @@ Conclua as etapas a seguir para adicionar uma propriedade personalizada a todos 
 
       **Nome:** Geolocalização (ou o nome que você deseja dar a esta propriedade)
 
-      **Tipo:** nt:não estruturado
+      **Tipo:** nt:unstructured
 
       ![Criar nó: GeoLocation](assets/geographicallocationcreatenode.png)
 
@@ -150,7 +150,7 @@ Crie um nó para cada uma das propriedades (campos) para as quais você precisa 
 1. No nó de propriedade (aqui geographicallocation), adicione um novo nó com o nome `items`. No nó items, adicione um nó para cada um dos valores no menu suspenso. Como prática recomendada, adicione o primeiro nó como em branco para servir como o valor padrão do menu suspenso e uma opção para o usuário não especificar nenhum valor para o campo. Para adicionar várias opções/valores suspensos, repita as seguintes etapas:
 
    1. Clique com o botão direito do mouse no nó da propriedade (aqui geograficamente alocação) e selecione **Criar** > **Criar Nó**.
-   1. Insira o nome do campo, pois `item1,` retém o tipo como nt:unstructured, e clique em **OK**.
+   1. Insira o nome do campo como `item1,` tipo de retenção como nt:unstructured e clique em **OK**.
    1. Adicione as seguintes propriedades ao nó recém-criado (aqui item1) e clique em **Salvar tudo**:
 
       <table>
@@ -220,7 +220,7 @@ Usando o procedimento a seguir, é possível adicionar uma guia com um campo a t
 
       **Guia comum de Nome:** (ou o nome que você deseja dar a esta propriedade)
 
-      **Tipo:** nt:não estruturado
+      **Tipo:** nt:unstructured
 
    1. Clique no novo nó criado (aqui, a guia comum). O CRX exibe as propriedades do nó.
    1. Adicione as seguintes propriedades ao nó (aqui commontab):
@@ -254,7 +254,7 @@ Usando o procedimento a seguir, é possível adicionar uma guia com um campo a t
 
       **Nome:** itens
 
-      **Tipo:** nt:não estruturado
+      **Tipo:** nt:unstructured
 
    1. Clique em **Salvar tudo:**
 
@@ -265,7 +265,7 @@ Usando o procedimento a seguir, é possível adicionar uma guia com um campo a t
 
       **Nome:** Coluna1 (Ou o nome que você deseja dar ao nó; esse nome não aparece na Interface do Usuário.)
 
-      **Tipo:** nt:não estruturado
+      **Tipo:** nt:unstructured
 
    1. Adicione a seguinte propriedade ao nó (Aqui Coluna1) e clique em **Salvar tudo**:
 
@@ -291,18 +291,18 @@ Usando o procedimento a seguir, é possível adicionar uma guia com um campo a t
 
       **Nome:** itens
 
-      **Tipo:** nt:não estruturado
+      **Tipo:** nt:unstructured
 
    1. Clique em **Salvar tudo**.
 
-1. Para criar um campo na guia personalizada (aqui Recipients), adicione um nó (aqui GeographicLocation). Essa propriedade corresponde à coluna criada. Use as etapas a seguir para criar o campo (para criar mais campos/nós, repita essas etapas.):
+1. Para criar um campo na guia personalizada (aqui Recipients), adicione um nó (aqui GeographicLocation). Essa propriedade corresponde à coluna criada. Use as seguintes etapas para criar o campo (para criar mais campos/nós, repita essas etapas.):
 
    1. Clique com o botão direito do mouse no nó de itens e selecione **Criar** > **Criar Nó**.
    1. Certifique-se de que a caixa de diálogo Criar Nó tenha os seguintes valores e clique em **OK**:
 
       **Nome:** GeographicalLocation (ou outro nome para a propriedade do campo)
 
-      **Tipo:** nt:não estruturado
+      **Tipo:** nt:unstructured
 
    1. Adicione as seguintes propriedades ao nó de campo (aqui GeographicLocation) e clique em **Salvar tudo**.
 
@@ -342,7 +342,7 @@ Usando o procedimento a seguir, é possível adicionar uma guia com um campo a t
 
       **Nome:** mytab (ou o nome que você deseja dar a esta propriedade)
 
-      **Tipo:** nt:não estruturado
+      **Tipo:** nt:unstructured
 
    1. Clique no novo nó criado (aqui mytab). O CRX exibe as propriedades do nó.
    1. Adicione as duas propriedades a seguir ao nó (aqui customtab):
@@ -430,7 +430,7 @@ Para adicionar uma propriedade a um tipo de ativo, conclua as seguintes etapas:
 
       **Nome:** customtab (ou o nome que você deseja dar a esta propriedade)
 
-      **Tipo:** nt:não estruturado
+      **Tipo:** nt:unstructured
 
    1. Clique no novo nó criado (aqui, guia personalizada). O CRX exibe as propriedades do nó.
    1. Adicione as duas propriedades a seguir ao nó (aqui customtab):
@@ -449,7 +449,7 @@ Para adicionar uma propriedade a um tipo de ativo, conclua as seguintes etapas:
 
       **Nome:** itens
 
-      **Tipo:** nt:não estruturado
+      **Tipo:** nt:unstructured
 
    1. Clique em **Salvar tudo**.
 
@@ -460,7 +460,7 @@ Para adicionar uma propriedade a um tipo de ativo, conclua as seguintes etapas:
 
       **Nome:** Coluna1 (ou o nome que você deseja dar ao nó)
 
-      **Tipo:** nt:não estruturado
+      **Tipo:** nt:unstructured
 
    1. Adicione a seguinte propriedade ao nó (Aqui, Column1) e clique em **Salvar tudo**.
 
@@ -486,7 +486,7 @@ Para adicionar uma propriedade a um tipo de ativo, conclua as seguintes etapas:
 
       **Nome:** itens
 
-      **Tipo:** nt:não estruturado
+      **Tipo:** nt:unstructured
 
    1. Clique em **Salvar tudo:**
 
@@ -497,7 +497,7 @@ Para adicionar uma propriedade a um tipo de ativo, conclua as seguintes etapas:
 
       **Nome:** Um nome de sua escolha (aqui Geolocalização)
 
-      **Tipo:** nt:não estruturado
+      **Tipo:** nt:unstructured
 
    1. Adicione as seguintes propriedades ao nó e clique em **Salvar tudo**.
 
@@ -616,7 +616,7 @@ Conclua as seguintes etapas para exibir a propriedade personalizada na interface
 
       **Nome:** Um nome de sua escolha (aqui GeographicalLocation)
 
-      **Tipo:** nt:não estruturado
+      **Tipo:** nt:unstructured
 
    1. Adicione as seguintes propriedades ao nó e clique em **Salvar tudo**.
 
@@ -713,7 +713,7 @@ Conclua as seguintes etapas para exibir a propriedade personalizada na interface
       %>
       ```
 
-      No código, GeoLocation é o valor definido na propriedade name ao criar o nó/campo personalizado. Ao criar um nó/campo personalizado, você especificou o nome da propriedade com ./extendedproperties/ prefixo: ./extendedproperties/GeoLocation. No código, o prefixo não é necessário.
+      No código, GeoLocation é o valor definido na propriedade name ao criar o nó/campo personalizado. Ao criar um nó/campo personalizado, você especificou o nome da propriedade com ./extendedproperties/ prefix: ./extendedproperties/GeoLocation. No código, o prefixo não é necessário.
 
    1. Para exibir a nova propriedade na interface do usuário, adicione uma tag TD como a seguir antes de fechar a tag tr (&lt;/tr>):
 
@@ -773,23 +773,23 @@ Para permitir a indexação de propriedades personalizadas, conclua as seguintes
 
       **Nome:** agregações
 
-      **Tipo:** nt:não estruturado
+      **Tipo:** nt:unstructured
 
    1. Clique em **Salvar tudo**.
 
-1. Na pasta de agregações recém-criada, adicione um nó cm:resource. E, em cm:resource, adicione um nó chamado include0.
+1. Na pasta de agregações recém-criada, adicione um nó cm:resource. E abaixo de cm:resource, adicione um nó chamado include0.
 
    1. Clique com o botão direito do mouse na pasta de agregações e selecione **Criar** > **Criar Nó**. Certifique-se de que a caixa de diálogo Criar Nó tenha os seguintes valores e clique em **OK**:
 
-      **Nome:** cm:recurso
+      **Nome:** cm:resource
 
-      **Tipo:** nt:não estruturado
+      **Tipo:** nt:unstructured
 
-   1. Clique com o botão direito do mouse na pasta cm:resource e selecione **Criar** > **Criar nó**. Certifique-se de que a caixa de diálogo Criar Nó tenha os seguintes valores e clique em **OK**:
+   1. Clique com o botão direito do mouse na pasta cm:resource e selecione **Criar** > **Criar Nó**. Certifique-se de que a caixa de diálogo Criar Nó tenha os seguintes valores e clique em **OK**:
 
       **Nome:** include0
 
-      **Tipo:** nt:não estruturado
+      **Tipo:** nt:unstructured
 
    1. Clique no novo nó criado (aqui inclui0). O CRX exibe as propriedades do nó.
    1. Adicione a seguinte propriedade ao nó (aqui inclui0):
@@ -820,7 +820,7 @@ Para permitir a indexação de propriedades personalizadas, conclua as seguintes
 
       **Nome:** local (ou o nome da propriedade personalizada que você deseja adicionar à pesquisa)
 
-      **Tipo:** nt:não estruturado
+      **Tipo:** nt:unstructured
 
    1. Clique no novo nó criado (local aqui). O CRX exibe as propriedades do nó.
    1. Adicione as seguintes propriedades ao nó (local aqui):
@@ -932,7 +932,7 @@ Para permitir a indexação de propriedades personalizadas, conclua as seguintes
 
 Para mostrar ou ocultar as propriedades personalizadas, conclua as seguintes etapas:
 
-1. No nó de propriedade personalizada, como geographicallocation, crie um nó com o nome &quot;granite:rendercondition&quot; do tipo &quot;nt:unstructured&quot;.
+1. No nó de propriedade personalizada, como alocação geográfica, crie um nó com o nome &quot;granite:rendercondition&quot; do tipo &quot;nt:unstructured&quot;.
 1. Adicione a seguinte propriedade ao nó e clique em **Salvar tudo**:
 
    <table>

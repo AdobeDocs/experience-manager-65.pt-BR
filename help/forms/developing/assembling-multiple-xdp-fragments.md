@@ -13,7 +13,7 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1859'
+source-wordcount: '1886'
 ht-degree: 0%
 
 ---
@@ -89,7 +89,7 @@ Para cada subformulário, você pode adicionar um elemento `XDPContent` (esse el
 Para montar vários fragmentos XDP, execute as seguintes tarefas:
 
 1. Incluir arquivos de projeto.
-1. Crie um cliente PDF Assembler.
+1. Crie um cliente do PDF Assembler.
 1. Consulte um documento DDX existente.
 1. Consulte os documentos XDP.
 1. Definir opções de tempo de execução.
@@ -108,7 +108,7 @@ Os seguintes arquivos JAR devem ser adicionados ao caminho de classe do projeto:
 * adobe-utilities.jar (necessário se o AEM Forms for implantado no JBoss)
 * jbossall-client.jar (necessário se o AEM Forms for implantado no JBoss)
 
-**Criar um cliente PDF Assembler**
+**Criar um cliente do PDF Assembler**
 
 Antes de executar programaticamente uma operação do Assembler, crie um cliente de serviço do Assembler.
 
@@ -150,7 +150,7 @@ Um documento XDP montado é retornado em um objeto de coleção. Repita o objeto
 
 [Montagem programática de documentos do PDF](/help/forms/developing/programmatically-assembling-pdf-documents.md#programmatically-assembling-pdf-documents)
 
-[Criação de documentos PDF usando fragmentos](/help/forms/developing/creating-document-output-streams.md#creating-pdf-documents-using-fragments)
+[Criação de documentos do PDF usando fragmentos](/help/forms/developing/creating-document-output-streams.md#creating-pdf-documents-using-fragments)
 
 ## Montar vários fragmentos XDP usando a API Java {#assemble-multiple-xdp-fragments-using-the-java-api}
 
@@ -160,7 +160,7 @@ Montar vários fragmentos XDP usando a API de serviço do Assembler (Java):
 
    Inclua arquivos JAR do cliente, como adobe-assembler-client.jar, no caminho de classe do projeto Java.
 
-1. Crie um cliente PDF Assembler.
+1. Crie um cliente do PDF Assembler.
 
    * Crie um objeto `ServiceClientFactory` que contenha propriedades de conexão.
    * Crie um objeto `AssemblerServiceClient` usando seu construtor e transmitindo o objeto `ServiceClientFactory`.
@@ -176,8 +176,8 @@ Montar vários fragmentos XDP usando a API de serviço do Assembler (Java):
    * Crie um objeto `com.adobe.idp.Document` e passe o objeto `java.io.FileInputStream` que contém o arquivo XDP de entrada (repita essa tarefa para cada arquivo XDP).
    * Adicione uma entrada ao objeto `java.util.Map` invocando seu método `put` e transmitindo os seguintes argumentos:
 
-      * Um valor de string que representa o nome da chave. Este valor deve corresponder ao valor do elemento `source` especificado no documento DDX (repita esta tarefa para cada arquivo XDP).
-      * Um objeto `com.adobe.idp.Document` que contém o documento XDP que corresponde ao elemento `source` (repita esta tarefa para cada arquivo XDP).
+     * Um valor de string que representa o nome da chave. Este valor deve corresponder ao valor do elemento `source` especificado no documento DDX (repita esta tarefa para cada arquivo XDP).
+     * Um objeto `com.adobe.idp.Document` que contém o documento XDP que corresponde ao elemento `source` (repita esta tarefa para cada arquivo XDP).
 
 1. Defina as opções de tempo de execução.
 
@@ -205,8 +205,8 @@ Montar vários fragmentos XDP usando a API de serviço do Assembler (Java):
 **Consulte também**
 
 [Montando vários fragmentos XDP](assembling-multiple-xdp-fragments.md#assembling-multiple-xdp-fragments)
-[Início rápido (modo SOAP): Montando vários fragmentos XDP usando a API Java](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-multiple-xdp-fragments-using-the-java-api)
-[Incluindo arquivos da biblioteca AEM Forms Java](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Início rápido (modo SOAP): reunião de vários fragmentos XDP usando a API Java](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-multiple-xdp-fragments-using-the-java-api)
+[Incluindo arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 [Definindo propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
 ## Montar vários fragmentos XDP usando a API do serviço da Web {#assemble-multiple-xdp-fragments-using-the-web-service-api}
@@ -225,7 +225,7 @@ Montar vários fragmentos XDP usando a API de serviço do Assembler (serviço da
    >
    >Substitua `localhost` pelo endereço IP do servidor que hospeda o AEM Forms.
 
-1. Crie um cliente PDF Assembler.
+1. Crie um cliente do PDF Assembler.
 
    * Crie um objeto `AssemblerServiceClient` usando seu construtor padrão.
    * Crie um objeto `AssemblerServiceClient.Endpoint.Address` usando o construtor `System.ServiceModel.EndpointAddress`. Transmita um valor de cadeia de caracteres que especifique o WSDL para o serviço AEM Forms (como `https://localhost:8080/soap/services/AssemblerService?blob=mtom`). Você não precisa usar o atributo `lc_version`. Esse atributo é usado quando você cria uma referência de serviço.
@@ -233,10 +233,10 @@ Montar vários fragmentos XDP usando a API de serviço do Assembler (serviço da
    * Defina o campo `MessageEncoding` do objeto `System.ServiceModel.BasicHttpBinding` como `WSMessageEncoding.Mtom`. Esse valor garante que a MTOM seja usada.
    * Ative a autenticação HTTP básica executando as seguintes tarefas:
 
-      * Atribua o nome de usuário dos formulários AEM ao campo `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
-      * Atribua o valor de senha correspondente ao campo `AssemblerServiceClient.ClientCredentials.UserName.Password`.
-      * Atribua o valor da constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Atribua o valor da constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
+     * Atribua o nome de usuário dos formulários AEM ao campo `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
+     * Atribua o valor de senha correspondente ao campo `AssemblerServiceClient.ClientCredentials.UserName.Password`.
+     * Atribua o valor da constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Atribua o valor da constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Consulte um documento DDX existente.
 

@@ -1,6 +1,6 @@
 ---
-title: Desmontando Documentos PDF de Forma Programática
-description: Use o serviço Assembler para desmontar um único documento de PDF em vários documentos de PDF usando a API Java e a API do serviço da Web.
+title: Desmontagem programática de documentos do PDF
+description: Use o serviço do Assembler para desmontar um único documento do PDF em vários documentos do PDF usando a API Java e a API do serviço da Web.
 content-type: reference
 geptopics: SG_AEMFORMS/categories/assembling_pdf_documents
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,16 +11,16 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1749'
+source-wordcount: '1779'
 ht-degree: 0%
 
 ---
 
-# Desmontando Documentos PDF de Forma Programática {#programmatically-disassembling-pdf-documents}
+# Desmontagem programática de documentos do PDF {#programmatically-disassembling-pdf-documents}
 
 **Exemplos e exemplos neste documento são somente para AEM Forms no ambiente JEE.**
 
-Você pode desmontar um documento PDF passando-o para o serviço Assembler. Normalmente, essa tarefa é útil quando o documento PDF foi criado originalmente a partir de muitos documentos individuais, como uma coleção de instruções. Na ilustração a seguir, o DocA é dividido em vários documentos resultantes, em que o primeiro marcador de nível 1 em uma página identifica o início de um novo documento resultante.
+Você pode desmontar um documento do PDF transmitindo-o para o serviço Assembler. Normalmente, essa tarefa é útil quando o documento do PDF foi criado originalmente a partir de muitos documentos individuais, como uma coleção de instruções. Na ilustração a seguir, o DocA é dividido em vários documentos resultantes, em que o primeiro marcador de nível 1 em uma página identifica o início de um novo documento resultante.
 
 ![pd_pd_pdfsfrombookmarks](assets/pd_pd_pdfsfrombookmarks.png)
 
@@ -45,7 +45,7 @@ Para o propósito desta discussão, considere que o documento DDX a seguir seja 
 
 >[!NOTE]
 >
->Ao passar um único documento de PDF para o serviço Assembler e recuperar um único documento, você pode chamar a operação `invokeOneDocument`. Entretanto, para desmontar um documento PDF, use a operação `invokeDDX` porque, embora um documento PDF de entrada seja passado para o serviço Assembler, o serviço Assembler retorna um objeto de coleção que contém um ou mais documentos.
+>Ao passar um único documento do PDF para o serviço Assembler e recuperar um único documento, você pode invocar a operação `invokeOneDocument`. No entanto, para desmontar um documento PDF, use a operação `invokeDDX` porque, embora um documento PDF de entrada seja passado para o serviço do Assembler, esse serviço retorna um objeto de coleção que contém um ou mais documentos.
 
 >[!NOTE]
 >
@@ -60,12 +60,12 @@ Para o propósito desta discussão, considere que o documento DDX a seguir seja 
 Para desmontar um documento PDF, execute as seguintes tarefas:
 
 1. Incluir arquivos de projeto.
-1. Crie um cliente PDF Assembler.
+1. Crie um cliente do PDF Assembler.
 1. Consulte um documento DDX existente.
-1. Referencie um documento do PDF para desmontar.
+1. Consulte um documento do PDF para desmontar.
 1. Definir opções de tempo de execução.
-1. Desmonte o documento PDF.
-1. Salve os documentos de PDF desmontados.
+1. Desmonte o documento do PDF.
+1. Salve os documentos desmontados do PDF.
 
 **Incluir arquivos de projeto**
 
@@ -81,7 +81,7 @@ Os seguintes arquivos JAR devem ser adicionados ao caminho de classe do projeto:
 
 se o AEM Forms for disponibilizado em um servidor de aplicativos J2EE compatível que não seja JBoss, você deverá substituir adobe-utilities.jar e jbossall-client.jar por arquivos JAR específicos para o servidor de aplicativos J2EE no qual o AEM Forms é disponibilizado.
 
-**Criar um cliente PDF Assembler**
+**Criar um cliente do PDF Assembler**
 
 Antes de executar programaticamente uma operação do Assembler, você deve criar um cliente de serviço do Assembler.
 
@@ -89,7 +89,7 @@ Antes de executar programaticamente uma operação do Assembler, você deve cria
 
 Um documento DDX deve ser referenciado para desmontar um documento PDF. Este documento DDX deve conter o elemento `PDFsFromBookmarks`.
 
-**Referenciar um documento PDF para desmontar**
+**Fazer referência a um documento do PDF para desmontar**
 
 Para desmontar um documento PDF, consulte um arquivo PDF que representa o documento PDF a ser desmontado. Quando passado para o serviço Assembler, um documento PDF separado é retornado para cada marcador de nível 1 no documento.
 
@@ -97,13 +97,13 @@ Para desmontar um documento PDF, consulte um arquivo PDF que representa o docume
 
 Você pode definir opções de tempo de execução que controlam o comportamento do serviço Assembler enquanto ele executa um job. Por exemplo, você pode definir uma opção que instrui o serviço Assembler a continuar processando um job se um erro for encontrado.
 
-**Desmontar o documento PDF**
+**Desmontar o documento do PDF**
 
-Depois de criar o cliente de serviço do Assembler, referenciar o documento DDX, referenciar um documento PDF para desmontar e definir opções de tempo de execução, você poderá desmontar um documento PDF chamando o método `invokeDDX`. Desde que o documento DDX contenha instruções para desmontar o documento PDF, o serviço do Assembler retornará documentos PDF desmontados dentro de um objeto de coleção.
+Depois de criar o cliente de serviço do Assembler, fazer referência ao documento DDX, fazer referência a um documento PDF para desmontar e definir opções de tempo de execução, você poderá desmontar um documento PDF chamando o método `invokeDDX`. Desde que o documento DDX contenha instruções para desmontar o documento PDF, o serviço do Assembler retornará documentos PDF desmontados dentro de um objeto de coleção.
 
-**Salvar os documentos de PDF desmontados**
+**Salvar os documentos desmontados do PDF**
 
-Todos os documentos de PDF desmontados são retornados dentro de um objeto de coleção. Repita o processo através do objeto de coleção e salve cada documento de PDF como um arquivo de PDF.
+Todos os documentos desmontados do PDF são retornados em um objeto de coleção. Repita o objeto de coleção e salve cada documento do PDF como um arquivo do PDF.
 
 **Consulte também**
 
@@ -113,15 +113,15 @@ Todos os documentos de PDF desmontados são retornados dentro de um objeto de co
 
 [Montagem programática de documentos do PDF](/help/forms/developing/programmatically-assembling-pdf-documents.md)
 
-## Desmontar um documento PDF usando a API Java {#disassemble-a-pdf-document-using-the-java-api}
+## Desmontar um documento do PDF usando a API Java {#disassemble-a-pdf-document-using-the-java-api}
 
-Desmonte um documento PDF usando a API de serviço do Assembler (Java):
+Desmonte um documento do PDF usando a API de serviço do Assembler (Java):
 
 1. Incluir arquivos de projeto.
 
    Inclua arquivos JAR do cliente, como adobe-assembler-client.jar, no caminho de classe do projeto Java.
 
-1. Crie um cliente PDF Assembler.
+1. Crie um cliente do PDF Assembler.
 
    * Crie um objeto `ServiceClientFactory` que contenha propriedades de conexão.
    * Crie um objeto `AssemblerServiceClient` usando seu construtor e transmitindo o objeto `ServiceClientFactory`.
@@ -131,22 +131,22 @@ Desmonte um documento PDF usando a API de serviço do Assembler (Java):
    * Crie um objeto `java.io.FileInputStream` que represente o documento DDX usando seu construtor e transmitindo um valor de cadeia de caracteres que especifique o local do arquivo DDX.
    * Crie um objeto `com.adobe.idp.Document` usando seu construtor e transmitindo o objeto `java.io.FileInputStream`.
 
-1. Referencie um documento do PDF para desmontar.
+1. Consulte um documento do PDF para desmontar.
 
-   * Crie um objeto `java.util.Map` usado para armazenar documentos de PDF de entrada usando um construtor `HashMap`.
+   * Crie um objeto `java.util.Map` usado para armazenar documentos PDF de entrada usando um construtor `HashMap`.
    * Crie um objeto `java.io.FileInputStream` usando seu construtor e transmitindo o local do documento PDF a ser desmontado.
-   * Crie um objeto `com.adobe.idp.Document` e passe o objeto `java.io.FileInputStream` que contém o documento PDF a ser desmontado.
+   * Crie um objeto `com.adobe.idp.Document` e passe o objeto `java.io.FileInputStream` que contém o documento do PDF a ser desmontado.
    * Adicione uma entrada ao objeto `java.util.Map` invocando seu método `put` e transmitindo os seguintes argumentos:
 
-      * Um valor de string que representa o nome da chave. Este valor deve corresponder ao valor do elemento de origem PDF especificado no documento DDX.
-      * Um objeto `com.adobe.idp.Document` que contém o documento PDF a ser desmontado.
+     * Um valor de string que representa o nome da chave. Este valor deve corresponder ao valor do elemento de origem PDF especificado no documento DDX.
+     * Um objeto `com.adobe.idp.Document` que contém o documento PDF a ser desmontado.
 
 1. Definir opções de tempo de execução.
 
    * Crie um objeto `AssemblerOptionSpec` que armazene opções de tempo de execução usando seu construtor.
    * Defina as opções de tempo de execução para atender aos requisitos da sua empresa invocando um método que pertença ao objeto `AssemblerOptionSpec`. Por exemplo, para instruir o serviço Assembler a continuar processando um trabalho quando ocorrer um erro, chame o método `setFailOnError` do objeto `AssemblerOptionSpec` e passe `false`.
 
-1. Desmonte o documento PDF.
+1. Desmonte o documento do PDF.
 
    Invoque o método `invokeDDX` do objeto `AssemblerServiceClient` e passe os seguintes valores obrigatórios:
 
@@ -154,19 +154,19 @@ Desmonte um documento PDF usando a API de serviço do Assembler (Java):
    * Um objeto `java.util.Map` que contém o documento PDF a ser desmontado
    * Um objeto `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` que especifica as opções de tempo de execução, incluindo a fonte padrão e o nível de log do trabalho
 
-   O método `invokeDDX` retorna um objeto `com.adobe.livecycle.assembler.client.AssemblerResult` que contém os documentos PDF desmontados e as exceções que ocorreram.
+   O método `invokeDDX` retorna um objeto `com.adobe.livecycle.assembler.client.AssemblerResult` que contém os documentos PDF desmontados e quaisquer exceções que tenham ocorrido.
 
-1. Salve os documentos de PDF desmontados.
+1. Salve os documentos desmontados do PDF.
 
-   Para obter os documentos de PDF desmontados, execute as seguintes ações:
+   Para obter os documentos desmontados do PDF, execute as seguintes ações:
 
    * Invoque o método `getDocuments` do objeto `AssemblerResult`. Isso retorna um objeto `java.util.Map`.
    * Repita o objeto `java.util.Map` até encontrar o objeto `com.adobe.idp.Document` resultante.
-   * Invoque o método `copyToFile` do objeto `com.adobe.idp.Document` para extrair o documento PDF.
+   * Invoque o método `copyToFile` do objeto `com.adobe.idp.Document` para extrair o documento do PDF.
 
 **Consulte também**
 
-[Desmontando Documentos PDF de Forma Programática](#programmatically-disassembling-pdf-documents)
+[Desmontagem programática de documentos do PDF](#programmatically-disassembling-pdf-documents)
 
 [Início rápido (modo SOAP): desmontagem de um documento PDF usando a API Java](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-disassembling-a-pdf-document-using-the-java-api)
 
@@ -174,9 +174,9 @@ Desmonte um documento PDF usando a API de serviço do Assembler (Java):
 
 [Definindo propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-## Desmontar um documento PDF usando a API de serviço Web {#disassemble-a-pdf-document-using-the-web-service-api}
+## Desmontar um documento do PDF usando a API do serviço Web {#disassemble-a-pdf-document-using-the-web-service-api}
 
-Desmonte um documento PDF usando a API de serviço do Assembler (serviço Web):
+Desmonte um documento do PDF usando a API de serviço do Assembler (serviço Web):
 
 1. Incluir arquivos de projeto.
 
@@ -186,7 +186,7 @@ Desmonte um documento PDF usando a API de serviço do Assembler (serviço Web):
    >
    >Substitua `localhost` pelo endereço IP do servidor que hospeda o AEM Forms.
 
-1. Crie um cliente PDF Assembler.
+1. Crie um cliente do PDF Assembler.
 
    * Crie um objeto `AssemblerServiceClient` usando seu construtor padrão.
    * Crie um objeto `AssemblerServiceClient.Endpoint.Address` usando o construtor `System.ServiceModel.EndpointAddress`. Transmita um valor de string que especifique o WSDL para o serviço AEM Forms (por exemplo, `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). Você não precisa usar o atributo `lc_version`. Esse atributo é usado quando você cria uma referência de serviço.
@@ -194,10 +194,10 @@ Desmonte um documento PDF usando a API de serviço do Assembler (serviço Web):
    * Defina o campo `MessageEncoding` do objeto `System.ServiceModel.BasicHttpBinding` como `WSMessageEncoding.Mtom`. Esse valor garante que a MTOM seja usada.
    * Ative a autenticação HTTP básica executando as seguintes tarefas:
 
-      * Atribua o nome de usuário dos formulários AEM ao campo `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
-      * Atribua o valor de senha correspondente ao campo `AssemblerServiceClient.ClientCredentials.UserName.Password`.
-      * Atribua o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Atribua o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
+     * Atribua o nome de usuário dos formulários AEM ao campo `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
+     * Atribua o valor de senha correspondente ao campo `AssemblerServiceClient.ClientCredentials.UserName.Password`.
+     * Atribua o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Atribua o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Consulte um documento DDX existente.
 
@@ -207,14 +207,14 @@ Desmonte um documento PDF usando a API de serviço do Assembler (serviço Web):
    * Preencha a matriz de bytes com dados de fluxo invocando o método `Read` do objeto `System.IO.FileStream` e transmitindo a matriz de bytes, a posição inicial e o comprimento do fluxo para leitura.
    * Preencha o objeto `BLOB` atribuindo sua propriedade `MTOM` com o conteúdo da matriz de bytes.
 
-1. Referencie um documento do PDF para desmontar.
+1. Consulte um documento do PDF para desmontar.
 
-   * Crie um objeto `BLOB` usando seu construtor. O objeto `BLOB` é usado para armazenar o documento de PDF de entrada. Este objeto `BLOB` é passado para `invokeOneDocument` como argumento.
-   * Crie um objeto `System.IO.FileStream` chamando seu construtor e transmitindo um valor de cadeia de caracteres que representa o local do arquivo do documento de PDF de entrada e o modo no qual o arquivo será aberto.
+   * Crie um objeto `BLOB` usando seu construtor. O objeto `BLOB` é usado para armazenar o documento PDF de entrada. Este objeto `BLOB` é passado para `invokeOneDocument` como argumento.
+   * Crie um objeto `System.IO.FileStream` chamando seu construtor e transmitindo um valor de cadeia de caracteres que representa o local do arquivo do documento PDF de entrada e o modo no qual o arquivo será aberto.
    * Crie uma matriz de bytes que armazene o conteúdo do objeto `System.IO.FileStream`. Você pode determinar o tamanho da matriz de bytes obtendo a propriedade `Length` do objeto `System.IO.FileStream`.
    * Preencha a matriz de bytes com dados de fluxo invocando o método `Read` do objeto `System.IO.FileStream` e transmitindo a matriz de bytes, a posição inicial e o comprimento do fluxo para leitura.
    * Preencha o objeto `BLOB` atribuindo ao campo `MTOM` o conteúdo da matriz de bytes.
-   * Crie um objeto `MyMapOf_xsd_string_To_xsd_anyType`. Este objeto de coleção é usado para armazenar o PDF a ser desmontado.
+   * Crie um objeto `MyMapOf_xsd_string_To_xsd_anyType`. Esse objeto de coleção é usado para armazenar o PDF a ser desmontado.
    * Crie um objeto `MyMapOf_xsd_string_To_xsd_anyType_Item`.
    * Atribua um valor de cadeia de caracteres que represente o nome da chave para o campo `key` do objeto `MyMapOf_xsd_string_To_xsd_anyType_Item`. Este valor deve corresponder ao valor do elemento de origem PDF especificado no documento DDX.
    * Atribua o objeto `BLOB` que armazena o documento PDF ao campo `value` do objeto `MyMapOf_xsd_string_To_xsd_anyType_Item`.
@@ -225,7 +225,7 @@ Desmonte um documento PDF usando a API de serviço do Assembler (serviço Web):
    * Crie um objeto `AssemblerOptionSpec` que armazene opções de tempo de execução usando seu construtor.
    * Defina opções de tempo de execução para atender aos requisitos comerciais atribuindo um valor a um membro de dados que pertença ao objeto `AssemblerOptionSpec`. Por exemplo, para instruir o serviço Assembler a continuar processando um trabalho quando ocorrer um erro, atribua `false` ao campo `failOnError` do objeto `AssemblerOptionSpec`.
 
-1. Desmonte o documento PDF.
+1. Desmonte o documento do PDF.
 
    Invoque o método `invokeDDX` do objeto `AssemblerServiceClient` e passe os seguintes valores:
 
@@ -235,16 +235,16 @@ Desmonte um documento PDF usando a API de serviço do Assembler (serviço Web):
 
    O método `invokeDDX` retorna um objeto `AssemblerResult` que contém os resultados do trabalho e as exceções que ocorreram.
 
-1. Salve os documentos de PDF desmontados.
+1. Salve os documentos desmontados do PDF.
 
-   Para obter os documentos PDF recém-criados, execute as seguintes ações:
+   Para obter os documentos do PDF recém-criados, execute as seguintes ações:
 
-   * Acesse o campo `documents` do objeto `AssemblerResult`, que é um objeto `Map` que contém os documentos PDF desmontados.
+   * Acesse o campo `documents` do objeto `AssemblerResult`, que é um objeto `Map` que contém os documentos desmontados do PDF.
    * Repita através do objeto `Map` para obter cada documento resultante. Em seguida, converta os `value` do membro da matriz em `BLOB`.
    * Extraia os dados binários que representam o documento PDF acessando a propriedade `MTOM` do objeto `BLOB`. Isso retorna uma matriz de bytes que você pode gravar em um arquivo PDF.
 
 **Consulte também**
 
-[Desmontando Documentos PDF de Forma Programática](#programmatically-disassembling-pdf-documents)
+[Desmontagem programática de documentos do PDF](#programmatically-disassembling-pdf-documents)
 
 [Chamar o AEM Forms usando MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)

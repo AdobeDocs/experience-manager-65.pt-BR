@@ -1,6 +1,6 @@
 ---
-title: Montagem de Documentos PDF Criptografados
-description: Combine documentos de PDF criptografados usando a API Java e a API de serviço da Web.
+title: Montagem de documentos criptografados do PDF
+description: Combine documentos criptografados do PDF usando a API Java e a API de serviço da Web.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/assembling_pdf_documents
@@ -12,16 +12,16 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1641'
+source-wordcount: '1676'
 ht-degree: 0%
 
 ---
 
-# Montagem de Documentos PDF Criptografados {#assembling-encrypted-pdf-documents}
+# Montagem de documentos criptografados do PDF {#assembling-encrypted-pdf-documents}
 
 **Exemplos e exemplos neste documento são somente para AEM Forms no ambiente JEE.**
 
-Você pode criptografar um documento PDF com uma senha usando o serviço Assembler. Depois que um documento PDF é criptografado com uma senha, um usuário deve especificar a senha para exibir o documento PDF no Adobe Reader ou Acrobat. Para criptografar um documento PDF com uma senha, o documento DDX deve conter valores de elementos de criptografia necessários para criptografar um documento PDF.
+Você pode criptografar um documento do PDF com uma senha usando o serviço Assembler. Depois que um documento do PDF é criptografado com uma senha, um usuário deve especificar a senha para exibir o documento do PDF no Adobe Reader ou no Acrobat. Para criptografar um documento PDF com uma senha, o documento DDX deve conter valores de elementos de criptografia necessários para criptografar um documento PDF.
 
 Para o propósito desta discussão, suponha que o seguinte documento DDX seja usado.
 
@@ -37,11 +37,11 @@ Para o propósito desta discussão, suponha que o seguinte documento DDX seja us
  </DDX>
 ```
 
-Neste documento DDX, observe que o valor `inDoc` é atribuído ao atributo de origem. Nas situações em que somente um documento de PDF de entrada é passado para o serviço Assembler e um documento de PDF é retornado, e você invoca a operação `invokeOneDocument`, atribua o valor `inDoc` ao atributo de origem PDF. Ao invocar a operação `invokeOneDocument`, o valor `inDoc` é uma chave predefinida que deve ser especificada no documento DDX.
+Neste documento DDX, observe que o valor `inDoc` é atribuído ao atributo de origem. Nas situações em que apenas um documento PDF de entrada é passado para o serviço Assembler e um documento PDF é retornado, e você invoca a operação `invokeOneDocument`, atribua o valor `inDoc` ao atributo de origem do PDF. Ao invocar a operação `invokeOneDocument`, o valor `inDoc` é uma chave predefinida que deve ser especificada no documento DDX.
 
-Por outro lado, ao passar dois ou mais documentos de PDF de entrada para o serviço Assembler, você pode invocar a operação `invokeDDX`. Nessa situação, atribua o nome de arquivo do documento de PDF de entrada ao atributo `source`.
+Por outro lado, ao passar dois ou mais documentos de entrada do PDF para o serviço do Assembler, você pode invocar a operação `invokeDDX`. Nessa situação, atribua o nome de arquivo do documento PDF de entrada ao atributo `source`.
 
-O serviço de criptografia não precisa fazer parte da instalação dos formulários AEM para criptografar um documento PDF com uma senha. Consulte [Criptografar e descriptografar documentos PDF](/help/forms/developing/encrypting-decrypting-pdf-documents.md).
+O Serviço de criptografia não precisa fazer parte da instalação do AEM Forms para criptografar um documento PDF com uma senha. Consulte [Criptografar e descriptografar documentos do PDF](/help/forms/developing/encrypting-decrypting-pdf-documents.md).
 
 >[!NOTE]
 >
@@ -53,15 +53,15 @@ O serviço de criptografia não precisa fazer parte da instalação dos formulá
 
 ## Resumo das etapas {#summary-of-steps}
 
-Para montar um documento PDF criptografado, execute as seguintes etapas:
+Para reunir um documento PDF criptografado, execute as seguintes etapas:
 
 1. Incluir arquivos de projeto.
-1. Crie um cliente PDF Assembler.
+1. Crie um cliente do PDF Assembler.
 1. Consulte um documento DDX existente.
-1. Referencie um documento de PDF não seguro.
+1. Referencie um documento do PDF não seguro.
 1. Definir opções de tempo de execução.
 1. Criptografe o documento.
-1. Salve o documento PDF criptografado.
+1. Salve o documento criptografado do PDF.
 
 **Incluir arquivos de projeto**
 
@@ -85,9 +85,9 @@ Antes de executar programaticamente uma operação do Assembler, você deve cria
 
 Um documento DDX deve ser referenciado para montar um documento PDF. Por exemplo, considere o documento DDX introduzido nesta seção. Para criptografar um documento PDF, o documento DDX deve conter o elemento `PasswordEncryptionProfile`.
 
-**Referenciar um documento de PDF não seguro**
+**Referencie um documento não seguro do PDF**
 
-Um documento de PDF não seguro deve ser referenciado e passado para o serviço Assembler para criptografá-lo. Se você fizer referência a um documento PDF que já está criptografado, uma exceção será lançada.
+Um documento não seguro do PDF deve ser referenciado e passado ao serviço do Assembler para criptografá-lo. Se você fizer referência a um documento do PDF já criptografado, ocorrerá uma exceção.
 
 **Definir opções de tempo de execução**
 
@@ -95,11 +95,11 @@ Você pode definir opções de tempo de execução que controlam o comportamento
 
 **Criptografar o documento**
 
-Depois de criar o cliente de serviço do Assembler, fazer referência ao documento DDX que contém informações de criptografia, fazer referência a um documento PDF não seguro e definir opções de tempo de execução, você poderá invocar a operação `invokeOneDocument`. Como apenas um documento de PDF de entrada está sendo passado para o serviço Assembler (e um documento está sendo retornado), você pode usar a operação `invokeOneDocument` em vez da operação `invokeDDX`.
+Depois de criar o cliente de serviço do Assembler, fazer referência ao documento DDX que contém informações de criptografia, fazer referência a um documento PDF não seguro e definir opções de tempo de execução, você poderá invocar a operação `invokeOneDocument`. Como apenas um documento PDF de entrada está sendo passado para o serviço Assembler (e um documento está sendo retornado), você pode usar a operação `invokeOneDocument` em vez da operação `invokeDDX`.
 
-**Salvar o documento de PDF criptografado**
+**Salvar o documento criptografado do PDF**
 
-Se apenas um único documento de PDF for passado para o serviço Assembler, o serviço Assembler retornará um único documento em vez de um objeto de coleção. Ou seja, ao invocar a operação `invokeOneDocument`, um único documento é retornado. Como o documento DDX referenciado nesta seção contém informações de criptografia, o serviço Assembler retorna um documento PDF que é criptografado com uma senha.
+Se apenas um único documento do PDF estiver sendo passado para o serviço do Assembler, o serviço do Assembler retornará um único documento em vez de um objeto de coleção. Ou seja, ao invocar a operação `invokeOneDocument`, um único documento é retornado. Como o documento DDX referenciado nesta seção contém informações de criptografia, o serviço Assembler retorna um documento PDF que é criptografado com uma senha.
 
 **Consulte também**
 
@@ -125,7 +125,7 @@ Se apenas um único documento de PDF for passado para o serviço Assembler, o se
    * Crie um objeto `java.io.FileInputStream` que represente o documento DDX usando seu construtor e transmitindo um valor de cadeia de caracteres que especifique o local do arquivo DDX.
    * Crie um objeto `com.adobe.idp.Document` usando seu construtor e transmitindo o objeto `java.io.FileInputStream`.
 
-1. Referencie um documento de PDF não seguro.
+1. Referencie um documento do PDF não seguro.
 
    * Crie um objeto `java.io.FileInputStream` usando seu construtor e transmitindo o local de um documento PDF não seguro.
    * Crie um objeto `com.adobe.idp.Document` e passe o objeto `java.io.FileInputStream` que contém o documento PDF. Este objeto `com.adobe.idp.Document` é passado para o método `invokeOneDocument`.
@@ -139,22 +139,22 @@ Se apenas um único documento de PDF for passado para o serviço Assembler, o se
 
    Invoque o método `invokeOneDocument` do objeto `AssemblerServiceClient` e passe os seguintes valores:
 
-   * Um objeto `com.adobe.idp.Document` que representa o documento DDX. Verifique se este documento DDX contém o valor `inDoc` para o elemento de origem PDF.
-   * Um objeto `com.adobe.idp.Document` que contém o documento PDF não seguro.
+   * Um objeto `com.adobe.idp.Document` que representa o documento DDX. Verifique se este documento DDX contém o valor `inDoc` para o elemento de origem do PDF.
+   * Um objeto `com.adobe.idp.Document` que contém o documento não seguro do PDF.
    * Um objeto `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` que especifica as opções de tempo de execução, incluindo a fonte padrão e o nível de log do trabalho.
 
    O método `invokeOneDocument` retorna um objeto `com.adobe.idp.Document` que contém um documento PDF criptografado por senha.
 
-1. Salve o documento PDF criptografado.
+1. Salve o documento criptografado do PDF.
 
    * Crie um objeto `java.io.File` e verifique se a extensão do nome do arquivo é .pdf.
    * Invoque o método `copyToFile` do objeto `Document` para copiar o conteúdo do objeto `Document` para o arquivo. Certifique-se de usar o objeto `Document` retornado pelo método `invokeOneDocument`.
 
 **Consulte também**
 
-[Início rápido (modo SOAP): Montagem de um documento PDF criptografado usando a API Java](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-an-encrypted-pdf-document-using-the-java-api)
+[Início rápido (modo SOAP): montagem de um documento PDF criptografado usando a API Java](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-an-encrypted-pdf-document-using-the-java-api)
 
-## Montar um documento PDF criptografado usando a API de serviço Web {#assemble-an-encrypted-pdf-document-using-the-web-service-api}
+## Montar um documento criptografado do PDF usando a API de serviço Web {#assemble-an-encrypted-pdf-document-using-the-web-service-api}
 
 1. Incluir arquivos de projeto.
 
@@ -172,10 +172,10 @@ Se apenas um único documento de PDF for passado para o serviço Assembler, o se
    * Defina o campo `MessageEncoding` do objeto `System.ServiceModel.BasicHttpBinding` como `WSMessageEncoding.Mtom`. Esse valor garante que a MTOM seja usada.
    * Ative a autenticação HTTP básica executando as seguintes tarefas:
 
-      * Atribua o nome de usuário dos formulários AEM ao campo `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
-      * Atribua o valor de senha correspondente ao campo `AssemblerServiceClient.ClientCredentials.UserName.Password`.
-      * Atribua o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Atribua o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
+     * Atribua o nome de usuário dos formulários AEM ao campo `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
+     * Atribua o valor de senha correspondente ao campo `AssemblerServiceClient.ClientCredentials.UserName.Password`.
+     * Atribua o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Atribua o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Consulte um documento DDX existente.
 
@@ -185,10 +185,10 @@ Se apenas um único documento de PDF for passado para o serviço Assembler, o se
    * Preencha a matriz de bytes com dados de fluxo invocando o método `Read` do objeto `System.IO.FileStream` e transmitindo a matriz de bytes, a posição inicial e o comprimento do fluxo para leitura.
    * Preencha o objeto `BLOB` atribuindo seu campo `MTOM` com o conteúdo da matriz de bytes.
 
-1. Referencie um documento de PDF não seguro.
+1. Referencie um documento do PDF não seguro.
 
-   * Crie um objeto `BLOB` usando seu construtor. O objeto `BLOB` é usado para armazenar o documento de PDF de entrada. Este objeto `BLOB` é passado para `invokeOneDocument` como argumento.
-   * Crie um objeto `System.IO.FileStream` chamando seu construtor e transmitindo um valor de cadeia de caracteres que representa o local do arquivo do documento de PDF de entrada e o modo no qual o arquivo será aberto.
+   * Crie um objeto `BLOB` usando seu construtor. O objeto `BLOB` é usado para armazenar o documento PDF de entrada. Este objeto `BLOB` é passado para `invokeOneDocument` como argumento.
+   * Crie um objeto `System.IO.FileStream` chamando seu construtor e transmitindo um valor de cadeia de caracteres que representa o local do arquivo do documento PDF de entrada e o modo no qual o arquivo será aberto.
    * Crie uma matriz de bytes que armazene o conteúdo do objeto `System.IO.FileStream`. Você pode determinar o tamanho da matriz de bytes obtendo a propriedade `Length` do objeto `System.IO.FileStream`.
    * Preencha a matriz de bytes com dados de fluxo invocando o método `Read` do objeto `System.IO.FileStream` e transmitindo a matriz de bytes, a posição inicial e o comprimento do fluxo para leitura.
    * Preencha o objeto `BLOB` atribuindo seu campo `MTOM` com o conteúdo da matriz de bytes.
@@ -203,17 +203,17 @@ Se apenas um único documento de PDF for passado para o serviço Assembler, o se
    Invoque o método `invokeOneDocument` do objeto `AssemblerServiceClient` e passe os seguintes valores:
 
    * Um objeto `BLOB` que representa o documento DDX
-   * Um objeto `BLOB` que representa o documento PDF não seguro
+   * Um objeto `BLOB` que representa o documento não seguro do PDF
    * Um objeto `AssemblerOptionSpec` que especifica as opções de tempo de execução
 
    O método `invokeOneDocument` retorna um objeto `BLOB` que contém um documento PDF criptografado.
 
-1. Salve o documento PDF criptografado.
+1. Salve o documento criptografado do PDF.
 
-   * Crie um objeto `System.IO.FileStream` chamando seu construtor e transmitindo um valor de cadeia de caracteres que representa o local do arquivo do documento de PDF criptografado e o modo no qual abrir o arquivo.
+   * Crie um objeto `System.IO.FileStream` chamando seu construtor e transmitindo um valor de cadeia de caracteres que representa o local do arquivo do documento PDF criptografado e o modo no qual o arquivo será aberto.
    * Crie uma matriz de bytes que armazene o conteúdo do objeto `BLOB` retornado pelo método `invokeOneDocument`. Popular a matriz de bytes obtendo o valor do membro de dados `MTOM` do objeto `BLOB`.
    * Crie um objeto `System.IO.BinaryWriter` invocando seu construtor e transmitindo o objeto `System.IO.FileStream`.
-   * Grave o conteúdo da matriz de bytes em um arquivo PDF, chamando o método `Write` do objeto `System.IO.BinaryWriter` e transmitindo a matriz de bytes.
+   * Grave o conteúdo da matriz de bytes em um arquivo PDF chamando o método `Write` do objeto `System.IO.BinaryWriter` e transmitindo a matriz de bytes.
 
 **Consulte também**
 
