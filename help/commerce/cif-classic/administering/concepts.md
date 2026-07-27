@@ -40,7 +40,7 @@ Isso significa que:
 
 >[!CAUTION]
 >
->A [estrutura de integração de comércio eletrônico](https://business.adobe.com/products/experience-manager/sites/ecommerce-integrations.html) é um Complemento do AEM.
+>A [estrutura de integração de comércio eletrônico](https://business.adobe.com/br/products/experience-manager/sites/ecommerce-integrations.html) é um Complemento do AEM.
 >
 >Seu representante de vendas pode fornecer todos os detalhes, de acordo com o mecanismo apropriado.
 

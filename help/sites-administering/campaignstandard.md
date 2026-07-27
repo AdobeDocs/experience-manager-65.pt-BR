@@ -45,7 +45,7 @@ Este documento aborda detalhadamente cada uma dessas etapas.
 ## Pré-requisitos {#prerequisites}
 
 * Acesso de administrador ao Adobe Campaign Standard
-  * Se você precisar de detalhes adicionais sobre como instalar e configurar o Adobe Campaign Standard, consulte a [documentação do Adobe Campaign Standard.](https://experienceleague.adobe.com/docs/campaign-standard/using/campaign-standard-home.html)
+  * Se você precisar de detalhes adicionais sobre como instalar e configurar o Adobe Campaign Standard, consulte a [documentação do Adobe Campaign Standard.](https://experienceleague.adobe.com/docs/campaign-standard/using/campaign-standard-home.html?lang=pt-BR)
 * Acesso de administrador ao AEM
 
 ## Configurar o usuário aemserver no Campaign {#aemserver-user}
@@ -66,7 +66,7 @@ Por padrão, o Adobe Campaign Standard vem com um usuário `aemserver` que o AEM
 
 O usuário `aemserver` agora tem os direitos necessários para que o AEM possa usá-lo para se comunicar com o Adobe Campaign.
 
-No entanto, para que o AEM possa usar o usuário `aemserver`, sua senha deve ser definida. Isso não pode ser feito por meio do Adobe Campaign. Ela deve ser executada por um engenheiro de suporte da Adobe. [Envie um tíquete ao Atendimento ao cliente da Adobe](https://experienceleague.adobe.com/?support-tab=home&lang=pt-BR#support) para solicitar a redefinição da senha `aemserver`. Depois de obter a senha do Atendimento ao cliente da Adobe, mantenha-a em um local seguro.
+No entanto, para que o AEM possa usar o usuário `aemserver`, sua senha deve ser definida. Isso não pode ser feito por meio do Adobe Campaign. Ela deve ser executada por um engenheiro de suporte da Adobe. [Envie um tíquete ao Atendimento ao cliente da Adobe](https://experienceleague.adobe.com/pt-br?support-tab=home&lang=pt-BR#support) para solicitar a redefinição da senha `aemserver`. Depois de obter a senha do Atendimento ao cliente da Adobe, mantenha-a em um local seguro.
 
 ## Verificar o AEMResourceTypeFilter no Campaign {#resource-type-filter}
 
