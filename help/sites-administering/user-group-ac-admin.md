@@ -60,7 +60,7 @@ O CRX permite configurar os direitos de acesso para contas de usuário e de grup
 
 >[!NOTE]
 >
->O CRX implementa o controle de acesso [ conforme definido pela JSR-283](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html).
+>O CRX implementa o controle de acesso [&#x200B; conforme definido pela JSR-283](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html).
 >
 >Uma instalação padrão de um repositório do CRX é configurada para usar listas de controle de acesso baseadas em recursos. Esta é uma possível implementação do controle de acesso JSR-283 e uma das implementações presentes com Jackrabbit.
 
