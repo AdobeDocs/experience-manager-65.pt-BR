@@ -12,8 +12,8 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1556'
-ht-degree: 0%
+source-wordcount: '1631'
+ht-degree: 1%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## Criar um site da comunidade {#create-a-community-site}
 
-Use a instância do autor para criar um site da comunidade. Na instância do autor AEM:
+Use a instância do autor para criar um site da comunidade. Na instância do autor do AEM:
 
 1. Faça logon com privilégios de administrador.
 1. Na navegação global, vá para **[!UICONTROL Comunidades]** > **[!UICONTROL Sites]**.
@@ -48,10 +48,10 @@ Na [etapa Modelo de Site](/help/communities/sites-console.md#step2013asitetempla
 
 * **Nome do site da comunidade**: engajamento
 
-   * Verifique novamente o nome, pois ele não pode ser facilmente alterado após a criação do site
-   * O URL inicial é exibido abaixo do Nome do site da comunidade
-   * Para um URL válido, anexe um código de idioma base + &quot;.html&quot;
-   * *Por exemplo*, https://localhost:4502/content/sites/ `engage/en.html`
+  * Verifique novamente o nome, pois ele não pode ser facilmente alterado após a criação do site
+  * O URL inicial é exibido abaixo do Nome do site da comunidade
+  * Para um URL válido, anexe um código de idioma base + &quot;.html&quot;
+  * *Por exemplo*, https://localhost:4502/content/sites/ `engage/en.html`
 
 * **Modelo**: puxe para baixo para escolher `Reference Site`
 
@@ -91,13 +91,13 @@ Marque todas as caixas de seleção para [Gerenciamento de usuários](/help/comm
 
 >[!NOTE]
 >
->Para um ambiente de produção, é necessário criar aplicativos personalizados do Facebook e do Twitter. Consulte [Logon social com o Facebook e o Twitter](/help/communities/social-login.md).
+>Para um ambiente de produção, é necessário criar aplicativos personalizados do Facebook e do Twitter. Consulte [Logon social com Facebook e Twitter](/help/communities/social-login.md).
 
 ![configurações do site da comunidade](assets/site-settings.png)
 
 #### MARCAÇÃO {#tagging}
 
-As marcas aplicadas ao conteúdo da comunidade são controladas por meio da seleção de namespaces AEM previamente definidos pelo [Console de Marcação](/help/sites-administering/tags.md#tagging-console) (como o [Namespace do tutorial](/help/communities/setup.md#create-tutorial-tags)).
+As marcas aplicadas ao conteúdo da comunidade são controladas por meio da seleção de namespaces do AEM previamente definidos pelo [Console de Marcação](/help/sites-administering/tags.md#tagging-console) (como o [Namespace do tutorial](/help/communities/setup.md#create-tutorial-tags)).
 
 Encontrar namespaces é fácil usando a pesquisa com digitação antecipada. Por exemplo,
 
@@ -160,7 +160,7 @@ Quando o processo for concluído, a pasta do novo site será exibida no console 
 
 ![communitiessitconsole](assets/communitiessitesconsole.png)
 
-## Publish no site da comunidade {#publish-the-community-site}
+## Publicar o site da comunidade {#publish-the-community-site}
 
 O site criado deve ser gerenciado no console Comunidades - Sites, o mesmo console de onde novos sites podem ser criados.
 
@@ -182,7 +182,7 @@ Da esquerda para a direita, elas são:
 
   Selecionar o ícone de propriedades abre o site da comunidade para a modificação de propriedades, como o título ou para alterar o tema.
 
-* **Site do Publish**
+* **Publicar Site**
 
   Selecionar o ícone do mundo publica o site da comunidade (por exemplo, se o servidor de publicação estiver em execução no computador local, em seguida, para localhost:4503 por padrão).
 
@@ -211,7 +211,7 @@ Da esquerda para a direita, elas são:
 >1. Selecione **[!UICONTROL OK]**.
 >1. (Opcional) Selecione **[!UICONTROL Limpar]** ou **[!UICONTROL Forçar Repetição]** para redefinir a fila de replicação.
 
-### Selecionar Publish {#select-publish}
+### Selecione Publicar {#select-publish}
 
 Depois de garantir que o servidor de publicação esteja em execução, selecione o ícone do mundo para publicar o site da comunidade.
 
@@ -269,25 +269,25 @@ Para começar:
 
    * Selecionar **Criar Nó:**
 
-      * **Nome** localhost.4503
-(faça *não* usar &#39;:&#39;)
+     * **Nome** localhost.4503
+       (faça *não* usar &#39;:&#39;)
 
-      * **Tipo** [sling:Mapping](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)
+     * **Tipo** [sling:Mapping](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)
 
 1. Com o nó `localhost.4503` recém-criado selecionado:
 
    * Adicionar propriedade:
 
-   * sling:match de **Name**
-      * Cadeia de Caracteres **Type**
-      * **Valor** localhost.4503/$
-(deve terminar com o caractere &#39;$&#39;)
+   * **Nome** sling:match
+     * Cadeia de Caracteres **Type**
+     * **Valor** localhost.4503/$
+       (deve terminar com o caractere &#39;$&#39;)
 
    * Adicionar propriedade:
 
-      * **Name** sling:internalRedirect
-      * Cadeia de Caracteres **Type**
-      * **Valor** /content/sites/engage/en.html
+     * **Nome** sling:internalRedirect
+     * Cadeia de Caracteres **Type**
+     * **Valor** /content/sites/engage/en.html
 
 1. Selecione **Salvar tudo.**
 1. (Opcional) Exclua o histórico de navegação.
@@ -309,15 +309,15 @@ Se não for possível salvar as alterações, verifique se o nome do nó é `loc
 
 #### Solução de problemas: falha ao redirecionar {#troubleshooting-fail-to-redirect}
 
-O &#39;**$**&#39; no final da cadeia de caracteres da expressão regular `sling:match` é crucial, para que somente `https://localhost:4503/` seja mapeado, caso contrário, o valor de redirecionamento será prefixado a qualquer caminho que possa existir após server:port na URL. Portanto, quando o AEM tenta redirecionar para a página de logon, ocorre uma falha.
+O &#39;**$**&#39; no final da cadeia de caracteres da expressão regular `sling:match` é crucial, para que somente `https://localhost:4503/` seja mapeado, caso contrário, o valor de redirecionamento será prefixado a qualquer caminho que possa existir após o servidor:port na URL. Portanto, quando o AEM tenta redirecionar para a página de logon, ocorre uma falha.
 
 ### Modificar o site {#modify-the-site}
 
-Após a criação inicial do site, os autores poderão usar o [ícone Abrir site](/help/communities/sites-console.md#authoring-site-content) para realizar atividades padrão de criação de AEM.
+Após a criação inicial do site, os autores poderão usar o [ícone Abrir Site](/help/communities/sites-console.md#authoring-site-content) para realizar atividades padrão de criação no AEM.
 
 Além disso, os administradores podem usar o [ícone Editar Site](/help/communities/sites-console.md#modifying-site-properties) para modificar propriedades do site, como o título.
 
-Após qualquer modificação, lembre-se de **Salvar** e refazer **Publish** o site.
+Após qualquer modificação, lembre-se de **Salvar** e publicar novamente **o site.**
 
 >[!NOTE]
 >

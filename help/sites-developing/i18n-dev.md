@@ -29,7 +29,7 @@ Para obter uma visão geral do processo de internacionalização e localização
 
 ## Internacionalizando strings em código Java™ e JSP {#internationalizing-strings-in-java-and-jsp-code}
 
-O pacote Java™ `com.day.cq.i18n` permite exibir cadeias de caracteres localizadas na interface do usuário. A classe `I18n` fornece o método `get` que recupera strings localizadas do dicionário Adobe Experience Manager (AEM). O único parâmetro obrigatório do método `get` é o literal da cadeia de caracteres no idioma inglês. O inglês é o idioma padrão da interface do usuário do. O exemplo a seguir localiza a palavra `Search`:
+O pacote Java™ `com.day.cq.i18n` permite exibir cadeias de caracteres localizadas na interface do usuário. A classe `I18n` fornece o método `get` que recupera cadeias de caracteres localizadas do dicionário Adobe Experience Manager (AEM). O único parâmetro obrigatório do método `get` é o literal da cadeia de caracteres no idioma inglês. O inglês é o idioma padrão da interface do usuário do. O exemplo a seguir localiza a palavra `Search`:
 
 `i18n.get("Search");`
 

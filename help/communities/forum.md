@@ -12,8 +12,8 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1233'
-ht-degree: 1%
+source-wordcount: '1249'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 ## Introdução {#introduction}
 
-O recurso de fórum fornece uma área para visitantes do site conectados (membros da comunidade) no ambiente do Publish para:
+O recurso de fórum fornece uma área para visitantes do site conectados (membros da comunidade) no ambiente de Publicação para:
 
 * Criar tópicos
 * Exibir e responder a tópicos
@@ -32,7 +32,7 @@ O recurso de fórum fornece uma área para visitantes do site conectados (membro
 
 Esta seção da documentação descreve:
 
-* Adicionando o recurso de fórum a um site AEM.
+* Adicionando o recurso fórum a um site do AEM.
 * Definições de configuração para o componente `Forum`.
 
 ### Adicionando um fórum a uma página {#adding-a-forum-to-a-page}
@@ -122,7 +122,7 @@ Na guia **Configurações**, especifique configurações para tópicos e respost
 
   Relevante somente se `Allow File Uploads` estiver marcado. Uma lista separada por vírgulas de extensões de arquivo com o separador &quot;ponto&quot;. Por exemplo, .jpg, .jpeg, .png, .doc, .docx, .pdf. Se algum tipo de arquivo for especificado, os não especificados não poderão ser carregados. O padrão é nenhum especificado, de modo que todos os tipos de arquivos são permitidos.
 
-* **Tamanho máx. do arquivo de imagem a ser anexado**
+* **Tamanho máximo do arquivo de imagem a ser anexado**
 Relevante somente se Permitir uploads de arquivo estiver marcado. Número máximo de bytes que um arquivo de imagem carregado pode ter. O padrão é 2097152 (2 Mb).
 
 * **Permitir respostas encadeadas**

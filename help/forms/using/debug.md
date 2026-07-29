@@ -1,5 +1,5 @@
 ---
-title: Depuração de formulários HTML5
+title: Depuração de formulários do HTML5
 description: As etapas da lista de documentos para solucionar vários problemas conhecidos.
 contentOwner: robhagat
 content-type: reference
@@ -12,14 +12,14 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '811'
+source-wordcount: '844'
 ht-degree: 0%
 
 ---
 
-# Depuração de formulários HTML5 {#debugging-html-forms}
+# Depuração de formulários do HTML5 {#debugging-html-forms}
 
-Este documento inclui vários cenários de solução de problemas. Para cada cenário, algumas etapas são fornecidas para solucionar o problema. Siga estas etapas e, se o problema persistir, configure o Logger para obter e revisar logs para erros/avisos. Para obter mais detalhes sobre o log de formulários HTML5, consulte [Gerando logs para formulários HTML5](/help/forms/using/enable-logs.md).
+Este documento inclui vários cenários de solução de problemas. Para cada cenário, algumas etapas são fornecidas para solucionar o problema. Siga estas etapas e, se o problema persistir, configure o Logger para obter e revisar logs para erros/avisos. Para obter mais detalhes sobre o log de formulários do HTML5, consulte [Gerando logs para formulários do HTML5](/help/forms/using/enable-logs.md).
 
 ## Problema: ao renderizar o formulário, vejo a página de exceção org.apache.sling.api.SlingException {#problem-when-rendering-the-form-i-see-org-apache-sling-api-slingexception-exception-page}
 
@@ -45,7 +45,7 @@ Verifique os seguintes parâmetros:
   </tr>
   <tr>
    <td>dataRef</td>
-   <td>Caminho absoluto do arquivo de dados que é mesclado com o modelo.<br /> Observação: o caminho define o caminho absoluto do arquivo de dados.</td>
+   <td>Caminho absoluto do arquivo de dados que é mesclado com o modelo.<br /> Observação: O caminho define o caminho absoluto do arquivo de dados.</td>
   </tr>
   <tr>
    <td>dados</td>
@@ -116,10 +116,10 @@ Verifique os seguintes parâmetros:
 
 ## Problema: não é possível enviar o formulário {#problem-unable-to-submit-the-form}
 
-1. Verifique se você tem direitos de acesso ao servidor AEM e se está conectado ao servidor.
+1. Verifique se você tem direitos de acesso ao servidor do AEM e se está conectado ao servidor.
 1. Verifique se o parâmetro submitUrl está correto.
 1. Habilite os logs do cliente conforme mencionado em [Logs para os formulários HTML5](/help/forms/using/enable-logs.md) usando a opção de depuração como **1-a5-b5-c5**. Em seguida, renderize o formulário e clique em submit. Abra o console de depuração do navegador e verifique se há um erro.
-1. Localize os logs de servidor mencionados em [Logs para os formulários HTML5](/help/forms/using/enable-logs.md). Verifique se houve algum erro nos logs do servidor durante o envio.
+1. Localize os logs do servidor conforme mencionado em [Logs para os formulários HTML5](/help/forms/using/enable-logs.md). Verifique se houve algum erro nos logs do servidor durante o envio.
 
 ## Problema: as mensagens de erro localizadas não são exibidas {#problem-localized-error-messages-do-not-display}
 
@@ -154,7 +154,7 @@ Verifique os seguintes parâmetros:
    O motivo provável é que um ou mais parâmetros no URL estão incorretos.
 
    Verifique os seguintes parâmetros:
-Texto da etapa
+   Texto da etapa
 
 <table>
  <tbody>
@@ -172,7 +172,7 @@ Texto da etapa
   </tr>
   <tr>
    <td>dataRef</td>
-   <td>Caminho absoluto do arquivo de dados que é mesclado com o modelo.<br /> Observação: o caminho define o caminho absoluto do arquivo de dados.</td>
+   <td>Caminho absoluto do arquivo de dados que é mesclado com o modelo.<br /> Observação: O caminho define o caminho absoluto do arquivo de dados.</td>
   </tr>
   <tr>
    <td>dados</td>

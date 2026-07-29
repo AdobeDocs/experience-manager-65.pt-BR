@@ -12,7 +12,7 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1158'
+source-wordcount: '1169'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ O recurso de calendário oferece informações sobre o evento da comunidade em u
 
 Esta seção da documentação descreve
 
-* Adicionar o recurso de calendário a um site AEM
+* Adicionar o recurso de calendário a um site do AEM
 * Configurações de `Calendar` componentes
 
 ## Adicionar um calendário a uma página {#adding-a-calendar-to-a-page}
@@ -92,7 +92,7 @@ Na guia **Configurações**, especifique se deseja permitir a aplicação de mar
 
 * **Tamanho máx. do arquivo de imagem a ser anexado**
 
-  Relevante somente se Permitir uploads de arquivo estiver marcado. Número máximo de bytes que um arquivo de imagem carregado pode ter. O padrão é 2097152 **&#x200B; &#x200B;** (2 Mb).
+  Relevante somente se Permitir uploads de arquivo estiver marcado. Número máximo de bytes que um arquivo de imagem carregado pode ter. O padrão é 2097152 **&#x200B; ** (2 Mb).
 
 * **Tipos de imagem de capa permitidos**
 
@@ -199,7 +199,7 @@ Quando o usuário conectado é um membro da comunidade ou [membro privilegiado](
 Especificamente, eles podem:
 
 * Criar um evento de calendário
-* Post um comentário para um evento de calendário
+* Publicar um comentário em um evento de calendário
 * Editar seu próprio evento de calendário ou comentário
 * Excluir seu próprio evento de calendário ou comentário
 * Sinalizar eventos ou comentários do calendário de outras pessoas

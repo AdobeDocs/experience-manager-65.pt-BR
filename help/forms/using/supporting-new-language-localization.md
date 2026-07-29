@@ -11,7 +11,7 @@ exl-id: 2ed4d99e-0e90-4b21-ac17-aa6707a3ba7d
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '832'
+source-wordcount: '839'
 ht-degree: 2%
 
 ---
@@ -39,18 +39,18 @@ Há dois métodos para identificar o local do formulário adaptável. Quando um 
 
 * observando os seguintes parâmetros na ordem especificada:
 
-   * Parâmetro de solicitação `afAcceptLang`
+  * Parâmetro de solicitação `afAcceptLang`
 Para substituir a localidade do navegador dos usuários, você pode passar o parâmetro de solicitação `afAcceptLang` para forçar a localidade. Por exemplo, a URL a seguir foi forçada a renderizar o formulário no local japonês:
-     `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
+    `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
 
-   * A localidade do navegador definida para o usuário, que é especificada na solicitação usando o cabeçalho `Accept-Language`.
+  * A localidade do navegador definida para o usuário, que é especificada na solicitação usando o cabeçalho `Accept-Language`.
 
-   * Configuração de idioma do usuário especificado no AEM.
+  * Configuração de idioma do usuário especificado no AEM.
 
-   * A localidade do navegador é ativada por padrão. Para alterar a configuração do local do navegador,
-      * Abra o gerenciador de configurações. A URL é `http://[server]:[port]/system/console/configMgr`
-      * Localize e abra a configuração **[!UICONTROL Canal da Web do Formulário adaptável e da Comunicação Interativa]**.
-      * Altere o status da opção **[!UICONTROL Usar localidade do navegador]** e **[!UICONTROL Salve]** a configuração.
+  * A localidade do navegador é ativada por padrão. Para alterar a configuração do local do navegador,
+    * Abra o gerenciador de configurações. A URL é `http://[server]:[port]/system/console/configMgr`
+    * Localize e abra a configuração **[!UICONTROL Canal da Web do Formulário adaptável e da Comunicação Interativa]**.
+    * Altere o status da opção **[!UICONTROL Usar localidade do navegador]** e **[!UICONTROL Salve]** a configuração.
 
 Depois que a localidade é identificada, os formulários adaptáveis escolhem o dicionário específico do formulário. Se o dicionário específico do formulário para a localidade solicitada não for encontrado, ele usará o dicionário do idioma no qual o formulário adaptável foi criado.
 
@@ -124,11 +124,11 @@ O `<locale>` aparecerá em `https://'[server]:[port]'/libs/cq/i18n/translator.ht
 
 ### Reiniciar o servidor {#restart-the-server}
 
-Reinicie o servidor AEM para que a localidade adicionada entre em vigor.
+Reinicie o servidor do AEM para que o local adicionado entre em vigor.
 
 >[!NOTE]
 >
-> É recomendável usar o comando &quot;Ctrl + C&quot; para reiniciar o SDK. Reiniciar o SDK do AEM usando métodos alternativos, por exemplo, parar processos Java, pode levar a inconsistências no ambiente de desenvolvimento do AEM.
+> É recomendável usar o comando &#39;Ctrl + C&#39; para reiniciar o SDK. Reiniciar o AEM SDK usando métodos alternativos, por exemplo, parar processos Java, pode levar a inconsistências no ambiente de desenvolvimento do AEM.
 
 ## Bibliotecas de exemplo para adicionar suporte ao espanhol {#sample-libraries-for-adding-support-for-spanish}
 

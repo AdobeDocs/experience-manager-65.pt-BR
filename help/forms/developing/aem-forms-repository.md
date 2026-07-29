@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '9036'
+source-wordcount: '9089'
 ht-degree: 0%
 
 ---
@@ -72,7 +72,7 @@ Usando a API de serviço do Repositório, você pode realizar as seguintes taref
 
 >[!NOTE]
 >
->Quando um PDF criptografado é gravado no repositório, o recurso de extração automatizada de relacionamento não pode ser usado. Caso contrário, um PDF criptografado poderá ser armazenado no repositório e recuperado posteriormente. O recuperador pode optar por descriptografar o PDF após ser recuperado do repositório.
+>Quando um PDF criptografado é gravado no repositório, o recurso de extração automática de relacionamento não pode ser usado. Caso contrário, um PDF criptografado poderá ser armazenado no repositório e recuperado posteriormente. O recuperador pode optar por descriptografar o PDF após ser recuperado do repositório.
 
 >[!NOTE]
 >
@@ -309,7 +309,7 @@ Grave um recurso usando a API de serviço do Repositório (Java):
 
 [Recursos de gravação](aem-forms-repository.md#writing-resources)
 
-[Início rápido (modo SOAP): Gravação de um recurso usando a API Java](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-writing-a-resource-using-the-java-api)
+[Início rápido (modo SOAP): gravação de um recurso usando a API Java](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-writing-a-resource-using-the-java-api)
 
 [Inclusão de arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -860,7 +860,7 @@ Você pode especificar relações entre os recursos no repositório. Há três t
 * **Associação (sistema de arquivos)**: uma relação na qual um recurso está localizado em uma determinada pasta.
 * **Personalizado**: uma relação que você especifica entre recursos. Por exemplo, se um recurso tiver sido descontinuado e outro recurso introduzido no repositório, você poderá especificar sua própria relação de substituição.
 
-Você pode criar seus próprios relacionamentos personalizados. Por exemplo, se você armazenar um arquivo de HTML no repositório e ele usar uma imagem, você poderá especificar uma relação personalizada para relacionar o arquivo de HTML com a imagem (já que normalmente somente arquivos XML são associados a imagens usando uma relação de dependência definida pelo repositório). Outro exemplo de relacionamento personalizado seria se você quisesse criar uma visualização diferente do repositório com uma estrutura de gráfico cíclica em vez de uma estrutura em árvore. Você pode definir um gráfico circular junto com um visualizador para percorrer esses relacionamentos. Por fim, você pode indicar que um recurso substitui outro mesmo que os dois recursos sejam completamente diferentes. Nesse caso, você poderia definir um tipo de relacionamento fora do intervalo reservado e criar um relacionamento entre esses dois recursos. Seu aplicativo seria o único cliente que poderia detectar e processar a relação, e poderia ser usado para realizar pesquisas nessa relação.
+Você pode criar seus próprios relacionamentos personalizados. Por exemplo, se você armazenar um arquivo HTML no repositório e ele usar uma imagem, você poderá especificar uma relação personalizada para relacionar o arquivo HTML com a imagem (já que normalmente somente arquivos XML são associados a imagens usando uma relação de dependência definida pelo repositório). Outro exemplo de relacionamento personalizado seria se você quisesse criar uma visualização diferente do repositório com uma estrutura de gráfico cíclica em vez de uma estrutura em árvore. Você pode definir um gráfico circular junto com um visualizador para percorrer esses relacionamentos. Por fim, você pode indicar que um recurso substitui outro mesmo que os dois recursos sejam completamente diferentes. Nesse caso, você poderia definir um tipo de relacionamento fora do intervalo reservado e criar um relacionamento entre esses dois recursos. Seu aplicativo seria o único cliente que poderia detectar e processar a relação, e poderia ser usado para realizar pesquisas nessa relação.
 
 Você pode especificar relações programaticamente entre recursos usando a API Java do serviço de repositório ou a API do serviço da Web.
 
@@ -1094,7 +1094,7 @@ Bloqueie recursos usando a API de serviço do repositório (Java):
 
 [Bloquear recursos](aem-forms-repository.md#locking-resources)
 
-[Início rápido (modo SOAP): bloqueio de um recurso usando a API Java](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-locking-a-resource-using-the-java-api)
+[Início rápido (modo SOAP): bloquear um recurso usando a API Java](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-locking-a-resource-using-the-java-api)
 
 [Inclusão de arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -1143,7 +1143,7 @@ Bloqueie recursos usando a API de serviço do Repositório (serviço Web):
 
 ## Exclusão de recursos {#deleting-resources}
 
-Você pode excluir recursos de forma programática de um determinado local no repositório usando a API Java (SOAP) do serviço do Repositório.
+Você pode excluir programaticamente recursos de um determinado local no repositório usando a API Java do serviço de repositório (SOAP).
 
 Quando você exclui um recurso, a exclusão normalmente é permanente, embora, em alguns casos, os repositórios ECM possam armazenar as versões do recurso de acordo com seus mecanismos de histórico. Portanto, ao excluir um recurso, é importante ter certeza de que você nunca precisará dele novamente. Os motivos comuns para excluir um recurso incluem a necessidade de aumentar o espaço disponível no banco de dados. Você pode excluir uma versão de um recurso, mas, se fizer isso, deverá especificar o identificador de recurso, e não seu LID (identificador lógico) ou caminho. Se você excluir uma pasta, tudo nessa pasta, incluindo subpastas e recursos, será excluído automaticamente.
 
@@ -1196,7 +1196,7 @@ Chame o método do serviço de Repositório para excluir o recurso, especificand
 
 [Início Rápido da API de Serviço de Repositório](/help/forms/developing/repository-service-api-quick-starts.md#repository-service-api-quick-starts)
 
-### Excluir recursos usando a API do Java (SOAP) {#delete-resources-using-the-java-api-soap}
+### Excluir recursos usando a API Java (SOAP) {#delete-resources-using-the-java-api-soap}
 
 Exclua um recurso usando a API do repositório (Java):
 

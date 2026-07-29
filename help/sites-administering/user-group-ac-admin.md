@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
-source-wordcount: '3073'
+source-wordcount: '3107'
 ht-degree: 0%
 
 ---
@@ -70,22 +70,22 @@ O CRX usa dois conceitos principais ao avaliar direitos de acesso:
 
 * **principal** é uma entidade que possui direitos de acesso. Os principais incluem:
 
-   * Uma conta de usuário
-   * Uma conta de grupo
+  * Uma conta de usuário
+  * Uma conta de grupo
 
-     Se uma conta de usuário pertencer a um ou mais grupos, ela também será associada a cada uma dessas entidades de grupo.
+    Se uma conta de usuário pertencer a um ou mais grupos, ela também será associada a cada uma dessas entidades de grupo.
 
 * Um **assunto** é usado para representar a origem de uma solicitação.
 
   É usado para consolidar os direitos de acesso aplicáveis a essa solicitação. Elas são obtidas de:
 
-   * O usuário principal
+  * O usuário principal
 
-     Os direitos que você atribui diretamente à conta de usuário.
+    Os direitos que você atribui diretamente à conta de usuário.
 
-   * Todos os grupos principais associados a esse usuário
+  * Todos os grupos principais associados a esse usuário
 
-     Todos os direitos são atribuídos a qualquer um dos grupos aos quais o usuário pertence.
+    Todos os direitos são atribuídos a qualquer um dos grupos aos quais o usuário pertence.
 
   O resultado é usado para permitir ou negar acesso ao recurso solicitado.
 
@@ -124,8 +124,8 @@ Os direitos de acesso no CRX são avaliados da seguinte maneira:
 
 * As entidades do usuário sempre têm prioridade sobre as entidades do grupo, independentemente:
 
-   * a ordem na lista de controle de acesso
-   * sua posição na hierarquia do nó
+  * a ordem na lista de controle de acesso
+  * sua posição na hierarquia do nó
 
 * Para um determinado principal, existe (no máximo) uma negação e uma entrada de permissão em um determinado nó. A implementação sempre limpa as entradas redundantes e garante que o mesmo privilégio não seja listado nas entradas de permissão e negação.
 
@@ -196,7 +196,7 @@ A tabela a seguir lista algumas recomendações e práticas recomendadas:
    <td><p>Investir algum tempo e pensamento ao configurar uma nova instalação é bem pago.</p> <p>A aplicação de uma estrutura clara simplifica a manutenção e a administração contínuas, garantindo que seus colegas atuais e/ou futuros sucessores possam entender facilmente o que está sendo implementado.</p> </td>
   </tr>
   <tr>
-   <td><i>Testar</i></td>
+   <td><i>Teste</i></td>
    <td>Use uma instalação de teste para praticar e garantir que você entenda os relacionamentos entre os vários usuários e grupos.</td>
   </tr>
   <tr>
@@ -485,7 +485,7 @@ As políticas podem ser selecionadas para:
 
 >[!NOTE]
 >
->Para simplificar o gerenciamento, o Adobe recomenda que você atribua direitos de acesso a contas de grupo, não a contas de usuário individuais.
+>Para simplificar o gerenciamento, a Adobe recomenda que você atribua direitos de acesso a contas de grupo, não a contas de usuário individuais.
 >
 >É mais fácil gerenciar alguns grupos do que muitas contas de usuário.
 
@@ -512,7 +512,7 @@ Os seguintes privilégios estão disponíveis para seleção ao adicionar uma en
    <td>É um privilégio agregado que contém todos os outros privilégios predefinidos.</td>
   </tr>
   <tr>
-   <td><strong>Avançado </strong></td>
+   <td><strong>Avançado</strong></td>
    <td> </td>
   </tr>
   <tr>
@@ -561,7 +561,7 @@ Os seguintes privilégios estão disponíveis para seleção ao adicionar uma en
   </tr>
   <tr>
    <td><code>jcr:removeNode</code></td>
-   <td>Remover um nó.</td>
+   <td>Remova um nó.</td>
   </tr>
   <tr>
    <td><code>jcr:retentionManagement</code></td>
@@ -646,7 +646,7 @@ A ordem na lista indica a ordem em que as políticas são aplicadas.
 
 ### Teste de uma política de controle de acesso {#testing-an-access-control-policy}
 
-1. Na barra de ferramentas do CRXDE Lite, selecione **Ferramentas**, em seguida **Testar Controle de Acesso...**.
+1. Na barra de ferramentas do CRXDE Lite, selecione **Ferramentas** e **Testar Controle de Acesso...**.
 1. Uma nova caixa de diálogo é aberta no painel superior direito. Selecione o **Caminho** e/ou a **Entidade** que deseja testar.
 1. Clique em **Testar** para ver os resultados da sua seleção:
 

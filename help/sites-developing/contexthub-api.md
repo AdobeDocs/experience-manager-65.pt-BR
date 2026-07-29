@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 role: Developer
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '4913'
+source-wordcount: '4976'
 ht-degree: 2%
 
 ---
@@ -67,7 +67,7 @@ A tabela a seguir lista os nomes dos eventos que ocorrem para a interface do usu
 | ContextHub.Constants.EVENT_UI_PROPERTY_MODIFIED | Acionado quando uma propriedade é modificada | ui-property-modified |
 | ContextHub.Constants.EVENT_UI_RENDERED | Acionado sempre que a interface do usuário do ContextHub é renderizada (por exemplo, após uma alteração de propriedade) | renderizado pela interface |
 | ContextHub.Constants.EVENT_UI_INITIALIZED | Acionado quando o contêiner da interface do usuário é inicializado | inicializado por interface do usuário |
-| ContextHub.Constants.ACTIVE_UI_MODE | Indica o modo da interface do usuário ativa | /_/ative-ui-mode |
+| ContextHub.Constants.ATIVE_UI_MODE | Indica o modo da interface do usuário ativa | /_/ative-ui-mode |
 
 ## Referência da API do ContextHub JavaScript {#contexthub-javascript-api-reference-2}
 
@@ -271,9 +271,9 @@ Inicializa o armazenamento.
 * **nome:** O nome do armazenamento.
 * **config:** um objeto que contém propriedades de configuração:
 
-   * eventDeferring: o valor padrão é 32.
-   * eventing: o objeto [ContextHub.Utils.Eventing](/help/sites-developing/contexthub-api.md#contexthub-utils-eventing) para este armazenamento. O valor padrão é o objeto ContextHub.eventing usa.
-   * persistência: o objeto ContextHub.Utils.Persistence desse armazenamento. O valor padrão é o objeto ContextHub.persistence.
+  * eventDeferring: o valor padrão é 32.
+  * eventing: o objeto [ContextHub.Utils.Eventing](/help/sites-developing/contexthub-api.md#contexthub-utils-eventing) para este armazenamento. O valor padrão é o objeto ContextHub.eventing usa.
+  * persistência: o objeto ContextHub.Utils.Persistence desse armazenamento. O valor padrão é o objeto ContextHub.persistence.
 
 #### isEventingPaused() {#iseventingpaused}
 
@@ -303,7 +303,7 @@ Como opção, você pode impedir o acionamento do evento `data`.
 * **chave:** (Cadeia de caracteres) O nome da chave a ser removida.
 * **opções:** (Objeto) Um objeto de opções. As seguintes propriedades de objeto são válidas:
 
-   * silencioso: um valor de `true` impede o acionamento do evento `data`. O valor padrão é `false`.
+  * silencioso: um valor de `true` impede o acionamento do evento `data`. O valor padrão é `false`.
 
 **Devoluções**
 
@@ -376,7 +376,7 @@ Os dados do evento incluem o nome do armazenamento, a chave, o valor anterior, o
 * **chave:** (Cadeia de caracteres) O nome da chave.
 * **opções:** (Objeto) Um objeto de opções. As seguintes propriedades de objeto são válidas:
 
-   * silencioso: um valor de `true` impede o acionamento do evento `data`. O valor padrão é `false`.
+  * silencioso: um valor de `true` impede o acionamento do evento `data`. O valor padrão é `false`.
 
 * **value:** (Objeto) O valor a ser associado à chave.
 
@@ -405,16 +405,16 @@ Configura os detalhes para a conexão com o serviço JSONP que este objeto usa. 
 
 * **serviceConfig:** um objeto que contém as seguintes propriedades:
 
-   * host: (String) O nome ou endereço IP do servidor.
-   * jsonp: (Booleano) Um valor true indica que o serviço é um serviço JSONP; caso contrário, false. Quando verdadeiro, o {callback: &quot;ContextHub.Callbacks.O objeto *Object.name*} foi adicionado ao objeto service.params.
-   * params: (Objeto) Parâmetros de URL representados como propriedades de objeto. Os nomes dos parâmetros são nomes de propriedades e os valores dos parâmetros são valores de propriedades.
-   * path: (String) O caminho para o serviço.
-   * porta: (Número) O número da porta do serviço.
-   * secure: (String ou Booleano) Determina o protocolo a ser usado para o URL do serviço:
+  * host: (String) O nome ou endereço IP do servidor.
+  * jsonp: (Booleano) Um valor true indica que o serviço é um serviço JSONP; caso contrário, false. Quando verdadeiro, o objeto {callback: &quot;ContextHub.Callbacks.*Object.name*} é adicionado ao objeto service.params.
+  * params: (Objeto) Parâmetros de URL representados como propriedades de objeto. Os nomes dos parâmetros são nomes de propriedades e os valores dos parâmetros são valores de propriedades.
+  * path: (String) O caminho para o serviço.
+  * porta: (Número) O número da porta do serviço.
+  * secure: (String ou Booleano) Determina o protocolo a ser usado para o URL do serviço:
 
-      * auto: //
-      * true: https://
-      * false: https://
+    * auto: //
+    * true: https://
+    * false: https://
 
 * **substituição:** (Booleano). Um valor de `true` faz com que a configuração de serviço existente seja substituída pelas propriedades de `serviceConfig`. Um valor de `false` faz com que as propriedades de configuração de serviço existentes sejam mescladas com as propriedades de `serviceConfig`.
 
@@ -435,16 +435,16 @@ Recupera o objeto de serviço para este objeto ContextHub.Store.JSONPStore. O ob
 Um objeto com as seguintes propriedades:
 
 * **host:** (Cadeia de caracteres) O nome ou endereço IP do servidor.
-* **jsonp:** (Booleano) Um valor true indica que o serviço é um serviço JSONP; caso contrário, false. Quando verdadeiro, o {callback: &quot;ContextHub.Callbacks.O objeto *Object.name*} foi adicionado ao objeto service.params.
+* **jsonp:** (Booleano) Um valor true indica que o serviço é um serviço JSONP; caso contrário, false. Quando verdadeiro, o objeto {callback: &quot;ContextHub.Callbacks.*Object.name*} é adicionado ao objeto service.params.
 
 * **parâmetros:** parâmetros (Objeto) de URL representados como propriedades de objeto. Os nomes dos parâmetros são nomes de propriedades e os valores dos parâmetros são valores de propriedades.
 * **caminho:** (Cadeia de caracteres) O caminho para o serviço.
 * **porta:** (Número) O número da porta do serviço.
 * **secure:** (Cadeia de caracteres ou Booleano) Determina o protocolo a ser usado para a URL do serviço:
 
-   * auto: //
-   * true: https://
-   * false: https://
+  * auto: //
+  * true: https://
+  * false: https://
 
 #### getServiceURL(resolver) {#getserviceurl-resolve}
 
@@ -467,24 +467,24 @@ inicializa o objeto ContextHub.Store.JSONPStore.
 * **nome:** (Cadeia de caracteres) O nome do armazenamento.
 * **config:** (Objeto) Um objeto que contém a propriedade de serviço. O objeto JSONPStore usa as propriedades do objeto `service` para construir a URL do serviço JSONP:
 
-   * eventDeferring: 32.
-   * eventing: o objeto ContextHub.Utils.Eventing para esse armazenamento. O valor padrão é o objeto `ContextHub.eventing`.
-   * persistência: o objeto ContextHub.Utils.Persistence desse armazenamento. Por padrão, a persistência de memória é usada (objeto JavaScript).
-   * service: (Objeto)
+  * eventDeferring: 32.
+  * eventing: o objeto ContextHub.Utils.Eventing para esse armazenamento. O valor padrão é o objeto `ContextHub.eventing`.
+  * persistência: o objeto ContextHub.Utils.Persistence desse armazenamento. Por padrão, a persistência de memória é usada (objeto JavaScript).
+  * service: (Objeto)
 
-      * host: (String) O nome ou endereço IP do servidor.
-      * jsonp: (Booleano) Um valor true indica que o serviço é um serviço JSONP; caso contrário, false. Quando verdadeiro, o objeto `{callback: "ContextHub.Callbacks.*Object.name*}` é adicionado a `service.params`.
-      * params: (Objeto) Parâmetros de URL representados como propriedades de objeto. Os nomes e valores de parâmetros são os nomes e valores de propriedades de objetos, respectivamente.
-      * path: (String) O caminho para o serviço.
-      * porta: (Número) O número da porta do serviço.
-      * secure: (String ou Booleano) Determina o protocolo a ser usado para o URL do serviço:
+    * host: (String) O nome ou endereço IP do servidor.
+    * jsonp: (Booleano) Um valor true indica que o serviço é um serviço JSONP; caso contrário, false. Quando verdadeiro, o objeto `{callback: "ContextHub.Callbacks.*Object.name*}` é adicionado a `service.params`.
+    * params: (Objeto) Parâmetros de URL representados como propriedades de objeto. Os nomes e valores de parâmetros são os nomes e valores de propriedades de objetos, respectivamente.
+    * path: (String) O caminho para o serviço.
+    * porta: (Número) O número da porta do serviço.
+    * secure: (String ou Booleano) Determina o protocolo a ser usado para o URL do serviço:
 
-         * auto: //
-         * true: https://
-         * false: https://
+      * auto: //
+      * true: https://
+      * false: https://
 
-      * timeout: (Número) A quantidade de tempo de espera para que o serviço JSONP responda antes de atingir o timeout, em milissegundos.
-      * ttl: O tempo mínimo em milissegundos decorrido entre chamadas para o serviço JSONP. (Consulte a função [queryService](/help/sites-developing/contexthub-api.md#queryservice-reload)).
+    * timeout: (Número) A quantidade de tempo de espera para que o serviço JSONP responda antes de atingir o timeout, em milissegundos.
+    * ttl: O tempo mínimo em milissegundos decorrido entre chamadas para o serviço JSONP. (Consulte a função [queryService](/help/sites-developing/contexthub-api.md#queryservice-reload)).
 
 #### queryService(reload) {#queryservice-reload}
 
@@ -580,10 +580,10 @@ Retorna todos os cookies com chaves que correspondem a um filtro.
 
 * (Opcional) **filtro:** Critérios para chaves de cookies correspondentes. Para retornar todos os cookies, não especifique nenhum valor. Os seguintes tipos são compatíveis:
 
-   * String: a string é comparada com a chave do cookie.
-   * Matriz: cada item na matriz é um filtro.
-   * Um objeto RegExp: a função de teste do objeto é usada para corresponder chaves de cookie.
-   * Uma função: uma função que testa uma correspondência em uma chave de cookie. A função deve tomar a chave do cookie como um parâmetro e retornar verdadeiro se o teste confirmar uma correspondência.
+  * String: a string é comparada com a chave do cookie.
+  * Matriz: cada item na matriz é um filtro.
+  * Um objeto RegExp: a função de teste do objeto é usada para corresponder chaves de cookie.
+  * Uma função: uma função que testa uma correspondência em uma chave de cookie. A função deve tomar a chave do cookie como um parâmetro e retornar verdadeiro se o teste confirmar uma correspondência.
 
 **Devoluções**
 
@@ -621,10 +621,10 @@ Retorna uma matriz das chaves de cookies existentes que correspondem a um filtro
 
 * **Filtro:** Critérios para chaves de cookies correspondentes. Os seguintes tipos são compatíveis:
 
-   * String: a string é comparada com a chave do cookie.
-   * Matriz: cada item na matriz é um filtro.
-   * Um objeto RegExp: a função de teste do objeto é usada para corresponder chaves de cookie.
-   * Uma função: uma função que testa uma correspondência em uma chave de cookie. A função deve tomar a chave do cookie como um parâmetro e retornar `true` se o teste confirmar uma correspondência.
+  * String: a string é comparada com a chave do cookie.
+  * Matriz: cada item na matriz é um filtro.
+  * Um objeto RegExp: a função de teste do objeto é usada para corresponder chaves de cookie.
+  * Uma função: uma função que testa uma correspondência em uma chave de cookie. A função deve tomar a chave do cookie como um parâmetro e retornar `true` se o teste confirmar uma correspondência.
 
 **Devoluções**
 
@@ -666,9 +666,9 @@ Cria um cookie com a chave e o valor fornecidos e adiciona o cookie ao documento
 * **valor:** uma cadeia de caracteres que contém o valor do cookie.
 * **opções:** (opcional) um objeto que contém qualquer uma das seguintes propriedades que configuram os atributos do cookie:
 
-   * expires: um valor `date` ou `number` que especifica quando o cookie expira. Um valor de data especifica o tempo absoluto de expiração. Um número (em dias) define a hora de expiração para a hora atual mais o número. O valor padrão é `undefined`.
-   * seguro: Um valor `boolean` que especifica o atributo `Secure` do cookie. O valor padrão é `false`.
-   * caminho: um valor `String` para usar como o atributo `Path` do cookie. O valor padrão é `undefined`.
+  * expires: um valor `date` ou `number` que especifica quando o cookie expira. Um valor de data especifica o tempo absoluto de expiração. Um número (em dias) define a hora de expiração para a hora atual mais o número. O valor padrão é `undefined`.
+  * seguro: Um valor `boolean` que especifica o atributo `Secure` do cookie. O valor padrão é `false`.
+  * caminho: um valor `String` para usar como o atributo `Path` do cookie. O valor padrão é `undefined`.
 
 **Devoluções**
 

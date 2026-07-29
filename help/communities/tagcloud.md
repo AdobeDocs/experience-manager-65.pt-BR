@@ -11,7 +11,7 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '569'
+source-wordcount: '579'
 ht-degree: 1%
 
 ---
@@ -53,8 +53,8 @@ Na guia **[!UICONTROL Social Tag Cloud]**, especifique quais tags serão exibida
 * **[!UICONTROL Tags do Social a serem exibidas]**
 Identifique quais tags UGC serão exibidas. As opções suspensas são:
 
-   * `From page and child pages`
-   * `All tags`
+  * `From page and child pages`
+  * `All tags`
 
   O padrão é `From page and child pages`, onde &quot;página&quot; se refere à configuração de **Página** abaixo.
 
@@ -84,8 +84,8 @@ Usando a guia **[!UICONTROL Social Tag Cloud (Design)]**, especifique como as ma
 
   Por exemplo:
 
-   * Verificado: `Geometrixx Media: Gadgets / Cars`
-   * Desmarcado: `Cars`
+  * Verificado: `Geometrixx Media: Gadgets / Cars`
+  * Desmarcado: `Cars`
 
   Não há diferença para uma tag simples.
 
@@ -103,8 +103,8 @@ Usando a guia **[!UICONTROL Social Tag Cloud (Design)]**, especifique como as ma
 
   `Geometrixx Media (the namespace)`, `Gadgets` e `Cars`
 
-   * Marcado: somente `Cars` são exibidos, se aplicados.
-   * Desmarcado: `Geometrixx Media`, `Gadgets` e `Cars` são exibidos, se aplicados.
+  * Marcado: somente `Cars` são exibidos, se aplicados.
+  * Desmarcado: `Geometrixx Media`, `Gadgets` e `Cars` são exibidos, se aplicados.
 
   Uma tag simples é uma tag folha.
 

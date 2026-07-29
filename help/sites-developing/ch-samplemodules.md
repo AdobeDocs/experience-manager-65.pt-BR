@@ -11,7 +11,7 @@ feature: Developing,Personalization
 role: Developer
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '1171'
+source-wordcount: '1190'
 ht-degree: 0%
 
 ---
@@ -55,16 +55,16 @@ Configure o módulo de interface contexthub.base usando um objeto JavaScript no 
 * **storeMapping:** um mapeamento de chave/repositório. Use a chave nos modelos de Handlebar para acessar os dados de armazenamento do ContextHub associados.
 * **lista:** uma matriz de itens para exibir como uma lista em um popover quando o módulo de interface do usuário for clicado. Se você incluir esse item, não inclua popoverTemplate. O valor é uma matriz de objetos com as seguintes chaves:
 
-   * título: o texto a ser exibido para este item
-   * image: (opcional) um URL para uma imagem que deve ser exibida à esquerda
-   * ícone: (opcional) uma classe de ícone CUI que deve ser exibida à esquerda; ignorado se uma imagem for especificada
-   * selecionado: (opcional) um valor booleano que especifica se esse item deve ser exibido como selecionado (true=seleted). Por padrão, os itens selecionados são exibidos usando uma fonte em negrito. Use uma propriedade `listType` para configurar outras aparências (veja abaixo).
+  * título: o texto a ser exibido para este item
+  * image: (opcional) um URL para uma imagem que deve ser exibida à esquerda
+  * ícone: (opcional) uma classe de ícone CUI que deve ser exibida à esquerda; ignorado se uma imagem for especificada
+  * selecionado: (opcional) um valor booleano que especifica se esse item deve ser exibido como selecionado (true=seleted). Por padrão, os itens selecionados são exibidos usando uma fonte em negrito. Use uma propriedade `listType` para configurar outras aparências (veja abaixo).
 
 * **listType:** o estilo a ser usado para itens de lista de popover. Use um dos seguintes valores:
 
-   * marca de seleção
-   * caixa de seleção
-   * rádio
+  * marca de seleção
+  * caixa de seleção
+  * rádio
 
 * **popoverTemplate:** um modelo Handlebars que especifica o conteúdo a ser renderizado no popover quando o módulo de interface do usuário for clicado. Se você incluir este item, não inclua o item `list`.
 

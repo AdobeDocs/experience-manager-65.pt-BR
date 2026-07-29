@@ -11,7 +11,7 @@ feature: Operations
 role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '2314'
+source-wordcount: '2225'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ Como o backup de snapshot geralmente leva apenas alguns segundos, todo o tempo d
 
 ## Backup on-line {#online-backup}
 
-Esse método de backup cria um backup de todo o repositório, incluindo todos os aplicativos implantados nele, como AEM. O backup inclui conteúdo, histórico de versões, configuração, software, hotfixes, aplicativos personalizados, arquivos de registro, índices de pesquisa e assim por diante. Se você estiver usando clustering e a pasta compartilhada for um subdiretório de `crx-quickstart` (fisicamente ou usando um softlink), também será feito backup do diretório compartilhado.
+Esse método de backup cria um backup de todo o repositório, incluindo todos os aplicativos implantados nele, como o AEM. O backup inclui conteúdo, histórico de versões, configuração, software, hotfixes, aplicativos personalizados, arquivos de registro, índices de pesquisa e assim por diante. Se você estiver usando clustering e a pasta compartilhada for um subdiretório de `crx-quickstart` (fisicamente ou usando um softlink), também será feito backup do diretório compartilhado.
 
 É possível restaurar todo o repositório (e qualquer aplicativo) posteriormente.
 
@@ -60,20 +60,20 @@ Esse método opera como um backup &quot;ativo&quot; ou &quot;on-line&quot; para 
 
 Ao criar um backup, você tem as seguintes opções:
 
-* Backup em um diretório usando a ferramenta de backup integrada do AEM.
+* Fazer backup em um diretório usando a ferramenta de backup integrada do AEM.
 * Fazendo backup em um diretório usando um instantâneo do sistema de arquivos
 
 Em qualquer caso, o backup cria uma imagem (ou instantâneo) do repositório. Em seguida, o agente de backup de sistemas deve tomar cuidado para realmente transferir essa imagem para um sistema de backup dedicado (unidade de fita).
 
 >[!NOTE]
 >
->Se o recurso AEM Online Backup for usado em uma instância AEM que tenha uma configuração personalizada de armazenamento de blobs, é recomendável configurar o caminho do armazenamento de dados para estar fora do diretório &quot; `crx-quickstart`&quot; e fazer backup do armazenamento de dados separadamente.
+>Se o recurso AEM Online Backup for usado em uma instância do AEM que tenha uma configuração personalizada de armazenamento de blobs, será recomendável configurar o caminho do armazenamento de dados para estar fora do diretório &quot;`crx-quickstart`&quot; e fazer backup do armazenamento de dados separadamente.
 
 >[!CAUTION]
 >
->O backup on-line faz backup apenas do sistema de arquivos. Se você armazenar o conteúdo do repositório e/ou os arquivos do repositório em um banco de dados, será necessário fazer backup desse banco de dados separadamente. Se você estiver usando AEM com MongoDB, consulte a documentação sobre como usar as [ferramentas de backup nativas do MongoDB](https://docs.mongodb.org/manual/tutorial/backup-with-mongodump/).
+>O backup on-line faz backup apenas do sistema de arquivos. Se você armazenar o conteúdo do repositório e/ou os arquivos do repositório em um banco de dados, será necessário fazer backup desse banco de dados separadamente. Se você estiver usando o AEM com MongoDB, consulte a documentação sobre como usar as [ferramentas de backup nativas do MongoDB](https://docs.mongodb.org/manual/tutorial/backup-with-mongodump/).
 
-### Backup online do AEM {#aem-online-backup}
+### Backup on-line da AEM {#aem-online-backup}
 
 Um backup on-line do repositório permite criar, fazer download e excluir arquivos de backup. É um recurso de backup &quot;ativo&quot; ou &quot;on-line&quot;, portanto, pode ser executado enquanto o repositório está sendo usado normalmente no modo de leitura e gravação.
 
@@ -107,7 +107,7 @@ Se o **TargetPath** for um diretório, a imagem do repositório será criada nes
 **Atraso** Indica um atraso de tempo (em milissegundos) para que o desempenho do repositório não seja afetado. Por padrão, o backup do repositório é executado em velocidade total. Você pode retardar a criação de um backup on-line, de modo que ele não retarde outras tarefas.
 
 Ao usar um atraso muito grande, certifique-se de que o backup on-line não leve mais de 24 horas. Se tiver feito, descarte esse backup, pois pode não conter todos os binários.
-Um atraso de 1 milissegundo normalmente resulta em 10% de uso da CPU, e um atraso de 10 milissegundos geralmente resulta em menos de 3% de uso da CPU. O atraso total em segundos pode ser estimado da seguinte forma: Tamanho do repositório em MB, multiplicado pelo atraso em milissegundos, dividido por 2 (se a opção zip for usada) ou dividido por 4 (ao fazer backup em um diretório). Isso significa que um backup em um diretório de um repositório de 200 MB com atraso de 1 ms aumenta o tempo de backup em cerca de 50 segundos.
+Um atraso de 1 milissegundo normalmente resulta em 10% de uso do CPU, e um atraso de 10 milissegundos geralmente resulta em menos de 3% de uso do CPU. O atraso total em segundos pode ser estimado da seguinte forma: Tamanho do repositório em MB, multiplicado pelo atraso em milissegundos, dividido por 2 (se a opção zip for usada) ou dividido por 4 (ao fazer backup em um diretório). Isso significa que um backup em um diretório de um repositório de 200 MB com atraso de 1 ms aumenta o tempo de backup em cerca de 50 segundos.
 
 >[!NOTE]
 >
@@ -149,7 +149,7 @@ Para criar um backup:
 
    >[!NOTE]
    >
-   >Se tiver feito backup em um diretório: após a conclusão do processo de backup, o AEM não gravará no diretório de destino.
+   >Se você fez backup em um diretório: após a conclusão do processo de backup, o AEM não gravará no diretório de destino.
 
 ### Automatização do backup on-line do AEM {#automating-aem-online-backup}
 
@@ -202,12 +202,12 @@ O processo descrito aqui é especialmente adequado para repositórios grandes.
 >
 >Se você quiser usar essa abordagem de backup, o sistema deverá oferecer suporte a snapshots do sistema de arquivos. Por exemplo, para Linux, isso significa que os sistemas de arquivos devem ser colocados em um volume lógico.
 
-1. Fazer um instantâneo do AEM do sistema de arquivos no qual ele está implantado.
+1. Fazer um instantâneo do sistema de arquivos no qual o AEM está implantado.
 
 1. Monte o instantâneo do sistema de arquivos.
 1. Faça um backup e desmonte o snapshot.
 
-### Como funciona o AEM Online Backup {#how-aem-online-backup-works}
+### Funcionamento do AEM Online Backup {#how-aem-online-backup-works}
 
 O AEM Online Backup é composto de uma série de ações internas para garantir a integridade dos dados dos quais está sendo feito backup e dos arquivos de backup que estão sendo criados. Eles estão listados abaixo para os interessados.
 
@@ -244,7 +244,7 @@ Os arquivos são copiados para o diretório de destino em quatro estágios:
 Você pode restaurar um backup da seguinte maneira:
 
 * Caso tenha executado um backup de snapshot do sistema de arquivos, você pode simplesmente restaurar uma imagem do sistema.
-* Caso tenha criado o backup como um arquivo zip, basta descompactar o conteúdo em uma nova pasta e iniciar o AEM nesse local.
+* Caso tenha criado o backup como um arquivo zip, basta descompactar o conteúdo em uma nova pasta e iniciar o AEM a partir desse local.
 
 ## Backup do pacote {#package-backup}
 

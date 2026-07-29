@@ -12,8 +12,8 @@ feature: Developing
 role: Developer
 source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '3187'
-ht-degree: 4%
+source-wordcount: '3269'
+ht-degree: 5%
 
 ---
 
@@ -23,8 +23,8 @@ Foram introduzidos modelos editáveis para:
 
 * Permitir que autores especializados [criem e editem modelos](/help/sites-authoring/templates.md).
 
-   * Esses autores especializados são chamados de **autores de modelo**
-   * Os autores do modelo devem ser membros do grupo `template-authors`.
+  * Esses autores especializados são chamados de **autores de modelo**
+  * Os autores do modelo devem ser membros do grupo `template-authors`.
 
 * Forneça modelos que mantenham uma conexão dinâmica com qualquer página criada a partir deles. Isso garante que qualquer alteração no modelo seja refletida nas próprias páginas.
 * Torne o componente da página mais genérico para que o componente da página principal possa ser usado sem personalização.
@@ -39,7 +39,7 @@ Este documento:
 
 * Fornece uma visão geral da criação de modelos editáveis
 
-   * Para obter mais detalhes, consulte [Criando Modelos de Página](/help/sites-authoring/templates.md)
+  * Para obter mais detalhes, consulte [Criando Modelos de Página](/help/sites-authoring/templates.md)
 
 * Descreve as tarefas de administrador/desenvolvedor necessárias para criar modelos editáveis
 * Descreve os fundamentos técnicos de modelos editáveis
@@ -48,14 +48,13 @@ Este documento supõe que você já esteja familiarizado com a criação e ediç
 
 >[!NOTE]
 >
->O tutorial a seguir também pode ser interessante para configurar um modelo de página editável em um novo projeto:
->[Introdução ao AEM Sites Parte 2 - Criação de uma Página Base e um Modelo](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/pages-templates.html?lang=pt-BR)
+>O tutorial a seguir também pode ser de interesse para a configuração de um modelo de página editável em um novo projeto:>[Introdução ao AEM Sites Parte 2 - Criação de uma página base e um modelo](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/pages-templates.html?lang=pt-BR)
 
 ## Criação de um novo modelo {#creating-a-new-template}
 
 A criação de modelos editáveis é feita principalmente com o [console de modelo e o editor de modelo](/help/sites-authoring/templates.md), por um autor de modelo. Esta seção fornece uma visão geral desse processo e segue com uma descrição do que ocorre em nível técnico.
 
-Para obter informações sobre como usar modelos editáveis em um projeto AEM, consulte [Criação de um projeto AEM usando Lazybones](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/create-aem-project-structure-using-lazybones/m-p/186478?profile.language=pt).
+Para obter informações sobre como usar modelos editáveis em um projeto AEM, consulte [Criação de um projeto AEM usando Lazybones](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/create-aem-project-structure-using-lazybones/m-p/186478).
 
 Ao criar um modelo editável, você:
 
@@ -73,7 +72,7 @@ Ao criar um modelo editável, você:
    * A estrutura permite definir os componentes e o conteúdo para o modelo.
    * Os componentes definidos na estrutura do modelo não podem ser movidos em uma página resultante nem excluídos de qualquer página resultante.
 
-      * Se você estiver criando um modelo em uma pasta personalizada fora do conteúdo de exemplo do `We.Retail`, poderá escolher Componentes de base ou usar [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=pt-BR).
+     * Se você estiver criando um modelo em uma pasta personalizada fora do conteúdo de exemplo do `We.Retail`, poderá escolher Componentes de base ou usar [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=pt-BR).
 
    * Se desejar que os autores de página possam adicionar e remover componentes, adicione um sistema de parágrafo ao modelo.
    * Os componentes podem ser desbloqueados e bloqueados novamente para permitir que você defina o conteúdo inicial.
@@ -86,7 +85,7 @@ Ao criar um modelo editável, você:
 
    * As políticas de conteúdo definem as propriedades de design de um componente.
 
-      * Por exemplo, os componentes disponíveis ou as dimensões mínima/máxima.
+     * Por exemplo, os componentes disponíveis ou as dimensões mínima/máxima.
 
    * Essas políticas são aplicáveis ao modelo (e páginas criadas com o modelo).
 
@@ -105,7 +104,7 @@ Ao criar um modelo editável, você:
 
    **Layout**
 
-   * Você pode definir o layout do modelo para um intervalo de dispositivos.
+   * É possível definir o layout do modelo para um intervalo de dispositivos.
    * O Layout responsivo para modelos funciona como na criação de página.
 
    Para obter detalhes sobre como um autor de modelo define o layout do modelo, consulte [Criando Modelos de Página](/help/sites-authoring/templates.md#editing-a-template-layout-template-author).
@@ -182,12 +181,12 @@ Uma lista de todas as entradas permitidas é criada. Se alguma configuração se
 
 Para criar uma pasta, faça o seguinte:
 
-* Programaticamente ou com CRXDE Lite
+* Programaticamente ou com o CRXDE Lite
 * Usar o navegador de configuração
 
 ## Uso do CRXDE Lite {#using-crxde-lite}
 
-1. Uma nova pasta (em /conf) pode ser criada para sua instância de forma programática ou com o CRXDE Lite.
+1. Uma nova pasta (em /conf) pode ser criada para sua instância programaticamente ou com o CRXDE Lite.
 
    Deve ser utilizada a seguinte estrutura:
 
@@ -244,7 +243,7 @@ As pastas de modelo para a [`We.Retail` implementação de referência](/help/si
 
 #### O grupo de autores de modelo {#the-template-authors-group}
 
-O grupo `template-authors` é o grupo usado para gerenciar o acesso a modelos e vem com o AEM como padrão, mas está vazio. Os usuários devem ser adicionados ao grupo para o projeto/site.
+O grupo `template-authors` é o grupo usado para gerenciar o acesso a modelos e vem como padrão com o AEM, mas está vazio. Os usuários devem ser adicionados ao grupo para o projeto/site.
 
 >[!CAUTION]
 >
@@ -374,18 +373,18 @@ Ao criar um modelo, especifique um tipo de modelo:
 
 * Os tipos de modelo fornecem modelos para um modelo de maneira eficaz. Ao criar um template, a estrutura e o conteúdo inicial do tipo de template selecionado são usados para criar o template.
 
-   * O tipo de modelo é copiado para criar o modelo.
-   * Depois que a cópia ocorre, a única conexão entre o modelo e o tipo de modelo é uma referência estática para fins de informação.
+  * O tipo de modelo é copiado para criar o modelo.
+  * Depois que a cópia ocorre, a única conexão entre o modelo e o tipo de modelo é uma referência estática para fins de informação.
 
 * Os tipos de modelo permitem definir:
 
-   * O tipo de recurso do componente de página.
-   * A política do nó raiz, que define os componentes permitidos no editor de modelo.
-   * A Adobe recomenda que você defina os pontos de interrupção para a grade responsiva e a configuração do emulador móvel em no tipo de modelo. Esta etapa é opcional, pois a configuração também pode ser definida no modelo individual (consulte [Tipo de modelo e Grupos de Dispositivos Móveis](/help/sites-developing/page-templates-editable.md#p-template-type-and-mobile-device-groups-br-p)).
+  * O tipo de recurso do componente de página.
+  * A política do nó raiz, que define os componentes permitidos no editor de modelo.
+  * A Adobe recomenda que você defina os pontos de interrupção para a grade responsiva e a configuração do emulador móvel em no tipo de modelo. Esta etapa é opcional, pois a configuração também pode ser definida no modelo individual (consulte [Tipo de modelo e Grupos de Dispositivos Móveis](/help/sites-developing/page-templates-editable.md#p-template-type-and-mobile-device-groups-br-p)).
 
-* O AEM fornece uma pequena seleção de tipos de modelo prontos para uso, como Página HTML5 e Página de formulário adaptável.
+* O AEM fornece uma pequena seleção de tipos de modelo prontos para uso, como Página do HTML5 e Página de formulário adaptável.
 
-   * Exemplos adicionais são fornecidos como parte do conteúdo de amostra [`We.Retail`](/help/sites-developing/we-retail.md).
+  * Exemplos adicionais são fornecidos como parte do conteúdo de amostra [`We.Retail`](/help/sites-developing/we-retail.md).
 
 * Os tipos de modelo normalmente são definidos pelos desenvolvedores.
 
@@ -445,7 +444,7 @@ CÓDIGO NO GITHUB
 
 Você pode encontrar o código desta página no GitHub
 
-* [Abrir o projeto aem-sites-example-custom-template-type no GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sites-example-custom-template-type)
+* [Abra o projeto aem-sites-example-custom-template-type no GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sites-example-custom-template-type)
 * Baixar o projeto como [um arquivo ZIP](https://codeload.github.com/Adobe-Marketing-Cloud/aem-sites-example-custom-template-type/zip/refs/heads/master)
 
 ## Definições de modelo {#template-definitions}
@@ -492,11 +491,11 @@ Os principais elementos são:
 
 * `<template-name>`
 
-   * ` [initial](#initial-content)`
-   * `jcr:content`
-   * ` [structure](#structure)`
-   * ` [policies](#policies)`
-   * `thumbnail.png`
+  * ` [initial](#initial-content)`
+  * `jcr:content`
+  * ` [structure](#structure)`
+  * ` [policies](#policies)`
+  * `thumbnail.png`
 
 ### jcr:content {#jcr-content}
 
@@ -506,9 +505,9 @@ Este nó retém propriedades para o modelo:
 
 * **Nome**: `status`
 
-   * **Tipo**: `String`
+  * **Tipo**: `String`
 
-   * **Valor**: `draft`, `enabled` ou `disabled`
+  * **Valor**: `draft`, `enabled` ou `disabled`
 
 ### Estrutura {#structure}
 
@@ -518,10 +517,10 @@ Define a estrutura da página resultante:
 * As alterações feitas na estrutura são refletidas em qualquer página criada com o modelo.
 * O nó `root` ( `structure/jcr:content/root`) define a lista de componentes que estão disponíveis na página resultante.
 
-   * Os componentes definidos na estrutura do modelo não podem ser movidos para ou excluído de qualquer página resultante.
-   * Após um componente ser desbloqueado, a propriedade `editable` é definida como `true`.
+  * Os componentes definidos na estrutura do modelo não podem ser movidos para ou excluído de qualquer página resultante.
+  * Após um componente ser desbloqueado, a propriedade `editable` é definida como `true`.
 
-   * Após desbloquear um componente que já contém conteúdo, esse conteúdo é movido para a ramificação `initial`.
+  * Após desbloquear um componente que já contém conteúdo, esse conteúdo é movido para a ramificação `initial`.
 
 * O nó `cq:responsive` contém definições para o layout responsivo.
 
@@ -545,7 +544,7 @@ As políticas de conteúdo (ou design) definem as propriedades de design de um c
 
 * A propriedade `cq:policy`, no nó `root`
   `/conf/<your-folder>/settings/wcm/templates/<your-template>/policies/jcr:content/root`
-Fornece uma referência relativa à política de conteúdo para o sistema de parágrafos da página.
+  Fornece uma referência relativa à política de conteúdo para o sistema de parágrafos da página.
 
 * A propriedade `cq:policy`, nos nós de componente explícito em `root`, fornece links para as políticas dos componentes individuais.
 
@@ -580,23 +579,21 @@ As políticas de página permitem definir a [política de conteúdo](#content-po
 
    * Definindo a propriedade de status no nó `jcr:content`.
 
-      * Por exemplo, em:
+     * Por exemplo, em:
+       `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
 
-        `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
+     * Defina a propriedade:
 
-      * Defina a propriedade:
-
-         * Nome: status
-         * Tipo: String
-         * Valor: `enabled`
+       * Nome: status
+       * Tipo: String
+       * Valor: `enabled`
 
 1. **Modelos permitidos**
 
    * [Defina os caminhos de Modelo permitidos nas **Propriedades de Página**](/help/sites-authoring/templates.md#allowing-a-template-author) da página apropriada ou da página raiz de uma sub-ramificação.
    * Defina a propriedade:
-
      `cq:allowedTemplates`
-No nó `jcr:content` da ramificação necessária.
+     No nó `jcr:content` da ramificação necessária.
 
    Por exemplo, com um valor de:
 
@@ -610,11 +607,11 @@ Páginas criadas a partir de modelos editáveis:
 
 * Ter referências às informações mantidas no modelo e no tipo de modelo. Você pode obter essa funcionalidade com um nó `jcr:content` com as propriedades:
 
-   * `cq:template`
-Fornece a referência dinâmica ao modelo real; permite que as alterações no modelo sejam refletidas nas páginas reais.
+  * `cq:template`
+    Fornece a referência dinâmica ao modelo real; permite que as alterações no modelo sejam refletidas nas páginas reais.
 
-   * `cq:templateType`
-Fornece uma referência ao tipo de template.
+  * `cq:templateType`
+    Fornece uma referência ao tipo de template.
 
 ![chlimage_1-71](assets/chlimage_1-71.png)
 
@@ -636,15 +633,15 @@ Ao processar uma página:
 
 * **Modelos**:
 
-   * A propriedade `cq:template` de seu nó `jcr:content` é referenciada para acessar o modelo que corresponde a essa página.
+  * A propriedade `cq:template` de seu nó `jcr:content` é referenciada para acessar o modelo que corresponde a essa página.
 
 * **Componentes**:
 
-   * O componente de página mescla a árvore `structure/jcr:content` do modelo com a árvore `jcr:content` da página.
+  * O componente de página mescla a árvore `structure/jcr:content` do modelo com a árvore `jcr:content` da página.
 
-   * O componente de Página permite que o autor edite apenas os nós da estrutura do modelo que foram sinalizados como editáveis (e quaisquer secundários).
-   * Ao renderizar um componente em uma página, o caminho relativo desse componente é retirado do nó `jcr:content`; o mesmo caminho no nó `policies/jcr:content` do modelo é então pesquisado.
+  * O componente de Página permite que o autor edite apenas os nós da estrutura do modelo que foram sinalizados como editáveis (e quaisquer secundários).
+  * Ao renderizar um componente em uma página, o caminho relativo desse componente é retirado do nó `jcr:content`; o mesmo caminho no nó `policies/jcr:content` do modelo é então pesquisado.
 
-      * A propriedade `cq:policy` desse nó aponta para a política de conteúdo real (ou seja, ele contém a configuração de design desse componente).
+    * A propriedade `cq:policy` desse nó aponta para a política de conteúdo real (ou seja, ele contém a configuração de design desse componente).
 
-      * Essa funcionalidade permite que você tenha vários templates que reutilizam as mesmas configurações de política de conteúdo.
+    * Essa funcionalidade permite que você tenha vários templates que reutilizam as mesmas configurações de política de conteúdo.

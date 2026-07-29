@@ -25,6 +25,6 @@ A marcação permite que o conteúdo seja categorizado e organizado. As tags pod
 
 As seguintes informações estão disponíveis para desenvolvedores:
 
-* [Estrutura de Marcação AEM](/help/sites-developing/framework.md) - Uma descrição dos nós e propriedades usados para marcação
+* [Estrutura de Marcação do AEM](/help/sites-developing/framework.md) - Uma descrição dos nós e propriedades usados para marcação
 
-* [Compilando Marcação em um Aplicativo AEM](/help/sites-developing/building.md) - Uma descrição das APIs que funcionam com a estrutura de marcação do código do lado do cliente e do lado do servidor
+* [Compilando a Marcação em um Aplicativo AEM](/help/sites-developing/building.md) - Uma descrição das APIs que funcionam com a estrutura de marcação do código do lado do cliente e do lado do servidor
