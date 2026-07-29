@@ -48,7 +48,7 @@ Este documento supõe que você já esteja familiarizado com a criação e ediç
 
 >[!NOTE]
 >
->O tutorial a seguir também pode ser de interesse para a configuração de um modelo de página editável em um novo projeto:>[Introdução ao AEM Sites Parte 2 - Criação de uma página base e um modelo](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/pages-templates.html)
+>O tutorial a seguir também pode ser de interesse para a configuração de um modelo de página editável em um novo projeto:>[Introdução ao AEM Sites Parte 2 - Criação de uma página base e um modelo](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/pages-templates.html?lang=pt-BR)
 
 ## Criação de um novo modelo {#creating-a-new-template}
 
@@ -72,7 +72,7 @@ Ao criar um modelo editável, você:
    * A estrutura permite definir os componentes e o conteúdo para o modelo.
    * Os componentes definidos na estrutura do modelo não podem ser movidos em uma página resultante nem excluídos de qualquer página resultante.
 
-     * Se você estiver criando um modelo em uma pasta personalizada fora do conteúdo de exemplo do `We.Retail`, poderá escolher Componentes de base ou usar [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html).
+     * Se você estiver criando um modelo em uma pasta personalizada fora do conteúdo de exemplo do `We.Retail`, poderá escolher Componentes de base ou usar [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=pt-BR).
 
    * Se desejar que os autores de página possam adicionar e remover componentes, adicione um sistema de parágrafo ao modelo.
    * Os componentes podem ser desbloqueados e bloqueados novamente para permitir que você defina o conteúdo inicial.
