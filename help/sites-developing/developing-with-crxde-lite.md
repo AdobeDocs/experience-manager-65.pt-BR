@@ -12,19 +12,19 @@ feature: Developing,Developer Tools
 role: Developer
 source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '2114'
+source-wordcount: '2053'
 ht-degree: 1%
 
 ---
 
 # Desenvolvimento com o CRXDE Lite{#developing-with-crxde-lite}
 
-Esta seção descreve como desenvolver o aplicativo Adobe Experience Manager (AEM) usando o CRXDE Lite.
+Esta seção descreve como desenvolver seu aplicativo do Adobe Experience Manager (AEM) usando o CRXDE Lite.
 
 Consulte a documentação de visão geral para obter mais informações sobre os diferentes ambientes de desenvolvimento disponíveis.
 
-o CRXDE Lite é incorporado ao AEM e permite executar tarefas de desenvolvimento padrão no navegador. Com o CRXDE Lite, você pode criar um projeto, criar e editar arquivos (como .jsp e .java), pastas, modelos, componentes, caixas de diálogo, nós, propriedades e pacotes ao fazer logon.
-O CRXDE Lite é recomendado quando você não tem acesso direto ao servidor AEM. Ou, quando você desenvolve uma aplicação estendendo ou modificando os componentes prontos para uso e pacotes Java™, ou quando não precisa de um depurador dedicado, autocompletar de código e realce de sintaxe.
+O CRXDE Lite está incorporado ao AEM e permite executar tarefas de desenvolvimento padrão no navegador. Com o CRXDE Lite, você pode criar um projeto, criar e editar arquivos (como .jsp e .java), pastas, modelos, componentes, caixas de diálogo, nós, propriedades e pacotes ao fazer logon.
+O CRXDE Lite é recomendado quando você não tem acesso direto ao servidor do AEM. Ou, quando você desenvolve uma aplicação estendendo ou modificando os componentes prontos para uso e pacotes Java™, ou quando não precisa de um depurador dedicado, autocompletar de código e realce de sintaxe.
 
 >[!NOTE]
 >
@@ -34,7 +34,7 @@ O CRXDE Lite é recomendado quando você não tem acesso direto ao servidor AEM.
 
 >[!NOTE]
 >
->A Adobe AEM recomenda que você use as [Ferramentas do desenvolvedor para Eclipse](/help/sites-developing/aem-eclipse.md) e a [Extensão de Colchetes HTL do AEM](/help/sites-developing/aem-brackets.md) durante o desenvolvimento do projeto.
+>A Adobe recomenda que você use as [Ferramentas de desenvolvedor do AEM para Eclipse](/help/sites-developing/aem-eclipse.md) e a [Extensão AEM HTL Brackets](/help/sites-developing/aem-brackets.md) durante o desenvolvimento do projeto.
 
 ## Introdução ao CRXDE Lite {#getting-started-with-crxde-lite}
 
@@ -46,7 +46,7 @@ Para começar a usar o CRXDE Lite, proceda da seguinte maneira:
 
 1. Clique em **OK**.
 
-No seu navegador, a interface de usuário do CRXDE Lite é semelhante a:
+A interface do usuário do CRXDE Lite tem a seguinte aparência no navegador:
 
 ![chlimage_1-18](assets/crx-interface.jpg)
 
@@ -72,7 +72,7 @@ O CRXDE Lite oferece a seguinte funcionalidade:
   </tr>
   <tr>
    <td>Editar painel</td>
-   <td><p>Guia <strong>Página inicial</strong>: permite pesquisar conteúdo e/ou documentação e acessar recursos do desenvolvedor (documentação, blog do desenvolvedor, base de dados de conhecimento) e suporte (página inicial e centro de suporte do Adobe).<br /> </p> <p>Clique duas vezes em um arquivo no painel do <strong>Explorer</strong> para que você possa exibir seu conteúdo. Por exemplo, um arquivo .jsp ou .java. Em seguida, você pode modificá-lo e salvar as alterações.</p> <p>Depois que um arquivo é editado no painel <strong>Editar</strong>, as seguintes ferramentas ficam disponíveis na barra de ferramentas:<br /> </p> - <strong>Mostrar na árvore: </strong>mostra o arquivo na árvore do repositório.<br /> - <strong>Pesquisar/Substituir...</strong>: pesquisar ou substituir.<br /> <br /> Clique duas vezes na linha de status do painel <strong>Editar</strong> para abrir a caixa de diálogo <strong>Ir para a linha</strong>, para que você possa inserir um número de linha específico para ir para.<br /> </td>
+   <td><p>Guia <strong>Página inicial</strong>: permite pesquisar conteúdo e/ou documentação e acessar recursos do desenvolvedor (documentação, blog do desenvolvedor, base de dados de conhecimento) e suporte (página inicial e centro de suporte do Adobe).<br /> </p> <p>Clique duas vezes em um arquivo no painel do <strong>Explorer</strong> para que você possa exibir seu conteúdo. Por exemplo, um arquivo .jsp ou .java. Em seguida, você pode modificá-lo e salvar as alterações.</p> <p>Depois que um arquivo é editado no painel <strong>Editar</strong>, as seguintes ferramentas ficam disponíveis na barra de ferramentas:<br /> </p> - <strong>Mostrar na árvore: </strong>mostra o arquivo na árvore do repositório.<br /> - <strong>Pesquisar/Substituir...</strong>: pesquisar ou substituir.<br /> <br /> Clicar duas vezes na linha de status do painel <strong>Editar</strong> abre a caixa de diálogo <strong>Ir para a linha</strong> para que você possa inserir um número de linha específico.<br /> </td>
   </tr>
   <tr>
    <td>Guia Propriedades<br /> </td>
@@ -80,7 +80,7 @@ O CRXDE Lite oferece a seguinte funcionalidade:
   </tr>
   <tr>
    <td>Guia Controle de acesso</td>
-   <td><p>Exibir permissões com base no caminho, nível de repositório ou principal.</p> <p>As permissões são divididas em</p> <p>- <strong>Política de Controle de Acesso Aplicável</strong>: as políticas que podem ser aplicadas à seleção.</p> <p>- <strong>Políticas de Controle de Acesso Local</strong>: as políticas aplicadas localmente à seleção.</p> <p>- <strong>Políticas de Controle de Acesso Efetivas</strong>: as políticas aplicadas à seleção podem ser definidas localmente ou herdadas dos nós pai.</p> <p>Observação. Para conseguir ver as informações do Controle de acesso, o usuário conectado ao CRXDE Lite deve ter direitos de leitura para entradas de ACL. O usuário anônimo não pode ver essas informações por padrão: faça logon como administrador para ver as informações, por exemplo.</p> </td>
+   <td><p>Exibir permissões com base no caminho, nível de repositório ou principal.</p> <p>As permissões são divididas em</p> <p>- <strong>Política de Controle de Acesso Aplicável</strong>: as políticas que podem ser aplicadas à seleção.</p> <p>- <strong>Políticas de Controle de Acesso Local</strong>: as políticas aplicadas localmente à seleção.</p> <p>- <strong>Políticas de Controle de Acesso Efetivas</strong>: as políticas aplicadas à seleção podem ser definidas localmente ou herdadas dos nós pai.</p> <p>Observação. Para poder ver as informações de Controle de acesso, o usuário conectado ao CRXDE Lite deve ter direitos de leitura para entradas de ACL. O usuário anônimo não pode ver essas informações por padrão: faça logon como administrador para ver as informações, por exemplo.</p> </td>
   </tr>
   <tr>
    <td>Guia Replicação</td>
@@ -104,7 +104,7 @@ O CRXDE Lite oferece a seguinte funcionalidade:
   </tr>
   <tr>
    <td>Criar...<br /> </td>
-   <td><p>Menu suspenso para criar o seguinte no nó selecionado:<br /> </p> <p>- <strong>Nó</strong>: um nó com um tipo de nó arbitrário<br /> </p> <p>- <strong>Arquivo</strong>: nó nt:file e seu subnó nt:resource</p> <p>- <strong>Pasta</strong>: nó nt:folder</p> <p>- <strong>Modelo</strong>: modelo AEM</p> <p>- <strong>Componente</strong>: componente AEM</p> <p>- <strong>Caixa de diálogo</strong>: caixa de diálogo AEM</p> </td>
+   <td><p>Menu suspenso para criar o seguinte no nó selecionado:<br /> </p> <p>- <strong>Nó</strong>: um nó com um tipo de nó arbitrário<br /> </p> <p>- <strong>Arquivo</strong>: nó nt:file e seu subnó nt:resource</p> <p>- <strong>Pasta</strong>: nó nt:folder</p> <p>- <strong>Modelo</strong>: modelo AEM</p> <p>- <strong>Componente</strong>: componente do AEM</p> <p>- <strong>Caixa de diálogo</strong>: caixa de diálogo do AEM</p> </td>
   </tr>
   <tr>
    <td>Excluir<br /> </td>
@@ -132,7 +132,7 @@ O CRXDE Lite oferece a seguinte funcionalidade:
   </tr>
   <tr>
    <td>Ferramentas<br /> </td>
-   <td><p>Menu suspenso com as seguintes ferramentas:</p> <p>- <strong>Configuração do servidor...</strong>: para acessar o Felix Console.</p> <p>- <strong>Consulta...</strong>: para consultar o repositório.</p> <p>- <strong>Privilégios...</strong>: para abrir o gerenciamento de privilégios, onde você pode exibir e adicionar privilégios.</p> <p>- <strong>Testar Controle de Acesso...</strong>: um local onde você pode testar a permissão para um determinado caminho e/ou entidade de segurança.</p> <p>- <strong>Exportar Tipo de Nó</strong>: para exportar tipos de nó no sistema como notação cnd.</p> <p>- <strong>Importar Tipo de Nó...</strong>: para importar tipos de nó usando a notação cnd.</p> <p>- <strong>Instalar o SiteCatalyst Debugger...</strong>: instruções sobre como instalar o Analytics Debugger.</p> </td>
+   <td><p>Menu suspenso com as seguintes ferramentas:</p> <p>- <strong>Configuração do servidor...</strong>: para acessar o Felix Console.</p> <p>- <strong>Consulta...</strong>: para consultar o repositório.</p> <p>- <strong>Privilégios...</strong>: para abrir o gerenciamento de privilégios, onde você pode exibir e adicionar privilégios.</p> <p>- <strong>Testar Controle de Acesso...</strong>: um local onde você pode testar a permissão para um determinado caminho e/ou entidade de segurança.</p> <p>- <strong>Exportar Tipo de Nó</strong>: para exportar tipos de nó no sistema como notação cnd.</p> <p>- <strong>Importar Tipo de Nó...</strong>: para importar tipos de nó usando a notação cnd.</p> <p>- <strong>Instalar o SiteCatalyst Debugger ...</strong>: instruções sobre como instalar o Analytics Debugger.</p> </td>
   </tr>
   <tr>
    <td>Widget de login<br /> </td>
@@ -154,7 +154,7 @@ Para criar uma pasta com o CRXDE Lite:
 
 ## Criação de um modelo {#creating-a-template}
 
-Para criar um template com CRXDE Lite:
+Para criar um modelo com o CRXDE Lite:
 
 1. Abra o CRXDE Lite no navegador.
 1. No painel Navegação, clique com o botão direito do mouse na pasta onde deseja criar o modelo, selecione **Criar...** e **Criar Modelo...**.
@@ -181,7 +181,7 @@ Você pode adicionar propriedades ao modelo: consulte a seção [Criação de um
 
 O recurso descrito aqui só estará disponível se o CQ5 estiver instalado, ou seja, se o tipo de nó `cq:Component` estiver disponível no repositório.
 
-Para criar um componente com CRXDE Lite:
+Para criar um componente com o CRXDE Lite:
 
 1. Abra o CRXDE Lite no navegador.
 1. No painel Navegação, clique com o botão direito do mouse na pasta onde deseja criar o componente, selecione **Criar...** e **Criar Componente...**.
@@ -223,7 +223,7 @@ Você também pode usar o Editor de diálogo para editar um diálogo. Clicar dua
 
 ## Criando um nó {#creating-a-node}
 
-Para criar um nó com CRXDE Lite:
+Para criar um nó com o CRXDE Lite:
 
 1. Abra o CRXDE Lite no navegador.
 1. No painel Navegação, clique com o botão direito do mouse no nó em que deseja criar o nó, selecione **Criar ...**, depois **Criar Nó ...**.
@@ -263,7 +263,7 @@ Para criar um script:
 
 ## Exportando e importando tipos de nós {#exporting-and-importing-node-types}
 
-Com o CRXDE Lite, você pode importar e/ou exportar definições de tipo de nó na [notação CND (Compact Namespace and Node Type Definition)](https://jackrabbit.apache.org/jcr/node-type-notation.html).
+Com o CRXDE Lite, você pode importar e/ou exportar definições de tipo de nó na notação [CND (Compact Namespace and Node Type Definition)](https://jackrabbit.apache.org/jcr/node-type-notation.html).
 
 Para exportar uma definição de tipo de nó:
 

@@ -12,7 +12,7 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '741'
+source-wordcount: '754'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ O recurso de biblioteca de arquivos fornece um local para visitantes conectados 
 
 Esta seção da documentação descreve:
 
-* Adicionando o recurso de biblioteca de arquivos a um site AEM.
+* Adicionar o recurso de biblioteca de arquivos a um site do AEM.
 * Definições de configuração para o componente `File Library`.
 
 ### Adicionar uma biblioteca de arquivos a uma página {#adding-a-file-library-to-a-page}

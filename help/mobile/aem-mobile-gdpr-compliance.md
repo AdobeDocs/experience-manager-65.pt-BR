@@ -8,8 +8,8 @@ feature: Mobile
 role: User
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '683'
-ht-degree: 0%
+source-wordcount: '707'
+ht-degree: 1%
 
 ---
 
@@ -29,15 +29,15 @@ A AEM Mobile está pronta para ajudar os clientes com suas obrigações de confo
 
 ## Adobe Digital Publishing Suite {#adobe-digital-publishing-suite}
 
-O produto de publicação digital do Adobe (que precede o AEM Mobile) é compatível com as iniciativas de preparação do GDPR do Adobe. Consulte [https://business.adobe.com/br/privacy/general-data-protection-regulation.html](https://business.adobe.com/br/privacy/general-data-protection-regulation.html). A seguir são fornecidos detalhes específicos sobre o suporte a funções relevantes do GDPR no produto do Digital Publishing Suite, incluindo como trabalhar com o Adobe para iniciar solicitações do GDPR.
+O produto de publicação digital da Adobe (que precede o AEM Mobile) é compatível com as iniciativas de preparação para o GDPR da Adobe. Consulte [https://business.adobe.com/privacy/general-data-protection-regulation.html](https://business.adobe.com/privacy/general-data-protection-regulation.html). A seguir são fornecidos detalhes específicos sobre o suporte a funções relevantes do GDPR no produto Digital Publishing Suite, incluindo como trabalhar com a Adobe para iniciar solicitações do GDPR.
 
-Para não confundir o AEM Mobile com o produto mais antigo do Digital Publishing Suite, é possível fazer logon no produto do Digital Publishing Suite aqui:
+Para não confundir o AEM Mobile com o produto mais antigo da Digital Publishing Suite, é possível fazer logon no produto da Digital Publishing Suite aqui:
 
 [https://acrobat.adobe.com/us/en/](https://acrobat.adobe.com/us/en/)
 
 ### Iniciando uma solicitação do GDPR {#initiating-a-gdpr-request}
 
-Entre em contato com o Atendimento ao cliente do Adobe para que você possa iniciar uma solicitação de GDPR para a Digital Publishing Suite.
+Entre em contato com o Atendimento ao cliente da Adobe para iniciar uma solicitação de GDPR para a Digital Publishing Suite.
 
 As seguintes IDs são necessárias para localizar dados do cliente. Qualquer subconjunto recebido implica que as outras IDs não eram aplicáveis a esse usuário.
 
@@ -55,11 +55,11 @@ Forneça pelo menos 1 dos seguintes itens:
 
 **O Adobe está excluindo minhas compras do App Store ao iniciar uma solicitação DELETE?**
 
-O Adobe exclui informações que tem de compras da App Store (assinaturas e assim por diante), mas as compras ainda estão registradas nas App Store. Se o aplicativo (usuário final) estiver conectado à App Store, esses recibos serão coletados novamente e enviados ao Adobe. Posteriormente, elas são consideradas novas compras e são restauradas pelo aplicativo, com acesso novamente.
+O Adobe exclui informações que tem de compras da App Store (assinaturas e assim por diante), mas as compras ainda estão registradas nas App Store. Se o aplicativo (usuário final) estiver conectado à App Store, esses recibos serão coletados novamente e enviados à Adobe. Posteriormente, elas são consideradas novas compras e são restauradas pelo aplicativo, com acesso novamente.
 
 **O Adobe está excluindo os direitos fornecidos pelo cliente ao iniciar uma solicitação DELETE?**
 
-O Adobe exclui informações que possui sobre as bonificações diretas adicionais do cliente. Se o aplicativo (usuário final) fizer logon no mecanismo OAuth usado pelo cliente, ele enviará informações para o Adobe e os serviços coletarão os direitos adicionais novamente.
+A Adobe exclui as informações que tem sobre as concessões adicionais de direito direto do cliente. Se o aplicativo (usuário final) fizer logon no mecanismo OAuth usado pelo cliente, ele enviará informações para a Adobe e os serviços coletarão os direitos adicionais novamente.
 
 **O que se espera do usuário final?**
 
@@ -75,13 +75,13 @@ Nenhum. Há dados sendo rastreados, mas no nível do aplicativo (não pessoal). 
 
 **O usuário final forneceu suas informações, mas nada foi encontrado. Por que não?**
 
-À medida que o produto da Digital Publishing Suite evoluía, as implementações de serviço eram alteradas e mais dados eram ofuscados. Se nenhum dado for encontrado usando os dados fornecidos pelo usuário, significa que os dados do usuário não poderão ser rastreados até essa pessoa.
+À medida que o produto Digital Publishing Suite evoluía, as implementações de serviço eram alteradas e mais dados eram ofuscados. Se nenhum dado for encontrado usando os dados fornecidos pelo usuário, significa que os dados do usuário não poderão ser rastreados até essa pessoa.
 
 ### Exemplo {#example}
 
-Entre em contato com o Atendimento ao cliente do Adobe para iniciar uma solicitação de GDPR.
+Entre em contato com o Atendimento ao cliente da Adobe para iniciar uma solicitação de GDPR.
 
-Este é um exemplo das entradas e saídas resultantes de uma solicitação do GDPR do Digital Publishing Suite:
+Este é um exemplo das entradas e saídas resultantes de uma solicitação do GDPR da Digital Publishing Suite:
 
 #### Entradas: {#inputs}
 

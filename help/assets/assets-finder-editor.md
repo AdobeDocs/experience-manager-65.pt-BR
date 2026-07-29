@@ -8,7 +8,7 @@ exl-id: 53e310a9-c511-447a-91bd-8c5b2760dc03
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '2088'
+source-wordcount: '2121'
 ht-degree: 1%
 
 ---
@@ -210,11 +210,11 @@ Para criar uma página do Editor de ativos:
 
 ![screen_shot_2012-04-23at15858pm](assets/screen_shot_2012-04-23at15858pm.png)
 
-A página básica criada usando o modelo do Editor de ativos do Geometrixx tem a seguinte aparência:
+A página básica criada usando o modelo do Editor de ativos Geometrixx tem a seguinte aparência:
 
 ![compartilhamento de ativos5](assets/assetshare5.png)
 
-Para personalizar a página do Editor de ativos, use elementos do sidekick. A página do Editor de ativos acessada do **Centro de imprensa do Geometrixx** é uma versão personalizada de uma página com base neste modelo:
+Para personalizar a página do Editor de ativos, use elementos do sidekick. A página do Editor de ativos acessada do **Geometrixx Press Center** é uma versão personalizada de uma página com base neste modelo:
 
 ![compartilhamento de ativos6](assets/assetshare6.png)
 
@@ -330,7 +330,7 @@ Este é um componente de Tags preenchido:
 
 ![screen_shot_2012-04-23at25244pm](assets/screen_shot_2012-04-23at25244pm.png)
 
-#### Miniatura  {#thumbnail}
+#### Miniatura {#thumbnail}
 
 O componente de Miniatura é o local em que o ativo exibe a miniatura selecionada (para muitos formatos, a miniatura é extraída automaticamente). Além disso, o componente exibe o nome do arquivo e [ações que você pode modificar](/help/assets/assets-finder-editor.md#adding-asset-editor-actions).
 

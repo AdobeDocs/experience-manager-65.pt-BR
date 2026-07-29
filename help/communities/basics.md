@@ -1,6 +1,6 @@
 ---
 title: Noções básicas sobre componentes das comunidades
-description: Adicionar recursos das Comunidades a sites AEM no modo de edição e configurar componentes
+description: Adicionar recursos de Comunidades a sites do AEM no modo de edição e configurar componentes
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
@@ -11,7 +11,7 @@ feature: Communities
 role: Admin
 source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '364'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 ## Visão geral {#overview}
 
-A seção de criação da documentação descreve a adição de recursos das Comunidades a sites AEM no modo de edição do autor e a descrição das configurações de componentes.
+A seção de criação da documentação descreve a adição de recursos das Comunidades aos sites do AEM no modo de edição do autor e a descrição das configurações de componentes.
 
 Os componentes podem ser explorados usando uma instância do AEM e o [guia interativo de componentes da comunidade](components-guide.md).
 
@@ -34,7 +34,7 @@ Consulte a lista em [Componentes de comunidades disponíveis](author-communities
 >
 >Para obter informações gerais sobre criação, exiba o [guia rápido das páginas de criação](../../help/sites-authoring/qg-page-authoring.md).
 >
->Se não estiver familiarizado com o AEM, exiba a documentação sobre [manipulação básica](../../help/sites-authoring/basic-handling.md).
+>Se não estiver familiarizado com o AEM, exiba a documentação sobre [manuseio básico](../../help/sites-authoring/basic-handling.md).
 
 ### Entrando no modo de design {#entering-design-mode}
 

@@ -10,8 +10,8 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '4159'
-ht-degree: 0%
+source-wordcount: '4255'
+ht-degree: 1%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model.html?lang=pt-BR) |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model.html) |
 | AEM 6.5 | Este artigo |
 
 ![integração de dados](do-not-localize/data-integeration.png)
@@ -182,7 +182,7 @@ Neste exemplo, os detalhes associados a **4367655678**, como o valor do argument
 
 #### Atributo do perfil do usuário {#user-profile-attribute}
 
-Selecione **[!UICONTROL Atributo de Perfil de Usuário]** no menu suspenso **[!UICONTROL Associando a]** e digite o nome do atributo no campo **[!UICONTROL Valor de Associação]**. Os detalhes do usuário conectado à instância AEM são recuperados da fonte de dados com base no nome do atributo.
+Selecione **[!UICONTROL Atributo de Perfil de Usuário]** no menu suspenso **[!UICONTROL Associando a]** e digite o nome do atributo no campo **[!UICONTROL Valor de Associação]**. Os detalhes do usuário conectado à instância do AEM são recuperados da fonte de dados com base no nome do atributo.
 
 O nome do atributo especificado no campo **[!UICONTROL Valor de Associação]** deve incluir o caminho de associação completo até o nome do atributo do usuário. Abra o seguinte URL para acessar os detalhes do usuário no CRXDE:
 
@@ -297,7 +297,7 @@ Para adicionar uma associação:
 Para editar propriedades:
 
 1. Marque a caixa de seleção ao lado de um objeto de modelo de dados, uma propriedade ou um serviço no modelo de dados de formulário.
-1. Selecione **[!UICONTROL Editar Propriedades]**. O painel **[!UICONTROL Editar Propriedades]** do objeto de modelo, propriedade ou serviço selecionado é aberto.
+1. Selecione **[!UICONTROL Editar propriedades]**. O painel **[!UICONTROL Editar Propriedades]** do objeto de modelo, propriedade ou serviço selecionado é aberto.
 
    * **Objeto do modelo de dados**: especifique os serviços de leitura e gravação e edite os argumentos.
    * **Propriedade**: especifique o tipo, subtipo e formato da propriedade. Você também pode especificar se a propriedade selecionada é a chave primária para o objeto de modelo de dados.
@@ -381,9 +381,9 @@ Depois de adicionar o serviço `GET LINK` à guia Serviços no Modelo de Dados d
 
 >[!NOTE]
 >
->Os valores disponíveis no campo **Valor Padrão** do argumento **NavigationPropertyName** dependem do estado da matriz **Return?Botão de alternância**. Quando ativado, ele mostra as propriedades de navegação do tipo Coleção.
+>Os valores disponíveis no campo **Valor Padrão** do argumento **NavigationPropertyName** dependem do estado da matriz **Return?** botão de alternância. Quando ativado, ele mostra as propriedades de navegação do tipo Coleção.
 
-Neste exemplo, você também pode escolher o objeto de modelo de saída como Pessoa e o argumento de propriedade de navegação como Amigos ou Melhor Amigo (dependendo se **Retornar matriz?** está habilitado ou desabilitado).
+Neste exemplo, você também pode escolher o objeto de modelo de saída como Pessoa e o argumento de propriedade de navegação como Amigos ou Melhor Amigo (dependendo se **Retornar matriz?** está ativado ou desativado).
 
 ![edit-prop-nav-prop2](assets/edit-prop-nav-prop2.png)
 

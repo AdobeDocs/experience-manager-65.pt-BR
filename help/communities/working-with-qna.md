@@ -12,7 +12,7 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1389'
+source-wordcount: '1403'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ O recurso de fórum QnA (perguntas e respostas) fornece uma área para os membro
 
 A documentação descreve:
 
-* Adicionando o recurso de fórum QnA a um site AEM.
+* Adicionando o recurso QnA forum a um site do AEM.
 * Definições de configuração para o componente `QnA`.
 
 ## Adicionar um fórum de perguntas e respostas a uma página {#adding-a-q-a-forum-to-a-page}
@@ -177,7 +177,7 @@ Na guia **Moderação de usuário**, especifique como os tópicos publicados (pe
 
   Se marcados, os moderadores de membros confiáveis podem fechar uma pergunta (tópico) para edições e respostas adicionais, e também reabrir uma pergunta. O padrão está desmarcado.
 
-* **Mover Tópicos**
+* **Mover tópicos**
 Se marcado, permitir que os moderadores de publicação movam perguntas. O padrão está desmarcado.
 
 * **Sinalizar postagens**
@@ -210,7 +210,7 @@ Na guia **Campo de marca**, as marcas que podem ser aplicadas, se permitidas na 
 
 * **Limite sugerido**
 
-  Insira o número de tags a serem exibidas como sugestão para a publicação do membro no fórum. Um valor de **-**&#x200B;1 significa sem limites. O padrão é 0.
+  Insira o número de tags a serem exibidas como sugestão para a publicação do membro no fórum. Um valor de **-**1 significa sem limites. O padrão é 0.
 
 #### Guia Configurações de classificação {#sort-settings-tab}
 
@@ -248,7 +248,7 @@ Eles também podem identificar as respostas.
 
 Quando os visitantes do site estão conectados, dependendo da configuração, eles podem:
 
-* Post uma nova pergunta.
+* Poste uma nova pergunta.
 * Editar ou excluir perguntas criadas por eles.
 * Sinalizar perguntas ou respostas de outros membros.
 * Identificar respostas para perguntas criadas por eles.

@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '15394'
+source-wordcount: '15601'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 O serviço de Segurança de documentos permite que os usuários apliquem configurações de confidencialidade de maneira dinâmica a documentos do Adobe PDF e mantenham o controle sobre os documentos, independentemente da abrangência da sua distribuição.
 
-O serviço de Segurança de documentos impede que as informações se espalhem além do alcance do usuário, permitindo que os usuários mantenham o controle sobre como os recipients usam o documento PDF protegido por política. Um usuário pode especificar quem pode abrir um documento, limitar como usá-lo e monitorar o documento após sua distribuição. Um usuário também pode controlar dinamicamente o acesso a um documento protegido por política e até mesmo revogar dinamicamente o acesso ao documento.
+O serviço de Segurança de documentos impede que as informações se espalhem além do alcance do usuário, permitindo que os usuários mantenham o controle sobre como os destinatários usam o documento PDF protegido por política. Um usuário pode especificar quem pode abrir um documento, limitar como usá-lo e monitorar o documento após sua distribuição. Um usuário também pode controlar dinamicamente o acesso a um documento protegido por política e até mesmo revogar dinamicamente o acesso ao documento.
 
 O serviço de Segurança de documentos também protege outros tipos de arquivos, como arquivos do Microsoft Word (arquivos DOC). Você pode usar a API do cliente de segurança de documentos para trabalhar com esses tipos de arquivos. As seguintes versões são compatíveis:
 
@@ -42,10 +42,10 @@ Para maior clareza, as duas seções a seguir discutem como trabalhar com docume
 * Criar políticas. Para obter informações, consulte [Criando Políticas](protecting-documents-policies.md#creating-policies).
 * Modificar políticas. Para obter informações, consulte [Modificando Políticas](protecting-documents-policies.md#modifying-policies).
 * Excluir políticas. Para obter informações, consulte [Excluindo Políticas](protecting-documents-policies.md#deleting-policies).
-* Aplique políticas a documentos do PDF. Para obter informações, consulte [Aplicando políticas a documentos PDF](protecting-documents-policies.md#applying-policies-to-pdf-documents).
-* Remova as políticas dos documentos do PDF. Para obter informações, consulte [Removendo Políticas de Documentos PDF](protecting-documents-policies.md#removing-policies-from-pdf-documents).
-* Documentos protegidos por política do Inspect. Para obter informações, consulte [Inspecionando documentos de PDF protegidos por política](protecting-documents-policies.md#inspecting-policy-protected-pdf-documents).
-* Revogar o acesso a documentos do PDF. Para obter informações, consulte [Revogando Acesso a Documentos](protecting-documents-policies.md#revoking-access-to-documents).
+* Aplicar políticas a documentos do PDF. Para obter informações, consulte [Aplicando políticas a documentos do PDF](protecting-documents-policies.md#applying-policies-to-pdf-documents).
+* Remova políticas de documentos do PDF. Para obter informações, consulte [Removendo Políticas de Documentos do PDF](protecting-documents-policies.md#removing-policies-from-pdf-documents).
+* Inspecionar documentos protegidos por política. Para obter informações, consulte [Inspecionando documentos protegidos do PDF por política](protecting-documents-policies.md#inspecting-policy-protected-pdf-documents).
+* Revogar acesso a documentos do PDF. Para obter informações, consulte [Revogando Acesso a Documentos](protecting-documents-policies.md#revoking-access-to-documents).
 * Restaure o acesso aos documentos revogados. Para obter informações, consulte [Restaurando o Acesso a Documentos Revogados](protecting-documents-policies.md#reinstating-access-to-revoked-documents).
 * Criar marcas d&#39;água. Para obter informações, consulte [Criando Marcas D&#39;Água](protecting-documents-policies.md#creating-watermarks).
 * Pesquisar eventos. Para obter informações, consulte [Pesquisando Eventos](protecting-documents-policies.md#searching-for-events).
@@ -151,7 +151,7 @@ Inclua os arquivos necessários no projeto de desenvolvimento. Se você estiver 
 
 Os seguintes arquivos JAR devem ser adicionados ao classpath do projeto:
 
-* adobe-rightsmanagement-client.jar
+* adobe-rights-management-client.jar
 * namespace.jar (se o AEM Forms for implantado no JBoss)
 * jaxb-api.jar (se o AEM Forms for implantado no JBoss)
 * jaxb-impl.jar (se o AEM Forms for implantado no JBoss)
@@ -237,7 +237,7 @@ Crie uma política usando a API de segurança de documentos (Java):
 1. Criar uma entrada de política.
 
    * Crie uma entrada de política invocando o método `createPolicyEntry` estático do objeto `InfomodelObjectFactory`. Este método retorna um objeto `PolicyEntry`.
-   * Especifique as permissões da política invocando o método `createPermission` estático do objeto `InfomodelObjectFactory`. Passe um membro de dados estáticos que pertença à interface `Permission` que representa a permissão. Este método retorna um objeto `Permission`. Por exemplo, para adicionar a permissão que permite aos usuários copiar dados de um documento PDF protegido por política, passe `Permission.COPY`. (Repita essa etapa para cada permissão a ser adicionada).
+   * Especifique as permissões da política invocando o método `createPermission` estático do objeto `InfomodelObjectFactory`. Passe um membro de dados estáticos que pertença à interface `Permission` que representa a permissão. Este método retorna um objeto `Permission`. Por exemplo, para adicionar a permissão que permite aos usuários copiar dados de um documento do PDF protegido por política, passe `Permission.COPY`. (Repita essa etapa para cada permissão a ser adicionada).
    * Adicione a permissão à entrada de política invocando o método `addPermission` do objeto `PolicyEntry` e transmitindo o objeto `Permission`. (Repita esta etapa para cada objeto do `Permission` que você criou).
    * Crie a entidade de política invocando o método `createSpecialPrincipal` estático do objeto `InfomodelObjectFactory`. Passe um membro de dados que pertença ao objeto `InfomodelObjectFactory` que representa o principal. Este método retorna um objeto `Principal`. Por exemplo, para adicionar o editor do documento como entidade de segurança, passe `InfomodelObjectFactory.PUBLISHER_PRINCIPAL`.
    * Adicione a entidade de segurança à entrada de política invocando o método `setPrincipal` do objeto `PolicyEntry` e transmitindo o objeto `Principal`.
@@ -248,11 +248,11 @@ Crie uma política usando a API de segurança de documentos (Java):
    * Crie um objeto `PolicyManager` invocando o método `getPolicyManager` do objeto `DocumentSecurityClient`.
    * Registre a política invocando o método `registerPolicy` do objeto `PolicyManager` e transmitindo os seguintes valores:
 
-      * O objeto `Policy` que representa a política a ser registrada.
+     * O objeto `Policy` que representa a política a ser registrada.
 
    * Um valor de string que representa o conjunto de políticas ao qual a política pertence.
 
-   Se você usar uma conta de administrador de formulários AEM nas configurações de conexão para criar o objeto `DocumentSecurityClient`, especifique o nome do conjunto de políticas ao invocar o método `registerPolicy`. Se você passar um valor `null` para o conjunto de políticas, a política será criada no conjunto de políticas *Minhas Políticas* dos administradores.
+   Se você usar uma conta de administrador do AEM Forms nas configurações de conexão para criar o objeto `DocumentSecurityClient`, especifique o nome do conjunto de políticas ao invocar o método `registerPolicy`. Se você passar um valor `null` para o conjunto de políticas, a política será criada no conjunto de políticas *Minhas Políticas* dos administradores.
 
    Se você usar um usuário de Segurança de documentos nas configurações de conexão, poderá invocar o método `registerPolicy` sobrecarregado que aceita somente a política. Ou seja, não é necessário especificar o nome do conjunto de políticas. No entanto, a política é adicionada ao conjunto de políticas denominado *Minhas Políticas*. Se não quiser adicionar a nova política a este conjunto de políticas, especifique um nome de conjunto de políticas ao invocar o método `registerPolicy`.
 
@@ -284,9 +284,9 @@ Crie uma política usando a API de segurança de documentos (serviço da Web):
    * Defina o campo `MessageEncoding` do objeto `System.ServiceModel.BasicHttpBinding` como `WSMessageEncoding.Mtom`. Esse valor garante que a MTOM seja usada.
    * Ative a autenticação HTTP básica executando as seguintes tarefas:
 
-      * Atribua o nome de usuário dos formulários AEM ao campo `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
-      * Atribua o valor de senha correspondente ao campo `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
-      * Atribua o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Atribua o nome de usuário dos formulários AEM ao campo `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
+     * Atribua o valor de senha correspondente ao campo `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
+     * Atribua o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
 
    * Atribua o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
 
@@ -310,7 +310,7 @@ Crie uma política usando a API de segurança de documentos (serviço da Web):
    * O objeto `PolicySpec` que representa a política a ser registrada.
    * Um valor de string que representa o conjunto de políticas ao qual a política pertence. Você pode especificar um valor `null` que resulta na adição da política ao conjunto de políticas *Minhas Políticas*.
 
-   Se você usar uma conta de administrador de formulários AEM nas configurações de conexão para criar o objeto `DocumentSecurityClient`, especifique o nome do conjunto de políticas ao invocar o método `registerPolicy`.
+   Se você usar uma conta de administrador do AEM Forms nas configurações de conexão para criar o objeto `DocumentSecurityClient`, especifique o nome do conjunto de políticas ao invocar o método `registerPolicy`.
 
    Se você usar um usuário de Segurança de documentos nas configurações de conexão, poderá invocar o método `registerPolicy` sobrecarregado que aceita somente a política. Ou seja, não é necessário especificar o nome do conjunto de políticas. No entanto, a política é adicionada ao conjunto de políticas denominado *Minhas Políticas*. Se não quiser adicionar a nova política a este conjunto de políticas, especifique um nome de conjunto de políticas ao invocar o método `registerPolicy`.
 
@@ -389,8 +389,8 @@ Modifique uma política existente usando a API de segurança de documentos (Java
    * Crie um objeto `PolicyManager` invocando o método `getPolicyManager` do objeto `RightsManagementClient`.
    * Crie um objeto `Policy` que represente a política a ser atualizada chamando o método `getPolicy` do objeto `PolicyManager` e passando os seguintes valores&quot;
 
-      * Um valor de string que representa o nome do conjunto de políticas ao qual a política pertence. Você pode especificar `null` que resulta na utilização do conjunto de políticas `MyPolicies`.
-      * Um valor de string que representa o nome da política.
+     * Um valor de string que representa o nome do conjunto de políticas ao qual a política pertence. Você pode especificar `null` que resulta na utilização do conjunto de políticas `MyPolicies`.
+     * Um valor de string que representa o nome da política.
 
 1. Defina os atributos da política.
 
@@ -424,9 +424,9 @@ Modifique uma política existente usando a API de segurança de documentos (serv
    * Defina o campo `MessageEncoding` do objeto `System.ServiceModel.BasicHttpBinding` como `WSMessageEncoding.Mtom`. Esse valor garante que a MTOM seja usada.
    * Ative a autenticação HTTP básica executando as seguintes tarefas:
 
-      * Atribua o nome de usuário dos formulários AEM ao campo `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
-      * Atribua o valor de senha correspondente ao campo `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
-      * Atribua o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Atribua o nome de usuário dos formulários AEM ao campo `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
+     * Atribua o valor de senha correspondente ao campo `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
+     * Atribua o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
 
    * Atribua o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
 
@@ -498,8 +498,8 @@ Exclua uma política usando a API de segurança de documentos (Java):
    * Crie um objeto `PolicyManager` invocando o método `getPolicyManager` do objeto `RightsManagementClient`.
    * Exclua a política chamando o método `deletePolicy` do objeto `PolicyManager` e passando os seguintes valores:
 
-      * Um valor de string que especifica o nome do conjunto de políticas ao qual a política pertence. Você pode especificar `null` que resulta na utilização do conjunto de políticas `MyPolicies`.
-      * Um valor de string que especifica o nome da política a ser excluída.
+     * Um valor de string que especifica o nome do conjunto de políticas ao qual a política pertence. Você pode especificar `null` que resulta na utilização do conjunto de políticas `MyPolicies`.
+     * Um valor de string que especifica o nome da política a ser excluída.
 
 **Exemplos de código**
 
@@ -527,9 +527,9 @@ Exclua uma política usando a API de segurança de documentos (serviço da Web):
    * Defina o campo `MessageEncoding` do objeto `System.ServiceModel.BasicHttpBinding` como `WSMessageEncoding.Mtom`. Esse valor garante que a MTOM seja usada.
    * Ative a autenticação HTTP básica executando as seguintes tarefas:
 
-      * Atribua o nome de usuário dos formulários AEM ao campo `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
-      * Atribua o valor de senha correspondente ao campo `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
-      * Atribua o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Atribua o nome de usuário dos formulários AEM ao campo `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
+     * Atribua o valor de senha correspondente ao campo `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
+     * Atribua o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
 
    * Atribua o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
 
@@ -551,7 +551,7 @@ Para obter exemplos de código usando o serviço Segurança de documentos, consu
 
 Você pode aplicar uma política a um documento PDF para proteger o documento. Ao aplicar uma política a um documento PDF, você restringe o acesso ao documento. Não é possível aplicar uma política a um documento se ele já estiver protegido por uma política.
 
-Enquanto o documento estiver aberto, você também poderá restringir o acesso aos recursos do Acrobat e do Adobe Reader, incluindo a capacidade de imprimir e copiar texto, fazer alterações e adicionar assinaturas e comentários a um documento. Além disso, você pode revogar um documento PDF protegido por política quando não quiser mais que os usuários acessem o documento.
+Enquanto o documento estiver aberto, você também poderá restringir o acesso aos recursos do Acrobat e do Adobe Reader, incluindo a capacidade de imprimir e copiar texto, fazer alterações e adicionar assinaturas e comentários a um documento. Além disso, é possível revogar um documento do PDF protegido por política quando não quiser mais que os usuários acessem o documento.
 
 Você pode monitorar o uso de um documento protegido por política após distribuí-lo. Ou seja, você pode ver como o documento está sendo usado e quem está usando-o. Por exemplo, você pode descobrir quando alguém abriu o documento.
 
@@ -561,13 +561,13 @@ Você pode monitorar o uso de um documento protegido por política após distrib
 
 ### Resumo das etapas {#summary_of_steps-3}
 
-Para aplicar uma política a um documento PDF, execute as seguintes etapas:
+Para aplicar uma política a um documento do PDF, execute as seguintes etapas:
 
 1. Incluir arquivos de projeto.
 1. Crie um objeto de API do cliente de Segurança de documentos.
-1. Recupere um documento PDF ao qual uma política seja aplicada.
-1. Aplique uma política existente ao documento PDF.
-1. Salve o documento PDF protegido por política.
+1. Recupere um documento do PDF ao qual uma política é aplicada.
+1. Aplique uma política existente ao documento do PDF.
+1. Salve o documento do PDF protegido por política.
 
 **Incluir arquivos de projeto**
 
@@ -577,17 +577,17 @@ Inclua os arquivos necessários no projeto de desenvolvimento. Se você estiver 
 
 Antes de executar programaticamente uma operação do serviço de Segurança de documentos, crie um objeto de cliente desse serviço. Se você estiver usando a API Java, crie um objeto `DocumentSecurityClient`. Se você estiver usando a API do serviço Web Segurança de documentos, crie um objeto `DocumentSecurityServiceService`.
 
-**Recuperar um documento PDF**
+**Recuperar um documento do PDF**
 
-Você pode recuperar um documento PDF para aplicar uma política. Depois de aplicar uma política ao documento PDF, os usuários ficam restritos ao usar o documento. Por exemplo, se a política não permitir que o documento seja aberto offline, os usuários deverão estar online para abrir o documento.
+Você pode recuperar um documento do PDF para aplicar uma política. Depois de aplicar uma política ao documento do PDF, os usuários ficam restritos ao usar o documento. Por exemplo, se a política não permitir que o documento seja aberto offline, os usuários deverão estar online para abrir o documento.
 
-**Aplicar uma política existente ao documento PDF**
+**Aplicar uma política existente ao documento do PDF**
 
-Para aplicar uma política a um documento PDF, faça referência a uma política existente e especifique a qual política a política pertence. O usuário que está definindo as propriedades de conexão deve ter acesso à política especificada. Caso contrário, ocorrerá uma exceção.
+Para aplicar uma política a um documento do PDF, faça referência a uma política existente e especifique a qual política a política pertence. O usuário que está definindo as propriedades de conexão deve ter acesso à política especificada. Caso contrário, ocorrerá uma exceção.
 
 **Salvar o documento do PDF**
 
-Depois que o serviço de Segurança de documentos aplicar uma política a um documento PDF, você poderá salvar o documento PDF protegido por política como um arquivo PDF.
+Depois que o serviço de Segurança de documentos aplicar uma política a um documento do PDF, você poderá salvar o documento do PDF protegido por política como um arquivo do PDF.
 
 **Consulte também**
 
@@ -597,9 +597,9 @@ Depois que o serviço de Segurança de documentos aplicar uma política a um doc
 
 [Revogação do acesso a documentos](protecting-documents-policies.md#revoking-access-to-documents)
 
-### Aplicação de uma política a um documento PDF usando a API Java {#apply-a-policy-to-a-pdf-document-using-the-java-api}
+### Aplicar uma política a um documento do PDF usando a API Java {#apply-a-policy-to-a-pdf-document-using-the-java-api}
 
-Aplique uma política a um documento PDF usando a API de segurança de documentos (Java):
+Aplique uma política a um documento do PDF usando a API de segurança de documentos (Java):
 
 1. Incluir arquivos de projeto.
 
@@ -610,27 +610,27 @@ Aplique uma política a um documento PDF usando a API de segurança de documento
    * Crie um objeto `ServiceClientFactory` que contenha propriedades de conexão.
    * Crie um objeto `RightsManagementClient` usando seu construtor e transmitindo o objeto `ServiceClientFactory`.
 
-1. Recupere um documento PDF.
+1. Recupere um documento do PDF.
 
-   * Crie um objeto `java.io.FileInputStream` que represente o documento PDF usando seu construtor. Transmita um valor de string que especifique o local do documento PDF.
+   * Crie um objeto `java.io.FileInputStream` que represente o documento PDF usando seu construtor. Transmita um valor de string que especifique o local do documento do PDF.
    * Crie um objeto `com.adobe.idp.Document` usando seu construtor e transmitindo o objeto `java.io.FileInputStream`.
 
-1. Aplique uma política existente ao documento PDF.
+1. Aplique uma política existente ao documento do PDF.
 
    * Crie um objeto `DocumentManager` invocando o método `getDocumentManager` do objeto `RightsManagementClient`.
    * Aplique uma política ao documento PDF invocando o método `protectDocument` do objeto `DocumentManager` e transmitindo os seguintes valores:
 
-      * O objeto `com.adobe.idp.Document` que contém o documento PDF ao qual a política é aplicada.
-      * Um valor de cadeia de caracteres que especifica o nome do documento.
-      * Um valor de string que especifica o nome do conjunto de políticas ao qual a política pertence. Você pode especificar um valor `null` que resulte no uso do conjunto de políticas `MyPolicies`.
-      * Um valor de string que especifica o nome da política.
-      * Um valor de string que representa o nome do domínio do gerenciador de usuários do usuário que é o publicador do documento. Esse valor de parâmetro é opcional e pode ser nulo (se esse parâmetro for nulo, o próximo valor de parâmetro deverá ser nulo).
-      * Um valor de string que representa o nome canônico do usuário gerente do usuário que é o editor do documento. Este valor de parâmetro é opcional e pode ser `null` (se este parâmetro for nulo, o valor do parâmetro anterior deverá ser `null`).
-      * Um `com.adobe.livecycle.rightsmanagement.Locale` que representa a localidade usada para selecionar o modelo do MS Office. Esse valor de parâmetro é opcional e não é usado para documentos PDF. Para proteger um documento PDF, especifique `null`.
+     * O objeto `com.adobe.idp.Document` que contém o documento PDF ao qual a política é aplicada.
+     * Um valor de cadeia de caracteres que especifica o nome do documento.
+     * Um valor de string que especifica o nome do conjunto de políticas ao qual a política pertence. Você pode especificar um valor `null` que resulte no uso do conjunto de políticas `MyPolicies`.
+     * Um valor de string que especifica o nome da política.
+     * Um valor de string que representa o nome do domínio do gerenciador de usuários do usuário que é o publicador do documento. Esse valor de parâmetro é opcional e pode ser nulo (se esse parâmetro for nulo, o próximo valor de parâmetro deverá ser nulo).
+     * Um valor de string que representa o nome canônico do usuário gerente do usuário que é o editor do documento. Este valor de parâmetro é opcional e pode ser `null` (se este parâmetro for nulo, o valor do parâmetro anterior deverá ser `null`).
+     * Um `com.adobe.livecycle.rightsmanagement.Locale` que representa a localidade usada para selecionar o modelo do MS Office. Esse valor de parâmetro é opcional e não é usado para documentos do PDF. Para proteger um documento PDF, especifique `null`.
 
      O método `protectDocument` retorna um objeto `RMSecureDocumentResult` que contém o documento PDF protegido por política.
 
-1. Salve o documento PDF.
+1. Salve o documento do PDF.
 
    * Invoque o método `getProtectedDoc` do objeto `RMSecureDocumentResult` para obter o documento PDF protegido por política. Este método retorna um objeto `com.adobe.idp.Document`.
    * Crie um objeto `java.io.File` e verifique se a extensão do arquivo é PDF.
@@ -640,8 +640,8 @@ Aplique uma política a um documento PDF usando a API de segurança de documento
 
 Para obter exemplos de código usando o serviço Segurança de documentos, consulte os seguintes Quick Starts:
 
-* &quot;Início rápido (modo EJB): aplicando uma política a um documento PDF usando a API Java&quot;
-* &quot;Início rápido (modo SOAP): aplicação de uma política a um documento PDF usando a API Java&quot;
+* &quot;Início rápido (modo EJB): aplicando uma política a um documento do PDF usando a API do Java&quot;
+* &quot;Início rápido (modo SOAP): aplicar uma política a um documento PDF usando a API Java&quot;
 
 **Consulte também**
 
@@ -649,9 +649,9 @@ Para obter exemplos de código usando o serviço Segurança de documentos, consu
 
 [Definindo propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Aplicação de uma política a um documento PDF usando a API de serviço Web {#apply-a-policy-to-a-pdf-document-using-the-web-service-api}
+### Aplicação de uma política a um documento do PDF usando a API do serviço da Web {#apply-a-policy-to-a-pdf-document-using-the-web-service-api}
 
-Aplique uma política a um documento PDF usando a API de segurança de documentos (serviço da Web):
+Aplique uma política a um documento do PDF usando a API de segurança de documentos (serviço da Web):
 
 1. Incluir arquivos de projeto.
 
@@ -669,13 +669,13 @@ Aplique uma política a um documento PDF usando a API de segurança de documento
    * Defina o campo `MessageEncoding` do objeto `System.ServiceModel.BasicHttpBinding` como `WSMessageEncoding.Mtom`. Esse valor garante que a MTOM seja usada.
    * Ative a autenticação HTTP básica executando as seguintes tarefas:
 
-      * Atribua o nome de usuário dos formulários AEM ao campo `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
-      * Atribua o valor de senha correspondente ao campo `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
-      * Atribua o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Atribua o nome de usuário dos formulários AEM ao campo `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
+     * Atribua o valor de senha correspondente ao campo `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
+     * Atribua o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
 
    * Atribua o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
 
-1. Recupere um documento PDF.
+1. Recupere um documento do PDF.
 
    * Crie um objeto `BLOB` usando seu construtor. O objeto `BLOB` é usado para armazenar um documento PDF ao qual uma política é aplicada.
    * Crie um objeto `System.IO.FileStream` chamando seu construtor e transmitindo um valor de cadeia de caracteres que representa o local do arquivo do documento PDF e o modo no qual o arquivo será aberto.
@@ -683,7 +683,7 @@ Aplique uma política a um documento PDF usando a API de segurança de documento
    * Preencha a matriz de bytes com dados de fluxo invocando o método `Read` do objeto `System.IO.FileStream`. Passe a matriz de bytes, a posição inicial e o comprimento do fluxo para leitura.
    * Preencha o objeto `BLOB` atribuindo seu campo `MTOM` com o conteúdo da matriz de bytes.
 
-1. Aplique uma política existente ao documento PDF.
+1. Aplique uma política existente ao documento do PDF.
 
    Aplique uma política ao documento PDF invocando o método `protectDocument` do objeto `RightsManagementServiceClient` e transmitindo os seguintes valores:
 
@@ -700,19 +700,19 @@ Aplique uma política a um documento PDF usando a API de segurança de documento
 
    O método `protectDocument` retorna um objeto `BLOB` que contém o documento PDF protegido por política.
 
-1. Salve o documento PDF.
+1. Salve o documento do PDF.
 
    * Crie um objeto `System.IO.FileStream` chamando seu construtor e transmitindo um valor de cadeia de caracteres que representa o local do arquivo do documento PDF protegido por política.
    * Crie uma matriz de bytes que armazene o conteúdo de dados do objeto `BLOB` retornado pelo método `protectDocument`. Popular a matriz de bytes obtendo o valor do membro de dados `MTOM` do objeto `BLOB`.
    * Crie um objeto `System.IO.BinaryWriter` invocando seu construtor e transmitindo o objeto `System.IO.FileStream`.
-   * Grave o conteúdo da matriz de bytes em um arquivo PDF, chamando o método `Write` do objeto `System.IO.BinaryWriter` e transmitindo a matriz de bytes.
+   * Grave o conteúdo da matriz de bytes em um arquivo PDF chamando o método `Write` do objeto `System.IO.BinaryWriter` e transmitindo a matriz de bytes.
 
 **Exemplos de código**
 
 Para obter exemplos de código usando o serviço Segurança de documentos, consulte os seguintes Quick Starts:
 
-* &quot;Início rápido (MTOM): aplicação de uma política a um documento PDF usando a API de serviço Web&quot;
-* &quot;Início rápido (SwaRef): aplicação de uma política a um documento PDF usando a API de serviço Web &quot;
+* &quot;Início rápido (MTOM): aplicação de uma política a um documento do PDF usando a API de serviço da Web&quot;
+* &quot;Início rápido (SwaRef): aplicação de uma política a um documento do PDF usando a API de serviço Web &quot;
 
 ## Remoção de políticas de documentos do PDF {#removing-policies-from-pdf-documents}
 
@@ -724,13 +724,13 @@ Você pode remover uma política de um documento protegido por política para re
 
 ### Resumo das etapas {#summary_of_steps-4}
 
-Para remover uma política de um documento de PDF protegido por política, execute as seguintes etapas:
+Para remover uma política de um documento do PDF protegido por política, execute as seguintes etapas:
 
 1. Incluir arquivos de projeto
 1. Crie um objeto de API do cliente de Segurança de documentos.
-1. Recupere um documento PDF protegido por política.
-1. Remova a política do documento PDF.
-1. Salve o documento PDF não seguro.
+1. Recupere um documento do PDF protegido por política.
+1. Remova a política do documento do PDF.
+1. Salve o documento não seguro do PDF.
 
 **Incluir arquivos de projeto**
 
@@ -740,17 +740,17 @@ Inclua os arquivos necessários no projeto de desenvolvimento. Se você estiver 
 
 Antes de executar programaticamente uma operação do serviço de Segurança de documentos, crie um objeto de cliente desse serviço.
 
-**Recuperar um documento PDF protegido por política**
+**Recuperar um documento do PDF protegido por política**
 
-Você pode recuperar um documento de PDF protegido por política para remover uma política. Se você tentar remover uma política de um documento PDF que não está protegido por uma política, causará uma exceção.
+Você pode recuperar um documento do PDF protegido por política para remover uma política. Se você tentar remover uma política de um documento do PDF que não está protegido por uma política, causará uma exceção.
 
-**Remover a política do documento PDF**
+**Remover a política do documento do PDF**
 
-Você pode remover uma política de um documento PDF protegido por política desde que um administrador seja especificado nas configurações de conexão. Caso contrário, a política usada para proteger um documento deve conter a permissão `SWITCH_POLICY` para remover uma política de um documento PDF. Além disso, o usuário especificado nas configurações de conexão do AEM Forms também deve ter essa permissão. Caso contrário, uma exceção será lançada.
+Você pode remover uma política de um documento do PDF protegido por política desde que um administrador seja especificado nas configurações de conexão. Caso contrário, a política usada para proteger um documento deve conter a permissão `SWITCH_POLICY` para remover uma política de um documento do PDF. Além disso, o usuário especificado nas configurações de conexão do AEM Forms também deve ter essa permissão. Caso contrário, uma exceção será lançada.
 
-**Salvar o documento de PDF não seguro**
+**Salvar o documento não seguro do PDF**
 
-Depois que o serviço de Segurança de documentos remover uma política de um documento PDF, você poderá salvar o documento PDF não seguro como um arquivo PDF.
+Depois que o serviço de Segurança de documentos remover uma política de um documento do PDF, você poderá salvar o documento não seguro do PDF como um arquivo do PDF.
 
 **Consulte também**
 
@@ -760,9 +760,9 @@ Depois que o serviço de Segurança de documentos remover uma política de um do
 
 [Aplicação de políticas a documentos do PDF](protecting-documents-policies.md#applying-policies-to-pdf-documents)
 
-### Remover uma política de um documento PDF usando a API Java {#remove-a-policy-from-a-pdf-document-using-the-java-api}
+### Remover uma política de um documento do PDF usando a API Java {#remove-a-policy-from-a-pdf-document-using-the-java-api}
 
-Remova uma política de um documento PDF protegido por política usando a API de segurança de documentos (Java):
+Remova uma política de um documento do PDF protegido por política usando a API de segurança de documentos (Java):
 
 1. Incluir arquivos de projeto.
 
@@ -773,17 +773,17 @@ Remova uma política de um documento PDF protegido por política usando a API de
    * Crie um objeto `ServiceClientFactory` que contenha propriedades de conexão.
    * Crie um objeto `DocumentSecurityClient` usando seu construtor e transmitindo o objeto `ServiceClientFactory`.
 
-1. Recupere um documento PDF protegido por política.
+1. Recupere um documento do PDF protegido por política.
 
-   * Crie um objeto `java.io.FileInputStream` que represente o documento de PDF protegido por política usando seu construtor e transmitindo um valor de cadeia de caracteres que especifique o local do documento de PDF.
+   * Crie um objeto `java.io.FileInputStream` que represente o documento PDF protegido por política usando seu construtor e transmitindo um valor de cadeia de caracteres que especifique o local do documento PDF.
    * Crie um objeto `com.adobe.idp.Document` usando seu construtor e transmitindo o objeto `java.io.FileInputStream`.
 
-1. Remova a política do documento PDF.
+1. Remova a política do documento do PDF.
 
    * Crie um objeto `DocumentManager` invocando o método `getDocumentManager` do objeto `DocumentSecurityClient`.
-   * Remova uma política do documento PDF invocando o método `removeSecurity` do objeto `DocumentManager` e transmitindo o objeto `com.adobe.idp.Document` que contém o documento PDF protegido por política. Este método retorna um objeto `com.adobe.idp.Document` que contém um documento PDF não seguro.
+   * Remova uma política do documento PDF chamando o método `removeSecurity` do objeto `DocumentManager` e transmitindo o objeto `com.adobe.idp.Document` que contém o documento PDF protegido por política. Este método retorna um objeto `com.adobe.idp.Document` que contém um documento PDF não seguro.
 
-1. Salve o documento PDF não seguro.
+1. Salve o documento não seguro do PDF.
 
    * Crie um objeto `java.io.File` e verifique se a extensão do arquivo é PDF.
    * Invoque o método `copyToFile` do objeto `Document` para copiar o conteúdo do objeto `Document` para o arquivo (certifique-se de usar o objeto `Document` retornado pelo método `removeSecurity`).
@@ -796,7 +796,7 @@ Para obter exemplos de código usando o serviço Segurança de documentos, consu
 
 ### Remover uma política usando a API do serviço Web {#remove-a-policy-using-the-web-service-api}
 
-Remova uma política de um documento PDF protegido por política usando a API de segurança de documentos (serviço da Web):
+Remova uma política de um documento do PDF protegido por política usando a API de segurança de documentos (serviço da Web):
 
 1. Incluir arquivos de projeto.
 
@@ -814,13 +814,13 @@ Remova uma política de um documento PDF protegido por política usando a API de
    * Defina o campo `MessageEncoding` do objeto `System.ServiceModel.BasicHttpBinding` como `WSMessageEncoding.Mtom`. Esse valor garante que a MTOM seja usada.
    * Ative a autenticação HTTP básica executando as seguintes tarefas:
 
-      * Atribua o nome de usuário dos formulários AEM ao campo `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
-      * Atribua o valor de senha correspondente ao campo `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
-      * Atribua o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Atribua o nome de usuário dos formulários AEM ao campo `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
+     * Atribua o valor de senha correspondente ao campo `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
+     * Atribua o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
 
    * Atribua o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
 
-1. Recupere um documento PDF protegido por política.
+1. Recupere um documento do PDF protegido por política.
 
    * Crie um objeto `BLOB` usando seu construtor. O objeto `BLOB` é usado para armazenar o documento PDF protegido por política do qual a política é removida.
    * Crie um objeto `System.IO.FileStream` chamando seu construtor e transmitindo um valor de cadeia de caracteres que representa o local do arquivo do documento PDF e o modo no qual o arquivo será aberto.
@@ -828,11 +828,11 @@ Remova uma política de um documento PDF protegido por política usando a API de
    * Preencha a matriz de bytes com dados de fluxo invocando o método `Read` do objeto `System.IO.FileStream` e transmitindo a matriz de bytes, a posição inicial e o comprimento do fluxo para leitura.
    * Preencha o objeto `BLOB` atribuindo seu campo `MTOM` com o conteúdo da matriz de bytes.
 
-1. Remova a política do documento PDF.
+1. Remova a política do documento do PDF.
 
-   Remova a política do documento PDF invocando o método `removePolicySecurity` do objeto `DocumentSecurityServiceClient` e transmitindo o objeto `BLOB` que contém o documento PDF protegido por política. Este método retorna um objeto `BLOB` que contém um documento PDF não seguro.
+   Remova a política do documento PDF chamando o método `removePolicySecurity` do objeto `DocumentSecurityServiceClient` e transmitindo o objeto `BLOB` que contém o documento PDF protegido por política. Este método retorna um objeto `BLOB` que contém um documento PDF não seguro.
 
-1. Salve o documento PDF não seguro.
+1. Salve o documento não seguro do PDF.
 
    * Crie um objeto `System.IO.FileStream` chamando seu construtor e transmitindo um valor de cadeia de caracteres que representa o local do arquivo do documento PDF não seguro.
    * Crie uma matriz de bytes que armazene o conteúdo de dados do objeto `BLOB` retornado pelo método `removePolicySecurity`. Popular a matriz de bytes obtendo o valor do campo `MTOM` do objeto `BLOB`.
@@ -842,8 +842,8 @@ Remova uma política de um documento PDF protegido por política usando a API de
 
 Para obter exemplos de código usando o serviço Segurança de documentos, consulte os seguintes Quick Starts:
 
-* &quot;Início rápido (MTOM): remoção de uma política de um documento PDF usando a API de serviço Web &quot;
-* &quot;Início rápido (SwaRef): remoção de uma política de um documento PDF usando a API de serviço Web&quot;
+* &quot;Início rápido (MTOM): remoção de uma política de um documento do PDF usando a API de serviço da Web &quot;
+* &quot;Início rápido (SwaRef): remoção de uma política de um documento do PDF usando a API de serviço Web&quot;
 
 **Consulte também**
 
@@ -853,7 +853,7 @@ Para obter exemplos de código usando o serviço Segurança de documentos, consu
 
 ## Revogação do acesso a documentos {#revoking-access-to-documents}
 
-É possível revogar o acesso a um documento de PDF protegido por política, resultando na inacessibilidade de todas as cópias do documento para os usuários. Quando um usuário tenta abrir um documento de PDF revogado, ele é redirecionado para um URL especificado, no qual um documento revisado pode ser visualizado. A URL para onde o usuário é redirecionado deve ser especificada de forma programática. Quando você revoga o acesso a um documento, a alteração entra em vigor na próxima vez que o usuário sincronizar com o serviço de Segurança de documentos, abrindo o documento protegido por política online.
+É possível revogar o acesso a um documento do PDF protegido por política, resultando na inacessibilidade de todas as cópias do documento para os usuários. Quando um usuário tenta abrir um documento revogado do PDF, ele é redirecionado para um URL especificado, no qual um documento revisado pode ser visualizado. A URL para onde o usuário é redirecionado deve ser especificada de forma programática. Quando você revoga o acesso a um documento, a alteração entra em vigor na próxima vez que o usuário sincronizar com o serviço de Segurança de documentos, abrindo o documento protegido por política online.
 
 A capacidade de revogar o acesso a um documento oferece segurança adicional. Por exemplo, suponha que uma versão mais recente de um documento esteja disponível e você não deseja mais que ninguém visualize a versão desatualizada. Nessa situação, o acesso ao documento mais antigo pode ser revogado, e ninguém poderá ver o documento, a menos que o acesso seja restabelecido.
 
@@ -867,7 +867,7 @@ Para revogar um documento protegido por política, execute as seguintes etapas:
 
 1. Incluir arquivos de projeto.
 1. Crie um objeto de API do cliente de Segurança de documentos.
-1. Recupere um documento PDF protegido por política.
+1. Recupere um documento do PDF protegido por política.
 1. Revogue o documento protegido por política.
 
 **Incluir arquivos de projeto**
@@ -878,11 +878,11 @@ Inclua os arquivos necessários no projeto de desenvolvimento. Se você estiver 
 
 Antes de executar programaticamente uma operação de serviço de Segurança de documentos, você deve criar um objeto cliente de serviço de Segurança de documentos.
 
-**Recuperar um documento PDF protegido por política**
+**Recuperar um documento do PDF protegido por política**
 
-Recupere um documento PDF protegido por política para revogá-lo. Não é possível revogar um documento que já tenha sido revogado ou que não seja um documento protegido por política.
+Recupere um documento do PDF protegido por política para revogá-lo. Não é possível revogar um documento que já tenha sido revogado ou que não seja um documento protegido por política.
 
-Se você souber o valor do identificador de licença do documento protegido por política, não será necessário recuperar o documento PDF protegido por política. No entanto, na maioria dos casos, você deve recuperar o documento PDF para obter o valor do identificador de licença.
+Se você souber o valor do identificador de licença do documento protegido por política, não será necessário recuperar o documento do PDF protegido por política. No entanto, na maioria dos casos, você deve recuperar o documento do PDF para obter o valor do identificador de licença.
 
 **Revogar o documento protegido por política**
 
@@ -904,7 +904,7 @@ Para revogar um documento protegido por política, especifique o identificador d
 
 ### Revogar acesso a documentos usando a API Java {#revoke-access-to-documents-using-the-java-api}
 
-Revogue o acesso a um documento de PDF protegido por política usando a API de segurança de documentos (Java):
+Revogue o acesso a um documento do PDF protegido por política usando a API de segurança de documentos (Java):
 
 1. Incluir arquivos de projeto
 
@@ -915,9 +915,9 @@ Revogue o acesso a um documento de PDF protegido por política usando a API de s
    * Crie um objeto `ServiceClientFactory` que contenha propriedades de conexão.
    * Crie um objeto `DocumentSecurityClient` usando seu construtor e transmitindo o objeto `ServiceClientFactory`.
 
-1. Recuperar um documento PDF protegido por política
+1. Recuperar um documento do PDF protegido por política
 
-   * Crie um objeto `java.io.FileInputStream` que represente o documento de PDF protegido por política usando seu construtor e transmitindo um valor de cadeia de caracteres que especifique o local do documento de PDF.
+   * Crie um objeto `java.io.FileInputStream` que represente o documento PDF protegido por política usando seu construtor e transmitindo um valor de cadeia de caracteres que especifique o local do documento PDF.
    * Crie um objeto `com.adobe.idp.Document` usando seu construtor e transmitindo o objeto `java.io.FileInputStream`.
 
 1. Revogar o documento protegido por política
@@ -927,9 +927,9 @@ Revogue o acesso a um documento de PDF protegido por política usando a API de s
    * Crie um objeto `LicenseManager` invocando o método `getLicenseManager` do objeto `DocumentSecurityClient`.
    * Revogue o documento protegido por política chamando o método `revokeLicense` do objeto `LicenseManager` e passando os seguintes valores:
 
-      * Um valor de cadeia de caracteres que especifica o valor do identificador de licença do documento protegido por política (especifique o valor de retorno do método `getLicenseId` do objeto `DocumentManager`).
-      * Um membro de dados estático da interface `License` que especifica o motivo da revogação do documento. Por exemplo, você pode especificar `License.DOCUMENT_REVISED`.
-      * Um valor `java.net.URL` que especifica o local onde um documento revisado está localizado. Se não quiser redirecionar um usuário para outra URL, você poderá passar `null`.
+     * Um valor de cadeia de caracteres que especifica o valor do identificador de licença do documento protegido por política (especifique o valor de retorno do método `getLicenseId` do objeto `DocumentManager`).
+     * Um membro de dados estático da interface `License` que especifica o motivo da revogação do documento. Por exemplo, você pode especificar `License.DOCUMENT_REVISED`.
+     * Um valor `java.net.URL` que especifica o local onde um documento revisado está localizado. Se não quiser redirecionar um usuário para outra URL, você poderá passar `null`.
 
 **Exemplos de código**
 
@@ -939,7 +939,7 @@ Para obter exemplos de código usando o serviço Segurança de documentos, consu
 
 ### Revogar acesso a documentos usando a API do serviço Web {#revoke-access-to-documents-using-the-web-service-api}
 
-Revogue o acesso a um documento de PDF protegido por política usando a API de segurança de documentos (serviço da Web):
+Revogue o acesso a um documento do PDF protegido por política usando a API de segurança de documentos (serviço da Web):
 
 1. Incluir arquivos de projeto
 
@@ -957,16 +957,16 @@ Revogue o acesso a um documento de PDF protegido por política usando a API de s
    * Defina o campo `MessageEncoding` do objeto `System.ServiceModel.BasicHttpBinding` como `WSMessageEncoding.Mtom`. Esse valor garante que a MTOM seja usada.
    * Ative a autenticação HTTP básica executando as seguintes tarefas:
 
-      * Atribua o nome de usuário dos formulários AEM ao campo `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
-      * Atribua o valor de senha correspondente ao campo `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
-      * Atribua o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Atribua o nome de usuário dos formulários AEM ao campo `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
+     * Atribua o valor de senha correspondente ao campo `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
+     * Atribua o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
 
    * Atribua o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
 
-1. Recuperar um documento PDF protegido por política
+1. Recuperar um documento do PDF protegido por política
 
    * Crie um objeto `BLOB` usando seu construtor. O objeto `BLOB` é usado para armazenar um documento PDF protegido por política que é revogado.
-   * Crie um objeto `System.IO.FileStream` chamando seu construtor e transmitindo um valor de cadeia de caracteres que representa o local do arquivo do documento de PDF protegido por política a ser revogado e o modo no qual o arquivo será aberto.
+   * Crie um objeto `System.IO.FileStream` chamando seu construtor e transmitindo um valor de cadeia de caracteres que representa o local do arquivo do documento PDF protegido por política a ser revogado e o modo no qual o arquivo será aberto.
    * Crie uma matriz de bytes que armazene o conteúdo do objeto `System.IO.FileStream`. Você pode determinar o tamanho da matriz de bytes obtendo a propriedade `Length` do objeto `System.IO.FileStream`.
    * Preencha a matriz de bytes com dados de fluxo invocando o método `Read` do objeto `System.IO.FileStream` e transmitindo a matriz de bytes, a posição inicial e o comprimento do fluxo para leitura.
    * Preencha o objeto `BLOB` atribuindo seu campo `MTOM` com o conteúdo da matriz de bytes.
@@ -976,9 +976,9 @@ Revogue o acesso a um documento de PDF protegido por política usando a API de s
    * Recupere o valor do identificador de licença do documento protegido por política invocando o método `getLicenseID` do objeto `DocumentSecurityServiceClient` e transmitindo o objeto `BLOB` que representa o documento protegido por política. Este método retorna um valor de string que representa o identificador da licença.
    * Revogue o documento protegido por política chamando o método `revokeLicense` do objeto `DocumentSecurityServiceClient` e passando os seguintes valores:
 
-      * Um valor de cadeia de caracteres que especifica o valor do identificador de licença do documento protegido por política (especifique o valor de retorno do método `getLicenseId` do objeto `DocumentSecurityServiceService`).
-      * Um membro de dados estático do enum `Reason` que especifica o motivo para revogar o documento. Por exemplo, você pode especificar `Reason.DOCUMENT_REVISED`.
-      * Um valor `string` que especifica o local da URL onde um documento revisado está localizado. Se não quiser redirecionar um usuário para outra URL, você poderá passar `null`.
+     * Um valor de cadeia de caracteres que especifica o valor do identificador de licença do documento protegido por política (especifique o valor de retorno do método `getLicenseId` do objeto `DocumentSecurityServiceService`).
+     * Um membro de dados estático do enum `Reason` que especifica o motivo para revogar o documento. Por exemplo, você pode especificar `Reason.DOCUMENT_REVISED`.
+     * Um valor `string` que especifica o local da URL onde um documento revisado está localizado. Se não quiser redirecionar um usuário para outra URL, você poderá passar `null`.
 
 **Exemplos de código**
 
@@ -997,7 +997,7 @@ Para obter exemplos de código usando o serviço Segurança de documentos, consu
 
 ## Restauração do Acesso a Documentos Revogados {#reinstating-access-to-revoked-documents}
 
-Você pode restabelecer o acesso a um documento de PDF revogado, fazendo com que todas as cópias do documento revogado fiquem acessíveis aos usuários. Quando um usuário abre um documento restabelecido que foi revogado, ele pode exibir o documento.
+Você pode restabelecer o acesso a um documento revogado do PDF, fazendo com que todas as cópias do documento revogado fiquem acessíveis aos usuários. Quando um usuário abre um documento restabelecido que foi revogado, ele pode exibir o documento.
 
 >[!NOTE]
 >
@@ -1005,12 +1005,12 @@ Você pode restabelecer o acesso a um documento de PDF revogado, fazendo com que
 
 ### Resumo das etapas {#summary_of_steps-6}
 
-Para restabelecer o acesso a um documento de PDF revogado, execute as seguintes etapas:
+Para restabelecer o acesso a um documento revogado do PDF, execute as seguintes etapas:
 
 1. Incluir arquivos de projeto.
 1. Crie um objeto de API do cliente de Segurança de documentos.
-1. Recupere o identificador de licença do documento de PDF revogado.
-1. Restaure o acesso ao documento de PDF revogado.
+1. Recupere o identificador de licença do documento do PDF revogado.
+1. Restaure o acesso ao documento do PDF revogado.
 
 **Incluir arquivos de projeto**
 
@@ -1020,13 +1020,13 @@ Inclua os arquivos necessários no projeto de desenvolvimento. Se você estiver 
 
 Antes de executar programaticamente uma operação de serviço de Segurança de documentos, você deve criar um objeto cliente de serviço de Segurança de documentos. Se você estiver usando a API Java, crie um objeto `DocumentSecurityClient`. Se você estiver usando a API do serviço Web Segurança de documentos, crie um objeto `DocumentSecurityServiceService`.
 
-**Recuperar o identificador de licença do documento PDF revogado**
+**Recuperar o identificador de licença do documento do PDF revogado**
 
-Recupere o identificador de licença do documento de PDF revogado para restaurar um documento de PDF revogado. Após obter o valor do identificador de licença, é possível restaurar um documento revogado. Se você tentar restabelecer um documento que não foi revogado, causará uma exceção.
+Recupere o identificador de licença do documento revogado do PDF para restaurar um documento revogado do PDF. Após obter o valor do identificador de licença, é possível restaurar um documento revogado. Se você tentar restabelecer um documento que não foi revogado, causará uma exceção.
 
-**Restabelecer acesso ao documento de PDF revogado**
+**Restabelecer acesso ao documento do PDF revogado**
 
-Para restabelecer o acesso a um documento de PDF revogado, você deve especificar o identificador de licença do documento revogado. Se você tentar restabelecer o acesso a um documento PDF que não foi revogado, você causará uma exceção.
+Para restabelecer o acesso a um documento revogado do PDF, você deve especificar o identificador de licença do documento revogado. Se você tentar restabelecer o acesso a um documento do PDF que não foi revogado, você causará uma exceção.
 
 **Consulte também**
 
@@ -1051,17 +1051,17 @@ Restaure o acesso a um documento revogado usando a API de segurança de document
    * Crie um objeto `ServiceClientFactory` que contenha propriedades de conexão.
    * Crie um objeto `DocumentSecurityClient` usando seu construtor e transmitindo o objeto `ServiceClientFactory`.
 
-1. Recupere o identificador de licença do documento de PDF revogado.
+1. Recupere o identificador de licença do documento do PDF revogado.
 
-   * Crie um objeto `java.io.FileInputStream` que represente o documento de PDF revogado usando seu construtor e transmitindo um valor de cadeia de caracteres que especifique o local do documento de PDF.
+   * Crie um objeto `java.io.FileInputStream` que represente o documento do PDF revogado usando seu construtor e transmitindo um valor de cadeia de caracteres que especifique o local do documento do PDF.
    * Crie um objeto `com.adobe.idp.Document` usando seu construtor e transmitindo o objeto `java.io.FileInputStream`.
    * Crie um objeto `DocumentManager` invocando o método `getDocumentManager` do objeto `DocumentSecurityClient`.
    * Recupere o valor do identificador de licença do documento revogado invocando o método `getLicenseId` do objeto `DocumentManager` e transmitindo o objeto `com.adobe.idp.Document` que representa o documento revogado. Este método retorna um valor de string que representa o identificador da licença.
 
-1. Restaure o acesso ao documento de PDF revogado.
+1. Restaure o acesso ao documento do PDF revogado.
 
    * Crie um objeto `LicenseManager` invocando o método `getLicenseManager` do objeto `DocumentSecurityClient`.
-   * Restaure o acesso ao documento de PDF revogado invocando o método `unrevokeLicense` do objeto `LicenseManager` e transmitindo o valor do identificador de licença do documento revogado.
+   * Restaure o acesso ao documento do PDF revogado invocando o método `unrevokeLicense` do objeto `LicenseManager` e transmitindo o valor do identificador de licença do documento revogado.
 
 **Exemplos de código**
 
@@ -1089,24 +1089,24 @@ Restaure o acesso a um documento revogado usando a API de segurança de document
    * Defina o campo `MessageEncoding` do objeto `System.ServiceModel.BasicHttpBinding` como `WSMessageEncoding.Mtom`. Esse valor garante que a MTOM seja usada.
    * Ative a autenticação HTTP básica executando as seguintes tarefas:
 
-      * Atribua o nome de usuário dos formulários AEM ao campo `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
-      * Atribua o valor de senha correspondente ao campo `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
-      * Atribua o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Atribua o nome de usuário dos formulários AEM ao campo `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
+     * Atribua o valor de senha correspondente ao campo `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
+     * Atribua o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
 
    * Atribua o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
 
-1. Recupere o identificador de licença do documento de PDF revogado.
+1. Recupere o identificador de licença do documento do PDF revogado.
 
-   * Crie um objeto `BLOB` usando seu construtor. O objeto `BLOB` é usado para armazenar um documento de PDF revogado ao qual o acesso é restabelecido.
-   * Crie um objeto `System.IO.FileStream` chamando seu construtor e transmitindo um valor de cadeia de caracteres que representa o local do arquivo do documento de PDF revogado e o modo no qual abrir o arquivo.
+   * Crie um objeto `BLOB` usando seu construtor. O objeto `BLOB` é usado para armazenar um documento revogado do PDF ao qual o acesso é restabelecido.
+   * Crie um objeto `System.IO.FileStream` chamando seu construtor e transmitindo um valor de cadeia de caracteres que representa o local do arquivo do documento PDF revogado e o modo no qual o arquivo será aberto.
    * Crie uma matriz de bytes que armazene o conteúdo do objeto `System.IO.FileStream`. Você pode determinar o tamanho da matriz de bytes obtendo a propriedade `Length` do objeto `System.IO.FileStream`.
    * Preencha a matriz de bytes com dados de fluxo invocando o método `Read` do objeto `System.IO.FileStream` e transmitindo a matriz de bytes, a posição inicial e o comprimento do fluxo para leitura.
    * Preencha o objeto `BLOB` atribuindo seu campo `MTOM` com o conteúdo da matriz de bytes.
 
-1. Restaure o acesso ao documento de PDF revogado.
+1. Restaure o acesso ao documento do PDF revogado.
 
    * Recupere o valor do identificador de licença do documento revogado invocando o método `getLicenseID` do objeto `DocumentSecurityServiceClient` e transmitindo o objeto `BLOB` que representa o documento revogado. Este método retorna um valor de string que representa o identificador da licença.
-   * Restaure o acesso ao documento de PDF revogado invocando o método `unrevokeLicense` do objeto `DocumentSecurityServiceClient` e transmitindo um valor de cadeia de caracteres que especifica o valor do identificador de licença do documento de PDF revogado (transmita o valor de retorno do método `getLicenseId` do objeto `DocumentSecurityServiceClient`).
+   * Restaure o acesso ao documento revogado do PDF invocando o método `unrevokeLicense` do objeto `DocumentSecurityServiceClient` e transmitindo um valor de cadeia de caracteres que especifica o valor do identificador de licença do documento revogado do PDF (transmita o valor de retorno do método `getLicenseId` do objeto `DocumentSecurityServiceClient`).
 
 **Exemplos de código**
 
@@ -1121,11 +1121,11 @@ Para obter exemplos de código usando o serviço Segurança de documentos, consu
 
 [Chamar o AEM Forms usando SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
-## Inspeção de Documentos PDF Protegidos por Política {#inspecting-policy-protected-pdf-documents}
+## Inspeção de documentos protegidos do PDF por política {#inspecting-policy-protected-pdf-documents}
 
-Você pode usar a API do serviço de segurança de documentos (Java e serviço da Web) para inspecionar documentos de PDF protegidos por política. A inspeção de documentos PDF protegidos por política retorna informações sobre o documento PDF protegido por política. Você pode, por exemplo, determinar a política usada para proteger o documento e a data em que o documento foi protegido.
+Você pode usar a API do serviço de segurança de documentos (Java e serviço da Web) para inspecionar documentos do PDF protegidos por política. A inspeção de documentos do PDF protegidos por política retorna informações sobre o documento do PDF protegido por política. Você pode, por exemplo, determinar a política usada para proteger o documento e a data em que o documento foi protegido.
 
-Não é possível executar essa tarefa se a sua versão do LiveCycle for 8.x ou anterior. O suporte para inspecionar documentos protegidos por política foi adicionado no AEM Forms. Se você tentar inspecionar um documento protegido por política usando o LiveCycle 8.x (ou anterior), ocorrerá uma exceção.
+Não é possível executar essa tarefa se a sua versão do LiveCycle for 8.x ou uma versão anterior. O suporte para inspecionar documentos protegidos por política foi adicionado no AEM Forms. Se você tentar inspecionar um documento protegido por política usando o LiveCycle 8.x (ou anterior), uma exceção será lançada.
 
 >[!NOTE]
 >
@@ -1133,7 +1133,7 @@ Não é possível executar essa tarefa se a sua versão do LiveCycle for 8.x ou 
 
 ### Resumo das etapas {#summary_of_steps-7}
 
-Para inspecionar um documento de PDF protegido por política, execute as seguintes etapas:
+Para inspecionar um documento do PDF protegido por política, execute as seguintes etapas:
 
 1. Incluir arquivos de projeto.
 1. Crie um objeto de API do cliente de Segurança de documentos.
@@ -1152,13 +1152,13 @@ Antes de executar programaticamente uma operação do serviço de Segurança de 
 
 Para inspecionar um documento protegido por política, recupere-o. Se você tentar inspecionar um documento que não é seguro com uma política ou que foi revogado, uma exceção será lançada.
 
-**Inspect o documento**
+**Inspecionar o documento**
 
 Após recuperar um documento protegido por política, você pode inspecioná-lo.
 
 **Obter informações sobre o documento protegido por política**
 
-Depois de inspecionar um documento de PDF protegido por política, você pode obter informações sobre ele. Por exemplo, você pode determinar a política usada para proteger o documento.
+Depois de inspecionar um documento do PDF protegido por política, você pode obter informações sobre ele. Por exemplo, você pode determinar a política usada para proteger o documento.
 
 Se você proteger um documento com uma política que pertence a Minhas Políticas e chamar `RMInspectResult.getPolicysetName` ou `RMInspectResult.getPolicysetId`, um valor nulo será retornado.
 
@@ -1170,9 +1170,9 @@ Se o documento estiver protegido usando uma política contida em um conjunto de 
 
 [Definindo propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Documentos do Inspect Policy Protected PDF usando a API Java {#inspect-policy-protected-pdf-documents-using-the-java-api}
+### Inspecionar documentos do PDF protegidos pela política usando a API Java {#inspect-policy-protected-pdf-documents-using-the-java-api}
 
-O Inspect é um documento PDF protegido por política usando a API do serviço de segurança de documentos (Java):
+Inspecione um documento do PDF protegido por política usando a API do serviço de segurança de documentos (Java):
 
 1. Incluir arquivos de projeto.
 
@@ -1185,13 +1185,13 @@ O Inspect é um documento PDF protegido por política usando a API do serviço d
 
 1. Recupere um documento protegido por política para inspecionar.
 
-   * Crie um objeto `java.io.FileInputStream` que represente o documento PDF protegido por política usando seu construtor. Transmita um valor de string que especifique o local do documento PDF.
+   * Crie um objeto `java.io.FileInputStream` que represente o documento PDF protegido por política usando seu construtor. Transmita um valor de string que especifique o local do documento do PDF.
    * Crie um objeto `com.adobe.idp.Document` usando seu construtor e transmitindo o objeto `java.io.FileInputStream`.
 
-1. Inspect o documento.
+1. Verifique o documento.
 
    * Crie um objeto `DocumentManager` invocando o método `getDocumentManager` do objeto `RightsManagementClient`.
-   * Inspect o documento protegido por política invocando o método `inspectDocument` do objeto `LicenseManager`. Transmita o objeto `com.adobe.idp.Document` que contém o documento PDF protegido por política. Este método retorna um objeto `RMInspectResult` que contém informações sobre o documento protegido por política.
+   * Inspecione o documento protegido por política invocando o método `inspectDocument` do objeto `LicenseManager`. Transmita o objeto `com.adobe.idp.Document` que contém o documento PDF protegido por política. Este método retorna um objeto `RMInspectResult` que contém informações sobre o documento protegido por política.
 
 1. Obter informações sobre o documento protegido por política.
 
@@ -1203,9 +1203,9 @@ Para obter exemplos de código usando o serviço Segurança de documentos, consu
 
 * &quot;Início rápido (modo SOAP): inspeção de documentos PDF protegidos por política usando a API Java&quot;
 
-### Documentos do Inspect Policy Protected PDF usando a API de serviço Web {#inspect-policy-protected-pdf-documents-using-the-web-service-api}
+### Inspecionar documentos do PDF protegidos por política usando a API de serviço da Web {#inspect-policy-protected-pdf-documents-using-the-web-service-api}
 
-O Inspect é um documento PDF protegido por política usando a API do serviço de segurança de documentos (serviço da Web):
+Inspecione um documento do PDF protegido por política usando a API do Serviço de segurança de documentos (serviço da Web):
 
 1. Incluir arquivos de projeto.
 
@@ -1223,23 +1223,23 @@ O Inspect é um documento PDF protegido por política usando a API do serviço d
    * Defina o campo `MessageEncoding` do objeto `System.ServiceModel.BasicHttpBinding` como `WSMessageEncoding.Mtom`. Esse valor garante que a MTOM seja usada.
    * Ative a autenticação HTTP básica executando as seguintes tarefas:
 
-      * Atribua o nome de usuário dos formulários AEM ao campo `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
-      * Atribua o valor de senha correspondente ao campo `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
-      * Atribua o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Atribua o nome de usuário dos formulários AEM ao campo `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
+     * Atribua o valor de senha correspondente ao campo `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
+     * Atribua o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
 
    * Atribua o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Recupere um documento protegido por política para inspecionar.
 
    * Crie um objeto `BLOB` usando seu construtor. O objeto `BLOB` é usado para armazenar um documento PDF para inspeção.
-   * Crie um objeto `System.IO.FileStream` invocando seu construtor. Transmita um valor de string que represente o local do arquivo do documento PDF e o modo em que o arquivo será aberto.
+   * Crie um objeto `System.IO.FileStream` invocando seu construtor. Transmita um valor de string que represente o local do arquivo do documento do PDF e o modo no qual o arquivo será aberto.
    * Crie uma matriz de bytes que armazene o conteúdo do objeto `System.IO.FileStream`. Você pode determinar o tamanho da matriz de bytes obtendo a propriedade `Length` do objeto `System.IO.FileStream`.
    * Preencha a matriz de bytes com dados de fluxo invocando o método `Read` do objeto `System.IO.FileStream`. Passe a matriz de bytes, a posição inicial e o comprimento do fluxo para leitura.
    * Preencha o objeto `BLOB` atribuindo seu campo `MTOM` com o conteúdo da matriz de bytes.
 
-1. Inspect o documento.
+1. Verifique o documento.
 
-   Inspect o documento protegido por política invocando o método `inspectDocument` do objeto `RightsManagementServiceClient`. Transmita o objeto `BLOB` que contém o documento PDF protegido por política. Este método retorna um objeto `RMInspectResult` que contém informações sobre o documento protegido por política.
+   Inspecione o documento protegido por política invocando o método `inspectDocument` do objeto `RightsManagementServiceClient`. Transmita o objeto `BLOB` que contém o documento PDF protegido por política. Este método retorna um objeto `RMInspectResult` que contém informações sobre o documento protegido por política.
 
 1. Obter informações sobre o documento protegido por política.
 
@@ -1249,8 +1249,8 @@ O Inspect é um documento PDF protegido por política usando a API do serviço d
 
 Para obter exemplos de código usando o serviço Segurança de documentos, consulte os seguintes Quick Starts:
 
-* &quot;Início rápido (MTOM): inspecionando documentos de PDF protegidos por política usando a API de serviço Web&quot;
-* &quot;Início rápido (SwaRef): inspecionando documentos de PDF protegidos por política usando a API de serviço Web&quot;
+* &quot;Início rápido (MTOM): a inspeção de documentos protegidos pela política do PDF usando a API de serviço da Web&quot;
+* &quot;Início rápido (SwaRef): inspeção de documentos protegidos pela política do PDF usando a API de serviço da Web&quot;
 
 **Consulte também**
 
@@ -1443,9 +1443,9 @@ Crie uma marca d&#39;água usando a API de segurança de documentos (serviço da
    * Defina o campo `MessageEncoding` do objeto `System.ServiceModel.BasicHttpBinding` como `WSMessageEncoding.Mtom`. Esse valor garante que a MTOM seja usada.
    * Ative a autenticação HTTP básica executando as seguintes tarefas:
 
-      * Atribua o nome de usuário dos formulários AEM ao campo `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
-      * Atribua o valor de senha correspondente ao campo `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
-      * Atribua o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Atribua o nome de usuário dos formulários AEM ao campo `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
+     * Atribua o valor de senha correspondente ao campo `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
+     * Atribua o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
 
    * Atribua o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
 
@@ -1481,7 +1481,7 @@ Para obter exemplos de código usando o serviço Segurança de documentos, consu
 
 Você pode modificar uma marca d&#39;água existente usando a API Java de Segurança de documentos ou a API de serviço da Web. Para alterar uma marca d&#39;água existente, você a recupera, modifica seus atributos e a atualiza no servidor. Por exemplo, suponha que você recupere uma marca d&#39;água e modifique seu atributo de opacidade. Antes da alteração entrar em vigor, você deve atualizar a marca d&#39;água.
 
-Quando você modifica uma marca d&#39;água, a alteração afeta documentos futuros que têm a marca d&#39;água aplicada a eles. Ou seja, os documentos PDF existentes que contêm a marca d&#39;água não são afetados.
+Quando você modifica uma marca d&#39;água, a alteração afeta documentos futuros que têm a marca d&#39;água aplicada a eles. Ou seja, os documentos existentes do PDF que contêm a marca d&#39;água não são afetados.
 
 >[!NOTE]
 >
@@ -1568,7 +1568,7 @@ Modifique uma marca d&#39;água usando a API de segurança de documentos (Java):
 
 **Exemplos de código**
 
-Para obter exemplos de código usando o serviço Segurança de documentos, consulte Início rápido (modo SOAP): modificação de uma marca d&#39;água usando a seção API Java.
+Para obter exemplos de código usando o serviço Segurança de documentos, consulte o Início rápido (modo SOAP): modificação de uma marca d&#39;água usando a seção API Java.
 
 ### Modificar marcas d&#39;água usando a API do serviço Web {#modify-watermarks-using-the-web-service-api}
 
@@ -1590,9 +1590,9 @@ Modifique uma marca d&#39;água usando a API de segurança de documentos (servi�
    * Defina o campo `MessageEncoding` do objeto `System.ServiceModel.BasicHttpBinding` como `WSMessageEncoding.Mtom`. Esse valor garante que a MTOM seja usada.
    * Ative a autenticação HTTP básica executando as seguintes tarefas:
 
-      * Atribua o nome de usuário dos formulários AEM ao campo `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
-      * Atribua o valor de senha correspondente ao campo `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
-      * Atribua o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Atribua o nome de usuário dos formulários AEM ao campo `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
+     * Atribua o valor de senha correspondente ao campo `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
+     * Atribua o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
 
    * Atribua o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
 
@@ -1620,7 +1620,7 @@ Para obter exemplos de código usando o serviço Segurança de documentos, consu
 
 ## Pesquisando Eventos {#searching-for-events}
 
-O serviço Rights Management rastreia ações específicas à medida que ocorrem, como aplicar uma política a um documento, abrir um documento protegido por política e revogar o acesso a documentos. A auditoria de eventos deve ser habilitada para o serviço Rights Management ou os eventos não são rastreados.
+O serviço Rights Management rastreia ações específicas à medida que ocorrem, como aplicar uma política a um documento, abrir um documento protegido por política e revogar o acesso a documentos. A auditoria de eventos deve estar ativada para o serviço Rights Management ou os eventos não são rastreados.
 
 Os eventos se enquadram em uma das seguintes categorias:
 
@@ -1629,7 +1629,7 @@ Os eventos se enquadram em uma das seguintes categorias:
 * Eventos de política são ações relacionadas a uma política, como a criação de uma política.
 * Eventos de serviço são ações relacionadas ao serviço Rights Management, como sincronização com o diretório de usuário.
 
-Você pode pesquisar eventos específicos usando a API Java do Rights Management ou a API de serviço da Web. Ao pesquisar eventos, você pode executar tarefas, como criar um arquivo de log de determinados eventos.
+Você pode pesquisar eventos específicos usando a API Java do Rights Management ou a API do serviço da Web. Ao pesquisar eventos, você pode executar tarefas, como criar um arquivo de log de determinados eventos.
 
 >[!NOTE]
 >
@@ -1637,10 +1637,10 @@ Você pode pesquisar eventos específicos usando a API Java do Rights Management
 
 ### Resumo das etapas {#summary_of_steps-10}
 
-Para procurar um evento Rights Management, execute as seguintes etapas:
+Para pesquisar um evento do Rights Management, execute as seguintes etapas:
 
 1. Incluir arquivos de projeto.
-1. Crie um objeto Rights Management Client API.
+1. Crie um objeto da API do cliente do Rights Management.
 1. Especifique o evento que deseja pesquisar.
 1. Procure o evento.
 
@@ -1648,9 +1648,9 @@ Para procurar um evento Rights Management, execute as seguintes etapas:
 
 Inclua os arquivos necessários no projeto de desenvolvimento. Se você estiver criando uma aplicação cliente usando Java, inclua os arquivos JAR necessários. Se você estiver usando serviços da Web, certifique-se de incluir os arquivos proxy.
 
-**Criar um objeto de API do Cliente Rights Management**
+**Criar um objeto da API do cliente do Rights Management**
 
-Antes de executar programaticamente uma operação de serviço de Rights Management, você deve criar um objeto cliente de serviço de Rights Management. Se você estiver usando a API Java, crie um objeto `DocumentSecurityClient`. Se você estiver usando a API de serviço Web Rights Management, crie um objeto `DocumentSecurityServiceService`.
+Antes de executar programaticamente uma operação de serviço Rights Management, você deve criar um objeto cliente de serviço Rights Management. Se você estiver usando a API Java, crie um objeto `DocumentSecurityClient`. Se você estiver usando a API de serviço Web Rights Management, crie um objeto `DocumentSecurityServiceService`.
 
 **Especificar os eventos a serem pesquisados**
 
@@ -1658,7 +1658,7 @@ Especifique o evento a ser pesquisado. Por exemplo, você pode pesquisar pelo ev
 
 **Pesquisar o evento**
 
-Depois de especificar o evento a ser pesquisado, você pode usar a API Java do Rights Management ou a API de serviço Web do Rights Management para pesquisar o evento.
+Depois de especificar o evento a ser pesquisado, você pode usar a API Java do Rights Management ou a API do serviço da Web do Rights Management para pesquisar o evento.
 
 **Consulte também**
 
@@ -1668,7 +1668,7 @@ Depois de especificar o evento a ser pesquisado, você pode usar a API Java do R
 
 ### Pesquisar eventos usando a API Java {#search-for-events-using-the-java-api}
 
-Procure eventos usando a API de Rights Management (Java):
+Procure eventos usando a API do Rights Management (Java):
 
 1. Incluir arquivos de projeto
 
@@ -1700,7 +1700,7 @@ Para obter exemplos de código usando o serviço Rights Management, consulte os 
 
 ### Pesquisar eventos usando a API de serviço Web {#search-for-events-using-the-web-service-api}
 
-Procure eventos usando a API do Rights Management (serviço da Web):
+Procure eventos usando a API (serviço da Web) do Rights Management:
 
 1. Incluir arquivos de projeto
 
@@ -1718,9 +1718,9 @@ Procure eventos usando a API do Rights Management (serviço da Web):
    * Defina o campo `MessageEncoding` do objeto `System.ServiceModel.BasicHttpBinding` como `WSMessageEncoding.Mtom`. Esse valor garante que a MTOM seja usada.
    * Ative a autenticação HTTP básica executando as seguintes tarefas:
 
-      * Atribua o nome de usuário dos formulários AEM ao campo `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
-      * Atribua o valor de senha correspondente ao campo `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
-      * Atribua o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Atribua o nome de usuário dos formulários AEM ao campo `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
+     * Atribua o valor de senha correspondente ao campo `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
+     * Atribua o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
 
    * Atribua o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
 
@@ -1951,7 +1951,7 @@ Para obter exemplos de código usando o serviço Rights Management, consulte os 
 
 ## Aplicando Políticas a Documentos do Word {#applying-policies-to-word-documents}
 
-Além de documentos PDF, o serviço Rights Management suporta formatos de documento adicionais, como um documento do Microsoft Word (arquivo DOC) e outros formatos de arquivo do Microsoft Office. Por exemplo, você pode aplicar uma política a um documento do Word para protegê-lo. Ao aplicar uma política a um documento do Word, você restringe o acesso ao documento. Não é possível aplicar uma política a um documento se ele já estiver protegido por uma política.
+Além dos documentos do PDF, o serviço Rights Management oferece suporte a formatos de documento adicionais, como um documento do Microsoft Word (arquivo DOC) e outros formatos de arquivo do Microsoft Office. Por exemplo, você pode aplicar uma política a um documento do Word para protegê-lo. Ao aplicar uma política a um documento do Word, você restringe o acesso ao documento. Não é possível aplicar uma política a um documento se ele já estiver protegido por uma política.
 
 Você pode monitorar o uso de um documento do Word protegido por política após distribuí-lo. Ou seja, você pode ver como o documento está sendo usado e quem está usando-o. Por exemplo, você pode descobrir quando alguém abriu o documento.
 
@@ -2020,13 +2020,13 @@ Aplique uma política a um documento do Word usando a API de segurança de docum
    * Crie um objeto `DocumentManager` invocando o método `getDocumentManager` do objeto `DocumentSecurityClient`.
    * Aplique uma política ao documento do Word chamando o método `protectDocument` do objeto `DocumentManager` e passando os seguintes valores:
 
-      * O objeto `com.adobe.idp.Document` que contém o documento do Word ao qual a política é aplicada.
-      * Um valor de cadeia de caracteres que especifica o nome do documento.
-      * Um valor de string que especifica o nome do conjunto de políticas ao qual a política pertence. Você pode especificar um valor `null` que resulte no uso do conjunto de políticas `MyPolicies`.
-      * Um valor de string que especifica o nome da política.
-      * Um valor de string que representa o nome do domínio do gerenciador de usuários do usuário que é o publicador do documento. Esse valor de parâmetro é opcional e pode ser nulo (se esse parâmetro for nulo, o próximo valor de parâmetro deverá ser nulo).
-      * Um valor de string que representa o nome canônico do usuário gerente do usuário que é o editor do documento. Este valor de parâmetro é opcional e pode ser `null` (se este parâmetro for `null`, o valor do parâmetro anterior deverá ser `null`).
-      * Um `com.adobe.livecycle.rightsmanagement.Locale` que representa a localidade usada para selecionar o modelo do MS Office. Este valor de parâmetro é opcional e você pode especificar `null`.
+     * O objeto `com.adobe.idp.Document` que contém o documento do Word ao qual a política é aplicada.
+     * Um valor de cadeia de caracteres que especifica o nome do documento.
+     * Um valor de string que especifica o nome do conjunto de políticas ao qual a política pertence. Você pode especificar um valor `null` que resulte no uso do conjunto de políticas `MyPolicies`.
+     * Um valor de string que especifica o nome da política.
+     * Um valor de string que representa o nome do domínio do gerenciador de usuários do usuário que é o publicador do documento. Esse valor de parâmetro é opcional e pode ser nulo (se esse parâmetro for nulo, o próximo valor de parâmetro deverá ser nulo).
+     * Um valor de string que representa o nome canônico do usuário gerente do usuário que é o editor do documento. Este valor de parâmetro é opcional e pode ser `null` (se este parâmetro for `null`, o valor do parâmetro anterior deverá ser `null`).
+     * Um `com.adobe.livecycle.rightsmanagement.Locale` que representa a localidade usada para selecionar o modelo do MS Office. Este valor de parâmetro é opcional e você pode especificar `null`.
 
      O método `protectDocument` retorna um objeto `RMSecureDocumentResult` que contém o documento do Word protegido por política.
 
@@ -2062,9 +2062,9 @@ Aplique uma política a um documento do Word usando a API de segurança de docum
    * Defina o campo `MessageEncoding` do objeto `System.ServiceModel.BasicHttpBinding` como `WSMessageEncoding.Mtom`. Esse valor garante que a MTOM seja usada.
    * Ative a autenticação HTTP básica executando as seguintes tarefas:
 
-      * Atribua o nome de usuário dos formulários AEM ao campo `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
-      * Atribua o valor de senha correspondente ao campo `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
-      * Atribua o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Atribua o nome de usuário dos formulários AEM ao campo `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
+     * Atribua o valor de senha correspondente ao campo `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
+     * Atribua o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
 
    * Atribua o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
 
@@ -2206,9 +2206,9 @@ Remova uma política de um documento do Word protegido por política usando a AP
    * Defina o campo `MessageEncoding` do objeto `System.ServiceModel.BasicHttpBinding` como `WSMessageEncoding.Mtom`. Esse valor garante que a MTOM seja usada.
    * Ative a autenticação HTTP básica executando as seguintes tarefas:
 
-      * Atribua o nome de usuário dos formulários AEM ao campo `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
-      * Atribua o valor de senha correspondente ao campo `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
-      * Atribua o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Atribua o nome de usuário dos formulários AEM ao campo `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
+     * Atribua o valor de senha correspondente ao campo `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
+     * Atribua o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
 
    * Atribua o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
 

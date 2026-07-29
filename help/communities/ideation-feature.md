@@ -12,7 +12,7 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1132'
+source-wordcount: '1142'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## Introdução {#introduction}
 
-O recurso de ideação fornece uma área para visitantes do site conectados (membros da comunidade) no ambiente do Publish para:
+O recurso de ideação fornece uma área para visitantes do site conectados (membros da comunidade) no ambiente de Publicação para:
 
 * Crie ideias para compartilhar com a comunidade.
 * Exibir e comentar em ideias.
@@ -30,7 +30,7 @@ O recurso de ideação fornece uma área para visitantes do site conectados (mem
 
 Esta seção da documentação descreve:
 
-* Adicionar o recurso de ideação a um site AEM.
+* Adicionar o recurso de ideação a um site do AEM.
 * Configurações do componente de ideação.
 
 ### Adicionar uma ideação a uma página {#adding-a-ideation-to-a-page}

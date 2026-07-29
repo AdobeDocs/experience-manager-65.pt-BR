@@ -1,6 +1,6 @@
 ---
 title: Estrutura de marcação do AEM
-description: Marcar conteúdo e usar a infraestrutura de Marcação AEM
+description: Marcar conteúdo e usar a infraestrutura de Marcação do AEM
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
@@ -12,8 +12,8 @@ solution: Experience Manager, Experience Manager Sites
 role: Developer
 source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '1637'
-ht-degree: 0%
+source-wordcount: '1649'
+ht-degree: 1%
 
 ---
 
@@ -29,14 +29,14 @@ Este artigo se concentra na estrutura subjacente que oferece suporte à marcaç�
 
 ## Introdução {#introduction}
 
-Para marcar conteúdo e usar a infraestrutura de marcação AEM:
+Para marcar conteúdo e usar a infraestrutura de marcação da AEM:
 
 * A marca deve existir como um nó do tipo `[cq:Tag](#tags-cq-tag-node-type)` no nó raiz de [taxonomia.](#taxonomy-root-node)
 
 * O nó de conteúdo marcado `NodeType` deve incluir o mixin [`cq:Taggable`](#taggable-content-cq-taggable-mixin).
 * O [`TagID`](#tagid) é adicionado à propriedade [`cq:tags`](#tagged-content-cq-tags-property) do nó de conteúdo e é resolvido para um nó do tipo ` [cq:Tag](#tags-cq-tag-node-type)`.
 
-## Tags : cq:Tag Node Type  {#tags-cq-tag-node-type}
+## Marcas: cq:Tag Tipo de Nó  {#tags-cq-tag-node-type}
 
 A declaração de uma marca é capturada no repositório em um nó do tipo `cq:Tag`.
 
@@ -129,7 +129,7 @@ Uma prática típica inclui:
 * Permitir que usuários/autores leiam todos os namespaces que devem ser legíveis para eles (principalmente todos).
 * Permitir que usuários/autores gravem acesso aos namespaces em que as marcas devem ser definidas livremente por usuários/autores (adicione um nó sob `/content/cq:tags/some_namespace`)
 
-## Conteúdo Marcável : cq:Taggable Mixin {#taggable-content-cq-taggable-mixin}
+## Conteúdo Marcável: CQ:Taggable Mixin {#taggable-content-cq-taggable-mixin}
 
 Para que os desenvolvedores de aplicativos anexem a marcação a um tipo de conteúdo, o registro do nó ([CND](https://jackrabbit.apache.org/jcr/node-type-notation.html)) deve incluir o mixin `cq:Taggable` ou `cq:OwnerTaggable`.
 
@@ -137,7 +137,7 @@ O mixin `cq:OwnerTaggable`, que herda de `cq:Taggable`, destina-se a indicar que
 
 >[!NOTE]
 >
->É recomendável habilitar tags somente no nó de nível superior de um item de conteúdo agregado (ou em seu nó `jcr:content`). Os exemplos incluem:
+>É recomendável habilitar tags somente no nó de nível superior de um item de conteúdo agregado (ou em seu nó `jcr:content`). Por exemplo:
 >
 >* Páginas (`cq:Page`) onde o nó `jcr:content` é do tipo `cq:PageContent` que inclui o mixin `cq:Taggable`
 >* Assets ( `cq:Asset`) onde o nó `jcr:content/metadata` sempre tem o mixin `cq:Taggable`
@@ -147,7 +147,7 @@ O mixin `cq:OwnerTaggable`, que herda de `cq:Taggable`, destina-se a indicar que
 
 As definições de tipo de nó existem no repositório como arquivos CND. A notação CND está definida como parte da [documentação Jackrabbit](https://jackrabbit.apache.org/jcr/node-type-notation.html).
 
-As definições essenciais para os Tipos de nós incluídos no AEM são as seguintes:
+As definições essenciais para os Tipos de nó incluídos no AEM são as seguintes:
 
 ```xml
 [cq:Tag] > mix:title, nt:base
@@ -164,13 +164,13 @@ As definições essenciais para os Tipos de nós incluídos no AEM são as segui
     mixin
 ```
 
-## Conteúdo marcado: cq:tags Propriedade {#tagged-content-cq-tags-property}
+## Conteúdo marcado: Propriedade cq:tags {#tagged-content-cq-tags-property}
 
 A propriedade `cq:tags` é uma matriz `String` usada para armazenar uma ou mais TagIDs quando elas são aplicadas ao conteúdo por autores ou visitantes do site. A propriedade só tem significado quando adicionada a um nó definido com o mixin `[cq:Taggable](#taggable-content-cq-taggable-mixin)`.
 
 >[!NOTE]
 >
->Para usar a funcionalidade de marcação AEM, os aplicativos personalizados desenvolvidos não devem definir propriedades de marca diferentes de `cq:tags`.
+>Para usar a funcionalidade de marcação do AEM, os aplicativos desenvolvidos e personalizados não devem definir propriedades de marca diferentes de `cq:tags`.
 
 ## Mover e mesclar tags {#moving-and-merging-tags}
 
@@ -178,14 +178,14 @@ Esta é uma descrição dos efeitos no repositório ao mover ou mesclar marcas u
 
 * Quando uma tag A é movida ou mesclada na tag B em `/content/cq:tags`:
 
-   * A tag A não é excluída e obtém uma propriedade `cq:movedTo`.
-   * A marca B é criada (se houver uma movimentação) e obtém uma propriedade `cq:backlinks`.
+  * A tag A não é excluída e obtém uma propriedade `cq:movedTo`.
+  * A marca B é criada (se houver uma movimentação) e obtém uma propriedade `cq:backlinks`.
 
 * `cq:movedTo` pontos para a marca B.
 
-   * Essa propriedade significa que a tag A foi movida ou mesclada na tag B. Mover a tag B atualiza essa propriedade de acordo. A tag A fica oculta e é mantida somente no repositório para resolver IDs de tag em nós de conteúdo que apontam para a tag A. O coletor de lixo da tag remove tags como a tag A assim que os nós de conteúdo não apontam mais para elas.
+  * Essa propriedade significa que a tag A foi movida ou mesclada na tag B. Mover a tag B atualiza essa propriedade de acordo. A tag A fica oculta e é mantida somente no repositório para resolver IDs de tag em nós de conteúdo que apontam para a tag A. O coletor de lixo da tag remove tags como a tag A assim que os nós de conteúdo não apontam mais para elas.
 
-   * Um valor especial para a propriedade `cq:movedTo` é `nirvana`. Ele é aplicado quando a tag é excluída, mas não pode ser removida do repositório porque há subtags com um `cq:movedTo` que deve ser mantido.
+  * Um valor especial para a propriedade `cq:movedTo` é `nirvana`. Ele é aplicado quando a tag é excluída, mas não pode ser removida do repositório porque há subtags com um `cq:movedTo` que deve ser mantido.
 
   >[!NOTE]
   >
@@ -205,13 +205,13 @@ Esta é uma descrição dos efeitos no repositório ao mover ou mesclar marcas u
 
 * A leitura de uma propriedade `cq:tags` de um nó de conteúdo envolve a seguinte resolução:
 
-   1. Se não houver correspondência em `/content/cq:tags`, nenhuma tag será retornada.
+  1. Se não houver correspondência em `/content/cq:tags`, nenhuma tag será retornada.
 
-   1. Se a marca tiver um conjunto de propriedades `cq:movedTo`, a ID de marca referenciada será seguida.
+  1. Se a marca tiver um conjunto de propriedades `cq:movedTo`, a ID de marca referenciada será seguida.
 
-      * Esta etapa será repetida desde que a marca seguida tenha uma propriedade `cq:movedTo`.
+     * Esta etapa será repetida desde que a marca seguida tenha uma propriedade `cq:movedTo`.
 
-   1. Se a marca seguida não tiver uma propriedade `cq:movedTo`, a marca será lida.
+  1. Se a marca seguida não tiver uma propriedade `cq:movedTo`, a marca será lida.
 
 * Para publicar a alteração quando uma marca for movida ou mesclada, o nó `cq:Tag` e todos os seus backlinks deverão ser replicados. Isso é feito automaticamente quando a tag é ativada no console de administração de tags.
 
@@ -225,4 +225,4 @@ Esta é uma descrição dos efeitos no repositório ao mover ou mesclar marcas u
 
 A partir do Adobe Experience Manager 6.4, as tags são armazenadas em `/content/cq:tags`, enquanto as versões anteriores armazenavam tags em `/etc/tags`.
 
-Sempre que atualizar um sistema AEM de uma versão anterior à 6.4, as tags devem ser migradas para o `/content/cq:tags`. Consulte [Reestruturação do repositório comum no AEM 6.5](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#tags) para obter mais informações.
+Sempre que atualizar um sistema AEM de uma versão anterior à 6.4, as marcas devem ser migradas para `/content/cq:tags`. Consulte [Reestruturação do repositório comum no AEM 6.5](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#tags) para obter mais informações.

@@ -12,7 +12,7 @@ feature: Configuring
 role: Admin
 source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
 workflow-type: tm+mt
-source-wordcount: '1160'
+source-wordcount: '1148'
 ht-degree: 0%
 
 ---
@@ -35,13 +35,13 @@ Esta seção descreve como trabalhar com o Editor de itens em massa no console *
 
 >[!CAUTION]
 >
->Com a [descontinuação da interface clássica](/help/release-notes/deprecated-removed-features.md) no AEM 6.4, o Editor de itens em massa também foi descontinuado e, portanto, o Adobe não pretende aprimorar ainda mais o Editor de itens em massa.
+>Com a [descontinuação da interface clássica](/help/release-notes/deprecated-removed-features.md) no AEM 6.4, o Editor de itens em massa também foi descontinuado e, portanto, a Adobe não pretende aprimorar ainda mais o Editor de itens em massa.
 
 ## Exemplo de caso de uso para o editor de itens em massa {#example-use-case-for-the-bulk-editor}
 
 Por exemplo, se você precisar de todos os nomes e endereços de email de usuários que preencheram uma pesquisa específica, o Editor de itens em massa poderá fornecer essas informações e você poderá exportá-las para uma planilha.
 
-Um exemplo para ilustrar esse caso de uso está incluído no site do Geometrixx:
+Um exemplo para ilustrar esse caso de uso está incluído no site da Geometrixx:
 
 1. Navegue até a página **Suporte** e, em seguida, até a pesquisa **Satisfação do Atendimento ao Cliente**.
 1. **Editar** o parágrafo **Início do Formulário**. Na caixa de diálogo, clique na guia **Avançado**, expanda a **Configuração de Ação** e clique em **Exibir Dados...**.
@@ -77,7 +77,7 @@ Para usar o Editor de itens em massa para editar vários itens simultaneamente:
   </tr>
   <tr>
    <td>Caminho raiz</td>
-   <td>Indica o caminho raiz que o Editor de itens em massa pesquisa.<br /> Por exemplo, <code>/content/geometrixx/en</code>. O Editor de itens em massa pesquisa em todos os nós filhos.</td>
+   <td>Indica o caminho raiz que o Editor de Itens em Massa pesquisa.<br /> Por exemplo, <code>/content/geometrixx/en</code>. O Editor de itens em massa pesquisa em todos os nós filhos.</td>
   </tr>
   <tr>
    <td>Parâmetros de consulta</td>
@@ -122,7 +122,7 @@ Para o exemplo acima, todas as páginas que atendem aos seus critérios de pesqu
 * **caminho:** pesquisar somente nós abaixo deste caminho. Se você especificar mais de um termo com um prefixo de caminho, somente o último será considerado.
 * **type:** retorna somente nós do tipo de nó fornecido. Isso inclui os tipos primário e mixin. Você pode especificar vários tipos de nó separados por vírgula. O GQL retorna nós que sejam de qualquer um dos tipos especificados.
 * **ordenar:** ordena o resultado pelas propriedades fornecidas. Você pode especificar vários nomes de propriedades separados por vírgulas. Para ordenar o resultado em ordem decrescente, basta adicionar um prefixo ao nome da propriedade com um sinal de menos. Por exemplo, order:-name. Usar um sinal de mais retorna o resultado em ordem crescente, que também é o padrão.
-* **limite:** limita o número de resultados usando um intervalo. Por exemplo, limit:10..20 O intervalo é baseado em zero, start é inclusivo e end é exclusivo. Você também pode especificar um `interval:limit:10..` ou `limit:..20` aberto(s)
+* **limite:** limita o número de resultados usando um intervalo. Por exemplo, limit:10..20 O intervalo é baseado em zero, start é inclusivo e end é exclusivo. Você também pode especificar um `interval:limit:10..` aberto ou `limit:..20`
 Se os pontos forem omitidos e somente um valor for especificado, o GQL retornará no máximo esse número de resultados. Por exemplo, `limit:10` (retorna os primeiros dez resultados).
 
 ### Exportar conteúdo {#exporting-content}
