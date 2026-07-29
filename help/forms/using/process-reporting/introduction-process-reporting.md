@@ -9,9 +9,9 @@ exl-id: 674d28dc-7353-49de-9e12-b1998e1509c7
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: c29c24f3e8b05d12689536376ce1a07798f784e6
 workflow-type: tm+mt
-source-wordcount: '294'
+source-wordcount: '305'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Para obter a lista de navegadores compatíveis, consulte [Plataformas compatíve
 O Process Reporting é construído em módulos que:
 
 * Ler dados do processo do Banco de Dados do AEM Forms
-* O Publish processa dados em um repositório incorporado do Process Reporting
+* Publicar dados do processo em um repositório incorporado do Process Reporting
 * Fornece uma interface de usuário baseada em navegador para exibir relatórios
 
 ## Principais recursos {#key-capabilities}
@@ -46,7 +46,7 @@ Process Reporting também oferece a opção de exportar o relatório e consultar
 
 ### Relatórios Ad Hoc {#adhoc-reports}
 
-![impressão-&amp;-cor](assets/print-&-colour.png)
+![impressão-&amp;-cor](assets/print-and-colour.png)
 
 Use filtros para obter uma visualização específica dos seus dados.
 
