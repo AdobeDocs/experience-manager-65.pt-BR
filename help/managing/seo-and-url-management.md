@@ -1,6 +1,6 @@
 ---
 title: Práticas recomendadas de gerenciamento de SEO e URL
-description: Saiba mais sobre as práticas recomendadas da SEO e recomendações sobre uma implementação do AEM.
+description: Saiba mais sobre as práticas recomendadas e as recomendações da SEO em uma implementação do AEM.
 topic-tags: managing
 content-type: reference
 docset: aem65
@@ -10,14 +10,14 @@ feature: Compliance
 role: Developer,Leader
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
-source-wordcount: '3524'
-ht-degree: 65%
+source-wordcount: '3793'
+ht-degree: 67%
 
 ---
 
 # Práticas recomendadas de gerenciamento de SEO e URL{#seo-and-url-management-best-practices}
 
-A SEO (Otimização do mecanismo de pesquisa) se tornou uma preocupação principal para muitos profissionais de marketing. Como resultado, as preocupações com a SEO devem ser abordadas em muitos projetos de AEM.
+A SEO (Otimização do mecanismo de pesquisa) se tornou uma preocupação principal para muitos profissionais de marketing. Como resultado, as preocupações com a SEO devem ser abordadas em muitos projetos do AEM.
 
 Este documento descreve primeiramente algumas [práticas recomendadas da SEO](#seo-best-practices) e recomendações sobre uma implementação do AEM. Em seguida, ele detalha algumas [etapas de implementação mais complexas](#aem-configurations) abordadas na primeira seção.
 
@@ -39,54 +39,53 @@ Estas são algumas dicas gerais sobre como criar os URLs para SEO:
 
 * Use hífenshifens para separar palavras.
 
-   * Nomeie páginas usando hífenshifens (-) como separadores.
-   * Evite usar concatenadas, sublinhados e espaços.
+  * Nomeie páginas usando hífenshifens (-) como separadores.
+  * Evite usar concatenadas, sublinhados e espaços.
 
 * Evite a utilização de parâmetros de consulta sempre que possível. Quando necessário, limite-os a dois ou menos.
 
-   * Use a estrutura de diretório para indicar a arquitetura de informações, quando disponível.
-   * Se uma estrutura de diretório não for uma opção, use seletores Sling no URL em vez de strings de consulta. Além do valor de SEO fornecido, os seletores sling também permitem que as páginas sejam armazenadas em cache pelo Dispatcher.
+  * Use a estrutura de diretório para indicar a arquitetura de informações, quando disponível.
+  * Se uma estrutura de diretório não for uma opção, use seletores Sling no URL em vez de strings de consulta. Além do valor de SEO fornecido, os seletores sling também permitem que as páginas sejam armazenadas em cache pelo Dispatcher.
 
 * Quanto mais legível for um URL, melhor. Ter palavras-chave presentes no URL aumenta o valor.
 
-   * Ao usar seletores em uma página, os seletores que fornecem valor semântico são preferenciais.
-   * Se um humano não conseguir ler o URL, um mecanismo de pesquisa também não poderá.
-   * Por exemplo:
-
-     `mybrand.com/products/product-detail.product-category.product-name.html`
-é preferível a `mybrand.com/products/product-detail.1234.html`
+  * Ao usar seletores em uma página, os seletores que fornecem valor semântico são preferenciais.
+  * Se um humano não conseguir ler o URL, um mecanismo de pesquisa também não poderá.
+  * Por exemplo:
+    `mybrand.com/products/product-detail.product-category.product-name.html`
+    é preferível a `mybrand.com/products/product-detail.1234.html`
 
 * Evite subdomínios sempre que possível, já que os mecanismos de pesquisa os tratam como entidades diferentes, fragmentando o valor SEO do site.
 
-   * Em vez disso, use subcaminhos de primeiro nível. Por exemplo, em vez de `es.mybrand.com/home.html`, use `www.mybrand.com/es/home.html`.
+  * Em vez disso, use subcaminhos de primeiro nível. Por exemplo, em vez de `es.mybrand.com/home.html`, use `www.mybrand.com/es/home.html`.
 
-   * Planeje sua hierarquia de conteúdo para corresponder à forma como o conteúdo é apresentado, de acordo com essa diretriz.
+  * Planeje sua hierarquia de conteúdo para corresponder à forma como o conteúdo é apresentado, de acordo com essa diretriz.
 
 * A eficácia da palavra-chave em URLs diminui conforme o comprimento do URL e a posição da palavra-chave aumentam. Em outras palavras, menor é melhor.
 
-   * Use técnicas e recursos de redução de URL fornecidos pelo AEM para remover partes desnecessárias do URL.
-   * Por exemplo, `mybrand.com/en/myPage.html` é preferível a `mybrand.com/content/my-brand/en/myPage.html`.
+  * Use técnicas e recursos de redução de URL fornecidos pelo AEM para remover partes desnecessárias do URL.
+  * Por exemplo, `mybrand.com/en/myPage.html` é preferível a `mybrand.com/content/my-brand/en/myPage.html`.
 
 * Use URLs canônicos.
 
-   * Quando um URL puder ser distribuído a partir de caminhos diferentes ou com parâmetros ou seletores diferentes, certifique-se de usar uma tag `rel=canonical` na página.
+  * Quando um URL puder ser distribuído a partir de caminhos diferentes ou com parâmetros ou seletores diferentes, certifique-se de usar uma tag `rel=canonical` na página.
 
-   * Inclua URLs canônicos no código do modelo AEM.
+  * Inclua URLs canônicos no código do modelo AEM.
 
 * Corresponder URLs a títulos de página sempre que possível.
 
-   * Os autores de conteúdo devem ser encorajados a seguir essa prática.
+  * Os autores de conteúdo devem ser encorajados a seguir essa prática.
 
 * Insensibilidade a maiúsculas e minúsculas em solicitações de URL.
 
-   * Configure o Dispatcher para regravar todas as solicitações de entrada em letras minúsculas.
-   * Treine autores de conteúdo para criar todas as páginas usando letras minúsculas.
+  * Configure o Dispatcher para regravar todas as solicitações de entrada em letras minúsculas.
+  * Treine autores de conteúdo para criar todas as páginas usando letras minúsculas.
 
 * Certifique-se de que cada página seja distribuída somente de um protocolo.
 
-   * Às vezes, os sites serão distribuídos pelo `http` até que um usuário chegue a uma página com, por exemplo, um formulário de check-out ou logon, no qual ele é alternado para `https`. Ao criar links a partir desta página, se o usuário puder retornar às páginas `http` e acessá-las por meio do `https`, o mecanismo de pesquisa as rastreará como duas páginas separadas.
+  * Às vezes, os sites serão distribuídos pelo `http` até que um usuário chegue a uma página com, por exemplo, um formulário de check-out ou logon, no qual ele é alternado para `https`. Ao criar links a partir desta página, se o usuário puder retornar às páginas `http` e acessá-las por meio do `https`, o mecanismo de pesquisa as rastreará como duas páginas separadas.
 
-   * Atualmente, o Google prefere páginas `https` às páginas `http`. Eles ajudam a facilitar a vida de todos para atender todo o site por `https`.
+  * Atualmente, o Google prefere páginas `https` às páginas `http`. Eles ajudam a facilitar a vida de todos para atender todo o site por `https`.
 
 ### Configuração de servidor {#server-configuration}
 
@@ -94,15 +93,15 @@ Em termos de configuração do servidor, você pode executar as seguintes etapas
 
 * Use um arquivo `robots.txt` para bloquear o rastreamento de qualquer conteúdo que não deve ser indexado.
 
-   * Bloquear **todos** os rastreamentos em ambientes de teste.
+  * Bloquear **todos** os rastreamentos em ambientes de teste.
 
 * Ao iniciar um novo site com URLs atualizados, implemente os redirecionamentos 301 para garantir que sua classificação de SEO existente não seja perdida.
 * Inclua um favicon para o site.
-* Para facilitar o rastreamento de conteúdo pelos mecanismos de pesquisa, implemente um mapa de site XML. Certifique-se de incluir um mapa de site móvel para sites móveis e/ou responsivos.
+* Para facilitar a rastrea de conteúdo pelos mecanismos de pesquisa, implemente um mapa de site XML. Certifique-se de incluir um mapa de site móvel para sites móveis e/ou responsivos.
 
 ## Configurações do AEM {#aem-configurations}
 
-Esta seção descreve as etapas de implementação para configurar o AEM de acordo com as seguintes recomendações de SEO.
+Esta seção descreve as etapas de implementação para configurar o AEM com as seguintes recomendações de SEO.
 
 ### Uso de seletores Sling {#using-sling-selectors}
 
@@ -125,7 +124,7 @@ Os exemplos a seguir ilustram como registrar servlets que seguem esses dois padr
 
 #### Servlets bin (um nível abaixo) {#bin-servlets-one-level-down}
 
-Os servlets **Bin** seguem o padrão para o qual muitos desenvolvedores são usados na programação J2EE. O servlet é registrado em um caminho específico que, no AEM, geralmente está em `/bin`, e você extrai os parâmetros de solicitação necessários da cadeia de caracteres de consulta.
+Os servlets **Bin** seguem o padrão para o qual muitos desenvolvedores são usados na programação J2EE. O servlet está registrado em um caminho específico que, no AEM, geralmente está em `/bin`, e você extrai os parâmetros de solicitação necessários da cadeia de caracteres de consulta.
 
 A anotação SCR para este tipo de servlet seria algo como isto:
 
@@ -183,7 +182,7 @@ No AEM, todas as páginas da Web são armazenadas no `/content/my-brand/my-conte
 
 Esta seção analisa as opções disponíveis no AEM para gerenciar esses URLs e apresentá-los aos usuários de maneira mais legível e fácil de usar para SEO.
 
-#### URLs personalizadas {#vanity-urls}
+#### URLs personalizados {#vanity-urls}
 
 Se um autor desejar que uma página seja acessível de um segundo local para fins promocionais, os URLs personalizados do AEM, definidos página por página, podem ser úteis. Para adicionar um URL personalizado de uma página, navegue até ele no console **Sites** e edite as propriedades da página. Na parte inferior da guia **Básico**, você verá uma seção na qual URLs personalizados podem ser adicionados. Lembre-se de que ter a página acessível por mais de um URL fragmentará o valor SEO da página. Portanto, uma tag de URL canônica deve ser adicionada à página para evitar esse problema.
 
@@ -197,9 +196,9 @@ Talvez você queira exibir nomes de página localizados para usuários de conte�
 * Seria melhor que o URL fosse:
   `www.mydomain.com/es/casa.html`.
 
-O desafio em traduzir o nome da página é que muitas das ferramentas de tradução disponíveis na plataforma do AEM dependem da correspondência dos nomes das páginas entre os locais para manter o conteúdo sincronizado.
+O desafio em traduzir o nome da página é que muitas das ferramentas de tradução disponíveis na plataforma do AEM dependem da correspondência dos nomes das páginas entre as localidades para manter o conteúdo sincronizado.
 
-A propriedade `sling:alias` permite que você tenha o Adobe e coma também. Você pode adicionar `sling:alias` como uma propriedade a qualquer recurso para permitir um nome de alias para o recurso. No exemplo anterior, você teria o seguinte:
+A propriedade `sling:alias` permite ter o Adobe cake e comer também. Você pode adicionar `sling:alias` como uma propriedade a qualquer recurso para permitir um nome de alias para o recurso. No exemplo anterior, você teria o seguinte:
 
 * Uma página no JCR em:
   `…/es/home`
@@ -224,8 +223,8 @@ Ao mesmo tempo, permitiria que os usuários finais interagissem com o nome da p�
 Em uma instalação padrão do AEM:
 
 * para a configuração do OSGi
-  **Apache Sling Resource Resolver Factory**
-( `org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl`)
+  **Fábrica do Apache Sling Resource Resolver**
+  ( `org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl`)
 
 * a propriedade
   **Localização do mapeamento** ( `resource.resolver.map.location`)
@@ -236,7 +235,7 @@ As definições de mapeamento podem ser adicionadas neste local para mapear soli
 
 Para criar um mapeamento, crie um nó `sling:Mapping` neste local por meio de `/http` ou `/https`. Com base nas propriedades `sling:match` e `sling:internalRedirect` definidas neste nó, o AEM redirecionará todo o tráfego do URL correspondente para o valor especificado na propriedade `internalRedirect`.
 
-Embora essa abordagem esteja documentada na documentação oficial de AEM e Sling, o suporte regular à expressão fornecido por essa implementação é limitado no escopo quando comparado às opções que estão disponíveis usando o `SlingResourceResolver` diretamente. Além disso, a implementação de mapeamentos desta maneira pode levar a problemas com a invalidação do cache do Dispatcher.
+Embora essa abordagem esteja documentada na documentação oficial do AEM e Sling, o suporte regular à expressão fornecido por essa implementação é limitado no escopo quando comparado às opções que estão disponíveis usando o `SlingResourceResolver` diretamente. Além disso, a implementação de mapeamentos desta maneira pode levar a problemas com a invalidação do cache do Dispatcher.
 
 Este é um exemplo de como esse problema ocorre:
 
@@ -246,7 +245,7 @@ Este é um exemplo de como esse problema ocorre:
 
 1. O Dispatcher armazena a resposta em cache em `/my-page.html` e retorna a resposta ao usuário.
 1. Um autor de conteúdo altera essa página e a ativa.
-1. O agente de liberação do Dispatcher envia uma solicitação de invalidação para `/content/my-brand/my-page`**.** Como a Dispatcher não tem uma página em cache neste caminho, o conteúdo antigo permanece em cache e é obsoleto.
+1. O agente de liberação do Dispatcher envia uma solicitação de invalidação para `/content/my-brand/my-page`**.** Como o Dispatcher não tem uma página em cache nesse caminho, o conteúdo antigo permanece em cache e é obsoleto.
 
 Há maneiras de configurar regras personalizadas de liberação do Dispatcher que mapearão o URL mais curto para o URL mais longo para fins de invalidação de cache.
 
@@ -257,10 +256,9 @@ No entanto, há também uma maneira mais simples de gerenciar esse problema:
    Usando o console da Web (por exemplo, localhost:4502/system/console/configMgr), você pode configurar o Sling Resource Resolver:
 
    * **Apache Sling Resource Resolver Factory**
-
      `(org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl)`.
 
-   O Adobe recomenda que você crie os mapeamentos necessários para encurtar URLs como expressões regulares e, em seguida, defina essas configurações em um nó OsgiConfignode, `config.publish` incluído na sua versão.
+   A Adobe recomenda que você crie os mapeamentos necessários para encurtar URLs como expressões regulares e, em seguida, defina essas configurações em um nó OsgiConfignode, `config.publish` incluído na sua versão.
 
    Em vez de definir os mapeamentos no `/etc/map`, eles podem ser atribuídos diretamente à propriedade **Mapeamentos de URL** ( `resource.resolver.mapping`):
 
@@ -357,7 +355,7 @@ Disallow: /
 
 Como alternativa, em um ambiente em tempo real, você pode optar por não permitir determinados caminhos que não deseja indexar.
 
-O problema ao colocar o arquivo `robots.txt` na raiz do site é que as solicitações de liberação do Dispatcher podem limpar esse arquivo. Além disso, os mapeamentos de URL provavelmente colocam a raiz do site em um local diferente do `DOCROOT` conforme definido na configuração do Apache HTTP Server. Por isso, é comum colocar esse arquivo na instância do autor na raiz do site e replicá-lo na instância de publicação.
+O problema ao colocar o arquivo `robots.txt` na raiz do site é que as solicitações de liberação do Dispatcher podem limpar esse arquivo. Além disso, os mapeamentos de URL provavelmente colocam a raiz do site em um local diferente do `DOCROOT` conforme definido na configuração do Apache HTTP Server. Por isso, é comum colocar esse arquivo na instância de criação na raiz do site e replicá-lo na instância de publicação.
 
 ### Criar um mapa de site XML no AEM {#building-an-xml-sitemap-on-aem}
 
@@ -367,7 +365,7 @@ O AEM usa o [módulo Apache Sling Sitemap](https://github.com/apache/sling-org-a
 
 >[!NOTE]
 >
->Disponível como recurso do produto desde a versão 6.5.11.0 do Adobe Experience Manager.
+>Disponível como recurso do produto desde a Versão 6.5.11.0 do Adobe Experience Manager.
 > 
 >Para versões mais antigas, você mesmo pode registrar um Sling Servlet para ouvir uma chamada `sitemap.xml`. Use o recurso fornecido por meio da API de servlet para pesquisar a página atual e seus descendentes para produzir um arquivo `sitemap.xml`.
 
@@ -391,7 +389,7 @@ Para habilitar o processo em segundo plano que gera os mapas de site XML, um `Si
 
 O trabalho de geração de mapa de site pode ser executado em instâncias de nível do autor e de publicação. Normalmente, é recomendável executar a geração em instâncias do nível de publicação, já que URLs canônicos adequados podem ser gerados somente lá (devido às regras de Mapeamento de recursos do Sling que geralmente estão presentes apenas em instâncias do nível de publicação). No entanto, é possível conectar uma implementação personalizada do mecanismo de externalização usado para gerar as URLs canônicas implementando a interface [SitemapLinkExternalizer](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/sitemap/externalizer/SitemapLinkExternalizer.html). Se uma implementação personalizada puder gerar as URLs canônicas de um mapa de site nas instâncias do nível do autor, o `SitemapScheduler` poderá ser configurado para o modo de execução do autor. E a carga de trabalho de geração do mapa de site XML pode ser distribuída entre as instâncias do cluster de serviços do autor. Nesse cenário, deve-se ter cuidado ao manipular conteúdo que ainda não foi publicado, foi modificado ou está visível apenas para um grupo restrito de usuários.
 
-O AEM Sites contém uma implementação padrão de um `SitemapGenerator` que atravessa uma árvore de páginas para gerar um mapa de site. Ela é pré-configurada para produzir apenas os URLs canônicos de um site e qualquer alternativa de idioma que estiver disponível. Ela também pode ser configurada para incluir a data da última modificação de uma página, se necessário. Para fazer isso, habilite a opção _Adicionar modificada por último_ da configuração _Adobe AEM SEO - Gerador de mapas do site da árvore de páginas_ e selecione uma _Última modificação de Source_. Quando os mapas do site são gerados no nível de publicação, é recomendável usar a data `cq:lastModified`.
+O AEM Sites contém uma implementação padrão de um `SitemapGenerator` que atravessa uma árvore de páginas para gerar um mapa de site. Ela é pré-configurada para produzir apenas os URLs canônicos de um site e qualquer alternativa de idioma que estiver disponível. Ela também pode ser configurada para incluir a data da última modificação de uma página, se necessário. Para fazer isso, habilite a opção _Adicionar modificada por último_ da configuração _Adobe AEM SEO - Gerador de mapas do site da árvore de páginas_ e selecione uma _Última Source modificada_. Quando os mapas do site são gerados no nível de publicação, é recomendável usar a data `cq:lastModified`.
 
 ![Configuração do Adobe AEM SEO - Gerador de mapas do site da árvore de páginas](assets/sling-sitemap-pagetreegenerator.png)
 

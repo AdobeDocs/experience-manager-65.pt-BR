@@ -1,5 +1,5 @@
 ---
-title: Conteúdo do AEM e notas de versão do Commerce 2020
+title: Notas de versão de 2020 do AEM Content and Commerce
 description: Conteúdo do Adobe Experience Manager e Notas de versão do Commerce 2020.
 exl-id: 440ecd8e-55dc-4606-8678-c65cda1d2b3a
 solution: Experience Manager,Commerce
@@ -7,19 +7,19 @@ feature: Commerce Integration Framework
 role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
-source-wordcount: '1257'
-ht-degree: 8%
+source-wordcount: '1471'
+ht-degree: 13%
 
 ---
 
-# Visão geral da versão do GitHub do Commerce integration framework
+# Visão geral da versão do Commerce integration framework GitHub
 
 ## Data de lançamento: novembro de 2020
 
 | GitHub | Versão | Notas de versão detalhadas |
 |:-------|:-----:|---------------------:|
-| Conector CIF | 1.6.0 | [Notas de versão](https://github.com/adobe/commerce-cif-connector/releases) |
-| Componentes principais do CIF | 1.6.0 | [Notas de versão](https://github.com/adobe/aem-core-cif-components/releases) |
+| CIF Connector | 1.6.0 | [Notas de versão](https://github.com/adobe/commerce-cif-connector/releases) |
+| Componentes principais da CIF | 1.6.0 | [Notas de versão](https://github.com/adobe/aem-core-cif-components/releases) |
 | Site de referência CIF Venia | 2020.12.01 | [Notas de versão](https://github.com/adobe/aem-cif-guides-venia/releases) |
 
 ### Novidades {#what-is-new-november}
@@ -40,15 +40,15 @@ ht-degree: 8%
 
 | GitHub | Versão | Notas de versão detalhadas |
 |:-------|:-----:|---------------------:|
-| Conector CIF | 1.5.0 | [Notas de versão](https://github.com/adobe/commerce-cif-connector/releases) |
-| Componentes principais do CIF | 1.5.0 | [Notas de versão](https://github.com/adobe/aem-core-cif-components/releases) |
+| CIF Connector | 1.5.0 | [Notas de versão](https://github.com/adobe/commerce-cif-connector/releases) |
+| Componentes principais da CIF | 1.5.0 | [Notas de versão](https://github.com/adobe/aem-core-cif-components/releases) |
 | Site de referência CIF Venia | 2020.10.27 | [Notas de versão](https://github.com/adobe/aem-cif-guides-venia/releases) |
 
 ### Novidades {#what-is-new-october}
 
-* Um novo componente Carrossel de categoria foi adicionado para permitir que os usuários empresariais arrastem e soltem esse componente em páginas de conteúdo AEM para enriquecer páginas de conteúdo com dados comerciais.
+* Um novo componente Carrossel de categoria foi adicionado para permitir que os usuários empresariais arrastem e soltem esse componente nas páginas de conteúdo do AEM para enriquecer páginas de conteúdo com dados comerciais.
 
-* Os componentes principais do CIF foram estendidos para hidratar a Camada de dados de clientes Adobe, enviando dados comerciais. A Camada de dados de clientes Adobe é um método padronizado para coletar dados e comunicá-los aos servidores de análise digital e de relatórios. Para obter mais detalhes, consulte [Camada de Dados de Clientes Adobe](https://github.com/adobe/adobe-client-data-layer/wiki).
+* Os componentes principais do CIF foram estendidos para hidratar a Camada de dados de clientes Adobe enviando dados comerciais. A Camada de dados de clientes Adobe é um método padronizado para coletar dados e comunicá-los ao Digital Analytics e aos servidores de relatórios. Para obter mais detalhes, consulte [Camada de dados de clientes Adobe](https://github.com/adobe/adobe-client-data-layer/wiki).
 
 * As páginas Detalhes do produto e Lista de produtos foram estendidas para preencher automaticamente os metadados de SEO (como título, meta descrição e meta palavras-chave) configurados na interface de administrador do Adobe Commerce.
 
@@ -58,8 +58,8 @@ ht-degree: 8%
 
 | GitHub | Versão | Notas de versão detalhadas |
 |:-------|:-----:|---------------------:|
-| Conector CIF | 1.4.0 | [Notas de versão](https://github.com/adobe/commerce-cif-connector/releases) |
-| Componentes principais do CIF | 1.4.0 | [Notas de versão](https://github.com/adobe/aem-core-cif-components/releases) |
+| CIF Connector | 1.4.0 | [Notas de versão](https://github.com/adobe/commerce-cif-connector/releases) |
+| Componentes principais da CIF | 1.4.0 | [Notas de versão](https://github.com/adobe/aem-core-cif-components/releases) |
 | Site de referência CIF Venia | 2020.10.2 | [Notas de versão](https://github.com/adobe/aem-cif-guides-venia/releases) |
 
 ### Novidades {#what-is-new-september}
@@ -74,7 +74,7 @@ ht-degree: 8%
 
 * O suporte para tipos de produtos agrupados está disponível.
 
-* Os desenvolvedores podem configurar as tags HTML para os componentes Carrossel de produtos, Produtos relacionados e Lista de categorias em destaque para seguir as práticas recomendadas da SEO.
+* Os desenvolvedores podem configurar as tags do HTML para os componentes Carrossel de produtos, Produtos relacionados e Lista de categorias em destaque para seguir as práticas recomendadas da SEO.
 
 * Bugs da Minha conta corrigidos.
 
@@ -84,21 +84,21 @@ ht-degree: 8%
 
 | GitHub | Versão | Notas de versão detalhadas |
 |:-------|:-----:|---------------------:|
-| Conector CIF | 1.3.0 | [Notas de versão](https://github.com/adobe/commerce-cif-connector/releases) |
-| Componentes principais do CIF | 1.3.0 | [Notas de versão](https://github.com/adobe/aem-core-cif-components/releases) |
+| CIF Connector | 1.3.0 | [Notas de versão](https://github.com/adobe/commerce-cif-connector/releases) |
+| Componentes principais da CIF | 1.3.0 | [Notas de versão](https://github.com/adobe/aem-core-cif-components/releases) |
 | Site de referência CIF Venia | 2020.9.2 | [Notas de versão](https://github.com/adobe/aem-cif-guides-venia/releases) |
 
 ### Novidades {#what-is-new-august}
 
 * Componente de navegação estrutural adicionado para suportar páginas de conteúdo e comércio.
 
-* A guia Commerce foi adicionada às Propriedades da página para expor propriedades de CIF para páginas de aterrissagem e Fragmentos de experiência.
+* A guia Commerce foi adicionada às Propriedades da página para expor as propriedades do CIF para Páginas de aterrissagem e Fragmentos de experiência.
 
 * O componente Barra de pesquisa foi aprimorado para oferecer suporte à opção para exibir texto de espaço reservado
 
 * Adição de flexibilidade aos componentes Teaser de produto e produto para facilitar as personalizações.
 
-* Adição de flexibilidade para substituir e configurar o rótulo de botão CTA padrão para o componente Teaser do produto.
+* Adição de flexibilidade para substituir e configurar o rótulo de botão padrão do CTA para o componente Teaser do produto.
 
 * O componente de Catálogo de endereços é aprimorado para permitir que os compradores registrados escolham os endereços de envio e de cobrança salvos no catálogo de endereços durante a finalização da compra.
 
@@ -108,19 +108,19 @@ ht-degree: 8%
 
 | GitHub | Versão | Notas de versão detalhadas |
 |:-------|:-----:|---------------------:|
-| Conector CIF | 1.2.0 | [Notas de versão](https://github.com/adobe/commerce-cif-connector/releases) |
-| Componentes principais do CIF | 1.2.0 | [Notas de versão](https://github.com/adobe/aem-core-cif-components/releases) |
+| CIF Connector | 1.2.0 | [Notas de versão](https://github.com/adobe/commerce-cif-connector/releases) |
+| Componentes principais da CIF | 1.2.0 | [Notas de versão](https://github.com/adobe/aem-core-cif-components/releases) |
 | Site de referência CIF Venia | 2020.8.14 | [Notas de versão](https://github.com/adobe/aem-cif-guides-venia/releases) |
 
 ### Novidades {#what-is-new-july}
 
-* O site de referência CIF Venia foi extraído do repositório Arquétipo CIF e agora é um repositório GitHub independente.
+* O site de referência CIF Venia foi extraído do repositório do Arquétipo CIF e agora é um repositório GitHub independente.
 
-* Arquétipo CIF fundido com Arquétipo do Projeto AEM. Para novos projetos, use o [Arquétipo de Projeto AEM](https://github.com/adobe/aem-project-archetype) como ponto de partida.
+* Arquétipo do CIF mesclado com o Arquétipo de projeto do AEM. Para novos projetos, use o [Arquétipo de Projeto do AEM](https://github.com/adobe/aem-project-archetype) como ponto de partida.
 
 * O gerenciamento de catálogo de endereços foi adicionado para permitir que os usuários conectados gerenciem seus endereços.
 
-* A interface de configuração do CIF Cloud é compatível com ações de publicação/cancelamento de publicação.
+* A interface de configuração do CIF Cloud oferece suporte a ações de publicar/desfazer publicação.
 
 ### O que foi melhorado {#what-is-improved-july}
 
@@ -134,9 +134,9 @@ ht-degree: 8%
 
 | GitHub | Versão | Notas de versão detalhadas |
 |:-------|:-----:|---------------------:|
-| Conector CIF | 1.1.0 | [Notas de versão](https://github.com/adobe/commerce-cif-connector/releases) |
-| Componentes principais do CIF | 1.1.1 | [Notas de versão](https://github.com/adobe/aem-core-cif-components/releases) |
-| Arquétipo CIF | 0.11.0 | [Notas de versão](https://github.com/adobe/aem-cif-project-archetype/releases) |
+| CIF Connector | 1.1.0 | [Notas de versão](https://github.com/adobe/commerce-cif-connector/releases) |
+| Componentes principais da CIF | 1.1.1 | [Notas de versão](https://github.com/adobe/aem-core-cif-components/releases) |
+| Arquétipo do CIF | 0.11.0 | [Notas de versão](https://github.com/adobe/aem-cif-project-archetype/releases) |
 
 ### Novidades {#what-is-new-june}
 
@@ -154,7 +154,7 @@ Esta é a primeira versão dos Componentes principais do CIF compatível com o A
 
 * A pesquisa facetada é otimizada combinando uma consulta de categoria com uma consulta de pesquisa de produto.
 
-* Seletores de categoria/produto para visualização de página respeitam o cq:catalogPath.
+* Seletores de categoria/produto para exibição de página com honraria cq:catalogPath.
 
 * Várias correções de erros.
 
@@ -162,9 +162,9 @@ Esta é a primeira versão dos Componentes principais do CIF compatível com o A
 
 | GitHub | Versão | Notas de versão detalhadas |
 |:-------|:-----:|---------------------:|
-| Conector CIF | 1.0.0 | [Notas de versão](https://github.com/adobe/commerce-cif-connector/releases) |
-| Componentes principais do CIF | 1.0.0 | [Notas de versão](https://github.com/adobe/aem-core-cif-components/releases) |
-| Arquétipo CIF | 0.11.0 | [Notas de versão](https://github.com/adobe/aem-cif-project-archetype/releases) |
+| CIF Connector | 1.0.0 | [Notas de versão](https://github.com/adobe/commerce-cif-connector/releases) |
+| Componentes principais da CIF | 1.0.0 | [Notas de versão](https://github.com/adobe/aem-core-cif-components/releases) |
+| Arquétipo do CIF | 0.11.0 | [Notas de versão](https://github.com/adobe/aem-cif-project-archetype/releases) |
 
 ### Novidades {#what-is-new-may}
 
@@ -186,13 +186,13 @@ Esta é a primeira versão dos Componentes principais do CIF compatível com o A
 
 | GitHub | Versão | Notas de versão detalhadas |
 |:-------|:-----:|---------------------:|
-| Conector CIF | 0.10.0 | [Notas de versão](https://github.com/adobe/commerce-cif-connector/releases) |
-| Componentes principais do CIF | 0.10.0 | [Notas de versão](https://github.com/adobe/aem-core-cif-components/releases) |
-| Arquétipo CIF | 0.10.0 | [Notas de versão](https://github.com/adobe/aem-cif-project-archetype/releases) |
+| CIF Connector | 0.10.0 | [Notas de versão](https://github.com/adobe/commerce-cif-connector/releases) |
+| Componentes principais da CIF | 0.10.0 | [Notas de versão](https://github.com/adobe/aem-core-cif-components/releases) |
+| Arquétipo do CIF | 0.10.0 | [Notas de versão](https://github.com/adobe/aem-cif-project-archetype/releases) |
 
 ### Novidades {#what-is-new-april}
 
-* As configurações do Conector CIF são unificadas e simplificadas. Para obter mais detalhes, confira a [Introdução](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html?lang=pt-BR) ou a [Configuração do novo projeto CIF AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html?lang=pt-BR)
+* As configurações do CIF Connector são unificadas e simplificadas. Para obter mais detalhes, confira a [Introdução](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html?lang=pt-BR) ou a [Nova Instalação do Projeto do AEM CIF](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html?lang=pt-BR)
 
 ### O que foi melhorado {#what-is-improved-april}
 
@@ -210,9 +210,9 @@ Esta é a primeira versão dos Componentes principais do CIF compatível com o A
 
 | GitHub | Versão | Notas de versão detalhadas |
 |:-------|:-----:|---------------------:|
-| Conector CIF | 0.9.0 | [Notas de versão](https://github.com/adobe/commerce-cif-connector/releases) |
-| Componentes principais do CIF | 0.9.0 | [Notas de versão](https://github.com/adobe/aem-core-cif-components/releases) |
-| Arquétipo CIF | 0.9.0 | [Notas de versão](https://github.com/adobe/aem-cif-project-archetype/releases) |
+| CIF Connector | 0.9.0 | [Notas de versão](https://github.com/adobe/commerce-cif-connector/releases) |
+| Componentes principais da CIF | 0.9.0 | [Notas de versão](https://github.com/adobe/aem-core-cif-components/releases) |
+| Arquétipo do CIF | 0.9.0 | [Notas de versão](https://github.com/adobe/aem-cif-project-archetype/releases) |
 
 ### Novidades {#what-is-new-february}
 
@@ -236,9 +236,9 @@ Esta é a primeira versão dos Componentes principais do CIF compatível com o A
 
 | GitHub | Versão | Notas de versão detalhadas |
 |:-------|:-----:|---------------------:|
-| Conector CIF | 0.8.0 | [Notas de versão](https://github.com/adobe/commerce-cif-connector/releases) |
-| Componentes principais do CIF | 0.8.0 | [Notas de versão](https://github.com/adobe/aem-core-cif-components/releases) |
-| Arquétipo CIF | 0.7.0 | [Notas de versão](https://github.com/adobe/aem-cif-project-archetype/releases) |
+| CIF Connector | 0.8.0 | [Notas de versão](https://github.com/adobe/commerce-cif-connector/releases) |
+| Componentes principais da CIF | 0.8.0 | [Notas de versão](https://github.com/adobe/aem-core-cif-components/releases) |
+| Arquétipo do CIF | 0.7.0 | [Notas de versão](https://github.com/adobe/aem-cif-project-archetype/releases) |
 
 ### Novidades {#what-is-new-january}
 
@@ -246,7 +246,7 @@ Esta é a primeira versão dos Componentes principais do CIF compatível com o A
 
 * Alterar a funcionalidade de senha disponível em minha conta.
 
-* Suporte a i18n para componentes principais do lado do servidor CIF AEM.
+* Suporte a i18n para componentes principais do lado do servidor do AEM CIF.
 
 * O componente genérico do produto relacionado está disponível.
 

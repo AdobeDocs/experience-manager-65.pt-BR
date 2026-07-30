@@ -7,8 +7,8 @@ exl-id: e4340828-fe16-4edf-94c9-b0b145740e74
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 2809ae0f2c712ce8e6d94e18211649f2fa6ab8b4
 workflow-type: tm+mt
-source-wordcount: '522'
-ht-degree: 86%
+source-wordcount: '523'
+ht-degree: 82%
 
 ---
 
@@ -130,7 +130,7 @@ Você pode ter citações de bloco aninhadas. Por exemplo:
 
 É possível criar listas ordenadas e não ordenadas.
 
-Para criar uma lista não ordenada, use o símbolo &ast; antes dos itens na lista. Por exemplo:
+Para criar uma lista não ordenada, use o símbolo &amp;ast; antes dos itens na lista. Por exemplo:
 
     `* item in list`
 
