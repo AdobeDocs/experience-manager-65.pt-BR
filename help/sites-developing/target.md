@@ -198,7 +198,7 @@ O script JSP desse componente gera chamadas para a API javascript do Target e im
 
 O arquivo mbox.js padrão usado para criar mboxes está localizado em /etc/clientlibs/foundation/testandtarget/mbox/source/mbox.js. Para usar um arquivo mbox.js do cliente, adicione o arquivo à configuração da nuvem do Target. Para adicionar o arquivo, o arquivo mbox.js deve estar disponível no sistema de arquivos.
 
-Por exemplo, se você deseja usar o [serviço de Marketing Cloud ID](https://experienceleague.adobe.com/docs/id-service/using/home.html), é necessário baixar o mbox.js para que ele contenha o valor correto para a variável `imsOrgID`, que é baseada no seu locatário. Essa variável é necessária para a integração com o serviço da Marketing Cloud ID. Para obter informações, consulte [Adobe Analytics como Source de Relatórios para Adobe Target](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html) e [Antes de Implementar](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/before-implement.html).
+Por exemplo, se você deseja usar o [serviço de Marketing Cloud ID](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=pt-BR), é necessário baixar o mbox.js para que ele contenha o valor correto para a variável `imsOrgID`, que é baseada no seu locatário. Essa variável é necessária para a integração com o serviço da Marketing Cloud ID. Para obter informações, consulte [Adobe Analytics como Source de Relatórios para Adobe Target](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=pt-BR) e [Antes de Implementar](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/before-implement.html?lang=pt-BR).
 
 >[!NOTE]
 >
