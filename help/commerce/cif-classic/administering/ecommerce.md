@@ -1,6 +1,6 @@
 ---
 title: Estrutura de integração de comércio eletrônico
-description: O eCommerce AEM ajuda os profissionais de marketing a fornecer experiências de compras personalizadas e de marca em pontos de contato da Web, de dispositivos móveis e sociais.
+description: O eCommerce do AEM ajuda os profissionais de marketing a fornecer experiências de compra personalizadas e de marca em pontos de contato da Web, de dispositivos móveis e sociais.
 topic-tags: e-commerce
 content-type: reference
 docset: aem65
@@ -10,14 +10,14 @@ feature: Commerce Integration Framework
 role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: '788'
 ht-degree: 2%
 
 ---
 
 # eCommerce{#ecommerce}
 
-* [Conceitos &#x200B;](/help/commerce/cif-classic/administering/concepts.md)
+* [Conceitos](/help/commerce/cif-classic/administering/concepts.md)
 * [Administração (genérico)](/help/commerce/cif-classic/administering/generic.md)
 
 O Adobe fornece duas versões do Commerce integration framework:
@@ -59,7 +59,7 @@ O Adobe fornece duas versões do Commerce integration framework:
    <td>
     <ul>
      <li>Importador de produtos, editor e armazenamento em cache no AEM</li>
-     <li>Catálogos regulares com páginas de AEM ou proxy</li>
+     <li>Catálogos regulares com páginas do AEM ou proxy</li>
     </ul> </td>
    <td>
     <ul>
@@ -88,7 +88,7 @@ O Adobe fornece duas versões do Commerce integration framework:
   </tr>
   <tr>
    <td>Disponibilidade</td>
-   <td><p>Sim. SAP Commerce Cloud (Extensão atualizada para oferecer suporte a AEM 6.4 e Hybris 5 (padrão) e mantém compatibilidade com o Hybris 4</p> <p>Commerce Cloud do Salesforce (conector de código aberto para suporte ao AEM 6.4)</p> </td>
+   <td><p>Sim. SAP Commerce Cloud (Extensão atualizada para oferecer suporte ao AEM 6.4 e Hybris 5 (padrão) e mantém compatibilidade com o Hybris 4</p> <p>Salesforce Commerce Cloud (conector de código aberto para suporte ao AEM 6.4)</p> </td>
    <td>Sim, via código aberto via GitHub. Adobe Commerce (Suporta 2.3.2 (padrão) e compatível com 2.3.1).</td>
   </tr>
   <tr>
@@ -108,7 +108,7 @@ O comércio eletrônico, juntamente com o Gerenciamento de informações de prod
 * Registros de armazenamento dinâmicos e centralizados
 * Interfaces da Web
 
-O eCommerce AEM ajuda os profissionais de marketing a fornecer experiências de compras personalizadas e de marca em pontos de contato da Web, de dispositivos móveis e sociais. O ambiente de criação do AEM permite personalizar páginas e componentes com base no contexto do visitante do público-alvo e nas estratégias de merchandising; por exemplo:
+O eCommerce do AEM ajuda os profissionais de marketing a fornecer experiências de compra personalizadas e de marca em pontos de contato da Web, de dispositivos móveis e sociais. O ambiente de criação do AEM permite personalizar páginas e componentes com base no contexto do visitante do público-alvo e nas estratégias de merchandising; por exemplo:
 
 * Páginas de produto
 * Componentes do carrinho de compras
@@ -129,44 +129,44 @@ A implementação permite acesso em tempo real às informações do produto. Iss
 
 ## Recursos principais {#main-features}
 
-O eCommerce AEM oferece:
+O eCommerce da AEM oferece:
 
-* Um número de **componentes prontos para uso do AEM** para ilustrar o que pode ser obtido para o seu projeto:
+* Um número de **componentes predefinidos do AEM** para ilustrar o que pode ser obtido para o seu projeto:
 
-   * Exibição do produto
-   * Carrinho de compras
-   * Check-out
-   * Produtos visualizados recentemente
-   * Vouchers
-   * e outros
+  * Exibição do produto
+  * Carrinho de compras
+  * Check-out
+  * Produtos visualizados recentemente
+  * Vouchers
+  * e outros
 
   ![exemplo de componentes geometrixx](/help/sites-administering/assets/chlimage_1-130.png)
 
   >[!NOTE]
   >
-  >A estrutura de integração fornecida pelo AEM também permite a criação de componentes adicionais do AEM para recursos de comércio, independentemente do mecanismo de comércio eletrônico específico.
+  >A estrutura de integração fornecida pelo AEM também permite a criação de componentes AEM adicionais para recursos de comércio, independentemente do mecanismo de comércio eletrônico específico.
 
 * **Pesquisar** - usando:
 
-   * a pesquisa por AEM
-   * a pesquisa do sistema de comércio eletrônico
-   * uma pesquisa de terceiros
-   * ou uma combinação dos mesmos.
+  * a pesquisa do AEM
+  * a pesquisa do sistema de comércio eletrônico
+  * uma pesquisa de terceiros
+  * ou uma combinação dos mesmos.
 
   ![exemplo de pesquisa](/help/sites-administering/assets/chlimage_1-131.png)
 
-* Usa a capacidade do AEM de **apresentar seu conteúdo em vários canais**, seja na janela completa do navegador ou no dispositivo móvel. Isso entrega seu conteúdo no formato necessário para seus visitantes.
+* Usa a capacidade do AEM de **apresentar seu conteúdo em vários canais**, seja em uma janela de navegador completa ou em um dispositivo móvel. Isso entrega seu conteúdo no formato necessário para seus visitantes.
 
   ![exemplo de exibição móvel](/help/sites-administering/assets/chlimage_1-132.png)
 
-* A capacidade de **desenvolver sua própria implementação de integração com base na [estrutura de comércio eletrônico AEM](#the-framework)**.
+* A capacidade de **desenvolver sua própria implementação de integração com base na [estrutura de comércio eletrônico do AEM](#the-framework)**.
 
   As duas implementações disponíveis atualmente são criadas na mesma base, com base na API geral (a estrutura). A implementação de uma nova integração envolve apenas a implementação dos recursos necessários à sua integração. Os componentes de front-end podem ser usados por qualquer nova implementação, à medida que usam interfaces (portanto, são independentes da implementação).
 
 * A possibilidade de desenvolver o **comércio orientado por experiência com base nos dados e na atividade do comprador**. Isso permite que você realize vários cenários:
 
-   * Um exemplo pode ser fornecer reduções nos custos de envio quando o pedido total exceder um valor específico.
-   * Outro pode permitir que você forneça ofertas sazonais que usam dados de perfil (por exemplo, localização). Estes podem então ser destacados, novamente dependendo de outros fatores, quando necessário.
+  * Um exemplo pode ser fornecer reduções nos custos de envio quando o pedido total exceder um valor específico.
+  * Outro pode permitir que você forneça ofertas sazonais que usam dados de perfil (por exemplo, localização). Estes podem então ser destacados, novamente dependendo de outros fatores, quando necessário.
 
   No exemplo abaixo, um teaser é exibido, pois o conteúdo do carrinho é inferior a US$ 75:
 
@@ -178,9 +178,9 @@ O eCommerce AEM oferece:
 
 * E outros recursos, incluindo:
 
-   * Conteúdo do carrinho de compras retido nas sessões
-   * Histórico completo do pedido
-   * Atualização do catálogo expresso
+  * Conteúdo do carrinho de compras retido nas sessões
+  * Histórico completo do pedido
+  * Atualização do catálogo expresso
 
 ## A estrutura {#the-framework}
 
