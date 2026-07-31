@@ -12,7 +12,7 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '1930'
+source-wordcount: '1834'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Além de [desenvolver novos componentes](/help/sites-developing/developing-compo
 
 >[!NOTE]
 >
->Este documento se concentra no desenvolvimento de formulários usando os [Componentes de base](/help/sites-authoring/default-components-foundation.md) na interface clássica. A Adobe recomenda usar os novos [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) e [Ocultar condições](/help/sites-developing/hide-conditions.md) para o desenvolvimento de formulários na interface habilitada para toque.
+>Este documento se concentra no desenvolvimento de formulários usando os [Componentes de base](/help/sites-authoring/default-components-foundation.md) na interface clássica. A Adobe recomenda usar os novos [Componentes principais](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/introduction) e [Ocultar condições](/help/sites-developing/hide-conditions.md) para o desenvolvimento de formulários na interface habilitada para toque.
 
 ## Pré-carregando Valores de Formulário {#preloading-form-values}
 
@@ -91,7 +91,7 @@ Esse recurso pode, por exemplo, ser bem usado em uma configuração multilíngue
 
 Um formulário precisa de uma ação. Uma ação define a operação que é executada quando o formulário é enviado com os dados do usuário.
 
-Uma série de ações é fornecida com uma instalação padrão de AEM, que podem ser vistas em:
+Uma variedade de ações é fornecida com uma instalação padrão do AEM, que pode ser vista em:
 
 `/libs/foundation/components/form/actions`
 
@@ -117,9 +117,9 @@ Você pode adicionar sua própria ação em `/apps` da seguinte maneira:
 
    * Opcionalmente:
 
-      * `jcr:title` - especifique um título de sua escolha, ele aparecerá na lista suspensa de seleção. Se não estiver definido, o nome do nó será mostrado
+     * `jcr:title` - especifique um título de sua escolha, ele aparecerá na lista suspensa de seleção. Se não estiver definido, o nome do nó será mostrado
 
-      * `jcr:description` - insira uma descrição de sua escolha
+     * `jcr:description` - insira uma descrição de sua escolha
 
 1. Na pasta, crie um nó de diálogo:
 
@@ -128,14 +128,14 @@ Você pode adicionar sua própria ação em `/apps` da seguinte maneira:
 1. Na pasta, crie:
 
    1. Um script post.
-O nome do script é `post.POST.<extension>`, por exemplo, `post.POST.jsp`
-O script post é chamado quando um formulário é enviado para processar o formulário, ele contém o código que manipula os dados que chegam do formulário `POST`.
+      O nome do script é `post.POST.<extension>`, por exemplo, `post.POST.jsp`
+      O script post é chamado quando um formulário é enviado para processar o formulário, ele contém o código que manipula os dados que chegam do formulário `POST`.
 
    1. Adicione um script de encaminhamento que é chamado quando o formulário é enviado.
-O nome do script é `forward.<extension`>, por exemplo, `forward.jsp`
-Este script pode definir um caminho. A solicitação atual é então encaminhada para o caminho especificado.
+      O nome do script é `forward.<extension`>, por exemplo, `forward.jsp`
+      Este script pode definir um caminho. A solicitação atual é então encaminhada para o caminho especificado.
 
-   A chamada necessária é `FormsHelper#setForwardPath` (2 variantes). Um caso típico é executar alguma validação, ou lógica, para encontrar o caminho de destino e, em seguida, encaminhar para esse caminho, permitindo que o servlet Sling POST padrão faça o armazenamento real no JCR.
+   A chamada necessária é `FormsHelper#setForwardPath` (2 variantes). Um caso típico é executar alguma validação, ou lógica, para encontrar o caminho de destino e, em seguida, encaminhar para esse caminho, permitindo que o servlet Sling POST padrão faça o armazenamento real em JCR.
 
    Também pode haver outro servlet que faça o processamento real; nesse caso, a ação do formulário e `forward.jsp` atuariam somente como o código &quot;cola&quot;. Um exemplo disso é a ação de email em `/libs/foundation/components/form/actions/mail`, que encaminha detalhes para `<currentpath>.mail.html`onde está um servlet de email.
 
@@ -148,35 +148,35 @@ Este script pode definir um caminho. A solicitação atual é então encaminhada
 
    * Ao renderizar o formulário ( `GET`):
 
-      1. `init.jsp`
-      1. para todas as restrições do campo: `clientvalidation.jsp`
-      1. validationRT do formulário: `clientvalidation.jsp`
-      1. o formulário é carregado por meio do recurso de carga, se definido
-      1. `addfields.jsp` enquanto estava dentro da renderização `<form></form>`
+     1. `init.jsp`
+     1. para todas as restrições do campo: `clientvalidation.jsp`
+     1. validationRT do formulário: `clientvalidation.jsp`
+     1. o formulário é carregado por meio do recurso de carga, se definido
+     1. `addfields.jsp` enquanto estava dentro da renderização `<form></form>`
 
    * ao manipular um formulário `POST`:
 
-      1. `init.jsp`
-      1. para todas as restrições do campo: `servervalidation.jsp`
-      1. validationRT do formulário: `servervalidation.jsp`
-      1. `forward.jsp`
-      1. se um caminho de encaminhamento foi definido ( `FormsHelper.setForwardPath`), encaminhe a solicitação e, em seguida, chame `cleanup.jsp`
+     1. `init.jsp`
+     1. para todas as restrições do campo: `servervalidation.jsp`
+     1. validationRT do formulário: `servervalidation.jsp`
+     1. `forward.jsp`
+     1. se um caminho de encaminhamento foi definido ( `FormsHelper.setForwardPath`), encaminhe a solicitação e, em seguida, chame `cleanup.jsp`
 
-      1. se nenhum caminho de encaminhamento foi definido, chame `post.POST.jsp` (termina aqui, nenhum `cleanup.jsp` foi chamado)
+     1. se nenhum caminho de encaminhamento foi definido, chame `post.POST.jsp` (termina aqui, nenhum `cleanup.jsp` foi chamado)
 
 1. Novamente, na pasta, adicione opcionalmente:
 
    1. Um script para adicionar campos.
-O nome do script é `addfields.<extension>`, por exemplo, `addfields.jsp`
-Um script `addfields` é chamado imediatamente após o HTML do início do formulário ser gravado. Isso permite que a ação adicione campos de entrada personalizados ou outro HTML semelhante dentro do formulário.
+      O nome do script é `addfields.<extension>`, por exemplo, `addfields.jsp`
+      Um script `addfields` é chamado imediatamente após o HTML para o início do formulário ser gravado. Isso permite que a ação adicione campos de entrada personalizados ou outro HTML semelhante dentro do formulário.
 
    1. Um script de inicialização.
-O nome do script é `init.<extension>`, por exemplo, `init.jsp`
-Esse script é chamado quando o formulário é renderizado. Ele pode ser usado para inicializar especificações de ação.
+      O nome do script é `init.<extension>`, por exemplo, `init.jsp`
+      Esse script é chamado quando o formulário é renderizado. Ele pode ser usado para inicializar especificações de ação.
 
    1. Um script de limpeza.
-O nome do script é `cleanup.<extension>`, por exemplo, `cleanup.jsp`
-Esse script pode ser usado para executar a limpeza.
+      O nome do script é `cleanup.<extension>`, por exemplo, `cleanup.jsp`
+      Esse script pode ser usado para executar a limpeza.
 
 1. Use o componente **Forms** em um parsys. O menu suspenso **Tipo de ação** agora incluirá sua nova ação.
 
@@ -212,18 +212,18 @@ Você pode adicionar suas próprias restrições para um campo individual (em `/
 
    * Opcionalmente:
 
-      * `jcr:title` - especifique um título de sua escolha, ele aparecerá na lista de seleção. Se não estiver definido, o nome do nó será mostrado
-      * `hint` - informações adicionais, para o usuário, sobre como usar o campo
+     * `jcr:title` - especifique um título de sua escolha, ele aparecerá na lista de seleção. Se não estiver definido, o nome do nó será mostrado
+     * `hint` - informações adicionais, para o usuário, sobre como usar o campo
 
 1. Nessa pasta, você pode precisar dos seguintes scripts:
 
    * Um script de validação de cliente:
-O nome do script é `clientvalidation.<extension>`, por exemplo, `clientvalidation.jsp`
-Isso é chamado quando o campo de formulário é renderizado. Ele pode ser usado para criar o javascript do cliente para validar o campo no cliente.
+     O nome do script é `clientvalidation.<extension>`, por exemplo, `clientvalidation.jsp`
+     Isso é chamado quando o campo de formulário é renderizado. Ele pode ser usado para criar o javascript do cliente para validar o campo no cliente.
 
    * Um script de validação do servidor:
-O nome do script é `servervalidation.<extension>`, por exemplo, `servervalidation.jsp`
-Isso é chamado quando o formulário é enviado. Ele pode ser usado para validar o campo no servidor após ser enviado.
+     O nome do script é `servervalidation.<extension>`, por exemplo, `servervalidation.jsp`
+     Isso é chamado quando o formulário é enviado. Ele pode ser usado para validar o campo no servidor após ser enviado.
 
 >[!NOTE]
 >
@@ -281,8 +281,8 @@ No JavaScript, as condições usam o valor da propriedade Nome do elemento para 
 
    * Na lista suspensa no final da linha superior, selecione:
 
-      * **todos** - se todas as condições forem verdadeiras para mostrar ou ocultar o componente
-      * **any** - se apenas uma ou mais condições precisarem ser verdadeiras para mostrar ou ocultar o componente
+     * **todos** - se todas as condições forem verdadeiras para mostrar ou ocultar o componente
+     * **any** - se apenas uma ou mais condições precisarem ser verdadeiras para mostrar ou ocultar o componente
 
    * Na linha de condição (uma é apresentada como padrão), selecione um componente, operador e especifique um valor.
    * Adicione mais condições, se necessário, clicando em **Adicionar Condição**.
@@ -311,7 +311,7 @@ No JavaScript, as condições usam o valor da propriedade Nome do elemento para 
 
 As condições de mostrar/ocultar usam o valor da propriedade Nome do elemento para fazer referência a outros componentes no formulário. A configuração Mostrar/Ocultar é inválida quando qualquer uma das condições se refere a um componente excluído ou teve a propriedade Nome do elemento alterada. Quando essa situação ocorrer, você precisará atualizar manualmente as condições ou ocorrerá um erro quando o formulário for carregado.
 
-Quando a configuração Mostrar/Ocultar é inválida, a configuração é fornecida somente como código JavaScript. Edite o código para corrigir os problemas. O código usa a propriedade Nome do Elemento que foi originalmente usada para fazer referência aos componentes.
+Quando a configuração Mostrar/Ocultar é inválida, a configuração é fornecida somente como código JavaScript. Edite o código para corrigir os problemas.O código usa a propriedade Nome do elemento que foi originalmente usada para fazer referência aos componentes.
 
 ### Desenvolvimento de scripts para uso com o Forms {#developing-scripts-for-use-with-forms}
 
@@ -322,4 +322,4 @@ Você pode usar isso para ações como chamar um serviço antes que o formulári
 * Definir o tipo de recurso de validação
 * Incluir um script para validação:
 
-   * No JSP, chame o serviço da Web e crie um objeto `com.day.cq.wcm.foundation.forms.ValidationInfo` contendo suas mensagens de erro. Se houver erros, os dados do formulário não serão publicados.
+  * No JSP, chame o serviço da Web e crie um objeto `com.day.cq.wcm.foundation.forms.ValidationInfo` contendo suas mensagens de erro. Se houver erros, os dados do formulário não serão publicados.

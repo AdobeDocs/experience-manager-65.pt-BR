@@ -11,7 +11,7 @@ feature: Mobile
 role: Admin
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '2654'
+source-wordcount: '2617'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 {{ue-over-mobile}}
 
-O processo de desenvolvimento de aplicativos móveis para AEM reconhece que usuários de diferentes especialidades contribuem para o desenvolvimento de aplicativos móveis. O mapa de processos a seguir ilustra a ordem geral na qual os autores de conteúdo e desenvolvedores de aplicativos executam tarefas.
+O processo de desenvolvimento de aplicativos móveis da AEM reconhece que usuários de diferentes especialidades contribuem para o desenvolvimento de aplicativos móveis. O mapa de processos a seguir ilustra a ordem geral na qual os autores de conteúdo e desenvolvedores de aplicativos executam tarefas.
 
 ![chlimage_1-10](assets/chlimage_1-10.gif)
 
@@ -72,9 +72,9 @@ Os aplicativos móveis são baseados em um blueprint que define a estrutura e as
 * **Descrição:** Uma descrição do aplicativo.
 * **URL do Servidor:** A URL que fornece atualizações de conteúdo OTA (Over-the-Air) para o aplicativo. O valor padrão é o URL do servidor de publicação da instância usada para criar um aplicativo (retirado do serviço do externalizador). Observe que essa deve ser uma instância do servidor de publicação, em vez de um autor, o que requer autenticação.
 
-Você também pode fornecer um arquivo de imagem para usar como miniatura do aplicativo, selecionar a configuração de PhoneGap Build a ser usada e selecionar a configuração de análise do aplicativo móvel a ser usada. Essa imagem só é usada como uma miniatura para representar seu aplicativo móvel no console de aplicativos móveis no Experience Manager.
+Você também pode fornecer um arquivo de imagem para usar como miniatura do aplicativo, selecionar a configuração do PhoneGap Build a ser usada e selecionar a configuração de análise do aplicativo móvel a ser usada. Essa imagem só é usada como uma miniatura para representar seu aplicativo móvel no console de aplicativos móveis no Experience Manager.
 
-Existem guias adicionais (e opcionais) para o serviço de nuvem de build e para integrar o plug-in Adobe Mobile Services SDK ao seu aplicativo.
+Existem guias adicionais (e opcionais) para o serviço de nuvem de build e para integrar o plug-in SDK do Adobe Mobile Services ao seu aplicativo.
 
 * Build: clique em gerenciar configurações e configure o serviço de build build.phonegap.com aqui. Em seguida, no menu suspenso, é possível selecionar o serviço de nuvem do PhoneGap Build recém-criado.
 * Analytics: clique em gerenciar configurações e configure o serviço de nuvem [Adobe Mobile Services SDK](https://experienceleague.adobe.com/docs/mobile-services/using/home.html?lang=pt-BR). Em seguida, no menu suspenso, é possível selecionar o Mobile Service recém-criado para integrar ao aplicativo móvel.
@@ -91,7 +91,7 @@ O procedimento a seguir usa a interface para toque para criar um aplicativo para
    ![O ícone Criar indicado por um sinal de mais dentro de um quadrado.](do-not-localize/chlimage_1-7.png)
 
 1. (Opcional) Na guia Avançado, forneça uma descrição para o aplicativo e altere o URL do servidor, se necessário.
-1. (Opcional) Se estiver usando PhoneGap Build para compilar o aplicativo, na guia Criar, selecione a Configuração a ser usada.
+1. (Opcional) Se estiver usando o PhoneGap Build para compilar o aplicativo, na guia Criar, selecione a Configuração a ser usada.
 
    Para criar uma configuração de criação do PhoneGap, clique em Gerenciar configurações.
 
@@ -124,7 +124,7 @@ Após criar um aplicativo para dispositivos móveis, você pode alterar as propr
 #### Configurar uma variação de idioma do aplicativo {#configure-a-language-variation-of-the-application}
 
 1. No painel, clique em Aplicativos.
-1. Clique para fazer drill-into no aplicativo móvel que deseja editar no Admin Console de aplicativos. Selecione a versão do idioma do aplicativo a ser configurado e clique no ícone Exibir propriedades do aplicativo.
+1. Clique para detalhar o aplicativo para dispositivos móveis que deseja editar na Admin Console de aplicativos. Selecione a versão do idioma do aplicativo a ser configurado e clique no ícone Exibir propriedades do aplicativo.
 
    ![O ícone Exibir Propriedades do Aplicativo indicado pela letra I dentro de um círculo.](do-not-localize/chlimage_1-11.png)
 
@@ -146,7 +146,7 @@ Depois de criar o aplicativo móvel, adicione o conteúdo que é usado como a in
 
 ### Mover conteúdo para aplicativos móveis {#moving-content-to-mobile-applications}
 
-O cache da sincronização de conteúdo na instância de publicação do AEM é usado como um repositório de conteúdo para aplicativos móveis:
+O cache da Sincronização de conteúdo na instância de publicação do AEM é usado como um repositório de conteúdo para aplicativos móveis:
 
 * O conteúdo do cache da Sincronização de conteúdo é incluído no aplicativo quando os desenvolvedores o compilam.
 * O conteúdo no cache está disponível para aplicativos móveis instalados para atualizar o conteúdo do aplicativo.
@@ -168,14 +168,14 @@ Execute o procedimento a seguir na instância em que deseja atualizar o cache. P
 
 ### Utilização de modelos de aplicativo {#using-app-templates}
 
-Este é um recurso que está disponível no Feature Pack 2 do Apps 6.1 e fornece uma maneira fácil de usar os modelos de aplicativo existentes para a criação de novos aplicativos no AEM.
+Este é um recurso que está disponível com o Pacote de recursos 2 do Apps 6.1 e fornece uma maneira fácil de usar os modelos de aplicativo existentes para a criação de novos aplicativos no AEM.
 
 O que é um modelo de aplicativo? Pense nisso como uma coleção de modelos de página e componentes que representam uma linha de base ou base de um aplicativo.
 Ao criar um aplicativo com base no modelo de outro aplicativo, você obterá um aplicativo que tem um ponto de partida representativo do aplicativo no qual ele foi criado.
 
 Você deve ter um modelo de aplicativo móvel existente (ou um aplicativo instalado que tenha um modelo de aplicativo) para usar este recurso.
 
-O pacote de amostras mais recente do AEM Apps 6.1 inclui uma versão atualizada do Geometrixx com um modelo de aplicativo. Como alternativa, você pode instalar o StarterKit, que também fornece um template.
+O pacote de amostras mais recente dos Aplicativos AEM 6.1 inclui uma versão atualizada do aplicativo Geometrixx com um modelo de aplicativo. Como alternativa, você pode instalar o StarterKit, que também fornece um template.
 
 Etapas para criar um aplicativo com base em um modelo de aplicativo:
 
@@ -192,7 +192,7 @@ Etapas para criar um aplicativo com base em um modelo de aplicativo:
 1. Clique em Avançar.
 1. Forneça uma ID e um título do aplicativo, mas convém incluir também um Nome e uma Descrição.
 
-   1. Além disso, você pode fornecer um PNG (formato de ícone do PhoneGap compatível) como um ícone navegando pelos ativos do AEM.
+   1. Além disso, você pode fornecer um PNG (formato de ícone do PhoneGap compatível) como um ícone, navegando pelos ativos da AEM.
    1. Lembre-se de que você pode editar todos esses campos após a criação do aplicativo no bloco Gerenciar aplicativo. Com exceção da ID do aplicativo, após a definição da ID do aplicativo, você não poderá alterá-la.
 
 ![chlimage_1-150](assets/chlimage_1-150.png)
@@ -206,42 +206,42 @@ Etapas para criar um aplicativo com base em um modelo de aplicativo:
 
 >[!NOTE]
 >
->Se você desinstalar o pacote de aplicativo de referência Geometrixx Outdoors do AEM e criar um aplicativo com base em seu modelo, esse aplicativo não estará mais funcional. O aplicativo Geometrixx Outdoors pode ser removido, no entanto, o modelo de aplicativo deve permanecer se for usado por outros aplicativos móveis.
+>Se você desinstalar o pacote de aplicativo de referência do Geometrixx Outdoors do AEM e criar um aplicativo com base em seu modelo, esse aplicativo não estará mais funcional. O aplicativo Geometrixx Outdoors pode ser removido, no entanto, o modelo de aplicativo deve permanecer se for usado por outros aplicativos móveis.
 
-## Explorar o aplicativo de amostra Geometrixx Outdoors {#exploring-the-sample-geometrixx-outdoors-app}
+## Explorar o aplicativo de amostra do Geometrixx Outdoors {#exploring-the-sample-geometrixx-outdoors-app}
 
 O aplicativo Geometrixx Outdoors é um aplicativo PhoneGap de amostra que demonstra os recursos do blueprint padrão do aplicativo PhoneGap e os componentes móveis de amostra.
 
-Para abrir o aplicativo, no painel, clique em Aplicativos móveis e selecione Geometrixx Outdoors.
+Para abrir o aplicativo, no painel, clique em Aplicativos móveis e, em seguida, selecione Aplicativo Geometrixx Outdoors.
 
-### Recursos comuns da página - Aplicativo para dispositivos móveis Geometrixx {#common-page-features-geometrixx-mobile-app}
+### Recursos comuns da página - Aplicativo móvel Geometrixx {#common-page-features-geometrixx-mobile-app}
 
 Cada página do aplicativo móvel inclui os seguintes recursos:
 
 * Um botão Voltar para retornar à página principal. O botão Voltar não é exibido na página inicial.
 * Um painel dispensável que oferece um menu de comandos e links:
 
-   * Abra a página Locais.
-   * Abra o carrinho.
-   * Fazer logon.
-   * Atualize o aplicativo.
+  * Abra a página Locais.
+  * Abra o carrinho.
+  * Fazer logon.
+  * Atualize o aplicativo.
 
 * O sistema de parágrafo, para adicionar componentes e criar conteúdo.
 
-### A página inicial - Aplicativo para dispositivos móveis Geometrixx {#the-home-page-geometrixx-mobile-app}
+### A página inicial - Aplicativo móvel Geometrixx {#the-home-page-geometrixx-mobile-app}
 
 O conteúdo da página inicial é composto pelas seguintes ferramentas de navegação:
 
 * Um componente Lista de menus que fornece links para as páginas secundárias Engrenagem, Revisões, Notícias e Sobre nós.
 * Um componente Carrossel de deslizamento que mostra as páginas secundárias.
 
-### A página de engrenagens - Aplicativo para dispositivos móveis Geometrixx {#the-gear-page-geometrixx-mobile-app}
+### A página de engrenagens - Aplicativo móvel Geometrixx {#the-gear-page-geometrixx-mobile-app}
 
 A página de engrenagem fornece aos usuários acesso às páginas de produtos. Um componente de lista de menus fornece acesso às páginas secundárias da página de engrenagens. As páginas secundárias são categorias de produtos que o site apresenta.
 
 * Temporada
 * Vestuário
-* Sexo
+* Gênero
 * Atividade
 
 Cada página de categoria usa a mesma estrutura de conteúdo que a página de engrenagem. O carrossel fornece acesso a páginas secundárias que são subcategorias de produtos. As páginas de subcategoria contêm listas de produtos que fornecem links para páginas de produtos.
@@ -252,19 +252,19 @@ A página Produtos e sua hierarquia de páginas secundárias implementam um sist
 
 A página Produtos não está disponível para usuários do aplicativo. A página de engrenagens fornece acesso a cada página de produto.
 
-### A página de revisões - Aplicativo móvel Geometrixx {#the-reviews-page-geometrixx-mobile-app}
+### A página de análises - Aplicativo móvel Geometrixx {#the-reviews-page-geometrixx-mobile-app}
 
 Contém um botão Voltar. O sistema de parágrafo permite adicionar componentes.
 
 Ao usar o aplicativo, a página Revisões está disponível no carrossel da página em inglês.
 
-### A página de notícias - Aplicativo para dispositivos móveis Geometrixx {#the-news-page-geometrixx-mobile-app}
+### A página de notícias - Aplicativo móvel Geometrixx {#the-news-page-geometrixx-mobile-app}
 
 Contém um botão Voltar. O sistema de parágrafo permite adicionar componentes.
 
 Ao usar o aplicativo, a página Notícias está disponível no carrossel da página em inglês.
 
-### A página Quem somos - Aplicativo para dispositivos móveis Geometrixx {#the-about-us-page-geometrixx-mobile-app}
+### A página Sobre nós - Aplicativo móvel Geometrixx {#the-about-us-page-geometrixx-mobile-app}
 
 A página Sobre nós contém vários componentes Linha de duas colunas. Cada coluna contém um componente Imagem ou Texto. Os componentes são editáveis e o sistema de parágrafos permite adicionar componentes.
 
@@ -278,7 +278,7 @@ Ao usar o aplicativo, a página Locais está disponível na lista de menus da p�
 
 ## Componentes móveis de exemplo {#sample-mobile-components}
 
-Vários componentes estão imediatamente disponíveis no Sidekick ao criar as páginas de um aplicativo móvel. Os componentes pertencem ao grupo de componentes PhoneGap.
+Vários componentes ficam imediatamente disponíveis no Sidekick ao criar as páginas de um aplicativo móvel. Os componentes pertencem ao grupo de componentes PhoneGap.
 
 ### Carrossel de troca {#swipe-carousel}
 
@@ -301,7 +301,7 @@ Configure o comportamento do carrossel:
 Especifique como a lista de páginas é gerada:
 
 * Uso da lista de criação: o método a ser usado para especificar as páginas a serem incluídas no carrossel. Consulte Criação da lista de páginas.
-* Ordenar por: selecione uma propriedade de página a ser usada para classificar a lista de páginas. Por exemplo, selecione jcr:title para classificar páginas alfabeticamente por título.
+* Ordenar por: selecione uma propriedade de página a ser usada para classificar a lista de páginas. Por exemplo, selecione jcr:title para classificar páginas em ordem alfabética por título.
 * Limite: o número máximo de páginas a serem incluídas. Essa propriedade é adequada para métodos baseados em pesquisa para criar a lista de páginas.
 
 #### Criação da lista de páginas {#building-the-page-list}

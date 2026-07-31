@@ -48,7 +48,7 @@ Use o seletor de produtos para escolher um produto quando quiser um ponto de ace
 
    ![chlimage_1-523](assets/chlimage_1-523.png)
 
-   Altere onde o Experience Manager procura dados do produto tocando em **[!UICONTROL Procurar]** e navegando para outra pasta.
+   Altere o local em que o Experience Manager procura dados de produtos tocando em **[!UICONTROL Procurar]** e navegando para outra pasta.
 
    ![chlimage_1-524](assets/chlimage_1-524.png)
 
@@ -86,7 +86,7 @@ Use o seletor de sites para escolher uma página da Web quando quiser que um pon
 
    ![chlimage_1-531](assets/chlimage_1-531.png)
 
-1. Se você selecionar o ponto de acesso ou o mapa de imagem no modo **[!UICONTROL Visualizar]**, navegará até a página do site de Experience Manager especificado.
+1. Se você selecionar o ponto de acesso ou o mapa de imagem no modo **[!UICONTROL Visualização]**, navegue até a página do site do Experience Manager especificada.
 
 ## Usar o Seletor de ativos {#selecting-assets}
 

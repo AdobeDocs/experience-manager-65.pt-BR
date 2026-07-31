@@ -7,7 +7,7 @@ feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin, Developer
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
-source-wordcount: '1951'
+source-wordcount: '2023'
 ht-degree: 87%
 
 ---
@@ -18,7 +18,7 @@ Nesta parte da [jornada de desenvolvedor do AEM Headless,](overview.md) você en
 
 ## A história até agora {#story-so-far}
 
-No documento anterior da jornada AEM headless, [Introdução ao AEM headless](getting-started.md), você aprendeu a teoria básica do que é um CMS headless e agora deve:
+No documento anterior da jornada headless do AEM, [Introdução ao AEM headless](getting-started.md), você aprendeu a teoria básica do que é um CMS headless, e agora deve:
 
 * Entender os fundamentos dos recursos headless do AEM.
 * Conhecer os pré-requisitos para usar recursos headless do AEM.
@@ -38,7 +38,7 @@ Este documento ajuda você a entender as etapas necessárias para implementar se
 
 ## Requisitos {#requirements}
 
-Antes de continuar com este documento, verifique se você revisou o documento anterior na Jornada para desenvolvedores AEM Headless, [Introdução ao AEM Headless](getting-started.md), certificando-se de:
+Antes de continuar com este documento, verifique se você revisou o documento anterior na Jornada para desenvolvedores do AEM Headless, [Introdução ao AEM Headless](getting-started.md), certificando-se de:
 
 * Satisfaz os requisitos listados.
 * Considerou sua própria definição de projeto, incluindo escopo, funções e desempenho.
@@ -47,7 +47,7 @@ Antes de continuar com este documento, verifique se você revisou o documento an
 
 Para iniciar seu primeiro projeto headless do AEM, é necessário garantir que você tenha um modelo de conteúdo compatível com a personalização e as atualizações que deseja fazer em todos os canais.
 
-Separado do AEM, também é necessário garantir que você tenha um ambiente de desenvolvimento adequado configurado, caso esteja criando um aplicativo do lado do cliente para que você possa testar seu cliente em relação às chamadas de API para AEM.
+Separado do AEM, também é necessário garantir que você tenha um ambiente de desenvolvimento adequado configurado, caso esteja criando um aplicativo do lado do cliente para que você possa testar seu cliente em relação às chamadas de API para o AEM.
 
 ### Definição de modelos de conteúdo e APIs {#defining-models}
 
@@ -71,7 +71,7 @@ Durante o estágio de desenvolvimento, é recomendável trabalhar com um ambient
 
 ### Cooperação de desenvolvedores e autores de conteúdo {#cooperation}
 
-Os desenvolvedores precisam de um ambiente de desenvolvimento do AEM configurado com os modelos de conteúdo preenchidos. O desenvolvedor cria o cliente que consumirá conteúdo do AEM Headless enquanto os autores de conteúdo ainda estão criando o conteúdo. É por isso que as definições de API são realmente importantes. Ao usar o SDK do AEM, o desenvolvedor pode criar um gancho de teste para que testes de cliente e unidade possam ser criados para garantir que o cliente possa renderizar o conteúdo corretamente.
+Os desenvolvedores precisam de um ambiente de desenvolvimento do AEM configurado com os modelos de conteúdo preenchidos. O desenvolvedor cria o cliente que consumirá conteúdo do AEM Headless enquanto os autores de conteúdo ainda estão criando o conteúdo. É por isso que as definições de API são realmente importantes. Ao usar o AEM SDK, o desenvolvedor pode criar um gancho de teste para que testes de cliente e unidade possam ser criados para garantir que o cliente possa renderizar o conteúdo corretamente.
 
 Os autores de conteúdo criam conteúdo com base nos modelos de conteúdo que foram definidos no ambiente de preparo. Usando a ferramenta de criação de fragmento de conteúdo, o autor criaria um fragmento de conteúdo ou editaria um fragmento de conteúdo existente. Antes de publicá-lo, o autor pode visualizar como será a aparência no cliente, trabalhando com o desenvolvedor para mover o modelo de conteúdo para o desenvolvimento ou configurar um ambiente de desenvolvedor apenas para que os autores visualizem a aparência dele no cliente.
 
@@ -95,7 +95,7 @@ Esta é uma visão geral do que é necessário para implementar seu primeiro apl
 1. Criar fragmentos de conteúdo
 1. Consultar conteúdo com o GraphQL
 
-## Práticas recomendadas     {#best-practices}
+## Práticas recomendadas {#best-practices}
 
 Um projeto headless não é bem-sucedido apenas devido à tecnologia implementada, mas também por conta do bom planejamento e governança do projeto. A seguir estão várias práticas recomendadas para que os autores e desenvolvedores de conteúdo se lembrem ao planejar o projeto.
 
@@ -107,8 +107,8 @@ Um projeto headless não é bem-sucedido apenas devido à tecnologia implementad
 * Se você tiver restrições de acesso, tente alinhar seu modelo de conteúdo aos requisitos de acesso.
 * Quando você tem requisitos de acesso, eles devem orientar sua hierarquia de conteúdo. Agrupe os conteúdos que são editados pelo mesmo grupo de pessoas.
 * Agrupe os conteúdos semelhantes em uma pasta.
-   * É mais provável que um autor de conteúdo copie e cole o conteúdo existente para criar um novo conteúdo. Portanto, realizar esse processo na mesma pasta o torna mais eficiente.
-   * O AEM possibilita que os modelos permitidos sejam definidos por pasta, para que o botão **Criar novo** só mostre os modelos compatíveis com esse local.
+  * É mais provável que um autor de conteúdo copie e cole o conteúdo existente para criar um novo conteúdo. Portanto, realizar esse processo na mesma pasta o torna mais eficiente.
+  * O AEM possibilita que os modelos permitidos sejam definidos por pasta, para que o botão **Criar novo** só mostre os modelos compatíveis com esse local.
 * A criação de novos fragmentos de conteúdo no editor de fragmento de conteúdo em linha pode ser simplificada se a pasta raiz estiver definida no modelo. Assim, profissionais não precisam escolher um local, somente fornecer um nome e começar a editar a nova referência.
 
 ### Criar conteúdo {#authoring}
@@ -146,11 +146,11 @@ Não importa qual o seu estilo de aprendizagem, a Adobe quer que você tenha suc
 Embora seja recomendável seguir para a próxima parte da jornada de desenvolvimento headless revisando o documento [Como modelar seu conteúdo como Modelos de conteúdo do AEM,](model-your-content.md) veja a seguir alguns recursos adicionais e opcionais que aprofundam alguns conceitos mencionados neste documento, mas que não são necessários para continuar na jornada headless.
 
 * [Jornada de tradução headless do AEM](/help/journey-headless/translation/overview.md) - Essa jornada de documentação oferece uma ampla compreensão da tecnologia headless, como o AEM fornece conteúdo headless e como você pode traduzi-lo.
-* [Desenvolvimento headless para AEM Sites](/help/sites-developing/headless/introduction.md) - uma introdução rápida para orientar o desenvolvedor AEM headless com os recursos necessários
+* [Desenvolvimento headless para AEM Sites](/help/sites-developing/headless/introduction.md) - uma introdução rápida para orientar o desenvolvedor headless do AEM com os recursos necessários
 * [Tutoriais AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=pt-BR) - Use esses tutoriais práticos para explorar como utilizar as várias opções para fornecer conteúdo a endpoints headless com o AEM e escolha o que é certo para você.
 * [Gerenciamento de Conteúdo Headless Usando APIs GraphQL](https://experienceleague.adobe.com/pt-br?Solution=Experience+Manager&Solution=Experience+Manager+Sites&Solution=Experience+Manager+Forms&Solution=Experience+Manager+Screens&launch=ExperienceManager-D-1-2020.1.headless&lang=pt-BR#courses) - Siga este curso para obter uma visão geral da API GraphQL implementada no AEM. Autenticação via AdobeID é necessária.
 * [AEM Guides WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql) - Este projeto do GitHub inclui aplicativos exemplificativos que destacam APIs GraphQL do AEM.
-* [Guia de Introdução Headless](/help/sites-developing/headless/introduction.md#getting-started) - uma rápida introdução aos recursos headless do AEM para usuários já familiarizados com o AEM.
+* [Guia de introdução headless](/help/sites-developing/headless/introduction.md#getting-started) - uma introdução rápida aos recursos headless do AEM para usuários já familiarizados com o AEM.
 * [Criar modelos de fragmento de conteúdo](/help/assets/content-fragments/content-fragments-models.md) - Documentação técnica sobre Modelos de fragmento de conteúdo
 * [Criar fragmentos de conteúdo](/help/assets/content-fragments/content-fragments.md) - Documentação técnica sobre Fragmentos de conteúdo
 * [Consultar conteúdo com GraphQL](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) - Documentação técnica sobre a API GraphQL

@@ -12,26 +12,26 @@ feature: Administering
 role: Admin
 source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
 workflow-type: tm+mt
-source-wordcount: '764'
+source-wordcount: '790'
 ht-degree: 0%
 
 ---
 
 # Recomendações da interface do usuário para clientes{#user-interface-recommendations-for-customers}
 
-O Adobe Experience Manager vem com duas interfaces: a interface unificada do Experience Cloud (também conhecida como interface habilitada para toque) e a interface clássica.
+O Adobe Experience Manager vem com duas interfaces: a interface unificada da Experience Cloud (também conhecida como interface habilitada para toque) e a interface clássica.
 
 Este documento tem como objetivo orientar os clientes a fazer uma escolha sobre qual interface do usuário usar, dependendo de sua situação.
 
 Condições de interesse:
 
 * **IU (ou IU padrão)**
-Interface do usuário moderna, introduzida na versão 5.6.0 como pré-visualização de tecnologia e estendida em versões subsequentes. Ela se baseia na experiência unificada do usuário para o Adobe Experience Cloud, anteriormente conhecida como interface habilitada para toque ou interface de toque.
+Interface do usuário moderna, introduzida na versão 5.6.0 como pré-visualização de tecnologia e estendida em versões subsequentes. Ela se baseia na experiência unificada do usuário para a Adobe Experience Cloud, antes conhecida como interface habilitada para toque ou interface de toque.
 
-* **Interface clássica**
+* Interface clássica do **&#x200B;**
 Interface do usuário baseada na tecnologia ExtJS introduzida com o CQ 5.1 em 2008.
 
-* **Administrador do Site**
+* **Administrador do site**
 Recursos para gerenciar a hierarquia do site (mover, ativar, referências gerenciadas) e criar novas páginas.
 
 * **Criação de página**
@@ -72,7 +72,7 @@ Esta é uma lista de recomendações do Gerenciamento de produtos do Adobe Exper
    <td>
     <ol>
      <li>Atualização para 6.5</li>
-     <li>Use a interface padrão para administração do site, ativos, .. etc.<br /> </li>
+     <li>Use a interface padrão para administração do site, ativos etc.<br /> </li>
      <li>Configure a ação "Editar página" para abrir o Editor de páginas da interface clássica. Consulte <a href="#selecting-your-ui">Selecionando sua interface</a>.</li>
     </ol> <p>Em seguida, em uma segunda fase:</p>
     <ol>
@@ -84,7 +84,7 @@ Esta é uma lista de recomendações do Gerenciamento de produtos do Adobe Exper
    <td>
     <ol>
      <li>Atualização para 6.5</li>
-     <li>Use a interface padrão para administração do site, ativos, .. etc.</li>
+     <li>Use a interface padrão para administração do site, ativos etc.</li>
      <li>Configure a ação "Editar página" para abrir o Editor de páginas da interface clássica. Consulte <a href="#selecting-your-ui">Selecionando sua interface</a>.</li>
     </ol> <p>Em seguida, em uma segunda fase:</p>
     <ol>

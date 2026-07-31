@@ -11,8 +11,8 @@ exl-id: 4e7f17ea-6985-4644-b91c-2c1299d01321
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '932'
-ht-degree: 2%
+source-wordcount: '1279'
+ht-degree: 1%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 2%
 
 O Quickview padrão é usado em experiências de comércio eletrônico pelas quais um pop-up é exibido com as informações do produto para impulsionar uma compra. No entanto, é possível acionar a exibição do conteúdo personalizado nas janelas pop-up. Dependendo do visualizador, essa funcionalidade permite que os usuários selecionem em um ponto de acesso, uma imagem em miniatura ou um mapa de imagem para ver informações ou conteúdo relacionado.
 
-A exibição rápida é compatível com os seguintes visualizadores no Dynamic Media:
+O Quickview é compatível com os seguintes visualizadores no Dynamic Media:
 
 * Imagem interativa (pontos de acesso clicáveis)
 * Vídeo interativo (imagens em miniatura clicáveis durante a reprodução do vídeo)
@@ -83,7 +83,7 @@ Embora a funcionalidade de cada visualizador seja diferente, o processo de cria�
    O visualizador usa um manipulador chamado `QuickViewActive`.
 
    **Exemplo**
-Suponha que você use o seguinte exemplo de código incorporado do na sua página da Web para uma imagem interativa:
+   Suponha que você use o seguinte exemplo de código incorporado do na sua página da Web para uma imagem interativa:
 
    ![chlimage_1-291](assets/chlimage_1-291.png)
 
@@ -114,7 +114,7 @@ Suponha que você use o seguinte exemplo de código incorporado do na sua págin
    O manipulador `quickViewActivate` controla o Quickview no visualizador. O manipulador contém a lista de variáveis e chamadas de função para uso com o Quickview. O código de inserção fornece o mapeamento para a variável SKU definida na Quickview e uma chamada de função de amostra `loadQuickView`.
 
    **Mapeamento de variáveis**
-Mapeie as variáveis a serem usadas na página da Web para o valor SKU e as variáveis genéricas contidas na exibição rápida:
+   Mapeie as variáveis a serem usadas na página da Web para o valor SKU e as variáveis genéricas contidas na exibição rápida:
 
    `var *variable1*= inData.*quickviewVariable*`
 
@@ -130,7 +130,7 @@ Mapeie as variáveis a serem usadas na página da Web para o valor SKU e as vari
    ```
 
    **Chamada de função**
-O manipulador também requer uma chamada de função para que o Quickview funcione. Supõe-se que a função esteja acessível pela página do host. O código incorporado fornece um exemplo de chamada de função:
+   O manipulador também requer uma chamada de função para que o Quickview funcione. Supõe-se que a função esteja acessível pela página do host. O código incorporado fornece um exemplo de chamada de função:
 
    `loadQuickView(sku)`
 
@@ -147,7 +147,7 @@ O manipulador também requer uma chamada de função para que o Quickview funcio
    * Remova o comentário da seção setHandlers do código incorporado.
    * Mapeie quaisquer variáveis adicionais contidas na Quickview.
 
-      * Atualize a chamada `loadQuickView(sku,*var1*,*var2*)` se estiver adicionando variáveis adicionais.
+     * Atualize a chamada `loadQuickView(sku,*var1*,*var2*)` se estiver adicionando variáveis adicionais.
 
    * Crie uma função simples `loadQuickView` () na página, fora do visualizador.
 
@@ -159,7 +159,7 @@ O manipulador também requer uma chamada de função para que o Quickview funcio
    }
    ```
 
-   * Carregue uma página de HTML de teste em um servidor da Web e abra.
+   * Carregue uma página de teste do HTML em um servidor da Web e abra.
 
      Com as variáveis do Quickview mapeadas e a chamada de função estabelecida, o console do navegador grava o valor da variável no console do navegador usando a função de exemplo fornecida.
 
@@ -176,7 +176,7 @@ O manipulador também requer uma chamada de função para que o Quickview funcio
    </style>
    ```
 
-1. Coloque o pop-up `DIV` no corpo da página de HTML.
+1. Coloque o pop-up `DIV` no corpo da página do HTML.
 
    Um dos elementos é definido com uma ID que é atualizada com o valor da SKU quando o usuário chama uma Quickview. O exemplo também inclui um botão simples para ocultar o pop-up novamente depois que ele se tornar visível.
 
@@ -200,7 +200,7 @@ O manipulador também requer uma chamada de função para que o Quickview funcio
    </script>
    ```
 
-1. Carregue uma página de HTML de teste no servidor Web e abra. O visualizador exibe o pop-up `DIV` quando um usuário invoca uma Quickview.
+1. Carregue uma página de teste do HTML no servidor da Web e abra. O visualizador exibe o pop-up `DIV` quando um usuário invoca uma Quickview.
 1. **Como exibir o pop-up personalizado no modo de tela cheia**
 
    Alguns visualizadores, como o visualizador de Vídeo interativo, oferecem suporte à exibição no modo de tela cheia. Entretanto, usar o pop-up conforme descrito nas etapas anteriores faz com que ele seja exibido atrás do visualizador enquanto está no modo de tela cheia.
@@ -261,7 +261,7 @@ O manipulador também requer uma chamada de função para que o Quickview funcio
    `*viewerInstance.*init()`
 
    **Exemplo**
-Este exemplo usa o visualizador de Imagem interativa.
+   Este exemplo usa o visualizador de Imagem interativa.
 
    `s7interactiveimageviewer.init()`
 

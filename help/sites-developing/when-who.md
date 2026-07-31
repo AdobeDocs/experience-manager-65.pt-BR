@@ -11,7 +11,7 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '269'
+source-wordcount: '270'
 ht-degree: 0%
 
 ---
@@ -33,8 +33,8 @@ Várias funções podem ser envolvidas em testes e em vários estágios de desen
    <td>Esses testes são os primeiros na cadeia, embora sejam repetidos/estendidos durante o desenvolvimento.</td>
   </tr>
   <tr>
-   <td>Equipe de controle de qualidade</td>
-   <td><p>Você precisa de uma Equipe de garantia de qualidade (de qualquer tamanho, se apropriado) para testes funcionais e de desempenho.</p> <p>São testadores neutros e dedicados - uma regra de ouro do software sempre afirma que um desenvolvedor nunca deve testar seu próprio trabalho.</p> <p>Os membros dessa equipe podem ser retirados da equipe do projeto Day, do parceiro e/ou da equipe do cliente.</p> </td>
+   <td>Equipe do Quality Assurance</td>
+   <td><p>Você precisa de uma Equipe do Quality Assurance (de qualquer tamanho, se apropriado) para testes funcionais e de desempenho.</p> <p>São testadores neutros e dedicados - uma regra de ouro do software sempre afirma que um desenvolvedor nunca deve testar seu próprio trabalho.</p> <p>Os membros dessa equipe podem ser retirados da equipe do projeto Day, do parceiro e/ou da equipe do cliente.</p> </td>
    <td><p>A primeira versão da função deve ser disponibilizada aos testadores (quando for possível). Embora uma versão provisória antecipada possa gerar muitos bugs, ela pode fornecer feedback antecipado sobre problemas críticos.</p> </td>
   </tr>
   <tr>

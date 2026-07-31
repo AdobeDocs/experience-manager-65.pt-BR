@@ -11,7 +11,7 @@ feature: Adaptive Forms
 role: Admin, User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '1274'
+source-wordcount: '1295'
 ht-degree: 0%
 
 ---
@@ -63,10 +63,10 @@ Vamos analisar os detalhes de como você pode medir o desempenho e melhorar as t
 Para obter insights profundos sobre as interações do cliente com seus formulários, primeiro é necessário configurar o Analytics no AEM Forms. Execute as seguintes etapas:
 
 1. Criar um conjunto de relatórios no Adobe Analytics
-1. Criar configuração do serviço em nuvem no AEM
-1. Criar estrutura de serviço em nuvem no AEM
+1. Criar configuração do Cloud Service no AEM
+1. Criar estrutura do Cloud Service no AEM
 1. Configurar o serviço de configuração do AEM Forms Analytics no AEM
-1. Habilitar análise no formulário no AEM
+1. Habilitar análises no formulário no AEM
 
 Para obter etapas detalhadas, consulte [Configuração de análises e relatórios para formulários adaptáveis](../../forms/using/configure-analytics-forms-documents.md).
 
@@ -78,9 +78,9 @@ Para criar e executar testes A/B para seus formulários adaptáveis, configure o
 
 À medida que os clientes acessam e interagem com formulários nos quais você ativou o Analytics, suas interações são capturadas em bancos de dados do Analytics altamente seguros. Os bancos de dados são segmentados por clientes e acessíveis por meio de conexões seguras.
 
-Você pode visualizar um relatório do AEM para formulários habilitados para análise e analisar dados. Para exibir o relatório:
+Você pode visualizar um relatório no AEM para formulários habilitados para análise e analisar dados. Para exibir o relatório:
 
-1. No servidor AEM, navegue até **Forms > Forms e Documentos**.
+1. No servidor do AEM, navegue até **Forms > Forms e Documentos**.
 1. Selecione o formulário para o qual deseja criar o relatório de análise.
 1. Clique no ícone Relatórios do Analytics. O relatório é exibido.
 
@@ -114,7 +114,7 @@ Para obter mais detalhes sobre relatórios de análise de formulários, consulte
 
 >[!NOTE]
 >
->Você pode visualizar relatórios detalhados e obter insights mais profundos sobre os clientes e as interações deles com os formulários da sua conta do Analytics no Adobe Marketing Cloud.
+>Você pode visualizar relatórios detalhados e aprofundar o insight sobre os clientes e as interações deles com os formulários da sua conta do Analytics no Adobe Marketing Cloud.
 
 #### Etapa 3: Analisar pontos de dados {#step-analyze-data-points}
 
