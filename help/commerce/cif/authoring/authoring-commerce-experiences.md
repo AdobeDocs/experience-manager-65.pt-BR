@@ -7,7 +7,7 @@ feature: Commerce Integration Framework
 role: Admin, Developer
 source-git-commit: a02724597338ee2451448c6c4188fc349dd47d01
 workflow-type: tm+mt
-source-wordcount: '711'
+source-wordcount: '724'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,11 @@ ht-degree: 0%
 
 ## Visão geral {#overview}
 
-O complemento CIF estende a criação de AEM com recursos específicos de comércio. Isso permite que os autores criem e gerenciem experiências relacionadas ao comércio com eficiência, obtendo acesso aos dados e ao conteúdo do produto sem sair do contexto.
+O complemento CIF estende a criação do AEM com recursos específicos de comércio. Isso permite que os autores criem e gerenciem experiências relacionadas ao comércio com eficiência, obtendo acesso aos dados e ao conteúdo do produto sem sair do contexto.
 
 ## Seletores {#pickers}
 
-Os seletores de produto e categoria são caixas de diálogo da interface modal que oferecem uma maneira confortável para os autores de AEM encontrarem e selecionarem produtos ou categorias quando necessário. Os Componentes principais, a associação de conteúdo e os modelos de produto são as áreas típicas com configurações que exigem dados do catálogo de produtos. Os seletores são compatíveis com várias opções de configuração, como várias seleções, seleção de variação e pré-seleção de valores.
+Os seletores de produto e categoria são caixas de diálogo da interface modal que oferecem uma maneira confortável para os autores do AEM encontrarem e selecionarem produtos ou categorias quando necessário. Os Componentes principais, a associação de conteúdo e os modelos de produto são as áreas típicas com configurações que exigem dados do catálogo de produtos. Os seletores são compatíveis com várias opções de configuração, como várias seleções, seleção de variação e pré-seleção de valores.
 
 ### Seletor de produtos {#product-picker}
 
@@ -50,7 +50,7 @@ Esse seletor pode oferecer navegação pela estrutura do catálogo para localiza
 
 ![Componente do carrossel sem seleção](/help/commerce/cif/assets/authoring/carousel_component_without_selection.png)
 
-A caixa de diálogo de configuração deste componente requer categorias 1 : n. O CIF usa a UID/ID como o identificador da categoria. Os autores podem inserir o UID manualmente ou clicar no ícone de pasta para abrir o seletor de categorias. Depois de selecionar e fechar o seletor, a caixa de diálogo de componentes mostra o nome da categoria selecionada.
+A caixa de diálogo de configuração deste componente requer categorias 1 : n. O CIF usa UID / ID como o identificador de categoria. Os autores podem inserir o UID manualmente ou clicar no ícone de pasta para abrir o seletor de categorias. Depois de selecionar e fechar o seletor, a caixa de diálogo de componentes mostra o nome da categoria selecionada.
 
 ![Componente Carrossel com seleção](/help/commerce/cif/assets/authoring/carousel_component_with_selection.png)
 
@@ -68,7 +68,7 @@ Analogamente aos ativos, os produtos podem ser colocados em uma página (o que c
 
 ### Adição de links em campos de texto usando o RTE {#rte}
 
-Páginas de catálogo de produtos CIF são páginas virtuais que são renderizadas em tempo real. Assim, não é possível incorporar hiperlinks como para páginas AEM comuns. O CIF adiciona uma nova ação &quot;Links da Commerce&quot; ao RTE (Rich Text Editor, Editor de Rich Text). Essa ação funciona exatamente como a ação normal de &quot;Hiperlink&quot;, mas permite que os autores selecionem um produto ou categoria usando os seletores.
+As páginas do catálogo de produtos do CIF são páginas virtuais que são renderizadas em tempo real. Portanto, não é possível incorporar hiperlinks como para páginas AEM comuns. O CIF adiciona uma nova ação &quot;Links do Commerce&quot; ao RTE (Rich Text Editor). Essa ação funciona exatamente como a ação normal de &quot;Hiperlink&quot;, mas permite que os autores selecionem um produto ou categoria usando os seletores.
 
 ![RTE](/help/commerce/cif/assets/authoring/RTE.png)
 
@@ -80,13 +80,13 @@ Isso cria um link de espaço reservado que é substituído por um link real quan
 
 ### Acesso ao conteúdo de produto associado {#associated-content}
 
-Se o Editor universal reconhecer produtos 1:n em uma página, o painel lateral mostrará automaticamente a guia &quot;Conteúdo do Commerce associado&quot;. Essa guia permite que os autores acessem rapidamente o conteúdo de AEM que foi marcado com o produto (Consulte [enriquecer dados do produto com conteúdo de AEM associado](./enrich-product-associated-content.md) para obter mais informações). Essa guia oferece menus suspensos para filtrar por tipo de conteúdo e produtos específicos se vários produtos estiverem na página. Usar o conteúdo funciona exatamente como usar o conteúdo da guia &quot;Assets&quot;.
+Se o Editor Universal reconhecer 1:n produtos em uma página, o painel lateral mostrará automaticamente a guia &quot;Conteúdo do Commerce associado&quot;. Esta guia permite que os autores acessem rapidamente o conteúdo do AEM que foi marcado com o produto (Consulte [enriquecer dados do produto com conteúdo do AEM associado](./enrich-product-associated-content.md) para obter mais informações). Essa guia oferece menus suspensos para filtrar por tipo de conteúdo e produtos específicos se vários produtos estiverem na página. Usar o conteúdo funciona exatamente como usar o conteúdo da guia &quot;Assets&quot;.
 
 ![Painel lateral de dados do produto](/help/commerce/cif/assets/authoring/associated-commerce-content-tab.png)
 
 ### Pré-visualizar dados do produto preparados {#staged-data}
 
-O modo Timewarp no editor permite que os autores visualizem e naveguem em uma experiência de AEM com dados de catálogo de produtos preparados com base na data do Timewarp.
+O modo Timewarp no editor permite que os autores visualizem e naveguem em uma experiência do AEM com dados de catálogo de produtos preparados com base na data do Timewarp.
 
 ![Timewarp](/help/commerce/cif/assets/authoring/timewarp.png)
 
@@ -94,9 +94,9 @@ Os componentes mostrarão um indicador visual se a data usada for preparada.
 
 ![Indicador de preparo](/help/commerce/cif/assets/authoring/staged-indicator.png)
 
-## Omnisearch {#omnisearch}
+## Pesquisa unificada {#omnisearch}
 
-Usar o Omnisearch é uma maneira fácil para os profissionais encontrarem dados de conteúdo e catálogo de produtos do AEM usando a pesquisa de texto completo. O Omnisearch executará uma pesquisa de texto completo no AEM e no back-end de comércio para encontrar objetos de catálogo de produtos no back-end de comércio e conteúdo do AEM. Os resultados do AEM também incluem conteúdo que foi marcado com dados de produto/categoria.
+Usar o Omnisearch é uma maneira fácil de os profissionais encontrarem dados de conteúdo e catálogo de produtos do AEM usando a pesquisa em texto completo. O Omnisearch executará a pesquisa de texto completo no AEM e no back-end de comércio para encontrar objetos de catálogo de produtos no back-end de comércio e no conteúdo do AEM. Os resultados do AEM também incluem conteúdo que foi marcado com dados de produto/categoria.
 
 ![Omnisearch](/help/commerce/cif/assets/authoring/omnisearch.png)
 
@@ -104,4 +104,4 @@ O resultado é agrupado por tipo.
 
 >[!NOTE]
 >
->A pesquisa de texto completo no Omnisearch não é compatível com Fragmentos de conteúdo associados. Use SKU ou UID para localizar fragmentos de conteúdo associados.
+>A pesquisa de texto completo no Omnisearch não é compatível com Fragmentos de conteúdo associados. Use o SKU ou o UID para localizar fragmentos de conteúdo associados.

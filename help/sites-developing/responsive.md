@@ -12,7 +12,7 @@ feature: Developing
 role: Developer
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '5272'
+source-wordcount: '5462'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Vários exemplos são baseados no conteúdo de amostra do Geometrixx, que não é mais enviado com AEM (Adobe Experience Manager), tendo sido substituído pelo We.Retail. Consulte o documento [Implementação de referência do We.Retail](/help/sites-developing/we-retail.md#we-retail-geometrixx) para saber como baixar e instalar o Geometrixx.
+>Vários exemplos são baseados no conteúdo de amostra do Geometrixx, que não é mais enviado com o AEM (Adobe Experience Manager), tendo sido substituído pelo We.Retail. Consulte o documento [Implementação de referência do We.Retail](/help/sites-developing/we-retail.md#we-retail-geometrixx) para saber como baixar e instalar o Geometrixx.
 
 Projete suas páginas da Web para que elas se adaptem à janela de visualização do cliente em que são exibidas. Com um design responsivo, as mesmas páginas podem ser exibidas efetivamente em vários dispositivos em ambas as orientações. A imagem a seguir demonstra algumas maneiras pelas quais uma página pode responder às alterações no tamanho da janela de visualização:
 
@@ -35,7 +35,7 @@ Projete suas páginas da Web para que elas se adaptem à janela de visualizaçã
 
 ![chlimage_1-4](assets/chlimage_1-4a.png)
 
-Desenvolva aplicativos Adobe Experience Manager (AEM) que geram páginas HTML5 que se adaptam a vários tamanhos e orientações de janela. Por exemplo, os seguintes intervalos de larguras de visor correspondem a vários tipos e orientações de dispositivo
+Desenvolva aplicativos do Adobe Experience Manager (AEM) que geram páginas do HTML5 que se adaptam a vários tamanhos de janela e orientações. Por exemplo, os seguintes intervalos de larguras de visor correspondem a vários tipos e orientações de dispositivo
 
 * Largura máxima de 480 pixels (telefone, retrato)
 * Largura máxima de 767 pixels (telefone, paisagem)
@@ -49,11 +49,11 @@ Consulte os seguintes tópicos para obter informações sobre como implementar u
 * [Grades fluídas](/help/sites-developing/responsive.md#developing-a-fluid-grid)
 * [Imagens adaptáveis](/help/sites-developing/responsive.md#using-adaptive-images)
 
-Conforme você cria, use o **[!UICONTROL Sidekick]** para visualizar suas páginas para vários tamanhos de tela.
+Conforme você cria, use o **[!UICONTROL Sidekick]** para visualizar suas páginas de vários tamanhos de tela.
 
 ## Antes de desenvolver {#before-you-develop}
 
-Antes de desenvolver o aplicativo AEM compatível com suas páginas da Web, várias decisões de design devem ser tomadas. Por exemplo, você deve ter as seguintes informações:
+Antes de desenvolver o aplicativo do AEM compatível com suas páginas da Web, várias decisões de design devem ser tomadas. Por exemplo, você deve ter as seguintes informações:
 
 * Os dispositivos que você está direcionando.
 * Os tamanhos das janelas de visualização de destino.
@@ -61,7 +61,7 @@ Antes de desenvolver o aplicativo AEM compatível com suas páginas da Web, vár
 
 ### Estrutura do aplicativo {#application-structure}
 
-A estrutura típica do aplicativo AEM é compatível com todas as implementações de design responsivas:
+A estrutura de aplicativo típica do AEM é compatível com todas as implementações de design responsivas:
 
 * Os componentes da página residem abaixo de /apps/*application_name*/components
 * Os modelos residem abaixo de /apps/*application_name*/templates
@@ -150,7 +150,7 @@ responsive-1200px.css
 
 **Dica**: nomes de arquivos descritivos permitem identificar facilmente o tamanho do visor direcionado.
 
-### Uso de consultas de mídia com páginas AEM {#using-media-queries-with-aem-pages}
+### Uso de consultas de mídia com páginas do AEM {#using-media-queries-with-aem-pages}
 
 Inclua a pasta da biblioteca do cliente no script JSP do componente de página. Isso ajuda a gerar o arquivo CSS que inclui as consultas de mídia e faz referência ao arquivo.
 
@@ -162,7 +162,7 @@ Inclua a pasta da biblioteca do cliente no script JSP do componente de página. 
 >
 >A pasta da biblioteca do cliente `apps.weretail.all` incorpora a biblioteca clientlibs.
 
-O script JSP gera o seguinte código de HTML que faz referência às folhas de estilos:
+O script JSP gera o seguinte código HTML que faz referência às folhas de estilos:
 
 ```xml
 <link rel="stylesheet" href="/etc/designs/weretail/clientlibs-all.css" type="text/css">
@@ -175,11 +175,11 @@ Veja visualizações de suas páginas em diferentes tamanhos de visor para testa
 
 ![chlimage_1-5](assets/chlimage_1-5a.png)
 
-Para habilitar a visualização de dispositivo em **[!UICONTROL Sidekick]**, configure a página e o serviço **[!UICONTROL MobileEmulatorProvider]**. Outra configuração de página controla a lista de dispositivos que aparece na lista **[!UICONTROL Dispositivos]**.
+Para habilitar a visualização de dispositivo no **[!UICONTROL Sidekick]**, você deve configurar a página e o serviço **[!UICONTROL MobileEmulatorProvider]**. Outra configuração de página controla a lista de dispositivos que aparece na lista **[!UICONTROL Dispositivos]**.
 
 ### Adicionando a lista de dispositivos {#adding-the-devices-list}
 
-A lista **[!UICONTROL Dispositivos]** aparece em **[!UICONTROL Sidekick]** quando a página inclui o script JSP que renderiza a lista **[!UICONTROL Dispositivos]**. Para adicionar a lista **[!UICONTROL Dispositivos]** a **[!UICONTROL Sidekick]**, inclua o script `/libs/wcm/mobile/components/simulator/simulator.jsp` na seção `head` da sua página.
+A lista **[!UICONTROL Dispositivos]** aparece no **[!UICONTROL Sidekick]** quando sua página inclui o script JSP que renderiza a lista **[!UICONTROL Dispositivos]**. Para adicionar a lista **[!UICONTROL Dispositivos]** ao **[!UICONTROL Sidekick]**, inclua o script `/libs/wcm/mobile/components/simulator/simulator.jsp` na seção `head` da sua página.
 
 Inclua o seguinte código no JSP que define a seção `head`:
 
@@ -191,7 +191,7 @@ Para ver um exemplo, abra o arquivo `/apps/weretail/components/page/head.jsp` no
 
 Para habilitar o simulador de dispositivo para oferecer suporte às suas páginas, registre os componentes da página no serviço de fábrica MobileEmulatorProvider e defina a propriedade `mobile.resourceTypes`.
 
-Ao trabalhar com AEM, há vários métodos de gerenciamento das definições de configuração desses serviços; consulte [Configurar OSGi](/help/sites-deploying/configuring-osgi.md) para obter detalhes completos.
+Ao trabalhar com o AEM, há vários métodos de gerenciamento das definições de configuração desses serviços; consulte [Configurar OSGi](/help/sites-deploying/configuring-osgi.md) para obter detalhes completos.
 
 Por exemplo, para criar um nó ` [sling:OsgiConfig](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository)` no aplicativo:
 
@@ -221,7 +221,7 @@ Para especificar os grupos de dispositivos que aparecem na lista Dispositivos, a
 
 Os nós do grupo de dispositivos estão na pasta `/etc/mobile/groups`.
 
-Por exemplo, a página raiz do site Geometrixx Media é `/content/geometrixx-media`. O nó `/content/geometrixx-media/jcr:content` inclui a seguinte propriedade:
+Por exemplo, a página raiz do site do Geometrixx Media é `/content/geometrixx-media`. O nó `/content/geometrixx-media/jcr:content` inclui a seguinte propriedade:
 
 * Nome: `cq:deviceGroups`
 * Tipo: `String[]`
@@ -262,7 +262,7 @@ O [elemento de imagem](https://html.spec.whatwg.org/multipage/embedded-content.h
 
 A [biblioteca picturefill.js](https://github.com/scottjehl/picturefill) disponível gratuitamente fornece funcionalidade semelhante ao elemento `picture` proposto e usa uma estratégia semelhante. A biblioteca picturefill.js chama `window.matchMedia` para avaliar as consultas de mídia definidas para um conjunto de elementos `div`. Cada elemento `div` também especifica uma fonte de imagem. A origem é usada quando a consulta de mídia do elemento `div` retorna `true`.
 
-A biblioteca `picturefill.js` requer um código de HTML semelhante ao seguinte exemplo:
+A biblioteca `picturefill.js` requer um código HTML semelhante ao seguinte exemplo:
 
 ```xml
 <div data-picture>
@@ -285,11 +285,11 @@ Quando a página é renderizada, picturefull.js insere um elemento `img` como o 
 </div>
 ```
 
-Em uma página AEM, o valor do atributo `data-src` é o caminho para um recurso no repositório.
+Em uma página do AEM, o valor do atributo `data-src` é o caminho para um recurso no repositório.
 
 ### Implementação de imagens adaptáveis no AEM {#implementing-adaptive-images-in-aem}
 
-Para implementar imagens adaptáveis em seu aplicativo AEM, você deve adicionar as bibliotecas JavaScript necessárias e incluir a marcação HTML necessária em suas páginas.
+Para implementar imagens adaptáveis no aplicativo AEM, você deve adicionar as bibliotecas JavaScript necessárias e incluir a marcação HTML necessária em suas páginas.
 
 **Bibliotecas**
 
@@ -304,9 +304,9 @@ Obtenha as seguintes bibliotecas JavaScript e inclua-as em uma pasta da bibliote
 
 **HTML**
 
-Crie um componente que gera os elementos div necessários que o código picturefill.js espera. Em uma página AEM, o valor do atributo data-src é o caminho para um recurso no repositório. Por exemplo, um componente de Página pode codificar as consultas de mídia e os caminhos associados para representações de imagem no DAM. Ou crie um componente de Imagem personalizado que permita aos autores selecionar representações de imagem ou especificar opções de renderização em tempo de execução.
+Crie um componente que gera os elementos div necessários que o código picturefill.js espera. Em uma página do AEM, o valor do atributo data-src é o caminho para um recurso no repositório. Por exemplo, um componente de Página pode codificar as consultas de mídia e os caminhos associados para representações de imagem no DAM. Ou crie um componente de Imagem personalizado que permita aos autores selecionar representações de imagem ou especificar opções de renderização em tempo de execução.
 
-O HTML de exemplo a seguir seleciona entre duas representações DAM da mesma imagem.
+O exemplo de HTML a seguir seleciona entre duas representações DAM da mesma imagem.
 
 ```xml
 <div data-picture>
@@ -328,16 +328,16 @@ O HTML de exemplo a seguir seleciona entre duas representações DAM da mesma im
 
 ### Como entender a renderização de imagem no AEM {#understanding-image-rendering-in-aem}
 
-Para personalizar a renderização de imagens, você deve entender a implementação padrão da renderização de imagem estática do AEM. O AEM fornece o componente de Imagem e um servlet de renderização de imagem que trabalham juntos para renderizar imagens para a página da Web. As seguintes sequências de eventos ocorrem quando o componente de Imagem é incluído no sistema de parágrafos da página:
+Para personalizar a renderização de imagens, você deve entender a implementação padrão da renderização de imagens estáticas do AEM. O AEM fornece o componente de Imagem e um servlet de renderização de imagem que trabalham juntos para renderizar imagens para a página da Web. As seguintes sequências de eventos ocorrem quando o componente de Imagem é incluído no sistema de parágrafos da página:
 
-1. Criação: os autores editam o componente de Imagem para especificar o arquivo de imagem a ser incluído em uma página de HTML. O caminho do arquivo é armazenado como um valor de propriedade do nó do componente de Imagem.
+1. Criação: os autores editam o componente de Imagem para especificar o arquivo de imagem a ser incluído em uma página do HTML. O caminho do arquivo é armazenado como um valor de propriedade do nó do componente de Imagem.
 1. Solicitação de página: o JSP do componente de página gera o código HTML. O JSP do componente de Imagem gera e adiciona um elemento img à página.
 1. Solicitação de imagem: o navegador carrega a página e solicita a imagem de acordo com o atributo src do elemento img.
 1. Renderização de imagem: o servlet de renderização de imagem retorna a imagem para o navegador da Web.
 
 ![chlimage_1-6](assets/chlimage_1-6a.png)
 
-Por exemplo, o JSP do componente de Imagem gera o seguinte elemento de HTML:
+Por exemplo, o JSP do componente de Imagem gera o seguinte elemento HTML:
 
 `<img title="My Image" alt="My Image" class="cq-dd-image" src="/content/mywebsite/en/_jcr_content/par/image_0.img.jpg/1358372073597.jpg">`
 
@@ -350,7 +350,7 @@ Quando o navegador carrega a página, ele solicita a imagem usando o valor do at
 
 O nó `image_0` tem um valor `jcr:resourceType` de `foundation/components/image`, que tem um valor `sling:resourceSuperType` de `foundation/components/parbase`. O componente parbase inclui o script img.GET.java que corresponde ao seletor e a extensão de nome de arquivo do URL da solicitação. O CQ usa esse script (servlet) para renderizar a imagem.
 
-Para ver o código-fonte do script, use CRXDE Lite para abrir o `/libs/foundation/components/parbase/img.GET.java`
+Para ver o código-fonte do script, use o CRXDE Lite para abrir o `/libs/foundation/components/parbase/img.GET.java`
 arquivo.
 
 ## Dimensionar imagens para o tamanho atual do visor {#scaling-images-for-the-current-viewport-size}
@@ -413,7 +413,7 @@ A variável `path` contém o caminho do recurso atual (o nó do componente de im
 
 O valor do atributo `data-scr` é uma URL que o Sling resolve para o Servlet do componente de Imagem adaptável que renderiza a imagem. O atributo data-media contém a consulta de mídia que é avaliada em relação às propriedades do cliente.
 
-O código de HTML a seguir é um exemplo dos elementos `div` gerados pelo JSP:
+O código HTML a seguir é um exemplo dos elementos `div` gerados pelo JSP:
 
 ```xml
 <div data-src='/content/geometrixx-media/en/events/the-lineup-you-ve-been-waiting-for/jcr:content/article-content-par/adaptive_image.adapt.320.low.jpg'></div>
@@ -430,7 +430,7 @@ Se você personalizar o componente de Imagem adaptável e alterar os seletores d
 
 ### Compreender o servlet do componente de imagem adaptável {#understanding-the-adaptive-image-component-servlet}
 
-O Servlet do componente de Imagem adaptável redimensiona uma imagem de JPEG de acordo com uma largura especificada e define a qualidade do JPEG.
+O Servlet do componente de Imagem adaptável redimensiona uma imagem do JPEG de acordo com uma largura especificada e define a qualidade do JPEG.
 
 #### A interface do Servlet do componente de Imagem adaptável {#the-interface-of-the-adaptive-image-component-servlet}
 
@@ -446,7 +446,7 @@ Portanto, o Sling resolve URLs de solicitação HTTP do seguinte formato para es
 
 Por exemplo, o Sling encaminha solicitações HTTP com a URL `http://localhost:4502/content/geometrixx/adaptiveImage.img.jpg` para o Servlet do componente de imagem adaptável.
 
-JPEG Dois seletores adicionais especificam a largura e a qualidade da imagem solicitada. O exemplo a seguir solicita uma imagem de largura de 480 pixels e qualidade média:
+Dois seletores adicionais especificam a largura da imagem solicitada e a qualidade do JPEG. O exemplo a seguir solicita uma imagem de largura de 480 pixels e qualidade média:
 
 `http://localhost:4502/content/geometrixx/adaptiveImage.adapt.480.MEDIUM.jpg`
 
@@ -462,7 +462,7 @@ O servlet aceita um número finito de larguras e qualidades de imagem. As seguin
 
 O valor inteiro indica sem dimensionamento.
 
-Os seguintes valores de qualidade do JPEG são suportados:
+Os seguintes valores para qualidade do JPEG são compatíveis:
 
 * BAIXA
 * MÉDIA
@@ -474,7 +474,7 @@ Os valores numéricos são 0,4, 0,82 e 1,0, respectivamente.
 
 Use o Console da Web ([http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)) ou um nó sling:OsgiConfig para configurar as larguras com suporte do Servlet do Componente de Imagem Adaptável do Adobe CQ.
 
-Para obter informações sobre como configurar serviços AEM, consulte [Configurar OSGi](/help/sites-deploying/configuring-osgi.md).
+Para obter informações sobre como configurar serviços do AEM, consulte [Configurar OSGi](/help/sites-deploying/configuring-osgi.md).
 
 <table>
  <tbody>
@@ -547,7 +547,7 @@ A classe `AbstractImageServlet` fornece o método `doGet` que processa a solicit
 
 A classe `AdaptiveImageComponentServlet` substitui o método `createLayer`. O método obtém o caminho do recurso de imagem e a largura de imagem solicitada do objeto `ImageContext`. Em seguida, ele chama os métodos da classe `info.geometrixx.commons.impl.AdaptiveImageHelper`, que executa o dimensionamento real da imagem.
 
-A classe AdaptiveImageComponentServlet também substitui o método writeLayer. Este método aplica a qualidade do JPEG à imagem.
+A classe AdaptiveImageComponentServlet também substitui o método writeLayer. Esse método aplica a qualidade do JPEG à imagem.
 
 ### Servlet de modificação de referência de imagem (Geometrixx Common) {#image-reference-modification-servlet-geometrixx-common}
 
@@ -592,7 +592,7 @@ Os seguintes valores de qualidade de imagem são compatíveis:
 * médio
 * alta
 
-Ao trabalhar com AEM, há vários métodos de gerenciamento das definições de configuração desses serviços; consulte [Configurar OSGi](/help/sites-deploying/configuring-osgi.md) para obter detalhes completos.
+Ao trabalhar com o AEM, há vários métodos de gerenciamento das definições de configuração desses serviços; consulte [Configurar OSGi](/help/sites-deploying/configuring-osgi.md) para obter detalhes completos.
 
 #### Especificação do recurso de imagem {#specifying-the-image-resource}
 
@@ -603,9 +603,9 @@ O caminho da imagem, as dimensões e os valores de qualidade devem ser armazenad
 
 * O caminho da imagem é armazenado como o valor de uma propriedade chamada `fileReference`.
 
-Ao criar uma página, use **Sidekick** para especificar a imagem e adicionar o nó `image` às propriedades da página:
+Ao criar uma página, use o **Sidekick** para especificar a imagem e adicionar o nó `image` às propriedades da página:
 
-1. Em **Sidekick**, clique na guia **Página** e em **Propriedades da Página**.
+1. No **Sidekick**, clique na guia **Página** e em **Propriedades da Página**.
 1. Clique na guia **Imagem** e especifique a imagem.
 1. Clique em **OK**.
 
@@ -661,7 +661,7 @@ A classe `ImageReferenceModificationServlet` substitui o método `createLayer` e
 
 ## Desenvolvimento de uma grade de fluidos {#developing-a-fluid-grid}
 
-O AEM permite que você implemente de forma eficiente e eficaz grades de fluidos. Esta página explica como você pode integrar sua grade fluida ou uma implementação de grade existente (como o [Bootstrap](https://github.com/topics/twitter-bootstrap?l=css)) ao aplicativo AEM.
+O AEM permite que você implemente grades de fluidos de maneira eficiente. Esta página explica como você pode integrar sua grade fluida ou uma implementação de grade existente (como o [Bootstrap](https://github.com/topics/twitter-bootstrap?l=css)) ao seu aplicativo do AEM.
 
 Se você não estiver familiarizado com grades fluidas, consulte a seção [Introdução a Grades Fluidas](/help/sites-developing/responsive.md#developing-a-fluid-grid) na parte inferior desta página. Esta introdução fornece uma visão geral das grades de fluidos e orientação para projetá-las.
 
@@ -713,7 +713,7 @@ O exemplo de CSS a seguir é um subconjunto desses estilos. Esse subconjunto foc
 
 >[!NOTE]
 >
->A amostra de Geometrixx Media integra a estrutura do JavaScript [Bootstrap](https://getbootstrap.com/2.0.2/) em sua implementação de grade fluida. A estrutura do Bootstrap fornece o arquivo bootstrap.css.
+>A amostra do Geometrixx Media integra a estrutura do JavaScript [Bootstrap](https://getbootstrap.com/2.0.2/) à sua implementação de grade fluida. A estrutura do Bootstrap fornece o arquivo bootstrap.css.
 
 ```xml
 /* default styles (no media queries) */
@@ -745,7 +745,7 @@ O exemplo de CSS a seguir é um subconjunto desses estilos. Esse subconjunto foc
 
 #### Reposicionamento de conteúdo na grade do componente Página {#repositioning-content-in-the-page-component-grid}
 
-As páginas do aplicativo de amostra Geometrixx Media distribuem linhas de blocos de conteúdo horizontalmente em janelas de visualização amplas. Em janelas de visualização menores, os mesmos blocos são distribuídos verticalmente. O exemplo de CSS a seguir mostra os estilos que implementam esse comportamento para o código de HTML gerado pelo componente de página inicial de mídia:
+As páginas do aplicativo de amostra do Geometrixx Media distribuem linhas de blocos de conteúdo horizontalmente em janelas de visualização amplas. Em janelas de visualização menores, os mesmos blocos são distribuídos verticalmente. O exemplo de CSS a seguir mostra os estilos que implementam esse comportamento para o código HTML gerado pelo componente de página inicial de mídia:
 
 * O CSS padrão da página de boas-vindas de mídia atribui o estilo `float:left` para as classes `span*` que estão dentro das classes `row-fluid`.
 
@@ -816,7 +816,7 @@ Por exemplo, o componente `/apps/geometrixx-media/components/2-col-article-summa
 </div>
 ```
 
-Os seletores `.row-fluid .span6` do CSS da página se aplicam aos elementos `div` da mesma classe e estrutura neste HTML. No entanto, o componente também inclui a pasta /apps/geometrixx-media/components/2-col-article-summary/clientlibs da biblioteca do cliente:
+Os seletores `.row-fluid .span6` do CSS da página se aplicam aos elementos `div` da mesma classe e estrutura nesta HTML. No entanto, o componente também inclui a pasta /apps/geometrixx-media/components/2-col-article-summary/clientlibs da biblioteca do cliente:
 
 * O CSS usa as mesmas consultas de mídia que o componente da página para estabelecer alterações no layout nas mesmas larguras de página distintas.
 * Os seletores usam a classe `multi-col-article-summary` do elemento `div` da linha para substituir o comportamento da classe `row-fluid` da página.
@@ -853,7 +853,7 @@ As grades fluídas permitem que os layouts de página se adaptem às dimensões 
 
 Com a tecnologia HTML5, é possível implementar a grade e manipulá-la para adaptar os layouts de página a diferentes tamanhos de visor:
 
-* Os elementos HTML `div` contêm blocos de conteúdo que abrangem algumas colunas.
+* Os elementos `div` do HTML contêm blocos de conteúdo que abrangem algumas colunas.
 * Um ou mais desses elementos div compõem uma linha quando compartilham um elemento div pai comum.
 
 ### Uso de larguras discretas {#using-discrete-widths}

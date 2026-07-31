@@ -11,8 +11,8 @@ feature: Integration
 role: Admin
 source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
 workflow-type: tm+mt
-source-wordcount: '5405'
-ht-degree: 0%
+source-wordcount: '5545'
+ht-degree: 1%
 
 ---
 
@@ -199,8 +199,8 @@ Você pode fazer upload de ativos usando a funcionalidade Assets (gerenciamento 
 * Os tipos de ativos do Dynamic Media Classic que o Experience Manager Assets ainda não suporta devem ser adicionados a um site do Experience Manager diretamente do Dynamic Media Classic, por meio do navegador de conteúdo do Dynamic Media Classic. Por exemplo, templates de imagem.
 * Para tipos de ativos compatíveis com Experience Manager Assets e Dynamic Media Classic, decidir como carregá-los dependerá do seguinte:
 
-   * Onde os ativos estão hoje E
-   * Quão importante é gerenciá-los em um repositório comum
+  * Onde os ativos estão hoje E
+  * Quão importante é gerenciá-los em um repositório comum
 
 Suponha que os ativos já estejam no Dynamic Media Classic e que seu gerenciamento em um repositório comum não seja importante. Se esse for o caso, exportar os ativos para o Experience Manager Assets somente para sincronizá-los de volta ao Dynamic Media Classic para entrega é uma viagem de ida e volta desnecessária. A Adobe recomenda que você mantenha os ativos em um único repositório e sincronize com o Dynamic Media Classic somente para entrega.
 
@@ -421,7 +421,7 @@ No entanto, se você não quiser que os ativos enviados para o Dynamic Media Cla
 Antes de enviar ativos para o Dynamic Media Classic sem publicá-los, você deve configurar o seguinte:
 
 1. [Use o Admin Console para criar um caso de suporte](https://helpx.adobe.com/br/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). No caso de suporte, solicite a ativação da visualização segura para a sua conta do Dynamic Media Classic.
-1. [Configurar a visualização segura da sua conta do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=pt-BR).
+1. [Configurar a visualização segura da sua conta do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html).
 
 Essas etapas são as mesmas que você seguiria para criar qualquer configuração de teste segura no Dynamic Media Classic.
 
@@ -450,7 +450,7 @@ Se você usar esse recurso, observe as seguintes limitações:
 1. Selecione a guia **[!UICONTROL Avançado]**.
 1. No menu suspenso **[!UICONTROL Habilitar Modo de Exibição Seguro]**, selecione **[!UICONTROL Na Ativação de Publicação do AEM]** para enviar ativos para o Dynamic Media Classic sem publicar. (Por padrão, esse valor é definido como **[!UICONTROL Imediatamente]**, onde os ativos da Dynamic Media Classic são publicados imediatamente.)
 
-   Consulte a [documentação do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=pt-BR) para obter mais informações sobre como testar ativos antes de torná-los públicos.
+   Consulte a [documentação do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html) para obter mais informações sobre como testar ativos antes de torná-los públicos.
 
    ![chlimage_1-302](assets/chlimage_1-302.png)
 
@@ -565,7 +565,7 @@ Especificamente, você configura o formato de arquivo aceito por tipo MIME na á
 
    Por exemplo, `psprocess="rasterize"&psresolution=120`.
 
-   Consulte a [API do Sistema de Produção de Imagens do Adobe Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-overview.html?lang=pt-BR) para obter mais parâmetros de trabalho de carregamento que você possa usar.
+   Consulte a [API do Sistema de Produção de Imagens do Adobe Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-overview.html) para obter mais parâmetros de trabalho de carregamento que você possa usar.
 
    >[!NOTE]
    >
@@ -602,8 +602,8 @@ Se tiver problemas ao integrar o Experience Manager com o Dynamic Media Classic,
 * Verifique se você definiu a configuração do Cloud Services como Habilitar o carregamento automático e se atualizou e salvou o fluxo de trabalho do Ativo DAM para incluir o carregamento do Dynamic Media Classic.
 * Ao fazer upload de uma imagem em uma subpasta da pasta de destino do Dynamic Media Classic, siga um destes procedimentos:
 
-   * Verifique se os nomes de todos os ativos, independentemente da localização, são exclusivos. Caso contrário, o ativo na pasta de destino principal será excluído e somente o ativo na subpasta permanecerá.
-   * Altere como o Dynamic Media Classic substitui ativos na área Configuração da conta do Dynamic Media Classic. Não defina o Dynamic Media Classic para substituir ativos independentemente do local se você usar ativos com o mesmo nome em subpastas.
+  * Verifique se os nomes de todos os ativos, independentemente da localização, são exclusivos. Caso contrário, o ativo na pasta de destino principal será excluído e somente o ativo na subpasta permanecerá.
+  * Altere como o Dynamic Media Classic substitui ativos na área Configuração da conta do Dynamic Media Classic. Não defina o Dynamic Media Classic para substituir ativos independentemente do local se você usar ativos com o mesmo nome em subpastas.
 
 **Se os ativos ou pastas excluídos não estiverem sincronizados entre o Dynamic Media Classic e o Experience Manager:**
 
