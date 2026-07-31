@@ -11,8 +11,8 @@ feature: Developing,Search,Query Builder
 role: Developer
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '2313'
-ht-degree: 2%
+source-wordcount: '2383'
+ht-degree: 1%
 
 ---
 
@@ -381,7 +381,7 @@ Oferece suporte à extração de facetas. Fornece intervalos para cada valor de 
 
 * **profundidade**
 
-  Número de níveis curinga sob os quais a propriedade/caminho relativo pode existir (por exemplo, `property=size depth=2` verifica nó/tamanho, nó/&ast;/tamanho e nó/&ast;/&ast;/tamanho).
+  Número de níveis curinga sob os quais a propriedade/caminho relativo pode existir (por exemplo, `property=size depth=2` verifica nó/tamanho, nó/&amp;ast;/tamanho e nó/&amp;ast;/&amp;ast;/tamanho).
 
 ### rangeproperty {#rangeproperty}
 
@@ -473,17 +473,17 @@ O nome &quot;root&quot; nunca é usado em uma query, ele é implícito.
 
   (somente para o servlet JSON) selecione a forma como as ocorrências são gravadas como JSON, com estas padrão (extensíveis por meio do serviço ResultHitWriter):
 
-   * **simples**:
+  * **simples**:
 
-     Mínimo de itens como `path`, `title`, `lastmodified`, `excerpt` (se definido).
+    Mínimo de itens como `path`, `title`, `lastmodified`, `excerpt` (se definido).
 
-   * **cheio**:
+  * **cheio**:
 
-     Renderização Sling JSON do nó, com `jcr:path` indicando o caminho da ocorrência: por padrão, apenas lista as propriedades diretas do nó, inclui uma árvore mais profunda com `p.nodedepth=N`, com 0 significando a subárvore inteira e infinita; adicione `p.acls=true` para incluir as permissões JCR da sessão atual no item de resultado fornecido (mapeamentos: `create` = `add_node`, `modify` = `set_property`, `delete` = `remove`).
+    Renderização Sling JSON do nó, com `jcr:path` indicando o caminho da ocorrência: por padrão, apenas lista as propriedades diretas do nó, inclui uma árvore mais profunda com `p.nodedepth=N`, com 0 significando a subárvore inteira e infinita; adicione `p.acls=true` para incluir as permissões JCR da sessão atual no item de resultado fornecido (mapeamentos: `create` = `add_node`, `modify` = `set_property`, `delete` = `remove`).
 
-   * **seletivo**:
+  * **seletivo**:
 
-     Somente as propriedades especificadas em `p.properties`, que é uma lista de caminhos relativos separada por espaços (use &quot;+&quot; em URLs); se o caminho relativo tiver uma profundidade > 1, elas serão representadas como objetos filho; a propriedade jcr:path especial inclui o caminho da ocorrência
+    Somente propriedades especificadas em `p.properties`, que é uma lista de caminhos relativos separada por espaços (use &quot;+&quot; em URLs); se o caminho relativo tiver uma profundidade > 1, elas serão representadas como objetos filho; a propriedade jcr:path especial inclui o caminho da ocorrência
 
 ### savedquery {#savedquery}
 

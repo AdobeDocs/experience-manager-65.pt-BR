@@ -1,6 +1,6 @@
 ---
 title: Edição do conteúdo da página
-description: O conteúdo é adicionado usando componentes que podem ser arrastados para a página. Estes podem então ser editados no local, movidos ou excluídos. 
+description: O conteúdo é adicionado usando componentes que podem ser arrastados para a página. Estes podem então ser editados no local, movidos ou excluídos.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
@@ -12,8 +12,8 @@ feature: Authoring
 role: User
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '1829'
-ht-degree: 16%
+source-wordcount: '1843'
+ht-degree: 17%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 16%
 
 Assim que a página for criada (nova ou como parte de um lançamento ou uma live copy), você pode editar o conteúdo para fazer as atualizações necessárias.
 
-O conteúdo é adicionado usando [componentes](/help/sites-classic-ui-authoring/classic-page-author-default-components.md) (apropriado ao tipo de conteúdo) que podem ser arrastados para a página. Estes podem então ser editados no local, movidos ou excluídos. 
+O conteúdo é adicionado usando [componentes](/help/sites-classic-ui-authoring/classic-page-author-default-components.md) (apropriado ao tipo de conteúdo) que podem ser arrastados para a página. Estes podem então ser editados no local, movidos ou excluídos.
 
 >[!NOTE]
 >
@@ -135,7 +135,7 @@ Para mover um parágrafo:
 
    ![screen_shot_2012-02-15at115855am](assets/screen_shot_2012-02-15at115855am.png)
 
-1. Arraste o parágrafo para o novo local - AEM indica onde o parágrafo pode ser movido com uma marca de seleção verde. Solte-o no local desejado.
+1. Arraste o parágrafo para o novo local - O AEM indica onde o parágrafo pode ser movido com uma marca de seleção verde. Solte-o no local desejado.
 1. Seu parágrafo foi movido:
 
    ![screen_shot_2012-02-15at120030pm](assets/screen_shot_2012-02-15at120030pm.png)
@@ -148,7 +148,7 @@ Para excluir um parágrafo:
 
    ![screen_shot_2012-02-15at120220pm](assets/screen_shot_2012-02-15at120220pm.png)
 
-1. Selecione **Excluir** no menu. O WCM do AEM solicita a confirmação de que você deseja excluir o parágrafo, pois essa ação não pode ser desfeita.
+1. Selecione **Excluir** no menu. O AEM WCM solicita a confirmação de que você deseja excluir o parágrafo, pois essa ação não pode ser desfeita.
 1. Clique em **OK**.
 
 >[!NOTE]
@@ -180,7 +180,7 @@ Componentes herdados podem ser o resultado de vários cenários, incluindo:
 * [Inicializações](/help/sites-classic-ui-authoring/classic-launches.md) (quando com base na livecopy).
 * Componentes específicos; por exemplo, o Sistema de parágrafo herdado no Geometrixx.
 
-Você pode cancelar (e depois reativar) a herança. Dependendo do componente, isso pode estar disponível em:
+Você pode cancelar (e depois reabilitar) a herança. Dependendo do componente, isso pode estar disponível em:
 
 1. **Live Copy**
 
@@ -204,7 +204,7 @@ Você pode cancelar (e depois reativar) a herança. Dependendo do componente, is
 
 [As anotações](/help/sites-classic-ui-authoring/classic-page-author-annotations.md) permitem que outros autores forneçam comentários sobre o seu conteúdo. Isso é usado com frequência para fins de revisão e validação.
 
-## Visualizar páginas   {#previewing-pages}
+## Visualizar páginas {#previewing-pages}
 
 Há dois ícones na borda inferior do sidekick que são importantes para visualizar páginas:
 
@@ -226,7 +226,7 @@ Há dois ícones na borda inferior do sidekick que são importantes para visuali
 
 Para edições de maior escala da mesma frase, uma opção de menu **[Localizar e Substituir](/help/sites-classic-ui-authoring/author-env-search.md#find-and-replace)** permite procurar e substituir várias instâncias de uma cadeia de caracteres, em uma seção do site.
 
-## Bloquear uma página   {#locking-a-page}
+## Bloquear uma página {#locking-a-page}
 
 O AEM permite bloquear uma página, de modo que ninguém mais possa alterar o conteúdo. Isso é útil quando você está fazendo várias edições em uma página específica ou quando precisa congelar uma página por pouco tempo.
 
@@ -242,7 +242,7 @@ Para bloquear uma página:
 
    ![screen_shot_2012-02-08at15750pm](assets/screen_shot_2012-02-08at15750pm.png)
 
-   Uma mensagem mostra que sua página está bloqueada para outros usuários. Além disso, no painel direito do console **Sites**, o AEM WCM exibe a página como bloqueada e indica qual usuário bloqueou a página.
+   Uma mensagem mostra que sua página está bloqueada para outros usuários. Além disso, no painel direito do console **Sites**, o AEM WCM exibe a página como bloqueada e indica qual usuário a bloqueou.
 
    ![screen_shot_2012-02-08at20657pm](assets/screen_shot_2012-02-08at20657pm.png)
 
@@ -304,4 +304,4 @@ Os campos de formulário que os componentes de formulário renderizam não devem
 
 >[!NOTE]
 >
->Permissões especiais são necessárias para desfazer e refazer alterações em arquivos e imagens. Além disso, o histórico de desfazer para alterações em arquivos e imagens dura pelo menos algumas horas. Além desse período, no entanto, a ação de desfazer as alterações não é garantida. Seu administrador pode fornecer permissões e alterar o tempo padrão de dez horas.
+>Permissões especiais são necessárias para desfazer e refazer as alterações nos arquivos e imagens. Além disso, o histórico de desfazer para alterações em arquivos e imagens dura pelo menos algumas horas. Além desse período, no entanto, a ação de desfazer as alterações não é garantida. Seu administrador pode fornecer permissões e alterar o tempo padrão de dez horas.

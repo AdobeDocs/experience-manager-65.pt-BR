@@ -11,7 +11,7 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '159'
+source-wordcount: '160'
 ht-degree: 0%
 
 ---
@@ -24,10 +24,10 @@ No entanto, independentemente do método ou da ferramenta escolhida, as informa�
 
 * Deve ser:
 
-   * Limitado ao rastreamento do caso de teste e seus resultados. Isso garante que a manutenção permaneça simples, e o documento pode fornecer uma visão geral clara do progresso do teste.
-   * Mantido como uma única cópia, disponível para todos os membros apropriados da equipe do projeto.
-   * Neutro e limitado aos resultados do ensaio. É responsabilidade do gerente do projeto tomar decisões sobre quaisquer ações resultantes dos resultados do teste.
+  * Limitado ao rastreamento do caso de teste e seus resultados. Isso garante que a manutenção permaneça simples, e o documento pode fornecer uma visão geral clara do progresso do teste.
+  * Mantido como uma única cópia, disponível para todos os membros apropriados da equipe do projeto.
+  * Neutro e limitado aos resultados do ensaio. É responsabilidade do gerente do projeto tomar decisões sobre quaisquer ações resultantes dos resultados do teste.
 
 * Não deve ser:
 
-   * Estendido para incluir informações de rastreamento - não são bugs, novos recursos nem ações de acompanhamento. Essas informações devem ser mantidas em outro lugar. Novamente, há muitas ferramentas disponíveis.
+  * Estendido para incluir informações de rastreamento - não são bugs, novos recursos nem ações de acompanhamento. Essas informações devem ser mantidas em outro lugar. Novamente, há muitas ferramentas disponíveis.

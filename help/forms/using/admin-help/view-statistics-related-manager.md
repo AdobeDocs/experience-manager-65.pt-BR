@@ -11,7 +11,7 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '1215'
+source-wordcount: '1217'
 ht-degree: 0%
 
 ---
@@ -91,7 +91,7 @@ Por exemplo, selecionar Criar hora = 1 dia e Antes de = Usar data e hora atuais 
 
 >[!NOTE]
 >
->Em implantações de banco de dados de Oracle, os filtros de intervalo de datas (ou seja, Criar hora e Antes das configurações) não funcionam com precisão. Use outro filtro para recuperar itens de trabalho.
+>Em implantações de banco de dados do Oracle, os filtros de intervalo de datas (ou seja, Criar hora e Antes das configurações) não funcionam com precisão. Use outro filtro para recuperar itens de trabalho.
 
 ## Sobre a interface da guia Work Manager {#about-the-work-manager-tab-interface}
 
