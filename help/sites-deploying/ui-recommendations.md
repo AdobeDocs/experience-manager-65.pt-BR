@@ -28,7 +28,7 @@ Condições de interesse:
 * **IU (ou IU padrão)**
 Interface do usuário moderna, introduzida na versão 5.6.0 como pré-visualização de tecnologia e estendida em versões subsequentes. Ela se baseia na experiência unificada do usuário para a Adobe Experience Cloud, antes conhecida como interface habilitada para toque ou interface de toque.
 
-* Interface clássica do ****
+* Interface clássica do **&#x200B;**
 Interface do usuário baseada na tecnologia ExtJS introduzida com o CQ 5.1 em 2008.
 
 * **Administrador do site**
