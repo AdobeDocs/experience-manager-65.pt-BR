@@ -148,36 +148,36 @@ Para obter mais detalhes sobre as alterações no AEM Screens, consulte as Notas
 * Arquétipo de projeto Maven de aplicativo de página única 1.0.6+ para novos projetos, consulte [GitHub para notas de versão](https://github.com/adobe/aem-spa-project-archetype/releases).
 * HTL versão 1.4, consulte [GitHub das notas de versão](https://github.com/adobe/htl-spec/releases/tag/1.4).
 
-   * operador &quot;in&quot; para sequências, matrizes e objetos:
+  * operador &quot;in&quot; para sequências, matrizes e objetos:
 
-     ```html
-     ${'a' in 'abc'}
-     ${100 in myArray}
-     ${'a' in myObject}
-     ```
+    ```html
+    ${'a' in 'abc'}
+    ${100 in myArray}
+    ${'a' in myObject}
+    ```
 
-   * Declarações de variável com data-sly-set :
-     `<sly data-sly-set.title="${currentPage.title}"/>${title}`
+  * Declarações de variável com data-sly-set :
+    `<sly data-sly-set.title="${currentPage.title}"/>${title}`
 
-   * Listar e repetir parâmetros de controle: início, etapa, fim:
-     `<h2 data-sly-repeat="${currentPage.listChildren @ begin = 1, step=2}">${item.title}</h2>`
+  * Listar e repetir parâmetros de controle: início, etapa, fim:
+    `<h2 data-sly-repeat="${currentPage.listChildren @ begin = 1, step=2}">${item.title}</h2>`
 
-   * Identificadores para data-sly-unwrap:
+  * Identificadores para data-sly-unwrap:
 
-     ```html
-     <div data-sly-unwrap.isUnwrapped="${myCondition || myOtherCondition}">
-     text <span data-sly-test="${isUnwrapped}>is unwrapped</code>
-     </div>
-     ```
+    ```html
+    <div data-sly-unwrap.isUnwrapped="${myCondition || myOtherCondition}">
+    text <span data-sly-test="${isUnwrapped}>is unwrapped</code>
+    </div>
+    ```
 
-   * Suporte para números negativos
+  * Suporte para números negativos
 
 * Componentes principais 2.3.2+, consulte [GitHub para notas de versão](https://github.com/adobe/aem-core-wcm-components/releases).
 * Sistema de grade para o Contêiner de layout, consulte [GitHub](https://github.com/Adobe-Marketing-Cloud/aem-responsivegrid).
 * Clientlib Manager: tornou o Google Closure Compiler padrão para a minificação do JavaScript clientlibs (o padrão antigo era Yahoo YUI) e atualizou o Google Closure Compiler para a versão v20190121
 * Editor de modelos e políticas
 
-   * Criar e editar modelos para aplicativos de página única que estão usando o JS SDK (também chamado de Editor de SPA)
+  * Criar e editar modelos para aplicativos de página única que estão usando o JS SDK (também chamado de Editor de SPA)
 
 * Consulte o site de referência We.Retail 4.0, consulte [GitHub para obter as notas de versão](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases).
 * Kit de ferramentas para atualizar sites existentes para usar os recursos mais recentes do editor, consulte [repositório do GitHub](https://github.com/adobe/aem-modernize-tools)
@@ -246,12 +246,12 @@ Para obter mais detalhes sobre as alterações no AEM Screens, consulte as Notas
 
 * A integração do Adobe Target agora usa a API do Target Standard. As versões anteriores do AEM usam a API HTTP do Target Classic, que agora está obsoleta.
 * O Adobe Target `mbox.js` versão 63 está incluído. A Adobe recomenda que você alterne a implementação para `at.js` v1.x.
-* A versão 1.5.0 de `at.js` foi incluída. A Adobe recomenda que você use o [Adobe Experience Platform Launch](https://business.adobe.com/br/products/experience-platform/launch.html) para provisionar o `at.js` v1.x para o site.
+* A versão 1.5.0 de `at.js` foi incluída. A Adobe recomenda que você use o [Adobe Experience Platform Launch](https://business.adobe.com/products/experience-platform/launch.html) para provisionar o `at.js` v1.x para o site.
 
 #### AEM e ADOBE ANALYTICS {#aem-amp-adobe-analytics}
 
 * `s_code.js` H.27.5 está incluído. A Adobe recomenda que você alterne a implementação para `AppMeasurement.js`
-* `AppMeasurement.js` v1.8.0 está incluído. A Adobe recomenda que você use o [Adobe Experience Platform Launch](https://business.adobe.com/br/products/experience-platform/launch.html) para provisionar o AppMeasurement.js para o site.
+* `AppMeasurement.js` v1.8.0 está incluído. A Adobe recomenda que você use o [Adobe Experience Platform Launch](https://business.adobe.com/products/experience-platform/launch.html) para provisionar o AppMeasurement.js para o site.
 
 #### AEM e COMMERCE {#aem-commerce}
 
@@ -376,7 +376,7 @@ O [!DNL Experience Manager Sites] oferece recursos para criar páginas da Web e 
 
 O [!DNL Dynamic Media] fornece criação e entrega aprimoradas de mídia avançada no [!DNL Experience Manager Assets] para impulsionar experiências de última geração que são imersivas e personalizadas. Ao fazer upload de um único ativo principal de alta qualidade e usar a renderização de nuvem e os visualizadores avançados da Adobe, você pode fornecer qualquer combinação de representações dinamicamente para oferecer suporte à estratégia de mídia de sua organização.
 
-Para obter mais detalhes sobre os novos recursos do [!DNL Dynamic Media], consulte as [Notas de Versão do Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/release-notes/s7rn2017.html?lang=pt-BR).
+Para obter mais detalhes sobre os novos recursos do [!DNL Dynamic Media], consulte as [Notas de Versão do Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/release-notes/s7rn2017.html).
 
 ##### Suporte a vídeo 360 {#video-support}
 
@@ -388,7 +388,7 @@ Agora é possível personalizar as miniaturas dos ativos de vídeo usando quadro
 
 ##### Aprimoramentos de acessibilidade {#accessibility-enhancements}
 
-[!DNL Dynamic Media] visualizadores agora oferecem suporte para recursos de acessibilidade aprimorados, como suporte para Aria, leitores de tela e texto alternativo. Para obter detalhes adicionais, consulte [Guia de Referência de Visualizadores](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html?lang=pt-BR).
+[!DNL Dynamic Media] visualizadores agora oferecem suporte para recursos de acessibilidade aprimorados, como suporte para Aria, leitores de tela e texto alternativo. Para obter detalhes adicionais, consulte [Guia de Referência de Visualizadores](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html).
 
 #### Aprimoramento da experiência de pesquisa {#experience-enhancement-for-searching}
 
@@ -435,7 +435,7 @@ Consulte o [Resumo dos novos recursos e aprimoramentos no AEM 6.5 Forms](/help/f
 
 A Adobe está usando um modelo de desenvolvimento com foco no cliente que permite que os clientes contribuam para todos os estágios do processo de desenvolvimento, durante a especificação, o desenvolvimento e o teste. Nossos agradecimentos vão para todos os clientes e parceiros que contribuíram neste processo.
 
-A Adobe tem os procedimentos e processos em vigor para permitir a coleta, a priorização e o rastreamento da resolução de bugs focados no cliente e o desenvolvimento de solicitações de aprimoramento. O [Portal de suporte do Experience Manager](https://experienceleague.adobe.com/pt-br?support-solution=Experience+Manager&lang=pt-BR#support) está integrado ao Sistema de Aperfeiçoamento e Rastreamento de Defeitos do Adobe. As dúvidas do cliente são identificadas e resolvidas pela equipe de Suporte ao cliente, quando possível. Quando encaminhadas para P&amp;D, todas as informações do cliente são capturadas e usadas para priorização e geração de relatórios. No desenvolvimento, é dada prioridade ao suporte pago, aos problemas de garantia e aos aprimoramentos pagos pelo cliente.
+A Adobe tem os procedimentos e processos em vigor para permitir a coleta, a priorização e o rastreamento da resolução de bugs focados no cliente e o desenvolvimento de solicitações de aprimoramento. O [Portal de suporte do Experience Manager](https://experienceleague.adobe.com/?support-solution=Experience+Manager&lang=pt-BR#support) está integrado ao Sistema de Aperfeiçoamento e Rastreamento de Defeitos do Adobe. As dúvidas do cliente são identificadas e resolvidas pela equipe de Suporte ao cliente, quando possível. Quando encaminhadas para P&amp;D, todas as informações do cliente são capturadas e usadas para priorização e geração de relatórios. No desenvolvimento, é dada prioridade ao suporte pago, aos problemas de garantia e aos aprimoramentos pagos pelo cliente.
 
 Esse processo de priorização produziu mais de 750 alterações voltadas para o cliente corrigidas no AEM 6.5.
 
@@ -445,7 +445,7 @@ Esse processo de priorização produziu mais de 750 alterações voltadas para o
 
 * Quickstart Autônomo: `cq-quickstart-6.5.0.jar`.
 * Início Rápido do Servidor de Aplicativos: `cq-quickstart-6.5.0.war`.
-* Dispatcher 4.3.2 ou posterior para os vários servidores e plataformas da Web. Consulte [link de download](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html?lang=pt-BR)
+* Dispatcher 4.3.2 ou posterior para os vários servidores e plataformas da Web. Consulte [link de download](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html)
 * Plug-in para Eclipse IDE ([leia mais e baixe](/help/sites-developing/aem-eclipse.md))
 
 * Extensão para o Editor de Código de Colchetes ([leia mais e baixe](/help/sites-developing/aem-brackets.md))
@@ -457,17 +457,17 @@ Esse processo de priorização produziu mais de 750 alterações voltadas para o
 * Implementação de referência do We.Retail ([leia mais](/help/sites-developing/we-retail.md))
 * Arquétipos de projeto Maven:
 
-   * para sites de pilha completa: [projeto do GitHub](https://github.com/adobe/aem-project-archetype)
-   * para aplicativos de página única com React/Angular: [projeto do GitHub](https://github.com/adobe/aem-spa-project-archetype)
+  * para sites de pilha completa: [projeto do GitHub](https://github.com/adobe/aem-project-archetype)
+  * para aplicativos de página única com React/Angular: [projeto do GitHub](https://github.com/adobe/aem-spa-project-archetype)
 
 * AEM Screens Players para várias plataformas de destino ([download](https://download.macromedia.com/screens/))
 
 * Modelos de linguagem de conteúdo inteligente. O idioma inglês é pré-instalado - mais idiomas podem ser baixados
 
-   * [Alemão](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
-   * [Espanhol](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
-   * [Italiano](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
-   * [Francês](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
+  * [Alemão](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
+  * [Espanhol](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
+  * [Italiano](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
+  * [Francês](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
 
 * Conjunto de ferramentas de Modernização do AEM, por exemplo, Ferramenta de conversão de caixa de diálogo. ([Projeto do GitHub](https://github.com/adobe/aem-modernize-tools))
 
@@ -478,7 +478,7 @@ Esse processo de priorização produziu mais de 750 alterações voltadas para o
 
 **Formulários**
 
-* [Pacotes para recursos do AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=pt-BR)
+* [Pacotes para recursos do AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
 * [AEM Forms OSGi Client SDK](https://repo1.maven.org/maven2/com/adobe/aemfd/aemfd-client-sdk/)
 
 ## Idiomas {#languages}
@@ -526,9 +526,9 @@ Para [!DNL Adobe Experience Manager] 6.5, [leia a lista de recursos obsoletos e 
 
   Em cada uma dessas ações, verifique se a propriedade `htmllibmanager.fileSystemOutputCacheLocation` não é uma cadeia de caracteres vazia:
 
-   1. Chamando `/libs/granite/ui/content/dumplibs.rebuild.html?invalidate=true`.
-   2. Atualização para o AEM 6.5.
-   3. Execução da &quot;migração de conteúdo lento&quot; no AEM 6.5.
+  1. Chamando `/libs/granite/ui/content/dumplibs.rebuild.html?invalidate=true`.
+  2. Atualização para o AEM 6.5.
+  3. Execução da &quot;migração de conteúdo lento&quot; no AEM 6.5.
 
 * Se você estiver usando o JDK 11 com a instância do AEM 6.5, algumas páginas podem ser exibidas em branco após a implantação de alguns pacotes. A seguinte mensagem de erro é exibida no arquivo de log:
 
@@ -575,13 +575,13 @@ org.osgi.framework.bootdelegation=sun.*,com.sun.*,jdk.internal.reflect,jdk.inter
 
 * Quando um formulário adaptável é configurado para atualizar dinamicamente os valores de um componente e a instância de publicação que hospeda o formulário é acessada por meio do Dispatcher, a funcionalidade para atualizar dinamicamente os valores de um campo deixa de funcionar. Para resolver o problema, na instância de publicação, abra o CRXDE, navegue até `/libs/fd/af/runtime/clientlibs/guideChartReducer` e crie a propriedade listada abaixo.
 
-   * Nome: allowProxy
-   * Tipo: Booleano
-   * Valor: verdadeiro
-   * Protegido: Falso
-   * Obrigatório: Falso
-   * Múltiplo: Falso
-   * Criado Automaticamente: Falso
+  * Nome: allowProxy
+  * Tipo: Booleano
+  * Valor: verdadeiro
+  * Protegido: Falso
+  * Obrigatório: Falso
+  * Múltiplo: Falso
+  * Criado Automaticamente: Falso
 
   A propriedade permite que as bibliotecas de clientes na pasta de tempo de execução acessem proxies. (CQ-4268679)
 
@@ -597,4 +597,4 @@ Os seguintes sites estão disponíveis somente para clientes do. Se você for cl
 
 * Atualizações, patches e pacotes de produtos para funcionalidade adicional na [Distribuição de Software](https://experience.adobe.com/#/downloads/content/software-distribution/br/aem.html).
 
-* [Suporte ao Cliente via Admin Console](https://adminconsole.adobe.com/). Para obter mais informações, consulte [Nova experiência de suporte ao cliente da Adobe](https://experienceleague.adobe.com/docs/customer-one/using/home.html?lang=pt-BR).
+* [Suporte ao Cliente via Admin Console](https://adminconsole.adobe.com/). Para obter mais informações, consulte [Nova experiência de suporte ao cliente da Adobe](https://experienceleague.adobe.com/docs/customer-one/using/home.html).
