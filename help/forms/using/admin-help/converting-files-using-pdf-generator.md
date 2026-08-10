@@ -51,7 +51,7 @@ Os documentos do PDF que o PDF Generator cria no Acrobat 5.0 ou posterior contê
 
 Os metadados do documento contêm (mas não se limitam a) informações que também aparecem na guia Descrição da caixa de diálogo Propriedades do documento no Acrobat. As alterações feitas na guia Descrição são refletidas nos metadados do documento. Os metadados de documentos podem ser estendidos e modificados usando produtos de terceiros.
 
-A Adobe Extensible Metadata Platform (XMP) fornece aos aplicativos da Adobe uma estrutura XML comum que padroniza a criação, o processamento e a troca de metadados de documentos em workflows de publicação. Você pode salvar e importar o código-fonte XML de metadados do documento no formato XMP, facilitando o compartilhamento de metadados entre vários documentos. Para obter mais informações sobre arquivos XMP, consulte [Plataforma de Metadados Extensível (XMP)](https://www.adobe.com/products/xmp/) e [Centro de Desenvolvedores do Adobe XMP](https://www.adobe.com/devnet/xmp.html).
+A Adobe Extensible Metadata Platform (XMP) fornece aos aplicativos da Adobe uma estrutura XML comum que padroniza a criação, o processamento e a troca de metadados de documentos em workflows de publicação. Você pode salvar e importar o código-fonte XML de metadados do documento no formato XMP, facilitando o compartilhamento de metadados entre vários documentos. Para obter mais informações sobre arquivos XMP, consulte [Plataforma de Metadados Extensível (XMP)](https://www.adobe.com/br/products/xmp/) e [Centro de Desenvolvedores do Adobe XMP](https://www.adobe.com/devnet/xmp.html).
 
 Você pode criar arquivos XMP no Acrobat.
 
@@ -116,7 +116,7 @@ Você pode exportar arquivos PDF para vários formatos de arquivo, conforme desc
 
    O Tempo de conversão exibido quando o arquivo é convertido pode ser maior que o valor especificado aqui. O Tempo de conversão inclui o tempo gasto aguardando o thread ou processo, o tempo gasto para converter o arquivo e o tempo gasto pelo conversor de fallback (se aplicável). hora. O valor de Especificar um tempo limite é apenas o tempo necessário para converter o arquivo.
 
-1. (Opcional) Na opção **Especificar perfil de comprovação personalizado**, clique em Procurar e selecione um [perfil de comprovação personalizado](https://helpx.adobe.com/acrobat/using/preflight-profiles-acrobat-pro.html). Os perfis de comprovação são usados somente ao converter documentos no formato de arquivo PDF (PDF/A).
+1. (Opcional) Na opção **Especificar perfil de comprovação personalizado**, clique em Procurar e selecione um [perfil de comprovação personalizado](https://helpx.adobe.com/br/acrobat/using/preflight-profiles-acrobat-pro.html). Os perfis de comprovação são usados somente ao converter documentos no formato de arquivo PDF (PDF/A).
 1. Clique em Exportar. Quando a conversão estiver concluída, um link para o arquivo exportado será exibido.
 1. Clique no link para exibir o arquivo convertido.
 
