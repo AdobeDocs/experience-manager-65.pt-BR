@@ -87,7 +87,7 @@ A página do relatório é:
 
 ### Base de Relatório {#report-base}
 
-O componente [`reportbase` ](#report-base-component) forma a base de qualquer relatório porque ele:
+O componente [`reportbase` &#x200B;](#report-base-component) forma a base de qualquer relatório porque ele:
 
 * Preserva a definição da [consulta](#the-query-and-data-retrieval) que fornece o conjunto de resultados subjacente de dados.
 
