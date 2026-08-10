@@ -112,9 +112,9 @@ A interface e as classes incluem:
 * Interface `com.day.cq.dam.api.handler.AssetHandler`: esta interface descreve o serviço que adiciona suporte para tipos MIME específicos. A adição de um tipo MIME requer a implementação dessa interface. A interface contém métodos para importar e exportar os documentos específicos, para criar miniaturas e extrair metadados.
 * Classe `com.day.cq.dam.core.AbstractAssetHandler`: esta classe serve como base para todas as outras implementações do manipulador de ativos e fornece a funcionalidade comum usada.
 * classe `com.day.cq.dam.core.AbstractSubAssetHandler`:
-   * Essa classe serve como base para todas as outras implementações do manipulador de ativos e fornece a funcionalidade usada com frequência, além da funcionalidade usada com frequência para a extração de ativos secundários.
-   * A melhor maneira de iniciar uma implementação é herdar de uma implementação abstrata fornecida que cuida da maioria das coisas e fornece o comportamento padrão razoável: a classe com.day.cq.dam.core.AbstractAssetHandler.
-   * Esta classe já fornece um descritor de serviço abstrato. Portanto, se você herdou desta classe e usou o maven-sling-plugin, certifique-se de definir o sinalizador de herança como true.
+  * Essa classe serve como base para todas as outras implementações do manipulador de ativos e fornece a funcionalidade usada com frequência, além da funcionalidade usada com frequência para a extração de ativos secundários.
+  * A melhor maneira de iniciar uma implementação é herdar de uma implementação abstrata fornecida que cuida da maioria das coisas e fornece o comportamento padrão razoável: a classe com.day.cq.dam.core.AbstractAssetHandler.
+  * Esta classe já fornece um descritor de serviço abstrato. Portanto, se você herdou desta classe e usou o maven-sling-plugin, certifique-se de definir o sinalizador de herança como true.
 
 Os seguintes métodos devem ser implementados:
 
@@ -124,7 +124,7 @@ Os seguintes métodos devem ser implementados:
 
 Este é um exemplo de template:
 
-empacotar my.own.stuff; /&ast;&ast; &ast; @scr.component inherit=&quot;true&quot; &ast; @scr.service &ast;/ public class MyMediaHandler extends com.day.cq.dam.core.AbstractAssetHandler { // implementar as partes relevantes }
+empacotar my.own.stuff; /&amp;ast;&amp;ast; &amp;ast; @scr.component inherit=&quot;true&quot; &amp;ast; @scr.service &amp;ast;/ public class MyMediaHandler extends com.day.cq.dam.core.AbstractAssetHandler { // implementar as partes relevantes }
 
 A interface e as classes incluem:
 

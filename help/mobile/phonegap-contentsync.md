@@ -12,7 +12,7 @@ feature: Mobile
 role: Admin
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '2924'
+source-wordcount: '2955'
 ht-degree: 0%
 
 ---
@@ -25,13 +25,13 @@ ht-degree: 0%
 >
 >Este documento faz parte do [Guia de Introdução ao Adobe Experience Manager (AEM) Mobile](/help/mobile/getting-started-aem-mobile.md), um ponto de partida recomendado para referência do AEM Mobile.
 
-Use a Sincronização de conteúdo para empacotar o conteúdo para que ele possa ser usado em aplicativos móveis nativos. As páginas criadas no AEM podem ser usadas como conteúdo do aplicativo, mesmo quando o dispositivo está offline. Além disso, como as páginas AEM são baseadas em padrões da Web, elas funcionam em várias plataformas, permitindo que você as incorpore em qualquer invólucro nativo. Essa estratégia reduz o esforço de desenvolvimento e permite atualizar facilmente o conteúdo do aplicativo.
+Use a Sincronização de conteúdo para empacotar o conteúdo para que ele possa ser usado em aplicativos móveis nativos. As páginas criadas no AEM podem ser usadas como conteúdo de aplicativo, mesmo quando o dispositivo está offline. Além disso, como as páginas do AEM são baseadas em padrões da Web, elas funcionam em várias plataformas, permitindo que você as incorpore em qualquer invólucro nativo. Essa estratégia reduz o esforço de desenvolvimento e permite atualizar facilmente o conteúdo do aplicativo.
 
 >[!NOTE]
 >
->Os aplicativos PhoneGap criados por meio das Ferramentas AEM já estão configurados para usar páginas AEM como conteúdo por meio da Sincronização de conteúdo.
+>Os aplicativos PhoneGap criados com as Ferramentas do AEM já estão configurados para usar páginas do AEM como conteúdo por meio da Sincronização de conteúdo.
 
-A estrutura de sincronização de conteúdo cria um arquivo que contém o conteúdo da Web. O conteúdo pode ser qualquer coisa, desde páginas simples, imagens e arquivos PDF ou aplicações Web inteiras. A API de sincronização de conteúdo fornece acesso ao arquivo morto de aplicativos móveis ou processos de criação para que o conteúdo possa ser recuperado e incluído no aplicativo.
+A estrutura de sincronização de conteúdo cria um arquivo que contém o conteúdo da Web. O conteúdo pode ser qualquer coisa a partir de páginas simples, imagens e arquivos PDF ou de aplicativos Web inteiros. A API de sincronização de conteúdo fornece acesso ao arquivo morto de aplicativos móveis ou processos de criação para que o conteúdo possa ser recuperado e incluído no aplicativo.
 
 A sequência de etapas a seguir ilustra um caso de uso típico da Sincronização de conteúdo:
 
@@ -50,9 +50,9 @@ A sequência de etapas a seguir ilustra um caso de uso típico da Sincronizaçã
 
 Crie uma configuração de Sincronização de conteúdo para especificar o conteúdo do arquivo ZIP que é entregue ao cliente. Você pode criar qualquer número de configurações de sincronização de conteúdo. Cada configuração tem um nome para fins de identificação.
 
-Para criar uma configuração de Sincronização de Conteúdo, adicione um nó `cq:ContentSyncConfig` ao repositório, com a propriedade `sling:resourceType` definida como `contentsync/config`. O nó `cq:ContentSyncConfig` pode estar localizado em qualquer lugar no repositório, no entanto, ele deve estar acessível aos usuários na instância de publicação AEM. Portanto, você deve adicionar o nó abaixo de `/content`.
+Para criar uma configuração de Sincronização de Conteúdo, adicione um nó `cq:ContentSyncConfig` ao repositório, com a propriedade `sling:resourceType` definida como `contentsync/config`. O nó `cq:ContentSyncConfig` pode estar localizado em qualquer lugar no repositório, no entanto, ele deve estar acessível aos usuários na instância de publicação do AEM. Portanto, você deve adicionar o nó abaixo de `/content`.
 
-Para especificar o conteúdo do arquivo ZIP de sincronização de conteúdo, adicione nós secundários ao nó cq:ContentSyncConfig. As seguintes propriedades de cada nó secundário identificam um item de conteúdo a ser incluído e como ele é processado ao adicioná-lo:
+Para especificar o conteúdo do arquivo ZIP de sincronização de conteúdo, adicione nós filhos ao nó cq:ContentSyncConfig. As seguintes propriedades de cada nó secundário identificam um item de conteúdo a ser incluído e como ele é processado ao adicioná-lo:
 
 * `path`: O local do conteúdo.
 * `type`: o nome do tipo de configuração a ser usado para processar o conteúdo. Vários tipos estão disponíveis e são descritos em Tipos de configuração.
@@ -100,13 +100,13 @@ Quando um usuário executa uma atualização do cache da Sincronização de cont
 
 Você pode substituir o usuário padrão e especificar um usuário ou grupo que atualize um cache de sincronização de conteúdo específico.
 
-Para substituir o usuário padrão, especifique um usuário ou grupo que execute atualizações para uma configuração de Sincronização de conteúdo específica adicionando a seguinte propriedade ao nó cq:ContentSyncConfig:
+Para substituir o usuário padrão, especifique um usuário ou grupo que execute atualizações para uma configuração de Sincronização de Conteúdo específica adicionando a seguinte propriedade ao nó cq:ContentSyncConfig:
 
 * Nome: updateuser
 * Tipo: String
 * Valor: o nome do usuário ou grupo que pode executar as atualizações.
 
-Se o nó cq:ContentSyncConfig não tiver a propriedade `updateuser`, o usuário anônimo padrão atualizará o cache.
+Se o nó cq:ContentSyncConfig não tiver propriedade `updateuser`, o usuário anônimo padrão atualizará o cache.
 
 ### Tipos de configuração {#configuration-types}
 
@@ -135,11 +135,11 @@ O processamento pode variar desde a renderização de JSON simples até a render
 * **caminho** - Caminho para uma pasta de ativos abaixo de /content/dam.
 * **representações** - O tipo é uma matriz de cadeias de caracteres que permite ao usuário especificar quais representações usar em vez da imagem padrão. A lista a seguir resume algumas representações predefinidas, mas você também pode usar qualquer representação criada pelo fluxo de trabalho:
 
-   * *original*
-   * *cq5dam.thumbnail.48.48.png*
-   * *cq5dam.thumbnail.319.319.png*
-   * *cq5dam.thumbnail.140.100.png*
-   * *cq5dam.web.1280.1280.png*
+  * *original*
+  * *cq5dam.thumbnail.48.48.png*
+  * *cq5dam.thumbnail.319.319.png*
+  * *cq5dam.thumbnail.140.100.png*
+  * *cq5dam.web.1280.1280.png*
 
 **image** - Coletar uma imagem.
 
@@ -147,7 +147,7 @@ O processamento pode variar desde a renderização de JSON simples até a render
 
 O tipo de imagem é usado para incluir o logotipo We.Retail no arquivo zip.
 
-**páginas** - Renderiza páginas AEM e coleta ativos referenciados.
+**páginas** - Renderizar páginas do AEM e coletar ativos referenciados.
 
 * **caminho** - Caminho para uma página.
 * **extensão** - Extensão que deve ser usada na solicitação. Para páginas, isso é quase sempre *html*, mas outras ainda são possíveis.
@@ -174,11 +174,11 @@ Cada propriedade pode ter um dos seguintes valores:
 
 * `REWRITE_RELATIVE`: reescreve o caminho com uma posição relativa para o arquivo .html da página no sistema de arquivos.
 
-* `REWRITE_EXTERNAL`: reescreve o caminho apontando para o recurso no servidor, usando o [Serviço Externalizador](/help/sites-developing/externalizer.md) do AEM.
+* `REWRITE_EXTERNAL`: reescreve o caminho apontando para o recurso no servidor, usando o [serviço Externalizador](/help/sites-developing/externalizer.md) do AEM.
 
-O serviço AEM chamado **PathRewriterTransformerFactory** permite configurar os atributos html específicos que serão regravados. O serviço pode ser configurado no console da Web e tem uma configuração para cada propriedade do nó `rewrite`: `clientlibs`, `images` e `links`.
+O serviço do AEM chamado **PathRewriterTransformerFactory** permite configurar os atributos html específicos que serão regravados. O serviço pode ser configurado no console da Web e tem uma configuração para cada propriedade do nó `rewrite`: `clientlibs`, `images` e `links`.
 
-Este recurso foi adicionado no AEM 5.5.
+Esse recurso foi adicionado no AEM 5.5.
 
 ### Exemplo de configuração de sincronização de conteúdo {#example-content-sync-configuration}
 
@@ -230,7 +230,7 @@ A listagem abaixo mostra um exemplo de configuração para a Sincronização de 
 
 No exemplo, a página da listagem de eventos deve ser a página inicial. Essas informações são fornecidas na propriedade **indexPage** e podem ser facilmente alteradas a qualquer momento. Uma segunda propriedade define o caminho do arquivo *events.plist*. Como veremos mais tarde, o aplicativo cliente agora pode ler o manifesto e agir de acordo com ele.
 
-Quando a configuração for definida, o conteúdo poderá ser baixado com um navegador ou qualquer outro cliente HTTP, ou se você estiver desenvolvendo para iOS, poderá usar a biblioteca dedicada do cliente WAppKitSync. O local de download é composto do caminho da configuração e da extensão *.zip*, por exemplo, ao trabalhar com uma instância de AEM local: *https://localhost:4502/content/weretail_go.zip*
+Quando a configuração for definida, o conteúdo poderá ser baixado com um navegador ou qualquer outro cliente HTTP, ou se você estiver desenvolvendo para iOS, poderá usar a biblioteca dedicada do cliente WAppKitSync. O local de download é composto do caminho da configuração e da extensão *.zip*, por exemplo, ao trabalhar com uma instância do AEM local: *https://localhost:4502/content/weretail_go.zip*
 
 ### O Console de sincronização de conteúdo {#the-content-sync-console}
 
@@ -288,7 +288,7 @@ Observe que a definição *fatory* contém a interface comum e o tipo personaliz
 
 ### Implementação de um manipulador de atualização personalizado {#implementing-a-custom-update-handler}
 
-Cada página móvel do We.Retail contém um logotipo no canto superior esquerdo que gostaríamos de incluir no arquivo zip. No entanto, para otimização de cache, o AEM não faz referência à localização real do arquivo de imagem no repositório, o que nos impede de simplesmente usar o tipo de configuração **copy**. Em vez disso, devemos fornecer nosso próprio tipo de configuração de **logotipo** que disponibiliza a imagem no local solicitado pelo AEM. A listagem de código a seguir mostra a implementação completa do manipulador de atualização de logotipo:
+Cada página móvel do We.Retail contém um logotipo no canto superior esquerdo que gostaríamos de incluir no arquivo zip. No entanto, para otimização de cache, o AEM não faz referência ao local real do arquivo de imagem no repositório, o que nos impede de simplesmente usar o tipo de configuração **copy**. Em vez disso, devemos fornecer nosso próprio tipo de configuração de **logotipo** que disponibiliza a imagem no local solicitado pela AEM. A listagem de código a seguir mostra a implementação completa do manipulador de atualização de logotipo:
 
 #### LogoUpdateHandler.java {#logoupdatehandler-java}
 
@@ -389,4 +389,4 @@ Se uma conexão não puder ser estabelecida, os dados baixados anteriormente ser
 Para saber mais sobre as funções e responsabilidades de um Administrador e Desenvolvedor, consulte os recursos abaixo:
 
 * [Criação para Adobe PhoneGap Enterprise com AEM](/help/mobile/phonegap.md)
-* [Administração de conteúdo para o Adobe PhoneGap Enterprise com AEM](/help/mobile/administer-phonegap.md)
+* [Administração de conteúdo para o Adobe PhoneGap Enterprise com o AEM](/help/mobile/administer-phonegap.md)

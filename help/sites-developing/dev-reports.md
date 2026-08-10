@@ -11,32 +11,32 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '5177'
-ht-degree: 0%
+source-wordcount: '5297'
+ht-degree: 1%
 
 ---
 
 
 # Desenvolvimento de relatórios {#developing-reports}
 
-O Adobe Experience Manager (AEM) fornece uma seleção de [relatórios padrão](/help/sites-administering/reporting.md), a maioria dos quais com base em uma estrutura de relatórios.
+O Adobe Experience Manager (AEM) fornece uma seleção de [relatórios padrão](/help/sites-administering/reporting.md), a maioria dos quais baseada em uma estrutura de relatórios.
 
 Usando a estrutura, você pode estender esses relatórios padrão ou desenvolver seus próprios novos relatórios. A estrutura de relatórios integra-se perfeitamente aos conceitos e princípios existentes do CQ5 para que os desenvolvedores possam usar seu conhecimento existente sobre o CQ5 como um trampolim para o desenvolvimento de relatórios.
 
-Para os relatórios padrão entregues com AEM:
+Para os relatórios padrão entregues com o AEM:
 
 * Esses relatórios se baseiam na estrutura de relatórios:
 
-   * [Relatório do componente](/help/sites-administering/reporting.md#component-report)
-   * [Relatório de atividades de página](/help/sites-administering/reporting.md#page-activity-report)
-   * [Relatório do usuário](/help/sites-administering/reporting.md#user-report)
-   * [Relatório de instâncias do fluxo de trabalho](/help/sites-administering/reporting.md#workflow-instance-report)
+  * [Relatório do componente](/help/sites-administering/reporting.md#component-report)
+  * [Relatório de atividades de página](/help/sites-administering/reporting.md#page-activity-report)
+  * [Relatório do usuário](/help/sites-administering/reporting.md#user-report)
+  * [Relatório de instâncias do fluxo de trabalho](/help/sites-administering/reporting.md#workflow-instance-report)
 
 * Os seguintes relatórios baseiam-se em princípios individuais e, por conseguinte, não podem ser alargados:
 
-   * [Uso do disco](/help/sites-administering/reporting.md#disk-usage)
-   * [Verificação de integridade](/help/sites-administering/reporting.md#health-check)
-   * [Relatório de fluxo de trabalho](/help/sites-administering/reporting.md#workflow-report)
+  * [Uso do disco](/help/sites-administering/reporting.md#disk-usage)
+  * [Verificação de integridade](/help/sites-administering/reporting.md#health-check)
+  * [Relatório de fluxo de trabalho](/help/sites-administering/reporting.md#workflow-report)
 
 >[!NOTE]
 >
@@ -54,7 +54,7 @@ Para os relatórios padrão entregues com AEM:
 >  `P:<name> = <value>` : descreve uma propriedade `<name>` que deve ser definida como o valor de `<value>`.
 >
 >* Recuo mostra as dependências hierárquicas entre os nós.
->* Itens separados por | indica uma lista de itens possíveis; por exemplo, tipos ou nomes; por exemplo, `String|String[]` significa que a propriedade pode ser String ou String[].
+>* Itens separados por | denota uma lista de itens possíveis; por exemplo, tipos ou nomes; por exemplo, `String|String[]` significa que a propriedade pode ser String ou String[].
 >
 >* `[]` descreve uma matriz; como Cadeia de Caracteres[] ou uma matriz de nós como na [Definição de Consulta](#query-definition).
 >
@@ -87,7 +87,7 @@ A página do relatório é:
 
 ### Base de Relatório {#report-base}
 
-O componente [`reportbase` &#x200B;](#report-base-component) forma a base de qualquer relatório porque ele:
+O componente [`reportbase` ](#report-base-component) forma a base de qualquer relatório porque ele:
 
 * Preserva a definição da [consulta](#the-query-and-data-retrieval) que fornece o conjunto de resultados subjacente de dados.
 
@@ -113,15 +113,15 @@ A consulta:
 
 * Geralmente consiste em:
 
-   * Um caminho raiz.
+  * Um caminho raiz.
 
-     Especifica a subárvore do repositório a ser pesquisado.
+    Especifica a subárvore do repositório a ser pesquisado.
 
-     Para ajudar a minimizar o impacto no desempenho, é aconselhável (tentar) restringir a consulta a uma subárvore específica do repositório. O caminho raiz pode ser predefinido no [modelo de relatório](#report-template) ou definido pelo usuário na [caixa de diálogo Configuração (Editar)](#configuration-dialog).
+    Para ajudar a minimizar o impacto no desempenho, é aconselhável (tentar) restringir a consulta a uma subárvore específica do repositório. O caminho raiz pode ser predefinido no [modelo de relatório](#report-template) ou definido pelo usuário na [caixa de diálogo Configuração (Editar)](#configuration-dialog).
 
-   * [Um ou mais critérios](#query-definition).
+  * [Um ou mais critérios](#query-definition).
 
-     Elas são impostas para produzir o conjunto de resultados (inicial); incluem, por exemplo, restrições no tipo de nó ou restrições de propriedade.
+    Elas são impostas para produzir o conjunto de resultados (inicial); incluem, por exemplo, restrições no tipo de nó ou restrições de propriedade.
 
 **O ponto principal aqui é que cada único nó retornado no conjunto de resultados da consulta é usado para gerar uma única linha no relatório (portanto, uma relação 1:1).**
 
@@ -223,7 +223,7 @@ N:apps
                         N:<columnname> [cq:Component]  // column base component
 ```
 
-### Componente de Página  {#page-component}
+### Componente de Página {#page-component}
 
 Uma página de relatório deve usar o `sling:resourceType` de `/libs/cq/reporting/components/reportpage`.
 
@@ -315,68 +315,68 @@ N:charting
 
   Mantém definições para os gráficos ativos.
 
-   * `active`
+  * `active`
 
-     Como várias configurações podem ser definidas, você pode usá-las para definir quais estão ativas no momento. Eles são definidos por uma matriz de nós (não há convenção de nomenclatura obrigatória para esses nós, mas os relatórios padrão geralmente usam `0`, `1`. `x`), cada um com a seguinte propriedade:
+    Como várias configurações podem ser definidas, você pode usá-las para definir quais estão ativas no momento. Eles são definidos por uma matriz de nós (não há convenção de nomenclatura obrigatória para esses nós, mas os relatórios padrão geralmente usam `0`, `1`.. `x`), cada um com a seguinte propriedade:
 
-      * `id`
+    * `id`
 
-        Identificação dos gráficos ativos. Deve corresponder à identificação de um dos gráficos `definitions`.
+      Identificação dos gráficos ativos. Deve corresponder à identificação de um dos gráficos `definitions`.
 
 * `definitions`
 
   Define os tipos de gráfico que estão potencialmente disponíveis para o relatório. O `definitions` a ser usado é especificado pelas configurações de `active`.
 
-  As definições são especificadas usando uma matriz de nós (mais uma vez frequentemente nomeados como `0`, `1`. `x`), cada um com as seguintes propriedades:
+  As definições são especificadas usando uma matriz de nós (novamente frequentemente nomeados como `0`, `1`.. `x`), cada um com as seguintes propriedades:
 
-   * `id`
+  * `id`
 
-     A identificação do gráfico.
+    A identificação do gráfico.
 
-   * `type`
+  * `type`
 
-     O tipo de gráfico disponível. Selecionar de:
+    O tipo de gráfico disponível. Selecionar de:
 
-      * `pie`
-Gráfico de pizza. Gerado somente a partir dos dados atuais.
+    * `pie`
+      Gráfico de pizza. Gerado somente a partir dos dados atuais.
 
-      * `lineseries`
-Séries de linhas (pontos de conexão que representam os instantâneos reais). Gerado somente a partir de dados históricos.
+    * `lineseries`
+      Séries de linhas (pontos de conexão que representam os instantâneos reais). Gerado somente a partir de dados históricos.
 
-   * Propriedades adicionais estão disponíveis, dependendo do tipo de gráfico:
+  * Propriedades adicionais estão disponíveis, dependendo do tipo de gráfico:
 
-      * para o tipo de gráfico `pie`:
+    * para o tipo de gráfico `pie`:
 
-         * `maxRadius` ( `Double/Long`)
+      * `maxRadius` ( `Double/Long`)
 
-           O raio máximo permitido para o gráfico de pizza; portanto, o tamanho máximo permitido para o gráfico (sem legenda). Ignorado se `fixedRadius` estiver definido.
+        O raio máximo permitido para o gráfico de pizza; portanto, o tamanho máximo permitido para o gráfico (sem legenda). Ignorado se `fixedRadius` estiver definido.
 
-         * `minRadius` ( `Double/Long`)
+      * `minRadius` ( `Double/Long`)
 
-           O raio mínimo permitido para o gráfico de pizza. Ignorado se `fixedRadius` estiver definido.
+        O raio mínimo permitido para o gráfico de pizza. Ignorado se `fixedRadius` estiver definido.
 
-         * `fixedRadius` ( `Double/Long`)
-Define um raio fixo para o gráfico de pizza.
+      * `fixedRadius` ( `Double/Long`)
+        Define um raio fixo para o gráfico de pizza.
 
-      * para o tipo de gráfico [`lineseries`](/help/sites-administering/reporting.md#display-limits):
+    * para o tipo de gráfico [`lineseries`](/help/sites-administering/reporting.md#display-limits):
 
-         * `totals` ( `Boolean`)
+      * `totals` ( `Boolean`)
 
-           Verdadeiro se uma linha adicional mostrando o **Total** deve ser mostrada.
-padrão: `false`
+        Verdadeiro se uma linha adicional mostrando o **Total** deve ser mostrada.
+        padrão: `false`
 
-         * `series` ( `Long`)
+      * `series` ( `Long`)
 
-           Número de linhas/séries a serem exibidas.
-padrão: `9` (este também é o máximo permitido)
+        Número de linhas/séries a serem exibidas.
+        padrão: `9` (este também é o máximo permitido)
 
-         * `hoverLimit` ( `Long`)
+      * `hoverLimit` ( `Long`)
 
-           Número máximo de instantâneos agregados (pontos mostrados em cada linha horizontal, representando valores distintos) para os quais os pop-ups serão exibidos. Ou seja, quando o usuário passa o mouse sobre um valor distinto ou rótulo correspondente na legenda do gráfico.
+        Número máximo de instantâneos agregados (pontos mostrados em cada linha horizontal, representando valores distintos) para os quais os pop-ups serão exibidos. Ou seja, quando o usuário passa o mouse sobre um valor distinto ou rótulo correspondente na legenda do gráfico.
 
-           padrão: `35` (isto é, nenhum pop-up será exibido se mais de 35 valores distintos forem aplicáveis às configurações atuais do gráfico).
+        padrão: `35` (isto é, nenhum pop-up será exibido se mais de 35 valores distintos forem aplicáveis às configurações atuais do gráfico).
 
-           Há um limite adicional de dez pop-ups que podem ser exibidos em paralelo (vários pop-ups podem ser exibidos quando o mouse sobre os textos da legenda é feito).
+        Há um limite adicional de dez pop-ups que podem ser exibidos em paralelo (vários pop-ups podem ser exibidos quando o mouse sobre os textos da legenda é feito).
 
 ### Caixa de diálogo Configuração {#configuration-dialog}
 
@@ -463,8 +463,8 @@ Além disso, um caminho raiz pode ser definido para o relatório:
 
   Ele pode ser especificado por:
 
-   * o [modelo de relatório](#report-template) (como valor fixo ou como valor padrão para a caixa de diálogo de configuração).
-   * o usuário (usando este parâmetro)
+  * o [modelo de relatório](#report-template) (como valor fixo ou como valor padrão para a caixa de diálogo de configuração).
+  * o usuário (usando este parâmetro)
 
 ## Componente de base da coluna {#column-base-component}
 
@@ -531,8 +531,8 @@ N:definitions
 
   O extrator de valor correspondente (que está no controle aqui):
 
-   * Verifica se há uma propriedade jcr:lastModified disponível e, em caso afirmativo, a usa.
-   * Se nenhuma propriedade jcr:lastModified estiver disponível, o conteúdo de jcr:created será usado em seu lugar.
+  * Verifica se há uma propriedade jcr:lastModified disponível e, em caso afirmativo, use-a.
+  * Se nenhuma propriedade jcr:lastModified estiver disponível, o conteúdo de jcr:created será usado em seu lugar.
 
 * `subPath`
 
@@ -599,81 +599,81 @@ N:definitions
 
   Define o resolvedor a ser usado. Os seguintes resolvedores estão disponíveis:
 
-   * `const`
+  * `const`
 
-     Mapeia valores para outros valores; por exemplo, isso é usado para resolver constantes como `en` para seu valor equivalente `English`.
+    Mapeia valores para outros valores; por exemplo, isso é usado para resolver constantes como `en` para seu valor equivalente `English`.
 
-   * `default`
+  * `default`
 
-     O resolvedor padrão. Este é um resolvedor fictício que na verdade não resolve nada.
+    O resolvedor padrão. Este é um resolvedor fictício que na verdade não resolve nada.
 
-   * `page`
+  * `page`
 
-     Resolve um valor de caminho para o caminho da página apropriada; mais precisamente, para o nó `jcr:content` correspondente. Por exemplo, `/content/.../page/jcr:content/par/xyz` é resolvido como `/content/.../page/jcr:content`.
+    Resolve um valor de caminho para o caminho da página apropriada; mais precisamente, para o nó `jcr:content` correspondente. Por exemplo, `/content/.../page/jcr:content/par/xyz` é resolvido como `/content/.../page/jcr:content`.
 
-   * `path`
+  * `path`
 
-     Resolve um valor de caminho anexando opcionalmente um subcaminho e obtendo o valor real de uma propriedade do nó (conforme definido por `resolverConfig`) no caminho resolvido. Por exemplo, um `path` de `/content/.../page/jcr:content` pode ser resolvido para o conteúdo da propriedade `jcr:title`. Isso significa que um caminho de página é resolvido para o título da página.
+    Resolve um valor de caminho anexando opcionalmente um subcaminho e obtendo o valor real de uma propriedade do nó (conforme definido por `resolverConfig`) no caminho resolvido. Por exemplo, um `path` de `/content/.../page/jcr:content` pode ser resolvido para o conteúdo da propriedade `jcr:title`. Isso significa que um caminho de página é resolvido para o título da página.
 
-   * `pathextension`
+  * `pathextension`
 
-     Resolve um valor ao preceder um caminho e obter o valor real de uma propriedade do nó no caminho resolvido. Por exemplo, um valor `de` pode ser precedido por um caminho como `/libs/wcm/core/resources/languages`, pegando o valor da propriedade `language`, para resolver o código do país `de` para a descrição do idioma `German`.
+    Resolve um valor ao preceder um caminho e obter o valor real de uma propriedade do nó no caminho resolvido. Por exemplo, um valor `de` pode ser precedido por um caminho como `/libs/wcm/core/resources/languages`, pegando o valor da propriedade `language`, para resolver o código do país `de` para a descrição do idioma `German`.
 
 * `resolverConfig`
 
   Fornece definições para o resolvedor. As opções disponíveis dependem do `resolver` selecionado:
 
-   * `const`
+  * `const`
 
-     Use propriedades para especificar as constantes para resolução. O nome da propriedade define a constante a ser resolvida; o valor da propriedade define o valor resolvido.
+    Use propriedades para especificar as constantes para resolução. O nome da propriedade define a constante a ser resolvida; o valor da propriedade define o valor resolvido.
 
-     Por exemplo, uma propriedade com **Nome**= `1` e **Valor** `=One` resolve 1 para Um.
+    Por exemplo, uma propriedade com **Nome**= `1` e **Valor** `=One` resolve 1 para Um.
 
-   * `default`
+  * `default`
 
-     Nenhuma configuração disponível.
+    Nenhuma configuração disponível.
 
-   * `page`
+  * `page`
 
-      * `propertyName` (opcional)
+    * `propertyName` (opcional)
 
-        Define o nome da propriedade que deve ser usada para resolver o valor. Se não especificado, o valor padrão de *jcr:title* (o título da página) é usado; para o resolvedor `page`, isso significa que primeiro o caminho é resolvido para o caminho da página e, em seguida, resolvido para o título da página.
+      Define o nome da propriedade que deve ser usada para resolver o valor. Se não especificado, o valor padrão de *jcr:title* (o título da página) é usado; para o resolvedor `page`, isso significa que primeiro o caminho é resolvido para o caminho da página e depois resolvido para o título da página.
 
-   * `path`
+  * `path`
 
-      * `propertyName` (opcional)
+    * `propertyName` (opcional)
 
-        Especifica o nome da propriedade que deve ser usada para resolver o valor. Se não for especificado, o valor padrão de `jcr:title` será usado.
+      Especifica o nome da propriedade que deve ser usada para resolver o valor. Se não for especificado, o valor padrão de `jcr:title` será usado.
 
-      * `subPath` (opcional)
+    * `subPath` (opcional)
 
-        Essa propriedade pode ser usada para especificar um sufixo a ser anexado ao caminho antes que o valor seja resolvido.
+      Essa propriedade pode ser usada para especificar um sufixo a ser anexado ao caminho antes que o valor seja resolvido.
 
-   * `pathextension`
+  * `pathextension`
 
-      * `path` (obrigatório)
+    * `path` (obrigatório)
 
-        Define o caminho que será anexado.
+      Define o caminho que será anexado.
 
-      * `propertyName` (obrigatório)
+    * `propertyName` (obrigatório)
 
-        Define a propriedade no caminho resolvido em que o valor real está localizado.
+      Define a propriedade no caminho resolvido em que o valor real está localizado.
 
-      * `i18n` (opcional; tipo Booleano)
+    * `i18n` (opcional; tipo Booleano)
 
-        Determina se o valor resolvido deve ser *internacionalizado* (ou seja, usando os [serviços de internacionalização do CQ5](/help/sites-administering/tc-manage.md)).
+      Determina se o valor resolvido deve ser *internacionalizado* (ou seja, usando os [serviços de internacionalização do CQ5](/help/sites-administering/tc-manage.md)).
 
 * `preprocessing`
 
   O pré-processamento é opcional e pode ser associado (separadamente) às fases de processamento *apply* ou *applyAfter*:
 
-   * `apply`
+  * `apply`
 
-     A fase inicial de pré-processamento ([etapa 3 na representação da fila de processamento](#processing-queue)).
+    A fase inicial de pré-processamento ([etapa 3 na representação da fila de processamento](#processing-queue)).
 
-   * `applyAfter`
+  * `applyAfter`
 
-     Aplicar após o pré-processamento ([etapa 9 na representação da fila de processamento](#processing-queue)).
+    Aplicar após o pré-processamento ([etapa 9 na representação da fila de processamento](#processing-queue)).
 
 #### Resolvedores {#resolvers}
 
@@ -785,23 +785,23 @@ Um exemplo de substituição pode ser detalhado como:
 
 * Para o nó `definitions/data/preprocessing/apply` com estas duas propriedades:
 
-   * `pattern`: `(.*)(/jcr:content)(/|$)(.*)`
-   * `replace`: `$1`
+  * `pattern`: `(.*)(/jcr:content)(/|$)(.*)`
+  * `replace`: `$1`
 
 * Uma string que chega como:
 
-   * `/content/geometrixx/en/services/jcr:content/par/text`
+  * `/content/geometrixx/en/services/jcr:content/par/text`
 
 * Dividido em quatro seções:
 
-   * `$1` - `(.*)` - `/content/geometrixx/en/services`
-   * `$2` - `(/jcr:content)` - `/jcr:content`
-   * `$3` - `(/|$)` - `/`
-   * `$4` - `(.*)` - `par/text`
+  * `$1` - `(.*)` - `/content/geometrixx/en/services`
+  * `$2` - `(/jcr:content)` - `/jcr:content`
+  * `$3` - `(/|$)` - `/`
+  * `$4` - `(.*)` - `par/text`
 
 * E substituída pela cadeia de caracteres representada por `$1`:
 
-   * `/content/geometrixx/en/services`
+  * `/content/geometrixx/en/services`
 
 #### Pré-processamento - Formatos de tipo de dados {#preprocessing-data-type-formatters}
 
@@ -815,17 +815,17 @@ Atualmente, os formatadores de tipo de dados disponíveis são:
 
   Formatador de tipo de dados:
 
-   * `duration`
+  * `duration`
 
-     Duração é o intervalo de tempo entre duas datas definidas. Por exemplo, o início e o fim de uma ação de fluxo de trabalho que levou uma hora, começando em 13/02/11 às 11:23h e terminando uma hora depois às 12:23h de 13/02/11.
+    Duração é o intervalo de tempo entre duas datas definidas. Por exemplo, o início e o fim de uma ação de fluxo de trabalho que levou uma hora, começando em 13/02/11 às 11:23h e terminando uma hora depois às 12:23h de 13/02/11.
 
-     Ele converte um valor numérico (interpretado como milissegundos) em uma cadeia de caracteres de duração; por exemplo, `30000` é formatado como * `30s`.*
+    Ele converte um valor numérico (interpretado como milissegundos) em uma cadeia de caracteres de duração; por exemplo, `30000` é formatado como * `30s`.*
 
-   * `datedelta`
+  * `datedelta`
 
-     Datadelta é o intervalo de tempo entre uma data no passado e &quot;agora&quot; (portanto, tem um resultado diferente se o relatório for visualizado em um momento posterior).
+    Datadelta é o intervalo de tempo entre uma data no passado e &quot;agora&quot; (portanto, tem um resultado diferente se o relatório for visualizado em um momento posterior).
 
-     Ele converte o valor numérico (interpretado como uma diferença de tempo em dias) em uma string de data relativa. Por exemplo, 1 é formatado como um dia atrás.
+    Ele converte o valor numérico (interpretado como uma diferença de tempo em dias) em uma string de data relativa. Por exemplo, 1 é formatado como um dia atrás.
 
 O exemplo a seguir define a formatação `datedelta` para agregações `min` e `max`:
 
@@ -868,18 +868,18 @@ N:definitions
 
   Os itens a seguir estão disponíveis como opções padrão:
 
-   * `string`
-   * `number`
-   * `int`
-   * `date`
-   * `diff`
-   * `timeslot`
+  * `string`
+  * `number`
+  * `int`
+  * `date`
+  * `diff`
+  * `timeslot`
 
-     Usado para extrair partes de uma data necessária para agregação (por exemplo, agrupar por ano para obter dados agregados para cada ano).
+    Usado para extrair partes de uma data necessária para agregação (por exemplo, agrupar por ano para obter dados agregados para cada ano).
 
-   * `sortable`
+  * `sortable`
 
-     Usado para valores que usam valores diferentes (conforme obtidos de propriedades diferentes) para classificação e exibição.
+    Usado para valores que usam valores diferentes (conforme obtidos de propriedades diferentes) para classificação e exibição.
 
   Além disso, qualquer uma das opções acima pode ser definida como vários valores; por exemplo, `string[]` define uma matriz de cadeias de caracteres.
 
@@ -887,16 +887,16 @@ N:definitions
 
   Um tipo pode (opcionalmente) receber um parâmetro. Por exemplo, `timeslot:year` extrai o ano de um campo de data. Tipos com seus parâmetros:
 
-   * `timeslot` - Os valores são comparáveis às constantes correspondentes de `java.utils.Calendar`.
+  * `timeslot` - Os valores são comparáveis às constantes correspondentes de `java.utils.Calendar`.
 
-      * `timeslot:year` - `Calendar.YEAR`
-      * `timeslot:month-of-year` - `Calendar.MONTH`
-      * `timeslot:week-of-year` - `Calendar.WEEK_OF_YEAR`
-      * `timeslot:day-of-month` - `Calendar.DAY_OF_MONTH`
-      * `timeslot:day-of-week` - `Calendar.DAY_OF_WEEK`
-      * `timeslot:day-of-year` - `Calendar.DAY_OF_YEAR`
-      * `timeslot:hour-of-day` - `Calendar.HOUR_OF_DAY`
-      * `timeslot:minute-of-hour` - `Calendar.MINUTE`
+    * `timeslot:year` - `Calendar.YEAR`
+    * `timeslot:month-of-year` - `Calendar.MONTH`
+    * `timeslot:week-of-year` - `Calendar.WEEK_OF_YEAR`
+    * `timeslot:day-of-month` - `Calendar.DAY_OF_MONTH`
+    * `timeslot:day-of-week` - `Calendar.DAY_OF_WEEK`
+    * `timeslot:day-of-year` - `Calendar.DAY_OF_YEAR`
+    * `timeslot:hour-of-day` - `Calendar.HOUR_OF_DAY`
+    * `timeslot:minute-of-hour` - `Calendar.MINUTE`
 
 * `groupable`
 
@@ -906,77 +906,77 @@ N:definitions
 
   Definições de filtro.
 
-   * `filterType`
+  * `filterType`
 
-     Filtros disponíveis:
+    Filtros disponíveis:
 
-      * `string`
+    * `string`
 
-        Um filtro baseado em sequência de caracteres.
+      Um filtro baseado em sequência de caracteres.
 
-   * `id`
+  * `id`
 
-     Identificador do filtro.
+    Identificador do filtro.
 
-   * `phase`
+  * `phase`
 
-     Fases disponíveis:
+    Fases disponíveis:
 
-      * `raw`
+    * `raw`
 
-        O filtro é aplicado em dados brutos.
+      O filtro é aplicado em dados brutos.
 
-      * `preprocessed`
+    * `preprocessed`
 
-        O filtro é aplicado aos dados pré-processados.
+      O filtro é aplicado aos dados pré-processados.
 
-      * `resolved`
+    * `resolved`
 
-        O filtro é aplicado aos dados resolvidos.
+      O filtro é aplicado aos dados resolvidos.
 
 * `aggregates`
 
   Definições de agregação.
 
-   * `text`
+  * `text`
 
-     Nome textual da agregação. Se `text` não for especificado, será usada a descrição padrão da agregação. Por exemplo, `minimum` é usado para a agregação `min`.
+    Nome textual da agregação. Se `text` não for especificado, será usada a descrição padrão da agregação. Por exemplo, `minimum` é usado para a agregação `min`.
 
-   * `type`
+  * `type`
 
-     Tipo de agregação. As agregações disponíveis são:
+    Tipo de agregação. As agregações disponíveis são:
 
-      * `count`
+    * `count`
 
-        Conta o número de linhas.
+      Conta o número de linhas.
 
-      * `count-nonempty`
+    * `count-nonempty`
 
-        Conta o número de linhas não vazias.
+      Conta o número de linhas não vazias.
 
-      * `min`
+    * `min`
 
-        Ele fornece o valor mínimo.
+      Ele fornece o valor mínimo.
 
-      * `max`
+    * `max`
 
-        Ele fornece o valor máximo.
+      Ele fornece o valor máximo.
 
-      * `average`
+    * `average`
 
-        Ele fornece o valor médio.
+      Ele fornece o valor médio.
 
-      * `sum`
+    * `sum`
 
-        Ela fornece a soma de todos os valores.
+      Ela fornece a soma de todos os valores.
 
-      * `median`
+    * `median`
 
-        Ele fornece o valor mediano.
+      Ele fornece o valor mediano.
 
-      * `percentile95`
+    * `percentile95`
 
-        Usa o 95º percentil de todos os valores.
+      Usa o 95º percentil de todos os valores.
 
 ### Valores Padrão da Coluna {#column-default-values}
 
@@ -1029,29 +1029,29 @@ Para tornar uma coluna genérica:
 
   Ver `/libs/cq/reporting/components/userreport/genericcol/definitions/dialog`
 
-   * Os campos da caixa de diálogo devem se referir aos mesmos nomes que a propriedade do componente correspondente, incluindo seu caminho.
+  * Os campos da caixa de diálogo devem se referir aos mesmos nomes que a propriedade do componente correspondente, incluindo seu caminho.
 
-     Por exemplo, se você quiser que o tipo de coluna genérica seja configurável por meio da caixa de diálogo, use um campo com o nome de `./definitions/type`.
+    Por exemplo, se você quiser que o tipo de coluna genérica seja configurável por meio da caixa de diálogo, use um campo com o nome de `./definitions/type`.
 
-   * As propriedades definidas usando a interface do usuário/caixa de diálogo têm precedência sobre as definidas no componente `columnbase`.
+  * As propriedades definidas usando a interface do usuário/caixa de diálogo têm precedência sobre as definidas no componente `columnbase`.
 
 * Defina a Editar configuração.
 
   Ver `/libs/cq/reporting/components/userreport/genericcol/cq:editConfig`
 
-* Use metodologias padrão de AEM para definir propriedades de coluna (adicionais).
+* Use as metodologias padrão do AEM para definir propriedades de coluna (adicionais).
 
   Para propriedades definidas nas instâncias de componente e coluna, o valor na instância de coluna tem prioridade.
 
   As propriedades disponíveis para uma coluna genérica são:
 
-   * `jcr:title` - nome da coluna
-   * `definitions/aggregates` - agregações
-   * `definitions/filters` - filtros
-   * `definitions/type`- o tipo da coluna (deve ser definido na caixa de diálogo, usando um seletor/caixa de combinação ou um campo oculto)
-   * `definitions/data/resolver` e `definitions/data/resolverConfig` (mas não `definitions/data/preprocessing` ou `.../clientFilter`) - o resolvedor e a configuração
-   * `definitions/queryBuilder` - a configuração do construtor de consultas
-   * `defaults/aggregate` - a agregação padrão
+  * `jcr:title` - nome da coluna
+  * `definitions/aggregates` - agregações
+  * `definitions/filters` - filtros
+  * `definitions/type`- o tipo da coluna (deve ser definido na caixa de diálogo, usando um seletor/caixa de combinação ou um campo oculto)
+  * `definitions/data/resolver` e `definitions/data/resolverConfig` (mas não `definitions/data/preprocessing` ou `.../clientFilter`) - o resolvedor e a configuração
+  * `definitions/queryBuilder` - a configuração do construtor de consultas
+  * `defaults/aggregate` - a agregação padrão
 
   Se houver uma nova instância da coluna genérica no **Relatório de Usuário**, as propriedades definidas com a caixa de diálogo serão mantidas em:
 
@@ -1157,7 +1157,7 @@ Um exemplo de trecho de modelo, mostrando a definição do caminho raiz (retirad
 
 Os modelos de relatórios padrão são mantidos em `/libs/cq/reporting/templates`.
 
-No entanto, o Adobe recomenda que você não atualize esses nós. Em vez disso, crie seus próprios nós de componente em `/apps/cq/reporting/templates` ou, se mais apropriado, `/apps/<yourProject>/reports/templates`.
+No entanto, a Adobe recomenda que você não atualize esses nós. Em vez disso, crie seus próprios nós de componente em `/apps/cq/reporting/templates` ou, se mais apropriado, `/apps/<yourProject>/reports/templates`.
 
 Onde, como exemplo (consulte também [Local dos Componentes de Relatório](#location-of-report-components)):
 
@@ -1386,7 +1386,7 @@ Uma instância do novo relatório agora pode ser criada:
 
 Esta seção descreve opções avançadas de configuração para os serviços OSGi que implementam a estrutura de relatório.
 
-Elas podem ser visualizadas usando o menu Configuração do console da Web (disponível em `http://localhost:4502/system/console/configMgr`, por exemplo). Ao trabalhar com AEM, há vários métodos de gerenciamento das definições de configuração desses serviços; consulte [Configurar OSGi](/help/sites-deploying/configuring-osgi.md) para obter mais detalhes e as práticas recomendadas.
+Elas podem ser visualizadas usando o menu Configuração do console da Web (disponível em `http://localhost:4502/system/console/configMgr`, por exemplo). Ao trabalhar com o AEM, há vários métodos de gerenciamento das definições de configuração desses serviços; consulte [Configurar OSGi](/help/sites-deploying/configuring-osgi.md) para obter mais detalhes e as práticas recomendadas.
 
 ### Serviço básico (Configuração de relatório do Day CQ) {#basic-service-day-cq-reporting-configuration}
 

@@ -12,7 +12,7 @@ feature: Administering
 role: Admin
 source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '6115'
+source-wordcount: '6118'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ Para configurar o conteúdo do AEM para aparecer em um portal, consulte [Instala
 
 >[!CAUTION]
 >
->O AEM Portal Diretor está obsoleto a partir do AEM 6.4. Consulte [Recursos Preteridos e Removidos](https://helpx.adobe.com/br/experience-manager/6-4/release-notes/deprecated-removed-features.html).
+>O AEM Portal Diretor está obsoleto a partir do AEM 6.4. Consulte [Recursos Preteridos e Removidos](https://helpx.adobe.com/experience-manager/6-4/release-notes/deprecated-removed-features.html).
 
 ## Administrar o portlet de conteúdo do AEM {#administering-the-aem-content-portlet}
 
@@ -171,7 +171,8 @@ Você pode implantar este pacote em tempo de execução ou adicioná-lo ao aplic
 Depois que o cache é implantado, o portlet armazena em cache o conteúdo da instância de publicação. O cache do portlet pode ser invalidado com uma liberação do dispatcher do AEM. Para configurar o portlet para usar seu próprio cache:
 
 1. Configure um agente de replicação no autor que se destina ao servidor do portal.
-1. Supondo que o servidor do portal esteja em execução no host **localhost**, **porta 8080** e o aplicativo Web do portlet AEM esteja montado no contexto **cqportlet**, a URL para liberar o cache é `https://localhost:8080/cqportlet/cqbridge/cqpcache?Path=$(path)`. Use GET como o método.   **Observação:** Em vez de usar um parâmetro de solicitação, você pode enviar um cabeçalho http chamado **Caminho**.
+1. Supondo que o servidor do portal esteja em execução no host **localhost**, **porta 8080** e o aplicativo Web do portlet AEM esteja montado no contexto **cqportlet**, a URL para liberar o cache é `https://localhost:8080/cqportlet/cqbridge/cqpcache?Path=$(path)`. Use GET como o método.
+   **Observação:** Em vez de usar um parâmetro de solicitação, você pode enviar um cabeçalho http chamado **Caminho**.
 
 #### Liberando o cache pelo Agente de Replicação {#flushing-the-cache-via-replication-agent}
 
@@ -388,7 +389,7 @@ Para abrir a página de administração do site ou editar uma página do portlet
    </LoginModule>
    ```
 
-1. No console de configuração OSGi, por padrão localizado em https://localhost:4502/system/console/configMgr, selecione **Manipulador de autenticação de PIN CQ** no menu suspenso.
+1. No console de configuração OSGi, por padrão localizado em https://localhost:4502/system/console/configMgr, selecione **Manipulador de autenticação do PIN CQ** no menu suspenso.
 1. Edite o parâmetro **Caminho Raiz da URL** para conter apenas o valor único **/**.
 
 ### Privilégios {#privileges}
@@ -609,7 +610,7 @@ Os serviços OSGi opcionais podem ser implementados para personalizar várias pa
 
 Os serviços a seguir têm uma implementação padrão no portlet de conteúdo (com uma interface Java correspondente). Para personalizar, um pacote contendo a nova implementação do serviço precisa ser implantado no aplicativo do portlet.
 
-Ao implementar esse serviço, defina a propriedade **service.ranking** do serviço com um valor positivo. A implementação padrão usa a classificação **&#x200B; 0** e o portlet usa o serviço com a classificação mais alta.
+Ao implementar esse serviço, defina a propriedade **service.ranking** do serviço com um valor positivo. A implementação padrão usa a classificação** 0** e o portlet usa o serviço com a classificação mais alta.
 
 | **Nome** | **Descrição** | **Comportamento padrão** |
 |---|---|---|
@@ -775,7 +776,7 @@ Para configurar o portlet:
    * **URL Base do Autor**: a URL base da instância do autor do AEM.
    * **URL Base de Publicação**: A URL base da instância de publicação do AEM.
    * **O Autor É Usado como Publicação**: A instância do autor é usada como uma publicação?
-instância (para desenvolvimento)?
+     instância (para desenvolvimento)?
 
    ![chlimage_1-137](assets/chlimage_1-137.png)
 

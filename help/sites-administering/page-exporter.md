@@ -7,8 +7,8 @@ feature: Administering
 role: Admin
 source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '1060'
-ht-degree: 0%
+source-wordcount: '1068'
+ht-degree: 1%
 
 ---
 
@@ -56,7 +56,7 @@ Selecione o modelo necessário para o site e confirme com **OK**.
 
    * a subpasta `content`, que é a raiz de uma série de subpastas que refletem o caminho para a página no repositório
 
-      * dentro dessa estrutura há o arquivo html para a página selecionada (`<page-name>.html`)
+     * dentro dessa estrutura há o arquivo html para a página selecionada (`<page-name>.html`)
 
    * outros recursos (`.js` arquivos, `.css` arquivos, imagens e assim por diante) estão localizados de acordo com as configurações no modelo de exportação
 
@@ -119,16 +119,16 @@ Os seguintes nós podem ser usados para criar um template de exportação:
 * `page`
 O nó da página é usado para copiar o html da página para o arquivo zip. Ele tem as seguintes características:
 
-   * Um nó obrigatório.
-   * Localizado abaixo de `/etc/contentsync/templates/<mysite>`.
-   * Definido com a propriedade `Name`definida como `page`.
-   * O tipo de nó é `nt:unstructured`
+  * Um nó obrigatório.
+  * Localizado abaixo de `/etc/contentsync/templates/<mysite>`.
+  * Definido com a propriedade `Name`definida como `page`.
+  * O tipo de nó é `nt:unstructured`
 
   O nó `page` tem as seguintes propriedades:
 
-   * Uma propriedade `type` definida com o valor `pages`.
+  * Uma propriedade `type` definida com o valor `pages`.
 
-   * Ele não tem uma propriedade `path`, pois o caminho da página atual é copiado dinamicamente para a configuração.
+  * Ele não tem uma propriedade `path`, pois o caminho da página atual é copiado dinamicamente para a configuração.
   <!--
   * The other properties are described in the Overview of configuration types section of the Content Sync framework.
   -->
@@ -140,25 +140,25 @@ O nó rewrite define como os links são reescritos na página exportada. Os link
 * `design`
 O nó de design é usado para copiar o design usado para a página exportada. Ele tem as seguintes características:
 
-   * Opcional.
-   * Localizado abaixo de `/etc/contentsync/templates/<mysite>`.
-   * Definido com a propriedade `Name` definida como `design`.
-   * O tipo de nó é `nt:unstructured`.
+  * Opcional.
+  * Localizado abaixo de `/etc/contentsync/templates/<mysite>`.
+  * Definido com a propriedade `Name` definida como `design`.
+  * O tipo de nó é `nt:unstructured`.
 
   O nó `design` tem as seguintes propriedades:
 
-   * Uma propriedade `type` foi definida com o valor `copy`.
+  * Uma propriedade `type` foi definida com o valor `copy`.
 
-   * Ele não tem uma propriedade `path`, pois o caminho da página atual é copiado dinamicamente para a configuração.
+  * Ele não tem uma propriedade `path`, pois o caminho da página atual é copiado dinamicamente para a configuração.
 
 * `generic`
 Um nó genérico é usado para copiar recursos como clientlibs `.js` ou `.css` arquivos para o arquivo zip. Ele tem as seguintes características:
 
-   * Opcional.
-   * Localizado abaixo de `/etc/contentsync/templates/<mysite>`.
-   * Nenhum nome específico.
-   * O tipo de nó é `nt:unstructured`.
-   * Tem uma propriedade `type` e `type` propriedades relacionadas. <!--Has a `type` property and any `type` related properties as defined in the Overview of configuration types section of the Content Sync framework.-->
+  * Opcional.
+  * Localizado abaixo de `/etc/contentsync/templates/<mysite>`.
+  * Nenhum nome específico.
+  * O tipo de nó é `nt:unstructured`.
+  * Tem uma propriedade `type` e `type` propriedades relacionadas. <!--Has a `type` property and any `type` related properties as defined in the Overview of configuration types section of the Content Sync framework.-->
 
   Por exemplo, o nó de configuração a seguir copia os arquivos `mysite.clientlibs.js` para o arquivo zip:
 

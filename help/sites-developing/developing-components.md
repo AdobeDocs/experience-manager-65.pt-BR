@@ -13,8 +13,8 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '3246'
-ht-degree: 0%
+source-wordcount: '3593'
+ht-degree: 1%
 
 ---
 
@@ -24,11 +24,11 @@ Os componentes do AEM são usados para reter, formatar e renderizar o conteúdo 
 
 * Ao [criar páginas](/help/sites-authoring/default-components.md), os componentes permitem que os autores editem e configurem o conteúdo.
 
-   * Ao construir um site do [Commerce](/help/commerce/cif-classic/administering/ecommerce.md), os componentes podem, por exemplo, coletar e renderizar informações do catálogo.
-Consulte [Desenvolvendo eCommerce](/help/commerce/cif-classic/developing/ecommerce.md) para obter mais informações.
+  * Ao construir um site do [Commerce](/help/commerce/cif-classic/administering/ecommerce.md), os componentes podem, por exemplo, coletar e renderizar informações do catálogo.
+    Consulte [Desenvolvendo eCommerce](/help/commerce/cif-classic/developing/ecommerce.md) para obter mais informações.
 
-   * Ao construir um site de [Comunidades](/help/communities/author-communities.md), os componentes podem fornecer informações e coletar informações de seus visitantes.
-Consulte [Desenvolvendo comunidades](/help/communities/communities.md) para obter mais informações.
+  * Ao construir um site de [Comunidades](/help/communities/author-communities.md), os componentes podem fornecer informações e coletar informações de seus visitantes.
+    Consulte [Desenvolvendo comunidades](/help/communities/communities.md) para obter mais informações.
 
 * Na instância de publicação, os componentes renderizam o conteúdo, apresentando-o conforme necessário aos visitantes do site.
 
@@ -42,7 +42,7 @@ Consulte [Desenvolvendo comunidades](/help/communities/communities.md) para obte
 
 ## Amostras de código {#code-samples}
 
-Esta página fornece a documentação de referência (ou links para a documentação de referência) necessária para desenvolver novos componentes para AEM. Consulte [Desenvolvendo componentes para AEM - Amostras de código](/help/sites-developing/developing-components-samples.md) para obter alguns exemplos práticos.
+Esta página fornece a documentação de referência (ou links para a documentação de referência) necessária para desenvolver novos componentes para o AEM. Consulte [Desenvolvendo componentes do AEM - Amostras de código](/help/sites-developing/developing-components-samples.md) para obter alguns exemplos práticos.
 
 ## Estrutura {#structure}
 
@@ -76,15 +76,15 @@ Consulte a [Fusão de recursos do Sling](/help/sites-developing/sling-resource-m
 
 ## Definição da marcação {#defining-the-markup}
 
-Seu componente será renderizado com [HTML](https://www.w3schools.com/htmL/html_intro.asp). Seu componente precisa definir o HTML necessário para obter o conteúdo necessário e, em seguida, renderizá-lo conforme necessário nos ambientes do autor e de publicação.
+Seu componente será renderizado com [HTML](https://www.w3schools.com/htmL/html_intro.asp). Seu componente precisa definir o HTML necessário para obter o conteúdo necessário e, em seguida, renderizá-lo conforme necessário, nos ambientes do autor e de publicação.
 
 ### Uso da Linguagem de modelo do HTML {#using-the-html-template-language}
 
-A [Linguagem de Modelo de HTML (HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=pt-BR), introduzida com o AEM 6.0, substitui o JSP (JavaServer Pages) como o sistema de modelo preferencial e recomendado do lado do servidor para o HTML. Para desenvolvedores da Web que precisam criar sites corporativos robustos, o HTL ajuda a aumentar a segurança e a eficiência do desenvolvimento.
+A [Linguagem de modelo do HTML (HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=pt-BR), introduzida com o AEM 6.0, substitui o JSP (JavaServer Pages) como o sistema de modelo preferencial e recomendado do lado do servidor para o HTML. Para desenvolvedores da Web que precisam criar sites corporativos robustos, o HTL ajuda a aumentar a segurança e a eficiência do desenvolvimento.
 
 >[!NOTE]
 >
->Embora HTL e JSP possam ser usados para desenvolver componentes, ilustraremos o desenvolvimento com HTL nesta página, pois é a linguagem de script recomendada para AEM.
+>Embora HTL e JSP possam ser usados para desenvolver componentes, ilustraremos o desenvolvimento com HTL nesta página, pois é a linguagem de script recomendada para o AEM.
 
 ## Desenvolvimento da lógica do conteúdo {#developing-the-content-logic}
 
@@ -94,19 +94,19 @@ O mecanismo para separar a lógica da aparência ajuda a esclarecer o que é nec
 
 ### Uso do Java {#using-java}
 
-[A API de uso Java do HTL permite que um arquivo HTL acesse métodos de ajuda em uma classe Java personalizada](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html?lang=pt-BR). Isso permite usar o código Java para implementar a lógica de seleção e configuração do conteúdo do componente.
+[A API de uso Java do HTL permite que um arquivo HTL acesse métodos de ajuda em uma classe Java personalizada](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html). Isso permite usar o código Java para implementar a lógica de seleção e configuração do conteúdo do componente.
 
 ### Utilização do JavaScript {#using-javascript}
 
-[A API de uso do JavaScript do HTL permite que um arquivo HTL acesse o código de ajuda gravado no JavaScript](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html?lang=pt-BR). Isso permite usar o código JavaScript para implementar a lógica de seleção e configuração do conteúdo do componente.
+[A API de uso do JavaScript do HTL permite que um arquivo HTL acesse o código de ajuda gravado no JavaScript](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html). Isso permite usar o código JavaScript para implementar a lógica de seleção e configuração do conteúdo do componente.
 
-### Uso de bibliotecas de HTML do lado do cliente {#using-client-side-html-libraries}
+### Uso de bibliotecas HTML do lado do cliente {#using-client-side-html-libraries}
 
 Sites modernos dependem muito do processamento do lado do cliente orientado por códigos JavaScript e CSS complexos. Organizar e otimizar a veiculação desse código pode ser um problema complicado.
 
-Para ajudar a lidar com esse problema, o AEM fornece **Pastas de bibliotecas do lado do cliente**, que permitem armazenar o código do lado do cliente no repositório, organizá-lo em categorias e definir quando e como cada categoria de código deve ser entregue ao cliente. O sistema de biblioteca do lado do cliente cuida de produzir os links corretos na página final da Web para carregar o código correto.
+Para ajudar a lidar com esse problema, a AEM fornece **Pastas de bibliotecas do lado do cliente**, que permitem armazenar o código do lado do cliente no repositório, organizá-lo em categorias e definir quando e como cada categoria de código deve ser entregue ao cliente. O sistema de biblioteca do lado do cliente cuida de produzir os links corretos na página final da Web para carregar o código correto.
 
-Leia [Usando bibliotecas de HTML do lado do cliente](/help/sites-developing/clientlibs.md) para obter mais informações.
+Leia [Usando bibliotecas HTML do lado do cliente](/help/sites-developing/clientlibs.md) para obter mais informações.
 
 ## Configuração do comportamento de edição {#configuring-the-edit-behavior}
 
@@ -138,15 +138,15 @@ Para obter detalhes completos, consulte:
 
 * Coral UI
 
-   * Fornece uma interface consistente em todas as soluções em nuvem
-   * [Conceitos da interface habilitada para toque por AEM - interface do Coral](/help/sites-developing/touch-ui-concepts.md#coral-ui)
-   * [Guia da interface do Coral](https://developer.adobe.com/experience-manager/reference-materials/6-5/coral-ui/coralui3/index.html)
+  * Fornece uma interface consistente em todas as soluções em nuvem
+  * [Conceitos da interface habilitada para toque do AEM - interface do Coral](/help/sites-developing/touch-ui-concepts.md#coral-ui)
+  * [Guia da interface de usuário do Coral](https://developer.adobe.com/experience-manager/reference-materials/6-5/coral-ui/coralui3/index.html)
 
 * Interface do Granite
 
-   * Fornece marcação da interface Coral encapsulada em componentes Sling para construir consoles e caixas de diálogo da interface
-   * [Conceitos da interface habilitada para toque por AEM - Interface do usuário do Granite](/help/sites-developing/touch-ui-concepts.md#coral-ui)
-   * [Documentação da interface do Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
+  * Fornece marcação da interface Coral encapsulada em componentes Sling para construir consoles e caixas de diálogo da interface
+  * [Conceitos da interface do usuário habilitada para toque do AEM - interface do usuário do Granite](/help/sites-developing/touch-ui-concepts.md#coral-ui)
+  * [Documentação da interface de usuário do Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
 
 >[!NOTE]
 >
@@ -164,7 +164,7 @@ Caixas de diálogo para a interface habilitada para toque:
 * usar a estrutura da interface de usuário do Granite.
 * contém uma estrutura de nó que descreve os campos na caixa de diálogo.
 
-   * estes nós são `nt:unstructured` com a propriedade `sling:resourceType` necessária.
+  * estes nós são `nt:unstructured` com a propriedade `sling:resourceType` necessária.
 
 Um exemplo de estrutura de nó pode ser:
 
@@ -197,7 +197,7 @@ Para obter exemplos, consulte:
 >
 >Consulte:
 >
->* a sessão AEM Gems em [Personalizando Campos de Caixa de Diálogo](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html?lang=pt-BR).
+>* a sessão do AEM Gems em [Personalizando campos de diálogo](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html).
 >* o código de amostra relacionado coberto em [Amostra de código - Como personalizar campos de diálogo](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields).
 >
 
@@ -235,7 +235,7 @@ Para ver um exemplo, consulte:
 
 * `cqgems/customizingfield/components/colorpicker/clientlibs`
 
-   * fornecido pela [Amostra de Código](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields)
+  * fornecido pela [Amostra de Código](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields)
 
 #### Estender (herdar de) um campo {#extending-inheriting-from-a-field}
 
@@ -273,7 +273,7 @@ Para ver um exemplo, consulte:
 
 * `cqgems/customizingfield/components/clientlibs/customizingfield`
 
-   * fornecido pela [Amostra de Código](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields)
+  * fornecido pela [Amostra de Código](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields)
 
 #### Ouvintes na estrutura de conteúdo {#listeners-in-the-content-structure}
 
@@ -312,7 +312,7 @@ Para obter exemplos, consulte:
 
 * `cqgems/customizingfield/components/clientlibs/customizingfield/js/validations.js`
 
-   * fornecido pela [Amostra de Código](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields)
+  * fornecido pela [Amostra de Código](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields)
 
 * `/libs/cq/gui/components/authoring/dialog/clientlibs/dialog/js/validations.js`
 
@@ -343,7 +343,7 @@ Consulte [Estender criação de página - Adicionar nova ação a uma barra de f
 
 Se o seu novo componente fizer referência ao conteúdo de outras páginas, você poderá considerar se deseja que ele afete as seções **Conteúdo Emprestado** e **Conteúdo Emprestado** do painel [**Referências**](/help/sites-authoring/basic-handling.md#references).
 
-O AEM pronto para uso verifica apenas o componente de Referência. Para adicionar seu componente, você precisa configurar o pacote OSGi **Configuração da referência de conteúdo de criação WCM**.
+O AEM pronto para uso verifica apenas o componente Referência. Para adicionar seu componente, você precisa configurar o pacote OSGi **Configuração da referência de conteúdo de criação WCM**.
 
 Crie uma entrada na definição, especificando seu componente, juntamente com a propriedade a ser verificada. Por exemplo:
 
@@ -364,7 +364,7 @@ Isso pode ser feito:
 
 ## Configurar um sistema de parágrafo para que arrastar um ativo crie uma instância de componente {#configuring-a-paragraph-system-so-that-dragging-an-asset-creates-a-component-instance}
 
-O AEM oferece a possibilidade de configurar um sistema de parágrafo na sua página para que [uma instância do seu novo componente seja criada automaticamente quando um usuário arrastar um ativo (apropriado) para uma instância dessa página](/help/sites-authoring/editing-content.md#insertingacomponenttouchoptimizedui) (em vez de sempre ter que arrastar um componente vazio para a página).
+O AEM oferece a possibilidade de configurar um sistema de parágrafo em sua página para que [uma instância do novo componente seja criada automaticamente quando um usuário arrastar um ativo (apropriado) para uma instância dessa página](/help/sites-authoring/editing-content.md#insertingacomponenttouchoptimizedui) (em vez de sempre ter que arrastar um componente vazio para a página).
 
 Esse comportamento e a relação necessária entre ativo e componente podem ser configurados:
 
@@ -391,28 +391,28 @@ Esse comportamento e a relação necessária entre ativo e componente podem ser 
 
    * `assetGroup`:
 
-      * Tipo: `String`
-      * Valor: o grupo ao qual o ativo relacionado pertence; por exemplo, `media`
+     * Tipo: `String`
+     * Valor: o grupo ao qual o ativo relacionado pertence; por exemplo, `media`
 
    * `assetMimetype`:
 
-      * Tipo: `String`
-      * Valor: o tipo mime do ativo relacionado; por exemplo, `image/*`
+     * Tipo: `String`
+     * Valor: o tipo mime do ativo relacionado; por exemplo, `image/*`
 
    * `droptarget`:
 
-      * Tipo: `String`
-      * Valor: o destino de liberação; por exemplo, `image`
+     * Tipo: `String`
+     * Valor: o destino de liberação; por exemplo, `image`
 
    * `resourceType`:
 
-      * Tipo: `String`
-      * Valor: o recurso componente relacionado; por exemplo, `foundation/components/image`
+     * Tipo: `String`
+     * Valor: o recurso componente relacionado; por exemplo, `foundation/components/image`
 
    * `type`:
 
-      * Tipo: `String`
-      * Valor: o tipo, por exemplo, `Images`
+     * Tipo: `String`
+     * Valor: o tipo, por exemplo, `Images`
 
 Para obter exemplos, consulte:
 
@@ -429,15 +429,15 @@ Você pode encontrar o código desta página no GitHub
 
 >[!NOTE]
 >
->A criação automática de instâncias de componentes agora pode ser configurada facilmente na interface do usuário ao usar [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) e Modelos Editáveis. Consulte [Criando Modelos de Página](/help/sites-authoring/templates.md#editing-a-template-structure-template-author) para obter mais informações sobre como definir quais componentes são associados automaticamente a determinados tipos de mídia.
+>A criação automática de instâncias de componentes agora pode ser configurada facilmente na interface do usuário ao usar [Componentes principais](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/introduction) e Modelos Editáveis. Consulte [Criando Modelos de Página](/help/sites-authoring/templates.md#editing-a-template-structure-template-author) para obter mais informações sobre como definir quais componentes são associados automaticamente a determinados tipos de mídia.
 
-## Uso da extensão AEM Brackets {#using-the-aem-brackets-extension}
+## Utilização da extensão AEM Brackets {#using-the-aem-brackets-extension}
 
 A [Extensão AEM Brackets](/help/sites-developing/aem-brackets.md) fornece um fluxo de trabalho suave para editar componentes AEM e bibliotecas de clientes. Tem como base o editor de código [Brackets](https://brackets.io/).
 
 A extensão:
 
-* Facilita a sincronização (sem a necessidade de Maven ou File Vault) para ajudar a aumentar a eficiência do desenvolvedor e também ajuda desenvolvedores de front-end com conhecimento limitado em AEM a participar de projetos.
+* Facilita a sincronização (sem a necessidade de Maven ou File Vault) para ajudar a aumentar a eficiência do desenvolvedor e também ajuda desenvolvedores de front-end com conhecimento limitado da AEM a participar de projetos.
 * Fornece suporte a [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=pt-BR), a linguagem de modelo criada para simplificar o desenvolvimento de componentes e aumentar a segurança.
 
 >[!NOTE]
@@ -450,24 +450,24 @@ Ao migrar um componente projetado para uso com a interface clássica para um com
 
 * HTL
 
-   * O uso do [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=pt-BR) não é obrigatório, mas se o componente precisar de atualização, será o momento ideal para considerar a [migração de JSP para HTL](/help/sites-developing/components-basics.md#htl-vs-jsp).
+  * O uso do [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=pt-BR) não é obrigatório, mas se o componente precisar de atualização, será o momento ideal para considerar a [migração de JSP para HTL](/help/sites-developing/components-basics.md#htl-vs-jsp).
 
 * Componentes
 
-   * Migrar código [`cq:listener`](/help/sites-developing/developing-components.md#migrating-cq-listener-code) que usa funções específicas da interface clássica
-   * Plug-in RTE. Para obter mais informações, consulte [Configurando o Editor de Rich Text](/help/sites-administering/rich-text-editor.md).
-   * [Migrar `cq:listener` código](#migrating-cq-listener-code) que usa funções específicas da interface clássica
+  * Migrar código [`cq:listener`](/help/sites-developing/developing-components.md#migrating-cq-listener-code) que usa funções específicas da interface clássica
+  * Plug-in RTE. Para obter mais informações, consulte [Configurando o Editor de Rich Text](/help/sites-administering/rich-text-editor.md).
+  * [Migrar `cq:listener` código](#migrating-cq-listener-code) que usa funções específicas da interface clássica
 
 * Caixas de diálogo
 
-   * Crie uma caixa de diálogo para usar na interface habilitada para toque. No entanto, para fins de compatibilidade, a interface habilitada para toque pode usar a definição de uma caixa de diálogo da interface clássica, quando nenhuma caixa de diálogo foi definida para a interface habilitada para toque.
-   * As [Ferramentas de Modernização do AEM](/help/sites-developing/modernization-tools.md) são fornecidas para ajudar a estender os componentes existentes.
-   * [O mapeamento de ExtJS para componentes de interface do Granite](/help/sites-developing/touch-ui-concepts.md#extjs-and-corresponding-granite-ui-components) fornece uma visão geral conveniente dos tipos de nó e xtypes ExtJS com seus tipos de recursos de interface do Granite equivalentes.
-   * Personalizando campos, para obter mais informações, consulte a sessão de Gems do AEM em [Personalizando Campos de Caixa de Diálogo](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html?lang=pt-BR).
-   * Migrar de vtypes para [validação da interface do usuário para Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/clientlibs/foundation/js/validation/index.html)
-   * Usando ouvintes JS, para obter mais informações, consulte [Manipulando Eventos de Campo](#handling-field-events) e a sessão Gems do AEM em [Personalizando Campos de Caixa de Diálogo](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html?lang=pt-BR).
+  * Crie uma caixa de diálogo para usar na interface habilitada para toque. No entanto, para fins de compatibilidade, a interface habilitada para toque pode usar a definição de uma caixa de diálogo da interface clássica, quando nenhuma caixa de diálogo foi definida para a interface habilitada para toque.
+  * As [Ferramentas de Modernização do AEM](/help/sites-developing/modernization-tools.md) são fornecidas para ajudar a estender os componentes existentes.
+  * [O mapeamento de ExtJS para componentes de interface do Granite](/help/sites-developing/touch-ui-concepts.md#extjs-and-corresponding-granite-ui-components) fornece uma visão geral conveniente dos tipos de nó e xtypes ExtJS com seus tipos de recursos de interface do Granite equivalentes.
+  * Personalizando campos, para obter mais informações, consulte a sessão do AEM Gems em [Personalizando campos de diálogo](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html).
+  * Migrar de vtypes para [validação da interface do usuário para Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/clientlibs/foundation/js/validation/index.html)
+  * Usando ouvintes JS, para obter mais informações, consulte [Manipulando eventos de campo](#handling-field-events) e a sessão do AEM Gems em [Personalizando campos de caixa de diálogo](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html).
 
-### Migrando o código cq:listener {#migrating-cq-listener-code}
+### Migrando código cq:listener {#migrating-cq-listener-code}
 
 Se você estiver migrando um projeto que foi projetado para a interface clássica, o código `cq:listener` (e as clientlibs relacionadas a componentes) poderá usar funções específicas para a interface clássica (como `CQ.wcm.*`). Para a migração, você deve atualizar esse código usando os objetos/funções equivalentes na interface habilitada para toque.
 
