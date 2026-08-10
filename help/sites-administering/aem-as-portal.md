@@ -12,7 +12,7 @@ feature: Administering
 role: Admin
 source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '6115'
+source-wordcount: '6118'
 ht-degree: 0%
 
 ---
@@ -171,7 +171,8 @@ Você pode implantar este pacote em tempo de execução ou adicioná-lo ao aplic
 Depois que o cache é implantado, o portlet armazena em cache o conteúdo da instância de publicação. O cache do portlet pode ser invalidado com uma liberação do dispatcher do AEM. Para configurar o portlet para usar seu próprio cache:
 
 1. Configure um agente de replicação no autor que se destina ao servidor do portal.
-1. Supondo que o servidor do portal esteja em execução no host **localhost**, **porta 8080** e o aplicativo Web do portlet AEM esteja montado no contexto **cqportlet**, a URL para liberar o cache é `https://localhost:8080/cqportlet/cqbridge/cqpcache?Path=$(path)`. Use GET como o método.   **Observação:** Em vez de usar um parâmetro de solicitação, você pode enviar um cabeçalho http chamado **Caminho**.
+1. Supondo que o servidor do portal esteja em execução no host **localhost**, **porta 8080** e o aplicativo Web do portlet AEM esteja montado no contexto **cqportlet**, a URL para liberar o cache é `https://localhost:8080/cqportlet/cqbridge/cqpcache?Path=$(path)`. Use GET como o método.
+   **Observação:** Em vez de usar um parâmetro de solicitação, você pode enviar um cabeçalho http chamado **Caminho**.
 
 #### Liberando o cache pelo Agente de Replicação {#flushing-the-cache-via-replication-agent}
 
@@ -388,7 +389,7 @@ Para abrir a página de administração do site ou editar uma página do portlet
    </LoginModule>
    ```
 
-1. No console de configuração OSGi, por padrão localizado em https://localhost:4502/system/console/configMgr, selecione **Manipulador de autenticação de PIN CQ** no menu suspenso.
+1. No console de configuração OSGi, por padrão localizado em https://localhost:4502/system/console/configMgr, selecione **Manipulador de autenticação do PIN CQ** no menu suspenso.
 1. Edite o parâmetro **Caminho Raiz da URL** para conter apenas o valor único **/**.
 
 ### Privilégios {#privileges}
@@ -775,7 +776,7 @@ Para configurar o portlet:
    * **URL Base do Autor**: a URL base da instância do autor do AEM.
    * **URL Base de Publicação**: A URL base da instância de publicação do AEM.
    * **O Autor É Usado como Publicação**: A instância do autor é usada como uma publicação?
-instância (para desenvolvimento)?
+     instância (para desenvolvimento)?
 
    ![chlimage_1-137](assets/chlimage_1-137.png)
 

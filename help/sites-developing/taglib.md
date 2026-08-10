@@ -11,7 +11,7 @@ feature: Developing,Tagging
 role: Developer
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '2452'
+source-wordcount: '2466'
 ht-degree: 0%
 
 ---
@@ -90,7 +90,7 @@ Para usar a Biblioteca de tags do CQ no script, ele deve começar com o seguinte
 >
 >Quando o arquivo `/libs/foundation/global.jsp` é incluído no script, a biblioteca de tags é declarada automaticamente.
 
-Ao desenvolver o script jsp de um componente AEM, é recomendável incluir o seguinte código na parte superior do script:
+Quando você desenvolve o script jsp de um componente do AEM, é recomendável incluir o seguinte código na parte superior do script:
 
 ```xml
 <%@include file="/libs/foundation/global.jsp"%>
@@ -250,14 +250,14 @@ Você deve usar `<%@ include file="myScript.jsp" %>` ou `<cq:include script="myS
 
 Você deve usar `<cq:include>` ou `<sling:include>`?
 
-* Ao desenvolver componentes para AEM, a Adobe recomenda o uso do `<cq:include>`.
+* Ao desenvolver componentes do AEM, a Adobe recomenda o uso do `<cq:include>`.
 * `<cq:include>` permite incluir arquivos de script diretamente pelo nome ao usar o atributo de script. Isso leva em conta a herança de componentes e tipos de recursos e geralmente é mais simples do que a adesão estrita à resolução de script do Sling usando seletores e extensões.
 
 ### &lt;cq:includeClientLib> {#cq-includeclientlib}
 
 >[!CAUTION]
 >
->`<cq:includeClientLib>` obsoleto desde o AEM 5.6. [`<ui:includeClientLib>`](/help/sites-developing/taglib.md#ui-includeclientlib) deve ser usado em seu lugar.
+>`<cq:includeClientLib>` obsoleto desde o AEM 5.6. Em vez disso, [`<ui:includeClientLib>`](/help/sites-developing/taglib.md#ui-includeclientlib) deve ser usado.
 
 A tag `<cq:includeClientLib>` Inclui uma biblioteca de cliente html AEM, que pode ser uma biblioteca js, css ou de temas. Para várias inclusões de tipos diferentes, por exemplo, js e css, essa tag deve ser usada várias vezes no jsp. Esta marca é um wrapper de conveniência em torno da interface de serviço `com.day.cq.widget.HtmlLibraryManager`.
 
@@ -307,7 +307,7 @@ A marca `<cq:defineObjects>` expõe os seguintes objetos de script usados regula
 
 **componente**
 
-* o objeto do componente AEM atual do recurso atual (com.day.cq.wcm.api.components.Component interface).
+* o objeto componente atual do AEM do recurso atual (com.day.cq.wcm.api.components.Component interface).
 
 **currentDesign**
 
@@ -315,7 +315,7 @@ A marca `<cq:defineObjects>` expõe os seguintes objetos de script usados regula
 
 **páginaAtual**
 
-* o objeto da página WCM do AEM atual (com.day.cq.wcm.api.Page interface).
+* o objeto da página WCM atual do AEM (com.day.cq.wcm.api.Page interface).
 
 **currentStyle**
 
@@ -327,7 +327,7 @@ A marca `<cq:defineObjects>` expõe os seguintes objetos de script usados regula
 
 **editContext**
 
-* o objeto de contexto de edição do componente AEM (com.day.cq.wcm.api.components.EditContext interface).
+* o objeto de contexto de edição do componente do AEM (com.day.cq.wcm.api.components.EditContext interface).
 
 **pageManager**
 
@@ -586,8 +586,8 @@ A marca `<sling:defineObjects>` expõe os seguintes objetos de script usados reg
 
 **slingResponse**
 
-* Objeto SlingHttpServletResponse, que fornece acesso à resposta HTTP criada pelo servidor. É o mesmo que HttpServletResponse do qual se estende.**solicitação**
-* O objeto de solicitação JSP padrão que é um HttpServletRequest puro.**resposta**
+* Objeto SlingHttpServletResponse, que fornece acesso à resposta HTTP criada pelo servidor. É o mesmo que HttpServletResponse do qual ele se estende.**request**
+* O objeto de solicitação JSP padrão que é um HttpServletRequest puro.**response**
 * O objeto de resposta JSP padrão que é um HttpServletResponse puro.
 
 **resourceResolver**
