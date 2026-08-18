@@ -11,18 +11,18 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '2030'
+source-wordcount: '2087'
 ht-degree: 1%
 
 ---
 
 # Modelos de formulário adaptável{#adaptive-form-templates}
 
-O <span class="preview"> Adobe recomenda o uso de [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adicionar o Forms Adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
+A Adobe <span class="preview"> recomenda usar os [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adicionar o Forms Adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/template-editor.html?lang=pt-BR) |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/template-editor.html) |
 | AEM 6.5 | Este artigo |
 
 
@@ -55,18 +55,18 @@ Você pode fornecer uma descrição e uma miniatura que poderá ver quando selec
 
 ### Interface do editor de modelos {#template-editor-ui}
 
-Ao abrir um modelo para edição, você pode ver os seguintes componentes do Editor de AEM:
+Ao abrir um modelo para edição, você pode ver os seguintes componentes do Editor do AEM:
 
 * **Barra de ferramentas da página**
 Contém as seguintes opções:
 
-   * **Alternar Painel Lateral**: Permite mostrar ou ocultar a barra lateral.
-   * **Informações da página**: permite especificar informações como hora de publicação/cancelamento de publicação, miniaturas, bibliotecas do lado do cliente, política da página e biblioteca do lado do cliente de design da página.
-   * **Emulador**: permite simular e personalizar a aparência para diferentes dispositivos.
-   * **Seletor de camada:** permite alterar a camada.
-Você pode escolher a camada **Estrutura** ou a camada **Conteúdo inicial**. A camada de estrutura permite adicionar e personalizar o cabeçalho e o rodapé. A camada Conteúdo inicial permite personalizar o conteúdo do formulário.
+  * **Alternar Painel Lateral**: Permite mostrar ou ocultar a barra lateral.
+  * **Informações da página**: permite especificar informações como hora de publicação/cancelamento de publicação, miniaturas, bibliotecas do lado do cliente, política da página e biblioteca do lado do cliente de design da página.
+  * **Emulador**: permite simular e personalizar a aparência para diferentes dispositivos.
+  * **Seletor de camada:** permite alterar a camada.
+    Você pode escolher a camada **Estrutura** ou a camada **Conteúdo inicial**. A camada de estrutura permite adicionar e personalizar o cabeçalho e o rodapé. A camada Conteúdo inicial permite personalizar o conteúdo do formulário.
 
-   * **Visualizar:** permite que você visualize a aparência do modelo ao publicá-lo. Você pode usar o Seletor de camada e a Visualização para alternar entre os modos de edição e visualização.
+  * **Visualizar:** permite que você visualize a aparência do modelo ao publicá-lo. Você pode usar o Seletor de camada e a Visualização para alternar entre os modos de edição e visualização.
 
 * **Barra Lateral:** fornece os navegadores de Conteúdo, Propriedades, Assets e Componentes.
 * **Barra de ferramentas do componente:** ao selecionar um componente, você verá uma barra de ferramentas que permite personalizar o componente.
@@ -188,12 +188,12 @@ Execute as seguintes etapas para mostrar e ocultar modelos:
 
    >[!NOTE]
    >
-   >A URL do console da Web AEM é https://&#39;[server]:[port]&#39;/system/console/configMgr
+   >A URL do console da Web do AEM é https://&#39;[server]:[port]&#39;/system/console/configMgr
 
 1. Localize e abra as configurações de **Configuração do FormsManager**:
 
    * Para mostrar ou ocultar o modelo de formulários adaptáveis predefinido, marque ou desmarque a opção **Incluir modelos AF e AD predefinidos**.
-   * Para mostrar ou ocultar modelos de formulário adaptável prontos para uso que foram adicionados nas versões do Forms AEM AEM 6.0 Forms ou AEM 6.1, mas que agora estão obsoletas, marque ou desmarque a opção **Incluir modelos de AF do 6.0**. Se esta opção estiver marcada, para entrar em vigor, ela exigirá que a configuração **Incluir AF e Modelos do AD** predefinidos seja habilitada.
+   * Para mostrar ou ocultar modelos de formulário adaptável prontos para uso que foram adicionados às versões do AEM 6.0 Forms ou do AEM 6.1 Forms, mas que agora estão obsoletas, marque ou desmarque a opção **Incluir modelos de AF do AEM 6.0**. Se esta opção estiver marcada, para entrar em vigor, ela exigirá que a configuração **Incluir AF e Modelos do AD** predefinidos seja habilitada.
 
 1. Clique em **Salvar**. As opções de exibição para os templates prontos para uso são alteradas.
 

@@ -8,7 +8,7 @@ solution: Experience Manager, Experience Manager Forms
 feature: Document Security,Adaptive Forms
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1434'
+source-wordcount: '1470'
 ht-degree: 0%
 
 ---
@@ -61,7 +61,7 @@ Você pode configurar um firewall externo para permitir que determinados URLs da
     </ul> </td> 
   </tr>
   <tr>
-   <td>formulários HTML5</td> 
+   <td>Formulários HTML5</td> 
    <td>
     <ul> 
      <li>/content/forms/formsets/profiles/</li> 
@@ -75,7 +75,7 @@ Você pode configurar um firewall externo para permitir que determinados URLs da
     </ul> </td> 
   </tr>
   <tr>
-   <td>Portal Forms </td> 
+   <td>Portal de fomulários </td> 
    <td>
     <ul> 
      <li>/content/forms/portal/</li> 
@@ -105,7 +105,7 @@ Você pode configurar o firewall interno para permitir que determinados componen
    <td>URI</td> 
   </tr>
   <tr>
-   <td>Farm do Publish (nós de publicação)</td> 
+   <td>Publicar farm (publicar nós)</td> 
    <td>/bin/receive</td> 
   </tr>
   <tr>
@@ -123,9 +123,9 @@ Você pode configurar o firewall interno para permitir que determinados componen
 
 Por padrão, os ativos disponíveis nos nós de publicação estão acessíveis a todos. O acesso somente leitura está ativado para todos os ativos. É necessário para habilitar o acesso anônimo. Se você planeja restringir a visualização do formulário e enviar o acesso somente a usuários autenticados, use um grupo comum para permitir que somente usuários autenticados tenham acesso somente leitura aos ativos disponíveis nos nós de publicação. Os seguintes locais/diretórios contêm ativos de formulários que exigem proteção (acesso somente leitura para usuários autenticados):
 
-* /content/&ast;
-* /etc.clientlibs/fd/&ast;
-* /libs/fd/&ast;
+* /content/&amp;ast;
+* /etc.clientlibs/fd/&amp;ast;
+* /libs/fd/&amp;ast;
 
 ## Manipule com segurança os dados de formulários  {#securely-handle-forms-data}
 
@@ -143,7 +143,7 @@ Por padrão, a ação enviar do portal de formulários adaptáveis salva os dado
 
 Você pode configurar o serviço de armazenamento para enviar pelo cabo ao cluster de processamento sem salvar nada localmente no nó de publicação. O cluster de processamento reside em uma zona segura atrás do firewall privado e os dados permanecem seguros.
 
-Use as credenciais do servidor de processamento para o serviço de configurações do AEM DS para postar dados do nó de publicação no servidor de processamento. Use as credenciais de um usuário não administrativo restrito com acesso de leitura e gravação ao repositório do servidor de processamento. Para obter mais informações, consulte [Configurando serviços de armazenamento para rascunhos e envios](/help/forms/using/configuring-draft-submission-storage.md).
+Use as credenciais do servidor de processamento para o serviço de configurações do AEM DS para publicar dados do nó de publicação no servidor de processamento. Use as credenciais de um usuário não administrativo restrito com acesso de leitura e gravação ao repositório do servidor de processamento. Para obter mais informações, consulte [Configurando serviços de armazenamento para rascunhos e envios](/help/forms/using/configuring-draft-submission-storage.md).
 
 ### Dados seguros tratados pelo modelo de dados de formulário (FDM) {#secure-data-handled-by-form-data-model-fdm}
 
@@ -152,7 +152,7 @@ A integração de dados também fornece métodos para autorizar solicitações d
 
 **Autorização de pré-processamento:** você pode usar a autorização de pré-processamento para validar a autenticidade de uma solicitação antes de executá-la. Você pode usar entradas, serviço e detalhes da solicitação para permitir ou interromper a execução da solicitação. Você poderá retornar uma exceção de integração de dados OPERATION_ACCESS_DENIED se a execução for interrompida. Você também pode modificar a solicitação do cliente antes de enviá-la para execução. Por exemplo, alterar a entrada e adicionar outras informações.
 
-**Autorização de processo Post:** você pode usar a autorização de pós-processo para validar e controlar os resultados antes de retornar os resultados ao solicitante. Também é possível filtrar, remover e inserir dados adicionais nos resultados.
+**Autorização pós-processo:** você pode usar a autorização pós-processo para validar e controlar os resultados antes de retornar os resultados ao solicitante. Também é possível filtrar, remover e inserir dados adicionais nos resultados.
 
 ### Limitar o acesso do usuário {#limit-user-access}
 
@@ -168,32 +168,32 @@ Um conjunto diferente de personalidades de usuário é necessário para as inst�
 
 * Há um conjunto diferente de grupos predefinidos com privilégios específicos para cada persona. Atribuir usuários ao grupo.
 
-   * Um usuário do grupo de usuários de formulários:
+  * Um usuário do grupo de usuários de formulários:
 
-      * O pode criar, preencher, publicar e enviar um formulário.
-      * O não pode criar um formulário adaptável baseado em XDP.
-      * não têm permissões para gravar scripts para formulários adaptáveis.
-      * não é possível importar XDP ou qualquer pacote que contenha XDP
+    * O pode criar, preencher, publicar e enviar um formulário.
+    * O não pode criar um formulário adaptável baseado em XDP.
+    * não têm permissões para gravar scripts para formulários adaptáveis.
+    * não é possível importar XDP ou qualquer pacote que contenha XDP
 
-   * Um usuário do grupo de usuários avançados de formulários cria, preenche, publica e envia todos os tipos de formulários, grava scripts para formulários adaptáveis e importa pacotes que contêm XDP.
-   * Um usuário de autores de modelo e usuário avançado de modelo pode visualizar e criar um modelo.
-   * Um usuário de autores do fdm pode criar e modificar um modelo de dados de formulário.
-   * Um usuário do grupo cm-user-agent pode criar, pré-visualizar e publicar cartas de gerenciamento de correspondência.
-   * Um usuário do grupo de editores de workflow pode criar um aplicativo de caixa de entrada e um modelo de workflow.
+  * Um usuário do grupo de usuários avançados de formulários cria, preenche, publica e envia todos os tipos de formulários, grava scripts para formulários adaptáveis e importa pacotes que contêm XDP.
+  * Um usuário de autores de modelo e usuário avançado de modelo pode visualizar e criar um modelo.
+  * Um usuário de autores do fdm pode criar e modificar um modelo de dados de formulário.
+  * Um usuário do grupo cm-user-agent pode criar, pré-visualizar e publicar cartas de gerenciamento de correspondência.
+  * Um usuário do grupo de editores de workflow pode criar um aplicativo de caixa de entrada e um modelo de workflow.
 
 **Ao processar o autor:**
 
 * Para casos de uso de salvar e enviar remotamente, crie um usuário com permissões de leitura, criação e modificação no caminho content/form/fp do repositório crx.
-* Adicione usuário ao grupo de usuários do fluxo de trabalho para permitir que um usuário use aplicativos da caixa de entrada do AEM.
+* Adicione usuário ao grupo de usuários do workflow para permitir que um usuário use aplicativos da caixa de entrada do AEM.
 
 ## Elementos seguros da intranet de um ambiente do AEM Forms {#secure-intranet-elements-of-an-aem-forms-environment}
 
-Em geral, os clusters de processamento e o complemento de Forms Workflow (AEM Forms no JEE) são executados atrás de um firewall. Então, eles são considerados seguros. Você ainda pode executar algumas etapas para fortalecer esses ambientes:
+Em geral, os clusters de processamento e o complemento Forms Workflow (AEM Forms no JEE) são executados atrás de um firewall. Então, eles são considerados seguros. Você ainda pode executar algumas etapas para fortalecer esses ambientes:
 
 ### Cluster de processamento seguro {#secure-processing-cluster}
 
 Um cluster de processamento é executado no modo de autor, mas não o use para atividades de desenvolvimento. Não permita que um usuário normal seja incluído em grupos de autores de conteúdo e usuários de formulário de um cluster de processamento.
 
-### USAR as práticas recomendadas de AEM para proteger um ambiente AEM Forms {#use-aem-best-practices-to-secure-an-aem-forms-environment}
+### USAR as práticas recomendadas da AEM para proteger um ambiente AEM Forms {#use-aem-best-practices-to-secure-an-aem-forms-environment}
 
-Este documento fornece instruções específicas para o ambiente do AEM Forms. É necessário garantir que sua instalação subjacente do AEM esteja segura quando implantada. Para obter instruções detalhadas, consulte a documentação da [Lista de Verificação de Segurança do AEM](/help/sites-administering/security-checklist.md).
+Este documento fornece instruções específicas para o ambiente do AEM Forms. Você deve garantir que sua instalação subjacente do AEM esteja segura quando implantada. Para obter instruções detalhadas, consulte a documentação da [Lista de Verificação de Segurança do AEM](/help/sites-administering/security-checklist.md).

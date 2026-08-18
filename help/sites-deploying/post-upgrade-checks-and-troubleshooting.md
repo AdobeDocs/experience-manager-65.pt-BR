@@ -12,7 +12,7 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '1798'
+source-wordcount: '1803'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Após a [Atualização no Local](/help/sites-deploying/in-place-upgrade.md), as 
 
 * [Verificar versão do Oak](#main-pars-header-1293049773)
 
-* [Inspect, a pasta PreUpgradeBackup](#main-pars-header-988995987)
+* [Inspecionar a pasta PreUpgradeBackup](#main-pars-header-988995987)
 
 * [Validação inicial das páginas](#main-pars-header-20827371)
 * [Aplicar Service Packs do AEM](#main-pars-header-215142387)
@@ -79,7 +79,7 @@ Navegue até o console OSGi `/system/console/bundles` e verifique se algum pacot
 
 Após a atualização, você deve ver que a versão do Oak foi atualizada para **1.10.2**. Para verificar a versão do Oak, navegue até o console OSGi e verifique a versão associada aos pacotes do Oak: Oak Core, Oak Commons, Oak Segment Tar.
 
-### Pasta PreUpgradeBackup do Inspect {#inspect-preupgradebackup-folder}
+### Inspecionar pasta PreUpgradeBackup {#inspect-preupgradebackup-folder}
 
 Durante a atualização, o AEM tenta fazer backup das personalizações e armazená-las abaixo de `/var/upgrade/PreUpgradeBackup/<time-stamp-of-upgrade>`. Para exibir esta pasta no CRXDE Lite, talvez seja necessário [habilitar temporariamente o CRXDE Lite](/help/sites-administering/enabling-crxde-lite.md).
 
@@ -89,15 +89,15 @@ Desative o CRXDE Lite após este exercício se estiver em um ambiente de Preparo
 
 ### Validação inicial das páginas {#initial-validation-of-pages}
 
-Executar uma validação inicial em várias páginas no AEM. Se estiver atualizando um ambiente de Autor, abra a página Inicial e a página de Boas-vindas ( `/aem/start.html`, `/libs/cq/core/content/welcome.html`). Em ambos os ambientes, Autor e Publish, abra algumas páginas de aplicativo e teste de fumaça que eles renderizam corretamente. Se algum problema ocorrer, consulte `error.log` para solucionar.
+Executar uma validação inicial em várias páginas do AEM. Se estiver atualizando um ambiente de Autor, abra a página Inicial e a página de Boas-vindas ( `/aem/start.html`, `/libs/cq/core/content/welcome.html`). Nos ambientes Autor e Publicação, abra algumas páginas de aplicativo e teste de fumaça que eles renderizam corretamente. Se algum problema ocorrer, consulte `error.log` para solucionar.
 
 ### Aplicar Service Packs do AEM {#apply-aem-service-packs}
 
-Aplique quaisquer Service Packs AEM 6.5 relevantes caso eles tenham sido lançados.
+Aplique todos os Service Packs do AEM 6.5 relevantes caso tenham sido lançados.
 
 ### Migrar recursos do AEM {#migrate-aem-features}
 
-Vários recursos no AEM exigem etapas adicionais após a atualização. Uma lista completa desses recursos e etapas para migrá-los no AEM 6.5 pode ser encontrada na página [Atualizando código e personalizações](/help/sites-deploying/upgrading-code-and-customizations.md).
+Vários recursos do AEM exigem etapas adicionais após a atualização. Uma lista completa desses recursos e etapas para migrá-los no AEM 6.5 pode ser encontrada na página [Atualização de código e personalizações](/help/sites-deploying/upgrading-code-and-customizations.md).
 
 ### Verificar configurações de manutenção programada {#verify-scheduled-maintenance-configurations}
 
@@ -119,7 +119,7 @@ Execute o plano de teste detalhado conforme definido [Atualizando Código e Pers
 
 ### Habilitar agentes de replicação {#enable-replication-agents}
 
-Depois que o ambiente de publicação for totalmente atualizado e validado, ative os agentes de replicação no Ambiente de autor. Verifique se os agentes podem se conectar às respectivas instâncias do Publish. Consulte U [Atualizar Procedimento](/help/sites-deploying/upgrade-procedure.md) para obter mais detalhes sobre a ordem dos eventos.
+Depois que o ambiente de publicação for totalmente atualizado e validado, ative os agentes de replicação no Ambiente de autor. Verifique se os agentes podem se conectar às respectivas instâncias de Publicação. Consulte U [Atualizar Procedimento](/help/sites-deploying/upgrade-procedure.md) para obter mais detalhes sobre a ordem dos eventos.
 
 ### Habilitar os trabalhos agendados personalizados {#enable-custom-scheduled-jobs}
 
@@ -127,7 +127,7 @@ Todos os trabalhos agendados como parte da base de código podem ser ativados ne
 
 ## Análise De Problemas Com A Atualização {#analyzing-issues-with-upgrade}
 
-Esta seção contém alguns cenários de problemas que podem ocorrer durante o procedimento de atualização para AEM 6.3.
+Esta seção contém alguns cenários de problemas que podem ocorrer durante o procedimento de atualização para o AEM 6.3.
 
 Esses cenários devem ajudar a rastrear a causa raiz de problemas relacionados à atualização e devem ajudar a identificar problemas específicos do projeto ou do produto.
 
@@ -145,19 +145,19 @@ Antes de iniciar as etapas de preparação, execute primeiro a instância **sour
 
 Se os pacotes não forem instalados durante a atualização, os pacotes que eles contêm também não serão atualizados. Essa categoria de problemas é causada por uma configuração incorreta do armazenamento de dados. Eles também aparecerão como mensagens de **ERRO** e **AVISO** no error.log. Como na maioria desses casos o logon padrão pode falhar, você pode usar o CRXDE diretamente para inspecionar e encontrar os problemas de configuração.
 
-### Alguns pacotes de AEM não estão mudando para o estado ativo {#some-aem-bundles-are-not-switching-to-the-active-state}
+### Alguns pacotes do AEM não estão alternando para o estado ativo {#some-aem-bundles-are-not-switching-to-the-active-state}
 
 Se houver pacotes não inicializando, verifique se há dependências não satisfeitas.
 
 Caso esse problema esteja presente, mas se baseie em uma instalação de pacote com falha que resultou na não atualização de pacotes, eles serão considerados incompatíveis para a nova versão. Para obter mais informações sobre como solucionar problemas, consulte **Falha ao atualizar pacotes e pacotes** acima.
 
-Também é recomendável comparar a lista de pacotes de uma instância atualizada do AEM 6.5 com a atualizada para detectar os pacotes que não foram atualizados. Isso fornecerá um escopo mais próximo do que procurar no `error.log`.
+Também é recomendável comparar a lista de pacotes de uma nova instância do AEM 6.5 com a atualizada para detectar os pacotes que não foram atualizados. Isso fornecerá um escopo mais próximo do que procurar no `error.log`.
 
 ### Pacotes personalizados não estão alternando para o estado ativo {#custom-bundles-not-switching-to-the-active-state}
 
 Caso seus pacotes personalizados não estejam alternando para o estado ativo, é provável que haja um código que não esteja importando a API de alteração. Isso levará, na maioria das vezes, a dependências insatisfeitas.
 
-A API removida deve ser marcada como obsoleta em uma das versões anteriores. Você pode encontrar instruções sobre uma migração direta do seu código neste aviso de desativação. O Adobe visa o controle de versão semântico sempre que possível, para que as versões possam indicar alterações de quebra.
+A API removida deve ser marcada como obsoleta em uma das versões anteriores. Você pode encontrar instruções sobre uma migração direta do seu código neste aviso de desativação. O Adobe visa o controle de versão semântico sempre que possível, para que as versões possam indicar alterações importantes.
 
 Também é melhor verificar se a alteração que causou o problema foi necessária e, caso contrário, revertê-la. Verifique também se o aumento da versão da exportação de pacotes foi aumentado mais do que o necessário, após o controle de versão semântico rigoroso.
 
@@ -179,7 +179,7 @@ A maneira de lidar com um código personalizado incorreto é primeiro executar t
 
 `/apps` e `/libs` são bem tratados pela atualização, mas as alterações em `/etc` podem precisar ser restauradas manualmente de `/var/upgrade/PreUpgradeBackup` após a atualização. Verifique neste local se há conteúdo que precise ser mesclado manualmente.
 
-### Analisando error.log e upgrade.log {#analyzing-the-error.log-and-upgrade.log}
+### Análise de error.log e upgrade.log {#analyzing-the-error.log-and-upgrade.log}
 
 Na maioria das situações, os registros precisam ser consultados para que os erros localizem a causa de um problema. No entanto, com as atualizações, também é necessário monitorar problemas de dependência, pois os pacotes antigos podem não ser atualizados corretamente.
 
@@ -201,4 +201,4 @@ Em alguns casos, mensagens de AVISO também podem ser encontradas, pois pode hav
 
 ### Contato com o suporte da Adobe {#contacting-adobe-support}
 
-Se você seguiu as instruções desta página e ainda está vendo problemas, entre em contato com o Suporte da Adobe. Para fornecer o máximo possível de informações ao engenheiro de suporte que trabalha no seu caso, inclua o arquivo upgrade.log da sua atualização.
+Se você tiver seguido as instruções nesta página e ainda estiver vendo problemas, entre em contato com o Suporte da Adobe. Para fornecer o máximo possível de informações ao engenheiro de suporte que trabalha no seu caso, inclua o arquivo upgrade.log da sua atualização.

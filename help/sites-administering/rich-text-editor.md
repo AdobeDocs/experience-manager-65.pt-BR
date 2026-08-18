@@ -8,16 +8,16 @@ feature: Administering
 role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '2887'
-ht-degree: 0%
+source-wordcount: '3070'
+ht-degree: 1%
 
 ---
 
 # Configurar o editor de rich text {#configure-the-rich-text-editor}
 
-O Editor de Rich Text (RTE) fornece aos autores uma ampla variedade de funcionalidades para editar seu conteúdo de texto. Ícones, caixas de seleção, barra de ferramentas e menus são fornecidos para uma experiência de edição de texto WYSIWYG.
+O Editor de Rich Text (RTE) fornece aos autores uma ampla variedade de funcionalidades para editar seu conteúdo de texto. Ícones, caixas de seleção, barra de ferramentas e menus são fornecidos para uma experiência de edição de texto no WYSIWYG.
 
-Para saber como usar os recursos de RTE para criação, consulte [Usar Rich Text Editor para criação](/help/sites-authoring/rich-text-editor.md). O RTE pode ser configurado para ativar, desativar e estender os recursos disponíveis nos componentes de criação. O fluxo de trabalho a seguir ilustra uma ordem recomendada para concluir as tarefas de configuração de RTE no Experience Manager.
+Para saber como usar os recursos de RTE para criação, consulte [Usar Rich Text Editor para criação](/help/sites-authoring/rich-text-editor.md). O RTE pode ser configurado para ativar, desativar e estender os recursos disponíveis nos componentes de criação. O fluxo de trabalho a seguir ilustra uma ordem recomendada para concluir as tarefas de configuração do RTE no Experience Manager.
 
 ![Sequência de etapas para saber como configurar o RTE](assets/rte_workflow_v1.png)
 
@@ -25,7 +25,7 @@ Para saber como usar os recursos de RTE para criação, consulte [Usar Rich Text
 
 ## Compreender a interface habilitada para toque e a interface clássica {#understand-touch-enabled-ui-and-classic-ui}
 
-A interface habilitada para toque é a interface padrão do usuário para Experience Manager. O Adobe introduziu a interface habilitada para toque com [design responsivo](/help/sites-authoring/responsive-layout.md) para o ambiente de criação. A interface habilitada para toque foi projetada para dispositivos de toque e desktop. A interface difere consideravelmente da interface clássica original.
+A interface habilitada para toque é a interface padrão do usuário do Experience Manager. A Adobe apresentou uma interface habilitada para toque com [design responsivo](/help/sites-authoring/responsive-layout.md) para o ambiente de criação. A interface habilitada para toque foi projetada para dispositivos de toque e desktop. A interface difere consideravelmente da interface clássica original.
 
 ![Barra de ferramentas do Editor de Rich Text na interface habilitada para toque](assets/chlimage_1-35.png)
 
@@ -69,7 +69,7 @@ Na interface clássica, um clique duplo lento no componente permite a edição e
 
 ### Edição em tela cheia {#full-screen-editing}
 
-Os componentes de Experience Manager podem ser abertos na visualização de tela cheia, que oculta o conteúdo da página e ocupa a tela disponível. Considere a edição em tela cheia como uma versão detalhada da edição em linha, pois ela oferece a maioria das opções de edição. Ele pode ser aberto clicando em ![rte_fullscreen](assets/rte_fullscreen.png), na barra de ferramentas compacta, ao usar o modo de edição em linha.
+Os componentes do Experience Manager podem ser abertos na exibição de tela cheia, que oculta o conteúdo da página e ocupa a tela disponível. Considere a edição em tela cheia como uma versão detalhada da edição em linha, pois ela oferece a maioria das opções de edição. Ele pode ser aberto clicando em ![rte_fullscreen](assets/rte_fullscreen.png), na barra de ferramentas compacta, ao usar o modo de edição em linha.
 
 No modo de tela cheia da caixa de diálogo, juntamente com uma barra de ferramentas detalhada do RTE, as opções e os componentes disponíveis em uma caixa de diálogo também estão disponíveis. Ela é aplicável somente para uma caixa de diálogo que contém o RTE junto com outros componentes.
 
@@ -95,8 +95,8 @@ A funcionalidade é disponibilizada por meio de uma série de plug-ins, cada um 
 
 * Uma propriedade `features`:
 
-   * Usado para ativar ou desativar a funcionalidade básica desse plug-in
-   * Que pode ser configurado usando um procedimento padronizado
+  * Usado para ativar ou desativar a funcionalidade básica desse plug-in
+  * Que pode ser configurado usando um procedimento padronizado
 
 * Quando apropriado, propriedades e opções adicionais que exigem configuração especializada.
 
@@ -145,7 +145,7 @@ O [modo de edição de RTE (e a interface do usuário)](#editingmodes) fornecida
 >
 >Não nomeie o nó sob `cq:inplaceEditing` como `config`. No nó `cq:inplaceEditing`, defina as seguintes propriedades:
 >* **Nome**: `configPath`
->* **Tipo**: `String`
+>* **Tipo**: `String`
 >* **Value**: caminho do nó que contém a configuração real
 >
 >Não nomeie o nó de configuração de RTE como `config`. Caso contrário, as configurações de RTE terão efeito somente para os administradores e não para os usuários no grupo `content-author`.
@@ -166,9 +166,9 @@ Quando o RTE é usado na caixa de diálogo habilitada para toque, definir a prop
 
 ## Personalização da edição no local {#customizing-in-place-editing}
 
-Você pode definir em qual seletor de HTML o editor de texto é iniciado configurando as seguintes propriedades:
+Você pode definir em qual seletor do HTML o editor de texto é iniciado configurando as seguintes propriedades:
 
-* **`editElementQuery`** - Definida em `cq:InplaceEditingConfig`, essa propriedade é usada para especificar um seletor do elemento de HTML no qual a edição em linha do componente de Texto será iniciada. Se não especificado, a edição em linha é iniciada diretamente no HTML do componente de Texto.
+* **`editElementQuery`** - Definida em `cq:InplaceEditingConfig`, essa propriedade é usada para especificar um seletor do elemento HTML no qual a edição em linha do componente de Texto será iniciada. Se não especificado, a edição em linha é iniciada diretamente no HTML do componente de Texto.
 * **`textPropertyName`** - Definida em `cq:InplaceEditingConfig`, essa propriedade é usada para especificar o nome da propriedade que será salva no nó de conteúdo, onde o valor HTML do componente de texto será mantido após a edição em linha.
 
 A propriedade correspondente para o modo de caixa de diálogo é `name`.
@@ -183,9 +183,9 @@ Para obter configurações detalhadas dos plug-ins RTE, consulte [como ativar e 
 
 >[!NOTE]
 >
->O [componente de texto dos Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=pt-BR#the-text-component-and-the-rich-text-editor) permite que os editores de modelo configurem vários plug-ins de RTE em uma GUI como políticas de conteúdo, eliminando a necessidade de configuração técnica. As políticas de conteúdo podem funcionar com as configurações da interface do usuário de RTE conforme descrito neste documento.
+>O [componente de texto dos Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor) permite que os editores de modelo configurem vários plug-ins de RTE em uma GUI como políticas de conteúdo, eliminando a necessidade de configuração técnica. As políticas de conteúdo podem funcionar com as configurações da interface do usuário de RTE conforme descrito neste documento.
 >
->Para obter mais informações, consulte a seção [Configurações da interface do usuário do RTE e políticas de conteúdo](/help/sites-administering/rich-text-editor.md) deste documento e a [documentação do desenvolvedor sobre Criação de Modelos de Página](/help/sites-authoring/templates.md) e os [Componentes Principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html?lang=pt-BR).
+>Para obter mais informações, consulte a seção [Configurações da interface do usuário do RTE e políticas de conteúdo](/help/sites-administering/rich-text-editor.md) deste documento e a [documentação do desenvolvedor sobre Criação de Modelos de Página](/help/sites-authoring/templates.md) e os [Componentes Principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html).
 
 >[!NOTE]
 >
@@ -261,7 +261,7 @@ As opções disponíveis no fluxo de RTE downstream das configurações da inter
 * Se a configuração da interface do usuário do RTE tiver sido removida ou não ativar um item, a política de conteúdo não poderá configurá-lo.
 * Um autor tem acesso somente a essas funcionalidades, conforme disponibilizado pelas configurações da interface do usuário e pelas políticas de conteúdo.
 
-Como exemplo, você pode ver a [documentação do Componente principal de texto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html?lang=pt-BR#the-text-component-and-the-rich-text-editor).
+Como exemplo, você pode ver a [documentação do Componente principal de texto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html#the-text-component-and-the-rich-text-editor).
 
 ## Personalizar o mapeamento entre ícones e comandos da barra de ferramentas {#iconstoolbar}
 
@@ -300,7 +300,7 @@ Em uma página, você pode incluir a biblioteca cliente CoralUI 2 RTE ou a bibli
 
 >[!NOTE]
 >
->O Adobe não o recomenda como prática recomendada. Alterne para o CoralUI 2 RTE como último recurso. Os plug-ins personalizados para o CoralUI 2 RTE funcionam com o CoralUI 3 RTE se os plug-ins não dependerem dos internos de RTE, como classes.
+>A Adobe não recomenda isso como prática recomendada. Alterne para o CoralUI 2 RTE como último recurso. Os plug-ins personalizados para o CoralUI 2 RTE funcionam com o CoralUI 3 RTE se os plug-ins não dependerem dos internos de RTE, como classes.
 >
 >Se você estiver usando plug-ins personalizados para CoralUI3 RTE, use a biblioteca `rte.coralui3`.
 
@@ -325,27 +325,27 @@ Em uma página, você pode incluir a biblioteca cliente CoralUI 2 RTE ou a bibli
 
 ## Informações adicionais {#further-information}
 
-Para obter mais informações sobre como configurar o RTE, consulte a [API do Widget do AEM](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.RichText) reference.
+Para obter mais informações sobre como configurar o RTE, consulte a [API do AEM Widget](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.RichText) reference.
 
 Em particular, para ver os plug-ins e as opções relacionadas disponíveis:
 
 * O componente [CQ.form.RichText](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.RichText) fornece um campo de formulário para editar informações de texto estilizado (rich text). Para conhecer todos os parâmetros disponíveis para o formulário rich text, consulte as Opções de configuração.
 * O componente RichText fornece uma ampla variedade de funcionalidades usando plug-ins listados em [CQ.form.rte.plugins.Plugin](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin). Para cada plugin:
 
-   * consulte os Recursos para obter detalhes sobre a funcionalidade que pode ser ativada (ou desativada)
-   * Consulte as Opções de configuração para todos os parâmetros disponíveis para obter a configuração detalhada do plug-in apropriado
+  * consulte os Recursos para obter detalhes sobre a funcionalidade que pode ser ativada (ou desativada)
+  * Consulte as Opções de configuração para todos os parâmetros disponíveis para obter a configuração detalhada do plug-in apropriado
 
-* Mais informações sobre Regras de HTML para links também estão disponíveis.
+* Mais informações sobre as regras do HTML para links também estão disponíveis.
 
 Eles podem ser usados para estender e personalizar seu próprio RTE. Por exemplo, para listar as âncoras disponíveis na página ao criar um link, você pode fornecer sua própria implementação do `LinkPlugin`.
 
 ## Limitações conhecidas {#known-limitations}
 
-O recurso RTE do AEM tem as seguintes limitações:
+O recurso AEM RTE tem as seguintes limitações:
 
 * Os recursos de RTE são compatíveis somente nas caixas de diálogo do componente AEM. Não há suporte para RTE em assistentes ou formulários de Fundação como [Propriedades de Página](/help/sites-developing/page-properties-views.md) e [Andaime](/help/sites-authoring/scaffolding.md) na interface habilitada para toque.
 
-* O AEM não funciona em [Dispositivos híbridos](/help/release-notes/release-notes.md).
+* O AEM não funciona em [dispositivos híbridos](/help/release-notes/release-notes.md).
 
 * Não nomeie o nó de configuração de RTE `config`. Caso contrário, a configuração do RTE será aplicada apenas aos administradores e não aos usuários no grupo `content-author`.
 
@@ -371,15 +371,15 @@ Adicione um hiperlink em um componente de texto editando-o usando o botão Confi
 
 Uma solução alternativa é clicar no componente de texto quando a caixa de diálogo de edição for exibida pela segunda vez e executar a validação do link.
 
-Esse problema é resolvido no AEM 6.3 e posterior.
+Esse problema é resolvido no AEM 6.3 e posteriores.
 
-**o conteúdo de HTML adicionado no modo de edição de origem foi perdido**
+**O conteúdo do HTML adicionado no modo de edição de origem foi perdido**
 
-Não adicione um HTML propenso a XSS. O AEM, e não o RTE, pode remover algum conteúdo de HTML para aderir às regras de antisamia XSS.
+Não adicione um HTML propenso a XSS. O AEM, e não o RTE, pode remover algum conteúdo do HTML para aderir às regras de antissamia XSS.
 
-Para verificar se o HTML colado está salvo, verifique o conteúdo salvo no CRXDE (no nó de conteúdo).
+Para verificar se o HTML colado foi salvo, verifique o conteúdo salvo no CRXDE (no nó de conteúdo).
 
-Se não for salvo, o HTML deve ter sido removido pelo RTE, pois não aderiu às regras do RTE.
+Se não for salva, a HTML deve ter sido removida pelo RTE, pois não aderiu às regras do RTE.
 
 Se salvo no CRXDE, mas não renderizado na Página (para verificar a renderização, consulte a [visualização](/help/sites-authoring/editing-content.md#preview-mode) da página, ele será removido pelas regras XSS do AEM.
 
@@ -391,7 +391,7 @@ Além disso, verifique se o código de implementação de vários campos e a est
 
 **As configurações disponíveis para administradores não estão disponíveis para autores**
 
-Se as atualizações das configurações de interface forem refletidas para administradores, mas não para contas de autor, verifique se o nó de configuração não é nomeado como `config`. Use a propriedade [`configPath` &#x200B;](/help/sites-developing/components-basics.md#cq-inplaceediting).
+Se as atualizações das configurações de interface forem refletidas para administradores, mas não para contas de autor, verifique se o nó de configuração não é nomeado como `config`. Use a propriedade [`configPath` ](/help/sites-developing/components-basics.md#cq-inplaceediting).
 
 >[!MORELIKETHIS]
 >

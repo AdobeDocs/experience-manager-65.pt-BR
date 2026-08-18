@@ -11,7 +11,7 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '617'
+source-wordcount: '621'
 ht-degree: 0%
 
 ---
@@ -61,9 +61,9 @@ Se os testes de unidade demorarem muito para serem executados, os desenvolvedore
 
 As ferramentas de análise de código podem ser valiosas, mas somente se seus relatórios levarem à ação por parte da equipe de desenvolvimento. Sem o ajuste da análise que essas ferramentas oferecem, as recomendações que geram tornam-se irrelevantes e perdem seu valor.
 
-### Siga a regra do Scout Boy {#follow-the-boy-scout-rule}
+### Siga a regra dos escoteiros {#follow-the-boy-scout-rule}
 
-O Menino Scout tem uma regra: &quot;Deixe-o melhor do que você encontrou.&quot; Enquanto todos os membros da equipe de desenvolvimento aderirem a essa regra e limparem algo ao se deparar com uma bagunça, o código melhorará constantemente.
+Os escoteiros têm uma regra: &quot;Deixe-o melhor do que o encontrou.&quot; Enquanto todos os membros da equipe de desenvolvimento aderirem a essa regra e limparem algo ao se deparar com uma bagunça, o código melhorará constantemente.
 
 ### Evitar a implementação de recursos YAGNI {#avoid-implementing-yagni-features}
 

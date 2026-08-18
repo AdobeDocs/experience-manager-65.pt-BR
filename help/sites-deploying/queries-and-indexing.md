@@ -12,8 +12,8 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: eeeb31d81c22f8dace7a170953bf45a709f5ac73
 workflow-type: tm+mt
-source-wordcount: '3051'
-ht-degree: 0%
+source-wordcount: '3098'
+ht-degree: 1%
 
 ---
 
@@ -316,39 +316,39 @@ Considere essa estrutura de nó como um exemplo:
 
 * **Nome:** `analyzers`
 
-   * **Nome:** `default`
+  * **Nome:** `default`
 
-      * **Nome:** `charFilters`
-      * **Tipo:** `nt:unstructured`
+    * **Nome:** `charFilters`
+    * **Tipo:** `nt:unstructured`
 
-         * **Nome:** `HTMLStrip`
-         * **Nome:** `Mapping`
+      * **Nome:** `HTMLStrip`
+      * **Nome:** `Mapping`
 
-      * **Nome:** `tokenizer`
+    * **Nome:** `tokenizer`
 
-         * **Nome da Propriedade:** `name`
+      * **Nome da Propriedade:** `name`
 
-            * **Tipo:** `String`
-            * **Valor:** `Standard`
+        * **Tipo:** `String`
+        * **Valor:** `Standard`
 
-      * **Nome:** `filters`
-      * **Tipo:** `nt:unstructured`
+    * **Nome:** `filters`
+    * **Tipo:** `nt:unstructured`
 
-         * **Nome:** `LowerCase`
-         * **Nome:** `Stop`
+      * **Nome:** `LowerCase`
+      * **Nome:** `Stop`
 
-            * **Nome da propriedade:** `words`
+        * **Nome da propriedade:** `words`
 
-               * **Tipo:** `String`
-               * **Valor:** `stop1.txt, stop2.txt`
+          * **Tipo:** `String`
+          * **Valor:** `stop1.txt, stop2.txt`
 
-            * **Nome:** `stop1.txt`
+        * **Nome:** `stop1.txt`
 
-               * **Tipo:** `nt:file`
+          * **Tipo:** `nt:file`
 
-            * **Nome:** `stop2.txt`
+        * **Nome:** `stop2.txt`
 
-               * **Tipo:** `nt:file`
+          * **Tipo:** `nt:file`
 
 O nome dos filtros, charFilters e tokenizers são formados pela remoção dos sufixos de fábrica. Assim:
 

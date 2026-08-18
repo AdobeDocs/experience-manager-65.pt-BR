@@ -11,8 +11,8 @@ feature: Authoring,Integration
 role: User,Admin,Developer
 source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
-source-wordcount: '640'
-ht-degree: 4%
+source-wordcount: '655'
+ht-degree: 5%
 
 ---
 
@@ -137,23 +137,23 @@ A caixa de diálogo **Configurações do Activity Map** fornece um intervalo de 
 
 * Geral
 
-   * Conjunto de relatórios
-   * Nome da Página
-   * Idioma
-   * Sobreposições de Rótulo com
-   * Tamanho da fonte do rótulo
-   * Cor do gradiente
-   * Cor da bolha
-   * Gradiente colorido com base em
-   * Transparência do gradiente
+  * Conjunto de relatórios
+  * Nome da Página
+  * Idioma
+  * Sobreposições de Rótulo com
+  * Tamanho da fonte do rótulo
+  * Cor do gradiente
+  * Cor da bolha
+  * Gradiente colorido com base em
+  * Transparência do gradiente
 
 * Padrão
 
-   * Exibição (tipo e número de links)
-   * Ocultar as sobreposições para links que não receberam visitas
+  * Exibição (tipo e número de links)
+  * Ocultar as sobreposições para links que não receberam visitas
 
 * Ativo
 
-   * Exibir os principais (ganhadores ou perdedores)
-   * Excluir % inferior
-   * Atualização automática (dados e período)
+  * Exibir os principais (ganhadores ou perdedores)
+  * Excluir % inferior
+  * Atualização automática (dados e período)

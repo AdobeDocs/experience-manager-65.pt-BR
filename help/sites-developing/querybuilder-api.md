@@ -13,7 +13,7 @@ feature: Developing,Search,Query Builder
 role: Developer
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '2033'
+source-wordcount: '2390'
 ht-degree: 0%
 
 ---
@@ -32,15 +32,15 @@ A API REST fornece acesso aos mesmos recursos por meio do HTTP, com respostas se
 
 >[!NOTE]
 >
->A API do QueryBuilder é criada usando a API JCR. Você também pode consultar o JCR do Adobe Experience Manager usando a API JCR de um pacote OSGi. Para obter informações, consulte [Adobe Experience Manager usando a API JCR](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/access-jcr.html?lang=pt-BR).
+>A API do QueryBuilder é criada usando a API JCR. Você também pode consultar o JCR do Adobe Experience Manager usando a API JCR de um pacote OSGi. Para obter informações, consulte [Adobe Experience Manager usando a API JCR](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/access-jcr.html).
 
 ## Sessão Gem {#gem-session}
 
-[Gems do Adobe Experience Manager (AEM Adobe Experience Manager)](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/overview.html?lang=pt-BR) é uma série de aprofundamentos técnicos fornecidos por especialistas em Adobe. Essa sessão dedicada ao construtor de consultas é útil para obter uma visão geral e usar a ferramenta.
+O [Adobe Experience Manager (AEM) Gems](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/overview.html) é uma série de aprofundamentos técnicos da Adobe Experience Manager oferecidos por especialistas da Adobe. Essa sessão dedicada ao construtor de consultas é útil para obter uma visão geral e usar a ferramenta.
 
 >[!NOTE]
 >
->Sessão de Gem AEM [Os formulários de pesquisa ficaram simples com o construtor de consultas AEM](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-search-forms-using-querybuilder.html?lang=pt-BR) para obter uma visão geral detalhada do construtor de consultas.
+>A sessão do AEM Gem [Pesquisar formulários ficou mais fácil com o AEM querybuilder](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-search-forms-using-querybuilder.html) para obter uma visão geral detalhada do construtor de consultas.
 
 ## Exemplos de consulta {#sample-queries}
 
@@ -116,7 +116,7 @@ A consulta retorna o padrão `p.limit` de `10` resultados com um deslocamento `0
 "offset": 0,
 ```
 
-A partir do AEM 6.0 SP2, você também pode usar um valor numérico para contar até um número personalizado de resultados máximos. Use a mesma consulta acima, mas altere o valor de `p.guessTotal` para `50`:
+A partir do AEM 6.0 SP2, também é possível usar um valor numérico para contar até um número personalizado de resultados máximos. Use a mesma consulta acima, mas altere o valor de `p.guessTotal` para `50`:
 
 `http://localhost:4502/bin/querybuilder.json?path=/content&1_property=sling:resourceType&1_property.value=foundation/components/text&1_property.operation=like&p.guessTotal=50&orderby=path`
 
@@ -141,8 +141,8 @@ Por exemplo, a interface pode adaptar a seguinte abordagem:
 
 * A resposta pode ter o seguinte resultado:
 
-   * `total=43`, `more=false` - Indica que o número total de ocorrências é 43. A interface do usuário pode mostrar até dez resultados como parte da primeira página e fornecer paginação para as próximas três páginas. Você também pode usar essa implementação para exibir um texto descritivo como **&quot;43 resultados encontrados&quot;**.
-   * `total=100`, `more=true` - Indica que o número total de ocorrências é maior que 100 e que a contagem exata não é conhecida. A interface do usuário pode exibir até dez como parte da primeira página e fornecer paginação para as próximas dez páginas. Você também pode usar isso para exibir um texto como **&quot;mais de 100 resultados encontrados&quot;**. Conforme o usuário vai para as próximas páginas, chamadas feitas para o Construtor de Consultas aumentariam o limite de `guessTotal` e também dos parâmetros `offset` e `limit`.
+  * `total=43`, `more=false` - Indica que o número total de ocorrências é 43. A interface do usuário pode mostrar até dez resultados como parte da primeira página e fornecer paginação para as próximas três páginas. Você também pode usar essa implementação para exibir um texto descritivo como **&quot;43 resultados encontrados&quot;**.
+  * `total=100`, `more=true` - Indica que o número total de ocorrências é maior que 100 e que a contagem exata não é conhecida. A interface do usuário pode exibir até dez como parte da primeira página e fornecer paginação para as próximas dez páginas. Você também pode usar isso para exibir um texto como **&quot;mais de 100 resultados encontrados&quot;**. Conforme o usuário vai para as próximas páginas, chamadas feitas para o Construtor de Consultas aumentariam o limite de `guessTotal` e também dos parâmetros `offset` e `limit`.
 
 `guessTotal` deve ser usado nos casos em que a interface do usuário precisa usar rolagem infinita para evitar que o Construtor de Consultas determine a contagem exata de ocorrências.
 
@@ -324,7 +324,7 @@ Separado por um espaço:
 
 `http://localhost:4502/bin/querybuilder.json?p.hits=selective&property=jcr%3atitle&property.value=Triangle`
 
-[`http://localhost:4502/bin/querybuilder.json?`](http://localhost:4502/bin/querybuilder.json?p.hits=selective&amp;p.properties=sling%3aresourceType%20jcr%3aprimaryType&amp;property=jcr%3atitle&amp;property.value=Triangle) [p.hits=selective&amp;](http://localhost:4502/bin/querybuilder.json?p.hits=selective&amp;p.nodedepth=5&amp;p.properties=sling%3aresourceType%20jcr%3apath&amp;property=jcr%3atitle&amp;property.value=Triangle)p.properties=sling%3aresourceType%20jcr%3aprimaryType&amp;property=jcr%3atitle&amp;property.value=Triangle
+[`http://localhost:4502/bin/querybuilder.json?`](http://localhost:4502/bin/querybuilder.json?p.hits=selective&p.properties=sling%3aresourceType%20jcr%3aprimaryType&property=jcr%3atitle&property.value=Triangle) [p.hits=selective&amp;](http://localhost:4502/bin/querybuilder.json?p.hits=selective&p.nodedepth=5&p.properties=sling%3aresourceType%20jcr%3apath&property=jcr%3atitle&property.value=Triangle)p.properties=sling%3aresourceType%20jcr%3aprimaryType&amp;property=jcr%3atitle&amp;property.value=Triangle
 
 ```xml
 property=jcr:title
@@ -468,7 +468,7 @@ Ou, como alternativa, o servlet json querybuilder em
 
 ( `path=/tmp` é apenas um exemplo).
 
-### Depuração geral do Recommendations {#general-debugging-recommendations}
+### Recomendações gerais de depuração {#general-debugging-recommendations}
 
 ### Obter XPath explicável via registro {#obtain-explain-able-xpath-via-logging}
 
@@ -476,18 +476,18 @@ Explicar **todas** as consultas durante o ciclo de desenvolvimento em relação 
 
 * Habilitar logs DEBUG para o QueryBuilder a fim de obter consulta XPath subjacente e explicável
 
-   * Navegue até https://&lt;serveraddress>:&lt;serverport>/system/console/slinglog. Criar um agente de log para `com.day.cq.search.impl.builder.QueryImpl` em **DEBUG**.
+  * Navegue até https://&lt;serveraddress>:&lt;serverport>/system/console/slinglog. Criar um agente de log para `com.day.cq.search.impl.builder.QueryImpl` em **DEBUG**.
 
 * Depois que DEBUG é ativado para a classe acima, os logs exibem o XPath gerado pelo Construtor de consultas.
 * Copie a consulta XPath da entrada de log da consulta QueryBuilder associada. Por exemplo:
 
-   * `com.day.cq.search.impl.builder.QueryImpl XPath query: /jcr:root/content//element(*, cq:Page)[(jcr:contains(jcr:content, "Geometrixx") or jcr:contains(jcr:content/@cq:tags, "Geometrixx"))]`
+  * `com.day.cq.search.impl.builder.QueryImpl XPath query: /jcr:root/content//element(*, cq:Page)[(jcr:contains(jcr:content, "Geometrixx") or jcr:contains(jcr:content/@cq:tags, "Geometrixx"))]`
 
 * Cole a consulta XPath na [Explicar consulta](/help/sites-administering/operations-dashboard.md#explain-query) como XPath para obter o plano de consulta
 
 ### Obter XPath explicável por meio do depurador do Construtor de consultas {#obtain-explain-able-xpath-via-the-query-builder-debugger}
 
-* Use o depurador AEM QueryBuilder para gerar uma consulta XPath explicável:
+* Use o depurador do AEM QueryBuilder para gerar uma consulta XPath explicável:
 
 Explicar **todas** as consultas durante o ciclo de desenvolvimento em relação ao conjunto de índices de destino.
 
@@ -495,18 +495,18 @@ Explicar **todas** as consultas durante o ciclo de desenvolvimento em relação 
 
 * Habilitar logs DEBUG para o QueryBuilder a fim de obter consulta XPath subjacente e explicável
 
-   * Navegue até https://&lt;serveraddress>:&lt;serverport>/system/console/slinglog. Criar um agente de log para `com.day.cq.search.impl.builder.QueryImpl` em **DEBUG**.
+  * Navegue até https://&lt;serveraddress>:&lt;serverport>/system/console/slinglog. Criar um agente de log para `com.day.cq.search.impl.builder.QueryImpl` em **DEBUG**.
 
 * Depois que DEBUG é ativado para a classe acima, os logs exibem o XPath gerado pelo Construtor de consultas.
 * Copie a consulta XPath da entrada de log da consulta QueryBuilder associada. Por exemplo:
 
-   * `com.day.cq.search.impl.builder.QueryImpl XPath query: /jcr:root/content//element(*, cq:Page)[(jcr:contains(jcr:content, "Geometrixx") or jcr:contains(jcr:content/@cq:tags, "Geometrixx"))]`
+  * `com.day.cq.search.impl.builder.QueryImpl XPath query: /jcr:root/content//element(*, cq:Page)[(jcr:contains(jcr:content, "Geometrixx") or jcr:contains(jcr:content/@cq:tags, "Geometrixx"))]`
 
 * Cole a consulta XPath na [Explicar consulta](/help/sites-administering/operations-dashboard.md#explain-query) como XPath para obter o plano de consulta
 
 **Obter XPath explicável por meio do depurador do Construtor de Consultas**
 
-* Use o depurador AEM QueryBuilder para gerar uma consulta XPath explicável:
+* Use o depurador do AEM QueryBuilder para gerar uma consulta XPath explicável:
 
 ![chlimage_1-66](assets/chlimage_1-66a.png)
 
