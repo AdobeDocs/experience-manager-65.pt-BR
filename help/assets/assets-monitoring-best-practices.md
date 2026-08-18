@@ -8,7 +8,7 @@ exl-id: a9e1bd6b-c768-4faa-99a3-7110693998dc
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '1638'
+source-wordcount: '1702'
 ht-degree: 0%
 
 ---
@@ -143,51 +143,51 @@ As verificações de integridade disponíveis no [painel de operações](/help/s
 Estas são algumas verificações de integridade prontas para uso que são úteis para monitorar:
 
 * Verificações do sistema
-   * MBean: `org.apache.sling.healthcheck:name=systemchecks,type=HealthCheck`
-   * URL: `/system/console/jmx/org.apache.sling.healthcheck:name=systemchecks,type=HealthCheck`
-   * Instâncias: um autor, todos os servidores de publicação
-   * Limite de alarme: quando o status não é OK
-   * Definição de alarme: O status de uma das métricas é AVISO ou CRÍTICO. Verifique o atributo de log para obter mais informações sobre a causa do problema.
+  * MBean: `org.apache.sling.healthcheck:name=systemchecks,type=HealthCheck`
+  * URL: `/system/console/jmx/org.apache.sling.healthcheck:name=systemchecks,type=HealthCheck`
+  * Instâncias: um autor, todos os servidores de publicação
+  * Limite de alarme: quando o status não é OK
+  * Definição de alarme: O status de uma das métricas é AVISO ou CRÍTICO. Verifique o atributo de log para obter mais informações sobre a causa do problema.
 
 * Fila de replicação
 
-   * MBean: `org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck`
-   * URL: `/system/console/jmx/org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck`
-   * Instâncias: um autor, todos os servidores de publicação
-   * Limite de alarme: quando o status não é OK
-   * Definição de alarme: O status de uma das métricas é AVISO ou CRÍTICO. Verifique o atributo de log para obter mais informações sobre a fila que causou o problema.
+  * MBean: `org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck`
+  * URL: `/system/console/jmx/org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck`
+  * Instâncias: um autor, todos os servidores de publicação
+  * Limite de alarme: quando o status não é OK
+  * Definição de alarme: O status de uma das métricas é AVISO ou CRÍTICO. Verifique o atributo de log para obter mais informações sobre a fila que causou o problema.
 
 * Desempenho da resposta
 
-   * MBean: `org.apache.sling.healthcheck:name=requestsStatus,type=HealthCheck`
-   * URL: `/system/console/jmx/org.apache.sling.healthcheck:name=requestsStatus,type=HealthCheck`
-   * Instâncias: todos os servidores
-   * Duração do alarme: Quando o estado não estiver OK
-   * Definição de alarme: O status de uma das métricas é AVISO ou CRÍTICO. Verifique o atributo de log para obter mais informações sobre a fila que causou o problema.
+  * MBean: `org.apache.sling.healthcheck:name=requestsStatus,type=HealthCheck`
+  * URL: `/system/console/jmx/org.apache.sling.healthcheck:name=requestsStatus,type=HealthCheck`
+  * Instâncias: todos os servidores
+  * Duração do alarme: Quando o estado não estiver OK
+  * Definição de alarme: O status de uma das métricas é AVISO ou CRÍTICO. Verifique o atributo de log para obter mais informações sobre a fila que causou o problema.
 
 * Desempenho da consulta
 
-   * MBean: `org.apache.sling.healthcheck:name=queriesStatus,type=HealthCheck`
-   * URL: `/system/console/jmx/org.apache.sling.healthcheck:name= queriesStatus,type=HealthCheck`
-   * Instâncias: um autor, todos os servidores de publicação
-   * Limite de alarme: quando o status não é OK
-   * Definição do alarme: uma ou mais consultas são executadas lentamente no sistema. Verifique o atributo de log para obter mais informações sobre as consultas que causaram o problema.
+  * MBean: `org.apache.sling.healthcheck:name=queriesStatus,type=HealthCheck`
+  * URL: `/system/console/jmx/org.apache.sling.healthcheck:name= queriesStatus,type=HealthCheck`
+  * Instâncias: um autor, todos os servidores de publicação
+  * Limite de alarme: quando o status não é OK
+  * Definição do alarme: uma ou mais consultas são executadas lentamente no sistema. Verifique o atributo de log para obter mais informações sobre as consultas que causaram o problema.
 
 * Pacotes ativos
 
-   * MBean: `org.apache.sling.healthcheck:name=inactiveBundles,type=HealthCheck`
-   * URL: `/system/console/jmx/org.apache.sling.healthcheck:name=inactiveBundles,type=HealthCheck`
-   * Instâncias: todos os servidores
-   * Limite de alarme: quando o status não é OK
-   * Definição do alarme: Presença de pacotes OSGi inativos ou não resolvidos no sistema. Verifique o atributo de log para obter mais informações sobre os pacotes que causaram o problema.
+  * MBean: `org.apache.sling.healthcheck:name=inactiveBundles,type=HealthCheck`
+  * URL: `/system/console/jmx/org.apache.sling.healthcheck:name=inactiveBundles,type=HealthCheck`
+  * Instâncias: todos os servidores
+  * Limite de alarme: quando o status não é OK
+  * Definição do alarme: Presença de pacotes OSGi inativos ou não resolvidos no sistema. Verifique o atributo de log para obter mais informações sobre os pacotes que causaram o problema.
 
 * Erros de log
 
-   * MBean: `org.apache.sling.healthcheck:name=logErrorHealthCheck,type=HealthCheck`
-   * URL: `/system/console/jmx/org.apache.sling.healthcheck:name=logErrorHealthCheck,type=HealthCheck`
-   * Instâncias: todos os servidores
-   * Limite de alarme: quando o status não é OK
-   * Definição do alarme: Existem erros nos arquivos de registro. @ info: whatsthis Verifique o atributo de log para obter mais informações sobre a causa do problema.
+  * MBean: `org.apache.sling.healthcheck:name=logErrorHealthCheck,type=HealthCheck`
+  * URL: `/system/console/jmx/org.apache.sling.healthcheck:name=logErrorHealthCheck,type=HealthCheck`
+  * Instâncias: todos os servidores
+  * Limite de alarme: quando o status não é OK
+  * Definição do alarme: Existem erros nos arquivos de registro. @ info: whatsthis Verifique o atributo de log para obter mais informações sobre a causa do problema.
 
 ## Problemas comuns e resoluções  {#common-issues-and-resolutions}
 

@@ -11,7 +11,7 @@ feature: Administering,Personalization
 role: Admin
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '1696'
+source-wordcount: '1710'
 ht-degree: 2%
 
 ---
@@ -135,7 +135,7 @@ No entanto, o controle de acesso pode ser usado para criar uma forma de personal
 
 ## Componentes disponíveis para o Personalization {#components-available-for-personalization}
 
-Vários componentes são fornecidos com AEM para personalização. Alguns permitem que os usuários façam logon e editem seus perfis, outros (como Meus gadgets) permitem que os usuários configurem uma página específica:
+Vários componentes são fornecidos com o AEM para personalização. Alguns permitem que os usuários façam logon e editem seus perfis, outros (como Meus gadgets) permitem que os usuários configurem uma página específica:
 
 | Título no Sidekick | Propósito |
 |---|---|
@@ -143,7 +143,7 @@ Vários componentes são fornecidos com AEM para personalização. Alguns permit
 | Inscrição combinada | Permite que o usuário faça logon em uma conta existente ou cadastre-se em uma nova conta. |
 | Campo de endereço do Forms | Um campo complexo que permite a entrada de um endereço internacional. |
 | Início do Forms | Inicia uma definição de formulário |
-| Forms Captcha | Um campo que consiste em uma palavra alfanumérica que é atualizada automaticamente. O componente captcha protege os sites contra bots. |
+| Captcha nos formulários | Um campo que consiste em uma palavra alfanumérica que é atualizada automaticamente. O componente captcha protege os sites contra bots. |
 | Grupo de caixas de seleção Forms | Vários itens organizados em uma lista e precedidos por caixas de seleção. Os usuários podem marcar várias caixas de seleção. |
 | Lista suspensa Forms | Vários itens organizados em uma lista suspensa. A opção Multi Seletable especifica se vários elementos podem ser selecionados na lista. |
 | Fim do Forms | Finaliza a definição do formulário. |
@@ -155,7 +155,7 @@ Vários componentes são fornecidos com AEM para personalização. Alguns permit
 | Botão Enviar do Forms | Um botão de envio adicional para o formulário no qual o título é exibido como texto no botão. |
 | Campo de texto do Forms | Campo de texto que permite aos usuários inserir informações. |
 | Meus gadgets | Permite incluir um de uma seleção de gadgets disponíveis. |
-| Foto de avatar do perfil  | Permite a entrada de uma foto de avatar. |
+| Foto de avatar do perfil | Permite a entrada de uma foto de avatar. |
 | Nome detalhado de perfil | Entrada de detalhes do nome, incluindo elementos como título, nome do meio e sufixo, se necessário. |
 | Nome de exibição no perfil | Nome a ser exibido. |
 | E-mail do perfil | Entrada de um endereço de email. |

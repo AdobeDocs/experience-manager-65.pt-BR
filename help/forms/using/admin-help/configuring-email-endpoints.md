@@ -11,7 +11,7 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '3805'
+source-wordcount: '3811'
 ht-degree: 0%
 
 ---
@@ -89,7 +89,7 @@ Para que o fluxo de trabalho de formulários receba e manipule mensagens de emai
 
 **Padrão do Domínio:** O padrão do nome de domínio usado para filtrar emails de entrada. Por exemplo, se adobe.com for usado, somente o email do adobe.com será processado; o email de outros domínios será ignorado.
 
-**Padrão de Arquivo:** Os padrões de anexo de arquivo de entrada aceitos pelo provedor. Isso inclui arquivos com extensões específicas (&ast;.dat, &ast;.xml), nomes específicos (dados) e expressões compostas no nome e na extensão (.``[dD][aA]``&#39;porta&#39;). O valor padrão é &ast;.&ast;.
+**Padrão de Arquivo:** Os padrões de anexo de arquivo de entrada aceitos pelo provedor. Isso inclui arquivos com extensões específicas (&ast;.dat, &ast;.xml), nomes específicos (dados) e expressões compostas no nome e na extensão (.``[dD][aA]``&#39;port&#39;). O valor padrão é &ast;.&ast;.
 
 **Destinatários do Trabalho Bem-sucedido:** Um ou mais endereços de email que são usados para enviar emails para indicar trabalhos bem-sucedidos. Por padrão, uma mensagem de tarefa bem-sucedida é sempre enviada ao remetente da tarefa inicial. Até 100 recipients são suportados. Para desativar essa configuração, deixe esse campo em branco.
 
@@ -167,7 +167,7 @@ Use as configurações a seguir para configurar um endpoint de email.
 
 **Padrão de Domínio:** Especifica os padrões de domínio do email de entrada que o provedor aceita. Por exemplo, se adobe.com for usado, somente o email do adobe.com será processado; o email de outros domínios será ignorado.
 
-**Padrão de Arquivo:** Especifica os padrões de anexo de arquivo de entrada aceitos pelo provedor. Isso inclui arquivos com extensões específicas (&ast;.dat, &ast;.xml), nomes específicos (dados) ou expressões compostas no nome e na extensão (&ast;.`[dD][aA]`&#39;porta&#39;).
+**Padrão de Arquivo:** Especifica os padrões de anexo de arquivo de entrada aceitos pelo provedor. Isso inclui arquivos com extensões específicas (&ast;.dat, &ast;.xml), nomes específicos (dados) ou expressões compostas no nome e na extensão (&ast;.`[dD][aA]`&#39;port&#39;).
 
 **Destinatários do Trabalho Bem-sucedido:** Um endereço de email para o qual as mensagens são enviadas para indicar trabalhos bem-sucedidos. Por padrão, uma mensagem de tarefa bem-sucedida é sempre enviada ao remetente. Se você digitar remetente, os resultados do email serão enviados para ele. Até 100 recipients são suportados. Especifique recipients adicionais com endereços de email, separados por vírgulas (,).
 

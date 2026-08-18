@@ -7,8 +7,8 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '879'
-ht-degree: 7%
+source-wordcount: '890'
+ht-degree: 10%
 
 ---
 
@@ -16,11 +16,11 @@ ht-degree: 7%
 
 Quando um componente em uma página da Web é renderizado, um elemento HTML pode ser gerado, vinculando o componente renderizado dentro de si mesmo. Isso serve principalmente a dois propósitos:
 
-* Um componente só pode ser editado quando encapsulado com um elemento HTML.
-* O elemento de encapsulamento é usado para aplicar classes de HTML que fornecem:
+* Um componente só pode ser editado quando envolvido com um elemento HTML.
+* O elemento de encapsulamento é usado para aplicar classes HTML que fornecem:
 
-   * informações de layout
-   * informações de estilo
+  * informações de layout
+  * informações de estilo
 
 Para desenvolvedores, o AEM oferece lógica simples e clara controlando as tags de decoração que envolvem componentes incluídos. Se e como a tag de decoração é renderizada é definida pela combinação de dois fatores, nos quais essa página se aprofundará:
 
@@ -43,9 +43,9 @@ As seguintes propriedades e nós podem ser aplicados aos componentes para contro
 
 * Nó **`cq:htmlTag`:** Este nó pode ser adicionado em um componente e pode ter as seguintes propriedades:
 
-   * **`cq:tagName {String}`:** Isso pode ser usado para especificar uma marca de HTML personalizada a ser usada para envolver os componentes em vez do elemento DIV padrão.
-   * **`class {String}`:** Pode ser usado para especificar nomes de classe css a serem adicionados ao invólucro.
-   * Outros nomes de propriedades serão adicionados como atributos de HTML com o mesmo valor de string fornecido.
+  * **`cq:tagName {String}`:** Pode ser usado para especificar uma marca HTML personalizada para ser usada para envolver os componentes em vez do elemento DIV padrão.
+  * **`class {String}`:** Pode ser usado para especificar nomes de classe css a serem adicionados ao invólucro.
+  * Outros nomes de propriedades serão adicionados como atributos do HTML com o mesmo valor de string fornecido.
 
 ## Controles de script {#script-controls}
 
@@ -142,10 +142,10 @@ Saída resultante `/content/test.html`:
 
 ## JSP {#jsp}
 
-Ao incluir um componente usando `cq:includ`e ou `sling:include`, o comportamento padrão no AEM é usar uma DIV para envolver o elemento. No entanto, essa embalagem pode ser personalizada de duas maneiras:
+Ao incluir um componente usando `cq:includ`e ou `sling:include`, o comportamento padrão no AEM é usar um DIV para envolver o elemento. No entanto, essa embalagem pode ser personalizada de duas maneiras:
 
-* Diga explicitamente ao AEM para não envolver o componente usando `cq:noDecoration`.
-* Use uma tag HTML personalizada para envolver o componente usando `cq:htmlTag`/ `cq:tagName` ou `decorationTagName`.
+* Diga explicitamente ao AEM para não empacotar o componente usando `cq:noDecoration`.
+* Use uma marca HTML personalizada para envolver o componente usando `cq:htmlTag`/ `cq:tagName` ou `decorationTagName`.
 
 ### Árvore de decisão {#decision-tree-1}
 

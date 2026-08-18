@@ -12,7 +12,7 @@ feature: Compliance
 role: Admin,Developer,Leader
 source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '6926'
+source-wordcount: '7022'
 ht-degree: 0%
 
 ---
@@ -358,10 +358,10 @@ Quaisquer personalizações e/ou hotfixes aplicados devem ser documentados, pois
 * O AEM pode ser altamente personalizado para atender às necessidades da empresa. Qualquer personalização que possa afetar o upgrade deve ser totalmente documentada. Por exemplo, qualquer alteração importante na interface do usuário (UI) do AEM.
 * Todas as atualizações necessárias para a solução atual devem ser totalmente documentadas; elas podem incluir:
 
-   * Cumulative Fix Packs (CFP)
-   * service packs (SP)
-   * hotfixes
-   * atualizações
+  * Cumulative Fix Packs (CFP)
+  * service packs (SP)
+  * hotfixes
+  * atualizações
 
 ### Relatório de teste de aceitação diária do usuário {#daily-user-acceptance-test-report}
 

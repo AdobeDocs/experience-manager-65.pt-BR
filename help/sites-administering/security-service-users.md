@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
-source-wordcount: '1737'
+source-wordcount: '1802'
 ht-degree: 0%
 
 ---
@@ -41,31 +41,31 @@ Muitos problemas podem ser resolvidos reestruturando o conteúdo. Lembre-se dess
 
 * **Alterar controle de acesso**
 
-   * Certifique-se de que os usuários ou grupos que realmente precisam de acesso tenham acesso;
+  * Certifique-se de que os usuários ou grupos que realmente precisam de acesso tenham acesso;
 
 * **Refinar estrutura de conteúdo**
 
-   * Movê-lo para outros locais, por exemplo, onde o controle de acesso corresponde às sessões de solicitação disponíveis;
-   * Alterar a granularidade do conteúdo;
+  * Movê-lo para outros locais, por exemplo, onde o controle de acesso corresponde às sessões de solicitação disponíveis;
+  * Alterar a granularidade do conteúdo;
 
 * **Refatorar seu código para que seja um serviço adequado**
 
-   * Mova a lógica de negócios do código JSP para o serviço. Isso permite modelagem de conteúdo diferente.
+  * Mova a lógica de negócios do código JSP para o serviço. Isso permite modelagem de conteúdo diferente.
 
 Além disso, verifique se os novos recursos desenvolvidos seguem estes princípios:
 
 * **Os requisitos de segurança devem orientar a estrutura do conteúdo**
 
-   * O gerenciamento do controle de acesso deve parecer natural
-   * O controle de acesso deve ser aplicado pelo repositório, não pelo aplicativo
+  * O gerenciamento do controle de acesso deve parecer natural
+  * O controle de acesso deve ser aplicado pelo repositório, não pelo aplicativo
 
 * **Usar tipos de nós**
 
-   * Restringir o conjunto de propriedades que podem ser definidas
+  * Restringir o conjunto de propriedades que podem ser definidas
 
 * **Respeitar configurações de privacidade**
 
-   * Se houver perfis privados, um exemplo seria não expor a imagem do perfil, o email ou o nome completo encontrado no nó `/profile` privado.
+  * Se houver perfis privados, um exemplo seria não expor a imagem do perfil, o email ou o nome completo encontrado no nó `/profile` privado.
 
 ## Controle de acesso estrito {#strict-access-control}
 
@@ -78,7 +78,7 @@ Se você aplicar o controle de acesso ao reestruturar o conteúdo ou quando o fi
 * Aplicar ACLs para tipos de nó
 * Limitar permissões
 
-   * por exemplo, quando precisar apenas gravar propriedades, não dê a permissão `jcr:write`; use `jcr:modifyProperties`
+  * por exemplo, quando precisar apenas gravar propriedades, não dê a permissão `jcr:write`; use `jcr:modifyProperties`
 
 ## Usuários e Mapeamentos do Serviço {#service-users-and-mappings}
 
@@ -97,7 +97,7 @@ Os métodos retornam um resolvedor de sessão/recurso com os privilégios soment
 * `service-id` está mapeado para um resolvedor de recursos e/ou ID de usuário do repositório JCR para autenticação
 * `service-name` é o nome simbólico do pacote que fornece o serviço
 
-## Outro Recommendations {#other-recommendations}
+## Outras recomendações {#other-recommendations}
 
 ### Substituição da sessão de administrador por um usuário de serviço {#replacing-the-admin-session-with-a-service-user}
 
@@ -118,7 +118,7 @@ Para substituir a sessão de administrador por um usuário de serviço, execute 
 
 ## Criação de um usuário de serviço {#creating-a-new-service-user}
 
-Depois de verificar que nenhum usuário na lista de usuários do serviço AEM se aplica ao seu caso de uso e que os problemas de RTC correspondentes foram aprovados, adicione o novo usuário ao conteúdo padrão.
+Depois de verificar que nenhum usuário na lista de usuários de serviço do AEM é aplicável ao seu caso de uso e que os problemas de RTC correspondentes foram aprovados, adicione o novo usuário ao conteúdo padrão.
 
 A abordagem recomendada é criar um usuário de serviço para usar o explorador de repositório em *https://&lt;server>:&lt;port>/crx/explorer/index.jsp*
 
@@ -248,4 +248,4 @@ Para corrigir esses problemas, é recomendável usar as mesmas abordagens mencio
 
 ## Processadores Sling POST e páginas excluídas {#sling-post-processors-and-deleted-pages}
 
-Há algumas sessões administrativas usadas em implementações do processador sling POST. Normalmente, as sessões administrativas são usadas para acessar nós com exclusão pendente no POST que está sendo processado. Em consequência, eles não estarão mais disponíveis por meio da sessão de solicitação. Uma exclusão pendente de um nó pode ser acessada para divulgar metadados que, de outra forma, não deveriam estar acessíveis.
+Há algumas sessões administrativas usadas em implementações do processador Sling POST. Normalmente, as sessões administrativas são usadas para acessar nós com exclusão pendente no POST que está sendo processado. Em consequência, eles não estarão mais disponíveis por meio da sessão de solicitação. Uma exclusão pendente de um nó pode ser acessada para divulgar metadados que, de outra forma, não deveriam estar acessíveis.

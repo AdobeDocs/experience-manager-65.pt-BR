@@ -30,9 +30,9 @@ A página Insight de conteúdo inclui relatórios que usam dados do Adobe SiteCa
 
 * SiteCatalyst: estão disponíveis relatórios para as seguintes métricas:
 
-   * Exibições da página
-   * Tempo médio gasto na página
-   * Fontes
+  * Visualizações da página
+  * Tempo médio gasto na página
+  * Fontes
 
 * Target: relatórios sobre as atividades de campanha para as quais a página inclui ofertas.
 * BrightEdge: Relatórios sobre os recursos da página que melhoram a visibilidade da página para os mecanismos de pesquisa e recomenda os recursos que devem ser implementados.
@@ -62,8 +62,8 @@ O relatório Exibições inclui os seguintes recursos para avaliar o tráfego da
 * O número total de exibições de uma página para o período do relatório.
 * Um gráfico do número de exibições no período do relatório:
 
-   * Total de visualizações.
-   * Visitantes únicos.
+  * Total de visualizações.
+  * Visitantes únicos.
 
 ![chlimage_1-312](assets/chlimage_1-312.png)
 

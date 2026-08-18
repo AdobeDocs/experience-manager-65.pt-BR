@@ -11,8 +11,8 @@ feature: Administering
 role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
-source-wordcount: '439'
-ht-degree: 4%
+source-wordcount: '454'
+ht-degree: 13%
 
 ---
 
@@ -37,7 +37,7 @@ Os documentos específicos são descritos e vinculados nas tabelas seguintes.
 
 ## Oak {#oak}
 
-[O Oak](/help/sites-deploying/platform.md) é um repositório de conteúdo hierárquico escalável e eficiente que é a base do AEM.
+O [Oak](/help/sites-deploying/platform.md) é um repositório de conteúdo hierárquico escalável e eficiente que é a base do AEM.
 
 <table>
  <tbody>
@@ -81,9 +81,9 @@ O AEM Communities simplifica a criação e o gerenciamento de comunidades no loc
 
 As práticas recomendadas para a interface do usuário são descritas aqui:
 
-[Interface do usuário do Recommendations para clientes](/help/sites-deploying/ui-recommendations.md)
+[Recomendações da interface do usuário para clientes](/help/sites-deploying/ui-recommendations.md)
 
-Atualmente, o AEM tem duas interfaces do usuário: clássica e interface otimizada para toque na mesma versão. Portanto, os clientes têm de tomar uma decisão sobre qual usar durante a implementação do projeto. Este documento tem como objetivo ajudar a encontrar a escolha certa.
+Atualmente, o AEM tem duas interfaces do usuário: clássica e otimizada para toque na mesma versão. Portanto, os clientes têm de tomar uma decisão sobre qual usar durante a implementação do projeto. Este documento tem como objetivo ajudar a encontrar a escolha certa.
 
 ## Desempenho {#performance}
 
@@ -92,8 +92,8 @@ As práticas recomendadas para o desempenho estão listadas aqui:
 <table>
  <tbody>
   <tr>
-   <td>Práticas recomendadas para controle de qualidade</td>
-   <td><a href="/help/sites-deploying/configuring-performance.md#best-practices-for-quality-assurance">Práticas recomendadas para controle de qualidade</a></td>
+   <td>Práticas recomendadas para o Quality Assurance</td>
+   <td><a href="/help/sites-deploying/configuring-performance.md#best-practices-for-quality-assurance">Práticas recomendadas para o Quality Assurance</a></td>
    <td>Uma visão geral padronizada dos problemas envolvidos na definição de um Conceito de Teste especificamente para testes de desempenho no seu ambiente <em>publicar</em>. Isso é de interesse principalmente para engenheiros de controle de qualidade, gerentes de projeto e administradores de sistema.</td>
   </tr>
   <tr>
@@ -109,7 +109,7 @@ As práticas recomendadas para o desempenho estão listadas aqui:
   <tr>
    <td>Teste de desempenho</td>
    <td><a href="/help/sites-deploying/best-practices-for-performance-testing.md">Práticas recomendadas para testes de desempenho</a></td>
-   <td>Descreve as práticas recomendadas para execução de testes de desempenho em uma implantação do AEM.<br /> </td>
+   <td>Descreve as práticas recomendadas para executar testes de desempenho em uma implantação do AEM.<br /> </td>
   </tr>
  </tbody>
 </table>

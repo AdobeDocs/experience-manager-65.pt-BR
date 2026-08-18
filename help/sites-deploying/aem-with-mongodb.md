@@ -12,7 +12,7 @@ feature: Deploying
 role: Admin
 source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
 workflow-type: tm+mt
-source-wordcount: '6216'
+source-wordcount: '6584'
 ht-degree: 0%
 
 ---
@@ -244,8 +244,8 @@ O MongoDB é executado em vários sistemas operacionais, incluindo uma grande va
 * Desative as páginas de abraços transparentes e desfragmente. Consulte [Configurações de páginas grandes transparentes](https://docs.mongodb.com/manual/tutorial/transparent-huge-pages/) para obter mais informações.
 * [Ajuste as configurações de leitura antecipada](https://docs.mongodb.com/manual/administration/production-notes/#readahead) nos dispositivos que armazenam seus arquivos de banco de dados, de forma que você se ajuste ao seu caso de uso.
 
-   * Para o mecanismo de armazenamento MMAPv1, se o seu conjunto de trabalho for maior que a RAM disponível e o padrão de acesso a documentos for aleatório, considere diminuir a leitura antecipada para 32 ou 16. Avalie configurações diferentes para que você possa encontrar um valor ideal que maximize a memória residente e reduza o número de falhas da página.
-   * Para o mecanismo de armazenamento WiredTiger, defina readahead como 0, independentemente do tipo de mídia de armazenamento (rotação, SSD e assim por diante). Em geral, use a configuração recomendada de leitura antecipada, a menos que os testes mostrem um benefício mensurável, repetível e confiável em um valor de leitura antecipada mais alto. O [Suporte ao MongoDB Professional](https://docs.mongodb.com/manual/administration/production-notes/#readahead) pode fornecer conselhos e orientação sobre configurações de leitura antecipada diferentes de zero.
+  * Para o mecanismo de armazenamento MMAPv1, se o seu conjunto de trabalho for maior que a RAM disponível e o padrão de acesso a documentos for aleatório, considere diminuir a leitura antecipada para 32 ou 16. Avalie configurações diferentes para que você possa encontrar um valor ideal que maximize a memória residente e reduza o número de falhas da página.
+  * Para o mecanismo de armazenamento WiredTiger, defina readahead como 0, independentemente do tipo de mídia de armazenamento (rotação, SSD e assim por diante). Em geral, use a configuração recomendada de leitura antecipada, a menos que os testes mostrem um benefício mensurável, repetível e confiável em um valor de leitura antecipada mais alto. O [Suporte ao MongoDB Professional](https://docs.mongodb.com/manual/administration/production-notes/#readahead) pode fornecer conselhos e orientação sobre configurações de leitura antecipada diferentes de zero.
 
 * Desative a ferramenta ajustada se estiver executando o RHEL 7/CentOS 7 em um ambiente virtual.
 * Quando o RHEL 7/CentOS 7 é executado em um ambiente virtual, a ferramenta ajustada chama automaticamente um perfil de desempenho derivado da taxa de transferência de desempenho, que define automaticamente as configurações de leitura antecipada para 4 MB. Essa configuração pode afetar negativamente o desempenho.
@@ -258,12 +258,12 @@ O MongoDB é executado em vários sistemas operacionais, incluindo uma grande va
 * Use noatime para o ponto de montagem [dbPath](https://docs.mongodb.com/manual/reference/configuration-options/#storage.dbPath).
 * Configure manipuladores de arquivos suficientes (fs.file-max), limite de pid do kernel (kernel.pid_max) e máximo de threads por processo (kernel.threads-max) para sua implantação. Para sistemas grandes, os seguintes valores fornecem um bom ponto de partida:
 
-   * fs.file-max de 98.000,
-   * valor kernel.pid_max de 64000,
-   * andkernel.threads-valor máximo de 64000
+  * fs.file-max de 98.000,
+  * valor kernel.pid_max de 64000,
+  * andkernel.threads-valor máximo de 64000
 
 * Verifique se o sistema tem o espaço de troca configurado. Consulte a documentação do seu sistema operacional para obter detalhes sobre o dimensionamento apropriado.
-* Verifique se o keepalive de TCP padrão do sistema está definido corretamente. Um valor de 300 geralmente oferece melhor desempenho para conjuntos de réplicas e clusters fragmentados. Consulte: [O tempo de manutenção de atividade TCP afeta as implantações do MongoDB?](https://docs.mongodb.com/manual/faq/diagnostics/#faq-keepalive) nas Perguntas Frequentes para obter mais informações.
+* Verifique se o keepalive de TCP padrão do sistema está definido corretamente. Um valor de 300 geralmente oferece melhor desempenho para conjuntos de réplicas e clusters fragmentados. Consulte: [O tempo de manutenção de atividade TCP afeta as implantações do MongoDB?](https://docs.mongodb.com/manual/faq/diagnostics/#faq-keepalive) nas Perguntas frequentes para obter mais informações.
 
 #### Windows {#windows}
 
@@ -607,7 +607,7 @@ Recomenda-se que as conexões aderentes sejam ativadas para todas as camadas int
 
 #### Expira por muito tempo {#long-expires}
 
-Por padrão, o conteúdo enviado de um Dispatcher do AEM tem cabeçalhos Last-Modified e Etag, sem nenhuma indicação da expiração do conteúdo. Esse fluxo garante que a interface do usuário sempre obtenha a versão mais recente do recurso. Também significa que o navegador executa uma operação do GET para ver se o recurso foi alterado. Como resultado, pode resultar em várias solicitações às quais a resposta HTTP é 304 (Não modificado), dependendo do carregamento da página. Para recursos que não expiram, definir um cabeçalho Expira e remover os cabeçalhos Última modificação e ETag fazem com que o conteúdo seja armazenado em cache. Além disso, não é feita mais nenhuma solicitação de atualização até que a data no cabeçalho Expira seja atendida.
+Por padrão, o conteúdo enviado de um Dispatcher do AEM tem cabeçalhos Last-Modified e Etag, sem nenhuma indicação da expiração do conteúdo. Esse fluxo garante que a interface do usuário sempre obtenha a versão mais recente do recurso. Também significa que o navegador executa uma operação GET para ver se o recurso foi alterado. Como resultado, pode resultar em várias solicitações às quais a resposta HTTP é 304 (Não modificado), dependendo do carregamento da página. Para recursos que não expiram, definir um cabeçalho Expira e remover os cabeçalhos Última modificação e ETag fazem com que o conteúdo seja armazenado em cache. Além disso, não é feita mais nenhuma solicitação de atualização até que a data no cabeçalho Expira seja atendida.
 
 No entanto, usar esse método significa que não há uma maneira razoável de fazer com que o recurso expire no navegador antes que o cabeçalho Expire expire. Para mitigar esse fluxo de trabalho, o HtmlClientLibraryManager pode ser configurado para usar URLs imutáveis para bibliotecas de clientes.
 
