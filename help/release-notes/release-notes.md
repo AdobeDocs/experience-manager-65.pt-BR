@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 87e11d37b9aa14ee3d4e47ae30eaa25f151a9b5b
+source-git-commit: 4a2915dc890887ad8c7174d3ef5f1de8413fd8f4
 workflow-type: tm+mt
-source-wordcount: '7373'
+source-wordcount: '7412'
 ht-degree: 4%
 
 ---
@@ -55,9 +55,9 @@ Os fragmentos de conteúdo e a API do GraphQL também recebem melhorias de confi
 * [Detalhes do nível de formulário nos logs de transação do JEE](/help/forms/using/transaction-report-overview-jee.md#form-level-details-transaction-log-jee): o AEM Forms no JEE agora registra detalhes do nível de formulário em `transaction_log.log` para cada transação, além de informações existentes sobre serviço e operação. Os administradores podem correlacionar dados de relatórios de transações com formulários específicos ao analisar envios, representações e conversões. (FORMS-21574)
 
 * [Matriz de Plataforma com Suporte Atualizada](/help/forms/using/aem-forms-jee-supported-platforms.md): o AEM Forms no JEE Service Pack 6.5.25.0 adiciona suporte para compatibilidade com as seguintes tecnologias mais recentes:
-   * JBoss® Enterprise Application Platform (EAP) 7.4.23
-   * Cliente do gerenciador de conteúdo IBM® 8.7
-   * AEM Forms Designer no Terminal Server 2025 do Microsoft® Windows
+  * JBoss® Enterprise Application Platform (EAP) 7.4.23
+  * Cliente do gerenciador de conteúdo IBM® 8.7
+  * AEM Forms Designer no Terminal Server 2025 do Microsoft® Windows
 
   >[!NOTE]
   >
@@ -537,13 +537,13 @@ A partir do Service Pack 13 e superior, o seguinte log de erros começou a apare
 
   Para resolver essa exceção, faça o seguinte:
 
-   1. Excluir as duas pastas a seguir de `crx-quickstart/repository/`
+  1. Excluir as duas pastas a seguir de `crx-quickstart/repository/`
 
-      * `cache`
-      * `diff-cache`
+     * `cache`
+     * `diff-cache`
 
-   1. Instale o Service Pack ou reinicie o Experience Manager as a Cloud Service.
-Novas pastas de `cache` e `diff-cache` são criadas automaticamente e você não tem mais uma exceção relacionada a `mvstore` em `error.log`.
+  1. Instale o Service Pack ou reinicie o Experience Manager as a Cloud Service.
+     Novas pastas de `cache` e `diff-cache` são criadas automaticamente e você não tem mais uma exceção relacionada a `mvstore` em `error.log`.
 
 * Atualize suas consultas do GraphQL que podem ter usado um nome de API personalizado para seu modelo de conteúdo para usar o nome padrão do modelo de conteúdo.
 
@@ -551,17 +551,17 @@ Novas pastas de `cache` e `diff-cache` são criadas automaticamente e você não
 
   Para corrigir o problema, `damAssetLucene` deve ser configurado para incluir as duas propriedades a seguir em `/indexRules/dam:Asset/properties`:
 
-   * `contentFragment`
-      * `jcr:primaryType="nt:unstructured"`
-      * `name="jcr:content/contentFragment"`
-      * `propertyIndex="{Boolean}true"`
-      * `type="Boolean"`
-   * `model`
-      * `jcr:primaryType="nt:unstructured"`
-      * `name="jcr:content/data/cq:model"`
-      * `ordered="{Boolean}true"`
-      * `propertyIndex="{Boolean}true"`
-      * `type="String"`
+  * `contentFragment`
+    * `jcr:primaryType="nt:unstructured"`
+    * `name="jcr:content/contentFragment"`
+    * `propertyIndex="{Boolean}true"`
+    * `type="Boolean"`
+  * `model`
+    * `jcr:primaryType="nt:unstructured"`
+    * `name="jcr:content/data/cq:model"`
+    * `ordered="{Boolean}true"`
+    * `propertyIndex="{Boolean}true"`
+    * `type="String"`
 
   Após alterar a definição do índice, é necessária uma reindexação (`reindex` = `true`).
 
@@ -582,12 +582,12 @@ Para garantir a operação correta, você deve adicionar as seguintes propriedad
 * Os usuários podem renomear uma pasta em uma hierarquia no [!DNL Assets] e publicar uma pasta aninhada no [!DNL Brand Portal]. No entanto, o título da pasta não é atualizado em [!DNL Brand Portal] até que a pasta raiz seja republicada.
 
 * Os seguintes erros e mensagens de aviso podem ser exibidos durante a instalação do [!DNL Experience Manager] 6.5.x.x:
-   * &quot;Quando a integração do Adobe Target é configurada no [!DNL Experience Manager] usando a API do Target Standard (autenticação IMS), a exportação dos Fragmentos de experiência para o Target resulta na criação de tipos de ofertas incorretos. Em vez do tipo &quot;Fragmento de experiência&quot;/origem &quot;Adobe Experience Manager&quot;, o Target cria várias ofertas com o tipo &quot;HTML&quot;/origem &quot;Adobe Target Classic&quot;.
-   * `com.adobe.granite.maintenance.impl.TaskScheduler`: Nenhuma janela de manutenção encontrada em `granite/operations/maintenance`.
-   * A validação do lado do servidor do Formulário adaptável falha quando funções agregadas como SUM, MAX e MIN são usadas (CQ-4274424).
-   * `com.adobe.granite.maintenance.impl.TaskScheduler` : Nenhuma janela de manutenção encontrada em `granite/operations/maintenance`.
-   * O ponto de acesso em uma imagem interativa do Dynamic Media não é visível ao visualizar o ativo por meio do visualizador de banner de compra.
-   * `com.adobe.cq.social.cq-social-jcr-provider bundle com.adobe.cq.social.cq-social-jcr-provider:1.3.5 (395)[com.adobe.cq.social.provider.jcr.impl.SpiSocialJcrResourceProviderImpl(2302)]` : Tempo limite atingido ao aguardar a conclusão da alteração de registro não registrada.
+  * &quot;Quando a integração do Adobe Target é configurada no [!DNL Experience Manager] usando a API do Target Standard (autenticação IMS), a exportação dos Fragmentos de experiência para o Target resulta na criação de tipos de ofertas incorretos. Em vez do tipo &quot;Fragmento de experiência&quot;/origem &quot;Adobe Experience Manager&quot;, o Target cria várias ofertas com o tipo &quot;HTML&quot;/origem &quot;Adobe Target Classic&quot;.
+  * `com.adobe.granite.maintenance.impl.TaskScheduler`: Nenhuma janela de manutenção encontrada em `granite/operations/maintenance`.
+  * A validação do lado do servidor do Formulário adaptável falha quando funções agregadas como SUM, MAX e MIN são usadas (CQ-4274424).
+  * `com.adobe.granite.maintenance.impl.TaskScheduler` : Nenhuma janela de manutenção encontrada em `granite/operations/maintenance`.
+  * O ponto de acesso em uma imagem interativa do Dynamic Media não é visível ao visualizar o ativo por meio do visualizador de banner de compra.
+  * `com.adobe.cq.social.cq-social-jcr-provider bundle com.adobe.cq.social.cq-social-jcr-provider:1.3.5 (395)[com.adobe.cq.social.provider.jcr.impl.SpiSocialJcrResourceProviderImpl(2302)]` : Tempo limite atingido ao aguardar a conclusão da alteração de registro não registrada.
 
 * A partir do AEM 6.5.15, o Mecanismo Rhino JavaScript fornecido pelo pacote `org.apache.servicemix.bundles.rhino` tem um novo comportamento de elevação. Os scripts que usam o modo estrito (`use strict;`) devem declarar suas variáveis corretas. Caso contrário, eles não serão executados e acabarão gerando um erro de tempo de execução.
 
@@ -595,7 +595,7 @@ Para garantir a operação correta, você deve adicionar as seguintes propriedad
 
 ### Problema conhecido do AEM Sites {#known-issues-aem-sites-6525}
 
-A visualização dos fragmentos de conteúdo falha devido à proteção do DoS para uma grande árvore de fragmentos. Consulte o artigo [KB sobre as opções de configuração padrão do GraphQL Query Executor](https://experienceleague.adobe.com/pt-br/docs/experience-cloud-kcs/kbarticles/ka-23945) (SITES-17934)
+A visualização dos fragmentos de conteúdo falha devido à proteção do DoS para uma grande árvore de fragmentos. Consulte o artigo [KB sobre as opções de configuração padrão do GraphQL Query Executor](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-23945) (SITES-17934)
 
 ### Problemas conhecidos do AEM Forms {#known-issues-aem-forms-6525}
 
@@ -606,16 +606,15 @@ A visualização dos fragmentos de conteúdo falha devido à proteção do DoS p
 Os seguintes problemas têm uma correção disponível para download e instalação. Você pode [baixar e instalar o Hotfix](/help/release-notes/aem-forms-hotfix.md) para resolver estes problemas:
 
 * **NPR-44100** Depois de instalar o AEM 6.5 Service Pack 25 em implantações WAR/JEE (incluindo AEM Forms em JEE), o pacote `com.adobe.cq.screens.sessions` permanece no estado Instalado e nunca se torna Ativo. Para resolver esse problema, [baixe e instale o hotfix](/help/release-notes/aem-forms-hotfix.md) para o AEM Service Pack 6.5.25.0.
+* **FORMS-23491** As implantações do AEM Forms 6.5.24.0 JEE (JBoss, WebLogic, WebSphere) são afetadas pelo CVE-2025-64775, uma vulnerabilidade de negação de serviço do Apache Struts no processamento de solicitações de várias partes. Para resolver esse problema, [baixe e instale o hotfix](/help/release-notes/aem-forms-hotfix.md) para o AEM Service Pack 6.5.24.0.
 * **FORMS-14926** Depois de instalar o AEM Forms JEE Service Pack 21 (6.5.21.0), se você encontrar entradas duplicadas de Geode jars `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)` na pasta `<AEM_Forms_Installation>/lib/caching/lib`, execute as seguintes etapas para resolver o problema:
 
-   1. Pare os localizadores, se eles estiverem em execução.
-   2. Pare o servidor do AEM.
-   3. Vá para o `<AEM_Forms_Installation>/lib/caching/lib`.
-   4. Remova todos os arquivos de correção Geode, exceto `geode-*-1.15.1.2.jar`. Confirme se apenas os jars Geode com `version 1.15.1.2` estão presentes.
-   5. Abra o prompt de comando no modo de administrador.
-   6. Instale o patch Geode usando o arquivo `geode-*-1.15.1.2.jar`.
-
-   * O AEM Forms agora inclui uma atualização da versão do Struts 2.5.33 para 6.x para o componente de formulários. Essa atualização fornece alterações do Struts que não foram incluídas no SP24. O suporte foi adicionado por meio de um [Hotfix](/help/release-notes/aem-forms-hotfix.md) que você pode baixar e instalar para adicionar suporte à versão mais recente do Struts.
+  1. Pare os localizadores, se eles estiverem em execução.
+  2. Pare o servidor do AEM.
+  3. Vá para o `<AEM_Forms_Installation>/lib/caching/lib`.
+  4. Remova todos os arquivos de correção Geode, exceto `geode-*-1.15.1.2.jar`. Confirme se apenas os jars Geode com `version 1.15.1.2` estão presentes.
+  5. Abra o prompt de comando no modo de administrador.
+  6. Instale o patch Geode usando o arquivo `geode-*-1.15.1.2.jar`.
 
 ## Pacotes da OSGi e pacotes de conteúdo inclusos{#osgi-bundles-and-content-packages-included}
 
@@ -631,12 +630,12 @@ Os arquivos zip a seguir contêm os documentos de texto que listam os pacotes OS
 Esses sites estão disponíveis somente para clientes do. Se você for cliente e precisar de acesso, entre em contato com o seu gerente de conta da Adobe.
 
 * [Download do produto em licensing.adobe.com](https://licensing.adobe.com/)
-* [Fale com o suporte ao cliente da Adobe](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#).
+* [Fale com o suporte ao cliente da Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#).
 
 >[!MORELIKETHIS]
 >
 >* [[!DNL Experience Manager] página do produto](https://business.adobe.com/br/products/experience-manager/adobe-experience-manager.html)
->* [[!DNL Experience Manager] Documentação do 6.5](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65)
+>* [[!DNL Experience Manager] Documentação do 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65)
 >* [Inscreva-se para obter atualizações de produto prioritárias da Adobe](https://www.adobe.com/subscription/priority-product-update.html)
 
 
