@@ -301,7 +301,7 @@ Para copiar o material principal do Autor para todas as outras instâncias, é n
 
 >[!CAUTION]
 >
->Se outro recurso de segurança já tiver sido configurado com base nas chaves de criptografia, a replicação dessas chaves poderá danificar a configuração. Para obter ajuda, [entre em contato com o atendimento ao cliente](https://experienceleague.adobe.com/?support-solution=General&support-tab=home#support).
+>Se outro recurso de segurança já tiver sido configurado com base nas chaves de criptografia, a replicação dessas chaves poderá danificar a configuração. Para obter ajuda, [entre em contato com o atendimento ao cliente](https://experienceleague.adobe.com/pt-br?support-solution=General&support-tab=home#support).
 
 #### Replicação do repositório {#repository-replication}
 
@@ -366,7 +366,7 @@ Em particular, tenha cuidado para usar o nome de servidor correto, não `localho
 Se estiver usando uma Dispatcher, consulte:
 
 * Documentação do AEM [Dispatcher](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates)
-* [Instalação do Dispatcher](https://experienceleague.adobe.com/en/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install)
+* [Instalação do Dispatcher](https://experienceleague.adobe.com/pt-br/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install)
 * [Configuração do Dispatcher para comunidades](/help/communities/dispatcher.md)
 * [Problemas conhecidos](/help/communities/troubleshooting.md#dispatcher-refetch-fails)
 
