@@ -12,7 +12,7 @@ feature: Authoring
 role: User
 source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '569'
+source-wordcount: '586'
 ht-degree: 0%
 
 ---
@@ -69,19 +69,19 @@ Para assinar notificações:
 
 1. Selecione o canal de notificação:
 
-   * **Caixa de entrada**: as notificações são exibidas na Caixa de Entrada AEM.
+   * **Caixa de entrada**: as notificações são exibidas em sua Caixa de entrada do AEM.
    * **Email**: as notificações são enviadas por email para o endereço de email definido em seu perfil de usuário.
 
    >[!NOTE]
    >
-   >Algumas configurações devem ser definidas para serem notificadas por email. Também é possível personalizar o template de email ou adicionar um template de email para um novo idioma. Consulte [Configurando Notificação por Email](/help/sites-administering/notification.md#configuringemailnotification) para configurar notificações por email no AEM.
+   >Algumas configurações devem ser definidas para serem notificadas por email. Também é possível personalizar o template de email ou adicionar um template de email para um novo idioma. Consulte [Configurar notificação por email](/help/sites-administering/notification.md#configuringemailnotification) para configurar notificações por email no AEM.
 
 1. Selecione as ações de página para as quais deseja ser notificado:
 
    * Ativado: quando uma página é ativada.
    * Desativado: quando uma página é desativada.
    * Excluída (sindicalização): quando uma página é excluída-replicada, ou seja, quando uma ação de exclusão executada em uma página é replicada.
-Quando uma página é excluída ou movida, uma ação de exclusão é automaticamente replicada: a página é excluída na instância de origem em que a ação de exclusão foi executada e na instância de destino definida pelos agentes de replicação.
+     Quando uma página é excluída ou movida, uma ação de exclusão é automaticamente replicada: a página é excluída na instância de origem em que a ação de exclusão foi executada e na instância de destino definida pelos agentes de replicação.
 
    * Modificado: quando uma página é modificada.
    * Criado: quando uma página é criada.
@@ -93,8 +93,8 @@ Quando uma página é excluída ou movida, uma ação de exclusão é automatica
    * Clique em **Adicionar** para adicionar uma nova linha à tabela.
    * Clique na célula da tabela **Caminho** e insira o caminho, por exemplo, `/content/docs`.
 
-   * Para ser notificado de todas as páginas pertencentes à subárvore, defina **Exato?** a **Não**.
-Para ser notificado somente para ações na página definida pelo caminho, defina **Exato?** a **Sim**.
+   * Para ser notificado de todas as páginas pertencentes à subárvore, defina **Exato?** para **Não**.
+     Para ser notificado somente para ações na página definida pelo caminho, defina **Exato?** para **Sim**.
 
    * Para permitir a regra, defina **Regra** como **Permitir**. Se definida como **Negar**, a regra será negada, mas não removida, e poderá ser permitida posteriormente.
 

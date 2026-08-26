@@ -1,6 +1,6 @@
 ---
 title: Descarregamento de trabalhos
-description: Saiba como configurar e usar instâncias de AEM em uma topologia para executar tipos específicos de processamento.
+description: Saiba como configurar e usar instâncias do AEM em uma topologia para executar tipos específicos de processamento.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '2318'
+source-wordcount: '2386'
 ht-degree: 1%
 
 ---
@@ -20,9 +20,9 @@ ht-degree: 1%
 
 ## Introdução {#introduction}
 
-A descarga distribui tarefas de processamento entre instâncias de Experience Manager em uma topologia. Com a descarga, você pode usar instâncias de Experience Manager específicas para executar tipos específicos de processamento. O processamento especializado permite maximizar o uso dos recursos disponíveis do servidor.
+A descarga distribui tarefas de processamento entre instâncias do Experience Manager em uma topologia. Com a descarga do, é possível usar instâncias específicas do Experience Manager para executar tipos específicos de processamento. O processamento especializado permite maximizar o uso dos recursos disponíveis do servidor.
 
-O descarregamento é baseado nos recursos do [Apache Sling Discovery](https://sling.apache.org/documentation/bundles/discovery-api-and-impl.html) e Sling JobManager. Para usar a descarga, você adiciona clusters de Experience Manager a uma topologia e identifica os tópicos de trabalho que o cluster processa. Os clusters são compostos de uma ou mais instâncias de Experience Manager, de modo que uma única instância é considerada um cluster.
+O descarregamento é baseado nos recursos do [Apache Sling Discovery](https://sling.apache.org/documentation/bundles/discovery-api-and-impl.html) e Sling JobManager. Para usar a descarga, você adiciona clusters Experience Manager a uma topologia e identifica os tópicos de trabalho que o cluster processa. Os clusters são compostos de uma ou mais instâncias do Experience Manager, de modo que uma única instância é considerada um cluster.
 
 Para obter informações sobre como adicionar instâncias a uma topologia, consulte [Administrando Topologias](/help/sites-deploying/offloading.md#administering-topologies).
 
@@ -33,7 +33,7 @@ O Sling JobManager e o JobConsumer permitem a criação de trabalhos processados
 * JobManager: um serviço que cria processos para tópicos específicos.
 * JobConsumer: um serviço que executa processos de um ou mais tópicos. Vários serviços JobConsumer podem ser registrados para o mesmo tópico.
 
-Quando o JobManager cria um job, a estrutura de Descarregamento seleciona um cluster de Experience Manager na topologia para executar o job:
+Quando o JobManager cria um job, a estrutura de Descarregamento seleciona um cluster Experience Manager na topologia para executar o job:
 
 * O cluster deve incluir uma ou mais instâncias que estejam executando um JobConsumer registrado para o tópico de trabalho.
 * O tópico deve ser ativado para pelo menos uma instância no cluster.
@@ -52,7 +52,7 @@ Após a criação de um trabalho, é garantido que a carga esteja localizada ape
 
 ## Administração de topologias {#administering-topologies}
 
-As topologias são clusters de Experience Manager livremente acoplados que estão participando da descarga. Um cluster consiste em uma ou mais instâncias do servidor Experience Manager (uma única instância é considerada um cluster).
+As topologias são clusters do Experience Manager livremente acoplados que estão participando da descarga. Um cluster consiste em uma ou mais instâncias de servidor do Experience Manager (uma única instância é considerada um cluster).
 
 Cada instância do Experience Manager executa os seguintes serviços relacionados à descarga:
 
@@ -67,7 +67,7 @@ Cada cluster na topologia contém uma instância reconhecida como líder. O líd
 
 ### Exibindo a Topologia {#viewing-the-topology}
 
-Use o Navegador de Topologia para explorar o estado da topologia em que a instância Experience Manager está participando. O Navegador de Topologia mostra os clusters e as instâncias da topologia.
+Use o Navegador de Topologia para explorar o estado da topologia em que a instância do Experience Manager está participando. O Navegador de Topologia mostra os clusters e as instâncias da topologia.
 
 Para cada cluster, você verá uma lista de membros do cluster que indica a ordem em que cada membro se associou ao cluster e qual membro é o Líder. A propriedade Current indica a instância que você está administrando no momento.
 
@@ -104,9 +104,9 @@ Use o procedimento a seguir para abrir a página Gerenciamento de Topologia da C
 
 ### Configuração de associação de topologia {#configuring-topology-membership}
 
-O Apache Sling Resource-Based Discovery Service é executado em cada instância para controlar como as instâncias Experience Manager interagem com uma topologia.
+O Apache Sling Resource-Based Discovery Service é executado em cada instância para controlar como as instâncias do Experience Manager interagem com uma topologia.
 
-O Serviço de Descoberta envia solicitações de POST periódicas (heartbeats) aos serviços do Conector de Topologia para estabelecer e manter conexões com a topologia. O serviço do Conector de topologia mantém uma lista de permissões de endereços IP ou nomes de host que têm permissão para ingressar na topologia:
+O Serviço de Descoberta envia solicitações POST periódicas (heartbeats) aos serviços do Conector de Topologia para estabelecer e manter conexões com a topologia. O serviço do Conector de topologia mantém uma lista de permissões de endereços IP ou nomes de host que têm permissão para ingressar na topologia:
 
 * Para unir uma instância a uma topologia, especifique o URL do serviço do Conector de Topologia do membro raiz.
 * Para permitir que uma instância ingresse em uma topologia, adicione-a à lista de permissões do serviço Conector de Topologia do membro raiz.
@@ -176,7 +176,7 @@ Execute o procedimento a seguir no membro raiz da topologia. O procedimento adic
 
 ## Configuração do Consumo de Tópico {#configuring-topic-consumption}
 
-Use o Offloading Browser para configurar o consumo de tópicos para as instâncias de Experience Manager na topologia. Para cada instância, você pode especificar os tópicos que ela consome. Por exemplo, para configurar sua topologia para que apenas uma instância consuma tópicos de um tipo específico, desative o tópico em todas as instâncias, exceto uma.
+Use o Offloading Browser para configurar o consumo de tópicos para as instâncias do Experience Manager na topologia. Para cada instância, você pode especificar os tópicos que ela consome. Por exemplo, para configurar sua topologia para que apenas uma instância consuma tópicos de um tipo específico, desative o tópico em todas as instâncias, exceto uma.
 
 Os processos são distribuídos entre instâncias que têm o tópico associado ativado usando a lógica de revezamento.
 
@@ -208,7 +208,7 @@ Várias implementações do JobConsumer são instaladas com o Experience Manager
 | Tópico de trabalho | PID do serviço | Descrição |
 |---|---|---|
 | / | org.apache.sling.event.impl.jobs.deprecated.EventAdminBridge | Instalado com o Apache Sling. Processa trabalhos gerados pelo administrador de eventos OSGi para oferecer compatibilidade com versões anteriores. |
-| com/day/cq/replication/job/&ast; | com.day.cq.replication.impl.AgentManagerImpl | Um agente de replicação que replica cargas de trabalho. |
+| com/day/cq/replication/job/&amp;ast; | com.day.cq.replication.impl.AgentManagerImpl | Um agente de replicação que replica cargas de trabalho. |
 
 <!--
 | com/adobe/granite/workflow/offloading |com.adobe.granite.workflow.core.offloading.WorkflowOffloadingJobConsumer |Processes jobs that the DAM Update Asset Offloader workflow generates. |
@@ -216,7 +216,7 @@ Várias implementações do JobConsumer são instaladas com o Experience Manager
 
 ### Desativando e Ativando Tópicos para uma Instância {#disabling-and-enabling-topics-for-an-instance}
 
-O serviço Apache Sling Job Consumer Manager fornece lista de permissões de tópico e propriedades de lista de bloqueios. Configure essas propriedades para ativar ou desativar o processamento de tópicos específicos em uma instância de Experience Manager.
+O serviço Apache Sling Job Consumer Manager fornece lista de permissões de tópico e propriedades de lista de bloqueios. Configure essas propriedades para ativar ou desativar o processamento de tópicos específicos em uma instância do Experience Manager.
 
 **Observação:** se a instância pertencer a uma topologia, você também poderá usar o Descarregamento de Navegador em qualquer computador da topologia para habilitar ou desabilitar tópicos.
 
@@ -226,7 +226,7 @@ Use o Console da Web ou um nó `sling:OsgiConfig` para configurar as propriedade
 
 | Nome da propriedade no Console da Web | ID OSGi | Descrição |
 |---|---|---|
-| Lista de permissões de tópico | job.consumermanager.whitelist | Uma lista de tópicos que o serviço JobManager local processa. O valor padrão de &ast; faz com que todos os tópicos sejam enviados para o serviço TopicConsumer registrado. |
+| Lista de permissões de tópico | job.consumermanager.whitelist | Uma lista de tópicos que o serviço JobManager local processa. O valor padrão de &amp;ast; faz com que todos os tópicos sejam enviados para o serviço TopicConsumer registrado. |
 | Lista de bloqueios de tópico | job.consumermanager.blacklist | Uma lista de tópicos que o serviço JobManager local não processa. |
 
 ## Criação De Agentes De Replicação Para Descarregamento {#creating-replication-agents-for-offloading}

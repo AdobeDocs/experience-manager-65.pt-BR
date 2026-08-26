@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
-source-wordcount: '1319'
+source-wordcount: '1413'
 ht-degree: 3%
 
 ---
@@ -25,10 +25,10 @@ A configuração do MSSL para replicação envolve a execução das seguintes et
 1. Crie ou obtenha chaves privadas e certificados para as instâncias de autor e publicação.
 1. Instale as chaves e os certificados nas instâncias do autor e de publicação:
 
-   * Autor: chave privada do autor e certificado do Publish.
-   * Publicar: chave privada do Publish e certificado do autor. O certificado está associado à conta de usuário autenticada com o agente de replicação.
+   * Autor: chave privada do autor e certificado de publicação.
+   * Publicar: a chave privada do editor e o certificado do autor. O certificado está associado à conta de usuário autenticada com o agente de replicação.
 
-1. Configure o Serviço HTTP baseado em Java na instância do Publish.
+1. Configure o Serviço HTTP baseado em Java na instância de publicação.
 1. Configure o transporte e as propriedades SSL do agente de replicação.
 
 ![chlimage_1-64](assets/chlimage_1-64.png)
@@ -162,7 +162,7 @@ Para executar o procedimento a seguir, você deve estar conectado como administr
 
    ![chlimage_1-67](assets/chlimage_1-67.png)
 
-### Instalar o certificado do Publish {#install-the-publish-certificate}
+### Instalar o Publicar certificado {#install-the-publish-certificate}
 
 1. Abra a página Gerenciamento de usuários da instância do autor. ([http://localhost:4502/libs/granite/security/content/useradmin.html](http://localhost:4502/libs/granite/security/content/useradmin.html))
 1. Para abrir as propriedades da conta de usuário, clique no nome do usuário.
@@ -177,7 +177,7 @@ Para executar o procedimento a seguir, você deve estar conectado como administr
 
    ![chlimage_1-69](assets/chlimage_1-69.png)
 
-## Instalar a chave privada e o TrustStore no Publish {#install-private-key-and-truststore-on-publish}
+## Instalar a chave privada e o TrustStore na publicação {#install-private-key-and-truststore-on-publish}
 
 Instale os seguintes itens na instância de publicação:
 
@@ -186,7 +186,7 @@ Instale os seguintes itens na instância de publicação:
 
 Para executar o procedimento a seguir, você deve estar conectado como administrador da instância de publicação.
 
-### Instale a chave privada do Publish {#install-the-publish-private-key}
+### Instalar a chave privada de publicação {#install-the-publish-private-key}
 
 1. Abra a página Gerenciamento de usuários da instância de publicação. ([http://localhost:4503/libs/granite/security/content/useradmin.html](http://localhost:4503/libs/granite/security/content/useradmin.html))
 1. Para abrir as propriedades da conta de usuário, clique no nome do usuário.
@@ -206,7 +206,7 @@ Para executar o procedimento a seguir, você deve estar conectado como administr
 1. Verifique se a opção Mapear certificado para usuário está selecionada. Clique em Selecionar arquivo de certificado, selecione author.cer e clique em Abrir.
 1. Clique em Enviar e feche a caixa de diálogo Gerenciamento do TrustStore.
 
-## Configurar o serviço HTTP no Publish {#configure-the-http-service-on-publish}
+## Configurar o serviço HTTP na publicação {#configure-the-http-service-on-publish}
 
 Configure as propriedades do Serviço HTTP baseado em Java Apache Felix na instância de publicação para que ele use HTTPS ao acessar o Granite Keystore. O PID do serviço é `org.apache.felix.http`.
 
