@@ -12,18 +12,18 @@ feature: Integration
 role: Admin
 source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
 workflow-type: tm+mt
-source-wordcount: '528'
-ht-degree: 7%
+source-wordcount: '533'
+ht-degree: 3%
 
 ---
 
 # Pré-requisitos para integração com o Adobe Target{#prerequisites-for-integrating-with-adobe-target}
 
-Como parte da [integração de AEM e Adobe Target](/help/sites-administering/target.md), é necessário se registrar no Adobe Target, definir o agente de replicação e as configurações de atividade segura no nó de publicação.
+Como parte da [integração do AEM e do Adobe Target](/help/sites-administering/target.md), é necessário se registrar no Adobe Target, definir o agente de replicação e as configurações de atividade segura no nó de publicação.
 
 ## Registro no Adobe Target {#registering-with-adobe-target}
 
-Para integrar o AEM ao Adobe Target, é necessário ter uma conta válida do Adobe Target. Esta conta deve ter no mínimo o nível de permissões **aprovador**. Ao se registrar na Adobe Target, você recebe um código de cliente. Você precisa do código de cliente e seu nome de logon e senha do Adobe Target para se conectar ao AEM ao Adobe Target.
+Para integrar o AEM com o Adobe Target, é necessário ter uma conta válida do Adobe Target. Esta conta deve ter no mínimo o nível de permissões **aprovador**. Ao se registrar na Adobe Target, você recebe um código de cliente. Você precisa do código de cliente e seu nome de logon e senha do Adobe Target para conectar o AEM ao Adobe Target.
 
 O código do cliente identifica a conta de cliente do Adobe Target ao chamar o servidor do Adobe Target.
 
@@ -31,11 +31,11 @@ O código do cliente identifica a conta de cliente do Adobe Target ao chamar o s
 >
 >Sua conta também deve ser habilitada pela equipe do Target para usar a integração.
 >
->Se esse não for o caso, entre em contato com o [Atendimento ao cliente do Adobe](https://experienceleague.adobe.com/docs/target/using/cmp-resources-and-contact-information.html?lang=pt-BR).
+>Se esse não for o caso, entre em contato com o [Atendimento ao cliente da Adobe](https://experienceleague.adobe.com/docs/target/using/cmp-resources-and-contact-information.html?lang=pt-BR).
 
 ## Habilitar o Agente de replicação de destino {#enabling-the-target-replication-agent}
 
-O [agente de replicação](/help/sites-deploying/replication.md) de Teste e Destino deve estar habilitado na instância do autor. Observe que esse agente de replicação não está habilitado por padrão se você usou o modo de execução [nosamplecontent](/help/sites-deploying/configure-runmodes.md#using-samplecontent-and-nosamplecontent) para instalar o AEM. Para obter mais informações sobre como proteger seu ambiente de produção, consulte a [Lista de Verificação de Segurança](/help/sites-administering/security-checklist.md).
+O [agente de replicação](/help/sites-deploying/replication.md) de Teste e Destino deve estar habilitado na instância do autor. Observe que este agente de replicação não está habilitado por padrão se você usou o modo de execução [nosamplecontent](/help/sites-deploying/configure-runmodes.md#using-samplecontent-and-nosamplecontent) para instalar o AEM. Para obter mais informações sobre como proteger seu ambiente de produção, consulte a [Lista de Verificação de Segurança](/help/sites-administering/security-checklist.md).
 
 1. Na página inicial do AEM, clique em **Ferramentas** > **Implantação** > **Replicação**.
 1. Clique Em **Agentes No Autor**.
@@ -50,27 +50,27 @@ O [agente de replicação](/help/sites-deploying/replication.md) de Teste e Dest
 
 ## Protegendo o nó de configurações da atividade {#securing-the-activity-settings-node}
 
-Proteja o nó de configurações de atividade **cq:ActivitySettings** na instância de publicação para que não possa ser acessado por usuários normais. O nó de configurações de atividade só deve estar acessível ao serviço que lida com a sincronização de atividades com o Adobe Target.
+Proteja o nó de configurações de atividade **cq:ActivitySettings** na instância de publicação para que ele fique inacessível aos usuários normais. O nó de configurações de atividade só deve estar acessível ao serviço que lida com a sincronização de atividades com o Adobe Target.
 
-O nó **cq:ActivitySettings** está disponível no CRXDE lite em `/content/campaigns/*nameofbrand*`* *no nó jcr:content de atividades;* *por exemplo, `/content/campaign/we-retail/master/myactivity/jcr:content/cq:ActivitySettings`. Esse nó só é criado depois de direcionar um componente.
+O nó **cq:ActivitySettings** está disponível no CRXDE lite em `/content/campaigns/*nameofbrand*`** no nó jcr:content de atividades;* *por exemplo, `/content/campaign/we-retail/master/myactivity/jcr:content/cq:ActivitySettings`. Esse nó só é criado depois de direcionar um componente.
 
 O nó **cq:ActivitySettings** no jcr:content da atividade está protegido pelas seguintes ACLs:
 
 * Negar tudo para todos
-* Permitir jcr:read,rep:write para &quot;target-activity-author&quot; (o autor é um membro desse grupo pronto para uso)
+* Permitir jcr:read,rep:write para &quot;target-activity-author&quot; (o autor é membro desse grupo imediatamente)
 * Permitir jcr:read,rep:write para &quot;targetservice&quot;
 
 Essas configurações garantem que os usuários normais não tenham acesso às propriedades do nó. Use as mesmas ACLs no autor e na publicação. Consulte [Administração e Segurança do Usuário](/help/sites-administering/security.md) para obter mais informações.
 
-## Configurar o Externalizador de links de AEM {#configuring-the-aem-link-externalizer}
+## Configurar o Externalizador de links do AEM {#configuring-the-aem-link-externalizer}
 
-Ao editar uma atividade no Adobe Target, a URL aponta para **localhost**, a menos que você altere a URL no nó do autor AEM. Você pode configurar o Externalizador de links AEM se quiser que o conteúdo exportado aponte para um domínio *publicar* específico.
+Ao editar uma atividade no Adobe Target, a URL aponta para **localhost**, a menos que você altere a URL no nó do autor do AEM. Você pode configurar o Externalizador de links do AEM se quiser que o conteúdo exportado aponte para um domínio *publicar* específico.
 
 >[!NOTE]
 >
 >Consulte também [Adicionar a configuração da nuvem](/help/sites-administering/experience-fragments-target.md#add-the-cloud-configuration).
 
-Para configurar o externalizador de AEM:
+Para configurar o externalizador do AEM:
 
 >[!NOTE]
 >

@@ -13,7 +13,7 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '832'
+source-wordcount: '854'
 ht-degree: 0%
 
 ---
@@ -22,9 +22,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->A atualização requer tempo de inatividade para o nível de Autor, pois a maioria das atualizações do Adobe Experience Manager (AEM) é realizada no local. Seguindo essas práticas recomendadas, você pode minimizar ou eliminar o tempo de inatividade no nível da Publish.
+>A atualização requer tempo de inatividade para a camada Autor, pois a maioria das atualizações do Adobe Experience Manager (AEM) é executada no local. Seguindo essas práticas recomendadas, você pode minimizar ou eliminar o tempo de inatividade do nível de publicação.
 
-Ao atualizar os ambientes do AEM, você deve considerar as diferenças na abordagem entre atualizar os ambientes do autor ou de publicação para minimizar o tempo de inatividade dos autores e usuários finais. Esta página descreve o procedimento de alto nível para atualizar uma topologia de AEM em execução atualmente em uma versão do AEM 6.x. Como o processo difere entre os níveis de criação e publicação e implantações baseadas em Mongo e TarMK, cada nível e microkernel foi listado em uma seção separada. Ao executar a implantação, o Adobe recomenda primeiro atualizar o ambiente do autor, determinar o sucesso e prosseguir para os ambientes de publicação.
+Ao atualizar os ambientes do AEM, você deve considerar as diferenças na abordagem entre atualizar os ambientes do autor ou de publicação para minimizar o tempo de inatividade dos autores e usuários finais. Esta página descreve o procedimento de alto nível para atualizar uma topologia do AEM atualmente em execução em uma versão do AEM 6.x. Como o processo difere entre os níveis de criação e publicação e implantações baseadas em Mongo e TarMK, cada nível e microkernel foi listado em uma seção separada. Ao executar a implantação, a Adobe recomenda primeiro atualizar o ambiente do autor, determinar o sucesso e prosseguir para os ambientes de publicação.
 
 <!--
 >[!IMPORTANT]
@@ -85,7 +85,7 @@ A topologia presumida para esta seção consiste em um servidor de Autores em ex
 
 ### Topologia Inicial {#starting-topology-1}
 
-A topologia presumida para esta seção consiste em um cluster de Autores MongoMK com pelo menos duas instâncias de Autores AEM, apoiadas por pelo menos dois bancos de dados MongoMK. Todas as instâncias de Autor compartilham um armazenamento de dados. Essas etapas devem se aplicar aos armazenamentos de dados S3 e File. A replicação ocorre dos servidores do autor para o farm do Publish TarMK.
+A topologia presumida para esta seção consiste em um cluster de Autores MongoMK com pelo menos duas instâncias de Autor do AEM, apoiadas por pelo menos dois bancos de dados MongoMK. Todas as instâncias de Autor compartilham um armazenamento de dados. Essas etapas devem se aplicar aos armazenamentos de dados S3 e File. A replicação ocorre dos servidores do autor para o farm de publicação TarMK.
 
 ![topologia-mongo](assets/mongo-topology.jpg)
 
@@ -143,11 +143,11 @@ A topologia presumida para esta seção consiste em um cluster de Autores MongoM
 
 1. Limpe as instâncias do autor atualizadas, o nó Mongo e o armazenamento de dados.
 
-## Farm do Publish TarMK {#tarmk-publish-farm}
+## Farm de publicação do TarMK {#tarmk-publish-farm}
 
-### Farm do Publish TarMK {#tarmk-publish-farm-1}
+### Farm de publicação do TarMK {#tarmk-publish-farm-1}
 
-A topologia assumida para esta seção consiste em duas instâncias de publicação TarMK, lideradas pelos Dispatchers que, por sua vez, são liderados por um balanceador de carga. A replicação ocorre do servidor do autor para o farm do Publish TarMK.
+A topologia assumida para esta seção consiste em duas instâncias de publicação TarMK, lideradas pelos Dispatchers que, por sua vez, são liderados por um balanceador de carga. A replicação ocorre do servidor do autor para o farm de publicação TarMK.
 
 ![tarmk-pub-farmv5](assets/tarmk-pub-farmv5.png)
 
@@ -155,43 +155,43 @@ A topologia assumida para esta seção consiste em duas instâncias de publicaç
 
 ![publicação-atualização2](assets/upgrade-publish2.png)
 
-1. Pare o tráfego para a instância do Publish 2 no balanceador de carga.
-1. Execute a [manutenção de pré-atualização](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) no Publish 2.
-1. Execute uma [atualização no local](/help/sites-deploying/in-place-upgrade.md) no Publish 2.
+1. Pare o tráfego para a instância de Publicação 2 no balanceador de carga.
+1. Execute a [manutenção de pré-atualização](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) na Publicação 2.
+1. Execute uma [atualização no local](/help/sites-deploying/in-place-upgrade.md) na Publicação 2.
 1. Atualize o Dispatcher ou o Módulo Web *se necessário*.
 1. Limpe o cache do Dispatcher.
-1. O controle de qualidade valida o Publish 2 por meio da Dispatcher, atrás do firewall.
-1. Encerre o Publish 2.
-1. Copie a instância do Publish 2.
-1. Inicie o Publish 2.
+1. O controle de qualidade valida a Publicação 2 pela Dispatcher, atrás do firewall.
+1. Desligar Publicação 2.
+1. Copie a instância Publish 2.
+1. Iniciar publicação 2.
 
 ### Se bem-sucedido {#if-successful-2}
 
 ![publicação-atualização1](assets/upgrade-publish1.png)
 
-1. Ative o tráfego para o Publish 2.
-1. Pare o tráfego para o Publish 1.
-1. Pare a instância do Publish 1.
-1. Substitua a instância do Publish 1 por uma cópia do Publish 2.
+1. Ative o tráfego para a Publicação 2.
+1. Interromper o tráfego para a Publicação 1.
+1. Interrompa a instância do Publish 1.
+1. Substitua a instância de Publicação 1 por uma cópia de Publicação 2.
 1. Atualize o Dispatcher ou o Módulo Web *se necessário*.
-1. Limpe o cache do Dispatcher para o Publish 1.
-1. Inicie o Publish 1.
-1. O controle de qualidade valida o Publish 1 por meio da Dispatcher, atrás do firewall.
+1. Limpe o cache do Dispatcher para Publicar 1.
+1. Iniciar publicação 1.
+1. O controle de qualidade valida a Publicação 1 pela Dispatcher, atrás do firewall.
 
 ### Se Não Tiver Êxito (Reversão) {#if-unsuccessful-rollback-1}
 
 ![reversão_do_pub](assets/pub_rollback.jpg)
 
-1. Crie uma cópia do Publish 1.
-1. Substitua a instância do Publish 2 por uma cópia do Publish 1.
+1. Criar uma cópia de Publicar 1.
+1. Substitua a instância de Publicação 2 por uma cópia de Publicação 1.
 1. Limpe o cache do Dispatcher para o Publish 2.
-1. Inicie o Publish 2.
-1. O controle de qualidade valida o Publish 2 por meio da Dispatcher, atrás do firewall.
-1. Ative o tráfego para o Publish 2.
+1. Iniciar publicação 2.
+1. O controle de qualidade valida a Publicação 2 pela Dispatcher, atrás do firewall.
+1. Ative o tráfego para a Publicação 2.
 
 ## Etapas finais de atualização {#final-upgrade-steps}
 
-1. Ative o tráfego para o Publish 1.
+1. Ative o tráfego para Publicar 1.
 1. O controle de qualidade executa a validação final de um URL público.
 1. Ative os agentes de replicação no ambiente do Autor.
 1. Retomar a criação de conteúdo.

@@ -11,7 +11,7 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1910'
+source-wordcount: '1922'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ Para obter detalhes, consulte [Limites de contribuição de membros](limits.md).
 
 ### Grupos de usuários criados dinamicamente {#dynamically-created-user-groups}
 
-Quando um novo site da comunidade é criado, novos grupos de usuários são criados dinamicamente com ids exclusivas (uid) e permissões apropriadas para várias funções administrativas necessárias para gerenciar o site da comunidade no ambiente de criação (consulte [Funções de grupo de autores](#author-group-roles)) ou no ambiente de publicação (consulte [Funções de grupo do Publish](#publish-group-roles)).
+Quando um novo site da comunidade é criado, novos grupos de usuários são criados dinamicamente com ids exclusivas (uid) e permissões apropriadas para várias funções administrativas necessárias para gerenciar o site da comunidade no ambiente de criação (consulte [Funções de grupo de autores](#author-group-roles)) ou no ambiente de publicação (consulte [Funções de grupo de publicação](#publish-group-roles)).
 
 Os nomes dos grupos são gerados a partir do nome dado ao site durante a [criação do site da comunidade](sites-console.md#step13asitetemplate). As IDs exclusivas evitam conflitos de nomes para sites de comunidades com nomes semelhantes e grupos de comunidades no mesmo servidor.
 
@@ -74,7 +74,7 @@ Para gerenciar usuários e grupos de usuários registrados no ambiente de criaç
 |---|---|
 | administradores | O grupo de administradores consiste em administradores do sistema que têm todas as habilidades de um Administrador da comunidade e a capacidade de gerenciar o grupo de Administradores da comunidade. |
 | Administradores da comunidade | O grupo Administradores da comunidade se torna automaticamente membro de todos os sites da comunidade e de quaisquer grupos criados no site. Um membro inicial do grupo Administradores da comunidade é o grupo de administradores. No ambiente de criação, os administradores da comunidade podem criar sites da comunidade, gerenciar sites, gerenciar membros (eles podem proibir membros da comunidade) e moderar conteúdo. |
-| Comunidade &lt;*nome do site*> Sitecontentmanager | O Gerenciador de conteúdo do site da comunidade é capaz de criar páginas de AEM tradicionais, criar conteúdo e modificar páginas para um site da comunidade. |
+| Comunidade &lt;*nome do site*> Sitecontentmanager | O Gerenciador de conteúdo do site da comunidade pode executar a criação tradicional, a criação de conteúdo e a modificação de páginas do AEM para um site da comunidade. |
 | Nenhum | Um visitante anônimo do site pode não acessar o ambiente do autor. |
 
 ### Administradores do sistema {#system-administrators}
@@ -94,18 +94,18 @@ Certifique-se de seguir a [Lista de Verificação de Segurança](../../help/site
 No ambiente de publicação, dependendo das [configurações](sites-console.md#user-management) do site da comunidade, um visitante do site pode se tornar um membro da comunidade:
 
 * Quando o site da comunidade é privado (fechado):
-   * Por convite
-   * Por ações de um administrador
+  * Por convite
+  * Por ações de um administrador
 
 * Quando o site da comunidade for público (aberto):
-   * Por autorregistro
-   * Ao fazer logon em redes sociais com o Facebook e o Twitter
+  * Por autorregistro
+  * Por logon social com o Facebook e o Twitter
 
 >[!NOTE]
 >
 >Se um visitante do site se registrar como membro de um site de comunidade aberto, ele se tornará automaticamente membro de outros sites de comunidade abertos no mesmo ambiente de publicação.
 
-### Funções de grupo do Publish {#publish-group-roles}
+### Publicar funções de grupo {#publish-group-roles}
 
 | Se Membro do Grupo... | Função Primária |
 |---|---|
@@ -116,7 +116,7 @@ No ambiente de publicação, dependendo das [configurações](sites-console.md#u
 | *Grupo de Segurança de Membros Privilegiados* | Um grupo de usuários criado e mantido manualmente com o objetivo de restringir a criação de conteúdo. Consulte [Grupo de membros privilegiados](#privileged-members-group). |
 | Nenhum | Um visitante anônimo do site, que descobre o site, pode visualizar e pesquisar sites da comunidade que permitem acesso anônimo. Para participar e publicar conteúdo, o usuário deve se registrar (se permitido) e se tornar membro da comunidade. |
 
-### Atribuindo Membros a Funções de Grupos Publish {#assigning-members-to-publish-group-roles}
+### Atribuição de Membros a Funções de Grupo de Publicação {#assigning-members-to-publish-group-roles}
 
 Ao [criar um site da comunidade](sites-console.md) no ambiente de criação ou ao [modificar propriedades do site,](sites-console.md#modifying-site-properties) os membros poderão receber várias funções executadas no ambiente de publicação, como moderadores, administradores de grupos, contatos de recursos ou membros privilegiados.
 
@@ -198,7 +198,7 @@ Siga as mesmas etapas que criar e atribuir um usuário à função de gerente de
 
 ### Integração de LDAP {#ldap-integration}
 
-O AEM suporta o uso do LDAP para autenticação de usuários e criação de contas de usuário. Isto está detalhado em [Configurando o LDAP com AEM 6](../../help/sites-administering/ldap-config.md).
+O AEM oferece suporte ao uso do LDAP para autenticação de usuários e criação de contas de usuário. Isso é detalhado em [Configurando o LDAP com o AEM 6](../../help/sites-administering/ldap-config.md).
 
 A seguir estão alguns detalhes de configuração específicos para membros da comunidade e grupos de membros.
 
@@ -211,9 +211,9 @@ A seguir estão alguns detalhes de configuração específicos para membros da c
 
    * Defina as seguintes propriedades:
 
-      * **[!UICONTROL Associação automática de usuário]**: `community-<site name>-<uid>-members`
-      * **[!UICONTROL Prefixo de Caminho do Usuário]**: `/community`
-      * **[!UICONTROL Prefixo do Caminho do Grupo]**: `/community`
+     * **[!UICONTROL Associação automática de usuário]**: `community-<site name>-<uid>-members`
+     * **[!UICONTROL Prefixo de Caminho do Usuário]**: `/community`
+     * **[!UICONTROL Prefixo do Caminho do Grupo]**: `/community`
 
 4. [O módulo de login externo](../../help/sites-administering/ldap-config.md#the-external-login-module)
 
@@ -223,7 +223,7 @@ Isso faz com que os usuários sejam automaticamente atribuídos ao grupo de memb
 
 * O valor `User auto membership` deve ser a propriedade `rep:authorizableId`, não o `givenName` (nome de exibição) do perfil.
 
-## Sincronização de usuários entre instâncias AEM {#synchronizing-users-among-aem-instances}
+## Sincronização de usuários entre instâncias do AEM {#synchronizing-users-among-aem-instances}
 
 Ao usar um [farm de publicação](topologies.md), verifique se os usuários têm o mesmo caminho em cada instância de publicação importando os usuários primeiro para uma instância e [habilitando a sincronização de usuários](sync.md) com o Sling para distribuir os usuários para as outras instâncias de publicação.
 

@@ -12,8 +12,8 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '726'
-ht-degree: 0%
+source-wordcount: '732'
+ht-degree: 1%
 
 ---
 
@@ -29,20 +29,20 @@ Você pode criar versões adicionais mediante solicitação usando a guia **Vers
 
 Essas versões nunca são removidas, portanto, o tamanho do repositório cresce com o tempo e, portanto, deve ser gerenciado.
 
-O AEM é enviado com vários mecanismos para ajudar você a gerenciar seu repositório:
+O AEM é fornecido com vários mecanismos para ajudar você a gerenciar seu repositório:
 
-* o [Gerenciador de Versões](#version-manager)
+* o [Gerenciador de Versão](#version-manager)
 Isso pode ser configurado para limpar versões antigas quando novas versões são criadas.
 
 * a ferramenta [Limpar Versões](/help/sites-deploying/monitoring-and-maintaining.md#purgeversionstool)
 Isso é usado como parte do monitoramento e da manutenção do seu repositório.
 Ela permite intervir para remover versões antigas de um nó, ou uma hierarquia de nós, de acordo com estes parâmetros:
 
-   * O número máximo de versões a serem mantidas no repositório.
-Quando esse número é excedido, a versão mais antiga é removida.
+  * O número máximo de versões a serem mantidas no repositório.
+    Quando esse número é excedido, a versão mais antiga é removida.
 
-   * A idade máxima de qualquer versão mantida no repositório.
-Quando a idade de uma versão exceder esse valor, ela será removida do repositório.
+  * A idade máxima de qualquer versão mantida no repositório.
+    Quando a idade de uma versão exceder esse valor, ela será removida do repositório.
 
 * a [tarefa de manutenção Limpeza de Versão](/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks). Você pode programar a tarefa de manutenção Limpeza de versão para excluir versões antigas automaticamente. Como resultado, isso minimiza a necessidade de usar manualmente as ferramentas de Limpeza de versão.
 
@@ -95,34 +95,34 @@ Por exemplo, ao definir o número máximo de versões a serem mantidas E a vers�
 
 * Configuração:
 
-   * `maxNumberVersions` = 7
+  * `maxNumberVersions` = 7
 
-   * `maxAgeDays` = 30
+  * `maxAgeDays` = 30
 
 * Com:
 
-   * Dez versões foram feitas nos últimos 60 dias
-   * Três dessas versões foram criadas nos últimos 30 dias
+  * Dez versões foram feitas nos últimos 60 dias
+  * Três dessas versões foram criadas nos últimos 30 dias
 
 * Isso significa que:
 
-   * As três últimas versões são mantidas
+  * As três últimas versões são mantidas
 
 Por exemplo, ao definir o número mínimo E máximo de versões a serem retidas E a versão mais antiga a ser retida:
 
 * Configuração:
 
-   * `maxNumberVersions` = 3
-   * `maxAgeDays` = 30
-   * `minNumberVersions` = 3
+  * `maxNumberVersions` = 3
+  * `maxAgeDays` = 30
+  * `minNumberVersions` = 3
 
 * Com:
 
-   * Cinco versões foram feitas há 60 dias
+  * Cinco versões foram feitas há 60 dias
 
 * Isso significa que:
 
-   * Três versões são mantidas
+  * Três versões são mantidas
 
 ## Ferramenta Limpar versões {#purge-versions-tool}
 
