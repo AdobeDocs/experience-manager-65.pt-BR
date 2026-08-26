@@ -49,7 +49,7 @@ Verifique se você instalou os [Hotfixes de Segurança mais recentes fornecidos 
 
 ### Alterar senhas padrão para as contas de administrador do AEM e do console OSGi {#change-default-passwords-for-the-aem-and-osgi-console-admin-accounts}
 
-A Adobe recomenda que, após a instalação, você altere a senha das [**contas do `admin` do {AEM** privilegiadas](#changing-the-aem-admin-password) (em todas as instâncias).
+A Adobe recomenda que, após a instalação, você altere a senha das [**contas do `admin` do &lbrace;AEM** privilegiadas](#changing-the-aem-admin-password) (em todas as instâncias).
 
 Essas contas incluem:
 
@@ -324,7 +324,7 @@ Para ajudar a evitar o uso indevido de DoS, você pode fazer o seguinte:
 >
 >Essa mitigação deve ser executada somente em ambientes AEM que não estejam usando o Forms.
 
-Como a AEM não fornece índices prontos para uso para o `FormChooserServlet`, o uso de seletores de formulário em consultas pode acionar uma travessia de repositório dispendiosa, normalmente imobilizando a instância do AEM. Os seletores de formulário podem ser detectados pela presença da cadeia de caracteres **&amp;ast;.form.&amp;ast;** em consultas.
+Como a AEM não fornece índices prontos para uso para o `FormChooserServlet`, o uso de seletores de formulário em consultas pode acionar uma travessia de repositório dispendiosa, normalmente imobilizando a instância do AEM. Os seletores de formulário podem ser detectados pela presença da cadeia de caracteres **&ast;.form.&ast;** em consultas.
 
 Para atenuar esse problema, você pode executar as seguintes etapas:
 
