@@ -9,9 +9,9 @@ exl-id: 362b7b91-c58b-4e47-a6ef-56a4b54a100c
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+source-git-commit: b631b5d4308a2ad1e2397c60c4ee78ec097beaa9
 workflow-type: tm+mt
-source-wordcount: '2643'
+source-wordcount: '2665'
 ht-degree: 0%
 
 ---
@@ -26,11 +26,11 @@ A página Configurações do servidor fornece acesso a várias configurações p
 
 ## Definição das configurações de email {#configuring-email-settings}
 
-Você pode especificar uma conta de email para o Forms Server, por meio da qual ele envia mensagens de email para usuários e administradores de formulários AEM. Essas mensagens de email são usadas para notificar e lembrar os usuários sobre as tarefas que eles devem concluir, notificar o usuário sobre tarefas que atingiram um prazo final e notificar o administrador sobre erros de processo que ocorram.
+Você pode especificar uma conta de email para o Forms Server, por meio da qual ele envia mensagens de email para usuários e administradores do AEM Forms. Essas mensagens de email são usadas para notificar e lembrar os usuários sobre as tarefas que eles devem concluir, notificar o usuário sobre tarefas que atingiram um prazo final e notificar o administrador sobre erros de processo que ocorram.
 
-Para habilitar o envio de mensagens de email entre formulários AEM e usuários, defina as configurações de email de saída na página Configurações de email. O email de saída deve usar um servidor SMTP.
+Para habilitar o envio de mensagens de email entre formulários do AEM e usuários, defina as configurações de email de saída na página Configurações de email. O email de saída deve usar um servidor SMTP.
 
-Para permitir que os formulários AEM recebam e lidem com as mensagens de email recebidas dos usuários, crie um terminal de email para o serviço Tarefa Completa. (Consulte [Criar um ponto de extremidade de email para o serviço Concluir Tarefa](/help/forms/using/admin-help/configuring-email-endpoints.md#create-an-email-endpoint-for-the-complete-task-service)).
+Para permitir que o AEM Forms receba e manipule mensagens de email recebidas dos usuários, crie um terminal de email para o serviço Tarefa completa. (Consulte [Criar um ponto de extremidade de email para o serviço Concluir Tarefa](/help/forms/using/admin-help/configuring-email-endpoints.md#create-an-email-endpoint-for-the-complete-task-service)).
 
 Se seus processos forem projetados e implementados sem a necessidade de enviar um email, não será necessário configurar nenhuma das opções na página Configurações de email.
 
@@ -60,9 +60,9 @@ Se seus processos forem projetados e implementados sem a necessidade de enviar u
 
 >[!NOTE]
 >
->O Flex Workspace está obsoleto para a versão do AEM forms.
+>O Flex Workspace está obsoleto para a versão do AEM Forms.
 
-Por padrão, os emails enviados pelo AEM contêm links para (obsoleto para o AEM forms no JEE) o Flex Workspace. Você pode configurar formulários AEM para enviar emails com links para o AEM Forms Workspace. Para saber mais sobre os benefícios do AEM Forms Workspace em relação ao (obsoleto para o AEM no JEE) Flex Workspace, consulte o artigo [this](/help/forms/using/features-html-workspace-available-flex.md).
+Por padrão, os emails enviados pelo AEM Forms contêm links para o Flex Workspace (obsoleto para o AEM Forms no JEE). Você pode configurar formulários do AEM para enviar emails com links para o AEM Forms Workspace. Para saber mais sobre os benefícios do AEM Forms Workspace em relação ao (obsoleto para o AEM Forms no JEE) Flex Workspace, consulte o artigo [this](/help/forms/using/features-html-workspace-available-flex.md).
 
 1. No console de administração, clique em Início > Serviços > Fluxo de trabalho de formulários > Configurações do servidor > Notificações de tarefa.
 1. Abra o modelo de atribuição de tarefa.
@@ -86,7 +86,7 @@ Para gerar notificações por email para um grupo, especifique um endereço de e
 
 >[!NOTE]
 >
->O espaço de trabalho do Flex está obsoleto para a versão do AEM forms.
+>O Flex Workspace está obsoleto para a versão do AEM Forms.
 
 ### Configurar lembretes para usuários ou grupos {#configure-reminders-for-users-or-groups}
 
@@ -98,7 +98,7 @@ Você pode enviar notificações de lembrete ao usuário ou grupo atribuído qua
 1. (Somente notificações do usuário) Para incluir um anexo do formulário e seus dados com a mensagem de email de lembrete, selecione Incluir dados do formulário.
 1. Na caixa Assunto, digite o texto da linha de assunto da mensagem de email. Este campo é pré-preenchido com texto padrão. Para obter detalhes sobre como personalizar esse campo, consulte [Personalização do conteúdo de notificações](configuring-server-settings.md#customizing-the-content-of-notifications).
 1. Na caixa Modelo de notificação, digite o texto para o corpo da mensagem de email. Este campo é pré-preenchido com texto padrão. Para obter detalhes sobre como personalizar esse campo, consulte [Personalização do conteúdo de notificações](configuring-server-settings.md#customizing-the-content-of-notifications).
-1. Na lista Formato da mensagem, selecione o formato em que a mensagem de email é enviada, seja HTML ou Texto. O formato padrão é HTML.
+1. Na lista Formato da mensagem, selecione o formato em que a mensagem de email é enviada, HTML ou Texto. O formato padrão é HTML.
 1. Na lista Codificação de email, selecione o formato de codificação a ser usado para a mensagem de email. O padrão é UTF-8, que a maioria dos usuários fora do Japão usará. Os usuários no Japão podem selecionar ISO2022-JP.
 1. Clique em Salvar.
 
@@ -112,7 +112,7 @@ Você pode enviar notificações de atribuição de tarefa a um usuário ou grup
 1. (Somente notificações do usuário) Para incluir um anexo do formulário e seus dados na mensagem de email de atribuição da tarefa, selecione Incluir dados do formulário.
 1. Na caixa Assunto, digite o texto da linha de assunto da mensagem de email. Este campo é pré-preenchido com texto padrão. Para obter detalhes sobre como personalizar esse campo, consulte [Personalização do conteúdo de notificações](configuring-server-settings.md#customizing-the-content-of-notifications).
 1. Na caixa Modelo de notificação, digite o texto para o corpo da mensagem de email. Este campo é pré-preenchido com texto padrão. Para obter detalhes sobre como personalizar esse campo, consulte [Personalização do conteúdo de notificações](configuring-server-settings.md#customizing-the-content-of-notifications).
-1. Na lista Formato da mensagem, selecione o formato em que a mensagem de email é enviada, seja HTML ou Texto. O formato padrão é HTML.
+1. Na lista Formato da mensagem, selecione o formato em que a mensagem de email é enviada, HTML ou Texto. O formato padrão é HTML.
 1. Na lista Codificação de email, selecione o formato de codificação a ser usado para a mensagem de email. O padrão é UTF-8, que a maioria dos usuários fora do Japão usará. Os usuários no Japão podem selecionar ISO2022-JP.
 1. Clique em Salvar.
 
@@ -125,7 +125,7 @@ Você pode enviar notificações de prazo final para usuários e grupos quando o
 1. Selecione Ativar prazo ou Ativar grupo - prazo final.
 1. Na caixa Assunto, digite o texto da linha de assunto da mensagem de email. Este campo é pré-preenchido com texto padrão. Para obter detalhes sobre como personalizar esse campo, consulte [Personalização do conteúdo de notificações](configuring-server-settings.md#customizing-the-content-of-notifications).
 1. Na caixa Modelo de notificação, digite o texto para o corpo da mensagem de email. Este campo é pré-preenchido com texto padrão. Para obter detalhes sobre como personalizar esse campo, consulte [Personalização do conteúdo de notificações](configuring-server-settings.md#customizing-the-content-of-notifications).
-1. Na lista Formato da mensagem, selecione o formato em que a mensagem de email é enviada, seja HTML ou Texto. O formato padrão é HTML.
+1. Na lista Formato da mensagem, selecione o formato em que a mensagem de email é enviada, HTML ou Texto. O formato padrão é HTML.
 1. Na lista Codificação de email, selecione o formato de codificação a ser usado para a mensagem de email. O padrão é UTF-8, que a maioria dos usuários fora do Japão usará. Os usuários no Japão podem selecionar ISO2022-JP.
 1. Clique em Salvar.
 
@@ -156,7 +156,7 @@ Se uma ramificação for interrompida (o processo é interrompido deliberadament
 1. Na caixa Endereço de email, digite os endereços dos usuários a serem notificados quando uma ramificação for interrompida. Use o formato user@domain.com e separe cada endereço com uma vírgula. Normalmente, esse endereço de email é para um administrador.
 1. Na caixa Assunto, digite o texto da linha de assunto da mensagem de email. Este campo é pré-preenchido com texto padrão. Para obter detalhes sobre como personalizar esse campo, consulte [Personalização do conteúdo de notificações](configuring-server-settings.md#customizing-the-content-of-notifications).
 1. Na caixa Modelo de notificação, digite o texto para o corpo da mensagem de email. Este campo é pré-preenchido com texto padrão. Para obter detalhes sobre como personalizar esse campo, consulte [Personalização do conteúdo de notificações](configuring-server-settings.md#customizing-the-content-of-notifications).
-1. Na lista Formato da mensagem, selecione o formato em que a mensagem de email é enviada, seja HTML ou Texto. O formato padrão é HTML.
+1. Na lista Formato da mensagem, selecione o formato em que a mensagem de email é enviada, HTML ou Texto. O formato padrão é HTML.
 1. Na lista Codificação de email, selecione o formato de codificação a ser usado para a mensagem de email. O padrão é UTF-8, que a maioria dos usuários fora do Japão usa. Os usuários no Japão podem selecionar ISO2022-JP.
 1. Clique em Salvar.
 
@@ -198,7 +198,7 @@ Somente para Notificações de Tarefas, o workflow do Forms inclui duas configur
 
 >[!NOTE]
 >
->O espaço de trabalho do Flex está obsoleto para a versão do AEM forms.
+>O Flex Workspace está obsoleto para a versão do AEM Forms.
 
 Se a solução for implantada em um ambiente de cluster, substitua `@@notification-host@@` pelo endereço do cluster.
 
@@ -206,7 +206,7 @@ Se a solução for implantada em um ambiente de cluster, substitua `@@notificati
 
 **JBoss:** 8080
 
-**Servidor WebLogic do Oracle:** 7001
+**Oracle WebLogic Server:** 7001
 
 **IBM WebSphere:** 9080
 
@@ -226,7 +226,7 @@ Para lembretes, atribuições de tarefas e prazos de conclusão para usuários e
 
 **instruções** o conteúdo da propriedade Instruções da tarefa, conforme definido na etapa do usuário do processo no Workbench.
 
-**notification-host** O nome do host do servidor de aplicativos de formulários AEM.
+**notification-host** O nome do host do servidor de aplicativos do AEM Forms.
 
 **process-name** O nome do processo.
 
@@ -250,7 +250,7 @@ Para ramificações interrompidas, é possível usar as seguintes variáveis nas
 
 **process-id** O identificador de instância do processo.
 
-**notification-host** O nome do host do servidor de aplicativos de formulários AEM.
+**notification-host** O nome do host do servidor de aplicativos do AEM Forms.
 
 Para operações interrompidas, é possível usar as seguintes variáveis nas caixas Assunto e Modelo de notificação:
 
@@ -260,7 +260,7 @@ Para operações interrompidas, é possível usar as seguintes variáveis nas ca
 
 **process-id** O identificador de instância do processo.
 
-**notification-host** O nome do host do servidor de aplicativos de formulários AEM.
+**notification-host** O nome do host do servidor de aplicativos do AEM Forms.
 
 ### Uso de uma variável na caixa Assunto {#using-a-variable-in-the-subject-box}
 

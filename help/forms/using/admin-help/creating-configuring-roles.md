@@ -9,9 +9,9 @@ exl-id: b447e545-f73e-4fde-a001-86e0e1cf4a12
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+source-git-commit: b631b5d4308a2ad1e2397c60c4ee78ec097beaa9
 workflow-type: tm+mt
-source-wordcount: '2495'
+source-wordcount: '2503'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ O Gerenciamento de usuários tem dois tipos de funções:
 
 **Funções imutáveis:** as funções padrão incluídas no Gerenciamento de Usuários são funções imutáveis. Essas funções não podem ser editadas ou excluídas. No entanto, você pode adicionar ou remover usuários e grupos atribuídos a funções imutáveis.
 
-As funções mutáveis e imutáveis também podem ser criadas por meio das APIs de formulários AEM.
+As funções mutáveis e imutáveis também podem ser criadas por meio das APIs de formulários do AEM.
 
 ## Funções padrão {#default-roles}
 
@@ -36,7 +36,7 @@ As funções padrão a seguir estão incluídas no banco de dados de Gerenciamen
 
 **Administrador do Aplicativo:** Pode usar todos os recursos do Workbench. Você pode usar as páginas Aplicativos e Serviços no console de administração para configurar propriedades, pontos de extremidade e segurança do tempo de execução do serviço.
 
-**Administrador de formulários AEM:** pode executar todas as tarefas para todos os serviços instalados.
+**Administrador do AEM Forms:** pode executar todas as tarefas para todos os serviços instalados.
 
 **Administrador de Segurança:** controla as configurações de Gerenciamento de Usuários e gerencia usuários e grupos associados a qualquer domínio do Gerenciador de Usuários
 
@@ -48,55 +48,55 @@ As funções padrão a seguir estão incluídas no banco de dados de Gerenciamen
 
 ### Funções padrão adicionais {#additional-default-roles}
 
-As seguintes funções padrão adicionais podem ser incluídas, dependendo dos componentes de formulários AEM instalados por você
+As seguintes funções padrão adicionais podem ser incluídas, dependendo dos componentes do AEM Forms que você instalou
 
 **Usuário do Aplicativo de Carregamento de Documentos:** Pode carregar documentos usando o Flex Remoting.
 
 **Administrador do Forms:** pode exibir e modificar configurações na página Forms no Console de Administração
 
-**Administrador do Contentspace do Forms AEM:** pode exibir e modificar configurações da página Serviços de Conteúdo (obsoleto) no console de administração
+**Administrador do Contentspace do AEM Forms:** pode exibir e modificar configurações da página Serviços de Conteúdo (obsoleto) no console de administração
 
-**Usuário do Contentspace dos formulários AEM:** Pode fazer logon nas páginas da Web do Contentspace (Obsoleto)
+**Usuário do Contentspace do AEM Forms:** Pode fazer logon nas páginas da Web do Contentspace (Obsoleto)
 
 **Administrador do Documentum Connector:** pode visualizar e modificar configurações a partir da página Connector for EMC Documentum no console de administração
 
-**Administrador do Conector FileNet dos formulários AEM:** pode exibir e modificar configurações do Conector para IBM FileNet na página de console de administração
+**Administrador do AEM Forms FileNet Connector:** pode exibir e modificar configurações no Conector da página IBM FileNet no console de administração
 
 **Administrador do IBM CM Connector do AEM Forms:** pode exibir e modificar configurações no Conector da página Gerenciador de conteúdo do IBM no console de administração
 
-**Administrador de Rights Management:** Executa todas as tarefas necessárias para todas as configurações de servidor nas páginas de Rights Management relevantes
+**Administrador do Rights Management:** Executa todas as tarefas necessárias para todas as configurações de servidor nas páginas relevantes do Rights Management
 
 **Usuário final do Rights Management:** pode acessar páginas da Web do usuário final do Rights Management
 
-**Rights Management Convidar Usuário:** Pode convidar usuários
+**Usuário do Rights Management Invite:** pode convidar usuários
 
-Rights Management **Gerenciar Usuários Convidados e Locais:** Pode executar tarefas necessárias para gerenciar todos os usuários convidados e locais nas páginas de Rights Management relevantes
+**Gerenciar Usuários Convidados e Locais do Rights Management:** Pode executar tarefas necessárias para gerenciar todos os usuários convidados e locais nas páginas relevantes do Rights Management
 
-**Administrador de Conjunto de Políticas de Rights Management:** Executa todas as tarefas necessárias para todos os conjuntos de políticas nas páginas de Rights Management relevantes
+**Administrador do Conjunto de Políticas do Rights Management:** Executa todas as tarefas necessárias para todos os conjuntos de políticas nas páginas relevantes do Rights Management
 
-**Superadministrador de Rights Management:** Executa todas as tarefas necessárias da página de Rights Management
+**Superadministrador do Rights Management:** Executa todas as tarefas necessárias da página do Rights Management
 
 **Administrador do AEM Forms Workspace:** pode exibir e modificar configurações na página Workspace no Console de Administração
 
-***observação &#x200B;**: o Flex Workspace foi descontinuado para a versão de formulários AEM.*
+***observação &#x200B;**: o Flex Workspace está obsoleto para a versão do AEM Forms.*
 
 **Usuário do Workspace:** pode fazer logon no aplicativo de usuário final do Workspace
 
 **Administrador de Saída:** pode exibir e modificar configurações na página Saída do Console de Administração
 
-**Administrador do PDFG:** pode exibir e modificar configurações na página PDF Generator no console de administração
+**Administrador do PDFG:** pode exibir e modificar configurações da página PDF Generator no console de administração
 
-**Usuário PDFG:** pode acessar todas as funcionalidades não administrativas do PDF Generator
+**Usuário do PDFG:** pode acessar todas as funcionalidades não administrativas do PDF Generator
 
 **Aplicativo Web de extensões do Acrobat Reader DC:** Pode usar o aplicativo Web de extensões do Acrobat Reader DC
 
 >[!NOTE]
 >
->Os usuários com determinados tipos de privilégios de administrador não podem acessar as páginas da Web do usuário final do Workspace por motivos de segurança. Como essas páginas podem existir fora de um firewall, a permissão de tarefas no nível da administração pode representar um risco de segurança. Somente os usuários que têm os privilégios de Administrador do Workspace para formulários AEM ou de Usuário do Workspace para formulários AEM podem acessar as páginas da Web do usuário final do Workspace.
+>Os usuários com determinados tipos de privilégios de administrador não podem acessar as páginas da Web do usuário final do Workspace por motivos de segurança. Como essas páginas podem existir fora de um firewall, a permissão de tarefas no nível da administração pode representar um risco de segurança. Somente os usuários que têm os privilégios de Administrador do AEM Forms Workspace ou Usuário do AEM Forms Workspace podem acessar as páginas da Web do usuário final do Workspace.
 
 >[!NOTE]
 >
->O espaço de trabalho do Flex está obsoleto para a versão do AEM forms.
+>O Flex Workspace está obsoleto para a versão do AEM Forms.
 
 ## Criar uma função {#create-a-role}
 
@@ -143,7 +143,7 @@ Rights Management **Gerenciar Usuários Convidados e Locais:** Pode executar tar
 
 ## Excluir uma função {#delete-a-role}
 
-É possível excluir qualquer uma das funções que você criou, mas não as funções de formulários AEM padrão incluídas no produto.
+É possível excluir qualquer função criada, mas não as funções padrão dos formulários AEM incluídas no produto.
 
 1. No console de administração, clique em Configurações > Gerenciamento de usuários > Gerenciamento de funções e, em seguida, clique em Nome da função.
 
@@ -170,7 +170,7 @@ Você também pode atribuir funções usando a página Gerenciamento de funçõe
 
 ## Alterar permissões de função {#change-role-permissions}
 
-É possível alterar as permissões de qualquer uma das funções criadas. Não é possível alterar as permissões para as funções de formulários AEM padrão incluídas no produto.
+É possível alterar as permissões de qualquer uma das funções criadas. Não é possível alterar as permissões das funções padrão dos formulários do AEM incluídas no produto.
 
 1. No console de administração, clique em Configurações > Gerenciamento de usuários > Gerenciamento de funções e, em seguida, clique em Nome da função.
 
@@ -180,11 +180,11 @@ Você também pode atribuir funções usando a página Gerenciamento de funçõe
 1. Para alterar essas permissões, clique em Localizar permissões, marque as caixas de seleção das permissões a serem adicionadas à função, clique em OK e, em seguida, clique em Salvar.
 1. Para excluir uma permissão, selecione-a, clique em Excluir e em Salvar.
 
-### Permissões de formulários AEM {#aem-forms-permissions}
+### Permissões de formulários do AEM {#aem-forms-permissions}
 
 **ADD_REMOVE_ENDPOINT_PERM:** Adicionar, remover e modificar pontos de extremidade para um serviço
 
-**Logon de Admin Console:** Exibir o console de administração
+**Logon do Admin Console:** Exibir o console de administração
 
 **Modificação de Certificado:** Modifique as configurações de confiança de qualquer certificado no Repositório de Confiança
 
@@ -220,9 +220,9 @@ Você também pode atribuir funções usando a página Gerenciamento de funçõe
 
 **Delegar:** Defina uma ACL em um recurso
 
-**DELETE_VERSION_PERM:** Excluir uma versão de um serviço
+**DELETE_VERSION_PERM:** exclua uma versão de um serviço
 
-**Carregamento de Documentos:** Carregar documentos em formulários AEM
+**Carregamento de Documento:** Carregar documentos em formulários do AEM
 
 **Controle de Domínio:** crie, exclua ou modifique configurações para qualquer domínio de Gerenciamento de Usuários, incluindo seus provedores de autenticação e diretório
 
@@ -282,33 +282,33 @@ Você também pode atribuir funções usando a página Gerenciamento de funçõe
 
 **Gravação do Repositório:** Gravar metadados e conteúdo do repositório
 
-**Proprietário da Política de Alteração de Rights Management:** Proprietário da política de alteração
+**Proprietário da Política de Alteração da Rights Management:** Proprietário da política de alteração
 
-**Logon do Console do Usuário Final do Rights Management:** Logon na Interface do Usuário Final do Rights Management
+**Logon no Console do Usuário Final do Rights Management:** Faça logon na Interface do Usuário Final do Rights Management
 
-**Configuração de Gerenciamento de Rights Management:** Gerenciar configuração do servidor
+**Configuração do Rights Management Manage:** Gerencie a configuração do servidor
 
-Rights Management **Gerenciar Usuários Convidados e Locais:** Gerenciar usuários convidados e locais
+**Gerenciar Usuários Convidados e Locais do Rights Management:** Gerenciar usuários convidados e locais
 
-**Gerenciar Conjuntos de Políticas do Rights Management:** Gerenciar todas as políticas e documentos em qualquer conjunto de políticas
+**Gerenciar Conjuntos de Políticas do Rights Management** Gerencie todas as políticas e documentos em qualquer conjunto de políticas
 
-**Adicionar coordenador do conjunto de políticas do Rights Management:** Adicionar, remover e alterar permissões para coordenadores do conjunto de políticas
+**Coordenador de Adição do Conjunto de Políticas do Rights Management:** Adicione, remova e altere permissões para coordenadores de conjunto de políticas
 
-**Criar política de conjunto de políticas do Rights Management:** Criar uma política para um conjunto de políticas
+**Política Criar Conjunto de Políticas do Rights Management:** Crie uma política para um conjunto de políticas
 
-**Política de Exclusão do Conjunto de Políticas Rights Management:** Remova uma política de um conjunto de políticas
+**Política de Exclusão do Conjunto de Políticas do Rights Management:** Remova uma política de um conjunto de políticas
 
-**Editar Política de Conjunto de Políticas Rights Management:** Editar uma política em um conjunto de políticas
+**Política de Edição de Conjunto de Políticas do Rights Management:** Editar uma política em um conjunto de políticas
 
-**Conjunto de Políticas do Rights Management Gerenciar Editor de Documentos:** Ao criar conjuntos de políticas, atribua aos usuários a função de editor de documentos. O editor do documento é o usuário que protege o documento com uma política.
+**Rights Management Policy Set Gerenciar editor de documentos:** Ao criar conjuntos de políticas, atribua aos usuários a função de editor de documentos. O editor do documento é o usuário que protege o documento com uma política.
 
 **Coordenador de Remoção do Conjunto de Políticas do Rights Management:** Remova um coordenador de conjunto de políticas de um conjunto de políticas
 
-**Revogar documento de conjunto de políticas do Rights Management:** Revogar acesso a documentos em um conjunto de políticas
+**Revogar documento do conjunto de políticas do Rights Management:** Revogar acesso a documentos em um conjunto de políticas
 
-**Política de Rights Management Defina a Política de Alternância:** políticas de alternância para um documento
+**Política de Opção de Definição de Política da Rights Management:** políticas de opção para um documento
 
-**Documento de Cancelamento de Revogação de Definição de Política de Rights Management:** Cancele a Revogação de um documento
+**Documento de Cancelamento da Revogação da Definição de Política do Rights Management:** Cancele a revogação de um documento
 
 **Evento de Exibição do Conjunto de Políticas do Rights Management:** Exiba eventos de política e documento para qualquer política ou documento em um conjunto de políticas
 
