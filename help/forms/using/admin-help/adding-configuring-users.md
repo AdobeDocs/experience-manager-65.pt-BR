@@ -7,9 +7,9 @@ exl-id: 50eea35d-d844-4f4b-9cbe-7d84bd6b1e3b
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+source-git-commit: b631b5d4308a2ad1e2397c60c4ee78ec097beaa9
 workflow-type: tm+mt
-source-wordcount: '1739'
+source-wordcount: '1771'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ Ao criar usuários, você pode adicioná-los a grupos e atribuir funções a ele
 
    >[!NOTE]
    >
-   >Se você encontrar algum problema de logon com o usuário, consulte [Falha do usuário do AEM Forms no JEE ao fazer logon no AEM Forms no OSGi &#x200B;](https://helpx.adobe.com/aem-forms/kb/AEM-users-fails-to-login.html).
+   >Se você encontrar algum problema de logon com o usuário, consulte [Falha do usuário do AEM Forms no JEE ao fazer logon no AEM Forms no OSGi ](https://helpx.adobe.com/aem-forms/kb/AEM-users-fails-to-login.html).
 
 ## Configurações do usuário {#user-settings}
 
@@ -74,7 +74,7 @@ Evite usar caracteres de sublinhado (_) em nomes canônicos, por exemplo, `sampl
 
 **Localidade:** localidade ISO do usuário
 
-**Chave do Calendário Comercial:** permite mapear um calendário comercial para um usuário, com base no valor dessa configuração. Os calendários comerciais definem dias úteis e não úteis. Os formulários AEM podem usar calendários comerciais ao calcular datas e horas futuras para eventos, como lembretes, prazos finais e escalonamentos. A forma como você atribui chaves do calendário de negócios aos usuários depende de você estar usando um domínio corporativo, local ou híbrido. (Consulte [Adicionar domínios](/help/forms/using/admin-help/adding-domains.md#adding-domains).)
+**Chave do Calendário Comercial:** permite mapear um calendário comercial para um usuário, com base no valor dessa configuração. Os calendários comerciais definem dias úteis e não úteis. Os formulários do AEM podem usar calendários de negócios ao calcular datas e horas futuras para eventos, como lembretes, prazos finais e escalonamentos. A forma como você atribui chaves do calendário de negócios aos usuários depende de você estar usando um domínio corporativo, local ou híbrido. (Consulte [Adicionar domínios](/help/forms/using/admin-help/adding-domains.md#adding-domains).)
 
 Se você estiver usando um domínio local ou híbrido, as informações sobre os usuários serão armazenadas somente no banco de dados do Gerenciamento de usuários. Para esses usuários, defina a Chave do calendário comercial como uma string. Em seguida, mapeie a chave do calendário comercial (a sequência de caracteres) para um calendário comercial no fluxo de trabalho de formulários.
 
@@ -90,7 +90,7 @@ Em domínios enterprise, use um atributo não DN como a ID do usuário, pois o D
 
 Certifique-se de que a ID do usuário seja exclusiva. Não use um atribuído a um usuário excluído.
 
-Os formulários AEM não conseguem diferenciar entre contas de usuário que têm IDs de usuário e senhas idênticas, mas pertencem a domínios diferentes. Para evitar esse problema, não crie contas que tenham a mesma ID de usuário em vários domínios.
+Os formulários do AEM não podem diferenciar entre contas de usuário que têm IDs de usuário e senhas idênticas, mas pertencem a domínios diferentes. Para evitar esse problema, não crie contas que tenham a mesma ID de usuário em vários domínios.
 
 Ao usar o SQL Server como banco de dados, você não pode criar uma ID de usuário que exceda 255 caracteres.
 
@@ -160,20 +160,20 @@ Evite criar nomes de usuário que comecem com um sinal numérico (#). A execuç�
 
 >[!NOTE]
 >
->O AEM Forms no JEE também permite que os usuários do complemento AEM forms em execução em um OSGi sejam reconhecidos como usuários do AEM. Isso é necessário para cenários em que o logon único entre o AEM Forms no JEE e o complemento AEM de formulários em execução em um OSGi é necessário (por exemplo, espaço de trabalho do HTML). A operação de exclusão mencionada acima remove um usuário somente do AEM Forms no JEE. O usuário não é excluído do complemento AEM Forms em execução no ambiente OSGi. Mas qualquer tentativa de logon feita após a exclusão do usuário (uma tentativa de logon no servidor JEE do complemento AEM Forms ou no ambiente OSGi do complemento AEM Forms) é negada.
+>O AEM Forms no JEE também permite que os usuários do complemento de formulários do AEM em execução em um OSGi sejam reconhecidos como usuários do AEM. Isso é necessário para cenários em que o logon único entre o AEM Forms no JEE e o complemento do AEM Forms em execução em um OSGi é necessário (por exemplo, espaço de trabalho do HTML). A operação de exclusão mencionada acima remove um usuário somente do AEM Forms no JEE. O usuário não é excluído do complemento AEM Forms em execução no ambiente OSGi. Mas qualquer tentativa de logon feita após a exclusão do usuário (uma tentativa de logon no servidor JEE do complemento AEM Forms ou no ambiente OSGi do complemento AEM Forms) é negada.
 
 ## Criar manipulador de erro de logon personalizado {#create-custom-login-error-handler}
 
-Se um usuário sem os formulários AEM e as permissões do CQ necessários tentar fazer logon nos seguintes aplicativos incorporados ao CQ, o usuário será redirecionado para a página padrão do CQ 404 que contém o rastreamento de erros:
+Se um usuário sem os formulários do AEM e as permissões do CQ necessárias tentar fazer logon nos seguintes aplicativos incorporados ao CQ, o usuário será redirecionado para a página padrão do CQ 404 que contém o rastreamento de erros:
 
 * Solução de gerenciamento de correspondência
-* AEM Forms Workspace
+* AEM forms Workspace
 
-  ***observação &#x200B;**: o Flex Workspace foi descontinuado para a versão de formulários AEM.*
+  ***observação **: o Flex Workspace está obsoleto para a versão do AEM Forms.*
 
 * gerenciador de formulários
 * Relatório de processo
 
 O CQ fornece um mecanismo para substituir o jsp do manipulador 404 padrão.
 
-Para obter detalhes sobre como personalizar a página de tratamento de erros, consulte [Personalizando páginas mostradas pelo Manipulador de erros](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/customizing-errorhandler-pages.html?lang=pt-BR) na documentação do Adobe Experience Manager.
+Para obter detalhes sobre como personalizar a página de tratamento de erros, consulte [Personalizando páginas mostradas pelo Manipulador de erros](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/customizing-errorhandler-pages.html?lang=en) na documentação do Adobe Experience Manager.

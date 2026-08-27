@@ -1,6 +1,6 @@
 ---
 title: Gerenciamento de usuários
-description: O Gerenciamento de usuários permite habilitar o SSO entre módulos de formulários AEM e aplicativos protegidos pelo Netegrity SiteMinder usando SAML. Este documento fornece mais informações sobre o Gerenciamento de usuários.
+description: O Gerenciamento de usuários permite habilitar o SSO entre módulos do AEM Forms e aplicativos protegidos pelo Netegrity SiteMinder usando SAML. Este documento fornece mais informações sobre o Gerenciamento de usuários.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_aem_forms
@@ -9,9 +9,9 @@ exl-id: 1da1f6de-ac0d-4e0d-b8bb-956420e42699
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+source-git-commit: b631b5d4308a2ad1e2397c60c4ee78ec097beaa9
 workflow-type: tm+mt
-source-wordcount: '484'
+source-wordcount: '493'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 > 
 > Verifique se o usuário tem privilégios de administrador para acessar o console do administrador.
 
-O Gerenciamento de usuários permite habilitar o logon único (SSO) entre módulos de formulários AEM e aplicativos protegidos pelo Netegrity SiteMinder usando a SAML (Security Assertion Markup Language). Quando o SSO é implementado, as páginas de logon do usuário dos formulários AEM não são necessárias e não são exibidas se o usuário já estiver autenticado por meio do portal da empresa.
+O Gerenciamento de usuários permite habilitar o logon único (SSO) entre módulos de formulários do AEM e aplicativos protegidos pelo Netegrity SiteMinder usando a SAML (Security Assertion Markup Language). Quando o SSO é implementado, as páginas de logon do usuário dos formulários do AEM não são necessárias e não são exibidas se o usuário já estiver autenticado por meio do portal da empresa.
 
 Para obter informações sobre como melhorar o desempenho da sincronização de diretório e banco de dados para DB2, consulte [Banco de dados IBM DB2: Executando comandos para manutenção regular](/help/forms/using/admin-help/ibm-db2-database-running-commands.md#ibm-db2-database-running-commands-for-regular-maintenance).
 
@@ -32,7 +32,7 @@ Se você tiver um servidor LDAP habilitado para SSL, configure o Gerenciamento d
 
 ## Definição de privilégios de usuário para uso com Segurança de documentos {#setting-user-privileges-for-use-with-document-security}
 
-Crie um usuário administrador que tenha os privilégios apropriados para criar usuários e grupos. Se o ambiente de formulários AEM incluir a Segurança de documentos, conceda o privilégio de gerenciar usuários convidados e locais a um usuário que será o administrador desses usuários. Atribua também a função de Usuário do console de administração, para fornecer ao usuário acesso ao console de administração. (Consulte [Criação e configuração de funções](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles).)
+Crie um usuário administrador que tenha os privilégios apropriados para criar usuários e grupos. Se o ambiente do AEM Forms incluir Segurança de documentos, conceda o privilégio de gerenciar usuários convidados e locais a um usuário que será o administrador desses usuários. Atribua também a função de Usuário do console de administração, para fornecer ao usuário acesso ao console de administração. (Consulte [Criação e configuração de funções](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles).)
 
 Para exibir usuários e grupos em domínios selecionados durante pesquisas de usuário de política, um superadministrador ou administrador de conjunto de políticas deve selecionar e adicionar domínios (criados no Gerenciamento de usuários) à lista de usuários e grupos visíveis para cada conjunto de políticas criado.
 
@@ -44,7 +44,7 @@ A lista de usuários e grupos visíveis é visível para o coordenador de conjun
 
 ### Definir usuários e grupos visíveis {#set-visible-users-and-groups}
 
-Depois de instalar e configurar o ambiente de formulários AEM com a Segurança de documentos, configure todos os domínios apropriados no Gerenciamento de usuários.
+Depois de instalar e configurar o ambiente do AEM Forms com a Segurança de documentos, configure todos os domínios apropriados no Gerenciamento de usuários.
 
 1. No console de administração, clique em Serviços > Segurança de documentos > Políticas e, em seguida, clique na guia Conjuntos de políticas.
 1. Selecione Conjunto de políticas globais e clique na guia Usuários e grupos visíveis.
@@ -58,4 +58,4 @@ Os usuários com determinados tipos de privilégios de administrador não podem 
 
 >[!NOTE]
 >
->O espaço de trabalho do Flex está obsoleto para a versão do AEM forms.
+>O Flex Workspace está obsoleto para a versão do AEM Forms.
