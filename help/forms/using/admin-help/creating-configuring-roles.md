@@ -78,7 +78,7 @@ As seguintes funções padrão adicionais podem ser incluídas, dependendo dos c
 
 **Administrador do AEM Forms Workspace:** pode exibir e modificar configurações na página Workspace no Console de Administração
 
-***observação **: o Flex Workspace está obsoleto para a versão do AEM Forms.*
+***observação &#x200B;**: o Flex Workspace está obsoleto para a versão do AEM Forms.*
 
 **Usuário do Workspace:** pode fazer logon no aplicativo de usuário final do Workspace
 

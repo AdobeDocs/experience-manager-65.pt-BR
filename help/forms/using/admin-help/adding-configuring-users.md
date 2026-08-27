@@ -42,7 +42,7 @@ Ao criar usuários, você pode adicioná-los a grupos e atribuir funções a ele
 
    >[!NOTE]
    >
-   >Se você encontrar algum problema de logon com o usuário, consulte [Falha do usuário do AEM Forms no JEE ao fazer logon no AEM Forms no OSGi ](https://helpx.adobe.com/aem-forms/kb/AEM-users-fails-to-login.html).
+   >Se você encontrar algum problema de logon com o usuário, consulte [Falha do usuário do AEM Forms no JEE ao fazer logon no AEM Forms no OSGi &#x200B;](https://helpx.adobe.com/aem-forms/kb/AEM-users-fails-to-login.html).
 
 ## Configurações do usuário {#user-settings}
 
@@ -169,7 +169,7 @@ Se um usuário sem os formulários do AEM e as permissões do CQ necessárias te
 * Solução de gerenciamento de correspondência
 * AEM forms Workspace
 
-  ***observação **: o Flex Workspace está obsoleto para a versão do AEM Forms.*
+  ***observação &#x200B;**: o Flex Workspace está obsoleto para a versão do AEM Forms.*
 
 * gerenciador de formulários
 * Relatório de processo
