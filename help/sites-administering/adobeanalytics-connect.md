@@ -10,9 +10,9 @@ exl-id: 8262bbf9-a982-479b-a2b5-f8782dd4182d
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 36265810f0284acfd13dfd01d89c250d9923cd45
+source-git-commit: f6f6552b10cbc84d9e39e46905c2fa68201d4d96
 workflow-type: tm+mt
-source-wordcount: '1491'
+source-wordcount: '1582'
 ht-degree: 6%
 
 ---
@@ -51,7 +51,7 @@ Antes de continuar, verifique se suas credenciais permitem fazer logon no Adobe 
 
 ### Configuração do AEM para usar seus data centers da Adobe Analytics {#configuring-aem-to-use-your-adobe-analytics-data-centers}
 
-Os [data centers](https://experienceleague.adobe.com/docs/analytics/analyze/reports-analytics/reporting-interface/overview-data-collection.html?lang=pt-BR) da Adobe Analytics coletam, processam e armazenam dados associados ao conjunto de relatórios do Adobe Analytics. Configure o AEM para usar o data center que hospeda o conjunto de relatórios do Adobe Analytics. O data center é mencionado em seu contrato. Entre em contato com um administrador em sua organização para obter essas informações.
+Os [data centers](https://experienceleague.adobe.com/docs/analytics/analyze/reports-analytics/reporting-interface/overview-data-collection.html) da Adobe Analytics coletam, processam e armazenam dados associados ao conjunto de relatórios do Adobe Analytics. Configure o AEM para usar o data center que hospeda o conjunto de relatórios do Adobe Analytics. O data center é mencionado em seu contrato. Entre em contato com um administrador em sua organização para obter essas informações.
 
 Se necessário, use o seguinte para ser roteado para o data center correto: `https://api.omniture.com/`.
 
@@ -81,6 +81,10 @@ Use o [Console da Web para configurar o pacote OSGi](/help/sites-deploying/confi
 1. Clique em Salvar.
 
 ## Configuração da conexão com o Adobe Analytics {#configuring-the-connection-to-adobe-analytics}
+
+>[!CAUTION]
+>
+>A API do [Adobe Analytics 1.4 chegou ao fim da vida útil](https://developer.adobe.com/analytics-apis/docs/1.4/guides/eol/). Como resultado, as configurações do Adobe Analytics que usam credenciais de usuário (nome de usuário e senha) não são mais compatíveis.
 
 >[!CAUTION]
 >
@@ -150,21 +154,21 @@ Comece abrindo o painel. Pressione a seta para baixo ao lado de **Servidores**:
 
 * **Servidor de Acompanhamento**
 
-   * contém o URL usado para enviar chamadas do Adobe Analytics
+  * contém o URL usado para enviar chamadas do Adobe Analytics
 
-      * `cname` - o padrão é o *Nome da empresa* da conta da Adobe Analytics
-      * `d1` - corresponde ao data center para o qual as informações são enviadas (`d1`, `d2` ou `d3`)
-      * `sc.omtrdc.net` - nome de domínio
+    * `cname` - o padrão é o *Nome da empresa* da conta da Adobe Analytics
+    * `d1` - corresponde ao data center para o qual as informações são enviadas (`d1`, `d2` ou `d3`)
+    * `sc.omtrdc.net` - nome de domínio
 
 * **Servidor de Rastreamento Seguro**
 
-   * Tem os mesmos segmentos que o servidor de rastreamento
-   * Usado para enviar dados de páginas seguras (`https://`)
+  * Tem os mesmos segmentos que o servidor de rastreamento
+  * Usado para enviar dados de páginas seguras (`https://`)
 
 * **Namespace do visitante**
 
-   * O namespace determina a primeira parte do URL de rastreamento.
-   * Por exemplo, alterar o namespace para **CNAME** faz com que as chamadas feitas para o Adobe Analytics se pareçam com **CNAME.d1.omtrdc.net** em vez do padrão.
+  * O namespace determina a primeira parte do URL de rastreamento.
+  * Por exemplo, alterar o namespace para **CNAME** faz com que as chamadas feitas para o Adobe Analytics se pareçam com **CNAME.d1.omtrdc.net** em vez do padrão.
 
 ## Associar uma página a uma estrutura do Adobe Analytics {#associating-a-page-with-a-adobe-analytics-framework}
 
@@ -174,7 +178,7 @@ Os descendentes da página herdam a associação com a estrutura. Por exemplo, a
 
 1. No console **Sites**, selecione a página que deseja configurar com rastreamento.
 1. Abra as **[Propriedades da Página](/help/sites-authoring/editing-page-properties.md)**, diretamente do console ou do editor de páginas.
-1. Abra a guia **&#x200B; Cloud Services**.
+1. Abra a guia** Cloud Services**.
 
 1. Use o menu suspenso **Adicionar configuração** para selecionar **Adobe Analytics** entre as opções disponíveis. Se a herança for colocada, desative-a antes que o seletor fique disponível.
 
@@ -183,7 +187,7 @@ Os descendentes da página herdam a associação com a estrutura. Por exemplo, a
 1. Selecione **Salvar e fechar**.
 1. Para ativar a página e quaisquer configurações/arquivos conectados, **[Publique](/help/sites-authoring/publishing-pages.md)** a página.
 1. A etapa final é visitar a página na instância de publicação e procurar uma palavra-chave (por exemplo, berinjela) usando o componente **Pesquisa**.
-1. Você pode verificar as chamadas feitas ao Adobe Analytics usando uma ferramenta apropriada; por exemplo, [Adobe Experience Cloud Debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html?lang=pt-BR).
+1. Você pode verificar as chamadas feitas ao Adobe Analytics usando uma ferramenta apropriada; por exemplo, [Adobe Experience Cloud Debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html).
 1. Usando o exemplo fornecido, a chamada deve conter o valor inserido (ou seja, eggplant) no eVar7 e a lista de eventos deve conter event3.
 
 ### Visualizações de página {#page-views}
