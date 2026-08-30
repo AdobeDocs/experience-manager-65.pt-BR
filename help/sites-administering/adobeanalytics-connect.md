@@ -10,9 +10,9 @@ exl-id: 8262bbf9-a982-479b-a2b5-f8782dd4182d
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 36265810f0284acfd13dfd01d89c250d9923cd45
+source-git-commit: f6f6552b10cbc84d9e39e46905c2fa68201d4d96
 workflow-type: tm+mt
-source-wordcount: '1491'
+source-wordcount: '1582'
 ht-degree: 6%
 
 ---
@@ -84,6 +84,10 @@ Use o [Console da Web para configurar o pacote OSGi](/help/sites-deploying/confi
 
 >[!CAUTION]
 >
+>A API do [Adobe Analytics 1.4 chegou ao fim da vida útil](https://developer.adobe.com/analytics-apis/docs/1.4/guides/eol/). Como resultado, as configurações do Adobe Analytics que usam credenciais de usuário (nome de usuário e senha) não são mais compatíveis.
+
+>[!CAUTION]
+>
 >Devido a alterações de segurança na API do Adobe Analytics, não é mais possível usar a versão do Activity Map incluída no AEM.
 >
 >O plug-in [ActivityMap fornecido pelo Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=pt-BR) agora deve ser usado.
@@ -150,21 +154,21 @@ Comece abrindo o painel. Pressione a seta para baixo ao lado de **Servidores**:
 
 * **Servidor de Acompanhamento**
 
-   * contém o URL usado para enviar chamadas do Adobe Analytics
+  * contém o URL usado para enviar chamadas do Adobe Analytics
 
-      * `cname` - o padrão é o *Nome da empresa* da conta da Adobe Analytics
-      * `d1` - corresponde ao data center para o qual as informações são enviadas (`d1`, `d2` ou `d3`)
-      * `sc.omtrdc.net` - nome de domínio
+    * `cname` - o padrão é o *Nome da empresa* da conta da Adobe Analytics
+    * `d1` - corresponde ao data center para o qual as informações são enviadas (`d1`, `d2` ou `d3`)
+    * `sc.omtrdc.net` - nome de domínio
 
 * **Servidor de Rastreamento Seguro**
 
-   * Tem os mesmos segmentos que o servidor de rastreamento
-   * Usado para enviar dados de páginas seguras (`https://`)
+  * Tem os mesmos segmentos que o servidor de rastreamento
+  * Usado para enviar dados de páginas seguras (`https://`)
 
 * **Namespace do visitante**
 
-   * O namespace determina a primeira parte do URL de rastreamento.
-   * Por exemplo, alterar o namespace para **CNAME** faz com que as chamadas feitas para o Adobe Analytics se pareçam com **CNAME.d1.omtrdc.net** em vez do padrão.
+  * O namespace determina a primeira parte do URL de rastreamento.
+  * Por exemplo, alterar o namespace para **CNAME** faz com que as chamadas feitas para o Adobe Analytics se pareçam com **CNAME.d1.omtrdc.net** em vez do padrão.
 
 ## Associar uma página a uma estrutura do Adobe Analytics {#associating-a-page-with-a-adobe-analytics-framework}
 

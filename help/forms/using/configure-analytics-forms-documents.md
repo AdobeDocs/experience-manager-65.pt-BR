@@ -9,14 +9,20 @@ exl-id: 72f0f8e3-e70b-4f78-aa0e-b31768b536f7
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 feature: Adaptive Forms
-source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
+source-git-commit: f6f6552b10cbc84d9e39e46905c2fa68201d4d96
 workflow-type: tm+mt
-source-wordcount: '1531'
-ht-degree: 1%
+source-wordcount: '1611'
+ht-degree: 2%
 
 ---
 
-# Analytics usando a estrutura Cloud Service {#analyticsusingcloudframework}
+# Analytics usando a estrutura do Cloud Service {#analyticsusingcloudframework}
+
+>[!CAUTION]
+>
+>O painel do Analytics para AEM Forms está obsoleto. Não é mais possível exibir relatórios de análise no AEM Forms. Para exibir os dados de análise de formulários, use a interface do usuário do Adobe Analytics.
+>
+>Além disso, a API do [Adobe Analytics 1.4 chegou ao fim da vida útil](https://developer.adobe.com/analytics-apis/docs/1.4/guides/eol/). Como resultado, as configurações do Adobe Analytics que usam credenciais de usuário (nome de usuário e senha) não são mais compatíveis.
 
 O AEM Forms integra-se ao Analytics, o que permite capturar e rastrear as métricas de desempenho dos formulários e documentos publicados. O objetivo por trás da análise dessas métricas é tomar decisões informadas com base em dados sobre as alterações necessárias para tornar os formulários ou documentos mais utilizáveis.
 
@@ -30,7 +36,7 @@ Também é possível executar a análise usando o Adobe Launch. Para obter mais 
 
 ## Visão geral {#overview}
 
-Use o Adobe Analytics para descobrir padrões de interação e problemas que os usuários enfrentam ao usar formulários adaptáveis, formulários HTML5 e comunicação interativa. Pronto para uso, o Adobe analytics rastreia e armazena informações sobre os seguintes parâmetros:
+Você pode usar o Adobe Analytics para descobrir padrões de interação e problemas que os usuários enfrentam ao usar formulários adaptáveis, formulários HTML5 e comunicação interativa. Imediatamente, o Adobe Analytics rastreia e armazena informações sobre os seguintes parâmetros:
 
 * **Tempo médio de preenchimento**: tempo médio gasto para preencher o formulário.
 * **Representações**: número de vezes que um formulário é aberto.
@@ -51,7 +57,7 @@ Os dados do Analytics são armazenados em repositórios específicos do cliente,
 Execute as seguintes etapas para criar um conjunto de relatórios.
 
 1. Fazer logon em [https://sc.omniture.com/login/](https://sc.omniture.com/login/)
-1. No Marketing Cloud, selecione **Admin** > **Admin Console** > **Conjuntos de relatórios**.
+1. Na Marketing Cloud, selecione **Admin** > **Admin Console** > **Conjuntos de Relatórios**.
 1. Selecione **Criar novo** > **Conjunto de relatórios** no Gerenciador de conjunto de relatórios.
 
    ![Criar novo Conjunto de Relatórios](assets/newreportsuite_new.png)
@@ -64,7 +70,7 @@ Execute as seguintes etapas para criar um conjunto de relatórios.
 1. Selecione um **Fuso Horário** na lista suspensa. Todos os dados que entram nesse conjunto de relatórios são registrados com base no fuso horário definido.
 1. Deixe os campos **URL Base** e **Página Padrão** vazios. Esses dois valores são usados somente na interface do Adobe Marketing Cloud para vincular ao seu site.
 1. Deixe a **Data de ativação** definida como hoje. A Data de ativação determina o dia em que o conjunto de relatórios é ativado.
-1. No campo **Exibições de página estimadas por dia**, digite 100. Use esse campo para estimar o número de exibições de página que você antecipa para seu site por dia. Essa estimativa permite que o Adobe coloque em prática a quantidade apropriada de hardware para processar os dados que você coletará.
+1. No campo **Exibições de página estimadas por dia**, digite 100. Use esse campo para estimar o número de exibições de página que você antecipa para seu site por dia. Essa estimativa permite que a Adobe coloque em prática a quantidade apropriada de hardware para processar os dados que você vai coletar.
 1. Selecione uma **Moeda de base** na lista suspensa. Todos os dados de moeda que entram nesse conjunto de relatórios são convertidos e armazenados nesse formato de moeda.
 1. Clique em **Criar Conjunto de Relatórios**. Você deve ver a atualização da página com uma mensagem de que o conjunto de relatórios foi criado com sucesso.
 1. Selecione o conjunto de relatórios recém-criado. Navegue até **Editar configurações** > **Geral** > **Configurações gerais de conta**.
@@ -106,12 +112,12 @@ Execute as seguintes etapas para criar um conjunto de relatórios.
 
 1. Faça logout da conta do Adobe Marketing Cloud.
 
-## Criação da configuração de Cloud Service {#creating-cloud-service-configuration}
+## Criação da configuração do Cloud Service {#creating-cloud-service-configuration}
 
-Cloud Service é a informação sobre sua conta Adobe Analytics. A configuração permite que o Adobe Experience Manager (AEM) se conecte ao Adobe Analytics. Crie uma configuração separada para cada conta do Analytics que você usa.
+A configuração do Cloud Service é uma informação sobre sua conta Adobe Analytics. A configuração permite que o Adobe Experience Manager (AEM) se conecte ao Adobe Analytics. Crie uma configuração separada para cada conta do Analytics que você usa.
 
 1. Faça logon na instância de autor do AEM como administrador.
-1. No canto superior esquerdo, clique em **Adobe Experience Manager** > **Ferramentas** ![ícone de martelo](/help/forms/using/assets/tools.png) > **Cloud Service** > **Cloud Service herdados**.
+1. No canto superior esquerdo, clique em **Adobe Experience Manager** > **Ferramentas** ![ícone de martelo](/help/forms/using/assets/tools.png) > **Serviços da nuvem** > **Serviços da nuvem herdados**.
 1. Localizar ícone do **Adobe Analytics**. Clique em **Mostrar configurações** e prossiga para clique em **[+]** para adicionar nova configuração.
 
    Se você for um novo usuário, clique em **Configurar agora**.
@@ -127,7 +133,7 @@ Cloud Service é a informação sobre sua conta Adobe Analytics. A configuraçã
 
 1. Clique em **Conectar ao Analytics**. Uma caixa de diálogo é exibida com a mensagem de que a conexão foi bem-sucedida. Clique em **OK**.
 
-## Criação da estrutura Cloud Service {#creating-cloud-service-framework}
+## Criação da estrutura do Cloud Service {#creating-cloud-service-framework}
 
 Uma estrutura Adobe Analytics é um conjunto de mapeamentos entre variáveis Adobe Analytics e variáveis AEM. Use uma estrutura para configurar como seus formulários preenchem dados para relatórios do Adobe Analytics. As estruturas são associadas a uma configuração do Adobe Analytics. É possível criar várias estruturas para cada configuração.
 
@@ -147,13 +153,13 @@ Uma estrutura Adobe Analytics é um conjunto de mapeamentos entre variáveis Ado
 1. Arraste um **componente do Form Analytics** da categoria **other** do Sidekick para a estrutura.
 1. Para mapear variáveis do Analytics com variáveis definidas no componente, arraste uma variável do Localizador de conteúdo do AEM para um campo no componente de rastreamento.
 
-   ![Mapeamento de variáveis AEM com variáveis Adobe Analytics](assets/analytics_new.png)
+   ![Mapeamento de variáveis do AEM com variáveis do Adobe Analytics](assets/analytics_new.png)
 
 1. Ative a estrutura usando a **guia de página** no sidekick, clique em **Ativar estrutura**.
 
 ## Configuração do serviço de configuração do AEM Forms Analytics {#configuring-aem-forms-analytics-configuration-service}
 
-1. Na instância do autor, abra o Gerenciador de Configuração do Console Web AEM em `https://<server>:<port>;/system/console/configMgr`.
+1. Na instância do autor, abra o Gerenciador de Configuração do Console da Web do AEM em `https://<server>:<port>;/system/console/configMgr`.
 1. Localizar e abrir a Configuração do AEM Forms Analytics
 
    ![Serviço de configuração do AEM Forms Analytics](assets/analytics_configuration.png)
@@ -162,7 +168,7 @@ Uma estrutura Adobe Analytics é um conjunto de mapeamentos entre variáveis Ado
 
 1. Especifique os valores apropriados para os campos a seguir e clique em **Salvar**.
 
-   * **Estrutura do SiteCatalyst**: selecione a estrutura/configuração definida na seção Definir uma estrutura para rastreamento.
+   * **Estrutura do SiteCatalyst**: selecione a estrutura/configuração definida na seção Configurar uma estrutura para rastreamento.
    * **Linha de base de rastreamento de tempo de campo**: especifique a duração, em segundos, após a qual a visita de campo deve ser rastreada. O valor padrão é 0. Quando o valor é maior que 0 (zero), dois eventos de rastreamento separados são enviados ao servidor do Adobe Analytics. O primeiro evento instrui o servidor do Analytics a interromper o rastreamento do campo encerrado. O segundo evento é enviado após o término da duração especificada. O segundo evento instrui o servidor do Analytics a começar a rastrear o campo visitado. Usar dois eventos separados ajuda a medir com precisão o tempo gasto em um campo. Quando o valor é 0 (zero), o evento de rastreamento único é enviado ao servidor do Adobe Analytics.
 
    * **sincronização de relatório do Analytics cron**: especifique a expressão cron para obter relatórios do Adobe Analytics. O valor padrão é 0 0 2 ? &#42; &#42;.
@@ -179,7 +185,7 @@ Agora é possível habilitar a análise de formulários e gerar um relatório de
 
 ## Ativação do Analytics para um formulário ou documento {#enabling-analytics-for-a-form-or-document}
 
-1. Fazer logon no portal AEM em `https://[hostname]:'port'`.
+1. Faça logon no portal do AEM em `https://[hostname]:'port'`.
 1. Clique em **Forms > Forms e Documentos**, selecione um formulário ou documento e clique em **Habilitar o Analytics**. A análise está ativada.
 
    ![Habilitando a análise de um formulário ou documento](assets/enable-analytics-1.png)
