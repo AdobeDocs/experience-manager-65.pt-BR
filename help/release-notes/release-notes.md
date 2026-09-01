@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 4a2915dc890887ad8c7174d3ef5f1de8413fd8f4
+source-git-commit: b30bc6ce844cacce396a09c5195c48083b96a9ec
 workflow-type: tm+mt
-source-wordcount: '7412'
+source-wordcount: '7444'
 ht-degree: 4%
 
 ---
@@ -372,7 +372,8 @@ A edição de arquivos JSP agora funciona conforme esperado no CRXDE Lite após 
 
 #### Segurança{#foundation-security-6525}
 
-A AEM agora inclui na lista de permissões palavras-chave adicionais que contêm segredo do cliente. A criação de configurações não falha mais quando as integrações compatíveis usam esses padrões de nomenclatura de segredo do cliente. (GRANITE-66495)
+* A AEM agora inclui na lista de permissões palavras-chave adicionais que contêm segredo do cliente. A criação de configurações não falha mais quando as integrações compatíveis usam esses padrões de nomenclatura de segredo do cliente. (GRANITE-66495)
+* O pacote XSS do Sling agora usa a biblioteca Java HTML Sanitizer, e o uso do método `XSSAPI#filterHTML()` deve ser usado para renderizar o conteúdo do HTML com segurança e não para transmitir dados para outras APIs. (GRANITE-63840)
 
 <!-- #### Sling{#foundation-sling-6525} -->
 
@@ -595,7 +596,7 @@ Para garantir a operação correta, você deve adicionar as seguintes propriedad
 
 ### Problema conhecido do AEM Sites {#known-issues-aem-sites-6525}
 
-A visualização dos fragmentos de conteúdo falha devido à proteção do DoS para uma grande árvore de fragmentos. Consulte o artigo [KB sobre as opções de configuração padrão do GraphQL Query Executor](https://experienceleague.adobe.com/pt-br/docs/experience-cloud-kcs/kbarticles/ka-23945) (SITES-17934)
+A visualização dos fragmentos de conteúdo falha devido à proteção do DoS para uma grande árvore de fragmentos. Consulte o artigo [KB sobre as opções de configuração padrão do GraphQL Query Executor](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-23945) (SITES-17934)
 
 ### Problemas conhecidos do AEM Forms {#known-issues-aem-forms-6525}
 
@@ -630,12 +631,12 @@ Os arquivos zip a seguir contêm os documentos de texto que listam os pacotes OS
 Esses sites estão disponíveis somente para clientes do. Se você for cliente e precisar de acesso, entre em contato com o seu gerente de conta da Adobe.
 
 * [Download do produto em licensing.adobe.com](https://licensing.adobe.com/)
-* [Fale com o suporte ao cliente da Adobe](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#).
+* [Fale com o suporte ao cliente da Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#).
 
 >[!MORELIKETHIS]
 >
 >* [[!DNL Experience Manager] página do produto](https://business.adobe.com/br/products/experience-manager/adobe-experience-manager.html)
->* [[!DNL Experience Manager] Documentação do 6.5](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65)
+>* [[!DNL Experience Manager] Documentação do 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65)
 >* [Inscreva-se para obter atualizações de produto prioritárias da Adobe](https://www.adobe.com/subscription/priority-product-update.html)
 
 
