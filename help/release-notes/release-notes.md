@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 4a2915dc890887ad8c7174d3ef5f1de8413fd8f4
+source-git-commit: b30bc6ce844cacce396a09c5195c48083b96a9ec
 workflow-type: tm+mt
-source-wordcount: '7412'
+source-wordcount: '7444'
 ht-degree: 4%
 
 ---
@@ -372,7 +372,8 @@ A edição de arquivos JSP agora funciona conforme esperado no CRXDE Lite após 
 
 #### Segurança{#foundation-security-6525}
 
-A AEM agora inclui na lista de permissões palavras-chave adicionais que contêm segredo do cliente. A criação de configurações não falha mais quando as integrações compatíveis usam esses padrões de nomenclatura de segredo do cliente. (GRANITE-66495)
+* A AEM agora inclui na lista de permissões palavras-chave adicionais que contêm segredo do cliente. A criação de configurações não falha mais quando as integrações compatíveis usam esses padrões de nomenclatura de segredo do cliente. (GRANITE-66495)
+* O pacote XSS do Sling agora usa a biblioteca Java HTML Sanitizer, e o uso do método `XSSAPI#filterHTML()` deve ser usado para renderizar o conteúdo do HTML com segurança e não para transmitir dados para outras APIs. (GRANITE-63840)
 
 <!-- #### Sling{#foundation-sling-6525} -->
 
