@@ -6,9 +6,9 @@ feature: Adaptive Forms,Foundation Components
 exl-id: dcf023a1-8735-48cb-b3ea-d17357eeedaf
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: f67bc6dce0f923294fba7d543eb3b170f992182f
 workflow-type: tm+mt
-source-wordcount: '2961'
+source-wordcount: '3002'
 ht-degree: 4%
 
 ---
@@ -88,6 +88,10 @@ Para ativar a funcionalidade completa do componente de Contêiner adaptável do 
        <sly data-sly-call="${clientlib.css @ categories='core.forms.components.runtime.all'}"/>
        </sly> 
    ```
+
+   >[!NOTE]
+   >
+   >`core.forms.components.runtime.all` inclui todos os componentes prontos para uso (OOTB). Em vez disso, crie uma biblioteca de cliente personalizada que inclua apenas os componentes que fazem parte da política de design e que devem ser incluídos no formulário e adicione-a à página.
 
 1. Abra o arquivo `/apps/[your-sites-project]/components/page/customfooterlibs.html` e adicione o seguinte código ao arquivo:
 
