@@ -8,7 +8,7 @@ feature: Commerce Integration Framework
 role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
-source-wordcount: '838'
+source-wordcount: '891'
 ht-degree: 88%
 
 ---
@@ -30,17 +30,17 @@ As marcas podem integrar o Experience Manager com o Adobe Commerce (que faz part
 * Enriquecer e diferenciar as experiências para clientes
 * Simplificar a criação com acesso a dados comerciais
 
-## Introdução à Estrutura de Integração (CIF) do AEM Commerce {#cif-intro}
+## Introdução ao Commerce Integration Framework (CIF) do AEM {#cif-intro}
 
 Como esses projetos têm de lidar com a complexidade da integração de uma solução comercial. Uma solução comercial pode ser qualquer coisa, desde uma solução comercial, como o Adobe Commerce, até um conjunto de serviços comerciais personalizados. A integração é altamente dependente dos casos de uso e do ecossistema. Ela costuma tocar em vários lugares e vem em vários tipos diferentes:
 
 * Integração de um ecossistema complexo e dinâmico (por exemplo, catálogos de produtos)
-* As necessidades da empresa de gerenciar o conteúdo do produto com seu próprio ciclo de vida de forma eficiente e omnicanal
+* As necessidades empresariais de gerenciar o conteúdo do produto com seu próprio ciclo de vida de forma eficiente e omnicanal
 * Criação de jornadas de compras complexas e personalizadas para várias pessoas
 * Capacidade de adaptar e inovar rapidamente no back-end e no front-end
 * Execução de uma infraestrutura E2E escalável e estável, criada para desempenho máximo (Promoções relâmpagos, Black Friday...). Isso inclui o gerenciamento de cache e pesquisa unificados.
 
-Essa complexidade abre as portas para possíveis falhas, aumento de TCO, atrasos e redução da realização de valores. Essas razões levaram ao desenvolvimento da Estrutura de Integração do Commerce (CIF), um complemento do Experience Manager. A CIF amplia o Experience Manager com recursos de comércio e padroniza a integração com um mecanismo de comércio. O resultado é uma solução estável, escalável e duradoura com baixo TCO. Ela libera inovações técnicas e comerciais com ferramentas ágeis e recursos perfeitamente integrados para criar experiências comerciais atraentes.
+Essa complexidade abre as portas para possíveis falhas, aumento de TCO, atrasos e redução da realização de valores. Essas razões levaram ao desenvolvimento do Commerce Integration Framework (CIF), um complemento do Experience Manager. A CIF amplia o Experience Manager com recursos de comércio e padroniza a integração com um mecanismo de comércio. O resultado é uma solução estável, escalável e duradoura com baixo TCO. Ela libera inovações técnicas e comerciais com ferramentas ágeis e recursos perfeitamente integrados para criar experiências comerciais atraentes.
 
 ![Elementos da CIF](./assets/CIF/CIF_Overview.png)
 
@@ -75,8 +75,8 @@ Conecte seu ecossistema (por exemplo, uma solução comercial) com a Experience 
 A CIF oferece suporte a clientes com esquemas de integração padronizados com base nas práticas recomendadas. Isso ajuda os clientes a terem sucesso atualmente e é flexível para crescer com o cliente e se adaptar a requisitos futuros:
 
 * Elimina desafios típicos em integrações de catálogos de produtos que possam ocorrer. Exemplos:
-   * Problemas de desempenho com um volume grande do catálogo ou sua complexidade
-   * Sem acesso aos dados preparados
-   * Necessidade de dados e experiências do produto em tempo real
+  * Problemas de desempenho com um volume grande do catálogo ou sua complexidade
+  * Sem acesso aos dados preparados
+  * Necessidade de dados e experiências do produto em tempo real
 * Uma maturidade digital crescente resulta na necessidade de gerenciamento de experiência. A CIF é fornecida com recursos de gerenciamento da experiência do produto que podem ser incorporados de forma incremental, sem esforço adicional da TI.
 * Pronto para omnicanal: a CIF é compatível com diversas tecnologias touchpoint (lado do servidor, híbridas, lado do cliente) com padrões, aceleradores e componentes principais.
