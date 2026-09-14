@@ -14,9 +14,7 @@ source-git-commit: ee6294a03b2e4faf4e3c2dc8a466d03a0fb8a28a
 workflow-type: tm+mt
 source-wordcount: '5344'
 ht-degree: 70%
-
 ---
-
 # Criação de conteúdo direcionado usando o modo Direcionamento{#authoring-targeted-content-using-targeting-mode}
 
 Com o modo de direcionamento, você pode criar conteúdo direcionado para o AEM. O modo de direcionamento e o componente do Target fornecem ferramentas para a criação de conteúdo para experiências:
