@@ -8,13 +8,12 @@ geptopics: SG_AEMFORMS/categories/jee
 role: Admin
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
-source-git-commit: ebb61f2c5056a780e829e64031f8eba69a8ae25b
+exl-id: 31b52a82-5062-403e-bba7-e6a7e32ee961
+source-git-commit: 913e249ba52f1ee262ed78167ce3b2a857e86213
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '334'
 ht-degree: 1%
-
 ---
-
 # Como abrir o PDF forms baseado em XFA no Firefox e no Chrome
 
 ## Problema
@@ -49,11 +48,11 @@ Para usar o PDF forms baseado em XFA no Firefox e no Chrome, execute as seguinte
 
 1. Clique em Desativar no Visualizador do Chrome PDF e em Ativar no Plug-in do Adobe PDF.
    ![chrome-pdf-viewer](/help/forms/using/assets/chrome-image.png)
-Para obter mais informações, consulte a documentação do [plug-in do Adobe PDF](https://support.google.com/chrome/?hl=en&visit_id=638803785294106945-2276548125&rd=4&topic=3421431#topic=7439538) da Google.
+   Para obter mais informações, consulte a documentação do [plug-in do Adobe PDF](https://support.google.com/chrome/?hl=en&visit_id=638803785294106945-2276548125&rd=4&topic=3421431#topic=7439538) da Google.
 
 >[!NOTE]
 > 
 > O LiveCycle ES4 oferece suporte à renderização de formulários baseados em XFA no HTML5, de modo que os formulários possam ser abertos em navegadores com suporte ao HTML5, incluindo aqueles executados em dispositivos móveis como o iPad. A representação HTML5 dos formulários mantém o layout do design do formulário e é compatível com a maioria das lógicas de formulário (como JavaScript, cálculo de formulário e validações de formulário) incorporadas ao modelo de formulário XFA. Dessa forma, seus investimentos em tecnologia em formulários XFA são transferidos facilmente para dispositivos em que a execução do plug-in Adobe Reader não é viável.
->Para obter mais informações, consulte a [documentação do produto LiveCycle](https://business.adobe.com/br/products/experience-manager/forms/aem-forms.html).
+>Para obter mais informações, consulte a [documentação do produto LiveCycle](https://business.adobe.com/products/experience-manager/forms/aem-forms.html).
 
-[Avisos legais](https://chl-author-preview.corp.adobe.com/content/help/en/legal/legal-notices.html)    |    [Política de Privacidade Online](https://www.adobe.com/br/privacy.html)
+[Avisos legais](https://chl-author-preview.corp.adobe.com/content/help/en/legal/legal-notices.html)    | [Política de Privacidade Online](https://www.adobe.com/br/privacy.html)
