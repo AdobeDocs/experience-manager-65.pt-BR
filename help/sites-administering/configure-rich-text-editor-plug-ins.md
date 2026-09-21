@@ -8,11 +8,9 @@ feature: Configuring
 role: Admin
 source-git-commit: f64a1014dfd1155bcf815e75a27102244ef6c6de
 workflow-type: tm+mt
-source-wordcount: '4391'
+source-wordcount: '4473'
 ht-degree: 2%
-
 ---
-
 
 # Configurar os plug-ins do Editor de Rich Text {#configure-the-rich-text-editor-plug-ins}
 
@@ -39,16 +37,16 @@ Por padrão, os plug-ins `format`, `link`, `list`, `justify` e `control` e todos
 
    * Dependendo do componente, os nós principais são:
 
-      * `config: .../text/cq:editConfig/cq:inplaceEditing/config`
-      * um nó de configuração alternativo: `.../text/cq:editConfig/cq:inplaceEditing/inplaceEditingTextConfig`
-      * `text: .../text/dialog/items/tab1/items/text`
+     * `config: .../text/cq:editConfig/cq:inplaceEditing/config`
+     * um nó de configuração alternativo: `.../text/cq:editConfig/cq:inplaceEditing/inplaceEditingTextConfig`
+     * `text: .../text/dialog/items/tab1/items/text`
 
    * São do tipo: **jcr:primaryType** `cq:Widget`
    * Ambos têm as seguintes propriedades:
 
-      * **Nome** `name`
-      * **Tipo** `String`
-      * **Valor** `./text`
+     * **Nome** `name`
+     * **Tipo** `String`
+     * **Valor** `./text`
 
 1. Dependendo da interface para a qual você está configurando, crie um nó `<rtePlugins-node>`, se ele não existir:
 
@@ -65,7 +63,7 @@ Depois de ativar um plug-in, siga estas diretrizes para configurar a propriedade
 | | Habilitar todos os recursos | Habilitar alguns recursos específicos | Desabilitar todos os recursos |
 |---|---|---|---|
 | Nome | recursos | recursos | recursos |
-| Tipo | String | Cadeia de caracteres [] (cadeia múltipla; defina Tipo como Cadeia de Caracteres e clique em Múltiplo no CRXDE Lite) | String |
+| Tipo | String | Cadeia de caracteres[] (cadeia múltipla; defina Tipo como Cadeia de Caracteres e clique em Múltipla no CRXDE Lite) | String |
 | Valor | `*` (um asterisco) | defina como um ou mais valores de recurso | - |
 
 ## Entender o plug-in findreplace {#findreplace}
@@ -110,7 +108,7 @@ A configuração permite os três tipos de casos de uso a seguir:
 
 * Cole o texto usando a implementação de colagem padrão do navegador. Não é um método recomendado, pois pode apresentar marcação indesejada. Configurado usando `browser` abaixo.
 
-* Cole o conteúdo da área de transferência como texto simples. Ele remove todos os elementos de estilo e formatação do conteúdo copiado antes de inserir no componente AEM. Configurado usando `plaintext` abaixo.
+* Cole o conteúdo da área de transferência como texto simples. Ele remove todos os elementos de estilo e formatação do conteúdo copiado antes de inserir no componente do AEM. Configurado usando `plaintext` abaixo.
 
 * Cole o texto, incluindo tabelas, com formatação ao copiar do MS® Word. Não há suporte para copiar e colar texto de outra fonte, como uma página da Web ou o MS® Excel, e ela retém apenas formatação parcial. Configurado usando `wordhtml` abaixo.
 
@@ -123,7 +121,7 @@ A configuração permite os três tipos de casos de uso a seguir:
 
 ### Configurar os formatos permitidos ao colar o conteúdo {#pasteformats}
 
-O modo colar como Microsoft-Word (`paste-wordhtml`) pode ser configurado ainda mais para que você possa definir explicitamente quais estilos são permitidos ao colar AEM de outro programa, como o Microsoft® Word.
+O modo colar como Microsoft-Word (`paste-wordhtml`) pode ser configurado ainda mais para que você possa definir explicitamente quais estilos são permitidos ao colar no AEM a partir de outro programa, como o Microsoft® Word.
 
 Por exemplo, se apenas formatos e listas em negrito forem permitidos ao colar no AEM, você poderá filtrar os outros formatos. Isso é chamado de filtragem de colagem configurável, que pode ser feito para:
 
@@ -132,10 +130,10 @@ Por exemplo, se apenas formatos e listas em negrito forem permitidos ao colar no
 
 Para links, você também pode definir os protocolos que são aceitos automaticamente.
 
-Para configurar quais formatos são permitidos ao colar texto em AEM de outro programa:
+Para configurar quais formatos são permitidos ao colar texto no AEM de outro programa:
 
 1. No componente, navegue até o nó `<rtePlugins-node>/edit`. Crie os nós, caso eles não existam. Para obter mais detalhes, consulte [ativar um plug-in](#activateplugin).
-1. Crie um nó sob o nó `edit` para que você possa manter as regras de colagem de HTML:
+1. Crie um nó sob o nó `edit` para que você possa manter as regras de colagem do HTML:
 
    * **Nome** `htmlPasteRules`
    * **Tipo** `nt:unstructured`
@@ -285,7 +283,7 @@ Em seguida, especifique os locais das folhas de estilos que você deseja referen
 
 ### Configurar o RTE para quebras de palavras ideais em japonês {#jpwordwrap}
 
-Os autores que usam AEM para criar conteúdo no idioma japonês podem aplicar um estilo aos caracteres para evitar quebras de linha, quando uma quebra não é necessária. Isso permite que os autores deixem as frases serem quebradas na posição desejada. O estilo dessa funcionalidade é baseado na classe CSS, que é predefinida na folha de estilos CSS.
+Os autores que usam o AEM para criar conteúdo em idioma japonês podem aplicar um estilo a caracteres para evitar quebras de linha, quando uma quebra não é necessária. Isso permite que os autores deixem as frases serem quebradas na posição desejada. O estilo dessa funcionalidade é baseado na classe CSS, que é predefinida na folha de estilos CSS.
 
 >[!NOTE]
 >
@@ -304,7 +302,7 @@ Para criar o estilo que os autores podem aplicar ao texto em japonês, siga esta
 
 1. Adicione o texto da propriedade ao mesmo nó. O valor é o nome do estilo que o autor vê ao selecionar o estilo.
    * Nome: `text`
-*Tipo: `String`
+     *Tipo: `String`
    * Valor: `Japanese word-wrap`
 
 1. Crie uma folha de estilos e especifique seu caminho. Consulte [especificar local da folha de estilos](#locationofstylesheet). Adicione o conteúdo a seguir à folha de estilos. Altere a cor do plano de fundo conforme desejado.
@@ -441,7 +439,7 @@ Em uma instalação padrão do AEM, quando o plug-in `misctools` é habilitado p
 
    * **Nome** `entity`
    * **Tipo** `String`
-   * **Value** a representação de HTML do caractere necessário; por exemplo, `&189;` para a fração metade.
+   * **Value** a representação HTML do caractere necessário; por exemplo, `&189;` para a fração metade.
 
 1. Salve as alterações.
 
@@ -460,12 +458,10 @@ No CRXDE, depois que a propriedade é salva, o caractere representado é exibido
 1. Nesse nó (nomeado de acordo com o intervalo de caracteres especiais), adicione as duas propriedades a seguir:
 
    * **Nome** `rangeStart`
-
      **Tipo** `Long`
      **Value** a representação [Unicode](https://unicode.org/) (decimal) do primeiro caractere no intervalo
 
    * **Nome** `rangeEnd`
-
      **Tipo** `Long`
      **Valor** a representação (decimal) [Unicode](https://unicode.org/) do último caractere no intervalo
 
@@ -505,21 +501,21 @@ Normalmente, os estilos são aplicados em texto, mas um conjunto separado de est
    >* **Tipo** `String[]`
    >
    >* **Valor** um ou ambos, conforme necessário:
-   >* `table` para permitir a edição das propriedades da tabela; incluindo os estilos.
-   >* `cellprops` para permitir a edição das propriedades da célula, incluindo os estilos.
+   >   * `table` para permitir a edição das propriedades da tabela; incluindo os estilos.
+   >   * `cellprops` para permitir a edição das propriedades da célula, incluindo os estilos.
 
 1. Defina o local das folhas de estilos CSS para que você possa referenciá-las. Consulte [Especificar o local da folha de estilos](#locationofstylesheet), pois é o mesmo que ao definir [estilos para texto](#textstyles). O local pode ser definido se você tiver definido outros estilos.
 1. No nó `table`, crie os seguintes nós novos (conforme necessário):
 
    * Para definir estilos para a tabela inteira (disponível em **Propriedades da tabela**):
 
-      * **Nome** `tableStyles`
-      * **Tipo** `cq:WidgetCollection`
+     * **Nome** `tableStyles`
+     * **Tipo** `cq:WidgetCollection`
 
    * Para definir estilos para as células individuais (disponível em **Propriedades da célula**):
 
-      * **Nome** `cellStyles`
-      * **Tipo** `cq:WidgetCollection`
+     * **Nome** `cellStyles`
+     * **Tipo** `cq:WidgetCollection`
 
 1. Crie um nó (sob o nó `tableStyles` ou `cellStyles`, conforme apropriado) para que possa representar um estilo individual:
 
@@ -530,15 +526,15 @@ Normalmente, os estilos são aplicados em texto, mas um conjunto separado de est
 
    * Para definir o estilo CSS a ser referenciado
 
-      * **Nome** `cssName`
-      * **Tipo** `String`
-      * **Value** o nome da classe CSS (sem um `.` precedente, por exemplo, `cssClass` em vez de `.cssClass`)
+     * **Nome** `cssName`
+     * **Tipo** `String`
+     * **Value** o nome da classe CSS (sem um `.` precedente, por exemplo, `cssClass` em vez de `.cssClass`)
 
    * Para definir que um texto descritivo seja exibido no seletor suspenso
 
-      * **Nome** `text`
-      * **Tipo** `String`
-      * **Valor** o texto a ser exibido na lista de seleção
+     * **Nome** `text`
+     * **Tipo** `String`
+     * **Valor** o texto a ser exibido na lista de seleção
 
 1. Salve todas as alterações.
 
@@ -634,7 +630,7 @@ Quando o recuo está ativado (padrão), você pode definir o tamanho do recuo:
 1. No nó `lists`, crie o parâmetro `indentSize`:
 
    * **Nome**: `indentSize`
-   * **Tipo**: `Long`
+   * **Tipo**: `Long`
    * **Valor**: número de pixels necessários para a margem de recuo.
 
 ## Configurar a altura do espaço editável {#editablespace}
@@ -659,12 +655,12 @@ Você pode definir a altura do espaço editável mostrado na caixa de diálogo d
 
 ## Configurar estilos e protocolos para links {#linkstyles}
 
-Ao adicionar links no AEM, é possível definir:
+Ao adicionar links no AEM, você pode definir:
 
 * Os estilos de CSS a serem usados
 * Os protocolos aceitos automaticamente
 
-Para configurar como os links são adicionados no AEM de outro programa, defina as regras de HTML.
+Para configurar como os links são adicionados no AEM a partir de outro programa, defina as regras do HTML.
 
 1. Usando o CRXDE Lite, localize o componente de texto para o seu projeto.
 1. Crie um nó no mesmo nível que `<rtePlugins-node>`, ou seja, crie o nó sob o nó pai de `<rtePlugins-node>`:
@@ -691,58 +687,58 @@ Para configurar como os links são adicionados no AEM de outro programa, defina 
 
    * Estilo CSS para links internos:
 
-      * **Nome** `cssInternal`
-      * **Tipo** `String`
-      * **Value** o nome da classe CSS (sem um &#39;.&#39; precedente; por exemplo, `cssClass` em vez de `.cssClass`)
+     * **Nome** `cssInternal`
+     * **Tipo** `String`
+     * **Value** o nome da classe CSS (sem um &#39;.&#39; precedente; por exemplo, `cssClass` em vez de `.cssClass`)
 
    * Estilo CSS para links externos
 
-      * **Nome** `cssExternal`
-      * **Tipo** `String`
-      * **Value** o nome da classe CSS (sem um &#39;.&#39; precedente; por exemplo, `cssClass` em vez de `.cssClass`)
+     * **Nome** `cssExternal`
+     * **Tipo** `String`
+     * **Value** o nome da classe CSS (sem um &#39;.&#39; precedente; por exemplo, `cssClass` em vez de `.cssClass`)
 
    * Matriz de **protocolos** válidos. Os protocolos com suporte são `http://`, `https://`, `file://` e `mailto:`.
 
-      * **Nome** `protocols`
-      * **Tipo** `String[]`
-      * **Valor** um ou mais protocolos
+     * **Nome** `protocols`
+     * **Tipo** `String[]`
+     * **Valor** um ou mais protocolos
 
    * **defaultProtocol** (propriedade do tipo **String**): protocolo a ser usado se o usuário não tiver especificado explicitamente um.
 
-      * **Nome** `defaultProtocol`
-      * **Tipo** `String`
-      * **Valor** um ou mais protocolos padrão
+     * **Nome** `defaultProtocol`
+     * **Tipo** `String`
+     * **Valor** um ou mais protocolos padrão
 
    * Definição de como lidar com o atributo de direcionamento de um link. Criar um nó:
 
-      * **Nome** `targetConfig`
-      * **Tipo** `nt:unstructured`
+     * **Nome** `targetConfig`
+     * **Tipo** `nt:unstructured`
 
      No nó `targetConfig`, defina as propriedades necessárias:
 
-      * Especifique o modo de destino:
+     * Especifique o modo de destino:
 
-         * **Nome** `mode`
-         * **Tipo** `String`
-         * **Valor**
+       * **Nome** `mode`
+       * **Tipo** `String`
+       * **Valor**
 
-            * `auto`: significa que um destino automático foi escolhido
+         * `auto`: significa que um destino automático foi escolhido
 
-              (especificado pela propriedade `targetExternal` para links externos ou `targetInternal` para links internos).
+           (especificado pela propriedade `targetExternal` para links externos ou `targetInternal` para links internos).
 
-            * `manual`: não aplicável neste contexto
-            * `blank`: não aplicável neste contexto
+         * `manual`: não aplicável neste contexto
+         * `blank`: não aplicável neste contexto
 
-      * O target para links internos:
+     * O target para links internos:
 
-         * **Nome** `targetInternal`
-         * **Tipo** `String`
-         * **Value** o destino para links internos (use somente quando o modo for `auto`)
+       * **Nome** `targetInternal`
+       * **Tipo** `String`
+       * **Value** o destino para links internos (use somente quando o modo for `auto`)
 
-      * O target para links externos:
+     * O target para links externos:
 
-         * **Nome** `targetExternal`
-         * **Tipo** `String`
-         * **Value** o destino para links externos (usado apenas quando o modo é `auto`).
+       * **Nome** `targetExternal`
+       * **Tipo** `String`
+       * **Value** o destino para links externos (usado apenas quando o modo é `auto`).
 
 1. Salve todas as alterações.

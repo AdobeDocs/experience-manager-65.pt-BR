@@ -11,11 +11,9 @@ feature: Integration
 role: Admin
 source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '1615'
+source-wordcount: '1645'
 ht-degree: 0%
-
 ---
-
 
 # Configuração do rastreamento de links para o Adobe Analytics{#configuring-link-tracking-for-adobe-analytics}
 
@@ -23,7 +21,7 @@ Quando os usuários clicam em links nas páginas do seu site, você pode captura
 
 ## Configuração do rastreamento de links para uma estrutura do Adobe Analytics {#configuring-link-tracking-for-an-adobe-analytics-framework}
 
-1. Usando a **Navegação**, acesse **Implantação**, **Cloud Service** para a seção **Adobe Analytics**.
+1. Usando a **Navegação**, acesse a **Implantação**, **Serviços da Nuvem** para a seção **Adobe Analytics**.
 
 1. Usando o **Mostrar Configurações**, abra a estrutura necessária do Adobe Analytics.
 1. Expanda a seção **Configuração de Rastreamento de Link** e configure conforme necessário (esta página fornece mais detalhes):
@@ -48,7 +46,7 @@ Os downloads dos seguintes tipos de arquivos são rastreados por padrão:
 * pdf
 * xls
 
-Por exemplo, com o rastreamento de download habilitado para arquivos PDF, sempre que os usuários clicam em links para arquivos PDF, o download do PDF é rastreado.
+Por exemplo, com o rastreamento de download ativado para arquivos PDF, sempre que os usuários clicam em links para arquivos PDF, o download do PDF é rastreado.
 
 As propriedades de rastreamento de download da estrutura são implementadas como código no arquivo `analytics.sitecatalyst.js` gerado para uma página. A amostra de código a seguir representa a configuração padrão de rastreamento de download:
 
@@ -109,7 +107,7 @@ s.linkLeaveQueryString= false;
 
 ## Envio de dados variáveis com cliques em links {#sending-variable-data-with-link-clicks}
 
-Você pode configurar o AEM para enviar dados de eventos e variáveis para o Adobe Analytics quando um usuário clicar em um link. As propriedades da **Configuração de Rastreamento de Link** permitem que você especifique os eventos e as variáveis do Adobe Analytics a serem rastreados quando ocorrerem cliques em links.
+Você pode configurar o AEM para enviar dados de eventos e variáveis ao Adobe Analytics quando um usuário clicar em um link. As propriedades da **Configuração de Rastreamento de Link** permitem que você especifique os eventos e as variáveis do Adobe Analytics a serem rastreados quando ocorrerem cliques em links.
 
 Os mapeamentos da estrutura determinam o evento e os valores da variável. Você pode mapear variáveis do Adobe Analytics para as variáveis dos componentes de conteúdo que armazenam os dados que você deseja rastrear quando os links são clicados.
 
@@ -120,7 +118,7 @@ Para enviar dados variáveis com cliques em links:
 
 Propriedades para enviar dados variáveis com cliques em links:
 
-* **Vincular Eventos de Rastreamento**
+* **Vincular eventos de rastreamento**
 Insira as variáveis de evento do Adobe Analytics que deseja usar para contar cliques em links.
 
   Separe vários nomes de variáveis com uma vírgula.
@@ -167,8 +165,8 @@ Este exemplo ilustra como o mapeamento funciona no contexto do rastreamento e do
   </tr>
   <tr>
    <td>pagedata.title</td>
-   <td>EVar Personalizado 1 (eVar 1)</td>
-   <td>EVAR 1</td>
+   <td>EVar Personalizado 1 (eVar1)</td>
+   <td>EVAR1</td>
   </tr>
   <tr>
    <td>eventdata.events.pageView</td>
@@ -189,13 +187,13 @@ Este exemplo ilustra como o mapeamento funciona no contexto do rastreamento e do
   </tr>
   <tr>
    <td>eventdata.keyword</td>
-   <td>EVar personalizado 2 (eVar 2)</td>
-   <td>EVAR 2</td>
+   <td>EVar 2 personalizado (eVar2)</td>
+   <td>EVAR2</td>
   </tr>
   <tr>
    <td>eventdata.results</td>
-   <td>EVar Personalizado 3 (eVar 3)</td>
-   <td>EVAR 3</td>
+   <td>EVar 3 personalizado (eVar3)</td>
+   <td>EVAR3</td>
   </tr>
   <tr>
    <td>eventdata.events.search</td>

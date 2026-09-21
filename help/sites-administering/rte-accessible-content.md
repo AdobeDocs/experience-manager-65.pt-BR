@@ -8,14 +8,12 @@ feature: Administering
 role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '930'
-ht-degree: 0%
-
+source-wordcount: '970'
+ht-degree: 2%
 ---
-
 # Configurar o RTE para criar páginas da Web e sites acessíveis {#configure-rte-for-accessibility}
 
-O Adobe Experience Manager oferece suporte a vários recursos de acessibilidade padrão de acordo com vários padrões de acessibilidade. Além disso, os desenvolvedores podem personalizar ou estender o para fornecer recursos que ajudam a criar conteúdo acessível usando componentes Experience Manager que usam o Rich Text Editor (RTE).
+O Adobe Experience Manager oferece suporte a vários recursos de acessibilidade padrão de acordo com vários padrões de acessibilidade. Além disso, os desenvolvedores podem personalizar ou estender o para fornecer recursos que ajudam a criar conteúdo acessível usando componentes do Experience Manager que usam o Rich Text Editor (RTE).
 
 Ao projetar páginas da Web e adicionar conteúdo às páginas, os desenvolvedores e autores de conteúdo podem usar os recursos do RTE para fornecer informações relacionadas à acessibilidade. Por exemplo, adicione informações estruturais por meio de cabeçalhos e elementos de parágrafo.
 
@@ -62,13 +60,13 @@ Com elementos estruturais disponíveis no RTE por meio das opções de formato d
 
 ## Uso do recurso de edição de origem {#use-of-the-source-edit-feature}
 
-Em alguns casos, os autores de conteúdo considerarão necessário examinar e ajustar o código-fonte HTML criado usando o RTE. Por exemplo, um conteúdo criado no RTE pode exigir marcação adicional para garantir a conformidade com a WCAG 2.0. Isso pode ser feito com a opção [edição de origem](/help/sites-administering/rich-text-editor.md#aboutplugins) do RTE. Você pode especificar o recurso [`sourceedit` no `misctools` plug-in](/help/sites-administering/rich-text-editor.md#aboutplugins).
+Em alguns casos, os autores de conteúdo considerarão necessário examinar e ajustar o código-fonte do HTML criado usando o RTE. Por exemplo, um conteúdo criado no RTE pode exigir marcação adicional para garantir a conformidade com a WCAG 2.0. Isso pode ser feito com a opção [edição de origem](/help/sites-administering/rich-text-editor.md#aboutplugins) do RTE. Você pode especificar o recurso [`sourceedit` no `misctools` plug-in](/help/sites-administering/rich-text-editor.md#aboutplugins).
 
 >[!CAUTION]
 >
 >Use o recurso `sourceedit` com cuidado. Erros de digitação e/ou recursos não suportados podem causar mais problemas.
 
-## Adicionar suporte para mais elementos e atributos de HTML {#add-support-for-more-html-elements-and-attributes}
+## Adicionar suporte para mais elementos e atributos do HTML {#add-support-for-more-html-elements-and-attributes}
 
 Para estender ainda mais os recursos de acessibilidade do AEM, é possível estender os componentes existentes com base no RTE (como os componentes **Texto** e **Tabela**) com elementos e atributos adicionais.
 

@@ -11,11 +11,9 @@ feature: Mobile
 role: Admin
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '593'
+source-wordcount: '645'
 ht-degree: 0%
-
 ---
-
 # Configurar usuários e grupos de usuários {#configure-your-users-and-user-groups}
 
 {{ue-over-mobile}}
@@ -31,17 +29,17 @@ Para ajudar a organizar e gerenciar o modelo de permissão para aplicativos AEM,
 
 ### Autores de conteúdo do aplicativo AEM Mobile (grupo de autores do aplicativo) {#aem-mobile-application-content-authors-app-author-group}
 
-Os membros do grupo de autores do aplicativo são responsáveis pela criação de conteúdo de aplicativo móvel AEM, incluindo páginas, texto, imagens e vídeos.
+Os membros do grupo de autores do aplicativo são responsáveis pela criação de conteúdo de aplicativo móvel do AEM, incluindo páginas, texto, imagens e vídeos.
 
 #### Configuração de grupo - autores do aplicativo {#group-configuration-app-authors}
 
 1. Crie um grupo de usuários chamado &quot;autores-aplicativos&quot;:
 
-   Navegue até o Admin Console do usuário: [http://localhost:4502/libs/granite/security/content/groupadmin.html](http://localhost:4502/libs/granite/security/content/groupadmin.html)
+   Navegue até o Admin Console do Usuário: [http://localhost:4502/libs/granite/security/content/groupadmin.html](http://localhost:4502/libs/granite/security/content/groupadmin.html)
 
    No console do grupo de usuários, selecione o botão &quot;+&quot; para criar um grupo.
 
-   Defina a ID desse grupo como &quot;autores-do-aplicativo&quot; para indicar que ele é um tipo específico de grupo de usuários do autor específico para a criação de aplicativos móveis dentro do AEM.
+   Defina a ID deste grupo como &quot;autores do aplicativo&quot; para indicar que ele é um tipo específico de grupo de usuários do autor específico para a criação de aplicativos móveis no AEM.
 
 1. Adicionar membro ao grupo: Autores
 
@@ -49,7 +47,7 @@ Os membros do grupo de autores do aplicativo são responsáveis pela criação d
 
    Adicionar autores do aplicativo ao grupo Autores
 
-1. Agora que você criou o Grupo de usuários de autores de aplicativos, é possível adicionar membros de equipe individuais a este novo grupo por meio do [Admin Console de usuário](http://localhost:4502/libs/granite/security/content/useradmin.md).
+1. Agora que você criou o Grupo de usuários de autores de aplicativos, é possível adicionar membros de equipe individuais a este novo grupo por meio da [Admin Console de usuários](http://localhost:4502/libs/granite/security/content/useradmin.md).
 
    ![chlimage_1-19](assets/chlimage_1-19.png)
 
@@ -61,7 +59,7 @@ Os membros do grupo de autores do aplicativo são responsáveis pela criação d
 
    >[!NOTE]
    >
-   >Os autores do aplicativo estendem o grupo padrão de autores de conteúdo (autores) do AEM, para que eles herdem a capacidade de criar conteúdo em /content/phonegap
+   >Os autores do aplicativo estendem o grupo padrão de autores de conteúdo (autores) do AEM para que eles herdem a capacidade de criar conteúdo em /content/phonegap
 
 ### Grupo de administradores de aplicativos AEM Mobile (grupo de administradores de aplicativos) {#aem-mobile-application-administrators-group-app-admins-group}
 
@@ -118,7 +116,7 @@ Além dessas permissões, uma ação também pode ser exibida/ocultada com base 
 
 No momento, o bloco não tem ações que exigem permissões. No entanto, a página de detalhes do aplicativo tem as seguintes ações:
 
-* *Editar* para app-author e app-admin (Gatilho de Interface do Usuário - jcr:write - on /content/phonegap/{suffix})
+* *Editar* para app-author e app-admin (Acionador de Interface do Usuário - jcr:write - em /content/phonegap/{suffix})
 * *Baixar* para app-author e app-admin (Gatilho de Interface do Usuário - em /content/phonegap/{suffix})
 
 A imagem abaixo mostra as opções Baixar e Editar de um aplicativo:

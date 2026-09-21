@@ -1,21 +1,23 @@
 ---
 title: Painel de aplicativos do AEM Mobile
+
 description: Você pode gerenciar o conteúdo do aplicativo móvel e do aplicativo no Painel de aplicativos do AEM Mobile ou no Centro de controle. Siga esta página para saber mais.
+
+
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
+
 exl-id: daafc8b8-3c01-4c97-a14b-f1b706600249
 solution: Experience Manager
 feature: Mobile
 role: User
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '582'
+source-wordcount: '590'
 ht-degree: 2%
-
 ---
-
 # Painel de aplicativos do AEM Mobile {#aem-mobile-application-dashboard}
 
 {{ue-over-mobile}}
@@ -78,7 +80,7 @@ O bloco **Gerenciar banners** permite gerenciar o conteúdo de um banner. As seg
 
 * imagem
 * **TÍTULO**: nome do banner
-* **MODIFICADO**: última modificação em AEM
+* **MODIFICADO**: última modificação no AEM
 * **CARREGADO**: último carregamento do AEM
 * **PUBLISHED**: última solicitação publicada do AEM
 * **SOURCE**: origem (AEM local ou remoto de Mobile On Demand)
@@ -97,7 +99,7 @@ O bloco **Gerenciar artigos** permite gerenciar o conteúdo de um artigo. As seg
 
 * imagem
 * **TÍTULO**: nome do artigo
-* **MODIFICADO**: última modificação em AEM
+* **MODIFICADO**: última modificação no AEM
 * **CARREGADO**: último carregamento do AEM
 * **PUBLISHED**: última solicitação publicada do AEM
 * **SOURCE**: origem (AEM local ou remoto de Mobile On-Demand)
@@ -116,7 +118,7 @@ O bloco **Gerenciar Coleções** permite gerenciar o conteúdo de uma coleção.
 
 * imagem
 * **TÍTULO**: nome da coleção
-* **MODIFICADO**: última modificação em AEM
+* **MODIFICADO**: última modificação no AEM
 * **CARREGADO**: último carregamento do AEM
 * **PUBLISHED**: última solicitação publicada do AEM
 * **SOURCE**: origem (AEM local ou remoto de Mobile On-Demand)
@@ -141,5 +143,5 @@ Depois de conhecer o painel de aplicativos, consulte os seguintes recursos para 
 
 Para saber mais sobre as funções e responsabilidades de um Administrador e Desenvolvedor, consulte os recursos abaixo:
 
-* [Desenvolvimento de conteúdo AEM para AEM Mobile On-demand Services](/help/mobile/aem-mobile-on-demand.md)
+* [Desenvolvimento de conteúdo do AEM para o AEM Mobile On-demand Services](/help/mobile/aem-mobile-on-demand.md)
 * [Administração de conteúdo para usar o AEM Mobile On-demand Services](/help/mobile/aem-mobile.md)

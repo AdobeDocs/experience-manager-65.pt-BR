@@ -7,18 +7,16 @@ feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin, Developer
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
-source-wordcount: '1795'
+source-wordcount: '1840'
 ht-degree: 67%
-
 ---
-
 # Como modelar seu conteúdo {#model-your-content}
 
 Nesta parte da [jornada do desenvolvedor do AEM Headless](overview.md), você pode aprender a modelar sua estrutura de conteúdo. Em seguida, observe que a estrutura do Adobe Experience Manager (AEM) usando modelos de fragmentos de conteúdo e fragmentos de conteúdo deve ser reutilizada em canais.
 
 ## A história até agora {#story-so-far}
 
-No início, [Saiba mais sobre o desenvolvimento headless CMS](learn-about.md) abordou a entrega de conteúdo headless e por que ela deve ser usada. Então [Introdução ao AEM Headless](getting-started.md) descreveu o AEM Headless no contexto de seu próprio projeto.
+No início, [Saiba mais sobre o Desenvolvimento headless do CMS](learn-about.md) abordou a entrega de conteúdo headless e por que ela deve ser usada. Em seguida, [Introdução ao AEM Headless](getting-started.md) descreveu o AEM Headless no contexto de seu próprio projeto.
 
 No documento anterior da jornada do AEM Headless, [Caminho para a sua primeira experiência utilizando o AEM Headless](path-to-first-experience.md), você aprendeu as etapas necessárias para implementar seu primeiro projeto. Depois de lê-lo, você deve:
 
@@ -33,16 +31,16 @@ Este artigo se baseia nesses fundamentos para que você entenda como preparar se
 
 * **Público-alvo**: iniciante
 * **Objetivo**: aprender a modelar sua estrutura de conteúdo e estabelecer essa estrutura usando modelos de fragmentos de conteúdo e fragmentos de conteúdo do AEM:
-   * Conheça conceitos e terminologias relacionados à modelagem de dados/conteúdo.
-   * Saiba por que a modelagem de conteúdo é necessária para a entrega de conteúdo headless.
-   * Saiba como estabelecer essa estrutura utilizando modelos de fragmentos de conteúdo do AEM (e criar conteúdo com fragmentos de conteúdo).
-   * Saiba como modelar seu conteúdo através de princípios com amostras básicas.
+  * Conheça conceitos e terminologias relacionados à modelagem de dados/conteúdo.
+  * Saiba por que a modelagem de conteúdo é necessária para a entrega de conteúdo headless.
+  * Saiba como estabelecer essa estrutura utilizando modelos de fragmentos de conteúdo do AEM (e criar conteúdo com fragmentos de conteúdo).
+  * Saiba como modelar seu conteúdo através de princípios com amostras básicas.
 
 >[!NOTE]
 >
 >A Modelagem de Dados é um campo grande, pois é usada ao desenvolver Bancos de Dados Relacionais. Há muitos livros e fontes de informação on-line disponíveis.
 >
->Os aspectos que são de interesse ao modelar dados para uso com AEM Headless são apenas considerados.
+>Os aspectos de interesse ao modelar dados para uso com o AEM Headless são considerados apenas.
 
 ## Modelagem de conteúdo {#content-modeling}
 
@@ -82,7 +80,7 @@ Por exemplo, para realizar a publicidade de eventos especiais para todas as esco
 * Data do evento
 * Professor organizador do evento
 
-### Conceitos  {#concepts}
+### Conceitos {#concepts}
 
 O que você deseja descrever é conhecido como **Entidades** - basicamente as &quot;coisas&quot; sobre as quais você deseja armazenar informações.
 
@@ -150,7 +148,7 @@ A estrutura do modelo de conteúdo é:
 >
 >Os Modelos de fragmento de conteúdo também são usados como a base dos Esquemas da GraphQL do AEM, usados para recuperar conteúdo. Falaremos mais sobre isso em uma próxima sessão.
 
-As solicitações de conteúdo são feitas usando a API GraphQL do AEM, uma implementação personalizada da API GraphQL padrão. A API do GraphQL do AEM permite realizar consultas (complexas) nos fragmentos de conteúdo, com cada consulta de acordo com um tipo de modelo específico.
+As solicitações de conteúdo são feitas usando a API GraphQL do AEM, uma implementação personalizada da API GraphQL padrão. A API do AEM GraphQL permite realizar consultas (complexas) nos fragmentos de conteúdo, com cada consulta de acordo com um tipo de modelo específico.
 
 O conteúdo retornado pode ser usado pelos seus aplicativos.
 
@@ -175,7 +173,7 @@ Por exemplo, defina o campo com o nome de um professor como **Texto** e seus ano
 1. O tipo de dados **Referência de fragmento** permite que você realize vários níveis de estrutura aninhando os Fragmentos de conteúdo (de acordo com o tipo de modelo). Isso é essencial para a modelagem de conteúdo.
 
 Por exemplo:
-![Modelagem de conteúdo com Fragmentos de conteúdo](assets/headless-modeling-01.png "Modelagem de conteúdo com Fragmentos de conteúdo")
+![Modelagem de conteúdo com fragmentos de conteúdo](assets/headless-modeling-01.png "Modelagem de conteúdo com fragmentos de conteúdo")
 
 ### Tipos de dados {#data-types}
 
@@ -186,7 +184,7 @@ O AEM fornece os seguintes tipos de dados para você modelar o conteúdo:
 * Número
 * Booleano
 * Data e hora
-* Lista discriminada
+* Enumeração
 * Tags
 * Referência de conteúdo
 * Referência de fragmento
@@ -204,10 +202,10 @@ Por exemplo, você pode fazer referência a uma imagem em um local especifico.
 Isso fornece referências a outros Fragmentos de conteúdo.
 Esse tipo de referência é usado para criar conteúdo aninhado, introduzindo as relações necessárias para modelar o conteúdo.
 O tipo de dados pode ser configurado para permitir que os autores de fragmento:
-   * Editem o fragmento referenciado diretamente.
-   * Crie um fragmento de conteúdo, com base no modelo apropriado.
+  * Editem o fragmento referenciado diretamente.
+  * Crie um fragmento de conteúdo, com base no modelo apropriado.
 
-### Criar Modelos de fragmentos do conteúdo {#creating-content-fragment-models}
+### Criar Modelos de fragmentos de conteúdo {#creating-content-fragment-models}
 
 No início, você deve ativar os Modelos de fragmentos de conteúdo no site. Essa ativação é feita no Navegador de configuração; em Ferramentas > Geral > Navegador de configuração. Você pode optar por configurar a entrada global ou criar uma configuração. Por exemplo:
 
@@ -219,7 +217,7 @@ No início, você deve ativar os Modelos de fragmentos de conteúdo no site. Ess
 
 Em seguida, os Modelos de fragmentos de conteúdo podem ser criados e a estrutura definida. Isso pode ser feito em Ferramentas > Assets > Modelos de fragmento de conteúdo. Por exemplo:
 
-![Modelo de fragmentos do conteúdo](assets/cfm-model.png)
+![Modelo de fragmentos de conteúdo](assets/cfm-model.png)
 
 >[!NOTE]
 >
@@ -274,10 +272,10 @@ Agora que você aprendeu a modelar a estrutura e criar um conteúdo que é depen
 ## Recursos adicionais {#additional-resources}
 
 * [Trabalhando com fragmentos de conteúdo](/help/assets/content-fragments/content-fragments.md) - A página de introdução dos fragmentos de conteúdo.
-   * [Fragmentos de Conteúdo no Navegador de Configuração](/help/assets/content-fragments/content-fragments-configuration-browser.md) - Habilitar a funcionalidade de Fragmento de Conteúdo no Navegador de Configuração.
-   * [Modelos de fragmentos de conteúdo](/help/assets/content-fragments/content-fragments-models.md) - Criação e edição de Modelos de fragmentos de conteúdo.
-   * [Gerenciamento de fragmentos de conteúdo](/help/assets/content-fragments/content-fragments-managing.md) - Criação e criação de fragmentos de conteúdo; esta página leva você a outras seções detalhadas.
-* [Esquemas de GraphQL do AEM](access-your-content.md) - Como o GraphQL realiza modelos.
+  * [Fragmentos de Conteúdo no Navegador de Configuração](/help/assets/content-fragments/content-fragments-configuration-browser.md) - Habilitar a funcionalidade de Fragmento de Conteúdo no Navegador de Configuração.
+  * [Modelos de fragmentos de conteúdo](/help/assets/content-fragments/content-fragments-models.md) - Criação e edição de Modelos de fragmentos de conteúdo.
+  * [Gerenciamento de fragmentos de conteúdo](/help/assets/content-fragments/content-fragments-managing.md) - Criação e criação de fragmentos de conteúdo; esta página leva você a outras seções detalhadas.
+* [Esquemas do AEM GraphQL](access-your-content.md) - Como o GraphQL realiza modelos.
 * [Amostra da estrutura do fragmento de conteúdo](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#content-fragment-structure-graphql)
 * [Introdução ao AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=pt-BR) - Uma pequena série de tutoriais em vídeo que fornece uma visão geral da utilização de recursos headless do AEM, incluindo a modelagem de conteúdo e o GraphQL.
-   * [Noções básicas sobre a modelagem do GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/video-series/modeling-basics.html?lang=pt-BR) - Saiba como definir e usar fragmentos de conteúdo no Adobe Experience Manager (AEM) para usar com o GraphQL.
+  * [Noções básicas sobre a modelagem do GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/video-series/modeling-basics.html?lang=pt-BR) - Saiba como definir e usar fragmentos de conteúdo no Adobe Experience Manager (AEM) para usar com o GraphQL.
