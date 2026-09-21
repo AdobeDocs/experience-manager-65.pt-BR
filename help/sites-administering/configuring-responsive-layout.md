@@ -355,7 +355,7 @@ container
       @text =" Text Column 1"
 ```
 
->[!TAB Exemplo de HTML] resultante
+>[!TAB Exemplo de HTML resultante]
 
 ```html
 <div class="container responsivegrid aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--8 aem-GridColumn--offset--default--0">
