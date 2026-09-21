@@ -11,11 +11,9 @@ feature: Developing
 role: Developer
 source-git-commit: 3aa55b88f589749fb49d5ff46340b0912d490157
 workflow-type: tm+mt
-source-wordcount: '1264'
+source-wordcount: '1467'
 ht-degree: 1%
-
 ---
-
 # Personalização da criação de página{#customizing-page-authoring}
 
 >[!CAUTION]
@@ -28,8 +26,8 @@ O Adobe Experience Manager (AEM) fornece vários mecanismos para permitir que vo
 
   As clientlibs permitem estender a implementação padrão para obter uma nova funcionalidade, além de reutilizar as funções, os objetos e os métodos padrão. Ao personalizar, você pode criar sua própria clientlib em `/apps.` A nova clientlib deve:
 
-   * depende da clientlib de criação `cq.authoring.editor.sites.page`
-   * fazer parte da categoria `cq.authoring.editor.sites.page.hook` apropriada
+  * depende da clientlib de criação `cq.authoring.editor.sites.page`
+  * fazer parte da categoria `cq.authoring.editor.sites.page.hook` apropriada
 
 * Sobreposições
 
@@ -48,7 +46,7 @@ Eles podem ser usados de várias maneiras para estender a funcionalidade de cria
 >* Usando e criando [clientlibs](/help/sites-developing/clientlibs.md).
 >* Usando e criando [sobreposições](/help/sites-developing/overlays.md).
 >* [Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
->* [Estrutura da interface habilitada para toque por AEM](/help/sites-developing/touch-ui-structure.md) para obter detalhes das áreas estruturais usadas para criação de página.
+>* [Estrutura da interface habilitada para toque do AEM](/help/sites-developing/touch-ui-structure.md) para obter detalhes das áreas estruturais usadas para criação de página.
 >
 
 
@@ -69,7 +67,7 @@ Quando você está editando uma página, há vários [modos](/help/sites-authori
 
 ### Exemplo de camada: status da Live Copy {#layer-example-live-copy-status}
 
-Uma instância AEM padrão fornece a camada MSM. Isso acessa os dados relacionados ao [gerenciamento multissite](/help/sites-administering/msm.md) e os destaca na camada.
+Uma instância padrão do AEM fornece a camada MSM. Isso acessa os dados relacionados ao [gerenciamento multissite](/help/sites-administering/msm.md) e os destaca na camada.
 
 Para vê-lo em ação, você pode editar qualquer página do [We.Retail de cópia de idioma](/help/sites-developing/we-retail-globalized-site-structure.md) (ou qualquer outra página de live copy) e selecionar o modo **Status da Live Copy**.
 
@@ -100,7 +98,7 @@ CÓDIGO NO GITHUB
 
 Você pode encontrar o código desta página no GitHub
 
-* [Abrir o projeto aem-authoring-extension-assetfinder-flickr no GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-assetfinder-flickr)
+* [Abra o projeto aem-authoring-extension-assetfinder-flickr no GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-assetfinder-flickr)
 * Baixar o projeto como [um arquivo ZIP](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-assetfinder-flickr/archive/master.zip)
 
 ## Filtrar recursos {#filtering-resources}
@@ -132,7 +130,7 @@ CÓDIGO NO GITHUB
 
 Você pode encontrar o código desta página no GitHub
 
-* [Abrir o projeto aem-authoring-extension-toolbar-screenshot no GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-toolbar-screenshot)
+* [Abra o projeto aem-authoring-extension-toolbar-screenshot no GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-toolbar-screenshot)
 * Baixar o projeto como [um arquivo ZIP](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-toolbar-screenshot/archive/master.zip)
 
 ## Adicionar novo editor no local {#add-new-in-place-editor}
@@ -151,12 +149,12 @@ Em uma instalação padrão do AEM:
 
      por exemplo:
 
-      * `/libs/foundation/components/text/cq:editConfig`
-      * `/libs/foundation/components/image/cq:editConfig`
+     * `/libs/foundation/components/text/cq:editConfig`
+     * `/libs/foundation/components/image/cq:editConfig`
 
-         * propriedade: `editorType`
+       * propriedade: `editorType`
 
-           Define o tipo de editor embutido usado quando a edição no local é acionada para esse componente; por exemplo, `text`, `textimage`, `image`, `title`.
+         Define o tipo de editor embutido usado quando a edição no local é acionada para esse componente; por exemplo, `text`, `textimage`, `image`, `title`.
 
 1. Detalhes adicionais de configuração do editor podem ser configurados usando um nó `config` contendo configurações e um nó `plugin` para conter os detalhes necessários de configuração do plug-in.
 
@@ -184,7 +182,7 @@ Em uma instalação padrão do AEM:
 
    >[!CAUTION]
    >
-   >As taxas de corte do AEM, conforme definidas pela propriedade `ratio`, estão definidas como **altura/largura**. Isso difere da definição convencional de largura/altura e é feita por motivos de compatibilidade legal. Os usuários da criação não estarão cientes de qualquer diferença desde que você defina a propriedade `name` claramente, pois ela é exibida na interface do usuário.
+   >As taxas de corte AEM, conforme definidas pela propriedade `ratio`, estão definidas como **altura/largura**. Isso difere da definição convencional de largura/altura e é feita por motivos de compatibilidade legal. Os usuários da criação não estarão cientes de qualquer diferença desde que você defina a propriedade `name` claramente, pois ela é exibida na interface do usuário.
 
 #### Criação de um novo editor no local {#creating-a-new-in-place-editor}
 
@@ -233,7 +231,7 @@ CÓDIGO NO GITHUB
 
 Você pode encontrar o código desta página no GitHub
 
-* [Abrir o projeto aem-authoring-extension-header-backtosites no GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-header-backtosites)
+* [Abra o projeto aem-authoring-extension-header-backtosites no GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-header-backtosites)
 * Baixar o projeto como [um arquivo ZIP](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-header-backtosites/archive/master.zip)
 
 ## Personalizar a solicitação para o fluxo de trabalho de ativação {#customizing-the-request-for-activation-workflow}

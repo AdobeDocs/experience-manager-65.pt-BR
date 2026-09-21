@@ -1,20 +1,18 @@
 ---
-title: Opcional - Como criar aplicativos de página única (SPA) com o Adobe Experience Manager
-description: Nesta continuação opcional da Jornada de desenvolvedores headless Adobe Experience Manager (AEM), você aprende como o AEM pode combinar a entrega headless com os recursos tradicionais de pilha completa do CMS SPA AEM SPA e como você pode criar editáveis usando a estrutura do editor do.
+title: Opcional - Como criar aplicativos de página única (SPAs) com o Adobe Experience Manager
+description: Nesta continuação opcional da Jornada de desenvolvedores headless do Adobe Experience Manager (AEM), você aprende como o AEM pode combinar a entrega headless com recursos tradicionais de pilha completa do CMS e como criar SPAs editáveis usando a estrutura do editor de SPA do AEM.
 exl-id: 91eadda2-b881-4e4a-867f-8c5c54e8f8b4
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
 role: Admin, Developer
 source-git-commit: 984c0a25ea84588b430b3d82ef26d747d4ae5a14
 workflow-type: tm+mt
-source-wordcount: '1248'
-ht-degree: 76%
-
+source-wordcount: '1281'
+ht-degree: 75%
 ---
-
 # Como criar aplicativos de página única (SPAs) com o AEM {#create-spa}
 
-Nesta Jornada opcional do desenvolvedor sem periféricos do [AEM](overview.md) você aprende como o Adobe Experience Manager AEM () pode combinar a entrega sem periféricos com os recursos tradicionais de pilha completa do CMS SPA AEM SPA SPA e como você pode criar editáveis usando a estrutura do editor do e integrar a continuação externa, habilitando recursos de edição conforme necessário.
+Nesta continuação opcional da [Jornada de desenvolvedores headless do AEM](overview.md), você aprende como o Adobe Experience Manager (AEM) pode combinar a entrega headless com recursos tradicionais de pilha completa do CMS e como criar SPAs editáveis usando a estrutura do Editor de SPA do AEM, além de integrar SPAs externos, habilitando recursos de edição conforme necessário.
 
 ## A história até agora {#story-so-far}
 
@@ -27,11 +25,11 @@ A esta altura, você deve ter completado toda a [Jornada de desenvolvedor headle
 * Como recuperar e atualizar conteúdo headless no AEM.
 * Como ativar um projeto do AEM Headless.
 
-Então vocês ou ativaram seu primeiro projeto AEM Headless, ou têm o conhecimento para fazê-lo. Parabéns!
+Agora você já está usando o seu primeiro projeto do AEM Headless ou tem o conhecimento para fazer isso. Parabéns!
 
-Sendo assim, por que você está lendo essa seção adicional e opcional da jornada? Provavelmente, você se lembra de que, na [Introdução](getting-started.md#integration-levels), houve uma breve discussão sobre como o AEM não só oferece suporte a entrega headless e a modelos tradicionais de pilha completa, como também pode oferecer suporte a modelos híbridos que combinam as vantagens de ambos. Embora não sejam o modelo tradicional headless, esses modelos híbridos podem oferecer uma flexibilidade sem precedentes a certos projetos.
+Sendo assim, por que você está lendo essa seção adicional e opcional da jornada? Provavelmente, você se lembra de que, na [Introdução](getting-started.md#integration-levels), houve uma breve discussão sobre como o AEM não só oferece suporte à entrega headless e aos modelos tradicionais de pilha completa, como também pode oferecer suporte a modelos híbridos que combinam as vantagens de ambos. Embora não sejam o modelo tradicional headless, esses modelos híbridos podem oferecer uma flexibilidade sem precedentes a certos projetos.
 
-Este artigo amplia seu conhecimento sobre o AEM Headless, explorando em detalhes como criar seus próprios aplicativos de página única (SPAs) editáveis no AEM. Dessa forma, você pode criar conteúdo e enviá-lo de forma headless para um SPA, mas esse SPA permanece editável no AEM.
+Este artigo amplia seu conhecimento sobre o AEM Headless, explorando em detalhes como criar seus próprios aplicativos de página única (SPAs) editáveis no AEM. Dessa forma, você pode criar conteúdo e entregá-lo sem periféricos a um SPA, mas esse SPA permanece editável no AEM.
 
 ## Objetivo {#objective}
 
@@ -50,7 +48,7 @@ Há uma série de requisitos antes de começar a trabalhar com SPAs no AEM.
 
 * Experiência de desenvolvimento na criação de SPAs com estruturas React ou Angular
 * Habilidades básicas do AEM para criar fragmentos de conteúdo e usar o editor
-* Certifique-se de revisar o documento [Headful e Headless no AEM](/help/sites-developing/headful-headless.md) para entender os vários níveis possíveis de integração do SPA.
+* Leia o documento [Headful e Headless no AEM](/help/sites-developing/headful-headless.md) para entender os vários níveis de integração de SPA possíveis.
 
 ### Ferramentas {#tools}
 
@@ -69,13 +67,13 @@ O editor de SPA do AEM permite que desenvolvedores de front-end criem SPAs que p
 
 ## Por que um SPA? {#why-spa}
 
-Por ser mais rápido, fluido e mais parecido com um aplicativo nativo, um SPA se torna uma experiência atraente não apenas para o visitante da página da Web, mas também para profissionais de marketing e desenvolvedores, devido à natureza de como o SPA funciona.
+Por ser mais rápido, fluido e mais parecido com um aplicativo nativo, um SPA se torna uma experiência atraente não apenas para o visitante da página da Web, mas também para profissionais de marketing e desenvolvedores, devido à natureza de como os SPAs funcionam.
 
 Para obter uma descrição completa dos SPAs e por que usá-los, consulte a seção de [recursos adicionais](#additional-resources) que contém links para uma documentação mais detalhada.
 
 ## Como o AEM lida com SPAs
 
-O desenvolvimento de aplicativos de página única no AEM parte do princípio de que o desenvolvedor de front-end segue as práticas recomendadas padronizadas ao criar um SPA. Como desenvolvedor de front-end, se seguir essas práticas recomendadas gerais e alguns princípios específicos do AEM, seu SPA estará funcional com o AEM e seus recursos de criação de conteúdo.
+O desenvolvimento de aplicativos de página única no AEM parte do princípio de que o desenvolvedor de front-end segue as práticas recomendadas padronizadas ao criar um SPA. Como desenvolvedor front-end, se você seguir essas práticas recomendadas gerais e alguns princípios específicos do AEM, seu SPA funcionará com o AEM e seus recursos de criação de conteúdo.
 
 * **Portabilidade** - Assim como com qualquer componente, os componentes do SPA devem ser desenvolvidos para serem tão portáteis quanto possível. O SPA deve ser desenvolvido com componentes portáteis e reutilizáveis.
 * **AEM controla a estrutura do site** - O desenvolvedor de front-end cria componentes e tem a propriedade de sua estrutura interna, mas depende do AEM para definir a estrutura de conteúdo do site.
@@ -124,9 +122,9 @@ Veja abaixo os [recursos adicionais](#additional-resources) que abordam tópicos
 Veja a seguir alguns recursos adicionais que explicam melhor alguns conceitos mencionados neste documento.
 
 * [Headful e headless no AEM](/help/sites-developing/headful-headless.md): uma descrição dos diferentes modelos de entrega disponíveis no AEM
-* [Introdução e passo a passo do SPA.](/help/sites-developing/spa-walkthrough.md): uma boa introdução a SPAs no AEM
+* [Introdução e passo a passo do SPA.](/help/sites-developing/spa-walkthrough.md) - Uma boa introdução a SPAs no AEM
 * [Desenvolvimento de SPAs para o AEM](/help/sites-developing/spa-architecture.md): diretrizes sobre como desenvolver SPAs para o AEM
 * [Visão geral do editor de SPA](/help/sites-developing/spa-overview.md): detalhes de como o editor de SPA funciona
 * [Documentos de referência de SPA](/help/sites-developing/spa-reference-materials.md): referências da API JavaScript e links para projetos de código aberto do GitHub para SPAs do AEM
 * [Fragmentos de conteúdo](/help/assets/content-fragments/content-fragments.md): como criar fragmentos de conteúdo
-* [Arquétipo de projeto do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR): modelo do Maven que cria um projeto simples do Adobe Experience Manager (AEM) com base em práticas recomendadas para ser usado como o ponto de partida do seu site
+* [Arquétipo de projeto do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html): modelo do Maven que cria um projeto simples do Adobe Experience Manager (AEM) com base em práticas recomendadas para ser usado como o ponto de partida do seu site

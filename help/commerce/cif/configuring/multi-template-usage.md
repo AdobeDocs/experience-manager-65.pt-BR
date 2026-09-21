@@ -1,5 +1,5 @@
 ---
-title: Criação de várias categorias e páginas de produto
+title: Criação de várias categorias e páginas do produto
 description: Saiba como enriquecer as páginas de aterrissagem de categoria e de detalhes do produto com conteúdo de marketing direcionado.
 sub-product: Commerce
 doc-type: feature-video
@@ -11,17 +11,15 @@ solution: Experience Manager,Commerce
 role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
-source-wordcount: '91'
-ht-degree: 71%
-
+source-wordcount: '110'
+ht-degree: 69%
 ---
-
-# Criação de várias categorias e páginas de produto
+# Criação de várias categorias e páginas do produto
 
 Os [Componentes principais da CIF do AEM](https://github.com/adobe/aem-core-cif-components) dão aos autores de conteúdo a capacidade de criar páginas adicionais de categoria e do produto. Essas páginas podem ser enriquecidas com conteúdo de marketing adicional e configuradas para direcionar categorias e produtos específicos. O vídeo a seguir apresenta a configuração desse recurso.
 
->[!VIDEO](https://video.tv.adobe.com/v/32789/?quality=12&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/28969/?quality=12)
 
 Você pode encontrar mais informações sobre esse tópico no seguinte recurso:
 
-- [Componentes principais da CIF do AEM — Configuração de página de vários catálogos](https://github.com/adobe/aem-core-cif-components/wiki/configuration#multi-catalog-page-template-configuration)
+- [Componentes principais do AEM CIF - Configuração de página de vários catálogos](https://github.com/adobe/aem-core-cif-components/wiki/configuration#multi-catalog-page-template-configuration)

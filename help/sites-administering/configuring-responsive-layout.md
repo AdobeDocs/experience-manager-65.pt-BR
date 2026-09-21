@@ -12,11 +12,9 @@ feature: Operations
 role: Admin
 source-git-commit: 17c4084d9ee93e5fe6652d63438eaf34cbc83c12
 workflow-type: tm+mt
-source-wordcount: '1479'
+source-wordcount: '1502'
 ht-degree: 2%
-
 ---
-
 
 # Configurar o contêiner de layout e o modo de layout{#configuring-layout-container-and-layout-mode}
 
@@ -38,17 +36,17 @@ O AEM permite um layout responsivo para suas páginas usando uma combinação de
 
   Esse componente fornece um sistema de parágrafo de grade para permitir adicionar e posicionar componentes em uma grade responsiva. Ela pode ser usada como o parsys padrão da página e/ou disponibilizada aos autores no navegador de componentes.
 
-   * O componente **Contêiner de layout** padrão é definido em:
+  * O componente **Contêiner de layout** padrão é definido em:
 
-     `/libs/wcm/foundation/components/responsivegrid`
+    `/libs/wcm/foundation/components/responsivegrid`
 
-   * É possível definir contêineres de layout:
+  * É possível definir contêineres de layout:
 
-      * Como um componente que o usuário pode adicionar a uma página.
-      * Como o parsys padrão da página.
-      * Ambos.
+    * Como um componente que o usuário pode adicionar a uma página.
+    * Como o parsys padrão da página.
+    * Ambos.
 
-        Você pode ter o contêiner de layout como padrão para a página, permitindo que o usuário adicione mais contêineres de layout aqui; por exemplo, para obter o controle da coluna.
+      Você pode ter o contêiner de layout como padrão para a página, permitindo que o usuário adicione mais contêineres de layout aqui; por exemplo, para obter o controle da coluna.
 
 * **[Modo de layout](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)**
 Depois que o contêiner de layout é posicionado na página, você pode usar o modo **Layout** para posicionar conteúdo na grade responsiva.
@@ -65,7 +63,7 @@ Com esses mecanismos de grade responsivos, você pode:
 
 >[!TIP]
 >
->O Adobe fornece a [documentação do GitHub](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) do layout responsivo como uma referência que pode ser fornecida para desenvolvedores front-end permitindo que usem a grade AEM fora do AEM, por exemplo, ao criar modelos de HTML AEM estáticos para um futuro site.
+>A Adobe fornece a [documentação do GitHub](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) do layout responsivo como uma referência que pode ser fornecida para desenvolvedores front-end permitindo que usem a grade do AEM fora do AEM, por exemplo, ao criar modelos estáticos do HTML para um site futuro do AEM.
 
 >[!NOTE]
 >
@@ -102,13 +100,13 @@ Estes procedimentos são usados para habilitar o modo **Layout** no site.
 * São usados em design responsivo.
 * Pode ser definido:
 
-   * No modelo de página, de onde as configurações são copiadas para qualquer página criada com esse modelo.
-   * No nó da página, de onde as configurações são herdadas por qualquer página secundária.
+  * No modelo de página, de onde as configurações são copiadas para qualquer página criada com esse modelo.
+  * No nó da página, de onde as configurações são herdadas por qualquer página secundária.
 
 * Defina um título e uma largura:
 
-   * O título descreve o agrupamento genérico de dispositivos, com orientação se necessário; por exemplo, telefone, tablet, paisagem de tabelas.
-   * A largura define a largura máxima em pixels para esse agrupamento de dispositivo genérico. Por exemplo, se o telefone do ponto de interrupção tiver uma largura de 768, isso indicará a largura máxima do layout usado para um dispositivo telefônico.
+  * O título descreve o agrupamento genérico de dispositivos, com orientação se necessário; por exemplo, telefone, tablet, paisagem de tabelas.
+  * A largura define a largura máxima em pixels para esse agrupamento de dispositivo genérico. Por exemplo, se o telefone do ponto de interrupção tiver uma largura de 768, isso indicará a largura máxima do layout usado para um dispositivo telefônico.
 
 * Estão visíveis como marcadores na parte superior do editor de páginas quando você está usando o emulador.
 * São herdados da hierarquia do nó principal e podem ser substituídos à vontade.
@@ -211,7 +209,7 @@ Os dois exemplos a seguir ilustram a definição:
 
 #### CSS para pontos de interrupção usando MENOS {#css-for-breakpoints-using-less}
 
-O AEM usa MENOS para gerar partes do CSS necessário, que precisam ser incluídas em seus projetos.
+O AEM usa MENOS para gerar partes do CSS necessário, que precisam ser incluídas nos projetos.
 
 Você também deverá criar uma [biblioteca do cliente](https://experienceleague.adobe.com/pt-br/docs) para fornecer configuração e chamadas de função adicionais. A seguinte extração MENOS é um exemplo do mínimo que você deve adicionar ao seu projeto:
 
@@ -247,17 +245,17 @@ A definição da grade base pode ser encontrada em:
 
 #### Considerações sobre estilo {#styling-considerations}
 
-Os componentes mantidos em um contêiner responsivo são redimensionados (juntamente com seus respectivos elementos DOM de HTML) de acordo com o tamanho da grade responsiva. Portanto, nessas circunstâncias, é recomendável evitar (ou atualizar) definições de elementos DOM de largura fixa (contidos).
+Os componentes mantidos em um contêiner responsivo são redimensionados (juntamente com seus respectivos elementos DOM do HTML) de acordo com o tamanho da grade responsiva. Portanto, nessas circunstâncias, é recomendável evitar (ou atualizar) definições de elementos DOM de largura fixa (contidos).
 
 Por exemplo:
 
 * Antes:
 
-   * `width=100px`
+  * `width=100px`
 
 * Depois:
 
-   * `max-width=100px`
+  * `max-width=100px`
 
 #### Conformidade com redimensionamento e imagem adaptável {#resizing-and-adaptive-image-compliance}
 
@@ -317,19 +315,19 @@ Você pode configurar o número de colunas disponíveis para cada instância esp
 
    * Número de colunas disponíveis:
 
-      * `columns="{String}8"`
+     * `columns="{String}8"`
 
    * Componentes que podem ser adicionados ao componente atual:
 
-      * `components="[/libs/wcm/foundation/components/responsivegrid, ...`
+     * `components="[/libs/wcm/foundation/components/responsivegrid, ...`
 
 ## Grades Responsivas Aninhadas {#nested-responsive-grids}
 
-Pode haver ocasiões em que você ache necessário aninhar grades responsivas para suportar as necessidades do seu projeto. No entanto, lembre-se de que a prática recomendada para o Adobe é manter a estrutura o mais plana possível.
+Pode haver ocasiões em que você ache necessário aninhar grades responsivas para suportar as necessidades do seu projeto. No entanto, lembre-se de que a prática recomendada pela Adobe é manter a estrutura o mais plana possível.
 
 Quando não for possível evitar o uso de grades responsivas aninhadas, verifique se:
 
-* Todos os contêineres (contêineres, guias, acordeões, etc.) têm a propriedade `layout = responsiveGrid`.
+* Todos os contêineres (contêineres, guias, acordeões etc.) tem a propriedade `layout = responsiveGrid`.
 * Não misture a propriedade `layout = simple` na hierarquia de contêiner.
 
 Isso inclui todos os containers estruturais do modelo de página.
@@ -357,7 +355,7 @@ container
       @text =" Text Column 1"
 ```
 
->[!TAB Exemplo de HTML resultante]
+>[!TAB Exemplo de HTML] resultante
 
 ```html
 <div class="container responsivegrid aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--8 aem-GridColumn--offset--default--0">

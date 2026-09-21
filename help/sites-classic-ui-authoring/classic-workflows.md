@@ -13,9 +13,7 @@ source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '208'
 ht-degree: 75%
-
 ---
-
 # Trabalhar com fluxos de trabalho{#working-with-workflows}
 
 Os fluxos de trabalho do AEM permitem automatizar uma série de etapas executadas em uma página ou ativo. Por exemplo, ao publicar, um(a) editor(a) precisa revisar o conteúdo, antes que o(a) admin do site ative a página. Um fluxo de trabalho que automatiza esse exemplo notifica cada participante quando é hora de executar o trabalho necessário:

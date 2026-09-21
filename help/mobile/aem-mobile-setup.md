@@ -11,20 +11,18 @@ feature: Mobile
 role: Admin
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '889'
+source-wordcount: '953'
 ht-degree: 1%
-
 ---
-
 # Configuração do AEM Mobile{#aem-mobile-setup}
 
 {{ue-over-mobile}}
 
 >[!CAUTION]
 >
->Os clientes de aplicativos móveis do Adobe Experience Manager (AEM) que estão migrando do AEM 6.2 ou 6.3 para o AEM 6.5 podem continuar a usar os aplicativos da AEM Mobile baixando um pacote do Compartilhamento de pacotes. No entanto, as novas instalações do AEM 6.5 não oferecem suporte à funcionalidade de aplicativos do AEM Mobile.
+>Os clientes que migram do AEM 6.2 ou 6.3 para o AEM 6.5 com os aplicativos móveis do Adobe Experience Manager (AEM) podem continuar a usar os aplicativos da AEM Mobile baixando um pacote do Compartilhamento de pacotes. No entanto, as novas instalações do AEM 6.5 não oferecem suporte à funcionalidade de aplicativos do AEM Mobile.
 
-Para usar o AEM para produzir conteúdo para aplicativos do AEM Mobile, é necessário integrar a instância do AEM à conta e aos projetos do AEM Mobile On-demand Services com base em nuvem.
+Para usar o AEM para produzir conteúdo para aplicativos do AEM Mobile, você deve integrar a instância do AEM à conta e aos projetos do AEM Mobile On-demand Services baseados em nuvem.
 
 Siga estas etapas para configurar o AEM Mobile e, assim, permitir que o usuário crie e gerencie o conteúdo no AEM.
 
@@ -32,21 +30,21 @@ Siga estas etapas para configurar o AEM Mobile e, assim, permitir que o usuário
 
 Para começar a usar o AEM Mobile, você deve:
 
-* **Solicitar uma chave de API**: para acessar a API de serviços por demanda, solicite uma chave de API. Para solicitar a chave de API, preencha o [formulário PDF](https://helpx.adobe.com/br/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html). Envie o formulário preenchido para o Suporte da Adobe Developer: [wwds@adobe.com](mailto:wwds@adobe.com)
+* **Solicitar uma chave de API**: para acessar a API de serviços por demanda, solicite uma chave de API. Para solicitar a chave de API, preencha o [formulário do PDF](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html). Envie o formulário preenchido para o Suporte da Adobe Developer: [wwds@adobe.com](mailto:wwds@adobe.com)
 
 * **Gerar a ID do Dispositivo e o Token do Dispositivo**: depois de receber a chave de API, você poderá gerar a ID do dispositivo e o token do dispositivo. Vá para `https://aex.aemmobile.adobe.com` e faça o seguinte:
 
-   * Forneça a chave de API
-   * Faça logon com uma Adobe ID adicionada a um projeto do AEM Mobile com as seguintes permissões (consulte as etapas abaixo para criar um projeto)
+  * Forneça a chave de API
+  * Faça logon com uma Adobe ID adicionada a um projeto do AEM Mobile com as seguintes permissões (consulte as etapas abaixo para criar um projeto)
 
-      * Administração > Gerenciar projetos e usuários
-      * Conteúdo > Adicionar e editar conteúdo, Excluir conteúdo, Exibir conteúdo, Conteúdo do Publish
+    * Administração > Gerenciar projetos e usuários
+    * Conteúdo > Adicionar e editar conteúdo, Excluir conteúdo, Exibir conteúdo, Publicar conteúdo
 
 Se todas as condições forem atendidas, uma ID do dispositivo e um Token do dispositivo serão gerados.
 
 >[!NOTE]
 >
->O Adobe ID necessário deve receber acesso em um projeto do AEM Mobile. Consulte [Administração de Conta para o AEM Mobile](https://helpx.adobe.com/br/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html) na Ajuda Online.
+>O Adobe ID necessário deve receber acesso em um projeto do AEM Mobile. Consulte [Administração de Conta para o AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html) na Ajuda Online.
 
 ## Criação de projetos para o AEM Mobile {#creating-projects-for-aem-mobile}
 
@@ -56,13 +54,13 @@ A criação de um projeto requer que você faça logon no portal dos serviços p
 
 >[!NOTE]
 >
->Para saber mais sobre como Criar Projetos no AEM Mobile, clique [aqui](https://helpx.adobe.com/br/digital-publishing-solution/help/creating-projects.html).
+>Para saber mais sobre como Criar Projetos no AEM Mobile, clique [aqui](https://helpx.adobe.com/digital-publishing-solution/help/creating-projects.html).
 
 ## Configuração de um conector do AEM Mobile {#configuring-an-aem-mobile-connector}
 
 A configuração do AEM envolve as seguintes etapas para a configuração do conector. Quando a configuração do conector do AEM Mobile estiver concluída, o usuário poderá configurar grupos de usuários e permissões.
 
-O conector AEM Mobile On-Demand é usado para vincular o conteúdo gerenciado do AEM Mobile com os serviços On-Demand da Adobe Experience Manager Mobile. Isso permite que os autores de conteúdo criem e gerenciem material para aplicativos móveis usando ferramentas do AEM e, ao mesmo tempo, usando os serviços on-demand da AEM Mobile para fácil distribuição de conteúdo móvel.
+O conector AEM Mobile On-Demand é usado para vincular o conteúdo gerenciado do AEM Mobile com os serviços On-Demand da Adobe Experience Manager Mobile. Isso permite que os autores de conteúdo criem e gerenciem material para aplicativos móveis usando as ferramentas do AEM e, ao mesmo tempo, usando os serviços por demanda da AEM Mobile para fácil distribuição de conteúdo móvel.
 
 >[!NOTE]
 >
@@ -75,9 +73,9 @@ Conclua as etapas de configuração para que as integrações do AEM Mobile func
 1. Ir para a configuração do serviço OSGI
 
    1. AEM > Ferramentas > Operações > Console da Web
-   1. Role ou pesquise por ***Experience Manager Mobile On-demand Services Client (era o Adobe Digital Publishing Solution Client)***
+   1. Role ou pesquise por ***Cliente do Experience Manager Mobile On-demand Services (era o Cliente da Adobe Digital Publishing Solution)***
 
-1. Editar ***Cliente do Mobile On-demand Services do Experience Manager***
+1. Editar ***Cliente do Experience Manager Mobile On-demand Services***
 
    1. **(Obrigatório)** Insira os campos obrigatórios:
 
@@ -93,7 +91,7 @@ Conclua as etapas de configuração para que as integrações do AEM Mobile func
 
 ### Configuração do AEM Mobile On-demand Services CloudService {#configuring-aem-mobile-on-demand-services-cloudservice}
 
-1. Ir para Cloud Service.
+1. Vá para Cloud Services.
 
    1. AEM > Ferramentas > Implantação> [CloudServices](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html). Rolar ou pesquisar por ***Adobe Experience Manager Mobile On-demand Services***
 
@@ -117,11 +115,11 @@ No desenvolvimento de aplicativos do AEM Mobile, existem três funções diferen
 * Desenvolvedor
 * Autor
 
-Para obter mais informações sobre como criar funções com permissões diferentes, como para a criação de aplicativos ou para criar e publicar conteúdo, clique em [Como Criar Funções de Usuário e Conceder Acesso](https://helpx.adobe.com/br/digital-publishing-solution/help/account-admin-dps.html) na Ajuda do AEM Mobile.
+Para obter mais informações sobre como criar funções com permissões diferentes, como para a criação de aplicativos ou para criar e publicar conteúdo, clique em [Como Criar Funções de Usuário e Conceder Acesso](https://helpx.adobe.com/digital-publishing-solution/help/account-admin-dps.html) na Ajuda do AEM Mobile.
 
 >[!NOTE]
 >
->O gerenciamento de conteúdo do aplicativo requer um esforço coletivo de desenvolvedores, autores de conteúdo e administradores. Os autores manipulam páginas, que por sua vez são baseadas em modelos e componentes gerados por desenvolvedores de aplicativos. Por fim, os administradores publicam estrategicamente o conteúdo atualizado do aplicativo. A configuração de grupos e permissões de AEM define suas funções no Painel de controle do aplicativo ou no Centro de controle.
+>O gerenciamento de conteúdo do aplicativo requer um esforço coletivo de desenvolvedores, autores de conteúdo e administradores. Os autores manipulam páginas, que por sua vez são baseadas em modelos e componentes gerados por desenvolvedores de aplicativos. Por fim, os administradores publicam estrategicamente o conteúdo atualizado do aplicativo. Configurar grupos e permissões do AEM define suas funções no Painel de controle do aplicativo ou no Centro de controle.
 >
 >Consulte [Painel do AEM Mobile](/help/mobile/mobile-apps-ondemand-application-dashboard.md).
 
@@ -131,8 +129,8 @@ Quando terminar de criar funções com permissões diferentes, como para criaç�
 
 Para entender mais sobre as outras duas funções e responsabilidades para criar um aplicativo AEM Mobile On-demand Services, consulte os seguintes recursos:
 
-* [Desenvolvimento de conteúdo AEM para AEM Mobile On-demand Services](/help/mobile/aem-mobile-on-demand.md)
-* [Criação de conteúdo AEM para aplicativo AEM Mobile On-demand Services](/help/mobile/mobile-apps-ondemand.md)
+* [Desenvolvimento de conteúdo do AEM para o AEM Mobile On-demand Services](/help/mobile/aem-mobile-on-demand.md)
+* [Criação de conteúdo do AEM para aplicativo do AEM Mobile On-demand Services](/help/mobile/mobile-apps-ondemand.md)
 
 >[!NOTE]
 >

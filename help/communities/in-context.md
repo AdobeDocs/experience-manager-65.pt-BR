@@ -11,11 +11,9 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '796'
+source-wordcount: '830'
 ht-degree: 0%
-
 ---
-
 # Moderação do contexto interno {#in-context-moderation}
 
 Para o AEM Communities, a moderação pode ser executada por administradores e membros confiáveis da comunidade diretamente na página publicada onde o conteúdo da comunidade foi publicado.
@@ -38,7 +36,7 @@ A interface apresentada ao moderador na instância de publicação está contida
 
 ## Exemplo {#example}
 
-Usando o site [Geometrixx Engage](http://localhost:4503/content/sites/engage/en.html) criado ao [Começar a usar o AEM Communities](getting-started.md), é possível configurar um thread em um fórum no qual experimentar várias atividades de moderação no ambiente do Publish. Veja abaixo.
+Usando o site [Geometrixx Engage](http://localhost:4503/content/sites/engage/en.html) criado ao [Começar a usar o AEM Communities](getting-started.md), é possível configurar um thread em um fórum no qual experimentar várias atividades de moderação no ambiente de Publicação. Veja abaixo.
 
 Aaron McDonald (`aaron.mcdonald@mailinator.com`) foi identificado como um membro confiável da comunidade, adicionando-o ao grupo de moderadores de engajamento da comunidade ao criar o site.
 
@@ -50,40 +48,40 @@ Para obter mais informações sobre grupos de usuários da comunidade, visite [G
 
 * Fazer logon como Rebekah Larsen (rebekah.larsen@trashymail.com)
 
-   * Selecionar fórum
-   * Selecionar novo Post
-   * Insira o assunto
+  * Selecionar fórum
+  * Selecionar nova publicação
+  * Insira o assunto
 
-     Quando trocar o néctar no Humming Bird Feeder
+    Quando trocar o néctar no Humming Bird Feeder
 
-   * Insira o texto do corpo
+  * Insira o texto do corpo
 
-     Não tenho tido muito sucesso quando penduro um alimentador de beija-flor todo ano. Parece que eles chegam um ou dois dias, então é isso. Eu troco uma vez por semana é muito tempo? Preciso mudá-la antes?
+    Não tenho tido muito sucesso quando penduro um alimentador de beija-flor todo ano. Parece que eles chegam um ou dois dias, então é isso. Eu troco uma vez por semana é muito tempo? Preciso mudá-la antes?
 
-   * Selecionar Post
-   * Selecione Fazer logoff
+  * Selecionar publicação
+  * Selecione Fazer logoff
 
 * Efetue logon como Aaron McDonald (aaron.mcdonald@mailinator.com)
 
-   * Selecionar fórum
-   * Para o Tópico Hummingbird, selecione Ler mais
-   * Insira o comentário para a resposta do Post
+  * Selecionar fórum
+  * Para o Tópico Hummingbird, selecione Ler mais
+  * Inserir o comentário para Publicar resposta
 
-     Eu troco as minhas uma vez por semana e as recebo de maio a outubro.
+    Eu troco as minhas uma vez por semana e as recebo de maio a outubro.
 
-   * Selecionar resposta
-   * Selecione Fazer logoff
+  * Selecionar resposta
+  * Selecione Fazer logoff
 
 * Faça logon como Andrew Schaeffer (andrew.schaeffer@trashymail.com)
 
-   * Selecionar fórum
-   * Para o Tópico Hummingbird, selecione Ler mais
-   * Insira o comentário para a resposta do Post
+  * Selecionar fórum
+  * Para o Tópico Hummingbird, selecione Ler mais
+  * Inserir o comentário para Publicar resposta
 
-     Eu vendo néctar e alimentadores - visite https://my.viral.url/
+    Eu vendo néctar e alimentadores - visite https://my.viral.url/
 
-   * Selecionar resposta
-   * Selecione Fazer logoff
+  * Selecionar resposta
+  * Selecione Fazer logoff
 
 ### Visitante anônimo do site (#5) {#anonymous-site-visitor}
 
@@ -122,7 +120,7 @@ Aviso:
 
 ![fórum de administração da comunidade](assets/community-admin-forum.png)
 
-Selecione o item de menu Administração para poder acessar o [console de moderação](moderation.md) do ambiente do Publish.
+Selecione o item de menu Administração para poder acessar o [console de moderação](moderation.md) do ambiente de Publicação.
 
 Observe que, para um administrador, todo o conteúdo moderável está visível, não apenas o conteúdo do site da comunidade do Geometrixx Engage.
 
@@ -145,11 +143,11 @@ Aviso:
 
 ![moderador-fórum-comunidade](assets/community-forum-moderator.png)
 
-Selecione o item de menu Administração para poder acessar o [console de moderação](moderation.md) do ambiente do Publish.
+Selecione o item de menu Administração para poder acessar o [console de moderação](moderation.md) do ambiente de Publicação.
 
-Observe que, para um moderador da comunidade, somente o conteúdo moderável do site da comunidade do Geometrixx Engage fica visível.
+Observe que, para um moderador de comunidade, somente o conteúdo moderável do site da comunidade do Geometrixx Engage está visível.
 
-Observe que o moderador da comunidade tem as mesmas opções que o administrador (a imagem está com a barra lateral de pesquisa alternada para fechada), mas sem acesso a outros consoles AEM.
+Observe que o moderador da comunidade tem as mesmas opções que o administrador (a imagem está com a barra lateral de pesquisa alternada para fechada), mas sem acesso a outros consoles do AEM.
 
 Fazer logoff.
 

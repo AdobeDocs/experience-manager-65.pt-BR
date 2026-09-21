@@ -1,6 +1,6 @@
 ---
-title: Conceitos principais de AEM
-description: Uma visão geral dos conceitos principais de como o Adobe Experience Manager (AEM) é estruturado e como desenvolvê-lo, incluindo a compreensão do JCR, Sling, OSGi, o Dispatcher, fluxos de trabalho e o MSM.
+title: Conceitos principais do AEM
+description: Uma visão geral dos conceitos principais sobre como o Adobe Experience Manager (AEM) é estruturado e como desenvolvê-lo, incluindo a compreensão do JCR, Sling, OSGi, o Dispatcher, fluxos de trabalho e o MSM.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
@@ -11,27 +11,25 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '3251'
-ht-degree: 0%
-
+source-wordcount: '3371'
+ht-degree: 1%
 ---
-
-# Conceitos principais de AEM {#aem-core-concepts}
+# Conceitos principais do AEM {#aem-core-concepts}
 
 >[!NOTE]
 >
->Antes de entrar nos conceitos principais do Adobe Experience Manager (AEM), o Adobe recomenda concluir o Tutorial WKND no documento [Introdução ao desenvolvimento do AEM Sites](/help/sites-developing/getting-started.md). Ele inclui uma visão geral do processo de desenvolvimento do AEM e uma introdução aos conceitos principais.
+>Antes de abordar os conceitos principais do Adobe Experience Manager (AEM), a Adobe recomenda concluir o Tutorial WKND no documento [Introdução ao desenvolvimento do AEM Sites](/help/sites-developing/getting-started.md). Ele inclui uma visão geral do processo de desenvolvimento do AEM e uma introdução aos conceitos principais.
 
-## Pré-requisitos para o desenvolvimento no AEM {#prerequisites-for-developing-on-aem}
+## Pré-requisitos para desenvolvimento no AEM {#prerequisites-for-developing-on-aem}
 
-Você precisa das seguintes habilidades para desenvolver em cima do AEM:
+Você precisa das seguintes habilidades para desenvolver com base no AEM:
 
 * Conhecimento básico das técnicas de aplicação web, incluindo:
 
-   * o ciclo solicitação-resposta (XMLHttpRequest / XMLHttpResponse)
-   * HTML
-   * CSS
-   * JavaScript
+  * o ciclo solicitação-resposta (XMLHttpRequest / XMLHttpResponse)
+  * HTML
+  * CSS
+  * JavaScript
 
 * Conhecimento prático do Experience Server (CRX), incluindo o Content Explorer
 * Para desenvolver na interface clássica do usuário, também é necessário ter conhecimento básico de JSP (JavaServer Pages), incluindo a capacidade de entender e modificar exemplos de JSP simples.
@@ -44,7 +42,7 @@ O padrão Java™ Content Repository (JCR), [JSR 283](https://developer.adobe.co
 
 O lead da especificação é da Adobe Research (Switzerland) AG.
 
-O pacote [JCR API 2.0](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html), javax.jcr.O &ast; é usado para o acesso direto e manipulação do conteúdo do repositório.
+O pacote [JCR API 2.0](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html), javax.jcr.&amp;ast; é usado para o acesso direto e manipulação de conteúdo do repositório.
 
 ## Experience Server (CRX) e Jackrabbit {#experience-server-crx-and-jackrabbit}
 
@@ -56,11 +54,11 @@ O [Apache Jackrabbit](https://jackrabbit.apache.org/jcr/index.html) é uma imple
 
 ### Introdução ao Sling {#introduction-to-sling}
 
-O AEM é criado usando o [Sling](https://sling.apache.org/index.html), uma estrutura de aplicativo Web baseada em princípios REST que fornece desenvolvimento fácil de aplicativos orientados a conteúdo. O Sling usa um repositório JCR, como o Apache Jackrabbit ou, se houver AEM, o Repositório de conteúdo do CRX, como seu armazenamento de dados. O Sling contribuiu para a Apache Software Foundation - mais informações podem ser encontradas na Apache.
+O AEM foi criado usando o [Sling](https://sling.apache.org/index.html), uma estrutura de aplicativo Web baseada em princípios REST que fornece desenvolvimento fácil de aplicativos orientados a conteúdo. O Sling usa um repositório JCR, como o Apache Jackrabbit ou, se houver o AEM, o Repositório de conteúdo do CRX, como seu armazenamento de dados. O Sling contribuiu para a Apache Software Foundation - mais informações podem ser encontradas na Apache.
 
 Usando o Sling, o tipo de conteúdo a ser renderizado não é a primeira consideração de processamento. Em vez disso, a principal consideração é se o URL resolve um objeto de conteúdo para o qual um script pode ser encontrado para executar a renderização. Isso fornece excelente suporte para que os autores de conteúdo da Web criem páginas que são facilmente personalizadas de acordo com suas necessidades.
 
-As vantagens dessa flexibilidade são evidentes em aplicativos com uma grande variedade de elementos de conteúdo diferentes, ou quando você precisa de páginas que possam ser facilmente personalizadas. Especificamente, ao implementar um sistema de Gerenciamento de conteúdo na Web, como o WCM na solução AEM.
+As vantagens dessa flexibilidade são evidentes em aplicativos com uma grande variedade de elementos de conteúdo diferentes, ou quando você precisa de páginas que possam ser facilmente personalizadas. Especificamente, ao implementar um sistema de Gerenciamento de conteúdo da Web, como o WCM na solução do AEM.
 
 Consulte [Descubra o Sling em 15 minutos](https://sling.apache.org/documentation/getting-started/discover-sling-in-15-minutes.html) para conhecer as primeiras etapas de desenvolvimento com o Sling.
 
@@ -68,7 +66,7 @@ O diagrama a seguir explica a resolução do script Sling. Ele mostra como ir da
 
 ![Entendendo a resolução do script Apache Sling](assets/sling-cheatsheet-01.png)
 
-O diagrama a seguir explica todos os parâmetros de solicitação ocultos, mas eficientes, que você pode usar ao lidar com o SlingPostServlet. Ele inclui o manipulador padrão para todas as solicitações do POST, que oferece opções infinitas para criar, modificar, excluir, copiar e mover nós no repositório.
+O diagrama a seguir explica todos os parâmetros de solicitação ocultos, mas eficientes, que você pode usar ao lidar com o SlingPostServlet. Ele inclui o manipulador padrão para todas as solicitações POST, que oferece opções infinitas para criar, modificar, excluir, copiar e mover nós no repositório.
 
 ![Usando o SlingPostServlet](assets/sling-cheatsheet-02.png)
 
@@ -86,8 +84,8 @@ Devido à filosofia centrada no conteúdo, o Sling implementa um servidor orient
 * RESTful, não apenas na superfície; os recursos e as representações são modelados corretamente dentro do servidor
 * remove um ou mais modelos de dados
 
-   * anteriormente, era necessário o seguinte: estrutura de URL, objetos de negócios, esquema de BD;
-   * agora isso é reduzido a: URL = resource = JCR structure
+  * anteriormente, era necessário o seguinte: estrutura de URL, objetos de negócios, esquema de BD;
+  * agora isso é reduzido a: URL = resource = JCR structure
 
 ### Decomposição de URL {#url-decomposition}
 
@@ -151,20 +149,20 @@ O caminho especificado por `sling:resourceType` pode ser:
 * absoluto
 * relativo a um parâmetro de configuração
 
-  Os caminhos relativos são recomendados pelo Adobe à medida que aumentam a portabilidade.
+  Os caminhos relativos são recomendados pela Adobe, pois aumentam a portabilidade.
 
 Todos os scripts Sling são armazenados em subpastas de `/apps` ou `/libs`, que são pesquisadas nesta ordem (consulte [Personalizando componentes e outros elementos](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements)).
 
 Alguns outros pontos a observar são:
 
-* quando o Método (GET, POST) é obrigatório, ele é especificado em maiúsculas, de acordo com a especificação HTTP, por exemplo, jobs.POST.esp (veja abaixo)
+* quando o Método (GET, POST) é necessário, ele é especificado em maiúsculas, de acordo com a especificação HTTP, por exemplo, jobs.POST.esp (veja abaixo)
 * vários mecanismos de script são compatíveis:
 
-   * HTL (Linguagem de modelo de HTML - sistema de modelo preferencial e recomendado do Adobe Experience Manager para HTML): `.html`
-   * Páginas do ECMAScript (JavaScript) (execução no lado do servidor): `.esp, .ecma`
-   * Java™ Server Pages (execução no lado do servidor): `.jsp`
-   * Compilador de Servlet Java™ (execução no lado do servidor): `.java`
-   * Modelos JavaScript (execução no lado do cliente): `.jst`
+  * HTL (Linguagem de modelo HTML - sistema de modelo preferencial e recomendado do Adobe Experience Manager para HTML): `.html`
+  * Páginas do ECMAScript (JavaScript) (execução no lado do servidor): `.esp, .ecma`
+  * Java™ Server Pages (execução no lado do servidor): `.jsp`
+  * Compilador de Servlet Java™ (execução no lado do servidor): `.java`
+  * Modelos JavaScript (execução no lado do cliente): `.jst`
 
 A lista de mecanismos de script suportados pela instância fornecida do AEM está listada no Felix Management Console ( `http://<host>:<port>/system/console/slingscripting`).
 
@@ -176,7 +174,7 @@ Usando o exemplo acima, se `sling:resourceType` for `hr/jobs`, então para:
 
   O script é /apps/hr/jobs/jobs.esp; a última seção do sling:resourceType forma o nome do arquivo.
 
-* solicitações POST (todos os tipos de solicitação, exceto GET/HEAD, o nome do método deve estar em maiúsculas)
+* Solicitações POST (todos os tipos de solicitação exceto GET/HEAD, o nome do método deve estar em maiúsculas)
 
   POST é usado no nome do script.
 
@@ -198,19 +196,19 @@ Usando o exemplo acima, se `sling:resourceType` for `hr/jobs`, então para:
 
 * Se nenhum sling:resourceType estiver definido, então:
 
-   * o caminho do conteúdo é usado para procurar um script apropriado (se o ResourceTypeProvider baseado em caminho estiver ativo).
+  * o caminho do conteúdo é usado para procurar um script apropriado (se o ResourceTypeProvider baseado em caminho estiver ativo).
 
-     Por exemplo, o script para `../content/corporate/jobs/developer.html` geraria uma pesquisa em `/apps/content/corporate/jobs/`.
+    Por exemplo, o script para `../content/corporate/jobs/developer.html` geraria uma pesquisa em `/apps/content/corporate/jobs/`.
 
-   * o tipo de nó primário é usado.
+  * o tipo de nó primário é usado.
 
 * Se nenhum script for encontrado, o script padrão será usado.
 
   A representação padrão é compatível como texto sem formatação (.txt), HTML (.html) e JSON (.json), e todas listam as propriedades do nó (adequadamente formatadas). A representação padrão da extensão .res, ou solicitações sem uma extensão de solicitação, é fazer spool do recurso (quando possível).
 * Para o tratamento de erros http (códigos 403 ou 404), o Sling procura um script em:
 
-   * o local /apps/sling/servlet/errorhandler para [scripts personalizados](/help/sites-developing/customizing-errorhandler-pages.md)
-   * ou o local dos scripts padrão /libs/sling/servlet/errorhandler/403.esp ou 404.esp, respectivamente.
+  * o local /apps/sling/servlet/errorhandler para [scripts personalizados](/help/sites-developing/customizing-errorhandler-pages.md)
+  * ou o local dos scripts padrão /libs/sling/servlet/errorhandler/403.esp ou 404.esp, respectivamente.
 
 Se vários scripts se aplicarem a uma determinada solicitação, o script com a melhor correspondência será selecionado. Quanto mais específica for uma correspondência, melhor ela será; em outras palavras, quanto mais o seletor corresponder melhor, independentemente de qualquer correspondência de extensão de solicitação ou nome de método.
 
@@ -243,30 +241,30 @@ Por exemplo:
 
 * /
 
-   * a
-   * b
+  * a
+  * b
 
-      * sling:resourceSuperType = a
+    * sling:resourceSuperType = a
 
-   * c
+  * c
 
-      * sling:resourceSuperType = b
+    * sling:resourceSuperType = b
 
-   * x
+  * x
 
-      * sling:resourceType = c
+    * sling:resourceType = c
 
-   * y
+  * y
 
-      * sling:resourceType = c
-      * sling:resourceSuperType = a
+    * sling:resourceType = c
+    * sling:resourceSuperType = a
 
 A hierarquia de tipo de:
 
 * `/x`
-   * é `[ c, b, a, <default>]`
+  * é `[ c, b, a, <default>]`
 * enquanto para `/y`
-   * a hierarquia é `[ c, a, <default>]`
+  * a hierarquia é `[ c, a, <default>]`
 
 Isso ocorre porque `/y` tem a propriedade `sling:resourceSuperType`, enquanto `/x` não tem e, portanto, seu supertipo é retirado de seu tipo de recurso.
 
@@ -276,18 +274,18 @@ No Sling, os scripts não podem ser chamados diretamente, pois isso quebraria o 
 
 Se você chamar a representação (o script) diretamente, ocultará o recurso dentro do script para que a estrutura (Sling) não saiba mais sobre ela. Dessa forma, você perde determinados recursos:
 
-* tratamento automático de métodos http diferentes do GET, incluindo:
+* tratamento automático de métodos http diferentes de GET, incluindo:
 
-   * POST, PUT, DELETE que é manipulada com uma implementação padrão do sling
-   * o script `POST.jsp` no local sling:resourceType
+  * POST, PUT, DELETE que é manipulada com uma implementação padrão do sling
+  * o script `POST.jsp` no seu local do sling:resourceType
 
 * sua arquitetura de código não é mais tão limpa nem tão claramente estruturada quanto deveria ser; de importância primordial para o desenvolvimento em larga escala
 
 ### API Sling {#sling-api}
 
-Usa o pacote da API do Sling, org.apache.sling.&ast; e bibliotecas de tags.
+Usa o pacote da API do Sling, org.apache.sling.&amp;ast;, e as bibliotecas de tags.
 
-### Referência a elementos existentes usando sling:include {#referencing-existing-elements-using-sling-include}
+### Referenciando elementos existentes usando sling:include {#referencing-existing-elements-using-sling-include}
 
 Uma consideração final é a necessidade de fazer referência aos elementos existentes nos scripts.
 
@@ -330,7 +328,7 @@ Isso permite executar as seguintes ações em qualquer um dos pacotes da sua ins
 
 Consulte [o Console da Web](/help/sites-deploying/web-console.md), [Configuração OSGI](/help/sites-deploying/configuring-osgi.md) e [Configurações OSGi](/help/sites-deploying/osgi-configuration-settings.md) para obter mais informações.
 
-## Objetos de desenvolvimento no ambiente AEM {#development-objects-in-the-aem-environment}
+## Objetos de desenvolvimento no ambiente do AEM {#development-objects-in-the-aem-environment}
 
 Os seguintes aspectos são de interesse para o desenvolvimento:
 
@@ -431,7 +429,7 @@ A lista a seguir fornece uma visão geral da estrutura que você vê no reposit�
 
 * `/libs`
 
-  Bibliotecas e definições que pertencem ao núcleo do AEM. As subpastas em `/libs` representam os recursos de AEM prontos para uso, como pesquisa ou replicação. O conteúdo em `/libs` não deve ser modificado, pois afeta a maneira como o AEM funciona. Os recursos específicos do seu site devem ser desenvolvidos em `/apps` (consulte [Personalização de componentes e outros elementos](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements)).
+  Bibliotecas e definições que pertencem ao núcleo do AEM. As subpastas em `/libs` representam os recursos predefinidos do AEM, como pesquisa ou replicação. O conteúdo em `/libs` não deve ser modificado, pois afeta a maneira como o AEM funciona. Os recursos específicos do seu site devem ser desenvolvidos em `/apps` (consulte [Personalização de componentes e outros elementos](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements)).
 
 * `/tmp`
 
@@ -443,21 +441,21 @@ A lista a seguir fornece uma visão geral da estrutura que você vê no reposit�
 
 ## Ambientes {#environments}
 
-Com o AEM, um ambiente de produção geralmente consiste em dois tipos diferentes de instâncias: um [Autor e uma instância do Publish](/help/sites-deploying/deploy.md#author-and-publish-installs).
+Com o AEM, um ambiente de produção geralmente consiste em dois tipos diferentes de instâncias: uma [Instância de autor e uma de publicação](/help/sites-deploying/deploy.md#author-and-publish-installs).
 
 ## O DISPATCHER {#the-dispatcher}
 
-O Dispatcher é uma ferramenta de Adobe para armazenamento em cache e/ou balanceamento de carga. Mais informações podem ser encontradas em [a Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=pt-BR).
+O Dispatcher é a ferramenta da Adobe para armazenamento em cache e/ou balanceamento de carga. Mais informações podem ser encontradas em [a Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=pt-BR).
 
 ## FileVault (sistema de revisão de origem) {#filevault-source-revision-system}
 
-O FileVault fornece o repositório JCR com mapeamento do sistema de arquivos e controle de versão. Ele pode ser usado para gerenciar projetos de desenvolvimento de AEM com suporte total para armazenar e versionar código, conteúdo, configurações do projeto e assim por diante, em sistemas de controle de versão padrão (por exemplo, Subversion).
+O FileVault fornece o repositório JCR com mapeamento do sistema de arquivos e controle de versão. Ele pode ser usado para gerenciar projetos de desenvolvimento do AEM com suporte total para armazenar e versionar código, conteúdo, configurações do projeto e assim por diante nos sistemas de controle de versão padrão (por exemplo, Subversion).
 
 Consulte a documentação da [ferramenta FileVault](/help/sites-developing/ht-vlttool.md) para obter informações detalhadas.
 
 ## Fluxos de trabalhos {#workflows}
 
-Seu conteúdo geralmente está sujeito a processos organizacionais, incluindo etapas como aprovação e aprovação por vários participantes. Esses processos podem ser representados como fluxos de trabalho, [definidos e desenvolvidos com AEM](/help/sites-developing/workflows-models.md) e, em seguida, aplicados às [páginas de conteúdo apropriadas](/help/sites-administering/workflows.md) ou aos [ativos digitais](/help/assets/assets-workflow.md) conforme necessário.
+Seu conteúdo geralmente está sujeito a processos organizacionais, incluindo etapas como aprovação e aprovação por vários participantes. Esses processos podem ser representados como fluxos de trabalho, [definidos e desenvolvidos no AEM](/help/sites-developing/workflows-models.md) e, em seguida, aplicados às [páginas de conteúdo apropriadas](/help/sites-administering/workflows.md) ou aos [ativos digitais](/help/assets/assets-workflow.md) conforme necessário.
 
 O Mecanismo de workflow é usado para gerenciar a implementação dos workflows e sua aplicação subsequente ao conteúdo.
 
@@ -470,9 +468,9 @@ Por exemplo, sites geralmente são fornecidos em vários idiomas para públicos 
 * Gerencie com eficiência diferentes versões de idioma de um site.
 * Atualizar automaticamente um ou mais sites com base em um site de origem:
 
-   * Aplique uma estrutura de base comum e use conteúdo comum em vários sites.
-   * Maximize o uso dos recursos disponíveis.
-   * Mantenha uma aparência comum.
-   * Concentre esforços no gerenciamento do conteúdo que difere entre os sites.
+  * Aplique uma estrutura de base comum e use conteúdo comum em vários sites.
+  * Maximize o uso dos recursos disponíveis.
+  * Mantenha uma aparência comum.
+  * Concentre esforços no gerenciamento do conteúdo que difere entre os sites.
 
 Para obter mais informações, consulte [Gerenciador de vários sites](/help/sites-administering/msm.md).

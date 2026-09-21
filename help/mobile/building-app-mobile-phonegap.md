@@ -1,21 +1,21 @@
 ---
 title: Desenvolvimento de aplicativos móveis
 description: Esta página fornece um artigo passo a passo completo sobre como criar um aplicativo para dispositivos móveis usando o código disponível no GitHub, que está disponível aqui. Crie seu aplicativo para instalação em um dispositivo ou simulador para teste ou publicação em app stores. Você pode criar aplicativos localmente usando a interface de linha de comando do PhoneGap ou na nuvem usando o PhoneGap Build.
+
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
+
 exl-id: 7c2e5ed8-9f8e-4a81-b736-589ef4089f29
 solution: Experience Manager
 feature: Mobile
 role: Admin
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '1007'
+source-wordcount: '1053'
 ht-degree: 0%
-
 ---
-
 # Desenvolvimento de aplicativos móveis{#building-mobile-applications}
 
 {{ue-over-mobile}}
@@ -24,7 +24,7 @@ Crie seu aplicativo para instalação em um dispositivo ou simulador para teste 
 
 Um artigo passo a passo completo sobre como criar um aplicativo para dispositivos móveis usando o código disponível no GitHub está disponível [aqui](https://helpx.adobe.com/experience-manager/using/aem62_mobile.html).
 
-## Mover o aplicativo para a instância do Publish {#moving-the-application-to-the-publish-instance}
+## Mover o aplicativo para a instância de publicação {#moving-the-application-to-the-publish-instance}
 
 Mova os arquivos do aplicativo para a instância de publicação, para que você possa fornecer atualizações de conteúdo para as instâncias instaladas do aplicativo móvel e criar o aplicativo usando o conteúdo publicado. Os aplicativos consistem em duas ramificações de nó no repositório:
 
@@ -50,7 +50,7 @@ Por exemplo, um aplicativo móvel chamado phonegapapp é criado. O nó a seguir 
 
 ## Criação usando a interface de linha de comando do PhoneGap {#building-using-the-phonegap-command-line-interface}
 
-Compile o aplicativo PhoneGap no computador usando a CLI (Command-line Interface, interface de linha de comando) do PhoneGap. Para incluir o conteúdo AEM no aplicativo, o AEM cria um arquivo ZIP que contém o conteúdo do aplicativo móvel, as configurações de sincronização de conteúdo e outros ativos necessários. Baixe o arquivo ZIP e inclua-o na sua versão.
+Compile o aplicativo PhoneGap no computador usando a CLI (Command-line Interface, interface de linha de comando) do PhoneGap. Para incluir o conteúdo do AEM no aplicativo, o AEM cria um arquivo ZIP que contém o conteúdo do aplicativo móvel, as configurações de sincronização de conteúdo e outros ativos necessários. Baixe o arquivo ZIP e inclua-o na sua versão.
 
 ### Preparação do ambiente de criação {#preparing-your-build-environment}
 
@@ -123,16 +123,16 @@ Use a CLI do PhoneGap para compilar e instalar o aplicativo. Para obter informa�
    phonegap build android
    ```
 
-## Construindo Usando o PhoneGap Build {#building-using-phonegap-build}
+## Criação usando o PhoneGap Build {#building-using-phonegap-build}
 
-Use o serviço de nuvem PhoneGap para criar seu aplicativo. Para executar esse procedimento, primeiro você deve criar uma configuração de PhoneGap Build.
+Use o serviço de nuvem PhoneGap para criar seu aplicativo. Para executar esse procedimento, primeiro crie uma configuração do PhoneGap Build.
 
-### Conexão com o PhoneGap Build {#connecting-to-phonegap-build}
+### Conectando ao PhoneGap Build {#connecting-to-phonegap-build}
 
-Crie uma configuração de PhoneGap Build para poder usar os serviços de PhoneGap Build no AEM. Forneça o nome de usuário e a senha da conta do PhoneGap Build que será usada para criar seus aplicativos para dispositivos móveis.
+Crie uma configuração do PhoneGap Build para poder usar os serviços do PhoneGap Build de dentro da AEM. Forneça o nome de usuário e a senha da conta do PhoneGap Build que você usará para criar seus aplicativos móveis.
 
 1. Abra a página Ferramentas. ([http://localhost:4502/tools.html](http://localhost:4502/tools.html)).
-1. Na área Operações do CQ, clique em Cloud Service.
+1. Na área Operações do CQ, clique em Serviços na nuvem.
 1. Clique no link Configurar agora para o PhoneGap Build.
 
    ![chlimage_1-17](assets/chlimage_1-17.png)
@@ -140,9 +140,9 @@ Crie uma configuração de PhoneGap Build para poder usar os serviços de PhoneG
 1. Na caixa de diálogo Criar configuração, digite um valor para a propriedade Título. Por padrão, o valor da propriedade Nome é derivado do título, no entanto, você pode inserir um nome. Clique em Criar.
 1. Na caixa de diálogo Configuração do PhoneGap Build, digite seu nome de usuário e senha do PhoneGap Build e clique em OK.
 
-### Usando PhoneGap Build {#using-phonegap-build}
+### Uso do PhoneGap Build {#using-phonegap-build}
 
-Envie os recursos do aplicativo ao PhoneGap Build para compilação nas várias plataformas móveis.
+Envie os recursos do aplicativo para o PhoneGap Build para compilação das várias plataformas móveis.
 
 1. Na página Aplicativos móveis, abra o aplicativo móvel. ([http://localhost:4502/mobile.html/content/phonegap](http://localhost:4502/mobile.html/content/phonegap))
 1. (Opcional) Para criar o aplicativo para instalações completas, selecione o aplicativo e clique no ícone Limpar cache.
@@ -157,15 +157,15 @@ Envie os recursos do aplicativo ao PhoneGap Build para compilação nas várias 
 
    ![Ícone de Compilação Remota indicado por duas engrenagens redondas.](do-not-localize/chlimage_1-3.png)
 
-   **Observação:** a versão do Beta do AEM Beta não cria uma notificação da Caixa de Entrada quando a compilação é concluída com êxito.
+   **Observação:** a versão do AEM Beta para Beta não cria uma notificação da Caixa de Entrada quando a compilação é concluída com êxito.
 
-1. Na caixa de diálogo Êxito, clique em PhoneGap Build para abrir a página do Adobe PhoneGap Build em `https://build.phonegap.com/apps`. Se você estiver esperando o seu aplicativo aparecer, poderá verificar o Status do PhoneGap Build em `https://status.build.phonegap.com/`.
+1. Na caixa de diálogo Sucesso, clique em PhoneGap Build para abrir a página Adobe PhoneGap Build em `https://build.phonegap.com/apps`. Se você estiver esperando o seu aplicativo aparecer, poderá verificar o status do PhoneGap Build em `https://status.build.phonegap.com/`.
 
    Para obter informações sobre como instalar a compilação, consulte a [Documentação do PhoneGap Build](https://github.com/phonegap/phonegap-docs/tree/master/docs/4-phonegap-build).
 
    >[!NOTE]
    >
-   >Contas de PhoneGap Build gratuito têm permissão para um aplicativo privado. As builds do PhoneGap falham se você estiver criando um aplicativo privado adicional.
+   >Contas gratuitas do PhoneGap Build podem ter apenas um aplicativo privado. As builds do PhoneGap falham se você estiver criando um aplicativo privado adicional.
 
 ### Próximas etapas {#the-next-steps}
 

@@ -12,16 +12,14 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '2462'
+source-wordcount: '2503'
 ht-degree: 3%
-
 ---
-
 # Criação de modelos de fluxo de trabalho{#creating-workflow-models}
 
 >[!CAUTION]
 >
->Para uso da interface clássica, consulte a [documentação do AEM 6.3](https://helpx.adobe.com/br/experience-manager/6-3/help/sites-developing/workflows-models.html) para referência.
+>Para uso da interface clássica, consulte a [documentação do AEM 6.3](https://helpx.adobe.com/experience-manager/6-3/help/sites-developing/workflows-models.html) para referência.
 
 Você cria um [modelo de fluxo de trabalho](/help/sites-developing/workflows.md#model) para definir a série de etapas executadas quando um usuário inicia o fluxo de trabalho. Você também pode definir propriedades do modelo, como se o fluxo de trabalho é transitório ou usa vários recursos.
 
@@ -85,9 +83,9 @@ Ao abrir um [modelo Padrão e/ou Herdado](/help/sites-developing/workflows.md#wo
 * O navegador de Etapas não está disponível (lado esquerdo).
 * Há uma ação **Editar** disponível na barra de ferramentas (lado direito).
 * Inicialmente, o modelo e suas propriedades são apresentados no modo somente leitura como:
-   * Os fluxos de trabalho padrão estão em `/libs`
-   * Os fluxos de trabalho herdados estão em `/etc`
-Selecionar **Editar** irá:
+  * Os fluxos de trabalho padrão estão em `/libs`
+  * Os fluxos de trabalho herdados estão em `/etc`
+    Selecionar **Editar** irá:
 * fazer uma cópia do fluxo de trabalho em `/conf`
 * disponibilizar o navegador de Etapas
 * permitir que você faça alterações
@@ -108,7 +106,7 @@ Ao editar um modelo, as etapas disponíveis aparecem nos vários grupos do **Nav
 
 >[!NOTE]
 >
->Para obter informações sobre os componentes principais da etapa instalados com AEM, consulte [Referência a Etapas do Fluxo de Trabalho](/help/sites-developing/workflows-step-ref.md).
+>Para obter informações sobre os componentes da etapa principal instalados com o AEM, consulte [Referência das etapas do fluxo de trabalho](/help/sites-developing/workflows-step-ref.md).
 
 Para adicionar etapas ao modelo de fluxo de trabalho:
 
@@ -153,7 +151,7 @@ Você pode **Configurar** e personalizar o comportamento de uma etapa do fluxo d
 
    >[!NOTE]
    >
-   >Para obter informações sobre os componentes principais da etapa instalados com AEM, consulte [Referência a Etapas do Fluxo de Trabalho](/help/sites-developing/workflows-step-ref.md).
+   >Para obter informações sobre os componentes da etapa principal instalados com o AEM, consulte [Referência das etapas do fluxo de trabalho](/help/sites-developing/workflows-step-ref.md).
 
 1. Configure as **Propriedades de Etapa** conforme necessário; as propriedades disponíveis dependem do tipo de etapa; também pode haver várias guias disponíveis. Por exemplo, a **Etapa do participante** padrão, presente em um novo fluxo de trabalho como `Step 1`:
 
@@ -180,7 +178,7 @@ Você pode criar um modelo de fluxo de trabalho [Transitório](/help/sites-devel
 
 >[!NOTE]
 >
->Quando você executa um fluxo de trabalho no modo [transitório](/help/sites-developing/workflows.md#transient-workflows), o AEM não armazena nenhum histórico de fluxo de trabalho. Portanto, [Linha do Tempo](/help/sites-authoring/basic-handling.md#timeline) não exibe nenhuma informação relacionada a esse fluxo de trabalho.
+>Quando você executa um fluxo de trabalho no modo [transitório](/help/sites-developing/workflows.md#transient-workflows), a AEM não armazena nenhum histórico de fluxo de trabalho. Portanto, [Linha do Tempo](/help/sites-authoring/basic-handling.md#timeline) não exibe nenhuma informação relacionada a esse fluxo de trabalho.
 
 ## Disponibilizar modelos de fluxo de trabalho na Interface para toque {#classic2touchui}
 
@@ -391,7 +389,7 @@ Para ilustrar algumas das possibilidades de criação de um fluxo de trabalho, o
 
    ![wf-13](assets/wf-13.png)
 
-1. Aplique este fluxo de trabalho à sua página para que, quando o usuário mudar para **Concluir** a etapa **Validar conteúdo**, possa selecionar se deseja **Página do Publish como Solicitada** ou **Rejeitar solicitação do Publish**.
+1. Aplique este fluxo de trabalho à sua página, para que, quando o usuário mudar para **Concluir** a etapa **Validar conteúdo**, possa selecionar se deseja **Publicar página como Solicitada** ou **Rejeitar solicitação de publicação**.
 
    ![chlimage_1-72](assets/chlimage_1-72.png)
 
@@ -415,7 +413,6 @@ Para definir uma regra OR, proceda da seguinte maneira:
    * Defina esta como a **Rota Padrão** definindo o **Valor** como `true`.
 
    * Como **Regra**, defina o caminho para o script. Por exemplo:
-
      `/apps/myapp/workflow/scripts/myscript1.ecma`
 
    >[!NOTE]
@@ -425,7 +422,6 @@ Para definir uma regra OR, proceda da seguinte maneira:
 1. Edite as propriedades da **Ramificação 2** de **OU Divisão**.
 
    * Como **Regra**, defina o caminho para o outro script. Por exemplo:
-
      `/apps/myapp/workflow/scripts/myscript2.ecma`
 
 1. Defina as propriedades das etapas individuais em cada ramificação. Verifique se o **Usuário/Grupo** está definido.
