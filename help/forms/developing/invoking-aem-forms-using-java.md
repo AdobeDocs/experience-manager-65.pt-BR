@@ -8,14 +8,13 @@ topic-tags: coding
 role: Developer
 exl-id: 036c35c1-1be7-4825-bbb6-ea025e49c6f6
 solution: Experience Manager, Experience Manager Forms
+
 feature: Adaptive Forms,APIs & Integrations
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 2856a470ceb45fbdc6852c016386c465ee1b4930
 workflow-type: tm+mt
-source-wordcount: '5557'
+source-wordcount: '5599'
 ht-degree: 0%
-
 ---
-
 # Chamada de AEM Forms usando a API Java {#invoking-aem-forms-using-the-javaapi}
 
 **Exemplos e exemplos neste documento são somente para AEM Forms no ambiente JEE.**
@@ -62,6 +61,10 @@ Para chamar programaticamente um serviço AEM Forms usando a API Java, inclua os
 >(Somente Turnkey) Inicie o servidor AEM Forms com o comando `standalone.bat -b <Server IP> -c lc_turnkey.xml` para especificar um IP de servidor para EJB
 
 * O servidor de aplicativos J2EE no qual o AEM Forms é implantado.
+
+>[!NOTE]
+>
+>Se você encontrar problemas ao usar arquivos da biblioteca do cliente AEM Forms, como `adobe-livecycle-client.jar`, verifique a página [hotfixes do AEM Forms](/help/release-notes/aem-forms-hotfix.md) para ver se um hotfix fornece uma versão atualizada do arquivo. Em caso afirmativo, use o arquivo atualizado no classpath do projeto.
 
 ### Arquivos JAR específicos do serviço {#service-specific-jar-files}
 
