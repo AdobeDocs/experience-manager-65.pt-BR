@@ -1,18 +1,20 @@
 ---
-title: Hotfixes para o AEM Forms
-description: Fornece informações sobre como baixar e instalar um hotfix do AEM Forms.
+title: Hotfixes para o AEM 6.5 Forms
+description: Fornece informações sobre como baixar e instalar um hotfix do AEM 6.5 Forms. Para o AEM 6.5 LTS, consulte o artigo sobre hotfixes do AEM Forms 6.5 LTS.
 exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
-source-git-commit: 11e155ed72caf8f75bd2d8c8293723f24fe82945
+source-git-commit: 8133fcba5caddc7c0054766a92a32e28bfbc6b21
 workflow-type: tm+mt
-source-wordcount: '4751'
+source-wordcount: '4809'
 ht-degree: 6%
 ---
-# Hotfixes do Adobe Experience Manager Forms{#aem-form-hotfix}
+# Hotfixes do Adobe Experience Manager 6.5 Forms{#aem-form-hotfix}
 
 Este artigo lista as correções críticas implementadas para resolver problemas conhecidos, melhorar a estabilidade do sistema e aprimorar o desempenho geral do AEM Forms.
+
+Este artigo se aplica ao AEM 6.5 Forms (não LTS). Para implantações do AEM 6.5 LTS, consulte [Hotfixes do Adobe Experience Manager Forms 6.5 LTS](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65-lts/content/forms/adobe-experience-manager-forms-65-lts-hotfixes).
 
 >[!NOTE]
 >
@@ -73,6 +75,7 @@ Este artigo lista as correções críticas implementadas para resolver problemas
     <li><b>FORMS-26617</b> No WebLogic, a configuração do banco de dados por meio do Configuration Manager falha com "Nenhum driver adequado encontrado" ao usar o driver JDBC 12.10.0 do Microsoft SQL Server. Este hotfix restaura a configuração de fonte de dados bem-sucedida.</li>
     <li><b>FORMS-27869</b> PDFs abrem lentamente após instalar a compilação mais recente do AEM Forms 6.5. Essa correção melhora o desempenho de abertura de documentos.</li>
     </ul>
+    <p><strong>Compilação:</strong> AEMForms-6.5.0-0134</p>
     </td>
   </tr>
   <tr>
