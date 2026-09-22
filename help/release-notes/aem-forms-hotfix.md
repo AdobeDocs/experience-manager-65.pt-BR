@@ -14,7 +14,7 @@ ht-degree: 6%
 
 Este artigo lista as correções críticas implementadas para resolver problemas conhecidos, melhorar a estabilidade do sistema e aprimorar o desempenho geral do AEM Forms.
 
-Este artigo se aplica ao AEM 6.5 Forms (não LTS). Para implantações do AEM 6.5 LTS, consulte [Hotfixes do Adobe Experience Manager Forms 6.5 LTS](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/adobe-experience-manager-forms-65-lts-hotfixes).
+Este artigo se aplica ao AEM 6.5 Forms (não LTS). Para implantações do AEM 6.5 LTS, consulte [Hotfixes do Adobe Experience Manager Forms 6.5 LTS](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65-lts/content/forms/adobe-experience-manager-forms-65-lts-hotfixes).
 
 >[!NOTE]
 >
@@ -63,7 +63,7 @@ Este artigo se aplica ao AEM 6.5 Forms (não LTS). Para implantações do AEM 6.
     <li>Aguarde até que o log seja definido e o conjunto seja exibido como <strong>Ativo</strong>.</li>
     </ol>
     <p><strong>Etapa 3: atualizar o instalador do AEM Forms Workbench</strong></p>
-    <p>Você deve atualizar para o instalador mais recente do AEM Forms Workbench (6.5.25.0). Para obter detalhes, consulte <a href="https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases">versões do AEM Forms</a>.</p>
+    <p>Você deve atualizar para o instalador mais recente do AEM Forms Workbench (6.5.25.0). Para obter detalhes, consulte <a href="https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases">versões do AEM Forms</a>.</p>
     <p><strong>Etapa 4: atualizar arquivos da biblioteca do cliente (desenvolvedores)</strong></p>
     <p>Este patch inclui uma atualização importante na biblioteca do cliente SDK <code>adobe-livecycle-client.jar</code> (consulte <a href="/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files">Incluindo arquivos da biblioteca AEM Forms Java</a>). Se o seu projeto usa esse arquivo JAR, atualize <code>adobe-livecycle-client.jar</code> no classpath do projeto depois de instalar o hotfix. A última versão está disponível em <code>&lt;AEM_Forms_Installation_dir&gt;\sdk\client-libs\common\adobe-livecycle-client.jar</code>.</p>
     <p>A correção é cumulativa, portanto, você pode aplicá-la no Service Pack 25 (6.5.25.0) ou em um Service Pack anterior sem instalar o Service Pack 25 primeiro.</p>
