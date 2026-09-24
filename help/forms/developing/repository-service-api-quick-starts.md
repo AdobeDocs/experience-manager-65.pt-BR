@@ -1,21 +1,24 @@
 ---
 title: Início Rápido da API de Serviço de Repositório
+
 description: Use o serviço Repositório do AEM Forms para criar uma pasta, gravar um recurso, listar recursos, ler um recurso, atualizar um recurso, pesquisar recursos, criar relacionamentos entre recursos, bloquear um recurso, gerenciar listas de controle de acesso e excluir um recurso.
+
+
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
+
 role: Developer
 exl-id: 703b6798-d40f-4769-96fc-e440090ca983
 solution: Experience Manager, Experience Manager Forms
+
 feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '645'
+source-wordcount: '648'
 ht-degree: 0%
-
 ---
-
 # Início Rápido da API de Serviço de Repositório {#repository-service-api-quick-starts}
 
 **Exemplos e exemplos neste documento são somente para AEM Forms no ambiente JEE.**
@@ -24,7 +27,7 @@ Os seguintes Quick Starts estão disponíveis para o serviço de Repositório do
 
 [Início rápido (modo SOAP): criação de uma pasta usando a API Java](repository-service-api-quick-starts.md#quick-start-soap-mode-creating-a-folder-using-the-java-api)
 
-[Início rápido (modo SOAP): Gravação de um recurso usando a API Java](repository-service-api-quick-starts.md#quick-start-soap-mode-writing-a-resource-using-the-java-api)
+[Início rápido (modo SOAP): gravação de um recurso usando a API Java](repository-service-api-quick-starts.md#quick-start-soap-mode-writing-a-resource-using-the-java-api)
 
 [Início rápido (modo SOAP): listar recursos usando a API Java](repository-service-api-quick-starts.md#quick-start-soap-mode-listing-resources-using-the-java-api)
 
@@ -36,7 +39,7 @@ Os seguintes Quick Starts estão disponíveis para o serviço de Repositório do
 
 [Início rápido (modo SOAP): criação de relacionamentos entre recursos usando a API Java](repository-service-api-quick-starts.md#quick-start-soap-mode-creating-relationships-between-resources-using-the-java-api)
 
-[Início rápido (modo SOAP): bloqueio de um recurso usando a API Java](repository-service-api-quick-starts.md#quick-start-soap-mode-locking-a-resource-using-the-java-api)
+[Início rápido (modo SOAP): bloquear um recurso usando a API Java](repository-service-api-quick-starts.md#quick-start-soap-mode-locking-a-resource-using-the-java-api)
 
 [Início rápido (modo SOAP): gerenciamento de listas de controle de acesso usando a API Java](repository-service-api-quick-starts.md#quick-start-soap-mode-managing-access-control-lists-using-the-java-api)
 
@@ -168,7 +171,7 @@ O exemplo de código Java a seguir cria uma pasta chamada *FormsFolder* no segui
  }
 ```
 
-## Início rápido (modo SOAP): Gravação de um recurso usando a API Java {#quick-start-soap-mode-writing-a-resource-using-the-java-api}
+## Início rápido (modo SOAP): gravação de um recurso usando a API Java {#quick-start-soap-mode-writing-a-resource-using-the-java-api}
 
 O exemplo de código Java a seguir grava um recurso chamado *loan.xdp* no repositório. O recurso foi adicionado ao local `/Applications/FormsApplication/1.0/FormsFolder`. (Consulte [Gravando Recursos](/help/forms/developing/aem-forms-repository.md#writing-resources).)
 
@@ -873,7 +876,7 @@ O exemplo de código Java a seguir cria uma relação entre dois recursos no rep
  }
 ```
 
-## Início rápido (modo SOAP): bloqueio de um recurso usando a API Java {#quick-start-soap-mode-locking-a-resource-using-the-java-api}
+## Início rápido (modo SOAP): bloquear um recurso usando a API Java {#quick-start-soap-mode-locking-a-resource-using-the-java-api}
 
 O exemplo de código Java a seguir bloqueia /Applications/FormsApplication/1.0/FormsFolder/Loan.xdp. (Consulte [Bloqueando Recursos](/help/forms/developing/aem-forms-repository.md#locking-resources).)
 

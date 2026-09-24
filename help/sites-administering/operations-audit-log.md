@@ -1,10 +1,14 @@
 ---
-title: Manutenção do registro de auditoria no AEM 6
+title: Manutenção do log de auditoria no AEM 6
+
 description: Saiba mais sobre a Manutenção do log de auditoria no Adobe Experience Manager (AEM).
+
+
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
+
 exl-id: 1e05faf5-619a-4ea3-acbf-2fd37c71e6d2
 feature: Operations
 solution: Experience Manager, Experience Manager Sites
@@ -13,12 +17,10 @@ source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
 source-wordcount: '605'
 ht-degree: 0%
-
 ---
+# Manutenção do log de auditoria no AEM 6{#audit-log-maintenance-in-aem}
 
-# Manutenção do registro de auditoria no AEM 6{#audit-log-maintenance-in-aem}
-
-Eventos AEM qualificados para registro de auditoria geram muitos dados arquivados. Esses dados podem crescer rapidamente com o tempo devido a replicações, uploads de ativos e outras atividades do sistema.
+Os eventos do AEM qualificados para o registro de auditoria geram muitos dados arquivados. Esses dados podem crescer rapidamente com o tempo devido a replicações, uploads de ativos e outras atividades do sistema.
 
 A Manutenção do registro de auditoria inclui várias partes da funcionalidade que permite a capacidade de automatizar a manutenção do registro de auditoria sob políticas específicas.
 
@@ -32,7 +34,7 @@ Há três tipos de opções de Expurgação de Log de Auditoria:
 1. [Limpeza do log de auditoria do DAM](/help/sites-administering/operations-audit-log.md#configure-dam-audit-log-purging)
 1. [Limpeza do Log de Auditoria de Replicação](/help/sites-administering/operations-audit-log.md#configure-replication-audit-log-purging)
 
-Cada uma pode ser configurada criando regras no console da Web do AEM. Após a configuração, é possível acioná-los em **Ferramentas - Operações - Manutenção - Janela de Manutenção Semanal** e executando a **Tarefa de Manutenção do AuditLog**.
+Cada uma pode ser configurada criando regras no Console da Web do AEM. Após a configuração, é possível acioná-los em **Ferramentas - Operações - Manutenção - Janela de Manutenção Semanal** e executando a **Tarefa de Manutenção do AuditLog**.
 
 ## Configurar a limpeza do log de auditoria da página {#configure-page-audit-log-purging}
 
@@ -68,7 +70,7 @@ Siga estas etapas para configurar a Expurgação de Log de Auditoria:
 
 No AEM 6.3, se a janela de manutenção programada for fechada antes que a tarefa de Expurgação de Log de Auditoria seja concluída, a tarefa será interrompida automaticamente. Ele será retomado quando a próxima janela de manutenção for aberta.
 
-**Com o AEM 6.5**, é possível interromper manualmente uma Tarefa de Limpeza de Log de Auditoria em execução clicando no ícone **Parar**. Na próxima execução, a tarefa será retomada com segurança.
+**Com o AEM 6.5**, você pode interromper manualmente uma Tarefa de Limpeza de Log de Auditoria em execução clicando no ícone **Parar**. Na próxima execução, a tarefa será retomada com segurança.
 
 >[!NOTE]
 >
