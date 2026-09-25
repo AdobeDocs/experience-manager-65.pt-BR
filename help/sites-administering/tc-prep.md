@@ -8,11 +8,9 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
 workflow-type: tm+mt
-source-wordcount: '669'
-ht-degree: 44%
-
+source-wordcount: '681'
+ht-degree: 40%
 ---
-
 # Preparação de conteúdo para tradução{#preparing-content-for-translation}
 
 Sites multilíngues geralmente fornecem alguma quantidade de conteúdo em vários idiomas. O site é criado em um idioma e depois traduzido para outros idiomas. Geralmente, sites multilíngues consistem em ramificações de páginas, onde cada ramificação contém as páginas do site em um idioma diferente.
@@ -31,21 +29,21 @@ O exemplo de site de demonstração do Geometrixx inclui várias ramificações 
              |- zh
 ```
 
-Cada ramificação de idioma de um site é chamada de cópia de idioma. A página raiz de uma cópia de idioma, conhecida como raiz de idioma, identifica o idioma do conteúdo na cópia de idioma. Por exemplo, `/content/geometrixx/fr` é a raiz de idioma para a cópia em francês. As cópias de idioma devem usar uma [raiz de idioma configurada corretamente](/help/sites-administering/tc-prep.md#creating-a-language-root) para que o idioma correto seja escolhido quando as traduções de um site de origem forem executadas.
+Cada ramificação de idioma de um site é chamada de cópia no idioma de destino. A página raiz de uma cópia no idioma de destino, conhecida como raiz de idioma, identifica o idioma do conteúdo na cópia no idioma de destino. Por exemplo, `/content/geometrixx/fr` é a raiz de idioma para a cópia em francês. As cópias de idioma devem usar uma [raiz de idioma configurada corretamente](/help/sites-administering/tc-prep.md#creating-a-language-root) para que o idioma correto seja escolhido quando as traduções de um site de origem forem executadas.
 
-A cópia de idioma para a qual você criou originalmente o conteúdo do site é o idioma principal. O idioma principal é a fonte, que é traduzida para outros idiomas.
+A cópia no idioma de destino para a qual você criou originalmente o conteúdo do site é o idioma principal. O idioma principal é a fonte, que é traduzida para outros idiomas.
 
 Use as seguintes etapas para preparar seu site para tradução:
 
-1. Crie a raiz de idioma do idioma principal. Por exemplo, a raiz de idioma do site de demonstração em inglês do Geometrixx é /content/geometrixx/en. Verifique se a raiz do idioma está configurada corretamente de acordo com as informações em [Criar uma raiz de idioma](/help/sites-administering/tc-prep.md#creating-a-language-root).
+1. Crie a raiz de idioma do idioma principal. Por exemplo, a raiz de idioma do site de demonstração do Geometrixx em inglês é /content/geometrixx/en. Verifique se a raiz do idioma está configurada corretamente de acordo com as informações em [Criar uma raiz de idioma](/help/sites-administering/tc-prep.md#creating-a-language-root).
 1. Crie o conteúdo do seu idioma principal.
-1. Crie a raiz de idioma de cada cópia de idioma para o site. Por exemplo, a cópia do idioma em francês do site de amostra do Geometrixx é /content/geometrixx/fr.
+1. Crie a raiz de idioma de cada cópia no idioma de destino para o site. Por exemplo, a cópia do idioma em francês do site de amostra do Geometrixx é /content/geometrixx/fr.
 
-Depois de preparar o conteúdo para tradução, é possível criar automaticamente as páginas ausentes em suas cópias de idioma e projetos de tradução associados. (Consulte [Criação de um projeto de tradução](/help/sites-administering/tc-manage.md).) Para obter uma visão geral do processo de tradução de conteúdo no AEM, consulte [Tradução de conteúdo para sites multilíngues](/help/sites-administering/translation.md).
+Depois de preparar o conteúdo para tradução, é possível criar automaticamente as páginas ausentes em suas cópias de idioma e projetos de tradução associados. (Consulte [Criando um projeto de tradução](/help/sites-administering/tc-manage.md).) Para obter uma visão geral do processo de tradução de conteúdo no AEM, consulte [Tradução de conteúdo para sites multilíngues](/help/sites-administering/translation.md).
 
 ## Criar uma raiz de idioma {#creating-a-language-root}
 
-Crie uma raiz de idioma como a página raiz de uma cópia de idioma que identifica o idioma do conteúdo. Depois de criar a raiz do idioma, você pode criar projetos de tradução que incluem a cópia de idioma.
+Crie uma raiz de idioma como a página raiz de uma cópia no idioma de destino que identifica o idioma do conteúdo. Depois de criar a raiz do idioma, você pode criar projetos de tradução que incluem a cópia no idioma de destino.
 
 Para criar a raiz do idioma, crie uma página e use um código de idioma ISO como o valor da propriedade Nome. O código de idioma deve estar em um dos seguintes formatos:
 
@@ -60,7 +58,7 @@ O procedimento a seguir usa a interface otimizada para toque para criar uma cóp
 1. Navegue até Sites.
 1. Clique no site para o qual deseja criar uma cópia de idioma.
 
-   Por exemplo, para criar uma cópia de idioma do site Geometrixx Outdoors, clique em Geometrixx Outdoors.
+   Por exemplo, para criar uma cópia de idioma do site do Geometrixx Outdoors, você clicaria em Geometrixx Outdoors Site.
 
 1. Clique em Criar e em Criar página.
 

@@ -11,17 +11,15 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '301'
+source-wordcount: '372'
 ht-degree: 0%
-
 ---
-
 # Noções básicas do gerenciamento de certificados e credenciais {#basics-of-managing-certificates-and-credentials}
 
-Uma *credencial* contém suas informações de chave privada necessárias para assinar ou identificar documentos. Um *certificado* é uma informação de chave pública que você configura para confiança. Os formulários AEM usam certificados e credenciais para várias finalidades:
+Uma *credencial* contém suas informações de chave privada necessárias para assinar ou identificar documentos. Um *certificado* é uma informação de chave pública que você configura para confiança. O AEM forms usa certificados e credenciais para várias finalidades:
 
 * As extensões do Acrobat Reader DC usam uma credencial para ativar os direitos de uso do Adobe Reader em documentos do PDF. (Consulte [Configuração de credenciais para uso com extensões do Acrobat Reader DC](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md#configuring-credentials-for-use-with-acrobat-reader-dc-extensions).)
-* Você pode configurar o Rights Management para exibir credenciais para uso no Acrobat somente de emissores confiáveis. (Consulte [Definir configurações de exibição de Rights Management](/help/forms/using/admin-help/configuring-client-server-options.md#configure-document-security-display-settings).) A Common Name (CN) deve estar presente no certificado.
+* Você pode configurar o Rights Management para exibir credenciais para uso no Acrobat somente de emissores confiáveis. (Consulte [Definir configurações de exibição do Rights Management](/help/forms/using/admin-help/configuring-client-server-options.md#configure-document-security-display-settings).) A Common Name (CN) deve estar presente no certificado.
 * O serviço de Assinatura acessa certificados e credenciais. Para obter detalhes sobre o Serviço de assinatura, consulte [Referência de serviços](https://www.adobe.com/go/learn_aemforms_services_65).
 
 **Gerando uma chave de par**
@@ -36,7 +34,7 @@ O AEM Forms não fornece nenhuma opção para gerar um par de chaves. No entanto
 
 [https://helpcenter.gsx.com/hc/en-us/articles/115015960428-How-to-Generate-a-Self-Signed-Certificate-and-Private-Key-using-OpenSSL](https://helpcenter.gsx.com/hc/en-us/articles/115015960428-How-to-Generate-a-Self-Signed-Certificate-and-Private-Key-using-OpenSSL)
 
-Os seguintes tipos de assinatura são suportados e podem ser importados em formulários AEM:
+Os seguintes tipos de assinatura são compatíveis e podem ser importados no AEM Forms:
 
 * Assinatura XML
 * XMLTimeStampToken

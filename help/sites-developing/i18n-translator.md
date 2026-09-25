@@ -11,11 +11,9 @@ feature: Developing
 role: Developer
 source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '2318'
+source-wordcount: '2350'
 ht-degree: 0%
-
 ---
-
 # Usar o Translator para gerenciar dicionários{#using-translator-to-manage-dictionaries}
 
 O AEM fornece um console para gerenciar as várias traduções de textos usados na interface do usuário do componente. Este console está disponível em
@@ -30,13 +28,13 @@ A ferramenta Tradutor e os dicionários gerenciados são usados para apresentar 
 >
 >Edite somente os dicionários criados para o seu projeto e localizados em `/apps`.
 >
->Dicionários do sistema AEM também estão disponíveis nesta ferramenta. Não altere os dicionários do sistema AEM, pois isso pode causar problemas com a interface AEM. Além disso, as alterações podem ser perdidas na atualização. Dicionários do sistema AEM localizados em `/libs`.
+>Os dicionários de sistema do AEM também estão disponíveis nesta ferramenta. Não altere os dicionários do sistema do AEM, pois isso pode causar problemas com a interface do usuário do AEM. Além disso, as alterações podem ser perdidas na atualização. Os dicionários do sistema AEM estão localizados em `/libs`.
 
 >[!NOTE]
 >
 >Embora a ferramenta Translator tenha uma interface de interface clássica, ela é usada para tradução de frases, independentemente da interface em que essas frases são encontradas.
 
-O tradutor relaciona os textos usados no AEM com as várias traduções de idiomas ao lado umas das outras:
+O tradutor lista os textos usados no AEM com as várias traduções de idioma juntas:
 
 ![chlimage_1-205](assets/chlimage_1-205.png)
 
@@ -100,7 +98,7 @@ Use a ferramenta Tradução para gerenciar as cadeias de caracteres em seus dici
 >
 >Edite somente os dicionários criados para o seu projeto e localizados em `/apps`.
 >
->Não altere os dicionários do sistema AEM, pois isso pode causar problemas com a interface AEM. Além disso, as alterações podem ser perdidas na atualização. Dicionários do sistema AEM localizados em `/libs`.
+>Não altere os dicionários do sistema do AEM, pois isso pode causar problemas com a interface do usuário do AEM. Além disso, as alterações podem ser perdidas na atualização. Os dicionários do sistema AEM estão localizados em `/libs`.
 
 ### Adição, Alteração e Remoção de Strings {#adding-changing-and-removing-strings}
 
@@ -178,11 +176,11 @@ A barra de pesquisa na parte inferior da ferramenta Tradutor fornece opções de
 * **Filtrar por texto:** um padrão para corresponder à cadeia de caracteres em inglês, ao comentário ou às traduções. Somente itens que correspondem a todo ou parte do padrão aparecem na tabela.
 * **Alterações: Qualquer, Modificado, Novo, Excluído:** Mostra os itens que foram alterados e não foram salvos.
 
-   * Qualquer um: mostra itens que foram modificados, adicionados ou removidos.
-   * Modificado: mostra itens que foram alterados.
-   * Novo: mostra itens que foram adicionados.
-   * Excluído: mostra os itens que serão removidos.
-   * Várias seleções: mostra itens que têm todas as propriedades selecionadas.
+  * Qualquer um: mostra itens que foram modificados, adicionados ou removidos.
+  * Modificado: mostra itens que foram alterados.
+  * Novo: mostra itens que foram adicionados.
+  * Excluído: mostra os itens que serão removidos.
+  * Várias seleções: mostra itens que têm todas as propriedades selecionadas.
 
 * **Tem Comentário**: mostra itens que possuem comentários para tradutores.
 * **Traduções ausentes:** mostra itens em que pelo menos um idioma não tem uma tradução.
@@ -205,7 +203,7 @@ Depois de adicionar a sequência de caracteres em inglês a um dicionário, voc�
    >
    >Edite somente os dicionários criados para o seu projeto e localizados em `/apps`.
    >
-   >Dicionários do sistema AEM também estão disponíveis nesta ferramenta. Não altere os dicionários do sistema AEM, pois isso pode causar problemas com a interface AEM. Além disso, as alterações podem ser perdidas na atualização. Dicionários do sistema AEM localizados em `/libs`.
+   >Os dicionários de sistema do AEM também estão disponíveis nesta ferramenta. Não altere os dicionários do sistema do AEM, pois isso pode causar problemas com a interface do usuário do AEM. Além disso, as alterações podem ser perdidas na atualização. Os dicionários do sistema AEM estão localizados em `/libs`.
 
 1. Para editar os textos traduzidos de uma das cadeias de caracteres, é possível:
 
@@ -289,11 +287,11 @@ Use o procedimento a seguir para adicionar ou remover idiomas.
 1. Neste nó, crie uma propriedade:
 
    * **Nome**: `languages`
-   * **Tipo**: `Multi-String`
+   * **Tipo**: `Multi-String`
    * **Valor**: a lista de idiomas que você deseja exibir. Por exemplo:
 
-      * fr
-      * es
+     * fr
+     * es
 
    >[!NOTE]
    >
@@ -309,7 +307,7 @@ Use o procedimento a seguir para adicionar ou remover idiomas.
 
 ### Disponibilização de idiomas para autores {#making-languages-available-to-authors}
 
-Depois de definir um dicionário para um idioma novo para a instância do AEM, você precisa disponibilizá-lo para seleção pelos autores (por exemplo, para uso em **Preferências**):
+Depois de definir um dicionário para um idioma novo na sua instância do AEM, você precisa disponibilizá-lo para seleção pelos autores (por exemplo, para uso em **Preferências**):
 
 1. Para alterar a lista de idiomas disponíveis em **Preferências** do console **Segurança**:
 

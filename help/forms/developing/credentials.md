@@ -1,21 +1,24 @@
 ---
 title: Trabalhar com credenciais
+
 description: Importe credenciais para o AEM Forms usando a API do Gerenciador de Confiança e a API Java. Além disso, saiba como excluir credenciais usando a API do Gerenciador de confiança e a API Java.
+
+
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
+
 role: Developer
 exl-id: 1101c85a-6a90-471d-a7be-8d25765e84bf
 solution: Experience Manager, Experience Manager Forms
+
 feature: Adaptive Forms,Document Services,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1077'
+source-wordcount: '1100'
 ht-degree: 0%
-
 ---
-
 # Trabalhar com credenciais {#working-with-credentials}
 
 **Exemplos e exemplos neste documento são somente para AEM Forms no ambiente JEE.**
@@ -24,8 +27,8 @@ ht-degree: 0%
 
 Uma credencial contém suas informações de chave privada necessárias para assinar ou identificar documentos. Um certificado é uma informação de chave pública que você configura para confiança. O AEM Forms usa certificados e credenciais para várias finalidades:
 
-* As extensões do Acrobat Reader DC usam uma credencial para ativar os direitos de uso do Adobe Reader em documentos do PDF. (Consulte [Aplicar direitos de uso a documentos PDF](/help/forms/developing/assigning-usage-rights.md#applying-usage-rights-to-pdf-documents).)
-* O serviço de assinatura acessa certificados e credenciais ao executar operações, como assinar digitalmente documentos de PDF. (Consulte [Assinatura digital de documentos PDF](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents).)
+* As extensões do Acrobat Reader DC usam uma credencial para ativar os direitos de uso do Adobe Reader em documentos do PDF. (Consulte [Aplicar direitos de uso a documentos do PDF](/help/forms/developing/assigning-usage-rights.md#applying-usage-rights-to-pdf-documents).)
+* O serviço de Assinatura acessa certificados e credenciais ao executar operações, como assinar digitalmente documentos do PDF. (Consulte [Assinatura digital de documentos do PDF](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents).)
 
 Você pode interagir programaticamente com o serviço de credenciais usando a API Java do Gerenciador de Confiança. Você pode executar as seguintes tarefas:
 
@@ -38,7 +41,7 @@ Você pode interagir programaticamente com o serviço de credenciais usando a AP
 
 ## Importando Credenciais usando a API do Gerenciador de Confiança {#importing-credentials-by-using-the-trust-manager-api}
 
-Você pode importar programaticamente uma credencial para o AEM Forms usando a API do Gerenciador de Confiança. Por exemplo, você pode importar uma credencial usada para assinar um documento PDF. (Consulte [Assinatura digital de documentos PDF](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)).
+Você pode importar programaticamente uma credencial para o AEM Forms usando a API do Gerenciador de Confiança. Por exemplo, você pode importar uma credencial usada para assinar um documento do PDF. (Consulte [Assinatura digital de documentos do PDF](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)).
 
 Ao importar uma credencial, especifique um alias para a credencial. O alias é usado para executar uma operação do Forms que requer uma credencial. Depois de importada, uma credencial pode ser exibida no console de administração, conforme mostrado na ilustração a seguir. Observe que o alias da credencial é *Secure*.
 
@@ -118,10 +121,10 @@ Importe uma credencial para o AEM Forms usando a API do Gerenciador de Confianç
    * Crie uma matriz de cadeia de caracteres que contenha um elemento. Atribua o valor `truststore.usage.type.sign` ao elemento.
    * Chame o método `importCredential` do objeto `CredentialServiceClient` e passe os seguintes valores:
 
-      * Um valor de cadeia de caracteres que especifica o valor de alias da credencial.
-      * A instância `com.adobe.idp.Document` que armazena a credencial.
-      * Um valor de cadeia de caracteres que especifica a senha associada à credencial.
-      * A matriz de cadeia de caracteres que contém o valor de uso. Por exemplo, você pode especificar este valor `truststore.usage.type.sign`. Para importar uma credencial de Extensão de Reader, especifique `truststore.usage.type.lcre`.
+     * Um valor de cadeia de caracteres que especifica o valor de alias da credencial.
+     * A instância `com.adobe.idp.Document` que armazena a credencial.
+     * Um valor de cadeia de caracteres que especifica a senha associada à credencial.
+     * A matriz de cadeia de caracteres que contém o valor de uso. Por exemplo, você pode especificar este valor `truststore.usage.type.sign`. Para importar uma credencial de extensão do Reader, especifique `truststore.usage.type.lcre`.
 
 **Consulte também**
 

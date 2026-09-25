@@ -11,11 +11,9 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '488'
+source-wordcount: '520'
 ht-degree: 1%
-
 ---
-
 # Fundamentos do site da comunidade {#community-site-essentials}
 
 ## Modelo de site personalizado {#custom-site-template}
@@ -78,7 +76,7 @@ A prática recomendada para replicar o código personalizado é [criar um pacote
 
 ## Exportação de um site da comunidade {#exporting-a-community-site}
 
-Depois que um site da comunidade é criado, é possível exportá-lo como um pacote AEM armazenado no Gerenciador de pacotes e disponível para download e upload.
+Depois que um site da comunidade é criado, é possível exportá-lo como um pacote do AEM armazenado no Gerenciador de pacotes e disponível para download e upload.
 
 Isso está disponível no [console Sites de Comunidades](sites-console.md#exporting-the-site).
 
@@ -106,9 +104,9 @@ Para identificar a ID exclusiva do site associada ao site da comunidade, usando 
 
   Por exemplo, se `rep:principalName = community-enable-nrh9h-members`
 
-   * **nome do site** = *habilitar*
-   * **ID do site** = *nrh9h*
-   * **identificador exclusivo do site** = *enable-nrh9h*
+  * **nome do site** = *habilitar*
+  * **ID do site** = *nrh9h*
+  * **identificador exclusivo do site** = *enable-nrh9h*
 
 ### Conteúdo gerado pelo usuário {#user-generated-content}
 

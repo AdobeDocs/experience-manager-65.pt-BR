@@ -10,11 +10,9 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '298'
+source-wordcount: '307'
 ht-degree: 1%
-
 ---
-
 # Configurar uma solução de gerenciamento de correspondência {#configuring-a-correspondence-management-solution}
 
 ## Definindo o URL da instância do autor para VersionRestoreManagerImpl {#defining-author-instance-url-for-versionrestoremanagerimpl}
@@ -35,16 +33,16 @@ Use as etapas a seguir para definir um URL da instância do autor para a restaur
 
 1. Clique em **[!UICONTROL Salvar]**.
 
-## Definição do URL da instância do Publish para AtivationManagerImpl (gerenciador de ativação de instância pública) {#defining-the-publish-instance-url-for-activationmanagerimpl-public-instance-activation-manager}
+## Definição do URL da instância de publicação para AtivationManagerImpl (gerenciador de ativação da instância pública) {#defining-the-publish-instance-url-for-activationmanagerimpl-public-instance-activation-manager}
 
-Siga estas etapas para definir o URL da instância do Publish para o gerenciador de ativação da instância pública:
+Siga estas etapas para poder definir o URL da instância de publicação para o gerenciador de ativação da instância pública:
 
 1. Vá para *https://:&lt;authorHost>:&lt;authorPort>/lc/system/console/configMgr*. Faça logon com as credenciais de usuário do Console de gerenciamento OSGi. As credenciais padrão são admin/admin.
 1. Localize e clique no ícone **[!UICONTROL Editar]** ao lado da configuração **[!UICONTROL com.adobe.livecycle.content.ativate.impl.AtivationManagerImpl.name]**.
-1. No campo **[!UICONTROL AtivationManager Publish URL]**, especifique a URL para acessar a instância do Publish AtivationManager. Você pode fornecer os seguintes URLs.
+1. No campo **[!UICONTROL Publicar URL]** do AtivationManager, especifique a URL para acessar o AtivationManager da instância de publicação. Você pode fornecer os seguintes URLs.
 
    * **URL do Balanceador de Carga (Recomendado)**: Forneça a URL do balanceador de carga, caso você tenha um servidor Web que atue como balanceador de carga na frente do farm de publicação (várias instâncias de publicação não clusterizadas).
-   * **URL da instância do Publish**: forneça qualquer URL de instância de publicação, Se você tiver uma única instância de publicação ou se o servidor Web que está na frente do farm de publicação não estiver acessível no ambiente de criação devido a restrições. Caso a instância de publicação especificada esteja inativa, há um mecanismo de fallback que deve ser tratado no lado do autor.
+   * **URL da instância de publicação**: forneça qualquer URL da instância de publicação, se você tiver uma única instância de publicação ou se o servidor Web que está à frente do farm de publicação não estiver acessível do ambiente de criação devido a restrições. Caso a instância de publicação especificada esteja inativa, há um mecanismo de fallback que deve ser tratado no lado do autor.
    * **cadeia de caracteres de URL**:
 
      `https://<hostname>:<port>:/libs/fd/fdm/content/crud/lc.content.remote.activate.activationManager`

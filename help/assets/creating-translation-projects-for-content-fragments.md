@@ -13,9 +13,7 @@ source-git-commit: 7bf70ba18603bfd17dec391ddcd623e9085fbd04
 workflow-type: tm+mt
 source-wordcount: '984'
 ht-degree: 0%
-
 ---
-
 # Criação de projetos de tradução para fragmentos de conteúdo {#creating-translation-projects-for-content-fragments}
 
 Além dos ativos, o Adobe Experience Manager (AEM) Assets oferece suporte a fluxos de trabalho de cópia de idioma para [fragmentos de conteúdo](/help/assets/content-fragments/content-fragments.md) (incluindo variações). Nenhuma otimização adicional é necessária para executar fluxos de trabalho de cópia de idioma em fragmentos de conteúdo. Em cada fluxo de trabalho, todo o fragmento de conteúdo é enviado para tradução.
@@ -57,7 +55,7 @@ Se o fragmento de conteúdo incluir uma coleção, os ativos na coleção serão
 
 Para poder traduzir fragmentos de conteúdo que incluem mídia mista, edite primeiro a estrutura de tradução padrão para permitir a tradução de ativos e coleções em linha associados a fragmentos de conteúdo.
 
-1. Clique no logotipo do AEM e navegue até **[!UICONTROL Ferramentas > Implantação > Cloud Service]**.
+1. Clique no logotipo do AEM e navegue até **[!UICONTROL Ferramentas > Implantação > Serviços em nuvem]**.
 1. Localize **[!UICONTROL Integração de Tradução]** em **[!UICONTROL Adobe Marketing Cloud]** e clique em **[!UICONTROL Mostrar Configurações]**.
 
    ![chlimage_1-444](assets/chlimage_1-444.png)

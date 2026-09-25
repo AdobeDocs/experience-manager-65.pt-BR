@@ -11,20 +11,18 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '575'
+source-wordcount: '612'
 ht-degree: 0%
-
 ---
-
 # Provisionamento de usuário just-in-time {#just-in-time-user-provisioning}
 
-Os formulários AEM são compatíveis com o provisionamento just-in-time de usuários que ainda não existem no Gerenciamento de usuários. Com o provisionamento just-in-time, os usuários são adicionados automaticamente ao Gerenciamento de usuários depois que suas credenciais forem autenticadas com êxito. Além disso, as funções e os grupos relevantes são atribuídos dinamicamente ao novo usuário.
+O AEM Forms é compatível com o provisionamento just-in-time de usuários que ainda não existem no Gerenciamento de usuários. Com o provisionamento just-in-time, os usuários são adicionados automaticamente ao Gerenciamento de usuários depois que suas credenciais forem autenticadas com êxito. Além disso, as funções e os grupos relevantes são atribuídos dinamicamente ao novo usuário.
 
 ## Necessidade de provisionamento de usuários just-in-time {#need-for-just-in-time-user-provisioning}
 
 É assim que a autenticação tradicional funciona:
 
-1. Quando um usuário tenta fazer logon em formulários AEM, o Gerenciamento de usuários passa as credenciais do usuário sequencialmente para todos os provedores de autenticação disponíveis. (As credenciais de logon incluem uma combinação de nome de usuário/senha, tíquete Kerberos, assinatura PKCS7 e assim por diante.)
+1. Quando um usuário tenta fazer logon no AEM Forms, o Gerenciamento de usuários passa as credenciais do usuário sequencialmente para todos os provedores de autenticação disponíveis. (As credenciais de logon incluem uma combinação de nome de usuário/senha, tíquete Kerberos, assinatura PKCS7 e assim por diante.)
 1. O provedor de autenticação valida as credenciais.
 1. O provedor de autenticação verifica se o usuário existe no banco de dados de Gerenciamento de usuários. Os seguintes resultados são possíveis:
 
@@ -43,7 +41,7 @@ Quando o provisionamento just-in-time é implementado, um novo usuário é criad
 
 ### APIs para provisionamento just-in-time {#apis-for-just-in-time-provisioning}
 
-Os formulários AEM fornecem as seguintes APIs para provisionamento just-in-time:
+O AEM Forms fornece as seguintes APIs para provisionamento just-in-time:
 
 ```java
 package com.adobe.idp.um.spi.authentication  ;
@@ -99,7 +97,7 @@ public Boolean assign(User user);
 
 ## Nos bastidores {#behind-the-scenes}
 
-Suponha que um usuário esteja tentando fazer logon em formulários AEM e um provedor de autenticação aceite suas credenciais de usuário. Se o usuário ainda não existir no banco de dados de Gerenciamento de usuários, a verificação de identidade do usuário falhará. Os formulários AEM agora executam as seguintes ações:
+Suponha que um usuário esteja tentando fazer logon no AEM Forms e um provedor de autenticação aceite suas credenciais de usuário. Se o usuário ainda não existir no banco de dados de Gerenciamento de usuários, a verificação de identidade do usuário falhará. Os formulários do AEM agora executam as seguintes ações:
 
 1. Crie um objeto `UserProvisioningBO` com os dados de autenticação e coloque-o em um mapa de credenciais.
 1. Com base nas informações de domínio retornadas por `UserProvisioningBO`, busque e chame o `IdentityCreator` e `AssignmentProvider` registrados para o domínio.

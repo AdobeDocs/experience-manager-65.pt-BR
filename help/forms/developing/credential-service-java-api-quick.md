@@ -1,5 +1,5 @@
 ---
-title: Serviço de credencial Java&trade; API QuickStart(SOAP)
+title: Java&trade; API QuickStart do Serviço de Credenciais (SOAP)
 description: Saiba como importar e excluir credenciais no AEM Forms usando o Java&trade; API Quick Start (SOAP).
 contentOwner: admin
 content-type: reference
@@ -11,24 +11,22 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '230'
+source-wordcount: '233'
 ht-degree: 0%
-
 ---
+# Início Rápido da API Java™ do Serviço de Credenciais (SOAP) {#credential-service-java-api-quickstart-soap}
 
-# Início Rápido da API Java™ (SOAP) do Serviço de Credenciais {#credential-service-java-api-quickstart-soap}
+O Java™ API Quick Start (SOAP) está disponível para o serviço de credencial.
 
-O Java™ API Quick Start(SOAP) está disponível para o serviço de credencial.
+[Início rápido (modo SOAP): importação de credenciais usando a API Java™](credential-service-java-api-quick.md#quick-start-soap-mode-importing-credentials-using-the-java-api)
 
-[Início rápido (modo SOAP): importação de credenciais usando o Java](credential-service-java-api-quick.md#quick-start-soap-mode-importing-credentials-using-the-java-api)
-
-[Início rápido (modo SOAP): exclusão de credenciais usando o Java](credential-service-java-api-quick.md#quick-start-soap-mode-deleting-credentials-using-the-java-api)
+[Início rápido (modo SOAP): exclusão de credenciais usando a API Java™](credential-service-java-api-quick.md#quick-start-soap-mode-deleting-credentials-using-the-java-api)
 
 As operações do AEM Forms podem ser executadas usando a API altamente tipada do AEM Forms e o modo de conexão deve ser definido como SOAP.
 
 >[!NOTE]
 >
->Os Quick Starts na programação com formulários AEM são baseados no Forms Server que está sendo implantado no JBoss® e no sistema operacional Windows. No entanto, se você estiver usando outro sistema operacional, como o UNIX®, substitua caminhos específicos do Windows por caminhos compatíveis com o sistema operacional aplicável. Da mesma forma, se estiver usando outro servidor de aplicações J2EE, certifique-se de especificar propriedades de conexão válidas. Consulte [Definindo propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Os Quick Starts na programação com o AEM Forms são baseados no Forms Server que está sendo implantado no JBoss® e no sistema operacional Windows. No entanto, se você estiver usando outro sistema operacional, como o UNIX®, substitua caminhos específicos do Windows por caminhos compatíveis com o sistema operacional aplicável. Da mesma forma, se estiver usando outro servidor de aplicações J2EE, certifique-se de especificar propriedades de conexão válidas. Consulte [Definindo propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 >[!NOTE]
 >

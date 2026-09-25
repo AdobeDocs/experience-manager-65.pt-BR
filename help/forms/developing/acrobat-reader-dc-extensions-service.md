@@ -1,25 +1,24 @@
 ---
-title: Extensões do Acrobat Reader DC ServiceJava API Quick Start(SOAP)
-description: Use o serviço Acrobat Reader DC Extensions para aplicar direitos de uso a um documento do PDF, remover direitos de uso de documentos do PDF e recuperar informações sobre a credencial usada para aplicar direitos de uso a um documento do PDF habilitado para direitos chamado LoanUsageRights.pdf.
+title: Extensões do Acrobat Reader DC ServiceJava API Quick Start (SOAP)
+description: Use o serviço de extensões do Acrobat Reader DC para aplicar direitos de uso a um documento do PDF, remover direitos de uso de documentos do PDF e recuperar informações sobre a credencial usada para aplicar direitos de uso a um documento do PDF habilitado para direitos chamado LoanUsageRights.pdf.
 contentOwner: admin
 content-type: reference
 topic-tags: develop
 role: Developer
 exl-id: 82f0b6c1-ca0c-48c7-b7f6-b54704ac0830
 solution: Experience Manager, Experience Manager Forms
+
 feature: Adaptive Forms,Reader Extensions,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '310'
+source-wordcount: '315'
 ht-degree: 0%
-
 ---
-
 # Extensões do Acrobat Reader DC ServiceJava API Quick Start (SOAP) {#acrobat-reader-dc-extensions-servicejava-api-quick-start-soap}
 
 Os seguintes Quick Starts estão disponíveis para o serviço de extensões do Acrobat Reader DC.
 
-[Início rápido (modo SOAP):Aplicação de direitos de uso usando a API Java](#quick-start-soap-mode-applying-usage-rights-using-the-java-api)
+[Direitos de uso do Início rápido (modo SOAP):Applying usando a API Java](#quick-start-soap-mode-applying-usage-rights-using-the-java-api)
 
 [Remoção de direitos de uso de documentos do PDF](#quick-start-soap-mode-removing-usage-rights-from-a-pdf-document-using-the-java-api)
 
@@ -31,9 +30,9 @@ As operações do AEM Forms podem ser executadas usando a API altamente tipada d
 >
 >Os Quick Starts na programação com o AEM Forms são baseados no sistema operacional do servidor do Forms. No entanto, se você estiver usando outro sistema operacional, como o UNIX, substitua caminhos específicos do Windows por caminhos compatíveis com o sistema operacional aplicável. Da mesma forma, se estiver usando outro servidor de aplicações J2EE, certifique-se de especificar propriedades de conexão válidas. Consulte [Definindo propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## Início rápido (modo SOAP):Aplicação de direitos de uso usando a API Java {#quick-start-soap-mode-applying-usage-rights-using-the-java-api}
+## Direitos de uso do Início rápido (modo SOAP):Applying usando a API Java {#quick-start-soap-mode-applying-usage-rights-using-the-java-api}
 
-O exemplo de código Java a seguir aplica direitos de uso a um documento PDF chamado *Loan.pdf*. O documento PDF habilitado para direitos foi salvo como um arquivo PDF chamado *LoanUsageRights.pdf*. Os seguintes direitos de uso são aplicados a este documento PDF: `enabledComments`, `enabledFormFillIn` e `enabledDigitalSignatures`. (Consulte [Aplicar direitos de uso a documentos PDF](/help/forms/developing/assigning-usage-rights.md).)
+O exemplo de código Java a seguir aplica direitos de uso a um documento PDF chamado *Loan.pdf*. O documento habilitado para direitos do PDF foi salvo como um arquivo PDF chamado *LoanUsageRights.pdf*. Os seguintes direitos de uso são aplicados a este documento PDF: `enabledComments`, `enabledFormFillIn` e `enabledDigitalSignatures`. (Consulte [Aplicar direitos de uso a documentos do PDF](/help/forms/developing/assigning-usage-rights.md).)
 
 
 ```java
@@ -145,7 +144,7 @@ O exemplo de código Java a seguir aplica direitos de uso a um documento PDF cha
 
 ## Início rápido (modo SOAP): remoção de direitos de uso de um documento PDF usando a API Java {#quick-start-soap-mode-removing-usage-rights-from-a-pdf-document-using-the-java-api}
 
-O exemplo de código Java a seguir remove os direitos de uso de um documento PDF habilitado para direitos chamado *LoanUsageRights.pdf*. (Consulte [Removendo direitos de uso de documentos do PDF](/help/forms/developing/assigning-usage-rights.md).)
+O exemplo de código Java a seguir remove os direitos de uso de um documento PDF habilitado para direitos chamado *LoanUsageRights.pdf*. (Consulte [Remoção de Direitos de Uso de Documentos do PDF](/help/forms/developing/assigning-usage-rights.md).)
 
 ```java
  /* 
@@ -245,7 +244,7 @@ O exemplo de código Java a seguir remove os direitos de uso de um documento PDF
 
 ## Início rápido (modo SOAP): recuperação de informações de credencial usando a API Java {#quick-start-soap-mode-retrieving-credential-information-using-the-java-api}
 
-O exemplo de código Java a seguir recupera informações sobre a credencial usada para aplicar direitos de uso a um documento de PDF habilitado para direitos chamado *LoanUsageRights.pdf*. (Consulte [Recuperando Informações de Credencial](/help/forms/developing/assigning-usage-rights.md).)
+O exemplo de código Java a seguir recupera informações sobre a credencial usada para aplicar direitos de uso a um documento PDF habilitado para direitos chamado *LoanUsageRights.pdf*. (Consulte [Recuperando Informações de Credencial](/help/forms/developing/assigning-usage-rights.md).)
 
 ```java
  /* 

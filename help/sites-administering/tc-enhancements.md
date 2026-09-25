@@ -1,6 +1,6 @@
 ---
-title: Aprimoramentos de tradução
-description: Melhorias e refinamentos incrementais nos recursos de gerenciamento de tradução do AEM.
+title: Aprimoramentos da tradução
+description: Aprimoramentos e refinamentos incrementais nos recursos de gerenciamento de tradução do AEM.
 topic-tags: site-features
 content-type: reference
 feature: Language Copy
@@ -9,14 +9,12 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
 workflow-type: tm+mt
-source-wordcount: '669'
-ht-degree: 26%
-
+source-wordcount: '687'
+ht-degree: 29%
 ---
+# Aprimoramentos da tradução{#translation-enhancements}
 
-# Aprimoramentos de tradução{#translation-enhancements}
-
-Esta página apresenta melhorias e refinamentos incrementais nos recursos de gerenciamento de tradução do AEM.
+Esta página apresenta melhorias e refinamentos incrementais aos recursos de gerenciamento de tradução do AEM.
 
 ## Automação de projeto de tradução {#translation-project-automation}
 
@@ -80,8 +78,8 @@ Para usar este recurso:
 
 * Um TMS deve ser configurado para uso com o AEM.
 * O conector precisa implementar o método [`storeTranslation`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/granite/translation/api/TranslationService.html).
-   * O código desse método determina o que acontece com a solicitação de atualização da memória de tradução.
-   * A estrutura de tradução do AEM envia os pares de valores do segmento (tradução original e atualizada) para o TMS por meio da implementação desse método.
+  * O código desse método determina o que acontece com a solicitação de atualização da memória de tradução.
+  * A estrutura de tradução do AEM envia os pares de valores do segmento (tradução original e atualizada) para o TMS por meio da implementação desse método.
 
 As atualizações da memória de tradução podem ser interceptadas e enviadas a um destino personalizado, nos casos em que uma memória de tradução própria for usada.
 

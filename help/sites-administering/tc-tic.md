@@ -8,14 +8,12 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 943a855f8eb46837e122c3bf2c2deb3f109b2ea9
 workflow-type: tm+mt
-source-wordcount: '1435'
+source-wordcount: '1461'
 ht-degree: 40%
-
 ---
-
 # Configuração da estrutura de integração de tradução{#configuring-the-translation-integration-framework}
 
-A estrutura de integração de tradução integra-se aos serviços de tradução de terceiros para orquestrar a tradução de conteúdo AEM.
+A estrutura de integração de tradução integra-se aos serviços de tradução de terceiros para orquestrar a tradução de conteúdo do AEM.
 
 * Conectar ao provedor de serviços de tradução.
 * Criar uma configuração da estrutura de integração de tradução.
@@ -27,7 +25,7 @@ Para obter uma visão geral dos recursos de tradução de conteúdo do AEM, cons
 
 Crie uma configuração de nuvem que conecte o AEM ao seu provedor de serviços de tradução.
 
-O AEM inclui a capacidade de [conectar-se ao Microsoft® Translator](/help/sites-administering/tc-msconf.md) por padrão. Outros fornecedores de tecnologia de tradução com conectores AEM que são membros do programa de parceiro Adobe Exchange podem ser encontrados [aqui](https://exchange.adobe.com/apps/browse/ec?page=1&partnerLevel=All&product=AEM&q=experience+manager+translation&sort=RELEVANCE).
+O AEM inclui a capacidade de [conectar-se ao Microsoft® Translator](/help/sites-administering/tc-msconf.md) por padrão. Outros fornecedores de tecnologia de tradução com conectores do AEM que são membros do programa de parceria da Adobe Exchange podem ser encontrados [aqui](https://exchange.adobe.com/apps/browse/ec?page=1&partnerLevel=All&product=AEM&q=experience+manager+translation&sort=RELEVANCE).
 
 Depois de instalar um pacote de conectores, é possível criar uma configuração de nuvem para o conector. Normalmente, você precisará fornecer suas credenciais para autenticação com o serviço de tradução. Para obter informações sobre como adicionar uma configuração de nuvem para o conector do Microsoft Translator, consulte [Integração com o Microsoft Translator](/help/sites-administering/tc-msconf.md).
 
@@ -49,7 +47,7 @@ Quando diferentes seções do seu site tiverem diferentes requisitos de traduç�
 
 Após configurar uma estrutura de integração de tradução, é possível [associá-la às páginas](/help/sites-administering/tc-prep.md) que a utilizam.
 
-**Observação:** para obter uma visão geral dos recursos de tradução de conteúdo no AEM, consulte [Tradução de Conteúdo para Sites Multilíngues](/help/sites-administering/translation.md).
+**Observação:** para obter uma visão geral dos recursos de tradução de conteúdo do AEM, consulte [Tradução de Conteúdo para Sites Multilíngues](/help/sites-administering/translation.md).
 
 Uma única configuração da estrutura controla como traduzir conteúdo da página, conteúdo da comunidade e ativos.
 ![chlimage_1-386](assets/translation-config-65.jpg)
@@ -161,7 +159,7 @@ As propriedades de ativos controlam como configurar ativos. Para obter mais info
  </tbody>
 </table>
 
-1. Na barra lateral, clique em Ferramentas > Operações > Nuvem > Cloud Service.
+1. Na barra lateral, clique em Ferramentas > Operações > Nuvem > Serviços em nuvem.
 1. Na área Integração de tradução, se alguma configuração foi criada, determina qual link aparece:
 
    * Se nenhuma configuração tiver sido criada, clique em Configurar agora.
@@ -190,7 +188,7 @@ Além disso, para qualquer comunidade [componentes SCF](/help/communities/scf.md
 Associe uma página ao provedor de tradução que você está usando para traduzir a página e suas páginas descendentes.
 
 1. No console do Sites, selecione a página que deseja configurar e clique em Propriedades de exibição.
-1. Clique em Editar e depois clique na guia Cloud Service.
+1. Clique em Editar e na guia Serviços em nuvem.
 1. Clique em Adicionar configuração > Integração de tradução.
 1. Selecione o provedor de tradução a ser usado e clique em Concluído.
 
@@ -199,6 +197,6 @@ Associe uma página ao provedor de tradução que você está usando para traduz
 Associe uma página à estrutura de integração de tradução que define como você deseja executar a tradução da página e de suas páginas descendentes.
 
 1. No console do Sites, selecione a página que deseja configurar e clique em Propriedades de exibição.
-1. Clique em Editar e depois clique na guia Cloud Service.
+1. Clique em Editar e na guia Serviços em nuvem.
 1. Clique em Adicionar configuração > Integração de tradução.
 1. Selecione a estrutura de integração de tradução a ser usada e clique em Concluído.

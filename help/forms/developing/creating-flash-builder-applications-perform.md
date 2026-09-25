@@ -1,28 +1,30 @@
 ---
 title: Criação de aplicativos do Flash Builder que executam autenticação SSO usando tokens HTTP
-description: Crie um aplicativo cliente usando o Flash Builder que executa autenticação de logon único (SSO) usando tokens HTTP. Autentique um usuário para uma operação uma vez e use essa autenticação para executar várias operações do AEM Forms.
+
+description: Crie um aplicativo cliente usando o Flash Builder que executa a autenticação de logon único (SSO) usando tokens HTTP. Autentique um usuário para uma operação uma vez e use essa autenticação para executar várias operações do AEM Forms.
+
+
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
+
 role: Developer
 exl-id: 7f1f49e6-028c-47b6-a24d-a83bed40242e
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Security
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1783'
+source-wordcount: '1794'
 ht-degree: 0%
-
 ---
-
 # Criação de aplicativos do Flash Builder que executam autenticação SSO usando tokens HTTP {#creating-flash-builder-applicationsthat-perform-sso-authentication-using-http-tokens}
 
 **Exemplos e exemplos neste documento são somente para AEM Forms no ambiente JEE.**
 
-Você pode criar um aplicativo cliente usando o Flash Builder que executa autenticação de logon único (SSO) usando tokens HTTP. Suponha, por exemplo, que você crie um aplicativo baseado na web usando o Flash Builder. Em seguida, suponha que o aplicativo contenha exibições diferentes, em que cada exibição chama uma operação diferente do AEM Forms. Em vez de autenticar um usuário para cada operação do Forms, você pode criar uma página de logon que permite que um usuário se autentique uma vez. Depois de autenticado, um usuário pode invocar várias operações sem precisar autenticar novamente. Por exemplo, se um usuário tiver feito logon no Workspace (ou em outro aplicativo do Forms), ele não precisará autenticar novamente.
+Você pode criar um aplicativo cliente usando o Flash Builder que executa a autenticação de logon único (SSO) usando tokens HTTP. Suponha, por exemplo, que você crie um aplicativo baseado na Web usando o Flash Builder. Em seguida, suponha que o aplicativo contenha exibições diferentes, em que cada exibição chama uma operação diferente do AEM Forms. Em vez de autenticar um usuário para cada operação do Forms, você pode criar uma página de logon que permite que um usuário se autentique uma vez. Depois de autenticado, um usuário pode invocar várias operações sem precisar autenticar novamente. Por exemplo, se um usuário tiver feito logon no Workspace (ou em outro aplicativo do Forms), ele não precisará autenticar novamente.
 
-Embora o aplicativo cliente contenha a lógica de aplicativo necessária para executar a autenticação SSO, o Gerenciamento de usuários de formulários AEM realiza a autenticação real do usuário. Para autenticar um usuário usando tokens HTTP, o aplicativo cliente chama a operação `authenticateWithHTTPToken` do serviço do Gerenciador de Autenticação. O Gerenciamento de usuários pode autenticar usuários usando um token HTTP. Para chamadas subsequentes de serviço remoto ou da Web para o AEM Forms, não é necessário transmitir credenciais para autenticação.
+Embora o aplicativo cliente contenha a lógica de aplicativo necessária para executar a autenticação SSO, o Gerenciamento de usuários dos formulários AEM realiza a autenticação de usuário real. Para autenticar um usuário usando tokens HTTP, o aplicativo cliente chama a operação `authenticateWithHTTPToken` do serviço do Gerenciador de Autenticação. O Gerenciamento de usuários pode autenticar usuários usando um token HTTP. Para chamadas subsequentes de serviço remoto ou da Web para o AEM Forms, não é necessário transmitir credenciais para autenticação.
 
 >[!NOTE]
 >
@@ -36,7 +38,7 @@ O seguinte processo de vida curta do AEM Forms, chamado `MyApplication/EncryptDo
 >
 >Este processo não se baseia em um processo AEM Forms existente. Para acompanhar os exemplos de código que discutem como invocar este processo, crie um processo chamado `MyApplication/EncryptDocument` usando o workbench. (Consulte [Uso do Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).)
 
-O aplicativo cliente compilado usando o Flash Builder interage com o servlet de segurança do Gerenciador de Usuários configurado em `/um/login` e `/um/logout`. Ou seja, o aplicativo cliente envia uma solicitação à URL `/um/login` durante a inicialização para determinar o status do usuário. Em seguida, o Gerenciador de usuários responde com o status do usuário. O aplicativo cliente e o servlet de segurança do Gerenciador de usuários se comunicam usando HTTP.
+O aplicativo cliente compilado usando o Flash Builder interage com o servlet de segurança do Gerenciador de usuários configurado em `/um/login` e `/um/logout`. Ou seja, o aplicativo cliente envia uma solicitação à URL `/um/login` durante a inicialização para determinar o status do usuário. Em seguida, o Gerenciador de usuários responde com o status do usuário. O aplicativo cliente e o servlet de segurança do Gerenciador de usuários se comunicam usando HTTP.
 
 **Formato de solicitação**
 
@@ -50,7 +52,7 @@ O valor `j_password` é necessário somente para solicitações de credencial. S
 
 >[!NOTE]
 >
->Para um manuseio adequado de i18n, certifique-se de que esses valores estejam na forma de POST.
+>Para o manuseio correto de i18n, certifique-se de que esses valores estejam no formato POST.
 
 **Formato de resposta**
 
@@ -59,11 +61,11 @@ O servlet de segurança configurado em `/um/login` responde usando o formato `UR
 * `authenticated` - Valor `true` ou `false`.
 * `authstate` - Este valor pode conter um dos seguintes valores:
 
-   * `CREDENTIAL_CHALLENGE` - Esse estado indica que o Gerenciador de Usuários não pode determinar a identidade do usuário por qualquer meio. Para que a autenticação ocorra, o nome de usuário e a senha do usuário são necessários.
-   * `SPNEGO_CHALLENGE`- Este estado é tratado da mesma forma que `CREDENTIAL_CHALLENGE`.
-   * `COMPLETE` - Este estado indica que o Gerenciador de Usuários pode autenticar o usuário.
-   * `FAILED` - Este estado indica que o Gerenciador de Usuários não pôde autenticar o usuário. Como resposta a esse estado, o flex client pode mostrar uma mensagem de erro ao usuário.
-   * `LOGGED_OUT` - Este estado indica que o usuário fez logoff com êxito.
+  * `CREDENTIAL_CHALLENGE` - Esse estado indica que o Gerenciador de Usuários não pode determinar a identidade do usuário por qualquer meio. Para que a autenticação ocorra, o nome de usuário e a senha do usuário são necessários.
+  * `SPNEGO_CHALLENGE`- Este estado é tratado da mesma forma que `CREDENTIAL_CHALLENGE`.
+  * `COMPLETE` - Este estado indica que o Gerenciador de Usuários pode autenticar o usuário.
+  * `FAILED` - Este estado indica que o Gerenciador de Usuários não pôde autenticar o usuário. Como resposta a esse estado, o flex client pode mostrar uma mensagem de erro ao usuário.
+  * `LOGGED_OUT` - Este estado indica que o usuário fez logoff com êxito.
 
 * `assertionid` - Se o estado era `COMPLETE`, então ele contém o valor `assertionId` do usuário. Um aplicativo cliente pode obter o `AuthResult` para o usuário.
 
@@ -84,7 +86,7 @@ Se a autenticação ainda não tiver êxito, o servlet de segurança responderá
 
 >[!NOTE]
 >
->Enquanto `authstate=CREDENTIAL_CHALLENGE`, é recomendável que o cliente envie a credencial obtida para o servlet de segurança em um formato POST.
+>Enquanto `authstate=CREDENTIAL_CHALLENGE`, é recomendável que o cliente envie a credencial obtida para o servlet de segurança em um formulário POST.
 
 **Processo de logoff**
 
@@ -94,7 +96,7 @@ Quando um aplicativo cliente faz logoff, você pode enviar uma solicitação par
 
 Ao receber esta solicitação, o servlet de segurança do Gerenciador de usuários exclui o cookie `lcAuthToken` e responde com `authstate=LOGGED_OUT`. Depois que o aplicativo cliente receber esse valor, ele poderá executar tarefas de limpeza.
 
-## Criação de um aplicativo cliente que autentica usuários de formulários AEM usando SSO {#creating-a-client-application-that-authenticates-aem-forms-users-using-sso}
+## Criar um aplicativo cliente que autentique usuários de formulários do AEM usando SSO {#creating-a-client-application-that-authenticates-aem-forms-users-using-sso}
 
 Para demonstrar como criar um aplicativo cliente que executa autenticação SSO, um exemplo de aplicativo cliente é criado. A ilustração a seguir mostra as etapas que o aplicativo cliente executa para autenticar um usuário usando SSO.
 
