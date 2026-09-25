@@ -7,11 +7,9 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: d5fb67933676c9ea5fdbeafe592960403e78af79
 workflow-type: tm+mt
-source-wordcount: '4177'
+source-wordcount: '4204'
 ht-degree: 40%
-
 ---
-
 # Criação e sincronização de Live Copies{#creating-and-synchronizing-live-copies}
 
 Você pode criar uma live copy de uma página ou configuração de blueprint e, em seguida, gerenciar a herança e a sincronização.
@@ -27,8 +25,8 @@ Uma configuração de blueprint identifica um site existente que você deseja us
 Ao criar uma configuração de blueprint, você seleciona um modelo que define a estrutura interna do blueprint. O modelo de blueprint padrão presume que o site de origem tem as seguintes características:
 
 * O site tem uma página raiz.
-* As páginas secundárias diretas da raiz são ramificações de idioma do site. Ao criar uma live copy, os idiomas são apresentados como conteúdo opcional a ser incluído na cópia.
-* A raiz de cada ramificação de idioma tem uma ou mais páginas secundárias. Ao criar uma live copy, as páginas secundárias são apresentadas como capítulos que podem ser incluídos na live copy.
+* As páginas filhas diretas da raiz são ramificações de idioma do site. Ao criar uma live copy, os idiomas são apresentados como conteúdo opcional a ser incluído na cópia.
+* A raiz de cada ramificação de idioma tem uma ou mais páginas filhas. Ao criar uma live copy, as páginas secundárias são apresentadas como capítulos que podem ser incluídos na live copy.
 
 >[!NOTE]
 >
@@ -181,9 +179,9 @@ As propriedades de uma página de live copy mostram as seguintes informações s
 * **Status**: o status de sincronização da live copy. O status inclui se a live copy está atualizada em relação à origem, quando a última sincronização ocorreu e quem executou a sincronização.
 * **Configuração**:
 
-   * Se a página ainda está sujeita à herança da Live Copy.
-   * Se a configuração é herdada da página principal.
-   * Quaisquer configurações de implantação que a live copy usa.
+  * Se a página ainda está sujeita à herança da Live Copy.
+  * Se a configuração é herdada da página principal.
+  * Quaisquer configurações de implantação que a live copy usa.
 
 Para exibir as propriedades:
 
@@ -233,7 +231,7 @@ As implantações são processadas como trabalhos assíncronos e podem ser verif
 
 >[!NOTE]
 >
->O processamento assíncrono de implantação requer AEM 6.5.3.0 ou superior. Nas versões anteriores, as páginas eram processadas de forma imediata e síncrona.
+>O processamento assíncrono de implantação requer o AEM 6.5.3.0 ou superior. Nas versões anteriores, as páginas eram processadas de forma imediata e síncrona.
 
 #### Implantar um blueprint a partir do painel de referência {#roll-out-a-blueprint-from-the-reference-rail}
 
@@ -259,7 +257,7 @@ As implantações são processadas como trabalhos assíncronos e podem ser verif
 
 >[!NOTE]
 >
->O processamento assíncrono de implantação requer AEM 6.5.3.0 ou superior. Nas versões anteriores, as páginas eram processadas de forma imediata e síncrona, a menos que a opção **implantação do plano de fundo** estivesse marcada.
+>O processamento assíncrono de implantação requer o AEM 6.5.3.0 ou superior. Nas versões anteriores, as páginas eram processadas de forma imediata e síncrona, a menos que a opção **implantação do plano de fundo** estivesse marcada.
 
 #### Implantar um blueprint a partir de uma visão geral da Live Copy {#roll-out-a-blueprint-from-the-live-copy-overview}
 
@@ -279,7 +277,7 @@ As implantações são processadas como trabalhos assíncronos e podem ser verif
 
 >[!NOTE]
 >
->O processamento assíncrono de implantação requer AEM 6.5.3.0 ou superior. Nas versões anteriores, as páginas eram processadas de forma imediata e síncrona.
+>O processamento assíncrono de implantação requer o AEM 6.5.3.0 ou superior. Nas versões anteriores, as páginas eram processadas de forma imediata e síncrona.
 
 ### Sincronizar uma Live Copy {#synchronizing-a-live-copy}
 
@@ -380,7 +378,7 @@ A [ação Suspender também está disponível na visão geral da Live Copy](/hel
 1. Selecione a opção apropriada de:
 
    * **Suspender**
-   * **Suspender com secundários**
+   * **Suspender com filhos**
 
    ![Selecione a opção Suspender apropriada](assets/chlimage_1-226.png)
 
@@ -392,7 +390,7 @@ A [ação Suspender também está disponível na visão geral da Live Copy](/hel
 
 Suspender a herança da live copy para uma página é uma ação temporária. Uma vez suspensa, a ação **Retomar** fica disponível, permitindo que você restaure o relacionamento ativo.
 
-Quando você reativa a herança, a página não é sincronizada automaticamente com a origem. Você pode solicitar uma sincronização, se necessário:
+Quando você reabilita a herança, a página não é sincronizada automaticamente com a origem. Você pode solicitar uma sincronização, se necessário:
 
 * Na caixa de diálogo **Retomar**/**Reverter**; por exemplo:
 
@@ -402,7 +400,7 @@ Quando você reativa a herança, a página não é sincronizada automaticamente 
 
 >[!CAUTION]
 >
->Quando você reativa a herança, a página não é sincronizada automaticamente com a origem. Você pode solicitar manualmente uma sincronização, se necessário; no momento da retomada ou posteriormente.
+>Quando você reabilita a herança, a página não é sincronizada automaticamente com a origem. Você pode solicitar manualmente uma sincronização, se necessário; no momento da retomada ou posteriormente.
 
 #### Retomar a herança nas propriedades da página {#resuming-inheritance-from-page-properties}
 
@@ -426,20 +424,20 @@ Em uma live copy existente, é possível alterar a profundidade de uma página, 
 
 * Alternar para uma live copy superficial:
 
-   * Terá efeito imediato e não será reversível.
+  * Terá efeito imediato e não será reversível.
 
-      * As páginas secundárias são explicitamente desanexadas da live copy. Modificações posteriores nas páginas secundárias não podem ser preservadas, caso desfeitas.
+    * As páginas secundárias são explicitamente desanexadas da live copy. Modificações posteriores nas páginas filhas não podem ser preservadas, caso desfeitas.
 
-      * Removerá qualquer `LiveRelationships` descendente, mesmo que haja `LiveCopies` aninhadas.
+    * Removerá qualquer `LiveRelationships` descendente, mesmo que haja `LiveCopies` aninhadas.
 
 * Alternar para uma Live Copy profunda:
 
-   * As páginas secundárias permanecem intactas.
-   * Para ver o efeito da alteração, é possível fazer uma implantação. Qualquer modificação de conteúdo é aplicada de acordo com a configuração de implantação.
+  * As páginas secundárias permanecem intactas.
+  * Para ver o efeito da alteração, é possível fazer uma implantação. Qualquer modificação de conteúdo é aplicada de acordo com a configuração de implantação.
 
 * Alternar para uma live copy superficial e, em seguida, de volta para uma profunda:
 
-   * Todos os filhos da live copy superficial (anterior) são tratados como se tivessem sido criados manualmente e, portanto, são transferidos usando `[oldname]_msm_moved name`.
+  * Todos os filhos da live copy superficial (anterior) são tratados como se tivessem sido criados manualmente e, portanto, são transferidos usando `[oldname]_msm_moved name`.
 
 Para especificar ou alterar a profundidade:
 
@@ -468,7 +466,7 @@ Cancele a herança da live copy de um componente para que ele não seja mais sin
 
 >[!NOTE]
 >
->Quando você reativa a herança, o componente não é sincronizado automaticamente com a origem. Você pode solicitar manualmente uma sincronização, se necessário.
+>Quando você reabilita a herança, o componente não é sincronizado automaticamente com a origem. Você pode solicitar manualmente uma sincronização, se necessário.
 
 Cancelar a herança para alterar o conteúdo do componente ou excluir o componente:
 
@@ -512,7 +510,7 @@ Use o procedimento a seguir para cancelar a herança do sistema de parágrafo.
 
 As propriedades de página de uma página de Live Copy são herdadas (e não editáveis) da página de origem por padrão.
 
-Você pode cancelar a herança de uma propriedade quando precisar alterar o valor da propriedade para a live copy. Um ícone de link indica que a herança está ativada para a propriedade.
+Você pode cancelar a herança de uma propriedade quando precisar alterar o valor da propriedade para a live copy. Um ícone de link indica que a herança está habilitada para a propriedade.
 
 ![Cancelar herança da propriedade](assets/chlimage_1-231.png)
 
@@ -613,16 +611,16 @@ Há implicações com relação ao local na árvore em que você usa **Desanexar
 
   Quando esta operação é executada em uma subpágina (ou ramificação) dentro de uma live copy:
 
-   * o relacionamento dinâmico é removido dessa subpágina (ou ramificação)
-   * e as (sub)páginas na ramificação da live copy são tratadas como se tivessem sido criadas manualmente.
+  * o relacionamento dinâmico é removido dessa subpágina (ou ramificação)
+  * e as (sub)páginas na ramificação da live copy são tratadas como se tivessem sido criadas manualmente.
 
   *No entanto*, as subpáginas ainda estão sujeitas ao relacionamento dinâmico da ramificação principal; portanto, uma nova implantação da(s) página(s) de blueprint irá:
 
-   1. Renomear a(s) página(s) desanexada(s):
+  1. Renomear a(s) página(s) desanexada(s):
 
-      * Isso ocorre porque o MSM as considera como páginas criadas manualmente que causam um conflito, pois têm o mesmo nome das páginas de live copy que ele está tentando criar.
+     * Isso ocorre porque o MSM as considera como páginas criadas manualmente que causam um conflito, pois têm o mesmo nome das páginas de live copy que ele está tentando criar.
 
-   1. Crie uma página (live copy) com o nome original, contendo as alterações da implantação.
+  1. Crie uma página (live copy) com o nome original, contendo as alterações da implantação.
 
   >[!NOTE]
   >

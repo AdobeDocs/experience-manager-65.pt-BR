@@ -8,11 +8,9 @@ exl-id: eee768e3-3eb4-46fa-b9ae-9ef8764a3a94
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '442'
-ht-degree: 0%
-
+source-wordcount: '449'
+ht-degree: 2%
 ---
-
 # Preparar ativos para tradução {#preparing-assets-for-translation}
 
 Ativos multilíngues são ativos com binários, metadados e tags em vários idiomas. Geralmente, binários, metadados e tags para ativos existem em um idioma, que são traduzidos para outros idiomas para uso em projetos multilíngues.
@@ -46,7 +44,7 @@ Execute as seguintes etapas para preparar seus ativos para tradução:
 
 Para criar a raiz do idioma, crie uma pasta e use um código de idioma ISO como o valor da propriedade Nome. Depois de criar a raiz do idioma, você pode criar uma cópia de idioma em qualquer nível dentro da raiz de idioma.
 
-Por exemplo, a página raiz da cópia em italiano da hierarquia de amostra tem `it` como a propriedade Nome. A propriedade Nome é usada como o nome do nó do ativo no repositório e, portanto, determina o caminho dos ativos. (`https://[aem_server]:[port]/assets.html/content/dam/it/`)
+Por exemplo, a página raiz da cópia em italiano da hierarquia de amostra tem `it` como a propriedade Nome. A propriedade Nome é usada como o nome do nó do ativo no repositório e, portanto, determina o caminho dos ativos. (`https://[aem_server]:[port]/assets.html/content/dam/it/`).
 
 1. No console [!DNL Assets], clique em **[!UICONTROL Criar]** e escolha **[!UICONTROL Pasta]** no menu.
 

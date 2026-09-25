@@ -11,22 +11,20 @@ feature: Communities
 role: Developer
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '508'
 ht-degree: 1%
-
 ---
-
 # Conteúdo inicial da sandbox {#initial-sandbox-content}
 
 Nesta seção, você cria as seguintes páginas, todas usando o [modelo de página](initial-app.md#createthepagetemplate):
 
 * Site de sandbox SCF, que redireciona para a versão em inglês da página principal.
 
-   * Sandbox SCF - A página principal da versão em inglês do site.
+  * Sandbox SCF - A página principal da versão em inglês do site.
 
-   * SCF Play - Filho da página principal na qual jogar.
+  * SCF Play - Filho da página principal na qual jogar.
 
-Este tutorial não aborda as [cópias de idioma](../../help/sites-administering/tc-prep.md). Em vez disso, ele é projetado para que a página raiz possa implementar a detecção do idioma preferencial para o usuário por meio do cabeçalho de HTML e redirecionar para a página principal apropriada do idioma. A convenção é usar o código de país de duas letras para o nome do nó da página, por exemplo, &quot;en&quot; para inglês e &quot;fr&quot; para francês.
+Este tutorial não aborda as [cópias de idioma](../../help/sites-administering/tc-prep.md). Em vez disso, ele foi projetado para que a página raiz possa implementar a detecção do idioma preferencial do usuário por meio do cabeçalho do HTML e redirecionar para a página principal apropriada do idioma. A convenção é usar o código de país de duas letras para o nome do nó da página, por exemplo, &quot;en&quot; para inglês e &quot;fr&quot; para francês.
 
 ## Criar primeiras páginas {#create-first-pages}
 
@@ -90,9 +88,9 @@ Foi definido, o que fornece a capacidade opcional de fazer referência a ativos 
 * `% String favIcon = currentDesign.getPath() + "/favicon.ico"; %`
 
 
-   * Nome: `cq:designPath`
-   * Tipo: `String`
-   * Valor: `/etc/designs/an-scf-sandbox`
+  * Nome: `cq:designPath`
+  * Tipo: `String`
+  * Valor: `/etc/designs/an-scf-sandbox`
 
 * Clique no `[+] Add` verde
 

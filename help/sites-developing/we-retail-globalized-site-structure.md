@@ -11,11 +11,9 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '428'
+source-wordcount: '436'
 ht-degree: 0%
-
 ---
-
 # Experimentar a estrutura globalizada de sites no We.Retail{#trying-out-the-globalized-site-structure-in-we-retail}
 
 O We.Retail foi criado com uma estrutura de site globalizada que oferece um idioma principal que pode ser copiado para sites específicos de cada país. Tudo é configurado imediatamente para permitir que você experimente essa estrutura e os recursos de tradução integrados.
@@ -67,7 +65,7 @@ O We.Retail foi criado com uma estrutura de site globalizada que oferece um idio
 
 >[!NOTE]
 >
->Este procedimento demonstrou a integração integrada com a tradução automática da Microsoft®. Usando a [Estrutura de Integração de Tradução do AEM](/help/sites-administering/translation.md), você pode integrar-se a vários serviços de tradução padrão para orquestrar a tradução do AEM.
+>Este procedimento demonstrou a integração integrada com a tradução automática da Microsoft®. Usando a [Estrutura de integração de tradução do AEM](/help/sites-administering/translation.md), você pode integrar muitos serviços de tradução padrão para orquestrar a tradução do AEM.
 
 ## Mais informações {#further-information}
 

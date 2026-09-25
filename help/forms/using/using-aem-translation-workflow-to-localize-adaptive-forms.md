@@ -1,8 +1,12 @@
 ---
-title: Uso do fluxo de trabalho de tradução do AEM para localizar formulários adaptáveis e documentos de registro
+title: Usar o fluxo de trabalho de tradução do AEM para localizar formulários adaptáveis e documentos de registro
+
 description: Saiba como usar fluxos de trabalho de tradução do AEM para localizar formulários adaptáveis e documentos de registro.
+
+
 content-type: reference
 topic-tags: develop
+
 noindex: true
 feature: Adaptive Forms,Foundation Components
 exl-id: ebec03a3-67a0-4ecd-84bb-8580388e048a
@@ -10,18 +14,16 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '802'
-ht-degree: 14%
-
+source-wordcount: '814'
+ht-degree: 15%
 ---
+# Usar o fluxo de trabalho de tradução do AEM para localizar formulários adaptáveis e documentos de registro {#using-aem-translation-workflow-to-localize-adaptive-forms-and-document-of-record}
 
-# Uso do fluxo de trabalho de tradução do AEM para localizar formulários adaptáveis e documentos de registro {#using-aem-translation-workflow-to-localize-adaptive-forms-and-document-of-record}
-
-O <span class="preview"> Adobe recomenda o uso de [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adicionar o Forms Adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
+A Adobe <span class="preview"> recomenda usar os [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adicionar o Forms Adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
 
 Os formulários localizados ajudam você a atender um público-alvo maior em todas as regiões geográficas. O fluxo de trabalho de tradução do Adobe Experience Manager ajuda a localizar formulários adaptáveis e seus documentos de registro. Você pode usar a **tradução automática** ou os **tradutores humanos** para localizar um formulário adaptável.
 
-Este artigo explica o processo de uso do fluxo de trabalho de tradução do AEM com formulários adaptáveis e documentos de registro.
+Este artigo explica o processo para usar o fluxo de trabalho de tradução do AEM com formulários adaptáveis e documentos de registro.
 
 ## Localizar um formulário adaptável e um documento de registro usando a tradução automática {#localizing-an-adaptive-form-and-document-of-record-using-machine-translation}
 
@@ -46,12 +48,12 @@ O serviço de tradução automática traduz imediatamente seu conteúdo em forma
 
    Para obter mais informações sobre configurações e configurações do documento de registro, consulte:
 
-[Documento de configuração modelo de registro](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#p-document-of-record-template-configuration-p)
+   [Configuração do modelo de documento de registro](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#p-document-of-record-template-configuration-p)
 
-[Configurações do documento de registro](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#p-document-of-record-settings-p)
+   [Configurações do documento de registro](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#p-document-of-record-settings-p)
 
 1. [Personalize as informações de identidade visual do documento de registro](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md) e verifique se a localidade do navegador está definida com o mesmo idioma para o qual você localizou o Formulário adaptável usando o idioma do computador. A localidade do navegador ajuda a localizar as informações de marca no documento de registro.
-1. Para exibir o documento de registro localizado, selecione Gerar visualização. O documento do PDF de registro é gerado e aberto em uma nova guia no navegador.
+1. Para exibir o documento de registro localizado, selecione Gerar visualização. O documento de registro PDF é gerado e aberto em uma nova guia no navegador.
 
 ## Localizar um formulário adaptável e seu documento de registro usando a Tradução humana {#localizing-an-adaptive-form-and-its-document-of-record-using-human-translation}
 

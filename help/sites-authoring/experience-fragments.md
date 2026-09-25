@@ -7,11 +7,9 @@ feature: Authoring,Experience Fragments
 role: User
 source-git-commit: 382368d7a91ba2229ce1cdfe19f3b9871b93498e
 workflow-type: tm+mt
-source-wordcount: '1505'
-ht-degree: 71%
-
+source-wordcount: '1541'
+ht-degree: 70%
 ---
-
 # Fragmentos de experiência{#experience-fragments}
 
 No Adobe Experience Manager (AEM), um fragmento de experiência é um grupo de um ou mais componentes, incluindo conteúdo e layout, que podem ser referenciados nas páginas. Eles podem conter qualquer componente.
@@ -32,7 +30,7 @@ Um fragmento de experiência:
 Use os Fragmentos de experiência:
 
 * Se um autor quiser reutilizar partes de uma página (um fragmento de uma experiência), ele precisará copiar e colar esse fragmento. Criar e manter essa experiências de copiar/colar é um processo demorado e pode causar erros feitos pelo usuário. Os fragmentos de experiência eliminam a necessidade de copiar/colar.
-* Para dar suporte ao caso de uso de CMS headless. Os autores desejam usar o AEM somente para criação, não para entrega ao cliente. Um ponto de contato ou sistema de terceiros consumiria essa experiência e a entregaria para o usuário final.
+* Para dar suporte ao caso de uso de CMS sem periféricos. Os autores desejam usar o AEM somente para criação, não para entrega ao cliente. Um ponto de contato ou sistema de terceiros consumiria essa experiência e a entregaria para o usuário final.
 * Com o [Gerenciamento de vários sites (MSM)](/help/sites-administering/msm.md); o como um Fragmento de experiência faz parte de uma página. Isso se aplica aos fragmentos individuais e às pastas em que eles residem.
 
 >[!NOTE]
@@ -43,28 +41,28 @@ Use os Fragmentos de experiência:
 >
 >Entre em contato com o administrador do sistema se tiver algum problema.
 
-## Quando usar fragmentos de experiência?   {#when-should-you-use-experience-fragments}
+## Quando usar fragmentos de experiência? {#when-should-you-use-experience-fragments}
 
 Fragmentos de experiência devem ser usados:
 
 * Sempre que quiser reutilizar as experiências.
 
-   * Experiências que serão reutilizadas com conteúdo igual ou semelhante
+  * Experiências que serão reutilizadas com conteúdo igual ou semelhante
 
 * Ao usar o AEM como uma plataforma de entrega de conteúdo para terceiros.
 
-   * Qualquer solução que queira usar AEM como plataforma de entrega de conteúdo
-   * Incorporação de conteúdo em pontos de contato de terceiros
+  * Qualquer solução que deseje usar o AEM como a plataforma de entrega de conteúdo
+  * Incorporação de conteúdo em pontos de contato de terceiros
 
 * Se você tiver uma experiência com diferentes variações ou representações.
 
-   * Variações específicas de canal ou contexto
-   * Experiências que fazem sentido agrupar (por exemplo, uma campanha com diferentes experiências entre canais)
+  * Variações específicas de canal ou contexto
+  * Experiências que fazem sentido agrupar (por exemplo, uma campanha com diferentes experiências entre canais)
 
 * Quando você usar o Comércio omnichannel.
 
-   * Compartilhando conteúdo comercial em [redes sociais](/help/sites-developing/experience-fragments.md#social-variations) canais em escala
-   * Tornar pontos de contato transacionais
+  * Compartilhando conteúdo comercial em [redes sociais](/help/sites-developing/experience-fragments.md#social-variations) canais em escala
+  * Tornar pontos de contato transacionais
 
 ## Organizar os Fragmentos de experiência {#organizing-your-experience-fragments}
 
@@ -336,31 +334,31 @@ Os detalhes do fragmento podem ser vistos:
 
    * **Básico**
 
-      * **Título** - obrigatório
+     * **Título** - obrigatório
 
-      * **Descrição**
-      * **Tags**
-      * **Número total de variantes** - somente informações
+     * **Descrição**
+     * **Tags**
+     * **Número total de variantes** - somente informações
 
-      * **Número de variantes da Web** - somente informações
-      * **Número de variantes que não fazem parte da Web** - inf **somente formatação**
+     * **Número de variantes da Web** - somente informações
+     * **Número de variantes que não fazem parte da Web** - inf **somente formatação**
 
-      * **Número de páginas usando esse fragmento** - somente informações
+     * **Número de páginas usando esse fragmento** - somente informações
 
    * **Cloud Services**
 
-      * **Configuração na nuvem**
-      * **Configurações do Cloud Service**
-      * **ID da página do Facebook**
-      * **Quadro do Pinterest**
+     * **Configuração na nuvem**
+     * **Configurações do Cloud Service**
+     * **ID da página do Facebook**
+     * **Quadro do Pinterest**
 
    * **Referências**
 
-      * Uma lista de referências.
+     * Uma lista de referências.
 
    * **Status da rede social**
 
-      * Detalhes de variações de redes sociais.
+     * Detalhes de variações de redes sociais.
 
 ## A representação HTML simples {#the-plain-html-rendition}
 

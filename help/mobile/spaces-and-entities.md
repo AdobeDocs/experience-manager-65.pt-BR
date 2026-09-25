@@ -10,11 +10,9 @@ feature: Mobile
 role: Admin
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '1185'
+source-wordcount: '1188'
 ht-degree: 0%
-
 ---
-
 # Espaços e entidades{#spaces-and-entities}
 
 {{ue-over-mobile}}
@@ -35,7 +33,7 @@ Para o primeiro usuário, que não configurou os serviços de conteúdo para fun
 >
 >**Pré-requisitos para adicionar um espaço**
 >
->Marque a opção **Habilitar Serviços de Conteúdo AEM** para trabalhar com o Spaces e habilite-a no painel de aplicativos do AEM Mobile.
+>Marque a opção **Habilitar os Serviços de Conteúdo do AEM** para trabalhar com o Spaces e habilite-a no painel de aplicativos do AEM Mobile.
 >
 >Consulte [Administrando o Content Services](/help/mobile/developing-content-services.md) para obter mais detalhes.
 
@@ -55,7 +53,7 @@ Depois de configurar o Spaces no painel, siga estas etapas para criar o Spaces:
 
 Depois de criar um espaço, clique em à esquerda para gerenciar o espaço na lista.
 
-Você pode visualizar propriedades do espaço, excluir o espaço ou publicar o espaço e seu conteúdo em uma instância de publicação AEM.
+Você pode exibir propriedades do espaço, excluir o espaço ou publicar o espaço e seu conteúdo em uma instância de publicação do AEM.
 
 ![chlimage_1-85](assets/chlimage_1-85.png)
 
@@ -68,7 +66,7 @@ Você pode visualizar propriedades do espaço, excluir o espaço ou publicar o e
 **Publicando um espaço** Quando um espaço é publicado, todas as pastas e entidades desse espaço também são publicadas.
 
 1. Selecione o espaço clicando em seu ícone na lista Console do espaço
-1. Escolher **árvore do Publish**
+1. Escolher **Publicar árvore**
 
 >[!NOTE]
 >
@@ -94,7 +92,7 @@ Os espaços podem incluir pastas para ajudar a organizar ainda mais o conteúdo 
 
 1. Clique em **Criar** para criar a pasta em um espaço
 
-## Cópia de idioma {#language-copy}
+## Cópia no idioma de destino {#language-copy}
 
 >[!CAUTION]
 >
@@ -118,7 +116,7 @@ O recurso **Cópia de idioma** permite que os autores copiem sua Cópia de idiom
    >
    >Os nós de Cópia de idioma só podem existir como um filho direto do Espaço.
 
-1. Escolha **Idioma do Pacote de Conteúdo&ast;** e insira o **Título&ast;** na caixa de diálogo **Criar Cópia de Idioma**.
+1. Escolha **Idioma do Pacote de Conteúdo&amp;ast;** e insira o **Título&amp;ast;** na caixa de diálogo **Criar Cópia de Idioma**.
 
    Clique em **Criar**.
 
@@ -235,12 +233,12 @@ Se os filhos da entidade, que são outras entidades, forem coletados para modela
 
 ### Publicar uma entidade {#publishing-an-entity}
 
-Você tem a opção de escolher a **Árvore do Publish** ou o **Publish rápido** para publicar sua entidade.
+Você tem a opção de escolher **Publicar árvore** ou **Publicação rápida** para publicar sua entidade.
 
-1. Selecione uma entidade na lista do console de espaço e clique em **Árvore do Publish** para publicar essa entidade e seus filhos.
+1. Selecione uma entidade na lista do console de espaço e clique em **Publicar árvore ** para publicar essa entidade e seus filhos.
 
    ![chlimage_1-105](assets/chlimage_1-105.png)
 
    **Ou**,
 
-   Clique em **Quick Publish** para publicar essa entidade específica.
+   Clique em **Publicação rápida** para publicar essa entidade específica.

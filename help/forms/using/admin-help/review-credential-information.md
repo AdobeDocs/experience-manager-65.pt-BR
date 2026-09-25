@@ -11,14 +11,12 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '193'
+source-wordcount: '196'
 ht-degree: 0%
-
 ---
-
 # Revisar informações de uso da credencial {#review-credential-use-information}
 
-A credencial contém informações que descrevem seu uso pretendido que podem ser acessadas por meio do aplicativo web do usuário final das extensões do Acrobat Reader DC. Você pode usar essas informações para determinar o tipo de credencial instalada (avaliação ou produção) e suas datas de validade.
+A credencial contém informações descrevendo seu uso pretendido que podem ser acessadas por meio do aplicativo web do usuário final de extensões do Acrobat Reader DC. Você pode usar essas informações para determinar o tipo de credencial instalada (avaliação ou produção) e suas datas de validade.
 
 1. Abra um navegador da Web e insira este URL:
 
@@ -32,7 +30,7 @@ A credencial contém informações que descrevem seu uso pretendido que podem se
 
    >[!NOTE]
    >
-   >Você deve ter privilégios de administrador ou superusuário para efetuar login usando o nome de usuário e a senha default. Para permitir que outros usuários acessem extensões do Acrobat Reader DC, crie as contas de usuário no Gerenciamento de usuários e conceda aos usuários a função de Aplicativo Web de extensões do Acrobat Reader DC.
+   >Você deve ter privilégios de administrador ou superusuário para efetuar login usando o nome de usuário e a senha default. Para permitir que outros usuários acessem extensões do Acrobat Reader DC, crie as contas de usuário no Gerenciamento de usuários e conceda aos usuários a função de Aplicativo da Web de extensões do Acrobat Reader DC.
 
 1. Selecione o alias da credencial na lista Selecionar credencial e revise as informações incluídas na Data de expiração e no Aviso de uso pretendido.
 

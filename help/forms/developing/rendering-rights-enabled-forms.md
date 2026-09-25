@@ -1,27 +1,30 @@
 ---
 title: Renderização do Forms com direitos ativados
+
 description: Use o serviço Forms para renderizar formulários que tenham direitos de uso aplicados. Você pode renderizar formulários com direitos ativados usando a API Java e a API de serviço da Web.
+
+
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
+
 role: Developer
 exl-id: 012a3a9f-542c-4ed1-a092-572bfccbdf21
 solution: Experience Manager, Experience Manager Forms
+
 feature: Adaptive Forms,Document Services,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1447'
+source-wordcount: '1488'
 ht-degree: 0%
-
 ---
-
 # Renderização do Forms com direitos ativados {#rendering-rights-enabled-forms}
 
-O serviço Forms pode renderizar formulários com direitos de uso aplicados. Os direitos de uso pertencem à funcionalidade que está disponível por padrão no Acrobat, mas não no Adobe Reader, como a capacidade de adicionar comentários a um formulário ou preencher campos de formulário e salvar o formulário. Os Forms que têm direitos de uso aplicados a eles são chamados de formulários habilitados por direitos. Um usuário que abre um formulário habilitado para direitos no Adobe Reader pode executar operações habilitadas para esse formulário.
+O serviço Forms pode renderizar formulários com direitos de uso aplicados. Os direitos de uso pertencem à funcionalidade que está disponível por padrão no Acrobat, mas não no Adobe Reader, como a capacidade de adicionar comentários a um formulário ou preencher campos de formulário e salvar o formulário. Os Forms que têm direitos de uso aplicados a eles são chamados de formulários habilitados por direitos. Um usuário que abre um formulário habilitado para direitos no Adobe Reader pode executar operações que estão habilitadas para esse formulário.
 
-Para aplicar direitos de uso a um formulário, o serviço de extensões do Acrobat Reader DC deve fazer parte da instalação do AEM Forms. Além disso, você deve ter uma credencial válida que permita aplicar direitos de uso a documentos do PDF. Ou seja, você deve configurar corretamente o serviço de extensões do Acrobat Reader DC antes de renderizar um formulário habilitado para direitos. (Consulte [Sobre o Serviço de extensões da Acrobat Reader DC](/help/forms/developing/assigning-usage-rights.md#about-the-acrobat-reader-dc-extensions-service).)
+Para aplicar direitos de uso a um formulário, o serviço de extensões do Acrobat Reader DC deve fazer parte da instalação do AEM Forms. Além disso, você deve ter uma credencial válida que permita aplicar direitos de uso a documentos do PDF. Ou seja, você deve configurar corretamente o serviço de extensões do Acrobat Reader DC antes de poder renderizar um formulário habilitado para direitos. (Consulte [Sobre o serviço de extensões do Acrobat Reader DC](/help/forms/developing/assigning-usage-rights.md#about-the-acrobat-reader-dc-extensions-service).)
 
 >[!NOTE]
 >
@@ -67,7 +70,7 @@ Para renderizar um formulário habilitado para direitos, use a mesma lógica de 
 
 **Gravar o fluxo de dados de formulário no navegador Web cliente**
 
-Quando o serviço Forms renderiza um formulário com direitos ativados, ele retorna um fluxo de dados de formulário que você deve gravar no navegador da Web do cliente. Depois de gravado no navegador da Web do cliente, o formulário fica visível para o usuário. Um usuário que visualiza o formulário habilitado para direitos no Adobe Reader pode executar operações habilitadas para esse formulário.
+Quando o serviço Forms renderiza um formulário com direitos ativados, ele retorna um fluxo de dados de formulário que você deve gravar no navegador da Web do cliente. Depois de gravado no navegador da Web do cliente, o formulário fica visível para o usuário. Um usuário que visualiza o formulário habilitado para direitos no Adobe Reader pode executar operações que estão habilitadas para esse formulário.
 
 **Consulte também**
 
@@ -81,7 +84,7 @@ Quando o serviço Forms renderiza um formulário com direitos ativados, ele reto
 
 [Início rápido da API de serviço do Forms](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
-[Renderização de PDF forms interativos](/help/forms/developing/rendering-interactive-pdf-forms.md)
+[Renderização do PDF forms interativo](/help/forms/developing/rendering-interactive-pdf-forms.md)
 
 [Criação de aplicações Web que renderizam o Forms](/help/forms/developing/creating-web-applications-renders-forms.md)
 
