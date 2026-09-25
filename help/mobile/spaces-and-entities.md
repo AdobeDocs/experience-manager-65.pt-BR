@@ -116,7 +116,7 @@ O recurso **Cópia de idioma** permite que os autores copiem sua Cópia de idiom
    >
    >Os nós de Cópia de idioma só podem existir como um filho direto do Espaço.
 
-1. Escolha **Idioma do Pacote de Conteúdo&amp;ast;** e insira o **Título&amp;ast;** na caixa de diálogo **Criar Cópia de Idioma**.
+1. Escolha **Idioma do Pacote de Conteúdo&ast;** e insira o **Título&ast;** na caixa de diálogo **Criar Cópia de Idioma**.
 
    Clique em **Criar**.
 
@@ -235,7 +235,7 @@ Se os filhos da entidade, que são outras entidades, forem coletados para modela
 
 Você tem a opção de escolher **Publicar árvore** ou **Publicação rápida** para publicar sua entidade.
 
-1. Selecione uma entidade na lista do console de espaço e clique em **Publicar árvore ** para publicar essa entidade e seus filhos.
+1. Selecione uma entidade na lista do console de espaço e clique em **Publicar árvore &#x200B;** para publicar essa entidade e seus filhos.
 
    ![chlimage_1-105](assets/chlimage_1-105.png)
 
