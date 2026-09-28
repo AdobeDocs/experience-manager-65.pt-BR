@@ -22,7 +22,7 @@ Para que ocorra a transcodificação adequada, um administrador instala o FFmpeg
 
 >[!CAUTION]
 >
->Esse componente de base foi descontinuado. Em vez disso, a Adobe recomenda usar o [Componente de Incorporação dos Componentes Principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/embed.html).
+>Esse componente de base foi descontinuado. Em vez disso, a Adobe recomenda usar o [Componente de Incorporação dos Componentes Principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/embed.html?lang=pt-BR).
 
 >[!CAUTION]
 >

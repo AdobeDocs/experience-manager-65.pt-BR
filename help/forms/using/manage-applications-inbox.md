@@ -138,7 +138,7 @@ Um proprietário de modelo de fluxo de trabalho não pode exibir itens relaciona
      | allowExplicitSharing | allowExplicitSharing | BOOLEANO |
 
 
-   * Implante os índices por meio de um pacote do AEM. Você pode usar um projeto do [Arquétipo do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en) para criar um pacote do AEM implantável. Use o código de amostra a seguir para adicionar índices a um projeto do Arquétipo do AEM:
+   * Implante os índices por meio de um pacote do AEM. Você pode usar um projeto do [Arquétipo do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=pt-BR) para criar um pacote do AEM implantável. Use o código de amostra a seguir para adicionar índices a um projeto do Arquétipo do AEM:
 
    ```Java
       .property("sharedWith", "sharedWith").type(TYPENAME_STRING).propertyIndex()
@@ -148,7 +148,7 @@ Um proprietário de modelo de fluxo de trabalho não pode exibir itens relaciona
       .property("allowExplicitSharing", "allowExplicitSharing").type(TYPENAME_BOOLEAN).propertyIndex()
    ```
 
-1. [Crie um Índice de Propriedade e defina-o como verdadeiro](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/queries-and-indexing.html#the-property-index).
+1. [Crie um Índice de Propriedade e defina-o como verdadeiro](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/queries-and-indexing.html?lang=pt-BR#the-property-index).
 
 1. Após configurar índices no CRX DE ou implantar por meio de um pacote, [reindexe o repositório](https://helpx.adobe.com/in/experience-manager/kb/HowToCheckLuceneIndex.html#Completelyrebuildtheindex).
 
