@@ -12,11 +12,9 @@ feature: Administering,Personalization
 role: Admin
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '1128'
-ht-degree: 7%
-
+source-wordcount: '1139'
+ht-degree: 8%
 ---
-
 
 # Configuração da segmentação {#configuring-segmentation}
 

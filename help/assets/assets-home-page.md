@@ -1,6 +1,6 @@
 ---
 title: Experiência da página inicial [!DNL Assets]
-description: Personalize a [!DNL Experience Manager Assets] Página inicial para obter uma experiência avançada de tela de boas-vindas, incluindo um instantâneo das atividades recentes relacionadas aos ativos.
+description: Personalize a Página inicial do [!DNL Experience Manager Assets] para obter uma experiência avançada em tela de boas-vindas, incluindo um instantâneo das atividades recentes relacionadas aos ativos.
 contentOwner: AG
 feature: Asset Management
 role: Admin, User
@@ -8,11 +8,9 @@ exl-id: 042bd959-256a-4794-a34d-0848a6b8840d
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '562'
+source-wordcount: '568'
 ht-degree: 1%
-
 ---
-
 # Experiência da página inicial [!DNL Adobe Experience Manager Assets] {#aem-assets-home-page-experience}
 
 Personalize a página inicial do [!DNL Adobe Experience Manager Assets] para obter uma experiência avançada em tela de boas-vindas, incluindo um instantâneo das atividades recentes relacionadas aos ativos.
@@ -87,4 +85,4 @@ A tela de boas-vindas fornece ajudas de navegação fáceis, por exemplo, ícone
 >
 >A Adobe recomenda que os administradores e usuários que executam operações em massa evitem usar o recurso Página inicial do ativo para evitar o aumento das atividades do usuário. Além disso, os administradores podem excluir atividades de gravação para usuários específicos configurando o [!UICONTROL Day CQ DAM Event Recorder] no [!UICONTROL Configuration Manager].
 >
->Se você usar o recurso, o Adobe recomenda que você programe a frequência de limpeza com base na carga do servidor.
+>Se você usar o recurso, a Adobe recomenda agendar a frequência de limpeza com base na carga do servidor.

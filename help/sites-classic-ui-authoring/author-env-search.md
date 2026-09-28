@@ -1,10 +1,12 @@
 ---
 title: Pesquisar
 description: O ambiente de criação do AEM fornece vários mecanismos de pesquisa de conteúdo, dependendo do tipo de recurso.
+
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
+
 docset: aem65
 exl-id: 1f46a57f-4966-4dd1-8c99-c0740718ae76
 solution: Experience Manager, Experience Manager Sites
@@ -12,18 +14,16 @@ feature: Authoring
 role: User
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '412'
-ht-degree: 12%
-
+source-wordcount: '474'
+ht-degree: 10%
 ---
-
 # Pesquisar{#searching}
 
 O ambiente de criação do AEM fornece vários mecanismos de pesquisa de conteúdo, dependendo do tipo de recurso.
 
 >[!NOTE]
 >
->Fora do ambiente de criação, outros mecanismos também estão disponíveis para pesquisa, como o [Construtor de consultas](/help/sites-developing/querybuilder-api.md) e o [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
+>Fora do ambiente de criação, outros mecanismos também estão disponíveis para pesquisa, como o [Construtor de Consultas](/help/sites-developing/querybuilder-api.md) e o [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
 
 ## Noções básicas de pesquisa {#search-basics}
 

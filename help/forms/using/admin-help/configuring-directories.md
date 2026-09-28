@@ -11,11 +11,9 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: e9afc12af78140ae0ec12cc2ee95fc9e175f8d94
 workflow-type: tm+mt
-source-wordcount: '3241'
+source-wordcount: '3263'
 ht-degree: 0%
-
 ---
-
 
 # Configurando diretórios {#configuring-directories}
 
@@ -47,7 +45,7 @@ Para cada domínio enterprise que você configurar, especifique os diretórios q
 
 ### Adicionar uma SPI personalizada {#add-a-custom-spi}
 
-Para obter informações sobre como criar uma SPI personalizada, consulte &quot;Desenvolvendo SPIs para formulários AEM&quot; em [Programação com formulários AEM](https://www.adobe.com/go/learn_aemforms_programming_63). Para disponibilizar uma SPI personalizada recém-implantada para associação com o domínio, reinicie o servidor.
+Para obter informações sobre como criar uma SPI personalizada, consulte &quot;Desenvolvendo SPIs para formulários do AEM&quot; em [Programação com formulários do AEM](https://www.adobe.com/go/learn_aemforms_programming_63). Para disponibilizar uma SPI personalizada recém-implantada para associação com o domínio, reinicie o servidor.
 
 1. No console de administração, clique em Configurações > Gerenciamento de usuários > Gerenciamento de domínio.
 1. Clique em Novo Domínio Enterprise ou selecione um domínio enterprise existente.
@@ -140,7 +138,7 @@ Embora o DN de base seja uma configuração obrigatória no console de administr
 
 **Iniciais:** Atributo de esquema para as iniciais do usuário
 
-**Calendário Comercial:** permite mapear um calendário comercial para um usuário, com base no valor dessa configuração (a chave do calendário comercial). Os calendários comerciais definem dias úteis e não úteis. Os formulários AEM podem usar calendários comerciais ao calcular datas e horas futuras para eventos, como lembretes, prazos finais e escalonamentos. A forma como você atribui chaves do calendário de negócios aos usuários depende de você estar usando um domínio corporativo, local ou híbrido. (Consulte Configuração de Calendários de Negócios.)
+**Calendário Comercial:** permite mapear um calendário comercial para um usuário, com base no valor dessa configuração (a chave do calendário comercial). Os calendários comerciais definem dias úteis e não úteis. Os formulários do AEM podem usar calendários de negócios ao calcular datas e horas futuras para eventos, como lembretes, prazos finais e escalonamentos. A forma como você atribui chaves do calendário de negócios aos usuários depende de você estar usando um domínio corporativo, local ou híbrido. (Consulte Configuração de Calendários de Negócios.)
 
 Se você estiver usando um domínio enterprise, poderá mapear a definição Calendário de Negócios para um campo no diretório LDAP. Por exemplo, se cada registro de usuário no diretório contiver um campo *país* e você quiser atribuir calendários de negócios com base no país onde o usuário está localizado, especifique o nome do campo *país* como o valor para a configuração do Calendário de negócios. Em seguida, é possível mapear as chaves do calendário comercial (os valores definidos para o campo *país* no diretório LDAP) para os calendários comerciais no fluxo de trabalho de formulários.
 
@@ -162,7 +160,7 @@ A quantidade de espaço usada para exibir o nome da chave do calendário comerci
 
 **Fuso Horário:** Atributo de esquema que contém o fuso horário onde o usuário está localizado. O valor é uma string como Cidade/País.
 
-**Habilitar o Controle VLV (Exibição de Lista Virtual):** um controle LDAP que permite aos formulários AEM recuperar dados em lotes do servidor de diretório. Se você estiver usando o Sun One como o diretório LDAP e o diretório contiver muitos usuários, a ativação do VLV criará um índice que o User Management poderá usar ao pesquisar usuários. Esse recurso é útil ao usar uma conta de usuário normal que pode sincronizar apenas uma quantidade limitada de dados. Você também pode ativar a VLV para grupos. Se você selecionar Ativar Controle de Exibição de Lista Virtual (VLV), especifique um nome na caixa Classificar Campo.
+**Habilitar o Controle de VLV (Exibição de Lista Virtual):** um controle LDAP que permite aos formulários do AEM recuperar dados em lotes do servidor de diretório. Se você estiver usando o Sun One como o diretório LDAP e o diretório contiver muitos usuários, a ativação do VLV criará um índice que o User Management poderá usar ao pesquisar usuários. Esse recurso é útil ao usar uma conta de usuário normal que pode sincronizar apenas uma quantidade limitada de dados. Você também pode ativar a VLV para grupos. Se você selecionar Ativar Controle de Exibição de Lista Virtual (VLV), especifique um nome na caixa Classificar Campo.
 
 >[!NOTE]
 >
@@ -204,7 +202,7 @@ Se o DN for especificado como um identificador exclusivo, não será necessário
 
 **Modificar Carimbo de Data/Hora:** Para habilitar a sincronização do diretório delta, defina esse valor para modificar o Carimbo de Data/Hora. (Consulte Habilitar a sincronização de diretórios delta.)
 
-**Habilitar o Controle VLV (Exibição de Lista Virtual):** um controle LDAP que permite aos formulários AEM recuperar dados em lotes do servidor de diretório. Se você estiver usando o Sun One como o diretório LDAP e o diretório contiver muitos grupos, a ativação do VLV criará um índice que o User Management poderá usar ao pesquisar grupos. Esse recurso é útil ao usar uma conta de usuário normal que pode sincronizar apenas uma quantidade limitada de dados. Você também pode ativar a VLV para usuários. Se você selecionar Ativar Controle de Exibição de Lista Virtual (VLV), especifique um Nome de Campo de Classificação.
+**Habilitar o Controle de VLV (Exibição de Lista Virtual):** um controle LDAP que permite aos formulários do AEM recuperar dados em lotes do servidor de diretório. Se você estiver usando o Sun One como o diretório LDAP e o diretório contiver muitos grupos, a ativação do VLV criará um índice que o User Management poderá usar ao pesquisar grupos. Esse recurso é útil ao usar uma conta de usuário normal que pode sincronizar apenas uma quantidade limitada de dados. Você também pode ativar a VLV para usuários. Se você selecionar Ativar Controle de Exibição de Lista Virtual (VLV), especifique um Nome de Campo de Classificação.
 
 >[!NOTE]
 >
@@ -226,7 +224,7 @@ Se usuários e grupos forem retornados, os resultados mostrarão os valores atri
 
 A sincronização de diretórios é um requisito importante para o Gerenciamento de Usuários. Os usuários e grupos são sincronizados de um diretório corporativo para o banco de dados do AEM Forms para atribuir funções e permissões. O número de usuários varia de 100 a 100.000+, dependendo dos requisitos, e representa um desafio de engenharia para sincronizar dados com eficiência.
 
-O protocolo LDAP fornece um mecanismo para consultar grandes conjuntos de dados de forma paginada usando controles de solicitação. Ao usar o Microsoft Ative Diretory, o LDAP para a sincronização de bancos de dados de formulários AEM usa PagedResultsControl para recuperar dados em lotes de um tamanho específico. O Sun ONE Diretory Server não oferece suporte a esse controle. Para concluir uma consulta paginada em relação ao Sun ONE Diretory Server, use o controle VLV (Exibição de Lista Virtual). Esse controle envolve a configuração do lado do servidor de diretórios e a implementação do lado do cliente.
+O protocolo LDAP fornece um mecanismo para consultar grandes conjuntos de dados de forma paginada usando controles de solicitação. Ao usar o Microsoft Ative Diretory, a sincronização de banco de dados de LDAP para AEM Forms usa PagedResultsControl para recuperar dados em lotes de um tamanho específico. O Sun ONE Diretory Server não oferece suporte a esse controle. Para concluir uma consulta paginada em relação ao Sun ONE Diretory Server, use o controle VLV (Exibição de Lista Virtual). Esse controle envolve a configuração do lado do servidor de diretórios e a implementação do lado do cliente.
 
 >[!NOTE]
 >
@@ -238,7 +236,7 @@ O protocolo LDAP fornece um mecanismo para consultar grandes conjuntos de dados 
 
 ### Configurando o Sun ONE Diretory Server para VLV {#configuring-the-sun-one-directory-server-for-vlv}
 
-A criação de um VLV requer um par de entradas que incluem as classes de objeto `vlvSearch` e `vlvIndex`. A entrada vlvSearch inclui uma base de pesquisa e o atributo `vlvFilter`, que especifica a classe de objeto que contém os atributos que você pretende classificar. A classe de objeto `vlvIndex` inclui o atributo `vlvSort`, que especifica um ou mais atributos para classificar e a ordem em que eles serão classificados. (Um sinal de menos (-) indica ordem alfabética inversa). O uso de formulários VLV com AEM requer entradas separadas para usuários e grupos.
+A criação de um VLV requer um par de entradas que incluem as classes de objeto `vlvSearch` e `vlvIndex`. A entrada vlvSearch inclui uma base de pesquisa e o atributo `vlvFilter`, que especifica a classe de objeto que contém os atributos que você pretende classificar. A classe de objeto `vlvIndex` inclui o atributo `vlvSort`, que especifica um ou mais atributos para classificar e a ordem em que eles serão classificados. (Um sinal de menos (-) indica ordem alfabética inversa). O uso do VLV com formulários do AEM requer entradas separadas para usuários e grupos.
 
 >[!NOTE]
 >
@@ -265,7 +263,7 @@ Este é um exemplo de script LDIF para entrada VLV para usuários:
 
 **Criar as entradas do objeto usando um script**
 
-1. O exemplo de script tem uma entrada LDAP denominada `lcuser`. Essa entrada é para configuração relacionada ao VLV para sincronização de usuários em formulários AEM. Modifique as seguintes propriedades de acordo:
+1. O exemplo de script tem uma entrada LDAP denominada `lcuser`. Essa entrada é para configuração relacionada ao VLV para sincronização de usuários em formulários do AEM. Modifique as seguintes propriedades de acordo:
 
    **Nome da entrada:** O nome da entrada neste exemplo é `lcuser`. Se `lcuser` for alterado, ele deverá ser alterado em todas as áreas do script de exemplo.
 
@@ -279,7 +277,7 @@ Este é um exemplo de script LDIF para entrada VLV para usuários:
 
    >[!NOTE]
    >
-   >Como convenção, o nome da entrada vlvIndex também é definido como `lcuser`, mas você pode dar a ele um nome diferente. Use o mesmo nome na ferramenta vlvindex. (Consulte [Criar o Índice de Servidor de Diretório para VLV &#x200B;](configuring-directories.md#create-the-directory-server-index-for-vlv)*.)*
+   >Como convenção, o nome da entrada vlvIndex também é definido como `lcuser`, mas você pode dar a ele um nome diferente. Use o mesmo nome na ferramenta vlvindex. (Consulte [Criar o Índice de Servidor de Diretório para VLV ](configuring-directories.md#create-the-directory-server-index-for-vlv)*.)*
 
 1. Usando a ferramenta `ldapmodify` fornecida com o Sun ONE Server, crie uma entrada semelhante para grupos usando o DN Base, o Filtro de Pesquisa e o Campo de Classificação do grupo, respectivamente:
 

@@ -11,11 +11,9 @@ feature: Authoring,Personalization
 role: User
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '805'
+source-wordcount: '816'
 ht-degree: 0%
-
 ---
-
 # Direcionamento do seu Adobe Campaign{#targeting-your-adobe-campaign}
 
 Para direcionar seu informativo no Adobe Campaign, primeiro é necessário configurar a segmentação, que só está disponível na interface clássica. Depois disso, você poderá criar experiências direcionadas para o Adobe Campaign.
@@ -73,11 +71,11 @@ Você pode criar o informativo com conteúdo direcionado na interface do usuári
 
 Para criar um informativo com conteúdo direcionado:
 
-1. Crie um boletim informativo com conteúdo direcionado: Abaixo de Campanhas de email em Geometrixx Outdoors, clique em **Criar** > **Página** e selecione um dos modelos do Adobe Campaign Mail.
+1. Crie um boletim informativo com conteúdo direcionado: Abaixo de Campanhas por email no Geometrixx Outdoors, clique em **Criar** > **Página** e selecione um dos modelos do Adobe Campaign Mail.
 
    >[!NOTE]
    >
-   >[Amostras de email só estão disponíveis em Geometrixx](/help/sites-developing/we-retail.md#weretail). Baixe o conteúdo de Geometrixx de amostra do Compartilhamento de pacotes.
+   >[Amostras de email só estão disponíveis no Geometrixx](/help/sites-developing/we-retail.md#weretail). Baixe o conteúdo de amostra do Geometrixx do Compartilhamento de pacotes.
 
 1. No informativo, adicione um componente Texto e Personalization.
 1. Adicione texto ao componente Texto e Personalization, como &quot;Este é o padrão&quot;.
@@ -87,7 +85,7 @@ Para criar um informativo com conteúdo direcionado:
 
    >[!NOTE]
    >
-   >Por padrão, as amostras de email incluídas com o AEM usam o Adobe Campaign como mecanismo de direcionamento. Para boletins informativos personalizados, talvez seja necessário selecionar o Adobe Campaign como mecanismo de direcionamento. Ao direcionar, clique em + na barra de ferramentas, insira um título para a nova atividade e selecione **Adobe Campaign** como mecanismo de direcionamento.
+   >Por padrão, as amostras de email incluídas no AEM usam o Adobe Campaign como mecanismo de direcionamento. Para boletins informativos personalizados, talvez seja necessário selecionar o Adobe Campaign como mecanismo de direcionamento. Ao direcionar, clique em + na barra de ferramentas, insira um título para a nova atividade e selecione **Adobe Campaign** como mecanismo de direcionamento.
 
 1. Clique em **Padrão**, em seguida, no componente Texto e Personalization adicionado e você verá o Alvo com uma seta. Clique no ícone para direcionar esse componente.
 
@@ -99,7 +97,7 @@ Para criar um informativo com conteúdo direcionado:
 
    O AEM gera automaticamente o código de direcionamento correto para o Adobe Campaign quando o conteúdo é usado em um delivery dentro do Adobe Campaign
 
-1. No Adobe Campaign, crie seu delivery - selecione **Delivery de email com conteúdo AEM** e selecione a conta do AEM local, conforme apropriado, e confirme suas alterações.
+1. No Adobe Campaign, crie sua entrega - selecione **Entrega de email com conteúdo do AEM** e selecione a conta do AEM local, conforme apropriado, e confirme suas alterações.
 
    Na visualização HTML, as diferentes experiências dos componentes direcionados são incluídas no código de direcionamento do Adobe Campaign.
 

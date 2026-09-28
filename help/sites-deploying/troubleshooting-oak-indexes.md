@@ -11,16 +11,14 @@ feature: Administering
 role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
-source-wordcount: '1387'
-ht-degree: 0%
-
+source-wordcount: '1527'
+ht-degree: 2%
 ---
-
 # Solução de problemas de índices do Oak{#troubleshooting-oak-indexes}
 
 ## Reindexação lenta  {#slow-re-indexing}
 
-O processo de reindexação interna do AEM coleta dados do repositório e os armazena em índices Oak para oferecer suporte à consulta eficiente do conteúdo. Em circunstâncias excepcionais, o processo pode ficar lento ou até travado. Esta página atua como um guia de solução de problemas para ajudar a identificar se a indexação está lenta, encontrar a causa e resolver o problema.
+O processo de reindexação interna do AEM coleta dados do repositório e os armazena em índices Oak para dar suporte à consulta eficiente do conteúdo. Em circunstâncias excepcionais, o processo pode ficar lento ou até travado. Esta página atua como um guia de solução de problemas para ajudar a identificar se a indexação está lenta, encontrar a causa e resolver o problema.
 
 É importante distinguir entre a reindexação, que leva um tempo inadequadamente longo, e a reindexação, que leva um tempo longo, pois está indexando grandes quantidades de conteúdo. Por exemplo, o tempo necessário para indexar o conteúdo é dimensionado com a quantidade de conteúdo, portanto, repositórios de produção grandes demoram mais para reindexar do que repositórios de desenvolvimento pequenos.
 
@@ -42,9 +40,9 @@ A indexação lenta da detecção inicial requer a revisão dos `IndexStats` MBe
 
 Um desligamento forçado faz com que o AEM suspenda a indexação assíncrona por até 30 minutos após a reinicialização. E, normalmente, leva mais 15 minutos para concluir a primeira passagem de reindexação, para um total de cerca de 45 minutos (vinculando ao período de 45 minutos da [Detecção inicial](/help/sites-deploying/troubleshooting-oak-indexes.md#initial-detection)). Se a indexação for pausada após um desligamento forçado:
 
-1. Primeiro, determine se a instância do AEM foi desligada de maneira forçada (o processo AEM foi interrompido à força ou ocorreu uma falha de energia) e mais tarde reiniciada.
+1. Primeiro, determine se a instância do AEM foi encerrada de forma forçada (o processo do AEM foi encerrado à força ou ocorreu uma falha de energia) e reiniciada posteriormente.
 
-   * O [log de AEM](/help/sites-deploying/configure-logging.md) pode ser revisado para esta finalidade.
+   * O [log do AEM](/help/sites-deploying/configure-logging.md) pode ser revisado para esta finalidade.
 
 1. Se o desligamento forçado ocorrer, após a reinicialização, o AEM suspende automaticamente a reindexação por até 30 minutos.
 1. Aguarde aproximadamente 45 minutos para que o AEM retome as operações normais de indexação assíncrona.
@@ -55,11 +53,11 @@ Um desligamento forçado faz com que o AEM suspenda a indexação assíncrona po
 >
 >Para o AEM 6.1, verifique se o [AEM 6.1 CFP 11](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=pt-BR) está instalado.
 
-Em circunstâncias excepcionais, o pool de threads usado para gerenciar a indexação assíncrona pode ficar sobrecarregado. Para isolar o processo de indexação, um pool de threads pode ser configurado para impedir que outro trabalho do AEM interfira na capacidade da Oak de indexar conteúdo em tempo hábil. Nesses casos, faça o seguinte:
+Em circunstâncias excepcionais, o pool de threads usado para gerenciar a indexação assíncrona pode ficar sobrecarregado. Para isolar o processo de indexação, um pool de threads pode ser configurado para impedir que outros trabalhos do AEM interfiram na capacidade da Oak de indexar conteúdo em tempo hábil. Nesses casos, faça o seguinte:
 
 1. Defina um novo pool de threads isolado para o Apache Sling Scheduler usar para indexação assíncrona:
 
-   * Na instância de AEM afetada, navegue até AEM OSGi Web Console>OSGi>Configuration>Apache Sling Scheduler ou acesse https://&lt;host>:&lt;port>/system/console/configMgr (por exemplo, [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr))
+   * Na instância afetada do AEM, navegue até AEM OSGi Web Console>OSGi>Configuration>Apache Sling Scheduler ou acesse https://&lt;host>:&lt;port>/system/console/configMgr (por exemplo, [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr))
    * Adicione uma entrada ao campo &quot;Pools de threads permitidos&quot; com o valor de &quot;oak&quot;.
    * Para salvar as alterações, clique em **Salvar** no canto inferior direito.
 
@@ -67,11 +65,11 @@ Em circunstâncias excepcionais, o pool de threads usado para gerenciar a indexa
 
 1. Verifique se o novo pool de threads do Apache Sling Scheduler está registrado e é exibido no console da Web Status do Apache Sling Scheduler.
 
-   * Navegue até o console da Web AEM OSGi>Status>Sling Scheduler ou acesse https://&lt;host>:&lt;port>/system/console/status-slingscheduler (por exemplo, [http://localhost:4502/system/console/status-slingscheduler](http://localhost:4502/system/console/status-slingscheduler))
+   * Navegue até o AEM OSGi Web console>Status>Sling Scheduler ou acesse https://&lt;host>:&lt;port>/system/console/status-slingscheduler (por exemplo, [http://localhost:4502/system/console/status-slingscheduler](http://localhost:4502/system/console/status-slingscheduler))
    * Verifique se as seguintes entradas de pool existem:
 
-      * ApacheSlingoak
-      * ApacheSlingDefault
+     * ApacheSlingoak
+     * ApacheSlingDefault
 
    ![chlimage_1-120](assets/chlimage_1-120.png)
 
@@ -98,7 +96,7 @@ A reindexação pode ser considerada &quot;completamente paralisada&quot; sob du
 
 * A reindexação é lenta, a ponto de não ser relatado nenhum progresso significativo nos arquivos de log em relação ao número de nós percorridos.
 
-   * Por exemplo, se não houver mensagens no período de uma hora ou se o progresso estiver tão lento que leve uma semana ou mais para ser concluído.
+  * Por exemplo, se não houver mensagens no período de uma hora ou se o progresso estiver tão lento que leve uma semana ou mais para ser concluído.
 
 * A reindexação fica presa em um loop infinito se exceções repetidas aparecerem nos arquivos de log (por exemplo, `OutOfMemoryException`) no thread de indexação. A repetição de uma ou mais exceções idênticas no log indica que o Oak tenta indexar a mesma coisa repetidamente, mas falha no mesmo problema.
 
@@ -109,26 +107,26 @@ Para identificar e corrigir um processo de reindexação paralisado, faça o seg
    * Colete 5 minutos de despejo de thread, um despejo de thread a cada 2 segundos.
    * [Definir nível DEBUG e logs para os anexadores](/help/sites-deploying/configure-logging.md).
 
-      * *org.apache.jackrabbit.oak.plugins.index.AsyncIndexUpdate*
-      * *org.apache.jackrabbit.oak.plugins.index.IndexUpdate*
+     * *org.apache.jackrabbit.oak.plugins.index.AsyncIndexUpdate*
+     * *org.apache.jackrabbit.oak.plugins.index.IndexUpdate*
 
    * Coletar dados do MBean assíncrono `IndexStats`:
 
-      * Navegue até AEM OSGi Web Console>Main>JMX>IndexStat>async
+     * Navegue até o AEM OSGi Web Console>Main>JMX>IndexStat>async
 
-        ou vá para [http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats)
+       ou vá para [http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats)
 
    * Use o [modo de console do oak-run.jar](https://github.com/apache/jackrabbit-oak/tree/trunk/oak-run) para coletar os detalhes do que existe no nó * `/:async`*.
    * Colete uma lista de pontos de verificação do repositório usando o MBean `CheckpointManager`:
 
-      * AEM OSGi Web Console>Main>JMX>CheckpointManager>listCheckpoints()
+     * AEM OSGi Web Console>Main>JMX>CheckpointManager>listCheckpoints()
 
-        ou vá para [http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DSegment+node+store+checkpoint+management%2Ctype%3DCheckpointManager](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DSegment+node+store+checkpoint+management%2Ctype%3DCheckpointManager)
+       ou vá para [http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DSegment+node+store+checkpoint+management%2Ctype%3DCheckpointManager](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DSegment+node+store+checkpoint+management%2Ctype%3DCheckpointManager)
 
 1. Depois de coletar todas as informações descritas na Etapa 1, reinicie o AEM.
 
-   * Reiniciar o AEM pode resolver o problema se houver alta carga simultânea (estouro da fila de observação ou algo semelhante).
-   * Se uma reinicialização não resolver o problema, abra um problema no [Adobe Customer Care](https://experienceleague.adobe.com/pt-br?support-solution=General&support-tab=home#support) e forneça todas as informações coletadas na Etapa 1.
+   * Reiniciar o AEM pode resolver o problema se houver uma alta carga simultânea (estouro da fila de observação ou algo semelhante).
+   * Se uma reinicialização não resolver o problema, abra um problema no [Atendimento ao cliente da Adobe](https://experienceleague.adobe.com/?support-solution=General&support-tab=home#support) e forneça todas as informações coletadas na Etapa 1.
 
 ## Anular com segurança a reindexação assíncrona {#safely-aborting-asynchronous-re-indexing}
 
@@ -144,8 +142,8 @@ Para interromper com segurança a reindexação, siga estas etapas:
    * Navegue até o MBean IndexStats apropriado pelo console JMX, acessando AEM OSGi Web Console>Main>JMX ou https://&lt;host>:&lt;port>/system/console/jmx (por exemplo, [http://localhost:4502/system/console/jmx](http://localhost:4502/system/console/jmx))
    * Abra o MBean IndexStats com base na faixa de reindexação que você deseja parar ( `async`, `async-reindex` ou `fulltext-async`)
 
-      * Para identificar a faixa apropriada e, portanto, a instância MBean IndexStats, verifique a propriedade &quot;async&quot; dos Índices Oak. A propriedade &quot;async&quot; contém o nome da faixa: `async`, `async-reindex` ou `fulltext-async`.
-      * A faixa também está disponível ao acessar o AEM Index Manager na coluna &quot;Async&quot;. Para acessar o Gerenciador de índice, navegue até Operações>Diagnóstico>Gerenciador de índice.
+     * Para identificar a faixa apropriada e, portanto, a instância MBean IndexStats, verifique a propriedade &quot;async&quot; dos Índices Oak. A propriedade &quot;async&quot; contém o nome da faixa: `async`, `async-reindex` ou `fulltext-async`.
+     * A faixa também está disponível ao acessar o Gerenciador de índice da AEM na coluna &quot;Assíncrono&quot;. Para acessar o Gerenciador de índice, navegue até Operações>Diagnóstico>Gerenciador de índice.
 
    ![chlimage_1-121](assets/chlimage_1-121.png)
 
@@ -154,15 +152,15 @@ Para interromper com segurança a reindexação, siga estas etapas:
 
    * Ao reindexar um índice **existente**, defina a propriedade reindex como false
 
-      * `/oak:index/someExistingIndex@reindex=false`
+     * `/oak:index/someExistingIndex@reindex=false`
 
    * Ou então, para um índice **novo**:
 
-      * Defina a propriedade type como disabled
+     * Defina a propriedade type como disabled
 
-         * `/oak:index/someNewIndex@type=disabled`
+       * `/oak:index/someNewIndex@type=disabled`
 
-      * ou remova a definição do índice totalmente
+     * ou remova a definição do índice totalmente
 
    Confirmar as alterações no repositório ao concluir.
 
@@ -172,4 +170,4 @@ Para interromper com segurança a reindexação, siga estas etapas:
 
 ## Como evitar a reindexação lenta {#preventing-slow-re-indexing}
 
-É melhor reindexar durante períodos de silêncio (por exemplo, não durante uma grande assimilação de conteúdo) e, idealmente, durante as janelas de manutenção quando a carga do AEM é conhecida e controlada. Além disso, certifique-se de que a reindexação não ocorra durante outras atividades de manutenção.
+É melhor reindexar durante períodos de silêncio (por exemplo, não durante uma assimilação de conteúdo grande) e, idealmente, durante as janelas de manutenção, quando a carga do AEM é conhecida e controlada. Além disso, certifique-se de que a reindexação não ocorra durante outras atividades de manutenção.

@@ -1,28 +1,28 @@
 ---
 title: Criação do Adobe Campaign Forms no AEM
-description: O AEM permite criar e usar formulários que interagem com o Adobe Campaign em seu site. Campos específicos podem ser inseridos em seus formulários e mapeados para o banco de dados do Adobe Campaign.
+description: O AEM permite criar e usar formulários que interagem com o Adobe Campaign no seu site. Campos específicos podem ser inseridos em seus formulários e mapeados para o banco de dados do Adobe Campaign.
+
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
+
 exl-id: 3f9ed24e-c54b-4bd4-9212-eabc67bb540e
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '1227'
+source-wordcount: '1231'
 ht-degree: 0%
-
 ---
-
 # Criação do Adobe Campaign Forms no AEM{#creating-adobe-campaign-forms-in-aem}
 
-O AEM permite criar e usar formulários que interagem com o Adobe Campaign em seu site. Campos específicos podem ser inseridos em seus formulários e mapeados para o banco de dados do Adobe Campaign.
+O AEM permite criar e usar formulários que interagem com o Adobe Campaign no seu site. Campos específicos podem ser inseridos em seus formulários e mapeados para o banco de dados do Adobe Campaign.
 
 É possível gerenciar novas assinaturas de contatos, assinaturas canceladas e dados de perfil do usuário, tudo isso enquanto integra os dados dessas assinaturas ao banco de dados do Adobe Campaign.
 
-Para usar os formulários do Adobe Campaign no AEM, é necessário seguir estas etapas, descritas neste documento:
+Para usar o Adobe Campaign Forms no AEM, você precisa seguir estas etapas, descritas neste documento:
 
 1. Disponibilize um modelo.
 1. Crie um formulário.
@@ -42,7 +42,7 @@ O formulário é atualizado automaticamente com base no usuário. Consulte [Edit
 
 ## Disponibilizar um modelo {#making-a-template-available}
 
-Antes de criar formulários específicos para o Adobe Campaign, você deve disponibilizar os diferentes modelos no aplicativo AEM.
+Antes de criar formulários específicos do Adobe Campaign, você deve disponibilizar os diferentes modelos no aplicativo do AEM.
 
 Para fazer isso, consulte a [documentação sobre modelos](/help/sites-developing/page-templates-static.md#templateavailability).
 
@@ -81,7 +81,7 @@ O Forms dedicado ao Adobe Campaign tem componentes específicos. Esses component
 Esta seção só detalha links específicos para o Adobe Campaign. Para obter mais informações sobre uma visão geral de como usar formulários no Adobe Experience Manager, consulte [Componentes do modo de edição](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md).
 
 1. Navegue até o formulário que deseja editar.
-1. Na caixa de ferramentas, selecione **Página** > **Propriedades da Página...** e vá para a guia **Cloud Service** da janela pop-up.
+1. Na caixa de ferramentas, selecione **Página** > **Propriedades da Página...** e vá para a guia **Serviços da Nuvem** da janela pop-up.
 1. Adicione o serviço do Adobe Campaign clicando em **Adicionar serviço** e selecionando a configuração que corresponde à sua instância do Adobe Campaign na lista suspensa do serviço. Essa configuração é realizada ao configurar a conexão entre suas instâncias. Para obter mais informações, consulte [Conectando o AEM ao Adobe Campaign](/help/sites-administering/campaignonpremise.md#connecting-aem-to-adobe-campaign).
 
    >[!NOTE]
@@ -90,7 +90,7 @@ Esta seção só detalha links específicos para o Adobe Campaign. Para obter ma
 
 1. Acesse os parâmetros gerais do formulário usando o botão **Editar** localizado no início do formulário. A guia **Formulário** permite selecionar uma página de agradecimento para a qual o usuário será redirecionado após validar o formulário.
 
-   O formulário **Advanced** permite selecionar o tipo de formulário. O campo **Opções do Post** fornece a escolha entre três tipos de formulários do Adobe Campaign:
+   O formulário **Advanced** permite selecionar o tipo de formulário. O campo **Opções de publicação** fornece a escolha entre três tipos de formulários Adobe Campaign:
 
    * **Adobe Campaign: Salvar perfil**: permite criar ou atualizar um destinatário no Adobe Campaign (valor padrão).
    * **Adobe Campaign: Assinar Serviços**: permite gerenciar as assinaturas de um destinatário no Adobe Campaign.
@@ -98,7 +98,7 @@ Esta seção só detalha links específicos para o Adobe Campaign. Para obter ma
 
    O campo **Configuração de ação** permite especificar se você deseja ou não criar o perfil do destinatário no banco de dados do Adobe Campaign se ele ainda não existir. Para fazer isso, marque a opção **Criar usuário se não existir**.
 
-1. Adicione os componentes selecionados arrastando-os da caixa de ferramentas e soltando-os no formulário. Para obter mais informações sobre os componentes específicos disponíveis do Adobe Campaign, consulte [Componentes de forma do Adobe](/help/sites-classic-ui-authoring/classic-personalization-ac-components.md).
+1. Adicione os componentes selecionados arrastando-os da caixa de ferramentas e soltando-os no formulário. Para obter mais informações sobre os componentes específicos do Adobe Campaign disponíveis, consulte [Componentes de formulários do Adobe](/help/sites-classic-ui-authoring/classic-personalization-ac-components.md).
 
    ![chlimage_1-188](assets/chlimage_1-188.png)
 

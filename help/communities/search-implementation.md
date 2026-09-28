@@ -11,26 +11,24 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1158'
+source-wordcount: '1209'
 ht-degree: 3%
-
 ---
-
 # Search Essentials {#search-essentials}
 
 ## Visão geral {#overview}
 
-O recurso de pesquisa é um recurso essencial das comunidades Adobe Experience Manager (AEM). Além dos recursos de [pesquisa de plataforma AEM](../../help/sites-deploying/queries-and-indexing.md), a AEM Communities fornece a [API de pesquisa UGC](#ugc-search-api) para pesquisar conteúdo gerado pelo usuário (UGC). O UGC tem propriedades exclusivas, pois é inserido e armazenado separadamente de outro conteúdo AEM e dados do usuário.
+O recurso de pesquisa é um recurso essencial das comunidades do Adobe Experience Manager (AEM). Além dos recursos da [pesquisa de plataforma do AEM](../../help/sites-deploying/queries-and-indexing.md), a AEM Communities fornece a [API de pesquisa de UGC](#ugc-search-api) para pesquisar conteúdo gerado pelo usuário (UGC). O UGC tem propriedades exclusivas, pois é inserido e armazenado separadamente de outro conteúdo do AEM e dados do usuário.
 
 Para as Comunidades, as duas coisas geralmente pesquisadas são:
 
 * Conteúdo publicado por membros da comunidade
 
-   * Ele usa a API de pesquisa UGC do AEM Communities.
+  * Ele usa a API de pesquisa UGC do AEM Communities.
 
 * Usuários e grupos de usuários (dados do usuário)
 
-   * Ele usa os recursos de pesquisa da plataforma AEM.
+  * Ele usa os recursos de pesquisa da plataforma AEM.
 
 Esta seção da documentação é de interesse para desenvolvedores que estão criando componentes personalizados que criam ou gerenciam o UGC.
 
@@ -48,7 +46,7 @@ O [repositório comum de UGC](working-with-srp.md) é fornecido por um dos vári
 
 ### Pesquisas ASRP {#asrp-searches}
 
-Para [ASRP](asrp.md), o UGC está armazenado na nuvem Adobe. Embora o UGC não esteja visível no CRX, a [moderação](moderate-ugc.md) está disponível nos ambientes do autor e do Publish. O uso da [API de pesquisa UGC](#ugc-search-api) funciona para ASRP da mesma forma que para outros SRPs.
+Para [ASRP](asrp.md), o UGC é armazenado na nuvem do Adobe. Embora o UGC não esteja visível no CRX, a [moderação](moderate-ugc.md) está disponível nos ambientes do autor e de Publicação. O uso da [API de pesquisa UGC](#ugc-search-api) funciona para ASRP da mesma forma que para outros SRPs.
 
 No momento, não existem ferramentas para gerenciar pesquisas ASRP.
 
@@ -56,7 +54,7 @@ Ao criar propriedades personalizadas pesquisáveis, é necessário atender aos [
 
 ### Pesquisas MSRP {#msrp-searches}
 
-Para [MSRP](msrp.md), o UGC é armazenado no MongoDB configurado para usar Solr para pesquisa. O UGC não está visível no CRX, mas a [moderação](moderate-ugc.md) está disponível nos ambientes do autor e do Publish.
+Para [MSRP](msrp.md), o UGC é armazenado no MongoDB configurado para usar Solr para pesquisa. O UGC não está visível no CRX, mas a [moderação](moderate-ugc.md) está disponível nos ambientes do autor e de Publicação.
 
 Quanto ao MSRP e ao Solr:
 
@@ -71,17 +69,17 @@ Ao criar propriedades personalizadas pesquisáveis, é necessário atender aos [
 
 ### Pesquisas JSRP {#jsrp-searches}
 
-Para [JSRP](jsrp.md), o UGC está armazenado no [Oak](../../help/sites-deploying/platform.md) e é visível somente no repositório do Autor de AEM ou da instância do Publish em que foi inserido.
+Para [JSRP](jsrp.md), o UGC está armazenado no [Oak](../../help/sites-deploying/platform.md) e é visível somente no repositório da instância de Autor ou Publicação do AEM na qual foi inserido.
 
-Como o UGC é normalmente inserido no ambiente Publish, para sistemas de produção com vários editores, é necessário configurar um [cluster de publicação](topologies.md), não um farm de publicação, para que o conteúdo inserido fique visível de todos os editores.
+Como o UGC é normalmente inserido no ambiente de publicação, para sistemas de produção com vários editores, é necessário configurar um [cluster de publicação](topologies.md), não um farm de publicação, para que o conteúdo inserido fique visível de todos os editores.
 
-Para JSRP, o UGC inserido no ambiente do Publish nunca é visível no ambiente do autor. Portanto, todas as tarefas de [moderação](moderate-ugc.md) ocorrem no ambiente do Publish.
+Para JSRP, o UGC inserido no ambiente de publicação nunca é visível no ambiente de autor. Portanto, todas as tarefas de [moderação](moderate-ugc.md) ocorrem no ambiente de Publicação.
 
 Os recursos de pesquisa personalizados devem usar a [API de pesquisa UGC](#ugc-search-api).
 
 #### Indexação do Oak {#oak-indexing}
 
-Embora os índices Oak não sejam criados automaticamente para a pesquisa na plataforma AEM, a partir do AEM 6.2, eles foram adicionados para o AEM Communities para melhorar o desempenho e dar suporte para paginação ao apresentar resultados de pesquisa UGC.
+Embora os índices do Oak não sejam criados automaticamente para a pesquisa na plataforma do AEM, a partir do AEM 6.2, eles foram adicionados ao AEM Communities para melhorar o desempenho e dar suporte à paginação ao apresentar resultados de pesquisa de UGC.
 
 Se as propriedades personalizadas estiverem em uso e as pesquisas estiverem lentas, índices adicionais deverão ser criados para que as propriedades personalizadas tenham melhor desempenho. Para manter a portabilidade, siga os [requisitos de nomenclatura](#naming-of-custom-properties) ao criar propriedades personalizadas que possam ser pesquisadas.
 
@@ -92,7 +90,7 @@ O [Oak Index Manager](https://adobe-consulting-services.github.io/acs-aem-common
 * Uma exibição de índices existentes.
 * A capacidade de iniciar a reindexação.
 
-Para exibir os índices Oak existentes em [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md), o local é:
+Para exibir os índices Oak existentes no [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md), o local é:
 
 * `/oak:index/socialLucene`
 
@@ -160,8 +158,8 @@ Solr é um exemplo de uma linguagem de consulta que usa um schema.
 
 * Para tipos com vários valores, adicione &#39;s&#39; ao sufixo, por exemplo:
 
-   * `viewDate_dt`: propriedade de data única
-   * `viewDates_dts`: lista da propriedade de datas
+  * `viewDate_dt`: propriedade de data única
+  * `viewDates_dts`: lista da propriedade de datas
 
 ## Filtros {#filters}
 
@@ -171,11 +169,11 @@ A sintaxe de filtro para as lógicas AND e OR é expressa da seguinte maneira (m
 
 * Para especificar OU usar um parâmetro de filtro com valores separados por vírgulas:
 
-   * `filter=name eq 'Jennifer',name eq 'Jen'`
+  * `filter=name eq 'Jennifer',name eq 'Jen'`
 
 * Para especificar E usar vários parâmetros de filtro:
 
-   * `filter = name eq 'Jackson'&filter=message eq 'testing'`
+  * `filter = name eq 'Jackson'&filter=message eq 'testing'`
 
 A implementação padrão do [componente de Pesquisa](search.md) usa essa sintaxe como pode ser vista na URL que abre a página Resultados da Pesquisa no [guia Componentes da Comunidade](components-guide.md). Para experimentar, navegue até [http://localhost:4503/content/community-components/en/search.html](http://localhost:4503/content/community-components/en/search.html).
 
@@ -193,15 +191,15 @@ Os operadores de filtro são:
 É importante que o URL faça referência ao componente Comunidades (recurso) e não à página em que o componente é colocado:
 
 * Correto: componente do fórum
-   * `/content/community-components/en/forum/jcr:content/content/forum.social.json`
+  * `/content/community-components/en/forum/jcr:content/content/forum.social.json`
 * Incorreto: página do fórum
-   * `/content/community-components/en/forum.social.json`
+  * `/content/community-components/en/forum.social.json`
 
 ## Ferramentas SRP {#srp-tools}
 
 Há um projeto GitHub da Adobe Experience Cloud que contém:
 
-[Ferramentas SRP do AEM Communities](https://github.com/Adobe-Marketing-Cloud/aem-communities-srp-tools)
+[Ferramentas AEM Communities SRP](https://github.com/Adobe-Marketing-Cloud/aem-communities-srp-tools)
 
 Este repositório contém ferramentas para gerenciar dados no SRP.
 
