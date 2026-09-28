@@ -1,21 +1,22 @@
 ---
 title: Árvore de desempenho
+
 description: Saiba mais sobre as etapas a serem seguidas para solucionar problemas de desempenho no AEM.
+
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
+
 exl-id: f2f968b8-b21c-487d-bc0d-ed60903bc4bf
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1088'
+source-wordcount: '1340'
 ht-degree: 9%
-
 ---
-
 # Árvore de desempenho{#performance-tree}
 
 ## Escopo {#scope}
@@ -82,7 +83,7 @@ A análise começa na etapa 0. O objetivo é determinar qual entidade (Dispatche
   <tr>
    <td><strong>Etapa 5</strong></td>
    <td>O Dispatcher está tentando autenticar cada solicitação via AEM?</td>
-   <td>Verifique se o Dispatcher envia <code>HEAD</code> solicitações de autenticação ao AEM antes de entregar o recurso em cache. Procure por <code>HEAD</code> solicitações no AEM <code>access.log</code>. Para obter mais informações, consulte <a href="/help/sites-deploying/configure-logging.md">Log</a>.<br /> </td>
+   <td>Verifique se o Dispatcher envia <code>HEAD</code> solicitações à AEM para autenticação antes de entregar o recurso em cache. Procure por <code>HEAD</code> solicitações na AEM <code>access.log</code>. Para obter mais informações, consulte <a href="/help/sites-deploying/configure-logging.md">Log</a>.<br /> </td>
   </tr>
   <tr>
    <td><strong>Etapa 6</strong></td>
@@ -137,7 +138,7 @@ A análise começa na etapa 0. O objetivo é determinar qual entidade (Dispatche
   <tr>
    <td><strong>Etapa 16</strong></td>
    <td>Servidor de perfil</td>
-   <td><p>Para obter informações sobre as ferramentas de criação de perfil que podem ser usadas com AEM, consulte <a href="/help/sites-deploying/monitoring-and-maintaining.md#tools-for-monitoring-and-analyzing-performance">Ferramentas de Monitoramento e Análise de Desempenho</a>.<br /> </p> </td>
+   <td><p>Para obter informações sobre as ferramentas de criação de perfil que podem ser usadas com o AEM, consulte <a href="/help/sites-deploying/monitoring-and-maintaining.md#tools-for-monitoring-and-analyzing-performance">Ferramentas para Monitorar e Analisar Desempenho</a>.<br /> </p> </td>
   </tr>
   <tr>
    <td><strong>Etapa 17</strong></td>
@@ -232,7 +233,7 @@ A análise começa na etapa 0. O objetivo é determinar qual entidade (Dispatche
   </tr>
   <tr>
    <td><strong>Etapa 32</strong></td>
-   <td>Para descarregar o servidor AEM, use o gerenciamento de sessões no nível da Dispatcher</td>
+   <td>Para descarregar o servidor do AEM, use o gerenciamento de sessão no nível do Dispatcher</td>
    <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=pt-BR#enabling-secure-sessions-sessionmanagement">Ativar sessões seguras</a></p> </td>
   </tr>
   <tr>
@@ -257,7 +258,7 @@ A análise começa na etapa 0. O objetivo é determinar qual entidade (Dispatche
   </tr>
   <tr>
    <td><strong>Etapa 35</strong></td>
-   <td>Configurar Dispatcher</td>
+   <td>Configurar o Dispatcher</td>
    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=pt-BR">Configurando o Dispatcher</a><br /> </td>
   </tr>
   <tr>
@@ -266,13 +267,13 @@ A análise começa na etapa 0. O objetivo é determinar qual entidade (Dispatche
    <td><br />
     <ul>
      <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=pt-BR#invalidating-dispatcher-cache-from-the-authoring-environment">Invalidação de cache para o nível Autor;</a></li>
-     <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=pt-BR#invalidating-dispatcher-cache-from-a-publishing-instance">Invalidação de cache para a camada do Publish.</a></li>
+     <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=pt-BR#invalidating-dispatcher-cache-from-a-publishing-instance">Invalidação de cache para a camada de Publicação.</a></li>
     </ul> </td>
   </tr>
   <tr>
    <td><strong>Etapas 37 e 38</strong></td>
    <td>Carregamento lento</td>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2016/aem-web-performance.html?lang=pt-BR">Consulte a Sessão do Gem sobre o Desempenho da Web no AEM.</a><br /> </td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2016/aem-web-performance.html?lang=pt-BR">Consulte a Sessão Gem sobre o Desempenho da Web no AEM.</a><br /> </td>
   </tr>
   <tr>
    <td><strong>Etapa 39</strong></td>

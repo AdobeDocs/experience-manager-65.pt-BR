@@ -1,6 +1,6 @@
 ---
-title: Gerenciar aplicativos e tarefas do Forms na Caixa de entrada AEM
-description: A Caixa de entrada AEM permite iniciar fluxos de trabalho centrados no Forms por meio do envio de aplicativos e do gerenciamento de tarefas.
+title: Gerenciar aplicativos e tarefas do Forms na Caixa de entrada do AEM
+description: A Caixa de entrada do AEM permite iniciar fluxos de trabalho centrados no Forms por meio do envio de aplicativos e do gerenciamento de tarefas.
 contentOwner: vishgupt
 topic-tags: document_services, publish
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,14 +11,12 @@ feature: Adaptive Forms
 role: Admin, User, Developer
 source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
 workflow-type: tm+mt
-source-wordcount: '1069'
-ht-degree: 2%
-
+source-wordcount: '1125'
+ht-degree: 3%
 ---
+# Gerenciar aplicativos e tarefas do Forms na Caixa de entrada do AEM{#manage-forms-applications-and-tasks-in-aem-inbox}
 
-# Gerenciar aplicativos e tarefas do Forms na Caixa de entrada AEM{#manage-forms-applications-and-tasks-in-aem-inbox}
-
-Uma das muitas maneiras de iniciar ou acionar um fluxo de trabalho centrado no Forms é por meio de aplicativos na Caixa de entrada AEM. Para disponibilizar um workflow do Forms como aplicativo na Caixa de entrada, crie um aplicativo de workflow. Para obter mais informações sobre o aplicativo de fluxo de trabalho e outras maneiras de iniciar fluxos de trabalho do Forms, consulte [Iniciar um fluxo de trabalho centrado no Forms no OSGi](../../forms/using/aem-forms-workflow.md#launch).
+Uma das muitas maneiras de iniciar ou acionar um fluxo de trabalho centrado no Forms é por meio de aplicativos na Caixa de entrada do AEM. Para disponibilizar um workflow do Forms como aplicativo na Caixa de entrada, crie um aplicativo de workflow. Para obter mais informações sobre o aplicativo de fluxo de trabalho e outras maneiras de iniciar fluxos de trabalho do Forms, consulte [Iniciar um fluxo de trabalho centrado no Forms no OSGi](../../forms/using/aem-forms-workflow.md#launch).
 
 Além disso, a Caixa de entrada do AEM consolida notificações e tarefas de vários componentes do AEM, incluindo workflows da Forms. Quando um fluxo de trabalho de formulários contendo uma etapa Atribuir tarefa é acionado, o aplicativo associado é listado como uma tarefa na Caixa de entrada do destinatário. Se o destinatário for um grupo, a tarefa aparecerá na Caixa de entrada de todos os membros do grupo até que um indivíduo reclame ou delegue a tarefa.
 
@@ -28,7 +26,7 @@ Em resumo, a Caixa de entrada permite criar um aplicativo e gerenciar tarefas at
 
 >[!NOTE]
 >
->Você deve ser membro do grupo de usuários do fluxo de trabalho para usar a Caixa de entrada AEM.
+>Você deve ser membro do grupo de fluxo de trabalho-usuários para poder usar a Caixa de entrada do AEM.
 
 ## Criar aplicativo {#create-application}
 
@@ -104,14 +102,14 @@ A barra de ferramentas Ações mostra todas as opções disponíveis para a tare
 
 A Caixa de entrada do AEM exibe somente tarefas ativas. Tarefas concluídas não aparecem na lista. No entanto, você pode usar os filtros da Caixa de entrada para filtrar tarefas com base em vários parâmetros, como tipo de tarefa, status e datas de início e término. Para exibir tarefas concluídas:
 
-1. Na Caixa de Entrada do AEM, selecione ![alternar-painel-lateral1](assets/toggle-side-panel1.png) para abrir o seletor de filtros.
+1. Na Caixa de Entrada do AEM, selecione ![ativar/desativar painel lateral1](assets/toggle-side-panel1.png) para abrir o seletor de filtros.
 1. Selecione a opção **[!UICONTROL Status da tarefa]** e selecione **[!UICONTROL Concluído]**. Todas as tarefas concluídas são exibidas.
 
    ![filtro](assets/filter.png)
 
 1. Selecione uma tarefa e clique em **[!UICONTROL Abrir]**.
 
-A tarefa é aberta para exibir o documento ou o formulário adaptável associado à tarefa. Para formulários adaptáveis, a tarefa exibe o formulário adaptável somente leitura ou seu documento de registro de PDF, conforme configurado na guia Formulário/Documento da [etapa de fluxo de trabalho Atribuir tarefa](/help/sites-developing/workflows-step-ref.md).
+A tarefa é aberta para exibir o documento ou o formulário adaptável associado à tarefa. Para formulários adaptáveis, a tarefa exibe o formulário adaptável somente leitura ou seu documento de registro do PDF, conforme configurado na guia Formulário/Documento da [etapa de fluxo de trabalho Atribuir tarefa](/help/sites-developing/workflows-step-ref.md).
 
 A seção de detalhes da tarefa exibe informações como ação tomada, status da tarefa, data inicial e data final.
 
@@ -123,9 +121,9 @@ A guia **[!UICONTROL Detalhes do Fluxo de Trabalho]** mostra cada etapa do fluxo
 
 ## Resolução de problemas {#troubleshooting-workflows}
 
-### Não é possível exibir itens relacionados ao fluxo de trabalho do AEM na caixa de entrada AEM {#unable-to-see-aem-worklow-items}
+### Não é possível exibir itens relacionados ao fluxo de trabalho do AEM na caixa de entrada do AEM {#unable-to-see-aem-worklow-items}
 
-Um proprietário de modelo de fluxo de trabalho não pode exibir itens relacionados ao Fluxo de trabalho do AEM na caixa de entrada AEM. Para resolver o problema, adicione os índices listados abaixo ao repositório AEM e recrie o índice.
+Um proprietário de modelo de fluxo de trabalho não pode exibir itens relacionados ao Fluxo de trabalho do AEM na caixa de entrada do AEM. Para resolver o problema, adicione os índices listados abaixo ao repositório do AEM e recrie o índice.
 
 1. Use um dos métodos a seguir para adicionar índices:
 
@@ -140,7 +138,7 @@ Um proprietário de modelo de fluxo de trabalho não pode exibir itens relaciona
      | allowExplicitSharing | allowExplicitSharing | BOOLEANO |
 
 
-   * Implante os índices por meio de um pacote AEM. Você pode usar um projeto [Arquétipo AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=pt-BR) para criar um pacote AEM implantável. Use o seguinte código de amostra para adicionar índices a um projeto do Arquétipo AEM:
+   * Implante os índices por meio de um pacote do AEM. Você pode usar um projeto do [Arquétipo do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=pt-BR) para criar um pacote do AEM implantável. Use o código de amostra a seguir para adicionar índices a um projeto do Arquétipo do AEM:
 
    ```Java
       .property("sharedWith", "sharedWith").type(TYPENAME_STRING).propertyIndex()

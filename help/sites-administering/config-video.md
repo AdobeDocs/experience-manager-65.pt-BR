@@ -11,20 +11,18 @@ feature: Administering
 role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '479'
+source-wordcount: '534'
 ht-degree: 0%
-
 ---
-
 # Configurar o componente de Vídeo {#configure-the-video-component}
 
 O [componente de Vídeo](/help/sites-authoring/default-components-foundation.md#video) permite que você coloque um ativo de vídeo predefinido e pronto para uso na sua página.
 
-Para que ocorra a transcodificação adequada, um administrador instala o FFmpeg separadamente. Consulte [Instalar FFmpeg e configurar AEM](#install-ffmpeg). Os administradores também [configuram perfis de vídeo](#configure-video-profiles) para usar com elementos HTML5.
+Para que ocorra a transcodificação adequada, um administrador instala o FFmpeg separadamente. Consulte [Instalar FFmpeg e configurar AEM](#install-ffmpeg). Os administradores também [configuram perfis de vídeo](#configure-video-profiles) para usar com elementos do HTML5.
 
 >[!CAUTION]
 >
->Esse componente de base foi descontinuado. A Adobe recomenda usar o [Componente de Incorporação dos Componentes Principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/embed.html?lang=pt-BR).
+>Esse componente de base foi descontinuado. Em vez disso, a Adobe recomenda usar o [Componente de Incorporação dos Componentes Principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/embed.html?lang=pt-BR).
 
 >[!CAUTION]
 >
@@ -32,7 +30,7 @@ Para que ocorra a transcodificação adequada, um administrador instala o FFmpeg
 
 ## Configurar perfis de vídeo {#configure-video-profiles}
 
-Para o uso de elementos HTML5, defina perfis de vídeo. Os escolhidos aqui são usados em ordem. Para acessar, use o [Modo de Design](/help/sites-authoring/default-components-designmode.md) (somente a interface clássica) e selecione a guia **[!UICONTROL Perfis]**:
+Para usar elementos do HTML5, defina perfis de vídeo. Os escolhidos aqui são usados em ordem. Para acessar, use o [Modo de Design](/help/sites-authoring/default-components-designmode.md) (somente a interface clássica) e selecione a guia **[!UICONTROL Perfis]**:
 
 ![chlimage_1-317](assets/chlimage_1-317.png)
 
@@ -84,4 +82,4 @@ Para **configurar o AEM**, siga estas etapas:
 
 >[!NOTE]
 >
->As alterações nos modelos de fluxo de trabalho predefinidos não são preservadas ao atualizar a instância do AEM. A Adobe recomenda copiar os modelos de fluxo de trabalho modificados antes de editá-los. Por exemplo, copie o modelo pronto para uso [!UICONTROL Ativo de atualização do DAM] antes de editar a etapa de Transcodificação do FFmpeg no modelo [!UICONTROL Ativo de atualização do DAM] para escolher nomes de perfil de vídeo existentes antes da atualização. Em seguida, é possível sobrepor o nó `/apps` para permitir que o AEM recupere as alterações personalizadas no modelo pronto para uso.
+>As alterações nos modelos de fluxo de trabalho predefinidos não são preservadas ao atualizar a instância do AEM. A Adobe recomenda copiar os modelos de fluxo de trabalho modificados antes de editá-los. Por exemplo, copie o modelo pronto para uso [!UICONTROL Ativo de atualização do DAM] antes de editar a etapa de Transcodificação do FFmpeg no modelo [!UICONTROL Ativo de atualização do DAM] para escolher nomes de perfil de vídeo existentes antes da atualização. Em seguida, você pode sobrepor o nó `/apps` para permitir que o AEM recupere as alterações personalizadas para o modelo pronto para uso.

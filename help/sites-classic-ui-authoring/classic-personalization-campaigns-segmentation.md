@@ -11,11 +11,9 @@ feature: Authoring,Personalization
 role: User
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: '556'
 ht-degree: 49%
-
 ---
-
 # Noções sobre segmentação{#understanding-segmentation}
 
 A segmentação é uma consideração importante ao criar uma campanha. Normalmente, é necessário ter segmentos já definidos antes de iniciar a campanha.
@@ -59,7 +57,7 @@ Ao discutir segmentação, a seguinte terminologia é usada:
 * Receita
 * Tamanho da família
 * Estado civil
-* Sexo
+* Gênero
 * Local
 
 **Características derivadas**

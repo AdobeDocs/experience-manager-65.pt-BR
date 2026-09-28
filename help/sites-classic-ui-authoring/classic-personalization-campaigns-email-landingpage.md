@@ -1,10 +1,14 @@
 ---
 title: Criação de uma página inicial efetiva de informativo
+
 description: Uma página de aterrissagem eficaz do informativo ajuda você a obter o máximo de pessoas possível para se inscrever no seu informativo (ou outra campanha de marketing por email). Você pode usar as informações coletadas nas inscrições do seu boletim informativo para obter leads.
+
+
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
+
 docset: aem65
 exl-id: c2fbf858-8815-426e-a2e5-f92bcf909ad0
 solution: Experience Manager, Experience Manager Sites
@@ -12,11 +16,9 @@ feature: Authoring,Personalization
 role: User
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '596'
+source-wordcount: '612'
 ht-degree: 0%
-
 ---
-
 # Criação de uma página inicial efetiva de informativo{#creating-an-effective-newsletter-landing-page}
 
 Uma página de aterrissagem eficaz do informativo ajuda você a obter o máximo de pessoas possível para se inscrever no seu informativo (ou outra campanha de marketing por email). Você pode usar as informações coletadas nas inscrições do seu boletim informativo para obter leads.
@@ -35,7 +37,7 @@ Para criar uma landing page efetiva do boletim informativo, faça o seguinte:
 
 ## Criação de uma lista para o informativo {#creating-a-list-for-the-newsletter}
 
-Geometrixx Crie uma lista, por exemplo, **Informativo**, no MCM para o informativo que as pessoas devem assinar. A criação de listas está descrita em [Criação de listas](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingnewlists).
+Crie uma lista, por exemplo, **Informativo do Geometrixx**, no MCM para o informativo ao qual as pessoas devem se inscrever. A criação de listas está descrita em [Criação de listas](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingnewlists).
 
 O exemplo a seguir mostra uma lista:
 
@@ -43,7 +45,7 @@ O exemplo a seguir mostra uma lista:
 
 ## Criar um formulário de inscrição {#create-a-sign-up-form}
 
-Crie um formulário de registro de boletim informativo que permita que os usuários assinem tags. O site de exemplo do Geometrixx fornece uma página de informativo na barra de ferramentas do Geometrixx, onde você pode criar o formulário.
+Crie um formulário de registro de boletim informativo que permita que os usuários assinem tags. O site do Geometrixx de exemplo fornece uma página de informativo na barra de ferramentas do Geometrixx, onde você pode criar o formulário.
 
 Para criar seu próprio formulário de informativo, consulte informações sobre a criação de formulários na [documentação do Forms](/help/sites-authoring/default-components.md#form). O informativo usa as tags da Biblioteca de tags. Para adicionar outras marcas, consulte [Administração de Marcas](/help/sites-authoring/tags.md#tagadministration).
 
@@ -65,7 +67,7 @@ O exemplo a seguir é um formulário criado em https://localhost:4502/cf#/conten
 
 ### Criando uma página de agradecimento {#creating-a-thank-you-page}
 
-Quando os usuários clicarem em **Assinar agora**, você desejará que uma página de agradecimento seja aberta automaticamente. Crie a página de agradecimento na página do informativo do Geometrixx. Depois de criar o formulário de informativo, edite o componente de Formulário e adicione o caminho à página de agradecimento.
+Quando os usuários clicarem em **Assinar agora**, você desejará que uma página de agradecimento seja aberta automaticamente. Crie a página Thank you na página Geometrixx Newsletter. Depois de criar o formulário de informativo, edite o componente de Formulário e adicione o caminho à página de agradecimento.
 
 O envio da solicitação leva o usuário para uma página **Obrigado**, após a qual ele receberá um email. Esta página de agradecimento foi criada em /content/geometrixx/en/toolbar/newsletter/thank_you.
 

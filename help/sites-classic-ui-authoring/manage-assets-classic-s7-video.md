@@ -5,17 +5,16 @@ contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: authoring
 content-type: reference
+
 exl-id: c540aa49-9981-4e8c-97df-972085b26490
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '1662'
+source-wordcount: '1725'
 ht-degree: 1%
-
 ---
-
 # Vídeo{#video}
 
 O Assets fornece um gerenciamento centralizado de ativos de vídeo, em que você pode fazer upload de vídeos diretamente no Assets para codificação automática no Dynamic Media Classic e acessar vídeos do Dynamic Media Classic diretamente do Assets para criação de página.
@@ -34,7 +33,7 @@ O processo de codificação de vídeo padrão é baseado no uso da integração 
 
 Habilitar e configurar a integração do Dynamic Media Classic não remove nem desativa automaticamente essas duas etapas do fluxo de trabalho do fluxo de trabalho de assimilação pronto para uso do [!UICONTROL Ativo de atualização do DAM]. Se você já usa a codificação de vídeo baseada em FFMPEG no Adobe Experience Manager, é provável que tenha o FFMPEG instalado em seus ambientes de criação. Nesse caso, um novo vídeo assimilado usando o Experience Manager Assets é codificado duas vezes: uma vez do codificador FFMPEG e outra da integração do Dynamic Media Classic.
 
-Se você tiver a codificação de vídeo baseada em FFMPEG no Experience Manager configurada e o FFMPEG instalado, o Adobe recomenda remover os dois fluxos de trabalho FFMPEG dos fluxos de trabalho do [!UICONTROL Ativo de atualização do DAM].
+Se você tiver a codificação de vídeo baseada em FFMPEG no Experience Manager configurada e o FFMPEG instalado, a Adobe recomenda remover os dois fluxos de trabalho FFMPEG dos seus fluxos de trabalho do [!UICONTROL Ativo de atualização do DAM].
 
 ### Formatos compatíveis {#supported-formats}
 
@@ -52,9 +51,9 @@ A decisão sobre onde carregar seus ativos de vídeo depende do seguinte:
 
 Se a resposta for &quot;sim&quot; a uma ou ambas as perguntas, carregue o vídeo diretamente no Adobe DAM. Se a resposta for &quot;não&quot; às duas perguntas, carregue o vídeo diretamente no Dynamic Media Classic. O fluxo de trabalho para cada cenário é descrito na seção a seguir.
 
-#### Se você estiver carregando o vídeo diretamente no Adobe Assets {#if-you-are-uploading-your-video-directly-to-adobe-assets}
+#### Se você estiver carregando seu vídeo diretamente no Adobe Assets {#if-you-are-uploading-your-video-directly-to-adobe-assets}
 
-Se precisar de um fluxo de trabalho ou controle de versão para seus ativos, você deve fazer upload para o Adobe Assets primeiro. O fluxo de trabalho recomendado é o seguinte:
+Se precisar de um fluxo de trabalho ou controle de versão para seus ativos, faça upload para o Adobe Assets primeiro. O fluxo de trabalho recomendado é o seguinte:
 
 1. Faça upload do ativo de vídeo no Adobe Assets e codifique e publique automaticamente no Dynamic Media Classic.
 1. No Experience Manager, acesse ativos de vídeo no WCM na guia **[!UICONTROL Filmes]** do Localizador de conteúdo.
@@ -70,7 +69,7 @@ Se não precisar de um fluxo de trabalho ou controle de versão para seus ativos
 
 ### Configurar integração com o Dynamic Media Classic Video {#configuring-integration-with-scene-video}
 
-1. Em **[!UICONTROL Cloud Service]**, navegue até a configuração do **[!UICONTROL Dynamic Media Classic]** e selecione **[!UICONTROL Editar]**.
+1. No **[!UICONTROL Cloud Services]**, navegue até a configuração do **[!UICONTROL Dynamic Media Classic]** e selecione **[!UICONTROL Editar]**.
 1. Selecione a guia **[!UICONTROL Vídeo]**.
 
    >[!NOTE]
@@ -83,22 +82,22 @@ Se não precisar de um fluxo de trabalho ou controle de versão para seus ativos
    >
    >Para obter mais informações sobre o que significam predefinições de vídeo, consulte [Predefinições de vídeo para codificação de arquivos de vídeo](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html?lang=pt-BR#video-presets-for-encoding-video-files).
    >
-   >A Adobe recomenda que você selecione os dois conjuntos de vídeos adaptáveis ao configurar as predefinições universais ou selecione a opção **[!UICONTROL Codificação de vídeo adaptável]**.
+   >A Adobe recomenda que você selecione ambos os conjuntos de vídeos adaptáveis ao configurar as predefinições universais ou selecione a opção **[!UICONTROL Codificação de vídeo adaptável]**.
 
 1. Os perfis de codificação selecionados são aplicados automaticamente a todos os vídeos carregados na pasta de destino do CQ DAM que você configurou para esta configuração de nuvem do Dynamic Media Classic. É possível definir várias configurações de nuvem do Dynamic Media Classic com pastas de destino diferentes para aplicar perfis de codificação diferentes, conforme necessário.
 
 ### Atualização de predefinições do visualizador e de codificação {#updating-viewer-and-encoding-presets}
 
-Atualize as predefinições do visualizador e de codificação para vídeo no Experience Manager se as predefinições tiverem sido atualizadas no Dynamic Media Classic. Nesse caso, navegue até a configuração do Dynamic Media Classic na configuração da nuvem e selecione **Atualizar as predefinições de visualizador e codificação**.
+Atualize as predefinições do visualizador e de codificação para vídeos no Experience Manager se as predefinições tiverem sido atualizadas no Dynamic Media Classic. Nesse caso, navegue até a configuração do Dynamic Media Classic na configuração da nuvem e selecione **Atualizar as predefinições de visualizador e codificação**.
 
 ![chlimage_1-131](assets/chlimage_1-131.png)
 
 ### Fazer upload do vídeo de origem principal {#uploading-your-master-video}
 
-Para carregar o vídeo de origem principal no Dynamic Media Classic a partir do Adobe DAM:
+Para fazer upload do vídeo de origem principal no Dynamic Media Classic a partir do Adobe DAM:
 
 1. Navegue até a pasta de destino do CQ DAM, na qual você definiu a configuração da nuvem com perfis de codificação do Dynamic Media Classic.
-1. Selecione **[!UICONTROL Carregar]** para carregar o vídeo de origem primária. O carregamento e a codificação de vídeos estão concluídos após a conclusão do fluxo de trabalho do [!UICONTROL Ativo de atualização do DAM] e da marca de seleção do **[!UICONTROL Publish para Dynamic Media Classic]**.
+1. Selecione **[!UICONTROL Carregar]** para carregar o vídeo de origem primária. O carregamento e a codificação de vídeos estão concluídos depois que o fluxo de trabalho [!UICONTROL Ativo de atualização do DAM] está concluído e **[!UICONTROL Publicar no Dynamic Media Classic]** tem uma marca de seleção.
 
    >[!NOTE]
    >
@@ -110,7 +109,7 @@ Para carregar o vídeo de origem principal no Dynamic Media Classic a partir do 
 
 Ao usar o Experience Manager, você tem acesso ao componente de Vídeo disponível no Sites e ao componente de Vídeo do Dynamic Media Classic. Esses componentes não são intercambiáveis.
 
-O componente de vídeo do Dynamic Media Classic só funciona para vídeos do Dynamic Media Classic. O componente de base funciona com vídeos armazenados em Experience Manager (usando ffmpeg) e vídeos do Dynamic Media Classic.
+O componente de vídeo do Dynamic Media Classic só funciona para vídeos do Dynamic Media Classic. O componente de base funciona com vídeos armazenados no Experience Manager (usando ffmpeg) e em vídeos do Dynamic Media Classic.
 
 A matriz a seguir explica quando você deve usar qual componente:
 
@@ -118,20 +117,20 @@ A matriz a seguir explica quando você deve usar qual componente:
 
 >[!NOTE]
 >
->Pronto para uso, o componente de vídeo do Dynamic Media Classic usa o perfil de vídeo universal. Entretanto, é possível obter o reprodutor de vídeo baseado em HTML para uso pelo Experience Manager. No Dynamic Media Classic, copie o código incorporado do reprodutor de vídeo HTML5 pronto para uso e coloque-o na página Experience Manager.
+>Pronto para uso, o componente de vídeo do Dynamic Media Classic usa o perfil de vídeo universal. No entanto, você pode obter o reprodutor de vídeo baseado em HTML5 para uso do Experience Manager. No Dynamic Media Classic, copie o código incorporado do reprodutor de vídeo HTML5 pronto para uso e coloque-o na página do Experience Manager.
 >
 
 ## Componente de vídeo do Experience Manager {#aem-video-component}
 
 Mesmo que o uso do componente de Vídeo do Dynamic Media Classic seja recomendado para visualizar vídeos do Dynamic Media Classic, esta seção descreve o uso de vídeos do Dynamic Media Classic com o [!UICONTROL Componente de Vídeo de Base] no Experience Manager para integridade.
 
-### Comparação entre Experience Manager Video e Dynamic Media Classic Video {#aem-video-and-scene-video-comparison}
+### Comparação entre o Experience Manager Video e o Dynamic Media Classic Video {#aem-video-and-scene-video-comparison}
 
-A tabela a seguir fornece uma comparação de alto nível de recursos compatíveis entre o componente de Vídeo de base do Experience Manager e o componente de Vídeo do Dynamic Media Classic:
+A tabela a seguir fornece uma comparação de alto nível de recursos compatíveis entre o componente de Vídeo do Experience Manager Foundation e o componente de Vídeo do Dynamic Media Classic:
 
 |   | Vídeo do Experience Manager Foundation | Vídeo do Dynamic Media Classic |
 |---|---|---|
-| Abordagem | HTML5 primeira abordagem. O Flash é usado somente para fallback não HTML 5. | Flash na maioria dos desktops. O HTML5 é usado para dispositivos móveis e tablets. |
+| Abordagem | Primeira abordagem do HTML5. O Flash é usado somente para fallback que não seja do HTML5. | Flash na maioria dos desktops. O HTML5 é usado para dispositivos móveis e tablets. |
 | Entrega | Progressivo | Streaming adaptável |
 | Rastreamento | Sim | Sim |
 | Extensibilidade | Sim | Não |
@@ -162,7 +161,7 @@ As várias codificações de vídeo são criadas de acordo com as predefiniçõe
    |---|---|
    | Configuração da nuvem do Dynamic Media Classic | A configuração da nuvem a ser usada para as predefinições de codificação. |
    | Predefinição de codificação do Dynamic Media Classic | A predefinição de codificação para mapear esse perfil de vídeo. |
-   | Tipo de vídeo HTML5 | Essa propriedade permite que você defina o valor da propriedade type do elemento de fonte de vídeo HTML5. Essas informações não são fornecidas pelas predefinições de codificação do Dynamic Media Classic, mas são necessárias para renderizar corretamente os vídeos usando o elemento de vídeo HTML5. Uma lista de formatos comuns é fornecida, mas pode ser substituída por outros formatos. |
+   | Tipo de vídeo HTML5 | Essa propriedade permite que você defina o valor da propriedade type do elemento de fonte de vídeo do HTML5. Essas informações não são fornecidas pelas predefinições de codificação do Dynamic Media Classic, mas são necessárias para renderizar corretamente os vídeos usando o elemento de vídeo HTML5. Uma lista de formatos comuns é fornecida, mas pode ser substituída por outros formatos. |
 
    Repita essa etapa para todas as predefinições de codificação selecionadas na configuração da nuvem que você deseja usar no componente de vídeo.
 
@@ -179,7 +178,7 @@ O componente de vídeo de base deve saber quais perfis de vídeo usar para criar
 >As alterações feitas no design exigem a ativação do design para entrar em vigor na publicação.
 
 1. Abra a caixa de diálogo de design do componente de vídeo de base e altere para a guia **[!UICONTROL Perfis]**. Em seguida, exclua os perfis prontos para uso e adicione os novos perfis de vídeo do Dynamic Media Classic. A ordem da lista de perfis na caixa de diálogo de design também define a ordem do elemento de fontes de vídeo durante a renderização.
-1. Para navegadores não compatíveis com o HTML5, o componente de Vídeo permite configurar um fallback flash. Abra a caixa de diálogo de design dos componentes de vídeo e altere para a guia **[!UICONTROL Flash]**. Defina as configurações do flash player e atribua um perfil de fallback para o flash player.
+1. Para navegadores não compatíveis com HTML5, o componente de Vídeo permite configurar um fallback flash. Abra a caixa de diálogo de design dos componentes de vídeo e altere para a guia **[!UICONTROL Flash]**. Defina as configurações do flash player e atribua um perfil de fallback para o flash player.
 
 #### Lista de verificação {#checklist}
 
