@@ -132,7 +132,7 @@ O resultado é uma instância de [Provedor e Aplicativo OAuth do Adobe Granite](
 
 ### Provedor OAuth do AEM Communities Facebook {#aem-communities-facebook-oauth-provider}
 
-O provedor AEM Communities estende a instância [Aplicativo e Provedor ](#adobe-granite-oauth-application-and-provider) do Adobe Granite OAuth.
+O provedor AEM Communities estende a instância [Aplicativo e Provedor &#x200B;](#adobe-granite-oauth-application-and-provider) do Adobe Granite OAuth.
 
 Esse provedor exigirá edição para:
 
