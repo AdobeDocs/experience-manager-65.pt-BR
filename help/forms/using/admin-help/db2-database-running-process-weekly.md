@@ -1,6 +1,6 @@
 ---
-title: 'Banco de dados DB2&reg;: Execução semanal de um processo'
-description: Saiba como você pode melhorar o desempenho do banco de dados do AEM Forms DB2&reg;.
+title: 'Banco de dados DB2&reg;: execução semanal de um processo'
+description: Saiba como você pode melhorar o desempenho do seu banco de dados do AEM Forms DB2&reg;.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_the_aem_forms_database
@@ -11,11 +11,9 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '148'
+source-wordcount: '149'
 ht-degree: 0%
-
 ---
-
 # Banco de dados DB2®: execução semanal de um processo{#db-database-running-a-process-weekly}
 
 Se o seu banco de dados AEM Forms DB2® começar a ser executado lentamente, a execução semanal do seguinte processo pode melhorar seu desempenho:

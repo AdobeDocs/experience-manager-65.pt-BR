@@ -1,6 +1,6 @@
 ---
 title: Conjuntos de rotação
-description: Saiba como criar um conjunto de rotação no Dynamic Media para simular o ato do mundo real de girar um objeto e visualizá-lo de qualquer ângulo para que você possa ver os detalhes.
+description: Saiba como criar um conjunto de rotação no Dynamic Media para simular o ato real de girar um objeto e visualizá-lo de qualquer ângulo para que você possa ver os detalhes.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
@@ -12,11 +12,9 @@ exl-id: 758ad754-15de-4e72-9b7d-ab49c51d7d4f
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '2004'
+source-wordcount: '2038'
 ht-degree: 8%
-
 ---
-
 # Conjuntos de rotação{#spin-sets}
 
 Um Conjunto de rotação simula o ato do mundo real de virar um objeto para examiná-lo. Os Conjuntos de rotação permitem a visualização de itens de qualquer ângulo, obtendo os principais detalhes visuais de qualquer ângulo.
@@ -31,7 +29,7 @@ Os conjuntos de rotação são designados por um banner com a palavra **[!UICONT
 >
 >Para obter informações sobre a interface do usuário do Assets, consulte [Gerenciar ativos](/help/assets/manage-assets.md).
 
-Ao criar um Conjunto de rotação, o Adobe recomenda a seguinte prática recomendada e impõe os seguintes limites:
+Ao criar um Conjunto de rotação, a Adobe recomenda a seguinte prática recomendada e impõe os seguintes limites:
 
 | Tipo de limite | Prática recomendada | Limite imposto |
 | --- | --- | --- |
@@ -57,7 +55,7 @@ Para começar a usar rapidamente os Conjuntos de rotação, siga estas etapas:
 
    >[!NOTE]
    >
-   >Também é possível criar conjuntos de rotação automaticamente por meio de [predefinições de conjuntos em lotes](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets). **Importante:** os conjuntos em lotes são criados pelo IPS (Sistema de Produção de Imagens) como parte da assimilação de ativos e estão disponíveis somente no modo Dynamic Media - Scene7.
+   >Também é possível criar conjuntos de rotação automaticamente por meio de [predefinições de conjuntos em lotes](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets). **Importante:** os conjuntos em lotes são criados pelo IPS (Sistema de Produção de Imagem) como parte da assimilação de ativos e estão disponíveis apenas no modo Dynamic Media - Scene7.
 
 1. Configure [predefinições do Visualizador de conjunto de rotação](/help/assets/managing-viewer-presets.md), conforme necessário.
 
@@ -75,7 +73,7 @@ Para começar a usar rapidamente os Conjuntos de rotação, siga estas etapas:
 
    Selecione o Conjunto de rotação e você pode visualizá-lo. Gire o grupo de rotação. Você pode escolher visualizadores diferentes no menu **[!UICONTROL Visualizadores]**, disponível no menu suspenso do painel esquerdo.
 
-1. [Publish um Conjunto de Rotação](/help/assets/publishing-dynamicmedia-assets.md).
+1. [Publicar um Conjunto de Rotação](/help/assets/publishing-dynamicmedia-assets.md).
 
    A publicação de um Conjunto de rotação ativa o URL e a Cadeia de caracteres incorporada. Além disso, você deve [publicar a predefinição do visualizador](/help/assets/managing-viewer-presets.md).
 
@@ -99,10 +97,10 @@ Consulte [Dynamic Media - Formatos de imagem de varredura compatíveis](/help/as
 
 ### Diretrizes para captura de imagens para seu Spin Set {#guidelines-for-shooting-spin-set-images}
 
-Veja a seguir algumas práticas recomendadas para imagens do conjunto de rotação. Em geral, quanto mais imagens você tiver em um Conjunto de rotação, melhor será o efeito de rotação da imagem. No entanto, a inclusão de muitas imagens no conjunto também aumenta a quantidade de tempo que as imagens levam para serem carregadas. O Experience Manager recomenda estas diretrizes para fotografar imagens para uso em Conjuntos de rotação:
+Veja a seguir algumas práticas recomendadas para imagens do conjunto de rotação. Em geral, quanto mais imagens você tiver em um Conjunto de rotação, melhor será o efeito de rotação da imagem. No entanto, a inclusão de muitas imagens no conjunto também aumenta a quantidade de tempo que as imagens levam para serem carregadas. A Experience Manager recomenda estas diretrizes para fotografar imagens para uso em conjuntos de rotação:
 
 * No mínimo, use 8 a 12 imagens em um conjunto de rotação unidimensional e 16 a 24 imagens em um Conjunto de rotação bidimensional. É necessário um mínimo de 8 imagens para girar 360 graus. Os Conjuntos de rotação unidimensionais são mais comuns, pois criar Conjuntos de rotação bidimensionais é uma tarefa trabalhosa.
-* Use um formato sem perdas; TIFF e PNG são recomendados.
+* Usar um formato sem perdas; TIFF e PNG são recomendados.
 * Mascarar todas as imagens para que o item apareça em branco puro ou em outro plano de fundo de alto contraste. Como opção, adicione sombras.
 * Verifique se os detalhes do produto estão bem iluminados e em foco.
 * Faça imagens giratórias para roupas de moda com um manequim ou modelo. Muitas vezes, o manequim é mascarado (usando um manequim de vidro) ou um manequim estilizado/costureira é mostrado na imagem. Você pode criar um conjunto de rotação no modelo definindo o número de ângulos. Marque cada ângulo com fita no chão para que você possa guiar o modelo para pisar e olhar na direção de cada tomada.
@@ -113,16 +111,16 @@ Esta seção descreve como criar um Conjunto de rotação no Experience Manager.
 
 >[!NOTE]
 >
->Também é possível criar conjuntos de rotação automaticamente por meio de [predefinições de conjuntos em lotes](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets). **Importante:** os conjuntos em lotes são criados pelo IPS (Sistema de Produção de Imagens) como parte da assimilação de ativos e estão disponíveis somente no modo Dynamic Media - Scene7.
+>Também é possível criar conjuntos de rotação automaticamente por meio de [predefinições de conjuntos em lotes](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets). **Importante:** os conjuntos em lotes são criados pelo IPS (Sistema de Produção de Imagem) como parte da assimilação de ativos e estão disponíveis apenas no modo Dynamic Media - Scene7.
 >
->Consulte &quot;Criação de predefinições de conjunto de lotes para gerar automaticamente Conjuntos de Imagens e Conjuntos de Rotação&quot; no [Modo Configurar Dynamic Media - Scene7](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
+>Consulte &quot;Criar predefinições de conjunto de lotes para gerar automaticamente Conjuntos de Imagens e Conjuntos de Rotação&quot; no [Configurar Dynamic Media - modo Scene7](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
 >
 
 >[!NOTE]
 >
 >A ordem em que as imagens aparecem em um conjunto de rotação é importante. Certifique-se de ordená-los para que a rotação seja uma visualização suave de 360 graus.
 
-Ao criar um Conjunto de rotação, o Adobe recomenda a seguinte prática recomendada e impõe os seguintes limites:
+Ao criar um Conjunto de rotação, a Adobe recomenda a seguinte prática recomendada e impõe os seguintes limites:
 
 | Tipo de limite | Prática recomendada | Limitado imposto |
 | --- | --- | --- |
@@ -194,7 +192,7 @@ Consulte também [limitações do Dynamic Media](/help/assets/limitations.md).
 
 1. Na pesquisa, você pode selecionar **[!UICONTROL Filtros]**, expandir o **[!UICONTROL Dynamic Media]** e selecionar **[!UICONTROL Conjuntos]**.
 
-   A pesquisa retorna conjuntos correspondentes que foram criados manualmente na interface do usuário ou criados automaticamente por meio de predefinições de conjunto de lotes. Para conjuntos automatizados, a consulta de pesquisa é conduzida usando o critério de pesquisa `Starts with`, que é diferente da pesquisa de Experience Manager, que é baseada no uso do critério de pesquisa `Contains`. Configurar o filtro como **[!UICONTROL Conjuntos]** é a única maneira de pesquisar conjuntos automatizados.
+   A pesquisa retorna conjuntos correspondentes que foram criados manualmente na interface do usuário ou criados automaticamente por meio de predefinições de conjunto de lotes. Para conjuntos automatizados, a consulta de pesquisa é conduzida usando o critério de pesquisa `Starts with`, que é diferente da pesquisa do Experience Manager, que é baseada no uso do critério de pesquisa `Contains`. Configurar o filtro como **[!UICONTROL Conjuntos]** é a única maneira de pesquisar conjuntos automatizados.
 
    ![chlimage_1-158](assets/chlimage_1-386.png)
 
@@ -222,11 +220,10 @@ Consulte também [limitações do Dynamic Media](/help/assets/limitations.md).
    * Para reordenar imagens, arraste uma imagem para um novo local (selecione o ícone reordenar para mover itens).
    * Para classificar itens em ordem crescente ou decrescente, selecione o cabeçalho da coluna.
    * Para adicionar ou atualizar um ativo existente, selecione **[!UICONTROL Adicionar ativo]**. Navegue até um ativo, selecione-o e, em seguida, selecione **[!UICONTROL Selecionar]** próximo ao canto superior direito.
-Se você excluir a imagem que o Experience Manager usa para a miniatura substituindo-a por outra imagem, o ativo original ainda será exibido.
+     Se você excluir a imagem que o Experience Manager usa para a miniatura substituindo-a por outra imagem, o ativo original ainda será exibido.
    * Para excluir um ativo, selecione-o e selecione **[!UICONTROL Excluir ativo]**.
    * Para aplicar uma predefinição, selecione o ícone Predefinição e selecione uma predefinição.
    * Para excluir um Conjunto de rotação inteiro, navegue até o Conjunto de rotação, selecione-o e **[!UICONTROL Excluir]**
-
    >[!NOTE]
    >
    >Edite as imagens em um Conjunto de imagens ao navegar até o conjunto, selecionar **[!UICONTROL Definir membros]** no painel à esquerda e selecionar o ícone Lápis em um ativo individual para abrir a janela de edição.
@@ -237,6 +234,6 @@ Se você excluir a imagem que o Experience Manager usa para a miniatura substitu
 
 Consulte [Visualizar ativos](/help/assets/previewing-assets.md).
 
-## Publish um grupo de rotação {#publishing-spin-sets}
+## Publicar um grupo de rotação {#publishing-spin-sets}
 
-Consulte [ativos do Publish](/help/assets/publishing-dynamicmedia-assets.md).
+Consulte [Publicar ativos](/help/assets/publishing-dynamicmedia-assets.md).
