@@ -276,7 +276,7 @@ Ao criar uma configuração, não altere a configuração de fábrica. Em vez di
 
 >[!CAUTION]
 >
->Ao alterar a configuração para **Minify** ou **Gzip**, exclua o conteúdo do cache clientlibs. Consulte o [artigo da Base de Dados de Conhecimento](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html) para obter detalhes.
+>Ao alterar a configuração para **Minify** ou **Gzip**, exclua o conteúdo do cache clientlibs. Consulte o [artigo da Base de Dados de Conhecimento](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=pt-BR) para obter detalhes.
 
 >[!NOTE]
 >
