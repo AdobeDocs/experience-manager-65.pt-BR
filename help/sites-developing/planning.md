@@ -11,11 +11,9 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '979'
+source-wordcount: '988'
 ht-degree: 0%
-
 ---
-
 # Planejamento{#planning}
 
 Este documento descreve o que você precisa saber para planejar o teste. Além disso, você deve responder a estas perguntas antes de realizar seus testes:
@@ -28,11 +26,11 @@ Este documento descreve o que você precisa saber para planejar o teste. Além d
 
 Antes de começar com a análise e definição reais de testes, analise as seguintes informações:
 
-**Arquitetura do AEM** - Consulte Conceitos Básicos para se apresentar à arquitetura e aos princípios básicos do AEM.
+**Arquitetura do AEM** - Consulte Conceitos básicos para se apresentar à arquitetura e aos princípios básicos do AEM.
 
 **Documentação** - Consulte qualquer uma das seções de documentação ou os artigos de instrução para obter mais informações.
 
-**Princípios Básicos de Teste** - Você deve estar ciente dos princípios básicos de Teste de Software e Garantia de Qualidade. De preferência, você deve ter experiência em testes de projetos.
+**Princípios básicos de teste** - Você deve estar ciente dos princípios básicos de Teste de software e Assurance de qualidade. De preferência, você deve ter experiência em testes de projetos.
 
 Há muitos sites, livros e cursos que lidam com esses princípios e, portanto, não serão tratados em detalhes neste documento.
 
@@ -50,7 +48,7 @@ Embora os números futuros não possam ser previstos com 100% de precisão, obse
 
 ## Tipos de testes {#types-of-tests}
 
-Existem várias classificações padrão de testes que são apropriados para uso ao testar um projeto de AEM. Familiarize-se com isso para decidir qual usará:
+Há várias classificações padrão de testes que são apropriadas para uso ao testar um projeto do AEM. Familiarize-se com isso para decidir qual usará:
 
 >[!NOTE]
 >

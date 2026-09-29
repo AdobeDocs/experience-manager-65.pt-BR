@@ -1,26 +1,24 @@
 ---
 title: Como configurar e solucionar problemas de um AEM Forms no cluster de servidores JEE
-description: Saiba como configurar e solucionar problemas de um Forms Adobe Experience Manager (AEM) no cluster de servidores JEE.
+description: Saiba como configurar e solucionar problemas de um Adobe Experience Manager (AEM) Forms no cluster de servidores JEE.
 exl-id: 230fc2f1-e6e5-4622-9950-dae9449ed3f6
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
-source-wordcount: '3945'
+source-wordcount: '3986'
 ht-degree: 0%
-
 ---
-
 # Configuração e solução de problemas de um cluster de servidores AEM Forms no JEE {#configuring-troubleshooting-aem-forms-jee-server-cluster}
 
 ## Conhecimento de pré-requisito {#prerequisites}
 
-Familiaridade com os servidores de aplicativos Adobe Experience Manager (AEM) Forms em JEE, JBoss®, WebSphere® e WebLogic, servidores de bancos de dados Red Hat® Linux®, SUSE® Linux®, Microsoft® Windows, IBM® AIX® ou Sun Solaris™, Oracle, servidores de bancos de dados IBM® DB2® ou SQL Server e ambientes da Web.
+Familiaridade com os servidores de aplicativos Adobe Experience Manager (AEM) Forms em JEE, JBoss®, WebSphere® e WebLogic, servidores de bancos de dados Red Hat® Linux®, SUSE® Linux®, Microsoft® Windows, IBM® AIX® ou Sun Solaris™, Oracle, IBM® DB2® ou SQL Server e ambientes da Web.
 
 ## Nível do usuário {#user-level}
 
-Avançado 
+Avançado
 
 Um AEM Forms no Cluster JEE é uma topologia projetada para permitir que o AEM Forms no JEE seja resiliente à falha de um cluster. Também permite que a topologia dimensione a capacidade do sistema além das capacidades de um único nó. Um cluster combina vários nós em um único sistema lógico que compartilha dados e permite que as transações abranjam vários nós em sua execução. Um cluster é a maneira mais geral de dimensionar o AEM Forms no JEE, na medida em que qualquer combinação de serviços que lidam com qualquer combinação de cargas de trabalho pode ser compatível. Um cluster AEM Forms no JEE não é necessariamente o melhor ajuste para todos os tipos de implantações e, uma arquitetura de balanceamento de carga de servidor sem cluster pode ser apropriada.
 
@@ -154,7 +152,7 @@ No outro nó, AP-HP7:
 
 Cada cluster distinto que compartilha uma rede corporativa deve usar um conjunto separado de localizadores TCP, se os localizadores TCP forem usados, ou um número de porta UDP separado, se a configuração UDP de multicast for usada. Como a descoberta automática de UDP é a configuração padrão para o AEM Forms no JEE e a mesma porta padrão 33456 está em uso por vários clusters, é possível que os clusters que não devem estar tentando se comunicar possam estar fazendo isso inesperadamente. Por exemplo, os clusters de produção e controle de qualidade devem permanecer separados, mas podem se conectar entre si por meio de multicast de UDP.
 
-A situação mais comum quando você pode descobrir portas duplicadas em uma rede para a qual o GemFire está criando clusters incorretamente é durante o Bootstrap de um cluster. O que você pode descobrir é que o processo de Bootstrap falha sem uma causa clara. Normalmente, erros como esse são vistos:
+A situação mais comum quando você pode descobrir portas duplicadas em uma rede para a qual o GemFire está criando clusters incorretamente é durante o Bootstrap de um cluster. O que você pode descobrir é que o processo do Bootstrap falha sem uma causa clara. Normalmente, erros como esse são vistos:
 
 ```xml
 Caused by: com.ibm.ejs.container.UnknownLocalException: nested exception is: com.adobe.pof.schema.ObjectTypeNotFoundException: Object Type: dsc.sc_service_configuration not found.
@@ -168,7 +166,7 @@ Caused by: com.ibm.ejs.container.UnknownLocalException: nested exception is: com
 
 Nesse caso, o bootstrapper está trabalhando com o GemFire para acessar as tabelas necessárias. E há uma inconsistência entre as tabelas acessadas pelo JDBC e as informações da tabela em cache retornadas pelo GemFire, que vem de um cluster diferente com um banco de dados subjacente diferente.
 
-Embora uma porta duplicada se torne evidente durante o Bootstrap, é possível que essa situação seja exibida posteriormente. Isso pode ocorrer quando um cluster é reiniciado após ser desativado quando o Bootstrap do outro cluster ocorreu. Ou, quando a configuração da rede for alterada para tornar visíveis entre si os clusters que estavam isolados anteriormente, para fins de multicast.
+Embora uma porta duplicada geralmente se torne evidente durante o Bootstrap, é possível que essa situação seja exibida posteriormente. Isso pode ocorrer quando um cluster é reiniciado após ser desativado quando o Bootstrap do outro cluster ocorreu. Ou, quando a configuração da rede for alterada para tornar visíveis entre si os clusters que estavam isolados anteriormente, para fins de multicast.
 
 Para diagnosticar essas situações, examine os logs do GemFire e considere cuidadosamente se apenas os nós esperados estão sendo encontrados. Para corrigir o problema, é necessário alterar a propriedade `adobe.cache.multicast-port` para um valor diferente em um ou ambos os clusters.
 
@@ -226,7 +224,7 @@ Referências:
 
 * [Serviços empresariais de alta disponibilidade por meio de clusters JBoss®](https://docs.jboss.org/jbossas/jboss4guide/r4/html/cluster.chapt.html)
 
-* [Oracle WebLogic Server-Uso de clusters](https://docs.oracle.com/cd/E12840_01/wls/docs103/pdf/cluster.pdf)
+* [Oracle WebLogic Server - Uso de clusters](https://docs.oracle.com/cd/E12840_01/wls/docs103/pdf/cluster.pdf)
 
 ### Como verifico se o JBoss® está sendo agrupado corretamente? {#check-jboss-clustering}
 
@@ -249,7 +247,7 @@ and ones like:
 
 Geralmente, o uso do Quartz scheduler interno do AEM Forms no JEE em um cluster deve seguir automaticamente a configuração global do cluster do AEM Forms no JEE em geral. Há, no entanto, um bug, #2794033, que faz com que a configuração automática de cluster do Quartz falhe se os localizadores TCP estiverem sendo usados para Gemfire em vez de autodescoberta de multicast. Nesse caso, o Quartz é executado incorretamente em um modo não clusterizado. Isso cria bloqueios e corrupção de dados nas tabelas do Quartz. Os efeitos colaterais são piores na versão 8.2.x do que 9.0, pois o quartzo não é usado tanto, mas ainda está lá.
 
-As correções estão disponíveis para este problema: 8.2.1.2 QF2.143 e 9.0.0.2 QF2.44.
+Há correções disponíveis para este problema: 8.2.1.2 QF2.143 e 9.0.0.2 QF2.44.
 
 Também há uma solução alternativa, que é definir essas duas propriedades:
 

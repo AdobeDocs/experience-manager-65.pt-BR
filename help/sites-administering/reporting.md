@@ -1,6 +1,6 @@
 ---
 title: Relatório
-description: Saiba como trabalhar com Relatórios no Adobe Experience Manager (AEM).
+description: Saiba como trabalhar com relatórios no Adobe Experience Manager (AEM).
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
@@ -12,14 +12,12 @@ feature: Operations
 role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '2782'
+source-wordcount: '2806'
 ht-degree: 3%
-
 ---
-
 # Relatório {#reporting}
 
-Para ajudar você a monitorar e analisar o estado da sua instância, o Adobe Experience Manager (AEM) fornece uma seleção de relatórios padrão que podem ser configurados para seus requisitos individuais:
+Para ajudar você a monitorar e analisar o estado da sua instância, o Adobe Experience Manager (AEM) fornece uma seleção de relatórios padrão, que podem ser configurados para seus requisitos individuais:
 
 * [Relatório do componente](#component-report)
 * [Uso do disco](#disk-usage)
@@ -40,7 +38,7 @@ Novas instâncias de um relatório também podem ser criadas no console **Ferram
 
 >[!NOTE]
 >
->Além dos relatórios padrão de AEM que estão disponíveis prontamente, você pode [desenvolver seus próprios (novos) relatórios](/help/sites-developing/dev-reports.md).
+>Além dos relatórios padrão do AEM que estão disponíveis prontamente, você pode [desenvolver seus próprios (novos) relatórios](/help/sites-developing/dev-reports.md).
 
 ## Noções básicas da personalização de relatórios {#the-basics-of-report-customization}
 
@@ -73,8 +71,8 @@ Para alterar a seleção de dados:
 
 * para adicionar uma coluna, arraste o componente desejado do sidekick e solte na posição desejada
 
-   * um sinal verde indica quando a posição é válida e um par de setas indica exatamente onde ela é colocada
-   * um símbolo vermelho indica quando a posição é inválida
+  * um sinal verde indica quando a posição é válida e um par de setas indica exatamente onde ela é colocada
+  * um símbolo vermelho indica quando a posição é inválida
 
 * para mover uma coluna, clique no cabeçalho, mantenha pressionada e arraste para a nova posição
 * para remover uma coluna, clique no título da coluna, mantenha a tecla pressionada e arraste para cima na área do cabeçalho do relatório (um símbolo de menos vermelho indica que a posição não é válida). Solte o botão do mouse e a caixa de diálogo Excluir componentes solicitando confirmação de que você realmente deseja excluir a coluna.
@@ -173,8 +171,8 @@ Quando a coleta de dados começar, é possível selecionar:
 
   Por exemplo, se os instantâneos diários estiverem disponíveis para fevereiro de 2011:
 
-   * Se o intervalo estiver definido como `Day`, cada instantâneo será mostrado como um valor único no gráfico.
-   * Se o intervalo for definido como `Month`, todos os instantâneos de fevereiro serão agregados em um único valor (exibido como um único &quot;ponto&quot; no gráfico).
+  * Se o intervalo estiver definido como `Day`, cada instantâneo será mostrado como um valor único no gráfico.
+  * Se o intervalo for definido como `Month`, todos os instantâneos de fevereiro serão agregados em um único valor (exibido como um único &quot;ponto&quot; no gráfico).
 
 Selecione seus requisitos e clique em **Ir** para aplicá-los ao relatório. Para atualizar a exibição depois da criação de mais instantâneos, clique novamente em **Ir**.
 
@@ -250,17 +248,17 @@ Este é um local onde o período para coletar instantâneos de [Dados histórico
 
 * **Processamento de Relatório**
 
-   * **atualizar dados automaticamente**
+  * **atualizar dados automaticamente**
 
-     Os dados do relatório são atualizados toda vez que você atualiza a definição do relatório.
+    Os dados do relatório são atualizados toda vez que você atualiza a definição do relatório.
 
-   * **atualizar dados manualmente**
+  * **atualizar dados manualmente**
 
-     Essa opção pode ser usada para evitar atrasos causados por operações automáticas de atualização quando há um grande volume de dados.
+    Essa opção pode ser usada para evitar atrasos causados por operações automáticas de atualização quando há um grande volume de dados.
 
-     Selecionar essa opção indica que os dados do relatório devem ser atualizados manualmente quando qualquer aspecto da configuração do relatório for alterado. Também significa que, quando você altera qualquer aspecto da configuração, a tabela de relatório fica em branco.
+    Selecionar essa opção indica que os dados do relatório devem ser atualizados manualmente quando qualquer aspecto da configuração do relatório for alterado. Também significa que, quando você altera qualquer aspecto da configuração, a tabela de relatório fica em branco.
 
-     Quando selecionado, o botão **[Carregar dados](#load-data)** é exibido (ao lado de **Editar** no relatório). **Carregar dados** carrega os dados e atualiza os dados de relatório mostrados.
+    Quando selecionado, o botão **[Carregar dados](#load-data)** é exibido (ao lado de **Editar** no relatório). **Carregar dados** carrega os dados e atualiza os dados de relatório mostrados.
 
 * **Instantâneos**
 Você pode definir a frequência com que os instantâneos devem ser criados, diariamente, a cada hora ou não.
@@ -427,9 +425,9 @@ Este relatório fornece informações sobre todos os usuários que registraram u
 * Idade
 * País
 * Domínio
-* E-mail
+* Email
 * Nome da família
-* Sexo
+* Gênero
 * [Genérico](#generic-column)
 * Nome
 * Informações
@@ -494,7 +492,7 @@ Isso fornece uma visão geral concisa, fornecendo informações sobre as instân
 * Duração
 * Iniciador
 * Modelo
-* Carga útil
+* Conteúdo
 * Iniciado
 * Status
 
@@ -510,13 +508,13 @@ Isso fornece estatísticas importantes sobre os workflows em execução na sua i
 
 ![reportworkflow](assets/reportworkflow.png)
 
-## Uso de relatórios em um ambiente Publish {#using-reports-in-a-publish-environment}
+## Uso de relatórios em um ambiente de publicação {#using-reports-in-a-publish-environment}
 
 Depois de configurar os relatórios de acordo com seus requisitos específicos, você pode ativá-los para transferir a configuração para o ambiente de publicação.
 
 >[!CAUTION]
 >
->Se você quiser **dados históricos** do ambiente Publish, **Conclua** o relatório no ambiente do Autor antes de ativar a página.
+>Se você quiser **dados históricos** do ambiente de Publicação, **Conclua** o relatório no ambiente de Autor antes de ativar a página.
 
 O relatório apropriado é então acessível em
 
@@ -526,9 +524,9 @@ Por exemplo, o relatório de Conteúdo gerado pelo usuário pode ser encontrado 
 
 `http://localhost:4503/etc/reports/ugcreport.html`
 
-Agora, ele relata os dados coletados do ambiente do Publish.
+Isso agora relata os dados coletados do ambiente de publicação.
 
-Como nenhuma configuração de relatório é permitida no ambiente Publish, os botões **Editar** e **Concluir** não estão disponíveis. No entanto, você pode selecionar o **Período** e o **Intervalo** para os relatórios de **Dados históricos** se os instantâneos estiverem sendo coletados.
+Como nenhuma configuração de relatório é permitida no ambiente de Publicação, os botões **Editar** e **Concluir** não estão disponíveis. No entanto, você pode selecionar o **Período** e o **Intervalo** para os relatórios de **Dados históricos** se os instantâneos estiverem sendo coletados.
 
 ![reportsucgpublish](assets/reportsucgpublish.png)
 

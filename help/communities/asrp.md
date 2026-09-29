@@ -1,5 +1,5 @@
 ---
-title: ASRP - Provedor de recurso de armazenamento de Adobe
+title: ASRP - Provedor de recurso de armazenamento da Adobe
 description: Configurar o AEM Communities para usar um banco de dados relacional como seu armazenamento comum
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -12,12 +12,10 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '792'
+source-wordcount: '825'
 ht-degree: 1%
-
 ---
-
-# ASRP - Provedor de recurso de armazenamento de Adobe {#asrp-adobe-storage-resource-provider}
+# ASRP - Provedor de recurso de armazenamento da Adobe {#asrp-adobe-storage-resource-provider}
 
 ## Sobre ASRP {#about-asrp}
 
@@ -44,9 +42,9 @@ O consumidor e as chaves secretas são compartilhados em todos os conjuntos de r
 
 O [console de Configuração de Armazenamento](/help/communities/srp-config.md) permite a seleção da configuração de armazenamento padrão, que identifica qual implementação de SRP usar.
 
-**Na instância do Autor AEM:**
+**Na instância do Autor do AEM:**
 
-* Na navegação global, navegue até **[!UICONTROL Ferramentas > Comunidades > Configuração de Armazenamento]** e selecione **[!UICONTROL Provedor de Recurso de Armazenamento de Adobe (ASRP)]**.
+* Na navegação global, navegue até **[!UICONTROL Ferramentas > Comunidades > Configuração de Armazenamento]** e selecione **[!UICONTROL Adobe Storage Resource Provider (ASRP)]**.
 
 ![asrp-padrão](assets/asrp-default.png)
 
@@ -93,7 +91,7 @@ O ASRP deve ser identificado como o armazenamento comum em todas as instâncias 
 
 Para disponibilizar a configuração idêntica no ambiente de publicação:
 
-Na instância do autor AEM:
+Na instância do autor do AEM:
 
 * Navegue do menu principal para **[!UICONTROL Ferramentas]** > **[!UICONTROL Implantação]** > **[!UICONTROL Replicação]**
 * Selecionar **Ativar árvore**
@@ -107,7 +105,7 @@ Na instância do autor AEM:
 >
 >Se você habilitar o ASRP em um site de comunidade publicado, qualquer UGC já armazenado em [JCR](/help/communities/jsrp.md) não estará mais visível, pois não há sincronização de dados entre o armazenamento local e o armazenamento na nuvem.
 
-O **`AEM Communities Extension`** foi introduzido anteriormente em comunidades sociais AEM 6.0 como um serviço na nuvem. Desde Comunidades AEM 6.1, nenhuma configuração de nuvem é necessária, basta selecionar ASRP no [console de configuração de armazenamento](/help/communities/srp-config.md).
+O **`AEM Communities Extension`** foi introduzido anteriormente nas comunidades sociais as a cloud service do AEM 6.0. A partir do AEM 6.1 Communities, nenhuma configuração de nuvem é necessária. Basta selecionar ASRP no [console de configuração de armazenamento](/help/communities/srp-config.md).
 
 Devido à nova estrutura de armazenamento, é necessário seguir as instruções de [atualização](/help/communities/upgrade.md#adobe-cloud-storage) ao atualizar de comunidades sociais para Comunidades.
 
@@ -122,11 +120,11 @@ Para obter informações sobre *usuários*, *perfis de usuários* e *grupos de u
 
 ### O UGC desaparece após a atualização {#ugc-disappears-after-upgrade}
 
-Se estiver atualizando de um site da comunidade social AEM 6.0 existente, siga as [instruções de atualização](/help/communities/upgrade.md#adobe-cloud-storage); caso contrário, o UGC parece ter sido perdido.
+Se estiver atualizando de um site da comunidade social do AEM 6.0 existente, siga as [instruções de atualização](/help/communities/upgrade.md#adobe-cloud-storage); caso contrário, o UGC parece ter sido perdido.
 
 ### Erros de autenticação {#authentication-errors}
 
-Se receber erros de autenticação no URL do data center e o error.log de AEM contiver mensagens sobre carimbos de data e hora obsoletos, verifique se a sincronização de tempo está acontecendo.
+Se receber erros de autenticação em relação ao URL do data center e o error.log do AEM contiver mensagens sobre carimbos de data e hora obsoletos, verifique se a sincronização de tempo está acontecendo.
 
 Use uma ferramenta como o [NTP (Network Time Protocol)](https://www.ntp.org/) para sincronizar com o tempo todos os servidores de autor e publicação do AEM.
 
@@ -140,7 +138,7 @@ Embora o intervalo que afeta a consistência final seja monitorado, entre em con
 
 Verifique se o ASRP foi configurado como o provedor padrão, verificando a configuração da opção de armazenamento. Por padrão, o provedor de recursos de armazenamento é JSRP, não ASRP.
 
-Em todas as instâncias de criação e publicação do AEM, visite novamente o console de Configuração de armazenamento ou verifique o repositório AEM.
+Em todas as instâncias do AEM de criação e publicação, visite novamente o console Configuração de armazenamento ou verifique o repositório do AEM.
 
 No JCR, se [/conf/global/settings/communities](https://localhost:4502/crx/de/index.jsp#/etc/socialconfig/):
 

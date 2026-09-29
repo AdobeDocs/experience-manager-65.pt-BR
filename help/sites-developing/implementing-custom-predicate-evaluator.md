@@ -12,11 +12,9 @@ feature: Developing,Search,Query Builder
 role: Developer
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '664'
+source-wordcount: '816'
 ht-degree: 0%
-
 ---
-
 # Implementação de um avaliador de predicado personalizado no Construtor de consultas{#implementing-a-custom-predicate-evaluator-for-the-query-builder}
 
 Esta seção descreve como estender o [Construtor de Consultas](/help/sites-developing/querybuilder-api.md) implementando um avaliador de predicado personalizado.
@@ -44,7 +42,7 @@ CÓDIGO NO GITHUB
 
 Você pode encontrar o código desta página no GitHub.
 
-* [Abrir o projeto aem-search-custom-predicate-valuator no GitHub](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator)
+* [Abra o projeto aem-search-custom-predicate-valuator no GitHub](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator)
 * Baixar o projeto como [um arquivo ZIP](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator/archive/master.zip)
 
 ### Avaliador de predicado em detalhes {#predicate-evaluator-in-detail}
@@ -105,7 +103,7 @@ O agrupamento de predicados de metadados de replicação com um avaliador de pre
 
 >[!NOTE]
 >
->A configuração de novos projetos Adobe Experience Manager (AEM) usando maven está documentada por [Como compilar projetos AEM usando Apache Maven](/help/sites-developing/ht-projects-maven.md).
+>A configuração de novos projetos do Adobe Experience Manager (AEM) usando o maven está documentada por [Como construir projetos do AEM usando o Apache Maven](/help/sites-developing/ht-projects-maven.md).
 
 Primeiro, atualize as dependências Maven do seu projeto. O `PredicateEvaluator` faz parte do artefato `cq-search` e, portanto, deve ser adicionado ao arquivo pom.xml Maven.
 

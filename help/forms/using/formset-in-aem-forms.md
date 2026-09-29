@@ -1,21 +1,24 @@
 ---
 title: Formulário definido no AEM Forms
+
 description: Este artigo apresenta o conjunto de formulários e explica como criar conjuntos de formulários unindo formulários HTML5. Este artigo também explica como preencher previamente dados xml em um conjunto de formulários e como usar conjuntos de formulários no gerenciamento de processos.
+
+
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
+
 docset: aem65
+
 feature: HTML5 Forms,Mobile Forms
 exl-id: 039afdf3-013b-41b2-8821-664d28617f61
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '2804'
+source-wordcount: '2816'
 ht-degree: 0%
-
 ---
-
 # Formulário definido no AEM Forms{#form-set-in-aem-forms}
 
 ## Visão geral {#overview}
@@ -90,7 +93,7 @@ Depois que um conjunto de formulários é criado, você pode executar as seguint
 * Download: é possível baixar o conjunto de formulários com todas as suas dependências.
 * Iniciar/Gerenciar revisão: uma vez criado o conjunto de formulários, você pode configurar sua revisão clicando em Iniciar revisão. Depois que a revisão de um conjunto de formulários for iniciada, a opção Gerenciar revisão será exibida para o usuário. Na tela Gerenciar revisão, você pode atualizar/encerrar a revisão. Para as revisões adicionadas, é possível verificar a revisão e adicionar comentários, se necessário.
 * Excluir: exclui o conjunto completo de formulários. Os formulários no conjunto de formulários excluído permanecem no repositório.
-* Publish/Cancelar publicação: publica/cancela a publicação do conjunto de formulários juntamente com todos os formulários que ele contém e os ativos relacionados desses formulários.
+* Publicar/Desfazer publicação: publica/desfaz a publicação do conjunto de formulários juntamente com todos os formulários que ele contém e os ativos relacionados desses formulários.
 * Pré-visualização: A pré-visualização fornece duas opções: Pré-visualização como HTML (sem dados) e pré-visualização personalizada com dados de amostra.
 * Exibir/editar propriedades: é possível exibir/editar as propriedades de metadados de um conjunto de formulários selecionado.
 
@@ -121,7 +124,7 @@ Depois de criar um conjunto de formulários usando a interface do usuário do AE
 
    ![Criar um processo: usar um ativo do CRX](assets/formsetinprocessmgmt1.png)
 
-1. Selecione o conjunto de formulários para filtrar o conjunto de formulários no repositório AEM (CRX).
+1. Selecione o conjunto de formulários para filtrar o conjunto de formulários no repositório do AEM (CRX).
 
    ![Criar um processo: caixa de diálogo Selecionar Ativo do Formulário](assets/formsetinprocessmgmt2.png)
 
@@ -301,9 +304,9 @@ A subárvore indica os dados dos formulários no conjunto de formulários. O ele
 
 `children: xfa:datasets`
 
-Essa tag indica o início do formulário XML HTML5. Isso é adicionado no XML de envio se estiver presente no XML de preenchimento prévio ou se não houver XML de preenchimento prévio. Essa tag pode ser removida do XML de preenchimento prévio.
+Essa tag indica o início do Formulário XML HTML5. Isso é adicionado no XML de envio se estiver presente no XML de preenchimento prévio ou se não houver XML de preenchimento prévio. Essa tag pode ser removida do XML de preenchimento prévio.
 
-### XFA:CONJUNTOS DE DADOS {#xfa-datasets}
+### XFA:DATASETS {#xfa-datasets}
 
 `parent elements: xdp:xdp`
 
@@ -315,7 +318,7 @@ Essa tag indica o início do formulário XML HTML5. Isso é adicionado no XML de
 
 `children: xfa:data`
 
-### XFA:DADOS {#xfa-data}
+### XFA:DATA {#xfa-data}
 
 `parent elements: xfa:datasets`
 
