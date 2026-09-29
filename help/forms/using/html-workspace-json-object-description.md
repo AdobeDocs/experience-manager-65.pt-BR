@@ -8,13 +8,11 @@ exl-id: f837a2b3-4650-4261-84c6-291bb2a46dc7
 solution: Experience Manager, Experience Manager Forms
 feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
 workflow-type: tm+mt
-source-wordcount: '2144'
+source-wordcount: '2168'
 ht-degree: 7%
-
 ---
-
 # Descrição do objeto JSON do espaço de trabalho do AEM Forms {#aem-forms-workspace-json-object-description}
 
 Os objetos JSON usados no espaço de trabalho do AEM Forms são descritos abaixo.
@@ -23,49 +21,49 @@ Os objetos JSON usados no espaço de trabalho do AEM Forms são descritos abaixo
 
    As categorias estão presentes na guia iniciar processo do espaço de trabalho. Essas categorias são usadas para classificar os pontos de partida.
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Propriedade</strong></td>
-   <td><strong>Somente Cliente</strong></td>
-   <td><strong>Comentários</strong></td>
-  </tr>
-  <tr>
-   <td>name</td>
-   <td>S</td>
-   <td>Nome da categoria</td>
-  </tr>
-  <tr>
-   <td>id</td>
-   <td>S</td>
-   <td>ID da Categoria <br type="_moz" /> </td>
-  </tr>
-  <tr>
-   <td>descrição<br type="_moz" /> </td>
-   <td>S</td>
-   <td>Descrição da categoria<br type="_moz" /> </td>
-  </tr>
-  <tr>
-   <td>parentOid<br type="_moz" /> </td>
-   <td>S</td>
-   <td>Contém oid da categoria pai<br type="_moz" /> </td>
-  </tr>
-  <tr>
-   <td>startPointsList<br type="_moz" /> </td>
-   <td>T</td>
-   <td>Contém a lista de todos os pontos de partida presentes em uma categoria</td>
-  </tr>
-  <tr>
-   <td>categoryList</td>
-   <td>T</td>
-   <td>Contém a lista de categorias filho diretas de uma categoria<br type="_moz" /> </td>
-  </tr>
- </tbody>
-</table>
+   <table>
+   <tbody>
+   <tr>
+      <td><strong>Propriedade</strong></td>
+      <td><strong>Somente Cliente</strong></td>
+      <td><strong>Comentários</strong></td>
+   </tr>
+   <tr>
+      <td>name</td>
+      <td>S</td>
+      <td>Nome da categoria</td>
+   </tr>
+   <tr>
+      <td>id</td>
+      <td>S</td>
+      <td>ID da Categoria <br type="_moz" /> </td>
+   </tr>
+   <tr>
+      <td>descrição<br type="_moz" /> </td>
+      <td>S</td>
+      <td>Descrição da categoria<br type="_moz" /> </td>
+   </tr>
+   <tr>
+      <td>parentOid<br type="_moz" /> </td>
+      <td>S</td>
+      <td>Contém oid da categoria pai<br type="_moz" /> </td>
+   </tr>
+   <tr>
+      <td>startPointsList<br type="_moz" /> </td>
+      <td>T</td>
+      <td>Contém a lista de todos os pontos de partida presentes em uma categoria</td>
+   </tr>
+   <tr>
+      <td>categoryList</td>
+      <td>T</td>
+      <td>Contém a lista de categorias filho diretas de uma categoria<br type="_moz" /> </td>
+   </tr>
+   </tbody>
+   </table>
 
->[!NOTE]
->
->Todos os pontos iniciais e favoritos são categorias definidas no lado do cliente. A categoria Favorito contém todos os pontos iniciais marcados pelo usuário como favoritos. A categoria Todos os pontos iniciais contém todos os pontos iniciais.
+   >[!NOTE]
+   >
+   >Todos os pontos iniciais e favoritos são categorias definidas no lado do cliente. A categoria Favorito contém todos os pontos iniciais marcados pelo usuário como favoritos. A categoria Todos os pontos iniciais contém todos os pontos iniciais.
 
 1. Ponto inicial
 
@@ -238,7 +236,7 @@ Os objetos JSON usados no espaço de trabalho do AEM Forms são descritos abaixo
   <tr>
    <td>status<br /> </td>
    <td>S</td>
-   <td>1 = Criada (a tarefa é criada a partir do ponto inicial.)<br /> 2 = Criado e salvo (a tarefa é criada a partir do ponto inicial e salva.)<br /> 3 = Atribuída (a tarefa é atribuída ao usuário após o início do processo.)<br /> 4 = Atribuído e Salvo (a tarefa é atribuída e salva.)<br /> 100 = Concluído (A tarefa está concluída.)<br /> 101 = Prazo final (a tarefa atingiu o prazo final.)<br /> 102 = Encerrado<br /> </td>
+   <td>1 = Criada (a tarefa é criada a partir do ponto inicial.)<br /> 2 = Criada e Salva (a tarefa é criada a partir do ponto inicial e salva.)<br /> 3 = Atribuída (a tarefa é atribuída ao usuário após o início do processo.)<br /> 4 = Atribuída e Salva (a tarefa é atribuída e salva.)<br /> 100 = Concluído (A tarefa está concluída.)<br /> 101 = Prazo final (a tarefa atingiu o prazo final.)<br /> 102 = Encerrado<br /> </td>
   </tr>
   <tr>
    <td>stepName<br /> </td>
@@ -412,7 +410,7 @@ Os objetos JSON usados no espaço de trabalho do AEM Forms são descritos abaixo
   <tr>
    <td>tipo</td>
    <td>S</td>
-   <td>Ele contém o tipo da fila.<br /> 0 - Fila de usuários.<br /> 1. Fila compartilhada.<br /> 2. Fila de Grupo.<br type="_moz" /> </td>
+   <td>Ele contém o tipo da fila.<br /> 0 - Fila de usuários.<br /> 1. Fila Compartilhada.<br /> 2. Fila de Grupo.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>query</td>
@@ -606,7 +604,7 @@ Os objetos JSON usados no espaço de trabalho do AEM Forms são descritos abaixo
   <tr>
    <td>assignmentType<br type="_moz" /> </td>
    <td>S</td>
-   <td>0 = Atribuição Inicial<br /> 1 = Encaminhar (a tarefa foi encaminhada para o proprietário atual da tarefa.)<br /> 2 = Retornado (a tarefa foi retornada ao proprietário atual da tarefa pelo proprietário anterior da tarefa.)<br /> 3 = Declarado (a tarefa foi reivindicada pelo proprietário atual da tarefa.)<br /> 4 = Escalonamento (a tarefa foi atribuída ao proprietário atual da tarefa após o escalonamento.)<br /> 5 = Administrador atribuído (a tarefa foi atribuída pelo administrador ao proprietário atual da tarefa.)<br /> 6 = Consultada ( A tarefa foi consultada para o proprietário atual da tarefa.)<br type="_moz" /> </td>
+   <td>0 = Atribuição Inicial<br /> 1 = Encaminhar (A tarefa foi encaminhada para o proprietário atual da tarefa.)<br /> 2 = Retornado (a tarefa foi retornada ao proprietário atual da tarefa pelo proprietário anterior da tarefa.)<br /> 3 = Declarado (a tarefa foi reivindicada pelo proprietário atual da tarefa.)<br /> 4 = Escalonamento (a tarefa foi atribuída ao proprietário atual da tarefa após o escalonamento.)<br /> 5 = Administrador Atribuído (a tarefa foi atribuída pelo administrador ao proprietário atual da tarefa.)<br /> 6 = Consultada ( A tarefa foi consultada para o proprietário atual da tarefa.)<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>assignmentUpdateTime<br type="_moz" /> </td>

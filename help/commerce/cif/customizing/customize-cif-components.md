@@ -1,24 +1,22 @@
 ---
 title: Personalizar os Componentes principais da CIF
-description: Saiba como personalizar os Componentes principais do Adobe Experience Manager CIF. O tutorial aborda como estender com segurança um Componente principal CIF para atender aos requisitos específicos da empresa. Saiba como estender uma consulta do GraphQL para retornar um atributo personalizado e exibir o novo atributo em um Componente principal CIF.
+description: Saiba como personalizar os Componentes principais do Adobe Experience Manager CIF. O tutorial aborda como estender com segurança um Componente principal do CIF para atender aos requisitos específicos da empresa. Saiba como estender uma consulta do GraphQL para retornar um atributo personalizado e exibir o novo atributo em um Componente principal do CIF.
 exl-id: 8933942e-be49-49d3-bf0a-7225257e2803
 feature: Commerce Integration Framework
 solution: Experience Manager,Commerce
 role: Admin, Developer
-source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
+source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
 workflow-type: tm+mt
-source-wordcount: '2305'
-ht-degree: 11%
-
+source-wordcount: '2667'
+ht-degree: 14%
 ---
+# Personalizar os Componentes principais do Adobe Experience Manager CIF {#customize-cif-components}
 
-# Personalizar os componentes principais do Adobe Experience Manager CIF {#customize-cif-components}
-
-O [Projeto CIF Venia](https://github.com/adobe/aem-cif-guides-venia) é uma base de código de referência para o uso de [Componentes principais do CIF](https://github.com/adobe/aem-core-cif-components). Neste tutorial, você estende ainda mais o componente [Teaser do produto](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser) para exibir um atributo personalizado do Adobe Commerce. Você também aprenderá mais sobre a integração do GraphQL entre o Adobe Experience Manager (AEM) e o Adobe Commerce CIF e os ganchos de extensão fornecidos pelos Componentes principais do.
+O [Projeto CIF Venia](https://github.com/adobe/aem-cif-guides-venia) é uma base de código de referência para usar os [Componentes principais do CIF](https://github.com/adobe/aem-core-cif-components). Neste tutorial, você estende ainda mais o componente [Teaser do produto](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser) para exibir um atributo personalizado do Adobe Commerce. Você também pode saber mais sobre a integração do GraphQL entre o Adobe Experience Manager (AEM) e o Adobe Commerce e os ganchos de extensão fornecidos pelos Componentes principais do CIF.
 
 >[!TIP]
 >
->Use o [Arquétipo de projeto do AEM](https://github.com/adobe/aem-project-archetype) ao iniciar sua própria implementação comercial.
+>Use o [Arquétipo de projeto do AEM](https://github.com/adobe/aem-project-archetype) ao iniciar sua própria implementação de comércio.
 
 ## O que você vai criar
 
@@ -28,7 +26,7 @@ Recentemente, a marca Venia começou a fabricar alguns produtos usando materiais
 
 ## Pré-requisitos {#prerequisites}
 
-Um ambiente de desenvolvimento local é necessário para concluir este tutorial. Isso inclui uma instância do AEM em execução que está configurada e conectada a uma instância do Adobe Commerce. Revise os requisitos e as etapas para [configurar um desenvolvimento local com AEM](../develop.md). Para seguir o tutorial completamente, você precisa de permissão para adicionar [Atributos a um Produto](https://docs.magento.com/user-guide/catalog/product-attributes-add.html) no Adobe Commerce.
+Um ambiente de desenvolvimento local é necessário para concluir este tutorial. Isso inclui uma instância do AEM em execução configurada e conectada a uma instância do Adobe Commerce. Revise os requisitos e as etapas para [configurar um desenvolvimento local com o AEM](../develop.md). Para seguir o tutorial completamente, você precisa de permissão para adicionar [Atributos a um Produto](https://docs.magento.com/user-guide/catalog/product-attributes-add.html) no Adobe Commerce.
 
 Você também precisa do GraphQL IDE, como o [GraphiQL](https://github.com/graphql/graphiql), ou de uma extensão de navegador para executar amostras de código e tutoriais. Se você instalar uma extensão de navegador, verifique se ela é capaz de definir cabeçalhos de solicitação. No Google Chrome, o _Cliente Altair GraphQL_ é uma extensão que pode realizar o trabalho.
 
@@ -38,7 +36,7 @@ Você clona o [Projeto Venia](https://github.com/adobe/aem-cif-guides-venia) e s
 
 >[!NOTE]
 >
->**Você pode usar um projeto existente** (baseado no Arquétipo de Projeto AEM com CIF incluído) e ignorar esta seção.
+>**Você pode usar um projeto existente** (baseado no Arquétipo de Projetos AEM com CIF incluído) e ignorar esta seção.
 
 1. Execute o seguinte comando do Git para clonar o projeto:
 
@@ -57,7 +55,7 @@ Você clona o [Projeto Venia](https://github.com/adobe/aem-cif-guides-venia) e s
 
 1. Nesse ponto, você deve ter uma versão funcional de uma loja conectada a uma instância do Adobe Commerce. Navegue até a página `US` > `Home` em: [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
 
-   Você verá que a loja está usando o tema Venia. Ao expandir o Menu principal da loja, você verá várias categorias, indicando que a conexão com o Adobe Commerce está funcionando.
+   Você verá que a vitrine está usando o tema Venia. Ao expandir o Menu principal da loja, você verá várias categorias, indicando que a conexão com o Adobe Commerce está funcionando.
 
    ![Loja configurada com o tema Venia](../assets/customize-cif-components/venia-store-configured.png)
 
@@ -65,7 +63,7 @@ Você clona o [Projeto Venia](https://github.com/adobe/aem-cif-guides-venia) e s
 
 O Teaser do produto é apresentado em todo este tutorial. Como primeira etapa, adicione uma instância do Teaser do produto à página inicial para entender a funcionalidade da linha de base.
 
-1. Acesse a **página inicial** do site: [http://localhost:4502/editor.html/content/acme/us/en.html](http://localhost:4502/editor.html/content/acme/us/en.html)
+1. Navegue até a **Home Page** do site: [http://localhost:4502/editor.html/content/acme/us/en.html](http://localhost:4502/editor.html/content/acme/us/en.html)
 
 2. Insira um novo **Teaser do produto** no container do layout principal da página.
 
@@ -184,13 +182,13 @@ Em seguida, estenda a lógica de negócios do Teaser do produto implementando um
 
 Os Modelos do Sling são implementados como Java™ e podem ser encontrados no módulo **core** do projeto gerado.
 
-Use [o IDE de sua escolha](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=pt-BR#set-up-the-development-ide) para importar o projeto Venia. As capturas de tela usadas são do [Visual Studio Code IDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=pt-BR&#microsoft-visual-studio-code).
+Use [o IDE de sua escolha](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#set-up-the-development-ide) para importar o projeto Venia. As capturas de tela usadas são do [Visual Studio Code IDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?#microsoft-visual-studio-code).
 
 1. No IDE, navegue no módulo **core** para: `core/src/main/java/com/venia/core/models/commerce/MyProductTeaser.java`.
 
    ![IDE do local principal](../assets/customize-cif-components/core-location-ide.png)
 
-   `MyProductTeaser.java` é uma interface Java™ que estende a interface CIF [ProductTeaser](https://github.com/adobe/aem-core-cif-components/blob/master/bundles/core/src/main/java/com/adobe/cq/commerce/core/components/models/productteaser/ProductTeaser.java).
+   `MyProductTeaser.java` é uma interface Java™ que estende a interface [ProductTeaser](https://github.com/adobe/aem-core-cif-components/blob/master/bundles/core/src/main/java/com/adobe/cq/commerce/core/components/models/productteaser/ProductTeaser.java) do CIF.
 
    Já foi adicionado um novo método chamado `isShowBadge()` para exibir uma medalha se o produto for considerado &quot;Novo&quot;.
 
@@ -230,7 +228,7 @@ Este é um novo método para encapsular a lógica para indicar se o produto tem 
 
    Isso minimiza a quantidade de código Java™ que uma implementação deve gravar.
 
-1. AEM Um dos pontos de extensão adicionais fornecidos pelos Componentes Principais do CIF é o `AbstractProductRetriever`, que fornece acesso a atributos específicos do produto. Inspect o método `initModel()`:
+1. Um dos pontos de extensão adicionais fornecidos pelos Componentes principais do AEM CIF é o `AbstractProductRetriever`, que fornece acesso a atributos específicos do produto. Inspecione o método `initModel()`:
 
    ```java
    import javax.annotation.PostConstruct;
@@ -324,13 +322,13 @@ Este é um novo método para encapsular a lógica para indicar se o produto tem 
 
 ## Personalização da marcação do Teaser do produto {#customize-markup-product-teaser}
 
-Uma extensão comum de componentes do AEM é modificar a marcação gerada pelo componente. Essa modificação é feita substituindo o [script HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=pt-BR) que o componente usa para renderizar sua marcação. A Linguagem de modelo de HTML (HTL) é uma linguagem de modelo leve que os componentes AEM usam para renderizar dinamicamente a marcação com base no conteúdo criado, permitindo que os componentes sejam reutilizados. O Teaser do produto, por exemplo, pode ser reutilizado várias vezes para exibir produtos diferentes.
+Uma extensão comum de componentes do AEM é modificar a marcação gerada pelo componente. Essa modificação é feita substituindo o [script HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=pt-BR) que o componente usa para renderizar sua marcação. A Linguagem de modelo do HTML (HTL) é uma linguagem de modelo leve que os componentes do AEM usam para renderizar dinamicamente a marcação com base no conteúdo criado, permitindo que os componentes sejam reutilizados. O Teaser do produto, por exemplo, pode ser reutilizado várias vezes para exibir produtos diferentes.
 
-Nesse caso, renderize um banner sobre o teaser para indicar que o produto é &quot;Eco Friendly&quot; com base em um atributo personalizado. O padrão de design para [personalizar a marcação](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=pt-BR#customizing-the-markup) de um componente é padrão para todos os Componentes AEM AEM, não apenas para os Componentes Principais do CIF.
+Nesse caso, renderize um banner sobre o teaser para indicar que o produto é &quot;Eco Friendly&quot; com base em um atributo personalizado. O padrão de design para [personalizar a marcação](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html#customizing-the-markup) de um componente é padrão para todos os Componentes do AEM, não apenas para os Componentes Principais do AEM CIF.
 
 >[!NOTE]
 >
->Se você personalizar um componente usando os seletores de produto e categoria de CIF como este Teaser do produto ou o componente da página CIF, inclua a clientlib `cif.shell.picker` necessária para as caixas de diálogo do componente. Consulte [Uso do CIF e seletor de categoria de produto](use-cif-pickers.md) para obter detalhes.
+>Se você personalizar um componente usando os seletores de produto e categoria do CIF como este Teaser do produto ou o componente da página do CIF, certifique-se de incluir a clientlib `cif.shell.picker` necessária para as caixas de diálogo do componente. Consulte [Uso do seletor de produto e categoria do CIF](use-cif-pickers.md) para obter detalhes.
 
 1. No IDE, navegue e expanda o módulo `ui.apps` e expanda a hierarquia de pastas para: `ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productteaser` e inspecione o arquivo `.content.xml`.
 
@@ -346,7 +344,7 @@ Nesse caso, renderize um banner sobre o teaser para indicar que o produto é &qu
        componentGroup="Venia - Commerce"/>
    ```
 
-   A definição de componente para o Teaser do produto neste projeto está acima. Observe a propriedade `sling:resourceSuperType="core/cif/components/commerce/productteaser/v1/productteaser"`. Este é um exemplo de criação de um [componente Proxy](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html?lang=pt-BR#create-proxy-components). AEM Em vez de copiar e colar todos os scripts HTL do Teaser do produto dos Componentes Principais do CIF, você pode usar o `sling:resourceSuperType` para herdar toda a funcionalidade.
+   A definição de componente para o Teaser do produto neste projeto está acima. Observe a propriedade `sling:resourceSuperType="core/cif/components/commerce/productteaser/v1/productteaser"`. Este é um exemplo de criação de um [componente Proxy](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html#create-proxy-components). Em vez de copiar e colar todos os scripts HTL do Teaser do produto dos Componentes principais do AEM CIF, você pode usar o `sling:resourceSuperType` para herdar toda a funcionalidade.
 
 1. Abra o arquivo `productteaser.html`. Esta é uma cópia do arquivo `productteaser.html` do [Teaser do produto CIF](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/productteaser.html)
 
@@ -386,7 +384,7 @@ Nesse caso, renderize um banner sobre o teaser para indicar que o produto é &qu
 
    Ao chamar um método Modelo do Sling no HTL, a parte `get` e `is` do método é descartada e a primeira letra é em minúsculas. Então `isShowBadge()` torna-se `.showBadge` e `isEcoFriendly` torna-se `.ecoFriendly`. Com base no valor booleano retornado de `.isEcoFriendly()`, determina se `<span>Eco Friendly</span>` é exibido.
 
-   Para obter mais informações sobre `data-sly-test` e outras instruções em bloco HTL, consulte [A Especificação do HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/specification.html?lang=pt-BR).
+   Para obter mais informações sobre `data-sly-test` e outras instruções em bloco HTL, consulte [A Especificação do HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/specification.html).
 
 1. Salve as alterações e implante as atualizações no AEM usando suas habilidades em Maven em um terminal de linha de comando:
 
@@ -395,7 +393,7 @@ Nesse caso, renderize um banner sobre o teaser para indicar que o produto é &qu
    $ mvn clean install -PautoInstallSinglePackage -Pclassic
    ```
 
-1. Abra uma nova janela do navegador e navegue até o AEM e o **console OSGi** > **Status** > **Modelos Sling**: [http://localhost:4502/system/console/status-slingmodels](http://localhost:4502/system/console/status-slingmodels)
+1. Abra uma nova janela de navegador e navegue até o AEM e o **console OSGi** > **Status** > **Modelos Sling**: [http://localhost:4502/system/console/status-slingmodels](http://localhost:4502/system/console/status-slingmodels)
 
 1. Pesquise por `MyProductTeaserImpl` e você deverá ver uma linha como a seguinte:
 
@@ -413,7 +411,7 @@ Nesse caso, renderize um banner sobre o teaser para indicar que o produto é &qu
 
 1. Em seguida, abra o AEM `error.log` para ver as instruções de log que foram adicionadas. O `error.log` está em `<AEM SDK Install Location>/crx-quickstart/logs/error.log`.
 
-   Pesquise nos logs de AEM para ver as instruções de log que foram adicionadas ao Modelo do Sling:
+   Pesquise nos logs do AEM para ver as instruções de log que foram adicionadas ao Modelo do Sling:
 
    ```plain
    2020-08-28 12:57:03.114 INFO [com.venia.core.models.commerce.MyProductTeaserImpl] *** Product is Eco Friendly**
@@ -434,7 +432,7 @@ Neste ponto, a lógica de quando exibir o símbolo **Eco Friendly** está funcio
 1. Retorne ao IDE e navegue até a pasta `ui.frontend`.
 1. Adicionar o arquivo `eco_friendly.svg` à pasta `ui.frontend/src/main/resources/images`:
 
-   ![SVG compatível com Eco](../assets/customize-cif-components/eco-friendly-svg-added.png)
+   ![SVG Eco Friendly adicionado](../assets/customize-cif-components/eco-friendly-svg-added.png)
 
 1. Abra o arquivo `productteaser.scss` em `ui.frontend/src/main/styles/commerce/_productteaser.scss`.
 1. Adicionar as seguintes regras Sass dentro da classe `.productteaser`:
@@ -478,9 +476,9 @@ Neste ponto, a lógica de quando exibir o símbolo **Eco Friendly** está funcio
 
    ![Implementação Final Da Medalha Amigável Eco](../assets/customize-cif-components/final-product-teaser-eco-badge.png)
 
-## Parabéns {#congratulations}
+## Parabéns! {#congratulations}
 
-AEM Você personalizou seu primeiro componente CIF! Baixe os [arquivos de solução concluídos aqui](../assets/customize-cif-components/customize-cif-component-SOLUTION_FILES.zip).
+Você personalizou seu primeiro componente CIF do AEM. Baixe os [arquivos de solução concluídos aqui](../assets/customize-cif-components/customize-cif-component-SOLUTION_FILES.zip).
 
 ## Desafio extra {#bonus-challenge}
 
@@ -490,9 +488,9 @@ Revise a funcionalidade do selo **Novo** que já foi implementado no Teaser do p
 
 ## Recursos adicionais {#additional-resources}
 
-- [Arquétipo do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR)
-- [Componentes principais da CIF do AEM](https://github.com/adobe/aem-core-cif-components)
-- [Personalizar os Componentes principais da CIF do AEM](https://github.com/adobe/aem-core-cif-components)
+- [Arquétipo do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
+- [Componentes principais do AEM CIF](https://github.com/adobe/aem-core-cif-components)
+- [Personalização dos Componentes principais do AEM CIF](https://github.com/adobe/aem-core-cif-components)
 - [Personalizar os Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=pt-BR)
-- [Introdução ao AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=pt-BR)
-- [Uso do seletor de categoria e produto para CIF](use-cif-pickers.md)
+- [Introdução ao AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+- [Uso do seletor de produto e categoria do CIF](use-cif-pickers.md)

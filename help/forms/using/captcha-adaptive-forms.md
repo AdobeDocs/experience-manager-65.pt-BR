@@ -9,13 +9,11 @@ feature: Adaptive Forms,Foundation Components
 exl-id: 9b4219b8-d5eb-4099-b205-d98d84e0c249
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
 workflow-type: tm+mt
 source-wordcount: '1959'
 ht-degree: 6%
-
 ---
-
 # Uso de CAPTCHA em formulários adaptáveis{#using-captcha-in-adaptive-forms}
 
 | Versão | Link do artigo |
@@ -238,7 +236,7 @@ Selecione o campo **[!UICONTROL Valor da Moeda]** no formulário e crie as segui
 
 >[!NOTE]
 >
-> * Se você selecionar a configuração reCAPTCHA v2 com tamanho como **[!UICONTROL Invisível]** ou chaves com base em pontuação do reCAPTCHA Enterprise, a opção mostrar/ocultar não será aplicável.
+>* Se você selecionar a configuração reCAPTCHA v2 com tamanho como **[!UICONTROL Invisível]** ou chaves com base em pontuação do reCAPTCHA Enterprise, a opção mostrar/ocultar não será aplicável.
 
 ### Validar CAPTCHA {#validate-captcha}
 

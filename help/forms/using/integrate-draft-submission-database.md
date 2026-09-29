@@ -8,25 +8,23 @@ exl-id: 2e4f8f51-df02-4bbb-99bb-30181facd1e0
 solution: Experience Manager, Experience Manager Forms
 feature: Forms Portal
 role: Admin, User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
 workflow-type: tm+mt
-source-wordcount: '1502'
+source-wordcount: '1537'
 ht-degree: 1%
-
 ---
-
 # Amostra para integrar o componente de rascunhos e envios ao banco de dados {#sample-for-integrating-drafts-submissions-component-with-database}
 
 ## Visão geral de exemplo {#sample-overview}
 
-O componente de rascunhos e envios do portal do AEM Forms permite que os usuários salvem seus formulários como rascunhos e os enviem posteriormente de qualquer dispositivo. Além disso, os usuários podem exibir seus formulários enviados no portal. Para ativar essa funcionalidade, a AEM Forms fornece serviços de dados e metadados para armazenar os dados preenchidos por um usuário no formulário e os metadados do formulário associados aos rascunhos e formulários enviados. Esses dados são armazenados no repositório do CRX, por padrão. No entanto, como os usuários interagem com formulários por meio da instância de publicação do AEM, que geralmente está fora do firewall corporativo, as organizações podem querer personalizar o armazenamento de dados para que seja mais seguro e confiável.
+O componente de rascunhos e envios do portal do AEM Forms permite que os usuários salvem seus formulários como rascunhos e os enviem posteriormente de qualquer dispositivo. Além disso, os usuários podem exibir seus formulários enviados no portal. Para ativar essa funcionalidade, a AEM Forms fornece serviços de dados e metadados para armazenar os dados preenchidos por um usuário no formulário e os metadados do formulário associados aos rascunhos e formulários enviados. Esses dados são armazenados no repositório do CRX, por padrão. No entanto, como os usuários interagem com formulários por meio da instância de publicação do AEM, que geralmente está fora do firewall corporativo, as organizações podem querer personalizar o armazenamento de dados para que ele seja mais seguro e confiável.
 
 A amostra, discutida neste documento, é uma implementação de referência de dados personalizados e serviços de metadados para integrar rascunhos e componentes de envios a um banco de dados. O banco de dados usado na implementação da amostra é **MySQL 5.6.24**. No entanto, é possível integrar o componente de rascunhos e envios a qualquer banco de dados de sua escolha.
 
 >[!NOTE]
 >
 >* Os exemplos e as configurações explicadas neste documento são de acordo com o MySQL 5.6.24 e você deve substituí-los apropriadamente pelo seu sistema de banco de dados.
->* Verifique se você instalou a versão mais recente do pacote complementar do AEM Forms. Para obter a lista de pacotes disponíveis, consulte o artigo [versões do AEM Forms](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html).
+>* Verifique se você instalou a versão mais recente do pacote complementar do AEM Forms. Para obter a lista de pacotes disponíveis, consulte o artigo [versões do AEM Forms](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html).
 >* O pacote de amostra funciona somente com ações de envio do Adaptive Forms.
 
 ## Definir e configurar a amostra {#set-up-and-configure-the-sample}
@@ -37,14 +35,14 @@ Execute as seguintes etapas, em todas as instâncias de autor e publicação, pa
 
    Exemplo de pacote para integração de banco de dados
 
-[Obter arquivo](assets/aem-fp-db-integration-sample-pkg-6.1.2.zip)
+   [Obter arquivo](assets/aem-fp-db-integration-sample-pkg-6.1.2.zip)
 
 1. Acesse o gerenciador de pacotes do AEM em https://[*host*]:[*port*]/crx/packmgr/.
 1. Clique em **[!UICONTROL Carregar pacote]**.
 
 1. Navegue para selecionar o pacote **aem-fp-db-integration-sample-pkg-6.1.2.zip** e clique em **[!UICONTROL OK]**.
 1. Clique em **[!UICONTROL Instalar]** ao lado do pacote para instalá-lo.
-1. Ir para **[!UICONTROL Configuração do Console Web AEM]**
+1. Ir para **[!UICONTROL Configuração do Console da Web do AEM]**
 página em https://[*host*]:[*port*]/system/console/configMgr.
 1. Clique para abrir o **[!UICONTROL Rascunho e Configuração de Envio do Forms Portal]** no modo de edição.
 
@@ -89,79 +87,79 @@ página em https://[*host*]:[*port*]/system/console/configMgr.
 1. A conexão do banco de dados pode ser feita por meio do Apache Sling Connection Pooled Data Source.
 1. Para conexão Apache Sling, localize e clique para abrir a **[!UICONTROL Fonte de dados agrupada da conexão Apache Sling]** no modo de edição, na Configuração do console da Web. Especifique os valores das propriedades conforme descrito na tabela a seguir:
 
-<table>
- <tbody>
-  <tr>
+   <table>
+   <tbody>
+   <tr>
    <td><strong>Propriedade</strong></td>
    <td><strong>Valor</strong></td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>Nome da fonte de dados</td>
    <td><p>Um nome de fonte de dados para filtrar drivers do pool de fonte de dados</p> <p><strong>Observação: </strong><em>A implementação de exemplo usa FormsPortal como o nome da fonte de dados.</em></p> </td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>Classe de driver JDBC</td>
    <td>com.mysql.jdbc.Driver</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>URI de conexão JDBC<br /> </td>
    <td>jdbc:mysql://[<em>host</em>]:[<em>porta</em>]/[<em>nome_do_esquema</em>]</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>Nome de usuário</td>
    <td>Um nome de usuário para autenticar e executar ações em tabelas do banco de dados</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>Senha</td>
    <td>Senha associada ao nome de usuário</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>Isolamento de transação</td>
    <td>READ_COMMITTED</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>Máximo de conexões ativas</td>
    <td>1000</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>Máximo de Conexões Ociosas</td>
    <td>100</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>Mínimo de conexões ociosas</td>
    <td>10</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>Tamanho inicial</td>
    <td>10</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>Espera Máxima</td>
    <td>100000</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>Teste ao tomar emprestado</td>
    <td>Marcado</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>Teste enquanto ocioso</td>
    <td>Marcado</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>Consulta de validação</td>
    <td>Os valores de exemplo são SELECT 1(mysql), select 1 from dual(oracle), SELECT 1(MS Sql Server) (validationQuery)</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>Tempo limite de consulta de validação</td>
    <td>10000</td>
-  </tr>
- </tbody>
-</table>
+   </tr>
+   </tbody>
+   </table>
 
->[!NOTE]
->
->* O driver JDBC para MySQL não é fornecido com a amostra. Certifique-se de que você o provisionou e forneça as informações necessárias para configurar o pool de conexões JDBC.
->* Aponte suas instâncias de autor e publicação para usar o mesmo banco de dados. O valor do campo URI da conexão JDBC deve ser o mesmo para todas as instâncias do autor e de publicação.
+   >[!NOTE]
+   >
+   >* O driver JDBC para MySQL não é fornecido com a amostra. Certifique-se de que você o provisionou e forneça as informações necessárias para configurar o pool de conexões JDBC.
+   >* Aponte suas instâncias de autor e publicação para usar o mesmo banco de dados. O valor do campo URI da conexão JDBC deve ser o mesmo para todas as instâncias do autor e de publicação.
 
 1. Deixe as outras configurações como estão e clique em **[!UICONTROL Salvar]**.
 
@@ -315,7 +313,7 @@ Execute as seguintes etapas, em todas as instâncias de autor e publicação, pa
 
 >[!NOTE]
 >
-> É recomendável usar o comando &quot;Ctrl + C&quot; para reiniciar o SDK. Reiniciar o SDK do AEM usando métodos alternativos, por exemplo, parar processos Java, pode levar a inconsistências no ambiente de desenvolvimento do AEM.
+> É recomendável usar o comando &#39;Ctrl + C&#39; para reiniciar o SDK. Reiniciar o AEM SDK usando métodos alternativos, por exemplo, parar processos Java, pode levar a inconsistências no ambiente de desenvolvimento do AEM.
 
 ## Exemplo de código para o serviço de dados e metadados do portal de formulários {#sample-code-for-forms-portal-data-and-metadata-service}
 

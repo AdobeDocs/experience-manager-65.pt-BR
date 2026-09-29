@@ -4,13 +4,11 @@ description: Use os componentes principais do formulário adaptável do AEM 6.5 
 feature: Adaptive Forms, Core Components
 role: User, Developer, Admin
 exl-id: 91e6fca2-60ba-45f1-98c3-7b3fb1d762f5
-source-git-commit: 130d900a9c268362b75ffa947606c7145a1f8c9d
+source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
 workflow-type: tm+mt
-source-wordcount: '631'
+source-wordcount: '652'
 ht-degree: 0%
-
 ---
-
 # Controle de versão, revisão e comentário em um Formulário adaptável
 
 <!--
@@ -27,7 +25,7 @@ Assista a este vídeo passo a passo para ver os recursos de controle de versão,
 
 ## Pré-requisitos {#prerequisite-versioning}
 
-Para usar os recursos de controle de versão, comentário e anotação em um Formulário adaptável, verifique se os [Componentes principais do formulário adaptável](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components) estão habilitados no ambiente do Forms do AEM 6.5.
+Para usar os recursos de controle de versão, comentário e anotação em um Formulário adaptável, verifique se os [Componentes principais do formulário adaptável](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components) estão habilitados no ambiente do Forms do AEM 6.5.
 
 ## Versão do formulário adaptável {#adaptive-form-versioning}
 
@@ -67,7 +65,8 @@ Os autores de formulário podem comparar duas versões diferentes de um formulá
 Uma revisão é um mecanismo que permite que um ou mais revisores comentem formulários. Qualquer usuário do formulário pode comentar em um formulário ou revisar um formulário por meio de comentários. Para comentar em um formulário, selecione um **[!UICONTROL Formulário]** e adicione um **[!UICONTROL Comentário]** ao formulário.
 
 >[!NOTE]
-> Quando você usa comentários em componentes principais do formulário adaptável, como discutido acima, a funcionalidade de formulário, [adicionar revisores a formulários](/help/forms/using/create-reviews-forms.md), está desabilitada.
+>
+>Quando você usa comentários em componentes principais do formulário adaptável, como discutido acima, a funcionalidade de formulário, [adicionar revisores a formulários](/help/forms/using/create-reviews-forms.md), está desabilitada.
 
 
 ![Adicionar comentários em um formulário](assets/form-comments.png)
