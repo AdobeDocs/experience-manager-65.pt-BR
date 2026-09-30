@@ -159,4 +159,4 @@ Também é possível usar APIs para acessar e remover nós e propriedades. Consu
 
 * [Como acessar programaticamente o JCR do AEM](/help/sites-developing/access-jcr.md)
 * [Removendo nós e propriedades](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/10_Writing.html#10.9%20Removing%20Nodes%20and%20Properties)
-* [Referência da API](https://helpx.adobe.com/experience-manager/6-3/sites-developing/reference-materials/javadoc/overview-summary.html)
+* [Referência da API](https://helpx.adobe.com/br/experience-manager/6-3/sites-developing/reference-materials/javadoc/overview-summary.html)
