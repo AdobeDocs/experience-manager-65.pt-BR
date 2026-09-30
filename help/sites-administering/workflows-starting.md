@@ -39,7 +39,7 @@ Ao administrar workflows, você pode iniciá-los usando vários métodos:
 
 ## Modelos do fluxo de trabalho {#workflow-models}
 
-Você pode iniciar um fluxo de trabalho [ com base em um dos modelos](/help/sites-administering/workflows.md#workflow-models-and-instances) listados no console Modelos de Fluxo de Trabalho. As únicas informações obrigatórias são o conteúdo, embora um título e/ou comentário também possa ser adicionado.
+Você pode iniciar um fluxo de trabalho [&#x200B; com base em um dos modelos](/help/sites-administering/workflows.md#workflow-models-and-instances) listados no console Modelos de Fluxo de Trabalho. As únicas informações obrigatórias são o conteúdo, embora um título e/ou comentário também possa ser adicionado.
 
 ## Iniciadores de fluxos de trabalho {#workflows-launchers}
 
@@ -172,7 +172,7 @@ Um pacote de workflow:
      Esta propriedade do inicializador é uma lista de itens separados por vírgulas: &quot;
 
      * `property-name` ignorar qualquer evento `jcr` disparado no nome de propriedade especificado. &quot;
-     * `event-user-data:<*someValue*>` ignora qualquer evento que contenha `*<someValue*`> `user-data` definido por meio da API [`ObservationManager` ](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String).
+     * `event-user-data:<*someValue*>` ignora qualquer evento que contenha `*<someValue*`> `user-data` definido por meio da API [`ObservationManager` ] (https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String).
 
      Por exemplo:
 

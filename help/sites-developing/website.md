@@ -1528,6 +1528,6 @@ Para este componente, você pode definir vários parâmetros nos modos de ediç�
    ```
 
 1. Salve as alterações.
-1. No navegador, recarregue a página ** Produtos **. A página inteira se parece com o seguinte:
+1. No navegador, recarregue a página **&#x200B; Produtos &#x200B;**. A página inteira se parece com o seguinte:
 
    ![chlimage_1-5](assets/chlimage_1-5.jpeg)
