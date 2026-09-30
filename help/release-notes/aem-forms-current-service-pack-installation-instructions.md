@@ -5,13 +5,11 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
-source-git-commit: 8ad159ce65fd11c6d1d75a2bc75061f6996f173e
+source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
 workflow-type: tm+mt
-source-wordcount: '2144'
+source-wordcount: '2149'
 ht-degree: 8%
-
 ---
-
 # Instruções de instalação do AEM 6.5 Forms Service Pack {#aem-form-patch-installation-instructions}
 
 ## Informações da versão
@@ -95,15 +93,15 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 1. Extraia o **arquivo do instalador do AEM Forms no JEE Service Pack** para o disco rígido:
 
    * **Windows**
-Navegue até o diretório apropriado na mídia ou pasta de instalação no disco rígido em que você copiou o instalador e clique duas vezes no arquivo `aemforms65_cfp_install.exe`.
+     Navegue até o diretório apropriado na mídia ou pasta de instalação no disco rígido em que você copiou o instalador e clique duas vezes no arquivo `aemforms65_cfp_install.exe`.
 
-      * (Windows de 32 bits) `Windows\Disk1\InstData\VM`
-      * (Windows 64-bit) `Windows_64Bit`\ `Disk1\InstData\VM`
+     * (Windows de 32 bits) `Windows\Disk1\InstData\VM`
+     * (Windows 64-bit) `Windows_64Bit`\ `Disk1\InstData\VM`
 
    * **Linux®**
-Navegue até o diretório apropriado, em um shell e digite `./aem65_cfp_install.bin`.
+     Navegue até o diretório apropriado, em um shell e digite `./aem65_cfp_install.bin`.
 
-      * (Linux®) `Linux/Disk1/InstData/NoVM`
+     * (Linux®) `Linux/Disk1/InstData/NoVM`
 
    Isso inicia um assistente de instalação que o guiará durante a instalação.
 
@@ -189,9 +187,9 @@ O pacote é instalado automaticamente.
 
   Para conhecer as plataformas certificadas para trabalhar com esta versão, consulte os [requisitos técnicos](/help/sites-deploying/technical-requirements.md).
 
-   1. A página de informações do produto (`/system/console/productinfo`) exibe a cadeia de caracteres da versão atualizada `Adobe Experience Manager (spversion)` em [!UICONTROL Produtos Instalados].<!-- UPDATE FOR EACH NEW RELEASE -->
-   1. Todos os pacotes OSGi estão **[!UICONTROL ATIVOS]** ou **[!UICONTROL FRAGMENTOS]** no Console OSGi (Use o Console da Web: `/system/console/bundles`).
-   1. O pacote OSGi `org.apache.jackrabbit.oak-core` é versão 1.22.14 ou posterior (Use WebConsole: `/system/console/bundles`).
+  1. A página de informações do produto (`/system/console/productinfo`) exibe a cadeia de caracteres da versão atualizada `Adobe Experience Manager (spversion)` em [!UICONTROL Produtos Instalados].<!-- UPDATE FOR EACH NEW RELEASE -->
+  1. Todos os pacotes OSGi estão **[!UICONTROL ATIVOS]** ou **[!UICONTROL FRAGMENTOS]** no Console OSGi (Use o Console da Web: `/system/console/bundles`).
+  1. O pacote OSGi `org.apache.jackrabbit.oak-core` é versão 1.22.14 ou posterior (Use WebConsole: `/system/console/bundles`).
 
 +++
 
@@ -262,11 +260,11 @@ Há dois métodos diferentes que você pode usar para instalar automaticamente o
 
   Para conhecer as plataformas certificadas para trabalhar com esta versão, consulte os [requisitos técnicos](/help/sites-deploying/technical-requirements.md).
 
-   1. A página de informações do produto (`/system/console/productinfo`) exibe a cadeia de caracteres da versão atualizada `Adobe Experience Manager (spversion)` em [!UICONTROL Produtos Instalados]. <!-- UPDATE FOR EACH NEW RELEASE -->
+  1. A página de informações do produto (`/system/console/productinfo`) exibe a cadeia de caracteres da versão atualizada `Adobe Experience Manager (spversion)` em [!UICONTROL Produtos Instalados]. <!-- UPDATE FOR EACH NEW RELEASE -->
 
-   1. Todos os pacotes OSGi estão **[!UICONTROL ATIVOS]** ou **[!UICONTROL FRAGMENTOS]** no Console OSGi (Use o Console da Web: `/system/console/bundles`).
+  1. Todos os pacotes OSGi estão **[!UICONTROL ATIVOS]** ou **[!UICONTROL FRAGMENTOS]** no Console OSGi (Use o Console da Web: `/system/console/bundles`).
 
-      1. O pacote OSGi `org.apache.jackrabbit.oak-core` é versão 1.22.14 ou posterior (Use o Console da Web: `/system/console/bundles`).
+     1. O pacote OSGi `org.apache.jackrabbit.oak-core` é versão 1.22.14 ou posterior (Use o Console da Web: `/system/console/bundles`).
 
 +++
 

@@ -1,6 +1,6 @@
 ---
 title: Aplicar assinaturas eletrônicas a um formulário usando assinaturas escritas
-description: Saiba como assinar o AEM Adaptive Forms usando a assinatura de rabisco. Você pode usar a etapa de assinatura à mão para desenhar a assinatura em um formulário.
+description: Saiba como assinar o AEM Adaptive Forms usando a assinatura à mão. Você pode usar a etapa de assinatura à mão para desenhar a assinatura em um formulário.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 docset: aem65
@@ -8,16 +8,14 @@ feature: Adaptive Forms,Foundation Components
 exl-id: 096f61b0-59f4-4699-9093-8fb1ed81fded
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
 workflow-type: tm+mt
-source-wordcount: '718'
-ht-degree: 2%
-
+source-wordcount: '763'
+ht-degree: 12%
 ---
-
 # Aplicar assinaturas eletrônicas a um formulário usando assinaturas escritas{#apply-electronic-signatures-to-a-form-using-deprecated-scribble-signatures}
 
-O <span class="preview"> Adobe recomenda o uso de [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adicionar o Forms Adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
+A Adobe <span class="preview"> recomenda usar os [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adicionar o Forms Adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
 
 
 | Versão | Link do artigo |
@@ -33,13 +31,14 @@ Você pode usar o componente **Assinatura assinável** e o componente **Etapa de
 ## Várias opções disponíveis na Janela de assinatura
 
 * **A:** Clique no ícone **Pincel de Tinta** para desenhar sua assinatura na tela.
-* **B:** Clique no ícone **Limpar** para limpar a assinatura na tela.
-* **C:** Clique no ícone **Geolocalização** para adicionar a geolocalização junto com a assinatura.
-* **D:** Clique no ícone **Teclado** para digitar seu nome na tela.
+* **B:** clique no ícone de **Limpar** para limpar a assinatura na tela.
+* **C:** clique no ícone de **Geolocalização** para adicionar a geolocalização junto com a assinatura.
+* **D:** clique no ícone de **Teclado** para digitar o seu nome na tela.
 
-Depois de selecionar o ícone Concluído![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) na janela Assinatura Escrita, você não poderá editar a assinatura. No caso, se você quiser editar a assinatura, desconsidere a assinatura atual e assine novamente usando a opção Pincel/Teclado acima.
+Depois de selecionar o ícone Concluído![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) na janela Assinatura Escrita, você não poderá editar a assinatura. Caso você queira editar a assinatura, desconsidere a assinatura atual e assine novamente com a opção de pincel/teclado acima.
 
 Você pode selecionar o ícone **Configurar** ![configurar](assets/configure.png) para definir a proporção da tela Assinatura Escrita.
+
 * Quando a proporção da tela Assinatura Escrita for menor que 1, as informações de localização geográfica serão adicionadas na parte inferior da tela Assinatura Escrita.
 
 * Quando a proporção da tela Assinatura Escrita for maior que 1, as informações de geolocalização serão adicionadas ao lado direito da tela Assinatura Escrita.
@@ -49,8 +48,7 @@ Você pode selecionar o ícone **Configurar** ![configurar](assets/configure.png
 
 >[!NOTE]
 >
->As assinaturas são sempre salvas em formato PNG.
->
+>As assinaturas são sempre salvas no formato PNG.
 
 ## Configurar um formulário adaptável para usar a assinatura escritas {#configure-an-adaptive-form-to-use-scribble-signature}
 
@@ -76,14 +74,14 @@ Você pode selecionar o ícone **Configurar** ![configurar](assets/configure.png
    * **Nome do Elemento**: especifique o nome do componente.
 
    * **Título:** especifique o título exclusivo do componente.
-   * **Mensagem de modelo:** especifique a mensagem a ser exibida enquanto o PDF de assinatura estiver sendo carregado. Os serviços da Adobe Sign demoram algum tempo para preparar e carregar o PDF de assinatura.
+   * **Mensagem de modelo:** especifique a mensagem a ser exibida enquanto o PDF de assinatura estiver sendo carregado. Os serviços do Adobe Sign demoram algum tempo para preparar e carregar PDF de assinatura.
    * **Serviço de assinatura:** selecione a opção **Assinatura assinável**.
 
    * **Classe CSS**: especifique a classe CSS da biblioteca do cliente, se houver. Use [temas](../../forms/using/themes.md) e [estilos embutidos](../../forms/using/inline-style-adaptive-forms.md) em vez da Classe CSS.
 
    Selecione o ícone Concluído ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) para salvar as alterações. A Assinatura foi configurada com êxito.
 
-   Agora, quando você preenche um formulário, uma versão de PDF do formulário adaptável é exibida e as opções para assinar o documento de PDF são fornecidas. Para obter informações detalhadas, consulte [Assinar um formulário adaptável usando a Assinatura Escrita](../../forms/using/signing-forms-using-scribble.md#sign-an-adaptive-form-using-scribble-signature).
+   Agora, quando você preenche um formulário, uma versão PDF do formulário adaptável é exibida e as opções para assinar o documento do PDF são fornecidas. Para obter informações detalhadas, consulte [Assinar um formulário adaptável usando a Assinatura Escrita](../../forms/using/signing-forms-using-scribble.md#sign-an-adaptive-form-using-scribble-signature).
 
 ## Assinar um formulário adaptável usando a Assinatura Escrita {#sign-an-adaptive-form-using-scribble-signature}
 

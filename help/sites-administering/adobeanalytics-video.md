@@ -1,6 +1,6 @@
 ---
 title: Configuração do rastreamento de vídeo para o Adobe Analytics
-description: Saiba mais sobre como configurar o rastreamento de vídeo para o SiteCatalyst.
+description: Saiba como configurar o rastreamento de vídeo para o SiteCatalyst.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
@@ -10,20 +10,18 @@ exl-id: 5d51f898-b6d1-40ac-bdbf-127cda1dc777
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
+source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
 workflow-type: tm+mt
-source-wordcount: '1758'
+source-wordcount: '1817'
 ht-degree: 0%
-
 ---
-
 # Configuração do rastreamento de vídeo para o Adobe Analytics{#configuring-video-tracking-for-adobe-analytics}
 
 Há vários métodos disponíveis para rastrear eventos de vídeo, dois dos quais são opções herdadas para versões mais antigas do Adobe Analytics. Essas opções herdadas são: Marcos herdados e Segundos herdados.
 
 >[!NOTE]
 >
->Antes de continuar, verifique se você tem um **vídeo reproduzível** carregado com AEM.
+>Antes de continuar, verifique se você tem um **vídeo reproduzível** carregado no AEM.
 >
 >Para garantir que seus vídeos sejam reproduzidos na página, consulte **[este tutorial](/help/sites-authoring/default-components-foundation.md#video)** para obter informações sobre como transcodificar arquivos de vídeo no AEM.
 
@@ -42,7 +40,7 @@ Use o procedimento a seguir para configurar uma estrutura para o rastreamento de
    * Os exemplos nas seções a seguir usam o nome **my-sc-configuration** para a configuração e **videofw** para a estrutura.
 
 1. Na página da estrutura, selecione uma RSID e defina o uso para todos. ([https://localhost:4502/cf#/etc/cloudservices/sitecatalyst/videoconf/videofw.html](https://localhost:4502/cf#/etc/cloudservices/sitecatalyst/videoconf/videofw.html))
-1. Na categoria geral de componentes no Sidekick, arraste o componente de Vídeo para a estrutura.
+1. Na categoria de componente Geral, no Sidekick, arraste o componente de Vídeo para a estrutura.
 1. Selecione um método de rastreamento:
 
    * [Etapas](/help/sites-administering/adobeanalytics.md)
@@ -202,15 +200,15 @@ Os exemplos de dados de rastreamento do Adobe Analytics a seguir se aplicam ao r
   </tr>
   <tr>
    <td>eventdata.a.contentType </td>
-   <td>EVAR 3</td>
+   <td>EVAR3</td>
   </tr>
   <tr>
    <td>eventdata.a.media.name </td>
-   <td>eVar 1, prop1 </td>
+   <td>eVar1, prop1 </td>
   </tr>
   <tr>
    <td>eventdata.a.media.segment </td>
-   <td>EVAR 2</td>
+   <td>EVAR2</td>
   </tr>
  </tbody>
 </table>
@@ -229,15 +227,15 @@ As chamadas para o Adobe Analytics usando o exemplo fornecido devem ter esta apa
 
 *Esta é a **primeira chamada**&#x200B;feita para o Adobe Analytics contendo os seguintes valores:*
 
-* *prop1 e eVar 1 para eventdata.a.media.name,*
-* *props2-4, juntamente com eVar 2 e eVar 3 contendo contentType (vídeo) e segmento (1:O:1-4)*
+* *prop1 e eVar1 para eventdata.a.media.name,*
+* *props2-4, juntamente com eVar2 e eVar3 que contêm contentType (vídeo) e segment (1:O:1-4)*
 * *event3 que foi mapeado para eventdata.events.a.media.view.*
 
 ![chlimage_1-129](assets/chlimage_1-129.png)
 
 *Esta é a **terceira chamada**&#x200B;feita para o Adobe Analytics:*
 
-* *prop1 e eVar 1 contêm a.media.name;*
+* *prop1 e eVar1 contêm a.media.name;*
 * *event1 porque um segmento foi visualizado*
 * *evento2 enviado com tempo reproduzido = 4*
 * *event11 enviado porque eventdata.events.milestone8 foi atingido*
@@ -293,26 +291,26 @@ Este método é semelhante ao método de Marcos com a diferença de que os marco
 
    Além disso, as informações enviadas para o Adobe Analytics são menos personalizáveis. Há apenas três variáveis disponíveis para mapeamento:
 
-<table>
- <tbody>
-  <tr>
-   <td>eventdata.videoName <br /> </td>
-   <td>As variáveis mapeadas para este contêm o nome <strong>amigável</strong> do usuário (<strong>Título</strong>) do vídeo, se definido no DAM. Se o Título não for definido, o <strong>nome do arquivo</strong> do vídeo será enviado. Enviado apenas uma vez, no início da reprodução de um vídeo.<br /> </td>
-  </tr>
-  <tr>
-   <td>eventdata.videoFileName </td>
-   <td>As variáveis mapeadas para esse local conterão o nome do arquivo. Enviado somente uma vez, no início da reprodução de um vídeo.</td>
-  </tr>
-  <tr>
-   <td>eventdata.videoFilePath </td>
-   <td>A variável mapeada para este conterá o caminho do arquivo no servidor. Enviado somente uma vez, no início da reprodução de um vídeo.</td>
-  </tr>
- </tbody>
-</table>
+   <table>
+   <tbody>
+   <tr>
+      <td>eventdata.videoName <br /> </td>
+      <td>As variáveis mapeadas para este contêm o nome <strong>amigável</strong> do usuário (<strong>Título</strong>) do vídeo, se definido no DAM. Se o Título não for definido, o <strong>nome do arquivo</strong> do vídeo será enviado. Enviado apenas uma vez, no início da reprodução de um vídeo.<br /> </td>
+   </tr>
+   <tr>
+      <td>eventdata.videoFileName </td>
+      <td>As variáveis mapeadas para esse local conterão o nome do arquivo. Enviado somente uma vez, no início da reprodução de um vídeo.</td>
+   </tr>
+   <tr>
+      <td>eventdata.videoFilePath </td>
+      <td>A variável mapeada para este conterá o caminho do arquivo no servidor. Enviado somente uma vez, no início da reprodução de um vídeo.</td>
+   </tr>
+   </tbody>
+   </table>
 
->[!NOTE]
->
->Você pode definir o nome **amigável** de um vídeo, abrindo o vídeo para edição no DAM e definindo o campo de metadados **Título** com o nome desejado. Também é necessário Salvar as alterações feitas ao concluir.
+   >[!NOTE]
+   >
+   >Você pode definir o nome **amigável** de um vídeo, abrindo o vídeo para edição no DAM e definindo o campo de metadados **Título** com o nome desejado. Também é necessário Salvar as alterações feitas ao concluir.
 
 1. Mapear essas variáveis para props 1 a 3
 
@@ -328,7 +326,7 @@ Este método é semelhante ao método de Marcos com a diferença de que os marco
 
    * *Comprimento* - O comprimento do arquivo de vídeo, em segundos (*100*)
 
-   * *Nome do player* - O player de vídeo usado para reproduzir o arquivo de vídeo (*HTML5 vídeo*)
+   * *Nome do player* - O player de vídeo usado para reproduzir o arquivo de vídeo (*vídeo do HTML5*)
 
    * *Total de Segundos Reproduzidos* - O número total de segundos em que o vídeo foi reproduzido (*25*)
 
@@ -350,26 +348,26 @@ Ao usar o método **&#x200B; legacy seconds**, as chamadas do Adobe Analytics s�
 
    As informações enviadas para o Adobe Analytics são menos personalizáveis. Há apenas 3 variáveis disponíveis para mapeamento:
 
-<table>
- <tbody>
-  <tr>
-   <td>eventdata.videoName <br /> </td>
-   <td>As variáveis mapeadas para este contêm o nome <strong>amigável</strong> do usuário (<strong>Título</strong>) do vídeo, se definido no DAM. Se o Título não for definido, o <strong>nome do arquivo</strong> do vídeo será enviado. Enviado apenas uma vez, no início da reprodução de um vídeo.<br /> </td>
-  </tr>
-  <tr>
-   <td>eventdata.videoFileName </td>
-   <td>A variável mapeada para este conterá o nome do arquivo. Enviado somente uma vez, no início da reprodução de um vídeo.</td>
-  </tr>
-  <tr>
-   <td>eventdata.videoFilePath </td>
-   <td>A variável mapeada para este conterá o caminho do arquivo no servidor. Enviado somente uma vez, no início da reprodução de um vídeo.</td>
-  </tr>
- </tbody>
-</table>
+   <table>
+   <tbody>
+   <tr>
+      <td>eventdata.videoName <br /> </td>
+      <td>As variáveis mapeadas para este contêm o nome <strong>amigável</strong> do usuário (<strong>Título</strong>) do vídeo, se definido no DAM. Se o Título não for definido, o <strong>nome do arquivo</strong> do vídeo será enviado. Enviado apenas uma vez, no início da reprodução de um vídeo.<br /> </td>
+   </tr>
+   <tr>
+      <td>eventdata.videoFileName </td>
+      <td>A variável mapeada para este conterá o nome do arquivo. Enviado somente uma vez, no início da reprodução de um vídeo.</td>
+   </tr>
+   <tr>
+      <td>eventdata.videoFilePath </td>
+      <td>A variável mapeada para este conterá o caminho do arquivo no servidor. Enviado somente uma vez, no início da reprodução de um vídeo.</td>
+   </tr>
+   </tbody>
+   </table>
 
->[!NOTE]
->
->Você pode definir o nome **amigável** de um vídeo, abrindo o vídeo para edição no DAM e definindo o campo de metadados **Título** com o nome desejado. Também é necessário Salvar as alterações feitas ao concluir.
+   >[!NOTE]
+   >
+   >Você pode definir o nome **amigável** de um vídeo, abrindo o vídeo para edição no DAM e definindo o campo de metadados **Título** com o nome desejado. Também é necessário Salvar as alterações feitas ao concluir.
 
 1. Mapear essas variáveis para prop1, prop2 e prop3
 

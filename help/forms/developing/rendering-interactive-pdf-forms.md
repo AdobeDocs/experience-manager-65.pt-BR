@@ -1,6 +1,6 @@
 ---
-title: Renderização de PDF forms interativos
-description: Use o serviço Forms para renderizar PDF forms interativos em dispositivos clientes, geralmente navegadores da Web, para coletar informações dos usuários. Você pode usar o serviço Forms para renderizar formulários interativos usando a API Java e a API do serviço da Web.
+title: Renderização do PDF forms interativo
+description: Use o serviço Forms para renderizar o PDF forms interativo em dispositivos clientes, geralmente navegadores da Web, para coletar informações dos usuários. Você pode usar o serviço Forms para renderizar formulários interativos usando a API Java e a API do serviço da Web.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
@@ -9,19 +9,18 @@ topic-tags: operations
 role: Developer
 exl-id: d9f32939-c2c0-4531-b15e-f63941c289e3
 solution: Experience Manager, Experience Manager Forms
+
 feature: Adaptive Forms,Document Services,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '2455'
+source-wordcount: '2471'
 ht-degree: 0%
-
 ---
-
-# Renderização de PDF forms interativos {#rendering-interactive-pdf-forms}
+# Renderização do PDF forms interativo {#rendering-interactive-pdf-forms}
 
 **Exemplos e exemplos neste documento são somente para AEM Forms no ambiente JEE.**
 
-O serviço Forms renderiza PDF forms interativos em dispositivos clientes, geralmente navegadores da Web, para coletar informações dos usuários. Depois que um formulário interativo é renderizado, um usuário pode inserir dados em campos de formulário e clicar em um botão de envio localizado no formulário para enviar informações de volta para o serviço Forms. O Adobe Reader ou o Acrobat devem estar instalados no computador que hospeda o navegador da Web do cliente para que um formulário PDF interativo fique visível.
+O serviço Forms renderiza o PDF forms interativo em dispositivos clientes, geralmente navegadores da Web, para coletar informações dos usuários. Depois que um formulário interativo é renderizado, um usuário pode inserir dados em campos de formulário e clicar em um botão de envio localizado no formulário para enviar informações de volta para o serviço Forms. O Adobe Reader ou o Acrobat devem estar instalados no computador que hospeda o navegador da Web do cliente para que um formulário interativo do PDF fique visível.
 
 >[!NOTE]
 >
@@ -45,11 +44,11 @@ A tabela a seguir descreve as etapas deste diagrama.
  <tbody>
   <tr>
    <td><p>1</p></td>
-   <td><p>O Servlet Java <code>GetLoanForm</code> é chamado de uma página de HTML. </p></td>
+   <td><p>O Servlet Java <code>GetLoanForm</code> é chamado de uma página do HTML. </p></td>
   </tr>
   <tr>
    <td><p>2</p></td>
-   <td><p>O Servlet Java <code>GetLoanForm</code> usa a API do cliente do serviço Forms para renderizar o formulário de empréstimo para o navegador Web do cliente. (Consulte <a href="#render-an-interactive-pdf-form-using-the-java-api">Renderizar um formulário PDF interativo usando a API Java</a>.)</p></td>
+   <td><p>O Servlet Java <code>GetLoanForm</code> usa a API do cliente do serviço Forms para renderizar o formulário de empréstimo para o navegador Web do cliente. (Consulte <a href="#render-an-interactive-pdf-form-using-the-java-api">Renderizar um formulário interativo do PDF usando a API Java</a>.)</p></td>
   </tr>
   <tr>
    <td><p>3</p></td>
@@ -106,13 +105,13 @@ Normalmente, você não colocaria o código da API do cliente de serviço do For
 
 **Resumo das etapas**
 
-Para renderizar um formulário PDF interativo, execute as seguintes tarefas:
+Para renderizar um formulário interativo do PDF, execute as seguintes tarefas:
 
 1. Incluir arquivos de projeto.
 1. Crie um objeto da API do cliente do Forms.
 1. Especifique valores de URI.
 1. Anexe arquivos ao formulário (Opcional).
-1. Renderize um formulário PDF interativo.
+1. Renderize um formulário interativo do PDF.
 1. Grave o fluxo de dados do formulário no navegador da Web do cliente.
 
 **Incluir arquivos de projeto**
@@ -150,7 +149,7 @@ Ao renderizar um formulário interativo, você pode definir valores de URI, como
 * No botão Enviar ao projetar o design do formulário no Designer
 * Ao usar a API do cliente de serviço do Forms
 
-Se o URL de destino for definido no design do formulário, não o substitua pela API do cliente de serviço do Forms. Ou seja, definir o URL de destino usando a API do Forms redefine o URL especificado no design do formulário para o especificado usando a API. Se desejar enviar o formulário PDF para a URL de destino especificada no design do formulário, defina programaticamente a URL de destino como uma cadeia de caracteres vazia.
+Se o URL de destino for definido no design do formulário, não o substitua pela API do cliente de serviço do Forms. Ou seja, definir o URL de destino usando a API do Forms redefine o URL especificado no design do formulário para o especificado usando a API. Se desejar enviar o formulário do PDF para a URL de destino especificada no design do formulário, defina programaticamente a URL de destino como uma cadeia de caracteres vazia.
 
 Se você tiver um formulário que contenha um botão Enviar e um botão Calcular (com um script correspondente executado no servidor), será possível definir programaticamente a URL para onde o formulário é enviado para executar o script. Use o botão enviar no design do formulário para especificar a URL na qual os dados do formulário são publicados. (Consulte [Calcular Dados De Formulário](/help/forms/developing/calculating-form-data.md).)
 
@@ -160,15 +159,15 @@ Se você tiver um formulário que contenha um botão Enviar e um botão Calcular
 
 **Anexar arquivos ao formulário**
 
-Você pode anexar arquivos a um formulário. Quando você renderiza um formulário PDF com anexos de arquivo, os usuários podem recuperar os anexos de arquivo no Acrobat usando o painel de anexos de arquivo. Você pode anexar diferentes tipos de arquivo a um formulário, como um arquivo de texto, ou a um arquivo binário, como um arquivo JPG/.
+Você pode anexar arquivos a um formulário. Ao renderizar um formulário do PDF com anexos de arquivo, os usuários podem recuperar os anexos de arquivo no Acrobat usando o painel de anexos de arquivo. Você pode anexar diferentes tipos de arquivo a um formulário, como um arquivo de texto, ou a um arquivo binário, como um arquivo JPG.
 
 >[!NOTE]
 >
 >Anexar anexos de arquivo a um formulário é opcional.
 
-**Renderizar um formulário de PDF interativo**
+**Renderizar um formulário interativo do PDF**
 
-Para renderizar um formulário, use um design de formulário criado no Designer e salvo como um arquivo XDP ou PDF. Além disso, é possível renderizar um formulário criado com o Acrobat e salvo como um arquivo PDF. Para renderizar um formulário PDF interativo, chame o método `renderPDFForm` ou o método `renderPDFForm2` do objeto `FormsServiceClient`.
+Para renderizar um formulário, use um design de formulário criado no Designer e salvo como um arquivo XDP ou PDF. Além disso, é possível renderizar um formulário criado usando o Acrobat e salvo como um arquivo PDF. Para renderizar um formulário interativo do PDF, chame o método `renderPDFForm` ou o método `renderPDFForm2` do objeto `FormsServiceClient`.
 
 O `renderPDFForm` usa um objeto `URLSpec`. A raiz de conteúdo para o arquivo XDP é passada para o serviço Forms usando o método `setContentRootURI` do objeto `URLSpec`. O nome de design do Formulário ( `formQuery`) é passado como um valor de parâmetro separado. Os dois valores são concatenados para obter a referência absoluta para o design do formulário.
 
@@ -176,11 +175,11 @@ O método `renderPDFForm2` aceita uma instância `com.adobe.idp.Document` que co
 
 >[!NOTE]
 >
->A opção de tempo de execução de PDF marcado não pode ser definida se o documento de entrada for um documento PDF. Se o arquivo de entrada for um arquivo XDP, a opção PDF com tags poderá ser definida.
+>A opção de tempo de execução do PDF marcado não pode ser definida se o documento de entrada for um documento do PDF. Se o arquivo de entrada for um arquivo XDP, a opção PDF marcada poderá ser definida.
 
-## Renderize um formulário PDF interativo usando a API Java {#render-an-interactive-pdf-form-using-the-java-api}
+## Renderize um formulário interativo do PDF usando a API do Java {#render-an-interactive-pdf-form-using-the-java-api}
 
-Renderize um formulário PDF interativo usando a API do Forms (Java):
+Renderize um formulário interativo do PDF usando a API do Forms (Java):
 
 1. Incluir arquivos de projeto
 
@@ -203,7 +202,7 @@ Renderize um formulário PDF interativo usando a API do Forms (Java):
    * Crie um objeto `java.util.HashMap` para armazenar anexos de arquivo usando seu construtor.
    * Invoque o método `put` do objeto `java.util.HashMap` para cada arquivo a ser anexado ao formulário renderizado. Transmita os seguintes valores para este método:
 
-      * Um valor de string que especifica o nome do anexo de arquivo, incluindo a extensão do nome do arquivo.
+     * Um valor de string que especifica o nome do anexo de arquivo, incluindo a extensão do nome do arquivo.
 
    * Um objeto `com.adobe.idp.Document` que contém o anexo de arquivo.
 
@@ -211,7 +210,7 @@ Renderize um formulário PDF interativo usando a API do Forms (Java):
    >
    >Repita essa etapa para cada arquivo a ser anexado ao formulário. Esta etapa é opcional e você pode passar `null` se não quiser enviar anexos de arquivo.
 
-1. Renderizar um formulário PDF interativo
+1. Renderizar um formulário interativo do PDF
 
    Invoque o método `renderPDFForm` do objeto `FormsServiceClient` e passe os seguintes valores:
 
@@ -233,9 +232,9 @@ Renderize um formulário PDF interativo usando a API do Forms (Java):
    * Crie uma matriz de bytes e preencha-a com o fluxo de dados de formulário, chamando o método `read` do objeto `InputStream` e transmitindo a matriz de bytes como argumento.
    * Invoque o método `write` do objeto `javax.servlet.ServletOutputStream` para enviar o fluxo de dados de formulário para o navegador Web cliente. Passar a matriz de bytes para o método `write`.
 
-## Renderize um formulário PDF interativo usando a API do serviço Web {#render-an-interactive-pdf-form-using-the-web-service-api}
+## Renderize um formulário interativo do PDF usando a API do serviço Web {#render-an-interactive-pdf-form-using-the-web-service-api}
 
-Renderize um formulário PDF interativo usando a API (serviço da Web) do Forms:
+Renderize um formulário interativo do PDF usando a API do Forms (serviço da Web):
 
 1. Incluir arquivos de projeto
 
@@ -258,7 +257,7 @@ Renderize um formulário PDF interativo usando a API (serviço da Web) do Forms:
    * Crie um objeto `java.util.HashMap` para armazenar anexos de arquivo usando seu construtor.
    * Invoque o método `put` do objeto `java.util.HashMap` para cada arquivo a ser anexado ao formulário renderizado. Transmita os seguintes valores para este método:
 
-      * Um valor de string que especifica o nome do anexo de arquivo, incluindo a extensão do nome do arquivo
+     * Um valor de string que especifica o nome do anexo de arquivo, incluindo a extensão do nome do arquivo
 
    * Um objeto `BLOB` que contém o anexo de arquivo
 
@@ -266,7 +265,7 @@ Renderize um formulário PDF interativo usando a API (serviço da Web) do Forms:
    >
    >Repita essa etapa para cada arquivo a ser anexado ao formulário.
 
-1. Renderizar um formulário PDF interativo
+1. Renderizar um formulário interativo do PDF
 
    Invoque o método `renderPDFForm` do objeto `FormsService` e passe os seguintes valores:
 
@@ -275,7 +274,7 @@ Renderize um formulário PDF interativo usando a API (serviço da Web) do Forms:
    * Um objeto `PDFFormRenderSpec` que armazena opções de tempo de execução. Este é um parâmetro opcional e você pode especificar `null` se não quiser especificar opções de tempo de execução.
    * Um objeto `URLSpec` que contém valores de URI exigidos pelo serviço Forms.
    * Um objeto `java.util.HashMap` que armazena anexos de arquivo. Este é um parâmetro opcional e você pode especificar `null` se não quiser anexar arquivos ao formulário.
-   * Um objeto `com.adobe.idp.services.holders.BLOBHolder` vazio preenchido pelo método. Isso é usado para armazenar o formulário de PDF renderizado.
+   * Um objeto `com.adobe.idp.services.holders.BLOBHolder` vazio preenchido pelo método. Isso é usado para armazenar o formulário PDF renderizado.
    * Um objeto `javax.xml.rpc.holders.LongHolder` vazio preenchido pelo método. (Esse argumento armazenará o número de páginas no formulário.)
    * Um objeto `javax.xml.rpc.holders.StringHolder` vazio preenchido pelo método. (Esse argumento armazenará o valor do local.)
    * Um objeto `com.adobe.idp.services.holders.FormsResultHolder` vazio que conterá os resultados desta operação.

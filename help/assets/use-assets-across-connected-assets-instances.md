@@ -1,6 +1,6 @@
 ---
-title: Usar o Connected Assets para compartilhar ativos do DAM em  [!DNL Sites]
-description: Use os ativos disponíveis em uma implantação remota [!DNL Adobe Experience Manager Assets] ao criar suas páginas da Web em outra implantação [!DNL Adobe Experience Manager Sites] a.
+title: Usar o Connected Assets para compartilhar ativos do DAM em [!DNL Sites]
+description: Use os ativos disponíveis em uma implantação remota do [!DNL Adobe Experience Manager Assets] ao criar suas páginas da Web em outra implantação do [!DNL Adobe Experience Manager Sites].
 contentOwner: AK
 mini-toc-levels: 2
 role: User, Admin, Leader
@@ -10,11 +10,9 @@ hide: true
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '4019'
+source-wordcount: '4025'
 ht-degree: 15%
-
 ---
-
 # Usar o Connected Assets para compartilhar ativos do DAM em [!DNL Experience Manager Sites] {#use-connected-assets-to-share-dam-assets-in-aem-sites}
 
 | Versão | Link do artigo |

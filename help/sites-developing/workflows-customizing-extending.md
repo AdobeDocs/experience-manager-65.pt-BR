@@ -1,21 +1,23 @@
 ---
 title: Ampliação da funcionalidade do fluxo de trabalho
+
 description: Saiba como estender a funcionalidade de fluxo de trabalho do Adobe Experience Manager.
+
+
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
+
 exl-id: 9e205912-50a6-414a-b8d4-a0865269d0e0
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '3499'
+source-wordcount: '3628'
 ht-degree: 1%
-
 ---
-
 # Ampliação da funcionalidade do fluxo de trabalho{#extending-workflow-functionality}
 
 Este tópico descreve como desenvolver componentes de etapa personalizados para seus workflows e, em seguida, como interagir programaticamente com workflows.
@@ -63,8 +65,8 @@ O componente `/libs/cq/workflow/components/model/step` é o ancestral comum mais
 
   Uma caixa de diálogo com as seguintes guias:
 
-   * **Comum**: para editar o título e a descrição.
-   * **Avançado**: para editar propriedades de notificação por email.
+  * **Comum**: para editar o título e a descrição.
+  * **Avançado**: para editar propriedades de notificação por email.
 
   ![wf-44](assets/wf-44.png) ![wf-45](assets/wf-45.png)
 
@@ -104,9 +106,9 @@ Para herdar de um dos componentes da etapa base (existentes), adicione a seguint
 * Tipo: `String`
 * Valor: um dos seguintes caminhos que são resolvidos para um componente base:
 
-   * `cq/workflow/components/model/process`
-   * `cq/workflow/components/model/participant`
-   * `cq/workflow/components/model/dynamic_participant`
+  * `cq/workflow/components/model/process`
+  * `cq/workflow/components/model/participant`
+  * `cq/workflow/components/model/dynamic_participant`
 
 ### Especificando o Título e a Descrição Default para Instâncias da Etapa {#specifying-the-default-title-and-description-for-step-instances}
 
@@ -240,16 +242,16 @@ Abaixo do nó `cq:Component`, adicione um nó `cq:EditConfig`. Abaixo, adicione 
 
 * Nome: `PROCESS_AUTO_ADVANCE`
 
-   * Tipo: `Boolean`
-   * Valor:
+  * Tipo: `Boolean`
+  * Valor:
 
-      * quando definido como `true`, o fluxo de trabalho executará essa etapa e continuará. isso é padrão e também é recomendado
-      * quando `false`, o fluxo de trabalho será executado e interrompido; isso requer manipulação extra; portanto, `true` é recomendado
+    * quando definido como `true`, o fluxo de trabalho executará essa etapa e continuará. isso é padrão e também é recomendado
+    * quando `false`, o fluxo de trabalho será executado e interrompido; isso requer manipulação extra; portanto, `true` é recomendado
 
 * Nome: `DO_NOTIFY`
 
-   * Tipo: `Boolean`
-   * Value: indica se as notificações por email devem ser enviadas para as etapas de participação do usuário (e presume que o servidor de email esteja configurado corretamente)
+  * Tipo: `Boolean`
+  * Value: indica se as notificações por email devem ser enviadas para as etapas de participação do usuário (e presume que o servidor de email esteja configurado corretamente)
 
 ## Persistência e acesso a dados {#persisting-and-accessing-data}
 
@@ -380,7 +382,7 @@ Quando as etapas do processo são iniciadas durante o processo de um workflow, a
 
 Para definir uma etapa do processo como um componente de serviço OSGI (pacote Java):
 
-1. Crie o pacote e implante-o no contêiner OSGI. Consulte a documentação sobre a criação de um pacote com [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) ou [Eclipse](/help/sites-developing/howto-projects-eclipse.md).
+1. Crie o pacote e implante-o no contêiner OSGI. Consulte a documentação sobre a criação de um pacote com o [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) ou o [Eclipse](/help/sites-developing/howto-projects-eclipse.md).
 
    >[!NOTE]
    >
@@ -838,12 +840,12 @@ Uma maneira fácil de começar a criar sua própria etapa personalizada é copia
 
      Deve ser um dos seguintes:
 
-      * Fluxo de trabalho de colaboração
-      * Fluxo de trabalho DAM
-      * Fluxo de trabalho dos formulários
-      * Projetos
-      * WCM fluxo de trabalho
-      * Fluxo de trabalho
+     * Fluxo de trabalho de colaboração
+     * Fluxo de trabalho DAM
+     * Fluxo de trabalho dos formulários
+     * Projetos
+     * WCM fluxo de trabalho
+     * Fluxo de trabalho
 
    ![wf-35](assets/wf-35.png)
 
@@ -1031,7 +1033,7 @@ A amostra `_cq_dialog/.content.xml` usada neste exemplo:
 >
 >As caixas de diálogo do editor de modelo de interface clássica ainda funcionarão com o editor de interface habilitado para toque padrão.
 >
->Embora o AEM tenha [ferramentas de modernização](/help/sites-developing/modernization-tools.md), se você quiser atualizar as caixas de diálogo de etapa da interface clássica para as caixas de diálogo da interface padrão. Após a conversão, ainda há algumas melhorias manuais que podem ser feitas na caixa de diálogo para determinados casos.
+>Embora o AEM tenha [ferramentas de modernização](/help/sites-developing/modernization-tools.md) se você quiser atualizar suas caixas de diálogo de etapa da interface clássica para as caixas de diálogo da interface padrão. Após a conversão, ainda há algumas melhorias manuais que podem ser feitas na caixa de diálogo para determinados casos.
 >
 >* Nos casos em que uma caixa de diálogo atualizada está vazia, você pode ver caixas de diálogo no `/libs` que tenham funcionalidade semelhante a exemplos de como fornecer uma solução. Por exemplo:
 >

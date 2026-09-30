@@ -1,6 +1,6 @@
 ---
 title: Gerenciamento de identidade
-description: Saiba mais sobre o funcionamento interno do gerenciamento de identidade no AEM.
+description: Saiba mais sobre o funcionamento interno do gerenciamento de identidades no AEM.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
@@ -12,11 +12,9 @@ feature: Administering
 role: Admin
 source-git-commit: 315171dca4501718a34fd33f937334f7e7958963
 workflow-type: tm+mt
-source-wordcount: '1249'
+source-wordcount: '1254'
 ht-degree: 1%
-
 ---
-
 
 # Gerenciamento de identidade{#identity-management}
 
@@ -120,7 +118,7 @@ Você pode exibir outro perfil usando o [contexto do cliente](/help/sites-admini
 
 É possível adicionar campos à definição do perfil. Por exemplo, para adicionar um campo &quot;Cor favorita&quot; ao perfil do Geometrixx:
 
-1. No console Sites, navegue até Geometrixx Outdoors Site > Inglês > Usuário > Meu perfil.
+1. No console Sites, navegue até Site do Geometrixx Outdoors > Inglês > Usuário > Meu perfil.
 1. Clique duas vezes na página **Meu perfil** para abri-la para edição.
 1. Na guia **Componentes** do sidekick, expanda a seção **Formulário**.
 1. Arraste uma **Lista suspensa** do sidekick para o formulário, logo abaixo do campo **Sobre mim**.
@@ -162,7 +160,7 @@ Isso é feito com:
 
   Para gerenciar ações relacionadas aos estados.
 
-Vários estados podem ser definidos; por exemplo, em Geometrixx, eles incluem:
+Vários estados podem ser definidos; por exemplo, no Geometrixx, eles incluem:
 
 * assinatura (ou cancelamento de assinatura) de notificações em informativos ou threads de comentários
 * adicionar e remover uma conexão com um amigo
@@ -171,7 +169,7 @@ Vários estados podem ser definidos; por exemplo, em Geometrixx, eles incluem:
 
 Um provedor de estado gerencia o estado atual da propriedade em questão, juntamente com as transições entre os dois estados possíveis.
 
-Os provedores de estado são implementados como componentes, portanto, podem ser personalizados para o seu projeto. No Geometrixx, incluem-se:
+Os provedores de estado são implementados como componentes, portanto, podem ser personalizados para o seu projeto. No Geometrixx, eles incluem:
 
 * Assinar/Cancelar assinatura de tópico do fórum
 * Adicionar/Remover Amigo
@@ -222,7 +220,7 @@ Com as configurações padrão, o componente será exibido da seguinte maneira:
 
 ![Caixa de diálogo Verificar senha](assets/dc_profiles_checkedpassword.png)
 
-### Foto de avatar do perfil  {#profile-avatar-photo}
+### Foto de avatar do perfil {#profile-avatar-photo}
 
 Esse componente fornece ao usuário um mecanismo para selecionar e fazer upload de um arquivo de foto de avatar.
 

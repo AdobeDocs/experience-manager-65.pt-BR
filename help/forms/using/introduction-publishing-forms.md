@@ -11,11 +11,9 @@ feature: Forms Portal
 role: Admin, User, Developer
 source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
-source-wordcount: '1043'
-ht-degree: 1%
-
+source-wordcount: '1066'
+ht-degree: 3%
 ---
-
 # Introdução à publicação de formulários em um portal{#introduction-to-publishing-forms-on-a-portal}
 
 | Versão | Link do artigo |
@@ -30,7 +28,7 @@ Em um cenário típico de implantação de portal centrada em formulários, o de
 
 Esses cenários geralmente resultam em problemas de gerenciamento e atrasos de produção. Por exemplo, se houver uma versão mais recente de um formulário disponível no repositório, você deverá substituir o formulário no nível da Web, modificar o aplicativo da Web e reimplantar o formulário no site público. A reimplantação do aplicativo Web pode causar algum tempo de inatividade do servidor. Normalmente, o tempo de inatividade do servidor é uma atividade planejada e, portanto, as alterações não podem ser enviadas para o site público instantaneamente.
 
-A AEM Forms fornece componentes de portal que reduzem as despesas gerais de gerenciamento e os atrasos de produção. Os componentes equipam os desenvolvedores da Web para criar e personalizar um Forms Portal em sites criados usando o Adobe Experience Manager (AEM).
+A AEM Forms fornece componentes de portal que reduzem as despesas gerais de gerenciamento e os atrasos de produção. Os componentes fazem com que os desenvolvedores da Web criem e personalizem um Forms Portal em sites criados usando o Adobe Experience Manager (AEM).
 
 ![Portal do AEM Forms](assets/aem-forms-portal.png)
 
@@ -39,8 +37,8 @@ Os componentes do portal de formulários permitem que você adicione a seguinte 
 * Listar formulários em layouts personalizados. Os layouts de exibição de Lista, Cartão e Painel prontos para uso são fornecidos. Você pode criar seus próprios layouts personalizados.
 * Permite exibir metadados personalizados e ações personalizadas ao listá-los.
 * Listar formulários publicados pela interface do usuário do AEM Forms na instância de publicação em que os componentes do Forms Portal estão sendo usados.
-* Permitir que os usuários finais renderizem formulários no formato HTML e PDF.
-* Use o perfil de HTML personalizado para renderizar formulários.
+* Permitir que os usuários finais renderizem formulários nos formatos HTML e PDF.
+* Use o perfil personalizado do HTML para renderizar formulários.
 * Permita a pesquisa de formulários com base em vários critérios, como propriedades de formulário, metadados e tags.
 * Enviar dados de formulário para um servlet.
 * Use o CSS personalizado para personalizar a aparência do portal.
@@ -51,11 +49,11 @@ Os componentes do portal de formulários permitem que você adicione a seguinte 
 
 A AEM Forms fornece os seguintes componentes de portal prontos para uso, agrupados em **Serviços de Documento** e **Predicados de Serviços de Documento** grupos de componentes:
 
-### Pesquisa e Lister {#search-amp-lister}
+### Pesquisar &amp; Lister {#search-amp-lister}
 
 O componente de Pesquisa e Lister permite listar formulários do repositório de formulários na página do portal e fornece opções de configuração para listar formulários com base em critérios especificados. Também permite especificar critérios de pesquisa para permitir que os usuários do portal pesquisem na lista de formulários.
 
-### Rascunhos e envios {#drafts-amp-submissions}
+### Rascunhos &amp; Envios {#drafts-amp-submissions}
 
 Enquanto o componente Pesquisa e Lister exibe formulários que são tornados públicos pelo autor do Forms, o componente Rascunhos e envios exibe formulários que são salvos como rascunho para concluir formulários posteriores e enviados. Este componente fornece experiência personalizada para qualquer usuário conectado.
 
@@ -67,8 +65,8 @@ O componente Link permite criar um link para um formulário em qualquer lugar da
 
 O Forms Portal permite listar formulários do repositório de formulários na página do portal. Também permite especificar critérios de pesquisa para permitir que os usuários do portal pesquisem na lista de formulários. Você também pode usar o componente Rascunhos e envios para exibir formulários salvos como rascunho para preencher formulários e enviados posteriormente. Você executa um determinado conjunto de operações antes que essas funcionalidades fiquem disponíveis em uma página do Sites. Execute as etapas na sequência listada para disponibilizar os componentes e as respectivas funcionalidades em uma página de sites:
 
-1. **Habilitar componentes do Forms Portal**: por padrão, os componentes do Forms Portal não estão disponíveis para uso. [Habilitar os componentes do sidekick do AEM](/help/forms/using/enabling-forms-portal-components.md) para uma página do AEM Sites.
-1. **Listar formulários em uma página (criar página do Forms Portal):** Você pode listar formulários em páginas do site do AEM Sites e que não sejam do AEM. A lista contém formulários disponíveis na instância de publicação. Um usuário pode abrir formulários e começar a preenchê-los. Sempre que um usuário abrir um formulário, uma nova instância do formulário será criada:
+1. **Habilitar componentes do Forms Portal**: por padrão, os componentes do Forms Portal não estão disponíveis para uso. [Habilitar os componentes do AEM sidekick](/help/forms/using/enabling-forms-portal-components.md) para uma página do AEM Sites.
+1. **Listar formulários em uma página (criar página do Forms Portal):** Você pode listar formulários em páginas do AEM Sites e de sites que não sejam da AEM. A lista contém formulários disponíveis na instância de publicação. Um usuário pode abrir formulários e começar a preenchê-los. Sempre que um usuário abrir um formulário, uma nova instância do formulário será criada:
 
    1. **Listar formulários em uma página do AEM Sites**: adicione o componente **[Pesquisa e Listagem](../../forms/using/creating-form-portal-page.md)** à página e configure o **[Painel de Lista](../../forms/using/creating-form-portal-page.md#p-list-pane-p)** nela para listar formulários em uma página. Adicione e configure o componente **Painel de Pesquisa** para o componente **Pesquisa e Lister** também para adicionar a funcionalidade de pesquisa à página. A página com o componente Forms Portal é conhecida como [página Forms Portal](../../forms/using/creating-form-portal-page.md).
 
@@ -76,12 +74,12 @@ O Forms Portal permite listar formulários do repositório de formulários na p�
 
 1. **Listar rascunhos e formulários enviados em uma página do Forms Portal**: adicione e configure o componente Rascunhos e Envios à página do Forms Portal. O componente lista todos os formulários que estão no estado de rascunho e os formulários que já foram enviados.
 
-   Para habilitar a exibição de um formulário adaptável enviado na guia envios, defina a **Ação de envio** como **[Ação de envio do portal do Forms](configuring-submit-actions.md).** Como alternativa, habilite a opção Enviar do Portal Forms. Sempre que um usuário enviar o formulário, ele será adicionado à guia Envios.
+   Para habilitar a exibição de um formulário adaptável enviado na guia envios, defina a **Ação de envio** como **[Ação de envio do Forms Portal](configuring-submit-actions.md).** Como alternativa, ative a opção Enviar do Forms Portal. Sempre que um usuário enviar o formulário, ele será adicionado à guia Envios.
 
-1. **Configure o armazenamento para os dados de rascunho e de formulários enviados:** Por padrão, os dados de rascunho e de envio são armazenados no repositório AEM. Em um ambiente de produção, é recomendável não armazenar dados de rascunho ou de formulário enviados no repositório do AEM. [Configure o componente Forms Portal para salvar dados em um local seguro](../../forms/using/draft-submission-component.md#customizing-the-storage).
+1. **Configure o armazenamento para os dados de rascunho e de formulários enviados:** Por padrão, os dados de rascunho e de envio são armazenados no repositório do AEM. Em um ambiente de produção, é recomendável não armazenar dados de formulário de rascunho ou enviados no repositório do AEM. [Configure o componente Forms Portal para salvar dados em um local seguro](../../forms/using/draft-submission-component.md#customizing-the-storage).
 1. **(Opcional) Personalização dos componentes do Portal do Forms:** [Personalize seus modelos de página do Portal do Forms](../../forms/using/customizing-templates-forms-portal-components.md) para fornecer uma aparência distinta aos componentes.
 1. **(Opcional) Adicionar metadados personalizados a formulários:** [Adicionar metadados personalizados a formulários](../../forms/using/customizing-templates-forms-portal-components.md) para melhorar a listagem e a experiência de pesquisa.
-1. **Publish na página do Forms Portal:** Sua página do Forms Portal está pronta. Publish na página.
+1. **Publicar a página do Portal do Forms:** A página do Portal do Forms está pronta. Publique a página.
 
 ## Artigos relacionados {#related-articles}
 

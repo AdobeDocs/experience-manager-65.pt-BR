@@ -11,18 +11,16 @@ feature: Adaptive Forms,Document Security
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '1334'
+source-wordcount: '1355'
 ht-degree: 0%
-
 ---
-
 # Gerenciamento de credenciais HSM {#managing-hsm-credentials}
 
 Na página Gerenciamento de armazenamento de confiança, você pode gerenciar credenciais do Módulo de segurança de hardware (HSM). Um HSM é um dispositivo PKCS#11 de terceiros que você pode usar para gerar e armazenar chaves privadas com segurança. O HSM protege fisicamente o acesso e o uso das chaves privadas.
 
-O software cliente é necessário para se comunicar com o HSM. O software cliente HSM deve ser instalado e configurado no mesmo computador que os formulários AEM.
+O software cliente é necessário para se comunicar com o HSM. O software cliente HSM deve ser instalado e configurado no mesmo computador que o AEM Forms.
 
-As assinaturas digitais de formulários AEM podem usar credenciais armazenadas em um HSM para aplicar assinaturas digitais do lado do servidor. Siga as instruções nesta seção para criar um alias para cada credencial HSM que as assinaturas digitais usarão. O alias contém todos os parâmetros exigidos pelo HSM.
+O AEM Forms Digital Signatures pode usar credenciais armazenadas em um HSM para aplicar assinaturas digitais do lado do servidor. Siga as instruções nesta seção para criar um alias para cada credencial HSM que as assinaturas digitais usarão. O alias contém todos os parâmetros exigidos pelo HSM.
 
 >[!NOTE]
 >
@@ -37,7 +35,7 @@ As assinaturas digitais de formulários AEM podem usar credenciais armazenadas e
 1. No console de administração, clique em Configurações > Gerenciamento de armazenamento de confiança > Credenciais HSM e clique em Adicionar.
 1. Na caixa Nome do perfil, digite uma string usada para identificar o alias. Esse valor é usado como uma propriedade para algumas operações de Assinaturas digitais, como a operação Assinar campo de assinatura.
 1. Na caixa Biblioteca PKCS11, digite o caminho totalmente qualificado da biblioteca do cliente HSM no servidor. Por exemplo, `c:\Program Files\LunaSA\cryptoki.dll`. Em um ambiente de cluster, esse caminho deve ser idêntico para todos os servidores do cluster.
-1. Clique em Test HSM Connectivity (Testar conectividade HSM). Se o AEM conseguir se conectar ao dispositivo HSM, será exibida uma mensagem informando que o HSM está disponível. Clique em Avançar.
+1. Clique em Test HSM Connectivity (Testar conectividade HSM). Se o AEM Forms puder se conectar ao dispositivo HSM, uma mensagem será exibida informando que o HSM está disponível. Clique em Avançar.
 1. Use o Nome do token, a ID do slot ou o Índice da lista de slots para identificar onde as credenciais são armazenadas no HSM.
 
    * **Nome do Token:** Corresponde ao nome da partição HSM a ser usada (por exemplo, HSMPART1).
@@ -54,7 +52,7 @@ As assinaturas digitais de formulários AEM podem usar credenciais armazenadas e
 1. Na caixa Biblioteca PKCS11, digite o caminho totalmente qualificado da biblioteca do cliente HSM no servidor. Por exemplo, `c:\Program Files\LunaSA\cryptoki.dll`. Em um ambiente de cluster, esse caminho deve ser idêntico para todos os servidores do cluster.
 1. Marque a caixa de seleção Criação de perfil offline. Clique em Avançar.
 1. Na lista Dispositivo HSM, selecione o fabricante do dispositivo HSM onde a credencial está armazenada.
-1. Na lista Tipo de slot, selecione ID do slot, Índice do slot ou Nome do token e especifique um valor na caixa Informações do slot. Os formulários AEM usam essas configurações para determinar onde as credenciais são armazenadas no HSM.
+1. Na lista Tipo de slot, selecione ID do slot, Índice do slot ou Nome do token e especifique um valor na caixa Informações do slot. O AEM Forms usa essas configurações para determinar onde as credenciais são armazenadas no HSM.
 
    * **Nome do Token:** Corresponde a um nome de partição (por exemplo, HSMPART1).
    * **ID do Slot:** A ID do Slot é um número inteiro que corresponde ao slot, que por sua vez corresponde a uma partição. Por exemplo, o cliente (Forms Server) registrou-se primeiro com a partição HSMPART1. Isso mapeia o slot 1 para a partição HSMPART1 deste cliente. Como HSMPART1 é a primeira partição registrada, a ID do Slot é 1 e você definiria Informações do Slot como 1.
@@ -102,9 +100,9 @@ Redefina as conexões abertas para um dispositivo HSM após qualquer interrupç�
 
 ## Configurar o suporte a HSM remoto {#configure-remote-hsm-support}
 
-O AEM Forms usa um mecanismo IPC/RPC baseado em serviços da Web. Esse mecanismo permite aos formulários AEM usar um HSM instalado em um computador remoto. Para usar essa funcionalidade, instale o serviço Web no computador remoto onde o HSM está instalado. Consulte [Configurando o suporte HSM para formulários AEM ES usando o Sun JDK na plataforma Windows de 64 bits](https://kb2.adobe.com/cps/808/cpsid_80835.html)para obter mais informações.
+O AEM Forms usa um mecanismo IPC/RPC baseado em serviços da Web. Esse mecanismo permite que o AEM Forms use um HSM instalado em um computador remoto. Para usar essa funcionalidade, instale o serviço Web no computador remoto onde o HSM está instalado. Consulte [Configurando o suporte HSM para AEM Forms ES usando Sun JDK na plataforma Windows de 64 bits](https://kb2.adobe.com/cps/808/cpsid_80835.html)para obter mais informações.
 
 Esse mecanismo não oferece suporte à criação online de perfis HSM ou verificações de status. No entanto, há duas maneiras de criar perfis HSM e executar verificações de status:
 
-* Crie uma credencial de cliente de formulários AEM ao passá-la para o Certificado do signatário. Siga as etapas em [Configurando o suporte HSM para formulários AEM ES usando o Sun JDK na plataforma Windows de 64 bits](https://kb2.adobe.com/cps/808/cpsid_80835.html). O local do serviço Web é passado como uma propriedade de credencial. Perfis HSM offline criados usando o certificado der ou o certificado SHA-1 hex também são compatíveis. No entanto, se você tiver atualizado para formulários AEM de uma versão anterior do AEM, faça alterações no cliente porque a credencial transportou informações de certificado e serviço da Web.
-* O local do Serviço Web está especificado no console de administração para o serviço de Assinatura. (Consulte [Configurações do serviço de assinatura](/help/forms/using/admin-help/configure-service-settings.md#signature-service-settings).) Aqui, o cliente carregou apenas o alias do perfil HSM no armazenamento de confiança. Você pode usar essa opção sem interrupções sem nenhuma alteração no cliente, mesmo se tiver atualizado para formulários AEM de uma versão anterior dos formulários AEM. Essa opção não é compatível com perfis HSM que usam o certificado SHA-1.
+* Crie uma credencial de cliente do AEM Forms transmitindo-a ao Certificado do signatário. Siga as etapas em [Configurando o suporte HSM para o AEM Forms ES usando o Sun JDK na plataforma Windows de 64 bits](https://kb2.adobe.com/cps/808/cpsid_80835.html). O local do serviço Web é passado como uma propriedade de credencial. Perfis HSM offline criados usando o certificado der ou o certificado SHA-1 hex também são compatíveis. No entanto, se você tiver atualizado para o AEM Forms de uma versão anterior do AEM Forms, faça alterações no cliente, pois a credencial continha informações de certificado e serviço da Web.
+* O local do Serviço Web está especificado no console de administração para o serviço de Assinatura. (Consulte [Configurações do serviço de assinatura](/help/forms/using/admin-help/configure-service-settings.md#signature-service-settings).) Aqui, o cliente carregava somente o alias do perfil HSM no armazenamento de confiança. Você pode usar essa opção facilmente sem fazer alterações no cliente, mesmo se tiver atualizado para o AEM Forms de uma versão anterior do AEM Forms. Essa opção não é compatível com perfis HSM que usam o certificado SHA-1.

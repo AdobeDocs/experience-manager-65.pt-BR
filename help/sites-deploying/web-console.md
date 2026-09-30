@@ -11,24 +11,22 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '706'
+source-wordcount: '718'
 ht-degree: 0%
-
 ---
-
 # Console da Web{#web-console}
 
-O console da Web no Adobe Experience Manager (AEM) é baseado no [Console de Gerenciamento da Web do Apache Felix](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html). O Apache Felix é um esforço da comunidade para implementar a Plataforma de serviço OSGi R4, que inclui a estrutura OSGi e os serviços padrão.
+O console Web no Adobe Experience Manager (AEM) é baseado no [Console de Gerenciamento Web do Apache Felix](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html). O Apache Felix é um esforço da comunidade para implementar a Plataforma de serviço OSGi R4, que inclui a estrutura OSGi e os serviços padrão.
 
 >[!NOTE]
 >
 >No console da Web, todas as descrições que mencionam as configurações padrão estão relacionadas aos padrões do Sling.
 >
->O AEM tem seus próprios padrões, portanto, os padrões definidos podem ser diferentes daqueles documentados no console.
+>O AEM tem seus próprios padrões e, portanto, os padrões definidos podem ser diferentes daqueles documentados no console.
 
 O console da Web oferece uma seleção de guias para manter os pacotes OSGi, incluindo:
 
-* [Configuração](#configuration): usada para configurar os pacotes OSGi e, portanto, é o mecanismo subjacente para configurar parâmetros do sistema AEM
+* [Configuração](#configuration): usada para configurar os pacotes OSGi e, portanto, é o mecanismo subjacente para configurar os parâmetros do sistema AEM
 * [Pacotes](#bundles): usados para instalar pacotes
 * [Componentes](#components): usados para controlar o status dos componentes necessários para o AEM
 
@@ -40,7 +38,7 @@ O console pode ser acessado de `../system/console`; por exemplo:
 
 ## Configuração {#configuration}
 
-A guia **Configuração** é usada para configurar os pacotes OSGi e, portanto, é o mecanismo subjacente para configurar parâmetros do sistema AEM.
+A guia **Configuração** é usada para configurar os pacotes OSGi e, portanto, é o mecanismo subjacente para configurar os parâmetros de sistema do AEM.
 
 >[!NOTE]
 >
@@ -65,8 +63,8 @@ Há dois tipos de configurações disponíveis nas listas suspensas desta tela:
 * **Configurações**
 Permite atualizar as configurações existentes. Eles têm uma Identidade persistente (PID) e podem ser:
 
-   * padrão e integral para AEM; são necessários, se excluídos, os valores retornam às configurações padrão.
-   * instâncias criadas em Configurações de fábrica; essas instâncias são criadas pelo usuário, a exclusão remove a instância.
+  * padrão e integral para o AEM; são necessários, se excluídos, os valores retornam às configurações padrão.
+  * instâncias criadas em Configurações de fábrica; essas instâncias são criadas pelo usuário, a exclusão remove a instância.
 
 * **Configurações de fábrica**
 Permite criar uma instância do objeto de funcionalidade necessário.
@@ -151,7 +149,7 @@ Usando essa guia, você pode:
 
 >[!NOTE]
 >
->Após **Atualizar**, o Adobe recomenda que você execute um **Atualizar Pacotes**.
+>Após **Atualizar**, a Adobe recomenda que você execute um **Atualizar Pacotes**.
 
 ## Componentes {#components}
 

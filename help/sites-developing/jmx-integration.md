@@ -9,11 +9,9 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '1621'
+source-wordcount: '1675'
 ht-degree: 0%
-
 ---
-
 # Integração de serviços com o console JMX{#integrating-services-with-the-jmx-console}
 
 Crie e implante MBeans para gerenciar serviços usando o Console JMX. Expor atributos e operações do serviço para permitir que as tarefas administrativas sejam executadas.
@@ -544,7 +542,7 @@ Para sua conveniência, você pode copiar e colar o seguinte código XML no arqu
 </project>
 ```
 
-Adicione o perfil a seguir ao arquivo de configurações maven para usar o repositório Adobe público.
+Adicione o seguinte perfil ao arquivo de configurações maven para usar o repositório público do Adobe.
 
 #### Perfil Maven {#maven-profile}
 

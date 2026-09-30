@@ -11,11 +11,9 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
-source-wordcount: '1175'
+source-wordcount: '1217'
 ht-degree: 0%
-
 ---
-
 # Uso da Ferramenta de Migração CRX2Oak{#using-the-crx-oak-migration-tool}
 
 ## Introdução {#introduction}
@@ -24,12 +22,12 @@ O CRX2Oak é uma ferramenta projetada para migrar dados entre repositórios dife
 
 Ele pode ser usado para migrar dados de versões mais antigas do CQ com base no Apache Jackrabbit 2 para o Oak e também pode ser usado para copiar dados entre repositórios do Oak.
 
-Você pode baixar a versão mais recente do crx2oak do repositório Adobe público neste local:
+Você pode baixar a versão mais recente do crx2oak do repositório público do Adobe neste local:
 [https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/](https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/)
 
 >[!NOTE]
 >
->Para obter mais informações sobre o Apache Oak e os principais conceitos da persistência do Adobe Experience Manager (AEM), consulte [Introdução à plataforma do AEM](/help/sites-deploying/platform.md).
+>Para obter mais informações sobre o Apache Oak e os principais conceitos da persistência do Adobe Experience Manager (AEM), consulte [Introdução à plataforma AEM](/help/sites-deploying/platform.md).
 
 ## Casos de uso de migração {#migration-use-cases}
 
@@ -55,9 +53,9 @@ Outra coisa a ser observada é que, com as configurações padrão no modo indep
 
 ### Modo de início rápido automatizado {#automated-quickstart-mode}
 
-Desde o AEM 6.3, o CRX2Oak é capaz de lidar com perfis de migração definidos pelo usuário que podem ser configurados com todas as opções de migração já disponíveis. Isso permite maior flexibilidade e a capacidade de automatizar a configuração de AEM, recursos que não estarão disponíveis se você estiver usando a ferramenta no modo independente.
+A partir do AEM 6.3, o CRX2Oak pode lidar com perfis de migração definidos pelo usuário que podem ser configurados com todas as opções de migração já disponíveis. Isso permite maior flexibilidade e a capacidade de automatizar a configuração do AEM, recursos que não estarão disponíveis se você estiver usando a ferramenta no modo independente.
 
-Para alternar o CRX2Oak para o modo de início rápido, defina o caminho para a pasta crx-quickstart no diretório de instalação do AEM por meio dessa variável de ambiente do sistema operacional:
+Para alternar o CRX2Oak para o modo de início rápido, defina o caminho para a pasta crx-quickstart no diretório de instalação do AEM por meio desta variável de ambiente do sistema operacional:
 
 **Para sistemas baseados em UNIX e macOS:**
 
@@ -194,11 +192,11 @@ Você também pode ativar as informações de depuração do processo de migraç
   </tr>
   <tr>
    <td>Modo de início rápido</td>
-   <td>Você pode adicionar as opções <strong>—log-level TRACE</strong> ou <strong>—log-level DEBUG </strong> à linha de comando ao executar o CRX2Oak. Neste modo, os logs são automaticamente redirecionados para o <strong>arquivo upgrade.log</strong>.</td>
+   <td>Você pode adicionar as opções <strong>—log-level TRACE</strong> ou <strong>—log-level DEBUG </strong>à linha de comando ao executar o CRX2Oak. Neste modo, os logs são automaticamente redirecionados para o <strong>arquivo upgrade.log</strong>.</td>
   </tr>
   <tr>
    <td>Modo independente</td>
-   <td><p>Adicione as opções <strong>—trace</strong> à linha de comando do CRX2Oak para que você possa mostrar eventos TRACE na saída padrão (você deve redirecionar os logs usando o caractere de redirecionamento: '&gt;' ou o comando 'tee' para inspeção posterior).</p> </td>
+   <td><p>Adicione as opções <strong>—trace</strong> à linha de comando do CRX2Oak para que você possa mostrar eventos do TRACE na saída padrão (você deve redirecionar os logs usando o caractere de redirecionamento: '&gt;' ou o comando 'tee' para inspeção posterior).</p> </td>
   </tr>
  </tbody>
 </table>

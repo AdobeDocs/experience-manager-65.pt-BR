@@ -1,18 +1,16 @@
 ---
-title: Integrar [!DNL Assets] com [!DNL InDesign Server]
-description: Saiba como integrar [!DNL Adobe Experience Manager Assets] com [!DNL Adobe InDesign Server].
+title: Integrar [!DNL Assets] a [!DNL InDesign Server]
+description: Saiba como integrar [!DNL Adobe Experience Manager Assets] a [!DNL Adobe InDesign Server].
 contentOwner: AG
 role: Admin
 feature: Publishing
 exl-id: 5ba020a3-c36c-402b-a11b-d6b0426b03bf
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
 workflow-type: tm+mt
-source-wordcount: '1579'
+source-wordcount: '1584'
 ht-degree: 1%
-
 ---
-
 # Integrar [!DNL Adobe Experience Manager Assets] a [!DNL Adobe InDesign Server] {#integrating-aem-assets-with-indesign-server}
 
 [!DNL Adobe Experience Manager Assets] usa:
@@ -42,9 +40,9 @@ Este script de comando irá:
    * Recupere o arquivo INDD.
    * Executar comandos [!DNL InDesign Server]:
 
-      * A estrutura, o texto e quaisquer arquivos de mídia são extraídos.
-      * As representações do PDF e do JPG são geradas.
-      * As representações HTML e IDML são geradas.
+     * A estrutura, o texto e quaisquer arquivos de mídia são extraídos.
+     * As representações do PDF e do JPG são geradas.
+     * As representações HTML e IDML são geradas.
 
    * Postar os arquivos resultantes de volta para [!DNL Experience Manager Assets].
 
@@ -137,7 +135,7 @@ Para personalizar, edite a guia **[!UICONTROL Argumentos]** da etapa **[!UICONTR
 ![chlimage_1-96](assets/chlimage_1-289.png)
 
 * **Manipulador de extração de página**: na lista pop-up, selecione o manipulador que deseja usar. Um manipulador de extração opera em uma representação específica, escolhida por um `RenditionPicker` relacionado (consulte a API `ExtractionHandler`). Em uma instalação padrão do [!DNL Experience Manager], o seguinte está disponível:
-   * Identificador de extração de exportação IDML: opera na representação `IDML` gerada na etapa MediaExtract.
+  * Identificador de extração de exportação IDML: opera na representação `IDML` gerada na etapa MediaExtract.
 
 * **Nome da Página**: especifique o nome que você deseja atribuir à página resultante. Se deixado em branco, o nome é &quot;página&quot; (ou um derivado se &quot;página&quot; já existir).
 
@@ -164,7 +162,7 @@ Para personalizar, edite a guia **[!UICONTROL Argumentos]** da etapa **[!UICONTR
    ![proxy_idsworkerconfig](assets/proxy_idsworkerconfig.png)
 
    * **Pool de IDS**
-Os pontos de extremidade do SOAP usados para comunicação com o [!DNL InDesign Server]. É possível adicionar, remover e solicitar itens.
+     Os pontos de extremidade do SOAP usados para comunicação com o [!DNL InDesign Server]. É possível adicionar, remover e solicitar itens.
 
 1. Clique em OK para salvar.
 
@@ -204,19 +202,20 @@ Para configurar o número de jobs de IDS paralelos:
 
    Se houver vários computadores executando o [!DNL InDesign Server], adicione pontos de extremidade SOAP (número de processadores por computador -1) para cada computador.
 
+   >[!NOTE]
+   >
+   >Ao trabalhar com um pool de trabalhadores, é possível ativar uma lista de bloqueios de trabalhadores de IDS.
+   >
+   >Para fazer isso, habilite a caixa de seleção **[!UICONTROL enable.retry.name]**, na configuração `com.day.cq.dam.ids.impl.IDSJobProcessor.name`, que permite novas tentativas de trabalho de IDS.
+   >
+   >Além disso, na configuração `com.day.cq.dam.ids.impl.IDSPoolImpl.name`, defina um valor positivo para o parâmetro `max.errors.to.blacklist`, que determina o número de tentativas de trabalho antes de barrar uma ID da lista de manipuladores de trabalho.
+   >
+   >Por padrão, após o tempo configurável (`retry.interval.to.whitelist.name`) em minutos, o trabalhador de IDS é revalidado. Se o trabalhador for encontrado online, ele será removido da lista de bloqueios.
+
 <!-- 
 TBD: Make updates to configurations for allow and block list after product updates are done.
 -->
 
->[!NOTE]
->
->Ao trabalhar com um pool de trabalhadores, é possível ativar uma lista de bloqueios de trabalhadores de IDS.
->
->Para fazer isso, habilite a caixa de seleção **[!UICONTROL enable.retry.name]**, na configuração `com.day.cq.dam.ids.impl.IDSJobProcessor.name`, que permite novas tentativas de trabalho de IDS.
->
->Além disso, na configuração `com.day.cq.dam.ids.impl.IDSPoolImpl.name`, defina um valor positivo para o parâmetro `max.errors.to.blacklist`, que determina o número de tentativas de trabalho antes de barrar uma ID da lista de manipuladores de trabalho.
->
->Por padrão, após o tempo configurável (`retry.interval.to.whitelist.name`) em minutos, o trabalhador de IDS é revalidado. Se o trabalhador for encontrado online, ele será removido da lista de bloqueios.
 
 ## Habilitar suporte para [!DNL InDesign Server] 10.0 ou posterior {#enabling-support-for-indesign-server-or-later}
 
