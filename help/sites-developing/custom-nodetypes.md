@@ -9,16 +9,16 @@ exl-id: bfd50aa9-579e-47d5-997d-ec764c782497
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '1802'
+source-wordcount: '1803'
 ht-degree: 5%
 ---
 # Tipos de nó personalizados{#custom-node-types}
 
 Como o Adobe Experience Manager (AEM) é baseado no Sling e usa um repositório JCR, os tipos de nó oferecidos por ambos estão disponíveis para uso:
 
-* [Tipos de nó JCR](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/3_Repository_Model.html#3.1.7-Node-Types)
+* [Tipos de nó JCR](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/3_Repository_Model.html#3.1.7-Node-Types)
 * [Tipos de nó Sling](https://cwiki.apache.org/confluence/display/SLING/Sling+Node+Types)
 
 Além desses tipos de nó, o AEM fornece uma variedade de tipos de nó personalizados.

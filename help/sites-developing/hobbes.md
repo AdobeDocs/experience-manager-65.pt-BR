@@ -1,37 +1,37 @@
 ---
 title: Teste da interface do usuário
-description: O AEM fornece uma estrutura para automatizar testes na interface do AEM
+description: O AEM fornece uma estrutura para automatizar testes da interface do usuário do AEM
+
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: components, testing
+
 docset: aem65
 exl-id: 2d28cee6-31b0-4288-bad3-4d2ecad7b626
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '759'
+source-wordcount: '795'
 ht-degree: 0%
-
 ---
-
 # Teste da interface do usuário{#testing-your-ui}
 
 >[!NOTE]
 >
->A partir do AEM 6.5, a estrutura de teste da interface do usuário do hobbes.js foi descontinuada. A Adobe não planeja fazer mais melhorias e recomenda que os clientes usem a automação Selenium.
+>A partir do AEM 6.5, a estrutura de teste da interface do usuário do hobbes.js foi descontinuada. A Adobe não planeja fazer mais aprimoramentos e recomenda que os clientes usem a automação Selenium.
 >
 >Consulte [Recursos Preteridos e Removidos](/help/release-notes/deprecated-removed-features.md).
 
-O AEM fornece uma estrutura para automatizar testes para a interface do AEM. Usando a estrutura, você grava e executa testes de interface do usuário diretamente em um navegador da Web. A estrutura fornece uma API do JavaScript para a criação de testes.
+O AEM fornece uma estrutura para automatizar testes na interface do usuário do AEM. Usando a estrutura, você grava e executa testes de interface do usuário diretamente em um navegador da Web. A estrutura fornece uma API do JavaScript para a criação de testes.
 
-A estrutura de testes do AEM usa Hobbes.js, uma biblioteca de testes escrita em JavaScript. A estrutura Hobbes.js foi desenvolvida para testar o AEM como parte do processo de desenvolvimento. A estrutura agora está disponível para uso público para testar seus aplicativos de AEM.
+A estrutura de teste do AEM usa Hobbes.js, uma biblioteca de teste escrita em JavaScript. A estrutura Hobbes.js foi desenvolvida para testar o AEM como parte do processo de desenvolvimento. A estrutura agora está disponível para uso público para testar seus aplicativos do AEM.
 
 >[!NOTE]
 >
->Consulte a [documentação](https://developer.adobe.com/experience-manager/reference-materials/6-5/test-api/index.html) da Hobbes.js para obter detalhes completos sobre a API.
+>Consulte a [documentação](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/test-api/index.html) da Hobbes.js para obter detalhes completos sobre a API.
 
 ## Estrutura dos ensaios {#structure-of-tests}
 
@@ -104,7 +104,7 @@ Os Conjuntos de testes são executados sequencialmente na ordem em que aparecem 
 
 O procedimento a seguir o orienta durante a criação e execução de um Conjunto de Testes usando [conteúdo do We.Retail](/help/sites-developing/we-retail.md), mas você pode modificar facilmente o teste para usar uma página da Web diferente.
 
-Para obter detalhes completos sobre como criar seus próprios Conjuntos de testes, consulte a [documentação da API Hobbes.js](https://developer.adobe.com/experience-manager/reference-materials/6-5/test-api/index.html).
+Para obter detalhes completos sobre como criar seus próprios Conjuntos de testes, consulte a [documentação da API Hobbes.js](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/test-api/index.html).
 
 1. Abra o CRXDE Lite. ([https://localhost:4502/crx/de](https://localhost:4502/crx/de))
 1. Clique com o botão direito do mouse na pasta `/etc/clientlibs` e clique em **Criar > Criar pasta**. Digite `myTests` para o nome e clique em **OK**.

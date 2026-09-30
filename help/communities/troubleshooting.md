@@ -9,13 +9,11 @@ exl-id: ef4f4108-c485-4e2e-a58f-ff64eee9937e
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '355'
+source-wordcount: '371'
 ht-degree: 0%
-
 ---
-
 # Comunidade de solução de problemas {#troubleshooting}
 
 Esta seção contém preocupações comuns e problemas conhecidos ao solucionar problemas da Comunidade.
@@ -28,9 +26,9 @@ Ao usar o Dispatcher 4.1.5 com uma versão mais recente do Jetty, uma nova busca
 
 Usar o Dispatcher 4.1.6 ou posterior resolve esse problema.
 
-### Não é possível acessar o Forum Post após a atualização do CQ 5.4 {#cannot-access-forum-post-after-upgrading-from-cq}
+### Não é possível acessar a publicação do fórum após a atualização do CQ 5.4 {#cannot-access-forum-post-after-upgrading-from-cq}
 
-Se um fórum foi criado no CQ 5.4 e em tópicos publicados, e em seguida o site foi atualizado para AEM 5.6.1 ou posterior, tentar visualizar as publicações existentes pode resultar em um erro na página:
+Se um fórum foi criado no CQ 5.4 e em tópicos publicados, e em seguida o site foi atualizado para o AEM 5.6.1 ou posterior, tentar visualizar as publicações existentes pode resultar em um erro na página:
 
 Caractere de padrão ilegal &#39;a&#39;
 Não é possível atender à solicitação para `/content/demoforums/forum-test.html` neste servidor e os logs contêm o seguinte:
@@ -49,9 +47,9 @@ Portanto, qualquer código que use a API RelativeTimeFormat() deverá ser altera
 * De: `final RelativeTimeFormat fmt = new RelativeTimeFormat("r a", resourceBundle);`
 * Para: `final RelativeTimeFormat fmt = new RelativeTimeFormat("r", resourceBundle);`
 
-A falha é diferente no Author e no Publish. No Editor, ela falha silenciosamente e simplesmente não exibe os tópicos do fórum. No Publish, ele exibe o erro na página.
+A falha é diferente em Autor e Publicação. No Editor, ela falha silenciosamente e simplesmente não exibe os tópicos do fórum. Em Publicar, ele emite o erro na página.
 
-Consulte a API [com.day.cq.commons.date.RelativeTimeFormat](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html) para obter mais informações.
+Consulte a API [com.day.cq.commons.date.RelativeTimeFormat](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html) para obter mais informações.
 
 ## Preocupações comuns {#common-concerns}
 
@@ -61,7 +59,7 @@ Durante a inicialização (não o primeiro - mas todos os próximos), o seguinte
 
 * `11.04.2014 08:38:07.223 WARN [FelixStartLevel]com.github.jknack.handlebars.Handlebars Helper 'i18n'` foi substituído por `com.adobe.cq.social.handlebars.I18nHelper@15bac645`
 
-Este aviso pode ser ignorado com segurança, pois o `jknack.handlebars.Handlebars`, usado pelo [SCF](scf.md#handlebarsjavascripttemplatinglanguage), vem com seu próprio utilitário auxiliar i18n. Na inicialização, ele é substituído por um [auxiliar i18n específico do AEM](handlebars-helpers.md#i-n). Este aviso é gerado pela biblioteca de terceiros para confirmar a substituição de um auxiliar existente.
+Este aviso pode ser ignorado com segurança, pois o `jknack.handlebars.Handlebars`, usado pelo [SCF](scf.md#handlebarsjavascripttemplatinglanguage), vem com seu próprio utilitário auxiliar i18n. Na inicialização, ele é substituído por um [auxiliar do i18n específico da AEM](handlebars-helpers.md#i-n). Este aviso é gerado pela biblioteca de terceiros para confirmar a substituição de um auxiliar existente.
 
 ### Aviso nos logs: OakResourceListener processOsgiEventQueue {#warning-in-logs-oakresourcelistener-processosgieventqueue}
 
@@ -80,7 +78,7 @@ Esses avisos podem ser ignorados com segurança.
 
 ### Erro nos logs: NoClassDefFoundError para IndexElementFactory {#error-in-logs-noclassdeffounderror-for-indexelementfactory}
 
-Atualizar o AEM 5.6.1 para o cq-socialcommunities-pkg-1.4.x mais recente ou para AEM 6.0 resulta em erros no arquivo de log. Isso ocorre durante a inicialização para uma condição que se resolve conforme evidenciado pelo erro não ser visto na reinicialização.
+Atualizar o AEM 5.6.1 para a versão mais recente do cq-socialcommunities-pkg-1.4.x ou para o AEM 6.0 resulta em erros no arquivo de log. Isso ocorre durante a inicialização para uma condição que se resolve conforme evidenciado pelo erro não ser visto na reinicialização.
 
 ```xml
 14.11.2013 20:52:39.453 ERROR [Apache Sling JCR Resource Event Queue Processor for path '/'] com.adobe.cq.social.storage.index.impl.IndexService Error occurred while processing event java.util.ConcurrentModificationException

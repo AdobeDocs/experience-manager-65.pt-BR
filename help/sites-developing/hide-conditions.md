@@ -9,16 +9,14 @@ exl-id: 65f5d5e1-ac11-4a3c-8a51-ce06a741c264
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '581'
-ht-degree: 1%
-
+source-wordcount: '649'
+ht-degree: 2%
 ---
-
 # Uso de condições de ocultação {#using-hide-conditions}
 
-As condições de ocultação podem ser usadas para determinar se um recurso de componente é renderizado ou não. Um exemplo disso seria quando um autor de modelo configura o [componente de lista](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html?lang=pt-BR) do Componente principal no [editor de modelos](/help/sites-authoring/templates.md) e decide desabilitar as opções para criar a lista com base em páginas secundárias. Desativar essa opção na caixa de diálogo de design define uma propriedade para que, quando o componente de lista for renderizado, a condição de ocultação seja avaliada e a opção para mostrar páginas secundárias não seja exibida.
+As condições de ocultação podem ser usadas para determinar se um recurso de componente é renderizado ou não. Um exemplo disso seria quando um autor de modelo configura o [componente de lista](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html) do Componente principal no [editor de modelos](/help/sites-authoring/templates.md) e decide desabilitar as opções para criar a lista com base em páginas secundárias. Desativar essa opção na caixa de diálogo de design define uma propriedade para que, quando o componente de lista for renderizado, a condição de ocultação seja avaliada e a opção para mostrar páginas secundárias não seja exibida.
 
 ## Visão geral {#overview}
 
@@ -34,7 +32,7 @@ Ao usar as condições de ocultação, administradores, desenvolvedores e superu
 
 `com.adobe.granite.ui.components.FilteringResourceWrapper` é responsável por filtrar os recursos com base na existência e no valor da propriedade `granite:hide`, localizada no campo a ser filtrado. A implementação de `/libs/cq/gui/components/authoring/dialog/dialog.jsp` inclui uma instância de `FilteringResourceWrapper.`
 
-A implementação usa a [API ELResolver](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/docs/server/el.html) do Granite e adiciona uma variável personalizada `cqDesign` por meio do ExpressionCustomizer.
+A implementação usa a [API ELResolver](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/docs/server/el.html) do Granite e adiciona uma variável personalizada `cqDesign` por meio do ExpressionCustomizer.
 
 Estes são alguns exemplos de condições de ocultação em um nó de design localizado em `etc/design` ou como uma Política de Conteúdo.
 
@@ -56,7 +54,7 @@ Ao definir a expressão ocultar, lembre-se do seguinte:
 
 ## Exemplo {#example}
 
-Exemplos de condições de ocultação podem ser encontrados no AEM e nos [componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) em particular. Por exemplo, considere o [componente principal da lista](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html?lang=pt-BR).
+Exemplos de condições de ocultação podem ser encontrados em todo o AEM e nos [componentes principais](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/introduction) em particular. Por exemplo, considere o [componente principal da lista](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html).
 
 [Usando o editor de modelo](/help/sites-authoring/templates.md), o autor do modelo pode definir na caixa de diálogo de design quais opções do componente de lista estão disponíveis para o autor da página. É possível ativar ou desativar opções como permitir que a lista seja uma lista estática, uma lista de páginas secundárias, uma lista de páginas marcadas e assim por diante.
 

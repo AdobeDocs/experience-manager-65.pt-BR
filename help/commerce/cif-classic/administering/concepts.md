@@ -6,13 +6,11 @@ exl-id: 290b2af6-257f-42f2-b809-1248227a4795
 solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
-source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '4534'
-ht-degree: 0%
-
+source-wordcount: '4567'
+ht-degree: 1%
 ---
-
 # Conceitos{#concepts}
 
 A estrutura de integração fornece os mecanismos e os componentes para:
@@ -40,7 +38,7 @@ Isso significa que:
 
 >[!CAUTION]
 >
->A [estrutura de integração de comércio eletrônico](https://business.adobe.com/br/products/experience-manager/sites/ecommerce-integrations.html) é um Complemento do AEM.
+>A [estrutura de integração de comércio eletrônico](https://business.adobe.com/products/experience-manager/sites/ecommerce-integrations.html) é um Complemento do AEM.
 >
 >Seu representante de vendas pode fornecer todos os detalhes, de acordo com o mecanismo apropriado.
 
@@ -126,7 +124,7 @@ O eCommerce do AEM é implementado com um mecanismo de eCommerce:
 >
 >O eCommerce do AEM implementado no AEM usando desenvolvimento genérico com base em JCR é:
 >
->* Um exemplo de comércio eletrônico independente, nativo do AEM, para ilustrar o uso da API. Isso pode ser usado para controlar dados do produto, carrinhos de compras e check-out com a exibição de dados existente e campanhas de marketing. Nesse caso, o banco de dados do produto é armazenado no repositório nativo do AEM (implementação do Adobe do [JCR](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/index.html)).
+>* Um exemplo de comércio eletrônico independente, nativo do AEM, para ilustrar o uso da API. Isso pode ser usado para controlar dados do produto, carrinhos de compras e check-out com a exibição de dados existente e campanhas de marketing. Nesse caso, o banco de dados do produto é armazenado no repositório nativo do AEM (implementação do Adobe do [JCR](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/index.html)).
 >
 >  A instalação padrão do AEM contém as noções básicas da [implementação genérica de comércio eletrônico](/help/commerce/cif-classic/administering/generic.md).
 
@@ -150,7 +148,7 @@ Embora geralmente um projeto precise desenvolver seu próprio provedor de comér
 >
 >Os importadores do Geometrixx usam arquivos CSV; há uma descrição do schema aceito (com propriedades personalizadas permitidas) nos comentários acima de sua implementação.
 
-O [ProductServicesManager](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/ProductServicesManager.html) mantém (por meio de [OSGi](/help/sites-deploying/configuring.md#osgi-configuration-settings)) uma lista de implementações das interfaces do [ProductImporter](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/ProductImporter.html) e do [CatalogBlueprintImporter](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/CatalogBlueprintImporter.html). Eles estão listados no campo suspenso **Importador/Provedor de Commerce** do assistente de importador (usando a propriedade `commerceProvider` como nome).
+O [ProductServicesManager](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/commerce/pim/api/ProductServicesManager.html) mantém (por meio de [OSGi](/help/sites-deploying/configuring.md#osgi-configuration-settings)) uma lista de implementações das interfaces do [ProductImporter](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/commerce/pim/api/ProductImporter.html) e do [CatalogBlueprintImporter](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/commerce/pim/api/CatalogBlueprintImporter.html). Eles estão listados no campo suspenso **Importador/Provedor de Commerce** do assistente de importador (usando a propriedade `commerceProvider` como nome).
 
 Quando um importador/provedor de comércio específico estiver disponível na lista suspensa, todos os dados complementares necessários deverão ser definidos (dependendo do tipo de importador) no:
 

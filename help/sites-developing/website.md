@@ -10,13 +10,11 @@ exl-id: d7cf843c-c837-4b97-b6c5-0fbd6793bdd4
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '4923'
+source-wordcount: '5032'
 ht-degree: 1%
-
 ---
-
 # Criar um site completo (JSP){#create-a-fully-featured-website-jsp}
 
 >[!NOTE]
@@ -140,7 +138,7 @@ Um modelo define o conteúdo padrão de uma nova página. Sites complexos podem 
 
    ![chlimage_1-30](assets/chlimage_1-30.png)
 
-   O valor da propriedade de caminho permitida é uma expressão regular *.* As páginas com um caminho correspondente à expressão podem usar o modelo. Nesse caso, a expressão regular corresponde ao caminho da pasta **/conteúdo** e de todas as subpáginas.
+   O valor da propriedade de caminho permitida é uma *expressão regular.* As páginas que têm um caminho que corresponde à expressão podem usar o modelo. Nesse caso, a expressão regular corresponde ao caminho da pasta **/conteúdo** e de todas as subpáginas.
 
    Quando um autor cria uma página abaixo de /content, o modelo **contentpage** aparece em uma lista de modelos disponíveis para uso.
 
@@ -329,7 +327,7 @@ Nesta seção, você cria vários scripts que geram, cada um, uma parte do corpo
 
 1. No CRXDE Lite, crie o arquivo `left.jsp` em `/apps/mywebsite/components/contentpage`:
 
-   1. Clique com o botão direito do mouse no nó `/apps/mywebsite/components/contentpage` e selecione **Criar &#x200B;** depois **Criar arquivo**.
+   1. Clique com o botão direito do mouse no nó `/apps/mywebsite/components/contentpage` e selecione **Criar** depois **Criar arquivo**.
 
    1. Na janela, digite `left.jsp` como o **Nome** e clique em **OK**.
 
@@ -523,9 +521,9 @@ Neste exercício, o Sling corresponde esses URLs ao script /apps/mywebsite/compo
 
 1. Copie o código a seguir em `navimage.png.java.`O código estende a classe AbstractImageServlet:
 
-   * [AbstractImageServlet](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html) cria um objeto ImageContext que armazena as propriedades do recurso atual.
+   * [AbstractImageServlet](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html) cria um objeto ImageContext que armazena as propriedades do recurso atual.
    * A página principal do recurso é extraída do objeto ImageContext. O título da página e o subtítulo são obtidos.
-   * O [ImageHelper](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/ImageHelper.html) é usado para gerar a imagem do arquivo navimage_bg.jpg do design do site, do título da página e do subtítulo da página.
+   * O [ImageHelper](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/commons/ImageHelper.html) é usado para gerar a imagem do arquivo navimage_bg.jpg do design do site, do título da página e do subtítulo da página.
 
    ```java
    package apps.mywebsite.components.contentpage;
@@ -1530,6 +1528,6 @@ Para este componente, você pode definir vários parâmetros nos modos de ediç�
    ```
 
 1. Salve as alterações.
-1. No navegador, recarregue a página **&#x200B; Produtos &#x200B;**. A página inteira se parece com o seguinte:
+1. No navegador, recarregue a página ** Produtos **. A página inteira se parece com o seguinte:
 
    ![chlimage_1-5](assets/chlimage_1-5.jpeg)

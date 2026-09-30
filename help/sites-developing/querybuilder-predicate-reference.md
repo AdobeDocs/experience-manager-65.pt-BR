@@ -9,13 +9,11 @@ exl-id: 54b942f9-5dd9-4826-9a0a-028f2d7b8e41
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Search,Query Builder
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '2383'
+source-wordcount: '2385'
 ht-degree: 1%
-
 ---
-
 # Referência de predicado do construtor de consultas{#query-builder-predicate-reference}
 
 >[!CAUTION]
@@ -229,7 +227,7 @@ Este é conceitualmente `fulltext AND ( (path AND type) OR (path AND type) )`. E
 
 ### hasPermission {#haspermission}
 
-Restringe o resultado aos itens em que a sessão atual tem os [privilégios JCR especificados.](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges)
+Restringe o resultado aos itens em que a sessão atual tem os [privilégios JCR especificados.](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges)
 
 Este é um predicado somente de filtragem e não pode usar um índice de pesquisa. Não há suporte para extração de facetas.
 
@@ -269,7 +267,7 @@ Suporta extração de facetas e fornece dois buckets para ativos principais e se
 
 ### memberOf {#memberof}
 
-Localiza itens que são membros de uma [coleção de recursos de sling](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/resource/collection/ResourceCollection.html) específica.
+Localiza itens que são membros de uma [coleção de recursos de sling](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/org/apache/sling/resource/collection/ResourceCollection.html) específica.
 
 Este é um predicado somente de filtragem e não pode usar um índice de pesquisa. Não oferece suporte à extração de facetas.
 
@@ -381,7 +379,7 @@ Oferece suporte à extração de facetas. Fornece intervalos para cada valor de 
 
 * **profundidade**
 
-  Número de níveis curinga sob os quais a propriedade/caminho relativo pode existir (por exemplo, `property=size depth=2` verifica nó/tamanho, nó/&ast;/tamanho e nó/&ast;/&ast;/tamanho).
+  Número de níveis curinga sob os quais a propriedade/caminho relativo pode existir (por exemplo, `property=size depth=2` verifica nó/tamanho, nó/&amp;ast;/tamanho e nó/&amp;ast;/&amp;ast;/tamanho).
 
 ### rangeproperty {#rangeproperty}
 

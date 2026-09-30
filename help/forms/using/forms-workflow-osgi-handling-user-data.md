@@ -1,32 +1,33 @@
 ---
-title: Fluxos de trabalho centrados no Forms no OSGi | Manuseio de dados do usuário
-description: Fluxos de trabalho centrados no Forms no OSGi | Manuseio de dados do usuário
+title: Fluxos de trabalho centrados no Forms no OSGi | Manipulação de dados do usuário
+
+description: Fluxos de trabalho centrados no Forms no OSGi | Manipulação de dados do usuário
+
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
+
 role: Admin,User
 exl-id: fd0e17d7-c3e9-4dec-ad26-ed96a1881f42
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on OSGi
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '986'
+source-wordcount: '1033'
 ht-degree: 0%
-
 ---
+# Fluxos de trabalho centrados no Forms no OSGi | Manipulação de dados do usuário {#forms-centric-workflows-on-osgi-handling-user-data}
 
-# Fluxos de trabalho centrados no Forms no OSGi | Manuseio de dados do usuário {#forms-centric-workflows-on-osgi-handling-user-data}
-
-Os fluxos de trabalho de AEM centrados na Forms permitem que você automatize processos de negócios reais centrados na Forms. Os fluxos de trabalho consistem em uma série de etapas executadas em uma ordem especificada no modelo de fluxo de trabalho associado. Cada etapa executa uma ação específica, como atribuir uma tarefa a um usuário ou enviar uma mensagem de email. Os workflows podem interagir com ativos no repositório, contas de usuário e serviços. Portanto, os workflows podem coordenar atividades complicadas que envolvem qualquer aspecto do Experience Manager.
+Os fluxos de trabalho do AEM centrados na Forms permitem que você automatize processos de negócios reais centrados na Forms. Os fluxos de trabalho consistem em uma série de etapas executadas em uma ordem especificada no modelo de fluxo de trabalho associado. Cada etapa executa uma ação específica, como atribuir uma tarefa a um usuário ou enviar uma mensagem de email. Os workflows podem interagir com ativos no repositório, contas de usuário e serviços. Portanto, os workflows podem coordenar atividades complicadas que envolvem qualquer aspecto do Experience Manager.
 
 Um fluxo de trabalho centrado em formulários pode ser acionado ou iniciado por meio de qualquer um dos seguintes métodos:
 
-* Envio de um aplicativo da Caixa de entrada AEM
-* Enviando um aplicativo do aplicativo AEM [!DNL Forms]
+* Envio de um aplicativo da Caixa de entrada do AEM
+* Enviando um aplicativo do aplicativo [!DNL Forms] do AEM
 * Envio de um formulário adaptável
 * Uso de uma pasta monitorada
 * Enviar uma comunicação interativa ou uma carta
 
-Para obter mais informações sobre fluxos de trabalho e recursos de AEM centrados no Forms, consulte [Fluxo de trabalho centrado no Forms no OSGi](/help/forms/using/aem-forms-workflow.md).
+Para obter mais informações sobre fluxos de trabalho e recursos do AEM centrados na Forms, consulte [Fluxo de trabalho centrado na Forms no OSGi](/help/forms/using/aem-forms-workflow.md).
 
 ## Dados do usuário e armazenamentos de dados {#user-data-and-data-stores}
 
@@ -51,7 +52,7 @@ Os locais de repositório padrão onde a carga, os rascunhos e o histórico de u
    <td>/etc/workflow/instances/[server_id]/[date]/[workflow-instance]/</td>
   </tr>
   <tr>
-   <td><strong>Carga útil</strong></td>
+   <td><strong>Conteúdo</strong></td>
    <td>/var/fd/dashboard/payload/[server_id]/[date]/<br /> [payload-id]/</td>
    <td>/etc/fd/dashboard/payload/[server_id]/[date]/<br /> [payload-id]/</td>
   </tr>
@@ -75,13 +76,13 @@ Você pode acessar e excluir dados do usuário de uma instância do fluxo de tra
 No entanto, não é possível identificar ou os resultados podem ser ambíguos ao identificar workflows associados a um iniciador nos seguintes cenários:
 
 * **Fluxo de trabalho disparado por meio de uma pasta monitorada**: uma instância de fluxo de trabalho não poderá ser identificada com seu iniciador se o fluxo de trabalho for disparado por uma pasta monitorada. Nesse caso, as informações do usuário são codificadas nos dados armazenados.
-* **Fluxo de trabalho iniciado a partir da instância de publicação do AEM**: todas as instâncias de fluxo de trabalho são criadas usando um usuário de serviço quando formulários adaptáveis, comunicações interativas ou cartas são enviadas a partir da instância de publicação do AEM. Nesses casos, o nome do usuário conectado não é capturado nos dados da instância do fluxo de trabalho.
+* **Fluxo de trabalho iniciado da instância do AEM de publicação**: todas as instâncias de fluxo de trabalho são criadas usando um usuário de serviço quando formulários adaptáveis, comunicações interativas ou cartas são enviadas da instância de publicação do AEM. Nesses casos, o nome do usuário conectado não é capturado nos dados da instância do fluxo de trabalho.
 
 ### Acessar dados do usuário {#access}
 
 Para identificar e acessar os dados do usuário armazenados para uma instância de workflow, execute as seguintes etapas:
 
-1. Na instância do autor AEM, vá para `https://'[server]:[port]'/crx/de` e navegue até **[!UICONTROL Ferramentas > Consulta]**.
+1. Na instância do autor do AEM, vá para `https://'[server]:[port]'/crx/de` e navegue até **[!UICONTROL Ferramentas > Consulta]**.
 
    Selecione **[!UICONTROL SQL2]** no menu suspenso **[!UICONTROL Type]**.
 
@@ -121,11 +122,11 @@ Para identificar e acessar os dados do usuário armazenados para uma instância 
 
    >[!NOTE]
    >
-   >O aplicativo AEM [!DNL Forms] também armazena dados no modo offline. É possível que os dados de uma instância de fluxo de trabalho sejam armazenados localmente em dispositivos individuais e sejam enviados ao servidor [!DNL Forms] quando o aplicativo for sincronizado com o servidor.
+   >O aplicativo [!DNL Forms] do AEM também armazena dados no modo offline. É possível que os dados de uma instância de fluxo de trabalho sejam armazenados localmente em dispositivos individuais e sejam enviados ao servidor [!DNL Forms] quando o aplicativo for sincronizado com o servidor.
 
 ### Excluir dados do usuário {#delete-user-data}
 
-Você deve ser um administrador do AEM para excluir dados do usuário das instâncias do fluxo de trabalho, executando as seguintes etapas:
+Você deve ser um administrador do AEM para excluir dados de usuários das instâncias de fluxo de trabalho executando as seguintes etapas:
 
 1. Siga as instruções em [Acessar dados do usuário](/help/forms/using/forms-workflow-osgi-handling-user-data.md#access) e anote o seguinte:
 
@@ -152,10 +153,10 @@ Você deve ser um administrador do AEM para excluir dados do usuário das instâ
    >A exclusão do nó da instância de fluxo de trabalho removerá a instância de fluxo de trabalho para todos os participantes do fluxo de trabalho.
 
 1. Repita as etapas 2 a 6 para todas as instâncias de fluxo de trabalho identificadas para um usuário.
-1. Identifique e exclua dados de rascunho e envio offline da caixa de saída do aplicativo AEM [!DNL Forms] dos participantes do fluxo de trabalho para evitar qualquer envio para o servidor.
+1. Identifique e exclua os dados de rascunho e envio offline da caixa de saída do aplicativo AEM [!DNL Forms] dos participantes do fluxo de trabalho para evitar qualquer envio para o servidor.
 
 Também é possível usar APIs para acessar e remover nós e propriedades. Consulte os documentos a seguir para obter mais informações.
 
 * [Como acessar programaticamente o JCR do AEM](/help/sites-developing/access-jcr.md)
-* [Removendo Nós e Propriedades](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/10_Writing.html#10.9%20Removing%20Nodes%20and%20Properties)
-* [Referência da API](https://helpx.adobe.com/br/experience-manager/6-3/sites-developing/reference-materials/javadoc/overview-summary.html)
+* [Removendo nós e propriedades](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/10_Writing.html#10.9%20Removing%20Nodes%20and%20Properties)
+* [Referência da API](https://helpx.adobe.com/experience-manager/6-3/sites-developing/reference-materials/javadoc/overview-summary.html)

@@ -6,13 +6,11 @@ exl-id: 2e7ec22f-0856-44c4-bb15-1086dae0b85a
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '3070'
+source-wordcount: '3073'
 ht-degree: 1%
-
 ---
-
 # Configurar o editor de rich text {#configure-the-rich-text-editor}
 
 O Editor de Rich Text (RTE) fornece aos autores uma ampla variedade de funcionalidades para editar seu conteúdo de texto. Ícones, caixas de seleção, barra de ferramentas e menus são fornecidos para uma experiência de edição de texto no WYSIWYG.
@@ -183,9 +181,9 @@ Para obter configurações detalhadas dos plug-ins RTE, consulte [como ativar e 
 
 >[!NOTE]
 >
->O [componente de texto dos Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=pt-BR#the-text-component-and-the-rich-text-editor) permite que os editores de modelo configurem vários plug-ins de RTE em uma GUI como políticas de conteúdo, eliminando a necessidade de configuração técnica. As políticas de conteúdo podem funcionar com as configurações da interface do usuário de RTE conforme descrito neste documento.
+>O [componente de texto dos Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor) permite que os editores de modelo configurem vários plug-ins de RTE em uma GUI como políticas de conteúdo, eliminando a necessidade de configuração técnica. As políticas de conteúdo podem funcionar com as configurações da interface do usuário de RTE conforme descrito neste documento.
 >
->Para obter mais informações, consulte a seção [Configurações da interface do usuário do RTE e políticas de conteúdo](/help/sites-administering/rich-text-editor.md) deste documento e a [documentação do desenvolvedor sobre Criação de Modelos de Página](/help/sites-authoring/templates.md) e os [Componentes Principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html?lang=pt-BR).
+>Para obter mais informações, consulte a seção [Configurações da interface do usuário do RTE e políticas de conteúdo](/help/sites-administering/rich-text-editor.md) deste documento e a [documentação do desenvolvedor sobre Criação de Modelos de Página](/help/sites-authoring/templates.md) e os [Componentes Principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html).
 
 >[!NOTE]
 >
@@ -261,7 +259,7 @@ As opções disponíveis no fluxo de RTE downstream das configurações da inter
 * Se a configuração da interface do usuário do RTE tiver sido removida ou não ativar um item, a política de conteúdo não poderá configurá-lo.
 * Um autor tem acesso somente a essas funcionalidades, conforme disponibilizado pelas configurações da interface do usuário e pelas políticas de conteúdo.
 
-Como exemplo, você pode ver a [documentação do Componente principal de texto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html?lang=pt-BR#the-text-component-and-the-rich-text-editor).
+Como exemplo, você pode ver a [documentação do Componente principal de texto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html#the-text-component-and-the-rich-text-editor).
 
 ## Personalizar o mapeamento entre ícones e comandos da barra de ferramentas {#iconstoolbar}
 
@@ -325,12 +323,12 @@ Em uma página, você pode incluir a biblioteca cliente CoralUI 2 RTE ou a bibli
 
 ## Informações adicionais {#further-information}
 
-Para obter mais informações sobre como configurar o RTE, consulte a [API do AEM Widget](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.RichText) reference.
+Para obter mais informações sobre como configurar o RTE, consulte a [API do AEM Widget](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.form.RichText) reference.
 
 Em particular, para ver os plug-ins e as opções relacionadas disponíveis:
 
-* O componente [CQ.form.RichText](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.RichText) fornece um campo de formulário para editar informações de texto estilizado (rich text). Para conhecer todos os parâmetros disponíveis para o formulário rich text, consulte as Opções de configuração.
-* O componente RichText fornece uma ampla variedade de funcionalidades usando plug-ins listados em [CQ.form.rte.plugins.Plugin](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin). Para cada plugin:
+* O componente [CQ.form.RichText](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.form.RichText) fornece um campo de formulário para editar informações de texto estilizado (rich text). Para conhecer todos os parâmetros disponíveis para o formulário rich text, consulte as Opções de configuração.
+* O componente RichText fornece uma ampla variedade de funcionalidades usando plug-ins listados em [CQ.form.rte.plugins.Plugin](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin). Para cada plugin:
 
   * consulte os Recursos para obter detalhes sobre a funcionalidade que pode ser ativada (ou desativada)
   * Consulte as Opções de configuração para todos os parâmetros disponíveis para obter a configuração detalhada do plug-in apropriado
@@ -391,7 +389,7 @@ Além disso, verifique se o código de implementação de vários campos e a est
 
 **As configurações disponíveis para administradores não estão disponíveis para autores**
 
-Se as atualizações das configurações de interface forem refletidas para administradores, mas não para contas de autor, verifique se o nó de configuração não é nomeado como `config`. Use a propriedade [`configPath` &#x200B;](/help/sites-developing/components-basics.md#cq-inplaceediting).
+Se as atualizações das configurações de interface forem refletidas para administradores, mas não para contas de autor, verifique se o nó de configuração não é nomeado como `config`. Use a propriedade [`configPath` ](/help/sites-developing/components-basics.md#cq-inplaceediting).
 
 >[!MORELIKETHIS]
 >

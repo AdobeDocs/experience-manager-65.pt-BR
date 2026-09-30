@@ -9,13 +9,11 @@ exl-id: 6d653331-c1ce-4ccb-bb45-656b6413ac3e
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '237'
+source-wordcount: '279'
 ht-degree: 2%
-
 ---
-
 # Fundamentos da biblioteca de arquivos {#file-library-essentials}
 
 Esta página fornece as informações fundamentais para trabalhar com o recurso de biblioteca de arquivos.
@@ -55,9 +53,9 @@ Esta página fornece as informações fundamentais para trabalhar com o recurso 
 
 ## Essentials para o lado do servidor {#essentials-for-server-side}
 
-* [API da Biblioteca de Arquivos](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/filelibrary/client/api/package-summary.html)
+* [API da biblioteca de arquivos](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/filelibrary/client/api/package-summary.html)
 
-* [Pontos de Extremidade de Biblioteca de Arquivos](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/filelibrary/client/endpoints/package-summary.html)
+* [Endpoints da biblioteca de arquivos](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/filelibrary/client/endpoints/package-summary.html)
 
 * [Personalizações do lado do servidor](server-customize.md)
 
@@ -70,7 +68,7 @@ Uma estrutura de site de comunidade que inclui a [função de Biblioteca de Arqu
 A UGC deve ser moderada usando um dos métodos padrão para moderação.
 Consulte [Moderando Conteúdo Gerado por Usuário](moderate-ugc.md).
 
-Desde o AEM 6.1 Communities, o uso de um [armazenamento comum](working-with-srp.md) para UGC inclui acesso programático a UGC, independentemente da opção de armazenamento escolhida (como ASRP, MSRP ou JSRP).
+A partir do AEM 6.1 Communities, o uso de um [armazenamento comum](working-with-srp.md) para UGC inclui acesso programático a UGC, independentemente da opção de armazenamento escolhida (como ASRP, MSRP ou JSRP).
 
 **A localização e o formato do UGC no repositório estão sujeitos a alterações sem aviso**.
 

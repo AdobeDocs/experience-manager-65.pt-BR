@@ -9,13 +9,11 @@ exl-id: a7b295c1-cc9d-4881-8016-804b21fc1098
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '228'
-ht-degree: 2%
-
+source-wordcount: '273'
+ht-degree: 1%
 ---
-
 # Fundamentos de QnA {#qna-essentials}
 
 Esta página fornece as informações essenciais para trabalhar com o recurso de fórum de perguntas e respostas (QnA).
@@ -55,9 +53,9 @@ Esta página fornece as informações essenciais para trabalhar com o recurso de
 
 ## Essentials para o lado do servidor {#essentials-for-server-side}
 
-* [API QnA](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/qna/client/api/package-summary.html)
+* [API QnA](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/qna/client/api/package-summary.html)
 
-* [Pontos de Extremidade QnA](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/qna/client/endpoints/package-summary.html)
+* [Pontos finais de QnA](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/qna/client/endpoints/package-summary.html)
 
 * [Personalizações do lado do servidor](server-customize.md)
 
@@ -70,7 +68,7 @@ Uma estrutura de site de comunidade que inclui a [função QnA](functions.md#qna
 A UGC deve ser moderada usando um dos métodos padrão para moderação.
 Consulte [Moderando Conteúdo Gerado Pelo Usuário](moderate-ugc.md).
 
-Desde o AEM 6.1 Communities, o uso de um [armazenamento comum](working-with-srp.md) para UGC inclui acesso programático a UGC, independentemente da opção de armazenamento escolhida (como ASRP, MSRP ou JSRP).
+A partir do AEM 6.1 Communities, o uso de um [armazenamento comum](working-with-srp.md) para UGC inclui acesso programático a UGC, independentemente da opção de armazenamento escolhida (como ASRP, MSRP ou JSRP).
 
 **A localização e o formato do UGC no repositório estão sujeitos a alterações sem aviso**.
 

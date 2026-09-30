@@ -1,25 +1,23 @@
 ---
-title: Integrar  [!DNL Assets]  ao fluxo de atividade
-description: Descreve os recursos de gravação de  [!DNL Experience Manager]  e como configurá-los para gravar eventos específicos.
+title: Integrar [!DNL Assets] ao fluxo de atividade
+description: Descreve os recursos de gravação de [!DNL Experience Manager] e como configurá-los para gravar eventos específicos.
 contentOwner: AG
 role: Developer
 feature: Asset Management
 exl-id: 2a08a7c1-8be9-42d1-9983-f9c8b12ea4e8
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '243'
+source-wordcount: '258'
 ht-degree: 0%
-
 ---
-
 # Integrar [!DNL Assets] ao fluxo de atividade {#integrating-assets-with-activity-stream}
 
 [!DNL Adobe Experience Manager Assets] usuários executam muitas ações, como criar, carregar e excluir o Assets. Essas ações podem ser registradas para que você possa fornecer um histórico do que foi feito por um usuário. Esta seção descreve os recursos de gravação de [!DNL Experience Manager] e como configurar [!DNL Experience Manager] para gravar eventos específicos.
 
 ## Considerações sobre o desempenho e comportamento padrão {#performance-considerations-and-default-behavior}
 
-Essa integração pode consumir CPU e espaço em disco, por exemplo, ao fazer uma importação em massa. Por esses motivos, a integração [!DNL Assets] com o Fluxo de atividades é desabilitada por padrão.
+Essa integração pode consumir espaço em disco e CPU, por exemplo, ao fazer uma importação em massa. Por esses motivos, a integração [!DNL Assets] com o Fluxo de atividades é desabilitada por padrão.
 
 ## Eventos de ação compatíveis {#supported-action-events}
 
@@ -59,4 +57,4 @@ O [console da Web](/help/sites-deploying/configuring-osgi.md) fornece acesso ao 
 
 ## Ler eventos gravados {#reading-recorded-events}
 
-Os eventos registrados são armazenados como atividades. Você pode lê-las programaticamente usando a [API do ActivityManager](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/activitystreams/ActivityManager.html).
+Os eventos registrados são armazenados como atividades. Você pode lê-las programaticamente usando a [API do ActivityManager](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/granite/activitystreams/ActivityManager.html).

@@ -10,13 +10,11 @@ exl-id: f13ac6c2-16ab-422d-9005-ab0b49172271
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '2238'
+source-wordcount: '2240'
 ht-degree: 0%
-
 ---
-
 # Conceitos da interface do usuário habilitada para toque do Adobe Experience Manager{#concepts-of-the-aem-touch-enabled-ui}
 
 O Adobe Experience Manager (AEM) apresenta uma interface habilitada para toque com [design responsivo](/help/sites-authoring/responsive-layout.md) para o ambiente de criação projetado para operar em dispositivos de toque e desktop.
@@ -28,24 +26,24 @@ O Adobe Experience Manager (AEM) apresenta uma interface habilitada para toque c
 A interface habilitada para toque inclui:
 
 * O cabeçalho do conjunto que:
-   * Mostra o logotipo
-   * Fornece um link para a Navegação global
-   * Fornece link para outras ações genéricas, como Pesquisa, Ajuda, Soluções da Experience Cloud, Notificações e Configurações do usuário.
+  * Mostra o logotipo
+  * Fornece um link para a Navegação global
+  * Fornece link para outras ações genéricas, como Pesquisa, Ajuda, Soluções da Experience Cloud, Notificações e Configurações do usuário.
 * O painel esquerdo (exibido quando necessário e oculto), que pode mostrar:
-   * Linha do tempo
-   * Referências
-   * Filtros
+  * Linha do tempo
+  * Referências
+  * Filtros
 * O cabeçalho de navegação, que novamente é sensível ao contexto e pode mostrar:
-   * Indica qual console você está usando no momento, sua localização ou ambos dentro desse console
-   * Seleção para o painel esquerdo
-   * Navegações estruturais
-   * Acesso a **Criar** ações apropriadas
-   * Exibir seleções
+  * Indica qual console você está usando no momento, sua localização ou ambos dentro desse console
+  * Seleção para o painel esquerdo
+  * Navegações estruturais
+  * Acesso a **Criar** ações apropriadas
+  * Exibir seleções
 * A área de conteúdo que:
-   * Lista os itens de conteúdo (sejam páginas, ativos, publicações de fórum e assim por diante)
-   * Pode ser formatado conforme solicitado, por exemplo, coluna, cartão ou lista
-   * Usa um design responsivo (a tela é redimensionada automaticamente de acordo com o tamanho do dispositivo e/ou da janela)
-   * Usa rolagem infinita (sem mais paginação, todos os itens são listados em uma janela)
+  * Lista os itens de conteúdo (sejam páginas, ativos, publicações de fórum e assim por diante)
+  * Pode ser formatado conforme solicitado, por exemplo, coluna, cartão ou lista
+  * Usa um design responsivo (a tela é redimensionada automaticamente de acordo com o tamanho do dispositivo e/ou da janela)
+  * Usa rolagem infinita (sem mais paginação, todos os itens são listados em uma janela)
 
 ![chlimage_1-79](assets/chlimage_1-79.png)
 
@@ -200,7 +198,7 @@ As diferenças entre a interface do Granite e a ExtJS (usada para a interface cl
 
 ### Componentes de base da interface de usuário do Granite {#granite-ui-foundation-components}
 
-Os [componentes de base da interface do Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) fornecem os blocos de construção básicos necessários para a compilação de qualquer interface do usuário. Incluem, entre outros:
+Os [componentes de base da interface do Granite](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) fornecem os blocos de construção básicos necessários para a compilação de qualquer interface do usuário. Incluem, entre outros:
 
 * Botão
 * Hiperlink
@@ -245,19 +243,19 @@ Ao atualizar o código ExtJS para usar a interface do Granite, a lista a seguir 
 | `pathfield, paragraphreference` | `granite/ui/components/foundation/form/pathbrowser` |
 | `selection` | `granite/ui/components/foundation/form/select` |
 | `sizefield` | `cq/gui/components/authoring/dialog/sizefield` |
-| `tags` | `granite/ui/components/foundation/form/autocomplete`&#x200B;`cq/gui/components/common/datasources/tags` |
+| `tags` | `granite/ui/components/foundation/form/autocomplete``cq/gui/components/common/datasources/tags` |
 | `textarea` | `granite/ui/components/foundation/form/textarea` |
 | `textfield` | `granite/ui/components/foundation/form/textfield` |
 
 | **Tipo de nó** | **Tipo de recurso de interface do Granite** |
 |---|---|
 | `cq:WidgetCollection` | `granite/ui/components/foundation/container` |
-| `cq:TabPanel` | `granite/ui/components/foundation/container`&#x200B;`granite/ui/components/foundation/layouts/tabs` |
+| `cq:TabPanel` | `granite/ui/components/foundation/container``granite/ui/components/foundation/layouts/tabs` |
 | `cq:panel` | `granite/ui/components/foundation/container` |
 
 ### Componentes de administração da interface de usuário do Granite {#granite-ui-administration-components}
 
-Os [componentes de administração da interface do Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) são compilados nos componentes de base para fornecer blocos de construção genéricos que qualquer aplicativo de administração pode implementar. Estes incluem, entre outros:
+Os [componentes de administração da interface do Granite](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) são compilados nos componentes de base para fornecer blocos de construção genéricos que qualquer aplicativo de administração pode implementar. Estes incluem, entre outros:
 
 * Barra de navegação global
 * Trilho (esqueleto)

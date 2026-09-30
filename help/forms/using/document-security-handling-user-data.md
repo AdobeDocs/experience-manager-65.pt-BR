@@ -1,5 +1,5 @@
 ---
-title: Segurança de documentos | Manuseio de dados do usuário
+title: Segurança de documentos | Manipulação de dados do usuário
 description: Saiba mais sobre como a Segurança de documentos do AEM Forms permite gerenciar dados de usuários e armazenamentos de dados, além de acessar, excluir e exportar dados de usuários.
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -7,14 +7,12 @@ role: Admin,User
 exl-id: 00c01a12-1180-4f35-9179-461bf177c787
 solution: Experience Manager, Experience Manager Forms
 feature: Document Security,Adaptive Forms
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '993'
 ht-degree: 0%
-
 ---
-
-# Segurança de documentos | Manuseio de dados do usuário {#document-security-handling-user-data}
+# Segurança de documentos | Manipulação de dados do usuário {#document-security-handling-user-data}
 
 A segurança de documentos do AEM Forms permite criar, armazenar e aplicar configurações de segurança predefinidas a seus documentos. Ele garante que somente usuários autorizados possam usar os documentos. Você pode proteger documentos usando políticas. Uma política é uma coleção de informações que inclui configurações de segurança e uma lista de usuários autorizados. Você pode aplicar uma política a um ou mais documentos e autoriza os usuários adicionados no gerenciamento de usuários do AEM Forms JEE.
 
@@ -69,7 +67,7 @@ A tabela a seguir mapeia como a segurança de documentos organiza os dados nas t
    <td>Armazena informações sobre políticas arquivadas. Uma política arquivada contém seu XML de política armazenado como um objeto Blob.</td>
   </tr>
   <tr>
-   <td><p><code>EdcPolicySetPrincipalEntity</code></p> <p><code>EdcPolicySetPrincipalEnt</code><br /> (Oracle e bancos de dados MS® SQL)</p> </td>
+   <td><p><code>EdcPolicySetPrincipalEntity</code></p> <p><code>EdcPolicySetPrincipalEnt</code><br /> (bancos de dados Oracle e MS® SQL)</p> </td>
    <td>Armazena o mapeamento entre o conjunto de políticas e os usuários.</td>
   </tr>
   <tr>
@@ -125,7 +123,7 @@ Select * from edcinviteduserentity where principalId = '<principal_id>';
 
 >[!NOTE]
 >
->Para exportar dados da tabela `EdcAuditEntity`, use a API [EventManager.exportEvents](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/index.html?com/adobe/livecycle/rightsmanagement/client/EventManager.html) que usa [EventSearchFilter](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/infomodel/EventSearchFilter.html) como parâmetro para exportar dados de auditoria com base em `principalId`, `policyId` ou `licenseId`.
+>Para exportar dados da tabela `EdcAuditEntity`, use a API [EventManager.exportEvents](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/programlc/javadoc/index.html?com/adobe/livecycle/rightsmanagement/client/EventManager.html) que usa [EventSearchFilter](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/infomodel/EventSearchFilter.html) como parâmetro para exportar dados de auditoria com base em `principalId`, `policyId` ou `licenseId`.
 
 Para obter dados completos sobre um usuário no sistema, acesse e exporte dados do banco de dados de gerenciamento de usuários. Para obter mais informações, consulte [Gerenciamento de usuários do Forms: Manipulando dados do usuário](/help/forms/using/user-management-handling-user-data.md).
 
@@ -150,7 +148,7 @@ Faça o seguinte para excluir dados de segurança de documentos para uma ID prin
 
    >[!NOTE]
    >
-   >Para excluir dados da tabela `EdcAuditEntity`, use a API [EventManager.deleteEvents](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/index.html?com/adobe/livecycle/rightsmanagement/client/EventManager.html) que usa [EventSearchFilter](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/infomodel/EventSearchFilter.html) como parâmetro para excluir dados de auditoria com base em `principalId`, `policyId` ou `licenseId`.
+   >Para excluir dados da tabela `EdcAuditEntity`, use a API [EventManager.deleteEvents](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/programlc/javadoc/index.html?com/adobe/livecycle/rightsmanagement/client/EventManager.html) que usa [EventSearchFilter](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/infomodel/EventSearchFilter.html) como parâmetro para excluir dados de auditoria com base em `principalId`, `policyId` ou `licenseId`.
 
 1. Arquivos XML de diretiva ativos e arquivados são armazenados nas tabelas de banco de dados `EdcPolicyXmlEntity` e `EdcPolicyArchiveEntity`, respectivamente. Para excluir dados de um usuário dessas tabelas, faça o seguinte:
 

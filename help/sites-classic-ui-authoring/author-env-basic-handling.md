@@ -1,6 +1,6 @@
 ---
 title: Manuseio básico
-description: Uma visão geral do manuseio básico ao usar o ambiente de autor do Adobe Experience Manager. Usa o console Sites como base.
+description: Uma visão geral do manuseio básico ao usar o ambiente de autor do Adobe Experience Manager. Ele usa o console do Sites como base.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
@@ -9,13 +9,11 @@ exl-id: 2981dc20-b2ba-4ea2-a53b-8b5fe526aa9c
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '1161'
+source-wordcount: '1189'
 ht-degree: 4%
-
 ---
-
 # Manuseio básico{#basic-handling}
 
 >[!NOTE]
@@ -23,7 +21,7 @@ ht-degree: 4%
 >* Esta página foi projetada para fornecer uma visão geral do manuseio básico ao usar o ambiente de autor do Adobe Experience Manager (AEM). Usa o console **Sites** como base.
 >
 >* Algumas funcionalidades não estão disponíveis em todos os consoles e funcionalidades adicionais estão disponíveis em alguns consoles. Informações específicas sobre os consoles individuais e suas funcionalidades relacionadas são abordadas com mais detalhes em outras páginas.
->* Atalhos de teclado estão disponíveis em todo o AEM. Principalmente ao [usar consoles](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md) e [editar páginas](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md).
+>* Os atalhos de teclado estão disponíveis em todo o AEM. Principalmente ao [usar consoles](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md) e [editar páginas](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md).
 >
 
 ## A tela de boas-vindas {#the-welcome-screen}
@@ -46,7 +44,7 @@ Os principais consoles são:
   </tr>
   <tr>
    <td><strong>Bem-vindo</strong></td>
-   <td>Fornece uma visão geral e acesso direto (via links) à principal funcionalidade do AEM.</td>
+   <td>Fornece uma visão geral e acesso direto (por meio de links) à principal funcionalidade do AEM.</td>
   </tr>
   <tr>
    <td><strong>Assets digital</strong><br /> </td>
@@ -54,7 +52,7 @@ Os principais consoles são:
   </tr>
   <tr>
    <td><strong>Lançamentos</strong></td>
-   <td>Isso o ajuda a gerenciar suas <a href="/help/sites-classic-ui-authoring/classic-launches.md">inicializações</a>; elas permitem desenvolver o conteúdo para uma versão futura de uma ou mais páginas da Web ativadas.<br /> <i>Observação: na interface habilitada para toque, grande parte da mesma funcionalidade está disponível no console Sites, juntamente com o painel Referências.</i> <i>Se necessário, este console estará disponível no console Ferramentas; selecione Operações e Inicializações.</i></td>
+   <td>Isso o ajuda a gerenciar suas <a href="/help/sites-classic-ui-authoring/classic-launches.md">inicializações</a>; elas permitem desenvolver o conteúdo para uma versão futura de uma ou mais páginas da Web ativadas.<br /> <i>Observação: na interface habilitada para toque, grande parte da mesma funcionalidade está disponível no console Sites, junto com o painel Referências.</i> <i>Se necessário, este console estará disponível no console Ferramentas; selecione Operações e Inicializações.</i></td>
   </tr>
   <tr>
    <td><strong>Caixa de entrada </strong></td>
@@ -103,7 +101,7 @@ Aqui você pode [gerenciar suas páginas](/help/sites-authoring/managing-pages.m
 
 ![chlimage_1-9](assets/chlimage_1-9a.png)
 
-## Acessar ajuda   {#accessing-help}
+## Acessar ajuda {#accessing-help}
 
 Em vários consoles (por exemplo, Sites), um botão **Ajuda** está disponível. Clicar na **Ajuda** abre o site de documentação ou o Compartilhamento de Pacotes.
 
@@ -117,10 +115,10 @@ O console **Sites** lista suas páginas de conteúdo em uma estrutura de árvore
 
 * Clicar no nome da página no painel esquerdo faz o seguinte:
 
-   * Lista as páginas secundárias no painel direito
-   * Expande a estrutura no painel esquerdo.
+  * Lista as páginas secundárias no painel direito
+  * Expande a estrutura no painel esquerdo.
 
-     Por motivos de desempenho, essa ação depende do número de nós filhos. Com uma instalação padrão, esse método de expansão funciona quando há `30` ou menos nós filhos.
+    Por motivos de desempenho, essa ação depende do número de nós filhos. Com uma instalação padrão, esse método de expansão funciona quando há `30` ou menos nós filhos.
 
 * Clicar duas vezes no nome da página (painel esquerdo) expande a árvore, embora, como a página é aberta ao mesmo tempo, esse efeito não seja tão óbvio.
 
@@ -141,7 +139,7 @@ O console **Sites** lista suas páginas de conteúdo em uma estrutura de árvore
 >em:
 >`/apps/cq/ui/widgets/themes/default/widgets/wcm/SiteAdmin.js`
 >
->Consulte [SiteAdmin na API do Widget do CQ](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.SiteAdmin) para obter mais detalhes.
+>Consulte [SiteAdmin na API do Widget do CQ](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.wcm.SiteAdmin) para obter mais detalhes.
 
 ## Informações da página no console Sites {#page-information-on-the-websites-console}
 
@@ -158,7 +156,7 @@ Os itens a seguir estão disponíveis; um subconjunto desses campos é mostrado 
    <td><strong>Descrição</strong></td>
   </tr>
   <tr>
-   <td>Miniatura </td>
+   <td>Miniatura</td>
    <td>Mostra uma miniatura da página.</td>
   </tr>
   <tr>

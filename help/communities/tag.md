@@ -9,13 +9,11 @@ exl-id: 6e8af8cf-1239-46f9-b2fe-4aa80abc86ea
 solution: Experience Manager
 feature: Communities
 role: Developer
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '240'
+source-wordcount: '279'
 ht-degree: 3%
-
 ---
-
 # Fundamentos de tags {#tag-essentials}
 
 Quando os componentes do AEM Communities são configurados com a marcação ativada, os membros da comunidade podem marcar o conteúdo que publicam no ambiente de publicação.
@@ -73,9 +71,9 @@ A marcação de UGC pode ser habilitada ao configurar um [site da comunidade](si
 
 ## Essentials para o lado do servidor {#essentials-for-server-side}
 
-* [API da Nuvem da Marca Social](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/commons/tagcloud/api/package-summary.html)
+* [API da nuvem de tag social](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/commons/tagcloud/api/package-summary.html)
 
-* [Gerenciador de marcas sociais](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/commons/tagging/package-summary.html)
+* [Gerenciador de tags sociais](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/commons/tagging/package-summary.html)
 
 * [Personalizações do lado do servidor](server-customize.md)
 

@@ -10,16 +10,14 @@ exl-id: 51f616e8-4aba-47f6-b948-d5147d84bbb6
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '428'
-ht-degree: 2%
-
+source-wordcount: '475'
+ht-degree: 1%
 ---
-
 # Fundamentos do blog {#blog-essentials}
 
-Desde o AEM 6.1 Communities, um blog é uma atividade comunitária. Agora os artigos de blog são publicados a partir do ambiente de publicação, onde anteriormente os artigos de blog só podiam ser criados no ambiente de criação e publicados.
+Desde o AEM 6.1 Communities, um blog é uma atividade da comunidade. Agora os artigos de blog são publicados a partir do ambiente de publicação, onde anteriormente os artigos de blog só podiam ser criados no ambiente de criação e publicados.
 
 Artigos de blog agora podem ser criados por qualquer membro da comunidade, a menos que restritos a membros privilegiados.
 
@@ -78,9 +76,9 @@ O recurso de blog é composto por dois componentes principais que estão dispon�
 
 ## Essentials para o lado do servidor {#essentials-for-server-side}
 
-* [API do blog](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/journal/client/api/package-summary.html)
+* [API do blog](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/journal/client/api/package-summary.html)
 
-* [Pontos de Extremidade do Blog](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/journal/client/endpoints/package-summary.html)
+* [Endpoints do blog](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/journal/client/endpoints/package-summary.html)
 
 * [Personalizações do lado do servidor](/help/communities/server-customize.md)
 
@@ -93,7 +91,7 @@ Uma estrutura de site de comunidade que inclui a [função de Blog](/help/commun
 A UGC deve ser moderada usando um dos métodos padrão para moderação.
 Consulte [Moderando Conteúdo Gerado por Usuário](/help/communities/moderate-ugc.md).
 
-Desde o AEM 6.1 Communities, o uso de um [armazenamento comum](/help/communities/working-with-srp.md) para UGC inclui acesso programático a UGC, independentemente da opção de armazenamento escolhida (como ASRP, MSRP ou JSRP).
+A partir do AEM 6.1 Communities, o uso de um [armazenamento comum](/help/communities/working-with-srp.md) para UGC inclui acesso programático a UGC, independentemente da opção de armazenamento escolhida (como ASRP, MSRP ou JSRP).
 
 **A localização e o formato do UGC no repositório estão sujeitos a alterações sem aviso**.
 
@@ -114,9 +112,9 @@ Consulte [Publicador principal](/help/communities/deploy-communities.md#primary-
 
 A plataforma AEM bloqueia links de outros sites para impedir ataques XSS, conforme descrito em
 
-* [Protect contra Scripts entre sites (XSS)](/help/sites-developing/security.md#protect-against-cross-site-scripting-xss)
+* [Proteger contra Criação de script entre sites (XSS)](/help/sites-developing/security.md#protect-against-cross-site-scripting-xss)
 
-A partir do AEM 6.2, as modificações que anteriormente precisavam ser feitas manualmente estão incluídas no arquivo de configuração padrão do AntiSamy.
+A partir do AEM 6.2, as modificações que antes eram necessárias para serem feitas manualmente estão incluídas no arquivo de configuração padrão do AntiSamy.
 
 A mídia avançada está incorporada em um artigo de blog ao selecionar o ícone `Embed Media from External Sites`:
 

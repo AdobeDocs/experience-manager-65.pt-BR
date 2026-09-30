@@ -9,9 +9,9 @@ exl-id: 8af5ee58-19d7-47b6-b45d-e88006703a5d
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '1209'
+source-wordcount: '1210'
 ht-degree: 3%
 ---
 # Search Essentials {#search-essentials}
@@ -42,7 +42,7 @@ Consulte [SRP and UGC Essentials](srp-and-ugc.md) para obter informações sobre
 
 ## API de pesquisa UGC {#ugc-search-api}
 
-O [repositório comum de UGC](working-with-srp.md) é fornecido por um dos vários provedores de recursos de armazenamento (SRPs), cada um possivelmente com um idioma de consulta nativo diferente. Portanto, independentemente do SRP escolhido, o código personalizado deve usar métodos do [pacote de API de UGC](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/ugc/api/package-summary.html) (*com.adobe.cq.social.ugc.api*) que invoca o idioma de consulta apropriado para o SRP escolhido.
+O [repositório comum de UGC](working-with-srp.md) é fornecido por um dos vários provedores de recursos de armazenamento (SRPs), cada um possivelmente com um idioma de consulta nativo diferente. Portanto, independentemente do SRP escolhido, o código personalizado deve usar métodos do [pacote de API de UGC](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/ugc/api/package-summary.html) (*com.adobe.cq.social.ugc.api*) que invoca o idioma de consulta apropriado para o SRP escolhido.
 
 ### Pesquisas ASRP {#asrp-searches}
 

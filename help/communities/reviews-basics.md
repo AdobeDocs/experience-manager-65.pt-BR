@@ -9,13 +9,11 @@ exl-id: 91e0e245-a2f1-4bd7-b38f-7641fd94a547
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '309'
+source-wordcount: '351'
 ht-degree: 1%
-
 ---
-
 # Fundamentos das análises {#reviews-essentials}
 
 Esse recurso consiste em dois componentes que trabalham juntos: revisões e resumo de revisões.
@@ -40,7 +38,7 @@ Não há suporte para postagem anônima de uma revisão. Os visitantes do site d
   </tr>
   <tr>
    <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientllibs</strong></a></td>
-   <td>cq.social.hbs.reviews</td>
+   <td>cq.social.hbs.review</td>
   </tr>
   <tr>
    <td> <strong>modelos</strong></td>
@@ -62,7 +60,7 @@ Não há suporte para postagem anônima de uma revisão. Os visitantes do site d
 | **resourceType** | social/análises/componentes/hbs/resumo |
 |---|---|
 | [**incluível**](scf.md#add-or-include-a-communities-component) | Sim - as propriedades são editáveis no modo *design * |
-| [**clientllibs**](client-customize.md#clientlibs-for-scf) | cq.social.hbs.reviews |
+| [**clientllibs**](client-customize.md#clientlibs-for-scf) | cq.social.hbs.review |
 | **modelos** | /libs/social/reviews/components/hbs/summary/summary.hbs |
 | **css** | /libs/social/reviews/components/hbs/reviews/clientlibs/review.css |
 | **propriedades** | Ver [Usando Análises](reviews.md) |
@@ -71,9 +69,9 @@ Não há suporte para postagem anônima de uma revisão. Os visitantes do site d
 
 ## Essentials para o lado do servidor {#essentials-for-server-side}
 
-* [API de revisão](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/review/client/api/package-summary.html)
+* [API de revisão](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/review/client/api/package-summary.html)
 
-* [Revisar Pontos de Extremidade](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/review/client/endpoints/package-summary.html)
+* [Revisar Pontos de Extremidade](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/review/client/endpoints/package-summary.html)
 
 * [Personalizações do lado do servidor](server-customize.md)
 
@@ -82,7 +80,7 @@ Não há suporte para postagem anônima de uma revisão. Os visitantes do site d
 A UGC deve ser moderada usando um dos métodos padrão para moderação.
 Consulte [Moderando Conteúdo Gerado por Usuário](moderate-ugc.md).
 
-Desde o AEM 6.1 Communities, o uso de um [armazenamento comum](working-with-srp.md) para UGC inclui acesso programático a UGC, independentemente da opção de armazenamento escolhida (como ASRP, MSRP ou JSRP).
+A partir do AEM 6.1 Communities, o uso de um [armazenamento comum](working-with-srp.md) para UGC inclui acesso programático a UGC, independentemente da opção de armazenamento escolhida (como ASRP, MSRP ou JSRP).
 
 **A localização e o formato do UGC no repositório estão sujeitos a alterações sem aviso**.
 

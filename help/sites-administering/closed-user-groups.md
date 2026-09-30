@@ -10,13 +10,11 @@ exl-id: 39e35a07-140f-4853-8f0d-8275bce27a65
 feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '6654'
-ht-degree: 0%
-
+source-wordcount: '6781'
+ht-degree: 1%
 ---
-
 # Grupos de Usuários Fechados no AEM{#closed-user-groups-in-aem}
 
 ## Introdução {#introduction}
@@ -101,10 +99,10 @@ As seguintes práticas recomendadas devem levar em conta a definição de acesso
 * Crie um modelo de ameaça para os dados ou conteúdo que devem ser protegidos para identificar limites de ameaça e obter uma visão clara sobre a confidencialidade dos dados e as funções associadas ao acesso autorizado
 * Modelar o conteúdo do repositório e os CUGs tendo em mente os aspectos gerais relacionados à autorização e as práticas recomendadas:
 
-   * Lembre-se de que a permissão de leitura só é concedida se um determinado CUG e a avaliação de outros módulos implantados na concessão de configuração permitirem que um determinado sujeito leia um determinado item do repositório
-   * Evite criar CUGs redundantes em que o acesso de leitura já esteja restrito por outros módulos de autorização
-   * A necessidade excessiva de CUGs aninhados pode potencialmente destacar problemas no design de conteúdo
-   * A necessidade excessiva de CUGs (por exemplo, em cada página) pode indicar a necessidade de um modelo de autorização personalizado potencialmente mais adequado para atender às necessidades específicas de segurança do aplicativo e do conteúdo em questão.
+  * Lembre-se de que a permissão de leitura só é concedida se um determinado CUG e a avaliação de outros módulos implantados na concessão de configuração permitirem que um determinado sujeito leia um determinado item do repositório
+  * Evite criar CUGs redundantes em que o acesso de leitura já esteja restrito por outros módulos de autorização
+  * A necessidade excessiva de CUGs aninhados pode potencialmente destacar problemas no design de conteúdo
+  * A necessidade excessiva de CUGs (por exemplo, em cada página) pode indicar a necessidade de um modelo de autorização personalizado potencialmente mais adequado para atender às necessidades específicas de segurança do aplicativo e do conteúdo em questão.
 
 * Limite os caminhos compatíveis com políticas CUG a algumas árvores no repositório para permitir um desempenho otimizado. Por exemplo, permita apenas CUGs abaixo do nó /content como o valor padrão desde o AEM 6.3.
 * As políticas CUG são projetadas para conceder acesso de leitura a um pequeno conjunto de princípios. A necessidade de um grande número de princípios pode destacar problemas no design de conteúdo ou aplicativo e deve ser reconsiderada.
@@ -146,10 +144,10 @@ Chamando `AuthenticationHandler.requestCredentials`, esse manipulador tenta dete
 * Faça a distinção entre senha expirada e necessidade de logon regular como motivo para o redirecionamento;
 * Se um logon regular, testa se um caminho de logon pode ser obtido na seguinte ordem:
 
-   * do LoginPathProvider conforme implementado pelo novo `com.adobe.granite.auth.requirement.impl.RequirementService`,
-   * da implementação CUG antiga e obsoleta,
-   * nos Mapeamentos da Página de Logon, conforme definido com o `LoginSelectorHandler`,
-   * e, finalmente, volte para a Página de Logon Padrão, conforme definido com o `LoginSelectorHandler`.
+  * do LoginPathProvider conforme implementado pelo novo `com.adobe.granite.auth.requirement.impl.RequirementService`,
+  * da implementação CUG antiga e obsoleta,
+  * nos Mapeamentos da Página de Logon, conforme definido com o `LoginSelectorHandler`,
+  * e, finalmente, volte para a Página de Logon Padrão, conforme definido com o `LoginSelectorHandler`.
 
 * Quando um caminho de logon válido é obtido por meio das chamadas listadas acima, a solicitação do usuário é redirecionada para essa página.
 
@@ -158,10 +156,10 @@ O alvo desta documentação é a avaliação do caminho de logon conforme expost
 * O registro de caminhos de logon depende da distinção entre a senha expirada e a necessidade de logon regular como motivo para o redirecionamento
 * Se um logon regular, testa se um caminho de logon pode ser obtido na seguinte ordem:
 
-   * do `LoginPathProvider` conforme implementado pelo novo `com.adobe.granite.auth.requirement.impl.RequirementService`,
-   * da implementação CUG antiga e obsoleta,
-   * nos Mapeamentos da Página de Logon conforme definido com o `LoginSelectorHandler`,
-   * e, finalmente, voltar para a Página de Logon Padrão, conforme definido com o `LoginSelectorHandler`.
+  * do `LoginPathProvider` conforme implementado pelo novo `com.adobe.granite.auth.requirement.impl.RequirementService`,
+  * da implementação CUG antiga e obsoleta,
+  * nos Mapeamentos da Página de Logon conforme definido com o `LoginSelectorHandler`,
+  * e, finalmente, voltar para a Página de Logon Padrão, conforme definido com o `LoginSelectorHandler`.
 
 * Quando um caminho de logon válido é obtido por meio das chamadas listadas acima, a solicitação do usuário é redirecionada para essa página.
 
@@ -179,9 +177,9 @@ As seguintes práticas recomendadas devem ser consideradas ao definir os requisi
 * O conteúdo do repositório de modelo é tal que os requisitos de autenticação se aplicam a toda a árvore, sem a necessidade de excluir subárvores aninhadas do requisito novamente.
 * Para evitar especificar e, em seguida, registrar caminhos de logon redundantes:
 
-   * dependem da herança e evitam definir caminhos de logon aninhados,
-   * não defina o caminho de logon opcional para um valor que corresponda ao padrão ou a um valor herdado,
-   * os desenvolvedores de aplicativos devem identificar quais caminhos de logon devem ser configurados nas configurações de caminho de logon global (padrão e mapeamentos) associadas ao `LoginSelectorHandler`.
+  * dependem da herança e evitam definir caminhos de logon aninhados,
+  * não defina o caminho de logon opcional para um valor que corresponda ao padrão ou a um valor herdado,
+  * os desenvolvedores de aplicativos devem identificar quais caminhos de logon devem ser configurados nas configurações de caminho de logon global (padrão e mapeamentos) associadas ao `LoginSelectorHandler`.
 
 ## Representação no repositório {#representation-in-the-repository}
 
@@ -205,7 +203,7 @@ A página associada ao caminho de logon pode estar localizada dentro ou fora des
 
 ### Gerenciando políticas CUG {#managing-cug-policies}
 
-O novo tipo de políticas de controle de acesso para restringir o acesso de leitura de um CUG é gerenciado usando a API de gerenciamento de controle de acesso JCR e segue os mecanismos descritos com a [especificação JCR 2.0](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html).
+O novo tipo de políticas de controle de acesso para restringir o acesso de leitura de um CUG é gerenciado usando a API de gerenciamento de controle de acesso JCR e segue os mecanismos descritos com a [especificação JCR 2.0](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/16_Access_Control_Management.html).
 
 #### Definir uma nova política CUG {#set-a-new-cug-policy}
 
@@ -819,7 +817,7 @@ O modelo de autorização CUG permite ativar individualmente o gerenciamento de 
 
 Na nova avaliação da configuração padrão do AEM das políticas CUG, ela só é ativada com o modo de execução &quot;publicar&quot;. Consulte os detalhes da [configuração padrão desde a AEM 6.3](#default-configuration-since-aem) para obter mais detalhes. Isso pode ser verificado comparando as políticas eficazes de um determinado caminho com as políticas armazenadas no conteúdo. As políticas efetivas só serão exibidas caso a avaliação de permissão para CUGs esteja ativada.
 
-Como explicado acima, as políticas de controle de acesso CUG agora são sempre armazenadas no conteúdo, mas a avaliação das permissões efetivas resultantes dessas políticas só será aplicada se **Avaliação CUG Habilitada** estiver ativada no console do sistema na Configuração **CUG do Apache Jackrabbit Oak.** Por padrão, está habilitado somente com o modo de execução &#39;publicar&#39;.
+Como explicado acima, as políticas de controle de acesso do CUG agora são sempre armazenadas no conteúdo, mas a avaliação das permissões efetivas resultantes dessas políticas só será aplicada se a **Avaliação do CUG Habilitada** estiver ativada no console do sistema na **Configuração do CUG do Apache Jackrabbit Oak.** Por padrão, ela é ativada somente com o modo de execução &quot;publicar&quot;.
 
 ### Diferenças Em Relação À Autenticação {#differences-with-regards-to-authentication}
 

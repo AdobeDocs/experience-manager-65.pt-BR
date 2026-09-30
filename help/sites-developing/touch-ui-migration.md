@@ -10,13 +10,11 @@ exl-id: 33dc1ee7-1e34-43d8-9265-c66535f5e002
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '701'
+source-wordcount: '702'
 ht-degree: 7%
-
 ---
-
 # Migração para a interface de toque{#migration-to-the-touch-ui}
 
 A partir da versão 6.0, o Adobe Experience Manager (AEM) apresentou uma nova interface de usuário chamada de *interface habilitada para toque* (também conhecida simplesmente como *interface de toque*). Ele está alinhado à Adobe Experience Cloud e às diretrizes gerais da interface do usuário do Adobe. Esta se tornou a interface padrão no AEM com a interface herdada, orientada para desktop, chamada de *interface clássica*.
@@ -121,7 +119,7 @@ As caixas de diálogo são um fator importante ao migrar seus componentes:
 
   * Há uma camada de compatibilidade na interface para toque para abrir uma caixa de diálogo da interface clássica em um &quot;invólucro da interface para toque&quot;, mas essa funcionalidade é limitada e não é recomendada para longo prazo.
 
-* [Personalização de campos de caixa de diálogo na interface para toque](https://helpx.adobe.com/br/experience-manager/kt/eseminars/gems/aem-customizing-dialog-fields-in-touch-ui.html)
+* [Personalização de campos de caixa de diálogo na interface para toque](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-customizing-dialog-fields-in-touch-ui.html)
 * [Criação de um novo componente de campo da interface de usuário do Granite](/help/sites-developing/granite-ui-component.md)
 * [Personalizando a Criação de Página](/help/sites-developing/customizing-page-authoring-touch.md) (com a interface habilitada para toque)
 
@@ -148,10 +146,10 @@ Embora não esteja diretamente relacionado a uma migração para a interface de 
 Para obter informações completas sobre como desenvolver o AEM, consulte a coleção de recursos em:
 
 * [Guia do usuário para desenvolvimento](/help/sites-developing/getting-started.md)
-* [Documentação da interface de usuário do Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
+* [Documentação da interface de usuário do Granite](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
 * [Tutoriais e vídeos do AEM 6.5 Sites](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/sites/overview)
 * [Introdução ao desenvolvimento do AEM Sites - Tutorial de WKND](/help/sites-developing/getting-started.md)
-* [AEM Gems](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html?lang=pt-BR)
+* [AEM Gems](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html)
 * [Ferramentas de Modernização do AEM](https://opensource.adobe.com/aem-modernize-tools/)
 
 >[!CAUTION]
