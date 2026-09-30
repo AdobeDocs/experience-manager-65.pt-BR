@@ -6,13 +6,11 @@ role: Admin, Developer
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
-source-git-commit: 2b097caa05ec889ae445d74a905fb6c3f8457cee
+source-git-commit: b860fd19c0aeaa94fb0e04052dac70b0bc58b11b
 workflow-type: tm+mt
-source-wordcount: '10688'
+source-wordcount: '10825'
 ht-degree: 1%
-
 ---
-
 # Instalar e configurar serviços de documento {#installing-and-configuring-document-services}
 
 A AEM Forms fornece um conjunto de serviços OSGi para realizar diferentes operações no nível do documento, por exemplo, serviços para criar, montar, distribuir e arquivar documentos PDF, adicionar assinaturas digitais para limitar o acesso a documentos e decodificar Forms com código de barras. Esses serviços estão incluídos no pacote complementar do AEM Forms. Coletivamente, esses serviços são conhecidos como serviços de documentos. A lista de serviços de documentos disponíveis e seus principais recursos são os seguintes:
@@ -37,9 +35,9 @@ A AEM Forms fornece um conjunto de serviços OSGi para realizar diferentes opera
 
 * **Serviço de assinatura:** permite trabalhar com assinaturas e documentos digitais no servidor do AEM. Por exemplo, o serviço de Assinatura é normalmente usado nas seguintes situações:
 
-   * O servidor do AEM certifica um formulário antes que ele seja enviado a um usuário para ser aberto usando o Acrobat ou o Adobe Reader.
-   * O servidor do AEM valida uma assinatura que foi adicionada a um formulário usando o Acrobat ou o Adobe Reader.
-   * O servidor do AEM assina um formulário em nome de um notário público.
+  * O servidor do AEM certifica um formulário antes que ele seja enviado a um usuário para ser aberto usando o Acrobat ou o Adobe Reader.
+  * O servidor do AEM valida uma assinatura que foi adicionada a um formulário usando o Acrobat ou o Adobe Reader.
+  * O servidor do AEM assina um formulário em nome de um notário público.
 
   O serviço de assinatura acessa certificados e credenciais armazenados no armazenamento de confiança. Para obter mais informações, consulte [Serviço de assinatura](/help/forms/using/aem-document-services-programmatically.md).
 
@@ -64,18 +62,18 @@ Antes de começar a instalar e configurar os serviços de documento do AEM Forms
 * O caminho de instalação da instância do AEM não contém espaços em branco.
 * Uma instância do AEM está em execução. Na terminologia do AEM, uma &quot;instância&quot; é uma cópia do AEM executada em um servidor no modo de criação ou publicação. Geralmente, é necessário apenas uma instância do AEM (autor ou publicação) para executar os serviços de documento do AEM Forms:
 
-   * **Autor**: uma instância do AEM usada para criar, carregar, editar conteúdo e administrar o site. Quando o conteúdo estiver pronto para entrar em funcionamento, ele será replicado para a instância de publicação.
-   * **Publicar**: uma instância do AEM que serve o conteúdo publicado para o público através da Internet ou de uma rede interna.
+  * **Autor**: uma instância do AEM usada para criar, carregar, editar conteúdo e administrar o site. Quando o conteúdo estiver pronto para entrar em funcionamento, ele será replicado para a instância de publicação.
+  * **Publicar**: uma instância do AEM que serve o conteúdo publicado para o público através da Internet ou de uma rede interna.
 
 * Os requisitos de memória são atendidos. O pacote complementar do AEM Forms exige:
 
-   * 15 GB de espaço temporário para instalações baseadas no Microsoft® Windows.
-   * 6 GB de espaço temporário para instalações baseadas em UNIX.
+  * 15 GB de espaço temporário para instalações baseadas no Microsoft® Windows.
+  * 6 GB de espaço temporário para instalações baseadas em UNIX.
 
 * O software cliente necessário para o gerador de PDF executar a conversão no Microsoft® Windows e Linux® está instalado:
 
-   * **Microsoft® Windows**: instalar o [Microsoft® Office](/help/forms/using/aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) ou o [Apache OpenOffice](/help/forms/using/aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator)
-   * **Linux®**: instalar o [Apache OpenOffice](/help/forms/using/aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator)
+  * **Microsoft® Windows**: instalar o [Microsoft® Office](/help/forms/using/aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) ou o [Apache OpenOffice](/help/forms/using/aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator)
+  * **Linux®**: instalar o [Apache OpenOffice](/help/forms/using/aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator)
 
 >[!NOTE]
 >
@@ -165,26 +163,30 @@ Se você estiver usando um sistema operacional baseado em UNIX, instale os segui
 
 * **(PDF Generator somente**) Instale a versão de 32 bits das bibliotecas libcurl, libcrypto e libssl e crie os symlinks abaixo. Os symlinks apontam para a versão mais recente das respectivas bibliotecas:
 
-   * /usr/lib/libcurl.so
-   * /usr/lib/libcrypto.so
-   * /usr/lib/libssl.so
+  * /usr/lib/libcurl.so
+  * /usr/lib/libcrypto.so
+  * /usr/lib/libssl.so
 
 * **(Somente PDF Generator)** O serviço PDF Generator oferece suporte às rotas WebKit e WebToPDF para converter arquivos HTML em documentos PDF. Para habilitar a conversão para a rota WebToPDF, instale as bibliotecas de 64 bits listadas abaixo. Geralmente, essas bibliotecas já estão instaladas. Se alguma biblioteca estiver ausente, instale-a manualmente:
 
-   * linux-gate.so.1
-   * libz.so.1
-   * libfontconfig.so.1
-   * libfreetype.so.6
-   * libdl.so.2
-   * librt.so.1
-   * libpthread.so.0
-   * libstdc++.so.6
-   * libm.so.6
-   * libgcc_s.so.1
-   * libc.so.6
-   * ld-linux.so.2
-   * libexpat.so.1
+  * linux-gate.so.1
+  * libz.so.1
+  * libfontconfig.so.1
+  * libfreetype.so.6
+  * libdl.so.2
+  * librt.so.1
+  * libpthread.so.0
+  * libstdc++.so.6
+  * libm.so.6
+  * libgcc_s.so.1
+  * libc.so.6
+  * ld-linux.so.2
+  * libexpat.so.1
 * (Somente PDF Generator) Para habilitar a rota do WebKit nas configurações RHEL 8 ou RHEL 9, SLES15, a biblioteca `nspr` de 32 bits pode não estar disponível por padrão; instale-a se não estiver presente.
+
+* No Red Hat® Enterprise Linux® 9, a compilação de 32 bits do OpenOffice requer o `libcrypt.so.1`, que não está instalado por padrão. Se estiver ausente, o OpenOffice não será iniciado com o erro `soffice.bin: error while loading shared libraries: libcrypt.so.1: cannot open shared object file: No such file or directory` e as conversões OpenOffice-to-PDF falharão. Instale o pacote `libxcrypt-compat` (32 bits) para fornecer a biblioteca:
+
+  `sudo dnf install -y libxcrypt-compat.i686`
 
 * (Somente no PDF Generator) Se a conversão WebToPDF falhar em um servidor Unix® com o seguinte erro:
 
@@ -212,7 +214,7 @@ Se você for usar o serviço PDF Generator para converter formatos de arquivo na
 >* Adobe Acrobat, Microsoft® Word, Excel e Powerpoint estão disponíveis apenas para Microsoft® Windows. Se você estiver usando o sistema operacional baseado em UNIX, instale o OpenOffice para converter arquivos rich text e arquivos suportados do Microsoft® Office em documentos PDF.
 >* Ignore todas as caixas de diálogo exibidas após a instalação do Adobe Acrobat e de softwares de terceiros para todos os usuários configurados para usar o serviço PDF Generator.
 >* Inicie todos os softwares instalados pelo menos uma vez. Ignore todas as caixas de diálogo de todos os usuários configurados para usar o serviço PDF Generator.
->* [Verifique a data de expiração de seus números de série da Adobe Acrobat](https://helpx.adobe.com/br/enterprise/kb/volume-license-expiration-check.html) e defina uma data para atualizar a licença ou [migre seu número de série](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) com base na data de expiração.
+>* [Verifique a data de expiração de seus números de série da Adobe Acrobat](https://helpx.adobe.com/enterprise/kb/volume-license-expiration-check.html) e defina uma data para atualizar a licença ou [migre seu número de série](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) com base na data de expiração.
 
 ### Instale o Adobe Acrobat Pro DC {#install-adobe-acrobat-pro-dc}
 
@@ -909,7 +911,7 @@ Siga estas etapas:
 >
 >A desativação do Modo protegido é necessária para cenários de automação do lado do servidor, como o AEM Forms PDF Generator. Essa configuração só deve ser alterada em ambientes de servidor dedicados, não em desktops de usuários finais.
 
-Para obter mais informações, consulte [documentação do Adobe sobre Modo Protegido](https://helpx.adobe.com/br/acrobat/kb/protected-mode-troubleshooting-reader.html).
+Para obter mais informações, consulte [documentação do Adobe sobre Modo Protegido](https://helpx.adobe.com/acrobat/kb/protected-mode-troubleshooting-reader.html).
 
 
 
@@ -1092,10 +1094,10 @@ O pacote complementar do AEM Forms é um aplicativo implantado no AEM. O pacote 
    1. Selecione **[!UICONTROL Forms]** na lista suspensa **[!UICONTROL Solução]**.
    2. Selecione a versão e o tipo do pacote. Você também pode usar a opção **[!UICONTROL Downloads de Pesquisa]** para filtrar os resultados.
 1. Selecione o nome do pacote aplicável ao seu sistema operacional, selecione **[!UICONTROL Aceitar termos do EULA]** e selecione **[!UICONTROL Baixar]**.
-1. Abra o [Gerenciador de Pacotes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=pt-BR) e clique em **[!UICONTROL Carregar Pacote]** para carregar o pacote.
+1. Abra o [Gerenciador de Pacotes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html) e clique em **[!UICONTROL Carregar Pacote]** para carregar o pacote.
 1. Selecione o pacote e clique em **[!UICONTROL Instalar]**.
 
-   Você também pode baixar o pacote através do link direto listado no artigo [versões do AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=pt-BR).
+   Você também pode baixar o pacote através do link direto listado no artigo [versões do AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
 
 1. Depois que o pacote for instalado, você será solicitado a reiniciar a instância do AEM. **Não parar o servidor imediatamente.** Antes de parar o AEM Forms Server, aguarde até que as mensagens ServiceEvent REGISTERED e ServiceEvent UNREGISTERED parem de aparecer no arquivo `[AEM-Installation-Directory]/crx-quickstart/logs/error`.log e o log fique estável.
 
@@ -1405,13 +1407,13 @@ Antes de executar as seguintes verificações, verifique se a [Ferramenta de Pre
 * Verifique se um usuário do PDF Generator foi adicionado na interface de configuração do PDF.
 * Verifique se o usuário do PDF Generator é membro do grupo de administradores e se o privilégio [Substituir um token de nível de processo](#grant-the-replace-a-process-level-token-privilege) está definido para o usuário.
 * Verifique se o usuário está configurado na interface do usuário do PDF Generator e execute as seguintes ações:
-   1. Faça login no Microsoft® Windows com o usuário do PDF Generator.
-   1. Abra os aplicativos do Microsoft® Office ou OpenOffice e cancele todas as caixas de diálogo.
-   1. Defina Adobe PDF como impressora padrão.
-   1. Defina o Acrobat como programa padrão para arquivos PDF.
-   1. Execute a conversão manual usando as opções Arquivo > Imprimir e faixa de opções do Acrobat nos aplicativos do Microsoft Office e cancele todas as caixas de diálogo.
-   1. Encerre todos os processos relacionados à conversão, como winword.exe, powerpoint.exe e excel.exe.
-   1. Reinicie o servidor do AEM Forms.
+  1. Faça login no Microsoft® Windows com o usuário do PDF Generator.
+  1. Abra os aplicativos do Microsoft® Office ou OpenOffice e cancele todas as caixas de diálogo.
+  1. Defina Adobe PDF como impressora padrão.
+  1. Defina o Acrobat como programa padrão para arquivos PDF.
+  1. Execute a conversão manual usando as opções Arquivo > Imprimir e faixa de opções do Acrobat nos aplicativos do Microsoft Office e cancele todas as caixas de diálogo.
+  1. Encerre todos os processos relacionados à conversão, como winword.exe, powerpoint.exe e excel.exe.
+  1. Reinicie o servidor do AEM Forms.
 
 **Linux®**
 
@@ -1419,6 +1421,10 @@ Antes de executar as seguintes verificações, verifique se a [Ferramenta de Pre
 
 * Crie uma variável de ambiente `OpenOffice_PATH` e defina-a para apontá-la para que a instalação do OpenOffice seja definida no [console](https://linuxize.com/post/how-to-set-and-list-environment-variables-in-linux/) ou no perfil dt (Árvore de Dispositivo).
 * Se houver problemas na instalação do OpenOffice, verifique se as [bibliotecas de 32 bits](#extrarequirements) necessárias para a instalação do OpenOffice estão disponíveis.
+
+* No Red Hat® Enterprise Linux® 9, a compilação de 32 bits do OpenOffice requer o `libcrypt.so.1`, que não está instalado por padrão. Se estiver ausente, o OpenOffice não será iniciado com o erro `soffice.bin: error while loading shared libraries: libcrypt.so.1: cannot open shared object file: No such file or directory` e as conversões OpenOffice-to-PDF falharão. Instale o pacote `libxcrypt-compat` (32 bits) para fornecer a biblioteca:
+
+  `sudo dnf install -y libxcrypt-compat.i686`
 
 +++
 
@@ -1451,29 +1457,29 @@ Antes de executar as seguintes verificações, verifique se a [Ferramenta de Pre
 * Verifique se as versões mais recentes das bibliotecas lib curl, libcrypto e libssl de 32 bits estão instaladas no sistema. Crie também symlinks `/usr/lib/libcurl.so` (ou libcurl.a para AIX®), `/usr/lib/libcrypto.so` (ou libcrypto.a para AIX®) e `/usr/lib/libssl.so` (ou libssl.a para AIX®) apontando para as versões mais recentes (32 bits) das respectivas bibliotecas.
 
 * Execute as seguintes etapas para o Provedor de soquete IBM® SSL:
-   1. Copie o arquivo java.security de `<WAS_Installed_JAVA>\jre\lib\security` para qualquer local no AEM Forms Server. O local padrão é Local Padrão = `<WAS_Installed>\Appserver\java_[version]\jre\lib\security`.
+  1. Copie o arquivo java.security de `<WAS_Installed_JAVA>\jre\lib\security` para qualquer local no AEM Forms Server. O local padrão é Local Padrão = `<WAS_Installed>\Appserver\java_[version]\jre\lib\security`.
 
-   1. Edite o arquivo java.security no local copiado e altere as fábricas padrão do SSL Socket com fábricas JSSE2 (use fábricas JSSE2 em vez do WebSphere®).
+  1. Edite o arquivo java.security no local copiado e altere as fábricas padrão do SSL Socket com fábricas JSSE2 (use fábricas JSSE2 em vez do WebSphere®).
 
-      Altere as seguintes fábricas de soquetes JSSE padrão:
+     Altere as seguintes fábricas de soquetes JSSE padrão:
 
-      ```
-      #ssl.SocketFactory.provider=com.ibm.jsse2.SSLSocketFactoryImpl
-      #ssl.ServerSocketFactory.provider=com.ibm.jsse2.SSLServerSocketFactoryImpl
-      WebSphere socket factories (in cryptosf.jar)
-      ssl.SocketFactory.provider=com.ibm.websphere.ssl.protocol.SSLSocketFactory
-      ssl.ServerSocketFactory.provider=com.ibm.websphere.ssl.protocol.SSLServerSocketFactory
-      ```
+     ```
+     #ssl.SocketFactory.provider=com.ibm.jsse2.SSLSocketFactoryImpl
+     #ssl.ServerSocketFactory.provider=com.ibm.jsse2.SSLServerSocketFactoryImpl
+     WebSphere socket factories (in cryptosf.jar)
+     ssl.SocketFactory.provider=com.ibm.websphere.ssl.protocol.SSLSocketFactory
+     ssl.ServerSocketFactory.provider=com.ibm.websphere.ssl.protocol.SSLServerSocketFactory
+     ```
 
-      com
+     com
 
-      ```
-      ssl.SocketFactory.provider=com.ibm.jsse2.SSLSocketFactoryImpl
-      ssl.ServerSocketFactory.provider=com.ibm.jsse2.SSLServerSocketFactoryImpl
-      WebSphere socket factories (in cryptosf.jar)
-      #ssl.SocketFactory.provider=com.ibm.websphere.ssl.protocol.SSLSocketFactory
-      #ssl.ServerSocketFactory.provider=com.ibm.websphere.ssl.protocol.SSLServerSocketFactory
-      ```
+     ```
+     ssl.SocketFactory.provider=com.ibm.jsse2.SSLSocketFactoryImpl
+     ssl.ServerSocketFactory.provider=com.ibm.jsse2.SSLServerSocketFactoryImpl
+     WebSphere socket factories (in cryptosf.jar)
+     #ssl.SocketFactory.provider=com.ibm.websphere.ssl.protocol.SSLSocketFactory
+     #ssl.ServerSocketFactory.provider=com.ibm.websphere.ssl.protocol.SSLServerSocketFactory
+     ```
 
 +++
 
