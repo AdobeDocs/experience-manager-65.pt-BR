@@ -9,13 +9,11 @@ exl-id: e57a6971-6a6f-427b-a8cd-a2f2e8cdf9e2
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '587'
+source-wordcount: '627'
 ht-degree: 0%
-
 ---
-
 # Sobreposições{#overlays}
 
 O Adobe Experience Manager (AEM) — e, antes disso, o CQ — há muito tempo usa o princípio de sobreposições para permitir que você estenda e personalize os [consoles](/help/sites-developing/customizing-consoles-touch.md) e outras funcionalidades (por exemplo, [criação de página](/help/sites-developing/customizing-page-authoring-touch.md)).
@@ -26,48 +24,48 @@ Em uma instância padrão, a funcionalidade predefinida é mantida em `/libs` e 
 
 Desde o AEM 6.0, foram feitas alterações no modo como as sobreposições são implementadas e usadas:
 
-* AEM 6.0 e posterior - para sobreposições relacionadas ao [Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) (ou seja, a interface habilitada para toque)
+* AEM 6.0 e posteriores - para sobreposições relacionadas ao [Granite](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) (ou seja, a interface habilitada para toque)
 
-   * Método
+  * Método
 
-      * Reconstruir a estrutura `/libs` apropriada em `/apps`.
+    * Reconstruir a estrutura `/libs` apropriada em `/apps`.
 
-        Isso não requer uma cópia 1:1. O [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md) é usado para fazer referência cruzada das definições originais necessárias. O Sling Resource Merger fornece serviços para acessar e mesclar recursos com mecanismos de diferenciação.
+      Isso não requer uma cópia 1:1. O [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md) é usado para fazer referência cruzada das definições originais necessárias. O Sling Resource Merger fornece serviços para acessar e mesclar recursos com mecanismos de diferenciação.
 
-      * Em `/apps`, faça as alterações.
+    * Em `/apps`, faça as alterações.
 
-   * Vantagens
+  * Vantagens
 
-      * Mais robusto para alterações em `/libs`.
-      * Apenas redefina o que é necessário.
+    * Mais robusto para alterações em `/libs`.
+    * Apenas redefina o que é necessário.
 
 * Sobreposições não-Granite e sobreposições antes do AEM 6.0
 
-   * Método
+  * Método
 
-      * Copiar o conteúdo de `/libs` para `/apps`
+    * Copiar o conteúdo de `/libs` para `/apps`
 
-        Copie a subramificação inteira, incluindo as propriedades.
+      Copie a subramificação inteira, incluindo as propriedades.
 
-      * Em `/apps`, faça as alterações.
+    * Em `/apps`, faça as alterações.
 
-   * Desvantagens
+  * Desvantagens
 
-      * Embora as alterações não sejam perdidas quando algo for alterado em `/libs`, talvez seja necessário recriar determinadas alterações que ocorrem na sobreposição em `/apps`.
+    * Embora as alterações não sejam perdidas quando algo for alterado em `/libs`, talvez seja necessário recriar determinadas alterações que ocorrem na sobreposição em `/apps`.
 
 >[!CAUTION]
 >
->O [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md) e os métodos relacionados só podem ser usados com o [Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html). Isso significa que a criação de uma sobreposição com uma estrutura de esqueleto só é apropriada para a interface de usuário padrão habilitada para toque.
+>O [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md) e os métodos relacionados só podem ser usados com o [Granite](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html). Isso significa que a criação de uma sobreposição com uma estrutura de esqueleto só é apropriada para a interface de usuário padrão habilitada para toque.
 >
 >As sobreposições para outras áreas (incluindo a interface clássica) envolvem a cópia do nó apropriado e de toda a subestrutura e, em seguida, fazem as alterações necessárias.
 
 Sobreposições são o método recomendado para muitas alterações, como [configurar seus consoles](/help/sites-developing/customizing-consoles-touch.md#create-a-custom-console) ou [criar a categoria de seleção para o navegador de ativos no painel lateral](/help/sites-developing/customizing-page-authoring-touch.md#add-new-selection-category-to-asset-browser) (usado ao criar páginas). Elas são necessárias como:
 
-* ***Não* fazer alterações na `/libs` ramificação &#x200B;** As alterações feitas podem ser perdidas, pois essa ramificação pode sofrer alterações sempre que você:
+* ***Não* fazer alterações na ramificação `/libs`**&#x200B;As alterações feitas podem ser perdidas, pois essa ramificação pode sofrer alterações sempre que você:
 
-   * atualizar na sua instância
-   * aplicar um hotfix
-   * instalar um pacote de recursos
+  * atualizar na sua instância
+  * aplicar um hotfix
+  * instalar um pacote de recursos
 
 * Eles concentram as alterações em um local, facilitando o rastreamento, a migração, o backup ou a depuração de alterações, conforme necessário.
 
@@ -77,10 +75,10 @@ Para sobreposições, o recurso entregue é uma agregação dos recursos e propr
 
 * O recurso **Caminho de Pesquisa do Resolvedor** conforme definido na [configuração OSGi](/help/sites-deploying/configuring-osgi.md) para a **Fábrica do Resolvedor de Recursos Apache Sling**.
 
-   * A ordem de cima para baixo dos caminhos de pesquisa indica suas respectivas prioridades.
-   * Em uma instalação padrão, os padrões primários são `/apps`, `/libs` - portanto, o conteúdo de `/apps` tem uma prioridade mais alta do que a de `/libs` (isto é, ele *sobreposições*).
+  * A ordem de cima para baixo dos caminhos de pesquisa indica suas respectivas prioridades.
+  * Em uma instalação padrão, os padrões primários são `/apps`, `/libs` - portanto, o conteúdo de `/apps` tem uma prioridade mais alta do que a de `/libs` (isto é, ele *sobreposições*).
 
-* Dois usuários de serviço precisam de acesso JCR:READ ao local em que os scripts são armazenados. Esses usuários são: components-search-service (usado pelo com.day.cq.wcm.coto access/cache components) e sling-scripting (usado por org.apache.sling.servlets.resolver para localizar servlets).
+* Dois usuários do serviço precisam de acesso JCR:READ ao local em que os scripts são armazenados. Esses usuários são: components-search-service (usado pelo com.day.cq.wcm.coto access/cache components) e sling-scripting (usado por org.apache.sling.servlets.resolver para localizar servlets).
 * A configuração a seguir também deve ser configurada de acordo com o local onde você coloca os scripts (neste exemplo, em /etc, /libs ou /apps).
 
   ```

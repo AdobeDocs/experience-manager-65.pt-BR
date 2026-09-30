@@ -10,13 +10,11 @@ exl-id: b941b5e0-f768-4393-9a9d-ded2cd7d10c4
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '422'
 ht-degree: 1%
-
 ---
-
 # Fundamentos de mensagens {#messaging-essentials}
 
 Esta página documenta os detalhes de como trabalhar com o usando o componente Mensagens para incluir um recurso de mensagens em um site.
@@ -92,9 +90,9 @@ Consulte também [Personalizações do lado do cliente](/help/communities/client
 ## Essentials para o lado do servidor {#essentials-for-server-side}
 
 * [Configuração de mensagens](/help/communities/configure-messaging.md)
-* [APIs de cliente de mensagens](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/messaging/client/api/package-summary.html) para componentes SCF
-* [APIs de mensagens](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/messaging/api/package-summary.html) para o serviço
-* [Endpoints de mensagens](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/messaging/client/endpoints/package-summary.html)
+* [APIs de cliente de mensagens](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/messaging/client/api/package-summary.html) para componentes SCF
+* [APIs de mensagens](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/messaging/api/package-summary.html) para o serviço
+* [Endpoints de mensagens](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/messaging/client/endpoints/package-summary.html)
 * [Personalizações do lado do servidor](/help/communities/server-customize.md)
 
 >[!CAUTION]

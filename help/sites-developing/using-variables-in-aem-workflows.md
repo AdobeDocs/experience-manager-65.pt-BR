@@ -9,13 +9,11 @@ exl-id: c8aeceec-860c-49ee-b681-d7107e52020d
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 704a815e961dc2c690e034a1b1cbe60800c643ae
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '1942'
+source-wordcount: '2080'
 ht-degree: 0%
-
 ---
-
 # Variáveis em workflows do AEM{#variables-in-aem-workflows}
 
 Uma variável em um modelo de fluxo de trabalho é uma maneira de armazenar um valor com base em seu tipo de dados. Em seguida, você pode usar o nome da variável em qualquer etapa do fluxo de trabalho para recuperar o valor armazenado na variável. Você também pode usar nomes de variáveis para definir expressões para tomar decisões de roteamento.
@@ -30,9 +28,9 @@ O vídeo a seguir demonstra como criar, definir e usar variáveis em modelos de 
 
 <!-- FUTURE ERROR: YouTube and mp4 videos are not supported -->
 
-[Usar vídeo de variáveis](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/usevariables_example.mp4)
+[Vídeo Usar variáveis](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/usevariables_example.mp4)
 
-As variáveis são uma extensão da interface [MetaDataMap](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html). Você pode usar [MetaDataMap](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) no ECMAScript para acessar metadados salvos usando variáveis.
+As variáveis são uma extensão da interface [MetaDataMap](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html). Você pode usar [MetaDataMap](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) no ECMAScript para acessar metadados salvos usando variáveis.
 
 ## Criar uma variável {#create-a-variable}
 
@@ -96,7 +94,7 @@ Para adicionar o mapeamento entre variáveis, faça o seguinte:
 1. Arraste e solte a etapa **Definir Variável** no editor de fluxo de trabalho, selecione a etapa e selecione ![Configurar ícone indicado por uma chave inglesa.](assets/configure_icon.png) (Configurar).
 1. Na caixa de diálogo Definir variável, selecione **[!UICONTROL Mapeamento]** > **[!UICONTROL Adicionar mapeamento]**.
 1. Na seção **Mapear Variável**, selecione a variável para armazenar dados, selecione o modo de mapeamento e especifique um valor para armazenar na variável. Os modos de mapeamento variam de acordo com o tipo de variável.
-1. Mapeie mais variáveis para poder fazer uma expressão significativa. Selecione o ícone Salvar ![indicado por uma marca de seleção dentro de uma caixa.](assets/Done_Icon.png) para salvar as alterações.
+1. Mapeie mais variáveis para poder fazer uma expressão significativa. Selecione o ícone ![Salvar indicado por uma marca de seleção dentro de uma caixa.](assets/Done_Icon.png) para salvar as alterações.
 
 ### Exemplo 1: consultar uma variável XML para definir o valor de uma variável de string {#example-query-an-xml-variable-to-set-value-for-a-string-variable}
 
@@ -189,7 +187,7 @@ Todas as etapas do fluxo de trabalho do AEM Forms são compatíveis com variáve
 
 ### Etapas de fluxo de trabalho sem suporte para variáveis {#workflow-steps-without-support-for-variables}
 
-Você pode usar a interface [MetaDataMap](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) para acessar variáveis em etapas de fluxo de trabalho que não oferecem suporte a variáveis.
+Você pode usar a interface [MetaDataMap](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) para acessar variáveis em etapas de fluxo de trabalho que não oferecem suporte a variáveis.
 
 #### Recuperar o valor da variável {#retrieve-the-variable-value}
 
@@ -231,7 +229,7 @@ Atualiza o valor da variável **salário** para 50000.
 
 Você pode usar uma API para definir variáveis e passá-las para chamar instâncias de fluxo de trabalho.
 
-[workflowSession.startWorkflow](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/workflow/WorkflowSession.html#startWorkflow-com.adobe.granite.workflow.model.WorkflowModel-com.adobe.granite.workflow.exec.WorkflowData-java.util.Map-) usa model, wfData e metaData como argumentos. Use MetaDataMap para definir o valor da variável.
+[workflowSession.startWorkflow](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/granite/workflow/WorkflowSession.html#startWorkflow-com.adobe.granite.workflow.model.WorkflowModel-com.adobe.granite.workflow.exec.WorkflowData-java.util.Map-) usa model, wfData e metaData como argumentos. Use MetaDataMap para definir o valor da variável.
 
 Nesta API, a variável **variableName** está definida como **value** usando metaData.put(variableName, value);
 
@@ -251,7 +249,7 @@ workflowSession.startWorkflow(model, wfData, metaData);
 ## Editar uma variável {#edit-a-variable}
 
 1. Na página Editar workflow, selecione o ícone Variáveis disponível no sidekick do modelo de workflow. A seção Variáveis, no painel esquerdo, exibe todas as variáveis existentes.
-1. Selecione o ícone ![Editar indicado por um lápis.Ícone &#x200B;](assets/edit.png) (Editar) ao lado do nome da variável que você deseja editar.
+1. Selecione o ícone ![Editar indicado por um símbolo de lápis.](assets/edit.png) (Editar) ícone ao lado do nome da variável que você deseja editar.
 1. Edite as informações da variável e selecione ![Ícone Salvar indicado por uma marca de seleção.](assets/Done_Icon.png) para salvar as alterações. Não é possível editar os campos **[!UICONTROL Nome]** e **[!UICONTROL Tipo]** para uma variável.
 
 ## Excluir uma variável {#delete-a-variable}

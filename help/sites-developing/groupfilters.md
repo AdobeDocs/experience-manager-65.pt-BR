@@ -11,13 +11,11 @@ exl-id: 419d2e19-1198-4ab5-9aa0-02ad18fe171d
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '735'
+source-wordcount: '785'
 ht-degree: 0%
-
 ---
-
 # Criando filtros do grupo de dispositivos{#creating-device-group-filters}
 
 {{ue-over-mobile}}
@@ -30,7 +28,7 @@ Depois de criar um filtro, você pode usá-lo na [configuração do grupo.](/hel
 
 ## A classe Filter Java™ {#the-filter-java-class}
 
-Um filtro de grupo de dispositivos é um componente OSGi que implementa a interface [com.day.cq.wcm.mobile.api.device.DeviceGroupFilter](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html). Quando implantada, a classe de implementação fornece um serviço de filtro que está disponível para configurações de grupos de dispositivos.
+Um filtro de grupo de dispositivos é um componente OSGi que implementa a interface [com.day.cq.wcm.mobile.api.device.DeviceGroupFilter](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html). Quando implantada, a classe de implementação fornece um serviço de filtro que está disponível para configurações de grupos de dispositivos.
 
 A solução descrita neste artigo usa o plug-in Apache Felix Maven SCR para facilitar o desenvolvimento do componente e do serviço. Portanto, a classe Java™ de exemplo usa as anotações `@Component` e `@Service`. A classe tem a seguinte estrutura:
 
@@ -94,7 +92,7 @@ A função `matches` retornará `true` se os recursos do dispositivo atenderem a
 * O nome do agente do usuário
 * Um objeto Map que contém os recursos do dispositivo. As chaves Map são os nomes do recurso WURFL™ e os valores são os valores correspondentes do banco de dados WURFL™.
 
-A interface [com.day.cq.wcm.mobile.api.devicespecs.DeviceSpecsConstants](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html) contém um subconjunto dos nomes de recursos WURFL™ em campos estáticos. Use essas constantes de campo como chaves ao recuperar valores do Mapa de recursos do dispositivo.
+A interface [com.day.cq.wcm.mobile.api.devicespecs.DeviceSpecsConstants](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html) contém um subconjunto dos nomes de recursos WURFL™ em campos estáticos. Use essas constantes de campo como chaves ao recuperar valores do Mapa de recursos do dispositivo.
 
 Por exemplo, o código de exemplo a seguir determina se o dispositivo oferece suporte a CSS:
 
@@ -186,7 +184,7 @@ O código POM a seguir é útil se você usar o Maven para criar seus aplicativo
 
 * `org.apache.felix.scr.annotations.jar`: Fornece as anotações de Componente e Serviço.
 
-As interfaces DeviceGroup e DeviceGroupFilter estão incluídas no pacote da API móvel WCM do Comunicado do dia 5. As anotações Felix estão incluídas no pacote do Apache Felix Declarative Services. Você pode obter esse arquivo JAR do repositório Adobe público.
+As interfaces DeviceGroup e DeviceGroupFilter estão incluídas no pacote da API móvel WCM do Comunicado do dia 5. As anotações Felix estão incluídas no pacote do Apache Felix Declarative Services. Você pode obter esse arquivo JAR do repositório público do Adobe.
 
 No momento da criação, a 5.5.2 é a versão do pacote da API do WCM Mobile que está na versão mais recente do AEM. Use o Console da Web do Adobe ([https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles)) para garantir que esta seja a versão do pacote implantada em seu ambiente.
 
@@ -255,4 +253,4 @@ No momento da criação, a 5.5.2 é a versão do pacote da API do WCM Mobile que
 </project>
 ```
 
-Adicione o perfil que a seção [Obtendo o plug-in Maven do pacote de conteúdo](/help/sites-developing/vlt-mavenplugin.md) fornece ao arquivo de configurações maven para usar o repositório Adobe público.
+Adicione o perfil que a seção [Obtendo o plug-in Maven do pacote de conteúdo](/help/sites-developing/vlt-mavenplugin.md) fornece ao arquivo de configurações maven para usar o repositório público do Adobe.

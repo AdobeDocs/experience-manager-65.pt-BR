@@ -9,20 +9,18 @@ exl-id: 20a19ee5-7113-4aca-934a-a42c415a8d93
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '552'
-ht-degree: 3%
-
+source-wordcount: '570'
+ht-degree: 4%
 ---
-
 # Configurações do serviço de nuvem{#cloud-service-configurations}
 
 As configurações são projetadas para fornecer a lógica e a estrutura para armazenar configurações de serviço.
 
 É possível estender as instâncias existentes para criar suas próprias configurações.
 
-## Conceitos  {#concepts}
+## Conceitos {#concepts}
 
 Os princípios usados no desenvolvimento das configurações foram baseados nos seguintes conceitos:
 
@@ -49,8 +47,8 @@ Para fornecer uma configuração para novos serviços, faça o seguinte:
 
 * Nesta seção:
 
-   * um modelo de configuração
-   * um componente de configuração
+  * um modelo de configuração
+  * um componente de configuração
 
 O modelo e o componente devem herdar `sling:resourceSuperType` do modelo base:
 
@@ -136,11 +134,11 @@ propertyname
 
 ### API {#api}
 
-Para obter a documentação de referência sobre a API, consulte [com.day.cq.wcm.webservicesupport](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/webservicesupport/package-summary.html).
+Para obter a documentação de referência sobre a API, consulte [com.day.cq.wcm.webservicesupport](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/webservicesupport/package-summary.html).
 
-### Integração com o AEM {#aem-integration}
+### Integração do AEM {#aem-integration}
 
-Os serviços disponíveis estão listados na guia **Cloud Service** da caixa de diálogo **Propriedades da Página** (de qualquer página que herde de `foundation/components/page` ou `wcm/mobile/components/page`).
+Os serviços disponíveis estão listados na guia **Serviços da Nuvem** da caixa de diálogo **Propriedades da Página** (de qualquer página que herde de `foundation/components/page` ou `wcm/mobile/components/page`).
 
 A guia também fornece:
 
@@ -165,7 +163,7 @@ A propriedade será criptografada automaticamente (usando o serviço `CryptoSupp
 >
 >Por padrão, o `EcryptionPostProcessor` criptografa somente `POST` solicitações feitas para `/etc/cloudservices`.
 
-#### Propriedades adicionais para a página de serviço jcr:nós de conteúdo {#additional-properties-for-service-page-jcr-content-nodes}
+#### Propriedades adicionais para nós jcr:content da página de serviço {#additional-properties-for-service-page-jcr-content-nodes}
 
 <table>
  <tbody>
@@ -175,7 +173,7 @@ A propriedade será criptografada automaticamente (usando o serviço `CryptoSupp
   </tr>
   <tr>
    <td>componentReference</td>
-   <td>Caminho de referência para um componente a ser incluído automaticamente na página.<br /> Usado para funcionalidade adicional e inclusões de JS.<br /> Isso inclui o componente na página em que <br /> <code> cq/cloudserviceconfigs/components/servicecomponents</code><br /> está incluído (normalmente antes da marca <code>body</code>).<br /> No caso do Adobe Analytics e do Adobe Target, usamos isso para incluir funcionalidades adicionais, como chamadas do JavaScript para rastrear o comportamento do visitante.</td>
+   <td>Caminho de referência para um componente a ser incluído automaticamente na página.<br /> Isso é usado para funcionalidade adicional e inclusões de JS.<br /> Isso inclui o componente na página em que <br /> <code> cq/cloudserviceconfigs/components/servicecomponents</code><br /> está incluído (normalmente antes da marca <code>body</code>).<br /> No caso do Adobe Analytics e do Adobe Target, usamos isso para incluir funcionalidades adicionais, como chamadas do JavaScript para rastrear o comportamento do visitante.</td>
   </tr>
   <tr>
    <td>descrição</td>
@@ -224,4 +222,4 @@ Esses serviços são fornecidos por padrão:
 
 >[!NOTE]
 >
->Consulte também [Criação de um Cloud Service personalizado](/help/sites-developing/extending-cloud-config-custom-cloud.md).
+>Consulte também [Criação de uma Cloud Service personalizada](/help/sites-developing/extending-cloud-config-custom-cloud.md).

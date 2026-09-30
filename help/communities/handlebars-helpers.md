@@ -7,13 +7,11 @@ exl-id: bfb95cae-4b0f-4521-a113-042dc4005a63
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '1531'
+source-wordcount: '1534'
 ht-degree: 2%
-
 ---
-
 # Auxiliares de Handlebars SCF {#scf-handlebars-helpers}
 
 | **[⇐ Feature Essentials](essentials.md)** | **[Personalização no lado do servidor ^](server-customize.md)** |
@@ -180,7 +178,7 @@ Um auxiliar para retornar o conteúdo dependendo de uma condição de igualdade.
 
 ## If-wcm-mode {#if-wcm-mode}
 
-Um auxiliar de bloco que testa o valor atual do [modo WCM](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html) em relação a uma lista separada por cadeia de caracteres de modos.
+Um auxiliar de bloco que testa o valor atual do [modo WCM](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html) em relação a uma lista separada por cadeia de caracteres de modos.
 
 ### Parâmetros {#parameters-4}
 
@@ -190,7 +188,7 @@ Um auxiliar de bloco que testa o valor atual do [modo WCM](https://developer.ado
 
 * **modo**: cadeia de caracteres
 
-  (Opcional) Uma lista separada por vírgulas de [modos WCM](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html) para testar se estão configurados.
+  (Opcional) Uma lista separada por vírgulas de [modos WCM](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html) para testar se estão configurados.
 
 ### Exemplo {#example-2}
 
@@ -458,10 +456,10 @@ OBSERVAÇÃO: este auxiliar pode retornar uma cadeia de caracteres vazia.
 
 * Os Handlebars fornecem um parâmetro final para os auxiliares chamados de &quot;opções&quot;. O objeto especial &#39;options&#39; inclui
 
-   * Dados particulares opcionais (options.data)
-   * Propriedades de valor-chave opcionais da chamada (options.hash)
-   * Capacidade de chamar a si mesmo (options.fn())
-   * Capacidade de invocar o inverso de si mesmo (options.inverse())
+  * Dados particulares opcionais (options.data)
+  * Propriedades de valor-chave opcionais da chamada (options.hash)
+  * Capacidade de chamar a si mesmo (options.fn())
+  * Capacidade de invocar o inverso de si mesmo (options.inverse())
 
 * Recomenda-se que o conteúdo do HTML String retornado de um auxiliar seja um SafeString.
 
@@ -523,7 +521,7 @@ Os auxiliares personalizados devem ser implementados no lado do servidor e no la
 
 ### Auxiliares personalizados do lado do servidor {#server-side-custom-helpers}
 
-Para implementar e registrar um auxiliar SCF personalizado no lado do servidor, basta implementar a interface Java™ [TemplateHelper](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/handlebars/api/TemplateHelper.html), torná-la um [Serviço OSGi](../../help/sites-developing/the-basics.md#osgi) e instalá-la como parte de um pacote OSGi.
+Para implementar e registrar um auxiliar SCF personalizado no lado do servidor, basta implementar a interface Java™ [TemplateHelper](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/handlebars/api/TemplateHelper.html), torná-la um [Serviço OSGi](../../help/sites-developing/the-basics.md#osgi) e instalá-la como parte de um pacote OSGi.
 
 Por exemplo:
 

@@ -10,13 +10,11 @@ exl-id: ef314385-cd5c-411c-91df-83691a81c1bc
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '283'
-ht-degree: 1%
-
+source-wordcount: '327'
+ht-degree: 0%
 ---
-
 # Fundamentos para curtidas {#liking-essentials}
 
 O componente Curtir, uma subclasse [tally](tally.md), é uma ferramenta útil que permite que os membros expressem uma opinião positiva sobre um conteúdo específico simplesmente selecionando o ícone do coração.
@@ -60,9 +58,9 @@ Não há suporte para postagem anônima de uma curtida. Os visitantes do site de
 
 ## Essentials para o lado do servidor {#essentials-for-server-side}
 
-* [Tally APIs](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
+* [APIs Tally](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
 
-* [Pontos de Extremidade da Tally](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
+* [Endpoints Tally](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
 
 * [Personalizações do lado do servidor](server-customize.md)
 
@@ -71,7 +69,7 @@ Não há suporte para postagem anônima de uma curtida. Os visitantes do site de
 A UGC deve ser moderada usando um dos métodos padrão para moderação.
 Consulte [Moderando Conteúdo Gerado por Usuário](moderate-ugc.md).
 
-Desde o AEM 6.1 Communities, o uso de um [armazenamento comum](working-with-srp.md) para UGC inclui acesso programático a UGC, independentemente da opção de armazenamento escolhida (como ASRP, MSRP ou JSRP).
+A partir do AEM 6.1 Communities, o uso de um [armazenamento comum](working-with-srp.md) para UGC inclui acesso programático a UGC, independentemente da opção de armazenamento escolhida (como ASRP, MSRP ou JSRP).
 
 **A localização e o formato do UGC no repositório estão sujeitos a alterações sem aviso**.
 

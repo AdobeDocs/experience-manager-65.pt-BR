@@ -1,5 +1,5 @@
 ---
-title: Inicialização de workflows
+title: Inicialização de fluxos de trabalho
 description: Saiba como administrar workflows no Adobe Experience Manager para iniciá-los usando vários métodos, manual ou automaticamente.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,25 +9,23 @@ exl-id: 84a1964c-4121-4763-b946-9eee6093747d
 solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '790'
-ht-degree: 2%
-
+source-wordcount: '821'
+ht-degree: 3%
 ---
-
-# Inicialização de workflows{#starting-workflows}
+# Inicialização de fluxos de trabalho{#starting-workflows}
 
 Ao administrar workflows, você pode iniciá-los usando vários métodos:
 
 * Manualmente:
 
-   * De um [Modelo de Fluxo de Trabalho](#workflow-models).
-   * Usando um pacote de fluxo de trabalho para [processamento em lote](#workflow-packages-for-batch-processing).
+  * De um [Modelo de Fluxo de Trabalho](#workflow-models).
+  * Usando um pacote de fluxo de trabalho para [processamento em lote](#workflow-packages-for-batch-processing).
 
 * Automaticamente:
 
-   * Em resposta às alterações de nó; [usando um Iniciador](#workflows-launchers).
+  * Em resposta às alterações de nó; [usando um Iniciador](#workflows-launchers).
 
 >[!NOTE]
 >
@@ -65,7 +63,7 @@ Um inicializador pode ser criado para qualquer nó. No entanto, as alterações 
 * `/var/mobile`
 * `/var/statistics`
 
-   * Exceção: as alterações nos nós abaixo de `/var/statistics/tracking` *do* fazem com que os fluxos de trabalho sejam inicializados.
+  * Exceção: as alterações nos nós abaixo de `/var/statistics/tracking` *do* fazem com que os fluxos de trabalho sejam inicializados.
 
 Várias definições estão incluídas na instalação padrão. Eles são usados para tarefas de gerenciamento de ativos digitais e colaboração social:
 
@@ -122,9 +120,9 @@ Um pacote de workflow:
 
      O tipo de evento que inicia o fluxo de trabalho:
 
-      * Criado
-      * Modificado
-      * Removido
+     * Criado
+     * Modificado
+     * Removido
 
    * **Nodetype**
 
@@ -136,7 +134,7 @@ Um pacote de workflow:
 
    * **Modo(s) de Execução**
 
-     O tipo de servidor ao qual o inicializador do fluxo de trabalho se aplica. Selecione **Author**, **Publish** ou **Author &amp; Publish**.
+     O tipo de servidor ao qual o inicializador do fluxo de trabalho se aplica. Selecione **Autor**, **Publicar** ou **Autor e Publicar**.
 
    * **Condições**
 
@@ -164,8 +162,8 @@ Um pacote de workflow:
 
      Controla se o inicializador do fluxo de trabalho está ativado:
 
-      * Selecione **Habilitar** para iniciar fluxos de trabalho quando as propriedades de configuração forem satisfeitas.
-      * Selecione **Desabilitar** quando o fluxo de trabalho não deve ser executado (nem mesmo quando as propriedades de configuração forem satisfeitas).
+     * Selecione **Habilitar** para iniciar fluxos de trabalho quando as propriedades de configuração forem satisfeitas.
+     * Selecione **Desabilitar** quando o fluxo de trabalho não deve ser executado (nem mesmo quando as propriedades de configuração forem satisfeitas).
 
    * **Lista de exclusões**
 
@@ -173,8 +171,8 @@ Um pacote de workflow:
 
      Esta propriedade do inicializador é uma lista de itens separados por vírgulas: &quot;
 
-      * `property-name` ignorar qualquer evento `jcr` disparado no nome de propriedade especificado. &quot;
-      * `event-user-data:<*someValue*>` ignora qualquer evento que contenha `*<someValue*`> `user-data` definido por meio da API [`ObservationManager` ] (https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String).
+     * `property-name` ignorar qualquer evento `jcr` disparado no nome de propriedade especificado. &quot;
+     * `event-user-data:<*someValue*>` ignora qualquer evento que contenha `*<someValue*`> `user-data` definido por meio da API [`ObservationManager` ] (https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String).
 
      Por exemplo:
 

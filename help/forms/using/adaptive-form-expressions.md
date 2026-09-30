@@ -8,20 +8,18 @@ feature: Adaptive Forms,Foundation Components
 exl-id: 048bd9e8-ef34-40fb-9f46-73743d7b47c8
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '2781'
-ht-degree: 0%
-
+source-wordcount: '2871'
+ht-degree: 1%
 ---
-
 # Expressões de formulário adaptável{#adaptive-form-expressions}
 
-O <span class="preview"> Adobe recomenda o uso de [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adicionar o Forms Adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
+A Adobe <span class="preview"> recomenda usar os [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adicionar o Forms Adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
 
 Os formulários adaptáveis fornecem experiência de preenchimento de formulário otimizada e simplificada para usuários finais com recursos de script dinâmicos. Ele permite escrever expressões para adicionar vários comportamentos, como campos e painéis de exibição/ocultação dinâmicos. Também permite adicionar campos calculados, tornar os campos somente leitura, adicionar lógica de validação e muito mais. O comportamento dinâmico é baseado na entrada do usuário ou em dados pré-preenchidos.
 
-O JavaScript é o idioma de expressão dos formulários adaptáveis. Todas as expressões são expressões JavaScript válidas e usam APIs de modelo de script de formulários adaptáveis. Essas expressões retornam valores de determinados tipos. Para obter a lista completa de classes de formulários adaptáveis, eventos, objetos e APIs públicas, consulte [Referência da API da Biblioteca JavaScript para formulários adaptáveis.](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/index.html)
+O JavaScript é o idioma de expressão dos formulários adaptáveis. Todas as expressões são expressões JavaScript válidas e usam APIs de modelo de script de formulários adaptáveis. Essas expressões retornam valores de determinados tipos. Para obter a lista completa de classes de formulários adaptáveis, eventos, objetos e APIs públicas, consulte [Referência da API da Biblioteca JavaScript para formulários adaptáveis.](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javascript-api/index.html)
 
 ## Práticas recomendadas para escrever expressões {#best-practices-for-writing-expressions}
 
@@ -36,13 +34,13 @@ Os painéis repetitivos são instâncias de um painel que são adicionadas ou re
 * Para criar um painel de repetição, na caixa de diálogo do painel, abra as configurações e defina o valor do campo contagem máxima como mais de 1.
 * O valor da contagem mínima das configurações de repetição do painel pode ser um ou mais, mas não pode ser maior do que o valor da contagem máxima.
 * Quando uma expressão se refere a um campo do painel de repetição, os nomes de campo na expressão são resolvidos para o elemento de repetição mais próximo.
-* Formulários adaptáveis fornecem algumas funções especiais para simplificar a computação para painéis repetíveis, como soma, contagem, mínimo, máximo, filtro e muito mais. Para obter a lista completa das funções, consulte [Referência da API da Biblioteca JavaScript para formulários adaptáveis](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/index.html)
+* Formulários adaptáveis fornecem algumas funções especiais para simplificar a computação para painéis repetíveis, como soma, contagem, mínimo, máximo, filtro e muito mais. Para obter a lista completa das funções, consulte [Referência da API da Biblioteca JavaScript para formulários adaptáveis](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javascript-api/index.html)
 * As APIs para manipular instâncias do painel de repetição são:
 
-   * Para adicionar uma instância de painel: `panel1.instanceManager.addInstance()`
-   * Para obter um índice de repetição do painel: `panel1.instanceIndex`
-   * Para obter o instanceManager de um painel: `_panel1 or panel1.instanceManager`
-   * Para remover uma instância de um painel: `_panel1.removeInstance(panel1.instanceIndex)`
+  * Para adicionar uma instância de painel: `panel1.instanceManager.addInstance()`
+  * Para obter um índice de repetição do painel: `panel1.instanceIndex`
+  * Para obter o instanceManager de um painel: `_panel1 or panel1.instanceManager`
+  * Para remover uma instância de um painel: `_panel1.removeInstance(panel1.instanceIndex)`
 
 ## Tipos de expressão {#expression-types}
 
@@ -82,7 +80,7 @@ A expressão calculate é usada para calcular automaticamente o valor de um camp
 
 ### Expressão de clique {#click-expression}
 
-A expressão de clique lida com as ações executadas no evento de clique de um botão. Imediatamente, o GuideBridge fornece APIs para executar várias funções, como enviar, validar, que são usadas junto com a expressão de clique. Para obter a lista completa das APIs, consulte [APIs do GuideBridge.](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/GuideBridge.html)
+A expressão de clique lida com as ações executadas no evento de clique de um botão. Imediatamente, o GuideBridge fornece APIs para executar várias funções, como enviar, validar, que são usadas junto com a expressão de clique. Para obter a lista completa das APIs, consulte [APIs do GuideBridge.](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javascript-api/GuideBridge.html)
 
 **Aplica-se a**: campos de botão
 
@@ -213,7 +211,7 @@ O Formato de Exibição pode ser usado para exibir os dados em diferentes format
 
 ### GuideBridge - APIs e eventos {#guidebridge-apis-and-events}
 
-O GuideBridge é uma coleção de APIs que pode ser usada para interagir com formulários adaptáveis no modelo de memória em um navegador. Para obter uma introdução detalhada à API do Guia Bridge, aos métodos de classe e aos eventos expostos, consulte a [Referência da API da Biblioteca JavaScript para formulários adaptáveis.](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/index.html)
+O GuideBridge é uma coleção de APIs que pode ser usada para interagir com formulários adaptáveis no modelo de memória em um navegador. Para obter uma introdução detalhada à API do Guia Bridge, aos métodos de classe e aos eventos expostos, consulte a [Referência da API da Biblioteca JavaScript para formulários adaptáveis.](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javascript-api/index.html)
 
 >[!NOTE]
 >
@@ -229,7 +227,7 @@ O GuideBridge é uma coleção de APIs que pode ser usada para interagir com for
 
 #### Usando expressões externas do GuideBridge  {#using-guidebridge-outside-expressions-nbsp}
 
-Você também pode usar as APIs do GuideBridge fora das expressões. Por exemplo, você pode usar a API do GuideBridge para definir a comunicação entre o HTML de página que hospeda o formulário adaptável e o Modelo de formulário. Além disso, você pode definir o valor que vem do pai do Iframe que hospeda o formulário.
+Você também pode usar as APIs do GuideBridge fora das expressões. Por exemplo, você pode usar a API GuideBridge para definir a comunicação entre a página HTML que hospeda o formulário adaptável e o Modelo de formulário. Além disso, você pode definir o valor que vem do pai do Iframe que hospeda o formulário.
 
 Para usar a API do GuideBridge para o exemplo mencionado acima, capture uma instância do GuideBridge. Para capturar a instância, escute o `bridgeInitializeStart`evento de um `window` objeto:
 
@@ -259,7 +257,7 @@ Para usar o GuideBridge após a inicialização do formulário (o evento `bridge
 
 #### Eventos do GuideBridge {#guidebridge-events}
 
-O GuideBridge também fornece determinados eventos para scripts externos na página de hospedagem. Os scripts externos podem ouvir esses eventos e executar várias operações. Por exemplo, sempre que o nome de usuário em um formulário for alterado, o nome mostrado no cabeçalho da página também será alterado. Para obter mais detalhes sobre esses eventos, consulte [Referência da API da Biblioteca JavaScript para formulários adaptáveis.](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/GuideBridge.html)
+O GuideBridge também fornece determinados eventos para scripts externos na página de hospedagem. Os scripts externos podem ouvir esses eventos e executar várias operações. Por exemplo, sempre que o nome de usuário em um formulário for alterado, o nome mostrado no cabeçalho da página também será alterado. Para obter mais detalhes sobre esses eventos, consulte [Referência da API da Biblioteca JavaScript para formulários adaptáveis.](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javascript-api/GuideBridge.html)
 
 Use o código a seguir para registrar manipuladores:
 
@@ -277,13 +275,13 @@ Como mencionado acima, os formulários adaptáveis permitem que o autor forneça
 
 Execute as seguintes etapas para criar um padrão personalizado para um tipo de campo específico e reutilizá-lo para outros campos do mesmo tipo:
 
-1. Navegue até o CRXDE Lite na instância de criação.
+1. Navegue até o CRXDE Lite na sua instância de criação.
 1. Crie uma pasta para manter seus padrões personalizados. No diretório /apps, crie um nó do tipo sling:folder. Por exemplo, crie um nó com o nome `customPatterns`. Neste nó, crie outro nó do tipo `nt:unstructed` e o nomeie como `textboxpatterns`. Este nó contém vários padrões personalizados que você deseja adicionar.
 1. Abra a guia Properties do nó criado. Por exemplo, abra a guia Propriedades de `textboxpatterns`. Adicione a propriedade `guideComponentType` a este nó e defina seu valor como *fd/af/components/formatter/guideTextBox*.
 
 1. O valor dessa propriedade varia dependendo do campo para o qual você deseja definir os padrões. Para o campo numérico, o valor da propriedade `guideComponentType` é *fd/af/components/formatter/guideNumericBox*. O valor do campo Datepicker é *fd/af/components/formatter/guideDatepicker*.
 &quot;
-1. Você pode adicionar um padrão personalizado atribuindo uma propriedade ao nó `textboxpatterns`. Adicione uma propriedade com um nome (por exemplo, `pattern1`) e defina seu valor com o padrão que deseja adicionar. Por exemplo, adicione uma propriedade `pattern1` com o valor Fax=text{99-999-9999999}. O padrão está disponível para todas as Caixas de texto usadas no Forms adaptável.
+1. Você pode adicionar um padrão personalizado atribuindo uma propriedade ao nó `textboxpatterns`. Adicione uma propriedade com um nome (por exemplo, `pattern1`) e defina seu valor com o padrão que deseja adicionar. Por exemplo, adicione uma propriedade `pattern1` com o valor Fax=text{99-999-999999}. O padrão está disponível para todas as Caixas de texto usadas no Forms adaptável.
 
    ![Criando padrões personalizados para campos no CrxDe](assets/creating-custom-patterns.png)
 

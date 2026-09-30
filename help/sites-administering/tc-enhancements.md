@@ -7,10 +7,10 @@ feature: Language Copy
 exl-id: 2011a976-d506-4c0b-9980-b8837bdcf5ad
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '687'
-ht-degree: 29%
+source-wordcount: '688'
+ht-degree: 26%
 ---
 # Aprimoramentos da tradução{#translation-enhancements}
 
@@ -77,7 +77,7 @@ O AEM atualiza a tradução dos segmentos existentes na memória de tradução d
 Para usar este recurso:
 
 * Um TMS deve ser configurado para uso com o AEM.
-* O conector precisa implementar o método [`storeTranslation`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/granite/translation/api/TranslationService.html).
+* O conector precisa implementar o método [`storeTranslation`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/cloud-service/javadoc/com/adobe/granite/translation/api/TranslationService.html).
   * O código desse método determina o que acontece com a solicitação de atualização da memória de tradução.
   * A estrutura de tradução do AEM envia os pares de valores do segmento (tradução original e atualizada) para o TMS por meio da implementação desse método.
 

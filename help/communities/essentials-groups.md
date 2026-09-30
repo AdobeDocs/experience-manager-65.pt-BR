@@ -9,13 +9,11 @@ exl-id: f45ae7be-a500-463a-ab3e-81f281651a9d
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '404'
+source-wordcount: '444'
 ht-degree: 1%
-
 ---
-
 # Fundamentos do grupo da comunidade  {#community-group-essentials}
 
 O recurso de grupos da comunidade é a capacidade de uma subcomunidade ser criada dinamicamente em um site da comunidade por usuários autorizados nos ambientes de publicação e criação.
@@ -78,9 +76,9 @@ A partir do Communities [feature pack 1](deploy-communities.md#latestfeaturepack
 
 ## Essentials para o lado do servidor {#essentials-for-server-side}
 
-* [API do grupo da comunidade](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/group/client/api/package-summary.html)
+* [API do grupo da comunidade](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/group/client/api/package-summary.html)
 
-* [Pontos de Extremidade do Grupo da Comunidade](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/group/client/endpoints/package-summary.html)
+* [Endpoints do grupo da comunidade](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/group/client/endpoints/package-summary.html)
 
 * [Personalizações do lado do servidor](server-customize.md)
 

@@ -5,28 +5,26 @@ exl-id: c4f7f45f-224b-4fc3-b4b0-f5b21b8a466f
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Security
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '392'
+source-wordcount: '419'
 ht-degree: 0%
-
 ---
-
 # Segurança{#security}
 
-A Segurança de aplicativos é iniciada durante a fase de desenvolvimento. O Adobe recomenda aplicar as seguintes práticas recomendadas de segurança.
+A Segurança de aplicativos é iniciada durante a fase de desenvolvimento. A Adobe recomenda aplicar as seguintes práticas recomendadas de segurança.
 
 ## Usar sessão de solicitação {#use-request-session}
 
-Seguindo o princípio de privilégio mínimo, o Adobe recomenda que todo acesso ao repositório seja feito usando a sessão vinculada à solicitação do usuário e o controle de acesso adequado.
+Seguindo o princípio de privilégio mínimo, a Adobe recomenda que todo acesso ao repositório seja feito usando a sessão vinculada à solicitação do usuário e o controle de acesso adequado.
 
-## Protect contra Scripts entre sites (XSS) {#protect-against-cross-site-scripting-xss}
+## Proteger contra Criação de script entre sites (XSS) {#protect-against-cross-site-scripting-xss}
 
 A criação de script entre sites (XSS) permite que invasores injetem código em páginas da Web visualizadas por outros usuários. Essa vulnerabilidade de segurança pode ser explorada por usuários mal-intencionados da Web para ignorar controles de acesso.
 
 O AEM aplica o princípio de filtrar todo o conteúdo fornecido pelo usuário na saída. É dada a maior prioridade à prevenção de XSS durante o desenvolvimento e o teste.
 
-O mecanismo de proteção XSS fornecido pelo AEM é baseado na [Biblioteca AntiSamy Java™](https://wiki.owasp.org/index.php/Category:OWASP_AntiSamy_Project) fornecida pelo [OWASP (The Open Web Application Security Project)](https://owasp.org/). A configuração padrão do AntiSamy pode ser encontrada em
+O mecanismo de proteção XSS fornecido pelo AEM é baseado na [Biblioteca Java™ AntiSamy](https://wiki.owasp.org/index.php/Category:OWASP_AntiSamy_Project) fornecida pelo [OWASP (O Projeto de Segurança de Aplicativos Web Abertos)](https://owasp.org/). A configuração padrão do AntiSamy pode ser encontrada em
 
 `/libs/cq/xssprotection/config.xml`
 
@@ -34,7 +32,7 @@ O mecanismo de proteção XSS fornecido pelo AEM é baseado na [Biblioteca AntiS
 
 >[!NOTE]
 >
->A Adobe recomenda que você sempre acesse a API de proteção XSS usando o [XSSAPI fornecido pelo AEM](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/xss/XSSAPI.html).
+>A Adobe recomenda que você sempre acesse a API de proteção XSS usando o [XSSAPI fornecido pelo AEM](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/granite/xss/XSSAPI.html).
 
 Além disso, um firewall de aplicativo da Web, como o [mod_security para Apache](https://www.modsecurity.org), pode fornecer controle central e confiável sobre a segurança do ambiente de implantação e proteger contra ataques de script entre sites não detectados anteriormente.
 
@@ -42,9 +40,9 @@ Além disso, um firewall de aplicativo da Web, como o [mod_security para Apache]
 
 >[!NOTE]
 >
->As ACLs para as Informações de Cloud Service e as configurações de OSGi necessárias para proteger sua instância são automatizadas como parte do [Modo Pronto para Produção](/help/sites-administering/production-ready.md). Embora isso signifique que não é necessário alterar a configuração manualmente, ainda é recomendável revisá-los antes de entrar em funcionamento com a implantação.
+>As ACLs para as Informações do Cloud Service e as configurações de OSGi necessárias para proteger sua instância são automatizadas como parte do [Modo Pronto para Produção](/help/sites-administering/production-ready.md). Embora isso signifique que não é necessário alterar a configuração manualmente, ainda é recomendável revisá-los antes de entrar em funcionamento com a implantação.
 
-Ao [integrar sua instância do AEM à Adobe Experience Cloud](/help/sites-administering/marketing-cloud.md), você usa [configurações de Cloud Service](/help/sites-developing/extending-cloud-config.md). As informações sobre essas configurações, juntamente com quaisquer estatísticas coletadas, são armazenadas no repositório. A Adobe recomenda que, se estiver usando essa funcionalidade, você verifique se a segurança padrão nessas informações corresponde aos seus requisitos.
+Ao [integrar sua instância do AEM com a Adobe Experience Cloud](/help/sites-administering/marketing-cloud.md), você usa [configurações do Cloud Service](/help/sites-developing/extending-cloud-config.md). As informações sobre essas configurações, juntamente com quaisquer estatísticas coletadas, são armazenadas no repositório. A Adobe recomenda que, se estiver usando essa funcionalidade, você verifique se a segurança padrão nessas informações corresponde aos seus requisitos.
 
 O módulo webservicesupport grava estatísticas e informações de configuração em:
 
@@ -54,8 +52,8 @@ Com as permissões padrão:
 
 * Ambiente de autor: `read` para `contributors`
 
-* Ambiente do Publish: `read` para `everyone`
+* Ambiente de publicação: `read` para `everyone`
 
-## Protect contra ataques de falsificação de solicitação entre sites {#protect-against-cross-site-request-forgery-attacks}
+## Proteger contra ataques de falsificação de solicitação entre sites {#protect-against-cross-site-request-forgery-attacks}
 
-Para obter mais informações sobre os mecanismos de segurança que o AEM emprega para mitigar ataques CSRF, consulte a seção [Filtro de referenciador do Sling](/help/sites-administering/security-checklist.md#protect-against-cross-site-request-forgery) da Lista de verificação de segurança e a [documentação da Estrutura de proteção CSRF](/help/sites-developing/csrf-protection.md).
+Para obter mais informações sobre os mecanismos de segurança que a AEM emprega para mitigar ataques CSRF, consulte a seção [Filtro de referenciador Sling](/help/sites-administering/security-checklist.md#protect-against-cross-site-request-forgery) da Lista de verificação de segurança e a [documentação da Estrutura de proteção CSRF](/help/sites-developing/csrf-protection.md).

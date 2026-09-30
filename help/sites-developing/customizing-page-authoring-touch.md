@@ -9,9 +9,9 @@ exl-id: 90594588-db8e-4d4c-a208-22c1c6ea2a2d
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 3aa55b88f589749fb49d5ff46340b0912d490157
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '1467'
+source-wordcount: '1471'
 ht-degree: 1%
 ---
 # Personalização da criação de página{#customizing-page-authoring}
@@ -35,7 +35,7 @@ O Adobe Experience Manager (AEM) fornece vários mecanismos para permitir que vo
 
 >[!NOTE]
 >
->Para obter mais informações, consulte [Conjunto de documentação JS](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html).
+>Para obter mais informações, consulte [Conjunto de documentação JS](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/jsdoc/ui-touch/editor-core/index.html).
 
 Eles podem ser usados de várias maneiras para estender a funcionalidade de criação de página na instância do AEM. Uma seleção é abordada abaixo (em um nível alto).
 
@@ -45,7 +45,7 @@ Eles podem ser usados de várias maneiras para estender a funcionalidade de cria
 >
 >* Usando e criando [clientlibs](/help/sites-developing/clientlibs.md).
 >* Usando e criando [sobreposições](/help/sites-developing/overlays.md).
->* [Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
+>* [Granite](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
 >* [Estrutura da interface habilitada para toque do AEM](/help/sites-developing/touch-ui-structure.md) para obter detalhes das áreas estruturais usadas para criação de página.
 >
 
@@ -105,9 +105,9 @@ Você pode encontrar o código desta página no GitHub
 
 Ao criar páginas, o usuário geralmente deve selecionar entre os recursos (por exemplo, páginas, componentes e ativos). Isso pode tomar a forma de uma lista, por exemplo, da qual o autor deve escolher um item.
 
-Para manter a lista em um tamanho razoável e também relevante para o caso de uso, um filtro pode ser implementado no formato de um predicado personalizado. Por exemplo, se o componente [`pathbrowser`](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) [Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui) for usado para permitir que o usuário selecione o caminho para um recurso específico, os caminhos apresentados poderão ser filtrados da seguinte maneira:
+Para manter a lista em um tamanho razoável e também relevante para o caso de uso, um filtro pode ser implementado no formato de um predicado personalizado. Por exemplo, se o componente [`pathbrowser`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) [Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui) for usado para permitir que o usuário selecione o caminho para um recurso específico, os caminhos apresentados poderão ser filtrados da seguinte maneira:
 
-* Implemente o predicado personalizado implementando a interface [`com.day.cq.commons.predicate.AbstractNodePredicate`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/predicate/package-summary.html).
+* Implemente o predicado personalizado implementando a interface [`com.day.cq.commons.predicate.AbstractNodePredicate`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/commons/predicate/package-summary.html).
 * Especifique um nome para o predicado e consulte esse nome ao usar o `pathbrowser`.
 
 Para obter mais detalhes sobre como criar um predicado personalizado, consulte [Implementando um Avaliador de Predicado Personalizado para o Construtor de Consultas](/help/sites-developing/implementing-custom-predicate-evaluator.md).

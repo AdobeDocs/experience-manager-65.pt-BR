@@ -10,13 +10,11 @@ exl-id: c705710b-a94a-4f4f-affa-ddd4fc6cb0ec
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '5464'
+source-wordcount: '5471'
 ht-degree: 0%
-
 ---
-
 # Design responsivo para páginas da Web{#responsive-design-for-web-pages}
 
 {{ue-over-mobile}}
@@ -506,7 +504,7 @@ Para obter informações sobre como configurar serviços do AEM, consulte [Confi
 
 #### Detalhes da implementação {#implementation-details}
 
-A classe `com.day.cq.wcm.foundation.impl.AdaptiveImageComponentServlet` estende a classe [AbstractImageServlet](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html). O código-fonte AdaptiveImageComponentServlet está na pasta `/libs/foundation/src/impl/src/com/day/cq/wcm/foundation/impl`.
+A classe `com.day.cq.wcm.foundation.impl.AdaptiveImageComponentServlet` estende a classe [AbstractImageServlet](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html). O código-fonte AdaptiveImageComponentServlet está na pasta `/libs/foundation/src/impl/src/com/day/cq/wcm/foundation/impl`.
 
 A classe usa anotações Felix SCR para configurar o tipo de recurso e a extensão de arquivo à qual o servlet está associado, além do nome do primeiro seletor.
 
@@ -539,11 +537,11 @@ O servlet usa a anotação SCR de propriedade para definir a qualidade e as dime
             description = "List of widths this component is permitted to generate.")
 ```
 
-A classe `AbstractImageServlet` fornece o método `doGet` que processa a solicitação HTTP. Este método determina o recurso associado à solicitação, recupera propriedades de recurso do repositório e as retorna em um objeto [ImageContext](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.ImageContext.html).
+A classe `AbstractImageServlet` fornece o método `doGet` que processa a solicitação HTTP. Este método determina o recurso associado à solicitação, recupera propriedades de recurso do repositório e as retorna em um objeto [ImageContext](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.ImageContext.html).
 
 >[!NOTE]
 >
->A classe [com.day.cq.commons.DownloadResource](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/DownloadResource.html) fornece o `getFileReference method`, que recupera o valor da propriedade `fileReference` do recurso.
+>A classe [com.day.cq.commons.DownloadResource](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/commons/DownloadResource.html) fornece o `getFileReference method`, que recupera o valor da propriedade `fileReference` do recurso.
 
 A classe `AdaptiveImageComponentServlet` substitui o método `createLayer`. O método obtém o caminho do recurso de imagem e a largura de imagem solicitada do objeto `ImageContext`. Em seguida, ele chama os métodos da classe `info.geometrixx.commons.impl.AdaptiveImageHelper`, que executa o dimensionamento real da imagem.
 
@@ -611,7 +609,7 @@ Ao criar uma página, use o **Sidekick** para especificar a imagem e adicionar o
 
 #### Detalhes da implementação {#implementation-details-1}
 
-A classe info.geometrixx.commons.impl.servlets.ImageReferenceModificationServlet estende a classe [AbstractImageServlet](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html). Se você tiver o pacote cq-geometrixx-commons-pkg instalado, o código-fonte ImageReferenceModificationServlet estará na pasta `/apps/geometrixx-commons/src/core/src/main/java/info/geometrixx/commons/impl/servlets`.
+A classe info.geometrixx.commons.impl.servlets.ImageReferenceModificationServlet estende a classe [AbstractImageServlet](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html). Se você tiver o pacote cq-geometrixx-commons-pkg instalado, o código-fonte ImageReferenceModificationServlet estará na pasta `/apps/geometrixx-commons/src/core/src/main/java/info/geometrixx/commons/impl/servlets`.
 
 A classe usa anotações Felix SCR para configurar o tipo de recurso e a extensão de arquivo à qual o servlet está associado, além do nome do primeiro seletor.
 
@@ -651,12 +649,12 @@ O servlet usa a anotação SCR de propriedade para definir a qualidade e as dime
             description = "List of resolutions this component is permitted to generate.")
 ```
 
-A classe `AbstractImageServlet` fornece o método `doGet` que processa a solicitação HTTP. Este método determina o recurso associado à chamada, recupera propriedades de recurso do repositório e as salva em um objeto [ImageContext](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.ImageContext.html).
+A classe `AbstractImageServlet` fornece o método `doGet` que processa a solicitação HTTP. Este método determina o recurso associado à chamada, recupera propriedades de recurso do repositório e as salva em um objeto [ImageContext](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.ImageContext.html).
 
-A classe `ImageReferenceModificationServlet` substitui o método `createLayer` e implementa a lógica que determina o recurso de imagem a ser renderizado. O método recupera um nó filho do nó `jcr:content` da página chamado `image`. Um objeto [Image](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/foundation/Image.html) é criado a partir deste nó `image`, e o método `getFileReference` retorna o caminho para o arquivo de imagem da propriedade `fileReference` do nó de imagem.
+A classe `ImageReferenceModificationServlet` substitui o método `createLayer` e implementa a lógica que determina o recurso de imagem a ser renderizado. O método recupera um nó filho do nó `jcr:content` da página chamado `image`. Um objeto [Image](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/foundation/Image.html) é criado a partir deste nó `image`, e o método `getFileReference` retorna o caminho para o arquivo de imagem da propriedade `fileReference` do nó de imagem.
 
 >[!NOTE]
->A classe [com.day.cq.commons.DownloadResource](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/DownloadResource.html) fornece o getFileReferencemethod.
+>A classe [com.day.cq.commons.DownloadResource](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/commons/DownloadResource.html) fornece o getFileReferencemethod.
 >
 
 ## Desenvolvimento de uma grade de fluidos {#developing-a-fluid-grid}

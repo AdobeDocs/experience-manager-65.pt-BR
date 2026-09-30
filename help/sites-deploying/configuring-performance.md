@@ -13,9 +13,9 @@ feature: Configuring
 exl-id: 5b0c9a8c-0f5f-46ee-a455-adb9b9d27270
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '6649'
+source-wordcount: '6650'
 ht-degree: 13%
 ---
 # Otimização do desempenho {#performance-optimization}
@@ -225,7 +225,7 @@ Por exemplo, quando imagens (ou ativos DAM em geral) são carregadas, os fluxos 
 O mecanismo de fluxo de trabalho usa as filas de trabalho do Apache Sling para manipular e agendar o processamento do item de trabalho. Os seguintes serviços de fila de trabalhos foram criados por padrão na fábrica do serviço de configuração da fila de trabalhos do Apache Sling para processar trabalhos de fluxo de trabalho:
 
 * Fila de fluxo de trabalho do Granite: a maioria das etapas do fluxo de trabalho, como aquelas que processam ativos DAM, usam o serviço Fila de fluxo de trabalho do Granite.
-* Fila de trabalho do processo externo do fluxo de trabalho do Granite: esse serviço é usado para etapas especiais do fluxo de trabalho externo que normalmente são usadas para entrar em contato com um sistema externo e pesquisar resultados. Por exemplo, a etapa Processo de extração de mídia do InDesign é implementada como um processo externo. O mecanismo de workflow usa a fila externa para processar a pesquisa. (Consulte [com.day.cq.workflow.exec.WorkflowExternalProcess](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/workflow/exec/WorkflowExternalProcess.html).)
+* Fila de trabalho do processo externo do fluxo de trabalho do Granite: esse serviço é usado para etapas especiais do fluxo de trabalho externo que normalmente são usadas para entrar em contato com um sistema externo e pesquisar resultados. Por exemplo, a etapa Processo de extração de mídia do InDesign é implementada como um processo externo. O mecanismo de workflow usa a fila externa para processar a pesquisa. (Consulte [com.day.cq.workflow.exec.WorkflowExternalProcess](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/workflow/exec/WorkflowExternalProcess.html).)
 
 Configure esses serviços para limitar o número máximo de processos de fluxo de trabalho simultâneos.
 

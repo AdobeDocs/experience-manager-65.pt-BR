@@ -1,26 +1,28 @@
 ---
-title: Criação de tags em um aplicativo AEM
+title: Criação de tags em um aplicativo do AEM
+
 description: Trabalhar programaticamente com tags ou estender tags em um aplicativo AEM personalizado
+
+
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
+
 feature: Developing,Tagging
 exl-id: d885520d-d0ed-45fa-8511-faa2495d667a
 solution: Experience Manager, Experience Manager Sites
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '868'
+source-wordcount: '936'
 ht-degree: 0%
-
 ---
+# Criação de tags em um aplicativo do AEM{#building-tagging-into-an-aem-application}
 
-# Criação de tags em um aplicativo AEM{#building-tagging-into-an-aem-application}
+Para trabalhar programaticamente com tags ou estender tags em um aplicativo AEM personalizado, esta página descreve o uso da
 
-Para trabalhar programaticamente com tags ou estender tags em um aplicativo AEM personalizado, esta página descreve o uso da variável
-
-* [API de marcação](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/tagging/package-summary.html)
+* [API de marcação](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/tagging/package-summary.html)
 
 Que interage com o
 
@@ -33,7 +35,7 @@ Para obter informações relacionadas à marcação, consulte:
 
 ## Visão geral da API de marcação {#overview-of-the-tagging-api}
 
-A implementação da [estrutura de marcação](/help/sites-developing/framework.md) no AEM permite o gerenciamento de tags e conteúdo de tags usando a API JCR. O TagManager garante que as marcas inseridas como valores na propriedade de matriz da cadeia de caracteres `cq:tags` não sejam duplicadas, ele remove TagIDs que apontam para marcas não existentes e atualiza TagIDs para marcas movidas ou mescladas. O TagManager usa um ouvinte de observação JCR que reverte quaisquer alterações incorretas. As classes principais estão no pacote [com.day.cq.tagging](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/tagging/package-summary.html):
+A implementação da [estrutura de marcação](/help/sites-developing/framework.md) no AEM permite o gerenciamento de tags e conteúdo de tags usando a API JCR. O TagManager garante que as marcas inseridas como valores na propriedade de matriz da cadeia de caracteres `cq:tags` não sejam duplicadas, ele remove TagIDs que apontam para marcas não existentes e atualiza TagIDs para marcas movidas ou mescladas. O TagManager usa um ouvinte de observação JCR que reverte quaisquer alterações incorretas. As classes principais estão no pacote [com.day.cq.tagging](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/index.html?com/day/cq/tagging/package-summary.html):
 
 * JcrTagManagerFactory - retorna uma implementação baseada em JCR de um `TagManager`. É a implementação de referência da API de marcação.
 * `TagManager` - permite resolver e criar marcas por caminhos e nomes.
@@ -156,31 +158,31 @@ Quando a marca **Animais** é adicionada à página **Produtos**, o valor `stock
 
 A API do lado do servidor localizou métodos relacionados a `title`:
 
-* [com.day.cq.tagging.Tag](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/tagging/Tag.html)
+* [com.day.cq.tagging.Tag](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/index.html?com/day/cq/tagging/Tag.html)
 
-   * getLocalizedTitle(Localidade)
-   * getLocalizedTitlePaths()
-   * getLocalizedTitles()
-   * getTitle(Local)
-   * getTitlePath(Localidade)
+  * getLocalizedTitle(Localidade)
+  * getLocalizedTitlePaths()
+  * getLocalizedTitles()
+  * getTitle(Local)
+  * getTitlePath(Localidade)
 
-* [com.day.cq.tagging.TagManager](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/tagging/TagManager.html)
+* [com.day.cq.tagging.TagManager](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/index.html?com/day/cq/tagging/TagManager.html)
 
-   * canCreateTagByTitle(String tagTitlePath, localidade)
-   * createTagByTitle(String tagTitlePath, localidade)
-   * resolveByTitle(String tagTitlePath, localidade)
+  * canCreateTagByTitle(String tagTitlePath, localidade)
+  * createTagByTitle(String tagTitlePath, localidade)
+  * resolveByTitle(String tagTitlePath, localidade)
 
-No AEM, o idioma pode ser obtido no idioma da página ou no idioma do usuário:
+No AEM, o idioma pode ser obtido do idioma da página ou do idioma do usuário:
 
 * para recuperar o idioma da página em uma JSP:
 
-   * `currentPage.getLanguage(false)`
+  * `currentPage.getLanguage(false)`
 
 * para recuperar o idioma do usuário em uma JSP:
 
-   * `slingRequest.getLocale()`
+  * `slingRequest.getLocale()`
 
-O `currentPage` e o `slingRequest` estão disponíveis em um JSP por meio da marca [&lt;cq:definedObjects>](/help/sites-developing/taglib.md).
+O `currentPage` e o `slingRequest` estão disponíveis em um JSP por meio da marca [&lt;cq:definedObjects](/help/sites-developing/taglib.md).
 
 Para marcação, a localização depende do contexto, pois a marca `titles` pode ser exibida no idioma da página, no idioma do usuário ou em qualquer outro idioma.
 
@@ -196,7 +198,7 @@ O novo idioma (finlandês) agora está disponível na caixa de diálogo de marca
 
 >[!NOTE]
 >
->A nova língua deve ser uma das línguas reconhecidas pelo AEM. Ou seja, ele deve estar disponível como um nó abaixo de `/libs/wcm/core/resources/languages`.
+>O novo idioma deve ser um dos idiomas reconhecidos pela AEM. Ou seja, ele deve estar disponível como um nó abaixo de `/libs/wcm/core/resources/languages`.
 
 >[!CAUTION]
 >
