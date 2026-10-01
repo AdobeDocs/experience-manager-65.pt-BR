@@ -11,21 +11,19 @@ feature: Integration
 role: Admin
 source-git-commit: c4133584e9c2328b3a55042902c67770d78afcf7
 workflow-type: tm+mt
-source-wordcount: '1482'
-ht-degree: 0%
-
+source-wordcount: '1625'
+ht-degree: 1%
 ---
-
 # SharePoint Connector{#sharepoint-connector}
 
-Este artigo inclui detalhes sobre o Conector JCR do Adobe para Microsoft SharePoint 2010 e Microsoft SharePoint 2013, versão 4.0.
+Este artigo inclui detalhes sobre o Adobe JCR Connector para Microsoft SharePoint 2010 e Microsoft SharePoint 2013, versão 4.0.
 
 O conector do SharePoint é compatível com as seguintes funcionalidades básicas:
 
 * Leitura de conteúdo e metadados do SharePoint.
 * Confirmar as configurações de segurança do SharePoint para o conteúdo acessado aplicando autenticação e autorização nativas do SharePoint
 * Integração de conteúdo usando o Localizador de conteúdo
-* Uso de componentes do AEM, como o Recurso externo, para exibir imagens e vídeos do SharePoint
+* Uso de componentes do AEM, como o Recurso externo para exibir imagens e vídeos do SharePoint
 * Sincronização do SharePoint com o AEM Assets
 
 Todas as funcionalidades são implementadas usando os serviços Web nativos do SharePoint como interface para o conteúdo e os serviços do SharePoint.
@@ -52,7 +50,7 @@ Para começar a usar o conector, faça o seguinte:
 ## Instalação do conector do SharePoint {#installing-sharepoint-connector}
 
 O conector é um pacote de conteúdo que facilita a instalação. Instale o pacote usando o Gerenciador de pacotes e depois defina o URL do servidor do SharePoint
-e outras opções de configuração. O conteúdo do SharePoint está disponível no repositório AEM.
+e outras opções de configuração. O conteúdo do SharePoint está disponível no repositório do AEM.
 
 ### Requisitos de instalação {#installation-requirements}
 
@@ -72,14 +70,14 @@ O conector é compatível com o seguinte:
 
 * Versões do AEM:
 
-   * AEM 6.4, 6.3
+  * AEM 6.4, 6.3
 
 * Versões do Microsoft SharePoint:
 
-   * Microsoft Office SharePoint Server (MOSS) 2010
-   * Microsoft Office SharePoint Server (MOSS) 2013
+  * Microsoft Office SharePoint Server (MOSS) 2010
+  * Microsoft Office SharePoint Server (MOSS) 2013
 
-* Se você precisar de suporte para implantações personalizadas do conector (OEM, requisitos especiais, métodos de autenticação personalizados), entre em contato com o escritório da Adobe da sua região.
+* Se você precisar de suporte para implantações personalizadas do conector (OEM, requisitos especiais, métodos de autenticação personalizados), entre em contato com o escritório da Adobe em sua região.
 
 >[!NOTE]
 >
@@ -87,14 +85,14 @@ O conector é compatível com o seguinte:
 
 ### Instalação padrão {#standard-installation}
 
-A Distribuição de software é usada para distribuir recursos, exemplos e hot fixes do produto. Para obter detalhes, consulte a [documentação de Distribuição de software](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=pt-BR#software-distribution).
+A Distribuição de software é usada para distribuir recursos, exemplos e hot fixes do produto. Para obter detalhes, consulte a [documentação de Distribuição de software](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html#software-distribution).
 
 
 #### Integração com o AEM {#integrating-with-aem}
 
 Para instalar o pacote de conteúdo do conector.
 
-1. Abra um tíquete de Suporte Adobe para solicitar o pacote de recursos do conector.
+1. Abra um tíquete de Suporte da Adobe para solicitar o pacote de recursos do conector.
 1. Baixe o pacote quando ele estiver disponível e abra o Gerenciador de pacotes para sua instância do AEM.
 1. Clique em **Instalar** na página de descrição do pacote.
 1. Na caixa de diálogo **Instalar Pacote**, clique em **Instalar**.
@@ -158,7 +156,7 @@ Após configurar o conector, verifique o seguinte:
 
 ### Configuração da sincronização do DAM com o servidor do SharePoint {#configuring-dam-sync-with-the-sharepoint-server}
 
-Para sincronizar o SharePoint Assets com AEM, execute as seguintes etapas:
+Para sincronizar o SharePoint Assets com o AEM, execute as seguintes etapas:
 
 1. Navegue até o Console de Gerenciamento OSGi: [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr).
 1. Procure o serviço &quot;Default DAMAssetSynchronization&quot;.
@@ -194,7 +192,7 @@ Especificamente, os seguintes tipos de autenticação estão disponíveis:
 * Argumentos Básicos
 * Baseado em Forms para solicitações
 
-O Conector JCR do AEM para Microsoft SharePoint 2010 e Microsoft SharePoint 2013, versão 4.0. é compatível com autenticação baseada em declarações (sugerida pela Microsoft), que opera nos seguintes modos:
+Conector JCR do AEM para Microsoft SharePoint 2010 e Microsoft SharePoint 2013, versão 4.0. O é compatível com autenticação baseada em declarações (sugerida pela Microsoft), que opera nos seguintes modos:
 
 * **Autenticação básica/NTLM**: primeiro, o conector tenta se conectar usando a autenticação básica. Se não estiver disponível, ele alternará para a autenticação baseada em NTLM.
 * **Autenticação com base em Forms**: o Sharepoint valida os usuários com base nas credenciais digitadas por eles em um formulário de logon (geralmente uma página da Web). O sistema emite um token para solicitações autenticadas que contém uma chave para restabelecer a identidade para solicitações subsequentes.
