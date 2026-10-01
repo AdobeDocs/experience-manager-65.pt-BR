@@ -11,11 +11,9 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '1710'
-ht-degree: 0%
-
+source-wordcount: '1774'
+ht-degree: 2%
 ---
-
 # Introdução aos Relatórios de processos{#getting-started-with-process-reporting}
 
 Os Relatórios de processos oferecem aos usuários do AEM Forms a capacidade de consultar informações sobre processos do AEM Forms que estão atualmente definidos na implementação do AEM Forms. No entanto, o Process Reporting não acessa dados diretamente do repositório do AEM Forms. Os dados são publicados pela primeira vez no repositório Process Reporting de forma agendada (*pelo serviço ProcessDataPublisher &amp; ProcessDataStorage* s). Os relatórios e consultas em Process Reporting são gerados a partir dos dados de Process Reporting publicados no repositório. O Process Reporting é instalado como parte do módulo Forms Workflow.
@@ -26,7 +24,7 @@ Este artigo detalha as etapas para habilitar a publicação de dados do AEM Form
 
 ### Limpar processos não essenciais {#purge-non-essential-processes}
 
-Se você estiver usando o Forms Workflow, o banco de dados do AEM Forms poderá conter uma grande quantidade de dados
+Se você estiver usando o Forms Workflow no momento, o banco de dados do AEM Forms poderá conter uma grande quantidade de dados
 
 Os serviços de publicação do Process Reporting publicam todos os dados do AEM Forms atualmente disponíveis no banco de dados. Isso implica que, se o banco de dados contiver dados herdados nos quais você não deseja executar relatórios e consultas, todos esses dados também serão publicados no repositório, mesmo que não sejam necessários para relatórios. É recomendável limpar esses dados antes de executar os serviços para publicar os dados no repositório do Process Reporting. Isso melhora o desempenho do serviço do editor e do serviço que consulta os dados para geração de relatórios.
 
@@ -101,7 +99,7 @@ Para alterar a programação de publicação, execute as seguintes etapas:
 
 >[!NOTE]
 >
-> É recomendável usar o comando &quot;Ctrl + C&quot; para reiniciar o SDK. Reiniciar o SDK do AEM usando métodos alternativos, por exemplo, parar processos Java, pode levar a inconsistências no ambiente de desenvolvimento do AEM.
+> É recomendável usar o comando &#39;Ctrl + C&#39; para reiniciar o SDK. Reiniciar o AEM SDK usando métodos alternativos, por exemplo, parar processos Java, pode levar a inconsistências no ambiente de desenvolvimento do AEM.
 
 ### serviço ProcessDataStorage {#processdatastorage-service}
 
@@ -177,7 +175,7 @@ O serviço ProcessDataPublisher importa dados do processo do banco de dados do A
 
 ![processdatapublisherservice-1](assets/processdatapublisherservice-1.png)
 
-**Dados do Publish**
+**Publicar dados**
 
 Habilite essa opção para iniciar a publicação dos dados do processo. A opção está desativada por padrão.
 
@@ -207,7 +205,7 @@ Se um serviço do publicador que adquiriu um bloqueio estiver ocioso pelo númer
 
 `Unit`: `Seconds`
 
-**Dados Do Publish De**
+**Publicar Dados De**
 
 O ambiente do AEM Forms contém dados do momento em que o ambiente foi configurado.
 

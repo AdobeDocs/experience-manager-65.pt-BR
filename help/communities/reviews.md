@@ -11,11 +11,9 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1290'
+source-wordcount: '1306'
 ht-degree: 0%
-
 ---
-
 # Uso do Resumo de análises e análises (exibir) {#using-reviews-and-reviews-summary-display}
 
 O componente `Reviews` é composto de [Comentários](comments.md) e [Classificação](rating.md) componentes prontos para uso.
@@ -178,7 +176,7 @@ Na guia **[!UICONTROL Resumo da Revisão]**
 
 * `Review Path`
 
-  Insira ou navegue até a instância colocada do componente `reviews` para que você possa resumir. Por exemplo, se adicionado à Página da Web do [site do Geometrixx](getting-started.md), o caminho será:
+  Insira ou navegue até a instância colocada do componente `reviews` para que você possa resumir, por exemplo, se adicionado à Página da Web do [site do Geometrixx Engage](getting-started.md), o caminho será:
 
   `/content/sites/engage/en/page/jcr:content/content/primary/reviews`
 
@@ -224,7 +222,7 @@ Quando o usuário conectado tem privilégios de moderador ou administrador, ele 
 
 Quando o visitante do site está conectado, dependendo da configuração, ele pode:
 
-* Post uma nova revisão
+* Publicar uma nova revisão
 * Editar sua própria revisão
 * Excluir sua própria revisão
 * Sinalizar comentários de outras pessoas

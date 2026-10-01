@@ -9,11 +9,9 @@ feature: Adaptive Forms,Foundation Components
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '842'
+source-wordcount: '854'
 ht-degree: 0%
-
 ---
-
 # Apresentação do site de referência do We.Gov para a FOIA {#we-gov-reference-site-foia-walkthrough}
 
 ## Cenário do site de referência da Lei de liberdade de informações {#reference-site-freedom-of-information-act-scenario}
@@ -36,7 +34,7 @@ O cenário envolve os seguintes perfis:
 
 ## Sarah inicia pedido de informações no âmbito da Foia {#sarah-initiates-request-for-information-under-foia}
 
-De acordo com a Lei de Liberdade de Informação, Sarah solicita uma cópia dos registros de casos da Administração para Crianças e Famílias para o período de 2013 a 2016. Sarah apresenta este pedido ao Department of Justice - Office of Information Policy e indica também que pode pagar até USD 100 para as despesas de impressão e de correio.
+De acordo com a Lei de Liberdade de Informação, Sarah solicita uma cópia dos registros de casos da Administração para Crianças e Famílias para o período de 2013 a 2016. Sarah apresenta este pedido ao Departamento de Justiça - Escritório de Política de Informação e também indica que ela é susceptível de pagar até USD 100 para os custos de impressão e postagem.
 
 ### Como funciona {#how-it-works}
 
@@ -50,7 +48,7 @@ Sarah clica em **Aplicar** e na página Formulário de solicitação da Lei de L
 
 * **Agência:** Sarah especifica a agência para a qual a solicitação foi endereçada como Departamento de Justiça - Escritório de Políticas de Informações.
 
-* **Pagará Até**: Sarah especifica que está preparada para pagar até USD 100 por despesas de impressão e postagem.
+* **Pagará Até**: Sarah especifica que está preparada para pagar até USD 100 para despesas de impressão e postagem.
 * **Descreva a solicitação em detalhes**: Sarah especifica &quot;Solicitando cópia dos logs de casos da Administração para Crianças e Famílias para os anos fiscais de 2013 a 2016&quot;.
 
 ![Solicitando cópia dos logs de caso da Administração para Crianças e Famílias para os anos fiscais de 2013 a 2016](assets/sarahfiosform.png)
@@ -65,7 +63,7 @@ A qualquer momento, Sarah pode selecionar **Salvar** para salvar um rascunho do 
 
 ## John Jacobs recebe e aprova o aplicativo {#john-jacobs-receives-and-approves-the-application}
 
-John Jacobs recebe a solicitação e a encaminha à pessoa certa. A Caixa de entrada AEM permite que John veja todos os aplicativos enviados em um único local.
+John Jacobs recebe a solicitação e a encaminha à pessoa certa. A Caixa de entrada do AEM permite que John veja todos os aplicativos enviados em um único local.
 
 ### Como funciona {#how-it-works-1}
 
@@ -73,7 +71,7 @@ Quando Sarah preenche e envia o aplicativo FOIA, um registro do aplicativo é en
 
 ### Veja você mesmo {#see-it-yourself-1}
 
-Você pode acessar a Caixa de Entrada do AEM em https://&lt;***hostname***>:&lt;***PublishPort***>/content/we-finance/global/en/login.html?resource=/aem/inbox.html. Faça logon na Caixa de entrada do AEM usando jacobs/password como nome de usuário/senha de John Jacobs e consulte o aplicativo FOIA. Para obter informações sobre como usar a Caixa de Entrada do AEM para tarefas de fluxo de trabalho centradas em formulários, consulte [Gerenciar aplicativos e tarefas do Forms na Caixa de Entrada do AEM](/help/forms/using/manage-applications-inbox.md).
+Você pode acessar a Caixa de Entrada do AEM em https://&lt;***hostname***>:&lt;***PublishPort***>/content/we-finance/global/en/login.html?resource=/aem/inbox.html. Faça logon na Caixa de entrada do AEM, usando jacobs/password como nome de usuário/senha de John Jacobs, e consulte o aplicativo FOIA. Para obter informações sobre como usar a Caixa de Entrada do AEM para tarefas de fluxo de trabalho centradas em formulários, consulte [Gerenciar aplicativos e tarefas do Forms na Caixa de Entrada do AEM](/help/forms/using/manage-applications-inbox.md).
 
 ![johnjacobs](assets/johnjacobs.png)
 
@@ -95,11 +93,11 @@ Depois que John Jacobs preenche as informações necessárias e aprova o pedido 
 
 ### Como funciona {#how-it-works-2}
 
-Quando John Jacobs aprova o pedido FOIA, um PDF ou Documento de registro do aplicativo é criado e enviado para a caixa de entrada de Gloria Rios. Gloria pode visualizar a solicitação enviada e aprová-la ou rejeitá-la.
+Quando John Jacobs aprova a solicitação FOIA, um PDF ou Documento de registro do aplicativo é criado e enviado para a caixa de entrada de Gloria Rios. Gloria pode visualizar a solicitação enviada e aprová-la ou rejeitá-la.
 
 ### Veja por si mesmo {#see-for-yourself}
 
-Você pode acessar a Caixa de Entrada do AEM em https://&lt;***hostname***>:&lt;***PublishPort***>/content/we-finance/global/en/login.html?resource=/aem/inbox.html. Faça login na Caixa de entrada AEM usando grios/password como o nome de usuário/senha de Gloria Rios e veja a solicitação de FOIS.
+Você pode acessar a Caixa de Entrada do AEM em https://&lt;***hostname***>:&lt;***PublishPort***>/content/we-finance/global/en/login.html?resource=/aem/inbox.html. Faça logon na Caixa de entrada do AEM usando grios/password como nome de usuário/senha de Gloria Rios e veja a solicitação de FOIS.
 
 Gloria abre o pedido e examina os detalhes do pedido da Foia. Depois de rever os detalhes do pedido e verificar a viabilidade de fornecer os documentos requeridos, Gloria aprova o pedido.
 

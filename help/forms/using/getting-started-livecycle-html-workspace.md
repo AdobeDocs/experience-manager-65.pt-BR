@@ -11,11 +11,9 @@ feature: Adaptive Forms
 role: Admin, User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '993'
+source-wordcount: '1010'
 ht-degree: 0%
-
 ---
-
 # Introdução ao AEM Forms Workspace {#getting-started-with-aem-forms-workspace}
 
 Você pode usar o espaço de trabalho do AEM Forms para executar as seguintes tarefas:
@@ -40,11 +38,11 @@ Itens diferentes na interface do usuário do AEM Forms Workspace são exibidos d
 
 ## Uso do espaço de trabalho do AEM Forms com leitores de tela {#using-html-workspace-with-screen-readers}
 
-O espaço de trabalho do AEM Forms é um aplicativo HTML baseado na web e é compatível com leitores de tela. É possível navegar pela interface do espaço de trabalho do AEM Forms usando o teclado.
+O espaço de trabalho do AEM Forms é um aplicativo HTML baseado na Web e é compatível com leitores de tela. É possível navegar pela interface do espaço de trabalho do AEM Forms usando o teclado.
 
 Para usar o espaço de trabalho do AEM Forms com um leitor de tela, lembre-se destes pontos:
 
-* O espaço de trabalho do AEM Forms é um aplicativo HTML padrão compatível com qualquer ferramenta de leitor de tela padrão. Não é necessário nenhum script específico para executar uma ferramenta de leitor de tela.
+* O AEM Forms workspace é um aplicativo padrão do HTML que está em conformidade com qualquer ferramenta de leitor de tela padrão. Não é necessário nenhum script específico para executar uma ferramenta de leitor de tela.
 * Toda a navegação no espaço de trabalho do AEM Forms é feita por meio de tags de âncora, que podem ser facilmente acessadas por meio de guias.
 * O Forms pode levar alguns segundos para carregar. O leitor de tela não informa de forma audível que o formulário está sendo carregado e que você deve aguardar.
 
@@ -56,7 +54,7 @@ Ao navegar na área de trabalho do AEM Forms usando um teclado, a navegação es
 * A Ajuda da área de trabalho do AEM Forms é aberta em uma janela separada do navegador. Depois de exibir a Ajuda, o foco retorna à janela do navegador que contém o espaço de trabalho do AEM Forms. O menu Ajuda permanece focalizado quando o foco retorna.
 * Ao abrir um formulário para iniciar um processo ou concluir uma tarefa, o foco permanece com o elemento existente e não é alterado para o formulário. Use tab para mover o foco para o formulário e navegue por ele. A ordem de tabulação no formulário depende do tipo e do design do formulário.
 
-  Para PDF forms, ao passar por tabulação até o final do formulário ou enviá-lo, o foco do cursor salta para a barra de endereço do navegador. Siga os menus novamente (mas não o formulário inteiro) para acessar os botões de ação do formulário, como Salvar como rascunho e Concluído. Se o formulário ainda estiver aberto, você também poderá passar pelos botões e voltar ao formulário.
+  Para o PDF forms, quando você navega até o final do formulário ou o envia, o foco do cursor salta para a barra de endereço do navegador. Siga os menus novamente (mas não o formulário inteiro) para acessar os botões de ação do formulário, como Salvar como rascunho e Concluído. Se o formulário ainda estiver aberto, você também poderá passar pelos botões e voltar ao formulário.
 
 ## Gerenciamento de preferências {#managing-preferences}
 

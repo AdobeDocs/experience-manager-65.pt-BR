@@ -1,9 +1,13 @@
 ---
 title: Criação de uma página do portal de formulários
+
 description: O Forms Portal equipe os desenvolvedores da Web com componentes para criar e personalizar um portal de formulários em sites criados usando o Adobe Experience Manager (AEM).
+
+
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
+
 docset: aem65
 feature: Forms Portal
 exl-id: 22d7c24e-7a77-4324-afdf-74c1fbf15773
@@ -11,11 +15,9 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '1666'
-ht-degree: 2%
-
+source-wordcount: '1702'
+ht-degree: 4%
 ---
-
 # Criação de uma página do portal de formulários{#creating-a-forms-portal-page}
 
 | Versão | Link do artigo |
@@ -23,7 +25,7 @@ ht-degree: 2%
 | AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-forms-portal.html?lang=pt-BR) |
 | AEM 6.5 | Este artigo |
 
-Os componentes do portal do Forms equipam os desenvolvedores da Web com componentes para criar e personalizar um portal de formulários em sites criados usando o Adobe Experience Manager (AEM). Para obter uma visão geral rápida do portal de formulários, consulte [Introdução à publicação de formulários em um portal](../../forms/using/introduction-publishing-forms.md).
+Os componentes do portal do Forms fornecem aos desenvolvedores da Web componentes para criar e personalizar um portal de formulários em sites criados usando o Adobe Experience Manager (AEM). Para obter uma visão geral rápida do portal de formulários, consulte [Introdução à publicação de formulários em um portal](../../forms/using/introduction-publishing-forms.md).
 
 ## Pré-requisitos {#prerequisites}
 
@@ -33,7 +35,7 @@ Os componentes do portal do Forms não estão disponíveis para uso por padrão.
 
 **Predicados De Serviços De Documento** Inclui Predicado De Data, Predicado De Texto Completo, Predicado De Propriedades E Componentes De Predicado De Marcas. Esses componentes são usados para configurar a pesquisa no componente Pesquisa e Lister.
 
-Uma vez ativadas em uma página de sites AEM, essas categorias de componentes ficam disponíveis para uso no navegador de componentes.
+Quando ativadas em uma página do AEM Sites, essas categorias de componentes ficam disponíveis para uso no navegador de componentes.
 
 ![Componentes do portal do AEM Forms no navegador de componentes](assets/component-categories.png)
 
@@ -88,12 +90,12 @@ A caixa de diálogo **Editar** inclui várias guias que fornecem opções de con
   </tr>
   <tr>
    <td> </td>
-   <td>Desativar pesquisa avançada</td>
+   <td>Desativar Pesquisa avançada</td>
    <td>Quando ativado, oculta o ícone de pesquisa avançada.</td>
   </tr>
   <tr>
    <td> </td>
-   <td>Desativar pesquisa de texto</td>
+   <td>Desativar Pesquisa de texto</td>
    <td>Quando ativado, oculta a barra de pesquisa de texto completo.</td>
   </tr>
   <tr>
@@ -117,14 +119,14 @@ A caixa de diálogo **Editar** inclui várias guias que fornecem opções de con
    <td><p>Substitui a palavra <strong>de</strong> pelo texto especificado (Página 1 <strong>de </strong>51). O valor padrão é <strong>de</strong>.</p> <p>Por exemplo, se você especificar <strong>de </strong>neste campo, o texto será alterado para Página 1 <strong>de </strong>51.</p> </td>
   </tr>
   <tr>
-   <td><span class="uicontrol"><strong>Link do formulário</strong></code></td>
+   <td><span class="uicontrol"><strong>Formar link</strong></code></td>
    <td>Tipo de renderização</td>
-   <td>Controla a listagem de formulários com base no tipo de renderização especificado. As opções disponíveis são PDF e HTML. Por exemplo, se você selecionar apenas HTML como tipo de renderização, os PDF forms serão filtrados.</td>
+   <td>Controla a listagem de formulários com base no tipo de renderização especificado. As opções disponíveis são PDF e HTML. Por exemplo, se você selecionar apenas HTML como tipo de renderização, as PDF forms serão filtradas.</td>
   </tr>
   <tr>
    <td> </td>
-   <td>Perfil do HTML</td>
-   <td>Configura o perfil de HTML a ser usado para renderização. Todos os perfis disponíveis estão listados na lista suspensa.</td>
+   <td>Perfil HTML</td>
+   <td>Configura o perfil do HTML a ser usado para renderização. Todos os perfis disponíveis estão listados na lista suspensa.</td>
   </tr>
   <tr>
    <td> </td>
@@ -138,13 +140,13 @@ A caixa de diálogo **Editar** inclui várias guias que fornecem opções de con
   </tr>
   <tr>
    <td> </td>
-   <td>Dica de ferramenta de Ação de Renderização do HTML</td>
+   <td>Dica de ferramenta Ação de renderização do HTML</td>
    <td>Configura o texto para a dica de ferramenta, que é exibida ao passar o ponteiro sobre <img height="16" src="assets/aem6forms_panel-html.png" width="13" /> (o ícone HTML5).</td>
   </tr>
   <tr>
    <td> </td>
-   <td>Dica de ferramenta de Ação de Renderização do PDF</td>
-   <td>Configura o texto para a dica de ferramenta, que é exibida ao passar o ponteiro sobre <img height="16" src="assets/aem6forms_panel-pdf.png" width="14" /> (o ícone PDF).</td>
+   <td>Dica de ferramenta Ação de renderização do PDF</td>
+   <td>Configura o texto da dica de ferramenta, que é exibida ao passar o ponteiro sobre <img height="16" src="assets/aem6forms_panel-pdf.png" width="14" /> (o ícone PDF).</td>
   </tr>
   <tr>
    <td><span class="uicontrol"><strong>Estilo</strong></code></td>
@@ -153,7 +155,7 @@ A caixa de diálogo **Editar** inclui várias guias que fornecem opções de con
   </tr>
   <tr>
    <td> </td>
-   <td>Caminho de estilo personalizado</td>
+   <td>Personalizar estilo do caminho</td>
    <td>Se você selecionou Personalizado como o Tipo de estilo, procure para especificar o caminho para o CSS personalizado, caso contrário, selecione Padrão.</td>
   </tr>
  </tbody>

@@ -11,11 +11,9 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '463'
 ht-degree: 1%
-
 ---
-
 # Recurso de pesquisa {#search-feature}
 
 O recurso de pesquisa funciona com vários outros recursos, como fóruns, para fornecer a capacidade de pesquisar conteúdo.
@@ -53,7 +51,7 @@ Na guia **[!UICONTROL Configurações de pesquisa]**, especifique quais caminhos
 * **[!UICONTROL Caminhos de Pesquisa]**
 Ao adicionar caminhos de pesquisa usando o botão Adicionar item, a pesquisa de conteúdo é limitada. Como exemplo, para limitar a pesquisa a um fórum específico, selecione um componente do fórum que será colocado em uma página:
 
-   * `/content/community-components/en/forum/jcr:content/content/forum`
+  * `/content/community-components/en/forum/jcr:content/content/forum`
 
 * **[!UICONTROL Página de resultado]**
 Os resultados aparecerão em uma página separada especificada usando o navegador para selecionar uma página contendo o componente `Search Results`.

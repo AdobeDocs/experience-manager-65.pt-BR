@@ -7,11 +7,9 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '1314'
+source-wordcount: '1419'
 ht-degree: 9%
-
 ---
-
 # Tutorial: Criar um formulário adaptável {#do-not-publish-tutorial-create-an-adaptive-form}
 
 ![02-criar-forma-adaptável-imagem-principal](assets/02-create-adaptive-form-main-image.png)
@@ -61,7 +59,7 @@ O AEM [!DNL Forms] fornece muitos componentes para exibir informações em um fo
 
    É possível selecionar Get file para baixar o logotipo usado neste artigo, caso não tenha um.
 
-[Obter arquivo](assets/logo.png)
+   [Obter arquivo](assets/logo.png)
 
 1. Arraste o componente **[!UICONTROL Rodapé]** de ![treeexpandall](assets/treeexpandall.png) para o formulário adaptável. Nesse estágio, o formulário tem a seguinte aparência:
 
@@ -71,8 +69,8 @@ O AEM [!DNL Forms] fornece muitos componentes para exibir informações em um fo
 
 Os componentes são blocos fundamentais de um formulário adaptável. O AEM [!DNL Forms] fornece muitos componentes para capturar e exibir informações em um formulário adaptável. Você pode arrastar os componentes de ![treeexpandall](assets/treeexpandall.png) para um formulário. Para saber mais sobre os componentes disponíveis e a funcionalidade correspondente, consulte [Introdução à criação de formulários adaptáveis](/help/forms/using/introduction-forms-authoring.md).
 
-1. Arraste o **[!UICONTROL componente de Caixa numérica]** para o formulário adaptável. Coloque-o antes do componente de rodapé. Abra as propriedades do componente, altere o **[!UICONTROL Título]** do componente para **`Customer ID`**, altere o **[!UICONTROL Nome do Elemento]** para **`customer_ID`**, habilite a opção **[!UICONTROL Campo Obrigatório]**, habilite a opção **[!UICONTROL Usar Tipo de Entrada de Número HTML5]** e selecione ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
-1. Arraste três componentes Caixa de texto para o formulário adaptável. Coloque-os antes do componente de rodapé. Defina as seguintes propriedades para essas caixas de texto.:
+1. Arraste o **[!UICONTROL componente de Caixa numérica]** para o formulário adaptável. Coloque-o antes do componente de rodapé. Abra as propriedades do componente, altere o **[!UICONTROL Título]** do componente para **`Customer ID`**, altere o **[!UICONTROL Nome do Elemento]** para **`customer_ID`**, habilite a opção **[!UICONTROL Campo Obrigatório]**, habilite a opção **[!UICONTROL Usar Tipo de Entrada Numérica do HTML5]** e selecione ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Arraste três componentes Caixa de texto para o formulário adaptável. Coloque-os antes do componente de rodapé. Defina as seguintes propriedades para essas caixas de texto:
 
    <table> 
     <tbody> 
@@ -174,7 +172,7 @@ Usando as etapas a seguir, você pode configurar a ação de envio de email e a 
    | Modelo de e-mail | Olá `${customer_Name}`, O seguinte endereço foi adicionado como o endereço de entrega para sua conta: <br>`${customer_Name}`, `${customer_Shipping_Address}`, `${customer_State}`, `${customer_ZIPCode}`<br> Atenciosamente, We.Retail |
    | Incluir anexos | Habilitado |
 
-   Seu formulário está pronto. Agora, você pode visualizar o formulário e testar a funcionalidade. Se você tiver usado o nome mencionado no tutorial e acessado o formulário na máquina que executa o servidor AEM [!DNL Forms], o formulário estará disponível em [http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html](http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html).
+   Seu formulário está pronto. Agora, você pode visualizar o formulário e testar a funcionalidade. Se você tiver usado o nome mencionado no tutorial e acessado o formulário na máquina que executa o servidor do AEM [!DNL Forms], o formulário estará disponível em [http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html](http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html).
 
 ## Etapa 5: Visualizar e enviar o formulário adaptável {#step-preview-and-submit-the-adaptive-form}
 

@@ -7,11 +7,9 @@ feature: Commerce Integration Framework
 role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
-source-wordcount: '428'
+source-wordcount: '433'
 ht-degree: 1%
-
 ---
-
 # Cockpit do produto {#product-cockpit}
 
 ## Visão geral {#overview}
@@ -38,7 +36,7 @@ A habilitação de recursos de catálogo em etapas requer autenticação. Consul
 
 A maneira mais fácil de acessar o Cockpit do produto é por meio do menu &quot;Commerce&quot; no menu principal do AEM. Também é possível usar o Omnisearch (pesquisa para Commerce) ou abrir o `https://<yourAEMInstance>/commerce.html`.
 
-![menu AEM](/help/commerce/cif/assets/aem-menu.png)
+![Menu AEM](/help/commerce/cif/assets/aem-menu.png)
 
 ## Procurar Catálogos de produtos {#browsing-product-catalogs}
 
@@ -56,7 +54,7 @@ Clicar em um produto carrega variações de produto, se disponíveis.
 
 >[!NOTE]
 >
->Os dados do catálogo de produtos no AEM são dados recuperados em tempo real pelo endpoint de comércio configurado. Nenhum dado de catálogo de produtos é armazenado no AEM.
+>Os dados do catálogo de produtos no AEM são dados recuperados em tempo real por meio do endpoint de comércio configurado. Nenhum dado de catálogo de produtos é armazenado no AEM.
 
 ## Pesquisando Catálogos de Produtos {#searching-product-catalog}
 
@@ -82,6 +80,6 @@ As guias geral e variante mostram propriedades de comércio predefinidas que vê
 
 ### Guias de conteúdo do AEM {#content-tabs}
 
-Essas guias, agrupadas por tipos de conteúdo AEM (Fragmentos de experiência, Fragmentos de conteúdo, Assets associado), mostram conteúdo AEM associado ao objeto de comércio. A ação &quot;Exibir detalhes&quot; abre uma nova guia do navegador com o conteúdo selecionado.
+Essas guias, agrupadas por tipos de conteúdo do AEM (Fragmentos de experiência, Fragmentos de conteúdo, Assets associado), mostram o conteúdo do AEM associado ao objeto de comércio. A ação &quot;Exibir detalhes&quot; abre uma nova guia do navegador com o conteúdo selecionado.
 
 ![propriedades do conteúdo](/help/commerce/cif/assets/content-properties.png)

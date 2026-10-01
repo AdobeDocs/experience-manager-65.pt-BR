@@ -12,16 +12,14 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '2215'
+source-wordcount: '2253'
 ht-degree: 2%
-
 ---
-
 # Funções da comunidade{#community-functions}
 
 O tipo de recursos esperados de uma experiência da comunidade são bem conhecidos. Os recursos da comunidade estão disponíveis como funções da comunidade. Basicamente, elas são uma ou mais páginas pré-conectadas para implementar um recurso da comunidade que requer mais do que simplesmente adicionar um componente a uma página no modo de criação. São os blocos de construção usados para definir a estrutura de um [modelo de site de comunidade](/help/communities/sites.md) a partir do qual os sites de comunidade são [criados](/help/communities/sites-console.md).
 
-Após criar um site da comunidade, é possível adicionar conteúdo às páginas resultantes usando o [modo de criação AEM](/help/sites-authoring/editing-content.md) padrão. Várias funções da comunidade estão disponíveis, conforme visto no console de funções da comunidade.
+Após criar um site da comunidade, é possível adicionar conteúdo às páginas resultantes usando o [modo de criação padrão do AEM](/help/sites-authoring/editing-content.md). Várias funções da comunidade estão disponíveis, conforme visto no console de funções da comunidade.
 
 >[!NOTE]
 >
@@ -37,7 +35,7 @@ Para acessar o console de funções de comunidade no ambiente de criação:
 
 ## Funções pré-criadas {#pre-built-functions}
 
-Veja a seguir uma breve descrição das funções fornecidas com o AEM Communities. Cada função inclui uma ou mais páginas AEM contendo componentes Communities agrupados em um recurso que é facilmente incorporado em um [modelo de site da comunidade](/help/communities/sites.md).
+Veja a seguir uma breve descrição das funções fornecidas com o AEM Communities. Cada função inclui uma ou mais páginas do AEM contendo componentes das Comunidades agrupados em um recurso que é facilmente incorporado em um [modelo de site da comunidade](/help/communities/sites.md).
 
 Um modelo de site da comunidade fornece a estrutura de um site da comunidade, incluindo logon, perfis de usuário, notificações, mensagens, menu do site, pesquisa, temas e recursos de marca.
 
@@ -226,10 +224,10 @@ Quando adicionada a um modelo, a seguinte caixa de diálogo é aberta:
 
   Se selecionado, o fórum permitirá que apenas membros privilegiados postem tópicos ao permitir a seleção de um [grupo de segurança de membros privilegiados](/help/communities/users.md#privileged-members-group). Se não for selecionada, todos os membros da comunidade poderão publicar. O padrão está desmarcado.
 
-* **Permitir criação de Publish**
+* **Permitir criação de publicação**
 
   Se essa opção for selecionada, os membros autorizados da comunidade poderão criar um grupo no ambiente de publicação. Se desmarcado, novos grupos (subcomunidades) só poderão ser criados no ambiente de criação do console Grupos de sites de comunidades.
-O padrão está selecionado.
+  O padrão está selecionado.
 
 ### Função de ideação {#ideation-function}
 
@@ -272,17 +270,17 @@ Quando adicionada a um modelo, a seguinte caixa de diálogo é aberta, especific
 * **Exibir medalha**
 
   Se selecionada, uma coluna para ícones de selo será incluída no quadro de classificação.
-O padrão está desmarcado.
+  O padrão está desmarcado.
 
 * **Exibir nome da medalha**
 
   Se selecionada, uma coluna para o nome da medalha é incluída no quadro de classificação.
-O padrão está desmarcado.
+  O padrão está desmarcado.
 
 * **Exibir Avatar**
 
   Se selecionada, a imagem do avatar do membro será incluída no quadro de classificação, ao lado do link de nome para o perfil do membro.
-O padrão está desmarcado.
+  O padrão está desmarcado.
 
 ### Função da página {#page-function}
 
@@ -322,7 +320,7 @@ Quando adicionada a um modelo, a configuração permite a restrição a membros 
 
 ## Criar função da comunidade {#create-community-function}
 
-A capacidade de criar uma função da comunidade é alcançada ao selecionar o ícone `Create Community Function` localizado na parte superior do console Funções da comunidade. Várias funções baseadas no mesmo blueprint AEM podem ser criadas e personalizadas de forma exclusiva ao abrir no modo de edição do autor.
+A capacidade de criar uma função da comunidade é alcançada ao selecionar o ícone `Create Community Function` localizado na parte superior do console Funções da comunidade. Várias funções baseadas no mesmo Blueprint do AEM podem ser criadas e personalizadas de forma exclusiva ao abrir no modo de edição do autor.
 
 ![criar-função-comunidade](assets/create-community-function.png)
 
@@ -356,7 +354,7 @@ Como a função da comunidade é implementada como uma [live copy](/help/sites-a
 
 Consulte também [Gerenciador de vários sites](/help/sites-administering/msm.md).
 
-### Miniatura  {#thumbnail}
+### Miniatura {#thumbnail}
 
 ![miniatura-função](assets/funtion-thumbnail.png)
 
@@ -370,7 +368,7 @@ Selecione o ícone `Open Community Function` para entrar no modo de edição do 
 
 ### Configurar componentes {#configuring-components}
 
-Uma função da comunidade é implementada como uma Live Copy de um Blueprint AEM, cujos detalhes estão documentados em [Gerenciador de vários sites](/help/sites-administering/msm.md).
+Uma função da comunidade é implementada como uma Live Copy de um Blueprint do AEM, cujos detalhes estão documentados em [Gerenciador de vários sites](/help/sites-administering/msm.md).
 
 É possível não apenas criar o conteúdo da página, mas configurar os componentes.
 

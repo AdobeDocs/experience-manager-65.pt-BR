@@ -1,20 +1,23 @@
 ---
 title: Dicionários de dados
+
 description: O Dicionário de dados no Gerenciamento de correspondência permite integrar dados de back-end a cartas como entradas para uso na correspondência com o cliente.
+
+
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
+
 docset: aem65
+
 feature: Correspondence Management
 exl-id: aaed75e6-8849-46a8-b986-896ad729adda
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '3842'
-ht-degree: 0%
-
+source-wordcount: '3826'
+ht-degree: 1%
 ---
-
 # Dicionários de dados{#data-dictionary}
 
 ## Introdução {#introduction}
@@ -25,7 +28,7 @@ Um dicionário de dados é uma representação independente de metadados que des
 
 O dicionário de dados é composto de elementos de três tipos: Simples, Composto e Elementos de coleção. DDEs simples são elementos primitivos, como sequências, números, datas e valores booleanos que armazenam informações como o nome de uma cidade. Um DDE composto contém outros DDEs, que podem ser do tipo primitivo, composto ou coleção. Por exemplo, um endereço, que consiste em um endereço de rua, cidade, província, país e código postal. Uma coleção é uma lista de DDEs simples ou compostos semelhantes. Por exemplo, um cliente com vários locais ou endereços de cobrança e entrega diferentes.
 
-O Gerenciamento de correspondência usa os dados específicos do back-end, cliente ou destinatário armazenados de acordo com a estrutura do dicionário de dados para criar correspondência destinada a clientes diferentes. Por exemplo, um documento pode ser criado com nomes amigáveis, como &quot;Prezado(a) {Nome}&quot;,&quot;Sr. {Last Name}&quot;.
+O Gerenciamento de correspondência usa os dados específicos do back-end, cliente ou destinatário armazenados de acordo com a estrutura do dicionário de dados para criar correspondência destinada a clientes diferentes. Por exemplo, um documento pode ser criado com nomes amigáveis, como &quot;Prezado(a) {First Name}&quot;, &quot;Sr. {Last Name}&quot;.
 
 Normalmente, os usuários empresariais não exigem conhecimento de representações de metadados, como XSD (esquema XML) e classes Java. No entanto, geralmente exigem acesso a essas estruturas de dados e atributos para criar soluções.
 
@@ -199,7 +202,7 @@ Ao editar ou exibir um dicionário de dados, você pode ver quais elementos do d
 1. Depois de fazer as entradas de dados, você pode usar esse arquivo XML ao visualizar uma correspondência com dados de teste.
 
    Você pode adicionar esses dados de teste com DD (selecione DD e selecione Fazer upload dos dados de teste e fazer upload deste arquivo xml)
-Assim, depois disso, quando você visualiza a carta normalmente (não personalizada), esses dados XML são usados na carta. Você também pode selecionar Personalizado e fazer upload desse XML.
+   Assim, depois disso, quando você visualiza a carta normalmente (não personalizada), esses dados XML são usados na carta. Você também pode selecionar Personalizado e fazer upload desse XML.
 
 ## Amostras {#samples}
 
@@ -331,7 +334,7 @@ A tabela a seguir detalha os atributos comuns associados a um DDE:
    <td>O sinalizador indica que a origem dos dados da instância correspondentes ao dicionário de dados deve conter o valor desse DDE específico.</td>
   </tr>
   <tr>
-   <td>Vínculo</td>
+   <td>Vinculação</td>
    <td>BindingElement</td>
    <td>A vinculação XML ou Java do elemento.</td>
   </tr>
@@ -362,7 +365,7 @@ A exportação de um XSD requer um mapeamento de dados específico, que é detal
   </tr>
   <tr>
    <td><p>xs:element onde maxOccurs &gt; 1<br /> </p> </td>
-   <td>DDE do tipo - COLLECTION-<br /> Um nó DDE é criado ao lado do DDE COLLECTION que captura informações do nó COLLECTION pai. O mesmo é criado para ambas as coleções de tipos de dados simples/composto. Sempre que você tem uma COLEÇÃO do tipo composto, a árvore do Dicionário de dados captura os campos constituintes nos filhos do DDE criado para capturar informações do tipo.<br /> - DDE (COLEÇÃO)<br /> - DDE(COMPOSITE para informações do tipo)<br /> - campo DDE(STRING)1<br /> - campo DDE(STRING)2<br /> <br /> </p> </td>
+   <td>DDE do tipo - COLLECTION-<br /> Um nó DDE é criado ao lado do DDE COLLECTION que captura informações do nó COLLECTION pai. O mesmo é criado para ambas as coleções de tipos de dados simples/composto. Sempre que você tem uma COLEÇÃO do tipo composto, a árvore do Dicionário de Dados captura os campos constituintes nos filhos do DDE criado para capturar informações do tipo.<br /> - DDE (COLEÇÃO)<br /> - DDE(COMPOSITE para informações do tipo)<br /> - campo DDE(STRING)1<br /> - campo DDE(STRING)2<br /> <br /> </p> </td>
    <td>java.util.List<br /> </td>
   </tr>
   <tr>

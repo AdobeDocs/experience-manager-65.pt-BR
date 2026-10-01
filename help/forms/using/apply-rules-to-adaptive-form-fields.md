@@ -9,11 +9,9 @@ feature: Adaptive Forms
 role: Admin, User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '1115'
+source-wordcount: '1176'
 ht-degree: 0%
-
 ---
-
 # Tutorial: aplicar regras a campos de formulário adaptáveis {#tutorial-apply-rules-to-adaptive-form-fields}
 
 ![06-aplicar-regras-ao-formulário-adaptável_principal](assets/06-apply-rules-to-adaptive-form_main.png)
@@ -32,7 +30,7 @@ Ao final do tutorial, você aprenderá a criar regras para:
 * Chamar um serviço de modelo de dados de formulário para adicionar dados ao banco de dados
 * Executar uma verificação de validações e exibir mensagens de erro
 
-As imagens de GIF interativas no final de cada seção do tutorial ajudam a aprender e validar a funcionalidade do formulário que está sendo criado, dinamicamente.
+As imagens interativas do GIF no final de cada seção do tutorial o ajudam a aprender e validar a funcionalidade do formulário que está sendo criado dinamicamente.
 
 ## Etapa 1: Recuperar um registro de cliente do banco de dados {#retrieve-customer-record}
 

@@ -1,21 +1,24 @@
 ---
 title: Considerações gerais de segurança para o AEM Forms no JEE
+
 description: Saiba como se preparar para fortalecer seu AEM Forms no ambiente JEE.
+
+
 content-type: reference
 topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
+
 docset: aem65
+
 role: Admin,User
 exl-id: 3f150dd5-f486-4f16-9de9-035cde53b034
 solution: Experience Manager, Experience Manager Forms
 feature: Document Security,Adaptive Forms
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1030'
+source-wordcount: '1135'
 ht-degree: 1%
-
 ---
-
 # Considerações gerais de segurança para o AEM Forms no JEE{#general-security-considerations-for-aem-forms-on-jee}
 
 Este artigo fornece informações introdutórias que ajudam você a se preparar para fortalecer seu ambiente do AEM Forms. Inclui informações de pré-requisitos sobre o AEM Forms no JEE, sistema operacional, servidor de aplicativos e segurança de banco de dados. Examine essas informações antes de continuar a bloquear o ambiente.
@@ -223,7 +226,7 @@ O JBoss® Application Server usa 8080 como a porta HTTP padrão. O JBoss® tamb�
 
 >[!NOTE]
 >
-> É recomendável usar o comando &quot;Ctrl + C&quot; para reiniciar o SDK. Reiniciar o SDK do AEM usando métodos alternativos, por exemplo, parar processos Java, pode levar a inconsistências no ambiente de desenvolvimento do AEM.
+> É recomendável usar o comando &#39;Ctrl + C&#39; para reiniciar o SDK. Reiniciar o AEM SDK usando métodos alternativos, por exemplo, parar processos Java, pode levar a inconsistências no ambiente de desenvolvimento do AEM.
 
 ## Considerações de segurança do AEM Forms no JEE {#aem-forms-on-jee-security-considerations}
 

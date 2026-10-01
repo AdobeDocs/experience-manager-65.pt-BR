@@ -12,11 +12,9 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '4024'
+source-wordcount: '4125'
 ht-degree: 0%
-
 ---
-
 # Trabalhar com listas de tarefas{#working-with-to-do-lists}
 
 Ao exibir suas listas de tarefas pendentes, você pode ver tarefas de um processo de negócios atribuídas a você, a qualquer grupo ao qual você pertença ou que sejam tarefas compartilhadas de outros usuários. É possível abrir, trabalhar e concluir as tarefas conforme necessário, como aprovar ou rejeitar uma solicitação ou adicionar mais informações. Após concluir uma tarefa, ela será enviada para a próxima pessoa no processo de negócios,
@@ -45,10 +43,10 @@ Ao abrir e trabalhar em uma tarefa, as ferramentas que estão disponíveis para 
 
 * **Análise de vários usuários**: você recebe uma tarefa ao mesmo tempo em que outros usuários a recebem. Você e os outros usuários devem fornecer informações ou revisar o conteúdo, ou ambos. As seguintes ferramentas podem estar disponíveis com este tipo de tarefa:
 
-   * Exibir as instruções da tarefa
-   * Visualização do status de conclusão de todos os usuários atribuídos à tarefa
-   * Exibir os comentários de todos os usuários atribuídos à tarefa
-   * Adicionar comentários à tarefa
+  * Exibir as instruções da tarefa
+  * Visualização do status de conclusão de todos os usuários atribuídos à tarefa
+  * Exibir os comentários de todos os usuários atribuídos à tarefa
+  * Adicionar comentários à tarefa
 
 As ferramentas adicionais que podem estar disponíveis com qualquer uma das tarefas acima incluem:
 
@@ -109,7 +107,7 @@ Depois de abrir uma tarefa, as guias exibidas no painel principal e as ferrament
 
 * **Detalhes**: fornece algumas informações sobre a tarefa atual e o processo ao qual ela pertence.
 
-* **Formulário**: exibe o formulário associado à tarefa. O formulário pode ser de vários tipos de arquivos, incluindo PDF, HTML, Guia e SWF. O formulário pode ter a aparência de um formulário comum imprimível ou baseado na Web, ou orientá-lo por uma série de painéis no estilo de assistente para coletar informações.
+* **Formulário**: exibe o formulário associado à tarefa. O formulário pode ser de vários tipos de arquivos, incluindo arquivos do PDF, HTML, Guide e SWF. O formulário pode ter a aparência de um formulário comum imprimível ou baseado na Web, ou orientá-lo por uma série de painéis no estilo de assistente para coletar informações.
 
 * **Histórico**: lista as tarefas que fazem parte da instância do processo e o formulário associado, as atribuições de tarefas e os anexos de cada tarefa.
 
@@ -147,7 +145,7 @@ Você pode encaminhar uma tarefa juntamente com quaisquer notas ou anexos para o
 
 ### Colocar uma tarefa offline {#take-a-task-offline}
 
-Você pode ter permissão para trabalhar em uma tarefa off-line e depois enviar o formulário do Adobe® Reader® ou Adobe® Acrobat® Professional ou Adobe® Acrobat® Standard. Quando o formulário for enviado, seu cliente de email será iniciado com o endereço de email do servidor apropriado. Em seguida, você pode enviar o formulário preenchido por email para o servidor.
+Você pode ter permissão para trabalhar em uma tarefa off-line e depois enviar o formulário do Adobe® Reader®, Adobe® Acrobat® Professional ou Adobe® Acrobat® Standard. Quando o formulário for enviado, seu cliente de email será iniciado com o endereço de email do servidor apropriado. Em seguida, você pode enviar o formulário preenchido por email para o servidor.
 
 1. Em qualquer guia, clique em **Offline**.
 1. Especifique um nome de arquivo para salvar o formulário e clique em **Salvar**. O formulário associado à tarefa é salvo localmente e a tarefa permanece na lista de tarefas até que o formulário seja enviado.
@@ -245,7 +243,7 @@ Quando você conclui uma tarefa, dependendo da tarefa, uma caixa de diálogo de 
 
 >[!NOTE]
 >
->Você pode ver um botão Enviar dentro de formulários HTML quando as Propriedades do processo forem usadas em um formulário. Esse botão não é visível quando o mesmo formulário é renderizado como PDF. Para concluir uma tarefa, clique no botão Submit disponível na parte inferior do espaço de trabalho do AEM Forms, fora do formulário e não no botão Submit dentro do formulário.
+>Você pode ver um botão Enviar nos formulários do HTML quando as Propriedades do processo forem usadas em um formulário. Esse botão não fica visível quando o mesmo formulário é renderizado como PDF. Para concluir uma tarefa, clique no botão Submit disponível na parte inferior do espaço de trabalho do AEM Forms, fora do formulário e não no botão Submit dentro do formulário.
 
 ### Aprovar tarefas em massa {#bulk-approve-tasks}
 

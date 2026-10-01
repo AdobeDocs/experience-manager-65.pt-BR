@@ -11,17 +11,15 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '48'
+source-wordcount: '54'
 ht-degree: 0%
-
 ---
-
 # Sites do servidor de aplicativos {#application-server-websites}
 
 Esta lista contém links para os sites do fabricante para todos os servidores de aplicativos suportados.
 
 **JBoss:** https://www.jboss.com/products/platforms/application
 
-**WebLogic do Oracle:** www.oracle.com/us/products/middleware/application-server/index.html
+**Oracle WebLogic:** www.oracle.com/us/products/middleware/application-server/index.html
 
 **IBM WebSphere:** www-01.ibm.com/software/websphere/

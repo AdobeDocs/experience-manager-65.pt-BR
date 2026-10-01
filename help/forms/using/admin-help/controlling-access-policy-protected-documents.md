@@ -11,11 +11,9 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '2167'
+source-wordcount: '2196'
 ht-degree: 0%
-
 ---
-
 # Controle do acesso a documentos protegidos por política {#controlling-access-to-policy-protected-documents}
 
 Você pode controlar a maneira como os recipients usam seus documentos protegidos por política independentemente da abrangência da distribuição.
@@ -188,19 +186,19 @@ Você pode usar o suporte à Página 0 (Documento envolvedor) para permitir que 
 
 >[!NOTE]
 >
->Ao visualizá-los (contendo uma Página 0) no Adobe Reader/Acrobat ou no Reader móvel, o documento protegido é aberto por padrão.
+>Ao visualizá-los (contendo uma Página 0) no Adobe Reader/Acrobat ou no Mobile Reader, o documento protegido é aberto por padrão.
 
 **Para adicionar uma página de capa a um documento protegido por política**
 
 Use os seguintes processos no Workbench:
 
-**Protect
+**Proteger
 Documento com página de capa:** Protege um documento PDF com a política especificada e adiciona uma página de capa ao documento
 
-**Extrair Documento Protegido:** Extrai o documento PDF protegido por política do documento PDF com a página de capa
+**Extrair documento protegido:** extrai o documento PDF protegido por política do documento PDF com a página de capa
 
 Use as seguintes APIs de segurança de documentos:
 
-**protectDocumentWithCoverPage:** Protege um determinado PDF com a política especificada e retorna um documento com uma página de capa e o documento protegido como um anexo
-`//Create a ServiceClientFactory instance ServiceClientFactory factory = ServiceClientFactory.createInstance(connectionProps); //Create a RightsManagementClient object RightsManagementClient rightsClient = new RightsManagementClient(factory); //Reference a PDF document to which a policy is applied FileInputStream fileInputStream = new FileInputStream("C:\\testFile.pdf"); Document inPDF = new Document(fileInputStream); //Reference a Cover Page document FileInputStream coverPageInputStream = new FileInputStream("C:\\CoverPage.pdf"); Document inCoverDoc = new Document(coverPageInputStream); //Create a Document Manager object DocumentManager documentManager = rightsClient.getDocumentManager(); //Apply a policy to the PDF document RMSecureDocumentResult rmSecureDocument = documentManager.protectDocumentWithCoverPage( inPDF, "ProtectedPDF.pdf", "PolicySetName", "PolicyName", null, null, inCoverDoc, true); //Retrieve the policy-protected PDF document Document protectPDF = rmSecureDocument.getProtectedDoc(); //Save the policy-protected PDF document File myFile = new File("C:\\PolicyProtectedDoc.pdf"); protectPDF.copyToFile(myFile);` **extractProtectedDocument:** Extrai o documento protegido que é um anexo no documento com uma página de capa. O documento com a página de capa pode ser criado usando o método protectDocumentWithCoverPage
+**protectDocumentWithCoverPage:** Protege determinado PDF com a política especificada e retorna um documento com uma página de capa e o documento protegido como um anexo
+`//Create a ServiceClientFactory instance ServiceClientFactory factory = ServiceClientFactory.createInstance(connectionProps); //Create a RightsManagementClient object RightsManagementClient rightsClient = new RightsManagementClient(factory); //Reference a PDF document to which a policy is applied FileInputStream fileInputStream = new FileInputStream("C:\\testFile.pdf"); Document inPDF = new Document(fileInputStream); //Reference a Cover Page document FileInputStream coverPageInputStream = new FileInputStream("C:\\CoverPage.pdf"); Document inCoverDoc = new Document(coverPageInputStream); //Create a Document Manager object DocumentManager documentManager = rightsClient.getDocumentManager(); //Apply a policy to the PDF document RMSecureDocumentResult rmSecureDocument = documentManager.protectDocumentWithCoverPage( inPDF, "ProtectedPDF.pdf", "PolicySetName", "PolicyName", null, null, inCoverDoc, true); //Retrieve the policy-protected PDF document Document protectPDF = rmSecureDocument.getProtectedDoc(); //Save the policy-protected PDF document File myFile = new File("C:\\PolicyProtectedDoc.pdf"); protectPDF.copyToFile(myFile);` **extractProtectedDocument:** extrai o documento protegido que é um anexo no documento com uma página de capa. O documento com a página de capa pode ser criado usando o método protectDocumentWithCoverPage
 `//Create a ServiceClientFactory instance ServiceClientFactory factory = ServiceClientFactory.createInstance(connectionProps); //Create a RightsManagementClient object RightsManagementClient rightsClient = new RightsManagementClient(factory); //Reference a protected PDF document with a Cover Page FileInputStream fileInputStream = new FileInputStream("C:\\policyProtectedDocWithCoverPage.pdf"); Document inPDF = new Document(fileInputStream); //Create a Document Manager object DocumentManager documentManager = rightsClient.getDocumentManager(); //Apply a policy to the PDF document Document extractedDoc = documentManager.extractProtectedDocument(inPDF); //Save the policy-protected PDF document File myFile = new File("C:\\PolicyProtectedDoc.pdf"); extractedDoc.copyToFile(myFile);`
