@@ -12,11 +12,9 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '1174'
+source-wordcount: '1190'
 ht-degree: 0%
-
 ---
-
 # Ferramenta de servidor proxy (proxy.jar){#proxy-server-tool-proxy-jar}
 
 O servidor proxy atua como um servidor intermediário que transmite solicitações entre um cliente e um servidor. O servidor proxy rastreia todas as interações cliente-servidor e gera um log de toda a comunicação TCP. Isso permite monitorar exatamente o que está acontecendo, sem precisar acessar o servidor principal.
@@ -33,7 +31,7 @@ Você pode usar o servidor proxy para monitorar toda a interação cliente-servi
 * SMTP para mensagens de email
 * LDAP para gerenciamento de usuários
 
-Por exemplo, você pode posicionar o servidor proxy entre dois aplicativos que se comunicam por meio de uma rede TCP/IP; por exemplo, um navegador da Web e AEM. Isso permite monitorar exatamente o que acontece quando você solicita uma página AEM.
+Por exemplo, você pode posicionar o servidor proxy entre dois aplicativos que se comunicam por meio de uma rede TCP/IP; por exemplo, um navegador da Web e o AEM. Isso permite monitorar exatamente o que acontece quando você solicita uma página do AEM.
 
 ## Iniciando a Ferramenta de Servidor Proxy {#starting-the-proxy-server-tool}
 
@@ -116,7 +114,7 @@ C-0-#000000 -> [GET /author/prox.html?CFC_cK=1102938422341 HTTP/1.1 ]
 * C significa que essa entrada vem do cliente (é uma solicitação para uma página da Web)
 * 0 é o número da conexão (o contador de conexões começa em 0)
 * #00000 o deslocamento no fluxo de bytes. Esta é a primeira entrada, portanto, o deslocamento é 0.
-* [GET &lt;?>] é o conteúdo da solicitação, no exemplo um dos cabeçalhos HTTP (url).
+* [GET &lt;??>] é o conteúdo da solicitação, no exemplo um dos cabeçalhos HTTP (url).
 
 Quando uma conexão é fechada, as seguintes informações são registradas:
 
@@ -162,7 +160,7 @@ starting proxy for localhost:4303 on port 4444
 using logfile: C:\CQUnify355default\opt\helpers\test.log
 ```
 
-Os seguintes campos de cabeçalho são listados no início da primeira conexão (0), que está solicitando a página HTML principal:
+Os seguintes campos de cabeçalho são listados no início da primeira conexão (0), que está solicitando a página principal do HTML:
 
 ```xml
 C-0-#000000 -> [GET /author/prox.html?CFC_cK=1102936796533 HTTP/1.1 ]
@@ -182,7 +180,7 @@ C-0-#000369 -> [Connection: Keep-Alive ]
 
 O servidor proxy é uma boa ferramenta para verificar se os cookies estão configurados corretamente ou não. Aqui, você vê o seguinte:
 
-* cookie cq3session gerado por AEM
+* cookie cq3session gerado pelo AEM
 * o cookie show mode switch gerado pelo CFC
 * um cookie chamado JSESSIONID; isso é criado automaticamente pelo JSP se não for explicitamente desativado usando &lt;%@ page session=&quot;false&quot; %>:
 
@@ -203,7 +201,7 @@ S-0-#000158 -> [Set-Cookie: JSESSIONID=4161a56b-f193-d8-88a5-e09c5ff7ef2a;Path=/
 S-0-#000232 -> [ ]
 ```
 
-Aqui, o servidor começa a enviar o código de HTML na conexão 0:
+Aqui, o servidor começa a enviar o código do HTML na conexão 0:
 
 ```xml
 S-0-#000234 -> [<html> ]
@@ -217,7 +215,7 @@ S-0-#000357 -> [.</body> ]
 S-0-#000367 -> [</html>]
 ```
 
-A conexão 0 é fechada imediatamente após o arquivo HTML ter sido fornecido:
+A conexão 0 é fechada imediatamente após o arquivo HTML ser fornecido:
 
 ```xml
 C-0-Finished: 516 bytes (0.0 kb/s)
@@ -280,4 +278,4 @@ O exemplo acima é comparativamente simples, porque as duas conexões ocorrem se
 * primeiro, o servidor retorna o código HTML
 * em seguida, o navegador solicita a imagem e abre uma nova conexão
 
-Na prática, uma página pode gerar muitas solicitações paralelas de imagens, folhas de estilos, arquivos JavaScript e assim por diante. Isso significa que os logs têm entradas sobrepostas de conexões abertas paralelas. Nesse caso, o Adobe recomenda usar a opção -i para melhorar a legibilidade.
+Na prática, uma página pode gerar muitas solicitações paralelas de imagens, folhas de estilos, arquivos JavaScript e assim por diante. Isso significa que os logs têm entradas sobrepostas de conexões abertas paralelas. Nesse caso, a Adobe recomenda usar a opção -i para melhorar a legibilidade.

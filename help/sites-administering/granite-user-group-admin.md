@@ -1,27 +1,29 @@
 ---
 title: Operações do Granite - Administração de usuários e grupos
+
 description: Saiba mais sobre a administração de usuários e grupos do Granite.
+
+
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
+
 exl-id: f3477d21-7e9a-4588-94e8-496bc42434a8
 feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
-source-wordcount: '951'
+source-wordcount: '956'
 ht-degree: 1%
-
 ---
-
 
 # Operações do Granite - Administração de usuários e grupos{#granite-operations-user-and-group-administration}
 
 Como o Granite incorpora a implementação do Repositório do CRX da especificação da API JCR, ele tem sua própria administração de usuários e grupos.
 
-Essas contas são a base subjacente das [contas AEM](/help/sites-administering/security.md), e quaisquer alterações de conta feitas com a administração do Granite serão refletidas se/quando as contas forem acessadas do [console Usuários do AEM](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console) (por exemplo, `http://localhost:4502/useradmin`). No console Usuários do AEM, também é possível gerenciar os privilégios e outras especificidades do AEM.
+Essas contas são a base subjacente das [contas do AEM](/help/sites-administering/security.md) e quaisquer alterações de conta feitas com a administração do Granite serão refletidas se/quando as contas forem acessadas do [console de Usuários do AEM](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console) (por exemplo, `http://localhost:4502/useradmin`). No console Usuários do AEM, também é possível gerenciar os privilégios e outras especificidades do AEM.
 
 Os consoles de administração de usuários e grupos do Granite estão disponíveis no console **[Ferramentas](/help/sites-administering/tools-consoles.md)** da interface otimizada para toque:
 
@@ -35,9 +37,9 @@ Escolher **Usuários** ou **Grupos** do console Ferramentas abre o console aprop
 
   O console **Usuários** lista:
 
-   * o nome de usuário
-   * o nome de login do usuário (nome da conta)
-   * qualquer título que a conta recebeu
+  * o nome de usuário
+  * o nome de login do usuário (nome da conta)
+  * qualquer título que a conta recebeu
 
 * [Administração de grupo](#group-administration)
 
@@ -45,9 +47,9 @@ Escolher **Usuários** ou **Grupos** do console Ferramentas abre o console aprop
 
   O console **Grupos** lista:
 
-   * o nome do grupo
-   * a descrição do grupo
-   * o número de usuários/grupos no grupo
+  * o nome do grupo
+  * a descrição do grupo
+  * o número de usuários/grupos no grupo
 
 ## Administração de usuários {#user-administration}
 
@@ -91,8 +93,8 @@ Escolher **Usuários** ou **Grupos** do console Ferramentas abre o console aprop
    * **Sobre**
    * **Configurações da conta**
 
-      * **Status**
-Você pode sinalizar a conta como **ativa** ou **inativa**.
+     * **Status**
+       Você pode sinalizar a conta como **ativa** ou **inativa**.
 
    * **Foto**
 

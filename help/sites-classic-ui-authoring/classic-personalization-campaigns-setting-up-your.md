@@ -12,11 +12,9 @@ feature: Authoring,Personalization
 role: User
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '2194'
+source-wordcount: '2219'
 ht-degree: 0%
-
 ---
-
 # Configuração da campanha{#setting-up-your-campaign}
 
 Configurar uma nova campanha inclui as seguintes etapas (genéricas):
@@ -30,22 +28,22 @@ Em seguida, dependendo do tipo de experiências que você criar, será necessár
 
 * Se estiver criando um Teaser:
 
-   1. [Criar uma experiência de teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingateaserexperience).
-   1. [Adicionar conteúdo ao seu teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#addingcontenttoyourteaser).
-   1. [Crie um ponto de contato para seu Teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingatouchpointforyourteaser) (adicione seu teaser a uma página de conteúdo).
+  1. [Criar uma experiência de teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingateaserexperience).
+  1. [Adicionar conteúdo ao seu teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#addingcontenttoyourteaser).
+  1. [Crie um ponto de contato para seu Teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingatouchpointforyourteaser) (adicione seu teaser a uma página de conteúdo).
 
 * Se estiver criando um informativo:
 
-   1. [Criar uma experiência com informativo](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatinganewsletterexperience).
-   1. [Adicionar conteúdo ao informativo.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#addingcontenttonewsletters)
-   1. [Personalize o informativo.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#personalizingnewsletters)
-   1. [Crie uma página de aterrissagem atraente do informativo](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#settingupanewsletterlandingpage).
-   1. [Enviar o informativo](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#sendingnewsletters) aos assinantes ou clientes potenciais.
+  1. [Criar uma experiência com informativo](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatinganewsletterexperience).
+  1. [Adicionar conteúdo ao informativo.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#addingcontenttonewsletters)
+  1. [Personalize o informativo.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#personalizingnewsletters)
+  1. [Crie uma página de aterrissagem atraente do informativo](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#settingupanewsletterlandingpage).
+  1. [Enviar o informativo](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#sendingnewsletters) aos assinantes ou clientes potenciais.
 
 * Se estiver criando uma oferta do Adobe Target (antigo Test&amp;Target):
 
-   1. [Crie uma experiência de oferta do Adobe Target](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingatesttargetofferexperience).
-   1. [Fazer a integração com o Adobe Target](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#integratewithadobetesttarget)
+  1. [Crie uma experiência de oferta do Adobe Target](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingatesttargetofferexperience).
+  1. [Fazer a integração com o Adobe Target](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#integratewithadobetesttarget)
 
 >[!NOTE]
 >
@@ -90,13 +88,13 @@ Configure as propriedades de campanha que controlam o comportamento:
 * **Prioridade:** a prioridade desta campanha em relação a outras campanhas. Quando várias campanhas estão simultaneamente Ativada, a campanha com a maior prioridade controla a experiência do visitante.
 * **Horário ligado e desligado:** essas propriedades controlam o período quando a campanha controla a experiência do visitante. A propriedade No prazo controla o horário em que a campanha começa a controlar a experiência. A propriedade Momento de desligar controla quando as campanhas param de controlar a experiência.
 * **Imagem:** a imagem que representa a campanha no AEM.
-* **Cloud Services:** As configurações de Cloud Service com as quais a campanha está integrada. (Consulte [Integração com o Adobe Marketing Cloud](/help/sites-administering/marketing-cloud.md).)
+* **Cloud Services:** as configurações do Cloud Service com as quais a campanha está integrada. (Consulte [Integração com o Adobe Marketing Cloud](/help/sites-administering/marketing-cloud.md).)
 
 * **Adobe Target:** propriedades que configuram campanhas integradas ao Adobe Target. (Consulte [Integração com o Adobe Target](/help/sites-administering/target.md).)
 
 1. Em **Campanhas**, selecione sua marca. No painel direito, selecione sua campanha e clique em **Propriedades**.
 
-   Você pode inserir várias propriedades, incluindo um **Título**, **Descrição** e qualquer **Cloud Service** que desejar.
+   Você pode inserir várias propriedades, incluindo um **Título**, **Descrição** e qualquer **Cloud Services** que desejar.
 
    ![chlimage_1-20](assets/chlimage_1-20.png)
 
@@ -122,19 +120,19 @@ Agora que você criou o esqueleto básico para sua experiência, é necessário 
 
 * [Teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#teasers):
 
-   * [Conecte a página de teaser aos segmentos de visitantes.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#applyingasegmenttoyourteaser)
-   * [Crie um ponto de contato para seu Teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingatouchpointforyourteaser) (adicione seu teaser a uma página de conteúdo).
+  * [Conecte a página de teaser aos segmentos de visitantes.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#applyingasegmenttoyourteaser)
+  * [Crie um ponto de contato para seu Teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingatouchpointforyourteaser) (adicione seu teaser a uma página de conteúdo).
 
 * [Informativo](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#newsletters):
 
-   * [Adicionar conteúdo ao informativo.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#addingcontenttonewsletters)
-   * [Personalize o informativo.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#personalizingnewsletters)
-   * [Enviar o informativo](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#sendingnewsletters) aos assinantes ou clientes potenciais.
-   * [Crie uma página de aterrissagem atraente do informativo](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#settingupanewsletterlandingpage).
+  * [Adicionar conteúdo ao informativo.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#addingcontenttonewsletters)
+  * [Personalize o informativo.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#personalizingnewsletters)
+  * [Enviar o informativo](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#sendingnewsletters) aos assinantes ou clientes potenciais.
+  * [Crie uma página de aterrissagem atraente do informativo](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#settingupanewsletterlandingpage).
 
 * [Oferta da Adobe Target](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#testtargetoffers):
 
-   * [Fazer a integração com o Adobe Target](/help/sites-administering/target.md)
+  * [Fazer a integração com o Adobe Target](/help/sites-administering/target.md)
 
 ### Adicionar um novo ponto de contato {#adding-a-new-touchpoint}
 
@@ -152,10 +150,10 @@ Se você tiver experiências existentes, poderá adicionar um ponto de contato d
 
 >[!NOTE]
 >
->A Adobe não está planejando aprimorar ainda mais esse recurso (Gerenciando clientes em potencial).
+>A Adobe não planeja aprimorar ainda mais esse recurso (Gerenciar clientes em potencial).
 >A recomendação é usar o [Adobe Campaign e a integração com o AEM](/help/sites-administering/campaign.md).
 
-No AEM MCM, é possível organizar e adicionar leads inserindo-os manualmente ou importando uma lista separada por vírgulas, por exemplo, uma lista de mala direta. Outras maneiras de gerar leads são: inscrições em newsletters ou inscrições em comunidades (se configuradas, elas podem acionar um workflow que preenche leads).
+No AEM MCM, você pode organizar e adicionar leads inserindo-os manualmente ou importando uma lista separada por vírgulas, por exemplo, uma lista de mala direta. Outras maneiras de gerar leads são: inscrições em newsletters ou inscrições em comunidades (se configuradas, elas podem acionar um workflow que preenche leads).
 
 Os clientes em potencial geralmente são categorizados e colocados em uma lista para que posteriormente você possa executar ações em toda a lista, por exemplo, enviar um email personalizado para uma determinada lista.
 
@@ -194,13 +192,13 @@ A ativação de leads ajuda a rastrear sua atividade na instância de publicaç�
 
 Para leads ativos ou desativos:
 
-1. No AEM, navegue até o MCM e clique em **Líderes**.
+1. No AEM, navegue até o MCM e clique em **Clientes potenciais**.
 
 1. Selecione os clientes em potencial que deseja ativar ou desativar e clique em **Ativar** ou **Desativar**.
 
    ![screen_shot_2012-02-21at120620pm](assets/screen_shot_2012-02-21at120620pm.png)
 
-   Assim como nas páginas AEM, o status de publicação é indicado na coluna **Publicado**.
+   Assim como nas páginas do AEM, o status de publicação é indicado na coluna **Publicado**.
 
    ![screen_shot_2012-02-21at122901pm](assets/screen_shot_2012-02-21at122901pm.png)
 
@@ -210,7 +208,7 @@ Ao importar novos leads, você pode adicioná-los automaticamente a uma lista ex
 
 Para importar clientes em potencial de uma lista separada por vírgulas:
 
-1. No AEM, navegue até o MCM e clique em **Líderes**.
+1. No AEM, navegue até o MCM e clique em **Clientes potenciais**.
 
    >[!NOTE]
    >
@@ -254,7 +252,7 @@ Para adicionar leads a listas pré-existentes:
 
    ![screen_shot_2012-02-21at123835pm](assets/screen_shot_2012-02-21at123835pm.png)
 
-1. No menu **Ferramentas**, selecione **Adicionar à Lista....** A janela **Adicionar à Lista** é aberta.
+1. No menu **Ferramentas**, selecione **Adicionar à Lista...**. A janela **Adicionar à Lista** será aberta.
 
    ![screen_shot_2012-02-21at124019pm](assets/screen_shot_2012-02-21at124019pm.png)
 
@@ -294,13 +292,13 @@ Para excluir clientes potenciais existentes no MCM, marque a caixa de seleção 
 
 >[!NOTE]
 >
->Antes de excluir, o AEM confirma que você deseja excluir o lead existente. Depois de excluído, não é possível recuperá-lo.
+>Antes de excluir, a AEM confirma que você deseja excluir o lead existente. Depois de excluído, não é possível recuperá-lo.
 
 ## Trabalhar com listas {#working-with-lists}
 
 >[!NOTE]
 >
->A Adobe não está planejando aprimorar ainda mais esse recurso (gerenciamento de listas).
+>A Adobe não planeja aprimorar ainda mais esse recurso (gerenciar listas).
 >A recomendação é usar o [Adobe Campaign e a integração com o AEM](/help/sites-administering/campaign.md).
 
 As listas permitem organizar seus leads em grupos. Com listas, você pode direcionar suas campanhas de marketing para um grupo selecionado de pessoas; por exemplo, é possível enviar um informativo direcionado para uma lista. As listas estão visíveis no MCM, no Painel ou clicando em **Listas**. Ambos fornecem o nome da lista e o número de membros.
@@ -341,7 +339,7 @@ Para excluir listas existentes, no MCM, marque a caixa de seleção ao lado da l
 
 >[!NOTE]
 >
->Antes de excluir, o AEM confirma que você deseja excluir as listas existentes. Depois de excluído, não é possível recuperá-lo.
+>Antes de excluir, a AEM confirma que você deseja excluir as listas existentes. Depois de excluído, não é possível recuperá-lo.
 
 ### Mesclar listas {#merging-lists}
 

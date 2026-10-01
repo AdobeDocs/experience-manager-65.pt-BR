@@ -12,11 +12,9 @@ feature: Integration
 role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '451'
 ht-degree: 1%
-
 ---
-
 
 # Analytics com provedores externos {#analytics-with-external-providers}
 
@@ -67,7 +65,7 @@ Esses snippets permitem que os dados sejam coletados e os relatórios gerados. O
 Para a configuração básica:
 
 1. Abra o console **Ferramentas**.
-1. No painel esquerdo, expanda **Configurações do Cloud Service**.
+1. No painel esquerdo, expanda **Configurações de Cloud Services**.
 1. Clique duas vezes em **Fragmento de análise genérico** para abrir a página:
 
    ![Fragmento de análise genérico](assets/analytics_genericoverview.png)
@@ -87,13 +85,13 @@ Para a configuração básica:
 Após criar a configuração do serviço, você deve configurar as páginas necessárias para usá-lo:
 
 1. Navegue até a página.
-1. Abra as **Propriedades da página** no sidekick e depois a guia **Cloud Service**.
+1. Abra as **Propriedades da página** no sidekick e depois a guia **Serviços da nuvem**.
 1. Clique em **Adicionar Serviço** e selecione o serviço necessário. Por exemplo, o **trecho de análise genérico**:
 
    ![Adicionando um serviço de nuvem](assets/analytics_selectservice.png)
 
 1. Clique em **OK** para salvar.
-1. Você retornará à guia **Cloud Service**. O **Trecho de Análise Genérico** agora está listado com a mensagem `Configuration reference missing`. Use a lista suspensa para selecionar sua instância de serviço específica. Por exemplo, google-analytics:
+1. Você retornará à guia **Cloud Services**. O **Trecho de Análise Genérico** agora está listado com a mensagem `Configuration reference missing`. Use a lista suspensa para selecionar sua instância de serviço específica. Por exemplo, google-analytics:
 
    ![Adicionando configuração do serviço de nuvem](assets/analytics_selectspecificservice.png)
 

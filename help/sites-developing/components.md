@@ -1,21 +1,23 @@
 ---
 title: Visão geral dos componentes
+
 description: Os componentes são unidades modulares que realizam funcionalidades específicas para apresentar conteúdo em seu site
+
+
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
 content-type: reference
+
 exl-id: 9e30c969-2692-4380-943a-b022ee900ce8
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '570'
-ht-degree: 44%
-
+source-wordcount: '620'
+ht-degree: 46%
 ---
-
 # Visão geral dos componentes{#components-overview}
 
 Esta página fornece uma visão geral dos componentes do Adobe Experience Manager (AEM), como os [usados para criação de página](/help/sites-authoring/default-components-foundation.md).
@@ -27,7 +29,7 @@ Esta página fornece uma visão geral dos componentes do Adobe Experience Manage
 * Desenvolvidos como unidades independentes em uma pasta do repositório.
 * Não contêm arquivos de configuração ocultos.
 * Podem conter outros componentes.
-* Pode ser executado em qualquer lugar dentro de qualquer sistema AEM. Eles também podem ser limitados para execução em componentes específicos.
+* Pode ser executado em qualquer lugar em qualquer sistema da AEM. Eles também podem ser limitados para execução em componentes específicos.
 * Têm uma interface de usuário padronizada.
 * Têm um comportamento de edição que pode ser configurado.
 * Use caixas de diálogo que são criadas usando subelementos com base nos componentes da interface do Granite
@@ -45,9 +47,9 @@ Cada componente do AEM:
 
 * É um tipo de recurso.
 * É uma coleção de scripts que executa completamente uma função específica.
-* Pode funcionar em *isolamento*, significando em AEM ou em um portal.
+* Pode funcionar em *isolamento*, significando que está no AEM ou em um portal.
 
-## Componentes prontos para uso dentro do AEM {#out-of-the-box-components-within-aem}
+## Componentes prontos para uso no AEM {#out-of-the-box-components-within-aem}
 
 O AEM vem com uma variedade de [componentes prontos para uso](/help/sites-authoring/default-components.md) que fornecem funcionalidade abrangente, incluindo:
 
@@ -61,24 +63,24 @@ Os componentes fornecidos e seu uso nos [sites de amostra do We.Retail](/help/si
 
 ### Componentes principais e Componentes de base {#core-components-and-foundation-components}
 
-Há dois conjuntos de componentes AEM fornecidos pelo Adobe disponíveis:
+Há dois conjuntos de componentes do AEM fornecidos pela Adobe disponíveis:
 
 * [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR)
 * [Componentes de fundação](/help/sites-authoring/default-components-foundation.md)
 
 Os **Componentes principais** foram introduzidos com o AEM 6.3 e oferecem funcionalidade de criação flexível e repleta de recursos. O [site de referência We.Retail](/help/sites-developing/we-retail.md) ilustra como os componentes principais podem ser usados e representa as práticas recomendadas atuais de desenvolvimento de componentes.
 
-Os **Componentes de base** estão disponíveis com AEM para muitas versões e estão prontos para uso em uma instalação padrão do AEM. Embora ainda seja compatível, a maioria foi descontinuada, não está mais aprimorada e é baseada em tecnologias herdadas.
+Os **Componentes de base** estão disponíveis com o AEM para muitas versões e estão disponíveis prontamente em uma instalação padrão do AEM. Embora ainda seja compatível, a maioria foi descontinuada, não está mais aprimorada e é baseada em tecnologias herdadas.
 
 >[!NOTE]
 >
 >Os [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) representam as práticas recomendadas atuais para design e desenvolvimento de componentes e servem como implementações de referência.
 >
->As [Ferramentas de modernização do AEM](modernization-tools.md) podem ajudar na migração para os Componentes principais.
+>As [Ferramentas de Modernização do AEM](modernization-tools.md) podem ajudar na migração para os Componentes principais.
 
 ### Visualização de componentes disponíveis {#viewing-available-components}
 
-Para obter uma visão geral de todos os componentes disponíveis na instância do AEM, use o [Console de Componentes](/help/sites-authoring/default-components-console.md).
+Para obter uma visão geral de todos os componentes disponíveis na sua instância do AEM, use o [Console de Componentes](/help/sites-authoring/default-components-console.md).
 
 Como alternativa, você também pode usar o CRXDE Lite para obter uma lista de todos os componentes disponíveis no repositório.
 
@@ -109,7 +111,7 @@ As páginas a seguir fornecem informações mais detalhadas sobre o desenvolvime
 * [Uso de condições de ocultação](/help/sites-developing/hide-conditions.md)
 * IU Clássica
 
-   * [Componentes do AEM (Interface clássica)](/help/sites-developing/developing-components-classic.md)
-   * [Uso e extensão de widgets (interface de usuário clássica)](/help/sites-developing/widgets.md)
-   * [Uso do xtypes (Interface clássica)](/help/sites-developing/xtypes.md)
-   * [Desenvolvimento do Forms (interface clássica)](/help/sites-developing/developing-forms.md)
+  * [Componentes do AEM (Interface clássica)](/help/sites-developing/developing-components-classic.md)
+  * [Uso e extensão de widgets (interface de usuário clássica)](/help/sites-developing/widgets.md)
+  * [Uso do xtypes (Interface clássica)](/help/sites-developing/xtypes.md)
+  * [Desenvolvimento do Forms (interface clássica)](/help/sites-developing/developing-forms.md)

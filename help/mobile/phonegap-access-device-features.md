@@ -1,6 +1,6 @@
 ---
 title: Recursos do dispositivo de acesso
-description: Siga esta página para saber mais sobre como criar componentes do Adobe Experience Manager (AEM) que acessam os recursos do dispositivo. O repositório GitHub do Coletor de cozinha do PhoneGap do AEM fornece aos desenvolvedores um aplicativo AEM funcional que ilustra o uso de várias APIs principais do Cordova.
+description: Siga esta página para saber mais sobre como criar componentes do Adobe Experience Manager (AEM) que acessam os recursos do dispositivo. O repositório GitHub do Coletor do AEM PhoneGap Kitchen fornece aos desenvolvedores um aplicativo funcional do AEM que ilustra o uso de várias APIs principais do Cordova.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
@@ -11,18 +11,16 @@ feature: Mobile
 role: Admin
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '150'
-ht-degree: 2%
-
+source-wordcount: '174'
+ht-degree: 1%
 ---
-
 # Recursos do dispositivo de acesso{#access-device-features}
 
 {{ue-over-mobile}}
 
-## Criação de componentes do Adobe Experience Manager (AEM) que acessam os recursos do dispositivo {#building-aem-components-that-access-device-features}
+## Criação de componentes do Adobe Experience Manager (AEM) que acessem recursos do dispositivo {#building-aem-components-that-access-device-features}
 
-O [Coletor de Cozinha para AEM PhoneGap](https://github.com/blefebvre/aem-phonegap-kitchen-sink) do repositório GitHub fornece aos desenvolvedores um aplicativo AEM funcional que ilustra o uso de várias APIs Cordova principais. Quando executado no iOS ou Android™ por meio da CLI do PhoneGap, o aplicativo é aberto na seguinte página, que inclui um link para cada API de dispositivo demonstrada:
+O [Coletor da cozinha do AEM PhoneGap](https://github.com/blefebvre/aem-phonegap-kitchen-sink) fornece aos desenvolvedores um aplicativo AEM funcional que ilustra o uso de várias APIs Cordova principais. Quando executado no iOS ou Android™ por meio da CLI do PhoneGap, o aplicativo é aberto na seguinte página, que inclui um link para cada API de dispositivo demonstrada:
 
 ![chlimage_1-107](assets/chlimage_1-107.png)
 

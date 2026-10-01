@@ -12,11 +12,9 @@ exl-id: 2a536745-fa13-4158-8761-2ac5b6e1893e
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '2274'
-ht-degree: 5%
-
+source-wordcount: '2299'
+ht-degree: 7%
 ---
-
 # Conjuntos de imagem {#image-sets}
 
 Os Conjuntos de imagens oferecem aos usuários uma experiência de visualização integrada, em que os usuários podem ver diferentes visualizações de um item selecionando uma imagem em miniatura. Os Conjuntos de imagens permitem apresentar visualizações alternativas de um item e o visualizador oferece ferramentas de zoom para examinar as imagens de perto.
@@ -35,11 +33,11 @@ Por exemplo, suponha que você queira apresentar imagens de tampas com diferente
 >
 >Para obter informações sobre a interface do usuário do Assets, consulte [Gerenciar ativos](/help/assets/manage-assets.md).
 
-Ao criar um Conjunto de imagens, o Adobe recomenda as seguintes práticas recomendadas e impõe os seguintes limites:
+Ao criar um Conjunto de imagens, a Adobe recomenda as seguintes práticas recomendadas e impõe os seguintes limites:
 
 | Tipo de limite | Prática recomendada | Limite imposto |
 | --- | --- | --- |
-| Número de ativos duplicados por conjunto | Sem duplicatas | 20‡ |
+| Número de ativos duplicados por conjunto | Nenhuma duplicata | 20‡ |
 | Número máximo de imagens por conjunto | De 5 a 10 imagens por conjunto | 1000 |
 
 ‡ A prática recomendada é não ter ativos duplicados em um conjunto. O limite é de 20 duplicatas para um único ativo. Se você adicionar outra duplicata para esse ativo — dentro desse conjunto — a solicitação retornará um erro ou ignorará a duplicata.
@@ -84,7 +82,7 @@ Consulte também [limitações do Dynamic Media](/help/assets/limitations.md).
 
    Selecione o Conjunto de imagens para poder visualizá-lo. Selecione os ícones de miniatura para que você possa examinar seu Conjunto de imagens no Visualizador selecionado. Você pode escolher visualizadores diferentes no menu **[!UICONTROL Visualizadores]**, disponível no menu suspenso do painel esquerdo.
 
-1. [Publish e Conjunto de Imagens](/help/assets/publishing-dynamicmedia-assets.md).
+1. [Publicar um Conjunto de Imagens](/help/assets/publishing-dynamicmedia-assets.md).
 
    A publicação de um Conjunto de imagens ativa o URL e o código incorporado. Além disso, você deve [publicar qualquer predefinição do visualizador personalizado](/help/assets/managing-viewer-presets.md) que tenha criado. As predefinições do visualizador pronto para uso já estão publicadas.
 
@@ -98,11 +96,11 @@ Consulte também [limitações do Dynamic Media](/help/assets/limitations.md).
 
 Para editar conjuntos de imagens, consulte [Editar conjuntos de imagens](#editing-image-sets). Além disso, você pode exibir e editar [propriedades do Conjunto de Imagens](/help/assets/manage-assets.md#editing-properties).
 
-Se tiver problemas ao criar conjuntos, consulte Imagens e Conjuntos em [Solução de problemas do Dynamic Media - Modo Scene7](/help/assets/troubleshoot-dms7.md#images-and-sets).
+Se tiver problemas ao criar conjuntos, consulte Imagens e Conjuntos em [Solução de problemas do Dynamic Media - modo Scene7](/help/assets/troubleshoot-dms7.md#images-and-sets).
 
 ## Fazer upload de ativos em Conjuntos de imagens {#uploading-assets-in-image-sets}
 
-Comece fazendo upload das imagens para os seus Conjuntos de imagens. Ao escolher imagens, lembre-se de que seus clientes podem ampliar imagens no Visualizador do conjunto de imagens. Verifique se as imagens têm pelo menos 2000 pixels na maior dimensão. Os Conjuntos de imagens são compatíveis com muitos formatos de arquivo de imagem, mas são recomendadas imagens de TIFF, PNG e EPS sem perdas.
+Comece fazendo upload das imagens para os seus Conjuntos de imagens. Ao escolher imagens, lembre-se de que seus clientes podem ampliar imagens no Visualizador do conjunto de imagens. Verifique se as imagens têm pelo menos 2000 pixels na maior dimensão. Os Conjuntos de imagens são compatíveis com muitos formatos de arquivo de imagem, mas são recomendadas imagens TIFF, PNG e EPS sem perdas.
 
 Você pode carregar imagens para Conjuntos de imagens da mesma maneira que faria [ao carregar qualquer outro ativo no Assets](/help/assets/manage-assets.md#uploading-assets).
 
@@ -132,7 +130,7 @@ Como os usuários podem ampliar imagens em Conjuntos de imagens, verifique se as
 >[!NOTE]
 >
 >Você também pode criar conjuntos de imagens automaticamente por meio de [predefinições de conjunto de lotes](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
->**Importante:** conjuntos em lotes são criados pelo IPS (Sistema de Produção de Imagens) como parte da assimilação de ativos e estão disponíveis somente no modo Dynamic Media - Scene7.
+>**Importante:** conjuntos em lotes são criados pelo IPS (Sistema de Produção de Imagem) como parte da assimilação de ativos e estão disponíveis apenas no modo Dynamic Media - Scene7.
 
 Ao adicionar ativos ao conjunto, eles são automaticamente adicionados em ordem alfanumérica. É possível reordenar ou classificar manualmente os ativos depois de adicionados.
 
@@ -140,11 +138,11 @@ Ao adicionar ativos ao conjunto, eles são automaticamente adicionados em ordem 
 >
 >Os conjuntos de imagens não são compatíveis com ativos com &quot;,&quot; (vírgula) no nome do arquivo.
 
-Ao criar um Conjunto de imagens, o Adobe recomenda as seguintes práticas recomendadas e impõe os seguintes limites:
+Ao criar um Conjunto de imagens, a Adobe recomenda as seguintes práticas recomendadas e impõe os seguintes limites:
 
 | Tipo de limite | Prática recomendada | Limite imposto |
 | --- | --- | --- |
-| Número de ativos duplicados por conjunto | Sem duplicatas | 20‡ |
+| Número de ativos duplicados por conjunto | Nenhuma duplicata | 20‡ |
 | Número máximo de imagens por conjunto | De 5 a 10 imagens por conjunto | 1000 |
 
 ‡ A prática recomendada é não ter ativos duplicados em um conjunto. O limite é de 20 duplicatas para um único ativo. Se você adicionar outra duplicata para esse ativo — dentro desse conjunto — a solicitação retornará um erro ou ignorará a duplicata.
@@ -155,7 +153,7 @@ Consulte também [limitações do Dynamic Media](/help/assets/limitations.md).
 
 1. No Experience Manager, selecione o logotipo do Experience Manager para acessar o console de navegação global e vá para **[!UICONTROL Navegação]** > **[!UICONTROL Assets]**. Navegue até o local em que você deseja criar um Conjunto de imagens, em seguida, vá para **[!UICONTROL Criar]** > **[!UICONTROL Conjunto de imagens]** para abrir a página Editor do Conjunto de imagens.
 
-   Você também pode criar o conjunto de dentro de uma pasta que contenha seus ativos.
+   Além disso, crie o conjunto de dentro de uma pasta que contenha seus ativos.
 
    ![6_5_imagesets-createpulldown](assets/6_5_imagesets-createpulldown.png)
 
@@ -203,7 +201,7 @@ Você pode criar conjuntos de imagens na interface ou automaticamente usando [pr
 
 >[!IMPORTANT]
 >
->Os conjuntos em lotes são criados pelo IPS [Sistema de Produção de Imagens] como parte da assimilação de ativos e estão disponíveis somente no modo Dynamic Media - Scene7.)
+>Os conjuntos em lotes são criados pelo IPS [Sistema de produção de imagem] como parte da assimilação de ativos e estão disponíveis apenas no modo Dynamic Media - Scene7.)
 
 No entanto, conjuntos criados usando predefinições de conjunto de lotes, *não*, aparecerão na interface do usuário. Você pode visualizar esses conjuntos de três maneiras diferentes. (Esses métodos estão disponíveis mesmo se você tiver criado os conjuntos de imagens na interface do usuário do ).
 
@@ -217,7 +215,7 @@ No entanto, conjuntos criados usando predefinições de conjunto de lotes, *não
 
 * Na pesquisa, você pode selecionar **[!UICONTROL Filtro]**, expandir **[!UICONTROL Dynamic Media]** e selecionar **[!UICONTROL Conjuntos]**.
 
-  A pesquisa retorna conjuntos correspondentes que foram criados manualmente na interface do usuário ou criados automaticamente por meio de predefinições de conjunto de lotes. Para conjuntos automatizados, a consulta de pesquisa é conduzida usando o critério de pesquisa &quot;Inicia com&quot;, que é diferente da pesquisa de Experience Manager, que se baseia no uso do critério de pesquisa &quot;Contém&quot;. Configurar o filtro como **[!UICONTROL Conjuntos]** é a única maneira de pesquisar conjuntos automatizados.
+  A pesquisa retorna conjuntos correspondentes que foram criados manualmente na interface do usuário ou criados automaticamente por meio de predefinições de conjunto de lotes. Para conjuntos automatizados, a consulta de pesquisa é conduzida usando o critério de pesquisa &quot;Inicia com&quot;, que é diferente da pesquisa do Experience Manager, que se baseia no uso do critério de pesquisa &quot;Contém&quot;. Configurar o filtro como **[!UICONTROL Conjuntos]** é a única maneira de pesquisar conjuntos automatizados.
 
   ![chlimage_1-134](assets/chlimage_1-134.png)
 
@@ -248,7 +246,6 @@ No entanto, conjuntos criados usando predefinições de conjunto de lotes, *não
    * Para reordenar ativos, arraste uma imagem para um novo local (selecione o ícone reordenar para mover itens).
    * Para classificar itens em ordem crescente ou decrescente, selecione o cabeçalho da coluna.
    * Para adicionar um ativo ou atualizar um ativo existente, selecione **[!UICONTROL Adicionar ativo]**. Navegue até um ativo, selecione-o e, em seguida, selecione **[!UICONTROL Selecionar]** próximo ao canto superior direito da página.
-
      >[!NOTE]
      >
      >Se você excluir a imagem que o Experience Manager usa para a miniatura substituindo-a por outra imagem, o ativo original ainda será exibido.
@@ -267,6 +264,6 @@ No entanto, conjuntos criados usando predefinições de conjunto de lotes, *não
 
 Consulte [Visualização de ativos](/help/assets/previewing-assets.md).
 
-## Publish e conjunto de imagens {#publishing-image-sets}
+## Publicar um conjunto de imagens {#publishing-image-sets}
 
 Consulte [Publicação de Assets](/help/assets/publishing-dynamicmedia-assets.md).
