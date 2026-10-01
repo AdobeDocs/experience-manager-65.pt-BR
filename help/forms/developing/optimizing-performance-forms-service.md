@@ -1,22 +1,25 @@
 ---
 title: Otimizando o desempenho do serviço Forms
+
 description: Defina as opções de tempo de execução ao renderizar um formulário e armazene arquivos XDP no repositório para otimizar o desempenho do serviço do Forms.
+
+
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
+
 role: Developer
 exl-id: 5a746c6c-bf6e-4b25-ba7c-a35edb1f55f3
 solution: Experience Manager, Experience Manager Forms
+
 feature: Adaptive Forms,Document Services,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1424'
+source-wordcount: '1442'
 ht-degree: 0%
-
 ---
-
 # Otimização do desempenho do serviço Forms {#optimizing-the-performance-of-theforms-service}
 
 **Exemplos e exemplos neste documento são somente para AEM Forms no ambiente JEE.**
@@ -54,8 +57,8 @@ Você pode definir as seguintes opções de tempo de execução de desempenho pa
 * **Cache de formulário**: você pode armazenar em cache um formulário que é renderizado como PDF no cache do servidor. Cada formulário é armazenado em cache após ser gerado pela primeira vez. Em um renderizador subsequente, se o formulário em cache for mais recente que o carimbo de data e hora do design do formulário, o formulário será recuperado do cache. Ao armazenar formulários em cache, você melhora o desempenho do serviço Forms, pois ele não precisa recuperar o design do formulário de um repositório.
 * As Guias de formulário (obsoletas) podem levar mais tempo para serem renderizadas do que outros tipos de transformação. É recomendável armazenar em cache os Guias de formulário (obsoletos) para melhorar o desempenho.
 * **Opção autônoma**: se você não precisar que o serviço Forms execute cálculos no lado do servidor, defina a opção Autônoma como `true`, o que resultará na renderização de formulários sem informações de estado. As informações de estado são necessárias se você quiser renderizar um formulário interativo para um usuário final que, em seguida, insere informações no formulário e o envia de volta para o serviço Forms. O serviço Forms executa uma operação de cálculo e renderiza o formulário de volta para o usuário com os resultados exibidos no formulário. Se um formulário sem informações de estado for enviado de volta para o serviço Forms, somente os dados XML estarão disponíveis e os cálculos do lado do servidor não serão executados.
-* **PDF linearizado**: um arquivo de PDF linearizado está organizado para habilitar o acesso incremental eficiente em um ambiente de rede. O arquivo PDF é um PDF válido em todos os aspectos e é compatível com todos os visualizadores existentes e outros aplicativos PDF. Ou seja, um PDF linearizado pode ser visualizado enquanto estiver sendo baixado.
-* Essa opção não melhora o desempenho quando um formulário PDF é renderizado no cliente.
+* **PDF linearizada**: um arquivo PDF linearizado é organizado para habilitar o acesso incremental eficiente em um ambiente de rede. O arquivo PDF é válido para o PDF em todos os aspectos e é compatível com todos os visualizadores existentes e outros aplicativos da PDF. Ou seja, um PDF linearizado pode ser visualizado enquanto estiver sendo baixado.
+* Essa opção não melhora o desempenho quando um formulário do PDF é renderizado no cliente.
 * **Opção GuideRSL**: habilita a geração do Guia de Formulários (obsoleto) usando bibliotecas compartilhadas em tempo de execução. Isso significa que a primeira solicitação baixará um arquivo SWF menor, além de bibliotecas compartilhadas maiores que são armazenadas no cache do navegador. Para obter mais informações, consulte RSL na documentação do Flex.
 * Você também pode melhorar o desempenho do serviço Forms renderizando um formulário no cliente. (Consulte [Renderização do Forms no cliente](/help/forms/developing/rendering-forms-client.md).)
 
@@ -75,7 +78,7 @@ Depois que o serviço Forms renderiza um formulário, ele retorna um fluxo de da
 
 [Início rápido da API de serviço do Forms](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
-[Renderização de PDF forms interativos](/help/forms/developing/rendering-interactive-pdf-forms.md)
+[Renderização do PDF forms interativo](/help/forms/developing/rendering-interactive-pdf-forms.md)
 
 [Renderização do Forms como HTML](/help/forms/developing/rendering-forms-html.md)
 
@@ -122,7 +125,7 @@ Renderize um formulário com desempenho otimizado usando a API do Forms (Java):
 
 **Consulte também**
 
-[Início rápido (modo SOAP): otimização do desempenho usando a API Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-optimizing-performance-using-the-java-api)
+[Início rápido (modo SOAP): otimizar o desempenho usando a API Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-optimizing-performance-using-the-java-api)
 
 [Inclusão de arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -157,7 +160,7 @@ Renderize um formulário com desempenho otimizado usando a API do Forms (serviç
    * Um objeto `PDFFormRenderSpecc` que armazena opções de tempo de execução.
    * Um objeto `URLSpec` que contém valores de URI exigidos pelo serviço Forms.
    * Um objeto `java.util.HashMap` que armazena anexos de arquivo. Este é um parâmetro opcional e você pode especificar `null` se não quiser anexar arquivos ao formulário.
-   * Um objeto `com.adobe.idp.services.holders.BLOBHolder` vazio preenchido pelo método. Isso é usado para armazenar o formulário de PDF renderizado.
+   * Um objeto `com.adobe.idp.services.holders.BLOBHolder` vazio preenchido pelo método. Isso é usado para armazenar o formulário PDF renderizado.
    * Um objeto `javax.xml.rpc.holders.LongHolder` vazio preenchido pelo método. (Esse argumento armazenará o número de páginas no formulário).
    * Um objeto `javax.xml.rpc.holders.StringHolder` vazio preenchido pelo método. (Esse argumento armazenará o valor do local).
    * Um objeto `com.adobe.idp.services.holders.FormsResultHolder` vazio que conterá os resultados desta operação.

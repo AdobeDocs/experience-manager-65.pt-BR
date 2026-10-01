@@ -9,14 +9,13 @@ topic-tags: operations
 role: Developer
 exl-id: a3a6a06d-ec90-4147-a5f0-e776a086ee12
 solution: Experience Manager, Experience Manager Forms
+
 feature: Adaptive Forms,Document Services,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1822'
+source-wordcount: '1848'
 ht-degree: 0%
-
 ---
-
 # Renderização do Forms por valor {#rendering-forms-by-value}
 
 **Exemplos e exemplos neste documento são somente para AEM Forms no ambiente JEE.**
@@ -35,11 +34,11 @@ As seguintes limitações se aplicam quando um design de formulário é passado 
 
 * Nenhum conteúdo vinculado relativo pode estar dentro do design do formulário. Todas as imagens e fragmentos devem ser incorporados no design do formulário ou referenciados de forma absoluta.
 * Os cálculos do lado do servidor não podem ser executados após o formulário ser renderizado. Se o formulário for enviado de volta para o serviço Forms, os dados serão extraídos e retornados sem nenhum cálculo do lado do servidor.
-* Como o HTML só pode usar imagens vinculadas em tempo de execução, não é possível gerar o HTML com imagens incorporadas. Isso ocorre porque o serviço Forms oferece suporte a imagens incorporadas com HTML ao recuperar as imagens de um design de formulário referenciado. Como um design de formulário transmitido por valor não tem um local de referência, as imagens incorporadas não podem ser extraídas quando a página de HTML é exibida. Portanto, as referências de imagem devem ser caminhos absolutos para serem renderizados em HTML.
+* Como o HTML só pode usar imagens vinculadas no tempo de execução, não é possível gerar o HTML com imagens incorporadas. Isso ocorre porque o serviço Forms oferece suporte a imagens incorporadas com o HTML ao recuperar as imagens de um design de formulário referenciado. Como um design de formulário transmitido por valor não tem um local de referência, as imagens incorporadas não podem ser extraídas quando a página do HTML é exibida. Portanto, as referências de imagem devem ser caminhos absolutos para serem renderizadas no HTML.
 
 >[!NOTE]
 >
->Embora seja possível renderizar diferentes tipos de formulários por valor (por exemplo, formulários HTML ou formulários que contêm direitos de uso), esta seção discute a renderização de PDF forms interativos.
+>Embora seja possível renderizar diferentes tipos de formulários por valor (por exemplo, formulários do HTML ou formulários que contenham direitos de uso), esta seção discute a renderização do PDF forms interativo.
 
 >[!NOTE]
 >
@@ -61,7 +60,7 @@ Inclua os arquivos necessários no projeto de desenvolvimento. Se você estiver 
 
 **Criar um objeto da API do cliente do Forms**
 
-Antes de importar dados programaticamente para uma API do cliente do formulário PDF, você deve criar um cliente do serviço de Integração de dados. Ao criar um cliente de serviço, você define as configurações de conexão necessárias para chamar um serviço.
+Antes de importar dados de forma programática para uma API do cliente do formulário do PDF, você deve criar um cliente do serviço de Integração de dados. Ao criar um cliente de serviço, você define as configurações de conexão necessárias para chamar um serviço.
 
 **Referenciar o design do formulário**
 
@@ -166,7 +165,7 @@ Renderize um formulário por valor usando a API do Forms (serviço Web):
 1. Referência ao design do formulário
 
    * Crie um objeto `java.io.FileInputStream` usando seu construtor. Transmita um valor de string que especifique o local do arquivo XDP.
-   * Crie um objeto `BLOB` usando seu construtor. O objeto `BLOB` é usado para armazenar um documento PDF que está criptografado com uma senha.
+   * Crie um objeto `BLOB` usando seu construtor. O objeto `BLOB` é usado para armazenar um documento PDF criptografado com uma senha.
    * Crie uma matriz de bytes que armazene o conteúdo do objeto `java.io.FileInputStream`. Você pode determinar o tamanho da matriz de bytes obtendo o tamanho do objeto `java.io.FileInputStream` usando seu método `available`.
    * Preencha a matriz de bytes com dados de fluxo invocando o método `read` do objeto `java.io.FileInputStream` e transmitindo a matriz de bytes.
    * Preencha o objeto `BLOB` invocando seu método `setBinaryData` e transmitindo a matriz de bytes.
@@ -180,7 +179,7 @@ Renderize um formulário por valor usando a API do Forms (serviço Web):
    * Um objeto `PDFFormRenderSpec` que armazena opções de tempo de execução. Este é um parâmetro opcional e você pode especificar `null` se não quiser especificar opções de tempo de execução.
    * Um objeto `URLSpec` que contém valores de URI exigidos pelo serviço Forms.
    * Um objeto `java.util.HashMap` que armazena anexos de arquivo. Este é um parâmetro opcional e você pode especificar `null` se não quiser anexar arquivos ao formulário.
-   * Um objeto `com.adobe.idp.services.holders.BLOBHolder` vazio preenchido pelo método. Isso é usado para armazenar o formulário de PDF renderizado.
+   * Um objeto `com.adobe.idp.services.holders.BLOBHolder` vazio preenchido pelo método. Isso é usado para armazenar o formulário PDF renderizado.
    * Um objeto `javax.xml.rpc.holders.LongHolder` vazio preenchido pelo método. (Esse argumento armazena o número de páginas no formulário.)
    * Um objeto `javax.xml.rpc.holders.StringHolder` vazio preenchido pelo método. (Esse argumento armazena o valor do local.)
    * Um objeto `com.adobe.idp.services.holders.FormsResultHolder` vazio que conterá os resultados desta operação.

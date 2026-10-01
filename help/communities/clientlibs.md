@@ -12,11 +12,9 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '406'
 ht-degree: 0%
-
 ---
-
 # Clientlibs para componentes das comunidades {#clientlibs-for-communities-components}
 
 ## Introdução {#introduction}
@@ -49,12 +47,12 @@ Quando as clientlibs necessárias estiverem ausentes, [adicionar um componente d
 
 As informações essenciais do recurso para desenvolvedores identificam as clientlibs necessárias.
 
-Além disso, a partir de uma instância do AEM, navegar até o [Guia de Componentes da Comunidade](/help/communities/components-guide.md) fornece acesso a uma lista de categorias de clientlib necessárias para um componente.
+Além disso, de uma instância do AEM, navegar até o [Guia de Componentes da Comunidade](/help/communities/components-guide.md) fornece acesso a uma lista de categorias de clientlib necessárias para um componente.
 
 Por exemplo, na parte superior da [página Análises](https://localhost:4502/content/community-components/en/reviews.html), as bibliotecas de clientes necessárias listadas são
 
 * cq.ckeditor
-* cq.social.hbs.reviews
+* cq.social.hbs.review
 
 ![clientlibs-comentários](assets/clientlibs-reviews.png)
 
@@ -64,26 +62,26 @@ Quando quiser adicionar um componente Comunidades a uma página, será necessár
 
 Use o [CRXDE|Lite](#using-crxde-lite) para modificar uma clientlibslist existente para uma página de site da comunidade.
 
-Para adicionar um clientlib para um site da comunidade usando o [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
+Para adicionar uma clientlib para um site da comunidade usando o [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
 
 * Navegue até [https://&lt;server>:&lt;port>/crx/de](https://localhost:4502/crx/de).
 * Localize o nó `clientlibslist` da página em que você deseja adicionar o componente:
 
-   * `/content/sites/sample/en/page/jcr:content/clientlibslist`
+  * `/content/sites/sample/en/page/jcr:content/clientlibslist`
 
 * Com o nó `clientlibslist` selecionado:
 
-   * Localize a propriedade `scg:requiredClientLibs` da Cadeia de Caracteres [].
-   * Selecione seu `Value` para poder acessar a caixa de diálogo Matriz de cadeia de caracteres.
+  * Localize a propriedade `scg:requiredClientLibs` da Cadeia de Caracteres [].
+  * Selecione seu `Value` para poder acessar a caixa de diálogo Matriz de cadeia de caracteres.
 
-      * Role para baixo, se necessário.
-      * Selecione + para inserir uma nova biblioteca do cliente.
+    * Role para baixo, se necessário.
+    * Selecione + para inserir uma nova biblioteca do cliente.
 
-         * Repita para adicionar mais bibliotecas de clientes.
+      * Repita para adicionar mais bibliotecas de clientes.
 
-         * Selecione **OK**.
+      * Selecione **OK**.
 
-   * Selecione **Salvar tudo**.
+  * Selecione **Salvar tudo**.
 
 >[!NOTE]
 >

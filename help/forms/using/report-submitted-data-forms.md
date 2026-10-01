@@ -1,20 +1,22 @@
 ---
 title: APIs para trabalhar com formulários enviados no portal de formulários
+
 description: O AEM Forms fornece APIs que você pode usar para consultar e realizar ações em dados de formulários enviados no portal de formulários.
+
+
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish, developer-reference
+
 feature: Forms Portal
 exl-id: a685889e-5d24-471c-926d-dbb096792bc8
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '539'
+source-wordcount: '544'
 ht-degree: 4%
-
 ---
-
 # APIs para trabalhar com formulários enviados no portal de formulários {#apis-to-work-with-submitted-forms-on-forms-portal}
 
 O AEM Forms fornece APIs que você pode usar para consultar dados de formulários enviados por meio do portal de formulários. Além disso, você pode publicar comentários ou atualizar propriedades de formulários enviados usando as APIs explicadas neste documento.

@@ -1,6 +1,6 @@
 ---
 title: Arquitetura do AEM Forms Workspace
-description: Informações conceituais e visão geral da arquitetura do espaço de trabalho do LiveCycle AEM Forms.
+description: Informações conceituais e visão geral da arquitetura do LiveCycle AEM Forms workspace.
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,14 +11,12 @@ feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '219'
+source-wordcount: '220'
 ht-degree: 0%
-
 ---
-
 # Arquitetura do AEM Forms Workspace {#aem-forms-workspace-architecture}
 
-O espaço de trabalho do AEM Forms é um aplicativo web hospedado no CRX™. Quando o espaço de trabalho é aberto em um navegador, um recurso do CRX é acessado e o aplicativo é renderizado como a página HTML no navegador.
+O espaço de trabalho do AEM Forms é um aplicativo web hospedado no CRX™. Quando o espaço de trabalho é aberto em um navegador, um recurso do CRX é acessado e o aplicativo é renderizado como uma página do HTML no navegador.
 
 O aplicativo acessa o servidor do AEM Forms nos endpoints REST para fazer o seguinte:
 

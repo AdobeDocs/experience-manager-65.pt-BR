@@ -1,22 +1,20 @@
 ---
 title: Criando um Manipulador de Usuários Externos para Convidar
-description: Saiba como criar um Manipulador de usuários externos para convite. Ele permite que o serviço Rights Management convide usuários externos para se tornarem usuários Rights Management.
+description: Saiba como criar um Manipulador de usuários externos para convite. Ele permite que o serviço Rights Management convide usuários externos para se tornarem usuários do Rights Management.
 role: Developer
 exl-id: b0416716-dcc9-4f80-986a-b9660a7c8f6b
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1160'
+source-wordcount: '1165'
 ht-degree: 0%
-
 ---
-
 # Criando um Manipulador de Usuários Externos para Convidar {#create-invite-external-users-handler}
 
 **Exemplos e exemplos neste documento são somente para AEM Forms no ambiente JEE.**
 
-Você pode criar um Manipulador de usuários externos para o serviço Rights Management. Rights Management Um Manipulador de usuários externos para convidar usuários externos para se tornarem usuários Rights Management. Depois que um usuário se torna um usuário Rights Management, ele pode executar tarefas, como abrir um documento PDF protegido por política. Depois que o Manipulador para usuários externos do Convite é implantado no AEM Forms, você pode usar o console de administração para interagir com ele.
+Você pode criar um Manipulador de usuários externos para o serviço Rights Management. Um Manipulador de usuários externos para convidar permite que o serviço Rights Management convide usuários externos para se tornarem usuários do Rights Management. Depois que um usuário se torna um usuário do Rights Management, ele pode executar tarefas, como abrir um documento do PDF protegido por política. Depois que o Manipulador para usuários externos do Convite é implantado no AEM Forms, você pode usar o console de administração para interagir com ele.
 
 >[!NOTE]
 >
@@ -36,13 +34,13 @@ Para desenvolver um Handler de Usuários Externos do Convite, você deve executa
 
 Para configurar seu ambiente de desenvolvimento, você deve criar um projeto Java, como um projeto Eclipse. A versão do Eclipse com suporte é `3.2.1` ou posterior.
 
-O SPI do Rights Management exige que o arquivo `edc-server-spi.jar` seja definido no caminho de classe do seu projeto. Se você não fizer referência a esse arquivo JAR, não poderá usar o SPI do Rights Management no projeto Java. Este arquivo JAR está instalado com o SDK do AEM Forms na pasta `[install directory]\Adobe\Adobe_Experience_Manager_forms\sdk\spi`.
+O SPI do Rights Management requer que o arquivo `edc-server-spi.jar` seja definido no caminho de classe do seu projeto. Se você não fizer referência a esse arquivo JAR, não poderá usar a SPI do Rights Management no projeto Java. Este arquivo JAR está instalado com o AEM Forms SDK na pasta `[install directory]\Adobe\Adobe_Experience_Manager_forms\sdk\spi`.
 
-Além de adicionar o arquivo `edc-server-spi.jar` ao caminho de classe do seu projeto, você também deve adicionar os arquivos JAR necessários para usar a API de serviço de Rights Management. Esses arquivos são necessários para usar a API do Serviço Rights Management no Manipulador de usuários externos do convite.
+Além de adicionar o arquivo `edc-server-spi.jar` ao caminho de classe do seu projeto, você também deve adicionar os arquivos JAR necessários para usar a API de serviço do Rights Management. Esses arquivos são necessários para usar a API de serviço do Rights Management no Manipulador de usuários externos do convite.
 
 ## Definição da implementação do manipulador de convidar usuários externos {#define-invite-external-users-handler}
 
-Para desenvolver um manipulador de convidar usuários externos, você deve criar uma classe Java que implemente a interface `com.adobe.edc.server.spi.ersp.InvitedUserProvider`. Esta classe contém um método chamado `invitedUser`, que o serviço Rights Management invoca quando endereços de email são enviados usando a página **Adicionar Usuários Convidados**, acessível pelo console de administração.
+Para desenvolver um manipulador de convidar usuários externos, você deve criar uma classe Java que implemente a interface `com.adobe.edc.server.spi.ersp.InvitedUserProvider`. Esta classe contém um método chamado `invitedUser`, que o serviço Rights Management invoca quando endereços de email são enviados usando a página **Adicionar Usuários Convidados** acessível pelo console de administração.
 
 O método `invitedUser` aceita uma instância `java.util.List`, que contém endereços de email do tipo cadeia de caracteres enviados da página **Adicionar Usuários Convidados**. O método `invitedUser` retorna uma matriz de objetos `InvitedUserProviderResult`, que geralmente é um mapeamento de endereços de email para objetos do Usuário (não retorne nulo).
 
@@ -238,7 +236,7 @@ Para adicionar usuários externos a convidar usando o console de administração
 
    >[!NOTE]
    >
-   > É recomendável usar o comando &quot;Ctrl + C&quot; para reiniciar o SDK. Reiniciar o SDK do AEM usando métodos alternativos, por exemplo, parar processos Java, pode levar a inconsistências no ambiente de desenvolvimento do AEM.
+   > É recomendável usar o comando &#39;Ctrl + C&#39; para reiniciar o SDK. Reiniciar o AEM SDK usando métodos alternativos, por exemplo, parar processos Java, pode levar a inconsistências no ambiente de desenvolvimento do AEM.
 
 1. Faça logon no console de administração.
 1. Clique em **[!UICONTROL Serviços]** > **[!UICONTROL Rights Management]** > **[!UICONTROL Configuração]** > Convidado **[!UICONTROL Registro de Usuário]**.

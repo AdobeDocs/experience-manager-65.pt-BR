@@ -1,21 +1,24 @@
 ---
 title: Utilização de gráficos em Comunicações interativas
+
 description: Ao usar gráficos em uma comunicação interativa, é possível condensar grandes quantidades de informações em um formato visual fácil de analisar
+
+
 content-type: reference
 topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
+
 docset: aem65
+
 feature: Interactive Communication
 exl-id: 0f877a15-a17f-427f-8d89-62ada4d20918
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '2621'
+source-wordcount: '2678'
 ht-degree: 1%
-
 ---
-
 # Utilização de gráficos em Comunicações interativas{#using-charts-in-interactive-communications}
 
 Um gráfico é uma representação visual de dados. Ele condensa grandes quantidades de informações em um formato visual fácil de entender, permitindo que os recipients da Comunicação interativa visualizem, interpretem e analisem melhor dados complexos.
@@ -81,7 +84,7 @@ Configure as seguintes propriedades ao criar gráficos para canais de impressão
   </tr>
   <tr>
    <td>Série &gt; Objeto de modelo de dados</td>
-   <td>Nome do item de coleção de modelo de dados de formulário para adicionar várias séries ao gráfico.<br /> Escolha uma propriedade de objeto de modelo de dados de formulário pai para as propriedades representadas no eixo X e no eixo Y para formar uma série significativa. O objeto de modelo de dados vinculado deve ser do tipo Number, String ou Date.</td>
+   <td>Nome do item de coleção de modelo de dados de formulário para adicionar várias séries ao gráfico.<br /> Escolha uma propriedade pai do objeto de modelo de dados de formulário para as propriedades representadas no eixo X e no eixo Y para formar uma série significativa. O objeto de modelo de dados vinculado deve ser do tipo Number, String ou Date.</td>
    <td>Impressão e Web</td>
   </tr>
   <tr>
@@ -170,7 +173,7 @@ Configure as seguintes propriedades ao criar gráficos para canais de impressão
      <li><strong>Ponto de Referência &gt; Objeto de Modelo de Dados para Série: </strong>Disponível para vários gráficos de Quadrante de série se você selecionar <span class="uicontrol">Objeto de Modelo de Dados</code> na lista suspensa Tipo de vínculo. Defina a propriedade do objeto de modelo de dados de formulário para identificar a série do ponto de referência. </li>
      <li><strong>Ponto de Referência &gt; Valor do Objeto de Modelo de Dados para Série: </strong>Disponível para vários gráficos de Quadrante de série se você selecionar <span class="uicontrol">Objeto de Modelo de Dados</code> na lista suspensa Tipo de vínculo. Use a propriedade do objeto de modelo de dados de formulário para a série e o valor definido neste campo para identificar a série do ponto de referência.</li>
      <li><strong>Ponto de Referência &gt; Objeto de Modelo de Dados do Ponto de Referência: </strong>Disponível para gráficos do Quadrante se você selecionar <span class="uicontrol">Objeto de Modelo de Dados</code> na lista suspensa Tipo de vínculo. Defina uma propriedade do objeto de modelo de dados de formulário que seja semelhante às propriedades representadas no eixo X e no eixo Y. Além disso, para várias séries, defina uma propriedade do objeto de modelo de dados que seja uma entidade secundária da propriedade do objeto de modelo de dados definida para a série.</li>
-     <li><strong>Ponto de Referência &gt; Valor do Objeto de Modelo de Dados para o Ponto de Referência: </strong>Disponível para gráficos do Quadrante se você selecionar <span class="uicontrol">Objeto de Modelo de Dados</code> na lista suspensa Tipo de vínculo. Use a propriedade do objeto de modelo de dados de formulário para o ponto de referência e o valor definido neste campo para identificar o ponto de referência do gráfico.<br /> <strong>Rótulos do quadrante &gt; Parte superior esquerda:</strong> Disponível para gráficos do quadrante para especificar o nome do quadrante superior esquerdo.</li>
+     <li><strong>Ponto de Referência &gt; Valor do Objeto de Modelo de Dados para o Ponto de Referência: </strong>Disponível para gráficos do Quadrante se você selecionar <span class="uicontrol">Objeto de Modelo de Dados</code> na lista suspensa Tipo de vínculo. Use a propriedade do objeto de modelo de dados de formulário para o ponto de referência e o valor definido neste campo para identificar o ponto de referência do gráfico.<br /> <strong>Rótulos do quadrante &gt; Superior esquerdo:</strong> Disponível para gráficos do quadrante para especificar o nome do quadrante Superior esquerdo.</li>
      <li><strong>Rótulos do quadrante &gt; Parte superior direita:</strong> Disponível para gráficos do quadrante para especificar o nome do quadrante Parte superior direita.</li>
      <li><strong>Rótulos do quadrante &gt; Parte Inferior Direita: </strong>Disponível para gráficos do quadrante para especificar o nome do quadrante Inferior Direito.</li>
      <li><strong>Rótulos do quadrante &gt; Parte Inferior Esquerda: </strong>Disponível para gráficos do quadrante para especificar o nome do quadrante Inferior Esquerdo.</li>

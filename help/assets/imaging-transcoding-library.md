@@ -1,6 +1,6 @@
 ---
 title: Biblioteca de transcodificação de imagem
-description: Saiba como configurar e usar a Biblioteca de transcodificação de imagem do Adobe, uma solução de processamento de imagem que pode executar funções principais de tratamento de imagem, incluindo codificação, transcodificação, reamostragem de imagem e redimensionamento de imagem.
+description: Saiba como configurar e usar a Biblioteca de transcodificação de imagens do Adobe, uma solução de processamento de imagens que pode executar funções principais de tratamento de imagens, incluindo codificação, transcodificação, redefinição da resolução de imagens e redimensionamento de imagens.
 contentOwner: AG
 role: Admin
 feature: Renditions,Developer Tools,Asset Processing
@@ -8,20 +8,18 @@ exl-id: b67465f9-177c-49c4-b4eb-a1d6e09ac9a2
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 9014a7dd3c9279a4da3944c1b095fd60352fdbeb
 workflow-type: tm+mt
-source-wordcount: '977'
+source-wordcount: '1015'
 ht-degree: 0%
-
 ---
-
 # Biblioteca de transcodificação de imagem {#imaging-transcoding-library}
 
-A Biblioteca de transcodificação de imagem do Adobe é uma solução de processamento de imagem proprietária que pode executar funções principais de manipulação de imagem, incluindo:
+A Biblioteca de transcodificação de imagens da Adobe é uma solução de processamento de imagens proprietária que pode executar funções principais de tratamento de imagens, incluindo:
 
 * Codificação
 * Transcodificação (conversão de formatos compatíveis)
 * Nova amostra de imagem usando algoritmos PS e Intel IPP
 * Profundidade de bits e preservação do perfil de cores
-* compactação de qualidade do JPEG
+* Compactação de qualidade do JPEG
 * Redimensionamento de imagem
 
 A Biblioteca de transcodificação de imagens oferece suporte a CMYK e suporte alfa total, exceto CMYK -Alpha.
@@ -31,7 +29,7 @@ Além de oferecer suporte a uma grande variedade de formatos de arquivo e perfis
 * **Escala com aumento do tamanho ou da resolução de arquivos**: a escala é alcançada principalmente pela capacidade patenteada da Biblioteca de Transcodificação de Imagens de redimensionar ao decodificar arquivos. Essa capacidade garante que o uso de memória em tempo de execução seja sempre ideal e não seja uma função quadrática de aumento do tamanho do arquivo ou megapixels de resolução. A Biblioteca de transcodificação de imagens pode processar arquivos maiores e de alta resolução (contendo megapixels maiores). Ferramentas de terceiros, como o ImageMagick, são incapazes de lidar com arquivos grandes e falhas durante o processamento desses arquivos.
 * **Algoritmos de compactação e redimensionamento de qualidade do Photoshop**: consistência com o padrão do setor em termos de qualidade de redução de resolução (bicúbico suave, nítido e automático) e qualidade de compactação. A Biblioteca de transcodificação de imagem avalia ainda mais o fator de qualidade da imagem de entrada e usa de forma inteligente tabelas e configurações de qualidade ideais para a imagem de saída. Essa capacidade produz arquivos de tamanho ideal sem comprometer a qualidade visual.
 * **Taxa de transferência alta:** o tempo de resposta é menor e a taxa de transferência é consistentemente maior que ImageMagick. Portanto, a Biblioteca de transcodificação de imagens deve reduzir o tempo de espera dos usuários e o custo da hospedagem.
-* **Dimensione melhor com o carregamento simultâneo:** A Biblioteca de Transcodificação de Imagens é executada de maneira ideal sob condições de carregamento simultâneas. Ele oferece alto throughput com desempenho otimizado da CPU, uso da memória e baixo tempo de resposta, o que ajuda a reduzir o custo da hospedagem.
+* **Dimensione melhor com o carregamento simultâneo:** A Biblioteca de Transcodificação de Imagens é executada de maneira ideal sob condições de carregamento simultâneas. Ele fornece alto throughput com desempenho otimizado do CPU, uso de memória e baixo tempo de resposta, o que ajuda a reduzir o custo da hospedagem.
 
 ## Plataformas compatíveis {#supported-platforms}
 
@@ -112,7 +110,7 @@ Atualize o fluxo de trabalho do [!UICONTROL Ativo de atualização do DAM] para 
 1. Na página **[!UICONTROL Modelos de fluxo de trabalho]**, abra o modelo de fluxo de trabalho **[!UICONTROL Ativo de atualização do DAM]** no modo de edição.
 
 1. Abra a etapa do processo de fluxo de trabalho **[!UICONTROL Processar Miniaturas]**. Na guia **[!UICONTROL Miniaturas]**, adicione os tipos MIME para os quais você deseja ignorar o processo de geração de miniaturas padrão na lista **[!UICONTROL Ignorar tipos MIME]**.
-Por exemplo, se você deseja criar miniaturas para uma imagem de TIFF usando a Biblioteca de transcodificação de imagem, especifique `image/tiff` no campo **[!UICONTROL Ignorar tipos MIME]**.
+Por exemplo, se você deseja criar miniaturas para uma imagem TIFF usando a Biblioteca de transcodificação de imagem, especifique `image/tiff` no campo **[!UICONTROL Ignorar tipos MIME]**.
 
 1. Na guia **[!UICONTROL Imagem Habilitada para a Web]**, adicione os tipos MIME para os quais você deseja ignorar o processo de geração de representação da Web padrão em **[!UICONTROL Ignorar Lista]**. Por exemplo, se você ignorou o tipo MIME `image/tiff` na etapa acima, adicione `image/tiff` à lista de permissões.
 
@@ -122,7 +120,7 @@ Por exemplo, se você deseja criar miniaturas para uma imagem de TIFF usando a B
 
 1. Alterne o painel lateral e, na lista de etapas, adicione **[!UICONTROL SWitchEngine Handler]**.
 
-1. Adicione comandos ao [!UICONTROL Manipulador do SwitchEngine] com base em seus requisitos personalizados. Ajuste os parâmetros dos comandos especificados para atender aos requisitos. Por exemplo, se você deseja preservar o perfil de cores da imagem do JPEG, adicione os seguintes comandos à lista **[!UICONTROL Comandos]**:
+1. Adicione comandos ao [!UICONTROL Manipulador do SwitchEngine] com base em seus requisitos personalizados. Ajuste os parâmetros dos comandos especificados para atender aos requisitos. Por exemplo, se você quiser preservar o perfil de cores da imagem do JPEG, adicione os seguintes comandos à lista **[!UICONTROL Comandos]**:
 
    * `SWitchEngine -input ${file} -destMime PNG -resize 48 -output ${directory}cq5dam.thumbnail.48.48.png`
    * `SWitchEngine -input ${file} -destMime PNG -resize 140x100 -output ${directory}cq5dam.thumbnail.140.100.png`
@@ -139,7 +137,7 @@ Por exemplo, se você deseja criar miniaturas para uma imagem de TIFF usando a B
 
 1. Sincronize o modelo de fluxo de trabalho atualizado do [!UICONTROL Ativo de atualização do DAM]. Salve o workflow.
 
-Para verificar a configuração, carregue uma imagem de TIFF e monitore o arquivo error.log. Você observará `INFO` mensagens com menções de `SwitchEngineHandlingProcess execute: executing command line`. Os logs mencionam as representações geradas. Após a conclusão do fluxo de trabalho, você poderá exibir as novas representações em [!DNL Experience Manager].
+Para verificar a configuração, carregue uma imagem do TIFF e monitore o arquivo error.log. Você observará `INFO` mensagens com menções de `SwitchEngineHandlingProcess execute: executing command line`. Os logs mencionam as representações geradas. Após a conclusão do fluxo de trabalho, você poderá exibir as novas representações em [!DNL Experience Manager].
 
 >[!MORELIKETHIS]
 >
