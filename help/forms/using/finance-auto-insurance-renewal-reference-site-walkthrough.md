@@ -11,11 +11,9 @@ feature: Adaptive Forms,Foundation Components
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '761'
 ht-degree: 0%
-
 ---
-
 # Apresentação do site de referência da Renovação do Seguro Automático We.Finance{#we-finance-auto-insurance-renewal-reference-site-walkthrough}
 
 ## Cenário do site de referência do We.Finance  {#we-finance-reference-site-scenario}

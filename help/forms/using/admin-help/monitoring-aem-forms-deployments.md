@@ -1,6 +1,6 @@
 ---
-title: Monitoramento de implantações de formulários AEM
-description: Você pode monitorar implantações de formulários AEM tanto no nível do sistema quanto no nível interno. Saiba mais sobre o monitoramento de implantações de formulários AEM neste documento.
+title: Monitoramento de implantações de formulários do AEM
+description: Você pode monitorar as implantações de formulários do AEM tanto no nível do sistema quanto no nível interno. Saiba mais sobre o monitoramento de implantações de formulários do AEM neste documento.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_aem_forms
@@ -11,14 +11,12 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '587'
+source-wordcount: '586'
 ht-degree: 0%
-
 ---
+# Monitoramento de implantações de formulários do AEM {#monitoring-aem-forms-deployments}
 
-# Monitoramento de implantações de formulários AEM {#monitoring-aem-forms-deployments}
-
-Você pode monitorar implantações de formulários AEM tanto no nível do sistema quanto no nível interno. Você pode usar ferramentas de gerenciamento especializadas, como HP OpenView, IBM® Tivoli e CA UniCenter, e um monitor JMX de terceiros chamado *JConsole*, para monitorar especificamente a atividade do Java™. A implementação de uma estratégia de monitoramento melhora a disponibilidade, a confiabilidade e o desempenho das implantações de formulários AEM.
+Você pode monitorar as implantações de formulários do AEM tanto no nível do sistema quanto no nível interno. Você pode usar ferramentas de gerenciamento especializadas, como HP OpenView, IBM® Tivoli e CA UniCenter, e um monitor JMX de terceiros chamado *JConsole*, para monitorar especificamente a atividade do Java™. A implementação de uma estratégia de monitoramento melhora a disponibilidade, a confiabilidade e o desempenho das implantações de formulários do AEM.
 
 <!-- For more information about monitoring AEM forms deployments, see [A technical guide for monitoring AEM forms deployments](https://www.adobe.com/devnet/livecycle/pdfs/lc_monitoring_wp_ue.pdf). This URL is 404. No suitable replacement URL was found after a search. Do not make this link live if it is dead! -->
 

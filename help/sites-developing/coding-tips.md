@@ -11,11 +11,9 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '857'
+source-wordcount: '861'
 ht-degree: 0%
-
 ---
-
 # Dicas de codificação{#coding-tips}
 
 ## Use taglibs ou HTL o máximo possível {#use-taglibs-or-htl-as-much-as-possible}
@@ -30,7 +28,7 @@ O código é gravado uma vez, mas lido várias vezes. Gastar algum tempo antes p
 
 Idealmente, outro programador não deve ter que abrir um módulo para entender o que ele faz. Da mesma forma, eles devem ser capazes de dizer o que um método faz sem lê-lo. Quanto melhor você se inscrever nessas ideias, mais fácil será ler o código e mais rápido poderá escrever e alterar o código.
 
-Na base de código AEM, as seguintes convenções são usadas:
+Na base de código do AEM, as seguintes convenções são usadas:
 
 
 * Uma única implementação de uma interface é chamada `<Interface>Impl`, ou seja, `ReaderImpl`.
@@ -55,7 +53,7 @@ Idealmente, os nomes devem revelar sua intenção. Um teste de código comum par
    <td><p>int elapsedTimeInDays;</p> </td>
   </tr>
   <tr>
-   <td><p>//obter imagens com marcas de formatação<br /> getItems() de Lista pública {}</p> </td>
+   <td><p>//get tags images<br /> public List getItems() {}</p> </td>
    <td><p>lista pública getTaggedImages() {}</p> </td>
   </tr>
  </tbody>
@@ -75,7 +73,7 @@ Quando uma API é descontinuada, é sempre melhor encontrar a nova abordagem rec
 
 ### Gravar código localizável {#write-localizable-code}
 
-Qualquer cadeia de caracteres que não esteja sendo fornecida por um autor deve ser encapsulada em uma chamada para o dicionário i18n do AEM por meio de *I18n.get()* em JSP/Java e *CQ.I18n.get()* no JavaScript. Essa implementação retornará a string passada para ela se nenhuma implementação for encontrada, portanto, oferece a flexibilidade de implementar a localização após implementar os recursos no idioma principal.
+As cadeias de caracteres que não são fornecidas por um autor devem ser encapsuladas em uma chamada para o dicionário i18n da AEM por meio de *I18n.get()* em JSP/Java e *CQ.I18n.get()* no JavaScript. Essa implementação retornará a string passada para ela se nenhuma implementação for encontrada, portanto, oferece a flexibilidade de implementar a localização após implementar os recursos no idioma principal.
 
 ### Evitar caminhos de recursos para segurança {#escape-resource-paths-for-safety}
 
@@ -87,13 +85,13 @@ O AEM fornece uma API XSS para limpar facilmente os parâmetros e garantir a seg
 
 ### Implementar o registro apropriado {#implement-appropriate-logging}
 
-Para o código Java™, o AEM é compatível com o slf4j como a API padrão para mensagens de registro e deve ser usado com as configurações disponibilizadas pelo console OSGi para fins de consistência na administração. O Slf4j expõe cinco níveis de log diferentes. O Adobe recomenda usar as seguintes diretrizes ao escolher em qual nível registrar uma mensagem:
+Para código Java™, o AEM é compatível com o slf4j como a API padrão para mensagens de registro e deve ser usado com as configurações disponibilizadas por meio do console OSGi para fins de consistência na administração. O Slf4j expõe cinco níveis de log diferentes. A Adobe recomenda usar as seguintes diretrizes ao escolher em qual nível registrar uma mensagem:
 
 * ERRO: quando algo está com defeito no código, o processamento não pode continuar. Isso frequentemente ocorrerá como resultado de uma exceção inesperada. É útil incluir rastreamentos de pilha nesses cenários.
 * AVISO: quando algo não funcionou corretamente, mas o processamento pode continuar. Isso geralmente será o resultado de uma exceção esperada, como *PathNotFoundException*.
 * INFO: informações que seriam úteis ao monitorar um sistema. Lembre-se de que esse é o padrão e que a maioria dos clientes deixará isso em vigor em seus ambientes. Portanto, não o use excessivamente.
 * DEBUG: Informações de nível inferior sobre processamento. Útil ao depurar um problema com suporte.
-* TRACE: As informações de nível mais baixo, como métodos de entrada/saída. Normalmente, isso só será usado por desenvolvedores.
+* TRACE: as informações de nível mais baixo, como métodos de entrada/saída. Normalmente, isso só será usado por desenvolvedores.
 
 Se houver JavaScript, o *console.log* deverá ser usado somente durante o desenvolvimento e todas as instruções de log deverão ser removidas antes do lançamento.
 

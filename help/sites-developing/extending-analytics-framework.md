@@ -11,11 +11,9 @@ feature: Integration
 role: Developer
 source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '1610'
+source-wordcount: '1638'
 ht-degree: 0%
-
 ---
-
 # Personalização da estrutura do Adobe Analytics{#customizing-the-adobe-analytics-framework}
 
 A estrutura do Adobe Analytics determina as informações que são rastreadas com o Adobe Analytics. Para personalizar a estrutura padrão, use o JavaScript para adicionar rastreamento personalizado, integrar plug-ins do Adobe Analytics e alterar configurações gerais na estrutura usada para rastreamento.
@@ -242,7 +240,7 @@ Portanto, seu JavaScript deve definir `s.usePlugins` como `true` para que qualqu
 
 Obtenha o código JavaScript para plug-ins do Adobe Analytics e integre-os à sua estrutura do Adobe Analytics no AEM. Adicione o código a uma pasta da biblioteca do cliente da categoria `sitecatalyst.plugins` para que ela fique disponível para o seu código JavaScript personalizado.
 
-Por exemplo, se você integrar o plug-in `getQueryParams`, poderá chamá-lo da função `s_doPlugins` do seu JavaScript personalizado. O código de exemplo a seguir envia a sequência de consulta em **&quot;pid&quot;** da URL do referenciador como **eVar 1**, quando uma chamada de Adobe Analytics é acionada.
+Por exemplo, se você integrar o plug-in `getQueryParams`, poderá chamá-lo da função `s_doPlugins` do seu JavaScript personalizado. O código de exemplo a seguir envia a sequência de consulta em **&quot;pid&quot;** da URL do referenciador como **eVar1**, quando uma chamada de Adobe Analytics é acionada.
 
 ```
 s.usePlugins=true;
@@ -263,11 +261,11 @@ A pasta da biblioteca do cliente /libs/cq/analytics/clientlibs/sitecatalyst/plug
 
 >[!NOTE]
 >
->Crie uma pasta da biblioteca do cliente para seus plug-ins. Não adicione plug-ins à pasta `/libs/cq/analytics/clientlibs/sitecatalyst/plugins`. Essa prática garante que sua contribuição para a categoria `sitecatalyst.plugins` não seja substituída durante as reinstalações do AEM ou tarefas de atualização.
+>Crie uma pasta da biblioteca do cliente para seus plug-ins. Não adicione plug-ins à pasta `/libs/cq/analytics/clientlibs/sitecatalyst/plugins`. Esta prática garante que sua contribuição para a categoria `sitecatalyst.plugins` não seja substituída durante as reinstalações ou tarefas de atualização do AEM.
 
 Use o procedimento a seguir para criar a pasta da biblioteca do cliente para seus plug-ins. Você só precisa executar esse procedimento uma vez. Para adicionar um plug-in à pasta da biblioteca do cliente, use o procedimento subsequente.
 
-1. Em um navegador da Web, abra o CRXDE Lite. ([http://localhost:4502/crx/de](http://localhost:4502/crx/de))
+1. Em um navegador, abra o CRXDE Lite. ([http://localhost:4502/crx/de](http://localhost:4502/crx/de))
 
 1. Clique com o botão direito do mouse na pasta /apps/my-app/clientlibs e clique em Criar > Criar nó. Insira os seguintes valores de propriedade e clique em OK:
 
@@ -288,7 +286,7 @@ Use o procedimento a seguir para criar a pasta da biblioteca do cliente para seu
 
 1. Clique em Salvar tudo.
 
-Use o procedimento a seguir para obter o código do plug-in, armazená-lo no repositório AEM e adicioná-lo à pasta da biblioteca do cliente.
+Use o procedimento a seguir para obter o código do plug-in, armazená-lo no repositório do AEM e adicioná-lo à pasta da biblioteca do cliente.
 
 1. Faça logon em [sc.omniture.com](https://sc.omniture.com/login/) usando sua conta da Adobe Analytics.
 1. Na página de aterrissagem, acesse Ajuda > Página inicial da ajuda.

@@ -11,14 +11,12 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '3865'
+source-wordcount: '7653'
 ht-degree: 0%
-
 ---
-
 # Uso do xtypes (Interface clássica){#using-xtypes-classic-ui}
 
-Esta página descreve todos os xtypes disponíveis com o Adobe Experience Manager (AEM).
+Esta página descreve todos os xtypes que estão disponíveis no Adobe Experience Manager (AEM).
 
 Na linguagem ExtJS, um xtype é um nome simbólico dado a uma classe. Você pode ler o parágrafo &quot;Component XTypes&quot; da [Visão geral do ExtJS 2](https://www.sencha.com/learn/overview-of-extjs-2) para obter uma explicação detalhada sobre o que é um xtype e como ele pode ser usado.
 
@@ -102,13 +100,13 @@ Listados abaixo estão os xtypes disponíveis no Adobe Experience Manager:
 
   O BulkEditor fornece um mecanismo de pesquisa e uma grade para editar os resultados da pesquisa.
 
-  O BulkEditor deve ser inserido em um formulário HTML (exigido pela funcionalidade de importação). Funciona perfeitamente com um [CQ.Dialog](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Dialog).
+  O BulkEditor deve ser inserido em um formulário do HTML (exigido pela funcionalidade de importação). Funciona perfeitamente com um [CQ.Dialog](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Dialog).
 
 * bulkeditorform
 
   [CQ.wcm.BulkEditorForm](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.BulkEditorForm)
 
-  BulkEditorForm fornece [CQ.wcm.BulkEditor](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.BulkEditor) rodeado por um formulário HTML. Esta é a versão autônoma do [CQ.wcm.BulkEditor](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.BulkEditor). O formulário HTML é necessário para o botão de importação.
+  BulkEditorForm fornece [CQ.wcm.BulkEditor](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.BulkEditor) rodeado por um formulário HTML. Esta é a versão autônoma do [CQ.wcm.BulkEditor](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.BulkEditor). O formulário do HTML é necessário para o botão de importação.
 
 * botão
 
@@ -176,7 +174,7 @@ Listados abaixo estão os xtypes disponíveis no Adobe Experience Manager:
 
   Um controle de caixa de combinação com suporte para preenchimento automático, carregamento remoto, paginação e muitos outros recursos.
 
-  Uma ComboBox funciona de maneira semelhante a um campo HTML &lt;select> tradicional. A diferença é que, para enviar o [valueField](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.ComboBox), você deve especificar um [hiddenName](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.ComboBox) para criar uma entrada oculta.
+  Uma ComboBox funciona de maneira semelhante a um campo &lt;select> tradicional do HTML. A diferença é que, para enviar o [valueField](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.ComboBox), você deve especificar um [hiddenName](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.ComboBox) para criar uma entrada oculta.
 
 * componente
 
@@ -232,7 +230,7 @@ Listados abaixo estão os xtypes disponíveis no Adobe Experience Manager:
 
   WorkflowModelCombo é uma [CQ.Ext.form.ComboBox](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.ComboBox) personalizada que mostra uma lista de modelos de fluxo de trabalho disponíveis.
 
-* cq.workflow.model.selector
+* cq.workflow.model.seletor
 
   [CQ.wcm.WorkflowModelSelector](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.WorkflowModelSelector)
 
@@ -416,7 +414,7 @@ Listados abaixo estão os xtypes disponíveis no Adobe Experience Manager:
 
   [CQ.Ext.form.HtmlEditor](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.HtmlEditor)
 
-  Fornece um componente leve do Editor de HTML. Alguns recursos da barra de ferramentas não são compatíveis com o Safari e são ocultos automaticamente quando necessário. Isso é observado nas opções de configuração, quando apropriado.
+  Fornece um componente leve do Editor do HTML. Alguns recursos da barra de ferramentas não são compatíveis com o Safari e são ocultos automaticamente quando necessário. Isso é observado nas opções de configuração, quando apropriado.
 
   Os botões da barra de ferramentas do editor têm dicas de ferramentas definidas na propriedade [buttonTips](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.HtmlEditor).
 
@@ -534,7 +532,7 @@ Listados abaixo estão os xtypes disponíveis no Adobe Experience Manager:
 
 * menuseparator
 
-  [CQ.Ext.menu.Separador](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.menu.Separator)
+  [CQ.Ext.menu.Separator](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.menu.Separator)
 
   Adiciona uma barra separadora a um menu, usada para dividir grupos lógicos de itens de menu. Geralmente, você adiciona um desses itens usando &quot;-&quot; na chamada para add() ou na configuração dos itens, em vez de criar um diretamente.
 
@@ -580,13 +578,13 @@ Listados abaixo estão os xtypes disponíveis no Adobe Experience Manager:
 
   [CQ.wcm.OfflineImporter](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.OfflineImporter)
 
-  O OfflineImporter é uma ferramenta para importar e converter documentos do Microsoft® Word para páginas AEM. Esse recurso permite que o conteúdo seja editado offline usando um processador de texto.
+  O OfflineImporter é uma ferramenta para importar e converter documentos do Microsoft® Word para páginas do AEM. Esse recurso permite que o conteúdo seja editado offline usando um processador de texto.
 
 * ownerdraw
 
   [CQ.form.OwnerDraw](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.OwnerDraw)
 
-  O OwnerDraw pode conter código de HTML personalizado (inserido diretamente ou recuperado de um URL).
+  O OwnerDraw pode conter código HTML personalizado (inserido diretamente ou recuperado de um URL).
 
 * paginação
 
@@ -790,7 +788,7 @@ Listados abaixo estão os xtypes disponíveis no Adobe Experience Manager:
 
   [CQ.Static](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Static)
 
-  O estático pode ser usado para exibir texto ou HTML arbitrários.
+  O estático pode ser usado para exibir texto arbitrário ou HTML.
 
 * statistics
 

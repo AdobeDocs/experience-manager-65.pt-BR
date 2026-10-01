@@ -14,9 +14,7 @@ source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '112'
 ht-degree: 0%
-
 ---
-
 # Ferramentas das comunidades {#communities-tools}
 
 Para acessar o console de ferramentas das Comunidades, faça logon na instância do autor:

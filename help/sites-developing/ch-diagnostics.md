@@ -13,9 +13,7 @@ source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
 source-wordcount: '472'
 ht-degree: 1%
-
 ---
-
 # Diagnósticos do ContextHub {#contexthub-diagnostics}
 
 O ContextHub fornece uma página de diagnósticos na qual você pode ter uma visão geral da estrutura do ContextHub. Para abrir a página, vá para a página `contexthub.diagnostics.html` da instância do autor do AEM, por exemplo:

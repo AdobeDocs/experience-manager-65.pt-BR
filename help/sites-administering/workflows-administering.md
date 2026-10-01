@@ -11,11 +11,9 @@ feature: Operations
 role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '1010'
-ht-degree: 66%
-
+source-wordcount: '1015'
+ht-degree: 63%
 ---
-
 # Administração de instâncias do fluxo de trabalho{#administering-workflow-instances}
 
 O console do fluxo de trabalho fornece várias ferramentas para administrar instâncias do fluxo de trabalho e garantir que elas estejam em execução conforme esperado.
@@ -141,7 +139,7 @@ Para configurar o serviço, você pode usar o [Console da Web](/help/sites-deplo
    <th>Descrição</th>
   </tr>
   <tr>
-   <td>Nome da tarefa</td>
+   <td>Nome do processo</td>
    <td>scheduledpurge.name</td>
    <td>Um nome descritivo para a limpeza agendada.</td>
   </tr>
@@ -169,7 +167,7 @@ Para configurar o serviço, você pode usar o [Console da Web](/help/sites-deplo
 
 ## Configuração do tamanho máximo da caixa de entrada {#setting-the-maximum-size-of-the-inbox}
 
-Você pode definir o tamanho máximo da caixa de entrada configurando o **Serviço de Fluxo de Trabalho do Adobe Granite**, usando o [Console da Web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) ou [adicionar uma configuração OSGi ao repositório](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository). A tabela a seguir descreve a propriedade que você configura para qualquer método.
+Você pode definir o tamanho máximo da caixa de entrada configurando o **Serviço de Fluxo de Trabalho do Adobe Granite**, usando o [Console da Web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) ou [adicionando uma configuração OSGi ao repositório](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository). A tabela a seguir descreve a propriedade que você configura para qualquer método.
 
 >[!NOTE]
 >
@@ -189,7 +187,7 @@ Os dados processados por fluxos de trabalho são armazenados no armazenamento fo
 
 No nível do modelo de fluxo de trabalho, um sinalizador é fornecido para indicar que o modelo e suas instâncias de tempo de execução têm acesso ao armazenamento externo de metadados. As variáveis de fluxo de trabalho não são mantidas no JCR para as instâncias de fluxo de trabalho dos modelos marcados para armazenamento externo.
 
-A propriedade *userMetadataPersistenceEnabled* será armazenada no *nó jcr:content* do modelo de fluxo de trabalho. Esse sinalizador será mantido nos metadados do fluxo de trabalho como *cq:userMetaDataCustomPersistenceEnabled*.
+A propriedade *userMetadataPersistenceEnabled* está armazenada no nó *jcr:content* do modelo de fluxo de trabalho. Esse sinalizador é mantido nos metadados do fluxo de trabalho como *cq:userMetaDataCustomPersistenceEnabled*.
 
 A ilustração abaixo mostra como definir o sinalizador em um fluxo de trabalho.
 

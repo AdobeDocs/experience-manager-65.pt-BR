@@ -1,25 +1,25 @@
 ---
 title: Erros de indisponibilidade de serviço do CRX/pacote e da página inicial após a instalação do service pack mais recente do 6.5.15.0
 description: Erros de indisponibilidade de serviço do CRX/pacote e da página inicial após a instalação do service pack mais recente do 6.5.15.0
+SEO Description: Trouble shooting steps to resolve the errors after installing latest 6.5.15.0 service pack
 exl-id: dfe015a3-3a24-41c5-aede-8e086851d62b
 solution: Experience Manager, Experience Manager Forms
+
 role: User, Developer
 feature: Adaptive Forms,AEM Forms on JEE,AEM Forms on OSGi
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '276'
-ht-degree: 2%
-
+source-wordcount: '368'
+ht-degree: 1%
 ---
-
-# Erro de serviço indisponível após a instalação do pacote de serviços do AEM (6.5.15.0) {#steps-to-resolve-error-after-installing-service-pack}
+# Erro de serviço indisponível após a instalação do service pack do AEM (6.5.15.0) {#steps-to-resolve-error-after-installing-service-pack}
 
 ## Problema {#issue}
 
-Depois de instalar o [AEM 6.5.15.0 service pack](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip), o erro ocorre:
+Após a instalação do [AEM 6.5.15.0 service pack](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip), o erro ocorre como:
 * ERRO [FelixDispatchQueue] org.apache.sling.scripting.console FrameworkEvent ERROR (org.osgi.framework.BundleException: Não é possível resolver org.apache.sling.scripting.console
 
-Após instalar o pacote de serviços AEM 6.5.15.0, o CRX/pacote e a página inicial mostram erros de serviço indisponíveis.
+Após instalar o pacote de serviços do AEM 6.5.15.0, o CRX/pacote e a página inicial mostram erros de serviço indisponíveis.
 
 ## Aplica-se a {#applies-to}
 

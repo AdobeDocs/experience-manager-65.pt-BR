@@ -11,18 +11,16 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '1854'
+source-wordcount: '1901'
 ht-degree: 1%
-
 ---
-
 # Adicionar um botão de ação personalizado na interface de Criar correspondência {#add-custom-action-button-in-create-correspondence-ui}
 
 ## Visão geral {#overview}
 
 A solução Gerenciamento de correspondência permite adicionar ações personalizadas à interface do usuário Criar correspondência.
 
-O cenário deste documento explica como você pode criar um botão na interface do usuário Criar correspondência para compartilhar uma correspondência como um PDF de revisão anexado a um email.
+O cenário deste documento explica como criar um botão na interface do usuário Criar correspondência para compartilhar uma correspondência como uma PDF de revisão anexada a um email.
 
 ### Pré-requisitos {#prerequisites}
 
@@ -37,7 +35,7 @@ Adicionar um botão com uma ação (aqui, enviar uma carta para revisão) à int
 
 1. Adicionando o botão à Interface do Usuário Criar Correspondência
 1. Adição do controle de ação ao botão
-1. Adicionar o processo de LiveCycle para habilitar o controle de ações
+1. Adicionar o processo do LiveCycle para ativar a manipulação de ações
 
 ### Adicionar o botão à interface do usuário Criar correspondência {#add-the-button-to-the-create-correspondence-user-interface}
 
@@ -91,7 +89,7 @@ Adicionar um botão com uma ação (aqui, enviar uma carta para revisão) à int
    </extensionsConfig>
    ```
 
-1. Para enviar uma carta por email, você pode usar o Forms Workflow do LiveCycle. Adicione uma tag customAction na tag modelExtension em acmExtensionsConfig.xml da seguinte maneira:
+1. Para enviar uma carta por email, você pode usar o LiveCycle Forms Workflow. Adicione uma tag customAction na tag modelExtension em acmExtensionsConfig.xml da seguinte maneira:
 
    ```xml
     <customAction name="Letter Review" label="Letter Review" tooltip="Letter Review" styleName="" permissionName="forms-users" actionHandler="CM.domain.CCRCustomActionHandler">
@@ -117,7 +115,7 @@ Adicionar um botão com uma ação (aqui, enviar uma carta para revisão) à int
    | **Nome** | **Descrição** |
    |---|---|
    | serviceName | Se uma customAction contiver uma tag secundária com o nome serviceName, ao clicar no botão/link relevante, um processo será chamado com o nome representado pela tag serviceName. Certifique-se de que esse processo tenha a mesma assinatura que o PostProcess da Carta. Adicione o prefixo &quot;Forms Workflow ->&quot; no nome do serviço. |
-   | Parâmetros que contêm o prefixo cm_ no nome da tag | Se uma customAction contiver uma tag secundária começando com o nome cm_, em seguida, no pós-processo (seja no processo Letter Post ou no processo especial representado pela tag serviceName ), esses parâmetros estarão disponíveis no código XML de entrada sob a tag relevante com o prefixo cm_ removido. |
+   | Parâmetros que contêm o prefixo cm_ no nome da tag | Se uma customAction contiver uma tag secundária começando com o nome cm_, em seguida, no pós-processo (seja ele Letter Post Process ou o processo especial representado pela tag serviceName ), esses parâmetros estarão disponíveis no código XML de entrada sob a tag relevante com o prefixo cm_ removido. |
    | actionName | Sempre que um processo posterior ocorre devido a um clique, o XML enviado contém uma tag especial com o nome na tag com o nome da ação do usuário. |
 
 1. Clique em **Salvar tudo**.
@@ -168,11 +166,11 @@ Depois de fazer cada alteração no lado do servidor, reinicie o pacote de bloco
 >
 >Talvez seja necessário limpar o cache do navegador.
 
-1. Ir para `https://[host]:'port'/system/console/bundles`. Se necessário, efetue login como Administrador.
+1. Acesse `https://[host]:'port'/system/console/bundles`. Se necessário, efetue login como Administrador.
 
 1. Localize o pacote de blocos de construção do Adobe Asset Composer. Reinicie o pacote: clique em Stop e em Start.
 
-   ![Bloco De Construção Do Adobe Asset Composer](assets/6_assetcomposerbuildingblockbundle.png)
+   ![Bloco de Construção do Adobe Asset Composer](assets/6_assetcomposerbuildingblockbundle.png)
 
 Depois de reiniciar o pacote de blocos de construção do Adobe Asset Composer, o botão personalizado é exibido na interface do usuário Criar correspondência. É possível abrir uma correspondência na interface do usuário Criar correspondência para visualizar o botão personalizado.
 
@@ -190,7 +188,7 @@ Manipular a ação/botão ao clicar na ação/botão inclui lógica para:
 * Ativar/desativar a ação recém-adicionada: feito substituindo a função actionEnabled().
 * Manuseio real da ação quando o usuário clica no botão: feito substituindo a implementação da função handleAction().
 
-1. Ir para `https://'[server]:[port]'/[ContextPath]/crx/de`. Se necessário, efetue login como Administrador.
+1. Acesse `https://'[server]:[port]'/[ContextPath]/crx/de`. Se necessário, efetue login como Administrador.
 
 1. Na pasta de aplicativos, crie uma pasta chamada `js` na ramificação /apps do CRX com estrutura semelhante à seguinte pasta:
 
@@ -321,7 +319,7 @@ Manipular a ação/botão ao clicar na ação/botão inclui lógica para:
       '</div>';
       ```
 
-### Adicionar o processo LiveCycle para habilitar a ação <span class="acrolinxCursorMarker"></code>manuseio {#add-the-livecycle-process-to-enable-action-span-class-acrolinxcursormarker-span-handling}
+### Adicionar o processo do LiveCycle para habilitar a ação <span class="acrolinxCursorMarker"></code>tratamento {#add-the-livecycle-process-to-enable-action-span-class-acrolinxcursormarker-span-handling}
 
 Nesse cenário, ative os seguintes componentes, que fazem parte do arquivo components.zip anexado:
 
@@ -337,10 +335,10 @@ Baixe e descompacte o arquivo components.zip para obter os arquivos DSCSample.ja
 >
 >Essa etapa será necessária somente se você estiver em uma configuração OSGI e a integração LC for necessária para o tipo de personalização que estiver implementando.
 
-O processo LCA é executado no servidor do LiveCycle e requer o endereço do servidor e as credenciais de login.
+O processo LCA é executado no servidor do LiveCycle e requer o endereço do servidor e as credenciais de logon.
 
 1. Vá para `https://'[server]:[port]'/system/console/configMgr` e faça logon como Administrador.
-1. Localize a Configuração do SDK do Cliente do Adobe LiveCycle e clique em **Editar** (ícone de edição). O painel Configurações é aberto.
+1. Localize a Configuração do Adobe LiveCycle Client SDK e clique em **Editar** (ícone de edição). O painel Configurações é aberto.
 
 1. Insira os detalhes a seguir e clique em **Salvar**:
 
@@ -348,17 +346,17 @@ O processo LCA é executado no servidor do LiveCycle e requer o endereço do ser
    * **Nome de usuário**: nome de usuário administrador do servidor LC
    * **Senha**: senha do nome de usuário administrador
 
-   ![Configuração do SDK do cliente do Adobe LiveCycle](assets/3_clientsdkconfiguration.png)
+   ![Configuração do Adobe LiveCycle Client SDK](assets/3_clientsdkconfiguration.png)
 
-#### Instalar o arquivo do LiveCycle (LCA) {#install-livecycle-archive-lca}
+#### Instalar o LiveCycle Archive (LCA) {#install-livecycle-archive-lca}
 
-O processo de LiveCycle necessário que habilita o processo do serviço de email.
+O processo necessário do LiveCycle que ativa o processo do serviço de email.
 
 >[!NOTE]
 >
 >Para exibir o que esse processo faz ou criar um processo semelhante, você precisa do Workbench.
 
-1. Faça logon como Administrador no adminui do LiveCycle® Server em `https:/[lc server]/:[lc port]/adminui`.
+1. Faça logon como Administrador no LiveCycle® Server adminui em `https:/[lc server]/:[lc port]/adminui`.
 
 1. Navegue até **Home > Serviços > Aplicativos e Serviços > Gerenciamento de Aplicativos**.
 
@@ -378,13 +376,13 @@ O processo de LiveCycle necessário que habilita o processo do serviço de email
 
 1. Clique em **Importar**.
 
-#### Adicionando ServiceName à lista de serviços de Inclui na lista de permissões {#adding-servicename-to-the-allowlist-service-list}
+#### Adicionando ServiceName à lista Serviço de Incluo na lista de permissões {#adding-servicename-to-the-allowlist-service-list}
 
-Mencione no servidor Experience Manager os serviços de LiveCycle que você deseja que acessem o servidor Experience Manager.
+Mencione no servidor do Experience Manager os serviços do LiveCycle que você deseja acessar o servidor do Experience Manager.
 
 1. Fazer logon como Administrador em `https:/[host]:'port'/system/console/configMgr`.
 
-1. Localize e clique em **Configuração do SDK do Cliente do Adobe LiveCycle**. O painel Configuração do SDK do cliente do LiveCycle do Adobe é exibido.
+1. Localize e clique em **Configuração do SDK do Cliente Adobe LiveCycle**. O painel Adobe LiveCycle Client SDK Configuration é exibido.
 1. Na lista Nome do Serviço, clique no ícone + e adicione um serviceName **SendLetterForReview/SendLetterForReviewProcess**.
 
 1. Clique em **Salvar**.
@@ -393,7 +391,7 @@ Mencione no servidor Experience Manager os serviços de LiveCycle que você dese
 
 Nesse cenário, para que o Gerenciamento de correspondências possa enviar um email, configure o serviço de email no servidor do LiveCycle.
 
-1. Faça logon com credenciais de Administrador no adminui do LiveCycle Server em `https:/[lc server]:[lc port]/adminui`.
+1. Faça logon com credenciais de Administrador no LiveCycle Server adminui em `https:/[lc server]:[lc port]/adminui`.
 
 1. Navegue até **Home > Serviços > Aplicativos e Serviços > Gerenciamento de Serviços**.
 
@@ -405,30 +403,30 @@ Nesse cenário, para que o Gerenciamento de correspondências possa enviar um em
 
 #### Configurar o serviço DSC {#configure-the-dsc-service}
 
-Para usar a API do Gerenciamento de correspondências, baixe o DSCSample.jar (anexado neste documento como parte do components.zip) e faça upload dele para o servidor do LiveCycle. Depois que o arquivo DSCSample.jar é carregado no servidor do LiveCycle, o servidor do Experience Manager usa o arquivo DSCSample.jar para acessar a API renderLetter.
+Para usar a API do Gerenciamento de correspondências, baixe o DSCSample.jar (anexado neste documento como parte do components.zip) e carregue-o no servidor do LiveCycle. Depois que o arquivo DSCSample.jar é carregado no servidor do LiveCycle, o servidor do Experience Manager usa o arquivo DSCSample.jar para acessar a API renderLetter.
 
 Para obter mais informações, consulte [Conectando o AEM Forms com o Adobe LiveCycle](/help/forms/using/aem-livecycle-connector.md).
 
-1. Atualize o URL do servidor Experience Manager no cmsa.properties em DSCSample.jar, que está no seguinte local:
+1. Atualize o URL do servidor do Experience Manager em cmsa.properties em DSCSample.jar, que está no seguinte local:
 
    DSCSample.jar\com\adobe\livecycle\cmsa.properties
 
 1. Forneça os seguintes parâmetros no arquivo de configuração:
 
    * **crx.serverUrl**=https:/host:port/[caminho de contexto]/[URL do AEM]
-   * **crx.username**= nome de usuário Experience Manager
+   * **crx.username**= nome de usuário do Experience Manager
    * **crx.password**= senha do Experience Manager
    * **crx.appRoot**=/content/apps/cm
 
    >[!NOTE]
    >
-   >Toda vez que você fizer alterações no lado do servidor, reinicie o Servidor do LiveCycle.
+   >Toda vez que você fizer alterações no lado do servidor, reinicie o LiveCycle Server.
 
    O arquivo DSCSample.jar usa a API renderLetter. Para obter mais informações sobre a API renderLetter, consulte [Interface LetterRenderService](https://www.adobe.io/experience-manager/reference-materials/6-5/forms/javadocs/index.html?com/adobe/icc/ddg/api/LetterRenderService.html).
 
 #### Importar DSC para o LiveCycle {#import-dsc-to-livecyle}
 
-O arquivo DSCSample.jar usa a API renderLetter para renderizar a letra como bytes de PDF dos dados XML que o DSC fornece como entrada. Para obter mais informações sobre renderLetter e outras APIs, consulte [Serviço de Renderização de Carta](https://www.adobe.io/experience-manager/reference-materials/6-5/forms/javadocs/index.html?com/adobe/icc/ddg/api/LetterRenderService.html).
+O arquivo DSCSample.jar usa a API renderLetter para renderizar letra como bytes PDF de dados XML que o DSC fornece como entrada. Para obter mais informações sobre renderLetter e outras APIs, consulte [Serviço de Renderização de Carta](https://www.adobe.io/experience-manager/reference-materials/6-5/forms/javadocs/index.html?com/adobe/icc/ddg/api/LetterRenderService.html).
 
 1. Inicie o Workbench e faça logon.
 1. Selecione **Janela > Mostrar Exibições > Componentes**. A visualização Componentes é adicionada ao Workbench ES2.
@@ -450,4 +448,4 @@ Depois de configurar a ação e o botão para enviar a carta para revisão:
 
 ![sendreview](assets/sendreview.png)
 
-O revisor recebe um email do sistema com a carta como um anexo PDF.
+O revisor recebe um email do sistema com a carta como um anexo do PDF.

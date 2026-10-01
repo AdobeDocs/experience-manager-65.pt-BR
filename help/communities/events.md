@@ -11,16 +11,14 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '592'
-ht-degree: 5%
-
+source-wordcount: '696'
+ht-degree: 4%
 ---
-
 # Eventos OSGi para componentes das comunidades  {#osgi-events-for-communities-components}
 
 ## Visão geral {#overview}
 
-Quando os membros interagem com os recursos do Communities, são enviados eventos OSGi que podem acionar ouvintes assíncronos, como notificações ou gamificação (pontuação e marcação).
+Quando os membros interagem com os recursos do Communities, são enviados eventos OSGi que podem acionar ouvintes assíncronos, como notificações ou gamification (pontuação e marcação).
 
 A instância [SocialEvent](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html) de um componente registra os eventos como `actions` que ocorrem para um `topic`. O SocialEvent inclui um método para retornar um `verb` associado à ação. Há uma relação *n-1* entre `actions` e `verbs`.
 
@@ -78,7 +76,7 @@ SocialEvent `topic`= com/adobe/cq/social/journal
 | ATUALIZAR | Artigo ou comentário do blog do membro editado |
 | EXCLUIR | O artigo ou comentário do blog do membro foi excluído |
 
-[Componente QnA](qna-essentials.md)
+Componente [QnA](qna-essentials.md)
 SocialEvent `topic` = com/adobe/cq/social/qna
 
 | **Verbo** | **Descrição** |
@@ -242,7 +240,7 @@ public class RecipeEvent extends SocialEvent<RecipeEvent.RecipeActions> {
 
 É possível ouvir eventos com a finalidade de modificar o que aparece no fluxo de atividade.
 
-A amostra de pseudo-código a seguir removerá os eventos de DELETE para o componente Comentários do fluxo de atividade.
+A seguinte amostra de pseudo-código removerá os eventos do DELETE para o componente Comentários do fluxo de atividade.
 
 ### Pseudo-código para EventListener {#pseudo-code-for-eventlistener}
 

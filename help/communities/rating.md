@@ -11,11 +11,9 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '219'
+source-wordcount: '223'
 ht-degree: 1%
-
 ---
-
 # Uso de classificações {#using-ratings}
 
 O componente `Rating` é usado de forma independente ou com outros recursos das Comunidades. Este componente permite que membros da comunidade conectados expressem suas opiniões por meio de conteúdo de classificação.
@@ -40,7 +38,7 @@ Na guia **[!UICONTROL Textos e rótulos]**, especifique o identificador interno 
 
 ![tallyname](assets/tallyname.png)
 
-**[!UICONTROL Nome da Tally]**
+**[!UICONTROL Nome Tally]**
 (*Obrigatório*) Um nome simples para `Rating` que identifica exclusivamente esta instância. Deve ser um nome de nó válido para o repositório.
 
 ## Experiência de visitante do site {#site-visitor-experience}

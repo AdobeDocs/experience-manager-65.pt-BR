@@ -12,18 +12,16 @@ feature: Integration
 role: Admin
 source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
 workflow-type: tm+mt
-source-wordcount: '1449'
+source-wordcount: '1461'
 ht-degree: 0%
-
 ---
-
 # Mapeamento de dados do componente com propriedades do Adobe Analytics{#mapping-component-data-with-adobe-analytics-properties}
 
 Adicione componentes à estrutura que coletam os dados para enviar ao Adobe Analytics. Componentes projetados para coletar dados de análise e armazená-los na **variável CQ** apropriada. Ao adicionar esse componente a uma estrutura, ela exibe a lista de variáveis CQ para que cada uma delas possa ser adicionada à **variável do Analytics** apropriada.
 
 ![aa-11](assets/aa-11.png)
 
-Quando a **exibição AEM** está aberta, as variáveis do Analytics são exibidas no localizador de conteúdo.
+Quando a **exibição do AEM** estiver aberta, as variáveis do Analytics aparecem no localizador de conteúdo.
 
 ![aa-12](assets/aa-12.png)
 
@@ -38,11 +36,11 @@ Os dados mapeados são enviados para o Adobe Analytics quando a página é carre
 
 Use o procedimento a seguir para mapear variáveis de componente CQ com propriedades de relatório do Adobe Analytics.
 
-1. Na **exibição AEM**, arraste um componente de rastreamento do sidekick para a estrutura. Por exemplo, arraste o componente **Página** da categoria **Geral**.
+1. Na **exibição do AEM**, arraste um componente de rastreamento do sidekick para a estrutura. Por exemplo, arraste o componente **Página** da categoria **Geral**.
 
    ![aa-13](assets/aa-13.png)
 
-   Há vários grupos de componentes padrão: **Geral**, **Commerce**, **Comunidades** e **Outros**. A instância do AEM pode ser configurada para exibir grupos e componentes diferentes.
+   Há vários grupos de componentes padrão: **Geral**, **Commerce**, **Comunidades** e **Outros**. Sua instância do AEM pode estar configurada para exibir grupos e componentes diferentes.
 
 1. Para mapear variáveis do Adobe Analytics com variáveis definidas no componente, arraste uma **variável do Analytics** do localizador de conteúdo para um campo no componente de rastreamento. Por exemplo, arraste `Page Name (pageName)` para `pagedata.title`.
 
@@ -69,7 +67,7 @@ Use o procedimento a seguir para mapear variáveis de componente CQ com propried
 
 ## Mapeamento de variáveis relacionadas ao produto {#mapping-product-related-variables}
 
-O AEM usa uma convenção para nomear variáveis e eventos relacionados a produtos que devem ser mapeados para propriedades relacionadas a produtos do Adobe Analytics:
+O AEM usa uma convenção para nomear variáveis e eventos relacionados ao produto que devem ser mapeados para propriedades relacionadas ao produto do Adobe Analytics:
 
 | Variável CQ | Variável do Analytics | Descrição |
 |--- |--- |--- |
@@ -78,7 +76,7 @@ O AEM usa uma convenção para nomear variáveis e eventos relacionados a produt
 | `product.quantity` | `product.quantity` (variável de conversão) | O número de produtos sendo comprados. |
 | `product.price` | `product.price` (variável de conversão) | O preço do produto. |
 | `product.events.<eventName>` | Os eventos bem-sucedidos a serem associados ao produto em seu relatório. | `product.events` é o prefixo de eventos denominado *eventName.* |
-| `product.evars.<eVarName>` | As variáveis de conversão ( `eVar`) a serem associadas ao produto. | `product.evars` é o prefixo das variáveis de eVar denominadas *eVarName.* |
+| `product.evars.<eVarName>` | As variáveis de conversão ( `eVar`) a serem associadas ao produto. | `product.evars` é o prefixo das variáveis do eVar chamadas *eVarName.* |
 
 Vários componentes do AEM Commerce usam esses nomes de variáveis.
 
@@ -88,7 +86,7 @@ Vários componentes do AEM Commerce usam esses nomes de variáveis.
 
 ### Verificação de relatórios no Adobe Analytics {#checking-reports-on-adobe-analytics}
 
-1. Faça logon no site da Adobe Analytics usando as mesmas credenciais fornecidas para o AEM.
+1. Faça logon no site da Adobe Analytics usando as mesmas credenciais fornecidas à AEM.
 1. Certifique-se de que a RSID selecionada é a utilizada nas etapas anteriores.
 1. Em **Relatórios** (no lado esquerdo da página), selecione **Conversão personalizada**, depois **Conversão personalizada 1-10** e selecione a variável correspondente a `eVar7`
 
@@ -105,11 +103,11 @@ Inicialmente, ao abrir uma estrutura do Adobe Analytics, o localizador de conte�
 Quando uma RSID é selecionada, todas as variáveis pertencentes a essa RSID são adicionadas à lista.\
 O `cf#` é necessário para mapear variáveis do Analytics para as variáveis CQ presentes nos diferentes componentes de rastreamento. Consulte Configuração de uma estrutura para rastreamento básico.
 
-Dependendo da exibição selecionada para a estrutura, o localizador de conteúdo será preenchido pelas variáveis do Analytics (na exibição AEM) ou pelas variáveis CQ (na exibição do Analytics).
+Dependendo da exibição selecionada para a estrutura, o localizador de conteúdo será preenchido pelas variáveis do Analytics (na exibição do AEM) ou pelas variáveis do CQ (na exibição do Analytics).
 
 A lista pode ser manipulada das seguintes maneiras:
 
-1. Quando estiver no **modo de exibição AEM**, a lista poderá ser filtrada, dependendo do tipo de variável selecionado com os três botões de filtro:
+1. Quando estiver na **exibição do AEM**, a lista poderá ser filtrada, dependendo do tipo de variável selecionado com os três botões de filtro:
 
    * Se *nenhum botão* for selecionado, a lista mostrará a lista completa.
    * Se o botão **Tráfego** for selecionado, a lista mostrará somente as variáveis pertencentes à seção Tráfego.
@@ -143,7 +141,7 @@ A lista pode ser manipulada das seguintes maneiras:
 
 A qualquer momento, os usuários podem alternar entre duas maneiras de visualizar os mapeamentos do Adobe Analytics em uma página de estrutura. As duas visualizações fornecem uma melhor visão geral dos mapeamentos dentro da estrutura, a partir de duas perspectivas distintas.
 
-### Visualização AEM {#aem-view}
+### Visualização do AEM {#aem-view}
 
 ![aa-23](assets/aa-23.png)
 
@@ -151,7 +149,7 @@ Usando a imagem acima como exemplo, a **exibição do AEM** tem as seguintes pro
 
 1. Essa é a exibição padrão quando a estrutura é aberta.
 1. Lado esquerdo: o localizador de conteúdo (cf#) é preenchido pelas variáveis do Adobe Analytics com base nas RSID(s) selecionadas.
-1. Cabeçalhos de guia (**exibição de AEM** e **exibição do Analytics**): use-os para alternar entre as duas exibições.
+1. Cabeçalhos de guia (**exibição do AEM** e **exibição do Analytics**): use-os para alternar entre as duas exibições.
 
 1. **exibição do AEM**:
 
@@ -161,7 +159,7 @@ Usando a imagem acima como exemplo, a **exibição do AEM** tem as seguintes pro
       1. Para desbloquear um componente herdado, clique duas vezes no cadeado ao lado do nome do componente
       1. Para reverter a herança, exclua o componente desbloqueado; depois disso, ele recuperará o status de bloqueado.
 
-   1. **Arraste componentes aqui para incluí-los na estrutura de análise**: os componentes podem ser arrastados do Sidekick e soltos aqui.
+   1. **Arraste componentes aqui para incluí-los na estrutura de análise**: os componentes podem ser arrastados da Sidekick e soltos aqui.
    1. Você pode encontrar todos os componentes incluídos atualmente na estrutura de análise:
 
       1. Para adicionar um componente, arraste um da guia Componentes do sidekick
@@ -174,25 +172,25 @@ Usando a imagem acima como exemplo, a **exibição do AEM** tem as seguintes pro
 
 1. Esta exibição pode ser acessada alternando para a guia **Exibição do Analytics** na estrutura.
 1. Lado esquerdo: Localizador de conteúdo (cf#) preenchido por variáveis do CQ com base nos componentes arrastados para a estrutura na exibição do CQ.
-1. Cabeçalhos de guia (**exibição de AEM** e **exibição do Analytics**): use-os para alternar entre as duas exibições.
+1. Cabeçalhos de guia (**exibição do AEM** e **exibição do Analytics**): use-os para alternar entre as duas exibições.
 
-1. As três tabelas (Tráfego, Conversão, Evento) listam todas as variáveis do Adobe Analytics disponíveis. pertencentes às RSIDs selecionadas. Os mapeamentos mostrados aqui devem ser os mesmos da exibição AEM:
+1. As três tabelas (Tráfego, Conversão, Evento) listam todas as variáveis do Adobe Analytics disponíveis. pertencentes às RSIDs selecionadas. Os mapeamentos mostrados aqui devem ser iguais aos da exibição do AEM:
 
    * **Tráfego**:
 
-      * Variável de tráfego ( `prop1`) mapeada para uma variável do CQ ( `eventdata.downloadLink`)
+     * Variável de tráfego ( `prop1`) mapeada para uma variável do CQ ( `eventdata.downloadLink`)
 
-      * Quando o componente tem um Cadeado ao lado dele, significa que é herdado de uma estrutura principal e, portanto, não pode ser editado
+     * Quando o componente tem um Cadeado ao lado dele, significa que é herdado de uma estrutura principal e, portanto, não pode ser editado
 
    * **Conversão**:
 
-      * Variável de conversão ( `eVar1`) mapeada para uma variável do CQ ( `pagedata.title`)
+     * Variável de conversão ( `eVar1`) mapeada para uma variável do CQ ( `pagedata.title`)
 
-      * Variável de conversão ( `eVar3`) mapeada para uma expressão JavaScript adicionada em linha ao clicar duas vezes no campo de variável CQ e inserir o código manualmente
+     * Variável de conversão ( `eVar3`) mapeada para uma expressão JavaScript adicionada em linha ao clicar duas vezes no campo de variável CQ e inserir o código manualmente
 
    * **Evento**:
 
-      * Variável de evento ( `event1`) mapeada para um evento CQ ( `eventdata.events.pageView`)
+     * Variável de evento ( `event1`) mapeada para um evento CQ ( `eventdata.events.pageView`)
 
 >[!NOTE]
 >

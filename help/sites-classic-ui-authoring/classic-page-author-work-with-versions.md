@@ -12,11 +12,9 @@ feature: Authoring
 role: User
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '1351'
-ht-degree: 17%
-
+source-wordcount: '1342'
+ht-degree: 18%
 ---
-
 # Trabalhar com versões de páginas{#working-with-page-versions}
 
 O controle de versão cria um “instantâneo” de uma página em um momento específico. Com o controle de versão, você pode executar as seguintes ações:
@@ -30,7 +28,7 @@ O controle de versão cria um “instantâneo” de uma página em um momento es
 Para criar uma versão de uma página:
 
 1. No navegador, abra a página para a qual deseja criar uma versão.
-1. No Sidekick, selecione a guia **Versionamento** e depois a subguia **Criar versão**.
+1. Na Sidekick, selecione a guia **Controle de Versão** e, em seguida, a subguia **Criar Versão**.
 
    ![screen_shot_2012-02-14at40259pm](assets/screen_shot_2012-02-14at40259pm.png)
 
@@ -86,7 +84,7 @@ Esse método pode ser usado para restaurar uma versão da página. Ele também p
 Para comparar a versão atual da página com uma versão anterior:
 
 1. No navegador, abra a página para a qual deseja comparar com uma versão anterior.
-1. No Sidekick, selecione a guia **Versionamento** e depois a subguia **Restaurar Versão** n.
+1. No Sidekick, selecione a guia **Controle de Versão** e, em seguida, a subguia **Restaurar Versão** n.
 
    ![screen_shot_2012-02-14at42949pm-1](assets/screen_shot_2012-02-14at42949pm-1.png)
 
@@ -101,7 +99,7 @@ Para comparar a versão atual da página com uma versão anterior:
 
 1. No Sidekick, selecione a subguia **Restaurar versão** e clique no botão **&lt;&lt;Voltar** para exibir a versão atual.
 
-## Timewarp   {#timewarp}
+## Timewarp {#timewarp}
 
 O Timewarp é um recursos criado para simular o estado ***publicado*** de uma página em ocasiões específicas no passado.
 
@@ -170,8 +168,8 @@ Se quiser exibir a linha do tempo do documento:
 1. Selecione e mova (mantenha pressionada e arraste) a linha do tempo para mover pela linha do tempo do documento.
 
    * Todas as linhas indicam versões publicadas.
-Quando uma página é ativada, uma nova linha é iniciada. Toda vez que o documento é editado, uma nova cor aparece.
-No exemplo abaixo, a linha vermelha indica que a página foi editada durante o período da versão verde inicial. A linha amarela indica que a página foi editada em algum momento durante a versão vermelha e assim por diante.
+     Quando uma página é ativada, uma nova linha é iniciada. Toda vez que o documento é editado, uma nova cor aparece.
+     No exemplo abaixo, a linha vermelha indica que a página foi editada durante o período da versão verde inicial. A linha amarela indica que a página foi editada em algum momento durante a versão vermelha e assim por diante.
 
    ![chlimage_1-79](assets/chlimage_1-79.png)
 
@@ -194,4 +192,4 @@ O Timewarp se esforça ao máximo para reproduzir uma página em um ponto seleci
 
 >[!CAUTION]
 >
->O Timewarp foi projetado para ajudar os autores a entender e criar conteúdo. Ele não se destina a ser um registro de auditoria ou a fins legais.
+>O Timewarp foi projetado para ajudar os autores a entender e criar conteúdo. Ele não se destina a ser um log de auditoria ou a fins legais.

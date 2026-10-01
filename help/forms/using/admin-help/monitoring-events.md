@@ -1,21 +1,23 @@
 ---
 title: Monitoramento de eventos
+
 description: Quando o recurso de auditoria está ativado, a segurança de documentos permite monitorar determinados tipos de eventos. Pesquise e classifique facilmente a lista de eventos usando a segurança de documentos.
+
+
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
+
 feature: Document Security
 exl-id: 078b9ad1-16e2-40f4-92dc-e4093c0bb6ac
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '958'
+source-wordcount: '968'
 ht-degree: 0%
-
 ---
-
 # Monitoramento de eventos {#monitoring-events}
 
 Quando o recurso de auditoria está ativado, a segurança de documentos permite monitorar determinados tipos de eventos. Os eventos que você pode ver dependem da sua função:

@@ -11,11 +11,9 @@ feature: Adaptive Forms
 role: Admin, User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '1334'
+source-wordcount: '1356'
 ht-degree: 0%
-
 ---
-
 # Iniciando processos {#starting-processes}
 
 o espaço de trabalho do AEM Forms organiza os processos pelas categorias que o administrador ou designer de processo configura. Você também pode colocar processos que usa com frequência na categoria Favoritos, para que possa encontrá-los rapidamente.
@@ -30,7 +28,7 @@ Você pode selecionar um processo para iniciá-lo ou para exibir mais informaç�
 
 Ao selecionar um processo para iniciar, talvez seja necessário preencher um formulário associado a esse processo. O envio do formulário inicia o processo.
 
-O Forms em vários tipos de formatos de arquivo é compatível, incluindo Adobe PDF, HTML e SWF file. Um formulário pode se parecer com um formulário tradicional imprimível ou baseado na Web, ou pode orientá-lo por uma série de painéis no estilo de assistente para coletar informações.
+O Forms em vários tipos de formatos de arquivo é compatível, incluindo arquivos Adobe PDF, HTML e SWF. Um formulário pode se parecer com um formulário tradicional imprimível ou baseado na Web, ou pode orientá-lo por uma série de painéis no estilo de assistente para coletar informações.
 
 Se o formulário e o processo permitirem, também será possível salvar o formulário offline, preenchê-lo e enviá-lo para concluir a tarefa. Quando o formulário for enviado, seu cliente de email será iniciado com o endereço de email do servidor apropriado, se o ponto de acesso de email estiver configurado. Em seguida, você pode enviar o formulário preenchido para o servidor por email.
 
@@ -62,7 +60,7 @@ Quando você seleciona um processo, a guia Formulário e a guia Detalhes são ex
 
    >[!NOTE]
    >
-   >A opção off-line está disponível somente para PDF forms.
+   >A opção off-line está disponível somente para o PDF forms.
 
 ## Adicionando avisos e anexos {#adding-notes-and-attachments}
 

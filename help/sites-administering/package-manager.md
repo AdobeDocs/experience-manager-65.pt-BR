@@ -1,6 +1,6 @@
 ---
 title: Gerenciador de pacotes
-description: Saiba mais sobre as noções básicas do gerenciamento de pacotes AEM com o Gerenciador de pacotes.
+description: Saiba mais sobre as noções básicas de gerenciamento de pacotes do AEM com o Gerenciador de pacotes.
 feature: Administering
 role: Admin
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,17 +11,15 @@ exl-id: e8929d7c-9920-4c02-95a9-6f7f7a365203
 solution: Experience Manager, Experience Manager Sites
 source-git-commit: c705667e60ccfbc4612ef3212dbe549e6bea66a9
 workflow-type: tm+mt
-source-wordcount: '3568'
-ht-degree: 1%
-
+source-wordcount: '3576'
+ht-degree: 2%
 ---
-
 
 # Gerenciador de pacotes {#working-with-packages}
 
 Os pacotes permitem importar e exportar conteúdo do repositório. Você pode usar pacotes para instalar novo conteúdo, instalar nova funcionalidade, transferir conteúdo entre instâncias e fazer backup do conteúdo do repositório.
 
-Com o Gerenciador de pacotes, é possível transferir pacotes entre a instância do AEM e o sistema de arquivos local para fins de desenvolvimento.
+Com o Gerenciador de pacotes, você pode transferir pacotes entre a instância do AEM e o sistema de arquivos local para fins de desenvolvimento.
 
 ## O que são pacotes? {#what-are-packages}
 
@@ -31,11 +29,11 @@ Um pacote também contém informações meta do Vault, incluindo as definições
 
 >[!NOTE]
 >
->Os pacotes representam a versão atual do conteúdo no momento em que o pacote é criado. Eles não incluem nenhuma versão anterior do conteúdo que o AEM mantém no repositório.
+>Os pacotes representam a versão atual do conteúdo no momento em que o pacote é criado. Eles não incluem versões anteriores do conteúdo que o AEM mantém no repositório.
 
 ## Gerenciador de pacotes {#package-manager}
 
-O Gerenciador de pacotes gerencia os pacotes na instalação do AEM. Depois de [atribuir as permissões necessárias](#permissions-needed-for-using-the-package-manager), você poderá usar o Gerenciador de Pacotes para várias ações, incluindo configuração, compilação, download e instalação de pacotes.
+O Gerenciador de pacotes gerencia os pacotes na sua instalação do AEM. Depois de [atribuir as permissões necessárias](#permissions-needed-for-using-the-package-manager), você poderá usar o Gerenciador de Pacotes para várias ações, incluindo configuração, compilação, download e instalação de pacotes.
 
 ### Permissões necessárias {#required-permissions}
 
@@ -55,7 +53,7 @@ Para criar, modificar, fazer upload e instalar pacotes, os usuários devem ter a
 Você pode acessar o Gerenciador de pacotes de três maneiras:
 
 1. No menu principal do AEM > **Ferramentas** > **Implantação** > **Pacotes**
-1. De [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) usando a barra do alternador superior
+1. Do [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) usando a barra do alternador superior
 1. Acessando diretamente `http://<host>:<port>/crx/packmgr/`
 
 ### Interface do usuário do Gerenciador de pacotes {#ui}
@@ -65,8 +63,8 @@ O Gerenciador de pacotes está dividido em quatro áreas funcionais principais:
 * **Painel de Navegação à Esquerda** - Esse painel permite filtrar e classificar a lista de pacotes.
 * **Lista de Pacotes** - Esta é a lista de pacotes na sua instância filtrada e classificada de acordo com as seleções no Painel de Navegação Esquerdo.
 * **Log de atividades** - Esse painel é minimizado no início e expande-se para detalhar a atividade do Gerenciador de Pacotes, por exemplo, quando um pacote é compilado ou instalado. Há botões adicionais na guia Registro de atividades para:
-   * **Limpar Log**
-   * **Mostrar/Ocultar**
+  * **Limpar Log**
+  * **Mostrar/Ocultar**
 * **Barra de Ferramentas** - A barra de ferramentas contém botões de atualização para o Painel de Navegação Esquerdo e a lista de Pacotes, além de botões para pesquisar, criar e carregar pacotes.
 
 ![Interface do usuário do Gerenciador de Pacotes](assets/package-manager-ui.png)
@@ -129,7 +127,7 @@ A caixa de diálogo **Configurações de Pacote** está disponível por meio do 
 | Grupo | Para organizar pacotes, digite o nome de um novo grupo ou selecione um grupo existente |
 | Versão | Texto a ser usado para a versão |
 | Descrição | Uma breve descrição do pacote que permite a marcação HTML para formatação |
-| Miniatura  | O ícone que aparece com a lista de pacotes |
+| Miniatura | O ícone que aparece com a lista de pacotes |
 
 #### Miniaturas do pacote {#thumbnails}
 
@@ -175,7 +173,7 @@ Ao criar regras, você define uma expressão regular (também conhecida como reg
 | include | Incluir incluirá todos os arquivos e pastas no diretório especificado que correspondam à expressão regular. Incluir **não** incluirá outros arquivos ou pastas do caminho raiz especificado. |
 | excluir | Excluir excluirá todos os arquivos e pastas que correspondem à expressão regular. |
 
-Os filtros de pacote geralmente são definidos quando você [cria o pacote pela primeira vez.](#creating-a-new-package) No entanto, eles também podem ser editados mais tarde, depois disso, o pacote deve ser recriado para atualizar seu conteúdo com base nas novas definições de filtro.
+Os filtros de pacote são definidos com mais frequência quando você [cria o pacote pela primeira vez.](#creating-a-new-package) No entanto, eles também podem ser editados posteriormente, após o que o pacote deve ser recriado para atualizar seu conteúdo com base nas novas definições de filtro.
 
 >[!TIP]
 >
@@ -240,11 +238,11 @@ Há muitas ações que podem ser executadas em um pacote.
 
 1. Clique em **OK** para criar o pacote.
 
-1. O AEM lista o novo pacote no topo da lista de pacotes.
+1. O AEM lista o novo pacote na parte superior da lista de pacotes.
 
    ![Novo pacote](assets/new-package.png)
 
-1. Clique em **Editar** para definir o conteúdo do pacote [.](#package-contents) Clique em **Salvar** depois que terminar de editar as configurações.
+1. Clique em **Editar** para definir o [conteúdo do pacote.](#package-contents) Clique em **Salvar** depois que terminar de editar as configurações.
 
 1. Agora você pode [Criar](#building-a-package) seu pacote.
 
@@ -264,7 +262,7 @@ Um pacote é frequentemente criado ao mesmo tempo em que você [cria o pacote](#
 
 ### Editar um pacote {#edit-package}
 
-Depois que um pacote for carregado para AEM, você poderá modificar suas configurações.
+Depois que um pacote é carregado para o AEM, você pode modificar suas configurações.
 
 1. [Acesse o Gerenciador de pacotes.](#accessing)
 
@@ -324,7 +322,7 @@ Depois que um pacote for criado, é possível visualizar o conteúdo.
 
 1. Clique no botão **Download** ou no nome de arquivo vinculado do pacote na área de detalhes do pacote.
 
-1. O AEM baixa o pacote para o computador.
+1. O AEM baixa o pacote para o seu computador.
 
 ### Compartilhamento de um pacote {#share}
 
@@ -347,7 +345,7 @@ O Package Share era um serviço público centralizado para distribuir pacotes de
 
 1. Clique em **OK** e o pacote selecionado será carregado e a lista de pacotes será atualizada adequadamente.
 
-O conteúdo do pacote agora existe no AEM, mas para disponibilizá-lo para uso, certifique-se de [instalar o pacote](#installing-packages).
+O conteúdo do pacote agora existe no AEM, mas para torná-lo disponível para uso, certifique-se de [instalar o pacote](#installing-packages).
 
 ### Validação de pacotes {#validating-packages}
 
@@ -365,11 +363,11 @@ O Gerenciador de pacotes pode executar as seguintes validações:
 
 **O que está marcado**
 
-Essa validação inspeciona o pacote de todos os arquivos JAR (pacotes OSGi), extrai seus `manifest.xml` (que contêm as dependências com versão das quais o pacote OSGi depende) e verifica as exportações da instância AEM para essas dependências com as versões corretas.
+Essa validação inspeciona o pacote de todos os arquivos JAR (pacotes OSGi), extrai seus `manifest.xml` (que contêm as dependências com versão das quais o pacote OSGi depende) e verifica se a instância do AEM exporta essas dependências com as versões corretas.
 
 **Como é relatado**
 
-Todas as dependências com versão que não podem ser satisfeitas pela instância AEM são listadas no Log de atividades do Gerenciador de pacotes.
+Todas as dependências com versão que não podem ser satisfeitas pela instância do AEM são listadas no Log de atividades do Gerenciador de pacotes.
 
 **Estados de erro**
 
@@ -383,7 +381,7 @@ Para resolver erros devido a pacotes OSGi não satisfeitos, a versão de depend�
 
 **O que está marcado**
 
-Essa validação determina se o pacote que está sendo instalado contém um arquivo que já está sobreposto na instância AEM de destino.
+Essa validação determina se o pacote que está sendo instalado contém um arquivo que já está sobreposto na instância do AEM de destino.
 
 Por exemplo, dada uma sobreposição existente em `/apps/sling/servlet/errorhandler/404.jsp`, um pacote que contém `/libs/sling/servlet/errorhandler/404.jsp`, tal que irá alterar o arquivo existente em `/libs/sling/servlet/errorhandler/404.jsp`.
 
@@ -423,14 +421,14 @@ Usando as informações fornecidas pela validação, os nós afetados podem ser 
 
 >[!CAUTION]
 >
->Como prática recomendada, os pacotes não devem afetar as ACLs fornecidas pelo AEM, pois isso pode resultar em um comportamento inesperado.
+>Como prática recomendada, os pacotes não devem afetar as ACLs fornecidas pela AEM, pois isso pode resultar em um comportamento inesperado.
 
 #### Executando validação {#performing-validation}
 
 A validação de pacotes pode ser feita de duas maneiras diferentes:
 
 * [Pela interface do usuário do Gerenciador de pacotes](#via-package-manager)
-* [Por solicitação HTTP POST, como com cURL](#via-post-request)
+* [Por solicitação POST HTTP, como com cURL](#via-post-request)
 
 A validação sempre deve ocorrer após o upload do pacote, mas antes de instalá-lo.
 
@@ -446,7 +444,7 @@ A validação sempre deve ocorrer após o upload do pacote, mas antes de instal�
 
 1. A(s) validação(s) escolhida(s) é/são executada(s) e os resultados são exibidos no Log de atividades do Gerenciador de pacotes.
 
-##### Validação de pacote por meio de solicitação POST HTTP {#via-post-request}
+##### Validação do pacote por meio de solicitação POST HTTP {#via-post-request}
 
 A solicitação POST assume o seguinte formato.
 
@@ -468,7 +466,7 @@ Ao usar cURL, execute uma instrução semelhante à seguinte:
 curl -v -X POST --user admin:admin -F file=@/Users/SomeGuy/Desktop/core.wcm.components.all-1.1.0.zip 'http://localhost:4502/crx/packmgr/service.jsp?cmd=validate&type=osgiPackageImports,overlays,acls'
 ```
 
-Ao validar por meio da solicitação POST, a resposta é enviada de volta como um objeto JSON.
+Ao validar via solicitação POST, a resposta é enviada de volta como um objeto JSON.
 
 ### Visualizando a cobertura do pacote {#package-coverage}
 
@@ -580,9 +578,9 @@ Replicar o conteúdo de um pacote para instalá-lo na instância de publicação
 
 ## Distribuição de software {#software-distribution}
 
-Os pacotes AEM podem ser usados para criar e compartilhar conteúdo em ambientes AEM.
+Os pacotes do AEM podem ser usados para criar e compartilhar conteúdo em ambientes do AEM.
 
-A [Distribuição de Software](https://downloads.experiencecloud.adobe.com) é um serviço centralizado criado para simplificar a pesquisa e o download de pacotes AEM.
+A [Distribuição de Software](https://downloads.experiencecloud.adobe.com) é um serviço centralizado criado para simplificar a pesquisa e o download de pacotes do AEM.
 
 Para obter mais informações, consulte a [documentação de Distribuição de Software.](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=pt-br)
 

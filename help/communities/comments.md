@@ -12,11 +12,9 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '983'
+source-wordcount: '993'
 ht-degree: 1%
-
 ---
-
 # Uso de comentários {#using-comments}
 
 ## Introdução {#introduction}
@@ -190,7 +188,7 @@ Quando o usuário conectado tem privilégios de moderador ou administrador, ele 
 
 Quando o visitante do site está conectado, dependendo da configuração, ele pode
 
-* Post um novo comentário
+* Postar um novo comentário
 * Editar seu próprio comentário
 * Excluir seu próprio comentário
 * Sinalizar comentários de outras pessoas

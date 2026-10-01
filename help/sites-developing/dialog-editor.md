@@ -11,16 +11,14 @@ feature: Developing,Developer Tools
 role: Developer
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '474'
+source-wordcount: '478'
 ht-degree: 0%
-
 ---
-
 # Editor de caixa de diálogo{#dialog-editor}
 
 O editor de diálogo fornece uma interface gráfica para criar e editar facilmente caixas de diálogo e scaffolds.
 
-Para ver como funciona, vá para CRXDE Lite, abra a árvore do explorador para `/libs/foundation/components/chart` e clique duas vezes no nó `dialog`:
+Para ver como funciona, vá para CRXDE Lite, abra a árvore do explorador em `/libs/foundation/components/chart` e clique duas vezes no nó `dialog`:
 
 ![chlimage_1-247](assets/chlimage_1-247.png)
 

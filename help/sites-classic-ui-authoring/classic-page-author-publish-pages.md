@@ -1,10 +1,12 @@
 ---
 title: Publicar páginas
 description: Depois de criar e revisar seu conteúdo no ambiente de criação, disponibilize-o em seu site público.
+
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
+
 docset: aem65
 exl-id: 3f6aa06e-b5fd-4ab0-9ecc-14250cb3f55e
 solution: Experience Manager, Experience Manager Sites
@@ -12,11 +14,9 @@ feature: Authoring
 role: User
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '1028'
-ht-degree: 9%
-
+source-wordcount: '1032'
+ht-degree: 8%
 ---
-
 # Publicar páginas{#publishing-pages}
 
 Depois de criar e revisar seu conteúdo no ambiente de criação, disponibilize-o em seu site público (seu ambiente de publicação).
@@ -29,13 +29,13 @@ Você também pode publicar/desfazer a publicação de uma página imediatamente
 >
 >Alguns termos relacionados à publicação podem ser confundidos:
 >
->* **Publicar/Desfazer a publicação**
+>* **Publicar/Desfazer publicação**
 >  Esses são os termos principais para as ações que tornam o conteúdo publicamente disponível no ambiente de publicação (ou não).
 >
 >* **Ativar / Desativar**
 >  Estes termos são sinônimos de publicar/desfazer a publicação.
 >
->* **Replicar / Replicação**
+>* **Replicar/Replicar**
 >  Esses são os termos técnicos que descrevem a movimentação de dados (por exemplo, conteúdo da página, arquivos, código, comentários do usuário) de um ambiente para outro, como ao publicar ou reverter a replicação de comentários do usuário.
 >
 
@@ -79,7 +79,7 @@ Você pode ativar páginas no console Sites. Depois de abrir uma página e modif
 
    ![chlimage_1-100](assets/chlimage_1-100.png)
 
-1. O WCM do AEM ativa o conteúdo selecionado. As páginas publicadas aparecem no [console de Sites](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console) (marcado em verde) com informações sobre quem ativou o conteúdo e a data e hora da ativação.
+1. O AEM WCM ativa o conteúdo selecionado. As páginas publicadas aparecem no [console de Sites](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console) (marcado em verde) com informações sobre quem ativou o conteúdo e a data e hora da ativação.
 
    ![screen_shot_2012-02-08at14335pm](assets/screen_shot_2012-02-08at14335pm.png)
 
@@ -89,7 +89,7 @@ Você também pode ativar uma página quando ela estiver aberta para edição.
 
 Depois de abrir a página e modificar seu conteúdo, você:
 
-1. Selecione a guia **Página** no Sidekick.
+1. Selecione a guia **Página** na Sidekick.
 1. Clique em **Ativar página**.
 Uma mensagem é exibida na parte superior direita da janela confirmando que a página foi ativada.
 

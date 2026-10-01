@@ -12,17 +12,15 @@ feature: Authoring,Personalization
 role: User
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '1767'
-ht-degree: 0%
-
+source-wordcount: '1802'
+ht-degree: 1%
 ---
-
 
 # Marketing por email{#e-mail-marketing}
 
 >[!NOTE]
 >
->A Adobe não planeja aprimorar ainda mais o rastreamento de e-mails de rejeições/aberturas (não entregues) enviadas pelo serviço AEM SMTP.
+>A Adobe não pretende aprimorar ainda mais o rastreamento de e-mails de rejeições/aberturas (não entregues) enviadas pelo serviço SMTP da AEM.
 >A recomendação é usar o [Adobe Campaign e a integração com o AEM](/help/sites-administering/campaign.md).
 
 O marketing por email (por exemplo, boletins informativos) é uma parte importante de qualquer campanha de marketing, pois é usado para enviar conteúdo aos seus clientes potenciais. No AEM, você pode criar informativos a partir de conteúdo existente do AEM e adicionar novo conteúdo, específico para os informativos.
@@ -44,7 +42,7 @@ Este documento descreve as noções básicas para a criação de boletins inform
 
 >[!NOTE]
 >
->Se você atualizar provedores de email, fizer um teste de voo ou enviar um boletim informativo, essas operações falharão se o boletim informativo não for publicado primeiro na instância do Publish ou se a instância do Publish não estiver disponível. Publique seu informativo e verifique se a instância do Publish está em execução.
+>Se você atualizar provedores de email, fazer um teste de voo ou enviar um boletim informativo, essas operações falharão se o boletim informativo não for publicado primeiro na instância de publicação ou se a instância de publicação não estiver disponível. Publique seu informativo e certifique-se de que a instância de publicação esteja em execução.
 
 ## Criar uma experiência com informativos {#creating-a-newsletter-experience}
 
@@ -73,25 +71,25 @@ Este documento descreve as noções básicas para a criação de boletins inform
    ![Caixa de diálogo Propriedades da página](assets/mcm_newnewsletterdialog.png)
 
    * **De Nome**
-Nome que deve aparecer como remetente do informativo.
+     Nome que deve aparecer como remetente do informativo.
 
    * **Do endereço**
-O endereço de e-mail que deve aparecer como o remetente do informativo.
+     O endereço de e-mail que deve aparecer como o remetente do informativo.
 
    * **Assunto**
-Assunto do informativo.
+     Assunto do informativo.
 
    * **Responder para**
-Endereço de e-mail que deve tratar das respostas para o informativo enviado.
+     Endereço de e-mail que deve tratar das respostas para o informativo enviado.
 
    * **Descrição**
-Descrição do informativo.
+     Descrição do informativo.
 
    * **No Prazo**
-A data e hora de envio do informativo.
+     A data e hora de envio do informativo.
 
    * **Lista de Destinatários Padrão**
-Lista padrão que deve receber o informativo.
+     Lista padrão que deve receber o informativo.
 
    Eles podem ser atualizados em um estágio posterior da caixa de diálogo **Propriedades...**.
 
@@ -99,16 +97,16 @@ Lista padrão que deve receber o informativo.
 
 ## Adicionar conteúdo aos informativos {#adding-content-to-newsletters}
 
-Você pode adicionar conteúdo, incluindo conteúdo dinâmico, ao seu informativo como faria em qualquer componente AEM. No Geometrixx, o modelo de boletim informativo tem determinados componentes disponíveis para adicionar e modificar conteúdo em boletins informativos.
+Você pode adicionar conteúdo, incluindo conteúdo dinâmico, ao seu informativo como faria em qualquer componente do AEM. No Geometrixx, o modelo de boletim informativo tem determinados componentes disponíveis para adicionar e modificar conteúdo em boletins informativos.
 
 1. No MCM, clique na guia **Campanhas** e clique duas vezes no informativo ao qual deseja adicionar conteúdo ou editar. O informativo é aberto.
 
 1. Se os componentes não estiverem visíveis, acesse a visualização Design e ative os componentes necessários (por exemplo, os componentes do Boletim informativo) antes de começar a editar.
-1. Insira qualquer novo texto, imagens ou outros componentes, conforme apropriado. No Geometrixx, 4 componentes estão disponíveis: Texto, Imagem, Cabeçalho e 2 Colunas. Seu informativo pode ter mais ou menos componentes, dependendo de como você o configurou.
+1. Insira qualquer novo texto, imagens ou outros componentes, conforme apropriado. No exemplo do Geometrixx, 4 componentes estão disponíveis: Texto, Imagem, Cabeçalho e 2 Colunas. Seu informativo pode ter mais ou menos componentes, dependendo de como você o configurou.
 
    >[!NOTE]
    >
-   >Personalize informativos usando variáveis. No boletim informativo do Geometrixx, as variáveis estão disponíveis no componente de Texto. Os valores das variáveis são herdados das informações no perfil do usuário.
+   >Personalize informativos usando variáveis. No boletim informativo Geometrixx, as variáveis estão disponíveis no componente de Texto. Os valores das variáveis são herdados das informações no perfil do usuário.
 
    ![Editando conteúdo do informativo](assets/mcm_newsletter_content.png)
 
@@ -144,7 +142,7 @@ Para personalizar um informativo e simular como ele será:
 >
 >Por padrão, o valor do parâmetro é `localhost:4502` e a operação não pode ser concluída se a porta da instância em execução for alterada.
 
-Alternar entre clientes de e-mail comuns para ver como o informativo será exibido para seus clientes em potencial. Por padrão, o informativo é aberto sem nenhum dos clientes de e-mail selecionados.
+Alternar entre clientes de e-mail comuns para ver a forma como o informativo será exibido para seus clientes em potencial. Por padrão, o informativo é aberto sem nenhum dos clientes de e-mail selecionados.
 
 Atualmente, você pode exibir informativos nos seguintes clientes de e-mail:
 
@@ -205,7 +203,7 @@ O teste de voo permite fazer o seguinte:
 
 >[!NOTE]
 >
->Se você atualizar provedores de email, fizer um teste de voo ou enviar um boletim informativo, essas operações falharão se o boletim informativo não for publicado primeiro na instância do Publish ou se a instância do Publish não estiver disponível. Publique seu informativo e verifique se a instância do Publish está em execução.
+>Se você atualizar provedores de email, fazer um teste de voo ou enviar um boletim informativo, essas operações falharão se o boletim informativo não for publicado primeiro na instância de publicação ou se a instância de publicação não estiver disponível. Publique seu informativo e certifique-se de que a instância de publicação esteja em execução.
 
 Para enviar boletins informativos de testes de voo:
 
@@ -221,7 +219,7 @@ Para enviar boletins informativos de testes de voo:
 
 >[!NOTE]
 >
->A Adobe não planeja aprimorar ainda mais o rastreamento de e-mails de rejeições/aberturas (não entregues) enviadas pelo serviço AEM SMTP.
+>A Adobe não pretende aprimorar ainda mais o rastreamento de e-mails de rejeições/aberturas (não entregues) enviadas pelo serviço SMTP da AEM.
 >A recomendação é usar o [Adobe Campaign e a integração com o AEM](/help/sites-administering/campaign.md).
 
 Você pode enviar um informativo do informativo ou da lista. Ambos os procedimentos são descritos.
@@ -234,7 +232,7 @@ Você pode enviar um informativo do informativo ou da lista. Ambos os procedimen
 
 >[!NOTE]
 >
->Se você atualizar provedores de email, fizer um teste de voo ou enviar um boletim informativo, essas operações falharão se o boletim informativo não for publicado primeiro na instância do Publish ou se a instância do Publish não estiver disponível. Publique seu informativo e verifique se a instância do Publish está em execução.
+>Se você atualizar provedores de email, fazer um teste de voo ou enviar um boletim informativo, essas operações falharão se o boletim informativo não for publicado primeiro na instância de publicação ou se a instância de publicação não estiver disponível. Publique seu informativo e certifique-se de que a instância de publicação esteja em execução.
 
 ### Envio de informativos de uma campanha {#sending-newsletters-from-a-campaign}
 
@@ -295,10 +293,10 @@ Esta seção descreve como assinar um boletim informativo.
 
 ### Assinatura de um informativo {#subscribing-to-a-newsletter-1}
 
-Para assinar um boletim informativo (usando o site do Geometrixx como exemplo):
+Para assinar um boletim informativo (usando o site da Geometrixx como exemplo):
 
 1. Clique em **Sites**, navegue até a **Barra de Ferramentas** do Geometrixx e abra-a.
 
    ![Amostra de assinatura](assets/chlimage_1-121.png)
 
-1. Geometrixx No campo **Inscrever-se** do informativo, digite seu endereço de email e clique em **Inscrever-se**. Agora você está inscrito no informativo.
+1. No campo **Inscrever-se** do informativo da Geometrixx, digite seu endereço de email e clique em **Inscrever-se**. Agora você está inscrito no informativo.

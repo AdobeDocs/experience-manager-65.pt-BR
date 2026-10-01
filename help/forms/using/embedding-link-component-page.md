@@ -11,11 +11,9 @@ feature: Forms Portal
 role: Admin, User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '408'
-ht-degree: 0%
-
+source-wordcount: '412'
+ht-degree: 1%
 ---
-
 # Incorporação do componente de link em uma página{#embedding-link-component-in-a-page}
 
 ## Pré-requisitos {#prerequisites}
@@ -42,10 +40,10 @@ Execute as seguintes etapas para adicionar um componente Link à página:
 
    * **Caminho do ativo**: caminho do repositório onde o ativo está armazenado.
 
-   * **Tipo de renderização**: o formato de renderização—PDF, HTML ou Auto. O tipo de renderização automática detecta o ambiente do usuário e renderiza o formulário de acordo com ele como HTML ou PDF. Por exemplo, se o formulário for acessado de um dispositivo móvel, o tipo de renderização Automática renderiza o formulário no HTML.
+   * **Tipo de renderização**: o formato de renderização — PDF, HTML ou Auto. O tipo de renderização automática detecta o ambiente do usuário e renderiza o formulário de acordo com ele como HTML ou PDF. Por exemplo, se o formulário for acessado de um dispositivo móvel, o tipo de renderização Automática renderiza o formulário no HTML.
    * **Enviar URL:** URL para o servlet para o qual os dados de formulário são enviados.
-   * **Perfil de HTML**: perfil para renderizar o formulário como HTML.
-   * **Perfil de PDF**: perfil para renderizar o formulário como documento de PDF.
+   * **Perfil do HTML**: perfil para renderizar o formulário como HTML.
+   * **Perfil do PDF**: perfil para renderizar o formulário como documento do PDF.
 
 1. Abra a guia **Avançado**. Você pode especificar os parâmetros adicionais no formato de par de valor-chave. Quando o link for clicado, esses parâmetros adicionais serão transmitidos junto com o formulário.
 
@@ -53,9 +51,9 @@ Execute as seguintes etapas para adicionar um componente Link à página:
 
 ## Práticas recomendadas para usar o componente Link {#best-practices-for-using-link-component-br}
 
-* Certifique-se de selecionar PDF como o tipo de renderização se o caminho especificado no Caminho do formulário apontar para um documento que tenha PDF como formato de renderização permitido.
+* Selecione PDF como o tipo de renderização se o caminho especificado no Caminho do formulário apontar para um documento que tenha PDF como formato de renderização permitido.
 * A URL de envio de um formulário pode ser especificada em vários locais e sua ordem de precedência é a seguinte:
 
-   1. O URL de envio incorporado ao formulário (no botão enviar) tem a prioridade mais alta.
-   1. O URL de envio mencionado no Forms Manager tem a prioridade média.
-   1. O URL de envio mencionado no portal de formulários tem a prioridade mais baixa.
+  1. O URL de envio incorporado ao formulário (no botão enviar) tem a prioridade mais alta.
+  1. O URL de envio mencionado no Forms Manager tem a prioridade média.
+  1. O URL de envio mencionado no portal de formulários tem a prioridade mais baixa.

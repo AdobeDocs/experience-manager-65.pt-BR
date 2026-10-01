@@ -11,11 +11,9 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: '458'
 ht-degree: 3%
-
 ---
-
 # Modelos de site {#site-templates}
 
 O console Modelos de Site é semelhante ao console [Modelos de Grupo](tools-groups.md), que se concentra em funções de interesse para grupos da Comunidade.
@@ -58,7 +56,7 @@ No painel Informações básicas, um nome, uma descrição e se o modelo está a
 
   Um switch que controla se o modelo é referenciável.
 
-### Miniatura  {#thumbnail}
+### Miniatura {#thumbnail}
 
 ![miniatura-site](assets/site-thumbnail.png)
 

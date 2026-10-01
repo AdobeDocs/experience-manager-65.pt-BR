@@ -12,11 +12,9 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '418'
+source-wordcount: '425'
 ht-degree: 2%
-
 ---
-
 # Recurso de quadro de classificação {#leaderboard-feature}
 
 ## Introdução {#introduction}
@@ -59,22 +57,22 @@ Na guia **[!UICONTROL Configurações]**, especifique quais informações relaci
 * **Nome de exibição**
 
   Um nome descritivo a ser exibido para o quadro, refletindo as regras selecionadas para exibir selos e pontuações.
-O padrão é `Leaderboard` se nada for inserido.
+  O padrão é `Leaderboard` se nada for inserido.
 
 * **Medalha**
 
   Se marcada, uma coluna para ícones de selo é incluída no quadro de classificação.
-O padrão está desmarcado.
+  O padrão está desmarcado.
 
 * **Nome da medalha**
 
   Se marcada, uma coluna para o nome do selo é incluída no quadro de classificação.
-O padrão está desmarcado.
+  O padrão está desmarcado.
 
 * **Usar Avatar**
 
   Se marcada, a imagem do avatar do membro é incluída no quadro de classificação, ao lado do link de nome para o perfil do membro.
-O padrão está desmarcado.
+  O padrão está desmarcado.
 
 #### Guia Regras {#rules-tab}
 
@@ -104,19 +102,19 @@ Configuração do componente de quadro de classificação:
 
 * Guia Configurações:
 
-   * Nome para Exibição = `Participation Board`
-   * `checked`:
+  * Nome para Exibição = `Participation Board`
+  * `checked`:
 
-      * Insígnia
-      * Nome da insígnia
-      * Usar Avatar
+    * Insígnia
+    * Nome da insígnia
+    * Usar Avatar
 
 * Guia Regras:
 
-   * Local da Regra = `/content/sites/<site name>/jcr:content`
-   * Regra de Pontuação = `/libs/settings/community/scoring/rules/forums-scoring`
-   * Regra de Insígnia = `/libs/settings/community/badging/rules//reference-badging`
-   * Limite de Exibição = `10`
+  * Local da Regra = `/content/sites/<site name>/jcr:content`
+  * Regra de Pontuação = `/libs/settings/community/scoring/rules/forums-scoring`
+  * Regra de Insígnia = `/libs/settings/community/badging/rules//reference-badging`
+  * Limite de Exibição = `10`
 
 ![placar de líderes dos participantes](assets/participants-leaderboard.png)
 
@@ -128,18 +126,18 @@ Configuração do componente de quadro de classificação:
 
 * Guia Configurações:
 
-   * Nome para Exibição = `Expertise Board`
-   * `checked`:
+  * Nome para Exibição = `Expertise Board`
+  * `checked`:
 
-      * Insígnia
-      * Usar Avatar
+    * Insígnia
+    * Usar Avatar
 
 * Guia Regras:
 
-   * Local da Regra = `/content/sites/<site name>/jcr:content`
-   * Regra de Pontuação = `/libs/settings/community/scoring/rules/adv-forums-scoring`
-   * Regra de Insígnia = `/libs/settings/community/badging/rules/adv-forums-badging`
-   * Limite de Exibição = `10`
+  * Local da Regra = `/content/sites/<site name>/jcr:content`
+  * Regra de Pontuação = `/libs/settings/community/scoring/rules/adv-forums-scoring`
+  * Regra de Insígnia = `/libs/settings/community/badging/rules/adv-forums-badging`
+  * Limite de Exibição = `10`
 
 ![quadro de classificação de especialistas](assets/experts-leaderboard.png)
 

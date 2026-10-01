@@ -12,11 +12,9 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '473'
+source-wordcount: '477'
 ht-degree: 0%
-
 ---
-
 # Recurso de fluxos de atividade {#activity-streams-feature}
 
 ## Introdução {#introduction}
@@ -27,7 +25,7 @@ A capacidade de seguir o adiciona outra visualização de atividades quando os m
 
 O documento descreve:
 
-* Adicionar o componente Fluxos de atividade a um site de AEM
+* Adicionar o componente Fluxos de atividade a um site do AEM
 * Configurações do componente de Fluxos de atividade
 
 ### Adicionar fluxos de atividade a uma página {#adding-activity-streams-to-a-page}
@@ -89,11 +87,11 @@ O botão **Seguir** é exibido:
 * Ao exibir o perfil de outro membro.
 * Em uma página principal de recursos, como fóruns, QnA e blogs.
 
-   * Segue todas as atividades desse recurso geral.
+  * Segue todas as atividades desse recurso geral.
 
 * Para uma entrada específica, como um tópico de fórum, pergunta QnA ou artigo de blog.
 
-   * Segue todas as atividades dessa entrada específica.
+  * Segue todas as atividades dessa entrada específica.
 
 ### Informações adicionais {#additional-information}
 

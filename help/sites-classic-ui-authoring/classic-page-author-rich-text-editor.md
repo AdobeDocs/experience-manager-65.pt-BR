@@ -10,11 +10,9 @@ feature: Authoring
 role: User
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '1764'
+source-wordcount: '1788'
 ht-degree: 2%
-
 ---
-
 # Editor de rich text {#rich-text-editor}
 
 O Editor de Rich Text é um elemento básico fundamental para inserir conteúdo textual no AEM. É a base de vários componentes, incluindo:
@@ -25,7 +23,7 @@ O Editor de Rich Text é um elemento básico fundamental para inserir conteúdo 
 
 ## Editor de rich text {#rich-text-editor-1}
 
-A caixa de diálogo de edição WYSIWYG fornece uma ampla variedade de funcionalidades:
+A caixa de diálogo de edição do WYSIWYG fornece uma grande variedade de funcionalidades:
 
 ![cq55_rte_basicchars](assets/cq55_rte_basicchars.png)
 
@@ -116,7 +114,7 @@ Este é o mecanismo de colagem padrão (Ctrl-V) do componente; quando instalado 
 
 ![Desfazer, Refazer barra de ferramentas](do-not-localize/cq55_rte_undoredo.png)
 
-O AEM mantém um registro das suas últimas 50 ações no componente atual, mantido em ordem cronológica. Essas ações podem ser desfeitas (e então refeitas) em ordem estrita, se necessário.
+O AEM mantém um registro das últimas 50 ações no componente atual, mantidas em ordem cronológica. Essas ações podem ser desfeitas (e então refeitas) em ordem estrita, se necessário.
 
 >[!CAUTION]
 >
@@ -220,7 +218,7 @@ As imagens podem ser arrastadas do localizador de conteúdo para adicioná-las a
 
 >[!NOTE]
 >
->O AEM também oferece componentes especializados para configurações de imagem mais detalhadas. Por exemplo, os componentes **Imagem** e **Imagem de Texto** estão disponíveis.
+>A AEM também oferece componentes especializados para configurações de imagem mais detalhadas. Por exemplo, os componentes **Imagem** e **Imagem de Texto** estão disponíveis.
 
 ### Verificador ortográfico {#spelling-checker}
 
@@ -267,7 +265,7 @@ As funções específicas da tabela são:
 * [Adicionar ou Excluir Linhas](#add-or-delete-rows)
 * [Adicionar ou excluir colunas](#add-or-delete-columns)
 * [Seleção de Linhas ou Colunas Inteiras](#selecting-entire-rows-or-columns)
-* [Mesclar Células](#merge-cells)
+* [Mesclar células](#merge-cells)
 * [Dividir células](#split-cells)
 * [Tabelas aninhadas](#creating-nested-tables)
 * [Remover tabela](#remove-table)
@@ -296,7 +294,7 @@ As propriedades básicas da tabela podem ser configuradas antes de clicar em **O
 
 >[!CAUTION]
 >
->A Adobe recomenda que você defina uma largura para a tabela.
+>A Adobe recomenda definir uma largura para a tabela.
 
 #### Propriedades da célula {#cell-properties}
 
@@ -335,7 +333,7 @@ A coluna atual também pode ser excluída.
 
 Seleciona toda a linha ou coluna atual. Ações específicas (por exemplo, mesclar) ficam disponíveis.
 
-#### Mesclar Células {#merge-cells}
+#### Mesclar células {#merge-cells}
 
 ![cq55_rte_cellmerge](assets/cq55_rte_cellmerge.png) ![cq55_rte_cellmerge-1](assets/cq55_rte_cellmerge-1.png)
 

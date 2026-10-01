@@ -9,11 +9,9 @@ feature: Adaptive Forms,Foundation Components
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1417'
+source-wordcount: '1436'
 ht-degree: 0%
-
 ---
-
 # Apresentação do site de referência de recrutamento do funcionário {#employee-recruitment-reference-site-walkthrough}
 
 ## Visão geral {#overview}
@@ -36,7 +34,7 @@ We.Finance é uma organização que permite que os candidatos se candidatem a em
 O caso de uso de recrutamento de funcionários envolve dois workflows:
 
 * Antes da entrevista - Financiamos o fluxo de trabalho de recrutamento de funcionários
-* Após a entrevista - Financiamos o fluxo de trabalho de entrevista do Post de recrutamento de funcionários
+* Após a entrevista - Financiamos o workflow Pós-Entrevista de Recrutamento de Funcionário
 
 Esses workflows são criados no AEM e podem ser encontrados em:
 
@@ -48,9 +46,9 @@ A seguir está o modelo do fluxo de trabalho Recrutamento de Funcionário das Fi
 
 ![we-finance-employee-recruiting-workflow](assets/we-finance-employee-recruiting-workflow.png)
 
-#### Financiamos o fluxo de trabalho de entrevista do Post de recrutamento de funcionários {#we-finance-employee-recruiting-post-interview-workflow}
+#### Fluxo de trabalho de pós-entrevista do recrutamento de funcionários do We Finance {#we-finance-employee-recruiting-post-interview-workflow}
 
-A seguir está o modelo do fluxo de trabalho We Finance Employee Post Interview Recruiting seguido neste documento.
+A seguir está o modelo do fluxo de trabalho Recrutamento Pós-Entrevista de Funcionário das Finanças seguido neste documento.
 
 ![we-finance-employee-recruiting-post-entrevista-workflow](assets/we-finance-employee-recruiting-post-interview-workflow.png)
 
@@ -91,11 +89,11 @@ Certifique-se de especificar uma ID de e-mail válida no aplicativo, pois qualqu
 
 ## Perfil de Sarah Rose na lista de candidatos de John Jacobs para a triagem do gerente de contratação {#john-jacobs-shortlists-sarah-rose-s-profile-for-the-hiring-manager-s-screening}
 
-A organização recebe a requisição de cargo submetida por Sarah. John Jacobs, um recrutador, é designado para revisar o perfil de Sarah. John analisa a tarefa em sua Caixa de entrada AEM, encontra o perfil que corresponde ao requisito da tarefa e clica em Shortlist. O perfil de Sarah é encaminhado para Gloria Rios, a gerente de contratação, para sua aprovação.
+A organização recebe a requisição de cargo submetida por Sarah. John Jacobs, um recrutador, é designado para revisar o perfil de Sarah. John analisa a tarefa em sua Caixa de entrada do AEM, encontra o perfil que corresponde ao requisito da tarefa e clica em Selecionar lista. O perfil de Sarah é encaminhado para Gloria Rios, a gerente de contratação, para sua aprovação.
 
 ![jjacobs-inbox-1](assets/jjacobs-inbox-1.png)
 
-Caixa de entrada AEM de John
+Caixa de entrada do AEM de John
 
 ![lista de candidatos selecionados](assets/candidate-shortlist.png)
 
@@ -111,11 +109,11 @@ Acesse `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.h
 
 ## Gloria analisa o pedido e aprova o candidato para uma entrevista {#gloria-reviews-the-application-and-approves-the-applicant-for-an-interview}
 
-Gloria, a gerente de contratação, recebe o perfil selecionado como uma tarefa em sua Caixa de entrada AEM. Ela revisa e aprova a candidata, Sarah Rose, para a entrevista.
+Gloria, a gerente de contratação, recebe o perfil selecionado como uma tarefa em sua Caixa de entrada do AEM. Ela revisa e aprova a candidata, Sarah Rose, para a entrevista.
 
 ![gloriainbox](assets/gloriainbox.png)
 
-Caixa de entrada do AEM de Gloria
+Caixa de entrada do AEM da Gloria
 
 ![gloriaschedulesentrevista](assets/gloriaschedulesinterview.png)
 
@@ -123,7 +121,7 @@ Gloria aprova Sarah Rose para uma entrevista
 
 **Como funciona**
 
-Quando Gloria aprova o candidato para uma entrevista, o workflow cria uma tarefa na Caixa de entrada AEM de John Doe, que é recrutador da We.Finance.
+Quando Gloria aprova o candidato para uma entrevista, o workflow cria uma tarefa na Caixa de entrada do AEM de John Doe, que é um recrutador do We.Finance.
 
 ### Veja você mesmo {#see-it-yourself-2}
 
@@ -137,7 +135,7 @@ John Doe recebe a tarefa de agendar uma entrevista em sua caixa de entrada. John
 
 ![johnjacobsaeminbox](assets/johnjacobsaeminbox.png)
 
-Caixa de entrada AEM de John Doe
+Caixa de entrada do AEM de John Doe
 
 ![entrevista_agendada](assets/johndoescheduleinterview.png)
 
@@ -157,7 +155,7 @@ Depois que Sarah Rose passa pelas entrevistas e as limpa, Gloria Rios, a gerente
 
 ![gloriariosinboxoffer](assets/gloriariosinboxoffer.png)
 
-Caixa de entrada do AEM de Gloria
+Caixa de entrada do AEM da Gloria
 
 ![gloriariosselectcandidate](assets/gloriariosselectcandidate.png)
 
@@ -195,7 +193,7 @@ John Doe seleciona a solicitação de revisão do candidato e a abre. John Doe d
 
 ![johndoeadditionainformationinbox](assets/johndoeadditionainformationinbox.png)
 
-Caixa de entrada AEM de John Doe
+Caixa de entrada do AEM de John Doe
 
 ![johndoeadditionalinformationreview-copy](assets/johndoeadditionalinformationreview-copy.png)
 
@@ -207,7 +205,7 @@ John Jacobs vê a solicitação de verificação de histórico em sua caixa de e
 
 ![johnjacobsbackgroundcheckinbox](assets/johnjacobsbackgroundcheckinbox.png)
 
-Caixa de entrada AEM de John Jacobs
+Caixa de entrada do AEM de John Jacobs
 
 ![johnjacobsbackgroundcheckgoahead](assets/johnjacobsbackgroundcheckgoahead.png)
 
@@ -215,11 +213,11 @@ Depois de executar a verificação de background, John Jacobs clica em Ir adiant
 
 ## John Doe envia a carta de adesão para Sarah Rose {#john-doe-sends-out-the-joining-letter-to-sarah-rose}
 
-John Doe recebe uma solicitação em sua Caixa de entrada do AEM para enviar a carta de associação. John abre a solicitação e visualiza os detalhes. John Doe anexa a PDF da carta de junção e clica em Anexar e enviar carta de junção.
+John Doe recebe uma solicitação em sua Caixa de entrada do AEM para enviar a carta de associação. John abre a solicitação e visualiza os detalhes. John Doe anexa a carta de associação PDF e clica em Anexar e enviar carta de associação.
 
 ![johndoejoiningletterinbox](assets/johndoejoiningletterinbox.png)
 
-Caixa de entrada AEM de John Doe
+Caixa de entrada do AEM de John Doe
 
 ![johndoejoiningletterattachandsend](assets/johndoejoiningletterattachandsend.png)
 
@@ -227,7 +225,7 @@ João Silva envia a carta de adesão para assinatura
 
 ## Sarah Rose recebe e assina a carta de adesão {#sarah-rose-receives-and-signs-the-joining-letter}
 
-Sarah Rose recebe a carta de adesão por assinar. Sarah Clica Clique Aqui Para Revisar E Assinar A Carta De Junção. A PDF da carta de junção é aberta com um campo para assinar o documento.
+Sarah Rose recebe a carta de adesão por assinar. Sarah Clica Clique Aqui Para Revisar E Assinar A Carta De Junção. A carta de associação PDF é aberta com um campo para assinar o documento.
 
 ![sarahrosejoiningletteremail](assets/sarahrosejoiningletteremail.png)
 

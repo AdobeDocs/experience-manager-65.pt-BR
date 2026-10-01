@@ -11,14 +11,12 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '426'
+source-wordcount: '436'
 ht-degree: 1%
-
 ---
-
 # Ajustando o desempenho do Monitor de Integridade{#fine-tuning-health-monitor-performance}
 
-Coletar as estatísticas do sistema que preenchem o Health Monitor tem algum impacto no desempenho do seu ambiente de formulários AEM. Esse impacto pode ser controlado definindo as opções de Java listadas abaixo em seu servidor de aplicativos.
+Coletar as estatísticas do sistema que preenchem o Health Monitor tem algum impacto no desempenho do seu ambiente de formulários do AEM. Esse impacto pode ser controlado definindo as opções de Java listadas abaixo em seu servidor de aplicativos.
 
 <table>
  <thead>
@@ -30,7 +28,7 @@ Coletar as estatísticas do sistema que preenchem o Health Monitor tem algum imp
  </thead>
  <tbody>
   <tr>
-   <td><p>adobe.healthmonitor.enabled</p></td>
+   <td><p>adobe.health.monitor.enabled</p></td>
    <td><p>Ativar ou desativar thread do Monitor de Integridade</p></td>
    <td><p>verdadeiro</p></td>
   </tr>
@@ -40,7 +38,7 @@ Coletar as estatísticas do sistema que preenchem o Health Monitor tem algum imp
    <td><p>verdadeiro</p></td>
   </tr>
   <tr>
-   <td><p>adobe.healthmonitor.refresh-interval</p></td>
+   <td><p>adobe.health.monitor.refresh-interval</p></td>
    <td><p>O intervalo em milissegundos após o qual o thread do Monitor de Integridade coleta as estatísticas</p></td>
    <td><p>10 minutos (600.000 milissegundos)</p></td>
   </tr>
@@ -55,7 +53,7 @@ Coletar as estatísticas do sistema que preenchem o Health Monitor tem algum imp
    <td><p>600000</p></td>
   </tr>
   <tr>
-   <td><p>adobe.workmanager.healthmonitor.enabled</p></td>
+   <td><p>adobe.workmanager.health.monitor.enabled</p></td>
    <td><p>Essa propriedade ativa ou desativa a coleta de estatísticas do Work Manager, como contagem de itens de trabalho ou de jobs.</p></td>
    <td><p>verdadeiro</p></td>
   </tr>

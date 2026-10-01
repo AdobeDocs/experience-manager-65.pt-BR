@@ -11,11 +11,9 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '247'
+source-wordcount: '251'
 ht-degree: 1%
-
 ---
-
 # Usar curtidas {#using-liking}
 
 O componente `Liking` é uma ferramenta útil que permite aos usuários expressar uma opinião sobre um conteúdo específico, como um comentário dentro de um fórum. Com o componente `Liking`, os membros selecionam o ícone do coração para indicar uma opinião positiva.

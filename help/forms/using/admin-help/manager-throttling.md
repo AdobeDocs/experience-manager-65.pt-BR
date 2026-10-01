@@ -11,28 +11,26 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '1042'
+source-wordcount: '1053'
 ht-degree: 0%
-
 ---
-
 # Gerenciador de trabalho e limitação{#work-manager-and-throttling}
 
 >[!NOTE]
 > 
 > Verifique se o usuário tem privilégios de administrador para acessar o console do administrador.
 
-Os formulários AEM (e versões anteriores) usavam filas JMS para executar operações de forma assíncrona. Nos formulários AEM, as filas JMS foram substituídas pelo Work Manager. Este documento fornece informações de fundo sobre o Work Manager e fornece instruções sobre a configuração das opções de limitação do Work Manager.
+Os AEM Forms (e versões anteriores) usavam filas JMS para executar operações de forma assíncrona. Nos formulários AEM, as filas JMS foram substituídas pelo Work Manager. Este documento fornece informações de fundo sobre o Work Manager e fornece instruções sobre a configuração das opções de limitação do Work Manager.
 
 ## Sobre operações de longa duração (assíncronas) {#about-long-lived-asynchronous-operations}
 
-Nos formulários AEM, as operações realizadas pelos serviços podem ser de curta duração (síncronas) ou de longa duração (assíncronas). As operações de curta duração são concluídas de forma síncrona no mesmo thread a partir do qual foram chamadas. Essas operações aguardam uma resposta antes de continuar.
+No AEM Forms, as operações realizadas pelos serviços podem ser de curta duração (síncronas) ou de longa duração (assíncronas). As operações de curta duração são concluídas de forma síncrona no mesmo thread a partir do qual foram chamadas. Essas operações aguardam uma resposta antes de continuar.
 
 Operações de longa duração podem abranger sistemas ou até mesmo se estender além da organização, como quando um cliente precisa preencher e enviar um formulário de solicitação de empréstimo como parte de uma solução maior que integra várias tarefas automatizadas e humanas. Essas operações devem continuar enquanto aguardamos uma resposta. Operações de longa duração executam seu trabalho subjacente de forma assíncrona, permitindo que os recursos sejam envolvidos enquanto aguardam a conclusão. Ao contrário de uma operação de curta duração, o Work Manager não considera uma operação de longa duração como concluída após ser chamada. Um acionador externo, como um sistema que solicita outra operação no mesmo serviço ou um usuário que envia um formulário, deve ocorrer para concluir a operação.
 
 ## Sobre o Gerenciador de trabalho {#about-work-manager}
 
-Os formulários AEM (e versões anteriores) usavam filas JMS para executar operações de forma assíncrona. O AEM Forms usa o Work Manager para agendar e executar operações assíncronas por meio de threads gerenciados.
+Os AEM Forms (e versões anteriores) usavam filas JMS para executar operações de forma assíncrona. O AEM Forms usa o Work Manager para agendar e executar operações assíncronas por meio de threads gerenciados.
 
 As operações assíncronas são tratadas da seguinte maneira:
 
@@ -40,7 +38,7 @@ As operações assíncronas são tratadas da seguinte maneira:
 1. O Work Manager armazena o item de trabalho em uma tabela de banco de dados e atribui um identificador exclusivo ao item de trabalho. O registro do banco de dados contém todas as informações necessárias para executar o item de trabalho.
 1. As threads do Work Manager extraem itens de trabalho quando as threads se tornam livres. Antes de extrair os itens de trabalho, as threads podem verificar se os serviços necessários estão iniciados, se há tamanho de heap suficiente para extrair o próximo item de trabalho e se há ciclos do CPU suficientes para processar o item de trabalho. O Work Manager também avalia os atributos do item de trabalho (como sua prioridade) ao programar sua execução.
 
-Os administradores de formulários AEM podem usar o Health Monitor para verificar as estatísticas do Work Manager, como o número de itens de trabalho na fila e seus status. Você também pode usar o Monitor de Integridade para pausar, retomar, repetir ou excluir itens de trabalho. (Consulte [Exibir estatísticas relacionadas ao Gerenciador de Trabalho](/help/forms/using/admin-help/view-statistics-related-manager.md#view-statistics-related-to-work-manager).)
+Os administradores do AEM Forms podem usar o Monitor de integridade para verificar as estatísticas do Work Manager, como o número de itens de trabalho na fila e seus status. Você também pode usar o Monitor de Integridade para pausar, retomar, repetir ou excluir itens de trabalho. (Consulte [Exibir estatísticas relacionadas ao Gerenciador de Trabalho](/help/forms/using/admin-help/view-statistics-related-manager.md#view-statistics-related-to-work-manager).)
 
 ## Configurar opções de limitação do Work Manager {#configuring-work-manager-throttling-options}
 
