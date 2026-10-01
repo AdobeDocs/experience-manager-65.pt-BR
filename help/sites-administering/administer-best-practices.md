@@ -1,21 +1,23 @@
 ---
 title: Práticas recomendadas para ajudar os administradores a começar a trabalhar
-description: Descubra as práticas recomendadas compiladas pelas equipes de engenharia e consultoria do Adobe para ajudar os administradores a começar a trabalhar.
+
+description: Descubra as práticas recomendadas compiladas pelas equipes de engenharia e consultoria da Adobe para ajudar os administradores a começar a trabalhar.
+
+
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
+
 exl-id: 576d87c8-cc96-45a0-b3cf-defb440babbb
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '530'
+source-wordcount: '533'
 ht-degree: 6%
-
 ---
-
 # Práticas recomendadas{#best-practices}
 
 As práticas recomendadas descrevem como desenvolver, administrar ou usar o AEM da maneira mais eficiente e eficaz possível. Essa lista crescente de tópicos inclui uma variedade de áreas no AEM.
@@ -61,7 +63,7 @@ As práticas recomendadas do Assets, incluindo o recurso Dynamic Media e a integ
   </tr>
   <tr>
    <td>Dynamic Media versus integração direta com o Scene7</td>
-   <td><a href="/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media">Integração do Scene7/AEM com o Dynamic Media</a></td>
+   <td><a href="/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media">Integração entre Scene7/AEM e Dynamic Media</a></td>
    <td>Descreve quando é melhor usar a solução Dynamic Media, quando integrar S7 com AEM ou quando usar ambos.</td>
   </tr>
  </tbody>
