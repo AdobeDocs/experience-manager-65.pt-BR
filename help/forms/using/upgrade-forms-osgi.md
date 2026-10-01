@@ -22,7 +22,7 @@ ht-degree: 2%
 
 Você pode executar uma atualização direta do AEM 6.3 Forms ou do AEM 6.4 Forms para o AEM 6.5 Forms.
 
-O caminho de atualização direta do **AEM 6.0 Forms, AEM 6.1 Forms** e do **AEM 6.2 Forms** para o AEM 6.5 Forms não está disponível. Execute uma [atualização intermediária para o AEM 6.2 Forms](https://helpx.adobe.com/experience-manager/6-2/forms/using/upgrade.html), [atualização para o AEM 6.3 Forms](https://helpx.adobe.com/experience-manager/6-3/forms/using/upgrade.html) ou [atualização para o AEM 6.4 Forms](/help/forms/using/upgrade.md) e depois atualize do AEM 6.3 Forms ou do AEM 6.4 Forms para o AEM 6.5 Forms.
+O caminho de atualização direta do **AEM 6.0 Forms, AEM 6.1 Forms** e do **AEM 6.2 Forms** para o AEM 6.5 Forms não está disponível. Execute uma [atualização intermediária para o AEM 6.2 Forms](https://helpx.adobe.com/br/experience-manager/6-2/forms/using/upgrade.html), [atualização para o AEM 6.3 Forms](https://helpx.adobe.com/br/experience-manager/6-3/forms/using/upgrade.html) ou [atualização para o AEM 6.4 Forms](/help/forms/using/upgrade.md) e depois atualize do AEM 6.3 Forms ou do AEM 6.4 Forms para o AEM 6.5 Forms.
 
 Faça o seguinte para atualizar do AEM 6.3 Forms ou do AEM 6.4 Forms para o AEM 6.5 Forms:
 
@@ -51,10 +51,10 @@ Faça o seguinte para atualizar do AEM 6.3 Forms ou do AEM 6.4 Forms para o AEM 
       1. Selecione **[!UICONTROL Forms]** na lista suspensa **[!UICONTROL Solução]**.
       1. Selecione a versão e o tipo do pacote. Você também pode usar a opção **[!UICONTROL Downloads de Pesquisa]** para filtrar os resultados.
    1. Selecione o nome do pacote aplicável ao seu sistema operacional, selecione **[!UICONTROL Aceitar termos do EULA]** e selecione **[!UICONTROL Baixar]**.
-   1. Abra o [Gerenciador de Pacotes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html) e clique em **[!UICONTROL Carregar Pacote]** para carregar o pacote.
+   1. Abra o [Gerenciador de Pacotes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=pt-BR) e clique em **[!UICONTROL Carregar Pacote]** para carregar o pacote.
    1. Selecione o pacote e clique em **[!UICONTROL Instalar]**.
 
-      Você também pode baixar o pacote usando o link direto listado no artigo [versões do AEM Forms](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html).
+      Você também pode baixar o pacote usando o link direto listado no artigo [versões do AEM Forms](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html).
 
       >[!NOTE]
       >
@@ -72,7 +72,7 @@ Faça o seguinte para atualizar do AEM 6.3 Forms ou do AEM 6.4 Forms para o AEM 
 
      O utilitário de migração torna os formulários adaptáveis e os ativos de gerenciamento de correspondência das versões anteriores compatíveis com os formulários do AEM 6.5. Você pode baixar o utilitário da Distribuição de software da AEM. Para obter informações detalhadas sobre como configurar e usar o utilitário de migração, consulte [utilitário de migração](../../forms/using/migration-utility.md).
 
-     Se você estiver usando a [Amostra para integrar o componente de rascunhos e envios](https://helpx.adobe.com/experience-manager/6-3/forms/using/integrate-draft-submission-database.html) ao banco de dados e atualizar de uma versão anterior, execute as seguintes consultas SQL após executar a atualização:
+     Se você estiver usando a [Amostra para integrar o componente de rascunhos e envios](https://helpx.adobe.com/br/experience-manager/6-3/forms/using/integrate-draft-submission-database.html) ao banco de dados e atualizar de uma versão anterior, execute as seguintes consultas SQL após executar a atualização:
 
      ```sql
      UPDATE metadata m, additionalmetadatatable am
