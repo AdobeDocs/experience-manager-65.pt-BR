@@ -71,10 +71,10 @@ Para configurar manualmente o Experience Manager:
 
    Defina a configuração a seguir e clique em **[!UICONTROL Salvar]**.
 
-   * [!UICONTROL Ponto de Extremidade de Autorização]: ` https://ims-na1.adobelogin.com/ims/authorize/v1`
-   * [!UICONTROL Ponto de Extremidade do Token]: ` https://ims-na1.adobelogin.com/ims/token/v1`
-   * [!UICONTROL Ponto de Extremidade do Perfil]: ` https://ims-na1.adobelogin.com/ims/profile/v1`
-   * [!UICONTROL URL de validação]: ` https://ims-na1.adobelogin.com/ims/validate_token/v1`
+   * [!UICONTROL Ponto de Extremidade de Autorização]&#x200B;: ` https://ims-na1.adobelogin.com/ims/authorize/v1`
+   * [!UICONTROL Ponto de Extremidade do Token]&#x200B;: ` https://ims-na1.adobelogin.com/ims/token/v1`
+   * [!UICONTROL Ponto de Extremidade do Perfil]&#x200B;: ` https://ims-na1.adobelogin.com/ims/profile/v1`
+   * [!UICONTROL URL de validação]&#x200B;: ` https://ims-na1.adobelogin.com/ims/validate_token/v1`
    * [!UICONTROL Organização]: definida como a ID da organização na [Adobe Admin Console](https://adminconsole.adobe.com/).
    * [!UICONTROL Mapeamentos de grupos]: deixe vazio a menos que você tenha um caso especial. Para obter detalhes, consulte [Mapeamento de grupos](#group-mapping).
 
@@ -88,10 +88,10 @@ Para configurar manualmente o Experience Manager:
 
    * [!UICONTROL ID do cliente]: não alterar
    * [!UICONTROL Segredo do cliente]: não alterar
-   * [!UICONTROL ID de configuração]: ` ims`
+   * [!UICONTROL ID de configuração]&#x200B;: ` ims`
    * [!UICONTROL Escopo]: `AdobeID, OpenID, read_organizations` (outros valores também podem estar na configuração)
-   * [!UICONTROL Identificação do Provedor]: ` ims`
-   * [!UICONTROL Criar usuários]: ` Checked`
+   * [!UICONTROL Identificação do Provedor]&#x200B;: ` ims`
+   * [!UICONTROL Criar usuários]&#x200B;: ` Checked`
    * [!UICONTROL Propriedade de ID do Usuário]: `Email` para configuração recém-criada. Caso contrário, não altere.
 
 1. Localize a configuração do **[!UICONTROL Manipulador de sincronização padrão do Apache Jackrabbit Oak]** com o **[!UICONTROL Nome do Manipulador de sincronização]** `ims` e clique nele para editá-lo.
@@ -100,7 +100,7 @@ Para configurar manualmente o Experience Manager:
 
    * [!UICONTROL Hora de Expiração do Usuário e Expiração da Associação do Usuário]: tempo em minutos seguido por &#39;m&#39; sem espaço. Por exemplo, `15m` por 15 minutos. Para obter detalhes, consulte [Mapeamento de grupos](#group-mapping).
    * [!UICONTROL Associação automática de usuário]: não alterar
-   * [!UICONTROL Associação Dinâmica de Usuário]: ` Deslect`
+   * [!UICONTROL Associação Dinâmica de Usuário]&#x200B;: ` Deslect`
 
 1. Localize a configuração do **[!UICONTROL Manipulador de autenticação OAuth do Adobe Granite]** e clique nele para editá-lo. Sem fazer alterações, clique em **[!UICONTROL Salvar]**.
 
