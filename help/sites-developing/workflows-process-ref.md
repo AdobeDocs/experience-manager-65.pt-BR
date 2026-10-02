@@ -11,11 +11,9 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '1073'
+source-wordcount: '1078'
 ht-degree: 1%
-
 ---
-
 # Referência do processo de fluxo de trabalho{#workflow-process-reference}
 
 O AEM fornece várias etapas de processo que podem ser usadas para criar modelos de fluxo de trabalho. Etapas de processo personalizadas também podem ser adicionadas para tarefas não cobertas pelas etapas internas (consulte [Criação de Modelos de Fluxo de Trabalho](/help/sites-developing/workflows-models.md)).
@@ -31,11 +29,11 @@ As etapas do processo são definidas por uma classe Java™ ou por um ECMAScript
 * Para os processos de classe Java™, o nome de classe totalmente qualificado é fornecido.
 * Para os processos do ECMAScript, é fornecido o caminho para o script.
 
-### Carga útil {#payload}
+### Conteúdo {#payload}
 
 A carga é a entidade sobre a qual uma instância de fluxo de trabalho atua. A carga é selecionada implicitamente pelo contexto em que uma instância de fluxo de trabalho é iniciada.
 
-Por exemplo, se um fluxo de trabalho for aplicado a uma página do AEM *P*, *P* será passado de etapa a etapa conforme o fluxo de trabalho avança, com cada etapa atuando opcionalmente sobre *P* de alguma forma.
+Por exemplo, se um fluxo de trabalho for aplicado a uma página do AEM *P*, *P* será passado de etapa a etapa conforme o fluxo de trabalho avança, com cada etapa atuando opcionalmente em *P* de alguma forma.
 
 No caso mais comum, a carga é um nó JCR no repositório (por exemplo, uma página ou ativo AEM). Uma carga de Nó JCR é passada como uma string que é um caminho JCR ou um identificador JCR (UUID). Às vezes, a carga pode ser uma propriedade JCR (passada como um caminho JCR), um URL, um objeto binário ou um objeto Java™ genérico. Etapas de processo individuais que atuam na carga normalmente esperam uma carga de um determinado tipo ou agem de forma diferente dependendo do tipo de carga. Para cada processo descrito abaixo, o tipo de carga útil esperado, se houver, é descrito.
 
@@ -52,7 +50,7 @@ Os argumentos são inseridos como uma única cadeia de caracteres na propriedade
 ```
 
 
-### Tempo limite {#timeout}
+### Tempo-limite {#timeout}
 
 Após esse período de tempo limite, a etapa do fluxo de trabalho não estará mais operacional. Alguns processos de fluxo de trabalho respeitam o tempo limite, enquanto outros não se aplicam e são ignorados.
 
@@ -135,7 +133,7 @@ Por exemplo:
 
 * Extraia os metadados do ativo.
 * Cria três miniaturas dos três tamanhos especificados.
-* Crie uma imagem de JPEG do ativo, supondo que o ativo originalmente não seja um GIF ou um PNG (caso em que nenhum JPEG é criado).
+* Crie uma imagem JPEG a partir do ativo, supondo que o ativo originalmente não seja um GIF ou um PNG (nesse caso, nenhum JPEG é criado).
 * Defina a data da última modificação no ativo.
 
 ```shell
@@ -208,7 +206,7 @@ Bloqueia a carga do workflow.
 A etapa não tem efeito nas seguintes circunstâncias:
 
 * A carga já está bloqueada
-* O nó de carga útil não contém um nó secundário jcr:content
+* O nó de carga não contém um nó filho jcr:content
 
 ### UnlockProcess {#unlockprocess}
 
@@ -223,7 +221,7 @@ Desbloqueia a carga do fluxo de trabalho.
 A etapa não tem efeito nas seguintes circunstâncias:
 
 * A carga já está desbloqueada
-* O nó de carga útil não contém um nó secundário jcr:content
+* O nó de carga não contém um nó filho jcr:content
 
 ## Processos de controle de versão {#versioning-processes}
 
@@ -231,7 +229,7 @@ O processo a seguir executa uma tarefa relacionada à versão.
 
 ### CreateVersionProcess {#createversionprocess}
 
-Cria uma versão da carga do fluxo de trabalho (página AEM ou ativo DAM).
+Cria uma versão da carga do fluxo de trabalho (página do AEM ou ativo DAM).
 
 * **Classe Java™**: `com.day.cq.wcm.workflow.process.CreateVersionProcess`
 

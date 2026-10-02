@@ -1,10 +1,12 @@
 ---
 title: Ferramentas de teste e rastreamento
 description: O AEM fornece uma estrutura para testar a interface do usuário do componente e um mecanismo para testar e depurar componentes
+
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: testing
 content-type: reference
+
 docset: aem65
 exl-id: bb5d1c7c-56ce-4d1e-a3cb-4e74d6922137
 solution: Experience Manager, Experience Manager Sites
@@ -12,11 +14,9 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '288'
-ht-degree: 1%
-
+source-wordcount: '293'
+ht-degree: 2%
 ---
-
 # Ferramentas de teste e rastreamento{#testing-and-tracking-tools}
 
 ## Testes {#testing}
@@ -30,7 +30,7 @@ Veja a seguir duas ferramentas de teste do Open Source:
 
 **Selenium**
 
-O Selenium é usado para testes de função em um navegador com um usuário por atividade. Ele registra etapas de teste (cliques) como tabelas de HTML ou classes Java™.
+O Selenium é usado para testes de função em um navegador com um usuário por atividade. Ele registra as etapas de teste (cliques) como tabelas do HTML ou classes Java™.
 
 Para obter mais informações, consulte [https://www.selenium.dev/](https://www.selenium.dev/).
 

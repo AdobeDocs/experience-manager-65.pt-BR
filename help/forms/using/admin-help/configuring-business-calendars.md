@@ -11,24 +11,22 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '1901'
+source-wordcount: '1949'
 ht-degree: 0%
-
 ---
-
 # Configuração de calendários de negócios {#configuring-business-calendars}
 
-*Calendários comerciais* definem dias úteis e não úteis (por exemplo, feriados oficiais, finais de semana e dias de desligamento da empresa) para sua organização. Ao usar calendários comerciais, os formulários AEM ignoram dias não úteis ao executar determinados cálculos de data. No Workbench, você pode especificar se usará calendários de negócios para eventos associados ao usuário, como lembretes de tarefa, prazos e escalonamentos, ou para ações não associadas a usuários, como Eventos de Timer e o Serviço de Espera.
+*Calendários comerciais* definem dias úteis e não úteis (por exemplo, feriados oficiais, finais de semana e dias de desligamento da empresa) para sua organização. Ao usar calendários comerciais, os formulários do AEM ignoram dias não úteis ao executar determinados cálculos de data. No Workbench, você pode especificar se usará calendários de negócios para eventos associados ao usuário, como lembretes de tarefa, prazos e escalonamentos, ou para ações não associadas a usuários, como Eventos de Timer e o Serviço de Espera.
 
 Por exemplo, um lembrete de tarefa é configurado para ocorrer três dias úteis após a tarefa ser atribuída a um usuário. A tarefa é atribuída na quinta-feira. No entanto, os três dias seguintes não são dias úteis porque a sexta-feira é um feriado nacional e os próximos dois dias são dias de fim de semana. O lembrete é enviado na quarta-feira da semana seguinte.
 
 >[!NOTE]
 >
->Ao calcular datas e horas usando calendários comerciais, os formulários AEM usam a data e a hora do servidor em que estão sendo executados e não se ajustam para a diferença entre fusos horários. Por exemplo, se um lembrete de tarefa estiver programado para ocorrer às 10h em um servidor em execução em Londres, mas o usuário que recebe o lembrete estiver em Nova York, o usuário receberá o lembrete às 5h da hora local.
+>Ao calcular datas e horas usando calendários comerciais, o AEM Forms usa a data e a hora do servidor em que está sendo executado e não ajusta a diferença entre fusos horários. Por exemplo, se um lembrete de tarefa estiver programado para ocorrer às 10h em um servidor em execução em Londres, mas o usuário que recebe o lembrete estiver em Nova York, o usuário receberá o lembrete às 5h da hora local.
 
 ## Uso do calendário comercial padrão {#using-the-default-business-calendar}
 
-Os formulários AEM fornecem um calendário comercial padrão (chamado *Calendário interno*) que designa sábados e domingos como dias não úteis. Se todos os usuários da sua organização tiverem os mesmos dias não-úteis, você poderá atualizar o calendário padrão de negócios para se adequar à sua organização. Ao usar apenas o calendário de negócios padrão, não é necessário ativar os calendários de negócios no Gerenciamento de Usuários nem fornecer mapeamentos. Quando nenhum outro calendário comercial é definido, os formulários AEM usam o calendário comercial padrão.
+O AEM Forms fornece um calendário comercial padrão (chamado *Calendário interno*) que designa sábados e domingos como dias não úteis. Se todos os usuários da sua organização tiverem os mesmos dias não-úteis, você poderá atualizar o calendário padrão de negócios para se adequar à sua organização. Ao usar apenas o calendário de negócios padrão, não é necessário ativar os calendários de negócios no Gerenciamento de Usuários nem fornecer mapeamentos. Quando nenhum outro calendário comercial é definido, os formulários do AEM usam o calendário comercial padrão.
 
 ## Configuração de vários calendários de negócios {#setting-up-multiple-business-calendars}
 
@@ -40,7 +38,7 @@ Se alguns usuários da organização tiverem dias não úteis diferentes, você 
 
    **Associação de grupo:** você pode atribuir um calendário comercial a um usuário com base na associação de grupo do usuário. Nesse caso, cada usuário no grupo usará o mesmo calendário comercial.
 
-   Se um usuário for membro de dois grupos diferentes e esses grupos forem mapeados para dois calendários comerciais diferentes, os formulários AEM usarão o primeiro calendário encontrado nos resultados da pesquisa. Nesse caso, considere o uso de chaves de calendário comercial para associar usuários a calendários comerciais.
+   Se um usuário for membro de dois grupos diferentes e esses grupos estiverem mapeados para dois calendários de negócios diferentes, os formulários do AEM usarão o primeiro calendário encontrado nos resultados da pesquisa. Nesse caso, considere o uso de chaves de calendário comercial para associar usuários a calendários comerciais.
 
    **Chaves do calendário comercial:** você pode atribuir um calendário comercial a um usuário com base em uma chave do calendário comercial, que é uma configuração especificada no Gerenciamento de Usuários. Em seguida, mapeie a chave do calendário comercial para um calendário comercial no fluxo de trabalho de formulários.
 
@@ -48,19 +46,19 @@ Se alguns usuários da organização tiverem dias não úteis diferentes, você 
 
    Se você estiver usando um domínio local ou híbrido, as informações sobre os usuários serão armazenadas somente no banco de dados do Gerenciamento de usuários. Para definir a chave do calendário comercial para esses usuários, informe uma string no campo Chave do Calendário Comercial ao adicionar ou editar um usuário no Gerenciamento de Usuários. (Consulte [Adicionar e configurar usuários](/help/forms/using/admin-help/adding-configuring-users.md#adding-and-configuring-users).) Em seguida, mapeie as chaves do calendário comercial (as cadeias de caracteres) para os calendários comerciais no fluxo de trabalho dos formulários. (Consulte [Mapear usuários e grupos para um calendário comercial](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar).)
 
-   Se você estiver usando um domínio enterprise, as informações sobre usuários residirão em um sistema de armazenamento de terceiros, como um diretório LDAP, que o User Management sincroniza com o banco de dados do User Management. Isso permite mapear uma chave de calendário comercial para um campo no diretório LDAP. Por exemplo, se cada registro de usuário no diretório contiver um campo &quot;país&quot; e você quiser atribuir calendários de negócios com base no país onde o usuário está localizado, especifique o nome do campo &quot;país&quot; no campo Chave do Calendário de Negócios ao especificar as configurações de usuário para o diretório. (Consulte [Configurar diretórios](/help/forms/using/admin-help/configuring-directories.md#configuring-directories).) Em seguida, você pode mapear as chaves do calendário comercial (os valores definidos para o campo &quot;país&quot; no diretório LDAP) para calendários comerciais no fluxo de trabalho de formulários. (Consulte [Mapear usuários e grupos para um calendário comercial](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar).)
+   Se você estiver usando um domínio enterprise, as informações sobre usuários residirão em um sistema de armazenamento de terceiros, como um diretório LDAP, que o User Management sincroniza com o banco de dados do User Management. Isso permite mapear uma chave de calendário comercial para um campo no diretório LDAP. Por exemplo, se cada registro de usuário no diretório contiver um campo &quot;país&quot; e você quiser atribuir calendários de negócios com base no país onde o usuário está localizado, especifique o nome do campo &quot;país&quot; no campo Chave do Calendário de Negócios ao especificar as configurações de usuário para o diretório. (Consulte [Configuração de diretórios](/help/forms/using/admin-help/configuring-directories.md#configuring-directories).) Em seguida, é possível mapear as chaves do calendário comercial (os valores definidos para o campo &quot;país&quot; no diretório LDAP) para calendários comerciais no fluxo de trabalho de formulários. (Consulte [Mapear usuários e grupos para um calendário comercial](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar).)
 
 1. No workflow de formulários, defina um calendário para cada conjunto de usuários que compartilham os mesmos dias não úteis. (Consulte [Criar ou atualizar um calendário comercial](configuring-business-calendars.md#create-or-update-a-business-calendar).)
 1. No workflow de formulários, mapeie as chaves do calendário comercial ou as associações de grupo para cada calendário. (Consulte [Mapear usuários e grupos para um calendário comercial](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar).)
 1. No Workbench, o desenvolvedor de processos escolhe se deseja usar calendários de negócios para lembretes, prazos e escalonamentos. (Consulte [Ajuda do Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).)
 
-   Se o desenvolvedor de processos optar por usar calendários de negócios, os formulários AEM selecionarão dinamicamente o calendário de negócios apropriado com base na configuração Gerenciamento de usuários e nos mapeamentos do calendário de negócios definidos no Console de administração, ou, se não houver mapeamentos, usarão o calendário padrão.
+   Se o desenvolvedor de processos optar por usar calendários de negócios, os formulários do AEM selecionarão dinamicamente o calendário de negócios apropriado com base na configuração Gerenciamento de usuários e nos mapeamentos do calendário de negócios definidos no Console de administração, ou, se não houver mapeamentos, usarão o calendário padrão.
 
    Se o desenvolvedor do processo não usar calendários comerciais, o cálculo de data para o evento tratará todos os dias como um dia útil. Por exemplo, um prazo de tarefa é configurado para ocorrer três dias após a tarefa ser atribuída a um usuário. A tarefa é atribuída na quinta-feira. O prazo da tarefa ocorre no domingo, mesmo sendo um fim de semana.
 
 ## Criar ou atualizar um calendário comercial {#create-or-update-a-business-calendar}
 
-Se sua organização contiver diferentes conjuntos de usuários com diferentes dias não úteis, você poderá definir vários calendários comerciais. Você também pode alterar calendários existentes, incluindo o calendário interno padrão fornecido com formulários AEM.
+Se sua organização contiver diferentes conjuntos de usuários com diferentes dias não úteis, você poderá definir vários calendários comerciais. Você também pode alterar calendários existentes, incluindo o calendário interno padrão fornecido com os formulários do AEM.
 
 >[!NOTE]
 >
@@ -95,7 +93,7 @@ Se sua organização contiver diferentes conjuntos de usuários com diferentes d
 
 ## Mapeamento de usuários e grupos a um calendário comercial {#mapping-users-and-groups-to-a-business-calendar}
 
-Há dois métodos que podem ser usados para associar um calendário comercial a um usuário. Você pode atribuir calendários de negócios a usuários com base em uma chave de calendário de negócios ou com base no grupo de diretórios ao qual o usuário pertence. Use a guia Mapeamento para especificar o método que os formulários AEM usarão e também para mapear as chaves e grupos do calendário comercial para calendários comerciais. Para obter detalhes sobre como associar chaves de calendário comercial a usuários, consulte [Configuração de vários calendários comerciais](configuring-business-calendars.md#setting-up-multiple-business-calendars).
+Há dois métodos que podem ser usados para associar um calendário comercial a um usuário. Você pode atribuir calendários de negócios a usuários com base em uma chave de calendário de negócios ou com base no grupo de diretórios ao qual o usuário pertence. Use a guia Mapeamento para especificar o método que o AEM Forms usará e também para mapear as chaves e grupos do calendário de negócios para calendários de negócios. Para obter detalhes sobre como associar chaves de calendário comercial a usuários, consulte [Configuração de vários calendários comerciais](configuring-business-calendars.md#setting-up-multiple-business-calendars).
 
 ### Associar calendários comerciais a usuários com base nas chaves do calendário comercial {#associate-business-calendars-with-users-based-on-business-calendar-keys}
 
@@ -118,18 +116,18 @@ Há dois métodos que podem ser usados para associar um calendário comercial a 
 
    >[!NOTE]
    >
-   >No Workbench, se você tiver configurado um serviço de Usuário para usar calendários de negócios e o serviço estiver atribuído a um grupo, os formulários AEM usarão os mapeamentos de grupo especificados aqui para resolver o calendário do grupo. Os formulários AEM sempre usam mapeamentos de grupos para resolver o calendário de grupos, mesmo quando você usa as chaves do calendário comercial para resolver o calendário de usuários. Se nenhum mapeamento de grupo for encontrado, o calendário comercial padrão será usado.
+   >No Workbench, se você tiver configurado um serviço de Usuário para usar calendários de negócios e o serviço estiver atribuído a um grupo, o AEM Forms usará os mapeamentos de grupo especificados aqui para resolver o calendário do grupo. O AEM Forms sempre usa mapeamentos de grupos para resolver o calendário de grupos, mesmo quando você usa chaves de calendário de negócios para resolver o calendário de usuários. Se nenhum mapeamento de grupo for encontrado, o calendário comercial padrão será usado.
 
 1. Para cada item na lista Grupo de Serviços de Diretório, selecione um Calendário.
 1. Clique em Salvar.
 
 ## Exportação e importação de calendários de negócios {#exporting-and-importing-business-calendars}
 
-O AEM Forms permite exportar e importar seus calendários de negócios como arquivos XML. Você pode usar esse recurso para mover calendários de um sistema de preparo para um sistema de produção.
+O AEM forms permite exportar e importar seus calendários de negócios como arquivos XML. Você pode usar esse recurso para mover calendários de um sistema de preparo para um sistema de produção.
 
 >[!NOTE]
 >
->Esse recurso exporta e importa todos os calendários comerciais definidos, incluindo o calendário comercial padrão fornecido por formulários AEM. Um calendário comercial importado com o mesmo nome de um calendário existente substitui o calendário existente.
+>Esse recurso exporta e importa todos os calendários de negócios definidos, incluindo o calendário de negócios padrão fornecido pelo AEM Forms. Um calendário comercial importado com o mesmo nome de um calendário existente substitui o calendário existente.
 
 ### Exportar calendários de negócios {#export-business-calendars}
 
