@@ -1,21 +1,23 @@
 ---
 title: Estender o rastreamento de eventos
+
 description: O AEM Analytics permite rastrear a interação do usuário no seu site
+
+
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
+
 exl-id: a71d20e6-0321-4afb-95fe-6de8b7b37245
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Developer
 source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
 workflow-type: tm+mt
-source-wordcount: '477'
+source-wordcount: '492'
 ht-degree: 0%
-
 ---
-
 # Estender o rastreamento de eventos{#extending-event-tracking}
 
 O AEM Analytics permite rastrear a interação do usuário no seu site. Como desenvolvedor, talvez seja necessário:
@@ -36,7 +38,7 @@ Os eventos personalizados rastreiam tudo o que depende da disponibilidade de um 
 
 ### Rastreamento De Eventos Personalizados No Carregamento Da Página {#tracking-custom-events-on-page-load}
 
-Isso pode ser feito usando o pseudoatributo `data-tracking` (o atributo de registro mais antigo ainda é compatível com versões anteriores). Você pode adicioná-lo a qualquer tag HTML.
+Isso pode ser feito usando o pseudoatributo `data-tracking` (o atributo de registro mais antigo ainda é compatível com versões anteriores). Você pode adicioná-la a qualquer tag do HTML.
 
 A sintaxe para `data-tracking` é
 
@@ -73,7 +75,7 @@ Onde
 
 * `values` contém todos os valores a serem rastreados
 * `collect` é opcional e retornará uma matriz contendo o evento e o objeto de dados.
-* `options` é opcional e contém opções de rastreamento de link como HTML elemento `obj` e ` [defaultLinkType](https://microsite.omniture.com/t2/help/en_US/sc/implement/index.html#linkType)`.
+* `options` é opcional e contém opções de rastreamento de link como o elemento de HTML `obj` e ` [defaultLinkType](https://microsite.omniture.com/t2/help/en_US/sc/implement/index.html#linkType)`.
 
 * `componentPath` é um atributo necessário e é recomendável defini-lo como `<%=resource.getResourceType()%>`
 
@@ -105,7 +107,7 @@ Específico da loja:
 
 >[!NOTE]
 >
->Consulte também a [Referência da API do ContextHub](https://helpx.adobe.com/br/experience-manager/6-5/sites/developing/using/contexthub-api.html#ContextHubJavascriptAPIReference) completa
+>Consulte também a [Referência da API do ContextHub](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/contexthub-api.html#ContextHubJavascriptAPIReference) completa
 
 ## Adição de retornos de chamada de registro {#adding-record-callbacks}
 

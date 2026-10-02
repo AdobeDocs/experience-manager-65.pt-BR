@@ -1,21 +1,23 @@
 ---
 title: Escolha de um tipo de persistência para uma instalação do AEM Forms
+
 description: Escolha um tipo de persistência sabiamente. Ele ajuda a criar um ambiente AEM Forms eficiente e escalável.
+
+
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: installing
 geptopics: SG_AEMFORMS/categories/jee
+
 role: Admin
 exl-id: 621fe107-f4ac-42b1-8c7b-8abbcaac7380
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '372'
+source-wordcount: '373'
 ht-degree: 1%
-
 ---
-
 # Escolha de um tipo de persistência para uma instalação do AEM Forms {#choosing-a-persistence-type-for-an-aem-forms-installation}
 
 Escolha um tipo de persistência sabiamente. Ele ajuda a criar um ambiente AEM Forms eficiente e escalável.
@@ -50,14 +52,14 @@ A tabela a seguir lista todos os tipos de persistência compatíveis, juntamente
   </tr>
   <tr>
    <th><strong>Custo da licença</strong></th>
-   <td>Incluído com AEM </td>
+   <td>Incluído com o AEM </td>
    <td>É necessária uma licença separada</td>
    <td>É necessária uma licença separada</td>
   </tr>
  </tbody>
 </table>
 
-O TarMK foi projetado para desempenho, enquanto o MongoMK e o RDBMK foram projetados para escalabilidade. A Adobe recomenda expressamente o TarMK como a tecnologia de persistência padrão para todos os cenários de implantação do AEM Forms, tanto para as instâncias Author quanto Publish, exceto nos casos de uso descritos na seção [Escolhendo Mongo ou um Microkernel de Banco de Dados Relacional em vez do TarMK](#p-choosing-mongo-or-a-relational-database-microkernel-over-tarmk-p).
+O TarMK foi projetado para desempenho, enquanto o MongoMK e o RDBMK foram projetados para escalabilidade. A Adobe recomenda expressamente o TarMK como a tecnologia de persistência padrão para todos os cenários de implantação do AEM Forms, para instâncias de Autor e Publicação, exceto nos casos de uso descritos na seção [Escolha de Mongo ou de Microkernel de Banco de Dados Relacional em vez de TarMK](#p-choosing-mongo-or-a-relational-database-microkernel-over-tarmk-p).
 
 Para obter a lista de Microkernels suportados, consulte os artigos [Requisitos Técnicos do AEM Forms no OSGi](/help/sites-deploying/technical-requirements.md) ou [Combinações de plataforma compatíveis com o AEM Forms no JEE](/help/forms/using/aem-forms-jee-supported-platforms.md).
 
