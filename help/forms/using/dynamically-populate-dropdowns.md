@@ -11,16 +11,14 @@ role: User, Developer
 feature: Adaptive Forms,Foundation Components,Form Data Model
 source-git-commit: 8a77756e8ba771c8de9950c2323bef8f23cc59b4
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '351'
 ht-degree: 0%
-
 ---
-
 # Preenchimento dinâmico de listas suspensas {#dynamically-populating-drop-down-lists}
 
 ## Pré-requisitos {#prerequisites}
 
-* [Criando pacotes OSGI](https://helpx.adobe.com/experience-manager/using/creating-osgi-bundles-digital-marketing.html)
+* [Criação de pacotes OSGi](https://helpx.adobe.com/experience-manager/using/creating-osgi-bundles-digital-marketing.html)
 * [Desenvolvimento de componentes do AEM](/help/sites-developing/components.md)
 * [Criação de formulário adaptável](../../forms/using/creating-adaptive-form.md)
 * [Criação de formulário adaptável](../../forms/using/introduction-forms-authoring.md)

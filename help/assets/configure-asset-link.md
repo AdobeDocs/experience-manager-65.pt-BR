@@ -8,11 +8,9 @@ exl-id: 3a9b44d4-1756-4ad5-91df-df8d53e82193
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 6ab943894398733d178f561430d3f391e8722195
 workflow-type: tm+mt
-source-wordcount: '3059'
-ht-degree: 0%
-
+source-wordcount: '3255'
+ht-degree: 1%
 ---
-
 # Configurar o Experience Manager Assets para o Adobe Asset Link {#adobe-asset-link}
 
 O [Adobe Asset Link (AAL)](https://www.adobe.com/br/creativecloud/business/enterprise/adobe-asset-link.html) simplifica a colaboração entre profissionais de criação e marketing no processo de criação de conteúdo. Ele conecta o Adobe Experience Manager Assets com os aplicativos de desktop da Creative Cloud Adobe InDesign, Adobe Photoshop e Adobe Illustrator. O painel Adobe Asset Link permite que os criadores acessem e modifiquem o conteúdo armazenado no AEM Assets sem sair dos aplicativos de criação mais conhecidos.
@@ -73,10 +71,10 @@ Para configurar manualmente o Experience Manager:
 
    Defina a configuração a seguir e clique em **[!UICONTROL Salvar]**.
 
-   * [!UICONTROL Ponto de Extremidade de Autorização]: ` https://ims-na1.adobelogin.com/ims/authorize/v1`
-   * [!UICONTROL Ponto de Extremidade do Token]: ` https://ims-na1.adobelogin.com/ims/token/v1`
-   * [!UICONTROL Ponto de Extremidade do Perfil]: ` https://ims-na1.adobelogin.com/ims/profile/v1`
-   * [!UICONTROL URL de validação]: ` https://ims-na1.adobelogin.com/ims/validate_token/v1`
+   * [!UICONTROL Ponto de Extremidade de Autorização]&#x200B;: ` https://ims-na1.adobelogin.com/ims/authorize/v1`
+   * [!UICONTROL Ponto de Extremidade do Token]&#x200B;: ` https://ims-na1.adobelogin.com/ims/token/v1`
+   * [!UICONTROL Ponto de Extremidade do Perfil]&#x200B;: ` https://ims-na1.adobelogin.com/ims/profile/v1`
+   * [!UICONTROL URL de validação]&#x200B;: ` https://ims-na1.adobelogin.com/ims/validate_token/v1`
    * [!UICONTROL Organização]: definida como a ID da organização na [Adobe Admin Console](https://adminconsole.adobe.com/).
    * [!UICONTROL Mapeamentos de grupos]: deixe vazio a menos que você tenha um caso especial. Para obter detalhes, consulte [Mapeamento de grupos](#group-mapping).
 
@@ -90,10 +88,10 @@ Para configurar manualmente o Experience Manager:
 
    * [!UICONTROL ID do cliente]: não alterar
    * [!UICONTROL Segredo do cliente]: não alterar
-   * [!UICONTROL ID de configuração]: ` ims`
+   * [!UICONTROL ID de configuração]&#x200B;: ` ims`
    * [!UICONTROL Escopo]: `AdobeID, OpenID, read_organizations` (outros valores também podem estar na configuração)
-   * [!UICONTROL Identificação do Provedor]: ` ims`
-   * [!UICONTROL Criar usuários]: ` Checked`
+   * [!UICONTROL Identificação do Provedor]&#x200B;: ` ims`
+   * [!UICONTROL Criar usuários]&#x200B;: ` Checked`
    * [!UICONTROL Propriedade de ID do Usuário]: `Email` para configuração recém-criada. Caso contrário, não altere.
 
 1. Localize a configuração do **[!UICONTROL Manipulador de sincronização padrão do Apache Jackrabbit Oak]** com o **[!UICONTROL Nome do Manipulador de sincronização]** `ims` e clique nele para editá-lo.
@@ -102,7 +100,7 @@ Para configurar manualmente o Experience Manager:
 
    * [!UICONTROL Hora de Expiração do Usuário e Expiração da Associação do Usuário]: tempo em minutos seguido por &#39;m&#39; sem espaço. Por exemplo, `15m` por 15 minutos. Para obter detalhes, consulte [Mapeamento de grupos](#group-mapping).
    * [!UICONTROL Associação automática de usuário]: não alterar
-   * [!UICONTROL Associação Dinâmica de Usuário]: ` Deslect`
+   * [!UICONTROL Associação Dinâmica de Usuário]&#x200B;: ` Deslect`
 
 1. Localize a configuração do **[!UICONTROL Manipulador de autenticação OAuth do Adobe Granite]** e clique nele para editá-lo. Sem fazer alterações, clique em **[!UICONTROL Salvar]**.
 
@@ -131,7 +129,7 @@ A configuração adicional é necessária somente se você estiver usando organi
 1. Uma instância ativa e em execução do Experience Manager com Autenticação do Portador configurada para AAL.
 1. Instale o seguinte pacote (Service Pack 11) na sua instância do Experience Manager 6.5.
 
-   [Baixar Experience Manager 6.5.11.0](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.11.zip)
+   [Baixar o Experience Manager 6.5.11.0](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.11.zip)
 
 1. Contate o [!UICONTROL Suporte ao Cliente] para obter a ID do Cliente e a Chave Secreta para a Autenticação do Portador da sua Organização IMS.
 
@@ -270,7 +268,7 @@ O Experience Manager fornece representações usadas somente para posicionamento
 
 ## Integrar ao Adobe Stock {#adobe-stock-integration}
 
-As organizações integram suas contas do Adobe Stock com a Experience Manager Assets. Ele ajuda os profissionais de marketing a disponibilizar fotos, vetores, ilustrações, vídeos, modelos e ativos 3D licenciados e de alta qualidade e isentos de royalties para seus projetos criativos e de marketing. Os profissionais de criação podem usar esses ativos usando o painel Link de ativos.
+As organizações integram suas contas do Adobe Stock com a Experience Manager Assets. Ele ajuda os profissionais de marketing a disponibilizar fotos, vetores, ilustrações, vídeos, modelos e ativos 3D licenciados e de alta qualidade e isentos de royalties para seus projetos criativos e de marketing. Os profissionais da Creative podem usar esses ativos usando o painel Link de ativos.
 
 Para integrar com o Adobe Stock, consulte [Adobe Stock assets in Experience Manager Assets](/help/assets/aem-assets-adobe-stock.md). O Experience Manager 6.4.2 ou posterior é necessário para a integração com o Adobe Stock.
 

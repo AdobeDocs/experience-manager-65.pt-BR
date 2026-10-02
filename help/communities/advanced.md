@@ -12,11 +12,9 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1056'
+source-wordcount: '1104'
 ht-degree: 1%
-
 ---
-
 # Pontuação avançada e medalhas{#advanced-scoring-and-badges}
 
 ## Visão geral {#overview}
@@ -33,7 +31,7 @@ Configurar a pontuação avançada é praticamente o mesmo que a pontuação bá
 
 * As regras de pontuação e medalha básicas e avançadas são [aplicadas ao conteúdo](/help/communities/implementing-scoring.md#apply-rules-to-content) da mesma maneira.
 
-   * Regras básicas e avançadas de pontuação e medalha podem ser aplicadas ao mesmo conteúdo.
+  * Regras básicas e avançadas de pontuação e medalha podem ser aplicadas ao mesmo conteúdo.
 
 * [Habilitar selos para os componentes](/help/communities/implementing-scoring.md#enable-badges-for-component) é genérico.
 
@@ -42,14 +40,14 @@ As diferenças na configuração das regras de pontuação e medalha são:
 * Mecanismo de pontuação avançado configurável
 * Regras de pontuação avançadas:
 
-   * `scoringType` definido como `advanced`
-   * Requer `stopwords`
+  * `scoringType` definido como `advanced`
+  * Requer `stopwords`
 
 * Regras avançadas de medalha:
 
-   * `badgingType` definido como `advanced`
-   * `badgingLevels` definido como **número de níveis de especialistas a serem premiados**
-   * Requer a matriz `badgingPaths` de medalhas em vez de pontos de mapeamento de matriz de limites para medalhas.
+  * `badgingType` definido como `advanced`
+  * `badgingLevels` definido como **número de níveis de especialistas a serem premiados**
+  * Requer a matriz `badgingPaths` de medalhas em vez de pontos de mapeamento de matriz de limites para medalhas.
 
 >[!NOTE]
 >
@@ -66,7 +64,7 @@ O mecanismo de pontuação avançado fornece uma configuração OSGi com parâme
   Para um tópico, especifique o verbo que deve ter a maior prioridade ao calcular a pontuação. Um ou mais tópicos podem ser inseridos, mas limitados a **um verbo por tópico**. Consulte [Tópicos e Verbos](/help/communities/implementing-scoring.md#topics-and-verbs).
 Inserido como `topic,verb` com escape de vírgula. Por exemplo:
   `/social/forum/hbs/social/forum\,ADD`
-O padrão é definido como ADICIONAR verbo para componentes de QnA e fórum.
+  O padrão é definido como ADICIONAR verbo para componentes de QnA e fórum.
 
 * **Intervalo de pontuação**
 
@@ -148,7 +146,7 @@ Em vez de associar pontos a uma imagem de selo, é necessário apenas identifica
   <tr>
    <td>scoringRules</td>
    <td>String[]</td>
-   <td><em>(Opcional)</em> Uma cadeia de caracteres de vários valores para restringir a regra de notificação a eventos de pontuação identificados por uma ou mais regras de pontuação listadas.<br /> Exemplo de entrada:<br /> <code>/libs/settings/community/scoring/rules/adv-comments-scoring</code><br /> O padrão é sem restrição.</td>
+   <td><em>(Opcional)</em> Uma cadeia de caracteres de vários valores para restringir a regra de notificação a eventos de pontuação identificados por uma ou mais regras de pontuação listadas.<br /> Exemplo de entrada:<br /> <code>/libs/settings/community/scoring/rules/adv-comments-scoring</code><br /> O padrão não é restrição.</td>
   </tr>
  </tbody>
 </table>

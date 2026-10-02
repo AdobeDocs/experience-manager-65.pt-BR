@@ -1,21 +1,23 @@
 ---
 title: API JavaScript do Client Context
+
 description: Saiba mais sobre a API do JavaScript para o Contexto do cliente no Adobe Experience Manager.
+
+
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
+
 feature: Context Hub,Developing,Personalization
 exl-id: 24bdf9fc-71e6-4b99-9dad-0f41a5e36b98
 solution: Experience Manager, Experience Manager Sites
 role: Developer
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '3106'
+source-wordcount: '3125'
 ht-degree: 2%
-
 ---
-
 # API JavaScript do Client Context{#client-context-javascript-api}
 
 ## CQ_Analytics.ClientContextMgr {#cq-analytics-clientcontextmgr}

@@ -1,7 +1,7 @@
 ---
 title: Como criar ou personalizar temas do Formulário adaptável?
 description: Saiba como criar ou personalizar temas para os Componentes principais do Forms adaptável usando especificações do BEM
-keywords: criar tema dos componentes principais dos formulários adaptáveis, criar novo tema, personalizar tema, carregar novo tema, usar tema em formulários, excluir um tema, criar um tema em formulários AEM 6.5
+keywords: criar tema dos componentes principais dos formulários adaptáveis, criar novo tema, personalizar tema, carregar novo tema, usar tema em formulários, excluir um tema, criar um tema no AEM 6.5 forms
 contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
@@ -11,11 +11,9 @@ exl-id: 9f9b35a3-0479-4179-9fad-994a482c96b6
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1939'
-ht-degree: 5%
-
+source-wordcount: '2092'
+ht-degree: 6%
 ---
-
 # Criar ou personalizar um tema de formulário adaptável {#introduction-to-theme}
 
 | Versão | Link do artigo |
@@ -26,15 +24,15 @@ ht-degree: 5%
 
 <!--**Applies to:** ✅ Adaptive Form Core Components ❎ [Adaptive Form Foundation Components](/help/forms/using/create-adaptive-form.md).-->
 
-No AEM Forms 6.5, um tema é uma biblioteca cliente AEM usada para definir os estilos (aparência e comportamento) de um Formulário adaptável. Um tema contém detalhes de estilo para os componentes e painéis. Os estilos incluem propriedades como cores de fundo, cores de estado, transparência, alinhamento e tamanho. Ao aplicar um tema, o estilo especificado é refletido nos componentes correspondentes. Um tema é gerenciado de forma independente sem uma referência a um Formulário adaptável e pode ser reutilizado em vários Forms adaptáveis.
+No AEM Forms 6.5, um tema é uma biblioteca do cliente AEM usada para definir os estilos (aparência e comportamento) de um formulário adaptável. Um tema contém detalhes de estilo para os componentes e painéis. Os estilos incluem propriedades como cores de fundo, cores de estado, transparência, alinhamento e tamanho. Ao aplicar um tema, o estilo especificado é refletido nos componentes correspondentes. Um tema é gerenciado de forma independente sem uma referência a um Formulário adaptável e pode ser reutilizado em vários Forms adaptáveis.
 
 ## Temas disponíveis {#available-theme}
 
-O ambiente AEM 6.5 fornece os temas listados abaixo para o Forms adaptável baseado em Componentes principais:
+O ambiente do AEM 6.5 fornece os temas listados abaixo para o Forms adaptável baseado em Componentes principais:
 
-* [Tema Tela de desenho](https://github.com/adobe/aem-forms-theme-canvas)
+* [Tema da tela de desenho](https://github.com/adobe/aem-forms-theme-canvas)
 * [Tema WKND](https://github.com/adobe/aem-forms-theme-wknd)
-* [Tema do CAVALETE](https://github.com/adobe/aem-forms-theme-easel)
+* [Tema CAVALETE](https://github.com/adobe/aem-forms-theme-easel)
 * [Tema FSI](https://github.com/adobe/aem-forms-theme-fsi)
 * [Tema de saúde](https://github.com/adobe/aem-forms-theme-healthcare)
 * [Tema público](https://github.com/adobe/aem-forms-theme-public)
@@ -46,9 +44,9 @@ Um tema é um pacote que abrange o arquivo CSS, os arquivos JavaScript e os recu
 
 * `src/theme.scss`: esta pasta inclui o arquivo CSS que tem um amplo impacto sobre todo o tema. Ele serve como um local centralizado para definir e gerenciar o estilo e o comportamento do tema. Ao fazer edições nesse arquivo, você pode fazer alterações aplicadas universalmente no tema, influenciando a aparência e a funcionalidade das Páginas adaptáveis do Forms e do AEM Sites.
 
-* `src/site`: esta pasta contém arquivos CSS que são aplicados à página inteira de um Site AEM. Esses arquivos consistem em códigos e estilos que afetam a funcionalidade geral e o layout da página do seu site AEM. Quaisquer modificações feitas aqui serão refletidas em todas as páginas do site.
+* `src/site`: esta pasta contém arquivos CSS que são aplicados a uma página inteira do Site do AEM. Esses arquivos consistem em códigos e estilos que afetam a funcionalidade geral e o layout da página do seu site do AEM. Quaisquer modificações feitas aqui serão refletidas em todas as páginas do site.
 
-* `src/components`: os arquivos CSS nesta pasta são projetados para componentes principais individuais do AEM. Cada pasta dedicada de um componente inclui um arquivo `.scss` que estimula esse componente específico em um Formulário adaptável. Por exemplo, o arquivo `/src/components/button/_button.scss` contém informações de estilo para o componente Adaptive Forms Button.
+* `src/components`: os arquivos CSS nesta pasta são criados para componentes principais individuais do AEM. Cada pasta dedicada de um componente inclui um arquivo `.scss` que estimula esse componente específico em um Formulário adaptável. Por exemplo, o arquivo `/src/components/button/_button.scss` contém informações de estilo para o componente Adaptive Forms Button.
 
   ![Estrutura de Tema da Tela](/help/forms/using/assets/component-based-theme-folder-structure.png)
 
@@ -58,9 +56,9 @@ Um tema é um pacote que abrange o arquivo CSS, os arquivos JavaScript e os recu
 
 O AEM Forms 6.5 fornece os temas listados abaixo para o Adaptive Forms baseado em Componentes principais.
 
-* [Tema Tela de desenho](https://github.com/adobe/aem-forms-theme-canvas)
+* [Tema da tela de desenho](https://github.com/adobe/aem-forms-theme-canvas)
 * [Tema WKND](https://github.com/adobe/aem-forms-theme-wknd)
-* [Tema do CAVALETE](https://github.com/adobe/aem-forms-theme-easel)
+* [Tema CAVALETE](https://github.com/adobe/aem-forms-theme-easel)
 * [Tema público](https://github.com/adobe/aem-forms-theme-public)
 * [Tema de fabricação](https://github.com/adobe/aem-forms-theme-manufacturing)
 
@@ -72,14 +70,14 @@ A personalização de um tema refere-se ao processo de modificação e personali
 
 >[!NOTE]
 >
-> * Use o Gerenciador de pacotes para implantar um tema em todas as instâncias do Autor e do Publish.
+> * Use o Gerenciador de pacotes para implantar um tema em todas as instâncias de Autor e Publicação.
 > * Uma biblioteca de temas de cliente é importada ou exportada pelo Gerenciador de pacotes como qualquer outro pacote.
 
 ### Pré-requisitos para personalizar um tema {#prerequisites}
 
 * [Habilite os Componentes principais adaptáveis do Forms](/help/forms/using/enable-adaptive-forms-core-components.md) para o seu ambiente.
 
-* Instale a última versão do [Apache Maven.](https://maven.apache.org/download.cgi) O Apache Maven é uma ferramenta de automação de compilação comumente usada para projetos Java™. A instalação da versão mais recente garante que você tenha as dependências necessárias para a personalização de temas.
+* Instale a última versão do [Apache Maven.](https://maven.apache.org/download.cgi) O Apache Maven é uma ferramenta de automação de build comumente usada para projetos Java™. A instalação da versão mais recente garante que você tenha as dependências necessárias para a personalização de temas.
 
 * Saiba como criar uma [biblioteca do cliente no Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=pt-BR). O AEM fornece bibliotecas de clientes, que permitem armazenar o código do lado do cliente no repositório, organizá-lo em categorias e definir quando e como cada categoria de código deve ser entregue ao cliente.
 
@@ -91,9 +89,9 @@ A personalização de um tema refere-se ao processo de modificação e personali
 
 * Use o [projeto do Arquétipo usado para habilitar os Componentes principais do Adaptive Forms](/help/forms/using/enable-adaptive-forms-core-components.md) no seu ambiente para personalizar seus temas.
 
-* Ao publicar um Formulário adaptável, as bibliotecas de clientes não são publicadas automaticamente na instância do Publish. Certifique-se de publicar manualmente a biblioteca do cliente referenciada em um Formulário adaptável em seus ambientes do Publish.
+* Ao publicar um Formulário adaptável, as bibliotecas do cliente não são publicadas automaticamente na instância de Publicação. Certifique-se de publicar manualmente a biblioteca do cliente referenciada em um Formulário adaptável em seus ambientes de Publicação.
 
-* O Adobe recomenda não alterar os nomes de classe das bibliotecas de clientes.
+* A Adobe recomenda não alterar os nomes de classe das bibliotecas de clientes.
 
 ### Personalizar um tema {#customize-a-theme-core-components}
 
@@ -111,13 +109,13 @@ A criação ou personalização de um tema é um processo de várias etapas. Exe
 
 Os exemplos fornecidos no documento são baseados no tema **Tela**, mas você pode clonar qualquer tema e personalizá-lo usando as mesmas instruções. Essas instruções se aplicam a qualquer tema, permitindo modificar temas de acordo com suas necessidades específicas.
 
-#### 1. Clonar o repositório Git do tema {#clone-git-repo-of-theme}
+#### &#x200B;1. Clonar o repositório Git do tema {#clone-git-repo-of-theme}
 
 Para clonar um tema para os Componentes principais com base no Adaptive Forms, escolha um dos seguintes temas:
 
-* [Tema Tela de desenho](https://github.com/adobe/aem-forms-theme-canvas)
+* [Tema da tela de desenho](https://github.com/adobe/aem-forms-theme-canvas)
 * [Tema WKND](https://github.com/adobe/aem-forms-theme-wknd)
-* [Tema do CAVALETE](https://github.com/adobe/aem-forms-theme-easel)
+* [Tema CAVALETE](https://github.com/adobe/aem-forms-theme-easel)
 
 Execute as seguintes instruções para clonar um tema:
 
@@ -141,9 +139,9 @@ Execute as seguintes instruções para clonar um tema:
 
 Depois de executar o comando com êxito, você terá uma cópia local do tema disponível em sua máquina na pasta `aem-forms-theme-canvas`.
 
-#### 2. Personalizar o tema {#customize-the-theme}
+#### &#x200B;2. Personalizar o tema {#customize-the-theme}
 
-Você tem a flexibilidade de personalizar componentes individuais ou fazer alterações no nível do tema usando as variáveis globais de um tema. A modificação de variáveis globais tem um efeito em cascata em todos os componentes individuais. Por exemplo, você pode utilizar variáveis globais para alterar a cor da borda de todos os componentes em um Formulário adaptável ou aplicar uma cor de preenchimento vibrante aos botões de Chamada para ação (CTA). É possível:
+Você tem a flexibilidade de personalizar componentes individuais ou fazer alterações no nível do tema usando as variáveis globais de um tema. A modificação de variáveis globais tem um efeito em cascata em todos os componentes individuais. Por exemplo, você pode utilizar variáveis globais para alterar a cor da borda de todos os componentes em um Formulário adaptável ou aplicar uma cor de preenchimento vibrante aos botões do Call to action (CTA). É possível:
 
 * [Definir estilos de nível de tema](#theme-customization-global-level)
 
@@ -190,7 +188,7 @@ Você também tem a opção de personalizar a fonte, a cor, o tamanho e outras p
 >
 > Quando um estilo é definido no nível do tema e do componente, o estilo definido no nível do componente tem prioridade.
 
-#### 3. Prepare o tema para implantação {#generate-the-clientlib}
+#### &#x200B;3. Prepare o tema para implantação {#generate-the-clientlib}
 
 Para implantar um tema em uma instância do AEM, ele precisa ser convertido em uma Biblioteca do cliente. Siga estas etapas para converter o tema em uma biblioteca do cliente:
 
@@ -215,7 +213,7 @@ Para implantar um tema em uma instância do AEM, ele precisa ser convertido em u
 
    ![Local da Biblioteca do Cliente](/help/forms/using/assets/adaptiveform.theme.easel.png)
 
-#### 4. Implantar o tema em um ambiente local {#deploy-the-theme-on-a-local-environment}
+#### &#x200B;4. Implantar o tema em um ambiente local {#deploy-the-theme-on-a-local-environment}
 
 Para implantar o tema no ambiente de desenvolvimento ou teste local, siga estas etapas:
 
@@ -224,7 +222,7 @@ Para implantar o tema no ambiente de desenvolvimento ou teste local, siga estas 
    `/ui.apps/src/main/content/jcr_root/apps/[AEM Archetype Project Folder]/clientlibs/<yourtheme>`
 
 1. Abra o prompt de comando ou o terminal.
-1. Navegue até o diretório raiz do seu projeto do Arquétipo AEM, o projeto usado para ativar os Componentes principais do formulário adaptável.
+1. Navegue até o diretório raiz do seu projeto do Arquétipo do AEM, o projeto usado para ativar os Componentes principais do formulário adaptável.
 1. Execute o seguinte comando para implantar o tema personalizado no ambiente:
 
    `mvn clean install`
@@ -266,11 +264,11 @@ An Adaptive Form with the selected theme is created.
 The selected theme is applied to the Adaptive Form. 
 -->
 
-#### 5. Implantar um tema no ambiente de produção {#deploy-theme}
+#### &#x200B;5. Implantar um tema no ambiente de produção {#deploy-theme}
 
-Depois de testar com êxito o tema no ambiente de desenvolvimento local, você pode prosseguir para implantar o tema nos ambientes de produção, incluindo as instâncias do Autor e do Publish. Siga estas etapas para implantar o tema em seus ambientes de produção:
+Depois de testar com êxito o tema no ambiente de desenvolvimento local, você pode prosseguir para implantar o tema nos ambientes de produção, incluindo as instâncias Autor e Publicar. Siga estas etapas para implantar o tema em seus ambientes de produção:
 
-1. Faça logon no ambiente AEM.
+1. Faça logon no ambiente do AEM.
 1. Abra o Gerenciador de pacotes. A URL padrão é `https://localhost:4502/crx/packmgr/index.jsp`.
 1. Clique em **Carregar Pacote** e em **Procurar**.
 1. Navegue até `[AEM Archetype Project Folder]\all\target[appid].all-[version].zip` e selecione-o. Clique em **Abrir**.
@@ -284,7 +282,7 @@ Após a instalação do pacote, o tema fica disponível para seleção.
 >[!NOTE]
 >
 >
-> Caso encontre dificuldades ao acessar a caixa de diálogo de logon em uma instância de publicação para instalar o pacote por meio do Gerenciador de Pacotes, tente fazer logon pela seguinte URL: `http://[Publish Server URL]:[PORT]/system/console`. Isso permite o acesso para fazer logon na instância do Publish, permitindo continuar com o processo de instalação.
+> Caso encontre dificuldades ao acessar a caixa de diálogo de logon em uma instância de publicação para instalar o pacote por meio do Gerenciador de Pacotes, tente fazer logon pela seguinte URL: `http://[Publish Server URL]:[PORT]/system/console`. Isso permite o acesso para fazer logon na instância de publicação, permitindo que você continue com o processo de instalação.
 
 ## Aplicar um tema a um formulário adaptável {#using-theme-in-adaptive-form}
 
@@ -344,4 +342,4 @@ Para remover temas não utilizados ou indesejados:
 * [Criar ou personalizar temas para Componentes principais com base no Forms adaptável](create-or-customize-themes-for-adaptive-forms-core-components.md)
 * [Criar um modelo para os Componentes principais com base no Forms adaptável](template-editor.md)
 * [Criar ou adicionar um formulário adaptável a uma página do AEM Sites ou a um fragmento de experiência](create-or-add-an-adaptive-form-to-aem-sites-page.md)
-* [Modelos de temas de exemplo e modelos de dados de formulário](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=pt-BR)
+* [Modelos de temas de amostra e modelos de dados de formulário](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=pt-BR)

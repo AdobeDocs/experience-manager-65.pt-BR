@@ -1,6 +1,6 @@
 ---
 title: Personalização de serviços de dados de Rascunho e Submissão
-description: O AEM Forms, por padrão, armazena rascunhos e formulários adaptáveis enviados em um nó padrão na instância do Publish. No entanto, você pode configurar os serviços de dados de rascunho e envio do AEM Forms para personalizar o armazenamento de rascunho e formulários adaptáveis enviados.
+description: O AEM Forms, por padrão, armazena rascunhos e formulários adaptáveis enviados em um nó padrão na instância de Publicação. No entanto, você pode configurar os serviços de dados de rascunho e envio do AEM Forms para personalizar o armazenamento de rascunho e formulários adaptáveis enviados.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
@@ -10,18 +10,16 @@ role: User, Developer
 feature: Adaptive Forms,Foundation Components
 source-git-commit: 8a77756e8ba771c8de9950c2323bef8f23cc59b4
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '272'
 ht-degree: 0%
-
 ---
-
 # Personalização de serviços de dados de Rascunho e Submissão {#customizing-draft-and-submission-data-services}
 
 ## Visão geral {#overview}
 
 O AEM Forms permite que os usuários salvem um formulário adaptável como um rascunho. A funcionalidade de rascunho fornece aos usuários a opção de manter um formulário de trabalho em andamento. O usuário pode então preencher e enviar o formulário a qualquer momento de qualquer dispositivo.
 
-Por padrão, o AEM Forms armazena dados do usuário associados ao rascunho e ao envio na instância do Publish no nó `/content/forms/fp`.
+Por padrão, o AEM Forms armazena dados do usuário associados ao rascunho e ao envio na instância de Publicação no nó `/content/forms/fp`.
 
 No entanto, os componentes do AEM Forms Portal fornecem serviços de dados que permitem personalizar a implementação do armazenamento de dados do usuário para rascunhos e envios. Por exemplo, você pode armazenar os dados em um armazenamento de dados implementado atualmente em sua organização.
 

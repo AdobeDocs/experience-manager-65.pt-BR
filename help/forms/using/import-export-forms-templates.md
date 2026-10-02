@@ -1,24 +1,27 @@
 ---
 title: Importação e exportação de ativos para o AEM Forms
-description: É possível importar e exportar formulários e modelos adaptáveis de e para instâncias do AEM. Isso ajuda a migrar formulários ou movê-los entre sistemas.
+
+description: Você pode importar e exportar formulários e modelos adaptáveis de e para instâncias do AEM. Isso ajuda a migrar formulários ou movê-los entre sistemas.
+
+
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
+
 docset: aem65
+
 role: Admin,User
 exl-id: b5f6a54e-92d1-4631-a1d1-184f37d174b6
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '2508'
+source-wordcount: '2540'
 ht-degree: 0%
-
 ---
-
 # Importação e exportação de ativos para o AEM Forms{#importing-and-exporting-assets-to-aem-forms}
 
-Você pode mover formulários e ativos relacionados, temas, dicionários de dados, fragmentos de documentos e cartas entre diferentes instâncias do AEM Forms. Esse movimento é necessário ao migrar sistemas ou mover formulários de um servidor de preparo para um servidor de produção. Para os ativos para os quais há suporte para upload e importação pela interface do AEM Forms, o uso da interface do Forms é a maneira recomendada para exportar ou importar. Não é recomendado usar o Gerenciador de pacotes AEM para exportar ou importar esses ativos.
+Você pode mover formulários e ativos relacionados, temas, dicionários de dados, fragmentos de documentos e cartas entre diferentes instâncias do AEM Forms. Esse movimento é necessário ao migrar sistemas ou mover formulários de um servidor de preparo para um servidor de produção. Para os ativos para os quais há suporte para upload e importação pela interface do AEM Forms, o uso da interface do Forms é a maneira recomendada para exportar ou importar. Não é recomendado usar o Gerenciador de pacotes do AEM para exportar ou importar esses ativos.
 
 >[!NOTE]
 >
@@ -27,32 +30,32 @@ Você pode mover formulários e ativos relacionados, temas, dicionários de dado
 
 ## Baixar ou carregar ativos da Forms e de documentos {#download-or-upload-forms-amp-documents-assets}
 
-A interface do usuário do AEM Forms permite exportar ativos de uma instância AEM baixando-os como um pacote CRX AEM ou arquivos binários. Você pode importar o pacote AEM CRX baixado ou o arquivo binário para outra instância do AEM.
+A interface do usuário do AEM Forms permite exportar ativos de uma instância do AEM baixando-os como um pacote do AEM CRX ou arquivos binários. Em seguida, você pode importar o pacote AEM CRX baixado ou o arquivo binário para outra instância do AEM.
 
 Todos os ativos são compatíveis com a exportação e importação pela interface do usuário do AEM Forms, exceto os modelos de Formulário adaptável e as políticas de conteúdo do Formulário adaptável. Portanto, ao exportar um formulário adaptável da interface do usuário do AEM Forms, o modelo de formulário adaptável relacionado e as políticas de conteúdo não são exportados automaticamente como outros ativos relacionados.
 
-Para esses tipos de ativos, você deve usar o Gerenciador de pacotes AEM para criar um pacote do CRX no servidor AEM de origem e instalar o pacote no servidor de destino. Para obter informações sobre como criar e instalar pacotes, consulte [Trabalho com pacotes](/help/sites-administering/package-manager.md).
+Para esses tipos de ativos, você deve usar o Gerenciador de pacotes do AEM para criar um pacote do CRX no servidor do AEM de origem e instalar o pacote no servidor de destino. Para obter informações sobre como criar e instalar pacotes, consulte [Trabalho com pacotes](/help/sites-administering/package-manager.md).
 
 ### Baixar ativos da Forms e de documentos {#download-forms-amp-documents-assets}
 
 Para baixar os ativos do Forms e do Documents:
 
 1. Faça logon na instância do AEM Forms.
-1. Selecione o ícone do Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) > ícone da navegação ![compass](assets/compass.png)> Forms > Forms e Documentos.
+1. Selecione o ícone do Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) > ícone da navegação ![compass](assets/compass.png)> Forms > Forms &amp; Documents.
 1. Selecione os ativos de formulários e selecione o ícone **Baixar**.
 1. Em Baixar ativos, escolha uma das opções a seguir e selecione **Baixar**.
 
-   * **Baixar como Pacote do CRX:** use a opção para baixar e mover todos os ativos selecionados e as dependências relacionadas de uma instância do AEM Forms para outra. Ele baixa todos os ativos e pastas como pacote crx. Todos os ativos de formulário, incluindo os formulários criados no AEM (formulários adaptáveis, comunicações interativas e fragmentos de formulário adaptáveis), conjuntos de formulários, modelos de formulário, documentos PDF e recursos (XSDs, XFS, imagens) podem ser baixados como pacotes na interface do usuário do AEM Forms.
-A vantagem de baixar ativos como pacote é que ele também baixa ativos que foram usados pelo ativo selecionado para download. Por exemplo, se você tiver um formulário adaptável que usa um modelo de formulário, XSD e uma imagem. Ao selecionar esse formulário adaptável e baixá-lo como pacote, o pacote baixado também contém o modelo de formulário, o XSD e a imagem. Todas as propriedades de metadados (incluindo propriedades personalizadas) associadas ao ativo também são baixadas.
+   * **Baixar como Pacote do CRX:** use a opção para baixar e mover todos os ativos selecionados e as dependências relacionadas de uma instância do AEM Forms para outra. Ele baixa todos os ativos e pastas como pacote crx. Todos os ativos de formulário, incluindo os formulários criados no AEM (formulários adaptáveis, comunicações interativas e fragmentos de formulário adaptáveis), conjuntos de formulários, modelos de formulário, documentos do PDF e recursos (XSDs, XFS, imagens) podem ser baixados como pacotes da interface do usuário do AEM Forms.
+     A vantagem de baixar ativos como pacote é que ele também baixa ativos que foram usados pelo ativo selecionado para download. Por exemplo, se você tiver um formulário adaptável que usa um modelo de formulário, XSD e uma imagem. Ao selecionar esse formulário adaptável e baixá-lo como pacote, o pacote baixado também contém o modelo de formulário, o XSD e a imagem. Todas as propriedades de metadados (incluindo propriedades personalizadas) associadas ao ativo também são baixadas.
 
-   * **Baixar ativo(s) como arquivos binários:** Use a opção para baixar somente modelos de formulário (XDP), PDF forms (PDF), documento (PDF) e recursos (imagens, esquemas, folhas de estilos). É possível editar esses ativos com aplicativos externos. Ele baixa os ativos de formulários que têm binários, como XSDs, XDPs, imagens, PDF e XDPs como um arquivo .zip.
-Não é possível baixar formulários adaptáveis, Comunicações interativas, fragmentos de formulários adaptáveis, temas e conjuntos de formulários com a opção **Baixar ativos como arquivos binários**. Para baixar esses ativos, você deve usar a opção **Baixar como Pacote do CRX**.
+   * **Baixar ativo(s) como arquivos binários:** Use a opção para baixar somente modelos de formulário (XDP), PDF forms (PDF), documento (PDF) e recursos (imagens, esquemas, folhas de estilos). É possível editar esses ativos com aplicativos externos. Ele baixa os ativos de formulários que têm binários, como XSDs, XDPs, imagens, PDFs e XDPs como um arquivo .zip.
+     Não é possível baixar formulários adaptáveis, Comunicações interativas, fragmentos de formulários adaptáveis, temas e conjuntos de formulários com a opção **Baixar ativos como arquivos binários**. Para baixar esses ativos, você deve usar a opção **Baixar como Pacote do CRX**.
 
    Os ativos selecionados são baixados como um arquivo (arquivo .zip).
 
    >[!NOTE]
    >
-   >O pacote AEM e os arquivos binários são baixados como um arquivo (arquivo .zip). Os modelos dos ativos não são baixados junto com os ativos. É necessário exportar os modelos de ativos separadamente.
+   >O pacote do AEM e os arquivos binários são baixados como um arquivo (arquivo .zip). Os modelos dos ativos não são baixados junto com os ativos. É necessário exportar os modelos de ativos separadamente.
 
 ### Fazer upload de ativos do Forms e de documentos {#upload-forms-amp-documents-assets}
 
@@ -61,9 +64,9 @@ Para fazer upload de ativos do Forms e do Documents:
 <!--[!VIDEO](https://vimeo.com/)-->
 
 1. Faça logon na instância do AEM Forms.
-1. Selecione o ícone do Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) > ícone da navegação ![compass](assets/compass.png)> Forms> Forms e Documentos.
+1. Selecione o ícone do Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) > ícone da navegação ![compass](assets/compass.png)> Forms> Forms &amp; Documents.
 1. Selecione **Criar** >**Carregar Arquivo**. Uma caixa de diálogo Carregar formulários ou pacote é exibida.
-1. Na caixa de diálogo, navegue e selecione o pacote ou o arquivo a ser importado. Você também pode selecionar o documento PDF, XSDs, imagens, folhas de estilos e formulários XDP. Selecione **Abrir**. A pasta ou o nome de arquivo selecionado não deve incluir caracteres especiais.
+1. Na caixa de diálogo, navegue e selecione o pacote ou o arquivo a ser importado. Você também pode selecionar documentos do PDF, XSDs, imagens, folhas de estilos e formulários XDP. Selecione **Abrir**. A pasta ou o nome de arquivo selecionado não deve incluir caracteres especiais.
 
    Na caixa de diálogo, verifique os detalhes dos ativos sendo carregados e selecione **Carregar**.
 
@@ -79,12 +82,12 @@ Com o AEM Forms, você pode criar, baixar ou fazer upload de temas. Um tema é c
 
 ### Download de um tema {#downloading-a-theme}
 
-É possível exportar temas no AEM Forms que você pode usar em outros projetos ou instâncias. O AEM permite baixar temas como um arquivo zip, que você pode carregar na instância.
+É possível exportar temas no AEM Forms que você pode usar em outros projetos ou instâncias. O AEM permite baixar o tema como um arquivo zip, que você pode carregar na instância.
 
 Para baixar um tema:
 
 1. Faça logon na instância do AEM Forms.
-1. Selecione Experience Manager ![ícone do adobeexperiencemanager](assets/adobeexperiencemanager.png) > navegação ![ícone do compass](assets/compass.png)> Forms> Temas.
+1. Selecione o ícone do Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) > ícone da navegação ![compass](assets/compass.png)> Forms> Temas.
 1. Selecione o tema e selecione **Baixar**. O tema é baixado como um arquivo (arquivo .zip).
 
 ### Carregamento de um tema {#uploading-a-theme}
@@ -99,7 +102,7 @@ Para fazer upload de um tema:
 O tema carregado está disponível na página de temas.
 
 1. Faça logon na instância do AEM Forms.
-1. Selecione Experience Manager ![ícone do adobeexperiencemanager](assets/adobeexperiencemanager.png) > navegação ![ícone do compass](assets/compass.png)> Forms> Temas.
+1. Selecione o ícone do Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) > ícone da navegação ![compass](assets/compass.png)> Forms> Temas.
 1. clique em **Criar** > **Carregar arquivo**. No prompt Upload de arquivo, procure e selecione um pacote de tema no computador e clique em **Upload**. O tema é carregado.
 
 ## Importar e exportar ativos no Gerenciamento de correspondência {#import-and-export-assets-in-correspondence-management}
@@ -123,7 +126,7 @@ Para compartilhar ativos, como dicionários de dados, cartas e fragmentos de doc
 
 ### Exportar todos os ativos do Gerenciamento de correspondência como um pacote {#export-all-the-correspondence-management-assets-as-a-package}
 
-Use essa opção para baixar todos os ativos do Gerenciamento de correspondências e dependências relacionadas como um pacote de uma instância de formulários AEM.
+Use essa opção para baixar todos os ativos do Gerenciamento de correspondências e dependências relacionadas como um pacote de uma instância do AEM Forms.
 
 Por exemplo, se o Gerenciamento de correspondências tiver uma correspondência que use uma imagem e texto, o pacote baixado também conterá a imagem e o texto relacionado à correspondência. Todas as propriedades de metadados (incluindo propriedades personalizadas) associadas ao ativo também são baixadas. Depois de baixar o pacote (.cmp), você pode [importar o pacote para outra instância do AEM Forms](../../forms/using/import-export-forms-templates.md#p-upload-forms-documents-assets-p).
 
@@ -146,7 +149,7 @@ Para baixar todos os ativos do Gerenciamento de correspondências e dependência
 
    >[!NOTE]
    >
-   >O processo Exportar tudo do Assets não pode ser cancelado depois de iniciado. Além disso, enquanto a operação exportar tudo estiver em andamento, não crie, exclua, modifique ou publique quaisquer ativos ou inicie o processo Publish All Assets.
+   >O processo Exportar tudo do Assets não pode ser cancelado depois de iniciado. Além disso, enquanto a operação exportar tudo estiver em processo, não crie, exclua, modifique ou publique quaisquer ativos ou inicie o processo Publicar todos os Assets.
 
 1. Selecione o link **Baixar Pacote Exportado** para baixar o arquivo de pacote.
 
@@ -158,7 +161,7 @@ Você pode importar ativos exportados para um arquivo .cmp. Um arquivo .cmp pode
 
 >[!NOTE]
 >
->Ao importar ativos antigos do Gerenciamento de correspondências para migração, faça logon usando uma conta de Administrador. Para obter mais informações sobre como Migrar ativos antigos do Gerenciamento de Correspondências, consulte [Migrar ativos do Gerenciamento de Correspondências para formulários AEM 6.1](/help/forms/using/migration-utility.md).
+>Ao importar ativos antigos do Gerenciamento de correspondências para migração, faça logon usando uma conta de Administrador. Para obter mais informações sobre como Migrar ativos antigos do Gerenciamento de correspondências, consulte [Migrar ativos do Gerenciamento de correspondências para formulários do AEM 6.1](/help/forms/using/migration-utility.md).
 
 1. Na página do dicionário de dados, cartas ou fragmentos de documento, selecione **Criar > Carregar arquivo** e selecione o arquivo .cmp.
 1. O Gerenciamento de correspondências exibe a caixa de diálogo Importar Assets com a lista de ativos importados. Selecione **Importar**.
@@ -174,7 +177,7 @@ Você pode importar ativos exportados para um arquivo .cmp. Um arquivo .cmp pode
 
 ## Exportar um aplicativo de fluxo de trabalho {#export-a-workflow-application}
 
-Você pode usar o gerenciador de pacotes AEM para exportar aplicativos de workflow. O procedimento é conforme listado abaixo:
+Você pode usar o gerenciador de pacotes do AEM para exportar aplicativos de workflow. O procedimento é conforme listado abaixo:
 
 1. Abra o gerenciador de pacotes do AEM Forms. O URL do gerenciador de pacotes é https://&lt;server>:&lt;port>/crx/packmgr.
 1. Clique em **[!UICONTROL Criar Pacote]**. A caixa de diálogo **[!UICONTROL Novo Pacote]** é exibida.
@@ -251,7 +254,7 @@ No painel lateral, você pode usar o seguinte para restringir os resultados da p
 
 * Diretório de pesquisa
 * Tags
-* Critérios de pesquisa; por exemplo, Datas modificadas, Status do Publish, Status da Live Copy.
+* Critérios de pesquisa; por exemplo, Datas modificadas, Status de publicação, Status da Live Copy.
 
 O painel lateral também permite salvar as configurações de pesquisa com os nomes de sua escolha.
 

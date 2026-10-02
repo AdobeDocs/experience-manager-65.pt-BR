@@ -10,18 +10,16 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '335'
+source-wordcount: '337'
 ht-degree: 0%
-
 ---
-
 # Armazenamento personalizado para rascunhos e componentes de envio {#custom-storage-for-drafts-and-submissions-component}
 
 ## Visão geral {#overview}
 
 O AEM Forms permite salvar um formulário como rascunho. A funcionalidade de rascunho permite manter um formulário de trabalho em andamento, que pode ser concluído e enviado posteriormente de qualquer dispositivo.
 
-Por padrão, o AEM Forms armazena os dados do usuário associados ao rascunho e ao envio de um formulário no nó `/content/forms/fp` na instância do Publish. Além disso, os componentes do Portal do AEM Forms fornecem serviços de dados, que você pode usar para personalizar a implementação do armazenamento de dados do usuário para rascunhos e envios. Por exemplo, você pode armazenar dados do usuário em um armazenamento de dados.
+Por padrão, o AEM Forms armazena os dados do usuário associados ao rascunho e ao envio de um formulário no nó `/content/forms/fp` na instância de Publicação. Além disso, os componentes do Portal do AEM Forms fornecem serviços de dados, que você pode usar para personalizar a implementação do armazenamento de dados do usuário para rascunhos e envios. Por exemplo, você pode armazenar dados do usuário em um armazenamento de dados.
 
 ## Pré-requisitos  {#prerequisites}
 

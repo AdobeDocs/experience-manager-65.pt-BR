@@ -13,11 +13,9 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '2856'
-ht-degree: 1%
-
+source-wordcount: '2919'
+ht-degree: 2%
 ---
-
 # Pontuação e medalhas das comunidades {#communities-scoring-and-badges}
 
 ## Visão geral {#overview}
@@ -164,8 +162,8 @@ As regras de pontuação são herdadas, mas não aditivas. Por exemplo:
 * Uma ação em um componente página2 chama a regra 1 e a regra 2.
 * Se ambas as regras contiverem subregras aplicáveis para o mesmo `topic/verb`:
 
-   * Somente a subregra da regra 2 afeta a pontuação.
-   * As pontuações de ambas as subregras não são adicionadas.
+  * Somente a subregra da regra 2 afeta a pontuação.
+  * As pontuações de ambas as subregras não são adicionadas.
 
 Quando houver mais de uma regra de pontuação, as pontuações serão mantidas separadamente para cada regra.
 
@@ -297,7 +295,7 @@ Estão incluídas na versão duas regras de pontuação para a [Função do fór
 * `sub-rules` pode ser compartilhado entre várias regras de pontuação.
 * `rules` deve estar em um local de repositório com permissão de leitura para todos.
 
-   * Os nomes das regras devem ser exclusivos independentemente da localização.
+  * Os nomes das regras devem ser exclusivos independentemente da localização.
 
 ### Ativação de regras de pontuação personalizadas {#activating-custom-scoring-rules}
 
@@ -316,15 +314,15 @@ As regras para medalha consistem em uma propriedade obrigatória `thresholds`, q
 
 * `1|/libs/settings/community/badging/images/bronze-badge/jcr:content/bronze.png`
 
-   * Uma medalha de bronze é concedida por ganhar um ponto.
+  * Uma medalha de bronze é concedida por ganhar um ponto.
 
 * `60|/libs/settings/community/badging/images/silver-badge/jcr:content/silver.png`
 
-   * Um emblema de prata é concedido quando 60 pontos foram acumulados.
+  * Um emblema de prata é concedido quando 60 pontos foram acumulados.
 
 * `80|/libs/settings/community/badging/images/gold-badge/jcr:content/gold.png`
 
-   * Um selo de ouro é concedido quando 80 pontos foram acumulados.
+  * Um selo de ouro é concedido quando 80 pontos foram acumulados.
 
 As regras de insígnia são combinadas às regras de pontuação, que determinam como os pontos se acumulam. Consulte a seção denominada [Aplicar regras ao conteúdo](#apply-rules-to-content).
 
@@ -332,7 +330,7 @@ A propriedade `scoringRules` em uma regra de marca simplesmente restringe quais 
 
 >[!NOTE]
 >
->Prática recomendada : criar imagens de selo exclusivas para cada site de AEM.
+>Prática recomendada : criar imagens de selo exclusivas para cada site do AEM.
 
 ![configuração-regra-medalha](assets/badging-rule-configuration.png)
 
@@ -349,9 +347,9 @@ A propriedade `scoringRules` em uma regra de marca simplesmente restringe quais 
    <td><em>(obrigatório)</em> Uma cadeia de caracteres de vários valores no formato 'number|path'
     <ul>
      <li>número = pontuação</li>
-     <li>| = caractere de linha vertical (U+007C)</li>
+     <li>| = sinal de linha vertical (U+007C)</li>
      <li>caminho = caminho completo para o recurso de imagem do selo</li>
-    </ul> As cadeias de caracteres devem ser ordenadas de modo que os números aumentem em valor e nenhum espaço em branco deva aparecer entre o número e o caminho.<br /> Exemplo de entrada:<br /> <code>80|/libs/settings/community/badging/images/gold-badge/jcr:content/gold.png</code></td>
+    </ul> As cadeias de caracteres devem ser ordenadas de forma que os números estejam aumentando em valor e nenhum espaço em branco deva aparecer entre o número e o caminho.<br /> Exemplo de entrada:<br /> <code>80|/libs/settings/community/badging/images/gold-badge/jcr:content/gold.png</code></td>
   </tr>
   <tr>
    <td>badgingType</td>
@@ -379,7 +377,7 @@ Estão incluídas na versão duas regras de atribuição de emblemas que corresp
 * `rules` nós são do tipo cq:Page.
 * `rules` deve estar em um local de repositório com permissão de leitura para todos.
 
-   * Os nomes das regras devem ser exclusivos independentemente da localização.
+  * Os nomes das regras devem ser exclusivos independentemente da localização.
 
 ### Ativação das regras personalizadas de marcação {#activating-custom-badging-rules}
 
@@ -393,13 +391,13 @@ Os seguintes comandos cURL mostram o que é necessário para uma solicitação H
 
 cURL -i -X POST -H *cabeçalho* -u *entrada* -F *operação* -F *selo* *membro-perfil-url*
 
-*cabeçalho* = &quot;Accept:application/json&quot;
+*cabeçalho* = &quot;Aceitar:application/json&quot;
 cabeçalho personalizado a ser transmitido ao servidor (obrigatório)
 
-*entrada* = administrator-id:password
+*entrada* = id-administrador:password
 por exemplo, admin:admin
 
-*operação* = &quot;:operation=social:assignBadge&quot; OR &quot;:operation=social:deleteBadge&quot;
+*operação* = &quot;:operation=social:assignBadge&quot; OU &quot;:operation=social:deleteBadge&quot;
 
 *selo* = &quot;seloContentPath=*arquivo-imagem-selo*&quot;
 
@@ -500,7 +498,7 @@ SocialEvent `topic`= com/adobe/cq/social/journal
 | ATUALIZAR | artigo ou comentário do blog do membro editado |
 | EXCLUIR | artigo ou comentário do blog do membro excluído |
 
-**[Componente QnA](/help/communities/working-with-qna.md)**
+Componente **[QnA](/help/communities/working-with-qna.md)**
 SocialEvent `topic` = com/adobe/cq/social/qna
 
 | **Verbo** | **Descrição** |
@@ -579,32 +577,32 @@ Se o recurso não estiver funcionando como esperado, verifique se os dados foram
 
 É possível tentar rapidamente pontuar e criar medalhas usando o [site Tutorial de introdução](/help/communities/getting-started.md) (engajamento):
 
-* Acessar CRXDE Lite no autor.
+* Acessar o CRXDE Lite no autor.
 * Navegue até a página base:
 
-   * /content/sites/engage/en/jcr:content
+  * /content/sites/engage/en/jcr:content
 
 * Adicione a propriedade badgingRules:
 
-   * **Nome**: `badgingRules`
-   * **Tipo**: `String`
-   * Selecionar **Multi**
-   * Selecionar **Adicionar**
-   * Inserir `/libs/settings/community/badging/rules/forums-badging`
-   * Selecionar **+**
-   * Inserir `/libs/settings/community/badging/rules/comments-badging`
-   * Selecione **OK**
+  * **Nome**: `badgingRules`
+  * **Tipo**: `String`
+  * Selecionar **Multi**
+  * Selecionar **Adicionar**
+  * Inserir `/libs/settings/community/badging/rules/forums-badging`
+  * Selecionar **+**
+  * Inserir `/libs/settings/community/badging/rules/comments-badging`
+  * Selecione **OK**
 
 * Adicione a propriedade scoringRules:
 
-   * **Nome**: `scoringRules`
-   * **Tipo**: `String`
-   * Selecionar **Multi**
-   * Selecionar **Adicionar**
-   * Inserir `/libs/settings/community/scoring/rules/forums-scoring`
-   * Selecionar **+**
-   * Inserir `/libs/settings/community/scoring/rules/comments-scoring`
-   * Selecione **OK**
+  * **Nome**: `scoringRules`
+  * **Tipo**: `String`
+  * Selecionar **Multi**
+  * Selecionar **Adicionar**
+  * Inserir `/libs/settings/community/scoring/rules/forums-scoring`
+  * Selecionar **+**
+  * Inserir `/libs/settings/community/scoring/rules/comments-scoring`
+  * Selecione **OK**
 
 * Selecione **Salvar tudo**.
 
@@ -615,13 +613,13 @@ Em seguida, verifique se os componentes do fórum e dos comentários permitem qu
 * Novamente usando o CRXDE Lite.
 * Navegue até o componente do fórum
 
-   * `/content/sites/engage/en/forum/jcr:content/content/primary/forum`
+  * `/content/sites/engage/en/forum/jcr:content/content/primary/forum`
 
 * Adicione a propriedade booleana allowBadges, se necessário, e verifique se ela é verdadeira.
 
-   * **Nome**: `allowBadges`
-   * **Tipo**: `Boolean`
-   * **Valor**: `true`
+  * **Nome**: `allowBadges`
+  * **Tipo**: `Boolean`
+  * **Valor**: `true`
 
 ![componente-fórum-teste](assets/test-forum-component.png)
 
@@ -631,10 +629,10 @@ Por último,
 
 * Navegue até o componente na instância de publicação.
 * Faça logon como um membro da comunidade (por exemplo, weston.mccall@dodgit.com / senha).
-* Post: um novo tópico de fórum.
+* Publique um novo tópico do fórum.
 * A página deve ser atualizada para que o selo seja exibido.
 
-   * Faça logoff e logon como um membro da comunidade diferente (por exemplo: aaron.mcdonald@mailinator.com/password).
+  * Faça logoff e logon como um membro da comunidade diferente (por exemplo: aaron.mcdonald@mailinator.com/password).
 
 * Selecione o Fórum.
 

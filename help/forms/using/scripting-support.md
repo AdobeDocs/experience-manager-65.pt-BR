@@ -11,11 +11,9 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '3916'
+source-wordcount: '3948'
 ht-degree: 5%
-
 ---
-
 # Suporte a script para formulários HTML5 {#scripting-support-for-html-forms}
 
 JavaScript, propriedades FormCalc e métodos compatíveis com formulários HTML5 estão listados abaixo:
@@ -105,7 +103,7 @@ JavaScript, propriedades FormCalc e métodos compatíveis com formulários HTML5
   <tr>
    <td><code>numPages</code></td>
    <td>Retorna o número de páginas no documento.</td>
-   <td>A política de paginação de formulários HTML5 não é idêntica à política de paginação PDF forms. Portanto, a API numPages pode retornar valores diferentes em ambos os casos.</td>
+   <td>A política de paginação de formulários HTML5 não é idêntica à política de paginação do PDF forms. Portanto, a API numPages pode retornar valores diferentes em ambos os casos.</td>
   </tr>
   <tr>
    <td><code>platform</code></td>
@@ -115,7 +113,7 @@ JavaScript, propriedades FormCalc e métodos compatíveis com formulários HTML5
   <tr>
    <td><code>title</code></td>
    <td>Especifica o título do documento. Ele está disponível somente para aplicativos clientes.</td>
-   <td>Ele retorna o título do documento de HTML no formulário, em vez do título dos metadados do formulário, como se houvesse PDF forms.</td>
+   <td>Ele retorna o título do documento HTML no formulário, em vez do título dos metadados do formulário, como se houvesse uma PDF forms.</td>
   </tr>
   <tr>
    <td><code>version</code></td>
@@ -135,7 +133,7 @@ JavaScript, propriedades FormCalc e métodos compatíveis com formulários HTML5
   <tr>
    <td><code>pageUp</code></td>
    <td>Vai para a página anterior.</td>
-   <td>Os formulários HTML5 não seguem a mesma política de paginação que o formulário PDF, portanto, a página anterior de um formulário HTML5 é diferente da página anterior de um formulário PDF.</td>
+   <td>Os formulários HTML5 não seguem a mesma política de paginação do PDF Form, portanto, a página anterior de um formulário HTML5 é diferente da página anterior de um formulário PDF.</td>
   </tr>
   <tr>
    <td><code>pageDown</code></td>
@@ -187,7 +185,7 @@ JavaScript, propriedades FormCalc e métodos compatíveis com formulários HTML5
   <tr>
    <td><code>name</code></td>
    <td>Um identificador usado para identificar este elemento em expressões de script.</td>
-   <td>formulários HTML5 não permitem definir a propriedade de nome para objetos. É uma propriedade somente leitura para formulários HTML5.</td>
+   <td>Os formulários HTML5 não permitem definir a propriedade de nome para objetos. É uma propriedade somente leitura para formulários HTML5.</td>
   </tr>
   <tr>
    <td><code>value</code></td>
@@ -506,7 +504,7 @@ JavaScript, propriedades FormCalc e métodos compatíveis com formulários HTML5
    <td>
     <ul>
      <li>Não suportado para xfa.nodes, desc</li>
-     <li>O número de nós relatados para PDF e HTML é diferente. </li>
+     <li>O número de nós relatados para o PDF e o HTML é diferente. </li>
     </ul> </td>
   </tr>
   <tr>
@@ -575,7 +573,7 @@ JavaScript, propriedades FormCalc e métodos compatíveis com formulários HTML5
    <td>
     <ul>
      <li>O valor padrão não pode ser recuperado. </li>
-     <li>As alterações são refletidas no Modelo e estão disponíveis para script, mas não são sincronizadas com os elementos HTML. Portanto, as alterações não são refletidas na interface do usuário.</li>
+     <li>As alterações são refletidas no Modelo e estão disponíveis para script, mas não são sincronizadas com os elementos do HTML. Portanto, as alterações não são refletidas na interface do usuário.</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -596,7 +594,7 @@ JavaScript, propriedades FormCalc e métodos compatíveis com formulários HTML5
    <td>
     <ul>
      <li>O valor padrão não pode ser recuperado. </li>
-     <li>As alterações são refletidas no Modelo e estão disponíveis para script, mas não são sincronizadas com os elementos HTML. Portanto, as alterações não são refletidas na interface do usuário.</li>
+     <li>As alterações são refletidas no Modelo e estão disponíveis para script, mas não são sincronizadas com os elementos do HTML. Portanto, as alterações não são refletidas na interface do usuário.</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -617,7 +615,7 @@ JavaScript, propriedades FormCalc e métodos compatíveis com formulários HTML5
    <td>
     <ul>
      <li>O valor padrão não pode ser recuperado. </li>
-     <li>As alterações são refletidas no Modelo e estão disponíveis para script, mas não são sincronizadas com os elementos HTML. Portanto, as alterações não são refletidas na interface do usuário.</li>
+     <li>As alterações são refletidas no Modelo e estão disponíveis para script, mas não são sincronizadas com os elementos do HTML. Portanto, as alterações não são refletidas na interface do usuário.</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -655,7 +653,7 @@ JavaScript, propriedades FormCalc e métodos compatíveis com formulários HTML5
    <td>
     <ul>
      <li>O valor padrão não pode ser recuperado. </li>
-     <li>As alterações são refletidas no Modelo e estão disponíveis para script, mas não são sincronizadas com os elementos HTML. Portanto, as alterações não são refletidas na interface do usuário.</li>
+     <li>As alterações são refletidas no Modelo e estão disponíveis para script, mas não são sincronizadas com os elementos do HTML. Portanto, as alterações não são refletidas na interface do usuário.</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -676,7 +674,7 @@ JavaScript, propriedades FormCalc e métodos compatíveis com formulários HTML5
    <td>
     <ul>
      <li>O valor padrão não pode ser recuperado. </li>
-     <li>As alterações são refletidas no Modelo e estão disponíveis para script, mas não são sincronizadas com os elementos HTML. Portanto, as alterações não são refletidas na interface do usuário.</li>
+     <li>As alterações são refletidas no Modelo e estão disponíveis para script, mas não são sincronizadas com os elementos do HTML. Portanto, as alterações não são refletidas na interface do usuário.</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -697,7 +695,7 @@ JavaScript, propriedades FormCalc e métodos compatíveis com formulários HTML5
    <td>
     <ul>
      <li>O valor padrão não pode ser recuperado. </li>
-     <li>As alterações são refletidas no modelo e estão disponíveis para script, mas não são sincronizadas com os elementos HTML. Portanto, as alterações não são refletidas na interface do usuário.</li>
+     <li>As alterações são refletidas no modelo e estão disponíveis para script, mas não são sincronizadas com os elementos do HTML. Portanto, as alterações não são refletidas na interface do usuário.</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -755,7 +753,7 @@ JavaScript, propriedades FormCalc e métodos compatíveis com formulários HTML5
    <td>
     <ul>
      <li>O valor padrão não pode ser recuperado. </li>
-     <li>As alterações são refletidas no modelo e estão disponíveis para script, mas não são sincronizadas com os elementos HTML. Portanto, as alterações não são refletidas na interface do usuário.</li>
+     <li>As alterações são refletidas no modelo e estão disponíveis para script, mas não são sincronizadas com os elementos do HTML. Portanto, as alterações não são refletidas na interface do usuário.</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -773,7 +771,7 @@ JavaScript, propriedades FormCalc e métodos compatíveis com formulários HTML5
   <tr>
    <td>borda</td>
    <td>O objeto de borda descreve a borda ao redor do objeto checkButton. </td>
-   <td>As alterações são refletidas no modelo e estão disponíveis para script, mas não são sincronizadas com os elementos HTML. Portanto, as alterações não são refletidas na interface.<br /> </td>
+   <td>As alterações são refletidas no modelo e estão disponíveis para script, mas não são sincronizadas com os elementos do HTML. Portanto, as alterações não são refletidas na interface.<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -1285,7 +1283,7 @@ FormCalc é uma linguagem específica do XFA para criar lógica centrada no form
   </tr>
   <tr>
    <td>app.setTimeOut()</td>
-   <td>Especifica um script JavaScript e um período de tempo. O script é executado apenas uma vez, depois que o período decorre. O valor de retorno desse método deve ser mantido em uma variável JavaScript. Caso contrário, o objeto de tempo limite está sujeito à coleta de lixo, o que faria com que o relógio parasse. Para cancelar o evento de tempo limite, passe o objeto de tempo limite retornado para clearTimeOut.</td>
+   <td>Especifica um script JavaScript e um período de tempo. O script é executado apenas uma vez, após o período decorrido.O valor de retorno desse método deve ser mantido em uma variável do JavaScript. Caso contrário, o objeto de tempo limite está sujeito à coleta de lixo, o que faria com que o relógio parasse. Para cancelar o evento de tempo limite, passe o objeto de tempo limite retornado para clearTimeOut.</td>
    <td> </td>
   </tr>
   <tr>
@@ -1296,7 +1294,7 @@ FormCalc é uma linguagem específica do XFA para criar lógica centrada no form
   <tr>
    <td>app.clearTimeOut()</td>
    <td>Cancela um intervalo de tempo limite registrado anteriormente. Esse intervalo é definido inicialmente por setTimeOut.</td>
-   <td>Em formulários HTML5, a API não funciona corretamente.<br /> </td>
+   <td>Nos formulários HTML5, a API não funciona corretamente.<br /> </td>
   </tr>
   <tr>
    <td>app.eval()</td>
@@ -1304,7 +1302,7 @@ FormCalc é uma linguagem específica do XFA para criar lógica centrada no form
    <td> </td>
   </tr>
   <tr>
-   <td>app.activeDocs</td>
+   <td>app.ativeDocs</td>
    <td>Uma matriz que contém o objeto Doc para cada documento ativo. Se nenhum documento estiver ativo, o ativeDocs não retornará nada; ou seja, ele tem o mesmo comportamento que d = new Array(0) no JavaScript principal.</td>
    <td>Retorna uma matriz vazia para formulários HTMl5.</td>
   </tr>
@@ -1314,7 +1312,7 @@ FormCalc é uma linguagem específica do XFA para criar lógica centrada no form
    <td>Sempre verdadeiro para Forms HTMl5.</td>
   </tr>
   <tr>
-   <td>app.constants</td>
+   <td>app.constantes</td>
    <td>Um objeto wrapper para manter vários valores constantes. Atualmente, essa propriedade retorna um objeto com uma única propriedade, align.</td>
    <td>Os formulários HTML5 retornam um objeto de alinhamento vazio.</td>
   </tr>

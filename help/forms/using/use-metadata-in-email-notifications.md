@@ -9,11 +9,9 @@ feature: Adaptive Forms
 role: Admin, User, Developer
 source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
 workflow-type: tm+mt
-source-wordcount: '871'
+source-wordcount: '899'
 ht-degree: 0%
-
 ---
-
 # Usar metadados em uma notificação por email {#use-metadata-in-an-email-notification}
 
 Você pode usar a etapa Atribuir tarefa para criar e atribuir tarefas a um usuário ou grupo. Quando uma tarefa é atribuída a um usuário ou grupo, uma notificação por email é enviada ao usuário definido ou a cada membro do grupo definido. Uma [notificação por email](../../forms/using/use-custom-email-template-assign-task-step.md) típica contém o link da tarefa atribuída e informações relacionadas à tarefa.
@@ -176,7 +174,7 @@ Você também pode usar metadados personalizados em uma notificação por email.
    }
    ```
 
-1. Clique em Salvar tudo. Agora, o script está disponível para seleção no modelo de fluxo de trabalho AEM.
+1. Clique em Salvar tudo. Agora, o script está disponível para seleção no modelo de fluxo de trabalho do AEM.
 
    ![atribuirtarefa-metadados](assets/assigntask-metadata.png)
 
@@ -185,7 +183,7 @@ Você também pode usar metadados personalizados em uma notificação por email.
    Se você não especificar o título, o campo Metadados personalizados exibirá o caminho completo do arquivo ECMAScript. Execute as seguintes etapas para especificar um título significativo para o script:
 
    1. Expanda o nó do script, clique com o botão direito do mouse no nó **[!UICONTROL jcr:content]** e clique em **[!UICONTROL Mixins]**.
-   1. Digite mix:title na caixa de diálogo Editar misturas e clique em **+**.
+   1. Digite mix:title na caixa de diálogo Editar Mixins e clique em **+**.
    1. Adicione uma propriedade com os seguintes valores.
 
       | Nome | jcr:title |
@@ -247,6 +245,6 @@ Para criar um pacote OSGi com a interface Java, adicione os arquivos jar [AEM Fo
 
    `mvn clean install`
 
-1. Faça upload do pacote para um servidor do AEM Forms. Você pode usar o Gerenciador de pacotes AEM para importar o pacote para o servidor do AEM Forms.
+1. Faça upload do pacote para um servidor do AEM Forms. Você pode usar o AEM Package Manager para importar o pacote para o servidor do AEM Forms.
 
 Depois que o pacote for importado, é possível selecionar os metadados na etapa Atribuir tarefa e usá-los como um template de email.

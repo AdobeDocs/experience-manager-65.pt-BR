@@ -9,25 +9,24 @@ topic-tags: operations
 role: Developer
 exl-id: 28abf044-6c8e-4578-ae2e-54cdbd694c5f
 solution: Experience Manager, Experience Manager Forms
+
 feature: Adaptive Forms,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1858'
+source-wordcount: '1870'
 ht-degree: 0%
-
 ---
-
 # Cálculo de dados de formulário {#calculating-form-data}
 
 **Exemplos e exemplos neste documento são somente para AEM Forms no ambiente JEE.**
 
-O serviço Forms pode calcular os valores que um usuário insere em um formulário e exibir os resultados. Para calcular dados de formulário, você deve executar duas tarefas. Primeiro, crie um script de design de formulário que calcula os dados de formulário. Um design de formulário é compatível com três tipos de scripts. Um tipo de script é executado no cliente, outro é executado no servidor e o terceiro é executado no servidor e no cliente. O tipo de script discutido neste tópico é executado no servidor. Os cálculos do lado do servidor são compatíveis com as transformações de HTML, PDF e Guia de forma (obsoleto).
+O serviço Forms pode calcular os valores que um usuário insere em um formulário e exibir os resultados. Para calcular dados de formulário, você deve executar duas tarefas. Primeiro, crie um script de design de formulário que calcula os dados de formulário. Um design de formulário é compatível com três tipos de scripts. Um tipo de script é executado no cliente, outro é executado no servidor e o terceiro é executado no servidor e no cliente. O tipo de script discutido neste tópico é executado no servidor. Os cálculos do lado do servidor são compatíveis com transformações do HTML, PDF e Guia de formulários (obsoletos).
 
 Como parte do processo de design do formulário, você pode usar cálculos e scripts para fornecer uma experiência do usuário mais avançada. Cálculos e scripts podem ser adicionados à maioria dos campos e objetos de formulário. Crie um script de design de formulário para executar operações de cálculo nos dados que um usuário insere em um formulário interativo.
 
 O usuário insere valores no formulário e clica no botão Calculate para exibir os resultados. O processo a seguir descreve um aplicativo de exemplo que permite ao usuário calcular dados:
 
-* O usuário acessa uma página de HTML chamada StartLoan.html que atua como a página inicial da aplicação Web. Esta página chama um Servlet Java chamado `GetLoanForm`.
+* O usuário acessa uma página do HTML chamada StartLoan.html que atua como a página inicial do aplicativo web. Esta página chama um Servlet Java chamado `GetLoanForm`.
 * O servlet `GetLoanForm` renderiza um formulário de empréstimo. Este formulário contém um script, campos interativos, um botão calcular e um botão enviar.
 * O usuário insere valores nos campos do formulário e clica no botão Calcular. O formulário é enviado para o Servlet Java `CalculateData` onde o script é executado. O formulário é enviado de volta ao usuário com os resultados do cálculo exibidos no formulário.
 * O usuário continua informando e calculando valores até que um resultado satisfatório seja exibido. Quando satisfeito, o usuário clica no botão Submit para processar o formulário. O formulário é enviado para outro Servlet Java chamado `ProcessForm`, que é responsável por recuperar os dados enviados. (Consulte [Manipulação de Forms Enviada](/help/forms/developing/rendering-forms.md#handling-submitted-forms).)
@@ -49,7 +48,7 @@ A tabela a seguir descreve as etapas deste diagrama.
  <tbody>
   <tr>
    <td><p>1</p></td>
-   <td><p>O Servlet Java <code>GetLoanForm</code> é chamado a partir da página inicial do HTML. </p></td>
+   <td><p>O Servlet Java <code>GetLoanForm</code> é chamado da página inicial do HTML. </p></td>
   </tr>
   <tr>
    <td><p>2</p></td>
@@ -70,7 +69,7 @@ A tabela a seguir descreve as etapas deste diagrama.
  </tbody>
 </table>
 
-Normalmente, um formulário enviado como conteúdo de PDF contém scripts que são executados no cliente. No entanto, os cálculos do lado do servidor também podem ser executados. Um botão Enviar não pode ser usado para calcular scripts. Nessa situação, os cálculos não são executados porque o serviço do Forms considera a interação concluída.
+Normalmente, um formulário enviado como conteúdo do PDF contém scripts que são executados no cliente. No entanto, os cálculos do lado do servidor também podem ser executados. Um botão Enviar não pode ser usado para calcular scripts. Nessa situação, os cálculos não são executados porque o serviço do Forms considera a interação concluída.
 
 Para ilustrar o uso de um script de design de formulário, esta seção examina um formulário interativo simples que contém um script configurado para execução no servidor. O diagrama a seguir mostra um design de formulário contendo um script que adiciona valores inseridos por um usuário nos dois primeiros campos e exibe o resultado no terceiro campo.
 
@@ -123,12 +122,12 @@ Depois de verificar se o estado de processamento associado a um formulário envi
 
 **Consulte também**
 
-[Incluindo arquivos da biblioteca AEM Forms Java](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 [Calcular dados do formulário usando a API Java](/help/forms/developing/calculating-form-data.md#calculate-form-data-using-the-java-api)
-[Calcular dados de formulário usando a API de serviço Web](/help/forms/developing/calculating-form-data.md#calculate-form-data-using-the-web-service-api)
+[Calcular dados de formulário usando a API do serviço Web](/help/forms/developing/calculating-form-data.md#calculate-form-data-using-the-web-service-api)
 [Definindo propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
-[Início Rápido da API de Serviço do Forms](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
-[Renderizando PDF forms interativos](/help/forms/developing/rendering-interactive-pdf-forms.md)
+[Início rápido da API de serviço do Forms](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+[Renderização do PDF forms Interativo](/help/forms/developing/rendering-interactive-pdf-forms.md)
 [Criando Aplicativos Web que Renderizam o Forms](/help/forms/developing/creating-web-applications-renders-forms.md)
 
 ## Calcular dados do formulário usando a API Java {#calculate-form-data-using-the-java-api}
@@ -149,10 +148,10 @@ Calcule dados de formulário usando a API do Forms (Java):
    * Para recuperar dados de formulário que contenham um script de cálculo, crie um objeto `com.adobe.idp.Document` usando seu construtor e invocando o método `getInputStream` do objeto `javax.servlet.http.HttpServletResponse` de dentro do construtor.
    * Invoque o método `processFormSubmission` do objeto `FormsServiceClient` e passe os seguintes valores:
 
-      * O objeto `com.adobe.idp.Document` que contém os dados de formulário.
-      * Um valor de string que especifica variáveis de ambiente, incluindo todos os cabeçalhos HTTP relevantes. Especifique o tipo de conteúdo a ser manipulado especificando um ou mais valores para a variável de ambiente `CONTENT_TYPE`. Por exemplo, para manipular dados XML e PDF, especifique o seguinte valor de cadeia de caracteres para este parâmetro: `CONTENT_TYPE=application/xml&CONTENT_TYPE=application/pdf`
-      * Um valor de cadeia de caracteres que especifica o valor do cabeçalho `HTTP_USER_AGENT`; por exemplo, `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
-      * Um objeto `RenderOptionsSpec` que armazena opções de tempo de execução.
+     * O objeto `com.adobe.idp.Document` que contém os dados de formulário.
+     * Um valor de string que especifica variáveis de ambiente, incluindo todos os cabeçalhos HTTP relevantes. Especifique o tipo de conteúdo a ser manipulado especificando um ou mais valores para a variável de ambiente `CONTENT_TYPE`. Por exemplo, para manipular dados XML e PDF, especifique o seguinte valor de cadeia de caracteres para este parâmetro: `CONTENT_TYPE=application/xml&CONTENT_TYPE=application/pdf`
+     * Um valor de cadeia de caracteres que especifica o valor do cabeçalho `HTTP_USER_AGENT`; por exemplo, `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
+     * Um objeto `RenderOptionsSpec` que armazena opções de tempo de execução.
 
      O método `processFormSubmission` retorna um objeto `FormsResult` contendo os resultados do envio do formulário.
 
@@ -169,7 +168,7 @@ Calcule dados de formulário usando a API do Forms (Java):
 **Consulte também**
 
 
-[Incluindo arquivos da biblioteca AEM Forms Java](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Incluindo arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 [Definindo propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
 ## Calcular dados do formulário usando a API do serviço Web {#calculate-form-data-using-the-web-service-api}
@@ -196,17 +195,17 @@ Calcule dados de formulário usando a API do Forms (serviço da Web):
    * Crie um objeto `RenderOptionsSpec` usando seu construtor. Defina o valor da localidade invocando o método `setLocale` do objeto `RenderOptionsSpec` e transmitindo um valor de cadeia de caracteres que especifique o valor da localidade.
    * Invoque o método `processFormSubmission` do objeto `FormsServiceClient` e passe os seguintes valores:
 
-      * O objeto `BLOB` que contém os dados de formulário.
-      * Um valor de string que especifica variáveis de ambiente incluídas em todos os cabeçalhos HTTP relevantes. Por exemplo, você pode especificar o seguinte valor de cadeia de caracteres: `HTTP_REFERER=referrer&HTTP_CONNECTION=keep-alive&CONTENT_TYPE=application/xml`
-      * Um valor de cadeia de caracteres que especifica o valor do cabeçalho `HTTP_USER_AGENT`; por exemplo, `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
-      * Um objeto `RenderOptionsSpec` que armazena opções de tempo de execução. Para obter mais informações, .
-      * Um objeto `BLOBHolder` vazio preenchido pelo método.
-      * Um objeto `javax.xml.rpc.holders.StringHolder` vazio preenchido pelo método.
-      * Um objeto `BLOBHolder` vazio preenchido pelo método.
-      * Um objeto `BLOBHolder` vazio preenchido pelo método.
-      * Um objeto `javax.xml.rpc.holders.ShortHolder` vazio preenchido pelo método.
-      * Um objeto `MyArrayOf_xsd_anyTypeHolder` vazio preenchido pelo método. Esse parâmetro é usado para armazenar anexos de arquivo enviados junto com o formulário.
-      * Um objeto `FormsResultHolder` vazio que é preenchido pelo método com o formulário enviado.
+     * O objeto `BLOB` que contém os dados de formulário.
+     * Um valor de string que especifica variáveis de ambiente incluídas em todos os cabeçalhos HTTP relevantes. Por exemplo, você pode especificar o seguinte valor de cadeia de caracteres: `HTTP_REFERER=referrer&HTTP_CONNECTION=keep-alive&CONTENT_TYPE=application/xml`
+     * Um valor de cadeia de caracteres que especifica o valor do cabeçalho `HTTP_USER_AGENT`; por exemplo, `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
+     * Um objeto `RenderOptionsSpec` que armazena opções de tempo de execução. Para obter mais informações, .
+     * Um objeto `BLOBHolder` vazio preenchido pelo método.
+     * Um objeto `javax.xml.rpc.holders.StringHolder` vazio preenchido pelo método.
+     * Um objeto `BLOBHolder` vazio preenchido pelo método.
+     * Um objeto `BLOBHolder` vazio preenchido pelo método.
+     * Um objeto `javax.xml.rpc.holders.ShortHolder` vazio preenchido pelo método.
+     * Um objeto `MyArrayOf_xsd_anyTypeHolder` vazio preenchido pelo método. Esse parâmetro é usado para armazenar anexos de arquivo enviados junto com o formulário.
+     * Um objeto `FormsResultHolder` vazio que é preenchido pelo método com o formulário enviado.
 
      O método `processFormSubmission` preenche o parâmetro `FormsResultHolder` com os resultados do envio do formulário. O método `processFormSubmission` retorna um objeto `FormsResult` contendo os resultados do envio do formulário.
 

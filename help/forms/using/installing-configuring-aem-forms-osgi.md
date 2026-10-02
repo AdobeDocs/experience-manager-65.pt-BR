@@ -1,37 +1,40 @@
 ---
 title: Instalar e configurar recursos de captura de dados
-description: Instale e configure formulários adaptáveis, PDF forms e HTML5 Forms. Configure o Adobe Analytics e o Adobe Target para formulários adaptáveis para analisar o uso de formulários e direcionar usuários com base em seus perfis.
+
+description: Instale e configure os formulários adaptáveis, o PDF forms e o HTML5 Forms. Configure o Adobe Analytics e o Adobe Target para formulários adaptáveis para analisar o uso de formulários e direcionar usuários com base em seus perfis.
+
+
 topic-tags: installing
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
+
 docset: aem65
+
 role: Admin, User, Developer
 exl-id: 19b5765e-50bc-4fed-8af5-f6bb464516c8
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on OSGi
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1882'
-ht-degree: 1%
-
+source-wordcount: '1972'
+ht-degree: 4%
 ---
-
 # Instalar e configurar recursos de captura de dados{#install-and-configure-data-capture-capabilities}
 
 ## Introdução {#introduction}
 
-O AEM Forms fornece um conjunto de formulários para obter dados do usuário final: formulários adaptáveis, HTML5 Forms e PDF forms. Ele também fornece ferramentas para listar todos os formulários disponíveis em uma página da Web, analisar o uso de formulários e direcionar usuários com base em seus perfis. Esses recursos estão incluídos no pacote complementar do AEM Forms. O pacote complementar é implantado em uma instância de Autor ou Publish do AEM.
+O AEM Forms fornece um conjunto de formulários para obter dados do usuário final: formulários adaptáveis, HTML5 Forms e PDF forms. Ele também fornece ferramentas para listar todos os formulários disponíveis em uma página da Web, analisar o uso de formulários e direcionar usuários com base em seus perfis. Esses recursos estão incluídos no pacote complementar do AEM Forms. O pacote complementar é implantado em uma instância de Autor ou Publicação do AEM.
 
-**Formulários adaptáveis:** esses formulários alteram a aparência com base no tamanho da tela do dispositivo, são envolventes e de natureza interativa. O Forms adaptável também pode se integrar ao Adobe Analytics, Adobe Sign e Adobe Target. Ela possibilitou fornecer formulários personalizados e experiências orientadas por processos aos usuários com base em sua demografia e outros recursos. Também é possível integrar formulários adaptáveis ao Adobe Sign.
+**Formulários adaptáveis:** esses formulários alteram a aparência com base no tamanho da tela do dispositivo, são envolventes e de natureza interativa. O Forms adaptável também pode se integrar ao Adobe Analytics, Adobe Sign e Adobe Target. Ela possibilitou fornecer formulários personalizados e experiências orientadas por processos aos usuários com base em sua demografia e outros recursos. Também é possível integrar formulários adaptáveis com o Adobe Sign.
 
-**PDF forms** são adequados para impressão perfeita em pixels e captura de informações digitais em um documento PDF. No avatar digital, você pode usar o Adobe Acrobat ou o Acrobat Reader para preencher esses formulários. Você pode hospedar esses formulários em seu site ou usar o portal de formulários para listar esses formulários em um site de AEM. Também é possível enviar esses formulários por email para outras pessoas como anexos. Esses formulários são mais adequados para ambientes de desktop.
+O **PDF forms** é adequado para impressão perfeita em pixels e captura de informações digitais em um documento do PDF. No avatar digital, você pode usar o Adobe Acrobat ou o Acrobat Reader para preencher esses formulários. Você pode hospedar esses formulários em seu site ou usar o portal de formulários para listar esses formulários em um site do AEM. Também é possível enviar esses formulários por email para outras pessoas como anexos. Esses formulários são mais adequados para ambientes de desktop.
 
-**HTML5 Forms** são a versão amigável para navegador do PDF forms. O HTML5 Forms é adequado para ambientes que não oferecem suporte a plug-ins de PDF. O HTML5 Forms permite a renderização de formulários baseados em XFA em dispositivos móveis e navegadores de desktop nos quais o PDF baseado em XFA não é compatível. Esses formulários são mais adequados para tablets e ambientes de desktop.
+O **HTML5 Forms** é a versão amigável para navegador do PDF forms. O HTML5 Forms é adequado para ambientes que não oferecem suporte a plug-ins do PDF. O HTML5 Forms permite a renderização de formulários baseados em XFA em dispositivos móveis e navegadores de desktop nos quais o PDF baseado em XFA não é compatível. Esses formulários são mais adequados para tablets e ambientes de desktop.
 
 O AEM Forms é uma plataforma poderosa de nível empresarial e a captura de dados (formulários adaptáveis, PDF forms e HTML5 Forms) é apenas um dos recursos do AEM Forms. Para obter a lista completa de recursos, consulte [Introdução ao AEM Forms](/help/forms/using/introduction-aem-forms.md).
 
 ## Topologia de implantação {#deployment-topology}
 
-O pacote complementar do AEM Forms é um aplicativo implantado no AEM. Você precisa de, no mínimo, um Autor de AEM e uma instância AEM do Publish para executar os recursos de captura de dados do AEM Forms. Sugere-se a seguinte topologia para executar os recursos de captura de dados do AEM Forms AEM Forms. Para obter informações detalhadas sobre a topologia, consulte [Arquitetura e topologias de implantação do AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md).
+O pacote complementar do AEM Forms é um aplicativo implantado no AEM. Você precisa de, no mínimo, um autor do AEM e uma instância de publicação do AEM para executar os recursos de captura de dados do AEM Forms. Sugere-se a seguinte topologia para executar os recursos de captura de dados do AEM Forms AEM Forms. Para obter informações detalhadas sobre a topologia, consulte [Arquitetura e topologias de implantação do AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md).
 
 ![topologia-recomendada](assets/recommended-topology.png)
 
@@ -42,20 +45,20 @@ Antes de começar a instalar e configurar o recurso de captura de dados do AEM F
 * A infraestrutura de hardware e software está em vigor. Para obter uma lista detalhada de hardware e software com suporte, consulte [requisitos técnicos](/help/sites-deploying/technical-requirements.md).
 
 * O caminho de instalação da instância do AEM não contém espaços em branco.
-* Uma instância do AEM está em funcionamento. Para usuários do Windows, instale a instância AEM no modo elevado. Na terminologia do AEM, uma &quot;instância&quot; é uma cópia do AEM em execução em um servidor no modo de criação ou publicação. Você precisa de pelo menos duas [instâncias de AEM (um Autor e um Publish)](/help/sites-deploying/deploy.md) para executar os recursos de captura de dados do AEM Forms:
+* Uma instância do AEM está em execução. Para usuários do Windows, instale a instância do AEM no modo elevado. Na terminologia do AEM, uma &quot;instância&quot; é uma cópia do AEM executada em um servidor no modo de criação ou publicação. Você precisa de pelo menos duas [instâncias do AEM (um Autor e uma Publicação)](/help/sites-deploying/deploy.md) para executar os recursos de captura de dados do AEM Forms:
 
-   * **Autor**: uma instância do AEM usada para criar, carregar, editar conteúdo e administrar o site. Quando o conteúdo estiver pronto para entrar em funcionamento, ele será replicado para a instância de publicação.
-   * **Publish**: uma instância AEM que fornece o conteúdo publicado ao público pela Internet ou por uma rede interna.
+  * **Autor**: uma instância do AEM usada para criar, carregar, editar conteúdo e administrar o site. Quando o conteúdo estiver pronto para entrar em funcionamento, ele será replicado para a instância de publicação.
+  * **Publicar**: uma instância do AEM que serve o conteúdo publicado para o público através da Internet ou de uma rede interna.
 
 * Os requisitos de memória são atendidos. O pacote complementar do AEM Forms exige:
 
-   * 15 GB de espaço temporário para instalações baseadas no Microsoft Windows.
-   * 6 GB de espaço temporário para instalações baseadas em UNIX.
+  * 15 GB de espaço temporário para instalações baseadas no Microsoft Windows.
+  * 6 GB de espaço temporário para instalações baseadas em UNIX.
 
 * A replicação e a replicação inversa das instâncias de autor e publicação estão definidas. Para obter detalhes, consulte [Replicação](/help/sites-deploying/replication.md).
 * Para sistemas baseados em UNIX:
 
-   * Instale os seguintes pacotes de 32 bits da mídia de instalação:
+  * Instale os seguintes pacotes de 32 bits da mídia de instalação:
 
 <table>
  <tbody>
@@ -100,7 +103,7 @@ Antes de começar a instalar e configurar o recurso de captura de dados do AEM F
 
 * Instale o seguinte pacote de 64 bits a partir da mídia de instalação:
 
-   * libicu
+  * libicu
 
 * Instalar o [Microsoft Visual Studio 2019 32-bit Redistributable](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170).
 
@@ -119,17 +122,17 @@ O pacote complementar do AEM Forms é um aplicativo implantado no AEM. O pacote 
 1. Selecione o pacote e clique em **[!UICONTROL Instalar]**.
 
    Você também pode baixar o pacote através do link direto listado no artigo [versões do AEM Forms](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html).
-1. Após a instalação do pacote, você será solicitado a reiniciar a instância do AEM. **Não reinicie o servidor imediatamente.** Antes de parar o servidor AEM Forms, aguarde até que as mensagens ServiceEvent REGISTERED e ServiceEvent UNREGISTERED parem de aparecer no arquivo `[AEM-Installation-Directory]/crx-quickstart/logs/error.log` e o log fique estável.
+1. Depois que o pacote for instalado, você será solicitado a reiniciar a instância do AEM. **Não reinicie o servidor imediatamente.** Antes de parar o servidor do AEM Forms, aguarde até que as mensagens ServiceEvent REGISTERED e ServiceEvent UNREGISTERED parem de aparecer no arquivo `[AEM-Installation-Directory]/crx-quickstart/logs/error.log` e o log fique estável.
 
    >[!NOTE]
    >
-   > É recomendável usar o comando &quot;Ctrl + C&quot; para reiniciar o SDK. Reiniciar o SDK do AEM usando métodos alternativos, por exemplo, parar processos Java, pode levar a inconsistências no ambiente de desenvolvimento do AEM.
+   > É recomendável usar o comando &#39;Ctrl + C&#39; para reiniciar o SDK. Reiniciar o AEM SDK usando métodos alternativos, por exemplo, parar processos Java, pode levar a inconsistências no ambiente de desenvolvimento do AEM.
 
-1. Repita as etapas 1 a 7 em todas as instâncias de Autor e Publish.
+1. Repita as etapas de 1 a 7 em todas as instâncias de Autor e Publicação.
 
 ### (Somente para Windows) Instalação automática de redistribuíveis do Visual Studio {#automatic-installation-visual-studio-redistributables}
 
-Se você instalar uma instância AEM no modo elevado, os redistribuíveis do Visual Studio de 32 bits serão instalados automaticamente durante a instalação do pacote complementar do AEM Forms.
+Se você instalar uma instância do AEM no modo elevado, os redistribuíveis do Visual Studio de 32 bits serão instalados automaticamente durante a instalação do pacote complementar do AEM Forms.
 
 Para avaliar se os redistribuíveis do Visual Studio são instalados automaticamente, abra o arquivo `error.log` disponível no diretório `/crx-repository/logs/`. Os logs incluem a seguinte mensagem:
 
@@ -139,23 +142,23 @@ Se os redistribuíveis não forem instalados, os registros incluirão a seguinte
 
 `Current user does not have elevated privileges, aborting installation of redist <service name>`
 
-Para resolver o problema, reinicie o servidor AEM, instale o AEM no modo elevado e instale o pacote complementar do AEM Forms.
+Para resolver o problema, reinicie o servidor do AEM, instale o AEM no modo elevado e instale o pacote complementar do AEM Forms.
 
 Se a verificação de privilégio falhar, os logs incluirão a seguinte mensagem:
 
 `Privilege escalation check failed with error: <error message>`
 
-## Configurações de instalação do Post {#post-installation-configurations}
+## Configurações pós-instalação {#post-installation-configurations}
 
-O AEM Forms tem algumas configurações obrigatórias e opcionais. As configurações obrigatórias incluem a configuração de bibliotecas BouncyCastle e o agente de serialização. As configurações opcionais incluem a configuração do Dispatcher, do portal do Forms, do Adobe Sign, do Adobe Analytics e do Adobe Target.
+O AEM Forms tem algumas configurações obrigatórias e opcionais. As configurações obrigatórias incluem a configuração de bibliotecas BouncyCastle e o agente de serialização. As configurações opcionais incluem a configuração do dispatcher, o portal do Forms, o Adobe Sign, o Adobe Analytics e o Adobe Target.
 
 ### Configurações obrigatórias pós-instalação {#mandatory-post-installation-configurations}
 
 #### Configurar bibliotecas RSA e BouncyCastle  {#configure-rsa-and-bouncycastle-libraries}
 
-Execute as seguintes etapas em todas as instâncias do Autor e do Publish para inicializar e delegar as bibliotecas:
+Execute as seguintes etapas em todas as instâncias Autor e Publicar para inicializar, delegar as bibliotecas:
 
-1. Interrompa a instância subjacente do AEM.
+1. Pare a instância subjacente do AEM.
 1. Abra o arquivo `[AEM installation directory]\crx-quickstart\conf\sling.properties` para edição.
 
    Se você usou o `[AEM installation directory]\crx-quickstart\bin\start.bat` para iniciar o AEM, edite o sling.properties localizado em `[AEM_root]\crx-quickstart\`.
@@ -167,20 +170,20 @@ Execute as seguintes etapas em todas as instâncias do Autor e do Publish para i
    ```
 
 1. Salve e feche o arquivo e inicie a instância do AEM.
-1. Repita as etapas 1 a 4 em todas as instâncias de Autor e Publish.
+1. Repita as etapas 1 a 4 em todas as instâncias Autor e Publicar.
 
 #### Configurar o agente de serialização {#configure-the-serialization-agent}
 
-Execute as seguintes etapas em todas as instâncias do Autor e do Publish para adicionar o pacote ao arquivo de inclui na lista de permissões:
+Execute as seguintes etapas em todas as instâncias de Autor e Publicação para adicionar o pacote ao incluo na lista de permissões:
 
-1. Abra o Gerenciador de configuração do AEM em uma janela do navegador. A URL padrão é `https://'[server]:[port]'/system/console/configMgr`.
+1. Abra o AEM Configuration Manager em uma janela do navegador. A URL padrão é `https://'[server]:[port]'/system/console/configMgr`.
 1. Pesquise por **com.adobe.cq.deserfw.impl.DeserializationFirewallImpl.name** e abra a configuração.
-1. Adicione o pacote **sun.util.calendar** ao campo **incluir na lista de permissões**. Clique em **Salvar**.
-1. Repita as etapas 1 a 3 em todas as instâncias de Autor e Publish.
+1. Adicione o pacote **sun.util.calendar** ao campo **incluo na lista de permissões**. Clique em **Salvar**.
+1. Repita as etapas 1 a 3 em todas as instâncias Autor e Publicar.
 
 ### Configurações pós-instalação opcionais {#optional-post-installation-configurations}
 
-#### Configurar Dispatcher {#configure-dispatcher}
+#### Configurar o Dispatcher {#configure-dispatcher}
 
 O Dispatcher é uma ferramenta de balanceamento de carga e/ou cache do Adobe Experience Manager que pode ser usada em conjunto com um servidor Web de classe empresarial. Se você usa o [Dispatcher](https://helpx.adobe.com/pt/experience-manager/dispatcher/using/dispatcher-configuration.html), execute as seguintes configurações para o AEM Forms:
 
@@ -198,14 +201,14 @@ O Dispatcher é uma ferramenta de balanceamento de carga e/ou cache do Adobe Exp
 
 #### Configurar cache {#configure-cache}
 
-O cache é um mecanismo para reduzir os tempos de acesso aos dados, reduzir a latência e melhorar as velocidades de entrada/saída (E/S). O cache de formulários adaptáveis armazena somente o conteúdo em HTML e a estrutura JSON de um formulário adaptável sem salvar os dados pré-preenchidos. Ajuda a reduzir o tempo necessário para renderizar um formulário adaptável.
+O cache é um mecanismo para reduzir os tempos de acesso aos dados, reduzir a latência e melhorar as velocidades de entrada/saída (E/S). O cache de formulários adaptáveis armazena somente o conteúdo do HTML e a estrutura JSON de um formulário adaptável sem salvar os dados preenchidos previamente. Ajuda a reduzir o tempo necessário para renderizar um formulário adaptável.
 
 * Ao usar o cache de formulários adaptáveis, use o [AEM Dispatcher](https://helpx.adobe.com/pt/experience-manager/dispatcher/using/dispatcher-configuration.html) para armazenar em cache bibliotecas de clientes (CSS e JavaScript) de um formulário adaptável.
 * Ao desenvolver componentes personalizados, mantenha o cache de formulários adaptáveis desativado no servidor usado para desenvolvimento.
 
 Execute as seguintes etapas para configurar o cache de formulários adaptáveis:
 
-1. Vá para o gerenciador de configuração do console da Web AEM em https://&#39;[server]:[port]&#39;/system/console/configMgr.
+1. Vá para o gerenciador de configuração do console da Web do AEM em https://&#39;[server]:[port]&#39;/system/console/configMgr.
 1. Clique em **Configuração do canal da Web do formulário adaptável e da comunicação interativa** para editar seus valores de configuração. Na caixa de diálogo Editar valores de configuração, especifique o número máximo de formulários ou documentos que uma instância do servidor do AEM Forms pode armazenar em cache no campo **Número de Forms Adaptável**. O valor padrão é 100. Clique em **Salvar**.
 
    >[!NOTE]
@@ -220,9 +223,9 @@ Você pode ativar a comunicação SSL para o Modelo de dados de formulário. Par
 
 #### Configurar Adobe Sign {#configure-adobe-sign}
 
-O Adobe Sign habilita fluxos de trabalho de assinatura eletrônica para formulários adaptáveis. As assinaturas eletrônicas melhoram os fluxos de trabalho para processar documentos para áreas jurídicas, de vendas, de folha de pagamento, de gerenciamento de recursos humanos e muito mais.
+O Adobe Sign habilita workflows de assinatura eletrônica para formulários adaptáveis. As assinaturas eletrônicas melhoram os fluxos de trabalho para processar documentos para áreas jurídicas, de vendas, de folha de pagamento, de gerenciamento de recursos humanos e muito mais.
 
-Em um cenário típico de Adobe Sign e formulários adaptáveis, um usuário preenche um formulário adaptável para **solicitar um serviço**. Por exemplo, um aplicativo de cartão de crédito e um formulário de benefícios para o cidadão. Quando um usuário preenche, envia e assina o formulário de aplicativo, ele é enviado ao provedor de serviços para que seja tomada uma nova ação. O provedor de serviços analisa o aplicativo e usa o Adobe Sign para marcar o aplicativo como aprovado. Para habilitar fluxos de trabalho de assinatura eletrônica semelhantes, é possível integrar o Adobe Sign com o AEM Forms.
+Em um cenário típico do Adobe Sign e de formulários adaptáveis, um usuário preenche um formulário adaptável para **solicitar um serviço**. Por exemplo, um aplicativo de cartão de crédito e um formulário de benefícios para o cidadão. Quando um usuário preenche, envia e assina o formulário de aplicativo, ele é enviado ao provedor de serviços para que seja tomada uma nova ação. O provedor de serviços revisa o aplicativo e usa o Adobe Sign para marcar o aplicativo como aprovado. Para habilitar fluxos de trabalho de assinatura eletrônica semelhantes, é possível integrar o Adobe Sign ao AEM Forms.
 
 Para usar o Adobe Sign com o AEM Forms, [Integre o Adobe Sign com o AEM Forms](/help/forms/using/adobe-sign-integration-adaptive-forms.md).
 
@@ -234,7 +237,7 @@ Para usar o Adobe Analytics com AEM Forms, consulte [Configuração de análises
 
 #### Integrar o Adobe Target {#integrate-adobe-target}
 
-Seus clientes provavelmente abandonarão um formulário se a experiência que ele oferece não for cativante. Embora seja frustrante para os clientes, também pode aumentar o volume de suporte e o custo para a sua organização. É crítico e desafiador identificar e fornecer a experiência certa ao cliente que aumente a taxa de conversão. A AEM Forms é a chave para esse problema.
+Seus clientes provavelmente abandonarão um formulário se a experiência que ele oferece não for cativante. Embora seja frustrante para os clientes, também pode aumentar o volume de suporte e o custo para a sua organização. É crítico e desafiador identificar e fornecer a experiência certa ao cliente que aumente a taxa de conversão. O AEM Forms contém a chave para esse problema.
 
 O AEM forms é integrado ao Adobe Target, uma solução da Adobe Marketing Cloud, para fornecer experiências personalizadas e envolventes ao cliente em vários canais digitais. Para usar o Adobe Target para testar formulários adaptáveis A/B, [Integre o Adobe Target ao AEM Forms](/help/forms/using/ab-testing-adaptive-forms.md#setupandintegratetargetinaemforms).
 
@@ -243,5 +246,5 @@ O AEM forms é integrado ao Adobe Target, uma solução da Adobe Marketing Cloud
 Você configurou um ambiente para usar os recursos de captura de dados do AEM Forms. Agora, as próximas etapas para usar o recurso são:
 
 * [Criar o primeiro formulário adaptável](/help/forms/using/create-your-first-adaptive-form.md)
-* [Criar o primeiro formulário de PDF](https://www.adobe.com/go/learn_aemforms_designer_quick_start_65)
+* [Criar o primeiro formulário do PDF](https://www.adobe.com/go/learn_aemforms_designer_quick_start_65)
 * [Introdução ao HTML5 Forms](/help/forms/using/introduction.md)

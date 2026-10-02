@@ -11,11 +11,9 @@ role: User, Developer
 feature: Adaptive Forms,Foundation Components
 source-git-commit: 8a77756e8ba771c8de9950c2323bef8f23cc59b4
 workflow-type: tm+mt
-source-wordcount: '1702'
+source-wordcount: '1744'
 ht-degree: 0%
-
 ---
-
 # Criar aparências personalizadas para campos de formulário adaptáveis{#create-custom-appearances-for-adaptive-form-fields}
 
 ## Introdução {#introduction}
@@ -30,7 +28,7 @@ Primeiro, vamos analisar os termos e conceitos principais usados neste artigo.
 
 O **plug-in jQuery** fornece um mecanismo padrão, baseado na estrutura de widget jQuery, para implementar uma aparência alternativa.
 
-**ClientLib** Um sistema de bibliotecas do lado do cliente no processamento AEM do lado do cliente orientado por código JavaScript e CSS complexo. Para obter mais informações, consulte Uso de bibliotecas do lado do cliente.
+**ClientLib** Um sistema de bibliotecas do lado do cliente no processamento do lado do cliente do AEM orientado por código JavaScript e CSS complexo. Para obter mais informações, consulte Uso de bibliotecas do lado do cliente.
 
 **Arquétipo** Um kit de ferramentas de modelos de projeto Maven definido como um padrão ou modelo original para projetos Maven. Para obter mais informações, consulte Introdução aos arquétipos.
 
@@ -67,7 +65,7 @@ O comando baixa as informações dos plug-ins Maven e do arquétipo no repositó
 * **versão**: versão para o projeto Maven gerado.
 * **pacote**: pacote usado para a estrutura de arquivo.
 * **artifactName**: nome do artefato do pacote AEM gerado.
-* **packageGroup**: grupo do pacote do AEM gerado.
+* **packageGroup**: grupo de pacotes do pacote AEM gerado.
 * **widgetName**: nome da aparência usado para referência.
 
 O projeto gerado tem a seguinte estrutura:
@@ -126,7 +124,7 @@ Depois que o modelo do projeto for criado, faça as seguintes alterações, conf
   </tr>
   <tr>
    <td><code>render</code></td>
-   <td>A função de renderização retorna o objeto jQuery para o elemento de HTML padrão do widget. O elemento de HTML padrão deve ser do tipo focalizável. Por exemplo, <code>&lt;a&gt;</code>, <code>&lt;input&gt;</code> e <code>&lt;li&gt;</code>. O elemento retornado é usado como <code>$userControl</code>. Se <code>$userControl</code> especificar a restrição acima, as funções da classe <code>AbstractWidget</code> funcionarão como esperado, caso contrário algumas das APIs comuns (foco, clique) exigirão alterações. </td>
+   <td>A função de renderização retorna o objeto jQuery para o elemento HTML padrão do widget. O elemento HTML padrão deve ser do tipo focalizável. Por exemplo, <code>&lt;a&gt;</code>, <code>&lt;input&gt;</code> e <code>&lt;li&gt;</code>. O elemento retornado é usado como <code>$userControl</code>. Se <code>$userControl</code> especificar a restrição acima, as funções da classe <code>AbstractWidget</code> funcionarão como esperado, caso contrário algumas das APIs comuns (foco, clique) exigirão alterações. </td>
   </tr>
   <tr>
    <td><code>getEventMap</code></td>
@@ -173,7 +171,7 @@ O projeto de amostra gerado pelo arquétipo Maven cria automaticamente as biblio
 
 ### Criar e instalar {#build-and-install}
 
-Para construir o projeto, execute o seguinte comando no shell para gerar um pacote do CRX que precise ser instalado no servidor AEM.
+Para criar o projeto, execute o seguinte comando no shell para gerar um pacote do CRX que precise ser instalado no servidor do AEM.
 
 `mvn clean install`
 
@@ -311,7 +309,7 @@ Agora vamos ver um exemplo para criar uma aparência personalizada para que um c
 
    `mvn clean install`
 
-1. Instale o pacote usando o Gerenciador de pacotes AEM.
+1. Instale o pacote usando o Gerenciador de pacotes do AEM.
 
 1. Abra o formulário adaptável no modo de edição no qual deseja aplicar a aparência personalizada e faça o seguinte:
 

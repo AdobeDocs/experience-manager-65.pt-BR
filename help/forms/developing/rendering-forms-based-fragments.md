@@ -1,22 +1,25 @@
 ---
 title: Renderização do Forms com base em fragmentos
+
 description: Use o serviço Forms para renderizar formulários com base em fragmentos criados usando o Designer.
+
+
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
+
 role: Developer
 exl-id: febf5350-3fc5-48c0-8bc5-198daff15936
 solution: Experience Manager, Experience Manager Forms
+
 feature: Adaptive Forms,Document Services,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '2189'
+source-wordcount: '2204'
 ht-degree: 0%
-
 ---
-
 # Renderização do Forms com base em fragmentos {#rendering-forms-based-on-fragments}
 
 **Exemplos e exemplos neste documento são somente para AEM Forms no ambiente JEE.**
@@ -36,12 +39,12 @@ Estas são as vantagens de usar fragmentos:
 * **Reutilização de conteúdo**: você pode usar fragmentos para reutilizar conteúdo em vários designs de formulário. Quando é necessário usar parte do mesmo conteúdo em vários formulários, é mais rápido e simples usar um fragmento do que copiar ou recriar o conteúdo. O uso de fragmentos também garante que as partes usadas com frequência de um design de formulário tenham conteúdo e aparência consistentes em todos os formulários de referência.
 * **Atualizações globais**: você pode usar fragmentos para fazer alterações globais em vários formulários apenas uma vez, em um único arquivo. Você pode alterar o conteúdo, os objetos de script, as associações de dados, o layout ou os estilos em um fragmento e todos os formulários XDP que fazem referência ao fragmento refletirão as alterações.
 * Por exemplo, um elemento comum em muitos formulários pode ser um bloco de endereço que inclui um objeto de lista suspensa para o país. Se precisar atualizar os valores do objeto da lista suspensa, abra vários formulários para fazer as alterações. Se você incluir o bloco de endereços em um fragmento, só será necessário abrir um arquivo de fragmento para fazer as alterações.
-* Para atualizar um fragmento em um formulário PDF, é necessário salvar novamente o formulário no Designer.
+* Para atualizar um fragmento em um formulário do PDF, você deve salvar o formulário novamente no Designer.
 * **Criação de formulário compartilhado**: você pode usar fragmentos para compartilhar a criação de formulários entre vários recursos. Desenvolvedores de formulários com experiência em script ou outros recursos avançados do Designer podem desenvolver e compartilhar fragmentos que aproveitam os scripts e as propriedades dinâmicas. Os designers de formulário podem usar esses fragmentos para criar designs de formulário e garantir que todas as partes de um formulário tenham uma aparência e funcionalidade consistentes em vários formulários criados por várias pessoas.
 
 ### Montagem de um design de formulário montado usando fragmentos {#assembling-a-form-design-assembled-using-fragments}
 
-Você pode montar um design de formulário para passá-lo para o serviço Forms com base em vários fragmentos. Para montar vários fragmentos, use o serviço Assembler. Para ver um exemplo de uso do serviço de Montagem para criar um design de formulário usado por outros serviços do Forms (o serviço de Saída), consulte [Criação de Documentos de PDF usando Fragmentos](/help/forms/developing/creating-document-output-streams.md#creating-pdf-documents-using-fragments). Em vez de usar o Serviço de saída, você pode executar o mesmo fluxo de trabalho usando o serviço Forms.
+Você pode montar um design de formulário para passá-lo para o serviço Forms com base em vários fragmentos. Para montar vários fragmentos, use o serviço Assembler. Para ver um exemplo de uso do serviço de Montagem para criar um design de formulário que é usado por outros serviços do Forms (o serviço de Saída), consulte [Criação de documentos do PDF usando fragmentos](/help/forms/developing/creating-document-output-streams.md#creating-pdf-documents-using-fragments). Em vez de usar o Serviço de saída, você pode executar o mesmo fluxo de trabalho usando o serviço Forms.
 
 Ao usar o serviço Assembler, você está transmitindo um design de formulário que foi montado usando fragmentos. O design do formulário criado não faz referência a outros fragmentos. Por outro lado, este tópico discute a transmissão de um design de formulário que faz referência a outros fragmentos para o serviço do Forms. No entanto, o design do formulário não foi montado pela Assembler. Ele foi criado no Designer.
 
@@ -81,7 +84,7 @@ Ao renderizar um formulário com base em fragmentos, você deve fazer referênci
 
 **Renderizar o formulário**
 
-Um formulário baseado em fragmentos pode ser renderizado da mesma maneira que formulários não fragmentados. Ou seja, você pode renderizar o formulário como PDF, HTML ou Guias de formulário (obsoleto). O exemplo nesta seção renderiza um formulário com base em fragmentos como um formulário PDF interativo. (Consulte [Renderização de PDF forms interativos](/help/forms/developing/rendering-interactive-pdf-forms.md).)
+Um formulário baseado em fragmentos pode ser renderizado da mesma maneira que formulários não fragmentados. Ou seja, você pode renderizar o formulário como PDF, HTML ou Guias de formulário (obsoleto). O exemplo nesta seção renderiza um formulário com base em fragmentos como um formulário interativo do PDF. (Consulte [Renderização do PDF forms Interativo](/help/forms/developing/rendering-interactive-pdf-forms.md).)
 
 **Gravar o fluxo de dados de formulário no navegador Web cliente**
 
@@ -99,7 +102,7 @@ Quando o serviço Forms renderiza um formulário, ele retorna um fluxo de dados 
 
 [Início rápido da API de serviço do Forms](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
-[Renderização de PDF forms interativos](/help/forms/developing/rendering-interactive-pdf-forms.md)
+[Renderização do PDF forms interativo](/help/forms/developing/rendering-interactive-pdf-forms.md)
 
 [Criação de aplicações Web que renderizam o Forms](/help/forms/developing/creating-web-applications-renders-forms.md)
 
@@ -181,7 +184,7 @@ Renderize um formulário com base em fragmentos usando a API do Forms (serviço 
 
    * Um valor de cadeia de caracteres que especifica o nome de design do formulário, incluindo a extensão de nome de arquivo. Se você referenciar um design de formulário que faça parte de um aplicativo do Forms, certifique-se de especificar o caminho completo, como `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
    * Um objeto `BLOB` que contém dados para mesclar com o formulário. Se não quiser mesclar dados, passe `null`.
-   * Um objeto `PDFFormRenderSpec` que armazena opções de tempo de execução. A opção PDF marcado não poderá ser definida se o documento de entrada for um documento PDF. Se o arquivo de entrada for um arquivo XDP, a opção PDF com tags poderá ser definida.
+   * Um objeto `PDFFormRenderSpec` que armazena opções de tempo de execução. A opção PDF marcada não pode ser definida se o documento de entrada for um documento PDF. Se o arquivo de entrada for um arquivo XDP, a opção PDF marcada poderá ser definida.
    * Um objeto `URLSpec` que contém valores de URI exigidos pelo serviço Forms.
    * Um objeto `java.util.HashMap` que armazena anexos de arquivo. Este é um parâmetro opcional e você pode especificar `null` se não quiser anexar arquivos ao formulário.
    * Um objeto `com.adobe.idp.services.holders.BLOBHolder` vazio preenchido pelo método. Esse parâmetro é usado para armazenar o formulário renderizado.

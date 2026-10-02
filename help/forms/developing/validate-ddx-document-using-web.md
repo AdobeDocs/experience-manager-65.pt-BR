@@ -1,21 +1,24 @@
 ---
 title: Validar um documento DDX usando a API do serviço Web
+
 description: Use a API de serviço do Assembler para validar um documento DDX.
+
+
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/validating_ddx_documents
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
+
 role: Developer
 exl-id: 069e5b10-ab93-4492-a70d-6a0d462105a6
 solution: Experience Manager, Experience Manager Forms
+
 feature: Adaptive Forms,Document Services,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '634'
+source-wordcount: '642'
 ht-degree: 0%
-
 ---
-
 # Validar um documento DDX usando a API do serviço Web {#validate-a-ddx-document-using-theweb-service-api}
 
 **Exemplos e exemplos neste documento são somente para AEM Forms no ambiente JEE.**
@@ -30,7 +33,7 @@ Valide um documento DDX usando a API de serviço do Assembler (serviço Web):
    >
    >Substitua localhost pelo endereço IP do Forms Server.
 
-1. Crie um cliente PDF Assembler.
+1. Crie um cliente do PDF Assembler.
 
    * Crie um objeto `AssemblerServiceClient` usando seu construtor padrão.
    * Crie um objeto `AssemblerServiceClient.Endpoint.Address` usando o construtor `System.ServiceModel.EndpointAddress`. Transmita um valor de string que especifique o WSDL para o serviço AEM Forms (por exemplo, `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). Você não precisa usar o atributo `lc_version`. Esse atributo é usado quando você cria uma referência de serviço.
@@ -38,10 +41,10 @@ Valide um documento DDX usando a API de serviço do Assembler (serviço Web):
    * Defina o campo `MessageEncoding` do objeto `System.ServiceModel.BasicHttpBinding` como `WSMessageEncoding.Mtom`. Esse valor garante que a MTOM seja usada.
    * Ative a autenticação HTTP básica executando as seguintes tarefas:
 
-      * Atribua o nome de usuário dos formulários AEM ao campo `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
-      * Atribua o valor de senha correspondente ao campo `AssemblerServiceClient.ClientCredentials.UserName.Password`.
-      * Atribua o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Atribua o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
+     * Atribua o nome de usuário dos formulários AEM ao campo `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
+     * Atribua o valor de senha correspondente ao campo `AssemblerServiceClient.ClientCredentials.UserName.Password`.
+     * Atribua o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Atribua o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Consulte um documento DDX existente.
 
@@ -62,7 +65,7 @@ Valide um documento DDX usando a API de serviço do Assembler (serviço Web):
    Chame o método `invokeDDX` do objeto `AssemblerServiceClient` e passe os seguintes valores:
 
    * Um objeto `BLOB` que representa o documento DDX.
-   * O valor `null` do objeto `Map` que geralmente armazena documentos PDF.
+   * O valor `null` do objeto `Map` que geralmente armazena documentos do PDF.
    * Um objeto `AssemblerOptionSpec` que especifica opções de tempo de execução.
 
    O método `invokeDDX` retorna um objeto `AssemblerResult` que contém informações que especificam se o documento DDX é válido.
@@ -73,7 +76,7 @@ Valide um documento DDX usando a API de serviço do Assembler (serviço Web):
    * Crie um objeto `BLOB` que armazene informações de log obtendo o valor do membro de dados `jobLog` do objeto `AssemblerResult`.
    * Crie uma matriz de bytes que armazene o conteúdo do objeto `BLOB`. Popular a matriz de bytes obtendo o valor do campo `MTOM` do objeto `BLOB`.
    * Crie um objeto `System.IO.BinaryWriter` invocando seu construtor e transmitindo o objeto `System.IO.FileStream`.
-   * Grave o conteúdo da matriz de bytes em um arquivo PDF, chamando o método `Write` do objeto `System.IO.BinaryWriter` e transmitindo a matriz de bytes.
+   * Grave o conteúdo da matriz de bytes em um arquivo PDF chamando o método `Write` do objeto `System.IO.BinaryWriter` e transmitindo a matriz de bytes.
 
    >[!NOTE]
    >

@@ -10,11 +10,9 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '293'
+source-wordcount: '294'
 ht-degree: 3%
-
 ---
-
 # Personalizar a listagem de instâncias de processo {#customizing-the-listing-of-process-instances}
 
 A lista de instâncias de processos é exibida na guia Rastreamento do espaço de trabalho do AEM Forms.

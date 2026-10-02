@@ -1,22 +1,25 @@
 ---
 title: Criação de aplicações Web que renderizam o Forms
+
 description: Crie uma aplicação baseada na web que use servlets Java para chamar o serviço Forms e renderizar formulários. O servlet Java serve como o link entre o serviço Forms que retorna um formulário e um navegador Web cliente.
+
+
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
+
 role: Developer
 exl-id: 85e00003-8c8b-463a-b728-66af174be295
 solution: Experience Manager, Experience Manager Forms
+
 feature: Adaptive Forms,Workbench,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1832'
+source-wordcount: '1870'
 ht-degree: 0%
-
 ---
-
 # Criação de aplicações Web que renderizam o Forms {#creating-web-applications-thatrenders-forms}
 
 **Exemplos e exemplos neste documento são somente para AEM Forms no ambiente JEE.**
@@ -82,7 +85,7 @@ Para criar aplicativos baseados na Web que renderizem formulários com base em f
 
 ### Criação de um projeto web {#creating-a-web-project}
 
-A primeira etapa para criar uma aplicação Web que contenha um servlet Java que possa chamar o serviço Forms é criar um projeto Web. O Java IDE no qual este documento se baseia é o Eclipse 3.3. Usando o Eclipse IDE, crie um projeto da Web e adicione os arquivos JAR necessários ao seu projeto. Finalmente, adicione uma página de HTML chamada *index.html* e um servlet Java ao seu projeto.
+A primeira etapa para criar uma aplicação Web que contenha um servlet Java que possa chamar o serviço Forms é criar um projeto Web. O Java IDE no qual este documento se baseia é o Eclipse 3.3. Usando o Eclipse IDE, crie um projeto da Web e adicione os arquivos JAR necessários ao seu projeto. Finalmente, adicione uma página do HTML chamada *index.html* e um servlet Java ao seu projeto.
 
 A lista a seguir especifica os arquivos JAR que devem ser adicionados ao projeto da Web:
 
@@ -111,7 +114,7 @@ Para obter o local desses arquivos JAR, consulte [Incluindo arquivos da bibliote
 1. Expanda a pasta **Web**, selecione **Servlet** e clique em **Avançar**.
 1. Na caixa de diálogo Criar Servlet, digite `RenderFormFragment` para o nome do servlet e clique em **Concluir**.
 
-**Para adicionar uma página de HTML ao seu projeto:**
+**Para adicionar uma página do HTML ao seu projeto:**
 
 1. Na janela Project Explorer, clique com o botão direito do mouse no projeto `FragmentsWebApplication` e selecione **Novo** > **Outros**.
 1. Expanda a pasta **Web**, selecione **HTML** e clique em **Avançar**.
@@ -119,7 +122,7 @@ Para obter o local desses arquivos JAR, consulte [Incluindo arquivos da bibliote
 
 >[!NOTE]
 >
->Para obter informações sobre como criar a página de HTML que chama o servlet Java `RenderFormFragment`, consulte [Criando a página da Web](/help/forms/developing/rendering-forms.md#creating-the-web-page).
+>Para obter informações sobre como criar a página do HTML que chama o servlet Java `RenderFormFragment`, consulte [Criando a página da Web](/help/forms/developing/rendering-forms.md#creating-the-web-page).
 
 ### Criando lógica da aplicação Java para o servlet {#creating-java-application-logic-for-the-servlet}
 
@@ -143,7 +146,7 @@ Normalmente, você não colocaria o código do cliente em um método `doGet` ou 
 Para renderizar um formulário com base em fragmentos usando a API de serviço do Forms, execute as seguintes tarefas:
 
 1. Inclua arquivos JAR do cliente, como adobe-forms-client.jar, no caminho de classe do projeto Java. Para obter informações sobre o local desses arquivos, consulte [Incluindo arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
-1. Recupere o valor do botão de opção enviado do formulário HTML e especifique se os dados americanos ou canadenses devem ser usados. Se o American for enviado, crie um `com.adobe.idp.Document` que armazene dados na *Ordem de Compra US.xml*. Da mesma forma, se for canadense, crie um `com.adobe.idp.Document` que armazene dados no arquivo *Purchase Order Canada.xml*.
+1. Recupere o valor do botão de opção enviado do formulário do HTML e especifique se os dados americanos ou canadenses devem ser usados. Se o American for enviado, crie um `com.adobe.idp.Document` que armazene dados na *Ordem de Compra US.xml*. Da mesma forma, se for canadense, crie um `com.adobe.idp.Document` que armazene dados no arquivo *Purchase Order Canada.xml*.
 1. Crie um objeto `ServiceClientFactory` que contenha propriedades de conexão. (Consulte [Definindo propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
 1. Crie um objeto `FormsServiceClient` usando seu construtor e transmitindo o objeto `ServiceClientFactory`.
 1. Crie um objeto `URLSpec` que armazene valores de URI usando seu construtor.
@@ -307,9 +310,9 @@ O código de exemplo a seguir representa o servlet Java que chama o serviço For
 
 ### Criação da página da Web {#creating-the-web-page}
 
-A página da Web index.html fornece um ponto de entrada para o servlet Java e chama o serviço Forms. Esta página da Web é um formulário HTML básico que contém dois botões de opção e um botão de envio. O nome dos botões de opção é radio. Quando o usuário clica no botão enviar, os dados do formulário são postados no servlet Java `RenderFormFragment`.
+A página da Web index.html fornece um ponto de entrada para o servlet Java e chama o serviço Forms. Esta página da Web é um formulário básico do HTML que contém dois botões de opção e um botão de envio. O nome dos botões de opção é radio. Quando o usuário clica no botão enviar, os dados do formulário são postados no servlet Java `RenderFormFragment`.
 
-O servlet Java captura os dados publicados na página HTML usando o seguinte código Java:
+O servlet Java captura os dados publicados na página do HTML usando o seguinte código Java:
 
 ```java
              Document oInputData = null;
@@ -329,7 +332,7 @@ O servlet Java captura os dados publicados na página HTML usando o seguinte có
              }
 ```
 
-O código de HTML a seguir está no arquivo index.html criado durante a configuração do ambiente de desenvolvimento. (Consulte [Criando um projeto da Web](/help/forms/developing/rendering-forms.md#creating-a-web-project).)
+O código HTML a seguir está no arquivo index.html criado durante a configuração do ambiente de desenvolvimento. (Consulte [Criando um projeto da Web](/help/forms/developing/rendering-forms.md#creating-a-web-project).)
 
 ```xml
  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">

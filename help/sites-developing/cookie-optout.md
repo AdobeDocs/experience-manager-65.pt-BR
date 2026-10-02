@@ -11,11 +11,9 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '549'
-ht-degree: 2%
-
+source-wordcount: '557'
+ht-degree: 4%
 ---
-
 # Configuração do uso de cookies{#configuring-cookie-usage}
 
 O AEM fornece um serviço que permite configurar e controlar como os cookies são usados com suas páginas da Web:
@@ -27,7 +25,7 @@ Use este recurso para garantir que suas páginas estejam em conformidade com o c
 
 ## Configuração de cookies permitidos {#configuring-allowed-cookies}
 
-Configure o Serviço de recusa do Adobe Granite para especificar como os cookies são usados em suas páginas da Web. A tabela a seguir descreve as propriedades que podem ser configuradas.
+Configure o serviço de cancelamento do Adobe Granite para especificar como os cookies são usados em suas páginas da Web. A tabela a seguir descreve as propriedades que podem ser configuradas.
 
 Para configurar o serviço, você pode usar o [Console da Web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) ou [adicionar uma configuração OSGi ao repositório](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository). A tabela a seguir descreve as propriedades necessárias para qualquer método. Para uma configuração OSGi, o PID do serviço é `com.adobe.granite.optout`.
 
@@ -39,7 +37,7 @@ Para configurar o serviço, você pode usar o [Console da Web](/help/sites-deplo
 
 ## Validação do uso de cookies {#validating-cookie-usage}
 
-Use o JavaScript do lado do cliente para chamar o Serviço de recusa do Adobe Granite para verificar se você pode usar um cookie. Use o objeto de JavaScript Granite.OptOutUtil para executar qualquer uma das seguintes tarefas:
+Use o JavaScript do lado do cliente para chamar o Serviço de não participação do Adobe Granite e verificar se você pode usar um cookie. Use o objeto de JavaScript Granite.OptOutUtil para executar qualquer uma das seguintes tarefas:
 
 * Obtenha uma lista de nomes de cookies que indicam que esse usuário não consente em usar cookies para fins de rastreamento.
 * Obtenha uma lista de cookies que podem ser usados.

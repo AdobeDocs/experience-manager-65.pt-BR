@@ -1,29 +1,32 @@
 ---
 title: Renderização do Forms no cliente
-description: Otimizar a entrega de conteúdo PDF e melhorar a capacidade do serviço Forms de lidar com a carga da rede usando o recurso de renderização do cliente do Acrobat ou Adobe Reader
+
+description: Otimizar a entrega de conteúdo do PDF e melhorar a capacidade do serviço Forms de lidar com a carga da rede usando o recurso de renderização do cliente do Acrobat ou Adobe Reader
+
+
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
+
 role: Developer
 exl-id: e485980d-f200-46b7-9284-c9996003aa47
 solution: Experience Manager, Experience Manager Forms
+
 feature: Adaptive Forms,Document Services,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1690'
+source-wordcount: '1715'
 ht-degree: 0%
-
 ---
-
 # Renderização do Forms no cliente {#rendering-forms-at-the-client}
 
 **Exemplos e exemplos neste documento são somente para AEM Forms no ambiente JEE.**
 
 ## Renderização do Forms no cliente {#rendering-forms-at-the-client-inner}
 
-Você pode otimizar a entrega de conteúdo de PDF e melhorar a capacidade do serviço Forms de lidar com a carga da rede usando o recurso de renderização do cliente do Acrobat ou Adobe Reader. Esse processo é conhecido como renderização de um formulário no cliente. Para renderizar um formulário no cliente, o dispositivo cliente (normalmente um navegador da Web) deve usar o Acrobat 7.0, Adobe Reader 7.0 ou posterior.
+Você pode otimizar a entrega de conteúdo do PDF e melhorar a capacidade do serviço Forms de lidar com a carga da rede usando o recurso de renderização do cliente do Acrobat ou Adobe Reader. Esse processo é conhecido como renderização de um formulário no cliente. Para renderizar um formulário no cliente, o dispositivo cliente (normalmente um navegador da Web) deve usar o Acrobat 7.0 ou o Adobe Reader 7.0 ou posterior.
 
 As alterações em um formulário resultante da execução de script do lado do servidor não são refletidas em um formulário renderizado no cliente, a menos que o subformulário raiz contenha o atributo `restoreState` definido como `auto`. Para obter mais informações sobre este atributo, consulte [Forms Designer.](https://www.adobe.com/go/learn_aemforms_designer_63)
 
@@ -53,17 +56,17 @@ Antes de executar programaticamente uma operação da API do cliente de serviço
 
 Defina a opção de tempo de execução de renderização do cliente para renderizar um formulário no cliente definindo a opção de tempo de execução `RenderAtClient` como `true`. Isso resulta no formulário ser entregue ao dispositivo cliente onde é renderizado. Se `RenderAtClient` for `auto` (valor padrão), o design do formulário determinará se ele será renderizado no cliente. O design do formulário deve ser um design de formulário com layout fluível.
 
-Uma opção opcional de tempo de execução que você pode definir é a opção `SeedPDF`. A opção `SeedPDF` combina o contêiner PDF (documento PDF de propagação) com o design do formulário e os dados XML. O design do formulário e os dados XML são entregues no Acrobat ou Adobe Reader, onde o formulário é renderizado. A opção `SeedPDF` pode ser usada quando o computador cliente não tem fontes que são usadas no formulário, como quando um usuário final não está licenciado para usar uma fonte que o proprietário do formulário está licenciado para usar.
+Uma opção opcional de tempo de execução que você pode definir é a opção `SeedPDF`. A opção `SeedPDF` combina o contêiner PDF (documento PDF de propagação) com o design do formulário e os dados XML. O design do formulário e os dados XML são entregues ao Acrobat ou Adobe Reader, onde o formulário é renderizado. A opção `SeedPDF` pode ser usada quando o computador cliente não tem fontes que são usadas no formulário, como quando um usuário final não está licenciado para usar uma fonte que o proprietário do formulário está licenciado para usar.
 
 Você pode usar o Designer para criar um arquivo PDF dinâmico simples para usar como um arquivo PDF de seed. As seguintes etapas são necessárias para executar essa tarefa:
 
-1. Determine se é necessário incorporar fontes no arquivo de seed PDF. O arquivo de PDF de propagação deve conter fontes adicionais exigidas pelo formulário que está sendo renderizado. Ao incorporar fontes no arquivo seed PDF, certifique-se de que você não esteja violando nenhum contrato de licenciamento de fontes. No Designer, é possível determinar se as fontes podem ser incorporadas legalmente. Ao salvar, se houver fontes que não podem ser incorporadas ao formulário, o Designer exibirá uma mensagem listando as fontes que não podem ser incorporadas. Esta mensagem não é exibida no Designer para documentos de PDF estáticos.
-1. Se você estiver criando o arquivo de PDF de propagação no Designer, é recomendável que, no mínimo, você adicione um campo de texto que contenha uma mensagem. A mensagem deve ser direcionada a usuários de versões anteriores do Adobe Reader informando que precisam do Acrobat 7.0 ou posterior, ou do Adobe Reader 7.0 ou posterior, para visualizar o documento.
-1. Salve o arquivo de PDF de seed como um arquivo de PDF dinâmico com a extensão de nome de arquivo de PDF.
+1. Determine se é necessário incorporar fontes no arquivo do seed PDF. O arquivo de seed PDF deve conter fontes adicionais exigidas pelo formulário que está sendo renderizado. Ao incorporar fontes no arquivo do seed PDF, verifique se você não está violando nenhum contrato de licenciamento de fontes. No Designer, é possível determinar se as fontes podem ser incorporadas legalmente. Ao salvar, se houver fontes que não podem ser incorporadas ao formulário, o Designer exibirá uma mensagem listando as fontes que não podem ser incorporadas. Esta mensagem não é exibida no Designer para documentos estáticos do PDF.
+1. Se você estiver criando o arquivo de seed PDF no Designer, é recomendável que, no mínimo, você adicione um campo de texto que contenha uma mensagem. A mensagem deve ser direcionada a usuários de versões anteriores do Adobe Reader informando que eles precisam do Acrobat 7.0 ou posterior ou do Adobe Reader 7.0 ou posterior para visualizar o documento.
+1. Salve o arquivo do seed PDF como um arquivo do Dynamic PDF com a extensão de nome de arquivo do PDF.
 
 >[!NOTE]
 >
->Não é necessário definir a opção de tempo de execução de seed PDF para renderizar um formulário no cliente. Se você não especificar um PDF de propagação, o serviço Forms cria um pdf de shell que não conterá objetos COS, mas conterá um invólucro de PDF com o conteúdo XDP real incorporado. As etapas nesta seção não definem a opção de tempo de execução de seed PDF. Para obter informações sobre objetos COS, consulte o Adobe PDF Reference guide.
+>Não é necessário definir a opção de tempo de execução de seed PDF para renderizar um formulário no cliente. Se você não especificar um PDF de propagação, o serviço Forms cria um pdf de shell que não conterá objetos COS, mas conterá um invólucro de PDF com o conteúdo XDP real incorporado. As etapas nesta seção não definem a opção de tempo de execução do seed PDF. Para obter informações sobre objetos COS, consulte o Adobe PDF Reference guide.
 
 **Renderizar um formulário no cliente**
 
@@ -164,7 +167,7 @@ Renderize um formulário no cliente usando a API do Forms (serviço Web):
    * Um objeto `PDFFormRenderSpec` que armazena opções de tempo de execução necessárias para renderizar um formulário no cliente.
    * Um objeto `URLSpec` que contém valores de URI exigidos pelo serviço Forms.
    * Um objeto `java.util.HashMap` que armazena anexos de arquivo. Este é um parâmetro opcional e você pode especificar `null` se não quiser anexar arquivos ao formulário.
-   * Um objeto `com.adobe.idp.services.holders.BLOBHolder` vazio preenchido pelo método. Esse parâmetro é usado para armazenar o formulário de PDF renderizado.
+   * Um objeto `com.adobe.idp.services.holders.BLOBHolder` vazio preenchido pelo método. Esse parâmetro é usado para armazenar o formulário PDF renderizado.
    * Um objeto `javax.xml.rpc.holders.LongHolder` vazio preenchido pelo método. (Esse argumento armazenará o número de páginas no formulário).
    * Um objeto `javax.xml.rpc.holders.StringHolder` vazio preenchido pelo método. (Esse argumento armazenará o valor do local).
    * Um objeto `com.adobe.idp.services.holders.FormsResultHolder` vazio que conterá os resultados desta operação.

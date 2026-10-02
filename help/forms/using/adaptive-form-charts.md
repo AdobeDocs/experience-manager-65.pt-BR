@@ -9,11 +9,9 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '2005'
+source-wordcount: '2045'
 ht-degree: 0%
-
 ---
-
 # Gráficos de formulário adaptável {#af-charts}
 
 ![Imagem_Herói](assets/charts_hero_image.jpg)
@@ -23,7 +21,7 @@ O pacote complementar do AEM Forms fornece um componente de gráfico pronto para
 
 1. Pizza
 1. Coluna
-1. Rosca
+1. Rosquinha
 1. Barra
 1. Linha
 1. Linha e ponto
@@ -36,7 +34,7 @@ Agora vamos ver como adicionar e configurar o componente de Gráfico:
 
 ## Adicionar gráfico {#add-chart}
 
-Por padrão, o componente Gráfico está disponível na barra lateral do AEM. Você pode arrastar e soltar o componente Gráfico da barra lateral AEM para o formulário ou documento adaptável no modo de criação. Quando você solta o componente, ele cria um espaço reservado para um gráfico.
+Por padrão, o componente Gráfico está disponível na barra lateral do AEM. Você pode arrastar e soltar o componente de Gráfico da barra lateral do AEM para o formulário ou documento adaptável no modo de criação. Quando você solta o componente, ele cria um espaço reservado para um gráfico.
 
 ## Configurar gráfico {#configure-chart}
 
@@ -149,10 +147,10 @@ Multiply(valueArray, category) {
 Depois de escrever uma função personalizada, faça o seguinte para disponibilizá-la para uso na configuração do gráfico:
 
 1. Adicione a função personalizada na biblioteca do cliente associada ao formulário ou documento adaptável.
-1. No CRXDE Lite, crie um nó nt:unstructured na pasta apps com as seguintes propriedades:
+1. No CRXDE Lite, crie um nó nt:unstructured na pasta de aplicativos com as seguintes propriedades:
    * Defina guideComponentType como fd/af/reduer. (obrigatório)
    * Defina o valor com um nome totalmente qualificado da função personalizada do JavaScript. (obrigatório)
-   * Defina jcr:description para um nome significativo. Ele aparece na lista suspensa **Usar função**. Por exemplo, **Multiplicar**.
+   * Defina jcr:description com um nome significativo. Ele aparece na lista suspensa **Usar função**. Por exemplo, **Multiplicar**.
    * Defina qtip para obter uma breve descrição da função. Ela aparece como uma dica de ferramenta ao passar o ponteiro sobre o nome da função na lista suspensa Usar função.
    * Clique em **Salvar tudo** para salvar a configuração.
    * A função agora está disponível para uso no gráfico.
@@ -173,7 +171,7 @@ A propriedade chartType especifica o tipo de gráfico. Os valores possíveis sã
 
 Considere que você configurou um gráfico de Coluna. No entanto, você também deseja fornecer aos usuários uma opção para selecionar um tipo de gráfico diferente em uma lista suspensa e redesenhar o gráfico. Você pode fazer isso usando a propriedade chartType em uma regra da seguinte maneira:
 
-1. Arraste e solte um componente de Lista suspensa da barra lateral AEM no formulário adaptável.
+1. Arraste e solte um componente de Lista suspensa da barra lateral do AEM no formulário adaptável.
 1. Selecione o componente e toque em ![Configurações](cmppr1.png).
 1. Especifique um título para a lista suspensa. Por exemplo, selecione o tipo de gráfico.
 1. Adicione tipos de gráficos compatíveis na seção Itens para preencher a lista suspensa. Clique em **Concluído**.

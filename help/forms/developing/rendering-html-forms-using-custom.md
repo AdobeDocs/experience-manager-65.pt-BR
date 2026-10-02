@@ -9,19 +9,18 @@ topic-tags: operations
 role: Developer
 exl-id: 5fa385a7-f030-4c0c-8938-0991d02ef361
 solution: Experience Manager, Experience Manager Forms
+
 feature: Adaptive Forms,Document Services,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1682'
+source-wordcount: '1693'
 ht-degree: 0%
-
 ---
-
 # Renderização do HTML Forms usando arquivos CSS personalizados {#rendering-html-forms-using-custom-css-files}
 
 **Exemplos e exemplos neste documento são somente para AEM Forms no ambiente JEE.**
 
-O serviço Forms renderiza formulários HTML em resposta a uma solicitação HTTP de um navegador da Web. Ao renderizar um formulário HTML, o serviço Forms pode fazer referência a um arquivo CSS personalizado. Você pode criar um arquivo CSS personalizado para atender aos requisitos da empresa e fazer referência a esse arquivo CSS ao usar o serviço Forms para renderizar formulários HTML.
+O serviço Forms renderiza formulários do HTML em resposta a uma solicitação HTTP de um navegador da Web. Ao renderizar um formulário HTML, o serviço Forms pode fazer referência a um arquivo CSS personalizado. É possível criar um arquivo CSS personalizado para atender aos requisitos da empresa e fazer referência a esse arquivo CSS ao usar o serviço do Forms para renderizar formulários do HTML.
 
 O serviço Forms analisa silenciosamente o arquivo CSS personalizado. Ou seja, o serviço Forms não relata erros que podem ser encontrados se o arquivo CSS personalizado não estiver em conformidade com os padrões CSS. Nessa situação, o serviço Forms ignora o estilo e continua com os estilos restantes no arquivo CSS.
 
@@ -29,15 +28,15 @@ A lista a seguir especifica estilos compatíveis com um arquivo CSS personalizad
 
 * **Pares de estilos do seletor de nível de classe**: se presentes em um arquivo CSS personalizado, os seletores usados no formulário HTML como estilos de classe são usados. Estilos de classe não utilizados são ignorados.
 * **Pares de estilos de seletor de nível de identificador**: todos os estilos de identificador serão usados se forem usados no formulário HTML.
-* **Pares de estilo do seletor de nível de elemento**: todos os estilos de elemento serão usados se forem usados no formato HTML.
+* **Pares de estilo do seletor de nível de elemento**: todos os estilos de elemento serão usados se forem usados no formulário HTML.
 * **Prioridade de Estilo**: a prioridade de estilo (como importante) é suportada e pode ser usada em um arquivo CSS personalizado.
 * **Tipo de mídia**: um ou mais pares de estilos do seletor podem ser encapsulados no estilo @media para definir o tipo de mídia. O serviço Forms não verifica se o tipo de mídia especificado é compatível. O tipo de mídia especificado no arquivo CSS personalizado é mesclado no formulário HTML.
 
-Você pode recuperar um arquivo CSS de amostra usando o aplicativo FormsIVS. Carregue o formulário, selecione-o na página Testar design de formulário e clique em Gerar CSS. Não é necessário definir o tipo de transformação de HTML antes de clicar no botão. Em seguida, selecione salvar. Você pode editar esse arquivo CSS para atender aos requisitos da sua empresa.
+Você pode recuperar um arquivo CSS de amostra usando o aplicativo FormsIVS. Carregue o formulário, selecione-o na página Testar design de formulário e clique em Gerar CSS. Não é necessário definir o tipo de transformação do HTML antes de clicar no botão. Em seguida, selecione salvar. Você pode editar esse arquivo CSS para atender aos requisitos da sua empresa.
 
 >[!NOTE]
 >
->Antes de renderizar um formulário HTML que use um arquivo CSS personalizado, é importante ter uma sólida compreensão dos formulários HTML de renderização. (Consulte [Renderização do Forms como HTML](/help/forms/developing/rendering-forms-html.md).)
+>Antes de renderizar um formulário do HTML que usa um arquivo CSS personalizado, é importante que você tenha uma sólida compreensão da renderização de formulários do HTML. (Consulte [Renderização do Forms como HTML](/help/forms/developing/rendering-forms-html.md).)
 
 >[!NOTE]
 >
@@ -50,7 +49,7 @@ Para renderizar um formulário HTML que use um arquivo CSS, execute as seguintes
 1. Incluir arquivos de projeto.
 1. Crie um objeto de API Java do Forms.
 1. Faça referência ao arquivo CSS.
-1. Renderize um formulário HTML.
+1. Renderize um formulário do HTML.
 1. Grave o fluxo de dados do formulário no navegador da Web do cliente.
 
 **Incluir arquivos de projeto**
@@ -65,15 +64,15 @@ Antes de executar programaticamente uma operação compatível com o serviço Fo
 
 Para renderizar um formulário HTML que use um arquivo CSS personalizado, certifique-se de fazer referência a um arquivo CSS existente.
 
-**Renderizar um formulário de HTML**
+**Renderizar um formulário do HTML**
 
-Para renderizar um formulário HTML, especifique um design de formulário que foi criado no Designer e salvo como um arquivo XDP. Selecione um tipo de transformação HTML. Por exemplo, você pode especificar o tipo de transformação de HTML que renderiza um HTML dinâmico para o Internet Explorer 5.0 ou posterior.
+Para renderizar um formulário do HTML, especifique um design de formulário que foi criado no Designer e salvo como um arquivo XDP. Selecione um tipo de transformação do HTML. Por exemplo, você pode especificar o tipo de transformação HTML que renderiza um HTML dinâmico para o Internet Explorer 5.0 ou posterior.
 
-A renderização de um formulário HTML também requer valores, como valores de URI necessários para renderizar outros tipos de formulário.
+A renderização de um formulário do HTML também requer valores, como valores de URI necessários para renderizar outros tipos de formulário.
 
 **Gravar o fluxo de dados de formulário no navegador Web cliente**
 
-Quando o serviço Forms renderiza um formulário HTML, ele retorna um fluxo de dados de formulário que você deve gravar no navegador da Web do cliente para tornar o formulário HTML visível para o usuário.
+Quando o serviço Forms renderiza um formulário do HTML, ele retorna um fluxo de dados de formulário que você deve gravar no navegador da Web do cliente para tornar o formulário do HTML visível para o usuário.
 
 **Consulte também**
 
@@ -85,7 +84,7 @@ Quando o serviço Forms renderiza um formulário HTML, ele retorna um fluxo de d
 
 [Início rápido da API de serviço do Forms](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
-[Renderização de PDF forms interativos](/help/forms/developing/rendering-interactive-pdf-forms.md)
+[Renderização do PDF forms interativo](/help/forms/developing/rendering-interactive-pdf-forms.md)
 
 [Renderização do Forms como HTML](/help/forms/developing/rendering-forms-html.md)
 
@@ -93,7 +92,7 @@ Quando o serviço Forms renderiza um formulário HTML, ele retorna um fluxo de d
 
 ## Renderize um formulário HTML que use um arquivo CSS usando a API Java {#render-an-html-form-that-uses-a-css-file-using-the-java-api}
 
-Renderize um formulário HTML que use um arquivo CSS personalizado usando a API do Forms (Java):
+Renderize um formulário do HTML que use um arquivo CSS personalizado usando a API do Forms (Java):
 
 1. Incluir arquivos de projeto
 
@@ -109,16 +108,16 @@ Renderize um formulário HTML que use um arquivo CSS personalizado usando a API 
    * Crie um objeto `HTMLRenderSpec` usando seu construtor.
    * Para renderizar o formulário HTML que usa um arquivo CSS personalizado, chame o método `setCustomCSSURI` do objeto `HTMLRenderSpec` e passe um valor de cadeia de caracteres que especifique o local e o nome do arquivo CSS.
 
-1. Renderizar um formulário HTML
+1. Renderizar um formulário do HTML
 
    Invoque o método `(Deprecated) (Deprecated) renderHTMLForm` do objeto `FormsServiceClient` e passe os seguintes valores:
 
    * Um valor de cadeia de caracteres que especifica o nome de design do formulário, incluindo a extensão de nome de arquivo. Se você referenciar um design de formulário que faça parte de um aplicativo do Forms, certifique-se de especificar o caminho completo, como `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
-   * Um valor de enumeração `TransformTo` que especifica o tipo de preferência HTML. Por exemplo, para renderizar um formulário de HTML que seja compatível com o HTML dinâmico para o Internet Explorer 5.0 ou posterior, especifique `TransformTo.MSDHTML`.
+   * Um valor de enumeração `TransformTo` que especifica o tipo de preferência HTML. Por exemplo, para renderizar um formulário do HTML compatível com o HTML dinâmico para Internet Explorer 5.0 ou posterior, especifique `TransformTo.MSDHTML`.
    * Um objeto `com.adobe.idp.Document` que contém dados para mesclar com o formulário. Se não quiser mesclar dados, passe um objeto `com.adobe.idp.Document` vazio.
-   * O objeto `HTMLRenderSpec` que armazena opções de tempo de execução de HTML.
+   * O objeto `HTMLRenderSpec` que armazena as opções de tempo de execução do HTML.
    * Um valor de cadeia de caracteres que especifica o valor do cabeçalho `HTTP_USER_AGENT`, como `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
-   * Um objeto `URLSpec` que armazena valores de URI necessários para renderizar um formulário HTML.
+   * Um objeto `URLSpec` que armazena valores URI necessários para renderizar um formulário HTML.
    * Um objeto `java.util.HashMap` que armazena anexos de arquivo. Este é um parâmetro opcional, e você pode especificar `null` se não quiser anexar arquivos ao formulário.
 
    O método `(Deprecated) renderHTMLForm` retorna um objeto `FormsResult` que contém um fluxo de dados de formulário que deve ser gravado no navegador Web cliente.
@@ -145,7 +144,7 @@ Renderize um formulário HTML que use um arquivo CSS personalizado usando a API 
 
 ## Renderize um formulário HTML que use um arquivo CSS usando a API do serviço Web {#render-an-html-form-that-uses-a-css-file-using-the-web-service-api}
 
-Renderize um formulário HTML que use um arquivo CSS personalizado usando a API do Forms (serviço da Web):
+Renderize um formulário do HTML que use um arquivo CSS personalizado usando a API do Forms (serviço Web):
 
 1. Incluir arquivos de projeto
 
@@ -161,16 +160,16 @@ Renderize um formulário HTML que use um arquivo CSS personalizado usando a API 
    * Crie um objeto `HTMLRenderSpec` usando seu construtor.
    * Para renderizar o formulário HTML que usa um arquivo CSS personalizado, chame o método `setCustomCSSURI` do objeto `HTMLRenderSpec` e passe um valor de cadeia de caracteres que especifique o local e o nome do arquivo CSS.
 
-1. Renderizar um formulário HTML
+1. Renderizar um formulário do HTML
 
    Invoque o método `(Deprecated) renderHTMLForm` do objeto `FormsService` e passe os seguintes valores:
 
    * Um valor de cadeia de caracteres que especifica o nome de design do formulário, incluindo a extensão de nome de arquivo. Se você referenciar um design de formulário que faça parte de um aplicativo do Forms, certifique-se de especificar o caminho completo, como `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
-   * Um valor de enumeração `TransformTo` que especifica o tipo de preferência HTML. Por exemplo, para renderizar um formulário de HTML que seja compatível com o HTML dinâmico para o Internet Explorer 5.0 ou posterior, especifique `TransformTo.MSDHTML`.
+   * Um valor de enumeração `TransformTo` que especifica o tipo de preferência HTML. Por exemplo, para renderizar um formulário do HTML compatível com o HTML dinâmico para Internet Explorer 5.0 ou posterior, especifique `TransformTo.MSDHTML`.
    * Um objeto `BLOB` que contém dados para mesclar com o formulário. Se não quiser mesclar dados, passe `null`. (Consulte [Preenchimento prévio de Forms com Layouts Fluxáveis](/help/forms/developing/prepopulating-forms-flowable-layouts.md).)
-   * O objeto `HTMLRenderSpec` que armazena opções de tempo de execução de HTML.
+   * O objeto `HTMLRenderSpec` que armazena as opções de tempo de execução do HTML.
    * Um valor de cadeia de caracteres que especifica o valor do cabeçalho `HTTP_USER_AGENT`, como `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`. Você pode passar uma string vazia se não quiser definir esse valor.
-   * Um objeto `URLSpec` que armazena valores de URI necessários para renderizar um formulário HTML.
+   * Um objeto `URLSpec` que armazena valores URI necessários para renderizar um formulário HTML.
    * Um objeto `java.util.HashMap` que armazena anexos de arquivo. Este é um parâmetro opcional, e você pode especificar `null` se não quiser anexar arquivos ao formulário.
    * Um objeto `com.adobe.idp.services.holders.BLOBHolder` vazio preenchido pelo método `(Deprecated) renderHTMLForm`. Esse valor de parâmetro armazena o formulário renderizado.
    * Um objeto `com.adobe.idp.services.holders.BLOBHolder` vazio preenchido pelo método `(Deprecated) renderHTMLForm`. Esse parâmetro armazena os dados XML de saída.

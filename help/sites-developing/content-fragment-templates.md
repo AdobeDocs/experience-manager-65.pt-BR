@@ -1,10 +1,14 @@
 ---
 title: Modelos de fragmentos do conteúdo
+
 description: Os modelos são selecionados ao criar um fragmento de conteúdo e fornecem ao novo fragmento a estrutura básica, o elemento e a variação
+
+
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
+
 docset: aem65
 exl-id: 1b75721c-b223-41f0-88d9-bd855b529f31
 solution: Experience Manager, Experience Manager Sites
@@ -12,11 +16,9 @@ feature: Developing,Content Fragments
 role: Developer
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
-source-wordcount: '677'
+source-wordcount: '690'
 ht-degree: 3%
-
 ---
-
 # Modelos de fragmentos do conteúdo{#content-fragment-templates}
 
 >[!CAUTION]
@@ -158,7 +160,7 @@ Mais detalhes sobre os nós e suas propriedades são:
     <tr>
      <td><code>elements</code><br /> </td>
      <td><p><code>nt:unstructured</code></p> <p>obrigatório</p> </td>
-     <td><p>Nó que contém a definição dos elementos do fragmento de conteúdo. É obrigatório e precisa conter pelo menos um nó filho para o elemento <strong>Main</strong>, mas pode conter [1.n] nós-filhos.</p> <p>Quando o modelo é usado, a sub-ramificação dos elementos é copiada para a sub-ramificação do modelo do fragmento.</p> <p>O primeiro elemento (conforme exibido em CRXDE Lite) é automaticamente considerado como o elemento <i>main</i>. O nome do nó é irrelevante e o próprio nó não tem um significado especial, exceto pelo fato de que é representado pelo ativo principal; os outros elementos são tratados como sub-ativos.</p> </td>
+     <td><p>Nó que contém a definição dos elementos do fragmento de conteúdo. Ela é obrigatória e precisa conter pelo menos um nó filho para o elemento <strong>Main</strong>, mas pode conter [1..n] nós filhos.</p> <p>Quando o modelo é usado, a sub-ramificação dos elementos é copiada para a sub-ramificação do modelo do fragmento.</p> <p>O primeiro elemento (conforme visualizado no CRXDE Lite) é automaticamente considerado como o elemento <i>main</i>; o nome do nó é irrelevante e o próprio nó não tem um significado especial, exceto o fato de que é representado pelo ativo principal; os outros elementos são tratados como subativos.</p> </td>
     </tr>
    </tbody>
   </table>

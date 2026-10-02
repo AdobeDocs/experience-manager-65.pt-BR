@@ -9,14 +9,12 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '497'
+source-wordcount: '508'
 ht-degree: 0%
-
 ---
-
 # Personalização de mensagens de erro para formulários HTML5 {#customizing-error-messages-for-html-forms}
 
-Nos formulários HTML5, fora da caixa, as mensagens de erro e os avisos têm uma posição e aparência fixas (fonte e cor), o erro é exibido somente para um campo selecionado e apenas um erro é exibido.
+Nos formulários HTML5, de forma imediata, as mensagens de erro e os avisos têm uma posição e aparência fixas (fonte e cor), o erro é exibido somente para um campo selecionado e apenas um erro é exibido.
 
 O artigo fornece as etapas para personalizar mensagens de erro de formulários HTML5 para que você possa fazer o seguinte:
 
