@@ -9,11 +9,9 @@ feature: Deploying
 role: Admin
 source-git-commit: 3effd4fa686ac89421ffe74e52bf34830ddd776c
 workflow-type: tm+mt
-source-wordcount: '1614'
+source-wordcount: '1637'
 ht-degree: 0%
-
 ---
-
 # Instalação Personalizada Independente{#custom-standalone-install}
 
 Esta seção descreve as opções disponíveis ao instalar uma instância independente do AEM. Você também pode ler [Elementos de Armazenamento](/help/sites-deploying/storage-elements-in-aem-6.md) para obter mais informações sobre como escolher o tipo de armazenamento de back-end após instalar o AEM 6.

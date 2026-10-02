@@ -11,11 +11,9 @@ feature: Configuring
 role: Admin
 source-git-commit: efaff4557aba3557a355ed385a5358cf1108c159
 workflow-type: tm+mt
-source-wordcount: '2154'
-ht-degree: 8%
-
+source-wordcount: '2182'
+ht-degree: 9%
 ---
-
 
 # Configuração da notificação por e-mail{#configuring-email-notification}
 
@@ -207,7 +205,7 @@ subject=<text_1>
 >
 >Mais informações sobre o formato do modelo podem ser encontradas no [javadocs do método Properties.load()](https://docs.oracle.com/javase/8/docs/api/java/util/Properties.html#load-java.io.InputStream-).
 
-O método `${payload.path.open}` revela o caminho para a carga útil do item de trabalho. Por exemplo, para uma página no Sites, então `payload.path.open` seria semelhante a `/bin/wcmcommand?cmd=open&path=…`.; isso ocorre sem o nome do servidor, razão pela qual o modelo anexa isso com `${host.prefix}`.
+O método `${payload.path.open}` revela o caminho para a carga útil do item de trabalho. Por exemplo, para uma página no Sites, então `payload.path.open` seria semelhante a `/bin/wcmcommand?cmd=open&path=…`. Isso ocorre sem o nome do servidor, por isso o modelo anexa isso com `${host.prefix}`.
 
 As seguintes variáveis podem ser usadas no template de email:
 
@@ -404,11 +402,11 @@ Em seguida, integre suas configurações do OAuth2 ao AEM:
    * Preencha o URL de Autorização, URL do Token e URL do Token de Atualização construindo-os conforme descrito em [o fim deste procedimento](#microsoft-outlook)
    * ID do cliente e Segredo do cliente: configure esses campos com os valores que você recuperou, conforme descrito acima.
    * Adicione os seguintes escopos à configuração:
-      * openid
-      * offline_access
-      * `https://outlook.office365.com/Mail.Send`
-      * `https://outlook.office365.com/Mail.Read`
-      * `https://outlook.office365.com/SMTP.Send`
+     * openid
+     * offline_access
+     * `https://outlook.office365.com/Mail.Send`
+     * `https://outlook.office365.com/Mail.Read`
+     * `https://outlook.office365.com/SMTP.Send`
    * URL de Redirecionamento AuthCode: `http://localhost:4503/services/mailer/oauth2/token`
    * URL do token de atualização: deve ter o mesmo valor que o URL do token acima
 1. Clique em **Salvar**.
