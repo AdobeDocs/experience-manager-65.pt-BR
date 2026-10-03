@@ -1,21 +1,24 @@
 ---
 title: Pré-preenchimento do Forms com layouts fluíveis
+
 description: Preencha previamente os formulários com layout fluível para exibir dados aos usuários em um formulário renderizado usando a API Java e a API de serviço da Web.
+
+
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
+
 role: Developer
 exl-id: ff087084-fb1c-43a4-ae54-cc77eb862493
 solution: Experience Manager, Experience Manager Forms
+
 feature: Adaptive Forms,Document Services,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '3478'
+source-wordcount: '3513'
 ht-degree: 0%
-
 ---
-
 # Pré-preenchimento do Forms com layouts fluíveis {#prepopulating-forms-with-flowable-layouts1}
 
 ## Pré-preenchimento do Forms com layouts fluíveis {#prepopulating-forms-with-flowable-layouts2}
@@ -37,7 +40,7 @@ Um elemento XML deve existir para cada campo de formulário que você deseja pre
 
 Quando você preenche um formulário que já contém dados, deve especificar os dados que já são exibidos na fonte de dados XML. Suponha que um formulário contendo 10 campos tenha dados em quatro campos. Em seguida, suponha que você queira preencher previamente os seis campos restantes. Nessa situação, você deve especificar 10 elementos XML na fonte de dados XML usada para preencher previamente o formulário. Se você especificar apenas seis elementos, os quatro campos originais estarão vazios.
 
-Por exemplo, você pode preencher previamente um formulário, como o formulário de confirmação de amostra. (Consulte &quot;Formulário de confirmação&quot; em [Renderização de PDF forms interativos](/help/forms/developing/rendering-interactive-pdf-forms.md).)
+Por exemplo, você pode preencher previamente um formulário, como o formulário de confirmação de amostra. (Consulte &quot;Formulário de confirmação&quot; em [Renderização do PDF forms Interativo](/help/forms/developing/rendering-interactive-pdf-forms.md).)
 
 Para preencher previamente o formulário de confirmação de amostra, é necessário criar uma fonte de dados XML que contenha três elementos XML que correspondam aos três campos no formulário. Este formulário contém estes três campos: `FirstName`, `LastName` e `Amount`. A primeira etapa é criar uma fonte de dados XML que contenha elementos XML que correspondam aos campos no design do formulário. A próxima etapa é atribuir valores de dados aos elementos XML, conforme mostrado no código XML a seguir.
 
@@ -232,7 +235,7 @@ Você renderiza um formulário pré-preenchido como qualquer outro formulário. 
 
 [Início rápido da API de serviço do Forms](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
-[Renderização de PDF forms interativos](/help/forms/developing/rendering-interactive-pdf-forms.md)
+[Renderização do PDF forms interativo](/help/forms/developing/rendering-interactive-pdf-forms.md)
 
 [Criação de aplicações Web que renderizam o Forms](/help/forms/developing/creating-web-applications-renders-forms.md)
 
@@ -262,7 +265,7 @@ Para preencher previamente um formulário com um layout fluível usando a API do
      ` Element poNum= (Element)document.createElement("txtPONum");  poNum.appendChild(document.createTextNode("8745236985"));  header.appendChild(LastName);`
 
 
-   * Adicione todos os elementos restantes ao elemento de cabeçalho repetindo a última subetapa para cada campo que aparece na parte estática do formulário (no diagrama de fonte de dados XML, esses campos são mostrados na seção A. (Consulte [Noções básicas sobre subgrupos de dados](#understanding-data-subgroups).)
+   * Adicione todos os elementos restantes ao elemento de cabeçalho repetindo a última subetapa para cada campo que aparece na parte estática do formulário (no diagrama de fonte de dados XML, esses campos são mostrados na seção A). (Consulte [Compreensão de subgrupos de dados](#understanding-data-subgroups).)
    * Crie o elemento de detalhes da fonte de dados XML chamando o método `createElement` do objeto `Document`. Passe um valor de cadeia de caracteres que representa o nome do elemento para o método `createElement`. Converter o valor de retorno em `Element`. Em seguida, anexe o elemento de detalhes ao elemento raiz chamando o método `appendChild` do objeto `root` e passe o objeto do elemento de detalhes como um argumento. Os elementos XML anexados ao elemento de detalhes correspondem à parte dinâmica do formulário. As linhas de código a seguir mostram essa lógica de aplicação:
 
      ` Element detail = (Element)document.createElement("detail");  root.appendChild(detail);`
@@ -338,7 +341,7 @@ Para preencher previamente um formulário com um layout fluível usando a API do
 
      ` Element poNum= (Element)document.createElement("txtPONum");  poNum.appendChild(document.createTextNode("8745236985"));  header.appendChild(LastName);`
 
-   * Adicione todos os elementos restantes ao elemento de cabeçalho repetindo a última subetapa para cada campo que aparece na parte estática do formulário (no diagrama de fonte de dados XML, esses campos são mostrados na seção A. (Consulte [Noções básicas sobre subgrupos de dados](#understanding-data-subgroups).)
+   * Adicione todos os elementos restantes ao elemento de cabeçalho repetindo a última subetapa para cada campo que aparece na parte estática do formulário (no diagrama de fonte de dados XML, esses campos são mostrados na seção A). (Consulte [Compreensão de subgrupos de dados](#understanding-data-subgroups).)
    * Crie o elemento de detalhes da fonte de dados XML chamando o método `createElement` do objeto `Document`. Passe um valor de cadeia de caracteres que representa o nome do elemento para o método `createElement`. Converter o valor de retorno em `Element`. Em seguida, anexe o elemento de detalhes ao elemento raiz chamando o método `appendChild` do objeto `root` e passe o objeto do elemento de detalhes como um argumento. Os elementos XML anexados ao elemento de detalhes correspondem à parte dinâmica do formulário. As linhas de código a seguir mostram essa lógica de aplicação:
 
      ` Element detail = (Element)document.createElement("detail");  root.appendChild(detail);`
@@ -371,7 +374,7 @@ Para preencher previamente um formulário com um layout fluível usando a API do
    * Um objeto `PDFFormRenderSpecc` que armazena opções de tempo de execução. Para obter mais informações, consulte [Referência da API do AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
    * Um objeto `URLSpec` que contém valores de URI exigidos pelo serviço Forms.
    * Um objeto `java.util.HashMap` que armazena anexos de arquivo. Este é um parâmetro opcional e você pode especificar `null` se não quiser anexar arquivos ao formulário.
-   * Um objeto `com.adobe.idp.services.holders.BLOBHolder` vazio preenchido pelo método. Isso é usado para armazenar o formulário de PDF renderizado.
+   * Um objeto `com.adobe.idp.services.holders.BLOBHolder` vazio preenchido pelo método. Isso é usado para armazenar o formulário PDF renderizado.
    * Um objeto `javax.xml.rpc.holders.LongHolder` vazio preenchido pelo método. (Esse argumento armazenará o número de páginas no formulário).
    * Um objeto `javax.xml.rpc.holders.StringHolder` vazio preenchido pelo método. (Esse argumento armazenará o valor do local).
    * Um objeto `com.adobe.idp.services.holders.FormsResultHolder` vazio que conterá os resultados desta operação.

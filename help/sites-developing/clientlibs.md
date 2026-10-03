@@ -12,11 +12,9 @@ feature: Developing,Personalization
 role: Developer
 source-git-commit: f965c449da06a1b7e60428e0734c621f004d318c
 workflow-type: tm+mt
-source-wordcount: '2791'
-ht-degree: 1%
-
+source-wordcount: '2898'
+ht-degree: 2%
 ---
-
 # Uso de bibliotecas do cliente{#using-client-side-libraries}
 
 Sites modernos dependem muito do processamento do lado do cliente orientado por códigos JavaScript e CSS complexos. Organizar e otimizar a veiculação desse código pode ser um problema complicado.
@@ -101,7 +99,7 @@ Para obter informações completas, incluindo atributos para filtrar JS, CSS ou 
 
 >[!CAUTION]
 >
->O `<cq:includeClientLib>`, que antigamente era comumente usado para incluir bibliotecas de clientes, está obsoleto desde o AEM 5.6. Em vez disso, o [`<ui:includeClientLib>`](/help/sites-developing/taglib.md#lt-ui-includeclientlib) deve ser usado conforme detalhado acima.
+>O `<cq:includeClientLib>`, que antigamente era usado com frequência para incluir bibliotecas de clientes, está obsoleto desde o AEM 5.6. Em vez disso, [`<ui:includeClientLib>`](/help/sites-developing/taglib.md#lt-ui-includeclientlib) deve ser usado conforme detalhado acima.
 
 ## Criação de pastas de bibliotecas de clientes {#creating-client-library-folders}
 
@@ -446,7 +444,7 @@ O componente `dumplibs` inclui um seletor de teste que exibe o código-fonte ger
 
    * Abra o seguinte URL no navegador da Web (use um host e porta diferentes, conforme necessário):
 
-      * `http://<host>:<port>/libs/granite/ui/content/dumplibs.html`
+     * `http://<host>:<port>/libs/granite/ui/content/dumplibs.html`
 
    A página padrão mostra saída para tags sem valor para o atributo categories.
 

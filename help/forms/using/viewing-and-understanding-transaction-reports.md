@@ -10,18 +10,16 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '881'
+source-wordcount: '890'
 ht-degree: 0%
-
 ---
-
 # Visualização e noções básicas dos relatórios de transação do AEM Forms no OSGi{#viewing-and-understanding-transaction-reports}
 
 Relatórios de transação permitem capturar e rastrear o número de formulários enviados, documentos processados e documentos renderizados. O objetivo por trás do rastreamento dessas transações é tomar uma decisão informada sobre o uso do produto e reequilibrar os investimentos em hardware e software. Para obter mais informações, consulte [Visão geral dos Relatórios de Transações do AEM Forms](../../forms/using/transaction-reports-overview.md).
 
 ## Configuração de relatórios de transações  {#setting-up-transaction-reports}
 
-O recurso Relatórios de transação está disponível como parte do pacote complementar dos formulários AEM. Para obter informações sobre como instalar o pacote complementar em todas as instâncias de criação e publicação, consulte [Instalando e configurando formulários AEM](/help/forms/using/installing-configuring-aem-forms-osgi.md). Depois de instalar o pacote complementar do AEM Forms, faça o seguinte:
+O recurso Relatórios de transação está disponível como parte do pacote complementar do AEM Forms. Para obter informações sobre como instalar o pacote complementar em todas as instâncias de autor e publicação, consulte [Instalando e configurando o AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md). Depois que o pacote complementar do AEM Forms estiver instalado, faça o seguinte:
 
 * Habilitar replicação reversa em todas as instâncias de publicação
 * Ativar relatórios de transações
@@ -51,7 +49,7 @@ Os relatórios de transação estão desativados por padrão. Você pode ativar 
 
 ### Fornecer direitos para visualizar um relatório de transações {#provide-rights-to-view-a-transaction-report}
 
-Somente os membros do grupo fd-administrator podem exibir relatórios de transações. Para permitir que um usuário visualize relatórios de transações, torne os usuários membros do grupo fd-administrator. Para obter instruções sobre como tornar um usuário membro de um grupo AEM, consulte [Administração de Usuários, Grupos e Direitos de Acesso](/help/sites-administering/user-group-ac-admin.md).
+Somente os membros do grupo fd-administrator podem exibir relatórios de transações. Para permitir que um usuário visualize relatórios de transações, torne os usuários membros do grupo fd-administrator. Para obter instruções sobre como tornar um usuário membro de um grupo do AEM, consulte [Administração de usuários, grupos e direitos de acesso](/help/sites-administering/user-group-ac-admin.md).
 
 ### (Opcional) Configurar Período de Liberação da Transação e Caixas de Saída {#optional-configure-transaction-flush-period-and-outboxes}
 
@@ -80,13 +78,13 @@ O AEM Forms exibe relatórios de transações desde a data configurada, conforme
 
 ![exemplo-transação-relatório-autor](assets/sample-transaction-report-author.png)
 
-* Use as opções **Redefinir a data para hoje** para redefinir os registros de transação. Ao redefinir a data como hoje, todos os registros de transações anteriores são perdidos. Ao redefinir a data em uma instância do autor, a alteração não afeta os relatórios de transações nas instâncias do Publish e vice-versa.
-* Use a **Mostrar transações somente de instâncias do Publish** para exibir todas as transações que ocorreram somente na instância de publicação configurada ou no farm de publicação.
+* Use as opções **Redefinir a data para hoje** para redefinir os registros de transação. Ao redefinir a data como hoje, todos os registros de transações anteriores são perdidos. Ao redefinir a data em uma instância de autor, a alteração não afeta os relatórios de transações nas instâncias Publicar e vice-versa.
+* Use a **Mostrar transações apenas de Instâncias de publicação** para exibir todas as transações que ocorreram somente na instância de publicação configurada ou no farm de publicação.
 * Use as categorias: **Documento Processado**, **Documentos Renderizados** e **Forms Enviado** para exibir as transações correspondentes. Para o tipo de transações contabilizadas nessas categorias, consulte [APIs de relatórios de transações faturáveis](../../forms/using/transaction-reports-billable-apis.md).
 
 ## Exibir logs de relatórios de transações {#view-transaction-reporting-logs}
 
-O relatório de transações coloca todas as informações exibidas no relatório e algumas informações adicionais nos logs. As informações fornecidas nos logs são úteis para os usuários avançados. Por exemplo, os registros dividem as transações em várias categorias granulares em comparação às três categorias consolidadas exibidas no relatório. Os logs estão disponíveis no arquivo `error.log` no diretório `/crx-repository/logs/`. Os logs estarão disponíveis mesmo que você não ative os relatórios de transação do Console da Web do AEM.
+O relatório de transações coloca todas as informações exibidas no relatório e algumas informações adicionais nos logs. As informações fornecidas nos logs são úteis para os usuários avançados. Por exemplo, os registros dividem as transações em várias categorias granulares em comparação às três categorias consolidadas exibidas no relatório. Os logs estão disponíveis no arquivo `error.log` no diretório `/crx-repository/logs/`. Os logs estarão disponíveis mesmo se você não ativar os relatórios de transação do Console da Web do AEM.
 
 ## Artigos relacionados {#related-articles}
 

@@ -1,21 +1,21 @@
 ---
 title: Práticas recomendadas para testes de desempenho
 description: Saiba mais sobre as estratégias e metodologias gerais usadas para testes de desempenho e algumas das ferramentas disponíveis para ajudar no processo.
+
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
+
 exl-id: fcac75e1-15c1-4a37-8d43-93c95267b903
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
 source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
 workflow-type: tm+mt
-source-wordcount: '1767'
-ht-degree: 0%
-
+source-wordcount: '1827'
+ht-degree: 1%
 ---
-
 # Práticas recomendadas para testes de desempenho{#best-practices-for-performance-testing}
 
 ## Introdução {#introduction}
@@ -62,8 +62,8 @@ Existem muitas ferramentas de teste de desempenho disponíveis comercialmente no
 * Ferramentas de teste de carregamento de site como [Vercara](https://vercara.com/website-performance-management) também podem ser usadas.
 * Ao testar sites móveis ou responsivos, um conjunto separado de ferramentas deve ser usado. Elas funcionam ao aumentar a largura de banda da rede, simulando conexões móveis mais lentas, como 3G ou EDGE. Entre as ferramentas mais usadas estão as seguintes:
 
-   * **[Condicionador de Link de Rede](https://nshipster.com/network-link-conditioner/)** - fornece uma interface fácil de usar e funciona em um nível relativamente baixo na pilha de rede. Ele inclui versões para OS X e iOS;
-   * [**Charles**](https://www.charlesproxy.com/) - um aplicativo proxy de depuração da Web que, além de vários outros usos, fornece limitação de rede. São fornecidas versões para Windows, OS X e Linux®.
+  * **[Condicionador de Link de Rede](https://nshipster.com/network-link-conditioner/)** - fornece uma interface fácil de usar e funciona em um nível relativamente baixo na pilha de rede. Ele inclui versões para OS X e iOS;
+  * [**Charles**](https://www.charlesproxy.com/) - um aplicativo proxy de depuração da Web que, além de vários outros usos, fornece limitação de rede. São fornecidas versões para Windows, OS X e Linux®.
 
 #### Ferramentas de otimização {#optimization-tools}
 
@@ -118,7 +118,7 @@ A seção **ObservationQueueMaxLength** mostra o número de eventos na fila de o
 1. Coloque-o na pasta /crx-quickstart/install.
 
 >[!NOTE]
->Consulte [AEM 6.x | Dicas de Ajuste de Desempenho](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=pt-BR)
+>Consulte [AEM 6.x | Dicas para ajustar o desempenho](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=pt-BR)
 
 A configuração padrão é 10.000, mas a maioria das implantações deve elevá-la para 20.000 ou 50.000.
 

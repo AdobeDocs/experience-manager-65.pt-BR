@@ -11,14 +11,12 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1153'
+source-wordcount: '1212'
 ht-degree: 0%
-
 ---
-
 # Guia de componentes da comunidade  {#community-components-guide}
 
-O guia Componentes da Comunidade é uma ferramenta de desenvolvimento interativa para a [estrutura do componente social (SCF)](scf.md). Ele fornece uma lista de componentes disponíveis das Comunidades Adobe Experience Manager (AEM) ou os recursos mais complexos criados com vários componentes.
+O guia Componentes da Comunidade é uma ferramenta de desenvolvimento interativa para a [estrutura do componente social (SCF)](scf.md). Ele fornece uma lista de componentes disponíveis do Adobe Experience Manager (AEM) Communities ou os recursos mais complexos criados de vários componentes.
 
 Juntamente com as informações básicas de cada componente, o guia permite a experimentação de como os componentes/recursos do SCF funcionam e como eles podem ser configurados ou personalizados.
 
@@ -59,7 +57,7 @@ No autor, para entrar no modo de edição, insira `editor.html` ou `cf#` como o 
 >
 >Para obter informações gerais sobre criação, exiba o [guia rápido das páginas de criação](../../help/sites-authoring/qg-page-authoring.md).
 >
->Se não estiver familiarizado com o AEM, exiba a documentação sobre [manipulação básica](../../help/sites-authoring/basic-handling.md).
+>Se não estiver familiarizado com o AEM, exiba a documentação sobre [manuseio básico](../../help/sites-authoring/basic-handling.md).
 
 ### Página inicial {#home-page}
 
@@ -107,15 +105,15 @@ Na guia **Modelos**:
 
   Se desmarcado, o Guia de componentes usará o recurso existente no repositório (um nó jcr que é filho de um nó par).
 
-   * o texto exibido é: &quot;Este componente é incluído por meio de seu nó par&quot;.
+  * o texto exibido é: &quot;Este componente é incluído por meio de seu nó par&quot;.
 
   Se marcado, o Guia do componente usará o sling para incluir dinamicamente um componente do resourceType do nó secundário (recurso não existente).
 
-   * o texto exibido é: &quot;Este componente é incluído dinamicamente.&quot;
+  * o texto exibido é: &quot;Este componente é incluído dinamicamente.&quot;
 
   O padrão está desmarcado.
 
-### Interações do Publish {#publish-interactions}
+### Publicar interações {#publish-interactions}
 
 Ao usar o guia em uma instância de publicação, é possível experimentar os componentes e recursos como um visitante do site (não conectado) e como membros com vários privilégios quando conectados.
 

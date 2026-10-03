@@ -11,11 +11,9 @@ feature: Compliance
 role: Developer,Leader
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
-source-wordcount: '983'
+source-wordcount: '988'
 ht-degree: 72%
-
 ---
-
 # DevOps empresarial{#enterprise-devops}
 
 O DevOps abrange os processos, os métodos e a comunicação necessários para:
@@ -75,7 +73,7 @@ O ambiente de preparo deve ser um espelho do ambiente de produção, incluindo a
 
 O ambiente de produção consiste nos ambientes necessários para realmente [criar e publicar](/help/sites-authoring/author.md#concept-of-authoring-and-publishing) sua implementação.
 
-Um ambiente de produção consiste em pelo menos uma instância de autor e uma instância de publicação:
+Um ambiente de produção consiste em pelo menos uma instância de criação e uma instância de publicação:
 
 * Uma instância de [autoria](#author) para a entrada de conteúdo.
 * Uma instância de [publicação](#publish) para o conteúdo disponibilizado para seus visitantes/usuários.
@@ -84,7 +82,7 @@ Dependendo da escala do projeto, ele geralmente consiste em várias instâncias 
 
 #### Autor {#author}
 
-As instâncias de autor geralmente estão localizadas atrás do firewall interno. Este é o ambiente em que você e seus colegas realização tarefas de autoria, como:
+As instâncias de criação geralmente estão localizadas atrás do firewall interno. Este é o ambiente em que você e seus colegas realização tarefas de autoria, como:
 
 * administrar todo o sistema
 * inserir seu conteúdo
@@ -117,7 +115,7 @@ Sempre propagar o código de baixo para cima:
 
 O código (por exemplo, funcionalidade de aplicativo web personalizado e modelos de design) é transferido por meio da exportação e da importação de pacotes entre os diferentes repositórios de conteúdo. Quando necessário, essa replicação pode ser configurada como um processo automático.
 
-Projetos AEM geralmente acionam a implantação de código:
+Os Projetos AEM geralmente acionam a implantação de código:
 
 * Automaticamente: para transferência aos ambientes de desenvolvimento e controle de qualidade.
 * Manualmente: as implantações nos ambientes de preparação e produção são feitas de maneira mais controlada (geralmente, de forma manual), embora uma automação seja possível, se necessário.
@@ -126,7 +124,7 @@ Projetos AEM geralmente acionam a implantação de código:
 
 ## Transferência do conteúdo {#content-movement}
 
-O conteúdo que está sendo criado para produção deve **sempre** ser criado na instância de autor de produção.
+O conteúdo que está sendo criado para produção deve **sempre** ser criado na instância de criação de produção.
 
 O conteúdo não deve seguir o código transferido de ambientes inferiores para os superiores, pois fazer com que os autores criem conteúdo em máquinas locais ou ambientes inferiores e depois o transfiram para o ambiente de produção não é uma boa prática e provavelmente introduzirá erros e inconsistências.
 
@@ -139,6 +137,6 @@ O conteúdo de produção deve ser transferido do ambiente de produção ao ambi
 O conteúdo pode ser transferido:
 
 * Entre os diferentes ambientes, exportando e importando pacotes.
-* Entre instâncias diferentes - por replicação direta ([replicação de AEM](/help/sites-deploying/replication.md)), o conteúdo (usando uma conexão HTTP ou HTTPS).
+* Entre instâncias diferentes - por replicação direta ([replicação do AEM](/help/sites-deploying/replication.md)), o conteúdo (usando uma conexão HTTP ou HTTPS).
 
 ![chlimage_1-1](assets/chlimage_1-1.png)
