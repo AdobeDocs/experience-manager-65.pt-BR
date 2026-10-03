@@ -11,11 +11,9 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 source-git-commit: 939a2efa64c853928a9082aa30d7338e98deb695
 workflow-type: tm+mt
-source-wordcount: '793'
+source-wordcount: '831'
 ht-degree: 0%
-
 ---
-
 # Noções básicas sobre processos do AEM Forms {#understanding-aem-forms-processes}
 
 **Exemplos e exemplos neste documento são somente para AEM Forms no ambiente JEE.**
@@ -50,7 +48,7 @@ A ilustração a seguir é um exemplo de um processo de vida curta chamado *MyAp
 
 Quando esse processo de vida curta é chamado, ele executa as seguintes ações:
 
-1. Obtém o documento de PDF não seguro passado para o processo como um valor de entrada.
+1. Obtém o documento PDF não seguro passado para o processo como um valor de entrada.
 1. Criptografa o documento PDF com uma senha. O nome do parâmetro de entrada para este processo é `inDoc` e o tipo de dados é document.
 1. Salva o documento PDF criptografado por senha como um arquivo PDF no sistema de arquivos local. Esse processo retorna o documento PDF criptografado como um valor de saída. O nome do parâmetro de saída deste processo é `outDoc` e o tipo de dados é document.
 
@@ -60,7 +58,7 @@ Quando esse processo de vida curta é chamado, ele executa as seguintes ações:
    >
    >Normalmente, um processo de curta duração consiste em mais de três ações. Crie um processo usando a Bancada. (Consulte [Uso do Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).)
 
-   *A programação com formulários AEM* descreve as seguintes maneiras de invocar este processo de curta duração de forma programática:
+   *A programação com AEM Forms* descreve as seguintes maneiras de invocar este processo de curta duração de forma programática:
 
    * [Invocando um processo de curta duração transmitindo um documento não seguro usando o AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting) (usando um aplicativo do Flex)
    * [Chamando um processo de vida curta usando a API de Invocação](/help/forms/developing/invoking-aem-forms-using-java.md#invoking-a-short-lived-process-using-the-invocation-api) (API de Invocação Java™)

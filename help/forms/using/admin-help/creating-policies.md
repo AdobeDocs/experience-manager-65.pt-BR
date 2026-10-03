@@ -1,21 +1,23 @@
 ---
 title: Criação e gerenciamento de políticas
-description: Uma política é um conjunto de configurações de confidencialidade e usuários que podem acessar um documento ao qual a política é aplicada. Você pode criar e gerenciar vários tipos de políticas usando formulários AEM.
+
+description: Uma política é um conjunto de configurações de confidencialidade e usuários que podem acessar um documento ao qual a política é aplicada. Você pode criar e gerenciar vários tipos de políticas usando formulários do AEM.
+
+
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
+
 feature: Document Security
 exl-id: 5e57451c-1a89-442c-8404-841e95d5ceff
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '4725'
+source-wordcount: '4769'
 ht-degree: 0%
-
 ---
-
 # Criação e gerenciamento de políticas {#creating-and-managing-policies}
 
 >[!NOTE]
@@ -164,33 +166,33 @@ Por padrão, todos os documentos protegidos por política têm uma permissão qu
 
 A guia Permissões e opções é exibida em Segurança do documento.
 
-Essas permissões de documento estão disponíveis na guia Permissões. Você pode aplicar essas permissões aos arquivos PDF, PTC Pro/E e Microsoft Office.
+Essas permissões de documento estão disponíveis na guia Permissões. Você pode aplicar essas permissões aos arquivos do PDF, PTC Pro/E e Microsoft Office.
 
-**Imprimir:** permite que o usuário imprima um documento protegido por esta política. Para arquivos do Office e Pro/E, você pode marcar a caixa de seleção Imprimir para permitir a impressão ou desmarcá-la para impedir a impressão. Se você marcar a caixa de seleção Mostrar permissões personalizadas para PDF, será possível selecionar entre estas opções:
+**Imprimir:** permite que o usuário imprima um documento protegido por esta política. Para arquivos do Office e Pro/E, você pode marcar a caixa de seleção Imprimir para permitir a impressão ou desmarcá-la para impedir a impressão. Se você marcar a caixa de seleção Mostrar permissões personalizadas para o PDF, será possível selecionar entre estas opções:
 
-**Não permitido:** o usuário não tem permissão para imprimir o PDF.
+**Não permitido:** o usuário não tem permissão para imprimir a PDF.
 
-**Permitido:** o usuário tem permissão para imprimir o PDF.
+**Permitido:** o usuário tem permissão para imprimir a PDF.
 
-**Baixa resolução. somente:** usuário pode imprimir o PDF em baixa resolução.
+**Baixa resolução. somente:** usuário tem permissão para imprimir a PDF em baixa resolução.
 
-**Modificar:** permite que o usuário modifique um documento protegido por esta política. Para arquivos do Office e Pro/E, você pode marcar a caixa de seleção Modificar para permitir modificações ou desmarcá-la para evitar modificações. Se você marcar a caixa de seleção Mostrar permissões personalizadas para PDF, será possível selecionar entre estas opções:
+**Modificar:** permite que o usuário modifique um documento protegido por esta política. Para arquivos do Office e Pro/E, você pode marcar a caixa de seleção Modificar para permitir modificações ou desmarcá-la para evitar modificações. Se você marcar a caixa de seleção Mostrar permissões personalizadas para o PDF, será possível selecionar entre estas opções:
 
-**Não permitido:** o usuário não tem permissão para modificar o PDF.
+**Não permitido:** o usuário não tem permissão para modificar a PDF.
 
-**Qualquer:** usuário pode modificar o PDF.
+**Qualquer:** usuário pode modificar a PDF.
 
 **Colaborar:** o usuário tem permissão para colaborar com outras pessoas usando as opções Colaborar no Adobe Acrobat. Essa permissão possibilita que o usuário copie dados de formulário mesmo que a permissão Copiar não seja explicitamente fornecida na política.
 
-**Alterar páginas:** o usuário tem permissão para adicionar e remover páginas e editar conteúdo no PDF.
+**Alterar páginas:** o usuário pode adicionar e remover páginas e editar conteúdo no PDF.
 
-**Fill &amp; Sign:** usuário pode preencher campos de formulário no PDF e assiná-lo.
+**Preencher e Assinar:** o usuário pode preencher campos de formulário na PDF e assiná-los.
 
 **Copiar:** permite que o usuário copie texto de um documento protegido por esta política.
 
-**Reader de tela:** essa permissão será exibida se você marcar a caixa de seleção Mostrar Permissões Personalizadas para PDF. Quando essa opção é selecionada, a Adobe Acrobat tem permissão para adicionar tags temporárias ao PDF para melhorar sua legibilidade com um leitor de tela.
+**Screen Reader:** essa permissão será exibida se você marcar a caixa de seleção Mostrar Permissões Personalizadas para o PDF. Quando essa opção é selecionada, o Adobe Acrobat tem permissão para adicionar tags temporárias à PDF para melhorar sua legibilidade com um leitor de tela.
 
-Essas permissões de documento estão disponíveis na guia Opções. Você pode aplicar essas permissões aos arquivos PDF, PTC Pro/E e Microsoft Office:
+Essas permissões de documento estão disponíveis na guia Opções. Você pode aplicar essas permissões aos arquivos do PDF, PTC Pro/E e Microsoft Office:
 
 **Offline:** permite que o usuário exiba um documento offline protegido por esta política.
 
@@ -226,7 +228,7 @@ A área Configurações gerais contém as seguintes configurações:
 >
 >O administrador também deve habilitar a auditoria do servidor na página de configuração Auditoria e Configurações de Privacidade para que o recurso de auditoria funcione.
 
-**Rastreamento de Uso Estendido:** Habilite ou desabilite o Rastreamento de Uso Estendido. A segurança de documentos oferece suporte ao rastreamento de eventos de usuário associados a várias operações executadas em um arquivo PDF. O objeto de segurança do documento pode ser acessado usando um Java Script. Um clique de botão, um arquivo multimídia que está sendo reproduzido ou o salvamento de um arquivo são alguns exemplos de eventos que são acionados a partir de um PDF protegido por política. Usando o objeto de segurança de documentos, você também pode recuperar informações do usuário. O rastreamento de eventos pode ser ativado no servidor de segurança de documentos em nível global ou em nível de política.
+**Rastreamento de Uso Estendido:** Habilite ou desabilite o Rastreamento de Uso Estendido. A segurança de documentos oferece suporte ao rastreamento de eventos de usuário associados a várias operações executadas em um arquivo do PDF. O objeto de segurança do documento pode ser acessado usando um Java Script. Um clique de botão, um arquivo multimídia que está sendo reproduzido ou o salvamento de um arquivo são alguns exemplos de eventos que são acionados de um PDF protegido por política. Usando o objeto de segurança de documentos, você também pode recuperar informações do usuário. O rastreamento de eventos pode ser ativado no servidor de segurança de documentos em nível global ou em nível de política.
 
 **Período de Concessão Offline Automático:** O número máximo de dias que o destinatário pode usar o documento protegido por política offline (sem uma conexão ativa com a Internet ou com a rede). Quando o período de concessão expirar, o recipient deverá sincronizar o documento novamente para continuar a usá-lo.
 
@@ -266,9 +268,9 @@ Se você estiver editando uma política e o administrador tiver deletado uma mar
 >
 >Para políticas que fornecem acesso anônimo ao usuário, o nome do usuário e o identificador de um usuário anônimo não são exibidos como uma marca d&#39;água mesmo se você selecionar esse tipo de marca d&#39;água.
 
-**Usar Somente Plug-ins Certificados do Acrobat para PDF:** Quando selecionada para uma política, esta opção especifica que o Acrobat 8.0 e posterior deve ser executado no modo certificado ao abrir documentos protegidos com a política. Quando o Acrobat é executado no modo certificado, ele não carrega plug-ins de terceiros.
+**Usar somente plug-ins certificados do Acrobat para PDF:** Quando selecionada para uma política, essa opção especifica que o Acrobat 8.0 e posterior deve ser executado no modo certificado ao abrir documentos protegidos com a política. Quando o Acrobat é executado no modo certificado, ele não carrega plug-ins de terceiros.
 
-Selecione essa opção se estiver preocupado com a gravação de plug-in por um recipient de documento que pode contornar qualquer proteção de documento no Acrobat 8.0 e posteriores. Não selecione essa opção se os recipients do seu documento precisarem usar plug-ins de terceiros no Acrobat para interagir com documentos.
+Selecione essa opção se estiver preocupado com a gravação de plug-in por um destinatário de documento que possa contornar qualquer proteção de documento no Acrobat 8.0 e posteriores. Não selecione essa opção se os recipients do seu documento precisarem usar plug-ins de terceiros no Acrobat para interagir com documentos.
 
 Essa opção ativa somente o modo certificado no Acrobat 8.0 ou posterior; o administrador deve desativar o acesso para o Acrobat 7.0.
 
@@ -285,12 +287,12 @@ A área Configurações avançadas inalteráveis contém as seguintes configura�
 **Algoritmo de Criptografia e Tamanho da Chave:** Usado para proteger seus documentos. Você pode escolher entre estas opções:
 
 * AES de 128 bits
-* AES de 256 bits. Somente o Acrobat 9.0 e posterior é compatível com essa opção. Para usar a criptografia AES 256 para arquivos PDF, obtenha e instale os arquivos de Política de Jurisdição de Força Ilimitada Java Cryptography Extension (JCE). Esses arquivos substituem os arquivos local_policy.jar e US_export_policy.jar na [pasta JAVE_HOME]/lib/security. Por exemplo, se você estiver usando o Sun JDK 1.6, copie os arquivos baixados para a pasta [dep root]/Java/jdk1.6.0_26/lib/security. Você pode baixar esses arquivos em [Downloads do Java SE](https://java.sun.com/javase/downloads/index.jsp).
+* AES de 256 bits. Somente o Acrobat 9.0 e posterior é compatível com essa opção. Para usar a criptografia AES 256 para arquivos PDF, obtenha e instale os arquivos Java Cryptography Extension (JCE) Unlimited Strength Jurisdiction Policy. Esses arquivos substituem os arquivos local_policy.jar e US_export_policy.jar na [pasta JAVE_HOME]/lib/security. Por exemplo, se você estiver usando o Sun JDK 1.6, copie os arquivos baixados para a pasta [dep root]/Java/jdk1.6.0_26/lib/security. Você pode baixar esses arquivos em [Downloads do Java SE](https://java.sun.com/javase/downloads/index.jsp).
 * Sem criptografia. Atualmente, o Acrobat 9.0 e versões posteriores oferecem suporte a essa opção. Se você selecionar essa opção, as opções de Restrições de documento serão desativadas. Essa opção pode ser útil se você quiser usar a segurança de documentos para auditoria de documentos ou controle de versão, mas não quiser criptografar o documento.
 
-**Restrições de Documento:** Selecione os componentes do documento de PDF a serem criptografados. Outros aplicativos clientes criptografam todo o documento, mas não os arquivos vinculados ou incorporados. Você pode escolher entre estas opções:
+**Restrições de Documento:** Selecione os componentes de documento do PDF a serem criptografados. Outros aplicativos clientes criptografam todo o documento, mas não os arquivos vinculados ou incorporados. Você pode escolher entre estas opções:
 
-* O documento inteiro, incluindo anexos e metadados. *Metadados* são informações sobre o documento e seu conteúdo que podem ser exibidas na caixa de diálogo Propriedades do documento ou no menu Avançado do Acrobat. No Acrobat, é possível anexar arquivos de diferentes tipos (por exemplo, arquivos de texto, áudio e vídeo) a documentos PDF.
+* O documento inteiro, incluindo anexos e metadados. *Metadados* são informações sobre o documento e seu conteúdo que podem ser exibidas na caixa de diálogo Propriedades do documento ou no menu Avançado do Acrobat. No Acrobat, você pode anexar arquivos de diferentes tipos (por exemplo, arquivos de texto, áudio e vídeo) a documentos do PDF.
 * O documento e seus anexos, mas não os metadados.
 * Somente os anexos do documento. Você pode criptografar os anexos para um arquivo PDF sem criptografar o conteúdo do documento.
 

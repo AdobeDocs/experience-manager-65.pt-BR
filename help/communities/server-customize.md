@@ -11,11 +11,9 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '889'
+source-wordcount: '897'
 ht-degree: 0%
-
 ---
-
 # Personalização do lado do servidor {#server-side-customization}
 
 | **[⇐ Feature Essentials](essentials.md)** | **[Personalização no lado do cliente ^](client-customize.md)** |
@@ -66,9 +64,9 @@ Um identificador para o serviço OSGi é obtido chamando `com.adobe.cq.social.sc
 
 #### Classe Pós-Operação {#postoperation-class}
 
-Os pontos de extremidade de POST da API HTTP são classes PostOperation definidas pela implementação da interface `SlingPostOperation` (pacote `org.apache.sling.servlets.post`).
+Os pontos de extremidade POST da API HTTP são classes PostOperation definidas pela implementação da interface `SlingPostOperation` (pacote `org.apache.sling.servlets.post`).
 
-A implementação do ponto de extremidade `PostOperation` define `sling.post.operation` como um valor ao qual a operação responde. Todas as solicitações POST com um parâmetro:operation definido para esse valor são delegadas a essa classe de implementação.
+A implementação do ponto de extremidade `PostOperation` define `sling.post.operation` como um valor ao qual a operação responde. Todas as solicitações POST com um parâmetro :operation definido com esse valor são delegadas a esta classe de implementação.
 
 O `PostOperation` chama o `SocialOperation` que executa as ações necessárias para a operação.
 
@@ -115,9 +113,9 @@ Todas as classes `OperationService` estendem `AbstractOperationService`, permiti
 
 As classes `OperationExtension` são pedaços de código personalizados que podem ser inseridos em uma operação, permitindo a personalização de operações para atender às necessidades comerciais. Os consumidores do componente podem adicionar funcionalidade de forma dinâmica e incremental ao componente. O padrão de extensão/gancho permite que os desenvolvedores se concentrem exclusivamente nas próprias extensões e remove a necessidade de copiar e substituir operações e componentes inteiros.
 
-## Código de exemplo {#sample-code}
+## Amostra de código {#sample-code}
 
-O código de exemplo está disponível no repositório [Adobe Experience Cloud GitHub](https://github.com/Adobe-Marketing-Cloud). Procurar projetos com prefixo `aem-communities` ou `aem-scf`.
+O código de exemplo está disponível no [repositório GitHub da Adobe Experience Cloud](https://github.com/Adobe-Marketing-Cloud). Procurar projetos com prefixo `aem-communities` ou `aem-scf`.
 
 ## Práticas recomendadas {#best-practices}
 

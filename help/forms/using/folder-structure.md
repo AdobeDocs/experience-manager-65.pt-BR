@@ -13,9 +13,7 @@ source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '145'
 ht-degree: 0%
-
 ---
-
 # Como entender a estrutura de pastas {#understanding-the-folder-structure}
 
 Os componentes do espaço de trabalho do AEM Forms foram projetados na arquitetura MVC usando o Backbone (rede de transmissão). Cada componente tem um arquivo para:
@@ -30,7 +28,7 @@ Os ativos de todos os componentes são colocados na estrutura de pastas descrita
 
 **exibições** contém exibições de backbone.
 
-**modelos** Contém apenas os modelos de HTML para os componentes.
+**modelos** Contém apenas os modelos HTML para os componentes.
 
 **rotas** contém rotas universais. A pasta Templates dentro de rotas contém o código HTML e as referências aos componentes.
 

@@ -11,11 +11,9 @@ feature: Developing,Personalization
 role: Developer
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '285'
 ht-degree: 1%
-
 ---
-
 # ContextHub{#contexthub}
 
 O ContextHub é uma estrutura para armazenar, manipular e apresentar dados de contexto. A API do JavaScript do lado do cliente permite acessar os dados para personalizar o conteúdo.
@@ -37,7 +35,7 @@ O ContextHub armazena dados de contexto persistentes no cliente. A API do Contex
 Cada armazenamento do ContextHub é uma instância de um tipo de armazenamento predefinido:
 
 * O ContextHub fornece vários [tipos de armazenamento de amostra](/help/sites-developing/ch-samplestores.md).
-* Use consoles AEM para [criar lojas](ch-configuring.md#creating-a-contexthub-store).
+* Use os consoles do AEM para [criar lojas](ch-configuring.md#creating-a-contexthub-store).
 * Os desenvolvedores podem [criar tipos de armazenamento personalizados](/help/sites-developing/ch-extend.md#creating-custom-store-candidates).
 * Os desenvolvedores podem [acessar os dados do armazenamento](/help/sites-developing/ch-adding.md#interacting-with-contexthub-stores) via JavaScript.
 
@@ -52,7 +50,7 @@ A [Barra de ferramentas do ContextHub](/help/sites-authoring/ch-previewing.md) p
 Cada módulo da interface do usuário do ContextHub é uma instância de um tipo de módulo predefinido:
 
 * O ContextHub fornece vários [tipos de módulo de amostra](/help/sites-developing/ch-samplemodules.md).
-* Use consoles AEM para [adicionar módulos de interface](ch-configuring.md#adding-a-ui-module) e para [agrupá-los em modos de interface](ch-configuring.md#adding-a-ui-mode).
+* Use os consoles do AEM para [adicionar módulos de interface](ch-configuring.md#adding-a-ui-module) e para [agrupá-los nos modos de interface](ch-configuring.md#adding-a-ui-mode).
 
 * Os desenvolvedores podem [criar tipos de módulo personalizados](/help/sites-developing/ch-extend.md#creating-contexthub-ui-module-types).
 

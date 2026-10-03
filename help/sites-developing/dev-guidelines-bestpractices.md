@@ -1,6 +1,6 @@
 ---
 title: Desenvolvimento do AEM – Diretrizes e práticas recomendadas
-description: Diretrizes e práticas recomendadas para o desenvolvimento de AEM
+description: Diretrizes e práticas recomendadas para desenvolver no AEM
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
@@ -11,11 +11,9 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '1083'
+source-wordcount: '1091'
 ht-degree: 1%
-
 ---
-
 # Desenvolvimento do AEM – Diretrizes e práticas recomendadas{#aem-development-guidelines-and-best-practices}
 
 ## Diretrizes para o uso de modelos e componentes {#guidelines-for-using-templates-and-components}
@@ -36,7 +34,7 @@ A maneira recomendada de abordar esse desafio seria:
 
 Isso ilustra como essa abordagem permite que os usuários e administradores contribuintes do site respondam rapidamente às necessidades comerciais, sem exigir o envolvimento de equipes de desenvolvimento. Métodos alternativos, como a criação de um modelo, geralmente são um exercício dispendioso, exigindo um processo de gerenciamento de alterações e o envolvimento da equipe de desenvolvimento. Isso torna todo o processo mais demorado e caro.
 
-Por conseguinte, os criadores de sistemas baseados no AEM devem utilizar:
+Os desenvolvedores de sistemas baseados em AEM devem, portanto, usar:
 
 * modelos e controle de acesso ao design de sistema de parágrafo para uniformidade e proteção da marca
 * sistema de parágrafo, incluindo suas opções de configuração para obter flexibilidade.
@@ -45,11 +43,11 @@ As seguintes regras gerais para desenvolvedores fazem sentido nos projetos mais 
 
 * Mantenha o número de modelos baixo - tão baixo quanto o número de estruturas de página fundamentalmente diferentes nos sites.
 * Forneça a flexibilidade e os recursos de configuração necessários para seus componentes personalizados.
-* Maximize o uso da potência e da flexibilidade do sistema de parágrafo AEM - os componentes parsys e iparsys.
+* Maximize o uso da potência e da flexibilidade do sistema de parágrafos do AEM - os componentes parsys e iparsys.
 
 ### Personalização de Componentes e Outros Elementos {#customizing-components-and-other-elements}
 
-Ao criar seus próprios componentes ou personalizar um componente existente, geralmente é mais fácil (e mais seguro) reutilizar as definições existentes. Os mesmos princípios também se aplicam a outros elementos dentro do AEM, por exemplo, o manipulador de erros.
+Ao criar seus próprios componentes ou personalizar um componente existente, geralmente é mais fácil (e mais seguro) reutilizar as definições existentes. Os mesmos princípios também se aplicam a outros elementos no AEM, por exemplo, o manipulador de erros.
 
 Isso pode ser feito copiando e sobrepondo a definição existente. Em outras palavras, copiando a definição de `/libs` para `/apps/<your-project>`. Essa nova definição, no `/apps`, pode ser atualizada de acordo com suas necessidades.
 
@@ -63,21 +61,21 @@ Por exemplo:
 
   Isso envolvia a sobreposição de uma definição de componente:
 
-   * Criar uma pasta de componentes em `/apps/<website-name>/components/<MyComponent>` copiando um componente existente:
+  * Criar uma pasta de componentes em `/apps/<website-name>/components/<MyComponent>` copiando um componente existente:
 
-      * Por exemplo, para personalizar a cópia do componente de Texto:
+    * Por exemplo, para personalizar a cópia do componente de Texto:
 
-         * de `/libs/foundation/components/text`
-         * para `/apps/myProject/components/text`
+      * de `/libs/foundation/components/text`
+      * para `/apps/myProject/components/text`
 
 * [Personalização de páginas mostradas pelo Manipulador de erros](/help/sites-developing/customizing-errorhandler-pages.md#how-to-customize-pages-shown-by-the-error-handler)
 
   Esse caso envolve a sobreposição de um servlet:
 
-   * No repositório, copie um ou mais scripts padrão:
+  * No repositório, copie um ou mais scripts padrão:
 
-      * de `/libs/sling/servlet/errorhandler/`
-      * para `/apps/sling/servlet/errorhandler/`
+    * de `/libs/sling/servlet/errorhandler/`
+    * para `/apps/sling/servlet/errorhandler/`
 
 >[!CAUTION]
 >
@@ -126,7 +124,7 @@ Use a sessão do usuário, não a sessão administrativa. Isso significa que voc
 slingRequest.getResourceResolver().adaptTo(Session.class);
 ```
 
-### Protect contra Scripts entre sites (XSS) {#protect-against-cross-site-scripting-xss}
+### Proteger contra Criação de script entre sites (XSS) {#protect-against-cross-site-scripting-xss}
 
 A criação de script entre sites (XSS) permite que invasores injetem código em páginas da Web visualizadas por outros usuários. Essa vulnerabilidade de segurança pode ser explorada por usuários mal-intencionados da Web para ignorar controles de acesso.
 
@@ -136,9 +134,9 @@ Além disso, um firewall de aplicativo da Web, como o [mod_security para Apache]
 
 >[!CAUTION]
 >
->O código de exemplo fornecido com o AEM pode não proteger contra esses ataques e geralmente depende da filtragem de solicitações por um firewall de aplicativo da Web.
+>O código de exemplo fornecido com o AEM pode não se proteger contra esses ataques e geralmente depende da filtragem de solicitações por um firewall de aplicativo da Web.
 
-A folha de características da API XSS contém informações que você deve saber para usar a API XSS e tornar um aplicativo AEM mais seguro. Você pode baixá-lo aqui:
+A folha de características da API XSS contém informações que você deve saber para usar a API XSS e tornar um aplicativo do AEM mais seguro. Você pode baixá-lo aqui:
 
 A folha de características do XSSAPI.
 
@@ -149,7 +147,7 @@ A folha de características do XSSAPI.
 Quanto a qualquer aplicativo da Internet, certifique-se de que, ao transportar informações confidenciais
 
 * o tráfego está protegido por SSL
-* O POST HTTP é usado se aplicável
+* HTTP POST é usado se aplicável
 
 Isso se aplica às informações confidenciais para o sistema (como configuração ou acesso administrativo) e às informações confidenciais para seus usuários (como seus detalhes pessoais)
 
@@ -157,7 +155,7 @@ Isso se aplica às informações confidenciais para o sistema (como configuraç�
 
 ### Personalização de Páginas de Erro {#customizing-error-pages}
 
-As páginas de erro podem ser personalizadas para AEM. Isso é aconselhável para que a instância não revele rastreamentos sling em erros internos do servidor.
+As páginas de erro podem ser personalizadas para o AEM. Isso é aconselhável para que a instância não revele rastreamentos sling em erros internos do servidor.
 
 Consulte [Personalizando Páginas de Erro mostradas pelo Manipulador de Erros](/help/sites-developing/customizing-errorhandler-pages.md) para obter detalhes completos.
 

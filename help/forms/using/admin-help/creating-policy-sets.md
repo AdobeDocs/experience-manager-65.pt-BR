@@ -1,21 +1,23 @@
 ---
 title: Criação e gerenciamento de conjuntos de políticas
+
 description: Os conjuntos de políticas são usados para agrupar políticas que têm um objetivo comercial comum. É possível criar, editar e excluir políticas em um conjunto de políticas.
+
+
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
+
 feature: Document Security
 exl-id: 736926af-ae41-4da3-b181-444de72407bd
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '1309'
+source-wordcount: '1311'
 ht-degree: 0%
-
 ---
-
 # Criação e gerenciamento de conjuntos de políticas {#creating-and-managing-policy-sets}
 
 >[!NOTE]
@@ -70,11 +72,11 @@ Durante a criação do conjunto de políticas, você pode usar o botão Voltar p
    * Marque a caixa de seleção do usuário ou grupo a ser adicionado e clique em Avançar.
    * Selecione as permissões do coordenador do conjunto de políticas e clique em Adicionar. As seguintes permissões podem ser definidas:
 
-      * Exibir eventos
-      * Gerenciar documentos (revogar e restabelecer o acesso aos documentos e alternar as políticas nos documentos)
-      * Gerenciar políticas (criar, editar e excluir políticas)
-      * Gerenciamento de editores de documentos (adicionar e remover editores de documentos)
-      * Delegar (adicionar e remover Coordenadores de conjuntos de políticas)
+     * Exibir eventos
+     * Gerenciar documentos (revogar e restabelecer o acesso aos documentos e alternar as políticas nos documentos)
+     * Gerenciar políticas (criar, editar e excluir políticas)
+     * Gerenciamento de editores de documentos (adicionar e remover editores de documentos)
+     * Delegar (adicionar e remover Coordenadores de conjuntos de políticas)
 
 1. Repita a etapa 5 para adicionar mais coordenadores de definições de políticas.
 1. Revise as configurações do coordenador de conjunto de políticas e clique em Próximo.
