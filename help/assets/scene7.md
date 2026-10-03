@@ -329,7 +329,7 @@ Por padrão, o Experience Manager pesquisa a pasta selecionada e todas as subpas
 >
 >* Na interface clássica, você também pode pesquisar por **Flash** e **FXG**. A filtragem desses tipos na interface otimizada para toque não é compatível.
 >
->* Ao pesquisar vídeos, você pesquisa uma única representação. Os resultados retornam a representação original (somente &amp;ast;.mp4) e a representação codificada.
+>* Ao pesquisar vídeos, você pesquisa uma única representação. Os resultados retornam a representação original (somente &ast;.mp4) e a representação codificada.
 >* Ao pesquisar um conjunto de vídeos adaptáveis, você pesquisa a pasta e todas as subpastas, mas somente se tiver adicionado uma palavra-chave à pesquisa. Se você não tiver adicionado uma palavra-chave, o Experience Manager não pesquisará nas subpastas.
 >
 
