@@ -11,11 +11,9 @@ feature: Communities
 role: Developer
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '683'
+source-wordcount: '693'
 ht-degree: 0%
-
 ---
-
 # Fundamentos de SRP e UGC {#srp-and-ugc-essentials}
 
 ## Introdução {#introduction}
@@ -104,7 +102,7 @@ As descrições a seguir do local de armazenamento podem ser úteis ao desenvolv
 
 **Local do componente**
 
-Quando um membro insere o UGC no ambiente de publicação, ele interage com um componente como parte de um site de AEM.
+Quando um membro insere o UGC no ambiente de publicação, ele interage com um componente como parte de um site do AEM.
 
 Um exemplo desse componente é o [componente de comentários](http://localhost:4502/content/community-components/en/comments.html) que existe no site do [Guia de Componentes da Comunidade](components-guide.md). O caminho para o nó do comentário no repositório local é:
 
@@ -124,7 +122,7 @@ O UGC não foi criado em nenhum desses locais e só deve ser acessado usando um 
 * Caminho raiz = `/content/usergenerated/asi/srp-choice`
 * Nó UGC para JSRP = `/content/usergenerated/asi/jcr/content/community-components/en/comments/jcr:content/content/includable/comments/srzd-let_it_be_`
 
-*Saiba* que, para o JSRP, o nó UGC *somente* estará presente na instância do AEM (autor ou publicação) em que foi inserido. Se inserido em uma instância de publicação, a moderação não será possível no console de moderação do autor.
+*Esteja ciente*, para JSRP, o nó UGC *somente* estará presente na instância do AEM (autor ou publicação) em que foi inserido. Se inserido em uma instância de publicação, a moderação não será possível no console de moderação do autor.
 
 ## Informações relacionadas {#related-information}
 

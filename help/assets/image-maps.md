@@ -8,11 +8,9 @@ exl-id: 77da4917-47ce-4f2e-b062-73cee312a7ea
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '269'
+source-wordcount: '273'
 ht-degree: 0%
-
 ---
-
 # Adicionar mapas de imagem {#adding-image-maps}
 
 Os mapas de imagem permitem adicionar uma ou mais áreas com hiperlink que funcionam como outros hiperlinks.
@@ -45,4 +43,4 @@ Os mapas de imagem permitem adicionar uma ou mais áreas com hiperlink que funci
 
    ![chlimage_1-426](assets/chlimage_1-426.png)
 
-   Se a opção Dynamic Media estiver habilitada, navegue até o Editor de ativos e clique em **[!UICONTROL Mapa]** para exibir todos os mapas de imagem aplicados.
+   Se a opção Dynamic Media estiver habilitada, navegue até o editor de Ativos e clique em **[!UICONTROL Mapa]** para exibir todos os mapas de imagem aplicados.

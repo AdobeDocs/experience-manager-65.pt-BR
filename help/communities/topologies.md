@@ -11,24 +11,22 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '552'
 ht-degree: 1%
-
 ---
-
 # Topologias recomendadas para comunidades {#recommended-topologies-for-communities}
 
 A partir do AEM Communities 6.1, uma abordagem única foi adotada para lidar com o conteúdo gerado pelo usuário (UGC) enviado pelos visitantes do site (membros) do ambiente de publicação.
 
-Essa abordagem é fundamentalmente diferente da maneira como a plataforma AEM lida com o conteúdo do site, que geralmente é gerenciado no ambiente do autor.
+Essa abordagem é fundamentalmente diferente da maneira como a plataforma AEM lida com o conteúdo do site que geralmente é gerenciado no ambiente de criação.
 
-A plataforma AEM usa um armazenamento de nós que replica o conteúdo do site do autor para a publicação, enquanto o AEM Communities usa um armazenamento único e comum para UGC que nunca é replicado.
+A plataforma do AEM usa um armazenamento de nós que replica o conteúdo do site do autor para a publicação, enquanto o AEM Communities usa um armazenamento único e comum para o UGC que nunca é replicado.
 
 Para o armazenamento UGC comum, é necessário escolher um [provedor de recursos de armazenamento (SRP)](working-with-srp.md). As opções recomendadas são:
 
 * [DSRP - Provedor de Recurso de Armazenamento de Banco de Dados Relacional](dsrp.md)
 * [MSRP - Provedor de Recurso de Armazenamento MongoDB](msrp.md)
-* [ASRP - Provedor de recurso de armazenamento de Adobe](asrp.md)
+* [ASRP - Provedor de recurso de armazenamento da Adobe](asrp.md)
 
 Uma outra opção do SRP, [JSRP - Provedor de Recurso de Armazenamento JCR](jsrp.md), não oferece suporte a um armazenamento UGC comum para os ambientes de criação e publicação para ambos os acessos.
 
@@ -38,12 +36,12 @@ A exigência de um armazenamento comum resulta nas seguintes topologias recomend
 >
 >Para o AEM Communities, [o UGC nunca é replicado](working-with-srp.md#ugc-never-replicated).
 >
->Quando a implantação não incluir um [armazenamento comum](working-with-srp.md), o UGC será visível somente na instância de publicação ou autor do AEM em que foi inserido.
+>Quando a implantação não incluir um [armazenamento comum](working-with-srp.md), o UGC será visível somente na instância de publicação ou autor do AEM na qual foi inserido.
 >
 
 >[!NOTE]
 >
->Para obter mais informações sobre a plataforma AEM, consulte [Implantações recomendadas](../../help/sites-deploying/recommended-deploys.md) e [Introdução à plataforma AEM](../../help/sites-deploying/data-store-config.md).
+>Para obter mais informações sobre a plataforma AEM, consulte [Implantações Recomendadas](../../help/sites-deploying/recommended-deploys.md) e [Introdução à Plataforma AEM](../../help/sites-deploying/data-store-config.md).
 
 ## Para produção {#for-production}
 
@@ -61,7 +59,7 @@ Para escolher o armazenamento comum apropriado, considere cuidadosamente as [car
 
 Para obter mais detalhes sobre microkernals do Oak, visite [Implantações recomendadas](../../help/sites-deploying/recommended-deploys.md).
 
-### Farm do Publish TarMK {#tarmk-publish-farm}
+### Farm de publicação do TarMK {#tarmk-publish-farm}
 
 Quando a topologia é um farm de publicação, os tópicos relevantes de importância são:
 

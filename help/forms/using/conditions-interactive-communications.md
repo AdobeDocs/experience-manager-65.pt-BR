@@ -1,20 +1,23 @@
 ---
 title: Condições em comunicações interativas
+
 description: Criação e edição de fragmentos de condição a serem usados em Comunicações interativas - a condição é um dos quatro tipos de fragmentos de documento usados para criar Comunicações interativas. Os outros três são textos, listas e fragmentos de layout.
+
+
 topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
+
 docset: aem65
+
 feature: Interactive Communication
 exl-id: 0c0dc6a2-b889-4516-8e08-1e9d31be2cce
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '1494'
+source-wordcount: '1508'
 ht-degree: 1%
-
 ---
-
 # Condições em comunicações interativas{#conditions-in-interactive-communications}
 
 Criação e edição de fragmentos de condição a serem usados em Comunicações interativas - a condição é um dos quatro tipos de fragmentos de documento usados para criar Comunicações interativas. Os outros três são textos, listas e fragmentos de layout.
@@ -75,11 +78,11 @@ Os ativos nas condições que são renderizados com base nas regras aplicadas e 
 
    ![createconditionscreenassetsaddedannotated](assets/createconditionscreenassetsaddedannotated.png)
 
-   **[A] Rejeitar Alteração.** Selecione este ícone para rejeitar as alterações que você fez no ativo e na regra na condição.
-   **[B] Aceitar a alteração.** Selecione este ícone para aceitar as alterações feitas no ativo e na regra na condição.
-   **[C] Ativo duplicado.** Selecione este ícone para criar uma cópia do ativo junto com a regra aplicada, se houver, na condição. Em seguida, você pode continuar editando a regra e o ativo para o ativo duplicado. Duplicar um ativo é útil para criar regras semelhantes para exibir ativos alternativos com base em um contexto específico.
-   **[D] Mostrar Visualização.** Selecione este ícone para exibir uma visualização do ativo na página Criar\Editar Condição.
-   Reordenação de **&#39;server&#39;.** Selecione e segure este ícone para arrastar e soltar ativos e reorganizá-los em uma condição.
+   **[A] Rejeitar Alteração.** Selecione esse ícone para rejeitar as alterações que você pode ter feito no ativo e na regra na condição.
+   **[B] Aceitar Alteração.** Selecione esse ícone para aceitar as alterações feitas no ativo e na regra na condição.
+   **[C] Ativo Duplicado.** Selecione esse ícone para criar uma cópia do ativo junto com a regra aplicada, se houver, na condição. Em seguida, você pode continuar editando a regra e o ativo para o ativo duplicado. Duplicar um ativo é útil para criar regras semelhantes para exibir ativos alternativos com base em um contexto específico.
+   **[D] Mostrar Visualização.** Selecione esse ícone para exibir uma visualização do ativo na página Criar\Editar condição.
+   Reordenação de **&#39;servidor&#39;.** Selecione e mantenha pressionado esse ícone para arrastar e soltar ativos e reorganizá-los em uma condição.
 
    Você pode selecionar as seguintes opções para especificar como a condição se comporta no tempo de execução:
 

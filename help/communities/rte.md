@@ -11,11 +11,9 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '237'
+source-wordcount: '240'
 ht-degree: 3%
-
 ---
-
 # Fundamentos do Editor de Rich Text {#rich-text-editor-essentials}
 
 ## Visão geral {#overview}
@@ -60,7 +58,7 @@ Por questões de segurança, as opções de hiperlink não estão incluídas no 
 Para adicionar as opções de hiperlink à barra de ferramentas:
 
 * Adicione uma barra de ferramentas chamada &quot; `links`&quot;
-   * `{ name: 'links', items: [ 'Link','Unlink','Anchor' ] }`
+  * `{ name: 'links', items: [ 'Link','Unlink','Anchor' ] }`
 * Selecione **[!UICONTROL Salvar tudo]**
 
 #### /libs/clientlibs/social/commons/scf/ckrte.js {#libs-clientlibs-social-commons-scf-ckrte-js}

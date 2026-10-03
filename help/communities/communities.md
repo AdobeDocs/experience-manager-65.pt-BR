@@ -11,11 +11,9 @@ feature: Communities
 role: Developer
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '399'
 ht-degree: 5%
-
 ---
-
 # Comunidades de desenvolvimento  {#developing-communities}
 
 ## Visão geral {#overview}
@@ -56,7 +54,7 @@ Componentes, funções e recursos do AEM Communities fornecem os elementos funda
 * [Clientlibs para componentes das comunidades](clientlibs.md)
 * [Funções da comunidade](functions.md)
 * [Modelos de grupo da comunidade](tools-groups.md)
-* [Modelos do site da comunidade](sites.md)
+* [Modelos de site da comunidade](sites.md)
 
 ## Membros da comunidade {#community-members}
 

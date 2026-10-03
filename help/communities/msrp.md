@@ -11,11 +11,9 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1142'
+source-wordcount: '1220'
 ht-degree: 0%
-
 ---
-
 # MSRP - Provedor de Recurso de Armazenamento MongoDB {#msrp-mongodb-storage-resource-provider}
 
 ## Sobre o MSRP {#about-msrp}
@@ -28,22 +26,22 @@ Consulte também [Características das Opções SRP](working-with-srp.md#charact
 
 * [MongoDB](https://www.mongodb.org/):
 
-   * Versão 2.6 ou superior
-   * Não é necessário configurar mongos ou fragmentação
-   * Recomendamos o uso de um [conjunto de réplicas](#mongoreplicaset)
-   * Pode ser executado no mesmo host que o AEM ou remotamente
+  * Versão 2.6 ou superior
+  * Não é necessário configurar mongos ou fragmentação
+  * Recomendamos o uso de um [conjunto de réplicas](#mongoreplicaset)
+  * Pode ser executado no mesmo host que o AEM ou remotamente
 
 * [Apache Solr](https://lucene.apache.org/solr/):
 
-   * Solr versão 7.0
-   * Solr requer Java 1.7 ou superior
-   * Nenhum serviço é necessário
-   * Opção de modos de execução:
-      * Modo independente
-      * [Modo SolrCloud](solr.md#solrcloud-mode) (recomendado para ambientes de produção)
-   * Opção de Pesquisa Multilíngue (MLS):
-      * [Instalando o MLS Padrão](solr.md#installing-standard-mls)
-      * [Instalando o MLS Avançado](solr.md#installing-advanced-mls)
+  * Solr versão 7.0
+  * Solr requer Java 1.7 ou superior
+  * Nenhum serviço é necessário
+  * Opção de modos de execução:
+    * Modo independente
+    * [Modo SolrCloud](solr.md#solrcloud-mode) (recomendado para ambientes de produção)
+  * Opção de Pesquisa Multilíngue (MLS):
+    * [Instalando o MLS Padrão](solr.md#installing-standard-mls)
+    * [Instalando o MLS Avançado](solr.md#installing-advanced-mls)
 
 ## Configuração do MongoDB {#mongodb-configuration}
 
@@ -60,41 +58,41 @@ Na criação, para acessar o console Configuração de armazenamento:
 * Selecionar **[!UICONTROL Provedor de Recurso de Armazenamento MongoDB (MSRP)]**
 * **[!UICONTROL Configuração do mongoDB]**
 
-   * **[!UICONTROL URI do mongoDB]**
+  * **[!UICONTROL URI do mongoDB]**
 
-     *padrão*: mongodb://localhost/?maxPoolSize=10&amp;waitQueueMultiple=5&amp;readPreference=secondaryPreferred
+    *padrão*: mongodb://localhost/?maxPoolSize=10&amp;waitQueueMultiple=5&amp;readPreference=secondaryPreferred
 
-   * **[!UICONTROL Banco de dados do mongoDB]**
+  * **[!UICONTROL Banco de dados do mongoDB]**
 
-     *padrão*: comunidades
+    *padrão*: comunidades
 
-   * **[!UICONTROL Coleção de UGC do mongoDB]**
+  * **[!UICONTROL Coleção de UGC do mongoDB]**
 
-     *padrão*: conteúdo
+    *padrão*: conteúdo
 
-   * **[!UICONTROL Coleção de anexos do mongoDB]**
+  * **[!UICONTROL Coleção de anexos do mongoDB]**
 
-     *padrão*: anexos
+    *padrão*: anexos
 
 * **[!UICONTROL SolrConfiguration]**
 
-   * **[Zookeeper](https://cwiki.apache.org/confluence/display/solr/Using+ZooKeeper+to+Manage+Configuration+Files) Host**
+  * **[Zookeeper](https://cwiki.apache.org/confluence/display/solr/Using+ZooKeeper+to+Manage+Configuration+Files) Host**
 
-     Ao executar no [modo SolrCloud](solr.md#solrcloud-mode) com um ZooKeeper externo, defina este valor como `HOST:PORT` para o ZooKeeper, como *my.server.com:2181*
+    Ao executar no [modo SolrCloud](solr.md#solrcloud-mode) com um ZooKeeper externo, defina este valor como `HOST:PORT` para o ZooKeeper, como *my.server.com:2181*
 
-     Para um Conjunto do ZooKeeper, insira valores `HOST:PORT` separados por vírgula, como *host1:2181,host2:2181*
+    Para um Conjunto do ZooKeeper, insira valores `HOST:PORT` separados por vírgula, como *host1:2181,host2:2181*
 
-     Deixe em branco se estiver executando o Solr no modo independente usando o ZooKeeper interno.
-     *Padrão*: *&lt;em branco>*
+    Deixe em branco se estiver executando o Solr no modo independente usando o ZooKeeper interno.
+    *Padrão*: *&lt;em branco>*
 
-      * **[!UICONTROL URL Solr]**
+    * **[!UICONTROL URL Solr]**
 O URL usado para se comunicar com Solr no modo independente.
 Deixe em branco se estiver executando no modo SolrCloud.
-        *Padrão*: https://127.0.0.1:8983/solr/
+      *Padrão*: https://127.0.0.1:8983/solr/
 
-      * **[!UICONTROL Coleção Solr]**
+    * **[!UICONTROL Coleção Solr]**
 O nome da coleção Solr.
-        *Padrão*: coleção1
+      *Padrão*: coleção1
 
 * Selecionar **[!UICONTROL Enviar]**
 
@@ -150,7 +148,7 @@ Para disponibilizar a configuração idêntica no ambiente de publicação, faç
 * Navegue do menu principal para **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > **[!UICONTROL Replicação]**.
 * Selecionar **[!UICONTROL Ativar árvore]**
 * **[!UICONTROL Caminho Inicial]**:
-   * Navegar até `/etc/socialconfig/srpc/`
+  * Navegar até `/etc/socialconfig/srpc/`
 * Selecionar **[!UICONTROL Ativar]**
 
 ## Gerenciamento de dados do usuário {#managing-user-data}
@@ -185,7 +183,7 @@ O formato básico é:
 
 cURL -u *signin* -d *data* *reindex-url*
 
-*entrada* = administrator-id:password
+*entrada* = id-administrador:password
 Por exemplo: admin:admin
 
 *dados* = &quot;batchSize=*size*&amp;path=*path&quot;*
@@ -222,12 +220,12 @@ Para configurar o MSRP para um ambiente de demonstração ou desenvolvimento, co
 
 Verifique se o MSRP foi configurado como o provedor padrão verificando a configuração da opção de armazenamento. Por padrão, o provedor de recursos de armazenamento é JSRP.
 
-Em todas as instâncias de AEM de autoria e publicação, revisite o [console de Configuração de Armazenamento](srp-config.md) ou verifique o repositório AEM:
+Em todas as instâncias do AEM de criação e publicação, revisite o [console de Configuração de Armazenamento](srp-config.md) ou verifique o repositório do AEM:
 
 * No JCR, se [/etc/socialconfig](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/)
 
-   * Não contém um nó [srpc](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc), significa que o provedor de armazenamento é JSRP.
-   * Se o nó srpc existir e contiver o nó [defaultconfiguration](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc/defaultconfiguration), as propriedades defaultconfiguration deverão definir MSRP como o provedor padrão.
+  * Não contém um nó [srpc](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc), significa que o provedor de armazenamento é JSRP.
+  * Se o nó srpc existir e contiver o nó [defaultconfiguration](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc/defaultconfiguration), as propriedades defaultconfiguration deverão definir MSRP como o provedor padrão.
 
 ### O UGC desaparece após a atualização {#ugc-disappears-after-upgrade}
 
@@ -235,9 +233,9 @@ Se estiver atualizando de um site existente do AEM Communities 6.0, qualquer UGC
 
 Há uma ferramenta de código aberto disponível no GitHub para esta finalidade:
 
-* [Ferramenta de Migração UGC do AEM Communities](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration)
+* [Ferramenta de migração UGC do AEM Communities](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration)
 
-A ferramenta de migração pode ser personalizada para exportar o UGC de versões anteriores de comunidades sociais do AEM para importação no AEM Communities 6.1 ou posterior.
+A ferramenta de migração pode ser personalizada para exportar o UGC de versões anteriores das comunidades sociais do AEM para importação no AEM Communities 6.1 ou posterior.
 
 ### Erro - campo indefinido provider_id {#error-undefined-field-provider-id}
 
@@ -263,7 +261,7 @@ Para resolver o erro, ao seguir as instruções para [Instalando MLS Padrão](so
 Se uma tentativa de fazer uma conexão segura com o servidor MongoDB falhar devido a uma definição de classe ausente, é necessário atualizar o pacote de drivers MongoDB, `mongo-java-driver`, disponível no repositório público do Maven.
 
 1. Baixe o driver de [https://search.maven.org/#artifactdetails%7Corg.mongodb%7Cmongo-java-driver%7C2.13.2%7Cjar](https://search.maven.org/#artifactdetails%7Corg.mongodb%7Cmongo-java-driver%7C2.13.2%7Cjar) (versão 2.13.2 ou posterior).
-1. Copie o pacote na pasta &quot;crx-quickstart/install&quot; para uma instância de AEM.
+1. Copie o pacote na pasta &quot;crx-quickstart/install&quot; de uma instância do AEM.
 1. Reinicie a instância do AEM.
 
 ## Recursos {#resources}

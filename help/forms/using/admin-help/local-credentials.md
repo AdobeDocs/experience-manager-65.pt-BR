@@ -11,11 +11,9 @@ feature: Adaptive Forms,Document Security
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '545'
 ht-degree: 0%
-
 ---
-
 # Gerenciar credenciais locais {#managing-local-credentials}
 
 >[!NOTE]
@@ -28,7 +26,7 @@ Os formulários AEM são compatíveis com credenciais RSA e DSA de até 4.096 bi
 
 É possível importar e exportar qualquer número de credenciais. Se você quiser substituir uma credencial expirada usando o mesmo alias, exclua a credencial e importe a nova credencial com o mesmo alias.
 
-Para obter informações e instruções relacionadas às extensões do Acrobat Reader DC, consulte [Configurando credenciais para uso com extensões do Acrobat Reader DC](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md#configuring-credentials-for-use-with-acrobat-reader-dc-extensions).
+Para obter informações e instruções relacionadas às extensões do Acrobat Reader DC, consulte [Configuração de credenciais para uso com extensões do Acrobat Reader DC](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md#configuring-credentials-for-use-with-acrobat-reader-dc-extensions).
 
 ## Importar uma credencial {#import-a-credential}
 
@@ -36,12 +34,12 @@ Para obter informações e instruções relacionadas às extensões do Acrobat R
 1. Clique em Importar. Em Tipo de armazenamento de confiança, selecione uma destas opções:
 
    * **Credencial de Assinatura de Documento:** Uma credencial usada para emitir uma assinatura digital em um documento.
-   * **Credencial de extensões do Acrobat Reader DC:** um certificado digital específico para extensões do Acrobat Reader DC que permite que os direitos de uso do Adobe Reader sejam ativados nos documentos PDF produzidos.
-   * **Padrão:** Indica que esta é a credencial padrão a ser usada com as extensões do Acrobat Reader DC.
+   * **Credencial de extensões do Acrobat Reader DC:** um certificado digital específico das extensões do Acrobat Reader DC que permite que os direitos de uso do Adobe Reader sejam ativados nos documentos do PDF produzidos.
+   * **Padrão:** indica que esta é a credencial padrão a ser usada com as extensões do Acrobat Reader DC.
 
-   Para obter informações sobre como obter uma credencial, consulte [Preparando para instalar formulários AEM](https://helpx.adobe.com/pdf/aem-forms/6-3/prepare-install-single-server.pdf).
+   Para obter informações sobre como obter uma credencial, consulte [Preparando para instalar formulários do AEM](https://helpx.adobe.com/pdf/aem-forms/6-3/prepare-install-single-server.pdf).
 
-1. Na caixa Alias, digite um identificador para a credencial. Esse identificador é usado como o nome de exibição da credencial nas Extensões da Acrobat Reader DC e no serviço de assinatura. Esse alias também é usado para acessar a credencial de forma programática usando o SDK de formulários AEM.
+1. Na caixa Alias, digite um identificador para a credencial. Esse identificador é usado como o nome de exibição da credencial nas extensões do Acrobat Reader DC e no serviço de assinatura. Esse alias também é usado para acessar a credencial de forma programática usando o AEM Forms SDK.
 
    >[!NOTE]
    >

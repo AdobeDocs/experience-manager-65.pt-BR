@@ -12,11 +12,9 @@ feature: Authoring,Personalization
 role: User
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '2548'
-ht-degree: 4%
-
+source-wordcount: '2564'
+ht-degree: 5%
 ---
-
 # Componentes do Adobe Campaign{#adobe-campaign-components}
 
 Ao integrar com o Adobe Campaign, você tem componentes disponíveis para o ao trabalhar com boletins informativos e formulários. Ambos estão descritos neste documento.
@@ -25,7 +23,7 @@ Ao integrar com o Adobe Campaign, você tem componentes disponíveis para o ao t
 >
 >Os componentes de email do AEM foram descontinuados. Devido à natureza do email, que mescla conteúdo e estilo, os componentes de email fornecidos prontos para uso pelo AEM tornam-se de reutilização limitada para os clientes, devido à necessidade de implementar estilos personalizados em quaisquer componentes que sejam necessários para projetos.
 >
->Os componentes de email podem ser implementados no nível do projeto, e os componentes de email do AEM obsoletos ilustram como isso pode ser feito. No entanto, não use esses componentes obsoletos em projetos.
+>Os componentes de email podem ser implementados no nível do projeto, e os componentes de email obsoletos do AEM ilustram como isso pode ser feito. No entanto, não use esses componentes obsoletos em projetos.
 
 ## Componentes do informativo do Adobe Campaign {#adobe-campaign-newsletter-components}
 
@@ -62,7 +60,7 @@ Você pode configurar o seguinte:
 Se quiser usar um nome diferente do título da página, insira-o aqui.
 
 * **Nível do cabeçalho (1, 2, 3, 4)**
-O nível do cabeçalho com base nos tamanhos dos cabeçalhos HTML 1-4.
+O nível do cabeçalho com base nos tamanhos 1 a 4 do cabeçalho do HTML.
 
 O exemplo a seguir mostra um componente de Cabeçalho (Campanha) sendo exibido.
 
@@ -176,20 +174,20 @@ Arraste uma imagem do localizador de conteúdo ou clique em para navegar até um
 * **Propriedades da Imagem** (**Propriedades Avançadas da Imagem**)
 Permite especificar o seguinte:
 
-   * **Título**
-O título do bloco; é mostrado por mouseover.
+  * **Título**
+    O título do bloco; é mostrado por mouseover.
 
-   * **Texto Alternativo**
-Texto alternativo a ser mostrado se a imagem não puder ser exibida.
+  * **Texto Alternativo**
+    Texto alternativo a ser mostrado se a imagem não puder ser exibida.
 
-   * **Vincular a**
-Crie um link para ativos ou outras páginas no seu site.
+  * **Vincular a**
+    Crie um link para ativos ou outras páginas no seu site.
 
-   * **Descrição**
-Uma descrição da imagem.
+  * **Descrição**
+    Uma descrição da imagem.
 
-   * **Tamanho**
-Define a altura e a largura da imagem.
+  * **Tamanho**
+    Define a altura e a largura da imagem.
 
 >[!NOTE]
 >
@@ -267,7 +265,7 @@ A tabela a seguir descreve os componentes que estão disponíveis para exibir e 
   <tr>
    <td><p>Campo de opções (Campanha)</p> </td>
    <td><p>byte com valores associados</p> </td>
-   <td><p>Sexo</p> </td>
+   <td><p>Gênero</p> </td>
   </tr>
   <tr>
    <td><p>Campo de texto (Campanha)</p> </td>
