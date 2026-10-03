@@ -11,24 +11,22 @@ feature: Adaptive Forms
 role: Admin, User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '550'
 ht-degree: 0%
-
 ---
-
 # Envio de uma confirmação de envio de formulário por email {#sending-a-form-submission-acknowledgement-via-email}
 
 ## Envio de dados do formulário adaptável {#adaptive-form-data-submission}
 
 Os formulários adaptáveis fornecem vários fluxos de trabalho de [ações de envio](../../forms/using/configuring-submit-actions.md) prontos para uso para enviar os dados do formulário para diferentes pontos de extremidade.
 
-Por exemplo, a ação de envio **[!UICONTROL Enviar email]** envia um email após o envio bem-sucedido de um formulário adaptável. Ele também pode ser configurado para enviar os dados do formulário e o PDF no email.
+Por exemplo, a ação de envio **[!UICONTROL Enviar email]** envia um email após o envio bem-sucedido de um formulário adaptável. Ele também pode ser configurado para enviar os dados do formulário e a PDF no email.
 
 Este artigo detalha as etapas para ativar a ação de Email em um formulário adaptável e as diferentes configurações que ele fornece.
 
 >[!NOTE]
 >
->Você também pode usar a opção **[!UICONTROL Enviar PDF por email]** para enviar o formulário preenchido por email como um anexo de PDF. As opções de configuração disponíveis para esta ação são iguais às opções disponíveis para a ação **[!UICONTROL Enviar email]**. A ação PDF de email está disponível somente para formulários adaptáveis baseados em XFA
+>Você também pode usar a opção **[!UICONTROL Enviar PDF por email]** para enviar o formulário preenchido por email como um anexo do PDF. As opções de configuração disponíveis para esta ação são iguais às opções disponíveis para a ação **[!UICONTROL Enviar email]**. A ação Email PDF está disponível somente para formulários adaptáveis baseados em XFA
 
 ## Enviar ação de email {#email-action}
 
@@ -36,7 +34,7 @@ A ação Enviar email permite que um autor envie emails automaticamente para um 
 
 >[!NOTE]
 >
->Para usar a ação Enviar email, você precisa configurar o serviço de email AEM conforme descrito em [Configurando o serviço de email](/help/sites-administering/notification.md#configuring-the-mail-service).
+>Para usar a ação Enviar email, você precisa configurar o serviço de email do AEM conforme descrito em [Configurando o serviço de email](/help/sites-administering/notification.md#configuring-the-mail-service).
 
 ### Ativação da ação Enviar email em um formulário adaptável {#enabling-email-action-on-an-adaptive-form}
 

@@ -11,11 +11,9 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '254'
+source-wordcount: '259'
 ht-degree: 2%
-
 ---
-
 # Visão geral do fluxo de trabalho do Forms {#overview-of-forms-workflow}
 
 O fluxo de trabalho do Forms permite que os usuários projetem, gerenciem e otimizem processos centrados no ser humano. Usando o fluxo de trabalho de formulários, os usuários também podem gerenciar aplicativos automatizados de processos de negócios que conectam sistemas e pessoas.

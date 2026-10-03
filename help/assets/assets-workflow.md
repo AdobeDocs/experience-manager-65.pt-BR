@@ -8,11 +8,9 @@ exl-id: e7c84385-efb3-4997-83ff-7a7f31582469
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '962'
+source-wordcount: '970'
 ht-degree: 2%
-
 ---
-
 # Processar ativos digitais {#process-assets}
 
 O [!DNL Adobe Experience Manager Assets] permite que você trabalhe com seus ativos digitais de várias maneiras para permitir um processamento de ativos robusto. Você pode usar os métodos de processamento padrão ou personalizados para garantir a conclusão completa do processo de negócios, auditorias e conformidade, detecção e distribuição, e a sanidade básica de seus ativos digitais. Você pode realizar as tarefas de gerenciamento de ativos enquanto atinge a escala e a personalização necessárias.

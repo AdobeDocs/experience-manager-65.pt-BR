@@ -10,9 +10,7 @@ source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
 workflow-type: tm+mt
 source-wordcount: '232'
 ht-degree: 0%
-
 ---
-
 # Relatório de transações do AEM Forms {#transaction-reports-overview}
 
 O relatório de transações no AEM Forms permite monitorar todas as transações desde uma data designada na implantação do AEM Forms. Essa funcionalidade foi projetada para obter informações sobre o uso de formulários, ajudando assim as partes interessadas da empresa a obter uma compreensão profunda de seus volumes de processamento digital. As transações, neste contexto, abrangem várias atividades, como:

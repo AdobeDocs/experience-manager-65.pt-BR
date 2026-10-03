@@ -11,11 +11,9 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '187'
+source-wordcount: '190'
 ht-degree: 0%
-
 ---
-
 # Sobre administração e terminologia do processo {#about-administration-and-process-terminology}
 
 >[!NOTE]

@@ -1,6 +1,6 @@
 ---
 title: Configurando o conector para o IBM FileNet
-description: Saiba como configurar o Conector para o IBM FileNet para permitir a comunicação entre os formulários AEM e o IBM FileNet.
+description: Saiba como configurar o Conector para IBM FileNet para habilitar a comunicação entre o AEM Forms e o IBM FileNet.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/connecting_to_a_content_management_system
@@ -11,22 +11,20 @@ role: User, Developer
 feature: Adaptive Forms
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '742'
+source-wordcount: '748'
 ht-degree: 1%
-
 ---
-
 # Configurando o conector para o IBM FileNet {#configuring-connector-for-ibm-filenet}
 
 >[!NOTE]
 > 
 > Verifique se o usuário tem privilégios de administrador para acessar o console do administrador.
 
-O conector para IBM FileNet permite a comunicação entre os formulários AEM e o IBM FileNet. Para obter informações adicionais em segundo plano, consulte &quot;Conectores para ECM&quot; na [Referência de Serviços](https://www.adobe.com/go/learn_aemforms_services_63).
+O conector para IBM FileNet permite a comunicação entre o AEM Forms e o IBM FileNet. Para obter informações adicionais em segundo plano, consulte &quot;Conectores para ECM&quot; na [Referência de Serviços](https://www.adobe.com/go/learn_aemforms_services_63).
 
 >[!NOTE]
 >
->Em versões anteriores, os ativos podiam ser armazenados em um repositório ECM. Nesta versão, os ativos são armazenados no repositório nativo de formulários AEM e os serviços do Provedor do repositório foram descontinuados. A migração de ativos de um repositório de ECM para o repositório de formulários AEM é feita ao fazer uma atualização para formulários AEM. Para obter mais informações, consulte o Guia de atualização de formulários AEM para o servidor de aplicativos.
+>Em versões anteriores, os ativos podiam ser armazenados em um repositório ECM. Nesta versão, os ativos são armazenados no repositório nativo do AEM Forms e os serviços do Provedor do repositório foram descontinuados. A migração de ativos de um repositório ECM para o repositório do AEM Forms é feita ao fazer um upgrade para o AEM Forms. Para obter mais informações, consulte o Guia de atualização de formulários do AEM para o servidor de aplicativos.
 
 ## Configurar a conexão com o mecanismo de conteúdo {#configure-the-connection-to-the-content-engine}
 
@@ -53,7 +51,7 @@ O IBM FileNet P8 Content Engine fornece serviços de software para gerenciar con
    * Se você selecionou Limpar como o esquema de proteção de credencial, essa palavra-chave e seu valor serão ignorados.
    * Se você selecionou Simétrico como esquema de proteção de credencial, o caminho inserido aponta para o local de um arquivo de criptografia no Forms Server que contém as chaves criptográficas a serem usadas.
 
-1. Na caixa Armazenamento de objetos padrão, digite o conector de armazenamento de objetos ao qual o AEM Forms se conecta por padrão.
+1. Na caixa Repositório de objetos padrão, digite o conector de repositório de objetos ao qual o AEM Forms se conecta por padrão.
 1. Na caixa Nome do Usuário, informe o nome de um usuário que tenha direitos de acesso ao armazenamento de objetos default especificado na etapa anterior.
 1. Na caixa Senha, digite a senha do usuário e clique em Salvar.
 

@@ -1,5 +1,5 @@
 ---
-title: Tipos de certificado usados por extensões do Acrobat Reader DC
+title: Tipos de certificado usados pelas extensões do Acrobat Reader DC
 description: Saiba mais sobre os tipos de certificados usados pelas extensões do Acrobat Reader DC.
 contentOwner: admin
 content-type: reference
@@ -11,19 +11,17 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '944'
+source-wordcount: '947'
 ht-degree: 2%
-
 ---
-
-# Tipos de certificado usados por extensões do Acrobat Reader DC {#certificate-types-used-by-acrobat-reader-dc-extensions}
+# Tipos de certificado usados pelas extensões do Acrobat Reader DC {#certificate-types-used-by-acrobat-reader-dc-extensions}
 
 O Visualizador de Certificados fornece as seguintes informações sobre o certificado:
 
 * Nome &quot;amigável&quot; do certificado
 * Perfis de certificado
 * Período de validade
-* direitos de uso de extensões do Acrobat Reader DC
+* Direitos de uso de extensões do Acrobat Reader DC
 
 ## Nome &quot;amigável&quot; do certificado {#certificate-friendly-name}
 
@@ -33,15 +31,15 @@ SÃO 2D Código de barras Produção completa V6.1 P8 0002054
 
 A string contém os seguintes elementos:
 
-**Tipo de certificado:** Descreve os módulos de formulários AEM ativados pelo certificado e o nível de ativação, como Código de Barras 2D Completo. Para obter uma lista dos tipos de certificados disponíveis, consulte a coluna Tipo na tabela na seção Perfis de certificado.
+**Tipo de certificado:** Descreve os módulos de formulários do AEM que o certificado ativa, e o nível de ativação, como o código de barras 2D completo. Para obter uma lista dos tipos de certificados disponíveis, consulte a coluna Tipo na tabela na seção Perfis de certificado.
 
 **Tipo de implantação:** indica o uso pretendido do certificado, como Produção. O valor pode ser Avaliação ou Produção. Para obter uma lista dos tipos de implantação associados a cada tipo de certificado, consulte a coluna Tipo de implantação na tabela na seção Perfis de certificado.
 
-**Versão de direitos de uso:** descreve a versão do algoritmo de direitos de uso para o qual o certificado pode ser usado, como V6.1. Esta versão não significa a versão do Acrobat ou as extensões do Acrobat Reader DC.
+**Versão de direitos de uso:** descreve a versão do algoritmo de direitos de uso para o qual o certificado pode ser usado, como V6.1. Esta versão não significa a versão das extensões do Acrobat ou do Acrobat Reader DC.
 
 **Código do perfil:** o código do perfil é uma descrição resumida das propriedades completas do certificado, como por exemplo, P8. Para obter uma lista dos códigos de perfil associados a cada tipo de arquivo, consulte a coluna Código de perfil na tabela na seção Perfis de certificado.
 
-**Número de série:** um número de série é atribuído a cada certificado emitido pelo Adobe, como 0002054. O Suporte Adobe Enterprise ou um representante de conta Adobe Enterprise pode usar esse número de série para rastrear o certificado a um pedido de produto específico ou a um relacionamento OEM.
+**Número de série:** um número de série é atribuído a cada certificado emitido pela Adobe, como 0002054. O Suporte Enterprise da Adobe ou um representante de conta Enterprise da Adobe pode usar esse número de série para rastrear o certificado a um pedido de produto específico ou a um relacionamento OEM.
 
 ## Perfis de certificado {#certificate-profiles}
 
@@ -77,13 +75,13 @@ A tabela a seguir lista os perfis de certificado que você pode encontrar ao ana
   </tr>
   <tr>
    <td><p>P4</p></td>
-   <td><p>Extensões Acrobat Reader DC, Uso interno do Adobe</p></td>
+   <td><p>Extensões do Acrobat Reader DC, Uso interno da Adobe</p></td>
    <td><p>2 anos</p></td>
    <td><p>Produção</p></td>
   </tr>
   <tr>
    <td><p>P5</p></td>
-   <td><p>Extensões da Acrobat Reader DC, Integração de parceiros</p></td>
+   <td><p>Extensões do Acrobat Reader DC, Integração de parceiros</p></td>
    <td><p>2 anos</p></td>
    <td><p>Avaliação e teste</p></td>
   </tr>
@@ -148,13 +146,13 @@ A tabela a seguir lista os perfis de certificado que você pode encontrar ao ana
 
 Os certificados de avaliação são emitidos para clientes e desenvolvedores para que eles possam avaliar e desenvolver aplicativos de amostra para produtos. O período de validade destes certificados está compreendido entre 60 e 90 dias. Expiram no final do segundo mês seguinte aos dados da emissão.
 
-Os certificados de integração de parceiros são emitidos para parceiros de negócios Adobe para oferecer suporte ao desenvolvimento, à integração, à criação de protótipos e à demonstração de software. Estes certificados são válidos por dois anos a contar da data de emissão.
+Os certificados de integração de parceiros são emitidos para parceiros de negócios da Adobe para oferecer suporte ao desenvolvimento, à integração, à criação de protótipos e à demonstração de software. Estes certificados são válidos por dois anos a contar da data de emissão.
 
-Os certificados de uso interno do Adobe são usados no Adobe para oferecer suporte ao desenvolvimento, integração, protótipo e demonstração de software. Estes certificados são válidos por dois anos a contar da data de emissão.
+Os certificados de uso interno da Adobe são usados na Adobe para oferecer suporte ao desenvolvimento, integração, protótipo e demonstração de software. Estes certificados são válidos por dois anos a contar da data de emissão.
 
 Os certificados de produção são emitidos para clientes que compraram extensões do Acrobat Reader DC. Esses certificados são válidos pelo período máximo permitido pela autoridade de certificação (CA), mostrado como *Máx* na tabela Perfis de certificado.
 
-## direitos de uso de extensões do Acrobat Reader DC {#acrobat-reader-dc-extensions-usage-rights}
+## Direitos de uso de extensões do Acrobat Reader DC {#acrobat-reader-dc-extensions-usage-rights}
 
 Ao examinar o certificado de extensões do Acrobat Reader DC no Visualizador de certificados, você pode selecionar o item de direitos de uso na guia Detalhes (se configurada) para ver uma lista discriminada dos direitos de uso do Adobe Reader que o certificado pode ativar. Os direitos de uso ativados em um determinado documento podem ser um subconjunto daqueles ativados pelo certificado.
 
@@ -166,7 +164,7 @@ Os direitos de uso permitidos das extensões do Acrobat Reader DC consistem em u
  <thead>
   <tr>
    <th><p>Elemento de direitos de uso</p></th>
-   <th><p>Recurso ativado no Adobe Reader ao visualizar um documento de PDF habilitado para direitos</p></th>
+   <th><p>Recurso ativado no Adobe Reader ao visualizar um documento do PDF habilitado para direitos</p></th>
   </tr>
  </thead>
  <tbody>
@@ -180,7 +178,7 @@ Os direitos de uso permitidos das extensões do Acrobat Reader DC consistem em u
   </tr>
   <tr>
    <td><p>FormulárioAdicionarExcluir</p></td>
-   <td><p>Adicione, altere ou exclua campos e propriedades de campo no formulário PDF.</p></td>
+   <td><p>Adicionar, alterar ou excluir campos e propriedades de campo no formulário do PDF.</p></td>
   </tr>
   <tr>
    <td><p>SubmitStandalone</p></td>
@@ -188,11 +186,11 @@ Os direitos de uso permitidos das extensões do Acrobat Reader DC consistem em u
   </tr>
   <tr>
    <td><p>SpawnTemplate</p></td>
-   <td><p>Crie páginas a partir de páginas de modelo no mesmo formulário de PDF.</p></td>
+   <td><p>Crie páginas a partir de páginas de modelo no mesmo formulário do PDF.</p></td>
   </tr>
   <tr>
-   <td><p>Assinatura</p></td>
-   <td><p>Assine e salve digitalmente documentos de PDF e limpe assinaturas digitais.</p></td>
+   <td><p>Assinando</p></td>
+   <td><p>Assine e salve digitalmente documentos do PDF e limpe assinaturas digitais.</p></td>
   </tr>
   <tr>
    <td><p>AnnotModify</p></td>
@@ -212,15 +210,15 @@ Os direitos de uso permitidos das extensões do Acrobat Reader DC consistem em u
   </tr>
   <tr>
    <td><p>FormulárioOnline</p></td>
-   <td><p>Conecte-se a serviços da Web ou bancos de dados definidos em um formulário PDF.</p></td>
+   <td><p>Conecte-se a serviços da Web ou bancos de dados definidos em um formulário do PDF.</p></td>
   </tr>
   <tr>
    <td><p>EFModif</p></td>
-   <td><p>Modifique objetos de arquivo incorporados associados ao documento PDF.</p></td>
+   <td><p>Modifique objetos de arquivo incorporados associados ao documento do PDF.</p></td>
   </tr>
  </tbody>
 </table>
 
 >[!NOTE]
 >
->Os direitos de uso de extensões do Acrobat Reader DC podem ser licenciados do Adobe somente em determinadas combinações que funcionam juntas. Não é possível licenciar esses recursos de forma independente. Para obter informações sobre as combinações disponíveis de direitos de uso, entre em contato com um representante de conta da AEM Forms.
+>Os direitos de uso de extensões do Acrobat Reader DC podem ser licenciados da Adobe somente em determinadas combinações que funcionam juntas. Não é possível licenciar esses recursos de forma independente. Para obter informações sobre as combinações disponíveis de direitos de uso, entre em contato com um representante de conta dos formulários AEM.

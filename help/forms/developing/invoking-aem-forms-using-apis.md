@@ -1,6 +1,6 @@
 ---
 title: Como chamar o AEM Forms usando APIs?
-description: Saiba como chamar serviços da AEM Forms usando uma API Java&trade;, serviços da Web, Comunicação remota e REST.
+description: Saiba como chamar serviços da AEM Forms usando uma API Java&trade;, serviços da Web, comunicação remota e REST.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,11 +11,9 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 source-git-commit: 939a2efa64c853928a9082aa30d7338e98deb695
 workflow-type: tm+mt
-source-wordcount: '295'
+source-wordcount: '298'
 ht-degree: 0%
-
 ---
-
 # Chamada do AEM Forms usando APIs {#invoking-aem-forms-using-apis}
 
 **Exemplos e exemplos neste documento são somente para AEM Forms no ambiente JEE.**
@@ -30,4 +28,4 @@ Os serviços exigem um contêiner de serviço para ser executado, de modo semelh
 
 >[!NOTE]
 >
->A programação com formulários AEM não inclui informações sobre como chamar o AEM Forms usando Pastas monitoradas ou email.
+>A programação com o AEM Forms não inclui informações sobre como chamar o AEM Forms usando Pastas monitoradas ou email.
