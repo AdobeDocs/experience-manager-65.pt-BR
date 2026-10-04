@@ -1,21 +1,24 @@
 ---
 title: Condição em linha e repetição em comunicações interativas e cartas
+
 description: Usando a condição em linha e repetir em Comunicações interativas e cartas, você pode criar comunicações que são altamente contextuais e bem estruturadas.
+
+
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: interactive-communications, correspondence-management
+
 docset: aem65
+
 feature: Correspondence Management
 exl-id: bc5d6c5b-c833-4849-aace-e07f8a522b32
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '1660'
+source-wordcount: '1670'
 ht-degree: 0%
-
 ---
-
 # Condição em linha e repetição em comunicações interativas e cartas{#inline-condition-and-repeat-in-interactive-communications-and-letters}
 
 ## Condições em linha {#inline-conditions}
@@ -180,7 +183,7 @@ O exemplo a seguir fornece as etapas para usar repetir para estruturar e renderi
    ${DD_creditcard_TransactionAmount > 0.5}
    ```
 
-   Caso contrário, se você não precisar renderizar as informações (aqui transações) seletivamente, mantenha a condição vazia excluindo o seguinte na caixa de diálogo: `${}`. Salvar uma expressão de repetição é habilitado quando a janela de expressão de repetição está vazia (sem ${} quando nenhuma repetição é necessária) ou quando contém uma condição válida para repetição.
+   Caso contrário, se você não precisar renderizar as informações (aqui transações) seletivamente, mantenha a condição vazia excluindo o seguinte na caixa de diálogo: `${}`. Salvar uma expressão de repetição é ativado quando a janela de expressão de repetição está vazia (sem ${} quando nenhuma repetição é necessária) ou quando contém uma condição válida para repetição.
 
 1. Selecione um separador para formatar o texto dinâmico e selecione a marca de seleção a ser salva:
 
@@ -200,11 +203,11 @@ O exemplo a seguir fornece as etapas para usar repetir para estruturar e renderi
    * Um arquivo de dados XML de amostra criado com base no dicionário de dados relevante ao visualizar a correspondência com dados de amostra.
    * Um arquivo de dados XML anexado ao dicionário de dados relevante.
 
-   Para obter mais informações, consulte [Dicionário de dados](https://helpx.adobe.com/br/aem-forms/6-2/data-dictionary.html).
+   Para obter mais informações, consulte [Dicionário de dados](https://helpx.adobe.com/aem-forms/6-2/data-dictionary.html).
 
    ![6_repetoutputpreview](assets/6_repeatoutputpreview.png)
 
-   O texto estático se repete com os detalhes da transação. A repetição de texto estático é facilitada pela repetição aplicada ao texto neste procedimento. A condição ${DD_creditcard_TransactionAmount > 0.5}, garante que as transações abaixo de USD .5 não sejam renderizadas na carta.
+   O texto estático se repete com os detalhes da transação. A repetição de texto estático é facilitada pela repetição aplicada ao texto neste procedimento. A condição ${DD_creditcard_TransactionAmount > 0.5} garante que as transações abaixo de USD .5 não sejam renderizadas na carta.
 
    >[!NOTE]
    >

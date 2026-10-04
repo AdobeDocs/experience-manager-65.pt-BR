@@ -1,20 +1,23 @@
 ---
 title: 'Tutorial: criar modelo de dados do formulário no AEM Forms'
+
 description: Criar modelo de dados de formulário para Comunicação Interativa
+
+
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
+
 docset: aem65
+
 feature: Interactive Communication
 exl-id: c8a6037c-46bd-4058-8314-61cb925ba5a8
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '2684'
+source-wordcount: '2796'
 ht-degree: 0%
-
 ---
-
 # Tutorial: criar modelo de dados do formulário no AEM Forms{#tutorial-create-form-data-model}
 
 ![04-criar-formulário-modelo-dados-principal](assets/04-create-form-data-model-main.png)
@@ -23,9 +26,9 @@ Este tutorial é uma etapa da série [Criar sua primeira Comunicação Interativ
 
 ## Sobre o tutorial {#about-the-tutorial}
 
-O módulo de integração de dados do AEM Forms permite criar um modelo de dados de formulário a partir de diferentes fontes de dados de back-end, como perfil de usuário AEM, serviços Web RESTful, serviços Web baseados em SOAP, serviços OData e bancos de dados relacionais. Você pode configurar serviços e objetos de modelo de dados em um modelo de dados de formulário e associá-lo a um formulário adaptável. Os campos de formulário adaptável são vinculados às propriedades do objeto de modelo de dados. Os serviços permitem preencher previamente o formulário adaptável e gravar dados do formulário enviado de volta no objeto de modelo de dados.
+O módulo de integração de dados do AEM Forms permite criar um modelo de dados de formulário a partir de diferentes fontes de dados de back-end, como o perfil de usuário do AEM, os serviços Web RESTful, os serviços Web baseados em SOAP, os serviços OData e os bancos de dados relacionais. Você pode configurar serviços e objetos de modelo de dados em um modelo de dados de formulário e associá-lo a um formulário adaptável. Os campos de formulário adaptável são vinculados às propriedades do objeto de modelo de dados. Os serviços permitem preencher previamente o formulário adaptável e gravar dados do formulário enviado de volta no objeto de modelo de dados.
 
-Para obter mais informações sobre a integração de dados de formulário e o modelo de dados de formulário, consulte [Integração de dados do AEM Forms](https://helpx.adobe.com/br/experience-manager/6-3/forms/using/data-integration.html).
+Para obter mais informações sobre a integração de dados de formulário e o modelo de dados de formulário, consulte [Integração de dados do AEM Forms](https://helpx.adobe.com/experience-manager/6-3/forms/using/data-integration.html).
 
 Este tutorial percorre as etapas para preparar, criar, configurar e associar um modelo de dados de formulário a uma comunicação interativa. Ao final deste tutorial, você será capaz de:
 
@@ -46,7 +49,7 @@ O modelo de dados de formulário é semelhante ao seguinte:
 Antes de começar, verifique se você tem o seguinte:
 
 * Banco de dados MySQL com dados de exemplo, conforme declarado na seção [Configurar o banco de dados](../../forms/using/create-form-data-model0.md#step-set-up-the-database).
-* Pacote OSGi para o driver JDBC MySQL, conforme explicado em [Agrupando o driver do banco de dados JDBC](https://helpx.adobe.com/br/experience-manager/6-3/help/sites-developing/jdbc.html#bundling-the-jdbc-database-driver)
+* Pacote OSGi para o driver JDBC MySQL, conforme explicado em [Agrupando o driver do banco de dados JDBC](https://helpx.adobe.com/experience-manager/6-3/help/sites-developing/jdbc.html#bundling-the-jdbc-database-driver)
 
 ## Etapa 1: configurar o banco de dados {#step-set-up-the-database}
 
@@ -113,20 +116,20 @@ A tabela **faturas** inclui os detalhes da fatura, como data da fatura, período
 
 ## Etapa 2: configurar o banco de dados MySQL como fonte de dados {#step-configure-mysql-database-as-data-source}
 
-É possível configurar diferentes tipos de fontes de dados para criar um modelo de dados de formulário. Para este tutorial, você configurará o banco de dados MySQL que está configurado e preenchido com dados de amostra. Para obter informações sobre outras fontes de dados com suporte e como configurá-las, consulte [Integração de Dados do AEM Forms](https://helpx.adobe.com/br/experience-manager/6-3/forms/using/data-integration.html).
+É possível configurar diferentes tipos de fontes de dados para criar um modelo de dados de formulário. Para este tutorial, você configurará o banco de dados MySQL que está configurado e preenchido com dados de amostra. Para obter informações sobre outras fontes de dados com suporte e como configurá-las, consulte [Integração de Dados do AEM Forms](https://helpx.adobe.com/experience-manager/6-3/forms/using/data-integration.html).
 
 Faça o seguinte para configurar o banco de dados MySQL:
 
 1. Instale o driver JDBC para o banco de dados MySQL como um pacote OSGi:
 
-   1. Faça logon na instância do autor do AEM Forms como administrador e acesse os pacotes de console da Web AEM. A URL padrão é [https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles).
+   1. Faça logon na Instância do autor do AEM Forms como administrador e acesse os pacotes de console da Web do AEM. A URL padrão é [https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles).
    1. Selecione **Instalar/Atualizar**. Uma caixa de diálogo **Carregar/Instalar Pacotes** é exibida.
 
    1. Selecione **Escolher Arquivo** para procurar e selecionar o pacote OSGi do driver JDBC MySQL. Selecione **Iniciar Pacote** e **Atualizar Pacotes** e selecione **Instalar** ou **Atualizar**. Verifique se o driver JDBC da Oracle Corporation para MySQL está ativo. O driver está instalado.
 
 1. Configure o banco de dados MySQL como uma fonte de dados:
 
-   1. Vá para o console da Web do AEM em [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
+   1. Vá para o console Web do AEM em [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
    1. Localize a configuração **Fonte de Dados Pooled da Conexão Apache Sling**. Selecione para abrir a configuração no modo de edição.
    1. Na caixa de diálogo de configuração, especifique os seguintes detalhes:
 
@@ -155,11 +158,11 @@ Faça o seguinte para configurar o banco de dados MySQL:
 
 ## Etapa 3: Criar modelo de dados de formulário {#step-create-form-data-model}
 
-O AEM Forms fornece uma interface de usuário intuitiva para [criar um modo de dados de formulário](https://helpx.adobe.com/br/experience-manager/6-3/forms/using/data-integration.html#main-pars_header_1524967585)l a partir de fontes de dados configuradas. É possível usar várias fontes de dados em um modelo de dados de formulário. Para o caso de uso deste tutorial, você usará o MySQL como fonte de dados.
+O AEM Forms fornece uma interface de usuário intuitiva para [criar um modo de dados de formulário](https://helpx.adobe.com/experience-manager/6-3/forms/using/data-integration.html#main-pars_header_1524967585)l a partir de fontes de dados configuradas. É possível usar várias fontes de dados em um modelo de dados de formulário. Para o caso de uso deste tutorial, você usará o MySQL como fonte de dados.
 
 Faça o seguinte para criar o modelo de dados de formulário:
 
-1. Na instância do autor AEM, navegue até **Forms** > **Integrações de Dados**.
+1. Na instância do autor do AEM, navegue até **Forms** > **Integrações de Dados**.
 1. Selecione **Criar** > **Modelo de Dados de Formulário**.
 1. No assistente Criar modelo de dados de formulário, especifique um **nome** para o modelo de dados de formulário. Por exemplo, **FDM_Create_First_IC**. Selecione **Próximo**.
 1. A tela selecionar fonte de dados lista todas as fontes de dados configuradas. Selecione a fonte de dados **MySQL** e selecione **Criar**.
@@ -191,14 +194,14 @@ A configuração do modelo de dados de formulário inclui:
 
    * **Objetos do modelo de dados**:
 
-      * faturas
-      * chamadas
-      * cliente
+     * faturas
+     * chamadas
+     * cliente
 
    * **Serviços:**
 
-      * obter
-      * atualizar
+     * obter
+     * atualizar
 
    Selecione **Adicionar Selecionados** para adicionar objetos e serviços de modelo de dados selecionados ao modelo de dados de formulário.
 
@@ -245,7 +248,7 @@ Execute as seguintes etapas para criar propriedades-filho calculadas para o obje
 
 ### Adicionar associações entre objetos de modelo de dados {#add-associations-between-data-model-objects}
 
-Depois que os objetos do modelo de dados tiverem sido definidos, você poderá criar associações entre eles. A associação pode ser um para um ou um para muitos. Por exemplo, pode haver vários dependentes associados a um funcionário. É chamada de associação um para muitos e é representada por 1:n na linha que conecta os objetos do modelo de dados associados. No entanto, se uma associação retornar um nome de funcionário exclusivo para uma determinada ID de funcionário, ela será chamada de associação um para um.
+Depois que os objetos do modelo de dados tiverem sido definidos, você poderá criar associações entre eles. A associação pode ser um para um ou um para muitos. Por exemplo, pode haver vários dependentes associados a um funcionário. É chamada de associação um para muitos e representada por 1:n na linha que conecta objetos de modelo de dados associados. No entanto, se uma associação retornar um nome de funcionário exclusivo para uma determinada ID de funcionário, ela será chamada de associação um para um.
 
 Ao adicionar objetos de modelo de dados associados em uma fonte de dados a um modelo de dados de formulário, suas associações são mantidas e exibidas como conectadas por linhas de seta.
 
@@ -253,8 +256,8 @@ Com base no caso de uso, crie as seguintes associações entre os objetos do mod
 
 | Associação | Objetos do modelo de dados |
 |---|---|
-| 1:n | cliente: chamadas (várias chamadas podem ser associadas a um cliente em uma fatura mensal) |
-| 1:1 | cliente:listas (Um faturamento é associado a um cliente para um determinado mês) |
+| 1:n | cliente:calls (Várias chamadas podem ser associadas a um cliente em uma fatura mensal) |
+| 1:1 | cliente:bills (Uma fatura está associada a um cliente para um determinado mês) |
 
 Execute as seguintes etapas para criar associações entre objetos de modelo de dados:
 
@@ -275,7 +278,7 @@ Execute as seguintes etapas para criar associações entre objetos de modelo de 
 1. Na caixa de diálogo **Adicionar argumento**:
 
    * Selecione **mobilenum** na lista suspensa **Nome**. A propriedade de número de celular é uma propriedade comum disponível no cliente e chama objetos de modelo de dados. Como resultado, é usado para criar uma associação entre o cliente e chamar objetos de modelo de dados.
-Para cada número de celular disponível no objeto de modelo de dados do cliente, há vários registros de chamada disponíveis na tabela de chamadas.
+     Para cada número de celular disponível no objeto de modelo de dados do cliente, há vários registros de chamada disponíveis na tabela de chamadas.
 
    * Especifique um título opcional e uma descrição para o argumento.
    * Selecione **cliente** na lista suspensa **Ligando a**.
@@ -303,7 +306,7 @@ Para cada número de celular disponível no objeto de modelo de dados do cliente
    * Selecione **contas** da lista suspensa **Objeto de Modelo**.
 
    * Selecione **get** da lista suspensa **Serviço**. A propriedade **billplan**, que é a chave primária para a tabela de contas, já está disponível na seção **Argumentos**.
-Os objetos de modelo de dados de listas e clientes são vinculados usando as propriedades billplan (listas) e customerplan (cliente), respectivamente. Crie um vínculo entre essas propriedades para recuperar os detalhes do plano para qualquer cliente disponível no banco de dados MySQL.
+     Os objetos de modelo de dados de listas e clientes são vinculados usando as propriedades billplan (listas) e customerplan (cliente), respectivamente. Crie um vínculo entre essas propriedades para recuperar os detalhes do plano para qualquer cliente disponível no banco de dados MySQL.
 
    * Selecione **cliente** na lista suspensa **Ligando a**.
 
