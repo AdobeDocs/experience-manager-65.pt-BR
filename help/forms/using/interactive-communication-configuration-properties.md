@@ -1,22 +1,25 @@
 ---
 title: Propriedades de configuração de Comunicações interativas
+
 description: Editar propriedades de configuração padrão para Comunicações interativas
+
+
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 content-type: reference
 topic-tags: interactive-communications
+
 docset: aem65
+
 feature: Interactive Communication
 exl-id: 09eeade6-e16d-4159-b26a-803c7201097a
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '610'
-ht-degree: 6%
-
+source-wordcount: '614'
+ht-degree: 7%
 ---
-
 # Propriedades de configuração de Comunicações interativas{#interactive-communications-configuration-properties}
 
 As Comunicações Interativas incluem propriedades que são configuradas automaticamente após a instalação do pacote do [complemento do AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md). Os autores de Comunicações interativas podem editar essas propriedades de configuração padrão usando a página **Configuração do console da Web do Adobe Experience Manager**.
@@ -55,7 +58,7 @@ Selecione a **configuração de fragmentos de documento** na página **Configura
      <li>numberGroupSeparator = ,</li> 
      <li>numberUseGroupSeparator = true</li> 
     </ul> </td> 
-   <td><p>—</p> </td> 
+   <td><p>--</p> </td> 
   </tr> 
   <tr> 
    <td>Recuo</td> 
@@ -104,7 +107,7 @@ Selecione **Criar configuração de correspondência** na página **Configuraç�
   </tr> 
   <tr> 
    <td>Ativar incorporação de fontes no PDF</td> 
-   <td><p>Marque a caixa de seleção para ativar as fontes incorporadas nos documentos do PDF. Após selecionar essa opção, é possível incorporar novas fontes após gerar ou visualizar os documentos do PDF usando a interface do usuário do agente. Use o canal de impressão de comunicação interativa para gerar e visualizar documentos PDF.</p> <p>A incorporação de fontes em um documento PDF é útil se uma fonte estiver disponível em uma máquina usada para gerar o PDF e não estiver disponível na máquina cliente que acessa o PDF.</p> <p>Para obter mais informações sobre como incorporar fontes, consulte <a href="../../forms/using/customize-text-editor.md" target="_blank">Personalizar editor de texto</a>.</p> </td> 
+   <td><p>Marque a caixa de seleção para ativar as fontes incorporadas nos documentos do PDF. Após selecionar essa opção, é possível incorporar novas fontes após gerar ou visualizar os documentos do PDF usando a interface do usuário do agente. Use o canal de impressão de comunicação interativa para gerar e visualizar documentos do PDF.</p> <p>Incorporar fontes em um documento do PDF é útil se uma fonte estiver disponível em uma máquina usada para gerar o PDF e não estiver disponível na máquina cliente que acessa o PDF.</p> <p>Para obter mais informações sobre como incorporar fontes, consulte <a href="../../forms/using/customize-text-editor.md" target="_blank">Personalizar editor de texto</a>.</p> </td> 
    <td>Não selecionado</td> 
    <td>Não aplicável</td> 
   </tr> 
@@ -137,7 +140,7 @@ Selecione **Configuração do tema de canal da Web do formulário adaptável e d
    <td>Nome da lista de fontes</td> 
    <td>Lista de fontes disponíveis para uso ao criar o Forms adaptável e as Comunicações interativas.</td> 
    <td><p>Geórgia</p> <p>Livro Antiqua</p> <p>Times New Roman</p> <p>Arial</p> <p>Arial Black</p> <p>Impacto</p> <p>Linotipo de Palatino</p> </td> 
-   <td>Todas as fontes válidas do servidor Adobe</td> 
+   <td>Todas as fontes válidas do servidor do Adobe</td> 
   </tr> 
  </tbody> 
 </table>

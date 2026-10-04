@@ -1,20 +1,23 @@
 ---
 title: 'Tutorial: Criar a comunicação interativa '
+
 description: Criar uma comunicação interativa usando todos os elementos
+
+
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
+
 docset: aem65
+
 feature: Interactive Communication
 exl-id: aaacee66-6bbe-498b-91b1-3a9545ff1aeb
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '1884'
+source-wordcount: '1914'
 ht-degree: 0%
-
 ---
-
 # Tutorial: Criar a comunicação interativa {#tutorial-create-interactive-communication}
 
 ![09-style-your-adaptive-form-small](assets/09-style-your-adaptive-form-small.png)
@@ -179,7 +182,7 @@ Esta é a lista de recursos que já foram criados neste tutorial e são necessá
    1. Na seção **Borda**, especifique **1.5px** como **Largura da Borda**, selecione **Sólido** como **Estilo da Borda** e especifique **46px** como **Raio da Borda**.
 
    1. Selecione Vermelho como a cor de fundo do botão na seção **Plano de fundo**.
-   1. No campo **Margem** para a seção **Dimension e Posição**, selecione o ícone **Editar simultaneamente** e defina a margem **Direita** como **450px**. Os campos Superior, Inferior e Esquerdo são definidos como em branco.
+   1. No campo **Margem** da seção **Dimensões e Posição**, selecione o ícone **Editar simultaneamente** e defina a margem **Direita** como **450px**. Os campos Superior, Inferior e Esquerdo são definidos como em branco.
 
    ![Inserir hiperlink na comunicação interativa](assets/ic_web_hyperlink_new.png)
 

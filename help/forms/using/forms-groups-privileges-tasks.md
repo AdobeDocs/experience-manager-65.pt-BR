@@ -12,11 +12,9 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
 workflow-type: tm+mt
-source-wordcount: '289'
-ht-degree: 6%
-
+source-wordcount: '325'
+ht-degree: 5%
 ---
-
 # AEM Forms em grupos e privilégios OSGi{#aem-forms-on-osgi-groups-and-privileges}
 
 | Versão | Link do artigo |
@@ -40,7 +38,7 @@ Após instalar o [pacote complementar do AEM Forms](../../forms/using/installing
     <ul> 
      <li>Criar, visualizar, publicar e enviar formulários adaptáveis</li> 
      <li>Criar, visualizar e publicar comunicações interativas e fragmentos de documentos</li> 
-     <li>Fazer upload de ativos para uma instância AEM</li> 
+     <li>Fazer upload de ativos para uma instância do AEM</li> 
      <li>Criar temas</li> 
     </ul> </td> 
   </tr>
@@ -97,7 +95,7 @@ Após instalar o [pacote complementar do AEM Forms](../../forms/using/installing
    <td>workflow-users</td> 
    <td>
     <ul> 
-     <li>Use aplicativos da Caixa de Entrada de AEM<br /> <strong>Observação: </strong>Você deve ter atribuições de grupo cm-agent-users e workflow-users para acessar a interface do usuário do Agente de Comunicações Interativas na Caixa de Entrada de AEM.</li> 
+     <li>Use os aplicativos da Caixa de Entrada do AEM<br /> <strong>Observação: </strong>É necessário ter cm-agent-users e atribuições de grupo workflow-users para acessar a interface do usuário do Agente de Comunicações Interativas na Caixa de Entrada do AEM.</li> 
      <li>Gerenciar instâncias de fluxo de trabalho</li> 
     </ul> </td> 
   </tr>
