@@ -11,11 +11,9 @@ exl-id: 98d88b59-eb8f-42db-abb8-04506a5b8c30
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: '346'
 ht-degree: 3%
-
 ---
-
 # Aplicar predefinições de imagem do Dynamic Media {#applying-image-presets}
 
 As predefinições de imagem permitem que os ativos forneçam imagens dinamicamente em diferentes tamanhos, formatos ou com outras propriedades de imagem geradas dinamicamente. É possível escolher uma predefinição ao exportar imagens. A predefinição reformata imagens de acordo com as especificações especificadas pelo administrador.
@@ -32,7 +30,7 @@ Esta seção descreve como usar predefinições de imagens. [Os administradores 
 
 >[!NOTE]
 >
->No modo Dynamic Media - Scene7, as predefinições de imagens são compatíveis somente com ativos de imagem.
+>No modo Dynamic Media - Scene7, as predefinições de imagem são compatíveis somente com ativos de imagem.
 
 **Para aplicar predefinições de imagem do Dynamic Media:**
 

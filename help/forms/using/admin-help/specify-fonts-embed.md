@@ -13,9 +13,7 @@ source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
 source-wordcount: '283'
 ht-degree: 0%
-
 ---
-
 # Especificar fontes a serem incorporadas{#specify-fonts-to-embed}
 
 >[!NOTE]
@@ -30,5 +28,5 @@ Você pode especificar quais fontes são sempre incorporadas ou nunca incorporad
 
 1. No console de administração, clique em Serviços > saída.
 1. Em Configurações de Incorporação de Fonte, na caixa Incorporar Sempre Fontes, digite os nomes das fontes a serem incorporadas aos formulários, separadas por vírgulas. As fontes especificadas são incorporadas somente no formulário gerado se forem usadas no formulário. Essa configuração será ignorada se a opção de fonte incorporada tiver sido ativada no arquivo XCI passado para o serviço. Nesse caso, todas as fontes usadas no PDF são sempre incorporadas.
-1. Na caixa Nunca incorporar fontes, digite os nomes das fontes que não serão incorporadas aos formulários, separados por vírgulas. As fontes especificadas não são incorporadas ao PDF, mesmo se forem usadas no PDF gerado. Essa configuração será ignorada se a opção de fonte incorporada tiver sido desativada no arquivo XCI passado para o serviço. Nesse caso, nenhuma das fontes usadas no PDF é incorporada.
+1. Na caixa Nunca incorporar fontes, digite os nomes das fontes que não serão incorporadas aos formulários, separados por vírgulas. As fontes especificadas não são incorporadas na PDF, mesmo se forem usadas na PDF gerada. Essa configuração será ignorada se a opção de fonte incorporada tiver sido desativada no arquivo XCI passado para o serviço. Nesse caso, nenhuma das fontes usadas no PDF é incorporada.
 1. Clique em Salvar.

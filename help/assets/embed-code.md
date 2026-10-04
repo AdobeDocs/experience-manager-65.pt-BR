@@ -1,5 +1,5 @@
 ---
-title: Incorpore o Vídeo do Dynamic Media, o Visualizador de imagens ou o Visualizador dimensional em uma página da Web
+title: Incorpore o vídeo do Dynamic Media, o visualizador de imagem ou o visualizador dimensional em uma página da Web
 description: Saiba como incorporar vídeos, imagens ou imagens 3D do Dynamic Media em uma página da Web
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -11,14 +11,12 @@ exl-id: 203ea349-ef4c-421c-b4b6-76ee9d46ec34
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '385'
 ht-degree: 20%
-
 ---
+# Incorpore o vídeo do Dynamic Media, o visualizador de imagem ou o visualizador dimensional em uma página da Web {#embedding-the-video-or-image-viewer-on-a-web-page}
 
-# Incorpore o Vídeo do Dynamic Media, o Visualizador de imagens ou o Visualizador dimensional em uma página da Web {#embedding-the-video-or-image-viewer-on-a-web-page}
-
-Use o recurso **[!UICONTROL Incorporar código]** quando quiser reproduzir o vídeo ou exibir um ativo incorporado em uma página da Web. Copie o código incorporado na área de transferência para poder colá-lo nuas páginas da Web. A edição do código não é permitida na caixa de diálogo **[!UICONTROL Incorporar código]**.
+Use o recurso **[!UICONTROL Código incorporado]** quando quiser reproduzir o vídeo ou exibir um ativo incorporado em uma página da Web. Copie o código incorporado na área de transferência para poder colá-lo nuas páginas da Web. A edição do código não é permitida na caixa de diálogo **[!UICONTROL Código incorporado]**.
 
 Você incorpora URLs somente se estiver *não* usando o Adobe Experience Manager como o WCM. Se você estiver usando o Experience Manager como o WCM, [adicione os ativos diretamente na sua página](adding-dynamic-media-assets-to-pages.md).
 
@@ -30,23 +28,23 @@ Consulte [Fornecer imagens otimizadas para um site responsivo](responsive-site.m
 >
 >O código incorporado não está disponível para cópia até que você tenha publicado o ativo selecionado. Além disso, você também deve publicar a predefinição do visualizador ou a predefinição da imagem.
 >
->Consulte [ativos do Publish](publishing-dynamicmedia-assets.md).
+>Consulte [Publicar ativos](publishing-dynamicmedia-assets.md).
 >
->Consulte [Predefinições do Visualizador do Publish](managing-viewer-presets.md#publishing-viewer-presets).
+>Consulte [Publicar Predefinições Do Visualizador](managing-viewer-presets.md#publishing-viewer-presets).
 >
->Consulte [Predefinições de imagem do Publish](managing-image-presets.md#publishing-image-presets).
+>Consulte [Publicar Predefinições De Imagem](managing-image-presets.md#publishing-image-presets).
 
-**Para incorporar o Vídeo do Dynamic Media, o Visualizador de imagens ou o Visualizador Dimensional em uma página da Web:**
+**Para incorporar o Vídeo do Dynamic Media, o visualizador de Imagem ou o visualizador Dimensional em uma página da Web:**
 
 1. Navegue até o ativo de vídeo ou imagem *publicado* cujo código de inserção você deseja copiar.
 
-   Lembre-se de que o código incorporado só está disponível para cópia *depois* que você *publicou* os ativos pela primeira vez. Além disso, a predefinição do visualizador ou da imagem também deve ser publicada.
+   Lembre-se de que o código incorporado só está disponível para cópia *depois* que você *publicou* os ativos pela primeira vez. Além disso, a predefinição do visualizador ou a predefinição de imagem também deve ser publicada.
 
-   Consulte [ativos do Publish](publishing-dynamicmedia-assets.md).
+   Consulte [Publicar ativos](publishing-dynamicmedia-assets.md).
 
-   Consulte [Predefinições do Visualizador do Publish](managing-viewer-presets.md#publishing-viewer-presets).
+   Consulte [Publicar Predefinições Do Visualizador](managing-viewer-presets.md#publishing-viewer-presets).
 
-   Consulte [Predefinições de imagem do Publish](managing-image-presets.md#publishing-image-presets).
+   Consulte [Publicar Predefinições De Imagem](managing-image-presets.md#publishing-image-presets).
 
 1. No painel à esquerda, selecione o menu suspenso e selecione **[!UICONTROL Visualizadores]**.
 1. No painel à esquerda, selecione um nome de predefinição do visualizador. A predefinição do visualizador é aplicada ao ativo.

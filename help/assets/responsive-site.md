@@ -11,11 +11,9 @@ exl-id: 753d806f-5f44-4d73-a3a3-a2a0fc3e154b
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '340'
+source-wordcount: '343'
 ht-degree: 11%
-
 ---
-
 # Entregar imagens otimizadas para um site responsivo {#delivering-optimized-images-for-a-responsive-site}
 
 Use o recurso Código responsivo quando quiser compartilhar o código para veiculação responsiva com o desenvolvedor da Web. Você copia o código (**[!UICONTROL RESS]**) responsivo para a área de transferência para poder compartilhá-lo com o desenvolvedor da Web.
@@ -40,7 +38,7 @@ Consulte também [Vincular URLs ao Aplicativo Web](linking-urls-to-yourwebapplic
    >
    >O ativo selecionado *e* a predefinição de imagem ou a predefinição do visualizador selecionado devem ser publicados para disponibilizar os botões **[!UICONTROL URL]** ou **[!UICONTROL RESS]**.
    >
-   >Dynamic Media - O modo híbrido exige a publicação de predefinições de imagens; Dynamic Media - O modo Scene7 publica predefinições de imagens automaticamente.
+   >O modo Dynamic Media - Hybrid requer a publicação de predefinições de imagens; o modo Dynamic Media - Scene7 publica automaticamente predefinições de imagens.
 
 1. Selecione **[!UICONTROL RESS]**.
 

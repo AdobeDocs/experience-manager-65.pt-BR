@@ -11,18 +11,16 @@ exl-id: daa1ffdd-de5c-470e-8875-84144b7d327f
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '220'
+source-wordcount: '225'
 ht-degree: 15%
-
 ---
-
 # Aplicar predefinições do visualizador do Dynamic Media {#applying-viewer-presets}
 
 Uma predefinição do visualizador é uma coleção de configurações que determinam como os usuários visualizam ativos de mídia avançada nas telas dos computadores e nos dispositivos móveis. É possível aplicar qualquer predefinição do visualizador criada pelo administrador a um ativo.
 
 Se você for um administrador e precisar gerenciar, criar, classificar e excluir predefinições do visualizador, consulte [Gerenciar predefinições do visualizador](managing-viewer-presets.md).
 
-Consulte também [Predefinições do visualizador do Publish](managing-viewer-presets.md#publishing-viewer-presets).
+Consulte também [Publicar predefinições do visualizador](managing-viewer-presets.md#publishing-viewer-presets).
 
 Não é necessário publicar predefinições do visualizador, dependendo do modo de publicação em uso.
 Quaisquer problemas com as predefinições do visualizador, consulte [Solução de problemas do Dynamic Media - Scene7](troubleshoot-dms7.md#viewers).

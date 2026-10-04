@@ -1,24 +1,27 @@
 ---
-title: Início rápido do LiveCycleProcess Java API(SOAP)
+title: Início rápido da API Java (SOAP) do LiveCycleProcess
+
 description: Use o LiveCycleProcess Java API (SOAP) Quick Start para pesquisar instâncias de processos, suspender instâncias de processos, iniciar instâncias suspensas de processos, encerrar instâncias de processos, limpar dados de processos e recuperar o status de um trabalho.
+
+
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
+
 role: Developer
 exl-id: 7b309743-10ea-4d10-adb6-be5ce9f03ce2
 solution: Experience Manager, Experience Manager Forms
+
 feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '423'
+source-wordcount: '424'
 ht-degree: 0%
-
 ---
+# Início rápido da API Java do LiveCycleProcess (SOAP) {#livecycleprocess-java-api-soap-quick-start}
 
-# Início rápido da API Java (SOAP) do LiveCycleProcess {#livecycleprocess-java-api-soap-quick-start}
-
-O Início rápido da API (SOAP) do Java está disponível para processos. Uma *instância de processo* é uma ocorrência de um processo específico que foi iniciado por um método de invocação, como a API de Invocação ou a partir do Workspace.
+O Início rápido da API do Java (SOAP) está disponível para processos. Uma *instância de processo* é uma ocorrência de um processo específico que foi iniciado por um método de invocação, como a API de Invocação ou a partir do Workspace.
 
 [Início rápido (modo SOAP): pesquisa por instâncias de processo usando a API Java](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-searching-for-process-instances-using-the-java-api)
 
@@ -26,7 +29,7 @@ O Início rápido da API (SOAP) do Java está disponível para processos. Uma *i
 
 [Início rápido (modo SOAP): iniciando instâncias de processo suspensas usando a API Java](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-starting-suspended-process-instances-using-the-java-api)
 
-[Início rápido (modo SOAP): encerrando instâncias de processo usando a API Java](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-terminating-process-instances-using-the-java-api)
+[Início rápido (modo SOAP): encerrar instâncias de processo usando a API Java](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-terminating-process-instances-using-the-java-api)
 
 [Início rápido (modo SOAP): limpeza de dados do processo usando a API Java](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-purging-process-data-using-the-java-api)
 
@@ -336,7 +339,7 @@ O exemplo de código Java a seguir inicia uma instância de processo suspensa.
  
 ```
 
-## Início rápido (modo SOAP): encerrando instâncias de processo usando a API Java {#quick-start-soap-mode-terminating-process-instances-using-the-java-api}
+## Início rápido (modo SOAP): encerrar instâncias de processo usando a API Java {#quick-start-soap-mode-terminating-process-instances-using-the-java-api}
 
 O exemplo de código Java a seguir finaliza uma instância de processo com o valor de identificador 756c22860a242fb101ec7a5bc0977fd6.
 
