@@ -10,14 +10,12 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '406'
-ht-degree: 2%
-
+source-wordcount: '417'
+ht-degree: 7%
 ---
-
 # Pré-visualização de um formulário {#previewing-a-form}
 
-O <span class="preview"> Adobe recomenda o uso de [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adicionar o Forms Adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
+A Adobe <span class="preview"> recomenda usar os [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adicionar o Forms Adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
 
 ## Visão geral {#overview}
 
@@ -35,19 +33,19 @@ A tabela a seguir lista as opções de visualização disponíveis para diferent
   </tr>
   <tr>
    <td>Documento</td>
-   <td>Visualização do PDF</td>
+   <td>Visualização de PDF</td>
   </tr>
   <tr>
-   <td>Formulário PDF</td>
-   <td>Visualização e visualização de PDF com dados<br /> </td>
+   <td>Formulário em PDF</td>
+   <td>Visualização e Visualização do PDF com Dados<br /> </td>
   </tr>
   <tr>
    <td>formulário adaptável</td>
-   <td>Visualização de HTML e visualização de HTML com dados</td>
+   <td>Visualização do HTML e visualização do HTML com dados</td>
   </tr>
   <tr>
    <td>Modelo de formulário</td>
-   <td>Visualização de PDF, visualização de PDF com Dados, visualização de HTML, visualização de HTML com Dados<br /> </td>
+   <td>Visualização do PDF, visualização do PDF com Dados, visualização do HTML, visualização do HTML com Dados<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -65,10 +63,10 @@ A tabela a seguir lista as opções de visualização disponíveis para diferent
    As opções são:
 
    * Visualizar como HTML
-   * Exibir com dados
+   * Visualizar com dados
    * Visualizar como PDF (disponível para modelos de formulário)
 
-## Exibir com dados {#preview-with-data}
+## Visualizar com dados {#preview-with-data}
 
 Ao selecionar **Visualizar com Dados**, você poderá ver como ficará o formulário com os dados reais inseridos. A opção Preview with Data permite fazer upload de um XML que contém dados de usuário de amostra. Os dados do usuário de exemplo são usados para preencher o formulário de visualização no formato escolhido.
 

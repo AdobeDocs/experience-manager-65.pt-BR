@@ -11,11 +11,9 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '705'
+source-wordcount: '744'
 ht-degree: 0%
-
 ---
-
 # Configuração do MySQL para DSRP {#mysql-configuration-for-dsrp}
 
 O MySQL é um banco de dados relacional que pode ser usado para armazenar conteúdo gerado pelo usuário (UGC).
@@ -28,11 +26,11 @@ Essas instruções descrevem como se conectar ao servidor MySQL e estabelecer o 
 * [Driver JDBC para MySQL](deploy-communities.md#jdbc-driver-for-mysql)
 * Um banco de dados relacional:
 
-   * [MySQL server](https://dev.mysql.com/downloads/mysql/) Community Server versão 5.6 ou posterior
+  * [MySQL server](https://dev.mysql.com/downloads/mysql/) Community Server versão 5.6 ou posterior
 
-      * Pode ser executado no mesmo host que o AEM ou remotamente
+    * Pode ser executado no mesmo host que o AEM ou remotamente
 
-   * [MySQL workbench](https://dev.mysql.com/downloads/tools/workbench/)
+  * [Workbench do MySQL](https://dev.mysql.com/downloads/tools/workbench/)
 
 ## Instalar o MySQL {#installing-mysql}
 
@@ -113,7 +111,7 @@ Abra a conexão Communities para instalar o banco de dados.
 
 ### Obter o script SQL {#obtain-the-sql-script}
 
-O script SQL é obtido do repositório AEM:
+O script SQL é obtido do repositório do AEM:
 
 1. Navegar até o CRXDE Lite
 
@@ -164,15 +162,15 @@ Depois que o script for executado, será necessário atualizar a seção `SCHEMA
 
 A configuração OSGi do **Pool de Conexões JDBC do Day Commons** configura o Driver JDBC do MySQL.
 
-Todas as instâncias AEM de publicação e de criação devem apontar para o mesmo servidor MySQL.
+Todas as instâncias do AEM de publicação e criação devem apontar para o mesmo servidor MySQL.
 
 Quando o MySQL é executado em um servidor diferente do AEM, o nome do host do servidor deve ser especificado no lugar de &quot;localhost&quot; no conector JDBC.
 
-* Em cada autor e instância de AEM publicada.
+* Em cada instância do AEM de autoria e publicação.
 * Conectado com privilégios de administrador.
 * Acesse o [console da Web](../../help/sites-deploying/configuring-osgi.md).
 
-   * Por exemplo, [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)
+  * Por exemplo, [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)
 
 * Localizar o `Day Commons JDBC Connections Pool`
 * Selecione o ícone `+` para criar uma configuração de conexão.
@@ -181,21 +179,21 @@ Quando o MySQL é executado em um servidor diferente do AEM, o nome do host do s
 
 * Insira os seguintes valores:
 
-   * **[!UICONTROL classe de driver JDBC]**: `com.mysql.jdbc.Driver`
-   * **[!UICONTROL URI de conexão JDBC]**: `jdbc:mysql://localhost:3306/communities?characterEncoding=UTF-8`
+  * **[!UICONTROL classe de driver JDBC]**: `com.mysql.jdbc.Driver`
+  * **[!UICONTROL URI de conexão JDBC]**: `jdbc:mysql://localhost:3306/communities?characterEncoding=UTF-8`
 
-     Especifique o servidor no lugar de localhost se o servidor MySQL não for o mesmo que &#39;este&#39; servidor AEM *comunidades* for o nome padrão do banco de dados (esquema).
+    Especifique o servidor no lugar de localhost se o servidor MySQL não for o mesmo que &#39;este&#39; servidor AEM *comunidades* for o nome padrão do banco de dados (esquema).
 
-   * **[!UICONTROL Nome de Usuário]**: `root`
+  * **[!UICONTROL Nome de Usuário]**: `root`
 
-     Ou insira o Nome de usuário configurado para o servidor MySQL, se não for &#39;root&#39;.
+    Ou insira o Nome de usuário configurado para o servidor MySQL, se não for &#39;root&#39;.
 
-   * **[!UICONTROL Senha]**:
+  * **[!UICONTROL Senha]**:
 
-     Limpar este campo se nenhuma senha for definida para o MySQL,
+    Limpar este campo se nenhuma senha for definida para o MySQL,
 
-     caso contrário, digite a senha configurada para o Nome de usuário do MySQL.
+    caso contrário, digite a senha configurada para o Nome de usuário do MySQL.
 
-   * **[!UICONTROL Nome da fonte de dados]**: nome inserido para a [conexão MySQL](#new-connection-settings), por exemplo, &#39;comunidades&#39;.
+  * **[!UICONTROL Nome da fonte de dados]**: nome inserido para a [conexão MySQL](#new-connection-settings), por exemplo, &#39;comunidades&#39;.
 
 * Selecione **[!UICONTROL Salvar]**

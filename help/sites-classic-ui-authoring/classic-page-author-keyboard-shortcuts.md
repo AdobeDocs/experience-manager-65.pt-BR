@@ -11,11 +11,9 @@ feature: Authoring
 role: User
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '307'
-ht-degree: 14%
-
+source-wordcount: '308'
+ht-degree: 13%
 ---
-
 # Atalhos de teclado ao editar páginas{#keyboard-shortcuts-when-editing-pages}
 
 Vários atalhos de teclado estão disponíveis em todo o AEM. Alguns são aplicáveis ao editar páginas, outros para o [uso de consoles](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md).
@@ -69,7 +67,7 @@ Vários atalhos de teclado estão disponíveis em todo o AEM. Alguns são aplic�
   <tr>
    <td> </td>
    <td><strong><code>Ctrl-X</code></strong></td>
-   <td>Recortar parágrafos selecionados.<strong><br /> Observação:</strong> o parágrafo recortado não desaparecerá até que seja colado no novo local.</td>
+   <td>Recortar parágrafos selecionados.<strong><br /> Observação:</strong> o parágrafo recortado não desaparecerá até ser colado no novo local.</td>
   </tr>
   <tr>
    <td> </td>
@@ -94,7 +92,7 @@ Vários atalhos de teclado estão disponíveis em todo o AEM. Alguns são aplic�
   <tr>
    <td> </td>
    <td><strong><code>Alt-right-click</code></strong></td>
-   <td>Forçar menu de contexto padrão (navegador).<br /> <strong>Observação:</strong> menus de contexto AEM só ocorrem na interface clássica.</td>
+   <td>Forçar menu de contexto padrão (navegador).<br /> <strong>Observação:</strong> menus de contexto do AEM só ocorrem na interface clássica.</td>
   </tr>
   <tr>
    <td> </td>

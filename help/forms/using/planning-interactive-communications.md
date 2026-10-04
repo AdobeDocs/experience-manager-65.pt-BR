@@ -1,19 +1,21 @@
 ---
 title: 'Tutorial: Planejar a comunicação interativa'
+
 description: Planeje a anatomia para sua comunicação interativa
+
+
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
+
 feature: Interactive Communication
 exl-id: ea0c8971-56f4-4094-87e4-1b222b73951f
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '652'
-ht-degree: 2%
-
+source-wordcount: '658'
+ht-degree: 3%
 ---
-
 # Tutorial: Planejar a comunicação interativa {#tutorial-plan-the-interactive-communication}
 
 Planeje a anatomia para sua comunicação interativa
@@ -73,7 +75,7 @@ A tabela a seguir ilustra a fonte de dados de cada campo na anatomia da Comunica
      <li>Data de Cobrança</li>
      <li>Período de Cobrança</li>
     </ul> <p> </p> </td>
-   <td>—</td>
+   <td>--</td>
   </tr>
   <tr>
    <td>Detalhes do cliente</td>
@@ -92,7 +94,7 @@ A tabela a seguir ilustra a fonte de dados de cada campo na anatomia da Comunica
      <li>Código de Estado</li>
      <li>Número de conexões</li>
     </ul> </td>
-   <td>—</td>
+   <td>--</td>
   </tr>
   <tr>
    <td>Sumário da Lista</td>
@@ -106,7 +108,7 @@ A tabela a seguir ilustra a fonte de dados de cada campo na anatomia da Comunica
      <li>Valor Devido</li>
      <li>Data de vencimento</li>
     </ul> </td>
-   <td>—</td>
+   <td>--</td>
   </tr>
   <tr>
    <td>Resumo dos encargos</td>
@@ -124,7 +126,7 @@ A tabela a seguir ilustra a fonte de dados de cada campo na anatomia da Comunica
      <li>TOTAL A PAGAR (campo calculado encargos de uso)</li>
     </ul> <p>Tabela - listas</p> </td>
    <td>Nenhum campo</td>
-   <td>—</td>
+   <td>--</td>
   </tr>
   <tr>
    <td>Chamadas discriminadas - Saída</td>
@@ -138,20 +140,20 @@ A tabela a seguir ilustra a fonte de dados de cada campo na anatomia da Comunica
     </ul> </td>
    <td><p>Todos os valores</p> <p>Tabela - chamadas</p> </td>
    <td>Nenhum campo</td>
-   <td>—</td>
+   <td>--</td>
   </tr>
   <tr>
    <td>Pagar agora</td>
-   <td>—</td>
-   <td>—</td>
-   <td>—</td>
+   <td>--</td>
+   <td>--</td>
+   <td>--</td>
    <td>PayNow</td>
   </tr>
   <tr>
    <td>Serviços de valor agregado</td>
-   <td>—</td>
-   <td>—</td>
-   <td>—</td>
+   <td>--</td>
+   <td>--</td>
+   <td>--</td>
    <td>ValueAddedServices</td>
   </tr>
  </tbody>

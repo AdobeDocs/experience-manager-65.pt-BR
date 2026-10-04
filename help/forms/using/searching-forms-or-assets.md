@@ -1,21 +1,24 @@
 ---
 title: Pesquisar formulários e ativos
-description: Você pode pesquisar formulários e ativos na instância do AEM usando a pesquisa AEM. A pesquisa básica e avançada permite localizar rapidamente os ativos.
+
+description: Você pode pesquisar formulários e ativos na sua instância do AEM usando a pesquisa do AEM. A pesquisa básica e avançada permite localizar rapidamente os ativos.
+
+
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
+
 docset: aem65
+
 role: Admin,User
 exl-id: 1f4f49b7-5f32-47dd-9dc7-a6974faf2bdf
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
-source-wordcount: '689'
-ht-degree: 3%
-
+source-wordcount: '690'
+ht-degree: 4%
 ---
-
 # Pesquisar formulários e ativos{#searching-for-forms-and-assets}
 
 Você pode pesquisar seus formulários ou ativos de formulário, usando uma sequência de texto ou de texto com curingas. Você também pode restringir sua pesquisa usando os critérios disponíveis em várias categorias no painel Pesquisar.
@@ -49,7 +52,7 @@ Nos critérios de pesquisa, além da consulta, você pode especificar alguns par
 
 ![Pesquisar campo e parâmetros ou filtros para pesquisa de formulário e ativo do AEM](assets/search_forms_assets.png)
 
-Campo de pesquisa e parâmetros ou filtros para pesquisa de formulário e ativo no AEM
+Campo de pesquisa e parâmetros ou filtros para pesquisa de ativos e formulários do AEM
 
 ### Caminho do ativo {#asset-path}
 
@@ -91,8 +94,8 @@ Você pode selecionar qualquer número de tipos de ativos. A pesquisa retorna a 
    <td>Pesquisar em todos os modelos de formulário.<br /> </td> 
   </tr>
   <tr>
-   <td>Formulário PDF</td> 
-   <td>Pesquise em todos os documentos do PDF.</td> 
+   <td>Formulário em PDF</td> 
+   <td>Pesquisar em todos os documentos do PDF.</td> 
   </tr>
   <tr>
    <td>Documento</td> 

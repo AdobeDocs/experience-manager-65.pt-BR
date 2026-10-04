@@ -1,18 +1,16 @@
 ---
-title: Como gerar e trabalhar com hashes em PDF forms dinâmicos?
-description: Gerar e trabalhar com hashes em PDF forms dinâmicos.
+title: Como gerar e trabalhar com hashes no PDF forms dinâmico?
+description: Geração e trabalho com hashes no PDF forms dinâmico.
 exl-id: 026f5686-39ea-4798-9d1f-031f15941060
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Security
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1189'
+source-wordcount: '1234'
 ht-degree: 0%
-
 ---
-
-# Gerar e trabalhar com hashes em PDF forms dinâmicos {#generate-work-with-hashes-dynamic-pdf-forms}
+# Geração e trabalho com hashes no PDF forms dinâmico {#generate-work-with-hashes-dynamic-pdf-forms}
 
 ## Conhecimento de pré-requisito {#prerequisite-knowledge}
 
@@ -22,13 +20,13 @@ ht-degree: 0%
 
 Início
 
-Quando quiser ocultar uma senha no formulário PDF e não quiser que ela fique em texto não criptografado dentro do código-fonte ou em qualquer outro lugar no documento PDF, é importante saber como gerar e trabalhar com hashes MD4, MD5, SHA-1 e SHA-256.
+Quando quiser ocultar uma senha no formulário do PDF e não quiser que ela fique em texto não criptografado dentro do código-fonte ou em qualquer outro lugar no documento do PDF, saber como gerar e trabalhar com hashes MD4, MD5, SHA-1 e SHA-256 é fundamental.
 
-A ideia é ofuscar a senha gerando um hash exclusivo e armazenando esse hash no documento PDF. Esse hash exclusivo pode ser gerado por diferentes funções de hash e, neste artigo, é mostrado como gerá-los dentro do formulário PDF e como trabalhar com eles.
+A ideia é ofuscar a senha gerando um hash exclusivo e armazenando esse hash no documento do PDF. Esse hash exclusivo pode ser gerado por diferentes funções de hash e, neste artigo, é mostrado como gerá-los dentro do formulário do PDF e como trabalhar com eles.
 
 Uma função hash pega uma longa string (ou mensagem) de qualquer comprimento como entrada e produz uma string de comprimento fixo como saída, às vezes chamada de resumo da mensagem ou impressão digital.
 
-O AEM Forms no JEE Designer permite implementar as diferentes funções de hash em objetos de script como JavaScript e executá-las em um documento PDF dinâmico. Os PDF de de exemplo incluídos nos arquivos de amostra deste artigo usam implementações de código aberto das seguintes funções de hash:
+O AEM Forms no JEE Designer permite implementar as diferentes funções de hash em objetos de script como JavaScript e executá-las em um documento dinâmico do PDF. Os PDFs de exemplo incluídos com os arquivos de exemplo deste artigo usam implementações de código aberto das seguintes funções de hash:
 
 * MD4 e MD5 - projetados por Ronald Rivest
 
@@ -70,7 +68,7 @@ Dependendo da função de hash escolhida, o comprimento do hash varia:
 * SHA-1: 160 bits
 * SHA-256: 256 bits
 
-## Experimentar os PDF forms de amostra {#try-sample-pdf-forms}
+## Experimentar a amostra de PDF forms {#try-sample-pdf-forms}
 
 Os arquivos de exemplo deste artigo incluem dois PDF forms. A primeira amostra permite digitar uma cadeia de caracteres e gerar valores de hash MD4, MD5, SHA-1 e SHA-256 para a cadeia de caracteres. O segundo exemplo é um formulário simples que desbloqueia campos de texto se uma senha correta for inserida.
 
@@ -112,9 +110,9 @@ if (soHASHING_SHA256.hex_sha256(this.rawValue) == passwd_man_hashed.rawValue){
 
 ## Aonde ir daqui {#next-steps}
 
-Onde você precisaria de algo assim? Considere um formulário PDF que tenha campos que só devem ser preenchidos por indivíduos autorizados. Protegendo esses campos com uma senha, que não pode ser vista em texto não criptografado em nenhum lugar do documento, como em Sample_2.pdf, você pode garantir que esses campos estejam acessíveis somente para usuários que conhecem a senha.
+Onde você precisaria de algo assim? Considere um formulário do PDF que tenha campos que só devem ser preenchidos por indivíduos autorizados. Protegendo esses campos com uma senha, que não pode ser vista em texto não criptografado em nenhum lugar do documento, como em Sample_2.pdf, você pode garantir que esses campos estejam acessíveis somente para usuários que conhecem a senha.
 
-Recomendo que você continue explorando os dois arquivos PDF de amostra.  Você pode gerar novos valores de hash com Sample_1.pdf e usar os valores gerados para alterar a senha ou a função de hash usada em Sample_2.pdf.  Os recursos listados na seção Atribuições também fornecem informações adicionais sobre hash e as implementações específicas do JavaScript usadas neste artigo.
+Recomendo que você continue explorando os dois arquivos de amostra do PDF.  Você pode gerar novos valores de hash com Sample_1.pdf e usar os valores gerados para alterar a senha ou a função de hash usada em Sample_2.pdf.  Os recursos listados na seção Atribuições também fornecem informações adicionais sobre hash e as implementações específicas do JavaScript usadas neste artigo.
 
 ## Atribuições {#attributions}
 
@@ -122,5 +120,5 @@ Recomendo que você continue explorando os dois arquivos PDF de amostra.  Você 
 * [NIST](https://csrc.nist.gov/projects/cryptographic-standards-and-guidelines)
 * [Colisão de hash](https://en.wikipedia.org/wiki/Hash_collision)
 * [Tabela de arco-íris](https://en.wikipedia.org/wiki/Rainbow_table)
-* [Página inicial do projeto do JavaScript MD5](https://pajhome.org.uk/crypt/md5/)
-* [página inicial do projeto jsSHA2](https://anmar.eu.org/projects/jssha2/)
+* [Página inicial do projeto JavaScript MD5](https://pajhome.org.uk/crypt/md5/)
+* [Página inicial do projeto jsSHA2](https://anmar.eu.org/projects/jssha2/)

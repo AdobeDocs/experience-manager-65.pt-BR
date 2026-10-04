@@ -12,11 +12,9 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '289'
+source-wordcount: '291'
 ht-degree: 4%
-
 ---
-
 # Console de selos {#badges-console}
 
 ## Sobre selos {#about-badges}
@@ -51,7 +49,7 @@ Se o ambiente de publicação for um farm de editores, será necessário configu
 
 * **Fazer upload de imagem**
 
-  (*Obrigatório*) Uma imagem de selo com tamanho recomendado de 32 x 32 pixels a 72 dpi em formato JPEG ou PNG.
+  (*Obrigatório*) Uma imagem de selo com tamanho recomendado de 32 x 32 pixels a 72 dpi no formato JPEG ou PNG.
 
 * **Nome**
 

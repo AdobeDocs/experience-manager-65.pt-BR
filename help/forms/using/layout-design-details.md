@@ -11,11 +11,9 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '2171'
+source-wordcount: '2190'
 ht-degree: 0%
-
 ---
-
 # Design do layout{#layout-design}
 
 Os modelos de formulário XFA ou XDPs são os modelos para:
@@ -29,7 +27,7 @@ Um XDP foi projetado no Adobe Forms Designer. Este artigo fornece detalhes sobre
 
 ## Criação de um layout para cartas ou para o canal de impressão de Comunicações Interativas {#creating-a-layout-for-letters-or-for-interactive-communications-print-channel}
 
-Um layout define o layout gráfico de um canal de carta/impressão de uma comunicação interativa. O layout pode conter campos de formulário típicos, como &quot;Endereço&quot; e &quot;Número de referência&quot;. Também contém subformulários vazios que indicam áreas de destino. Crie o layout no designer do formulário e, quando concluído, o especialista em aplicativos o carrega no servidor AEM. Nesse local, é possível selecionar o layout ao criar um modelo de correspondência ou imprimir canal de uma comunicação interativa.
+Um layout define o layout gráfico de um canal de carta/impressão de uma comunicação interativa. O layout pode conter campos de formulário típicos, como &quot;Endereço&quot; e &quot;Número de referência&quot;. Também contém subformulários vazios que indicam áreas de destino. Crie o layout no designer do formulário e, quando concluído, o especialista em aplicativos o carrega no servidor do AEM. Nesse local, é possível selecionar o layout ao criar um modelo de correspondência ou imprimir canal de uma comunicação interativa.
 
 ![Designer: criar um layout](assets/claimsubrogationlayout.png)
 
@@ -231,4 +229,4 @@ Quando elementos como o logotipo e o endereço de sua organização aparecem em 
 
 Use o formato de renderização do servidor do layout para o Formulário XML Dinâmico; caso contrário, quaisquer letras/Comunicações interativas baseadas nesse layout não poderão ser renderizadas corretamente. Por padrão, o formato de renderização do servidor no Forms Designer é definido como Formulário XML dinâmico. Para garantir que você esteja usando o formato correto:
 
-* No Designer, clique em **Arquivo** > **Propriedades do Formulário** > **Padrões** e verifique se a configuração Renderizar/Formatar PDF está definida como Formulário XML Dinâmico.
+* No Designer, clique em **Arquivo** > **Propriedades do Formulário** > **Padrões** e verifique se a configuração Renderização/Formato do PDF está definida como Formulário XML Dinâmico.

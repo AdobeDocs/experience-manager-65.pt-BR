@@ -1,23 +1,25 @@
 ---
 title: Criar novas pastas para categorizar formulários
-description: Use pastas para organizar modelos de formulário, PDF, recursos e formulários adaptáveis.
+
+description: Use pastas para organizar modelos de formulário, PDFs, recursos e formulários adaptáveis.
+
+
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
+
 role: Admin,User
 exl-id: f8af1ac3-6a95-4f91-8979-6b41a7e02ca4
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '387'
 ht-degree: 0%
-
 ---
-
 # Criar novas pastas para categorizar formulários {#create-new-folders-to-categorize-forms}
 
-Você pode organizar melhor seus ativos usando pastas. Como o AEM Forms é compatível com vários tipos de ativos — modelos de formulário, PDF, documentos, recursos e formulários adaptáveis, com vários metadados — você pode usar pastas para categorizar seus formulários com base nos critérios desejados.
+Você pode organizar melhor seus ativos usando pastas. Como o AEM Forms é compatível com vários tipos de ativos — modelos de formulário, PDFs, documentos, recursos e formulários adaptáveis, com vários metadados — você pode usar pastas para categorizar seus formulários com base nos critérios desejados.
 
 O AEM Forms permite alterar o título de uma pasta. O título não é o mesmo que o nome do nó em que a pasta está armazenada no repositório. Em vez disso, o título é mantido como metadados para a pasta. Se você alterar o título de uma pasta, o caminho de qualquer ativo presente na pasta não será afetado.
 

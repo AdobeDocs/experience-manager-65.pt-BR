@@ -1,6 +1,6 @@
 ---
 title: Exibição de dados adicionais na lista de tarefas
-description: Como personalizar a exibição da lista de tarefas do espaço de trabalho do LiveCycle AEM Forms para mostrar mais informações além do padrão.
+description: Como personalizar a exibição da lista de tarefas do LiveCycle AEM Forms workspace para mostrar mais informações além do padrão.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
@@ -11,16 +11,14 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '288'
 ht-degree: 0%
-
 ---
-
 # Exibição de dados adicionais na lista de tarefas{#displaying-additional-data-in-todo-list}
 
 Por padrão, a lista de tarefas pendentes do espaço de trabalho do AEM Forms exibe o nome de exibição e a descrição da tarefa. No entanto, é possível adicionar outras informações, como data de criação e data do prazo final. Você também pode adicionar ícones e alterar o estilo da exibição.
 
-![Uma olhada na guia HTML Workspace To-do mostrando a configuração padrão](assets/html-todo-list.png)
+![Uma olhada na guia Tarefas Pendentes do HTML Workspace mostrando a configuração padrão](assets/html-todo-list.png)
 
 Este artigo detalha as etapas para adicionar informações para exibir para cada tarefa na Lista de tarefas pendentes.
 
@@ -134,7 +132,7 @@ Para obter mais informações sobre a descrição do Objeto JSON, consulte o art
    }
    ```
 
-## Adição de entrada no Modelo HTML {#adding-entry-in-the-html-template}
+## Adição de entrada no modelo HTML {#adding-entry-in-the-html-template}
 
 Finalmente, é necessário incluir uma entrada no pacote dev para cada propriedade que você deseja adicionar à tarefa. Para criar uma consulte Criação de código do espaço de trabalho do AEM Forms.
 
