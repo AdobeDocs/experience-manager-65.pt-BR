@@ -11,27 +11,25 @@ feature: Operations
 role: Admin
 source-git-commit: f1eb41d08bb35adb93237f0ad09daa5bcd07fac8
 workflow-type: tm+mt
-source-wordcount: '782'
+source-wordcount: '783'
 ht-degree: 2%
-
 ---
-
 # Administração de fluxos de trabalho{#administering-workflows}
 
 Os workflows permitem automatizar as atividades do Adobe Experience Manager (AEM). Fluxos de trabalhos:
 
 * Consiste em uma série de etapas executadas em uma ordem específica.
 
-   * Cada etapa executa uma atividade distinta; como aguardar a entrada do usuário, ativar uma página ou enviar uma mensagem de email.
+  * Cada etapa executa uma atividade distinta; como aguardar a entrada do usuário, ativar uma página ou enviar uma mensagem de email.
 
 * Pode interagir com ativos no repositório, contas de usuário e serviços da AEM.
 * Pode coordenar atividades complicadas que envolvem qualquer aspecto do AEM.
 
 Os processos de negócios que sua organização estabeleceu podem ser representados como workflows. Por exemplo, o processo de publicação do conteúdo do site normalmente inclui etapas como aprovação e aprovação por vários participantes. Esses processos podem ser implementados como fluxos de trabalho do AEM e aplicados a páginas de conteúdo e ativos.
 
-* [Inicialização de workflows](/help/sites-administering/workflows-starting.md)
+* [Inicialização de fluxos de trabalho](/help/sites-administering/workflows-starting.md)
 * [Administração de instâncias do fluxo de trabalho](/help/sites-administering/workflows-administering.md)
-* [Gerenciamento de acesso a workflows](/help/sites-administering/workflows-managing.md)
+* [Gerenciamento de acesso a fluxos de trabalho](/help/sites-administering/workflows-managing.md)
 
 >[!NOTE]
 >
