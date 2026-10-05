@@ -11,11 +11,9 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: 2eac9acd8b92582424557222b673211b29a15185
 workflow-type: tm+mt
-source-wordcount: '2159'
+source-wordcount: '2167'
 ht-degree: 6%
-
 ---
-
 # Usando o serviço Assembler{#using-assembler-service}
 
 O serviço Assembler permite combinar, reorganizar e aumentar documentos PDF e XDP e obter informações sobre documentos PDF. Cada tarefa enviada ao serviço Assembler inclui um documento XML de Descrição de Documento (DDX), documentos de origem e recursos externos (sequências e gráficos). Para obter mais informações sobre o serviço de assembler, consulte [Visão Geral do Serviço de Assembler](../../forms/using/overview-aem-document-services.md#p-assembler-service-p).
@@ -24,7 +22,7 @@ Você pode usar o serviço de montagem para as seguintes operações:
 
 ## Montar documentos PDF {#assemble-pdf-documents}
 
-Você pode usar o serviço Assembler para reunir dois ou mais documentos PDF em um único documento PDF ou Portfolio PDF. Você também pode aplicar recursos ao documento PDF que auxiliam na navegação ou melhoram a segurança. Estas são algumas das maneiras de montar documentos PDF:
+Você pode usar o serviço Assembler para reunir dois ou mais documentos do PDF em um único documento do PDF ou PDF Portfolio. Você também pode aplicar recursos ao documento do PDF que ajudam na navegação ou melhoram a segurança. Estas são algumas das maneiras de montar documentos PDF:
 
 ### Montar um documento PDF simples {#assemble-a-simple-pdf-document}
 
@@ -32,7 +30,7 @@ A ilustração a seguir mostra três documentos de origem sendo mesclados em um 
 
 ![Montando um documento PDF simples a partir de vários documentos PDF](assets/as_document_assembly.png)
 
-Montagem de um documento PDF simples a partir de vários documentos PDF
+Montagem de um documento simples do PDF a partir de vários documentos do PDF
 
 O exemplo a seguir é um documento DDX simples usado para montar o documento. Especifica os nomes dos documentos de origem usados para produzir o documento resultante e o nome do documento resultante:
 
@@ -54,9 +52,9 @@ características:
 
 ### Criar um Portifolio de PDF {#create-a-pdf-portfolio}
 
-O serviço Assembler pode criar Portfolio PDF que contêm uma coleção de documentos e uma interface do usuário autocontida. A interface é chamada de Layout de Portfolio PDF ou navegador de Portfolio PDF (navegador). Portfolio PDF estendem a capacidade de pacotes PDF adicionando um navegador, pastas e páginas de boas-vindas. A interface pode aprimorar a experiência do usuário aproveitando a sequência de caracteres de texto localizada, esquemas de cores personalizados e recursos gráficos. O Portfolio PDF também pode incluir pastas para organizar os arquivos no portfólio.
+O serviço Assembler pode criar portfólios do PDF que contêm uma coleção de documentos e uma interface de usuário independente. A interface é chamada de Layout PDF Portfolio ou de navegador PDF Portfolio (navegador). Os portfólios do PDF estendem a capacidade dos pacotes do PDF adicionando um navegador, pastas e páginas de boas-vindas. A interface pode aprimorar a experiência do usuário aproveitando a sequência de caracteres de texto localizada, esquemas de cores personalizados e recursos gráficos. O PDF Portfolio também pode incluir pastas para organizar os arquivos no portfólio.
 
-Quando o serviço Assembler interpreta o seguinte documento DDX, ele monta um Portfolio PDF que inclui um navegador de Portfolio PDF e um pacote de dois arquivos. O serviço obtém o navegador no local especificado pela origem myNavigator. Ela altera o esquema de cor padrão do navegador para o esquema de cor rosaEsquema.
+Quando o serviço Assembler interpreta o seguinte documento DDX, ele monta um PDF Portfolio que inclui um navegador PDF Portfolio e um pacote de dois arquivos. O serviço obtém o navegador no local especificado pela origem myNavigator. Ela altera o esquema de cor padrão do navegador para o esquema de cor rosaEsquema.
 
 ```xml
 <DDX xmlns="https://ns.adobe.com/DDX/1.0/">
@@ -75,9 +73,9 @@ Quando o serviço Assembler interpreta o seguinte documento DDX, ele monta um Po
 
 ### Compilar documentos criptografados {#assemble-encrypted-documents}
 
-Ao reunir um documento, você também pode criptografar o documento PDF com uma senha. Depois que um documento PDF é criptografado com uma senha, um usuário deve especificar a senha para exibir o documento PDF no Adobe Reader ou Acrobat. Para criptografar um documento PDF com uma senha, o documento DDX deve conter valores de elementos de criptografia necessários para criptografar um documento PDF.
+Ao reunir um documento, você também pode criptografar o documento do PDF com uma senha. Depois que um documento do PDF é criptografado com uma senha, um usuário deve especificar a senha para exibir o documento do PDF no Adobe Reader ou no Acrobat. Para criptografar um documento PDF com uma senha, o documento DDX deve conter valores de elementos de criptografia necessários para criptografar um documento PDF.
 
-O Serviço de criptografia não precisa fazer parte da instalação do LiveCycle para criptografar um documento PDF com uma senha.
+O serviço de criptografia não precisa fazer parte da instalação do LiveCycle para criptografar um documento do PDF com uma senha.
 
 Se um ou mais documentos de entrada estiverem criptografados, forneça uma senha para abrir o documento como parte do DDX.
 
@@ -85,17 +83,17 @@ Se um ou mais documentos de entrada estiverem criptografados, forneça uma senha
 
 Ao montar um documento, você pode usar a numeração de Bates para aplicar um identificador de página exclusivo a cada página. Quando você usa a numeração de Bates, cada página no documento (ou conjunto de documentos) recebe um número que identifica exclusivamente a página. Por exemplo, os documentos de fabricação que contêm informações sobre a lista de materiais e estão associados à produção de uma montagem podem conter um identificador. Um número Bates contém um valor numérico incrementado sequencialmente e um prefixo e sufixo opcionais. O prefixo + valor numérico + sufixo é chamado de padrão bates.
 
-A ilustração a seguir mostra um documento PDF que contém um identificador exclusivo no cabeçalho do documento.
+A ilustração a seguir mostra um documento do PDF que contém um identificador exclusivo no cabeçalho do documento.
 
-![Um documento PDF que contém um identificador exclusivo no cabeçalho do documento](do-not-localize/as_batesnumber.png)
+![Um documento do PDF que contém um identificador exclusivo no cabeçalho do documento](do-not-localize/as_batesnumber.png)
 
-Um documento PDF que contém um identificador exclusivo no cabeçalho do documento
+Um documento do PDF que contém um identificador exclusivo no cabeçalho do documento
 
 ### Nivelar e reunir documentos {#flatten-and-assemble-documents}
 
-Você pode usar o serviço Assembler para transformar um documento PDF interativo (por exemplo, um formulário) em um documento PDF não interativo. Um documento PDF interativo permite que os usuários insiram ou modifiquem dados nos campos do documento PDF. O processo de transformação de um documento PDF interativo em um documento PDF não interativo é chamado de nivelamento. Quando um documento PDF é nivelado, os campos de formulário mantêm sua aparência gráfica, mas não são mais interativos. Um motivo para nivelar um documento PDF é garantir que os dados não possam ser modificados. Além disso, os scripts associados aos campos não funcionam mais.
+Você pode usar o serviço Assembler para transformar um documento PDF interativo (por exemplo, um formulário) em um documento PDF não interativo. Um documento interativo do PDF permite que os usuários insiram ou modifiquem dados nos campos de documento do PDF. O processo de transformação de um documento interativo do PDF em um documento não interativo do PDF é chamado de nivelamento. Quando um documento do PDF é nivelado, os campos de formulário mantêm sua aparência gráfica, mas não são mais interativos. Um motivo para nivelar um documento do PDF é garantir que os dados não possam ser modificados. Além disso, os scripts associados aos campos não funcionam mais.
 
-Quando você cria um documento PDF que é montado a partir de documentos PDF interativos, o serviço do Assembler nivela esses formulários antes de montá-los no documento resultante.
+Quando você cria um documento do PDF que é montado a partir de documentos interativos do PDF, o serviço do Assembler nivela esses formulários antes de montá-los no documento resultante.
 
 >[!NOTE]
 >
@@ -277,7 +275,7 @@ Você pode usar o serviço Assembler para empacotar um documento XDP como um doc
 
 ## Desmontar documentos PDF {#disassemble-pdf-documents}
 
-Você pode usar o serviço Assembler para desmontar um documento PDF. O serviço pode extrair páginas do documento de origem ou dividir um documento de origem com base em marcadores. Normalmente, essa tarefa é útil se o documento PDF foi criado originalmente de muitos documentos individuais, como uma coleção de declarações.
+Você pode usar o serviço Assembler para desmontar um documento do PDF. O serviço pode extrair páginas do documento de origem ou dividir um documento de origem com base em marcadores. Normalmente, essa tarefa é útil se o documento PDF foi criado originalmente de muitos documentos individuais, como uma coleção de declarações.
 
 ### Extrair páginas de um documento de origem {#extract-pages-from-a-source-document}
 
@@ -311,38 +309,38 @@ O exemplo a seguir é um documento DDX que usa marcadores para desmontar um docu
 </PDFsFromBookmarks>
 ```
 
-## Determine se os documentos são compatíveis com o PDF/A {#determine-whether-documents-are-pdf-a-compliant}
+## Determinar se os documentos são compatíveis com o PDF/A {#determine-whether-documents-are-pdf-a-compliant}
 
-Você pode usar o serviço Assembler para determinar se um documento de PDF é compatível com PDF/A. PDF/A é um formato de arquivo destinado à preservação de longo prazo do conteúdo do documento. As fontes são incorporadas no documento e o arquivo é descompactado. Como resultado, um documento PDF/A geralmente é maior do que um documento PDF padrão. Além disso, um documento PDF/A não contém conteúdo de áudio e vídeo.
+Você pode usar o serviço Assembler para determinar se um documento do PDF é compatível com o PDF/A. PDF/A é um formato de arquivo destinado à preservação de longo prazo do conteúdo do documento. As fontes são incorporadas no documento e o arquivo é descompactado. Como resultado, um documento PDF/A geralmente é maior do que um documento PDF padrão. Além disso, um documento PDF/A não contém conteúdo de áudio e vídeo.
 
-## Obter informações sobre um documento PDF {#obtain-information-about-a-pdf-document}
+## Obter informações sobre um documento do PDF {#obtain-information-about-a-pdf-document}
 
-Você pode usar o serviço Assembler para obter as seguintes informações sobre um documento PDF:
+Você pode usar o serviço Assembler para obter as seguintes informações sobre um documento do PDF:
 
 * Informações de texto.
 
-   * Palavras em cada página do documento
-   * Posição de cada palavra em cada página do documento
-   * Frases em cada parágrafo de cada página do documento
+  * Palavras em cada página do documento
+  * Posição de cada palavra em cada página do documento
+  * Frases em cada parágrafo de cada página do documento
 
 * Marcadores, incluindo número da página, título, destino e aparência. Você pode exportar isto\
-  dados de um documento PDF e importe-os para um documento PDF.
+  dados de um documento do PDF e importe-os para um documento do PDF.
 
 * Anexos de arquivo, incluindo informações de arquivo. Para anexos no nível da página, também inclui a variável\
-  local da anotação do anexo de arquivo. É possível exportar esses dados de um documento PDF e\
-  importe-o em um documento PDF.
+  local da anotação do anexo de arquivo. É possível exportar esses dados de um documento do PDF e\
+  importe-o para um documento do PDF.
 
-* Arquivos de pacote, incluindo informações de arquivo, pastas, pacote, esquema e dados de campo. Você pode exportar esses dados de um documento PDF e importá-los para um documento PDF.
+* Arquivos de pacote, incluindo informações de arquivo, pastas, pacote, esquema e dados de campo. É possível exportar esses dados de um documento do PDF e importá-los para um documento do PDF.
 
 ## Validar documentos DDX {#validate-ddx-documents}
 
-Você pode usar o serviço Assembler para determinar se um documento DDX é válido. Por exemplo, se você atualizou de uma versão anterior do LiveCycle, a validação garante que o documento DDX é válido.
+Você pode usar o serviço Assembler para determinar se um documento DDX é válido. Por exemplo, se você atualizou de uma versão anterior do LiveCycle, a validação garante que seu documento DDX seja válido.
 
 ## Ligar para outros serviços {#call-other-services}
 
 Você pode usar documentos DDX que fazem com que o serviço Assembler chame os seguintes serviços LiveC ycle. O serviço do Assembler pode chamar apenas os serviços instalados com o LiveCycle.
 
-**Serviço de extensões Reader**: permite que os usuários do Adobe Reader assinem digitalmente o documento PDF resultante.
+**Serviço de extensões do Reader**: permite que os usuários do Adobe Reader assinem digitalmente o documento resultante do PDF.
 
 **Serviço Forms**: mescla um arquivo XDP e um arquivo de dados XML para produzir um documento PDF que contém o formulário interativo preenchido.
 

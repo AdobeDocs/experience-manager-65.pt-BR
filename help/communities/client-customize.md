@@ -11,11 +11,9 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1235'
+source-wordcount: '1242'
 ht-degree: 0%
-
 ---
-
 # Personalização do lado do cliente  {#client-side-customization}
 
 | **[⇐ Feature Essentials](essentials.md)** | **[Personalização no lado do servidor ^](server-customize.md)** |
@@ -44,7 +42,7 @@ Isso é diferente de [estender](#extensions) um componente padrão em que o dese
 
 Para obter um exemplo rápido de sobreposição do componente de comentários, tente o [tutorial do Componente de Sobreposição de Comentários](overlay-comments.md).
 
-## Extensões  {#extensions}
+## Extensões {#extensions}
 
 Estender (substituir) um componente é um método de fazer modificações para um uso específico sem afetar todas as instâncias que usam o padrão. O componente estendido é nomeado exclusivamente na pasta /apps e faz referência ao componente padrão na pasta /libs, portanto, o design e o comportamento padrão de um componente não são modificados.
 
@@ -95,7 +93,7 @@ Para aplicar capa a um componente:
 1. Identifique os elementos que deseja alterar (por exemplo, área do compositor, botões da barra de ferramentas, fonte da mensagem e assim por diante).
 1. Identifique a classe/regras CSS que afetam esses elementos.
 1. Crie um arquivo de folha de estilos (.css).
-1. Inclua a folha de estilos em uma pasta da biblioteca do cliente ([clientlibs](#clientlibs-for-scf)) para o seu site e verifique se ela está incluída em seus modelos e páginas com [ui:includeClientLib](../../help/sites-developing/clientlibs.md).
+1. Inclua a folha de estilos em uma pasta da biblioteca do cliente ([clientlibs](#clientlibs-for-scf)) para o seu site e verifique se ela está incluída em seus modelos e páginas com a [ui:includeClientLib](../../help/sites-developing/clientlibs.md).
 
 1. Redefina as classes e regras CSS identificadas (#2) na folha de estilos e adicione estilos.
 
@@ -146,7 +144,7 @@ Para estender uma implementação do JavaScript de componentes, é necessário:
 
 As tags de script são uma parte inerente da estrutura do lado do cliente. Eles são a cola que ajuda a vincular a marcação gerada no lado do servidor aos modelos e visualizações no lado do cliente.
 
-As tags de script nos scripts SCF não devem ser removidas ao sobrepor ou substituir componentes. As tags de script SCF criadas automaticamente para inserção de JSON no HTML são identificadas com o atributo `data-scf-json=true`.
+As tags de script nos scripts SCF não devem ser removidas ao sobrepor ou substituir componentes. As marcas de script SCF criadas automaticamente para inserção de JSON na HTML são identificadas com o atributo `data-scf-json=true`.
 
 ## Clientlibs para SCF {#clientlibs-for-scf}
 
@@ -161,7 +159,7 @@ As clientlibs do SCF seguem um padrão de nomenclatura muito específico para du
 
 ### Clientlibs completos {#complete-clientlibs}
 
-As bibliotecas de clientes completas (não de autor) incluem dependências e são convenientes para inclusão com ui:includeClientLib.
+As clientlibs completas (não autoras) incluem dependências e são convenientes para inclusão com a interface do usuário :includeClientLib.
 
 Essas versões são encontradas em:
 

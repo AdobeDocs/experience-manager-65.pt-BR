@@ -7,16 +7,14 @@ feature: Adaptive Forms,Document Security
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '215'
+source-wordcount: '228'
 ht-degree: 0%
-
 ---
-
 # Transmitindo credenciais usando cabeçalhos de Segurança WS {#using-execute-script-service-aem-forms-jee-workbench}
 
-Ao chamar um serviço AEM Forms no JEE usando serviços da Web, você pode usar cabeçalhos de segurança WS para transmitir informações de autenticação do cliente exigidas pelo AEM Forms no JEE. O WS-Security define extensões SOAP para implementar a autenticação de cliente, a confidencialidade da mensagem e a integridade da mensagem. Como resultado, você pode chamar os serviços do AEM Forms no JEE quando o AEM Forms no JEE for implantado como servidor independente ou em um ambiente em cluster.
+Ao chamar um serviço AEM Forms no JEE usando serviços da Web, você pode usar cabeçalhos de segurança WS para transmitir informações de autenticação do cliente exigidas pelo AEM Forms no JEE. O WS-Security define as extensões do SOAP para implementar a autenticação de cliente, a confidencialidade da mensagem e a integridade da mensagem. Como resultado, você pode chamar os serviços do AEM Forms no JEE quando o AEM Forms no JEE for implantado como servidor independente ou em um ambiente em cluster.
 
-A forma como você passa cabeçalhos de segurança de WS para o AEM Forms no JEE depende de você estar usando classes Java geradas pelo Axis ou um assembly cliente .NET que consome a pilha SOAP nativa de um serviço.
+A forma como você passa cabeçalhos de segurança de WS para o AEM Forms no JEE depende de você estar usando classes Java geradas pelo Axis ou um assembly cliente .NET que consome a pilha nativa do SOAP de um serviço.
 
 >[!NOTE]
 >

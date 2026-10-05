@@ -12,11 +12,9 @@ feature: Communities
 role: Developer
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '690'
+source-wordcount: '735'
 ht-degree: 0%
-
 ---
-
 # Adicionar Clientlibs {#add-clientlibs}
 
 ## Adicionar uma ClientLibraryFolder (clientlibs) {#add-a-clientlibraryfolder-clientlibs}
@@ -25,7 +23,7 @@ Crie uma ClientLibraryFolder chamada `clientlibs` que contém a JavaScript (JS) 
 
 O valor da propriedade `categories` fornecido a esta biblioteca do cliente é o identificador usado para incluir diretamente esta clientlib de uma página de conteúdo ou para incorporá-la a outras clientlibs.
 
-1. Usando **CRXDE Lite**, expanda `/etc/designs`
+1. Usando o **CRXDE Lite**, expanda `/etc/designs`
 
 1. Clique com o botão direito em `an-scf-sandbox` e selecione `Create Node`
 
@@ -44,7 +42,7 @@ Na guia **Propriedades** do novo nó `clientlibs`, insira a propriedade **catego
 * Clique em **Adicionar**
 * Clique em **Salvar tudo**
 
-Observação: prefixar o valor das categorias com &quot;aplicativos&quot;. é uma convenção para identificar o &#39;aplicativo proprietário&#39; como estando na pasta /apps, não /libs. IMPORTANTE: adicionar os arquivos de espaço reservado `js.tx`t e **`css.txt`**. (Não é oficialmente um cq:ClientLibraryFolder sem eles.)
+Observação: preceder o valor de categorias com &quot;aplicativos&quot; é uma convenção para identificar o &quot;aplicativo proprietário&quot; como estando na pasta /apps, não /libs. IMPORTANTE: adicionar os arquivos de espaço reservado `js.tx`t e **`css.txt`**. (Não é oficialmente um cq:ClientLibraryFolder sem eles.)
 
 1. Clique com o botão direito do mouse em **`/etc/designs/an-scf-sandbox/clientlibs`**
 1. Selecione **Criar arquivo...**
@@ -89,16 +87,16 @@ Nesse caso, incluindo todos eles e, portanto, os clientlibs SCF mais básicos qu
 * Clique em **`Multi`**
 * Valor: **`cq.social.scf`**
 
-   * Ele exibirá uma caixa de diálogo,
-clique em **`+`** após cada entrada para adicionar as seguintes categorias de clientlib:
+  * Ele exibirá uma caixa de diálogo,
+    clique em **`+`** após cada entrada para adicionar as seguintes categorias de clientlib:
 
-      * **`cq.ckeditor`**
-      * **`cq.social.author.hbs.comments`**
-      * **`cq.social.author.hbs.forum`**
-      * **`cq.social.author.hbs.rating`**
-      * **`cq.social.author.hbs.reviews`**
-      * **`cq.social.author.hbs.voting`**
-      * Clique em **OK**
+    * **`cq.ckeditor`**
+    * **`cq.social.author.hbs.comments`**
+    * **`cq.social.author.hbs.forum`**
+    * **`cq.social.author.hbs.rating`**
+    * **`cq.social.author.hbs.reviews`**
+    * **`cq.social.author.hbs.voting`**
+    * Clique em **OK**
 
 * Clique em **Salvar tudo**
 
@@ -124,7 +122,7 @@ A instrução include pertence à seção `head` do script `html`. O padrão **`
 
 **Copie headlibs.jsp e inclua clientlibs:**
 
-1. Usando **CRXDE Lite**, selecione **`/libs/foundation/components/page/headlibs.jsp`**
+1. Usando o **CRXDE Lite**, selecione **`/libs/foundation/components/page/headlibs.jsp`**
 
 1. Clique com o botão direito e selecione **Copiar** (ou selecione Copiar na barra de ferramentas)
 1. Selecionar **`/apps/an-scf-sandbox/components/playpage`**
@@ -162,26 +160,26 @@ Para criar um pacote:
 * No CRXDE Lite, clique no [ícone Pacote](https://localhost:4502/crx/packmgr/)
 * Clique em **Criar pacote**
 
-   * Nome do pacote: an-scf-sandbox-minimal-pkg
-   * Versão: 0.1
-   * Grupo: `leave as default`
-   * Clique em **OK**
+  * Nome do pacote: an-scf-sandbox-minimal-pkg
+  * Versão: 0.1
+  * Grupo: `leave as default`
+  * Clique em **OK**
 
 * Clique em **Editar**
 
-   * Selecione a guia **Filtros**
+  * Selecione a guia **Filtros**
 
-      * Clique em **Adicionar filtro**
-      * Caminho Raiz: navegar até `/apps/an-scf-sandbox`
-      * Clique em **Concluído**
-      * Clique em **Adicionar filtro**
-      * Caminho Raiz: navegar até `/etc/designs/an-scf-sandbox`
-      * Clique em **Concluído**
-      * Clique em **Adicionar filtro**
-      * Caminho Raiz: navegar até `/content/an-scf-sandbox**`
-      * Clique em **Concluído**
+    * Clique em **Adicionar filtro**
+    * Caminho Raiz: navegar até `/apps/an-scf-sandbox`
+    * Clique em **Concluído**
+    * Clique em **Adicionar filtro**
+    * Caminho Raiz: navegar até `/etc/designs/an-scf-sandbox`
+    * Clique em **Concluído**
+    * Clique em **Adicionar filtro**
+    * Caminho Raiz: navegar até `/content/an-scf-sandbox**`
+    * Clique em **Concluído**
 
-   * Clique em **Salvar**
+  * Clique em **Salvar**
 
 * Clique em **Build**
 

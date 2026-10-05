@@ -1,8 +1,12 @@
 ---
 title: Criação da ajuda em contexto para campos de formulário
+
 description: O AEM Forms permite adicionar ajuda em contexto a campos e painéis de formulário adaptáveis, como texto ou mídia avançada, incluindo vídeos.
+
+
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
+
 docset: aem65
 feature: Adaptive Forms,Foundation Components
 exl-id: 6569bfba-9af5-4060-8640-e51d7af46614
@@ -10,14 +14,12 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '416'
-ht-degree: 0%
-
+source-wordcount: '444'
+ht-degree: 4%
 ---
-
 # Criação da ajuda em contexto para campos de formulário{#authoring-in-context-help-for-form-fields}
 
-O <span class="preview"> Adobe recomenda o uso de [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adicionar o Forms Adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
+A Adobe <span class="preview"> recomenda usar os [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adicionar o Forms Adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
 
 ## Introdução {#introduction}
 
@@ -56,7 +58,7 @@ Você pode usar o campo Descrição longa para especificar texto longo ou incorp
 
 ![Adicionando mídia avançada como ajuda em contexto para campos de formulário](assets/long-descriptions.png)
 
-Adicionar descrição longa exibe um **?Ícone** ao lado do campo. Clicar no ícone exibe o conteúdo adicionado na seção de descrição longa.
+Adicionando descrição longa exibe um **?** ícone ao lado do campo. Clicar no ícone exibe o conteúdo adicionado na seção de descrição longa.
 
 ![Exemplo de ajuda em contexto de mídia avançada](assets/photoshop.png)
 
@@ -66,6 +68,6 @@ Além da ajuda em contexto para campos de formulário, você pode especificar a 
 
 ![Adicionando ajuda em contexto para um painel de formulário](assets/panel-level-help.png)
 
-Adicionar ajuda para o painel exibe um **?Ícone** ao lado da descrição do painel. Clicar no ícone exibe o conteúdo adicionado na seção Conteúdo da ajuda da caixa de diálogo de edição do painel.
+Adicionando ajuda para o painel exibe um **?** ícone ao lado da descrição do painel. Clicar no ícone exibe o conteúdo adicionado na seção Conteúdo da ajuda da caixa de diálogo de edição do painel.
 
 ![Exemplo de ajuda em contexto no nível do painel do formulário](assets/photoshop-1.png)

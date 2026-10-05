@@ -1,5 +1,5 @@
 ---
-title: Reestruturação do repositório Assets no AEM 6.5
+title: Reestruturação do repositório do Assets no AEM 6.5
 description: Saiba como fazer as alterações necessárias para migrar para a nova estrutura do repositório no Adobe Experience Manager (AEM) 6.5 para Assets.
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -10,12 +10,10 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
-source-wordcount: '1047'
+source-wordcount: '1083'
 ht-degree: 1%
-
 ---
-
-# Reestruturação do repositório Assets no AEM 6.5 {#assets-repository-restructuring-in-aem}
+# Reestruturação do repositório do Assets no AEM 6.5 {#assets-repository-restructuring-in-aem}
 
 Conforme descrito na página pai [Reestruturação do repositório no AEM 6.5](/help/sites-deploying/repository-restructuring.md), os clientes que estão atualizando para o Adobe Experience Manager (AEM) 6.5 devem usar esta página para avaliar o esforço de trabalho associado às alterações no repositório que afetam a solução da AEM Assets. Algumas alterações exigem esforço de trabalho durante o processo de atualização do AEM 6.5, enquanto outras podem ser adiadas até uma atualização futura.
 
@@ -30,7 +28,7 @@ Conforme descrito na página pai [Reestruturação do repositório no AEM 6.5](/
 * [Baixar modelo de notificação por e-mail do ativo](/help/sites-deploying/assets-repository-restructuring-in-aem-6-5.md#download-asset-e-mail-notification-template)
 * [Exemplo de licenças DRM](/help/sites-deploying/assets-repository-restructuring-in-aem-6-5.md#example-drm-licenses)
 * [Modelo de notificação por e-mail de compartilhamento de links](/help/sites-deploying/assets-repository-restructuring-in-aem-6-5.md#link-share-e-mail-notification-template)
-* [Scripts de fluxo de trabalho do InDesign](/help/sites-deploying/assets-repository-restructuring-in-aem-6-5.md#indesign-workflow-scripts)
+* [Scripts de fluxo de trabalho InDesign](/help/sites-deploying/assets-repository-restructuring-in-aem-6-5.md#indesign-workflow-scripts)
 * [Configurações de transcodificação de vídeo](/help/sites-deploying/assets-repository-restructuring-in-aem-6-5.md#video-transcoding-configurations)
 * [Diversos](/help/sites-deploying/assets-repository-restructuring-in-aem-6-5.md#misc2)
 
@@ -198,7 +196,7 @@ Conforme descrito na página pai [Reestruturação do repositório no AEM 6.5](/
  </tbody>
 </table>
 
-### Scripts de fluxo de trabalho do InDesign {#indesign-workflow-scripts}
+### Scripts de fluxo de trabalho InDesign {#indesign-workflow-scripts}
 
 <table>
  <tbody>
