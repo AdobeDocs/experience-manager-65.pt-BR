@@ -11,14 +11,12 @@ feature: Commerce Integration Framework
 role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
-source-wordcount: '2907'
+source-wordcount: '2961'
 ht-degree: 2%
-
 ---
-
 # Administração de comércio eletrônico genérico {#administering-generic-ecommerce}
 
-A solução genérica Adobe Experience Manager (AEM) fornece métodos de gerenciamento das informações comerciais mantidas no repositório (em vez de usar um mecanismo de comércio eletrônico externo). Isso inclui:
+A solução genérica Adobe Experience Manager (AEM) fornece métodos de gerenciamento das informações comerciais mantidas no repositório (em vez de usar um mecanismo externo de comércio eletrônico). Isso inclui:
 
 * [Produtos](/help/commerce/cif-classic/administering/concepts.md#products)
 * [Variantes do produto](/help/commerce/cif-classic/administering/concepts.md#product-variants)
@@ -30,7 +28,7 @@ A solução genérica Adobe Experience Manager (AEM) fornece métodos de gerenci
 
 >[!NOTE]
 >
->A instalação padrão do AEM inclui a implementação de comércio eletrônico genérico AEM (JCR).
+>A instalação padrão do AEM inclui a implementação de comércio eletrônico do AEM (JCR) genérico.
 >
 >Ele é destinado a fins de demonstração ou como base para uma implementação personalizada de acordo com seus requisitos.
 
@@ -118,7 +116,7 @@ Antes de criar produtos, defina um [scaffold](/help/sites-authoring/scaffolding.
 
    * **Provedor do Commerce**
 
-     O importador do seu [provedor de comércio](/help/commerce/cif-classic/administering/concepts.md#commerce-providers); por padrão, Geometrixx.
+     O importador do seu [provedor de comércio](/help/commerce/cif-classic/administering/concepts.md#commerce-providers); por padrão, o Geometrixx.
 
    * **Arquivo Source**
 
@@ -220,7 +218,7 @@ Antes de criar produtos, defina um [scaffold](/help/sites-authoring/scaffolding.
 
 #### Extensão da pesquisa {#extending-search}
 
-Você pode modificar uma faceta existente ou adicionar novas, usando o CRXDE Lite:
+É possível modificar uma faceta existente ou adicionar novas, usando o CRXDE Lite:
 
 1. Vá até:
 
@@ -329,7 +327,7 @@ O mecanismo para selecionar a imagem a ser exibida é o seguinte:
 >
 >Geralmente, as informações do produto são publicadas pelas páginas que fazem referência a elas. Por exemplo, ao publicar a página X, que faz referência ao produto Y, o AEM pergunta se você também deseja publicar o produto Y.
 >
->Para casos especiais, o AEM também oferece suporte à publicação direta dos dados do produto.
+>Para casos especiais, o AEM também permite a publicação direta dos dados do produto.
 
 1. Usando o console **Produtos** (via **Commerce**), navegue até as informações do produto.
 1. Usando:
@@ -337,7 +335,7 @@ O mecanismo para selecionar a imagem a ser exibida é o seguinte:
    * [ações rápidas](/help/sites-authoring/basic-handling.md#quick-actions)
    * [modo de seleção](/help/sites-authoring/basic-handling.md#navigating-and-selection-mode)
 
-   Selecione o ícone **Publish** ou **Cancelar publicação**, conforme necessário:
+   Selecione o ícone **Publicar** ou **Cancelar publicação**, conforme necessário:
 
    ![ícone do mundo](/help/sites-administering/do-not-localize/chlimage_1-18.png) ![ícone do mundo com uma cruz - sem sinal](/help/sites-administering/do-not-localize/chlimage_1-19.png)
 
