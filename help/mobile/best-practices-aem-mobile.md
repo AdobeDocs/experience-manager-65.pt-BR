@@ -11,45 +11,43 @@ feature: Mobile
 role: User
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '556'
+source-wordcount: '604'
 ht-degree: 0%
-
 ---
-
 # Práticas recomendadas {#best-practices}
 
 {{ue-over-mobile}}
 
 Criar um aplicativo AEM Mobile On-demand Services é diferente de criar um aplicativo que é executado diretamente no shell Cordova (ou PhoneGap). Os desenvolvedores devem estar familiarizados com:
 
-* Plug-ins prontos para uso e plug-ins específicos para dispositivos móveis do Adobe Experience Manager (AEM).
+* Plug-ins prontos para uso e plug-ins específicos do Adobe Experience Manager (AEM) Mobile.
 
 >[!NOTE]
 >
 >Para saber mais detalhes sobre plug-ins, consulte os seguintes recursos:
 >
->* [Usando plug-ins do Cordova no AEM Mobile](https://helpx.adobe.com/br/digital-publishing-solution/help/cordova-api.html)
->* [Usando plug-ins habilitados para Cordova específicos do AEM Mobile](https://helpx.adobe.com/br/digital-publishing-solution/help/app-runtime-api.html)
+>* [Usando plug-ins do Cordova no AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/cordova-api.html)
+>* [Usando plug-ins habilitados para Cordova específicos do AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/app-runtime-api.html)
 >
 
 * Os modelos que usam a funcionalidade de plug-in devem ser escritos de forma que ainda sejam autoráveis no navegador, sem que a ponte do plug-in esteja presente.
 
-   * Por exemplo, aguarde a função *deviceready* antes de tentar acessar a API de um plug-in.
+  * Por exemplo, aguarde a função *deviceready* antes de tentar acessar a API de um plug-in.
 
 ## Diretrizes para desenvolvedores do AEM {#guidelines-for-aem-developers}
 
-As seguintes diretrizes ajudam os desenvolvedores de AEM competentes para sites que desejam criar modelos e componentes de aplicativos móveis:
+As diretrizes a seguir ajudam os desenvolvedores competentes do AEM em sites que desejam criar modelos e componentes de aplicativos móveis:
 
-**Estruturar modelos de sites AEM para incentivar a reutilização e a extensibilidade**
+**Estruturar modelos de sites do AEM para incentivar a reutilização e a extensibilidade**
 
 * Preferir vários arquivos de script de componente em vez de um único arquivo monolítico
 
-   * Vários pontos de extensão vazios são fornecidos, como *customheaderlibs.html* e *customfooterlibs.html*, que permitem que o desenvolvedor altere o modelo da página enquanto duplica o mínimo possível de código principal
-   * Os modelos podem ser estendidos e personalizados pelo mecanismo *sling:resourceSuperType* do Sling
+  * Vários pontos de extensão vazios são fornecidos, como *customheaderlibs.html* e *customfooterlibs.html*, que permitem que o desenvolvedor altere o modelo da página enquanto duplica o mínimo possível de código principal
+  * Os modelos podem ser estendidos e personalizados pelo mecanismo *sling:resourceSuperType* do Sling
 
 * Prefira Sightly/HTL a JSP como a linguagem de modelo
 
-   * O uso dessa opção incentiva a separação do código da marcação, oferece proteção XSS integrada e tem uma sintaxe mais familiar
+  * O uso dessa opção incentiva a separação do código da marcação, oferece proteção XSS integrada e tem uma sintaxe mais familiar
 
 **Otimizar para desempenho no dispositivo**
 
@@ -73,7 +71,7 @@ As seguintes diretrizes ajudam os desenvolvedores de AEM competentes para sites 
 **Preferir bibliotecas micro sobre pilha completa**
 
 * O tempo que leva para colocar seu conteúdo no vidro do dispositivo é reduzido por cada biblioteca da qual seus artigos dependem. Esse atraso é agravado quando uma nova visualização da Web é usada para renderizar cada artigo, de modo que cada biblioteca deve ser inicializada novamente do zero
-* Se seus artigos não forem criados como SPA (aplicativos de página única), você provavelmente não precisará incluir uma biblioteca de pilha completa, como o Angular
+* Se os artigos não forem criados como SPAs (aplicativos de página única), você provavelmente não precisará incluir uma biblioteca de pilha completa, como o Angular
 * Prefira bibliotecas menores de uso único que ajudem a adicionar a interatividade exigida pela sua página, como o [Fastclick](https://github.com/ftlabs/fastclick) ou o [Velocity.js](https://velocityjs.org)
 
 **Minimizar tamanho da carga do artigo**
