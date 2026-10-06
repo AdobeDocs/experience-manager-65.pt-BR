@@ -33,7 +33,7 @@ Antes de iniciar seu projeto de desenvolvimento do AEM, revise primeiro estas pr
 * [Armadilhas de código](/help/sites-developing/code-pitfalls.md)
 * [Interação JCR](/help/sites-developing/jcr-integration.md)
 * [Pacotes OSGi](/help/sites-developing/osgi-bundles.md)
-* [Práticas recomendadas da API Java](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html)
+* [Práticas recomendadas da API Java](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html?lang=pt-BR)
 
 ### Informações adicionais sobre práticas recomendadas {#additional-best-practices-information}
 
@@ -98,7 +98,7 @@ A Linguagem de modelo do HTML (HTL) é um novo sistema de modelos do HTML, intro
 |  |  |  |
 |---|---|---|
 | Visão geral da HTL | [Visão geral e sintaxe do HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=pt-BR) | Este documento descreve o que é o HTL, como mover para HTL, um projeto de amostra, sintaxe, expressões e instruções |
-| Utilização da API em java | [API de uso do Java do HTL](https://helpx.adobe.com/experience-manager/htl/using/use-api.html) | A API de uso Java do HTL permite que um arquivo HTL acesse métodos de ajuda em uma classe Java personalizada. |
+| Utilização da API em java | [API de uso do Java do HTL](https://helpx.adobe.com/br/experience-manager/htl/using/use-api.html) | A API de uso Java do HTL permite que um arquivo HTL acesse métodos de ajuda em uma classe Java personalizada. |
 
 >[!NOTE]
 >

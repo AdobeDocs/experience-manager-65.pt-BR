@@ -31,7 +31,7 @@ A pesquisa do AEM é capaz de pesquisar e localizar ativos do AEM e executar pes
 
 * Se estiver usando o AEM Forms no OSGi:
 
-  * Instale o [pacote do AEM Forms Document Security Indexer](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) no servidor do AEM Forms.
+  * Instale o [pacote do AEM Forms Document Security Indexer](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html) no servidor do AEM Forms.
 
   * Verifique se um AEM Forms no servidor JEE está em execução e se a segurança de documentos está instalada no AEM Forms correspondente no servidor JEE. O AEM Form no servidor JEE é necessário para indexar o documento protegido.
 
