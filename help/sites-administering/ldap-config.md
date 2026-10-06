@@ -280,12 +280,12 @@ Para ativar o log de depuração, faça o seguinte:
 
 * Nível de registro: depuração
 * Arquivo de log logs/ldap.log
-* Padrão de Mensagem: {0,date,`dd.MM.yyyy` `HH:mm:ss.SSS` &amp;ast;{4}&amp;ast; {2} {3} {5}
+* Padrão de Mensagem: &lbrace;0,date,`dd.MM.yyyy` `HH:mm:ss.SSS` &ast;{4}&ast; {2} {3} {5}
 * Agente de log: org.apache.jackrabbit.oak.security.authentication.ldap
 
 * Nível de registro: depuração
 * Arquivo de log: logs/external.log
-* Padrão de Mensagem: {0,date,`dd.MM.yyyy` `HH:mm:ss.SSS` &amp;ast;{4}&amp;ast; {2} {3} {5}
+* Padrão de Mensagem: &lbrace;0,date,`dd.MM.yyyy` `HH:mm:ss.SSS` &ast;{4}&ast; {2} {3} {5}
 * Agente de log: org.apache.jackrabbit.oak.spi.security.authentication.external
 
 ## Uma Palavra sobre Afiliação de Grupos {#a-word-on-group-affiliation}
