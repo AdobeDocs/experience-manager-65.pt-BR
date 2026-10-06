@@ -1,10 +1,15 @@
 ---
 title: Configuração do scheduler de sincronização
+
 description: Saiba como migrar e sincronizar ativos, configurar o agendador de sincronização e usar pastas para organizar ativos.
+
+
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
+
 docset: aem65
+
 role: Admin,User
 exl-id: 34db1f76-ee40-4612-85da-22041e7560fb
 solution: Experience Manager, Experience Manager Forms
@@ -13,9 +18,7 @@ source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '288'
 ht-degree: 0%
-
 ---
-
 # Configuração do scheduler de sincronização {#configuring-the-synchronization-scheduler}
 
 Por padrão, o agendador de sincronização é executado a cada 3 minutos para sincronizar todos os ativos modificados e atualizados no repositório por meio do LiveCycle Workbench 11. Os aplicativos que contêm formulários e recursos ficam visíveis na interface do usuário do AEM Forms após a conclusão do processo de sincronização.
@@ -24,7 +27,7 @@ Por padrão, o agendador de sincronização é executado a cada 3 minutos para s
 
 Execute as seguintes etapas para alterar o intervalo do scheduler de sincronização:
 
-1. Faça logon no Gerenciador de configuração do AEM. A URL do Configuration Manager é `https://'[server]:[port]'/lc/system/console/configMgr`
+1. Faça logon no AEM Configuration Manager. A URL do Configuration Manager é `https://'[server]:[port]'/lc/system/console/configMgr`
 
 1. Localize e abra o pacote **FormsManagerConfiguration**.
 
@@ -50,9 +53,9 @@ Você pode usar a opção **Sincronizar Assets do Repositório** para sincroniza
 
 ## Solução de problemas de erro de sincronização {#troubleshooting-synchronization-error}
 
-Você pode criar novos aplicativos no designer do workflow (LiveCycle Workbench).
+Você pode criar novos aplicativos no designer de workflow (LiveCycle Workbench).
 
-Se o aplicativo recém-criado e uma pasta em /content/dam/formsanddocuments tiverem um nome idêntico, um erro &quot;*Um ativo com o mesmo nome deste aplicativo já existe no nível raiz.* está registrado.
+Se o aplicativo recém-criado e uma pasta em /content/dam/formsanddocuments tiverem nomes idênticos, um erro &quot;*Um ativo com o mesmo nome deste aplicativo já existe no nível raiz.*&quot; está registrado.
 
 Para resolver o conflito, renomeie o aplicativo e sincronize manualmente os ativos.
 

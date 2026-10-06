@@ -11,11 +11,9 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '1450'
+source-wordcount: '1457'
 ht-degree: 0%
-
 ---
-
 # Importar e gerenciar arquivos {#import-and-manage-archives}
 
 >[!NOTE]
@@ -31,7 +29,7 @@ Use a guia arquivos para importar e gerenciar LCAs criadas no workbench.
 1. Clique em Procurar para localizar o arquivo a ser importado e, em seguida, clique em Visualizar.
 1. Revise a lista de recursos e objetos que serão instalados com o arquivamento. Verifique se não há conflitos com recursos, objetos e configurações de serviço existentes porque nenhum recurso desfazer está disponível.
 
-   Se você optar por importar as configurações de serviço, os formulários AEM importarão todos os arquivos de configuração de processo (endpoints, perfis de segurança e parâmetros de configuração de serviço) usados pelos processos no LCA.
+   Se você optar por importar as configurações de serviço, o AEM Forms importará todos os arquivos de configuração de processo (endpoints, perfis de segurança e parâmetros de configuração de serviço) usados pelos processos no LCA.
 
 1. Clique em Importar.
 1. Revise os resultados da importação e clique em Ignorar configuração para concluir o processo de importação ou clique em Configurar para configurar o arquivo.
@@ -47,7 +45,7 @@ Use a guia arquivos para importar e gerenciar LCAs criadas no workbench.
    * Para adicionar um endpoint de Pasta monitorada, clique em Adicionar WatchedFolder. Para obter detalhes sobre as configurações da Pasta monitorada, consulte [configurações do ponto de extremidade da pasta monitorada](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#watched-folder-endpoint-settings).
    * Para adicionar um terminal de email, clique em Adicionar email. Para obter detalhes sobre as configurações de Email, consulte [Configurações de ponto de extremidade de email](/help/forms/using/admin-help/configuring-email-endpoints.md#email-endpoint-settings).
    * Para adicionar um ponto final EJB, clique em Adicionar EJB e especifique um nome e uma descrição para o ponto final.
-   * Para adicionar um endpoint de SOAP, clique em Adicionar SOAP e especifique um nome e uma descrição para o endpoint.
+   * Para adicionar um endpoint do SOAP, clique em Adicionar SOAP e especifique um nome e uma descrição para o endpoint.
    * Para adicionar um ponto de extremidade Remoting, clique em Adicionar Remoting. Para obter detalhes sobre as configurações de Comunicação Remota, consulte [Configurações de ponto de extremidade de Comunicação Remota](/help/forms/using/admin-help/configuring-remoting-endpoints.md#remoting-endpoint-settings).
    * Para adicionar um endpoint REST, clique em Add REST e especifique um nome e uma descrição para o endpoint. Observe o URL de invocação REST exibido na página Adicionar Ponto de Extremidade REST.
    * Para remover um endpoint, marque a caixa de seleção ao lado dele e clique em Remover.
@@ -96,14 +94,14 @@ Use a guia arquivos para importar e gerenciar LCAs criadas no workbench.
 
 1. Clique em Finished para concluir a configuração.
 
-## Configurar os formulários AEM que fazem parte de um arquivo {#configure-the-aem-forms-that-are-part-of-an-archive-file}
+## Configurar os formulários do AEM que fazem parte de um arquivo {#configure-the-aem-forms-that-are-part-of-an-archive-file}
 
 1. No console de administração, clique em Serviços > Aplicativos e serviços > Gerenciamento de aplicativos e clique na guia Arquivos.
 1. Na página Gerenciamento de Arquivamento, selecione o arquivo de arquivamento a ser configurado.
 1. Na página Exibir arquivo, selecione o recurso de arquivo destacado.
 1. Configure o arquivo de arquivamento do processo importado.
 
-## Use o assistente de configuração para configurar os formulários AEM que fazem parte de um arquivo {#use-the-configuration-wizard-to-configure-the-aem-forms-that-are-part-of-an-archive-file}
+## Use o assistente de configuração para configurar os formulários do AEM que fazem parte de um arquivo {#use-the-configuration-wizard-to-configure-the-aem-forms-that-are-part-of-an-archive-file}
 
 1. No console de administração, clique em Serviços > Aplicativos e serviços > Gerenciamento de aplicativos e clique na guia Arquivos.
 1. Clique em Configurar ao lado do arquivo a ser configurado.
@@ -114,7 +112,7 @@ Use a guia arquivos para importar e gerenciar LCAs criadas no workbench.
    * Para adicionar um endpoint de Pasta monitorada, clique em Adicionar WatchedFolder. Para obter detalhes sobre as configurações da Pasta monitorada, consulte [configurações do ponto de extremidade da pasta monitorada](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#watched-folder-endpoint-settings).
    * Para adicionar um terminal de email, clique em Adicionar email. Para obter detalhes sobre as configurações de Email, consulte [Configurações de ponto de extremidade de email](/help/forms/using/admin-help/configuring-email-endpoints.md#email-endpoint-settings).
    * Para adicionar um ponto final EJB, clique em Adicionar EJB e especifique um nome e uma descrição para o ponto final.
-   * Para adicionar um endpoint de SOAP, clique em Adicionar SOAP e especifique um nome e uma descrição para o endpoint.
+   * Para adicionar um endpoint do SOAP, clique em Adicionar SOAP e especifique um nome e uma descrição para o endpoint.
    * Para adicionar um ponto de extremidade Remoting, clique em Adicionar Remoting. Para obter detalhes sobre as configurações de Comunicação Remota, consulte [Configurações de ponto de extremidade de Comunicação Remota](/help/forms/using/admin-help/configuring-remoting-endpoints.md#remoting-endpoint-settings).
    * Para adicionar um endpoint REST, clique em Add REST e especifique um nome e uma descrição para o endpoint. Observe o URL de invocação REST exibido na página Adicionar Ponto de Extremidade REST.
    * Para remover um endpoint, marque a caixa de seleção ao lado dele e clique em Remover.

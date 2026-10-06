@@ -1,21 +1,23 @@
 ---
 title: Uso das páginas da Web de segurança de documentos
+
 description: Saiba como fazer logon, navegar e usar as páginas da Web de segurança de documentos.
+
+
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
+
 feature: Document Security
 exl-id: caa31752-a02d-4d20-b7d9-c4aad5d0fae6
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '933'
+source-wordcount: '939'
 ht-degree: 0%
-
 ---
-
 # Uso das páginas da Web de segurança de documentos {#using-the-document-security-webpages}
 
 >[!NOTE]
@@ -46,7 +48,7 @@ Para administradores, uma conta de superadministrador padrão é criada durante 
 
 >[!NOTE]
 >
->Você também pode acessar as páginas da Web no Acrobat e em outros aplicativos clientes. Consulte a Ajuda do Acrobat ou a Ajuda das extensões apropriadas do Acrobat Reader DC para obter detalhes.
+>Você também pode acessar as páginas da Web no Acrobat e em outros aplicativos clientes. Consulte a Ajuda do Acrobat ou a Ajuda das extensões do Acrobat Reader DC apropriadas para obter detalhes.
 
 1. Digite o URL no navegador:
 

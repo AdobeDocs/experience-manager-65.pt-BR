@@ -10,14 +10,12 @@ feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '634'
+source-wordcount: '642'
 ht-degree: 0%
-
 ---
-
 # Integração de aplicativos de terceiros ao espaço de trabalho do AEM Forms{#integrating-third-party-applications-in-aem-forms-workspace}
 
-O espaço de trabalho do AEM Forms oferece suporte ao gerenciamento de atribuições de tarefas e atividades de conclusão de formulários e documentos. Esses formulários e documentos podem ser XDP Forms, Flex® ou Guias (obsoletos) que foram renderizados nos formatos XDP, PDF, HTML ou Flex.
+O espaço de trabalho do AEM Forms oferece suporte ao gerenciamento de atribuições de tarefas e atividades de conclusão de formulários e documentos. Esses formulários e documentos podem ser XDP Forms, Flex® Forms ou Guias (obsoletos) que foram renderizados nos formatos XDP, PDF, HTML ou Flex.
 
 Esses recursos são aprimorados ainda mais. O AEM Forms agora oferece suporte à colaboração com aplicativos de terceiros que oferecem suporte a funcionalidades semelhantes ao espaço de trabalho do AEM Forms. Uma parte comum dessa funcionalidade é o fluxo de trabalho de atribuição e aprovação subsequente de uma tarefa. O AEM Forms fornece uma única experiência unificada para usuários corporativos do AEM Forms, para que todas essas atribuições de tarefas ou aprovações para os aplicativos compatíveis possam ser tratadas por meio do espaço de trabalho do AEM Forms.
 
@@ -101,7 +99,7 @@ Use as seguintes etapas para criar uma tarefa para renderizar e enviar uma carta
    ```
 
    [Obter arquivo](assets/dscsample.zip)
-Baixar DSC: um DSC de amostra está disponível no arquivo DSCSample.zip anexado acima. Baixe e descompacte o arquivo DSCSample.zip. Antes de usar o serviço DSC, você deve configurá-lo. Consulte [Configurar o Serviço DSC](../../forms/using/add-action-button-in-create-correspondence-ui.md#p-configure-the-dsc-service-p).
+   Baixar DSC: um DSC de amostra está disponível no arquivo DSCSample.zip anexado acima. Baixe e descompacte o arquivo DSCSample.zip. Antes de usar o serviço DSC, você deve configurá-lo. Consulte [Configurar o Serviço DSC](../../forms/using/add-action-button-in-create-correspondence-ui.md#p-configure-the-dsc-service-p).
 
    Na caixa de diálogo Definir atividade, selecione a atividade apropriada, como getLetterInstanceInfo, e clique em **OK**.
 

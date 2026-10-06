@@ -11,11 +11,9 @@ role: User, Developer
 feature: Adaptive Forms,Foundation Components
 source-git-commit: 5723e9990969dff1b508062d69a68f68a20eb576
 workflow-type: tm+mt
-source-wordcount: '1267'
+source-wordcount: '1288'
 ht-degree: 0%
-
 ---
-
 # Criação de um modelo de formulário adaptável personalizado{#creating-a-custom-adaptive-form-template}
 
 >[!NOTE]
@@ -24,13 +22,13 @@ ht-degree: 0%
 
 ## Pré-requisitos {#prerequisites}
 
-* Noções básicas sobre o AEM [Modelo de página](/help/sites-authoring/templates.md) e [Criação de formulário adaptável](https://helpx.adobe.com/br/aem-forms/6-1/introduction-forms-authoring.html)
+* Noções básicas sobre o [Modelo de página](/help/sites-authoring/templates.md) e a [Criação do formulário adaptável](https://helpx.adobe.com/aem-forms/6-1/introduction-forms-authoring.html) do AEM
 
-* Noções básicas sobre [Bibliotecas do lado do cliente](/help/sites-developing/clientlibs.md) do AEM
+* Noções básicas sobre as [Bibliotecas do lado do cliente](/help/sites-developing/clientlibs.md) do AEM
 
 ## Modelo de formulário adaptável {#adaptive-form-template}
 
-Um modelo de formulário adaptável é um modelo de página AEM especializado, com determinadas propriedades e estrutura de conteúdo usada para criar o formulário adaptável. O modelo tem layouts, estilos e estrutura básica de conteúdo inicial pré-configurados.
+Um modelo de formulário adaptável é um modelo de página do AEM especializado, com determinadas propriedades e estrutura de conteúdo usada para criar o formulário adaptável. O modelo tem layouts, estilos e estrutura básica de conteúdo inicial pré-configurados.
 
 Depois de criar um formulário, as alterações na estrutura do conteúdo do modelo original não serão refletidas no formulário.
 
@@ -42,7 +40,7 @@ O AEM QuickStart fornece os seguintes modelos de formulário adaptáveis:
 * Modelo de inscrição simples: permite criar um formulário adaptável em várias etapas usando um layout de assistente. Nesse layout, você pode especificar uma expressão de conclusão de etapa para cada etapa, que é validada antes de o assistente prosseguir para a próxima etapa.
 * Modelo de inscrição com guias: permite criar um formulário adaptável com várias guias usando um layout de guias à esquerda, onde você pode visitar as guias em qualquer ordem aleatória.
 * Modelo de inscrição avançado: permite criar um formulário com várias guias e um assistente. Ele usa um layout de guias à esquerda que permite visitar guias em qualquer ordem. Ele usa os serviços de design da Adobe Document Cloud para assinatura e verificação.
-* Modelo em branco: permite criar um formulário sem qualquer cabeçalho, rodapé e conteúdo inicial. Você pode adicionar componentes como caixas de texto, botões e imagens. O modelo em branco permite criar um formulário que você pode [incorporar nas páginas do site AEM](/help/forms/using/embed-adaptive-form-aem-sites.md).
+* Modelo em branco: permite criar um formulário sem qualquer cabeçalho, rodapé e conteúdo inicial. Você pode adicionar componentes como caixas de texto, botões e imagens. O modelo em branco permite criar um formulário que você pode [incorporar nas páginas de Site do AEM](/help/forms/using/embed-adaptive-form-aem-sites.md).
 
 Esses modelos têm a propriedade `sling:resourceType` definida como o componente de página correspondente. O componente Página renderiza a página CQ, contendo o contêiner de formulário adaptável, que por sua vez renderiza o formulário adaptável.
 
@@ -52,7 +50,7 @@ A tabela a seguir enumera a associação entre os modelos e o componente de pág
  <tbody>
   <tr>
    <td><p><strong>Modelo</strong></p> </td>
-   <td><p><strong>Componente de Página </strong></p> </td>
+   <td><p><strong>Componente de Página</strong></p> </td>
   </tr>
   <tr>
    <td><p>/libs/fd/af/templates/surveyTemplate</p> </td>
@@ -75,7 +73,7 @@ A tabela a seguir enumera a associação entre os modelos e o componente de pág
 
 ## Criação de um modelo de formulário adaptável usando o editor de modelos {#creating-an-adaptive-form-template-using-template-editor}
 
-Você pode especificar a estrutura e o conteúdo inicial de um formulário adaptável usando o Editor de modelos. Por exemplo, você deseja que todos os autores de formulário tenham poucas caixas de texto, botões de navegação e um botão de envio em um formulário de inscrição. Você pode criar um modelo que os autores podem usar para criar um formulário consistente com outros formulários de inscrição. O Editor de modelo AEM permite:
+Você pode especificar a estrutura e o conteúdo inicial de um formulário adaptável usando o Editor de modelos. Por exemplo, você deseja que todos os autores de formulário tenham poucas caixas de texto, botões de navegação e um botão de envio em um formulário de inscrição. Você pode criar um modelo que os autores podem usar para criar um formulário consistente com outros formulários de inscrição. O Editor de modelos AEM permite:
 
 * Adicionar componentes de cabeçalho e rodapé de um formulário na camada da estrutura
 * Forneça o conteúdo inicial para o formulário.
@@ -92,7 +90,7 @@ Você pode criar esses componentes usando o componente de página base para seu 
 
 Execute as seguintes etapas para criar um modelo personalizado, como simpleEnrollmentTemplate.
 
-1. Navegue até o CRXDE Lite na instância de criação.
+1. Navegue até o CRXDE Lite na sua instância de criação.
 
 1. No diretório /apps, crie a estrutura de pastas para o aplicativo. Por exemplo, se o nome do aplicativo for mycompany, crie uma pasta com esse nome. Normalmente, a pasta do aplicativo contém componentes, configuração, modelos, src e diretórios de instalação. Para este exemplo, crie as pastas de componentes, configuração e modelos.
 

@@ -1,22 +1,22 @@
 ---
-title: Como desenvolver projetos AEM usando o IntelliJ IDEA
+title: Como desenvolver projetos do AEM usando o IntelliJ IDEA
 description: Saiba como usar o IntelliJ IDEA para desenvolver projetos do Adobe Experience Manager.
+
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
+
 exl-id: 5a79c79b-df65-4cb2-b9d4-eda994c992ec
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Developer Tools
 role: Developer
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '663'
 ht-degree: 0%
-
 ---
-
-# Como desenvolver projetos AEM usando o IntelliJ IDEA{#how-to-develop-aem-projects-using-intellij-idea}
+# Como desenvolver projetos do AEM usando o IntelliJ IDEA{#how-to-develop-aem-projects-using-intellij-idea}
 
 ## Visão geral {#overview}
 
@@ -25,7 +25,7 @@ Para começar a usar o desenvolvimento do AEM no IntelliJ, as seguintes etapas s
 Cada etapa é explicada com mais detalhes no restante deste tópico.
 
 * Instalar IntelliJ
-* Configurar o projeto do AEM com base no Maven
+* Configurar seu projeto do AEM com base no Maven
 * Preparar suporte JSP para IntelliJ no POM Maven
 * Importar o projeto Maven para o IntelliJ
 
@@ -39,11 +39,11 @@ Baixe o IntelliJ IDEA da [página Downloads na JetBrains](https://www.jetbrains.
 
 Em seguida, siga as instruções de instalação nessa página.
 
-### Configurar o projeto do AEM com base no Maven {#set-up-your-aem-project-based-on-maven}
+### Configurar seu projeto do AEM com base no Maven {#set-up-your-aem-project-based-on-maven}
 
-Em seguida, configure seu projeto usando o Maven conforme descrito em [Como criar projetos AEM usando o Apache Maven](/help/sites-developing/ht-projects-maven.md).
+Em seguida, configure o projeto usando o Maven conforme descrito em [Como criar projetos do AEM usando o Apache Maven](/help/sites-developing/ht-projects-maven.md).
 
-Para começar a trabalhar com Projetos AEM no IntelliJ IDEA, a configuração básica no [Introdução em 5 Minutos](https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html) é suficiente.
+Para começar a trabalhar com Projetos AEM no IntelliJ IDEA, a configuração básica em [Introdução em 5 Minutos](https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html) é suficiente.
 
 ### Preparar suporte JSP para IntelliJ IDEA {#prepare-jsp-support-for-intellij-idea}
 
@@ -52,7 +52,7 @@ O IntelliJ IDEA também pode fornecer suporte ao trabalhar com JSP, por exemplo:
 * preenchimento automático de bibliotecas de tags
 * reconhecimento de objetos definidos por `<cq:defineObjects />` e `<sling:defineObjects />`
 
-Para que isso funcione, siga as instruções em [Como trabalhar com JSPs](/help/sites-developing/ht-projects-maven.md#how-to-work-with-jsps) em [Como criar projetos de AEM usando o Apache Maven](/help/sites-developing/ht-projects-maven.md).
+Para que isso funcione, siga as instruções em [Como trabalhar com JSPs](/help/sites-developing/ht-projects-maven.md#how-to-work-with-jsps) em [Como criar projetos do AEM usando o Apache Maven](/help/sites-developing/ht-projects-maven.md).
 
 ### Importar o projeto Maven {#import-the-maven-project}
 
@@ -70,7 +70,7 @@ Para que isso funcione, siga as instruções em [Como trabalhar com JSPs](/help/
    ![chlimage_1-46](assets/chlimage_1-46a.png)
 
 1. Continue nas caixas de diálogo a seguir clicando em **Avançar** e **Concluir**.
-1. Agora você está configurado para Desenvolvimento AEM usando IntelliJ IDEA
+1. Agora você está configurado para Desenvolvimento no AEM usando o IntelliJ IDEA
 
    ![chlimage_1-47](assets/chlimage_1-47a.png)
 
@@ -119,7 +119,7 @@ O IntelliJ IDEA deve entender onde encontrar os JSPs para depuração. Como o ID
 
 A última etapa necessária é iniciar o AEM com as opções JVM propostas pelo IntelliJ IDEA.
 
-Inicie o arquivo jar AEM diretamente e adicione essas opções, por exemplo, com a seguinte linha de comando:
+Inicie o arquivo jar do AEM diretamente e adicione essas opções, por exemplo, com a seguinte linha de comando:
 
 `java -Xdebug -Xrunjdwp:transport=dt_socket,address=58242,suspend=n,server=y -Xmx1024m -jar cq-quickstart-6.5.0.jar`
 

@@ -11,11 +11,9 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '941'
+source-wordcount: '956'
 ht-degree: 0%
-
 ---
-
 # Adicionar domínios {#adding-domains}
 
 >[!NOTE]
@@ -27,7 +25,7 @@ ht-degree: 0%
 1. No console de administração, clique em Configurações > Gerenciamento de usuários > Gerenciamento de domínio.
 1. Clique em Novo Domínio Enterprise.
 1. Na caixa ID, digite um identificador exclusivo para o domínio e, na caixa Nome, digite um nome descritivo para o domínio. (Consulte [Considerações importantes sobre nomes de domínio e IDs](adding-domains.md#important-considerations-for-domain-names-and-ids).)
-1. Especifique se deseja ativar o bloqueio de conta. (Consulte [Definir configurações de bloqueio de conta](/help/forms/using/admin-help/configure-account-locking-settings.md#configure-account-locking-settings).) Por padrão, Habilitar Bloqueio de Conta está selecionado.
+1. Especifique se deseja ativar o bloqueio de conta. (Consulte [Definir configurações de bloqueio de conta](/help/forms/using/admin-help/configure-account-locking-settings.md#configure-account-locking-settings).) Por padrão, Ativar bloqueio de conta está selecionado.
 1. Clique em Adicionar autenticação e, na lista Provedor de autenticação, selecione um provedor, dependendo do mecanismo de autenticação que sua organização usa. Os valores possíveis são LDAP, Kerberos, SAML ou um provedor de autenticação personalizado.
 
    Se você selecionar LDAP, poderá usar o servidor LDAP especificado na configuração do diretório ou escolher outro servidor LDAP para usar na autenticação. Se você escolher um servidor diferente, seus usuários deverão existir em ambos os servidores LDAP.
@@ -43,7 +41,7 @@ Após criar um domínio enterprise, sincronize manualmente o diretório ou crie 
 1. No console de administração, clique em Configurações > Gerenciamento de usuários > Gerenciamento de domínio.
 1. Clique em Novo domínio local.
 1. Na caixa ID, digite um identificador exclusivo para o domínio e, na caixa Nome, digite um nome descritivo para o domínio. (Consulte [Considerações importantes sobre nomes de domínio e IDs](adding-domains.md#important-considerations-for-domain-names-and-ids).)
-1. Especifique se deseja ativar o bloqueio de conta e clique em OK. (Consulte [Definir configurações de bloqueio de conta](/help/forms/using/admin-help/configure-account-locking-settings.md#configure-account-locking-settings).) Por padrão, Habilitar Bloqueio de Conta está selecionado.
+1. Especifique se deseja ativar o bloqueio de conta e clique em OK. (Consulte [Definir configurações de bloqueio de conta](/help/forms/using/admin-help/configure-account-locking-settings.md#configure-account-locking-settings).) Por padrão, Ativar bloqueio de conta está selecionado.
 
 ## Adicionar um domínio híbrido {#add-a-hybrid-domain}
 
@@ -60,12 +58,12 @@ Lembre-se das seguintes considerações ao escolher um nome de domínio e uma ID
 
 ### Considerações gerais {#general-considerations}
 
-* Quando você está usando um provedor de banco de dados diferente do DB2, a ID do domínio pode conter até 50 bytes. Se você estiver usando caracteres ASCII de byte único, o limite será de 50 caracteres. Se o identificador de domínio contiver caracteres multibyte, esse limite será reduzido. Por exemplo, se você criar um domínio cujo identificador contém caracteres de 3 bytes, o limite será de 16 caracteres. Além disso, não é possível criar domínios que contenham caracteres de 4 bytes. Se você criar uma ID de domínio que exceda esse limite, os formulários AEM estarão em um estado instável. Para se recuperar desse estado instável, consulte &quot; [Remover um domínio que contenha caracteres estendidos ou multibyte](adding-domains.md#remove-a-domain-that-contains-extended-or-multi-byte-characters)&quot; nesta página.
-* O número de domínios corporativos e domínios locais que podem ser criados em formulários AEM depende do comprimento de cada uma das IDs de domínio. Quando você adiciona um domínio corporativo ou híbrido, o User Management atualiza a string configInstance no nó AuthProviders do arquivo de configuração dos formulários AEM (config.xml). A cadeia de caracteres configInstance contém uma lista separada por vírgulas dos caminhos absolutos de todos os domínios associados ao provedor de autorização. Esta cadeia de caracteres tem um limite de tamanho de 8.192 caracteres. Quando esse limite é atingido, não é possível criar domínios adicionais.
+* Quando você está usando um provedor de banco de dados diferente do DB2, a ID do domínio pode conter até 50 bytes. Se você estiver usando caracteres ASCII de byte único, o limite será de 50 caracteres. Se o identificador de domínio contiver caracteres multibyte, esse limite será reduzido. Por exemplo, se você criar um domínio cujo identificador contém caracteres de 3 bytes, o limite será de 16 caracteres. Além disso, não é possível criar domínios que contenham caracteres de 4 bytes. Se você criar uma ID de domínio que exceda esse limite, os formulários do AEM estarão em um estado instável. Para se recuperar desse estado instável, consulte &quot; [Remover um domínio que contenha caracteres estendidos ou multibyte](adding-domains.md#remove-a-domain-that-contains-extended-or-multi-byte-characters)&quot; nesta página.
+* O número de domínios corporativos e domínios locais que podem ser criados em formulários do AEM depende do tamanho de cada ID de domínio. Quando você adiciona um domínio corporativo ou híbrido, o User Management atualiza a string configInstance no nó AuthProviders do arquivo de configuração do AEM forms (config.xml). A cadeia de caracteres configInstance contém uma lista separada por vírgulas dos caminhos absolutos de todos os domínios associados ao provedor de autorização. Esta cadeia de caracteres tem um limite de tamanho de 8.192 caracteres. Quando esse limite é atingido, não é possível criar domínios adicionais.
 
 ### Considerações ao usar DB2 {#considerations-when-using-db2}
 
-Ao usar DB2 para o banco de dados de formulários AEM, o comprimento máximo permitido da ID do domínio depende do tipo de caracteres usados:
+Ao usar DB2 para o banco de dados do AEM Forms, o comprimento máximo permitido da ID de domínio depende do tipo de caracteres usados:
 
 * 100 bytes únicos (ASCII) (por exemplo, caracteres usados em inglês, francês ou alemão)
 * 50 bytes duplos (por exemplo, caracteres usados nos idiomas chinês, japonês ou coreano)

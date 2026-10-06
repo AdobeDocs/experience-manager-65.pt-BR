@@ -1,20 +1,22 @@
 ---
 title: Registrando-se como usuário
+
 description: Saiba como você pode usar documentos protegidos por política recebidos de um usuário de segurança de documentos, mesmo que você seja externo à organização do usuário.
+
+
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
+
 feature: Document Security
 exl-id: 320d8fa4-e200-4993-b018-a9718cddc5c1
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '695'
-ht-degree: 3%
-
+source-wordcount: '706'
+ht-degree: 5%
 ---
-
 # Registrando-se como usuário {#registering-as-a-user}
 
 Você pode usar documentos protegidos por política recebidos de um usuário de segurança de documentos, mesmo se for externo à organização do usuário. Para usar um documento protegido por política, você deve se registrar na segurança de documentos. Se você não tiver sido convidado anteriormente para o registro, a segurança de documentos iniciará o processo de registro quando estes eventos ocorrerem:
@@ -24,7 +26,7 @@ Você pode usar documentos protegidos por política recebidos de um usuário de 
 
   Depois de registrar e ativar sua conta, você pode usar documentos protegidos por política que você está autorizado a usar por meio de uma política. Se o administrador da segurança de documentos habilitar esses recursos para usuários convidados, talvez você tenha permissão para realizar estas tarefas:
 
-* Documentos do Protect usando políticas de segurança de documentos.
+* Proteja documentos usando políticas de segurança de documentos.
 * Crie suas próprias políticas de usuário que podem ser aplicadas aos documentos.
 * Convide outros usuários externos a usar um documento protegido por política adicionando-os à política.
 
