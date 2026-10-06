@@ -11,11 +11,9 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '1527'
+source-wordcount: '1555'
 ht-degree: 0%
-
 ---
-
 # Backup dos dados do Forms do Adobe Experience Manager (AEM) {#backing-up-the-aem-forms-data}
 
 <!-- back up is two words when used as a verb; backup is one word when used as an adjective or noun. -->
@@ -26,9 +24,9 @@ Depois que o AEM Forms for instalado e implantado em áreas de produção, o adm
 
 Para garantir um backup e uma recuperação bem-sucedidos, um backup de imagem do sistema deve estar sempre disponível. Em seguida, se ocorrer uma perda, é possível recuperar todo o ambiente para um estado consistente.
 
-Fazer backup do banco de dados ao mesmo tempo que os backups do diretório GDS, do repositório AEM e do diretório raiz do armazenamento de conteúdo ajuda a manter esses sistemas sincronizados, caso a recuperação seja necessária.
+Fazer backup do banco de dados ao mesmo tempo que os backups do diretório GDS, do repositório AEM e do diretório raiz do armazenamento de conteúdo ajuda a manter esses sistemas sincronizados, caso seja necessária uma recuperação.
 
-O procedimento de backup descrito nesta seção exige que você entre no modo de backup seguro antes de fazer backup do banco de dados AEM Forms, do repositório AEM, do GDS e dos diretórios Raiz de armazenamento de conteúdo. Quando o backup estiver concluído, você deverá sair do modo de backup seguro. O modo de backup seguro é usado para marcar documentos persistentes e de longa duração que residem no GDS. Esse modo garante que o mecanismo de limpeza automática de arquivos (o coletor de arquivos) não exclua arquivos expirados até que o modo de backup seguro seja liberado. É necessário manter um backup de GDS em sincronização com um backup de banco de dados.
+O procedimento de backup descrito nesta seção exige que você entre no modo de backup seguro antes de fazer backup do banco de dados AEM Forms, do repositório AEM, do GDS e dos diretórios raiz de armazenamento de conteúdo. Quando o backup estiver concluído, você deverá sair do modo de backup seguro. O modo de backup seguro é usado para marcar documentos persistentes e de longa duração que residem no GDS. Esse modo garante que o mecanismo de limpeza automática de arquivos (o coletor de arquivos) não exclua arquivos expirados até que o modo de backup seguro seja liberado. É necessário manter um backup de GDS em sincronização com um backup de banco de dados.
 
 A frequência com que o backup do local GDS deve ser feito depende de como o AEM Forms é usado e das janelas de backup disponíveis. A janela de backup pode ser afetada por processos de longa duração, pois eles podem ser executados por vários dias. Se você estiver sempre alterando, adicionando e removendo arquivos nesse diretório, faça backup do local GDS com mais frequência.
 
@@ -38,7 +36,7 @@ Se o banco de dados estiver sendo executado em um modo de log, conforme descrito
 >
 >Os arquivos não referenciados podem persistir no diretório GDS após o processo de recuperação. Essa é uma limitação conhecida no momento.
 
-## Fazer backup do banco de dados, do repositório GDS, do repositório AEM e dos diretórios raiz do armazenamento de conteúdo {#back-up-the-database-gds-aem-repository-and-content-storage-root-directories}
+## Faça backup do banco de dados, do repositório GDS, do repositório AEM e dos diretórios raiz do armazenamento de conteúdo {#back-up-the-database-gds-aem-repository-and-content-storage-root-directories}
 
 Coloque o AEM Forms no modo de backup seguro (instantâneo) ou no modo de backup contínuo (cobertura contínua). Antes de configurar o AEM Forms para inserir um dos modos de backup, verifique o seguinte:
 
@@ -49,23 +47,23 @@ Além disso, observe as seguintes diretrizes para o processo de backup/restaura�
 
 * Faça backup do diretório GDS usando um sistema operacional disponível ou um utilitário de backup de terceiros. (Consulte [Local do GDS](/help/forms/using/admin-help/files-back-recover.md#gds-location).)
 * (Opcional) Faça backup do diretório raiz de armazenamento de conteúdo usando um sistema operacional disponível ou um backup e utilitário de terceiros. (Consulte [Local raiz do armazenamento de conteúdo (ambiente independente)](/help/forms/using/admin-help/files-back-recover.md#content-storage-root-location-stand-alone-environment) ou [Local raiz do armazenamento de conteúdo (ambiente em cluster)](/help/forms/using/admin-help/files-back-recover.md#content-storage-root-location-clustered-environment).)
-* Fazer backup   instâncias de criação e publicação ( crx - backup do repositório).
+* Faça backup das instâncias do autor e de publicação ( crx - backup do repositório).
 
   Para fazer backup do ambiente da Solução de gerenciamento de correspondência, execute as etapas nas instâncias de criação e publicação conforme descrito em [Backup e restauração](/help/sites-administering/backup-and-restore.md).
 
   Considere os seguintes pontos ao fazer backup das instâncias de autor e publicação:
 
-   * Certifique-se de que o backup das instâncias do autor e de publicação esteja sincronizado para iniciar ao mesmo tempo. Embora seja possível continuar a usar as instâncias de criação e publicação enquanto o backup está sendo executado, é recomendável não publicar nenhum ativo durante o backup para evitar alterações não capturadas. Aguarde o término do backup das instâncias do autor e de publicação antes de publicar novos ativos.
-   * O backup completo do nó Author inclui o backup do Forms Manager e dos dados do AEM Forms Workspace.
-   * Os desenvolvedores do Workbench podem continuar trabalhando em seus processos localmente. Eles não devem implantar novos processos durante a fase de backup.
-   * A decisão sobre a duração de cada sessão de backup (para o modo de backup contínuo) deve ser baseada no tempo total gasto para fazer backup de todos os dados no AEM Forms (BD, GDS, repositório AEM e quaisquer outros dados personalizados adicionais).
+  * Certifique-se de que o backup das instâncias do autor e de publicação esteja sincronizado para iniciar ao mesmo tempo. Embora seja possível continuar a usar as instâncias de criação e publicação enquanto o backup está sendo executado, é recomendável não publicar nenhum ativo durante o backup para evitar alterações não capturadas. Aguarde o término do backup das instâncias do autor e de publicação antes de publicar novos ativos.
+  * O backup completo do nó Author inclui o backup do Forms Manager e dos dados do AEM Forms Workspace.
+  * Os desenvolvedores do Workbench podem continuar trabalhando em seus processos localmente. Eles não devem implantar novos processos durante a fase de backup.
+  * A decisão sobre a duração de cada sessão de backup (para o modo de backup contínuo) deve ser baseada no tempo total gasto para fazer backup de todos os dados no AEM Forms (BD, GDS, repositório do AEM e quaisquer outros dados personalizados adicionais).
 
 Fazer backup do banco de dados do AEM Forms, incluindo todos os logs de transações. Consulte [banco de dados AEM Forms](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database).
 
 Para obter mais informações, consulte o artigo apropriado da base de dados de conhecimento para seu banco de dados:
 <!-- The four URLs below are all 404s; checked July 19, 2023 -->
-* [Backup e recuperação do Oracle para AEM Forms](https://www.adobe.com/go/kb403624)
-* [Backup e recuperação do MySQL para AEM Forms](https://www.adobe.com/go/kb403625)
+* [Backup e recuperação Oracle para AEM Forms](https://www.adobe.com/go/kb403624)
+* [Backup e recuperação MySQL para AEM Forms](https://www.adobe.com/go/kb403625)
 * [Backup e recuperação do Microsoft® SQL Server para AEM Forms](https://www.adobe.com/go/kb403623)
 * [Backup e recuperação do DB2® para AEM Forms](https://www.adobe.com/go/kb403626)
 

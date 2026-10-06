@@ -1,10 +1,14 @@
 ---
 title: Emuladores
+
 description: O AEM permite que os autores visualizem uma página em um emulador que simula o ambiente em que um usuário final visualizará a página
+
+
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: mobile-web
 content-type: reference
+
 legacypath: /content/docs/en/aem/6-0/develop/mobile/emulators
 exl-id: 009b7e2c-ac37-4acc-a656-0a34d3853dfd
 solution: Experience Manager, Experience Manager Sites
@@ -12,18 +16,16 @@ feature: Developing
 role: Developer
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '609'
+source-wordcount: '618'
 ht-degree: 0%
-
 ---
-
 # Emuladores{#emulators}
 
 {{ue-over-mobile}}
 
 O Adobe Experience Manager (AEM) permite que os autores visualizem uma página em um emulador que simula o ambiente em que um usuário final visualizará a página, por exemplo, em um dispositivo móvel ou em um cliente de email.
 
-A estrutura do emulador de AEM:
+A estrutura do emulador do AEM:
 
 * Fornece criação de conteúdo em uma interface simulada, por exemplo, um dispositivo móvel ou um cliente de email (usado para criar informativos).
 * Adapta o conteúdo da página de acordo com a interface do usuário simulada.
@@ -46,7 +48,7 @@ Um emulador:
 
 ### Como o emulador transforma o conteúdo {#how-the-emulator-transforms-the-content}
 
-O emulador funciona envolvendo o conteúdo do corpo do HTML em DIVs do emulador. Por exemplo, o seguinte código html:
+O emulador funciona vinculando o conteúdo do corpo do HTML em DIVs do emulador. Por exemplo, o seguinte código html:
 
 ```xml
 <body>
@@ -98,7 +100,7 @@ Dessa forma, a aparência completa do emulador pode ser controlada tendo classes
 
 >[!NOTE]
 >
->Recomenda-se que o HTML do projeto envolva o conteúdo do corpo em uma única div, como no exemplo acima. Se o conteúdo do corpo contiver várias tags, talvez haja resultados imprevisíveis.
+>Recomenda-se que o projeto HTML envolva o conteúdo do corpo em uma única div, como no exemplo acima. Se o conteúdo do corpo contiver várias tags, talvez haja resultados imprevisíveis.
 
 ### Emuladores móveis {#mobile-emulators}
 
@@ -119,14 +121,14 @@ Quando o componente de página depende do componente de página móvel ( `/libs/
 
 * O script de inicialização do emulador base móvel é definido pelo JavaScript:
 
-   * A configuração de todos os emuladores definidos para a página (emulatorConfigs)
-   * O gerenciador de emulador que integra a funcionalidade do emulador na página por meio de:
+  * A configuração de todos os emuladores definidos para a página (emulatorConfigs)
+  * O gerenciador de emulador que integra a funcionalidade do emulador na página por meio de:
 
-     `emulatorMgr.launch(config)`;
+    `emulatorMgr.launch(config)`;
 
-     O gerenciador de emulador é definido por:
+    O gerenciador de emulador é definido por:
 
-     `/libs/wcm/emulator/widgets/source/EmulatorManager.js`
+    `/libs/wcm/emulator/widgets/source/EmulatorManager.js`
 
 #### Criação de um emulador móvel personalizado {#creating-a-custom-mobile-emulator}
 

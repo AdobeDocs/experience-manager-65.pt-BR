@@ -1,28 +1,30 @@
 ---
 title: Práticas recomendadas para desenvolvedores do AEM
-description: As equipes de engenharia e consultoria da Adobe desenvolveram um conjunto abrangente de práticas recomendadas para desenvolvedores de AEM.
+
+description: As equipes de engenharia e consultoria da Adobe desenvolveram um conjunto abrangente de práticas recomendadas para desenvolvedores do AEM.
+
+
 contentOwner: Justin Edelson
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
+
 exl-id: 0a478e80-c1b2-46c1-a6be-794d78b85d69
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '445'
-ht-degree: 3%
-
+source-wordcount: '497'
+ht-degree: 5%
 ---
-
 # Práticas recomendadas{#best-practices}
 
 ## Práticas recomendadas para desenvolvedores - Introdução {#best-practices-for-developers-getting-started}
 
-As equipes de engenharia e consultoria da Adobe desenvolveram um conjunto abrangente de práticas recomendadas para desenvolvedores de AEM. os desenvolvedores do Adobe seguem essas práticas recomendadas ao desenvolverem atualizações de produtos AEM principais e código do cliente para implementações de clientes.
+As equipes de engenharia e consultoria da Adobe desenvolveram um conjunto abrangente de práticas recomendadas para desenvolvedores do AEM. Os desenvolvedores da Adobe seguem essas práticas recomendadas ao desenvolverem atualizações de produtos essenciais da AEM e código do cliente para implementações de clientes.
 
-Antes de iniciar o projeto de desenvolvimento do AEM, revise primeiro essas práticas recomendadas:
+Antes de iniciar seu projeto de desenvolvimento do AEM, revise primeiro estas práticas recomendadas:
 
 * [Práticas de desenvolvimento](/help/sites-developing/development-practices.md)
 * [Arquitetura de conteúdo](/help/sites-developing/content-architecture.md)
@@ -31,7 +33,7 @@ Antes de iniciar o projeto de desenvolvimento do AEM, revise primeiro essas prá
 * [Armadilhas de código](/help/sites-developing/code-pitfalls.md)
 * [Interação JCR](/help/sites-developing/jcr-integration.md)
 * [Pacotes OSGi](/help/sites-developing/osgi-bundles.md)
-* [Práticas recomendadas da API Java](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html?lang=pt-BR)
+* [Práticas recomendadas da API Java](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html)
 
 ### Informações adicionais sobre práticas recomendadas {#additional-best-practices-information}
 
@@ -72,7 +74,7 @@ O gerenciamento e a criação do conteúdo do seu site têm algumas práticas re
   </tr>
   <tr>
    <td>Fluxos de trabalhos</td>
-   <td><a href="/help/sites-developing/workflows-best-practices.md">Desenvolvimento e extensão de workflows</a></td>
+   <td><a href="/help/sites-developing/workflows-best-practices.md">Desenvolvimento e extensão de fluxos de trabalho</a></td>
    <td><p>Os workflows permitem automatizar as atividades do Adobe Experience Manager (AEM) e podem representar uma grande quantidade do processamento que ocorre em um ambiente do AEM. Portanto, é altamente recomendável planejar as implementações dos workflows com cuidado.</p> </td>
   </tr>
  </tbody>
@@ -91,14 +93,14 @@ Algumas práticas recomendadas para comunidades estão descritas aqui:
 
 ## Ferramentas/HTL {#tooling-htl}
 
-A Linguagem de modelo de HTML (HTL) é um novo sistema de modelos de HTML, introduzido com AEM 6.0. Ele substitui JSP e ESP como o sistema de modelo preferido do AEM.
+A Linguagem de modelo do HTML (HTL) é um novo sistema de modelos do HTML, introduzido com o AEM 6.0. Ele substitui o JSP e o ESP como o sistema de modelo preferencial do AEM.
 
 |  |  |  |
 |---|---|---|
-| Visão geral do HTL | [Visão geral e sintaxe do HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=pt-BR) | Este documento descreve o que é o HTL, como mover para HTL, um projeto de amostra, sintaxe, expressões e instruções |
-| Utilização da API em java | [API de uso do Java do HTL](https://helpx.adobe.com/br/experience-manager/htl/using/use-api.html) | A API de uso Java do HTL permite que um arquivo HTL acesse métodos de ajuda em uma classe Java personalizada. |
+| Visão geral da HTL | [Visão geral e sintaxe do HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=pt-BR) | Este documento descreve o que é o HTL, como mover para HTL, um projeto de amostra, sintaxe, expressões e instruções |
+| Utilização da API em java | [API de uso do Java do HTL](https://helpx.adobe.com/experience-manager/htl/using/use-api.html) | A API de uso Java do HTL permite que um arquivo HTL acesse métodos de ajuda em uma classe Java personalizada. |
 
 >[!NOTE]
 >
->Seguir um tutorial com várias partes pode ser de interesse para a prática recomendada de configurar um novo projeto AEM, detalhando os Componentes principais, Modelos editáveis, Bibliotecas de clientes e desenvolvimento de componentes:
+>O tutorial a seguir sobre várias partes pode ser de interesse para a prática recomendada de configurar um novo projeto do AEM, detalhando os Componentes principais, Modelos editáveis, Bibliotecas de clientes e desenvolvimento de componentes:
 >[Introdução ao AEM Sites - Tutorial WKND](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html)

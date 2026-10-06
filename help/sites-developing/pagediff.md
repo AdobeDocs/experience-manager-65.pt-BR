@@ -12,11 +12,9 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '380'
+source-wordcount: '385'
 ht-degree: 10%
-
 ---
-
 # Desenvolvimento e diff de página{#developing-and-page-diff}
 
 ## Visão geral do recurso {#feature-overview}
@@ -27,9 +25,9 @@ A comparação de páginas permite que um usuário compare a página atual com i
 
 ## Detalhes da operação {#operation-details}
 
-Ao comparar versões de uma página, a versão anterior que o usuário deseja comparar é recriada pelo AEM em segundo plano para facilitar a comparação. Isso é necessário para poder renderizar o conteúdo [para comparação lado a lado](/help/sites-developing/pagediff.md#operation-details).
+Ao comparar versões de uma página, a versão anterior que o usuário deseja comparar é recriada pelo AEM em segundo plano para facilitar o diferencial. Isso é necessário para poder renderizar o conteúdo [para comparação lado a lado](/help/sites-developing/pagediff.md#operation-details).
 
-Essa operação de recreação é feita internamente pelo AEM e é transparente para o usuário e não requer nenhuma intervenção. No entanto, um administrador que visualize o repositório, por exemplo, no CRXDE Lite, veria essas versões recriadas na estrutura do conteúdo.
+Essa operação de recriação é feita pela AEM internamente e é transparente para o usuário e não requer nenhuma intervenção. No entanto, um administrador que visualize o repositório, por exemplo, no CRXDE Lite, veria essas versões recriadas na estrutura do conteúdo.
 
 Quando o conteúdo é comparado, a árvore inteira até a página que será comparada é recriada no seguinte local:
 
@@ -39,24 +37,24 @@ Uma tarefa de limpeza é executada automaticamente para limpar esse conteúdo te
 
 ## Permissões {#permissions}
 
-Anteriormente, na interface clássica, era necessário considerar especificamente o desenvolvimento para facilitar a comparação do AEM (como o uso da biblioteca de tags `cq:text` ou a integração personalizada do serviço OSGi `DiffService` em componentes). Isso não é mais necessário para o novo recurso de comparação, pois a comparação ocorre no lado do cliente por meio da comparação de DOM.
+Anteriormente, na interface clássica, era necessário considerar especificamente o desenvolvimento para facilitar a comparação com o AEM (por exemplo, usar a biblioteca de tags `cq:text` ou personalizar a integração do serviço OSGi `DiffService` em componentes). Isso não é mais necessário para o novo recurso de comparação, pois a comparação ocorre no lado do cliente por meio da comparação de DOM.
 
 No entanto, há algumas limitações que devem ser consideradas pelo desenvolvedor.
 
 * Esse recurso usa classes CSS que não têm namespace para o produto AEM. Se outras classes CSS personalizadas ou classes CSS de terceiros com os mesmos nomes forem incluídas na página, a exibição do diferencial poderá ser afetada.
 
-   * `html-added`
-   * `html-removed`
-   * `cq-component-added`
-   * `cq-component-removed`
-   * `cq-component-moved`
-   * `cq-component-changed`
+  * `html-added`
+  * `html-removed`
+  * `cq-component-added`
+  * `cq-component-removed`
+  * `cq-component-moved`
+  * `cq-component-changed`
 
 * Como o diferencial é no lado do cliente e é executado no carregamento da página, os ajustes no DOM após a execução do serviço de diferencial do lado do cliente não serão considerados. Isso pode afetar
 
-   * Componentes que usam AJAX para incluir conteúdo
-   * Aplicativos de página única
-   * Componentes baseados em JavaScript que manipulam o DOM na interação do usuário.
+  * Componentes que usam o AJAX para incluir conteúdo
+  * Aplicativos de página única
+  * Componentes baseados em JavaScript que manipulam o DOM na interação do usuário.
 
 >[!NOTE]
 >

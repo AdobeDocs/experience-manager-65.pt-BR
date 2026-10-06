@@ -1,29 +1,31 @@
 ---
-title: Desenvolvimento e extensão de workflows
+title: Desenvolvimento e extensão de fluxos de trabalho
+
 description: O AEM fornece várias ferramentas e recursos para criar modelos de fluxo de trabalho, desenvolver etapas de fluxo de trabalho e interagir programaticamente com fluxos de trabalho
+
+
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
+
 exl-id: 041b1767-8b6c-4887-a70d-abc96a116976
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '1460'
-ht-degree: 3%
-
+source-wordcount: '1494'
+ht-degree: 4%
 ---
 
-
-# Desenvolvimento e extensão de workflows{#developing-and-extending-workflows}
+# Desenvolvimento e extensão de fluxos de trabalho{#developing-and-extending-workflows}
 
 O AEM fornece várias ferramentas e recursos para criar modelos de fluxo de trabalho, desenvolver etapas de fluxo de trabalho e interagir programaticamente com fluxos de trabalho.
 
 Os workflows permitem automatizar processos para gerenciar recursos e publicar conteúdo no ambiente do AEM. Os workflows são compostos por uma série de etapas, com cada etapa realizando uma tarefa distinta. Você pode usar a lógica e os dados de tempo de execução para decidir quando um processo pode continuar e selecionar a próxima etapa a partir de uma das várias etapas possíveis.
 
-Por exemplo, os processos comerciais para criar e publicar páginas da Web incluem tarefas de aprovação e aprovação por vários participantes. Esses processos podem ser modelados usando fluxos de trabalho de AEM e aplicados a conteúdo específico.
+Por exemplo, os processos comerciais para criar e publicar páginas da Web incluem tarefas de aprovação e aprovação por vários participantes. Esses processos podem ser modelados usando fluxos de trabalho do AEM e aplicados a conteúdo específico.
 
 Os principais aspectos são abordados abaixo, enquanto as seguintes páginas abordam mais detalhes:
 
@@ -41,8 +43,8 @@ Os principais aspectos são abordados abaixo, enquanto as seguintes páginas abo
 >* Participando de fluxos de trabalho, consulte [Usando Fluxos de Trabalho](/help/sites-authoring/workflows.md).
 >* Administrando fluxos de trabalho e instâncias de fluxo de trabalho, consulte [Administração de Fluxos de Trabalho](/help/sites-administering/workflows.md).
 >* Para obter um Artigo completo sobre a Comunidade, consulte [Modificação de Assets digital usando fluxos de trabalho do Adobe Experience Manager.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-workflow.html?lang=pt-BR)
->* Consulte o [Webinário do Pergunte a um especialista em AEM sobre fluxos de trabalho](https://communities.adobeconnect.com/p5s33iburd54/).
->* Mudanças nos locais das informações: consulte [Reestruturação do repositório no AEM 6.5](/help/sites-deploying/repository-restructuring.md) e [Práticas recomendadas de fluxo de trabalho - Locais](/help/sites-developing/workflows-best-practices.md#locations).
+>* Consulte o [Webinar Fale com os especialistas da AEM sobre fluxos de trabalho](https://communities.adobeconnect.com/p5s33iburd54/).
+>* As alterações nos locais das informações incluem [Reestruturação do Repositório no AEM 6.5](/help/sites-deploying/repository-restructuring.md) e [Práticas recomendadas de fluxo de trabalho - Locais](/help/sites-developing/workflows-best-practices.md#locations).
 >
 
 ## Modelo {#model}
@@ -91,7 +93,7 @@ Um `WorkflowTransition` representa uma transição entre dois `WorkflowNodes` de
 * O `WorkItem` faz referência à instância do fluxo de trabalho.
 * No repositório, o `WorkItem` é armazenado abaixo da instância do fluxo de trabalho.
 
-### Carga útil {#payload}
+### Conteúdo {#payload}
 
 Faz referência ao recurso que deve ser avançado por meio de um workflow.
 
@@ -103,7 +105,7 @@ A implementação de carga referencia um recurso no repositório (por caminho, U
 
 As seguintes ações são possíveis em uma instância de workflow:
 
-* Finalizar
+* Encerrar
 * Suspender
 * Retomar
 * Reiniciar
@@ -134,7 +136,7 @@ Há vários tipos de fluxo de trabalho, conforme indicado no console Modelos de 
 
   Fluxos de trabalho criados em uma versão anterior do AEM. Esses workflows podem ser retidos durante uma atualização ou exportados como um pacote de workflow da versão anterior e, em seguida, importados para a nova versão.
 
-### Workflows transitórios {#transient-workflows}
+### Fluxos de trabalho transitórios {#transient-workflows}
 
 Os workflows padrão salvam as informações de tempo de execução (histórico) durante a execução. Você também pode definir um modelo de fluxo de trabalho como **Temporário** para evitar que esse histórico seja mantido. Esse workflow é usado para ajuste de desempenho porque economiza tempo e recursos usados para a persistência das informações.
 
@@ -206,7 +208,7 @@ Por exemplo, para um fluxo de trabalho com seis etapas e quatro estágios:
 
 ### Workflows e Forms {#workflows-and-forms}
 
-Normalmente, os fluxos de trabalho são usados para processar envios de formulários no AEM. Pode ser com os [componentes de formulário principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-container.html?lang=pt-BR) disponíveis em uma instância AEM padrão ou com a [solução AEM Forms](/help/forms/using/aem-forms-workflow.md).
+Normalmente, os fluxos de trabalho são usados para processar envios de formulários no AEM. Pode ser com os [componentes principais de componentes de formulário](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-container.html) disponíveis em uma instância padrão do AEM ou com a [solução da AEM Forms](/help/forms/using/aem-forms-workflow.md).
 
 Ao criar um formulário, o envio dele pode ser facilmente associado a um modelo de fluxo de trabalho. Por exemplo, para armazenar o conteúdo em um local específico do repositório ou notificar um usuário sobre o envio do formulário e seu conteúdo.
 

@@ -12,18 +12,16 @@ feature: Security
 role: Admin
 source-git-commit: 9b766fe6e253782be3bc47849b4857216274ae20
 workflow-type: tm+mt
-source-wordcount: '828'
+source-wordcount: '871'
 ht-degree: 0%
-
 ---
-
 # SSL/TLS por padrão{#ssl-tls-by-default}
 
-Em um esforço para melhorar continuamente a segurança do AEM, o Adobe introduziu um recurso chamado SSL por padrão. O objetivo é incentivar o uso de HTTPS para se conectar a instâncias AEM.
+Em um esforço para melhorar continuamente a segurança do AEM, a Adobe introduziu um recurso chamado SSL por padrão. O objetivo é incentivar o uso de HTTPS para se conectar a instâncias do AEM.
 
 ## Habilitar SSL/TLS por padrão {#enabling-ssl-tls-by-default}
 
-Você pode começar a configurar SSL/TLS por padrão clicando na mensagem relevante da Caixa de entrada na tela inicial do AEM. Para acessar a Caixa de entrada, pressione o ícone de sino no canto superior direito da tela. Em seguida, clique em **Exibir tudo**. Isso exibirá uma lista de todos os alertas ordenados em uma exibição de lista.
+Você pode começar a configurar SSL/TLS por padrão clicando na mensagem da Caixa de entrada relevante na tela inicial do AEM. Para acessar a Caixa de entrada, pressione o ícone de sino no canto superior direito da tela. Em seguida, clique em **Exibir tudo**. Isso exibirá uma lista de todos os alertas ordenados em uma exibição de lista.
 
 Na lista, selecione e abra o alerta **Configurar HTTPS**:
 
@@ -63,7 +61,7 @@ O primeiro método envolve publicar no servidor SSLSetup que está sendo usado p
 POST /libs/granite/security/post/sslSetup.html
 ```
 
-Você pode usar a seguinte carga no POST para automatizar a configuração:
+Você pode usar a seguinte carga no seu POST para automatizar a configuração:
 
 ```xml
 ------WebKitFormBoundaryyBO4ArmGlcfdGDbs
@@ -92,7 +90,7 @@ Content-Disposition: form-data; name="httpsPort"
 8443
 ```
 
-O servlet, como qualquer servlet POST sling, responderá com 200 OK ou um código de status HTTP de erro. Você pode encontrar detalhes sobre o status no corpo do HTML da resposta.
+O servlet, como qualquer servlet Sling POST, responderá com 200 OK ou um código de status HTTP de erro. Você pode encontrar detalhes sobre o status no corpo do HTML da resposta.
 
 Abaixo estão exemplos de uma resposta bem-sucedida e um erro.
 
@@ -195,7 +193,7 @@ Abaixo você encontrará um exemplo para criar um certificado autoassinado no fo
 
 >[!NOTE]
 >
->Consulte [Usando cURL com AEM](https://helpx.adobe.com/br/experience-manager/6-4/sites/administering/using/curl.html) para obter uma lista centralizada de comandos cURL úteis no AEM.
+>Consulte [Usando cURL com o AEM](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/curl.html) para obter uma lista centralizada de comandos cURL úteis no AEM.
 
 Você também pode automatizar a configuração de SSL/TLS usando a ferramenta cURL. Você pode fazer isso publicando os parâmetros de configuração neste URL:
 

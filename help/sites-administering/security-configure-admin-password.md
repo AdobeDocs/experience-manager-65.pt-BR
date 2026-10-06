@@ -11,18 +11,16 @@ feature: Security
 role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
-source-wordcount: '304'
+source-wordcount: '306'
 ht-degree: 0%
-
 ---
-
 # Configurar a senha do administrador na instalação{#configure-the-admin-password-on-installation}
 
 ## Visão geral {#overview}
 
 Desde a versão 6.3, o Adobe Experience Manager (AEM) permite que a senha do administrador seja definida usando a linha de comando ao instalar uma nova instância.
 
-Com versões anteriores do AEM, a senha da conta de administrador, juntamente com a senha de vários outros consoles, tinham de ser alteradas após a instalação.
+Com versões anteriores do AEM, a senha da conta de administrador, juntamente com a senha de vários outros consoles, tinham que ser alteradas após a instalação.
 
 Esse recurso adiciona a facilidade de definir uma nova senha de administrador para o repositório e o Mecanismo Servlet durante a instalação de uma instância do AEM, eliminando assim a necessidade de fazer isso manualmente posteriormente.
 
@@ -34,7 +32,7 @@ Esse recurso adiciona a facilidade de definir uma nova senha de administrador pa
 
 Esse recurso será acionado automaticamente se você optar por instalar o AEM por meio da linha de comando, em vez de clicar duas vezes no JAR em um explorador de sistema de arquivos.
 
-A sintaxe geral para executar uma instância AEM a partir da linha de comando é:
+A sintaxe geral para executar uma instância do AEM a partir da linha de comando é:
 
 ```shell
 java -jar aem6.3.jar

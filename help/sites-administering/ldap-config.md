@@ -1,21 +1,21 @@
 ---
 title: Configuração do LDAP com AEM 6
-description: Saiba como usar e configurar serviços LDAP com AEM.
+description: Saiba como usar e configurar serviços LDAP com o AEM.
+
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
+
 exl-id: 2ebca4fb-20f7-499c-96a0-4018eaeddc1a
 solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
-source-wordcount: '1609'
+source-wordcount: '1657'
 ht-degree: 0%
-
 ---
-
 # Configuração do LDAP com AEM 6 {#configuring-ldap-with-aem}
 
 O LDAP (o protocolo **L** ightweight **D** diretory **A** ccess **P** a) é usado para acessar serviços de diretório centralizados. Isso ajuda a reduzir o esforço necessário para gerenciar contas de usuários, pois elas podem ser acessadas por vários aplicativos. Um desses servidores LDAP é o Ative Diretory. O LDAP geralmente é usado para obter o Logon único, que permite que um usuário acesse vários aplicativos depois de fazer logon uma vez.
@@ -28,12 +28,12 @@ Quando uma conta é removida do servidor LDAP, a validação não é mais conced
 
 O uso dessas contas é transparente para os usuários. Ou seja, eles não veem diferença entre contas de usuários e de grupos criadas com base no LDAP e contas criadas exclusivamente no repositório.
 
-No AEM 6, o suporte LDAP vem com uma nova implementação que requer um tipo de configuração diferente do que com versões anteriores.
+No AEM 6, o suporte LDAP vem com uma nova implementação que requer um tipo de configuração diferente do que com as versões anteriores.
 
 Todas as configurações LDAP agora estão disponíveis como configurações OSGi. Eles podem ser configurados por meio do console de Gerenciamento da Web em:
 `https://serveraddress:4502/system/console/configMgr`
 
-Para que o LDAP funcione com AEM, você deve criar três configurações OSGi:
+Para que o LDAP funcione com o AEM, você deve criar três configurações OSGi:
 
 1. Um Provedor de Identidade LDAP (IDP).
 1. Um Manipulador de sincronização.
@@ -41,9 +41,9 @@ Para que o LDAP funcione com AEM, você deve criar três configurações OSGi:
 
 >[!NOTE]
 >
->Assista ao [Módulo de Logon Externo do Oak - Autenticação com LDAP e posterior](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-oak-external-login-module-authenticating-with-ldap-and-beyond.html?lang=pt-BR) para aprofundar Módulos de Logon Externos.
+>Assista ao [Módulo de Logon Externo do Oak - Autenticação com LDAP e posterior](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-oak-external-login-module-authenticating-with-ldap-and-beyond.html) para aprofundar Módulos de Logon Externos.
 >
->Para ler um exemplo de configuração do Experience Manager com o Apache DS, consulte [Configurando o Adobe Experience Manager 6.5 para usar o Apache Diretory Service.](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/configuring-adobe-experience-manager-6-to-use-apache-directory/m-p/183805?profile.language=pt)
+>Para ler um exemplo de configuração do Experience Manager com o Apache DS, consulte [Configurando o Adobe Experience Manager 6.5 para usar o Apache Diretory Service.](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/configuring-adobe-experience-manager-6-to-use-apache-directory/m-p/183805)
 
 ## Configuração do provedor de identidade LDAP {#configuring-the-ldap-identity-provider}
 
@@ -224,7 +224,7 @@ As seguintes opções de configuração estão disponíveis:
 
 >[!NOTE]
 >
->Se você planeja ter mais de uma configuração LDAP com sua instância AEM, provedores de identidade e manipuladores de sincronização separados devem ser criados para cada configuração.
+>Se você planeja ter mais de uma configuração LDAP com sua instância do AEM, provedores de identidade e manipuladores de sincronização separados devem ser criados para cada configuração.
 
 ## Configurar LDAP sobre SSL {#configure-ldap-over-ssl}
 
@@ -240,7 +240,7 @@ O AEM 6 pode ser configurado para autenticação com LDAP sobre SSL seguindo o p
 
 ### Criação de certificados SSL {#creating-ssl-certificates}
 
-Certificados autoassinados podem ser usados ao configurar o AEM para autenticação com LDAP via SSL. Veja abaixo um exemplo de um procedimento funcional para geração de certificados para uso com AEM.
+Certificados autoassinados podem ser usados ao configurar o AEM para autenticação com LDAP via SSL. Veja abaixo um exemplo de um procedimento funcional para gerar certificados para uso com o AEM.
 
 1. Verifique se você tem uma biblioteca SSL instalada e em funcionamento. Este procedimento usa OpenSSL como exemplo.
 
@@ -280,23 +280,23 @@ Para ativar o log de depuração, faça o seguinte:
 
 * Nível de registro: depuração
 * Arquivo de log logs/ldap.log
-* Padrão de Mensagem: &lbrace;0,date,`dd.MM.yyyy` `HH:mm:ss.SSS` &ast;{4}&ast; {2} {3} {5}
+* Padrão de Mensagem: {0,date,`dd.MM.yyyy` `HH:mm:ss.SSS` &amp;ast;{4}&amp;ast; {2} {3} {5}
 * Agente de log: org.apache.jackrabbit.oak.security.authentication.ldap
 
 * Nível de registro: depuração
 * Arquivo de log: logs/external.log
-* Padrão de Mensagem: &lbrace;0,date,`dd.MM.yyyy` `HH:mm:ss.SSS` &ast;{4}&ast; {2} {3} {5}
+* Padrão de Mensagem: {0,date,`dd.MM.yyyy` `HH:mm:ss.SSS` &amp;ast;{4}&amp;ast; {2} {3} {5}
 * Agente de log: org.apache.jackrabbit.oak.spi.security.authentication.external
 
 ## Uma Palavra sobre Afiliação de Grupos {#a-word-on-group-affiliation}
 
-Os usuários sincronizados por meio do LDAP podem fazer parte de diferentes grupos no AEM. Esses grupos podem ser grupos LDAP externos que são adicionados ao AEM como parte do processo de sincronização. No entanto, eles também podem ser grupos adicionados separadamente e que não fazem parte do esquema original de afiliação de grupo LDAP.
+Os usuários sincronizados por meio do LDAP podem fazer parte de grupos diferentes no AEM. Esses grupos podem ser grupos LDAP externos que são adicionados ao AEM como parte do processo de sincronização. No entanto, eles também podem ser grupos adicionados separadamente e que não fazem parte do esquema original de afiliação de grupo LDAP.
 
 Normalmente, esses grupos são adicionados por um administrador local do AEM ou por qualquer outro provedor de identidade.
 
-Se um usuário for removido de um grupo no servidor LDAP, a alteração será refletida no lado AEM na sincronização. No entanto, todas as outras afiliações de grupo do usuário que não foram adicionadas pelo LDAP permanecem em vigor.
+Se um usuário for removido de um grupo no servidor LDAP, a alteração será refletida no lado do AEM na sincronização. No entanto, todas as outras afiliações de grupo do usuário que não foram adicionadas pelo LDAP permanecem em vigor.
 
-O AEM detecta e lida com a limpeza de usuários de grupos externos usando a propriedade `rep:externalId`. Esta propriedade é adicionada automaticamente a qualquer usuário ou grupo que seja sincronizado pelo Manipulador de sincronização e contenha informações sobre o provedor de identidade de origem.
+O AEM detecta e manipula a limpeza de usuários de grupos externos usando a propriedade `rep:externalId`. Esta propriedade é adicionada automaticamente a qualquer usuário ou grupo que seja sincronizado pelo Manipulador de sincronização e contenha informações sobre o provedor de identidade de origem.
 
 Consulte a documentação do Apache Oak em [Sincronização de usuários e grupos](https://jackrabbit.apache.org/oak/docs/security/authentication/usersync.html).
 

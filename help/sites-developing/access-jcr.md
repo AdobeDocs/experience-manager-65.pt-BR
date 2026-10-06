@@ -1,6 +1,6 @@
 ---
 title: Como acessar programaticamente o JCR do AEM
-description: Você pode modificar programaticamente nós e propriedades localizados no repositório AEM, que faz parte do Adobe Experience Cloud
+description: Você pode modificar programaticamente nós e propriedades localizados no repositório do AEM, que faz parte da Adobe Experience Cloud
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
@@ -11,14 +11,12 @@ feature: Developing,JCR
 role: Developer
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '567'
+source-wordcount: '603'
 ht-degree: 0%
-
 ---
-
 # Como acessar programaticamente o JCR do AEM{#how-to-programmatically-access-the-aem-jcr}
 
-Você pode modificar programaticamente nós e propriedades localizados no repositório do Adobe CQ, que faz parte do Adobe Experience Cloud. Para acessar o repositório CQ, use a API Java™ Content Repository (JCR). Você pode usar a API JCR do Java™ para criar, substituir, atualizar e excluir conteúdo (CRUD) localizado no repositório do Adobe CQ. Para obter mais informações sobre a API JCR do Java™, consulte [https://jackrabbit.apache.org/jcr/jcr-api.html](https://jackrabbit.apache.org/jcr/jcr-api.html).
+Você pode modificar programaticamente nós e propriedades localizados no repositório do Adobe CQ, que faz parte da Adobe Experience Cloud. Para acessar o repositório CQ, use a API Java™ Content Repository (JCR). Você pode usar a API JCR do Java™ para criar, substituir, atualizar e excluir conteúdo (CRUD) localizado no repositório do Adobe CQ. Para obter mais informações sobre a API JCR do Java™, consulte [https://jackrabbit.apache.org/jcr/jcr-api.html](https://jackrabbit.apache.org/jcr/jcr-api.html).
 
 >[!NOTE]
 >
@@ -87,9 +85,9 @@ System.out.println(node.getPath());
 System.out.println(node.getProperty("message").getString());
 ```
 
-## Criar nós no Repositório do Adobe CQ {#create-nodes-in-the-adobe-cq-repository}
+## Criar nós no Repositório Adobe CQ {#create-nodes-in-the-adobe-cq-repository}
 
-O exemplo de código Java™ a seguir representa uma classe Java™ que se conecta ao Adobe CQ, cria uma instância `Session` e adiciona novos nós. Um nó recebe um valor de dados e, em seguida, o valor do nó e seu caminho são gravados no console. Quando terminar a sessão, faça logout.
+O seguinte exemplo de código Java™ representa uma classe Java™ que se conecta ao Adobe CQ, cria uma instância `Session` e adiciona novos nós. Um nó recebe um valor de dados e, em seguida, o valor do nó e seu caminho são gravados no console. Quando terminar a sessão, faça logout.
 
 ```java
 /*
@@ -141,6 +139,6 @@ try {
 }
 ```
 
-Após executar o exemplo de código completo e criar os nós, você pode visualizar os novos nós no **[!UICONTROL CRXDE Lite]**, conforme mostrado na ilustração a seguir.
+Depois de executar o exemplo de código completo e criar os nós, você pode visualizar os novos nós no **[!UICONTROL CRXDE Lite]**, conforme mostrado na ilustração a seguir.
 
 ![chlimage_1-68](assets/chlimage_1-68a.png)

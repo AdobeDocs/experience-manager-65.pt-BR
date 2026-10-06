@@ -11,14 +11,12 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
-source-wordcount: '723'
-ht-degree: 0%
-
+source-wordcount: '752'
+ht-degree: 1%
 ---
-
 # Logon único {#single-sign-on}
 
-O Logon único (SSO) permite que um usuário acesse vários sistemas após fornecer credenciais de autenticação (como um nome de usuário e senha) uma vez. Um sistema separado (conhecido como autenticador confiável) executa a autenticação e fornece ao Experience Manager as credenciais do usuário. O Experience Manager verifica e impõe as permissões de acesso para o usuário (ou seja, determina quais recursos o usuário tem permissão para acessar).
+O Logon único (SSO) permite que um usuário acesse vários sistemas após fornecer credenciais de autenticação (como um nome de usuário e senha) uma vez. Um sistema separado (conhecido como autenticador confiável) executa a autenticação e fornece ao Experience Manager as credenciais do usuário. O Experience Manager verifica e impõe as permissões de acesso ao usuário (ou seja, determina quais recursos o usuário tem permissão para acessar).
 
 O serviço Manipulador de Autenticação SSO ( `com.adobe.granite.auth.sso.impl.SsoAuthenticationHandler`) processa os resultados de autenticação fornecidos pelo autenticador confiável. O Manipulador de autenticação SSO procura um Identificador SSO (SSID) como o valor de um atributo especial nos seguintes locais, nesta ordem:
 
@@ -37,9 +35,9 @@ Especifique o mesmo nome de atributo para ambos os serviços. O atributo está i
 
 ## Configuração de SSO {#configuring-sso}
 
-Para configurar o SSO para uma instância AEM, configure o [Manipulador de Autenticação SSO](/help/sites-deploying/osgi-configuration-settings.md#adobegranitessoauthenticationhandler):
+Para configurar o SSO para uma instância do AEM, configure o [Manipulador de Autenticação SSO](/help/sites-deploying/osgi-configuration-settings.md#adobegranitessoauthenticationhandler):
 
-1. Ao trabalhar com AEM, há vários métodos de gerenciamento das definições de configuração desses serviços; consulte [Configurar OSGi](/help/sites-deploying/configuring-osgi.md) para obter mais detalhes e as práticas recomendadas.
+1. Ao trabalhar com o AEM, há vários métodos de gerenciamento das definições de configuração desses serviços; consulte [Configurar OSGi](/help/sites-deploying/configuring-osgi.md) para obter mais detalhes e as práticas recomendadas.
 
    Por exemplo, para o conjunto NTLM:
 
@@ -67,9 +65,9 @@ Para configurar o SSO para uma instância AEM, configure o [Manipulador de Auten
 >
 >Certifique-se de que os usuários não possam acessar o AEM diretamente se o SSO estiver configurado.
 >
->Ao exigir que os usuários passem por um servidor Web que execute o agente do sistema SSO, é garantido que nenhum usuário possa enviar diretamente um cabeçalho, cookie ou parâmetro que levará o usuário a ser confiável pelo AEM, pois o agente filtrará essas informações se forem enviadas externamente.
+>Ao exigir que os usuários passem por um servidor Web que execute o agente do sistema SSO, é garantido que nenhum usuário possa enviar diretamente um cabeçalho, cookie ou parâmetro que levará o usuário a ser confiável pela AEM, pois o agente filtrará essas informações se forem enviadas externamente.
 >
->Qualquer usuário que possa acessar diretamente sua instância AEM sem passar pelo servidor da Web poderá agir como qualquer usuário enviando o cabeçalho, cookie ou parâmetro, se os nomes forem conhecidos.
+>Qualquer usuário que possa acessar diretamente sua instância do AEM sem passar pelo servidor da Web poderá agir como qualquer usuário enviando o cabeçalho, cookie ou parâmetro, se os nomes forem conhecidos.
 >
 >Além disso, certifique-se de que, entre os cabeçalhos, cookies e nomes de parâmetros de solicitação, você configure apenas aquele que é necessário para a configuração do SSO.
 >
@@ -86,7 +84,7 @@ Para configurar o SSO para uma instância AEM, configure o [Manipulador de Auten
 >* IIS
 >
 >No conjunto `disp_iis.ini`:
->(consulte [instalando o Dispatcher com o Microsoft® Internet Information Server](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=pt-BR#microsoft-internet-information-server) para obter detalhes completos)
+>(consulte [instalando o Dispatcher com o Microsoft® Internet Information Server](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html#microsoft-internet-information-server) para obter detalhes completos)
 >
 >* `servervariables=1` (encaminha variáveis do servidor IIS como cabeçalhos de solicitação para a instância remota)
 >* `replaceauthorization=1` (substitui qualquer cabeçalho chamado &quot;Autorização&quot;, diferente de &quot;Básica&quot;, por seu equivalente &quot;Básica&quot;)
@@ -154,11 +152,11 @@ Ou você pode usar o seguinte comando curl para enviar o cabeçalho `TestHeader`
 
 >[!NOTE]
 >
->Ao usar o parâmetro de solicitação em um navegador, você só verá parte do HTML - sem CSS. Isso ocorre porque todas as solicitações do HTML são feitas sem o parâmetro de solicitação.
+>Ao usar o parâmetro de solicitação em um navegador, você só verá parte do HTML, sem CSS. Isso ocorre porque todas as solicitações do HTML são feitas sem o parâmetro de solicitação.
 
 ## Remoção de links de saída do AEM {#removing-aem-sign-out-links}
 
-Ao usar o SSO, a entrada e a saída são tratadas externamente, de modo que os links de saída do AEM não sejam mais aplicáveis e devam ser removidos.
+Ao usar o SSO, o logon e o logout são tratados externamente, para que os links de logout da AEM não sejam mais aplicáveis e devam ser removidos.
 
 O link de saída na tela de boas-vindas pode ser removido usando as etapas a seguir.
 

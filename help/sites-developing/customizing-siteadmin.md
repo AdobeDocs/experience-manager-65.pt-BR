@@ -12,11 +12,9 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '720'
+source-wordcount: '816'
 ht-degree: 0%
-
 ---
-
 # Personalização do console Sites (interface clássica){#customizing-the-websites-console-classic-ui}
 
 ## Adicionar uma coluna personalizada ao console Sites (siteadmin) {#adding-a-custom-column-to-the-websites-siteadmin-console}
@@ -25,7 +23,7 @@ O console Administração de sites pode ser estendido para exibir colunas person
 
 Este tutorial passo a passo explica como exibir uma nova coluna no console Administração de Sites implementando a interface `ListInfoProvider`. Ele consiste nas seguintes etapas:
 
-1. [Criando o serviço OSGI](#creating-the-osgi-service) e implantando o pacote que o contém no servidor AEM.
+1. [Criando o serviço OSGI](#creating-the-osgi-service) e implantando o pacote que o contém no servidor do AEM.
 1. (opcional) [Testando o novo serviço](#testing-the-new-service) emitindo uma chamada JSON para solicitar o objeto JSON usado para criar o console.
 1. [Exibindo a nova coluna](#displaying-the-new-column) ao estender a estrutura de nó do console no repositório.
 
@@ -113,14 +111,14 @@ public class StarredListInfoProvider implements ListInfoProvider {
 
 ### Testando o novo serviço {#testing-the-new-service}
 
-Quando você abre o console Administração de sites e navega pelo seu site, o navegador emite uma chamada Ajax para obter o objeto JSON usado para criar o console. Por exemplo, quando você navega até a pasta `/content/geometrixx`, a seguinte solicitação é enviada ao servidor AEM para criar o console:
+Quando você abre o console Administração de sites e navega pelo seu site, o navegador emite uma chamada Ajax para obter o objeto JSON usado para criar o console. Por exemplo, quando você navega até a pasta `/content/geometrixx`, a seguinte solicitação é enviada ao servidor do AEM para criar o console:
 
-[https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin)
+[https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](https://localhost:4502/content/geometrixx.pages.json?start=0&limit=30&predicate=siteadmin)
 
 Para garantir que o novo serviço esteja em execução após a implantação do pacote que o contém:
 
 1. Aponte seu navegador para o seguinte URL:
-   [https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin)
+   [https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](https://localhost:4502/content/geometrixx.pages.json?start=0&limit=30&predicate=siteadmin)
 
 1. A resposta deve exibir as novas propriedades da seguinte maneira:
 
@@ -128,7 +126,7 @@ Para garantir que o novo serviço esteja em execução após a implantação do 
 
 ### Exibição da Nova Coluna {#displaying-the-new-column}
 
-A última etapa consiste em adaptar a estrutura dos nós do console Administração de Sites para exibir a nova propriedade para todas as páginas do Geometrixx, sobrepondo `/libs/wcm/core/content/siteadmin`. Proceda da seguinte forma:
+A última etapa consiste em adaptar a estrutura dos nós do console Administração de Sites para exibir a nova propriedade para todas as páginas do Geometrixx ao sobrepor `/libs/wcm/core/content/siteadmin`. Proceda da seguinte forma:
 
 1. No CRXDE Lite, crie a estrutura de nós `/apps/wcm/core/content` com nós do tipo `sling:Folder` para refletir a estrutura `/libs/wcm/core/content`.
 
@@ -138,8 +136,8 @@ A última etapa consiste em adaptar a estrutura dos nós do console Administraç
 
    * Remover **pageText**
 
-   * Definir **pathRegex** para `/content/geometrixx(/.*)?`
-Isso torna a configuração de grade ativa para todos os sites do Geometrixx.
+   * Defina **pathRegex** para `/content/geometrixx(/.*)?`
+     Isso torna a configuração de grade ativa para todos os sites da Geometrixx.
 
    * Definir **storeProxySuffix** como `.pages.json`
 
@@ -147,9 +145,9 @@ Isso torna a configuração de grade ativa para todos os sites do Geometrixx.
 
    * Para ativar a funcionalidade do MSM, adicione os seguintes parâmetros do MSM à propriedade de várias cadeias de caracteres **storeReaderFields**:
 
-      * **msm:isSource**
-      * **msm:isInBlueprint**
-      * **msm:isLiveCopy**
+     * **msm:isSource**
+     * **msm:isInBlueprint**
+     * **msm:isLiveCopy**
 
 1. Adicione um nó `starred` (do tipo **nt:unstructured**) abaixo de `/apps/wcm/core/content/siteadmin/grid/geometrixx/columns` com as seguintes propriedades:
 
