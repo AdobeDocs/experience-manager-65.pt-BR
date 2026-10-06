@@ -13,9 +13,7 @@ source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
 source-wordcount: '719'
 ht-degree: 0%
-
 ---
-
 # Trabalhar com operações e ramificações paralisadas {#working-with-stalled-operations-and-branches}
 
 >[!NOTE]
@@ -78,7 +76,7 @@ Você também pode encerrar ou repetir operações interrompidas e repetir ramif
 
 ## O processo não pára quando o usuário de escalonamento não existe {#process-does-not-stall-when-escalation-user-does-not-exist}
 
-Erros ocorrem quando a operação Atribuir Tarefa no serviço de Usuário de forms AEM é configurada para escalar a tarefa para outro usuário após um período específico e o usuário de escalação é deletado após a execução da operação Atribuir Tarefa, mas antes do escalonamento ocorrer.
+Erros ocorrem quando a operação Atribuir Tarefa no serviço do Usuário do AEM Forms é configurada para escalar a tarefa para outro usuário após um período específico e o usuário de escalação é deletado após a execução da operação Atribuir Tarefa, mas antes da escalação ocorrer.
 
 Quando essa situação ocorre, o estado do processo e da tarefa não é alterado no tempo de escalação configurado e o escalonamento não ocorre, mas o processo não é interrompido. A seguinte mensagem é exibida no registro do servidor:
 

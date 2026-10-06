@@ -1,6 +1,6 @@
 ---
 title: Expurgar registros do banco de dados do Gerenciador de Jobs
-description: Dados de processos grandes podem resultar em um desempenho de formulários AEM mais baixo. É uma boa prática limpar os dados do processo quando os registros não são mais necessários.
+description: Dados de processos grandes podem resultar em menor desempenho dos formulários AEM. É uma boa prática limpar os dados do processo quando os registros não são mais necessários.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/health_monitor
@@ -11,11 +11,9 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '483'
+source-wordcount: '487'
 ht-degree: 0%
-
 ---
-
 # Expurgar registros do banco de dados do Gerenciador de Jobs {#purge-records-from-the-job-manager-database}
 
 >[!NOTE]
@@ -67,6 +65,6 @@ As informações sobre expurgações programadas no momento são exibidas na cai
 
    >[!NOTE]
    >
-   >Se você especificar uma data e hora de início que esteja no passado, os formulários AEM calcularão a próxima data de início lógica com base na data especificada. Por exemplo, se você programar que as expurgações de job ocorram semanalmente a partir de 7 de abril e agora for 9 de abril, a primeira expurgação ocorrerá em 14 de abril.
+   >Se você especificar uma data e hora de início que esteja no passado, o AEM Forms calculará a próxima data de início lógica com base na data especificada. Por exemplo, se você programar que as expurgações de job ocorram semanalmente a partir de 7 de abril e agora for 9 de abril, a primeira expurgação ocorrerá em 14 de abril.
 
 1. Clique em Iniciar Scheduler. Todas as configurações do scheduler previamente agendadas são substituídas pelas novas configurações.

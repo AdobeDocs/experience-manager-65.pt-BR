@@ -11,16 +11,14 @@ feature: Integration
 role: Admin
 source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '26'
-ht-degree: 65%
-
+source-wordcount: '37'
+ht-degree: 51%
 ---
-
 # Receitas do AEM Livefyre{#aem-livefyre-recipes}
 
 >[!IMPORTANT]
 >
->O [Adobe Livefyre será oficialmente encerrado em 30 de novembro de 2021](https://experienceleague.adobe.com/docs/discontinued/using/livefyre.html?lang=pt-BR).
+>[O Adobe Livefyre será oficialmente encerrado em 30 de novembro de 2021](https://experienceleague.adobe.com/docs/discontinued/using/livefyre.html?lang=pt-BR).
 
 <!--
 Step-by-step instructions on common use cases for Adobe Experience Manager Livefyre.

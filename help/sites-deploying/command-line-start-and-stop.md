@@ -11,11 +11,9 @@ feature: Administering
 role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
-source-wordcount: '352'
+source-wordcount: '358'
 ht-degree: 0%
-
 ---
-
 # Início e Interrupção da Linha de Comando{#command-line-start-and-stop}
 
 ## Iniciar o Adobe Experience Manager a partir da linha de comando {#starting-adobe-experience-manager-from-the-command-line}
@@ -67,7 +65,7 @@ Essas duas versões oferecem suporte a uma lista de variáveis de ambiente que p
 
 >[!CAUTION]
 >
->Alguns modos de execução, entre eles autor e publicação, devem ser definidos antes de o AEM ser iniciado primeiro e não podem ser alterados posteriormente. Antes de configurar uma instância do AEM que seja usada na produção, consulte [documentação sobre modos de execução](/help/sites-deploying/configure-runmodes.md) para obter detalhes.
+>Alguns modos de execução, entre eles, autor e publicação, devem ser definidos antes de o AEM ser iniciado pela primeira vez e não podem ser alterados posteriormente. Antes de configurar uma instância do AEM que seja usada em produção, consulte [documentação sobre modos de execução](/help/sites-deploying/configure-runmodes.md) para obter detalhes.
 
 ### Exemplo de script start.bat para plataforma Windows {#windows-platform-start-bat-script-example}
 
@@ -83,7 +81,7 @@ CQ_PORT=1234 ./start
 
 >[!NOTE]
 >
->O script de inicialização inicia o AEM Quickstart instalado na pasta *a &lt;cq-installation>/app*.
+>O script de inicialização inicia o AEM Quickstart instalado na pasta &lt;cq-installation>/app *de* s.
 
 ## Interrupção do Adobe Experience Manager {#stopping-adobe-experience-manager}
 
@@ -91,8 +89,8 @@ Para interromper o AEM, siga um destes procedimentos:
 
 * Dependendo da plataforma usada:
 
-   * Se você iniciou o AEM a partir de um script ou da linha de comando, pressione **Ctrl+C** para desligar o servidor.
-   * Se você tiver usado o script de inicialização no UNIX®, deverá usar o script de interrupção para interromper o AEM.
+  * Se você iniciou o AEM a partir de um script ou da linha de comando, pressione **Ctrl+C** para desligar o servidor.
+  * Se você tiver usado o script de inicialização no UNIX®, deverá usar o script de interrupção para interromper o AEM.
 
 * Se você iniciou o AEM clicando duas vezes no arquivo jar, clique no botão **Ligado** na janela de inicialização (o botão muda para **Desligado**) para desligar o servidor.
 

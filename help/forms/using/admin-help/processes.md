@@ -13,9 +13,7 @@ source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
 source-wordcount: '1643'
 ht-degree: 0%
-
 ---
-
 # Gerenciar processos {#managing-processes}
 
 A página Lista de processos mostra os processos que um usuário iniciou ou que foram iniciados automaticamente.
