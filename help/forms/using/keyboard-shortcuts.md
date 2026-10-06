@@ -27,22 +27,22 @@ Este artigo lista os atalhos de teclado que podem ser usados com o Editor de for
 | Feche o navegador Propriedades do componente de formulário adaptável selecionado | Ctrl+Alt+W | Command+Alt+W |
 | Salve as alterações no navegador Propriedades do componente de formulário adaptável selecionado | Ctrl+S | Command+S |
 | Editar regra para o componente de formulário adaptável selecionado | Ctrl+Alt+Enter | Command+Alt+Return |
-| Alternar entre a Visualização e o modo selecionado atualmente (por exemplo, Editar e Andaime) | Ctrl+Shift+M | Ctrl+Shift+M&amp;ast; |
-| Desfazer a última alteração | Ctrl+Z | Ctrl+Z&amp;ast; |
-| Refazer a última alteração | Ctrl+Y | Ctrl+S&amp;ast; |
+| Alternar entre a Visualização e o modo selecionado atualmente (por exemplo, Editar e Andaime) | Ctrl+Shift+M | Ctrl+Shift+M&ast; |
+| Desfazer a última alteração | Ctrl+Z | Ctrl+Z&ast; |
+| Refazer a última alteração | Ctrl+Y | Ctrl+S&ast; |
 | Selecionar vários componentes | Shift + clique | Shift + clique |
-| Copiar componente selecionado | Ctrl-C | Ctrl-C&amp;ast; |
-| Recortar componentes selecionados. O componente recortado não desaparece até que seja colado no novo local. | Ctrl-X | Ctrl-X&amp;ast; |
+| Copiar componente selecionado | Ctrl-C | Ctrl-C&ast; |
+| Recortar componentes selecionados. O componente recortado não desaparece até que seja colado no novo local. | Ctrl-X | Ctrl-X&ast; |
 | Colar componentes | Ctrl+V | Ctrl+V |
-| Excluir componentes selecionados | Ctrl+Del | Ctrl+Del&amp;ast; |
-| Excluir componentes selecionados | Ctrl+Barra de espaços | Ctrl+Espaço&amp;Atrasado; |
-| Tornar o texto negrito ao usar o componente Editor de Rich Text no modo Visualização | Ctrl+O | Ctrl+B&amp;ast; |
-| Colocar texto em itálico ao usar o componente Editor de Rich Text no modo Visualização | Ctrl+I | Ctrl+I&amp;ast; |
-| Tornar o texto negrito ao usar o componente Editor de Rich Text no modo Visualização | Ctrl+S | Ctrl+U&amp;ast; |
+| Excluir componentes selecionados | Ctrl+Del | Ctrl+Del&ast; |
+| Excluir componentes selecionados | Ctrl+Barra de espaços | Ctrl+Espaço&Atrasado; |
+| Tornar o texto negrito ao usar o componente Editor de Rich Text no modo Visualização | Ctrl+O | Ctrl+B&ast; |
+| Colocar texto em itálico ao usar o componente Editor de Rich Text no modo Visualização | Ctrl+I | Ctrl+I&ast; |
+| Tornar o texto negrito ao usar o componente Editor de Rich Text no modo Visualização | Ctrl+S | Ctrl+U&ast; |
 
 >[!NOTE]
 >
->Os atalhos marcados com um &#39;&amp;ast;&#39; funcionam com as teclas Ctrl e Command no macOS.
+>Os atalhos marcados com um &#39;&ast;&#39; funcionam com as teclas Ctrl e Command no macOS.
 
 >[!NOTE]
 >
@@ -58,13 +58,13 @@ Este artigo lista os atalhos de teclado que podem ser usados com o Editor de for
 |---|---|---|
 | Abrir o navegador Propriedades do componente selecionado em um tema | Alt+Enter | Alt+Return |
 | Fechar o navegador Propriedades do componente selecionado em um tema | Ctrl+Alt+W | Command+Alt+W |
-| Desfazer a última alteração | Ctrl+Z | Ctrl+Z&amp;ast; |
-| Refazer a última alteração | Ctrl+Y | Ctrl+S&amp;ast; |
-| Salvar alterações no navegador Propriedades do componente selecionado em um tema | Ctrl+S | Ctrl+S&amp;ast; |
+| Desfazer a última alteração | Ctrl+Z | Ctrl+Z&ast; |
+| Refazer a última alteração | Ctrl+Y | Ctrl+S&ast; |
+| Salvar alterações no navegador Propriedades do componente selecionado em um tema | Ctrl+S | Ctrl+S&ast; |
 
 >[!NOTE]
 >
->Os atalhos marcados com um &#39;&amp;ast;&#39; funcionam com as teclas Ctrl e Command no macOS.
+>Os atalhos marcados com um &#39;&ast;&#39; funcionam com as teclas Ctrl e Command no macOS.
 
 ## Navegador de conteúdo  {#contentbrowser}
 
