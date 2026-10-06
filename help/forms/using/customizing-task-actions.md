@@ -10,11 +10,9 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '291'
 ht-degree: 0%
-
 ---
-
 # Personalizando Ações da Tarefa {#customizing-task-actions}
 
 O espaço de trabalho do AEM Forms permite que os usuários personalizem as ações da tarefa. Antes de personalizar as ações de tarefa, siga as etapas listadas em [Etapas genéricas para personalização do espaço de trabalho do AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md).

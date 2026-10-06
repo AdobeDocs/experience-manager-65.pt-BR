@@ -1,22 +1,25 @@
 ---
-title: QuickStart(SOAP) da API Java do Serviço Gerenciador de Tarefas
+title: QuickStart da API Java do Serviço Gerenciador de Tarefas (SOAP)
+
 description: Use o serviço Gerenciador de Tarefas para atribuir tarefas, bloquear tarefas, recuperar tarefas atribuídas a usuários, recuperar dados de formulário de tarefas, modificar dados de formulário, recuperar anexos de arquivo e recuperar informações de tarefas.
+
+
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
+
 role: Developer
 exl-id: d61c20a9-27c6-4b57-ab00-dfaa77fe3f75
 solution: Experience Manager, Experience Manager Forms
+
 feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '525'
 ht-degree: 0%
-
 ---
-
-# SOAP (Início Rápido) da API Java do Serviço Gerenciador de Tarefas {#task-manager-service-java-api-quickstart-soap}
+# Início Rápido da API Java do Serviço Gerenciador de Tarefas (SOAP) {#task-manager-service-java-api-quickstart-soap}
 
 Os seguintes Quick Starts estão disponíveis para o serviço Gerenciador de Tarefas.
 

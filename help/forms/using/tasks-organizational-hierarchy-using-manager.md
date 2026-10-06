@@ -12,11 +12,9 @@ feature: Adaptive Forms
 role: Admin, User, Developer
 source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
-source-wordcount: '337'
+source-wordcount: '348'
 ht-degree: 0%
-
 ---
-
 # Gerenciando tarefas em uma hierarquia organizacional usando a Exibição do Gerente{#managing-tasks-in-an-organizational-hierarchy-using-manager-view}
 
 No espaço de trabalho do AEM Forms, os gerentes agora podem acessar as tarefas atribuídas a qualquer pessoa em sua hierarquia — relatórios diretos ou indiretos — e executar várias ações neles. As tarefas estão disponíveis na guia Tarefa no espaço de trabalho do AEM Forms. As ações compatíveis com as tarefas de subordinados diretos são:

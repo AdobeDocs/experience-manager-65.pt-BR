@@ -1,6 +1,6 @@
 ---
 title: Personalizar imagens usadas nas ações de roteiro
-description: Como personalizar as imagens usadas nas ações de rota no espaço de trabalho do LiveCycle AEM Forms.
+description: Como personalizar as imagens usadas nas ações de rota no LiveCycle AEM Forms workspace.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
@@ -10,11 +10,9 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
-source-wordcount: '288'
+source-wordcount: '300'
 ht-degree: 0%
-
 ---
-
 # Personalizar imagens usadas nas ações de roteiro {#customize-images-used-in-route-actions}
 
 Para personalizar as imagens usadas nas ações de rota, execute as etapas descritas em [Etapas genéricas de personalização](/help/forms/using/generic-steps-html-workspace-customization.md) seguidas pelas etapas descritas neste artigo.
@@ -29,7 +27,7 @@ Para personalizar as imagens usadas nas ações de rota, execute as etapas descr
 
    >[!NOTE]
    >
-   >Para obter mais informações, consulte [Acesso ao WebDAV](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/webdav-access.html?lang=pt-BR).
+   >Para obter mais informações, consulte [Acesso ao WebDAV](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/webdav-access.html?lang=en).
 
    >[!NOTE]
    >

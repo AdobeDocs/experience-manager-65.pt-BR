@@ -10,11 +10,9 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '591'
-ht-degree: 1%
-
+source-wordcount: '604'
+ht-degree: 0%
 ---
-
 # APIs para acessar instâncias de cartas {#apis-to-access-letter-instances}
 
 ## Visão geral {#overview}
@@ -40,7 +38,7 @@ O Gerenciamento de correspondências expõe as APIs para buscar instâncias de c
 
 ### Uso de getAllLetterInstances {#using-nbsp-getallletterinstances}
 
-A API a seguir encontra as instâncias de correspondência com base no objeto de consulta (Enviado e Rascunho). Se o objeto de consulta for nulo, ele retornará todas as instâncias de letras. Esta API retorna uma lista de objetos [LetterInstanceVO](https://helpx.adobe.com/br/aem-forms/6-2/javadocs/com/adobe/icc/dbforms/obj/LetterInstanceVO.html), que podem ser usados para extrair informações adicionais da instância de carta.
+A API a seguir encontra as instâncias de correspondência com base no objeto de consulta (Enviado e Rascunho). Se o objeto de consulta for nulo, ele retornará todas as instâncias de letras. Esta API retorna uma lista de objetos [LetterInstanceVO](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/dbforms/obj/LetterInstanceVO.html), que podem ser usados para extrair informações adicionais da instância de carta.
 
 **Sintaxe**: `List getAllLetterInstances(Query query) throws ICCException;`
 
@@ -137,7 +135,7 @@ Boolean result = letterInstanceService.letterInstanceExists(letterInstanceName )
 
 A Instância da Carta pode ser do tipo Enviado ou Rascunho. A abertura de ambos os tipos de ocorrência de letra mostra comportamentos diferentes:
 
-* Se houver uma ocorrência de carta enviada, um PDF que representa a ocorrência de carta será aberto. A instância de carta enviada persistida no servidor também contém o XML de dados e o XDP processado, que podem ser usados para realizar e personalizar ainda mais o uso de um caso, como a criação de um PDF/A.
+* Se houver uma ocorrência de carta enviada, uma PDF representando a ocorrência de carta é aberta. A instância de carta enviada persistida no servidor também contém o XML de dados e o XDP processado, que podem ser usados para realizar e personalizar ainda mais o uso de um caso, como a criação de um PDF/A.
 * Se houver uma ocorrência de carta de Rascunho, a interface de criação de correspondência será recarregada para o estado anterior exato como estava durante o tempo em que o rascunho foi criado
 
 ### Abrindo Instância de Carta de Rascunho  {#opening-draft-letter-instance-nbsp}
@@ -152,6 +150,6 @@ A interface do CCR é compatível com o parâmetro cmLetterInstanceId, que pode 
 
 ### Abrindo instância de carta enviada {#opening-submitted-letter-instance}
 
-O PDF enviado pode ser aberto diretamente usando a ID de ocorrência da correspondência:
+O PDF enviado pode ser aberto diretamente usando a ID de instância da carta:
 
 `https://[hostName]:[portNo]/[contextPath]/[letterInstanceId]`

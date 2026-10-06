@@ -1,6 +1,6 @@
 ---
 title: Exibir informações do sistema
-description: Saiba como visualizar gráficos de monitoramento de recursos e informações sobre o servidor que está executando formulários AEM.
+description: Saiba como visualizar gráficos de monitoramento de recursos e informações sobre o servidor que está executando formulários do AEM.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/health_monitor
@@ -11,14 +11,12 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: '546'
 ht-degree: 0%
-
 ---
-
 # Exibir informações do sistema {#view-system-information}
 
-A guia Sistema exibe gráficos de monitoramento de recursos e informações sobre o servidor que está executando formulários AEM. Para acessar essas informações, no console de administração, clique em Monitor de integridade no canto superior direito da página. Se você estiver executando formulários AEM em um ambiente em cluster, as informações exibidas serão para o nó selecionado na lista Servidor.
+A guia Sistema exibe gráficos de monitoramento de recursos e informações sobre o servidor que está executando formulários do AEM. Para acessar essas informações, no console de administração, clique em Monitor de integridade no canto superior direito da página. Se você estiver executando formulários do AEM em um ambiente clusterizado, as informações exibidas serão para o nó selecionado na lista Servidor.
 
 Para salvar as informações atuais do sistema como um arquivo de propriedades, clique em Salvar.
 
@@ -50,7 +48,7 @@ O painel esquerdo da guia Sistema exibe as seguintes informações sobre o servi
 
 **Tempo de Compilação:** a quantidade de tempo gasto na compilação.
 
-**Número de Threads Ativos:** O número total de threads presentes atualmente no sistema de formulários AEM.
+**Número de Threads Ativos:** O número total de threads presentes atualmente no sistema de formulários do AEM.
 
 **Número de Pico do Threads:** Maior número de threads ativos já registrados no sistema.
 
@@ -78,21 +76,21 @@ O painel esquerdo da guia Sistema exibe as seguintes informações sobre o servi
 
 **Caminho da Classe de Inicialização:** O caminho da classe de inicialização usado pela JVM.
 
-**Tipo de Servidor de Aplicativos:** Tipo de servidor de aplicativos usado para executar formulários AEM.
+**Tipo de Servidor de Aplicativos:** Tipo de servidor de aplicativos usado para executar formulários do AEM.
 
-**Versão do Servidor de Aplicativos:** Número da versão do servidor de aplicativos usada para executar formulários AEM.
+**Versão do Servidor de Aplicativos:** Número da versão do servidor de aplicativos usada para executar formulários do AEM.
 
-**Fornecedor do Servidor de Aplicativos:** Fabricante do servidor de aplicativos usado para executar formulários AEM.
+**Fornecedor do Servidor de Aplicativos:** Fabricante do servidor de aplicativos usado para executar formulários do AEM.
 
-**Data de Instalação:** Data (no formato aaaa-mm-dd) em que os formulários AEM foram instalados.
+**Data de Instalação:** Data (no formato aaaa-mm-dd) em que o AEM Forms foi instalado.
 
 **Versão do AEM Forms:** Versão do AEM Forms instalada.
 
-**Versão do Patch:** AEM forma o número do patch.
+**Versão do Patch:** número do patch dos formulários AEM.
 
-**Nome do Banco de Dados:** Tipo de banco de dados usado por formulários AEM.
+**Nome do Banco de Dados:** Tipo de banco de dados usado pelos formulários do AEM.
 
-**Versão do Banco de Dados:** Número da versão do banco de dados usado por formulários AEM.
+**Versão do Banco de Dados:** Número da versão do banco de dados usada pelos formulários do AEM.
 
 **Nome da Unidade do Banco de Dados:** O nome do driver usado pelo JVM para conexão com o banco de dados.
 

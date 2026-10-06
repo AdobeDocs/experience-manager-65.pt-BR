@@ -1,6 +1,6 @@
 ---
 title: Usar HSM para assinar ou certificar documentos digitalmente
-description: Use o servidor HSM ou o dispositivo eToken para assinar/certificar documentos PDF.
+description: Use o servidor HSM ou o dispositivo eToken para assinar/certificar documentos do PDF.
 contentOwner: vishgupt
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,11 +11,9 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '684'
+source-wordcount: '699'
 ht-degree: 0%
-
 ---
-
 # Usar HSM para assinar ou certificar documentos digitalmente {#use-hsm-to-digitally-sign-or-certify-documents}
 
 HSM (Hardware Security Modules, módulos de segurança de hardware) e etokens são dispositivos de computação dedicados, resistentes e à violação, projetados para gerenciar, processar e armazenar chaves digitais com segurança. Esses dispositivos são conectados diretamente a um computador ou servidor de rede.
@@ -28,8 +26,8 @@ O Adobe Experience Manager Forms pode usar credenciais armazenadas em um HSM ou 
 
 ## Antes de configurar os dispositivos HSM ou etoken com o AEM Forms {#configurehsmetoken}
 
-* Instale o pacote do [complemento do AEM Forms](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html).
-* Instale e configure o software cliente HSM ou etoken no mesmo computador que o servidor AEM. O software cliente é necessário para se comunicar com os dispositivos HSM e etoken.
+* Instale o pacote do [complemento do AEM Forms](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html).
+* Instale e configure o software cliente HSM ou etoken no mesmo computador que o servidor do AEM. O software cliente é necessário para se comunicar com os dispositivos HSM e etoken.
 
 ## Habilitar o serviço DocAssurance {#configuredocassurance}
 
@@ -56,7 +54,7 @@ Por padrão, o serviço DocAssurance não está habilitado. Execute as seguintes
 
 >[!NOTE]
 >
-> É recomendável usar o comando &quot;Ctrl + C&quot; para reiniciar o SDK. Reiniciar o SDK do AEM usando métodos alternativos, por exemplo, parar processos Java, pode levar a inconsistências no ambiente de desenvolvimento do AEM.
+> É recomendável usar o comando &#39;Ctrl + C&#39; para reiniciar o SDK. Reiniciar o AEM SDK usando métodos alternativos, por exemplo, parar processos Java, pode levar a inconsistências no ambiente de desenvolvimento do AEM.
 
 <!--
 
@@ -99,7 +97,7 @@ Perform the following steps to setup certificates:
 
 O alias contém todos os parâmetros exigidos por um HSM ou etoken. Execute as instruções listadas abaixo para criar um alias para cada credencial HSM ou etoken que o eSign ou Digital Signatures usa:
 
-1. Abra o console AEM. O URL padrão do console AEM é https://&lt;host>:&lt;port>/system/console/configMgr
+1. Abra o console AEM. O URL padrão do console do AEM é https://&lt;host>:&lt;port>/system/console/configMgr
 1. Abra o **Serviço de Configuração de Credenciais HSM** e especifique valores para os seguintes campos:
 
    * **Alias de Credencial**: especifique uma cadeia de caracteres usada para identificar o alias. Esse valor é usado como uma propriedade para algumas operações de Assinaturas digitais, como a operação Assinar campo de assinatura.
@@ -399,7 +397,7 @@ public class Sign{
 }
 ```
 
-Se você atualizou do formulário AEM 6.0 ou AEM 6.1 Forms e estava usando o serviço DocAssurance na versão anterior, então:
+Se você atualizou do AEM 6.0 Form ou do AEM 6.1 Forms e estava usando o serviço DocAssurance na versão anterior:
 
 * Para usar o serviço DocAssurance sem um dispositivo HSM ou etoken, continue usando o código existente.
 * Para usar o serviço DocAssurance com um dispositivo HSM ou etoken, substitua o código de objeto CredentialContext existente pela API listada abaixo.
@@ -415,4 +413,4 @@ Se você atualizou do formulário AEM 6.0 ou AEM 6.1 Forms e estava usando o ser
  public CredentialContext(String credentialAlias, ResourceResolver resourceResolver, boolean isHSMCredential);
 ```
 
-Para obter informações detalhadas sobre APIs e código de amostra do serviço DocAssurance, consulte [Usando serviços de documento AEM de forma programática](/help/forms/using/aem-document-services-programmatically.md).
+Para obter informações detalhadas sobre APIs e código de amostra do serviço DocAssurance, consulte [Usando os Serviços de Documento da AEM de forma programática](/help/forms/using/aem-document-services-programmatically.md).

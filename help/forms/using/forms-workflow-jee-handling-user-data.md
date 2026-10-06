@@ -1,5 +1,5 @@
 ---
-title: Fluxos de trabalho do Forms JEE | Manuseio de dados do usuário
+title: Fluxos de trabalho do Forms JEE | Manipulação de dados do usuário
 description: Saiba como usar workflows do AEM Forms JEE para projetar, criar e gerenciar processos comerciais.
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,12 +9,10 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
-source-wordcount: '1379'
+source-wordcount: '1407'
 ht-degree: 0%
-
 ---
-
-# Fluxos de trabalho do Forms JEE | Manuseio de dados do usuário {#forms-jee-workflows-handling-user-data}
+# Fluxos de trabalho do Forms JEE | Manipulação de dados do usuário {#forms-jee-workflows-handling-user-data}
 
 Os fluxos de trabalho do AEM Forms JEE fornecem ferramentas para projetar, criar e gerenciar processos de negócios. Um processo de fluxo de trabalho consiste em uma série de etapas executadas em uma ordem especificada. Cada etapa executa uma ação específica, como atribuir uma tarefa a um usuário ou enviar uma mensagem de email. Um processo pode interagir com ativos, contas de usuário e serviços e pode ser acionado usando qualquer um dos seguintes métodos:
 
@@ -24,7 +22,7 @@ Os fluxos de trabalho do AEM Forms JEE fornecem ferramentas para projetar, criar
 * Usar pasta monitorada
 * Usar email
 
-Para obter mais informações sobre como criar o processo de fluxo de trabalho do AEM Forms JEE, consulte [Ajuda do Workbench](https://www.adobe.com/go/learn_aemforms_workbench_65_br).
+Para obter mais informações sobre como criar o processo de fluxo de trabalho do AEM Forms JEE, consulte [Ajuda do Workbench](https://www.adobe.com/go/learn_aemforms_workbench_65).
 
 ## Dados do usuário e armazenamentos de dados {#user-data-and-data-stores}
 
@@ -37,7 +35,7 @@ Quando um processo é acionado, uma ID de instância de processo exclusiva e uma
 No entanto, não é possível identificar a ID da instância do processo para um iniciador nos seguintes cenários:
 
 * **Processo acionado por meio de uma pasta monitorada**: uma instância de processo não poderá ser identificada com seu iniciador se o processo for acionado por uma pasta monitorada. Nesse caso, as informações do usuário são codificadas nos dados armazenados.
-* **Processo iniciado a partir da publicação da instância AEM**: todas as instâncias de processo acionadas a partir da instância de publicação AEM não capturam informações sobre o iniciador. No entanto, os dados do usuário podem ser capturados no formulário associado ao processo, que é armazenado em variáveis de fluxo de trabalho.
+* **Processo iniciado a partir da instância do AEM de publicação**: todas as instâncias de processo acionadas a partir da instância de publicação do AEM não capturam informações sobre o iniciador. No entanto, os dados do usuário podem ser capturados no formulário associado ao processo, que é armazenado em variáveis de fluxo de trabalho.
 * **Processo iniciado por email**: a identificação de email do remetente foi capturada como uma propriedade em uma coluna de blob opaco da tabela do banco de dados `tb_job_instance`, que não pode ser consultada diretamente.
 
 ### Identificar IDs de instância de processo quando o iniciador ou participante do fluxo de trabalho for conhecido {#initiator-participant}
@@ -127,7 +125,7 @@ Agora que você identificou as IDs de instância de processo associadas a um usu
 
 1. Crie uma instância do cliente `ProcessManager` público ( `com.adobe.idp.workflow.client.ProcessManager`) usando uma instância `ServiceClientFactory` com as configurações de conexão corretas.
 
-   Para obter mais informações, consulte Referência da API Java™ para [Class ProcessManager](https://helpx.adobe.com/br/experience-manager/6-3/forms/ProgramLC/javadoc/com/adobe/idp/workflow/client/ProcessManager.html).
+   Para obter mais informações, consulte Referência da API Java™ para [Class ProcessManager](https://helpx.adobe.com/experience-manager/6-3/forms/ProgramLC/javadoc/com/adobe/idp/workflow/client/ProcessManager.html).
 
 1. Verifique o status da instância do workflow. Se o status for diferente de 2 (CONCLUÍDO) ou 4 (ENCERRADO), encerre a instância primeiro chamando o seguinte método:
 

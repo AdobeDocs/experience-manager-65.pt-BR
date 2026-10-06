@@ -1,6 +1,6 @@
 ---
 title: Backup e recuperação do repositório EMC Documentum
-description: Este documento descreve as tarefas necessárias para fazer backup e recuperar o repositório do EMC Documentum configurado para seu ambiente de formulários AEM.
+description: Este documento descreve as tarefas necessárias para fazer backup e recuperar o repositório do EMC Documentum configurado para seu ambiente AEM Forms.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
@@ -11,22 +11,20 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
-source-wordcount: '790'
-ht-degree: 0%
-
+source-wordcount: '792'
+ht-degree: 1%
 ---
-
 # Backup e recuperação do repositório EMC Documentum {#backing-up-and-recovering-the-emc-documentum-repository}
 
-Esta seção descreve as tarefas necessárias para fazer backup e recuperar o repositório do EMC Documentum configurado para seu ambiente de formulários AEM.
+Esta seção descreve as tarefas necessárias para fazer backup e recuperar o repositório do EMC Documentum configurado para seu ambiente AEM Forms.
 
 >[!NOTE]
 >
->Essas instruções pressupõem que os formulários AEM com Connectors for ECM e EMC Documentum Content Server estejam instalados e configurados conforme necessário.
+>Essas instruções pressupõem que os AEM Forms com Connectors for ECM e o EMC Documentum Content Server estejam instalados e configurados conforme necessário.
 
 Para os processos de backup e restauração, há duas tarefas principais:
 
-* Backup (ou restauração) do ambiente de formulários AEM.
+* Backup (ou restauração) do ambiente de formulários do AEM.
 * Backup (ou restauração) do EMC Documentum Content Server.
 
 >[!NOTE]
@@ -197,15 +195,15 @@ Esta seção descreve a instalação e configuração do software EMC NetWorker 
 
    * Backup completo do banco de dados (nsrnmddbf.bat):
 
-     `NetWorker_database_module_root` `-s`*&lt;Nome_do_Servidor_do_NetWorker>* `-U` `[username]` `-P`*[senha ]*`-l full`*&lt;nome_do_banco_de_dados>*
+     `NetWorker_database_module_root` `-s`*&lt;Nome_do_Servidor_do_NetWorker>* `-U``[username]` `-P`*[senha ]*`-l full`*&lt;nome_do_banco_de_dados>*
 
    * Backup incremental do banco de dados (nsrnmddbi.bat):
 
-     `[NetWorker_database_module_root]` `-s`*&lt;Nome_do_Servidor_do_NetWorker>* `-U` `[username]` `-P` `[password]` `-l 1 -R`*&lt;nome_do_banco_de_dados>*
+     `[NetWorker_database_module_root]` `-s`*&lt;Nome_do_Servidor_do_NetWorker>* `-U``[username]` `-P``[password]` `-l 1 -R`*&lt;nome_do_banco_de_dados>*
 
    * Backup de log do banco de dados (nsrnmddbl.bat):
 
-     `[NetWorker_database_module_root]` `-s` `<NetWorker_Server_Name>` `-U` `[username]` `-P` `[password]` `-l incr -R`*&lt;nome_do_banco_de_dados>*
+     `[NetWorker_database_module_root]` `-s``<NetWorker_Server_Name>` `-U``[username]` `-P``[password]` `-l incr -R`*&lt;nome_do_banco_de_dados>*
 
      Em que:
 
@@ -235,7 +233,7 @@ Um dispositivo é adicionado ao qual os arquivos de backup serão salvos. É pos
 
 ## Faça backup do EMC Documentum Content Server {#back-up-the-emc-documentum-content-server}
 
-Execute as seguintes tarefas depois de concluir um backup completo dos dados de formulários AEM. (Consulte [Backup dos dados de formulários AEM](/help/forms/using/admin-help/backing-aem-forms-data.md#backing-up-the-aem-forms-data).)
+Execute as seguintes tarefas depois de concluir um backup completo dos dados do AEM Forms. (Consulte [Backup dos dados de formulários do AEM](/help/forms/using/admin-help/backing-aem-forms-data.md#backing-up-the-aem-forms-data).)
 
 >[!NOTE]
 >
@@ -250,7 +248,7 @@ Execute as seguintes tarefas depois de concluir um backup completo dos dados de 
 
 ## Restaurar o EMC Documentum Content Server {#restore-the-emc-documentum-content-server}
 
-Execute as seguintes tarefas antes de restaurar os dados de formulários AEM. (Consulte [Recuperando os dados de formulários AEM](/help/forms/using/admin-help/recovering-aem-forms-data.md#recovering-the-aem-forms-data).)
+Execute as seguintes tarefas antes de restaurar os dados de formulários do AEM. (Consulte [Recuperando os dados de formulários do AEM](/help/forms/using/admin-help/recovering-aem-forms-data.md#recovering-the-aem-forms-data).)
 
 >[!NOTE]
 >

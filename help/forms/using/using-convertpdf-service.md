@@ -1,6 +1,6 @@
 ---
 title: Converter serviço PDF
-description: Use o serviço Adobe Experience Manager Forms ConvertPDF para converter documentos PDF em PostScript ou arquivos de imagem.
+description: Use o serviço Adobe Experience Manager Forms ConvertPDF para converter documentos do PDF em PostScript ou arquivos de imagem.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
@@ -10,33 +10,31 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '382'
+source-wordcount: '412'
 ht-degree: 0%
-
 ---
-
 # Converter serviço PDF {#convertpdf-service}
 
 ## Visão geral {#overview}
 
-O serviço Convert PDF converte documentos PDF para PostScript ou arquivos de imagem (JPEG, JPEG 2000, PNG e TIFF). A conversão de um documento PDF em PostScript é útil para impressão autônoma baseada em servidor em qualquer impressora PostScript. A conversão de um documento de PDF em um arquivo de TIFF de várias páginas é prática ao arquivar documentos em sistemas de gerenciamento de conteúdo que não sejam compatíveis com documentos de PDF.
+O serviço Convert PDF converte documentos do PDF para PostScript ou arquivos de imagem (JPEG, JPEG 2000, PNG e TIFF). A conversão de um documento do PDF para o PostScript é útil para impressão autônoma baseada em servidor em qualquer impressora PostScript. A conversão de um documento do PDF em um arquivo TIFF de várias páginas é prática ao arquivar documentos em sistemas de gerenciamento de conteúdo que não sejam compatíveis com documentos do PDF.
 
 Você pode fazer o seguinte com o serviço Converter PDF:
 
-* Converta documentos PDF em PostScript. Ao converter para o PostScript, você pode usar a operação de conversão para especificar o documento de origem e se deve converter para o PostScript nível 2 ou 3. O documento PDF que você converter em um arquivo PostScript deve ser não interativo.
-* Converta documentos PDF para formatos de imagem JPEG, JPEG 2000, PNG e TIFF. Ao converter para qualquer um desses formatos de imagem, você pode usar a operação de conversão para especificar o documento de origem e uma especificação de opções de imagem. A especificação contém várias preferências, como formato de conversão de imagem, resolução de imagem e conversão de cor.
+* Converta documentos do PDF para o PostScript. Ao converter para o PostScript, você pode usar a operação de conversão para especificar o documento de origem e se deve converter para o PostScript nível 2 ou 3. O documento do PDF que você converter em um arquivo do PostScript deve ser não interativo.
+* Converta documentos do PDF para os formatos de imagem do JPEG, JPEG 2000, PNG e TIFF. Ao converter para qualquer um desses formatos de imagem, você pode usar a operação de conversão para especificar o documento de origem e uma especificação de opções de imagem. A especificação contém várias preferências, como formato de conversão de imagem, resolução de imagem e conversão de cor.
 
 ## Configurar propriedades do serviço   {#properties}
 
-Você pode usar o **Serviço ConvertPDF do AEMFD** no Console AEM para configurar as propriedades deste serviço. A URL padrão do console AEM é `https://[host]:'port'/system/console/configMgr`.
+Você pode usar o **Serviço ConvertPDF do AEMFD** no Console do AEM para configurar as propriedades deste serviço. A URL padrão do console AEM é `https://[host]:'port'/system/console/configMgr`.
 
 ## Uso do serviço {#using-the-service}
 
 O serviço ConvertPDF fornece as duas APIs a seguir:
 
-* **[toPS](https://helpx.adobe.com/br/experience-manager/6-3/forms/javadocs/com/adobe/fd/cpdf/api/ConvertPdfService.html#toPS)**: converte um documento PDF em um arquivo PostScript.
+* **[toPS](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/cpdf/api/ConvertPdfService.html#toPS)**: converte um documento PDF em um arquivo PostScript.
 
-* **[toImage](https://helpx.adobe.com/br/experience-manager/6-3/forms/javadocs/com/adobe/fd/cpdf/api/ConvertPdfService.html#toImage)**: converte um documento PDF em um arquivo de imagem. Os formatos de imagem compatíveis são JPEG, JPEG2000, PNG e TIFF.
+* **[toImage](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/cpdf/api/ConvertPdfService.html#toImage)**: converte um documento do PDF em um arquivo de imagem. Os formatos de imagem compatíveis são JPEG, JPEG2000, PNG e TIFF.
 
 ### Utilização da API toPS com um JSP ou Servlets {#using-tops-api-with-a-jsp-or-servlets}
 
@@ -129,7 +127,7 @@ String documentPath = "/content/dam/formsanddocuments/ExpenseClaimFlat.pdf";
 %>
 ```
 
-### Utilização do serviço ConvertPDF com fluxos de trabalho de AEM {#using-convertpdf-service-with-aem-workflows}
+### Utilização do serviço ConvertPDF com workflows do AEM {#using-convertpdf-service-with-aem-workflows}
 
 A execução do serviço ConvertPDF a partir de um fluxo de trabalho é semelhante à execução a partir de JSP/Servlet.
 

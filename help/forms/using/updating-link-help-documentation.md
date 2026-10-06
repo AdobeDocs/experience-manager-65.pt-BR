@@ -11,14 +11,12 @@ feature: Adaptive Forms
 role: Admin, User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '141'
+source-wordcount: '142'
 ht-degree: 2%
-
 ---
-
 # Atualização do link para a documentação {#updating-the-link-to-the-documentation}
 
-Você pode acessar o conteúdo de ajuda padrão do espaço de trabalho do AEM Forms selecionando **Ajuda > Ajuda do Workspace**. Ele aponta para a documentação online no site do Adobe. No entanto, você pode atualizá-lo para apontar para qualquer outro URL.
+Você pode acessar o conteúdo de ajuda padrão do espaço de trabalho do AEM Forms selecionando **Ajuda > Ajuda do Workspace**. Ele aponta para a documentação online no site da Adobe. No entanto, você pode atualizá-lo para apontar para qualquer outro URL.
 
 Considere os seguintes casos de uso em que talvez você queira alterar o URL de ajuda padrão:
 

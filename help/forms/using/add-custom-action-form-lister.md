@@ -11,11 +11,9 @@ role: User, Developer
 feature: Adaptive Forms,Foundation Components
 source-git-commit: 8a77756e8ba771c8de9950c2323bef8f23cc59b4
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '265'
 ht-degree: 0%
-
 ---
-
 # Adição de ação personalizada em itens de lista de formulários{#adding-custom-action-on-form-lister-items}
 
 No AEM Forms, você pode criar uma página de portal listando os formulários disponíveis. Por padrão, você pode pesquisar e listar formulários em uma página do portal. É possível abrir formulários para preencher e enviar suas informações. Somente as ações de renderização são fornecidas prontamente para os formulários listados em uma página do portal. Para saber mais sobre as ações disponíveis em uma página de portal, consulte [Criando uma página de portal de formulários](../../forms/using/creating-form-portal-page.md).
@@ -45,7 +43,7 @@ O código necessário para adicionar a ação ao modelo está disponível abaixo
 </div>
 ```
 
-Você pode adicionar ações semelhantes em seu modelo personalizado. Para definir uma função JavaScript, adicione a função em um script de nível de página e vincule-a ao elemento de HTML necessário. No exemplo acima, a expressão `onclick` é a função vinculada.
+Você pode adicionar ações semelhantes em seu modelo personalizado. Para definir uma função JavaScript, adicione a função a um script de nível de página e vincule-a ao elemento de HTML necessário. No exemplo acima, a expressão `onclick` é a função vinculada.
 
 Depois de fazer as edições no template, a página do portal de exemplo contém um botão para enviar o link do formulário por email, conforme mostrado abaixo.
 

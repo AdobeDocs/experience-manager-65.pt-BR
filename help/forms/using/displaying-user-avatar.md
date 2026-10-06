@@ -11,11 +11,9 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '189'
+source-wordcount: '196'
 ht-degree: 0%
-
 ---
-
 # Exibir o avatar do usuário {#displaying-the-user-avatar}
 
 O avatar do usuário conectado é exibido no canto superior direito do espaço de trabalho do AEM Forms. Além disso, os avatares dos subordinados diretos na hierarquia organizacional são exibidos na Exibição do gerente. Você pode configurar o espaço de trabalho do AEM Forms para escolher as imagens de usuário do banco de dados, digamos, servidor LDAP.
