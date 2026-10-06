@@ -10,11 +10,9 @@ feature: Mobile
 role: User
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '1130'
+source-wordcount: '1160'
 ht-degree: 0%
-
 ---
-
 # Criação e adição de modelos e componentes {#creating-and-adding-templates-and-components}
 
 {{ue-over-mobile}}
@@ -35,7 +33,7 @@ Selecionar esse modelo de amostra ao criar um aplicativo fornece um painel avan�
 
 Um modelo de aplicativo é usado para criar um aplicativo e atua como uma coleção de modelos de página e componentes que representam uma linha de base ou base de um aplicativo. O modelo elimina algumas propriedades fundamentais para liderar o aplicativo da maneira apropriada. Em geral, um cliente não criaria muitos aplicativos no total.
 
-Os modelos de aplicativo oferecem uma maneira fácil de usar os designs existentes criados pelos desenvolvedores, usados para a criação de novos aplicativos no AEM.
+Os modelos de aplicativo fornecem uma maneira fácil de usar os designs existentes criados pelos desenvolvedores, usados para a criação de novos aplicativos no AEM.
 
 Ao criar um aplicativo com base no modelo de outro aplicativo, você obterá um aplicativo que tem um ponto de partida representativo do aplicativo no qual ele foi criado.
 
@@ -48,7 +46,7 @@ Depois de criar um aplicativo usando esse modelo, você pode adicionar artigos, 
 
 >[!NOTE]
 >
->Como alternativa, você também pode selecionar um modelo de aplicativo de exemplo, por exemplo, o aplicativo **We.Unlimited**, disponibilizado a você por um desenvolvedor de AEM. Se você usar esse modelo de amostra para o seu aplicativo, obterá alguns artigos e coleções de exemplo para trabalhar. Você terá a opção de usar modelos e componentes de amostra, personalizar os existentes ou criar novos para seu aplicativo.
+>Como alternativa, você também pode selecionar um modelo de aplicativo de exemplo, por exemplo, aplicativo **We.Unlimited**, disponibilizado a você por um desenvolvedor do AEM. Se você usar esse modelo de amostra para o seu aplicativo, obterá alguns artigos e coleções de exemplo para trabalhar. Você terá a opção de usar modelos e componentes de amostra, personalizar os existentes ou criar novos para seu aplicativo.
 
 >[!CAUTION]
 >
@@ -97,15 +95,15 @@ Escolha o &#39;**+**&#39; no painel esquerdo para adicionar componentes ao seu a
 
 ### Criação de modelos prontos para uso {#creating-out-of-the-box-templates}
 
-Não há Modelos de artigo prontos para uso. No entanto, há um modelo padrão que os modelos personalizados devem estender. Consulte a [amostra de modelo de artigo](http://localhost:4502/crx/de/index.jsp#/apps/geometrixx-unlimited-app/templates/article) do Geometrixx Unlimited App.
+Não há Modelos de artigo prontos para uso. No entanto, há um modelo padrão que os modelos personalizados devem estender. Consulte a [amostra de modelo de artigo](http://localhost:4502/crx/de/index.jsp#/apps/geometrixx-unlimited-app/templates/article) do aplicativo Geometrixx Unlimited.
 
-As propriedades principais além das propriedades obrigatórias do modelo AEM normal incluem;
+As propriedades principais além das propriedades obrigatórias do modelo normal do AEM incluem;
 
 ***dps-resourceType=&quot;dps:Article&quot;***
 
 Essa propriedade garante que a página do AEM seja reconhecida como uma página de artigo direcionada da AEM Mobile.
 
-De acordo com os modelos AEM, você pode adicionar propriedades padrão ou nós filhos ao ***jcr:content*** do modelo.
+De acordo com os modelos do AEM, você pode adicionar propriedades padrão ou nós filhos à ***jcr:content*** do modelo.
 
 ### Modelos de banner e coleção {#banner-and-collection-templates}
 
@@ -126,9 +124,9 @@ Um componente simples é incluído no repositório de código, cuja origem pode 
 
 Você pode adicionar componentes à sua página. Qualquer componente pode ser usado em um aplicativo AEM Mobile, mas quando aplicado, pode não ser renderizado corretamente.
 
-No entanto, os componentes personalizados podem não ser exportados e carregados corretamente no AEM Mobile On-demand Services sem um manipulador de sincronização de conteúdo de exportação personalizado que seja renderizado no AEM.
+No entanto, os componentes personalizados podem não ser exportados e carregados corretamente no AEM Mobile On-demand Services sem um manipulador de sincronização de conteúdo de exportação personalizado que é renderizado no AEM.
 
-Depois que o componente já tiver sido incluído em uma página AEM, juntamente com alguns outros componentes do bloco de construção, você poderá adicionar outro componente à página ou editar um existente.
+Depois que o componente já tiver sido incluído em uma página do AEM, juntamente com alguns outros componentes do bloco de construção, você poderá adicionar outro componente à página ou editar um existente.
 
 **Para adicionar outro componente à página:**
 
@@ -146,7 +144,7 @@ Depois que o componente já tiver sido incluído em uma página AEM, juntamente 
 
 >[!NOTE]
 >
->Você pode criar um componente no AEM e personalizar o mesmo usando [Desenvolvimento com CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md). Depois de personalizar o componente existente como seus requisitos, você pode adicioná-lo em sua página usando a opção **Editar** em **Gerenciar artigos**, conforme mostrado na figura acima.
+>Você pode criar um componente no AEM e personalizar o mesmo usando [Desenvolvimento com o CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md). Depois de personalizar o componente existente como seus requisitos, você pode adicioná-lo em sua página usando a opção **Editar** em **Gerenciar artigos**, conforme mostrado na figura acima.
 
 >[!NOTE]
 >

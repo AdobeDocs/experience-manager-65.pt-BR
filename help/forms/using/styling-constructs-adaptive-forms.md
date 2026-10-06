@@ -3,6 +3,7 @@ title: Construtores de estilo para formulários adaptáveis
 description: Use a estrutura LESS para personalizar a aparência de formulários adaptáveis.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
+
 docset: aem65
 feature: Adaptive Forms,Foundation Components
 exl-id: 691608a6-be82-4d81-b876-427de997e5be
@@ -10,14 +11,12 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '2352'
+source-wordcount: '2378'
 ht-degree: 3%
-
 ---
-
 # Construtores de estilo para formulários adaptáveis{#styling-constructs-for-adaptive-forms}
 
-O <span class="preview"> Adobe recomenda o uso de [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adicionar o Forms Adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
+A Adobe <span class="preview"> recomenda usar os [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adicionar o Forms Adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
 
 ## Pré-requisitos {#prerequisites}
 
@@ -25,7 +24,7 @@ Conhecimento de CSS e da estrutura LESS.
 
 ## O que pode ser personalizado {#what-can-be-customized}
 
-O artigo lista classes css de formulários adaptáveis disponíveis publicamente. Você pode usar essas classes para estilizar vários componentes de um formulário adaptável. O estilo dos componentes de criação, como caixas de diálogo e barras de status que exibem avisos, está fora do escopo deste artigo. Use estas construções de estilo para criar estilos (usando CSS ou Menos) somente quando não for possível estilizar componentes usando o [editor de temas](https://helpx.adobe.com/br/experience-manager/6-3/forms/using/themes.html).
+O artigo lista classes css de formulários adaptáveis disponíveis publicamente. Você pode usar essas classes para estilizar vários componentes de um formulário adaptável. O estilo dos componentes de criação, como caixas de diálogo e barras de status que exibem avisos, está fora do escopo deste artigo. Use estas construções de estilo para criar estilos (usando CSS ou Menos) somente quando não for possível estilizar componentes usando o [editor de temas](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html).
 
 ## Personalização de estilos em formulários adaptáveis {#customizing-styles-in-adaptive-forms}
 
@@ -46,10 +45,10 @@ Com base na inicialização, o seguinte conjunto de propriedades CSS define o te
 
 * Cor do plano de fundo
 * Borda (tipo, cor, espessura)
-* Cor da Fonte
+* Cor da fonte
 * Preenchimento
 * Margem
-* Tamanho da Fonte
+* Tamanho da fonte
 * AlturaDaLinha
 
 Atualmente, as variáveis LESS são definidas apenas para essas propriedades dos vários elementos em um formulário adaptável.
@@ -140,7 +139,7 @@ Os campos incluem rótulos, widgets, descrição da Ajuda (descrição longa e c
 
 ## Estilo do rótulo {#label-styling}
 
-O elemento HTML **rótulo** usado para o campo inclui as classes **left** ou **top**, dependendo se o rótulo está na parte superior ou à esquerda.
+O elemento de HTML **label** usado para o campo inclui as classes **left** ou **top**, dependendo se o rótulo está na parte superior ou à esquerda.
 
 <table>
  <tbody>
@@ -184,7 +183,7 @@ As regras de CSS para o rótulo são aplicadas usando o rótulo **guideFieldLabe
 
 ## Estilo dos widgets {#widgets-styling}
 
-Dependendo do tipo, os widgets também incluem classes. Geralmente, os widgets incluem a classe `guideFieldWidget`. Os widgets enviados com o HTML normalmente usam a entrada de elemento de HTML padrão e selecionam. O estilo é feito de acordo. Não é possível estilizar um widget personalizado alterando as variáveis.
+Dependendo do tipo, os widgets também incluem classes. Geralmente, os widgets incluem a classe `guideFieldWidget`. Os widgets enviados com o HTML normalmente usam a entrada de elemento padrão do HTML e selecionam. O estilo é feito de acordo. Não é possível estilizar um widget personalizado alterando as variáveis.
 
 <table>
  <tbody>
@@ -533,7 +532,7 @@ Você pode alterar o tema de cores das linhas de cabeçalho e corpo em uma tabel
  </tbody>
 </table>
 
-## Anexo de arquivo {#file-attachment}
+## Arquivo em anexo {#file-attachment}
 
 O widget Anexo de arquivo de formulários adaptáveis permite fazer upload de arquivos. Você também pode personalizar o widget usando as variáveis.
 
@@ -561,7 +560,7 @@ O widget Anexo de arquivo de formulários adaptáveis permite fazer upload de ar
   </tr>
   <tr>
    <td><p><code>filePreviewIconColor</code></p> </td>
-   <td><p>Cor do ícone de Visualização (ícone Bootstrap) no widget</p> </td>
+   <td><p>Cor do ícone Visualizar (ícone Bootstrap) no widget</p> </td>
   </tr>
   <tr>
    <td><p><code>fileItemCommentHeight</code></p> </td>
@@ -599,7 +598,7 @@ Há quatro tipos de guias do navegador. Isso inclui guias à esquerda, na parte 
  </tbody>
 </table>
 
-O código de HTML a seguir para o elemento tab navigator é (semelhante às guias de inicialização):
+O código HTML a seguir para o elemento do navegador de guias é (semelhante às guias de inicialização ):
 
 `<li>`
 

@@ -11,11 +11,9 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '1857'
-ht-degree: 0%
-
+source-wordcount: '2069'
+ht-degree: 1%
 ---
-
 # Interação programática com fluxos de trabalho{#interacting-with-workflows-programmatically}
 
 Ao [personalizar e estender seus fluxos de trabalho](/help/sites-developing/workflows-customizing-extending.md), você pode acessar objetos de fluxo de trabalho:
@@ -72,7 +70,7 @@ As seguintes ações são compatíveis com a REST API:
 
 >[!NOTE]
 >
->Ao usar o Firebug, uma extensão do Firefox para desenvolvimento na Web, é possível seguir o tráfego HTTP quando o console é operado. Por exemplo, você pode verificar os parâmetros e os valores enviados ao servidor AEM com uma solicitação `POST`.
+>Ao usar o Firebug, uma extensão do Firefox para desenvolvimento na Web, é possível seguir o tráfego HTTP quando o console é operado. Por exemplo, você pode verificar os parâmetros e os valores enviados para o servidor do AEM com uma solicitação `POST`.
 
 Nesta página, presume-se que o AEM seja executado no host local na porta `4502` e que o contexto de instalação seja &quot; `/`&quot; (raiz). Se não for o caso de sua instalação, os URIs, aos quais as solicitações HTTP se aplicam, precisam ser adaptados adequadamente.
 
@@ -131,7 +129,7 @@ Os seguintes métodos de solicitação HTTP se aplicam a:
   </tr>
   <tr>
    <td><code>POST</code></td>
-   <td>Altera o estado da instância. O novo estado é enviado como o parâmetro <code>state</code> e deve ter um dos seguintes valores: <code>RUNNING</code>, <code>SUSPENDED</code> ou <code>ABORTED</code>.<br /> Se o novo estado não estiver acessível (por exemplo, ao suspender uma instância terminada) uma resposta <code>409</code> (<code>CONFLICT</code>) será enviada de volta ao cliente.</td>
+   <td>Altera o estado da instância. O novo estado é enviado como o parâmetro <code>state</code> e deve ter um dos seguintes valores: <code>RUNNING</code>, <code>SUSPENDED</code> ou <code>ABORTED</code>.<br /> Se o novo estado não estiver acessível (por exemplo, ao suspender uma instância finalizada) uma resposta <code>409</code> (<code>CONFLICT</code>) será enviada de volta ao cliente.</td>
   </tr>
  </tbody>
 </table>
@@ -154,7 +152,7 @@ Os seguintes métodos de solicitação HTTP se aplicam a:
   </tr>
   <tr>
    <td><code>POST</code></td>
-   <td>Cria um novo modelo de fluxo de trabalho Se o parâmetro <code>title</code> for enviado, um novo modelo será criado com o título especificado. Anexar uma definição de modelo JSON como parâmetro <code>model</code> cria um novo modelo de fluxo de trabalho de acordo com a definição fornecida.<br /> Uma resposta de <code>201</code> (<code>CREATED</code>) é enviada de volta com um cabeçalho de local contendo a URL do novo recurso de modelo de fluxo de trabalho.<br /> O mesmo acontece quando uma definição de modelo é anexada como um parâmetro de arquivo chamado <code>modelfile</code>.<br /> Em ambos os casos dos parâmetros <code>model</code> e <code>modelfile</code>, um parâmetro adicional chamado <code>type</code> é necessário para definir o formato de serialização. Novos formatos de serialização podem ser integrados usando a API OSGI. Um serializador JSON padrão é fornecido com o mecanismo de fluxo de trabalho. Seu tipo é JSON. Veja abaixo um exemplo do formato.</td>
+   <td>Cria um novo modelo de fluxo de trabalho Se o parâmetro <code>title</code> for enviado, um novo modelo será criado com o título especificado. Anexar uma definição de modelo JSON como parâmetro <code>model</code> cria um novo modelo de fluxo de trabalho de acordo com a definição fornecida.<br /> Uma resposta <code>201</code> (<code>CREATED</code>) é enviada de volta com um cabeçalho de local contendo a URL do novo recurso de modelo de fluxo de trabalho.<br /> O mesmo acontece quando uma definição de modelo é anexada como um parâmetro de arquivo chamado <code>modelfile</code>.<br /> Em ambos os casos dos parâmetros <code>model</code> e <code>modelfile</code>, um parâmetro adicional chamado <code>type</code> é necessário para definir o formato de serialização. Novos formatos de serialização podem ser integrados usando a API OSGI. Um serializador JSON padrão é fornecido com o mecanismo de fluxo de trabalho. Seu tipo é JSON. Veja abaixo um exemplo do formato.</td>
   </tr>
  </tbody>
 </table>
@@ -243,7 +241,7 @@ Onde `*{uri}*` é o caminho para o nó do modelo no repositório.
   </tr>
   <tr>
    <td><code>POST</code></td>
-   <td>Mesmo comportamento com o PUT. Necessário porque os widgets AEM não dão suporte a operações <code>PUT</code>.</td>
+   <td>Mesmo comportamento que com PUT. Necessário porque os widgets do AEM não dão suporte a operações <code>PUT</code>.</td>
   </tr>
   <tr>
    <td><code>DELETE</code></td>
@@ -358,7 +356,7 @@ Os seguintes métodos de solicitação HTTP se aplicam a:
   </tr>
   <tr>
    <td><code>POST</code></td>
-   <td>Conclui o item de trabalho cujo URI é enviado como o parâmetro <code>item</code> e avança a instância de fluxo de trabalho de acordo para os próximos nós, que são definidos pelo parâmetro <code>route</code> ou <code>backroute</code> se houver um retrocesso de uma etapa.<br /> Se o parâmetro <code>delegatee</code> for enviado, o item de trabalho identificado pelo parâmetro <code>item</code> será delegado ao participante especificado.</td>
+   <td>Conclui o item de trabalho cujo URI é enviado como o parâmetro <code>item</code> e avança a instância de fluxo de trabalho correspondente para os próximos nós, que são definidos pelo parâmetro <code>route</code> ou <code>backroute</code> se houver um retrocesso de etapa.<br /> Se o parâmetro <code>delegatee</code> for enviado, o item de trabalho identificado pelo parâmetro <code>item</code> será delegado ao participante especificado.</td>
   </tr>
  </tbody>
 </table>
@@ -409,8 +407,8 @@ Para alterar o **Título do Fluxo de Trabalho** exibido na guia **Instâncias** 
 
 * com os seguintes parâmetros:
 
-   * `action`: seu valor deve ser: `UPDATE`
-   * `workflowTitle`: o título do fluxo de trabalho
+  * `action`: seu valor deve ser: `UPDATE`
+  * `workflowTitle`: o título do fluxo de trabalho
 
 #### Como alterar o título do fluxo de trabalho - REST usando curl {#how-to-change-the-workflow-title-rest-using-curl}
 
@@ -491,8 +489,8 @@ Ao criar um modelo:
 
 * O editor de modelo de fluxo de trabalho exige que os modelos usem uma estrutura de nó específica abaixo de `/var/workflow/models`. O nó pai do modelo deve ser do tipo `cq:Page` com um nó `jcr:content` com os seguintes valores de propriedade:
 
-   * `sling:resourceType`: `cq/workflow/components/pages/model`
-   * `cq:template`: `/libs/cq/workflow/templates/model`
+  * `sling:resourceType`: `cq/workflow/components/pages/model`
+  * `cq:template`: `/libs/cq/workflow/templates/model`
 
   Ao criar um modelo, você deve primeiro criar este nó `cq:Page` e usar seu nó `jcr:content` como o pai do nó do modelo.
 

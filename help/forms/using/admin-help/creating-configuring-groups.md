@@ -11,11 +11,9 @@ role: User, Developer
 feature: Adaptive Forms
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '1585'
+source-wordcount: '1590'
 ht-degree: 0%
-
 ---
-
 # Criação e configuração de grupos{#creating-and-configuring-groups}
 
 >[!NOTE]
@@ -26,7 +24,7 @@ A criação de grupos de usuários permite atribuir funções ao grupo em vez de
 
 Dois tipos diferentes de grupos estão disponíveis. Você pode criar um grupo manualmente e adicionar usuários e outros grupos a ele. Você também pode criar grupos dinâmicos que incluam automaticamente todos os usuários que atendam a um conjunto específico de regras.
 
-Os usuários podem enfrentar um tempo de resposta mais lento se pertencerem a muitos grupos (por exemplo, 500 ou mais) ou se os grupos estiverem aninhados profundamente (por exemplo, 30 níveis). Se você estiver com esse problema, poderá configurar formulários AEM para pré-buscar informações de determinados domínios. (Consulte [Configurar formulários AEM para buscar previamente informações de domínio](/help/forms/using/admin-help/configure-aem-forms-prefetch-domain.md#configure-aem-forms-to-prefetch-domain-information).)
+Os usuários podem enfrentar um tempo de resposta mais lento se pertencerem a muitos grupos (por exemplo, 500 ou mais) ou se os grupos estiverem aninhados profundamente (por exemplo, 30 níveis). Se você estiver com esse problema, poderá configurar o AEM Forms para buscar previamente informações de determinados domínios. (Consulte [Configurar formulários do AEM para realizar uma busca prévia por informações de domínio](/help/forms/using/admin-help/configure-aem-forms-prefetch-domain.md#configure-aem-forms-to-prefetch-domain-information).)
 
 ## Criar um grupo manualmente {#create-a-group-manually}
 
@@ -66,7 +64,7 @@ Em um grupo dinâmico, você não seleciona individualmente os usuários que per
 
 Use uma destas duas maneiras para criar grupos dinâmicos:
 
-* Ative a criação automática de grupos dinâmicos com base em domínios de email, como @adobe.com. Quando você habilita esse recurso, o Gerenciamento de usuários cria um grupo dinâmico para cada domínio de email exclusivo no banco de dados de formulários AEM. Use uma expressão cron para especificar a frequência com que o Gerenciamento de usuários pesquisa novos domínios de email no banco de dados de formulários AEM. Esses grupos dinâmicos são adicionados ao domínio local DefaultDom e são nomeados como &quot;Todos os usuários com uma ID de e-mail *`[email domain]`*&quot;.
+* Ative a criação automática de grupos dinâmicos com base em domínios de email, como @adobe.com. Quando você habilita esse recurso, o Gerenciamento de usuários cria um grupo dinâmico para cada domínio de email exclusivo no banco de dados de formulários do AEM. Use uma expressão cron para especificar a frequência com que o Gerenciamento de usuários pesquisa novos domínios de email no banco de dados de formulários do AEM. Esses grupos dinâmicos são adicionados ao domínio local DefaultDom e são nomeados como &quot;Todos os usuários com uma ID de e-mail *`[email domain]`*&quot;.
 * Crie um grupo dinâmico com base em critérios especificados, incluindo o domínio de email, a descrição, o nome canônico e o nome de domínio do usuário. Para pertencer ao grupo dinâmico, um usuário deve atender a todos os critérios especificados. Para configurar uma condição &quot;ou&quot;, crie dois grupos dinâmicos separados e adicione-os a um grupo local. Por exemplo, use essa abordagem para criar um grupo de usuários que pertencem ao domínio de email @adobe.com ou cujo nome canônico contém ou=adobe.com. No entanto, os usuários não precisam necessariamente atender a ambas as condições.
 
 Um grupo dinâmico contém apenas usuários. Ela não pode conter outros grupos. No entanto, um grupo dinâmico pode pertencer a um grupo principal.

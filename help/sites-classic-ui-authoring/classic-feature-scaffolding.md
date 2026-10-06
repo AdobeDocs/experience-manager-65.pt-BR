@@ -14,9 +14,7 @@ source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '1418'
 ht-degree: 0%
-
 ---
-
 # Andaime{#scaffolding}
 
 Às vezes, pode ser necessário criar um grande conjunto de páginas que compartilham estrutura, mas têm conteúdo diferente. Por meio da interface padrão do Adobe Experience Manager (AEM), seria necessário criar cada página, arrastar os componentes apropriados para a página e preencher cada um deles individualmente.

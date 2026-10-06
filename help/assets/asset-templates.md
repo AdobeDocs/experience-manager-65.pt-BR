@@ -1,6 +1,6 @@
 ---
 title: Modelos de ativos
-description: Saiba mais sobre os modelos de ativos no [!DNL Adobe Experience Manager Assets]  e como usá-los para criar materiais de suporte de marketing.
+description: Saiba mais sobre os modelos de ativos no [!DNL Adobe Experience Manager Assets] e como usá-los para criar materiais de suporte de marketing.
 contentOwner: AG
 role: User
 feature: Asset Management,Developer Tools
@@ -8,11 +8,9 @@ exl-id: 12c92aad-3a1d-486e-a830-31de2fc6d07b
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 0b90fdd13efc5408ef94ee1966f04a80810b515e
 workflow-type: tm+mt
-source-wordcount: '1558'
+source-wordcount: '1572'
 ht-degree: 0%
-
 ---
-
 # Modelos de ativos {#asset-templates}
 
 Os modelos de ativos são uma classe especial de ativos que facilitam a redefinição rápida de objetivos de conteúdo visualmente avançado para mídia digital e impressa. Um modelo de ativo inclui duas partes, a seção de mensagens fixas e a seção editável. A seção de mensagem fixa pode conter conteúdo proprietário, como logotipo da marca e informações de copyright que estão desativadas para edição. A seção editável pode conter conteúdo visual e textual em campos que podem ser editados para personalizar as mensagens.
@@ -124,7 +122,7 @@ Você pode editar um material de apoio imediatamente após criá-lo. Como altern
    >
    >Para habilitar [!DNL Experience Manager] para resolver imagens, faça o seguinte:
    >
-   >* Inserir imagens ao criar modelos [!DNL InDesign] (Consulte [Sobre links e elementos gráficos inseridos](https://helpx.adobe.com/br/indesign/using/graphics-links.html)).
+   >* Inserir imagens ao criar modelos [!DNL InDesign] (Consulte [Sobre links e elementos gráficos inseridos](https://helpx.adobe.com/indesign/using/graphics-links.html)).
    >* Monte o [!DNL Experience Manager] no seu sistema de arquivos local e mapeie os ícones ausentes com os ativos existentes no [!DNL Experience Manager].
    >
 

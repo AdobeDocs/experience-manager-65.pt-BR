@@ -1,6 +1,6 @@
 ---
-title: Registro de ponto de extremidade Java&trade; API QuickStart(SOAP)
-description: Saiba como adicionar endpoints como EJB, SOAP, Pasta monitorada, endpoint de email e endpoint de comunicação remota e editar, remover e recuperar endpoints usando Java&trade; API.
+title: Registro de ponto de extremidade Java&trade; API QuickStart (SOAP)
+description: Saiba como adicionar endpoints como EJB, SOAP, Pasta monitorada, endpoint de email e endpoint de comunicação remota e editar, remover e recuperar endpoints usando a API Java&trade;.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -8,41 +8,40 @@ topic-tags: develop
 role: Developer
 exl-id: 985a6fc5-6675-4c25-80e4-34dcb658de72
 solution: Experience Manager, Experience Manager Forms
+
 feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: '562'
 ht-degree: 0%
-
 ---
-
 # Início rápido da API Java™ do Endpoint Registry (SOAP) {#endpoint-registry-java-api-quickstart-soap}
 
-O Java™ API Quick Start(SOAP) está disponível para o Registro de endpoint.
+O Java™ API Quick Start (SOAP) está disponível para o Registro de endpoint.
 
-[QuickStart: Adicionando um endpoint de EJB usando o Java](endpoint-registry-java-api-quick.md#quickstart-adding-an-ejb-endpoint-using-the-java-api)
+[QuickStart: adicionando um endpoint EJB usando a API Java™](endpoint-registry-java-api-quick.md#quickstart-adding-an-ejb-endpoint-using-the-java-api)
 
-[QuickStart: adicionando um terminal SOAP usando o Java](endpoint-registry-java-api-quick.md#quickstart-adding-a-soap-endpoint-using-the-java-api)
+[QuickStart: adicionando um terminal SOAP usando a API Java™](endpoint-registry-java-api-quick.md#quickstart-adding-a-soap-endpoint-using-the-java-api)
 
-[QuickStart: adicionando um endpoint de pasta monitorada usando o Java](endpoint-registry-java-api-quick.md#quickstart-adding-a-watched-folder-endpoint-using-the-java-api)
+[QuickStart: adicionando um endpoint de pasta monitorada usando a API Java™](endpoint-registry-java-api-quick.md#quickstart-adding-a-watched-folder-endpoint-using-the-java-api)
 
-[QuickStart: adicionando um endpoint de email usando o Java](endpoint-registry-java-api-quick.md#quickstart-adding-an-email-endpoint-using-the-java-api)
+[QuickStart: adicionando um endpoint de email usando a API Java™](endpoint-registry-java-api-quick.md#quickstart-adding-an-email-endpoint-using-the-java-api)
 
-[QuickStart: adicionando um endpoint de comunicação remota usando o Java](endpoint-registry-java-api-quick.md#quickstart-adding-a-remoting-endpoint-using-the-java-api)
+[QuickStart: adicionando um endpoint de comunicação remota usando a API Java™](endpoint-registry-java-api-quick.md#quickstart-adding-a-remoting-endpoint-using-the-java-api)
 
-[QuickStart: adicionando um endpoint TaskManager usando o Java](endpoint-registry-java-api-quick.md#quickstart-adding-a-taskmanager-endpoint-using-the-java-api)
+[QuickStart: adicionando um endpoint TaskManager usando a API Java™](endpoint-registry-java-api-quick.md#quickstart-adding-a-taskmanager-endpoint-using-the-java-api)
 
-[QuickStart: modificando um endpoint usando o Java](endpoint-registry-java-api-quick.md#quickstart-modifying-an-endpoint-using-the-java-api)
+[QuickStart: modificando um endpoint usando a API Java™](endpoint-registry-java-api-quick.md#quickstart-modifying-an-endpoint-using-the-java-api)
 
-[QuickStart: removendo um endpoint usando o Java](endpoint-registry-java-api-quick.md#quickstart-removing-an-endpoint-using-the-java-api)
+[QuickStart: removendo um endpoint usando a API Java™](endpoint-registry-java-api-quick.md#quickstart-removing-an-endpoint-using-the-java-api)
 
-[QuickStart: recuperando informações do conector de ponto de extremidade usando o Java](endpoint-registry-java-api-quick.md#quickstart-retrieving-endpoint-connector-information-using-the-java-api)
+[QuickStart: recuperando informações do conector de ponto de extremidade usando a API Java™](endpoint-registry-java-api-quick.md#quickstart-retrieving-endpoint-connector-information-using-the-java-api)
 
 As operações do AEM Forms podem ser executadas usando a API altamente tipada do AEM Forms e o modo de conexão deve ser definido como SOAP.
 
 >[!NOTE]
 >
->Os Quick Starts na programação com formulários AEM são baseados no Forms se você estiver usando outro sistema operacional, como o UNIX®, substitua caminhos específicos do Windows por caminhos compatíveis com o sistema operacional aplicável. Da mesma forma, se estiver usando outro servidor de aplicações J2EE, certifique-se de especificar propriedades de conexão válidas. Consulte [Definindo propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Os Quick Starts na programação com o AEM Forms são baseados no Forms se você estiver usando outro sistema operacional, como o UNIX®, substitua caminhos específicos do Windows por caminhos compatíveis com o sistema operacional aplicável. Da mesma forma, se estiver usando outro servidor de aplicações J2EE, certifique-se de especificar propriedades de conexão válidas. Consulte [Definindo propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 >[!NOTE]
 >
@@ -149,7 +148,7 @@ O exemplo de código Java™ a seguir adiciona um ponto de extremidade EJB a um 
 
 ## QuickStart: adicionando um terminal SOAP usando a API Java™ {#quickstart-adding-a-soap-endpoint-using-the-java-api}
 
-O exemplo de código Java™ a seguir adiciona um terminal SOAP a um serviço chamado *MyApplication/EncryptDocument*. (Consulte [Adicionar Pontos De Extremidade SOAP](/help/forms/developing/programmatically-endpoints.md#adding-soap-endpoints).)
+O exemplo de código Java™ a seguir adiciona um terminal SOAP a um serviço chamado *MyApplication/EncryptDocument*. (Consulte [Adicionando Pontos De Extremidade Do SOAP](/help/forms/developing/programmatically-endpoints.md#adding-soap-endpoints).)
 
 ```java
  /*

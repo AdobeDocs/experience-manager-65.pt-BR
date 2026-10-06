@@ -1,21 +1,24 @@
 ---
 title: Preparando o AEM Forms para backup
+
 description: Saiba como usar o serviço de Backup e restauração para entrar e sair do modo de Backup do servidor do AEM Forms usando a API do Java e a API do serviço da Web.
+
+
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
+
 role: Developer
 exl-id: aeab003d-ba64-4760-9c56-44638501e9ff
 solution: Experience Manager, Experience Manager Forms
+
 feature: Adaptive Forms,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '2484'
+source-wordcount: '2536'
 ht-degree: 0%
-
 ---
-
 # Preparando o AEM Forms para backup {#preparing-aem-forms-for-backup}
 
 **Exemplos e exemplos neste documento são somente para AEM Forms no ambiente JEE.**
@@ -24,7 +27,7 @@ ht-degree: 0%
 
 O serviço de Backup e Restauração permite colocar o AEM Forms no *modo de backup*, que permite a execução de backups dinâmicos. O serviço de Backup e Restauração não executa realmente um backup do AEM Forms ou restaura o sistema. Em vez disso, ele coloca o servidor em um estado para backups consistentes e confiáveis, permitindo que ele continue a ser executado. Você é responsável pelas ações de backup do Armazenamento Global de Documentos (GDS) e do banco de dados conectado ao Servidor do Forms. O GDS é um diretório usado para armazenar arquivos usados em um processo de longa vida.
 
-O modo de backup é um estado que o servidor insere para que os arquivos no GDS não sejam removidos enquanto um procedimento de backup estiver ocorrendo. Em vez disso, os subdiretórios são criados no diretório GDS para manter um registro de arquivos a serem removidos após o término do modo de backup salvo. Um arquivo é destinado a sobreviver às reinicializações do sistema e pode se estender por dias ou até anos. Esses arquivos são uma parte essencial do estado geral do servidor do Forms e podem incluir arquivos PDF, políticas ou modelos de formulário. Se algum desses arquivos for perdido ou for corrompido, os processos no servidor do Forms podem se tornar instáveis e os dados podem ser perdidos.
+O modo de backup é um estado que o servidor insere para que os arquivos no GDS não sejam removidos enquanto um procedimento de backup estiver ocorrendo. Em vez disso, os subdiretórios são criados no diretório GDS para manter um registro de arquivos a serem removidos após o término do modo de backup salvo. Um arquivo é destinado a sobreviver às reinicializações do sistema e pode se estender por dias ou até anos. Esses arquivos são uma parte essencial do estado geral do Forms Server e podem incluir arquivos PDF, políticas ou modelos de formulário. Se algum desses arquivos for perdido ou for corrompido, os processos no servidor do Forms podem se tornar instáveis e os dados podem ser perdidos.
 
 Você pode optar por executar backups de snapshot, nos quais você normalmente entraria no modo de backup por um período e deixaria o modo de backup após concluir suas atividades de backup. É necessário sair do modo de backup para que os arquivos possam ser removidos do GDS, a fim de garantir que eles não cresçam desnecessariamente grandes. Você pode deixar o modo de backup explicitamente ou aguardar o tempo para expirar em uma sessão do modo de backup.
 
@@ -141,7 +144,7 @@ Entre no modo de backup usando a API de serviço de backup e restauração:
 
 1. Executar o backup do GDS e do banco de dados
 
-   Faça backup do GDS (Global Document Storage, armazenamento global de documentos) e do banco de dados ao qual o servidor Forms está conectado. As ações para executar o backup não fazem parte do SDK da AEM Forms e podem até incluir etapas manuais específicas para os procedimentos de backup em sua organização.
+   Faça backup do GDS (Global Document Storage, armazenamento global de documentos) e do banco de dados ao qual o servidor Forms está conectado. As ações para executar o backup não fazem parte do AEM Forms SDK e podem até incluir etapas manuais específicas para os procedimentos de backup em sua organização.
 
 ### Entre no modo de backup usando a API do serviço Web {#enter-backup-mode-using-the-web-service-api}
 
@@ -176,7 +179,7 @@ Entre no modo de backup usando o serviço Web fornecido pela API do Serviço de 
 
 1. Executar o backup do GDS e do banco de dados
 
-   Faça backup do GDS (Global Document Storage, armazenamento global de documentos) e do banco de dados ao qual o servidor Forms está conectado. As ações para executar o backup não fazem parte do SDK da AEM Forms e podem até incluir etapas manuais específicas para os procedimentos de backup em sua organização.
+   Faça backup do GDS (Global Document Storage, armazenamento global de documentos) e do banco de dados ao qual o servidor Forms está conectado. As ações para executar o backup não fazem parte do AEM Forms SDK e podem até incluir etapas manuais específicas para os procedimentos de backup em sua organização.
 
 ## Saindo do modo de backup no servidor do Forms {#leaving-backup-mode-on-the-forms-server}
 

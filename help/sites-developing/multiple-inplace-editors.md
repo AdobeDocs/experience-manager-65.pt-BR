@@ -8,11 +8,9 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '467'
 ht-degree: 0%
-
 ---
-
 # Configurar vários editores no local {#configure-multiple-in-place-editors}
 
 Você pode configurar o Editor de Rich Text no Adobe Experience Manager para que ele tenha vários editores no local. Quando configurado, é possível selecionar o conteúdo apropriado e abrir o editor apropriado.

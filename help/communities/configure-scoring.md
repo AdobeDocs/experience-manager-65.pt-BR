@@ -12,11 +12,9 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '932'
-ht-degree: 0%
-
+source-wordcount: '1011'
+ht-degree: 6%
 ---
-
 # Fundamentos de pontuação e medalhas {#scoring-and-badges-essentials}
 
 O recurso de pontuação e medalhas do AEM Communities identifica e recompensa os membros da comunidade.
@@ -106,15 +104,15 @@ Para ver entradas de log:
 
 * No console da Web
 
-   * No menu **Status**
-   * Selecionar **Arquivos de Log**
-   * Procure pelo seu nome de Arquivo de Log, como `scoring-debug`
+  * No menu **Status**
+  * Selecionar **Arquivos de Log**
+  * Procure pelo seu nome de Arquivo de Log, como `scoring-debug`
 
 * No disco local do servidor
 
-   * O arquivo de log está em &lt;*server-install-dir*>/crx-quickstart/logs/&lt;*log-file-name*>.log
+  * O arquivo de log está em &lt;*server-install-dir*>/crx-quickstart/logs/&lt;*log-file-name*>.log
 
-   * Por exemplo, `.../crx-quickstart/logs/scoring-debug.log`
+  * Por exemplo, `.../crx-quickstart/logs/scoring-debug.log`
 
 ![log-pontuação](assets/scoring-log.png)
 
@@ -122,7 +120,7 @@ Para ver entradas de log:
 
 É possível exibir o UGC relacionado à pontuação e ao badging quando o SRP escolhido for JSRP ou MSRP, mas não ASRP. (Se não estiver familiarizado com esses termos, consulte [Armazenamento do Conteúdo da Comunidade](/help/communities/working-with-srp.md) e [Visão Geral do Provedor de Recursos de Armazenamento](/help/communities/srp.md).)
 
-As descrições para acessar dados de pontuação e badging usam JSRP, pois o UGC é facilmente acessível usando [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
+As descrições para acessar dados de pontuação e emblemas usam JSRP, pois o UGC é facilmente acessível usando o [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
 
 **JSRP no autor**: experimentar no ambiente do autor resulta em uma UGC que só é visível do ambiente do autor.
 
@@ -134,8 +132,8 @@ O local base do UGC no JSRP é `/content/usergenerated/asi/jcr/`.
 
 As seguintes APIs estão disponíveis para uso:
 
-* [com.adobe.cq.social.scoring.api na versão 6.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=pt-BR)
-* [com.adobe.cq.social.badging.api na versão 6.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=pt-BR)
+* [com.adobe.cq.social.scoring.api no 6.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=pt-BR)
+* [com.adobe.cq.social.badging.api no 6.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=pt-BR)
 
 Os Javadocs mais recentes para o pacote de recursos instalado estão disponíveis para desenvolvedores no repositório do Adobe. Consulte [Uso do Maven para comunidades: Javadocs](/help/communities/maven.md#javadocs).
 
@@ -143,9 +141,9 @@ Os Javadocs mais recentes para o pacote de recursos instalado estão disponívei
 
 ### Exemplo de configuração {#example-setup}
 
-As capturas de tela dos dados do repositório vêm da configuração de pontuação e badging para um fórum em dois sites AEM diferentes:
+As capturas de tela dos dados do repositório vêm da configuração de pontuação e emblemas para um fórum em dois sites diferentes do AEM:
 
-1. Um site AEM *com* uma ID exclusiva (site da comunidade criado com o assistente):
+1. Um site do AEM *com* uma ID exclusiva (site da comunidade criado usando o assistente):
 
    * Usando o site Tutorial da Introdução (engajamento) criado durante o [tutorial da introdução](/help/communities/getting-started.md)
    * Localize o nó da página do fórum
@@ -175,7 +173,7 @@ As capturas de tela dos dados do repositório vêm da configuração de pontuaç
 
    * Um usuário se conecta, cria um tópico do fórum e recebe um selo bronze
 
-1. Um site AEM *sem* uma ID exclusiva:
+1. Um site do AEM *sem* uma ID exclusiva:
 
    * Usando o [guia de Componentes da Comunidade](/help/communities/components-guide.md)
    * Localize o nó da página do fórum
@@ -226,7 +224,7 @@ As capturas de tela dos dados do repositório vêm da configuração de pontuaç
 >  /libs/settings/community/scoring/rules/site1/forums-scoring
 >  /libs/settings/community/scoring/rules/site2/forums-scoring
 >
->* Criação de imagens exclusivas de crachás para diferentes sites de AEM
+>* Criação de imagens de selo exclusivas para diferentes sites do AEM
 
 ### UGC de pontuação de acesso {#access-scoring-ugc}
 

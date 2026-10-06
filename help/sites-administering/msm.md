@@ -1,5 +1,5 @@
 ---
-title: 'Reutilizar conteúdo: gerenciador de vários sites e Live Copy'
+title: 'Reutilizar conteúdo: Gerenciador multisite e Live Copy'
 description: Saiba mais sobre como reutilizar conteúdo com as Live Copies e o Gerenciador de vários sites.
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,24 +11,22 @@ feature: Multi Site Manager
 role: Admin
 source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
 workflow-type: tm+mt
-source-wordcount: '2665'
-ht-degree: 19%
-
+source-wordcount: '2681'
+ht-degree: 20%
 ---
-
-# Reutilizar conteúdo: gerenciador de vários sites e Live Copy{#reusing-content-multi-site-manager-and-live-copy}
+# Reutilizar conteúdo: Gerenciador multisite e Live Copy{#reusing-content-multi-site-manager-and-live-copy}
 
 O Gerenciador de vários sites (MSM) permite que você use o mesmo conteúdo de site em vários locais. O MSM usa a funcionalidade de Live Copy para fazer isso:
 
 * Com o MSM é possível:
 
-   * Criar um conteúdo uma vez e
-   * Copiar este conteúdo e reutilizá-lo em outras áreas ([live copies](#live-copies)) do mesmo site ou de outros sites.
+  * Criar um conteúdo uma vez e
+  * Copiar este conteúdo e reutilizá-lo em outras áreas ([live copies](#live-copies)) do mesmo site ou de outros sites.
 
 * O MSM mantém os relacionamentos (dinâmicos) entre o conteúdo original e as live copies, de modo que:
 
-   * Quando você altera o conteúdo original, o original e as live copies são sincronizadas (para aplicar essas alterações às live copies também).
-   * Você pode ajustar o conteúdo das live copies desconectando o relacionamento dinâmico de subpáginas individuais, componentes ou ambos. Ao fazer isso, as alterações na origem não são mais aplicadas à live copy.
+  * Quando você altera o conteúdo original, o original e as live copies são sincronizadas (para aplicar essas alterações às live copies também).
+  * Você pode ajustar o conteúdo das live copies desconectando o relacionamento dinâmico de subpáginas individuais, componentes ou ambos. Ao fazer isso, as alterações na origem não são mais aplicadas à live copy.
 
 Esta e as seguintes páginas abordam os problemas relacionados:
 
@@ -124,33 +122,33 @@ O MSM é diretamente acessível por meio da interface usando várias opções do
 
 * **Criar Site** (**Sites**)
 
-   * O MSM ajuda você a gerenciar vários sites que compartilham conteúdo em comum. Por exemplo, sites geralmente são fornecidos para públicos internacionais, de modo que a maior parte do conteúdo é comum em todos os países, com um subconjunto de conteúdo específico para cada país individual. O MSM permite [criar live copies que atualizam automaticamente um ou mais sites com base no seu site de origem](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration). Isso também ajuda a impor uma estrutura básica comum, usar o conteúdo em comum nos vários sites, manter uma aparência comum e concentrar os esforços no gerenciamento do conteúdo que realmente difere entre os sites.
-   * Ela requer uma configuração de blueprint predefinida para especificar a origem.
-   * Cria uma live copy da origem (predefinida).
-   * Ele fornece ao usuário o botão **Implantação**.
+  * O MSM ajuda você a gerenciar vários sites que compartilham conteúdo em comum. Por exemplo, sites geralmente são fornecidos para públicos internacionais, de modo que a maior parte do conteúdo é comum em todos os países, com um subconjunto de conteúdo específico para cada país individual. O MSM permite [criar live copies que atualizam automaticamente um ou mais sites com base no seu site de origem](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration). Isso também ajuda a impor uma estrutura básica comum, usar o conteúdo em comum nos vários sites, manter uma aparência comum e concentrar os esforços no gerenciamento do conteúdo que realmente difere entre os sites.
+  * Ela requer uma configuração de blueprint predefinida para especificar a origem.
+  * Cria uma live copy da origem (predefinida).
+  * Ele fornece ao usuário o botão **Implantação**.
 
 * **Criar Live Copy** (**Sites**)
 
-   * O MSM permite [criar uma live copy ad-hoc (única) de uma página individual ou subramificação de um site](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page); por exemplo, duplicar uma subramificação para fornecer informações sobre uma versão nova/atualizada de um produto.
-   * Cria uma Live Copy ad-hoc (nenhuma configuração do blueprint é necessária).
-   * Ele pode ser usado para criar (imediatamente) uma live copy de qualquer página/ramificação.
-   * Requer **sincronização** (não fornece o botão **Implantação**).
+  * O MSM permite [criar uma live copy ad-hoc (única) de uma página individual ou subramificação de um site](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page); por exemplo, duplicar uma subramificação para fornecer informações sobre uma versão nova/atualizada de um produto.
+  * Cria uma Live Copy ad-hoc (nenhuma configuração do blueprint é necessária).
+  * Ele pode ser usado para criar (imediatamente) uma live copy de qualquer página/ramificação.
+  * Requer **sincronização** (não fornece o botão **Implantação**).
 
 * **Visualizar propriedades** (**Sites**)
 
-   * Quando apropriado, esta opção ajuda você a [monitorar sua live copy](/help/sites-administering/msm-livecopy.md#monitoring-your-live-copy), fornecendo informações sobre o **Live Copy** y ou o **Blueprint** relacionados.
+  * Quando apropriado, esta opção ajuda você a [monitorar sua live copy](/help/sites-administering/msm-livecopy.md#monitoring-your-live-copy), fornecendo informações sobre o **Live Copy** y ou o **Blueprint** relacionados.
 
 * **Referências** (**Sites**)
 
-   * O painel [Referências](/help/sites-authoring/basic-handling.md#references) fornece informações sobre **Live Copies**, juntamente com o acesso às ações adequadas.
+  * O painel [Referências](/help/sites-authoring/basic-handling.md#references) fornece informações sobre **Live Copies**, juntamente com o acesso às ações adequadas.
 
 * **Visão geral da Live Copy** (**Sites**)
 
-   * Este console permite que você [exiba e gerencie seu blueprint e suas live copies](/help/sites-administering/msm-livecopy-overview.md).
+  * Este console permite que você [exiba e gerencie seu blueprint e suas live copies](/help/sites-administering/msm-livecopy-overview.md).
 
 * **Blueprints** (**Ferramentas** - **Sites**)
 
-   * Este console permite [criar e gerenciar as configurações do blueprint](/help/sites-administering/msm-livecopy.md#creating-a-blueprint-configuration).
+  * Este console permite [criar e gerenciar as configurações do blueprint](/help/sites-administering/msm-livecopy.md#creating-a-blueprint-configuration).
 
 >[!NOTE]
 >
@@ -208,7 +206,7 @@ Como introdução, a tabela a seguir fornece uma visão geral dos principais ter
   </tr>
   <tr>
    <td><strong>Implantação</strong><br /> </td>
-   <td>Sincroniza desde o original até a live copy.<br /> Pode ser acionado por um autor (em uma página de blueprint) ou por um evento do sistema (conforme definido pela configuração de implantação).</td>
+   <td>Sincroniza desde a origem até a live copy.<br /> Ela pode ser acionada por um autor (em uma página do blueprint) ou por um evento do sistema (conforme definido pela configuração de implantação).</td>
    <td> </td>
   </tr>
   <tr>
@@ -270,8 +268,8 @@ Uma live copy do MSM é uma cópia do conteúdo específico do site para o qual 
 * A sincronização executa a transferência real do conteúdo quando alterações são feitas no conteúdo original.
 * Uma live copy pode ser considerada como:
 
-   * Superficial: uma página única
-   * Profunda: a página, junto com suas páginas secundárias
+  * Superficial: uma página única
+  * Profunda: a página, junto com suas páginas filhas
 
 * Regras de sincronização - chamadas de configurações de implantação - determinam quais propriedades são sincronizadas e quando a sincronização ocorre.
 
@@ -301,8 +299,8 @@ A forma básica da live copy tem:
 * Uma definição de configuração.
 * Um relacionamento dinâmico definido para cada recurso:
 
-   * Vincular o recurso de live copy ao seu blueprint/origem.
-   * Usado ao realizar a herança e a implantação.
+  * Vincular o recurso de live copy ao seu blueprint/origem.
+  * Usado ao realizar a herança e a implantação.
 
 * As alterações podem ser [sincronizadas](/help/sites-administering/msm-livecopy.md#synchronizing-your-live-copy) de acordo com os requisitos.
 
@@ -310,7 +308,7 @@ A forma básica da live copy tem:
 
 #### Live Copy com páginas que não são da Live Copy {#live-copy-with-non-live-copy-pages}
 
-Ao criar uma live copy no AEM, você pode ver e navegar pela ramificação da live copy — e usar a funcionalidade normal do AEM na ramificação da live copy. Isso significa que você (ou um processo) pode criar recursos (páginas, parágrafos ou ambos) dentro da ramificação da live copy. Por exemplo, `myCanadaOnlyProduct`.
+Ao criar uma live copy no AEM, você pode visualizar e navegar pela ramificação da live copy - e usar a funcionalidade normal do AEM na ramificação da live copy. Isso significa que você (ou um processo) pode criar recursos (páginas, parágrafos ou ambos) dentro da ramificação da live copy. Por exemplo, `myCanadaOnlyProduct`.
 
 * Esses recursos não têm um relacionamento dinâmico com as páginas de origem/blueprints e não são sincronizados.
 * Podem ocorrer cenários que o MSM trata como casos especiais. Por exemplo, quando você (ou um processo) cria uma página com a mesma posição e nome nas ramificações da origem/blueprint e da live copy. Para essas situações, consulte [Conflitos de implantação do MSM](/help/sites-administering/msm-rollout-conflicts.md) para obter mais informações.

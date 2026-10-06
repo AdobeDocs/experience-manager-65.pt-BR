@@ -1,10 +1,13 @@
 ---
-title: Início Rápido do Application Manager Service JavaAPI (SOAP)
-description: Início Rápido do Application Manager Service JavaAPI (SOAP)
+title: Início Rápido da API Java do Application Manager Service (SOAP)
+
+description: Início Rápido da API Java do Application Manager Service (SOAP)
+
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
+
 role: Developer
 exl-id: 1d2d6d64-f16e-4381-8691-f3c2744481ea
 solution: Experience Manager, Experience Manager Forms
@@ -13,12 +16,10 @@ source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '200'
 ht-degree: 0%
-
 ---
+# Início Rápido da API Java do Application Manager Service (SOAP) {#application-manager-service-javaapi-quick-start-soap}
 
-# SOAP (JavaAPI Quick Start, Início Rápido da API Java) do Application Manager Service {#application-manager-service-javaapi-quick-start-soap}
-
-O Java API Quick Start(SOAP) está disponível para o serviço Application Manager.
+O Java API Quick Start (SOAP) está disponível para o serviço Application Manager.
 
 [Início rápido: implantação de aplicativos usando a API Java (SOAP)](application-manager-service-java-api.md#quick-start-soap-mode-deploying-applications-using-the-java-api)
 
@@ -26,13 +27,13 @@ O Java API Quick Start(SOAP) está disponível para o serviço Application Manag
 
 >[!NOTE]
 >
->As APIs do gerenciador de aplicativos são compatíveis apenas com arquivos AEM Forms LCA. Ele não suporta arquivos LCA do LiveCycle ES2 e ES4.
+>As APIs do gerenciador de aplicativos são compatíveis apenas com arquivos AEM Forms LCA. Ele não é compatível com arquivos LCA do LiveCycle ES2 e ES4.
 
 As operações do AEM Forms podem ser executadas usando a API altamente tipada do AEM Forms e o modo de conexão deve ser definido como SOAP.
 
 >[!NOTE]
 >
->O Quick Start do Java API(SOAP) na programação com formulários AEM é baseado no Forms se você estiver usando outro sistema operacional, como o Unix, substituir caminhos específicos do Windows por caminhos compatíveis com o sistema operacional aplicável. Da mesma forma, se estiver usando outro servidor de aplicações J2EE, certifique-se de especificar propriedades de conexão válidas. Consulte [Definindo propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>O Java API(SOAP) Quick Start na programação com formulários do AEM é baseado no Forms se você estiver usando outro sistema operacional, como o Unix, substituir caminhos específicos do Windows por caminhos compatíveis com o sistema operacional aplicável. Da mesma forma, se estiver usando outro servidor de aplicações J2EE, certifique-se de especificar propriedades de conexão válidas. Consulte [Definindo propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Início rápido (modo SOAP): implantação de aplicativos usando a API Java {#quick-start-soap-mode-deploying-applications-using-the-java-api}
 

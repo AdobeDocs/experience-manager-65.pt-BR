@@ -12,11 +12,9 @@ feature: Communities
 role: Developer
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '260'
+source-wordcount: '285'
 ht-degree: 0%
-
 ---
-
 # Alterar a aparência (HBS) {#alter-the-appearance-hbs}
 
 Agora que os componentes do sistema de comentários personalizado no diretório de aplicativos (/apps) estão em vigor, com um resourceSuperType fazendo referência ao sistema de comentários padrão e o Modelo/Exibição personalizado registrado, você pode editar a implementação.
@@ -29,27 +27,27 @@ Para uma demonstração simples, um recurso visual, o avatar mostrado do usuári
 
 ## Modificar os scripts HBS {#modify-the-hbs-scripts}
 
-Usando [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
+Usando o [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
 
 * Abrir [/apps/custom/components/comments/comment/**comment.hbs**](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comment/comment.hbs)
 
-   * Comente a tag que inclui o avatar em uma postagem de comentário (~ linha 21):
+  * Comente a tag que inclui o avatar em uma postagem de comentário (~ linha 21):
 
-     ```
-       <!--
-        <<img class="scf-comment-avatar {{#if topLevel}}withTopLevel{{/if}}" src="{{author.avatarUrl}}"></img>
-        -->
-     ```
+    ```
+      <!--
+       <<img class="scf-comment-avatar {{#if topLevel}}withTopLevel{{/if}}" src="{{author.avatarUrl}}"></img>
+       -->
+    ```
 
 * Abrir [/apps/custom/components/comments/**comments.hbs**](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comments.hbs)
 
-   * Comente a tag que inclui o avatar na próxima entrada de comentário (~ linha 44):
+  * Comente a tag que inclui o avatar na próxima entrada de comentário (~ linha 44):
 
-     ```
-       <!--
-        <img class="scf-composer-avatar" src="{{loggedInUser.avatarUrl}}"></img>
-        -->
-     ```
+    ```
+      <!--
+       <img class="scf-composer-avatar" src="{{loggedInUser.avatarUrl}}"></img>
+       -->
+    ```
 
 * Selecione **Salvar tudo**
 
@@ -61,11 +59,11 @@ Uma maneira de fazer isso é:
 
 * No menu principal
 
-   * Selecione **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > **[!UICONTROL Replicação]**.
-   * Selecione **[!UICONTROL Ativar árvore]**.
-   * Defina `Start Path` como `/apps/custom`.
-   * Desmarque **[!UICONTROL Somente modificados]**.
-   * Selecione o botão **[!UICONTROL Ativar]**.
+  * Selecione **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > **[!UICONTROL Replicação]**.
+  * Selecione **[!UICONTROL Ativar árvore]**.
+  * Defina `Start Path` como `/apps/custom`.
+  * Desmarque **[!UICONTROL Somente modificados]**.
+  * Selecione o botão **[!UICONTROL Ativar]**.
 
 ### Exibir comentário modificado na página de exemplo publicada {#view-modified-comment-on-published-sample-page}
 

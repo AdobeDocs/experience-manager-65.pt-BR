@@ -1,6 +1,6 @@
 ---
-title: Converter serviço PDF Java&trade; API QuickStart (SOAP)
-description: Saiba como o Serviço de conversão de PDF converte documentos de PDF para arquivos PostScript ou de imagem (JPEG, JPEG 2000, PNG e TIFF).
+title: Converter Java&trade; API QuickStart do serviço do PDF (SOAP)
+description: Saiba como o serviço Converter PDF converte documentos do PDF em arquivos PostScript ou de imagem (JPEG, JPEG 2000, PNG e TIFF).
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -8,31 +8,30 @@ topic-tags: develop
 role: Developer
 exl-id: 8974c468-ff2b-431d-96fb-e987698619bc
 solution: Experience Manager, Experience Manager Forms
+
 feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '265'
 ht-degree: 0%
-
 ---
-
-# Converter início rápido da API Java™ do serviço de PDF (SOAP) {#convert-pdf-service-java-api-quickstart-soap}
+# Converter início rápido da API Java™ do serviço PDF (SOAP) {#convert-pdf-service-java-api-quickstart-soap}
 
 Os seguintes Quick Starts estão disponíveis para a API de serviço Converter PDF.
 
-[Início rápido (modo SOAP): conversão de um documento PDF em PostScript usando o Java](convert-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-postscript-using-the-java-api)
+[Início rápido (modo SOAP): conversão de um documento PDF em PostScript usando a API Java™](convert-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-postscript-using-the-java-api)
 
-[Início rápido (modo SOAP): conversão de um documento PDF em arquivos JPEG usando o Java](convert-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-jpeg-files-using-the-java-api)
+[Início rápido (modo SOAP): conversão de um documento PDF em arquivos JPEG usando a API Java™](convert-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-jpeg-files-using-the-java-api)
 
 As operações do AEM Forms podem ser executadas usando a API altamente tipada do AEM Forms e o modo de conexão deve ser definido como SOAP.
 
 >[!NOTE]
 >
->Os Quick Starts na programação com formulários AEM são baseados no Forms Server sendo implantado no JBoss® Application Server e no sistema operacional Microsoft® Windows. No entanto, se você estiver usando outro sistema operacional, como o UNIX®, substitua caminhos específicos do Windows por caminhos compatíveis com o sistema operacional aplicável. Da mesma forma, se estiver usando outro servidor de aplicações J2EE, certifique-se de especificar propriedades de conexão válidas. Consulte [Definindo propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
+>Os Quick Starts na programação com formulários AEM são baseados no Forms Server que está sendo implantado no JBoss® Application Server e no sistema operacional Microsoft® Windows. No entanto, se você estiver usando outro sistema operacional, como o UNIX®, substitua caminhos específicos do Windows por caminhos compatíveis com o sistema operacional aplicável. Da mesma forma, se estiver usando outro servidor de aplicações J2EE, certifique-se de especificar propriedades de conexão válidas. Consulte [Definindo propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
 ## Início rápido (modo SOAP): conversão de um documento PDF em PostScript usando a API Java™ {#quick-start-soap-mode-converting-a-pdf-document-to-postscript-using-the-java-api}
 
-O exemplo de código a seguir converte um documento PDF chamado *Loan.pdf* em um documento PostScript chamado *Loan.ps*. (Consulte [Convertendo documentos PDF em PostScript](/help/forms/developing/converting-pdf-postscript-image-files.md#converting-pdf-documents-to-postscript).)
+O exemplo de código a seguir converte um documento do PDF chamado *Loan.pdf* em um documento do PostScript chamado *Loan.ps*. (Consulte [Convertendo documentos do PDF em PostScript](/help/forms/developing/converting-pdf-postscript-image-files.md#converting-pdf-documents-to-postscript).)
 
 ```java
  /*
