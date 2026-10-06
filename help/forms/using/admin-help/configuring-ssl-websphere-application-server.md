@@ -11,11 +11,9 @@ feature: Document Security
 role: User, Developer
 source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
-source-wordcount: '1220'
+source-wordcount: '1237'
 ht-degree: 0%
-
 ---
-
 # Configuração do SSL para o WebSphere Application Server {#configuring-ssl-for-websphere-application-server}
 
 Esta seção inclui as seguintes etapas para configurar o SSL com seu IBM WebSphere Application Server.
@@ -30,20 +28,20 @@ Para habilitar o SSL, o WebSphere precisa acessar uma conta de usuário no regis
 ### Criar um usuário Linux ou UNIX para o WebSphere {#create-a-linux-or-unix-user-for-websphere}
 
 1. Faça logon como o usuário raiz.
-1. Criar um usuário inserindo o seguinte comando em um prompt de comando:
+1. Crie um usuário digitando o seguinte comando em um prompt de comando:
 
    * (Linux e Sun Solaris) `useradd`
    * (IBM AIX) `mkuser`
 
-1. Defina o senha do novo usuário inserindo no prompt de `passwd` comando.
-1. (Linux e Solaris) Criar um arquivo de senha sombra inserindo `pwconv` (sem parâmetros) no prompt de comando.
+1. Defina a senha do novo usuário digitando `passwd` no prompt de comando.
+1. (Linux e Solaris) Crie um arquivo de senha de sombra digitando `pwconv` (sem parâmetros) no prompt de comando.
 
    >[!NOTE]
    >
-   >(Linux e Solaris) Para que o registro de segurança do sistema operacional local do WebSphere Application Server funcione, um arquivo de senha sombra deve existir. O arquivo de senha sombra geralmente é nomeado **/etc/shadow** e é baseado no arquivo /etc/passwd. Se a sombra senha arquivo não existir, ocorrerá um erro após ativar a segurança global e configurar o registro de usuário como sistema operacional local.
+   >(Linux e Solaris) Para que o registro de segurança do SO local do WebSphere Application Server funcione, um arquivo de senha de sombra deve existir. O arquivo de senhas de sombra geralmente é denominado **/etc/shadow** e é baseado no arquivo /etc/passwd. Se o arquivo de senhas ocultas não existir, ocorrerá um erro depois de ativar a segurança global e configurar o registro do usuário como SO local.
 
-1. Abra o arquivo de grupo do diretório /etc em um editor de texto.
-1. Adicione a usuário criada na etapa 2 à `root` grupo.
+1. Abra o arquivo de grupo no diretório /etc em um editor de texto.
+1. Adicione o usuário criado na etapa 2 ao grupo `root`.
 1. Salvar e fechar o arquivo.
 1. (UNIX com SSL ativado) Inicie e interrompa o WebSphere como o usuário raiz.
 
@@ -105,19 +103,19 @@ Truststores e keystores podem ser criados usando o utilitário ikeyman ou o Admi
 1. Clique em **Certificado Pessoal**.
 1. Se você tiver adicionado um armazenamento de chaves já criado usando ikeyman, seu certificado será exibido. Caso contrário, você precisará adicionar um novo certificado autoassinado executando as seguintes etapas:
 
-   1. Selecione **Criar > certificado** autoassinado.
-   1. Especifique os valores apropriados no formulário de certificado. Certifique-se de manter o Alias e o nome comum como nome de domínio totalmente qualificado da máquina.
+   1. Selecione **Criar > Certificado autoassinado**.
+   1. Especifique os valores apropriados no formulário de certificado. Certifique-se de manter Alias e nome comum como o nome de domínio totalmente qualificado da máquina.
    1. Clique em **Aplicar**.
 
-1. Repita as etapas de 2 a 10 para criar um truststore.
+1. Repita as etapas de 2 a 10 para criar uma truststore.
 
-## Aplicar armazenamento de chaves personalizado e armazenamento confiável no servidor {#apply-custom-keystore-and-truststore-to-the-server}
+## Aplicar keystore personalizado e truststore ao servidor {#apply-custom-keystore-and-truststore-to-the-server}
 
-1. No Console Administrativo do WebSphere, selecione **Segurança > certificado SSL e gerenciamento** de chaves.
-1. Clique **em Gerenciar configuração** de segurança de endpoint. O mapa de topologia local é aberto.
-1. Em Entrada, selecione o filho direto dos nós.
-1. Em itens relacionados, selecione **as configurações** de SSL.
-1. Selecione **NodeafultSSLSetting**.
+1. No Console Administrativo do WebSphere, selecione **Segurança > Gerenciamento de chaves e certificados SSL**.
+1. Clique em **Gerenciar configuração de segurança do ponto de extremidade**. O mapa de topologia local é aberto.
+1. Em Entrada, selecione filho direto dos nós.
+1. Em Itens relacionados, selecione **configurações de SSL**.
+1. Selecione **NodeDefaultSSLSetting**.
 1. Nas listas suspensas nome da truststore e nome da keystore, selecione a truststore e a keystore personalizadas que você criou.
 1. Clique em **Aplicar**.
 1. Salve a configuração principal.
@@ -125,7 +123,7 @@ Truststores e keystores podem ser criados usando o utilitário ikeyman ou o Admi
 
    Seu perfil agora é executado nas configurações personalizadas de SSL e em seu certificado.
 
-## Habilitação de suporte para nativos de formulários AEM {#enabling-support-for-aem-forms-natives}
+## Habilitação de suporte para nativos de formulários do AEM {#enabling-support-for-aem-forms-natives}
 
 1. No Console Administrativo do WebSphere, selecione **Segurança > Segurança Global**.
 1. Na seção Autenticação, expanda **segurança RMI/IIOP** e clique em **comunicações de entrada CSIv2**.

@@ -1,30 +1,33 @@
 ---
-title: Gerar QuickStart(SOAP) da API Java do serviço de PDF
-description: Use o serviço Gerar PDF para converter um documento do Microsoft Word em um documento PDF, converter o conteúdo HTML em um documento PDF, converter um documento PDF em um arquivo RTF usando a API Java.
+title: Gerar o QuickStart da API Java do serviço do PDF (SOAP)
+
+description: Use o serviço Gerar PDF para converter um documento do Microsoft Word em um documento do PDF, converter o conteúdo do HTML em um documento do PDF, converter um documento do PDF em um arquivo RTF usando a API Java.
+
+
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
+
 role: Developer
 exl-id: b856a93b-91fa-47a5-9e46-6a537218fd4e
 solution: Experience Manager, Experience Manager Forms
+
 feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '322'
+source-wordcount: '325'
 ht-degree: 0%
-
 ---
+# Gerar o início rápido da API Java do serviço do PDF (SOAP) {#generate-pdf-service-java-api-quickstart-soap}
 
-# Gerar o início rápido da API Java do serviço PDF (SOAP) {#generate-pdf-service-java-api-quickstart-soap}
-
-O Java API Quick Start(SOAP) está disponível para o serviço Generate PDF.
+O Java API Quick Start (SOAP) está disponível para o serviço Gerar PDF.
 
 [Início rápido (modo SOAP): conversão de um documento do Microsoft Word em um documento PDF usando a API Java](generate-pdf-service-java-api.md#quick-start-soap-mode-converting-a-microsoft-word-document-to-a-pdf-document-using-the-java-api)
 
-[Início rápido (modo SOAP): conversão do conteúdo HTML para um documento PDF usando a API Java](generate-pdf-service-java-api.md#quick-start-soap-mode-converting-html-content-to-a-pdf-document-using-the-java-api)
+[Início rápido (modo SOAP): conversão de conteúdo HTML em um documento PDF usando a API Java](generate-pdf-service-java-api.md#quick-start-soap-mode-converting-html-content-to-a-pdf-document-using-the-java-api)
 
-[Início rápido (modo SOAP): conversão de um documento PDF em um arquivo RTF usando a API do Java (modo SOAP)](generate-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-an-rtf-file-using-the-java-api-soap-mode)
+[Início rápido (modo SOAP): conversão de um documento PDF em um arquivo RTF usando a API Java (modo SOAP)](generate-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-an-rtf-file-using-the-java-api-soap-mode)
 
 As operações do AEM Forms podem ser executadas usando a API altamente tipada do AEM Forms e o modo de conexão deve ser definido como SOAP.
 
@@ -34,7 +37,7 @@ As operações do AEM Forms podem ser executadas usando a API altamente tipada d
 
 ## Início rápido (modo SOAP): conversão de um documento do Microsoft Word em um documento PDF usando a API Java {#quick-start-soap-mode-converting-a-microsoft-word-document-to-a-pdf-document-using-the-java-api}
 
-O exemplo de código a seguir converte um arquivo do Word denominado *Loan.doc* em um documento do PDF denominado *Loan.pdf*. (Consulte [Convertendo documentos do Word em documentos do PDF](/help/forms/developing/converting-file-formats-pdf.md#converting-word-documents-to-pdf-documents).)
+O exemplo de código a seguir converte um arquivo do Word chamado *Loan.doc* em um documento do PDF chamado *Loan.pdf*. (Consulte [Convertendo documentos do Word em documentos do PDF](/help/forms/developing/converting-file-formats-pdf.md#converting-word-documents-to-pdf-documents).)
 
 ```java
  /*
@@ -146,9 +149,9 @@ O exemplo de código a seguir converte um arquivo do Word denominado *Loan.doc* 
  }
 ```
 
-## Início rápido (modo SOAP): conversão do conteúdo HTML para um documento PDF usando a API Java {#quick-start-soap-mode-converting-html-content-to-a-pdf-document-using-the-java-api}
+## Início rápido (modo SOAP): conversão de conteúdo HTML em um documento PDF usando a API Java {#quick-start-soap-mode-converting-html-content-to-a-pdf-document-using-the-java-api}
 
-O exemplo de código Java a seguir converte o conteúdo de HTML localizado em https://www.adobe.com em um documento PDF chamado *AdobeHTML.pdf*. (Consulte [Conversão de documentos HTML em documentos PDF](/help/forms/developing/converting-file-formats-pdf.md#converting-html-documents-to-pdf-documents).)
+O exemplo de código Java a seguir converte o conteúdo do HTML localizado em https://www.adobe.com em um documento PDF chamado *AdobeHTML.pdf*. (Consulte [Conversão de Documentos do HTML em Documentos do PDF](/help/forms/developing/converting-file-formats-pdf.md#converting-html-documents-to-pdf-documents).)
 
 ```java
  /*
@@ -252,9 +255,9 @@ O exemplo de código Java a seguir converte o conteúdo de HTML localizado em ht
  }
 ```
 
-## Início rápido (modo SOAP): conversão de um documento PDF em um arquivo RTF usando a API do Java (modo SOAP) {#quick-start-soap-mode-converting-a-pdf-document-to-an-rtf-file-using-the-java-api-soap-mode}
+## Início rápido (modo SOAP): conversão de um documento PDF em um arquivo RTF usando a API Java (modo SOAP) {#quick-start-soap-mode-converting-a-pdf-document-to-an-rtf-file-using-the-java-api-soap-mode}
 
-O exemplo de código a seguir converte um documento PDF chamado *Loan.pdf* em um documento RTF chamado *Loan.rtf*. (Consulte [Conversão de Documentos PDF em Formatos Sem Imagem](/help/forms/developing/converting-file-formats-pdf.md#converting-pdf-documents-to-non-image-formats).)
+O exemplo de código a seguir converte um documento do PDF chamado *Loan.pdf* em um documento RTF chamado *Loan.rtf*. (Consulte [Conversão de Documentos PDF em Formatos que Não São de Imagem](/help/forms/developing/converting-file-formats-pdf.md#converting-pdf-documents-to-non-image-formats).)
 
 ```java
  /*

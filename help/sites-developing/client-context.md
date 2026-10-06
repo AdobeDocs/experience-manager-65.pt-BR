@@ -12,11 +12,9 @@ solution: Experience Manager, Experience Manager Sites
 role: Developer
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '2969'
+source-wordcount: '3030'
 ht-degree: 0%
-
 ---
-
 # Contexto do cliente em detalhes{#client-context-in-detail}
 
 >[!NOTE]
@@ -186,19 +184,19 @@ Crie um componente de armazenamento de contexto para renderizar os dados do arma
 
 #### Extensão dos componentes fornecidos do armazenamento de contexto {#extending-the-provided-context-store-components}
 
-O AEM fornece os componentes de armazenamento genérico e de armazenamento de contexto genérico das propriedades que você pode estender. A estrutura dos dados de armazenamento determina o componente que você estende:
+O AEM fornece os componentes de armazenamento de contexto genérico e genericstoreproperties que você pode estender. A estrutura dos dados de armazenamento determina o componente que você estende:
 
 * Pares de valor de propriedade: estenda o componente `GenericStoreProperties`. Esse componente renderiza automaticamente armazenamentos de pares de valores da propriedade. Vários pontos de interação são fornecidos:
 
-   * `prolog.jsp` e `epilog.jsp`: interação de componente que permite adicionar lógica do lado do servidor antes ou depois da renderização do componente.
+  * `prolog.jsp` e `epilog.jsp`: interação de componente que permite adicionar lógica do lado do servidor antes ou depois da renderização do componente.
 
 * Dados complexos: estenda o componente `GenericStore`. Seu armazenamento de sessão precisa de um método &quot;renderizador&quot; que é chamado sempre que o componente deve ser renderizado. A função do renderizador é chamada com dois parâmetros:
 
-   * `@param {String} store`
-O armazenamento a ser renderizado
+  * `@param {String} store`
+    O armazenamento a ser renderizado
 
-   * `@param {String} divId`
-Id da div na qual o armazenamento deve ser renderizado.
+  * `@param {String} divId`
+    Id da div na qual o armazenamento deve ser renderizado.
 
 >[!NOTE]
 >
@@ -208,7 +206,7 @@ Id da div na qual o armazenamento deve ser renderizado.
 
 Ao editar o Contexto do cliente, os componentes do armazenamento de contexto aparecem no Sidekick. Como em todos os componentes, as propriedades `componentGroup` e `jcr:title` do componente de contexto de cliente determinam o grupo e o nome do componente.
 
-Todos os componentes que têm um valor de propriedade `componentGroup` igual a `Client Context` aparecem em Sidekick por padrão. Se você usar um valor diferente para a propriedade `componentGroup`, deverá adicionar manualmente o componente ao Sidekick usando o modo Design.
+Por padrão, todos os componentes com um valor de propriedade `componentGroup` igual a `Client Context` são exibidos no Sidekick. Se você usar um valor diferente para a propriedade `componentGroup`, deverá adicionar manualmente o componente ao Sidekick usando o modo Design.
 
 #### Instâncias do componente de armazenamento de contexto {#context-store-component-instances}
 
@@ -262,7 +260,7 @@ O atributo `propertyName` é o nome da propriedade de armazenamento a ser exibid
 <personalization:storePropertyTag propertyName="authorizableId" store="profile"/>
 ```
 
-#### Estrutura HTML {#html-structure}
+#### Estrutura do HTML {#html-structure}
 
 A pasta da biblioteca do cliente personalization.ui (/etc/clientlibs/foundation/personalization/ui/themes/default) fornece os estilos CSS que o Contexto do Cliente usa para formatar o código HTML. O código a seguir ilustra a estrutura sugerida para usar na exibição de dados de armazenamento:
 
@@ -302,7 +300,7 @@ O componente de repositório de contexto `/libs/cq/personalization/components/co
 
 Para renderizar dados de armazenamento usando um componente de armazenamento genérico, faça o seguinte:
 
-* Adicione a tag personalization:storeRendererTag ao script JSP do componente para identificar o nome do armazenamento da sessão.
+* Adicione a marca de personalização :storeRendererTag ao script JSP do componente para identificar o nome do armazenamento da sessão.
 * Implemente um método de renderizador na classe de armazenamento de sessão.
 
 #### Identificação do armazenamento de sessão genericstore {#identifying-the-genericstore-session-store}
@@ -563,7 +561,7 @@ Adicione o código ao arquivo JSP do componente geográfico para renderizar os d
 ![chlimage_1-6](assets/chlimage_1-6.png)
 
 1. No CRXDE Lite, abra o arquivo `/apps/myapp/contextstores/geoloc/geoloc.jsp`.
-1. Adicione o seguinte código de HTML abaixo do código de stub:
+1. Adicione o seguinte código HTML abaixo do código stub:
 
    ```xml
    <%@taglib prefix="personalization" uri="https://www.day.com/taglibs/cq/personalization/1.0" %>
@@ -607,7 +605,7 @@ Adicione o componente de Armazenamento de localização ao Contexto do cliente p
 
 Abra a página inicial do Geometrixx Outdoors no modo de edição e abra o Contexto do cliente para ver os dados do componente Loja de localização.
 
-1. Abra a página em inglês do site Geometrixx Outdoors. ([https://localhost:4502/content/geometrixx-outdoors/en.html](https://localhost:4502/content/geometrixx-outdoors/en.html))
+1. Abra a página em inglês do site do Geometrixx Outdoors. ([https://localhost:4502/content/geometrixx-outdoors/en.html](https://localhost:4502/content/geometrixx-outdoors/en.html))
 1. Para abrir o Client Context, pressione Ctrl-Alt-c (windows) ou control-option-c (Mac).
 
 ## Criação de um Contexto de cliente personalizado {#creating-a-customized-client-context}
@@ -618,11 +616,11 @@ Para criar um segundo contexto de cliente, duplique a ramificação:
 
 * A subpasta:
   `/content`
-contém o conteúdo do contexto de cliente personalizado.
+  contém o conteúdo do contexto de cliente personalizado.
 
 * A pasta:
   `/contextstores`
-permite definir configurações diferentes para os armazenamentos de contexto.
+  permite definir configurações diferentes para os armazenamentos de contexto.
 
 Para usar o contexto de cliente personalizado, edite a propriedade
 `path`

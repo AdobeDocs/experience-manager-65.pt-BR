@@ -1,6 +1,6 @@
 ---
 title: Painéis
-description: Saiba como criar, configurar e desenvolver novos painéis de AEM.
+description: Saiba como criar, configurar e desenvolver novos painéis do AEM.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
@@ -11,18 +11,16 @@ feature: Administering
 role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '832'
-ht-degree: 3%
-
+source-wordcount: '834'
+ht-degree: 2%
 ---
-
 # Painéis{#dashboards}
 
-Ao usar o AEM, é possível gerenciar vários conteúdos de diferentes tipos (por exemplo, páginas, ativos). Os painéis de AEM fornecem uma maneira fácil de usar e personalizável de definir páginas que exibem dados consolidados.
+Ao usar o AEM, é possível gerenciar vários conteúdos de diferentes tipos (por exemplo, páginas, ativos). Os painéis do AEM fornecem uma maneira fácil de usar e personalizável de definir páginas que exibem dados consolidados.
 
 >[!NOTE]
 >
->Painéis AEM são criados com base no usuário, de modo que um usuário só pode acessar seu próprio painel.
+>Os Painéis do AEM são criados com base no usuário, de modo que um usuário só pode acessar seu próprio painel.
 >
 >No entanto, [Modelos de painel](#creating-a-dashboard-template) podem ser usados para compartilhar configurações e layouts de painel comuns.
 
@@ -40,7 +38,7 @@ Ao usar o AEM, é possível gerenciar vários conteúdos de diferentes tipos (po
 
 ### Clonagem De Um Painel {#cloning-a-dashboard}
 
-Talvez você queira ter vários painéis para ver rapidamente as informações sobre seu conteúdo de diferentes visualizações. Para ajudá-lo a criar um novo Painel de Controle, o AEM fornece um recurso de clone que você pode usar para duplicar um Painel de Controle existente. Para clonar um painel, proceda da seguinte maneira:
+Talvez você queira ter vários painéis para ver rapidamente as informações sobre seu conteúdo de diferentes visualizações. Para ajudá-lo a criar um novo Painel, o AEM fornece um recurso de clone que você pode usar para duplicar um Painel existente. Para clonar um painel, proceda da seguinte maneira:
 
 1. Na seção **Ferramentas**, clique em **Console de Configuração**.
 
@@ -66,11 +64,11 @@ Talvez você queira ter vários painéis para ver rapidamente as informações s
 
 ### Visão geral {#overview}
 
-Os componentes do painel são nada mais do que [componentes do AEM](/help/sites-developing/developing-components-samples.md) comuns. Esta seção descreve os componentes de relatórios enviados com o AEM.
+Os componentes do painel são nada mais do que [componentes comuns do AEM](/help/sites-developing/developing-components-samples.md). Esta seção descreve os componentes de relatórios fornecidos com o AEM.
 
 ### Componentes de relatórios do Web Analytics {#web-analytics-reporting-components}
 
-O AEM é fornecido com um conjunto de componentes que renderizam várias métricas dos dados do [SiteCatalyst](/help/sites-administering/adobeanalytics.md). Esses componentes estão listados no Sidekick na seção **Dashboard**.
+O AEM é fornecido com um conjunto de componentes que renderizam várias métricas dos dados do [SiteCatalyst](/help/sites-administering/adobeanalytics.md). Esses componentes estão listados na Sidekick na seção **Painel**.
 
 Cada componente de relatório fornece pelo menos três guias:
 
@@ -173,7 +171,7 @@ Os modelos de painel são criados como outros modelos de página, exceto que sã
 
 ### Desenvolver um componente do painel {#developing-a-dashboard-component}
 
-O desenvolvimento de um componente do Painel consiste na criação de um componente AEM comum. Esta seção descreve um exemplo de um componente que exibe os 10 principais colaboradores.
+O desenvolvimento de um componente do Painel consiste na criação de um componente comum do AEM. Esta seção descreve um exemplo de um componente que exibe os 10 principais colaboradores.
 
 ![chlimage_1-31](assets/chlimage_1-31a.png)
 

@@ -6,11 +6,9 @@ role: User, Developer, Admin
 exl-id: bcd6e9cf-b33b-4468-8b99-0da196f65eaa
 source-git-commit: 94a9f4087e36bfe5701ad9aafd4e8446ca643ddf
 workflow-type: tm+mt
-source-wordcount: '202'
+source-wordcount: '222'
 ht-degree: 1%
-
 ---
-
 # Comparar Forms adaptável {#compare-two-forms}
 
 <!--
@@ -23,7 +21,7 @@ O recurso Comparar nos Componentes principais do Forms adaptável ajuda os autor
 
 ## Pré-requisitos {#prerequisite-versioning}
 
-Para usar o recurso Comparar em um Formulário Adaptável baseado em Componentes Principais, verifique se os [Componentes Principais do Formulário Adaptável](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components) estão habilitados em seu ambiente de Forms AEM 6.5.
+Para usar o recurso Comparar em um Formulário Adaptável baseado em Componentes Principais, verifique se os [Componentes Principais do Formulário Adaptável](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components) estão habilitados em seu ambiente do AEM 6.5 Forms.
 
 ## Comparar formulários adaptáveis distintos {#compare-af-65}
 

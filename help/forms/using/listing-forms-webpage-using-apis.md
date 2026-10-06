@@ -10,16 +10,14 @@ feature: Forms Portal
 role: Admin, User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '692'
+source-wordcount: '693'
 ht-degree: 1%
-
 ---
-
 # Listagem de formulários em uma página da Web usando APIs {#listing-forms-on-a-web-page-using-apis}
 
 O AEM Forms fornece uma API de pesquisa baseada em REST que os desenvolvedores da Web podem usar para consultar e recuperar um conjunto de formulários que atenda aos critérios de pesquisa. Você pode usar APIs para pesquisar formulários com base em vários filtros. O objeto de resposta contém atributos de formulário, propriedades e pontos de extremidade de renderização de formulários.
 
-Para pesquisar formulários usando a API REST, envie uma solicitação GET ao servidor em `https://'[server]:[port]'/libs/fd/fm/content/manage.json` com os parâmetros de consulta descritos abaixo.
+Para pesquisar formulários usando a API REST, envie uma solicitação GET para o servidor em `https://'[server]:[port]'/libs/fd/fm/content/manage.json` com os parâmetros de consulta descritos abaixo.
 
 ## Parâmetros de consulta {#query-parameters}
 

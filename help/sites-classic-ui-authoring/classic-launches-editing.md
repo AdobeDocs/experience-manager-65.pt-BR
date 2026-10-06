@@ -12,11 +12,9 @@ feature: Authoring
 role: User
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '281'
+source-wordcount: '293'
 ht-degree: 7%
-
 ---
-
 # Edição de inicializações{#editing-launches}
 
 ## Editar páginas de lançamento {#editing-launch-pages}
@@ -45,9 +43,9 @@ Depois de criar um lançamento, é possível alterar o nome do lançamento e a d
 
    * Na guia **Geral**, você pode editar:
 
-      * **Título**
-      * **Data de ativação**: é equivalente à data de lançamento
-      * **Pronto para produção**
+     * **Título**
+     * **Data de ativação**: é equivalente à data de lançamento
+     * **Pronto para produção**
 
      Consulte [Inicializações - a Ordem dos Eventos](/help/sites-authoring/launches.md#launches-the-order-of-events) para obter informações sobre a finalidade e interação desses campos.
 
@@ -57,7 +55,7 @@ Depois de criar um lançamento, é possível alterar o nome do lançamento e a d
 
 ## Descobrir o status de lançamento de uma página {#discovering-the-launch-status-of-a-page}
 
-Quando você está editando um lançamento de uma página, as informações sobre o lançamento aparecem na parte inferior da guia **Controle de versão** do Sidekick:
+Quando você está editando uma inicialização de uma página, as informações sobre a inicialização aparecem na parte inferior da guia **Versionamento** do Sidekick:
 
 * O nome da inicialização.
 * O tempo desde a última alteração.

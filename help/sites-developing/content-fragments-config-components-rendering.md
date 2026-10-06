@@ -1,9 +1,13 @@
 ---
 title: Fragmentos de conteúdo configuram componentes para renderização
+
 description: Fragmentos de conteúdo configuram componentes para renderização
+
+
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
+
 docset: aem65
 exl-id: 9ef9ae75-cd8c-4adb-9bcb-e951d200d492
 solution: Experience Manager, Experience Manager Sites
@@ -11,11 +15,9 @@ feature: Content Fragments
 role: Developer
 source-git-commit: 2e141ab04be33fea09ed7f6608dc9dcfaf2e50f1
 workflow-type: tm+mt
-source-wordcount: '463'
-ht-degree: 6%
-
+source-wordcount: '475'
+ht-degree: 5%
 ---
-
 # Fragmentos de conteúdo configuram componentes para renderização{#content-fragments-configuring-components-for-rendering}
 
 Há vários [serviços avançados](/help/sites-developing/content-fragments-config-components-rendering.md#definition-of-advanced-services-that-need-configuration) relacionados à renderização de fragmentos de conteúdo. Para usar esses serviços, os tipos de recursos desses componentes devem se tornar conhecidos pela estrutura de fragmentos de conteúdo.
@@ -132,7 +134,7 @@ Para algumas funcionalidades (por exemplo, para renderizar apenas um intervalo d
 
 ## Exemplo {#example}
 
-Como exemplo, consulte o seguinte (em uma instância de AEM pronta para uso):
+Como exemplo, consulte o seguinte (em uma instância do AEM pronta para uso):
 
 ```
 /apps/core/wcm/config/com.adobe.cq.dam.cfm.impl.component.ComponentConfigImpl-core-comp-v1.config

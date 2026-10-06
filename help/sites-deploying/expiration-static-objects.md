@@ -11,11 +11,9 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '416'
+source-wordcount: '422'
 ht-degree: 0%
-
 ---
-
 # Expiração de objetos estáticos{#expiration-of-static-objects}
 
 Os objetos estáticos (por exemplo, ícones) não são alterados. Portanto, o sistema deve ser configurado de modo que não expire (por um período de tempo razoável) e, assim, reduza o tráfego desnecessário.
@@ -55,7 +53,7 @@ Todos os arquivos, que não são dinâmicos e que não mudam com o tempo, podem 
 
    Outras seções do site não devem ser armazenadas em cache em uma instância de autor, pois estão sujeitas a alterações a qualquer momento.
 
-1. **Para uma instância do Publish:**
+1. **Para uma instância de publicação:**
 
    ```xml
    LoadModule expires_module modules/mod_expires.so
@@ -75,7 +73,7 @@ Todos os arquivos, que não são dinâmicos e que não mudam com o tempo, podem 
 
    Isso permite que o cache intermediário (por exemplo, o cache do navegador) armazene arquivos CSS, JavaScript, PNG e GIF por até um dia nos caches do cliente. Embora este exemplo ilustre as configurações globais para tudo abaixo de `/content` e `/etc/designs`, você deve torná-lo mais granular.
 
-   Dependendo da frequência com que seu site é atualizado, você também pode considerar o armazenamento em cache de páginas de HTML. Um período de tempo razoável seria de uma hora:
+   Dependendo da frequência com que seu site é atualizado, você também pode considerar o armazenamento em cache de páginas do HTML. Um período de tempo razoável seria de uma hora:
 
    ```xml
    <Location /content>

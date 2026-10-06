@@ -10,14 +10,12 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1192'
-ht-degree: 1%
-
+source-wordcount: '1208'
+ht-degree: 2%
 ---
-
 # Atalhos de teclado do AEM Forms {#aem-forms-keyboard-shortcuts}
 
-O <span class="preview"> Adobe recomenda o uso de [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adicionar o Forms Adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve uma abordagem mais antiga para a criação do Forms adaptável usando componentes de base. </span>
+A Adobe <span class="preview"> recomenda usar os [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adicionar o Forms Adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve uma abordagem mais antiga para a criação do Forms adaptável usando componentes de base. </span>
 
 Este artigo lista os atalhos de teclado que podem ser usados com o Editor de formulário adaptável, o Editor de temas, o Navegador de conteúdo e o Gerenciamento de correspondência para sistemas operacionais Windows e Macintosh.
 
@@ -31,20 +29,20 @@ Este artigo lista os atalhos de teclado que podem ser usados com o Editor de for
 | Editar regra para o componente de formulário adaptável selecionado | Ctrl+Alt+Enter | Command+Alt+Return |
 | Alternar entre a Visualização e o modo selecionado atualmente (por exemplo, Editar e Andaime) | Ctrl+Shift+M | Ctrl+Shift+M&ast; |
 | Desfazer a última alteração | Ctrl+Z | Ctrl+Z&ast; |
-| Refazer a última alteração | Ctrl+Y | Ctrl+Y&ast; |
+| Refazer a última alteração | Ctrl+Y | Ctrl+S&ast; |
 | Selecionar vários componentes | Shift + clique | Shift + clique |
 | Copiar componente selecionado | Ctrl-C | Ctrl-C&ast; |
 | Recortar componentes selecionados. O componente recortado não desaparece até que seja colado no novo local. | Ctrl-X | Ctrl-X&ast; |
 | Colar componentes | Ctrl+V | Ctrl+V |
 | Excluir componentes selecionados | Ctrl+Del | Ctrl+Del&ast; |
-| Excluir componentes selecionados | Ctrl+Barra de espaços | Ctrl+Espaço&ast; |
+| Excluir componentes selecionados | Ctrl+Barra de espaços | Ctrl+Espaço&Atrasado; |
 | Tornar o texto negrito ao usar o componente Editor de Rich Text no modo Visualização | Ctrl+O | Ctrl+B&ast; |
 | Colocar texto em itálico ao usar o componente Editor de Rich Text no modo Visualização | Ctrl+I | Ctrl+I&ast; |
 | Tornar o texto negrito ao usar o componente Editor de Rich Text no modo Visualização | Ctrl+S | Ctrl+U&ast; |
 
 >[!NOTE]
 >
->Os atalhos marcados com &quot;&ast;&quot; funcionam com as teclas Ctrl e Command no macOS.
+>Os atalhos marcados com um &#39;&ast;&#39; funcionam com as teclas Ctrl e Command no macOS.
 
 >[!NOTE]
 >
@@ -61,12 +59,12 @@ Este artigo lista os atalhos de teclado que podem ser usados com o Editor de for
 | Abrir o navegador Propriedades do componente selecionado em um tema | Alt+Enter | Alt+Return |
 | Fechar o navegador Propriedades do componente selecionado em um tema | Ctrl+Alt+W | Command+Alt+W |
 | Desfazer a última alteração | Ctrl+Z | Ctrl+Z&ast; |
-| Refazer a última alteração | Ctrl+Y | Ctrl+Y&ast; |
+| Refazer a última alteração | Ctrl+Y | Ctrl+S&ast; |
 | Salvar alterações no navegador Propriedades do componente selecionado em um tema | Ctrl+S | Ctrl+S&ast; |
 
 >[!NOTE]
 >
->Os atalhos marcados com &quot;&ast;&quot; funcionam com as teclas Ctrl e Command no macOS.
+>Os atalhos marcados com um &#39;&ast;&#39; funcionam com as teclas Ctrl e Command no macOS.
 
 ## Navegador de conteúdo  {#contentbrowser}
 

@@ -11,11 +11,9 @@ feature: Developing
 role: Developer
 source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
 workflow-type: tm+mt
-source-wordcount: '1767'
+source-wordcount: '1780'
 ht-degree: 0%
-
 ---
-
 # Modelagem de dados - Modelo de David Nuescheler{#data-modeling-david-nuescheler-s-model}
 
 ## Origem {#source}
@@ -173,9 +171,9 @@ Eu acho que há casos de uso em que um sistema realmente não pode funcionar se 
 
 Se um modelo de conteúdo expor algo que mesmo remotamente cheira a um arquivo ou pasta, tento usar (ou estender de) `nt:file`, `nt:folder` e `nt:resource`.
 
-Em minha experiência, muitos aplicativos genéricos permitem a interação implícita com nt:folder e nt:files e sabem como lidar e exibir esses eventos se eles forem enriquecidos com metainformações adicionais. Por exemplo, uma interação direta com implementações de servidor de arquivos, como CIFS ou WebDAV sobre JCR, torna-se implícita.
+Em minha experiência, muitos aplicativos genéricos permitem a interação com nt:folder e nt:files implicitamente e sabem como lidar e exibir esses eventos se eles forem enriquecidos com metainformações adicionais. Por exemplo, uma interação direta com implementações de servidor de arquivos, como CIFS ou WebDAV sobre JCR, torna-se implícita.
 
-Eu acho que como boa regra geral você poderia usar o seguinte: Se você deve armazenar o nome do arquivo e o tipo MIME então `nt:file`/ `nt:resource` é uma boa correspondência. Se você tiver vários &quot;arquivos&quot;, nt:folder é um bom lugar para armazená-los.
+Eu acho que como boa regra geral você poderia usar o seguinte: Se você deve armazenar o nome do arquivo e o tipo MIME então `nt:file`/ `nt:resource` é uma boa correspondência. Se você puder ter vários &quot;arquivos&quot;, um nt:folder é um bom lugar para armazená-los.
 
 Se você precisar adicionar informações meta para seu recurso, digamos uma propriedade &quot;author&quot; ou &quot;description&quot;, estenda `nt:resource`, não o `nt:file`. Eu raramente estendo nt:file e frequentemente estendo `nt:resource`.
 

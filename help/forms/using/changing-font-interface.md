@@ -12,11 +12,9 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '278'
 ht-degree: 1%
-
 ---
-
 # Alteração da fonte na interface{#changing-the-font-on-the-interface}
 
 Você pode alterar a fonte exibida no espaço de trabalho do AEM Forms. As fontes usadas em uma seção específica da interface do usuário são definidas na seção correspondente da folha de estilos. É possível alterar as fontes na interface do usuário seletivamente.
@@ -40,7 +38,7 @@ Por exemplo, para alterar a fonte do texto de âncora da barra de navegação su
       }
       ```
 
-   1. Para adicionar a família de fontes em linha para o elemento HTML, copie o arquivo `/libs/ws/js/runtime/templates/appnavigation.html` para `/apps/ws/js/runtime/templates/appnavigation.html`.
+   1. Para adicionar a família de fontes integrada ao elemento HTML, copie o arquivo `/libs/ws/js/runtime/templates/appnavigation.html` para `/apps/ws/js/runtime/templates/appnavigation.html`.
 
       Atualize o arquivo /apps/ws/js/runtime/templates/appnavigation.html da seguinte maneira:
 

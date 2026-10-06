@@ -1,6 +1,6 @@
 ---
 title: Reestruturação do repositório para o AEM Communities no 6.4
-description: Saiba como fazer as alterações necessárias para migrar para a nova estrutura de repositório no AEM 6.4 para Comunidades.
+description: Saiba como fazer as alterações necessárias para migrar para a nova estrutura de repositório no AEM 6.4 for Communities.
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: repo_restructuring
@@ -10,11 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1003'
+source-wordcount: '1034'
 ht-degree: 1%
-
 ---
-
 # Reestruturação do repositório para o AEM Communities no 6.5 {#repository-restructuring-for-aem-communities-in}
 
 Conforme descrito na página pai [Reestruturação do repositório no AEM 6.4](/help/sites-deploying/repository-restructuring.md), os clientes que estão atualizando para o AEM 6.5 devem usar esta página para avaliar o esforço de trabalho associado às alterações no repositório que afetam a Solução da AEM Communities. Algumas alterações exigem esforço de trabalho durante o processo de atualização do AEM 6.5, enquanto outras podem ser adiadas até uma atualização futura.
@@ -28,10 +26,10 @@ Conforme descrito na página pai [Reestruturação do repositório no AEM 6.4](/
 
 * [Configurações de insígnias](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md#badging-configurations)
 * [Designs do console do Communities clássico](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md#classic-communities-console-designs)
-* [Configurações de logon social do facebook](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md#facebook-social-login-configurations)
+* [Configurações de logon social do Facebook](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md#facebook-social-login-configurations)
 * [Configurações de opções de idioma](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md#language-options-configurations)
 
-* [Configurações de logon social do pinterest](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md#pinterest-social-login-configurations)
+* [Configurações de logon social do Pinterest](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md#pinterest-social-login-configurations)
 * [Configurações de pontuação](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md#scoring-configurations)
 * [Configurações de logon social do Twitter](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md#twitter-social-login-configurations)
 * [Diversos](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md#misc)
@@ -166,7 +164,7 @@ Conforme descrito na página pai [Reestruturação do repositório no AEM 6.4](/
  </tbody>
 </table>
 
-### Configurações de logon social do facebook {#facebook-social-login-configurations}
+### Configurações de logon social do Facebook {#facebook-social-login-configurations}
 
 <table>
  <tbody>
@@ -185,11 +183,11 @@ Conforme descrito na página pai [Reestruturação do repositório no AEM 6.4](/
     <ol>
      <li>Migre as configurações existentes no local anterior para o novo local.
       <ol>
-       <li>Recrie manualmente novas Configurações de logon social do Facebook por meio da interface de criação do AEM em <strong>Ferramentas &gt; Cloud Service &gt; Configuração de logon social do Facebook</strong>.<br /> ou <br /> </li>
+       <li>Recrie manualmente novas Configurações de Logon Social do Facebook por meio da interface do usuário de criação do AEM em <strong>Ferramentas &gt; Serviços da nuvem &gt; Configuração de logon social do Facebook</strong>.<br /> ou <br /> </li>
        <li>Copie quaisquer novas Configurações de nuvem do Facebook do local anterior para o novo local apropriado, em <code>/conf/global or /conf/&lt;tenant&gt;</code>.</li>
       </ol> </li>
-     <li>Atualize qualquer raiz do Site do AEM Communities para fazer referência à nova Configuração de Logon social do Facebook definindo a propriedade <code>[cq:Page]/jcr:content@cq:conf</code> para o caminho absoluto no Novo local.</li>
-     <li>Desassocie o Cloud Service Facebook Connect herdado de qualquer raiz de site AEM Communities atualizada para fazer referência ao novo local.</li>
+     <li>Atualize qualquer raiz do Site do AEM Communities para fazer referência à nova Configuração de Logon Social do Facebook definindo a propriedade <code>[cq:Page]/jcr:content@cq:conf</code> para o caminho absoluto no Novo Local.</li>
+     <li>Desassocie o Facebook Connect Cloud Service herdado de qualquer raiz de site do AEM Communities atualizada para fazer referência ao Novo local.</li>
     </ol> </td>
   </tr>
   <tr>
@@ -222,7 +220,7 @@ Conforme descrito na página pai [Reestruturação do repositório no AEM 6.4](/
  </tbody>
 </table>
 
-### Configurações de logon social do pinterest {#pinterest-social-login-configurations}
+### Configurações de logon social do Pinterest {#pinterest-social-login-configurations}
 
 <table>
  <tbody>
@@ -241,11 +239,11 @@ Conforme descrito na página pai [Reestruturação do repositório no AEM 6.4](/
     <ol>
      <li>Migre as configurações existentes no local anterior para o novo local.
       <ol>
-       <li>Recrie manualmente novas Configurações de logon social do Pinterest por meio da interface de criação do AEM em <strong>Ferramentas &gt; Cloud Service &gt; Configuração de logon social do Pinterest</strong>.<br /> ou</li>
+       <li>Recrie manualmente novas Configurações de Logon Social do Pinterest por meio da interface do usuário de criação do AEM em <strong>Ferramentas &gt; Serviços da nuvem &gt; Configuração de logon social do Pinterest</strong>.<br /> ou</li>
        <li>Copie quaisquer novas Configurações de nuvem do Pinterest do local anterior para o novo local apropriado em <code>/conf/global or /conf/&lt;tenant&gt;</code>.</li>
       </ol> </li>
      <li>Atualize qualquer raiz do site do AEM Communities para fazer referência à nova Configuração de logon social do Pinterest, definindo a propriedade <code>[cq:Page]/jcr:content@cq:conf</code> para o caminho absoluto no Novo local.</li>
-     <li>Desassocie o Cloud Service Pinterest Connect herdado de qualquer raiz de site AEM Communities atualizada para fazer referência ao novo local.</li>
+     <li>Desassocie o Pinterest Connect Cloud Service herdado de qualquer raiz de site do AEM Communities atualizada para fazer referência ao novo local.</li>
     </ol> </td>
   </tr>
   <tr>
@@ -303,15 +301,15 @@ Conforme descrito na página pai [Reestruturação do repositório no AEM 6.4](/
   </tr>
   <tr>
    <td><strong>Orientações em matéria de reestruturação</strong></td>
-   <td><p>Quaisquer novas configurações da nuvem do Twitter devem ser migradas para o novo local.</p>
+   <td><p>Quaisquer novas configurações de nuvem do Twitter devem ser migradas para o novo local.</p>
     <ol>
      <li>Migre as configurações existentes no local anterior para o novo local.
       <ol>
-       <li>Recrie manualmente novas Configurações de logon social do Twitter por meio da interface de criação do AEM em <strong>Ferramentas &gt; Cloud Service &gt; Configuração de logon social do Twitter</strong>.<br /> ou <br /> </li>
-       <li>Copie quaisquer novas Configurações de nuvem do Twitter do local anterior para o novo local apropriado, em <code>/conf/global or /conf/&lt;tenant&gt;</code>.</li>
+       <li>Recrie manualmente novas Configurações de Logon Social do Twitter por meio da interface do usuário de criação do AEM em <strong>Ferramentas &gt; Serviços da nuvem &gt; Configuração de logon social do Twitter</strong>.<br /> ou <br /> </li>
+       <li>Copie quaisquer novas configurações de nuvem do Twitter do local anterior para o novo local apropriado, em <code>/conf/global or /conf/&lt;tenant&gt;</code>.</li>
       </ol> </li>
-     <li>Atualize qualquer raiz do site do AEM Communities para fazer referência à nova Configuração de logon social do Twitter definindo a propriedade <code>[cq:Page]/jcr:content@cq:conf</code> para o caminho absoluto no Novo local.</li>
-     <li>Desassocie o Cloud Service de conexão do Twitter herdado de qualquer raiz do site AEM Communities atualizada para fazer referência ao novo local.</li>
+     <li>Atualize qualquer raiz do Site do AEM Communities para fazer referência à nova Configuração de Logon Social do Twitter definindo a propriedade <code>[cq:Page]/jcr:content@cq:conf</code> para o caminho absoluto no Novo Local.</li>
+     <li>Desassocie o Twitter Connect Cloud Service herdado de qualquer raiz de site do AEM Communities atualizada para fazer referência ao Novo local.</li>
     </ol> </td>
   </tr>
   <tr>
@@ -335,7 +333,7 @@ Conforme descrito na página pai [Reestruturação do repositório no AEM 6.4](/
   </tr>
   <tr>
    <td><strong>Orientações em matéria de reestruturação</strong></td>
-   <td><p>o Adobe forneceu um utilitário de migração em:</p> <p><a href="https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/master/bundles/communities-template-migration">https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/master/bundles/communities-template-migration</a></p> </td>
+   <td><p>A Adobe forneceu um utilitário de migração em:</p> <p><a href="https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/master/bundles/communities-template-migration">https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/master/bundles/communities-template-migration</a></p> </td>
   </tr>
   <tr>
    <td><strong>Notas</strong></td>

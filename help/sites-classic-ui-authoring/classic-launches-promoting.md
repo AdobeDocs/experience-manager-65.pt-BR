@@ -1,10 +1,12 @@
 ---
 title: Promoção de inicializações
-description: É necessário promover as páginas de lançamento para mover o conteúdo de volta para a origem (produção) antes de publicar. Quando uma página de inicialização é promovida, a página correspondente das páginas de origem é substituída pelo conteúdo da página promovida.
+description: É necessário promover as páginas de lançamento para mover o conteúdo de volta para a origem (produção) antes de publicar. Quando uma página de lançamento é promovida, a página de origem correspondente é substituída pelo conteúdo da página promovida.
+
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
+
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: 3013adc3-bec6-4ecc-aefd-f8df2b86dfef
 solution: Experience Manager, Experience Manager Sites
@@ -13,16 +15,14 @@ role: User
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '315'
-ht-degree: 56%
-
+ht-degree: 63%
 ---
-
 # Promoção de inicializações{#promoting-launches}
 
 É necessário promover as páginas de lançamento para mover o conteúdo de volta para a origem (produção) antes de publicar. Quando uma página de lançamento é promovida, a página de origem correspondente é substituída pelo conteúdo da página promovida. As seguintes opções estão disponíveis ao promover uma página de lançamento:
 
 * Promover somente a página atual ou todo o lançamento.
-* Promover as páginas secundárias da página atual.
+* Promover as páginas filhas da página atual.
 * Promover o lançamento completo ou somente as páginas alteradas.
 
 ## Promover páginas de lançamento {#promoting-launch-pages}
@@ -49,6 +49,6 @@ Use modelos de fluxo de trabalho para executar o processamento em massa das pág
 
 Para iniciar um fluxo de trabalho automaticamente quando as páginas forem promovidas, [configure um iniciador de fluxo de trabalho](/help/sites-administering/workflows-starting.md#workflows-launchers) para o nó do pacote.
 
-Por exemplo, você pode gerar solicitações de ativação de página automaticamente quando autores(as) promoverem páginas de lançamento. Configure um iniciador de fluxo de trabalho para iniciar o fluxo de trabalho Solicitar ativação quando o nó do pacote for modificado.
+Por exemplo, você pode gerar solicitações de ativação de página automaticamente quando autores(as) promoverem páginas de lançamento. Configure um inicializador de fluxo de trabalho para iniciar o fluxo de trabalho Solicitar ativação quando o nó do pacote for modificado.
 
 ![chlimage_1-136](assets/chlimage_1-136.png)

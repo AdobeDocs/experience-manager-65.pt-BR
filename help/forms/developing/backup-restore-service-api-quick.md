@@ -11,20 +11,18 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '261'
 ht-degree: 0%
-
 ---
-
 # Início Rápido da API de Serviço de Backup e Restauração {#backup-and-restore-service-apiquick-starts}
 
 **Exemplos e exemplos neste documento são somente para AEM Forms no ambiente JEE.**
 
 O Java™ API Quick Start (SOAP) está disponível para a API de serviço de backup e restauração.
 
-[Início rápido: entrando no modo de backup usando o Java](backup-restore-service-api-quick.md#quick-start-soap-mode-entering-backup-mode-using-the-java-api)
+[Início rápido: entrando no modo de backup usando a API Java™ (SOAP)](backup-restore-service-api-quick.md#quick-start-soap-mode-entering-backup-mode-using-the-java-api)
 
-[Início rápido: sair do modo de backup usando o Java](backup-restore-service-api-quick.md#quick-start-soap-mode-leaving-backup-mode-using-the-java-api)
+[Início rápido: saindo do modo de backup usando a API Java™ (SOAP)](backup-restore-service-api-quick.md#quick-start-soap-mode-leaving-backup-mode-using-the-java-api)
 
 As operações do AEM Forms podem ser executadas usando a API altamente tipada do AEM Forms e o modo de conexão deve ser definido como SOAP.
 

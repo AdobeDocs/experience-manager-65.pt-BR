@@ -11,11 +11,9 @@ feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: '342'
 ht-degree: 0%
-
 ---
-
 # Integração de componentes do espaço de trabalho do AEM Forms em aplicativos web {#integrating-aem-forms-workspace-components-in-web-applications}
 
 Você pode usar [componentes](/help/forms/using/description-reusable-components.md) do espaço de trabalho do AEM Forms em seu próprio aplicativo Web. O exemplo de implementação a seguir usa componentes de um pacote de desenvolvimento do espaço de trabalho do AEM Forms instalado em uma instância do CRX™ para criar um aplicativo web. Personalize a solução abaixo para atender às suas necessidades específicas. A implementação de exemplo reutiliza componentes `UserInfo`, `FilterList` e `TaskList` dentro de um portal da Web.

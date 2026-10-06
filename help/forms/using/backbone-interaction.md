@@ -11,11 +11,9 @@ feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '436'
+source-wordcount: '438'
 ht-degree: 0%
-
 ---
-
 # Interação backbone{#backbone-interaction}
 
 O Backbone é uma biblioteca que ajuda a criar e a seguir a arquitetura MVC em aplicações Web. A ideia básica do Backbone é organizar sua interface em visualizações lógicas, apoiadas por modelos, cada um dos quais pode ser atualizado independentemente quando o modelo muda, sem precisar redesenhar a página. Para obter mais informações sobre o Backbone, consulte [https://backbonejs.org](https://backbonejs.org/).
@@ -26,13 +24,13 @@ Alguns conceitos principais são os seguintes:
 
 **Exibição de backbone** Usada para representar o estado do modelo correspondente. Uma exibição de backbone se comporta realmente como um controlador, ouvindo eventos da interface do usuário como cliques do usuário ou eventos de modelo (como dados alterados) e modifica a interface do usuário conforme apropriado.
 
-**modelo de HTML** Um modelo de wrapper que tem espaços reservados preenchidos pelo modelo.
+**Modelo de HTML** Um modelo de wrapper que tem espaços reservados preenchidos pelo modelo.
 
 O **espaço de trabalho do AEM Forms** contém vários componentes individuais. Cada componente:
 
 * Representa um único elemento da interface de usuário lógico.
 * Pode ser uma coleção de componentes semelhantes.
-* Composto pelo modelo Backbone, visualização Backbone e modelo HTML.
+* Composto por modelo de Backbone, visualização de Backbone e modelo do HTML.
 * Contém referência a um serviço.
 * Contém referência aos utilitários necessários.
 
@@ -40,13 +38,13 @@ Quando um componente é inicializado, os seguintes objetos são criados:
 
 * Uma nova instância do modelo de Backbone para o componente é criada. Serviço inserido no modelo.
 * Uma nova instância da exibição de Backbone é criada.
-* Instância do modelo correspondente, modelo de HTML e Utilitários são inseridos na visualização.
+* A instância do modelo correspondente, o modelo do HTML e os Utilitários são inseridos na exibição.
 
 Na visualização Backbone, há um mapa de eventos que mapeia os vários eventos que podem surgir devido às interações da interface do usuário com um manipulador correspondente. Este mapeamento é iniciado assim que um componente é inicializado.
 
-Quando uma exibição é inicializada, ela chama seu modelo correspondente para buscar dados do servidor. Quando todos os dados exigidos por uma visualização estão disponíveis, a visualização renderiza os dados no formato especificado pelo modelo de HTML. Várias exibições podem compartilhar o mesmo modelo para comunicação.
+Quando uma exibição é inicializada, ela chama seu modelo correspondente para buscar dados do servidor. Quando todos os dados exigidos por uma visualização estão disponíveis, a visualização renderiza os dados no formato especificado pelo modelo do HTML. Várias exibições podem compartilhar o mesmo modelo para comunicação.
 
-![Exibição de backbone de formulários do AEM](do-not-localize/aem_forms_workflow.png)
+![exibição de backbone dos formulários do AEM](do-not-localize/aem_forms_workflow.png)
 
 Um exemplo:
 

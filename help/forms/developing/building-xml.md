@@ -7,11 +7,9 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 361f0a5f2d1484cf594edfda73250c5690ed7cab
 workflow-type: tm+mt
-source-wordcount: '1043'
+source-wordcount: '1060'
 ht-degree: 0%
-
 ---
-
 # Usar o serviço de script de execução no AEM Forms no JEE Workbench para criar dados XML {#using-execute-script-service-forms-jee-workbench}
 
 Há muito XML envolvido com workflows de gerenciamento de processos do AEM Forms no JEE, por exemplo: informações XML podem ser criadas em um processo e enviadas para um aplicativo do Flex no AEM Forms no JEE Workspace, usadas para configurações de sistemas ou transmitindo informações de e para formulários. Há muitas instâncias em que um desenvolvedor do AEM Forms no JEE precisa gerenciar XML e, muitas vezes, isso requer que o XML seja gerenciado por meio de um processo do AEM Forms no JEE.

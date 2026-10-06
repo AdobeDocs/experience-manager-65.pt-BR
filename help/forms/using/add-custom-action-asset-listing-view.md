@@ -11,11 +11,9 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '1333'
-ht-degree: 2%
-
+source-wordcount: '1381'
+ht-degree: 4%
 ---
-
 # Adicionar ação personalizada à exibição de Listagem de ativos{#add-custom-action-to-the-asset-listing-view}
 
 ## Visão geral {#overview}
@@ -27,7 +25,7 @@ Você pode adicionar uma ação personalizada à exibição da Lista de ativos p
 * Um ou mais tipos de ativos ou cartas
 * Execução (ação/comando fica ativo) na seleção de um único ativo/cartas ou de vários ativos/cartas, ou sem seleção
 
-Essa personalização é demonstrada com o cenário que adiciona um comando &quot;Baixar PDF simples&quot; à exibição Lista de ativos para cartas. Esse cenário de personalização permite que os usuários baixem um PDF simples de uma única carta selecionada.
+Essa personalização é demonstrada com o cenário que adiciona um comando &quot;Baixar Flat PDF&quot; à exibição Lista de ativos para cartas. Esse cenário de personalização permite que os usuários baixem PDF simples de uma única carta selecionada.
 
 ### Pré-requisitos {#prerequisites}
 
@@ -37,11 +35,11 @@ Para concluir o seguinte cenário ou um semelhante, você precisa ter conhecimen
 * JavaScript
 * Java™
 
-## Cenário: adicione um comando à interface do usuário da lista Cartas para baixar a versão de PDF simples de uma carta {#addcommandtoletters}
+## Cenário: adicione um comando à interface do usuário da lista Cartas para baixar a versão simples de PDF de uma carta {#addcommandtoletters}
 
-As etapas abaixo adicionam um comando &quot;Baixar PDF simples&quot; à exibição de Lista de ativos para cartas e permitem que os usuários baixem PDF simples da carta selecionada. Usando essas etapas com o código e os parâmetros apropriados, é possível adicionar outra funcionalidade para um ativo diferente, como dicionários de dados ou textos.
+As etapas abaixo adicionam um comando &quot;Baixar Flat PDF&quot; à exibição de Listagem de ativos para cartas e permitem que os usuários baixem a flat PDF da carta selecionada. Usando essas etapas com o código e os parâmetros apropriados, é possível adicionar outra funcionalidade para um ativo diferente, como dicionários de dados ou textos.
 
-Para personalizar o Gerenciamento de correspondência para permitir que seus usuários baixem uma PDF simples de cartas, conclua as seguintes etapas:
+Para personalizar o Gerenciamento de correspondências para permitir que os usuários baixem uma PDF simples de cartas, conclua as seguintes etapas:
 
 1. Vá para `https://'[server]:[port]'/[ContextPath]/crx/de` e faça logon como Administrador.
 
@@ -82,7 +80,7 @@ Para personalizar o Gerenciamento de correspondência para permitir que seus usu
 
       **Nome:** downloadFlatPDF (ou o nome que você deseja dar a esta propriedade)
 
-      **Tipo:** nt:não estruturado
+      **Tipo:** nt:unstructured
 
    1. Clique no novo nó criado (aqui downloadFlatPDF). O CRX exibe as propriedades do nó.
 
@@ -96,7 +94,7 @@ Para personalizar o Gerenciamento de correspondência para permitir que seus usu
         <td><strong>Valor e descrição</strong></td>
         </tr>
         <tr>
-        <td>Classe </td>
+        <td>Classe</td>
         <td>String</td>
         <td>foundation-collection-action</td>
         </tr>
@@ -128,12 +126,12 @@ Para personalizar o Gerenciamento de correspondência para permitir que seus usu
         <tr>
         <td>text</td>
         <td>String</td>
-        <td>Baixar PDF Simples (Ou qualquer outro rótulo)<br /> <br /> O comando que aparece na interface de Listagem de Ativos</td>
+        <td>Baixar Flat PDF (Ou qualquer outro rótulo)<br /> <br /> O comando que aparece na interface de Listagem de Ativos</td>
         </tr>
         <tr>
         <td>cargo</td>
         <td>String</td>
-        <td>Baixar um PDF simples da letra selecionada (Ou qualquer outro rótulo/texto alternativo)<br /> <br /> O título é o texto alternativo que o Gerenciamento de Correspondências exibe quando o usuário passa o mouse sobre o comando personalizado.</td>
+        <td>Baixar uma PDF simples da letra selecionada (Ou qualquer outro rótulo/texto alternativo)<br /> <br /> O título é o texto alternativo que o Gerenciamento de Correspondências exibe quando o usuário passa o mouse sobre o comando personalizado.</td>
         </tr>
         </tbody>
        </table>
@@ -254,7 +252,7 @@ Para personalizar o Gerenciamento de correspondência para permitir que seus usu
 
       **Nome:** letterpdfdownloader (Ou o nome que você deseja dar a esta propriedade) deve ser exclusivo. Se você usar um nome diferente aqui, especifique também o mesmo na variável ACTION_URL do arquivo formaction.js.)
 
-      **Tipo:** nt:não estruturado
+      **Tipo:** nt:unstructured
 
    1. Clique no novo nó criado (aqui downloadFlatPDF). O CRX exibe as propriedades do nó.
 
@@ -346,21 +344,21 @@ Para personalizar o Gerenciamento de correspondência para permitir que seus usu
       %>
       ```
 
-## Baixar PDF simples de uma carta usando a funcionalidade personalizada {#download-flat-pdf-of-a-letter-using-the-custom-functionality}
+## Baixar uma carta no formato PDF usando a funcionalidade personalizada {#download-flat-pdf-of-a-letter-using-the-custom-functionality}
 
-Depois de ter adicionado a funcionalidade personalizada para baixar o PDF simples de suas cartas, você pode usar as seguintes etapas para baixar a versão do PDF simples da carta selecionada:
+Depois de ter adicionado a funcionalidade personalizada para baixar a PDF simples de suas cartas, você pode usar as seguintes etapas para baixar a versão simples do PDF da carta selecionada:
 
 1. Vá para `https://'[server]:[port]'/[ContextPath]/projects.html` e faça logon.
 
 1. Selecione **Forms > Cartas**. O Gerenciamento de correspondência lista as cartas disponíveis no sistema.
 1. Clique em **Selecionar** e em uma letra para selecioná-la.
-1. Selecione **Mais** > **&lt;Baixar PDF Simples>** (A funcionalidade personalizada criada usando as instruções deste artigo). Download Letter as PDF (Baixar carta como) é exibida.
+1. Selecione **Mais** > **&lt;Baixar Flat PDF>** (A funcionalidade personalizada criada usando as instruções deste artigo). Baixar carta como caixa de diálogo do PDF é exibida.
 
-   O nome, a funcionalidade e o texto alternativo do item de menu estão de acordo com a personalização criada no [Cenário: adicione um comando à interface do usuário da lista Cartas para baixar a versão de PDF simples de uma carta.](#addcommandtoletters)
+   O nome, a funcionalidade e o texto alternativo do item de menu estão de acordo com a personalização criada no [Cenário: adicione um comando à interface do usuário da lista Cartas para baixar a versão simples PDF de uma carta.](#addcommandtoletters)
 
-   ![Funcionalidade personalizada: baixar PDF simples](assets/5_downloadflatpdf.png)
+   ![Funcionalidade personalizada: baixar Flat PDF](assets/5_downloadflatpdf.png)
 
-1. Na caixa de diálogo Baixar carta como PDF, selecione o XML relevante a partir do qual deseja preencher os dados no PDF.
+1. Na caixa de diálogo Baixar carta como PDF, selecione o XML relevante a partir do qual deseja preencher os dados na PDF.
 
    >[!NOTE]
    >
@@ -368,4 +366,4 @@ Depois de ter adicionado a funcionalidade personalizada para baixar o PDF simple
 
    ![Baixar carta como PDF](assets/6_downloadflatpdf.png)
 
-   A carta é baixada para o computador como um PDF simples.
+   A carta é baixada no computador como um PDF simples.

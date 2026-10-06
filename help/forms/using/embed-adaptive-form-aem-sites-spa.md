@@ -1,72 +1,75 @@
 ---
 title: Incorpore um formulário adaptável ou a Comunicação interativa no aplicativo de página única do AEM Sites
+
 description: Incorpore formulários adaptáveis ou Comunicação interativa nas páginas do AEM Sites. Os usuários podem preencher e enviar formulários sem sair da página Sites.
+
+
 topic-tags: author, interactive-communications
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
+
 docset: aem65
+
 feature: Adaptive Forms
 exl-id: b549f176-409a-4d81-8c2b-73d0dd0c6649
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '1107'
-ht-degree: 0%
-
+source-wordcount: '1192'
+ht-degree: 1%
 ---
-
 # Incorpore um formulário adaptável ou a Comunicação interativa no aplicativo de página única do AEM Sites{#embed-an-adaptive-form-or-interactive-communication-in-aem-sites-single-page-application}
 
-O <span class="preview"> Adobe recomenda o uso de [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adicionar o Forms Adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
+A Adobe <span class="preview"> recomenda usar os [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adicionar o Forms Adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
 
 ## Visão geral {#overview}
 
-O AEM Forms permite que desenvolvedores de formulários incorporem formulários adaptáveis e comunicações interativas em um aplicativo de página única (SPA) do AEM Sites. O formulário adaptável incorporado e a Comunicação interativa são totalmente funcionais e os usuários podem preencher e enviar o formulário sem sair da página. Ele ajuda o usuário a permanecer no contexto de outros elementos na página da Web e interagir simultaneamente com o formulário adaptável ou a Comunicação interativa.
+O AEM Forms permite que os desenvolvedores de formulários incorporem formulários adaptáveis e comunicações interativas em um aplicativo de página única (SPA) da AEM Sites. O formulário adaptável incorporado e a Comunicação interativa são totalmente funcionais e os usuários podem preencher e enviar o formulário sem sair da página. Ele ajuda o usuário a permanecer no contexto de outros elementos na página da Web e interagir simultaneamente com o formulário adaptável ou a Comunicação interativa.
 
-No Aplicativo de página única do AEM Sites, é possível adicionar um formulário adaptável ou a Comunicação interativa usando o [Componente de container do AEM Forms SPA](../../forms/using/embed-adaptive-form-aem-sites-spa.md#af-component) [.](../../forms/using/embed-adaptive-form-aem-sites-spa.md#af-component) É um componente do AEM Forms para AEM Sites SPA que pode ser adicionado à sua página Sites.
+No Aplicativo de Página Única do AEM Sites, é possível adicionar um formulário adaptável ou a Comunicação Interativa usando o [componente de Contêiner SPA do AEM Forms](../../forms/using/embed-adaptive-form-aem-sites-spa.md#af-component) [.](../../forms/using/embed-adaptive-form-aem-sites-spa.md#af-component) É um componente do AEM Forms para SPAs do AEM Sites que pode ser adicionado à página Sites.
 
 Para obter informações sobre como incorporar um formulário adaptável em um AEM Sites não SPA, consulte [Incorporar um formulário adaptável ou comunicação interativa na página do AEM Sites](/help/forms/using/embed-adaptive-form-aem-sites.md).
 
 ## Pré-requisitos {#prerequisites}
 
-Para incorporar um formulário adaptável ou a Comunicação interativa em um SPA de sites AEM usando o componente de Contêiner AEM Forms SPA, verifique se você instalou:
+Para incorporar um formulário adaptável ou a Comunicação interativa em um SPA dos sites do AEM usando o componente Contêiner de SPA do AEM Forms, verifique se você instalou:
 
 * Java SE Development Kit 8 ou mais recente
 * Apache Maven 3.3.1 ou mais recente
-* Instância de autor AEM
+* Instância do autor do AEM
 * [pacote complementar do AEM Forms 6.4.2](https://helpx.adobe.com/br/aem-forms/kb/aem-forms-releases.html) na instância do autor
 
-## Instalar o componente de Contêiner do AEM Forms SPA {#install-aem-forms-spa-container-component}
+## Instalar o componente de Contêiner SPA do AEM Forms {#install-aem-forms-spa-container-component}
 
-Execute as seguintes etapas para instalar o componente de Contêiner SPA do AEM Forms:
+Execute as seguintes etapas para instalar o componente de Contêiner de SPA do AEM Forms:
 
 1. [Clonar ou baixar o componente AEM Forms para SPA](https://github.com/Adobe-Marketing-Cloud/aem-forms/tree/master/forms-spa).
 1. Instale o componente AEM Forms para SPA. As instruções para instalar o componente estão disponíveis no arquivo [README.md](https://github.com/Adobe-Marketing-Cloud/aem-forms/tree/master/forms-spa#aem-form-component).
 
-   O componente inclui um [componente React de amostra](https://github.com/Adobe-Marketing-Cloud/aem-forms/tree/master/forms-spa/react-component) que pode ser usado para integrar o componente do contêiner SPA com um projeto SPA baseado no React.
+   O componente inclui um [componente React de amostra](https://github.com/Adobe-Marketing-Cloud/aem-forms/tree/master/forms-spa/react-component) que pode ser usado para integrar o componente de contêiner SPA com um projeto SPA baseado no React.
 
-1. [Clonar ou baixar um projeto do SPA baseado no React](https://github.com/adobe/aem-sample-we-retail-journal).
+1. [Clonar ou baixar um projeto de SPA baseado no React](https://github.com/adobe/aem-sample-we-retail-journal).
 1. Integre o componente de contêiner SPA a um projeto SPA baseado no React usando as instruções disponíveis no arquivo [README.md](https://github.com/Adobe-Marketing-Cloud/aem-forms/tree/master/forms-spa/react-component#aem-form-react-component-for-spa---editor).
 
-   Depois de instalar o componente de Contêiner do AEM Forms SPA e integrar o componente com um projeto SPA baseado no React, você pode incorporar formulários adaptáveis e Comunicações interativas na página do AEM Sites.
+   Depois de instalar o componente Contêiner de SPA do AEM Forms e integrar o componente a um projeto de SPA baseado no React, você pode incorporar formulários adaptáveis e Comunicações interativas na página do AEM Sites.
 
 ## Incorpore um formulário adaptável ou a comunicação interativa {#af-component}
 
 Para incorporar um formulário adaptável ou a Comunicação interativa usando o AEM Forms para o componente de Contêiner SPA:
 
-1. Abra a página de sites do AEM, no modo de edição, na qual você deseja incorporar um formulário adaptável ou a Comunicação interativa.
-1. Insira o componente **Formulário AEM para SPA** na página usando uma das seguintes opções:
+1. Abra a página Sites do AEM, no modo de edição, na qual você deseja incorporar um formulário adaptável ou a Comunicação interativa.
+1. Insira o componente **AEM Form para SPA** na página usando uma das seguintes opções:
 
    * Selecione o contêiner de layout na página Sites, selecione **+** e selecione o componente **Formulário AEM para SPA**.
 
    * No painel Navegador de componentes, arraste e solte na página o componente **Formulário AEM para SPA**.
-   * Procure um formulário adaptável ou Comunicação interativa no navegador Assets e arraste-o para a página Sites. Ele incorpora o formulário em um contêiner de componente AEM Forms for SPA.
+   * Procure um formulário adaptável ou Comunicação interativa no navegador Assets e arraste-o para a página Sites. Ele incorpora o formulário em um contêiner de componente do AEM Forms for SPA.
 
    >[!NOTE]
    >
-   >A renderização de vários componentes do Contêiner do AEM Forms SPA em uma página não é suportada. Você pode ter vários Containers AEM Forms SPA em uma página, mas apenas um componente é renderizado de cada vez. Para evitar discrepâncias, verifique se apenas um componente está visível em uma página.
+   >Não há suporte para a renderização de vários componentes do AEM Forms SPA Container em uma página. Você pode ter vários AEM Forms SPA Container em uma página, mas somente um componente é renderizado de cada vez. Para evitar discrepâncias, verifique se apenas um componente está visível em uma página.
 
-1. Selecione o componente de Contêiner de SPA do AEM Forms inserido na página de sites e selecione ![settings_icon](assets/settings_icon.png) na barra de ações. A caixa de diálogo **Editar Contêiner de SPA do AEM Forms** é aberta.
+1. Selecione o componente de Contêiner de SPA do AEM Forms inserido na página de sites e selecione ![settings_icon](assets/settings_icon.png) na barra de ações. A caixa de diálogo **Editar Contêiner SPA do AEM Forms** é aberta.
 1. Na caixa de diálogo **Editar Contêiner de AEM Forms**, especifique o seguinte:
 
    * **Tipo de ativo:** selecione o tipo de ativo a ser incorporado. As opções são **Formulário adaptável** e **Comunicação interativa**
@@ -78,7 +81,7 @@ Para incorporar um formulário adaptável ou a Comunicação interativa usando o
 
 1. Selecione ![done_icon](assets/done_icon.png) para salvar as configurações. O formulário adaptável ou a Comunicação interativa agora está incorporado na página.
 
-## Formulário adaptável incorporado do Publish e comunicação interativa {#publish-embedded-adaptive-form-and-interactive-communication}
+## Publicar formulário adaptável incorporado e comunicação interativa {#publish-embedded-adaptive-form-and-interactive-communication}
 
 Considere os seguintes cenários para publicar um ativo incorporado (formulário adaptável ou Comunicação interativa) na página do AEM Sites:
 
@@ -97,7 +100,7 @@ Para modificar qualquer configuração ou propriedade do formulário adaptável 
 
 ## Considerações e práticas recomendadas {#considerations-and-best-practices}
 
-Lembre-se dos seguintes pontos ao incorporar formulários adaptáveis em páginas de sites AEM:
+Lembre-se dos seguintes pontos ao incorporar formulários adaptáveis nas páginas do AEM Sites:
 
 * O cabeçalho e o rodapé no formulário original não estão incluídos no formulário incorporado.
 * Os rascunhos e envios de formulários incorporados pelo usuário são suportados e ficam visíveis nas guias Rascunhos e Forms enviados no portal de formulários.

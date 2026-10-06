@@ -1,28 +1,30 @@
 ---
 title: Uso das propriedades de conteúdo para exportar conteúdo
+
 description: A página a seguir mostra as Propriedades e os Nós do aplicativo.
+
+
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
+
 exl-id: db1c33c9-8539-436d-b4d0-3d5e6fd688ed
 solution: Experience Manager
 feature: Mobile
 role: Developer
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '311'
+source-wordcount: '320'
 ht-degree: 3%
-
 ---
-
 # Uso das propriedades de conteúdo para exportar conteúdo{#using-content-properties-to-export-content}
 
 {{ue-over-mobile}}
 
 Os aplicativos são representados como *cq:Pages* no AEM.
 
-Eles compartilham as mesmas propriedades comuns encontradas em qualquer *cq:Page*, além de outras mostradas abaixo que representam propriedades de suporte à integração.
+Eles compartilham as mesmas propriedades comuns encontradas em qualquer *cq:Page* além de outras mostradas abaixo que representam propriedades de suporte de integração.
 
 ## Propriedades do aplicativo {#app-properties}
 
@@ -38,7 +40,7 @@ A tabela a seguir mostra **Nós e Propriedades do Aplicativo**.
   <tr>
    <td>dps-cloudConfig</td>
    <td>Sequência:Caminho</td>
-   <td><p>Caminho para um Cloud Service do Mobile On-Demand configurado. Usado para ações do AEM Mobile para o Mobile On-Demand (invocação da API)</p> <p>Essa associação é configurada por meio do bloco Gerenciar conexão quando um autor escolhe um Cloud Service do Mobile On-Demand ao qual associar o aplicativo.</p> </td>
+   <td><p>Caminho para uma Cloud Service Mobile On-Demand configurada. Usado para ações do AEM Mobile para o Mobile On-Demand (invocação da API)</p> <p>Essa associação é configurada por meio do bloco Gerenciar conexão quando um autor escolhe um Cloud Service Mobile On-Demand ao qual associar o aplicativo.</p> </td>
   </tr>
   <tr>
    <td>dps-exportTemplate</td>
@@ -48,7 +50,7 @@ A tabela a seguir mostra **Nós e Propriedades do Aplicativo**.
   <tr>
    <td>dps-projectId</td>
    <td>String</td>
-   <td><p>ID/URI do projeto do Mobile On-Demand ao qual este aplicativo está vinculado/ligado.</p> <p>Essa associação é configurada por meio do bloco Gerenciar conexão quando um autor escolhe o projeto em uma lista de projetos disponíveis para o Cloud Service Mobile On-Demand associado.</p> </td>
+   <td><p>ID/URI do projeto do Mobile On-Demand ao qual este aplicativo está vinculado/ligado.</p> <p>Essa associação é configurada por meio do bloco Gerenciar conexão quando um autor escolhe o projeto em uma lista de projetos disponíveis para o Mobile On-Demand Cloud Service associado.</p> </td>
   </tr>
   <tr>
    <td>dps-projectTitle</td>
@@ -68,7 +70,7 @@ A tabela a seguir mostra **Nós e Propriedades do Aplicativo**.
   <tr>
    <td>dps-sharedHTMLResources-lastUploadedBy</td>
    <td>Cadeia de caracteres:ID do usuário</td>
-   <td>ID do usuário que realizou o último upload de solicitação de recursos compartilhados do AEM para o AEM Mobile.</td>
+   <td>ID do usuário que executou o último upload de solicitação de recursos compartilhados do AEM para o AEM Mobile.</td>
   </tr>
   <tr>
    <td>page-dashboard-config</td>

@@ -9,14 +9,12 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '736'
-ht-degree: 0%
-
+source-wordcount: '770'
+ht-degree: 2%
 ---
-
 # Salvar automaticamente um formulário adaptável {#auto-save-an-adaptive-form}
 
-O <span class="preview"> Adobe recomenda o uso de [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adicionar o Forms Adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
+A Adobe <span class="preview"> recomenda usar os [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adicionar o Forms Adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
 
 Você pode configurar um formulário adaptável para começar a salvar automaticamente o conteúdo com base em um evento ou um intervalo de tempo predefinido. Por padrão, o conteúdo de um formulário adaptável é salvo em uma ação do usuário, como ao pressionar o botão Salvar. A opção de salvamento automático é útil em:
 
@@ -58,7 +56,7 @@ Para um formulário adaptável, a opção de salvamento automático não é ativ
    >
    >Para que a opção de salvamento automático funcione para usuários anônimos, certifique-se de configurar o Serviço de configuração comum da Forms para permitir que todos os usuários visualizem, verifiquem e assinem formulários.
    >
-   >Para configurar o serviço, vá para a configuração do Console da Web do AEM em `https://server:port/system/console/configMgr` e edite o **[!UICONTROL Serviço de Configuração Comum da Forms]** para escolher a opção **[!UICONTROL Todos os Usuários]** no campo **[!UICONTROL Permitir]** e salve a configuração.
+   >Para configurar o serviço, vá para Configuração do Console da Web do AEM em `https://server:port/system/console/configMgr` e edite o **[!UICONTROL Serviço de Configuração Comum do Forms]** para escolher a opção **[!UICONTROL Todos os Usuários]** no campo **[!UICONTROL Permitir]** e salve a configuração.
 
 ## Implementar uma estratégia personalizada para ativar o salvamento automático para formulários adaptáveis {#implement-a-custom-strategy-to-enable-autosave-for-adaptive-forms}
 

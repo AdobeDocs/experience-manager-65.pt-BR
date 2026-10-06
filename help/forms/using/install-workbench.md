@@ -9,11 +9,9 @@ solution: Experience Manager, Experience Manager Forms
 feature: Workbench,Adaptive Forms
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '2184'
-ht-degree: 0%
-
+source-wordcount: '2298'
+ht-degree: 1%
 ---
-
 # Instalar Workbench {#install-workbench}
 
 Este documento fornece instruções para instalar e configurar o AEM Forms Workbench. O programa de instalação também instala o Forms Designer.
@@ -36,7 +34,7 @@ Os recursos nesta tabela podem ajudar você a saber mais sobre o e começar a us
    <td><p><a href="https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/WorkbenchHelp.pdf">Ajuda do Workbench</a><br /> <br /> </p> </td>
   </tr>
   <tr>
-   <td><p>Informações gerais sobre a AEM Forms e como ela se integra a outros produtos Adobe</p> </td>
+   <td><p>Informações gerais sobre o AEM Forms e como ele se integra a outros produtos da Adobe</p> </td>
    <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-aem-forms.html?lang=pt-BR">Visão geral do AEM Forms</a><br /> <br /> </p> </td>
   </tr>
   <tr>
@@ -45,7 +43,7 @@ Os recursos nesta tabela podem ajudar você a saber mais sobre o e começar a us
   </tr>
   <tr>
    <td><p>Atualizações de patches, notas técnicas e informações adicionais sobre esta versão do produto</p> </td>
-   <td><p>Contate o Suporte do Adobe Enterprise</a><br /> <br /> </p> </td>
+   <td><p>Contate o Suporte da Adobe Enterprise</a><br /> <br /> </p> </td>
   </tr>
  </tbody>
 </table>
@@ -76,7 +74,7 @@ Esta seção descreve os requisitos de hardware e software e as plataformas supo
 
 ### Requisitos mínimos de hardware e software {#minimum-hardware-software-requirements}
 
-**Bancada**
+**Workbench**
 Os seguintes requisitos são recomendados como o mínimo:
 Espaço em disco para instalação:
 * 680 MB somente para Workbench.
@@ -153,7 +151,7 @@ Antes de instalar o Workbench, você deve garantir que seu ambiente inclua o sof
 
    >[!NOTE]
    >
-   >Se você encontrar um erro &quot;Não foi possível criar a máquina virtual Java™&quot;, crie uma variável de ambiente chamada _JAVA_OPTIONS com o valor -Xmx512M e execute o instalador.
+   >Se você encontrar um erro &quot;Não foi possível criar a Java™ Virtual Machine&quot;, crie uma variável de ambiente chamada _JAVA_OPTIONS com o valor -Xmx512M e execute o instalador.
 
 1. Na tela de Introdução, clique em Avançar.
 1. Leia o Contrato de licença do produto, selecione Aceito os termos do Contrato de licença e clique em Avançar.
@@ -173,9 +171,9 @@ Antes de instalar o Workbench, você deve garantir que seu ambiente inclua o sof
 1. Revise o resumo da instalação. Selecione Iniciar AEM Forms Workbench para iniciar o Workbench e, em seguida, clique em Próximo.
 1. Revise as Notas de versão e clique em Concluído.
 1. Os seguintes itens estão instalados no computador:
-   * **Workbench**: para executar o Workbench no menu Iniciar, selecione Todos os Programas > AEM Forms > Workbench, se você optou por armazenar a pasta de atalho lá. Para obter informações,   consulte a documentação <a href="https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/WorkbenchHelp.pdf">Usando o Workbench</a>.
-   * **Designer**: você pode acessar o Designer de dentro do Workbench. Para obter informações, consulte o tópico Introdução na <a href="https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf">Ajuda do Designer</a>.
-   * **SDK do AEM Forms**: para obter mais informações sobre como usar o SDK, consulte <a href="https://helpx.adobe.com/pdf/aem-forms/6-3/programming-with-aem-forms.pdf">Programação com o AEM Forms</a>.
+   * **Workbench**: para executar o Workbench no menu Iniciar, selecione Todos os Programas > AEM Forms > Workbench, se você optou por armazenar a pasta de atalho lá. Para obter informações, consulte a documentação <a href="https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/WorkbenchHelp.pdf">Usando o Workbench</a>.
+   * **Designer**: você pode acessar o Designer de dentro do Workbench. Para obter informações, consulte o tópico Introdução na <a href="https://helpx.adobe.com/content/dam/help/pt-br/experience-manager/6-5/forms/pdf/using-designer.pdf">Ajuda do Designer</a>.
+   * **AEM Forms SDK**: para obter mais informações sobre como usar o SDK, consulte <a href="https://helpx.adobe.com/pdf/aem-forms/6-3/programming-with-aem-forms.pdf">Programação com o AEM Forms</a>.
 
 ## Atualização de processos {#upgrading-processes}
 
@@ -214,7 +212,7 @@ Conecte-se ao HTTPS usando o nome especificado no certificado. Normalmente, esse
 
 1. Abra uma janela de prompt de comando, navegue até [Workbench_HOME]/workbench/jre/bin e digite o seguinte comando:
    `keytool -import -storepass changeit -file [Workbench_HOME]\workbench\jre\lib\security\ssl_cert_for_certname.cer -keystore [Workbench_HOME]\workbench\jre\lib\security\cacerts -alias example`
-Onde:
+   Onde:
    * `changeit` é a senha padrão para o armazenamento de chaves cacerts.
    * certname é o certificado selecionado na etapa 1.
    * exemplo é o alias escolhido para o certificado. Esse valor pode ser alterado.
@@ -258,8 +256,8 @@ Para documentos não passivos nos quais o nome do arquivo e a raiz do conteúdo 
 * Para modelos de entrada não passivos, o armazenamento em cache depende da raiz do conteúdo e do nome de arquivo a partir dos quais o documento foi gerado.
 O mesmo cache é usado somente para solicitações com a mesma raiz de conteúdo e nome de arquivo de modelo.
 As práticas recomendadas a seguir garantem que o cache não cresça infinitamente quando modelos gerados dinamicamente forem passados para o serviço Forms:
-   * Remova a UUID ou passe a mesma UUID em todos os modelos gerados dinamicamente.
-   * Gere o documento a partir de bytes de modelo ou a partir do mesmo nome de arquivo no disco.
+  * Remova a UUID ou passe a mesma UUID em todos os modelos gerados dinamicamente.
+  * Gere o documento a partir de bytes de modelo ou a partir do mesmo nome de arquivo no disco.
 
 ### Desinstalar o Workbench {#uninstalling-workbench}
 

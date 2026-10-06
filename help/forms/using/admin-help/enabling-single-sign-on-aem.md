@@ -1,5 +1,5 @@
 ---
-title: Habilitar logon único em formulários AEM
+title: Habilitar logon único nos formulários do AEM
 description: Saiba como habilitar o logon único (SSO) usando cabeçalhos HTTP e SPNEGO.
 contentOwner: admin
 content-type: reference
@@ -11,22 +11,20 @@ feature: Adaptive Forms,Document Security
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '1716'
+source-wordcount: '1740'
 ht-degree: 0%
-
 ---
-
-# Habilitar logon único em formulários AEM{#enabling-single-sign-on-in-aem-forms}
+# Habilitar logon único nos formulários do AEM{#enabling-single-sign-on-in-aem-forms}
 
 >[!NOTE]
 > 
 > Verifique se o usuário tem privilégios de administrador para acessar o console do administrador.
 
-Os formulários AEM fornecem duas maneiras de ativar o logon único (SSO) - cabeçalhos HTTP e SPNEGO.
+Os formulários do AEM fornecem duas maneiras de ativar o logon único (SSO) - cabeçalhos HTTP e SPNEGO.
 
-Quando o SSO é implementado, as páginas de logon do usuário dos formulários AEM não são necessárias e não aparecem se o usuário já estiver autenticado por meio do portal da empresa.
+Quando o SSO é implementado, as páginas de logon do usuário dos formulários do AEM não são necessárias e não aparecem se o usuário já estiver autenticado por meio do portal da empresa.
 
-Se os formulários AEM não puderem autenticar um usuário usando um desses métodos, o usuário será redirecionado para uma página de logon.
+Se o AEM Forms não puder autenticar um usuário usando um desses métodos, o usuário será redirecionado para uma página de logon.
 
 * [Habilitar SSO usando cabeçalhos HTTP](#enable-sso-using-http-headers)
 * [Habilitar SSO usando SPNEGO](#enable-sso-using-spnego)
@@ -34,7 +32,7 @@ Se os formulários AEM não puderem autenticar um usuário usando um desses mét
 
 ## Habilitar SSO usando cabeçalhos HTTP {#enable-sso-using-http-headers}
 
-Você pode usar a página Configuração do Portal para habilitar o logon único (SSO) entre aplicativos e qualquer aplicativo que suporte a transmissão da identidade por um cabeçalho HTTP. Quando o SSO é implementado, as páginas de logon do usuário dos formulários AEM não são necessárias e não aparecem se o usuário já estiver autenticado por meio do portal da empresa.
+Você pode usar a página Configuração do Portal para habilitar o logon único (SSO) entre aplicativos e qualquer aplicativo que suporte a transmissão da identidade por um cabeçalho HTTP. Quando o SSO é implementado, as páginas de logon do usuário dos formulários do AEM não são necessárias e não aparecem se o usuário já estiver autenticado por meio do portal da empresa.
 
 Você também pode ativar o SSO usando o SPNEGO. (Consulte [Habilitar SSO usando SPNEGO](enabling-single-sign-on-aem.md#enable-sso-using-spnego).)
 
@@ -66,7 +64,7 @@ Clique para saber as etapas para [atribuir funções a usuários e grupos](/help
 
 ## Habilitar SSO usando SPNEGO {#enable-sso-using-spnego}
 
-Você pode usar o Mecanismo de Negociação GSSAPI Simples e Protegido (SPNEGO) para habilitar o logon único (SSO) ao usar o Ative Diretory como seu servidor LDAP em um ambiente Windows. Quando o SSO está ativado, as páginas de logon do usuário dos formulários AEM não são necessárias e não são exibidas.
+Você pode usar o Mecanismo de Negociação GSSAPI Simples e Protegido (SPNEGO) para habilitar o logon único (SSO) ao usar o Ative Diretory como seu servidor LDAP em um ambiente Windows. Quando o SSO está ativado, as páginas de logon do usuário dos AEM Forms não são necessárias e não são exibidas.
 
 Você também pode ativar o SSO usando cabeçalhos HTTP. (Consulte [Habilitar SSO usando cabeçalhos HTTP](enabling-single-sign-on-aem.md#enable-sso-using-http-headers).)
 
@@ -75,7 +73,7 @@ Você também pode ativar o SSO usando cabeçalhos HTTP. (Consulte [Habilitar SS
 >O AEM Forms no JEE não é compatível com a configuração do SSO usando Kerberos/SPNEGO em vários ambientes de domínio filho.
 
 1. Decida qual domínio usar para habilitar o SSO. O AEM Forms Server e os usuários devem fazer parte do mesmo domínio do Windows ou domínio confiável.
-1. No Ative Diretory, crie um usuário que represente o AEM Forms Server. (Consulte [Criar uma conta de usuário](enabling-single-sign-on-aem.md#create-a-user-account).) Se você estiver configurando mais de um domínio para usar SPNEGO, verifique se as senhas de cada um desses usuários são diferentes. Se as senhas não forem diferentes, o SPNEGO SSO não funcionará.
+1. No Ative Diretory, crie um usuário que represente o AEM Forms Server. (Consulte [Criar uma conta de usuário](enabling-single-sign-on-aem.md#create-a-user-account).) Se você estiver configurando mais de um domínio para usar o SPNEGO, certifique-se de que as senhas de cada um desses usuários sejam diferentes. Se as senhas não forem diferentes, o SPNEGO SSO não funcionará.
 1. Mapeie o nome da entidade de serviço. (Consulte [Mapear um SPN (Nome da Entidade de Serviço)](enabling-single-sign-on-aem.md#map-a-service-principal-name-spn).)
 1. Configure o controlador de domínio. (Consulte [Evitar falhas de verificação de integridade Kerberos](enabling-single-sign-on-aem.md#prevent-kerberos-integrity-check-failures).)
 1. Adicione ou edite um domínio corporativo conforme descrito em [Adicionando domínios](/help/forms/using/admin-help/adding-domains.md#adding-domains) ou [Editando e convertendo domínios existentes](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains). Ao criar ou editar o domínio enterprise, execute estas tarefas:
@@ -84,19 +82,19 @@ Você também pode ativar o SSO usando cabeçalhos HTTP. (Consulte [Habilitar SS
    * Adicione o LDAP como um provedor de autenticação.
    * Adicione o Kerberos como um provedor de autenticação. Forneça as seguintes informações na página Nova ou Editar Autenticação do Kerberos:
 
-      * **Provedor de Autenticação:** Kerberos
-      * **IP do DNS:** O endereço IP do DNS do servidor onde os formulários AEM estão em execução. Você pode determinar este endereço IP executando `ipconfig/all` na linha de comando.
-      * **Host KDC:** Nome de host ou endereço IP totalmente qualificado do servidor do Ative Diretory usado para autenticação
-      * **Usuário do Serviço:** o SPN (nome da entidade de serviço) passado para a ferramenta KtPass. No exemplo usado anteriormente, o usuário do serviço é `HTTP/lcserver.um.lc.com`.
-      * **Realm de Serviço:** Nome de domínio do Ative Diretory. No exemplo usado anteriormente, o nome do Domínio é `UM.LC.COM.`
-      * **Senha do serviço:** Senha do usuário do serviço. No exemplo usado anteriormente, a senha do serviço é `password`.
-      * **Habilitar SPNEGO:** Habilita o uso do SPNEGO para logon único (SSO). Selecione esta opção.
+     * **Provedor de Autenticação:** Kerberos
+     * **IP do DNS:** O endereço IP do DNS do servidor onde o AEM Forms está em execução. Você pode determinar este endereço IP executando `ipconfig/all` na linha de comando.
+     * **Host KDC:** Nome de host ou endereço IP totalmente qualificado do servidor do Ative Diretory usado para autenticação
+     * **Usuário do Serviço:** o SPN (nome da entidade de serviço) passado para a ferramenta KtPass. No exemplo usado anteriormente, o usuário do serviço é `HTTP/lcserver.um.lc.com`.
+     * **Realm de Serviço:** Nome de domínio do Ative Diretory. No exemplo usado anteriormente, o nome do Domínio é `UM.LC.COM.`
+     * **Senha do serviço:** Senha do usuário do serviço. No exemplo usado anteriormente, a senha do serviço é `password`.
+     * **Habilitar SPNEGO:** Habilita o uso do SPNEGO para logon único (SSO). Selecione esta opção.
 
 1. Defina as configurações do navegador do cliente SPNEGO. (Consulte [Definindo as configurações do navegador do cliente SPNEGO](enabling-single-sign-on-aem.md#configuring-spnego-client-browser-settings).)
 
 ### Criar uma conta de usuário {#create-a-user-account}
 
-1. No SPNEGO, registre um serviço como um usuário no Ative Diretory no controlador de domínio para representar formulários AEM. No controlador de domínio, acesse Menu Iniciar > Ferramentas Administrativas > Usuários e Computadores do Ative Diretory. Se Ferramentas administrativas não estiver no menu Iniciar, use o Painel de controle.
+1. No SPNEGO, registre um serviço como um usuário no Ative Diretory no controlador de domínio para representar o AEM Forms. No controlador de domínio, acesse Menu Iniciar > Ferramentas Administrativas > Usuários e Computadores do Ative Diretory. Se Ferramentas administrativas não estiver no menu Iniciar, use o Painel de controle.
 1. Clique na pasta Usuários para exibir uma lista de usuários.
 1. Clique com o botão direito do mouse na pasta do usuário e selecione Novo > Usuário.
 1. Digite o Nome/Sobrenome e o Nome de logon do usuário e clique em Avançar. Por exemplo, defina os seguintes valores:

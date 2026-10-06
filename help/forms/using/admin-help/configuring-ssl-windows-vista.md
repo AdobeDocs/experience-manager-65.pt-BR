@@ -11,11 +11,9 @@ feature: Document Security
 role: User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '173'
+source-wordcount: '172'
 ht-degree: 0%
-
 ---
-
 # Configuração do SSL no Windows Vista {#configuring-ssl-on-windows-vista}
 
 Para configurar o SSL no Windows Vista™, você precisa de um certificado SSL com chaves RSA para autenticação. Você pode usar a ferramenta Chave Java para criar o certificado.

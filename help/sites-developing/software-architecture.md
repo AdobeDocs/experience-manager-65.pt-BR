@@ -1,26 +1,26 @@
 ---
 title: Arquitetura de software
 description: Conheça algumas práticas recomendadas para a arquitetura do seu software para Adobe Experience Manager.
+
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
+
 exl-id: cd4f3b4c-5488-4ca7-9c1e-b4c819fda8e8
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '612'
+source-wordcount: '623'
 ht-degree: 0%
-
 ---
-
 # Arquitetura de software{#software-architecture}
 
 ## Projeto para atualizações {#design-for-upgrades}
 
-Ao estender comportamentos prontos para uso, é importante manter as atualizações em mente. Sempre aplique personalizações no diretório /apps e sobreponha a parte superior dos nós correspondentes no diretório /libs ou use sling:resourceSuperType para estender o comportamento pronto para uso. Embora algumas modificações possam ser necessárias para suportar uma nova versão do AEM, a nova versão não deve substituir suas personalizações se essa prática for seguida.
+Ao estender comportamentos prontos para uso, é importante manter as atualizações em mente. Sempre aplique personalizações no diretório /apps e sobreponha a parte superior dos nós correspondentes no diretório /libs ou use sling:resourceSuperType para estender o comportamento imediato. Embora algumas modificações possam ser necessárias para oferecer suporte a uma nova versão do AEM, a nova versão não deve substituir suas personalizações se essa prática for seguida.
 
 ### Reutilizar modelo e componentes quando possível {#reuse-template-and-components-when-possible}
 

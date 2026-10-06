@@ -1,6 +1,6 @@
 ---
 title: Estender funcionalidade de pesquisa
-description: Estender os recursos de pesquisa de  [!DNL Adobe Experience Manager Assets]  além dos padrões.
+description: Estender os recursos de pesquisa do [!DNL Adobe Experience Manager Assets] além dos padrões.
 contentOwner: AG
 role: Developer
 feature: Search
@@ -8,11 +8,9 @@ exl-id: 9e33d1c0-232b-458a-ad6a-f595aa541a5a
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '814'
-ht-degree: 16%
-
+source-wordcount: '830'
+ht-degree: 7%
 ---
-
 # Estender pesquisa de ativos {#extending-assets-search}
 
 Você pode estender os recursos de pesquisa do [!DNL Adobe Experience Manager Assets]. Pronto para uso, [!DNL Experience Manager Assets] procura ativos por sequências de caracteres.
@@ -23,7 +21,7 @@ Você também pode adicionar outras guias ao painel de administração [!DNL Ass
 
 >[!CAUTION]
 >
->A partir do [!DNL Experience Manager] 6.4, a interface clássica será descontinuada. O Adobe recomenda usar a interface habilitada para toque. Para personalização, consulte [aspectos da pesquisa](/help/assets/search-facets.md).
+>A partir do [!DNL Experience Manager] 6.4, a interface clássica será descontinuada. A Adobe recomenda usar a interface habilitada para toque. Para personalização, consulte [aspectos da pesquisa](/help/assets/search-facets.md).
 
 ## Sobreposição {#overlaying}
 
@@ -140,7 +138,7 @@ Para criar um predicado de propriedade:
    </script>
    ```
 
-1. Para disponibilizar o componente, é necessário editá-lo. Para tornar um componente editável, no CRXDE, adicione um nó **cq:editConfig** do tipo primário **cq:EditConfig**. Para que possa remover parágrafos, adicione uma propriedade de vários valores **cq:actions** com um único valor **DELETE**.
+1. Para disponibilizar o componente, é necessário editá-lo. Para tornar um componente editável, no CRXDE, adicione um nó **cq:editConfig** do tipo primário **cq:EditConfig**. Para que você possa remover parágrafos, adicione uma propriedade de vários valores **cq:actions** com um único valor de **DELETE**.
 1. Navegue até o navegador e, na página de exemplo (por exemplo, **press.html**), alterne para o modo de design e habilite o novo componente para o sistema de parágrafo de predicado (por exemplo, **left**).
 
 1. No modo **Editar**, o novo componente agora está disponível no sidekick (encontrado no grupo **Pesquisar**). Insira o componente na coluna **Predicados** e digite uma palavra de pesquisa, por exemplo, **Diamante**, e clique na lupa para iniciar a pesquisa.
@@ -244,7 +242,7 @@ Para criar um predicado de grupo:
        });
    ```
 
-1. Para disponibilizar o componente, é necessário editá-lo. Para tornar um componente editável, no CRXDE, adicione um nó **cq:editConfig** do tipo primário **cq:EditConfig**. Para que possa remover parágrafos, adicione uma propriedade de vários valores **cq:actions** com um único valor **DELETE**.
+1. Para disponibilizar o componente, é necessário editá-lo. Para tornar um componente editável, no CRXDE, adicione um nó **cq:editConfig** do tipo primário **cq:EditConfig**. Para que você possa remover parágrafos, adicione uma propriedade de vários valores **cq:actions** com um único valor de **DELETE**.
 1. Navegue até o navegador e, na página de exemplo (por exemplo, **press.html**), alterne para o modo de design e habilite o novo componente para o sistema de parágrafo de predicado (por exemplo, **left**).
 1. No modo **Editar**, o novo componente agora está disponível no sidekick (encontrado no grupo **Pesquisar**). Insira o componente na coluna **Predicados**.
 

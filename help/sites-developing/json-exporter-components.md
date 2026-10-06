@@ -1,5 +1,5 @@
 ---
-title: Ativação de exportação em JSON para um componente
+title: Habilitação de exportação em JSON para um componente
 description: Os componentes podem ser adaptados para gerar a exportação JSON de seu conteúdo com base em uma estrutura de modelador.
 contentOwner: User
 content-type: reference
@@ -11,12 +11,10 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '471'
-ht-degree: 6%
-
+source-wordcount: '570'
+ht-degree: 12%
 ---
-
-# Ativação de exportação em JSON para um componente{#enabling-json-export-for-a-component}
+# Habilitação de exportação em JSON para um componente{#enabling-json-export-for-a-component}
 
 Os componentes podem ser adaptados para gerar a exportação JSON de seu conteúdo com base em uma estrutura de modelador.
 
@@ -77,7 +75,7 @@ A interface do modelo deve ser anotada corretamente para definir quais métodos 
 
 ## Exemplo {#example}
 
-Os Componentes Principais têm suporte para exportação JSON desde a versão [1.1.0 dos componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) e podem ser usados como referência.
+Os Componentes Principais têm suporte para exportação JSON desde a versão [1.1.0 dos componentes principais](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/introduction) e podem ser usados como referência.
 
 Para obter um exemplo, consulte a implementação do Modelo Sling do Componente principal de imagem e sua interface anotada.
 
@@ -85,7 +83,7 @@ CÓDIGO NO GITHUB
 
 Você pode encontrar o código desta página no GitHub
 
-* [Abrir o projeto aem-core-wcm-components no GitHub](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components)
+* [Abra o projeto aem-core-wcm-components no GitHub](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components)
 * Baixar o projeto como [um arquivo ZIP](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/archive/master.zip)
 
 ## Documentação relacionada {#related-documentation}
@@ -94,7 +92,7 @@ Para obter mais detalhes, consulte o seguinte:
 
 * O [tópico Fragmentos de conteúdo no guia do usuário do Assets](https://helpx.adobe.com/br/experience-manager/6-4/assets/user-guide.html?topic=/experience-manager/6-4/assets/morehelp/content-fragments.ug.js)
 
-* [Modelos de fragmentos do conteúdo](/help/assets/content-fragments/content-fragments-models.md)
+* [Modelos de fragmentos de conteúdo](/help/assets/content-fragments/content-fragments-models.md)
 * [Criação com fragmentos de conteúdo](/help/sites-authoring/content-fragments.md)
 * [Exportador JSON para serviços de conteúdo](/help/sites-developing/json-exporter.md)
-* [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) e o [componente de Fragmento de Conteúdo](https://helpx.adobe.com/br/experience-manager/core-components/using/content-fragment-component.html)
+* [Componentes principais](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/introduction) e o [componente de Fragmento de Conteúdo](https://helpx.adobe.com/br/experience-manager/core-components/using/content-fragment-component.html)

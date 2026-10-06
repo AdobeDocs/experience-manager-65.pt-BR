@@ -1,22 +1,24 @@
 ---
-title: Início rápido da API JavaAPI do serviço de integração de dados de formulário (SOAP)
-description: Use o serviço de Integração de dados de formulário para importar dados em um formulário PDF e exportar dados de um formulário PDF usando a API do Java.
+title: Início rápido da API Java do serviço de integração de dados de formulário (SOAP)
+
+description: Use o serviço de Integração de dados de formulário para importar dados para um formulário do PDF e exportar dados de um formulário do PDF usando a API do Java.
+
+
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
+
 role: Developer
 exl-id: a2560c87-ae95-4d65-869a-8cba177a1cd6
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '250'
+source-wordcount: '251'
 ht-degree: 0%
-
 ---
-
-# SOAP (Início rápido) da API Java do serviço de integração de dados de formulário {#form-data-integration-service-javaapi-quick-start-soap}
+# Início rápido da API Java do serviço de integração de dados de formulário (SOAP) {#form-data-integration-service-javaapi-quick-start-soap}
 
 Os seguintes Quick Starts estão disponíveis para o serviço de Integração de dados de formulário.
 
@@ -28,11 +30,11 @@ As operações do AEM Forms podem ser executadas usando a API altamente tipada d
 
 >[!NOTE]
 >
->O início rápido na programação com formulários AEM é baseado no Forms Server que está sendo implantado no JBoss Application Server e no sistema operacional Microsoft Windows. No entanto, se você estiver usando outro sistema operacional, como o UNIX, substitua caminhos específicos do Windows por caminhos compatíveis com o sistema operacional aplicável. Da mesma forma, se estiver usando outro servidor de aplicações J2EE, certifique-se de especificar propriedades de conexão válidas. Consulte [Definindo propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>O Início rápido na programação com o AEM Forms é baseado no Forms Server que está sendo implantado no JBoss Application Server e no sistema operacional Microsoft Windows. No entanto, se você estiver usando outro sistema operacional, como o UNIX, substitua caminhos específicos do Windows por caminhos compatíveis com o sistema operacional aplicável. Da mesma forma, se estiver usando outro servidor de aplicações J2EE, certifique-se de especificar propriedades de conexão válidas. Consulte [Definindo propriedades de conexão](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Início rápido (modo SOAP): importação de dados de formulário usando a API Java {#quick-start-soap-mode-importing-form-data-using-the-java-api}
 
-O exemplo de código Java a seguir importa dados para um formulário PDF. Os dados estão em um arquivo XML chamado *Loan_data.xml* e o formulário PDF é salvo como um arquivo PDF chamado *ResultLoanForm.pdf*. (Consulte [Importar Dados de Formulário](/help/forms/developing/importing-exporting-data.md#importing-form-data).)
+O exemplo de código Java a seguir importa dados para um formulário do PDF. Os dados estão em um arquivo XML chamado *Loan_data.xml* e o formulário do PDF é salvo como um arquivo PDF chamado *ResultLoanForm.pdf*. (Consulte [Importar Dados de Formulário](/help/forms/developing/importing-exporting-data.md#importing-form-data).)
 
 ```java
  /*
@@ -134,7 +136,7 @@ O exemplo de código Java a seguir importa dados para um formulário PDF. Os dad
 
 ## Início rápido (modo SOAP): exportação de dados de formulário usando a API Java {#quick-start-soap-mode-exporting-form-data-using-the-java-api}
 
-O exemplo de código Java a seguir exporta dados de um formulário PDF. Os dados do formulário são salvos como um arquivo XML chamado *Loan_data.xml*. (Consulte [Exportar Dados De Formulário](/help/forms/developing/importing-exporting-data.md#exporting-form-data).)
+O exemplo de código Java a seguir exporta dados de um formulário do PDF. Os dados do formulário são salvos como um arquivo XML chamado *Loan_data.xml*. (Consulte [Exportar Dados De Formulário](/help/forms/developing/importing-exporting-data.md#exporting-form-data).)
 
 ```java
  /*

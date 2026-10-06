@@ -1,21 +1,23 @@
 ---
 title: Extraindo strings para tradução
+
 description: Usar xgettext-maven-plugin para extrair strings do código-fonte que precisam ser traduzidas
+
+
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: components
+
 exl-id: 4acc5f7f-0bcb-4b5a-8531-52e146cffeae
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '475'
+source-wordcount: '482'
 ht-degree: 0%
-
 ---
-
 # Extraindo strings para tradução{#extracting-strings-for-translating}
 
 Use xgettext-maven-plugin para extrair strings do código-fonte que precisam ser traduzidas. O plug-in Maven extrai strings para um arquivo XLIFF que você envia para tradução. As cadeias de caracteres são extraídas dos seguintes locais:
@@ -83,7 +85,7 @@ Quando usado dentro de um padrão, o caractere / indica um subdiretório e o car
   </tr>
   <tr>
    <td><code>{ /exclude "*.pdf" }</code></td>
-   <td>Excluir todos os arquivos PDF.</td>
+   <td>Excluir todos os arquivos do PDF.</td>
   </tr>
   <tr>
    <td><code> { /exclude "*/pom.xml" }</code></td>

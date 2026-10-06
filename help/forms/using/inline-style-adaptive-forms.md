@@ -1,8 +1,12 @@
 ---
 title: Estilo em linha de componentes de formulário adaptáveis
+
 description: Embora você possa aplicar estilos personalizados em um formulário adaptável, também pode aplicar propriedades CSS em linha a componentes individuais de um formulário adaptável.
+
+
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
+
 docset: aem65
 feature: Adaptive Forms,Foundation Components
 exl-id: 67cfecb8-c31d-4192-904d-7bfaa1a31ea5
@@ -10,14 +14,12 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '592'
-ht-degree: 4%
-
+source-wordcount: '638'
+ht-degree: 6%
 ---
-
 # Estilo em linha de componentes de formulário adaptáveis {#inline-styling-of-adaptive-form-components}
 
-O <span class="preview"> Adobe recomenda o uso de [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adicionar o Forms Adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
+A Adobe <span class="preview"> recomenda usar os [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adicionar o Forms Adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
@@ -41,7 +43,7 @@ Para adicionar estilos em linha a um componente:
 
 1. Clique em uma guia na barra lateral para especificar as propriedades de CSS. É possível especificar propriedades como:
 
-   * Dimension e Posição (configuração de exibição, preenchimento, altura, largura, margem, posição, índice z, flutuação, limpar, estouro)
+   * Dimensões e Posição (configuração de exibição, preenchimento, altura, largura, margem, posição, índice z, flutuante, limpar, estouro)
    * Texto (Família da fonte, peso, cor, tamanho, altura da linha e alinhamento)
    * Plano de fundo (imagem e gradiente, cor do plano de fundo)
    * Borda (largura, estilo, cor, raio)

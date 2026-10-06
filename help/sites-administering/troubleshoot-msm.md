@@ -7,11 +7,9 @@ exl-id: 23f3391b-5ce3-48e1-ab27-a37737778089
 solution: Experience Manager, Experience Manager Sites
 source-git-commit: 3aa55b88f589749fb49d5ff46340b0912d490157
 workflow-type: tm+mt
-source-wordcount: '762'
-ht-degree: 58%
-
+source-wordcount: '767'
+ht-degree: 57%
 ---
-
 # Solução de problemas e perguntas frequentes do MSM {#troubleshooting-msm}
 
 ## Primeiras etapas da solução de problemas {#first-steps}
@@ -28,14 +26,12 @@ O MSM registra vários servlets que podem ser solicitados com seletores nos URLs
 1. `http://<host>:<port>/content/path/to/bluprint/page.blueprint.json?&maxSize=500&advancedStatus=true&returnRelationships=true&msm%3Atrigger=ROLLOUT`
    * Use isso em uma página de blueprint para recuperar a lista de todas as Live Copies vinculadas a ela, com informações adicionais sobre o status da Live Copy.
    * por exemplo:
-
      `http://localhost:4502/content/wknd/language-masters/en.blueprint.json?&maxSize=500&advancedStatus=true&returnRelationships=true&msm%3Atrigger=ROLLOUT`
 
 
 1. `http://<host>:<port>/content/path/to/livecopy/page.msm.json`
    * Use isso nas páginas de Live Copy para recuperar informações avançadas sobre suas conexões com as páginas de blueprint. Se a página não for uma Live Copy, nada será retornado.
    * por exemplo:
-
      `http://localhost:4502/content/wknd/ca/en.msm.json`
 
 Esses servlets geram mensagens de log DEBUG por meio do logger `com.day.cq.wcm.msm`, que também pode ser útil.
@@ -45,17 +41,17 @@ Esses servlets geram mensagens de log DEBUG por meio do logger `com.day.cq.wcm.m
 Os servlets anteriores retornavam informações computadas com base nos nós e mixins específicos do MSM. As informações são armazenadas no repositório da seguinte maneira.
 
 * Tipo de mixin `cq:LiveSync`
-   * Isso é configurado em nós `jcr:content` e define páginas raiz da Live Copy.
-   * Essas páginas têm um nó filho `cq:LiveSyncConfig` do tipo `cq:LiveCopy`, que contém informações básicas e obrigatórias sobre a Live Copy por meio das seguintes propriedades:
-      * `cq:master` aponta para a página de blueprint da Live Copy.
-      * `cq:rolloutConfigs` indica as configurações de implementação ativas aplicadas à Live Copy.
-      * `cq:isDeep` é verdadeiro se as páginas secundárias desta página raiz da Live Copy estiverem incluídas na Live Copy.
+  * Isso é configurado em nós `jcr:content` e define páginas raiz da Live Copy.
+  * Essas páginas têm um nó filho `cq:LiveSyncConfig` do tipo `cq:LiveCopy`, que contém informações básicas e obrigatórias sobre a Live Copy por meio das seguintes propriedades:
+    * `cq:master` aponta para a página de blueprint da Live Copy.
+    * `cq:rolloutConfigs` indica as configurações de implementação ativas aplicadas à Live Copy.
+    * `cq:isDeep` é verdadeiro se as páginas filhas desta página raiz da Live Copy estiverem incluídas na Live Copy.
 * Tipo de mixin `cq:LiveRelationship`
-   * Qualquer página da Live Copy tem um tipo de mixin em seu nó `jcr:content`.
-   * Caso contrário, em algum momento, a página foi desconectada ou criada manualmente por meio da interface de criação fora de uma ação de Live Copy (criar ou implantar).
+  * Qualquer página da Live Copy tem um tipo de mixin em seu nó `jcr:content`.
+  * Caso contrário, em algum momento, a página foi desconectada ou criada manualmente por meio da interface de criação fora de uma ação de Live Copy (criar ou implantar).
 * Tipo de mixin `cq:LiveSyncCancelled`
-   * Adicionado aos nós `jcr:content` de páginas de Live Copy que foram suspensas.
-   * Se a suspensão também for eficaz para páginas secundárias, uma propriedade `cq:isCancelledForChildren` é definida como verdadeira no mesmo nó.
+  * Adicionado aos nós `jcr:content` de páginas de Live Copy que foram suspensas.
+  * Se a suspensão também for eficaz para páginas filhas, uma propriedade `cq:isCancelledForChildren` é definida como verdadeira no mesmo nó.
 
 As informações presentes nessas propriedades devem ser refletidas na interface, no entanto, ao solucionar problemas, pode ser útil observar o comportamento do MSM diretamente no repositório, à medida que as ações do MSM ocorrem.
 

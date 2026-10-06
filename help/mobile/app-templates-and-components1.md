@@ -11,11 +11,9 @@ feature: Mobile
 role: User
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '387'
+source-wordcount: '382'
 ht-degree: 1%
-
 ---
-
 # Modelos e componentes do aplicativo{#app-templates-and-components}
 
 {{ue-over-mobile}}
@@ -29,13 +27,13 @@ Cada modelo apresenta uma seleção de componentes disponíveis para uso.
 
 >[!NOTE]
 >
->Para saber como desenvolver o aplicativo Adobe Experience Manager (AEM) usando o CRXDE Lite, consulte [Desenvolvimento com o CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
+>Para saber como desenvolver seu aplicativo do Adobe Experience Manager (AEM) usando o CRXDE Lite, consulte [Desenvolvimento com o CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
 
 Um modelo é a base de uma página.
 
 Para criar uma página, o modelo deve ser copiado (árvore de nó **/apps/&lt;myapp>/templates/&lt;mytemplate>**) para a posição correspondente na árvore de site: isso é o que acontece se uma página é criada usando a guia **Sites**.
 
-Essa ação de cópia também fornece à página seu conteúdo inicial (geralmente, Conteúdo de nível superior somente) e a propriedade sling:resourceType, o caminho para o componente de página usado para renderizar a página (tudo no nó filho jcr:content).
+Essa ação de cópia também fornece à página seu conteúdo inicial (geralmente, Conteúdo de Nível Superior) e a propriedade sling:resourceType, o caminho para o componente da página usado para renderizar a página (tudo no nó filho jcr:content).
 
 ## Estrutura de um modelo {#structure-of-a-template}
 
@@ -49,13 +47,13 @@ Um Modelo foi criado em um nó do tipo **cq:Template**.
 Várias propriedades podem ser definidas, em particular:
 
 * **jcr:title** - título do modelo; aparece na caixa de diálogo ao criar uma página.
-* **jcr:description** - descrição do modelo; aparece na caixa de diálogo ao criar uma página.
+* **jcr:description** - descrição do modelo; aparece no diálogo ao criar uma página.
 
-Este nó contém o nó *a jcr:content (cq:PageContent)* usado como base para o nó de conteúdo das páginas resultantes. Isso faz referência, usando *sling:resourceType*, ao componente a ser usado para renderizar o conteúdo real de uma nova página.
+Este nó contém o nó *a jcr:content (cq:PageContent)* que é usado como base para o nó de conteúdo das páginas resultantes. Isso faz referência, usando *sling:resourceType*, ao componente a ser usado para renderizar o conteúdo real de uma nova página.
 
 >[!NOTE]
 >
->Para saber mais sobre as noções básicas para modelos e componentes no AEM, consulte os recursos abaixo:
+>Para saber mais sobre as noções básicas de modelos e componentes no AEM, consulte os recursos abaixo:
 >
 >* [Modelos](/help/sites-developing/templates.md)
 >* [Componentes](/help/sites-developing/components.md)

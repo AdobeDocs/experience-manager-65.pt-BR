@@ -1,10 +1,14 @@
 ---
 title: Modelos
+
 description: Os modelos são usados ao criar uma página que é usada como base para a nova página.
+
+
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
+
 legacypath: /content/docs/en/aem/6-1/develop/the-basics/templates
 exl-id: 59f01bb1-4ff1-42b6-afc9-56d448b1f803
 solution: Experience Manager, Experience Manager Sites
@@ -12,14 +16,12 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '924'
-ht-degree: 0%
-
+source-wordcount: '943'
+ht-degree: 2%
 ---
-
 # Modelos{#templates}
 
-Modelos são usados em vários pontos no AEM:
+Os modelos são usados em vários pontos do AEM:
 
 * [Ao criar uma página, selecione um modelo](#templates-pages). Esse modelo é usado como base para a nova página. O modelo define a estrutura da página, qualquer conteúdo inicial e os [componentes](/help/sites-authoring/default-components.md) que podem ser usados (propriedades de design).
 
@@ -34,7 +36,7 @@ Os seguintes templates são abordados em detalhes:
 
 ## Modelos - Páginas {#templates-pages}
 
-O AEM agora oferece dois tipos básicos de modelos para a criação de páginas:
+O AEM agora oferece dois tipos básicos de modelos para criar páginas:
 
 >[!NOTE]
 >
@@ -42,7 +44,7 @@ O AEM agora oferece dois tipos básicos de modelos para a criação de páginas:
 
 ### Modelos editáveis {#editable-templates}
 
-Os modelos editáveis agora são considerados práticas recomendadas para desenvolvimento com AEM.
+Os modelos editáveis agora são considerados práticas recomendadas para desenvolvimento com o AEM.
 
 As vantagens dos Modelos editáveis:
 
@@ -50,9 +52,9 @@ As vantagens dos Modelos editáveis:
 
 * Foram introduzidos para permitir que você defina o seguinte para qualquer página criada com o modelo:
 
-   * a estrutura
-   * o conteúdo inicial
-   * políticas de conteúdo
+  * a estrutura
+  * o conteúdo inicial
+  * políticas de conteúdo
 
 * Após a criação da nova página, uma conexão dinâmica é mantida entre a página e o modelo. Essa conexão significa que as alterações na estrutura do modelo são refletidas em qualquer página criada com esse modelo; as alterações no conteúdo inicial não são refletidas.
 * Usa políticas de conteúdo (editadas pelo editor de modelo) para manter as propriedades de design (não usa o modo Design no editor de páginas).
@@ -61,14 +63,14 @@ As vantagens dos Modelos editáveis:
 
 >[!NOTE]
 >
->Consulte [Usar modelos de página editáveis para desenvolver um site de Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=pt-BR).
+>Consulte [Usar modelos de página editáveis para desenvolver um site do Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=pt-BR).
 
 ### Modelos estáticos {#static-templates}
 
 Modelos estáticos:
 
 * Deve ser definido e configurado pelos desenvolvedores.
-* O sistema de modelo original do AEM que está disponível para muitas versões.
+* O sistema de modelos original do AEM que está disponível para muitas versões.
 * Um modelo estático é uma hierarquia de nós que tem a mesma estrutura que a página a ser criada, mas sem nenhum conteúdo real.
 * São copiados para criar a página; não existe conexão dinâmica depois.
 * Usa o [Modo de Design](/help/sites-authoring/default-components-designmode.md) para manter as propriedades de design.
@@ -85,9 +87,9 @@ Modelos estáticos:
 
 >[!CAUTION]
 >
->O AEM oferece várias propriedades para controlar os modelos permitidos em **Sites**. No entanto, combiná-los pode levar a regras complexas que são difíceis de rastrear e gerenciar.
+>A AEM oferece várias propriedades para controlar os modelos permitidos em **Sites**. No entanto, combiná-los pode levar a regras complexas que são difíceis de rastrear e gerenciar.
 >
->Portanto, o Adobe recomenda que você comece de forma simples, definindo:
+>Portanto, a Adobe recomenda começar simples, definindo:
 >
 >* somente a propriedade `cq:allowedTemplates`
 >
