@@ -21,7 +21,7 @@ O recurso Comparar nos Componentes principais do Forms adaptável ajuda os autor
 
 ## Pré-requisitos {#prerequisite-versioning}
 
-Para usar o recurso Comparar em um Formulário Adaptável baseado em Componentes Principais, verifique se os [Componentes Principais do Formulário Adaptável](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components) estão habilitados em seu ambiente do AEM 6.5 Forms.
+Para usar o recurso Comparar em um Formulário Adaptável baseado em Componentes Principais, verifique se os [Componentes Principais do Formulário Adaptável](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components) estão habilitados em seu ambiente do AEM 6.5 Forms.
 
 ## Comparar formulários adaptáveis distintos {#compare-af-65}
 
