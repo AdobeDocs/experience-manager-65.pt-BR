@@ -12,11 +12,9 @@ feature: Authoring
 role: User
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '763'
-ht-degree: 7%
-
+source-wordcount: '770'
+ht-degree: 8%
 ---
-
 # Anotações ao editar uma página{#annotations-when-editing-a-page}
 
 Adicionar conteúdo às páginas do seu site geralmente está sujeito a discussões antes de realmente ser publicado. Para auxiliar nisso, muitos componentes diretamente relacionados ao conteúdo (em vez de, por exemplo, para layout) permitem adicionar uma anotação.
@@ -86,13 +84,13 @@ Os rascunhos são um recurso de anotações que permitem criar gráficos de linh
 * O cursor se transforma em um fio cruzado quando você está no modo de rascunho. Você pode desenhar várias linhas distintas.
 * A linha de rascunho reflete a cor da anotação e pode ser:
 
-   * à mão livre
+  * à mão livre
 
-     o modo padrão; termine soltando o botão do mouse.
+    o modo padrão; termine soltando o botão do mouse.
 
-   * reta:
+  * reta:
 
-     mantenha a tecla `ALT` pressionada e clique nos pontos inicial e final. conclua com um clique duplo.
+    mantenha a tecla `ALT` pressionada e clique nos pontos inicial e final. conclua com um clique duplo.
 
 * Depois de sair do modo de rascunho, você pode clicar em uma linha de rascunho para selecioná-lo.
 * Mover um rascunho selecionando-o e arrastando-o para a posição desejada.

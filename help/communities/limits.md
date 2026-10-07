@@ -11,11 +11,9 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '424'
+source-wordcount: '436'
 ht-degree: 0%
-
 ---
-
 # Limites de contribuição do membro {#member-contribution-limits}
 
 ## Visão geral {#overview}
@@ -42,7 +40,7 @@ Para acessar essa configuração OSGi:
 * Faça logon com privilégios de administrador.
 * Acesse o [Console da Web](../../help/sites-deploying/configuring-osgi.md).
 
-   * Por exemplo, [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
+  * Por exemplo, [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
 
 * Localizar `AEM Communities User Generated Content Contribution Limits Configuration`.
 * Selecione o ícone de edição.
@@ -69,11 +67,11 @@ Para acessar essa configuração OSGi:
 
 * **[!UICONTROL Domínios]**
 
-  Uma lista de inclui na lista de permissões de um ou mais domínios de email. Selecione o ícone + para criar entradas adicionais.
+  Uma lista incluída na lista de permissões de um ou mais domínios de e-mail. Selecione o ícone + para criar entradas adicionais.
 
-  Incluir na lista de permissões Os usuários com endereços de email na pesquisa de domínios não são afetados quando os limites de contribuição UGC são aplicados automaticamente. Por exemplo, se o domínio `mycompany.com` for adicionado à lista de domínios, um membro com endereço de email `me@mycompany.com` nunca será impedido de postar.
+  Os usuários com endereços de email no incluo na lista de permissões de domínios não são afetados quando os limites de contribuição UGC são aplicados automaticamente. Por exemplo, se o domínio `mycompany.com` for adicionado à lista de domínios, um membro com endereço de email `me@mycompany.com` nunca será impedido de postar.
 
-  O padrão é uma inclui na lista de permissões vazia.
+  O padrão é um incluo na lista de permissões vazio.
 
 * **[!UICONTROL Destinatários de Mensagens]**
 

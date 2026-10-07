@@ -10,22 +10,20 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '1790'
+source-wordcount: '1820'
 ht-degree: 1%
-
 ---
-
 # Tutorial: Criar modelos{#tutorial-create-templates}
 
 ![07-aplicar-regras-ao-formulário-adaptável_pequeno](assets/07-apply-rules-to-adaptive-form_small.png)
 
 Este tutorial é uma etapa da série [Criar sua primeira Comunicação Interativa](/help/forms/using/create-your-first-interactive-communication.md). É recomendável seguir a série em sequência cronológica para entender, executar e demonstrar o caso de uso completo do tutorial.
 
-Para criar uma comunicação interativa, você deve ter modelos disponíveis no servidor AEM para impressão e canais da Web.
+Para criar uma comunicação interativa, você deve ter modelos disponíveis no servidor do AEM para impressão e canais da Web.
 
-Os modelos para o canal de impressão são criados no Adobe Forms Designer e carregados no servidor de AEM. Esses modelos ficam disponíveis para uso ao criar uma Comunicação interativa.
+Os modelos para o canal de impressão são criados no Adobe Forms Designer e carregados no servidor do AEM. Esses modelos ficam disponíveis para uso ao criar uma Comunicação interativa.
 
-Os templates para o canal da Web são criados no AEM. Os autores e administradores de modelos podem criar, editar e ativar modelos da Web. Depois de criados e ativados, esses modelos ficam disponíveis para uso ao criar uma Comunicação interativa.
+Os modelos para o canal da Web são criados no AEM. Os autores e administradores de modelos podem criar, editar e ativar modelos da Web. Depois de criados e ativados, esses modelos ficam disponíveis para uso ao criar uma Comunicação interativa.
 
 Este tutorial o guiará pelas etapas para criar modelos para canais de Impressão e da Web, de modo que fiquem disponíveis para uso durante a criação de Comunicações interativas. Ao final deste tutorial, você será capaz de:
 
@@ -89,8 +87,8 @@ Para criar um modelo XDP para o canal de impressão, faça o seguinte:
    * Resumo da fatura
    * Resumo - Selecione a guia **Subformulário** e selecione **Posicionado** na lista suspensa **Conteúdo** para este subformulário. Insira os seguintes subformulários no subformulário **Resumo**.
 
-      * Encargos
-      * Gráficos
+     * Encargos
+     * Gráficos
 
    * ChamadasDiscriminadas
    * PayNow

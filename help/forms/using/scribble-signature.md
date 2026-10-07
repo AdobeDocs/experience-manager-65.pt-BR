@@ -1,23 +1,26 @@
 ---
-title: Uso da Assinatura Escrita em formulários HTML5
+title: Uso da Assinatura Escrita em Formulários HTML5
+
 description: Os formulários HTML5 são cada vez mais usados em dispositivos de toque, e um requisito comum é o suporte a assinaturas. Assinar documentos em dispositivos móveis está se tornando uma maneira aceita de assinar formulários em dispositivos móveis.
+
+
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: designer
+
 docset: aem65
+
 feature: Forms Designer,Designer
 exl-id: 2025182f-195b-40d0-aee7-67669f55b964
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '655'
+source-wordcount: '657'
 ht-degree: 0%
-
 ---
-
-# Uso da Assinatura Escrita em formulários HTML5{#using-scribble-signature-in-html-forms}
+# Uso da Assinatura Escrita em Formulários HTML5{#using-scribble-signature-in-html-forms}
 
 Os formulários HTML5 são cada vez mais usados em dispositivos de toque, e um requisito comum é o suporte a assinaturas. Escrever (com uma caneta ou um dedo) está se tornando uma maneira aceita de assinar formulários em dispositivos móveis. Os formulários HTML5 e o Forms Designer agora permitem a opção de ter um campo de assinatura à mão no formulário. Quando o formulário é renderizado no navegador, é possível assinar esses campos usando uma caneta, um mouse ou um toque.
 
@@ -30,7 +33,7 @@ Os formulários HTML5 são cada vez mais usados em dispositivos de toque, e um r
 
    >[!NOTE]
    >
-   >Os Dimension do campo selecionado no Forms Designer são refletidos quando o campo é renderizado. No entanto, a dimensão da caixa de assinatura renderizada é calculada com base na proporção do campo, e não na dimensão especificada no Forms Designer.
+   >As dimensões do campo selecionado no Forms Designer são refletidas quando o campo é renderizado. No entanto, a dimensão da caixa de assinatura renderizada é calculada com base na proporção do campo, e não na dimensão especificada no Forms Designer.
 
 1. Configure o campo Assinatura Escrita.
 
@@ -58,7 +61,7 @@ Os formulários HTML5 são cada vez mais usados em dispositivos de toque, e um r
 
 ## Interface com as assinaturas escritas {#interfacing-with-the-scribble-signatures}
 
-### Assinatura {#signing}
+### Assinando {#signing}
 
 Depois que um campo Rabiscar de assinatura é adicionado ao formulário e renderizado, clicar ou tocar no campo abre uma caixa de diálogo. O usuário pode rabiscar uma assinatura na área de desenho designada por um retângulo pontilhado, usando um mouse, dedo ou caneta.
 
