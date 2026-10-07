@@ -12,11 +12,9 @@ feature: Administering,Personalization
 role: Admin
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '1961'
+source-wordcount: '2007'
 ht-degree: 0%
-
 ---
-
 
 # ClientContext{#client-context}
 
@@ -63,7 +61,7 @@ O Contexto do Cliente pode mostrar as seguintes propriedades ([dependendo do que
 * a posição X **do** mouse
 * a posição Y **do** mouse
 
-**Fluxo de Atividade** Fornece informações sobre a atividade social do usuário em várias plataformas; por exemplo, os fóruns de AEM, blogs, classificações etc.
+**Fluxo de Atividade** Fornece informações sobre a atividade social do usuário em várias plataformas; por exemplo, os fóruns, blogs, classificações da AEM e assim por diante.
 
 **Campanha** Permite que os autores simulem uma experiência específica para uma campanha. Esse componente substitui a resolução normal da campanha e a seleção de experiência para permitir o teste de várias permutações.
 
@@ -87,7 +85,7 @@ Quando exibido na Context Cloud, o componente usa uma API do Google para exibir 
 
 >[!NOTE]
 >
->No AEM 6.1, a loja de geolocalização não fornece mais o recurso de geocodificação reversa. Portanto, a loja de Geolocalização não recupera mais detalhes sobre a localização atual, como o nome da cidade ou o código do país. Os segmentos que usam esses dados de armazenamento não funcionarão corretamente. O armazenamento de Geolocalização contém apenas a latitude e a longitude de um local.
+>No AEM 6.1, o armazenamento de geolocalização não fornece mais o recurso de geocodificação reversa. Portanto, a loja de Geolocalização não recupera mais detalhes sobre a localização atual, como o nome da cidade ou o código do país. Os segmentos que usam esses dados de armazenamento não funcionarão corretamente. O armazenamento de Geolocalização contém apenas a latitude e a longitude de um local.
 
 **Armazenamento JSONP** Um componente que exibe conteúdo que depende de sua instalação.
 
@@ -217,19 +215,19 @@ Depois de abrir a **página de design do ClientContext**, você também pode **A
 
 ### Remoção de um componente de propriedade {#removing-a-property-component}
 
-Depois de abrir a **página de design do ClientContext**, você também pode **Remover** uma propriedade, se não for mais necessária. Isso inclui propriedades fornecidas prontas para uso; **Redefinir** as recolocará se tiverem sido removidas.
+Depois de abrir a **página de design do ClientContext**, você também pode **Remover** uma propriedade se não for mais necessária. Isso inclui propriedades fornecidas prontas para uso; **Redefinir** as recolocará se tiverem sido removidas.
 
 ## Armazenamento de dados no contexto do cliente por meio do JSONP {#storing-data-in-client-context-via-jsonp}
 
 Siga este exemplo para usar o componente de armazenamento de contexto do JSONP Store para adicionar dados externos ao Client Context. Em seguida, crie um segmento com base nas informações desses dados. O exemplo usa o serviço JSONP fornecido pelo WIPmania.com. O serviço retorna informações de geolocalização com base no endereço IP do cliente Web.
 
-Este exemplo usa o site de amostra do Geometrixx Outdoors para acessar o Contexto do cliente e testar o segmento criado. Você pode usar um site diferente se a página tiver ativado o Contexto do cliente. (Consulte [Adicionando Contexto de Cliente a uma Página](/help/sites-developing/client-context.md#adding-client-context-to-a-page).)
+Este exemplo usa o site de amostra do Geometrixx Outdoors para acessar o Client Context e testar o segmento criado. Você pode usar um site diferente se a página tiver ativado o Contexto do cliente. (Consulte [Adicionando Contexto de Cliente a uma Página](/help/sites-developing/client-context.md#adding-client-context-to-a-page).)
 
 ### Adicionar o componente de armazenamento JSONP {#add-the-jsonp-store-component}
 
 Adicione o componente JSONP Store ao Client Context e use-o para recuperar e armazenar informações de geolocalização sobre o cliente Web.
 
-1. Abra a página inicial em inglês do site Geometrixx Outdoors na instância do autor AEM. ([https://localhost:4502/content/geometrixx-outdoors/en.html](https://localhost:4502/content/geometrixx-outdoors/en.html)).
+1. Abra a página inicial em inglês do site do Geometrixx Outdoors na instância do autor do AEM. ([https://localhost:4502/content/geometrixx-outdoors/en.html](https://localhost:4502/content/geometrixx-outdoors/en.html)).
 1. Para abrir o Client Context, pressione Ctrl-Alt-c (windows) ou control-option-c (Mac).
 1. Clique no ícone de edição na parte superior do Contexto do cliente para abrir o Designer do Contexto do cliente.
 
