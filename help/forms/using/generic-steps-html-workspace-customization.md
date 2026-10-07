@@ -12,11 +12,9 @@ feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '300'
+source-wordcount: '302'
 ht-degree: 1%
-
 ---
-
 # Etapas genéricas para personalização do espaço de trabalho do AEM Forms {#generic-steps-for-aem-forms-workspace-customization}
 
 As etapas genéricas para executar qualquer personalização são:
@@ -84,7 +82,7 @@ As etapas genéricas para executar qualquer personalização são:
 
    1. Copiar pasta `/libs/ws/js/libs/jqueryui` para `/apps/ws/js/libs`. Clique em **[!UICONTROL Salvar tudo]**.
 
-1. Faça o seguinte para personalizações de HTML:
+1. Faça o seguinte para personalizações do HTML:
 
    1. Em `/apps/ws/js`, crie uma pasta chamada `runtime`. Clique em **[!UICONTROL Salvar tudo]**.
 

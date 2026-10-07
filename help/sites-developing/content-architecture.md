@@ -11,11 +11,9 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '421'
+source-wordcount: '425'
 ht-degree: 0%
-
 ---
-
 # Arquitetura de conteúdo{#content-architecture}
 
 ## Siga o modelo de David {#follow-david-s-model}
@@ -46,22 +44,22 @@ Os servlets devem ser definidos com base em resourceTypes em vez de caminhos. Is
 
 ### Evitar a definição de novos tipos de nó {#avoid-defining-new-node-types}
 
-Os tipos de nó funcionam em um nível baixo na camada de infraestrutura e a maioria dos requisitos pode ser atendida usando um sling:resourceType atribuído a um tipo de nó nt:unstructured, oak:Unstructured, sling:Folder ou cq:Page. Os tipos de nó equivalem ao esquema no repositório e alterar os tipos de nó pode custar caro.
+Os tipos de nó funcionam em um nível baixo na camada de infraestrutura e a maioria dos requisitos pode ser atendida usando uma sling:resourceType atribuída a um tipo de nó nt:unstructured, oak:Unstructured, sling:Folder ou cq:Page. Os tipos de nó equivalem ao esquema no repositório e alterar os tipos de nó pode custar caro.
 
 ### Seguir as convenções de nomenclatura no JCR {#adhere-to-naming-conventions-in-the-jcr}
 
-Seguir convenções de nomenclatura adiciona consistência à base de código, reduzindo a taxa de incidência de defeitos e aumentando a velocidade dos desenvolvedores que trabalham no sistema. As seguintes convenções são usadas pelo Adobe no desenvolvimento do AEM:
+Seguir convenções de nomenclatura adiciona consistência à base de código, reduzindo a taxa de incidência de defeitos e aumentando a velocidade dos desenvolvedores que trabalham no sistema. As seguintes convenções são usadas pela Adobe no desenvolvimento do AEM:
 
 * Nomes de nós
 
-   * Todas em minúsculas
-   * Separação de palavras usando hifens
+  * Todas em minúsculas
+  * Separação de palavras usando hifens
 
 * Nomes de propriedades
 
-   * Camel case, começando com uma letra minúscula
+  * Camel case, começando com uma letra minúscula
 
 * Componentes (JSP/HTML)
 
-   * Todas em minúsculas
-   * Separação de palavras usando hifens
+  * Todas em minúsculas
+  * Separação de palavras usando hifens

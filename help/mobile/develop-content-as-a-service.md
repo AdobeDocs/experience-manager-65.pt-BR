@@ -10,16 +10,14 @@ feature: Mobile
 role: User
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '955'
+source-wordcount: '977'
 ht-degree: 0%
-
 ---
-
 # Entrega de conteúdo{#content-delivery}
 
 {{ue-over-mobile}}
 
-Os aplicativos móveis devem poder usar todo o conteúdo no AEM conforme necessário para fornecer a experiência do aplicativo direcionado.
+Os Aplicativos móveis devem poder usar todo o conteúdo no AEM conforme necessário para fornecer a experiência do aplicativo direcionado.
 
 Isso inclui o uso de ativos, conteúdo do site, conteúdo do CaaS (ao ar) e conteúdo personalizado que pode ter sua própria estrutura.
 
@@ -29,15 +27,15 @@ Isso inclui o uso de ativos, conteúdo do site, conteúdo do CaaS (ao ar) e cont
 
 Há três tipos principais de material que os Serviços de conteúdo fornecem:
 
-1. **Assets**
-1. **Conteúdo de HTML empacotado (HTML/CSS/JS)**
+1. **Ativos**
+1. **Conteúdo empacotado do HTML (HTML/CSS/JS)**
 1. **Conteúdo independente de canal**
 
 ![chlimage_1-154](assets/chlimage_1-154.png)
 
 ## Ativos {#assets}
 
-Coleções de ativos são construções AEM que contêm referências a outras coleções.
+As coleções de ativos são construções do AEM que contêm referências a outras coleções.
 
 Uma coleção de ativos pode ser exposta por meio dos Serviços de conteúdo. Chamar uma coleção de ativos em uma solicitação retorna um objeto que é uma lista dos ativos, incluindo seus URLs. O Assets é acessado por meio de um URL. O URL é fornecido em um objeto. Por exemplo:
 
@@ -67,7 +65,7 @@ O diagrama a seguir mostra o **Fluxo de Trabalho de Referência do Assets**:
 
 ### Gerenciamento do Assets {#managing-assets}
 
-Os Content Services fornecem acesso a ativos gerenciados pelo AEM que podem não ser referenciados por meio de outro conteúdo AEM.
+Os Content Services fornecem acesso a ativos gerenciados pela AEM que podem não ser referenciados por meio de outro conteúdo do AEM.
 
 #### Assets gerenciado existente {#existing-managed-assets}
 
@@ -83,7 +81,7 @@ Atualmente, eles estão espalhados pelo repositório do Assets. Os arquivos que 
 
 #### Acesso às entidades do CS Asset {#accessing-cs-asset-entities}
 
-Vamos deixar de lado as etapas de como a página é disponibilizada por meio da API por enquanto (ela é coberta pela descrição da interface do usuário do AEM) e supor que isso tenha sido feito. As entidades de ativos foram criadas e adicionadas ao espaço &quot;appImages&quot;. Pastas adicionais foram criadas no espaço para fins de organização. Portanto, as entidades de ativo são armazenadas no AEM JCR como:
+Vamos deixar de lado as etapas de como a página é disponibilizada por meio da API por enquanto (ela é abordada pela descrição da interface do usuário do AEM) e supor que isso tenha sido feito. As entidades de ativos foram criadas e adicionadas ao espaço &quot;appImages&quot;. Pastas adicionais foram criadas no espaço para fins de organização. Portanto, as entidades do ativo são armazenadas no AEM JCR como:
 
 * /content/entities/appImages/logos/logo_light
 * /content/entities/appImages/logos/logo_dark
@@ -105,11 +103,11 @@ O JSON fornece um URL para cada imagem gerada pelos Serviços de conteúdo para 
 
 Para obter o binário da imagem do &quot;carrinho&quot;, a biblioteca do cliente é usada novamente.
 
-## Conteúdo de HTML empacotado {#packaged-html-content}
+## Conteúdo HTML empacotado {#packaged-html-content}
 
-O conteúdo em HTML é necessário para clientes que precisam manter o layout do conteúdo. Isso é útil para aplicativos nativos que estão usando um contêiner da Web - como uma visualização da Web no Cordova - para exibir o conteúdo.
+O conteúdo do HTML é necessário para clientes que devem manter o layout do conteúdo. Isso é útil para aplicativos nativos que estão usando um contêiner da Web - como uma visualização da Web no Cordova - para exibir o conteúdo.
 
-O AEM Content Services fornece conteúdo de HTML para o aplicativo móvel por meio da API. Os clientes que desejam expor conteúdo AEM como HTML podem criar uma entidade de página HTML que aponte para a fonte de conteúdo AEM.
+Os Serviços de conteúdo da AEM fornecem conteúdo do HTML para o aplicativo móvel por meio da API. Os clientes que desejam expor o conteúdo do AEM como HTML podem criar uma entidade de página do HTML que aponte para a fonte de conteúdo do AEM.
 
 As seguintes opções são consideradas:
 
@@ -120,23 +118,23 @@ As seguintes opções são consideradas:
 
 ## Conteúdo independente de canal {#channel-independent-content}
 
-O conteúdo independente de canal é uma maneira de expor construções de conteúdo AEM, como páginas, sem se preocupar com layout, componentes ou outras informações específicas do canal.
+O conteúdo independente de canal é uma maneira de expor elementos de conteúdo do AEM, como páginas, sem se preocupar com layout, componentes ou outras informações específicas do canal.
 
-Essas entidades de conteúdo são geradas usando um modelo de conteúdo para traduzir as estruturas AEM em um formato JSON. Os dados JSON resultantes contêm informações sobre os dados do conteúdo que são dissociados do repositório AEM. Isso inclui o retorno de metadados e links de referência de AEM para ativos e os relacionamentos entre estruturas de conteúdo, incluindo a hierarquia da entidade.
+Essas entidades de conteúdo são geradas usando um modelo de conteúdo para traduzir as estruturas do AEM em um formato JSON. Os dados JSON resultantes contêm informações sobre os dados do conteúdo que são dissociados do repositório do AEM. Isso inclui o retorno de metadados e links de referência do AEM para ativos e os relacionamentos entre estruturas de conteúdo, incluindo a hierarquia da entidade.
 
 ### Gerenciamento de conteúdo independente de canal {#managing-channel-independent-content}
 
 O conteúdo pode chegar ao aplicativo de várias maneiras.
 
-1. GET ZIPS por meio de AEM Over-the-Air
+1. OBTER conteúdo ZIPS por meio do AEM Over-the-Air
 
    * Os manipuladores de sincronização de conteúdo podem atualizar o pacote zip diretamente ou chamando renderizadores de conteúdo existentes
 
-      * Manipuladores de plataforma
-      * Manipuladores de AEM
-      * Manipuladores personalizados
+     * Manipuladores de plataforma
+     * Manipuladores do AEM
+     * Manipuladores personalizados
 
-1. GET conteúdo diretamente por meio de renderizadores de conteúdo
+1. Obter conteúdo diretamente por meio de renderizadores de conteúdo
 
    * Renderizadores Sling padrão prontos para uso
    * AEM Mobile/Renderizadores de conteúdo do Content Services

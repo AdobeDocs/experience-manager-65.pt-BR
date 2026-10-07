@@ -1,6 +1,6 @@
 ---
 title: Configuração de locais para o Forms
-description: Saiba como configurar o local para o formulário AEM. Você pode especificar os locais do arquivo do atributo, o local do formulário, o arquivo de PDF de propagação e o local do cache.
+description: Saiba como configurar a localização do AEM Form. Você pode especificar os locais dos arquivos do atributo, o local do formulário, o arquivo do seed PDF e o local do cache.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms
@@ -11,11 +11,9 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '834'
+source-wordcount: '838'
 ht-degree: 0%
-
 ---
-
 # Configuração de locais para o Forms {#configuring-locations-for-forms}
 
 >[!NOTE]
@@ -30,7 +28,7 @@ Você pode especificar a URL, o URI e os locais de atributos do arquivo, como a 
 
 ## Configurações de locais {#locations-settings}
 
-**URL Base:** A URL base onde os recursos de formulário, como imagens e scripts, estão localizados. Esse valor é necessário para transformações de HTML que incluem referências HREF a dependências externas, como imagens ou scripts. Um desses scripts é o xfasubset.js, que é necessário para que os formulários HTML executem inteligência XFA. Este valor deve ser o equivalente HTTP do URI da raiz de conteúdo.
+**URL Base:** A URL base onde os recursos de formulário, como imagens e scripts, estão localizados. Esse valor é necessário para transformações do HTML que incluem referências HREF a dependências externas, como imagens ou scripts. Um desses scripts é o xfasubset.js, que é necessário para que o HTML Forms execute a inteligência XFA. Este valor deve ser o equivalente HTTP do URI da raiz de conteúdo.
 
 >[!NOTE]
 >
@@ -56,7 +54,7 @@ Onde `host name`e `port` são o nome e o número da porta do servidor que está 
 
 O valor padrão é uma string vazia.
 
-**URI da Raiz da Web:** A raiz da Web do aplicativo. Esse valor é combinado com o parâmetro sTargetURL (quando sTargetURL é fornecido como relativo), especificado por meio do AEM Forms SDK, para construir um URL absoluto para acessar o conteúdo da Web específico do aplicativo.
+**URI da Raiz da Web:** A raiz da Web do aplicativo. Esse valor é combinado com o parâmetro sTargetURL (quando sTargetURL é fornecido como relativo), especificado por meio do SDK de formulários do AEM, para construir um URL absoluto para acessar o conteúdo da Web específico do aplicativo.
 
 O valor padrão é uma string vazia.
 
@@ -64,11 +62,11 @@ O valor padrão é uma string vazia.
 
 O valor padrão é uma string vazia.
 
-**URI de Configuração XCI:** O local relativo ou absoluto no qual o arquivo XCI usado para renderização é encontrado. Para um valor relativo, presume-se que o arquivo XCI resida no arquivo EAR de formulários AEM implantáveis.
+**URI de Configuração XCI:** O local relativo ou absoluto no qual o arquivo XCI usado para renderização é encontrado. Para um valor relativo, presume-se que o arquivo XCI resida no arquivo EAR de formulários do AEM implantáveis.
 
 O valor padrão é `com/adobe/formServer/PA/pa.xci`.
 
-**URI do Mapa de Fontes:** o local relativo ou absoluto do arquivo de mapeamento de fontes. Para um valor relativo, presume-se que esse arquivo resida no arquivo EAR de formulários AEM implantáveis.
+**URI do Mapa de Fontes:** o local relativo ou absoluto do arquivo de mapeamento de fontes. Para um valor relativo, presume-se que esse arquivo resida no arquivo EAR de formulários do AEM implantáveis.
 
 O arquivo de mapeamento de fontes é usado para criar mapeamentos de fontes personalizados para transformações de HTML em formulários, permitindo especificar qual fonte será substituída quando uma fonte não estiver disponível no computador do cliente.
 
@@ -78,7 +76,7 @@ A entrada a seguir é um exemplo de uma entrada no arquivo de mapeamento de font
 
 `Arial=Arial,Helvetica,sans-serif`
 
-**Arquivo de PDF de propagação:** o arquivo de PDF inicial usado em uma transformação PDFForm para otimizar a entrega. O arquivo de PDF de propagação especifica um arquivo de PDF personalizado (contendo apenas recursos de fluxo, imagem e fonte XFA) que é anexado com o design e os dados do formulário. O formulário é renderizado pelo Acrobat 7 ou posterior e se aplica à transformação de PDForm.
+**Seed PDF File:** o arquivo PDF inicial usado em uma transformação PDFForm para otimizar a entrega. O arquivo de seed PDF especifica um arquivo PDF personalizado (contendo apenas recursos de fluxo, imagem e fonte XFA) que é anexado com o design e os dados do formulário. O formulário é renderizado pelo Acrobat 7 ou posterior e se aplica à transformação de PDForm.
 
 O valor padrão é uma string vazia.
 
@@ -90,7 +88,7 @@ O valor padrão é uma string vazia.
 * **WebLogic:** [WebLogic Home]\user_projects\domains\[Nome de Domínio do aem-forms]\adobe\[Nome do Servidor do Forms]\FormServer\Cache
 * **WebSphere:** [IBM Home]\WebSphere\AppServer\installedApps\adobe\server1\FormServer\Cache
 
-**Diretório Temp da LC:** O cache é criado em um subdiretório do diretório temp de formulários AEM, que é especificado no console de administração em Configurações > Configurações do Sistema Principal > Configurações > Localização do Diretório Temp. O subdiretório é denominado adobeform_[servername].
+**Diretório Temp da LC:** o cache é criado em um subdiretório do diretório temporário do AEM Forms, que é especificado no console de administração em Configurações > Configurações do Sistema Principal > Configurações > Localização do Diretório Temp. O subdiretório é denominado adobeform_[servername].
 
 >[!NOTE]
 >

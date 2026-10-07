@@ -13,9 +13,7 @@ source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '252'
 ht-degree: 0%
-
 ---
-
 # Estender componente de comentários  {#extend-comments-component}
 
 A intenção de [estender](client-customize.md#extensions) um componente padrão é alterar a aparência ou o comportamento de um componente para usos específicos.

@@ -1,10 +1,14 @@
 ---
 title: Visão geral do console da Live Copy
+
 description: Saiba mais sobre as noções básicas do Console de visão geral da Live Copy.
+
+
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: site-features
 content-type: reference
+
 feature: Multi Site Manager
 exl-id: 0c3488bd-5f32-4956-882c-93326a45b379
 solution: Experience Manager, Experience Manager Sites
@@ -13,18 +17,16 @@ source-git-commit: d5fb67933676c9ea5fdbeafe592960403e78af79
 workflow-type: tm+mt
 source-wordcount: '529'
 ht-degree: 31%
-
 ---
-
 # Visão geral do console da Live Copy{#live-copy-overview-console}
 
 A **Visão geral da Live Copy** permite:
 
 * Visualizar/gerenciar a herança em um site:
 
-   * Visualizar a árvore do blueprint e a estrutura correspondente da live copy, junto com o status da herança
-   * Alterar o status da herança; por exemplo, suspender, retomar
-   * Exibir propriedades de blueprint e Live Copy
+  * Visualizar a árvore do blueprint e a estrutura correspondente da live copy, junto com o status da herança
+  * Alterar o status da herança; por exemplo, suspender, retomar
+  * Exibir propriedades de blueprint e Live Copy
 
 * Executar ações de implantação
 
@@ -68,7 +70,7 @@ A **Visão geral da Live Copy** pode ser aberta ao visualizar propriedades de um
 
 A **Visão geral da Live Copy** também pode ser usada para executar ações na live copy:
 
-1. Abra a **Visão geral da Live Copy**. 
+1. Abra a **Visão geral da Live Copy**.
 1. Selecione o blueprint necessário ou a página de live copy - a barra de ferramentas será atualizada para mostrar as ações disponíveis. As [ações](/help/sites-administering/msm.md#terms-used) disponíveis dependem se você selecionar uma [blueprint](#actions-for-a-blueprint-page) ou uma [live copy](#actions-for-a-live-copy-page) página:
 
 ### Ações para uma página do blueprint {#actions-for-a-blueprint-page}
@@ -79,11 +81,11 @@ Quando você seleciona uma página do blueprint, as seguintes ações estão dis
 
 * Editar
 
-   * Abra a página do blueprint para edição.
+  * Abra a página do blueprint para edição.
 
 * [Implantação](/help/sites-administering/msm.md#rollout-and-synchronize)
 
-   * Execute uma implantação para enviar as alterações da origem para a live copy.
+  * Execute uma implantação para enviar as alterações da origem para a live copy.
 
 ### Ações para uma página de Live Copy {#actions-for-a-live-copy-page}
 
@@ -93,31 +95,31 @@ Quando você seleciona uma página de live copy, as seguintes ações estão dis
 
 * Editar
 
-   * Abra a página de live copy para edição.
+  * Abra a página de live copy para edição.
 
 * [Status do relacionamento](#relationship-status)
 
-   * Exibir informações sobre o status e a herança.
+  * Exibir informações sobre o status e a herança.
 
 * [Sincronizar](/help/sites-administering/msm.md#rollout-and-synchronize)
 
-   * Sincronize uma live copy para extrair as alterações da origem para a live copy.
+  * Sincronize uma live copy para extrair as alterações da origem para a live copy.
 
 * [Redefinir](/help/sites-administering/msm-livecopy.md#resetting-a-live-copy-page)
 
-   * Redefina uma página de live copy para remover todos os cancelamentos de herança e retornar a página ao mesmo estado que a página de origem.
+  * Redefina uma página de live copy para remover todos os cancelamentos de herança e retornar a página ao mesmo estado que a página de origem.
 
 * [Suspender](/help/sites-administering/msm.md#suspending-and-cancelling-inheritance-and-synchronization)
 
-   * Desativa temporariamente a relação dinâmica entre uma live copy e sua página do blueprint.
+  * Desativa temporariamente a relação dinâmica entre uma live copy e sua página do blueprint.
 
 * [Retomar](/help/sites-administering/msm-livecopy.md#resuming-inheritance-for-a-page)
 
-   * Retomar permite restaurar uma relação suspensa.
+  * Retomar permite restaurar uma relação suspensa.
 
 * [Desconectar](/help/sites-administering/msm.md#detaching-a-live-copy)
 
-   * Remove permanentemente o relacionamento dinâmico entre uma live copy e sua página de blueprint.
+  * Remove permanentemente o relacionamento dinâmico entre uma live copy e sua página de blueprint.
 
 ## Status do relacionamento {#relationship-status}
 

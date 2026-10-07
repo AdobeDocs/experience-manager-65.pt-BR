@@ -1,6 +1,6 @@
 ---
-title: Reestruturação do repositório Forms no AEM 6.5
-description: Saiba como fazer as alterações necessárias para migrar para a nova estrutura do repositório no AEM 6.5 para Forms.
+title: Reestruturação do repositório do Forms no AEM 6.5
+description: Saiba como fazer as alterações necessárias para migrar para a nova estrutura do repositório no AEM 6.5 for Forms.
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: repo_restructuring
@@ -10,12 +10,10 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '519'
-ht-degree: 5%
-
+source-wordcount: '521'
+ht-degree: 4%
 ---
-
-# Reestruturação do repositório Forms no AEM 6.5{#forms-repository-restructuring-in-aem}
+# Reestruturação do repositório do Forms no AEM 6.5{#forms-repository-restructuring-in-aem}
 
 Conforme descrito na página pai [Reestruturação do repositório no AEM 6.5](/help/sites-deploying/repository-restructuring.md), os clientes que estão atualizando para o AEM 6.5 devem usar esta página para avaliar o esforço de trabalho associado às alterações no repositório que afetam a Solução da AEM Forms. Algumas alterações exigem esforço de trabalho durante o processo de atualização do AEM 6.5, enquanto outras podem ser adiadas até uma atualização futura.
 
@@ -25,9 +23,9 @@ Conforme descrito na página pai [Reestruturação do repositório no AEM 6.5](/
 
 **Antes de atualização futura**
 
-* [Configuração de Cloud Service de eco](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md#echosign-cloud-service-configuration)
-* [Configurações de Cloud Service de Recaptcha](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md#recaptcha-cloud-service-configurations)
-* [Configurações de Cloud Service do TypeKit](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md#typekit-cloud-service-configurations)
+* [Ecologizar a configuração do Cloud Service](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md#echosign-cloud-service-configuration)
+* [Configurações do Cloud Service Recaptcha](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md#recaptcha-cloud-service-configurations)
+* [Configurações do TypeKit Cloud Service](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md#typekit-cloud-service-configurations)
 * [Diversos](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md#misc)
 
 ## Com atualização para 6.5 {#with-upgrade}
@@ -90,7 +88,7 @@ Conforme descrito na página pai [Reestruturação do repositório no AEM 6.5](/
 
 ## Antes de uma atualização futura {#prior-to-upgrade}
 
-### Configuração de Cloud Service de eco {#echosign-cloud-service-configuration}
+### Ecologizar a configuração do Cloud Service {#echosign-cloud-service-configuration}
 
 | **Local anterior** | `/etc/cloudservices/echosign` |
 |---|---|
@@ -98,7 +96,7 @@ Conforme descrito na página pai [Reestruturação do repositório no AEM 6.5](/
 | **Orientação sobre reestruturação** | O utilitário [Migração de Conteúdo Lenta](/help/sites-deploying/lazy-content-migration.md) será acionado a partir da interface de Migração do Forms. |
 | **Notas** | N/A |
 
-### Configurações de Cloud Service de Recaptcha {#recaptcha-cloud-service-configurations}
+### Configurações do Cloud Service Recaptcha {#recaptcha-cloud-service-configurations}
 
 | **Local anterior** | `/etc/cloudservices/recaptcha` |
 |---|---|
@@ -106,7 +104,7 @@ Conforme descrito na página pai [Reestruturação do repositório no AEM 6.5](/
 | **Orientação sobre reestruturação** | O utilitário [Migração de Conteúdo Lenta](/help/sites-deploying/lazy-content-migration.md) será acionado a partir da interface de Migração do Forms. |
 | **Notas** | N/A |
 
-### Configurações de Cloud Service do TypeKit {#typekit-cloud-service-configurations}
+### Configurações do TypeKit Cloud Service {#typekit-cloud-service-configurations}
 
 | **Local anterior** | `/etc/cloudservices/typekit` |
 |---|---|

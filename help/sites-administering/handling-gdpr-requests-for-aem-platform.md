@@ -8,20 +8,18 @@ feature: Administering
 role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
-source-wordcount: '458'
-ht-degree: 40%
-
+source-wordcount: '455'
+ht-degree: 41%
 ---
-
-# Lidar com solicitações do GDPR para a base do Adobe Experience Manager (AEM){#handling-gdpr-requests-for-the-aem-foundation}
+# Lidar com solicitações do GDPR para a Adobe Experience Manager (AEM) Foundation{#handling-gdpr-requests-for-the-aem-foundation}
 
 >[!IMPORTANT]
 >
 >O GDPR é usado como exemplo nas seções abaixo, mas os detalhes abordados se aplicam a todas as regulamentações de proteção e privacidade de dados; como o GDPR, CCPA e assim por diante.
 
-## Suporte ao GDPR da Fundação AEM {#aem-foundation-gdpr-support}
+## Suporte ao GDPR do AEM Foundation {#aem-foundation-gdpr-support}
 
-No nível da Fundação AEM, os Dados Pessoais armazenados são o Perfil do Usuário. Portanto, as informações neste artigo abordam principalmente como acessar e excluir perfis de usuário, atendendo às solicitações de Acesso e Exclusão do GDPR, respectivamente.
+No nível do AEM Foundation, os Dados pessoais armazenados são o Perfil do usuário. Portanto, as informações neste artigo abordam principalmente como acessar e excluir perfis de usuário, atendendo às solicitações de Acesso e Exclusão do GDPR, respectivamente.
 
 ## Acessar um perfil de usuário {#accessing-a-user-profile}
 
@@ -102,7 +100,7 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 1. Excluir nós de perfil e todos os seus filhos. Há dois formatos para os nós de perfil, dependendo da versão do AEM:
 
    1. O perfil privado padrão em `[!UICONTROL /profile]`
-   1. `[!UICONTROL /profiles]`, para novos perfis criados com o AEM 6.5.
+   1. `[!UICONTROL /profiles]`, para novos perfis criados usando o AEM 6.5.
 
    ![image2018-2-6_2-0-4](assets/image2018-2-6_2-0-4.png)
 

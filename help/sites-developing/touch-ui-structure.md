@@ -11,22 +11,20 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '862'
+source-wordcount: '892'
 ht-degree: 1%
-
 ---
-
 # Estrutura da interface do usuário habilitada para toque do Adobe Experience Manager{#structure-of-the-aem-touch-enabled-ui}
 
-A interface habilitada para toque do Adobe Experience Manager (AEM) tem vários princípios subjacentes e é composta por vários elementos-chave:
+A interface habilitada para toque do Adobe Experience Manager (AEM) tem vários princípios subjacentes e é composta de vários elementos principais:
 
 ## Consoles {#consoles}
 
 ### Layout básico e redimensionamento {#basic-layout-and-resizing}
 
-A interface do usuário atende aos dispositivos móveis e de desktop, no entanto, em vez de criar dois estilos, o Adobe decidiu usar um estilo que funciona para todas as telas e dispositivos.
+A interface atende aos dispositivos móveis e de desktop, no entanto, em vez de criar dois estilos, a Adobe decidiu usar um estilo que funciona para todas as telas e dispositivos.
 
-Todos os módulos usam o mesmo layout básico; no AEM, isso pode ser visto como:
+Todos os módulos usam o mesmo layout básico. No AEM, isso pode ser visto como:
 
 ![chlimage_1-142](assets/chlimage_1-142.png)
 
@@ -73,7 +71,7 @@ O padrão é **Somente conteúdo** (painel oculto).
 
 ![chlimage_1-147](assets/chlimage_1-147.png)
 
-## Criação de página {#page-authoring}
+## Criação de páginas {#page-authoring}
 
 Ao criar páginas, as áreas estruturais são as seguintes.
 
@@ -141,7 +139,7 @@ Uma camada é um conjunto independente de funcionalidades que pode ser ativada p
 
 As camadas fornecem funcionalidade sofisticada para a página inteira, em vez de ações específicas em um componente individual.
 
-O AEM vem com várias camadas já implementadas para a criação de páginas; incluindo, por exemplo, editar, visualizar, anotar.
+O AEM vem com várias camadas já implementadas para a criação de páginas, incluindo, por exemplo, editar, visualizar, anotar.
 
 >[!NOTE]
 >
@@ -165,6 +163,6 @@ Dependendo do espaço disponível, as barras de ferramentas do componente são p
 
 ## Informações adicionais {#further-information}
 
-Para obter mais detalhes sobre os conceitos da interface habilitada para toque, leia [Conceitos da interface habilitada para toque por AEM](/help/sites-developing/touch-ui-concepts.md).
+Para obter mais detalhes sobre os conceitos da interface habilitada para toque, leia [Conceitos da interface habilitada para toque do AEM](/help/sites-developing/touch-ui-concepts.md).
 
 Para obter mais informações técnicas, consulte [Conjunto de documentação JS](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html) para o editor de página habilitado para toque.

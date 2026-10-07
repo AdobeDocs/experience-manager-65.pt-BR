@@ -1,9 +1,13 @@
 ---
 title: Exclusão de formulários e recursos relacionados
+
 description: Como excluir um formulário ou um ativo no AEM Forms e o impacto nos ativos referenciados e referenciadores e formulários XFA.
+
+
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
+
 role: Admin,User
 exl-id: b31f9f56-dd33-4478-ad34-01ac7d5a1b40
 solution: Experience Manager, Experience Manager Forms
@@ -12,14 +16,12 @@ source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '369'
 ht-degree: 0%
-
 ---
-
 # Exclusão de formulários e recursos relacionados {#deleting-forms-and-related-resources}
 
 Você pode excluir os formulários e os ativos para remover esses ativos do repositório. A operação de exclusão funciona em todos os tipos de ativos e pastas.
 
-Se você excluir um ativo da instância do Autor, o ativo também será excluído da instância do Publish. O servidor do AEM Forms consiste em instâncias do Author e do Publish. A instância do Autor serve para criar e gerenciar ativos e recursos de formulários. A instância do Publish contém os ativos de formulários publicados e recursos relacionados que estão disponíveis para usuários finais.
+Se você excluir um ativo da instância do Autor, o ativo também será excluído da instância de Publicação. O servidor do AEM Forms consiste em instâncias de Autor e Publicação. A instância do Autor serve para criar e gerenciar ativos e recursos de formulários. A instância de Publicação contém os ativos de formulários publicados e recursos relacionados que estão disponíveis para usuários finais.
 
 ## Como excluir um formulário {#how-to-delete-a-form}
 

@@ -1,21 +1,23 @@
 ---
 title: Gerenciar contas de usuário convidadas e locais
+
 description: Usando a segurança de documentos, você pode pesquisar, exibir, editar, bloquear, desbloquear e excluir contas de usuários convidadas e locais.
+
+
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
+
 feature: Document Security
 exl-id: 23f71b34-a0cb-4664-bb8b-a60f33dc70d8
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '1208'
+source-wordcount: '1211'
 ht-degree: 0%
-
 ---
-
 # Gerenciar contas de usuário convidadas e locais {#managing-invited-and-local-user-accounts}
 
 >[!NOTE]
@@ -99,7 +101,7 @@ Se você deletar uma conta de usuário, somente você ou outro administrador pod
 
 >[!NOTE]
 >
->Os usuários convidados que foram excluídos por meio da interface de Gerenciamento de usuários de formulários AEM não podem ser convidados novamente até que sejam excluídos novamente usando o procedimento a seguir.
+>Os usuários convidados que foram excluídos por meio da interface do Gerenciamento de usuários dos formulários do AEM não podem ser convidados novamente até que sejam excluídos novamente usando o procedimento a seguir.
 
 1. No console de administração, clique em Serviços > Segurança de documentos > Usuários convidados e locais e clique na guia Usuários convidados.
 1. Marque a caixa de seleção ao lado de um ou mais usuários, clique em Excluir e em OK.
@@ -132,6 +134,6 @@ Você pode excluir contas de usuário locais da segurança de documentos. Você 
 * Um triângulo apontando para cima indica a ordem crescente.
 * Um triângulo para baixo indica ordem decrescente.
 
-   1. No console de administração, clique em Serviços > Segurança de documentos > Usuários convidados e locais.
-   1. Para classificar usuários convidados, clique na guia Usuários Convidados e clique no cabeçalho de coluna apropriado.
-   1. Para classificar usuários locais, clique na guia Usuários Locais e clique no cabeçalho de coluna apropriado.
+  1. No console de administração, clique em Serviços > Segurança de documentos > Usuários convidados e locais.
+  1. Para classificar usuários convidados, clique na guia Usuários Convidados e clique no cabeçalho de coluna apropriado.
+  1. Para classificar usuários locais, clique na guia Usuários Locais e clique no cabeçalho de coluna apropriado.
