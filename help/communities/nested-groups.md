@@ -12,11 +12,9 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '599'
+source-wordcount: '611'
 ht-degree: 1%
-
 ---
-
 # Criação de grupos aninhados{#authoring-nested-groups}
 
 ## Criação de grupos no autor {#creating-groups-on-author}
@@ -27,14 +25,14 @@ Na instância do autor do AEM, na navegação global:
 * Selecione **[!UICONTROL engajar pasta]** para abri-la.
 * Selecione o cartão para o site em inglês **[!UICONTROL Tutorial de introdução]**.
 
-   * Selecione a imagem do cartão.
-   * *não* selecione um ícone.
+  * Selecione a imagem do cartão.
+  * *não* selecione um ícone.
 
 O resultado é alcançar o [console Grupos](/help/communities/groups.md):
 
 ![criar-grupo](assets/create-group.png)
 
-A função de grupos é exibida como uma pasta na qual as instâncias dos grupos são criadas. Para abri-lo, selecione a pasta Grupos. O grupo criado no Publish está visível.
+A função de grupos é exibida como uma pasta na qual as instâncias dos grupos são criadas. Para abri-lo, selecione a pasta Grupos. O grupo criado em Publicar está visível.
 
 ![criar-novo-grupo](assets/create-new-group.png)
 
@@ -48,13 +46,13 @@ Esses consoles são semelhantes ao console Sites de comunidades.
 
 * **Modelo do grupo da comunidade**:
 
-   * **[!UICONTROL Título do Grupo da Comunidade]**: Artes
-   * **[!UICONTROL Descrição do grupo da comunidade]**: um grupo pai para vários grupos de artes
-   * **[!UICONTROL Raiz do grupo da comunidade]**: *deixar como padrão*
-   * **[!UICONTROL Idioma(s) adicional(is) disponível(is) do grupo da comunidade]**: use o menu suspenso para selecionar os idiomas disponíveis do grupo da comunidade. O menu exibe todos os idiomas nos quais o site pai da comunidade é criado. Os usuários podem selecionar entre esses idiomas para criar grupos em vários locais nesta única etapa. O mesmo grupo é criado em vários idiomas especificados no console Grupos dos respectivos sites de comunidade.
-   * **[!UICONTROL Nome do Grupo da Comunidade]**: artes
-   * **[!UICONTROL Modelo]**: menu suspenso para selecionar `Reference Group`
-   * Selecionar **[!UICONTROL Próximo]**
+  * **[!UICONTROL Título do Grupo da Comunidade]**: Artes
+  * **[!UICONTROL Descrição do grupo da comunidade]**: um grupo pai para vários grupos de artes
+  * **[!UICONTROL Raiz do grupo da comunidade]**: *deixar como padrão*
+  * **[!UICONTROL Idioma(s) adicional(is) disponível(is) do grupo da comunidade]**: use o menu suspenso para selecionar os idiomas disponíveis do grupo da comunidade. O menu exibe todos os idiomas nos quais o site pai da comunidade é criado. Os usuários podem selecionar entre esses idiomas para criar grupos em vários locais nesta única etapa. O mesmo grupo é criado em vários idiomas especificados no console Grupos dos respectivos sites de comunidade.
+  * **[!UICONTROL Nome do Grupo da Comunidade]**: artes
+  * **[!UICONTROL Modelo]**: menu suspenso para selecionar `Reference Group`
+  * Selecionar **[!UICONTROL Próximo]**
 
 ![Grupos de comunidades aninhados](assets/parent-to-nestedgroup.png)
 
@@ -62,23 +60,23 @@ Prossiga pelos outros painéis com estas configurações:
 
 * **[!UICONTROL Design]**
 
-   * Alterar o design ou permitir o design do site pai padrão.
-   * Selecione **[!UICONTROL Próximo]**.
+  * Alterar o design ou permitir o design do site pai padrão.
+  * Selecione **[!UICONTROL Próximo]**.
 
 * **[!UICONTROL Configurações]**
 
-   * **[!UICONTROL Moderação]**
+  * **[!UICONTROL Moderação]**
 
-      * Deixar em branco (herdar do site pai).
+    * Deixar em branco (herdar do site pai).
 
-   * **[!UICONTROL Associação]**
+  * **[!UICONTROL Associação]**
 
-      * Usar o padrão `Optional Membership.`
+    * Usar o padrão `Optional Membership.`
 
-      * **[!UICONTROL Miniatura]**
-         * `optional.*`
+    * **[!UICONTROL Miniatura]**
+      * `optional.*`
 
-      * **[!UICONTROL Selecione Próximo]**.
+    * **[!UICONTROL Selecione Próximo]**.
 
 * Selecione **[!UICONTROL Criar]**.
 
@@ -88,7 +86,7 @@ A pasta `groups` agora contém dois grupos (atualize a página).
 
 ![Aninhamento de grupos](assets/create-community-group.png)
 
-#### Grupo Publish {#publish-group}
+#### Publicar grupo {#publish-group}
 
 Antes de criar grupos aninhados no grupo `arts`, passe o mouse sobre o cartão `arts` e selecione o ícone de publicação para publicá-lo.
 
@@ -139,29 +137,29 @@ Para navegar até os grupos aninhados do console Sites de comunidades:
 
 Depois de publicar o site principal da comunidade:
 
-* Publish cada grupo individualmente:
+* Publicar cada grupo individualmente:
 
-   * Aguardando confirmação de que o grupo foi publicado.
+  * Aguardando confirmação de que o grupo foi publicado.
 
-* Publish o grupo pai antes de publicar quaisquer grupos aninhados em:
+* Publique o grupo pai antes de publicar qualquer grupo aninhado em:
 
-   * Todos os grupos devem ser publicados de cima para baixo.
+  * Todos os grupos devem ser publicados de cima para baixo.
 
 ![grupo-publicado](assets/group-published.png)
 
-## Experiência no Publish {#experience-on-publish}
+## Experiência na publicação {#experience-on-publish}
 
 É possível experimentar os diferentes grupos quando conectado, por exemplo, com os [usuários de demonstração](/help/communities/tutorials.md#demo-users) usados para:
 
 * Membro do grupo Art/History: `emily.andrews@mailinator.com/password`
-   * O grupo restrito (secreto), artes/história, está visível:
-   * É possível ver grupos opcionais (públicos).
-   * Capaz de ingressar em grupos restritos (abertos).
+  * O grupo restrito (secreto), artes/história, está visível:
+  * É possível ver grupos opcionais (públicos).
+  * Capaz de ingressar em grupos restritos (abertos).
 
 * Gerenciador de grupo: `aaron.mcdonald@mailinator.com/password`
 
-   * É possível ver grupos opcionais (públicos).
-   * Capaz de ingressar em grupos restritos (abertos).
-   * Não é possível ver os grupos restritos (secretos).
+  * É possível ver grupos opcionais (públicos).
+  * Capaz de ingressar em grupos restritos (abertos).
+  * Não é possível ver os grupos restritos (secretos).
 
 Acesse os [consoles Membros e Grupos](/help/communities/members.md) das Comunidades no autor para adicionar outros usuários a vários grupos de membros que correspondam aos grupos da comunidade.

@@ -10,11 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '208'
+source-wordcount: '215'
 ht-degree: 1%
-
 ---
-
 # Reestruturação do repositório do E-Commerce no AEM 6.5{#e-commerce-repository-restructuring-in-aem}
 
 Conforme descrito na página pai [Reestruturação do repositório no AEM 6.5](/help/sites-deploying/repository-restructuring.md), os clientes que estão atualizando para o AEM 6.5 devem usar esta página para avaliar o esforço de trabalho associado às alterações no repositório que afetam a solução AEM E-Commerce. Algumas alterações exigem esforço de trabalho durante o processo de atualização do AEM 6.5, enquanto outras podem ser adiadas até uma atualização futura.
@@ -47,7 +45,7 @@ Conforme descrito na página pai [Reestruturação do repositório no AEM 6.5](/
      <li>/etc/commerce/orders<br /> </li>
      <li>/etc/commerce/payment-methods<br /> </li>
      <li>/etc/commerce/shipping-methods<br /> </li>
-    </ul> <p>Para catálogos maiores, a Adobe recomenda que você execute a tarefa de migração de comércio individualmente, transmitindo a seguinte propriedade do sistema Java™ para AEM:</p> <p><code>propertyname: com.adobe.upgrade.forcemigration</code></p> <p><code>property value: com.day.cq.compat.codeupgrade.impl.cq64.CQ64CommerceMigrationTask</code></p> <p>Após a migração, reinicie o AEM.</p> </td>
+    </ul> <p>Para catálogos maiores, a Adobe recomenda que você execute a tarefa de migração de comércio individualmente, transmitindo a seguinte propriedade do sistema Java™ para o AEM:</p> <p><code>propertyname: com.adobe.upgrade.forcemigration</code></p> <p><code>property value: com.day.cq.compat.codeupgrade.impl.cq64.CQ64CommerceMigrationTask</code></p> <p>Após a migração, reinicie o AEM.</p> </td>
   </tr>
   <tr>
    <td><strong>Notas</strong></td>

@@ -1,6 +1,6 @@
 ---
-title: Configure o Microsoft Dynamics 365 para o fluxo de trabalho de hipoteca da página inicial do site de referência We.Finance
-description: Saiba como usar os serviços do Microsoft&reg; Dynamics 365 por meio de formulários adaptáveis para o fluxo de trabalho de hipoteca residencial do site de referência We.Finance.
+title: Configure o Microsoft Dynamics 365 para o fluxo de trabalho de hipoteca da página de referência We.Finance
+description: Saiba como usar os serviços do Microsoft&reg; Dynamics 365 por meio de formulários adaptáveis para o fluxo de trabalho de hipoteca da página de referência do We.Finance.
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: develop, Configuration
 exl-id: 2ac37dc5-d88d-4f98-8576-cd2ca6f0ea3a
@@ -9,12 +9,10 @@ feature: Adaptive Forms,Foundation Components
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '410'
+source-wordcount: '415'
 ht-degree: 0%
-
 ---
-
-# Configure o Microsoft Dynamics 365 para o fluxo de trabalho de hipoteca da página inicial do site de referência We.Finance {#configure-microsoft-dynamics-for-the-home-mortgage-workflow-of-the-we-finance-reference-site}
+# Configure o Microsoft Dynamics 365 para o fluxo de trabalho de hipoteca da página de referência We.Finance {#configure-microsoft-dynamics-for-the-home-mortgage-workflow-of-the-we-finance-reference-site}
 
 Saiba como usar os serviços do Microsoft® Dynamics 365 por meio de formulários adaptáveis para o fluxo de trabalho de hipoteca do site de referência We.Finance
 
@@ -30,7 +28,7 @@ Antes de começar a instalar e configurar o Dynamics 365, verifique se você tem
 
 * AEM 6.3 Forms Service Pack 1 e posterior
 * Conta do Microsoft® Dynamics 365
-* Aplicativo registrado para o serviço Dynamics 365 com o Ative Diretory do Microsoft® Azure
+* Aplicativo registrado para o serviço Dynamics 365 com o Microsoft® Azure Ative Diretory
 * ID do cliente e segredo do cliente para o aplicativo registrado
 
 ## Vincule a calculadora de hipoteca do site à página inicial do site {#link-the-home-mortgage-calculator-with-your-site-home-page}
@@ -51,7 +49,7 @@ Antes de começar a instalar e configurar o Dynamics 365, verifique se você tem
    ![selectassetpath](assets/selectassetpath.png)
 
 1. Selecione **Concluído**.
-1. Publish a página editada.
+1. Publique a página editada.
 
    >[!NOTE]
    >

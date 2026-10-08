@@ -1,5 +1,5 @@
 ---
-title: Trabalhos assíncronos
+title: Processos assíncronos
 description: O Adobe Experience Manager otimiza o desempenho ao concluir de modo assíncrono algumas tarefas que consomem muitos recursos.
 exl-id: 4af1bcfe-9f2e-44a4-8666-881f2dccc3bc
 solution: Experience Manager, Experience Manager Sites
@@ -7,14 +7,12 @@ feature: Developing
 role: Developer
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
-source-wordcount: '791'
-ht-degree: 84%
-
+source-wordcount: '806'
+ht-degree: 82%
 ---
-
 # Operações assíncronas {#asynchronous-operations}
 
-Para reduzir o impacto negativo no desempenho, o Adobe Experience Manager processa de modo assíncrono determinadas operações de longa duração e operações que usam muitos recursos. O processamento assíncrono envolve enfileiramento de vários trabalhos e sua execução em série dependendo da disponibilidade dos recursos do sistema.
+Para reduzir o impacto negativo no desempenho, o Adobe Experience Manager processa de modo assíncrono determinadas operações de longa duração e operações que usam muitos recursos. O processamento assíncrono envolve enfileiramento de vários processos e sua execução em série dependendo da disponibilidade dos recursos do sistema.
 
 Essas operações incluem:
 
@@ -28,19 +26,19 @@ Você pode exibir o status de trabalhos assíncronos no painel **[!UICONTROL Sta
 
 >[!NOTE]
 >
->Por padrão, os trabalhos assíncronos são executados em paralelo. Se o número de núcleos da CPU for *`n`*, podem ser executados *`n/2`* trabalhos em paralelo, por padrão. Para usar configurações personalizadas para a fila de trabalhos, modifique a **[!UICONTROL Configuração da fila padrão da operação assíncrona]** e a **Configuração da movimentação e implantação de página de operação assíncrona** no console da web.
+>Por padrão, os processos assíncronos são executados em paralelo. Se o número de núcleos da CPU for *`n`*, podem ser executados *`n/2`* processos em paralelo, por padrão. Para usar configurações personalizadas para a fila de processos, modifique a **[!UICONTROL Configuração da fila padrão da operação assíncrona]** e a **Configuração da movimentação e implantação de página de operação assíncrona** no console da web.
 >
 >Para obter mais informações, consulte [Configurações de fila](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#queue-configurations).
 
 ## Monitorar o status de operações assíncronas {#monitor-the-status-of-asynchronous-operations}
 
-Sempre que o AEM processar uma operação de modo assíncrono, você receberá uma notificação na sua [caixa de entrada](/help/sites-authoring/inbox.md) e por email (se ativada essa opção).
+Sempre que o AEM processar uma operação de modo assíncrono, você receberá uma notificação na sua [caixa de entrada](/help/sites-authoring/inbox.md) e por email (se habilitada essa opção).
 
-Para visualizar o status das operações assíncronas em detalhes, acesse a página **[!UICONTROL Status do trabalho assíncrono]**.
+Para visualizar o status das operações assíncronas em detalhes, acesse a página **[!UICONTROL Status do processo assíncrono]**.
 
-1. Na interface do Experience Manager, clique em **[!UICONTROL Operações]** > **[!UICONTROL Trabalhos]**.
+1. Na interface do Experience Manager, clique em **[!UICONTROL Operações]** > **[!UICONTROL Processos]**.
 
-1. Na página **[!UICONTROL Status do trabalho assíncrono]**, verifique os detalhes das operações.
+1. Na página **[!UICONTROL Status do processo assíncrono]**, verifique os detalhes das operações.
 
    ![Status e detalhes de operações assíncronas](assets/async-operation-status.png)
 
@@ -62,7 +60,7 @@ Para visualizar o status das operações assíncronas em detalhes, acesse a pág
 
    ![open_icon](assets/async-open-icon.png)
 
-   A página de detalhes do trabalho é exibida.
+   A página de detalhes do processo é exibida.
 
    ![job_details](assets/async-job-details.png)
 
@@ -70,22 +68,22 @@ Para visualizar o status das operações assíncronas em detalhes, acesse a pág
 
    >[!NOTE]
    >
-   >Não é possível excluir um trabalho se o seu status for **Ativo** ou **Em fila**.
+   >Não é possível excluir um processo se o seu status for **Ativo** ou **Em fila**.
 
 ## Limpar trabalhos concluídos {#purging-completed-jobs}
 
 O AEM executa um trabalho de limpeza todos os dias à 1h para excluir trabalhos assíncronos concluídos há mais de um dia.
 
-Você pode modificar a programação da limpeza e a duração da retenção dos detalhes dos trabalhos concluídos, antes da sua exclusão. Você também pode configurar, a qualquer momento, o número máximo de trabalhos concluídos cujos detalhes serão retidos.
+Você pode modificar a programação da limpeza e a duração da retenção dos detalhes dos processos concluídos, antes da sua exclusão. Você também pode configurar, a qualquer momento, o número máximo de processos concluídos cujos detalhes serão retidos.
 
 1. Na Navegação global, clique em **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > **[!UICONTROL Console da Web]**.
-1. Abra o **[!UICONTROL Trabalho agendado de limpeza de trabalhos assíncronos no Adobe Granite]**.
+1. Abra o **[!UICONTROL Processo agendado de limpeza de processos assíncronos no Adobe Granite]**.
 1. Especifique:
-   * O limite de dias após o qual os trabalhos concluídos são excluídos.
-   * O número máximo de trabalhos cujos detalhes são mantidos no histórico.
+   * O limite de dias após o qual os processos concluídos são excluídos.
+   * O número máximo de processos cujos detalhes são mantidos no histórico.
    * A expressão CRON que define quando a limpeza deve ser feita.
 
-   ![Configuração para agendar a limpeza de trabalhos assíncronos](assets/async-purge-job.png)
+   ![Configuração para agendar a limpeza de processos assíncronos](assets/async-purge-job.png)
 
 1. Salve as alterações.
 
@@ -103,7 +101,7 @@ Se o número de ativos ou pastas que serão excluídos exceder o limite, a opera
 
    ![Limite de exclusão de ativos](assets/async-delete-threshold.png)
 
-1. Marque a opção **Habilitar notificação por email** para receber notificações por email sobre o status do trabalho. por exemplo, sucesso, falha.
+1. Marque a opção **Habilitar notificação por email** para receber notificações por email sobre o status do processo. por exemplo, sucesso, falha.
 1. Salve as alterações.
 
 ### Configurar operações assíncronas de movimentação de ativos {#configuring-asynchronous-move-operations}
@@ -116,14 +114,14 @@ Se o número de ativos/pastas ou referências que serão movidos exceder o limit
 
    ![Limite de movimentação do ativo](assets/async-move-threshold.png)
 
-1. Marque a opção **Habilitar notificação por email** para receber notificações por email sobre o status do trabalho. por exemplo, sucesso, falha.
+1. Marque a opção **Habilitar notificação por email** para receber notificações por email sobre o status do processo. por exemplo, sucesso, falha.
 1. Salve as alterações.
 
 ### Configurar operações assíncronas do MSM {#configuring-asynchronous-msm-operations}
 
 1. Na Navegação global, clique em **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > **[!UICONTROL Console da Web]**.
 1. No console da Web, abra a **[!UICONTROL Configuração do processamento assíncrono da operação de movimentação de página.]**
-1. Marque a opção **Habilitar notificação por email** para receber notificações por email sobre o status do trabalho. por exemplo, sucesso, falha.
+1. Marque a opção **Habilitar notificação por email** para receber notificações por email sobre o status do processo. por exemplo, sucesso, falha.
 
    ![Configuração do MSM](assets/async-msm.png)
 

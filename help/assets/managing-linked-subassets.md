@@ -1,6 +1,6 @@
 ---
 title: Gerenciar ativos compostos com referências e várias páginas
-description: Saiba como criar referências a ativos digitais no  [!DNL Adobe InDesign], [!DNL Adobe Illustrator] e [!DNL Adobe Photoshop]. Use o recurso Visualizador de páginas para exibir páginas de subativos individuais de arquivos de várias páginas, como arquivos PDF, INDD, PPT, PPTX e AI.
+description: Saiba como criar referências a ativos digitais no [!DNL Adobe InDesign], [!DNL Adobe Illustrator] e [!DNL Adobe Photoshop]. Use o recurso Visualizador de páginas para exibir páginas individuais de subativos de arquivos de várias páginas, como arquivos PDF, INDD, PPT, PPTX e AI.
 contentOwner: AG
 role: User, Admin
 feature: Asset Management
@@ -8,11 +8,9 @@ exl-id: 1ea9d8fe-602c-452b-9a24-4125b705aedf
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1382'
+source-wordcount: '1473'
 ht-degree: 0%
-
 ---
-
 # Gerenciar ativos compostos e de várias páginas {#managing-compound-assets}
 
 [!DNL Adobe Experience Manager Assets] pode identificar se um arquivo carregado contém referências a ativos que já existem no repositório. Esse recurso está disponível somente para formatos de arquivo compatíveis. Se o ativo carregado contiver referências a [!DNL Experience Manager] ativos, um link bidirecional será criado entre os ativos carregados e referenciados.
@@ -54,7 +52,7 @@ Os ativos referenciados já existem em [!DNL Experience Manager Assets]. Você p
 
 >[!NOTE]
 >
->Se o [!DNL InDesign Server] for encaminhado por proxy, [!DNL InDesign] os arquivos terão sua visualização incorporada aos metadados XMP. Nesse caso, a extração de miniaturas não é explicitamente necessária. No entanto, se [!DNL InDesign Server] não for intermediado por proxy, as miniaturas deverão ser explicitamente extraídas para os arquivos [!DNL InDesign].
+>Se o [!DNL InDesign Server] for encaminhado por proxy, [!DNL InDesign] os arquivos terão sua visualização incorporada aos metadados do XMP. Nesse caso, a extração de miniaturas não é explicitamente necessária. No entanto, se [!DNL InDesign Server] não for intermediado por proxy, as miniaturas deverão ser explicitamente extraídas para os arquivos [!DNL InDesign].
 
 Quando um arquivo INDD é carregado, as referências são buscadas consultando ativos com as propriedades `xmpMM:InstanceID` e `xmpMM:DocumentID` no repositório.
 
@@ -100,8 +98,8 @@ Para gerar os subativos, siga um destes procedimentos:
 * Novos ativos: o fluxo de trabalho [!UICONTROL Atualização DAM do Assets] é executado em qualquer novo ativo que seja carregado para [!DNL Experience Manager]. Os subativos são gerados automaticamente para novos ativos de várias páginas.
 * Ativos de várias páginas existentes: execute manualmente o fluxo de trabalho [!UICONTROL DAM Atualizar Assets] seguindo uma das etapas:
 
-   * Selecione um ativo e clique em [!UICONTROL Linha do tempo] para abrir o painel esquerdo. Como alternativa, use o atalho de teclado `alt + 3`. Clique em [!UICONTROL Iniciar fluxo de trabalho], selecione [!UICONTROL Ativo de atualização do DAM], clique em [!UICONTROL Iniciar] e em [!UICONTROL Continuar].
-   * Selecione um ativo e clique em [!UICONTROL Criar] > [!UICONTROL Fluxo de trabalho] na barra de ferramentas. Na caixa de diálogo pop-up, selecione o fluxo de trabalho [!UICONTROL Ativo de atualização do DAM], clique em [!UICONTROL Iniciar] e em [!UICONTROL Continuar].
+  * Selecione um ativo e clique em [!UICONTROL Linha do tempo] para abrir o painel esquerdo. Como alternativa, use o atalho de teclado `alt + 3`. Clique em [!UICONTROL Iniciar fluxo de trabalho], selecione [!UICONTROL Ativo de atualização do DAM], clique em [!UICONTROL Iniciar] e em [!UICONTROL Continuar].
+  * Selecione um ativo e clique em [!UICONTROL Criar] > [!UICONTROL Fluxo de trabalho] na barra de ferramentas. Na caixa de diálogo pop-up, selecione o fluxo de trabalho [!UICONTROL Ativo de atualização do DAM], clique em [!UICONTROL Iniciar] e em [!UICONTROL Continuar].
 
 Especificamente para documentos do Microsoft Word, execute o fluxo de trabalho **[!UICONTROL Analisar documentos do Word]** do DAM. Ele gera um componente `cq:Page` a partir do conteúdo do documento do Microsoft Word. As imagens extraídas do documento são referenciadas do componente `cq:Page`. Essas imagens são extraídas mesmo se a geração de sub-ativos estiver desativada.
 
@@ -117,7 +115,7 @@ Os ativos secundários são exibidos somente se os ativos secundários forem ger
 
 ## Visualizar páginas de um arquivo de várias páginas {#view-pages-of-a-multi-page-file}
 
-Você pode exibir um arquivo de várias páginas, como PDF, INDD, PPT, PPTX e arquivo AI, usando o recurso Visualizador de Páginas do [!DNL Experience Manager Assets]. Abra um ativo de várias páginas e clique em **[!UICONTROL Exibir páginas]** no canto superior esquerdo da página. O Visualizador de página aberto exibe as páginas do ativo e os controles para navegar e aplicar zoom em cada página.
+Você pode exibir um arquivo de várias páginas, como PDF, INDD, PPT, PPTX e AI, usando o recurso Visualizador de Páginas do [!DNL Experience Manager Assets]. Abra um ativo de várias páginas e clique em **[!UICONTROL Exibir páginas]** no canto superior esquerdo da página. O Visualizador de página aberto exibe as páginas do ativo e os controles para navegar e aplicar zoom em cada página.
 
 ![Exibir e ver páginas de um ativo de várias páginas](assets/view_multipage_asset_fmr.gif)
 

@@ -1,10 +1,12 @@
 ---
 title: Criação - o ambiente e as ferramentas
 description: O console Sites permite gerenciar e navegar no site. Usando dois painéis, a estrutura do site pode ser expandida e as ações podem ser executadas nos elementos necessários.
+
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
+
 docset: aem65
 exl-id: 5d7b6b2e-d1d8-4efe-b9ff-c9542b4e67d7
 solution: Experience Manager, Experience Manager Sites
@@ -12,11 +14,9 @@ feature: Authoring
 role: User
 source-git-commit: 25bf0d64b6839afec0112ea8c9fde0510e56ccf4
 workflow-type: tm+mt
-source-wordcount: '931'
-ht-degree: 5%
-
+source-wordcount: '952'
+ht-degree: 2%
 ---
-
 # Criação - o ambiente e as ferramentas {#authoring-the-environment-and-tools}
 
 O ambiente de criação do AEM fornece vários mecanismos para organização e edição de conteúdo. As ferramentas fornecidas são acessadas de vários consoles e editores de página.
@@ -35,7 +35,7 @@ Há um editor de página separado com a interface clássica, usando o localizado
 
 ![chlimage_1-109](assets/chlimage_1-109.png)
 
-## Acessar ajuda   {#accessing-help}
+## Acessar ajuda {#accessing-help}
 
 Vários recursos da **Ajuda** podem ser acessados diretamente de dentro do AEM:
 
@@ -189,7 +189,7 @@ O **Log de Auditoria** pode ser acessado a partir da guia **Informações** do s
 
 O console do Site também [fornece informações sobre o status atual da página](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console), como publicação, modificação, bloqueado, livecopy etc.
 
-## Modos de página   {#page-modes}
+## Modos de página {#page-modes}
 
 Ao editar uma página com a interface clássica, existem vários modos que podem ser acessados usando os ícones na parte inferior do sidekick:
 
