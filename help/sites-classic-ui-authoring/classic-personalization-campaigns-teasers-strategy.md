@@ -12,11 +12,9 @@ feature: Authoring,Personalization
 role: User
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '1202'
+source-wordcount: '1203'
 ht-degree: 2%
-
 ---
-
 # Teasers e estratégias{#teasers-and-strategies}
 
 As campanhas geralmente usam teasers como um mecanismo para atrair um segmento específico da população de visitantes até o conteúdo focado em seus interesses. Um ou mais teasers são definidos para uma campanha específica.
@@ -28,7 +26,7 @@ As campanhas geralmente usam teasers como um mecanismo para atrair um segmento e
 * **Páginas da marca** são armazenadas na seção Campanhas do site. Uma marca contém as campanhas individuais.
 * **Páginas de campanha** são armazenadas na seção Campanhas do site. Cada campanha tem uma página individual, sob a qual as definições do teaser são mantidas. O container, ou a página de visão geral, também contém determinadas informações e estatísticas sobre as páginas de teaser individuais.
 
-Os teasers dentro do AEM são compostos de várias partes:
+Os teasers no AEM são compostos de várias partes:
 
 * **As páginas de teaser** são armazenadas na página de campanha apropriada e mantêm as definições dos parágrafos de teaser disponíveis para cada campanha específica. Essas definições são usadas ao exibir os parágrafos do teaser; incluindo variações de conteúdo, o segmento a ser usado para selecionar uma variação e um fator de reforço.
 * O **Componente de teaser** está disponível imediatamente e permite criar uma instância do seu parágrafo de teaser específico em uma página de conteúdo. Você pode arrastar o componente de teaser do sidekick e, em seguida, especificar sua definição de teaser para criar seu próprio parágrafo de teaser. **Observação:** o componente de Teaser agora está obsoleto no AEM 6.2. Em vez disso, use o [Componente de destino](/help/sites-authoring/content-targeting-touch.md).
@@ -111,7 +109,7 @@ E usamos as seguintes definições de teaser:
 
 Em seguida, se aplicarmos isso a um visitante em que:
 
-* **S1**, **S2 e &#x200B;** S6** resolvidos com êxito
+* **S1**, **S2 e** S6** resolvidos com êxito
 
 * a marca **marketing** tem três ocorrências
 * a tag **business** tem seis ocorrências
@@ -245,10 +243,10 @@ Depois de criar sua marca e campanha, você pode criar e configurar sua experiê
 1. Edite o componente de teaser para adicionar o:
 
    * **Caminho da campanha**
-Caminho para a página da campanha que contém a página de teaser individual; os segmentos determinam exatamente qual teaser será mostrado.
+     Caminho para a página da campanha que contém a página de teaser individual; os segmentos determinam exatamente qual teaser será mostrado.
 
    * **[Estratégia](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#strategies)**
-Método usado para seleção quando vários segmentos são resolvidos com sucesso.
+     Método usado para seleção quando vários segmentos são resolvidos com sucesso.
 
    ![chlimage_1-1](assets/chlimage_1-1.png)
 

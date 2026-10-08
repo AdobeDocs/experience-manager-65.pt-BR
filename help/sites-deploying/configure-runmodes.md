@@ -11,11 +11,9 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
-source-wordcount: '746'
-ht-degree: 1%
-
+source-wordcount: '759'
+ht-degree: 2%
 ---
-
 # Modos de execução{#run-modes}
 
 Os modos de execução permitem ajustar a instância do AEM para um propósito específico; por exemplo, criar ou publicar, testar, desenvolver, intranet ou outros.
@@ -120,9 +118,9 @@ Estas pastas são do tipo `nt:folder` e devem conter o pacote apropriado.
 
 Se você tiver definido as configurações para vários modos de execução, será necessário definir qual será usado na inicialização. Existem vários métodos para especificar qual modo de execução usar; a ordem da resolução é:
 
-1. [propriedades do sistema (](#using-a-system-property-in-the-start-script)
-1. [&#128279;](#using-the-sling-properties-file)
-1. [&#128279;](#using-the-r-option)
+1. [propriedades do sistema (`-D`)](#using-a-system-property-in-the-start-script)
+1. [`sling.properties` arquivo](#using-the-sling-properties-file)
+1. [Opção `-r`](#using-the-r-option)
 1. [Detecção de nome de arquivo](#filename-detection-renaming-the-jar-file)
 
 Quando estiver usando um servidor de aplicativos, você também pode [definir o modo de execução em web.xml](#defining-the-run-mode-in-web-xml-with-application-server).
@@ -180,6 +178,6 @@ no arquivo:
 
 `WEB-INF/web.xml`
 
-Isto está no arquivo AEM `war` e deve ser atualizado antes da implantação.
+Isto está no arquivo `war` do AEM e deve ser atualizado antes da implantação.
 
 Consulte [Instalando o AEM com um Servidor de Aplicativos](/help/sites-deploying/application-server-install.md) para obter mais detalhes.

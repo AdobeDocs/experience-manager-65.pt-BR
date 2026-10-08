@@ -1,10 +1,12 @@
 ---
 title: Configuração de componentes no modo de design
-description: Quando a instância do AEM é instalada prontamente, uma seleção de componentes é disponibilizada imediatamente no sidekick. Além desses, vários outros componentes também estão disponíveis. Você pode usar o modo Design para Ativar/desativar esses componentes.
+description: Quando a instância do AEM é instalada pronta para uso, uma seleção de componentes é disponibilizada imediatamente no sidekick. Além desses, vários outros componentes também estão disponíveis. Você pode usar o modo Design para Ativar/desativar esses componentes.
+
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
+
 docset: aem65
 exl-id: cb2d2d0d-feb4-4b89-8325-80f735816904
 solution: Experience Manager, Experience Manager Sites
@@ -12,14 +14,12 @@ feature: Authoring
 role: User
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '508'
+source-wordcount: '514'
 ht-degree: 0%
-
 ---
-
 # Configuração de componentes no modo de design{#configuring-components-in-design-mode}
 
-Quando a instância do AEM é instalada prontamente, uma seleção de componentes é disponibilizada imediatamente no sidekick.
+Quando a instância do AEM é instalada pronta para uso, uma seleção de componentes é disponibilizada imediatamente no sidekick.
 
 Além desses, vários outros componentes também estão disponíveis. Você pode usar o modo Design para [Habilitar/desabilitar esses componentes](#enabledisablecomponentsusingdesignmode). Quando habilitado e localizado na sua página, você pode usar o modo de Design para [configurar aspectos do design do componente](#configuringcomponentsusingdesignmode) editando os parâmetros do atributo.
 

@@ -1,5 +1,5 @@
 ---
-title: Use o modo de layout para redimensionar componentes para a comunicação interativa
+title: Usar o modo de layout para redimensionar componentes e criar uma comunicação interativa
 description: Definir a posição dos componentes usando a grade responsiva disponível no modo Layout
 feature: Interactive Communication
 exl-id: 9534fcb2-4260-4dd0-9f7e-779b10fd3a22
@@ -7,11 +7,9 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '878'
-ht-degree: 0%
-
+source-wordcount: '898'
+ht-degree: 1%
 ---
-
 # Usar o modo Layout para redimensionar componentes {#use-layout-mode-to-resize-components}
 
 A interface de criação do canal da Web de comunicação interativa permite redimensionar componentes usando o modo Layout. Arraste e solte pontos azuis dentro de colunas para definir os pontos inicial e final para posicionar componentes. Os pontos azuis são exibidos depois de tocar no componente na grade responsiva. A grade responsiva consiste em 12 colunas iguais. O sombreamento das cores branco e azul em colunas alternadas diferencia uma coluna da outra.

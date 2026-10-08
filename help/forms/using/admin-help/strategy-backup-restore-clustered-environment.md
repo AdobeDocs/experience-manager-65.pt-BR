@@ -1,6 +1,6 @@
 ---
 title: Estratégia de backup e restauração em um ambiente em cluster
-description: Se a implementação do AEM Forms armazenar dados personalizados adicionais em um banco de dados diferente, você deverá implementar uma estratégia para fazer backup desses dados, garantindo que eles permaneçam sincronizados com os dados do AEM Forms.
+description: Se sua implementação do AEM Forms armazenar dados personalizados adicionais em um banco de dados diferente, você deverá implementar uma estratégia para fazer backup desses dados, garantindo que eles permaneçam sincronizados com os dados do AEM Forms.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
@@ -11,30 +11,28 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '1396'
+source-wordcount: '1428'
 ht-degree: 0%
-
 ---
-
 # Estratégia de backup e restauração em um ambiente em cluster {#strategy-for-backup-and-restore-in-a-clustered-environment}
 
 >[!NOTE]
 >
->Se a implementação do AEM Forms armazenar dados personalizados adicionais em um banco de dados diferente, você deverá implementar uma estratégia para fazer backup desses dados, garantindo que eles permaneçam sincronizados com os dados do AEM Forms. Além disso, o aplicativo deve ser projetado de modo que seja robusto o suficiente para lidar com um cenário em que os bancos de dados adicionais fiquem fora de sincronia. É altamente recomendável que qualquer operação de banco de dados executada seja feita no contexto de uma transação para ajudar a manter um estado consistente.
+>Se sua implementação do AEM Forms armazenar dados personalizados adicionais em um banco de dados diferente, você deverá implementar uma estratégia para fazer backup desses dados, garantindo que eles permaneçam sincronizados com os dados do AEM Forms. Além disso, o aplicativo deve ser projetado de modo que seja robusto o suficiente para lidar com um cenário em que os bancos de dados adicionais fiquem fora de sincronia. É altamente recomendável que qualquer operação de banco de dados executada seja feita no contexto de uma transação para ajudar a manter um estado consistente.
 
-Você precisa fazer backup das seguintes partes do sistema de formulários AEM para se recuperar de qualquer erro:
+Você precisa fazer backup das seguintes partes do sistema AEM Forms para se recuperar de qualquer erro:
 
-* Banco de dados usado por formulários AEM
+* Banco de dados usado pelos formulários do AEM
 * GDS com dados de longa vida e outros documentos persistentes
-* Banco de dados AEM (crx-repository)
+* Banco de dados do AEM (crx-repository)
 
 >[!NOTE]
 >
->Você precisa fazer backup de quaisquer outros dados que estejam sendo usados pela configuração do AEM Forms, como fontes do cliente, dados de conectores e assim por diante.
+>Você precisa fazer backup de todos os outros dados que estão sendo usados pela configuração do AEM Forms, como fontes do cliente, dados de conectores e assim por diante.
 
 ## Fazer backup de um ambiente em cluster {#back-up-a-clustered-environment}
 
-Este tópico discute as seguintes estratégias para fazer backup de qualquer ambiente em cluster de formulários AEM:
+Este tópico discute as seguintes estratégias para fazer backup de qualquer ambiente clusterizado do AEM Forms:
 
 * Backup off-line com tempo de inatividade
 * Backup off-line sem tempo de inatividade (backup de um nó secundário que está desligado)
@@ -45,7 +43,7 @@ Este tópico discute as seguintes estratégias para fazer backup de qualquer amb
 
 1. Desligue todo o cluster e os serviços relacionados. (consulte [Iniciando e interrompendo serviços](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))
 1. Em qualquer nó, faça backup do banco de dados, do GDS e dos Conectores. (consulte [Arquivos para fazer backup e recuperar](/help/forms/using/admin-help/files-back-recover.md#files-to-back-up-and-recover))
-1. Para fazer backup do repositório AEM off-line, execute as seguintes etapas:
+1. Para fazer backup do repositório do AEM off-line, execute as seguintes etapas:
 
    1. Para cada nó de cluster, faça backup do arquivo que contém a ID do nó de cluster.
    1. Faça backup de todos os arquivos de qualquer nó de cluster secundário, incluindo subdiretórios.
@@ -64,7 +62,7 @@ Este tópico discute as seguintes estratégias para fazer backup de qualquer amb
 
 1. Desligue qualquer um dos nós secundários do cluster em relação ao AEM. (consulte [Iniciando e interrompendo serviços](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))
 1. Em qualquer nó, faça backup do banco de dados, do GDS e dos Conectores. (consulte [Arquivos para fazer backup e recuperar](/help/forms/using/admin-help/files-back-recover.md#files-to-back-up-and-recover))
-1. Para fazer backup do repositório AEM off-line, execute as seguintes etapas:
+1. Para fazer backup do repositório do AEM off-line, execute as seguintes etapas:
 
    1. Para cada nó de cluster, faça backup do arquivo que contém a ID do nó de cluster.
    1. Faça backup de todos os arquivos de qualquer nó de cluster secundário, incluindo subdiretórios.
@@ -83,7 +81,7 @@ Este tópico discute as seguintes estratégias para fazer backup de qualquer amb
 
 1. Desligue qualquer um dos nós secundários do cluster em relação ao AEM. (consulte [Iniciando e interrompendo serviços](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))
 1. Em qualquer nó, faça backup do banco de dados, do GDS e dos Conectores. (consulte [Arquivos para fazer backup e recuperar](/help/forms/using/admin-help/files-back-recover.md#files-to-back-up-and-recover))
-1. Para fazer backup do repositório AEM on-line, execute as seguintes etapas:
+1. Para fazer backup do repositório do AEM on-line, execute as seguintes etapas:
 
    1. Para cada nó de cluster, faça backup do arquivo que contém o cluster_node.id.
    1. Faça backup do repository/system.id de cada nó de cluster separadamente.
@@ -94,13 +92,13 @@ Este tópico discute as seguintes estratégias para fazer backup de qualquer amb
 
 ### Faça backup do arquivo de propriedades do Bootstrap {#back-up-the-bootstrap-properties-file}
 
-Quando criamos um cluster AEM, um arquivo de propriedades é criado no servidor de aplicativos para todos os nós secundários. É recomendável fazer backup do arquivo de propriedades do Bootstrap. Você pode encontrar o arquivo no seguinte local no servidor de aplicativos:
+Quando criamos um cluster do AEM, um arquivo de propriedades é criado no servidor de aplicativos para todos os nós secundários. É recomendável fazer backup do arquivo de propriedades do Bootstrap. Você pode encontrar o arquivo no seguinte local no servidor de aplicativos:
 
 * JBoss®: no diretório BIN
 * WebLogic: no diretório de domínio
 * WebSphere®: no diretório do perfil
 
-Faça backup do arquivo para o cenário de recuperação de desastres do nó secundário AEM e substitua-o no local especificado no servidor de aplicativos, se restaurado.
+Faça backup do arquivo para o cenário de recuperação de desastres do nó secundário do AEM e substitua-o no local especificado no servidor de aplicativos, se restaurado.
 
 ## Recuperação em um ambiente em cluster {#recovery-in-a-clustered-environment}
 
@@ -116,11 +114,11 @@ Caso todo o cluster falhe devido a falhas como falha no banco de dados, execute 
 
    >[!NOTE]
    >
-   >Se o nó corrompido for um nó primário AEM, desative todo o nó do cluster.
+   >Se o nó corrompido for um nó principal do AEM, desative todo o nó do cluster.
 
 1. Recrie o sistema físico a partir de uma imagem do sistema.
-1. Aplique patches ou atualizações aos formulários AEM que foram aplicados desde que a imagem foi criada. Essas informações foram registradas durante o procedimento de backup. Os formulários AEM devem ser recuperados no mesmo nível de patch que tinham quando foi feito o backup do sistema.
-1. (*Opcional*) Se todos os outros nós estiverem funcionando bem, é possível que o repositório AEM também esteja corrompido. Nesse caso, você verá uma mensagem de dessincronização do repositório no arquivo error.log do repositório AEM.
+1. Aplique patches ou atualizações aos formulários do AEM que foram aplicados desde que a imagem foi criada. Essas informações foram registradas durante o procedimento de backup. Os formulários do AEM devem ser recuperados no mesmo nível de patch que tinham quando foi feito o backup do sistema.
+1. (*Opcional*) Se todos os outros nós estiverem funcionando bem, é possível que o repositório do AEM também esteja corrompido. Nesse caso, você verá uma mensagem de dessincronização do repositório no arquivo error.log do repositório do AEM.
 
    Para restaurar o repositório, execute as etapas a seguir.
 
@@ -140,7 +138,7 @@ Caso todo o cluster falhe devido a falhas como falha no banco de dados, execute 
 >
 >Considere os seguintes pontos:
 
-* Se o nó com falha era um nó primário AEM, copie todo o conteúdo da pasta do repositório secundário (crx-repository\crx.0000, onde 0000 pode conter qualquer dígito) para a pasta do repositório crx-repository\ e exclua a pasta do repositório secundário.
+* Se o nó com falha era um nó primário do AEM, copie todo o conteúdo da pasta do repositório secundário (crx-repository\crx.0000, onde 0000 pode conter qualquer dígito) para a pasta do repositório crx-repository\ e exclua a pasta do repositório secundário.
 * Antes de reiniciar qualquer nó de cluster, certifique-se de excluir o repositório /clustered.txt do nó primário.
 * Certifique-se de que o nó primário seja iniciado primeiro e, depois de ativado, inicie os outros nós.
 
@@ -148,9 +146,9 @@ Caso todo o cluster falhe devido a falhas como falha no banco de dados, execute 
 
 1. Interrompa todos os nós de cluster.
 1. Recrie o sistema físico a partir de uma imagem do sistema.
-1. Aplique patches ou atualizações aos formulários AEM AEM que foram aplicados desde que a imagem foi criada. Essas informações foram registradas na etapa 1 do procedimento de backup. Os formulários AEM devem ser recuperados no mesmo nível de patch que tinham quando foi feito o backup do sistema.
+1. Aplique patches ou atualizações aos formulários do AEMFormulários do AEM que foram aplicados desde que a imagem foi criada. Essas informações foram registradas na etapa 1 do procedimento de backup. Os formulários do AEM devem ser recuperados no mesmo nível de patch que tinham quando foi feito o backup do sistema.
 1. Restaure o banco de dados, o GDS e os Conectores.
-1. Faça o seguinte para recuperar o repositório AEM off-line:
+1. Faça o seguinte para recuperar o repositório do AEM off-line:
 
    >[!NOTE]
    >
@@ -170,7 +168,7 @@ Caso todo o cluster falhe devido a falhas como falha no banco de dados, execute 
 >
 >Considere os seguintes pontos:
 
-* Se o nó com falha era um nó primário AEM, copie todo o conteúdo da pasta do repositório secundário (parece crx-repository\crx.0000, em que 0000 pode conter qualquer dígito) para a pasta do repositório crx-repository\.
+* Se o nó com falha era um nó primário do AEM, copie todo o conteúdo da pasta do repositório secundário (parece crx-repository\crx.0000, em que 0000 pode conter qualquer dígito) para a pasta do repositório crx-repository\.
 * Antes de reiniciar qualquer nó de cluster, certifique-se de excluir o repositório /clustered.txt do nó primário.
 * Certifique-se de que o nó primário seja iniciado primeiro e, depois de ativado, inicie os outros nós.
 
@@ -181,10 +179,10 @@ O nó publicador não tem nenhuma relação primário-secundário em um ambiente
 ### Recuperar um único nó de editor {#recover-a-single-publisher-node}
 
 1. Desligue o nó que deve ser recuperado e não faça nenhuma atividade de publicação até que o nó esteja ativo novamente.
-1. Restaure o nó Publish usando [Restaurando o Backup](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html).
+1. Restaure o nó Publicar usando [Restaurando o Backup](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html).
 
 ### Recuperar um cluster {#recover-a-cluster}
 
 1. Desligue o cluster.
-1. Restaure o nó Publish usando [Restaurando o Backup](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html).
+1. Restaure o nó Publicar usando [Restaurando o Backup](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html).
 1. Inicie o nó primário seguido pelo nó secundário do cluster do autor.
