@@ -113,7 +113,7 @@ O conhecimento sobre produtos abrange conceitos e tópicos derivados da document
 | Aprendizado direcionado | <ul><li>O que é o editor universal?</li><li>Como criar um programa no Cloud Manager?</li></ul> |
 | Abrir descoberta | <ul><li>Como usar o editor universal?</li><li>Existe uma maneira de copiar o conteúdo de um ambiente para outro?</li></ul> |
 | Resolução de problemas | <ul><li>Por que não posso acessar o editor universal?</li><li>Por que meu pipeline está falhando?</li></ul> |
-| **Criação de tíquetes de suporte** | **Disponível somente para Admins de suporte **<br>**Exemplos** |
+| **Criação de tíquetes de suporte** | **Disponível somente para Admins de suporte &#x200B;**<br>**Exemplos** |
 | Criação automatizada de tíquetes de suporte, capturando o histórico e o contexto do chat do Assistente de IA | <ul><li>Crie um tíquete de suporte para mim.</li></ul> |
 | Obtenha o status do tíquete de suporte | <ul><li>Mostre-me todos os tíquetes de suporte que abri.</li><li>Mostre-me o status do tíquete &quot;E-----------&quot;</li></ul> |
 
