@@ -77,7 +77,7 @@ Para obter acesso ao Assistente de IA no AEM, os clientes devem ter o seguinte:
 
 **Para obter acesso ao Assistente de IA no AEM:**
 
-1. Os clientes devem ter um contrato adicional em vigor para acessar a maioria dos recursos agênticos e viabilizados por IA no Adobe Experience Manager. Entre em contato com o representante da Adobe para obter mais detalhes. Para saber como funciona a ativação de IA gerativa, consulte [IA gerativa em aplicativos do CX Enterprise](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/overview/generative-ai).
+1. Os clientes devem ter um contrato adicional em vigor para acessar a maioria dos recursos agênticos e viabilizados por IA no Adobe Experience Manager. Entre em contato com o representante da Adobe para obter mais detalhes. Para saber como funciona a ativação de IA gerativa, consulte [IA gerativa em aplicativos do CX Enterprise](https://experienceleague.adobe.com/pt-br/docs/cx-enterprise-ai/experience-cloud-ai/overview/generative-ai).
 
 1. Assim que sua organização tiver esse contrato, todos os usuários poderão usar o AI Assistant para Conhecimento do Produto por padrão. Não é necessária nenhuma permissão adicional por usuário ou por grupo.
 
