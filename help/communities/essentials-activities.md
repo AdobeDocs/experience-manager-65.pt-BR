@@ -12,11 +12,9 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '267'
-ht-degree: 2%
-
+source-wordcount: '311'
+ht-degree: 1%
 ---
-
 # Fundamentos do fluxo de atividades {#activity-stream-essentials}
 
 As atividades de um membro da comunidade conectado, como postar em um fórum ou blog, são coletadas em um fluxo que pode ser filtrado e exibido de várias maneiras por meio da configuração do componente de fluxos de atividade.
@@ -25,7 +23,7 @@ A capacidade de seguir o adiciona outro conjunto de atividades quando os membros
 
 Todos os [sites de comunidade](/help/communities/overview.md#communitiessites) incluem uma página de perfil de usuário para o membro conectado que exibirá as atividades do membro da mesma maneira.
 
-## Conceitos  {#concepts}
+## Conceitos {#concepts}
 
 Um *fluxo de atividades* é a lista de atividades recentes executadas por um membro ou uma lista de atividades recentes em um único thread de conteúdo, como um tópico de fórum ou blog.
 
@@ -70,9 +68,9 @@ Um *[gráfico social](/help/communities/essentials-socialgraph.md)* captura as s
 
 ## Essentials para o lado do servidor {#essentials-for-server-side}
 
-* [API de Fluxos de Atividades](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/activitystreams/api/package-frame.html)
+* [API de fluxos de atividade](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/activitystreams/api/package-frame.html)
 
-* [API do Ouvinte de Fluxos de Atividade](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/activitystreams/listener/api/package-frame.html)
+* [API do ouvinte de fluxos de atividade](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/activitystreams/listener/api/package-frame.html)
 
 * [Personalizações do lado do servidor](/help/communities/server-customize.md)
 

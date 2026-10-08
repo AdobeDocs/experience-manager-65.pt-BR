@@ -12,11 +12,9 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '532'
 ht-degree: 0%
-
 ---
-
 # Definição dos casos de teste{#defining-your-test-cases}
 
 Seus casos de teste devem se basear no:
@@ -52,9 +50,9 @@ No entanto, a automatização de casos de teste é um investimento significativo
 
 Ao testar o AEM, alguns detalhes específicos são de especial interesse:
 
-**Ambientes de Autor e Publish**
+**Criar e publicar ambientes**
 
-Embora coberto em [Ambientes](/help/sites-developing/the-basics.md#environments), vale a pena destacar um fator decisivo do AEM em relação ao teste.
+Embora coberto em [Ambientes](/help/sites-developing/the-basics.md#environments), vale a pena destacar um fator decisivo do AEM em relação a testes.
 
 Considere o AEM como dois aplicativos:
 
@@ -62,7 +60,7 @@ Considere o AEM como dois aplicativos:
 Essa instância permite que os autores insiram e publiquem conteúdo.
 Ele tem um pequeno conjunto previsível de usuários, para os quais a funcionalidade e o desempenho específicos são cruciais.
 
-* o ambiente *Publish*
+* o ambiente *Publicar*
 Essa instância apresenta o site em seu formulário publicado para acesso dos visitantes.
 Isso geralmente tem um conjunto maior de usuários, em que o volume de tráfego nem sempre é 100% previsível. O desempenho ainda é crucial ao responder às solicitações. Considere também armazenamento em cache e balanceamento de carga.
 
@@ -97,15 +95,15 @@ Verifique se o site ainda está disponível quando um servidor é desligado.
 * **Clusters**
 Usado para fornecer o seguinte:
 
-   * **Failover**
-Se um servidor falhar, outros servidores no cluster assumirão o processamento.
+  * **Failover**
+    Se um servidor falhar, outros servidores no cluster assumirão o processamento.
 
-   * **Desempenho**
-O balanceamento de carga com failover completo aumenta o desempenho de um cluster.
-Quando usado para um projeto de cliente, o cluster deve ser testado para confirmar a operação correta da configuração.
+  * **Desempenho**
+    O balanceamento de carga com failover completo aumenta o desempenho de um cluster.
+    Quando usado para um projeto de cliente, o cluster deve ser testado para confirmar a operação correta da configuração.
 
 ## Teste de software de terceiros {#testing-third-party-software}
 
-Qualquer software de terceiros com interface com AEM será mencionado nas Especificações detalhadas de requisitos.
+Qualquer software de terceiros com interface com a AEM será mencionado nas Especificações detalhadas de requisitos.
 
 Devem analisar-se todos os ensaios necessários (dependendo do âmbito definido) e obter-se um ensaio limpo.

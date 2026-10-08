@@ -1,5 +1,5 @@
 ---
-title: Campaign Management
+title: Gerenciamento de campanhas
 description: O gerenciamento de campanhas oferece aos profissionais de marketing digital a oportunidade de fornecer conteúdo personalizado e, assim, criar experiências dedicadas para os visitantes. Ele permite que você organize suas campanhas de marketing na Web, email e serviços móveis e, portanto, envolva seus visitantes.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,13 +11,11 @@ feature: Authoring,Personalization
 role: User
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '620'
+source-wordcount: '625'
 ht-degree: 0%
-
 ---
 
-
-# Campaign Management{#campaign-management}
+# Gerenciamento de campanhas{#campaign-management}
 
 O gerenciamento de campanhas oferece aos profissionais de marketing digital a oportunidade de fornecer conteúdo personalizado e, assim, criar experiências dedicadas para os visitantes.
 
@@ -44,24 +42,23 @@ Uma campanha é uma coleção de **Experiências** individuais.
 * **Experiências**
 O conteúdo focalizado forma as várias experiências, apresentadas ao visitante em **Pontos de contato**. Há vários tipos de experiência disponíveis:
 
-   * **Teasers**
+  * **Teasers**
+    [Páginas/Parágrafos](#teasers) do Teaser são usados para direcionar o visitante específico **Segmentos** para um conteúdo que focalize seus interesses.
 
-     [Páginas/Parágrafos](#teasers) do Teaser são usados para direcionar o visitante específico **Segmentos** para um conteúdo que focalize seus interesses.
+    As páginas de teaser podem:
 
-     As páginas de teaser podem:
+    * apresentar uma variedade de opções para o visitante escolher
+    * mostrar apenas um parágrafo de teaser com base no segmento de visitante específico. Por exemplo, o parágrafo de teaser mostrado pode depender da idade do visitante.
 
-      * apresentar uma variedade de opções para o visitante escolher
-      * mostrar apenas um parágrafo de teaser com base no segmento de visitante específico. Por exemplo, o parágrafo de teaser mostrado pode depender da idade do visitante.
+    Normalmente, uma página de teaser é uma ação temporária que dura um período específico, até ser substituída pela próxima página de teaser.
 
-     Normalmente, uma página de teaser é uma ação temporária que dura um período específico, até ser substituída pela próxima página de teaser.
+  * **Boletins informativos**
 
-   * **Boletins informativos**
+    [Comunicações por email](#emailmarketing) são usadas para engajar os usuários e incentivá-los a visitar seu site. Normalmente, assumem a forma de um informativo, enviado para seus **Clientes potenciais** (que estão agrupados em **Listas**). **Observação:** a Adobe não está planejando aprimorar ainda mais esse recurso. A recomendação é [usar o Adobe Campaign e a integração com o AEM](/help/sites-administering/campaign.md).
 
-     [Comunicações por email](#emailmarketing) são usadas para engajar os usuários e incentivá-los a visitar seu site. Normalmente, assumem a forma de um informativo, enviado para seus **Clientes potenciais** (que estão agrupados em **Listas**). **Observação:** o Adobe não está planejando aprimorar ainda mais este recurso. A recomendação é [usar o Adobe Campaign e a integração com o AEM](/help/sites-administering/campaign.md).
+  * **Adobe Target**
 
-   * **Adobe Target**
-
-     Isso permite a integração com o Adobe Target (antigo Test&amp;Target), que fornece aos profissionais de marketing uma ferramenta de otimização para a conversão de sites com os recursos necessários para tornar o conteúdo online mais relevante aos clientes, gerando uma conversão maior. O Adobe Target fornece uma interface intuitiva para projetar e executar testes, criar segmentos de público-alvo e direcionar conteúdo, tudo a partir de um único aplicativo.
+    Isso permite a integração com o Adobe Target (antigo Test&amp;Target), que fornece aos profissionais de marketing uma ferramenta de otimização para a conversão de sites com os recursos necessários para tornar o conteúdo online mais relevante aos clientes, gerando uma conversão maior. O Adobe Target fornece uma interface intuitiva para projetar e executar testes, criar segmentos de público-alvo e direcionar conteúdo, tudo a partir de um único aplicativo.
 
 * **Pontos de contato**
 
@@ -71,13 +68,13 @@ O conteúdo focalizado forma as várias experiências, apresentadas ao visitante
 
 * **Clientes Potenciais**
 
-  As informações que você coletou sobre seus visitantes e como contatá-los formam a base para seus leads. **Observação:** o Adobe não está planejando aprimorar ainda mais este recurso.
+  As informações que você coletou sobre seus visitantes e como contatá-los formam a base para seus leads. **Observação:** a Adobe não está planejando aprimorar ainda mais esse recurso.
 
   A recomendação é [usar o Adobe Campaign e a integração com o AEM](/help/sites-administering/campaign.md).
 
 * **Listas**
 
-  Os clientes em potencial são agrupados em listas para que você possa realizar ações coletivas neles. Observação: **Observação:** o Adobe não está planejando aprimorar ainda mais esse recurso.
+  Os clientes em potencial são agrupados em listas para que você possa realizar ações coletivas neles. Observação: **Observação:** a Adobe não está planejando aprimorar ainda mais esse recurso.
 
   A recomendação é [usar o Adobe Campaign e a integração com o AEM.](/help/sites-administering/campaign.md)
 

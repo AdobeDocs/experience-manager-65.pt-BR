@@ -11,14 +11,12 @@ feature: Integration
 role: Admin
 source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
 workflow-type: tm+mt
-source-wordcount: '1298'
-ht-degree: 10%
-
+source-wordcount: '1329'
+ht-degree: 8%
 ---
-
 # Ativação do Adobe Analytics e do Adobe Target{#opting-into-adobe-analytics-and-adobe-target}
 
-O AEM tem um procedimento de aceitação para ajudar você a se integrar ao Adobe Analytics e ao Adobe Target. Isso está disponível e pronto para uso, como uma tarefa pré-carregada atribuída ao grupo de usuários administrador.
+O AEM tem um procedimento de aceitação para ajudar na integração com o Adobe Analytics e o Adobe Target. Isso está disponível e pronto para uso, como uma tarefa pré-carregada atribuída ao grupo de usuários administrador.
 
 Quando você faz logon como administrador, esta tarefa (**Configuração do Analytics e do Targeting**) fica disponível na [Caixa de Entrada](/help/sites-authoring/inbox.md#out-of-the-box-administrative-tasks). Com base nas credenciais fornecidas, ele ajuda a configurar e integrar esses serviços.
 
@@ -47,7 +45,7 @@ Para qualquer uma das opções, é necessário fornecer as informações da cont
 >
 >Opcionalmente, é possível fornecer informações da conta do Analytics e do Target usando um arquivo de propriedades lido na inicialização do servidor. Consulte [Fornecendo Informações da Conta Usando um Arquivo de Propriedades](/help/sites-administering/opt-in.md#providing-account-information-using-a-properties-file).
 
-Quando você opta pela integração, o AEM executa as seguintes tarefas:
+Quando você opta pela integração do, o AEM executa as seguintes tarefas:
 
 * Cria as configurações de nuvem que habilitam a conexão com o Analytics e o Target.
 * Cria as estruturas que determinam os dados rastreados.
@@ -57,7 +55,7 @@ Quando você opta pela integração, o AEM executa as seguintes tarefas:
 >
 >A AT.js é a biblioteca do cliente padrão. Isso é configurado na [configuração dos serviços de nuvem de destino](/help/sites-administering/target-configuring.md#creating-a-target-cloud-configuration).
 >
->A Adobe recomenda que você use a AT.js como a biblioteca do cliente.
+>A Adobe recomenda usar a AT.js como a biblioteca do cliente.
 
 Para aceitar a tarefa pré-carregada e pronta para uso:
 
@@ -102,7 +100,7 @@ Para recusar, você precisa concluir a tarefa pré-carregada:
 
 Instale um arquivo de propriedades que o AEM lê na inicialização do servidor para configurar as propriedades da conta para integração com o Analytics e o Target. Quando você usa o arquivo de propriedades, o assistente de aceitação usa automaticamente as propriedades do arquivo e a configuração da nuvem é criada de acordo.
 
-O arquivo de propriedades é um arquivo de texto chamado marketingcloud.properties que você salva no diretório de trabalho que o processo AEM está usando (normalmente o mesmo diretório do arquivo JAR). O arquivo inclui as seguintes propriedades:
+O arquivo de propriedades é um arquivo de texto chamado marketingcloud.properties salvo no diretório de trabalho que o processo do AEM está usando (normalmente o mesmo diretório do arquivo JAR). O arquivo inclui as seguintes propriedades:
 
 * analytics.server: o URL do data center do Analytics que você usa.
 * analytics.company: a empresa associada à conta de usuário do Analytics.
@@ -130,7 +128,7 @@ target.password=
 
 O procedimento a seguir descreve como aderir à integração usando o arquivo de propriedades.
 
-1. Crie o arquivo `marketingcloud.properties` no diretório de trabalho que o processo AEM está usando (instância do autor).
+1. Crie o arquivo `marketingcloud.properties` no diretório de trabalho que o processo do AEM está usando (instância do autor).
 
    >[!NOTE]
    >
@@ -156,11 +154,11 @@ Não é necessário alterar as configurações de nuvem. No entanto, você pode 
 
 >[!NOTE]
 >
->Por padrão, quando você opta pelo assistente de configuração do Adobe Target, o Direcionamento preciso é ativado.
+>Por padrão, quando você opta pelo assistente de configuração do Adobe Target, o Direcionamento preciso é habilitado.
 >
 >Direcionamento preciso significa que a configuração do Cloud Service aguarda o contexto ser carregado antes de carregar o conteúdo. Como resultado, em termos de desempenho, o direcionamento preciso pode criar um atraso de alguns milissegundos antes de carregar o conteúdo.
 >
->O direcionamento preciso é sempre ativado na instância do autor. No entanto, na instância de publicação, é possível desativar o direcionamento preciso globalmente, limpando a marca de seleção ao lado de Direcionamento preciso na configuração do Cloud Service (**http://localhost:4502/etc/cloudservices.html**). Você também pode ativar e desativar o direcionamento preciso para componentes individuais, independentemente das suas definições na configuração do Cloud Service.
+>O direcionamento preciso é sempre habilitado na instância de criação. No entanto, na instância de publicação, é possível desativar o direcionamento preciso globalmente, limpando a marca de seleção ao lado de Direcionamento preciso na configuração do Cloud Service (**http://localhost:4502/etc/cloudservices.html**). Você também pode ativar e desativar o direcionamento preciso para componentes individuais, independentemente das suas definições na configuração do Cloud Service.
 >
 >Se você ***já*** tiver criado componentes direcionados e alterar essa configuração, suas alterações não afetarão esses componentes. Faça as alterações diretamente nesses componentes.
 
@@ -180,9 +178,9 @@ Os parâmetros enviados dependem do seguinte:
 
 * Se você quiser usar o arquivo **marketingcloud.properties** preenchido com todas as credenciais necessárias, deverá enviar os seguintes parâmetros:
 
-   * `automaticProvisioning`= `true`
-   * `servicename`= `analytics|target`
-   * `path`=caminho para uma página AEM para anexar as configurações dos serviços em nuvem criadas
+  * `automaticProvisioning`= `true`
+  * `servicename`= `analytics|target`
+  * `path`=caminho para uma página do AEM para anexar as configurações dos serviços em nuvem criadas
 
   Por exemplo, uma solicitação de ondulação que cria configurações do Analytics e do Target e as anexa à página we.retail seria:
 
@@ -191,17 +189,17 @@ Os parâmetros enviados dependem do seguinte:
   ```
 
 * Se você não quiser usar o arquivo **marketingcloud.properties**, envie as credenciais e os parâmetros. Por exemplo:
-   * automaticProvisioning= `true`
-   * servicename= `analytics|target`
-   * path=path para uma página do AEM para anexar as configurações dos serviços de nuvem criados; vários caminhos podem ser definidos
-   * analytics.server= `https://servername`
-   * analytics.company= `Name of company`
-   * analytics.username= `me`
-   * analytics.secret= `secret`
-   * analytics.reportsuite= `we-retail`
-   * target.clientcode= `mycompany`
-   * target.email= `me@adobe.com`
-   * target.password= `password`
+  * automaticProvisioning= `true`
+  * servicename= `analytics|target`
+  * caminho=caminho para uma página do AEM para anexar as configurações dos serviços em nuvem criados; vários caminhos podem ser definidos
+  * analytics.server= `https://servername`
+  * analytics.company= `Name of company`
+  * analytics.username= `me`
+  * analytics.secret= `secret`
+  * analytics.reportsuite= `we-retail`
+  * target.clientcode= `mycompany`
+  * target.email= `me@adobe.com`
+  * target.password= `password`
 
   Nesse caso, a solicitação de ondulação que cria as configurações do Analytics e do Target e as anexa à página de we-retail seria:
 

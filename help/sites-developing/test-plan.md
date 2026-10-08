@@ -1,10 +1,14 @@
 ---
 title: Compilando seu Plano de Teste
+
 description: Os casos de teste individuais são amalgamados em seu Plano de teste
+
+
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: testing
 content-type: reference
+
 docset: aem65
 exl-id: ee5df2c8-ab31-4be9-8ede-3c96f26fc626
 solution: Experience Manager, Experience Manager Sites
@@ -12,11 +16,9 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '193'
+source-wordcount: '194'
 ht-degree: 0%
-
 ---
-
 # Compilando seu Plano de Teste{#compiling-your-test-plan}
 
 Os casos de teste individuais serão amalgamados em seu Plano de teste, que também definirá:
