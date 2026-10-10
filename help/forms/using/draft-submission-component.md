@@ -9,13 +9,26 @@ exl-id: f3f013a7-a399-4178-a901-d4a8c65ddbd3
 solution: Experience Manager, Experience Manager Forms
 feature: Forms Portal
 role: Admin, User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: fa155e29-cba2-5e77-9efd-4824be5ce4c8
+    internal-label: Forms Portal
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '744'
-ht-degree: 0%
-
+source-wordcount: '747'
+ht-degree: 4%
 ---
-
 # Rascunhos e componentes de envios{#drafts-and-submissions-component}
 
 O componente Rascunhos e envios lista todos os formulários que estão no estado de rascunho e os formulários que já foram enviados. O componente tem seções (guias) separadas para rascunhos e formulários enviados. Os usuários podem exibir apenas seus rascunhos e formulários enviados.
@@ -56,21 +69,21 @@ Execute as seguintes etapas para adicionar e configurar um componente Rascunhos 
   </tr>
   <tr>
    <td> </td>
-   <td>Caminho de estilo personalizado</td>
+   <td>Personalizar estilo do caminho</td>
    <td>Se você escolher a opção <strong>Estilo personalizado</strong> no campo <strong>Tipo de estilo</strong>, use o campo <strong>Caminho de estilo personalizado</strong> para especificar o caminho do arquivo CSS personalizado. </td>
   </tr>
   <tr>
    <td> </td>
-   <td>Opções de Exibição</td>
+   <td>Opções de exibição</td>
    <td><p>Especifica as guias a serem exibidas. Você pode optar por exibir formulários de rascunho, formulários enviados ou ambos. </p> <p><strong>Observação</strong>:<em> Para <strong>Opções de exibição</strong>, se você selecionar uma opção diferente de <strong>Ambas</strong>, a opção de campo <strong>Guia Padrão</strong> não será usada.</em></p> </td>
   </tr>
   <tr>
    <td> </td>
-   <td>Guia Padrão</td>
+   <td>Guia padrão</td>
    <td>Especifica a guia a ser exibida quando a página do portal de formulários for carregada. Você pode escolher entre <strong>Guia Forms de rascunho</strong> e <strong>Guia Forms enviada</strong>.</td>
   </tr>
   <tr>
-   <td>Configuração da guia Forms de rascunho</td>
+   <td>Configuração da guia Rascunhos de formulários</td>
    <td>Título personalizado</td>
    <td>Especifica o título da guia <strong>Rascunho do Forms</strong>. O valor padrão é <strong>Rascunho do Forms.</strong></td>
   </tr>
@@ -80,7 +93,7 @@ Execute as seguintes etapas para adicionar e configurar um componente Rascunhos 
    <td>Especifica o layout a ser usado para a lista Forms de rascunho.</td>
   </tr>
   <tr>
-   <td>Configuração da guia Forms enviada</td>
+   <td>Configuração da guia Formulários enviados</td>
    <td>Título personalizado </td>
    <td>Especifica o título da <strong>guia do Forms </strong> enviada. O valor padrão é <strong>Forms Enviado.</strong></td>
   </tr>
@@ -94,9 +107,9 @@ Execute as seguintes etapas para adicionar e configurar um componente Rascunhos 
 
 ## Personalização do armazenamento {#customizing-the-storage}
 
-Ao usar a ação enviar do Portal do Forms ou ativar a opção Armazenar dados no portal de formulários no formulário adaptável, os dados do formulário são armazenados no repositório AEM. Em um ambiente de produção, é recomendável não armazenar dados de rascunho ou de formulário enviados no repositório do AEM. Em vez disso, você deve integrar o componente de rascunhos e envio a um armazenamento seguro, como o banco de dados corporativo, para armazenar rascunhos e dados de formulários enviados.
+Ao usar a ação enviar do Portal do Forms ou habilitar a opção Armazenar dados no portal de formulários no formulário adaptável, os dados do formulário são armazenados no repositório do AEM. Em um ambiente de produção, é recomendável não armazenar dados de formulário de rascunho ou enviados no repositório do AEM. Em vez disso, você deve integrar o componente de rascunhos e envio a um armazenamento seguro, como o banco de dados corporativo, para armazenar rascunhos e dados de formulários enviados.
 
-O Forms portal permite armazenar dados em um repositório AEM local, em um repositório AEM remoto ou em um banco de dados. O AEM Forms permite personalizar a implementação do armazenamento de dados do usuário para rascunhos e envios. Você pode substituir métodos padrão para especificar como os dados de rascunho e envio são armazenados em um armazenamento de sua escolha. Por exemplo, você pode armazenar os dados em um armazenamento de dados implementado atualmente em sua organização.
+O Forms portal permite armazenar dados no repositório local do AEM, no repositório remoto do AEM ou em um banco de dados. O AEM Forms permite personalizar a implementação do armazenamento de dados do usuário para rascunhos e envios. Você pode substituir métodos padrão para especificar como os dados de rascunho e envio são armazenados em um armazenamento de sua escolha. Por exemplo, você pode armazenar os dados em um armazenamento de dados implementado atualmente em sua organização.
 
 O Forms portal fornece serviços (APIs) prontos para armazenar dados no repositório crx de instâncias de publicação locais e remotas do AEM Forms. Você pode substituir as implementações padrão, descritas no artigo [Configuração de serviços de armazenamento para rascunhos e envios](/help/forms/using/configuring-draft-submission-storage.md), por implementações personalizadas para substituir a funcionalidade padrão. Para obter informações detalhadas sobre os métodos necessários em uma implementação personalizada para armazenar conteúdo em um local seguro, consulte [Personalizando serviços de dados de rascunho e envio](/help/forms/using/custom-draft-submission-data-services.md) e [Armazenamento personalizado para componentes de rascunhos e envios.](/help/forms/using/adding-custom-storage-provider-forms.md)
 
