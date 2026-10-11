@@ -1,6 +1,6 @@
 ---
 title: 'Banco de dados IBM DB2: execução de comandos para manutenção regular'
-description: Este documento lista os comandos do IBM DB2 recomendados para a manutenção regular do banco de dados de formulários AEM.
+description: Este documento lista os comandos do IBM DB2 recomendados para a manutenção regular do banco de dados do AEM Forms.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_the_aem_forms_database
@@ -9,16 +9,30 @@ exl-id: 7a4281e7-1544-473a-a471-e9a4c2819a58
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '391'
 ht-degree: 0%
-
 ---
-
 # Banco de dados IBM DB2: execução de comandos para manutenção regular {#ibm-db-database-running-commands-for-regular-maintenance}
 
-Os seguintes comandos do IBM DB2 são recomendados para a manutenção regular do banco de dados de formulários AEM. Para obter informações detalhadas sobre manutenção e ajuste de desempenho para o banco de dados DB2, consulte o *Guia de Administração do IBM DB2*.
+Os seguintes comandos do IBM DB2 são recomendados para a manutenção regular do banco de dados do AEM Forms. Para obter informações detalhadas sobre manutenção e ajuste de desempenho para o banco de dados DB2, consulte o *Guia de Administração do IBM DB2*.
 
 * **runstats:** este comando atualiza estatísticas que descrevem as características físicas de uma tabela de banco de dados, juntamente com seus índices associados. As instruções SQL dinâmicas geradas por formulários AEM usam automaticamente essas estatísticas atualizadas, mas as instruções SQL estáticas criadas dentro de um banco de dados também exigem que o comando `db2rbind` seja executado.
 * **db2rbind:** este comando reassocia todos os pacotes do banco de dados. Use este comando após executar o utilitário `runstats` para revalidar todos os pacotes no banco de dados.
@@ -34,9 +48,9 @@ Para um banco de dados pequeno, como para 10.000 usuários ou 2.500 grupos, é s
 
 Para bancos de dados maiores, como para 100.000 usuários ou 10.000 grupos, execute o comando `reorg` antes de executar o comando `runstats`.
 
-## Use o comando runstats no banco de dados de formulários AEM {#use-the-runstats-command-on-your-aem-forms-database}
+## Use o comando runstats no banco de dados de formulários do AEM {#use-the-runstats-command-on-your-aem-forms-database}
 
-Execute o comando `runstats` nas tabelas e índices do banco de dados de formulários AEM a seguir.
+Execute o comando `runstats` nas tabelas e índices de banco de dados de formulários do AEM a seguir.
 
 >[!NOTE]
 >
@@ -66,9 +80,9 @@ Para obter a sintaxe e o uso corretos, consulte a documentação do fabricante d
      TABLE <schema>.EDCPRINCIPALGRPCTMNTENTITY FOR INDEXES ALL
 ```
 
-## Execute o comando reorg no banco de dados de formulários AEM {#run-the-reorg-command-on-your-aem-forms-database}
+## Execute o comando reorg no banco de dados do AEM Forms {#run-the-reorg-command-on-your-aem-forms-database}
 
-Execute o comando `reorg` nas tabelas e índices do banco de dados de formulários AEM a seguir. Para obter a sintaxe e o uso corretos, consulte a documentação do fabricante do banco de dados.
+Execute o comando `reorg` nas tabelas e índices de banco de dados de formulários do AEM a seguir. Para obter a sintaxe e o uso corretos, consulte a documentação do fabricante do banco de dados.
 
 ```sql
      TABLE <schema>.EDCPRINCIPALGROUPENTITY
