@@ -9,13 +9,20 @@ role: Admin
 exl-id: a9fc9c06-b9e6-4a5e-ab5e-0930ecd4b51b
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1423'
+source-wordcount: '1534'
 ht-degree: 2%
-
 ---
-
 # Configuração Solr para SRP {#solr-configuration-for-srp}
 
 ## Solr para plataforma AEM {#solr-for-aem-platform}
@@ -36,13 +43,13 @@ Baixe e instale o Apache Solr:
 * Nenhum serviço é necessário
 * Opção de modos de execução:
 
-   * Modo independente
-   * [Modo SolrCloud](#solrcloud-mode) (recomendado para ambientes de produção)
+  * Modo independente
+  * [Modo SolrCloud](#solrcloud-mode) (recomendado para ambientes de produção)
 
 * Opção de pesquisa multilíngue (MLS)
 
-   * [Instalando o MLS Padrão](#installing-standard-mls)
-   * [Instalando o MLS Avançado](#installing-advanced-mls)
+  * [Instalando o MLS Padrão](#installing-standard-mls)
+  * [Instalando o MLS Avançado](#installing-advanced-mls)
 
 ## Modo SolrCloud {#solrcloud-mode}
 
@@ -65,20 +72,20 @@ JVM_OPTS="-server -Xmx2048m -XX:+UseConcMarkSweepGC -XX:+CMSClassUnloadingEnable
 
 Ao executar no modo SolrCloud, antes da instalação do MLS, é necessário usar e conhecer os seguintes comandos de configuração do SolrCloud.
 
-#### 1. Fazer upload de uma configuração no ZooKeeper {#upload-a-configuration-to-zookeeper}
+#### &#x200B;1. Carregar uma configuração no ZooKeeper {#upload-a-configuration-to-zookeeper}
 
 Referência:
 [https://solr.apache.org/guide/6_6/command-line-utilities.html](https://solr.apache.org/guide/6_6/command-line-utilities.html)
 
 Uso:
-sh./scripts/cloud-scripts/zkcli.sh \
+sh ./scripts/cloud-scripts/zkcli.sh \
 -cmd upconfig \
--zkhost *servidor:porta* \
+-zkhost *servidor:port* \
 -confname *myconfig-name *\
 -solrhome *solr-home-path* \
 -confdir *config-dir*
 
-#### 2. Criar uma coleção {#create-a-collection}
+#### &#x200B;2. Criar uma coleção {#create-a-collection}
 
 Referência:
 [https://solr.apache.org/guide/6_6/solr-control-script-reference.html#SolrControlScriptReference-Create](https://solr.apache.org/guide/6_6/solr-control-script-reference.html#SolrControlScriptReference-Create)
@@ -92,7 +99,7 @@ Uso:
 -s *número-de-fragmentos* \
 -rf *número-de-réplicas*
 
-#### 3. Vincular uma coleção a um conjunto de configurações {#link-a-collection-to-a-configuration-set}
+#### &#x200B;3. Vincular uma coleção a um conjunto de configurações {#link-a-collection-to-a-configuration-set}
 
 Vincular uma coleção a uma configuração já carregada no ZooKeeper.
 
@@ -100,9 +107,9 @@ Referência:
 [https://solr.apache.org/guide/6_6/command-line-utilities.html](https://solr.apache.org/guide/6_6/command-line-utilities.html)
 
 Uso:
-sh./scripts/cloud-scripts/zkcli.sh \
+sh ./scripts/cloud-scripts/zkcli.sh \
 -cmd linkconfig \
--zkhost *servidor:porta* \
+-zkhost *servidor:port* \
 -coleção *nome-da-minha-coleção* \
 -confname *myconfig-name*
 
@@ -142,7 +149,7 @@ Ao todo, os 33 idiomas a seguir são suportados no MLS avançado.
 
 #### Comparação entre pesquisa AEM 6.1 Solr, MLS padrão e MLS avançado {#comparison-of-aem-solr-search-standard-mls-and-advanced-mls}
 
-**Observação**: AEM 6.1 refere-se ao AEM 6.1 Communities FP3 e anterior.
+**Observação**: o AEM 6.1 se refere ao FP3 do AEM 6.1 Communities e versões anteriores.
 
 ![compare-solr-mls](assets/compare-solr-mls.png)
 
@@ -157,7 +164,7 @@ Arquivos MLS padrão (schema.xml, solrconfig.xml) para Solr 4.10.
 
 Arquivos MLS padrão (schema.xml, solrconfig.xml) para Solr 5.x.
 
-Os arquivos MLS padrão são armazenados no repositório AEM.
+Os arquivos MLS padrão são armazenados no repositório do AEM.
 
 **Observação**: embora os arquivos Solr sejam armazenados na pasta msrp/, eles também são para DSRP (nenhuma alteração é necessária).
 
@@ -288,35 +295,35 @@ Depois que o conteúdo do pacote for extraído para o servidor que hospeda o ser
 * Instale o Solr no modo independente.
 * Se estiver executando Solr5, crie uma coleção1 (semelhante a Solr4):
 
-   * `./bin/solr start`
-   * `./bin/solr create_core -c collection1 -d sample_techproducts_configs`
+  * `./bin/solr start`
+  * `./bin/solr create_core -c collection1 -d sample_techproducts_configs`
 
 * Execute o script de instalação: Instalar [-v 4|5] [-d solrhome] [-c collectionpath]
 em que:
 
-   * &#x200B;- d solrhome
+  * &#x200B;- d solrhome
 
-     Diretório de instalação Solr
+    Diretório de instalação Solr
 
-   * -c caminho de coleção
+  * -c caminho de coleção
 
-     Caminho da coleção em solr
+    Caminho da coleção em solr
 
-   * — help
+  * — help
 
-     Imprimir opções da linha de comando
+    Imprimir opções da linha de comando
 
-   * -v [4|5]
+  * -v [4|5]
 
-     Definir versão para solr
+    Definir versão para solr
 
 * Exemplo para Solr 4.10.4:
 
-   * Install.bat -v 4 -d c:/solr-4.10.4 -c c:/solr-4.10.4/example/solr/collection1
+  * Install.bat -v 4 -d c:/solr-4.10.4 -c c:/solr-4.10.4/example/solr/collection1
 
 * Exemplo para Solr 5.4.0:
 
-   * Install.sh -v 5 -d /tmp/solr-5.4.0 -c /tmp/solr-5.4.0/server/solr/collection1
+  * Install.sh -v 5 -d /tmp/solr-5.4.0 -c /tmp/solr-5.4.0/server/solr/collection1
 
 **Nota**:
 

@@ -9,13 +9,25 @@ exl-id: 55576729-be9c-412e-92ac-4be90650c6fa
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: c191041a-8b54-4bde-9e43-bc8d8f8cea74
+    internal-label: Deploying
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '1182'
+source-wordcount: '1220'
 ht-degree: 0%
-
 ---
-
 # Solução de problemas de instalação com o AEM{#troubleshooting}
 
 Esta seção inclui informações detalhadas sobre os logs disponíveis para ajudá-lo a solucionar problemas e também inclui informações sobre alguns dos problemas que você pode encontrar com o AEM.
@@ -72,7 +84,7 @@ Para solucionar problemas, faça o seguinte:
 
 O próprio CRX tem pouco espaço de memória. Se a aplicação em execução no CRX tiver requisitos de memória maiores ou solicitar operações com muita memória (por exemplo, transações grandes), a instância da JVM em que o CRX é executado deverá ser iniciada com configurações de memória apropriadas.
 
-Use as opções de comando do Java™ para definir as configurações de memória da JVM (por exemplo, java -Xmx512m -jar crx&ast;.jar para definir heapsize como 512 MB).
+Use as opções de comando do Java™ para definir as configurações de memória da JVM (por exemplo, java -Xmx512m -jar crx&ast;.jar para definir o tamanho de pilha para 512 MB).
 
 Especifique a opção de configuração de memória ao iniciar o AEM WCM a partir da linha de comando. Os scripts de inicialização/interrupção do AEM WCM ou os scripts personalizados para gerenciar a inicialização do AEM WCM também podem ser modificados para definir as configurações de memória necessárias.
 

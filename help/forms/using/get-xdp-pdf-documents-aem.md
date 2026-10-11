@@ -9,13 +9,29 @@ role: Admin,User
 exl-id: 9ecdc50a-31e3-46ae-948a-d1f6e6085734
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '671'
+source-wordcount: '672'
 ht-degree: 0%
-
 ---
-
 # Obtenção de documentos XDP e PDF no AEM Forms{#getting-xdp-and-pdf-documents-in-aem-forms}
 
 ## Visão geral {#overview}
@@ -24,7 +40,7 @@ Você pode importar seus formulários do sistema de arquivos local para o reposi
 
 * Modelos de formulário (formulários XFA)
 * PDF forms
-* Documento (documentos de PDF simples)
+* Documento (documentos simples do PDF)
 
 Você pode fazer upload dos tipos de ativos compatíveis individualmente ou como um arquivo ZIP. Você pode carregar um ativo do tipo `Resource` somente com um formulário XFA em um arquivo ZIP.
 
@@ -40,7 +56,7 @@ Você pode fazer upload dos tipos de ativos compatíveis individualmente ou como
 
    ![Opção Arquivos do armazenamento local em Criar](assets/step.png)
 
-1. A caixa de diálogo Fazer upload de formulários ou pacotes permite navegar e escolher o arquivo que deseja fazer upload. O navegador de arquivos exibe apenas os formatos de arquivo compatíveis (ZIP, XDP e PDF).
+1. A caixa de diálogo Fazer upload de formulários ou pacotes permite navegar e escolher o arquivo que deseja fazer upload. O navegador de arquivos exibe somente os formatos de arquivo compatíveis (ZIP, XDP e PDF).
 
    >[!NOTE]
    >
