@@ -9,18 +9,29 @@ exl-id: 7222a0c3-cdb9-4c73-9d53-26f00792e439
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Developer Tools
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '943'
+source-wordcount: '954'
 ht-degree: 0%
-
 ---
-
 # Como usar a ferramenta Servidor proxy{#how-to-use-the-proxy-server-tool}
 
 O servidor proxy atua como um servidor intermediário que transmite solicitações entre um cliente e um servidor. O servidor proxy rastreia todas as interações cliente-servidor e gera um log de toda a comunicação TCP. Isso permite monitorar exatamente o que está acontecendo, sem precisar acessar o servidor principal.
 
-Você pode encontrar o servidor proxy na sua instalação AEM aqui:
+Você pode encontrar o servidor proxy na sua instalação do AEM aqui:
 
 `crx-quickstart/opt/helpers/proxy-2.1.jar`
 
@@ -31,7 +42,7 @@ Você pode usar o servidor proxy para monitorar toda a interação cliente-servi
 * SMTP para mensagens de email
 * LDAP para gerenciamento de usuários
 
-Por exemplo, você pode posicionar o servidor proxy entre dois aplicativos que se comunicam por meio de uma rede TCP/IP; por exemplo, um navegador da Web e AEM. Isso permite monitorar exatamente o que acontece quando você solicita uma página do CQ.
+Por exemplo, você pode posicionar o servidor proxy entre dois aplicativos que se comunicam por meio de uma rede TCP/IP; por exemplo, um navegador da Web e o AEM. Isso permite monitorar exatamente o que acontece quando você solicita uma página do CQ.
 
 ## Iniciando a Ferramenta de Servidor Proxy {#starting-the-proxy-server-tool}
 
@@ -47,7 +58,7 @@ Esse é o endereço do host da instância do CRX à qual você deseja se conecta
 
 `<remoteport>`
 
-Esta é a porta do host da instância do CRX de destino. Por exemplo, o padrão de uma instalação de AEM recém-instalada é **`4502`** e o padrão para uma instância de autor AEM recém-instalada é `4502`.
+Esta é a porta do host da instância do CRX de destino. Por exemplo, o padrão de uma instalação do AEM recém-instalada é **`4502`** e o padrão para uma instância do autor do AEM recém-instalada é `4502`.
 
 `<localport>`
 
@@ -127,7 +138,7 @@ O conteúdo de `test.html` é:
 </html>
 ```
 
-Supondo que a instância AEM esteja em execução em `localhost:4502`, o proxy é iniciado da seguinte maneira:
+Supondo que a instância do AEM esteja em execução em `localhost:4502`, o proxy é iniciado da seguinte maneira:
 
 `java -jar proxy.jar localhost 4502 4444 -logfile test.log`
 
@@ -163,7 +174,7 @@ C-0-#000684 -> [59-7913-4285-8857-832c087bafd5_c484727d3b3665ad%3acrx.default; y
 C-0-#000824 -> [ ]
 ```
 
-A instância AEM responde com o conteúdo do arquivo `test.html`:
+A instância do AEM responde com o conteúdo do arquivo `test.html`:
 
 ```shell
 S-0-#000000 -> [HTTP/1.1 200 OK ]
