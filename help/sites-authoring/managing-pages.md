@@ -5,13 +5,26 @@ exl-id: 74576e51-4b4e-464e-a0b8-0fae748a505d
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2476'
-ht-degree: 62%
-
+source-wordcount: '2506'
+ht-degree: 61%
 ---
-
 # Criar e organizar páginas {#creating-and-organizing-pages}
 
 Esta seção descreve como criar e gerenciar páginas com o Adobe Experience Manager (AEM) para depois [criar conteúdo](/help/sites-authoring/editing-content.md) nessas páginas.
@@ -85,13 +98,13 @@ Ao criar uma página, há dois campos principais:
 
 * **[Título](#title)**:
 
-   * O título é exibido ao usuário no console, na parte superior do conteúdo da página ao editar.
-   * Esse campo é obrigatório.
+  * O título é exibido ao usuário no console, na parte superior do conteúdo da página ao editar.
+  * Esse campo é obrigatório.
 
 * **[Nome](#name)**:
 
-   * Usado para gerar o URI.
-   * A entrada do usuário para este campo é opcional. Se não especificado, o nome é derivado do título. Consulte a seguinte seção [Restrições de nome de página e práticas recomendadas](/help/sites-authoring/managing-pages.md#page-name-restrictions-and-best-practices) para obter detalhes.
+  * Usado para gerar o URI.
+  * A entrada do usuário para este campo é opcional. Se não especificado, o nome é derivado do título. Consulte a seguinte seção [Restrições de nome de página e práticas recomendadas](/help/sites-authoring/managing-pages.md#page-name-restrictions-and-best-practices) para obter detalhes.
 
 #### Restrições de nome de página e práticas recomendadas {#page-name-restrictions-and-best-practices}
 
@@ -130,7 +143,7 @@ Se você fornecer apenas uma página **Título** ao criar uma página, a AEM der
 | Título | Nome derivado |
 |---|---|
 | Schön | schoen.html |
-| SC%&amp;&#42;ç+ | sc---c-.html |
+| SC%&amp;&#42;ç+ | sc—c-.html |
 
 #### Nome {#name}
 
@@ -152,11 +165,14 @@ O modelo define a estrutura de uma página, incluindo uma imagem em miniatura e 
 
 O AEM vem com vários modelos prontos para uso. Os modelos disponíveis dependem do site individual. Os campos principais são:
 
-* **Título** O título exibido na página da Web resultante.
+* **Título**
+O título exibido na página da Web resultante.
 
-* **Nome** Usado ao nomear a página.
+* **Nome**
+Usado ao nomear a página.
 
-* **Modelo** Uma lista de modelos disponíveis para uso ao gerar a nova página.
+* **Modelo**
+Uma lista de modelos disponíveis para uso ao gerar a nova página.
 
 >[!NOTE]
 >
@@ -164,7 +180,7 @@ O AEM vem com vários modelos prontos para uso. Os modelos disponíveis dependem
 
 ### Componentes {#components}
 
-Os componentes são os elementos fornecidos pelo AEM, desse modo, é possível adicionar tipos específicos de conteúdo. O AEM vem com uma variedade de [componentes prontos para uso](/help/sites-authoring/default-components-console.md) que fornecem funcionalidade abrangente. Isso inclui:
+Os componentes são os elementos fornecidos pelo AEM, desse modo, é possível adicionar tipos específicos de conteúdo. O AEM vem com uma variedade de [componentes prontos para uso](/help/sites-authoring/default-components-console.md) que fornecem funcionalidade abrangente. Dentre elas:
 
 * Texto
 * Imagem
@@ -208,14 +224,14 @@ A menos que todas as páginas tenham sido criadas antecipadamente para você, an
 
    * **Título**:
 
-      * Ele é exibido ao usuário e é obrigatório.
+     * Ele é exibido ao usuário e é obrigatório.
 
    * **Nome**:
 
-      * Usado para gerar o URI. Se não especificado, o nome é derivado do título.
-      * Se você fornecer uma página **Nome** ao criar uma página, o AEM [validará o nome de acordo com as convenções](/help/sites-developing/naming-conventions.md) impostas pelo AEM e JCR.
+     * Usado para gerar o URI. Se não especificado, o nome é derivado do título.
+     * Se você fornecer uma página **Nome** ao criar uma página, o AEM [validará o nome de acordo com as convenções](/help/sites-developing/naming-conventions.md) impostas pelo AEM e JCR.
 
-      * **Não é possível inserir caracteres inválidos** no campo **Nome**. Quando o AEM detectar caracteres inválidos, o campo será realçado e uma mensagem explicativa será exibida para indicar os caracteres que precisam ser removidos/substituídos.
+     * **Não é possível inserir caracteres inválidos** no campo **Nome**. Quando o AEM detectar caracteres inválidos, o campo será realçado e uma mensagem explicativa será exibida para indicar os caracteres que precisam ser removidos/substituídos.
 
    >[!NOTE]
    >
@@ -262,7 +278,7 @@ Depois de criar uma página ou navegar para uma página existente (no console), 
 >
 >Navegar para outras páginas do editor de páginas só é possível no modo de visualização, pois os links não estão ativos no modo de Edição...
 
-### Copiar e colar uma página      {#copying-and-pasting-a-page}
+### Copiar e colar uma página {#copying-and-pasting-a-page}
 
 Você pode copiar uma página e todas as suas subpáginas para um novo local:
 
@@ -340,8 +356,8 @@ O AEM oferece a funcionalidade de atualizar todos os links internos que se refer
 
    * Use a [exibição de coluna](/help/sites-authoring/basic-handling.md#column-view) para navegar até o novo local da página:
 
-      * Para selecionar o destino, clique em sua miniatura.
-      * Clique em **Avançar** para continuar.
+     * Para selecionar o destino, clique em sua miniatura.
+     * Clique em **Avançar** para continuar.
 
    * Use **Voltar** para retornar à especificação do nome da página.
 
@@ -381,8 +397,8 @@ O AEM oferece a funcionalidade de atualizar todos os links internos que se refer
 As ações de movimentação de página são sempre processadas de forma assíncrona, permitindo que o usuário continue a criação na interface do usuário desimpedida.
 
 * O usuário deve definir quando a operação assíncrona deve ser executada
-   * **Agora** a execução do processo assíncrono começa imediatamente.
-   * **Mais tarde** permite que o usuário defina quando o processo assíncrono será iniciado.
+  * **Agora** a execução do processo assíncrono começa imediatamente.
+  * **Mais tarde** permite que o usuário defina quando o processo assíncrono será iniciado.
 
   ![Mover página assíncrona](assets/asynchronous-page-move.png)
 
@@ -412,14 +428,14 @@ O status de trabalhos assíncronos pode ser verificado no painel [**Status de Tr
    * Use a opção **Cancelar** para suspender a ação
    * Clique em **Excluir** para confirmar a ação:
 
-      * Se a página não tiver referências, ela será excluída.
-      * Se a página tiver referências, uma caixa de mensagem informará que **Uma ou mais páginas são mencionadas.** Você pode selecionar **Forçar Exclusão** ou **Cancelar**.
+     * Se a página não tiver referências, ela será excluída.
+     * Se a página tiver referências, uma caixa de mensagem informará que **Uma ou mais páginas são mencionadas.** Você pode selecionar **Forçar Exclusão** ou **Cancelar**.
 
 >[!NOTE]
 >
 >Se uma página já estiver publicada, sua publicação será automaticamente desfeita antes da exclusão.
 
-### Bloquear uma página   {#locking-a-page}
+### Bloquear uma página {#locking-a-page}
 
 É possível [bloquear/desbloquear uma página](/help/sites-authoring/editing-content.md#locking-a-page) a partir de um console ou ao editar uma página individual. As informações sobre páginas bloqueadas também são mostradas em ambos os locais.
 

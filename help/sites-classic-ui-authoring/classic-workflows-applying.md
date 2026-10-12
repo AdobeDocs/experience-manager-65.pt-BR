@@ -9,13 +9,22 @@ exl-id: d8b604c5-a6da-47c4-9422-b519e224c7ca
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '249'
-ht-degree: 15%
-
+source-wordcount: '255'
+ht-degree: 14%
 ---
-
 # Aplicação de fluxos de trabalho a páginas{#applying-workflows-to-pages}
 
 Ao aplicar o fluxo de trabalho, especifique as seguintes informações:
@@ -25,8 +34,8 @@ Ao aplicar o fluxo de trabalho, especifique as seguintes informações:
   É possível aplicar qualquer fluxo de trabalho (ao qual você tenha acesso, conforme atribuído pelo administrador do AEM).
 * Opcionalmente:
 
-   * Um comentário que fornece informações sobre por que você iniciou o fluxo de trabalho.
-   * Um título que ajuda a identificar a instância do fluxo de trabalho na Caixa de entrada de um usuário.
+  * Um comentário que fornece informações sobre por que você iniciou o fluxo de trabalho.
+  * Um título que ajuda a identificar a instância do fluxo de trabalho na Caixa de entrada de um usuário.
 
 >[!NOTE]
 >
@@ -47,7 +56,7 @@ A coluna **Status** no console **Sites** indica se um fluxo de trabalho foi apli
 1. Na lista da página, selecione a página e clique em Fluxo de trabalho.
 1. Na caixa de diálogo Iniciar fluxo de trabalho, selecione o fluxo de trabalho a ser aplicado. Opcionalmente, insira um comentário e um título. Em seguida, clique em Start.
 
-### Iniciar um fluxo de trabalho usando Sidekick {#starting-a-workflow-using-sidekick}
+### Iniciar um fluxo de trabalho usando o Sidekick {#starting-a-workflow-using-sidekick}
 
 1. Abra o console Sites.
 1. Abra a página desejada.

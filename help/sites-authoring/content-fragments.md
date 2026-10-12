@@ -10,13 +10,31 @@ exl-id: d5dad844-80ca-4ace-a082-38d892d9ffe2
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Content Fragments
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1138'
-ht-degree: 63%
-
+source-wordcount: '1158'
+ht-degree: 65%
 ---
-
 # Criação de página com fragmentos de conteúdo{#page-authoring-with-content-fragments}
 
 Os fragmentos de conteúdo do Adobe Experience Manager (AEM) são [criados e gerenciados como ativos independentes da página](/help/assets/content-fragments/content-fragments.md).
@@ -42,29 +60,29 @@ Os fragmentos de conteúdo habilitam:
 
 * **Estratégias de marketing e campanha**
 
-   * A revisão de conteúdo por meio de fragmentos de conteúdo gerenciados centralmente.
+  * A revisão de conteúdo por meio de fragmentos de conteúdo gerenciados centralmente.
 
 * **Creative Pro**
 
-   * O rastreamento de ativos criativos por meio de coleções associadas aos fragmentos de conteúdo.
+  * O rastreamento de ativos criativos por meio de coleções associadas aos fragmentos de conteúdo.
 
 * **Redatores**
 
-   * Escreva no editor de fragmento de conteúdo do AEM.
-   * A criação de variações de conteúdo.
-   * A associação de conteúdos relevantes ao fragmento de conteúdo.
-   * O uso do controle de versão/fluxo de trabalho.
-   * É possível compartilhar o fragmento de conteúdo.
-   * O gerenciamento centralizado de traduções.
+  * Escreva no editor de fragmento de conteúdo do AEM.
+  * A criação de variações de conteúdo.
+  * A associação de conteúdos relevantes ao fragmento de conteúdo.
+  * O uso do controle de versão/fluxo de trabalho.
+  * É possível compartilhar o fragmento de conteúdo.
+  * O gerenciamento centralizado de traduções.
 
 * **Produtores e gerentes de jornadas**
 
-   * A seleção de fragmentos e variações predefinidos no processo de criação do AEM.
-   * A confiança de que o fragmento e o conteúdo associado estarão sempre atualizados, já que os redatores e criadores fazem suas atualizações em fragmentos e ativos gerenciados centralmente.
-   * A confiança de que o conteúdo de mídia associado está sendo preparado por relevância.
-   * A criação de variações de conteúdo ad hoc a qualquer momento, garantindo que essas variações continuem sendo gerenciadas centralmente no fragmento.
+  * A seleção de fragmentos e variações predefinidos no processo de criação do AEM.
+  * A confiança de que o fragmento e o conteúdo associado estarão sempre atualizados, já que os redatores e criadores fazem suas atualizações em fragmentos e ativos gerenciados centralmente.
+  * A confiança de que o conteúdo de mídia associado está sendo preparado por relevância.
+  * A criação de variações de conteúdo ad hoc a qualquer momento, garantindo que essas variações continuem sendo gerenciadas centralmente no fragmento.
 
-## Adicionar um fragmento de conteúdo à sua página     {#adding-a-content-fragment-to-your-page}
+## Adicionar um fragmento de conteúdo à sua página {#adding-a-content-fragment-to-your-page}
 
 1. Abra a página para edição.
 
@@ -107,14 +125,14 @@ Na caixa de diálogo de configuração apropriada, você pode selecionar os par�
 
 * **Modo de exibição**:
 
-   * **Elemento de texto simples**
+  * **Elemento de texto simples**
 
-   * **Vários elementos**
+  * **Vários elementos**
 
 * **Elemento**
 
-   * O padrão **Principal** está sempre disponível.
-   * Uma seleção estará disponível se o fragmento tiver sido criado com um modelo apropriado.
+  * O padrão **Principal** está sempre disponível.
+  * Uma seleção estará disponível se o fragmento tiver sido criado com um modelo apropriado.
 
   >[!NOTE]
   >
@@ -122,19 +140,19 @@ Na caixa de diálogo de configuração apropriada, você pode selecionar os par�
 
 * **Variação**
 
-   * O padrão **Mestre** está sempre disponível.
-   * Uma seleção está disponível se variações forem criadas para o fragmento.
+  * O padrão **Mestre** está sempre disponível.
+  * Uma seleção está disponível se variações forem criadas para o fragmento.
 
 * **Parágrafos**: especifique o intervalo de parágrafos a ser incluído:
 
-   * **Tudo**
-   * **Intervalo**: por exemplo, `1`, `3-5`, `9-*`
+  * **Tudo**
+  * **Intervalo**: por exemplo, `1`, `3-5`, `9-*`
 
-      * **Tratar cabeçalhos como seus próprios parágrafos**
+    * **Tratar cabeçalhos como seus próprios parágrafos**
 
 * **Tratar cabeçalhos como seus próprios parágrafos**
 
-### Conexão rápida no editor de fragmentos    {#quick-connection-to-fragment-editor}
+### Conexão rápida no editor de fragmentos {#quick-connection-to-fragment-editor}
 
 É possível abrir a origem do fragmento para edição (o ativo) usando o ícone **Editar** na barra de ferramentas do componente. Isso permite [editar e gerenciar o fragmento de conteúdo](/help/assets/content-fragments/content-fragments.md).
 
@@ -142,7 +160,7 @@ Na caixa de diálogo de configuração apropriada, você pode selecionar os par�
 >
 >Como sempre, editar a origem do fragmento pode afetar todas as páginas que fazem referência a esse fragmento de conteúdo.
 
-### Adicionar conteúdo intermediário     {#adding-in-between-content}
+### Adicionar conteúdo intermediário {#adding-in-between-content}
 
 Quando um fragmento de conteúdo específico for adicionado à página, haverá um espaço reservado para **Arraste os componentes aqui** entre cada parágrafo HTML (e na parte superior/inferior) do fragmento.
 
@@ -178,7 +196,7 @@ Quanto ao conteúdo intermediário, é possível:
 >* A menos que as duas estruturas de parágrafo entrem em conflito; nesse caso, o conteúdo intermediário não é exibido (embora ainda esteja presente internamente).
 >
 
-### Usar conteúdo associado     {#using-associated-content}
+### Usar conteúdo associado {#using-associated-content}
 
 Se você tiver [conteúdo associado](/help/assets/content-fragments/content-fragments-assoc-content.md) ao [fragmento de conteúdo](/help/assets/content-fragments/content-fragments.md), esses ativos estarão disponíveis no painel lateral (depois de colocar o fragmento na página de conteúdo). O conteúdo associado é uma fonte especial de conteúdo do [conteúdo intermediário](#adding-in-between-content).
 
@@ -192,7 +210,7 @@ Se você tiver [conteúdo associado](/help/assets/content-fragments/content-frag
 
 Depois de adicionar um fragmento com conteúdo associado à página, uma nova guia (**Conteúdo associado**) será aberta no painel lateral.
 
-Aqui, é possível arrastar os arquivos para o local desejado (seja para um componente já existente ou para a posição desejada onde o componente adequado será criado): 
+Aqui, é possível arrastar os arquivos para o local desejado (seja para um componente já existente ou para a posição desejada onde o componente adequado será criado):
 
 ![cfm-6420-03](assets/cfm-6420-03.png)
 

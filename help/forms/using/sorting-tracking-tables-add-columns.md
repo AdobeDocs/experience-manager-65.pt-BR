@@ -8,13 +8,27 @@ exl-id: 9ab657cc-fa8e-4168-8a68-e38ac5c51b29
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '332'
 ht-degree: 0%
-
 ---
-
 # Personalizar tabelas de rastreamento{#customize-tracking-tables}
 
 A guia de rastreamento no espaço de trabalho do AEM Forms é usada para exibir os detalhes de instâncias de processo nas quais o usuário conectado está envolvido. Para exibir as tabelas de rastreamento, primeiro selecione um nome de processo no painel esquerdo para ver sua lista de instâncias no painel do meio. Selecione uma instância de processo para ver uma tabela de tarefas geradas por essa instância no painel direito. Por padrão, as colunas da tabela exibem os seguintes atributos de tarefa (o atributo correspondente no modelo de tarefa é fornecido entre parênteses):
@@ -114,7 +128,7 @@ Os atributos restantes no modelo de tarefa disponível para exibição na tabela
  </tbody>
 </table>
 
-Para as seguintes personalizações na tabela de tarefas, você precisa fazer alterações semânticas no código-fonte. Consulte [Introdução à personalização do espaço de trabalho do AEM Forms](/help/forms/using/introduction-customizing-html-workspace.md) para saber como fazer alterações semânticas usando o SDK do espaço de trabalho e criar um pacote minificado a partir da origem alterada.
+Para as seguintes personalizações na tabela de tarefas, você precisa fazer alterações semânticas no código-fonte. Consulte [Introdução à personalização do espaço de trabalho do AEM Forms](/help/forms/using/introduction-customizing-html-workspace.md) para saber como fazer alterações semânticas usando o espaço de trabalho do SDK e criar um pacote minificado a partir da origem alterada.
 
 ## Alteração de colunas da tabela e sua ordem {#changing-table-columns-and-their-order}
 

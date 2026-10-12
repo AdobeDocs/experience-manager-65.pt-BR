@@ -1,18 +1,31 @@
 ---
-title: '[!DNL Experience Manager Assets] integração com  [!DNL Adobe Workfront]'
+title: Integração de [!DNL Experience Manager Assets] com [!DNL Adobe Workfront]
 description: Introdução à integração entre [!DNL Assets] e [!DNL Workfront]
 role: Admin,Leader,Developer
 feature: Workfront Integrations and Apps
 exl-id: 57e2bffe-8094-4557-99c8-7b482681687e
 hide: true
 solution: Experience Manager, Workfront
-source-git-commit: bca6156727dca11b2e09be549f3def6130827193
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: a1f87682-0525-5459-aa06-3560bb4c3b2a
+    internal-label: Workfront Integrations and Apps
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '1190'
+source-wordcount: '1191'
 ht-degree: 3%
-
 ---
-
 # Integração de [!DNL Adobe Experience Manager Assets] com [!DNL Adobe Workfront] {#assets-integration-overview}
 
 | Versão | Link do artigo |
@@ -59,7 +72,7 @@ A seguir estão os detalhes das funcionalidades disponíveis por meio de vários
 | Baixar o AEM Assets vinculado no Workfront | Quando um ativo é vinculado no Workfront, o usuário pode baixar os bytes do ativo. | ✓ | ✓ | ✓ |
 | Pesquisar por AEM Assets no Workfront | O seletor de AEM Assets no Workfront permite pesquisas de texto completo por ativos. | ✓ | ✓ | ✓ |
 | Pesquisar pastas do AEM no Workfront | O seletor de AEM Assets no Workfront permite pesquisas de texto completo para pastas. | ✓ | ✓ | ✓ |
-| Exibir e Navegar pela Hierarquia de Pastas do AEM a partir do Workfront | O seletor de AEM Assets no Workfront permite a navegação da hierarquia do AEM Assets limitada pelo   controles de acesso associados do usuário e permissões definidos no AEM. | ✓ | ✓ | ✓ |
+| Exibir e Navegar pela Hierarquia de Pastas do AEM a partir do Workfront | O seletor de AEM Assets no Workfront permite a navegação da hierarquia do AEM Assets limitada pelos controles de acesso associados do usuário e permissões definidas no AEM. | ✓ | ✓ | ✓ |
 | Rastrear as versões do ativo nas linhas do tempo do AEM | Mantenha o histórico de versões do documento entre o Workfront e o AEM. | ✓ | ✓ | ✓ |
 | Desvincular o Assets do AEM Assets no Workfront | Um ativo vinculado existente do AEM pode ser desvinculado do documento associado do Workfront. Isso não exclui o ativo original no AEM. | ✓ | ✓ | ✓ |
 | Adicionar ativo de nova versão do Workfront ao AEM Assets | Quando uma versão recém-adicionada é adicionada em um documento no Workfront, um usuário pode enviar a nova versão para o AEM para substituir a versão existente. | ✓ | ✓ | ✓ |

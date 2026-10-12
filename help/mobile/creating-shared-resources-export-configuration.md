@@ -9,13 +9,17 @@ exl-id: 576b4567-c7b6-4196-84e7-47e980637540
 solution: Experience Manager
 feature: Mobile
 role: User
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '293'
 ht-degree: 0%
-
 ---
-
 # Criação da Configuração de Exportação de Recursos Compartilhados{#creating-shared-resources-export-configuration}
 
 {{ue-over-mobile}}
@@ -32,7 +36,7 @@ A propriedade ***dps-exportTemplate*** mencionada na tabela acima define o camin
 
 Os recursos a seguir descrevem a exportação de recursos compartilhados do AEM para upload no AEM Mobile.
 
-Os recursos de HTML compartilhados permitem que os artigos compartilhem recursos de HTML que, de outra forma, seriam duplicados para todos os artigos e podem incluir ícones, fontes, JavaScript e css.
+Os Recursos compartilhados do HTML permitem que os artigos compartilhem recursos do HTML que, de outra forma, seriam duplicados para todos os artigos e podem incluir ícones, fontes, JavaScript e css.
 
 A configuração de Sincronização de Conteúdo encontrada em **&lt;dps-exportTemplate>/dps-HTMLResources>** deve ser configurada para exportar todo o conteúdo e um artigo necessários para a renderização estática de propriedade no dispositivo.
 

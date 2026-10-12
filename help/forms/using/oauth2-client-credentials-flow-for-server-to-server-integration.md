@@ -5,13 +5,26 @@ exl-id: 4c356aa6-ebd4-40b9-89e3-bc4519e4a7c5
 solution: Experience Manager, Experience Manager Forms
 feature: Form Data Model
 role: Admin, User, Developer
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 4876a742-a341-5402-aba7-e749c45e777c
+    internal-label: Form Data Model
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '461'
-ht-degree: 8%
-
+source-wordcount: '467'
+ht-degree: 9%
 ---
-
 # Integração do Salesforce usando o fluxo de credenciais do cliente OAuth 2.0  {#configure-salesforce-with-ouath-2.0-client-credential}
 
 | Versão | Link do artigo |
@@ -53,20 +66,20 @@ Antes de definir a comunicação entre um aplicativo do Salesforce e um ambiente
 1. Selecione o **[!UICONTROL Swagger Source]** como **[!UICONTROL Arquivo].**
    >[!NOTE]
    >
-   > As soon as the swagger file is selected, the Scheme, the Host name and the Base path are populated automatically.
+   > Assim que o arquivo swagger for selecionado, o Esquema, o Nome do host e o Caminho base serão preenchidos automaticamente.
 
-1. Upload the created swagger file from your local machine by clicking **[!UICONTROL Browse]**.
-1. Select the **[!UICONTROL Authentication Type]** as **[!UICONTROL OAuth 2.0]** and the **[!UICONTROL Authentication Settings]** panel appears.
-1. Select the **[!UICONTROL Grant Type]** as **[!UICONTROL Client Credentials]**.
-1. Specify the **[!UICONTROL Client Id]** and **[!UICONTROL Client Secret]** obtained from the Salesforce connected app.
-1. Specify the **[!UICONTROL Access Token URL]** in format
+1. Carregue o arquivo do Swagger criado do computador local clicando em **[!UICONTROL Procurar]**.
+1. Selecione o **[!UICONTROL Tipo de Autenticação]** como **[!UICONTROL OAuth 2.0]** e o painel **[!UICONTROL Configurações de Autenticação]** será exibido.
+1. Selecione o **[!UICONTROL Tipo de Concessão]** como **[!UICONTROL Credenciais de Cliente]**.
+1. Especifique a **[!UICONTROL ID do Cliente]** e o **[!UICONTROL Segredo do Cliente]** obtidos do aplicativo conectado ao Salesforce.
+1. Especifique a **[!UICONTROL URL do Token de Acesso]** no formato
    `https://[MyDomainName].my.salesforce.com/services/oauth2/token`.
 
    >[!NOTE]
    >
-   > Each organization has its own specific domain name.
+   > Cada organização tem seu próprio nome de domínio específico.
 
-1. Click **[!UICONTROL Test Connection]**.
-1. If the connection succeeds, click the **[!UICONTROL Create]** button.
+1. Clique em **[!UICONTROL Testar Conexão]**.
+1. Se a conexão tiver êxito, clique no botão **[!UICONTROL Criar]**.
 
-Now, you can [create the Form Data Model](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=pt-BR) to integrate the configured datasource with your Adaptive Forms.
+Agora, você pode [criar o Modelo de Dados de Formulário](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=pt-BR) para integrar a fonte de dados configurada ao seu Forms Adaptável.

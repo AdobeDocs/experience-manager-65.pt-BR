@@ -8,20 +8,24 @@ exl-id: 50785534-5784-4354-b123-5e640b7c0242
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '763'
+source-wordcount: '767'
 ht-degree: 0%
-
 ---
-
 # Visão geral de modelos{#models-overview}
 
 {{ue-over-mobile}}
 
 O gerenciamento de modelos envolve a criação e o gerenciamento de modelos para associação com eventuais objetos de dados. Cada modelo inclui todas as propriedades e definições de campo necessárias para facilitar a criação e a renderização de objetos.
 
-O Gerenciamento de Modelos envolve a criação de **modelos**, **entidades** e **espaços**. O diagrama a seguir ilustra a relação entre o Conteúdo AEM e os modelos.
+O Gerenciamento de Modelos envolve a criação de **modelos**, **entidades** e **espaços**. O diagrama a seguir ilustra a relação entre o Conteúdo do AEM e os modelos.
 
 ![chlimage_1-81](assets/chlimage_1-81.png)
 
@@ -31,7 +35,7 @@ Um modelo descreve o tipo de conteúdo e indica quais informações estão dispo
 
 Os modelos também servem como uma maneira de transformar conteúdo AEM existente em objetos que podem ser facilmente usados por aplicativos móveis nativos.
 
-Os Content Services fornecem alguns modelos prontos para uso para objetos comuns, como ativos, coleções de ativos, páginas de HTML, configurações de aplicativos e páginas independentes de canal. Eles são configuráveis para atender às necessidades específicas do cliente sem exigir um esforço de desenvolvimento de AEM.
+Os Content Services fornecem alguns modelos prontos para uso para objetos comuns, como ativos, coleções de ativos, páginas do HTML, configurações de aplicativos e páginas independentes de canal. Eles são configuráveis para atender às necessidades específicas do cliente sem exigir um esforço de desenvolvimento da AEM.
 
 Os usuários podem criar seus próprios modelos. Isso permite a criação de novos tipos de conteúdo que ainda não são gerenciados pelo AEM. A criação do modelo é feita por meio de uma interface do usuário usando tipos primitivos existentes.
 
@@ -41,7 +45,7 @@ O diagrama a seguir ilustra o modelo de conteúdo para aplicativos AEM Mobile e 
 
 ### Os Modelos {#the-models}
 
-Os modelos são usados para determinar como as entidades são criadas. Eles definem o que está disponível em uma entidade e como esses dados são gerados a partir do conteúdo AEM. Antes de começar a trabalhar com Espaços, Pastas e Entidades, você deve estar familiarizado com a criação e o gerenciamento de modelos.
+Os modelos são usados para determinar como as entidades são criadas. Eles definem o que está disponível em uma entidade e como esses dados são gerados a partir do conteúdo do AEM. Antes de começar a trabalhar com Espaços, Pastas e Entidades, você deve estar familiarizado com a criação e o gerenciamento de modelos.
 
 >[!NOTE]
 >
@@ -54,9 +58,9 @@ Para criar e gerenciar modelos no painel e no repositório, consulte **[Modelos]
 
 Uma entidade é uma instância de um modelo de conteúdo. Uma entidade é exposta por meio da API de serviços de conteúdo à biblioteca do lado do cliente e fornece uma maneira de um aplicativo nativo acessar conteúdo de forma independente de canal.
 
-Se houver conteúdo de AEM existente, uma entidade é gerada usando um modelo e a fonte de conteúdo de AEM. Por exemplo, uma entidade de página é um objeto independente de canal e layout gerado a partir de uma página AEM e do modelo de página.
+Se houver conteúdo do AEM existente, uma entidade será gerada usando um modelo e a fonte de conteúdo do AEM. Por exemplo, uma entidade de página é um objeto independente de canal e layout gerado de uma página do AEM e do modelo de página.
 
-As alterações no conteúdo referenciado de uma entidade resultam em uma alteração na entidade. Por exemplo, se uma *cq:page* for atualizada, quaisquer entidades baseadas nessa página também serão atualizadas.
+As alterações no conteúdo referenciado de uma entidade resultam em uma alteração na entidade. Por exemplo, se um *cq:page* for atualizado, quaisquer entidades baseadas nessa página também serão atualizadas.
 
 Para criar entidades personalizadas a partir de modelos, consulte **[Trabalhando com Entidades](/help/mobile/spaces-and-entities.md)**.
 

@@ -5,18 +5,34 @@ exl-id: e4c9d74c-e08d-4675-91f2-4f9fc2f1bcea
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '826'
+source-wordcount: '856'
 ht-degree: 1%
-
 ---
-
 # Definir configuração de Ausência Temporária {#configure-out-of-office-settings}
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/configure-out-of-office-settings.html?lang=pt-BR) |
+| AEM as a Cloud Service | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/configure-out-of-office-settings.html) |
 | AEM 6.5 | Este artigo |
 
 Se você planeja ficar fora do escritório, é possível especificar o que acontece com os itens atribuídos a você nesse período.
@@ -39,7 +55,7 @@ Você pode segregar a delegação de itens com base nos modelos de fluxo de trab
 
 Execute as seguintes etapas para Ativar a configuração Ausência Temporária para sua conta e delegar seus Itens da Caixa de entrada a outro usuário:
 
-1. Faça logon na instância do AEM. Selecione o ícone ![Caixa de entrada](assets/bell.svg) e selecione **[!UICONTROL Exibir tudo]**. Uma lista dos itens da caixa de entrada é exibida.
+1. Faça logon na sua instância do AEM. Selecione o ícone ![Caixa de entrada](assets/bell.svg) e selecione **[!UICONTROL Exibir tudo]**. Uma lista dos itens da caixa de entrada é exibida.
 1. Selecione o ícone ![Exibir Seletor](assets/viewlist.svg) ou ![Exibir Seletor](assets/calendar.svg) ao lado do botão **[!UICONTROL Criar]** e selecione **[!UICONTROL Configurações]**. A caixa de diálogo de configurações é exibida.
 1. Abra a guia **[!UICONTROL Ausência Temporária]** na caixa de diálogo de configurações.
 1. Selecione o botão **[!UICONTROL Habilitar/Desabilitar]** para habilitar a configuração Ausência Temporária.

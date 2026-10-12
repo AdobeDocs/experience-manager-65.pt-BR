@@ -8,13 +8,26 @@ feature: Correspondence Management
 exl-id: c9c007d0-c545-4738-b11b-4c50986342ee
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 3f00fc92-85ee-583e-abd1-3bc3d96de3a0
+    internal-label: Correspondence Management
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '846'
+source-wordcount: '854'
 ht-degree: 3%
-
 ---
-
 # Propriedades de configuração do gerenciamento de correspondência {#correspondence-management-configuration-properties}
 
 Para configurar essas propriedades, abra a seguinte URL em um navegador: `https://<server>:<port>/<contextPath>/system/console/configMgr` e selecione **Configurações de Gerenciamento de Correspondência**.
@@ -51,11 +64,11 @@ O Gerenciamento de correspondências tem as seguintes propriedades de configura�
    <td>Tipo de representação</td>
    <td>O tipo de representação que o aplicativo Criar correspondência usa para renderizar a pré-visualização de correspondência. </td>
    <td>Representação do HTML</td>
-   <td>Representação de HTML / Representação de PDF</td>
+   <td>Representação do HTML/Representação do PDF</td>
   </tr>
   <tr>
-   <td><p>Ativar CCR PDF highlight</p> </td>
-   <td><p>Habilita o realce de PDF no aplicativo Criar correspondência</p> </td>
+   <td><p>Ativar CCR PDF em destaque</p> </td>
+   <td><p>Habilita o realce no PDF do aplicativo Criar correspondência</p> </td>
    <td><p>verdadeiro</p> </td>
    <td><p>verdadeiro / falso</p> </td>
   </tr>
@@ -69,7 +82,7 @@ O Gerenciamento de correspondências tem as seguintes propriedades de configura�
    <td><p>Cor de realce do público alvo</p> </td>
    <td><p>Cor de destaque do Target no aplicativo Criar correspondência</p> </td>
    <td><p>90;155;245</p> </td>
-   <td><p>Qualquer cor de RGB no formato R;G;B</p> </td>
+   <td><p>Qualquer cor do RGB no formato R;G;B</p> </td>
   </tr>
   <tr>
    <td><p>Tipo de realce de conteúdo</p> </td>
@@ -81,7 +94,7 @@ O Gerenciamento de correspondências tem as seguintes propriedades de configura�
    <td><p>Cor de realce do conteúdo</p> </td>
    <td><p>Cor de destaque do conteúdo no aplicativo Criar correspondência</p> </td>
    <td><p>210;225;245</p> </td>
-   <td><p>Qualquer cor de RGB no formato R;G;B</p> </td>
+   <td><p>Qualquer cor do RGB no formato R;G;B</p> </td>
   </tr>
   <tr>
    <td><p>Tipo de realce de campo</p> </td>
@@ -93,7 +106,7 @@ O Gerenciamento de correspondências tem as seguintes propriedades de configura�
    <td><p>Cor de realce do campo</p> </td>
    <td><p>Cor de destaque do campo no aplicativo Criar correspondência</p> </td>
    <td><p>210;225;245</p> </td>
-   <td><p>Qualquer cor de RGB no formato R;G;B</p> </td>
+   <td><p>Qualquer cor do RGB no formato R;G;B</p> </td>
   </tr>
   <tr>
    <td><p>Tempo limite do aplicativo</p> </td>
@@ -102,8 +115,8 @@ O Gerenciamento de correspondências tem as seguintes propriedades de configura�
    <td><p>Qualquer número</p> </td>
   </tr>
   <tr>
-   <td><p>nome do parâmetro do documento PDF</p> </td>
-   <td><p>Nome do parâmetro para o documento PDF em pós-processamento</p> </td>
+   <td><p>Nome do parâmetro do documento do PDF</p> </td>
+   <td><p>Nome do parâmetro para o documento do PDF em pós-processamento</p> </td>
    <td><p>inPDFDoc</p> </td>
    <td><p>Qualquer nome de variável de string</p> </td>
   </tr>
@@ -126,8 +139,8 @@ O Gerenciamento de correspondências tem as seguintes propriedades de configura�
    <td><p>Qualquer nome de variável de string</p> </td>
   </tr>
   <tr>
-   <td><p>Tipo de envio de PDF</p> </td>
-   <td><p>Tipo de Envio de PDF (tipo de PDF gerado ao enviar a partir do aplicativo Criar Correspondência)</p> </td>
+   <td><p>Tipo de envio do PDF</p> </td>
+   <td><p>Tipo de Envio do PDF (tipo de PDF gerado ao enviar a partir do aplicativo Criar Correspondência)</p> </td>
    <td><p>nonInterative</p> </td>
    <td><p>interativo / não interativo</p> </td>
   </tr>
@@ -153,17 +166,17 @@ O Gerenciamento de correspondências tem as seguintes propriedades de configura�
    <td><p>Formatos de Exibição de Dados</p> </td>
    <td><p>Especifica o formato de exibição específico da localidade para dados</p> </td>
    <td><p>locale=en_US; dateFormat=dd-MM-yyyy; numberDecimalSeparator=.; numberGroupSeparator=,; numberUseGroupSeparator=truelocale=de_DE; dateFormat=dd-MM-yyyy; numberDecimalSeparator=,; numberGroupSeparator=.; numberUseGroupSeparator=truelocale=fr_FR; dateFormat=dd-MM-yyyy; numberDecimalSeparator=,; numberGroupSeparator= ; numberUseGroupSeparator=truelocale=ja_JP; dateFormat=dd-MM-yyyy; numberDecimalSeparator=.; numberGroupSeparator=,; numberUseGroupSeparator=true</p> </td>
-   <td><p>—</p> </td>
+   <td><p>--</p> </td>
   </tr>
   <tr>
    <td><p>Formato de Edição de Dados</p> </td>
    <td><p>Editar formato dos dados. Isso é usado ao gravar dados como string ou analisar dados de string</p> </td>
    <td><p>locale=en_US; dateFormat=dd-MM-yyyy; numberDecimalSeparator=.; numberGroupSeparator=,; numberUseGroupSeparator=true</p> </td>
-   <td>—<p> </p> </td>
+   <td>--<p> </p> </td>
   </tr>
   <tr>
-   <td><p>Gerenciar instâncias de cartas no Publish</p> </td>
-   <td><p>Habilitar/desabilitar a funcionalidade Gerenciar carta (aplicável somente para o Publish Server)</p> </td>
+   <td><p>Gerenciar instâncias de carta ao publicar</p> </td>
+   <td><p>Habilitar/desabilitar a funcionalidade Gerenciar carta (aplicável somente para o Servidor de publicação)</p> </td>
    <td><p>falso</p> </td>
    <td><p>verdadeiro / falso</p> </td>
   </tr>
@@ -198,7 +211,7 @@ O Gerenciamento de correspondências tem as seguintes propriedades de configura�
    <td><p>verdadeiro / falso</p> </td>
   </tr>
   <tr>
-   <td><p>Habilitar a auditoria do Publish</p> </td>
+   <td><p>Habilitar Publicar Auditoria</p> </td>
    <td><p>Ativar/desativar a funcionalidade de auditoria para publicação de ativos</p> </td>
    <td><p>falso</p> </td>
    <td><p>verdadeiro / falso</p> </td>
@@ -242,7 +255,7 @@ O Gerenciamento de correspondências tem as seguintes propriedades de configura�
   <tr>
    <td><p>Raiz do usuário do CM</p> </td>
    <td><p>URL da pasta que contém todos os ativos de usuário do Gerenciamento de correspondências</p> </td>
-   <td><p>—</p> </td>
+   <td><p>--</p> </td>
    <td><p>Local de pasta válido</p> </td>
   </tr>
   <tr>

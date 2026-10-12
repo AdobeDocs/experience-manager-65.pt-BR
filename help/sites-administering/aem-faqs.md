@@ -5,13 +5,22 @@ exl-id: 182c464a-ff7a-467b-9eb5-8ffac335a87a
 solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
-source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1088'
 ht-degree: 0%
-
 ---
-
 # Perguntas frequentes sobre o AEM {#aem-faqs}
 
 Saber as respostas para alguns problemas de solução de problemas e configuração do AEM.
@@ -26,7 +35,8 @@ Com o modo sem binários ativado, os pacotes de conteúdo distribuídos contêm 
 
 #### Como habilitar a distribuição sem binários? {#how-do-i-enable-binary-less-distribution}
 
-Para habilitar a distribuição sem binários, implante com um armazenamento de blob compartilhado.Verifique a propriedade `useBinaryReferences` na configuração OSGI com o PID de fábrica ( `org.apache.sling.distribution.serialization.impl.vlt.VaultDistributionPackageBuilderFactory`*)* que seu agente está usando.
+Para habilitar a distribuição sem binários, implante com um armazenamento de blob compartilhado.
+Verifique a propriedade `useBinaryReferences` na configuração OSGI com o PID de fábrica ( `org.apache.sling.distribution.serialization.impl.vlt.VaultDistributionPackageBuilderFactory`*)* que seu agente está usando.
 
 #### Como ativar permissões ao criar uma Cópia de idioma para autores de conteúdo no AEM? {#how-to-enable-permissions-while-creating-language-copy-for-content-authors-in-aem}
 
@@ -48,7 +58,8 @@ Para obter detalhes, consulte os recursos adicionais abaixo:
 
 #### Como auditar recursos do AEM, como tentativas de logon e ACL ou alterações de permissão? {#how-to-audit-aem-capabilities-such-as-login-attempts-and-acl-or-permission-changes}
 
-A AEM introduziu a capacidade de registrar alterações administrativas para melhorar a solução de problemas e a auditoria. Por padrão, as informações são registradas no arquivo `error.log`. Para facilitar o monitoramento, é recomendável que eles sejam redirecionados para um arquivo de log separado.Para redirecionar a saída para um arquivo de log separado, consulte [Como auditar operações de gerenciamento de usuários no AEM](/help/sites-administering/audit-user-management-operations.md).
+A AEM introduziu a capacidade de registrar alterações administrativas para melhorar a solução de problemas e a auditoria. Por padrão, as informações são registradas no arquivo `error.log`. Para facilitar o monitoramento, é recomendável que eles sejam redirecionados para um arquivo de log separado.
+Para redirecionar a saída para um arquivo de log separado, consulte [Como auditar operações de gerenciamento de usuários no AEM](/help/sites-administering/audit-user-management-operations.md).
 
 #### Como habilitar o SSL por padrão? {#how-to-enable-ssl-by-default}
 
@@ -86,7 +97,8 @@ Se o usuário, que faz upload dos arquivos de filme, não tiver permissões de e
 
 Ao criar uma cópia de idioma por meio da interface para toque (**Referências** > **Atualizar cópia de idioma**), uma nova pasta do DAM é criada no novo idioma e os ativos são referenciados a partir daí.
 
-Essa é a configuração padrão para configurações iniciais. Você pode definir **Traduzir Página Assets** = **Não traduzir** em Configurações de tradução.Para o AEM 6.4, **Ferramentas** > **Serviços em Nuvem** > **Serviços de Tradução em Nuvem**.
+Essa é a configuração padrão para configurações iniciais. Você pode definir **Traduzir Página Assets** = **Não traduzir** em Configurações de tradução.
+Para o AEM 6.4, **Ferramentas** > **Serviços em Nuvem** > **Serviços de Tradução em Nuvem**.
 
 #### Como desabilitar um componente do AEM que causa crescimento exponencial para o AEM SegmentStore (AEM 6.3.1.1)? {#how-to-disable-an-aem-component-causing-exponential-growth-for-the-aem-segmentstore-aem}
 

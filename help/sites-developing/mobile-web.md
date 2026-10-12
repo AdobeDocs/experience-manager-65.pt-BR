@@ -1,6 +1,6 @@
 ---
 title: Web móvel
-description: O AEM fornece várias ferramentas que permitem desenvolver sites para dispositivos móveis e integrar seu conteúdo a aplicativos móveis
+description: O AEM fornece várias ferramentas que permitem desenvolver sites para dispositivos móveis e integrar seu conteúdo em aplicativos móveis
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: mobile-web
@@ -10,18 +10,27 @@ exl-id: 309d256b-c67c-4df9-8851-b1ee3faa55ed
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '183'
 ht-degree: 0%
-
 ---
-
 # Web móvel{#mobile-web}
 
 {{ue-over-mobile}}
 
-O AEM fornece várias ferramentas que permitem desenvolver sites para dispositivos móveis e integrar seu conteúdo a aplicativos móveis.
+O AEM fornece várias ferramentas que permitem desenvolver sites para dispositivos móveis e integrar seu conteúdo em aplicativos móveis.
 
 Esta página deve ser lida junto com a [Página móvel para autores](/help/sites-authoring/mobile.md).
 
@@ -36,4 +45,4 @@ Desenvolva modelos de página e componentes otimizados para visualização usand
 
 ## Desenvolvimento de aplicativos móveis {#developing-mobile-apps}
 
-Desenvolva aplicativos móveis que usam páginas AEM como interface de aplicativo. O AEM se integra ao PhoneGap para que você possa criar aplicativos facilmente usando páginas AEM. A Sincronização de conteúdo permite criar arquivos com versão de páginas para empacotamento com aplicativos. Para saber mais sobre a Sincronização de Conteúdo, clique [aqui](/help/mobile/phonegap-contentsync.md).
+Desenvolva aplicativos móveis que usam páginas do AEM como interface de aplicativo. O AEM integra-se ao PhoneGap para que você possa criar aplicativos facilmente usando as páginas do AEM. A Sincronização de conteúdo permite criar arquivos com versão de páginas para empacotamento com aplicativos. Para saber mais sobre a Sincronização de Conteúdo, clique [aqui](/help/mobile/phonegap-contentsync.md).

@@ -9,13 +9,24 @@ feature: Document Security
 exl-id: fe132f13-5f9a-4c86-a385-0a0026c812e2
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 579c90bb4d8ee8a3b7e633ecc9fb0b797b297ca2
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '10377'
+source-wordcount: '10381'
 ht-degree: 0%
-
 ---
-
 # Configurar o servidor de segurança de documentos {#configure-the-document-security-server}
 
 >[!NOTE]
@@ -474,10 +485,10 @@ Alguns aplicativos clientes podem não suportar marcas d&#39;água dinâmicas. C
 * Não é possível usar um documento protegido por senha do PDF como o elemento de marca d&#39;água.
 * As versões do Acrobat e do Adobe Reader anteriores a 10 não são compatíveis com os seguintes recursos de marca d&#39;água:
 
-   * Marcas d&#39;água do PDF
-   * Vários elementos na marca d&#39;água (Text/PDF)
-   * Opções avançadas, como intervalo de páginas, ou opções de exibição
-   * Opções de formatação de texto, como fonte, nome de fonte e cor especificados. No entanto, as versões anteriores do Acrobat e do Reader exibirão o conteúdo do texto na fonte e cor padrão.
+  * Marcas d&#39;água do PDF
+  * Vários elementos na marca d&#39;água (Text/PDF)
+  * Opções avançadas, como intervalo de páginas, ou opções de exibição
+  * Opções de formatação de texto, como fonte, nome de fonte e cor especificados. No entanto, as versões anteriores do Acrobat e do Reader exibirão o conteúdo do texto na fonte e cor padrão.
 
 * Acrobat 9.0 e versões anteriores: o Acrobat 9.0 e versões anteriores não oferecem suporte a nomes de políticas em marcas d&#39;água dinâmicas. Se o Acrobat 9.0 abrir um documento protegido por política com uma marca d&#39;água dinâmica que inclui um nome de política e outros dados dinâmicos, a marca d&#39;água será exibida sem o nome da política. Se a marca d&#39;água dinâmica incluir apenas o nome da política, o Acrobat exibirá uma mensagem de erro
 

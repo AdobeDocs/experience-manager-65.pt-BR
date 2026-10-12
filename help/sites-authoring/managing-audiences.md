@@ -10,13 +10,28 @@ exl-id: 97e02986-049f-4747-a67a-6aa0677b281e
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '903'
-ht-degree: 63%
-
+source-wordcount: '969'
+ht-degree: 65%
 ---
-
 # Gerenciamento de públicos-alvos{#managing-audiences}
 
 O console Públicos permite criar, organizar e gerenciar públicos para sua conta do Adobe Target ou gerenciar segmentos do ContextHub ou do Client Context:
@@ -65,7 +80,7 @@ Quando você usa mais de uma regra, elas são combinadas pelo operador boolean A
 
 >[!NOTE]
 >
->Se você não vir **Criar público-alvo &#x200B;** no menu **Criar**, não terá as permissões necessárias para criar um público-alvo. Você precisa de permissões de gravação em **/etc/segmentation** para criar públicos-alvo. Por padrão, os autores de conteúdo do grupo têm permissões de gravação.
+>Se você não vir **Criar público-alvo** no menu **Criar**, não terá as permissões necessárias para criar um público-alvo. Você precisa de permissões de gravação em **/etc/segmentation** para criar públicos-alvo. Por padrão, os autores de conteúdo do grupo têm permissões de gravação.
 
 Para criar um público-alvo do Adobe Target:
 
@@ -96,7 +111,7 @@ Para criar um público-alvo do Adobe Target:
 | **Páginas do site** | Direcione visitantes que estão em uma página específica ou têm um parâmetro específico de mbox. | Consulte [Documentação das páginas do site](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/site-pages.html?lang=pt-BR) no Adobe Target. |
 | **Navegador** | Você pode direcionar os usuários que utilizam um determinado navegador ou determinadas opções de navegador quando visitam sua página. | Consulte [Documentação das opções do navegador](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/browser.html?lang=pt-BR) no Adobe Target. |
 | **Perfil do visitante** | Direcione visitantes que atendem a parâmetros de perfil específicos. | Consulte [Documentação do perfil do visitante](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/visitor-profile.html?lang=pt-BR) no Adobe Target. |
-| **Fontes de tráfego** | Direcione visitantes com base no mecanismo de pesquisa ou página de aterrissagem de referência para o site. | Consulte [Documentação das origens de tráfego](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/traffic-sources.html?lang=pt-BR) no Adobe Target. |
+| **Fontes de tráfego** | Direcione visitantes com base no mecanismo de pesquisa ou página de destino de referência para o site. | Consulte [Documentação das origens de tráfego](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/traffic-sources.html?lang=pt-BR) no Adobe Target. |
 
 ## Modificação de um público-alvo no console Públicos-alvo {#modifying-an-audience-in-the-audiences-console}
 

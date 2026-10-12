@@ -14,20 +14,37 @@ autotag-review: '2026-05-18T18:40:39.792Z'
 TQID: 'https://experienceleague.adobe.com/rt98uGXgnhI4s10OP5uh5e4tKysOBlBY9vmAnsipI0Y'
 product_v2:
   - id: e14eb250-3c22-4a07-9061-a78112b2b826
+    internal-label: Experience Manager 6.5
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: da0dfbce-df02-4f8b-b32d-a4e3b1d05085
+    internal-label: Configuration
+  - id: f59890ff-de81-47d5-9ef8-7ab2dd10c6c3
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a9d2a4a6-0a32-4f6e-8eb1-128ec2b18a80
+    internal-label: Components
+  - id: f901afa4-5613-4581-add5-219fa5f03fb5
+    internal-label: Publishing
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 9c96b6744c7af2f061b4dfbf403560047485f9b5
+    internal-label: Optimization
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: 3403
+source-wordcount: '3404'
 ht-degree: 5%
-
 ---
-
 # Adição de ativos do Dynamic Media a páginas{#adding-dynamic-media-assets-to-pages}
 
 Para adicionar a funcionalidade Dynamic Media aos ativos que você usa nos sites, é possível adicionar o componente **Dynamic Media**, **Mídia interativa**, **Mídia panorâmica** ou **Mídia de vídeo 360** diretamente na página. Adicione componentes ao entrar no modo Layout e ativar os componentes do Dynamic Media. Em seguida, adicione esses componentes à página e adicionar ativos ao componente. Os componentes do Dynamic Media são inteligentes - eles sabem se você está adicionando uma imagem ou um vídeo e as opções de configuração disponíveis mudam de acordo.
@@ -186,7 +203,7 @@ Edite as seguintes Configurações do Dynamic Media selecionando o ícone **[!UI
 
   A opção **[!UICONTROL Otimizar para dispositivos de maior resolução]** só é exibida quando o seguinte é verdadeiro:
 
-   * Em Tipo de Predefinição, a **[!UICONTROL Predefinição de Imagem]** está selecionada e o **[!UICONTROL RESS_IP]** está selecionado na lista suspensa **[!UICONTROL Predefinição de Imagem]**.
+  * Em Tipo de Predefinição, a **[!UICONTROL Predefinição de Imagem]** está selecionada e o **[!UICONTROL RESS_IP]** está selecionado na lista suspensa **[!UICONTROL Predefinição de Imagem]**.
 
   ![configuração da proporção de pixels do dispositivo para a predefinição de imagem](/help/assets/assets-dm/dpr-ress-ip.png)
 
@@ -224,10 +241,10 @@ Edite as seguintes configurações do Dynamic Media selecionando **[!UICONTROL E
 
   Com modificadores do visualizador, por exemplo, você pode fazer o seguinte:
 
-   * Associar um arquivo de legenda a um vídeo: [legenda](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html?lang=pt-BR)
-   * Associar um arquivo de navegação a um vídeo: [navegação](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html?lang=pt-BR)
+  * Associar um arquivo de legenda a um vídeo: [legenda](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html?lang=pt-BR)
+  * Associar um arquivo de navegação a um vídeo: [navegação](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html?lang=pt-BR)
 
-     Você pode editar as seguintes Configurações avançadas selecionando **[!UICONTROL Editar]** no componente.
+    Você pode editar as seguintes Configurações avançadas selecionando **[!UICONTROL Editar]** no componente.
 
 * **[!UICONTROL Título]** - Alterar o título do vídeo.
 
@@ -261,7 +278,7 @@ Edite a seguinte Configuração do Dynamic Media selecionando **[!UICONTROL Edit
 
   A opção **[!UICONTROL Otimizar para dispositivos de maior resolução]** só é exibida quando o seguinte é verdadeiro:
 
-   * Em Tipo de predefinição, a opção **[!UICONTROL Recorte inteligente]** está selecionada.
+  * Em Tipo de predefinição, a opção **[!UICONTROL Recorte inteligente]** está selecionada.
 
   ![configuração de taxa de pixels do dispositivo para corte inteligente](/help/assets/assets-dm/dpr-smartcrop.png)
 

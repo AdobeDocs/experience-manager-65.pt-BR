@@ -9,13 +9,20 @@ role: Admin
 exl-id: 36f2e3d2-46c7-48a8-a1e9-213f581bd9f3
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: '326'
 ht-degree: 0%
-
 ---
-
 # Consoles das comunidades {#communities-consoles}
 
 Os consoles do AEM Communities, disponíveis no ambiente Autor no painel de navegação global, fornecem acesso a tarefas administrativas como:
@@ -28,13 +35,13 @@ Os consoles do AEM Communities, disponíveis no ambiente Autor no painel de nave
 * Criar [selos personalizados](badges.md)
 * Configurando o [armazenamento padrão para UGC](srp-config.md)
 
-Quando o [armazenamento UGC](working-with-srp.md) é configurado para ser um armazenamento comum compartilhado por ambientes do Author e do Publish, o [console de moderação](moderation.md), disponível nos ambientes do Author e do Publish, opera em uma instância solitária do UGC.
+Quando o [armazenamento UGC](working-with-srp.md) é configurado para ser um armazenamento comum compartilhado pelos ambientes Autor e Publicação, o [console de moderação](moderation.md), disponível nos ambientes Autor e Publicação, opera em uma instância solitária de UGC.
 
 No ambiente de criação, após entrar com privilégios de administrador, os consoles do `Communities` ficam disponíveis nos consoles de navegação e ferramentas.
 
 >[!NOTE]
 >
->No ambiente do Publish, um [site da comunidade](sites-console.md) exibe um item de menu `Administration` quando o membro conectado tem os privilégios apropriados.
+>No ambiente de Publicação, um [site da comunidade](sites-console.md) exibe um item de menu `Administration` quando o membro conectado tem os privilégios apropriados.
 
 ## Painel de navegação global {#global-navigation-panel}
 
@@ -55,11 +62,11 @@ Para acessar os vários consoles Comunidades, na navegação global, selecione *
 
 * [Moderação](moderation.md)
 
-  O console de Moderação serve para a moderação em massa de UGC e no ambiente do autor. Um console de moderação em massa semelhante está acessível no ambiente do Publish para membros da comunidade com a função de [moderador da comunidade](users.md#publishenvironmentusersandgroups) atribuída a um ou mais sites da comunidade.
+  O console de Moderação serve para a moderação em massa de UGC e no ambiente do autor. Um console de moderação em massa semelhante está acessível no ambiente de Publicação para os membros da comunidade que receberam a função de [moderador da comunidade](users.md#publishenvironmentusersandgroups) para um ou mais sites da comunidade.
 
 * [Membros, Grupos](members.md)
 
-  Os consoles Membros e grupos são para gerenciar membros da comunidade e grupos de membros existentes no ambiente Publish a partir do ambiente de autor.
+  Os consoles Membros e Grupos são para gerenciar membros da comunidade e grupos de membros que existem no ambiente Publicar a partir do ambiente do autor.
 
 * [Relatórios](reports.md)
 

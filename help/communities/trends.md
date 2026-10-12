@@ -10,13 +10,20 @@ exl-id: 2a4297e4-2d88-4fa6-8fea-3fea06753605
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '343'
+source-wordcount: '346'
 ht-degree: 1%
-
 ---
-
 # Tendências da atividade {#activity-trends}
 
 ## Introdução {#introduction}
@@ -61,29 +68,29 @@ Na guia **Comentários**, especifique se e como os comentários dos arquivos car
 
   Selecionar de:
 
-   * `Members`
-   * `Content`
+  * `Members`
+  * `Content`
 
   O padrão é `Members`.
 
 * **Exibir título**
 
   Um título descritivo a ser exibido acima dos dados, como `Trending Content`.
-O padrão é sem título.
+  O padrão é sem título.
 
 * **Exibir contagem**
 
   O número de itens a serem listados.
-O padrão é 10.
+  O padrão é 10.
 
 * **Tipo de atividade**
 
   Selecione um de:
 
-   * `Views`(visitas à página)
-   * `Posts`(criando UGC)
-   * `Follows`
-   * `Likes`
+  * `Views`(visitas à página)
+  * `Posts`(criando UGC)
+  * `Follows`
+  * `Likes`
 
   O padrão é Exibições.
 
@@ -91,24 +98,24 @@ O padrão é 10.
 
   Selecione um de:
 
-   * `Last 24 hours`
-   * `Last 7 days`
-   * `Last 30 days`
-   * `Last 90 days`
-   * `This year (since Jan 1)`
-   * `Total`
+  * `Last 24 hours`
+  * `Last 7 days`
+  * `Last 30 days`
+  * `Last 90 days`
+  * `This year (since Jan 1)`
+  * `Total`
 
   O padrão é `Total`.
 
 * **Caminho de contexto**
 
   Isso permite que você atribua o escopo da atividade a um subconjunto do site, como um Blog específico.
-O padrão é todo o site da comunidade.
+  O padrão é todo o site da comunidade.
 
 * **Agregação de contagem de membros**
 
   Quando desmarcados (desativados), somente os posts de nível superior são contados. Por exemplo, se o contexto for a página raiz (o padrão), um `Activity Type` de `Posts` nunca mostrará nenhuma atividade, pois não há capacidade de postar conteúdo na página raiz. Quando marcadas, as contagens em todas as páginas descendentes são incluídas.
-O padrão está marcado.
+  O padrão está marcado.
 
 ### Exemplo de página com quatro componentes {#example-page-with-components}
 

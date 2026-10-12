@@ -1,6 +1,6 @@
 ---
 title: Recuperação dos dados de formulários do AEM
-description: Este documento descreve as etapas necessárias para recuperar os dados de formulários AEM.
+description: Este documento descreve as etapas necessárias para recuperar os dados de formulários do AEM.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
@@ -9,22 +9,36 @@ exl-id: 9e648bab-9284-4fda-abb4-8bd7cd085981
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1118'
-ht-degree: 0%
-
+source-wordcount: '1174'
+ht-degree: 1%
 ---
-
 # Recuperação dos dados de formulários do AEM {#recovering-the-aem-forms-data}
 
-Esta seção descreve as etapas necessárias para recuperar os dados de formulários AEM. Consulte também [Considerações especiais sobre backup e recuperação](/help/forms/using/admin-help/backup-recovery-strategy-aem-forms.md#special-considerations-for-backup-and-recovery).
+Esta seção descreve as etapas necessárias para recuperar os dados de formulários do AEM. Consulte também [Considerações especiais sobre backup e recuperação](/help/forms/using/admin-help/backup-recovery-strategy-aem-forms.md#special-considerations-for-backup-and-recovery).
 
 >[!NOTE]
 >
->O banco de dados, o repositório GDS, o repositório AEM e os diretórios raiz do armazenamento de conteúdo devem ser restaurados em um computador com o mesmo nome DNS do original.
+>O banco de dados, o GDS, o repositório do AEM e os diretórios raiz do armazenamento de conteúdo devem ser restaurados em um computador com o mesmo nome DNS do original.
 
-Os formulários AEM devem se recuperar de forma confiável das seguintes falhas:
+Os formulários do AEM devem se recuperar de forma confiável das seguintes falhas:
 
 **Falha de Disco:** A mídia de backup mais recente é necessária para recuperar o conteúdo do banco de dados.
 
@@ -36,7 +50,7 @@ Os formulários AEM devem se recuperar de forma confiável das seguintes falhas:
 
 Se estiver usando o modo de backup contínuo, você ainda estará no modo de backup após a recuperação. Se estiver usando o modo de backup de snapshot, você não estará no modo de backup após a recuperação.
 
-Ao restaurar de um backup para um novo sistema, as configurações a seguir podem ser diferentes. Esta diferença não deve afetar uma recuperação bem-sucedida do aplicativo de formulários AEM:
+Ao restaurar de um backup para um novo sistema, as configurações a seguir podem ser diferentes. Essa diferença não deve afetar uma recuperação bem-sucedida do aplicativo AEM Forms:
 
 * Endereço IP
 * Configuração do sistema físico (CPUs, disco, memória)
@@ -48,20 +62,20 @@ Ao restaurar de um backup para um novo sistema, as configurações a seguir pode
 
 Se um único nó de um cluster de vários nós falhar e os nós restantes do cluster estiverem operando corretamente, execute o procedimento de recuperação de nó único do cluster.
 
-## Recuperação dos dados de formulários do AEM {#recover-the-aem-forms-data}
+## Recuperar os dados de formulários do AEM {#recover-the-aem-forms-data}
 
-1. Interrompa os serviços de formulários AEM e o servidor de aplicativos, se estiver em execução.
+1. Pare os serviços de formulários do AEM e o servidor de aplicativos, se estiver em execução.
 1. Se necessário, recrie o sistema físico a partir de uma imagem do sistema. Por exemplo, esta etapa pode não ser necessária se o motivo da recuperação for um servidor de banco de dados com defeito.
-1. Aplique patches ou atualizações aos formulários AEM que foram aplicados desde que a imagem foi criada. Essas informações foram registradas no procedimento de backup. Os formulários AEM devem ser corrigidos no mesmo nível de correção de quando foi feito o backup do sistema.
+1. Aplique patches ou atualizações aos formulários do AEM que foram aplicados desde que a imagem foi criada. Essas informações foram registradas no procedimento de backup. Os formulários do AEM devem ser corrigidos no mesmo nível de patch de quando foi feito o backup do sistema.
 1. (WebSphere® Application Server) Se estiver recuperando uma nova instância do WebSphere® Application Server, execute o comando restoreConfig.bat/sh.
-1. Recuperar o banco de dados de formulários AEM executando primeiro uma operação de restauração de banco de dados usando os arquivos de backup do banco de dados e, em seguida, aplicando os redo logs de transação ao banco de dados recuperado. (Consulte [banco de dados de formulários AEM](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database).) Para obter mais informações, consulte um destes artigos da knowledge base:
+1. Recupere o banco de dados do AEM Forms executando primeiro uma operação de restauração de banco de dados usando os arquivos de backup do banco de dados e, em seguida, aplicando os redo logs de transação ao banco de dados recuperado. (Consulte [banco de dados do AEM Forms](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database).) Para obter mais informações, consulte um destes artigos da knowledge base:
 
-   * [DB2](/help/forms/using/admin-help/files-back-recover.md#db2)
-   * [Backup e recuperação de oracles para formulários AEM](/help/forms/using/admin-help/files-back-recover.md#oracle)
-   * [Microsoft](/help/forms/using/admin-help/files-back-recover.md#sql-server)
+   * [Formulários de backup e recuperação do DB2® para AEM](/help/forms/using/admin-help/files-back-recover.md#db2)
+   * [Formulários Oracle Backup and Recovery for AEM](/help/forms/using/admin-help/files-back-recover.md#oracle)
+   * [Backup e recuperação do Microsoft® SQL Server para formulários AEM](/help/forms/using/admin-help/files-back-recover.md#sql-server)
    * [Backup e recuperação MySQL para formulários AEM](/help/forms/using/admin-help/files-back-recover.md#mysql)
 
-1. Recupere o diretório GDS, primeiro excluindo o conteúdo do diretório GDS na instalação existente de formulários AEM e, em seguida, copiando o conteúdo do diretório GDS do GDS de backup. Se você alterou o local do diretório GDS, consulte [Alterando o local GDS durante a recuperação](recovering-aem-forms-data.md#changing-the-gds-location-during-recovery).
+1. Recupere o diretório GDS, primeiro excluindo o conteúdo do diretório GDS na instalação existente do AEM Forms e, em seguida, copiando o conteúdo do diretório GDS do GDS de backup. Se você alterou o local do diretório GDS, consulte [Alterando o local GDS durante a recuperação](recovering-aem-forms-data.md#changing-the-gds-location-during-recovery).
 1. Renomeie o diretório de backup de GDS a ser restaurado, conforme mostrado nestes exemplos:
 
    >[!NOTE]
@@ -106,8 +120,8 @@ Se um único nó de um cluster de vários nós falhar e os nós restantes do clu
 
      Para restauração em um ambiente em cluster, consulte [Estratégia de backup e restauração em um ambiente em cluster](/help/forms/using/admin-help/strategy-backup-restore-clustered-environment.md#strategy-for-backup-and-restore-in-a-clustered-environment).
 
-1. Exclua todos os arquivos temporários de formulários AEM criados no diretório java.io.temp ou no diretório temporário de Adobe.
-1. Iniciar formulários AEM (consulte [Iniciando e interrompendo serviços](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))<!-- BROKEN LINK and the application server(s) (see [Maintaining the Application Server](/help/forms/using/admin-help/topics/maintaining-the-application-server.md))-->.
+1. Exclua todos os arquivos temporários de formulários do AEM que foram criados no diretório java.io.temp ou no diretório temporário do Adobe.
+1. Inicie os formulários do AEM (consulte [Iniciando e interrompendo serviços](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))<!-- BROKEN LINK and the application server(s) (see [Maintaining the Application Server](/help/forms/using/admin-help/topics/maintaining-the-application-server.md))-->.
 
 ## Alteração da localização do GDS durante a recuperação {#changing-the-gds-location-during-recovery}
 
@@ -119,7 +133,7 @@ Se o GDS for restaurado para um local diferente do local original, execute o scr
 
 >[!NOTE]
 >
->Essa circunstância é a única sob a qual você deve usar esse script para alterar a localização do GDS. Para alterar a localização do GDS enquanto os formulários AEM estiverem em execução, use o Console de administração. (Consulte [Definir configurações gerais de formulários AEM](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings).)
+>Essa circunstância é a única sob a qual você deve usar esse script para alterar a localização do GDS. Para alterar a localização do GDS enquanto o AEM Forms estiver em execução, use o Console de Administração. (Consulte [Definir configurações gerais de formulários do AEM](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings).)
 
 >[!NOTE]
 >

@@ -1,6 +1,6 @@
 ---
 title: Definindo Configurações de Ausência Temporária
-description: O recurso Out of Office permite especificar quando um usuário estará fora do escritório e não poderá concluir tarefas atribuídas por formulários AEM.
+description: O recurso Out of Office permite especificar quando um usuário estará fora do escritório e não poderá concluir tarefas atribuídas pelo AEM Forms.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
@@ -9,16 +9,30 @@ exl-id: 1c8ad09b-d44a-4d90-86d5-d4c66cf5c57c
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '671'
 ht-degree: 0%
-
 ---
-
 # Definindo Configurações de Ausência Temporária {#configuring-out-of-office-settings}
 
-O recurso Out of Office permite que os usuários ou administradores especifiquem quando um usuário estará fora do escritório e não poderá concluir tarefas atribuídas por formulários AEM. Embora um usuário esteja definido como Fora do escritório, suas tarefas são atribuídas a um ou mais usuários designados. Os usuários podem alterar suas configurações de Ausência temporária no Workspace ou os administradores podem alterar as configurações em nome de um usuário no fluxo de trabalho de formulários.
+O recurso Out of Office permite que os usuários ou administradores especifiquem quando um usuário estará fora do escritório e não poderá concluir tarefas atribuídas pelo AEM Forms. Embora um usuário esteja definido como Fora do escritório, suas tarefas são atribuídas a um ou mais usuários designados. Os usuários podem alterar suas configurações de Ausência temporária no Workspace ou os administradores podem alterar as configurações em nome de um usuário no fluxo de trabalho de formulários.
 
 Ao criar um processo, o usuário do Workbench pode especificar se uma tarefa pode ser redirecionada devido às configurações de Ausência temporária.
 
@@ -65,11 +79,11 @@ Enquanto um usuário estiver fora do escritório, você poderá atribuir um ou m
 * Atribua um usuário padrão que receberá a maioria das tarefas do usuário, mas especifique que as tarefas de determinados processos sejam reatribuídas a outros usuários ou permaneçam atribuídas ao usuário que está fora do escritório.
 * Não atribua um usuário padrão, mas atribua determinadas tarefas de determinados processos a usuários específicos.
 
-   1. Localize o usuário, conforme descrito em [Exibir as informações de Ausência Temporária de um usuário](configuring-out-office-settings.md#view-a-user-s-out-of-office-information).
-   1. Clique no nome do usuário que deseja alterar.
-   1. Na lista Usuário Padrão para Tarefas de Ausência Temporária, selecione um usuário na lista. Se você não quiser designar um usuário padrão para receber itens reatribuídos, selecione Não atribuir.
+  1. Localize o usuário, conforme descrito em [Exibir as informações de Ausência Temporária de um usuário](configuring-out-office-settings.md#view-a-user-s-out-of-office-information).
+  1. Clique no nome do usuário que deseja alterar.
+  1. Na lista Usuário Padrão para Tarefas de Ausência Temporária, selecione um usuário na lista. Se você não quiser designar um usuário padrão para receber itens reatribuídos, selecione Não atribuir.
 
-      Se o nome de usuário apropriado não for exibido na lista, clique em Localizar usuário e use a caixa de diálogo Localizar usuário para procurar o usuário. Selecione o usuário apropriado na lista e clique em Selecionar usuário. Você também pode clicar em Exibir Cronograma do Usuário na caixa de diálogo Localizar Usuário para ver o cronograma de ausência do usuário selecionado.
+     Se o nome de usuário apropriado não for exibido na lista, clique em Localizar usuário e use a caixa de diálogo Localizar usuário para procurar o usuário. Selecione o usuário apropriado na lista e clique em Selecionar usuário. Você também pode clicar em Exibir Cronograma do Usuário na caixa de diálogo Localizar Usuário para ver o cronograma de ausência do usuário selecionado.
 
-   1. Se houver processos que não devem ser enviados ao usuário padrão, clique em Adicionar uma exceção, selecione o processo e selecione outro usuário na lista. Você também pode selecionar Não atribuir para que a tarefa permaneça atribuída ao usuário que está fora do escritório.
-   1. Clique em Salvar.
+  1. Se houver processos que não devem ser enviados ao usuário padrão, clique em Adicionar uma exceção, selecione o processo e selecione outro usuário na lista. Você também pode selecionar Não atribuir para que a tarefa permaneça atribuída ao usuário que está fora do escritório.
+  1. Clique em Salvar.

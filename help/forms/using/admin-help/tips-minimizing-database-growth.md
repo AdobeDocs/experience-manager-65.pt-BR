@@ -1,6 +1,6 @@
 ---
 title: Dicas para minimizar o crescimento do banco de dados
-description: Processos de longa duração armazenam dados de processo no banco de dados de formulários AEM. O crescimento do banco de dados de formulários AEM pode ser minimizado usando algumas estratégias fáceis de design de processo e configuração de produto.
+description: Processos de longa duração armazenam dados de processo no banco de dados de formulários do AEM. O crescimento do banco de dados de formulários do AEM pode ser minimizado usando algumas estratégias fáceis de design de processo e configuração de produto.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_the_aem_forms_database
@@ -9,16 +9,30 @@ exl-id: f64efb06-815a-4608-ba1c-39e22f344ebb
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '419'
 ht-degree: 0%
-
 ---
-
 # Dicas para minimizar o crescimento do banco de dados {#tips-for-minimizing-database-growth}
 
-Processos de longa duração armazenam dados de processo no banco de dados de formulários AEM. O crescimento do banco de dados de formulários AEM pode ser minimizado usando algumas estratégias fáceis de design de processo e configuração de produto.
+Processos de longa duração armazenam dados de processo no banco de dados de formulários do AEM. O crescimento do banco de dados de formulários do AEM pode ser minimizado usando algumas estratégias fáceis de design de processo e configuração de produto.
 
 ## Dicas de design de processos {#process-design-tips}
 
@@ -32,6 +46,6 @@ Use tipos de variáveis simples (por exemplo, string ou int) e evite usar tipos 
 
 ## Dicas de administração de produtos {#product-administration-tips}
 
-Use o armazenamento global de documentos (GDS) com eficiência. O diretório GDS no Forms Server é usado para armazenar, entre outras coisas, arquivos que são passados para serviços que fazem parte de formulários AEM em processos. Para melhorar o desempenho, documentos menores são armazenados na memória e mantidos no banco de dados.
+Use o armazenamento global de documentos (GDS) com eficiência. O diretório GDS no servidor do Forms é usado para armazenar, entre outras coisas, arquivos que são passados para serviços que fazem parte de formulários do AEM em processos. Para melhorar o desempenho, documentos menores são armazenados na memória e mantidos no banco de dados.
 
-O console de administração expõe a propriedade Default Document Max Inline Size para configurar o tamanho máximo de documentos armazenados na memória e mantidos no banco de dados. (Consulte [Definir configurações gerais de formulários AEM](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings).) Se você definir essa propriedade com um valor baixo, a maioria dos documentos será mantida no diretório GDS em vez de no banco de dados. A vantagem é que você pode excluir mais facilmente os arquivos quando eles não são mais necessários quando eles são armazenados no diretório GDS.
+O console de administração expõe a propriedade Default Document Max Inline Size para configurar o tamanho máximo de documentos armazenados na memória e mantidos no banco de dados. (Consulte [Definir configurações gerais de formulários do AEM](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings).) Se você definir essa propriedade com um valor baixo, a maioria dos documentos será mantida no diretório GDS em vez de no banco de dados. A vantagem é que você pode excluir mais facilmente os arquivos quando eles não são mais necessários quando eles são armazenados no diretório GDS.

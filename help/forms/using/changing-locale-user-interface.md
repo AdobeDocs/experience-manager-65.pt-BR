@@ -10,13 +10,27 @@ exl-id: 9a069486-02a8-4058-adfb-4e0e49d8c0cf
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '556'
+source-wordcount: '573'
 ht-degree: 0%
-
 ---
-
 # Alterando o local da interface do usuário do espaço de trabalho do AEM Forms{#changing-the-locale-of-aem-forms-workspace-user-interface}
 
 O espaço de trabalho do AEM Forms oferece suporte imediato para os idiomas inglês, francês, alemão e japonês. Ela também permite localizar a interface do usuário do AEM Forms Workspace em qualquer outro idioma.
@@ -37,7 +51,7 @@ Antes de executar as etapas acima, siga as etapas listadas em [Etapas genéricas
 
 Execute as etapas a seguir para adicionar suporte a um idioma *Novo* e ao código de localidade do navegador *novo*.
 
-1. Efetue logon no CRXDE Lite.
+1. Faça logon no CRXDE Lite.
 A URL padrão do CRXDE Lite é `https://'[server]:[port]'/lc/crx/de/index.jsp`.
 1. Navegue até o local `apps/ws/locales` e crie uma pasta `nw.`
 1. Copie o arquivo `translation.json`do local `/apps/ws/locales/en-US` para o local `/apps/ws/locales/nw`.
@@ -55,7 +69,7 @@ Nas etapas a seguir, presume-se que os novos arquivos de imagem localizados seja
 
 >[!NOTE]
 >
->Para encontrar o código de localidade do idioma do navegador do seu navegador. Abrir `https://'[server]:[port]'/lc/libs/ws/Locale.html`.
+>Para encontrar o código de localidade do idioma do navegador do seu navegador. Abra `https://'[server]:[port]'/lc/libs/ws/Locale.html`.
 
 ![recolhendo_imagens_de_painéis](assets/collapsing_panels_image.png)
 
@@ -80,7 +94,7 @@ Para localizar as imagens, execute as seguintes etapas:
 
 1. Execute todas as alterações semânticas listadas no artigo [Personalização do Workspace](../../forms/using/introduction-customizing-html-workspace.md).
 1. Navegue até a pasta *js/runtime/utility* e abra o arquivo *usersession.js* para edição.
-1. Localize o código listado no bloco de código original e adicione a condição *lang!== &#39;nw&#39;* para a instrução if:
+1. Localize o código listado no bloco de código original e adicione a condição *lang !== &#39;nw&#39;* à instrução if:
 
    ```javascript
    // Orignal code

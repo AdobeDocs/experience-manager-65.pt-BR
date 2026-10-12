@@ -10,13 +10,27 @@ feature: Carousel Banners
 role: User, Admin
 exl-id: 53d34d3a-ecb6-4fa0-9665-60d21f48021e
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: bd0d2470-932c-4269-8eca-6d939b72d9ef
+    internal-label: Dynamic Media
+subfeature_v2:
+  - id: e82a35fa-5829-4d45-8047-ede0efd4c4ad
+    internal-label: Carousel banners
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '4665'
+source-wordcount: '4791'
 ht-degree: 3%
-
 ---
-
 # Banners em carrossel{#carousel-banners}
 
 Os banners do carrossel permitem que os profissionais de marketing impulsionem a conversão criando facilmente conteúdo promocional rotativo interativo e entregando-o em qualquer tela.
@@ -379,7 +393,7 @@ Você pode usar a Visualização para ver como o banner do carrossel é exibido 
 
 Quando estiver satisfeito com o banner do carrossel, você poderá publicá-lo.
 Consulte [Incorporação do Visualizador de Vídeo ou Imagem a uma Página da Web](/help/assets/embed-code.md).
-Consulte [Vinculando URLs ao aplicativo da Web](/help/assets/linking-urls-to-yourwebapplication.md). O método de vinculação baseado em URL não é possível se o conteúdo interativo tiver links com URLs relativos, principalmente links para páginas do Experience Manager Sites.
+Consulte [Vinculando URLs ao aplicativo Web](/help/assets/linking-urls-to-yourwebapplication.md). O método de vinculação baseado em URL não é possível se o conteúdo interativo tiver links com URLs relativos, principalmente links para páginas do Experience Manager Sites.
 Consulte [Adicionando o Dynamic Media Assets a páginas](/help/assets/adding-dynamic-media-assets-to-pages.md).
 
 Você pode visualizar banners do carrossel no Editor do carrossel (método preferencial) ou na lista **[!UICONTROL Visualizadores]**.

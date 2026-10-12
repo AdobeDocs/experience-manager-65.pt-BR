@@ -11,13 +11,27 @@ exl-id: d4507059-a54d-4dc9-a263-e55dfa27eeb1
 feature: Troubleshooting
 mini-toc-levels: 3
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: cda65036-5305-4f01-89da-9b3506ae8c50
+    internal-label: Administration
+subfeature_v2:
+  - id: aaba5717-080e-40d6-a128-c9c8a9255476
+    internal-label: Troubleshooting
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '1410'
+source-wordcount: '1411'
 ht-degree: 0%
-
 ---
-
 # Solução de problemas do Dynamic Media - Modo Scene7{#troubleshooting-dynamic-media-scene-mode}
 
 O documento a seguir descreve a solução de problemas do Dynamic Media que está executando o modo de execução **dynamicmedia_scene7**.
@@ -243,7 +257,7 @@ No CRXDE Lite, faça o seguinte:
    * `"is/content"`
    * `dam:scene7Folder`
    * `<asset-name>`
-Exemplo: `https://<server>/is/content/myfolder/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png`
+     Exemplo: `https://<server>/is/content/myfolder/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png`
 
 **Solução**
 
@@ -255,7 +269,8 @@ Se o trabalho artístico de ativos de amostra ou predefinição do visualizador 
 1. Procure o pacote do visualizador na lista; ele começa com `cq-dam-scene7-viewers-content`.
 1. Selecione **Reinstalar**.
 1. Em Cloud Services, navegue até a página Configuração do Dynamic Media e abra a caixa de diálogo de configuração do Dynamic Media - S7.
-1. Não fazer alterações, selecione **Salvar**.Essa ação de salvar aciona a lógica novamente para criar e sincronizar os ativos de amostra, o CSS de predefinição do visualizador e o trabalho artístico.
+1. Não fazer alterações, selecione **Salvar**.
+Essa ação de salvar aciona a lógica novamente para criar e sincronizar os ativos de amostra, o CSS de predefinição do visualizador e o trabalho artístico.
 
 ### Problema: a Visualização da imagem não está sendo carregada na criação das predefinições do visualizador {#image-preview-not-loading}
 

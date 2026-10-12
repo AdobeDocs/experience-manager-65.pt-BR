@@ -7,13 +7,27 @@ role: User
 exl-id: 5eff4a0f-30b1-4753-ad0b-002656eed972
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: bca6156727dca11b2e09be549f3def6130827193
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 74ec00bc-0862-520e-86dc-e377aeccc141
+    internal-label: Search
+  - id: bd0d2470-932c-4269-8eca-6d939b72d9ef
+    internal-label: Dynamic Media
+subfeature_v2:
+  - id: f0e3b2ca-813f-4b7a-81df-52339e17ddcf
+    internal-label: Smart Tags
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1611'
-ht-degree: 1%
-
+source-wordcount: '1612'
+ht-degree: 6%
 ---
-
 # Entender, aplicar e preparar Tags inteligentes {#enhanced-smart-tags}
 
 | Versão | Link do artigo |
@@ -133,7 +147,7 @@ Você pode executar o fluxo de trabalho de marcação periodicamente ou sempre q
 
 Você pode ativar o Serviço de conteúdo inteligente para marcar ativos periodicamente em uma pasta. Abra a página de propriedades da sua pasta de ativos, selecione **[!UICONTROL Habilitar Tags inteligentes]** na guia **[!UICONTROL Detalhes]** e salve as alterações.
 
-Depois que essa opção é selecionada para uma pasta, o Serviço de conteúdo inteligente marca automaticamente os ativos dentro da pasta. Por padrão, o fluxo de trabalho de marcação é executado todos os dias às 12:00 AM.
+Depois que essa opção é selecionada para uma pasta, o Serviço de conteúdo inteligente marca automaticamente os ativos dentro da pasta. Por padrão, o workflow de marcação é executado todos os dias às 12h.
 
 ### Marcação sob demanda {#on-demand-tagging}
 

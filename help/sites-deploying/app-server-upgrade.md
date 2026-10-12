@@ -5,18 +5,27 @@ feature: Upgrading
 exl-id: 86dd10ae-7f16-40c8-84b6-91ff2973a523
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '449'
 ht-degree: 0%
-
 ---
-
 # Etapas de Atualização para Instalações de Servidor de Aplicativos{#upgrade-steps-for-application-server-installations}
 
-Esta seção descreve o procedimento que deve ser seguido para atualizar o AEM nas instalações do Servidor de Aplicativos.
+Esta seção descreve o procedimento que deve ser seguido para atualizar o AEM para instalações do Servidor de Aplicativos.
 
-Todos os exemplos neste procedimento usam o Tomcat como o servidor da aplicação e implicam que você já tem uma versão funcional do AEM implantada. O procedimento destina-se a documentar atualizações executadas da **versão 6.4 do AEM para a 6.5**.
+Todos os exemplos neste procedimento usam o Tomcat como o servidor da aplicação e implicam que você tem uma versão funcional do AEM já implantada. O procedimento destina-se a documentar atualizações executadas da **AEM versão 6.4 para a 6.5**.
 
 1. Primeiro, inicie o TomCat. Na maioria das situações, você pode fazer isso executando o script de inicialização `./catalina.sh`, executando este comando no terminal:
 
@@ -69,7 +78,7 @@ Todos os exemplos neste procedimento usam o Tomcat como o servidor da aplicaçã
 
    * Remover **sling.options.file** executando: `find crx-quickstart/launchpad -type f -name "sling.options.file" -exec rm -rf`
 
-1. Agora, crie o armazenamento de nós e o armazenamento de dados usados com AEM 6.5. Você pode fazer isso criando dois arquivos com os seguintes nomes em `crx-quickstart\install`:
+1. Agora, crie o armazenamento de nós e o armazenamento de dados usados com o AEM 6.5. Você pode fazer isso criando dois arquivos com os seguintes nomes em `crx-quickstart\install`:
 
    * `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.cfg`
    * `org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.cfg`
@@ -89,7 +98,7 @@ Todos os exemplos neste procedimento usam o Tomcat como o servidor da aplicaçã
      minRecordLength=4096
      ```
 
-1. Agora, você precisa alterar os modos de execução no arquivo WAR AEM 6.5. Para fazer isso, primeiro crie uma pasta temporária que hospedará a guerra do AEM 6.5. O nome da pasta neste exemplo será `temp`. Depois que o arquivo WAR tiver sido copiado, extraia o conteúdo executando de dentro da pasta temporária:
+1. Agora é necessário alterar os modos de execução no arquivo WAR do AEM 6.5. Para fazer isso, primeiro crie uma pasta temporária que hospedará a guerra do AEM 6.5. O nome da pasta neste exemplo será `temp`. Depois que o arquivo WAR tiver sido copiado, extraia o conteúdo executando de dentro da pasta temporária:
 
    ```
    jar xvf aem-quickstart-6.5.0.war

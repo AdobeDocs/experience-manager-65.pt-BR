@@ -9,28 +9,39 @@ feature: PDF Generator
 exl-id: c3fc159e-2677-4b71-b0b2-2feaf69e1a32
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: b26425d0-6fde-5e02-bfd6-e560e2fa86c9
+    internal-label: PDF Generator
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '616'
+source-wordcount: '619'
 ht-degree: 0%
-
 ---
-
 # Configuração de uma impressora de rede PDFG (somente Windows) {#setting-up-a-pdfg-network-printer-windows-only}
 
 >[!NOTE]
 > 
 > Verifique se o usuário tem privilégios de administrador para acessar o console do administrador.
 
-A impressora de rede PDFG permite que os usuários gerem um documento PDF a partir de qualquer aplicativo que suporte impressão. Depois que um usuário instala a impressora de rede PDFG, uma nova impressora chamada *gerador de PDF* é exibida na seção Impressoras do Painel de Controle do Windows. Se já existir uma impressora com o mesmo nome, o usuário será solicitado a fornecer outro nome.
+A impressora de rede PDFG permite que os usuários gerem um documento PDF a partir de qualquer aplicativo que ofereça suporte à impressão. Depois que um usuário instala a impressora de rede PDFG, uma nova impressora chamada *gerador de PDF* é exibida na seção Impressoras do Painel de Controle do Windows. Se já existir uma impressora com o mesmo nome, o usuário será solicitado a fornecer outro nome.
 
-Imprimir para esta impressora a partir de qualquer aplicativo envia o documento (no formato PostScript) para o PDF Generator, que converte o arquivo PostScript para o PDF. Dependendo de como você configurou o PDF Generator, ele envia o documento PDF para o usuário como um anexo de uma mensagem de email, encaminha o documento PDF AEM para um serviço ou processo de formulários especificado ou executa ambas as ações.
+A impressão nessa impressora a partir de qualquer aplicativo envia o documento (em formato PostScript) para o PDF Generator, que converte o arquivo PostScript em PDF. Dependendo de como você configurou o PDF Generator, ele envia o documento do PDF para o usuário como um anexo de uma mensagem de email, encaminha o documento do PDF para um serviço ou processo do AEM Forms especificado ou executa ambas as ações.
 
 As seguintes etapas são necessárias para configurar uma impressora de rede PDFG:
 
 1. Defina as configurações de email. (Consulte [Definir configurações de email para a Impressora de Rede PDFG](setting-pdfg-network-printer-windows.md#configure-email-settings-for-pdfg-network-printer).)
 1. No console de administração, defina as configurações de Impressora de rede PDFG. (Consulte [Definir as configurações da Impressora de Rede PDFG](setting-pdfg-network-printer-windows.md#configure-the-pdfg-network-printer-settings).)
-1. Verifique se os usuários estão configurados com um endereço de email válido no banco de dados de formulários AEM e atribua o PDFGUserPermission a cada usuário. <!-- Fix broken link See Setting up and organizing users -->
+1. Verifique se os seus usuários estão configurados com um endereço de email válido no banco de dados de formulários do AEM e atribua o PDFGUserPermission a cada usuário. <!-- Fix broken link See Setting up and organizing users -->
 1. Verifique se o JRE6 de 32 bits está instalado nos computadores dos usuários.
 1. Instale a impressora nos computadores dos usuários. (Consulte [Instalar impressora de rede PDFG no computador de um usuário](setting-pdfg-network-printer-windows.md#install-pdfg-network-printer-on-a-user-s-computer).)
 
@@ -41,19 +52,19 @@ As seguintes etapas são necessárias para configurar uma impressora de rede PDF
 
 ## Definir as configurações de impressora de rede PDFG {#configure-the-pdfg-network-printer-settings}
 
-1. No console de administração, clique em Serviços > PDF Generator > Impressora de rede PDFG
+1. No console de administração, clique em Services > PDF Generator > PDFG Network Printer
 1. Nas listas Configurações do Adobe PDF e Configurações de segurança, selecione as opções a serem aplicadas ao PDF gerado. Para obter detalhes sobre essas configurações, consulte [Definindo configurações do Adobe PDF](/help/forms/using/admin-help/configuring-pdf-settings.md#configuring-adobe-pdf-settings) e [Definindo configurações de segurança](/help/forms/using/admin-help/configuring-security-settings.md#configuring-security-settings).
-1. Para enviar os PDF convertidos de volta aos usuários, selecione a opção Enviar o arquivo de PDF convertido de volta para o usuário e especifique as seguintes informações:
+1. Para enviar os PDFs convertidos de volta aos usuários, selecione a opção Enviar o arquivo do PDF convertido de volta para o usuário e especifique as seguintes informações:
 
-   * O endereço de email a ser usado para enviar PDF aos usuários
+   * O endereço de email a ser usado para enviar PDFs aos usuários
    * O assunto da mensagem de email
    * O cabeçalho, o corpo e o rodapé da mensagem de email. Na mensagem de email, &lt;receiverName> é substituído pelo nome completo do usuário que imprimiu o documento.
 
-1. Para enviar os PDF convertidos para um serviço ou processo do AEM Forms, selecione a opção Encaminhar o PDF AEM convertido para o serviço ou processo do Forms especificado e especifique as seguintes informações:
+1. Para enviar os PDFs convertidos para um serviço ou processo do AEM Forms, selecione a opção Encaminhar o PDF convertido para o serviço ou processo do AEM Forms especificado e especifique as seguintes informações:
 
    * O nome do serviço a ser chamado
    * O nome da operação do serviço a ser chamado
-   * O nome do parâmetro de entrada, conforme especificado no arquivo component.xml do serviço ou processo. O documento PDF é usado como um valor para esse parâmetro de entrada.
+   * O nome do parâmetro de entrada, conforme especificado no arquivo component.xml do serviço ou processo. O documento do PDF é usado como um valor para esse parâmetro de entrada.
 
 1. Clique em Salvar.
 

@@ -6,13 +6,25 @@ feature: Language Copy
 exl-id: 8ca7bbcc-413a-49a8-a836-7083a9cadda1
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: ffa4c2522bfe98d99693e3c17666b728377337f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: d9d38edd-df1b-480c-8f5e-72b62576f390
+    internal-label: Site and page features
+subfeature_v2:
+  - id: e15a4109-ae5d-497d-b301-31149e35aed4
+    internal-label: Language Copy Wizard
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '1154'
 ht-degree: 61%
-
 ---
-
 # Identificação de conteúdo a ser traduzido{#identifying-content-to-translate}
 
 As regras de tradução identificam o conteúdo a ser traduzido para páginas, componentes e ativos que estão incluídos ou excluídos de projetos de tradução. Quando uma página ou ativo está sendo traduzido, o AEM extrai esse conteúdo para que ele possa ser enviado ao serviço de tradução.
@@ -64,13 +76,13 @@ Cada um desses elementos `node` têm as seguintes características:
 * O atributo `path` contém o caminho para o nó raiz da ramificação à qual as regras se aplicam.
 * Os elementos `property` filhos identificam as propriedades do nó a serem traduzidas para todos os tipos de recursos:
 
-   * O atributo `name` contém o nome da propriedade.
-   * O atributo opcional `translate` é igual a `false` se a propriedade não for traduzida. O valor padrão é `true`. Esse atributo é útil ao substituir regras anteriores.
+  * O atributo `name` contém o nome da propriedade.
+  * O atributo opcional `translate` é igual a `false` se a propriedade não for traduzida. O valor padrão é `true`. Esse atributo é útil ao substituir regras anteriores.
 
 * Os elementos `node` filhos identificam as propriedades do nó a serem traduzidas para tipos de recursos específicos:
 
-   * O atributo `resourceType` contém o caminho que é resolvido para o componente que implementa o tipo de recurso.
-   * Os elementos `property` filhos identificam a propriedade do nó a ser traduzida. Use este nó da mesma forma que os elementos `property` filhos para regras de nó.
+  * O atributo `resourceType` contém o caminho que é resolvido para o componente que implementa o tipo de recurso.
+  * Os elementos `property` filhos identificam a propriedade do nó a ser traduzida. Use este nó da mesma forma que os elementos `property` filhos para regras de nó.
 
 A seguinte regra de exemplo faz com que o conteúdo de todas as propriedades `text` seja traduzido para todas as páginas abaixo do nó `/content`. A regra é válida para qualquer componente que armazene conteúdo em uma propriedade `text`, como o componente de texto de base e o componente de imagem de base.
 

@@ -1,6 +1,6 @@
 ---
 title: Tutoriais
-description: Exemplos para ajudar a aprender e trabalhar com a estrutura de componente social (SCF) das comunidades Adobe Experience Manager (AEM)
+description: Exemplos para ajudar a aprender e trabalhar com a estrutura de componente social (SCF) das comunidades do Adobe Experience Manager (AEM)
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
@@ -9,13 +9,20 @@ exl-id: 061d3b1b-7ceb-4e57-8183-2062a76173f1
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '296'
 ht-degree: 1%
-
 ---
-
 # Tutoriais {#tutorials}
 
 Estes são exemplos para ajudar a aprender e trabalhar com o Adobe Experience Manager (AEM) 6.1 Communities [estrutura de componente social (SCF)](scf.md).
@@ -36,17 +43,17 @@ Consulte também:
 
 Consulte também [Personalização no lado do servidor do SCF](server-customize.md).
 
-O código de exemplo está disponível no repositório [Adobe Experience Cloud GitHub](https://github.com/Adobe-Marketing-Cloud):
+O código de exemplo está disponível no [repositório GitHub da Adobe Experience Cloud](https://github.com/Adobe-Marketing-Cloud):
 
-* [Personalizar Amostra de Componente SCF](https://github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-customize)
+* [Personalizar amostra do componente SCF](https://github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-customize)
 
-* [Amostra de Componente SCF de Sobreposição](https://github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-overlay)
+* [Amostra do componente SCF de sobreposição](https://github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-overlay)
 
-* [Estender Amostra do Componente SCF](https://github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-extension)
+* [Estender amostra do componente SCF](https://github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-extension)
 
 ## Instruções passo a passo {#how-to-instructions}
 
-* [MVC de tarefa do AEM Communities](https://github.com/Adobe-Marketing-Cloud/aem-communities-todomvc-sample)
+* [AEM Communities Todo MVC](https://github.com/Adobe-Marketing-Cloud/aem-communities-todomvc-sample)
 
   O MVC ToDo demonstra como desenvolver um componente SCF+SRP do zero.
 

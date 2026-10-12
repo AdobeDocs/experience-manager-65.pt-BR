@@ -1,6 +1,6 @@
 ---
 title: Formatos de arquivo e tipos MIME compatíveis
-description: Formatos de arquivo e tipos MIME com suporte do  [!DNL Assets] and [!DNL Dynamic Media] e os recursos com suporte para cada formato.
+description: Formatos de arquivo e tipos MIME com suporte do [!DNL Assets] e do [!DNL Dynamic Media] e os recursos com suporte para cada formato.
 contentOwner: AG
 mini-toc-levels: 1
 role: User, Admin
@@ -8,13 +8,29 @@ feature: Asset Management,Renditions
 exl-id: a4bcf67b-54f4-4681-9e42-fd4753acde1a
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: e42ab83e-8918-43a7-98a3-62bebbd5bb3a
+    internal-label: Renditions
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2045'
+source-wordcount: '2047'
 ht-degree: 10%
-
 ---
-
 # Formatos com suporte no [!DNL Adobe Experience Manager Assets] {#assets-supported-formats}
 
 O [!DNL Experience Manager Assets] oferece suporte a uma grande variedade de formatos de arquivo e cada funcionalidade oferece suporte para diferentes tipos MIME. Para integrar o [!DNL Assets] a outras soluções de gerenciamento de ativos digitais (DAM) e software de desktop compatíveis com os padrões, use o [!DNL Extensible Metadata Platform] (XMP) da Adobe.
@@ -339,7 +355,7 @@ Consulte também [Trabalhar com ativos 3D no Dynamic Media](/help/assets/assets-
 | GLB | Transmissão GL Binária | model/gltf-binary | Inclui os materiais e texturas como um único ativo. |
 | OBJ | Arquivo de objeto 3D do WaveFront | application/x-tgif |  |
 | STL | Estereolitografia | application/vnd.ms-pki.stl |  |
-| USDZ | Arquivo Zip de Descrição de Cena Universal | model/vnd.usdz+zip | *Suporte somente para assimilação; não há visualização ou interação disponíveis.* O USDZ é um formato 3D proprietário que pode ser visualizado nativamente por dispositivos Safari e iOS. |
+| USDZ | Arquivo Zip do Universal Scene Description | model/vnd.usdz+zip | *Suporte somente para assimilação; não há visualização ou interação disponíveis.* O USDZ é um formato 3D proprietário que pode ser visualizado nativamente por dispositivos Safari e iOS. |
 
 >[!MORELIKETHIS]
 >

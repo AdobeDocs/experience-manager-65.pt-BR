@@ -10,13 +10,25 @@ exl-id: 4ce19c95-32cb-4bb8-9d6f-a5bc08a3688d
 solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
-source-git-commit: 8adc566113beedc408698dccc3a4c072349af5dc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '777'
 ht-degree: 1%
-
 ---
-
 
 # Exibição principal para gerenciamento de permissões{#principal-view-for-permissions-management}
 
@@ -94,7 +106,7 @@ Além da lista de privilégios e do Tipo de permissão em um determinado caminho
 
 ![Adicionar o tipo de restrição](assets/sapte-1.png) ![Adicionar o tipo de restrição](assets/opt-1.png)
 
-O novo ACE é refletido na Lista de controle de acesso conforme mostrado abaixo. Observe que `jcr:write` é um privilégio agregado que inclui `jcr:removeNode` que foi adicionado acima, mas não é mostrado abaixo pois é tratado em `jcr:write`.
+A nova ACE é refletida na Lista de controle de acesso conforme mostrado abaixo. Observe que `jcr:write` é um privilégio agregado que inclui `jcr:removeNode` que foi adicionado acima, mas não é mostrado abaixo pois é tratado em `jcr:write`.
 
 ### Edição de ACEs {#editing-aces}
 
@@ -118,7 +130,7 @@ As alterações podem ser salvas clicando no botão **Salvar** na parte superior
 
 ### Exclusão de ACEs {#deleting-aces}
 
-As Entradas de Controle de Acesso podem ser excluídas para remover todas as permissões concedidas a um principal em um caminho específico. O ícone X ao lado de ACE pode ser usado para excluí-lo, conforme mostrado abaixo:
+As Entradas de Controle de Acesso podem ser excluídas para remover todas as permissões concedidas a um principal em um caminho específico. O ícone X ao lado do ACE pode ser usado para excluí-lo, conforme mostrado abaixo:
 
 ![Excluir ACEs](assets/image2019-3-21_0-53-19.png) ![Excluir ACEs](assets/unspe.png)
 

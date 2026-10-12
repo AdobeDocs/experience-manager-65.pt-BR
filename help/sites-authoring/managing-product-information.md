@@ -9,13 +9,26 @@ exl-id: c4eff50e-0d55-4a61-98fd-cc42138656cb
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2888'
-ht-degree: 2%
-
+source-wordcount: '2905'
+ht-degree: 1%
 ---
-
 
 # Integração do Projeto Creative e do PIM {#creative-project-and-pim-integration}
 
@@ -195,7 +208,7 @@ A tarefa **Criar Lista de Captura** permite que o proprietário do projeto selec
 
    ![Exibir lista de captura](assets/chlimage_1-148a.png)
 
-   Para editar os dados existentes ou adicionar novos dados, clique em **Editar** na barra de ferramentas. Somente os campos **Produto &#x200B;** e **Descrição** são editáveis.
+   Para editar os dados existentes ou adicionar novos dados, clique em **Editar** na barra de ferramentas. Somente os campos **Produto** e **Descrição** são editáveis.
 
    ![Editar lista de captura](assets/chlimage_1-149a.png)
 

@@ -9,13 +9,17 @@ exl-id: 3924bb8f-27cb-4648-8be2-9444e9a58c66
 solution: Experience Manager
 feature: Mobile
 role: User
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '268'
 ht-degree: 1%
-
 ---
-
 # Publicar e desfazer publicação de conteúdo{#publish-unpublish-content}
 
 {{ue-over-mobile}}
@@ -24,7 +28,7 @@ Depois de conhecer as ações de gerenciamento de conteúdo em artigos, banners 
 
 >[!NOTE]
 >
->Para saber mais sobre as considerações de design para aplicativos do AEM Mobile, consulte [Considerações de design para aplicativos do AEM Mobile](https://helpx.adobe.com/br/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html) na Ajuda Online.
+>Para saber mais sobre as considerações de design para aplicativos do AEM Mobile, consulte [Considerações de design para aplicativos do AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html) na Ajuda Online.
 
 ## Publicar/desfazer publicação do conteúdo {#publishing-unpublishing-the-content}
 

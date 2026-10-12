@@ -5,13 +5,33 @@ exl-id: 39d2218a-4f11-459d-8514-cfd312246be5
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
 role: Admin, Developer, User, Leader
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: bfd4bc52-c397-5127-8f86-8953ba9fc0a3
+    internal-label: Headless
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '649'
-ht-degree: 85%
-
+source-wordcount: '674'
+ht-degree: 86%
 ---
-
 # Criação para headless com AEM - uma introdução {#author-headless-introduction}
 
 Nesta parte da [Jornada do autor de conteúdo headless do AEM](overview.md), você pode aprender os conceitos e a terminologia (básicos) necessários para entender a criação de conteúdo para a entrega de conteúdo headless com o Adobe Experience Manager (AEM).
@@ -50,13 +70,13 @@ Em primeiro lugar, o AEM é um sistema de gerenciamento de conteúdo com uma gra
 Isso significa que ele pode ser usado como um:
 
 * CMS headless
-   * No método headless, o conteúdo pode ser criado como **fragmentos de conteúdo**.
-Estes são itens autônomos de conteúdo que podem ser acessados diretamente por uma variedade de aplicativos, pois têm uma estrutura predefinida com base em **modelos de fragmentos de conteúdo**.
-Isso significa que o conteúdo pode atingir uma grande variedade de dispositivos, em uma grande variedade de formatos e com uma ampla seleção de funcionalidades.
-(E como acréscimo, esses fragmentos também podem ser usados na criação de páginas da web do AEM, se assim desejar).
+  * No método headless, o conteúdo pode ser criado como **fragmentos de conteúdo**.
+    Estes são itens autônomos de conteúdo que podem ser acessados diretamente por uma variedade de aplicativos, pois têm uma estrutura predefinida com base em **modelos de fragmentos de conteúdo**.
+    Isso significa que o conteúdo pode atingir uma grande variedade de dispositivos, em uma grande variedade de formatos e com uma ampla seleção de funcionalidades.
+    (E como acréscimo, esses fragmentos também podem ser usados na criação de páginas da web do AEM, se assim desejar).
 
 * CMS “tradicional”
-   * O conteúdo é criado para páginas da web, usando uma variedade de componentes que definem como o conteúdo será renderizado no site. Até mesmo nesse caso, o AEM é extremamente flexível, pois a equipe do projeto pode desenvolver componentes personalizados.
+  * O conteúdo é criado para páginas da web, usando uma variedade de componentes que definem como o conteúdo será renderizado no site. Até mesmo nesse caso, o AEM é extremamente flexível, pois a equipe do projeto pode desenvolver componentes personalizados.
 
 ## Modelagem de conteúdo {#content-modeling}
 
@@ -79,7 +99,7 @@ Agora que você aprendeu os conceitos e a terminologia, o próximo passo é [Sab
 ## Recursos adicionais {#additional-resources}
 
 * Jornada do desenvolvedor AEM headless
-   * [Saiba mais sobre o desenvolvimento headless do CMS](/help/journey-headless/developer/learn-about.md)
+  * [Saiba mais sobre o desenvolvimento headless do CMS](/help/journey-headless/developer/learn-about.md)
 
 * [Jornada do arquiteto de conteúdo do AEM Headless](/help/journey-headless/architect/overview.md)
 
@@ -87,6 +107,6 @@ Agora que você aprendeu os conceitos e a terminologia, o próximo passo é [Sab
 
 * [Introdução ao AEM as a Headless CMS](/help/sites-developing/headless/introduction.md)
 
-* [Portal do Desenvolvedor do AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=pt-BR)
+* [Portal do desenvolvedor do AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=pt-BR)
 
-* [Tutoriais do Headless no AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/getting-started-with-aem-headless/overview)
+* [Tutoriais de sem cabeçalho no AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/getting-started-with-aem-headless/overview)

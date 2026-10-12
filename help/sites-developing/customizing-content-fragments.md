@@ -1,8 +1,6 @@
 ---
 title: Personalização e extensão de fragmentos de conteúdo
-
 description: Um fragmento de conteúdo estende um ativo padrão. Saiba como personalizá-los.
-
 topic-tags: extending-aem
 content-type: reference
 docset: aem65
@@ -10,7 +8,21 @@ exl-id: 08c88e70-4df9-4627-8a66-1fabe3aee50b
 solution: Experience Manager, Experience Manager Sites
 feature: Content Fragments
 role: Developer
-source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2867'
 ht-degree: 2%

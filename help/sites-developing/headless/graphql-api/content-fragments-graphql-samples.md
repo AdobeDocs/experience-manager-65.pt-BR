@@ -5,13 +5,25 @@ feature: Content Fragments,GraphQL API
 exl-id: 91c5f61c-9c15-4d72-9b9b-0c23f31e7cdc
 solution: Experience Manager, Experience Manager Sites
 role: Developer
-source-git-commit: 3a38a2f1e753e33d9d3d4d4e7ebc24f16f795966
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1577'
+source-wordcount: '1576'
 ht-degree: 82%
-
 ---
-
 # Saiba como usar o GraphQL com o AEM - Exemplos de conteúdo e consultas {#learn-graphql-with-aem-sample-content-queries}
 
 Saiba como usar o GraphQL com o AEM para fornecer conteúdo em headless, explorando exemplos de conteúdo e consultas.
@@ -1245,11 +1257,11 @@ Esta consulta interroga:
 Este exemplo de consulta interroga:
 
 * por um único Fragmento de conteúdo do tipo `article` em um caminho específico
-   * nesse caminho, todos os formatos de conteúdo:
-      * HTML
-      * Markdown
-      * Texto sem formatação
-      * JSON
+  * nesse caminho, todos os formatos de conteúdo:
+    * HTML
+    * Markdown
+    * Texto sem formatação
+    * JSON
 
 **Exemplo de consulta**
 
@@ -1275,7 +1287,7 @@ Este exemplo de consulta interroga:
 Este exemplo de consulta interroga:
 
 * por um único Fragmento de conteúdo
-   * detalhes do modelo de Fragmento de conteúdo subjacente
+  * detalhes do modelo de Fragmento de conteúdo subjacente
 
 **Exemplo de consulta**
 
@@ -1299,7 +1311,7 @@ Este exemplo de consulta interroga:
 Esta consulta interroga:
 
 * por um único Fragmento de conteúdo do tipo `article` em um caminho específico
-   * nesse caminho, o caminho e o autor do fragmento referenciado (aninhado)
+  * nesse caminho, o caminho e o autor do fragmento referenciado (aninhado)
 
 >[!NOTE]
 >
@@ -1329,7 +1341,7 @@ Esta consulta interroga:
 Esta consulta interroga:
 
 * por vários Fragmentos de conteúdo do tipo `bookmark`
-   * com referências de fragmentos a outros fragmentos dos tipos de modelo específicos `Article`
+  * com referências de fragmentos a outros fragmentos dos tipos de modelo específicos `Article`
 
 >[!NOTE]
 >
@@ -1353,7 +1365,7 @@ Esta consulta interroga:
 Esta consulta interroga:
 
 * por vários Fragmentos de conteúdo do tipo `bookmark`
-   * com Referências de fragmentos a outros fragmentos dos tipos de modelo específicos `Article` e `Adventure`
+  * com Referências de fragmentos a outros fragmentos dos tipos de modelo específicos `Article` e `Adventure`
 
 >[!NOTE]
 >
@@ -1388,7 +1400,7 @@ Há duas opções desta consulta:
 Essas consultas interrogam:
 
 * por vários Fragmentos de conteúdo do tipo `bookmark`
-   * com Referências de conteúdo a outros fragmentos
+  * com Referências de conteúdo a outros fragmentos
 
 #### Exemplo de consulta para vários Fragmentos de conteúdo com Referências previamente buscadas {#sample-wknd-multiple-fragments-prefetched-references}
 
@@ -1470,7 +1482,7 @@ A consulta a seguir retorna todos os `attachments` - um campo específico (subgr
 Esta consulta interroga:
 
 * por um único Fragmento de conteúdo do tipo `bookmark` em um caminho específico
-   * dentro disso, referências em linha do RTE
+  * dentro disso, referências em linha do RTE
 
 >[!NOTE]
 >
@@ -1516,7 +1528,7 @@ Esta consulta interroga:
 Esta consulta interroga:
 
 * por um único Fragmento de conteúdo do tipo `article` em um caminho específico
-   * nesse caminho, os dados relacionados à variação: `variation1`
+  * nesse caminho, os dados relacionados à variação: `variation1`
 
 **Exemplo de consulta**
 
@@ -1657,7 +1669,7 @@ Para o exemplo de consultas, use os seguintes Modelos de conteúdo e suas interr
 
 * [Empresa](#model-company)
 -> [Pessoa](#model-person)
--> [Prêmio](#model-award)
+    -> [Prêmio](#model-award)
 
 * [Cidade](#model-city)
 

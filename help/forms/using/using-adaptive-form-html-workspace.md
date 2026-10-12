@@ -9,18 +9,34 @@ exl-id: 15b9ae98-059f-4bf7-bfdd-9cfeb8eb30a4
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Workbench
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 36ac8e9c-5c7a-56d8-af5e-39399fd7b101
+    internal-label: Workbench
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '690'
+source-wordcount: '706'
 ht-degree: 0%
-
 ---
-
 # Uso de um formulário adaptável no HTML Workspace{#using-an-adaptive-form-in-html-workspace}
 
 O AEM Forms no JEE fornece a capacidade de usar um formulário adaptável no HTML Workspace.
 
-Como é possível selecionar um XDP durante o design do processo, a capacidade de navegar a partir de um repositório AEM de formulário adaptável existente foi adicionada. O recurso oferece ao Process Designer a capacidade de configurar um formulário adaptável no Ponto inicial e na Tarefa.
+Como é possível selecionar um XDP durante o design do processo, a capacidade de navegar de um repositório existente de AEM de formulário adaptável foi adicionada. O recurso oferece ao Process Designer a capacidade de configurar um formulário adaptável no Ponto inicial e na Tarefa.
 
 ## Experiência de design de processos {#process-design-experience}
 
@@ -30,13 +46,13 @@ Execute o seguinte para ativar os formulários adaptáveis a serem usados no des
 * Na folha de propriedades Atribuir Tarefa/Bancada do Ponto Inicial, você pode ocultar a barra de ferramentas de nível superior/global de um formulário adaptável.
 * Você pode usar novos perfis de Ação para Renderizar e Enviar ações em formulários adaptáveis.
 
-### exportação e importação do aplicativo LiveCycle {#livecycle-application-export-and-import}
+### Exportação e importação do aplicativo LiveCycle {#livecycle-application-export-and-import}
 
-Como os formulários adaptáveis estão no repositório AEM, a exportação do aplicativo LiveCycle contém apenas as referências para os formulários adaptáveis usados. Portanto, a exportação e a importação do aplicativo LiveCycle são um processo de duas etapas. O aplicativo do LiveCycle inclui definições de processo e assim por diante. Um pacote separado contendo formulários adaptáveis é exportado como um arquivo ZIP do AEM. Durante a importação, o aplicativo do LiveCycle é importado por meio do Workbench e os formulários adaptáveis são importados por meio do AEM.
+Como os formulários adaptáveis estão no repositório do AEM, a exportação do aplicativo LiveCycle contém somente as referências aos formulários adaptáveis usados. Portanto, a exportação e a importação do aplicativo LiveCycle são um processo de duas etapas. O aplicativo LiveCycle inclui definições de processo, e assim por diante. Um pacote separado contendo formulários adaptáveis é exportado como um arquivo ZIP do AEM. Durante a importação, o aplicativo LiveCycle é importado por meio do Workbench e os formulários adaptáveis são importados por meio do AEM.
 
 ## Experiência do usuário de formulários adaptáveis no HTML Workspace {#user-experience-of-adaptive-form-in-html-workspace}
 
-O HTML Workspace fornece alguns controles específicos para formulários adaptáveis, além dos controles disponíveis para formulários móveis. Um usuário pode adicionar anexos, salvar, assinar, enviar e navegar pelos formulários adaptáveis no HTML Workspace quando abrir uma Tarefa ou Ponto de partida. Veja a seguir as especificidades:
+O HTML Workspace fornece alguns controles específicos para formulários adaptáveis, além dos controles disponíveis para formulários móveis. Um usuário pode adicionar anexos, salvar, assinar, enviar e navegar pelos formulários adaptáveis no HTML Workspace quando abrir uma Tarefa ou Ponto de início. Veja a seguir as especificidades:
 
 1. Para anexar arquivos, use Anexos de tarefa, como no Mobile Forms. Qualquer botão do tipo Anexo de arquivo do formulário adaptável está oculto.
 

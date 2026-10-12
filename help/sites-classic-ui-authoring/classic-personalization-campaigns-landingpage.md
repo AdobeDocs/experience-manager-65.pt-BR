@@ -1,6 +1,6 @@
 ---
 title: Página de destino
-description: O recurso de páginas de aterrissagem permite a importação rápida e fácil de um design e conteúdo diretamente em uma página AEM. Um desenvolvedor da Web pode preparar o HTML e os ativos adicionais que podem ser importados como uma página inteira ou apenas como parte de uma página.
+description: O recurso de páginas de aterrissagem permite importar com rapidez e facilidade um design e conteúdo diretamente em uma página do AEM. Um desenvolvedor da Web pode preparar o HTML e ativos adicionais que podem ser importados como uma página inteira ou apenas como parte de uma página.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
@@ -10,16 +10,27 @@ exl-id: 0f1014a7-b0ba-4455-b3a4-5023bcd4c5a1
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '3360'
+source-wordcount: '3376'
 ht-degree: 1%
-
 ---
-
 # Página de destino{#landing-pages}
 
-O recurso de páginas de aterrissagem permite a importação rápida e fácil de um design e conteúdo diretamente em uma página AEM. Um desenvolvedor da Web pode preparar o HTML e os ativos adicionais que podem ser importados como uma página inteira ou apenas como parte de uma página. A funcionalidade é útil para criar páginas de aterrissagem de marketing que só estão ativas por um tempo limitado e precisam ser criadas rapidamente.
+O recurso de páginas de aterrissagem permite importar com rapidez e facilidade um design e conteúdo diretamente em uma página do AEM. Um desenvolvedor da Web pode preparar o HTML e ativos adicionais que podem ser importados como uma página inteira ou apenas como parte de uma página. A funcionalidade é útil para criar páginas de aterrissagem de marketing que só estão ativas por um tempo limitado e precisam ser criadas rapidamente.
 
 Esta página descreve o seguinte:
 
@@ -32,7 +43,7 @@ A preparação do pacote de design para importação é abordada em [Extensão e
 
 >[!CAUTION]
 >
->O Importador de Design, usado para importar páginas de aterrissagem, [&#x200B; foi descontinuado com o AEM 6.5](/help/release-notes/deprecated-removed-features.md#deprecated-features).
+>O Importador de design, usado para importar páginas de aterrissagem, [&#x200B; foi descontinuado com o AEM 6.5](/help/release-notes/deprecated-removed-features.md#deprecated-features).
 
 >[!CAUTION]
 >
@@ -42,20 +53,20 @@ A preparação do pacote de design para importação é abordada em [Extensão e
 
 As landing pages são sites de uma ou várias páginas que são o &quot;endpoint&quot; de um alcance de marketing - por exemplo, com email, adwords/banners, redes sociais. Uma landing page pode atender a vários propósitos, mas todos têm uma coisa em comum: o visitante deve cumprir uma tarefa e definir o sucesso de uma landing page.
 
-O recurso Landing Pages (Páginas de destino) no AEM permite que os profissionais de marketing trabalhem com designers da Web em agências ou equipes internas de criação para criar designs de página que podem ser facilmente importados para o AEM e ainda ser editáveis pelos profissionais de marketing e publicados sob o mesmo controle que o restante dos sites alimentados pelo AEM.
+O recurso Páginas de aterrissagem no AEM permite que os profissionais de marketing trabalhem com designers da Web em agências ou equipes internas de criação para criar designs de página que podem ser facilmente importados para o AEM e ainda ser editáveis pelos profissionais de marketing e publicados sob o mesmo controle que o restante dos sites alimentados pela AEM.
 
 No AEM, você cria páginas de aterrissagem executando as seguintes etapas:
 
-1. Crie uma página no AEM que contenha a tela landing pages. O AEM vem com uma amostra chamada **Página do importador**.
+1. Crie uma página no AEM que contenha a tela landing pages. O AEM é enviado com um exemplo chamado **Página do importador**.
 
-1. [Prepare o HTML e os ativos.](/help/sites-administering/extending-the-design-importer-for-landingpages.md)
+1. [Preparar a HTML e os ativos.](/help/sites-administering/extending-the-design-importer-for-landingpages.md)
 1. Coloque os recursos em um arquivo ZIP chamado de Pacote de design.
 1. Importe o pacote de design na página do importador.
 1. Modifique e publique a página.
 
 ### Páginas iniciais da área de trabalho {#desktop-landing-pages}
 
-Uma amostra de página de aterrissagem no AEM é exibida da seguinte maneira:
+Um exemplo de landing page no AEM tem a seguinte aparência:
 
 ![chlimage_1-2](assets/chlimage_1-2.jpeg)
 
@@ -75,17 +86,17 @@ A página de aterrissagem móvel é criada como uma página secundária da pági
 
 ## Componentes da landing page {#landing-page-components}
 
-Para fazer partes do HTML que é importado como editável no AEM, é possível mapear o conteúdo diretamente no HTML das Landing pages para os componentes do AEM. O importador de design entende os seguintes componentes por padrão:
+Para tornar as partes da HTML que são importadas editáveis no AEM, você pode mapear o conteúdo diretamente da HTML das Landing pages para os componentes do AEM. O importador de design entende os seguintes componentes por padrão:
 
 * Texto, para qualquer texto
 * Título, para conteúdo em tags H1-6
 * Imagem, para imagens que devem ser trocadas
 * Chamada para ação:
 
-   * Link Clickthrough
-   * Vincular ao gráfico
+  * Link Clickthrough
+  * Vincular ao gráfico
 
-* Formulário de cliente em potencial CTA, para capturar informações do usuário
+* Formulário de cliente em potencial do CTA, para capturar informações do usuário
 * Sistema de parágrafo (Parsys), para permitir que qualquer componente seja adicionado, ou o componente acima convertido
 
 Além disso, é possível estender isso e oferecer suporte a componentes personalizados. Esta seção descreve os componentes em detalhes.
@@ -120,11 +131,11 @@ Veja a seguir um exemplo de um componente de imagem em uma landing page:
 
 ![chlimage_1-28](assets/chlimage_1-28.png)
 
-#### Chamada para ação (CTA) {#call-to-action-cta}
+#### Call to action (CTA) {#call-to-action-cta}
 
 Um design de página de aterrissagem pode ter vários links. Alguns deles podem ser destinados a &quot;Chamadas para ação&quot;.
 
-O Plano de ação (CTA) é usado para fazer com que o visitante execute uma ação imediata na página de aterrissagem, como &quot;Assinar agora&quot;, &quot;Exibir este vídeo&quot;, &quot;Somente tempo limitado&quot; e assim por diante.
+O call to action (CTA) é usado para fazer com que o visitante execute uma ação imediata na página de aterrissagem, como &quot;Assinar agora&quot;, &quot;Exibir este vídeo&quot;, &quot;Somente tempo limitado&quot; e assim por diante.
 
 * Clicar através do link - Permite adicionar um link de texto que, quando clicado, leva o visitante a um URL de destino.
 * Link gráfico - Permite adicionar uma imagem que, quando clicada, leva o visitante a um URL de destino.
@@ -133,7 +144,7 @@ Ambos os componentes do CTA têm opções semelhantes. O Link Click Through tem 
 
 #### Link de Click Through {#click-through-link}
 
-Esse componente CTA pode ser usado para adicionar um link de texto na landing page. Esse link pode ser clicado para levar o usuário ao URL de destino especificado nas propriedades do componente. Ele faz parte do grupo &quot;Plano de ação&quot;.
+Esse componente do CTA pode ser usado para adicionar um link de texto na landing page. Esse link pode ser clicado para levar o usuário ao URL de destino especificado nas propriedades do componente. É parte do grupo &quot;Call to action&quot;.
 
 ![chlimage_1-29](assets/chlimage_1-29.png)
 
@@ -158,7 +169,7 @@ Veja a seguir um exemplo de um link click-through:
 
 #### Vincular ao gráfico {#graphical-link}
 
-Esse componente CTA pode ser usado para adicionar qualquer imagem gráfica com link na página de destino. A imagem pode ser um botão simples ou qualquer imagem gráfica como plano de fundo. Quando a imagem é clicada, o usuário é levado para o URL de destino especificado nas propriedades do componente. Ela faz parte do grupo **Chamada para Ação**.
+Esse componente do CTA pode ser usado para adicionar qualquer imagem gráfica com link na página de aterrissagem. A imagem pode ser um botão simples ou qualquer imagem gráfica como plano de fundo. Quando a imagem é clicada, o usuário é levado para o URL de destino especificado nas propriedades do componente. Ela faz parte do grupo **Call to action**.
 
 ![chlimage_1-31](assets/chlimage_1-31.png)
 
@@ -181,15 +192,15 @@ Veja a seguir um exemplo de link gráfico:
 
 ![chlimage_1-32](assets/chlimage_1-32.png)
 
-### Formulário de plano de ação (CTA) {#call-to-action-cta-lead-form}
+### Formulário de cliente em potencial do call to action (CTA) {#call-to-action-cta-lead-form}
 
-Um formulário de cliente potencial é um formulário usado para coletar informações de perfil de um visitante/cliente potencial. Essas informações podem ser armazenadas e usadas posteriormente para fazer um marketing eficaz com base nas informações. Essas informações geralmente incluem título, nome, email, data de nascimento, endereço, interesse e assim por diante. É parte do grupo **Formulário de cliente potencial CTA**.
+Um formulário de cliente potencial é um formulário usado para coletar informações de perfil de um visitante/cliente potencial. Essas informações podem ser armazenadas e usadas posteriormente para fazer um marketing eficaz com base nas informações. Essas informações geralmente incluem título, nome, email, data de nascimento, endereço, interesse e assim por diante. É parte do grupo **Formulário do CTA Lead**.
 
-Um exemplo de formulário de lead CTA tem esta aparência:
+Um exemplo de formulário de cliente em potencial do CTA tem esta aparência:
 
 ![chlimage_1-33](assets/chlimage_1-33.png)
 
-Os formulários de clientes em potencial do CTA são criados a partir de vários componentes diferentes:
+Os formulários de clientes potenciais do CTA são criados a partir de vários componentes diferentes:
 
 * **Formulário de cliente em potencial**
 O componente de formulário de cliente potencial define o início e o fim de um novo formulário de cliente potencial em uma página. Outros componentes podem ser colocados entre esses elementos, como ID de email, Nome e assim por diante.
@@ -197,12 +208,12 @@ O componente de formulário de cliente potencial define o início e o fim de um 
 * **Campos e elementos de formulário**
 Os campos e elementos de formulário podem incluir caixas de texto, botões de opção, imagens e assim por diante. O usuário geralmente conclui uma ação em um campo de formulário, como digitar texto. Consulte elementos de formulário individuais para obter mais informações.
 
-* **Componentes do Perfil**
+* **Componentes do perfil**
 Os componentes do perfil estão relacionados aos perfis de visitantes usados para colaboração social e outras áreas em que a personalização do visitante é necessária.
 
 O exemplo anterior mostra um formulário; ele é composto do componente **Formulário de cliente em potencial** (início e fim), com os campos **Nome** e **Id de email** usados para entrada e um campo **Enviar**
 
-No sidekick, os seguintes componentes estão disponíveis para o Formulário de lead CTA:
+No sidekick, os seguintes componentes estão disponíveis para o Formulário de lead do CTA:
 
 ![chlimage_1-34](assets/chlimage_1-34.png)
 
@@ -232,7 +243,7 @@ Indica o tamanho e o estilo dos campos.
 
 #### Componentes de formulário de cliente potencial {#lead-form-components}
 
-A seção a seguir descreve os componentes disponíveis para formulários de cliente em potencial de Chamada para Ação.
+A seção a seguir descreve os componentes disponíveis para os formulários de clientes em potencial do Call-to-action.
 
 **Sobre** Permite que os usuários adicionem Informações sobre.
 
@@ -282,7 +293,7 @@ Duas guias estão disponíveis para a configuração **Formulário** e **Avança
 
 ![chlimage_1-44](assets/chlimage_1-44.png)
 
-**Opções do Post** As seguintes opções de postagem estão disponíveis:
+**Opções de postagem** As seguintes opções de postagem estão disponíveis:
 
 * Criar cliente em potencial
 * Serviço de email: Criar assinante e adicionar à lista - Use se estiver usando um provedor de serviço de email como o ExactTarget.
@@ -308,17 +319,17 @@ Se você estiver validando o formulário completo, inclua também um dos seguint
 * Um script para validação no lado do servidor:
   ` /apps/<myApp>/form/<myValidation>/formservervalidation.jsp`
 
-**Configuração da ação** Dependendo da seleção nas Opções do Post, a Configuração da ação será alterada. Por exemplo, ao selecionar Criar cliente em potencial, você pode configurar a qual lista o cliente em potencial será adicionado.
+**Configuração da ação** Dependendo da seleção nas Opções de Postagem, a Configuração da ação será alterada. Por exemplo, ao selecionar Criar cliente em potencial, você pode configurar a qual lista o cliente em potencial será adicionado.
 
 ![chlimage_1-45](assets/chlimage_1-45.png)
 
-* **Mostrar Botão Enviar**
+* **Mostrar botão Enviar**
 Indica se um botão Enviar deve ser mostrado ou não.
 
-* **Enviar Nome**
+* **Enviar nome**
 Um identificador se estiver usando vários botões de envio em um formulário.
 
-* **Enviar Título**
+* **Enviar título**
 O nome que aparece no botão, como Enviar ou Enviar.
 
 * **Mostrar botão de redefinição**
@@ -340,17 +351,17 @@ Ao criar uma landing page, você precisa executar três etapas:
 
 ### Uso do importador de design {#use-of-the-design-importer}
 
-Como a importação de páginas envolve a preparação de HTML, a verificação e o teste das páginas, a importação de páginas de aterrissagem deve ser considerada uma tarefa de administrador. Como administrador, os usuários que executam a importação precisam de permissões de leitura, gravação, criação e exclusão no `/apps`. Se o usuário não tiver essas permissões, a importação falhará.
+Como a importação de páginas envolve a preparação do HTML, a verificação e o teste das páginas, a importação de páginas de aterrissagem deve ser considerada uma tarefa de administrador. Como administrador, os usuários que executam a importação precisam de permissões de leitura, gravação, criação e exclusão no `/apps`. Se o usuário não tiver essas permissões, a importação falhará.
 
 >[!NOTE]
 >
->Como o importador de design se destina a ser uma ferramenta administrativa que requer permissões de leitura, gravação, criação e exclusão em `/apps`, o Adobe não recomenda o uso do importador de design na produção.
+>Como o importador de design se destina a ser uma ferramenta administrativa que requer permissões de leitura, gravação, criação e exclusão no `/apps`, a Adobe não recomenda o uso do importador de design na produção.
 
 A Adobe recomenda usar o importador de design em uma instância de preparo. Em uma instância de preparo, a importação pode ser testada e validada por um desenvolvedor que é responsável pela implantação do código na instância de produção.
 
 ### Criação de uma página do importador {#creating-an-importer-page}
 
-Antes de importar o design da Landing page, é necessário criar uma página de importador, por exemplo, em uma campanha. O template Importer Page permite importar a página de aterrissagem de HTML completo. A página contém uma caixa suspensa na qual o pacote de design da landing page pode ser importado usando a função de arrastar e soltar.
+Antes de importar o design da Landing page, é necessário criar uma página de importador, por exemplo, em uma campanha. O modelo Importer Page permite importar a página de aterrissagem completa do HTML. A página contém uma caixa suspensa na qual o pacote de design da landing page pode ser importado usando a função de arrastar e soltar.
 
 >[!NOTE]
 >
@@ -388,7 +399,7 @@ Supondo que o pacote de design esteja pronto, as etapas a seguir descrevem como 
 
 >[!NOTE]
 >
->Após a importação, a marcação é limpa por motivos de segurança e para evitar a importação e a publicação de marcação inválida. Isso pressupõe uma marcação somente HTML e todas as outras formas de elementos, como SVG em linha ou Componentes da Web, serão filtradas.
+>Após a importação, a marcação é limpa por motivos de segurança e para evitar a importação e a publicação de marcação inválida. Isso pressupõe uma marcação somente no HTML, e todas as outras formas de elementos, como SVG incorporado ou Componentes da Web, serão filtradas.
 
 >[!NOTE]
 >
@@ -398,7 +409,7 @@ Supondo que o pacote de design esteja pronto, as etapas a seguir descrevem como 
 
 O design e os ativos de uma página de aterrissagem geralmente são criados por um designer, possivelmente em uma agência, em ferramentas para as quais estão acostumados, como Adobe Photoshop ou Adobe Dreamweaver. Quando o design é concluído, o designer envia um arquivo zip com todos os ativos para o marketing. O contato em marketing é responsável por soltar o arquivo zip no AEM e publicar o conteúdo.
 
-Além disso, o designer pode precisar fazer modificações na página de aterrissagem depois que ela for importada, editando ou excluindo o conteúdo e configurando os componentes de chamada para ação. Por último, o profissional de marketing desejará visualizar a landing page e, em seguida, ativar a campanha para garantir que ela seja publicada.
+Além disso, o designer pode precisar fazer modificações na landing page após ela ser importada editando ou excluindo o conteúdo e configurando os componentes do call-to-action. Por último, o profissional de marketing desejará visualizar a landing page e, em seguida, ativar a campanha para garantir que ela seja publicada.
 
 Esta seção descreve como fazer o seguinte:
 
@@ -452,7 +463,7 @@ Para adicionar componentes na página de aterrissagem, arraste e solte component
 
 ### Exclusão de uma landing page {#deleting-a-landing-page}
 
-Excluir uma landing page é como excluir uma página AEM normal.
+Excluir uma landing page é como excluir uma página normal do AEM.
 
 A única exceção é que, ao excluir uma landing page da área de trabalho, ela também exclui a landing page móvel correspondente (se presente), mas não vice-versa.
 

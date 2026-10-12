@@ -9,13 +9,20 @@ role: Admin
 exl-id: 7e257b34-a0f5-47db-b1a9-e26333c287d9
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '726'
+source-wordcount: '802'
 ht-degree: 0%
-
 ---
-
 # Como configurar o MongoDB para demonstração {#how-to-setup-mongodb-for-demo}
 
 ## Introdução {#introduction}
@@ -38,25 +45,25 @@ Esta configuração é adequada para ambientes de *não produção*, como para d
 
 * Baixar MongoDB de [https://www.mongodb.com/](https://www.mongodb.com/)
 
-   * Opção de sistema operacional:
+  * Opção de sistema operacional:
 
-      * Linux®
-      * Mac 10.8
-      * Windows 7
+    * Linux®
+    * Mac 10.8
+    * Windows 7
 
-   * Escolha da versão:
+  * Escolha da versão:
 
-      * No mínimo, use a versão 2.6
+    * No mínimo, use a versão 2.6
 
 * Configuração básica
 
-   * Siga as instruções de instalação do MongoDB.
-   * Configurar para mongod:
+  * Siga as instruções de instalação do MongoDB.
+  * Configurar para mongod:
 
-      * Não é necessário configurar mongos ou fragmentação.
+    * Não é necessário configurar mongos ou fragmentação.
 
-   * A pasta MongoDB instalada é chamada &lt;mongo-install>.
-   * O caminho do diretório de dados definido é chamado &lt;mongo-dbpath>.
+  * A pasta MongoDB instalada é chamada &lt;mongo-install>.
+  * O caminho do diretório de dados definido é chamado &lt;mongo-dbpath>.
 
 * O MongoDB pode ser executado no mesmo host que o AEM ou remotamente.
 
@@ -70,7 +77,7 @@ Isso inicia um servidor MongoDB usando a porta padrão 27017.
 
 >[!NOTE]
 >
->Se o MongoDB for iniciado *após* o AEM, **reinicie** todas as instâncias de **AEM** para que elas se conectem corretamente ao MongoDB.
+>Se o MongoDB for iniciado *após* o AEM, **reinicie** todas as instâncias do **AEM** para que elas se conectem corretamente ao MongoDB.
 
 ### Opção de produção de demonstração: configurar conjunto de réplicas do MongoDB {#demo-production-option-setup-mongodb-replica-set}
 
@@ -79,16 +86,16 @@ Os comandos a seguir são um exemplo de configuração de um conjunto de réplic
 * `bin/mongod --port 27017 --dbpath data --replSet rs0&`
 * `bin/mongo`
 
-   * `cfg = {"_id": "rs0","version": 1,"members": [{"_id": 0,"host": "127.0.0.1:27017"}]}`
-   * `rs.initiate(cfg)`
+  * `cfg = {"_id": "rs0","version": 1,"members": [{"_id": 0,"host": "127.0.0.1:27017"}]}`
+  * `rs.initiate(cfg)`
 
 * `bin/mongod --port 27018 --dbpath data1 --replSet rs0&`
 * `bin/mongod --port 27019 --dbpath data2 --replSet rs0&`
 * `bin/mongo`
 
-   * `rs.add("127.0.0.1:27018")`
-   * `rs.add("127.0.0.1:27019")`
-   * `rs.status()`
+  * `rs.add("127.0.0.1:27018")`
+  * `rs.add("127.0.0.1:27019")`
+  * `rs.status()`
 
 ## Solr {#solr}
 
@@ -96,15 +103,15 @@ Os comandos a seguir são um exemplo de configuração de um conjunto de réplic
 
 * Baixar Solr de [Apache Lucene](https://archive.apache.org/dist/lucene/solr/):
 
-   * Adequado para qualquer SO.
-   * Solr versão 7.0.
-   * Solr requer Java™ 1.7 ou superior.
+  * Adequado para qualquer SO.
+  * Solr versão 7.0.
+  * Solr requer Java™ 1.7 ou superior.
 
 * Configuração básica
 
-   * Siga o &quot;exemplo&quot; de configuração Solr.
-   * Nenhum serviço é necessário.
-   * A pasta Solr instalada é chamada &lt;solr-install>.
+  * Siga o &quot;exemplo&quot; de configuração Solr.
+  * Nenhum serviço é necessário.
+  * A pasta Solr instalada é chamada &lt;solr-install>.
 
 ### Configurar Solr para AEM Communities {#configure-solr-for-aem-communities}
 
@@ -140,19 +147,19 @@ Para executar uma configuração básica (não de produção) solrCloud, inicie 
 
 ## Identificar MongoDB como Armazenamento comum {#identify-mongodb-as-common-store}
 
-Inicie o autor e publique instâncias AEM, se necessário.
+Inicie o autor e publique instâncias do AEM, se necessário.
 
 Se o AEM estava em execução antes do MongoDB ser iniciado, as instâncias do AEM devem ser reiniciadas.
 
 Siga as instruções na página principal da documentação: [MSRP - Loja Comum MongoDB](msrp.md)
 
-## Testar {#test}
+## Teste {#test}
 
 Para testar e verificar o armazenamento comum do MongoDB, publique um comentário na instância de publicação, exiba-o na instância de autor e exiba o UGC no MongoDB e no Solr:
 
 1. Na instância de publicação, navegue até a página [Guia dos Componentes da Comunidade](http://localhost:4503/content/community-components/en/comments.html) e selecione o componente Comentários.
 1. Faça logon para publicar um comentário:
-1. Insira texto na caixa de entrada de texto de comentário e clique em **[!UICONTROL Post]**
+1. Insira texto na caixa de entrada de texto de comentário e clique em **[!UICONTROL Publicar]**
 
    ![pós-comentário](assets/post-comment.png)
 
@@ -183,7 +190,7 @@ Para testar e verificar o armazenamento comum do MongoDB, publique um comentári
 
 1. Verifique se o MSRP foi configurado para ser o provedor padrão:
 
-   * Em todas as instâncias de AEM de autoria e publicação, visite novamente o [console de Configuração de Armazenamento](srp-config.md) ou verifique o repositório AEM:
+   * Em todas as instâncias do AEM de criação e publicação, visite novamente o [console de Configuração de Armazenamento](srp-config.md) ou verifique o repositório do AEM:
 
    * No JCR, se [/etc/socialconfig](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/) não contiver um nó [srpc](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc), significa que o provedor de armazenamento é JSRP.
    * Se o nó srpc existir e contiver o nó [defaultconfiguration](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc/defaultconfiguration), as propriedades defaultconfiguration deverão definir MSRP como o provedor padrão.

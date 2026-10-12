@@ -9,13 +9,22 @@ exl-id: 4cbc0a30-d5f6-40ff-b7f6-8d64762e1970
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '454'
 ht-degree: 13%
-
 ---
-
 # Implantação de práticas recomendadas{#deploying-best-practices}
 
 A implantação de práticas recomendadas descreve como implantar ou manter o Adobe Experience Manager (AEM) da maneira mais eficiente e eficaz possível. Essa lista crescente de tópicos inclui várias áreas no AEM.

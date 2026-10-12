@@ -10,13 +10,22 @@ exl-id: f9a88156-91a2-4c85-9bc9-8f23700c2cbd
 feature: Operations
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: db7830895c8a2d1b7228dc4780296d43f15776df
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 8a70d214-ab7b-58c1-b001-2ed2e5d6303d
+    internal-label: Operations
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '6018'
+source-wordcount: '6022'
 ht-degree: 2%
-
 ---
-
 # Painel de operações {#operations-dashboard}
 
 ## Introdução {#introduction}
@@ -107,13 +116,13 @@ A criação de uma verificação de integridade individual envolve duas etapas: 
 
    * **Nome:** `sling:resourceType`
 
-      * **Tipo:** `String`
-      * **Valor:** `granite/operations/components/mbean`
+     * **Tipo:** `String`
+     * **Valor:** `granite/operations/components/mbean`
 
    * **Nome:** `resource`
 
-      * **Tipo:** `String`
-      * **Valor:** `/system/sling/monitoring/mbeans/org/apache/sling/healthcheck/HealthCheck/exampleHealthCheck`
+     * **Tipo:** `String`
+     * **Valor:** `/system/sling/monitoring/mbeans/org/apache/sling/healthcheck/HealthCheck/exampleHealthCheck`
 
    >[!NOTE]
    >
@@ -164,19 +173,19 @@ A função de uma Verificação de integridade composta é agregar várias Verif
 
    * **Nome:** `Composite Health Check`
 
-      * **Tipo:** `nt:unstructured`
+     * **Tipo:** `nt:unstructured`
 
    Com as seguintes propriedades:
 
    * **Nome:** `sling:resourceType`
 
-      * **Tipo:** `String`
-      * **Valor:** `granite/operations/components/mbean`
+     * **Tipo:** `String`
+     * **Valor:** `granite/operations/components/mbean`
 
    * **Nome:** `resource`
 
-      * **Tipo:** `String`
-      * **Valor:** `/system/sling/monitoring/mbeans/org/apache/sling/healthcheck/HealthCheck/diskusage`
+     * **Tipo:** `String`
+     * **Valor:** `/system/sling/monitoring/mbeans/org/apache/sling/healthcheck/HealthCheck/diskusage`
 
    >[!NOTE]
    >
@@ -263,7 +272,8 @@ A função de uma Verificação de integridade composta é agregar várias Verif
    <td>
     <div>
       O Sling Jobs verifica o número de trabalhos em fila no JobManager, compara-o com o
-     Limite de <code>maxNumQueueJobs</code> e:</div>
+     Limite de <code>maxNumQueueJobs</code> e:
+    </div>
     <ul>
      <li>retorna uma Critical se mais de <code>maxNumQueueJobs</code> estiverem na fila</li>
      <li>retorna Crítico se houver jobs ativos de longa duração com mais de 1 hora</li>
@@ -494,7 +504,7 @@ As seguintes tarefas estão disponíveis no Painel de operações:
 1. A tarefa de manutenção **Limpeza de Projeto**, localizada no menu **Janela de Manutenção Semanal**; usando a opção **Adicionar**.
 1. A tarefa de manutenção **Limpeza de tarefas ad-hoc**, localizada no menu **Janela de Manutenção Semanal**; usando a opção **Adicionar**.
 
-O tempo padrão para a janela de manutenção diária é de 2:00 às 5:00. As tarefas configuradas para serem executadas na janela de manutenção semanal são executadas entre 1:00 e 2:00 da manhã aos sábados.
+O tempo padrão para a janela de manutenção diária é de 2h às 5h. As tarefas configuradas para serem executadas na janela de manutenção semanal são executadas entre 1:00 e 2:00 aos sábados.
 
 Você também pode configurar os horários pressionando o ícone de engrenagem em qualquer uma das duas placas de manutenção:
 
@@ -688,7 +698,7 @@ Você também pode baixar um arquivo `JSON` resumindo as informações do painel
      <li>uma lista de verificações com status Crítico</li>
      <li>uma lista de verificações com status de Aviso</li>
     </ul> </td>
-   <td>Indicado visualmente:
+   <td>Indicado visualmente:<br />
     <ul>
      <li>uma tag vermelha para verificações críticas</li>
      <li>uma tag laranja para verificações de Aviso</li>

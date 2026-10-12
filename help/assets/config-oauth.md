@@ -1,17 +1,31 @@
 ---
 title: Configurar a marcação de ativos usando o Serviço de conteúdo inteligente
-description: Saiba como configurar a marcação inteligente e a marcação inteligente aprimorada no  [!DNL Adobe Experience Manager], usando o Serviço de Conteúdo Inteligente.
+description: Saiba como configurar a marcação inteligente e a marcação inteligente aprimorada no [!DNL Adobe Experience Manager], usando o Serviço de Conteúdo Inteligente.
 role: Admin
 feature: Tagging,Smart Tags
 solution: Experience Manager, Experience Manager Assets
 exl-id: 9caee314-697b-4a7b-b991-10352da17f2c
-source-git-commit: ab9292c491cc9dfcd8f239ba279b1e0ae6d1560f
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 752f9248-f39f-5793-a7dd-5ddafcd403c7
+    internal-label: Tagging
+  - id: bd0d2470-932c-4269-8eca-6d939b72d9ef
+    internal-label: Dynamic Media
+subfeature_v2:
+  - id: f0e3b2ca-813f-4b7a-81df-52339e17ddcf
+    internal-label: Smart Tags
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1089'
+source-wordcount: '1145'
 ht-degree: 6%
-
 ---
-
 # Solução de problemas de tags inteligentes para credenciais do OAuth {#oauth-config}
 
 Uma configuração de autorização aberta é necessária para aprovar o consentimento para que o aplicativo [!DNL Adobe Experience Manager] interaja com os Serviços de Conteúdo Inteligente de maneira segura.
@@ -39,12 +53,12 @@ Uma configuração OAuth requer os seguintes pré-requisitos:
 
 * Crie uma nova integração OAuth no [Developer Console](https://developer.adobe.com/console/user/servicesandapis). Use o `ClientID`, `ClientSecret`, `OrgID` e outras propriedades nas etapas abaixo:
 * Os seguintes arquivos podem ser encontrados neste caminho `/apps/system/config in crx/de`:
-   * `com.adobe.granite.auth.oauth.accesstoken.provider.<randomnumbers>.config`
-   * `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl.<randomnumber>.config`
+  * `com.adobe.granite.auth.oauth.accesstoken.provider.<randomnumbers>.config`
+  * `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl.<randomnumber>.config`
 
 ### Configuração do OAuth para o AMS existente e usuários locais {#steps-config-oauth-onprem}
 
-As etapas abaixo podem ser executadas pelo administrador do sistema no **CRXDE**. O cliente AMS pode entrar em contato com o representante da Adobe ou enviar um tíquete de suporte seguindo o [processo de suporte](https://experienceleague.adobe.com/pt-br?lang=en&support-tab=home#support).
+As etapas abaixo podem ser executadas pelo administrador do sistema no **CRXDE**. O cliente AMS pode entrar em contato com o representante da Adobe ou enviar um tíquete de suporte após o [processo de suporte](https://experienceleague.adobe.com/pt-br?lang=en&support-tab=home#support).
 
 1. Adicionar ou atualizar as propriedades abaixo em `com.adobe.granite.auth.oauth.accesstoken.provider.<randomnumbers>.config`:
 
@@ -52,7 +66,6 @@ As etapas abaixo podem ser executadas pelo administrador do sistema no **CRXDE**
    * `auth.token.provider.orgId="<OrgID>"`
    * `auth.token.provider.default.claims=("\"iss\"\ :\ \"<OrgID>\"")`
    * `auth.token.provider.scope="read_pc.dma_smart_content,\ openid,\ AdobeID,\ additional_info.projectedProductContext"`
-
      `auth.token.validator.type="adobe-ims-similaritysearch"`
    * Atualize o `auth.token.provider.client.id` com a ID de cliente da nova configuração OAuth.
    * Atualizar `auth.access.token.request` para `"https://ims-na1.adobelogin.com/ims/token/v3"`
@@ -60,7 +73,7 @@ As etapas abaixo podem ser executadas pelo administrador do sistema no **CRXDE**
 
    >[!IMPORTANT]
    >
-   >Substitua o ponto (.) pelo hífen (-) como um prefixo de `<randomnumber>`.
+   >Substituir ponto (.) com hífen (-) como prefixo de `<randomnumber>`.
 
 1. Execute as etapas abaixo em `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl.<randomnumber>.config`:
    * Atualize a propriedade auth.ims.client.secret com o Segredo do cliente da nova integração OAuth.
@@ -111,9 +124,9 @@ Para configurar o Serviço de conteúdo inteligente, siga estas etapas de nível
 
 Um certificado público permite autenticar seu perfil na Adobe Developer Console.
 
-1. Na interface de usuário do [!DNL Experience Manager], acesse **[!UICONTROL Ferramentas]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Cloud Service herdados]**.
+1. Na interface de usuário do [!DNL Experience Manager], acesse **[!UICONTROL Ferramentas]** > **[!UICONTROL Serviços da Nuvem]** > **[!UICONTROL Serviços da Nuvem Herdados]**.
 
-1. Na página Cloud Service, clique em **[!UICONTROL Configurar agora]** em **[!UICONTROL Tags inteligentes da Assets]**.
+1. Na página Serviços da nuvem, clique em **[!UICONTROL Configurar agora]** em **[!UICONTROL Tags inteligentes da Assets]**.
 
 1. Na caixa de diálogo **[!UICONTROL Criar Configuração]**, especifique um título e nome para a configuração de Tags Inteligentes. Clique em **[!UICONTROL Criar]**.
 
@@ -121,11 +134,11 @@ Um certificado público permite autenticar seu perfil na Adobe Developer Console
 
    **[!UICONTROL URL de Serviço]**: `https://smartcontent.adobe.io/<region where your Experience Manager author instance is hosted>`
 
-   Por exemplo, `https://smartcontent.adobe.io/apac`. Você pode especificar `na`, `emea` ou `apac` como as regiões onde a instância do autor do Experience Manager está hospedada.
+   Por exemplo, `https://smartcontent.adobe.io/apac`. Você pode especificar `na`, `emea` ou `apac` como as regiões em que sua instância de autor do Experience Manager está hospedada.
 
    >[!NOTE]
    >
-   >Se o Serviço gerenciado de Experience Manager for provisionado antes de 1° de setembro de 2022, use o seguinte URL de serviço:
+   >Se o Experience Manager Managed Service for provisionado antes de 1º de setembro de 2022, use o seguinte URL de serviço:
    >`https://mc.adobe.io/marketingcloud/smartcontent`
 
    **[!UICONTROL Servidor de autorização]**: `https://ims-na1.adobelogin.com`
@@ -179,7 +192,7 @@ Para usar APIs do Serviço de Conteúdo Inteligente, crie uma integração no Ad
 
 Para configurar a integração, use os valores dos campos [!UICONTROL ID DA CONTA TÉCNICA], [!UICONTROL ID DA ORGANIZAÇÃO], [!UICONTROL SEGREDO DO CLIENTE] e [!UICONTROL ID DO CLIENTE] da integração com o Adobe Developer Console. Criar uma configuração de nuvem de Tags Inteligentes permite a autenticação de solicitações de API da implantação [!DNL Experience Manager].
 
-1. Em [!DNL Experience Manager], navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Cloud Services herdados]** para abrir o console [!UICONTROL Cloud Services].
+1. Em [!DNL Experience Manager], navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Serviços da Nuvem Herdados]** para abrir o console [!UICONTROL Serviços da Nuvem].
 
 1. Nas **[!UICONTROL Tags inteligentes do Assets]**, abra a configuração criada acima. Na página de configurações do serviço, clique em **[!UICONTROL Editar]**.
 

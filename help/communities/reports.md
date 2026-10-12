@@ -10,13 +10,20 @@ role: Admin
 exl-id: 2aff2ffe-ba6f-4cc9-a126-40fc2a1161e2
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '411'
+source-wordcount: '415'
 ht-degree: 6%
-
 ---
-
 # Console de relatórios {#reports-console}
 
 ## Visão geral {#overview}
@@ -43,17 +50,17 @@ Os relatórios tabulares podem ser exportados no formato .csv para processamento
 
 * Escolher de:
 
-   * **[!UICONTROL Relatório de atribuições]**
+  * **[!UICONTROL Relatório de atribuições]**
 
-      * Gere um relatório para o site da comunidade, usuário ou grupo selecionado e atribuição.
+    * Gere um relatório para o site da comunidade, usuário ou grupo selecionado e atribuição.
 
-   * **[!UICONTROL Relatório de postagens]**
+  * **[!UICONTROL Relatório de postagens]**
 
-      * Gerar um relatório para o site da comunidade, tipo de conteúdo e período de tempo selecionados.
+    * Gerar um relatório para o site da comunidade, tipo de conteúdo e período de tempo selecionados.
 
-   * **[!UICONTROL Relatório de modos de exibição]**
+  * **[!UICONTROL Relatório de modos de exibição]**
 
-      * gere um relatório para o Site da comunidade, Tipo de conteúdo e Período selecionados.
+    * gere um relatório para o Site da comunidade, Tipo de conteúdo e Período selecionados.
 
 ![relatórios](assets/reports1.png)
 
@@ -77,10 +84,10 @@ Selecione os critérios para o relatório:
 
   Selecione um de:
 
-   * Últimos 7 dias
-   * Últimos 30 dias
-   * Últimos 90 dias
-   * Ano anterior
+  * Últimos 7 dias
+  * Últimos 30 dias
+  * Últimos 90 dias
+  * Ano anterior
 
 Selecione **[!UICONTROL Gerar]** para criar o relatório.
 
@@ -106,10 +113,10 @@ Selecione os critérios para o relatório:
 
   Selecione um de:
 
-   * Últimos 7 dias
-   * Últimos 30 dias
-   * Últimos 90 dias
-   * Ano anterior
+  * Últimos 7 dias
+  * Últimos 30 dias
+  * Últimos 90 dias
+  * Ano anterior
 
 Selecione **[!UICONTROL Gerar]** para criar o relatório.
 
@@ -123,6 +130,6 @@ Se nenhum site da comunidade estiver listado, verifique se o Adobe Analytics foi
 
 ### Os relatórios não são exibidos na instância do autor do AEM {#reports-do-not-show-in-aem-author-instance}
 
-Se os relatórios não forem exibidos na instância do Autor AEM, verifique as personalizações, como o mapeamento de URL na instância do Publish. Se o mapeamento de URL for feito somente na instância AEM Publish do site de comunidades, verifique se o mesmo foi configurado na instância AEM Author na configuração **Site Trend Report Social Component Fatory**.
+Se os relatórios não forem exibidos na instância do Autor do AEM, verifique as personalizações, como o mapeamento de URL na instância de publicação. Se o mapeamento de URL for feito somente na instância de publicação do AEM do site de comunidades, verifique se o mesmo foi configurado na instância de autor do AEM na configuração **Fábrica de componentes sociais do relatório de tendências do site**.
 
-![Mapeamento de URL no Autor do AEM](assets/sitetrend.png)
+![Mapeamento de URL no AEM Author](assets/sitetrend.png)

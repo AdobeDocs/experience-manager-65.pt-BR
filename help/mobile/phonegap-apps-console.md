@@ -9,13 +9,17 @@ exl-id: 49e0b3f6-7ac7-4417-9c31-cc3d3c2305f3
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2617'
+source-wordcount: '2668'
 ht-degree: 0%
-
 ---
-
 # Criação e edição de aplicativos usando o console Aplicativos{#creating-and-editing-apps-using-the-apps-console}
 
 {{ue-over-mobile}}

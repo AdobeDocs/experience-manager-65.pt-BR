@@ -10,13 +10,22 @@ feature: Configuring
 exl-id: 09943de5-8d62-4354-a37f-0521a66b4c49
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: e4c42f989baf1a91e94944c612ee6b8de1dc331a
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '3334'
-ht-degree: 2%
-
+source-wordcount: '3471'
+ht-degree: 3%
 ---
-
 # Replicação{#replication}
 
 Os agentes de replicação são fundamentais para o Adobe Experience Manager (AEM), pois o mecanismo é usado para:
@@ -138,16 +147,16 @@ Ao configurar um agente de replicação no console Ferramentas, quatro guias est
 
   Quando o agente está **habilitado**, a fila é mostrada como:
 
-   * **Ativo** quando os itens estão sendo processados.
-   * **Ocioso** quando a fila está vazia.
-   * **Bloqueado** quando itens estiverem na fila, mas não puder ser processado; por exemplo, quando a fila de recebimento estiver desabilitada.
+  * **Ativo** quando os itens estão sendo processados.
+  * **Ocioso** quando a fila está vazia.
+  * **Bloqueado** quando itens estiverem na fila, mas não puder ser processado; por exemplo, quando a fila de recebimento estiver desabilitada.
 
 * **Tipo de Serialização**
 
   O tipo de serialização:
 
-   * **Padrão**: defina se o agente deve ser selecionado automaticamente.
-   * **Liberação do Dispatcher**: selecione esta opção se o agente for usado para liberar o cache do Dispatcher.
+  * **Padrão**: defina se o agente deve ser selecionado automaticamente.
+  * **Liberação do Dispatcher**: selecione esta opção se o agente for usado para liberar o cache do Dispatcher.
 
 * **Repetir atraso**
 
@@ -159,8 +168,8 @@ Ao configurar um agente de replicação no console Ferramentas, quatro guias est
 
   Dependendo do ambiente, o agente usa essa conta de usuário para:
 
-   * coletar e empacotar o conteúdo do ambiente do Autor
-   * criar e gravar o conteúdo no ambiente de publicação
+  * coletar e empacotar o conteúdo do ambiente do Autor
+  * criar e gravar o conteúdo no ambiente de publicação
 
   Deixe este campo vazio para usar a conta de usuário do sistema (a conta definida no sling como o usuário administrador; por padrão, é `admin`).
 
@@ -180,9 +189,9 @@ Ao configurar um agente de replicação no console Ferramentas, quatro guias est
 
   Especifica o nível de detalhes a ser usado para mensagens de log.
 
-   * `Error`: somente erros são registrados em log
-   * `Info`: erros, avisos e outras mensagens informativas estão registrados em log
-   * `Debug`: um alto nível de detalhes é usado nas mensagens, principalmente para fins de depuração
+  * `Error`: somente erros são registrados em log
+  * `Info`: erros, avisos e outras mensagens informativas estão registrados em log
+  * `Debug`: um alto nível de detalhes é usado nas mensagens, principalmente para fins de depuração
 
   Padrão: `Info`
 
@@ -202,8 +211,8 @@ Ao configurar um agente de replicação no console Ferramentas, quatro guias est
 
   Por exemplo:
 
-   * Um Agente Padrão pode replicar para `https://localhost:4503/bin/receive`
-   * Um agente de limpeza do Dispatcher pode replicar para `https://localhost:8000/dispatcher/invalidate.cache`
+  * Um Agente Padrão pode replicar para `https://localhost:4503/bin/receive`
+  * Um agente de limpeza do Dispatcher pode replicar para `https://localhost:8000/dispatcher/invalidate.cache`
 
   O protocolo especificado aqui (HTTP ou HTTPS) determina o método de transporte.
 
@@ -281,15 +290,15 @@ As seguintes configurações só serão necessárias se um proxy for necessário
 
   Para um agente de limpeza do Dispatcher, as três entradas padrão não devem precisar ser alteradas:
 
-   * `CQ-Action:{action}`
-   * `CQ-Handle:{path}`
-   * `CQ-Path:{path}`
+  * `CQ-Action:{action}`
+  * `CQ-Handle:{path}`
+  * `CQ-Path:{path}`
 
   Eles são usados, conforme apropriado, para indicar a ação a ser usada ao limpar a alça ou o caminho. Os subparâmetros são dinâmicos:
 
-   * `{action}` indica uma ação de replicação
+  * `{action}` indica uma ação de replicação
 
-   * `{path}` indica um caminho
+  * `{path}` indica um caminho
 
   Eles são substituídos pelo caminho/ação relevante para a solicitação e, portanto, não precisam ser &quot;codificados&quot;:
 
@@ -424,19 +433,19 @@ Para configurar a replicação de conteúdo para uma instância de publicação 
 
    * Na guia **Configurações**:
 
-      * Ativar **Habilitado**.
-      * Insira uma **Descrição**.
-      * Defina **Repetir Atraso** como `60000`.
+     * Ativar **Habilitado**.
+     * Insira uma **Descrição**.
+     * Defina **Repetir Atraso** como `60000`.
 
-      * Deixe o **Tipo de Serialização** como `Default`.
+     * Deixe o **Tipo de Serialização** como `Default`.
 
    * Na guia **Transporte**:
 
-      * Insira o URI necessário para a nova instância de publicação; por exemplo,
-        `https://localhost:4504/bin/receive`.
+     * Insira o URI necessário para a nova instância de publicação; por exemplo,
+       `https://localhost:4504/bin/receive`.
 
-      * Insira a conta de usuário específica do site usada para replicação.
-      * Você pode configurar outros parâmetros conforme necessário.
+     * Insira a conta de usuário específica do site usada para replicação.
+     * Você pode configurar outros parâmetros conforme necessário.
 
 1. Clique em **OK**.
 
@@ -467,19 +476,19 @@ Os agentes padrão estão incluídos na instalação. No entanto, uma determinad
 
    * Na guia **Configurações**:
 
-      * Ativar **Habilitado**.
-      * Insira uma **Descrição**.
-      * Deixe o **Tipo de Serialização** como `Dispatcher Flush` ou defina-o como tal se estiver criando um agente.
+     * Ativar **Habilitado**.
+     * Insira uma **Descrição**.
+     * Deixe o **Tipo de Serialização** como `Dispatcher Flush` ou defina-o como tal se estiver criando um agente.
 
-      * (Opcional) Selecione **Atualização de alias** para habilitar solicitações de invalidação de alias ou caminho personalizado para o Dispatcher.
+     * (Opcional) Selecione **Atualização de alias** para habilitar solicitações de invalidação de alias ou caminho personalizado para o Dispatcher.
 
    * Na guia **Transporte**:
 
-      * Insira o URI necessário para a nova instância de publicação; por exemplo,
-        `https://localhost:80/dispatcher/invalidate.cache`.
+     * Insira o URI necessário para a nova instância de publicação; por exemplo,
+       `https://localhost:80/dispatcher/invalidate.cache`.
 
-      * Insira a conta de usuário específica do site usada para replicação.
-      * Você pode configurar outros parâmetros conforme necessário.
+     * Insira a conta de usuário específica do site usada para replicação.
+     * Você pode configurar outros parâmetros conforme necessário.
 
    Para agentes de limpeza do Dispatcher, a propriedade do URI é usada somente se você usar entradas de hosts virtuais baseadas em caminho para diferenciar entre farms. Use esse campo para direcionar o farm a ser invalidado. Por exemplo, o farm nº 1 tem um host virtual de `www.mysite.com/path1/*`, e o farm nº 2 tem um host virtual de `www.mysite.com/path2/*`. Você pode usar um URL de `/path1/invalidate.cache` para direcionar o primeiro farm, e `/path2/invalidate.cache` para direcionar o segundo farm.
 

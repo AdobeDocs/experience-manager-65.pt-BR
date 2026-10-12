@@ -1,5 +1,5 @@
 ---
-title: 'Configurar o ambiente da sua conta  '
+title: Configurar o ambiente da sua conta
 description: O AEM fornece a capacidade de configurar a sua conta e determinados aspectos do ambiente de criação
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,27 @@ exl-id: 6079431d-7d08-4973-8bb4-a8d10626a795
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '522'
 ht-degree: 63%
-
 ---
-
-# Configurar o ambiente da sua conta  {#configuring-your-account-environment}
+# Configurar o ambiente da sua conta{#configuring-your-account-environment}
 
 O AEM fornece a capacidade de configurar a sua conta e determinados aspectos do ambiente de criação.
 
@@ -31,15 +44,15 @@ A caixa de diálogo de configurações do **usuário** concede acesso a:
 
 * Representar como
 
-   * Com a funcionalidade [Representar como](/help/sites-administering/security.md#impersonating-another-user), um usuário pode trabalhar em nome de outro usuário.
+  * Com a funcionalidade [Representar como](/help/sites-administering/security.md#impersonating-another-user), um usuário pode trabalhar em nome de outro usuário.
 
 * Perfil
 
-   * Oferece um link conveniente para suas [configurações de usuário](/help/sites-administering/security.md))
+  * Oferece um link conveniente para suas [configurações de usuário](/help/sites-administering/security.md))
 
 * [Minhas preferências](/help/sites-authoring/user-properties.md#my-preferences)
 
-   * Especifique várias configurações de preferências exclusivas para seu usuário
+  * Especifique várias configurações de preferências exclusivas para seu usuário
 
 ![screen_shot_2018-03-20at103808](assets/screen_shot_2018-03-20at103808.png)
 
@@ -61,13 +74,13 @@ Cada usuário pode definir determinadas propriedades para si mesmo.
 
   Isso define o comportamento ou a abertura de janelas. Selecione um dos seguintes:
 
-   * **Várias janelas** (padrão)
+  * **Várias janelas** (padrão)
 
-      * As páginas são abertas em uma nova janela.
+    * As páginas são abertas em uma nova janela.
 
-   * **Uma janela**
+  * **Uma janela**
 
-      * As páginas são abertas na janela atual.
+    * As páginas são abertas na janela atual.
 
 * **Mostrar ações do desktop para Ativos**
 
@@ -77,8 +90,8 @@ Cada usuário pode definir determinadas propriedades para si mesmo.
 
   Isso define a cor padrão usada ao fazer anotações.
 
-   * Clique no bloco de cores para abrir o seletor de amostras e selecionar uma cor.
-   * Como alternativa, insira o código hexadecimal da cor desejada no campo.
+  * Clique no bloco de cores para abrir o seletor de amostras e selecionar uma cor.
+  * Como alternativa, insira o código hexadecimal da cor desejada no campo.
 
 * **Apresentação de data relativa**
 
@@ -86,23 +99,23 @@ Cada usuário pode definir determinadas propriedades para si mesmo.
 
   Essa opção define como as datas no sistema são exibidas. As opções disponíveis são as seguintes:
 
-   * **Sempre mostrar data exata**: a data exata é sempre exibida (nunca uma data relativa).
-   * **1 dia**: a data relativa é mostrada para datas dentro de um dia; caso contrário, uma data exata é mostrada.
+  * **Sempre mostrar data exata**: a data exata é sempre exibida (nunca uma data relativa).
+  * **1 dia**: a data relativa é mostrada para datas dentro de um dia; caso contrário, uma data exata é mostrada.
 
-   * **7 dias (padrão)**: a data relativa é mostrada para datas dentro de sete dias; caso contrário, uma data exata é mostrada.
+  * **7 dias (padrão)**: a data relativa é mostrada para datas dentro de sete dias; caso contrário, uma data exata é mostrada.
 
-   * **1 mês**: a data relativa é mostrada para datas dentro de um mês; caso contrário, uma data exata é mostrada.
+  * **1 mês**: a data relativa é mostrada para datas dentro de um mês; caso contrário, uma data exata é mostrada.
 
-   * **1 ano**: a data relativa é mostrada para datas dentro de um ano; caso contrário, uma data exata é mostrada.
+  * **1 ano**: a data relativa é mostrada para datas dentro de um ano; caso contrário, uma data exata é mostrada.
 
-   * **Sempre mostrar data relativa**: as datas exatas nunca são mostradas, e apenas as datas relativas são mostradas.
+  * **Sempre mostrar data relativa**: as datas exatas nunca são mostradas, e apenas as datas relativas são mostradas.
 
 * **Habilitar atalhos**
 
   O AEM oferece suporte a vários atalhos de teclado que tornam a criação mais eficiente.
 
-   * [Atalhos de teclado para editar páginas](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
-   * [Atalhos de teclado para os consoles](/help/sites-authoring/keyboard-shortcuts.md)
+  * [Atalhos de teclado para editar páginas](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
+  * [Atalhos de teclado para os consoles](/help/sites-authoring/keyboard-shortcuts.md)
 
   Essa opção habilita os atalhos de teclado. Por padrão, eles são ativados, mas podem ser desativados se, por exemplo, um usuário tiver determinados requisitos de acessibilidade.
 

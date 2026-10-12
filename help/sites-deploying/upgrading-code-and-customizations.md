@@ -11,13 +11,22 @@ feature: Upgrading
 exl-id: a36a310d-5943-4ff5-8ba9-50eaedda98c5
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '2182'
 ht-degree: 0%
-
 ---
-
 # Atualização de código e personalizações{#upgrading-code-and-customizations}
 
 Ao planejar uma atualização, as seguintes áreas de uma implementação devem ser investigadas e abordadas.
@@ -42,7 +51,8 @@ Antes de continuar com uma atualização, você deve ter uma base de código de 
 
 Além de atualizar opcionalmente sua base de código e as personalizações para funcionar com a nova versão do AEM, o 6.5 também ajuda a gerenciar suas personalizações com mais eficiência com o recurso Compatibilidade com versões anteriores, conforme descrito em [Compatibilidade com versões anteriores no AEM 6.5](/help/sites-deploying/backward-compatibility.md).
 
-Conforme mencionado acima e mostrado no diagrama abaixo, executar o [Detector de padrões](/help/sites-deploying/pattern-detector.md) na primeira etapa pode ajudar a avaliar a complexidade geral da atualização. Ele também pode ajudá-lo a decidir se você deseja executar no modo de compatibilidade ou atualizar suas personalizações para usar todos os novos recursos do AEM 6.5. Consulte a página [Compatibilidade com versões anteriores no AEM 6.5](/help/sites-deploying/backward-compatibility.md) para obter mais detalhes.[![opção_cortada](assets/opt_cropped.png)](assets/upgrade-code-base-highlevel.png)
+Conforme mencionado acima e mostrado no diagrama abaixo, executar o [Detector de padrões](/help/sites-deploying/pattern-detector.md) na primeira etapa pode ajudar a avaliar a complexidade geral da atualização. Ele também pode ajudá-lo a decidir se você deseja executar no modo de compatibilidade ou atualizar suas personalizações para usar todos os novos recursos do AEM 6.5. Consulte a página [Compatibilidade com versões anteriores no AEM 6.5](/help/sites-deploying/backward-compatibility.md) para obter mais detalhes.
+[![opção_cortada](assets/opt_cropped.png)](assets/upgrade-code-base-highlevel.png)
 
 ## Atualizar a base de código {#upgrade-code-base}
 

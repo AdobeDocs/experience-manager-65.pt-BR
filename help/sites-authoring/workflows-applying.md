@@ -10,13 +10,28 @@ exl-id: e00da2b3-046a-4d93-aed0-07dd8c66899f
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Workflow
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: f6a6f91a-8819-530a-8e7b-c50884a25aef
+    internal-label: Workflow
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '647'
-ht-degree: 82%
-
+source-wordcount: '649'
+ht-degree: 83%
 ---
-
 # Aplicação de fluxos de trabalho a páginas{#applying-workflows-to-pages}
 
 Ao criar, é possível invocar fluxos de trabalho para realizar ações em suas páginas. Também é possível aplicar mais de um fluxo de trabalho.
@@ -95,14 +110,14 @@ Você pode especificar detalhes:
    * **Modelo de fluxo de trabalho**
    * **Título do fluxo de trabalho**
 
-      * Você pode especificar um título para essa instância, para ajudar a identificá-la em um estágio posterior.
+     * Você pode especificar um título para essa instância, para ajudar a identificá-la em um estágio posterior.
 
    Dependendo do modelo de fluxo de trabalho, as seguintes opções também estão disponíveis. Isso permite que o pacote criado como conteúdo seja mantido após a conclusão do fluxo de trabalho.
 
    * **Manter o pacote do fluxo de trabalho**
    * **Título do pacote**
 
-      * Você pode especificar um título para o pacote, para ajudar na identificação.
+     * Você pode especificar um título para o pacote, para ajudar na identificação.
 
    >[!NOTE]
    >
@@ -118,16 +133,16 @@ Você pode especificar detalhes:
 
    * Um recurso existente para ver ações adicionais:
 
-      * **Incluir filhos** para especificar que os filhos desse recurso serão incluídos no fluxo de trabalho.
-Uma caixa de diálogo é aberta, permitindo que você refine a seleção de acordo com:
+     * **Incluir filhos** para especificar que os filhos desse recurso serão incluídos no fluxo de trabalho.
+       Uma caixa de diálogo é aberta, permitindo que você refine a seleção de acordo com:
 
-         * Incluir somente filhos imediatas.
-         * Incluir somente as páginas modificadas.
-         * Incluir somente páginas já publicadas.
+       * Incluir somente filhos imediatas.
+       * Incluir somente as páginas modificadas.
+       * Incluir somente páginas já publicadas.
 
-        Os filhos especificados são adicionadas à lista de recursos aos quais o fluxo de trabalho será aplicado.
+       Os filhos especificados são adicionadas à lista de recursos aos quais o fluxo de trabalho será aplicado.
 
-      * A opção **Remover seleção** remove o recurso do fluxo de trabalho.
+     * A opção **Remover seleção** remove o recurso do fluxo de trabalho.
 
    ![wf-53](assets/wf-53.png)
 

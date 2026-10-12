@@ -8,13 +8,26 @@ feature: Form Data Model
 exl-id: 90cc9452-e107-4e57-80a3-f44f0bde132e
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 4876a742-a341-5402-aba7-e749c45e777c
+    internal-label: Form Data Model
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1271'
 ht-degree: 2%
-
 ---
-
 # Configuração OData do Microsoft Dynamics{#microsoft-dynamics-odata-configuration}
 
 | Versão | Link do artigo |
@@ -46,8 +59,8 @@ Antes de começar a instalar e configurar o Microsoft Dynamics, verifique se voc
 * Instalado o [pacote complementar do AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md)
 * O Microsoft Dynamics 365 foi configurado online ou instalou uma instância de uma das seguintes versões do Microsoft Dynamics:
 
-   * Microsoft Dynamics 365 no local
-   * Microsoft Dynamics 2016 no local
+  * Microsoft Dynamics 365 no local
+  * Microsoft Dynamics 2016 no local
 
 * [Registrou o aplicativo para o serviço online do Microsoft Dynamics com o Microsoft Azure Ative Diretory](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/walkthrough-register-dynamics-365-app-azure-active-directory). Anote os valores da ID do cliente (também chamada de ID do aplicativo) e o segredo do cliente para o serviço registrado. Esses valores são usados ao [configurar o serviço em nuvem para seu serviço Microsoft Dynamics](../../forms/using/ms-dynamics-odata-configuration.md#configure-cloud-service-for-your-microsoft-dynamics-service).
 

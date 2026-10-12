@@ -10,13 +10,22 @@ exl-id: 0f3aaa0a-ccfb-4162-97a6-ee5485595d28
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1594'
+source-wordcount: '1596'
 ht-degree: 0%
-
 ---
-
 
 # Integração com o Salesforce {#integrating-with-salesforce}
 
@@ -215,7 +224,7 @@ Você pode carregar dados do usuário do Salesforce no Client Context para usar 
 
 Você pode criar um segmento que use dados do Salesforce Client Context Store. Para fazer isso:
 
-1. Navegue até a segmentação no AEM em **Ferramentas** > **Segmentação** ou em [http://localhost:4502/miscadmin#/etc/segmentation](http://localhost:4502/miscadmin#/etc/segmentation).
+1. Navegue até a segmentação no AEM, acessando **Ferramentas** > **Segmentação** ou [http://localhost:4502/miscadmin#/etc/segmentation](http://localhost:4502/miscadmin#/etc/segmentation).
 1. Crie ou atualize um segmento para incluir dados do Salesforce. Para obter mais informações, consulte [Segmentação](/help/sites-administering/campaign-segmentation.md).
 
 ## Pesquisar clientes em potencial {#searching-leads}

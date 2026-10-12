@@ -8,13 +8,22 @@ feature: Upgrading
 exl-id: b4531792-06dd-4545-9dbb-57224be20dc7
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1494'
+source-wordcount: '1511'
 ht-degree: 1%
-
 ---
-
 # Reestruturação do repositório de sites no AEM 6.5 {#sites-repository-restructuring-in-aem}
 
 Conforme descrito na página pai [Reestruturação do repositório no AEM 6.5](/help/sites-deploying/repository-restructuring.md), os clientes que estão atualizando para o AEM 6.5 devem usar esta página para avaliar o esforço de trabalho associado às alterações no repositório que afetam a Solução da AEM Sites. Algumas alterações exigem esforço de trabalho durante o processo de atualização do AEM 6.5, enquanto outras podem ser adiadas até uma atualização futura.
@@ -299,14 +308,14 @@ Conforme descrito na página pai [Reestruturação do repositório no AEM 6.5](/
    <td><p><span class="code">/libs/settings/
       <code>
        wcm
-      </code>/template-types/scaffolding/scaffolding</span></p> <p><span class="code">/apps/settings/
+      </code>/tipos-modelo/andaime/andaime</span></p> <p><span class="code">/apps/settings/
       <code>
        wcm
-      </code>/template-types/scaffolding/scaffolding</span></p> </td>
+      </code>/tipos-modelo/andaime/andaime</span></p> </td>
   </tr>
   <tr>
    <td><strong>Orientações em matéria de reestruturação</strong></td>
-   <td>Scaffolding created under the Previous Location uses the legacy Scaffolding framework and cannot be migrated to the New Location. To align with the New Location any legacy Scaffolding must be re-developed using the supported Scaffolding framework.</td>
+   <td>O scaffolding criado no Local anterior usa a estrutura de scaffolding herdada e não pode ser migrado para o Novo local. Para alinhar com o novo local, qualquer andaime herdado deve ser recriado usando a estrutura de andaime compatível.</td>
   </tr>
   <tr>
    <td><strong>Notas</strong></td>
@@ -329,14 +338,14 @@ Conforme descrito na página pai [Reestruturação do repositório no AEM 6.5](/
   </tr>
   <tr>
    <td><strong>Orientações em matéria de reestruturação</strong></td>
-   <td><p>Any references to the Previous Location in custom LESS files must be updated to import from the New Location.</p>
+   <td><p>Qualquer referência ao Local anterior em arquivos LESS personalizados deve ser atualizada para importar do Novo Local.</p>
     <ul>
-     <li>Update any referencing custom LESS files that reference grid_base.less in the Previous Location to reference the new location.</li>
+     <li>Atualize qualquer arquivo LESS personalizado que faça referência a grid_base.less no Local anterior para fazer referência ao novo local.</li>
     </ul> </td>
   </tr>
   <tr>
    <td><strong>Notas</strong></td>
-   <td>Referencing a non-existing <code>grid_base.less</code> file results in the Layout Mode of the Page and Template Editor not working, and a disruption of page layout.</td>
+   <td>Fazer referência a um arquivo <code>grid_base.less</code> não existente resulta no modo de layout da página e no Editor de modelo não funcionarem e em uma interrupção do layout da página.</td>
   </tr>
  </tbody>
 </table>

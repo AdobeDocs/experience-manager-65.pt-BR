@@ -11,13 +11,31 @@ exl-id: f59f12a2-ecd6-49cf-90ad-621719fe51bf
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Launches
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e2cac356-c071-4141-ad6f-827893261a16
+    internal-label: Launches
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '772'
+source-wordcount: '774'
 ht-degree: 76%
-
 ---
-
 # Promoção de inicializações{#promoting-launches}
 
 É necessário promover as páginas de lançamento para mover o conteúdo de volta para a origem (produção) antes de publicar. Quando uma página de lançamento é promovida, a página de origem correspondente é substituída pelo conteúdo da página promovida. As seguintes opções estão disponíveis ao promover uma página de lançamento:
@@ -55,29 +73,29 @@ ht-degree: 76%
 
    * o console **Sites**:
 
-      1. Abra o [painel de referências](/help/sites-authoring/author-environment-tools.md#showingpagereferences) e selecione a página de origem desejada usando o [modo de seleção](/help/sites-authoring/basic-handling.md) (ou selecione e abra o painel de referências; a ordem não é importante). Todas as referências são mostradas.
+     1. Abra o [painel de referências](/help/sites-authoring/author-environment-tools.md#showingpagereferences) e selecione a página de origem desejada usando o [modo de seleção](/help/sites-authoring/basic-handling.md) (ou selecione e abra o painel de referências; a ordem não é importante). Todas as referências são mostradas.
 
-      1. Selecione **Lançamentos** (por exemplo, Lançamentos [1]) para exibir uma lista de lançamentos específica.
-      1. Selecione um lançamento específico para mostrar as ações disponíveis.
-      1. Selecione **Promover lançamento** para abrir o assistente.
+     1. Selecione **Lançamentos** (por exemplo, Lançamentos [1]) para exibir uma lista de lançamentos específica.
+     1. Selecione um lançamento específico para mostrar as ações disponíveis.
+     1. Selecione **Promover lançamento** para abrir o assistente.
 
    * o console **Inicializações**:
 
-      1. Selecione o seu lançamento (clique na miniatura).
-      1. Selecione **Promover**.
+     1. Selecione o seu lançamento (clique na miniatura).
+     1. Selecione **Promover**.
 
 1. Na primeira etapa, é possível especificar:
 
    * **Target**
 
-      * **Excluir lançamento após a promoção**
+     * **Excluir lançamento após a promoção**
 
    * **Escopo**
 
-      * **Promover lançamento completo**
-      * **Promover as páginas modificadas**
-      * **Promover a página atual**
-      * **Promover página atual e subpáginas**
+     * **Promover lançamento completo**
+     * **Promover as páginas modificadas**
+     * **Promover a página atual**
+     * **Promover página atual e subpáginas**
 
    Por exemplo, ao selecionar para promover somente as páginas modificadas:
 
@@ -117,19 +135,19 @@ Após criar um lançamento aninhado, você pode promovê-lo de volta para qualqu
 
    * **Target**
 
-      * **Destino da promoção**
-É possível promover para qualquer uma das origens.
+     * **Destino da promoção**
+       É possível promover para qualquer uma das origens.
 
-      * **Excluir inicialização após promoção**
-Após a promoção, a inicialização selecionada e qualquer inicialização aninhada dentro dela será excluída.
+     * **Excluir inicialização após promoção**
+       Após a promoção, a inicialização selecionada e qualquer inicialização aninhada dentro dela será excluída.
 
    * **Escopo**
-Aqui é possível promover toda a inicialização ou somente as páginas que foram editadas. Neste último caso, você pode optar por incluir/excluir subpáginas. A configuração padrão é promover alterações de página somente para a página atual:
+     Aqui é possível promover toda a inicialização ou somente as páginas que foram editadas. Neste último caso, você pode optar por incluir/excluir subpáginas. A configuração padrão é promover alterações de página somente para a página atual:
 
-      * **Promover lançamento completo**
-      * **Promover as páginas modificadas**
-      * **Promover a página atual**
-      * **Promover página atual e subpáginas**
+     * **Promover lançamento completo**
+     * **Promover as páginas modificadas**
+     * **Promover a página atual**
+     * **Promover página atual e subpáginas**
 
    ![Configurações para promover uma inicialização](assets/chlimage_1-105.png)
 

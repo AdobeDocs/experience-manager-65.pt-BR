@@ -1,6 +1,6 @@
 ---
-title: Gerar visualização de HTML5 de um formulário XDP
-description: A guia HTML de visualização no LiveCycle Designer pode ser usada para visualizar formulários conforme eles aparecem em um navegador.
+title: Gerar visualização HTML5 de um formulário XDP
+description: A guia Visualizar HTML no LiveCycle Designer pode ser usada para visualizar formulários conforme eles aparecem em um navegador.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 docset: aem65
@@ -8,20 +8,35 @@ feature: HTML5 Forms,Mobile Forms
 exl-id: 548f302b-57f0-4bdc-8a99-1a4967caa32f
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '781'
+source-wordcount: '807'
 ht-degree: 0%
-
 ---
+# Gerar visualização HTML5 de um formulário XDP{#generate-html-preview-of-an-xdp-form}
 
-# Gerar visualização de HTML5 de um formulário XDP{#generate-html-preview-of-an-xdp-form}
+Ao criar um formulário no AEM Forms Designer, além de visualizar a representação de um formulário no PDF, você também pode visualizar uma representação HTML5 dele. Você pode usar a guia **Visualizar HTML** para visualizar um formulário como ele apareceria em um navegador.
 
-Ao criar um formulário no AEM Forms Designer, além de visualizar a representação em PDF de um formulário, também é possível visualizar uma representação em HTML. Você pode usar a guia **Preview HTML** para visualizar um formulário da maneira que ele aparece em um navegador.
+## Ativar a Visualização do HTML para formulários XDP no Designer {#html-preview-of-forms-in-forms-designer}
 
-## Ativar a Visualização de HTML para formulários XDP no Designer {#html-preview-of-forms-in-forms-designer}
-
-Para permitir que o Designer gere a pré-visualização de HTML de formulários XDP, execute as seguintes configurações:
+Para permitir que o Designer gere a pré-visualização do HTML de formulários XDP, execute as seguintes configurações:
 
 * Configurar o serviço de autenticação do Apache Sling
 * Desativar modo protegido
@@ -37,13 +52,13 @@ Para permitir que o Designer gere a pré-visualização de HTML de formulários 
 
    * AEM Forms no JEE
 
-      * -/content/xfaforms
-      * -/etc/clientlibs
+     * -/content/xfaforms
+     * -/etc/clientlibs
 
    * AEM Forms no OSGi
 
-      * -/content/xfaforms
-      * -/etc/clientlibs/fd/xfaforms
+     * -/content/xfaforms
+     * -/etc/clientlibs/fd/xfaforms
 
    >[!NOTE]
    >
@@ -54,7 +69,7 @@ Para permitir que o Designer gere a pré-visualização de HTML de formulários 
 
 ### Desativar modo protegido {#disable-protected-mode}
 
-O [modo protegido](../../forms/using/get-xdp-pdf-documents-aem.md) está ativado, por padrão. Mantenha-o ativado para os ambientes de produção. Você pode desativá-lo para que um ambiente de desenvolvimento pré-visualize o HTML5 Forms no designer. Execute as seguintes etapas para desativá-la:
+O [modo protegido](../../forms/using/get-xdp-pdf-documents-aem.md) está ativado, por padrão. Mantenha-o ativado para os ambientes de produção. Você pode desativá-lo para que um ambiente de desenvolvimento visualize o HTML5 Forms no designer. Execute as seguintes etapas para desativá-la:
 
 1. Faça logon no AEM Web Console como administrador.
 
@@ -72,16 +87,16 @@ O [modo protegido](../../forms/using/get-xdp-pdf-documents-aem.md) está ativado
    * **URL do servidor**: URL do servidor do AEM Forms.
 
    * **Número da porta HTTP**: porta do servidor AEM. O valor padrão é 4502.
-   * **Contexto de Visualização de HTML:** Caminho do perfil para renderização de formulários XFA. Os perfis padrão a seguir são usados para visualizar o formulário no Designer. Entretanto, também é possível especificar o caminho para um perfil personalizado.
+   * **Contexto de Visualização do HTML:** Caminho do perfil para renderização de formulários XFA. Os perfis padrão a seguir são usados para visualizar o formulário no Designer. Entretanto, também é possível especificar o caminho para um perfil personalizado.
 
-      * `/content/xfaforms/profiles/default.html` (AEM Forms no OSGi)
+     * `/content/xfaforms/profiles/default.html` (AEM Forms no OSGi)
 
-      * `/lc/content/xfaforms/profiles/default.html` (AEM Forms no JEE)
+     * `/lc/content/xfaforms/profiles/default.html` (AEM Forms no JEE)
 
    * **Contexto do Forms Manager:** Caminho de contexto no qual a interface do usuário do Forms Manager é implantada. Os valores padrão são:
 
-      * `/aem/forms` (AEM Forms no OSGi)
-      * `/lc/forms` (AEM Forms no JEE)
+     * `/aem/forms` (AEM Forms no OSGi)
+     * `/lc/forms` (AEM Forms no JEE)
 
    >[!NOTE]
    >
@@ -91,15 +106,15 @@ O [modo protegido](../../forms/using/get-xdp-pdf-documents-aem.md) está ativado
 
    Opções do AEM Forms Designer
 
-1. Para visualizar um formulário no HTML, clique na guia **Preview HTML**.
+1. Para visualizar um formulário no HTML, clique na guia **Visualizar HTML**.
 
    >[!NOTE]
    >
    >
    >
    >
-   >    * Se a guia HTML Preview for fechada, pressione F4 para abrir a guia Preview HTML. Você também pode selecionar Visualizar HTML no menu Exibir para abrir a guia Visualizar HTML.
-   >    * A visualização de HTML não é compatível com documentos de PDF, a visualização de HTML é somente para documentos XDP.
+   >    * Se a guia HTML Preview estiver fechada, pressione F4 para abrir a guia Preview HTML. Você também pode selecionar Visualizar HTML no menu Exibir para abrir a guia Visualizar HTML.
+   >    * A visualização do HTML não é compatível com documentos do PDF, a visualização do HTML é somente para documentos XDP.
    >
    >
 

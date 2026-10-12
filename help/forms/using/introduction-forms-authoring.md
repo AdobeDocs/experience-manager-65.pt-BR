@@ -9,13 +9,29 @@ feature: Adaptive Forms
 exl-id: 935b734c-6fb1-45e8-8515-e98c8b85286c
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '3206'
+source-wordcount: '3202'
 ht-degree: 52%
-
 ---
-
 # Introdução à criação de formulários adaptáveis {#introduction-to-authoring-adaptive-forms}
 
 | Versão | Link do artigo |
@@ -85,12 +101,12 @@ A barra lateral inclui os seguintes navegadores:
 * **Navegador de conteúdo**
 No navegador de conteúdo, é possível ver
 
-   * **Objetos de formulário**
-Mostra a hierarquia de objetos do Formulário. O autor pode navegar até um componente de formulário específico selecionando esse elemento na Árvore de objetos de formulário. O autor pode pesquisar objetos e reorganizá-los a partir dessa árvore.
+  * **Objetos de formulário**
+    Mostra a hierarquia de objetos do Formulário. O autor pode navegar até um componente de formulário específico selecionando esse elemento na Árvore de objetos de formulário. O autor pode pesquisar objetos e reorganizá-los a partir dessa árvore.
 
-   * **Objetos do modelo de dados**
-Permite ver a hierarquia do modelo de formulário.
-Ela permite arrastar e soltar elementos do modelo de formulário no formulário adaptável. Os elementos adicionados são convertidos automaticamente em componentes de formulário, mantendo suas propriedades originais. É possível ver objetos de modelo de dados quando o formulário usa esquema XML, esquema JSON ou modelo XDP.
+  * **Objetos do modelo de dados**
+    Permite ver a hierarquia do modelo de formulário.
+    Ela permite arrastar e soltar elementos do modelo de formulário no formulário adaptável. Os elementos adicionados são convertidos automaticamente em componentes de formulário, mantendo suas propriedades originais. É possível ver objetos de modelo de dados quando o formulário usa esquema XML, esquema JSON ou modelo XDP.
 
 * **Navegador de propriedades**
 
@@ -252,7 +268,7 @@ Ela permite arrastar e soltar elementos do modelo de formulário no formulário 
    <td>Telefone</td>
    <td><p>Adicione um campo para capturar o número de telefone. O componente Telefone permite que os autores configurem um dos seguintes tipos de número de telefone. Cada tipo está associado a uma expressão regular padrão para validação.</p>
     <ul>
-     <li>O tipo Internacional é validado por <code>^[+][0-9]{0,14}$</code>.</li>
+     <li>O tipo Internacional é validado por <code>^[+]&#x200B;[0-9]{0,14}$</code>.</li>
      <li>O tipo USPhoneNumber é validado por <code>{'+1 ('999') '999-9999}</code>.</li>
      <li>O tipo UKPhoneNumber é validado por <code>text{'+'99 999 999 9999}</code>.</li>
      <li>Tipo Personalizado não fornece um padrão de validação modelo. Obtém o valor do último tipo de número de telefone selecionado. Você também pode especificar seu próprio padrão de validação personalizado.</li>
@@ -286,11 +302,11 @@ Algumas práticas recomendadas e pontos principais a serem lembrados ao trabalha
 
 * Você pode modificar a propriedade Título de um componente de formulário adaptável em linha no editor de formulários sem abrir o navegador Propriedades, desde que o título esteja visível no formulário. Para fazer isso:
 
-   1. Selecione para selecionar um componente que tenha uma propriedade **[!UICONTROL Title]** e cuja propriedade **[!UICONTROL Hide title]** esteja desabilitada.
+  1. Selecione para selecionar um componente que tenha uma propriedade **[!UICONTROL Title]** e cuja propriedade **[!UICONTROL Hide title]** esteja desabilitada.
 
-   1. Selecione ![aem_6_3_edit](assets/aem_6_3_edit.png) para tornar o título editável.
+  1. Selecione ![aem_6_3_edit](assets/aem_6_3_edit.png) para tornar o título editável.
 
-   1. Modifique o título e selecione a tecla Return ou selecione qualquer lugar fora do componente para salvar as alterações. Selecione a tecla Esc para descartar as alterações.
+  1. Modifique o título e selecione a tecla Return ou selecione qualquer lugar fora do componente para salvar as alterações. Selecione a tecla Esc para descartar as alterações.
 
 * Alguns componentes de formulário adaptáveis, como Email e Telefone, incluem padrões de validação prontos para uso. No entanto, você pode especificar a validação personalizada atualizando o campo **[!UICONTROL Padrão de Validação]** na opção Padrões nas propriedades do componente. Consulte descrições de componentes na tabela acima para obter mais informações sobre validações padrão.
 
@@ -303,9 +319,9 @@ Algumas práticas recomendadas e pontos principais a serem lembrados ao trabalha
 * Especifique valores para os itens Botão de Opção e Caixa de Seleção no formato `{value}={text}` nas propriedades do componente.
 * O componente de anexo de Arquivo, por padrão, permite que um usuário anexe apenas um arquivo. No entanto, você pode configurar as propriedades do componente para suportar vários anexos. Além disso, se um usuário anexar vários arquivos com o mesmo nome de arquivo, os anexos poderão causar alguns problemas. Portanto, é recomendável associar um identificador exclusivo para cada anexo enviado no envio do formulário. Para fazer isso:
 
-   1. No servidor do AEM Forms, navegue até **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > **[!UICONTROL Console da Web]**.
-   1. Localize e selecione **[!UICONTROL Serviço de Configuração Adaptável do Forms]**.
-   1. Na caixa de diálogo Serviço de Configuração do Forms Adaptive, habilite **[!UICONTROL Tornar os Nomes de Arquivos Exclusivos]**. Por padrão, está desativado.
+  1. No servidor do AEM Forms, navegue até **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Ferramentas]** > **[!UICONTROL Operações]** > **[!UICONTROL Console da Web]**.
+  1. Localize e selecione **[!UICONTROL Serviço de Configuração Adaptável do Forms]**.
+  1. Na caixa de diálogo Serviço de Configuração do Forms Adaptive, habilite **[!UICONTROL Tornar os Nomes de Arquivos Exclusivos]**. Por padrão, está desativado.
 
 * Para permitir que os usuários anexem um PDF usando o navegador Safari, verifique se **application/pdf** foi adicionado à propriedade Tipos de arquivo suportados do componente de anexo de arquivo. Os formulários adaptáveis criados com a versão anterior do AEM Forms podem conter **.pdf** em vez de **application/pdf** na propriedade Tipos de arquivos suportados.
 
@@ -327,15 +343,15 @@ A barra de ferramentas da página na parte superior fornece opções que permite
 
 * **Editar**: permite selecionar outros modos, como: **[!UICONTROL Editar]**, **[!UICONTROL Estilo]**, **[!UICONTROL Desenvolvedor]** e **[!UICONTROL Design]**.
 
-   * **Editar**: permite editar as propriedades do formulário e seus componentes. Por exemplo, adicionar um componente, soltar uma imagem e especificar campos obrigatórios.
-   * **Estilo**: permite estilizar a aparência dos componentes do formulário. Por exemplo, no modo de estilo, é possível selecionar um painel e especificar a cor do plano de fundo.
+  * **Editar**: permite editar as propriedades do formulário e seus componentes. Por exemplo, adicionar um componente, soltar uma imagem e especificar campos obrigatórios.
+  * **Estilo**: permite estilizar a aparência dos componentes do formulário. Por exemplo, no modo de estilo, é possível selecionar um painel e especificar a cor do plano de fundo.
 
-   * **Desenvolvedor**: permite que um desenvolvedor:
+  * **Desenvolvedor**: permite que um desenvolvedor:
 
-      * Descubra que formulários são compostos.
-      * Depure onde e quando está acontecendo, o que, por vezes, ajuda a resolver problemas.
+    * Descubra que formulários são compostos.
+    * Depure onde e quando está acontecendo, o que, por vezes, ajuda a resolver problemas.
 
-   * **Design**. Permitir ativar ou desativar componentes personalizados ou componentes prontos para uso que não estejam listados na Barra lateral.
+  * **Design**. Permitir ativar ou desativar componentes personalizados ou componentes prontos para uso que não estejam listados na Barra lateral.
 
 * **Visualizar**: permite que você visualize a aparência do formulário ao publicá-lo.
 
@@ -388,10 +404,10 @@ A estrutura de conteúdo normalmente contém os seguintes componentes principais
 
 * **guideContainer**: a raiz de um formulário adaptável, que está marcado como **[!UICONTROL Início do formulário adaptável]** na interface do usuário do formulário adaptável. Nesse componente, você pode especificar:
 
-   * *Layout de dispositivo móvel do formulário adaptável*: define a aparência do formulário em dispositivos móveis.
-   * *Página de agradecimento*: define a página para a qual o usuário é redirecionado após enviar o formulário.
-   * *Enviar ação*: define como o formulário é processado no servidor depois que o usuário envia o formulário.
-   * *Estilo*: especifica o caminho para o arquivo CSS usado para personalizar a aparência do formulário.
+  * *Layout de dispositivo móvel do formulário adaptável*: define a aparência do formulário em dispositivos móveis.
+  * *Página de agradecimento*: define a página para a qual o usuário é redirecionado após enviar o formulário.
+  * *Enviar ação*: define como o formulário é processado no servidor depois que o usuário envia o formulário.
+  * *Estilo*: especifica o caminho para o arquivo CSS usado para personalizar a aparência do formulário.
 
 * **rootPanel:** O painel raiz de um formulário adaptável. Ele pode conter sub-painéis sob o nó itens. Cada painel, incluindo o painel raiz, pode ter um layout associado a ele. O layout do painel determina como o formulário é posicionado. Por exemplo, no layout Accordion, seus itens são apresentados como etapas Accordion.
 

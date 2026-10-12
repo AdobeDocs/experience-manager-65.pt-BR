@@ -1,18 +1,32 @@
 ---
 title: Desenvolvimento de proxy [!DNL Assets]
-description: Um proxy é uma instância  [!DNL Experience Manager]  que usa trabalhadores proxy para processar trabalhos. Saiba como configurar um  [!DNL Experience Manager] proxy, operações com suporte, componentes proxy e como desenvolver um trabalhador proxy personalizado.
+description: Um proxy é uma instância [!DNL Experience Manager] que usa trabalhadores proxy para processar trabalhos. Saiba como configurar um proxy do [!DNL Experience Manager], operações com suporte, componentes proxy e como desenvolver um trabalhador proxy personalizado.
 contentOwner: AG
 role: Admin, Developer
 exl-id: 42fff236-b4e1-4f42-922c-97da32a933cf
 solution: Experience Manager, Experience Manager Assets
 feature: Proxy Workers
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: e17747bc-9b7b-44e6-a443-f54229a02620
+    internal-label: Integrations
+subfeature_v2:
+  - id: cf4d26de-6586-4a7a-8ccb-6e8a29ee21ea
+    internal-label: Proxy workers
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '856'
+source-wordcount: '858'
 ht-degree: 0%
-
 ---
-
 # Desenvolvimento de proxy [!DNL Assets] {#assets-proxy-development}
 
 [!DNL Adobe Experience Manager Assets] usa um proxy para distribuir o processamento de determinadas tarefas.
@@ -145,13 +159,13 @@ Para configurar seu próprio trabalhador proxy personalizado, é necessário:
 
 * Configurar e implementar o (usando evento Sling):
 
-   * um tópico de trabalho personalizado
-   * um manipulador de eventos de job personalizado
+  * um tópico de trabalho personalizado
+  * um manipulador de eventos de job personalizado
 
 * Em seguida, use a API JobService para:
 
-   * despachar seu trabalho personalizado para o proxy
-   * gerenciar seu trabalho
+  * despachar seu trabalho personalizado para o proxy
+  * gerenciar seu trabalho
 
 * Se quiser usar o proxy de um fluxo de trabalho, você deve implementar uma etapa externa personalizada usando a API WorkflowExternalProcess e a API JobService.
 

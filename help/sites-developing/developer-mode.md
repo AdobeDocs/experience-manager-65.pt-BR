@@ -10,13 +10,22 @@ exl-id: aef0350f-4d3d-47f4-9c7e-5675efef65d9
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '683'
-ht-degree: 1%
-
+source-wordcount: '707'
+ht-degree: 0%
 ---
-
 # Modo de desenvolvedor{#developer-mode}
 
 Ao editar páginas no Adobe Experience Manager (AEM), vários [modos](/help/sites-authoring/author-environment-tools.md#modestouchoptimizedui) estão disponíveis, incluindo o Modo de desenvolvedor. Isso abre um painel lateral com várias guias que fornecem informações sobre a página atual para um desenvolvedor. As três guias são:
@@ -82,8 +91,8 @@ Isso mostra uma árvore de componentes que:
 * Mostra o tempo computacional do lado do servidor para renderizar o componente.
 * Permite expandir a árvore e selecionar componentes específicos dentro dela. A seleção fornece acesso aos detalhes do componente; como:
 
-   * Caminho do repositório
-   * Links para scripts (acessados no CRXDE Lite)
+  * Caminho do repositório
+  * Links para scripts (acessados no CRXDE Lite)
 
 * Os componentes selecionados (no fluxo de conteúdo, indicados por uma borda azul) serão destacados na árvore de conteúdo (e vice-versa).
 
@@ -99,19 +108,19 @@ Cada entrada de componente pode mostrar (por exemplo):
 
 * **Exibir Detalhes**: um link para uma lista que mostra:
 
-   * todos os scripts de componentes usados para renderizar o componente.
-   * o caminho do conteúdo do repositório para este componente específico.
+  * todos os scripts de componentes usados para renderizar o componente.
+  * o caminho do conteúdo do repositório para este componente específico.
 
   ![chlimage_1-14](assets/chlimage_1-14.png)
 
 * **Editar Script**: um link que:
 
-   * abre o script de componentes no CRXDE Lite.
+  * abre o script de componentes no CRXDE Lite.
 
 * A expansão de uma entrada de componente (ponta de seta) também pode mostrar:
 
-   * A hierarquia no componente selecionado.
-   * Tempos de renderização para o componente selecionado isolado, quaisquer componentes individuais aninhados dentro dele e o total combinado.
+  * A hierarquia no componente selecionado.
+  * Tempos de renderização para o componente selecionado isolado, quaisquer componentes individuais aninhados dentro dele e o total combinado.
 
   ![chlimage_1-15](assets/chlimage_1-15.png)
 

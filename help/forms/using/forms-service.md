@@ -8,34 +8,54 @@ feature: Document Services,Forms Service,PDF Generator
 exl-id: 6580fe6f-3cdb-45ec-8ba3-51dc60d1965e
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: b59c0486-3350-52ed-8816-e0a8e11486b8
+    internal-label: Forms Service
+  - id: b26425d0-6fde-5e02-bfd6-e560e2fa86c9
+    internal-label: PDF Generator
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '685'
+source-wordcount: '687'
 ht-degree: 0%
-
 ---
-
 # Serviço do Forms {#forms-service}
 
 ## Visão geral {#overview}
 
-O serviço Forms permite criar aplicativos cliente de captura de dados interativos que validam, processam, transformam e fornecem formulários que normalmente são criados no Designer. O serviço Forms renderiza como PDF qualquer design de formulário desenvolvido por você.
+O serviço Forms permite criar aplicativos cliente de captura de dados interativos que validam, processam, transformam e fornecem formulários que normalmente são criados no Designer. O serviço Forms renderiza como documentos do PDF qualquer design de formulário que você desenvolve.
 
-O serviço Forms também permite que as organizações estendam seus processos inteligentes de captura de dados, implantando formulários eletrônicos como PDF Adobe. Você também pode usar o serviço para importar e exportar dados de e para PDF forms existentes, respectivamente.
+O serviço Forms também permite que as organizações estendam seus processos inteligentes de captura de dados implantando formulários eletrônicos como PDFs Adobe. Você também pode usar o serviço para importar e exportar dados de e para o PDF forms existente, respectivamente.
 
 Use o serviço Forms para fazer o seguinte:
 
-* Renderiza PDF forms com base no modelo e nos dados XML.
+* Renderize o PDF forms com base no modelo e nos dados XML.
 * Habilite a integração de dados de formulário para importar e extrair dados do PDF forms.
 * Renderizar formulários com base em fragmentos.
 
-## Criar PDF forms  {#creating-pdf-forms-nbsp}
+## Criação do PDF forms  {#creating-pdf-forms-nbsp}
 
-Use o Serviço de formulário para criar PDF forms para captura de dados. Normalmente, você começa com um modelo do AEM Forms Designer. Use a operação `renderPDFForm` (link para Javadoc) do serviço Forms para converter este modelo em um formulário PDF.
+Use o serviço de formulário para criar PDF forms para captura de dados. Normalmente, você começa com um modelo do AEM Forms Designer. Use a operação `renderPDFForm` (link para Javadoc) do serviço Forms para converter este modelo em um formulário do PDF.
 
 O primeiro parâmetro da operação `renderPDFForm` é o nome do arquivo de modelo (por exemplo, `ExpenseClaim.xdp`). Você pode armazenar o arquivo de modelo em um sistema de arquivos local, repositório do CRX ou em um local HTTP ou FTP. Você pode especificar o local do arquivo de modelo definindo a raiz do conteúdo no parâmetro `PDFFormRenderOptions` da operação `renderPDFForm`. Consulte Javadoc para obter detalhes de outras opções que você pode especificar para o parâmetro `PDFFormRenderOptions`.
 
-A operação `renderPDFForm` também pode aceitar dados XML. Os dados XML são mesclados com o modelo ao criar um Formulário de PDF para que o formulário de PDF gerado contenha os dados especificados. O segundo parâmetro da operação `renderPDFForm` pode aceitar um objeto Document (Javadoc) que contenha dados XML.
+A operação `renderPDFForm` também pode aceitar dados XML. Os dados XML são mesclados com o modelo ao criar um formulário do PDF para que o formulário do PDF gerado contenha os dados especificados. O segundo parâmetro da operação `renderPDFForm` pode aceitar um objeto Document (Javadoc) que contenha dados XML.
 
 ## Extração de dados do PDF forms  {#extracting-data-from-pdf-forms-nbsp}
 
@@ -43,7 +63,7 @@ Use a operação `exportData` (Javadoc) do serviço Forms para extrair dados XML
 
 ## Importação de dados para o PDF forms {#importing-data-into-pdf-forms}
 
-O serviço Forms também permite mesclar um formulário PDF criado com o AEM Forms Designer ou a operação `renderPDFForm` com dados XML. A operação `importData` (Javadoc) do serviço Forms aceita o formulário PDF e os dados XML e retorna um formulário PDF com dados XML.
+O serviço Forms também permite mesclar um formulário do PDF criado com o AEM Forms Designer ou a operação `renderPDFForm` com dados XML. A operação `importData` (Javadoc) do serviço Forms aceita o formulário PDF e os dados XML e retorna um formulário PDF com dados XML.
 
 ## Renderização de formulários com base em fragmentos {#rendering-forms-based-on-fragments}
 

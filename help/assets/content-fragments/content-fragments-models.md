@@ -5,13 +5,25 @@ feature: Content Fragments
 role: User
 exl-id: 6fd1fdb2-d1d3-4f97-b119-ecfddcccec9e
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 73ec9a0420206ef2cc60a12d316073a443c1d20d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: a45b1e7f-e65f-4cd3-be86-5cec5d9449ef
+    internal-label: Content management
+subfeature_v2:
+  - id: b7f5d1e0-aa2f-4a55-83f4-c2b35a8bd3a7
+    internal-label: Content fragments
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2326'
-ht-degree: 65%
-
+source-wordcount: '2348'
+ht-degree: 63%
 ---
-
 # Modelos de fragmentos de conteúdo {#content-fragment-models}
 
 Os modelos de fragmento de conteúdo no AEM definem a estrutura do conteúdo para os seus [fragmentos de conteúdo](/help/assets/content-fragments/content-fragments.md), servindo como base para o seu conteúdo headless.
@@ -76,14 +88,14 @@ O modelo de fragmento de conteúdo define efetivamente a estrutura dos fragmento
 
    * Depois que um campo é adicionado ao modelo, o painel direito mostra as **Propriedades** que podem ser definidas para esse tipo de dados específico. Aqui é possível definir o que é necessário para esse campo.
 
-      * Muitas propriedades são autoexplicativas. Para obter mais detalhes, consulte [Propriedades](#properties).
-      * Digitar um **Rótulo de Campo** preenche automaticamente o **Nome da Propriedade**, se estiver vazio, e pode ser atualizado manualmente posteriormente.
+     * Muitas propriedades são autoexplicativas. Para obter mais detalhes, consulte [Propriedades](#properties).
+     * Digitar um **Rótulo de Campo** preenche automaticamente o **Nome da Propriedade**, se estiver vazio, e pode ser atualizado manualmente posteriormente.
 
-        >[!CAUTION]
-        >
-        >Ao atualizar manualmente a propriedade **Nome da Propriedade** para um tipo de dados, os nomes devem conter somente caracteres latinos (A-Z, a-z), dígitos numéricos (0-9) e o underline (&quot;_&quot;) como caractere especial.
-        >
-        >Se os modelos criados em versões anteriores do AEM contiverem caracteres ilegais, remova ou atualize esses caracteres.
+       >[!CAUTION]
+       >
+       >Ao atualizar manualmente a propriedade **Nome da Propriedade** para um tipo de dados, os nomes devem conter somente caracteres latinos (A-Z, a-z), dígitos numéricos (0-9) e o underline (&quot;_&quot;) como caractere especial.
+       >
+       >Se os modelos criados em versões anteriores do AEM contiverem caracteres ilegais, remova ou atualize esses caracteres.
 
      Por exemplo:
 
@@ -106,40 +118,40 @@ O modelo de fragmento de conteúdo define efetivamente a estrutura dos fragmento
 Uma variedade de tipos de dados está disponível para a definição do seu modelo:
 
 * **Texto em linha única**
-   * Adicionar um ou mais campos de uma única linha de texto; o comprimento máximo pode ser definido
+  * Adicionar um ou mais campos de uma única linha de texto; o comprimento máximo pode ser definido
 * **Texto multilinha**
-   * Uma área de texto que pode ser Rich Text, Texto sem formatação ou Markdown
+  * Uma área de texto que pode ser Rich Text, Texto sem formatação ou Markdown
 * **Número**
-   * Adicionar um ou mais campos numéricos
+  * Adicionar um ou mais campos numéricos
 * **Booleano**
-   * Adicionar uma caixa de seleção booleana
+  * Adicionar uma caixa de seleção booleana
 * **Data e hora**
-   * Adicionar uma data e/ou hora
+  * Adicionar uma data e/ou hora
 * **Enumeração**
-   * Adicionar um conjunto de caixas de seleção, botões de opção ou campos suspensos
+  * Adicionar um conjunto de caixas de seleção, botões de opção ou campos suspensos
 * **Tags**
-   * Permite que os autores de fragmentos acessem e selecionem áreas de tags
+  * Permite que os autores de fragmentos acessem e selecionem áreas de tags
 * **Referência de conteúdo**
-   * Faz referência a outros conteúdos, de qualquer tipo; pode ser usado para [criar conteúdo aninhado](#using-references-to-form-nested-content)
-   * Se uma imagem for referenciada, você pode optar por mostrar uma miniatura
+  * Faz referência a outros conteúdos, de qualquer tipo; pode ser usado para [criar conteúdo aninhado](#using-references-to-form-nested-content)
+  * Se uma imagem for referenciada, você pode optar por mostrar uma miniatura
 * **Referência do fragmento**
-   * Faz referência a outros fragmentos de conteúdo; pode ser usado para [criar conteúdo aninhado](#using-references-to-form-nested-content)
-   * O tipo de dados pode ser configurado para permitir que os autores de fragmento:
-      * Editem o fragmento referenciado diretamente.
-      * Crie um fragmento de conteúdo, com base no modelo apropriado
+  * Faz referência a outros fragmentos de conteúdo; pode ser usado para [criar conteúdo aninhado](#using-references-to-form-nested-content)
+  * O tipo de dados pode ser configurado para permitir que os autores de fragmento:
+    * Editem o fragmento referenciado diretamente.
+    * Crie um fragmento de conteúdo, com base no modelo apropriado
 * **Objeto JSON**
-   * Permite que o autor do fragmento de conteúdo insira a sintaxe JSON nos elementos correspondentes de um fragmento.
-      * Para permitir que o AEM armazene o JSON direto que você copiou e colou de outro serviço.
-      * O JSON será transmitido e emitido como JSON no GraphQL.
-      * Inclui o realce da sintaxe JSON, o preenchimento automático e o realce de erros no editor de fragmentos de conteúdo.
+  * Permite que o autor do fragmento de conteúdo insira a sintaxe JSON nos elementos correspondentes de um fragmento.
+    * Para permitir que o AEM armazene o JSON direto que você copiou e colou de outro serviço.
+    * O JSON será transmitido e emitido como JSON no GraphQL.
+    * Inclui o realce da sintaxe JSON, o preenchimento automático e o realce de erros no editor de fragmentos de conteúdo.
 * **Espaço reservado da guia**
-   * Permite a introdução de guias para uso ao editar o conteúdo do fragmento de conteúdo.
-Isso é mostrado como um divisor no editor de modelo, separando seções da lista de tipos de dados de conteúdo. Cada instância representa o início de uma nova guia.
-No editor de fragmentos, cada instância aparece como uma guia.
+  * Permite a introdução de guias para uso ao editar o conteúdo do fragmento de conteúdo.
+    Isso é mostrado como um divisor no editor de modelo, separando seções da lista de tipos de dados de conteúdo. Cada instância representa o início de uma nova guia.
+    No editor de fragmentos, cada instância aparece como uma guia.
 
-     >[!NOTE]
-     >
-     >Esse tipo de dados é usado apenas para formatação e é ignorado pelo esquema GraphQL do AEM.
+    >[!NOTE]
+    >
+    >Esse tipo de dados é usado apenas para formatação e é ignorado pelo esquema GraphQL do AEM.
 
 ## Propriedades {#properties}
 
@@ -161,13 +173,13 @@ As várias opções para realizar/renderizar o campo em um fragmento. Geralmente
 Inserir um **Rótulo de Campo** gera automaticamente um **Nome de Propriedade**, que pode ser atualizado manualmente, se necessário.
 
 * **Validação**
-A validação básica está disponível por meio de mecanismos como a propriedade **Obrigatório**. Alguns tipos de dados têm campos de validação adicionais. Consulte [Validação](#validation) para obter mais detalhes.
+A validação básica está disponível por mecanismos como a propriedade **Required**. Alguns tipos de dados têm campos de validação adicionais. Consulte [Validação](#validation) para obter mais detalhes.
 
 * No tipo de dados **Texto multilinha**, é possível definir o **Tipo padrão** como:
 
-   * **Rich Text**
-   * **Markdown**
-   * **Texto sem formatação**
+  * **Rich Text**
+  * **Markdown**
+  * **Texto sem formatação**
 
   Se não for especificado, o valor padrão **Rich Text** é usado para esse campo.
 
@@ -205,32 +217,32 @@ O conteúdo (para o campo específico) deve ser exclusivo em todos os fragmentos
 Vários tipos de dados agora incluem a possibilidade de definir requisitos de validação para quando o conteúdo é inserido no fragmento resultante:
 
 * **Texto em linha única**
-   * Comparar com uma expressão regular predefinida.
+  * Comparar com uma expressão regular predefinida.
 * **Número**
-   * Verificar valores específicos.
+  * Verificar valores específicos.
 * **Referência de conteúdo**
-   * Testar tipos específicos de conteúdo.
-   * Somente ativos de tamanho de arquivo especificado ou menores podem ser referenciados.
-   * Somente imagens dentro de um intervalo predefinido de largura e/ou altura (em pixels) podem ser referenciadas.
+  * Testar tipos específicos de conteúdo.
+  * Somente ativos de tamanho de arquivo especificado ou menores podem ser referenciados.
+  * Somente imagens dentro de um intervalo predefinido de largura e/ou altura (em pixels) podem ser referenciadas.
 * **Referência do fragmento**
-   * Testar um modelo de fragmento de conteúdo específico.
+  * Testar um modelo de fragmento de conteúdo específico.
 
 ## Usar referências para formar conteúdo aninhado {#using-references-to-form-nested-content}
 
 Os fragmentos de conteúdo podem formar conteúdo aninhado, usando um dos seguintes tipos de dados:
 
 * **[Referência de conteúdo](#content-reference)**
-   * Fornece uma referência simples a outro conteúdo, de qualquer tipo.
-   * Ele pode ser configurado para uma referência ou várias referências (no fragmento resultante).
+  * Fornece uma referência simples a outro conteúdo, de qualquer tipo.
+  * Ele pode ser configurado para uma referência ou várias referências (no fragmento resultante).
 
 * **[Referência de fragmento](#fragment-reference-nested-fragments)** (fragmentos aninhados)
-   * Faz referência a outros fragmentos, dependendo dos modelos especificados.
-   * Permite incluir/recuperar dados estruturados.
+  * Faz referência a outros fragmentos, dependendo dos modelos especificados.
+  * Permite incluir/recuperar dados estruturados.
 
-     >[!NOTE]
-     >
-     >Este método é especialmente interessante com a [Entrega de conteúdo headless usando fragmentos de conteúdo com o GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
-   * Ele pode ser configurado para uma referência ou várias referências (no fragmento resultante).
+    >[!NOTE]
+    >
+    >Este método é especialmente interessante com a [Entrega de conteúdo headless usando fragmentos de conteúdo com o GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
+  * Ele pode ser configurado para uma referência ou várias referências (no fragmento resultante).
 
 >[!NOTE]
 >
@@ -252,8 +264,8 @@ Além das propriedades padrão, é possível especificar:
 * Os tipos de conteúdo que podem ser referenciados
 * Limitações para tamanhos de arquivo
 * Se uma imagem for referenciada:
-   * Mostrar miniatura
-   * Restrições de altura e largura da imagem
+  * Mostrar miniatura
+  * Restrições de altura e largura da imagem
 
 ![Referência de conteúdo](assets/cfm-content-reference.png)
 
@@ -264,7 +276,7 @@ A referência do fragmento faz referência a um ou mais fragmentos de conteúdo.
 Por exemplo:
 
 * Um modelo que define os detalhes de um funcionário. Isso inclui:
-   * Uma referência ao modelo que define o empregador (empresa)
+  * Uma referência ao modelo que define o empregador (empresa)
 
 ```xml
 type EmployeeModel {
@@ -288,9 +300,9 @@ Além das propriedades padrão, você pode definir:
 
 * **Renderizar como**:
 
-   * **multifield** — o autor do fragmento pode criar várias referências individuais
+  * **multifield** — o autor do fragmento pode criar várias referências individuais
 
-   * **fragmentreference** — permite que o autor do fragmento selecione uma única referência a um fragmento
+  * **fragmentreference** — permite que o autor do fragmento selecione uma única referência a um fragmento
 
 * **Tipo de modelo**
 Vários modelos podem ser selecionados. Ao criar o fragmento de conteúdo, qualquer fragmento referenciado deve ter sido criado usando esses modelos.
@@ -302,7 +314,7 @@ Especifica um caminho raiz para qualquer fragmento referenciado.
 
   Isso permite que o autor do fragmento crie um fragmento com base no modelo apropriado.
 
-   * **fragmentreferencecomposite** — permite que o autor do fragmento crie uma composição ao selecionar vários fragmentos
+  * **fragmentreferencecomposite** — permite que o autor do fragmento crie uma composição ao selecionar vários fragmentos
 
   ![Referência do fragmento](assets/cfm-fragment-reference.png)
 
@@ -342,8 +354,8 @@ Um modelo também pode ser desativado para que:
 
 * O modelo não fique mais disponível como base para a criação de *novos* fragmentos de conteúdo.
 * No entanto:
-   * O esquema do GraphQL continua sendo gerado e ainda pode ser consultado (para evitar impacto na API JSON).
-   * Quaisquer fragmentos de conteúdo baseados no modelo ainda podem ser consultados e retornados a partir do ponto de acesso do GraphQL.
+  * O esquema do GraphQL continua sendo gerado e ainda pode ser consultado (para evitar impacto na API JSON).
+  * Quaisquer fragmentos de conteúdo baseados no modelo ainda podem ser consultados e retornados a partir do ponto de acesso do GraphQL.
 * O modelo não pode mais ser referenciado, mas as referências existentes são mantidas e ainda podem ser consultadas e retornadas a partir do ponto de acesso do GraphQL.
 
 Para desabilitar um Modelo que esteja sinalizado como **Habilitado**, use a opção **Desabilitar**:
@@ -440,7 +452,7 @@ O status publicado é indicado no console.
 É possível editar as **Propriedades** de um modelo do fragmento de conteúdo:
 
 * **Básico**
-   * **Título do modelo**
-   * **Tags**
-   * **Descrição**
-   * **Fazer upload de imagem**
+  * **Título do modelo**
+  * **Tags**
+  * **Descrição**
+  * **Fazer upload de imagem**

@@ -7,13 +7,24 @@ feature: Asset Management,Search
 exl-id: d6f815b5-e4fc-4f8c-a6c1-9e50035ab9f2
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+  - id: 74ec00bc-0862-520e-86dc-e377aeccc141
+    internal-label: Search
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '813'
 ht-degree: 2%
-
 ---
-
 # Organize seus ativos digitais {#organize-digital-assets}
 
 | Versão | Link do artigo |
@@ -32,15 +43,15 @@ A maneira mais básica de organizar ativos é salvá-los em pastas. É análogo 
 * Normalmente, o repositório de ativos digitais está sempre crescendo. Portanto, é importante formalizar o uso de metadados, a estrutura de pastas e a nomenclatura de arquivos no início do ciclo de criação de conteúdo.
 * Use pastas somente para impor uma estrutura de armazenamento consistente para seus ativos digitais. Essa consistência ajuda a processar e gerenciar melhor seus ativos. Por exemplo, os ativos colocados nos seguintes tipos de pastas podem ajudar você a usar os [perfis apropriados para o processamento de ativos](processing-profiles.md):
 
-   * **Pastas de desenvolvimento**: contém ativos digitais nos quais você está trabalhando atualmente.
-   * **Pastas do cliente**: contém ativos digitais com base em clientes ou nomes de projeto.
-   * **Pastas primárias**: contém ativos digitais originais e de origem.
-   * **Pastas de representação**: contém representações e cópias dos ativos digitais originais e de origem.
-   * **Pastas de Tamanho de Arquivo**: contém ativos digitais baseados em arquivos pequenos, médios ou grandes.
-   * **Pastas de preparo**: contém ativos digitais que estão prontos para serem publicados em tempo real no seu site.
-   * **pastas do tipo MIME**: contém ativos digitais específicos para tipos MIME, como imagens, documentos e multimídia.
-   * **Arquivar pastas**: contém ativos digitais desativados.
-   * **Pastas baseadas em data**: contém ativos digitais com base em uma data de criação ou uma data da última modificação.
+  * **Pastas de desenvolvimento**: contém ativos digitais nos quais você está trabalhando atualmente.
+  * **Pastas do cliente**: contém ativos digitais com base em clientes ou nomes de projeto.
+  * **Pastas primárias**: contém ativos digitais originais e de origem.
+  * **Pastas de representação**: contém representações e cópias dos ativos digitais originais e de origem.
+  * **Pastas de Tamanho de Arquivo**: contém ativos digitais baseados em arquivos pequenos, médios ou grandes.
+  * **Pastas de preparo**: contém ativos digitais que estão prontos para serem publicados em tempo real no seu site.
+  * **pastas do tipo MIME**: contém ativos digitais específicos para tipos MIME, como imagens, documentos e multimídia.
+  * **Arquivar pastas**: contém ativos digitais desativados.
+  * **Pastas baseadas em data**: contém ativos digitais com base em uma data de criação ou uma data da última modificação.
 
 * Crie um diretório de pastas que provavelmente não serão alteradas para que qualquer personalização ou automação continue a funcionar. Por exemplo, os perfis de processamento atribuídos continuam a funcionar.
 * Se um ativo já estiver publicado, você usará o [!DNL Experience Manager] para movê-lo para outra pasta e republicar de seu novo local, o local original do ativo publicado ainda estará disponível, juntamente com o ativo recém-republicado. No entanto, o ativo original publicado está *perdido* para [!DNL Experience Manager] e não pode ter sua publicação desfeita. Portanto, como prática recomendada, primeiro cancele a publicação de um ativo e, em seguida, mova-o para uma pasta diferente.

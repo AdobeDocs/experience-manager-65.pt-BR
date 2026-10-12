@@ -9,13 +9,22 @@ exl-id: 292874bf-2ee6-4638-937c-f8f26c93ca65
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '475'
+source-wordcount: '500'
 ht-degree: 0%
-
 ---
-
 # Personalização de exibições das propriedades da página{#customizing-views-of-page-properties}
 
 Cada página tem um conjunto de [propriedades](/help/sites-authoring/editing-page-properties.md) que podem ser visualizadas e editadas pelos usuários. Algumas são necessárias ao criar a página (criar exibição), outras podem ser visualizadas e editadas (editar exibição) em um estágio posterior. Essas propriedades de página são definidas e disponibilizadas pela caixa de diálogo ( `cq:dialog`) do componente de página apropriado.
@@ -34,13 +43,13 @@ Os campos devem ser configurados especificamente se qualquer alteração for nec
 
 * Propriedade da página a ser disponibilizada no modo de exibição de criação (por exemplo, assistente **Criar Página**):
 
-   * Nome: `cq:showOnCreate`
-   * Tipo: `Boolean`
+  * Nome: `cq:showOnCreate`
+  * Tipo: `Boolean`
 
 * Propriedade da página a ser disponibilizada no modo de edição (por exemplo, **Modo de Exibição**/**Editar**) **Propriedades** opção):
 
-   * Nome: `cq:hideOnEdit`
-   * Tipo: `Boolean`
+  * Nome: `cq:hideOnEdit`
+  * Tipo: `Boolean`
 
 Por exemplo, consulte as configurações para campos agrupados em **Mais Títulos e Descrição** na guia **Básico** para o componente de Página de base. Estes estão visíveis no assistente **Criar página**, pois `cq:showOnCreate` foi definido como `true`:
 
@@ -95,7 +104,7 @@ Por exemplo, por padrão, o assistente [**Criar página**](/help/sites-authoring
 1. Aplique a propriedade do nó apropriada:
 
    * **Nome**: `cq:showOnCreate`
-   * **Tipo**: `Boolean`
+   * **Tipo**: `Boolean`
    * **Valor**: `false`
 
    A seção **Mais Títulos e Descrição** não será mais exibida no assistente **Criar Página**.

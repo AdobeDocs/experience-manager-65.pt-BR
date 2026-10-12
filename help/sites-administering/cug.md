@@ -10,13 +10,25 @@ exl-id: 9efba91d-45e8-42e1-9db6-490d21bf7412
 solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
-source-git-commit: 6f3c4f4aa4183552492c6ce5039816896bd67495
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '710'
+source-wordcount: '780'
 ht-degree: 1%
-
 ---
-
 # Criação de um grupo fechado de usuários{#creating-a-closed-user-group}
 
 Grupos de usuários fechados (CUGs) são usados para limitar o acesso a páginas específicas que residem em um site da Internet publicado. Essas páginas exigem que os membros atribuídos façam logon e forneçam credenciais de segurança.
@@ -43,7 +55,7 @@ Para configurar essa área no seu site, você:
 
 Para criar um grupo de usuários fechado:
 
-1. Vá para **Ferramentas - Segurança** na tela inicial do AEM.
+1. Acesse **Ferramentas - Segurança** na tela inicial do AEM.
 
    >[!NOTE]
    >
@@ -81,7 +93,7 @@ Para aplicar o CUG a uma ou mais páginas:
    1. Ative a caixa de seleção **Habilitar**.
 
    1. Adicione o caminho à sua **Página de Logon**.
-Isso é opcional; se deixado em branco, a página de logon padrão será usada.
+      Isso é opcional; se deixado em branco, a página de logon padrão será usada.
 
    ![CUG adicionado](assets/cug-authentication-requirement.png)
 
@@ -93,7 +105,7 @@ Isso é opcional; se deixado em branco, a página de logon padrão será usada.
    >
    >Observe que os CUGs na guia Permissões não podem ser implantados em Live Copies de blueprints. Planeje isso ao configurar a Live Copy.
    >
-   >Para obter mais informações, consulte [Grupos de usuários fechados no AEM - Livecopy](closed-user-groups.md#aem-livecopy).
+   >Para obter mais informações, consulte [Grupos de usuários fechados na AEM - Livecopy](closed-user-groups.md#aem-livecopy).
 
 1. A caixa de diálogo **Editar Grupo de Usuários Fechado** é aberta. Aqui você pode pesquisar e selecionar seu CUG, e confirmar a seleção do grupo com **Salvar**.
 

@@ -9,20 +9,24 @@ exl-id: dbe81ead-dfaa-4af0-9b66-a14917a1bcc7
 solution: Experience Manager
 feature: Mobile
 role: User
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '430'
 ht-degree: 0%
-
 ---
-
 # Ações de Criação e Configuração de Aplicativo{#application-create-and-configuration-actions}
 
 {{ue-over-mobile}}
 
 ## Criação de um aplicativo sob demanda {#creating-an-on-demand-application}
 
-A criação de um aplicativo geralmente é o primeiro passo para a criação e o gerenciamento de conteúdo AEM Mobile On-Demand e geralmente é realizada no nível do Administrador do AEM. Ele representa um shell de conteúdo, visualizável em dispositivos móveis, pronto para exibir conteúdo criado pelo autor, como artigos, imagens e coleções.
+A criação de um aplicativo geralmente é o primeiro passo para a criação e o gerenciamento de conteúdo AEM Mobile On-Demand e geralmente é realizada no nível do administrador do AEM. Ele representa um shell de conteúdo, visualizável em dispositivos móveis, pronto para exibir conteúdo criado pelo autor, como artigos, imagens e coleções.
 
 Os detalhes do aplicativo podem ser exibidos no Painel ou no AEM Mobile Control Center.
 
@@ -74,9 +78,9 @@ Depois de conhecer a criação de um aplicativo sob demanda e, portanto, associa
 * [Gerenciamento de banners](/help/mobile/mobile-on-demand-managing-banners.md)
 * [Gerenciar coleções](/help/mobile/mobile-on-demand-managing-collections.md)
 * [Upload de recursos compartilhados](/help/mobile/mobile-on-demand-shared-resources.md)
-* [Publish - Cancelar publicação de conteúdo](/help/mobile/mobile-on-demand-publishing-unpublishing.md)
+* [Publicar e desfazer publicação de conteúdo](/help/mobile/mobile-on-demand-publishing-unpublishing.md)
 
 Para saber mais sobre as funções e responsabilidades de um Administrador e Desenvolvedor, consulte os recursos abaixo:
 
-* [Desenvolvimento de conteúdo AEM para AEM Mobile On-demand Services](/help/mobile/aem-mobile-on-demand.md)
+* [Desenvolvimento de conteúdo do AEM para o AEM Mobile On-demand Services](/help/mobile/aem-mobile-on-demand.md)
 * [Administração de conteúdo para usar o AEM Mobile On-demand Services](/help/mobile/aem-mobile.md)

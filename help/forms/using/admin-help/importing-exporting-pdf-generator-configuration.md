@@ -1,6 +1,6 @@
 ---
-title: Importação e exportação de arquivos de configuração de PDF Generator
-description: Saiba como importar e exportar arquivos de configuração de PDF Generator.
+title: Importação e exportação de arquivos de configuração do PDF Generator
+description: Saiba como importar e exportar arquivos de configuração do PDF Generator.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
@@ -9,24 +9,35 @@ feature: PDF Generator
 exl-id: b363b23a-29bb-4ea4-a8f2-5ba9fe3c7b27
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: b26425d0-6fde-5e02-bfd6-e560e2fa86c9
+    internal-label: PDF Generator
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '390'
 ht-degree: 0%
-
 ---
-
-# Importação e exportação de arquivos de configuração de PDF Generator {#importing-and-exporting-pdf-generator-configuration-files}
+# Importação e exportação de arquivos de configuração do PDF Generator {#importing-and-exporting-pdf-generator-configuration-files}
 
 >[!NOTE]
 > 
 > Verifique se o usuário tem privilégios de administrador para acessar o console do administrador.
 
-O arquivo de configuração contém as informações de conversão de PDF Generator, incluindo PDF, tipo de arquivo e configurações de segurança.
+O arquivo de configuração contém as informações de conversão do PDF Generator, incluindo o PDF, o tipo de arquivo e as configurações de segurança.
 
 >[!NOTE]
 >
->Não é possível alterar a configuração de tempo limite para o PDF Generator importando um arquivo nativo2pdfconfig.xml personalizado. A configuração de tempo limite nesse arquivo é apenas para fins informativos e exibe a configuração atual no PDF Generator. Para alterar a configuração de tempo limite, consulte &quot;Definindo parâmetros de desempenho de PDF Generator&quot; em [Instalando e implantando formulários AEM](https://www.adobe.com/go/learn_aemforms_installJBoss_63).
+>Não é possível alterar a configuração de tempo limite do PDF Generator importando um arquivo nativo2pdfconfig.xml personalizado. A configuração de tempo limite nesse arquivo é apenas para fins informativos e exibe a configuração atual no PDF Generator. Para alterar a configuração de tempo limite, consulte &quot;Definindo parâmetros de desempenho do PDF Generator&quot; em [Instalando e implantando formulários do AEM](https://www.adobe.com/go/learn_aemforms_installJBoss_63).
 
 ## Exportar seu arquivo de configuração atual {#export-your-current-configuration-file}
 
@@ -52,7 +63,7 @@ O arquivo de configuração contém as informações de conversão de PDF Genera
 
 ## Converter todas as camadas dentro de arquivos do AutoCAD {#convert-all-layers-within-autocad-files}
 
-Por padrão, o PDF Generator converte somente a camada padrão dos arquivos do AutoCAD em PDF, em vez de todas as camadas do arquivo. Para converter todas as camadas, siga este procedimento.
+Por padrão, o PDF Generator converte somente a camada padrão dos arquivos do AutoCAD para o PDF, em vez de todas as camadas do arquivo. Para converter todas as camadas, siga este procedimento.
 
 1. No console de administração, clique em Serviços > PDF Generator > Arquivos de configuração > Exportar configuração.
 1. Selecione Baixar toda a configuração e clique em Baixar.
@@ -62,7 +73,7 @@ Por padrão, o PDF Generator converte somente a camada padrão dos arquivos do A
 
    Todos os arquivos do AutoCAD convertidos com o arquivo de configuração modificado terão todas as camadas convertidas.
 
-## Redefina sua configuração para as configurações originais instaladas com o PDF Generator {#reset-your-configuration-to-the-original-settings-installed-with-pdf-generator}
+## Redefina suas configurações para as configurações originais instaladas com o PDF Generator {#reset-your-configuration-to-the-original-settings-installed-with-pdf-generator}
 
 1. No console de administração, clique em Serviços > PDF Generator > Arquivos de configuração > Importar configuração.
 1. Selecione Redefinir configuração para configurações padrão e clique em Importar.

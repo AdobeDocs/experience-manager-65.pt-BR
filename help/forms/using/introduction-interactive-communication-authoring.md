@@ -9,13 +9,29 @@ feature: Interactive Communication
 exl-id: 3d15a723-df6c-4b4a-992e-a6636f4cf3dc
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: aa28c6c8-3ede-445b-a351-eeb0c9f9aec4
+    internal-label: Interactive Communication
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1316'
 ht-degree: 10%
-
 ---
-
 # Introdução à interface de criação da comunicação interativa{#introduction-to-interactive-communication-authoring-ui}
 
 A interface de usuário para criação da [Comunicação Interativa](/help/forms/using/interactive-communications-overview.md) é intuitiva e fornece o seguinte para criação de canais de impressão e da Web da Comunicação Interativa:
@@ -58,43 +74,43 @@ No navegador de conteúdo, é possível ver a hierarquia de objetos do documento
 * **Navegador de propriedades**
 
   Permite editar as propriedades de um componente. As propriedades mudam de acordo com o componente. Por exemplo, para ver as propriedades do contêiner de documento:
-Selecione um componente, selecione ![nível do campo](assets/field-level.png) > **Contêiner de Documentos** e selecione ![cmppr](assets/cmppr.png).
+  Selecione um componente, selecione ![nível do campo](assets/field-level.png) > **Contêiner de Documentos** e selecione ![cmppr](assets/cmppr.png).
 
 * **Navegador Assets**
 Segrega diferentes tipos de conteúdo, como fragmentos de layout, imagens, documentos, páginas e vídeos. O autor pode arrastar e soltar ativos na Comunicação interativa.
 
 * **Navegador de componentes**
-Includes components that you can use to build the print and web channels of a document. You can drag components to the Interactive Communication to add elements, and configure added element as per the requirements. The following table describes the components listed in Components browser for print and web channels:
+Inclui componentes que você pode usar para criar os canais de impressão e da Web de um documento. Você pode arrastar os componentes para a Comunicação interativa para adicionar elementos e configurar os elementos adicionados de acordo com os requisitos. A tabela a seguir descreve os componentes listados no navegador Componentes para canais de impressão e da Web:
 
-| **Componente** | **Print Channel** | **Web Channel** | **Functionality** |
+| **Componente** | **Canal de impressão** | **Canal da Web** | **Funcionalidade** |
 |---|---|---|---|
-| Gráfico | ✓ | ✓ | Adds a chart that you can use in an Interactive Communication for visual representation of two-dimensional data retrieved from a form data model collection item. |
-| Fragmento do documento | ✓ | ✓ | Lets you add a reusable component, text, list, or condition, to an Interactive Communication. The reusable component you add to an Interactive Communication could be either form data model-based or without a form data model. |
-| Imagem | ✓ | ✓ | Lets you insert an image. |
-| Painel | - | ✓ | The Panel component is a placeholder for grouping other components together and controls how a group of components are laid out in an Interactive Communication. A panel component also lets you make a group of components repeatable for the end user, such as in multiple entries required for filling in educational credentials. It is also a good practice to use a panel each for a tab of an Interactive Communication with multiple tabs. |
+| Gráfico | ✓ | ✓ | Adiciona um gráfico que pode ser usado em uma Comunicação interativa para representação visual de dados bidimensionais recuperados de um item de coleção de modelo de dados de formulário. |
+| Fragmento do documento | ✓ | ✓ | Permite adicionar um componente, texto, lista ou condição reutilizáveis a uma comunicação interativa. O componente reutilizável adicionado a uma comunicação interativa pode ser baseado em modelo de dados de formulário ou sem um modelo de dados de formulário. |
+| Imagem | ✓ | ✓ | Permite inserir uma imagem. |
+| Painel | - | ✓ | O componente Painel é um espaço reservado para agrupar outros componentes e controla como um grupo de componentes é apresentado em uma Comunicação interativa. Um componente do painel também permite fazer com que um grupo de componentes seja repetível para o usuário final, como em várias entradas necessárias para preencher credenciais educacionais. Também é uma boa prática usar um painel para cada guia de uma comunicação interativa com várias guias. |
 | Tabela | &#42; | ✓ | Adiciona uma tabela que permite organizar dados em linhas e colunas. |
-| Área de destino | &#42;&#42; | ✓ | Inserts a target area in a web channel to organize the web-channel-specific components. |
-| Texto | - | ✓ | Adds text to the web channel of an Interactive Communication. Text can use form data model objects to make the content dynamic. |
+| Área de destino | &#42;&#42; | ✓ | Insere uma área de destino em um canal da Web para organizar os componentes específicos do canal da Web. |
+| Texto | - | ✓ | Adiciona texto ao canal da Web de uma Comunicação interativa. O texto pode usar objetos de modelo de dados de formulário para tornar o conteúdo dinâmico. |
 
-&#42; Use Layout Fragments in the Print channel to add tables.
+&#42; Use fragmentos de layout no canal de impressão para adicionar tabelas.
 
-&#42;&#42; In the Print channel, target areas are predefined in the XDP/print template. You cannot add new target areas using the Interactive Communication authoring UI.
+&#42;&#42; No canal de impressão, as áreas de destino são predefinidas no modelo XDP/impressão. Não é possível adicionar novas áreas de destino usando a interface de criação da Comunicação interativa.
 
-* **Data Sources Browser**
-Data Sources Browser displays the available data sources in the form data model you selected while creating the Interactive Communication.
+* **Navegador de Fontes de Dados**
+O Navegador de fontes de dados exibe as fontes de dados disponíveis no modelo de dados de formulário selecionado ao criar a Comunicação interativa.
 
-### Key points for working with components {#key-points-for-working-with-components}
+### Pontos principais para trabalhar com componentes {#key-points-for-working-with-components}
 
-Key points when working with interactive communication components are as follows:
+Os principais pontos ao trabalhar com componentes de comunicação interativa são os seguintes:
 
-* Each component has associated properties that control its appearance and functionality. To configure the properties of a component, select the component and select ![cmppr](assets/cmppr.png) to open the component properties in the Properties browser.
+* Cada componente tem propriedades associadas que controlam sua aparência e funcionalidade. Para configurar as propriedades de um componente, selecione o componente e selecione ![cmppr](assets/cmppr.png) para abrir as propriedades do componente no navegador Propriedades.
 * Um componente é identificado com seu nome de elemento. Ao selecionar ![cmppr](assets/cmppr.png), você pode alterar o nome do componente alterando o valor do campo Nome do Elemento no navegador de propriedades. O campo Nome do elemento aceita somente letras, números, hifens (-) e sublinhados (_). Outros caracteres especiais não são permitidos e o nome do elemento deve começar com uma letra.
 * Você pode modificar a propriedade Title de um componente de Comunicação interativa em linha no editor sem abrir o navegador Propriedades, desde que o título esteja visível na Comunicação interativa. Para fazer isso:
 
-   1. Selecione para selecionar um componente que tenha uma propriedade Title e cuja propriedade Hide title esteja desativada.
-   1. Selecione ![aem_6_3_edit](assets/aem_6_3_edit.png) para tornar o título editável.
+  1. Selecione para selecionar um componente que tenha uma propriedade Title e cuja propriedade Hide title esteja desativada.
+  1. Selecione ![aem_6_3_edit](assets/aem_6_3_edit.png) para tornar o título editável.
 
-   1. Modifique o título e selecione a tecla Return ou selecione qualquer lugar fora do componente para salvar as alterações. Selecione a tecla Esc para descartar as alterações.
+  1. Modifique o título e selecione a tecla Return ou selecione qualquer lugar fora do componente para salvar as alterações. Selecione a tecla Esc para descartar as alterações.
 
 ## Barra de ferramentas Componente {#component-toolbar}
 
@@ -139,13 +155,13 @@ A barra de ferramentas Página na parte superior fornece opções que permitem v
 * Emulador ![régua](assets/ruler.png): permite que você emule a aparência da sua Comunicação Interativa para diferentes tamanhos de exibição, como tablets e telefones.
 * Editar: permite selecionar outros modos, como Editar, Estilo, Desenvolvedor e Design.
 
-   * Editar: permite editar as propriedades da Comunicação interativa e seus componentes. Por exemplo, adicionar um componente, soltar uma imagem e especificar campos obrigatórios.
-   * Estilo: permite estilizar a aparência dos componentes da sua Comunicação interativa. Por exemplo, no modo de estilo, é possível selecionar um painel e especificar a cor do plano de fundo.
-   * Desenvolvedor: permite que um desenvolvedor:
+  * Editar: permite editar as propriedades da Comunicação interativa e seus componentes. Por exemplo, adicionar um componente, soltar uma imagem e especificar campos obrigatórios.
+  * Estilo: permite estilizar a aparência dos componentes da sua Comunicação interativa. Por exemplo, no modo de estilo, é possível selecionar um painel e especificar a cor do plano de fundo.
+  * Desenvolvedor: permite que um desenvolvedor:
 
-      * Descubra o que a comunicação interativa é composta.
-      * Depure onde e quando está acontecendo, o que, por vezes, ajuda a resolver problemas.
+    * Descubra o que a comunicação interativa é composta.
+    * Depure onde e quando está acontecendo, o que, por vezes, ajuda a resolver problemas.
 
-   * Target: permite ativar ou desativar componentes personalizados ou componentes prontos para uso que não estão listados na Barra lateral.
+  * Target: permite ativar ou desativar componentes personalizados ou componentes prontos para uso que não estão listados na Barra lateral.
 
 * Visualização: permite que você visualize a aparência da comunicação interativa ao publicá-la.

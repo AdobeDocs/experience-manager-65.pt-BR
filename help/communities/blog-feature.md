@@ -10,13 +10,20 @@ exl-id: 4650ac36-5506-4efc-be35-fac9e5a58f3d
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1719'
 ht-degree: 0%
-
 ---
-
 # Recurso de blog {#blog-feature}
 
 ## Introdução {#introduction}
@@ -250,11 +257,11 @@ Na guia **Configurações da Barra Lateral do Diário**, especifique o formato d
 
   O formato usado para exibir arquivos de entradas de blog. O formato usa espaços reservados seguindo a convenção do Java™.
 
-   * aaaa : ano completo, como &#39;2015&#39;
-   * aa : ano curto, como &quot;15&quot;
-   * MMMM : mês inteiro, como junho
-   * MMM : mês curto, como jun
-   * MM : número do mês, como 06
+  * aaaa : ano completo, como &#39;2015&#39;
+  * aa : ano curto, como &quot;15&quot;
+  * MMMM : mês inteiro, como junho
+  * MMM : mês curto, como jun
+  * MM : número do mês, como 06
 
   O padrão é &quot;yyyy MMMMM&quot;, que exibiria, por exemplo, &quot;junho de 2015&quot;
 
@@ -262,15 +269,15 @@ Na guia **Configurações da Barra Lateral do Diário**, especifique o formato d
 
   O Título e o tipo das entradas do blog a serem exibidas na barra lateral. A escolha é entre
 
-   * Autores
-   * Categorias
-   * Arquivos
+  * Autores
+  * Categorias
+  * Arquivos
 
 * **Caminho do componente de blog**
 
   *(Opcional)* O local do recurso de blog do qual os artigos de blog devem ser listados. Se deixado em branco, ele usará o componente de resourceType `social/journal/components/hbs/journal` que aparece na mesma página.
 
-   * Por exemplo, `/content/sites/engage/en/blog/jcr:content/content/primary/blog`
+  * Por exemplo, `/content/sites/engage/en/blog/jcr:content/content/primary/blog`
 
 * **Limite sugerido**
 

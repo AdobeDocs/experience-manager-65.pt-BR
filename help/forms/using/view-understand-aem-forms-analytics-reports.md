@@ -9,13 +9,29 @@ exl-id: c5a4e6f6-f331-41e9-a0a9-51a30df6e2cd
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 feature: Adaptive Forms
-source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '1056'
-ht-degree: 0%
-
+source-wordcount: '1082'
+ht-degree: 2%
 ---
-
 # Visualizar e entender os relatórios do AEM Forms Analytics {#view-and-understand-aem-forms-analytics-reports}
 
 O Adobe Experience Manager Forms integra-se ao Adobe Analytics, o que permite capturar e rastrear as métricas de desempenho dos formulários e documentos publicados. O objetivo por trás da análise dessas métricas é tomar decisões informadas com base em dados sobre as alterações necessárias para tornar os formulários ou documentos mais utilizáveis.
@@ -50,7 +66,7 @@ Quando um usuário interage com o formulário, as interações são registradas 
 
 Execute as seguintes etapas para exibir relatórios de análise:
 
-1. Fazer logon no portal AEM em `https://[hostname]:'port'`
+1. Fazer logon no portal do AEM em `https://[hostname]:'port'`
 1. Clique em **Forms > Forms e Documentos**.
 1. Selecione o formulário para o qual deseja exibir os relatórios de análise.
 1. Selecione **Mais > Relatórios do Analytics**.
@@ -63,7 +79,7 @@ O AEM Forms exibe relatórios do Analytics para o formulário e para cada painel
 
 ![Relatório de resumo de um formulário adaptável](assets/analyticsdashboard_callout.png)
 
-**A.** Conversões **B.** Resumo no nível de formulário **C.** Resumo no nível de painel **D.** Navegadores de visitantes - filtro **E.** Sistema operacional de visitantes - filtro **F.** Idioma dos visitantes - filtro
+**A.** Conversões **B.** Resumo no nível de formulário **C.** Resumo no nível de painel **D.** Navegadores de visitantes - filtro **E.** SO de visitantes - filtro **F.** Idioma dos visitantes - filtro
 
 Por padrão, o relatório de análise dos últimos sete dias é exibido. Você pode exibir relatórios dos últimos 15 dias, do último mês e assim por diante, ou especificar um intervalo de datas.
 
@@ -75,7 +91,7 @@ Por padrão, o relatório de análise dos últimos sete dias é exibido. Você p
 
 ### Gráfico de conversões para formulários adaptáveis e HTML5 {#conversions-graph-for-adaptive-and-html-forms}
 
-O gráfico de conversões no nível do formulário fornece informações sobre o desempenho do formulário nos seguintes KPIs (indicadores-chave de desempenho):
+O gráfico de conversões no nível do formulário fornece uma insight sobre o desempenho do formulário nos seguintes KPIs (indicadores-chave de desempenho):
 
 * **Representações**: o número de vezes que um formulário é aberto
 * **Visitantes**: o número de visitantes do formulário
@@ -85,7 +101,7 @@ O gráfico de conversões no nível do formulário fornece informações sobre o
 
 ### Relatório do Analytics para formulários adaptáveis e HTML5 {#analytics-report-for-adaptive-and-html-forms}
 
-A seção de resumo no nível do formulário fornece informações sobre o desempenho do formulário nos seguintes KPIs (indicadores-chave de desempenho):
+A seção de resumo no nível do formulário fornece uma insight sobre o desempenho do formulário nos seguintes KPIs (indicadores-chave de desempenho):
 
 * **Tempo médio de preenchimento**: tempo médio gasto no preenchimento do formulário. Quando os usuários passam tempo no formulário, mas não enviam, esse tempo não é incluído nesse cálculo.
 * **Representações**: número de vezes que o formulário foi renderizado ou aberto

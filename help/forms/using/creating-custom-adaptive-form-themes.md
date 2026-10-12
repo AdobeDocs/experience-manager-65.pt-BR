@@ -8,13 +8,29 @@ exl-id: 73b0057f-082d-4502-90e2-5e41b52c1185
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms,Foundation Components
-source-git-commit: 8a77756e8ba771c8de9950c2323bef8f23cc59b4
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '790'
+source-wordcount: '800'
 ht-degree: 0%
-
 ---
-
 # Criação de temas de formulário adaptáveis personalizados {#creating-custom-adaptive-form-themes}
 
 >[!CAUTION]
@@ -29,7 +45,7 @@ ht-degree: 0%
 
 ## Tema do formulário adaptável {#adaptive-form-theme}
 
-Um **tema de formulário adaptável** é uma biblioteca cliente AEM usada para definir os estilos (aparência) de um formulário adaptável.
+Um **tema de formulário adaptável** é uma biblioteca de cliente do AEM que você usa para definir os estilos (aparência) de um formulário adaptável.
 
 Você cria um **modelo adaptável** e aplica o tema ao modelo. Você pode usar este modelo personalizado para criar um **formulário adaptável**.
 
@@ -39,7 +55,7 @@ Você cria um **modelo adaptável** e aplica o tema ao modelo. Você pode usar e
 
 >[!NOTE]
 >
->O procedimento a seguir é descrito usando nomes de exemplo para objetos AEM, como nós, propriedades e pastas.
+>O procedimento a seguir é descrito usando nomes de exemplo para objetos do AEM, como nós, propriedades e pastas.
 >
 >Se você seguir essas etapas usando os nomes, o modelo resultante deverá ser semelhante ao seguinte:
 

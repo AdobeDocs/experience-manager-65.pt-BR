@@ -1,6 +1,6 @@
 ---
 title: Suporte a cláusula de imagem para formulários HTML5
-description: Os formulários HTML5 são compatíveis com a cláusula de Imagem XFA para valor de exibição e valor formatado para símbolos de data, texto e numéricos.
+description: O HTML5 Forms oferece suporte à cláusula de Imagem XFA para valor de exibição e valor formatado para símbolos de data, texto e numéricos.
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,18 +10,33 @@ feature: HTML5 Forms,Mobile Forms
 exl-id: 7f9c77c6-447a-407f-ae58-6735176dc99c
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '659'
-ht-degree: 0%
-
+source-wordcount: '652'
+ht-degree: 1%
 ---
-
 # Suporte a cláusula de imagem para formulários HTML5 {#picture-clause-support-for-html-forms}
 
-Os formulários HTML5 são compatíveis com a cláusula de Imagem XFA para valor de exibição e valor formatado para símbolos de data, texto e numéricos. As seguintes expressões de cláusula Picture são suportadas:
+O HTML5 Forms oferece suporte à cláusula de Imagem XFA para valor de exibição e valor formatado para símbolos de data, texto e numéricos. As seguintes expressões de cláusula Picture são suportadas:
 
-* category(locale){picture-clause} | category(locale){picture-clause} | category(locale){picture-clause}
+* categoria(localidade){picture-clause} | categoria(localidade){picture-clause} | categoria(localidade){picture-clause}
 * category.subcategory{}
 
 >[!NOTE]
@@ -37,7 +52,7 @@ Expressão suportada para a cláusula Date Picture:
 * date.medium{}
 * date.full{}
 * date.short{}
-* data{símbolos da Cláusula de Imagem de data}
+* data{date Picture Clause symbols}
 
 >[!NOTE]
 >
@@ -98,17 +113,17 @@ Expressão suportada para a cláusula Date Picture:
 
 ## Cláusula de Imagem Numérica {#numeric-picture-clause}
 
-Os formulários HTML5 suportam símbolos de figuras numéricas. No entanto, há uma diferença no suporte entre PDF forms e HTML Forms.
+Os formulários HTML5 suportam símbolos de Imagem Numérica. No entanto, há uma diferença no suporte entre o PDF forms e o HTML Forms.
 
 Em **PDF forms**, um número é formatado independentemente do número de símbolos na cláusula Picture
 
-Em **HTML Forms**, um número será formatado somente se o número tiver dígitos menores que o número de símbolos na cláusula Picture.
+No **HTML Forms**, um número será formatado somente se o número tiver dígitos menores que o número de símbolos na cláusula Picture.
 
 **Exemplo**: Considere uma cláusula Picture: num{zzz,zzz,zz9}.
 
-O número **10000** está formatado como **10.000** tanto em HTML quanto em PDF forms.
+O número **10000** está formatado como **10.000** no HTML e no PDF forms.
 
-O número 1000000 é formatado como 1.000.000 em PDF forms. No entanto, no HTML Forms, o número permanece sem formatação como 1000000.
+O número 1000000 é formatado como 1.000.000 no PDF forms. No entanto, no HTML Forms, o número permanece sem formatação como 1000000.
 
 As expressões suportadas para a cláusula de Imagem Numérica em **HTML Forms** são:
 
@@ -116,7 +131,7 @@ As expressões suportadas para a cláusula de Imagem Numérica em **HTML Forms**
 * num.decimal{}
 * num.currency{}
 * num.percent{}
-* num{Símbolos de Cláusula de Imagem Numérica}
+* num{Numeric Picture Clause Symbols}
 
 <table>
  <tbody>
@@ -205,9 +220,9 @@ As expressões suportadas para a cláusula de Imagem Numérica em **HTML Forms**
 
 ## Cláusula de Imagem de Texto {#text-picture-clause}
 
-Os formulários HTML5 suportam as seguintes expressões de cláusula Text Picture:
+Os formulários HTML5 são compatíveis com as seguintes expressões de cláusula Text Picture:
 
-* text{símbolos de cláusula de Imagem de texto}
+* text{text Picture clause symbols}
 
 | **Símbolo** | **Interpretação** |
 |---|---|

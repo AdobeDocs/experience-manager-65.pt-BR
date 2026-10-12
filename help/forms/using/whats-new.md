@@ -1,6 +1,6 @@
 ---
-title: New features summary | AEM 6.5 Forms
-description: Latest features and improvements to AEM forms and documents, world's most advanced digital experience management solution.
+title: Resumo dos novos recursos | AEM 6.5 Forms
+description: Recursos e melhorias mais recentes nos formulários e documentos da AEM, a solução de gerenciamento de experiência digital mais avançada do mundo.
 topic-tags: introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
@@ -8,14 +8,30 @@ exl-id: 47b9de1f-b16a-424c-b8b4-e9d7b3dcca86
 solution: Experience Manager, Experience Manager Forms
 feature: Release Information
 role: Admin, User, Developer
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: ed762d86-a04b-452b-a08f-86359bb8ff27
+    internal-label: Configuration and operations
+subfeature_v2:
+  - id: c21ccc2b-e0c8-4853-bf41-f12259ed93f8
+    internal-label: Release information
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '738'
 ht-degree: 1%
-
 ---
-
-# New features summary | AEM 6.5 Forms{#new-features-summary-aem-forms}
+# Resumo dos novos recursos | AEM 6.5 Forms{#new-features-summary-aem-forms}
 
 | Produto | Adobe Experience Manager 6.5 |
 | -------- | ---------------------------- |
@@ -23,19 +39,19 @@ ht-degree: 1%
 | Tipo | Versão do pacote de serviços |
 | Data | sábado, 8 de dezembro de 2023 |
 
-## What is included in Adobe Experience Manager 6.5 Forms Service Pack 19 (6.5.19.0)
+## O que está incluído no Adobe Experience Manager 6.5 Forms Service Pack 19 (6.5.19.0)
 
-Experience Manager 6.5.19.0 includes new features, key customer-requested enhancements, bug fixes, and performance, stability, and security improvements that have been released since the initial availability of 6.5 in April 2019. [Install this service pack](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=pt-BR) on Experience Manager 6.5.
+O Experience Manager 6.5.19.0 inclui novos recursos, importantes melhorias solicitadas por clientes, correções de bugs e melhorias de desempenho, estabilidade e segurança que foram lançadas desde a disponibilização inicial do 6.5 em abril de 2019. [Instalar este service pack](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=pt-BR) no Experience Manager 6.5.
 
-### New Features
+### Novos recursos
 
-#### New Adaptive Form Core Components
+#### Novos componentes principais do formulário adaptável
 
-Vertical tabs, Terms &amp; Conditions, and Checkbox are added to enhance the scalability of forms.
+Guias verticais, Termos e condições e Caixa de seleção são adicionados para aprimorar a escalabilidade dos formulários.
 
 * **[Componente de caixa de seleção](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox.html?lang=pt-BR)**: o Forms adaptável baseado em Componentes principais agora pode incluir um componente de caixa de seleção. Permite que os usuários façam escolhas binárias, selecionando ou desmarcando uma opção específica. Normalmente, ela aparece como uma pequena caixa que pode ser clicada ou tocada para alternar entre dois estados: marcado e desmarcado. A caixa de seleção é um elemento de formulário comum usado para apresentar uma opção sim/não ou verdadeira/falsa.
 
-* **[Componente de Termos e Condições](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/terms-and-conditions.html?lang=pt-BR)**: o Forms Adaptável baseado em Componentes Principais agora pode incluir um componente de Termos e Condições. It allows forms authors to introduce a specific section within the form where users are presented with the terms, conditions, or legal agreements associated with the use of a service, product, or platform. Esse componente foi projetado para informar os usuários sobre as regras, regulamentos e obrigações aos quais eles estão concordando ao enviar o formulário.
+* **[Componente de Termos e Condições](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/terms-and-conditions.html?lang=pt-BR)**: o Forms Adaptável baseado em Componentes Principais agora pode incluir um componente de Termos e Condições. Ele permite que os autores de formulários introduzam uma seção específica no formulário em que os usuários recebem os termos, condições ou contratos legais associados ao uso de um serviço, produto ou plataforma. Esse componente foi projetado para informar os usuários sobre as regras, regulamentos e obrigações aos quais eles estão concordando ao enviar o formulário.
 
   ![Guias verticais, Termos e condições e componentes da Caixa de seleção](/help/forms/using/assets/forms-components.png)
 

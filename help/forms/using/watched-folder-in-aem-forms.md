@@ -9,13 +9,29 @@ exl-id: fbf5c7c3-cb01-4fda-8e5d-11d56792d4bf
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '7136'
+source-wordcount: '7272'
 ht-degree: 0%
-
 ---
-
 # Pasta monitorada no AEM Forms{#watched-folder-in-aem-forms}
 
 Um administrador pode configurar uma pasta de rede, conhecida como Pasta monitorada, para que, quando um usuário colocar um arquivo (como um arquivo do PDF) na Pasta monitorada, um fluxo de trabalho, serviço ou operação de script pré-configurado seja iniciado para processar o arquivo adicionado. Depois que o serviço executa a operação especificada, ele salva o arquivo de resultado em uma pasta de saída especificada. Para obter mais informações sobre fluxo de trabalho, serviço e script, consulte [Vários métodos para processamento de arquivos](#variousmethodsforprocessingfiles).
@@ -24,7 +40,7 @@ Um administrador pode configurar uma pasta de rede, conhecida como Pasta monitor
 
 Você pode usar um dos seguintes métodos para criar uma Pasta monitorada no sistema de arquivos:
 
-* Ao configurar as propriedades de um nó de configuração Pasta monitorada, digite o caminho completo do diretório pai na propriedade folderPath e anexe o nome da Pasta monitorada a ser criada, conforme mostrado no exemplo a seguir: `C:/MyPDFs/MyWatchedFolder`
+* Ao configurar as propriedades de um nó de configuração Pasta monitorada, digite o caminho completo do diretório pai na propriedade folderPath e anexe o nome da Pasta monitorada a ser criada, como mostrado no exemplo a seguir: `C:/MyPDFs/MyWatchedFolder`
 A pasta `MyWatchedFolder` não existe. O AEM Forms tenta criar a pasta no caminho especificado.
 
 * Crie uma pasta no sistema de arquivos antes de configurar um endpoint de Pasta monitorada e forneça o caminho completo na propriedade folderPath. Para obter informações detalhadas sobre a propriedade folderPath, consulte [Propriedades da Pasta monitorada](#watchedfolderproperties).
@@ -66,19 +82,19 @@ Você pode configurar as seguintes propriedades para uma Pasta monitorada.
 * **inputProcessorType (String)**: o tipo do processo a ser iniciado. Você pode especificar um fluxo de trabalho, script ou serviço. É uma propriedade obrigatória.
 * **inputProcessorId (String)**: o comportamento da propriedade inputProcessorId é baseado no valor especificado para a propriedade inputProcessorType. É uma propriedade obrigatória. A lista a seguir detalha todos os valores possíveis da propriedade inputProcessorType e o requisito correspondente da propriedade inputProcessorType:
 
-   * Para workflow, especifique o template de workflow a ser executado. Por exemplo, /etc/workflow/models/&lt;workflow_name>/jcr:content/model
-   * Para script, especifique o caminho JCR do script a ser executado. Por exemplo, /etc/fd/watchfolder/test/testScript.ecma
-   * Para o serviço, especifique o filtro usado para localizar um serviço OSGi. O serviço é registrado como uma implementação da interface com.adobe.aemfd.watchfolder.service.api.ContentProcessor.
+  * Para workflow, especifique o template de workflow a ser executado. Por exemplo, /etc/workflow/models/&lt;workflow_name>/jcr:content/model
+  * Para script, especifique o caminho JCR do script a ser executado. Por exemplo, /etc/fd/watchfolder/test/testScript.ecma
+  * Para o serviço, especifique o filtro usado para localizar um serviço OSGi. O serviço é registrado como uma implementação da interface com.adobe.aemfd.watchfolder.service.api.ContentProcessor.
 
 * **runModes (String)**: uma lista separada por vírgulas de modos de execução permitidos para execução de fluxo de trabalho. Alguns exemplos são:
 
-   * autor
+  * autor
 
-   * publicação
+  * publicação
 
-   * autor, publicação
+  * autor, publicação
 
-   * publicar, autor
+  * publicar, autor
 
 >[!NOTE]
 >
@@ -98,27 +114,27 @@ Você pode configurar as seguintes propriedades para uma Pasta monitorada.
 * **excludeFilePattern (String)**: uma lista delimitada por ponto-e-vírgula (;) de padrões que uma Pasta Monitorada usa para determinar quais arquivos e pastas serão verificados e selecionados. Qualquer arquivo ou pasta com esse padrão não é examinado para processamento. Essa configuração é útil quando a entrada é uma pasta com vários arquivos. O conteúdo da pasta pode ser copiado para uma pasta com um nome que é selecionado pela Pasta monitorada. Isso impede que a Pasta monitorada selecione uma pasta para processamento antes que ela seja completamente copiada para a pasta de entrada. O valor padrão é nulo.
 Você pode usar [padrões de arquivo](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p) para excluir:
 
-   * Arquivos com extensões de nome de arquivo específicas; por exemplo, &#42;.dat, &#42;.xml, .pdf, &#42;.&#42;
-   * Arquivos com nomes específicos; por exemplo, dados&#42; excluiriam arquivos e pastas denominados dados1, dados2 e assim por diante.
-   * Arquivos com expressões compostas no nome e na extensão, como nestes exemplos:
+  * Arquivos com extensões de nome de arquivo específicas; por exemplo, &#42;.dat, &#42;.xml, .pdf, &#42;.&#42;
+  * Arquivos com nomes específicos; por exemplo, dados&#42; excluiriam arquivos e pastas denominados dados1, dados2 e assim por diante.
+  * Arquivos com expressões compostas no nome e na extensão, como nestes exemplos:
 
-      * Dados `[0-9][0-9][0-9]`.`[dD][aA]`&#39;porta&#39;
-      * &#42;.`[dD][aA]`&#39;porta&#39;
-      * &#42;.`[Xx][Mm][Ll]`
+    * Dados`[0-9][0-9][0-9]`.`[dD][aA]`&#39;porta&#39;
+    * &#42;.`[dD][aA]`&#39;porta&#39;
+    * &#42;.`[Xx][Mm][Ll]`
 
 Para obter mais informações sobre padrões de arquivo, consulte [Sobre padrões de arquivo](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p).
 
 * **includeFilePattern (String)**: uma lista de padrões delimitada por ponto-e-vírgula (;) que a Pasta Monitorada usa para determinar quais pastas e arquivos serão verificados e selecionados. Por exemplo, se IncludeFilePattern for input&#42;, todos os arquivos e pastas que corresponderem à input&#42; serão selecionados. Isso inclui arquivos e pastas chamados input1, input2 e assim por diante. O valor padrão é &#42; e indica todos os arquivos e pastas. Você pode usar padrões de arquivo para incluir:
 
-   * Arquivos com extensões de nome de arquivo específicas; por exemplo, &#42;.dat, &#42;.xml, .pdf, &#42;.&#42;
-   * Arquivos com nomes específicos; por exemplo, dados.&#42; incluiria arquivos e pastas chamados dados1, dados2 e assim por diante.
+  * Arquivos com extensões de nome de arquivo específicas; por exemplo, &#42;.dat, &#42;.xml, .pdf, &#42;.&#42;
+  * Arquivos com nomes específicos; por exemplo, dados.&#42; incluiria arquivos e pastas chamados dados1, dados2 e assim por diante.
 
 * Arquivos com expressões compostas no nome e na extensão, como nestes exemplos:
 
-   * Dados `[0-9][0-9][0-9]`.`[dD][aA]`&#39;porta&#39;
+  * Dados`[0-9][0-9][0-9]`.`[dD][aA]`&#39;porta&#39;
 
-      * &#42;.`[dD][aA]`&#39;porta&#39;
-      * &#42;.`[Xx][Mm][Ll]`
+    * &#42;.`[dD][aA]`&#39;porta&#39;
+    * &#42;.`[Xx][Mm][Ll]`
 
 Para obter mais informações sobre padrões de arquivo, consulte [Sobre padrões de arquivo](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p)
 
@@ -126,20 +142,20 @@ Para obter mais informações sobre padrões de arquivo, consulte [Sobre padrõe
 * **purgeDuration (Long)**: os arquivos e pastas na pasta de resultados são limpos quando são mais antigos que esse valor. Esse valor é medido em dias. Essa configuração é útil para garantir que a pasta de resultados não fique cheia. Um valor de -1 dias indica que a pasta de resultados nunca deve ser excluída. O valor padrão é -1.
 * **resultFolderName (String)**: a pasta onde os resultados salvos estão armazenados. Se os resultados não aparecerem nessa pasta, verifique a pasta de falha. Arquivos somente leitura não são processados e são salvos na pasta de falha. Esse valor pode ser um caminho absoluto ou relativo com os seguintes padrões de arquivo:
 
-   * %F = prefixo do nome do arquivo
-   * %E = extensão de nome de arquivo
-   * %Y = ano (completo)
-   * %y = ano (últimos dois dígitos)
-   * %M = mês
-   * %D = dia do mês
-   * %d = dia do ano
-   * %H = hora (relógio de 24 horas)
-   * %h = hora (relógio de 12 horas)
-   * %m = minuto
-   * %s = segundo
-   * %l = milissegundo
-   * %R = número aleatório (entre 0-9)
-   * %P = id do processo ou da tarefa
+  * %F = prefixo do nome do arquivo
+  * %E = extensão de nome de arquivo
+  * %Y = ano (completo)
+  * %y = ano (últimos dois dígitos)
+  * %M = mês
+  * %D = dia do mês
+  * %d = dia do ano
+  * %H = hora (relógio de 24 horas)
+  * %h = hora (relógio de 12 horas)
+  * %m = minuto
+  * %s = segundo
+  * %l = milissegundo
+  * %R = número aleatório (entre 0-9)
+  * %P = id do processo ou da tarefa
 
   Por exemplo, se for 8 PM em 17 de julho de 2009 e você especificar C:/Test/WF0/failure/%Y/%M/%D/%H/, a pasta resultante será C:/Test/WF0/failure/2009/07/17/20
 
@@ -173,16 +189,16 @@ Para obter mais informações sobre padrões de arquivo, consulte [Sobre padrõe
 * **habilitado (Booleano)**: desativa e ativa a verificação de uma Pasta Monitorada. Defina ativado como verdadeiro para iniciar a verificação da Pasta monitorada. O valor padrão é true.
 * **payloadMapperFilter:** quando uma pasta é configurada como pasta monitorada, uma estrutura de pastas é criada dentro da pasta monitorada. A estrutura tem pastas para fornecer entradas, receber saídas (resultados), salvar dados para falhas, preservar dados para processos de longa duração e salvar dados para vários estágios. A estrutura de pastas de uma Pasta monitorada pode servir como uma carga de fluxos de trabalho centrados no Forms. Um mapeador de carga permite definir a estrutura de uma carga que usa uma Pasta monitorada para entrada, saída e processamento. Por exemplo, se você usar o mapeador padrão, ele mapeará o conteúdo da Pasta monitorada com [carga]\entrada e [carga]\pasta de saída. Duas implementações prontas para uso do mapeador de carga estão disponíveis. Se você não tiver [uma implementação personalizada](../../forms/using/watched-folder-in-aem-forms.md#creating-a-custom-payload-mapper-filter), use uma das implementações predefinidas:
 
-   * **Mapeador padrão:** use o mapeador de carga padrão para manter os conteúdos de entrada e saída das pastas monitoradas em pastas de entrada e saída separadas na carga. Além disso, no caminho de carga de um fluxo de trabalho, use os caminhos [payload]/input/ e [payload]/output para recuperar e salvar conteúdo.
+  * **Mapeador padrão:** use o mapeador de carga padrão para manter os conteúdos de entrada e saída das pastas monitoradas em pastas de entrada e saída separadas na carga. Além disso, no caminho de carga de um fluxo de trabalho, use os caminhos [payload]/input/ e [payload]/output para recuperar e salvar conteúdo.
 
-   * **Mapeador de carga baseado em arquivo simples:** use o mapeador de carga baseado em arquivo simples para manter o conteúdo de entrada e saída diretamente na pasta de carga. Ela não cria nenhuma hierarquia extra, como o mapeador padrão.
+  * **Mapeador de carga baseado em arquivo simples:** use o mapeador de carga baseado em arquivo simples para manter o conteúdo de entrada e saída diretamente na pasta de carga. Ela não cria nenhuma hierarquia extra, como o mapeador padrão.
 
 ### Parâmetros de configuração personalizados {#custom-configuration-parameters}
 
 Juntamente com as propriedades de configuração da Pasta monitorada listadas acima, você também pode especificar parâmetros de configuração personalizados. Os parâmetros personalizados são passados para o código de processamento do arquivo. Ela permite que o código altere seu comportamento com base no valor do parâmetro. Para especificar um parâmetro:
 
 1. Faça logon no CRXDE-Lite e navegue até o nó de configuração Pasta monitorada.
-1. Adicionar um parâmetro de propriedade.&lt;property_name> para o nó de configuração da Pasta monitorada. O tipo da propriedade só pode ser Booliano, Date, Decimal, Double, Long e String. Você pode especificar propriedades com um único valor e com vários valores.
+1. Adicione uma propriedade param.&lt;property_name> ao nó de configuração da Pasta monitorada. O tipo da propriedade só pode ser Booliano, Date, Decimal, Double, Long e String. Você pode especificar propriedades com um único valor e com vários valores.
 
 >[!NOTE]
 >
@@ -200,7 +216,7 @@ Você pode criar variáveis mutáveis para métodos de processamento de arquivos
 
 1. Faça logon no CRXDE-Lite e navegue até o nó de configuração Pasta monitorada.
 
-1. Adicione uma propriedade workflow.var.&lt;variable_name> para o nó de configuração da Pasta monitorada.
+1. Adicione uma propriedade workflow.var.&lt;variable_name> ao nó de configuração da Pasta monitorada.
 
    O tipo da propriedade só pode ser Booliano, Date, Decimal, Double, Long e String. Propriedades com vários valores também são compatíveis. Para propriedades com vários valores, o valor disponível para a etapa do fluxo de trabalho é uma matriz do tipo especificado.
 
@@ -528,8 +544,8 @@ Depois que os arquivos são movidos para a pasta de preparo, solicitações de i
 
 * Se a Pasta monitorada tiver criado com sucesso a solicitação de invocação para cada um dos arquivos na pasta de preparo e o servidor falhar, há dois comportamentos com base no tipo de invocação:
 
-   * **Síncrono**: se a Pasta monitorada estiver configurada para chamar o serviço de forma síncrona, todos os arquivos na pasta de preparo permanecerão não processados na pasta de preparo.
-   * **Assíncrono**: nesse caso, a Pasta Monitorada depende do serviço Gerenciador de Trabalhos. Se o serviço do Gerenciador de trabalhos retornar as chamadas da Pasta monitorada, os arquivos na pasta de preparo serão movidos para a pasta de preservação ou falha com base nos resultados da invocação. Se o serviço Gerenciador de trabalhos não retornar a chamada da Pasta monitorada, os arquivos permanecerão não processados na pasta de preparo. Essa situação ocorre quando a Pasta monitorada não está em execução quando o Gerenciador de trabalhos chama de volta.
+  * **Síncrono**: se a Pasta monitorada estiver configurada para chamar o serviço de forma síncrona, todos os arquivos na pasta de preparo permanecerão não processados na pasta de preparo.
+  * **Assíncrono**: nesse caso, a Pasta Monitorada depende do serviço Gerenciador de Trabalhos. Se o serviço do Gerenciador de trabalhos retornar as chamadas da Pasta monitorada, os arquivos na pasta de preparo serão movidos para a pasta de preservação ou falha com base nos resultados da invocação. Se o serviço Gerenciador de trabalhos não retornar a chamada da Pasta monitorada, os arquivos permanecerão não processados na pasta de preparo. Essa situação ocorre quando a Pasta monitorada não está em execução quando o Gerenciador de trabalhos chama de volta.
 
 #### Recuperar arquivos de origem não processados na pasta de preparo {#recover-unprocessed-source-files-in-the-stage-folder}
 
@@ -568,9 +584,9 @@ Os administradores podem especificar o tipo de arquivo que pode chamar um servi�
 * Arquivos com nomes específicos; por exemplo, dados.&#42;
 * Arquivos com expressões compostas no nome e na extensão, como nestes exemplos:
 
-   * Dados `[0-9][0-9][0-9]`.`[dD][aA]`&#39;porta&#39;
-   * &#42;.`[dD][aA]`&#39;porta&#39;
-   * &#42;.`[Xx][Mm][Ll]`
+  * Dados`[0-9][0-9][0-9]`.`[dD][aA]`&#39;porta&#39;
+  * &#42;.`[dD][aA]`&#39;porta&#39;
+  * &#42;.`[Xx][Mm][Ll]`
 
 * O administrador pode definir o padrão de arquivo da pasta de saída na qual os resultados serão armazenados. Para as pastas de saída (resultado, preservação e falha), o administrador pode especificar qualquer um destes padrões de arquivo:
 * %Y = ano (completo)
@@ -670,7 +686,7 @@ O ECMAScript usaria a API createPDF do PDF Generator para converter documentos d
 1. Adicione as seguintes propriedades ao nó:
 
    * folderPath (String): o caminho da pasta a ser examinada em intervalos de tempo definidos. A pasta deve estar em um local compartilhado com todos os servidores com acesso total ao servidor.
-inputProcessorType (String): o tipo do processo a ser iniciado. Neste tutorial, especifique o workflow.
+     inputProcessorType (String): o tipo do processo a ser iniciado. Neste tutorial, especifique o workflow.
 
    * inputProcessorId (String): o comportamento da propriedade inputProcessorId é baseado no valor especificado para a propriedade inputProcessorType. Neste exemplo, o valor da propriedade inputProcessorType é workflow. Portanto, para a propriedade inputProcessorId, especifique o seguinte caminho do fluxo de trabalho do PDFG: /etc/workflow/models/pdfg/jcr:content/model
 

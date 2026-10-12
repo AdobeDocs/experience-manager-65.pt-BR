@@ -9,13 +9,20 @@ role: Admin
 exl-id: dbe28334-3b38-4362-b4f8-e0630e634503
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '251'
+source-wordcount: '274'
 ht-degree: 1%
-
 ---
-
 # FFmpeg para comunidades {#ffmpeg-for-communities}
 
 ## Visão geral {#overview}
@@ -43,7 +50,7 @@ O FFmpeg deve ser instalado no(s) servidor(es) que hospeda(m) a(s) instância(s)
 
 Por padrão, quando o FFmpeg é instalado, várias representações são configuradas (transcodificações) de acordo com a definição de fluxo de trabalho [!UICONTROL Ativo de atualização do DAM].
 
-Como as transcodificações consomem muita CPU, é recomendável modificar a lista de representações de destino. Na maioria dos casos, a transcodificação não é necessária.
+Como as transcodificações exigem muito do CPU, é recomendável modificar a lista de representações do público-alvo. Na maioria dos casos, a transcodificação não é necessária.
 
 Para modificar o fluxo de trabalho do [!UICONTROL Ativo de atualização do DAM] e, neste exemplo, desativar a transcodificação:
 
@@ -57,7 +64,7 @@ Para modificar o fluxo de trabalho do [!UICONTROL Ativo de atualização do DAM]
 * Clique duas vezes na etapa **[!UICONTROL Transcodificação de FFmpeg]** para acessar a caixa de diálogo Propriedades da etapa.
 * Na guia **[!UICONTROL Processo]**:
 
-   * **[!UICONTROL Argumentos]**: Limpar todas as entradas para desabilitar a transcodificação Valores padrão: `profile:format_ogg,profile:format_aac,profile:format_flv,profile:format_aac_ie`
+  * **[!UICONTROL Argumentos]**: Limpar todas as entradas para desabilitar a transcodificação Valores padrão: `profile:format_ogg,profile:format_aac,profile:format_flv,profile:format_aac_ie`
 
   ![configure-ffmpeg](assets/configure-ffmpeg.png)
 

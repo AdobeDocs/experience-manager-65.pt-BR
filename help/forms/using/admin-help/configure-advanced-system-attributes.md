@@ -9,13 +9,27 @@ exl-id: 809af2c0-6f5c-4dd4-af48-dbf476c9ea45
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '480'
 ht-degree: 1%
-
 ---
-
 # Configurar atributos avançados do sistema {#configure-advanced-system-attributes}
 
 Use a página Configurar Atributos Avançados do Sistema para modificar determinadas configurações no arquivo de configuração sem a necessidade de exportar, editar e importar o arquivo. (Consulte [Importar e exportar o arquivo de configuração](/help/forms/using/admin-help/importing-exporting-configuration-file.md#importing-and-exporting-the-configuration-file).)
@@ -23,13 +37,13 @@ Use a página Configurar Atributos Avançados do Sistema para modificar determin
 1. No console de administração, clique em **[!UICONTROL Configurações > Gerenciamento de usuários > Configuração > Configurar atributos avançados do sistema]**.
 1. (Opcional) Altere qualquer um dos seguintes atributos de sessão:
 
-   **Limite de Tempo de Sessão (Minutos):** O tempo, em minutos, antes que um usuário seja automaticamente desconectado do sistema. Por padrão, os componentes de formulários AEM, como o Workbench, expiram após duas horas, independentemente da atividade ou inatividade, e o usuário deve fazer logon novamente. Os valores válidos são de `1` a `1440`. O valor padrão é `120` (2 horas). Esta configuração atualiza a chave de entrada `SAML/Producer/assertionValidityInMinutes` no arquivo de configuração.
+   **Limite de Tempo de Sessão (Minutos):** O tempo, em minutos, antes que um usuário seja automaticamente desconectado do sistema. Por padrão, os componentes de formulários do AEM, como o Workbench, expiram após duas horas, independentemente da atividade ou inatividade, e o usuário deve fazer logon novamente. Os valores válidos são de `1` a `1440`. O valor padrão é `120` (2 horas). Esta configuração atualiza a chave de entrada `SAML/Producer/assertionValidityInMinutes` no arquivo de configuração.
 
    >[!NOTE]
    >
    >Você não deve definir o Limite de tempo de sessão abaixo de 10 minutos, pois o sistema pode não se comportar corretamente. O valor recomendado é de 10 a 120 (minutos).
 
-   **Limite de Asserção (Segundos):** Um tempo de buffer para compensar atrasos devido a diferenças de tempo do sistema entre os servidores de aplicativos de formulários AEM em um cluster. Os formulários AEM atualizam o tempo de logon de um usuário pela quantidade de tempo (em segundos) especificada nessa propriedade. Os valores válidos são de `0` a `3600`. O valor padrão é `60`. Esta configuração atualiza a chave de entrada `SAML/Producer/assertionThresholdInSeconds` no arquivo de configuração.
+   **Limite de Asserção (Segundos):** Um tempo de buffer para compensar atrasos devido a diferenças de tempo do sistema entre os servidores de aplicativos de formulários do AEM em um cluster. O AEM forms atualiza o tempo de logon de um usuário pela quantidade de tempo (em segundos) especificada nessa propriedade. Os valores válidos são de `0` a `3600`. O valor padrão é `60`. Esta configuração atualiza a chave de entrada `SAML/Producer/assertionThresholdInSeconds` no arquivo de configuração.
 
    **Máximo de Renovações Permitidas de uma Asserção:** O número máximo de vezes que a sessão de um usuário pode ser renovada de forma transparente, sem exigir logon. Os valores válidos são de `0` a `9999`. Um valor de `0` significa que as afirmações não são renovadas. O valor padrão é 10. Esta configuração atualiza a chave de entrada `SAML/Producer/maxAssertionRenewalCount` no arquivo de configuração.
 

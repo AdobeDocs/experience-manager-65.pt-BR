@@ -9,13 +9,29 @@ docset: aem65
 exl-id: c611a1f8-9d94-47f3-bed3-59eef722bf98
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '6846'
+source-wordcount: '6838'
 ht-degree: 0%
-
 ---
-
 # Editor de regras de formulários adaptáveis{#adaptive-forms-rule-editor}
 
 A Adobe <span class="preview"> recomenda usar os [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/using/create-an-adaptive-form-core-components.md) ou [adicionar o Forms Adaptável às páginas do AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
@@ -170,47 +186,47 @@ O tipo de regra **[!UICONTROL Definir Propriedade]** permite que você defina o 
 
 Ela permite definir regras para adicionar caixas de seleção dinamicamente ao formulário adaptável. Você pode usar uma função personalizada, um objeto de formulário ou uma propriedade de objeto para definir uma regra.
 
-![Set Property](assets/set_property_rule_new.png)
+![Definir Propriedade](assets/set_property_rule_new.png)
 
-To define a rule based on a custom function, select **Function Output** from the drop-down list, and drag-and-drop a custom function from the **Functions** tab. If the condition action is met, the number of checkboxes defined in the custom function are added to the adaptive form.
+Para definir uma regra com base em uma função personalizada, selecione **Saída da Função** na lista suspensa e arraste e solte uma função personalizada na guia **Funções**. Se a ação de condição for atendida, o número de caixas de seleção definidas na função personalizada será adicionado ao formulário adaptável.
 
-To define a rule based on a form object, select **Form Object** from the drop-down list, and drag-and-drop a form object from the **Form Objects** tab. If the condition action is met, the number of checkboxes defined in the form object are added to the adaptive form.
+Para definir uma regra baseada em um objeto de formulário, selecione **Objeto de formulário** na lista suspensa e arraste e solte um objeto de formulário da guia **Objetos de formulário**. Se a ação de condição for atendida, o número de caixas de seleção definidas no objeto de formulário será adicionado ao formulário adaptável.
 
-A Set Property rule based on an object property lets you add the number of checkboxes in an adaptive form based on another object property that is included in the adaptive form.
+Uma regra Definir propriedade com base em uma propriedade de objeto permite adicionar o número de caixas de seleção em um formulário adaptável com base em outra propriedade de objeto incluída no formulário adaptável.
 
-The following figure depicts an example of dynamically adding checkboxes based on the number of drop-down lists in the adaptive form:
+A figura a seguir mostra um exemplo de adição dinâmica de caixas de seleção com base no número de listas suspensas no formulário adaptável:
 
-![Object Property](assets/object_property_set_property_new.png)
+![Propriedade do objeto](assets/object_property_set_property_new.png)
 
-**Clear Value Of** Clears the value of the specified object.
+**Limpar Valor de** Limpa o valor do objeto especificado.
 
-**Set Focus** Sets focus on the specified object.
+**Definir Foco** Define o foco no objeto especificado.
 
-**Save Form** Saves the form.
+**Salvar formulário** Salva o formulário.
 
-**Submit Forms** Submits the form.
+**Enviar Forms** Envia o formulário.
 
-**Reset Form** Resets the form.
+**Redefinir formulário** Redefine o formulário.
 
-**Validate Form** Validates the form.
+**Validar formulário** Valida o formulário.
 
-**Add Instance** Adds an instance of the specified repeatable panel or table row.
+**Adicionar instância** Adiciona uma instância do painel ou linha de tabela repetível especificado.
 
-**Remove Instance** Removes an instance of the specified repeatable panel or table row.
+**Remover instância** Remove uma instância do painel ou linha de tabela repetível especificado.
 
-**Navigate to** Navigates to other Interactive Communications, adaptive forms, other assets such as images or document fragments, or an external URL. For more information, see [Add button to the Interactive Communication](../../forms/using/create-interactive-communication.md#addbuttontothewebchannel).
+**Navegar até** Navega até outras Comunicações interativas, formulários adaptáveis, outros ativos, como imagens ou fragmentos de documentos, ou uma URL externa. Para obter mais informações, consulte [Adicionar botão à Comunicação Interativa](../../forms/using/create-interactive-communication.md#addbuttontothewebchannel).
 
 ### Definir valor de {#set-value-of}
 
-The **[!UICONTROL Set Value of]** rule type lets you set the value of a form object depending on whether the specified condition is satisfied or not. The value can be set to a value of another object, a literal string, a value derived from a mathematical expression or a function, a value of a property of another object, or the output of a form data model service. Similarly, you can check for a condition on a component, string, property, or values derived from a function or mathematical expression.
+O tipo de regra **[!UICONTROL Definir Valor de]** permite que você defina o valor de um objeto de formulário, dependendo se a condição especificada é atendida ou não. O valor pode ser definido como um valor de outro objeto, uma string literal, um valor derivado de uma expressão matemática ou de uma função, um valor de uma propriedade de outro objeto ou a saída de um serviço de modelo de dados de formulário. Da mesma forma, você pode verificar uma condição em um componente, string, propriedade ou valores derivados de uma função ou expressão matemática.
 
-The Set Value Of rule type is not available for all form objects, such as panels and toolbar buttons. A standard Set Value Of rule has the following structure:
+O tipo de regra Definir valor de não está disponível para todos os objetos de formulário, como painéis e botões da barra de ferramentas. Uma regra padrão Definir valor de tem a seguinte estrutura:
 
 
 
-Set value of Object A to:
+Defina o valor do Objeto A como:
 
-(string ABC) OR
+(cadeia de caracteres ABC) OU
 (propriedade de objeto X do Objeto C) OU
 (valor de uma função) OR
 (valor de uma expressão matemática) OR
@@ -601,10 +617,10 @@ Como alternativa, você pode usar: `@argument` `{type} name <Parameter Descripti
 Mostra os parâmetros usados pela função. Uma função pode ter várias tags de parâmetro, uma tag para cada parâmetro na ordem de ocorrência.
   `{type}` representa o tipo de parâmetro. Os tipos de parâmetros permitidos são:
 
-   1. string
-   1. número
-   1. booleano
-   1. escopo
+  1. string
+  1. número
+  1. booleano
+  1. escopo
 
   O escopo é usado para campos de referência de um Formulário adaptável. Quando um formulário usa carregamento lento, você pode usar `scope` para acessar seus campos. Você pode acessar campos quando eles forem carregados ou se estiverem marcados como globais.
 
@@ -616,9 +632,9 @@ Como alternativa, você pode usar `@returns {type}`.
 Adiciona informações sobre a função, como seu objetivo.
   {type} representa o tipo de retorno da função. Os tipos de retorno permitidos são:
 
-   1. string
-   1. número
-   1. booleano
+  1. string
+  1. número
+  1. booleano
 
   Todos os outros tipos de retorno são categorizados em um dos itens acima. Nenhum não é compatível. Selecione um dos tipos acima. Os tipos de retorno não diferenciam maiúsculas de minúsculas.
 

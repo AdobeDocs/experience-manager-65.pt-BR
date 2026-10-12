@@ -9,20 +9,34 @@ role: Admin,User
 exl-id: 22926757-9cdb-4f8a-9bd9-16ddbc3f954a
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '902'
+source-wordcount: '921'
 ht-degree: 0%
-
 ---
-
 # Ajuste de desempenho do AEM Forms Server{#performance-tuning-of-aem-forms-server}
 
 Este artigo discute estratégias e práticas recomendadas que você pode implementar para reduzir gargalos e otimizar o desempenho da sua implantação do AEM Forms.
 
 ## Configurações de cache {#cache-settings}
 
-Você pode configurar e controlar a estratégia de armazenamento em cache do AEM Forms usando o componente **Configurações de Forms para dispositivos móveis** no Console de Configuração da Web do AEM em:
+Você pode configurar e controlar a estratégia de armazenamento em cache do AEM Forms usando o componente **Configurações de Forms Móvel** no Console de Configuração da Web do AEM em:
 
 * (AEM Forms no OSGi) `https://'[server]:[port]'/system/console/configMgr`
 * (AEM Forms no JEE) `https://'[server]:[port]'/lc/system/console/configMgr`
@@ -31,7 +45,7 @@ As opções disponíveis para armazenamento em cache são as seguintes:
 
 * **Nenhum**: força a não armazenar em cache nenhum artefato. Na prática, isso retarda o desempenho e exige alta disponibilidade de memória devido à ausência de cache.
 * **Conservador**: determina o armazenamento em cache somente dos artefatos intermediários gerados antes da renderização do formulário, como um modelo contendo fragmentos e imagens embutidas.
-* **Agressivo**: força o a armazenar em cache quase tudo o que pode ser armazenado em cache, incluindo conteúdo de HTML renderizado além de todos os artefatos do nível de armazenamento em cache Conservador. Ele resulta no melhor desempenho, mas também consome mais memória para armazenar artefatos em cache. Estratégia agressiva de armazenamento em cache significa que você obtém desempenho de tempo constante na renderização de um formulário conforme o conteúdo renderizado é armazenado em cache.
+* **Agressivo**: força o a armazenar em cache quase tudo o que pode ser armazenado em cache, incluindo conteúdo HTML renderizado, além de todos os artefatos do nível de armazenamento em cache Conservador. Ele resulta no melhor desempenho, mas também consome mais memória para armazenar artefatos em cache. Estratégia agressiva de armazenamento em cache significa que você obtém desempenho de tempo constante na renderização de um formulário conforme o conteúdo renderizado é armazenado em cache.
 
 As configurações de cache padrão do AEM Forms podem não ser boas o suficiente para alcançar o desempenho ideal. Portanto, é recomendável usar as seguintes configurações:
 
@@ -62,7 +76,7 @@ set CQ_JVM_OPTS=%CQ_JVM_OPTS% -XX:MaxPermSize=1024m
 
 ## Uso de um servidor Web {#using-a-web-server}
 
-Os formulários adaptáveis e os formulários HTML5 são renderizados no formato HTML5. A saída resultante pode ser grande, dependendo de fatores como o tamanho do formulário e as imagens no formulário. Para otimizar a transferência de dados, a abordagem recomendada é compactar a resposta de HTML usando o servidor Web do qual a solicitação está sendo atendida. Essa abordagem reduz o tamanho da resposta, o tráfego de rede e o tempo necessário para transmitir dados entre máquinas de servidor e cliente.
+Os formulários adaptáveis e o HTML5 são renderizados no formato HTML5. A saída resultante pode ser grande, dependendo de fatores como o tamanho do formulário e as imagens no formulário. Para otimizar a transferência de dados, a abordagem recomendada é compactar a resposta do HTML usando o servidor Web do qual a solicitação está sendo atendida. Essa abordagem reduz o tamanho da resposta, o tráfego de rede e o tempo necessário para transmitir dados entre máquinas de servidor e cliente.
 
 Por exemplo, execute as seguintes etapas para habilitar a compactação no Apache Web Server 2.0 de 32 bits com JBoss®:
 
@@ -146,26 +160,26 @@ Para melhorar o desempenho, você pode direcionar o software antivírus para exc
 
 * Diretório de instalação do AEM. Se não for possível excluir o diretório completo, exclua o seguinte:
 
-   * [Diretório de instalação do AEM]\crx-repository\temp
-   * [diretório de instalação do AEM]\crx-repository\repository
-   * [diretório de instalação do AEM]\crx-repository\launchpad
+  * [diretório de instalação do AEM]\crx-repository\temp
+  * [diretório de instalação do AEM]\crx-repository\repository
+  * [diretório de instalação do AEM]\crx-repository\launchpad
 
 * Diretório temporário do servidor de aplicativos. O local padrão é:
 
-   * (JBoss®) [diretório de instalação do AEM]\jboss\standalone\tmp
-   * (WebLogic) \Oracle\Middleware\user_projects\domains\LCDomain\servers\LCServer1\tmp
-   * (WebSphere®) \Programa Files\IBM\WebSphere\AppServer\profiles\AppSrv01\temp
+  * (JBoss®) [diretório de instalação do AEM]\jboss\standalone\tmp
+  * (WebLogic) \Oracle\Middleware\user_projects\domains\LCDomain\servers\LCServer1\tmp
+  * (WebSphere®) \Programa Files\IBM\WebSphere\AppServer\profiles\AppSrv01\temp
 
 * **(AEM Forms somente no JEE)** diretório de Armazenamento Global de Documentos (GDS). O local padrão é:
 
-   * (JBoss®) [raiz do appserver]/server/&#39;server&#39;/svcnative/DocumentStorage
-   * (WebLogic) [appserverdomain]/&#39;server&#39;/adobe/LiveCycleServer/DocumentStorage
-   * (WebSphere®) [raiz do appserver]/installedApps/adobe/&#39;server&#39;/DocumentStorage
+  * (JBoss®) [raiz do appserver]/server/&#39;server&#39;/svcnative/DocumentStorage
+  * (WebLogic) [appserverdomain]/&#39;server&#39;/adobe/LiveCycleServer/DocumentStorage
+  * (WebSphere®) [raiz do appserver]/installedApps/adobe/&#39;server&#39;/DocumentStorage
 
 * **(AEM Forms somente no JEE)** logs e diretório temporário do AEM Forms Server. O local padrão é:
 
-   * Logs do servidor - [diretório de instalação do AEM Forms]\Adobe\AEM forms\[app-server]\server\all\logs
-   * Diretório temporário - [Diretório de instalação do AEM Forms]\temp
+  * Logs do servidor - [diretório de instalação do AEM Forms]\Adobe\AEM forms\[app-server]\server\all\logs
+  * Diretório temporário - [Diretório de instalação do AEM Forms]\temp
 
 >[!NOTE]
 >

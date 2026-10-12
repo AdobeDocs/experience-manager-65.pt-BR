@@ -10,13 +10,20 @@ role: Admin
 exl-id: ecd30f5d-ad31-4482-96d3-c92f1cf91336
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2481'
-ht-degree: 1%
-
+source-wordcount: '2489'
+ht-degree: 2%
 ---
-
 # Sincronização de usuários das comunidades {#communities-user-synchronization}
 
 ## Introdução {#introduction}
@@ -102,7 +109,7 @@ A sincronização de usuários depende do ambiente do autor para gerenciar as di
 
 As configurações a seguir são necessárias para habilitar a sincronização de usuários no AEM Communities. Verifique se essas configurações estão corretas para evitar a falha da distribuição de conteúdo do sling.
 
-### Apache Sling Distribution Agent - Fábrica de agentes de sincronização {#apache-sling-distribution-agent-sync-agents-factory}
+### Apache Sling Distribution Agent – Fábrica de agentes de sincronização {#apache-sling-distribution-agent-sync-agents-factory}
 
 Essa configuração busca o conteúdo a ser sincronizado entre os editores. A configuração está na instância do Autor. O Autor tem que acompanhar todos os editores que estão lá e onde sincronizar todas as informações.
 
@@ -130,7 +137,7 @@ Para configurar os agentes de sincronização do Apache Sling:
 
    ![fato-agente-sincronização](assets/sync-agent-fact.png)
 
-### Distribuição do Adobe Granite - Provedor secreto de transporte de senha criptografada {#adobe-granite-distribution-encrypted-password-transport-secret-provider}
+### Adobe Granite Distribution – Provedor de segredo de transporte de senha criptografada {#adobe-granite-distribution-encrypted-password-transport-secret-provider}
 
 Ele permite que o autor identifique o usuário autorizado como tendo permissão para sincronizar dados do usuário a partir do autor para publicar.
 
@@ -179,7 +186,8 @@ Para configurar os dados (caminhos de nó) a serem sincronizados:
 
 ### Distribuição do Adobe Granite - Diff Observer Fatory {#adobe-granite-distribution-diff-observer-factory}
 
-Essa configuração sincroniza a associação de grupo entre editores.Se a alteração da associação de um grupo em um editor não atualizar sua associação em outros editores, verifique se **ref:members** foi adicionado a **nomes de propriedades pesquisados**.
+Essa configuração sincroniza a associação de grupo entre editores.
+Se a alteração da associação de um grupo em um editor não atualizar sua associação em outros editores, verifique se **ref:members** foi adicionado a **nomes de propriedades pesquisados**.
 
 Para garantir a sincronização de membros:
 
@@ -305,7 +313,8 @@ Repita essas etapas até que todas as instâncias de publicação tenham uma Sli
 
 ### Fábrica do Package Builder do Vault {#vault-package-builder-factory}
 
-Para que as atualizações sejam sincronizadas corretamente, é necessário modificar o construtor de pacotes do Vault para sincronização do usuário.Em `/home/users`, um nó `*/rep:cache` é criado. É um cache usado para descobrir que, se consultarmos o nome principal de um nó, esse cache poderá ser usado diretamente.
+Para que as atualizações sejam sincronizadas corretamente, é necessário modificar o construtor de pacotes do Vault para sincronização do usuário.
+Em `/home/users`, um nó `*/rep:cache` é criado. É um cache usado para descobrir que, se consultarmos o nome principal de um nó, esse cache poderá ser usado diretamente.
 
 A sincronização de usuários pode ser interrompida se `rep :cache` nós forem sincronizados entre editores.
 
@@ -390,4 +399,5 @@ Para depurar:
 1. Verifique a [ordem dos logs](/help/communities/sync.md#troubleshoot-sling-distribution-in-aem-communities) criados na criação do usuário.
 1. Verifique se um pacote **vlt** foi criado em **/var/sling/distribution/packages/socialpubsync-vlt/data**.
 1. Agora, ative a sincronização do usuário na instância do autor do AEM.
-1. No publicador, altere os pontos de extremidade do exportador ou do importador no **Apache Sling Distribution Agent - Sync Agents Fatory**.Podemos baixar e extrair dados do pacote para verificar todas as propriedades que são enviadas para outros editores e quais dados são perdidos.
+1. No publicador, altere os pontos de extremidade do exportador ou do importador no **Apache Sling Distribution Agent - Sync Agents Fatory**.
+Podemos baixar e extrair dados do pacote para verificar todas as propriedades que são enviadas para outros editores e quais dados são perdidos.

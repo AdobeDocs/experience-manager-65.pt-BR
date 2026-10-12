@@ -10,13 +10,22 @@ exl-id: 8314d7fe-0a46-453d-9592-f1bcd8c8f10a
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '211'
-ht-degree: 80%
-
+source-wordcount: '253'
+ht-degree: 79%
 ---
-
 
 # Introdução ao desenvolvimento do AEM Sites - Tutorial de WKND{#getting-started-developing-aem-sites-wknd-tutorial}
 
@@ -37,9 +46,9 @@ A meta deste tutorial de várias partes é ensinar a um desenvolvedor novo no AE
 A implementação do tutorial utiliza muitos recursos avançados do AEM. O site será implementado usando:
 
 * [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=pt-BR)
-* [Modelos sling](https://sling.apache.org/documentation/bundles/models.html)
+* [Modelos do Sling](https://sling.apache.org/documentation/bundles/models.html)
 * [Interface de toque](/help/sites-developing/touch-ui-concepts.md)
-* [Componentes principais](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/introduction)
+* [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR)
 * [Modelos editáveis](/help/sites-developing/page-templates-editable.md)
 
 Prossiga pelo tutorial antes de mergulhar nos conceitos acima em detalhes.

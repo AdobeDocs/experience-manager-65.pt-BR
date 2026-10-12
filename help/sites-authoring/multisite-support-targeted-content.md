@@ -9,13 +9,33 @@ exl-id: 5e345ffd-4e9c-467f-8ebb-c798eeb61dea
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Multi Site Manager
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e86b80f2-7cb0-4646-8fcd-51d3bf272fce
+    internal-label: Multi Site Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2838'
+source-wordcount: '2853'
 ht-degree: 82%
-
 ---
-
 # Trabalhar com conteúdo direcionado em vários sites{#working-with-targeted-content-in-multisites}
 
 Se precisar gerenciar conteúdo direcionado, como atividades, experiências e ofertas entre seus sites, você poderá aproveitar o suporte integrado a vários sites do AEM para conteúdo direcionado.
@@ -67,18 +87,18 @@ Com o suporte a vários sites para conteúdo direcionado, você pode, por exempl
 
 * Um conjunto completamente *distinto* de conteúdo direcionado - A edição de conteúdo direcionado em um dos sites não afeta o outro. Sites vinculados à áreas distintas fazem leituras e gravações em suas próprias áreas configuradas. Por exemplo:
 
-   * O site A é vinculado à área X
-   * O site B é vinculado à área Y
+  * O site A é vinculado à área X
+  * O site B é vinculado à área Y
 
 * Um conjunto *compartilhado* de conteúdo direcionado - A edição em um site afeta os dois sites diretamente; você pode configurar isso fazendo com que dois sites referenciem à mesma área. Sites vinculados à mesma área compartilham o conteúdo direcionado nessa área. Por exemplo:
 
-   * O site A é vinculado à área X
-   * O Site B é vinculado à Área X
+  * O site A é vinculado à área X
+  * O Site B é vinculado à Área X
 
 * Um conjunto distinto de conteúdo direcionado *herdado* de outro site por meio do MSM. O conteúdo pode ser implantado de forma unidirecional do original para a Live Copy. Por exemplo:
 
-   * O site A é vinculado à área X
-   * O Site B é vinculado à Área Y (que é uma Live Copy da Área X)
+  * O site A é vinculado à área X
+  * O Site B é vinculado à Área Y (que é uma Live Copy da Área X)
 
 Também é possível ter **múltiplas** marcas usadas em um site, o que pode ser mais complexo do que este exemplo.
 

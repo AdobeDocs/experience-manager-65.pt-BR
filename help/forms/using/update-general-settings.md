@@ -9,13 +9,27 @@ exl-id: 3e74cda2-ba3e-4ee9-b7d0-76a804232199
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 1%
-
 ---
-
 # Atualização de configurações gerais{#updating-general-settings}
 
 >[!NOTE]
@@ -54,9 +68,9 @@ Você pode fazer as seguintes alterações nas configurações do seu aplicativo
 * **Tela de aterrissagem**: para definir o local de início ([Tela inicial](../../forms/using/home-screen.md)) do aplicativo.
 Opções disponíveis:
 
-   * Forms
-   * Tarefas
-   * Favoritos
+  * Forms
+  * Tarefas
+  * Favoritos
 
 * **Categoria padrão**: permite que você selecione a categoria de formulários a serem exibidos na tela inicial. Ao selecionar Tudo, você pode ver todos os formulários na tela inicial. As categorias são preenchidas com base nos formulários carregados no aplicativo. Os Forms estão disponíveis no aplicativo com base nas configurações de formulário especificadas no servidor do AEM Forms.
 

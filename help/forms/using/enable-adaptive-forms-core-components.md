@@ -9,13 +9,27 @@ role: Admin, Developer
 feature: Adaptive Forms,Core Components
 exl-id: 6585ea71-6242-47d3-bc59-6f603cf507b6
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 0487a5669fbaab35974eb85eb099b82e0847a4f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '962'
-ht-degree: 3%
-
+source-wordcount: '1079'
+ht-degree: 7%
 ---
-
 # Ativar os componentes principais adaptáveis do Forms no AEM 6.5 Forms {#enable-adaptive-forms-core-components}
 
 | Versão | Link do artigo |
@@ -112,7 +126,7 @@ Para criar um projeto baseado no Arquétipo AEM 41 ou [mais tarde](https://githu
 
       >[!NOTE]
       >
-      >* Incluir na lista de permissões Se você configurar qualquer outra topologia, certifique-se de que o envio, o preenchimento prévio e outros URLs necessários, juntamente com os seletores necessários (por exemplo, `/content/forms/*model.json`), sejam adicionados à pesquisa na camada do Dispatcher.
+      >* Se você configurar qualquer outra topologia, verifique se o envio, o preenchimento prévio e outras URLs necessárias, juntamente com os seletores necessários (por exemplo, `/content/forms/*model.json`), foram adicionados ao incluo na lista de permissões na camada do Dispatcher.
 
    1. Salvar e fechar o arquivo.
 

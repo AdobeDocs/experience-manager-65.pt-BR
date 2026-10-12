@@ -14,18 +14,30 @@ autotag-review: '2026-05-18T18:33:16.243Z'
 TQID: 'https://experienceleague.adobe.com/t3-PFZjnQPbbgNMFEjG7SDwG1Pt1TkvD9wNNYYgaEyE'
 product_v2:
   - id: e14eb250-3c22-4a07-9061-a78112b2b826
+    internal-label: Experience Manager 6.5
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: d4b6216b-4a89-4ff0-8ac0-5a699ba23100
+    internal-label: Images and videos
+subfeature_v2:
+  - id: b1c2c8dc-d13a-43c3-9c5b-efc536a708ca
+    internal-label: 360 VR Video
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-source-git-commit: 9c96b6744c7af2f061b4dfbf403560047485f9b5
+    internal-label: Intermediate
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: 1191
+source-wordcount: '1187'
 ht-degree: 0%
-
 ---
-
 # Vídeo 360/VR {#vr-video}
 
 Vídeos de 360 graus gravam uma vista em todas as direções ao mesmo tempo. Elas são filmadas usando uma câmera onidirecional ou uma coleção de câmeras. Durante a reprodução em uma tela plana, o usuário tem controle do ângulo de visão; as reproduções em dispositivos móveis geralmente usam seus controles giroscópicos incorporados.
@@ -69,14 +81,14 @@ Consulte [Editar vídeo 360/VR](https://helpx.adobe.com/br/premiere-pro/how-to/e
 
    * Idealmente, o conteúdo original de 360 vídeos é melhor ter uma das seguintes resoluções:
 
-      * 1080p - 1920 x 1080, conhecido como resolução Full HD ou FHD ou
-      * 2160p - 3840 x 2160, conhecido como resolução 4k, UHD ou Ultra HD. Essa grande resolução de tela é mais frequentemente encontrada em televisores premium e monitores de computador. A resolução de 2160p é frequentemente chamada de &quot;4k&quot; porque a largura é próxima a 4000 pixels. Em outras palavras, oferece quatro vezes mais pixels do que 1080p.
+     * 1080p - 1920 x 1080, conhecido como resolução Full HD ou FHD ou
+     * 2160p - 3840 x 2160, conhecido como resolução 4k, UHD ou Ultra HD. Essa grande resolução de tela é mais frequentemente encontrada em televisores premium e monitores de computador. A resolução de 2160p é frequentemente chamada de &quot;4k&quot; porque a largura é próxima a 4000 pixels. Em outras palavras, oferece quatro vezes mais pixels do que 1080p.
 
    * [Crie um Perfil de Vídeo Adaptável personalizado](/help/assets/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming) com representações de maior qualidade. Por exemplo, crie um Perfil de vídeo adaptável que contenha as três configurações a seguir:
 
-      * width=auto; height=720; bitrate=2500 kbps
-      * width=auto; height=1080; bitrate=5000 kbps
-      * width=auto; height=1440; bitrate=6600 kbps
+     * width=auto; height=720; bitrate=2500 kbps
+     * width=auto; height=1080; bitrate=5000 kbps
+     * width=auto; height=1440; bitrate=6600 kbps
 
    * Processe conteúdo de 360 vídeos em uma pasta dedicada exclusivamente a 360 ativos de vídeo.
 
@@ -92,8 +104,8 @@ Por padrão, o Experience Manager detecta o vídeo como &quot;360&quot; se sua p
 
 * `/conf/global/settings/cloudconfigs/dmscene7/jcr:content`
 
-   * **Tipo de propriedade** - Duplo
-   * **Valor** - taxa de proporção de ponto flutuante, padrão 2.0.
+  * **Tipo de propriedade** - Duplo
+  * **Valor** - taxa de proporção de ponto flutuante, padrão 2.0.
 
 Depois de definir essa propriedade, ela entrará em vigor imediatamente nos vídeos existentes e nos vídeos recém-carregados.
 

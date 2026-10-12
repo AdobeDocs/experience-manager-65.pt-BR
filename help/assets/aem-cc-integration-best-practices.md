@@ -1,6 +1,6 @@
 ---
 title: Integração com as práticas recomendadas da Adobe Creative Cloud
-description: Práticas recomendadas para integrar [!DNL Adobe Experience Manager] com [!DNL Adobe Creative Cloud] a fim de simplificar os fluxos de trabalho de transferência de ativos e alcançar alta velocidade de conteúdo.
+description: Práticas recomendadas para integrar [!DNL Adobe Experience Manager] a [!DNL Adobe Creative Cloud] a fim de simplificar os fluxos de trabalho de transferência de ativos e alcançar alta velocidade de conteúdo.
 contentOwner: AG
 mini-toc-levels: 1
 role: User, Admin
@@ -8,13 +8,35 @@ feature: Collaboration,Adobe Asset Link,Desktop App
 exl-id: c7d589a3-1c5f-4ff0-879e-15e1c556f6dc
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+  - id: e17747bc-9b7b-44e6-a443-f54229a02620
+    internal-label: Integrations
+  - id: da0dfbce-df02-4f8b-b32d-a4e3b1d05085
+    internal-label: Configuration
+subfeature_v2:
+  - id: f7212149-7f65-4e43-89c2-1f075f45be16
+    internal-label: Collaboration
+  - id: f14a07fd-abc1-452c-8a48-fbcbc24a66ef
+    internal-label: Adobe Asset Link
+  - id: d18d21f5-ea10-400d-a1f0-a2071ad38419
+    internal-label: Desktop App
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '3371'
+source-wordcount: '3390'
 ht-degree: 14%
-
 ---
-
 # Práticas recomendadas de integração do [!DNL Adobe Experience Manager] e do [!DNL Creative Cloud] {#aem-and-creative-cloud-integration-best-practices}
 
 | Versão | Link do artigo |
@@ -135,7 +157,7 @@ Para projetar um fluxo de trabalho eficiente entre as equipes de criação e mar
 
 Armazenar ativos no DAM facilita o acesso e a localização. Ele garante que os ativos possam ser usados por vários usuários em toda a organização ou ecossistema, o que inclui parceiros, clientes e assim por diante.
 
-A maioria das organizações opta por armazenar somente ativos que sejam relevantes para os processos de marketing/LOB de downstream (publicação em canais como o canal da Web via [!DNL Experience Manager Sites] ou outros canais atendidos pela Adobe Experience Cloud - Marketing Cloud, Advertising Cloud e medidos pela Analytics Cloud, fornecidos a usuários/parceiros etc.). Além disso, as organizações armazenam ativos que podem estar sujeitos a um processo de revisão/aprovação no DAM. Dessa forma, o DAM armazena principalmente ativos que têm altas chances de serem usados e evita o armazenamento de ativos ociosos.
+A maioria das organizações opta por armazenar somente ativos que sejam relevantes para os processos de marketing/LOB de downstream (publicação em canais como o canal da Web via [!DNL Experience Manager Sites] ou outros canais servidos pela Adobe Experience Cloud - Marketing Cloud, Advertising Cloud e medido pela Analytics Cloud, fornecimento para usuários/parceiros etc). Além disso, as organizações armazenam ativos que podem estar sujeitos a um processo de revisão/aprovação no DAM. Dessa forma, o DAM armazena principalmente ativos que têm altas chances de serem usados e evita o armazenamento de ativos ociosos.
 
 O armazenamento de ativos também está sujeito a considerações técnicas e de utilização de recursos. O DAM fornece serviços adicionais sobre ativos armazenados, incluindo extração de metadados, controle de versão, geração de visualizações/transcodificação, gerenciamento de referências e adição de informações de controle de acesso. Esses serviços consomem mais tempo e recursos de infraestrutura.
 

@@ -8,13 +8,31 @@ feature: Document Services,APIs & Integrations
 exl-id: 585d4053-1056-4d2b-a9df-9516775afe50
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '364'
+source-wordcount: '362'
 ht-degree: 14%
-
 ---
-
 # Uso da API sendToPrinter {#using-the-sendtoprinter-api}
 
 ## Visão geral {#overview}
@@ -27,11 +45,11 @@ No AEM Forms, você pode usar o serviço SendToPrinter para enviar um documento 
 
   Ao enviar um documento para uma impressora, especifique um destes protocolos de impressão:
 
-   * **XÍCARAS** `: A printing protocol named common UNIX printing system. This protocol is used for UNIX operating systems and enables a computer to function as a print server. The print server accepts print requests from client applications, processes them, and sends them to configured printers. On the IBM AIX® operating system, usage of CUPS is not recommended.`
-   * **DirectIP** `: A standard protocol for remote printing and managing print jobs. This protocol can be used locally or remotely. Print queues are not required.`
-   * &quot;**LPD** `: A printing protocol named Line Printer Daemon protocol or Line Printer Remote (LPR) protocol. This protocol provides network print server functionality for UNIX-based systems.`
-   * **SharedPrinter** `: A printing protocol that enables a computer to use a printer that is configured for that computer.`
-   * **CIF**: o serviço de Saída dá suporte ao protocolo de impressão CIF (Common Internet File System).
+  * **XÍCARAS** `: A printing protocol named common UNIX printing system. This protocol is used for UNIX operating systems and enables a computer to function as a print server. The print server accepts print requests from client applications, processes them, and sends them to configured printers. On the IBM AIX® operating system, usage of CUPS is not recommended.`
+  * **DirectIP** `: A standard protocol for remote printing and managing print jobs. This protocol can be used locally or remotely. Print queues are not required.`
+  * &quot;**LPD** `: A printing protocol named Line Printer Daemon protocol or Line Printer Remote (LPR) protocol. This protocol provides network print server functionality for UNIX-based systems.`
+  * **SharedPrinter** `: A printing protocol that enables a computer to use a printer that is configured for that computer.`
+  * **CIFS**: o serviço de saída oferece suporte ao protocolo de impressão CIFS (Common Internet File System).
 
 ## Uso do Serviço SendToPrinter {#using-sendtoprinter-service}
 
@@ -57,15 +75,15 @@ A tabela abaixo lista:
 | DirectIP | Inválido | Qualquer | uma exceção informando que a impressora não pode ser encontrada. |
 | DirectIP | Válido | Qualquer | Trabalho de impressão bem-sucedido. |
 | CIFS | Válido | Vazio | Trabalho de impressão bem-sucedido. |
-| CIFS | Inválido | Qualquer | erro desconhecido ao imprimir usando CIF. |
+| CIFS | Inválido | Qualquer | erro desconhecido ao imprimir usando CIFS. |
 | CIFS | Vazio | Qualquer | uma exceção informando que o argumento necessário sPrintServerUri não pode estar vazio. |
 
 ## Suporte à autenticação {#authentication-support}
 
-A autenticação é suportada somente para impressão CIF. Para autenticar, forneça o nome de usuário/senha/domínio em PrinterSpec. Você pode criptografar uma senha usando o serviço de suporte AEM Granite Cyprus executando as seguintes etapas:
+A autenticação é suportada somente para impressão CIFS. Para autenticar, forneça o nome de usuário/senha/domínio em PrinterSpec. Você pode criptografar uma senha usando o Serviço de Suporte do Chip no AEM Granite executando as seguintes etapas:
 
 1. Acesse https://&lt;server>:&lt;port>/system/console.
 
 1. Vá para **[!UICONTROL Principal]** > **[!UICONTROL Suporte de Criptografia]**.
 
-1. Insira texto sem formatação e clique em **[!UICONTROL Protect]**.
+1. Insira um texto sem formatação e clique em **[!UICONTROL Proteger]**.

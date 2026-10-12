@@ -10,13 +10,22 @@ exl-id: 6e67f2b3-78b9-45f2-b496-61776b9fd9cc
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '649'
-ht-degree: 0%
-
+source-wordcount: '690'
+ht-degree: 1%
 ---
-
 # Personalização dos Consoles {#customizing-the-consoles}
 
 >[!CAUTION]
@@ -60,7 +69,7 @@ Por exemplo, o seguinte local dentro da estrutura `/libs` pode ser sobreposto:
 
 * consoles (qualquer console com base nas páginas de interface do Granite); por exemplo:
 
-   * `/libs/wcm/core/content`
+  * `/libs/wcm/core/content`
 
 >[!NOTE]
 >
@@ -151,7 +160,6 @@ Para personalizar as colunas na exibição de lista:
 1. Opcionalmente:
 
    * Se quiser conectar dados adicionais, você precisará gravar um [PageInforProvider](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageInfoProvider.html) com um
-
      Propriedade `pageInfoProviderType`.
 
    Por exemplo, consulte a classe/pacote anexado (do GitHub) abaixo.

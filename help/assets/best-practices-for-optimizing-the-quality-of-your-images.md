@@ -9,13 +9,24 @@ feature: Asset Management
 role: User, Admin
 exl-id: 7a568cae-e505-4b3a-abc5-8aae723460c3
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1504'
+source-wordcount: '1506'
 ht-degree: 4%
-
 ---
-
 # Práticas recomendadas para otimização da qualidade de imagens no Dynamic Media {#best-practices-for-optimizing-the-quality-of-your-images}
 
 A otimização da qualidade da imagem pode ser um processo demorado, pois muitos fatores contribuem para a obtenção de resultados aceitáveis. O resultado é parcialmente subjetivo porque os indivíduos percebem a qualidade da imagem de forma diferente. A experimentação estruturada é fundamental.
@@ -26,7 +37,7 @@ O Adobe Experience Manager inclui mais de 100 comandos de entrega de imagem do D
 
 * JPG ou PNG são as melhores opções para fornecer imagens em boa qualidade e com tamanho e peso gerenciáveis.
 * Se nenhum comando format for fornecido no URL, o padrão do Dynamic Media Image Delivery é JPG para entrega.
-* A JPG compacta a uma proporção de 10:1 e geralmente produz arquivos de imagem menores. O PNG é compactado em uma proporção de aproximadamente 2:1, exceto às vezes, como quando as imagens contêm um fundo branco. Geralmente, porém, os tamanhos dos arquivos PNG são maiores que os arquivos JPG.
+* O JPG é compactado a uma proporção de 10:1 e geralmente produz arquivos de imagem menores. O PNG é compactado em uma proporção de aproximadamente 2:1, exceto às vezes, como quando as imagens contêm um fundo branco. Geralmente, porém, os tamanhos dos arquivos PNG são maiores que os arquivos JPG.
 * O JPG usa compactação com perdas, o que significa que os elementos de imagem (pixels) são soltos durante a compactação. Por outro lado, o PNG usa compactação sem perdas.
 * O JPG geralmente compacta imagens fotográficas com melhor fidelidade do que imagens sintéticas com bordas nítidas e contraste.
 * Se as imagens contiverem transparência, use PNG, pois o JPG não oferece suporte a essa transparência.
@@ -60,24 +71,24 @@ Há dois métodos de nitidez de imagem que podem ser usados:
 * Nitidez simples ( `&op_sharpen`) - Semelhante ao filtro de nitidez usado no Photoshop, a nitidez simples aplica a nitidez básica à exibição final da imagem após o redimensionamento dinâmico. No entanto, esse método não é configurável pelo usuário. A prática recomendada é não usar &amp;op_sharpen, a menos que seja necessário.
 * Mascaramento sem nitidez ( `&op_USM`) - O mascaramento sem nitidez é um filtro de nitidez padrão do setor. A prática recomendada é tornar mais nítidas as imagens com mascaramento sem nitidez, seguindo as diretrizes abaixo. O mascaramento sem nitidez permite controlar os três parâmetros a seguir:
 
-   * `&op_sharpen=amount,radius,threshold`
+  * `&op_sharpen=amount,radius,threshold`
 
-      * **[!UICONTROL *quantidade *]**(0-5, intensidade do efeito.)
-      * **[!UICONTROL *raio *]**(0-250, largura das &quot;linhas de nitidez&quot; desenhadas ao redor do objeto com nitidez, conforme medido em pixels.)
+    * **[!UICONTROL *quantidade *]**(0-5, intensidade do efeito.)
+    * **[!UICONTROL *raio *]**(0-250, largura das &quot;linhas de nitidez&quot; desenhadas ao redor do objeto com nitidez, conforme medido em pixels.)
 
-     Lembre-se de que o raio e a quantidade dos parâmetros funcionam uns contra os outros. A redução do raio pode ser compensada pelo aumento da quantidade. O raio permite um controle mais fino, pois um valor mais baixo aplica nitidez apenas aos pixels da borda, enquanto um valor mais alto aplica nitidez a uma faixa mais ampla de pixels.
+    Lembre-se de que o raio e a quantidade dos parâmetros funcionam uns contra os outros. A redução do raio pode ser compensada pelo aumento da quantidade. O raio permite um controle mais fino, pois um valor mais baixo aplica nitidez apenas aos pixels da borda, enquanto um valor mais alto aplica nitidez a uma faixa mais ampla de pixels.
 
-      * **[!UICONTROL *limite *]**(0-255, sensibilidade de efeito.)
+    * **[!UICONTROL *limite *]**(0-255, sensibilidade de efeito.)
 
-            Esse parâmetro determina como deve ser a diferença dos pixels com nitidez em relação à área ao redor antes de serem considerados pixels de borda e o filtro ajuste a nitidez deles. O parâmetro **[!UICONTROL limite]** ajuda a evitar áreas de nitidez excessiva com cores semelhantes, como tons de pele. Por exemplo, um valor limite de 12 ignora pequenas variações no brilho do tom da pele para evitar a adição de &quot;ruído&quot;, enquanto ainda adiciona o contraste da borda a áreas de alto contraste, como onde as pálpebras tocam a pele.
-        
-        Para obter mais informações sobre como você define esses três parâmetros, incluindo as práticas recomendadas para usar com o filtro, consulte os seguintes recursos:
+          Esse parâmetro determina como deve ser a diferença dos pixels com nitidez em relação à área ao redor antes de serem considerados pixels de borda e o filtro ajuste a nitidez deles. O parâmetro **[!UICONTROL limite]** ajuda a evitar áreas de nitidez excessiva com cores semelhantes, como tons de pele. Por exemplo, um valor limite de 12 ignora pequenas variações no brilho do tom da pele para evitar a adição de &quot;ruído&quot;, enquanto ainda adiciona o contraste da borda a áreas de alto contraste, como onde as pálpebras tocam a pele.
+      
+      Para obter mais informações sobre como você define esses três parâmetros, incluindo as práticas recomendadas para usar com o filtro, consulte os seguintes recursos:
 
-        Tópico da Ajuda do Experience Manager sobre Nitidez de uma imagem.
+      Tópico da Ajuda do Experience Manager sobre Nitidez de uma imagem.
 
-        Informe oficial de práticas recomendadas [Nitidez de imagens no Adobe Dynamic Media Classic](/help/assets/assets/sharpening_images.pdf).
+      Informe oficial de práticas recomendadas [Nitidez de imagens no Adobe Dynamic Media Classic](/help/assets/assets/sharpening_images.pdf).
 
-      * O Experience Manager também permite controlar um quarto parâmetro: monocromático (0,1). Esse parâmetro determina se a máscara de nitidez é aplicada separadamente a cada componente de cor usando o valor 0 ou ao brilho/intensidade da imagem usando o valor 1.
+    * O Experience Manager também permite controlar um quarto parâmetro: monocromático (0,1). Esse parâmetro determina se a máscara de nitidez é aplicada separadamente a cada componente de cor usando o valor 0 ou ao brilho/intensidade da imagem usando o valor 1.
 
 Como prática recomendada, comece com o parâmetro Tirar nitidez do raio da máscara. As configurações de raio com as quais você pode começar são as seguintes:
 
@@ -98,8 +109,8 @@ Deixe a configuração de parâmetro monocromático em 0.
 * Como prática recomendada, para ficar no meio, defina o `qlt= value` como 85 para ficar no meio.
 * Usando o sinalizador de croma em `qlt=`
 
-   * O parâmetro `qlt=` tem uma segunda configuração que permite ativar a redução de resolução de cromaticidade de RGB usando o valor `,1` ou desativado usando o valor `,0`.
-   * Para simplificar, comece com a redução de resolução de cromaticidade do RGB desativada (`,0`). Essa configuração geralmente resulta em melhor qualidade de imagem, especialmente para imagens sintéticas com muitas bordas e contraste nítidos.
+  * O parâmetro `qlt=` tem uma segunda configuração que permite ativar a redução de resolução de cromaticidade de RGB usando o valor `,1` ou desativado usando o valor `,0`.
+  * Para simplificar, comece com a redução de resolução de cromaticidade do RGB desativada (`,0`). Essa configuração geralmente resulta em melhor qualidade de imagem, especialmente para imagens sintéticas com muitas bordas e contraste nítidos.
 
 Como prática recomendada para a compactação JPG, use `&qlt=85,0`.
 

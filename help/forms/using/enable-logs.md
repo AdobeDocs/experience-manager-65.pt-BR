@@ -1,5 +1,5 @@
 ---
-title: Habilitar registro para formulários HTML5
+title: Habilitar o registro para formulários HTML5
 description: O utilitário logger habilita o registro em log de um formulário e ajuda a depurar problemas relacionados ao formulário.
 contentOwner: robhagat
 content-type: reference
@@ -10,22 +10,37 @@ feature: HTML5 Forms,Mobile Forms
 exl-id: 2f574c98-550c-4b84-be1e-46a2700e7277
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '644'
 ht-degree: 4%
-
 ---
+# Habilitar o registro para formulários HTML5{#enable-logging-for-html-forms}
 
-# Habilitar registro para formulários HTML5{#enable-logging-for-html-forms}
-
-Você pode configurar o utilitário logger para começar a criar registros para formulários HTML5. O utilitário logger tem vários níveis, você pode definir um nível de acordo com seus requisitos. os formulários HTML5 têm componentes de servidor e cliente. Você pode configurar logs para ambos os componentes.
+Você pode configurar o utilitário logger para começar a criar registros para os formulários HTML5. O utilitário logger tem vários níveis, você pode definir um nível de acordo com seus requisitos. Os formulários HTML5 têm componentes de servidor e cliente. Você pode configurar logs para ambos os componentes.
 
 ## Configurar o registro do lado do servidor {#configuring-server-side-logging}
 
 Execute as seguintes etapas para configurar registros do lado do servidor:
 
-1. Ir para `https://'[server]:[port]'/system/console/configMgr`. Localize e abra a opção *Configuração do log do Apace Sling*. Uma caixa de diálogo é exibida:
+1. Acesse `https://'[server]:[port]'/system/console/configMgr`. Localize e abra a opção *Configuração do log do Apace Sling*. Uma caixa de diálogo é exibida:
 
    ![&#x200B; Caixa de diálogo de opção de configuração do agente de log do Apace Sling &#x200B;](assets/logconfig.png)
 
@@ -43,7 +58,7 @@ Execute as seguintes etapas para configurar registros do lado do servidor:
 
 ## Configurando o registro do cliente {#configuring-client-logging}
 
-Você pode usar os seguintes métodos para ativar o registro do lado do cliente em formulários HTML5:
+Você pode usar os seguintes métodos para ativar o registro do lado do cliente nos formulários HTML5:
 
 * Usando o parâmetro de solicitação chamado `log`
 * Utilização do CQ Configuration Manager

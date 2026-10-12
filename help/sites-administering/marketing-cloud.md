@@ -1,6 +1,6 @@
 ---
 title: Integração com a Adobe Experience Cloud
-description: Saiba como integrar o Adobe Experience Manager ao Adobe Experience Cloud.
+description: Saiba como integrar o Adobe Experience Manager com a Adobe Experience Cloud.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
@@ -9,27 +9,36 @@ exl-id: ba518290-dd82-44dc-ae7c-c8152df89179
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '825'
-ht-degree: 1%
-
+source-wordcount: '868'
+ht-degree: 2%
 ---
-
 # Integração com a Adobe Experience Cloud{#integrating-with-the-adobe-marketing-cloud}
 
-O [Adobe Experience Cloud](https://business.adobe.com/br/products/marketing-cloud/main.html) inclui produtos avançados de análise da Web e otimização de sites, que fornecem dados e insights acionáveis e em tempo real para impulsionar iniciativas online bem-sucedidas. Ele oferece uma plataforma integrada e aberta para a otimização de negócios on-line. A nuvem consiste em aplicativos integrados para coletar e liberar o poder do insight do cliente para otimizar os esforços de aquisição, conversão e retenção do cliente, bem como a criação e a distribuição de conteúdo.
+A [Adobe Experience Cloud](https://business.adobe.com/br/products/marketing-cloud/main.html) inclui produtos avançados de análise da Web e otimização de sites, que fornecem dados e insights acionáveis e em tempo real para impulsionar iniciativas online bem-sucedidas. Ele oferece uma plataforma integrada e aberta para a otimização de negócios on-line. A nuvem consiste em aplicativos integrados para coletar e explorar o potencial do insight do cliente para otimizar os esforços de aquisição, conversão e retenção do cliente, bem como a criação e a distribuição de conteúdo.
 
 Com o Adobe Experience Manager (AEM), você pode se integrar perfeitamente aos seguintes produtos da Adobe Experience Cloud:
 
 * O Adobe Analytics fornece aos profissionais de marketing inteligência acionável em tempo real sobre estratégias online e iniciativas de marketing.
 * O Adobe Target oferece aos profissionais de marketing a capacidade de tornar continuamente seu conteúdo online mais relevante para os clientes, gerando uma conversão maior.
 * O Adobe Dynamic Media Classic automatiza o gerenciamento de mídia, simplifica a publicação na Web e aprimora as experiências, tudo em um ambiente hospedado.
-* Adobe O Dynamic Tag Management fornece aos profissionais de marketing ferramentas intuitivas para gerenciar de maneira rápida e fácil um número ilimitado de tags de Adobe e de terceiros.
+* O Adobe Dynamic Tag Management fornece aos profissionais de marketing ferramentas intuitivas para gerenciar de maneira rápida e fácil um número ilimitado de tags da Adobe e de terceiros.
 <!-- Search&Promote is end of life as of September 1, 2022 * Adobe Search&Promote gives marketers the ability to control and optimize the search results on their sites. -->
 * O Adobe Campaign permite gerenciar o conteúdo de delivery de email diretamente no Adobe Experience Manager.
 
-Além disso, você pode [integrar o AEM ao Creative Cloud](/help/assets/aem-cc-integration-best-practices.md) e aos [serviços de terceiros](/help/sites-administering/third-party-services.md).
+Além disso, você pode [integrar o AEM com o Creative Cloud](/help/assets/aem-cc-integration-best-practices.md) e com [serviços de terceiros](/help/sites-administering/third-party-services.md).
 
 ## Integração ao Adobe Analytics {#integrating-with-adobe-analytics}
 
@@ -82,13 +91,13 @@ Para obter mais informações sobre como o Adobe Experience Manager se integra a
 
 ## Integração com o Adobe Dynamic Tag Management {#integrating-with-adobe-dynamic-tag-management}
 
-[Adobe O Dynamic Tag Management](https://business.adobe.com/br/products/experience-platform/adobe-experience-platform.html) fornece aos profissionais de marketing ferramentas intuitivas para gerenciar de maneira rápida e fácil um número ilimitado de tags de Adobe e de terceiros. Você tem mais controle e flexibilidade para otimizar praticamente qualquer coisa on-line, tudo isso enquanto reduz a dependência dos recursos de TI.
+[Adobe Dynamic Tag Management](https://business.adobe.com/br/products/experience-platform/adobe-experience-platform.html) fornece aos profissionais de marketing ferramentas intuitivas para gerenciar de maneira rápida e fácil um número ilimitado de tags da Adobe e de terceiros. Você tem mais controle e flexibilidade para otimizar praticamente qualquer coisa on-line, tudo isso enquanto reduz a dependência dos recursos de TI.
 
-[Integre o Adobe Dynamic Tag Management](/help/sites-administering/dtm.md) com o AEM para que você possa usar suas propriedades da Web do Dynamic Tag Management AEM para rastrear os sites do.
+[Integre o Adobe Dynamic Tag Management](/help/sites-administering/dtm.md) com o AEM para que você possa usar suas propriedades da Web do Dynamic Tag Management para rastrear sites do AEM.
 
 ## Integração com o Adobe Audience Manager {#integrating-with-adobe-audience-manager}
 
-A integração de Audience Manager foi removida no AEM 6.3.
+A integração do Audience Manager foi removida no AEM 6.3.
 
 <!-- Search&Promote is end of life as of September 1, 2022 ## Integrating with Search&Promote {#integrating-with-search-promote} -->
 

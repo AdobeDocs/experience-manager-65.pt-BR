@@ -1,19 +1,31 @@
 ---
-title: Suporte a cookie Same Site para AEM 6.5
-description: Saiba mais sobre o Suporte a cookies do mesmo site para AEM 6.5.
+title: Suporte a cookies Same Site para o AEM 6.5
+description: Saiba mais sobre o Suporte a cookies do mesmo site para o AEM 6.5.
 topic-tags: security
 exl-id: e1616385-0855-4f70-b787-b01701929bbc
 solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
-source-git-commit: db7830895c8a2d1b7228dc4780296d43f15776df
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '225'
-ht-degree: 77%
-
+source-wordcount: '232'
+ht-degree: 78%
 ---
-
-# Suporte a cookie Same Site para AEM 6.5 {#same-site-cookie-support-for-aem-65}
+# Suporte a cookies Same Site para o AEM 6.5 {#same-site-cookie-support-for-aem-65}
 
 Desde a versão 80, o Chrome e, mais tarde, o Safari introduziram um novo modelo para segurança de cookies. Esse modo é projetado para introduzir controles de segurança em torno da disponibilidade de cookies para sites de terceiros, por meio de uma configuração chamada `SameSite`. Para obter informações mais detalhadas, consulte este artigo [web.dev - SameSite cookies explained](https://web.dev/samesite-cookies-explained/).
 

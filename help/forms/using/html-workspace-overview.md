@@ -9,20 +9,38 @@ exl-id: 0bedcbd9-2cf8-47da-9440-c773982e550c
 solution: Experience Manager, Experience Manager Forms
 feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1019'
+source-wordcount: '1056'
 ht-degree: 0%
-
 ---
-
 # Trabalhar com o espaço de trabalho do AEM Forms{#working-with-aem-forms-workspace}
 
 ## Introdução {#introduction}
 
 O espaço de trabalho do AEM Forms faz parte do AEM Forms. O Workspace facilita a representação do HTML Forms, além do PDF forms. Agora você pode se envolver em processos de negócios a partir de interfaces móveis e aplicativos da Web.
 
-Além disso, o espaço de trabalho da AEM Forms é altamente personalizável usando o HTML padrão e as metodologias de desenvolvimento JavaScript™. É um software baseado em componentes que se integra facilmente a outros aplicativos da Web.
+Além disso, o espaço de trabalho da AEM Forms é altamente personalizável usando as metodologias padrão de desenvolvimento da HTML e da JavaScript™. É um software baseado em componentes que se integra facilmente a outros aplicativos da Web.
 
 Para obter mais informações, consulte [Introdução ao AEM Forms workspace](/help/forms/using/introduction-html-workspace.md).
 
@@ -111,7 +129,7 @@ Alguns dos recursos do Flex Workspace que não estão disponíveis no espaço de
 
 ### Arquitetura {#architecture}
 
-O espaço de trabalho do AEM Forms é um aplicativo web baseado em HTML e JavaScript™ hospedado na CRX™. Quando o URL do Workspace é aberto em um navegador, um recurso do CRX™ é acessado e o aplicativo é renderizado como uma página de HTML no navegador. As bibliotecas JavaScript e o código JavaScript personalizado gerenciam o comportamento interno e externo do aplicativo, como a interface do usuário, a interação do usuário e a comunicação com o servidor do AEM Forms. Para obter mais detalhes, consulte a [arquitetura](/help/forms/using/html-workspace-architecture.md) do espaço de trabalho do AEM Forms.
+O espaço de trabalho do AEM Forms é um aplicativo web baseado em HTML e JavaScript™ hospedado na CRX™. Quando o URL do Workspace é aberto em um navegador, um recurso do CRX™ é acessado e o aplicativo é renderizado como uma página do HTML no navegador. As bibliotecas JavaScript e o código JavaScript personalizado gerenciam o comportamento interno e externo do aplicativo, como a interface do usuário, a interação do usuário e a comunicação com o servidor do AEM Forms. Para obter mais detalhes, consulte a [arquitetura](/help/forms/using/html-workspace-architecture.md) do espaço de trabalho do AEM Forms.
 
 ### Personalização do espaço de trabalho do AEM Forms {#aem-forms-workspace-customization}
 
@@ -119,21 +137,21 @@ O espaço de trabalho do AEM Forms oferece suporte a uma grande variedade de per
 
 * Aparências da interface do usuário
 * Funcionalidade usando personalizações semânticas
-* Reutilização de componentes HTML em outros aplicativos web
+* Reutilizar componentes do HTML em outras aplicações web
 
 O artigo [personalização](introduction-customizing-html-workspace.md#types-of-customizations) explica os tipos dessas personalizações.
 
 ### Configurar o ambiente do desenvolvedor {#set-up-the-developer-environment}
 
-Os materiais de entrega do espaço de trabalho do AEM Forms incluem um pacote do CRX implantado no CRX, um arquivo SDK que contém o código fonte completo, bibliotecas JavaScript de terceiros e scripts de build do espaço de trabalho do AEM Forms. Use-as para configurar o ambiente do desenvolvedor para executar as personalizações mencionadas acima. Para obter mais detalhes, consulte [Criação do código do espaço de trabalho do AEM Forms](introduction-customizing-html-workspace.md#building-html-workspace-code).
+Os materiais de entrega do espaço de trabalho do AEM Forms incluem um pacote CRX implantado no CRX, um arquivo SDK que contém o código fonte completo, bibliotecas JavaScript de terceiros e scripts de build do espaço de trabalho do AEM Forms. Use-as para configurar o ambiente do desenvolvedor para executar as personalizações mencionadas acima. Para obter mais detalhes, consulte [Criação do código do espaço de trabalho do AEM Forms](introduction-customizing-html-workspace.md#building-html-workspace-code).
 
 É possível personalizar uma parte importante da interface e da funcionalidade principal, como fontes, esquema de cores, logotipo, tela de logon, caixas de diálogo de erro, integração com aplicativos de terceiros e reutilização de componentes em aplicativos de terceiros. Você também pode aprimorar o conteúdo exibido na página Resumo da tarefa, mostrar imagens para ações de rota de tarefa e até modificar os Modelos e Exibições de backbone de baixo nível que criam o aplicativo de espaço de trabalho do AEM Forms.
 
-### Renderização de HTML do XDP Forms {#html-rendering-of-xdp-forms}
+### Renderização do HTML para o XDP Forms {#html-rendering-of-xdp-forms}
 
-Por padrão, para um novo processo, um formulário XDP é renderizado no formato PDF em um desktop e no formato HTML em um tablet. É possível renderizar um formulário XDP no formato HTML sempre. Para obter detalhes, consulte [Novos serviços de renderização e envio](/help/forms/using/new-render-submit-service.md).
+Por padrão, para um novo processo, um formulário XDP é renderizado no formato PDF em um desktop e no formato HTML em um tablet. É sempre possível renderizar um formulário XDP no formato HTML. Para obter detalhes, consulte [Novos serviços de renderização e envio](/help/forms/using/new-render-submit-service.md).
 
-O recurso [Forms Móvel](https://helpx.adobe.com/livecycle/help/mobile-forms/introduction.html), que funciona com [perfis](https://helpx.adobe.com/livecycle/help/mobile-forms/creating-profile.html), habilita a representação HTML de formulários XDP. Por padrão, o &quot;Renderizar novo formulário de HTML&quot; usa o perfil `default.html`, que você pode alterar. Você também pode adicionar alterações personalizadas que ocorrem antes de renderizar um formulário XDP no formato HTML.
+O recurso [Forms Móvel](https://helpx.adobe.com/livecycle/help/mobile-forms/introduction.html), que funciona com [perfis](https://helpx.adobe.com/livecycle/help/mobile-forms/creating-profile.html), habilita a representação HTML de formulários XDP. Por padrão, o &quot;Renderizar novo formulário do HTML&quot; usa o perfil `default.html`, que você pode alterar. Você também pode adicionar alterações personalizadas que ocorrem antes de renderizar um formulário XDP no formato HTML.
 
 ## aplicativo de espaço de trabalho do AEM Forms {#aem-forms-workspace-app}
 

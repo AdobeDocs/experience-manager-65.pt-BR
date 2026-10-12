@@ -9,16 +9,30 @@ exl-id: 601c8d95-0d1a-4945-a522-e85d3e9fc4ae
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '292'
+source-wordcount: '293'
 ht-degree: 5%
-
 ---
-
 # Fazer logon em workflows do AEM Forms{#logging-in-aem-forms-workflows}
 
-As etapas de Forms Workflow fornecem registros detalhados para depurar problemas relacionados ao fluxo de trabalho convenientemente. Habilite o log de depuração para workflows do AEM Forms para visualizar os logs.
+As etapas do Forms Workflow fornecem logs detalhados para depurar problemas relacionados ao fluxo de trabalho convenientemente. Habilite o log de depuração para workflows do AEM Forms para visualizar os logs.
 
 Por padrão, todas as informações de log estão disponíveis no arquivo **error.log** no diretório */crx-repository/logs/*.
 
@@ -70,7 +84,7 @@ O exemplo a seguir ilustra os logs da etapa Assinar documento:
 Use os logs para avaliar se:
 
 * Você está usando uma configuração correta do Adobe Sign.
-* O Serviço Adobe Sign é encerrado após a criação bem-sucedida de um contrato.
+* O Serviço do Adobe Sign é encerrado após a criação bem-sucedida de um contrato.
 * A etapa Assinar documento sai com uma mensagem de sucesso.
 
 Se houver uma exceção, você poderá exibir o rastreamento de pilha completo para avaliar a causa do erro.
@@ -79,9 +93,9 @@ Se houver uma exceção, você poderá exibir o rastreamento de pilha completo p
 
 Faça o seguinte para ativar o log de depuração para workflows do AEM Forms:
 
-1. Vá para o gerenciador de configuração do console da Web do AEM em:
+1. Acesse o gerenciador de configurações do console da Web do AEM em:
 
-   https://&#39;[server]:[port]&#39;/system/console/configMgr
+   https://'[server]:[port]'/system/console/configMgr
 
 1. Selecione **[!UICONTROL Sling]** > **[!UICONTROL Suporte De Log]**.
 1. Selecione **[!UICONTROL Adicionar novo Agente.]**

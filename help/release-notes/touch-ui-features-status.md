@@ -1,17 +1,31 @@
 ---
 title: Status do recurso da interface de toque
-description: Notas de versão específicas da  [!DNL Adobe Experience Manager] Interface Habilitada para Toque.
+description: Notas de versão específicas para a interface de usuário habilitada para toque do [!DNL Adobe Experience Manager].
 exl-id: 7b71e8db-e8c6-4470-bc22-db3d4600b7fc
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: ed762d86-a04b-452b-a08f-86359bb8ff27
+    internal-label: Configuration and operations
+subfeature_v2:
+  - id: c21ccc2b-e0c8-4853-bf41-f12259ed93f8
+    internal-label: Release information
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '1136'
+source-wordcount: '1137'
 ht-degree: 14%
-
 ---
-
 # Status do recurso da interface de toque {#touch-ui-feature-status}
 
 Adobe Experience Manager (AEM) 6.4 em diante [A interface clássica está obsoleta](../release-notes/deprecated-removed-features.md). A Adobe não está mais fazendo aprimoramentos na interface clássica, e os usuários são incentivados a usar os novos recursos avançados disponíveis na interface habilitada para toque.

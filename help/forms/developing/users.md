@@ -9,13 +9,25 @@ role: Developer
 exl-id: d7c5bb84-a988-4b2e-a587-f4e5b50fea58
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
-source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '6201'
+source-wordcount: '6236'
 ht-degree: 0%
-
 ---
-
 # Gerenciamento de usuários {#managing-users}
 
 **Exemplos e exemplos neste documento são somente para AEM Forms no ambiente JEE.**
@@ -83,7 +95,7 @@ A tabela a seguir descreve cada etapa do processo de autenticação.
 
 >[!NOTE]
 >
->Se o fuso horário do servidor for diferente do fuso horário do cliente, ao consumir o WSDL para o serviço AEM Forms Generate PDF em uma pilha de SOAP nativa usando um cliente .NET em um cluster do WebSphere Application Server, poderá ocorrer o seguinte erro de autenticação do User Management:
+>Se o fuso horário do servidor for diferente do fuso horário do cliente, ao consumir o WSDL para o serviço AEM Forms Generate PDF em uma pilha nativa do SOAP usando um cliente .NET em um cluster do WebSphere Application Server, poderá ocorrer o seguinte erro de autenticação do User Management:
 
 `[com.adobe.idp.um.webservices.WSSecurityHandler] errorCode:12803 errorCodeHEX:0x3203 message:WSSecurityHandler: UM authenticate returns exception : An error was discovered processing the <wsse:Security> header. (WSSecurityEngine: Invalid timestamp The security semantics of message have expired).`
 
@@ -203,7 +215,7 @@ Adicione usuários usando a API de serviço do Diretory Manager (Java):
 
 [Resumo das etapas](users.md#summary-of-steps)
 
-[Início rápido (modo SOAP): Adição de usuários usando a API Java](/help/forms/developing/user-manager-java-api-quick.md#quick-start-soap-mode-adding-users-using-the-java-api)
+[Início rápido (modo SOAP): adição de usuários usando a API Java](/help/forms/developing/user-manager-java-api-quick.md#quick-start-soap-mode-adding-users-using-the-java-api)
 
 [Inclusão de arquivos da biblioteca Java do AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -229,10 +241,10 @@ Adicionar usuários usando a API de Serviço do Gerenciador de Diretórios (serv
    * Defina o campo `MessageEncoding` do objeto `System.ServiceModel.BasicHttpBinding` como `WSMessageEncoding.Mtom`. Esse valor garante que a MTOM seja usada.
    * Ative a autenticação HTTP básica executando as seguintes tarefas:
 
-      * Atribua o nome de usuário dos formulários AEM ao campo `DirectoryManagerServiceClient.ClientCredentials.UserName.UserName`.
-      * Atribua o valor de senha correspondente ao campo `DirectoryManagerServiceClient.ClientCredentials.UserName.Password`.
-      * Atribua o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Atribua o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
+     * Atribua o nome de usuário dos formulários AEM ao campo `DirectoryManagerServiceClient.ClientCredentials.UserName.UserName`.
+     * Atribua o valor de senha correspondente ao campo `DirectoryManagerServiceClient.ClientCredentials.UserName.Password`.
+     * Atribua o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Atribua o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Definir informações do usuário.
 
@@ -358,10 +370,10 @@ Exclua usuários usando a API de Serviço do Gerenciador de Diretórios (serviç
    * Defina o campo `MessageEncoding` do objeto `System.ServiceModel.BasicHttpBinding` como `WSMessageEncoding.Mtom`. Esse valor garante que a MTOM seja usada.
    * Ative a autenticação HTTP básica executando as seguintes tarefas:
 
-      * Atribua o nome de usuário dos formulários AEM ao campo `DirectoryManagerServiceClient.ClientCredentials.UserName.UserName`.
-      * Atribua o valor de senha correspondente ao campo `DirectoryManagerServiceClient.ClientCredentials.UserName.Password`.
-      * Atribua o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Atribua o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
+     * Atribua o nome de usuário dos formulários AEM ao campo `DirectoryManagerServiceClient.ClientCredentials.UserName.UserName`.
+     * Atribua o valor de senha correspondente ao campo `DirectoryManagerServiceClient.ClientCredentials.UserName.Password`.
+     * Atribua o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Atribua o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Especifique o usuário a ser excluído.
 
@@ -694,10 +706,10 @@ Gerencie funções e permissões usando a API de serviço do Gerenciador de auto
    * Defina o campo `MessageEncoding` do objeto `System.ServiceModel.BasicHttpBinding` como `WSMessageEncoding.Mtom`. Esse valor garante que a MTOM seja usada.
    * Ative a autenticação HTTP básica executando as seguintes tarefas:
 
-      * Atribua o nome de usuário dos formulários AEM ao campo `AuthorizationManagerServiceClient.ClientCredentials.UserName.UserName`.
-      * Atribua o valor de senha correspondente ao campo `AuthorizationManagerServiceClient.ClientCredentials.UserName.Password`.
-      * Atribua o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Atribua o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
+     * Atribua o nome de usuário dos formulários AEM ao campo `AuthorizationManagerServiceClient.ClientCredentials.UserName.UserName`.
+     * Atribua o valor de senha correspondente ao campo `AuthorizationManagerServiceClient.ClientCredentials.UserName.Password`.
+     * Atribua o valor constante `HttpClientCredentialType.Basic` ao campo `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+     * Atribua o valor constante `BasicHttpSecurityMode.TransportCredentialOnly` ao campo `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Chame as operações de função ou permissão apropriadas.
 
@@ -783,7 +795,7 @@ Depois de criar o cliente de serviço, você pode chamar a operação de autenti
 
 **Recuperar o contexto de autenticação**
 
-Depois de autenticar o usuário, você pode criar um contexto com base no usuário autenticado. Em seguida, você pode usar o conteúdo para chamar outros serviços da AEM Forms. Por exemplo, você pode usar o contexto para criar um `EncryptionServiceClient` e criptografar um documento PDF com uma senha. Verifique se o usuário autenticado tem a função de nome `Services User` que é necessária para invocar um serviço AEM Forms.
+Depois de autenticar o usuário, você pode criar um contexto com base no usuário autenticado. Em seguida, você pode usar o conteúdo para chamar outros serviços da AEM Forms. Por exemplo, você pode usar o contexto para criar um `EncryptionServiceClient` e criptografar um documento do PDF com uma senha. Verifique se o usuário autenticado tem a função de nome `Services User` que é necessária para invocar um serviço AEM Forms.
 
 **Consulte também**
 
@@ -793,7 +805,7 @@ Depois de autenticar o usuário, você pode criar um contexto com base no usuár
 
 [Início Rápido da API do Gerenciador de Usuários](/help/forms/developing/user-manager-java-api-quick.md#user-manager-java-api-quick-start-soap)
 
-[Criptografar documentos PDF com senha](/help/forms/developing/encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-a-password)
+[Criptografar documentos do PDF com uma senha](/help/forms/developing/encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-a-password)
 
 ### Autenticar um usuário usando a API Java {#authenticate-a-user-using-the-java-api}
 
@@ -851,7 +863,7 @@ Autentique um usuário usando a API de serviço do Authentication Manager (servi
 
 ## Sincronização programática de usuários {#programmatically-synchronizing-users}
 
-Você pode sincronizar usuários de forma programática usando a API de gerenciamento de usuários. Ao sincronizar usuários, você está atualizando o AEM Forms com dados do usuário que estão no repositório do usuário. Por exemplo, suponha que você adicione novos usuários ao repositório de usuários. Após executar uma operação de sincronização, os novos usuários se tornam usuários de formulários AEM. Além disso, os usuários que não estão mais no repositório de usuários são removidos do AEM Forms.
+Você pode sincronizar usuários de forma programática usando a API de gerenciamento de usuários. Ao sincronizar usuários, você está atualizando o AEM Forms com dados do usuário que estão no repositório do usuário. Por exemplo, suponha que você adicione novos usuários ao repositório de usuários. Após executar uma operação de sincronização, os novos usuários se tornam usuários dos formulários do AEM. Além disso, os usuários que não estão mais no repositório de usuários são removidos do AEM Forms.
 
 O diagrama a seguir mostra a sincronização do AEM Forms com um repositório de usuário.
 
@@ -924,7 +936,7 @@ Após executar programaticamente uma operação de sincronização, você pode d
 
 [Início Rápido da API do Gerenciador de Usuários](/help/forms/developing/user-manager-java-api-quick.md#user-manager-java-api-quick-start-soap)
 
-[Criptografar documentos PDF com senha](/help/forms/developing/encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-a-password)
+[Criptografar documentos do PDF com uma senha](/help/forms/developing/encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-a-password)
 
 ### Sincronização programática de usuários usando a API Java {#programmatically-synchronizing-users-using-the-java-api}
 

@@ -5,13 +5,25 @@ feature: Content Fragments
 role: User
 exl-id: 25c91a85-06ff-4666-a809-46778a689e25
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 11a8181e860c724c817dd549b351df079c8227e2
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: a45b1e7f-e65f-4cd3-be86-5cec5d9449ef
+    internal-label: Content management
+subfeature_v2:
+  - id: b7f5d1e0-aa2f-4a55-83f4-c2b35a8bd3a7
+    internal-label: Content fragments
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1728'
-ht-degree: 74%
-
+source-wordcount: '1741'
+ht-degree: 75%
 ---
-
 # Gerenciamento dos Fragmentos de conteúdo {#managing-content-fragments}
 
 Saiba como usar o console Assets para gerenciar os fragmentos de conteúdo do AEM, a base do conteúdo headless.
@@ -59,7 +71,7 @@ O método para criar um fragmento de conteúdo é:
 
    * [Modelo](/help/assets/content-fragments/content-fragments-models.md) - usado para criar um fragmento que requer conteúdo estruturado; por exemplo, o modelo **Aventura**
 
-      * Todos os modelos disponíveis são exibidos.
+     * Todos os modelos disponíveis são exibidos.
 
    Após a seleção, use **Avançar** para continuar.
 
@@ -69,23 +81,23 @@ O método para criar um fragmento de conteúdo é:
 
    * **Básico**
 
-      * **Título**
+     * **Título**
 
-        O título do fragmento.
+       O título do fragmento.
 
-        Obrigatório.
+       Obrigatório.
 
-      * **Descrição**
+     * **Descrição**
 
-      * **Tags**
+     * **Tags**
 
    * **Avançado**
 
-      * **Nome**
+     * **Nome**
 
-        O name; é usado para formar o URL.
+       O name; é usado para formar o URL.
 
-        Obrigatório; será derivado automaticamente do título, mas pode ser atualizado.
+       Obrigatório; será derivado automaticamente do título, mas pode ser atualizado.
 
 1. Selecione **Criar** para concluir a ação e, em seguida, **Abra** o fragmento para editar ou retorne ao console com **Concluído**.
 
@@ -105,17 +117,17 @@ Selecione o fragmento para revelar a barra de ferramentas com ações aplicávei
 
 * **Download**
 
-   * Salve o fragmento como um arquivo ZIP; é possível definir se deseja incluir Elementos, Variações, Metadados.
+  * Salve o fragmento como um arquivo ZIP; é possível definir se deseja incluir Elementos, Variações, Metadados.
 
 * **Criar**
 * **Check-out**
 * **Propriedades**
 
-   * Permite visualizar e/ou editar os metadados do fragmento.
+  * Permite visualizar e/ou editar os metadados do fragmento.
 
 * **Editar**
 
-   * Permite [abrir o fragmento para edição de conteúdo](/help/assets/content-fragments/content-fragments-variations.md) junto com seus elementos, variações, conteúdo associado e metadados.
+  * Permite [abrir o fragmento para edição de conteúdo](/help/assets/content-fragments/content-fragments-variations.md) junto com seus elementos, variações, conteúdo associado e metadados.
 
 * **Gerenciar Marcas**
 * **Para a coleção**
@@ -191,17 +203,17 @@ Alguns recursos na barra de ferramentas superior estão disponíveis em vários 
 
 * Abaixo do nome do fragmento, você pode ver o nome do [Modelo de fragmento de conteúdo](/help/assets/content-fragments/content-fragments-models.md) usado para criar o fragmento atual:
 
-   * O nome também é um link que abre o editor de modelo.
+  * O nome também é um link que abre o editor de modelo.
 
 * Veja o status do fragmento; por exemplo, informações sobre quando ele foi criado, modificado ou publicado.
 
 * **Salvar** fornece acesso à opção **Salvar e fechar**.
 
-* O menu suspenso de três pontos (**...**) fornece acesso a ações adicionais:
-   * **Atualizar referências de página**
-      * Isso atualiza todas as referências de página.
-   * **[Publicação rápida](#publishing-and-referencing-a-fragment)**
-   * **[Gerenciar publicação](#publishing-and-referencing-a-fragment)**
+* Os três pontos (**...**) fornece acesso a ações adicionais:
+  * **Atualizar referências de página**
+    * Isso atualiza todas as referências de página.
+  * **[Publicação rápida](#publishing-and-referencing-a-fragment)**
+  * **[Gerenciar publicação](#publishing-and-referencing-a-fragment)**
 
 <!--
 * See the status of the fragment; for example, information about when it was created, modified or published. The status is also color-coded:
@@ -227,8 +239,8 @@ O editor tem várias opções:
 
 * **Salvar** e **Salvar e fechar**
 
-   * **Salvar** salva as alterações mais recentes e permanece no editor.
-   * **Salvar e fechar** salva as alterações mais recentes e fecha o editor.
+  * **Salvar** salva as alterações mais recentes e permanece no editor.
+  * **Salvar e fechar** salva as alterações mais recentes e fecha o editor.
 
   >[!CAUTION]
   >
@@ -290,17 +302,17 @@ Além das opções padrão, a [Linha de tempo](/help/assets/manage-assets.md#tim
 * Visualizar informações sobre versões, comentários e anotações
 * Ações para versões
 
-   * **[Reverter para esta versão](#reverting-to-a-version)** (selecione um fragmento existente e, em seguida, uma versão específica)
+  * **[Reverter para esta versão](#reverting-to-a-version)** (selecione um fragmento existente e, em seguida, uma versão específica)
 
-   * **[Comparar com atual](#comparing-fragment-versions)** (selecione um fragmento existente e, em seguida, uma versão específica)
+  * **[Comparar com atual](#comparing-fragment-versions)** (selecione um fragmento existente e, em seguida, uma versão específica)
 
-   * Adicionar um **Rótulo** e/ou **Comentário** (selecione um fragmento existente e, em seguida, uma versão específica)
+  * Adicionar um **Rótulo** e/ou **Comentário** (selecione um fragmento existente e, em seguida, uma versão específica)
 
-   * **Salvar como versão** (selecione um fragmento existente e, em seguida, a seta para cima na parte inferior da Linha de tempo)
+  * **Salvar como versão** (selecione um fragmento existente e, em seguida, a seta para cima na parte inferior da Linha de tempo)
 
 * Ações para anotações
 
-   * **Excluir**
+  * **Excluir**
 
 >[!NOTE]
 >
@@ -334,9 +346,9 @@ Elas serão mostradas lado a lado, onde:
 
 * Quaisquer diferenças serão destacadas
 
-   * Texto excluído — vermelho
-   * Texto inserido — verde
-   * Texto substituído — azul
+  * Texto excluído — vermelho
+  * Texto inserido — verde
+  * Texto substituído — azul
 
 * O ícone de tela cheia permite abrir uma versão por conta própria e, em seguida, voltar para a visualização paralela
 * É possível **Reverter** para a versão específica

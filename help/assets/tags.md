@@ -11,13 +11,29 @@ feature: Viewers
 role: User, Admin, Developer
 exl-id: 161dfe22-bc1c-4b60-8ab6-a19407a39e2e
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: bd0d2470-932c-4269-8eca-6d939b72d9ef
+    internal-label: Dynamic Media
+subfeature_v2:
+  - id: d17d085a-e808-49dd-b9a6-85a996b999bd
+    internal-label: Viewers
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '6951'
-ht-degree: 6%
-
+source-wordcount: '6946'
+ht-degree: 7%
 ---
-
 # Integrar visualizadores do Dynamic Media com tags do Adobe Analytics e do Experience Platform {#integrating-dynamic-media-viewers-with-adobe-analytics-and-adobe-launch}
 
 ## O que é a integração do Dynamic Media Viewers com as Tags do Adobe Analytics e do Experience Platform? {#what-is-dynamic-media-viewers-integration-with-adobe-analytics-and-adobe-launch}
@@ -130,7 +146,7 @@ O exemplo de configuração a seguir nas Tags do Experience Platform demonstra c
 
 ### Sobre o Adobe Analytics para áudio e vídeo {#about-adobe-analytics-for-audio-and-video}
 
-Quando uma conta do Experience Cloud é assinada para usar o Adobe Analytics para áudio e vídeo, basta habilitar o rastreamento de vídeo nas configurações de extensão do *Visualizadores do Dynamic Media*. As métricas de vídeo são disponibilizadas no Adobe Analytics. O rastreamento de vídeo depende da presença da extensão Adobe Media Analytics for Audio and Video.
+Quando uma conta da Experience Cloud é assinada para usar o Adobe Analytics para áudio e vídeo, basta habilitar o rastreamento de vídeo nas configurações de extensão do *Visualizadores do Dynamic Media*. As métricas de vídeo são disponibilizadas no Adobe Analytics. O rastreamento de vídeo depende da presença da extensão Adobe Media Analytics for Audio and Video.
 
 Consulte [Instalação e configuração de extensões](#installing-and-setup-of-extensions).
 
@@ -225,13 +241,13 @@ O valor exato retornado pelo Elemento de dados depende do contexto. Se o Element
 * O Elemento de Dados **[!UICONTROL ZoomScale]** aponta para o evento **[!UICONTROL ZOOM]** e seu argumento de &quot;escala&quot;.
 * Regra de **[!UICONTROL TrackPan]** com o seguinte:
 
-   * Usa o evento **[!UICONTROL PAN]** do Visualizador do Dynamic Media como um disparador.
-   * Envia o valor do Elemento de Dados **[!UICONTROL ZoomScale]** para o Adobe Analytics.
+  * Usa o evento **[!UICONTROL PAN]** do Visualizador do Dynamic Media como um disparador.
+  * Envia o valor do Elemento de Dados **[!UICONTROL ZoomScale]** para o Adobe Analytics.
 
 * Regra **[!UICONTROL TrackKey]** com o seguinte:
 
-   * Usa o evento de pressionamento de tecla da extensão Tags do Experience Platform principal como um acionador.
-   * Envia o valor do Elemento de Dados **[!UICONTROL ZoomScale]** para o Adobe Analytics.
+  * Usa o evento de pressionamento de tecla da extensão Tags do Experience Platform principal como um acionador.
+  * Envia o valor do Elemento de Dados **[!UICONTROL ZoomScale]** para o Adobe Analytics.
 
 Agora, suponha que o usuário final carregue a página da Web com os dois visualizadores. No *visualizador1*, eles ampliam para 50% da escala; em seguida, no *visualizador2*, eles ampliam para 25% da escala. No *visualizador1*, eles deslocam a imagem e finalmente selecionam uma tecla no teclado.
 
@@ -428,7 +444,7 @@ Além disso, se essa solução de integração for usada com o Experience Manage
 * [!DNL Adobe Developer Console] - a integração foi criada para Marcas do Experience Platform.
 * Nó do autor do Experience Manager - configuração do IMS e configuração da nuvem de Tags do Experience Platform.
 
-Como parte da configuração, verifique se você tem acesso a uma empresa no Adobe Experience Cloud que já tenha as Tags do Adobe Analytics e do Experience Platform ativadas.
+Como parte da configuração, verifique se você tem acesso a uma empresa na Adobe Experience Cloud que já tenha as Tags do Adobe Analytics e do Experience Platform habilitadas.
 
 ## Configurar o Adobe Analytics para a integração {#configuring-adobe-analytics-for-the-integration}
 
@@ -442,7 +458,7 @@ Consulte também o [Guia de implementação do Analytics](https://experienceleag
 
 **Para configurar o Adobe Analytics para a integração:**
 
-1. Comece acessando o Adobe Analytics na [home page](https://experience.adobe.com/#/home) do Experience Cloud. Na barra de menus, selecione o ícone **[!UICONTROL Soluções]** (uma tabela de três por três pontos) próximo ao canto superior direito da página e selecione **[!UICONTROL Analytics]**.
+1. Comece acessando o Adobe Analytics na [página inicial](https://experience.adobe.com/#/home) da Experience Cloud. Na barra de menus, selecione o ícone **[!UICONTROL Soluções]** (uma tabela de três por três pontos) próximo ao canto superior direito da página e selecione **[!UICONTROL Analytics]**.
 
    ![2019-07-22_18-08-47](assets/2019-07-22_18-08-47.png)
 
@@ -508,7 +524,7 @@ Após configurar as Tags do Experience Platform, você deve configurar as seguin
 
 **Para configurar as Marcas do Experience Platform para a integração:**
 
-1. Comece acessando as Marcas do Experience Platform na [página inicial](https://experience.adobe.com/#/home) do Experience Cloud. Na barra de menus, selecione o ícone **[!UICONTROL Soluções]** (três por três tabelas de pontos) próximo ao canto superior direito da página e selecione **[!UICONTROL Marcas]**.
+1. Comece acessando as Marcas do Experience Platform na [página inicial](https://experience.adobe.com/#/home) da Experience Cloud. Na barra de menus, selecione o ícone **[!UICONTROL Soluções]** (três por três tabelas de pontos) próximo ao canto superior direito da página e selecione **[!UICONTROL Marcas]**.
 
    ![image2019-7-8_15-38-44](assets/image2019-7-8_15-38-44.png)
 
@@ -758,8 +774,8 @@ A configuração do Experience Manager consiste nas duas etapas principais a seg
    * **[!UICONTROL Servidor de autorização]** - Retorne à página Detalhes da integração que você abriu anteriormente. Selecione a guia **[!UICONTROL JWT]**. Copie o nome do servidor—sem o caminho—como destacado abaixo.
 
    Retorne à página **[!UICONTROL Conta]** e cole o nome no respectivo campo.
-Por exemplo, `https://ims-na1.adobelogin.com/`
-(o nome do servidor é apenas um exemplo)
+   Por exemplo, `https://ims-na1.adobelogin.com/`
+   (o nome do servidor é apenas um exemplo)
 
    ![2019-07-25_15-01-53](assets/2019-07-25_15-01-53.png)
 
@@ -814,7 +830,7 @@ Por exemplo, `https://ims-na1.adobelogin.com/`
 
    * **[!UICONTROL Configuração IMS da Adobe Associada]** - Selecione a configuração IMS criada anteriormente em [Configurar IMS do Experience Manager](#configuring-aem-ims).
 
-   * **[!UICONTROL Empresa]** - Na lista suspensa **[!UICONTROL Empresa]**, selecione sua empresa do Experience Cloud. A lista é preenchida automaticamente.
+   * **[!UICONTROL Empresa]** - Na lista suspensa **[!UICONTROL Empresa]**, selecione sua empresa da Experience Cloud. A lista é preenchida automaticamente.
 
    * **[!UICONTROL Propriedade]** - Na lista suspensa Propriedade, selecione a propriedade de marcas Experience Platform que você criou anteriormente. A lista é preenchida automaticamente.
 

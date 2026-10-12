@@ -6,13 +6,21 @@ exl-id: e99899a4-df86-4108-991a-8b30d303a279
 solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
-source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '552'
 ht-degree: 3%
-
 ---
-
 # Integração do AEM e de terceiros ao Commerce usando o Commerce integration framework {#aem-third-party}
 
 A integração de soluções que não sejam da Adobe Commerce é um cenário comum do CIF. Soluções de terceiros com diferentes APIs e esquemas são conectadas por meio de uma camada de integração.
@@ -21,7 +29,7 @@ A integração de soluções que não sejam da Adobe Commerce é um cenário com
 
 Esta é a arquitetura geral:
 
-![Visão geral da arquitetura de terceiros/não Magento do AEM](../assets//AEM_nonMagento_Architecture.png)
+![Visão geral da arquitetura de terceiros/que não seja a Magento da AEM](../assets//AEM_nonMagento_Architecture.png)
 
 A finalidade dessa camada de integração é mapear APIs e esquemas de terceiros em relação às APIs e esquemas compatíveis do Adobe Commerce GraphQL fora da Experience Manager. Graças a esse encapsulamento, a lógica de integração e os sistemas podem ser atualizados sem alterar o código dentro da Experience Manager.
 
@@ -31,7 +39,7 @@ A finalidade dessa camada de integração é mapear APIs e esquemas de terceiros
 
 >[!TIP]
 >
->Se nenhuma API em tempo real estiver disponível, um cache de produto externo com APIs deverá ser usado para a integração. Exemplo [código aberto do Magento](https://business.adobe.com/br/products/magento/open-source.html).
+>Se nenhuma API em tempo real estiver disponível, um cache de produto externo com APIs deverá ser usado para a integração. Exemplo [Magento open-source](https://business.adobe.com/br/products/magento/open-source.html).
 
 Não há necessidade de implementar o esquema completo do GraphQL, apenas os objetos do esquema para ativar os casos de uso desejados.
 

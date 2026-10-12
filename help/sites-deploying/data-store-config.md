@@ -8,13 +8,22 @@ feature: Configuring
 exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: f2c92b990a5c09cbcf532e0800e264620d98af77
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '3615'
+source-wordcount: '3617'
 ht-degree: 1%
-
 ---
-
 # Configuração de armazenamentos de nós e armazenamentos de dados no AEM 6{#configuring-node-stores-and-data-stores-in-aem}
 
 ## Introdução {#introduction}
@@ -121,56 +130,56 @@ Os detalhes sobre os diferentes armazenamentos de dados e configurações são d
 
 ### Armazenamento de dados do arquivo {#file-data-store}
 
-Esta é a implementação do [FileDataStore](https://jackrabbit.apache.org/api/trunk/org/apache/jackrabbit/core/data/FileDataStore.html) presente no Jackrabbit 2. Ele fornece uma maneira de armazenar os dados binários como arquivos normais no sistema de arquivos. It uses the `org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore` PID.
+Esta é a implementação do [FileDataStore](https://jackrabbit.apache.org/api/trunk/org/apache/jackrabbit/core/data/FileDataStore.html) presente no Jackrabbit 2. Ele fornece uma maneira de armazenar os dados binários como arquivos normais no sistema de arquivos. Ele usa o PID `org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore`.
 
-These configuration options are available:
+Estas opções de configuração estão disponíveis:
 
-* `repository.home`: Path to repository home under which various repository related data is stored. By default, binary files would be stored under `crx-quickstart/repository/datastore` directory
+* `repository.home`: Caminho para a página inicial do repositório sob a qual vários dados relacionados ao repositório são armazenados. Por padrão, os arquivos binários seriam armazenados no diretório `crx-quickstart/repository/datastore`
 
-* `path`: Path to the directory under which the files would be stored. If specified then it takes precedence over `repository.home` value
+* `path`: Caminho para o diretório no qual os arquivos serão armazenados. Se especificado, tem precedência sobre o valor `repository.home`
 
-* `minRecordLength`: The minimum size in bytes of a file stored in the data store. Binary content less than this value would be inlined.
-
->[!NOTE]
->
->When using a NAS to store shared file data stores, make sure you use only high performing devices to avoid performance issues.
-
-## Amazon S3 Data Store {#amazon-s-data-store}
-
-AEM can be configured to store data in Amazon&#39;s Simple Storage Service (S3). Ele usa o PID `org.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore.config` para configuração.
+* `minRecordLength`: O tamanho mínimo em bytes de um arquivo armazenado no repositório de dados. O conteúdo binário menor que esse valor seria incorporado.
 
 >[!NOTE]
 >
->AEM 6.5 supports storing data in Amazon&#39;s S3, however support is not extended to storing data in other platforms, whose vendors may have their own implementations of Amazon&#39;s S3 APIs.
+>Ao usar um NAS para armazenar armazenamentos de dados de arquivos compartilhados, certifique-se de usar apenas dispositivos de alto desempenho para evitar problemas de desempenho.
 
-To enable the S3 data store functionality, a feature pack containing the S3 Datastore Connector must be downloaded and installed. Go to the [Adobe Repository](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/) and download the latest version from the 1.10.x versions of the feature pack (for example, com.adobe.granite.oak.s3connector-1.10.0.zip). Also, you must download and install the latest AEM service pack as listed on the [AEM 6.5 Release Notes](/help/release-notes/release-notes.md) page.
+## Armazenamento de dados Amazon S3 {#amazon-s-data-store}
+
+O AEM pode ser configurado para armazenar dados no S3 (Simple Storage Service, serviço simples de armazenamento) da Amazon. Ele usa o PID `org.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore.config` para configuração.
 
 >[!NOTE]
 >
->When using AEM with TarMK, binaries will be stored by default in the `FileDataStore`. To use TarMK with the S3 Datastore, you must start AEM using the `crx3tar-nofds` runmode, for example:
+>O AEM 6.5 é compatível com o armazenamento de dados no S3 da Amazon. No entanto, o suporte não se estende ao armazenamento de dados em outras plataformas, cujos fornecedores podem ter suas próprias implementações das APIs S3 da Amazon.
+
+Para ativar a funcionalidade de armazenamento de dados do S3, um pacote de recursos contendo o Conector de armazenamento de dados do S3 deve ser baixado e instalado. Acesse o [Repositório do Adobe](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/) e baixe a versão mais recente das versões 1.10.x do pacote de recursos (por exemplo, com.adobe.granite.oak.s3connector-1.10.0.zip). Além disso, baixe e instale o service pack mais recente da AEM, conforme listado na página [Notas de versão do AEM 6.5](/help/release-notes/release-notes.md).
+
+>[!NOTE]
+>
+>Ao usar o AEM com TarMK, os binários serão armazenados por padrão no `FileDataStore`. Para usar TarMK com o S3 Datastore, você deve iniciar o AEM usando o modo de execução `crx3tar-nofds`, por exemplo:
 
 ```shell
 java -jar <aem-jar-file>.jar -r crx3tar-nofds
 ```
 
-Once downloaded, you can install and configure the S3 Connector as follows:
+Após o download, você pode instalar e configurar o S3 Connector da seguinte maneira:
 
-1. Extract the contents of the feature pack zip file to a temporary folder.
+1. Extraia o conteúdo do arquivo zip do pacote de recursos para uma pasta temporária.
 
-1. Go to the temporary folder and navigate to the following location:
+1. Vá para a pasta temporária e navegue até o seguinte local:
 
    ```xml
    jcr_root/libs/system/install
    ```
 
-   Copy all the contents from the above location to `<aem-install>/crx-quickstart/install.`
+   Copiar todo o conteúdo do local acima para `<aem-install>/crx-quickstart/install.`
 
-1. If AEM is already configured to work with the Tar or MongoDB storage, remove any existing configuration files from the ***&lt;aem-install>***/*crx-quickstart*/*install* folder before proceeding. The files that must be removed are:
+1. Se o AEM já estiver configurado para funcionar com o armazenamento Tar ou MongoDB, remova todos os arquivos de configuração existentes da pasta ***&lt;aem-install>**/*crx-quickstart*/*install* antes de continuar. Os arquivos que devem ser removidos são:
 
    * `For MongoMK: org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.config`
    * `For TarMK: org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config`
 
-1. Return to the temporary location where the feature pack has been extracted, and copy the contents of the following folder:
+1. Retorne ao local temporário onde o pacote de recursos foi extraído e copie o conteúdo da seguinte pasta:
 
    * `jcr_root/libs/system/config`
 
@@ -432,30 +441,30 @@ Após o download, você pode instalar e configurar o conector do Azure da seguin
 
    `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.config`
 
-   For TarMK:
+   Para TarMK:
 
    `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config`
 
-1. Return to the temporary location where the feature pack has been extracted and copy the contents of `jcr_root/libs/system/config` to the `<aem-install>/crx-quickstart/install` folder.
-1. Edit the configuration file and add the configuration options required by your setup.
+1. Retorne ao local temporário onde o pacote de recursos foi extraído e copie o conteúdo de `jcr_root/libs/system/config` para a pasta `<aem-install>/crx-quickstart/install`.
+1. Edite o arquivo de configuração e adicione as opções de configuração exigidas pela configuração.
 1. Inicie o AEM.
 
-You can use the configuration file with the following options:
+Você pode usar o arquivo de configuração com as seguintes opções:
 
-* azureSas=&quot;&quot;: In version 1.6.3 of the connector, Azure Shared Access Signature (SAS) support was added. **If both SAS and storage credentials exists in the configuration file, SAS has priority.** For more information about SAS see the [official documentation](https://learn.microsoft.com/en-us/azure/storage/common/storage-sas-overview). Ensure that the &#39;=&#39; character is escaped like &#39;\=&#39;.
+* azureSas=&quot;&quot;: na versão 1.6.3 do conector, o suporte para Azure Shared Access Signature (SAS) foi adicionado. **Se as credenciais SAS e de armazenamento existirem no arquivo de configuração, a SAS terá prioridade.** Para obter mais informações sobre a SAS, consulte a [documentação oficial](https://learn.microsoft.com/en-us/azure/storage/common/storage-sas-overview). Verifique se o caractere &#39;=&#39; tem escape como &#39;\=&#39;.
 
-* azureBlobEndpoint=&quot;&quot;: The Azure Blob Endpoint. For example, https://&lt;storage-account>.blob.core.windows.net.
-* accessKey=&quot;&quot;: The storage account name. For more details about the Microsoft® Azure authentication credentials, see the [official documentation](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-create).
+* AzureBlobEndpoint=&quot;&quot;: O ponto de extremidade do Azure Blob. Por exemplo, https://&lt;storage-account>.blob.core.windows.net.
+* accessKey=&quot;&quot;: O nome da conta de armazenamento. Para obter mais detalhes sobre as credenciais de autenticação da Microsoft® Azure, consulte a [documentação oficial](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-create).
 
-* secretKey=&quot;&quot;: The storage access key. Ensure that the &#39;=&#39; character is escaped like &#39;\=&#39;.
-* container=&quot;&quot;: The Microsoft® Azure blob storage container name. The container is a grouping of a set of blobs. For additional details, read the [official documentation](https://learn.microsoft.com/en-us/rest/api/storageservices/Naming-and-Referencing-Containers--Blobs--and-Metadata?redirectedfrom=MSDN).
-* maxConnections=&quot;&quot;: The concurrent number of simultaneous requests per operation. O valor padrão é 1.
-* maxErrorRetry=&quot;&quot;: Number of retries per request. O valor padrão é 3.
-* socketTimeout=&quot;&quot;: The timeout interval, in milliseconds, used for the request. The default value is 5 minutes.
+* secretKey=&quot;&quot;: A chave de acesso de armazenamento. Verifique se o caractere &#39;=&#39; tem escape como &#39;\=&#39;.
+* container=&quot;&quot;: o nome do container do Microsoft® Azure blob storage. O container é um agrupamento de um conjunto de blobs. Para obter detalhes adicionais, leia a [documentação oficial](https://learn.microsoft.com/en-us/rest/api/storageservices/Naming-and-Referencing-Containers--Blobs--and-Metadata?redirectedfrom=MSDN).
+* maxConnections=&quot;&quot;: O número simultâneo de solicitações simultâneas por operação. O valor padrão é 1.
+* maxErrorRetry=&quot;&quot;: Número de tentativas por solicitação. O valor padrão é 3.
+* socketTimeout=&quot;&quot;: o intervalo de tempo limite, em milissegundos, usado para a solicitação. O valor padrão é 5 minutos.
 
-Besides the settings above, the following settings can also be configured:
+Além das configurações acima, as seguintes configurações também podem ser definidas:
 
-* path: The path of the data store. O padrão é `<aem-install>/repository/datastore.`
+* caminho: o caminho do armazenamento de dados. O padrão é `<aem-install>/repository/datastore.`
 * RecordLength: O tamanho mínimo de um objeto que deve ser armazenado no armazenamento de dados. O padrão é 16 KB.
 * maxCachedBinarySize: binários com tamanho menor ou igual a esse tamanho são armazenados no cache de memória. O tamanho é em bytes. O padrão é 17408 (17 KB).
 * cacheSize: o tamanho do cache. O valor é especificado em bytes. O padrão é 64 GB.

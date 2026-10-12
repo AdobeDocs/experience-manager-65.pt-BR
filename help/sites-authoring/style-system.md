@@ -8,20 +8,33 @@ exl-id: 1772368a-f5c9-440c-a92a-0f1d34cc4bf8
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1296'
+source-wordcount: '1314'
 ht-degree: 83%
-
 ---
-
 # Sistema de estilos{#style-system}
 
 O sistema de estilos permite ao autor do modelo definir classes de estilo na política de conteúdo de um componente para que autores de conteúdo possam selecioná-las ao editarem o componente em uma página. Esses estilos podem ser variações visuais alternativas de um componente, tornando esse componente mais flexível.
 
 Isso elimina a necessidade de desenvolver um componente personalizado para cada estilo ou personalizar a caixa de diálogo do componente para habilitar essa funcionalidade de estilo. Isso resulta em mais componentes reutilizáveis que podem ser adaptados de forma rápida e fácil às necessidades de autores(as) de conteúdo sem nenhum desenvolvimento de back-end do AEM.
 
-## Caso de uso  {#use-case}
+## Caso de uso {#use-case}
 
 Os autores de modelo não precisam apenas da capacidade de configurar como os componentes funcionam para os autores de conteúdo, mas também de configurar várias variações visuais alternativas de um componente.
 
@@ -72,7 +85,7 @@ Se você desejar usar o Sistema de estilos em seus próprios componentes, faça 
 1. Configure as classes CSS que deseja disponibilizar para autores(as) de conteúdo, conforme descrito na seção [Como autor(a) de modelo](#as-a-template-author).
 1. Autores(as) de conteúdo podem usar os estilos conforme descrito na seção [Como autor(a) de conteúdo](#as-a-content-author).
 
-### Como autor de conteúdo  {#as-a-content-author}
+### Como autor de conteúdo {#as-a-content-author}
 
 1. Depois de instalar o projeto WKND, navegue até a página inicial principal no idioma inglês da WKND em `http://<host>:<port>/sites.html/content/wknd/language-masters/en` e edite a página.
 1. Selecione um componente de **Título** mais abaixo da página
@@ -87,7 +100,7 @@ Se você desejar usar o Sistema de estilos em seus próprios componentes, faça 
    >
    >Neste exemplo, os estilos de **Cores** (**Preto**, **Branco** e **Cinza**) são mutuamente exclusivos, enquanto as opções de **Estilo** (**Sublinhado**, **Alinhar à direita** e **Miniespaçamento**) podem ser combinadas. Isso pode ser [configurado no modelo como o autor do modelo](#as-a-template-author).
 
-### Como autor de modelo  {#as-a-template-author}
+### Como autor de modelo {#as-a-template-author}
 
 1. Ao editar a página inicial mestra no idioma inglês do WKND em `http://<host>:<port>/sites.html/content/wknd/language-masters/en`, edite o modelo da página em **Informações da página > Editar modelo**.
 
@@ -140,7 +153,7 @@ A guia Editar pode ser incluída de maneira semelhante na guia Design:
 >
 >A guia Estilos na caixa de diálogo Editar não está habilitada por padrão.
 
-### Estilos com nomes de elemento  {#styles-with-element-names}
+### Estilos com nomes de elemento {#styles-with-element-names}
 
 Um desenvolvedor também pode configurar uma lista de nomes de elementos permitidos para os estilos no componente por meio da propriedade de matriz da sequência `cq:styleElements`. Em seguida, na guia Estilos da política na caixa de diálogo de design, o(a) autor(a) do modelo também pode escolher um nome de elemento a ser definido para cada estilo. Isso definirá o nome de elemento do wrapper.
 

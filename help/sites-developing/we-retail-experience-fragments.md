@@ -9,13 +9,27 @@ exl-id: e17ff611-122a-4d17-97af-071d0234dd16
 solution: Experience Manager, Experience Manager Sites
 feature: Experience Fragments,Developing
 role: Developer
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: d9d38edd-df1b-480c-8f5e-72b62576f390
+    internal-label: Site and page features
+subfeature_v2:
+  - id: f61d1313-5cf1-4533-b29c-ac9f75c4b270
+    internal-label: Experience Fragments
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '241'
-ht-degree: 18%
-
+source-wordcount: '244'
+ht-degree: 20%
 ---
-
 # Experimentar fragmentos de experiência no We.Retail{#trying-out-experience-fragments-in-we-retail}
 
 Experimentar fragmentos de experiência no We.Retail
@@ -24,7 +38,7 @@ Um [Fragmento de experiência](/help/sites-authoring/experience-fragments.md) é
 
 Eles permitem que um autor reutilize partes de uma página (um fragmento de uma experiência), sem precisar copiar e colar o conteúdo.
 
-Isso é compatível com o caso de uso do sistema de gerenciamento de conteúdo (CMS) headless, em que os autores desejam usar o AEM somente para criação, não para entrega ao cliente. Um sistema/ponto de contato de terceiros pode consumir essa experiência e, em seguida, entregar ao usuário final.
+Isso é compatível com o caso de uso do Sistema de gerenciamento de conteúdo (CMS) headless, em que os autores desejam usar o AEM apenas para criação, não para entrega ao cliente. Um sistema/ponto de contato de terceiros pode consumir essa experiência e, em seguida, entregar ao usuário final.
 
 >[!NOTE]
 >

@@ -10,13 +10,20 @@ exl-id: d121dc05-7d15-44ba-8d2d-b59d6c6480c8
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '967'
 ht-degree: 0%
-
 ---
-
 # Recurso de mensagens {#messaging-feature}
 
 Além das interações visíveis publicamente que ocorrem em fóruns e comentários, o recurso de mensagens do AEM Communities permite que os membros da comunidade interajam entre si de forma mais privada.
@@ -63,7 +70,8 @@ Para modificar a configuração da lista de mensagens para as páginas **Caixa d
 1. No modo `Preview`, selecione o link **Mensagens** para abrir a página de mensagens principal. Em seguida, selecione **Caixa de entrada**, **Itens enviados** ou **Lixeira** para configurar o componente para essa lista de mensagens.
 
 1. No modo `Edit`, selecione o componente na página.
-1. Para acessar o diálogo de configuração, cancele a herança selecionando o ícone `link`.Quando a herança for cancelada, é possível selecionar o ícone de configuração para abrir a caixa de diálogo de configuração.
+1. Para acessar o diálogo de configuração, cancele a herança selecionando o ícone `link`.
+Quando a herança for cancelada, é possível selecionar o ícone de configuração para abrir a caixa de diálogo de configuração.
 
 1. Quando a configuração for concluída, será necessário restaurar a herança selecionando o ícone `broken link`.
 
@@ -136,7 +144,8 @@ Para modificar a configuração da página para redigir mensagem, abra o site no
 * No modo `Preview`, selecione o link **Mensagens** para abrir a página de mensagens principal. Em seguida, clique no botão Nova Mensagem para abrir a página `Compose Message`.
 
 * No modo `Edit`, selecione o componente principal na página que contém o corpo da Mensagem.
-* Para acessar o diálogo de configuração, cancele a herança selecionando o ícone `link`.Quando a herança for cancelada, é possível selecionar o ícone de configuração para abrir a caixa de diálogo de configuração.
+* Para acessar o diálogo de configuração, cancele a herança selecionando o ícone `link`.
+Quando a herança for cancelada, é possível selecionar o ícone de configuração para abrir a caixa de diálogo de configuração.
 
 * Quando a configuração for concluída, será necessário restaurar a herança selecionando o ícone `broken link`.
 

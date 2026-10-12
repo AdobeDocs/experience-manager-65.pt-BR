@@ -9,13 +9,29 @@ role: Admin,User
 exl-id: 153986f0-b6ff-4278-8bb6-70c320a4e539
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '928'
 ht-degree: 2%
-
 ---
-
 # Configurar cache de formulários adaptáveis {#configure-adaptive-forms-cache}
 
 Um cache é um mecanismo para reduzir os tempos de acesso aos dados, reduzir a latência e melhorar as velocidades de entrada/saída (E/S). O cache de formulários adaptáveis armazena somente o conteúdo do HTML e a estrutura JSON de um formulário adaptável sem salvar os dados preenchidos previamente. Ajuda a reduzir o tempo necessário para renderizar um formulário adaptável no cliente. Ele foi projetado especificamente para formulários adaptáveis.
@@ -51,10 +67,10 @@ Você também pode configurar o cache de formulários adaptáveis no Dispatcher 
 * Ao desenvolver componentes personalizados, no servidor usado para desenvolvimento, mantenha o cache de formulários adaptáveis desativado.
 * Os URLs sem extensão não são armazenados em cache. Por exemplo, a URL com padrão `/content/forms/[folder-structure]/[form-name].html` é armazenada em cache e o armazenamento em cache ignora URLs com padrão `/content/dam/formsanddocument/[folder-name]/<form-name>/jcr:content`. Portanto, use URLs com extensões para aproveitar os benefícios do armazenamento em cache.
 * Considerações para formulários adaptáveis localizados:
-   * Use o formato de URL `http://host:port/content/forms/af/<afName>.<locale>.html` para solicitar uma versão localizada de um formulário adaptável em vez de `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>`
-   * [Desabilitar usando localidade do navegador](supporting-new-language-localization.md#how-localization-of-adaptive-form-works) para URLs com formato `http://host:port/content/forms/af/<adaptivefName>.html`.
-   * Quando você usa o Formato de URL `http://host:port/content/forms/af/<adaptivefName>.html` e **[!UICONTROL Usar Localidade do Navegador]** no gerenciador de configurações está desabilitado, a versão não localizada do formulário adaptável é fornecida. O idioma não localizado é o idioma usado no desenvolvimento do formulário adaptável. A localidade configurada para seu navegador (localidade do navegador) não é considerada e uma versão não localizada do formulário adaptável é fornecida.
-   * Quando você usa o Formato de URL `http://host:port/content/forms/af/<adaptivefName>.html` e **[!UICONTROL Usar Localidade do Navegador]** no gerenciador de configurações está habilitado, uma versão localizada do formulário adaptável é fornecida, se disponível. O idioma do formulário adaptável localizado se baseia no local configurado para seu navegador (local do navegador). Isso pode levar ao [armazenamento em cache somente a primeira instância de um formulário adaptável]. Para evitar que o problema ocorra em sua instância, consulte [solução de problemas](#only-first-insatnce-of-adptive-forms-is-cached).
+  * Use o formato de URL `http://host:port/content/forms/af/<afName>.<locale>.html` para solicitar uma versão localizada de um formulário adaptável em vez de `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>`
+  * [Desabilitar usando localidade do navegador](supporting-new-language-localization.md#how-localization-of-adaptive-form-works) para URLs com formato `http://host:port/content/forms/af/<adaptivefName>.html`.
+  * Quando você usa o Formato de URL `http://host:port/content/forms/af/<adaptivefName>.html` e **[!UICONTROL Usar Localidade do Navegador]** no gerenciador de configurações está desabilitado, a versão não localizada do formulário adaptável é fornecida. O idioma não localizado é o idioma usado no desenvolvimento do formulário adaptável. A localidade configurada para seu navegador (localidade do navegador) não é considerada e uma versão não localizada do formulário adaptável é fornecida.
+  * Quando você usa o Formato de URL `http://host:port/content/forms/af/<adaptivefName>.html` e **[!UICONTROL Usar Localidade do Navegador]** no gerenciador de configurações está habilitado, uma versão localizada do formulário adaptável é fornecida, se disponível. O idioma do formulário adaptável localizado se baseia no local configurado para seu navegador (local do navegador). Isso pode levar ao [armazenamento em cache somente a primeira instância de um formulário adaptável]. Para evitar que o problema ocorra em sua instância, consulte [solução de problemas](#only-first-insatnce-of-adptive-forms-is-cached).
 
 ### Ativar o armazenamento em cache no Dispatcher
 

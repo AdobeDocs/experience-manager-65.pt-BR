@@ -5,16 +5,28 @@ exl-id: d7a1955d-b754-4700-b863-e9f66396cbe1
 solution: Experience Manager, Experience Manager Sites
 feature: Content Fragments,GraphQL API
 role: Developer
-source-git-commit: 9278eb7dab4a764403fa0769f6e80dd7e8fb0cb9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1401'
-ht-degree: 85%
-
+source-wordcount: '1444'
+ht-degree: 83%
 ---
-
 # Consultas persistentes de GraphQL {#persisted-queries-caching}
 
-As consultas persistentes são consultas do GraphQL criadas e armazenadas no servidor do Adobe Experience Manager (AEM). Elas podem ser solicitadas com uma solicitação GET por aplicativos clientes. A resposta de uma solicitação do GET pode ser armazenada em cache nas camadas do Dispatcher e da Rede de entrega de conteúdo (CDN), melhorando, em última análise, o desempenho do aplicativo cliente solicitante. Isso é diferente das consultas de GraphQL padrão, que são executadas usando solicitações POST, onde a resposta não pode ser facilmente armazenada em cache.
+As consultas persistentes são consultas do GraphQL criadas e armazenadas no servidor do Adobe Experience Manager (AEM). Elas podem ser solicitadas com uma solicitação GET por aplicativos clientes. A resposta de uma solicitação GET pode ser armazenada em cache nas camadas do Dispatcher e da Rede de entrega de conteúdo (CDN), melhorando, em última análise, o desempenho do aplicativo cliente solicitante. Isso é diferente das consultas de GraphQL padrão, que são executadas usando solicitações POST, onde a resposta não pode ser facilmente armazenada em cache.
 
 <!--
 >[!NOTE]
@@ -28,10 +40,10 @@ O [GraphiQL IDE](/help/sites-developing/headless/graphql-api/graphiql-ide.md) es
 
 Consultas persistentes devem sempre usar o endpoint relacionado à [configuração apropriada do Sites](/help/sites-developing/headless/graphql-api/graphql-endpoint.md); para que possam usar um desses, ou ambos:
 
-* A configuração global e o endpoint 
+* A configuração global e o endpoint
 A consulta tem acesso a todos os modelos de fragmento de conteúdo.
-* Configuração(ões) e endpoint(s) do Sites específicos 
-A criação de uma consulta persistente para uma configuração do Sites específica requer um endpoint correspondente específico para a configuração do Sites (para fornecer acesso aos modelos de fragmento de conteúdo relacionados).
+* Configurações e endpoints específicos do Sites
+A criação de uma consulta persistente para uma configuração específica do Sites requer um endpoint correspondente específico para a configuração do Sites (para fornecer acesso aos modelos de fragmento de conteúdo relacionados).
 Por exemplo, para criar uma consulta persistente especificamente para a configuração do Sites WKND, uma configuração do Sites correspondente específica de WKND e um endpoint específico de WKND devem ser criados antecipadamente.
 
 >[!NOTE]
@@ -269,7 +281,7 @@ Consultas persistentes são recomendadas, pois elas podem ser armazenadas em cac
 
 Por padrão, o AEM invalidará o cache com base em uma definição de Time To Live (TTL). Esses TTLs podem ser definidos pelos seguintes parâmetros. Estes parâmetros podem ser acessados por vários meios, com variações nos nomes de acordo com o mecanismo usado:
 
-| Tipo de cache | [Cabeçalho HTTP](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Headers/Cache-Control)  | cURL  | Configuração OSGi |
+| Tipo de cache | [Cabeçalho HTTP](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Headers/Cache-Control)  | cURL  | Configuração OSGi  |
 |--- |--- |--- |--- |
 | Navegador | `max-age` | `cache-control : max-age` | `cacheControlMaxAge` |
 | CDN | `s-maxage` | `surrogate-control : max-age` | `surrogateControlMaxAge` |
@@ -353,7 +365,7 @@ O `cache-control` pode ser definido no momento da criação (PUT) ou posteriorme
 
 ### Gerenciamento de cache com uma configuração OSGi {#cache-osgi-configration}
 
-Para gerenciar o cache globalmente, você pode [definir as configurações de OSGi](/help/sites-deploying/configuring-osgi.md) para a **Configuração do Serviço de Consulta Persistente**. Caso contrário, essa configuração OSGi usa os [valores padrão para instâncias de publicação](#publish-instances).
+Para gerenciar o cache globalmente, você pode [definir as configurações do OSGi](/help/sites-deploying/configuring-osgi.md) para a **Configuração do Serviço de consultas persistente**. Caso contrário, essa configuração OSGi usa os [valores padrão para instâncias de publicação](#publish-instances).
 
 >[!NOTE]
 >

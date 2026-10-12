@@ -9,13 +9,26 @@ exl-id: de1ae7e3-db3a-4b5e-8a4f-ae111227181f
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '633'
-ht-degree: 31%
-
+source-wordcount: '636'
+ht-degree: 23%
 ---
-
 # Anotações ao editar uma página{#annotations-when-editing-a-page}
 
 Adicionar conteúdo às páginas do seu site geralmente está sujeito a discussões antes de realmente ser publicado. Para auxiliar nisso, muitos componentes diretamente relacionados ao conteúdo (em vez de, por exemplo, ao layout) permitem adicionar uma anotação.
@@ -103,13 +116,13 @@ O modo Anotar permite criar, editar, mover ou excluir anotações do seu conteú
 
    * Clique em um marcador de texto para abrir a anotação. Depois de aberta, você pode exibir o texto completo, fazer alterações ou excluir a anotação.
 
-      * Os rascunhos não podem ser excluídos independentemente da anotação.
+     * Os rascunhos não podem ser excluídos independentemente da anotação.
 
    * Reposicionar o marcador de texto.
    * Clique em uma linha de rascunho para selecionar esse rascunho e arrastá-lo para a posição desejada.
    * Mover ou copiar um componente
 
-      * As anotações relacionadas e seus rascunhos também serão movidos ou copiados e sua posição em relação ao parágrafo permanecerá a mesma.
+     * As anotações relacionadas e seus rascunhos também serão movidos ou copiados e sua posição em relação ao parágrafo permanecerá a mesma.
 
 1. Para sair do modo Anotação e voltar ao modo usado anteriormente, clique no ícone Anotar (símbolo x) à direita da barra de ferramentas superior.
 

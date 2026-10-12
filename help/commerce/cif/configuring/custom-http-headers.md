@@ -5,13 +5,21 @@ exl-id: 834aadac-c3be-4e7a-a3cb-349608810b40
 solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
-source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '284'
 ht-degree: 3%
-
 ---
-
 # Cabeçalhos HTTP personalizados {#custom-http-headers}
 
 ## Visão geral {#overview}
@@ -27,9 +35,9 @@ Para obter mais controle sobre o back-end, os autores podem configurar cabeçalh
 
 Para configurar os cabeçalhos HTTP personalizados, é necessário primeiro defini-los. Os cabeçalhos HTTP personalizados devem ser definidos primeiro adicionando-os à configuração do serviço `com.adobe.cq.cif.http.internal.HttpHeadersConfigProviderImpl` usando uma configuração OSGi.
 
-Você pode configurar os valores dos cabeçalhos HTTP na página Configuração de Cloud Service do seu projeto:
+Você pode configurar os valores dos cabeçalhos HTTP na página Configuração do Cloud Service do seu projeto:
 
-1. Vá para a página de configuração do Cloud Service em Ferramentas > Cloud Services > Configuração do CIF.
+1. Acesse a página de configuração do Cloud Service em Ferramentas > Cloud Services > Configuração do CIF.
 1. Abra uma configuração existente ou crie uma.
 1. Vá para a guia &quot;Avançado&quot; e localize o multicampo &quot;Cabeçalhos HTTP personalizados&quot;. Você pode selecionar os cabeçalhos definidos anteriormente e atribuir valores a eles.
 

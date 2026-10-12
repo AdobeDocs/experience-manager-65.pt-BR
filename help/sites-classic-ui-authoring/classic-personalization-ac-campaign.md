@@ -9,18 +9,29 @@ exl-id: a4717cb8-b70c-4150-b816-35e9b871e792
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1185'
+source-wordcount: '1194'
 ht-degree: 0%
-
 ---
-
 # Trabalhar com o Adobe Campaign 6.1 e o Adobe Campaign Standard{#working-with-adobe-campaign-and-adobe-campaign-standard}
 
 Você pode criar conteúdo de email no AEM e processá-lo em emails do Adobe Campaign. Para fazer isso, você deve:
 
-1. Crie um boletim informativo no AEM a partir de um modelo específico do Adobe Campaign.
+1. Crie um boletim informativo no AEM com base em um modelo específico do Adobe Campaign.
 1. Selecione [um serviço do Adobe Campaign](#selectingtheadobecampaigncloudservice) antes de editar o conteúdo para acessar todas as funcionalidades.
 1. Editar o conteúdo.
 1. Validar o conteúdo.
@@ -33,13 +44,13 @@ O conteúdo pode ser sincronizado com um delivery no Adobe Campaign. As instruç
 
 ## Envio de conteúdo de e-mail via Adobe Campaign {#sending-email-content-via-adobe-campaign}
 
-Depois de configurar o AEM e o Adobe Campaign, é possível criar conteúdo de delivery de email diretamente no AEM e processá-lo no Adobe Campaign.
+Após configurar o AEM e o Adobe Campaign, você pode criar conteúdo de delivery de email diretamente no AEM e processá-lo no Adobe Campaign.
 
 Ao criar conteúdo do Adobe Campaign no AEM, você deve vincular a um serviço do Adobe Campaign antes de editar o conteúdo para acessar todas as funcionalidades.
 
 Há dois casos possíveis:
 
-* O conteúdo pode ser sincronizado com um delivery do Adobe Campaign. Isso permite usar o conteúdo AEM em um delivery.
+* O conteúdo pode ser sincronizado com um delivery do Adobe Campaign. Isso permite usar o conteúdo do AEM em um delivery.
 * (Somente no Adobe Campaign local) O conteúdo pode ser enviado diretamente para o Adobe Campaign, que gera automaticamente um novo delivery de email. Esse modo tem limitações.
 
 As instruções detalhadas estão descritas neste documento.
@@ -51,11 +62,11 @@ As instruções detalhadas estão descritas neste documento.
 >Ao adicionar modelos de email, adicione-os em **/content/campaigns** para torná-los disponíveis.
 >
 
-1. No AEM, selecione a pasta **Sites** e navegue pelo seu navegador para descobrir onde suas campanhas de email são gerenciadas. No exemplo a seguir, o nó relacionado é **Sites** > **Campanhas** > **Geometrixx Outdoors** > **Campanhas por email**.
+1. No AEM, selecione a pasta **Sites** e navegue pelo explorador para descobrir onde suas campanhas de email são gerenciadas. No exemplo a seguir, o nó relacionado é **Sites** > **Campanhas** > **Geometrixx Outdoors** > **Campanhas por email**.
 
    >[!NOTE]
    >
-   >[Amostras de email só estão disponíveis em Geometrixx](/help/sites-developing/we-retail.md#weretail). Baixe o conteúdo de Geometrixx de amostra do Compartilhamento de pacotes.
+   >[Amostras de email só estão disponíveis no Geometrixx](/help/sites-developing/we-retail.md#weretail). Baixe o conteúdo de amostra do Geometrixx do Compartilhamento de pacotes.
 
    ![chlimage_1-172](assets/chlimage_1-172.png)
 
@@ -88,9 +99,9 @@ Além disso, talvez também seja necessário selecionar o modelo do Adobe Campai
 
 1. Se você quiser aplicar um modelo de entrega de email específico (do Adobe Campaign), diferente do modelo padrão **email**, selecione novamente **Propriedades da página**. Na guia **Adobe Campaign**, insira o nome interno do modelo de entrega de email na instância do Adobe Campaign relacionada.
 
-   No Adobe Campaign Standard, o modelo é **Delivery com Conteúdo AEM**. No Adobe Campaign 6.1, o modelo é **Entrega de email com conteúdo AEM**.
+   No Adobe Campaign Standard, o modelo é **Entrega com Conteúdo do AEM**. No Adobe Campaign 6.1, o modelo é o **Delivery de email com conteúdo do AEM**.
 
-   Ao selecionar o modelo, o AEM habilita automaticamente os componentes **Informativo da Adobe Campaign**.
+   Ao selecionar o modelo, o AEM habilita automaticamente os componentes do **Informativo da Adobe Campaign**.
 
 ### Edição de conteúdo de email {#editing-email-content}
 
@@ -132,7 +143,7 @@ Consulte [Componentes do Adobe Campaign](/help/sites-classic-ui-authoring/classi
    >
    >Os campos de contexto disponíveis correspondem à targeting dimension **Perfis** no Adobe Campaign.
    >
-   >Consulte [Vinculando uma página de AEM a um email do Adobe Campaign](/help/sites-classic-ui-authoring/classic-personalization-ac-campaign.md#linkinganaempagetoanadobecampaignemail).
+   >Consulte [Vinculando uma página do AEM a um email do Adobe Campaign](/help/sites-classic-ui-authoring/classic-personalization-ac-campaign.md#linkinganaempagetoanadobecampaignemail).
 
    ![chlimage_1-178](assets/chlimage_1-178.png)
 
@@ -181,8 +192,8 @@ No Adobe Campaign 6.1:
 >
 >O conteúdo não aprovado pode ser sincronizado com um delivery no Adobe Campaign, mas o delivery não pode ser executado. Somente o conteúdo aprovado pode ser enviado por meio de deliveries do Campaign.
 
-## Vinculação do AEM ao Adobe Campaign Standard e ao Adobe Campaign 6.1 {#linking-aem-with-adobe-campaign-standard-and-adobe-campaign}
+## Vinculação do AEM com o Adobe Campaign Standard e o Adobe Campaign 6.1 {#linking-aem-with-adobe-campaign-standard-and-adobe-campaign}
 
 >[!NOTE]
 >
->Consulte [Vinculação do AEM ao Adobe Campaign Standard e ao Adobe Campaign 6.1](/help/sites-authoring/campaign.md#linking-aem-with-adobe-campaign-standard-and-adobe-campaign-classic) em [Trabalhando com o Adobe Campaign 6.1 e o Adobe Campaign Standard](/help/sites-authoring/campaign.md) na documentação de criação padrão para obter detalhes.
+>Consulte [Vinculação do AEM com o Adobe Campaign Standard e o Adobe Campaign 6.1](/help/sites-authoring/campaign.md#linking-aem-with-adobe-campaign-standard-and-adobe-campaign-classic) em [Trabalhando com o Adobe Campaign 6.1 e o Adobe Campaign Standard](/help/sites-authoring/campaign.md) na documentação de criação padrão para obter detalhes.

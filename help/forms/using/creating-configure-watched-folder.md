@@ -8,13 +8,29 @@ exl-id: b15d8d3b-5e47-4c33-95fe-440fcf96be83
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1859'
 ht-degree: 0%
-
 ---
-
 # Criar ou configurar uma pasta monitorada {#create-or-configure-a-watched-folder}
 
 Um administrador pode configurar uma pasta de rede, conhecida como *pasta monitorada*, de modo que, quando um usuário colocar um arquivo (como um arquivo do PDF) na pasta monitorada, uma operação pré-configurada seja iniciada e manipule o arquivo. Depois que a operação especificada é executada, a operação salva o arquivo modificado em uma pasta de saída especificada. Para obter informações detalhadas sobre como administrar uma pasta monitorada, consulte [Ajuda Administrativa](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md).
@@ -45,9 +61,9 @@ Execute as seguintes etapas para criar uma pasta monitorada:
    * **Processar Arquivos Usando**: o tipo do processo a ser iniciado. Você pode especificar um fluxo de trabalho, script ou serviço.
    * **Nome do Serviço/Caminho do Script/Caminho do Fluxo de Trabalho**: o comportamento do campo é baseado no valor especificado para o campo **Processar Arquivos Usando**. Você pode especificar os seguintes valores:
 
-      * Em Fluxo de trabalho, especifique o modelo de fluxo de trabalho que será executado. Por exemplo, /etc/workflow/models/&lt;workflow_name>/jcr:content/model
-      * Para Script, especifique o caminho JCR do script a ser executado. Por exemplo, /etc/watchfolder/test/testScript.ecma
-      * Para Serviço, especifique o filtro usado para localizar um serviço OSGi. O serviço é registrado como uma implementação da interface com.adobe.aemfd.watchfolder.service.api.ContentProcessor. Por exemplo, o código a seguir é uma implementação personalizada da interface ContentProcessor com uma propriedade personalizada (foo=bar).
+     * Em Fluxo de trabalho, especifique o modelo de fluxo de trabalho que será executado. Por exemplo, /etc/workflow/models/&lt;workflow_name>/jcr:content/model
+     * Para Script, especifique o caminho JCR do script a ser executado. Por exemplo, /etc/watchfolder/test/testScript.ecma
+     * Para Serviço, especifique o filtro usado para localizar um serviço OSGi. O serviço é registrado como uma implementação da interface com.adobe.aemfd.watchfolder.service.api.ContentProcessor. Por exemplo, o código a seguir é uma implementação personalizada da interface ContentProcessor com uma propriedade personalizada (foo=bar).
 
    >[!NOTE]
    >
@@ -66,8 +82,8 @@ Execute as seguintes etapas para criar uma pasta monitorada:
 
    * **Filtro do Mapeador de Carga:** Quando você cria uma pasta monitorada, ele cria uma estrutura de pastas dentro da pasta que está sendo monitorada. A estrutura de pastas tem pastas de preparo, resultado, preservação, entrada e falha. A estrutura de pastas pode servir como carga de entrada para o fluxo de trabalho e aceitar a saída de um fluxo de trabalho. Ele também pode listar pontos de falha, se houver. A estrutura de uma carga é diferente da estrutura de uma pasta monitorada. Você pode gravar scripts personalizados para mapear a estrutura de uma pasta monitorada para a carga útil. Esse script é chamado de filtro de mapeador de carga útil. Duas implementações prontas para uso do mapeador de carga estão disponíveis. Se você não tiver [uma implementação personalizada](/help/forms/using/watched-folder-in-aem-forms.md#creating-a-custom-payload-mapper-filter), use uma das implementações predefinidas:
 
-      * **Mapeador padrão:** use o mapeador de carga padrão para manter os conteúdos de entrada e saída das pastas monitoradas em pastas de entrada e saída separadas na carga.
-      * **Mapeador de carga baseado em arquivo simples:** use o mapeador de carga baseado em arquivo simples para manter o conteúdo de entrada e saída diretamente na pasta de carga. Ela não cria nenhuma hierarquia extra, como o mapeador padrão.
+     * **Mapeador padrão:** use o mapeador de carga padrão para manter os conteúdos de entrada e saída das pastas monitoradas em pastas de entrada e saída separadas na carga.
+     * **Mapeador de carga baseado em arquivo simples:** use o mapeador de carga baseado em arquivo simples para manter o conteúdo de entrada e saída diretamente na pasta de carga. Ela não cria nenhuma hierarquia extra, como o mapeador padrão.
 
    * **Modo de Execução**: especifique a lista separada por vírgulas de modos de execução permitidos para execução de fluxo de trabalho.
    * **Arquivos de Preparação com Tempo Limite Após**: especifique o número de segundos a ser aguardado antes que um arquivo/pasta de entrada que já tenha sido selecionado para processamento seja tratado como tendo o tempo limite atingido e marcado como uma falha. O mecanismo de tempo limite só é ativado quando o valor dessa propriedade é um número positivo.
@@ -82,22 +98,22 @@ Execute as seguintes etapas para criar uma pasta monitorada:
    * **Excluir os Resultados Anteriores a:** Especifique o tempo, em número de dias, a ser aguardado antes de excluir os Arquivos e as pastas anteriores ao valor especificado. Essa configuração é útil para garantir que a pasta de resultados não fique cheia. Um valor de -1 dias indica que a pasta de resultados nunca deve ser excluída. O valor padrão é -1.
    * **Nome da Pasta de Resultado:** Especifique o nome da pasta para armazenar os resultados. Se os resultados não aparecerem nessa pasta, verifique a pasta de falha. Arquivos somente leitura não são processados e são salvos na pasta de falha. Você pode usar um caminho absoluto ou relativo com os seguintes padrões de arquivo:
 
-      * %F = prefixo do nome do arquivo
-      * %E = extensão de nome de arquivo
-      * %Y = ano (completo)
-      * %y = ano (últimos dois dígitos)
-      * %M = mês
-      * %D = dia do mês
-      * %d = dia do ano
-      * %H = hora (relógio de 24 horas)
-      * %h = hora (relógio de 12 horas)
-      * %m = minuto
-      * %s = segundo
-      * %l = milissegundo
-      * %R = número aleatório (entre 0-9)
-      * %P = id do processo ou da tarefa
-      * Por exemplo, se for 8 PM em 17 de julho de 2009 e você especificar C:/Test/WF0/failure/%Y/%M/%D/%H/, a pasta resultante será C:/Test/WF0/failure/2009/07/17/20.
-      * Se o caminho não for absoluto, mas relativo, a pasta será criada dentro da pasta monitorada. O valor padrão é result/%Y/%M/%D/, que é a pasta Result dentro da pasta monitorada. Para obter mais informações sobre padrões de arquivo, consulte [Sobre padrões de arquivo](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-file-patterns).
+     * %F = prefixo do nome do arquivo
+     * %E = extensão de nome de arquivo
+     * %Y = ano (completo)
+     * %y = ano (últimos dois dígitos)
+     * %M = mês
+     * %D = dia do mês
+     * %d = dia do ano
+     * %H = hora (relógio de 24 horas)
+     * %h = hora (relógio de 12 horas)
+     * %m = minuto
+     * %s = segundo
+     * %l = milissegundo
+     * %R = número aleatório (entre 0-9)
+     * %P = id do processo ou da tarefa
+     * Por exemplo, se for 8 PM em 17 de julho de 2009 e você especificar C:/Test/WF0/failure/%Y/%M/%D/%H/, a pasta resultante será C:/Test/WF0/failure/2009/07/17/20.
+     * Se o caminho não for absoluto, mas relativo, a pasta será criada dentro da pasta monitorada. O valor padrão é result/%Y/%M/%D/, que é a pasta Result dentro da pasta monitorada. Para obter mais informações sobre padrões de arquivo, consulte [Sobre padrões de arquivo](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-file-patterns).
 
    * **Nome da Pasta com Falha:** Especifique a pasta onde os arquivos com falha são salvos. Este local é sempre relativo à pasta monitorada. Você pode usar padrões de arquivo, conforme descrito em Pasta de resultados.
    * **Preservar Nome da Pasta:** Especifique a pasta onde os arquivos são armazenados após a verificação e coleta bem-sucedidas. O caminho pode ser um diretório absoluto, relativo ou nulo. Você pode usar padrões de arquivo, conforme descrito em Pasta de resultados. O valor padrão é preserve/%Y/%M/%D/.
