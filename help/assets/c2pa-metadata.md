@@ -289,9 +289,9 @@ Ao solucionar problemas, defina os seguintes agentes de log como `DEBUG` na **[!
 
 >[!MORELIKETHIS]
 >
->* [Metadados C2PA no modo de exibição Assets de [!DNL Experience Manager as a Cloud Service]](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/c2pa-metadata-assets-view)
->* [Metadados C2PA em [!DNL Experience Manager Assets Essentials]](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/content-credentials)
->* [Metadados C2PA em [!DNL Dynamic Media]](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/c2pa-metadata)
+>* [Metadados C2PA no modo de exibição Assets de [!DNL Experience Manager as a Cloud Service]](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/assets/assets-view/c2pa-metadata-assets-view)
+>* [Metadados C2PA em [!DNL Experience Manager Assets Essentials]](https://experienceleague.adobe.com/pt-br/docs/experience-manager-assets-essentials/help/content-credentials)
+>* [Metadados C2PA em [!DNL Dynamic Media]](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/c2pa-metadata)
 >* [Writeback XMP para representações](/help/assets/xmp-writeback.md)
 >* [Marcar seus ativos com uma marca d&#39;água](/help/assets/watermarking.md)
 >* [Content Authenticity Initiative](https://contentauthenticity.org/)
