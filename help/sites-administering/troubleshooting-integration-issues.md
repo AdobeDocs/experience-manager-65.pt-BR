@@ -9,13 +9,22 @@ exl-id: 11b0023e-34bd-4dfe-8173-5466db9fbe34
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '1078'
+source-wordcount: '1102'
 ht-degree: 1%
-
 ---
-
 # Solução de problemas de integração{#troubleshooting-integration-issues}
 
 ## Dicas gerais de solução de problemas {#general-troubleshooting-tips}
@@ -61,14 +70,14 @@ Para obter detalhes adicionais sobre como criar serviços de importador de dados
 
 ### O encerramento leva muito tempo devido ao Importador de buscas {#shutdown-takes-a-long-time-due-to-the-pollingimporter}
 
-O Analytics foi projetado tendo em mente um mecanismo de herança. Normalmente, você habilita o Analytics para um site adicionando uma referência a uma configuração do Analytics na guia [Cloud Service](/help/sites-developing/extending-cloud-config.md) das propriedades da página. A configuração é herdada para todas as subpáginas automaticamente, sem a necessidade de referenciá-la novamente, a menos que uma página exija uma configuração diferente. Adicionar uma referência a um site também cria automaticamente vários nós (12 para AEM 6.3 e anterior ou 6 para AEM 6.4   e posterior) do tipo `cq;PollConfig` que instancia PollingImporters usados para importar dados do Analytics para AEM. Como resultado:
+O Analytics foi projetado tendo em mente um mecanismo de herança. Normalmente, você habilita o Analytics para um site adicionando uma referência a uma configuração do Analytics nas propriedades da página [guia Cloud Services](/help/sites-developing/extending-cloud-config.md). A configuração é herdada para todas as subpáginas automaticamente, sem a necessidade de referenciá-la novamente, a menos que uma página exija uma configuração diferente. Adicionar uma referência a um site também cria automaticamente vários nós (12 para o AEM 6.3 e anterior ou 6 para o AEM 6.4 e posterior) do tipo `cq;PollConfig` que instancia PollingImporters usados para importar dados do Analytics para o AEM. Como resultado:
 
 * Ter muitas páginas referenciando o Analytics resulta em uma grande quantidade de Importadores de buscas.
 * Além disso, copiar e colar páginas com uma referência a uma configuração do Analytics leva a uma duplicação de PollingImporters.
 
 #### Solução {#solution-1}
 
-Primeiramente, analisar o [error.log](/help/sites-deploying/configure-logging.md) pode fornecer informações sobre a quantidade de PollingImporters ativos ou registrados. Por exemplo:
+Primeiramente, analisar o [error.log](/help/sites-deploying/configure-logging.md) pode fornecer a você algumas informações do insight sobre a quantidade de PollingImporters ativos ou registrados. Por exemplo:
 
 ```
 # Count PollingImporter entries
@@ -90,7 +99,7 @@ Para obter detalhes adicionais sobre como criar serviços de importador de dados
 
 ### A tag do script do DTM não é renderizada na origem da página {#the-dtm-script-tag-is-not-rendered-in-the-page-source}
 
-A marca de script do [DTM](/help/sites-administering/dtm.md) não está incluída corretamente na página, embora a configuração tenha sido referenciada na guia de propriedades de página [Cloud Service](/help/sites-developing/extending-cloud-config.md).
+A marca de script do [DTM](/help/sites-administering/dtm.md) não está incluída corretamente na página, embora a configuração tenha sido referenciada na guia [Cloud Services](/help/sites-developing/extending-cloud-config.md) das propriedades da página.
 
 #### Solução {#solution-2}
 
@@ -100,11 +109,11 @@ Para corrigir o problema, tente o seguinte:
 * Republicar as configurações encontradas em `/etc/cloudservices/dynamictagmanagement`
 * Verificar ACLs em `/etc/cloudservices`. As ACLs devem ser:
 
-   * allow; jcr:read; webservice-support-servicelibfinder
-   * permitir; jcr:read; todos; `rep:glob:`&ast;`/defaults/`&ast;
-   * permitir; jcr:read; todos; `rep:glob:`&ast;`/defaults`
-   * permitir; jcr:read; todos; `rep:glob:`&ast;`/public/`&ast;
-   * permitir; jcr:read; todos; `rep:glob:`&ast;`/public`
+  * allow; jcr:read; webservice-support-servicelibfinder
+  * permitir; jcr:read; todos; `rep:glob:`&ast;`/defaults/`&ast;
+  * permitir; jcr:read; todos; `rep:glob:`&ast;`/defaults`
+  * permitir; jcr:read; todos; `rep:glob:`&ast;`/public/`&ast;
+  * permitir; jcr:read; todos; `rep:glob:`&ast;`/public`
 
 Para obter mais informações sobre o gerenciamento de ACLs, leia a página [Administração e Segurança do Usuário](/help/sites-administering/security.md#permissions-in-aem).
 
@@ -157,7 +166,7 @@ var s=s_gi(s_account)
 
 Esse problema pode ter várias causas:
 
-* O carregamento assíncrono de bibliotecas de cliente do Target ( `mbox.js` ou `at.js`) usando Sistemas Tag Management de terceiros pode quebrar aleatoriamente o direcionamento. As bibliotecas do Target devem ser carregadas de forma síncrona no cabeçalho da página. Isso é sempre verdadeiro quando as bibliotecas são entregues a partir do AEM.
+* O carregamento assíncrono de bibliotecas de cliente do Target ( `mbox.js` ou `at.js`) usando Sistemas Tag Management de terceiros pode quebrar aleatoriamente o direcionamento. As bibliotecas do Target devem ser carregadas de forma síncrona no cabeçalho da página. Isso é sempre verdadeiro quando as bibliotecas são entregues do AEM.
 
 * Carregar duas bibliotecas de clientes do Target ( `at.js`) simultaneamente, por exemplo, uma usando DTM e outra usando a configuração do Target no AEM. Isso poderá causar conflitos para a definição `adobe.target` se as versões `at.js` forem diferentes.
 
@@ -195,7 +204,7 @@ Este problema é provavelmente um problema de provisionamento da [Configuração
 
 #### Solução {#solution-7}
 
-Você precisa verificar se o A4T está habilitado corretamente para sua conta Target, emitindo a seguinte solicitação de verificação para o AEM:
+Você precisa verificar se o A4T está ativado corretamente para sua conta Target, emitindo a seguinte solicitação de verificação para a AEM:
 
 ```
 http://localhost:4502/etc/cloudservices/testandtarget/<YOUR-CONFIG>/jcr:content.a4t.json
@@ -211,7 +220,7 @@ http://localhost:4502/etc/cloudservices/testandtarget/<YOUR-CONFIG>/jcr:content.
 }
 ```
 
-Se a resposta contiver a linha `a4tEnabled:false`, entre em contato com o [Atendimento ao cliente do Adobe](https://helpx.adobe.com/br/contact.html) para obter a configuração correta da sua conta.
+Se a resposta contiver a linha `a4tEnabled:false`, entre em contato com o [Atendimento ao cliente da Adobe](https://helpx.adobe.com/br/contact.html) para provisionar sua conta corretamente.
 
 ### APIs úteis do Target {#helpful-target-apis}
 
