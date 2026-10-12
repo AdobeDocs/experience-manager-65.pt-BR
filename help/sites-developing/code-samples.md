@@ -29,7 +29,7 @@ ht-degree: 16%
 
 A Equipe de serviços da Adobe Consulting gerou uma série de amostras de código do Adobe Experience Manager (AEM). Essas amostras são pedaços de código bem comentados para ajudar os desenvolvedores do AEM a entender os componentes principais do AEM. Os exemplos estão disponíveis aqui: [https://adobe-consulting-services.github.io/acs-aem-samples/](https://adobe-consulting-services.github.io/acs-aem-samples/).
 
-Um tutorial em várias partes projetado para desenvolvedores novos no AEM que abrange tópicos fundamentais como configuração de projeto, Componentes principais, Modelos editáveis, Bibliotecas de clientes e desenvolvimento de componentes: [Introdução ao AEM Sites - Tutorial do WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+Um tutorial em várias partes projetado para desenvolvedores novos no AEM que abrange tópicos fundamentais como configuração de projeto, Componentes principais, Modelos editáveis, Bibliotecas de clientes e desenvolvimento de componentes: [Introdução ao AEM Sites - Tutorial do WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=pt-BR)
 
 Um modelo Maven para criar um projeto do AEM como ponto de partida para desenvolver sua própria funcionalidade está disponível [no GitHub - Arquétipo de projeto do AEM](https://github.com/adobe/aem-project-archetype).
 

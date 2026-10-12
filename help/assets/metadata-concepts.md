@@ -85,7 +85,7 @@ Há várias maneiras de incorporar metadados em arquivos. Uma seleção de padr�
 
 ### XMP {#xmp}
 
-[!DNL Extensible Metadata Platform] (XMP) é um padrão aberto usado por [!DNL Experience Manager Assets] para todo o gerenciamento de metadados. O padrão oferece codificação de metadados universais que pode ser incorporada em todos os formatos de arquivo. A Adobe e outras empresas oferecem suporte ao padrão XMP, pois ele fornece um modelo de conteúdo avançado. Os usuários do XMP Standard e do [!DNL Experience Manager Assets] têm uma plataforma eficiente com base na qual compilar. Para obter mais informações, consulte [XMP](https://www.adobe.com/products/xmp.html).
+[!DNL Extensible Metadata Platform] (XMP) é um padrão aberto usado por [!DNL Experience Manager Assets] para todo o gerenciamento de metadados. O padrão oferece codificação de metadados universais que pode ser incorporada em todos os formatos de arquivo. A Adobe e outras empresas oferecem suporte ao padrão XMP, pois ele fornece um modelo de conteúdo avançado. Os usuários do XMP Standard e do [!DNL Experience Manager Assets] têm uma plataforma eficiente com base na qual compilar. Para obter mais informações, consulte [XMP](https://www.adobe.com/br/products/xmp.html).
 
 ### ID3 {#id}
 
@@ -137,7 +137,7 @@ Os metadados específicos do aplicativo incluem metadados técnicos e descritivo
 * CQ - Usado por [!DNL Experience Manager Assets].
 * DAM - Usado por [!DNL Experience Manager Assets].
 * DEX - [!DNL Optima SC Description explorer] é uma coleção de ferramentas para gerenciamento de metadados e arquivos de sistemas operacionais Windows.
-* CRS - [Adobe Photoshop Camera Raw](https://helpx.adobe.com/camera-raw/using/introduction-camera-raw.html).
+* CRS - [Adobe Photoshop Camera Raw](https://helpx.adobe.com/br/camera-raw/using/introduction-camera-raw.html).
 * LR - [!DNL Adobe Lightroom].
 * MediaPro - [iView MediaPro](https://en.wikipedia.org/wiki/Phase_One_Media_Pro).
 * MicrosoftPhoto e MP - Microsoft Photo.

@@ -33,7 +33,7 @@ Os tópicos a seguir descrevem como realizar tarefas específicas de implantaç�
 * [How to Use the Log Viewer](https://helpx.adobe.com/experience-manager/kb/logsviewer.html)
 -->
 
-* [Como limpar fluxos de trabalho e o registro de auditoria](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-24590)
+* [Como limpar fluxos de trabalho e o registro de auditoria](https://experienceleague.adobe.com/pt-br/docs/experience-cloud-kcs/kbarticles/ka-24590)
 
 * [Dicas para ajustar o desempenho](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=pt-BR)
 

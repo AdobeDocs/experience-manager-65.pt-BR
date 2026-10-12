@@ -31,7 +31,7 @@ ht-degree: 3%
 
 Hot linking é quando um site de terceiros usa o código HTML para exibir uma imagem do seu site. Eles usam a largura de banda sempre que a foto é solicitada porque o navegador do visitante está acessando-a diretamente do seu servidor. A *proteção* do Hotlink é um método para impedir que outros sites vinculem diretamente a imagens, CSS ou JavaScript em suas páginas da Web. Esse tipo de blindagem ajuda a reduzir o uso desnecessário da largura de banda na conta do Dynamic Media.
 
-O [Suporte ao Cliente do Experience Manager](https://experienceleague.adobe.com/?support-solution=Experience+Manager&lang=pt-BR#support) pode configurar um filtro de referenciador no nível da CDN (Content Delivery Network) para que o conteúdo do Dynamic Media seja enviado somente aos sites da sua lista de sites permitidos para o domínio.
+O [Suporte ao Cliente do Experience Manager](https://experienceleague.adobe.com/pt-br?support-solution=Experience+Manager&lang=pt-BR#support) pode configurar um filtro de referenciador no nível da CDN (Content Delivery Network) para que o conteúdo do Dynamic Media seja enviado somente aos sites da sua lista de sites permitidos para o domínio.
 
 >[!NOTE]
 >

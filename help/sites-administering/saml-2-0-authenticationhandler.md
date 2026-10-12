@@ -43,7 +43,7 @@ Este manipulador armazena a mensagem de resposta SAML criptografada no nó do us
 
 >[!NOTE]
 >
->Consulte [uma demonstração da integração do AEM e do SAML](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17481.html).
+>Consulte [uma demonstração da integração do AEM e do SAML](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17481.html?lang=pt-BR).
 
 ## Configurando o Manipulador de Autenticação SAML 2.0 {#configuring-the-saml-authentication-handler}
 

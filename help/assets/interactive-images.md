@@ -389,9 +389,9 @@ A integração é tão simples quanto remover a tag `IMG` e substituí-la pelo c
 
 Para aplicar um &quot;recorte&quot; a uma imagem interativa que pode ser comprada para um ambiente responsivo, você pode incluir o atributo de configuração Imagem interativa `ZoomView.iscommand` no caminho. O componente `ZoomView` é chamado e `iscommand` é o comando de veiculação de imagens de &quot;recorte&quot; que você aplica.
 
-Consulte o atributo de configuração [ZoomView.iscommand](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/command-reference-configuration-attributes-interactive-images/r-html5-aem-interactive-image-config-attrib-zoomview-iscommand).
+Consulte o atributo de configuração [ZoomView.iscommand](https://experienceleague.adobe.com/pt-br/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/command-reference-configuration-attributes-interactive-images/r-html5-aem-interactive-image-config-attrib-zoomview-iscommand).
 
-Consulte o comando de veiculação de imagens [crop](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-crop).
+Consulte o comando de veiculação de imagens [crop](https://experienceleague.adobe.com/pt-br/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-crop).
 
 Agora você está pronto para integrar a imagem interativa a uma visualização rápida existente no seu site.
 
